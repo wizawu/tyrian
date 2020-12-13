@@ -1,0 +1,6 @@
+Compiled from "FtpProtocolException.java"
+public class sun.net.ftp.FtpProtocolException extends java.lang.Exception {
+  public sun.net.ftp.FtpProtocolException(java.lang.String);
+  public sun.net.ftp.FtpProtocolException(java.lang.String, sun.net.ftp.FtpReplyCode);
+  public sun.net.ftp.FtpReplyCode getReplyCode();
+}

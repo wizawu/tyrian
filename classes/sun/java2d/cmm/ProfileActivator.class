@@ -1,0 +1,4 @@
+Compiled from "ProfileActivator.java"
+public interface sun.java2d.cmm.ProfileActivator {
+  public abstract void activate() throws java.awt.color.ProfileDataException;
+}

@@ -1,0 +1,4 @@
+Compiled from "EndElementTree.java"
+public interface com.sun.source.doctree.EndElementTree extends com.sun.source.doctree.DocTree {
+  public abstract javax.lang.model.element.Name getName();
+}

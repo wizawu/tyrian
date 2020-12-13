@@ -1,0 +1,9 @@
+Compiled from "CookieManager.java"
+public class java.net.CookieManager extends java.net.CookieHandler {
+  public java.net.CookieManager();
+  public java.net.CookieManager(java.net.CookieStore, java.net.CookiePolicy);
+  public void setCookiePolicy(java.net.CookiePolicy);
+  public java.net.CookieStore getCookieStore();
+  public java.util.Map<java.lang.String, java.util.List<java.lang.String>> get(java.net.URI, java.util.Map<java.lang.String, java.util.List<java.lang.String>>) throws java.io.IOException;
+  public void put(java.net.URI, java.util.Map<java.lang.String, java.util.List<java.lang.String>>) throws java.io.IOException;
+}

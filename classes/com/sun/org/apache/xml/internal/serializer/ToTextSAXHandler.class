@@ -1,0 +1,44 @@
+Compiled from "ToTextSAXHandler.java"
+public final class com.sun.org.apache.xml.internal.serializer.ToTextSAXHandler extends com.sun.org.apache.xml.internal.serializer.ToSAXHandler {
+  public void endElement(java.lang.String) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public com.sun.org.apache.xml.internal.serializer.ToTextSAXHandler(org.xml.sax.ContentHandler, org.xml.sax.ext.LexicalHandler, java.lang.String);
+  public com.sun.org.apache.xml.internal.serializer.ToTextSAXHandler(org.xml.sax.ContentHandler, java.lang.String);
+  public void comment(char[], int, int) throws org.xml.sax.SAXException;
+  public void comment(java.lang.String) throws org.xml.sax.SAXException;
+  public java.util.Properties getOutputFormat();
+  public java.io.OutputStream getOutputStream();
+  public java.io.Writer getWriter();
+  public void indent(int) throws org.xml.sax.SAXException;
+  public boolean reset();
+  public void serialize(org.w3c.dom.Node) throws java.io.IOException;
+  public boolean setEscaping(boolean);
+  public void setIndent(boolean);
+  public void setOutputFormat(java.util.Properties);
+  public void setOutputStream(java.io.OutputStream);
+  public void setWriter(java.io.Writer);
+  public void addAttribute(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean);
+  public void attributeDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void elementDecl(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void externalEntityDecl(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void internalEntityDecl(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void endPrefixMapping(java.lang.String) throws org.xml.sax.SAXException;
+  public void ignorableWhitespace(char[], int, int) throws org.xml.sax.SAXException;
+  public void processingInstruction(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void setDocumentLocator(org.xml.sax.Locator);
+  public void skippedEntity(java.lang.String) throws org.xml.sax.SAXException;
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) throws org.xml.sax.SAXException;
+  public void endCDATA() throws org.xml.sax.SAXException;
+  public void endDTD() throws org.xml.sax.SAXException;
+  public void startCDATA() throws org.xml.sax.SAXException;
+  public void startEntity(java.lang.String) throws org.xml.sax.SAXException;
+  public void startElement(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void startElement(java.lang.String) throws org.xml.sax.SAXException;
+  public void endDocument() throws org.xml.sax.SAXException;
+  public void characters(java.lang.String) throws org.xml.sax.SAXException;
+  public void characters(char[], int, int) throws org.xml.sax.SAXException;
+  public void addAttribute(java.lang.String, java.lang.String);
+  public boolean startPrefixMapping(java.lang.String, java.lang.String, boolean) throws org.xml.sax.SAXException;
+  public void startPrefixMapping(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void namespaceAfterStartElement(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+}

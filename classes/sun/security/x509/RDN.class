@@ -1,0 +1,24 @@
+Compiled from "RDN.java"
+public class sun.security.x509.RDN {
+  final sun.security.x509.AVA[] assertion;
+  public sun.security.x509.RDN(java.lang.String) throws java.io.IOException;
+  public sun.security.x509.RDN(java.lang.String, java.util.Map<java.lang.String, java.lang.String>) throws java.io.IOException;
+  sun.security.x509.RDN(java.lang.String, java.lang.String) throws java.io.IOException;
+  sun.security.x509.RDN(java.lang.String, java.lang.String, java.util.Map<java.lang.String, java.lang.String>) throws java.io.IOException;
+  sun.security.x509.RDN(sun.security.util.DerValue) throws java.io.IOException;
+  sun.security.x509.RDN(int);
+  public sun.security.x509.RDN(sun.security.x509.AVA);
+  public sun.security.x509.RDN(sun.security.x509.AVA[]);
+  public java.util.List<sun.security.x509.AVA> avas();
+  public int size();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  sun.security.util.DerValue findAttribute(sun.security.util.ObjectIdentifier);
+  void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public java.lang.String toString();
+  public java.lang.String toRFC1779String();
+  public java.lang.String toRFC1779String(java.util.Map<java.lang.String, java.lang.String>);
+  public java.lang.String toRFC2253String();
+  public java.lang.String toRFC2253String(java.util.Map<java.lang.String, java.lang.String>);
+  public java.lang.String toRFC2253String(boolean);
+}

@@ -1,0 +1,5 @@
+Compiled from "EntityReference.java"
+public interface javax.xml.stream.events.EntityReference extends javax.xml.stream.events.XMLEvent {
+  public abstract javax.xml.stream.events.EntityDeclaration getDeclaration();
+  public abstract java.lang.String getName();
+}

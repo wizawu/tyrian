@@ -1,0 +1,7 @@
+Compiled from "InvalidAlgorithmParameterException.java"
+public class java.security.InvalidAlgorithmParameterException extends java.security.GeneralSecurityException {
+  public java.security.InvalidAlgorithmParameterException();
+  public java.security.InvalidAlgorithmParameterException(java.lang.String);
+  public java.security.InvalidAlgorithmParameterException(java.lang.String, java.lang.Throwable);
+  public java.security.InvalidAlgorithmParameterException(java.lang.Throwable);
+}

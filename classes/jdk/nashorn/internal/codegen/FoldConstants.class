@@ -1,0 +1,13 @@
+Compiled from "FoldConstants.java"
+final class jdk.nashorn.internal.codegen.FoldConstants extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor implements jdk.nashorn.internal.runtime.logging.Loggable {
+  jdk.nashorn.internal.codegen.FoldConstants(jdk.nashorn.internal.codegen.Compiler);
+  public jdk.nashorn.internal.runtime.logging.DebugLogger getLogger();
+  public jdk.nashorn.internal.runtime.logging.DebugLogger initLogger(jdk.nashorn.internal.runtime.Context);
+  public jdk.nashorn.internal.ir.Node leaveUnaryNode(jdk.nashorn.internal.ir.UnaryNode);
+  public jdk.nashorn.internal.ir.Node leaveBinaryNode(jdk.nashorn.internal.ir.BinaryNode);
+  public jdk.nashorn.internal.ir.Node leaveFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
+  public jdk.nashorn.internal.ir.Node leaveIfNode(jdk.nashorn.internal.ir.IfNode);
+  public jdk.nashorn.internal.ir.Node leaveTernaryNode(jdk.nashorn.internal.ir.TernaryNode);
+  public jdk.nashorn.internal.ir.Node leaveSwitchNode(jdk.nashorn.internal.ir.SwitchNode);
+  static void extractVarNodesFromDeadCode(jdk.nashorn.internal.ir.Node, java.util.List<jdk.nashorn.internal.ir.Statement>);
+}

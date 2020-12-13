@@ -1,0 +1,5 @@
+Compiled from "AccountException.java"
+public class javax.security.auth.login.AccountException extends javax.security.auth.login.LoginException {
+  public javax.security.auth.login.AccountException();
+  public javax.security.auth.login.AccountException(java.lang.String);
+}

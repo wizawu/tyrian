@@ -1,0 +1,6 @@
+Compiled from "EventSet.java"
+public interface com.sun.jdi.event.EventSet extends com.sun.jdi.Mirror, java.util.Set<com.sun.jdi.event.Event> {
+  public abstract int suspendPolicy();
+  public abstract com.sun.jdi.event.EventIterator eventIterator();
+  public abstract void resume();
+}

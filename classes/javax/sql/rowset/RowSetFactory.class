@@ -1,0 +1,8 @@
+Compiled from "RowSetFactory.java"
+public interface javax.sql.rowset.RowSetFactory {
+  public abstract javax.sql.rowset.CachedRowSet createCachedRowSet() throws java.sql.SQLException;
+  public abstract javax.sql.rowset.FilteredRowSet createFilteredRowSet() throws java.sql.SQLException;
+  public abstract javax.sql.rowset.JdbcRowSet createJdbcRowSet() throws java.sql.SQLException;
+  public abstract javax.sql.rowset.JoinRowSet createJoinRowSet() throws java.sql.SQLException;
+  public abstract javax.sql.rowset.WebRowSet createWebRowSet() throws java.sql.SQLException;
+}

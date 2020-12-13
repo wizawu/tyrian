@@ -1,0 +1,32 @@
+Compiled from "VM.java"
+public class jdk.internal.misc.VM {
+  public jdk.internal.misc.VM();
+  public static void initLevel(int);
+  public static int initLevel();
+  public static void awaitInitLevel(int) throws java.lang.InterruptedException;
+  public static boolean isModuleSystemInited();
+  public static boolean isBooted();
+  public static void shutdown();
+  public static boolean isShutdown();
+  public static long maxDirectMemory();
+  public static boolean isDirectMemoryPageAligned();
+  public static boolean isSystemDomainLoader(java.lang.ClassLoader);
+  public static java.lang.String getSavedProperty(java.lang.String);
+  public static java.util.Map<java.lang.String, java.lang.String> getSavedProperties();
+  public static void saveAndRemoveProperties(java.util.Properties);
+  public static void initializeOSEnvironment();
+  public static int getFinalRefCount();
+  public static int getPeakFinalRefCount();
+  public static void addFinalRefCount(int);
+  public static java.lang.Thread$State toThreadState(int);
+  public static java.lang.ClassLoader latestUserDefinedLoader();
+  public static boolean isSetUID();
+  public static native long getuid();
+  public static native long geteuid();
+  public static native long getgid();
+  public static native long getegid();
+  public static native long getNanoTimeAdjustment(long);
+  public static native java.lang.String[] getRuntimeArguments();
+  public static native void initializeFromArchive(java.lang.Class<?>);
+  static {};
+}

@@ -1,0 +1,4 @@
+Compiled from "HotspotMemoryMBean.java"
+public interface sun.management.HotspotMemoryMBean {
+  public abstract java.util.List<sun.management.counter.Counter> getInternalMemoryCounters();
+}

@@ -1,0 +1,5 @@
+Compiled from "DirectoryNotEmptyException.java"
+public class java.nio.file.DirectoryNotEmptyException extends java.nio.file.FileSystemException {
+  static final long serialVersionUID;
+  public java.nio.file.DirectoryNotEmptyException(java.lang.String);
+}

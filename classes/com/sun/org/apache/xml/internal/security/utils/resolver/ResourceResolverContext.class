@@ -1,0 +1,8 @@
+Compiled from "ResourceResolverContext.java"
+public class com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext {
+  public final java.lang.String uriToResolve;
+  public final boolean secureValidation;
+  public final java.lang.String baseUri;
+  public final org.w3c.dom.Attr attr;
+  public com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext(org.w3c.dom.Attr, java.lang.String, boolean);
+}

@@ -1,0 +1,4 @@
+Compiled from "Transport.java"
+public interface com.sun.jdi.connect.Transport {
+  public abstract java.lang.String name();
+}

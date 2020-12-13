@@ -1,0 +1,8 @@
+Compiled from "InputVerifier.java"
+public abstract class javax.swing.InputVerifier {
+  public javax.swing.InputVerifier();
+  public abstract boolean verify(javax.swing.JComponent);
+  public boolean shouldYieldFocus(javax.swing.JComponent);
+  public boolean verifyTarget(javax.swing.JComponent);
+  public boolean shouldYieldFocus(javax.swing.JComponent, javax.swing.JComponent);
+}

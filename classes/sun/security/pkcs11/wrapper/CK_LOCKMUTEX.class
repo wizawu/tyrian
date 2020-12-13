@@ -1,0 +1,4 @@
+Compiled from "CK_LOCKMUTEX.java"
+public interface sun.security.pkcs11.wrapper.CK_LOCKMUTEX {
+  public abstract void CK_LOCKMUTEX(java.lang.Object) throws sun.security.pkcs11.wrapper.PKCS11Exception;
+}

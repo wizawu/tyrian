@@ -1,0 +1,4 @@
+Compiled from "CompositeDataView.java"
+public interface javax.management.openmbean.CompositeDataView {
+  public abstract javax.management.openmbean.CompositeData toCompositeData(javax.management.openmbean.CompositeType);
+}

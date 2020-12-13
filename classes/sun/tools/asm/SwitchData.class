@@ -1,0 +1,19 @@
+Compiled from "SwitchData.java"
+public final class sun.tools.asm.SwitchData {
+  int minValue;
+  int maxValue;
+  sun.tools.asm.Label defaultLabel;
+  java.util.Hashtable<java.lang.Integer, sun.tools.asm.Label> tab;
+  java.util.Hashtable<java.lang.Integer, java.lang.Long> whereCaseTab;
+  public sun.tools.asm.SwitchData();
+  public sun.tools.asm.Label get(int);
+  public sun.tools.asm.Label get(java.lang.Integer);
+  public void add(int, sun.tools.asm.Label);
+  public sun.tools.asm.Label getDefaultLabel();
+  public synchronized java.util.Enumeration<java.lang.Integer> sortedKeys();
+  public void initTableCase();
+  public void addTableCase(int, long);
+  public void addTableDefault(long);
+  public long whereCase(java.lang.Object);
+  public boolean getDefault();
+}

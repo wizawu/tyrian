@@ -1,0 +1,47 @@
+Compiled from "X509Data.java"
+public class com.sun.org.apache.xml.internal.security.keys.content.X509Data extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.KeyInfoContent {
+  public com.sun.org.apache.xml.internal.security.keys.content.X509Data(org.w3c.dom.Document);
+  public com.sun.org.apache.xml.internal.security.keys.content.X509Data(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public void addIssuerSerial(java.lang.String, java.math.BigInteger);
+  public void addIssuerSerial(java.lang.String, java.lang.String);
+  public void addIssuerSerial(java.lang.String, int);
+  public void add(com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial);
+  public void addSKI(byte[]);
+  public void addSKI(java.security.cert.X509Certificate) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public void add(com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SKI);
+  public void addSubjectName(java.lang.String);
+  public void addSubjectName(java.security.cert.X509Certificate);
+  public void add(com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SubjectName);
+  public void addCertificate(java.security.cert.X509Certificate) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public void addCertificate(byte[]);
+  public void add(com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate);
+  public void addCRL(byte[]);
+  public void add(com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509CRL);
+  public void addDigest(java.security.cert.X509Certificate, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public void addDigest(byte[], java.lang.String);
+  public void add(com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest);
+  public void addUnknownElement(org.w3c.dom.Element);
+  public int lengthIssuerSerial();
+  public int lengthSKI();
+  public int lengthSubjectName();
+  public int lengthCertificate();
+  public int lengthCRL();
+  public int lengthDigest();
+  public int lengthUnknownElement();
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial itemIssuerSerial(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SKI itemSKI(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509SubjectName itemSubjectName(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate itemCertificate(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509CRL itemCRL(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest itemDigest(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public org.w3c.dom.Element itemUnknownElement(int);
+  public boolean containsIssuerSerial();
+  public boolean containsSKI();
+  public boolean containsSubjectName();
+  public boolean containsCertificate();
+  public boolean containsDigest();
+  public boolean containsCRL();
+  public boolean containsUnknownElement();
+  public java.lang.String getBaseLocalName();
+  static {};
+}

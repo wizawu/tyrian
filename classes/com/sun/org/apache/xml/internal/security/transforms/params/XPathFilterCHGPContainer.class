@@ -1,0 +1,20 @@
+Compiled from "XPathFilterCHGPContainer.java"
+public class com.sun.org.apache.xml.internal.security.transforms.params.XPathFilterCHGPContainer extends com.sun.org.apache.xml.internal.security.utils.ElementProxy implements com.sun.org.apache.xml.internal.security.transforms.TransformParam {
+  public static final java.lang.String TRANSFORM_XPATHFILTERCHGP;
+  public static final java.lang.String _TAG_XPATHCHGP;
+  public static final java.lang.String _ATT_INCLUDESLASH;
+  public static final boolean IncludeSlash;
+  public static final boolean ExcludeSlash;
+  static java.lang.String indentXPathText(java.lang.String);
+  public static com.sun.org.apache.xml.internal.security.transforms.params.XPathFilterCHGPContainer getInstance(org.w3c.dom.Document, boolean, java.lang.String, java.lang.String, java.lang.String);
+  public static com.sun.org.apache.xml.internal.security.transforms.params.XPathFilterCHGPContainer getInstance(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.lang.String getIncludeButSearch();
+  public java.lang.String getExcludeButSearch();
+  public java.lang.String getExclude();
+  public boolean getIncludeSlashPolicy();
+  public org.w3c.dom.Node getHereContextNodeIncludeButSearch();
+  public org.w3c.dom.Node getHereContextNodeExcludeButSearch();
+  public org.w3c.dom.Node getHereContextNodeExclude();
+  public final java.lang.String getBaseLocalName();
+  public final java.lang.String getBaseNamespace();
+}

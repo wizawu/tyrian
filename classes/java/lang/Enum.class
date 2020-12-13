@@ -1,0 +1,15 @@
+Compiled from "Enum.java"
+public abstract class java.lang.Enum<E extends java.lang.Enum<E>> implements java.lang.Comparable<E>, java.io.Serializable {
+  public final java.lang.String name();
+  public final int ordinal();
+  protected java.lang.Enum(java.lang.String, int);
+  public java.lang.String toString();
+  public final boolean equals(java.lang.Object);
+  public final int hashCode();
+  protected final java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public final int compareTo(E);
+  public final java.lang.Class<E> getDeclaringClass();
+  public static <T extends java.lang.Enum<T>> T valueOf(java.lang.Class<T>, java.lang.String);
+  protected final void finalize();
+  public int compareTo(java.lang.Object);
+}

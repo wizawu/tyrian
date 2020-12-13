@@ -1,0 +1,5 @@
+Compiled from "VMOutOfMemoryException.java"
+public class com.sun.jdi.VMOutOfMemoryException extends java.lang.RuntimeException {
+  public com.sun.jdi.VMOutOfMemoryException();
+  public com.sun.jdi.VMOutOfMemoryException(java.lang.String);
+}

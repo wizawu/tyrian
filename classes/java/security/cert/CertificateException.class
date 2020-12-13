@@ -1,0 +1,7 @@
+Compiled from "CertificateException.java"
+public class java.security.cert.CertificateException extends java.security.GeneralSecurityException {
+  public java.security.cert.CertificateException();
+  public java.security.cert.CertificateException(java.lang.String);
+  public java.security.cert.CertificateException(java.lang.String, java.lang.Throwable);
+  public java.security.cert.CertificateException(java.lang.Throwable);
+}

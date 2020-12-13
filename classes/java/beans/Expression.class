@@ -1,0 +1,11 @@
+Compiled from "Expression.java"
+public class java.beans.Expression extends java.beans.Statement {
+  public java.beans.Expression(java.lang.Object, java.lang.String, java.lang.Object[]);
+  public java.beans.Expression(java.lang.Object, java.lang.Object, java.lang.String, java.lang.Object[]);
+  public void execute() throws java.lang.Exception;
+  public java.lang.Object getValue() throws java.lang.Exception;
+  public void setValue(java.lang.Object);
+  java.lang.String instanceName(java.lang.Object);
+  public java.lang.String toString();
+  static {};
+}

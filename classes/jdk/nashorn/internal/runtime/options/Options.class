@@ -1,0 +1,28 @@
+Compiled from "Options.java"
+public final class jdk.nashorn.internal.runtime.options.Options {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.runtime.options.Options(java.lang.String);
+  public jdk.nashorn.internal.runtime.options.Options(java.lang.String, java.io.PrintWriter);
+  public java.lang.String getResource();
+  public java.lang.String toString();
+  public static boolean getBooleanProperty(java.lang.String, java.lang.Boolean);
+  public static boolean getBooleanProperty(java.lang.String);
+  public static java.lang.String getStringProperty(java.lang.String, java.lang.String);
+  public static int getIntProperty(java.lang.String, int);
+  public jdk.nashorn.internal.runtime.options.Option<?> get(java.lang.String);
+  public boolean getBoolean(java.lang.String);
+  public int getInteger(java.lang.String);
+  public java.lang.String getString(java.lang.String);
+  public void set(java.lang.String, jdk.nashorn.internal.runtime.options.Option<?>);
+  public void set(java.lang.String, boolean);
+  public void set(java.lang.String, java.lang.String);
+  public java.util.List<java.lang.String> getArguments();
+  public java.util.List<java.lang.String> getFiles();
+  public static java.util.Collection<jdk.nashorn.internal.runtime.options.OptionTemplate> getValidOptions();
+  static java.lang.String getMsg(java.lang.String, java.lang.String...);
+  public void displayHelp(java.lang.IllegalArgumentException);
+  public void displayHelp(boolean);
+  public void process(java.lang.String[]);
+  public jdk.nashorn.internal.runtime.options.OptionTemplate getOptionTemplateByKey(java.lang.String);
+  static {};
+}

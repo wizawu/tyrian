@@ -1,0 +1,7 @@
+Compiled from "StringReferenceImpl.java"
+public class com.sun.tools.jdi.StringReferenceImpl extends com.sun.tools.jdi.ObjectReferenceImpl implements com.sun.jdi.StringReference {
+  com.sun.tools.jdi.StringReferenceImpl(com.sun.jdi.VirtualMachine, long);
+  public java.lang.String value();
+  public java.lang.String toString();
+  byte typeValueKey();
+}

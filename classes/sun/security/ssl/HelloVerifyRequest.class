@@ -1,0 +1,7 @@
+Compiled from "HelloVerifyRequest.java"
+final class sun.security.ssl.HelloVerifyRequest {
+  static final sun.security.ssl.SSLConsumer handshakeConsumer;
+  static final sun.security.ssl.HandshakeProducer handshakeProducer;
+  sun.security.ssl.HelloVerifyRequest();
+  static {};
+}

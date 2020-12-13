@@ -1,0 +1,8 @@
+Compiled from "GOTO_W.java"
+public class com.sun.org.apache.bcel.internal.generic.GOTO_W extends com.sun.org.apache.bcel.internal.generic.GotoInstruction {
+  com.sun.org.apache.bcel.internal.generic.GOTO_W();
+  public com.sun.org.apache.bcel.internal.generic.GOTO_W(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

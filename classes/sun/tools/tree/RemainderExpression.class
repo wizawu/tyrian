@@ -1,0 +1,9 @@
+Compiled from "RemainderExpression.java"
+public class sun.tools.tree.RemainderExpression extends sun.tools.tree.DivRemExpression {
+  public sun.tools.tree.RemainderExpression(long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  sun.tools.tree.Expression eval(int, int);
+  sun.tools.tree.Expression eval(long, long);
+  sun.tools.tree.Expression eval(float, float);
+  sun.tools.tree.Expression eval(double, double);
+  void codeOperation(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+}

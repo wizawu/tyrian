@@ -1,0 +1,20 @@
+Compiled from "SimpleElementValueGen.java"
+public class com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen extends com.sun.org.apache.bcel.internal.generic.ElementValueGen {
+  protected com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, int);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, long);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, double);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, float);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, short);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, byte);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, char);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, boolean);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(int, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, java.lang.String);
+  public com.sun.org.apache.bcel.internal.generic.SimpleElementValueGen(com.sun.org.apache.bcel.internal.classfile.SimpleElementValue, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, boolean);
+  public com.sun.org.apache.bcel.internal.classfile.ElementValue getElementValue();
+  public int getIndex();
+  public java.lang.String getValueString();
+  public int getValueInt();
+  public java.lang.String stringifyValue();
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+}

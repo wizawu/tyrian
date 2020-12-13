@@ -1,0 +1,27 @@
+Compiled from "Unit.java"
+final class jdk.jshell.Unit {
+  jdk.jshell.Unit(jdk.jshell.JShell, jdk.jshell.Snippet, jdk.jshell.Snippet, jdk.jshell.DiagList);
+  jdk.jshell.Unit(jdk.jshell.JShell, jdk.jshell.Snippet);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  jdk.jshell.Snippet snippet();
+  boolean isDependency();
+  void initialize();
+  void setWrap(java.util.Collection<jdk.jshell.Unit>, java.util.Collection<jdk.jshell.Unit>);
+  void setDiagnostics(jdk.jshell.TaskFactory$AnalyzeTask);
+  void setDiagnostics(jdk.jshell.DiagList);
+  boolean corralIfNeeded(java.util.Collection<jdk.jshell.Unit>);
+  void setCorralledDiagnostics(jdk.jshell.TaskFactory$AnalyzeTask);
+  boolean smashingErrorDiagnostics(jdk.jshell.TaskFactory$CompileTask);
+  void setStatus(jdk.jshell.TaskFactory$AnalyzeTask);
+  boolean isDefined();
+  java.util.stream.Stream<jdk.jshell.spi.ExecutionControl$ClassBytecodes> classesToLoad(java.util.List<java.lang.String>);
+  boolean doRedefines();
+  void markForReplacement();
+  java.util.stream.Stream<jdk.jshell.Unit> effectedDependents();
+  java.util.stream.Stream<jdk.jshell.Unit> dependents();
+  void finish();
+  jdk.jshell.SnippetEvent event(java.lang.String, jdk.jshell.JShellException);
+  java.util.List<jdk.jshell.SnippetEvent> secondaryEvents();
+  public java.lang.String toString();
+}

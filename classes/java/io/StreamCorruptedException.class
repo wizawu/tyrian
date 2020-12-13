@@ -1,0 +1,5 @@
+Compiled from "StreamCorruptedException.java"
+public class java.io.StreamCorruptedException extends java.io.ObjectStreamException {
+  public java.io.StreamCorruptedException(java.lang.String);
+  public java.io.StreamCorruptedException();
+}

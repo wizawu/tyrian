@@ -1,0 +1,4 @@
+Compiled from "HelpFormatter.java"
+public interface jdk.internal.joptsimple.HelpFormatter {
+  public abstract java.lang.String format(java.util.Map<java.lang.String, ? extends jdk.internal.joptsimple.OptionDescriptor>);
+}

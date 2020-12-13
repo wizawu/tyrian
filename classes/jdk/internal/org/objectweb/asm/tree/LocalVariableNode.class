@@ -1,0 +1,11 @@
+Compiled from "LocalVariableNode.java"
+public class jdk.internal.org.objectweb.asm.tree.LocalVariableNode {
+  public java.lang.String name;
+  public java.lang.String desc;
+  public java.lang.String signature;
+  public jdk.internal.org.objectweb.asm.tree.LabelNode start;
+  public jdk.internal.org.objectweb.asm.tree.LabelNode end;
+  public int index;
+  public jdk.internal.org.objectweb.asm.tree.LocalVariableNode(java.lang.String, java.lang.String, java.lang.String, jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode, int);
+  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
+}

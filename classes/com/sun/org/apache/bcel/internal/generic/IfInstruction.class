@@ -1,0 +1,6 @@
+Compiled from "IfInstruction.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.IfInstruction extends com.sun.org.apache.bcel.internal.generic.BranchInstruction implements com.sun.org.apache.bcel.internal.generic.StackConsumer {
+  com.sun.org.apache.bcel.internal.generic.IfInstruction();
+  protected com.sun.org.apache.bcel.internal.generic.IfInstruction(short, com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public abstract com.sun.org.apache.bcel.internal.generic.IfInstruction negate();
+}

@@ -1,0 +1,8 @@
+Compiled from "ClassQueue.java"
+public class com.sun.org.apache.bcel.internal.util.ClassQueue {
+  public com.sun.org.apache.bcel.internal.util.ClassQueue();
+  public void enqueue(com.sun.org.apache.bcel.internal.classfile.JavaClass);
+  public com.sun.org.apache.bcel.internal.classfile.JavaClass dequeue();
+  public boolean empty();
+  public java.lang.String toString();
+}

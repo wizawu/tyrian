@@ -1,0 +1,6 @@
+Compiled from "DescendingMonitorComparator.java"
+class sun.tools.jstat.DescendingMonitorComparator implements java.util.Comparator<sun.jvmstat.monitor.Monitor> {
+  sun.tools.jstat.DescendingMonitorComparator();
+  public int compare(sun.jvmstat.monitor.Monitor, sun.jvmstat.monitor.Monitor);
+  public int compare(java.lang.Object, java.lang.Object);
+}

@@ -1,0 +1,10 @@
+Compiled from "MidiFileWriter.java"
+public abstract class javax.sound.midi.spi.MidiFileWriter {
+  public javax.sound.midi.spi.MidiFileWriter();
+  public abstract int[] getMidiFileTypes();
+  public abstract int[] getMidiFileTypes(javax.sound.midi.Sequence);
+  public boolean isFileTypeSupported(int);
+  public boolean isFileTypeSupported(int, javax.sound.midi.Sequence);
+  public abstract int write(javax.sound.midi.Sequence, int, java.io.OutputStream) throws java.io.IOException;
+  public abstract int write(javax.sound.midi.Sequence, int, java.io.File) throws java.io.IOException;
+}

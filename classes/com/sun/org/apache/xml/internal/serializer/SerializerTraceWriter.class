@@ -1,0 +1,11 @@
+Compiled from "SerializerTraceWriter.java"
+final class com.sun.org.apache.xml.internal.serializer.SerializerTraceWriter extends java.io.Writer implements com.sun.org.apache.xml.internal.serializer.WriterChain {
+  public com.sun.org.apache.xml.internal.serializer.SerializerTraceWriter(java.io.Writer, com.sun.org.apache.xml.internal.serializer.SerializerTrace);
+  public void flush() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public void write(int) throws java.io.IOException;
+  public void write(char[], int, int) throws java.io.IOException;
+  public void write(java.lang.String) throws java.io.IOException;
+  public java.io.Writer getWriter();
+  public java.io.OutputStream getOutputStream();
+}

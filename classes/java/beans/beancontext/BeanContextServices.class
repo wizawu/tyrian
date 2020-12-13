@@ -1,0 +1,12 @@
+Compiled from "BeanContextServices.java"
+public interface java.beans.beancontext.BeanContextServices extends java.beans.beancontext.BeanContext,java.beans.beancontext.BeanContextServicesListener {
+  public abstract boolean addService(java.lang.Class<?>, java.beans.beancontext.BeanContextServiceProvider);
+  public abstract void revokeService(java.lang.Class<?>, java.beans.beancontext.BeanContextServiceProvider, boolean);
+  public abstract boolean hasService(java.lang.Class<?>);
+  public abstract java.lang.Object getService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Class<?>, java.lang.Object, java.beans.beancontext.BeanContextServiceRevokedListener) throws java.util.TooManyListenersException;
+  public abstract void releaseService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Object);
+  public abstract java.util.Iterator<?> getCurrentServiceClasses();
+  public abstract java.util.Iterator<?> getCurrentServiceSelectors(java.lang.Class<?>);
+  public abstract void addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener);
+  public abstract void removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener);
+}

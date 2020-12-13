@@ -1,0 +1,12 @@
+Compiled from "XTaskbarPeer.java"
+final class sun.awt.X11.XTaskbarPeer implements java.awt.peer.TaskbarPeer {
+  sun.awt.X11.XTaskbarPeer();
+  static boolean isTaskbarSupported();
+  public boolean isSupported(java.awt.Taskbar$Feature);
+  public void setProgressValue(int);
+  public void setIconBadge(java.lang.String);
+  public java.awt.PopupMenu getMenu();
+  public synchronized void setMenu(java.awt.PopupMenu);
+  public void requestUserAttention(boolean, boolean);
+  static {};
+}

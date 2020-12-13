@@ -1,0 +1,39 @@
+Compiled from "XalanConstants.java"
+public final class com.sun.org.apache.xalan.internal.XalanConstants {
+  public static final java.lang.String SECURITY_MANAGER;
+  public static final java.lang.String ORACLE_JAXP_PROPERTY_PREFIX;
+  public static final java.lang.String JDK_ENTITY_EXPANSION_LIMIT;
+  public static final java.lang.String JDK_ELEMENT_ATTRIBUTE_LIMIT;
+  public static final java.lang.String JDK_MAX_OCCUR_LIMIT;
+  public static final java.lang.String JDK_TOTAL_ENTITY_SIZE_LIMIT;
+  public static final java.lang.String JDK_GENERAL_ENTITY_SIZE_LIMIT;
+  public static final java.lang.String JDK_ENTITY_REPLACEMENT_LIMIT;
+  public static final java.lang.String JDK_PARAMETER_ENTITY_SIZE_LIMIT;
+  public static final java.lang.String JDK_XML_NAME_LIMIT;
+  public static final java.lang.String JDK_MAX_ELEMENT_DEPTH;
+  public static final java.lang.String JDK_ENTITY_COUNT_INFO;
+  public static final java.lang.String SP_ENTITY_EXPANSION_LIMIT;
+  public static final java.lang.String SP_ELEMENT_ATTRIBUTE_LIMIT;
+  public static final java.lang.String SP_MAX_OCCUR_LIMIT;
+  public static final java.lang.String SP_TOTAL_ENTITY_SIZE_LIMIT;
+  public static final java.lang.String SP_GENERAL_ENTITY_SIZE_LIMIT;
+  public static final java.lang.String SP_ENTITY_REPLACEMENT_LIMIT;
+  public static final java.lang.String SP_PARAMETER_ENTITY_SIZE_LIMIT;
+  public static final java.lang.String SP_XML_NAME_LIMIT;
+  public static final java.lang.String SP_MAX_ELEMENT_DEPTH;
+  public static final java.lang.String JDK_EXTENSION_CLASSLOADER;
+  public static final java.lang.String ENTITY_EXPANSION_LIMIT;
+  public static final java.lang.String ELEMENT_ATTRIBUTE_LIMIT;
+  public static final java.lang.String MAX_OCCUR_LIMIT;
+  public static final java.lang.String JDK_YES;
+  public static final java.lang.String ORACLE_FEATURE_SERVICE_MECHANISM;
+  public static final java.lang.String SP_ACCESS_EXTERNAL_STYLESHEET;
+  public static final java.lang.String SP_ACCESS_EXTERNAL_DTD;
+  public static final java.lang.String ACCESS_EXTERNAL_ALL;
+  public static final java.lang.String EXTERNAL_ACCESS_DEFAULT_FSP;
+  public static final java.lang.String EXTERNAL_ACCESS_DEFAULT;
+  public static final java.lang.String XML_SECURITY_PROPERTY_MANAGER;
+  public static final java.lang.String FEATURE_TRUE;
+  public static final java.lang.String FEATURE_FALSE;
+  public com.sun.org.apache.xalan.internal.XalanConstants();
+}

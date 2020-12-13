@@ -1,0 +1,45 @@
+Compiled from "Keywords.java"
+public class com.sun.org.apache.xpath.internal.compiler.Keywords {
+  public static final java.lang.String FUNC_CURRENT_STRING;
+  public static final java.lang.String FUNC_LAST_STRING;
+  public static final java.lang.String FUNC_POSITION_STRING;
+  public static final java.lang.String FUNC_COUNT_STRING;
+  static final java.lang.String FUNC_ID_STRING;
+  public static final java.lang.String FUNC_KEY_STRING;
+  public static final java.lang.String FUNC_LOCAL_PART_STRING;
+  public static final java.lang.String FUNC_NAMESPACE_STRING;
+  public static final java.lang.String FUNC_NAME_STRING;
+  public static final java.lang.String FUNC_GENERATE_ID_STRING;
+  public static final java.lang.String FUNC_NOT_STRING;
+  public static final java.lang.String FUNC_TRUE_STRING;
+  public static final java.lang.String FUNC_FALSE_STRING;
+  public static final java.lang.String FUNC_BOOLEAN_STRING;
+  public static final java.lang.String FUNC_LANG_STRING;
+  public static final java.lang.String FUNC_NUMBER_STRING;
+  public static final java.lang.String FUNC_FLOOR_STRING;
+  public static final java.lang.String FUNC_CEILING_STRING;
+  public static final java.lang.String FUNC_ROUND_STRING;
+  public static final java.lang.String FUNC_SUM_STRING;
+  public static final java.lang.String FUNC_STRING_STRING;
+  public static final java.lang.String FUNC_STARTS_WITH_STRING;
+  public static final java.lang.String FUNC_CONTAINS_STRING;
+  public static final java.lang.String FUNC_SUBSTRING_BEFORE_STRING;
+  public static final java.lang.String FUNC_SUBSTRING_AFTER_STRING;
+  public static final java.lang.String FUNC_NORMALIZE_SPACE_STRING;
+  public static final java.lang.String FUNC_TRANSLATE_STRING;
+  public static final java.lang.String FUNC_CONCAT_STRING;
+  public static final java.lang.String FUNC_SYSTEM_PROPERTY_STRING;
+  public static final java.lang.String FUNC_EXT_FUNCTION_AVAILABLE_STRING;
+  public static final java.lang.String FUNC_EXT_ELEM_AVAILABLE_STRING;
+  public static final java.lang.String FUNC_SUBSTRING_STRING;
+  public static final java.lang.String FUNC_STRING_LENGTH_STRING;
+  public static final java.lang.String FUNC_UNPARSED_ENTITY_URI_STRING;
+  public static final java.lang.String FUNC_HERE_STRING;
+  public static final java.lang.String FUNC_DOCLOCATION_STRING;
+  public com.sun.org.apache.xpath.internal.compiler.Keywords();
+  static java.lang.Integer getAxisName(java.lang.String);
+  static java.lang.Integer lookupNodeTest(java.lang.String);
+  static java.lang.Integer getKeyWord(java.lang.String);
+  static java.lang.Integer getNodeType(java.lang.String);
+  static {};
+}

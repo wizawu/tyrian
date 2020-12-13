@@ -1,0 +1,4 @@
+Compiled from "InteropProviderImpl.java"
+public class jdk.swing.interop.internal.InteropProviderImpl implements sun.swing.InteropProvider {
+  public jdk.swing.interop.internal.InteropProviderImpl();
+}

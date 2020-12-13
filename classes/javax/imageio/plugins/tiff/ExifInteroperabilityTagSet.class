@@ -1,0 +1,8 @@
+Compiled from "ExifInteroperabilityTagSet.java"
+public final class javax.imageio.plugins.tiff.ExifInteroperabilityTagSet extends javax.imageio.plugins.tiff.TIFFTagSet {
+  public static final int TAG_INTEROPERABILITY_INDEX;
+  public static final java.lang.String INTEROPERABILITY_INDEX_R98;
+  public static final java.lang.String INTEROPERABILITY_INDEX_THM;
+  public static synchronized javax.imageio.plugins.tiff.ExifInteroperabilityTagSet getInstance();
+  static {};
+}

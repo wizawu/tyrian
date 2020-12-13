@@ -1,0 +1,34 @@
+Compiled from "InputContext.java"
+public class sun.awt.im.InputContext extends java.awt.im.InputContext implements java.awt.event.ComponentListener,java.awt.event.WindowListener {
+  protected sun.awt.im.InputContext();
+  public synchronized boolean selectInputMethod(java.util.Locale);
+  public java.util.Locale getLocale();
+  public void setCharacterSubsets(java.lang.Character$Subset[]);
+  public synchronized void reconvert();
+  public void dispatchEvent(java.awt.AWTEvent);
+  static java.awt.Window getComponentWindow(java.awt.Component);
+  synchronized void changeInputMethod(sun.awt.im.InputMethodLocator);
+  java.awt.Component getClientComponent();
+  public synchronized void removeNotify(java.awt.Component);
+  public synchronized void dispose();
+  public synchronized java.lang.Object getInputMethodControlObject();
+  public void setCompositionEnabled(boolean);
+  public boolean isCompositionEnabled();
+  public java.lang.String getInputMethodInfo();
+  public void disableNativeIM();
+  sun.awt.im.InputMethodLocator getInputMethodLocator();
+  public synchronized void endComposition();
+  synchronized void enableClientWindowNotification(java.awt.im.spi.InputMethod, boolean);
+  public void componentResized(java.awt.event.ComponentEvent);
+  public void componentMoved(java.awt.event.ComponentEvent);
+  public void componentShown(java.awt.event.ComponentEvent);
+  public void componentHidden(java.awt.event.ComponentEvent);
+  public void windowOpened(java.awt.event.WindowEvent);
+  public void windowClosing(java.awt.event.WindowEvent);
+  public void windowClosed(java.awt.event.WindowEvent);
+  public void windowIconified(java.awt.event.WindowEvent);
+  public void windowDeiconified(java.awt.event.WindowEvent);
+  public void windowActivated(java.awt.event.WindowEvent);
+  public void windowDeactivated(java.awt.event.WindowEvent);
+  static {};
+}

@@ -1,0 +1,11 @@
+Compiled from "LCount.java"
+class com.sun.org.apache.xerces.internal.dom.LCount {
+  static final java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.dom.LCount> lCounts;
+  public int captures;
+  public int bubbles;
+  public int defaults;
+  public int total;
+  com.sun.org.apache.xerces.internal.dom.LCount();
+  static com.sun.org.apache.xerces.internal.dom.LCount lookup(java.lang.String);
+  static {};
+}

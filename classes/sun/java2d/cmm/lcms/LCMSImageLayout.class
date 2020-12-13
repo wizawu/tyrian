@@ -1,0 +1,37 @@
+Compiled from "LCMSImageLayout.java"
+class sun.java2d.cmm.lcms.LCMSImageLayout {
+  public static final int SWAPFIRST;
+  public static final int DOSWAP;
+  public static final int PT_RGB_8;
+  public static final int PT_GRAY_8;
+  public static final int PT_GRAY_16;
+  public static final int PT_RGBA_8;
+  public static final int PT_ARGB_8;
+  public static final int PT_BGR_8;
+  public static final int PT_ABGR_8;
+  public static final int PT_BGRA_8;
+  public static final int DT_BYTE;
+  public static final int DT_SHORT;
+  public static final int DT_INT;
+  public static final int DT_DOUBLE;
+  boolean isIntPacked;
+  int pixelType;
+  int dataType;
+  int width;
+  int height;
+  int nextRowOffset;
+  int offset;
+  java.lang.Object dataArray;
+  public static int BYTES_SH(int);
+  public static int EXTRA_SH(int);
+  public static int CHANNELS_SH(int);
+  public sun.java2d.cmm.lcms.LCMSImageLayout(byte[], int, int, int) throws sun.java2d.cmm.lcms.LCMSImageLayout$ImageLayoutException;
+  public sun.java2d.cmm.lcms.LCMSImageLayout(short[], int, int, int) throws sun.java2d.cmm.lcms.LCMSImageLayout$ImageLayoutException;
+  public sun.java2d.cmm.lcms.LCMSImageLayout(int[], int, int, int) throws sun.java2d.cmm.lcms.LCMSImageLayout$ImageLayoutException;
+  public sun.java2d.cmm.lcms.LCMSImageLayout(double[], int, int, int) throws sun.java2d.cmm.lcms.LCMSImageLayout$ImageLayoutException;
+  public static sun.java2d.cmm.lcms.LCMSImageLayout createImageLayout(java.awt.image.BufferedImage) throws sun.java2d.cmm.lcms.LCMSImageLayout$ImageLayoutException;
+  static int safeAdd(int, int) throws sun.java2d.cmm.lcms.LCMSImageLayout$ImageLayoutException;
+  static int safeMult(int, int) throws sun.java2d.cmm.lcms.LCMSImageLayout$ImageLayoutException;
+  public static sun.java2d.cmm.lcms.LCMSImageLayout createImageLayout(java.awt.image.Raster);
+  static {};
+}

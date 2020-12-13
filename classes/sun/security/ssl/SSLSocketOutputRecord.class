@@ -1,0 +1,11 @@
+Compiled from "SSLSocketOutputRecord.java"
+final class sun.security.ssl.SSLSocketOutputRecord extends sun.security.ssl.OutputRecord implements sun.security.ssl.SSLRecord {
+  sun.security.ssl.SSLSocketOutputRecord(sun.security.ssl.HandshakeHash);
+  sun.security.ssl.SSLSocketOutputRecord(sun.security.ssl.HandshakeHash, sun.security.ssl.TransportContext);
+  synchronized void encodeAlert(byte, byte) throws java.io.IOException;
+  synchronized void encodeHandshake(byte[], int, int) throws java.io.IOException;
+  synchronized void encodeChangeCipherSpec() throws java.io.IOException;
+  public synchronized void flush() throws java.io.IOException;
+  synchronized void deliver(byte[], int, int) throws java.io.IOException;
+  synchronized void setDeliverStream(java.io.OutputStream);
+}

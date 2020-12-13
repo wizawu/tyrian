@@ -1,0 +1,10 @@
+Compiled from "PlatformDescription.java"
+public interface com.sun.tools.javac.platform.PlatformDescription extends java.io.Closeable {
+  public abstract javax.tools.JavaFileManager getFileManager();
+  public abstract java.lang.String getSourceVersion();
+  public abstract java.lang.String getTargetVersion();
+  public abstract java.util.List<com.sun.tools.javac.platform.PlatformDescription$PluginInfo<javax.annotation.processing.Processor>> getAnnotationProcessors();
+  public abstract java.util.List<com.sun.tools.javac.platform.PlatformDescription$PluginInfo<com.sun.source.util.Plugin>> getPlugins();
+  public abstract java.util.List<java.lang.String> getAdditionalOptions();
+  public abstract void close() throws java.io.IOException;
+}

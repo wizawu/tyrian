@@ -1,0 +1,8 @@
+Compiled from "XIncludeNamespaceSupport.java"
+public class com.sun.org.apache.xerces.internal.xinclude.XIncludeNamespaceSupport extends com.sun.org.apache.xerces.internal.xinclude.MultipleScopeNamespaceSupport {
+  public com.sun.org.apache.xerces.internal.xinclude.XIncludeNamespaceSupport();
+  public com.sun.org.apache.xerces.internal.xinclude.XIncludeNamespaceSupport(com.sun.org.apache.xerces.internal.xni.NamespaceContext);
+  public void pushContext();
+  public void setContextInvalid();
+  public java.lang.String getURIFromIncludeParent(java.lang.String);
+}

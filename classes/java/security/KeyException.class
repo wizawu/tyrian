@@ -1,0 +1,7 @@
+Compiled from "KeyException.java"
+public class java.security.KeyException extends java.security.GeneralSecurityException {
+  public java.security.KeyException();
+  public java.security.KeyException(java.lang.String);
+  public java.security.KeyException(java.lang.String, java.lang.Throwable);
+  public java.security.KeyException(java.lang.Throwable);
+}

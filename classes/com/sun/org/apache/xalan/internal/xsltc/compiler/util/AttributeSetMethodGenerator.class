@@ -1,0 +1,9 @@
+Compiled from "AttributeSetMethodGenerator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.AttributeSetMethodGenerator extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator {
+  protected static final int CURRENT_INDEX;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.AttributeSetMethodGenerator(java.lang.String, com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator);
+  public int getLocalIndex(java.lang.String);
+  public com.sun.org.apache.bcel.internal.generic.Instruction loadParameter(int);
+  public com.sun.org.apache.bcel.internal.generic.Instruction storeParameter(int);
+  static {};
+}

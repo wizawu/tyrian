@@ -1,0 +1,17 @@
+Compiled from "DefaultImageBuilder.java"
+public final class jdk.tools.jlink.builder.DefaultImageBuilder implements jdk.tools.jlink.builder.ImageBuilder {
+  public static final java.lang.String BIN_DIRNAME;
+  public static final java.lang.String CONF_DIRNAME;
+  public static final java.lang.String INCLUDE_DIRNAME;
+  public static final java.lang.String LIB_DIRNAME;
+  public static final java.lang.String LEGAL_DIRNAME;
+  public static final java.lang.String MAN_DIRNAME;
+  static final boolean $assertionsDisabled;
+  public jdk.tools.jlink.builder.DefaultImageBuilder(java.nio.file.Path, java.util.Map<java.lang.String, java.lang.String>) throws java.io.IOException;
+  public void storeFiles(jdk.tools.jlink.plugin.ResourcePool);
+  protected void prepareApplicationFiles(jdk.tools.jlink.plugin.ResourcePool) throws java.io.IOException;
+  public java.io.DataOutputStream getJImageOutputStream();
+  public jdk.tools.jlink.internal.ExecutableImage getExecutableImage();
+  public static jdk.tools.jlink.internal.ExecutableImage getExecutableImage(java.nio.file.Path);
+  static {};
+}

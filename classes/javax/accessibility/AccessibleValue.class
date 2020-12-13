@@ -1,0 +1,7 @@
+Compiled from "AccessibleValue.java"
+public interface javax.accessibility.AccessibleValue {
+  public abstract java.lang.Number getCurrentAccessibleValue();
+  public abstract boolean setCurrentAccessibleValue(java.lang.Number);
+  public abstract java.lang.Number getMinimumAccessibleValue();
+  public abstract java.lang.Number getMaximumAccessibleValue();
+}

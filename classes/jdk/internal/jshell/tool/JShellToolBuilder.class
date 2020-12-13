@@ -1,0 +1,17 @@
+Compiled from "JShellToolBuilder.java"
+public class jdk.internal.jshell.tool.JShellToolBuilder implements jdk.jshell.tool.JavaShellToolBuilder {
+  public jdk.internal.jshell.tool.JShellToolBuilder();
+  public jdk.jshell.tool.JavaShellToolBuilder in(java.io.InputStream, java.io.InputStream);
+  public jdk.jshell.tool.JavaShellToolBuilder out(java.io.PrintStream);
+  public jdk.jshell.tool.JavaShellToolBuilder out(java.io.PrintStream, java.io.PrintStream, java.io.PrintStream);
+  public jdk.jshell.tool.JavaShellToolBuilder err(java.io.PrintStream);
+  public jdk.jshell.tool.JavaShellToolBuilder err(java.io.PrintStream, java.io.PrintStream);
+  public jdk.jshell.tool.JavaShellToolBuilder persistence(java.util.prefs.Preferences);
+  public jdk.jshell.tool.JavaShellToolBuilder persistence(java.util.Map<java.lang.String, java.lang.String>);
+  public jdk.jshell.tool.JavaShellToolBuilder env(java.util.Map<java.lang.String, java.lang.String>);
+  public jdk.jshell.tool.JavaShellToolBuilder locale(java.util.Locale);
+  public jdk.jshell.tool.JavaShellToolBuilder promptCapture(boolean);
+  public jdk.internal.jshell.tool.JShellTool rawTool();
+  public void run(java.lang.String...) throws java.lang.Exception;
+  public int start(java.lang.String...) throws java.lang.Exception;
+}

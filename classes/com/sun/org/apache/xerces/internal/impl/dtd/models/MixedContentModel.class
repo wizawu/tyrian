@@ -1,0 +1,5 @@
+Compiled from "MixedContentModel.java"
+public class com.sun.org.apache.xerces.internal.impl.dtd.models.MixedContentModel implements com.sun.org.apache.xerces.internal.impl.dtd.models.ContentModelValidator {
+  public com.sun.org.apache.xerces.internal.impl.dtd.models.MixedContentModel(com.sun.org.apache.xerces.internal.xni.QName[], int[], int, int, boolean);
+  public int validate(com.sun.org.apache.xerces.internal.xni.QName[], int, int);
+}

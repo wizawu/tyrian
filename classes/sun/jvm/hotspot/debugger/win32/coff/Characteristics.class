@@ -1,0 +1,18 @@
+Compiled from "Characteristics.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.Characteristics {
+  public static final short IMAGE_FILE_RELOCS_STRIPPED;
+  public static final short IMAGE_FILE_EXECUTABLE_IMAGE;
+  public static final short IMAGE_FILE_LINE_NUMS_STRIPPED;
+  public static final short IMAGE_FILE_LOCAL_SYMS_STRIPPED;
+  public static final short IMAGE_FILE_AGGRESSIVE_WS_TRIM;
+  public static final short IMAGE_FILE_LARGE_ADDRESS_AWARE;
+  public static final short IMAGE_FILE_16BIT_MACHINE;
+  public static final short IMAGE_FILE_BYTES_REVERSED_LO;
+  public static final short IMAGE_FILE_32BIT_MACHINE;
+  public static final short IMAGE_FILE_DEBUG_STRIPPED;
+  public static final short IMAGE_FILE_REMOVABLE_RUN_FROM_SWAP;
+  public static final short IMAGE_FILE_SYSTEM;
+  public static final short IMAGE_FILE_DLL;
+  public static final short IMAGE_FILE_UP_SYSTEM_ONLY;
+  public static final short IMAGE_FILE_BYTES_REVERSED_HI;
+}

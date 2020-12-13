@@ -1,0 +1,42 @@
+Compiled from "XEmbedHelper.java"
+public class sun.awt.X11.XEmbedHelper {
+  static final jdk.internal.misc.Unsafe unsafe;
+  static final int XEMBED_VERSION;
+  static final int XEMBED_MAPPED;
+  static final int XEMBED_EMBEDDED_NOTIFY;
+  static final int XEMBED_WINDOW_ACTIVATE;
+  static final int XEMBED_WINDOW_DEACTIVATE;
+  static final int XEMBED_REQUEST_FOCUS;
+  static final int XEMBED_FOCUS_IN;
+  static final int XEMBED_FOCUS_OUT;
+  static final int XEMBED_FOCUS_NEXT;
+  static final int XEMBED_FOCUS_PREV;
+  static final int XEMBED_GRAB_KEY;
+  static final int XEMBED_UNGRAB_KEY;
+  static final int XEMBED_MODALITY_ON;
+  static final int XEMBED_MODALITY_OFF;
+  static final int XEMBED_REGISTER_ACCELERATOR;
+  static final int XEMBED_UNREGISTER_ACCELERATOR;
+  static final int XEMBED_ACTIVATE_ACCELERATOR;
+  static final int NON_STANDARD_XEMBED_GTK_GRAB_KEY;
+  static final int NON_STANDARD_XEMBED_GTK_UNGRAB_KEY;
+  static final int XEMBED_FOCUS_CURRENT;
+  static final int XEMBED_FOCUS_FIRST;
+  static final int XEMBED_FOCUS_LAST;
+  static final int XEMBED_MODIFIER_SHIFT;
+  static final int XEMBED_MODIFIER_CONTROL;
+  static final int XEMBED_MODIFIER_ALT;
+  static final int XEMBED_MODIFIER_SUPER;
+  static final int XEMBED_MODIFIER_HYPER;
+  static sun.awt.X11.XAtom XEmbedInfo;
+  static sun.awt.X11.XAtom XEmbed;
+  sun.awt.X11.XEmbedHelper();
+  void sendMessage(long, int);
+  void sendMessage(long, int, long, long, long);
+  static java.lang.String msgidToString(int);
+  static java.lang.String focusIdToString(int);
+  static java.lang.String XEmbedMessageToString(sun.awt.X11.XClientMessageEvent);
+  int getModifiers(int);
+  java.awt.AWTKeyStroke getKeyStrokeForKeySym(long, long);
+  static {};
+}

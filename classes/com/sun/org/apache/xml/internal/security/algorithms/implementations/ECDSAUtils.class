@@ -1,0 +1,11 @@
+Compiled from "ECDSAUtils.java"
+public final class com.sun.org.apache.xml.internal.security.algorithms.implementations.ECDSAUtils {
+  public static byte[] convertASN1toXMLDSIG(byte[]) throws java.io.IOException;
+  public static byte[] convertXMLDSIGtoASN1(byte[]) throws java.io.IOException;
+  public static java.lang.String getOIDFromPublicKey(java.security.interfaces.ECPublicKey);
+  public static com.sun.org.apache.xml.internal.security.algorithms.implementations.ECDSAUtils$ECCurveDefinition getECCurveDefinition(java.lang.String);
+  public static byte[] encodePoint(java.security.spec.ECPoint, java.security.spec.EllipticCurve);
+  public static java.security.spec.ECPoint decodePoint(byte[], java.security.spec.EllipticCurve);
+  public static byte[] stripLeadingZeros(byte[]);
+  static {};
+}

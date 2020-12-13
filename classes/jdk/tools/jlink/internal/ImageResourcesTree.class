@@ -1,0 +1,6 @@
+Compiled from "ImageResourcesTree.java"
+public final class jdk.tools.jlink.internal.ImageResourcesTree {
+  public static boolean isTreeInfoResource(java.lang.String);
+  public jdk.tools.jlink.internal.ImageResourcesTree(long, jdk.tools.jlink.internal.BasicImageWriter, java.util.List<java.lang.String>);
+  public void addContent(java.io.DataOutputStream) throws java.io.IOException;
+}

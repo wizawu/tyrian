@@ -1,0 +1,11 @@
+Compiled from "ClassLoadingImpl.java"
+class sun.management.ClassLoadingImpl implements java.lang.management.ClassLoadingMXBean {
+  sun.management.ClassLoadingImpl(sun.management.VMManagement);
+  public long getTotalLoadedClassCount();
+  public int getLoadedClassCount();
+  public long getUnloadedClassCount();
+  public boolean isVerbose();
+  public void setVerbose(boolean);
+  static native void setVerboseClass(boolean);
+  public javax.management.ObjectName getObjectName();
+}

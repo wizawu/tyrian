@@ -1,0 +1,6 @@
+Compiled from "InvalidPreferencesFormatException.java"
+public class java.util.prefs.InvalidPreferencesFormatException extends java.lang.Exception {
+  public java.util.prefs.InvalidPreferencesFormatException(java.lang.Throwable);
+  public java.util.prefs.InvalidPreferencesFormatException(java.lang.String);
+  public java.util.prefs.InvalidPreferencesFormatException(java.lang.String, java.lang.Throwable);
+}

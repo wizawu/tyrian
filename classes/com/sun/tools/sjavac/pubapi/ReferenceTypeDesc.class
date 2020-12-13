@@ -1,0 +1,8 @@
+Compiled from "ReferenceTypeDesc.java"
+public class com.sun.tools.sjavac.pubapi.ReferenceTypeDesc extends com.sun.tools.sjavac.pubapi.TypeDesc implements java.io.Serializable {
+  java.lang.String javaType;
+  public com.sun.tools.sjavac.pubapi.ReferenceTypeDesc(java.lang.String);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

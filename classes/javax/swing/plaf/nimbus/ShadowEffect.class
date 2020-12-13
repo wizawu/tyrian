@@ -1,0 +1,22 @@
+Compiled from "ShadowEffect.java"
+abstract class javax.swing.plaf.nimbus.ShadowEffect extends javax.swing.plaf.nimbus.Effect {
+  protected java.awt.Color color;
+  protected float opacity;
+  protected int angle;
+  protected int distance;
+  protected int spread;
+  protected int size;
+  javax.swing.plaf.nimbus.ShadowEffect();
+  java.awt.Color getColor();
+  void setColor(java.awt.Color);
+  float getOpacity();
+  void setOpacity(float);
+  int getAngle();
+  void setAngle(int);
+  int getDistance();
+  void setDistance(int);
+  int getSpread();
+  void setSpread(int);
+  int getSize();
+  void setSize(int);
+}

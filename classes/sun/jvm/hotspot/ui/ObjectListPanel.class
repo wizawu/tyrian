@@ -1,0 +1,4 @@
+Compiled from "ObjectListPanel.java"
+public class sun.jvm.hotspot.ui.ObjectListPanel extends sun.jvm.hotspot.ui.SAPanel {
+  public sun.jvm.hotspot.ui.ObjectListPanel(java.util.List, sun.jvm.hotspot.utilities.HeapProgressThunk);
+}

@@ -1,0 +1,11 @@
+Compiled from "UnixNumericGroupPrincipal.java"
+public class com.sun.security.auth.UnixNumericGroupPrincipal implements java.security.Principal,java.io.Serializable {
+  public com.sun.security.auth.UnixNumericGroupPrincipal(java.lang.String, boolean);
+  public com.sun.security.auth.UnixNumericGroupPrincipal(long, boolean);
+  public java.lang.String getName();
+  public long longValue();
+  public boolean isPrimaryGroup();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

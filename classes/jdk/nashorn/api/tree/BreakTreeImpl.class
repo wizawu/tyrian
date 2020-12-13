@@ -1,0 +1,7 @@
+Compiled from "BreakTreeImpl.java"
+final class jdk.nashorn.api.tree.BreakTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.BreakTree {
+  jdk.nashorn.api.tree.BreakTreeImpl(jdk.nashorn.internal.ir.BreakNode);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public java.lang.String getLabel();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

@@ -1,0 +1,5 @@
+Compiled from "SerializerMessages_it.java"
+public class com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages_it extends java.util.ListResourceBundle {
+  public com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages_it();
+  public java.lang.Object[][] getContents();
+}

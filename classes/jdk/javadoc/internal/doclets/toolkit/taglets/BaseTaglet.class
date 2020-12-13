@@ -1,0 +1,16 @@
+Compiled from "BaseTaglet.java"
+public class jdk.javadoc.internal.doclets.toolkit.taglets.BaseTaglet implements jdk.javadoc.internal.doclets.toolkit.taglets.Taglet {
+  protected final java.lang.String name;
+  jdk.javadoc.internal.doclets.toolkit.taglets.BaseTaglet(java.lang.String, boolean, java.util.Set<jdk.javadoc.internal.doclets.toolkit.taglets.BaseTaglet$Site>);
+  public final boolean inConstructor();
+  public final boolean inField();
+  public final boolean inMethod();
+  public final boolean inOverview();
+  public final boolean inModule();
+  public final boolean inPackage();
+  public final boolean inType();
+  public final boolean isInlineTag();
+  public java.lang.String getName();
+  public jdk.javadoc.internal.doclets.toolkit.Content getTagletOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
+  public jdk.javadoc.internal.doclets.toolkit.Content getTagletOutput(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
+}

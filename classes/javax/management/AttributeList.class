@@ -1,0 +1,18 @@
+Compiled from "AttributeList.java"
+public class javax.management.AttributeList extends java.util.ArrayList<java.lang.Object> {
+  public javax.management.AttributeList();
+  public javax.management.AttributeList(int);
+  public javax.management.AttributeList(javax.management.AttributeList);
+  public javax.management.AttributeList(java.util.List<javax.management.Attribute>);
+  public java.util.List<javax.management.Attribute> asList();
+  public void add(javax.management.Attribute);
+  public void add(int, javax.management.Attribute);
+  public void set(int, javax.management.Attribute);
+  public boolean addAll(javax.management.AttributeList);
+  public boolean addAll(int, javax.management.AttributeList);
+  public boolean add(java.lang.Object);
+  public void add(int, java.lang.Object);
+  public boolean addAll(java.util.Collection<?>);
+  public boolean addAll(int, java.util.Collection<?>);
+  public java.lang.Object set(int, java.lang.Object);
+}

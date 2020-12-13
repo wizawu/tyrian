@@ -1,0 +1,10 @@
+Compiled from "ErrorHandlerAdaptor.java"
+public abstract class com.sun.org.apache.xerces.internal.jaxp.validation.ErrorHandlerAdaptor implements com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler {
+  public com.sun.org.apache.xerces.internal.jaxp.validation.ErrorHandlerAdaptor();
+  public boolean hadError();
+  public void reset();
+  protected abstract org.xml.sax.ErrorHandler getErrorHandler();
+  public void fatalError(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException);
+  public void error(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException);
+  public void warning(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException);
+}

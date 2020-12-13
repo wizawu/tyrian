@@ -1,0 +1,5 @@
+Compiled from "Messages.java"
+public interface com.sun.tools.javac.api.Messages {
+  public abstract void add(java.lang.String) throws java.util.MissingResourceException;
+  public abstract java.lang.String getLocalizedString(java.util.Locale, java.lang.String, java.lang.Object...);
+}

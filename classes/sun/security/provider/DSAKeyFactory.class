@@ -1,0 +1,10 @@
+Compiled from "DSAKeyFactory.java"
+public class sun.security.provider.DSAKeyFactory extends java.security.KeyFactorySpi {
+  static final boolean SERIAL_INTEROP;
+  public sun.security.provider.DSAKeyFactory();
+  protected java.security.PublicKey engineGeneratePublic(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
+  protected java.security.PrivateKey engineGeneratePrivate(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
+  protected <T extends java.security.spec.KeySpec> T engineGetKeySpec(java.security.Key, java.lang.Class<T>) throws java.security.spec.InvalidKeySpecException;
+  protected java.security.Key engineTranslateKey(java.security.Key) throws java.security.InvalidKeyException;
+  static {};
+}

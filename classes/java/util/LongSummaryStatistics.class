@@ -1,0 +1,14 @@
+Compiled from "LongSummaryStatistics.java"
+public class java.util.LongSummaryStatistics implements java.util.function.LongConsumer,java.util.function.IntConsumer {
+  public java.util.LongSummaryStatistics();
+  public java.util.LongSummaryStatistics(long, long, long, long) throws java.lang.IllegalArgumentException;
+  public void accept(int);
+  public void accept(long);
+  public void combine(java.util.LongSummaryStatistics);
+  public final long getCount();
+  public final long getSum();
+  public final long getMin();
+  public final long getMax();
+  public final double getAverage();
+  public java.lang.String toString();
+}

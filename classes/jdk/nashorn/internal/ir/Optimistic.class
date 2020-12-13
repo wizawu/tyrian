@@ -1,0 +1,9 @@
+Compiled from "Optimistic.java"
+public interface jdk.nashorn.internal.ir.Optimistic {
+  public abstract int getProgramPoint();
+  public abstract jdk.nashorn.internal.ir.Optimistic setProgramPoint(int);
+  public abstract boolean canBeOptimistic();
+  public abstract jdk.nashorn.internal.codegen.types.Type getMostOptimisticType();
+  public abstract jdk.nashorn.internal.codegen.types.Type getMostPessimisticType();
+  public abstract jdk.nashorn.internal.ir.Optimistic setType(jdk.nashorn.internal.codegen.types.Type);
+}

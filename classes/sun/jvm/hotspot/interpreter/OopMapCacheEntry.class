@@ -1,0 +1,17 @@
+Compiled from "OopMapCacheEntry.java"
+public class sun.jvm.hotspot.interpreter.OopMapCacheEntry {
+  public sun.jvm.hotspot.interpreter.OopMapCacheEntry();
+  public boolean isValue(int);
+  public boolean isOop(int);
+  public void iterateOop(sun.jvm.hotspot.interpreter.OffsetClosure);
+  public void fill(sun.jvm.hotspot.oops.Method, int);
+  public void setMask(sun.jvm.hotspot.oops.CellTypeStateList, sun.jvm.hotspot.oops.CellTypeStateList, int);
+  sun.jvm.hotspot.oops.Method method();
+  int bci();
+  int numberOfEntries();
+  boolean entryAt(int);
+  void setEmptyMask();
+  void allocateBitMask();
+  void fillForNative();
+  boolean verifyMask(sun.jvm.hotspot.oops.CellTypeStateList, sun.jvm.hotspot.oops.CellTypeStateList, int, int);
+}

@@ -1,0 +1,17 @@
+Compiled from "DataFrame.java"
+public class jdk.internal.net.http.frame.DataFrame extends jdk.internal.net.http.frame.Http2Frame {
+  public static final int TYPE;
+  public static final int END_STREAM;
+  public static final int PADDED;
+  public jdk.internal.net.http.frame.DataFrame(int, int, java.nio.ByteBuffer);
+  public jdk.internal.net.http.frame.DataFrame(int, int, java.util.List<java.nio.ByteBuffer>);
+  public jdk.internal.net.http.frame.DataFrame(int, int, java.util.List<java.nio.ByteBuffer>, int);
+  public int type();
+  int length();
+  public java.lang.String flagAsString(int);
+  public java.util.List<java.nio.ByteBuffer> getData();
+  public int getDataLength();
+  int getPadLength();
+  public void setPadLength(int);
+  public int payloadLength();
+}

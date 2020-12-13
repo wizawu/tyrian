@@ -1,0 +1,41 @@
+Compiled from "MetalFileChooserUI.java"
+public class javax.swing.plaf.metal.MetalFileChooserUI extends javax.swing.plaf.basic.BasicFileChooserUI {
+  static final int space;
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.plaf.metal.MetalFileChooserUI(javax.swing.JFileChooser);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallComponents(javax.swing.JFileChooser);
+  public void installComponents(javax.swing.JFileChooser);
+  protected javax.swing.JPanel getButtonPanel();
+  protected javax.swing.JPanel getBottomPanel();
+  protected void installStrings(javax.swing.JFileChooser);
+  protected void installListeners(javax.swing.JFileChooser);
+  protected javax.swing.ActionMap getActionMap();
+  protected javax.swing.ActionMap createActionMap();
+  protected javax.swing.JPanel createList(javax.swing.JFileChooser);
+  protected javax.swing.JPanel createDetailsView(javax.swing.JFileChooser);
+  public javax.swing.event.ListSelectionListener createListSelectionListener(javax.swing.JFileChooser);
+  public void uninstallUI(javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  public java.beans.PropertyChangeListener createPropertyChangeListener(javax.swing.JFileChooser);
+  protected void removeControlButtons();
+  protected void addControlButtons();
+  public void ensureFileIsVisible(javax.swing.JFileChooser, java.io.File);
+  public void rescanCurrentDirectory(javax.swing.JFileChooser);
+  public java.lang.String getFileName();
+  public void setFileName(java.lang.String);
+  protected void setDirectorySelected(boolean);
+  public java.lang.String getDirectoryName();
+  public void setDirectoryName(java.lang.String);
+  protected javax.swing.plaf.metal.MetalFileChooserUI$DirectoryComboBoxModel createDirectoryComboBoxModel(javax.swing.JFileChooser);
+  protected javax.swing.plaf.metal.MetalFileChooserUI$FilterComboBoxRenderer createFilterComboBoxRenderer();
+  protected javax.swing.plaf.metal.MetalFileChooserUI$FilterComboBoxModel createFilterComboBoxModel();
+  public void valueChanged(javax.swing.event.ListSelectionEvent);
+  protected javax.swing.JButton getApproveButton(javax.swing.JFileChooser);
+  static boolean access$000(javax.swing.plaf.metal.MetalFileChooserUI);
+  static java.io.File access$100(javax.swing.plaf.metal.MetalFileChooserUI);
+  static java.awt.event.MouseListener access$200(javax.swing.plaf.metal.MetalFileChooserUI, javax.swing.JFileChooser, javax.swing.JList);
+  static {};
+}

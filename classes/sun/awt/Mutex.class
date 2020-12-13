@@ -1,0 +1,7 @@
+Compiled from "Mutex.java"
+public class sun.awt.Mutex {
+  public sun.awt.Mutex();
+  public synchronized void lock();
+  public synchronized void unlock();
+  protected boolean isOwned();
+}

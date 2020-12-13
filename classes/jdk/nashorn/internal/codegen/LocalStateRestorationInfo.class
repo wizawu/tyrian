@@ -1,0 +1,6 @@
+Compiled from "LocalStateRestorationInfo.java"
+public class jdk.nashorn.internal.codegen.LocalStateRestorationInfo {
+  jdk.nashorn.internal.codegen.LocalStateRestorationInfo(jdk.nashorn.internal.codegen.types.Type[], int[]);
+  public jdk.nashorn.internal.codegen.types.Type[] getLocalVariableTypes();
+  public int[] getStackLoads();
+}

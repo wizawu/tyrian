@@ -1,0 +1,10 @@
+Compiled from "DoubleConsts.java"
+public class jdk.internal.math.DoubleConsts {
+  public static final int SIGNIFICAND_WIDTH;
+  public static final int MIN_SUB_EXPONENT;
+  public static final int EXP_BIAS;
+  public static final long SIGN_BIT_MASK;
+  public static final long EXP_BIT_MASK;
+  public static final long SIGNIF_BIT_MASK;
+  static {};
+}

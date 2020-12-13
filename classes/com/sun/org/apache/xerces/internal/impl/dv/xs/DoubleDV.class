@@ -1,0 +1,9 @@
+Compiled from "DoubleDV.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.xs.DoubleDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
+  public com.sun.org.apache.xerces.internal.impl.dv.xs.DoubleDV();
+  public short getAllowedFacets();
+  public java.lang.Object getActualValue(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
+  public int compare(java.lang.Object, java.lang.Object);
+  public boolean isIdentical(java.lang.Object, java.lang.Object);
+  static boolean isPossibleFP(java.lang.String);
+}

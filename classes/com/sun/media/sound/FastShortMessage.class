@@ -1,0 +1,17 @@
+Compiled from "FastShortMessage.java"
+final class com.sun.media.sound.FastShortMessage extends javax.sound.midi.ShortMessage {
+  com.sun.media.sound.FastShortMessage(int) throws javax.sound.midi.InvalidMidiDataException;
+  com.sun.media.sound.FastShortMessage(javax.sound.midi.ShortMessage);
+  int getPackedMsg();
+  public byte[] getMessage();
+  public int getLength();
+  public void setMessage(int) throws javax.sound.midi.InvalidMidiDataException;
+  public void setMessage(int, int, int) throws javax.sound.midi.InvalidMidiDataException;
+  public void setMessage(int, int, int, int) throws javax.sound.midi.InvalidMidiDataException;
+  public int getChannel();
+  public int getCommand();
+  public int getData1();
+  public int getData2();
+  public int getStatus();
+  public java.lang.Object clone();
+}

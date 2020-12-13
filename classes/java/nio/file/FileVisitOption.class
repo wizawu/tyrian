@@ -1,0 +1,7 @@
+Compiled from "FileVisitOption.java"
+public final class java.nio.file.FileVisitOption extends java.lang.Enum<java.nio.file.FileVisitOption> {
+  public static final java.nio.file.FileVisitOption FOLLOW_LINKS;
+  public static java.nio.file.FileVisitOption[] values();
+  public static java.nio.file.FileVisitOption valueOf(java.lang.String);
+  static {};
+}

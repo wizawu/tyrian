@@ -1,0 +1,13 @@
+Compiled from "ObjectListImpl.java"
+public final class com.sun.org.apache.xerces.internal.impl.xs.util.ObjectListImpl extends java.util.AbstractList<java.lang.Object> implements com.sun.org.apache.xerces.internal.xs.datatypes.ObjectList {
+  public static final com.sun.org.apache.xerces.internal.impl.xs.util.ObjectListImpl EMPTY_LIST;
+  public com.sun.org.apache.xerces.internal.impl.xs.util.ObjectListImpl(java.lang.Object[], int);
+  public int getLength();
+  public boolean contains(java.lang.Object);
+  public java.lang.Object item(int);
+  public java.lang.Object get(int);
+  public int size();
+  public java.lang.Object[] toArray();
+  public java.lang.Object[] toArray(java.lang.Object[]);
+  static {};
+}

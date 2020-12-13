@@ -1,0 +1,5 @@
+Compiled from "LinkTree.java"
+public interface com.sun.source.doctree.LinkTree extends com.sun.source.doctree.InlineTagTree {
+  public abstract com.sun.source.doctree.ReferenceTree getReference();
+  public abstract java.util.List<? extends com.sun.source.doctree.DocTree> getLabel();
+}

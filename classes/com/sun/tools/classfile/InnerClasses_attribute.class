@@ -1,0 +1,9 @@
+Compiled from "InnerClasses_attribute.java"
+public class com.sun.tools.classfile.InnerClasses_attribute extends com.sun.tools.classfile.Attribute {
+  public final int number_of_classes;
+  public final com.sun.tools.classfile.InnerClasses_attribute$Info[] classes;
+  com.sun.tools.classfile.InnerClasses_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException;
+  public com.sun.tools.classfile.InnerClasses_attribute(com.sun.tools.classfile.ConstantPool, com.sun.tools.classfile.InnerClasses_attribute$Info[]) throws com.sun.tools.classfile.ConstantPoolException;
+  public com.sun.tools.classfile.InnerClasses_attribute(int, com.sun.tools.classfile.InnerClasses_attribute$Info[]);
+  public <R, D> R accept(com.sun.tools.classfile.Attribute$Visitor<R, D>, D);
+}

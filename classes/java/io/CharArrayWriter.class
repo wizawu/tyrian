@@ -1,0 +1,26 @@
+Compiled from "CharArrayWriter.java"
+public class java.io.CharArrayWriter extends java.io.Writer {
+  protected char[] buf;
+  protected int count;
+  public java.io.CharArrayWriter();
+  public java.io.CharArrayWriter(int);
+  public void write(int);
+  public void write(char[], int, int);
+  public void write(java.lang.String, int, int);
+  public void writeTo(java.io.Writer) throws java.io.IOException;
+  public java.io.CharArrayWriter append(java.lang.CharSequence);
+  public java.io.CharArrayWriter append(java.lang.CharSequence, int, int);
+  public java.io.CharArrayWriter append(char);
+  public void reset();
+  public char[] toCharArray();
+  public int size();
+  public java.lang.String toString();
+  public void flush();
+  public void close();
+  public java.io.Writer append(char) throws java.io.IOException;
+  public java.io.Writer append(java.lang.CharSequence, int, int) throws java.io.IOException;
+  public java.io.Writer append(java.lang.CharSequence) throws java.io.IOException;
+  public java.lang.Appendable append(char) throws java.io.IOException;
+  public java.lang.Appendable append(java.lang.CharSequence, int, int) throws java.io.IOException;
+  public java.lang.Appendable append(java.lang.CharSequence) throws java.io.IOException;
+}

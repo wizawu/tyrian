@@ -1,0 +1,27 @@
+Compiled from "Vset.java"
+public final class sun.tools.tree.Vset implements sun.tools.java.Constants {
+  long vset;
+  long uset;
+  long[] x;
+  static final long[] emptyX;
+  static final long[] fullX;
+  static final int VBITS;
+  static final sun.tools.tree.Vset DEAD_END;
+  public sun.tools.tree.Vset();
+  public sun.tools.tree.Vset copy();
+  public boolean isDeadEnd();
+  public boolean isReallyDeadEnd();
+  public sun.tools.tree.Vset clearDeadEnd();
+  public boolean testVar(int);
+  public boolean testVarUnassigned(int);
+  public sun.tools.tree.Vset addVar(int);
+  public sun.tools.tree.Vset addVarUnassigned(int);
+  public sun.tools.tree.Vset clearVar(int);
+  public sun.tools.tree.Vset join(sun.tools.tree.Vset);
+  public sun.tools.tree.Vset addDAandJoinDU(sun.tools.tree.Vset);
+  public static sun.tools.tree.Vset firstDAandSecondDU(sun.tools.tree.Vset, sun.tools.tree.Vset);
+  public sun.tools.tree.Vset removeAdditionalVars(int);
+  public int varLimit();
+  public java.lang.String toString();
+  static {};
+}

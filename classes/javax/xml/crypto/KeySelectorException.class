@@ -1,0 +1,11 @@
+Compiled from "KeySelectorException.java"
+public class javax.xml.crypto.KeySelectorException extends java.lang.Exception {
+  public javax.xml.crypto.KeySelectorException();
+  public javax.xml.crypto.KeySelectorException(java.lang.String);
+  public javax.xml.crypto.KeySelectorException(java.lang.String, java.lang.Throwable);
+  public javax.xml.crypto.KeySelectorException(java.lang.Throwable);
+  public java.lang.Throwable getCause();
+  public void printStackTrace();
+  public void printStackTrace(java.io.PrintStream);
+  public void printStackTrace(java.io.PrintWriter);
+}

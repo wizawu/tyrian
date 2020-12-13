@@ -1,0 +1,24 @@
+Compiled from "XPathMatcher.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.identity.XPathMatcher {
+  protected static final boolean DEBUG_ALL;
+  protected static final boolean DEBUG_METHODS;
+  protected static final boolean DEBUG_METHODS2;
+  protected static final boolean DEBUG_METHODS3;
+  protected static final boolean DEBUG_MATCH;
+  protected static final boolean DEBUG_STACK;
+  protected static final boolean DEBUG_ANY;
+  protected static final int MATCHED;
+  protected static final int MATCHED_ATTRIBUTE;
+  protected static final int MATCHED_DESCENDANT;
+  protected static final int MATCHED_DESCENDANT_PREVIOUS;
+  protected java.lang.Object fMatchedString;
+  final com.sun.org.apache.xerces.internal.xni.QName fQName;
+  public com.sun.org.apache.xerces.internal.impl.xs.identity.XPathMatcher(com.sun.org.apache.xerces.internal.impl.xpath.XPath);
+  public boolean isMatched();
+  protected void handleContent(com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, boolean, java.lang.Object, short, com.sun.org.apache.xerces.internal.xs.ShortList);
+  protected void matched(java.lang.Object, short, com.sun.org.apache.xerces.internal.xs.ShortList, boolean);
+  public void startDocumentFragment();
+  public void startElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes);
+  public void endElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, boolean, java.lang.Object, short, com.sun.org.apache.xerces.internal.xs.ShortList);
+  public java.lang.String toString();
+}

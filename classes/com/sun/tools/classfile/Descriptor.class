@@ -1,0 +1,11 @@
+Compiled from "Descriptor.java"
+public class com.sun.tools.classfile.Descriptor {
+  public final int index;
+  public com.sun.tools.classfile.Descriptor(com.sun.tools.classfile.ClassReader) throws java.io.IOException;
+  public com.sun.tools.classfile.Descriptor(int);
+  public java.lang.String getValue(com.sun.tools.classfile.ConstantPool) throws com.sun.tools.classfile.ConstantPoolException;
+  public int getParameterCount(com.sun.tools.classfile.ConstantPool) throws com.sun.tools.classfile.ConstantPoolException, com.sun.tools.classfile.Descriptor$InvalidDescriptor;
+  public java.lang.String getParameterTypes(com.sun.tools.classfile.ConstantPool) throws com.sun.tools.classfile.ConstantPoolException, com.sun.tools.classfile.Descriptor$InvalidDescriptor;
+  public java.lang.String getReturnType(com.sun.tools.classfile.ConstantPool) throws com.sun.tools.classfile.ConstantPoolException, com.sun.tools.classfile.Descriptor$InvalidDescriptor;
+  public java.lang.String getFieldType(com.sun.tools.classfile.ConstantPool) throws com.sun.tools.classfile.ConstantPoolException, com.sun.tools.classfile.Descriptor$InvalidDescriptor;
+}

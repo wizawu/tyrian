@@ -1,0 +1,22 @@
+Compiled from "AuxLocaleProviderAdapter.java"
+public abstract class sun.util.locale.provider.AuxLocaleProviderAdapter extends sun.util.locale.provider.LocaleProviderAdapter {
+  public sun.util.locale.provider.AuxLocaleProviderAdapter();
+  public <P extends java.util.spi.LocaleServiceProvider> P getLocaleServiceProvider(java.lang.Class<P>);
+  protected abstract <P extends java.util.spi.LocaleServiceProvider> P findInstalledProvider(java.lang.Class<P>);
+  public java.text.spi.BreakIteratorProvider getBreakIteratorProvider();
+  public java.text.spi.CollatorProvider getCollatorProvider();
+  public java.text.spi.DateFormatProvider getDateFormatProvider();
+  public java.text.spi.DateFormatSymbolsProvider getDateFormatSymbolsProvider();
+  public java.text.spi.DecimalFormatSymbolsProvider getDecimalFormatSymbolsProvider();
+  public java.text.spi.NumberFormatProvider getNumberFormatProvider();
+  public java.util.spi.CurrencyNameProvider getCurrencyNameProvider();
+  public java.util.spi.LocaleNameProvider getLocaleNameProvider();
+  public java.util.spi.TimeZoneNameProvider getTimeZoneNameProvider();
+  public java.util.spi.CalendarDataProvider getCalendarDataProvider();
+  public java.util.spi.CalendarNameProvider getCalendarNameProvider();
+  public sun.util.spi.CalendarProvider getCalendarProvider();
+  public sun.util.locale.provider.LocaleResources getLocaleResources(java.util.Locale);
+  public sun.text.spi.JavaTimeDateTimePatternProvider getJavaTimeDateTimePatternProvider();
+  public java.util.Locale[] getAvailableLocales();
+  static {};
+}

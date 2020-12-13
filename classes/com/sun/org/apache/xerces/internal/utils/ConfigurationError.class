@@ -1,0 +1,5 @@
+Compiled from "ConfigurationError.java"
+public final class com.sun.org.apache.xerces.internal.utils.ConfigurationError extends java.lang.Error {
+  com.sun.org.apache.xerces.internal.utils.ConfigurationError(java.lang.String, java.lang.Exception);
+  public java.lang.Exception getException();
+}

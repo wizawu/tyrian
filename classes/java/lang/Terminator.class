@@ -1,0 +1,7 @@
+Compiled from "Terminator.java"
+class java.lang.Terminator {
+  java.lang.Terminator();
+  static void setup();
+  static void teardown();
+  static {};
+}

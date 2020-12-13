@@ -1,0 +1,10 @@
+Compiled from "PrintJobAdapter.java"
+public abstract class javax.print.event.PrintJobAdapter implements javax.print.event.PrintJobListener {
+  public javax.print.event.PrintJobAdapter();
+  public void printDataTransferCompleted(javax.print.event.PrintJobEvent);
+  public void printJobCompleted(javax.print.event.PrintJobEvent);
+  public void printJobFailed(javax.print.event.PrintJobEvent);
+  public void printJobCanceled(javax.print.event.PrintJobEvent);
+  public void printJobNoMoreEvents(javax.print.event.PrintJobEvent);
+  public void printJobRequiresAttention(javax.print.event.PrintJobEvent);
+}

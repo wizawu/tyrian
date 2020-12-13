@@ -1,0 +1,16 @@
+Compiled from "DeflaterInputStream.java"
+public class java.util.zip.DeflaterInputStream extends java.io.FilterInputStream {
+  protected final java.util.zip.Deflater def;
+  protected final byte[] buf;
+  public java.util.zip.DeflaterInputStream(java.io.InputStream);
+  public java.util.zip.DeflaterInputStream(java.io.InputStream, java.util.zip.Deflater);
+  public java.util.zip.DeflaterInputStream(java.io.InputStream, java.util.zip.Deflater, int);
+  public void close() throws java.io.IOException;
+  public int read() throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public long skip(long) throws java.io.IOException;
+  public int available() throws java.io.IOException;
+  public boolean markSupported();
+  public void mark(int);
+  public void reset() throws java.io.IOException;
+}

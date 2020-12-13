@@ -1,0 +1,8 @@
+Compiled from "DOM2Helper.java"
+public final class com.sun.org.apache.xml.internal.utils.DOM2Helper {
+  public static java.lang.String getLocalNameOfNode(org.w3c.dom.Node);
+  public static java.lang.String getNamespaceOfNode(org.w3c.dom.Node);
+  public static boolean isNodeAfter(org.w3c.dom.Node, org.w3c.dom.Node);
+  public static boolean isNodeTheSame(org.w3c.dom.Node, org.w3c.dom.Node);
+  public static org.w3c.dom.Node getParentOfNode(org.w3c.dom.Node);
+}

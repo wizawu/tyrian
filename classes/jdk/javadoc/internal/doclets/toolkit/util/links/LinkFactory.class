@@ -1,0 +1,11 @@
+Compiled from "LinkFactory.java"
+public abstract class jdk.javadoc.internal.doclets.toolkit.util.links.LinkFactory {
+  protected final jdk.javadoc.internal.doclets.toolkit.util.Utils utils;
+  protected jdk.javadoc.internal.doclets.toolkit.util.links.LinkFactory(jdk.javadoc.internal.doclets.toolkit.util.Utils);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content newContent();
+  public jdk.javadoc.internal.doclets.toolkit.Content getLink(jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content getClassLink(jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content getTypeParameterLinks(jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo, boolean);
+  public jdk.javadoc.internal.doclets.toolkit.Content getTypeParameterLinks(jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getTypeAnnotationLinks(jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo);
+}

@@ -1,0 +1,4 @@
+Compiled from "ECField.java"
+public interface java.security.spec.ECField {
+  public abstract int getFieldSize();
+}

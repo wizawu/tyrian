@@ -1,0 +1,45 @@
+Compiled from "GSSContextSpi.java"
+public interface sun.security.jgss.spi.GSSContextSpi {
+  public abstract java.security.Provider getProvider();
+  public abstract void requestLifetime(int) throws org.ietf.jgss.GSSException;
+  public abstract void requestMutualAuth(boolean) throws org.ietf.jgss.GSSException;
+  public abstract void requestReplayDet(boolean) throws org.ietf.jgss.GSSException;
+  public abstract void requestSequenceDet(boolean) throws org.ietf.jgss.GSSException;
+  public abstract void requestCredDeleg(boolean) throws org.ietf.jgss.GSSException;
+  public abstract void requestAnonymity(boolean) throws org.ietf.jgss.GSSException;
+  public abstract void requestConf(boolean) throws org.ietf.jgss.GSSException;
+  public abstract void requestInteg(boolean) throws org.ietf.jgss.GSSException;
+  public abstract void requestDelegPolicy(boolean) throws org.ietf.jgss.GSSException;
+  public abstract void setChannelBinding(org.ietf.jgss.ChannelBinding) throws org.ietf.jgss.GSSException;
+  public abstract boolean getCredDelegState();
+  public abstract boolean getMutualAuthState();
+  public abstract boolean getReplayDetState();
+  public abstract boolean getSequenceDetState();
+  public abstract boolean getAnonymityState();
+  public abstract boolean getDelegPolicyState();
+  public abstract boolean isTransferable() throws org.ietf.jgss.GSSException;
+  public abstract boolean isProtReady();
+  public abstract boolean isInitiator();
+  public abstract boolean getConfState();
+  public abstract boolean getIntegState();
+  public abstract int getLifetime();
+  public abstract boolean isEstablished();
+  public abstract sun.security.jgss.spi.GSSNameSpi getSrcName() throws org.ietf.jgss.GSSException;
+  public abstract sun.security.jgss.spi.GSSNameSpi getTargName() throws org.ietf.jgss.GSSException;
+  public abstract org.ietf.jgss.Oid getMech() throws org.ietf.jgss.GSSException;
+  public abstract sun.security.jgss.spi.GSSCredentialSpi getDelegCred() throws org.ietf.jgss.GSSException;
+  public abstract byte[] initSecContext(java.io.InputStream, int) throws org.ietf.jgss.GSSException;
+  public abstract byte[] acceptSecContext(java.io.InputStream, int) throws org.ietf.jgss.GSSException;
+  public abstract int getWrapSizeLimit(int, boolean, int) throws org.ietf.jgss.GSSException;
+  public abstract void wrap(java.io.InputStream, java.io.OutputStream, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public abstract byte[] wrap(byte[], int, int, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public abstract void unwrap(java.io.InputStream, java.io.OutputStream, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public abstract byte[] unwrap(byte[], int, int, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public abstract void getMIC(java.io.InputStream, java.io.OutputStream, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public abstract byte[] getMIC(byte[], int, int, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public abstract void verifyMIC(java.io.InputStream, java.io.InputStream, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public abstract void verifyMIC(byte[], int, int, byte[], int, int, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public abstract byte[] export() throws org.ietf.jgss.GSSException;
+  public abstract void dispose() throws org.ietf.jgss.GSSException;
+  public abstract java.lang.Object inquireSecContext(java.lang.String) throws org.ietf.jgss.GSSException;
+}

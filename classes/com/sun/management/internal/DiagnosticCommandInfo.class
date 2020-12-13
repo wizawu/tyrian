@@ -1,0 +1,12 @@
+Compiled from "DiagnosticCommandInfo.java"
+class com.sun.management.internal.DiagnosticCommandInfo {
+  java.lang.String getName();
+  java.lang.String getDescription();
+  java.lang.String getImpact();
+  java.lang.String getPermissionClass();
+  java.lang.String getPermissionName();
+  java.lang.String getPermissionAction();
+  boolean isEnabled();
+  java.util.List<com.sun.management.internal.DiagnosticCommandArgumentInfo> getArgumentsInfo();
+  com.sun.management.internal.DiagnosticCommandInfo(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, java.util.List<com.sun.management.internal.DiagnosticCommandArgumentInfo>);
+}

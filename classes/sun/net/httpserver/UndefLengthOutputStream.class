@@ -1,0 +1,8 @@
+Compiled from "UndefLengthOutputStream.java"
+class sun.net.httpserver.UndefLengthOutputStream extends java.io.FilterOutputStream {
+  sun.net.httpserver.ExchangeImpl t;
+  sun.net.httpserver.UndefLengthOutputStream(sun.net.httpserver.ExchangeImpl, java.io.OutputStream);
+  public void write(int) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

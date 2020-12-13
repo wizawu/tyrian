@@ -1,0 +1,24 @@
+Compiled from "MBeanSupport.java"
+public abstract class com.sun.jmx.mbeanserver.MBeanSupport<M> implements com.sun.jmx.mbeanserver.DynamicMBean2, javax.management.MBeanRegistration {
+  <T> com.sun.jmx.mbeanserver.MBeanSupport(T, java.lang.Class<T>) throws javax.management.NotCompliantMBeanException;
+  abstract com.sun.jmx.mbeanserver.MBeanIntrospector<M> getMBeanIntrospector();
+  abstract java.lang.Object getCookie();
+  public final boolean isMXBean();
+  public abstract void register(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public abstract void unregister();
+  public final javax.management.ObjectName preRegister(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public final void preRegister2(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public final void registerFailed();
+  public final void postRegister(java.lang.Boolean);
+  public final void preDeregister() throws java.lang.Exception;
+  public final void postDeregister();
+  public final java.lang.Object getAttribute(java.lang.String) throws javax.management.AttributeNotFoundException, javax.management.MBeanException, javax.management.ReflectionException;
+  public final javax.management.AttributeList getAttributes(java.lang.String[]);
+  public final void setAttribute(javax.management.Attribute) throws javax.management.AttributeNotFoundException, javax.management.InvalidAttributeValueException, javax.management.MBeanException, javax.management.ReflectionException;
+  public final javax.management.AttributeList setAttributes(javax.management.AttributeList);
+  public final java.lang.Object invoke(java.lang.String, java.lang.Object[], java.lang.String[]) throws javax.management.MBeanException, javax.management.ReflectionException;
+  public javax.management.MBeanInfo getMBeanInfo();
+  public final java.lang.String getClassName();
+  public final java.lang.Object getResource();
+  public final java.lang.Class<?> getMBeanInterface();
+}

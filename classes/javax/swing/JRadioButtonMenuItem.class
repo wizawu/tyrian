@@ -1,0 +1,15 @@
+Compiled from "JRadioButtonMenuItem.java"
+public class javax.swing.JRadioButtonMenuItem extends javax.swing.JMenuItem implements javax.accessibility.Accessible {
+  public javax.swing.JRadioButtonMenuItem();
+  public javax.swing.JRadioButtonMenuItem(javax.swing.Icon);
+  public javax.swing.JRadioButtonMenuItem(java.lang.String);
+  public javax.swing.JRadioButtonMenuItem(javax.swing.Action);
+  public javax.swing.JRadioButtonMenuItem(java.lang.String, javax.swing.Icon);
+  public javax.swing.JRadioButtonMenuItem(java.lang.String, boolean);
+  public javax.swing.JRadioButtonMenuItem(javax.swing.Icon, boolean);
+  public javax.swing.JRadioButtonMenuItem(java.lang.String, javax.swing.Icon, boolean);
+  public java.lang.String getUIClassID();
+  protected java.lang.String paramString();
+  boolean shouldUpdateSelectedStateFromAction();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+}

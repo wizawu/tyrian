@@ -1,0 +1,4 @@
+Compiled from "AttrFilter.java"
+public interface com.sun.jndi.toolkit.dir.AttrFilter {
+  public abstract boolean check(javax.naming.directory.Attributes) throws javax.naming.NamingException;
+}

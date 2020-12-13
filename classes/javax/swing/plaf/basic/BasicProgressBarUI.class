@@ -1,0 +1,42 @@
+Compiled from "BasicProgressBarUI.java"
+public class javax.swing.plaf.basic.BasicProgressBarUI extends javax.swing.plaf.ProgressBarUI {
+  protected javax.swing.JProgressBar progressBar;
+  protected javax.swing.event.ChangeListener changeListener;
+  protected java.awt.Rectangle boxRect;
+  public javax.swing.plaf.basic.BasicProgressBarUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void uninstallDefaults();
+  protected void installListeners();
+  protected void startAnimationTimer();
+  protected void stopAnimationTimer();
+  protected void uninstallListeners();
+  public int getBaseline(javax.swing.JComponent, int, int);
+  public java.awt.Component$BaselineResizeBehavior getBaselineResizeBehavior(javax.swing.JComponent);
+  protected java.awt.Dimension getPreferredInnerHorizontal();
+  protected java.awt.Dimension getPreferredInnerVertical();
+  protected java.awt.Color getSelectionForeground();
+  protected java.awt.Color getSelectionBackground();
+  protected int getCellLength();
+  protected void setCellLength(int);
+  protected int getCellSpacing();
+  protected void setCellSpacing(int);
+  protected int getAmountFull(java.awt.Insets, int, int);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected java.awt.Rectangle getBox(java.awt.Rectangle);
+  protected int getBoxLength(int, int);
+  protected void paintIndeterminate(java.awt.Graphics, javax.swing.JComponent);
+  protected void paintDeterminate(java.awt.Graphics, javax.swing.JComponent);
+  protected void paintString(java.awt.Graphics, int, int, int, int, int, java.awt.Insets);
+  protected java.awt.Point getStringPlacement(java.awt.Graphics, java.lang.String, int, int, int, int);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  protected int getAnimationIndex();
+  protected final int getFrameCount();
+  protected void setAnimationIndex(int);
+  protected void incrementAnimationIndex();
+  static {};
+}

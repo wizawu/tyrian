@@ -1,0 +1,7 @@
+Compiled from "WindowConstants.java"
+public interface javax.swing.WindowConstants {
+  public static final int DO_NOTHING_ON_CLOSE;
+  public static final int HIDE_ON_CLOSE;
+  public static final int DISPOSE_ON_CLOSE;
+  public static final int EXIT_ON_CLOSE;
+}

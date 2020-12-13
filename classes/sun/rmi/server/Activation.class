@@ -1,0 +1,5 @@
+Compiled from "Activation.java"
+public class sun.rmi.server.Activation implements java.io.Serializable {
+  public static void main(java.lang.String[]);
+  static {};
+}

@@ -1,0 +1,12 @@
+Compiled from "JavacRoundEnvironment.java"
+public class com.sun.tools.javac.processing.JavacRoundEnvironment implements javax.annotation.processing.RoundEnvironment {
+  com.sun.tools.javac.processing.JavacRoundEnvironment(boolean, boolean, java.util.Set<? extends javax.lang.model.element.Element>, javax.annotation.processing.ProcessingEnvironment);
+  public java.lang.String toString();
+  public boolean processingOver();
+  public boolean errorRaised();
+  public java.util.Set<? extends javax.lang.model.element.Element> getRootElements();
+  public java.util.Set<? extends javax.lang.model.element.Element> getElementsAnnotatedWith(javax.lang.model.element.TypeElement);
+  public java.util.Set<? extends javax.lang.model.element.Element> getElementsAnnotatedWithAny(javax.lang.model.element.TypeElement...);
+  public java.util.Set<? extends javax.lang.model.element.Element> getElementsAnnotatedWith(java.lang.Class<? extends java.lang.annotation.Annotation>);
+  public java.util.Set<? extends javax.lang.model.element.Element> getElementsAnnotatedWithAny(java.util.Set<java.lang.Class<? extends java.lang.annotation.Annotation>>);
+}

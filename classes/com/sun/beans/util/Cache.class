@@ -1,0 +1,9 @@
+Compiled from "Cache.java"
+public abstract class com.sun.beans.util.Cache<K, V> {
+  public abstract V create(K);
+  public com.sun.beans.util.Cache(com.sun.beans.util.Cache$Kind, com.sun.beans.util.Cache$Kind);
+  public com.sun.beans.util.Cache(com.sun.beans.util.Cache$Kind, com.sun.beans.util.Cache$Kind, boolean);
+  public final V get(K);
+  public final void remove(K);
+  public final void clear();
+}

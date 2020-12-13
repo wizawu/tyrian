@@ -1,0 +1,5 @@
+Compiled from "CurrentCall.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.CurrentCall extends com.sun.org.apache.xalan.internal.xsltc.compiler.FunctionCall {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.CurrentCall(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

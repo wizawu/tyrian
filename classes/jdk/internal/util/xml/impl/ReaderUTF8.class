@@ -1,0 +1,7 @@
+Compiled from "ReaderUTF8.java"
+public class jdk.internal.util.xml.impl.ReaderUTF8 extends java.io.Reader {
+  public jdk.internal.util.xml.impl.ReaderUTF8(java.io.InputStream);
+  public int read(char[], int, int) throws java.io.IOException;
+  public int read() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

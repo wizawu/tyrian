@@ -1,0 +1,15 @@
+Compiled from "ZipCoder.java"
+class java.util.zip.ZipCoder {
+  public static java.util.zip.ZipCoder get(java.nio.charset.Charset);
+  java.lang.String toString(byte[], int, int);
+  java.lang.String toString(byte[], int);
+  java.lang.String toString(byte[]);
+  byte[] getBytes(java.lang.String);
+  byte[] getBytesUTF8(java.lang.String);
+  static java.lang.String toStringUTF8(byte[], int);
+  static java.lang.String toStringUTF8(byte[], int, int);
+  boolean isUTF8();
+  protected java.nio.charset.CharsetDecoder decoder();
+  protected java.nio.charset.CharsetEncoder encoder();
+  static {};
+}

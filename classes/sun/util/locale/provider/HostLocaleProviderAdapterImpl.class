@@ -1,0 +1,4 @@
+Compiled from "HostLocaleProviderAdapterImpl.java"
+public class sun.util.locale.provider.HostLocaleProviderAdapterImpl {
+  public sun.util.locale.provider.HostLocaleProviderAdapterImpl();
+}

@@ -1,0 +1,6 @@
+Compiled from "XSDSimpleTypeTraverser.java"
+class com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDSimpleTypeTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
+  com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDSimpleTypeTraverser(com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker);
+  com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType traverseGlobal(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
+  com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType traverseLocal(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
+}

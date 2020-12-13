@@ -1,0 +1,7 @@
+Compiled from "X509Extension.java"
+public interface java.security.cert.X509Extension {
+  public abstract boolean hasUnsupportedCriticalExtension();
+  public abstract java.util.Set<java.lang.String> getCriticalExtensionOIDs();
+  public abstract java.util.Set<java.lang.String> getNonCriticalExtensionOIDs();
+  public abstract byte[] getExtensionValue(java.lang.String);
+}

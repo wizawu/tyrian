@@ -1,0 +1,12 @@
+Compiled from "ModuleRemapper.java"
+public class jdk.internal.org.objectweb.asm.commons.ModuleRemapper extends jdk.internal.org.objectweb.asm.ModuleVisitor {
+  public jdk.internal.org.objectweb.asm.commons.ModuleRemapper(jdk.internal.org.objectweb.asm.ModuleVisitor, jdk.internal.org.objectweb.asm.commons.Remapper);
+  protected jdk.internal.org.objectweb.asm.commons.ModuleRemapper(int, jdk.internal.org.objectweb.asm.ModuleVisitor, jdk.internal.org.objectweb.asm.commons.Remapper);
+  public void visitMainClass(java.lang.String);
+  public void visitPackage(java.lang.String);
+  public void visitRequire(java.lang.String, int, java.lang.String);
+  public void visitExport(java.lang.String, int, java.lang.String...);
+  public void visitOpen(java.lang.String, int, java.lang.String...);
+  public void visitUse(java.lang.String);
+  public void visitProvide(java.lang.String, java.lang.String...);
+}

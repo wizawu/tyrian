@@ -1,0 +1,16 @@
+Compiled from "MemoryImpl.java"
+class sun.management.MemoryImpl extends sun.management.NotificationEmitterSupport implements java.lang.management.MemoryMXBean {
+  sun.management.MemoryImpl(sun.management.VMManagement);
+  public int getObjectPendingFinalizationCount();
+  public void gc();
+  public java.lang.management.MemoryUsage getHeapMemoryUsage();
+  public java.lang.management.MemoryUsage getNonHeapMemoryUsage();
+  public boolean isVerbose();
+  public void setVerbose(boolean);
+  static synchronized java.lang.management.MemoryPoolMXBean[] getMemoryPools();
+  static synchronized java.lang.management.MemoryManagerMXBean[] getMemoryManagers();
+  public javax.management.MBeanNotificationInfo[] getNotificationInfo();
+  static void createNotification(java.lang.String, java.lang.String, java.lang.management.MemoryUsage, long);
+  public javax.management.ObjectName getObjectName();
+  static {};
+}

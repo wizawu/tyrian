@@ -1,0 +1,8 @@
+Compiled from "AbstractScope.java"
+public abstract class sun.reflect.generics.scope.AbstractScope<D extends java.lang.reflect.GenericDeclaration> implements sun.reflect.generics.scope.Scope {
+  protected sun.reflect.generics.scope.AbstractScope(D);
+  protected D getRecvr();
+  protected abstract sun.reflect.generics.scope.Scope computeEnclosingScope();
+  protected sun.reflect.generics.scope.Scope getEnclosingScope();
+  public java.lang.reflect.TypeVariable<?> lookup(java.lang.String);
+}

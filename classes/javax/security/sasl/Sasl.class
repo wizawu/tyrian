@@ -1,0 +1,22 @@
+Compiled from "Sasl.java"
+public class javax.security.sasl.Sasl {
+  public static final java.lang.String QOP;
+  public static final java.lang.String STRENGTH;
+  public static final java.lang.String SERVER_AUTH;
+  public static final java.lang.String BOUND_SERVER_NAME;
+  public static final java.lang.String MAX_BUFFER;
+  public static final java.lang.String RAW_SEND_SIZE;
+  public static final java.lang.String REUSE;
+  public static final java.lang.String POLICY_NOPLAINTEXT;
+  public static final java.lang.String POLICY_NOACTIVE;
+  public static final java.lang.String POLICY_NODICTIONARY;
+  public static final java.lang.String POLICY_NOANONYMOUS;
+  public static final java.lang.String POLICY_FORWARD_SECRECY;
+  public static final java.lang.String POLICY_PASS_CREDENTIALS;
+  public static final java.lang.String CREDENTIALS;
+  public static javax.security.sasl.SaslClient createSaslClient(java.lang.String[], java.lang.String, java.lang.String, java.lang.String, java.util.Map<java.lang.String, ?>, javax.security.auth.callback.CallbackHandler) throws javax.security.sasl.SaslException;
+  public static javax.security.sasl.SaslServer createSaslServer(java.lang.String, java.lang.String, java.lang.String, java.util.Map<java.lang.String, ?>, javax.security.auth.callback.CallbackHandler) throws javax.security.sasl.SaslException;
+  public static java.util.Enumeration<javax.security.sasl.SaslClientFactory> getSaslClientFactories();
+  public static java.util.Enumeration<javax.security.sasl.SaslServerFactory> getSaslServerFactories();
+  static {};
+}

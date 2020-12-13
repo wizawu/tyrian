@@ -1,0 +1,11 @@
+Compiled from "NTLMAuthenticationProxy.java"
+class sun.net.www.protocol.http.NTLMAuthenticationProxy {
+  static final sun.net.www.protocol.http.NTLMAuthenticationProxy proxy;
+  static final boolean supported;
+  static final boolean supportsTransparentAuth;
+  sun.net.www.protocol.http.AuthenticationInfo create(boolean, java.net.URL, java.net.PasswordAuthentication, java.lang.String);
+  sun.net.www.protocol.http.AuthenticationInfo create(boolean, java.lang.String, int, java.net.PasswordAuthentication, java.lang.String);
+  public static boolean isTrustedSite(java.net.URL);
+  static void finest(java.lang.Exception);
+  static {};
+}

@@ -1,0 +1,4 @@
+Compiled from "CompileUnitHolder.java"
+public interface jdk.nashorn.internal.ir.CompileUnitHolder {
+  public abstract jdk.nashorn.internal.codegen.CompileUnit getCompileUnit();
+}

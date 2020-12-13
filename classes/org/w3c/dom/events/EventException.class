@@ -1,0 +1,6 @@
+Compiled from "EventException.java"
+public class org.w3c.dom.events.EventException extends java.lang.RuntimeException {
+  public short code;
+  public static final short UNSPECIFIED_EVENT_TYPE_ERR;
+  public org.w3c.dom.events.EventException(short, java.lang.String);
+}

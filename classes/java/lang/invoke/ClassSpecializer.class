@@ -1,0 +1,25 @@
+Compiled from "ClassSpecializer.java"
+abstract class java.lang.invoke.ClassSpecializer<T, K, S extends java.lang.invoke.ClassSpecializer<T, K, S>.SpeciesData> {
+  static final boolean $assertionsDisabled;
+  public final java.lang.Class<T> topClass();
+  public final java.lang.Class<K> keyType();
+  public final java.lang.Class<S> metaType();
+  protected java.lang.invoke.MethodType baseConstructorType();
+  protected final S topSpecies();
+  protected final java.util.List<java.lang.invoke.MemberName> transformMethods();
+  protected final java.lang.invoke.ClassSpecializer<T, K, S>.Factory factory();
+  protected java.lang.invoke.ClassSpecializer(java.lang.Class<T>, java.lang.Class<K>, java.lang.Class<S>, java.lang.invoke.MethodType, java.lang.invoke.MemberName, java.lang.String, java.util.List<java.lang.invoke.MemberName>);
+  protected static <T> java.lang.reflect.Constructor<T> reflectConstructor(java.lang.Class<T>, java.lang.Class<?>...);
+  protected static java.lang.reflect.Field reflectField(java.lang.Class<?>, java.lang.String);
+  public final S findSpecies(K);
+  protected abstract S newSpeciesData(K);
+  protected K topSpeciesKey();
+  protected java.lang.invoke.ClassSpecializer<T, K, S>.Factory makeFactory();
+  static java.lang.String methodSig(java.lang.invoke.MethodType);
+  static java.lang.String classSig(java.lang.Class<?>);
+  static java.lang.String classSig(java.lang.String);
+  static java.lang.String classBCName(java.lang.Class<?>);
+  static java.lang.String classBCName(java.lang.String);
+  static java.lang.String className(java.lang.Class<?>);
+  static {};
+}

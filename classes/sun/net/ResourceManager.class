@@ -1,0 +1,7 @@
+Compiled from "ResourceManager.java"
+public class sun.net.ResourceManager {
+  public sun.net.ResourceManager();
+  public static void beforeUdpCreate() throws java.net.SocketException;
+  public static void afterUdpClose();
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "SynthMenuLayout.java"
+class javax.swing.plaf.synth.SynthMenuLayout extends javax.swing.plaf.basic.DefaultMenuLayout {
+  public javax.swing.plaf.synth.SynthMenuLayout(java.awt.Container, int);
+  public java.awt.Dimension preferredLayoutSize(java.awt.Container);
+}

@@ -1,0 +1,6 @@
+Compiled from "SchemaDateTimeException.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDateTimeException extends java.lang.RuntimeException {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDateTimeException();
+  public com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDateTimeException(java.lang.String);
+}

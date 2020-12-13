@@ -1,0 +1,11 @@
+Compiled from "InlineReturnStatement.java"
+public class sun.tools.tree.InlineReturnStatement extends sun.tools.tree.Statement {
+  sun.tools.tree.Expression expr;
+  public sun.tools.tree.InlineReturnStatement(long, sun.tools.tree.Expression);
+  sun.tools.tree.Context getDestination(sun.tools.tree.Context);
+  public sun.tools.tree.Statement inline(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Statement copyInline(sun.tools.tree.Context, boolean);
+  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
+  public void code(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public void print(java.io.PrintStream, int);
+}

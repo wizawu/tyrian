@@ -1,0 +1,23 @@
+Compiled from "NamespaceSupport.java"
+public class com.sun.org.apache.xerces.internal.util.NamespaceSupport implements com.sun.org.apache.xerces.internal.xni.NamespaceContext {
+  protected java.lang.String[] fNamespace;
+  protected int fNamespaceSize;
+  protected int[] fContext;
+  protected int fCurrentContext;
+  protected java.lang.String[] fPrefixes;
+  public com.sun.org.apache.xerces.internal.util.NamespaceSupport();
+  public com.sun.org.apache.xerces.internal.util.NamespaceSupport(com.sun.org.apache.xerces.internal.xni.NamespaceContext);
+  public void reset();
+  public void pushContext();
+  public void popContext();
+  public boolean declarePrefix(java.lang.String, java.lang.String);
+  public java.lang.String getURI(java.lang.String);
+  public java.lang.String getPrefix(java.lang.String);
+  public int getDeclaredPrefixCount();
+  public java.lang.String getDeclaredPrefixAt(int);
+  public java.util.Iterator<java.lang.String> getPrefixes();
+  public java.util.Enumeration<java.lang.String> getAllPrefixes();
+  public java.util.List<java.lang.String> getPrefixes(java.lang.String);
+  public boolean containsPrefix(java.lang.String);
+  public boolean containsPrefixInCurrentContext(java.lang.String);
+}

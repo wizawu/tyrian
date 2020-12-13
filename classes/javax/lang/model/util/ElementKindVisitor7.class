@@ -1,0 +1,6 @@
+Compiled from "ElementKindVisitor7.java"
+public class javax.lang.model.util.ElementKindVisitor7<R, P> extends javax.lang.model.util.ElementKindVisitor6<R, P> {
+  protected javax.lang.model.util.ElementKindVisitor7();
+  protected javax.lang.model.util.ElementKindVisitor7(R);
+  public R visitVariableAsResourceVariable(javax.lang.model.element.VariableElement, P);
+}

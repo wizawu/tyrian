@@ -1,0 +1,8 @@
+Compiled from "ReflectiveOperationException.java"
+public class java.lang.ReflectiveOperationException extends java.lang.Exception {
+  static final long serialVersionUID;
+  public java.lang.ReflectiveOperationException();
+  public java.lang.ReflectiveOperationException(java.lang.String);
+  public java.lang.ReflectiveOperationException(java.lang.String, java.lang.Throwable);
+  public java.lang.ReflectiveOperationException(java.lang.Throwable);
+}

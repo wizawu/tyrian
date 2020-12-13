@@ -1,0 +1,24 @@
+Compiled from "Imports.java"
+public class sun.tools.java.Imports implements sun.tools.java.Constants {
+  sun.tools.java.Identifier currentPackage;
+  long currentPackageWhere;
+  java.util.Hashtable<sun.tools.java.Identifier, sun.tools.java.Identifier> classes;
+  java.util.Vector<sun.tools.java.IdentifierToken> packages;
+  java.util.Vector<sun.tools.java.IdentifierToken> singles;
+  protected int checked;
+  public sun.tools.java.Imports(sun.tools.java.Environment);
+  public synchronized void resolve(sun.tools.java.Environment);
+  public synchronized sun.tools.java.Identifier resolve(sun.tools.java.Environment, sun.tools.java.Identifier) throws sun.tools.java.ClassNotFound;
+  public static boolean importable(sun.tools.java.Identifier, sun.tools.java.Environment);
+  public synchronized sun.tools.java.Identifier forceResolve(sun.tools.java.Environment, sun.tools.java.Identifier);
+  public synchronized void addClass(sun.tools.java.IdentifierToken);
+  public void addClass(sun.tools.java.Identifier) throws sun.tools.java.AmbiguousClass;
+  public synchronized void addPackage(sun.tools.java.IdentifierToken);
+  public void addPackage(sun.tools.java.Identifier);
+  public synchronized void setCurrentPackage(sun.tools.java.IdentifierToken);
+  public synchronized void setCurrentPackage(sun.tools.java.Identifier);
+  public sun.tools.java.Identifier getCurrentPackage();
+  public java.util.List<sun.tools.java.IdentifierToken> getImportedPackages();
+  public java.util.List<sun.tools.java.IdentifierToken> getImportedClasses();
+  public sun.tools.java.Environment newEnvironment(sun.tools.java.Environment);
+}

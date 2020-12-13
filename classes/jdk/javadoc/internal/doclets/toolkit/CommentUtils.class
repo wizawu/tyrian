@@ -1,0 +1,20 @@
+Compiled from "CommentUtils.java"
+public class jdk.javadoc.internal.doclets.toolkit.CommentUtils {
+  final jdk.javadoc.internal.doclets.toolkit.BaseConfiguration configuration;
+  final com.sun.source.util.DocTreeFactory treeFactory;
+  final java.util.HashMap<javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.CommentUtils$DocCommentDuo> dcTreesMap;
+  final com.sun.source.util.DocTrees trees;
+  final javax.lang.model.util.Elements elementUtils;
+  protected jdk.javadoc.internal.doclets.toolkit.CommentUtils(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public java.util.List<? extends com.sun.source.doctree.DocTree> makePropertyDescriptionTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public java.util.List<? extends com.sun.source.doctree.DocTree> makePropertyDescriptionTree(java.lang.String);
+  public java.util.List<? extends com.sun.source.doctree.DocTree> makeFirstSentenceTree(java.lang.String);
+  public com.sun.source.doctree.DocTree makeSeeTree(java.lang.String, javax.lang.model.element.Element);
+  public com.sun.source.doctree.DocTree makeTextTree(java.lang.String);
+  public void setEnumValuesTree(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration, javax.lang.model.element.Element);
+  public void setEnumValueOfTree(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration, javax.lang.model.element.Element);
+  public jdk.javadoc.internal.doclets.toolkit.CommentUtils$DocCommentDuo getSyntheticCommentDuo(javax.lang.model.element.Element);
+  public jdk.javadoc.internal.doclets.toolkit.CommentUtils$DocCommentDuo getHtmlCommentDuo(javax.lang.model.element.Element);
+  public com.sun.source.doctree.DocCommentTree parse(java.net.URI, java.lang.String);
+  public void setDocCommentTree(javax.lang.model.element.Element, java.util.List<? extends com.sun.source.doctree.DocTree>, java.util.List<? extends com.sun.source.doctree.DocTree>, jdk.javadoc.internal.doclets.toolkit.util.Utils);
+}

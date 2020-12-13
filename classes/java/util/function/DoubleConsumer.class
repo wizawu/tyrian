@@ -1,0 +1,5 @@
+Compiled from "DoubleConsumer.java"
+public interface java.util.function.DoubleConsumer {
+  public abstract void accept(double);
+  public default java.util.function.DoubleConsumer andThen(java.util.function.DoubleConsumer);
+}

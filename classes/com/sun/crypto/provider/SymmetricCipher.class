@@ -1,0 +1,8 @@
+Compiled from "SymmetricCipher.java"
+abstract class com.sun.crypto.provider.SymmetricCipher {
+  com.sun.crypto.provider.SymmetricCipher();
+  abstract int getBlockSize();
+  abstract void init(boolean, java.lang.String, byte[]) throws java.security.InvalidKeyException;
+  abstract void encryptBlock(byte[], int, byte[], int);
+  abstract void decryptBlock(byte[], int, byte[], int);
+}

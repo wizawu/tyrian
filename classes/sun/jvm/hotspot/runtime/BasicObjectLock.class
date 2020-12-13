@@ -1,0 +1,9 @@
+Compiled from "BasicObjectLock.java"
+public class sun.jvm.hotspot.runtime.BasicObjectLock extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.runtime.BasicObjectLock(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.OopHandle obj();
+  public sun.jvm.hotspot.runtime.BasicLock lock();
+  public static int size();
+  public sun.jvm.hotspot.debugger.Address address();
+  static {};
+}

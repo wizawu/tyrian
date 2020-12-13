@@ -1,0 +1,7 @@
+Compiled from "KrbDataOutputStream.java"
+public class sun.security.krb5.internal.util.KrbDataOutputStream extends java.io.BufferedOutputStream {
+  public sun.security.krb5.internal.util.KrbDataOutputStream(java.io.OutputStream);
+  public void write32(int) throws java.io.IOException;
+  public void write16(int) throws java.io.IOException;
+  public void write8(int) throws java.io.IOException;
+}

@@ -1,0 +1,7 @@
+Compiled from "SWITCH.java"
+public final class com.sun.org.apache.bcel.internal.generic.SWITCH implements com.sun.org.apache.bcel.internal.generic.CompoundInstruction {
+  public com.sun.org.apache.bcel.internal.generic.SWITCH(int[], com.sun.org.apache.bcel.internal.generic.InstructionHandle[], com.sun.org.apache.bcel.internal.generic.InstructionHandle, int);
+  public com.sun.org.apache.bcel.internal.generic.SWITCH(int[], com.sun.org.apache.bcel.internal.generic.InstructionHandle[], com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public final com.sun.org.apache.bcel.internal.generic.InstructionList getInstructionList();
+  public final com.sun.org.apache.bcel.internal.generic.Instruction getInstruction();
+}

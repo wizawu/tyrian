@@ -1,0 +1,4 @@
+Compiled from "ECGenParameterSpec.java"
+public class java.security.spec.ECGenParameterSpec extends java.security.spec.NamedParameterSpec {
+  public java.security.spec.ECGenParameterSpec(java.lang.String);
+}

@@ -1,0 +1,4 @@
+Compiled from "StateInvariantError.java"
+class javax.swing.text.StateInvariantError extends java.lang.Error {
+  public javax.swing.text.StateInvariantError(java.lang.String);
+}

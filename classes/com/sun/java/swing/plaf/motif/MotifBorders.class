@@ -1,0 +1,5 @@
+Compiled from "MotifBorders.java"
+public class com.sun.java.swing.plaf.motif.MotifBorders {
+  public com.sun.java.swing.plaf.motif.MotifBorders();
+  public static void drawBezel(java.awt.Graphics, int, int, int, int, boolean, boolean, java.awt.Color, java.awt.Color, java.awt.Color, java.awt.Color);
+}

@@ -1,0 +1,6 @@
+Compiled from "XMSelectionListener.java"
+public interface sun.awt.X11.XMSelectionListener {
+  public abstract void ownerChanged(int, sun.awt.X11.XMSelection, long, long, long);
+  public abstract void ownerDeath(int, sun.awt.X11.XMSelection, long);
+  public abstract void selectionChanged(int, sun.awt.X11.XMSelection, long, sun.awt.X11.XPropertyEvent);
+}

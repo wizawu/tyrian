@@ -1,0 +1,9 @@
+Compiled from "DebuggerConsolePanel.java"
+public class sun.jvm.hotspot.ui.DebuggerConsolePanel extends javax.swing.JPanel {
+  public sun.jvm.hotspot.ui.DebuggerConsolePanel(sun.jvm.hotspot.debugger.Debugger);
+  public void requestFocus();
+  public void clear();
+  public void setMark();
+  public java.lang.String getMarkedText();
+  public static void main(java.lang.String[]);
+}

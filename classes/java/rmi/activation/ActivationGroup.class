@@ -1,0 +1,15 @@
+Compiled from "ActivationGroup.java"
+public abstract class java.rmi.activation.ActivationGroup extends java.rmi.server.UnicastRemoteObject implements java.rmi.activation.ActivationInstantiator {
+  protected java.rmi.activation.ActivationGroup(java.rmi.activation.ActivationGroupID) throws java.rmi.RemoteException;
+  public boolean inactiveObject(java.rmi.activation.ActivationID) throws java.rmi.activation.ActivationException, java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;
+  public abstract void activeObject(java.rmi.activation.ActivationID, java.rmi.Remote) throws java.rmi.activation.ActivationException, java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;
+  public static synchronized java.rmi.activation.ActivationGroup createGroup(java.rmi.activation.ActivationGroupID, java.rmi.activation.ActivationGroupDesc, long) throws java.rmi.activation.ActivationException;
+  public static synchronized java.rmi.activation.ActivationGroupID currentGroupID();
+  static synchronized java.rmi.activation.ActivationGroupID internalCurrentGroupID() throws java.rmi.activation.ActivationException;
+  public static synchronized void setSystem(java.rmi.activation.ActivationSystem) throws java.rmi.activation.ActivationException;
+  public static synchronized java.rmi.activation.ActivationSystem getSystem() throws java.rmi.activation.ActivationException;
+  protected void activeObject(java.rmi.activation.ActivationID, java.rmi.MarshalledObject<? extends java.rmi.Remote>) throws java.rmi.activation.ActivationException, java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;
+  protected void inactiveGroup() throws java.rmi.activation.UnknownGroupException, java.rmi.RemoteException;
+  static synchronized java.rmi.activation.ActivationGroup currentGroup() throws java.rmi.activation.ActivationException;
+  static {};
+}

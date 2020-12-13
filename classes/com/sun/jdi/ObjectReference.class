@@ -1,0 +1,20 @@
+Compiled from "ObjectReference.java"
+public interface com.sun.jdi.ObjectReference extends com.sun.jdi.Value {
+  public static final int INVOKE_SINGLE_THREADED;
+  public static final int INVOKE_NONVIRTUAL;
+  public abstract com.sun.jdi.ReferenceType referenceType();
+  public abstract com.sun.jdi.Value getValue(com.sun.jdi.Field);
+  public abstract java.util.Map<com.sun.jdi.Field, com.sun.jdi.Value> getValues(java.util.List<? extends com.sun.jdi.Field>);
+  public abstract void setValue(com.sun.jdi.Field, com.sun.jdi.Value) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  public abstract com.sun.jdi.Value invokeMethod(com.sun.jdi.ThreadReference, com.sun.jdi.Method, java.util.List<? extends com.sun.jdi.Value>, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException, com.sun.jdi.IncompatibleThreadStateException, com.sun.jdi.InvocationException;
+  public abstract void disableCollection();
+  public abstract void enableCollection();
+  public abstract boolean isCollected();
+  public abstract long uniqueID();
+  public abstract java.util.List<com.sun.jdi.ThreadReference> waitingThreads() throws com.sun.jdi.IncompatibleThreadStateException;
+  public abstract com.sun.jdi.ThreadReference owningThread() throws com.sun.jdi.IncompatibleThreadStateException;
+  public abstract int entryCount() throws com.sun.jdi.IncompatibleThreadStateException;
+  public abstract java.util.List<com.sun.jdi.ObjectReference> referringObjects(long);
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+}

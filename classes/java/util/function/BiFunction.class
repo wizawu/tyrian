@@ -1,0 +1,5 @@
+Compiled from "BiFunction.java"
+public interface java.util.function.BiFunction<T, U, R> {
+  public abstract R apply(T, U);
+  public default <V> java.util.function.BiFunction<T, U, V> andThen(java.util.function.Function<? super R, ? extends V>);
+}

@@ -1,0 +1,4 @@
+Compiled from "SyntaxError.java"
+public class sun.tools.java.SyntaxError extends java.lang.Exception {
+  public sun.tools.java.SyntaxError();
+}

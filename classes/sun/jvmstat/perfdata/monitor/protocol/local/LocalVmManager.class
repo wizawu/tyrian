@@ -1,0 +1,6 @@
+Compiled from "LocalVmManager.java"
+public class sun.jvmstat.perfdata.monitor.protocol.local.LocalVmManager {
+  public sun.jvmstat.perfdata.monitor.protocol.local.LocalVmManager();
+  public sun.jvmstat.perfdata.monitor.protocol.local.LocalVmManager(java.lang.String);
+  public synchronized java.util.Set<java.lang.Integer> activeVms();
+}

@@ -1,0 +1,18 @@
+Compiled from "Encoder.java"
+public class java.beans.Encoder {
+  boolean executeStatements;
+  public java.beans.Encoder();
+  protected void writeObject(java.lang.Object);
+  public void setExceptionListener(java.beans.ExceptionListener);
+  public java.beans.ExceptionListener getExceptionListener();
+  java.lang.Object getValue(java.beans.Expression);
+  public java.beans.PersistenceDelegate getPersistenceDelegate(java.lang.Class<?>);
+  public void setPersistenceDelegate(java.lang.Class<?>, java.beans.PersistenceDelegate);
+  public java.lang.Object remove(java.lang.Object);
+  public java.lang.Object get(java.lang.Object);
+  public void writeStatement(java.beans.Statement);
+  public void writeExpression(java.beans.Expression);
+  void clear();
+  void setAttribute(java.lang.Object, java.lang.Object);
+  java.lang.Object getAttribute(java.lang.Object);
+}

@@ -1,0 +1,5 @@
+Compiled from "RelationTypeNotFoundException.java"
+public class javax.management.relation.RelationTypeNotFoundException extends javax.management.relation.RelationException {
+  public javax.management.relation.RelationTypeNotFoundException();
+  public javax.management.relation.RelationTypeNotFoundException(java.lang.String);
+}

@@ -1,0 +1,5 @@
+Compiled from "SaslClientFactory.java"
+public interface javax.security.sasl.SaslClientFactory {
+  public abstract javax.security.sasl.SaslClient createSaslClient(java.lang.String[], java.lang.String, java.lang.String, java.lang.String, java.util.Map<java.lang.String, ?>, javax.security.auth.callback.CallbackHandler) throws javax.security.sasl.SaslException;
+  public abstract java.lang.String[] getMechanismNames(java.util.Map<java.lang.String, ?>);
+}

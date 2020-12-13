@@ -1,0 +1,11 @@
+Compiled from "BytecodeBipush.java"
+public class sun.jvm.hotspot.interpreter.BytecodeBipush extends sun.jvm.hotspot.interpreter.Bytecode {
+  sun.jvm.hotspot.interpreter.BytecodeBipush(sun.jvm.hotspot.oops.Method, int);
+  public byte getValue();
+  public void verify();
+  public boolean isValid();
+  public static sun.jvm.hotspot.interpreter.BytecodeBipush at(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeBipush atCheck(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeBipush at(sun.jvm.hotspot.interpreter.BytecodeStream);
+  public java.lang.String toString();
+}

@@ -1,0 +1,7 @@
+Compiled from "OpenFileInputStreamAction.java"
+public class sun.security.action.OpenFileInputStreamAction implements java.security.PrivilegedExceptionAction<java.io.FileInputStream> {
+  public sun.security.action.OpenFileInputStreamAction(java.io.File);
+  public sun.security.action.OpenFileInputStreamAction(java.lang.String);
+  public java.io.FileInputStream run() throws java.lang.Exception;
+  public java.lang.Object run() throws java.lang.Exception;
+}

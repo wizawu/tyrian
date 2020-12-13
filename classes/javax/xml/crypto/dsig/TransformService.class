@@ -1,0 +1,13 @@
+Compiled from "TransformService.java"
+public abstract class javax.xml.crypto.dsig.TransformService implements javax.xml.crypto.dsig.Transform {
+  protected javax.xml.crypto.dsig.TransformService();
+  public static javax.xml.crypto.dsig.TransformService getInstance(java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException;
+  public static javax.xml.crypto.dsig.TransformService getInstance(java.lang.String, java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  public static javax.xml.crypto.dsig.TransformService getInstance(java.lang.String, java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  public final java.lang.String getMechanismType();
+  public final java.lang.String getAlgorithm();
+  public final java.security.Provider getProvider();
+  public abstract void init(javax.xml.crypto.dsig.spec.TransformParameterSpec) throws java.security.InvalidAlgorithmParameterException;
+  public abstract void marshalParams(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.MarshalException;
+  public abstract void init(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws java.security.InvalidAlgorithmParameterException;
+}

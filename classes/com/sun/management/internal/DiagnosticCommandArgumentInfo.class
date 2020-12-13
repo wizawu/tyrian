@@ -1,0 +1,12 @@
+Compiled from "DiagnosticCommandArgumentInfo.java"
+class com.sun.management.internal.DiagnosticCommandArgumentInfo {
+  java.lang.String getName();
+  java.lang.String getDescription();
+  java.lang.String getType();
+  java.lang.String getDefault();
+  boolean isMandatory();
+  boolean isOption();
+  boolean isMultiple();
+  int getPosition();
+  com.sun.management.internal.DiagnosticCommandArgumentInfo(java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean, int);
+}

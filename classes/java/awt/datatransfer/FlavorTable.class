@@ -1,0 +1,5 @@
+Compiled from "FlavorTable.java"
+public interface java.awt.datatransfer.FlavorTable extends java.awt.datatransfer.FlavorMap {
+  public abstract java.util.List<java.lang.String> getNativesForFlavor(java.awt.datatransfer.DataFlavor);
+  public abstract java.util.List<java.awt.datatransfer.DataFlavor> getFlavorsForNative(java.lang.String);
+}

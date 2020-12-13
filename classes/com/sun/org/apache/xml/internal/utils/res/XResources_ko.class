@@ -1,0 +1,6 @@
+Compiled from "XResources_ko.java"
+public class com.sun.org.apache.xml.internal.utils.res.XResources_ko extends com.sun.org.apache.xml.internal.utils.res.XResourceBundle {
+  public com.sun.org.apache.xml.internal.utils.res.XResources_ko();
+  public java.lang.Object[][] getContents();
+  static {};
+}

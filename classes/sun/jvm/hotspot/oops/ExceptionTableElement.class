@@ -1,0 +1,9 @@
+Compiled from "ExceptionTableElement.java"
+public class sun.jvm.hotspot.oops.ExceptionTableElement {
+  public sun.jvm.hotspot.oops.ExceptionTableElement(sun.jvm.hotspot.debugger.Address, long);
+  public int getStartPC();
+  public int getEndPC();
+  public int getHandlerPC();
+  public int getCatchTypeIndex();
+  static {};
+}

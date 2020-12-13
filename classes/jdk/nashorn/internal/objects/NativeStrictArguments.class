@@ -1,0 +1,11 @@
+Compiled from "NativeStrictArguments.java"
+public final class jdk.nashorn.internal.objects.NativeStrictArguments extends jdk.nashorn.internal.runtime.ScriptObject {
+  static jdk.nashorn.internal.runtime.PropertyMap getInitialMap();
+  jdk.nashorn.internal.objects.NativeStrictArguments(java.lang.Object[], int, jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.PropertyMap);
+  public java.lang.String getClassName();
+  public java.lang.Object getArgument(int);
+  public void setArgument(int, java.lang.Object);
+  public static java.lang.Object G$length(java.lang.Object);
+  public static void S$length(java.lang.Object, java.lang.Object);
+  static {};
+}

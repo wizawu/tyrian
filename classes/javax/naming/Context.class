@@ -1,0 +1,47 @@
+Compiled from "Context.java"
+public interface javax.naming.Context {
+  public static final java.lang.String INITIAL_CONTEXT_FACTORY;
+  public static final java.lang.String OBJECT_FACTORIES;
+  public static final java.lang.String STATE_FACTORIES;
+  public static final java.lang.String URL_PKG_PREFIXES;
+  public static final java.lang.String PROVIDER_URL;
+  public static final java.lang.String DNS_URL;
+  public static final java.lang.String AUTHORITATIVE;
+  public static final java.lang.String BATCHSIZE;
+  public static final java.lang.String REFERRAL;
+  public static final java.lang.String SECURITY_PROTOCOL;
+  public static final java.lang.String SECURITY_AUTHENTICATION;
+  public static final java.lang.String SECURITY_PRINCIPAL;
+  public static final java.lang.String SECURITY_CREDENTIALS;
+  public static final java.lang.String LANGUAGE;
+  public static final java.lang.String APPLET;
+  public abstract java.lang.Object lookup(javax.naming.Name) throws javax.naming.NamingException;
+  public abstract java.lang.Object lookup(java.lang.String) throws javax.naming.NamingException;
+  public abstract void bind(javax.naming.Name, java.lang.Object) throws javax.naming.NamingException;
+  public abstract void bind(java.lang.String, java.lang.Object) throws javax.naming.NamingException;
+  public abstract void rebind(javax.naming.Name, java.lang.Object) throws javax.naming.NamingException;
+  public abstract void rebind(java.lang.String, java.lang.Object) throws javax.naming.NamingException;
+  public abstract void unbind(javax.naming.Name) throws javax.naming.NamingException;
+  public abstract void unbind(java.lang.String) throws javax.naming.NamingException;
+  public abstract void rename(javax.naming.Name, javax.naming.Name) throws javax.naming.NamingException;
+  public abstract void rename(java.lang.String, java.lang.String) throws javax.naming.NamingException;
+  public abstract javax.naming.NamingEnumeration<javax.naming.NameClassPair> list(javax.naming.Name) throws javax.naming.NamingException;
+  public abstract javax.naming.NamingEnumeration<javax.naming.NameClassPair> list(java.lang.String) throws javax.naming.NamingException;
+  public abstract javax.naming.NamingEnumeration<javax.naming.Binding> listBindings(javax.naming.Name) throws javax.naming.NamingException;
+  public abstract javax.naming.NamingEnumeration<javax.naming.Binding> listBindings(java.lang.String) throws javax.naming.NamingException;
+  public abstract void destroySubcontext(javax.naming.Name) throws javax.naming.NamingException;
+  public abstract void destroySubcontext(java.lang.String) throws javax.naming.NamingException;
+  public abstract javax.naming.Context createSubcontext(javax.naming.Name) throws javax.naming.NamingException;
+  public abstract javax.naming.Context createSubcontext(java.lang.String) throws javax.naming.NamingException;
+  public abstract java.lang.Object lookupLink(javax.naming.Name) throws javax.naming.NamingException;
+  public abstract java.lang.Object lookupLink(java.lang.String) throws javax.naming.NamingException;
+  public abstract javax.naming.NameParser getNameParser(javax.naming.Name) throws javax.naming.NamingException;
+  public abstract javax.naming.NameParser getNameParser(java.lang.String) throws javax.naming.NamingException;
+  public abstract javax.naming.Name composeName(javax.naming.Name, javax.naming.Name) throws javax.naming.NamingException;
+  public abstract java.lang.String composeName(java.lang.String, java.lang.String) throws javax.naming.NamingException;
+  public abstract java.lang.Object addToEnvironment(java.lang.String, java.lang.Object) throws javax.naming.NamingException;
+  public abstract java.lang.Object removeFromEnvironment(java.lang.String) throws javax.naming.NamingException;
+  public abstract java.util.Hashtable<?, ?> getEnvironment() throws javax.naming.NamingException;
+  public abstract void close() throws javax.naming.NamingException;
+  public abstract java.lang.String getNameInNamespace() throws javax.naming.NamingException;
+}

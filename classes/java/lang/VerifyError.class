@@ -1,0 +1,5 @@
+Compiled from "VerifyError.java"
+public class java.lang.VerifyError extends java.lang.LinkageError {
+  public java.lang.VerifyError();
+  public java.lang.VerifyError(java.lang.String);
+}

@@ -1,0 +1,8 @@
+Compiled from "SwitchPoint.java"
+public class java.lang.invoke.SwitchPoint {
+  public java.lang.invoke.SwitchPoint();
+  public boolean hasBeenInvalidated();
+  public java.lang.invoke.MethodHandle guardWithTest(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
+  public static void invalidateAll(java.lang.invoke.SwitchPoint[]);
+  static {};
+}

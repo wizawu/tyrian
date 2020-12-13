@@ -1,0 +1,17 @@
+Compiled from "CRLReason.java"
+public final class java.security.cert.CRLReason extends java.lang.Enum<java.security.cert.CRLReason> {
+  public static final java.security.cert.CRLReason UNSPECIFIED;
+  public static final java.security.cert.CRLReason KEY_COMPROMISE;
+  public static final java.security.cert.CRLReason CA_COMPROMISE;
+  public static final java.security.cert.CRLReason AFFILIATION_CHANGED;
+  public static final java.security.cert.CRLReason SUPERSEDED;
+  public static final java.security.cert.CRLReason CESSATION_OF_OPERATION;
+  public static final java.security.cert.CRLReason CERTIFICATE_HOLD;
+  public static final java.security.cert.CRLReason UNUSED;
+  public static final java.security.cert.CRLReason REMOVE_FROM_CRL;
+  public static final java.security.cert.CRLReason PRIVILEGE_WITHDRAWN;
+  public static final java.security.cert.CRLReason AA_COMPROMISE;
+  public static java.security.cert.CRLReason[] values();
+  public static java.security.cert.CRLReason valueOf(java.lang.String);
+  static {};
+}

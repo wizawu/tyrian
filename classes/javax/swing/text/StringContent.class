@@ -1,0 +1,19 @@
+Compiled from "StringContent.java"
+public final class javax.swing.text.StringContent implements javax.swing.text.AbstractDocument$Content,java.io.Serializable {
+  transient java.util.Vector<javax.swing.text.StringContent$PosRec> marks;
+  public javax.swing.text.StringContent();
+  public javax.swing.text.StringContent(int);
+  public int length();
+  public javax.swing.undo.UndoableEdit insertString(int, java.lang.String) throws javax.swing.text.BadLocationException;
+  public javax.swing.undo.UndoableEdit remove(int, int) throws javax.swing.text.BadLocationException;
+  public java.lang.String getString(int, int) throws javax.swing.text.BadLocationException;
+  public void getChars(int, int, javax.swing.text.Segment) throws javax.swing.text.BadLocationException;
+  public javax.swing.text.Position createPosition(int) throws javax.swing.text.BadLocationException;
+  void replace(int, int, char[], int, int);
+  void resize(int);
+  synchronized void updateMarksForInsert(int, int);
+  synchronized void updateMarksForRemove(int, int);
+  protected java.util.Vector getPositionsInRange(java.util.Vector, int, int);
+  protected void updateUndoPositions(java.util.Vector);
+  static {};
+}

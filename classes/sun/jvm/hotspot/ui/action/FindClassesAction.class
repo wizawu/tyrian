@@ -1,0 +1,11 @@
+Compiled from "FindClassesAction.java"
+public class sun.jvm.hotspot.ui.action.FindClassesAction extends com.sun.java.swing.action.DelegateAction {
+  public static final java.lang.String VALUE_COMMAND;
+  public static final java.lang.String VALUE_NAME;
+  public static final java.lang.String VALUE_SMALL_ICON;
+  public static final java.lang.Integer VALUE_MNEMONIC;
+  public static final java.lang.String VALUE_SHORT_DESCRIPTION;
+  public static final java.lang.String VALUE_LONG_DESCRIPTION;
+  public sun.jvm.hotspot.ui.action.FindClassesAction();
+  static {};
+}

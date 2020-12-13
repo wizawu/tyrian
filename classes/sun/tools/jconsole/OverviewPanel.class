@@ -1,0 +1,9 @@
+Compiled from "OverviewPanel.java"
+abstract class sun.tools.jconsole.OverviewPanel extends sun.tools.jconsole.PlotterPanel {
+  static final int VIEW_RANGE;
+  static java.awt.Color PLOTTER_COLOR;
+  public sun.tools.jconsole.OverviewPanel(java.lang.String);
+  public sun.tools.jconsole.OverviewPanel(java.lang.String, java.lang.String, java.lang.String, sun.tools.jconsole.Plotter$Unit);
+  public javax.swing.JLabel getInfoLabel();
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "MandatoryWarningHandler.java"
+public class com.sun.tools.javac.util.MandatoryWarningHandler {
+  public com.sun.tools.javac.util.MandatoryWarningHandler(com.sun.tools.javac.util.Log, boolean, boolean, java.lang.String, com.sun.tools.javac.code.Lint$LintCategory);
+  public void report(com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, com.sun.tools.javac.util.JCDiagnostic$Warning);
+  public void reportDeferredDiagnostic();
+}

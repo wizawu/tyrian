@@ -1,0 +1,25 @@
+Compiled from "FDBigInteger.java"
+public class jdk.internal.math.FDBigInteger {
+  static final int[] SMALL_5_POW;
+  static final long[] LONG_5_POW;
+  public static final jdk.internal.math.FDBigInteger ZERO;
+  static final boolean $assertionsDisabled;
+  public jdk.internal.math.FDBigInteger(long, char[], int, int);
+  public static jdk.internal.math.FDBigInteger valueOfPow52(int, int);
+  public static jdk.internal.math.FDBigInteger valueOfMulPow52(long, int, int);
+  public int getNormalizationBias();
+  public jdk.internal.math.FDBigInteger leftShift(int);
+  public int quoRemIteration(jdk.internal.math.FDBigInteger) throws java.lang.IllegalArgumentException;
+  public jdk.internal.math.FDBigInteger multBy10();
+  public jdk.internal.math.FDBigInteger multByPow52(int, int);
+  public jdk.internal.math.FDBigInteger leftInplaceSub(jdk.internal.math.FDBigInteger);
+  public jdk.internal.math.FDBigInteger rightInplaceSub(jdk.internal.math.FDBigInteger);
+  public int cmp(jdk.internal.math.FDBigInteger);
+  public int cmpPow52(int, int);
+  public int addAndCmp(jdk.internal.math.FDBigInteger, jdk.internal.math.FDBigInteger);
+  public void makeImmutable();
+  public java.lang.String toHexString();
+  public java.math.BigInteger toBigInteger();
+  public java.lang.String toString();
+  static {};
+}

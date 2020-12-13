@@ -1,0 +1,12 @@
+Compiled from "OverloadedDynamicMethod.java"
+class jdk.dynalink.beans.OverloadedDynamicMethod extends jdk.dynalink.beans.DynamicMethod {
+  static final boolean $assertionsDisabled;
+  jdk.dynalink.beans.OverloadedDynamicMethod(java.lang.Class<?>, java.lang.String);
+  jdk.dynalink.beans.SingleDynamicMethod getMethodForExactParamTypes(java.lang.String);
+  java.lang.invoke.MethodHandle getInvocation(jdk.dynalink.CallSiteDescriptor, jdk.dynalink.linker.LinkerServices);
+  public boolean contains(jdk.dynalink.beans.SingleDynamicMethod);
+  public boolean isConstructor();
+  public java.lang.String toString();
+  public void addMethod(jdk.dynalink.beans.SingleDynamicMethod);
+  static {};
+}

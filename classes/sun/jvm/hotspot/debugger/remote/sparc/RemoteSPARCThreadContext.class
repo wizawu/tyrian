@@ -1,0 +1,6 @@
+Compiled from "RemoteSPARCThreadContext.java"
+public class sun.jvm.hotspot.debugger.remote.sparc.RemoteSPARCThreadContext extends sun.jvm.hotspot.debugger.sparc.SPARCThreadContext {
+  public sun.jvm.hotspot.debugger.remote.sparc.RemoteSPARCThreadContext(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient);
+  public void setRegisterAsAddress(int, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address getRegisterAsAddress(int);
+}

@@ -1,0 +1,9 @@
+Compiled from "RemoteHostImpl.java"
+public class sun.tools.jstatd.RemoteHostImpl implements sun.jvmstat.monitor.remote.RemoteHost,sun.jvmstat.monitor.event.HostListener {
+  public sun.tools.jstatd.RemoteHostImpl() throws sun.jvmstat.monitor.MonitorException;
+  public sun.jvmstat.monitor.remote.RemoteVm attachVm(int, java.lang.String) throws java.rmi.RemoteException, sun.jvmstat.monitor.MonitorException;
+  public void detachVm(sun.jvmstat.monitor.remote.RemoteVm) throws java.rmi.RemoteException;
+  public int[] activeVms() throws sun.jvmstat.monitor.MonitorException;
+  public void vmStatusChanged(sun.jvmstat.monitor.event.VmStatusChangeEvent);
+  public void disconnected(sun.jvmstat.monitor.event.HostEvent);
+}

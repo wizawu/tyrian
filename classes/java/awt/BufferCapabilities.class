@@ -1,0 +1,11 @@
+Compiled from "BufferCapabilities.java"
+public class java.awt.BufferCapabilities implements java.lang.Cloneable {
+  public java.awt.BufferCapabilities(java.awt.ImageCapabilities, java.awt.ImageCapabilities, java.awt.BufferCapabilities$FlipContents);
+  public java.awt.ImageCapabilities getFrontBufferCapabilities();
+  public java.awt.ImageCapabilities getBackBufferCapabilities();
+  public boolean isPageFlipping();
+  public java.awt.BufferCapabilities$FlipContents getFlipContents();
+  public boolean isFullScreenRequired();
+  public boolean isMultiBufferAvailable();
+  public java.lang.Object clone();
+}

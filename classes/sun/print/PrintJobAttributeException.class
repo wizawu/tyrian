@@ -1,0 +1,6 @@
+Compiled from "PrintJobAttributeException.java"
+class sun.print.PrintJobAttributeException extends javax.print.PrintException implements javax.print.AttributeException {
+  sun.print.PrintJobAttributeException(java.lang.String, java.lang.Class<?>, javax.print.attribute.Attribute);
+  public java.lang.Class<?>[] getUnsupportedAttributes();
+  public javax.print.attribute.Attribute[] getUnsupportedValues();
+}

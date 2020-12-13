@@ -1,0 +1,14 @@
+Compiled from "BasicComboBoxEditor.java"
+public class javax.swing.plaf.basic.BasicComboBoxEditor implements javax.swing.ComboBoxEditor,java.awt.event.FocusListener {
+  protected javax.swing.JTextField editor;
+  public javax.swing.plaf.basic.BasicComboBoxEditor();
+  public java.awt.Component getEditorComponent();
+  protected javax.swing.JTextField createEditorComponent();
+  public void setItem(java.lang.Object);
+  public java.lang.Object getItem();
+  public void selectAll();
+  public void focusGained(java.awt.event.FocusEvent);
+  public void focusLost(java.awt.event.FocusEvent);
+  public void addActionListener(java.awt.event.ActionListener);
+  public void removeActionListener(java.awt.event.ActionListener);
+}

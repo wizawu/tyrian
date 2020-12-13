@@ -1,0 +1,27 @@
+Compiled from "WaveFileFormat.java"
+final class com.sun.media.sound.WaveFileFormat extends com.sun.media.sound.StandardFileFormat {
+  static final int RIFF_MAGIC;
+  static final int WAVE_MAGIC;
+  static final int FMT_MAGIC;
+  static final int DATA_MAGIC;
+  static final int WAVE_FORMAT_UNKNOWN;
+  static final int WAVE_FORMAT_PCM;
+  static final int WAVE_FORMAT_ADPCM;
+  static final int WAVE_FORMAT_IEEE_FLOAT;
+  static final int WAVE_FORMAT_ALAW;
+  static final int WAVE_FORMAT_MULAW;
+  static final int WAVE_FORMAT_OKI_ADPCM;
+  static final int WAVE_FORMAT_DIGISTD;
+  static final int WAVE_FORMAT_DIGIFIX;
+  static final int WAVE_IBM_FORMAT_MULAW;
+  static final int WAVE_IBM_FORMAT_ALAW;
+  static final int WAVE_IBM_FORMAT_ADPCM;
+  static final int WAVE_FORMAT_DVI_ADPCM;
+  static final int WAVE_FORMAT_SX7383;
+  static final int WAVE_FORMAT_EXTENSIBLE;
+  com.sun.media.sound.WaveFileFormat(javax.sound.sampled.AudioFileFormat$Type, long, javax.sound.sampled.AudioFormat, long);
+  int getWaveType();
+  int getHeaderSize();
+  static int getHeaderSize(int);
+  static int getFmtChunkSize(int);
+}

@@ -1,0 +1,45 @@
+Compiled from "FilePane.java"
+public class sun.swing.FilePane extends javax.swing.JPanel implements java.beans.PropertyChangeListener {
+  public static final java.lang.String ACTION_APPROVE_SELECTION;
+  public static final java.lang.String ACTION_CANCEL;
+  public static final java.lang.String ACTION_EDIT_FILE_NAME;
+  public static final java.lang.String ACTION_REFRESH;
+  public static final java.lang.String ACTION_CHANGE_TO_PARENT_DIRECTORY;
+  public static final java.lang.String ACTION_NEW_FOLDER;
+  public static final java.lang.String ACTION_VIEW_LIST;
+  public static final java.lang.String ACTION_VIEW_DETAILS;
+  public static final int VIEWTYPE_LIST;
+  public static final int VIEWTYPE_DETAILS;
+  int lastIndex;
+  java.io.File editFile;
+  javax.swing.JTextField editCell;
+  protected javax.swing.Action newFolderAction;
+  public sun.swing.FilePane(sun.swing.FilePane$FileChooserUIAccessor);
+  public void uninstallUI();
+  protected javax.swing.JFileChooser getFileChooser();
+  protected javax.swing.plaf.basic.BasicDirectoryModel getModel();
+  public int getViewType();
+  public void setViewType(int);
+  public javax.swing.Action getViewTypeAction(int);
+  protected void installDefaults();
+  public javax.swing.Action[] getActions();
+  protected void createActionMap();
+  public static void addActionsToMap(javax.swing.ActionMap, javax.swing.Action[]);
+  public javax.swing.JPanel createList();
+  public javax.swing.JPanel createDetailsView();
+  public javax.swing.event.ListSelectionListener createListSelectionListener();
+  public javax.swing.Action getNewFolderAction();
+  void setFileSelected();
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  public void ensureFileIsVisible(javax.swing.JFileChooser, java.io.File);
+  public void rescanCurrentDirectory();
+  public void clearSelection();
+  public javax.swing.JMenu getViewMenu();
+  public javax.swing.JPopupMenu getComponentPopupMenu();
+  protected sun.swing.FilePane$Handler getMouseHandler();
+  protected boolean isDirectorySelected();
+  protected java.io.File getDirectory();
+  public boolean canWrite(java.io.File);
+  public static boolean usesShellFolder(javax.swing.JFileChooser);
+  static {};
+}

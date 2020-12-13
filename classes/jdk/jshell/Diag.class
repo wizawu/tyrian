@@ -1,0 +1,15 @@
+Compiled from "Diag.java"
+public abstract class jdk.jshell.Diag {
+  public static final long NOPOS;
+  jdk.jshell.Diag();
+  public abstract boolean isError();
+  public abstract long getPosition();
+  public abstract long getStartPosition();
+  public abstract long getEndPosition();
+  public abstract java.lang.String getCode();
+  public abstract java.lang.String getMessage(java.util.Locale);
+  jdk.jshell.Snippet snippetOrNull();
+  boolean isUnreachableError();
+  boolean isNotAStatementError();
+  boolean isResolutionError();
+}

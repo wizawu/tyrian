@@ -1,0 +1,12 @@
+Compiled from "ModalEventFilter.java"
+abstract class java.awt.ModalEventFilter implements java.awt.EventFilter {
+  protected java.awt.Dialog modalDialog;
+  protected boolean disabled;
+  protected java.awt.ModalEventFilter(java.awt.Dialog);
+  java.awt.Dialog getModalDialog();
+  public java.awt.EventFilter$FilterAction acceptEvent(java.awt.AWTEvent);
+  protected abstract java.awt.EventFilter$FilterAction acceptWindow(java.awt.Window);
+  void disable();
+  int compareTo(java.awt.ModalEventFilter);
+  static java.awt.ModalEventFilter createFilterForDialog(java.awt.Dialog);
+}

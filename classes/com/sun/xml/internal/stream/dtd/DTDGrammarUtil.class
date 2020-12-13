@@ -1,0 +1,21 @@
+Compiled from "DTDGrammarUtil.java"
+public class com.sun.xml.internal.stream.dtd.DTDGrammarUtil {
+  protected static final java.lang.String SYMBOL_TABLE;
+  protected static final java.lang.String NAMESPACES;
+  protected com.sun.xml.internal.stream.dtd.nonvalidating.DTDGrammar fDTDGrammar;
+  protected boolean fNamespaces;
+  protected com.sun.org.apache.xerces.internal.util.SymbolTable fSymbolTable;
+  public com.sun.xml.internal.stream.dtd.DTDGrammarUtil(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public com.sun.xml.internal.stream.dtd.DTDGrammarUtil(com.sun.xml.internal.stream.dtd.nonvalidating.DTDGrammar, com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public com.sun.xml.internal.stream.dtd.DTDGrammarUtil(com.sun.xml.internal.stream.dtd.nonvalidating.DTDGrammar, com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.NamespaceContext);
+  public void reset(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public void startElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endElement(com.sun.org.apache.xerces.internal.xni.QName) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void addDTDDefaultAttrs(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected void handleStartElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected void handleEndElement(com.sun.org.apache.xerces.internal.xni.QName) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public boolean isInElementContent();
+  public boolean isIgnorableWhiteSpace(com.sun.org.apache.xerces.internal.xni.XMLString);
+}

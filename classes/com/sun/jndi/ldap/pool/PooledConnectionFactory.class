@@ -1,0 +1,4 @@
+Compiled from "PooledConnectionFactory.java"
+public interface com.sun.jndi.ldap.pool.PooledConnectionFactory {
+  public abstract com.sun.jndi.ldap.pool.PooledConnection createPooledConnection(com.sun.jndi.ldap.pool.PoolCallback) throws javax.naming.NamingException;
+}

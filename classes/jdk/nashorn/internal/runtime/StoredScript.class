@@ -1,0 +1,11 @@
+Compiled from "StoredScript.java"
+public final class jdk.nashorn.internal.runtime.StoredScript implements java.io.Serializable {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.runtime.StoredScript(int, java.lang.String, java.util.Map<java.lang.String, byte[]>, java.util.Map<java.lang.Integer, jdk.nashorn.internal.runtime.FunctionInitializer>, java.lang.Object[]);
+  public int getCompilationId();
+  jdk.nashorn.internal.runtime.FunctionInitializer installFunction(jdk.nashorn.internal.runtime.RecompilableScriptFunctionData, jdk.nashorn.internal.runtime.CodeInstaller);
+  java.lang.Class<?> installScript(jdk.nashorn.internal.runtime.Source, jdk.nashorn.internal.runtime.CodeInstaller);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  static {};
+}

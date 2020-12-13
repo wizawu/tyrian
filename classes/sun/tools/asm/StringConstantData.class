@@ -1,0 +1,8 @@
+Compiled from "StringConstantData.java"
+final class sun.tools.asm.StringConstantData extends sun.tools.asm.ConstantPoolData {
+  java.lang.String str;
+  sun.tools.asm.StringConstantData(sun.tools.asm.ConstantPool, java.lang.String);
+  void write(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
+  int order();
+  public java.lang.String toString();
+}

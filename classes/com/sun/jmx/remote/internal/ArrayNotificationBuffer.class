@@ -1,0 +1,14 @@
+Compiled from "ArrayNotificationBuffer.java"
+public class com.sun.jmx.remote.internal.ArrayNotificationBuffer implements com.sun.jmx.remote.internal.NotificationBuffer {
+  static final java.lang.String broadcasterClass;
+  public static com.sun.jmx.remote.internal.NotificationBuffer getNotificationBuffer(javax.management.MBeanServer, java.util.Map<java.lang.String, ?>);
+  static void removeNotificationBuffer(javax.management.MBeanServer);
+  void addSharer(com.sun.jmx.remote.internal.ArrayNotificationBuffer$ShareBuffer);
+  public void dispose();
+  public javax.management.remote.NotificationResult fetchNotifications(com.sun.jmx.remote.internal.NotificationBufferFilter, long, long, int) throws java.lang.InterruptedException;
+  synchronized long earliestSequenceNumber();
+  synchronized long nextSequenceNumber();
+  synchronized void addNotification(com.sun.jmx.remote.internal.ArrayNotificationBuffer$NamedNotification);
+  synchronized com.sun.jmx.remote.internal.ArrayNotificationBuffer$NamedNotification notificationAt(long);
+  static {};
+}

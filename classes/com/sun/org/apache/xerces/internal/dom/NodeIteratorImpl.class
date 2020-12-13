@@ -1,0 +1,16 @@
+Compiled from "NodeIteratorImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.NodeIteratorImpl implements org.w3c.dom.traversal.NodeIterator {
+  public com.sun.org.apache.xerces.internal.dom.NodeIteratorImpl(com.sun.org.apache.xerces.internal.dom.DocumentImpl, org.w3c.dom.Node, int, org.w3c.dom.traversal.NodeFilter, boolean);
+  public org.w3c.dom.Node getRoot();
+  public int getWhatToShow();
+  public org.w3c.dom.traversal.NodeFilter getFilter();
+  public boolean getExpandEntityReferences();
+  public org.w3c.dom.Node nextNode();
+  public org.w3c.dom.Node previousNode();
+  boolean acceptNode(org.w3c.dom.Node);
+  org.w3c.dom.Node matchNodeOrParent(org.w3c.dom.Node);
+  org.w3c.dom.Node nextNode(org.w3c.dom.Node, boolean);
+  org.w3c.dom.Node previousNode(org.w3c.dom.Node);
+  public void removeNode(org.w3c.dom.Node);
+  public void detach();
+}

@@ -1,0 +1,6 @@
+Compiled from "XScrollbarClient.java"
+interface sun.awt.X11.XScrollbarClient {
+  public abstract void notifyValue(sun.awt.X11.XScrollbar, int, int, boolean);
+  public abstract java.awt.Component getEventSource();
+  public abstract void repaintScrollbarRequest(sun.awt.X11.XScrollbar);
+}

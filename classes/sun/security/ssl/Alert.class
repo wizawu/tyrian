@@ -1,0 +1,48 @@
+Compiled from "Alert.java"
+final class sun.security.ssl.Alert extends java.lang.Enum<sun.security.ssl.Alert> {
+  public static final sun.security.ssl.Alert CLOSE_NOTIFY;
+  public static final sun.security.ssl.Alert UNEXPECTED_MESSAGE;
+  public static final sun.security.ssl.Alert BAD_RECORD_MAC;
+  public static final sun.security.ssl.Alert DECRYPTION_FAILED;
+  public static final sun.security.ssl.Alert RECORD_OVERFLOW;
+  public static final sun.security.ssl.Alert DECOMPRESSION_FAILURE;
+  public static final sun.security.ssl.Alert HANDSHAKE_FAILURE;
+  public static final sun.security.ssl.Alert NO_CERTIFICATE;
+  public static final sun.security.ssl.Alert BAD_CERTIFICATE;
+  public static final sun.security.ssl.Alert UNSUPPORTED_CERTIFICATE;
+  public static final sun.security.ssl.Alert CERTIFICATE_REVOKED;
+  public static final sun.security.ssl.Alert CERTIFICATE_EXPIRED;
+  public static final sun.security.ssl.Alert CERTIFICATE_UNKNOWN;
+  public static final sun.security.ssl.Alert ILLEGAL_PARAMETER;
+  public static final sun.security.ssl.Alert UNKNOWN_CA;
+  public static final sun.security.ssl.Alert ACCESS_DENIED;
+  public static final sun.security.ssl.Alert DECODE_ERROR;
+  public static final sun.security.ssl.Alert DECRYPT_ERROR;
+  public static final sun.security.ssl.Alert EXPORT_RESTRICTION;
+  public static final sun.security.ssl.Alert PROTOCOL_VERSION;
+  public static final sun.security.ssl.Alert INSUFFICIENT_SECURITY;
+  public static final sun.security.ssl.Alert INTERNAL_ERROR;
+  public static final sun.security.ssl.Alert INAPPROPRIATE_FALLBACK;
+  public static final sun.security.ssl.Alert USER_CANCELED;
+  public static final sun.security.ssl.Alert NO_RENEGOTIATION;
+  public static final sun.security.ssl.Alert MISSING_EXTENSION;
+  public static final sun.security.ssl.Alert UNSUPPORTED_EXTENSION;
+  public static final sun.security.ssl.Alert CERT_UNOBTAINABLE;
+  public static final sun.security.ssl.Alert UNRECOGNIZED_NAME;
+  public static final sun.security.ssl.Alert BAD_CERT_STATUS_RESPONSE;
+  public static final sun.security.ssl.Alert BAD_CERT_HASH_VALUE;
+  public static final sun.security.ssl.Alert UNKNOWN_PSK_IDENTITY;
+  public static final sun.security.ssl.Alert CERTIFICATE_REQUIRED;
+  public static final sun.security.ssl.Alert NO_APPLICATION_PROTOCOL;
+  final byte id;
+  final java.lang.String description;
+  final boolean handshakeOnly;
+  static final sun.security.ssl.SSLConsumer alertConsumer;
+  public static sun.security.ssl.Alert[] values();
+  public static sun.security.ssl.Alert valueOf(java.lang.String);
+  static sun.security.ssl.Alert valueOf(byte);
+  static java.lang.String nameOf(byte);
+  javax.net.ssl.SSLException createSSLException(java.lang.String);
+  javax.net.ssl.SSLException createSSLException(java.lang.String, java.lang.Throwable);
+  static {};
+}

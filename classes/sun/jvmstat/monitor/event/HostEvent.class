@@ -1,0 +1,5 @@
+Compiled from "HostEvent.java"
+public class sun.jvmstat.monitor.event.HostEvent extends java.util.EventObject {
+  public sun.jvmstat.monitor.event.HostEvent(sun.jvmstat.monitor.MonitoredHost);
+  public sun.jvmstat.monitor.MonitoredHost getMonitoredHost();
+}

@@ -1,0 +1,9 @@
+Compiled from "InstructionVisitor.java"
+public interface sun.jvm.hotspot.asm.InstructionVisitor {
+  public abstract void prologue();
+  public abstract void beginInstruction(long);
+  public abstract void printAddress(long);
+  public abstract void print(java.lang.String);
+  public abstract void endInstruction(long);
+  public abstract void epilogue();
+}

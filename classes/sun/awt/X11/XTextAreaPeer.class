@@ -1,0 +1,37 @@
+Compiled from "XTextAreaPeer.java"
+final class sun.awt.X11.XTextAreaPeer extends sun.awt.X11.XComponentPeer implements java.awt.peer.TextAreaPeer {
+  sun.awt.X11.XTextAreaPeer(java.awt.TextArea);
+  public void dispose();
+  public void pSetCursor(java.awt.Cursor, boolean);
+  public java.awt.Dimension getMinimumSize();
+  public java.awt.Dimension getPreferredSize(int, int);
+  public java.awt.Dimension getMinimumSize(int, int);
+  public boolean isFocusable();
+  public void setVisible(boolean);
+  void repaintText();
+  public void focusGained(java.awt.event.FocusEvent);
+  public void focusLost(java.awt.event.FocusEvent);
+  public void repaint();
+  void paintPeer(java.awt.Graphics);
+  public void setBounds(int, int, int, int, int);
+  void handleJavaKeyEvent(java.awt.event.KeyEvent);
+  public boolean handlesWheelScrolling();
+  void handleJavaMouseWheelEvent(java.awt.event.MouseWheelEvent);
+  public void handleJavaMouseEvent(java.awt.event.MouseEvent);
+  void handleJavaInputMethodEvent(java.awt.event.InputMethodEvent);
+  public void select(int, int);
+  public void setBackground(java.awt.Color);
+  public void setForeground(java.awt.Color);
+  public void setFont(java.awt.Font);
+  public void setEditable(boolean);
+  public void setEnabled(boolean);
+  public java.awt.im.InputMethodRequests getInputMethodRequests();
+  public int getSelectionStart();
+  public int getSelectionEnd();
+  public java.lang.String getText();
+  public void setText(java.lang.String);
+  public void insert(java.lang.String, int);
+  public void replaceRange(java.lang.String, int, int);
+  public void setCaretPosition(int);
+  public int getCaretPosition();
+}

@@ -1,0 +1,15 @@
+Compiled from "DefaultObjectVisitor.java"
+public class sun.jvm.hotspot.debugger.cdbg.DefaultObjectVisitor implements sun.jvm.hotspot.debugger.cdbg.ObjectVisitor {
+  public sun.jvm.hotspot.debugger.cdbg.DefaultObjectVisitor();
+  public void enterType(sun.jvm.hotspot.debugger.cdbg.Type, sun.jvm.hotspot.debugger.Address);
+  public void exitType();
+  public void doBit(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, long);
+  public void doInt(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, long);
+  public void doEnum(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, long, java.lang.String);
+  public void doFloat(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, float);
+  public void doDouble(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, double);
+  public void doPointer(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, sun.jvm.hotspot.debugger.Address);
+  public void doArray(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, sun.jvm.hotspot.debugger.Address);
+  public void doRef(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, sun.jvm.hotspot.debugger.Address);
+  public void doCompound(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, sun.jvm.hotspot.debugger.Address);
+}

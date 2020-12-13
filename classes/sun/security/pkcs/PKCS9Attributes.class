@@ -1,0 +1,16 @@
+Compiled from "PKCS9Attributes.java"
+public class sun.security.pkcs.PKCS9Attributes {
+  public sun.security.pkcs.PKCS9Attributes(sun.security.util.ObjectIdentifier[], sun.security.util.DerInputStream) throws java.io.IOException;
+  public sun.security.pkcs.PKCS9Attributes(sun.security.util.DerInputStream) throws java.io.IOException;
+  public sun.security.pkcs.PKCS9Attributes(sun.security.util.DerInputStream, boolean) throws java.io.IOException;
+  public sun.security.pkcs.PKCS9Attributes(sun.security.pkcs.PKCS9Attribute[]) throws java.lang.IllegalArgumentException, java.io.IOException;
+  public void encode(byte, java.io.OutputStream) throws java.io.IOException;
+  public byte[] getDerEncoding() throws java.io.IOException;
+  public sun.security.pkcs.PKCS9Attribute getAttribute(sun.security.util.ObjectIdentifier);
+  public sun.security.pkcs.PKCS9Attribute getAttribute(java.lang.String);
+  public sun.security.pkcs.PKCS9Attribute[] getAttributes();
+  public java.lang.Object getAttributeValue(sun.security.util.ObjectIdentifier) throws java.io.IOException;
+  public java.lang.Object getAttributeValue(java.lang.String) throws java.io.IOException;
+  public java.lang.String toString();
+  static sun.security.util.DerEncoder[] castToDerEncoder(java.lang.Object[]);
+}

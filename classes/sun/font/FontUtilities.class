@@ -1,0 +1,26 @@
+Compiled from "FontUtilities.java"
+public final class sun.font.FontUtilities {
+  public static boolean isSolaris;
+  public static boolean isLinux;
+  public static boolean isMacOSX;
+  public static boolean isMacOSX14;
+  public static boolean useJDKScaler;
+  public static boolean isWindows;
+  public static final int MIN_LAYOUT_CHARCODE;
+  public static final int MAX_LAYOUT_CHARCODE;
+  public sun.font.FontUtilities();
+  public static sun.font.Font2D getFont2D(java.awt.Font);
+  public static boolean isComplexScript(char[], int, int);
+  public static boolean isComplexText(char[], int, int);
+  public static boolean isNonSimpleChar(char);
+  public static boolean isComplexCharCode(int);
+  public static sun.util.logging.PlatformLogger getLogger();
+  public static boolean isLogging();
+  public static boolean debugFonts();
+  public static boolean fontSupportsDefaultEncoding(java.awt.Font);
+  public static javax.swing.plaf.FontUIResource getCompositeFontUIResource(java.awt.Font);
+  public static java.lang.String mapFcName(java.lang.String);
+  public static javax.swing.plaf.FontUIResource getFontConfigFUIR(java.lang.String, int, int);
+  public static boolean textLayoutIsCompatible(java.awt.Font);
+  static {};
+}

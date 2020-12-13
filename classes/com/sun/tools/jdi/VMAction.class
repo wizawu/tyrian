@@ -1,0 +1,12 @@
+Compiled from "VMAction.java"
+class com.sun.tools.jdi.VMAction extends java.util.EventObject {
+  static final int VM_SUSPENDED;
+  static final int VM_NOT_SUSPENDED;
+  int id;
+  com.sun.jdi.ThreadReference resumingThread;
+  com.sun.tools.jdi.VMAction(com.sun.jdi.VirtualMachine, int);
+  com.sun.tools.jdi.VMAction(com.sun.jdi.VirtualMachine, com.sun.jdi.ThreadReference, int);
+  com.sun.jdi.VirtualMachine vm();
+  int id();
+  com.sun.jdi.ThreadReference resumingThread();
+}

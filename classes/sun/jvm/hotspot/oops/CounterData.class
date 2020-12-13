@@ -1,0 +1,12 @@
+Compiled from "CounterData.java"
+public class sun.jvm.hotspot.oops.CounterData extends sun.jvm.hotspot.oops.BitData {
+  static final int countOff;
+  static final int counterCellCount;
+  public sun.jvm.hotspot.oops.CounterData(sun.jvm.hotspot.oops.DataLayout);
+  static int staticCellCount();
+  public int cellCount();
+  int count();
+  static int countOffset();
+  static int counterDataSize();
+  public void printDataOn(java.io.PrintStream);
+}

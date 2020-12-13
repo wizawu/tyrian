@@ -1,0 +1,4 @@
+Compiled from "TileObserver.java"
+public interface java.awt.image.TileObserver {
+  public abstract void tileUpdate(java.awt.image.WritableRenderedImage, int, int, boolean);
+}

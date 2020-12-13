@@ -1,0 +1,6 @@
+Compiled from "NTSidGroupPrincipal.java"
+public class com.sun.security.auth.NTSidGroupPrincipal extends com.sun.security.auth.NTSid {
+  public com.sun.security.auth.NTSidGroupPrincipal(java.lang.String);
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+}

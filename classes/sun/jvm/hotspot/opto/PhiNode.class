@@ -1,0 +1,5 @@
+Compiled from "PhiNode.java"
+public class sun.jvm.hotspot.opto.PhiNode extends sun.jvm.hotspot.opto.TypeNode {
+  public sun.jvm.hotspot.opto.PhiNode(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

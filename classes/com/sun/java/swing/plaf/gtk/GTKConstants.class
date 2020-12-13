@@ -1,0 +1,4 @@
+Compiled from "GTKConstants.java"
+public interface com.sun.java.swing.plaf.gtk.GTKConstants {
+  public static final int UNDEFINED;
+}

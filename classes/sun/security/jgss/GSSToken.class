@@ -1,0 +1,20 @@
+Compiled from "GSSToken.java"
+public abstract class sun.security.jgss.GSSToken {
+  public sun.security.jgss.GSSToken();
+  public static final void writeLittleEndian(int, byte[]);
+  public static final void writeLittleEndian(int, byte[], int);
+  public static final void writeBigEndian(int, byte[]);
+  public static final void writeBigEndian(int, byte[], int);
+  public static final int readLittleEndian(byte[], int, int);
+  public static final int readBigEndian(byte[], int, int);
+  public static final void writeInt(int, java.io.OutputStream) throws java.io.IOException;
+  public static final int writeInt(int, byte[], int);
+  public static final int readInt(java.io.InputStream) throws java.io.IOException;
+  public static final int readInt(byte[], int);
+  public static final void readFully(java.io.InputStream, byte[]) throws java.io.IOException;
+  public static final void readFully(java.io.InputStream, byte[], int, int) throws java.io.IOException;
+  public static final void debug(java.lang.String);
+  public static final java.lang.String getHexBytes(byte[]);
+  public static final java.lang.String getHexBytes(byte[], int);
+  public static final java.lang.String getHexBytes(byte[], int, int);
+}

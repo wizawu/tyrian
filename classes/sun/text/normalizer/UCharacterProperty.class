@@ -1,0 +1,33 @@
+Compiled from "UCharacterProperty.java"
+final class sun.text.normalizer.UCharacterProperty {
+  public static final sun.text.normalizer.UCharacterProperty INSTANCE;
+  public sun.text.normalizer.Trie2_16 m_trie_;
+  public sun.text.normalizer.VersionInfo m_unicodeVersion_;
+  public static final int TYPE_MASK;
+  public static final int SRC_CHAR;
+  public static final int SRC_PROPSVEC;
+  public static final int SRC_BIDI;
+  public static final int SRC_NFC;
+  public static final int SRC_NFKC;
+  sun.text.normalizer.Trie2_16 m_additionalTrie_;
+  int[] m_additionalVectors_;
+  int m_additionalColumnsCount_;
+  int m_maxBlockScriptValue_;
+  int m_maxJTGValue_;
+  public char[] m_scriptExtensions_;
+  public static final int SCRIPT_X_MASK;
+  public static final int SCRIPT_MASK_;
+  public static final int BIDI_PAIRED_BRACKET_TYPE;
+  static final boolean $assertionsDisabled;
+  public final int getProperty(int);
+  public int getAdditional(int, int);
+  public sun.text.normalizer.VersionInfo getAge(int);
+  public int getType(int);
+  public int getIntPropertyValue(int, int);
+  public static int getRawSupplementary(char, char);
+  public static final int getMask(int);
+  public static int getEuropeanDigit(int);
+  public int digit(int);
+  public void upropsvec_addPropertyStarts(sun.text.normalizer.UnicodeSet);
+  static {};
+}

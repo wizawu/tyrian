@@ -1,0 +1,6 @@
+Compiled from "AnnotationTypeMismatchException.java"
+public class java.lang.annotation.AnnotationTypeMismatchException extends java.lang.RuntimeException {
+  public java.lang.annotation.AnnotationTypeMismatchException(java.lang.reflect.Method, java.lang.String);
+  public java.lang.reflect.Method element();
+  public java.lang.String foundType();
+}

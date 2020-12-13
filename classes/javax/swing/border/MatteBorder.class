@@ -1,0 +1,16 @@
+Compiled from "MatteBorder.java"
+public class javax.swing.border.MatteBorder extends javax.swing.border.EmptyBorder {
+  protected java.awt.Color color;
+  protected javax.swing.Icon tileIcon;
+  public javax.swing.border.MatteBorder(int, int, int, int, java.awt.Color);
+  public javax.swing.border.MatteBorder(java.awt.Insets, java.awt.Color);
+  public javax.swing.border.MatteBorder(int, int, int, int, javax.swing.Icon);
+  public javax.swing.border.MatteBorder(java.awt.Insets, javax.swing.Icon);
+  public javax.swing.border.MatteBorder(javax.swing.Icon);
+  public void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
+  public java.awt.Insets getBorderInsets(java.awt.Component, java.awt.Insets);
+  public java.awt.Insets getBorderInsets();
+  public java.awt.Color getMatteColor();
+  public javax.swing.Icon getTileIcon();
+  public boolean isBorderOpaque();
+}

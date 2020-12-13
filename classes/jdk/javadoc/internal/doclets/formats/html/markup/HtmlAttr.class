@@ -1,0 +1,33 @@
+Compiled from "HtmlAttr.java"
+public final class jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr extends java.lang.Enum<jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr> {
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr ALT;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr CLASS;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr CLEAR;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr COLS;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr CONTENT;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr DISABLED;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr FOR;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr HREF;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr HTTP_EQUIV;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr ID;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr LANG;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr NAME;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr ONCLICK;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr ONLOAD;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr REL;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr ROLE;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr ROWS;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr SCOPE;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr SCROLLING;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr SRC;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr TARGET;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr TITLE;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr TYPE;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr VALUE;
+  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr WIDTH;
+  public static jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr[] values();
+  public static jdk.javadoc.internal.doclets.formats.html.markup.HtmlAttr valueOf(java.lang.String);
+  public java.lang.String toString();
+  static {};
+}

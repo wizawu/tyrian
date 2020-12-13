@@ -1,0 +1,9 @@
+Compiled from "Predicate.java"
+public interface java.util.function.Predicate<T> {
+  public abstract boolean test(T);
+  public default java.util.function.Predicate<T> and(java.util.function.Predicate<? super T>);
+  public default java.util.function.Predicate<T> negate();
+  public default java.util.function.Predicate<T> or(java.util.function.Predicate<? super T>);
+  public static <T> java.util.function.Predicate<T> isEqual(java.lang.Object);
+  public static <T> java.util.function.Predicate<T> not(java.util.function.Predicate<? super T>);
+}

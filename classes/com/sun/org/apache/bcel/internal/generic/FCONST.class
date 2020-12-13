@@ -1,0 +1,8 @@
+Compiled from "FCONST.java"
+public class com.sun.org.apache.bcel.internal.generic.FCONST extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.ConstantPushInstruction {
+  com.sun.org.apache.bcel.internal.generic.FCONST();
+  public com.sun.org.apache.bcel.internal.generic.FCONST(float);
+  public java.lang.Number getValue();
+  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

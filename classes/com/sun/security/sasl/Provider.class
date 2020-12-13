@@ -1,0 +1,12 @@
+Compiled from "Provider.java"
+public final class com.sun.security.sasl.Provider extends java.security.Provider {
+  public com.sun.security.sasl.Provider();
+  static void access$000(com.sun.security.sasl.Provider, java.security.Provider$Service);
+  static void access$100(com.sun.security.sasl.Provider, java.security.Provider$Service);
+  static void access$200(com.sun.security.sasl.Provider, java.security.Provider$Service);
+  static void access$300(com.sun.security.sasl.Provider, java.security.Provider$Service);
+  static void access$400(com.sun.security.sasl.Provider, java.security.Provider$Service);
+  static void access$500(com.sun.security.sasl.Provider, java.security.Provider$Service);
+  static void access$600(com.sun.security.sasl.Provider, java.security.Provider$Service);
+  static void access$700(com.sun.security.sasl.Provider, java.security.Provider$Service);
+}

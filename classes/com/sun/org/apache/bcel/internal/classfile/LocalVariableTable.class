@@ -1,0 +1,15 @@
+Compiled from "LocalVariableTable.java"
+public class com.sun.org.apache.bcel.internal.classfile.LocalVariableTable extends com.sun.org.apache.bcel.internal.classfile.Attribute {
+  public com.sun.org.apache.bcel.internal.classfile.LocalVariableTable(com.sun.org.apache.bcel.internal.classfile.LocalVariableTable);
+  public com.sun.org.apache.bcel.internal.classfile.LocalVariableTable(int, int, com.sun.org.apache.bcel.internal.classfile.LocalVariable[], com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  com.sun.org.apache.bcel.internal.classfile.LocalVariableTable(int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final com.sun.org.apache.bcel.internal.classfile.LocalVariable[] getLocalVariableTable();
+  public final com.sun.org.apache.bcel.internal.classfile.LocalVariable getLocalVariable(int);
+  public final com.sun.org.apache.bcel.internal.classfile.LocalVariable getLocalVariable(int, int);
+  public final void setLocalVariableTable(com.sun.org.apache.bcel.internal.classfile.LocalVariable[]);
+  public final java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.classfile.Attribute copy(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public final int getTableLength();
+}

@@ -1,0 +1,6 @@
+Compiled from "Attribute.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.Attribute extends com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.Attribute();
+  public void display(int);
+  public void parseContents(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+}

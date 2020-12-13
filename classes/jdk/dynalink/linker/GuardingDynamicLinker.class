@@ -1,0 +1,4 @@
+Compiled from "GuardingDynamicLinker.java"
+public interface jdk.dynalink.linker.GuardingDynamicLinker {
+  public abstract jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
+}

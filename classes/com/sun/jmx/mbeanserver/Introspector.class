@@ -1,0 +1,20 @@
+Compiled from "Introspector.java"
+public class com.sun.jmx.mbeanserver.Introspector {
+  public static final boolean ALLOW_NONPUBLIC_MBEAN;
+  public static final boolean isDynamic(java.lang.Class<?>);
+  public static void testCreation(java.lang.Class<?>) throws javax.management.NotCompliantMBeanException;
+  public static void checkCompliance(java.lang.Class<?>) throws javax.management.NotCompliantMBeanException;
+  public static <T> javax.management.DynamicMBean makeDynamicMBean(T) throws javax.management.NotCompliantMBeanException;
+  public static javax.management.MBeanInfo testCompliance(java.lang.Class<?>) throws javax.management.NotCompliantMBeanException;
+  public static void testComplianceMXBeanInterface(java.lang.Class<?>) throws javax.management.NotCompliantMBeanException;
+  public static void testComplianceMBeanInterface(java.lang.Class<?>) throws javax.management.NotCompliantMBeanException;
+  public static synchronized javax.management.MBeanInfo testCompliance(java.lang.Class<?>, java.lang.Class<?>) throws javax.management.NotCompliantMBeanException;
+  public static java.lang.Class<?> getMBeanInterface(java.lang.Class<?>);
+  public static <T> java.lang.Class<? super T> getStandardMBeanInterface(java.lang.Class<T>) throws javax.management.NotCompliantMBeanException;
+  public static <T> java.lang.Class<? super T> getMXBeanInterface(java.lang.Class<T>) throws javax.management.NotCompliantMBeanException;
+  public static javax.management.Descriptor descriptorForElement(java.lang.reflect.AnnotatedElement);
+  public static javax.management.Descriptor descriptorForAnnotations(java.lang.annotation.Annotation[]);
+  static javax.management.NotCompliantMBeanException throwException(java.lang.Class<?>, java.lang.Throwable) throws javax.management.NotCompliantMBeanException, java.lang.SecurityException;
+  public static java.lang.Object elementFromComplex(java.lang.Object, java.lang.String) throws javax.management.AttributeNotFoundException;
+  static {};
+}

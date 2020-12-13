@@ -1,0 +1,6 @@
+Compiled from "MLetObjectInputStream.java"
+class javax.management.loading.MLetObjectInputStream extends java.io.ObjectInputStream {
+  public javax.management.loading.MLetObjectInputStream(java.io.InputStream, javax.management.loading.MLet) throws java.io.IOException, java.io.StreamCorruptedException;
+  protected java.lang.Class<?> resolveClass(java.io.ObjectStreamClass) throws java.io.IOException, java.lang.ClassNotFoundException;
+  public java.lang.ClassLoader getClassLoader();
+}

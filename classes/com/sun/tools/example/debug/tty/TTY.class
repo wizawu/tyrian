@@ -1,0 +1,33 @@
+Compiled from "TTY.java"
+public class com.sun.tools.example.debug.tty.TTY implements com.sun.tools.example.debug.tty.EventNotifier {
+  com.sun.tools.example.debug.tty.EventHandler handler;
+  public void setShuttingDown(boolean);
+  public boolean isShuttingDown();
+  public void vmStartEvent(com.sun.jdi.event.VMStartEvent);
+  public void vmDeathEvent(com.sun.jdi.event.VMDeathEvent);
+  public void vmDisconnectEvent(com.sun.jdi.event.VMDisconnectEvent);
+  public void threadStartEvent(com.sun.jdi.event.ThreadStartEvent);
+  public void threadDeathEvent(com.sun.jdi.event.ThreadDeathEvent);
+  public void classPrepareEvent(com.sun.jdi.event.ClassPrepareEvent);
+  public void classUnloadEvent(com.sun.jdi.event.ClassUnloadEvent);
+  public void breakpointEvent(com.sun.jdi.event.BreakpointEvent);
+  public void fieldWatchEvent(com.sun.jdi.event.WatchpointEvent);
+  public void stepEvent(com.sun.jdi.event.StepEvent);
+  public void exceptionEvent(com.sun.jdi.event.ExceptionEvent);
+  public void methodEntryEvent(com.sun.jdi.event.MethodEntryEvent);
+  public boolean methodExitEvent(com.sun.jdi.event.MethodExitEvent);
+  public void vmInterrupted();
+  public void receivedEvent(com.sun.jdi.event.Event);
+  void help();
+  void executeCommand(java.util.StringTokenizer);
+  void monitorCommand(java.util.StringTokenizer);
+  void unmonitorCommand(java.util.StringTokenizer);
+  void readCommand(java.util.StringTokenizer);
+  boolean readCommandFile(java.io.File);
+  java.lang.String readStartupCommandFile(java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.tools.example.debug.tty.TTY() throws java.lang.Exception;
+  static void usageError(java.lang.String);
+  static void usageError(java.lang.String, java.lang.String);
+  public static void main(java.lang.String[]) throws java.util.MissingResourceException;
+  static {};
+}

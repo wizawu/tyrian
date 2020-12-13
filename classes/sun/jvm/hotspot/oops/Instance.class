@@ -1,0 +1,9 @@
+Compiled from "Instance.java"
+public class sun.jvm.hotspot.oops.Instance extends sun.jvm.hotspot.oops.Oop {
+  sun.jvm.hotspot.oops.Instance(sun.jvm.hotspot.debugger.OopHandle, sun.jvm.hotspot.oops.ObjectHeap);
+  public static long getHeaderSize();
+  public boolean isInstance();
+  public void iterateFields(sun.jvm.hotspot.oops.OopVisitor, boolean);
+  public void printValueOn(java.io.PrintStream);
+  static {};
+}

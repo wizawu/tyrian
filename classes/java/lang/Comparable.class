@@ -1,0 +1,4 @@
+Compiled from "Comparable.java"
+public interface java.lang.Comparable<T> {
+  public abstract int compareTo(T);
+}

@@ -1,0 +1,7 @@
+Compiled from "Bytes.java"
+public class sun.jvm.hotspot.runtime.Bytes {
+  public sun.jvm.hotspot.runtime.Bytes(sun.jvm.hotspot.debugger.MachineDescription);
+  public short swapShort(short);
+  public int swapInt(int);
+  public long swapLong(long);
+}

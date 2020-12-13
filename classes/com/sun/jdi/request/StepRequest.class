@@ -1,0 +1,15 @@
+Compiled from "StepRequest.java"
+public interface com.sun.jdi.request.StepRequest extends com.sun.jdi.request.EventRequest {
+  public static final int STEP_INTO;
+  public static final int STEP_OVER;
+  public static final int STEP_OUT;
+  public static final int STEP_MIN;
+  public static final int STEP_LINE;
+  public abstract com.sun.jdi.ThreadReference thread();
+  public abstract int size();
+  public abstract int depth();
+  public abstract void addClassFilter(com.sun.jdi.ReferenceType);
+  public abstract void addClassFilter(java.lang.String);
+  public abstract void addClassExclusionFilter(java.lang.String);
+  public abstract void addInstanceFilter(com.sun.jdi.ObjectReference);
+}

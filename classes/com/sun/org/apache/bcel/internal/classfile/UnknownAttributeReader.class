@@ -1,0 +1,4 @@
+Compiled from "UnknownAttributeReader.java"
+public interface com.sun.org.apache.bcel.internal.classfile.UnknownAttributeReader {
+  public abstract com.sun.org.apache.bcel.internal.classfile.Attribute createAttribute(int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+}

@@ -1,0 +1,12 @@
+Compiled from "RandomCookie.java"
+final class sun.security.ssl.RandomCookie {
+  final byte[] randomBytes;
+  static final sun.security.ssl.RandomCookie hrrRandom;
+  sun.security.ssl.RandomCookie(java.security.SecureRandom);
+  sun.security.ssl.RandomCookie(sun.security.ssl.HandshakeContext);
+  sun.security.ssl.RandomCookie(java.nio.ByteBuffer) throws java.io.IOException;
+  public java.lang.String toString();
+  boolean isHelloRetryRequest();
+  boolean isVersionDowngrade(sun.security.ssl.HandshakeContext);
+  static {};
+}

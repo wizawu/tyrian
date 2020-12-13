@@ -1,0 +1,26 @@
+Compiled from "BasicPopupMenuUI.java"
+public class javax.swing.plaf.basic.BasicPopupMenuUI extends javax.swing.plaf.PopupMenuUI {
+  static final java.lang.StringBuilder MOUSE_GRABBER_KEY;
+  static final java.lang.StringBuilder MENU_KEYBOARD_HELPER_KEY;
+  protected javax.swing.JPopupMenu popupMenu;
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.plaf.basic.BasicPopupMenuUI();
+  public void installUI(javax.swing.JComponent);
+  public void installDefaults();
+  protected void installListeners();
+  protected void installKeyboardActions();
+  static javax.swing.InputMap getInputMap(javax.swing.JPopupMenu, javax.swing.JComponent);
+  static javax.swing.ActionMap getActionMap();
+  static void loadActionMap(javax.swing.plaf.basic.LazyActionMap);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void uninstallDefaults();
+  protected void uninstallListeners();
+  protected void uninstallKeyboardActions();
+  static javax.swing.MenuElement getFirstPopup();
+  static javax.swing.JPopupMenu getLastPopup();
+  static java.util.List<javax.swing.JPopupMenu> getPopups();
+  public boolean isPopupTrigger(java.awt.event.MouseEvent);
+  static javax.swing.MenuElement findEnabledChild(javax.swing.MenuElement[], int, boolean);
+  static javax.swing.MenuElement findEnabledChild(javax.swing.MenuElement[], javax.swing.MenuElement, boolean);
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "BinaryBitExpression.java"
+public abstract class sun.tools.tree.BinaryBitExpression extends sun.tools.tree.BinaryExpression {
+  public sun.tools.tree.BinaryBitExpression(int, long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  void selectType(sun.tools.java.Environment, sun.tools.tree.Context, int);
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+}

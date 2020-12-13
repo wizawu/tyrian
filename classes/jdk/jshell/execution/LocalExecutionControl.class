@@ -1,0 +1,9 @@
+Compiled from "LocalExecutionControl.java"
+public class jdk.jshell.execution.LocalExecutionControl extends jdk.jshell.execution.DirectExecutionControl {
+  public jdk.jshell.execution.LocalExecutionControl(jdk.jshell.execution.LoaderDelegate);
+  public jdk.jshell.execution.LocalExecutionControl();
+  protected java.lang.String invoke(java.lang.reflect.Method) throws java.lang.Exception;
+  public void stop() throws jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  protected void clientCodeEnter();
+  protected void clientCodeLeave();
+}

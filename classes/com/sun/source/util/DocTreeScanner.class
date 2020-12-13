@@ -1,0 +1,42 @@
+Compiled from "DocTreeScanner.java"
+public class com.sun.source.util.DocTreeScanner<R, P> implements com.sun.source.doctree.DocTreeVisitor<R, P> {
+  public com.sun.source.util.DocTreeScanner();
+  public R scan(com.sun.source.doctree.DocTree, P);
+  public R scan(java.lang.Iterable<? extends com.sun.source.doctree.DocTree>, P);
+  public R reduce(R, R);
+  public R visitAttribute(com.sun.source.doctree.AttributeTree, P);
+  public R visitAuthor(com.sun.source.doctree.AuthorTree, P);
+  public R visitComment(com.sun.source.doctree.CommentTree, P);
+  public R visitDeprecated(com.sun.source.doctree.DeprecatedTree, P);
+  public R visitDocComment(com.sun.source.doctree.DocCommentTree, P);
+  public R visitDocRoot(com.sun.source.doctree.DocRootTree, P);
+  public R visitDocType(com.sun.source.doctree.DocTypeTree, P);
+  public R visitEndElement(com.sun.source.doctree.EndElementTree, P);
+  public R visitEntity(com.sun.source.doctree.EntityTree, P);
+  public R visitErroneous(com.sun.source.doctree.ErroneousTree, P);
+  public R visitHidden(com.sun.source.doctree.HiddenTree, P);
+  public R visitIdentifier(com.sun.source.doctree.IdentifierTree, P);
+  public R visitIndex(com.sun.source.doctree.IndexTree, P);
+  public R visitInheritDoc(com.sun.source.doctree.InheritDocTree, P);
+  public R visitLink(com.sun.source.doctree.LinkTree, P);
+  public R visitLiteral(com.sun.source.doctree.LiteralTree, P);
+  public R visitParam(com.sun.source.doctree.ParamTree, P);
+  public R visitProvides(com.sun.source.doctree.ProvidesTree, P);
+  public R visitReference(com.sun.source.doctree.ReferenceTree, P);
+  public R visitReturn(com.sun.source.doctree.ReturnTree, P);
+  public R visitSee(com.sun.source.doctree.SeeTree, P);
+  public R visitSerial(com.sun.source.doctree.SerialTree, P);
+  public R visitSerialData(com.sun.source.doctree.SerialDataTree, P);
+  public R visitSerialField(com.sun.source.doctree.SerialFieldTree, P);
+  public R visitSince(com.sun.source.doctree.SinceTree, P);
+  public R visitStartElement(com.sun.source.doctree.StartElementTree, P);
+  public R visitSummary(com.sun.source.doctree.SummaryTree, P);
+  public R visitText(com.sun.source.doctree.TextTree, P);
+  public R visitThrows(com.sun.source.doctree.ThrowsTree, P);
+  public R visitUnknownBlockTag(com.sun.source.doctree.UnknownBlockTagTree, P);
+  public R visitUnknownInlineTag(com.sun.source.doctree.UnknownInlineTagTree, P);
+  public R visitUses(com.sun.source.doctree.UsesTree, P);
+  public R visitValue(com.sun.source.doctree.ValueTree, P);
+  public R visitVersion(com.sun.source.doctree.VersionTree, P);
+  public R visitOther(com.sun.source.doctree.DocTree, P);
+}

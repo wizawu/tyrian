@@ -1,0 +1,20 @@
+Compiled from "FileCCacheConstants.java"
+public interface sun.security.krb5.internal.ccache.FileCCacheConstants {
+  public static final int KRB5_FCC_FVNO_1;
+  public static final int KRB5_FCC_FVNO_2;
+  public static final int KRB5_FCC_FVNO_3;
+  public static final int KRB5_FCC_FVNO_4;
+  public static final int FCC_TAG_DELTATIME;
+  public static final int KRB5_NT_UNKNOWN;
+  public static final int TKT_FLG_FORWARDABLE;
+  public static final int TKT_FLG_FORWARDED;
+  public static final int TKT_FLG_PROXIABLE;
+  public static final int TKT_FLG_PROXY;
+  public static final int TKT_FLG_MAY_POSTDATE;
+  public static final int TKT_FLG_POSTDATED;
+  public static final int TKT_FLG_INVALID;
+  public static final int TKT_FLG_RENEWABLE;
+  public static final int TKT_FLG_INITIAL;
+  public static final int TKT_FLG_PRE_AUTH;
+  public static final int TKT_FLG_HW_AUTH;
+}

@@ -1,0 +1,13 @@
+Compiled from "URLImageSource.java"
+public class sun.awt.image.URLImageSource extends sun.awt.image.InputStreamImageSource {
+  java.net.URL url;
+  java.net.URLConnection conn;
+  java.lang.String actualHost;
+  int actualPort;
+  public sun.awt.image.URLImageSource(java.net.URL);
+  public sun.awt.image.URLImageSource(java.lang.String) throws java.net.MalformedURLException;
+  public sun.awt.image.URLImageSource(java.net.URL, java.net.URLConnection);
+  public sun.awt.image.URLImageSource(java.net.URLConnection);
+  final boolean checkSecurity(java.lang.Object, boolean);
+  protected sun.awt.image.ImageDecoder getDecoder();
+}

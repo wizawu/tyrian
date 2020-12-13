@@ -1,0 +1,8 @@
+Compiled from "NumberFormatProvider.java"
+public abstract class java.text.spi.NumberFormatProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.text.spi.NumberFormatProvider();
+  public abstract java.text.NumberFormat getCurrencyInstance(java.util.Locale);
+  public abstract java.text.NumberFormat getIntegerInstance(java.util.Locale);
+  public abstract java.text.NumberFormat getNumberInstance(java.util.Locale);
+  public abstract java.text.NumberFormat getPercentInstance(java.util.Locale);
+}

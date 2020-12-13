@@ -1,0 +1,5 @@
+Compiled from "FinalizerHistogram.java"
+final class java.lang.ref.FinalizerHistogram {
+  java.lang.ref.FinalizerHistogram();
+  static java.lang.ref.FinalizerHistogram$Entry[] getFinalizerHistogram();
+}

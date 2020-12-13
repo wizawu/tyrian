@@ -1,0 +1,18 @@
+Compiled from "ClassTypeImpl.java"
+public final class com.sun.tools.jdi.ClassTypeImpl extends com.sun.tools.jdi.InvokableTypeImpl implements com.sun.jdi.ClassType {
+  protected com.sun.tools.jdi.ClassTypeImpl(com.sun.jdi.VirtualMachine, long);
+  public com.sun.jdi.ClassType superclass();
+  public java.util.List<com.sun.jdi.InterfaceType> interfaces();
+  public java.util.List<com.sun.jdi.InterfaceType> allInterfaces();
+  public java.util.List<com.sun.jdi.ClassType> subclasses();
+  public boolean isEnum();
+  public void setValue(com.sun.jdi.Field, com.sun.jdi.Value) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  com.sun.tools.jdi.PacketStream sendNewInstanceCommand(com.sun.tools.jdi.ThreadReferenceImpl, com.sun.tools.jdi.MethodImpl, com.sun.tools.jdi.ValueImpl[], int);
+  public com.sun.jdi.ObjectReference newInstance(com.sun.jdi.ThreadReference, com.sun.jdi.Method, java.util.List<? extends com.sun.jdi.Value>, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException, com.sun.jdi.IncompatibleThreadStateException, com.sun.jdi.InvocationException;
+  public com.sun.jdi.Method concreteMethodByName(java.lang.String, java.lang.String);
+  void validateConstructorInvocation(com.sun.jdi.Method) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.InvocationException;
+  public java.lang.String toString();
+  com.sun.tools.jdi.CommandSender getInvokeMethodSender(com.sun.tools.jdi.ThreadReferenceImpl, com.sun.tools.jdi.MethodImpl, com.sun.tools.jdi.ValueImpl[], int);
+  com.sun.tools.jdi.InvokableTypeImpl$InvocationResult waitForReply(com.sun.tools.jdi.PacketStream) throws com.sun.tools.jdi.JDWPException;
+  boolean canInvoke(com.sun.jdi.Method);
+}

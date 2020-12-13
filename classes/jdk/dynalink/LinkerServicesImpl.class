@@ -1,0 +1,13 @@
+Compiled from "LinkerServicesImpl.java"
+final class jdk.dynalink.LinkerServicesImpl implements jdk.dynalink.linker.LinkerServices {
+  jdk.dynalink.LinkerServicesImpl(jdk.dynalink.TypeConverterFactory, jdk.dynalink.linker.GuardingDynamicLinker, jdk.dynalink.linker.MethodHandleTransformer);
+  public boolean canConvert(java.lang.Class<?>, java.lang.Class<?>);
+  public java.lang.invoke.MethodHandle asType(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType);
+  public java.lang.invoke.MethodHandle getTypeConverter(java.lang.Class<?>, java.lang.Class<?>);
+  public jdk.dynalink.linker.ConversionComparator$Comparison compareConversion(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>);
+  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest) throws java.lang.Exception;
+  public java.lang.invoke.MethodHandle filterInternalObjects(java.lang.invoke.MethodHandle);
+  public <T> T getWithLookup(java.util.function.Supplier<T>, jdk.dynalink.SecureLookupSupplier);
+  static java.lang.invoke.MethodHandles$Lookup getCurrentLookup();
+  static {};
+}

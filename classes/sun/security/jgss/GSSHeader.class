@@ -1,0 +1,11 @@
+Compiled from "GSSHeader.java"
+public class sun.security.jgss.GSSHeader {
+  public static final int TOKEN_ID;
+  public sun.security.jgss.GSSHeader(sun.security.util.ObjectIdentifier, int) throws java.io.IOException;
+  public sun.security.jgss.GSSHeader(java.io.InputStream) throws java.io.IOException, org.ietf.jgss.GSSException;
+  public sun.security.util.ObjectIdentifier getOid();
+  public int getMechTokenLength();
+  public int getLength();
+  public static int getMaxMechTokenSize(sun.security.util.ObjectIdentifier, int);
+  public int encode(java.io.OutputStream) throws java.io.IOException;
+}

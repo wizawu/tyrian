@@ -1,0 +1,4 @@
+Compiled from "IdPattern.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.IdPattern extends com.sun.org.apache.xalan.internal.xsltc.compiler.IdKeyPattern {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.IdPattern(java.lang.String);
+}

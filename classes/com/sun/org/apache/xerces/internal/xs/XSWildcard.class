@@ -1,0 +1,14 @@
+Compiled from "XSWildcard.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSWildcard extends com.sun.org.apache.xerces.internal.xs.XSTerm {
+  public static final short NSCONSTRAINT_ANY;
+  public static final short NSCONSTRAINT_NOT;
+  public static final short NSCONSTRAINT_LIST;
+  public static final short PC_STRICT;
+  public static final short PC_SKIP;
+  public static final short PC_LAX;
+  public abstract short getConstraintType();
+  public abstract com.sun.org.apache.xerces.internal.xs.StringList getNsConstraintList();
+  public abstract short getProcessContents();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSAnnotation getAnnotation();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+}

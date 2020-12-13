@@ -1,0 +1,8 @@
+Compiled from "AgentInitializationException.java"
+public class com.sun.tools.attach.AgentInitializationException extends java.lang.Exception {
+  static final long serialVersionUID;
+  public com.sun.tools.attach.AgentInitializationException();
+  public com.sun.tools.attach.AgentInitializationException(java.lang.String);
+  public com.sun.tools.attach.AgentInitializationException(java.lang.String, int);
+  public int returnValue();
+}

@@ -1,0 +1,6 @@
+Compiled from "ExtendedKeyCodes.java"
+public class sun.awt.ExtendedKeyCodes {
+  public sun.awt.ExtendedKeyCodes();
+  public static final int getExtendedKeyCodeForChar(int);
+  static {};
+}

@@ -1,0 +1,21 @@
+Compiled from "REUtil.java"
+public final class com.sun.org.apache.xerces.internal.impl.xpath.regex.REUtil {
+  static final int CACHESIZE;
+  static final com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression[] regexCache;
+  static final int composeFromSurrogates(int, int);
+  static final boolean isLowSurrogate(int);
+  static final boolean isHighSurrogate(int);
+  static final java.lang.String decomposeToSurrogates(int);
+  static final java.lang.String substring(java.text.CharacterIterator, int, int);
+  static final int getOptionValue(int);
+  static final int parseOptions(java.lang.String) throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  static final java.lang.String createOptionString(int);
+  static java.lang.String stripExtendedComment(java.lang.String);
+  public static void main(java.lang.String[]);
+  public static com.sun.org.apache.xerces.internal.impl.xpath.regex.RegularExpression createRegex(java.lang.String, java.lang.String) throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  public static boolean matches(java.lang.String, java.lang.String) throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  public static boolean matches(java.lang.String, java.lang.String, java.lang.String) throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  public static java.lang.String quoteMeta(java.lang.String);
+  static void dumpString(java.lang.String);
+  static {};
+}

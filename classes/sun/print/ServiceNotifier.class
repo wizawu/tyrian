@@ -1,0 +1,10 @@
+Compiled from "ServiceNotifier.java"
+class sun.print.ServiceNotifier extends java.lang.Thread {
+  sun.print.ServiceNotifier(javax.print.PrintService);
+  void addListener(javax.print.event.PrintServiceAttributeListener);
+  void removeListener(javax.print.event.PrintServiceAttributeListener);
+  boolean isEmpty();
+  void stopNotifier();
+  void wake();
+  public void run();
+}

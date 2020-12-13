@@ -1,0 +1,7 @@
+Compiled from "TabbedPaneUI.java"
+public abstract class javax.swing.plaf.TabbedPaneUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.TabbedPaneUI();
+  public abstract int tabForCoordinate(javax.swing.JTabbedPane, int, int);
+  public abstract java.awt.Rectangle getTabBounds(javax.swing.JTabbedPane, int);
+  public abstract int getTabRunCount(javax.swing.JTabbedPane);
+}

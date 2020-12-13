@@ -1,0 +1,6 @@
+Compiled from "UserPrincipalNotFoundException.java"
+public class java.nio.file.attribute.UserPrincipalNotFoundException extends java.io.IOException {
+  static final long serialVersionUID;
+  public java.nio.file.attribute.UserPrincipalNotFoundException(java.lang.String);
+  public java.lang.String getName();
+}

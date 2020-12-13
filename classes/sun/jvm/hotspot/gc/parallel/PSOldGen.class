@@ -1,0 +1,10 @@
+Compiled from "PSOldGen.java"
+public class sun.jvm.hotspot.gc.parallel.PSOldGen extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.gc.parallel.PSOldGen(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.gc.parallel.MutableSpace objectSpace();
+  public long capacity();
+  public long used();
+  public boolean isIn(sun.jvm.hotspot.debugger.Address);
+  public void printOn(java.io.PrintStream);
+  static {};
+}

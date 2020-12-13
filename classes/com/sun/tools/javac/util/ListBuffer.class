@@ -1,0 +1,32 @@
+Compiled from "ListBuffer.java"
+public class com.sun.tools.javac.util.ListBuffer<A> extends java.util.AbstractQueue<A> {
+  public static <T> com.sun.tools.javac.util.ListBuffer<T> of(T);
+  public com.sun.tools.javac.util.ListBuffer();
+  public final void clear();
+  public int length();
+  public int size();
+  public boolean isEmpty();
+  public boolean nonEmpty();
+  public com.sun.tools.javac.util.ListBuffer<A> prepend(A);
+  public com.sun.tools.javac.util.ListBuffer<A> append(A);
+  public com.sun.tools.javac.util.ListBuffer<A> appendList(com.sun.tools.javac.util.List<A>);
+  public com.sun.tools.javac.util.ListBuffer<A> appendList(com.sun.tools.javac.util.ListBuffer<A>);
+  public com.sun.tools.javac.util.ListBuffer<A> appendArray(A[]);
+  public com.sun.tools.javac.util.List<A> toList();
+  public boolean contains(java.lang.Object);
+  public <T> T[] toArray(T[]);
+  public java.lang.Object[] toArray();
+  public A first();
+  public A next();
+  public java.util.Iterator<A> iterator();
+  public boolean add(A);
+  public boolean remove(java.lang.Object);
+  public boolean containsAll(java.util.Collection<?>);
+  public boolean addAll(java.util.Collection<? extends A>);
+  public boolean removeAll(java.util.Collection<?>);
+  public boolean retainAll(java.util.Collection<?>);
+  public boolean offer(A);
+  public A poll();
+  public A peek();
+  public A last();
+}

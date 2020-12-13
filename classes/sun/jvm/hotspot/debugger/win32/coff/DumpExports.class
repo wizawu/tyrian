@@ -1,0 +1,5 @@
+Compiled from "DumpExports.java"
+public class sun.jvm.hotspot.debugger.win32.coff.DumpExports {
+  public sun.jvm.hotspot.debugger.win32.coff.DumpExports();
+  public static void main(java.lang.String[]);
+}

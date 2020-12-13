@@ -1,0 +1,5 @@
+Compiled from "SSLPermission.java"
+public final class com.sun.net.ssl.SSLPermission extends java.security.BasicPermission {
+  public com.sun.net.ssl.SSLPermission(java.lang.String);
+  public com.sun.net.ssl.SSLPermission(java.lang.String, java.lang.String);
+}

@@ -1,0 +1,12 @@
+Compiled from "MapTuple.java"
+class jdk.nashorn.internal.codegen.MapTuple<T> {
+  final java.lang.String key;
+  final jdk.nashorn.internal.ir.Symbol symbol;
+  final jdk.nashorn.internal.codegen.types.Type type;
+  final T value;
+  jdk.nashorn.internal.codegen.MapTuple(java.lang.String, jdk.nashorn.internal.ir.Symbol, jdk.nashorn.internal.codegen.types.Type);
+  jdk.nashorn.internal.codegen.MapTuple(java.lang.String, jdk.nashorn.internal.ir.Symbol, jdk.nashorn.internal.codegen.types.Type, T);
+  public java.lang.Class<?> getValueType();
+  boolean isPrimitive();
+  public java.lang.String toString();
+}

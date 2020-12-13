@@ -1,0 +1,6 @@
+Compiled from "KeyValue.java"
+public interface javax.xml.crypto.dsig.keyinfo.KeyValue extends javax.xml.crypto.XMLStructure {
+  public static final java.lang.String DSA_TYPE;
+  public static final java.lang.String RSA_TYPE;
+  public abstract java.security.PublicKey getPublicKey() throws java.security.KeyException;
+}

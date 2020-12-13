@@ -1,0 +1,7 @@
+Compiled from "MetalComboBoxIcon.java"
+public class javax.swing.plaf.metal.MetalComboBoxIcon implements javax.swing.Icon,java.io.Serializable {
+  public javax.swing.plaf.metal.MetalComboBoxIcon();
+  public void paintIcon(java.awt.Component, java.awt.Graphics, int, int);
+  public int getIconWidth();
+  public int getIconHeight();
+}

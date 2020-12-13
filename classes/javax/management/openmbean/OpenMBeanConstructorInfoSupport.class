@@ -1,0 +1,9 @@
+Compiled from "OpenMBeanConstructorInfoSupport.java"
+public class javax.management.openmbean.OpenMBeanConstructorInfoSupport extends javax.management.MBeanConstructorInfo implements javax.management.openmbean.OpenMBeanConstructorInfo {
+  static final long serialVersionUID;
+  public javax.management.openmbean.OpenMBeanConstructorInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenMBeanParameterInfo[]);
+  public javax.management.openmbean.OpenMBeanConstructorInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenMBeanParameterInfo[], javax.management.Descriptor);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

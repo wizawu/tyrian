@@ -1,0 +1,4 @@
+Compiled from "IntersectionType.java"
+public interface javax.lang.model.type.IntersectionType extends javax.lang.model.type.TypeMirror {
+  public abstract java.util.List<? extends javax.lang.model.type.TypeMirror> getBounds();
+}

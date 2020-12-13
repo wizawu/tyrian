@@ -1,0 +1,6 @@
+Compiled from "DTMDefaultBaseTraversers.java"
+public abstract class com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseTraversers extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBase {
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseTraversers(com.sun.org.apache.xml.internal.dtm.DTMManager, javax.xml.transform.Source, int, com.sun.org.apache.xml.internal.dtm.DTMWSFilter, com.sun.org.apache.xml.internal.utils.XMLStringFactory, boolean);
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseTraversers(com.sun.org.apache.xml.internal.dtm.DTMManager, javax.xml.transform.Source, int, com.sun.org.apache.xml.internal.dtm.DTMWSFilter, com.sun.org.apache.xml.internal.utils.XMLStringFactory, boolean, int, boolean, boolean);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisTraverser getAxisTraverser(int);
+}

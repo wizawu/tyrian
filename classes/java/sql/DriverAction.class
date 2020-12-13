@@ -1,0 +1,4 @@
+Compiled from "DriverAction.java"
+public interface java.sql.DriverAction {
+  public abstract void deregister();
+}

@@ -1,0 +1,6 @@
+Compiled from "CodingMethod.java"
+interface com.sun.java.util.jar.pack.CodingMethod {
+  public abstract void readArrayFrom(java.io.InputStream, int[], int, int) throws java.io.IOException;
+  public abstract void writeArrayTo(java.io.OutputStream, int[], int, int) throws java.io.IOException;
+  public abstract byte[] getMetaCoding(com.sun.java.util.jar.pack.Coding);
+}

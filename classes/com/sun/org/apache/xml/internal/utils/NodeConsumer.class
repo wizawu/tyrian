@@ -1,0 +1,4 @@
+Compiled from "NodeConsumer.java"
+public interface com.sun.org.apache.xml.internal.utils.NodeConsumer {
+  public abstract void setOriginatingNode(org.w3c.dom.Node);
+}

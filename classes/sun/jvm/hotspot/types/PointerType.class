@@ -1,0 +1,4 @@
+Compiled from "PointerType.java"
+public interface sun.jvm.hotspot.types.PointerType extends sun.jvm.hotspot.types.Type {
+  public abstract sun.jvm.hotspot.types.Type getTargetType();
+}

@@ -1,0 +1,6 @@
+Compiled from "IRendererContext.java"
+interface sun.java2d.marlin.IRendererContext extends sun.java2d.marlin.MarlinConst {
+  public abstract sun.java2d.marlin.RendererStats stats();
+  public abstract sun.java2d.marlin.OffHeapArray newOffHeapArray(long);
+  public abstract sun.java2d.marlin.IntArrayCache$Reference newCleanIntArrayRef(int);
+}

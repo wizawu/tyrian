@@ -1,0 +1,13 @@
+Compiled from "ZAddress.java"
+class sun.jvm.hotspot.gc.z.ZAddress {
+  sun.jvm.hotspot.gc.z.ZAddress();
+  static long as_long(sun.jvm.hotspot.debugger.Address);
+  static boolean is_null(sun.jvm.hotspot.debugger.Address);
+  static boolean is_weak_bad(sun.jvm.hotspot.debugger.Address);
+  static boolean is_weak_good(sun.jvm.hotspot.debugger.Address);
+  static boolean is_weak_good_or_null(sun.jvm.hotspot.debugger.Address);
+  static long offset(sun.jvm.hotspot.debugger.Address);
+  static sun.jvm.hotspot.debugger.Address address(long);
+  static sun.jvm.hotspot.debugger.Address good(sun.jvm.hotspot.debugger.Address);
+  static sun.jvm.hotspot.debugger.Address good_or_null(sun.jvm.hotspot.debugger.Address);
+}

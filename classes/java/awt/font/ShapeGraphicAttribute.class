@@ -1,0 +1,15 @@
+Compiled from "ShapeGraphicAttribute.java"
+public final class java.awt.font.ShapeGraphicAttribute extends java.awt.font.GraphicAttribute {
+  public static final boolean STROKE;
+  public static final boolean FILL;
+  public java.awt.font.ShapeGraphicAttribute(java.awt.Shape, int, boolean);
+  public float getAscent();
+  public float getDescent();
+  public float getAdvance();
+  public void draw(java.awt.Graphics2D, float, float);
+  public java.awt.geom.Rectangle2D getBounds();
+  public java.awt.Shape getOutline(java.awt.geom.AffineTransform);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public boolean equals(java.awt.font.ShapeGraphicAttribute);
+}

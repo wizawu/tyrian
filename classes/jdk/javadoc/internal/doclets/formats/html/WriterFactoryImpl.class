@@ -1,0 +1,26 @@
+Compiled from "WriterFactoryImpl.java"
+public class jdk.javadoc.internal.doclets.formats.html.WriterFactoryImpl implements jdk.javadoc.internal.doclets.toolkit.WriterFactory {
+  public jdk.javadoc.internal.doclets.formats.html.WriterFactoryImpl(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration);
+  public jdk.javadoc.internal.doclets.toolkit.ConstantsSummaryWriter getConstantsSummaryWriter();
+  public jdk.javadoc.internal.doclets.toolkit.PackageSummaryWriter getPackageSummaryWriter(javax.lang.model.element.PackageElement);
+  public jdk.javadoc.internal.doclets.toolkit.ModuleSummaryWriter getModuleSummaryWriter(javax.lang.model.element.ModuleElement);
+  public jdk.javadoc.internal.doclets.toolkit.ClassWriter getClassWriter(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.util.ClassTree);
+  public jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter getAnnotationTypeWriter(javax.lang.model.element.TypeElement);
+  public jdk.javadoc.internal.doclets.toolkit.AnnotationTypeFieldWriter getAnnotationTypeFieldWriter(jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter);
+  public jdk.javadoc.internal.doclets.toolkit.AnnotationTypeOptionalMemberWriter getAnnotationTypeOptionalMemberWriter(jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter);
+  public jdk.javadoc.internal.doclets.toolkit.AnnotationTypeRequiredMemberWriter getAnnotationTypeRequiredMemberWriter(jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter);
+  public jdk.javadoc.internal.doclets.formats.html.EnumConstantWriterImpl getEnumConstantWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.formats.html.FieldWriterImpl getFieldWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.formats.html.PropertyWriterImpl getPropertyWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.formats.html.MethodWriterImpl getMethodWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.formats.html.ConstructorWriterImpl getConstructorWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.MemberSummaryWriter getMemberSummaryWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter, jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable$Kind);
+  public jdk.javadoc.internal.doclets.toolkit.MemberSummaryWriter getMemberSummaryWriter(jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter, jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable$Kind);
+  public jdk.javadoc.internal.doclets.toolkit.SerializedFormWriter getSerializedFormWriter();
+  public jdk.javadoc.internal.doclets.toolkit.DocFilesHandler getDocFilesHandler(javax.lang.model.element.Element);
+  public jdk.javadoc.internal.doclets.toolkit.ConstructorWriter getConstructorWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.PropertyWriter getPropertyWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.FieldWriter getFieldWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.EnumConstantWriter getEnumConstantWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.MethodWriter getMethodWriter(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+}

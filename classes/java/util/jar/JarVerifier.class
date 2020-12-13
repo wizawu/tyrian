@@ -1,0 +1,27 @@
+Compiled from "JarVerifier.java"
+class java.util.jar.JarVerifier {
+  static final sun.security.util.Debug debug;
+  byte[] manifestRawBytes;
+  boolean eagerValidation;
+  public java.util.jar.JarVerifier(byte[]);
+  public void beginEntry(java.util.jar.JarEntry, sun.security.util.ManifestEntryVerifier) throws java.io.IOException;
+  public void update(int, sun.security.util.ManifestEntryVerifier) throws java.io.IOException;
+  public void update(int, byte[], int, int, sun.security.util.ManifestEntryVerifier) throws java.io.IOException;
+  public java.security.cert.Certificate[] getCerts(java.lang.String);
+  public java.security.cert.Certificate[] getCerts(java.util.jar.JarFile, java.util.jar.JarEntry);
+  public java.security.CodeSigner[] getCodeSigners(java.lang.String);
+  public java.security.CodeSigner[] getCodeSigners(java.util.jar.JarFile, java.util.jar.JarEntry);
+  boolean nothingToVerify();
+  void doneWithMeta();
+  public synchronized java.util.Enumeration<java.lang.String> entryNames(java.util.jar.JarFile, java.security.CodeSource[]);
+  public java.util.Enumeration<java.util.jar.JarEntry> entries2(java.util.jar.JarFile, java.util.Enumeration<java.util.jar.JarEntry>);
+  static boolean isSigningRelated(java.lang.String);
+  public synchronized java.security.CodeSource[] getCodeSources(java.util.jar.JarFile, java.net.URL);
+  public java.security.CodeSource getCodeSource(java.net.URL, java.lang.String);
+  public java.security.CodeSource getCodeSource(java.net.URL, java.util.jar.JarFile, java.util.jar.JarEntry);
+  public void setEagerValidation(boolean);
+  public synchronized java.util.List<java.lang.Object> getManifestDigests();
+  static java.security.CodeSource getUnsignedCS(java.net.URL);
+  boolean isTrustedManifestEntry(java.lang.String);
+  static {};
+}

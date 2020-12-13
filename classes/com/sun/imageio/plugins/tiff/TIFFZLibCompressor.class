@@ -1,0 +1,4 @@
+Compiled from "TIFFZLibCompressor.java"
+public class com.sun.imageio.plugins.tiff.TIFFZLibCompressor extends com.sun.imageio.plugins.tiff.TIFFDeflater {
+  public com.sun.imageio.plugins.tiff.TIFFZLibCompressor(javax.imageio.ImageWriteParam, int);
+}

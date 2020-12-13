@@ -1,0 +1,4 @@
+Compiled from "ExceptionListener.java"
+public interface java.beans.ExceptionListener {
+  public abstract void exceptionThrown(java.lang.Exception);
+}

@@ -1,0 +1,4 @@
+Compiled from "TimerAlarmClockNotification.java"
+class javax.management.timer.TimerAlarmClockNotification extends javax.management.Notification {
+  public javax.management.timer.TimerAlarmClockNotification(javax.management.timer.TimerAlarmClock);
+}

@@ -1,0 +1,4 @@
+Compiled from "Composite.java"
+public interface java.awt.Composite {
+  public abstract java.awt.CompositeContext createContext(java.awt.image.ColorModel, java.awt.image.ColorModel, java.awt.RenderingHints);
+}

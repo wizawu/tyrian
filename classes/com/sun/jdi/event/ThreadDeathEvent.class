@@ -1,0 +1,4 @@
+Compiled from "ThreadDeathEvent.java"
+public interface com.sun.jdi.event.ThreadDeathEvent extends com.sun.jdi.event.Event {
+  public abstract com.sun.jdi.ThreadReference thread();
+}

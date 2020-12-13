@@ -1,0 +1,5 @@
+Compiled from "ConnectionsRef.java"
+final class com.sun.jndi.ldap.pool.ConnectionsRef {
+  com.sun.jndi.ldap.pool.ConnectionsRef(com.sun.jndi.ldap.pool.Connections);
+  com.sun.jndi.ldap.pool.Connections getConnections();
+}

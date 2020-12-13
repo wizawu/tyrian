@@ -1,0 +1,34 @@
+Compiled from "ForNode.java"
+public final class jdk.nashorn.internal.ir.ForNode extends jdk.nashorn.internal.ir.LoopNode {
+  public static final int IS_FOR_IN;
+  public static final int IS_FOR_EACH;
+  public static final int IS_FOR_OF;
+  public static final int PER_ITERATION_SCOPE;
+  public jdk.nashorn.internal.ir.ForNode(int, long, int, jdk.nashorn.internal.ir.Block, int);
+  public jdk.nashorn.internal.ir.ForNode(int, long, int, jdk.nashorn.internal.ir.Block, int, jdk.nashorn.internal.ir.Expression, jdk.nashorn.internal.ir.JoinPredecessorExpression, jdk.nashorn.internal.ir.JoinPredecessorExpression);
+  public jdk.nashorn.internal.ir.Node ensureUniqueLabels(jdk.nashorn.internal.ir.LexicalContext);
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public void toString(java.lang.StringBuilder, boolean);
+  public boolean hasGoto();
+  public boolean mustEnter();
+  public jdk.nashorn.internal.ir.Expression getInit();
+  public jdk.nashorn.internal.ir.ForNode setInit(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.Expression);
+  public boolean isForIn();
+  public boolean isForOf();
+  public boolean isForInOrOf();
+  public boolean isForEach();
+  public jdk.nashorn.internal.ir.Symbol getIterator();
+  public jdk.nashorn.internal.ir.ForNode setIterator(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.Symbol);
+  public jdk.nashorn.internal.ir.JoinPredecessorExpression getModify();
+  public jdk.nashorn.internal.ir.ForNode setModify(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.JoinPredecessorExpression);
+  public jdk.nashorn.internal.ir.ForNode setTest(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.JoinPredecessorExpression);
+  public jdk.nashorn.internal.ir.Block getBody();
+  public jdk.nashorn.internal.ir.ForNode setBody(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.Block);
+  public jdk.nashorn.internal.ir.ForNode setControlFlowEscapes(jdk.nashorn.internal.ir.LexicalContext, boolean);
+  jdk.nashorn.internal.ir.JoinPredecessor setLocalVariableConversionChanged(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.LocalVariableConversion);
+  public boolean hasPerIterationScope();
+  public boolean needsScopeCreator();
+  public jdk.nashorn.internal.ir.LoopNode setControlFlowEscapes(jdk.nashorn.internal.ir.LexicalContext, boolean);
+  public jdk.nashorn.internal.ir.LoopNode setTest(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.JoinPredecessorExpression);
+  public jdk.nashorn.internal.ir.LoopNode setBody(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.Block);
+}

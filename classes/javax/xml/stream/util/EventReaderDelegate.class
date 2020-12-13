@@ -1,0 +1,16 @@
+Compiled from "EventReaderDelegate.java"
+public class javax.xml.stream.util.EventReaderDelegate implements javax.xml.stream.XMLEventReader {
+  public javax.xml.stream.util.EventReaderDelegate();
+  public javax.xml.stream.util.EventReaderDelegate(javax.xml.stream.XMLEventReader);
+  public void setParent(javax.xml.stream.XMLEventReader);
+  public javax.xml.stream.XMLEventReader getParent();
+  public javax.xml.stream.events.XMLEvent nextEvent() throws javax.xml.stream.XMLStreamException;
+  public java.lang.Object next();
+  public boolean hasNext();
+  public javax.xml.stream.events.XMLEvent peek() throws javax.xml.stream.XMLStreamException;
+  public void close() throws javax.xml.stream.XMLStreamException;
+  public java.lang.String getElementText() throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.events.XMLEvent nextTag() throws javax.xml.stream.XMLStreamException;
+  public java.lang.Object getProperty(java.lang.String) throws java.lang.IllegalArgumentException;
+  public void remove();
+}

@@ -1,0 +1,10 @@
+Compiled from "Proxy.java"
+public class java.lang.reflect.Proxy implements java.io.Serializable {
+  protected java.lang.reflect.InvocationHandler h;
+  protected java.lang.reflect.Proxy(java.lang.reflect.InvocationHandler);
+  public static java.lang.Class<?> getProxyClass(java.lang.ClassLoader, java.lang.Class<?>...) throws java.lang.IllegalArgumentException;
+  public static java.lang.Object newProxyInstance(java.lang.ClassLoader, java.lang.Class<?>[], java.lang.reflect.InvocationHandler);
+  public static boolean isProxyClass(java.lang.Class<?>);
+  public static java.lang.reflect.InvocationHandler getInvocationHandler(java.lang.Object) throws java.lang.IllegalArgumentException;
+  static {};
+}

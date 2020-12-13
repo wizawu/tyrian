@@ -1,0 +1,7 @@
+Compiled from "ResourcesMgr.java"
+public class sun.security.util.ResourcesMgr {
+  public sun.security.util.ResourcesMgr();
+  public static java.lang.String getString(java.lang.String);
+  public static java.lang.String getAuthResourceString(java.lang.String);
+  static {};
+}

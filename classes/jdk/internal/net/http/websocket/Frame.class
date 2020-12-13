@@ -1,0 +1,5 @@
+Compiled from "Frame.java"
+final class jdk.internal.net.http.websocket.Frame {
+  static final int MAX_HEADER_SIZE_BYTES;
+  static final int MAX_CONTROL_FRAME_PAYLOAD_LENGTH;
+}

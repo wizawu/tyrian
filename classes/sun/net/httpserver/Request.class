@@ -1,0 +1,16 @@
+Compiled from "Request.java"
+class sun.net.httpserver.Request {
+  static final int BUF_LEN;
+  static final byte CR;
+  static final byte LF;
+  char[] buf;
+  int pos;
+  java.lang.StringBuffer lineBuf;
+  com.sun.net.httpserver.Headers hdrs;
+  sun.net.httpserver.Request(java.io.InputStream, java.io.OutputStream) throws java.io.IOException;
+  public java.io.InputStream inputStream();
+  public java.io.OutputStream outputStream();
+  public java.lang.String readLine() throws java.io.IOException;
+  public java.lang.String requestLine();
+  com.sun.net.httpserver.Headers headers() throws java.io.IOException;
+}

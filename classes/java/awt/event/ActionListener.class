@@ -1,0 +1,4 @@
+Compiled from "ActionListener.java"
+public interface java.awt.event.ActionListener extends java.util.EventListener {
+  public abstract void actionPerformed(java.awt.event.ActionEvent);
+}

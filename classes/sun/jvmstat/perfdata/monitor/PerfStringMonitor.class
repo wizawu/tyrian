@@ -1,0 +1,8 @@
+Compiled from "PerfStringMonitor.java"
+public class sun.jvmstat.perfdata.monitor.PerfStringMonitor extends sun.jvmstat.perfdata.monitor.PerfByteArrayMonitor implements sun.jvmstat.monitor.StringMonitor {
+  public sun.jvmstat.perfdata.monitor.PerfStringMonitor(java.lang.String, sun.jvmstat.monitor.Variability, boolean, java.nio.ByteBuffer);
+  public sun.jvmstat.perfdata.monitor.PerfStringMonitor(java.lang.String, sun.jvmstat.monitor.Variability, boolean, java.nio.ByteBuffer, int);
+  public java.lang.Object getValue();
+  public java.lang.String stringValue();
+  static {};
+}

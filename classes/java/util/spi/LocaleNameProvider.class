@@ -1,0 +1,10 @@
+Compiled from "LocaleNameProvider.java"
+public abstract class java.util.spi.LocaleNameProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.util.spi.LocaleNameProvider();
+  public abstract java.lang.String getDisplayLanguage(java.lang.String, java.util.Locale);
+  public java.lang.String getDisplayScript(java.lang.String, java.util.Locale);
+  public abstract java.lang.String getDisplayCountry(java.lang.String, java.util.Locale);
+  public abstract java.lang.String getDisplayVariant(java.lang.String, java.util.Locale);
+  public java.lang.String getDisplayUnicodeExtensionKey(java.lang.String, java.util.Locale);
+  public java.lang.String getDisplayUnicodeExtensionType(java.lang.String, java.lang.String, java.util.Locale);
+}

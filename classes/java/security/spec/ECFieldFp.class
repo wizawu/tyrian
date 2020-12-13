@@ -1,0 +1,8 @@
+Compiled from "ECFieldFp.java"
+public class java.security.spec.ECFieldFp implements java.security.spec.ECField {
+  public java.security.spec.ECFieldFp(java.math.BigInteger);
+  public int getFieldSize();
+  public java.math.BigInteger getP();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

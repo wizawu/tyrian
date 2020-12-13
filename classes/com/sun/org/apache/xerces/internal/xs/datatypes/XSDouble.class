@@ -1,0 +1,4 @@
+Compiled from "XSDouble.java"
+public interface com.sun.org.apache.xerces.internal.xs.datatypes.XSDouble {
+  public abstract double getValue();
+}

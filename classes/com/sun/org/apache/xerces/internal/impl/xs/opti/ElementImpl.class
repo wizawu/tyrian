@@ -1,0 +1,39 @@
+Compiled from "ElementImpl.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl extends com.sun.org.apache.xerces.internal.impl.xs.opti.DefaultElement {
+  com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOM schemaDOM;
+  org.w3c.dom.Attr[] attrs;
+  int row;
+  int col;
+  int parentRow;
+  int line;
+  int column;
+  int charOffset;
+  java.lang.String fAnnotation;
+  java.lang.String fSyntheticAnnotation;
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl(int, int, int);
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl(int, int);
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int);
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl(java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int);
+  public org.w3c.dom.Document getOwnerDocument();
+  public org.w3c.dom.Node getParentNode();
+  public boolean hasChildNodes();
+  public org.w3c.dom.Node getFirstChild();
+  public org.w3c.dom.Node getLastChild();
+  public org.w3c.dom.Node getPreviousSibling();
+  public org.w3c.dom.Node getNextSibling();
+  public org.w3c.dom.NamedNodeMap getAttributes();
+  public boolean hasAttributes();
+  public java.lang.String getTagName();
+  public java.lang.String getAttribute(java.lang.String);
+  public org.w3c.dom.Attr getAttributeNode(java.lang.String);
+  public java.lang.String getAttributeNS(java.lang.String, java.lang.String);
+  public org.w3c.dom.Attr getAttributeNodeNS(java.lang.String, java.lang.String);
+  public boolean hasAttribute(java.lang.String);
+  public boolean hasAttributeNS(java.lang.String, java.lang.String);
+  public void setAttribute(java.lang.String, java.lang.String);
+  public int getLineNumber();
+  public int getColumnNumber();
+  public int getCharacterOffset();
+  public java.lang.String getAnnotation();
+  public java.lang.String getSyntheticAnnotation();
+}

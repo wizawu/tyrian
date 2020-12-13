@@ -1,0 +1,4 @@
+Compiled from "PrimitiveTypeTree.java"
+public interface com.sun.source.tree.PrimitiveTypeTree extends com.sun.source.tree.Tree {
+  public abstract javax.lang.model.type.TypeKind getPrimitiveTypeKind();
+}

@@ -1,0 +1,6 @@
+Compiled from "MotifTextFieldUI.java"
+public class com.sun.java.swing.plaf.motif.MotifTextFieldUI extends javax.swing.plaf.basic.BasicTextFieldUI {
+  public com.sun.java.swing.plaf.motif.MotifTextFieldUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected javax.swing.text.Caret createCaret();
+}

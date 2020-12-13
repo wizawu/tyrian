@@ -1,0 +1,6 @@
+Compiled from "CustomCursor.java"
+public abstract class sun.awt.CustomCursor extends java.awt.Cursor {
+  protected java.awt.Image image;
+  public sun.awt.CustomCursor(java.awt.Image, java.awt.Point, java.lang.String) throws java.lang.IndexOutOfBoundsException;
+  protected abstract void createNativeCursor(java.awt.Image, int[], int, int, int, int);
+}

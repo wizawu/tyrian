@@ -1,0 +1,8 @@
+Compiled from "BufferedTextPipe.java"
+public abstract class sun.java2d.pipe.BufferedTextPipe extends sun.java2d.pipe.GlyphListPipe {
+  protected final sun.java2d.pipe.RenderQueue rq;
+  protected sun.java2d.pipe.BufferedTextPipe(sun.java2d.pipe.RenderQueue);
+  protected void drawGlyphList(sun.java2d.SunGraphics2D, sun.font.GlyphList);
+  protected abstract void drawGlyphList(int, boolean, boolean, boolean, int, float, float, long[], float[]);
+  protected abstract void validateContext(sun.java2d.SunGraphics2D, java.awt.Composite);
+}

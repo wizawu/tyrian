@@ -1,0 +1,27 @@
+Compiled from "IntVector.java"
+public class com.sun.org.apache.xml.internal.utils.IntVector implements java.lang.Cloneable {
+  protected int m_blocksize;
+  protected int[] m_map;
+  protected int m_firstFree;
+  protected int m_mapSize;
+  public com.sun.org.apache.xml.internal.utils.IntVector();
+  public com.sun.org.apache.xml.internal.utils.IntVector(int);
+  public com.sun.org.apache.xml.internal.utils.IntVector(int, int);
+  public com.sun.org.apache.xml.internal.utils.IntVector(com.sun.org.apache.xml.internal.utils.IntVector);
+  public final int size();
+  public final void setSize(int);
+  public final void addElement(int);
+  public final void addElements(int, int);
+  public final void addElements(int);
+  public final void insertElementAt(int, int);
+  public final void removeAllElements();
+  public final boolean removeElement(int);
+  public final void removeElementAt(int);
+  public final void setElementAt(int, int);
+  public final int elementAt(int);
+  public final boolean contains(int);
+  public final int indexOf(int, int);
+  public final int indexOf(int);
+  public final int lastIndexOf(int);
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+}

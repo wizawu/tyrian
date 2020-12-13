@@ -1,0 +1,24 @@
+Compiled from "DefaultMetalTheme.java"
+public class javax.swing.plaf.metal.DefaultMetalTheme extends javax.swing.plaf.metal.MetalTheme {
+  static java.lang.String getDefaultFontName(int);
+  static int getDefaultFontSize(int);
+  static int getDefaultFontStyle(int);
+  static java.lang.String getDefaultPropertyName(int);
+  public java.lang.String getName();
+  public javax.swing.plaf.metal.DefaultMetalTheme();
+  protected javax.swing.plaf.ColorUIResource getPrimary1();
+  protected javax.swing.plaf.ColorUIResource getPrimary2();
+  protected javax.swing.plaf.ColorUIResource getPrimary3();
+  protected javax.swing.plaf.ColorUIResource getSecondary1();
+  protected javax.swing.plaf.ColorUIResource getSecondary2();
+  protected javax.swing.plaf.ColorUIResource getSecondary3();
+  public javax.swing.plaf.FontUIResource getControlTextFont();
+  public javax.swing.plaf.FontUIResource getSystemTextFont();
+  public javax.swing.plaf.FontUIResource getUserTextFont();
+  public javax.swing.plaf.FontUIResource getMenuTextFont();
+  public javax.swing.plaf.FontUIResource getWindowTitleFont();
+  public javax.swing.plaf.FontUIResource getSubTextFont();
+  void install();
+  boolean isSystemTheme();
+  static {};
+}

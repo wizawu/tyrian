@@ -1,0 +1,5 @@
+Compiled from "FormatData_vi.java"
+public class sun.text.resources.ext.FormatData_vi extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_vi();
+  protected final java.lang.Object[][] getContents();
+}

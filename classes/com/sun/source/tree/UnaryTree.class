@@ -1,0 +1,4 @@
+Compiled from "UnaryTree.java"
+public interface com.sun.source.tree.UnaryTree extends com.sun.source.tree.ExpressionTree {
+  public abstract com.sun.source.tree.ExpressionTree getExpression();
+}

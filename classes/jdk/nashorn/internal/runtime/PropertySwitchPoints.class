@@ -1,0 +1,12 @@
+Compiled from "PropertySwitchPoints.java"
+public class jdk.nashorn.internal.runtime.PropertySwitchPoints {
+  public static long getSwitchPointsAdded();
+  public static long getSwitchPointsInvalidated();
+  public static int getSwitchPointCount(jdk.nashorn.internal.runtime.ScriptObject);
+  int getSwitchPointCount();
+  static jdk.nashorn.internal.runtime.PropertySwitchPoints addSwitchPoint(jdk.nashorn.internal.runtime.PropertySwitchPoints, java.lang.String, java.lang.invoke.SwitchPoint);
+  java.util.Set<java.lang.invoke.SwitchPoint> getSwitchPoints(java.lang.Object);
+  synchronized void invalidateProperty(jdk.nashorn.internal.runtime.Property);
+  synchronized void invalidateInheritedProperties(jdk.nashorn.internal.runtime.PropertyMap);
+  static {};
+}

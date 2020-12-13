@@ -1,0 +1,6 @@
+Compiled from "EventTarget.java"
+public interface org.w3c.dom.events.EventTarget {
+  public abstract void addEventListener(java.lang.String, org.w3c.dom.events.EventListener, boolean);
+  public abstract void removeEventListener(java.lang.String, org.w3c.dom.events.EventListener, boolean);
+  public abstract boolean dispatchEvent(org.w3c.dom.events.Event) throws org.w3c.dom.events.EventException;
+}

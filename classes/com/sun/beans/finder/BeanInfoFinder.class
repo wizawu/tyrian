@@ -1,0 +1,9 @@
+Compiled from "BeanInfoFinder.java"
+public final class com.sun.beans.finder.BeanInfoFinder extends com.sun.beans.finder.InstanceFinder<java.beans.BeanInfo> {
+  public com.sun.beans.finder.BeanInfoFinder();
+  protected java.beans.BeanInfo instantiate(java.lang.Class<?>, java.lang.String, java.lang.String);
+  protected java.lang.Object instantiate(java.lang.Class, java.lang.String, java.lang.String);
+  public java.lang.Object find(java.lang.Class);
+  public void setPackages(java.lang.String[]);
+  public java.lang.String[] getPackages();
+}

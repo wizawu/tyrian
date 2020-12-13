@@ -1,0 +1,5 @@
+Compiled from "DSAPrivateKey.java"
+public interface java.security.interfaces.DSAPrivateKey extends java.security.interfaces.DSAKey,java.security.PrivateKey {
+  public static final long serialVersionUID;
+  public abstract java.math.BigInteger getX();
+}

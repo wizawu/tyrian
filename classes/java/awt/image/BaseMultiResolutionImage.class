@@ -1,0 +1,8 @@
+Compiled from "BaseMultiResolutionImage.java"
+public class java.awt.image.BaseMultiResolutionImage extends java.awt.image.AbstractMultiResolutionImage {
+  public java.awt.image.BaseMultiResolutionImage(java.awt.Image...);
+  public java.awt.image.BaseMultiResolutionImage(int, java.awt.Image...);
+  public java.awt.Image getResolutionVariant(double, double);
+  public java.util.List<java.awt.Image> getResolutionVariants();
+  protected java.awt.Image getBaseImage();
+}

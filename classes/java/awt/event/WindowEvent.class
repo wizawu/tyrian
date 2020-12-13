@@ -1,0 +1,27 @@
+Compiled from "WindowEvent.java"
+public class java.awt.event.WindowEvent extends java.awt.event.ComponentEvent {
+  public static final int WINDOW_FIRST;
+  public static final int WINDOW_OPENED;
+  public static final int WINDOW_CLOSING;
+  public static final int WINDOW_CLOSED;
+  public static final int WINDOW_ICONIFIED;
+  public static final int WINDOW_DEICONIFIED;
+  public static final int WINDOW_ACTIVATED;
+  public static final int WINDOW_DEACTIVATED;
+  public static final int WINDOW_GAINED_FOCUS;
+  public static final int WINDOW_LOST_FOCUS;
+  public static final int WINDOW_STATE_CHANGED;
+  public static final int WINDOW_LAST;
+  transient java.awt.Window opposite;
+  int oldState;
+  int newState;
+  public java.awt.event.WindowEvent(java.awt.Window, int, java.awt.Window, int, int);
+  public java.awt.event.WindowEvent(java.awt.Window, int, java.awt.Window);
+  public java.awt.event.WindowEvent(java.awt.Window, int, int, int);
+  public java.awt.event.WindowEvent(java.awt.Window, int);
+  public java.awt.Window getWindow();
+  public java.awt.Window getOppositeWindow();
+  public int getOldState();
+  public int getNewState();
+  public java.lang.String paramString();
+}

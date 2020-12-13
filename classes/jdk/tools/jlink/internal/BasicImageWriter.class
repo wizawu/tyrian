@@ -1,0 +1,14 @@
+Compiled from "BasicImageWriter.java"
+public final class jdk.tools.jlink.internal.BasicImageWriter {
+  public static final java.lang.String MODULES_IMAGE_NAME;
+  public jdk.tools.jlink.internal.BasicImageWriter();
+  public jdk.tools.jlink.internal.BasicImageWriter(java.nio.ByteOrder);
+  public java.nio.ByteOrder getByteOrder();
+  public int addString(java.lang.String);
+  public java.lang.String getString(int);
+  public void addLocation(java.lang.String, long, long, long);
+  jdk.tools.jlink.internal.ImageLocationWriter[] getLocations();
+  int getLocationsCount();
+  public byte[] getBytes();
+  jdk.tools.jlink.internal.ImageLocationWriter find(java.lang.String);
+}

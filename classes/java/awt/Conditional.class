@@ -1,0 +1,4 @@
+Compiled from "Conditional.java"
+interface java.awt.Conditional {
+  public abstract boolean evaluate();
+}

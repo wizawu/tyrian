@@ -1,0 +1,4 @@
+Compiled from "DeadlockDetectionPanel.java"
+public class sun.jvm.hotspot.ui.DeadlockDetectionPanel extends javax.swing.JPanel {
+  public sun.jvm.hotspot.ui.DeadlockDetectionPanel();
+}

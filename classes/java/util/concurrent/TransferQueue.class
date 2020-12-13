@@ -1,0 +1,8 @@
+Compiled from "TransferQueue.java"
+public interface java.util.concurrent.TransferQueue<E> extends java.util.concurrent.BlockingQueue<E> {
+  public abstract boolean tryTransfer(E);
+  public abstract void transfer(E) throws java.lang.InterruptedException;
+  public abstract boolean tryTransfer(E, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public abstract boolean hasWaitingConsumer();
+  public abstract int getWaitingConsumerCount();
+}

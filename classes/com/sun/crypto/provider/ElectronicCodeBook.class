@@ -1,0 +1,11 @@
+Compiled from "ElectronicCodeBook.java"
+final class com.sun.crypto.provider.ElectronicCodeBook extends com.sun.crypto.provider.FeedbackCipher {
+  com.sun.crypto.provider.ElectronicCodeBook(com.sun.crypto.provider.SymmetricCipher);
+  java.lang.String getFeedback();
+  void reset();
+  void save();
+  void restore();
+  void init(boolean, java.lang.String, byte[], byte[]) throws java.security.InvalidKeyException;
+  int encrypt(byte[], int, int, byte[], int);
+  int decrypt(byte[], int, int, byte[], int);
+}

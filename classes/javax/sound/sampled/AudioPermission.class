@@ -1,0 +1,5 @@
+Compiled from "AudioPermission.java"
+public class javax.sound.sampled.AudioPermission extends java.security.BasicPermission {
+  public javax.sound.sampled.AudioPermission(java.lang.String);
+  public javax.sound.sampled.AudioPermission(java.lang.String, java.lang.String);
+}

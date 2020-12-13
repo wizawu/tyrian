@@ -1,0 +1,31 @@
+Compiled from "MemoryImageSource.java"
+public class java.awt.image.MemoryImageSource implements java.awt.image.ImageProducer {
+  int width;
+  int height;
+  java.awt.image.ColorModel model;
+  java.lang.Object pixels;
+  int pixeloffset;
+  int pixelscan;
+  java.util.Hashtable<?, ?> properties;
+  java.util.Vector<java.awt.image.ImageConsumer> theConsumers;
+  boolean animating;
+  boolean fullbuffers;
+  public java.awt.image.MemoryImageSource(int, int, java.awt.image.ColorModel, byte[], int, int);
+  public java.awt.image.MemoryImageSource(int, int, java.awt.image.ColorModel, byte[], int, int, java.util.Hashtable<?, ?>);
+  public java.awt.image.MemoryImageSource(int, int, java.awt.image.ColorModel, int[], int, int);
+  public java.awt.image.MemoryImageSource(int, int, java.awt.image.ColorModel, int[], int, int, java.util.Hashtable<?, ?>);
+  public java.awt.image.MemoryImageSource(int, int, int[], int, int);
+  public java.awt.image.MemoryImageSource(int, int, int[], int, int, java.util.Hashtable<?, ?>);
+  public synchronized void addConsumer(java.awt.image.ImageConsumer);
+  public synchronized boolean isConsumer(java.awt.image.ImageConsumer);
+  public synchronized void removeConsumer(java.awt.image.ImageConsumer);
+  public void startProduction(java.awt.image.ImageConsumer);
+  public void requestTopDownLeftRightResend(java.awt.image.ImageConsumer);
+  public synchronized void setAnimated(boolean);
+  public synchronized void setFullBufferUpdates(boolean);
+  public void newPixels();
+  public synchronized void newPixels(int, int, int, int);
+  public synchronized void newPixels(int, int, int, int, boolean);
+  public synchronized void newPixels(byte[], java.awt.image.ColorModel, int, int);
+  public synchronized void newPixels(int[], java.awt.image.ColorModel, int, int);
+}

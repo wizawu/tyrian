@@ -1,0 +1,39 @@
+Compiled from "ToolEnvironment.java"
+public class jdk.javadoc.internal.tool.ToolEnvironment {
+  protected static final com.sun.tools.javac.util.Context$Key<jdk.javadoc.internal.tool.ToolEnvironment> ToolEnvKey;
+  final jdk.javadoc.internal.tool.Messager messager;
+  public final com.sun.tools.javac.code.Symtab syms;
+  final com.sun.tools.javac.comp.Enter enter;
+  final com.sun.tools.javac.code.Symbol externalizableSym;
+  boolean quiet;
+  boolean ignoreSourceErrors;
+  com.sun.tools.javac.comp.Check chk;
+  com.sun.tools.javac.code.Types types;
+  javax.tools.JavaFileManager fileManager;
+  public final com.sun.tools.javac.util.Context context;
+  java.util.WeakHashMap<com.sun.tools.javac.tree.JCTree, com.sun.source.util.TreePath> treePaths;
+  boolean docClasses;
+  public final com.sun.tools.javac.code.Source source;
+  public final javax.lang.model.util.Elements elements;
+  public final com.sun.tools.javac.model.JavacTypes typeutils;
+  protected jdk.javadoc.internal.tool.DocEnvImpl docEnv;
+  public final com.sun.source.util.DocTrees docTrees;
+  public final java.util.Map<javax.lang.model.element.Element, com.sun.source.util.TreePath> elementToTreePath;
+  public static jdk.javadoc.internal.tool.ToolEnvironment instance(com.sun.tools.javac.util.Context);
+  protected jdk.javadoc.internal.tool.ToolEnvironment(com.sun.tools.javac.util.Context);
+  public void initialize(java.util.Map<jdk.javadoc.internal.tool.ToolOption, java.lang.Object>);
+  public javax.lang.model.element.TypeElement loadClass(java.lang.String);
+  boolean isSynthetic(com.sun.tools.javac.code.Symbol);
+  void setElementToTreePath(javax.lang.model.element.Element, com.sun.source.util.TreePath);
+  public javax.tools.JavaFileObject$Kind getFileKind(javax.lang.model.element.TypeElement);
+  public void notice(java.lang.String);
+  public void notice(java.lang.String, java.lang.String);
+  com.sun.source.util.TreePath getTreePath(com.sun.tools.javac.tree.JCTree$JCCompilationUnit);
+  com.sun.source.util.TreePath getTreePath(com.sun.tools.javac.tree.JCTree$JCCompilationUnit, com.sun.tools.javac.tree.JCTree$JCPackageDecl);
+  com.sun.source.util.TreePath getTreePath(com.sun.tools.javac.tree.JCTree$JCCompilationUnit, com.sun.tools.javac.tree.JCTree$JCClassDecl);
+  com.sun.source.util.TreePath getTreePath(com.sun.tools.javac.tree.JCTree$JCCompilationUnit, com.sun.tools.javac.tree.JCTree$JCClassDecl, com.sun.tools.javac.tree.JCTree);
+  public com.sun.tools.javac.code.Types getTypes();
+  public com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext> getEnv(com.sun.tools.javac.code.Symbol$ClassSymbol);
+  public boolean isQuiet();
+  static {};
+}

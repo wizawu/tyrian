@@ -1,0 +1,7 @@
+Compiled from "IndexedWriter.java"
+final class jdk.internal.net.http.hpack.IndexedWriter implements jdk.internal.net.http.hpack.BinaryRepresentationWriter {
+  jdk.internal.net.http.hpack.IndexedWriter();
+  jdk.internal.net.http.hpack.IndexedWriter index(int);
+  public boolean write(jdk.internal.net.http.hpack.HeaderTable, java.nio.ByteBuffer);
+  public jdk.internal.net.http.hpack.BinaryRepresentationWriter reset();
+}

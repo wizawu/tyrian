@@ -1,0 +1,5 @@
+Compiled from "SSLBasicKeyDerivation.java"
+final class sun.security.ssl.SSLBasicKeyDerivation implements sun.security.ssl.SSLKeyDerivation {
+  sun.security.ssl.SSLBasicKeyDerivation(javax.crypto.SecretKey, java.lang.String, byte[], byte[], int);
+  public javax.crypto.SecretKey deriveKey(java.lang.String, java.security.spec.AlgorithmParameterSpec) throws java.io.IOException;
+}

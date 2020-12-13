@@ -1,0 +1,4 @@
+Compiled from "HandshakeAbsence.java"
+interface sun.security.ssl.HandshakeAbsence {
+  public abstract void absent(sun.security.ssl.ConnectionContext, sun.security.ssl.SSLHandshake$HandshakeMessage) throws java.io.IOException;
+}

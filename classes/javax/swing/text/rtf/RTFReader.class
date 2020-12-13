@@ -1,0 +1,36 @@
+Compiled from "RTFReader.java"
+class javax.swing.text.rtf.RTFReader extends javax.swing.text.rtf.RTFParser {
+  javax.swing.text.StyledDocument target;
+  java.util.Dictionary<java.lang.Object, java.lang.Object> parserState;
+  javax.swing.text.rtf.RTFReader$Destination rtfDestination;
+  javax.swing.text.MutableAttributeSet documentAttributes;
+  java.util.Dictionary<java.lang.Integer, java.lang.String> fontTable;
+  java.awt.Color[] colorTable;
+  javax.swing.text.Style[] characterStyles;
+  javax.swing.text.Style[] paragraphStyles;
+  javax.swing.text.Style[] sectionStyles;
+  int rtfversion;
+  boolean ignoreGroupIfUnknownKeyword;
+  int skippingCharacters;
+  static java.util.Dictionary<java.lang.String, java.lang.String> textKeywords;
+  static final java.lang.String TabAlignmentKey;
+  static final java.lang.String TabLeaderKey;
+  static java.util.Dictionary<java.lang.String, char[]> characterSets;
+  static boolean useNeXTForAnsi;
+  public javax.swing.text.rtf.RTFReader(javax.swing.text.StyledDocument);
+  public void handleBinaryBlob(byte[]);
+  public void handleText(java.lang.String);
+  java.awt.Color defaultColor();
+  public void begingroup();
+  public void endgroup();
+  protected void setRTFDestination(javax.swing.text.rtf.RTFReader$Destination);
+  public void close() throws java.io.IOException;
+  public boolean handleKeyword(java.lang.String);
+  public boolean handleKeyword(java.lang.String, int);
+  public void setCharacterSet(java.lang.String);
+  public static void defineCharacterSet(java.lang.String, char[]);
+  public static java.lang.Object getCharacterSet(java.lang.String) throws java.io.IOException;
+  static char[] readCharset(java.io.InputStream) throws java.io.IOException;
+  static char[] readCharset(java.net.URL) throws java.io.IOException;
+  static {};
+}

@@ -1,0 +1,10 @@
+Compiled from "PropertyElementHandler.java"
+final class com.sun.beans.decoder.PropertyElementHandler extends com.sun.beans.decoder.AccessorElementHandler {
+  static final java.lang.String GETTER;
+  static final java.lang.String SETTER;
+  com.sun.beans.decoder.PropertyElementHandler();
+  public void addAttribute(java.lang.String, java.lang.String);
+  protected boolean isArgument();
+  protected java.lang.Object getValue(java.lang.String);
+  protected void setValue(java.lang.String, java.lang.Object);
+}

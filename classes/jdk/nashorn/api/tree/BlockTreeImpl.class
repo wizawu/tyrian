@@ -1,0 +1,8 @@
+Compiled from "BlockTreeImpl.java"
+final class jdk.nashorn.api.tree.BlockTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.BlockTree {
+  jdk.nashorn.api.tree.BlockTreeImpl(jdk.nashorn.internal.ir.BlockStatement, java.util.List<? extends jdk.nashorn.api.tree.StatementTree>);
+  jdk.nashorn.api.tree.BlockTreeImpl(jdk.nashorn.internal.ir.Block, java.util.List<? extends jdk.nashorn.api.tree.StatementTree>);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public java.util.List<? extends jdk.nashorn.api.tree.StatementTree> getStatements();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

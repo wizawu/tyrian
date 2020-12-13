@@ -1,0 +1,12 @@
+Compiled from "LivenessPath.java"
+public class sun.jvm.hotspot.utilities.LivenessPath {
+  sun.jvm.hotspot.utilities.LivenessPath();
+  public int size();
+  public sun.jvm.hotspot.utilities.LivenessPathElement get(int) throws java.lang.ArrayIndexOutOfBoundsException;
+  public void printOn(java.io.PrintStream);
+  boolean isComplete();
+  sun.jvm.hotspot.utilities.LivenessPathElement peek();
+  void push(sun.jvm.hotspot.utilities.LivenessPathElement);
+  void pop();
+  sun.jvm.hotspot.utilities.LivenessPath copy();
+}

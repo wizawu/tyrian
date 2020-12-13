@@ -1,0 +1,20 @@
+Compiled from "Scanner.java"
+public class jdk.nashorn.internal.parser.Scanner {
+  protected final char[] content;
+  protected int position;
+  protected final int limit;
+  protected int line;
+  protected char ch0;
+  protected char ch1;
+  protected char ch2;
+  protected char ch3;
+  protected jdk.nashorn.internal.parser.Scanner(char[], int, int, int);
+  protected jdk.nashorn.internal.parser.Scanner(java.lang.String);
+  jdk.nashorn.internal.parser.Scanner(jdk.nashorn.internal.parser.Scanner, jdk.nashorn.internal.parser.Scanner$State);
+  jdk.nashorn.internal.parser.Scanner$State saveState();
+  void restoreState(jdk.nashorn.internal.parser.Scanner$State);
+  protected final boolean atEOF();
+  protected final char charAt(int);
+  protected final void reset(int);
+  protected final void skip(int);
+}

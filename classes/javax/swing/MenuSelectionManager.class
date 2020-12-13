@@ -1,0 +1,19 @@
+Compiled from "MenuSelectionManager.java"
+public class javax.swing.MenuSelectionManager {
+  protected transient javax.swing.event.ChangeEvent changeEvent;
+  protected javax.swing.event.EventListenerList listenerList;
+  public javax.swing.MenuSelectionManager();
+  public static javax.swing.MenuSelectionManager defaultManager();
+  public void setSelectedPath(javax.swing.MenuElement[]);
+  public javax.swing.MenuElement[] getSelectedPath();
+  public void clearSelectedPath();
+  public void addChangeListener(javax.swing.event.ChangeListener);
+  public void removeChangeListener(javax.swing.event.ChangeListener);
+  public javax.swing.event.ChangeListener[] getChangeListeners();
+  protected void fireStateChanged();
+  public void processMouseEvent(java.awt.event.MouseEvent);
+  public java.awt.Component componentForPoint(java.awt.Component, java.awt.Point);
+  public void processKeyEvent(java.awt.event.KeyEvent);
+  public boolean isComponentPartOfCurrentMenu(java.awt.Component);
+  static {};
+}

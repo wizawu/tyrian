@@ -1,0 +1,5 @@
+Compiled from "ExternalEditor.java"
+public class jdk.internal.editor.external.ExternalEditor {
+  public static void edit(java.lang.String[], java.lang.String, java.util.function.Consumer<java.lang.String>, java.util.function.Consumer<java.lang.String>, java.lang.Runnable, java.lang.Runnable, boolean, java.lang.Runnable);
+  jdk.internal.editor.external.ExternalEditor(java.util.function.Consumer<java.lang.String>, java.util.function.Consumer<java.lang.String>, java.lang.Runnable, java.lang.Runnable, boolean, java.lang.Runnable);
+}

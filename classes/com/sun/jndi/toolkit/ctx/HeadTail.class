@@ -1,0 +1,9 @@
+Compiled from "HeadTail.java"
+public class com.sun.jndi.toolkit.ctx.HeadTail {
+  public com.sun.jndi.toolkit.ctx.HeadTail(javax.naming.Name, javax.naming.Name);
+  public com.sun.jndi.toolkit.ctx.HeadTail(javax.naming.Name, javax.naming.Name, int);
+  public void setStatus(int);
+  public javax.naming.Name getHead();
+  public javax.naming.Name getTail();
+  public int getStatus();
+}

@@ -1,0 +1,3 @@
+Compiled from "CollationDataProvider.java"
+public interface sun.text.resources.CollationDataProvider extends java.util.spi.ResourceBundleProvider {
+}

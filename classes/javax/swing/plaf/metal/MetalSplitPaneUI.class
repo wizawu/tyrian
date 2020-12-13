@@ -1,0 +1,6 @@
+Compiled from "MetalSplitPaneUI.java"
+public class javax.swing.plaf.metal.MetalSplitPaneUI extends javax.swing.plaf.basic.BasicSplitPaneUI {
+  public javax.swing.plaf.metal.MetalSplitPaneUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.plaf.basic.BasicSplitPaneDivider createDefaultDivider();
+}

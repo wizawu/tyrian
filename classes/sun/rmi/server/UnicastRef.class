@@ -1,0 +1,24 @@
+Compiled from "UnicastRef.java"
+public class sun.rmi.server.UnicastRef implements java.rmi.server.RemoteRef {
+  public static final sun.rmi.runtime.Log clientRefLog;
+  public static final sun.rmi.runtime.Log clientCallLog;
+  protected sun.rmi.transport.LiveRef ref;
+  public sun.rmi.server.UnicastRef();
+  public sun.rmi.server.UnicastRef(sun.rmi.transport.LiveRef);
+  public sun.rmi.transport.LiveRef getLiveRef();
+  public java.lang.Object invoke(java.rmi.Remote, java.lang.reflect.Method, java.lang.Object[], long) throws java.lang.Exception;
+  protected void marshalCustomCallData(java.io.ObjectOutput) throws java.io.IOException;
+  protected static void marshalValue(java.lang.Class<?>, java.lang.Object, java.io.ObjectOutput) throws java.io.IOException;
+  protected static java.lang.Object unmarshalValue(java.lang.Class<?>, java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+  public java.rmi.server.RemoteCall newCall(java.rmi.server.RemoteObject, java.rmi.server.Operation[], int, long) throws java.rmi.RemoteException;
+  public void invoke(java.rmi.server.RemoteCall) throws java.lang.Exception;
+  public void done(java.rmi.server.RemoteCall) throws java.rmi.RemoteException;
+  void logClientCall(java.lang.Object, java.lang.Object);
+  public java.lang.String getRefClass(java.io.ObjectOutput);
+  public void writeExternal(java.io.ObjectOutput) throws java.io.IOException;
+  public void readExternal(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+  public java.lang.String remoteToString();
+  public int remoteHashCode();
+  public boolean remoteEquals(java.rmi.server.RemoteRef);
+  static {};
+}

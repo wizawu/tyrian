@@ -1,0 +1,28 @@
+Compiled from "FileFont.java"
+public abstract class sun.font.FileFont extends sun.font.PhysicalFont {
+  protected boolean useJavaRasterizer;
+  protected int fileSize;
+  protected sun.font.FontScaler scaler;
+  protected boolean checkedNatives;
+  protected boolean useNatives;
+  protected sun.font.NativeFont[] nativeFonts;
+  protected char[] glyphToCharMap;
+  sun.font.FileFont(java.lang.String, java.lang.Object) throws java.awt.FontFormatException;
+  sun.font.FontStrike createStrike(sun.font.FontStrikeDesc);
+  protected boolean checkUseNatives();
+  protected abstract void close();
+  abstract java.nio.ByteBuffer readBlock(int, int);
+  public boolean canDoStyle(int);
+  static void setFileToRemove(java.util.List<sun.font.Font2D>, java.io.File, int, sun.font.CreatedFontTracker);
+  synchronized void deregisterFontAndClearStrikeCache();
+  sun.font.StrikeMetrics getFontMetrics(long);
+  float getGlyphAdvance(long, int);
+  void getGlyphMetrics(long, int, java.awt.geom.Point2D$Float);
+  long getGlyphImage(long, int);
+  java.awt.geom.Rectangle2D$Float getGlyphOutlineBounds(long, int);
+  java.awt.geom.GeneralPath getGlyphOutline(long, int, float, float);
+  java.awt.geom.GeneralPath getGlyphVectorOutline(long, int[], int, float, float);
+  protected abstract sun.font.FontScaler getScaler();
+  protected long getUnitsPerEm();
+  protected java.lang.String getPublicFileName();
+}

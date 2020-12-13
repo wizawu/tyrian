@@ -1,0 +1,19 @@
+Compiled from "ParameterMetaData.java"
+public interface java.sql.ParameterMetaData extends java.sql.Wrapper {
+  public static final int parameterNoNulls;
+  public static final int parameterNullable;
+  public static final int parameterNullableUnknown;
+  public static final int parameterModeUnknown;
+  public static final int parameterModeIn;
+  public static final int parameterModeInOut;
+  public static final int parameterModeOut;
+  public abstract int getParameterCount() throws java.sql.SQLException;
+  public abstract int isNullable(int) throws java.sql.SQLException;
+  public abstract boolean isSigned(int) throws java.sql.SQLException;
+  public abstract int getPrecision(int) throws java.sql.SQLException;
+  public abstract int getScale(int) throws java.sql.SQLException;
+  public abstract int getParameterType(int) throws java.sql.SQLException;
+  public abstract java.lang.String getParameterTypeName(int) throws java.sql.SQLException;
+  public abstract java.lang.String getParameterClassName(int) throws java.sql.SQLException;
+  public abstract int getParameterMode(int) throws java.sql.SQLException;
+}

@@ -1,0 +1,10 @@
+Compiled from "PrecisionDecimalDV.java"
+class com.sun.org.apache.xerces.internal.impl.dv.xs.PrecisionDecimalDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
+  com.sun.org.apache.xerces.internal.impl.dv.xs.PrecisionDecimalDV();
+  public short getAllowedFacets();
+  public java.lang.Object getActualValue(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
+  public int compare(java.lang.Object, java.lang.Object);
+  public int getFractionDigits(java.lang.Object);
+  public int getTotalDigits(java.lang.Object);
+  public boolean isIdentical(java.lang.Object, java.lang.Object);
+}

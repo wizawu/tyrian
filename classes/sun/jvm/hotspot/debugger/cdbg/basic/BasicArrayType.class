@@ -1,0 +1,11 @@
+Compiled from "BasicArrayType.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicArrayType extends sun.jvm.hotspot.debugger.cdbg.basic.BasicType implements sun.jvm.hotspot.debugger.cdbg.ArrayType {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicArrayType(java.lang.String, sun.jvm.hotspot.debugger.cdbg.Type, int);
+  public sun.jvm.hotspot.debugger.cdbg.ArrayType asArray();
+  public sun.jvm.hotspot.debugger.cdbg.Type getElementType();
+  public int getLength();
+  sun.jvm.hotspot.debugger.cdbg.Type resolveTypes(sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
+  public void iterateObject(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.cdbg.ObjectVisitor, sun.jvm.hotspot.debugger.cdbg.FieldIdentifier);
+  protected sun.jvm.hotspot.debugger.cdbg.Type createCVVariant(int);
+  public void visit(sun.jvm.hotspot.debugger.cdbg.TypeVisitor);
+}

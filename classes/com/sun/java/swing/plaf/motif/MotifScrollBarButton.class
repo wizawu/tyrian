@@ -1,0 +1,9 @@
+Compiled from "MotifScrollBarButton.java"
+public class com.sun.java.swing.plaf.motif.MotifScrollBarButton extends javax.swing.plaf.basic.BasicArrowButton {
+  public com.sun.java.swing.plaf.motif.MotifScrollBarButton(int);
+  public java.awt.Dimension getPreferredSize();
+  public java.awt.Dimension getMinimumSize();
+  public java.awt.Dimension getMaximumSize();
+  public boolean isFocusTraversable();
+  public void paint(java.awt.Graphics);
+}

@@ -1,0 +1,6 @@
+Compiled from "CharValue.java"
+public interface com.sun.jdi.CharValue extends com.sun.jdi.PrimitiveValue, java.lang.Comparable<com.sun.jdi.CharValue> {
+  public abstract char value();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+}

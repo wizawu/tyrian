@@ -1,0 +1,30 @@
+Compiled from "BasicTableUI.java"
+public class javax.swing.plaf.basic.BasicTableUI extends javax.swing.plaf.TableUI {
+  protected javax.swing.JTable table;
+  protected javax.swing.CellRendererPane rendererPane;
+  protected java.awt.event.KeyListener keyListener;
+  protected java.awt.event.FocusListener focusListener;
+  protected javax.swing.event.MouseInputListener mouseInputListener;
+  public javax.swing.plaf.basic.BasicTableUI();
+  protected java.awt.event.KeyListener createKeyListener();
+  protected java.awt.event.FocusListener createFocusListener();
+  protected javax.swing.event.MouseInputListener createMouseInputListener();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void installListeners();
+  protected void installKeyboardActions();
+  javax.swing.InputMap getInputMap(int);
+  static void loadActionMap(javax.swing.plaf.basic.LazyActionMap);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void uninstallDefaults();
+  protected void uninstallListeners();
+  protected void uninstallKeyboardActions();
+  public int getBaseline(javax.swing.JComponent, int, int);
+  public java.awt.Component$BaselineResizeBehavior getBaselineResizeBehavior(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  static {};
+}

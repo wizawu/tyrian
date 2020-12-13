@@ -1,0 +1,7 @@
+Compiled from "Minus.java"
+public class com.sun.org.apache.xpath.internal.operations.Minus extends com.sun.org.apache.xpath.internal.operations.Operation {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.operations.Minus();
+  public com.sun.org.apache.xpath.internal.objects.XObject operate(com.sun.org.apache.xpath.internal.objects.XObject, com.sun.org.apache.xpath.internal.objects.XObject) throws javax.xml.transform.TransformerException;
+  public double num(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+}

@@ -1,0 +1,4 @@
+Compiled from "TableUI.java"
+public abstract class javax.swing.plaf.TableUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.TableUI();
+}

@@ -1,0 +1,5 @@
+Compiled from "WhitespaceStrippingElementMatcher.java"
+public interface com.sun.org.apache.xpath.internal.WhitespaceStrippingElementMatcher {
+  public abstract boolean shouldStripWhiteSpace(com.sun.org.apache.xpath.internal.XPathContext, org.w3c.dom.Element) throws javax.xml.transform.TransformerException;
+  public abstract boolean canStripWhiteSpace();
+}

@@ -1,0 +1,4 @@
+Compiled from "LocalEventTimer.java"
+public class sun.jvmstat.perfdata.monitor.protocol.local.LocalEventTimer extends java.util.Timer {
+  public static synchronized sun.jvmstat.perfdata.monitor.protocol.local.LocalEventTimer getInstance();
+}

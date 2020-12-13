@@ -1,0 +1,7 @@
+Compiled from "EncASRepPart.java"
+public class sun.security.krb5.internal.EncASRepPart extends sun.security.krb5.internal.EncKDCRepPart {
+  public sun.security.krb5.internal.EncASRepPart(sun.security.krb5.EncryptionKey, sun.security.krb5.internal.LastReq, int, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.TicketFlags, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.PrincipalName, sun.security.krb5.internal.HostAddresses, sun.security.krb5.internal.PAData[]);
+  public sun.security.krb5.internal.EncASRepPart(byte[]) throws sun.security.krb5.Asn1Exception, java.io.IOException, sun.security.krb5.KrbException;
+  public sun.security.krb5.internal.EncASRepPart(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, java.io.IOException, sun.security.krb5.KrbException;
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+}

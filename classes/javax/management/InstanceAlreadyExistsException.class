@@ -1,0 +1,5 @@
+Compiled from "InstanceAlreadyExistsException.java"
+public class javax.management.InstanceAlreadyExistsException extends javax.management.OperationsException {
+  public javax.management.InstanceAlreadyExistsException();
+  public javax.management.InstanceAlreadyExistsException(java.lang.String);
+}

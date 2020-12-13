@@ -1,0 +1,24 @@
+Compiled from "SyncProvider.java"
+public abstract class javax.sql.rowset.spi.SyncProvider {
+  public static final int GRADE_NONE;
+  public static final int GRADE_CHECK_MODIFIED_AT_COMMIT;
+  public static final int GRADE_CHECK_ALL_AT_COMMIT;
+  public static final int GRADE_LOCK_WHEN_MODIFIED;
+  public static final int GRADE_LOCK_WHEN_LOADED;
+  public static final int DATASOURCE_NO_LOCK;
+  public static final int DATASOURCE_ROW_LOCK;
+  public static final int DATASOURCE_TABLE_LOCK;
+  public static final int DATASOURCE_DB_LOCK;
+  public static final int UPDATABLE_VIEW_SYNC;
+  public static final int NONUPDATABLE_VIEW_SYNC;
+  public javax.sql.rowset.spi.SyncProvider();
+  public abstract java.lang.String getProviderID();
+  public abstract javax.sql.RowSetReader getRowSetReader();
+  public abstract javax.sql.RowSetWriter getRowSetWriter();
+  public abstract int getProviderGrade();
+  public abstract void setDataSourceLock(int) throws javax.sql.rowset.spi.SyncProviderException;
+  public abstract int getDataSourceLock() throws javax.sql.rowset.spi.SyncProviderException;
+  public abstract int supportsUpdatableView();
+  public abstract java.lang.String getVersion();
+  public abstract java.lang.String getVendor();
+}

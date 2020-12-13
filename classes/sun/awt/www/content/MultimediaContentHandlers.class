@@ -1,0 +1,5 @@
+Compiled from "MultimediaContentHandlers.java"
+public final class sun.awt.www.content.MultimediaContentHandlers implements java.net.ContentHandlerFactory {
+  public sun.awt.www.content.MultimediaContentHandlers();
+  public java.net.ContentHandler createContentHandler(java.lang.String);
+}

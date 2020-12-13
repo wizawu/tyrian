@@ -1,0 +1,3 @@
+Compiled from "DOMBuilder.java"
+public interface com.sun.org.apache.xalan.internal.xsltc.dom.DOMBuilder extends com.sun.org.apache.xalan.internal.xsltc.dom.ExtendedSAX {
+}

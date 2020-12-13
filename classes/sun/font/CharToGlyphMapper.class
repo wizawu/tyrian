@@ -1,0 +1,27 @@
+Compiled from "CharToGlyphMapper.java"
+public abstract class sun.font.CharToGlyphMapper {
+  public static final int HI_SURROGATE_START;
+  public static final int HI_SURROGATE_END;
+  public static final int LO_SURROGATE_START;
+  public static final int LO_SURROGATE_END;
+  public static final int VS_START;
+  public static final int VS_END;
+  public static final int VSS_START;
+  public static final int VSS_END;
+  public static final int UNINITIALIZED_GLYPH;
+  public static final int INVISIBLE_GLYPH_ID;
+  public static final int INVISIBLE_GLYPHS;
+  protected int missingGlyph;
+  public sun.font.CharToGlyphMapper();
+  public int getMissingGlyphCode();
+  public boolean canDisplay(char);
+  public boolean canDisplay(int);
+  public int charToGlyph(char);
+  public int charToGlyph(int);
+  public int charToVariationGlyph(int, int);
+  public abstract int getNumGlyphs();
+  public abstract void charsToGlyphs(int, char[], int[]);
+  public abstract boolean charsToGlyphsNS(int, char[], int[]);
+  public abstract void charsToGlyphs(int, int[], int[]);
+  public static boolean isVariationSelector(int);
+}

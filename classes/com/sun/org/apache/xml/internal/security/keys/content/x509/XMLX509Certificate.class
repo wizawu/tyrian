@@ -1,0 +1,13 @@
+Compiled from "XMLX509Certificate.java"
+public class com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
+  public static final java.lang.String JCA_CERT_ID;
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate(org.w3c.dom.Document, byte[]);
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Certificate(org.w3c.dom.Document, java.security.cert.X509Certificate) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public byte[] getCertificateBytes() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.security.cert.X509Certificate getX509Certificate() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.security.PublicKey getPublicKey() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException, java.io.IOException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String getBaseLocalName();
+}

@@ -1,0 +1,33 @@
+Compiled from "DatagramSocketImpl.java"
+public abstract class java.net.DatagramSocketImpl implements java.net.SocketOptions {
+  protected int localPort;
+  protected java.io.FileDescriptor fd;
+  java.net.DatagramSocket socket;
+  public java.net.DatagramSocketImpl();
+  void setDatagramSocket(java.net.DatagramSocket);
+  java.net.DatagramSocket getDatagramSocket();
+  int dataAvailable();
+  protected abstract void create() throws java.net.SocketException;
+  protected abstract void bind(int, java.net.InetAddress) throws java.net.SocketException;
+  protected abstract void send(java.net.DatagramPacket) throws java.io.IOException;
+  protected void connect(java.net.InetAddress, int) throws java.net.SocketException;
+  protected void disconnect();
+  protected abstract int peek(java.net.InetAddress) throws java.io.IOException;
+  protected abstract int peekData(java.net.DatagramPacket) throws java.io.IOException;
+  protected abstract void receive(java.net.DatagramPacket) throws java.io.IOException;
+  protected abstract void setTTL(byte) throws java.io.IOException;
+  protected abstract byte getTTL() throws java.io.IOException;
+  protected abstract void setTimeToLive(int) throws java.io.IOException;
+  protected abstract int getTimeToLive() throws java.io.IOException;
+  protected abstract void join(java.net.InetAddress) throws java.io.IOException;
+  protected abstract void leave(java.net.InetAddress) throws java.io.IOException;
+  protected abstract void joinGroup(java.net.SocketAddress, java.net.NetworkInterface) throws java.io.IOException;
+  protected abstract void leaveGroup(java.net.SocketAddress, java.net.NetworkInterface) throws java.io.IOException;
+  protected abstract void close();
+  protected int getLocalPort();
+  protected java.io.FileDescriptor getFileDescriptor();
+  protected <T> void setOption(java.net.SocketOption<T>, T) throws java.io.IOException;
+  protected <T> T getOption(java.net.SocketOption<T>) throws java.io.IOException;
+  protected java.util.Set<java.net.SocketOption<?>> supportedOptions();
+  static {};
+}

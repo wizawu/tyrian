@@ -1,0 +1,4 @@
+Compiled from "AWTError.java"
+public class java.awt.AWTError extends java.lang.Error {
+  public java.awt.AWTError(java.lang.String);
+}

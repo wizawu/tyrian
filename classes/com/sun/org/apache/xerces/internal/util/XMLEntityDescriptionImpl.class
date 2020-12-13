@@ -1,0 +1,14 @@
+Compiled from "XMLEntityDescriptionImpl.java"
+public class com.sun.org.apache.xerces.internal.util.XMLEntityDescriptionImpl extends com.sun.org.apache.xerces.internal.util.XMLResourceIdentifierImpl implements com.sun.org.apache.xerces.internal.impl.XMLEntityDescription {
+  protected java.lang.String fEntityName;
+  public com.sun.org.apache.xerces.internal.util.XMLEntityDescriptionImpl();
+  public com.sun.org.apache.xerces.internal.util.XMLEntityDescriptionImpl(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xerces.internal.util.XMLEntityDescriptionImpl(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public void setEntityName(java.lang.String);
+  public java.lang.String getEntityName();
+  public void setDescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public void setDescription(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public void clear();
+  public int hashCode();
+  public java.lang.String toString();
+}

@@ -1,0 +1,7 @@
+Compiled from "PlatformMBeanProviderImpl.java"
+public final class com.sun.management.internal.PlatformMBeanProviderImpl extends sun.management.spi.PlatformMBeanProvider {
+  static final java.lang.String DIAGNOSTIC_COMMAND_MBEAN_NAME;
+  public com.sun.management.internal.PlatformMBeanProviderImpl();
+  public java.util.List<sun.management.spi.PlatformMBeanProvider$PlatformComponent<?>> getPlatformComponentList();
+  static {};
+}

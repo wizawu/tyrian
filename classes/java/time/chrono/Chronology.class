@@ -1,0 +1,36 @@
+Compiled from "Chronology.java"
+public interface java.time.chrono.Chronology extends java.lang.Comparable<java.time.chrono.Chronology> {
+  public static java.time.chrono.Chronology from(java.time.temporal.TemporalAccessor);
+  public static java.time.chrono.Chronology ofLocale(java.util.Locale);
+  public static java.time.chrono.Chronology of(java.lang.String);
+  public static java.util.Set<java.time.chrono.Chronology> getAvailableChronologies();
+  public abstract java.lang.String getId();
+  public abstract java.lang.String getCalendarType();
+  public default java.time.chrono.ChronoLocalDate date(java.time.chrono.Era, int, int, int);
+  public abstract java.time.chrono.ChronoLocalDate date(int, int, int);
+  public default java.time.chrono.ChronoLocalDate dateYearDay(java.time.chrono.Era, int, int);
+  public abstract java.time.chrono.ChronoLocalDate dateYearDay(int, int);
+  public abstract java.time.chrono.ChronoLocalDate dateEpochDay(long);
+  public default java.time.chrono.ChronoLocalDate dateNow();
+  public default java.time.chrono.ChronoLocalDate dateNow(java.time.ZoneId);
+  public default java.time.chrono.ChronoLocalDate dateNow(java.time.Clock);
+  public abstract java.time.chrono.ChronoLocalDate date(java.time.temporal.TemporalAccessor);
+  public default java.time.chrono.ChronoLocalDateTime<? extends java.time.chrono.ChronoLocalDate> localDateTime(java.time.temporal.TemporalAccessor);
+  public default java.time.chrono.ChronoZonedDateTime<? extends java.time.chrono.ChronoLocalDate> zonedDateTime(java.time.temporal.TemporalAccessor);
+  public default java.time.chrono.ChronoZonedDateTime<? extends java.time.chrono.ChronoLocalDate> zonedDateTime(java.time.Instant, java.time.ZoneId);
+  public abstract boolean isLeapYear(long);
+  public abstract int prolepticYear(java.time.chrono.Era, int);
+  public abstract java.time.chrono.Era eraOf(int);
+  public abstract java.util.List<java.time.chrono.Era> eras();
+  public abstract java.time.temporal.ValueRange range(java.time.temporal.ChronoField);
+  public default java.lang.String getDisplayName(java.time.format.TextStyle, java.util.Locale);
+  public abstract java.time.chrono.ChronoLocalDate resolveDate(java.util.Map<java.time.temporal.TemporalField, java.lang.Long>, java.time.format.ResolverStyle);
+  public default java.time.chrono.ChronoPeriod period(int, int, int);
+  public default long epochSecond(int, int, int, int, int, int, java.time.ZoneOffset);
+  public default long epochSecond(java.time.chrono.Era, int, int, int, int, int, int, java.time.ZoneOffset);
+  public abstract int compareTo(java.time.chrono.Chronology);
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public abstract java.lang.String toString();
+  public default int compareTo(java.lang.Object);
+}

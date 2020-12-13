@@ -1,0 +1,11 @@
+Compiled from "DigesterOutputStream.java"
+public class org.jcp.xml.dsig.internal.DigesterOutputStream extends java.io.OutputStream {
+  public org.jcp.xml.dsig.internal.DigesterOutputStream(java.security.MessageDigest);
+  public org.jcp.xml.dsig.internal.DigesterOutputStream(java.security.MessageDigest, boolean);
+  public void write(int);
+  public void write(byte[], int, int);
+  public byte[] getDigestValue();
+  public java.io.InputStream getInputStream();
+  public void close() throws java.io.IOException;
+  static {};
+}

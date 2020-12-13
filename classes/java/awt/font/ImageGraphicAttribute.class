@@ -1,0 +1,13 @@
+Compiled from "ImageGraphicAttribute.java"
+public final class java.awt.font.ImageGraphicAttribute extends java.awt.font.GraphicAttribute {
+  public java.awt.font.ImageGraphicAttribute(java.awt.Image, int);
+  public java.awt.font.ImageGraphicAttribute(java.awt.Image, int, float, float);
+  public float getAscent();
+  public float getDescent();
+  public float getAdvance();
+  public java.awt.geom.Rectangle2D getBounds();
+  public void draw(java.awt.Graphics2D, float, float);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public boolean equals(java.awt.font.ImageGraphicAttribute);
+}

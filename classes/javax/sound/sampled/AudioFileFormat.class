@@ -1,0 +1,13 @@
+Compiled from "AudioFileFormat.java"
+public class javax.sound.sampled.AudioFileFormat {
+  protected javax.sound.sampled.AudioFileFormat(javax.sound.sampled.AudioFileFormat$Type, int, javax.sound.sampled.AudioFormat, int);
+  public javax.sound.sampled.AudioFileFormat(javax.sound.sampled.AudioFileFormat$Type, javax.sound.sampled.AudioFormat, int);
+  public javax.sound.sampled.AudioFileFormat(javax.sound.sampled.AudioFileFormat$Type, javax.sound.sampled.AudioFormat, int, java.util.Map<java.lang.String, java.lang.Object>);
+  public javax.sound.sampled.AudioFileFormat$Type getType();
+  public int getByteLength();
+  public javax.sound.sampled.AudioFormat getFormat();
+  public int getFrameLength();
+  public java.util.Map<java.lang.String, java.lang.Object> properties();
+  public java.lang.Object getProperty(java.lang.String);
+  public java.lang.String toString();
+}

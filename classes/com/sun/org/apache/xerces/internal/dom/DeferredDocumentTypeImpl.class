@@ -1,0 +1,9 @@
+Compiled from "DeferredDocumentTypeImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DeferredDocumentTypeImpl extends com.sun.org.apache.xerces.internal.dom.DocumentTypeImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
+  static final long serialVersionUID;
+  protected transient int fNodeIndex;
+  com.sun.org.apache.xerces.internal.dom.DeferredDocumentTypeImpl(com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl, int);
+  public int getNodeIndex();
+  protected void synchronizeData();
+  protected void synchronizeChildren();
+}

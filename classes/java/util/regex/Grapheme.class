@@ -1,0 +1,6 @@
+Compiled from "Grapheme.java"
+final class java.util.regex.Grapheme {
+  java.util.regex.Grapheme();
+  static boolean isBoundary(int, int);
+  static {};
+}

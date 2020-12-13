@@ -1,0 +1,5 @@
+Compiled from "ResourceDecompressorRepository.java"
+public final class jdk.internal.jimage.decompressor.ResourceDecompressorRepository {
+  public static jdk.internal.jimage.decompressor.ResourceDecompressor newResourceDecompressor(java.util.Properties, java.lang.String) throws java.io.IOException;
+  static {};
+}

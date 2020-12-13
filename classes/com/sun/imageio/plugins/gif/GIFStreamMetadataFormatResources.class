@@ -1,0 +1,5 @@
+Compiled from "GIFStreamMetadataFormatResources.java"
+public class com.sun.imageio.plugins.gif.GIFStreamMetadataFormatResources extends java.util.ListResourceBundle {
+  public com.sun.imageio.plugins.gif.GIFStreamMetadataFormatResources();
+  protected java.lang.Object[][] getContents();
+}

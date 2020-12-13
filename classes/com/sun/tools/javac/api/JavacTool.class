@@ -1,0 +1,14 @@
+Compiled from "JavacTool.java"
+public final class com.sun.tools.javac.api.JavacTool implements javax.tools.JavaCompiler {
+  public com.sun.tools.javac.api.JavacTool();
+  public java.lang.String name();
+  public static com.sun.tools.javac.api.JavacTool create();
+  public com.sun.tools.javac.file.JavacFileManager getStandardFileManager(javax.tools.DiagnosticListener<? super javax.tools.JavaFileObject>, java.util.Locale, java.nio.charset.Charset);
+  public com.sun.source.util.JavacTask getTask(java.io.Writer, javax.tools.JavaFileManager, javax.tools.DiagnosticListener<? super javax.tools.JavaFileObject>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<? extends javax.tools.JavaFileObject>);
+  public com.sun.source.util.JavacTask getTask(java.io.Writer, javax.tools.JavaFileManager, javax.tools.DiagnosticListener<? super javax.tools.JavaFileObject>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<? extends javax.tools.JavaFileObject>, com.sun.tools.javac.util.Context);
+  public int run(java.io.InputStream, java.io.OutputStream, java.io.OutputStream, java.lang.String...);
+  public java.util.Set<javax.lang.model.SourceVersion> getSourceVersions();
+  public int isSupportedOption(java.lang.String);
+  public javax.tools.StandardJavaFileManager getStandardFileManager(javax.tools.DiagnosticListener, java.util.Locale, java.nio.charset.Charset);
+  public javax.tools.JavaCompiler$CompilationTask getTask(java.io.Writer, javax.tools.JavaFileManager, javax.tools.DiagnosticListener, java.lang.Iterable, java.lang.Iterable, java.lang.Iterable);
+}

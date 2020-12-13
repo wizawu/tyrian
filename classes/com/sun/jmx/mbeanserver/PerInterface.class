@@ -1,0 +1,10 @@
+Compiled from "PerInterface.java"
+final class com.sun.jmx.mbeanserver.PerInterface<M> {
+  com.sun.jmx.mbeanserver.PerInterface(java.lang.Class<?>, com.sun.jmx.mbeanserver.MBeanIntrospector<M>, com.sun.jmx.mbeanserver.MBeanAnalyzer<M>, javax.management.MBeanInfo);
+  java.lang.Class<?> getMBeanInterface();
+  javax.management.MBeanInfo getMBeanInfo();
+  boolean isMXBean();
+  java.lang.Object getAttribute(java.lang.Object, java.lang.String, java.lang.Object) throws javax.management.AttributeNotFoundException, javax.management.MBeanException, javax.management.ReflectionException;
+  void setAttribute(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object) throws javax.management.AttributeNotFoundException, javax.management.InvalidAttributeValueException, javax.management.MBeanException, javax.management.ReflectionException;
+  java.lang.Object invoke(java.lang.Object, java.lang.String, java.lang.Object[], java.lang.String[], java.lang.Object) throws javax.management.MBeanException, javax.management.ReflectionException;
+}

@@ -1,0 +1,5 @@
+Compiled from "CertPathTrustManagerParameters.java"
+public class javax.net.ssl.CertPathTrustManagerParameters implements javax.net.ssl.ManagerFactoryParameters {
+  public javax.net.ssl.CertPathTrustManagerParameters(java.security.cert.CertPathParameters);
+  public java.security.cert.CertPathParameters getParameters();
+}

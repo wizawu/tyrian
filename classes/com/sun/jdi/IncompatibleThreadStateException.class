@@ -1,0 +1,5 @@
+Compiled from "IncompatibleThreadStateException.java"
+public class com.sun.jdi.IncompatibleThreadStateException extends java.lang.Exception {
+  public com.sun.jdi.IncompatibleThreadStateException();
+  public com.sun.jdi.IncompatibleThreadStateException(java.lang.String);
+}

@@ -1,0 +1,4 @@
+Compiled from "LaunchingConnector.java"
+public interface com.sun.jdi.connect.LaunchingConnector extends com.sun.jdi.connect.Connector {
+  public abstract com.sun.jdi.VirtualMachine launch(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException, com.sun.jdi.connect.VMStartException;
+}

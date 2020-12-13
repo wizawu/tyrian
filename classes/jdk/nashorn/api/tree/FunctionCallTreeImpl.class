@@ -1,0 +1,8 @@
+Compiled from "FunctionCallTreeImpl.java"
+class jdk.nashorn.api.tree.FunctionCallTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.FunctionCallTree {
+  jdk.nashorn.api.tree.FunctionCallTreeImpl(jdk.nashorn.internal.ir.CallNode, jdk.nashorn.api.tree.ExpressionTree, java.util.List<? extends jdk.nashorn.api.tree.ExpressionTree>);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public jdk.nashorn.api.tree.ExpressionTree getFunctionSelect();
+  public java.util.List<? extends jdk.nashorn.api.tree.ExpressionTree> getArguments();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

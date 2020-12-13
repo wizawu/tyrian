@@ -1,0 +1,12 @@
+Compiled from "PackageIndexWriter.java"
+public class jdk.javadoc.internal.doclets.formats.html.PackageIndexWriter extends jdk.javadoc.internal.doclets.formats.html.AbstractPackageIndexWriter {
+  public jdk.javadoc.internal.doclets.formats.html.PackageIndexWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath);
+  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void addIndex(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addPackagesList(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addOverviewHeader(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addOverviewComment(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addOverview(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addNavigationBarHeader(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addNavigationBarFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+}

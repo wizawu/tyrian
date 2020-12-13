@@ -1,0 +1,5 @@
+Compiled from "JarFileSystem.java"
+class jdk.nio.zipfs.JarFileSystem extends jdk.nio.zipfs.ZipFileSystem {
+  jdk.nio.zipfs.ZipFileSystem$IndexNode getInode(byte[]);
+  jdk.nio.zipfs.JarFileSystem(jdk.nio.zipfs.ZipFileSystemProvider, java.nio.file.Path, java.util.Map<java.lang.String, ?>) throws java.io.IOException;
+}

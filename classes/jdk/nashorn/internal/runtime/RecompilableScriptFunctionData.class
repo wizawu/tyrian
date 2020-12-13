@@ -1,0 +1,42 @@
+Compiled from "RecompilableScriptFunctionData.java"
+public final class jdk.nashorn.internal.runtime.RecompilableScriptFunctionData extends jdk.nashorn.internal.runtime.ScriptFunctionData implements jdk.nashorn.internal.runtime.logging.Loggable {
+  public static final java.lang.String RECOMPILATION_PREFIX;
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.runtime.RecompilableScriptFunctionData(jdk.nashorn.internal.ir.FunctionNode, jdk.nashorn.internal.runtime.CodeInstaller, jdk.nashorn.internal.runtime.AllocationStrategy, java.util.Map<java.lang.Integer, jdk.nashorn.internal.runtime.RecompilableScriptFunctionData>, java.util.Map<java.lang.String, java.lang.Integer>, java.util.Set<java.lang.String>);
+  public jdk.nashorn.internal.runtime.logging.DebugLogger getLogger();
+  public jdk.nashorn.internal.runtime.logging.DebugLogger initLogger(jdk.nashorn.internal.runtime.Context);
+  public boolean hasInternalSymbol(java.lang.String);
+  public int getExternalSymbolDepth(java.lang.String);
+  public java.util.Set<java.lang.String> getExternalSymbolNames();
+  public java.lang.Object getEndParserState();
+  public jdk.nashorn.internal.runtime.RecompilableScriptFunctionData getParent();
+  void setParent(jdk.nashorn.internal.runtime.RecompilableScriptFunctionData);
+  java.lang.String toSource();
+  public void initTransients(jdk.nashorn.internal.runtime.Source, jdk.nashorn.internal.runtime.CodeInstaller);
+  public java.lang.String toString();
+  public java.lang.String toStringVerbose();
+  public java.lang.String getFunctionName();
+  public boolean inDynamicContext();
+  jdk.nashorn.internal.runtime.PropertyMap getAllocatorMap(jdk.nashorn.internal.runtime.ScriptObject);
+  jdk.nashorn.internal.runtime.ScriptObject allocate(jdk.nashorn.internal.runtime.PropertyMap);
+  jdk.nashorn.internal.ir.FunctionNode reparse();
+  public void setCachedAst(jdk.nashorn.internal.ir.FunctionNode);
+  jdk.nashorn.internal.codegen.TypeMap typeMap(java.lang.invoke.MethodType);
+  jdk.nashorn.internal.codegen.Compiler getCompiler(jdk.nashorn.internal.ir.FunctionNode, java.lang.invoke.MethodType, jdk.nashorn.internal.runtime.ScriptObject, java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>, int[]);
+  boolean usePersistentCodeCache();
+  java.lang.invoke.MethodHandle lookup(jdk.nashorn.internal.ir.FunctionNode);
+  java.lang.invoke.MethodHandle lookupCodeMethod(java.lang.Class<?>, java.lang.invoke.MethodType);
+  public void initializeCode(jdk.nashorn.internal.ir.FunctionNode);
+  void initializeCode(jdk.nashorn.internal.runtime.FunctionInitializer);
+  public java.lang.Class<?> getReturnType(java.lang.invoke.MethodType, jdk.nashorn.internal.runtime.ScriptObject);
+  synchronized jdk.nashorn.internal.runtime.CompiledFunction getBest(java.lang.invoke.MethodType, jdk.nashorn.internal.runtime.ScriptObject, java.util.Collection<jdk.nashorn.internal.runtime.CompiledFunction>, boolean);
+  public boolean needsCallee();
+  public int getFunctionFlags();
+  java.lang.invoke.MethodType getGenericType();
+  public int getFunctionNodeId();
+  public jdk.nashorn.internal.runtime.Source getSource();
+  public jdk.nashorn.internal.runtime.RecompilableScriptFunctionData getScriptFunctionData(int);
+  public boolean isGlobalSymbol(jdk.nashorn.internal.ir.FunctionNode, java.lang.String);
+  public jdk.nashorn.internal.ir.FunctionNode restoreFlags(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.FunctionNode);
+  static {};
+}

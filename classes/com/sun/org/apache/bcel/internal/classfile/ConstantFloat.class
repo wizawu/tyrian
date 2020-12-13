@@ -1,0 +1,12 @@
+Compiled from "ConstantFloat.java"
+public final class com.sun.org.apache.bcel.internal.classfile.ConstantFloat extends com.sun.org.apache.bcel.internal.classfile.Constant implements com.sun.org.apache.bcel.internal.classfile.ConstantObject {
+  public com.sun.org.apache.bcel.internal.classfile.ConstantFloat(float);
+  public com.sun.org.apache.bcel.internal.classfile.ConstantFloat(com.sun.org.apache.bcel.internal.classfile.ConstantFloat);
+  com.sun.org.apache.bcel.internal.classfile.ConstantFloat(java.io.DataInput) throws java.io.IOException;
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final float getBytes();
+  public final void setBytes(float);
+  public final java.lang.String toString();
+  public java.lang.Object getConstantValue(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+}

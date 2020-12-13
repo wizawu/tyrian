@@ -1,0 +1,31 @@
+Compiled from "SchemaDOMParser.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser extends com.sun.org.apache.xerces.internal.impl.xs.opti.DefaultXMLDocumentHandler {
+  public static final java.lang.String ERROR_REPORTER;
+  public static final java.lang.String GENERATE_SYNTHETIC_ANNOTATION;
+  protected com.sun.org.apache.xerces.internal.xni.XMLLocator fLocator;
+  protected com.sun.org.apache.xerces.internal.xni.NamespaceContext fNamespaceContext;
+  com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOM schemaDOM;
+  com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration config;
+  com.sun.org.apache.xerces.internal.impl.XMLErrorReporter fErrorReporter;
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser(com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration);
+  public void startDocument(com.sun.org.apache.xerces.internal.xni.XMLLocator, java.lang.String, com.sun.org.apache.xerces.internal.xni.NamespaceContext, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endDocument(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void comment(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void processingInstruction(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void characters(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void emptyElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void ignorableWhitespace(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public org.w3c.dom.Document getDocument();
+  public void setFeature(java.lang.String, boolean);
+  public boolean getFeature(java.lang.String);
+  public void setProperty(java.lang.String, java.lang.Object);
+  public java.lang.Object getProperty(java.lang.String);
+  public void setEntityResolver(com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver);
+  public void parse(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource) throws java.io.IOException;
+  public void reset();
+  public void resetNodePool();
+}

@@ -1,0 +1,13 @@
+Compiled from "NthIterator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.dom.NthIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIteratorBase {
+  public com.sun.org.apache.xalan.internal.xsltc.dom.NthIterator(com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, int);
+  public void setRestartable(boolean);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator cloneIterator();
+  public int next();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator setStartNode(int);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator reset();
+  public int getLast();
+  public int getPosition();
+  public void setMark();
+  public void gotoMark();
+}

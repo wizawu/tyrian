@@ -1,0 +1,8 @@
+Compiled from "XSNamedMap4Types.java"
+public final class com.sun.org.apache.xerces.internal.impl.xs.util.XSNamedMap4Types extends com.sun.org.apache.xerces.internal.impl.xs.util.XSNamedMapImpl {
+  public com.sun.org.apache.xerces.internal.impl.xs.util.XSNamedMap4Types(java.lang.String, com.sun.org.apache.xerces.internal.util.SymbolHash, short);
+  public com.sun.org.apache.xerces.internal.impl.xs.util.XSNamedMap4Types(java.lang.String[], com.sun.org.apache.xerces.internal.util.SymbolHash[], int, short);
+  public synchronized int getLength();
+  public com.sun.org.apache.xerces.internal.xs.XSObject itemByName(java.lang.String, java.lang.String);
+  public synchronized com.sun.org.apache.xerces.internal.xs.XSObject item(int);
+}

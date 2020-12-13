@@ -1,0 +1,5 @@
+Compiled from "plain.java"
+public class sun.net.www.content.text.plain extends java.net.ContentHandler {
+  public sun.net.www.content.text.plain();
+  public java.lang.Object getContent(java.net.URLConnection);
+}

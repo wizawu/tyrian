@@ -1,0 +1,15 @@
+Compiled from "CharacterEvent.java"
+public class com.sun.xml.internal.stream.events.CharacterEvent extends com.sun.xml.internal.stream.events.DummyEvent implements javax.xml.stream.events.Characters {
+  public com.sun.xml.internal.stream.events.CharacterEvent();
+  public com.sun.xml.internal.stream.events.CharacterEvent(java.lang.String);
+  public com.sun.xml.internal.stream.events.CharacterEvent(java.lang.String, boolean);
+  public com.sun.xml.internal.stream.events.CharacterEvent(java.lang.String, boolean, boolean);
+  protected void init();
+  public java.lang.String getData();
+  public void setData(java.lang.String);
+  public boolean isCData();
+  public java.lang.String toString();
+  protected void writeAsEncodedUnicodeEx(java.io.Writer) throws java.io.IOException;
+  public boolean isIgnorableWhiteSpace();
+  public boolean isWhiteSpace();
+}

@@ -1,0 +1,12 @@
+Compiled from "RC2Crypt.java"
+final class com.sun.crypto.provider.RC2Crypt extends com.sun.crypto.provider.SymmetricCipher {
+  com.sun.crypto.provider.RC2Crypt();
+  int getBlockSize();
+  int getEffectiveKeyBits();
+  void initEffectiveKeyBits(int);
+  static void checkKey(java.lang.String, int) throws java.security.InvalidKeyException;
+  void init(boolean, java.lang.String, byte[]) throws java.security.InvalidKeyException;
+  void encryptBlock(byte[], int, byte[], int);
+  void decryptBlock(byte[], int, byte[], int);
+  static {};
+}

@@ -1,0 +1,38 @@
+Compiled from "Builder.java"
+final class jdk.internal.module.Builder {
+  static java.lang.module.ModuleDescriptor$Version cachedVersion;
+  final java.lang.String name;
+  boolean open;
+  boolean synthetic;
+  boolean mandated;
+  java.util.Set<java.lang.module.ModuleDescriptor$Requires> requires;
+  java.util.Set<java.lang.module.ModuleDescriptor$Exports> exports;
+  java.util.Set<java.lang.module.ModuleDescriptor$Opens> opens;
+  java.util.Set<java.lang.String> packages;
+  java.util.Set<java.lang.String> uses;
+  java.util.Set<java.lang.module.ModuleDescriptor$Provides> provides;
+  java.lang.module.ModuleDescriptor$Version version;
+  java.lang.String mainClass;
+  static final boolean $assertionsDisabled;
+  public static java.lang.module.ModuleDescriptor$Requires newRequires(java.util.Set<java.lang.module.ModuleDescriptor$Requires$Modifier>, java.lang.String, java.lang.String);
+  public static java.lang.module.ModuleDescriptor$Requires newRequires(java.util.Set<java.lang.module.ModuleDescriptor$Requires$Modifier>, java.lang.String);
+  public static java.lang.module.ModuleDescriptor$Exports newExports(java.util.Set<java.lang.module.ModuleDescriptor$Exports$Modifier>, java.lang.String, java.util.Set<java.lang.String>);
+  public static java.lang.module.ModuleDescriptor$Opens newOpens(java.util.Set<java.lang.module.ModuleDescriptor$Opens$Modifier>, java.lang.String);
+  public static java.lang.module.ModuleDescriptor$Opens newOpens(java.util.Set<java.lang.module.ModuleDescriptor$Opens$Modifier>, java.lang.String, java.util.Set<java.lang.String>);
+  public static java.lang.module.ModuleDescriptor$Exports newExports(java.util.Set<java.lang.module.ModuleDescriptor$Exports$Modifier>, java.lang.String);
+  public static java.lang.module.ModuleDescriptor$Provides newProvides(java.lang.String, java.util.List<java.lang.String>);
+  jdk.internal.module.Builder(java.lang.String);
+  jdk.internal.module.Builder open(boolean);
+  jdk.internal.module.Builder synthetic(boolean);
+  jdk.internal.module.Builder mandated(boolean);
+  public jdk.internal.module.Builder exports(java.lang.module.ModuleDescriptor$Exports[]);
+  public jdk.internal.module.Builder opens(java.lang.module.ModuleDescriptor$Opens[]);
+  public jdk.internal.module.Builder requires(java.lang.module.ModuleDescriptor$Requires[]);
+  public jdk.internal.module.Builder packages(java.util.Set<java.lang.String>);
+  public jdk.internal.module.Builder uses(java.util.Set<java.lang.String>);
+  public jdk.internal.module.Builder provides(java.lang.module.ModuleDescriptor$Provides[]);
+  public jdk.internal.module.Builder version(java.lang.String);
+  public jdk.internal.module.Builder mainClass(java.lang.String);
+  public java.lang.module.ModuleDescriptor build(int);
+  static {};
+}

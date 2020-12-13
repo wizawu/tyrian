@@ -1,0 +1,4 @@
+Compiled from "ASMifiable.java"
+public interface jdk.internal.org.objectweb.asm.util.ASMifiable {
+  public abstract void asmify(java.lang.StringBuffer, java.lang.String, java.util.Map<jdk.internal.org.objectweb.asm.Label, java.lang.String>);
+}

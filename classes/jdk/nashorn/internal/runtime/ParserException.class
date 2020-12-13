@@ -1,0 +1,11 @@
+Compiled from "ParserException.java"
+public final class jdk.nashorn.internal.runtime.ParserException extends jdk.nashorn.api.scripting.NashornException {
+  public jdk.nashorn.internal.runtime.ParserException(java.lang.String);
+  public jdk.nashorn.internal.runtime.ParserException(jdk.nashorn.internal.runtime.JSErrorType, java.lang.String, jdk.nashorn.internal.runtime.Source, int, int, long);
+  public jdk.nashorn.internal.runtime.Source getSource();
+  public long getToken();
+  public int getPosition();
+  public jdk.nashorn.internal.runtime.JSErrorType getErrorType();
+  public void throwAsEcmaException();
+  public void throwAsEcmaException(jdk.nashorn.internal.objects.Global);
+}

@@ -1,0 +1,14 @@
+Compiled from "NodeIterator.java"
+public interface com.sun.org.apache.xalan.internal.xsltc.NodeIterator extends java.lang.Cloneable {
+  public static final int END;
+  public abstract int next();
+  public abstract com.sun.org.apache.xalan.internal.xsltc.NodeIterator reset();
+  public abstract int getLast();
+  public abstract int getPosition();
+  public abstract void setMark();
+  public abstract void gotoMark();
+  public abstract com.sun.org.apache.xalan.internal.xsltc.NodeIterator setStartNode(int);
+  public abstract boolean isReverse();
+  public abstract com.sun.org.apache.xalan.internal.xsltc.NodeIterator cloneIterator();
+  public abstract void setRestartable(boolean);
+}

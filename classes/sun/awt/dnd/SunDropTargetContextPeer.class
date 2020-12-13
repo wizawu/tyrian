@@ -1,0 +1,39 @@
+Compiled from "SunDropTargetContextPeer.java"
+public abstract class sun.awt.dnd.SunDropTargetContextPeer implements java.awt.dnd.peer.DropTargetContextPeer,java.awt.datatransfer.Transferable {
+  public static final boolean DISPATCH_SYNC;
+  protected int dropStatus;
+  protected boolean dropComplete;
+  boolean dropInProcess;
+  protected static final java.lang.Object _globalLock;
+  protected static java.awt.datatransfer.Transferable currentJVMLocalSourceTransferable;
+  protected static final int STATUS_NONE;
+  protected static final int STATUS_WAIT;
+  protected static final int STATUS_ACCEPT;
+  protected static final int STATUS_REJECT;
+  public static void setCurrentJVMLocalSourceTransferable(java.awt.datatransfer.Transferable) throws java.awt.dnd.InvalidDnDOperationException;
+  public sun.awt.dnd.SunDropTargetContextPeer();
+  public java.awt.dnd.DropTarget getDropTarget();
+  public synchronized void setTargetActions(int);
+  public int getTargetActions();
+  public java.awt.datatransfer.Transferable getTransferable();
+  public java.awt.datatransfer.DataFlavor[] getTransferDataFlavors();
+  public boolean isDataFlavorSupported(java.awt.datatransfer.DataFlavor);
+  public java.lang.Object getTransferData(java.awt.datatransfer.DataFlavor) throws java.awt.datatransfer.UnsupportedFlavorException, java.io.IOException, java.awt.dnd.InvalidDnDOperationException;
+  protected abstract java.lang.Object getNativeData(long) throws java.io.IOException;
+  public boolean isTransferableJVMLocal();
+  protected void processEnterMessage(sun.awt.dnd.SunDropTargetEvent);
+  protected void processExitMessage(sun.awt.dnd.SunDropTargetEvent);
+  protected void processMotionMessage(sun.awt.dnd.SunDropTargetEvent, boolean);
+  protected void processDropMessage(sun.awt.dnd.SunDropTargetEvent);
+  protected int postDropTargetEvent(java.awt.Component, int, int, int, int, long[], long, int, boolean);
+  public synchronized void acceptDrag(int);
+  public synchronized void rejectDrag();
+  public synchronized void acceptDrop(int);
+  public synchronized void rejectDrop();
+  public synchronized void dropComplete(boolean);
+  protected abstract void doDropDone(boolean, int, boolean);
+  protected synchronized long getNativeDragContext();
+  protected void eventPosted(sun.awt.dnd.SunDropTargetEvent);
+  protected void eventProcessed(sun.awt.dnd.SunDropTargetEvent, int, boolean);
+  static {};
+}

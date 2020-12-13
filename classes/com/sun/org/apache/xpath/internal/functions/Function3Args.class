@@ -1,0 +1,14 @@
+Compiled from "Function3Args.java"
+public class com.sun.org.apache.xpath.internal.functions.Function3Args extends com.sun.org.apache.xpath.internal.functions.Function2Args {
+  static final long serialVersionUID;
+  com.sun.org.apache.xpath.internal.Expression m_arg2;
+  public com.sun.org.apache.xpath.internal.functions.Function3Args();
+  public com.sun.org.apache.xpath.internal.Expression getArg2();
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public void setArg(com.sun.org.apache.xpath.internal.Expression, int) throws com.sun.org.apache.xpath.internal.functions.WrongNumberArgsException;
+  public void checkNumberArgs(int) throws com.sun.org.apache.xpath.internal.functions.WrongNumberArgsException;
+  protected void reportWrongNumberArgs() throws com.sun.org.apache.xpath.internal.functions.WrongNumberArgsException;
+  public boolean canTraverseOutsideSubtree();
+  public void callArgVisitors(com.sun.org.apache.xpath.internal.XPathVisitor);
+  public boolean deepEquals(com.sun.org.apache.xpath.internal.Expression);
+}

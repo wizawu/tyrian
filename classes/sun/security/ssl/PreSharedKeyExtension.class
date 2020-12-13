@@ -1,0 +1,15 @@
+Compiled from "PreSharedKeyExtension.java"
+final class sun.security.ssl.PreSharedKeyExtension {
+  static final sun.security.ssl.HandshakeProducer chNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer chOnLoadConsumer;
+  static final sun.security.ssl.HandshakeAbsence chOnLoadAbsence;
+  static final sun.security.ssl.HandshakeConsumer chOnTradeConsumer;
+  static final sun.security.ssl.HandshakeAbsence chOnTradAbsence;
+  static final sun.security.ssl.SSLStringizer chStringizer;
+  static final sun.security.ssl.HandshakeProducer shNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer shOnLoadConsumer;
+  static final sun.security.ssl.HandshakeAbsence shOnLoadAbsence;
+  static final sun.security.ssl.SSLStringizer shStringizer;
+  sun.security.ssl.PreSharedKeyExtension();
+  static {};
+}

@@ -1,0 +1,12 @@
+Compiled from "FileTreeWalker.java"
+class java.nio.file.FileTreeWalker implements java.io.Closeable {
+  static final boolean $assertionsDisabled;
+  java.nio.file.FileTreeWalker(java.util.Collection<java.nio.file.FileVisitOption>, int);
+  java.nio.file.FileTreeWalker$Event walk(java.nio.file.Path);
+  java.nio.file.FileTreeWalker$Event next();
+  void pop();
+  void skipRemainingSiblings();
+  boolean isOpen();
+  public void close();
+  static {};
+}

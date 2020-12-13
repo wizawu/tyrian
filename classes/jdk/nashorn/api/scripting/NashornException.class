@@ -1,0 +1,20 @@
+Compiled from "NashornException.java"
+public abstract class jdk.nashorn.api.scripting.NashornException extends java.lang.RuntimeException {
+  static final boolean $assertionsDisabled;
+  protected jdk.nashorn.api.scripting.NashornException(java.lang.String, java.lang.String, int, int);
+  protected jdk.nashorn.api.scripting.NashornException(java.lang.String, java.lang.Throwable, java.lang.String, int, int);
+  protected jdk.nashorn.api.scripting.NashornException(java.lang.String, java.lang.Throwable);
+  public final java.lang.String getFileName();
+  public final void setFileName(java.lang.String);
+  public final int getLineNumber();
+  public final void setLineNumber(int);
+  public final int getColumnNumber();
+  public final void setColumnNumber(int);
+  public static java.lang.StackTraceElement[] getScriptFrames(java.lang.Throwable);
+  public static java.lang.String getScriptStackString(java.lang.Throwable);
+  protected java.lang.Object getThrown();
+  jdk.nashorn.api.scripting.NashornException initEcmaError(jdk.nashorn.internal.runtime.ScriptObject);
+  public java.lang.Object getEcmaError();
+  public void setEcmaError(java.lang.Object);
+  static {};
+}

@@ -1,0 +1,30 @@
+Compiled from "CompositeFont.java"
+public final class sun.font.CompositeFont extends sun.font.Font2D {
+  java.lang.String[] componentFileNames;
+  java.lang.String[] componentNames;
+  int numSlots;
+  int numMetricsSlots;
+  int[] exclusionRanges;
+  int[] maxIndices;
+  int numGlyphs;
+  int localeSlot;
+  boolean isStdComposite;
+  public sun.font.CompositeFont(java.lang.String, java.lang.String[], java.lang.String[], int, int[], int[], boolean, sun.font.SunFontManager);
+  sun.font.CompositeFont(sun.font.PhysicalFont[]);
+  sun.font.CompositeFont(sun.font.PhysicalFont, sun.font.CompositeFont);
+  void replaceComponentFont(sun.font.PhysicalFont, sun.font.PhysicalFont);
+  public boolean isExcludedChar(int, int);
+  public void getStyleMetrics(float, float[], int);
+  public int getNumSlots();
+  public sun.font.PhysicalFont getSlotFont(int);
+  sun.font.FontStrike createStrike(sun.font.FontStrikeDesc);
+  public boolean isStdComposite();
+  protected int getValidatedGlyphCode(int);
+  public sun.font.CharToGlyphMapper getMapper();
+  public boolean hasSupplementaryChars();
+  public int getNumGlyphs();
+  public int getMissingGlyphCode();
+  public boolean canDisplay(char);
+  public boolean useAAForPtSize(int);
+  public java.lang.String toString();
+}

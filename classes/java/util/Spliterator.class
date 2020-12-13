@@ -1,0 +1,19 @@
+Compiled from "Spliterator.java"
+public interface java.util.Spliterator<T> {
+  public static final int ORDERED;
+  public static final int DISTINCT;
+  public static final int SORTED;
+  public static final int SIZED;
+  public static final int NONNULL;
+  public static final int IMMUTABLE;
+  public static final int CONCURRENT;
+  public static final int SUBSIZED;
+  public abstract boolean tryAdvance(java.util.function.Consumer<? super T>);
+  public default void forEachRemaining(java.util.function.Consumer<? super T>);
+  public abstract java.util.Spliterator<T> trySplit();
+  public abstract long estimateSize();
+  public default long getExactSizeIfKnown();
+  public abstract int characteristics();
+  public default boolean hasCharacteristics(int);
+  public default java.util.Comparator<? super T> getComparator();
+}

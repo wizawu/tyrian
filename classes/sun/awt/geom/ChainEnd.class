@@ -1,0 +1,14 @@
+Compiled from "ChainEnd.java"
+final class sun.awt.geom.ChainEnd {
+  sun.awt.geom.CurveLink head;
+  sun.awt.geom.CurveLink tail;
+  sun.awt.geom.ChainEnd partner;
+  int etag;
+  public sun.awt.geom.ChainEnd(sun.awt.geom.CurveLink, sun.awt.geom.ChainEnd);
+  public sun.awt.geom.CurveLink getChain();
+  public void setOtherEnd(sun.awt.geom.ChainEnd);
+  public sun.awt.geom.ChainEnd getPartner();
+  public sun.awt.geom.CurveLink linkTo(sun.awt.geom.ChainEnd);
+  public void addLink(sun.awt.geom.CurveLink);
+  public double getX();
+}

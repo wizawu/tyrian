@@ -1,0 +1,44 @@
+Compiled from "FileSystem.java"
+abstract class java.io.FileSystem {
+  public static final int BA_EXISTS;
+  public static final int BA_REGULAR;
+  public static final int BA_DIRECTORY;
+  public static final int BA_HIDDEN;
+  public static final int ACCESS_READ;
+  public static final int ACCESS_WRITE;
+  public static final int ACCESS_EXECUTE;
+  public static final int SPACE_TOTAL;
+  public static final int SPACE_FREE;
+  public static final int SPACE_USABLE;
+  static boolean useCanonCaches;
+  static boolean useCanonPrefixCache;
+  java.io.FileSystem();
+  public abstract char getSeparator();
+  public abstract char getPathSeparator();
+  public abstract java.lang.String normalize(java.lang.String);
+  public abstract int prefixLength(java.lang.String);
+  public abstract java.lang.String resolve(java.lang.String, java.lang.String);
+  public abstract java.lang.String getDefaultParent();
+  public abstract java.lang.String fromURIPath(java.lang.String);
+  public abstract boolean isAbsolute(java.io.File);
+  public abstract java.lang.String resolve(java.io.File);
+  public abstract java.lang.String canonicalize(java.lang.String) throws java.io.IOException;
+  public abstract int getBooleanAttributes(java.io.File);
+  public abstract boolean checkAccess(java.io.File, int);
+  public abstract boolean setPermission(java.io.File, int, boolean, boolean);
+  public abstract long getLastModifiedTime(java.io.File);
+  public abstract long getLength(java.io.File);
+  public abstract boolean createFileExclusively(java.lang.String) throws java.io.IOException;
+  public abstract boolean delete(java.io.File);
+  public abstract java.lang.String[] list(java.io.File);
+  public abstract boolean createDirectory(java.io.File);
+  public abstract boolean rename(java.io.File, java.io.File);
+  public abstract boolean setLastModifiedTime(java.io.File, long);
+  public abstract boolean setReadOnly(java.io.File);
+  public abstract java.io.File[] listRoots();
+  public abstract long getSpace(java.io.File, int);
+  public abstract int getNameMax(java.lang.String);
+  public abstract int compare(java.io.File, java.io.File);
+  public abstract int hashCode(java.io.File);
+  static {};
+}

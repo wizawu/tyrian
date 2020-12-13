@@ -1,0 +1,6 @@
+Compiled from "InstructionComparator.java"
+public interface com.sun.org.apache.bcel.internal.generic.InstructionComparator {
+  public static final com.sun.org.apache.bcel.internal.generic.InstructionComparator DEFAULT;
+  public abstract boolean equals(com.sun.org.apache.bcel.internal.generic.Instruction, com.sun.org.apache.bcel.internal.generic.Instruction);
+  static {};
+}

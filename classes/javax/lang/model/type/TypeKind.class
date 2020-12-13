@@ -1,0 +1,29 @@
+Compiled from "TypeKind.java"
+public final class javax.lang.model.type.TypeKind extends java.lang.Enum<javax.lang.model.type.TypeKind> {
+  public static final javax.lang.model.type.TypeKind BOOLEAN;
+  public static final javax.lang.model.type.TypeKind BYTE;
+  public static final javax.lang.model.type.TypeKind SHORT;
+  public static final javax.lang.model.type.TypeKind INT;
+  public static final javax.lang.model.type.TypeKind LONG;
+  public static final javax.lang.model.type.TypeKind CHAR;
+  public static final javax.lang.model.type.TypeKind FLOAT;
+  public static final javax.lang.model.type.TypeKind DOUBLE;
+  public static final javax.lang.model.type.TypeKind VOID;
+  public static final javax.lang.model.type.TypeKind NONE;
+  public static final javax.lang.model.type.TypeKind NULL;
+  public static final javax.lang.model.type.TypeKind ARRAY;
+  public static final javax.lang.model.type.TypeKind DECLARED;
+  public static final javax.lang.model.type.TypeKind ERROR;
+  public static final javax.lang.model.type.TypeKind TYPEVAR;
+  public static final javax.lang.model.type.TypeKind WILDCARD;
+  public static final javax.lang.model.type.TypeKind PACKAGE;
+  public static final javax.lang.model.type.TypeKind EXECUTABLE;
+  public static final javax.lang.model.type.TypeKind OTHER;
+  public static final javax.lang.model.type.TypeKind UNION;
+  public static final javax.lang.model.type.TypeKind INTERSECTION;
+  public static final javax.lang.model.type.TypeKind MODULE;
+  public static javax.lang.model.type.TypeKind[] values();
+  public static javax.lang.model.type.TypeKind valueOf(java.lang.String);
+  public boolean isPrimitive();
+  static {};
+}

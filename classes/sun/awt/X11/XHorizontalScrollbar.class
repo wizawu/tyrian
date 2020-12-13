@@ -1,0 +1,8 @@
+Compiled from "XHorizontalScrollbar.java"
+class sun.awt.X11.XHorizontalScrollbar extends sun.awt.X11.XScrollbar {
+  public sun.awt.X11.XHorizontalScrollbar(sun.awt.X11.XScrollbarClient);
+  public void setSize(int, int);
+  protected void rebuildArrows();
+  boolean beforeThumb(int, int);
+  protected java.awt.Rectangle getThumbArea();
+}

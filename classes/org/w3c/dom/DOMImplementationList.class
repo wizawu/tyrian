@@ -1,0 +1,5 @@
+Compiled from "DOMImplementationList.java"
+public interface org.w3c.dom.DOMImplementationList {
+  public abstract org.w3c.dom.DOMImplementation item(int);
+  public abstract int getLength();
+}

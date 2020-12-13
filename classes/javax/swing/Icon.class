@@ -1,0 +1,6 @@
+Compiled from "Icon.java"
+public interface javax.swing.Icon {
+  public abstract void paintIcon(java.awt.Component, java.awt.Graphics, int, int);
+  public abstract int getIconWidth();
+  public abstract int getIconHeight();
+}

@@ -1,0 +1,6 @@
+Compiled from "MachCallNode.java"
+public class sun.jvm.hotspot.opto.MachCallNode extends sun.jvm.hotspot.opto.MachSafePointNode {
+  public sun.jvm.hotspot.opto.MachCallNode(sun.jvm.hotspot.debugger.Address);
+  public void dumpSpec(java.io.PrintStream);
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "BreakpointRequest.java"
+public interface com.sun.jdi.request.BreakpointRequest extends com.sun.jdi.request.EventRequest,com.sun.jdi.Locatable {
+  public abstract com.sun.jdi.Location location();
+  public abstract void addThreadFilter(com.sun.jdi.ThreadReference);
+  public abstract void addInstanceFilter(com.sun.jdi.ObjectReference);
+}

@@ -1,0 +1,13 @@
+Compiled from "BatchEnvironment.java"
+public class sun.rmi.rmic.BatchEnvironment extends sun.tools.javac.BatchEnvironment {
+  public static sun.tools.java.ClassPath createClassPath(java.lang.String);
+  public static sun.tools.java.ClassPath createClassPath(java.lang.String, java.lang.String);
+  public sun.rmi.rmic.BatchEnvironment(java.io.OutputStream, sun.tools.java.ClassPath, sun.rmi.rmic.Main);
+  public sun.rmi.rmic.Main getMain();
+  public sun.tools.java.ClassPath getClassPath();
+  public void addGeneratedFile(java.io.File);
+  public void deleteGeneratedFiles();
+  public void shutdown();
+  public java.lang.String errorString(java.lang.String, java.lang.Object, java.lang.Object, java.lang.Object);
+  public void reset();
+}

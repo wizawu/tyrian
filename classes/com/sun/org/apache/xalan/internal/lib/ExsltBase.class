@@ -1,0 +1,6 @@
+Compiled from "ExsltBase.java"
+public abstract class com.sun.org.apache.xalan.internal.lib.ExsltBase {
+  public com.sun.org.apache.xalan.internal.lib.ExsltBase();
+  protected static java.lang.String toString(org.w3c.dom.Node);
+  protected static double toNumber(org.w3c.dom.Node);
+}

@@ -1,0 +1,13 @@
+Compiled from "FrameSetView.java"
+class javax.swing.text.html.FrameSetView extends javax.swing.text.BoxView {
+  java.lang.String[] children;
+  int[] percentChildren;
+  int[] absoluteChildren;
+  int[] relativeChildren;
+  int percentTotals;
+  int absoluteTotals;
+  int relativeTotals;
+  public javax.swing.text.html.FrameSetView(javax.swing.text.Element, int);
+  protected void layoutMajorAxis(int, int, int[], int[]);
+  protected javax.swing.SizeRequirements[] getChildRequests(int, int);
+}

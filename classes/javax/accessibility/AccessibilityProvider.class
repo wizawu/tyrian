@@ -1,0 +1,6 @@
+Compiled from "AccessibilityProvider.java"
+public abstract class javax.accessibility.AccessibilityProvider {
+  protected javax.accessibility.AccessibilityProvider();
+  public abstract java.lang.String getName();
+  public abstract void activate();
+}

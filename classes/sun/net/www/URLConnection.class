@@ -1,0 +1,23 @@
+Compiled from "URLConnection.java"
+public abstract class sun.net.www.URLConnection extends java.net.URLConnection {
+  protected sun.net.www.MessageHeader properties;
+  public sun.net.www.URLConnection(java.net.URL);
+  public sun.net.www.MessageHeader getProperties();
+  public void setProperties(sun.net.www.MessageHeader);
+  public void setRequestProperty(java.lang.String, java.lang.String);
+  public void addRequestProperty(java.lang.String, java.lang.String);
+  public java.lang.String getRequestProperty(java.lang.String);
+  public java.util.Map<java.lang.String, java.util.List<java.lang.String>> getRequestProperties();
+  public java.lang.String getHeaderField(java.lang.String);
+  public java.lang.String getHeaderFieldKey(int);
+  public java.lang.String getHeaderField(int);
+  public java.lang.String getContentType();
+  public void setContentType(java.lang.String);
+  public int getContentLength();
+  protected void setContentLength(int);
+  public boolean canCache();
+  public void close();
+  public static synchronized void setProxiedHost(java.lang.String);
+  public static synchronized boolean isProxiedHost(java.lang.String);
+  static {};
+}

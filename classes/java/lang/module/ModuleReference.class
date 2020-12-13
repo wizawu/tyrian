@@ -1,0 +1,7 @@
+Compiled from "ModuleReference.java"
+public abstract class java.lang.module.ModuleReference {
+  protected java.lang.module.ModuleReference(java.lang.module.ModuleDescriptor, java.net.URI);
+  public final java.lang.module.ModuleDescriptor descriptor();
+  public final java.util.Optional<java.net.URI> location();
+  public abstract java.lang.module.ModuleReader open() throws java.io.IOException;
+}

@@ -1,0 +1,10 @@
+Compiled from "Tokens.java"
+public class com.sun.tools.javac.parser.Tokens {
+  public static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.parser.Tokens> tokensKey;
+  public static final com.sun.tools.javac.parser.Tokens$Token DUMMY;
+  public static com.sun.tools.javac.parser.Tokens instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.parser.Tokens(com.sun.tools.javac.util.Context);
+  com.sun.tools.javac.parser.Tokens$TokenKind lookupKind(com.sun.tools.javac.util.Name);
+  com.sun.tools.javac.parser.Tokens$TokenKind lookupKind(java.lang.String);
+  static {};
+}

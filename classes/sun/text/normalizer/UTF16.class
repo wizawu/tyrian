@@ -1,0 +1,23 @@
+Compiled from "UTF16.java"
+public final class sun.text.normalizer.UTF16 {
+  public static final int CODEPOINT_MIN_VALUE;
+  public static final int CODEPOINT_MAX_VALUE;
+  public static final int SUPPLEMENTARY_MIN_VALUE;
+  public static final int LEAD_SURROGATE_MIN_VALUE;
+  public static final int TRAIL_SURROGATE_MIN_VALUE;
+  public static final int LEAD_SURROGATE_MAX_VALUE;
+  public static final int TRAIL_SURROGATE_MAX_VALUE;
+  public static final int SURROGATE_MIN_VALUE;
+  public static int charAt(java.lang.String, int);
+  public static int charAt(java.lang.CharSequence, int);
+  public static int charAt(char[], int, int, int);
+  public static int getCharCount(int);
+  public static boolean isSurrogate(char);
+  public static boolean isTrailSurrogate(char);
+  public static boolean isLeadSurrogate(char);
+  public static char getLeadSurrogate(int);
+  public static char getTrailSurrogate(int);
+  public static java.lang.String valueOf(int);
+  public static java.lang.StringBuffer append(java.lang.StringBuffer, int);
+  public static int moveCodePointOffset(char[], int, int, int, int);
+}

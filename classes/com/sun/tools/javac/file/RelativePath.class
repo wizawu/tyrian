@@ -1,0 +1,15 @@
+Compiled from "RelativePath.java"
+public abstract class com.sun.tools.javac.file.RelativePath implements java.lang.Comparable<com.sun.tools.javac.file.RelativePath> {
+  protected final java.lang.String path;
+  protected com.sun.tools.javac.file.RelativePath(java.lang.String);
+  public abstract com.sun.tools.javac.file.RelativePath$RelativeDirectory dirname();
+  public abstract java.lang.String basename();
+  public java.nio.file.Path resolveAgainst(java.nio.file.Path) throws java.nio.file.InvalidPathException;
+  public java.nio.file.Path resolveAgainst(java.nio.file.FileSystem) throws java.nio.file.InvalidPathException;
+  public int compareTo(com.sun.tools.javac.file.RelativePath);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public java.lang.String getPath();
+  public int compareTo(java.lang.Object);
+}

@@ -1,0 +1,20 @@
+Compiled from "InvocationEvent.java"
+public class java.awt.event.InvocationEvent extends java.awt.AWTEvent implements java.awt.ActiveEvent {
+  public static final int INVOCATION_FIRST;
+  public static final int INVOCATION_DEFAULT;
+  public static final int INVOCATION_LAST;
+  protected java.lang.Runnable runnable;
+  protected volatile java.lang.Object notifier;
+  protected boolean catchExceptions;
+  public java.awt.event.InvocationEvent(java.lang.Object, java.lang.Runnable);
+  public java.awt.event.InvocationEvent(java.lang.Object, java.lang.Runnable, java.lang.Object, boolean);
+  public java.awt.event.InvocationEvent(java.lang.Object, java.lang.Runnable, java.lang.Runnable, boolean);
+  protected java.awt.event.InvocationEvent(java.lang.Object, int, java.lang.Runnable, java.lang.Object, boolean);
+  public void dispatch();
+  public java.lang.Exception getException();
+  public java.lang.Throwable getThrowable();
+  public long getWhen();
+  public boolean isDispatched();
+  public java.lang.String paramString();
+  static {};
+}

@@ -1,0 +1,12 @@
+Compiled from "Content.java"
+public abstract class jdk.javadoc.internal.doclets.toolkit.Content {
+  public jdk.javadoc.internal.doclets.toolkit.Content();
+  public java.lang.String toString();
+  public abstract void addContent(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addContent(java.lang.CharSequence);
+  public abstract boolean write(java.io.Writer, boolean) throws java.io.IOException;
+  public abstract boolean isEmpty();
+  public boolean isValid();
+  public int charCount();
+  protected static <T> T nullCheck(T);
+}

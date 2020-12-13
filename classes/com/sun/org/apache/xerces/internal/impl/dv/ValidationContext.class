@@ -1,0 +1,15 @@
+Compiled from "ValidationContext.java"
+public interface com.sun.org.apache.xerces.internal.impl.dv.ValidationContext {
+  public abstract boolean needFacetChecking();
+  public abstract boolean needExtraChecking();
+  public abstract boolean needToNormalize();
+  public abstract boolean useNamespaces();
+  public abstract boolean isEntityDeclared(java.lang.String);
+  public abstract boolean isEntityUnparsed(java.lang.String);
+  public abstract boolean isIdDeclared(java.lang.String);
+  public abstract void addId(java.lang.String);
+  public abstract void addIdRef(java.lang.String);
+  public abstract java.lang.String getSymbol(java.lang.String);
+  public abstract java.lang.String getURI(java.lang.String);
+  public abstract java.util.Locale getLocale();
+}

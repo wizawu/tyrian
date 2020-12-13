@@ -1,0 +1,6 @@
+Compiled from "GlyphLayout.java"
+public final class sun.font.GlyphLayout {
+  public static sun.font.GlyphLayout get(sun.font.GlyphLayout$LayoutEngineFactory);
+  public static void done(sun.font.GlyphLayout);
+  public sun.font.StandardGlyphVector layout(java.awt.Font, java.awt.font.FontRenderContext, char[], int, int, int, sun.font.StandardGlyphVector);
+}

@@ -1,0 +1,4 @@
+Compiled from "ECKey.java"
+public interface java.security.interfaces.ECKey {
+  public abstract java.security.spec.ECParameterSpec getParams();
+}

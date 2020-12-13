@@ -1,0 +1,23 @@
+Compiled from "DescriptorSupport.java"
+public class javax.management.modelmbean.DescriptorSupport implements javax.management.Descriptor {
+  public javax.management.modelmbean.DescriptorSupport();
+  public javax.management.modelmbean.DescriptorSupport(int) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public javax.management.modelmbean.DescriptorSupport(javax.management.modelmbean.DescriptorSupport);
+  public javax.management.modelmbean.DescriptorSupport(java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException, javax.management.modelmbean.XMLParseException;
+  public javax.management.modelmbean.DescriptorSupport(java.lang.String[], java.lang.Object[]) throws javax.management.RuntimeOperationsException;
+  public javax.management.modelmbean.DescriptorSupport(java.lang.String...);
+  public synchronized java.lang.Object getFieldValue(java.lang.String) throws javax.management.RuntimeOperationsException;
+  public synchronized void setField(java.lang.String, java.lang.Object) throws javax.management.RuntimeOperationsException;
+  public synchronized java.lang.String[] getFields();
+  public synchronized java.lang.String[] getFieldNames();
+  public synchronized java.lang.Object[] getFieldValues(java.lang.String...);
+  public synchronized void setFields(java.lang.String[], java.lang.Object[]) throws javax.management.RuntimeOperationsException;
+  public synchronized java.lang.Object clone() throws javax.management.RuntimeOperationsException;
+  public synchronized void removeField(java.lang.String);
+  public synchronized boolean equals(java.lang.Object);
+  public synchronized int hashCode();
+  public synchronized boolean isValid() throws javax.management.RuntimeOperationsException;
+  public synchronized java.lang.String toXMLString();
+  public synchronized java.lang.String toString();
+  static {};
+}

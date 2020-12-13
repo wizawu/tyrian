@@ -1,0 +1,10 @@
+Compiled from "GZIPInputStream.java"
+public class java.util.zip.GZIPInputStream extends java.util.zip.InflaterInputStream {
+  protected java.util.zip.CRC32 crc;
+  protected boolean eos;
+  public static final int GZIP_MAGIC;
+  public java.util.zip.GZIPInputStream(java.io.InputStream, int) throws java.io.IOException;
+  public java.util.zip.GZIPInputStream(java.io.InputStream) throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

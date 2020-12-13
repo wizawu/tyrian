@@ -1,0 +1,7 @@
+Compiled from "SplitIndexWriter.java"
+public class jdk.javadoc.internal.doclets.formats.html.SplitIndexWriter extends jdk.javadoc.internal.doclets.formats.html.AbstractIndexWriter {
+  public jdk.javadoc.internal.doclets.formats.html.SplitIndexWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath, jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder, java.util.Collection<java.lang.Character>);
+  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void generateIndexFile(java.lang.Character) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void addLinksForIndexes(jdk.javadoc.internal.doclets.toolkit.Content);
+}

@@ -1,0 +1,7 @@
+Compiled from "RelinkableCallSite.java"
+public interface jdk.dynalink.RelinkableCallSite {
+  public abstract void initialize(java.lang.invoke.MethodHandle);
+  public abstract jdk.dynalink.CallSiteDescriptor getDescriptor();
+  public abstract void relink(jdk.dynalink.linker.GuardedInvocation, java.lang.invoke.MethodHandle);
+  public abstract void resetAndRelink(jdk.dynalink.linker.GuardedInvocation, java.lang.invoke.MethodHandle);
+}

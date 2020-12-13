@@ -1,0 +1,10 @@
+Compiled from "XADataSource.java"
+public interface javax.sql.XADataSource extends javax.sql.CommonDataSource {
+  public abstract javax.sql.XAConnection getXAConnection() throws java.sql.SQLException;
+  public abstract javax.sql.XAConnection getXAConnection(java.lang.String, java.lang.String) throws java.sql.SQLException;
+  public abstract java.io.PrintWriter getLogWriter() throws java.sql.SQLException;
+  public abstract void setLogWriter(java.io.PrintWriter) throws java.sql.SQLException;
+  public abstract void setLoginTimeout(int) throws java.sql.SQLException;
+  public abstract int getLoginTimeout() throws java.sql.SQLException;
+  public default javax.sql.XAConnectionBuilder createXAConnectionBuilder() throws java.sql.SQLException;
+}

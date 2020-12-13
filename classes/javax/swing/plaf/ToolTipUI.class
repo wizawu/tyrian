@@ -1,0 +1,4 @@
+Compiled from "ToolTipUI.java"
+public abstract class javax.swing.plaf.ToolTipUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.ToolTipUI();
+}

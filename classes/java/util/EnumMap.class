@@ -1,0 +1,23 @@
+Compiled from "EnumMap.java"
+public class java.util.EnumMap<K extends java.lang.Enum<K>, V> extends java.util.AbstractMap<K, V> implements java.io.Serializable, java.lang.Cloneable {
+  public java.util.EnumMap(java.lang.Class<K>);
+  public java.util.EnumMap(java.util.EnumMap<K, ? extends V>);
+  public java.util.EnumMap(java.util.Map<K, ? extends V>);
+  public int size();
+  public boolean containsValue(java.lang.Object);
+  public boolean containsKey(java.lang.Object);
+  public V get(java.lang.Object);
+  public V put(K, V);
+  public V remove(java.lang.Object);
+  public void putAll(java.util.Map<? extends K, ? extends V>);
+  public void clear();
+  public java.util.Set<K> keySet();
+  public java.util.Collection<V> values();
+  public java.util.Set<java.util.Map$Entry<K, V>> entrySet();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.util.EnumMap<K, V> clone();
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public java.lang.Object put(java.lang.Object, java.lang.Object);
+  static {};
+}

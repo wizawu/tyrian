@@ -1,0 +1,7 @@
+Compiled from "TIFFDeflateDecompressor.java"
+public class com.sun.imageio.plugins.tiff.TIFFDeflateDecompressor extends com.sun.imageio.plugins.tiff.TIFFDecompressor {
+  java.util.zip.Inflater inflater;
+  int predictor;
+  public com.sun.imageio.plugins.tiff.TIFFDeflateDecompressor(int) throws javax.imageio.IIOException;
+  public synchronized void decodeRaw(byte[], int, int, int) throws java.io.IOException;
+}

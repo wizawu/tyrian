@@ -1,0 +1,14 @@
+Compiled from "LineNumber.java"
+public final class com.sun.org.apache.bcel.internal.classfile.LineNumber implements java.lang.Cloneable,com.sun.org.apache.bcel.internal.classfile.Node {
+  public com.sun.org.apache.bcel.internal.classfile.LineNumber(com.sun.org.apache.bcel.internal.classfile.LineNumber);
+  com.sun.org.apache.bcel.internal.classfile.LineNumber(java.io.DataInput) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.LineNumber(int, int);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final int getLineNumber();
+  public final int getStartPC();
+  public final void setLineNumber(int);
+  public final void setStartPC(int);
+  public final java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.classfile.LineNumber copy();
+}

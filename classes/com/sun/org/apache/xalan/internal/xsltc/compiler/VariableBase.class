@@ -1,0 +1,32 @@
+Compiled from "VariableBase.java"
+class com.sun.org.apache.xalan.internal.xsltc.compiler.VariableBase extends com.sun.org.apache.xalan.internal.xsltc.compiler.TopLevelElement {
+  protected com.sun.org.apache.xalan.internal.xsltc.compiler.QName _name;
+  protected java.lang.String _escapedName;
+  protected com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type _type;
+  protected boolean _isLocal;
+  protected com.sun.org.apache.bcel.internal.generic.LocalVariableGen _local;
+  protected com.sun.org.apache.bcel.internal.generic.Instruction _loadInstruction;
+  protected com.sun.org.apache.bcel.internal.generic.Instruction _storeInstruction;
+  protected com.sun.org.apache.xalan.internal.xsltc.compiler.Expression _select;
+  protected java.lang.String select;
+  protected java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase> _refs;
+  protected boolean _ignore;
+  com.sun.org.apache.xalan.internal.xsltc.compiler.VariableBase();
+  public void disable();
+  public void addReference(com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase);
+  public void copyReferences(com.sun.org.apache.xalan.internal.xsltc.compiler.VariableBase);
+  public void mapRegister(com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public void unmapRegister(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public com.sun.org.apache.bcel.internal.generic.Instruction loadInstruction();
+  public com.sun.org.apache.bcel.internal.generic.Instruction storeInstruction();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Expression getExpression();
+  public java.lang.String toString();
+  public void display(int);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type getType();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.QName getName();
+  public java.lang.String getEscapedName();
+  public void setName(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public boolean isLocal();
+  public void parseContents(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+  public void translateValue(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

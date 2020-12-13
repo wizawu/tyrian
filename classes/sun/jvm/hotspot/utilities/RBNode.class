@@ -1,0 +1,15 @@
+Compiled from "RBNode.java"
+public class sun.jvm.hotspot.utilities.RBNode {
+  public sun.jvm.hotspot.utilities.RBNode(java.lang.Object);
+  public java.lang.Object getData();
+  public void copyFrom(sun.jvm.hotspot.utilities.RBNode);
+  public boolean update();
+  public sun.jvm.hotspot.utilities.RBColor getColor();
+  public void setColor(sun.jvm.hotspot.utilities.RBColor);
+  public sun.jvm.hotspot.utilities.RBNode getParent();
+  public void setParent(sun.jvm.hotspot.utilities.RBNode);
+  public sun.jvm.hotspot.utilities.RBNode getLeft();
+  public void setLeft(sun.jvm.hotspot.utilities.RBNode);
+  public sun.jvm.hotspot.utilities.RBNode getRight();
+  public void setRight(sun.jvm.hotspot.utilities.RBNode);
+}

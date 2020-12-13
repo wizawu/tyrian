@@ -1,0 +1,7 @@
+Compiled from "AsynchronousByteChannel.java"
+public interface java.nio.channels.AsynchronousByteChannel extends java.nio.channels.AsynchronousChannel {
+  public abstract <A> void read(java.nio.ByteBuffer, A, java.nio.channels.CompletionHandler<java.lang.Integer, ? super A>);
+  public abstract java.util.concurrent.Future<java.lang.Integer> read(java.nio.ByteBuffer);
+  public abstract <A> void write(java.nio.ByteBuffer, A, java.nio.channels.CompletionHandler<java.lang.Integer, ? super A>);
+  public abstract java.util.concurrent.Future<java.lang.Integer> write(java.nio.ByteBuffer);
+}

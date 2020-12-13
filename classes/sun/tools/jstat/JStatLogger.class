@@ -1,0 +1,9 @@
+Compiled from "JStatLogger.java"
+public class sun.tools.jstat.JStatLogger {
+  public sun.tools.jstat.JStatLogger(sun.jvmstat.monitor.MonitoredVm);
+  public void printNames(java.lang.String, java.util.Comparator<sun.jvmstat.monitor.Monitor>, boolean, java.io.PrintStream) throws sun.jvmstat.monitor.MonitorException, java.util.regex.PatternSyntaxException;
+  public void printSnapShot(java.lang.String, java.util.Comparator<sun.jvmstat.monitor.Monitor>, boolean, boolean, java.io.PrintStream) throws sun.jvmstat.monitor.MonitorException, java.util.regex.PatternSyntaxException;
+  public void printList(java.util.List<sun.jvmstat.monitor.Monitor>, boolean, boolean, java.io.PrintStream) throws sun.jvmstat.monitor.MonitorException;
+  public void stopLogging();
+  public void logSamples(sun.tools.jstat.OutputFormatter, int, int, int, java.io.PrintStream) throws sun.jvmstat.monitor.MonitorException;
+}

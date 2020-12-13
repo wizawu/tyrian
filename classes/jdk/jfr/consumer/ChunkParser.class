@@ -1,0 +1,9 @@
+Compiled from "ChunkParser.java"
+final class jdk.jfr.consumer.ChunkParser {
+  public jdk.jfr.consumer.ChunkParser(jdk.jfr.internal.consumer.RecordingInput) throws java.io.IOException;
+  public jdk.jfr.consumer.RecordedEvent readEvent() throws java.io.IOException;
+  public java.util.Collection<jdk.jfr.internal.Type> getTypes();
+  public java.util.List<jdk.jfr.EventType> getEventTypes();
+  public boolean isLastChunk();
+  public jdk.jfr.consumer.ChunkParser nextChunkParser() throws java.io.IOException;
+}

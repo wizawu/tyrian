@@ -1,0 +1,5 @@
+Compiled from "XSObjectList.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSObjectList extends java.util.List<com.sun.org.apache.xerces.internal.xs.XSObject> {
+  public abstract int getLength();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSObject item(int);
+}

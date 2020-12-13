@@ -1,0 +1,17 @@
+Compiled from "FontStrikeDisposer.java"
+class sun.font.FontStrikeDisposer implements sun.java2d.DisposerRecord,sun.java2d.Disposer$PollDisposable {
+  java.util.concurrent.ConcurrentHashMap<sun.font.FontStrikeDesc, java.lang.ref.Reference<sun.font.FontStrike>> strikeCache;
+  sun.font.FontStrikeDesc desc;
+  long[] longGlyphImages;
+  int[] intGlyphImages;
+  int[][] segIntGlyphImages;
+  long[][] segLongGlyphImages;
+  long pScalerContext;
+  boolean disposed;
+  boolean comp;
+  public sun.font.FontStrikeDisposer(sun.font.Font2D, sun.font.FontStrikeDesc, long, int[]);
+  public sun.font.FontStrikeDisposer(sun.font.Font2D, sun.font.FontStrikeDesc, long, long[]);
+  public sun.font.FontStrikeDisposer(sun.font.Font2D, sun.font.FontStrikeDesc, long);
+  public sun.font.FontStrikeDisposer(sun.font.Font2D, sun.font.FontStrikeDesc);
+  public synchronized void dispose();
+}

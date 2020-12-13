@@ -1,0 +1,13 @@
+Compiled from "CachedPowers.java"
+public class jdk.nashorn.internal.runtime.doubleconv.CachedPowers {
+  static final int kCachedPowersOffset;
+  static final double kD_1_LOG2_10;
+  static final int kDecimalExponentDistance;
+  static final int kMinDecimalExponent;
+  static final int kMaxDecimalExponent;
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.runtime.doubleconv.CachedPowers();
+  static int getCachedPowerForBinaryExponentRange(int, int, jdk.nashorn.internal.runtime.doubleconv.DiyFp);
+  static int getCachedPowerForDecimalExponent(int, jdk.nashorn.internal.runtime.doubleconv.DiyFp);
+  static {};
+}

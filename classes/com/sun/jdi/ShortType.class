@@ -1,0 +1,3 @@
+Compiled from "ShortType.java"
+public interface com.sun.jdi.ShortType extends com.sun.jdi.PrimitiveType {
+}

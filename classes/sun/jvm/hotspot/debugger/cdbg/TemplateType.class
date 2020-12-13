@@ -1,0 +1,6 @@
+Compiled from "TemplateType.java"
+public interface sun.jvm.hotspot.debugger.cdbg.TemplateType extends sun.jvm.hotspot.debugger.cdbg.Type {
+  public abstract int getNumTemplateArguments();
+  public abstract sun.jvm.hotspot.debugger.cdbg.Type instantiate(sun.jvm.hotspot.debugger.cdbg.Type[]);
+  public abstract sun.jvm.hotspot.debugger.cdbg.Type instantiate(java.util.List);
+}

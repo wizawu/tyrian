@@ -1,0 +1,9 @@
+Compiled from "SunAlternateMedia.java"
+public class sun.print.SunAlternateMedia implements javax.print.attribute.PrintRequestAttribute {
+  public sun.print.SunAlternateMedia(javax.print.attribute.standard.Media);
+  public javax.print.attribute.standard.Media getMedia();
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  public java.lang.String toString();
+  public int hashCode();
+}

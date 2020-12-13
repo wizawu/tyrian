@@ -1,0 +1,8 @@
+Compiled from "BaseRow.java"
+public abstract class com.sun.rowset.internal.BaseRow implements java.io.Serializable,java.lang.Cloneable {
+  protected java.lang.Object[] origVals;
+  public com.sun.rowset.internal.BaseRow();
+  public java.lang.Object[] getOrigRow();
+  public abstract java.lang.Object getColumnObject(int) throws java.sql.SQLException;
+  public abstract void setColumnObject(int, java.lang.Object) throws java.sql.SQLException;
+}

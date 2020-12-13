@@ -1,0 +1,20 @@
+Compiled from "SimpleAnnotationValueVisitor6.java"
+public class javax.lang.model.util.SimpleAnnotationValueVisitor6<R, P> extends javax.lang.model.util.AbstractAnnotationValueVisitor6<R, P> {
+  protected final R DEFAULT_VALUE;
+  protected javax.lang.model.util.SimpleAnnotationValueVisitor6();
+  protected javax.lang.model.util.SimpleAnnotationValueVisitor6(R);
+  protected R defaultAction(java.lang.Object, P);
+  public R visitBoolean(boolean, P);
+  public R visitByte(byte, P);
+  public R visitChar(char, P);
+  public R visitDouble(double, P);
+  public R visitFloat(float, P);
+  public R visitInt(int, P);
+  public R visitLong(long, P);
+  public R visitShort(short, P);
+  public R visitString(java.lang.String, P);
+  public R visitType(javax.lang.model.type.TypeMirror, P);
+  public R visitEnumConstant(javax.lang.model.element.VariableElement, P);
+  public R visitAnnotation(javax.lang.model.element.AnnotationMirror, P);
+  public R visitArray(java.util.List<? extends javax.lang.model.element.AnnotationValue>, P);
+}

@@ -1,0 +1,23 @@
+Compiled from "Semaphore.java"
+public class java.util.concurrent.Semaphore implements java.io.Serializable {
+  public java.util.concurrent.Semaphore(int);
+  public java.util.concurrent.Semaphore(int, boolean);
+  public void acquire() throws java.lang.InterruptedException;
+  public void acquireUninterruptibly();
+  public boolean tryAcquire();
+  public boolean tryAcquire(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public void release();
+  public void acquire(int) throws java.lang.InterruptedException;
+  public void acquireUninterruptibly(int);
+  public boolean tryAcquire(int);
+  public boolean tryAcquire(int, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public void release(int);
+  public int availablePermits();
+  public int drainPermits();
+  protected void reducePermits(int);
+  public boolean isFair();
+  public final boolean hasQueuedThreads();
+  public final int getQueueLength();
+  protected java.util.Collection<java.lang.Thread> getQueuedThreads();
+  public java.lang.String toString();
+}

@@ -1,0 +1,21 @@
+Compiled from "DeletedRangeArrayFilter.java"
+final class jdk.nashorn.internal.runtime.arrays.DeletedRangeArrayFilter extends jdk.nashorn.internal.runtime.arrays.ArrayFilter {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.runtime.arrays.DeletedRangeArrayFilter(jdk.nashorn.internal.runtime.arrays.ArrayData, long, long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData copy();
+  public java.lang.Object[] asObjectArray();
+  public java.lang.Object asArrayOfType(java.lang.Class<?>);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData ensure(long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shiftLeft(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shiftRight(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shrink(long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, java.lang.Object, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, int, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, double, boolean);
+  public boolean has(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData delete(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData delete(long, long);
+  public java.lang.Object pop();
+  public jdk.nashorn.internal.runtime.arrays.ArrayData slice(long, long);
+  static {};
+}

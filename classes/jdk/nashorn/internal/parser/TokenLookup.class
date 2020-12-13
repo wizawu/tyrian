@@ -1,0 +1,7 @@
+Compiled from "TokenLookup.java"
+public final class jdk.nashorn.internal.parser.TokenLookup {
+  static final boolean $assertionsDisabled;
+  public static jdk.nashorn.internal.parser.TokenType lookupKeyword(char[], int, int);
+  public static jdk.nashorn.internal.parser.TokenType lookupOperator(char, char, char, char);
+  static {};
+}

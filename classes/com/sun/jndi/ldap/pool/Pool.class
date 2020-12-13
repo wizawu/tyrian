@@ -1,0 +1,10 @@
+Compiled from "Pool.java"
+public final class com.sun.jndi.ldap.pool.Pool {
+  static final boolean debug;
+  public com.sun.jndi.ldap.pool.Pool(int, int, int);
+  public com.sun.jndi.ldap.pool.PooledConnection getPooledConnection(java.lang.Object, long, com.sun.jndi.ldap.pool.PooledConnectionFactory) throws javax.naming.NamingException;
+  public void expire(long);
+  public void showStats(java.io.PrintStream);
+  public java.lang.String toString();
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "MirroredTypeException.java"
+public class javax.lang.model.type.MirroredTypeException extends javax.lang.model.type.MirroredTypesException {
+  public javax.lang.model.type.MirroredTypeException(javax.lang.model.type.TypeMirror);
+  public javax.lang.model.type.TypeMirror getTypeMirror();
+}

@@ -1,0 +1,11 @@
+Compiled from "HelpMenu.java"
+public class com.sun.java.swing.action.HelpMenu extends javax.swing.AbstractAction {
+  public static final java.lang.String VALUE_COMMAND;
+  public static final java.lang.String VALUE_NAME;
+  public static final java.lang.Integer VALUE_MNEMONIC;
+  public static final java.lang.String VALUE_SHORT_DESCRIPTION;
+  public static final java.lang.String VALUE_LONG_DESCRIPTION;
+  public com.sun.java.swing.action.HelpMenu();
+  public void actionPerformed(java.awt.event.ActionEvent);
+  static {};
+}

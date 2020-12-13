@@ -1,0 +1,18 @@
+Compiled from "SignatureFileVerifier.java"
+public class sun.security.util.SignatureFileVerifier {
+  public sun.security.util.SignatureFileVerifier(java.util.ArrayList<java.security.CodeSigner[]>, sun.security.util.ManifestDigester, java.lang.String, byte[]) throws java.io.IOException, java.security.cert.CertificateException;
+  public boolean needSignatureFileBytes();
+  public boolean needSignatureFile(java.lang.String);
+  public void setSignatureFile(byte[]);
+  public static boolean isBlockOrSF(java.lang.String);
+  public static boolean isSigningRelated(java.lang.String);
+  public void process(java.util.Hashtable<java.lang.String, java.security.CodeSigner[]>, java.util.List<java.lang.Object>) throws java.io.IOException, java.security.SignatureException, java.security.NoSuchAlgorithmException, java.util.jar.JarException, java.security.cert.CertificateException;
+  boolean permittedCheck(java.lang.String, java.lang.String);
+  java.lang.String getWeakAlgorithms(java.lang.String);
+  static java.lang.String toHex(byte[]);
+  static boolean contains(java.security.CodeSigner[], java.security.CodeSigner);
+  static boolean isSubSet(java.security.CodeSigner[], java.security.CodeSigner[]);
+  static boolean matches(java.security.CodeSigner[], java.security.CodeSigner[], java.security.CodeSigner[]);
+  void updateSigners(java.security.CodeSigner[], java.util.Hashtable<java.lang.String, java.security.CodeSigner[]>, java.lang.String);
+  static {};
+}

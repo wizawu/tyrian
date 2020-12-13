@@ -1,0 +1,4 @@
+Compiled from "ModulePathValidator.java"
+class jdk.internal.module.ModulePathValidator {
+  static int scanAllModules(java.io.PrintStream);
+}

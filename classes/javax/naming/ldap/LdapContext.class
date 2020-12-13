@@ -1,0 +1,11 @@
+Compiled from "LdapContext.java"
+public interface javax.naming.ldap.LdapContext extends javax.naming.directory.DirContext {
+  public static final java.lang.String CONTROL_FACTORIES;
+  public abstract javax.naming.ldap.ExtendedResponse extendedOperation(javax.naming.ldap.ExtendedRequest) throws javax.naming.NamingException;
+  public abstract javax.naming.ldap.LdapContext newInstance(javax.naming.ldap.Control[]) throws javax.naming.NamingException;
+  public abstract void reconnect(javax.naming.ldap.Control[]) throws javax.naming.NamingException;
+  public abstract javax.naming.ldap.Control[] getConnectControls() throws javax.naming.NamingException;
+  public abstract void setRequestControls(javax.naming.ldap.Control[]) throws javax.naming.NamingException;
+  public abstract javax.naming.ldap.Control[] getRequestControls() throws javax.naming.NamingException;
+  public abstract javax.naming.ldap.Control[] getResponseControls() throws javax.naming.NamingException;
+}

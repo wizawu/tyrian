@@ -1,0 +1,9 @@
+Compiled from "StAXSchemaParser.java"
+final class com.sun.org.apache.xerces.internal.impl.xs.traversers.StAXSchemaParser {
+  public com.sun.org.apache.xerces.internal.impl.xs.traversers.StAXSchemaParser();
+  public void reset(com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMParser, com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public org.w3c.dom.Document getDocument();
+  public void parse(javax.xml.stream.XMLEventReader) throws javax.xml.stream.XMLStreamException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void parse(javax.xml.stream.XMLStreamReader) throws javax.xml.stream.XMLStreamException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  final void fillQName(com.sun.org.apache.xerces.internal.xni.QName, java.lang.String, java.lang.String, java.lang.String);
+}

@@ -1,0 +1,7 @@
+Compiled from "CK_VERSION.java"
+public class sun.security.pkcs11.wrapper.CK_VERSION {
+  public byte major;
+  public byte minor;
+  public sun.security.pkcs11.wrapper.CK_VERSION(int, int);
+  public java.lang.String toString();
+}

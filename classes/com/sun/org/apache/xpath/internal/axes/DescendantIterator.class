@@ -1,0 +1,16 @@
+Compiled from "DescendantIterator.java"
+public class com.sun.org.apache.xpath.internal.axes.DescendantIterator extends com.sun.org.apache.xpath.internal.axes.LocPathIterator {
+  static final long serialVersionUID;
+  protected transient com.sun.org.apache.xml.internal.dtm.DTMAxisTraverser m_traverser;
+  protected int m_axis;
+  protected int m_extendedTypeID;
+  com.sun.org.apache.xpath.internal.axes.DescendantIterator(com.sun.org.apache.xpath.internal.compiler.Compiler, int, int) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.axes.DescendantIterator();
+  public com.sun.org.apache.xml.internal.dtm.DTMIterator cloneWithReset() throws java.lang.CloneNotSupportedException;
+  public int nextNode();
+  public void setRoot(int, java.lang.Object);
+  public int asNode(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public void detach();
+  public int getAxis();
+  public boolean deepEquals(com.sun.org.apache.xpath.internal.Expression);
+}

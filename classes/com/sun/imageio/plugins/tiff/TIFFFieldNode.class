@@ -1,0 +1,15 @@
+Compiled from "TIFFFieldNode.java"
+public class com.sun.imageio.plugins.tiff.TIFFFieldNode extends javax.imageio.metadata.IIOMetadataNode {
+  public com.sun.imageio.plugins.tiff.TIFFFieldNode(javax.imageio.plugins.tiff.TIFFField);
+  public org.w3c.dom.Node appendChild(org.w3c.dom.Node);
+  public boolean hasChildNodes();
+  public int getLength();
+  public org.w3c.dom.Node getFirstChild();
+  public org.w3c.dom.Node getLastChild();
+  public org.w3c.dom.Node getPreviousSibling();
+  public org.w3c.dom.Node getNextSibling();
+  public org.w3c.dom.Node insertBefore(org.w3c.dom.Node, org.w3c.dom.Node);
+  public org.w3c.dom.Node replaceChild(org.w3c.dom.Node, org.w3c.dom.Node);
+  public org.w3c.dom.Node removeChild(org.w3c.dom.Node);
+  public org.w3c.dom.Node cloneNode(boolean);
+}

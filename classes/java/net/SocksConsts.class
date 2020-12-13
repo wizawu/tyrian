@@ -1,0 +1,25 @@
+Compiled from "SocksConsts.java"
+interface java.net.SocksConsts {
+  public static final int PROTO_VERS4;
+  public static final int PROTO_VERS;
+  public static final int DEFAULT_PORT;
+  public static final int NO_AUTH;
+  public static final int GSSAPI;
+  public static final int USER_PASSW;
+  public static final int NO_METHODS;
+  public static final int CONNECT;
+  public static final int BIND;
+  public static final int UDP_ASSOC;
+  public static final int IPV4;
+  public static final int DOMAIN_NAME;
+  public static final int IPV6;
+  public static final int REQUEST_OK;
+  public static final int GENERAL_FAILURE;
+  public static final int NOT_ALLOWED;
+  public static final int NET_UNREACHABLE;
+  public static final int HOST_UNREACHABLE;
+  public static final int CONN_REFUSED;
+  public static final int TTL_EXPIRED;
+  public static final int CMD_NOT_SUPPORTED;
+  public static final int ADDR_TYPE_NOT_SUP;
+}

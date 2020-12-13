@@ -1,0 +1,18 @@
+Compiled from "XStringForChars.java"
+public class com.sun.org.apache.xpath.internal.objects.XStringForChars extends com.sun.org.apache.xpath.internal.objects.XString {
+  static final long serialVersionUID;
+  int m_start;
+  int m_length;
+  protected java.lang.String m_strCache;
+  public com.sun.org.apache.xpath.internal.objects.XStringForChars(char[], int, int);
+  public com.sun.org.apache.xml.internal.utils.FastStringBuffer fsb();
+  public void appendToFsb(com.sun.org.apache.xml.internal.utils.FastStringBuffer);
+  public boolean hasString();
+  public java.lang.String str();
+  public java.lang.Object object();
+  public void dispatchCharactersEvents(org.xml.sax.ContentHandler) throws org.xml.sax.SAXException;
+  public void dispatchAsComment(org.xml.sax.ext.LexicalHandler) throws org.xml.sax.SAXException;
+  public int length();
+  public char charAt(int);
+  public void getChars(int, int, char[], int);
+}

@@ -1,0 +1,4 @@
+Compiled from "SoftResampler.java"
+public interface com.sun.media.sound.SoftResampler {
+  public abstract com.sun.media.sound.SoftResamplerStreamer openStreamer();
+}

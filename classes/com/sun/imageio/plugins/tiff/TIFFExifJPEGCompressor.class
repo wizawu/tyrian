@@ -1,0 +1,5 @@
+Compiled from "TIFFExifJPEGCompressor.java"
+public class com.sun.imageio.plugins.tiff.TIFFExifJPEGCompressor extends com.sun.imageio.plugins.tiff.TIFFBaseJPEGCompressor {
+  public com.sun.imageio.plugins.tiff.TIFFExifJPEGCompressor(javax.imageio.ImageWriteParam);
+  public void setMetadata(javax.imageio.metadata.IIOMetadata);
+}

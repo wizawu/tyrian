@@ -1,0 +1,4 @@
+Compiled from "PathComponent.java"
+public interface com.sun.org.apache.xpath.internal.axes.PathComponent {
+  public abstract int getAnalysisBits();
+}

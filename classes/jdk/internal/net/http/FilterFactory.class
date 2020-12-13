@@ -1,0 +1,7 @@
+Compiled from "FilterFactory.java"
+class jdk.internal.net.http.FilterFactory {
+  final java.util.LinkedList<java.lang.Class<? extends jdk.internal.net.http.HeaderFilter>> filterClasses;
+  jdk.internal.net.http.FilterFactory();
+  public void addFilter(java.lang.Class<? extends jdk.internal.net.http.HeaderFilter>);
+  java.util.LinkedList<jdk.internal.net.http.HeaderFilter> getFilterChain();
+}

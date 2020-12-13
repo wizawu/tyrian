@@ -1,0 +1,9 @@
+Compiled from "XRPMBlitLoops.java"
+public class sun.java2d.xr.XRPMBlitLoops {
+  static java.lang.ref.WeakReference<sun.awt.image.SunVolatileImage> argbTmpPM;
+  static java.lang.ref.WeakReference<sun.awt.image.SunVolatileImage> rgbTmpPM;
+  public sun.java2d.xr.XRPMBlitLoops();
+  public static void register();
+  protected static sun.java2d.xr.XRSurfaceData cacheToTmpSurface(sun.java2d.SurfaceData, sun.java2d.xr.XRSurfaceData, int, int, int, int);
+  static {};
+}

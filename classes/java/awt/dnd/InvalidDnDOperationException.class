@@ -1,0 +1,6 @@
+Compiled from "InvalidDnDOperationException.java"
+public class java.awt.dnd.InvalidDnDOperationException extends java.lang.IllegalStateException {
+  public java.awt.dnd.InvalidDnDOperationException();
+  public java.awt.dnd.InvalidDnDOperationException(java.lang.String);
+  static {};
+}

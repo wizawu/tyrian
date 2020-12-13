@@ -1,0 +1,10 @@
+Compiled from "CachedPainter.java"
+public abstract class sun.swing.CachedPainter {
+  public sun.swing.CachedPainter(int);
+  public void paint(java.awt.Component, java.awt.Graphics, int, int, int, int, java.lang.Object...);
+  protected abstract void paintToImage(java.awt.Component, java.awt.Image, java.awt.Graphics, int, int, java.lang.Object[]);
+  protected void paintImage(java.awt.Component, java.awt.Graphics, int, int, int, int, java.awt.Image, java.lang.Object[]);
+  protected java.awt.Image createImage(java.awt.Component, int, int, java.awt.GraphicsConfiguration, java.lang.Object[]);
+  protected void flush();
+  static {};
+}

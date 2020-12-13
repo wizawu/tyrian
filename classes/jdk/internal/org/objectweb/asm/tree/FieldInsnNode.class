@@ -1,0 +1,11 @@
+Compiled from "FieldInsnNode.java"
+public class jdk.internal.org.objectweb.asm.tree.FieldInsnNode extends jdk.internal.org.objectweb.asm.tree.AbstractInsnNode {
+  public java.lang.String owner;
+  public java.lang.String name;
+  public java.lang.String desc;
+  public jdk.internal.org.objectweb.asm.tree.FieldInsnNode(int, java.lang.String, java.lang.String, java.lang.String);
+  public void setOpcode(int);
+  public int getType();
+  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode clone(java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
+}

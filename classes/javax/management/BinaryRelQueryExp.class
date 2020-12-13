@@ -1,0 +1,10 @@
+Compiled from "BinaryRelQueryExp.java"
+class javax.management.BinaryRelQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+  public javax.management.BinaryRelQueryExp();
+  public javax.management.BinaryRelQueryExp(int, javax.management.ValueExp, javax.management.ValueExp);
+  public int getOperator();
+  public javax.management.ValueExp getLeftValue();
+  public javax.management.ValueExp getRightValue();
+  public boolean apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
+  public java.lang.String toString();
+}

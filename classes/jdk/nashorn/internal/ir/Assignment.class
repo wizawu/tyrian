@@ -1,0 +1,6 @@
+Compiled from "Assignment.java"
+public interface jdk.nashorn.internal.ir.Assignment<D extends jdk.nashorn.internal.ir.Expression> {
+  public abstract D getAssignmentDest();
+  public abstract jdk.nashorn.internal.ir.Expression getAssignmentSource();
+  public abstract jdk.nashorn.internal.ir.Node setAssignmentDest(D);
+}

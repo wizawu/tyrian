@@ -1,0 +1,8 @@
+Compiled from "ProcOopHandle.java"
+class sun.jvm.hotspot.debugger.proc.ProcOopHandle extends sun.jvm.hotspot.debugger.proc.ProcAddress implements sun.jvm.hotspot.debugger.OopHandle {
+  sun.jvm.hotspot.debugger.proc.ProcOopHandle(sun.jvm.hotspot.debugger.proc.ProcDebugger, long);
+  public sun.jvm.hotspot.debugger.Address addOffsetTo(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address andWithMask(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address orWithMask(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address xorWithMask(long) throws java.lang.UnsupportedOperationException;
+}

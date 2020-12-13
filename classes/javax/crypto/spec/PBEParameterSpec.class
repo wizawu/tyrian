@@ -1,0 +1,8 @@
+Compiled from "PBEParameterSpec.java"
+public class javax.crypto.spec.PBEParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public javax.crypto.spec.PBEParameterSpec(byte[], int);
+  public javax.crypto.spec.PBEParameterSpec(byte[], int, java.security.spec.AlgorithmParameterSpec);
+  public byte[] getSalt();
+  public int getIterationCount();
+  public java.security.spec.AlgorithmParameterSpec getParameterSpec();
+}

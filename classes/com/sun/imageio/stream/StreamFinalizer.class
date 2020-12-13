@@ -1,0 +1,5 @@
+Compiled from "StreamFinalizer.java"
+public class com.sun.imageio.stream.StreamFinalizer {
+  public com.sun.imageio.stream.StreamFinalizer(javax.imageio.stream.ImageInputStream);
+  protected void finalize() throws java.lang.Throwable;
+}

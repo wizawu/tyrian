@@ -1,0 +1,6 @@
+Compiled from "AccessControlContextFactory.java"
+public final class jdk.dynalink.internal.AccessControlContextFactory {
+  public static java.security.AccessControlContext createAccessControlContext();
+  public static java.security.AccessControlContext createAccessControlContext(java.security.Permission...);
+  public static java.security.AccessControlContext createAccessControlContext(java.lang.String...);
+}

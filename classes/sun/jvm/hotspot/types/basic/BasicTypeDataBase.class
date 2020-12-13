@@ -1,0 +1,44 @@
+Compiled from "BasicTypeDataBase.java"
+public class sun.jvm.hotspot.types.basic.BasicTypeDataBase implements sun.jvm.hotspot.types.TypeDataBase {
+  java.util.HashMap typeToVtbl;
+  public sun.jvm.hotspot.types.basic.BasicTypeDataBase(sun.jvm.hotspot.debugger.MachineDescription, sun.jvm.hotspot.types.basic.VtblAccess);
+  public sun.jvm.hotspot.types.Type lookupType(java.lang.String);
+  public sun.jvm.hotspot.types.Type lookupType(java.lang.String, boolean);
+  public java.lang.Integer lookupIntConstant(java.lang.String);
+  public java.lang.Integer lookupIntConstant(java.lang.String, boolean);
+  public java.lang.Long lookupLongConstant(java.lang.String);
+  public java.lang.Long lookupLongConstant(java.lang.String, boolean);
+  public sun.jvm.hotspot.types.Type getJBooleanType();
+  public sun.jvm.hotspot.types.Type getJByteType();
+  public sun.jvm.hotspot.types.Type getJCharType();
+  public sun.jvm.hotspot.types.Type getJDoubleType();
+  public sun.jvm.hotspot.types.Type getJFloatType();
+  public sun.jvm.hotspot.types.Type getJIntType();
+  public sun.jvm.hotspot.types.Type getJLongType();
+  public sun.jvm.hotspot.types.Type getJShortType();
+  public long getAddressSize();
+  public long getOopSize();
+  public boolean addressTypeIsEqualToType(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.types.Type);
+  public sun.jvm.hotspot.types.Type findDynamicTypeForAddress(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.types.Type);
+  public sun.jvm.hotspot.types.Type guessTypeForAddress(sun.jvm.hotspot.debugger.Address);
+  public long cIntegerTypeMaxValue(long, boolean);
+  public long cIntegerTypeMinValue(long, boolean);
+  public java.util.Iterator getTypes();
+  public java.util.Iterator getIntConstants();
+  public java.util.Iterator getLongConstants();
+  public void setJBooleanType(sun.jvm.hotspot.types.Type);
+  public void setJByteType(sun.jvm.hotspot.types.Type);
+  public void setJCharType(sun.jvm.hotspot.types.Type);
+  public void setJDoubleType(sun.jvm.hotspot.types.Type);
+  public void setJFloatType(sun.jvm.hotspot.types.Type);
+  public void setJIntType(sun.jvm.hotspot.types.Type);
+  public void setJLongType(sun.jvm.hotspot.types.Type);
+  public void setJShortType(sun.jvm.hotspot.types.Type);
+  public void addType(sun.jvm.hotspot.types.Type);
+  public void removeType(sun.jvm.hotspot.types.Type);
+  public void addIntConstant(java.lang.String, int);
+  public void removeIntConstant(java.lang.String);
+  public void addLongConstant(java.lang.String, long);
+  public void removeLongConstant(java.lang.String);
+  static {};
+}

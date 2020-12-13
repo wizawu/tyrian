@@ -1,0 +1,20 @@
+Compiled from "COFFSymbol.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.COFFSymbol {
+  public abstract int getOffset();
+  public abstract java.lang.String getName();
+  public abstract int getValue();
+  public abstract short getSectionNumber();
+  public abstract short getType();
+  public abstract byte getStorageClass();
+  public abstract byte getNumberOfAuxSymbols();
+  public abstract boolean isFunctionDefinition();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.AuxFunctionDefinitionRecord getAuxFunctionDefinitionRecord();
+  public abstract boolean isBfOrEfSymbol();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.AuxBfEfRecord getAuxBfEfRecord();
+  public abstract boolean isWeakExternal();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.AuxWeakExternalRecord getAuxWeakExternalRecord();
+  public abstract boolean isFile();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.AuxFileRecord getAuxFileRecord();
+  public abstract boolean isSectionDefinition();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.AuxSectionDefinitionsRecord getAuxSectionDefinitionsRecord();
+}

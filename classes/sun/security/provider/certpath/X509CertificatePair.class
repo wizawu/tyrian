@@ -1,0 +1,14 @@
+Compiled from "X509CertificatePair.java"
+public class sun.security.provider.certpath.X509CertificatePair {
+  public sun.security.provider.certpath.X509CertificatePair();
+  public sun.security.provider.certpath.X509CertificatePair(java.security.cert.X509Certificate, java.security.cert.X509Certificate) throws java.security.cert.CertificateException;
+  public static synchronized void clearCache();
+  public static synchronized sun.security.provider.certpath.X509CertificatePair generateCertificatePair(byte[]) throws java.security.cert.CertificateException;
+  public void setForward(java.security.cert.X509Certificate) throws java.security.cert.CertificateException;
+  public void setReverse(java.security.cert.X509Certificate) throws java.security.cert.CertificateException;
+  public java.security.cert.X509Certificate getForward();
+  public java.security.cert.X509Certificate getReverse();
+  public byte[] getEncoded() throws java.security.cert.CertificateEncodingException;
+  public java.lang.String toString();
+  static {};
+}

@@ -1,0 +1,10 @@
+Compiled from "FieldInstruction.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.FieldInstruction extends com.sun.org.apache.bcel.internal.generic.FieldOrMethod {
+  com.sun.org.apache.bcel.internal.generic.FieldInstruction();
+  protected com.sun.org.apache.bcel.internal.generic.FieldInstruction(short, int);
+  public java.lang.String toString(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  protected int getFieldSize(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.Type getFieldType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public java.lang.String getFieldName(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+}

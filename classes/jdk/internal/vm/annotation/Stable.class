@@ -1,0 +1,3 @@
+Compiled from "Stable.java"
+public interface jdk.internal.vm.annotation.Stable extends java.lang.annotation.Annotation {
+}

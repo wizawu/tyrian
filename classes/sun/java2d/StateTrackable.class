@@ -1,0 +1,5 @@
+Compiled from "StateTrackable.java"
+public interface sun.java2d.StateTrackable {
+  public abstract sun.java2d.StateTrackable$State getState();
+  public abstract sun.java2d.StateTracker getStateTracker();
+}

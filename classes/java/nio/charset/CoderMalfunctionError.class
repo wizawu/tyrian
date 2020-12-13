@@ -1,0 +1,4 @@
+Compiled from "CoderMalfunctionError.java"
+public class java.nio.charset.CoderMalfunctionError extends java.lang.Error {
+  public java.nio.charset.CoderMalfunctionError(java.lang.Exception);
+}

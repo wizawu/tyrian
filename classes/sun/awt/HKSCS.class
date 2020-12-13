@@ -1,0 +1,8 @@
+Compiled from "HKSCS.java"
+public class sun.awt.HKSCS extends java.nio.charset.Charset {
+  public sun.awt.HKSCS();
+  public boolean contains(java.nio.charset.Charset);
+  public java.nio.charset.CharsetDecoder newDecoder();
+  public java.nio.charset.CharsetEncoder newEncoder();
+  static {};
+}

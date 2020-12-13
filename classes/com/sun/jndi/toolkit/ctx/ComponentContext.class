@@ -1,0 +1,48 @@
+Compiled from "ComponentContext.java"
+public abstract class com.sun.jndi.toolkit.ctx.ComponentContext extends com.sun.jndi.toolkit.ctx.PartialCompositeContext {
+  protected static final byte USE_CONTINUATION;
+  protected static final byte TERMINAL_COMPONENT;
+  protected static final byte TERMINAL_NNS_COMPONENT;
+  protected com.sun.jndi.toolkit.ctx.ComponentContext();
+  protected abstract java.lang.Object c_lookup(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract java.lang.Object c_lookupLink(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.NamingEnumeration<javax.naming.NameClassPair> c_list(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.NamingEnumeration<javax.naming.Binding> c_listBindings(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract void c_bind(javax.naming.Name, java.lang.Object, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract void c_rebind(javax.naming.Name, java.lang.Object, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract void c_unbind(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract void c_destroySubcontext(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.Context c_createSubcontext(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract void c_rename(javax.naming.Name, javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.NameParser c_getNameParser(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected com.sun.jndi.toolkit.ctx.HeadTail p_parseComponent(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected java.lang.Object c_resolveIntermediate_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected java.lang.Object c_lookup_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected java.lang.Object c_lookupLink_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.NameClassPair> c_list_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.Binding> c_listBindings_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_bind_nns(javax.naming.Name, java.lang.Object, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_rebind_nns(javax.naming.Name, java.lang.Object, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_unbind_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.Context c_createSubcontext_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_destroySubcontext_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_rename_nns(javax.naming.Name, javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NameParser c_getNameParser_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_processJunction_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected com.sun.jndi.toolkit.ctx.HeadTail p_resolveIntermediate(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  void checkAndAdjustRemainingName(javax.naming.Name) throws javax.naming.InvalidNameException;
+  protected boolean isAllEmpty(javax.naming.Name);
+  protected javax.naming.spi.ResolveResult p_resolveToClass(javax.naming.Name, java.lang.Class<?>, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected java.lang.Object p_lookup(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.NameClassPair> p_list(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.Binding> p_listBindings(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void p_bind(javax.naming.Name, java.lang.Object, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void p_rebind(javax.naming.Name, java.lang.Object, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void p_unbind(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void p_destroySubcontext(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.Context p_createSubcontext(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void p_rename(javax.naming.Name, javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NameParser p_getNameParser(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected java.lang.Object p_lookupLink(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  static {};
+}

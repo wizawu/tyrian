@@ -1,0 +1,43 @@
+Compiled from "DurationImpl.java"
+class com.sun.org.apache.xerces.internal.jaxp.datatype.DurationImpl extends javax.xml.datatype.Duration implements java.io.Serializable {
+  protected int signum;
+  protected java.math.BigInteger years;
+  protected java.math.BigInteger months;
+  protected java.math.BigInteger days;
+  protected java.math.BigInteger hours;
+  protected java.math.BigInteger minutes;
+  protected java.math.BigDecimal seconds;
+  public int getSign();
+  protected int calcSignum(boolean);
+  protected com.sun.org.apache.xerces.internal.jaxp.datatype.DurationImpl(boolean, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigDecimal);
+  protected static void testNonNegative(java.math.BigInteger, javax.xml.datatype.DatatypeConstants$Field);
+  protected static void testNonNegative(java.math.BigDecimal, javax.xml.datatype.DatatypeConstants$Field);
+  protected com.sun.org.apache.xerces.internal.jaxp.datatype.DurationImpl(boolean, int, int, int, int, int, int);
+  protected static java.math.BigInteger wrap(int);
+  protected com.sun.org.apache.xerces.internal.jaxp.datatype.DurationImpl(long);
+  protected com.sun.org.apache.xerces.internal.jaxp.datatype.DurationImpl(java.lang.String) throws java.lang.IllegalArgumentException;
+  public int compare(javax.xml.datatype.Duration);
+  public int hashCode();
+  public java.lang.String toString();
+  public boolean isSet(javax.xml.datatype.DatatypeConstants$Field);
+  public java.lang.Number getField(javax.xml.datatype.DatatypeConstants$Field);
+  public int getYears();
+  public int getMonths();
+  public int getDays();
+  public int getHours();
+  public int getMinutes();
+  public int getSeconds();
+  public long getTimeInMillis(java.util.Calendar);
+  public long getTimeInMillis(java.util.Date);
+  public javax.xml.datatype.Duration normalizeWith(java.util.Calendar);
+  public javax.xml.datatype.Duration multiply(int);
+  public javax.xml.datatype.Duration multiply(java.math.BigDecimal);
+  public javax.xml.datatype.Duration add(javax.xml.datatype.Duration);
+  static java.math.BigDecimal sanitize(java.math.BigDecimal, int);
+  public javax.xml.datatype.Duration subtract(javax.xml.datatype.Duration);
+  public javax.xml.datatype.Duration negate();
+  public int signum();
+  public void addTo(java.util.Calendar);
+  public void addTo(java.util.Date);
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "EphemeralKeyManager.java"
+final class sun.security.ssl.EphemeralKeyManager {
+  sun.security.ssl.EphemeralKeyManager();
+  java.security.KeyPair getRSAKeyPair(boolean, java.security.SecureRandom);
+}

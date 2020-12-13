@@ -1,0 +1,18 @@
+Compiled from "CertStatusExtension.java"
+final class sun.security.ssl.CertStatusExtension {
+  static final sun.security.ssl.HandshakeProducer chNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer chOnLoadConsumer;
+  static final sun.security.ssl.HandshakeProducer shNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer shOnLoadConsumer;
+  static final sun.security.ssl.HandshakeProducer ctNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer ctOnLoadConsumer;
+  static final sun.security.ssl.SSLStringizer certStatusReqStringizer;
+  static final sun.security.ssl.HandshakeProducer chV2NetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer chV2OnLoadConsumer;
+  static final sun.security.ssl.HandshakeProducer shV2NetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer shV2OnLoadConsumer;
+  static final sun.security.ssl.SSLStringizer certStatusReqV2Stringizer;
+  static final sun.security.ssl.SSLStringizer certStatusRespStringizer;
+  sun.security.ssl.CertStatusExtension();
+  static {};
+}

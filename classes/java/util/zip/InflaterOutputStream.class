@@ -1,0 +1,13 @@
+Compiled from "InflaterOutputStream.java"
+public class java.util.zip.InflaterOutputStream extends java.io.FilterOutputStream {
+  protected final java.util.zip.Inflater inf;
+  protected final byte[] buf;
+  public java.util.zip.InflaterOutputStream(java.io.OutputStream);
+  public java.util.zip.InflaterOutputStream(java.io.OutputStream, java.util.zip.Inflater);
+  public java.util.zip.InflaterOutputStream(java.io.OutputStream, java.util.zip.Inflater, int);
+  public void close() throws java.io.IOException;
+  public void flush() throws java.io.IOException;
+  public void finish() throws java.io.IOException;
+  public void write(int) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+}

@@ -1,0 +1,10 @@
+Compiled from "AclEntryFlag.java"
+public final class java.nio.file.attribute.AclEntryFlag extends java.lang.Enum<java.nio.file.attribute.AclEntryFlag> {
+  public static final java.nio.file.attribute.AclEntryFlag FILE_INHERIT;
+  public static final java.nio.file.attribute.AclEntryFlag DIRECTORY_INHERIT;
+  public static final java.nio.file.attribute.AclEntryFlag NO_PROPAGATE_INHERIT;
+  public static final java.nio.file.attribute.AclEntryFlag INHERIT_ONLY;
+  public static java.nio.file.attribute.AclEntryFlag[] values();
+  public static java.nio.file.attribute.AclEntryFlag valueOf(java.lang.String);
+  static {};
+}

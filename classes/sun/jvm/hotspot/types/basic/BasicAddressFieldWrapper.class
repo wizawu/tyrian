@@ -1,0 +1,6 @@
+Compiled from "BasicAddressFieldWrapper.java"
+public class sun.jvm.hotspot.types.basic.BasicAddressFieldWrapper extends sun.jvm.hotspot.types.basic.BasicFieldWrapper implements sun.jvm.hotspot.types.AddressField {
+  public sun.jvm.hotspot.types.basic.BasicAddressFieldWrapper(sun.jvm.hotspot.types.Field);
+  public sun.jvm.hotspot.debugger.Address getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+  public sun.jvm.hotspot.debugger.Address getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+}

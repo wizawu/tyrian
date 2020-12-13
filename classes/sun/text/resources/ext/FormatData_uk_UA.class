@@ -1,0 +1,5 @@
+Compiled from "FormatData_uk_UA.java"
+public class sun.text.resources.ext.FormatData_uk_UA extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_uk_UA();
+  protected final java.lang.Object[][] getContents();
+}

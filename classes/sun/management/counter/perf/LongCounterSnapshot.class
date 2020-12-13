@@ -1,0 +1,7 @@
+Compiled from "LongCounterSnapshot.java"
+class sun.management.counter.perf.LongCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.LongCounter {
+  long value;
+  sun.management.counter.perf.LongCounterSnapshot(java.lang.String, sun.management.counter.Units, sun.management.counter.Variability, int, long);
+  public java.lang.Object getValue();
+  public long longValue();
+}

@@ -1,0 +1,5 @@
+Compiled from "Void.java"
+public final class java.lang.Void {
+  public static final java.lang.Class<java.lang.Void> TYPE;
+  static {};
+}

@@ -1,0 +1,17 @@
+Compiled from "InputMethodPopupMenu.java"
+abstract class sun.awt.im.InputMethodPopupMenu implements java.awt.event.ActionListener {
+  sun.awt.im.InputMethodPopupMenu();
+  static sun.awt.im.InputMethodPopupMenu getInstance(java.awt.Component, java.lang.String);
+  abstract void show(java.awt.Component, int, int);
+  abstract void removeAll();
+  abstract void addSeparator();
+  abstract void addToComponent(java.awt.Component);
+  abstract java.lang.Object createSubmenu(java.lang.String);
+  abstract void add(java.lang.Object);
+  abstract void addMenuItem(java.lang.String, java.lang.String, java.lang.String);
+  abstract void addMenuItem(java.lang.Object, java.lang.String, java.lang.String, java.lang.String);
+  void addOneInputMethodToMenu(sun.awt.im.InputMethodLocator, java.lang.String);
+  static boolean isSelected(java.lang.String, java.lang.String);
+  java.lang.String getLocaleName(java.util.Locale);
+  public void actionPerformed(java.awt.event.ActionEvent);
+}

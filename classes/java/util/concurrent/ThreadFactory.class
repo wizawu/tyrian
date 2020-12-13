@@ -1,0 +1,4 @@
+Compiled from "ThreadFactory.java"
+public interface java.util.concurrent.ThreadFactory {
+  public abstract java.lang.Thread newThread(java.lang.Runnable);
+}

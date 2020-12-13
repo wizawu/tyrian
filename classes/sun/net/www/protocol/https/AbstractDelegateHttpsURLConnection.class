@@ -1,0 +1,22 @@
+Compiled from "AbstractDelegateHttpsURLConnection.java"
+public abstract class sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection extends sun.net.www.protocol.http.HttpURLConnection {
+  protected sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection(java.net.URL, sun.net.www.protocol.http.Handler) throws java.io.IOException;
+  protected sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection(java.net.URL, java.net.Proxy, sun.net.www.protocol.http.Handler) throws java.io.IOException;
+  protected abstract javax.net.ssl.SSLSocketFactory getSSLSocketFactory();
+  protected abstract javax.net.ssl.HostnameVerifier getHostnameVerifier();
+  public void setNewClient(java.net.URL) throws java.io.IOException;
+  public void setNewClient(java.net.URL, boolean) throws java.io.IOException;
+  public void setProxiedClient(java.net.URL, java.lang.String, int) throws java.io.IOException;
+  public void setProxiedClient(java.net.URL, java.lang.String, int, boolean) throws java.io.IOException;
+  protected void proxiedConnect(java.net.URL, java.lang.String, int, boolean) throws java.io.IOException;
+  public boolean isConnected();
+  public void setConnected(boolean);
+  public void connect() throws java.io.IOException;
+  protected sun.net.www.http.HttpClient getNewHttpClient(java.net.URL, java.net.Proxy, int) throws java.io.IOException;
+  protected sun.net.www.http.HttpClient getNewHttpClient(java.net.URL, java.net.Proxy, int, boolean) throws java.io.IOException;
+  public java.lang.String getCipherSuite();
+  public java.security.cert.Certificate[] getLocalCertificates();
+  public java.security.cert.Certificate[] getServerCertificates() throws javax.net.ssl.SSLPeerUnverifiedException;
+  java.security.Principal getPeerPrincipal() throws javax.net.ssl.SSLPeerUnverifiedException;
+  java.security.Principal getLocalPrincipal();
+}

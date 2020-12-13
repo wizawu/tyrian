@@ -1,0 +1,7 @@
+Compiled from "RSAOtherPrimeInfo.java"
+public class java.security.spec.RSAOtherPrimeInfo {
+  public java.security.spec.RSAOtherPrimeInfo(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger);
+  public final java.math.BigInteger getPrime();
+  public final java.math.BigInteger getExponent();
+  public final java.math.BigInteger getCrtCoefficient();
+}

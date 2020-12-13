@@ -1,0 +1,4 @@
+Compiled from "Parameterizable.java"
+public interface javax.lang.model.element.Parameterizable extends javax.lang.model.element.Element {
+  public abstract java.util.List<? extends javax.lang.model.element.TypeParameterElement> getTypeParameters();
+}

@@ -1,0 +1,14 @@
+Compiled from "SSLLogger.java"
+public final class sun.security.ssl.SSLLogger {
+  public static final boolean isOn;
+  public sun.security.ssl.SSLLogger();
+  public static boolean isOn(java.lang.String);
+  public static void severe(java.lang.String, java.lang.Object...);
+  public static void warning(java.lang.String, java.lang.Object...);
+  public static void info(java.lang.String, java.lang.Object...);
+  public static void fine(java.lang.String, java.lang.Object...);
+  public static void finer(java.lang.String, java.lang.Object...);
+  public static void finest(java.lang.String, java.lang.Object...);
+  static java.lang.String toString(java.lang.Object...);
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "ContainerAdapter.java"
+public abstract class java.awt.event.ContainerAdapter implements java.awt.event.ContainerListener {
+  public java.awt.event.ContainerAdapter();
+  public void componentAdded(java.awt.event.ContainerEvent);
+  public void componentRemoved(java.awt.event.ContainerEvent);
+}

@@ -1,0 +1,16 @@
+Compiled from "Event.java"
+public interface org.w3c.dom.events.Event {
+  public static final short CAPTURING_PHASE;
+  public static final short AT_TARGET;
+  public static final short BUBBLING_PHASE;
+  public abstract java.lang.String getType();
+  public abstract org.w3c.dom.events.EventTarget getTarget();
+  public abstract org.w3c.dom.events.EventTarget getCurrentTarget();
+  public abstract short getEventPhase();
+  public abstract boolean getBubbles();
+  public abstract boolean getCancelable();
+  public abstract long getTimeStamp();
+  public abstract void stopPropagation();
+  public abstract void preventDefault();
+  public abstract void initEvent(java.lang.String, boolean, boolean);
+}

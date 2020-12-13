@@ -1,0 +1,9 @@
+Compiled from "DocletInvoker.java"
+public class com.sun.tools.javadoc.main.DocletInvoker {
+  public com.sun.tools.javadoc.main.DocletInvoker(com.sun.tools.javadoc.main.Messager, java.lang.Class<?>, boolean, boolean);
+  public com.sun.tools.javadoc.main.DocletInvoker(com.sun.tools.javadoc.main.Messager, javax.tools.JavaFileManager, java.lang.String, java.lang.String, java.lang.ClassLoader, boolean, boolean);
+  public boolean start(com.sun.javadoc.RootDoc);
+  public int optionLength(java.lang.String);
+  public boolean validOptions(com.sun.tools.javac.util.List<java.lang.String[]>);
+  public com.sun.javadoc.LanguageVersion languageVersion();
+}

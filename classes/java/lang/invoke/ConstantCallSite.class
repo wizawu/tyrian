@@ -1,0 +1,8 @@
+Compiled from "ConstantCallSite.java"
+public class java.lang.invoke.ConstantCallSite extends java.lang.invoke.CallSite {
+  public java.lang.invoke.ConstantCallSite(java.lang.invoke.MethodHandle);
+  protected java.lang.invoke.ConstantCallSite(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle) throws java.lang.Throwable;
+  public final java.lang.invoke.MethodHandle getTarget();
+  public final void setTarget(java.lang.invoke.MethodHandle);
+  public final java.lang.invoke.MethodHandle dynamicInvoker();
+}

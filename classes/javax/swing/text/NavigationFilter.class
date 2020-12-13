@@ -1,0 +1,7 @@
+Compiled from "NavigationFilter.java"
+public class javax.swing.text.NavigationFilter {
+  public javax.swing.text.NavigationFilter();
+  public void setDot(javax.swing.text.NavigationFilter$FilterBypass, int, javax.swing.text.Position$Bias);
+  public void moveDot(javax.swing.text.NavigationFilter$FilterBypass, int, javax.swing.text.Position$Bias);
+  public int getNextVisualPositionFrom(javax.swing.text.JTextComponent, int, javax.swing.text.Position$Bias, int, javax.swing.text.Position$Bias[]) throws javax.swing.text.BadLocationException;
+}

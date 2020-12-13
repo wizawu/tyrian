@@ -1,0 +1,6 @@
+Compiled from "LDC_W.java"
+public class com.sun.org.apache.bcel.internal.generic.LDC_W extends com.sun.org.apache.bcel.internal.generic.LDC {
+  com.sun.org.apache.bcel.internal.generic.LDC_W();
+  public com.sun.org.apache.bcel.internal.generic.LDC_W(int);
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+}

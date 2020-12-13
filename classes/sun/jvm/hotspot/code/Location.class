@@ -1,0 +1,23 @@
+Compiled from "Location.java"
+public class sun.jvm.hotspot.code.Location {
+  sun.jvm.hotspot.code.Location(sun.jvm.hotspot.code.Location$Where, sun.jvm.hotspot.code.Location$Type, int);
+  public sun.jvm.hotspot.code.Location$Where getWhere();
+  public sun.jvm.hotspot.code.Location$Type getType();
+  public short getOffset();
+  public boolean isRegister();
+  public boolean isStack();
+  public boolean holdsOop();
+  public boolean holdsNarrowOop();
+  public boolean holdsInt();
+  public boolean holdsLong();
+  public boolean holdsFloat();
+  public boolean holdsDouble();
+  public boolean holdsAddr();
+  public boolean isIllegal();
+  public int getStackOffset();
+  public int getRegisterNumber();
+  public void print();
+  public void printOn(java.io.PrintStream);
+  public sun.jvm.hotspot.code.Location(sun.jvm.hotspot.code.DebugInfoReadStream);
+  static {};
+}

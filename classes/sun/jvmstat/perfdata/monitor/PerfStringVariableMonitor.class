@@ -1,0 +1,5 @@
+Compiled from "PerfStringVariableMonitor.java"
+public class sun.jvmstat.perfdata.monitor.PerfStringVariableMonitor extends sun.jvmstat.perfdata.monitor.PerfStringMonitor {
+  public sun.jvmstat.perfdata.monitor.PerfStringVariableMonitor(java.lang.String, boolean, java.nio.ByteBuffer);
+  public sun.jvmstat.perfdata.monitor.PerfStringVariableMonitor(java.lang.String, boolean, java.nio.ByteBuffer, int);
+}

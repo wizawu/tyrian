@@ -1,0 +1,16 @@
+Compiled from "JavaThreadState.java"
+public class sun.jvm.hotspot.runtime.JavaThreadState {
+  public static final sun.jvm.hotspot.runtime.JavaThreadState UNINITIALIZED;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState NEW;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState NEW_TRANS;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState IN_NATIVE;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState IN_NATIVE_TRANS;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState IN_VM;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState IN_VM_TRANS;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState IN_JAVA;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState IN_JAVA_TRANS;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState BLOCKED;
+  public static final sun.jvm.hotspot.runtime.JavaThreadState BLOCKED_TRANS;
+  public java.lang.String toString();
+  static {};
+}

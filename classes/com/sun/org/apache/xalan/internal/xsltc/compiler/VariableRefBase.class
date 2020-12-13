@@ -1,0 +1,13 @@
+Compiled from "VariableRefBase.java"
+class com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
+  protected com.sun.org.apache.xalan.internal.xsltc.compiler.VariableBase _variable;
+  protected com.sun.org.apache.xalan.internal.xsltc.compiler.Closure _closure;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase(com.sun.org.apache.xalan.internal.xsltc.compiler.VariableBase);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.VariableBase getVariable();
+  public void addParentDependency();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+}

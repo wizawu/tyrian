@@ -1,0 +1,7 @@
+Compiled from "OkCancelDialog.java"
+public class com.sun.java.swing.ui.OkCancelDialog extends javax.swing.JDialog implements java.awt.event.ActionListener {
+  public com.sun.java.swing.ui.OkCancelDialog(java.lang.String, javax.swing.JPanel);
+  public com.sun.java.swing.ui.OkCancelDialog(java.lang.String, javax.swing.JPanel, boolean);
+  public boolean isOk();
+  public void actionPerformed(java.awt.event.ActionEvent);
+}

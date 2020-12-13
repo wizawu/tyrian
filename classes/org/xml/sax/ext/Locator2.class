@@ -1,0 +1,5 @@
+Compiled from "Locator2.java"
+public interface org.xml.sax.ext.Locator2 extends org.xml.sax.Locator {
+  public abstract java.lang.String getXMLVersion();
+  public abstract java.lang.String getEncoding();
+}

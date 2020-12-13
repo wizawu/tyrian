@@ -1,0 +1,15 @@
+Compiled from "ArrayLikeIterator.java"
+public abstract class jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<T> implements java.util.Iterator<T> {
+  protected long index;
+  protected final boolean includeUndefined;
+  jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator(boolean);
+  public boolean isReverse();
+  protected long bumpIndex();
+  public long nextIndex();
+  public void remove();
+  public abstract long getLength();
+  public static jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> arrayLikeIterator(java.lang.Object);
+  public static jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> reverseArrayLikeIterator(java.lang.Object);
+  public static jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> arrayLikeIterator(java.lang.Object, boolean);
+  public static jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> reverseArrayLikeIterator(java.lang.Object, boolean);
+}

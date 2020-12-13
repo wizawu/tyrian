@@ -1,0 +1,13 @@
+Compiled from "CertPath.java"
+public abstract class java.security.cert.CertPath implements java.io.Serializable {
+  protected java.security.cert.CertPath(java.lang.String);
+  public java.lang.String getType();
+  public abstract java.util.Iterator<java.lang.String> getEncodings();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public abstract byte[] getEncoded() throws java.security.cert.CertificateEncodingException;
+  public abstract byte[] getEncoded(java.lang.String) throws java.security.cert.CertificateEncodingException;
+  public abstract java.util.List<? extends java.security.cert.Certificate> getCertificates();
+  protected java.lang.Object writeReplace() throws java.io.ObjectStreamException;
+}

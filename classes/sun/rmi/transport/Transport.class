@@ -1,0 +1,14 @@
+Compiled from "Transport.java"
+public abstract class sun.rmi.transport.Transport {
+  static final int logLevel;
+  static final sun.rmi.runtime.Log transportLog;
+  public sun.rmi.transport.Transport();
+  public abstract sun.rmi.transport.Channel getChannel(sun.rmi.transport.Endpoint);
+  public abstract void free(sun.rmi.transport.Endpoint);
+  public void exportObject(sun.rmi.transport.Target) throws java.rmi.RemoteException;
+  protected void targetUnexported();
+  static sun.rmi.transport.Transport currentTransport();
+  protected abstract void checkAcceptPermission(java.security.AccessControlContext);
+  public boolean serviceCall(java.rmi.server.RemoteCall);
+  static {};
+}

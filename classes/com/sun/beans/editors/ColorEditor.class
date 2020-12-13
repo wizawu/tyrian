@@ -1,0 +1,19 @@
+Compiled from "ColorEditor.java"
+public class com.sun.beans.editors.ColorEditor extends java.awt.Panel implements java.beans.PropertyEditor {
+  public com.sun.beans.editors.ColorEditor();
+  public void setValue(java.lang.Object);
+  public java.awt.Dimension preferredSize();
+  public boolean keyUp(java.awt.Event, int);
+  public void setAsText(java.lang.String) throws java.lang.IllegalArgumentException;
+  public boolean action(java.awt.Event, java.lang.Object);
+  public java.lang.String getJavaInitializationString();
+  public java.lang.Object getValue();
+  public boolean isPaintable();
+  public void paintValue(java.awt.Graphics, java.awt.Rectangle);
+  public java.lang.String getAsText();
+  public java.lang.String[] getTags();
+  public java.awt.Component getCustomEditor();
+  public boolean supportsCustomEditor();
+  public void addPropertyChangeListener(java.beans.PropertyChangeListener);
+  public void removePropertyChangeListener(java.beans.PropertyChangeListener);
+}

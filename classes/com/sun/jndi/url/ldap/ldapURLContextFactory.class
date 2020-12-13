@@ -1,0 +1,6 @@
+Compiled from "ldapURLContextFactory.java"
+public class com.sun.jndi.url.ldap.ldapURLContextFactory implements javax.naming.spi.ObjectFactory {
+  public com.sun.jndi.url.ldap.ldapURLContextFactory();
+  public java.lang.Object getObjectInstance(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws java.lang.Exception;
+  static javax.naming.spi.ResolveResult getUsingURLIgnoreRootDN(java.lang.String, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+}

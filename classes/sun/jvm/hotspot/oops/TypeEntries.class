@@ -1,0 +1,18 @@
+Compiled from "TypeEntries.java"
+public abstract class sun.jvm.hotspot.oops.TypeEntries<K, M> {
+  static final int nullSeen;
+  static final int typeMask;
+  static final int typeUnknown;
+  static final int statusBits;
+  static final int typeKlassMask;
+  final sun.jvm.hotspot.oops.ProfileData pd;
+  final int baseOff;
+  final sun.jvm.hotspot.oops.MethodDataInterface<K, M> methodData;
+  boolean wasNullSeen(int);
+  boolean isTypeUnknown(int);
+  boolean isTypeNone(int);
+  K validKlass(int);
+  void printKlass(java.io.PrintStream, int);
+  sun.jvm.hotspot.oops.TypeEntries(sun.jvm.hotspot.oops.MethodDataInterface<K, M>, sun.jvm.hotspot.oops.ProfileData, int);
+  long intptrAt(int);
+}

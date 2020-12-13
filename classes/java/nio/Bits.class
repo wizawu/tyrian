@@ -1,0 +1,17 @@
+Compiled from "Bits.java"
+class java.nio.Bits {
+  static final jdk.internal.misc.JavaNioAccess$BufferPool BUFFER_POOL;
+  static final int JNI_COPY_TO_ARRAY_THRESHOLD;
+  static final int JNI_COPY_FROM_ARRAY_THRESHOLD;
+  static final boolean $assertionsDisabled;
+  static short swap(short);
+  static char swap(char);
+  static int swap(int);
+  static long swap(long);
+  static int pageSize();
+  static int pageCount(long);
+  static boolean unaligned();
+  static void reserveMemory(long, int);
+  static void unreserveMemory(long, int);
+  static {};
+}

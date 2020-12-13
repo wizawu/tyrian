@@ -1,0 +1,17 @@
+Compiled from "SpanClipRenderer.java"
+public class sun.java2d.pipe.SpanClipRenderer implements sun.java2d.pipe.CompositePipe {
+  sun.java2d.pipe.CompositePipe outpipe;
+  static java.lang.Class<?> RegionClass;
+  static java.lang.Class<?> RegionIteratorClass;
+  static native void initIDs(java.lang.Class<?>, java.lang.Class<?>);
+  public sun.java2d.pipe.SpanClipRenderer(sun.java2d.pipe.CompositePipe);
+  public java.lang.Object startSequence(sun.java2d.SunGraphics2D, java.awt.Shape, java.awt.Rectangle, int[]);
+  public boolean needTile(java.lang.Object, int, int, int, int);
+  public void renderPathTile(java.lang.Object, byte[], int, int, int, int, int, int, sun.java2d.pipe.ShapeSpanIterator);
+  public void renderPathTile(java.lang.Object, byte[], int, int, int, int, int, int);
+  public native void fillTile(sun.java2d.pipe.RegionIterator, byte[], int, int, int[]);
+  public native void eraseTile(sun.java2d.pipe.RegionIterator, byte[], int, int, int[]);
+  public void skipTile(java.lang.Object, int, int);
+  public void endSequence(java.lang.Object);
+  static {};
+}

@@ -1,0 +1,10 @@
+Compiled from "CFrame.java"
+public interface sun.jvm.hotspot.debugger.cdbg.CFrame {
+  public abstract sun.jvm.hotspot.debugger.cdbg.CFrame sender(sun.jvm.hotspot.debugger.ThreadProxy);
+  public abstract sun.jvm.hotspot.debugger.Address pc();
+  public abstract sun.jvm.hotspot.debugger.cdbg.LoadObject loadObjectForPC();
+  public abstract sun.jvm.hotspot.debugger.cdbg.BlockSym blockForPC();
+  public abstract sun.jvm.hotspot.debugger.cdbg.ClosestSymbol closestSymbolToPC();
+  public abstract sun.jvm.hotspot.debugger.Address localVariableBase();
+  public abstract void iterateLocals(sun.jvm.hotspot.debugger.cdbg.ObjectVisitor);
+}

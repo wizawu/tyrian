@@ -1,0 +1,20 @@
+Compiled from "MessageInfoImpl.java"
+public class sun.nio.ch.sctp.MessageInfoImpl extends com.sun.nio.sctp.MessageInfo {
+  public sun.nio.ch.sctp.MessageInfoImpl(com.sun.nio.sctp.Association, java.net.SocketAddress, int);
+  public com.sun.nio.sctp.Association association();
+  void setAssociation(com.sun.nio.sctp.Association);
+  int associationID();
+  public java.net.SocketAddress address();
+  public int bytes();
+  public int streamNumber();
+  public com.sun.nio.sctp.MessageInfo streamNumber(int);
+  public int payloadProtocolID();
+  public com.sun.nio.sctp.MessageInfo payloadProtocolID(int);
+  public boolean isComplete();
+  public com.sun.nio.sctp.MessageInfo complete(boolean);
+  public boolean isUnordered();
+  public com.sun.nio.sctp.MessageInfo unordered(boolean);
+  public long timeToLive();
+  public com.sun.nio.sctp.MessageInfo timeToLive(long);
+  public java.lang.String toString();
+}

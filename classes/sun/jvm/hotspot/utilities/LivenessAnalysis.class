@@ -1,0 +1,4 @@
+Compiled from "LivenessAnalysis.java"
+public class sun.jvm.hotspot.utilities.LivenessAnalysis {
+  public static sun.jvm.hotspot.utilities.LivenessPathList computeAllLivenessPaths(sun.jvm.hotspot.oops.Oop);
+}

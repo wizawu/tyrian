@@ -1,0 +1,7 @@
+Compiled from "ModalityEvent.java"
+public class sun.awt.ModalityEvent extends java.awt.AWTEvent implements java.awt.ActiveEvent {
+  public static final int MODALITY_PUSHED;
+  public static final int MODALITY_POPPED;
+  public sun.awt.ModalityEvent(java.lang.Object, sun.awt.ModalityListener, int);
+  public void dispatch();
+}

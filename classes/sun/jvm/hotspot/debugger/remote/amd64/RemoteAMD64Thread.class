@@ -1,0 +1,6 @@
+Compiled from "RemoteAMD64Thread.java"
+public class sun.jvm.hotspot.debugger.remote.amd64.RemoteAMD64Thread extends sun.jvm.hotspot.debugger.remote.RemoteThread {
+  public sun.jvm.hotspot.debugger.remote.amd64.RemoteAMD64Thread(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.remote.amd64.RemoteAMD64Thread(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient, long);
+  public sun.jvm.hotspot.debugger.ThreadContext getContext() throws java.lang.IllegalThreadStateException;
+}

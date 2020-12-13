@@ -1,0 +1,6 @@
+Compiled from "TGSReq.java"
+public class sun.security.krb5.internal.TGSReq extends sun.security.krb5.internal.KDCReq {
+  public sun.security.krb5.internal.TGSReq(sun.security.krb5.internal.PAData[], sun.security.krb5.internal.KDCReqBody) throws java.io.IOException;
+  public sun.security.krb5.internal.TGSReq(byte[]) throws sun.security.krb5.Asn1Exception, java.io.IOException, sun.security.krb5.KrbException;
+  public sun.security.krb5.internal.TGSReq(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, java.io.IOException, sun.security.krb5.KrbException;
+}

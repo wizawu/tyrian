@@ -1,0 +1,15 @@
+Compiled from "AbstractWatchKey.java"
+abstract class sun.nio.fs.AbstractWatchKey implements java.nio.file.WatchKey {
+  static final int MAX_EVENT_LIST_SIZE;
+  static final sun.nio.fs.AbstractWatchKey$Event<java.lang.Object> OVERFLOW_EVENT;
+  static final boolean $assertionsDisabled;
+  protected sun.nio.fs.AbstractWatchKey(java.nio.file.Path, sun.nio.fs.AbstractWatchService);
+  final sun.nio.fs.AbstractWatchService watcher();
+  public java.nio.file.Path watchable();
+  final void signal();
+  final void signalEvent(java.nio.file.WatchEvent$Kind<?>, java.lang.Object);
+  public final java.util.List<java.nio.file.WatchEvent<?>> pollEvents();
+  public final boolean reset();
+  public java.nio.file.Watchable watchable();
+  static {};
+}

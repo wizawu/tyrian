@@ -1,0 +1,19 @@
+Compiled from "Clock.java"
+public abstract class java.time.Clock {
+  public static java.time.Clock systemUTC();
+  public static java.time.Clock systemDefaultZone();
+  public static java.time.Clock system(java.time.ZoneId);
+  public static java.time.Clock tickMillis(java.time.ZoneId);
+  public static java.time.Clock tickSeconds(java.time.ZoneId);
+  public static java.time.Clock tickMinutes(java.time.ZoneId);
+  public static java.time.Clock tick(java.time.Clock, java.time.Duration);
+  public static java.time.Clock fixed(java.time.Instant, java.time.ZoneId);
+  public static java.time.Clock offset(java.time.Clock, java.time.Duration);
+  protected java.time.Clock();
+  public abstract java.time.ZoneId getZone();
+  public abstract java.time.Clock withZone(java.time.ZoneId);
+  public long millis();
+  public abstract java.time.Instant instant();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

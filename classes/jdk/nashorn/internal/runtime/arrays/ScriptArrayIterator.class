@@ -1,0 +1,11 @@
+Compiled from "ScriptArrayIterator.java"
+class jdk.nashorn.internal.runtime.arrays.ScriptArrayIterator extends jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> {
+  protected final jdk.nashorn.internal.runtime.ScriptObject array;
+  protected final long length;
+  protected jdk.nashorn.internal.runtime.arrays.ScriptArrayIterator(jdk.nashorn.internal.runtime.ScriptObject, boolean);
+  protected boolean indexInArray();
+  public java.lang.Object next();
+  public long getLength();
+  public boolean hasNext();
+  public void remove();
+}

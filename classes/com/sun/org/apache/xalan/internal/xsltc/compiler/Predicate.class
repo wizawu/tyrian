@@ -1,0 +1,26 @@
+Compiled from "Predicate.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.Predicate extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression implements com.sun.org.apache.xalan.internal.xsltc.compiler.Closure {
+  int _ptype;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Predicate(com.sun.org.apache.xalan.internal.xsltc.compiler.Expression);
+  public void setParser(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+  public boolean isNthPositionFilter();
+  public boolean isNthDescendant();
+  public void dontOptimize();
+  public boolean hasPositionCall();
+  public boolean hasLastCall();
+  public boolean inInnerClass();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Closure getParentClosure();
+  public java.lang.String getInnerClassName();
+  public void addVariable(com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase);
+  public int getPosType();
+  public boolean parentIsPattern();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Expression getExpr();
+  public java.lang.String toString();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public boolean isBooleanTest();
+  public boolean isNodeValueTest();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Step getStep();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Expression getCompareValue();
+  public void translateFilter(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

@@ -1,0 +1,8 @@
+Compiled from "NewArrayTree.java"
+public interface com.sun.source.tree.NewArrayTree extends com.sun.source.tree.ExpressionTree {
+  public abstract com.sun.source.tree.Tree getType();
+  public abstract java.util.List<? extends com.sun.source.tree.ExpressionTree> getDimensions();
+  public abstract java.util.List<? extends com.sun.source.tree.ExpressionTree> getInitializers();
+  public abstract java.util.List<? extends com.sun.source.tree.AnnotationTree> getAnnotations();
+  public abstract java.util.List<? extends java.util.List<? extends com.sun.source.tree.AnnotationTree>> getDimAnnotations();
+}

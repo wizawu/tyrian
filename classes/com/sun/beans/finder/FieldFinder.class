@@ -1,0 +1,6 @@
+Compiled from "FieldFinder.java"
+public final class com.sun.beans.finder.FieldFinder {
+  public static java.lang.reflect.Field findField(java.lang.Class<?>, java.lang.String) throws java.lang.NoSuchFieldException;
+  public static java.lang.reflect.Field findInstanceField(java.lang.Class<?>, java.lang.String) throws java.lang.NoSuchFieldException;
+  public static java.lang.reflect.Field findStaticField(java.lang.Class<?>, java.lang.String) throws java.lang.NoSuchFieldException;
+}

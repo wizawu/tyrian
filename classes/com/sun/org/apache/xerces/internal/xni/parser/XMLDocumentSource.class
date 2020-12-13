@@ -1,0 +1,5 @@
+Compiled from "XMLDocumentSource.java"
+public interface com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource {
+  public abstract void setDocumentHandler(com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler);
+  public abstract com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler getDocumentHandler();
+}

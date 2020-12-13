@@ -1,0 +1,5 @@
+Compiled from "CalendarProvider.java"
+public abstract class sun.util.spi.CalendarProvider extends java.util.spi.LocaleServiceProvider {
+  protected sun.util.spi.CalendarProvider();
+  public abstract java.util.Calendar getInstance(java.util.TimeZone, java.util.Locale);
+}

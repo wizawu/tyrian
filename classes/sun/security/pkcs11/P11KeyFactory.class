@@ -1,0 +1,14 @@
+Compiled from "P11KeyFactory.java"
+abstract class sun.security.pkcs11.P11KeyFactory extends java.security.KeyFactorySpi {
+  final sun.security.pkcs11.Token token;
+  final java.lang.String algorithm;
+  sun.security.pkcs11.P11KeyFactory(sun.security.pkcs11.Token, java.lang.String);
+  static sun.security.pkcs11.P11Key convertKey(sun.security.pkcs11.Token, java.security.Key, java.lang.String) throws java.security.InvalidKeyException;
+  protected final <T extends java.security.spec.KeySpec> T engineGetKeySpec(java.security.Key, java.lang.Class<T>) throws java.security.spec.InvalidKeySpecException;
+  protected final java.security.Key engineTranslateKey(java.security.Key) throws java.security.InvalidKeyException;
+  abstract <T extends java.security.spec.KeySpec> T implGetPublicKeySpec(sun.security.pkcs11.P11Key, java.lang.Class<T>, sun.security.pkcs11.Session[]) throws sun.security.pkcs11.wrapper.PKCS11Exception, java.security.spec.InvalidKeySpecException;
+  abstract <T extends java.security.spec.KeySpec> T implGetPrivateKeySpec(sun.security.pkcs11.P11Key, java.lang.Class<T>, sun.security.pkcs11.Session[]) throws sun.security.pkcs11.wrapper.PKCS11Exception, java.security.spec.InvalidKeySpecException;
+  abstract java.security.PublicKey implTranslatePublicKey(java.security.PublicKey) throws java.security.InvalidKeyException;
+  abstract java.security.PrivateKey implTranslatePrivateKey(java.security.PrivateKey) throws java.security.InvalidKeyException;
+  abstract java.security.KeyFactory implGetSoftwareFactory() throws java.security.GeneralSecurityException;
+}

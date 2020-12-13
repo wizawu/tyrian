@@ -1,0 +1,30 @@
+Compiled from "MetadataDescriptor.java"
+public final class jdk.jfr.internal.MetadataDescriptor {
+  static final java.lang.String ATTRIBUTE_ID;
+  static final java.lang.String ATTRIBUTE_SIMPLE_TYPE;
+  static final java.lang.String ATTRIBUTE_GMT_OFFSET;
+  static final java.lang.String ATTRIBUTE_LOCALE;
+  static final java.lang.String ELEMENT_TYPE;
+  static final java.lang.String ELEMENT_SETTING;
+  static final java.lang.String ELEMENT_ANNOTATION;
+  static final java.lang.String ELEMENT_FIELD;
+  static final java.lang.String ATTRIBUTE_SUPER_TYPE;
+  static final java.lang.String ATTRIBUTE_TYPE_ID;
+  static final java.lang.String ATTRIBUTE_DIMENSION;
+  static final java.lang.String ATTRIBUTE_NAME;
+  static final java.lang.String ATTRIBUTE_CONSTANT_POOL;
+  static final java.lang.String ATTRIBUTE_DEFAULT_VALUE;
+  final java.util.List<jdk.jfr.EventType> eventTypes;
+  final java.util.Collection<jdk.jfr.internal.Type> types;
+  long gmtOffset;
+  java.lang.String locale;
+  jdk.jfr.internal.MetadataDescriptor$Element root;
+  jdk.jfr.internal.MetadataDescriptor();
+  public java.util.Collection<jdk.jfr.internal.Type> getTypes();
+  public java.util.List<jdk.jfr.EventType> getEventTypes();
+  public int getGMTOffset();
+  public java.lang.String getLocale();
+  public static jdk.jfr.internal.MetadataDescriptor read(java.io.DataInput) throws java.io.IOException;
+  static void write(java.util.List<jdk.jfr.internal.Type>, java.io.DataOutput) throws java.io.IOException;
+  public java.lang.String toString();
+}

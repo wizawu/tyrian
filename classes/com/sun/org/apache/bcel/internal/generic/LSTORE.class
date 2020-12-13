@@ -1,0 +1,6 @@
+Compiled from "LSTORE.java"
+public class com.sun.org.apache.bcel.internal.generic.LSTORE extends com.sun.org.apache.bcel.internal.generic.StoreInstruction {
+  com.sun.org.apache.bcel.internal.generic.LSTORE();
+  public com.sun.org.apache.bcel.internal.generic.LSTORE(int);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

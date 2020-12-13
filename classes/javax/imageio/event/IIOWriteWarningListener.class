@@ -1,0 +1,4 @@
+Compiled from "IIOWriteWarningListener.java"
+public interface javax.imageio.event.IIOWriteWarningListener extends java.util.EventListener {
+  public abstract void warningOccurred(javax.imageio.ImageWriter, int, java.lang.String);
+}

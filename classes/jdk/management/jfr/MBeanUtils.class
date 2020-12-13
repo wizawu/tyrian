@@ -1,0 +1,15 @@
+Compiled from "MBeanUtils.java"
+final class jdk.management.jfr.MBeanUtils {
+  jdk.management.jfr.MBeanUtils();
+  static javax.management.ObjectName createObjectName();
+  static void checkControl();
+  static void checkMonitor();
+  static <T, R> java.util.List<R> transformList(java.util.List<T>, java.util.function.Function<T, R>);
+  static boolean booleanValue(java.lang.String);
+  static java.time.Duration duration(java.lang.String) throws java.lang.NumberFormatException;
+  public static java.time.Instant parseTimestamp(java.lang.String, java.time.Instant);
+  static java.lang.Long size(java.lang.String) throws java.lang.NumberFormatException;
+  public static int parseBlockSize(java.lang.String, int);
+  public static java.lang.String destination(jdk.jfr.Recording, java.lang.String) throws java.lang.IllegalArgumentException;
+  static {};
+}

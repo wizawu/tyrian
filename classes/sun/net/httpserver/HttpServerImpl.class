@@ -1,0 +1,18 @@
+Compiled from "HttpServerImpl.java"
+public class sun.net.httpserver.HttpServerImpl extends com.sun.net.httpserver.HttpServer {
+  sun.net.httpserver.ServerImpl server;
+  sun.net.httpserver.HttpServerImpl() throws java.io.IOException;
+  sun.net.httpserver.HttpServerImpl(java.net.InetSocketAddress, int) throws java.io.IOException;
+  public void bind(java.net.InetSocketAddress, int) throws java.io.IOException;
+  public void start();
+  public void setExecutor(java.util.concurrent.Executor);
+  public java.util.concurrent.Executor getExecutor();
+  public void stop(int);
+  public sun.net.httpserver.HttpContextImpl createContext(java.lang.String, com.sun.net.httpserver.HttpHandler);
+  public sun.net.httpserver.HttpContextImpl createContext(java.lang.String);
+  public void removeContext(java.lang.String) throws java.lang.IllegalArgumentException;
+  public void removeContext(com.sun.net.httpserver.HttpContext) throws java.lang.IllegalArgumentException;
+  public java.net.InetSocketAddress getAddress();
+  public com.sun.net.httpserver.HttpContext createContext(java.lang.String);
+  public com.sun.net.httpserver.HttpContext createContext(java.lang.String, com.sun.net.httpserver.HttpHandler);
+}

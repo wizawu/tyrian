@@ -1,0 +1,6 @@
+Compiled from "Constants.java"
+public interface sun.rmi.rmic.Constants extends sun.tools.java.Constants {
+  public static final sun.tools.java.Identifier idRemote;
+  public static final sun.tools.java.Identifier idRemoteException;
+  static {};
+}

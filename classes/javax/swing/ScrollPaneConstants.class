@@ -1,0 +1,24 @@
+Compiled from "ScrollPaneConstants.java"
+public interface javax.swing.ScrollPaneConstants {
+  public static final java.lang.String VIEWPORT;
+  public static final java.lang.String VERTICAL_SCROLLBAR;
+  public static final java.lang.String HORIZONTAL_SCROLLBAR;
+  public static final java.lang.String ROW_HEADER;
+  public static final java.lang.String COLUMN_HEADER;
+  public static final java.lang.String LOWER_LEFT_CORNER;
+  public static final java.lang.String LOWER_RIGHT_CORNER;
+  public static final java.lang.String UPPER_LEFT_CORNER;
+  public static final java.lang.String UPPER_RIGHT_CORNER;
+  public static final java.lang.String LOWER_LEADING_CORNER;
+  public static final java.lang.String LOWER_TRAILING_CORNER;
+  public static final java.lang.String UPPER_LEADING_CORNER;
+  public static final java.lang.String UPPER_TRAILING_CORNER;
+  public static final java.lang.String VERTICAL_SCROLLBAR_POLICY;
+  public static final java.lang.String HORIZONTAL_SCROLLBAR_POLICY;
+  public static final int VERTICAL_SCROLLBAR_AS_NEEDED;
+  public static final int VERTICAL_SCROLLBAR_NEVER;
+  public static final int VERTICAL_SCROLLBAR_ALWAYS;
+  public static final int HORIZONTAL_SCROLLBAR_AS_NEEDED;
+  public static final int HORIZONTAL_SCROLLBAR_NEVER;
+  public static final int HORIZONTAL_SCROLLBAR_ALWAYS;
+}

@@ -1,0 +1,6 @@
+Compiled from "InstructionDetailWriter.java"
+public abstract class com.sun.tools.javap.InstructionDetailWriter extends com.sun.tools.javap.BasicWriter {
+  com.sun.tools.javap.InstructionDetailWriter(com.sun.tools.javap.Context);
+  abstract void writeDetails(com.sun.tools.classfile.Instruction);
+  void flush();
+}

@@ -1,0 +1,13 @@
+Compiled from "MemoryUsageCompositeData.java"
+public class sun.management.MemoryUsageCompositeData extends sun.management.LazyCompositeData {
+  public java.lang.management.MemoryUsage getMemoryUsage();
+  public static javax.management.openmbean.CompositeData toCompositeData(java.lang.management.MemoryUsage);
+  protected javax.management.openmbean.CompositeData getCompositeData();
+  static javax.management.openmbean.CompositeType getMemoryUsageCompositeType();
+  public static long getInit(javax.management.openmbean.CompositeData);
+  public static long getUsed(javax.management.openmbean.CompositeData);
+  public static long getCommitted(javax.management.openmbean.CompositeData);
+  public static long getMax(javax.management.openmbean.CompositeData);
+  public static void validateCompositeData(javax.management.openmbean.CompositeData);
+  static {};
+}

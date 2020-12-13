@@ -1,0 +1,14 @@
+Compiled from "ZoneRulesProvider.java"
+public abstract class java.time.zone.ZoneRulesProvider {
+  public static java.util.Set<java.lang.String> getAvailableZoneIds();
+  public static java.time.zone.ZoneRules getRules(java.lang.String, boolean);
+  public static java.util.NavigableMap<java.lang.String, java.time.zone.ZoneRules> getVersions(java.lang.String);
+  public static void registerProvider(java.time.zone.ZoneRulesProvider);
+  public static boolean refresh();
+  protected java.time.zone.ZoneRulesProvider();
+  protected abstract java.util.Set<java.lang.String> provideZoneIds();
+  protected abstract java.time.zone.ZoneRules provideRules(java.lang.String, boolean);
+  protected abstract java.util.NavigableMap<java.lang.String, java.time.zone.ZoneRules> provideVersions(java.lang.String);
+  protected boolean provideRefresh();
+  static {};
+}

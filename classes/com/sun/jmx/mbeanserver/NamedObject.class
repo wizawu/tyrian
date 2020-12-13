@@ -1,0 +1,9 @@
+Compiled from "NamedObject.java"
+public class com.sun.jmx.mbeanserver.NamedObject {
+  public com.sun.jmx.mbeanserver.NamedObject(javax.management.ObjectName, javax.management.DynamicMBean);
+  public com.sun.jmx.mbeanserver.NamedObject(java.lang.String, javax.management.DynamicMBean) throws javax.management.MalformedObjectNameException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public javax.management.ObjectName getName();
+  public javax.management.DynamicMBean getObject();
+}

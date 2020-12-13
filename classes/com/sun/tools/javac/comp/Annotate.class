@@ -1,0 +1,31 @@
+Compiled from "Annotate.java"
+public class com.sun.tools.javac.comp.Annotate {
+  protected static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.comp.Annotate> annotateKey;
+  com.sun.tools.javac.util.ListBuffer<java.lang.Runnable> typesQ;
+  com.sun.tools.javac.util.ListBuffer<java.lang.Runnable> afterTypesQ;
+  public static com.sun.tools.javac.comp.Annotate instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.comp.Annotate(com.sun.tools.javac.util.Context);
+  public void blockAnnotations();
+  public void unblockAnnotations();
+  public void unblockAnnotationsNoFlush();
+  public boolean annotationsBlocked();
+  public void enterDone();
+  public com.sun.tools.javac.util.List<com.sun.tools.javac.code.Attribute$TypeCompound> fromAnnotations(com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>);
+  public void normal(java.lang.Runnable);
+  public void validate(java.lang.Runnable);
+  public void flush();
+  public void typeAnnotation(java.lang.Runnable);
+  public void afterTypes(java.lang.Runnable);
+  public void annotateLater(com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>, com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>, com.sun.tools.javac.code.Symbol, com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition);
+  public void annotateDefaultValueLater(com.sun.tools.javac.tree.JCTree$JCExpression, com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>, com.sun.tools.javac.code.Symbol$MethodSymbol, com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition);
+  public com.sun.tools.javac.code.Attribute$Compound attributeAnnotation(com.sun.tools.javac.tree.JCTree$JCAnnotation, com.sun.tools.javac.code.Type, com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>);
+  public com.sun.tools.javac.code.Attribute$TypeCompound attributeTypeAnnotation(com.sun.tools.javac.tree.JCTree$JCAnnotation, com.sun.tools.javac.code.Type, com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>);
+  public void enterTypeAnnotations(com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>, com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>, com.sun.tools.javac.code.Symbol, com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, boolean);
+  public void queueScanTreeAndTypeAnnotate(com.sun.tools.javac.tree.JCTree, com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>, com.sun.tools.javac.code.Symbol, com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition);
+  public void annotateTypeSecondStage(com.sun.tools.javac.tree.JCTree, com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>, com.sun.tools.javac.code.Type);
+  public void annotateTypeParameterSecondStage(com.sun.tools.javac.tree.JCTree, com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCAnnotation>);
+  public com.sun.tools.javac.comp.Annotate$AnnotationTypeCompleter annotationTypeSourceCompleter();
+  public com.sun.tools.javac.code.Attribute unfinishedDefaultValue();
+  public void newRound();
+  static {};
+}

@@ -1,0 +1,11 @@
+Compiled from "SaslClient.java"
+public interface javax.security.sasl.SaslClient {
+  public abstract java.lang.String getMechanismName();
+  public abstract boolean hasInitialResponse();
+  public abstract byte[] evaluateChallenge(byte[]) throws javax.security.sasl.SaslException;
+  public abstract boolean isComplete();
+  public abstract byte[] unwrap(byte[], int, int) throws javax.security.sasl.SaslException;
+  public abstract byte[] wrap(byte[], int, int) throws javax.security.sasl.SaslException;
+  public abstract java.lang.Object getNegotiatedProperty(java.lang.String);
+  public abstract void dispose() throws javax.security.sasl.SaslException;
+}

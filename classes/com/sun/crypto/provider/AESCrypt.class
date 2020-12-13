@@ -1,0 +1,10 @@
+Compiled from "AESCrypt.java"
+final class com.sun.crypto.provider.AESCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.AESConstants {
+  com.sun.crypto.provider.AESCrypt();
+  int getBlockSize();
+  void init(boolean, java.lang.String, byte[]) throws java.security.InvalidKeyException;
+  static final boolean isKeySizeValid(int);
+  void encryptBlock(byte[], int, byte[], int);
+  void decryptBlock(byte[], int, byte[], int);
+  static {};
+}

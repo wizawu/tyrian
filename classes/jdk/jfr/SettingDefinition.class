@@ -1,0 +1,3 @@
+Compiled from "SettingDefinition.java"
+public interface jdk.jfr.SettingDefinition extends java.lang.annotation.Annotation {
+}

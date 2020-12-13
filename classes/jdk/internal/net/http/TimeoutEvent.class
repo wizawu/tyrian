@@ -1,0 +1,11 @@
+Compiled from "TimeoutEvent.java"
+abstract class jdk.internal.net.http.TimeoutEvent implements java.lang.Comparable<jdk.internal.net.http.TimeoutEvent> {
+  static final boolean $assertionsDisabled;
+  jdk.internal.net.http.TimeoutEvent(java.time.Duration);
+  public abstract void handle();
+  public java.time.Instant deadline();
+  public int compareTo(jdk.internal.net.http.TimeoutEvent);
+  public java.lang.String toString();
+  public int compareTo(java.lang.Object);
+  static {};
+}

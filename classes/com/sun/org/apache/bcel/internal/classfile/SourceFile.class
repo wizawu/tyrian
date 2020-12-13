@@ -1,0 +1,13 @@
+Compiled from "SourceFile.java"
+public final class com.sun.org.apache.bcel.internal.classfile.SourceFile extends com.sun.org.apache.bcel.internal.classfile.Attribute {
+  public com.sun.org.apache.bcel.internal.classfile.SourceFile(com.sun.org.apache.bcel.internal.classfile.SourceFile);
+  com.sun.org.apache.bcel.internal.classfile.SourceFile(int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.SourceFile(int, int, int, com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final int getSourceFileIndex();
+  public final void setSourceFileIndex(int);
+  public final java.lang.String getSourceFileName();
+  public final java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.classfile.Attribute copy(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+}

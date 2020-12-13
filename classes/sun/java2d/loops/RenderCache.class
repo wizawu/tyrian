@@ -1,0 +1,6 @@
+Compiled from "RenderCache.java"
+public final class sun.java2d.loops.RenderCache {
+  public sun.java2d.loops.RenderCache(int);
+  public synchronized java.lang.Object get(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public synchronized void put(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType, java.lang.Object);
+}

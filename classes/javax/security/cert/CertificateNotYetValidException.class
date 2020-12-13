@@ -1,0 +1,5 @@
+Compiled from "CertificateNotYetValidException.java"
+public class javax.security.cert.CertificateNotYetValidException extends javax.security.cert.CertificateException {
+  public javax.security.cert.CertificateNotYetValidException();
+  public javax.security.cert.CertificateNotYetValidException(java.lang.String);
+}

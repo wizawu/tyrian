@@ -1,0 +1,7 @@
+Compiled from "Function.java"
+public interface java.util.function.Function<T, R> {
+  public abstract R apply(T);
+  public default <V> java.util.function.Function<V, R> compose(java.util.function.Function<? super V, ? extends T>);
+  public default <V> java.util.function.Function<T, V> andThen(java.util.function.Function<? super R, ? extends V>);
+  public static <T> java.util.function.Function<T, T> identity();
+}

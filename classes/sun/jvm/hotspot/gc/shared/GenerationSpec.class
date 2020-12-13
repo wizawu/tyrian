@@ -1,0 +1,8 @@
+Compiled from "GenerationSpec.java"
+public class sun.jvm.hotspot.gc.shared.GenerationSpec extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.gc.shared.GenerationSpec(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.gc.shared.Generation$Name name();
+  public long initSize();
+  public long maxSize();
+  static {};
+}

@@ -1,0 +1,7 @@
+Compiled from "Or.java"
+public class com.sun.org.apache.xpath.internal.operations.Or extends com.sun.org.apache.xpath.internal.operations.Operation {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.operations.Or();
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public boolean bool(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+}

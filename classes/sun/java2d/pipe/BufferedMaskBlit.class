@@ -1,0 +1,6 @@
+Compiled from "BufferedMaskBlit.java"
+public abstract class sun.java2d.pipe.BufferedMaskBlit extends sun.java2d.loops.MaskBlit {
+  protected sun.java2d.pipe.BufferedMaskBlit(sun.java2d.pipe.RenderQueue, sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public void MaskBlit(sun.java2d.SurfaceData, sun.java2d.SurfaceData, java.awt.Composite, sun.java2d.pipe.Region, int, int, int, int, int, int, byte[], int, int);
+  protected abstract void validateContext(sun.java2d.SurfaceData, java.awt.Composite, sun.java2d.pipe.Region);
+}

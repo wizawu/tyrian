@@ -1,0 +1,11 @@
+Compiled from "XRSurfaceDataProxy.java"
+public class sun.java2d.xr.XRSurfaceDataProxy extends sun.java2d.SurfaceDataProxy implements java.awt.Transparency {
+  sun.java2d.xr.XRGraphicsConfig xrgc;
+  int transparency;
+  public static sun.java2d.SurfaceDataProxy createProxy(sun.java2d.SurfaceData, sun.java2d.xr.XRGraphicsConfig);
+  public sun.java2d.xr.XRSurfaceDataProxy(sun.java2d.xr.XRGraphicsConfig);
+  public sun.java2d.SurfaceData validateSurfaceData(sun.java2d.SurfaceData, sun.java2d.SurfaceData, int, int);
+  public sun.java2d.xr.XRSurfaceDataProxy(sun.java2d.xr.XRGraphicsConfig, int);
+  public boolean isSupportedOperation(sun.java2d.SurfaceData, int, sun.java2d.loops.CompositeType, java.awt.Color);
+  public int getTransparency();
+}

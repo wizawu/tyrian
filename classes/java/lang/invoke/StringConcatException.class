@@ -1,0 +1,5 @@
+Compiled from "StringConcatException.java"
+public class java.lang.invoke.StringConcatException extends java.lang.Exception {
+  public java.lang.invoke.StringConcatException(java.lang.String);
+  public java.lang.invoke.StringConcatException(java.lang.String, java.lang.Throwable);
+}

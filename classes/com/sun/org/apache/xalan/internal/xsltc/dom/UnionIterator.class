@@ -1,0 +1,5 @@
+Compiled from "UnionIterator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.dom.UnionIterator extends com.sun.org.apache.xalan.internal.xsltc.dom.MultiValuedNodeHeapIterator {
+  public com.sun.org.apache.xalan.internal.xsltc.dom.UnionIterator(com.sun.org.apache.xalan.internal.xsltc.DOM);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.UnionIterator addIterator(com.sun.org.apache.xml.internal.dtm.DTMAxisIterator);
+}

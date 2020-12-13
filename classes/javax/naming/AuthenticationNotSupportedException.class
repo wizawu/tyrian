@@ -1,0 +1,5 @@
+Compiled from "AuthenticationNotSupportedException.java"
+public class javax.naming.AuthenticationNotSupportedException extends javax.naming.NamingSecurityException {
+  public javax.naming.AuthenticationNotSupportedException(java.lang.String);
+  public javax.naming.AuthenticationNotSupportedException();
+}

@@ -1,0 +1,45 @@
+Compiled from "SynthTabbedPaneUI.java"
+public class javax.swing.plaf.synth.SynthTabbedPaneUI extends javax.swing.plaf.basic.BasicTabbedPaneUI implements java.beans.PropertyChangeListener,javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthTabbedPaneUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void installListeners();
+  protected void uninstallListeners();
+  protected void uninstallDefaults();
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  protected javax.swing.JButton createScrollButton(int);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  protected java.awt.event.MouseListener createMouseListener();
+  protected int getTabLabelShiftX(int, int, boolean);
+  protected int getTabLabelShiftY(int, int, boolean);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  protected int getBaseline(int);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  protected void paintTabArea(java.awt.Graphics, int, int);
+  protected void setRolloverTab(int);
+  protected int calculateMaxTabHeight(int);
+  protected int calculateTabWidth(int, int, java.awt.FontMetrics);
+  protected int calculateMaxTabWidth(int);
+  protected java.awt.Insets getTabInsets(int, int);
+  protected java.awt.FontMetrics getFontMetrics();
+  protected java.awt.LayoutManager createLayoutManager();
+  static javax.swing.JTabbedPane access$000(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static javax.swing.JTabbedPane access$100(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static javax.swing.JTabbedPane access$200(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static javax.swing.JTabbedPane access$300(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static javax.swing.JTabbedPane access$400(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static javax.swing.JTabbedPane access$500(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static javax.swing.JTabbedPane access$600(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static javax.swing.JTabbedPane access$700(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static int access$800(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static int[] access$900(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static int[] access$1000(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static int access$1100(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static javax.swing.JTabbedPane access$1200(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static java.awt.Rectangle[] access$1300(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static java.awt.Rectangle[] access$1400(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static java.awt.Rectangle[] access$1500(javax.swing.plaf.synth.SynthTabbedPaneUI);
+  static java.awt.Rectangle[] access$1600(javax.swing.plaf.synth.SynthTabbedPaneUI);
+}

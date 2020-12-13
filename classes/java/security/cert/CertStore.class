@@ -1,0 +1,13 @@
+Compiled from "CertStore.java"
+public class java.security.cert.CertStore {
+  protected java.security.cert.CertStore(java.security.cert.CertStoreSpi, java.security.Provider, java.lang.String, java.security.cert.CertStoreParameters);
+  public final java.util.Collection<? extends java.security.cert.Certificate> getCertificates(java.security.cert.CertSelector) throws java.security.cert.CertStoreException;
+  public final java.util.Collection<? extends java.security.cert.CRL> getCRLs(java.security.cert.CRLSelector) throws java.security.cert.CertStoreException;
+  public static java.security.cert.CertStore getInstance(java.lang.String, java.security.cert.CertStoreParameters) throws java.security.InvalidAlgorithmParameterException, java.security.NoSuchAlgorithmException;
+  public static java.security.cert.CertStore getInstance(java.lang.String, java.security.cert.CertStoreParameters, java.lang.String) throws java.security.InvalidAlgorithmParameterException, java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  public static java.security.cert.CertStore getInstance(java.lang.String, java.security.cert.CertStoreParameters, java.security.Provider) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
+  public final java.security.cert.CertStoreParameters getCertStoreParameters();
+  public final java.lang.String getType();
+  public final java.security.Provider getProvider();
+  public static final java.lang.String getDefaultType();
+}

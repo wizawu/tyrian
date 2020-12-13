@@ -1,0 +1,6 @@
+Compiled from "UnconfiguredOptionException.java"
+class jdk.internal.joptsimple.UnconfiguredOptionException extends jdk.internal.joptsimple.OptionException {
+  jdk.internal.joptsimple.UnconfiguredOptionException(java.lang.String);
+  jdk.internal.joptsimple.UnconfiguredOptionException(java.util.List<java.lang.String>);
+  java.lang.Object[] messageArguments();
+}

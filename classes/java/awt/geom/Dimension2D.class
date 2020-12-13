@@ -1,0 +1,9 @@
+Compiled from "Dimension2D.java"
+public abstract class java.awt.geom.Dimension2D implements java.lang.Cloneable {
+  protected java.awt.geom.Dimension2D();
+  public abstract double getWidth();
+  public abstract double getHeight();
+  public abstract void setSize(double, double);
+  public void setSize(java.awt.geom.Dimension2D);
+  public java.lang.Object clone();
+}

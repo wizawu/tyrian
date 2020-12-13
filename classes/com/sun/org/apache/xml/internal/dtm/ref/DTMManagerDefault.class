@@ -1,0 +1,24 @@
+Compiled from "DTMManagerDefault.java"
+public class com.sun.org.apache.xml.internal.dtm.ref.DTMManagerDefault extends com.sun.org.apache.xml.internal.dtm.DTMManager {
+  protected com.sun.org.apache.xml.internal.dtm.DTM[] m_dtms;
+  int[] m_dtm_offsets;
+  protected com.sun.org.apache.xml.internal.utils.XMLReaderManager m_readerManager;
+  protected org.xml.sax.helpers.DefaultHandler m_defaultHandler;
+  public synchronized void addDTM(com.sun.org.apache.xml.internal.dtm.DTM, int);
+  public synchronized void addDTM(com.sun.org.apache.xml.internal.dtm.DTM, int, int);
+  public synchronized int getFirstFreeDTMID();
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMManagerDefault();
+  public synchronized com.sun.org.apache.xml.internal.dtm.DTM getDTM(javax.xml.transform.Source, boolean, com.sun.org.apache.xml.internal.dtm.DTMWSFilter, boolean, boolean);
+  public synchronized int getDTMHandleFromNode(org.w3c.dom.Node);
+  public synchronized org.xml.sax.XMLReader getXMLReader(javax.xml.transform.Source);
+  public synchronized void releaseXMLReader(org.xml.sax.XMLReader);
+  public synchronized com.sun.org.apache.xml.internal.dtm.DTM getDTM(int);
+  public synchronized int getDTMIdentity(com.sun.org.apache.xml.internal.dtm.DTM);
+  public synchronized boolean release(com.sun.org.apache.xml.internal.dtm.DTM, boolean);
+  public synchronized com.sun.org.apache.xml.internal.dtm.DTM createDocumentFragment();
+  public synchronized com.sun.org.apache.xml.internal.dtm.DTMIterator createDTMIterator(int, com.sun.org.apache.xml.internal.dtm.DTMFilter, boolean);
+  public synchronized com.sun.org.apache.xml.internal.dtm.DTMIterator createDTMIterator(java.lang.String, com.sun.org.apache.xml.internal.utils.PrefixResolver);
+  public synchronized com.sun.org.apache.xml.internal.dtm.DTMIterator createDTMIterator(int);
+  public synchronized com.sun.org.apache.xml.internal.dtm.DTMIterator createDTMIterator(java.lang.Object, int);
+  public com.sun.org.apache.xml.internal.dtm.ref.ExpandedNameTable getExpandedNameTable(com.sun.org.apache.xml.internal.dtm.DTM);
+}

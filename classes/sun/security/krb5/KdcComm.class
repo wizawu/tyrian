@@ -1,0 +1,7 @@
+Compiled from "KdcComm.java"
+public final class sun.security.krb5.KdcComm {
+  public static void initStatic();
+  public sun.security.krb5.KdcComm(java.lang.String) throws sun.security.krb5.KrbException;
+  public byte[] send(byte[]) throws java.io.IOException, sun.security.krb5.KrbException;
+  static {};
+}

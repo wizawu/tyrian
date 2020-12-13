@@ -1,0 +1,25 @@
+Compiled from "PrimitiveValueImpl.java"
+public abstract class com.sun.tools.jdi.PrimitiveValueImpl extends com.sun.tools.jdi.ValueImpl implements com.sun.jdi.PrimitiveValue {
+  com.sun.tools.jdi.PrimitiveValueImpl(com.sun.jdi.VirtualMachine);
+  public abstract boolean booleanValue();
+  public abstract byte byteValue();
+  public abstract char charValue();
+  public abstract short shortValue();
+  public abstract int intValue();
+  public abstract long longValue();
+  public abstract float floatValue();
+  public abstract double doubleValue();
+  byte checkedByteValue() throws com.sun.jdi.InvalidTypeException;
+  char checkedCharValue() throws com.sun.jdi.InvalidTypeException;
+  short checkedShortValue() throws com.sun.jdi.InvalidTypeException;
+  int checkedIntValue() throws com.sun.jdi.InvalidTypeException;
+  long checkedLongValue() throws com.sun.jdi.InvalidTypeException;
+  float checkedFloatValue() throws com.sun.jdi.InvalidTypeException;
+  final boolean checkedBooleanValue() throws com.sun.jdi.InvalidTypeException;
+  final double checkedDoubleValue() throws com.sun.jdi.InvalidTypeException;
+  com.sun.tools.jdi.ValueImpl prepareForAssignmentTo(com.sun.tools.jdi.ValueContainer) throws com.sun.jdi.InvalidTypeException;
+  com.sun.tools.jdi.ValueImpl convertForAssignmentTo(com.sun.tools.jdi.ValueContainer) throws com.sun.jdi.InvalidTypeException;
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public com.sun.jdi.VirtualMachine virtualMachine();
+}

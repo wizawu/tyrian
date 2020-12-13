@@ -1,0 +1,11 @@
+Compiled from "Annotations.java"
+public abstract class com.sun.org.apache.bcel.internal.classfile.Annotations extends com.sun.org.apache.bcel.internal.classfile.Attribute {
+  com.sun.org.apache.bcel.internal.classfile.Annotations(byte, int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool, boolean) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.Annotations(byte, int, int, com.sun.org.apache.bcel.internal.classfile.AnnotationEntry[], com.sun.org.apache.bcel.internal.classfile.ConstantPool, boolean);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void setAnnotationTable(com.sun.org.apache.bcel.internal.classfile.AnnotationEntry[]);
+  public com.sun.org.apache.bcel.internal.classfile.AnnotationEntry[] getAnnotationEntries();
+  public final int getNumAnnotations();
+  public boolean isRuntimeVisible();
+  protected void writeAnnotations(java.io.DataOutputStream) throws java.io.IOException;
+}

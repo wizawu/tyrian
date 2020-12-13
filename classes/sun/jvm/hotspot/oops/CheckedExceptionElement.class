@@ -1,0 +1,6 @@
+Compiled from "CheckedExceptionElement.java"
+public class sun.jvm.hotspot.oops.CheckedExceptionElement {
+  public sun.jvm.hotspot.oops.CheckedExceptionElement(sun.jvm.hotspot.debugger.Address, long);
+  public int getClassCPIndex();
+  static {};
+}

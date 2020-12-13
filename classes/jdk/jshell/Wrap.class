@@ -1,0 +1,15 @@
+Compiled from "Wrap.java"
+abstract class jdk.jshell.Wrap implements jdk.jshell.GeneralWrap {
+  jdk.jshell.Wrap();
+  public static jdk.jshell.Wrap methodWrap(java.lang.String);
+  public static jdk.jshell.Wrap methodReturnWrap(java.lang.String);
+  public static jdk.jshell.Wrap methodUnreachableSemiWrap(java.lang.String);
+  public static jdk.jshell.Wrap methodUnreachableWrap(java.lang.String);
+  public static jdk.jshell.Wrap varWrap(java.lang.String, jdk.jshell.Wrap, java.lang.String, jdk.jshell.Wrap$Range, jdk.jshell.Wrap, boolean, jdk.jshell.Wrap);
+  public static jdk.jshell.Wrap tempVarWrap(java.lang.String, java.lang.String, java.lang.String, jdk.jshell.Wrap);
+  public static jdk.jshell.Wrap simpleWrap(java.lang.String);
+  public static jdk.jshell.Wrap identityWrap(java.lang.String);
+  public static jdk.jshell.Wrap rangeWrap(java.lang.String, jdk.jshell.Wrap$Range);
+  public static jdk.jshell.Wrap classMemberWrap(java.lang.String);
+  void debugWrap(java.lang.String, java.lang.Object...);
+}

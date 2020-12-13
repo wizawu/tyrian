@@ -1,0 +1,20 @@
+Compiled from "NodeFilter.java"
+public interface org.w3c.dom.traversal.NodeFilter {
+  public static final short FILTER_ACCEPT;
+  public static final short FILTER_REJECT;
+  public static final short FILTER_SKIP;
+  public static final int SHOW_ALL;
+  public static final int SHOW_ELEMENT;
+  public static final int SHOW_ATTRIBUTE;
+  public static final int SHOW_TEXT;
+  public static final int SHOW_CDATA_SECTION;
+  public static final int SHOW_ENTITY_REFERENCE;
+  public static final int SHOW_ENTITY;
+  public static final int SHOW_PROCESSING_INSTRUCTION;
+  public static final int SHOW_COMMENT;
+  public static final int SHOW_DOCUMENT;
+  public static final int SHOW_DOCUMENT_TYPE;
+  public static final int SHOW_DOCUMENT_FRAGMENT;
+  public static final int SHOW_NOTATION;
+  public abstract short acceptNode(org.w3c.dom.Node);
+}

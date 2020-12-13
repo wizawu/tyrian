@@ -1,0 +1,4 @@
+Compiled from "Generic.java"
+public class sun.net.www.content.text.Generic extends sun.net.www.content.text.plain {
+  public sun.net.www.content.text.Generic();
+}

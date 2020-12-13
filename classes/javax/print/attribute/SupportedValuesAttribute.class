@@ -1,0 +1,3 @@
+Compiled from "SupportedValuesAttribute.java"
+public interface javax.print.attribute.SupportedValuesAttribute extends javax.print.attribute.Attribute {
+}

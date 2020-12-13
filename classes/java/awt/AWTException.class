@@ -1,0 +1,4 @@
+Compiled from "AWTException.java"
+public class java.awt.AWTException extends java.lang.Exception {
+  public java.awt.AWTException(java.lang.String);
+}

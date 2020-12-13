@@ -1,0 +1,16 @@
+Compiled from "CalendarUtils.java"
+public class sun.util.calendar.CalendarUtils {
+  public sun.util.calendar.CalendarUtils();
+  public static final boolean isGregorianLeapYear(int);
+  public static final boolean isJulianLeapYear(int);
+  public static final long floorDivide(long, long);
+  public static final int floorDivide(int, int);
+  public static final int floorDivide(int, int, int[]);
+  public static final int floorDivide(long, int, int[]);
+  public static final long mod(long, long);
+  public static final int mod(int, int);
+  public static final int amod(int, int);
+  public static final long amod(long, long);
+  public static final java.lang.StringBuilder sprintf0d(java.lang.StringBuilder, int, int);
+  public static final java.lang.StringBuffer sprintf0d(java.lang.StringBuffer, int, int);
+}

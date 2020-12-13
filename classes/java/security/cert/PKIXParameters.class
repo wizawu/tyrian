@@ -1,0 +1,33 @@
+Compiled from "PKIXParameters.java"
+public class java.security.cert.PKIXParameters implements java.security.cert.CertPathParameters {
+  public java.security.cert.PKIXParameters(java.util.Set<java.security.cert.TrustAnchor>) throws java.security.InvalidAlgorithmParameterException;
+  public java.security.cert.PKIXParameters(java.security.KeyStore) throws java.security.KeyStoreException, java.security.InvalidAlgorithmParameterException;
+  public java.util.Set<java.security.cert.TrustAnchor> getTrustAnchors();
+  public void setTrustAnchors(java.util.Set<java.security.cert.TrustAnchor>) throws java.security.InvalidAlgorithmParameterException;
+  public java.util.Set<java.lang.String> getInitialPolicies();
+  public void setInitialPolicies(java.util.Set<java.lang.String>);
+  public void setCertStores(java.util.List<java.security.cert.CertStore>);
+  public void addCertStore(java.security.cert.CertStore);
+  public java.util.List<java.security.cert.CertStore> getCertStores();
+  public void setRevocationEnabled(boolean);
+  public boolean isRevocationEnabled();
+  public void setExplicitPolicyRequired(boolean);
+  public boolean isExplicitPolicyRequired();
+  public void setPolicyMappingInhibited(boolean);
+  public boolean isPolicyMappingInhibited();
+  public void setAnyPolicyInhibited(boolean);
+  public boolean isAnyPolicyInhibited();
+  public void setPolicyQualifiersRejected(boolean);
+  public boolean getPolicyQualifiersRejected();
+  public java.util.Date getDate();
+  public void setDate(java.util.Date);
+  public void setCertPathCheckers(java.util.List<java.security.cert.PKIXCertPathChecker>);
+  public java.util.List<java.security.cert.PKIXCertPathChecker> getCertPathCheckers();
+  public void addCertPathChecker(java.security.cert.PKIXCertPathChecker);
+  public java.lang.String getSigProvider();
+  public void setSigProvider(java.lang.String);
+  public java.security.cert.CertSelector getTargetCertConstraints();
+  public void setTargetCertConstraints(java.security.cert.CertSelector);
+  public java.lang.Object clone();
+  public java.lang.String toString();
+}

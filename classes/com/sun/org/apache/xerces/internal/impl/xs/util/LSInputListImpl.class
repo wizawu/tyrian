@@ -1,0 +1,13 @@
+Compiled from "LSInputListImpl.java"
+public final class com.sun.org.apache.xerces.internal.impl.xs.util.LSInputListImpl extends java.util.AbstractList<org.w3c.dom.ls.LSInput> implements com.sun.org.apache.xerces.internal.xs.LSInputList {
+  public static final com.sun.org.apache.xerces.internal.impl.xs.util.LSInputListImpl EMPTY_LIST;
+  public com.sun.org.apache.xerces.internal.impl.xs.util.LSInputListImpl(org.w3c.dom.ls.LSInput[], int);
+  public int getLength();
+  public org.w3c.dom.ls.LSInput item(int);
+  public org.w3c.dom.ls.LSInput get(int);
+  public int size();
+  public java.lang.Object[] toArray();
+  public java.lang.Object[] toArray(java.lang.Object[]);
+  public java.lang.Object get(int);
+  static {};
+}

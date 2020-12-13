@@ -1,0 +1,6 @@
+Compiled from "MonitorInfo.java"
+public interface com.sun.jdi.MonitorInfo extends com.sun.jdi.Mirror {
+  public abstract com.sun.jdi.ObjectReference monitor();
+  public abstract int stackDepth();
+  public abstract com.sun.jdi.ThreadReference thread();
+}

@@ -1,0 +1,25 @@
+Compiled from "NativeSignatureIterator.java"
+public abstract class sun.jvm.hotspot.runtime.NativeSignatureIterator extends sun.jvm.hotspot.runtime.SignatureIterator {
+  public void doBool();
+  public void doChar();
+  public void doFloat();
+  public void doDouble();
+  public void doByte();
+  public void doShort();
+  public void doInt();
+  public void doLong();
+  public void doVoid();
+  public void doObject(int, int);
+  public void doArray(int, int);
+  public sun.jvm.hotspot.oops.Method method();
+  public int offset();
+  public int jniOffset();
+  public boolean isStatic();
+  public abstract void passInt();
+  public abstract void passLong();
+  public abstract void passObject();
+  public abstract void passFloat();
+  public abstract void passDouble();
+  public sun.jvm.hotspot.runtime.NativeSignatureIterator(sun.jvm.hotspot.oops.Method);
+  public void iterate();
+}

@@ -1,0 +1,14 @@
+Compiled from "MetalToolTipUI.java"
+public class javax.swing.plaf.metal.MetalToolTipUI extends javax.swing.plaf.basic.BasicToolTipUI {
+  static javax.swing.plaf.metal.MetalToolTipUI sharedInstance;
+  public static final int padSpaceBetweenStrings;
+  public javax.swing.plaf.metal.MetalToolTipUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  protected boolean isAcceleratorHidden();
+  public java.lang.String getAcceleratorString();
+  static {};
+}

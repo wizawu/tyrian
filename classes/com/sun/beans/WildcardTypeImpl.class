@@ -1,0 +1,9 @@
+Compiled from "WildcardTypeImpl.java"
+final class com.sun.beans.WildcardTypeImpl implements java.lang.reflect.WildcardType {
+  com.sun.beans.WildcardTypeImpl(java.lang.reflect.Type[], java.lang.reflect.Type[]);
+  public java.lang.reflect.Type[] getUpperBounds();
+  public java.lang.reflect.Type[] getLowerBounds();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

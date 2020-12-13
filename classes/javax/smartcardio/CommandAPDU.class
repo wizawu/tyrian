@@ -1,0 +1,23 @@
+Compiled from "CommandAPDU.java"
+public final class javax.smartcardio.CommandAPDU implements java.io.Serializable {
+  public javax.smartcardio.CommandAPDU(byte[]);
+  public javax.smartcardio.CommandAPDU(byte[], int, int);
+  public javax.smartcardio.CommandAPDU(java.nio.ByteBuffer);
+  public javax.smartcardio.CommandAPDU(int, int, int, int);
+  public javax.smartcardio.CommandAPDU(int, int, int, int, int);
+  public javax.smartcardio.CommandAPDU(int, int, int, int, byte[]);
+  public javax.smartcardio.CommandAPDU(int, int, int, int, byte[], int, int);
+  public javax.smartcardio.CommandAPDU(int, int, int, int, byte[], int);
+  public javax.smartcardio.CommandAPDU(int, int, int, int, byte[], int, int, int);
+  public int getCLA();
+  public int getINS();
+  public int getP1();
+  public int getP2();
+  public int getNc();
+  public byte[] getData();
+  public int getNe();
+  public byte[] getBytes();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

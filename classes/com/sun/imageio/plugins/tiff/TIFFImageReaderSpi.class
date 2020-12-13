@@ -1,0 +1,8 @@
+Compiled from "TIFFImageReaderSpi.java"
+public class com.sun.imageio.plugins.tiff.TIFFImageReaderSpi extends javax.imageio.spi.ImageReaderSpi {
+  public com.sun.imageio.plugins.tiff.TIFFImageReaderSpi();
+  public java.lang.String getDescription(java.util.Locale);
+  public boolean canDecodeInput(java.lang.Object) throws java.io.IOException;
+  public javax.imageio.ImageReader createReaderInstance(java.lang.Object);
+  public void onRegistration(javax.imageio.spi.ServiceRegistry, java.lang.Class<?>);
+}

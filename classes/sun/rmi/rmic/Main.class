@@ -1,0 +1,43 @@
+Compiled from "Main.java"
+public class sun.rmi.rmic.Main implements sun.rmi.rmic.Constants {
+  java.lang.String sourcePathArg;
+  java.lang.String sysClassPathArg;
+  java.lang.String classPathString;
+  java.io.File destDir;
+  int flags;
+  long tm;
+  java.util.Vector<java.lang.String> classes;
+  boolean nowrite;
+  boolean nocompile;
+  boolean keepGenerated;
+  boolean status;
+  java.lang.String[] generatorArgs;
+  java.util.Vector<sun.rmi.rmic.Generator> generators;
+  java.lang.Class<? extends sun.rmi.rmic.BatchEnvironment> environmentClass;
+  java.lang.String program;
+  java.io.OutputStream out;
+  public sun.rmi.rmic.Main(java.io.OutputStream, java.lang.String);
+  public void output(java.lang.String);
+  public void error(java.lang.String);
+  public void error(java.lang.String, java.lang.String);
+  public void error(java.lang.String, java.lang.String, java.lang.String);
+  public void usage();
+  public synchronized boolean compile(java.lang.String[]);
+  public java.io.File getDestinationDir();
+  public boolean parseArgs(java.lang.String[]);
+  protected boolean checkGeneratorArg(java.lang.String[], int);
+  protected sun.rmi.rmic.Generator addGenerator(java.lang.String);
+  protected java.lang.String[] getArray(java.lang.String, boolean);
+  public sun.rmi.rmic.BatchEnvironment getEnv();
+  public boolean doCompile();
+  public void compileAllClasses(sun.rmi.rmic.BatchEnvironment) throws sun.tools.java.ClassNotFound, java.io.IOException, java.lang.InterruptedException;
+  public boolean compileClass(sun.tools.java.ClassDeclaration, java.io.ByteArrayOutputStream, sun.rmi.rmic.BatchEnvironment) throws sun.tools.java.ClassNotFound, java.io.IOException, java.lang.InterruptedException;
+  public static void main(java.lang.String[]);
+  public static java.lang.String getString(java.lang.String);
+  public static java.lang.String getText(java.lang.String);
+  public static java.lang.String getText(java.lang.String, int);
+  public static java.lang.String getText(java.lang.String, java.lang.String);
+  public static java.lang.String getText(java.lang.String, java.lang.String, java.lang.String);
+  public static java.lang.String getText(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  static {};
+}

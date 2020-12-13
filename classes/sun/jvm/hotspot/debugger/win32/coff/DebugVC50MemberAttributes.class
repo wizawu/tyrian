@@ -1,0 +1,20 @@
+Compiled from "DebugVC50MemberAttributes.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50MemberAttributes {
+  public static final short MEMATTR_ACCESS_MASK;
+  public static final short MEMATTR_ACCESS_NO_PROTECTION;
+  public static final short MEMATTR_ACCESS_PRIVATE;
+  public static final short MEMATTR_ACCESS_PROTECTED;
+  public static final short MEMATTR_ACCESS_PUBLIC;
+  public static final short MEMATTR_MPROP_MASK;
+  public static final short MEMATTR_MPROP_VANILLA;
+  public static final short MEMATTR_MPROP_VIRTUAL;
+  public static final short MEMATTR_MPROP_STATIC;
+  public static final short MEMATTR_MPROP_FRIEND;
+  public static final short MEMATTR_MPROP_INTRODUCING_VIRTUAL;
+  public static final short MEMATTR_MPROP_PURE_VIRTUAL;
+  public static final short MEMATTR_MPROP_PURE_INTRODUCING_VIRTUAL;
+  public static final short MEMATTR_PSEUDO_MASK;
+  public static final short MEMATTR_NOINHERIT_MASK;
+  public static final short MEMATTR_NOCONSTRUCT_MASK;
+  public static final short MEMATTR_COMPGENX_MASK;
+}

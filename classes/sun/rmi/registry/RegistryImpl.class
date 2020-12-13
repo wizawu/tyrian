@@ -1,0 +1,16 @@
+Compiled from "RegistryImpl.java"
+public class sun.rmi.registry.RegistryImpl extends java.rmi.server.RemoteServer implements java.rmi.registry.Registry {
+  public sun.rmi.registry.RegistryImpl(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException;
+  public sun.rmi.registry.RegistryImpl(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory, java.io.ObjectInputFilter) throws java.rmi.RemoteException;
+  public sun.rmi.registry.RegistryImpl(int) throws java.rmi.RemoteException;
+  public java.rmi.Remote lookup(java.lang.String) throws java.rmi.RemoteException, java.rmi.NotBoundException;
+  public void bind(java.lang.String, java.rmi.Remote) throws java.rmi.RemoteException, java.rmi.AlreadyBoundException, java.rmi.AccessException;
+  public void unbind(java.lang.String) throws java.rmi.RemoteException, java.rmi.NotBoundException, java.rmi.AccessException;
+  public void rebind(java.lang.String, java.rmi.Remote) throws java.rmi.RemoteException, java.rmi.AccessException;
+  public java.lang.String[] list() throws java.rmi.RemoteException;
+  public static void checkAccess(java.lang.String) throws java.rmi.AccessException;
+  public static java.rmi.server.ObjID getID();
+  public static sun.rmi.registry.RegistryImpl createRegistry(int) throws java.rmi.RemoteException;
+  public static void main(java.lang.String[]);
+  static {};
+}

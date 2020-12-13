@@ -1,0 +1,20 @@
+Compiled from "GSSNameImpl.java"
+public class sun.security.jgss.GSSNameImpl implements org.ietf.jgss.GSSName {
+  static final org.ietf.jgss.Oid oldHostbasedServiceName;
+  static sun.security.jgss.GSSNameImpl wrapElement(sun.security.jgss.GSSManagerImpl, sun.security.jgss.spi.GSSNameSpi) throws org.ietf.jgss.GSSException;
+  sun.security.jgss.GSSNameImpl(sun.security.jgss.GSSManagerImpl, sun.security.jgss.spi.GSSNameSpi);
+  sun.security.jgss.GSSNameImpl(sun.security.jgss.GSSManagerImpl, java.lang.Object, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  sun.security.jgss.GSSNameImpl(sun.security.jgss.GSSManagerImpl, java.lang.Object, org.ietf.jgss.Oid, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSName canonicalize(org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public boolean equals(org.ietf.jgss.GSSName) throws org.ietf.jgss.GSSException;
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public byte[] export() throws org.ietf.jgss.GSSException;
+  public java.lang.String toString();
+  public org.ietf.jgss.Oid getStringNameType() throws org.ietf.jgss.GSSException;
+  public boolean isAnonymous();
+  public boolean isMN();
+  public synchronized sun.security.jgss.spi.GSSNameSpi getElement(org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  java.util.Set<sun.security.jgss.spi.GSSNameSpi> getElements();
+  static {};
+}

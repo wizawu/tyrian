@@ -1,0 +1,5 @@
+Compiled from "CSSCharsetRule.java"
+public interface org.w3c.dom.css.CSSCharsetRule extends org.w3c.dom.css.CSSRule {
+  public abstract java.lang.String getEncoding();
+  public abstract void setEncoding(java.lang.String) throws org.w3c.dom.DOMException;
+}

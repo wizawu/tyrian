@@ -1,0 +1,14 @@
+Compiled from "Console.java"
+public final class java.io.Console implements java.io.Flushable {
+  static final boolean $assertionsDisabled;
+  public java.io.PrintWriter writer();
+  public java.io.Reader reader();
+  public java.io.Console format(java.lang.String, java.lang.Object...);
+  public java.io.Console printf(java.lang.String, java.lang.Object...);
+  public java.lang.String readLine(java.lang.String, java.lang.Object...);
+  public java.lang.String readLine();
+  public char[] readPassword(java.lang.String, java.lang.Object...);
+  public char[] readPassword();
+  public void flush();
+  static {};
+}

@@ -1,0 +1,12 @@
+Compiled from "StorageResolver.java"
+public class com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver {
+  public com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver();
+  public com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver(com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi);
+  public void add(com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi);
+  public com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver(java.security.KeyStore);
+  public void add(java.security.KeyStore);
+  public com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver(java.security.cert.X509Certificate);
+  public void add(java.security.cert.X509Certificate);
+  public java.util.Iterator<java.security.cert.Certificate> getIterator();
+  static {};
+}

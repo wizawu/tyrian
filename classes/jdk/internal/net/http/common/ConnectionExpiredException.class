@@ -1,0 +1,4 @@
+Compiled from "ConnectionExpiredException.java"
+public final class jdk.internal.net.http.common.ConnectionExpiredException extends java.io.IOException {
+  public jdk.internal.net.http.common.ConnectionExpiredException(java.lang.Throwable);
+}

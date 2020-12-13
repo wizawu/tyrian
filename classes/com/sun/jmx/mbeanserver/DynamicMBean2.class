@@ -1,0 +1,7 @@
+Compiled from "DynamicMBean2.java"
+public interface com.sun.jmx.mbeanserver.DynamicMBean2 extends javax.management.DynamicMBean {
+  public abstract java.lang.Object getResource();
+  public abstract java.lang.String getClassName();
+  public abstract void preRegister2(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public abstract void registerFailed();
+}

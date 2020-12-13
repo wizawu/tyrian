@@ -1,0 +1,17 @@
+Compiled from "ByteArrayAccess.java"
+final class sun.security.provider.ByteArrayAccess {
+  static void b2iLittle(byte[], int, int[], int, int);
+  static void b2iLittle64(byte[], int, int[]);
+  static void i2bLittle(int[], int, byte[], int, int);
+  static void i2bLittle4(int, byte[], int);
+  static void b2iBig(byte[], int, int[], int, int);
+  static void b2iBig64(byte[], int, int[]);
+  static void i2bBig(int[], int, byte[], int, int);
+  static void i2bBig4(int, byte[], int);
+  static void b2lBig(byte[], int, long[], int, int);
+  static void b2lBig128(byte[], int, long[]);
+  static void l2bBig(long[], int, byte[], int, int);
+  static void b2lLittle(byte[], int, long[], int, int);
+  static void l2bLittle(long[], int, byte[], int, int);
+  static {};
+}

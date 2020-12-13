@@ -1,0 +1,3 @@
+Compiled from "NClob.java"
+public interface java.sql.NClob extends java.sql.Clob {
+}

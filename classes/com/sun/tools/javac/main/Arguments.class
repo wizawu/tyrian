@@ -1,0 +1,24 @@
+Compiled from "Arguments.java"
+public class com.sun.tools.javac.main.Arguments {
+  public static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.main.Arguments> argsKey;
+  public static com.sun.tools.javac.main.Arguments instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.main.Arguments(com.sun.tools.javac.util.Context);
+  public void init(java.lang.String, java.lang.String...);
+  public void init(java.lang.String, java.lang.Iterable<java.lang.String>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<? extends javax.tools.JavaFileObject>);
+  public void init(java.lang.String);
+  public java.util.Set<javax.tools.JavaFileObject> getFileObjects();
+  public java.util.Set<java.lang.String> getClassNames();
+  public boolean handleReleaseOptions(java.util.function.Predicate<java.lang.Iterable<java.lang.String>>);
+  public boolean validate();
+  public boolean isEmpty();
+  public void allowEmpty();
+  public java.util.Map<com.sun.tools.javac.main.Option, java.lang.String> getDeferredFileManagerOptions();
+  public java.util.Set<com.sun.tools.javac.util.List<java.lang.String>> getPluginOpts();
+  public com.sun.tools.javac.util.List<java.lang.String> getDocLintOpts();
+  void checkOptionAllowed(boolean, com.sun.tools.javac.main.Arguments$ErrorReporter, com.sun.tools.javac.main.Option...);
+  void reportDiag(com.sun.tools.javac.util.JCDiagnostic$DiagnosticInfo);
+  void error(com.sun.tools.javac.main.Option$InvalidValueException);
+  <T> com.sun.tools.javac.util.ListBuffer<T> toList(java.lang.Iterable<? extends T>);
+  <T> java.util.Set<T> toSet(java.lang.Iterable<? extends T>);
+  static {};
+}

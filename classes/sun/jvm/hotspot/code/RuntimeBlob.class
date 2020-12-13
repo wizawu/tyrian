@@ -1,0 +1,5 @@
+Compiled from "RuntimeBlob.java"
+public class sun.jvm.hotspot.code.RuntimeBlob extends sun.jvm.hotspot.code.CodeBlob {
+  public sun.jvm.hotspot.code.RuntimeBlob(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

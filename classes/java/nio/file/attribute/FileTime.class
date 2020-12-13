@@ -1,0 +1,14 @@
+Compiled from "FileTime.java"
+public final class java.nio.file.attribute.FileTime implements java.lang.Comparable<java.nio.file.attribute.FileTime> {
+  public static java.nio.file.attribute.FileTime from(long, java.util.concurrent.TimeUnit);
+  public static java.nio.file.attribute.FileTime fromMillis(long);
+  public static java.nio.file.attribute.FileTime from(java.time.Instant);
+  public long to(java.util.concurrent.TimeUnit);
+  public long toMillis();
+  public java.time.Instant toInstant();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public int compareTo(java.nio.file.attribute.FileTime);
+  public java.lang.String toString();
+  public int compareTo(java.lang.Object);
+}

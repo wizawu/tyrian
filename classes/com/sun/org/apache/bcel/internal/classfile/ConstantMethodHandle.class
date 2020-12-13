@@ -1,0 +1,13 @@
+Compiled from "ConstantMethodHandle.java"
+public final class com.sun.org.apache.bcel.internal.classfile.ConstantMethodHandle extends com.sun.org.apache.bcel.internal.classfile.Constant {
+  public com.sun.org.apache.bcel.internal.classfile.ConstantMethodHandle(com.sun.org.apache.bcel.internal.classfile.ConstantMethodHandle);
+  com.sun.org.apache.bcel.internal.classfile.ConstantMethodHandle(java.io.DataInput) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.ConstantMethodHandle(int, int);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public int getReferenceKind();
+  public void setReferenceKind(int);
+  public int getReferenceIndex();
+  public void setReferenceIndex(int);
+  public final java.lang.String toString();
+}

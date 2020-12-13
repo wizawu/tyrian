@@ -1,0 +1,7 @@
+Compiled from "DTD.java"
+public interface javax.xml.stream.events.DTD extends javax.xml.stream.events.XMLEvent {
+  public abstract java.lang.String getDocumentTypeDeclaration();
+  public abstract java.lang.Object getProcessedDTD();
+  public abstract java.util.List<javax.xml.stream.events.NotationDeclaration> getNotations();
+  public abstract java.util.List<javax.xml.stream.events.EntityDeclaration> getEntities();
+}

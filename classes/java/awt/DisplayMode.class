@@ -1,0 +1,14 @@
+Compiled from "DisplayMode.java"
+public final class java.awt.DisplayMode {
+  public static final int BIT_DEPTH_MULTI;
+  public static final int REFRESH_RATE_UNKNOWN;
+  public java.awt.DisplayMode(int, int, int, int);
+  public int getHeight();
+  public int getWidth();
+  public int getBitDepth();
+  public int getRefreshRate();
+  public boolean equals(java.awt.DisplayMode);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

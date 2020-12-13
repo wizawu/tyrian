@@ -1,0 +1,11 @@
+Compiled from "ChunksChannel.java"
+final class jdk.jfr.internal.ChunksChannel implements java.nio.channels.ReadableByteChannel {
+  static final boolean $assertionsDisabled;
+  public jdk.jfr.internal.ChunksChannel(java.util.List<jdk.jfr.internal.RepositoryChunk>) throws java.io.IOException;
+  public int read(java.nio.ByteBuffer) throws java.io.IOException;
+  public long transferTo(java.nio.channels.FileChannel) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public boolean isOpen();
+  protected void finalize() throws java.lang.Throwable;
+  static {};
+}

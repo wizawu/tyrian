@@ -1,0 +1,34 @@
+Compiled from "JToolBar.java"
+public class javax.swing.JToolBar extends javax.swing.JComponent implements javax.swing.SwingConstants,javax.accessibility.Accessible {
+  public javax.swing.JToolBar();
+  public javax.swing.JToolBar(int);
+  public javax.swing.JToolBar(java.lang.String);
+  public javax.swing.JToolBar(java.lang.String, int);
+  public javax.swing.plaf.ToolBarUI getUI();
+  public void setUI(javax.swing.plaf.ToolBarUI);
+  public void updateUI();
+  public java.lang.String getUIClassID();
+  public int getComponentIndex(java.awt.Component);
+  public java.awt.Component getComponentAtIndex(int);
+  public void setMargin(java.awt.Insets);
+  public java.awt.Insets getMargin();
+  public boolean isBorderPainted();
+  public void setBorderPainted(boolean);
+  protected void paintBorder(java.awt.Graphics);
+  public boolean isFloatable();
+  public void setFloatable(boolean);
+  public int getOrientation();
+  public void setOrientation(int);
+  public void setRollover(boolean);
+  public boolean isRollover();
+  public void addSeparator();
+  public void addSeparator(java.awt.Dimension);
+  public javax.swing.JButton add(javax.swing.Action);
+  protected javax.swing.JButton createActionComponent(javax.swing.Action);
+  protected java.beans.PropertyChangeListener createActionChangeListener(javax.swing.JButton);
+  protected void addImpl(java.awt.Component, java.lang.Object, int);
+  protected java.lang.String paramString();
+  public void setLayout(java.awt.LayoutManager);
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  public javax.swing.plaf.ComponentUI getUI();
+}

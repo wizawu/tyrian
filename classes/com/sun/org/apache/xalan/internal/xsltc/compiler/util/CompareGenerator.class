@@ -1,0 +1,14 @@
+Compiled from "CompareGenerator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.CompareGenerator extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.CompareGenerator(int, com.sun.org.apache.bcel.internal.generic.Type, com.sun.org.apache.bcel.internal.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, com.sun.org.apache.bcel.internal.generic.InstructionList, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.Instruction loadLastNode();
+  public com.sun.org.apache.bcel.internal.generic.Instruction loadCurrentNode();
+  public com.sun.org.apache.bcel.internal.generic.Instruction storeCurrentNode();
+  public com.sun.org.apache.bcel.internal.generic.Instruction loadDOM();
+  public int getHandlerIndex();
+  public int getIteratorIndex();
+  public com.sun.org.apache.bcel.internal.generic.Instruction storeIterator();
+  public com.sun.org.apache.bcel.internal.generic.Instruction loadIterator();
+  public int getLocalIndex(java.lang.String);
+  static {};
+}

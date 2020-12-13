@@ -1,0 +1,6 @@
+Compiled from "SOQLException.java"
+public class sun.jvm.hotspot.utilities.soql.SOQLException extends java.lang.Exception {
+  public sun.jvm.hotspot.utilities.soql.SOQLException(java.lang.String);
+  public sun.jvm.hotspot.utilities.soql.SOQLException(java.lang.String, java.lang.Throwable);
+  public sun.jvm.hotspot.utilities.soql.SOQLException(java.lang.Throwable);
+}

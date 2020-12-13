@@ -1,0 +1,11 @@
+Compiled from "AccessibleTableModelChange.java"
+public interface javax.accessibility.AccessibleTableModelChange {
+  public static final int INSERT;
+  public static final int UPDATE;
+  public static final int DELETE;
+  public abstract int getType();
+  public abstract int getFirstRow();
+  public abstract int getLastRow();
+  public abstract int getFirstColumn();
+  public abstract int getLastColumn();
+}

@@ -1,0 +1,12 @@
+Compiled from "GenCollectedHeap.java"
+public abstract class sun.jvm.hotspot.gc.shared.GenCollectedHeap extends sun.jvm.hotspot.gc.shared.CollectedHeap {
+  public sun.jvm.hotspot.gc.shared.GenCollectedHeap(sun.jvm.hotspot.debugger.Address);
+  public int nGens();
+  public sun.jvm.hotspot.gc.shared.Generation getGen(int);
+  public boolean isIn(sun.jvm.hotspot.debugger.Address);
+  public long capacity();
+  public long used();
+  sun.jvm.hotspot.gc.shared.GenerationSpec spec(int);
+  public void printOn(java.io.PrintStream);
+  static {};
+}

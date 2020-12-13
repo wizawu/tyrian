@@ -1,0 +1,4 @@
+Compiled from "SystemTrayPeer.java"
+public interface java.awt.peer.SystemTrayPeer {
+  public abstract java.awt.Dimension getTrayIconSize();
+}

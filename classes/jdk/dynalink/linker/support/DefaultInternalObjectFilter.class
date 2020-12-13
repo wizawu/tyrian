@@ -1,0 +1,7 @@
+Compiled from "DefaultInternalObjectFilter.java"
+public class jdk.dynalink.linker.support.DefaultInternalObjectFilter implements jdk.dynalink.linker.MethodHandleTransformer {
+  static final boolean $assertionsDisabled;
+  public jdk.dynalink.linker.support.DefaultInternalObjectFilter(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
+  public java.lang.invoke.MethodHandle transform(java.lang.invoke.MethodHandle);
+  static {};
+}

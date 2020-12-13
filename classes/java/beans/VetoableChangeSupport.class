@@ -1,0 +1,17 @@
+Compiled from "VetoableChangeSupport.java"
+public class java.beans.VetoableChangeSupport implements java.io.Serializable {
+  static final long serialVersionUID;
+  public java.beans.VetoableChangeSupport(java.lang.Object);
+  public void addVetoableChangeListener(java.beans.VetoableChangeListener);
+  public void removeVetoableChangeListener(java.beans.VetoableChangeListener);
+  public java.beans.VetoableChangeListener[] getVetoableChangeListeners();
+  public void addVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener);
+  public void removeVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener);
+  public java.beans.VetoableChangeListener[] getVetoableChangeListeners(java.lang.String);
+  public void fireVetoableChange(java.lang.String, java.lang.Object, java.lang.Object) throws java.beans.PropertyVetoException;
+  public void fireVetoableChange(java.lang.String, int, int) throws java.beans.PropertyVetoException;
+  public void fireVetoableChange(java.lang.String, boolean, boolean) throws java.beans.PropertyVetoException;
+  public void fireVetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException;
+  public boolean hasListeners(java.lang.String);
+  static {};
+}

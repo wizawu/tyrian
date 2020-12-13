@@ -1,0 +1,9 @@
+Compiled from "SaslException.java"
+public class javax.security.sasl.SaslException extends java.io.IOException {
+  public javax.security.sasl.SaslException();
+  public javax.security.sasl.SaslException(java.lang.String);
+  public javax.security.sasl.SaslException(java.lang.String, java.lang.Throwable);
+  public java.lang.Throwable getCause();
+  public java.lang.Throwable initCause(java.lang.Throwable);
+  public java.lang.String toString();
+}

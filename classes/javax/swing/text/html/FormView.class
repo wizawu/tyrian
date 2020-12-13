@@ -1,0 +1,15 @@
+Compiled from "FormView.java"
+public class javax.swing.text.html.FormView extends javax.swing.text.ComponentView implements java.awt.event.ActionListener {
+  public static final java.lang.String SUBMIT;
+  public static final java.lang.String RESET;
+  static final java.lang.String PostDataProperty;
+  public javax.swing.text.html.FormView(javax.swing.text.Element);
+  protected java.awt.Component createComponent();
+  public float getMaximumSpan(int);
+  public void actionPerformed(java.awt.event.ActionEvent);
+  protected void submitData(java.lang.String);
+  protected void imageSubmit(java.lang.String);
+  boolean isLastTextOrPasswordField();
+  void resetForm();
+  static {};
+}

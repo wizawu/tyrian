@@ -1,0 +1,12 @@
+Compiled from "HttpContext.java"
+public abstract class com.sun.net.httpserver.HttpContext {
+  protected com.sun.net.httpserver.HttpContext();
+  public abstract com.sun.net.httpserver.HttpHandler getHandler();
+  public abstract void setHandler(com.sun.net.httpserver.HttpHandler);
+  public abstract java.lang.String getPath();
+  public abstract com.sun.net.httpserver.HttpServer getServer();
+  public abstract java.util.Map<java.lang.String, java.lang.Object> getAttributes();
+  public abstract java.util.List<com.sun.net.httpserver.Filter> getFilters();
+  public abstract com.sun.net.httpserver.Authenticator setAuthenticator(com.sun.net.httpserver.Authenticator);
+  public abstract com.sun.net.httpserver.Authenticator getAuthenticator();
+}

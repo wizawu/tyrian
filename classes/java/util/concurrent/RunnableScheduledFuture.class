@@ -1,0 +1,4 @@
+Compiled from "RunnableScheduledFuture.java"
+public interface java.util.concurrent.RunnableScheduledFuture<V> extends java.util.concurrent.RunnableFuture<V>, java.util.concurrent.ScheduledFuture<V> {
+  public abstract boolean isPeriodic();
+}

@@ -1,0 +1,7 @@
+Compiled from "XML11DTDValidator.java"
+public class com.sun.org.apache.xerces.internal.impl.dtd.XML11DTDValidator extends com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator {
+  protected static final java.lang.String DTD_VALIDATOR_PROPERTY;
+  public com.sun.org.apache.xerces.internal.impl.dtd.XML11DTDValidator();
+  public void reset(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager);
+  protected void init();
+}

@@ -1,0 +1,27 @@
+Compiled from "ElementKind.java"
+public final class javax.lang.model.element.ElementKind extends java.lang.Enum<javax.lang.model.element.ElementKind> {
+  public static final javax.lang.model.element.ElementKind PACKAGE;
+  public static final javax.lang.model.element.ElementKind ENUM;
+  public static final javax.lang.model.element.ElementKind CLASS;
+  public static final javax.lang.model.element.ElementKind ANNOTATION_TYPE;
+  public static final javax.lang.model.element.ElementKind INTERFACE;
+  public static final javax.lang.model.element.ElementKind ENUM_CONSTANT;
+  public static final javax.lang.model.element.ElementKind FIELD;
+  public static final javax.lang.model.element.ElementKind PARAMETER;
+  public static final javax.lang.model.element.ElementKind LOCAL_VARIABLE;
+  public static final javax.lang.model.element.ElementKind EXCEPTION_PARAMETER;
+  public static final javax.lang.model.element.ElementKind METHOD;
+  public static final javax.lang.model.element.ElementKind CONSTRUCTOR;
+  public static final javax.lang.model.element.ElementKind STATIC_INIT;
+  public static final javax.lang.model.element.ElementKind INSTANCE_INIT;
+  public static final javax.lang.model.element.ElementKind TYPE_PARAMETER;
+  public static final javax.lang.model.element.ElementKind OTHER;
+  public static final javax.lang.model.element.ElementKind RESOURCE_VARIABLE;
+  public static final javax.lang.model.element.ElementKind MODULE;
+  public static javax.lang.model.element.ElementKind[] values();
+  public static javax.lang.model.element.ElementKind valueOf(java.lang.String);
+  public boolean isClass();
+  public boolean isInterface();
+  public boolean isField();
+  static {};
+}

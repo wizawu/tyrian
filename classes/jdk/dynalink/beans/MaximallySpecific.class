@@ -1,0 +1,9 @@
+Compiled from "MaximallySpecific.java"
+class jdk.dynalink.beans.MaximallySpecific {
+  static final boolean $assertionsDisabled;
+  jdk.dynalink.beans.MaximallySpecific();
+  static java.util.List<jdk.dynalink.beans.SingleDynamicMethod> getMaximallySpecificMethods(java.util.List<jdk.dynalink.beans.SingleDynamicMethod>, boolean);
+  static java.util.List<java.lang.invoke.MethodHandle> getMaximallySpecificMethodHandles(java.util.List<java.lang.invoke.MethodHandle>, boolean, java.lang.Class<?>[], jdk.dynalink.linker.LinkerServices);
+  static java.util.List<jdk.dynalink.beans.SingleDynamicMethod> getMaximallySpecificSingleDynamicMethods(java.util.List<jdk.dynalink.beans.SingleDynamicMethod>, boolean, java.lang.Class<?>[], jdk.dynalink.linker.LinkerServices);
+  static {};
+}

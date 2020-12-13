@@ -1,0 +1,8 @@
+Compiled from "RowFilter.java"
+public class com.sun.imageio.plugins.png.RowFilter {
+  public com.sun.imageio.plugins.png.RowFilter();
+  protected static int subFilter(byte[], byte[], int, int);
+  protected static int upFilter(byte[], byte[], byte[], int, int);
+  protected final int paethPredictor(int, int, int);
+  public int filterRow(int, byte[], byte[], byte[][], int, int);
+}

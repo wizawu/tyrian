@@ -1,0 +1,14 @@
+Compiled from "JSeparator.java"
+public class javax.swing.JSeparator extends javax.swing.JComponent implements javax.swing.SwingConstants,javax.accessibility.Accessible {
+  public javax.swing.JSeparator();
+  public javax.swing.JSeparator(int);
+  public javax.swing.plaf.SeparatorUI getUI();
+  public void setUI(javax.swing.plaf.SeparatorUI);
+  public void updateUI();
+  public java.lang.String getUIClassID();
+  public int getOrientation();
+  public void setOrientation(int);
+  protected java.lang.String paramString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  public javax.swing.plaf.ComponentUI getUI();
+}

@@ -1,0 +1,11 @@
+Compiled from "InfoWindow.java"
+public abstract class sun.awt.X11.InfoWindow extends java.awt.Window {
+  static final boolean $assertionsDisabled;
+  protected sun.awt.X11.InfoWindow(java.awt.Frame, java.awt.Color);
+  public java.awt.Component add(java.awt.Component);
+  protected void setCloser(java.lang.Runnable, int);
+  protected void show(java.awt.Point, int);
+  public void hide();
+  static void access$001(sun.awt.X11.InfoWindow);
+  static {};
+}

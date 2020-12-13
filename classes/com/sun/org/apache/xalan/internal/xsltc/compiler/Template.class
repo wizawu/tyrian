@@ -1,0 +1,29 @@
+Compiled from "Template.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.Template extends com.sun.org.apache.xalan.internal.xsltc.compiler.TopLevelElement {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Template();
+  public boolean hasParams();
+  public boolean isSimplified();
+  public void setSimplified();
+  public boolean isSimpleNamedTemplate();
+  public void addParameter(com.sun.org.apache.xalan.internal.xsltc.compiler.Param);
+  public java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.Param> getParameters();
+  public void disable();
+  public boolean disabled();
+  public double getPriority();
+  public int getPosition();
+  public boolean isNamed();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Pattern getPattern();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.QName getName();
+  public void setName(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.QName getModeName();
+  public int compareTo(java.lang.Object);
+  public void display(int);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet getStylesheet();
+  public void parseContents(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+  public void parseSimplified(com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet, com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public java.util.List getDependencies();
+  public void addDependency(com.sun.org.apache.xalan.internal.xsltc.compiler.TopLevelElement);
+  public com.sun.org.apache.bcel.internal.generic.InstructionList compile(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

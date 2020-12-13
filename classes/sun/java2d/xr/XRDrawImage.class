@@ -1,0 +1,5 @@
+Compiled from "XRDrawImage.java"
+public class sun.java2d.xr.XRDrawImage extends sun.java2d.pipe.DrawImage {
+  public sun.java2d.xr.XRDrawImage();
+  protected void renderImageXform(sun.java2d.SunGraphics2D, java.awt.Image, java.awt.geom.AffineTransform, int, int, int, int, int, java.awt.Color);
+}

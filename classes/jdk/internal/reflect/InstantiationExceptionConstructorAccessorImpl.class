@@ -1,0 +1,5 @@
+Compiled from "InstantiationExceptionConstructorAccessorImpl.java"
+class jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl extends jdk.internal.reflect.ConstructorAccessorImpl {
+  jdk.internal.reflect.InstantiationExceptionConstructorAccessorImpl(java.lang.String);
+  public java.lang.Object newInstance(java.lang.Object[]) throws java.lang.InstantiationException, java.lang.IllegalArgumentException, java.lang.reflect.InvocationTargetException;
+}

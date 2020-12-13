@@ -1,0 +1,11 @@
+Compiled from "TopLevelElement.java"
+class com.sun.org.apache.xalan.internal.xsltc.compiler.TopLevelElement extends com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode {
+  protected java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode> _dependencies;
+  com.sun.org.apache.xalan.internal.xsltc.compiler.TopLevelElement();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public com.sun.org.apache.bcel.internal.generic.InstructionList compile(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public void display(int);
+  public void addDependency(com.sun.org.apache.xalan.internal.xsltc.compiler.TopLevelElement);
+  public java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode> getDependencies();
+}

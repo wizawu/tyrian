@@ -1,0 +1,11 @@
+Compiled from "KeyIdentifier.java"
+public class sun.security.x509.KeyIdentifier {
+  public sun.security.x509.KeyIdentifier(byte[]);
+  public sun.security.x509.KeyIdentifier(sun.security.util.DerValue) throws java.io.IOException;
+  public sun.security.x509.KeyIdentifier(java.security.PublicKey) throws java.io.IOException;
+  public byte[] getIdentifier();
+  public java.lang.String toString();
+  void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

@@ -1,0 +1,5 @@
+Compiled from "FFT.java"
+public final class com.sun.media.sound.FFT {
+  public com.sun.media.sound.FFT(int, int);
+  public void transform(double[]);
+}

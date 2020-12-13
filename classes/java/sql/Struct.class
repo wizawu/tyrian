@@ -1,0 +1,6 @@
+Compiled from "Struct.java"
+public interface java.sql.Struct {
+  public abstract java.lang.String getSQLTypeName() throws java.sql.SQLException;
+  public abstract java.lang.Object[] getAttributes() throws java.sql.SQLException;
+  public abstract java.lang.Object[] getAttributes(java.util.Map<java.lang.String, java.lang.Class<?>>) throws java.sql.SQLException;
+}

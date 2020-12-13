@@ -1,0 +1,5 @@
+Compiled from "DALOAD.java"
+public class com.sun.org.apache.bcel.internal.generic.DALOAD extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
+  public com.sun.org.apache.bcel.internal.generic.DALOAD();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

@@ -1,0 +1,14 @@
+Compiled from "ImportSnippet.java"
+public class jdk.jshell.ImportSnippet extends jdk.jshell.PersistentSnippet {
+  final java.lang.String fullname;
+  final java.lang.String fullkey;
+  final boolean isStatic;
+  final boolean isStar;
+  jdk.jshell.ImportSnippet(jdk.jshell.Key$ImportKey, java.lang.String, jdk.jshell.Wrap, java.lang.String, java.lang.String, jdk.jshell.Snippet$SubKind, java.lang.String, boolean, boolean);
+  public java.lang.String name();
+  public java.lang.String fullname();
+  public boolean isStatic();
+  jdk.jshell.Key$ImportKey key();
+  java.lang.String importLine(jdk.jshell.JShell);
+  jdk.jshell.Key key();
+}

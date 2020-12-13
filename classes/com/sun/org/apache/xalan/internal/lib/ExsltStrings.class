@@ -1,0 +1,13 @@
+Compiled from "ExsltStrings.java"
+public class com.sun.org.apache.xalan.internal.lib.ExsltStrings extends com.sun.org.apache.xalan.internal.lib.ExsltBase {
+  public com.sun.org.apache.xalan.internal.lib.ExsltStrings();
+  public static java.lang.String align(java.lang.String, java.lang.String, java.lang.String);
+  public static java.lang.String align(java.lang.String, java.lang.String);
+  public static java.lang.String concat(org.w3c.dom.NodeList);
+  public static java.lang.String padding(double, java.lang.String);
+  public static java.lang.String padding(double);
+  public static org.w3c.dom.NodeList split(java.lang.String, java.lang.String);
+  public static org.w3c.dom.NodeList split(java.lang.String);
+  public static org.w3c.dom.NodeList tokenize(java.lang.String, java.lang.String);
+  public static org.w3c.dom.NodeList tokenize(java.lang.String);
+}

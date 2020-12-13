@@ -1,0 +1,9 @@
+Compiled from "ObjectHistogramPanel.java"
+public class sun.jvm.hotspot.ui.ObjectHistogramPanel extends javax.swing.JPanel implements java.awt.event.ActionListener {
+  public sun.jvm.hotspot.ui.ObjectHistogramPanel(sun.jvm.hotspot.oops.ObjectHistogram);
+  public void actionPerformed(java.awt.event.ActionEvent);
+  protected void registerActions();
+  public void addPanelListener(sun.jvm.hotspot.ui.ObjectHistogramPanel$Listener);
+  public void removePanelListener(sun.jvm.hotspot.ui.ObjectHistogramPanel$Listener);
+  public static void main(java.lang.String[]);
+}

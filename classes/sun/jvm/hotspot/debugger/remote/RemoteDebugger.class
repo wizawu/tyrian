@@ -1,0 +1,28 @@
+Compiled from "RemoteDebugger.java"
+public interface sun.jvm.hotspot.debugger.remote.RemoteDebugger extends java.rmi.Remote {
+  public abstract java.lang.String getOS() throws java.rmi.RemoteException;
+  public abstract java.lang.String getCPU() throws java.rmi.RemoteException;
+  public abstract sun.jvm.hotspot.debugger.MachineDescription getMachineDescription() throws java.rmi.RemoteException;
+  public abstract long lookupInProcess(java.lang.String, java.lang.String) throws java.rmi.RemoteException;
+  public abstract sun.jvm.hotspot.debugger.ReadResult readBytesFromProcess(long, long) throws java.rmi.RemoteException;
+  public abstract boolean hasConsole() throws java.rmi.RemoteException;
+  public abstract java.lang.String getConsolePrompt() throws java.rmi.RemoteException;
+  public abstract java.lang.String consoleExecuteCommand(java.lang.String) throws java.rmi.RemoteException;
+  public abstract long getJBooleanSize() throws java.rmi.RemoteException;
+  public abstract long getJByteSize() throws java.rmi.RemoteException;
+  public abstract long getJCharSize() throws java.rmi.RemoteException;
+  public abstract long getJDoubleSize() throws java.rmi.RemoteException;
+  public abstract long getJFloatSize() throws java.rmi.RemoteException;
+  public abstract long getJIntSize() throws java.rmi.RemoteException;
+  public abstract long getJLongSize() throws java.rmi.RemoteException;
+  public abstract long getJShortSize() throws java.rmi.RemoteException;
+  public abstract long getHeapOopSize() throws java.rmi.RemoteException;
+  public abstract long getNarrowOopBase() throws java.rmi.RemoteException;
+  public abstract int getNarrowOopShift() throws java.rmi.RemoteException;
+  public abstract long getKlassPtrSize() throws java.rmi.RemoteException;
+  public abstract long getNarrowKlassBase() throws java.rmi.RemoteException;
+  public abstract int getNarrowKlassShift() throws java.rmi.RemoteException;
+  public abstract boolean areThreadsEqual(long, boolean, long, boolean) throws java.rmi.RemoteException;
+  public abstract int getThreadHashCode(long, boolean) throws java.rmi.RemoteException;
+  public abstract long[] getThreadIntegerRegisterSet(long, boolean) throws java.rmi.RemoteException;
+}

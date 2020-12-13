@@ -1,0 +1,16 @@
+Compiled from "SubjectKeyIdentifierExtension.java"
+public class sun.security.x509.SubjectKeyIdentifierExtension extends sun.security.x509.Extension implements sun.security.x509.CertAttrSet<java.lang.String> {
+  public static final java.lang.String IDENT;
+  public static final java.lang.String NAME;
+  public static final java.lang.String KEY_ID;
+  public sun.security.x509.SubjectKeyIdentifierExtension(byte[]) throws java.io.IOException;
+  public sun.security.x509.SubjectKeyIdentifierExtension(java.lang.Boolean, java.lang.Object) throws java.io.IOException;
+  public java.lang.String toString();
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+  public void set(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public sun.security.x509.KeyIdentifier get(java.lang.String) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  public java.lang.String getName();
+  public java.lang.Object get(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+}

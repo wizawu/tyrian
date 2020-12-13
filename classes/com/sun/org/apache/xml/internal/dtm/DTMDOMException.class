@@ -1,0 +1,6 @@
+Compiled from "DTMDOMException.java"
+public class com.sun.org.apache.xml.internal.dtm.DTMDOMException extends org.w3c.dom.DOMException {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xml.internal.dtm.DTMDOMException(short, java.lang.String);
+  public com.sun.org.apache.xml.internal.dtm.DTMDOMException(short);
+}

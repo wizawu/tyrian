@@ -1,0 +1,5 @@
+Compiled from "JoniRegExp.java"
+public class jdk.nashorn.internal.runtime.regexp.JoniRegExp extends jdk.nashorn.internal.runtime.regexp.RegExp {
+  public jdk.nashorn.internal.runtime.regexp.JoniRegExp(java.lang.String, java.lang.String) throws jdk.nashorn.internal.runtime.ParserException;
+  public jdk.nashorn.internal.runtime.regexp.RegExpMatcher match(java.lang.String);
+}

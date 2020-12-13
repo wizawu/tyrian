@@ -1,0 +1,4 @@
+Compiled from "DOMCache.java"
+public interface com.sun.org.apache.xalan.internal.xsltc.DOMCache {
+  public abstract com.sun.org.apache.xalan.internal.xsltc.DOM retrieveDocument(java.lang.String, java.lang.String, com.sun.org.apache.xalan.internal.xsltc.Translet);
+}

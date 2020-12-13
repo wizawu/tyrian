@@ -1,0 +1,41 @@
+Compiled from "X509CertInfo.java"
+public class sun.security.x509.X509CertInfo implements sun.security.x509.CertAttrSet<java.lang.String> {
+  public static final java.lang.String IDENT;
+  public static final java.lang.String NAME;
+  public static final java.lang.String DN_NAME;
+  public static final java.lang.String VERSION;
+  public static final java.lang.String SERIAL_NUMBER;
+  public static final java.lang.String ALGORITHM_ID;
+  public static final java.lang.String ISSUER;
+  public static final java.lang.String SUBJECT;
+  public static final java.lang.String VALIDITY;
+  public static final java.lang.String KEY;
+  public static final java.lang.String ISSUER_ID;
+  public static final java.lang.String SUBJECT_ID;
+  public static final java.lang.String EXTENSIONS;
+  protected sun.security.x509.CertificateVersion version;
+  protected sun.security.x509.CertificateSerialNumber serialNum;
+  protected sun.security.x509.CertificateAlgorithmId algId;
+  protected sun.security.x509.X500Name issuer;
+  protected sun.security.x509.X500Name subject;
+  protected sun.security.x509.CertificateValidity interval;
+  protected sun.security.x509.CertificateX509Key pubKey;
+  protected sun.security.x509.UniqueIdentity issuerUniqueId;
+  protected sun.security.x509.UniqueIdentity subjectUniqueId;
+  protected sun.security.x509.CertificateExtensions extensions;
+  public sun.security.x509.X509CertInfo();
+  public sun.security.x509.X509CertInfo(byte[]) throws java.security.cert.CertificateParsingException;
+  public sun.security.x509.X509CertInfo(sun.security.util.DerValue) throws java.security.cert.CertificateParsingException;
+  public void encode(java.io.OutputStream) throws java.security.cert.CertificateException, java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  public java.lang.String getName();
+  public byte[] getEncodedInfo() throws java.security.cert.CertificateEncodingException;
+  public boolean equals(java.lang.Object);
+  public boolean equals(sun.security.x509.X509CertInfo);
+  public int hashCode();
+  public java.lang.String toString();
+  public void set(java.lang.String, java.lang.Object) throws java.security.cert.CertificateException, java.io.IOException;
+  public void delete(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+  public java.lang.Object get(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+  static {};
+}

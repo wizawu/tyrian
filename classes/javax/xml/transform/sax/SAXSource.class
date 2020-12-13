@@ -1,0 +1,15 @@
+Compiled from "SAXSource.java"
+public class javax.xml.transform.sax.SAXSource implements javax.xml.transform.Source {
+  public static final java.lang.String FEATURE;
+  public javax.xml.transform.sax.SAXSource();
+  public javax.xml.transform.sax.SAXSource(org.xml.sax.XMLReader, org.xml.sax.InputSource);
+  public javax.xml.transform.sax.SAXSource(org.xml.sax.InputSource);
+  public void setXMLReader(org.xml.sax.XMLReader);
+  public org.xml.sax.XMLReader getXMLReader();
+  public void setInputSource(org.xml.sax.InputSource);
+  public org.xml.sax.InputSource getInputSource();
+  public void setSystemId(java.lang.String);
+  public java.lang.String getSystemId();
+  public static org.xml.sax.InputSource sourceToInputSource(javax.xml.transform.Source);
+  public boolean isEmpty();
+}

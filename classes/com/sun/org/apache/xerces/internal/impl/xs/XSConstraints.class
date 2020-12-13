@@ -1,0 +1,20 @@
+Compiled from "XSConstraints.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.XSConstraints {
+  static final int OCCURRENCE_UNKNOWN;
+  static final com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType STRING_TYPE;
+  public com.sun.org.apache.xerces.internal.impl.xs.XSConstraints();
+  public static com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl getEmptySequence();
+  public static boolean checkTypeDerivationOk(com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, short);
+  public static boolean checkSimpleDerivationOk(com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType, com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, short);
+  public static boolean checkComplexDerivationOk(com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl, com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, short);
+  public static java.lang.Object ElementDefaultValidImmediate(com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext, com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo);
+  static void reportSchemaError(com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, com.sun.org.apache.xerces.internal.impl.xs.util.SimpleLocator, java.lang.String, java.lang.Object[]);
+  public static void fullSchemaChecking(com.sun.org.apache.xerces.internal.impl.xs.XSGrammarBucket, com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler, com.sun.org.apache.xerces.internal.impl.xs.models.CMBuilder, com.sun.org.apache.xerces.internal.impl.XMLErrorReporter);
+  public static void checkElementDeclsConsistent(com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl, com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl, com.sun.org.apache.xerces.internal.util.SymbolHash, com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler) throws com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaException;
+  public static void findElemInTable(com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl, com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, com.sun.org.apache.xerces.internal.util.SymbolHash) throws com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaException;
+  public static boolean overlapUPA(com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler);
+  public static boolean overlapUPA(com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, com.sun.org.apache.xerces.internal.impl.xs.XSWildcardDecl, com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler);
+  public static boolean overlapUPA(com.sun.org.apache.xerces.internal.impl.xs.XSWildcardDecl, com.sun.org.apache.xerces.internal.impl.xs.XSWildcardDecl);
+  public static boolean overlapUPA(java.lang.Object, java.lang.Object, com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler);
+  static {};
+}

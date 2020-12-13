@@ -1,0 +1,18 @@
+Compiled from "Whitespace.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.Whitespace extends com.sun.org.apache.xalan.internal.xsltc.compiler.TopLevelElement {
+  public static final int USE_PREDICATE;
+  public static final int STRIP_SPACE;
+  public static final int PRESERVE_SPACE;
+  public static final int RULE_NONE;
+  public static final int RULE_ELEMENT;
+  public static final int RULE_NAMESPACE;
+  public static final int RULE_ALL;
+  com.sun.org.apache.xalan.internal.xsltc.compiler.Whitespace();
+  public void parseContents(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+  public java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.Whitespace$WhitespaceRule> getRules();
+  public static void compileStripSpace(com.sun.org.apache.bcel.internal.generic.BranchHandle[], int, com.sun.org.apache.bcel.internal.generic.InstructionList);
+  public static void compilePreserveSpace(com.sun.org.apache.bcel.internal.generic.BranchHandle[], int, com.sun.org.apache.bcel.internal.generic.InstructionList);
+  public static int translateRules(java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.Whitespace$WhitespaceRule>, com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

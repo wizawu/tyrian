@@ -1,0 +1,13 @@
+Compiled from "TypeUtilities.java"
+public final class jdk.dynalink.linker.support.TypeUtilities {
+  static final java.lang.Class<java.lang.Object> OBJECT_CLASS;
+  static final boolean $assertionsDisabled;
+  public static boolean isMethodInvocationConvertible(java.lang.Class<?>, java.lang.Class<?>);
+  public static boolean isConvertibleWithoutLoss(java.lang.Class<?>, java.lang.Class<?>);
+  public static boolean isSubtype(java.lang.Class<?>, java.lang.Class<?>);
+  public static java.lang.Class<?> getPrimitiveTypeByName(java.lang.String);
+  public static java.lang.Class<?> getPrimitiveType(java.lang.Class<?>);
+  public static java.lang.Class<?> getWrapperType(java.lang.Class<?>);
+  public static boolean isWrapperType(java.lang.Class<?>);
+  static {};
+}

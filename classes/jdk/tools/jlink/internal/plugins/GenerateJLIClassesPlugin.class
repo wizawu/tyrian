@@ -1,0 +1,21 @@
+Compiled from "GenerateJLIClassesPlugin.java"
+public final class jdk.tools.jlink.internal.plugins.GenerateJLIClassesPlugin implements jdk.tools.jlink.plugin.Plugin {
+  java.util.Set<java.lang.String> speciesTypes;
+  java.util.Set<java.lang.String> invokerTypes;
+  java.util.Set<java.lang.String> callSiteTypes;
+  java.util.Map<java.lang.String, java.util.Set<java.lang.String>> dmhMethods;
+  java.lang.String mainArgument;
+  static final boolean $assertionsDisabled;
+  public jdk.tools.jlink.internal.plugins.GenerateJLIClassesPlugin();
+  public java.lang.String getName();
+  public java.lang.String getDescription();
+  public java.util.Set<jdk.tools.jlink.plugin.Plugin$State> getState();
+  public boolean hasArguments();
+  public java.lang.String getArgumentsDescription();
+  public static java.util.Set<java.lang.String> defaultSpecies();
+  public void configure(java.util.Map<java.lang.String, java.lang.String>);
+  public void initialize(jdk.tools.jlink.plugin.ResourcePool);
+  public jdk.tools.jlink.plugin.ResourcePool transform(jdk.tools.jlink.plugin.ResourcePool, jdk.tools.jlink.plugin.ResourcePoolBuilder);
+  public static java.lang.String expandSignature(java.lang.String);
+  static {};
+}

@@ -1,0 +1,7 @@
+Compiled from "ActivationGroupImpl.java"
+public class sun.rmi.server.ActivationGroupImpl extends java.rmi.activation.ActivationGroup {
+  public sun.rmi.server.ActivationGroupImpl(java.rmi.activation.ActivationGroupID, java.rmi.MarshalledObject<?>) throws java.rmi.RemoteException;
+  public java.rmi.MarshalledObject<? extends java.rmi.Remote> newInstance(java.rmi.activation.ActivationID, java.rmi.activation.ActivationDesc) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;
+  public boolean inactiveObject(java.rmi.activation.ActivationID) throws java.rmi.activation.ActivationException, java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;
+  public void activeObject(java.rmi.activation.ActivationID, java.rmi.Remote) throws java.rmi.activation.ActivationException, java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;
+}

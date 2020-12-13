@@ -1,0 +1,15 @@
+Compiled from "Vertex.java"
+public class sun.security.provider.certpath.Vertex {
+  sun.security.provider.certpath.Vertex(java.security.cert.X509Certificate);
+  public java.security.cert.X509Certificate getCertificate();
+  public int getIndex();
+  void setIndex(int);
+  public java.lang.Throwable getThrowable();
+  void setThrowable(java.lang.Throwable);
+  public java.lang.String toString();
+  public java.lang.String certToString();
+  public java.lang.String throwableToString();
+  public java.lang.String moreToString();
+  public java.lang.String indexToString();
+  static {};
+}

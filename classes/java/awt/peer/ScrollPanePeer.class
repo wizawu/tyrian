@@ -1,0 +1,9 @@
+Compiled from "ScrollPanePeer.java"
+public interface java.awt.peer.ScrollPanePeer extends java.awt.peer.ContainerPeer {
+  public abstract int getHScrollbarHeight();
+  public abstract int getVScrollbarWidth();
+  public abstract void setScrollPosition(int, int);
+  public abstract void childResized(int, int);
+  public abstract void setUnitIncrement(java.awt.Adjustable, int);
+  public abstract void setValue(java.awt.Adjustable, int);
+}

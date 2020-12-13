@@ -1,0 +1,13 @@
+Compiled from "BasicBorders.java"
+public class javax.swing.plaf.basic.BasicBorders {
+  public javax.swing.plaf.basic.BasicBorders();
+  public static javax.swing.border.Border getButtonBorder();
+  public static javax.swing.border.Border getRadioButtonBorder();
+  public static javax.swing.border.Border getToggleButtonBorder();
+  public static javax.swing.border.Border getMenuBarBorder();
+  public static javax.swing.border.Border getSplitPaneBorder();
+  public static javax.swing.border.Border getSplitPaneDividerBorder();
+  public static javax.swing.border.Border getTextFieldBorder();
+  public static javax.swing.border.Border getProgressBarBorder();
+  public static javax.swing.border.Border getInternalFrameBorder();
+}

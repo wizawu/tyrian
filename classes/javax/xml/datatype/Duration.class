@@ -1,0 +1,30 @@
+Compiled from "Duration.java"
+public abstract class javax.xml.datatype.Duration {
+  public javax.xml.datatype.Duration();
+  public javax.xml.namespace.QName getXMLSchemaType();
+  public abstract int getSign();
+  public int getYears();
+  public int getMonths();
+  public int getDays();
+  public int getHours();
+  public int getMinutes();
+  public int getSeconds();
+  public long getTimeInMillis(java.util.Calendar);
+  public long getTimeInMillis(java.util.Date);
+  public abstract java.lang.Number getField(javax.xml.datatype.DatatypeConstants$Field);
+  public abstract boolean isSet(javax.xml.datatype.DatatypeConstants$Field);
+  public abstract javax.xml.datatype.Duration add(javax.xml.datatype.Duration);
+  public abstract void addTo(java.util.Calendar);
+  public void addTo(java.util.Date);
+  public javax.xml.datatype.Duration subtract(javax.xml.datatype.Duration);
+  public javax.xml.datatype.Duration multiply(int);
+  public abstract javax.xml.datatype.Duration multiply(java.math.BigDecimal);
+  public abstract javax.xml.datatype.Duration negate();
+  public abstract javax.xml.datatype.Duration normalizeWith(java.util.Calendar);
+  public abstract int compare(javax.xml.datatype.Duration);
+  public boolean isLongerThan(javax.xml.datatype.Duration);
+  public boolean isShorterThan(javax.xml.datatype.Duration);
+  public boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public java.lang.String toString();
+}

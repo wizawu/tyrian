@@ -1,0 +1,9 @@
+Compiled from "AltCatalog.java"
+class javax.xml.catalog.AltCatalog extends javax.xml.catalog.BaseEntry {
+  java.net.URI catalogURI;
+  javax.xml.catalog.AltCatalog(javax.xml.catalog.BaseEntry$CatalogEntryType, java.lang.String);
+  void setCatalog(java.lang.String);
+  java.lang.String getCatalogId();
+  java.net.URI getCatalogURI();
+  public java.net.URI matchURI(java.lang.String, int);
+}

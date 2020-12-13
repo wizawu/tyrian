@@ -1,0 +1,23 @@
+Compiled from "XResourceBundle.java"
+public class com.sun.org.apache.xml.internal.utils.res.XResourceBundle extends java.util.ListResourceBundle {
+  public static final java.lang.String ERROR_RESOURCES;
+  public static final java.lang.String XSLT_RESOURCE;
+  public static final java.lang.String LANG_BUNDLE_NAME;
+  public static final java.lang.String MULT_ORDER;
+  public static final java.lang.String MULT_PRECEDES;
+  public static final java.lang.String MULT_FOLLOWS;
+  public static final java.lang.String LANG_ORIENTATION;
+  public static final java.lang.String LANG_RIGHTTOLEFT;
+  public static final java.lang.String LANG_LEFTTORIGHT;
+  public static final java.lang.String LANG_NUMBERING;
+  public static final java.lang.String LANG_ADDITIVE;
+  public static final java.lang.String LANG_MULT_ADD;
+  public static final java.lang.String LANG_MULTIPLIER;
+  public static final java.lang.String LANG_MULTIPLIER_CHAR;
+  public static final java.lang.String LANG_NUMBERGROUPS;
+  public static final java.lang.String LANG_NUM_TABLES;
+  public static final java.lang.String LANG_ALPHABET;
+  public static final java.lang.String LANG_TRAD_ALPHABET;
+  public com.sun.org.apache.xml.internal.utils.res.XResourceBundle();
+  public java.lang.Object[][] getContents();
+}

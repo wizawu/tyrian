@@ -1,0 +1,12 @@
+Compiled from "TrustManagerFactory.java"
+public class com.sun.net.ssl.TrustManagerFactory {
+  public static final java.lang.String getDefaultAlgorithm();
+  protected com.sun.net.ssl.TrustManagerFactory(com.sun.net.ssl.TrustManagerFactorySpi, java.security.Provider, java.lang.String);
+  public final java.lang.String getAlgorithm();
+  public static final com.sun.net.ssl.TrustManagerFactory getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  public static final com.sun.net.ssl.TrustManagerFactory getInstance(java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  public static final com.sun.net.ssl.TrustManagerFactory getInstance(java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  public final java.security.Provider getProvider();
+  public void init(java.security.KeyStore) throws java.security.KeyStoreException;
+  public com.sun.net.ssl.TrustManager[] getTrustManagers();
+}

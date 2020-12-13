@@ -1,0 +1,27 @@
+Compiled from "MultipleGradientPaintContext.java"
+abstract class java.awt.MultipleGradientPaintContext implements java.awt.PaintContext {
+  protected java.awt.image.ColorModel model;
+  protected static java.awt.image.ColorModel cachedModel;
+  protected static java.lang.ref.WeakReference<java.awt.image.Raster> cached;
+  protected java.awt.image.Raster saved;
+  protected java.awt.MultipleGradientPaint$CycleMethod cycleMethod;
+  protected java.awt.MultipleGradientPaint$ColorSpaceType colorSpace;
+  protected float a00;
+  protected float a01;
+  protected float a10;
+  protected float a11;
+  protected float a02;
+  protected float a12;
+  protected boolean isSimpleLookup;
+  protected int fastGradientArraySize;
+  protected int[] gradient;
+  protected static final int GRADIENT_SIZE;
+  protected static final int GRADIENT_SIZE_INDEX;
+  protected java.awt.MultipleGradientPaintContext(java.awt.MultipleGradientPaint, java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints, float[], java.awt.Color[], java.awt.MultipleGradientPaint$CycleMethod, java.awt.MultipleGradientPaint$ColorSpaceType);
+  protected final int indexIntoGradientsArrays(float);
+  public final java.awt.image.Raster getRaster(int, int, int, int);
+  protected abstract void fillRaster(int[], int, int, int, int, int, int);
+  public final void dispose();
+  public final java.awt.image.ColorModel getColorModel();
+  static {};
+}

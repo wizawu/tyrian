@@ -1,0 +1,48 @@
+Compiled from "ThreadPoolExecutor.java"
+public class java.util.concurrent.ThreadPoolExecutor extends java.util.concurrent.AbstractExecutorService {
+  final void tryTerminate();
+  final void reject(java.lang.Runnable);
+  void onShutdown();
+  final void runWorker(java.util.concurrent.ThreadPoolExecutor$Worker);
+  public java.util.concurrent.ThreadPoolExecutor(int, int, long, java.util.concurrent.TimeUnit, java.util.concurrent.BlockingQueue<java.lang.Runnable>);
+  public java.util.concurrent.ThreadPoolExecutor(int, int, long, java.util.concurrent.TimeUnit, java.util.concurrent.BlockingQueue<java.lang.Runnable>, java.util.concurrent.ThreadFactory);
+  public java.util.concurrent.ThreadPoolExecutor(int, int, long, java.util.concurrent.TimeUnit, java.util.concurrent.BlockingQueue<java.lang.Runnable>, java.util.concurrent.RejectedExecutionHandler);
+  public java.util.concurrent.ThreadPoolExecutor(int, int, long, java.util.concurrent.TimeUnit, java.util.concurrent.BlockingQueue<java.lang.Runnable>, java.util.concurrent.ThreadFactory, java.util.concurrent.RejectedExecutionHandler);
+  public void execute(java.lang.Runnable);
+  public void shutdown();
+  public java.util.List<java.lang.Runnable> shutdownNow();
+  public boolean isShutdown();
+  boolean isStopped();
+  public boolean isTerminating();
+  public boolean isTerminated();
+  public boolean awaitTermination(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  protected void finalize();
+  public void setThreadFactory(java.util.concurrent.ThreadFactory);
+  public java.util.concurrent.ThreadFactory getThreadFactory();
+  public void setRejectedExecutionHandler(java.util.concurrent.RejectedExecutionHandler);
+  public java.util.concurrent.RejectedExecutionHandler getRejectedExecutionHandler();
+  public void setCorePoolSize(int);
+  public int getCorePoolSize();
+  public boolean prestartCoreThread();
+  void ensurePrestart();
+  public int prestartAllCoreThreads();
+  public boolean allowsCoreThreadTimeOut();
+  public void allowCoreThreadTimeOut(boolean);
+  public void setMaximumPoolSize(int);
+  public int getMaximumPoolSize();
+  public void setKeepAliveTime(long, java.util.concurrent.TimeUnit);
+  public long getKeepAliveTime(java.util.concurrent.TimeUnit);
+  public java.util.concurrent.BlockingQueue<java.lang.Runnable> getQueue();
+  public boolean remove(java.lang.Runnable);
+  public void purge();
+  public int getPoolSize();
+  public int getActiveCount();
+  public int getLargestPoolSize();
+  public long getTaskCount();
+  public long getCompletedTaskCount();
+  public java.lang.String toString();
+  protected void beforeExecute(java.lang.Thread, java.lang.Runnable);
+  protected void afterExecute(java.lang.Runnable, java.lang.Throwable);
+  protected void terminated();
+  static {};
+}

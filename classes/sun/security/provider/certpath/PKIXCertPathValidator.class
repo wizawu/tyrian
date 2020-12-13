@@ -1,0 +1,7 @@
+Compiled from "PKIXCertPathValidator.java"
+public final class sun.security.provider.certpath.PKIXCertPathValidator extends java.security.cert.CertPathValidatorSpi {
+  public sun.security.provider.certpath.PKIXCertPathValidator();
+  public java.security.cert.CertPathChecker engineGetRevocationChecker();
+  public java.security.cert.CertPathValidatorResult engineValidate(java.security.cert.CertPath, java.security.cert.CertPathParameters) throws java.security.cert.CertPathValidatorException, java.security.InvalidAlgorithmParameterException;
+  static {};
+}

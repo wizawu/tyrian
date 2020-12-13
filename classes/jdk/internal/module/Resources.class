@@ -1,0 +1,7 @@
+Compiled from "Resources.java"
+public final class jdk.internal.module.Resources {
+  public static boolean canEncapsulate(java.lang.String);
+  public static java.lang.String toPackageName(java.lang.String);
+  public static java.lang.String toResourceName(java.nio.file.Path, java.nio.file.Path);
+  public static java.nio.file.Path toFilePath(java.nio.file.Path, java.lang.String) throws java.io.IOException;
+}

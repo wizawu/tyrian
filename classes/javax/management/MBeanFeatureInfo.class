@@ -1,0 +1,13 @@
+Compiled from "MBeanFeatureInfo.java"
+public class javax.management.MBeanFeatureInfo implements java.io.Serializable,javax.management.DescriptorRead {
+  static final long serialVersionUID;
+  protected java.lang.String name;
+  protected java.lang.String description;
+  public javax.management.MBeanFeatureInfo(java.lang.String, java.lang.String);
+  public javax.management.MBeanFeatureInfo(java.lang.String, java.lang.String, javax.management.Descriptor);
+  public java.lang.String getName();
+  public java.lang.String getDescription();
+  public javax.management.Descriptor getDescriptor();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

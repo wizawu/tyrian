@@ -1,0 +1,34 @@
+Compiled from "Option.java"
+public class jdk.nashorn.internal.runtime.regexp.joni.Option {
+  public static final int NONE;
+  public static final int IGNORECASE;
+  public static final int EXTEND;
+  public static final int MULTILINE;
+  public static final int SINGLELINE;
+  public static final int FIND_LONGEST;
+  public static final int FIND_NOT_EMPTY;
+  public static final int NEGATE_SINGLELINE;
+  public static final int DONT_CAPTURE_GROUP;
+  public static final int CAPTURE_GROUP;
+  public static final int NOTBOL;
+  public static final int NOTEOL;
+  public static final int POSIX_REGION;
+  public static final int MAXBIT;
+  public static final int DEFAULT;
+  public jdk.nashorn.internal.runtime.regexp.joni.Option();
+  public static java.lang.String toString(int);
+  public static boolean isIgnoreCase(int);
+  public static boolean isExtend(int);
+  public static boolean isSingleline(int);
+  public static boolean isMultiline(int);
+  public static boolean isFindLongest(int);
+  public static boolean isFindNotEmpty(int);
+  public static boolean isFindCondition(int);
+  public static boolean isNegateSingleline(int);
+  public static boolean isDontCaptureGroup(int);
+  public static boolean isCaptureGroup(int);
+  public static boolean isNotBol(int);
+  public static boolean isNotEol(int);
+  public static boolean isPosixRegion(int);
+  public static boolean isDynamic(int);
+}

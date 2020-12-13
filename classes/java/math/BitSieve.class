@@ -1,0 +1,6 @@
+Compiled from "BitSieve.java"
+class java.math.BitSieve {
+  java.math.BitSieve(java.math.BigInteger, int);
+  java.math.BigInteger retrieve(java.math.BigInteger, int, java.util.Random);
+  static {};
+}

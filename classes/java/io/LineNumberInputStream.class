@@ -1,0 +1,16 @@
+Compiled from "LineNumberInputStream.java"
+public class java.io.LineNumberInputStream extends java.io.FilterInputStream {
+  int pushBack;
+  int lineNumber;
+  int markLineNumber;
+  int markPushBack;
+  public java.io.LineNumberInputStream(java.io.InputStream);
+  public int read() throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public long skip(long) throws java.io.IOException;
+  public void setLineNumber(int);
+  public int getLineNumber();
+  public int available() throws java.io.IOException;
+  public void mark(int);
+  public void reset() throws java.io.IOException;
+}

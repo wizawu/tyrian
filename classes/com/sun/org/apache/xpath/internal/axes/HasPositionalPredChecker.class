@@ -1,0 +1,7 @@
+Compiled from "HasPositionalPredChecker.java"
+public class com.sun.org.apache.xpath.internal.axes.HasPositionalPredChecker extends com.sun.org.apache.xpath.internal.XPathVisitor {
+  public com.sun.org.apache.xpath.internal.axes.HasPositionalPredChecker();
+  public static boolean check(com.sun.org.apache.xpath.internal.axes.LocPathIterator);
+  public boolean visitFunction(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.functions.Function);
+  public boolean visitPredicate(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.Expression);
+}

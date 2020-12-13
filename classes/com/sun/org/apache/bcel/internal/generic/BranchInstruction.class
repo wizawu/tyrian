@@ -1,0 +1,22 @@
+Compiled from "BranchInstruction.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.BranchInstruction extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.InstructionTargeter {
+  com.sun.org.apache.bcel.internal.generic.BranchInstruction();
+  protected com.sun.org.apache.bcel.internal.generic.BranchInstruction(short, com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  protected int getTargetOffset(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  protected int getTargetOffset();
+  protected int updatePosition(int, int);
+  public java.lang.String toString(boolean);
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public final int getIndex();
+  public com.sun.org.apache.bcel.internal.generic.InstructionHandle getTarget();
+  public void setTarget(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  static void notifyTarget(com.sun.org.apache.bcel.internal.generic.InstructionHandle, com.sun.org.apache.bcel.internal.generic.InstructionHandle, com.sun.org.apache.bcel.internal.generic.InstructionTargeter);
+  public void updateTarget(com.sun.org.apache.bcel.internal.generic.InstructionHandle, com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public boolean containsTarget(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  void setOpcode(short);
+  void dispose();
+  protected int getPosition();
+  protected void setPosition(int);
+  protected void setIndex(int);
+}

@@ -1,0 +1,17 @@
+Compiled from "SOSMarkerSegment.java"
+class com.sun.imageio.plugins.jpeg.SOSMarkerSegment extends com.sun.imageio.plugins.jpeg.MarkerSegment {
+  int startSpectralSelection;
+  int endSpectralSelection;
+  int approxHigh;
+  int approxLow;
+  com.sun.imageio.plugins.jpeg.SOSMarkerSegment$ScanComponentSpec[] componentSpecs;
+  com.sun.imageio.plugins.jpeg.SOSMarkerSegment(boolean, byte[], int);
+  com.sun.imageio.plugins.jpeg.SOSMarkerSegment(com.sun.imageio.plugins.jpeg.JPEGBuffer) throws java.io.IOException;
+  com.sun.imageio.plugins.jpeg.SOSMarkerSegment(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected java.lang.Object clone();
+  javax.imageio.metadata.IIOMetadataNode getNativeNode();
+  void updateFromNativeNode(org.w3c.dom.Node, boolean) throws javax.imageio.metadata.IIOInvalidTreeException;
+  void write(javax.imageio.stream.ImageOutputStream) throws java.io.IOException;
+  void print();
+  com.sun.imageio.plugins.jpeg.SOSMarkerSegment$ScanComponentSpec getScanComponentSpec(byte, int);
+}

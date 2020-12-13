@@ -1,0 +1,5 @@
+Compiled from "LSUB.java"
+public class com.sun.org.apache.bcel.internal.generic.LSUB extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
+  public com.sun.org.apache.bcel.internal.generic.LSUB();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

@@ -1,0 +1,17 @@
+Compiled from "AbstractPackageIndexWriter.java"
+public abstract class jdk.javadoc.internal.doclets.formats.html.AbstractPackageIndexWriter extends jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter {
+  protected java.util.SortedSet<javax.lang.model.element.PackageElement> packages;
+  protected jdk.javadoc.internal.doclets.formats.html.markup.Navigation navBar;
+  public jdk.javadoc.internal.doclets.formats.html.AbstractPackageIndexWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath);
+  protected abstract void addNavigationBarHeader(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected abstract void addNavigationBarFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected abstract void addOverviewHeader(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected abstract void addPackagesList(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildPackageIndexFile(java.lang.String, boolean) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void addOverview(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addIndex(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addIndexContents(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addConfigurationTitle(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addAllClassesLink(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addAllModulesLink(jdk.javadoc.internal.doclets.toolkit.Content);
+}

@@ -1,0 +1,14 @@
+Compiled from "KeyImpl.java"
+class javax.security.auth.kerberos.KeyImpl implements javax.crypto.SecretKey,javax.security.auth.Destroyable,java.io.Serializable {
+  public javax.security.auth.kerberos.KeyImpl(byte[], int);
+  public javax.security.auth.kerberos.KeyImpl(javax.security.auth.kerberos.KerberosPrincipal, char[], java.lang.String);
+  public final int getKeyType();
+  public final java.lang.String getAlgorithm();
+  public final java.lang.String getFormat();
+  public final byte[] getEncoded();
+  public void destroy() throws javax.security.auth.DestroyFailedException;
+  public boolean isDestroyed();
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

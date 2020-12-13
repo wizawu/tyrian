@@ -1,0 +1,6 @@
+Compiled from "VirtualBaseConstructor.java"
+public class sun.jvm.hotspot.runtime.VirtualBaseConstructor<T> extends sun.jvm.hotspot.runtime.InstanceConstructor {
+  public sun.jvm.hotspot.runtime.VirtualBaseConstructor(sun.jvm.hotspot.types.TypeDataBase, sun.jvm.hotspot.types.Type, java.lang.String, java.lang.Class);
+  public boolean addMapping(java.lang.String, java.lang.Class);
+  public T instantiateWrapperFor(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.types.WrongTypeException;
+}

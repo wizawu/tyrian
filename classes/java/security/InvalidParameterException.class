@@ -1,0 +1,5 @@
+Compiled from "InvalidParameterException.java"
+public class java.security.InvalidParameterException extends java.lang.IllegalArgumentException {
+  public java.security.InvalidParameterException();
+  public java.security.InvalidParameterException(java.lang.String);
+}

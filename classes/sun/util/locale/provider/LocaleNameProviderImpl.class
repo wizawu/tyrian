@@ -1,0 +1,13 @@
+Compiled from "LocaleNameProviderImpl.java"
+public class sun.util.locale.provider.LocaleNameProviderImpl extends java.util.spi.LocaleNameProvider implements sun.util.locale.provider.AvailableLanguageTags {
+  public sun.util.locale.provider.LocaleNameProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
+  public java.util.Locale[] getAvailableLocales();
+  public boolean isSupportedLocale(java.util.Locale);
+  public java.lang.String getDisplayLanguage(java.lang.String, java.util.Locale);
+  public java.lang.String getDisplayScript(java.lang.String, java.util.Locale);
+  public java.lang.String getDisplayCountry(java.lang.String, java.util.Locale);
+  public java.lang.String getDisplayVariant(java.lang.String, java.util.Locale);
+  public java.lang.String getDisplayUnicodeExtensionKey(java.lang.String, java.util.Locale);
+  public java.lang.String getDisplayUnicodeExtensionType(java.lang.String, java.lang.String, java.util.Locale);
+  public java.util.Set<java.lang.String> getAvailableLanguageTags();
+}

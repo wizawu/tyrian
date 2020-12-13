@@ -1,0 +1,4 @@
+Compiled from "ContentModelValidator.java"
+public interface com.sun.org.apache.xerces.internal.impl.dtd.models.ContentModelValidator {
+  public abstract int validate(com.sun.org.apache.xerces.internal.xni.QName[], int, int);
+}

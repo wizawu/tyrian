@@ -1,0 +1,10 @@
+Compiled from "UnsyncByteArrayOutputStream.java"
+public class com.sun.org.apache.xml.internal.security.utils.UnsyncByteArrayOutputStream extends java.io.OutputStream {
+  public com.sun.org.apache.xml.internal.security.utils.UnsyncByteArrayOutputStream();
+  public void write(byte[]);
+  public void write(byte[], int, int);
+  public void write(int);
+  public byte[] toByteArray();
+  public void reset();
+  public void writeTo(java.io.OutputStream) throws java.io.IOException;
+}

@@ -1,0 +1,14 @@
+Compiled from "LoginOptions.java"
+public class sun.security.krb5.internal.LoginOptions extends sun.security.krb5.internal.KDCOptions {
+  public static final int RESERVED;
+  public static final int FORWARDABLE;
+  public static final int PROXIABLE;
+  public static final int ALLOW_POSTDATE;
+  public static final int RENEWABLE;
+  public static final int RENEWABLE_OK;
+  public static final int ENC_TKT_IN_SKEY;
+  public static final int RENEW;
+  public static final int VALIDATE;
+  public static final int MAX;
+  public sun.security.krb5.internal.LoginOptions();
+}

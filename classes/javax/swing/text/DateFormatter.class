@@ -1,0 +1,9 @@
+Compiled from "DateFormatter.java"
+public class javax.swing.text.DateFormatter extends javax.swing.text.InternationalFormatter {
+  public javax.swing.text.DateFormatter();
+  public javax.swing.text.DateFormatter(java.text.DateFormat);
+  public void setFormat(java.text.DateFormat);
+  boolean getSupportsIncrement();
+  java.lang.Object getAdjustField(int, java.util.Map<?, ?>);
+  java.lang.Object adjustValue(java.lang.Object, java.util.Map<?, ?>, java.lang.Object, int) throws javax.swing.text.BadLocationException, java.text.ParseException;
+}

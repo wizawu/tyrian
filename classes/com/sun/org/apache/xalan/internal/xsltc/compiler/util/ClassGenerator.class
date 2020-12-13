@@ -1,0 +1,17 @@
+Compiled from "ClassGenerator.java"
+public class com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator extends com.sun.org.apache.bcel.internal.generic.ClassGen {
+  protected static final int TRANSLET_INDEX;
+  protected static int INVALID_INDEX;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String[], com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet);
+  public final com.sun.org.apache.xalan.internal.xsltc.compiler.Parser getParser();
+  public final com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet getStylesheet();
+  public final java.lang.String getClassName();
+  public com.sun.org.apache.bcel.internal.generic.Instruction loadTranslet();
+  public final java.lang.String getDOMClass();
+  public final java.lang.String getDOMClassSig();
+  public final java.lang.String getApplyTemplatesSig();
+  public final java.lang.String getApplyTemplatesSigForImport();
+  public boolean isExternal();
+  public void addMethod(com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  static {};
+}

@@ -1,0 +1,12 @@
+Compiled from "IteratorResult.java"
+public class jdk.nashorn.internal.objects.IteratorResult extends jdk.nashorn.internal.runtime.ScriptObject {
+  public java.lang.Object value;
+  public java.lang.Object done;
+  jdk.nashorn.internal.objects.IteratorResult(java.lang.Object, java.lang.Boolean, jdk.nashorn.internal.objects.Global);
+  public static {};
+  public static void $clinit$();
+  public java.lang.Object G$value();
+  public void S$value(java.lang.Object);
+  public java.lang.Object G$done();
+  public void S$done(java.lang.Object);
+}

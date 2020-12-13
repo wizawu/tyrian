@@ -1,0 +1,7 @@
+Compiled from "EnumType.java"
+public interface sun.jvm.hotspot.debugger.cdbg.EnumType extends sun.jvm.hotspot.debugger.cdbg.IntType {
+  public abstract int getNumEnumerates();
+  public abstract java.lang.String getEnumName(int);
+  public abstract long getEnumValue(int);
+  public abstract java.lang.String enumNameForValue(long);
+}

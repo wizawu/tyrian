@@ -1,0 +1,25 @@
+Compiled from "SoftMixingSourceDataLine.java"
+public final class com.sun.media.sound.SoftMixingSourceDataLine extends com.sun.media.sound.SoftMixingDataLine implements javax.sound.sampled.SourceDataLine {
+  com.sun.media.sound.SoftMixingSourceDataLine(com.sun.media.sound.SoftMixingMixer, javax.sound.sampled.DataLine$Info);
+  public int write(byte[], int, int);
+  protected void processControlLogic();
+  protected void processAudioLogic(com.sun.media.sound.SoftAudioBuffer[]);
+  public void open() throws javax.sound.sampled.LineUnavailableException;
+  public void open(javax.sound.sampled.AudioFormat) throws javax.sound.sampled.LineUnavailableException;
+  public void open(javax.sound.sampled.AudioFormat, int) throws javax.sound.sampled.LineUnavailableException;
+  public int available();
+  public void drain();
+  public void flush();
+  public int getBufferSize();
+  public javax.sound.sampled.AudioFormat getFormat();
+  public int getFramePosition();
+  public float getLevel();
+  public long getLongFramePosition();
+  public long getMicrosecondPosition();
+  public boolean isActive();
+  public boolean isRunning();
+  public void start();
+  public void stop();
+  public void close();
+  public boolean isOpen();
+}

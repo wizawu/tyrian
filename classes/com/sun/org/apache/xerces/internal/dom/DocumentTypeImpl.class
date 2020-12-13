@@ -1,0 +1,34 @@
+Compiled from "DocumentTypeImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DocumentTypeImpl extends com.sun.org.apache.xerces.internal.dom.ParentNode implements org.w3c.dom.DocumentType {
+  static final long serialVersionUID;
+  protected java.lang.String name;
+  protected com.sun.org.apache.xerces.internal.dom.NamedNodeMapImpl entities;
+  protected com.sun.org.apache.xerces.internal.dom.NamedNodeMapImpl notations;
+  protected com.sun.org.apache.xerces.internal.dom.NamedNodeMapImpl elements;
+  protected java.lang.String publicID;
+  protected java.lang.String systemID;
+  protected java.lang.String internalSubset;
+  public com.sun.org.apache.xerces.internal.dom.DocumentTypeImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String);
+  public com.sun.org.apache.xerces.internal.dom.DocumentTypeImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String, java.lang.String, java.lang.String);
+  public java.lang.String getPublicId();
+  public java.lang.String getSystemId();
+  public void setInternalSubset(java.lang.String);
+  public java.lang.String getInternalSubset();
+  public short getNodeType();
+  public java.lang.String getNodeName();
+  public org.w3c.dom.Node cloneNode(boolean);
+  public java.lang.String getTextContent() throws org.w3c.dom.DOMException;
+  public void setTextContent(java.lang.String) throws org.w3c.dom.DOMException;
+  public boolean isEqualNode(org.w3c.dom.Node);
+  protected void setOwnerDocument(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl);
+  protected int getNodeNumber();
+  public java.lang.String getName();
+  public org.w3c.dom.NamedNodeMap getEntities();
+  public org.w3c.dom.NamedNodeMap getNotations();
+  public void setReadOnly(boolean, boolean);
+  public org.w3c.dom.NamedNodeMap getElements();
+  public java.lang.Object setUserData(java.lang.String, java.lang.Object, org.w3c.dom.UserDataHandler);
+  public java.lang.Object getUserData(java.lang.String);
+  protected java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.dom.ParentNode$UserDataRecord> getUserDataRecord();
+  static {};
+}

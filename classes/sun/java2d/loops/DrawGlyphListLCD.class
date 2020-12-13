@@ -1,0 +1,12 @@
+Compiled from "DrawGlyphListLCD.java"
+public class sun.java2d.loops.DrawGlyphListLCD extends sun.java2d.loops.GraphicsPrimitive {
+  public static final java.lang.String methodSignature;
+  public static final int primTypeID;
+  public static sun.java2d.loops.DrawGlyphListLCD locate(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  protected sun.java2d.loops.DrawGlyphListLCD(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public sun.java2d.loops.DrawGlyphListLCD(long, sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public native void DrawGlyphListLCD(sun.java2d.SunGraphics2D, sun.java2d.SurfaceData, sun.font.GlyphList);
+  public sun.java2d.loops.GraphicsPrimitive makePrimitive(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public sun.java2d.loops.GraphicsPrimitive traceWrap();
+  static {};
+}

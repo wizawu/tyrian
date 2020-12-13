@@ -1,0 +1,12 @@
+Compiled from "XNull.java"
+public class com.sun.org.apache.xpath.internal.objects.XNull extends com.sun.org.apache.xpath.internal.objects.XNodeSet {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.objects.XNull();
+  public int getType();
+  public java.lang.String getTypeString();
+  public double num();
+  public boolean bool();
+  public java.lang.String str();
+  public int rtf(com.sun.org.apache.xpath.internal.XPathContext);
+  public boolean equals(com.sun.org.apache.xpath.internal.objects.XObject);
+}

@@ -1,0 +1,11 @@
+Compiled from "AuthorizationDataEntry.java"
+public class sun.security.krb5.internal.AuthorizationDataEntry implements java.lang.Cloneable {
+  public int adType;
+  public byte[] adData;
+  public sun.security.krb5.internal.AuthorizationDataEntry(int, byte[]);
+  public java.lang.Object clone();
+  public sun.security.krb5.internal.AuthorizationDataEntry(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public void writeEntry(sun.security.krb5.internal.ccache.CCacheOutputStream) throws java.io.IOException;
+  public java.lang.String toString();
+}

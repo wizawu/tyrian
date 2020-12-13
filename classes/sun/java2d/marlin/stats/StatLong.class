@@ -1,0 +1,15 @@
+Compiled from "StatLong.java"
+public class sun.java2d.marlin.stats.StatLong {
+  public final java.lang.String name;
+  public long count;
+  public long sum;
+  public long min;
+  public long max;
+  public sun.java2d.marlin.stats.StatLong(java.lang.String);
+  public void reset();
+  public void add(int);
+  public void add(long);
+  public java.lang.String toString();
+  public final java.lang.StringBuilder toString(java.lang.StringBuilder);
+  public static double trimTo3Digits(double);
+}

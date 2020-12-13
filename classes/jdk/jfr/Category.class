@@ -1,0 +1,4 @@
+Compiled from "Category.java"
+public interface jdk.jfr.Category extends java.lang.annotation.Annotation {
+  public abstract java.lang.String[] value();
+}

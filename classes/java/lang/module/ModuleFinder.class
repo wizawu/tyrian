@@ -1,0 +1,8 @@
+Compiled from "ModuleFinder.java"
+public interface java.lang.module.ModuleFinder {
+  public abstract java.util.Optional<java.lang.module.ModuleReference> find(java.lang.String);
+  public abstract java.util.Set<java.lang.module.ModuleReference> findAll();
+  public static java.lang.module.ModuleFinder ofSystem();
+  public static java.lang.module.ModuleFinder of(java.nio.file.Path...);
+  public static java.lang.module.ModuleFinder compose(java.lang.module.ModuleFinder...);
+}

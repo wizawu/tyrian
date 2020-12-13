@@ -1,0 +1,6 @@
+Compiled from "RetrievalMethod.java"
+public interface javax.xml.crypto.dsig.keyinfo.RetrievalMethod extends javax.xml.crypto.URIReference,javax.xml.crypto.XMLStructure {
+  public abstract java.util.List<javax.xml.crypto.dsig.Transform> getTransforms();
+  public abstract java.lang.String getURI();
+  public abstract javax.xml.crypto.Data dereference(javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.URIReferenceException;
+}

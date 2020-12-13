@@ -1,0 +1,6 @@
+Compiled from "HotspotThreadMBean.java"
+public interface sun.management.HotspotThreadMBean {
+  public abstract int getInternalThreadCount();
+  public abstract java.util.Map<java.lang.String, java.lang.Long> getInternalThreadCpuTimes();
+  public abstract java.util.List<sun.management.counter.Counter> getInternalThreadingCounters();
+}

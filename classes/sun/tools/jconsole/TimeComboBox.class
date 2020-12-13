@@ -1,0 +1,7 @@
+Compiled from "TimeComboBox.java"
+public class sun.tools.jconsole.TimeComboBox extends javax.swing.JComboBox<java.lang.String> implements java.awt.event.ItemListener, java.beans.PropertyChangeListener {
+  public sun.tools.jconsole.TimeComboBox(sun.tools.jconsole.Plotter...);
+  public void addPlotter(sun.tools.jconsole.Plotter);
+  public void itemStateChanged(java.awt.event.ItemEvent);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+}

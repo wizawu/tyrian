@@ -1,0 +1,13 @@
+Compiled from "ParsePosition.java"
+public class java.text.ParsePosition {
+  int index;
+  int errorIndex;
+  public int getIndex();
+  public void setIndex(int);
+  public java.text.ParsePosition(int);
+  public void setErrorIndex(int);
+  public int getErrorIndex();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

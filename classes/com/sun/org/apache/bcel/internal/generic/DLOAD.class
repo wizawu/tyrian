@@ -1,0 +1,6 @@
+Compiled from "DLOAD.java"
+public class com.sun.org.apache.bcel.internal.generic.DLOAD extends com.sun.org.apache.bcel.internal.generic.LoadInstruction {
+  com.sun.org.apache.bcel.internal.generic.DLOAD();
+  public com.sun.org.apache.bcel.internal.generic.DLOAD(int);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

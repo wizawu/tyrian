@@ -1,0 +1,4 @@
+Compiled from "DiagnosticListener.java"
+public interface jdk.nashorn.api.tree.DiagnosticListener {
+  public abstract void report(jdk.nashorn.api.tree.Diagnostic);
+}

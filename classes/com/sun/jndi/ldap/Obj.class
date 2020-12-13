@@ -1,0 +1,22 @@
+Compiled from "Obj.java"
+final class com.sun.jndi.ldap.Obj {
+  static com.sun.jndi.ldap.VersionHelper helper;
+  static final java.lang.String[] JAVA_ATTRIBUTES;
+  static final int OBJECT_CLASS;
+  static final int SERIALIZED_DATA;
+  static final int CLASSNAME;
+  static final int FACTORY;
+  static final int CODEBASE;
+  static final int REF_ADDR;
+  static final int TYPENAME;
+  static final java.lang.String[] JAVA_OBJECT_CLASSES;
+  static final java.lang.String[] JAVA_OBJECT_CLASSES_LOWER;
+  static final int STRUCTURAL;
+  static final int BASE_OBJECT;
+  static final int REF_OBJECT;
+  static final int SER_OBJECT;
+  static final int MAR_OBJECT;
+  static java.lang.Object decodeObject(javax.naming.directory.Attributes) throws javax.naming.NamingException;
+  static javax.naming.directory.Attributes determineBindAttrs(char, java.lang.Object, javax.naming.directory.Attributes, boolean, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  static {};
+}

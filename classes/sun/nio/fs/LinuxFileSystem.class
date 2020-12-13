@@ -1,0 +1,11 @@
+Compiled from "LinuxFileSystem.java"
+class sun.nio.fs.LinuxFileSystem extends sun.nio.fs.UnixFileSystem {
+  sun.nio.fs.LinuxFileSystem(sun.nio.fs.UnixFileSystemProvider, java.lang.String);
+  public java.nio.file.WatchService newWatchService() throws java.io.IOException;
+  public java.util.Set<java.lang.String> supportedFileAttributeViews();
+  void copyNonPosixAttributes(int, int);
+  java.util.List<sun.nio.fs.UnixMountEntry> getMountEntries(java.lang.String);
+  java.util.List<sun.nio.fs.UnixMountEntry> getMountEntries();
+  java.nio.file.FileStore getFileStore(sun.nio.fs.UnixMountEntry) throws java.io.IOException;
+  java.lang.Iterable getMountEntries();
+}

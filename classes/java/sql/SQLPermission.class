@@ -1,0 +1,6 @@
+Compiled from "SQLPermission.java"
+public final class java.sql.SQLPermission extends java.security.BasicPermission {
+  static final long serialVersionUID;
+  public java.sql.SQLPermission(java.lang.String);
+  public java.sql.SQLPermission(java.lang.String, java.lang.String);
+}

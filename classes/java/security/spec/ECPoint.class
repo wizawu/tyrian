@@ -1,0 +1,10 @@
+Compiled from "ECPoint.java"
+public class java.security.spec.ECPoint {
+  public static final java.security.spec.ECPoint POINT_INFINITY;
+  public java.security.spec.ECPoint(java.math.BigInteger, java.math.BigInteger);
+  public java.math.BigInteger getAffineX();
+  public java.math.BigInteger getAffineY();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

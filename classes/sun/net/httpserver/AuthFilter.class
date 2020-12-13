@@ -1,0 +1,8 @@
+Compiled from "AuthFilter.java"
+public class sun.net.httpserver.AuthFilter extends com.sun.net.httpserver.Filter {
+  public sun.net.httpserver.AuthFilter(com.sun.net.httpserver.Authenticator);
+  public java.lang.String description();
+  public void setAuthenticator(com.sun.net.httpserver.Authenticator);
+  public void consumeInput(com.sun.net.httpserver.HttpExchange) throws java.io.IOException;
+  public void doFilter(com.sun.net.httpserver.HttpExchange, com.sun.net.httpserver.Filter$Chain) throws java.io.IOException;
+}

@@ -1,0 +1,19 @@
+Compiled from "Name.java"
+public interface javax.naming.Name extends java.lang.Cloneable, java.io.Serializable, java.lang.Comparable<java.lang.Object> {
+  public static final long serialVersionUID;
+  public abstract java.lang.Object clone();
+  public abstract int compareTo(java.lang.Object);
+  public abstract int size();
+  public abstract boolean isEmpty();
+  public abstract java.util.Enumeration<java.lang.String> getAll();
+  public abstract java.lang.String get(int);
+  public abstract javax.naming.Name getPrefix(int);
+  public abstract javax.naming.Name getSuffix(int);
+  public abstract boolean startsWith(javax.naming.Name);
+  public abstract boolean endsWith(javax.naming.Name);
+  public abstract javax.naming.Name addAll(javax.naming.Name) throws javax.naming.InvalidNameException;
+  public abstract javax.naming.Name addAll(int, javax.naming.Name) throws javax.naming.InvalidNameException;
+  public abstract javax.naming.Name add(java.lang.String) throws javax.naming.InvalidNameException;
+  public abstract javax.naming.Name add(int, java.lang.String) throws javax.naming.InvalidNameException;
+  public abstract java.lang.Object remove(int) throws javax.naming.InvalidNameException;
+}

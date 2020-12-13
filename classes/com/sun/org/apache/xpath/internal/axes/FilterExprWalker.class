@@ -1,0 +1,20 @@
+Compiled from "FilterExprWalker.java"
+public class com.sun.org.apache.xpath.internal.axes.FilterExprWalker extends com.sun.org.apache.xpath.internal.axes.AxesWalker {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.axes.FilterExprWalker(com.sun.org.apache.xpath.internal.axes.WalkingIterator);
+  public void init(com.sun.org.apache.xpath.internal.compiler.Compiler, int, int) throws javax.xml.transform.TransformerException;
+  public void detach();
+  public void setRoot(int);
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public short acceptNode(int);
+  public int getNextNode();
+  public int getLastPos(com.sun.org.apache.xpath.internal.XPathContext);
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public com.sun.org.apache.xpath.internal.Expression getInnerExpression();
+  public void setInnerExpression(com.sun.org.apache.xpath.internal.Expression);
+  public int getAnalysisBits();
+  public boolean isDocOrdered();
+  public int getAxis();
+  public void callPredicateVisitors(com.sun.org.apache.xpath.internal.XPathVisitor);
+  public boolean deepEquals(com.sun.org.apache.xpath.internal.Expression);
+}

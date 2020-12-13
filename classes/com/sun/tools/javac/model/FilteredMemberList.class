@@ -1,0 +1,8 @@
+Compiled from "FilteredMemberList.java"
+public class com.sun.tools.javac.model.FilteredMemberList extends java.util.AbstractList<com.sun.tools.javac.code.Symbol> {
+  public com.sun.tools.javac.model.FilteredMemberList(com.sun.tools.javac.code.Scope);
+  public int size();
+  public com.sun.tools.javac.code.Symbol get(int);
+  public java.util.Iterator<com.sun.tools.javac.code.Symbol> iterator();
+  public java.lang.Object get(int);
+}

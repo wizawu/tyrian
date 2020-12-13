@@ -1,0 +1,40 @@
+Compiled from "ConcurrentSkipListSet.java"
+public class java.util.concurrent.ConcurrentSkipListSet<E> extends java.util.AbstractSet<E> implements java.util.NavigableSet<E>, java.lang.Cloneable, java.io.Serializable {
+  public java.util.concurrent.ConcurrentSkipListSet();
+  public java.util.concurrent.ConcurrentSkipListSet(java.util.Comparator<? super E>);
+  public java.util.concurrent.ConcurrentSkipListSet(java.util.Collection<? extends E>);
+  public java.util.concurrent.ConcurrentSkipListSet(java.util.SortedSet<E>);
+  java.util.concurrent.ConcurrentSkipListSet(java.util.concurrent.ConcurrentNavigableMap<E, java.lang.Object>);
+  public java.util.concurrent.ConcurrentSkipListSet<E> clone();
+  public int size();
+  public boolean isEmpty();
+  public boolean contains(java.lang.Object);
+  public boolean add(E);
+  public boolean remove(java.lang.Object);
+  public void clear();
+  public java.util.Iterator<E> iterator();
+  public java.util.Iterator<E> descendingIterator();
+  public boolean equals(java.lang.Object);
+  public boolean removeAll(java.util.Collection<?>);
+  public E lower(E);
+  public E floor(E);
+  public E ceiling(E);
+  public E higher(E);
+  public E pollFirst();
+  public E pollLast();
+  public java.util.Comparator<? super E> comparator();
+  public E first();
+  public E last();
+  public java.util.NavigableSet<E> subSet(E, boolean, E, boolean);
+  public java.util.NavigableSet<E> headSet(E, boolean);
+  public java.util.NavigableSet<E> tailSet(E, boolean);
+  public java.util.NavigableSet<E> subSet(E, E);
+  public java.util.NavigableSet<E> headSet(E);
+  public java.util.NavigableSet<E> tailSet(E);
+  public java.util.NavigableSet<E> descendingSet();
+  public java.util.Spliterator<E> spliterator();
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public java.util.SortedSet tailSet(java.lang.Object);
+  public java.util.SortedSet headSet(java.lang.Object);
+  public java.util.SortedSet subSet(java.lang.Object, java.lang.Object);
+}

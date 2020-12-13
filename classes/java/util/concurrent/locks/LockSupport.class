@@ -1,0 +1,14 @@
+Compiled from "LockSupport.java"
+public class java.util.concurrent.locks.LockSupport {
+  public static void unpark(java.lang.Thread);
+  public static void park(java.lang.Object);
+  public static void parkNanos(java.lang.Object, long);
+  public static void parkUntil(java.lang.Object, long);
+  public static java.lang.Object getBlocker(java.lang.Thread);
+  public static void park();
+  public static void parkNanos(long);
+  public static void parkUntil(long);
+  static final int nextSecondarySeed();
+  static final long getThreadId(java.lang.Thread);
+  static {};
+}

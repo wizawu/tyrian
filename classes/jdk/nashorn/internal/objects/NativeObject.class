@@ -1,0 +1,33 @@
+Compiled from "NativeObject.java"
+public final class jdk.nashorn.internal.objects.NativeObject {
+  public static final java.lang.invoke.MethodHandle GET__PROTO__;
+  public static final java.lang.invoke.MethodHandle SET__PROTO__;
+  static final boolean $assertionsDisabled;
+  public static jdk.nashorn.internal.runtime.ScriptObject setIndexedPropertiesToExternalArrayData(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.Object getPrototypeOf(java.lang.Object, java.lang.Object);
+  public static java.lang.Object setPrototypeOf(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.Object getOwnPropertyDescriptor(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static jdk.nashorn.internal.runtime.ScriptObject getOwnPropertyNames(java.lang.Object, java.lang.Object);
+  public static jdk.nashorn.internal.runtime.ScriptObject getOwnPropertySymbols(java.lang.Object, java.lang.Object);
+  public static jdk.nashorn.internal.runtime.ScriptObject create(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static jdk.nashorn.internal.runtime.ScriptObject defineProperty(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object);
+  public static jdk.nashorn.internal.runtime.ScriptObject defineProperties(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.Object seal(java.lang.Object, java.lang.Object);
+  public static java.lang.Object freeze(java.lang.Object, java.lang.Object);
+  public static java.lang.Object preventExtensions(java.lang.Object, java.lang.Object);
+  public static boolean isSealed(java.lang.Object, java.lang.Object);
+  public static boolean isFrozen(java.lang.Object, java.lang.Object);
+  public static boolean isExtensible(java.lang.Object, java.lang.Object);
+  public static jdk.nashorn.internal.runtime.ScriptObject keys(java.lang.Object, java.lang.Object);
+  public static java.lang.Object construct(boolean, java.lang.Object, java.lang.Object);
+  public static java.lang.String toString(java.lang.Object);
+  public static java.lang.Object toLocaleString(java.lang.Object);
+  public static java.lang.Object valueOf(java.lang.Object);
+  public static boolean hasOwnProperty(java.lang.Object, java.lang.Object);
+  public static boolean isPrototypeOf(java.lang.Object, java.lang.Object);
+  public static boolean propertyIsEnumerable(java.lang.Object, java.lang.Object);
+  public static java.lang.Object bindProperties(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.Object bindAllProperties(jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.api.scripting.ScriptObjectMirror);
+  static {};
+  public static void $clinit$();
+}

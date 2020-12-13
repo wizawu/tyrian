@@ -1,0 +1,8 @@
+Compiled from "Doc.java"
+public interface javax.print.Doc {
+  public abstract javax.print.DocFlavor getDocFlavor();
+  public abstract java.lang.Object getPrintData() throws java.io.IOException;
+  public abstract javax.print.attribute.DocAttributeSet getAttributes();
+  public abstract java.io.Reader getReaderForText() throws java.io.IOException;
+  public abstract java.io.InputStream getStreamForBytes() throws java.io.IOException;
+}

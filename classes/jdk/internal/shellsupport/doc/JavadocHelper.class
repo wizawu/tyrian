@@ -1,0 +1,9 @@
+Compiled from "JavadocHelper.java"
+public abstract class jdk.internal.shellsupport.doc.JavadocHelper implements java.lang.AutoCloseable {
+  public jdk.internal.shellsupport.doc.JavadocHelper();
+  public static jdk.internal.shellsupport.doc.JavadocHelper create(com.sun.source.util.JavacTask, java.util.Collection<? extends java.nio.file.Path>);
+  public abstract java.lang.String getResolvedDocComment(javax.lang.model.element.Element) throws java.io.IOException;
+  public abstract javax.lang.model.element.Element getSourceElement(javax.lang.model.element.Element) throws java.io.IOException;
+  public abstract void close() throws java.io.IOException;
+  static {};
+}

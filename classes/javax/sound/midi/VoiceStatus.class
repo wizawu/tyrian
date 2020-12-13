@@ -1,0 +1,10 @@
+Compiled from "VoiceStatus.java"
+public class javax.sound.midi.VoiceStatus {
+  public boolean active;
+  public int channel;
+  public int bank;
+  public int program;
+  public int note;
+  public int volume;
+  public javax.sound.midi.VoiceStatus();
+}

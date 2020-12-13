@@ -1,0 +1,4 @@
+Compiled from "JavaNetURLClassLoaderAccess.java"
+public interface jdk.internal.misc.JavaNetURLClassLoaderAccess {
+  public abstract java.security.AccessControlContext getAccessControlContext(java.net.URLClassLoader);
+}

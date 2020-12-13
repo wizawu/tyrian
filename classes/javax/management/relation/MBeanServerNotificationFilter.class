@@ -1,0 +1,12 @@
+Compiled from "MBeanServerNotificationFilter.java"
+public class javax.management.relation.MBeanServerNotificationFilter extends javax.management.NotificationFilterSupport {
+  public javax.management.relation.MBeanServerNotificationFilter();
+  public synchronized void disableAllObjectNames();
+  public synchronized void disableObjectName(javax.management.ObjectName) throws java.lang.IllegalArgumentException;
+  public synchronized void enableAllObjectNames();
+  public synchronized void enableObjectName(javax.management.ObjectName) throws java.lang.IllegalArgumentException;
+  public synchronized java.util.Vector<javax.management.ObjectName> getEnabledObjectNames();
+  public synchronized java.util.Vector<javax.management.ObjectName> getDisabledObjectNames();
+  public synchronized boolean isNotificationEnabled(javax.management.Notification) throws java.lang.IllegalArgumentException;
+  static {};
+}

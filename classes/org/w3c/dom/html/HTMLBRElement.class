@@ -1,0 +1,5 @@
+Compiled from "HTMLBRElement.java"
+public interface org.w3c.dom.html.HTMLBRElement extends org.w3c.dom.html.HTMLElement {
+  public abstract java.lang.String getClear();
+  public abstract void setClear(java.lang.String);
+}

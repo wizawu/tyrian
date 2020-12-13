@@ -1,0 +1,11 @@
+Compiled from "SSLEngineResult.java"
+public class javax.net.ssl.SSLEngineResult {
+  public javax.net.ssl.SSLEngineResult(javax.net.ssl.SSLEngineResult$Status, javax.net.ssl.SSLEngineResult$HandshakeStatus, int, int);
+  public javax.net.ssl.SSLEngineResult(javax.net.ssl.SSLEngineResult$Status, javax.net.ssl.SSLEngineResult$HandshakeStatus, int, int, long);
+  public final javax.net.ssl.SSLEngineResult$Status getStatus();
+  public final javax.net.ssl.SSLEngineResult$HandshakeStatus getHandshakeStatus();
+  public final int bytesConsumed();
+  public final int bytesProduced();
+  public final long sequenceNumber();
+  public java.lang.String toString();
+}

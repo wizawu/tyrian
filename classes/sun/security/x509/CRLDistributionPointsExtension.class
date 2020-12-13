@@ -1,0 +1,20 @@
+Compiled from "CRLDistributionPointsExtension.java"
+public class sun.security.x509.CRLDistributionPointsExtension extends sun.security.x509.Extension implements sun.security.x509.CertAttrSet<java.lang.String> {
+  public static final java.lang.String IDENT;
+  public static final java.lang.String NAME;
+  public static final java.lang.String POINTS;
+  public sun.security.x509.CRLDistributionPointsExtension(java.util.List<sun.security.x509.DistributionPoint>) throws java.io.IOException;
+  public sun.security.x509.CRLDistributionPointsExtension(boolean, java.util.List<sun.security.x509.DistributionPoint>) throws java.io.IOException;
+  protected sun.security.x509.CRLDistributionPointsExtension(sun.security.util.ObjectIdentifier, boolean, java.util.List<sun.security.x509.DistributionPoint>, java.lang.String) throws java.io.IOException;
+  public sun.security.x509.CRLDistributionPointsExtension(java.lang.Boolean, java.lang.Object) throws java.io.IOException;
+  protected sun.security.x509.CRLDistributionPointsExtension(sun.security.util.ObjectIdentifier, java.lang.Boolean, java.lang.Object, java.lang.String) throws java.io.IOException;
+  public java.lang.String getName();
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+  protected void encode(java.io.OutputStream, sun.security.util.ObjectIdentifier, boolean) throws java.io.IOException;
+  public void set(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public java.util.List<sun.security.x509.DistributionPoint> get(java.lang.String) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  public java.lang.String toString();
+  public java.lang.Object get(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+}

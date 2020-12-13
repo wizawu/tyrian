@@ -1,0 +1,13 @@
+Compiled from "SpillProperty.java"
+public class jdk.nashorn.internal.runtime.SpillProperty extends jdk.nashorn.internal.runtime.AccessorProperty {
+  public jdk.nashorn.internal.runtime.SpillProperty(java.lang.Object, int, int);
+  public jdk.nashorn.internal.runtime.SpillProperty(java.lang.String, int, int, java.lang.Class<?>);
+  jdk.nashorn.internal.runtime.SpillProperty(java.lang.Object, int, int, jdk.nashorn.internal.runtime.ScriptObject, java.lang.Object);
+  protected jdk.nashorn.internal.runtime.SpillProperty(jdk.nashorn.internal.runtime.SpillProperty);
+  protected jdk.nashorn.internal.runtime.SpillProperty(jdk.nashorn.internal.runtime.SpillProperty, java.lang.Class<?>);
+  public jdk.nashorn.internal.runtime.Property copy();
+  public jdk.nashorn.internal.runtime.Property copy(java.lang.Class<?>);
+  public boolean isSpill();
+  void initMethodHandles(java.lang.Class<?>);
+  static {};
+}

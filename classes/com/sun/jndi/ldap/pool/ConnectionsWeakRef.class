@@ -1,0 +1,5 @@
+Compiled from "ConnectionsWeakRef.java"
+class com.sun.jndi.ldap.pool.ConnectionsWeakRef extends java.lang.ref.WeakReference<com.sun.jndi.ldap.pool.ConnectionsRef> {
+  com.sun.jndi.ldap.pool.ConnectionsWeakRef(com.sun.jndi.ldap.pool.ConnectionsRef, java.lang.ref.ReferenceQueue<? super com.sun.jndi.ldap.pool.ConnectionsRef>);
+  com.sun.jndi.ldap.pool.Connections getConnections();
+}

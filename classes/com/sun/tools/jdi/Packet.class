@@ -1,0 +1,19 @@
+Compiled from "Packet.java"
+public class com.sun.tools.jdi.Packet {
+  public static final short NoFlags;
+  public static final short Reply;
+  public static final short ReplyNoError;
+  static int uID;
+  static final byte[] nullData;
+  int id;
+  short flags;
+  short cmdSet;
+  short cmd;
+  short errorCode;
+  byte[] data;
+  volatile boolean replied;
+  public byte[] toByteArray();
+  public static com.sun.tools.jdi.Packet fromByteArray(byte[]) throws java.io.IOException;
+  com.sun.tools.jdi.Packet();
+  static {};
+}

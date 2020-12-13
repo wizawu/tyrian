@@ -1,0 +1,6 @@
+Compiled from "RuntimeParameterAnnotations_attribute.java"
+public abstract class com.sun.tools.classfile.RuntimeParameterAnnotations_attribute extends com.sun.tools.classfile.Attribute {
+  public final com.sun.tools.classfile.Annotation[][] parameter_annotations;
+  com.sun.tools.classfile.RuntimeParameterAnnotations_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException, com.sun.tools.classfile.Annotation$InvalidAnnotation;
+  protected com.sun.tools.classfile.RuntimeParameterAnnotations_attribute(int, com.sun.tools.classfile.Annotation[][]);
+}

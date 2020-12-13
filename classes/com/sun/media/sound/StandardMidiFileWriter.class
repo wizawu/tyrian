@@ -1,0 +1,9 @@
+Compiled from "StandardMidiFileWriter.java"
+public final class com.sun.media.sound.StandardMidiFileWriter extends javax.sound.midi.spi.MidiFileWriter {
+  public com.sun.media.sound.StandardMidiFileWriter();
+  public int[] getMidiFileTypes();
+  public int[] getMidiFileTypes(javax.sound.midi.Sequence);
+  public int write(javax.sound.midi.Sequence, int, java.io.OutputStream) throws java.io.IOException;
+  public int write(javax.sound.midi.Sequence, int, java.io.File) throws java.io.IOException;
+  static {};
+}

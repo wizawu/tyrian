@@ -1,0 +1,8 @@
+Compiled from "AccumulativeRunnable.java"
+public abstract class sun.swing.AccumulativeRunnable<T> implements java.lang.Runnable {
+  public sun.swing.AccumulativeRunnable();
+  protected abstract void run(java.util.List<T>);
+  public final void run();
+  public final synchronized void add(T...);
+  protected void submit();
+}

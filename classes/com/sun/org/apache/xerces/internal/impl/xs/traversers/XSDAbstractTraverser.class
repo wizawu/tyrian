@@ -1,0 +1,26 @@
+Compiled from "XSDAbstractTraverser.java"
+abstract class com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
+  protected static final java.lang.String NO_NAME;
+  protected static final int NOT_ALL_CONTEXT;
+  protected static final int PROCESSING_ALL_EL;
+  protected static final int GROUP_REF_WITH_ALL;
+  protected static final int CHILD_OF_GROUP;
+  protected static final int PROCESSING_ALL_GP;
+  protected com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler fSchemaHandler;
+  protected com.sun.org.apache.xerces.internal.util.SymbolTable fSymbolTable;
+  protected com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker fAttrChecker;
+  protected boolean fValidateAnnotations;
+  com.sun.org.apache.xerces.internal.impl.validation.ValidationState fValidationState;
+  com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser(com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker);
+  void reset(com.sun.org.apache.xerces.internal.util.SymbolTable, boolean, java.util.Locale);
+  com.sun.org.apache.xerces.internal.impl.xs.XSAnnotationImpl traverseAnnotationDecl(org.w3c.dom.Element, java.lang.Object[], boolean, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo);
+  com.sun.org.apache.xerces.internal.impl.xs.XSAnnotationImpl traverseSyntheticAnnotation(org.w3c.dom.Element, java.lang.String, java.lang.Object[], boolean, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo);
+  com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser$FacetInfo traverseFacets(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo);
+  public static java.lang.String getSchemaTypeName(com.sun.org.apache.xerces.internal.xs.XSTypeDefinition);
+  org.w3c.dom.Element traverseAttrsAndAttrGrps(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.XSAttributeGroupDecl, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar, com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl);
+  void reportSchemaError(java.lang.String, java.lang.Object[], org.w3c.dom.Element);
+  void reportSchemaWarning(java.lang.String, java.lang.Object[], org.w3c.dom.Element);
+  void checkNotationType(java.lang.String, com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, org.w3c.dom.Element);
+  protected com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl checkOccurrences(com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl, java.lang.String, org.w3c.dom.Element, int, long);
+  static {};
+}

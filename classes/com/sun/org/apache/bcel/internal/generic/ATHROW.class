@@ -1,0 +1,6 @@
+Compiled from "ATHROW.java"
+public class com.sun.org.apache.bcel.internal.generic.ATHROW extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.UnconditionalBranch,com.sun.org.apache.bcel.internal.generic.ExceptionThrower {
+  public com.sun.org.apache.bcel.internal.generic.ATHROW();
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

@@ -1,0 +1,6 @@
+Compiled from "ASReq.java"
+public class sun.security.krb5.internal.ASReq extends sun.security.krb5.internal.KDCReq {
+  public sun.security.krb5.internal.ASReq(sun.security.krb5.internal.PAData[], sun.security.krb5.internal.KDCReqBody) throws java.io.IOException;
+  public sun.security.krb5.internal.ASReq(byte[]) throws sun.security.krb5.Asn1Exception, sun.security.krb5.KrbException, java.io.IOException;
+  public sun.security.krb5.internal.ASReq(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, sun.security.krb5.KrbException, java.io.IOException;
+}

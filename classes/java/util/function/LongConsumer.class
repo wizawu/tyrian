@@ -1,0 +1,5 @@
+Compiled from "LongConsumer.java"
+public interface java.util.function.LongConsumer {
+  public abstract void accept(long);
+  public default java.util.function.LongConsumer andThen(java.util.function.LongConsumer);
+}

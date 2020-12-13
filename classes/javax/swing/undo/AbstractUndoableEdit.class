@@ -1,0 +1,20 @@
+Compiled from "AbstractUndoableEdit.java"
+public class javax.swing.undo.AbstractUndoableEdit implements javax.swing.undo.UndoableEdit,java.io.Serializable {
+  protected static final java.lang.String UndoName;
+  protected static final java.lang.String RedoName;
+  boolean hasBeenDone;
+  boolean alive;
+  public javax.swing.undo.AbstractUndoableEdit();
+  public void die();
+  public void undo() throws javax.swing.undo.CannotUndoException;
+  public boolean canUndo();
+  public void redo() throws javax.swing.undo.CannotRedoException;
+  public boolean canRedo();
+  public boolean addEdit(javax.swing.undo.UndoableEdit);
+  public boolean replaceEdit(javax.swing.undo.UndoableEdit);
+  public boolean isSignificant();
+  public java.lang.String getPresentationName();
+  public java.lang.String getUndoPresentationName();
+  public java.lang.String getRedoPresentationName();
+  public java.lang.String toString();
+}

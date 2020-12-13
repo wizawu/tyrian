@@ -1,0 +1,5 @@
+Compiled from "SocketExceptions.java"
+public final class sun.net.util.SocketExceptions {
+  public static java.io.IOException of(java.io.IOException, java.net.InetSocketAddress);
+  static {};
+}

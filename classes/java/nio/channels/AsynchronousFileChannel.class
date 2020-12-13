@@ -1,0 +1,20 @@
+Compiled from "AsynchronousFileChannel.java"
+public abstract class java.nio.channels.AsynchronousFileChannel implements java.nio.channels.AsynchronousChannel {
+  protected java.nio.channels.AsynchronousFileChannel();
+  public static java.nio.channels.AsynchronousFileChannel open(java.nio.file.Path, java.util.Set<? extends java.nio.file.OpenOption>, java.util.concurrent.ExecutorService, java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException;
+  public static java.nio.channels.AsynchronousFileChannel open(java.nio.file.Path, java.nio.file.OpenOption...) throws java.io.IOException;
+  public abstract long size() throws java.io.IOException;
+  public abstract java.nio.channels.AsynchronousFileChannel truncate(long) throws java.io.IOException;
+  public abstract void force(boolean) throws java.io.IOException;
+  public abstract <A> void lock(long, long, boolean, A, java.nio.channels.CompletionHandler<java.nio.channels.FileLock, ? super A>);
+  public final <A> void lock(A, java.nio.channels.CompletionHandler<java.nio.channels.FileLock, ? super A>);
+  public abstract java.util.concurrent.Future<java.nio.channels.FileLock> lock(long, long, boolean);
+  public final java.util.concurrent.Future<java.nio.channels.FileLock> lock();
+  public abstract java.nio.channels.FileLock tryLock(long, long, boolean) throws java.io.IOException;
+  public final java.nio.channels.FileLock tryLock() throws java.io.IOException;
+  public abstract <A> void read(java.nio.ByteBuffer, long, A, java.nio.channels.CompletionHandler<java.lang.Integer, ? super A>);
+  public abstract java.util.concurrent.Future<java.lang.Integer> read(java.nio.ByteBuffer, long);
+  public abstract <A> void write(java.nio.ByteBuffer, long, A, java.nio.channels.CompletionHandler<java.lang.Integer, ? super A>);
+  public abstract java.util.concurrent.Future<java.lang.Integer> write(java.nio.ByteBuffer, long);
+  static {};
+}

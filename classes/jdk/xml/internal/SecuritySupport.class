@@ -1,0 +1,30 @@
+Compiled from "SecuritySupport.java"
+public class jdk.xml.internal.SecuritySupport {
+  public static final java.lang.String NEWLINE;
+  static final java.util.Properties cacheProps;
+  static volatile boolean firstTime;
+  public static java.lang.String getErrorMessage(java.util.Locale, java.lang.String, java.lang.String, java.lang.Object[]);
+  public static java.lang.String getSystemProperty(java.lang.String);
+  public static java.lang.String getSystemProperty(java.lang.String, java.lang.String);
+  public static <T> T getSystemProperty(java.lang.Class<T>, java.lang.String, java.lang.String);
+  public static <T> T getJAXPSystemProperty(java.lang.Class<T>, java.lang.String, java.lang.String);
+  public static java.lang.String getJAXPSystemProperty(java.lang.String);
+  public static java.lang.String readJAXPProperty(java.lang.String);
+  public static boolean isDirectory(java.io.File);
+  public static boolean isFileExists(java.io.File);
+  public static java.io.FileInputStream getFileInputStream(java.io.File) throws java.io.FileNotFoundException;
+  public static java.io.InputStream getResourceAsStream(java.lang.String);
+  public static java.util.ResourceBundle getResourceBundle(java.lang.String);
+  public static java.util.ResourceBundle getResourceBundle(java.lang.String, java.util.Locale);
+  public static boolean doesFileExist(java.io.File);
+  static long getLastModified(java.io.File);
+  public static java.lang.String sanitizePath(java.lang.String);
+  public static java.lang.String checkAccess(java.lang.String, java.lang.String, java.lang.String) throws java.io.IOException;
+  public static java.lang.ClassLoader getContextClassLoader();
+  public static java.lang.ClassLoader getSystemClassLoader();
+  public static java.lang.ClassLoader getParentClassLoader(java.lang.ClassLoader);
+  public static java.lang.String getClassSource(java.lang.Class<?>);
+  public static java.lang.ClassLoader getClassLoader() throws java.lang.SecurityException;
+  public static java.io.InputStream getResourceAsStream(java.lang.ClassLoader, java.lang.String);
+  static {};
+}

@@ -1,0 +1,9 @@
+Compiled from "CardTerminal.java"
+public abstract class javax.smartcardio.CardTerminal {
+  protected javax.smartcardio.CardTerminal();
+  public abstract java.lang.String getName();
+  public abstract javax.smartcardio.Card connect(java.lang.String) throws javax.smartcardio.CardException;
+  public abstract boolean isCardPresent() throws javax.smartcardio.CardException;
+  public abstract boolean waitForCardPresent(long) throws javax.smartcardio.CardException;
+  public abstract boolean waitForCardAbsent(long) throws javax.smartcardio.CardException;
+}

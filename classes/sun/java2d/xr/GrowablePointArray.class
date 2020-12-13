@@ -1,0 +1,8 @@
+Compiled from "GrowablePointArray.java"
+public class sun.java2d.xr.GrowablePointArray extends sun.java2d.xr.GrowableIntArray {
+  public sun.java2d.xr.GrowablePointArray(int);
+  public final int getX(int);
+  public final int getY(int);
+  public final void setX(int, int);
+  public final void setY(int, int);
+}

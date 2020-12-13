@@ -1,0 +1,6 @@
+Compiled from "MotifTextAreaUI.java"
+public class com.sun.java.swing.plaf.motif.MotifTextAreaUI extends javax.swing.plaf.basic.BasicTextAreaUI {
+  public com.sun.java.swing.plaf.motif.MotifTextAreaUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected javax.swing.text.Caret createCaret();
+}

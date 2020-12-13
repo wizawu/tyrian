@@ -1,0 +1,15 @@
+Compiled from "Symbol.java"
+public class com.sun.java_cup.internal.runtime.Symbol {
+  public int sym;
+  public int parse_state;
+  boolean used_by_parser;
+  public int left;
+  public int right;
+  public java.lang.Object value;
+  public com.sun.java_cup.internal.runtime.Symbol(int, int, int, java.lang.Object);
+  public com.sun.java_cup.internal.runtime.Symbol(int, java.lang.Object);
+  public com.sun.java_cup.internal.runtime.Symbol(int, int, int);
+  public com.sun.java_cup.internal.runtime.Symbol(int);
+  public com.sun.java_cup.internal.runtime.Symbol(int, int);
+  public java.lang.String toString();
+}

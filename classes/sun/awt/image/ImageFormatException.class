@@ -1,0 +1,4 @@
+Compiled from "ImageFormatException.java"
+public class sun.awt.image.ImageFormatException extends java.lang.Exception {
+  public sun.awt.image.ImageFormatException(java.lang.String);
+}

@@ -1,0 +1,22 @@
+Compiled from "SoftMixingMainMixer.java"
+public final class com.sun.media.sound.SoftMixingMainMixer {
+  public static final int CHANNEL_LEFT;
+  public static final int CHANNEL_RIGHT;
+  public static final int CHANNEL_EFFECT1;
+  public static final int CHANNEL_EFFECT2;
+  public static final int CHANNEL_EFFECT3;
+  public static final int CHANNEL_EFFECT4;
+  public static final int CHANNEL_LEFT_DRY;
+  public static final int CHANNEL_RIGHT_DRY;
+  public static final int CHANNEL_SCRATCH1;
+  public static final int CHANNEL_SCRATCH2;
+  public static final int CHANNEL_CHANNELMIXER_LEFT;
+  public static final int CHANNEL_CHANNELMIXER_RIGHT;
+  public javax.sound.sampled.AudioInputStream getInputStream();
+  void processAudioBuffers();
+  public com.sun.media.sound.SoftMixingMainMixer(com.sun.media.sound.SoftMixingMixer);
+  public void openLine(com.sun.media.sound.SoftMixingDataLine);
+  public void closeLine(com.sun.media.sound.SoftMixingDataLine);
+  public com.sun.media.sound.SoftMixingDataLine[] getOpenLines();
+  public void close();
+}

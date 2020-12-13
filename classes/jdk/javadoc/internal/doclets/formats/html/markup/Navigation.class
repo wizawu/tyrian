@@ -1,0 +1,19 @@
+Compiled from "Navigation.java"
+public class jdk.javadoc.internal.doclets.formats.html.markup.Navigation {
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.formats.html.markup.HtmlTree, jdk.javadoc.internal.doclets.formats.html.markup.Navigation$PageMode, jdk.javadoc.internal.doclets.toolkit.util.DocPath);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setNavLinkModule(jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setNavLinkPackage(jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setNavLinkClass(jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setMemberSummaryBuilder(jdk.javadoc.internal.doclets.toolkit.builders.MemberSummaryBuilder);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setDisplaySummaryModuleDescLink(boolean);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setDisplaySummaryModulesLink(boolean);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setDisplaySummaryPackagesLink(boolean);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setDisplaySummaryServicesLink(boolean);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setUserHeader(jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.formats.html.markup.Navigation setUserFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addTypeDetailLink(jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable$Kind, boolean, java.util.List<jdk.javadoc.internal.doclets.toolkit.Content>);
+  protected void addAnnotationTypeDetailLink(java.util.List<jdk.javadoc.internal.doclets.toolkit.Content>);
+  protected void addAnnotationTypeDetailLink(jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable$Kind, boolean, java.util.List<jdk.javadoc.internal.doclets.toolkit.Content>);
+  public jdk.javadoc.internal.doclets.toolkit.Content getContent(boolean);
+  static {};
+}

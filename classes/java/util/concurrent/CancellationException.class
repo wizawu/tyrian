@@ -1,0 +1,5 @@
+Compiled from "CancellationException.java"
+public class java.util.concurrent.CancellationException extends java.lang.IllegalStateException {
+  public java.util.concurrent.CancellationException();
+  public java.util.concurrent.CancellationException(java.lang.String);
+}

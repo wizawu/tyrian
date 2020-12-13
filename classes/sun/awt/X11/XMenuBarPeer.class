@@ -1,0 +1,28 @@
+Compiled from "XMenuBarPeer.java"
+public class sun.awt.X11.XMenuBarPeer extends sun.awt.X11.XBaseMenuWindow implements java.awt.peer.MenuBarPeer {
+  static final int W_DIFF;
+  static final int H_DIFF;
+  sun.awt.X11.XMenuBarPeer(java.awt.MenuBar);
+  public void setFont(java.awt.Font);
+  public void addMenu(java.awt.Menu);
+  public void delMenu(int);
+  public void addHelpMenu(java.awt.Menu);
+  public void init(java.awt.Frame);
+  void postInit(sun.awt.X11.XCreateWindowParams);
+  protected sun.awt.X11.XBaseMenuWindow getParentMenuWindow();
+  protected sun.awt.X11.XMenuBarPeer$MappingData map();
+  protected java.awt.Rectangle getSubmenuBounds(java.awt.Rectangle, java.awt.Dimension);
+  protected void updateSize();
+  int getDesiredHeight();
+  boolean isFramePeerEnabled();
+  protected void doDispose();
+  public void reshape(int, int, int, int);
+  void ungrabInputImpl();
+  public void paintPeer(java.awt.Graphics);
+  void print(java.awt.Graphics);
+  protected void handleEvent(java.awt.AWTEvent);
+  void handleF10KeyPress(java.awt.event.KeyEvent);
+  public void handleKeyPress(sun.awt.X11.XEvent);
+  protected sun.awt.X11.XBaseMenuWindow$MappingData map();
+  static {};
+}

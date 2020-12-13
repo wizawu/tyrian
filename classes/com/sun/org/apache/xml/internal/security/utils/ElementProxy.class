@@ -1,0 +1,44 @@
+Compiled from "ElementProxy.java"
+public abstract class com.sun.org.apache.xml.internal.security.utils.ElementProxy {
+  protected static final com.sun.org.slf4j.internal.Logger LOG;
+  protected java.lang.String baseURI;
+  public com.sun.org.apache.xml.internal.security.utils.ElementProxy();
+  public com.sun.org.apache.xml.internal.security.utils.ElementProxy(org.w3c.dom.Document);
+  public com.sun.org.apache.xml.internal.security.utils.ElementProxy(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public abstract java.lang.String getBaseNamespace();
+  public abstract java.lang.String getBaseLocalName();
+  protected org.w3c.dom.Element createElementForFamilyLocal(java.lang.String, java.lang.String);
+  public static org.w3c.dom.Element createElementForFamily(org.w3c.dom.Document, java.lang.String, java.lang.String);
+  public void setElement(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public final org.w3c.dom.Element getElement();
+  public final org.w3c.dom.NodeList getElementPlusReturns();
+  protected org.w3c.dom.Text createText(java.lang.String);
+  public org.w3c.dom.Document getDocument();
+  public java.lang.String getBaseURI();
+  void guaranteeThatElementInCorrectSpace() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public void addBigIntegerElement(java.math.BigInteger, java.lang.String);
+  protected void addReturnToSelf();
+  public void addBase64Element(byte[], java.lang.String);
+  public void addTextElement(java.lang.String, java.lang.String);
+  public void addBase64Text(byte[]);
+  protected void appendSelf(com.sun.org.apache.xml.internal.security.utils.ElementProxy);
+  protected void appendSelf(org.w3c.dom.Node);
+  protected void appendOther(org.w3c.dom.Element, org.w3c.dom.Node);
+  public void addText(java.lang.String);
+  public java.math.BigInteger getBigIntegerFromChildElement(java.lang.String, java.lang.String);
+  public java.lang.String getTextFromChildElement(java.lang.String, java.lang.String);
+  public byte[] getBytesFromTextChild() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.lang.String getTextFromTextChild();
+  public int length(java.lang.String, java.lang.String);
+  public void setXPathNamespaceContext(java.lang.String, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public static void setDefaultPrefix(java.lang.String, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public static void registerDefaultPrefixes() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public static java.lang.String getDefaultPrefix(java.lang.String);
+  protected void setElement(org.w3c.dom.Element);
+  protected void setDocument(org.w3c.dom.Document);
+  protected java.lang.String getLocalAttribute(java.lang.String);
+  protected void setLocalAttribute(java.lang.String, java.lang.String);
+  protected void setLocalIdAttribute(java.lang.String, java.lang.String);
+  protected org.w3c.dom.Node getFirstChild();
+  static {};
+}

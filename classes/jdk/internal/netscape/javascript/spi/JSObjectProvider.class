@@ -1,0 +1,4 @@
+Compiled from "JSObjectProvider.java"
+public interface jdk.internal.netscape.javascript.spi.JSObjectProvider {
+  public abstract netscape.javascript.JSObject getWindow(java.applet.Applet) throws netscape.javascript.JSException;
+}

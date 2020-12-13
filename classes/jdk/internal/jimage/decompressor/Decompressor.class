@@ -1,0 +1,5 @@
+Compiled from "Decompressor.java"
+public final class jdk.internal.jimage.decompressor.Decompressor {
+  public jdk.internal.jimage.decompressor.Decompressor();
+  public byte[] decompressResource(java.nio.ByteOrder, jdk.internal.jimage.decompressor.ResourceDecompressor$StringsProvider, byte[]) throws java.io.IOException;
+}

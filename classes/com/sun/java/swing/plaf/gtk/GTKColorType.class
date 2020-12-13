@@ -1,0 +1,12 @@
+Compiled from "GTKColorType.java"
+public class com.sun.java.swing.plaf.gtk.GTKColorType extends javax.swing.plaf.synth.ColorType {
+  public static final javax.swing.plaf.synth.ColorType LIGHT;
+  public static final javax.swing.plaf.synth.ColorType DARK;
+  public static final javax.swing.plaf.synth.ColorType MID;
+  public static final javax.swing.plaf.synth.ColorType BLACK;
+  public static final javax.swing.plaf.synth.ColorType WHITE;
+  public static final int MAX_COUNT;
+  static java.awt.Color adjustColor(java.awt.Color, float, float, float);
+  protected com.sun.java.swing.plaf.gtk.GTKColorType(java.lang.String);
+  static {};
+}

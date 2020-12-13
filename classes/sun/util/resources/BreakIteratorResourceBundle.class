@@ -1,0 +1,9 @@
+Compiled from "BreakIteratorResourceBundle.java"
+public abstract class sun.util.resources.BreakIteratorResourceBundle extends java.util.ResourceBundle {
+  public sun.util.resources.BreakIteratorResourceBundle();
+  protected abstract java.util.ResourceBundle getBreakIteratorInfo();
+  protected java.lang.Object handleGetObject(java.lang.String);
+  public java.util.Enumeration<java.lang.String> getKeys();
+  protected java.util.Set<java.lang.String> handleKeySet();
+  static {};
+}

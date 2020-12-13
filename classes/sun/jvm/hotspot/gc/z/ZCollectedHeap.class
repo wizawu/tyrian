@@ -1,0 +1,13 @@
+Compiled from "ZCollectedHeap.java"
+public class sun.jvm.hotspot.gc.z.ZCollectedHeap extends sun.jvm.hotspot.gc.shared.CollectedHeap {
+  static final boolean $assertionsDisabled;
+  public sun.jvm.hotspot.gc.z.ZHeap heap();
+  public sun.jvm.hotspot.gc.shared.CollectedHeapName kind();
+  public void printOn(java.io.PrintStream);
+  public sun.jvm.hotspot.gc.z.ZCollectedHeap(sun.jvm.hotspot.debugger.Address);
+  public long capacity();
+  public long used();
+  public sun.jvm.hotspot.debugger.OopHandle oop_load_at(sun.jvm.hotspot.debugger.OopHandle, long);
+  public java.lang.String oopAddressDescription(sun.jvm.hotspot.debugger.OopHandle);
+  static {};
+}

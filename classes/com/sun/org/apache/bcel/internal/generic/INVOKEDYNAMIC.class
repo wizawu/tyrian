@@ -1,0 +1,12 @@
+Compiled from "INVOKEDYNAMIC.java"
+public class com.sun.org.apache.bcel.internal.generic.INVOKEDYNAMIC extends com.sun.org.apache.bcel.internal.generic.InvokeInstruction {
+  com.sun.org.apache.bcel.internal.generic.INVOKEDYNAMIC();
+  public com.sun.org.apache.bcel.internal.generic.INVOKEDYNAMIC(int);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public java.lang.String toString(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+  public java.lang.String getClassName(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.ReferenceType getReferenceType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+}

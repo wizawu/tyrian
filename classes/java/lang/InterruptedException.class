@@ -1,0 +1,5 @@
+Compiled from "InterruptedException.java"
+public class java.lang.InterruptedException extends java.lang.Exception {
+  public java.lang.InterruptedException();
+  public java.lang.InterruptedException(java.lang.String);
+}

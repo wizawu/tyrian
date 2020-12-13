@@ -1,0 +1,5 @@
+Compiled from "XPathFilter2ParameterSpec.java"
+public final class javax.xml.crypto.dsig.spec.XPathFilter2ParameterSpec implements javax.xml.crypto.dsig.spec.TransformParameterSpec {
+  public javax.xml.crypto.dsig.spec.XPathFilter2ParameterSpec(java.util.List<javax.xml.crypto.dsig.spec.XPathType>);
+  public java.util.List<javax.xml.crypto.dsig.spec.XPathType> getXPathList();
+}

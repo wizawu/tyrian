@@ -1,0 +1,13 @@
+Compiled from "MetalBorders.java"
+public class javax.swing.plaf.metal.MetalBorders {
+  static java.lang.Object NO_BUTTON_ROLLOVER;
+  public javax.swing.plaf.metal.MetalBorders();
+  public static javax.swing.border.Border getButtonBorder();
+  public static javax.swing.border.Border getTextBorder();
+  public static javax.swing.border.Border getTextFieldBorder();
+  public static javax.swing.border.Border getToggleButtonBorder();
+  public static javax.swing.border.Border getDesktopIconBorder();
+  static javax.swing.border.Border getToolBarRolloverBorder();
+  static javax.swing.border.Border getToolBarNonrolloverBorder();
+  static {};
+}

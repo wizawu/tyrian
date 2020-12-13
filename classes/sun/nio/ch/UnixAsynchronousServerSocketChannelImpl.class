@@ -1,0 +1,9 @@
+Compiled from "UnixAsynchronousServerSocketChannelImpl.java"
+class sun.nio.ch.UnixAsynchronousServerSocketChannelImpl extends sun.nio.ch.AsynchronousServerSocketChannelImpl implements sun.nio.ch.Port$PollableChannel {
+  sun.nio.ch.UnixAsynchronousServerSocketChannelImpl(sun.nio.ch.Port) throws java.io.IOException;
+  void implClose() throws java.io.IOException;
+  public sun.nio.ch.AsynchronousChannelGroupImpl group();
+  public void onEvent(int, boolean);
+  java.util.concurrent.Future<java.nio.channels.AsynchronousSocketChannel> implAccept(java.lang.Object, java.nio.channels.CompletionHandler<java.nio.channels.AsynchronousSocketChannel, java.lang.Object>);
+  static {};
+}

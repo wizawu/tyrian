@@ -1,0 +1,21 @@
+Compiled from "SynthStyle.java"
+public abstract class javax.swing.plaf.synth.SynthStyle {
+  public javax.swing.plaf.synth.SynthStyle();
+  public javax.swing.plaf.synth.SynthGraphicsUtils getGraphicsUtils(javax.swing.plaf.synth.SynthContext);
+  public java.awt.Color getColor(javax.swing.plaf.synth.SynthContext, javax.swing.plaf.synth.ColorType);
+  protected abstract java.awt.Color getColorForState(javax.swing.plaf.synth.SynthContext, javax.swing.plaf.synth.ColorType);
+  public java.awt.Font getFont(javax.swing.plaf.synth.SynthContext);
+  protected abstract java.awt.Font getFontForState(javax.swing.plaf.synth.SynthContext);
+  public java.awt.Insets getInsets(javax.swing.plaf.synth.SynthContext, java.awt.Insets);
+  public javax.swing.plaf.synth.SynthPainter getPainter(javax.swing.plaf.synth.SynthContext);
+  public boolean isOpaque(javax.swing.plaf.synth.SynthContext);
+  public java.lang.Object get(javax.swing.plaf.synth.SynthContext, java.lang.Object);
+  void installDefaults(javax.swing.plaf.synth.SynthContext, javax.swing.plaf.synth.SynthUI);
+  public void installDefaults(javax.swing.plaf.synth.SynthContext);
+  public void uninstallDefaults(javax.swing.plaf.synth.SynthContext);
+  public int getInt(javax.swing.plaf.synth.SynthContext, java.lang.Object, int);
+  public boolean getBoolean(javax.swing.plaf.synth.SynthContext, java.lang.Object, boolean);
+  public javax.swing.Icon getIcon(javax.swing.plaf.synth.SynthContext, java.lang.Object);
+  public java.lang.String getString(javax.swing.plaf.synth.SynthContext, java.lang.Object, java.lang.String);
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "Instruction.java"
+abstract class com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction extends com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

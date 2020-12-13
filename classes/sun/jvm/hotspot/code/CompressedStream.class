@@ -1,0 +1,19 @@
+Compiled from "CompressedStream.java"
+public class sun.jvm.hotspot.code.CompressedStream {
+  protected sun.jvm.hotspot.debugger.Address buffer;
+  protected int position;
+  public static final int LogBitsPerByte;
+  public static final int BitsPerByte;
+  public static final int lg_H;
+  public static final int H;
+  public static final int L;
+  public static final int MAX_i;
+  public sun.jvm.hotspot.code.CompressedStream(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.code.CompressedStream(sun.jvm.hotspot.debugger.Address, int);
+  public sun.jvm.hotspot.debugger.Address getBuffer();
+  public int getPosition();
+  public void setPosition(int);
+  public int encodeSign(int);
+  public int decodeSign(int);
+  public int reverseInt(int);
+}

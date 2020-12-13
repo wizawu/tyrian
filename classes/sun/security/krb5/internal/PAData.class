@@ -1,0 +1,13 @@
+Compiled from "PAData.java"
+public class sun.security.krb5.internal.PAData {
+  public sun.security.krb5.internal.PAData(int, byte[]);
+  public java.lang.Object clone();
+  public sun.security.krb5.internal.PAData(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public int getType();
+  public byte[] getValue();
+  public static sun.security.krb5.internal.PAData[] parseSequence(sun.security.util.DerInputStream, byte, boolean) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public static int getPreferredEType(sun.security.krb5.internal.PAData[], int) throws java.io.IOException, sun.security.krb5.Asn1Exception;
+  public static sun.security.krb5.internal.PAData$SaltAndParams getSaltAndParams(int, sun.security.krb5.internal.PAData[]) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public java.lang.String toString();
+}

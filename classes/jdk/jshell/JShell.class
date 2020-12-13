@@ -1,0 +1,46 @@
+Compiled from "JShell.java"
+public class jdk.jshell.JShell implements java.lang.AutoCloseable {
+  final jdk.jshell.SnippetMaps maps;
+  final jdk.jshell.KeyMap keyMap;
+  final jdk.jshell.OuterWrapMap outerMap;
+  final jdk.jshell.TaskFactory taskFactory;
+  final java.io.InputStream in;
+  final java.io.PrintStream out;
+  final java.io.PrintStream err;
+  final java.util.function.Supplier<java.lang.String> tempVariableNameGenerator;
+  final java.util.function.BiFunction<jdk.jshell.Snippet, java.lang.Integer, java.lang.String> idGenerator;
+  final java.util.List<java.lang.String> extraRemoteVMOptions;
+  final java.util.List<java.lang.String> extraCompilerOptions;
+  final java.util.function.Function<javax.tools.StandardJavaFileManager, javax.tools.StandardJavaFileManager> fileManagerMapping;
+  final jdk.jshell.Eval eval;
+  final jdk.jshell.ClassTracker classTracker;
+  jdk.jshell.JShell(jdk.jshell.JShell$Builder) throws java.lang.IllegalStateException;
+  public static jdk.jshell.JShell create() throws java.lang.IllegalStateException;
+  public static jdk.jshell.JShell$Builder builder();
+  public jdk.jshell.SourceCodeAnalysis sourceCodeAnalysis();
+  public java.util.List<jdk.jshell.SnippetEvent> eval(java.lang.String) throws java.lang.IllegalStateException;
+  public java.util.List<jdk.jshell.SnippetEvent> drop(jdk.jshell.Snippet) throws java.lang.IllegalStateException;
+  public void addToClasspath(java.lang.String);
+  public void stop();
+  public void close();
+  public java.util.stream.Stream<jdk.jshell.Snippet> snippets();
+  public java.util.stream.Stream<jdk.jshell.VarSnippet> variables();
+  public java.util.stream.Stream<jdk.jshell.MethodSnippet> methods();
+  public java.util.stream.Stream<jdk.jshell.TypeDeclSnippet> types();
+  public java.util.stream.Stream<jdk.jshell.ImportSnippet> imports();
+  public jdk.jshell.Snippet$Status status(jdk.jshell.Snippet);
+  public java.util.stream.Stream<jdk.jshell.Diag> diagnostics(jdk.jshell.Snippet);
+  public java.util.stream.Stream<java.lang.String> unresolvedDependencies(jdk.jshell.DeclarationSnippet);
+  public java.lang.String varValue(jdk.jshell.VarSnippet) throws java.lang.IllegalStateException;
+  public jdk.jshell.JShell$Subscription onSnippetEvent(java.util.function.Consumer<jdk.jshell.SnippetEvent>) throws java.lang.IllegalStateException;
+  public jdk.jshell.JShell$Subscription onShutdown(java.util.function.Consumer<jdk.jshell.JShell>) throws java.lang.IllegalStateException;
+  public void unsubscribe(jdk.jshell.JShell$Subscription);
+  jdk.jshell.spi.ExecutionControl executionControl();
+  void debug(int, java.lang.String, java.lang.Object...);
+  void debug(java.lang.Throwable, java.lang.String);
+  int nextKeyIndex();
+  void closeDown();
+  void checkIfAlive() throws java.lang.IllegalStateException;
+  java.lang.String messageFormat(java.lang.String, java.lang.Object...);
+  static {};
+}

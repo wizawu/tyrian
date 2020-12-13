@@ -1,0 +1,6 @@
+Compiled from "EPollSelectorProvider.java"
+public class sun.nio.ch.EPollSelectorProvider extends sun.nio.ch.SelectorProviderImpl {
+  public sun.nio.ch.EPollSelectorProvider();
+  public java.nio.channels.spi.AbstractSelector openSelector() throws java.io.IOException;
+  public java.nio.channels.Channel inheritedChannel() throws java.io.IOException;
+}

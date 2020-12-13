@@ -1,0 +1,8 @@
+Compiled from "DelegateAction.java"
+public abstract class com.sun.java.swing.action.DelegateAction extends javax.swing.AbstractAction {
+  public com.sun.java.swing.action.DelegateAction(java.lang.String, javax.swing.Icon);
+  public void addActionListener(java.awt.event.ActionListener);
+  public void removeActionListener(java.awt.event.ActionListener);
+  public java.awt.event.ActionListener[] getActionListeners();
+  public void actionPerformed(java.awt.event.ActionEvent);
+}

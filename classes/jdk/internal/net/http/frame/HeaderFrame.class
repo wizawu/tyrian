@@ -1,0 +1,12 @@
+Compiled from "HeaderFrame.java"
+public abstract class jdk.internal.net.http.frame.HeaderFrame extends jdk.internal.net.http.frame.Http2Frame {
+  final int headerLength;
+  final java.util.List<java.nio.ByteBuffer> headerBlocks;
+  public static final int END_STREAM;
+  public static final int END_HEADERS;
+  public jdk.internal.net.http.frame.HeaderFrame(int, int, java.util.List<java.nio.ByteBuffer>);
+  public java.lang.String flagAsString(int);
+  public java.util.List<java.nio.ByteBuffer> getHeaderBlock();
+  int getHeaderLength();
+  public boolean endHeaders();
+}

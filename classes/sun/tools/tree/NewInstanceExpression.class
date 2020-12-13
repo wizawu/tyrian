@@ -1,0 +1,23 @@
+Compiled from "NewInstanceExpression.java"
+public class sun.tools.tree.NewInstanceExpression extends sun.tools.tree.NaryExpression {
+  sun.tools.java.MemberDefinition field;
+  sun.tools.tree.Expression outerArg;
+  sun.tools.java.ClassDefinition body;
+  sun.tools.java.MemberDefinition implMethod;
+  final int MAXINLINECOST;
+  public sun.tools.tree.NewInstanceExpression(long, sun.tools.tree.Expression, sun.tools.tree.Expression[]);
+  public sun.tools.tree.NewInstanceExpression(long, sun.tools.tree.Expression, sun.tools.tree.Expression[], sun.tools.tree.Expression, sun.tools.java.ClassDefinition);
+  public sun.tools.tree.Expression getOuterArg();
+  int precedence();
+  public sun.tools.tree.Expression order();
+  public sun.tools.tree.Vset checkValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public static sun.tools.tree.Expression[] insertOuterLink(sun.tools.java.Environment, sun.tools.tree.Context, long, sun.tools.java.ClassDefinition, sun.tools.tree.Expression, sun.tools.tree.Expression[]);
+  public sun.tools.tree.Vset check(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public sun.tools.tree.Expression copyInline(sun.tools.tree.Context);
+  sun.tools.tree.Expression inlineNewInstance(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Statement);
+  public sun.tools.tree.Expression inline(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Expression inlineValue(sun.tools.java.Environment, sun.tools.tree.Context);
+  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
+  public void code(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+}

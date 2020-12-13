@@ -1,0 +1,12 @@
+Compiled from "FileChannelLinesSpliterator.java"
+final class java.nio.file.FileChannelLinesSpliterator implements java.util.Spliterator<java.lang.String> {
+  static final java.util.Set<java.lang.String> SUPPORTED_CHARSET_NAMES;
+  java.nio.file.FileChannelLinesSpliterator(java.nio.channels.FileChannel, java.nio.charset.Charset, int, int);
+  public boolean tryAdvance(java.util.function.Consumer<? super java.lang.String>);
+  public void forEachRemaining(java.util.function.Consumer<? super java.lang.String>);
+  public java.util.Spliterator<java.lang.String> trySplit();
+  public long estimateSize();
+  public long getExactSizeIfKnown();
+  public int characteristics();
+  static {};
+}

@@ -1,0 +1,13 @@
+Compiled from "Providers.java"
+public class sun.security.jca.Providers {
+  public static java.security.Provider getSunProvider();
+  public static java.lang.Object startJarVerification();
+  public static void stopJarVerification(java.lang.Object);
+  public static sun.security.jca.ProviderList getProviderList();
+  public static void setProviderList(sun.security.jca.ProviderList);
+  public static sun.security.jca.ProviderList getFullProviderList();
+  public static sun.security.jca.ProviderList getThreadProviderList();
+  public static synchronized sun.security.jca.ProviderList beginThreadProviderList(sun.security.jca.ProviderList);
+  public static synchronized void endThreadProviderList(sun.security.jca.ProviderList);
+  static {};
+}

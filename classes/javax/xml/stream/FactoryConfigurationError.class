@@ -1,0 +1,12 @@
+Compiled from "FactoryConfigurationError.java"
+public class javax.xml.stream.FactoryConfigurationError extends java.lang.Error {
+  java.lang.Exception nested;
+  public javax.xml.stream.FactoryConfigurationError();
+  public javax.xml.stream.FactoryConfigurationError(java.lang.Exception);
+  public javax.xml.stream.FactoryConfigurationError(java.lang.Exception, java.lang.String);
+  public javax.xml.stream.FactoryConfigurationError(java.lang.String, java.lang.Exception);
+  public javax.xml.stream.FactoryConfigurationError(java.lang.String);
+  public java.lang.Exception getException();
+  public java.lang.Throwable getCause();
+  public java.lang.String getMessage();
+}

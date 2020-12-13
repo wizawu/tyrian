@@ -1,0 +1,6 @@
+Compiled from "JarException.java"
+public class sun.tools.jar.JarException extends java.io.IOException {
+  static final long serialVersionUID;
+  public sun.tools.jar.JarException();
+  public sun.tools.jar.JarException(java.lang.String);
+}

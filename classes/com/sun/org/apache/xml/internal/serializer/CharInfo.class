@@ -1,0 +1,16 @@
+Compiled from "CharInfo.java"
+final class com.sun.org.apache.xml.internal.serializer.CharInfo {
+  public static final java.lang.String HTML_ENTITIES_RESOURCE;
+  public static final java.lang.String XML_ENTITIES_RESOURCE;
+  public static final char S_HORIZONAL_TAB;
+  public static final char S_LINEFEED;
+  public static final char S_CARRIAGERETURN;
+  final boolean onlyQuotAmpLtGt;
+  java.lang.String getOutputStringForChar(char);
+  final boolean isSpecialAttrChar(int);
+  final boolean isSpecialTextChar(int);
+  final boolean isTextASCIIClean(int);
+  static com.sun.org.apache.xml.internal.serializer.CharInfo getCharInfoInternal(java.lang.String, java.lang.String);
+  static com.sun.org.apache.xml.internal.serializer.CharInfo getCharInfo(java.lang.String, java.lang.String);
+  static {};
+}

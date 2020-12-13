@@ -1,0 +1,8 @@
+Compiled from "FindObjectByType.java"
+public class sun.jvm.hotspot.utilities.FindObjectByType implements sun.jvm.hotspot.oops.HeapVisitor {
+  public sun.jvm.hotspot.utilities.FindObjectByType(sun.jvm.hotspot.oops.Klass);
+  public java.util.List getResults();
+  public void prologue(long);
+  public void epilogue();
+  public boolean doObj(sun.jvm.hotspot.oops.Oop);
+}

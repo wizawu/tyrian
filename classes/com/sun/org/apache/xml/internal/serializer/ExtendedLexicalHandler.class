@@ -1,0 +1,4 @@
+Compiled from "ExtendedLexicalHandler.java"
+interface com.sun.org.apache.xml.internal.serializer.ExtendedLexicalHandler extends org.xml.sax.ext.LexicalHandler {
+  public abstract void comment(java.lang.String) throws org.xml.sax.SAXException;
+}

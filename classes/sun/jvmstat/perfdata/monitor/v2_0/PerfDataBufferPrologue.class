@@ -1,0 +1,38 @@
+Compiled from "PerfDataBufferPrologue.java"
+public class sun.jvmstat.perfdata.monitor.v2_0.PerfDataBufferPrologue extends sun.jvmstat.perfdata.monitor.AbstractPerfDataBufferPrologue {
+  static final int PERFDATA_PROLOG_ACCESSIBLE_OFFSET;
+  static final int PERFDATA_PROLOG_ACCESSIBLE_SIZE;
+  static final int PERFDATA_PROLOG_USED_OFFSET;
+  static final int PERFDATA_PROLOG_USED_SIZE;
+  static final int PERFDATA_PROLOG_OVERFLOW_OFFSET;
+  static final int PERFDATA_PROLOG_OVERFLOW_SIZE;
+  static final int PERFDATA_PROLOG_MODTIMESTAMP_OFFSET;
+  static final int PERFDATA_PROLOG_MODTIMESTAMP_SIZE;
+  static final int PERFDATA_PROLOG_ENTRYOFFSET_OFFSET;
+  static final int PERFDATA_PROLOG_ENTRYOFFSET_SIZE;
+  static final int PERFDATA_PROLOG_NUMENTRIES_OFFSET;
+  static final int PERFDATA_PROLOG_NUMENTRIES_SIZE;
+  static final int PERFDATA_PROLOG_SIZE;
+  static final java.lang.String PERFDATA_BUFFER_SIZE_NAME;
+  static final java.lang.String PERFDATA_BUFFER_USED_NAME;
+  static final java.lang.String PERFDATA_OVERFLOW_NAME;
+  static final java.lang.String PERFDATA_MODTIMESTAMP_NAME;
+  static final java.lang.String PERFDATA_NUMENTRIES_NAME;
+  static final boolean $assertionsDisabled;
+  public sun.jvmstat.perfdata.monitor.v2_0.PerfDataBufferPrologue(java.nio.ByteBuffer) throws sun.jvmstat.monitor.MonitorException;
+  public boolean supportsAccessible();
+  public boolean isAccessible();
+  public int getUsed();
+  public int getBufferSize();
+  public int getOverflow();
+  public long getModificationTimeStamp();
+  public int getEntryOffset();
+  public int getNumEntries();
+  public int getSize();
+  java.nio.IntBuffer usedBuffer();
+  java.nio.IntBuffer sizeBuffer();
+  java.nio.IntBuffer overflowBuffer();
+  java.nio.LongBuffer modificationTimeStampBuffer();
+  java.nio.IntBuffer numEntriesBuffer();
+  static {};
+}

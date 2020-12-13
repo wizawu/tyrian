@@ -1,0 +1,11 @@
+Compiled from "TreeModel.java"
+public interface javax.swing.tree.TreeModel {
+  public abstract java.lang.Object getRoot();
+  public abstract java.lang.Object getChild(java.lang.Object, int);
+  public abstract int getChildCount(java.lang.Object);
+  public abstract boolean isLeaf(java.lang.Object);
+  public abstract void valueForPathChanged(javax.swing.tree.TreePath, java.lang.Object);
+  public abstract int getIndexOfChild(java.lang.Object, java.lang.Object);
+  public abstract void addTreeModelListener(javax.swing.event.TreeModelListener);
+  public abstract void removeTreeModelListener(javax.swing.event.TreeModelListener);
+}

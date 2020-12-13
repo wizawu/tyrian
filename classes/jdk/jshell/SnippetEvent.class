@@ -1,0 +1,12 @@
+Compiled from "SnippetEvent.java"
+public class jdk.jshell.SnippetEvent {
+  jdk.jshell.SnippetEvent(jdk.jshell.Snippet, jdk.jshell.Snippet$Status, jdk.jshell.Snippet$Status, boolean, jdk.jshell.Snippet, java.lang.String, jdk.jshell.JShellException);
+  public jdk.jshell.Snippet snippet();
+  public jdk.jshell.Snippet$Status previousStatus();
+  public jdk.jshell.Snippet$Status status();
+  public boolean isSignatureChange();
+  public jdk.jshell.Snippet causeSnippet();
+  public jdk.jshell.JShellException exception();
+  public java.lang.String value();
+  public java.lang.String toString();
+}

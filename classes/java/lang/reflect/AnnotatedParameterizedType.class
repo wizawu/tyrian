@@ -1,0 +1,5 @@
+Compiled from "AnnotatedParameterizedType.java"
+public interface java.lang.reflect.AnnotatedParameterizedType extends java.lang.reflect.AnnotatedType {
+  public abstract java.lang.reflect.AnnotatedType[] getAnnotatedActualTypeArguments();
+  public abstract java.lang.reflect.AnnotatedType getAnnotatedOwnerType();
+}

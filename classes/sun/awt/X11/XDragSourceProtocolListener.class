@@ -1,0 +1,11 @@
+Compiled from "XDragSourceProtocolListener.java"
+interface sun.awt.X11.XDragSourceProtocolListener {
+  public abstract void handleDragReply(int);
+  public abstract void handleDragReply(int, int, int);
+  public abstract void handleDragReply(int, int, int, int);
+  public abstract void handleDragFinished();
+  public abstract void handleDragFinished(boolean);
+  public abstract void handleDragFinished(boolean, int);
+  public abstract void handleDragFinished(boolean, int, int, int);
+  public abstract void cleanup(long);
+}

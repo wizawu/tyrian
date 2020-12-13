@@ -1,0 +1,7 @@
+Compiled from "DHServerKeyExchange.java"
+final class sun.security.ssl.DHServerKeyExchange {
+  static final sun.security.ssl.SSLConsumer dhHandshakeConsumer;
+  static final sun.security.ssl.HandshakeProducer dhHandshakeProducer;
+  sun.security.ssl.DHServerKeyExchange();
+  static {};
+}

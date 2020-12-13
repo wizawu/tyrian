@@ -1,0 +1,10 @@
+Compiled from "JPEGImageDecoder.java"
+public class sun.awt.image.JPEGImageDecoder extends sun.awt.image.ImageDecoder {
+  java.util.Hashtable<java.lang.String, java.lang.Object> props;
+  public sun.awt.image.JPEGImageDecoder(sun.awt.image.InputStreamImageSource, java.io.InputStream);
+  public boolean sendHeaderInfo(int, int, boolean, boolean, boolean);
+  public boolean sendPixels(int[], int);
+  public boolean sendPixels(byte[], int);
+  public void produceImage() throws java.io.IOException, sun.awt.image.ImageFormatException;
+  static {};
+}

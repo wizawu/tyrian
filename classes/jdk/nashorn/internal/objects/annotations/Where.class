@@ -1,0 +1,9 @@
+Compiled from "Where.java"
+public final class jdk.nashorn.internal.objects.annotations.Where extends java.lang.Enum<jdk.nashorn.internal.objects.annotations.Where> {
+  public static final jdk.nashorn.internal.objects.annotations.Where CONSTRUCTOR;
+  public static final jdk.nashorn.internal.objects.annotations.Where PROTOTYPE;
+  public static final jdk.nashorn.internal.objects.annotations.Where INSTANCE;
+  public static jdk.nashorn.internal.objects.annotations.Where[] values();
+  public static jdk.nashorn.internal.objects.annotations.Where valueOf(java.lang.String);
+  static {};
+}

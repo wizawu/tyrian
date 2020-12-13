@@ -1,0 +1,8 @@
+Compiled from "SystemDictionaryHelper.java"
+public class sun.jvm.hotspot.utilities.SystemDictionaryHelper {
+  public sun.jvm.hotspot.utilities.SystemDictionaryHelper();
+  public static synchronized sun.jvm.hotspot.oops.InstanceKlass[] getAllInstanceKlasses();
+  public static sun.jvm.hotspot.oops.InstanceKlass[] findInstanceKlasses(java.lang.String);
+  public static sun.jvm.hotspot.oops.InstanceKlass findInstanceKlass(java.lang.String);
+  static {};
+}

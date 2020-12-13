@@ -1,0 +1,21 @@
+Compiled from "MockAttributeSet.java"
+class javax.swing.text.rtf.MockAttributeSet implements javax.swing.text.AttributeSet,javax.swing.text.MutableAttributeSet {
+  public java.util.Dictionary<java.lang.Object, java.lang.Object> backing;
+  javax.swing.text.rtf.MockAttributeSet();
+  public boolean isEmpty();
+  public int getAttributeCount();
+  public boolean isDefined(java.lang.Object);
+  public boolean isEqual(javax.swing.text.AttributeSet);
+  public javax.swing.text.AttributeSet copyAttributes();
+  public java.lang.Object getAttribute(java.lang.Object);
+  public void addAttribute(java.lang.Object, java.lang.Object);
+  public void addAttributes(javax.swing.text.AttributeSet);
+  public void removeAttribute(java.lang.Object);
+  public void removeAttributes(javax.swing.text.AttributeSet);
+  public void removeAttributes(java.util.Enumeration<?>);
+  public void setResolveParent(javax.swing.text.AttributeSet);
+  public java.util.Enumeration<?> getAttributeNames();
+  public boolean containsAttribute(java.lang.Object, java.lang.Object);
+  public boolean containsAttributes(javax.swing.text.AttributeSet);
+  public javax.swing.text.AttributeSet getResolveParent();
+}

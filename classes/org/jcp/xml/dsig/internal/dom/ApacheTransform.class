@@ -1,0 +1,14 @@
+Compiled from "ApacheTransform.java"
+public abstract class org.jcp.xml.dsig.internal.dom.ApacheTransform extends javax.xml.crypto.dsig.TransformService {
+  protected org.w3c.dom.Document ownerDoc;
+  protected org.w3c.dom.Element transformElem;
+  protected javax.xml.crypto.dsig.spec.TransformParameterSpec params;
+  public org.jcp.xml.dsig.internal.dom.ApacheTransform();
+  public final java.security.spec.AlgorithmParameterSpec getParameterSpec();
+  public void init(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws java.security.InvalidAlgorithmParameterException;
+  public void marshalParams(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.MarshalException;
+  public javax.xml.crypto.Data transform(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.dsig.TransformException;
+  public javax.xml.crypto.Data transform(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext, java.io.OutputStream) throws javax.xml.crypto.dsig.TransformException;
+  public final boolean isFeatureSupported(java.lang.String);
+  static {};
+}

@@ -1,0 +1,16 @@
+Compiled from "Canvas.java"
+public class java.awt.Canvas extends java.awt.Component implements javax.accessibility.Accessible {
+  public java.awt.Canvas();
+  public java.awt.Canvas(java.awt.GraphicsConfiguration);
+  void setGraphicsConfiguration(java.awt.GraphicsConfiguration);
+  java.lang.String constructComponentName();
+  public void addNotify();
+  public void paint(java.awt.Graphics);
+  public void update(java.awt.Graphics);
+  boolean postsOldMouseEvents();
+  public void createBufferStrategy(int);
+  public void createBufferStrategy(int, java.awt.BufferCapabilities) throws java.awt.AWTException;
+  public java.awt.image.BufferStrategy getBufferStrategy();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  static {};
+}

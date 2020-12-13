@@ -1,0 +1,22 @@
+Compiled from "FieldAccessorImpl.java"
+abstract class jdk.internal.reflect.FieldAccessorImpl extends jdk.internal.reflect.MagicAccessorImpl implements jdk.internal.reflect.FieldAccessor {
+  jdk.internal.reflect.FieldAccessorImpl();
+  public abstract java.lang.Object get(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract boolean getBoolean(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract byte getByte(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract char getChar(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract short getShort(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract int getInt(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract long getLong(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract float getFloat(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract double getDouble(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract void set(java.lang.Object, java.lang.Object) throws java.lang.IllegalArgumentException, java.lang.IllegalAccessException;
+  public abstract void setBoolean(java.lang.Object, boolean) throws java.lang.IllegalArgumentException, java.lang.IllegalAccessException;
+  public abstract void setByte(java.lang.Object, byte) throws java.lang.IllegalArgumentException, java.lang.IllegalAccessException;
+  public abstract void setChar(java.lang.Object, char) throws java.lang.IllegalArgumentException, java.lang.IllegalAccessException;
+  public abstract void setShort(java.lang.Object, short) throws java.lang.IllegalArgumentException, java.lang.IllegalAccessException;
+  public abstract void setInt(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.IllegalAccessException;
+  public abstract void setLong(java.lang.Object, long) throws java.lang.IllegalArgumentException, java.lang.IllegalAccessException;
+  public abstract void setFloat(java.lang.Object, float) throws java.lang.IllegalArgumentException, java.lang.IllegalAccessException;
+  public abstract void setDouble(java.lang.Object, double) throws java.lang.IllegalArgumentException, java.lang.IllegalAccessException;
+}

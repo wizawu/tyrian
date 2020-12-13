@@ -1,0 +1,16 @@
+Compiled from "GrowableByteArray.java"
+public class sun.java2d.xr.GrowableByteArray {
+  byte[] array;
+  int size;
+  int cellSize;
+  public sun.java2d.xr.GrowableByteArray(int, int);
+  public byte[] getArray();
+  public byte[] getSizedArray();
+  public final int getByte(int);
+  public final int getNextIndex();
+  protected final int getCellIndex(int);
+  public final void addByte(byte);
+  public final int getSize();
+  public void clear();
+  protected void growArray();
+}

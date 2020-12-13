@@ -1,0 +1,8 @@
+Compiled from "Punycode.java"
+public final class sun.net.idn.Punycode {
+  static final int[] basicToDigit;
+  public sun.net.idn.Punycode();
+  public static java.lang.StringBuffer encode(java.lang.StringBuffer, boolean[]) throws java.text.ParseException;
+  public static java.lang.StringBuffer decode(java.lang.StringBuffer, boolean[]) throws java.text.ParseException;
+  static {};
+}

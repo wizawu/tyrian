@@ -1,0 +1,18 @@
+Compiled from "HandlerBase.java"
+public class org.xml.sax.HandlerBase implements org.xml.sax.EntityResolver,org.xml.sax.DTDHandler,org.xml.sax.DocumentHandler,org.xml.sax.ErrorHandler {
+  public org.xml.sax.HandlerBase();
+  public org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void notationDecl(java.lang.String, java.lang.String, java.lang.String);
+  public void unparsedEntityDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public void setDocumentLocator(org.xml.sax.Locator);
+  public void startDocument() throws org.xml.sax.SAXException;
+  public void endDocument() throws org.xml.sax.SAXException;
+  public void startElement(java.lang.String, org.xml.sax.AttributeList) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String) throws org.xml.sax.SAXException;
+  public void characters(char[], int, int) throws org.xml.sax.SAXException;
+  public void ignorableWhitespace(char[], int, int) throws org.xml.sax.SAXException;
+  public void processingInstruction(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+}

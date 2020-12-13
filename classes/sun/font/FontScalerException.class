@@ -1,0 +1,5 @@
+Compiled from "FontScalerException.java"
+public class sun.font.FontScalerException extends java.lang.Exception {
+  public sun.font.FontScalerException();
+  public sun.font.FontScalerException(java.lang.String);
+}

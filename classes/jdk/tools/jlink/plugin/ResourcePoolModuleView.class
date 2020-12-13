@@ -1,0 +1,7 @@
+Compiled from "ResourcePoolModuleView.java"
+public interface jdk.tools.jlink.plugin.ResourcePoolModuleView {
+  public abstract java.util.Optional<jdk.tools.jlink.plugin.ResourcePoolModule> findModule(java.lang.String);
+  public default java.util.Optional<jdk.tools.jlink.plugin.ResourcePoolModule> findModule(jdk.tools.jlink.plugin.ResourcePoolEntry);
+  public abstract java.util.stream.Stream<jdk.tools.jlink.plugin.ResourcePoolModule> modules();
+  public abstract int moduleCount();
+}

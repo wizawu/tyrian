@@ -1,0 +1,9 @@
+Compiled from "ReturnaddressType.java"
+public class com.sun.org.apache.bcel.internal.generic.ReturnaddressType extends com.sun.org.apache.bcel.internal.generic.Type {
+  public static final com.sun.org.apache.bcel.internal.generic.ReturnaddressType NO_TARGET;
+  public com.sun.org.apache.bcel.internal.generic.ReturnaddressType(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public com.sun.org.apache.bcel.internal.generic.InstructionHandle getTarget();
+  static {};
+}

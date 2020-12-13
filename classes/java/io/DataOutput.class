@@ -1,0 +1,17 @@
+Compiled from "DataOutput.java"
+public interface java.io.DataOutput {
+  public abstract void write(int) throws java.io.IOException;
+  public abstract void write(byte[]) throws java.io.IOException;
+  public abstract void write(byte[], int, int) throws java.io.IOException;
+  public abstract void writeBoolean(boolean) throws java.io.IOException;
+  public abstract void writeByte(int) throws java.io.IOException;
+  public abstract void writeShort(int) throws java.io.IOException;
+  public abstract void writeChar(int) throws java.io.IOException;
+  public abstract void writeInt(int) throws java.io.IOException;
+  public abstract void writeLong(long) throws java.io.IOException;
+  public abstract void writeFloat(float) throws java.io.IOException;
+  public abstract void writeDouble(double) throws java.io.IOException;
+  public abstract void writeBytes(java.lang.String) throws java.io.IOException;
+  public abstract void writeChars(java.lang.String) throws java.io.IOException;
+  public abstract void writeUTF(java.lang.String) throws java.io.IOException;
+}

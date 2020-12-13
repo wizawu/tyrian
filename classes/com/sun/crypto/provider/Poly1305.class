@@ -1,0 +1,13 @@
+Compiled from "Poly1305.java"
+final class com.sun.crypto.provider.Poly1305 {
+  static final boolean $assertionsDisabled;
+  com.sun.crypto.provider.Poly1305();
+  void engineInit(java.security.Key, java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException;
+  int engineGetMacLength();
+  void engineReset();
+  void engineUpdate(java.nio.ByteBuffer);
+  void engineUpdate(byte[], int, int);
+  void engineUpdate(byte);
+  byte[] engineDoFinal();
+  static {};
+}

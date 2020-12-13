@@ -1,0 +1,19 @@
+Compiled from "ScriptContext.java"
+public interface javax.script.ScriptContext {
+  public static final int ENGINE_SCOPE;
+  public static final int GLOBAL_SCOPE;
+  public abstract void setBindings(javax.script.Bindings, int);
+  public abstract javax.script.Bindings getBindings(int);
+  public abstract void setAttribute(java.lang.String, java.lang.Object, int);
+  public abstract java.lang.Object getAttribute(java.lang.String, int);
+  public abstract java.lang.Object removeAttribute(java.lang.String, int);
+  public abstract java.lang.Object getAttribute(java.lang.String);
+  public abstract int getAttributesScope(java.lang.String);
+  public abstract java.io.Writer getWriter();
+  public abstract java.io.Writer getErrorWriter();
+  public abstract void setWriter(java.io.Writer);
+  public abstract void setErrorWriter(java.io.Writer);
+  public abstract java.io.Reader getReader();
+  public abstract void setReader(java.io.Reader);
+  public abstract java.util.List<java.lang.Integer> getScopes();
+}

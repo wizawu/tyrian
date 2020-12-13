@@ -1,0 +1,10 @@
+Compiled from "ObjectInstance.java"
+public class javax.management.ObjectInstance implements java.io.Serializable {
+  public javax.management.ObjectInstance(java.lang.String, java.lang.String) throws javax.management.MalformedObjectNameException;
+  public javax.management.ObjectInstance(javax.management.ObjectName, java.lang.String);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public javax.management.ObjectName getObjectName();
+  public java.lang.String getClassName();
+  public java.lang.String toString();
+}

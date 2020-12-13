@@ -1,0 +1,24 @@
+Compiled from "SymbolHash.java"
+public class com.sun.org.apache.xerces.internal.util.SymbolHash {
+  protected static final int TABLE_SIZE;
+  protected static final int MAX_HASH_COLLISIONS;
+  protected static final int MULTIPLIERS_SIZE;
+  protected static final int MULTIPLIERS_MASK;
+  protected int fTableSize;
+  protected com.sun.org.apache.xerces.internal.util.SymbolHash$Entry[] fBuckets;
+  protected int fNum;
+  protected int[] fHashMultipliers;
+  public com.sun.org.apache.xerces.internal.util.SymbolHash();
+  public com.sun.org.apache.xerces.internal.util.SymbolHash(int);
+  public void put(java.lang.Object, java.lang.Object);
+  public java.lang.Object get(java.lang.Object);
+  public int getLength();
+  public int getValues(java.lang.Object[], int);
+  public java.lang.Object[] getEntries();
+  public com.sun.org.apache.xerces.internal.util.SymbolHash makeClone();
+  public void clear();
+  protected com.sun.org.apache.xerces.internal.util.SymbolHash$Entry search(java.lang.Object, int);
+  protected int hash(java.lang.Object);
+  protected void rehash();
+  protected void rebalance();
+}

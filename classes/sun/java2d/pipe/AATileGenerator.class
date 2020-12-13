@@ -1,0 +1,9 @@
+Compiled from "AATileGenerator.java"
+public interface sun.java2d.pipe.AATileGenerator {
+  public abstract int getTileWidth();
+  public abstract int getTileHeight();
+  public abstract int getTypicalAlpha();
+  public abstract void nextTile();
+  public abstract void getAlpha(byte[], int, int);
+  public abstract void dispose();
+}

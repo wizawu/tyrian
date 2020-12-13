@@ -1,0 +1,9 @@
+Compiled from "ZipFileAttributes.java"
+interface jdk.nio.zipfs.ZipFileAttributes extends java.nio.file.attribute.BasicFileAttributes {
+  public abstract long compressedSize();
+  public abstract long crc();
+  public abstract int method();
+  public abstract byte[] extra();
+  public abstract byte[] comment();
+  public abstract java.lang.String toString();
+}

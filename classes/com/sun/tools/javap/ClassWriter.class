@@ -1,0 +1,41 @@
+Compiled from "ClassWriter.java"
+public class com.sun.tools.javap.ClassWriter extends com.sun.tools.javap.BasicWriter {
+  static com.sun.tools.javap.ClassWriter instance(com.sun.tools.javap.Context);
+  protected com.sun.tools.javap.ClassWriter(com.sun.tools.javap.Context);
+  void setDigest(java.lang.String, byte[]);
+  void setFile(java.net.URI);
+  void setFileSize(int);
+  void setLastModified(long);
+  protected com.sun.tools.classfile.ClassFile getClassFile();
+  protected void setClassFile(com.sun.tools.classfile.ClassFile);
+  protected com.sun.tools.classfile.Method getMethod();
+  protected void setMethod(com.sun.tools.classfile.Method);
+  public void write(com.sun.tools.classfile.ClassFile);
+  protected void writeFields();
+  protected void writeField(com.sun.tools.classfile.Field);
+  protected void writeMethods();
+  protected void writeMethod(com.sun.tools.classfile.Method);
+  void writeModifiers(java.util.Collection<java.lang.String>);
+  void writeDirectives();
+  java.lang.String getModuleName(int) throws com.sun.tools.classfile.ConstantPoolException;
+  java.lang.String getPackageName(int) throws com.sun.tools.classfile.ConstantPoolException;
+  java.lang.String getUTF8Value(int);
+  java.lang.String getClassName(int);
+  void writeList(java.lang.String, java.util.Collection<?>, java.lang.String);
+  void writeListIfNotEmpty(java.lang.String, java.util.List<?>, java.lang.String);
+  com.sun.tools.classfile.Signature_attribute getSignature(com.sun.tools.classfile.Attributes);
+  java.lang.String adjustVarargs(com.sun.tools.classfile.AccessFlags, java.lang.String);
+  java.lang.String getJavaName(com.sun.tools.classfile.ClassFile);
+  java.lang.String getJavaSuperclassName(com.sun.tools.classfile.ClassFile);
+  java.lang.String getJavaInterfaceName(com.sun.tools.classfile.ClassFile, int);
+  java.lang.String getJavaFieldType(com.sun.tools.classfile.Descriptor);
+  java.lang.String getJavaReturnType(com.sun.tools.classfile.Descriptor);
+  java.lang.String getJavaParameterTypes(com.sun.tools.classfile.Descriptor, com.sun.tools.classfile.AccessFlags);
+  java.lang.String getJavaException(com.sun.tools.classfile.Exceptions_attribute, int);
+  java.lang.String getValue(com.sun.tools.classfile.Descriptor);
+  java.lang.String getFieldName(com.sun.tools.classfile.Field);
+  java.lang.String getName(com.sun.tools.classfile.Method);
+  static java.lang.String getJavaName(java.lang.String);
+  java.lang.String getSourceFile(com.sun.tools.classfile.SourceFile_attribute);
+  java.lang.String getConstantValue(com.sun.tools.classfile.Descriptor, int);
+}

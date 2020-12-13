@@ -1,0 +1,4 @@
+Compiled from "PrintJobAttributeListener.java"
+public interface javax.print.event.PrintJobAttributeListener {
+  public abstract void attributeUpdate(javax.print.event.PrintJobAttributeEvent);
+}

@@ -1,0 +1,15 @@
+Compiled from "BasicAuthentication.java"
+class sun.net.www.protocol.http.BasicAuthentication extends sun.net.www.protocol.http.AuthenticationInfo {
+  java.lang.String auth;
+  static final boolean $assertionsDisabled;
+  public sun.net.www.protocol.http.BasicAuthentication(boolean, java.lang.String, int, java.lang.String, java.net.PasswordAuthentication, java.lang.String);
+  public sun.net.www.protocol.http.BasicAuthentication(boolean, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String);
+  public sun.net.www.protocol.http.BasicAuthentication(boolean, java.net.URL, java.lang.String, java.net.PasswordAuthentication, java.lang.String);
+  public sun.net.www.protocol.http.BasicAuthentication(boolean, java.net.URL, java.lang.String, java.lang.String, java.lang.String);
+  public boolean supportsPreemptiveAuthorization();
+  public boolean setHeaders(sun.net.www.protocol.http.HttpURLConnection, sun.net.www.HeaderParser, java.lang.String);
+  public java.lang.String getHeaderValue(java.net.URL, java.lang.String);
+  public boolean isAuthorizationStale(java.lang.String);
+  static java.lang.String getRootPath(java.lang.String, java.lang.String);
+  static {};
+}

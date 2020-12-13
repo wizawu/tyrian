@@ -1,0 +1,6 @@
+Compiled from "AnnotatedConstruct.java"
+public interface javax.lang.model.AnnotatedConstruct {
+  public abstract java.util.List<? extends javax.lang.model.element.AnnotationMirror> getAnnotationMirrors();
+  public abstract <A extends java.lang.annotation.Annotation> A getAnnotation(java.lang.Class<A>);
+  public abstract <A extends java.lang.annotation.Annotation> A[] getAnnotationsByType(java.lang.Class<A>);
+}

@@ -1,0 +1,4 @@
+Compiled from "ResourceBundleProvider.java"
+public interface java.util.spi.ResourceBundleProvider {
+  public abstract java.util.ResourceBundle getBundle(java.lang.String, java.util.Locale);
+}

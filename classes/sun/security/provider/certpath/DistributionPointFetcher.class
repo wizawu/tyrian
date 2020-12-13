@@ -1,0 +1,8 @@
+Compiled from "DistributionPointFetcher.java"
+public class sun.security.provider.certpath.DistributionPointFetcher {
+  public static java.util.Collection<java.security.cert.X509CRL> getCRLs(java.security.cert.X509CRLSelector, boolean, java.security.PublicKey, java.lang.String, java.util.List<java.security.cert.CertStore>, boolean[], java.util.Set<java.security.cert.TrustAnchor>, java.util.Date, java.lang.String) throws java.security.cert.CertStoreException;
+  public static java.util.Collection<java.security.cert.X509CRL> getCRLs(java.security.cert.X509CRLSelector, boolean, java.security.PublicKey, java.lang.String, java.util.List<java.security.cert.CertStore>, boolean[], java.util.Set<java.security.cert.TrustAnchor>, java.util.Date) throws java.security.cert.CertStoreException;
+  public static java.util.Collection<java.security.cert.X509CRL> getCRLs(java.security.cert.X509CRLSelector, boolean, java.security.PublicKey, java.security.cert.X509Certificate, java.lang.String, java.util.List<java.security.cert.CertStore>, boolean[], java.util.Set<java.security.cert.TrustAnchor>, java.util.Date, java.lang.String) throws java.security.cert.CertStoreException;
+  static boolean verifyCRL(sun.security.x509.X509CertImpl, sun.security.x509.DistributionPoint, java.security.cert.X509CRL, boolean[], boolean, java.security.PublicKey, java.security.cert.X509Certificate, java.lang.String, java.util.Set<java.security.cert.TrustAnchor>, java.util.List<java.security.cert.CertStore>, java.util.Date, java.lang.String) throws java.security.cert.CRLException, java.io.IOException;
+  static {};
+}

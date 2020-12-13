@@ -1,0 +1,20 @@
+Compiled from "CommandProcessor.java"
+public class sun.jvm.hotspot.CommandProcessor {
+  volatile boolean quit;
+  static java.util.regex.Pattern historyPattern;
+  void quote(java.lang.String);
+  void dumpType(sun.jvm.hotspot.types.Type);
+  void dumpFields(sun.jvm.hotspot.types.Type);
+  void dumpFields(sun.jvm.hotspot.types.Type, boolean);
+  sun.jvm.hotspot.debugger.Address lookup(java.lang.String);
+  sun.jvm.hotspot.debugger.Address parseAddress(java.lang.String);
+  public void printPrompt();
+  public void registerCommand(java.lang.String, java.lang.String, java.lang.String);
+  public void setOutput(java.io.PrintStream);
+  public void setErr(java.io.PrintStream);
+  public sun.jvm.hotspot.CommandProcessor(sun.jvm.hotspot.CommandProcessor$DebuggerInterface, java.io.BufferedReader, java.io.PrintStream, java.io.PrintStream);
+  public void run(boolean);
+  public void executeCommand(java.lang.String, boolean);
+  void executeCommand(sun.jvm.hotspot.CommandProcessor$Tokens);
+  static {};
+}

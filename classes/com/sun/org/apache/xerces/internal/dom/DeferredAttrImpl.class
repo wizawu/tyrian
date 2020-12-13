@@ -1,0 +1,9 @@
+Compiled from "DeferredAttrImpl.java"
+public final class com.sun.org.apache.xerces.internal.dom.DeferredAttrImpl extends com.sun.org.apache.xerces.internal.dom.AttrImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
+  static final long serialVersionUID;
+  protected transient int fNodeIndex;
+  com.sun.org.apache.xerces.internal.dom.DeferredAttrImpl(com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl, int);
+  public int getNodeIndex();
+  protected void synchronizeData();
+  protected void synchronizeChildren();
+}

@@ -1,0 +1,10 @@
+Compiled from "Krb5LoginModule.java"
+public class com.sun.security.auth.module.Krb5LoginModule implements javax.security.auth.spi.LoginModule {
+  javax.security.auth.kerberos.KeyTab ktab;
+  public com.sun.security.auth.module.Krb5LoginModule();
+  public void initialize(javax.security.auth.Subject, javax.security.auth.callback.CallbackHandler, java.util.Map<java.lang.String, ?>, java.util.Map<java.lang.String, ?>);
+  public boolean login() throws javax.security.auth.login.LoginException;
+  public boolean commit() throws javax.security.auth.login.LoginException;
+  public boolean abort() throws javax.security.auth.login.LoginException;
+  public boolean logout() throws javax.security.auth.login.LoginException;
+}

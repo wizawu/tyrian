@@ -1,0 +1,24 @@
+Compiled from "Parser.java"
+public class jdk.nashorn.internal.parser.Parser extends jdk.nashorn.internal.parser.AbstractParser implements jdk.nashorn.internal.runtime.logging.Loggable {
+  protected final jdk.nashorn.internal.parser.Lexer$LineInfoReceiver lineInfoReceiver;
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.parser.Parser(jdk.nashorn.internal.runtime.ScriptEnvironment, jdk.nashorn.internal.runtime.Source, jdk.nashorn.internal.runtime.ErrorManager);
+  public jdk.nashorn.internal.parser.Parser(jdk.nashorn.internal.runtime.ScriptEnvironment, jdk.nashorn.internal.runtime.Source, jdk.nashorn.internal.runtime.ErrorManager, boolean, jdk.nashorn.internal.runtime.logging.DebugLogger);
+  public jdk.nashorn.internal.parser.Parser(jdk.nashorn.internal.runtime.ScriptEnvironment, jdk.nashorn.internal.runtime.Source, jdk.nashorn.internal.runtime.ErrorManager, boolean, int, jdk.nashorn.internal.runtime.logging.DebugLogger);
+  public jdk.nashorn.internal.runtime.logging.DebugLogger getLogger();
+  public jdk.nashorn.internal.runtime.logging.DebugLogger initLogger(jdk.nashorn.internal.runtime.Context);
+  public void setFunctionName(java.lang.String);
+  public void setReparsedFunction(jdk.nashorn.internal.runtime.RecompilableScriptFunctionData);
+  public jdk.nashorn.internal.ir.FunctionNode parse();
+  public jdk.nashorn.internal.ir.FunctionNode parse(java.lang.String, int, int, int);
+  public jdk.nashorn.internal.ir.FunctionNode parseModule(java.lang.String, int, int);
+  public jdk.nashorn.internal.ir.FunctionNode parseModule(java.lang.String);
+  public java.util.List<jdk.nashorn.internal.ir.IdentNode> parseFormalParameterList();
+  public jdk.nashorn.internal.ir.FunctionNode parseFunctionBody();
+  static boolean isArguments(jdk.nashorn.internal.ir.IdentNode);
+  jdk.nashorn.internal.ir.CallNode execString(int, long);
+  protected jdk.nashorn.internal.ir.Expression expression();
+  protected jdk.nashorn.internal.ir.Expression assignmentExpression(boolean);
+  public java.lang.String toString();
+  static {};
+}

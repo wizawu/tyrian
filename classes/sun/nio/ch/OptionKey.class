@@ -1,0 +1,6 @@
+Compiled from "OptionKey.java"
+class sun.nio.ch.OptionKey {
+  sun.nio.ch.OptionKey(int, int);
+  int level();
+  int name();
+}

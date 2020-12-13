@@ -1,0 +1,20 @@
+Compiled from "LengthNotWritableFilter.java"
+final class jdk.nashorn.internal.runtime.arrays.LengthNotWritableFilter extends jdk.nashorn.internal.runtime.arrays.ArrayFilter {
+  jdk.nashorn.internal.runtime.arrays.LengthNotWritableFilter(jdk.nashorn.internal.runtime.arrays.ArrayData);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData copy();
+  public boolean has(int);
+  public void setLength(long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData ensure(long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData slice(long, long);
+  public int getInt(int);
+  public int getIntOptimistic(int, int);
+  public double getDouble(int);
+  public double getDoubleOptimistic(int, int);
+  public java.lang.Object getObject(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, java.lang.Object, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, int, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, double, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData delete(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData delete(long, long);
+  public java.util.Iterator<java.lang.Long> indexIterator();
+}

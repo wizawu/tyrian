@@ -1,0 +1,19 @@
+Compiled from "ToXMLStream.java"
+public final class com.sun.org.apache.xml.internal.serializer.ToXMLStream extends com.sun.org.apache.xml.internal.serializer.ToStream {
+  boolean m_cdataTagOpen;
+  public com.sun.org.apache.xml.internal.serializer.ToXMLStream();
+  public void CopyFrom(com.sun.org.apache.xml.internal.serializer.ToXMLStream);
+  public void startDocumentInternal() throws org.xml.sax.SAXException;
+  public void endDocument() throws org.xml.sax.SAXException;
+  public void startPreserving() throws org.xml.sax.SAXException;
+  public void endPreserving() throws org.xml.sax.SAXException;
+  public void processingInstruction(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void entityReference(java.lang.String) throws org.xml.sax.SAXException;
+  public void addUniqueAttribute(java.lang.String, java.lang.String, int) throws org.xml.sax.SAXException;
+  public void addAttribute(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String) throws org.xml.sax.SAXException;
+  public void namespaceAfterStartElement(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  protected boolean pushNamespace(java.lang.String, java.lang.String);
+  public boolean reset();
+  static {};
+}

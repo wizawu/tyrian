@@ -1,0 +1,31 @@
+Compiled from "CharPredicates.java"
+class java.util.regex.CharPredicates {
+  java.util.regex.CharPredicates();
+  static final java.util.regex.Pattern$CharPredicate ALPHABETIC();
+  static final java.util.regex.Pattern$CharPredicate DIGIT();
+  static final java.util.regex.Pattern$CharPredicate LETTER();
+  static final java.util.regex.Pattern$CharPredicate IDEOGRAPHIC();
+  static final java.util.regex.Pattern$CharPredicate LOWERCASE();
+  static final java.util.regex.Pattern$CharPredicate UPPERCASE();
+  static final java.util.regex.Pattern$CharPredicate TITLECASE();
+  static final java.util.regex.Pattern$CharPredicate WHITE_SPACE();
+  static final java.util.regex.Pattern$CharPredicate CONTROL();
+  static final java.util.regex.Pattern$CharPredicate PUNCTUATION();
+  static final java.util.regex.Pattern$CharPredicate HEX_DIGIT();
+  static final java.util.regex.Pattern$CharPredicate ASSIGNED();
+  static final java.util.regex.Pattern$CharPredicate NONCHARACTER_CODE_POINT();
+  static final java.util.regex.Pattern$CharPredicate ALNUM();
+  static final java.util.regex.Pattern$CharPredicate BLANK();
+  static final java.util.regex.Pattern$CharPredicate GRAPH();
+  static final java.util.regex.Pattern$CharPredicate PRINT();
+  static final java.util.regex.Pattern$CharPredicate JOIN_CONTROL();
+  static final java.util.regex.Pattern$CharPredicate WORD();
+  public static java.util.regex.Pattern$CharPredicate forUnicodeProperty(java.lang.String);
+  public static java.util.regex.Pattern$CharPredicate forPOSIXName(java.lang.String);
+  static java.util.regex.Pattern$CharPredicate forUnicodeScript(java.lang.String);
+  static java.util.regex.Pattern$CharPredicate forUnicodeBlock(java.lang.String);
+  static java.util.regex.Pattern$CharPredicate forProperty(java.lang.String);
+  static final java.util.regex.Pattern$BmpCharPredicate ASCII_DIGIT();
+  static final java.util.regex.Pattern$BmpCharPredicate ASCII_WORD();
+  static final java.util.regex.Pattern$BmpCharPredicate ASCII_SPACE();
+}

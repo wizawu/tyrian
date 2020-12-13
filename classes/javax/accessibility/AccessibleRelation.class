@@ -1,0 +1,35 @@
+Compiled from "AccessibleRelation.java"
+public class javax.accessibility.AccessibleRelation extends javax.accessibility.AccessibleBundle {
+  public static final java.lang.String LABEL_FOR;
+  public static final java.lang.String LABELED_BY;
+  public static final java.lang.String MEMBER_OF;
+  public static final java.lang.String CONTROLLER_FOR;
+  public static final java.lang.String CONTROLLED_BY;
+  public static final java.lang.String FLOWS_TO;
+  public static final java.lang.String FLOWS_FROM;
+  public static final java.lang.String SUBWINDOW_OF;
+  public static final java.lang.String PARENT_WINDOW_OF;
+  public static final java.lang.String EMBEDS;
+  public static final java.lang.String EMBEDDED_BY;
+  public static final java.lang.String CHILD_NODE_OF;
+  public static final java.lang.String LABEL_FOR_PROPERTY;
+  public static final java.lang.String LABELED_BY_PROPERTY;
+  public static final java.lang.String MEMBER_OF_PROPERTY;
+  public static final java.lang.String CONTROLLER_FOR_PROPERTY;
+  public static final java.lang.String CONTROLLED_BY_PROPERTY;
+  public static final java.lang.String FLOWS_TO_PROPERTY;
+  public static final java.lang.String FLOWS_FROM_PROPERTY;
+  public static final java.lang.String SUBWINDOW_OF_PROPERTY;
+  public static final java.lang.String PARENT_WINDOW_OF_PROPERTY;
+  public static final java.lang.String EMBEDS_PROPERTY;
+  public static final java.lang.String EMBEDDED_BY_PROPERTY;
+  public static final java.lang.String CHILD_NODE_OF_PROPERTY;
+  public javax.accessibility.AccessibleRelation(java.lang.String);
+  public javax.accessibility.AccessibleRelation(java.lang.String, java.lang.Object);
+  public javax.accessibility.AccessibleRelation(java.lang.String, java.lang.Object[]);
+  public java.lang.String getKey();
+  public java.lang.Object[] getTarget();
+  public void setTarget(java.lang.Object);
+  public void setTarget(java.lang.Object[]);
+  static {};
+}

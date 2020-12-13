@@ -1,0 +1,5 @@
+Compiled from "ValueConversionException.java"
+public class jdk.internal.joptsimple.ValueConversionException extends java.lang.RuntimeException {
+  public jdk.internal.joptsimple.ValueConversionException(java.lang.String);
+  public jdk.internal.joptsimple.ValueConversionException(java.lang.String, java.lang.Throwable);
+}

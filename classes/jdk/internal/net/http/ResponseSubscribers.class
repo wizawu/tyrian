@@ -1,0 +1,7 @@
+Compiled from "ResponseSubscribers.java"
+public class jdk.internal.net.http.ResponseSubscribers {
+  public jdk.internal.net.http.ResponseSubscribers();
+  public static java.net.http.HttpResponse$BodySubscriber<java.util.stream.Stream<java.lang.String>> createLineStream();
+  public static java.net.http.HttpResponse$BodySubscriber<java.util.stream.Stream<java.lang.String>> createLineStream(java.nio.charset.Charset);
+  public static java.net.http.HttpResponse$BodySubscriber<java.util.concurrent.Flow$Publisher<java.util.List<java.nio.ByteBuffer>>> createPublisher();
+}

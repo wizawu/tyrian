@@ -1,0 +1,5 @@
+Compiled from "MonitorSettingException.java"
+public class javax.management.monitor.MonitorSettingException extends javax.management.JMRuntimeException {
+  public javax.management.monitor.MonitorSettingException();
+  public javax.management.monitor.MonitorSettingException(java.lang.String);
+}

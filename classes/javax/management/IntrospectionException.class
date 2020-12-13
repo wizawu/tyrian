@@ -1,0 +1,5 @@
+Compiled from "IntrospectionException.java"
+public class javax.management.IntrospectionException extends javax.management.OperationsException {
+  public javax.management.IntrospectionException();
+  public javax.management.IntrospectionException(java.lang.String);
+}

@@ -1,0 +1,7 @@
+Compiled from "FindOps.java"
+final class java.util.stream.FindOps {
+  public static <T> java.util.stream.TerminalOp<T, java.util.Optional<T>> makeRef(boolean);
+  public static java.util.stream.TerminalOp<java.lang.Integer, java.util.OptionalInt> makeInt(boolean);
+  public static java.util.stream.TerminalOp<java.lang.Long, java.util.OptionalLong> makeLong(boolean);
+  public static java.util.stream.TerminalOp<java.lang.Double, java.util.OptionalDouble> makeDouble(boolean);
+}

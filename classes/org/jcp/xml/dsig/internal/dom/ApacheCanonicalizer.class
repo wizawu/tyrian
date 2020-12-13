@@ -1,0 +1,17 @@
+Compiled from "ApacheCanonicalizer.java"
+public abstract class org.jcp.xml.dsig.internal.dom.ApacheCanonicalizer extends javax.xml.crypto.dsig.TransformService {
+  protected com.sun.org.apache.xml.internal.security.c14n.Canonicalizer apacheCanonicalizer;
+  protected java.lang.String inclusiveNamespaces;
+  protected javax.xml.crypto.dsig.spec.C14NMethodParameterSpec params;
+  protected org.w3c.dom.Document ownerDoc;
+  protected org.w3c.dom.Element transformElem;
+  public org.jcp.xml.dsig.internal.dom.ApacheCanonicalizer();
+  public final java.security.spec.AlgorithmParameterSpec getParameterSpec();
+  public void init(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws java.security.InvalidAlgorithmParameterException;
+  public void marshalParams(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.MarshalException;
+  public javax.xml.crypto.Data canonicalize(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.dsig.TransformException;
+  public javax.xml.crypto.Data canonicalize(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext, java.io.OutputStream) throws javax.xml.crypto.dsig.TransformException;
+  public javax.xml.crypto.Data transform(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext, java.io.OutputStream) throws javax.xml.crypto.dsig.TransformException;
+  public final boolean isFeatureSupported(java.lang.String);
+  static {};
+}

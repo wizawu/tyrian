@@ -1,0 +1,8 @@
+Compiled from "OverviewTab.java"
+class sun.tools.jconsole.OverviewTab extends sun.tools.jconsole.Tab {
+  javax.swing.JPanel gridPanel;
+  sun.tools.jconsole.TimeComboBox timeComboBox;
+  public static java.lang.String getTabName();
+  public sun.tools.jconsole.OverviewTab(sun.tools.jconsole.VMPanel);
+  public javax.swing.SwingWorker<?, ?> newSwingWorker();
+}

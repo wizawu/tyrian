@@ -1,0 +1,10 @@
+Compiled from "ArrayReference.java"
+public interface com.sun.jdi.ArrayReference extends com.sun.jdi.ObjectReference {
+  public abstract int length();
+  public abstract com.sun.jdi.Value getValue(int);
+  public abstract java.util.List<com.sun.jdi.Value> getValues();
+  public abstract java.util.List<com.sun.jdi.Value> getValues(int, int);
+  public abstract void setValue(int, com.sun.jdi.Value) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  public abstract void setValues(java.util.List<? extends com.sun.jdi.Value>) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  public abstract void setValues(int, java.util.List<? extends com.sun.jdi.Value>, int, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+}

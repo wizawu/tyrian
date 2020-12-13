@@ -1,0 +1,20 @@
+Compiled from "BuiltinClassLoader.java"
+public class jdk.internal.loader.BuiltinClassLoader extends java.security.SecureClassLoader {
+  static final boolean $assertionsDisabled;
+  jdk.internal.loader.BuiltinClassLoader(java.lang.String, jdk.internal.loader.BuiltinClassLoader, jdk.internal.loader.URLClassPath);
+  boolean hasClassPath();
+  public void loadModule(java.lang.module.ModuleReference);
+  protected java.lang.module.ModuleReference findModule(java.lang.String);
+  public java.net.URL findResource(java.lang.String, java.lang.String) throws java.io.IOException;
+  public java.io.InputStream findResourceAsStream(java.lang.String, java.lang.String) throws java.io.IOException;
+  public java.net.URL findResource(java.lang.String);
+  public java.util.Enumeration<java.net.URL> findResources(java.lang.String) throws java.io.IOException;
+  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  protected java.lang.Class<?> findClass(java.lang.String, java.lang.String);
+  protected java.lang.Class<?> loadClass(java.lang.String, boolean) throws java.lang.ClassNotFoundException;
+  protected java.lang.Class<?> loadClassOrNull(java.lang.String, boolean);
+  protected java.lang.Class<?> loadClassOrNull(java.lang.String);
+  protected java.lang.Package defineOrCheckPackage(java.lang.String, java.util.jar.Manifest, java.net.URL);
+  protected java.security.PermissionCollection getPermissions(java.security.CodeSource);
+  static {};
+}

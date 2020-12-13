@@ -1,0 +1,10 @@
+Compiled from "XPathFactoryImpl.java"
+public class com.sun.org.apache.xpath.internal.jaxp.XPathFactoryImpl extends javax.xml.xpath.XPathFactory {
+  public com.sun.org.apache.xpath.internal.jaxp.XPathFactoryImpl();
+  public boolean isObjectModelSupported(java.lang.String);
+  public javax.xml.xpath.XPath newXPath();
+  public void setFeature(java.lang.String, boolean) throws javax.xml.xpath.XPathFactoryConfigurationException;
+  public boolean getFeature(java.lang.String) throws javax.xml.xpath.XPathFactoryConfigurationException;
+  public void setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver);
+  public void setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver);
+}

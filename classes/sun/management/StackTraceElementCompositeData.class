@@ -1,0 +1,10 @@
+Compiled from "StackTraceElementCompositeData.java"
+public class sun.management.StackTraceElementCompositeData extends sun.management.LazyCompositeData {
+  public java.lang.StackTraceElement getStackTraceElement();
+  public static java.lang.StackTraceElement from(javax.management.openmbean.CompositeData);
+  public static javax.management.openmbean.CompositeData toCompositeData(java.lang.StackTraceElement);
+  protected javax.management.openmbean.CompositeData getCompositeData();
+  static javax.management.openmbean.CompositeType v5CompositeType();
+  public static void validateCompositeData(javax.management.openmbean.CompositeData);
+  static {};
+}

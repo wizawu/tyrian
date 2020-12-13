@@ -1,0 +1,5 @@
+Compiled from "Notation.java"
+public interface org.w3c.dom.Notation extends org.w3c.dom.Node {
+  public abstract java.lang.String getPublicId();
+  public abstract java.lang.String getSystemId();
+}

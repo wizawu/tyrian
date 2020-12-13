@@ -1,0 +1,10 @@
+Compiled from "UnicastServerRef2.java"
+public class sun.rmi.server.UnicastServerRef2 extends sun.rmi.server.UnicastServerRef {
+  public sun.rmi.server.UnicastServerRef2();
+  public sun.rmi.server.UnicastServerRef2(sun.rmi.transport.LiveRef);
+  public sun.rmi.server.UnicastServerRef2(sun.rmi.transport.LiveRef, java.io.ObjectInputFilter);
+  public sun.rmi.server.UnicastServerRef2(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory);
+  public sun.rmi.server.UnicastServerRef2(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory, java.io.ObjectInputFilter);
+  public java.lang.String getRefClass(java.io.ObjectOutput);
+  protected java.rmi.server.RemoteRef getClientRef();
+}

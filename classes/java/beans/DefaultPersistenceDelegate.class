@@ -1,0 +1,10 @@
+Compiled from "DefaultPersistenceDelegate.java"
+public class java.beans.DefaultPersistenceDelegate extends java.beans.PersistenceDelegate {
+  public java.beans.DefaultPersistenceDelegate();
+  public java.beans.DefaultPersistenceDelegate(java.lang.String[]);
+  protected boolean mutatesTo(java.lang.Object, java.lang.Object);
+  protected java.beans.Expression instantiate(java.lang.Object, java.beans.Encoder);
+  static void invokeStatement(java.lang.Object, java.lang.String, java.lang.Object[], java.beans.Encoder);
+  protected void initialize(java.lang.Class<?>, java.lang.Object, java.lang.Object, java.beans.Encoder);
+  static {};
+}

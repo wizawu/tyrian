@@ -1,0 +1,34 @@
+Compiled from "XPointerHandler.java"
+public final class com.sun.org.apache.xerces.internal.xpointer.XPointerHandler extends com.sun.org.apache.xerces.internal.xinclude.XIncludeHandler implements com.sun.org.apache.xerces.internal.xpointer.XPointerProcessor {
+  protected java.util.ArrayList<com.sun.org.apache.xerces.internal.xpointer.XPointerPart> fXPointerParts;
+  protected com.sun.org.apache.xerces.internal.xpointer.XPointerPart fXPointerPart;
+  protected boolean fFoundMatchingPtrPart;
+  protected com.sun.org.apache.xerces.internal.impl.XMLErrorReporter fXPointerErrorReporter;
+  protected com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler fErrorHandler;
+  protected com.sun.org.apache.xerces.internal.util.SymbolTable fSymbolTable;
+  protected boolean fIsXPointerResolved;
+  protected boolean fFixupBase;
+  protected boolean fFixupLang;
+  public com.sun.org.apache.xerces.internal.xpointer.XPointerHandler();
+  public com.sun.org.apache.xerces.internal.xpointer.XPointerHandler(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler, com.sun.org.apache.xerces.internal.impl.XMLErrorReporter);
+  public void setDocumentHandler(com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler);
+  public void parseXPointer(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public boolean resolveXPointer(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations, int) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public boolean isFragmentResolved() throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public boolean isChildFragmentResolved() throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public boolean isXPointerResolved() throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public com.sun.org.apache.xerces.internal.xpointer.XPointerPart getXPointerPart();
+  protected void initErrorReporter();
+  protected void init();
+  public java.util.ArrayList<com.sun.org.apache.xerces.internal.xpointer.XPointerPart> getPointerParts();
+  public void comment(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void processingInstruction(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void emptyElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void characters(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void ignorableWhitespace(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void setProperty(java.lang.String, java.lang.Object) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+}

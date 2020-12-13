@@ -1,0 +1,8 @@
+Compiled from "ZPageAllocator.java"
+public class sun.jvm.hotspot.gc.z.ZPageAllocator extends sun.jvm.hotspot.runtime.VMObject {
+  public long maxCapacity();
+  public long capacity();
+  public long used();
+  public sun.jvm.hotspot.gc.z.ZPageAllocator(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

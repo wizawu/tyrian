@@ -1,0 +1,16 @@
+Compiled from "MimeTypeParameterList.java"
+class java.awt.datatransfer.MimeTypeParameterList implements java.lang.Cloneable {
+  public java.awt.datatransfer.MimeTypeParameterList();
+  public java.awt.datatransfer.MimeTypeParameterList(java.lang.String) throws java.awt.datatransfer.MimeTypeParseException;
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  protected void parse(java.lang.String) throws java.awt.datatransfer.MimeTypeParseException;
+  public int size();
+  public boolean isEmpty();
+  public java.lang.String get(java.lang.String);
+  public void set(java.lang.String, java.lang.String);
+  public void remove(java.lang.String);
+  public java.util.Enumeration<java.lang.String> getNames();
+  public java.lang.String toString();
+  public java.lang.Object clone();
+}

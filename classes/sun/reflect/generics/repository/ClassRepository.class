@@ -1,0 +1,10 @@
+Compiled from "ClassRepository.java"
+public class sun.reflect.generics.repository.ClassRepository extends sun.reflect.generics.repository.GenericDeclRepository<sun.reflect.generics.tree.ClassSignature> {
+  public static final sun.reflect.generics.repository.ClassRepository NONE;
+  protected sun.reflect.generics.tree.ClassSignature parse(java.lang.String);
+  public static sun.reflect.generics.repository.ClassRepository make(java.lang.String, sun.reflect.generics.factory.GenericsFactory);
+  public java.lang.reflect.Type getSuperclass();
+  public java.lang.reflect.Type[] getSuperInterfaces();
+  protected sun.reflect.generics.tree.Tree parse(java.lang.String);
+  static {};
+}

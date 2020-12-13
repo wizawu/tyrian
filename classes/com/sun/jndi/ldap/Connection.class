@@ -1,0 +1,31 @@
+Compiled from "Connection.java"
+public final class com.sun.jndi.ldap.Connection implements java.lang.Runnable {
+  public final java.lang.String host;
+  public final int port;
+  public java.io.InputStream inStream;
+  public java.io.OutputStream outStream;
+  public java.net.Socket sock;
+  volatile java.io.IOException closureReason;
+  volatile boolean useable;
+  int readTimeout;
+  int connectTimeout;
+  final java.lang.Object startTlsLock;
+  void setV3(boolean);
+  void setBound();
+  com.sun.jndi.ldap.Connection(com.sun.jndi.ldap.LdapClient, java.lang.String, int, java.lang.String, int, int, java.io.OutputStream) throws javax.naming.NamingException;
+  synchronized int getMsgId();
+  com.sun.jndi.ldap.LdapRequest writeRequest(com.sun.jndi.ldap.BerEncoder, int) throws java.io.IOException;
+  com.sun.jndi.ldap.LdapRequest writeRequest(com.sun.jndi.ldap.BerEncoder, int, boolean) throws java.io.IOException;
+  com.sun.jndi.ldap.LdapRequest writeRequest(com.sun.jndi.ldap.BerEncoder, int, boolean, int) throws java.io.IOException;
+  com.sun.jndi.ldap.BerDecoder readReply(com.sun.jndi.ldap.LdapRequest) throws java.io.IOException, javax.naming.NamingException;
+  synchronized com.sun.jndi.ldap.LdapRequest findRequest(int);
+  synchronized void removeRequest(com.sun.jndi.ldap.LdapRequest);
+  void abandonRequest(com.sun.jndi.ldap.LdapRequest, javax.naming.ldap.Control[]);
+  synchronized void abandonOutstandingReqs(javax.naming.ldap.Control[]);
+  void cleanup(javax.naming.ldap.Control[], boolean);
+  public synchronized void replaceStreams(java.io.InputStream, java.io.OutputStream);
+  public synchronized void replaceStreams(java.io.InputStream, java.io.OutputStream, boolean);
+  public boolean isUpgradedToStartTls();
+  public void run();
+  static {};
+}

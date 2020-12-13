@@ -1,0 +1,22 @@
+Compiled from "CopyOnWriteArraySet.java"
+public class java.util.concurrent.CopyOnWriteArraySet<E> extends java.util.AbstractSet<E> implements java.io.Serializable {
+  public java.util.concurrent.CopyOnWriteArraySet();
+  public java.util.concurrent.CopyOnWriteArraySet(java.util.Collection<? extends E>);
+  public int size();
+  public boolean isEmpty();
+  public boolean contains(java.lang.Object);
+  public java.lang.Object[] toArray();
+  public <T> T[] toArray(T[]);
+  public void clear();
+  public boolean remove(java.lang.Object);
+  public boolean add(E);
+  public boolean containsAll(java.util.Collection<?>);
+  public boolean addAll(java.util.Collection<? extends E>);
+  public boolean removeAll(java.util.Collection<?>);
+  public boolean retainAll(java.util.Collection<?>);
+  public java.util.Iterator<E> iterator();
+  public boolean equals(java.lang.Object);
+  public boolean removeIf(java.util.function.Predicate<? super E>);
+  public void forEach(java.util.function.Consumer<? super E>);
+  public java.util.Spliterator<E> spliterator();
+}

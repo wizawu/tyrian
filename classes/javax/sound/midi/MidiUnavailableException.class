@@ -1,0 +1,5 @@
+Compiled from "MidiUnavailableException.java"
+public class javax.sound.midi.MidiUnavailableException extends java.lang.Exception {
+  public javax.sound.midi.MidiUnavailableException();
+  public javax.sound.midi.MidiUnavailableException(java.lang.String);
+}

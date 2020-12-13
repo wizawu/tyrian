@@ -1,0 +1,5 @@
+Compiled from "DOMImplementationSource.java"
+public interface org.w3c.dom.DOMImplementationSource {
+  public abstract org.w3c.dom.DOMImplementation getDOMImplementation(java.lang.String);
+  public abstract org.w3c.dom.DOMImplementationList getDOMImplementationList(java.lang.String);
+}

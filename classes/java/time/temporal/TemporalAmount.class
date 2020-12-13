@@ -1,0 +1,7 @@
+Compiled from "TemporalAmount.java"
+public interface java.time.temporal.TemporalAmount {
+  public abstract long get(java.time.temporal.TemporalUnit);
+  public abstract java.util.List<java.time.temporal.TemporalUnit> getUnits();
+  public abstract java.time.temporal.Temporal addTo(java.time.temporal.Temporal);
+  public abstract java.time.temporal.Temporal subtractFrom(java.time.temporal.Temporal);
+}

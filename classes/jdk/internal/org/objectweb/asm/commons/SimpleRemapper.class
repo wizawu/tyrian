@@ -1,0 +1,9 @@
+Compiled from "SimpleRemapper.java"
+public class jdk.internal.org.objectweb.asm.commons.SimpleRemapper extends jdk.internal.org.objectweb.asm.commons.Remapper {
+  public jdk.internal.org.objectweb.asm.commons.SimpleRemapper(java.util.Map<java.lang.String, java.lang.String>);
+  public jdk.internal.org.objectweb.asm.commons.SimpleRemapper(java.lang.String, java.lang.String);
+  public java.lang.String mapMethodName(java.lang.String, java.lang.String, java.lang.String);
+  public java.lang.String mapInvokeDynamicMethodName(java.lang.String, java.lang.String);
+  public java.lang.String mapFieldName(java.lang.String, java.lang.String, java.lang.String);
+  public java.lang.String map(java.lang.String);
+}

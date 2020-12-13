@@ -1,0 +1,8 @@
+Compiled from "DOMInputSource.java"
+public final class com.sun.org.apache.xerces.internal.util.DOMInputSource extends com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource {
+  public com.sun.org.apache.xerces.internal.util.DOMInputSource();
+  public com.sun.org.apache.xerces.internal.util.DOMInputSource(org.w3c.dom.Node);
+  public com.sun.org.apache.xerces.internal.util.DOMInputSource(org.w3c.dom.Node, java.lang.String);
+  public org.w3c.dom.Node getNode();
+  public void setNode(org.w3c.dom.Node);
+}

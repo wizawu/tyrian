@@ -1,0 +1,5 @@
+Compiled from "LabeledStatementTree.java"
+public interface com.sun.source.tree.LabeledStatementTree extends com.sun.source.tree.StatementTree {
+  public abstract javax.lang.model.element.Name getLabel();
+  public abstract com.sun.source.tree.StatementTree getStatement();
+}

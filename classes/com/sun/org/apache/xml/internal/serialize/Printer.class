@@ -1,0 +1,26 @@
+Compiled from "Printer.java"
+public class com.sun.org.apache.xml.internal.serialize.Printer {
+  protected final com.sun.org.apache.xml.internal.serialize.OutputFormat _format;
+  protected java.io.Writer _writer;
+  protected java.io.StringWriter _dtdWriter;
+  protected java.io.Writer _docWriter;
+  protected java.io.IOException _exception;
+  public com.sun.org.apache.xml.internal.serialize.Printer(java.io.Writer, com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public java.io.IOException getException();
+  public void enterDTD() throws java.io.IOException;
+  public java.lang.String leaveDTD() throws java.io.IOException;
+  public void printText(java.lang.String) throws java.io.IOException;
+  public void printText(java.lang.StringBuffer) throws java.io.IOException;
+  public void printText(char[], int, int) throws java.io.IOException;
+  public void printText(char) throws java.io.IOException;
+  public void printSpace() throws java.io.IOException;
+  public void breakLine() throws java.io.IOException;
+  public void breakLine(boolean) throws java.io.IOException;
+  public void flushLine(boolean) throws java.io.IOException;
+  public void flush() throws java.io.IOException;
+  public void indent();
+  public void unindent();
+  public int getNextIndent();
+  public void setNextIndent(int);
+  public void setThisIndent(int);
+}

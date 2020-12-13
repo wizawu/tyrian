@@ -1,0 +1,10 @@
+Compiled from "TimeZoneNameUtility.java"
+public final class sun.util.locale.provider.TimeZoneNameUtility {
+  public static java.lang.String[][] getZoneStrings(java.util.Locale);
+  public static java.lang.String[] retrieveDisplayNames(java.lang.String, java.util.Locale);
+  public static java.lang.String retrieveGenericDisplayName(java.lang.String, int, java.util.Locale);
+  public static java.lang.String retrieveDisplayName(java.lang.String, boolean, int, java.util.Locale);
+  public static java.util.Optional<java.lang.String> convertLDMLShortID(java.lang.String);
+  public static java.util.Optional<java.lang.String> canonicalTZID(java.lang.String);
+  static {};
+}

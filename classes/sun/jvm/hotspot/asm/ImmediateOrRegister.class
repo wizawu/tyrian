@@ -1,0 +1,4 @@
+Compiled from "ImmediateOrRegister.java"
+public abstract class sun.jvm.hotspot.asm.ImmediateOrRegister extends sun.jvm.hotspot.asm.Operand {
+  public sun.jvm.hotspot.asm.ImmediateOrRegister();
+}

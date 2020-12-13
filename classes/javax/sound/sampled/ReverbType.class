@@ -1,0 +1,13 @@
+Compiled from "ReverbType.java"
+public class javax.sound.sampled.ReverbType {
+  protected javax.sound.sampled.ReverbType(java.lang.String, int, float, int, float, int);
+  public java.lang.String getName();
+  public final int getEarlyReflectionDelay();
+  public final float getEarlyReflectionIntensity();
+  public final int getLateReflectionDelay();
+  public final float getLateReflectionIntensity();
+  public final int getDecayTime();
+  public final boolean equals(java.lang.Object);
+  public final int hashCode();
+  public final java.lang.String toString();
+}

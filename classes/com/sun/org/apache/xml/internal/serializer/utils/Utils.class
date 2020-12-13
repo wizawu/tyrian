@@ -1,0 +1,6 @@
+Compiled from "Utils.java"
+public final class com.sun.org.apache.xml.internal.serializer.utils.Utils {
+  public static final com.sun.org.apache.xml.internal.serializer.utils.Messages messages;
+  public com.sun.org.apache.xml.internal.serializer.utils.Utils();
+  static {};
+}

@@ -1,0 +1,10 @@
+Compiled from "Util.java"
+public final class sun.rmi.server.Util {
+  static final int logLevel;
+  public static final sun.rmi.runtime.Log serverRefLog;
+  public static java.rmi.Remote createProxy(java.lang.Class<?>, java.rmi.server.RemoteRef, boolean) throws java.rmi.StubNotFoundException;
+  static java.rmi.server.Skeleton createSkeleton(java.rmi.Remote) throws java.rmi.server.SkeletonNotFoundException;
+  public static long computeMethodHash(java.lang.reflect.Method);
+  public static java.lang.String getUnqualifiedName(java.lang.Class<?>);
+  static {};
+}

@@ -1,0 +1,36 @@
+Compiled from "GroupEntry.java"
+class javax.xml.catalog.GroupEntry extends javax.xml.catalog.BaseEntry {
+  static final int ATTRIBUTE_PREFER;
+  static final int ATTRIBUTE_DEFFER;
+  static final int ATTRIBUTE_RESOLUTION;
+  javax.xml.catalog.CatalogFeatures features;
+  boolean isPreferPublic;
+  javax.xml.catalog.CatalogImpl parent;
+  javax.xml.catalog.CatalogImpl catalog;
+  java.util.List<javax.xml.catalog.BaseEntry> entries;
+  java.util.Map<java.lang.String, javax.xml.catalog.CatalogImpl> delegateCatalogs;
+  java.util.Map<java.lang.String, javax.xml.catalog.CatalogImpl> loadedCatalogs;
+  java.util.List<java.lang.String> catalogsSearched;
+  boolean isInstantMatch;
+  java.lang.String rewriteMatch;
+  int longestRewriteMatch;
+  java.lang.String suffixMatch;
+  int longestSuffixMatch;
+  boolean systemEntrySearched;
+  public javax.xml.catalog.GroupEntry(javax.xml.catalog.BaseEntry$CatalogEntryType, javax.xml.catalog.CatalogImpl);
+  public javax.xml.catalog.GroupEntry(java.lang.String, java.lang.String...);
+  public void reset();
+  public javax.xml.catalog.GroupEntry(javax.xml.catalog.CatalogImpl, java.lang.String, java.lang.String...);
+  void setCatalog(javax.xml.catalog.CatalogImpl);
+  public void addEntry(javax.xml.catalog.BaseEntry);
+  public final void setPrefer(java.lang.String);
+  public boolean isPreferPublic();
+  public java.lang.String matchSystem(java.lang.String);
+  public java.lang.String matchPublic(java.lang.String);
+  public java.lang.String matchURI(java.lang.String);
+  void loadDelegateCatalogs(javax.xml.catalog.CatalogImpl);
+  javax.xml.catalog.Catalog loadDelegateCatalog(javax.xml.catalog.CatalogImpl, java.net.URI);
+  javax.xml.catalog.CatalogImpl getLoadedCatalog(java.lang.String);
+  final boolean verifyCatalogFile(javax.xml.catalog.CatalogImpl, java.net.URI);
+  boolean isCircular(javax.xml.catalog.CatalogImpl, java.lang.String);
+}

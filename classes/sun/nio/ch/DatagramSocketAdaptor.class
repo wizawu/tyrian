@@ -1,0 +1,33 @@
+Compiled from "DatagramSocketAdaptor.java"
+public class sun.nio.ch.DatagramSocketAdaptor extends java.net.DatagramSocket {
+  static final boolean $assertionsDisabled;
+  public static java.net.DatagramSocket create(sun.nio.ch.DatagramChannelImpl);
+  public void bind(java.net.SocketAddress) throws java.net.SocketException;
+  public void connect(java.net.InetAddress, int);
+  public void connect(java.net.SocketAddress) throws java.net.SocketException;
+  public void disconnect();
+  public boolean isBound();
+  public boolean isConnected();
+  public java.net.InetAddress getInetAddress();
+  public int getPort();
+  public void send(java.net.DatagramPacket) throws java.io.IOException;
+  public void receive(java.net.DatagramPacket) throws java.io.IOException;
+  public java.net.InetAddress getLocalAddress();
+  public int getLocalPort();
+  public void setSoTimeout(int) throws java.net.SocketException;
+  public int getSoTimeout() throws java.net.SocketException;
+  public void setSendBufferSize(int) throws java.net.SocketException;
+  public int getSendBufferSize() throws java.net.SocketException;
+  public void setReceiveBufferSize(int) throws java.net.SocketException;
+  public int getReceiveBufferSize() throws java.net.SocketException;
+  public void setReuseAddress(boolean) throws java.net.SocketException;
+  public boolean getReuseAddress() throws java.net.SocketException;
+  public void setBroadcast(boolean) throws java.net.SocketException;
+  public boolean getBroadcast() throws java.net.SocketException;
+  public void setTrafficClass(int) throws java.net.SocketException;
+  public int getTrafficClass() throws java.net.SocketException;
+  public void close();
+  public boolean isClosed();
+  public java.nio.channels.DatagramChannel getChannel();
+  static {};
+}

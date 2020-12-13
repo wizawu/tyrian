@@ -1,0 +1,4 @@
+Compiled from "DescriptorException.java"
+public class com.sun.tools.classfile.DescriptorException extends java.lang.Exception {
+  public com.sun.tools.classfile.DescriptorException();
+}

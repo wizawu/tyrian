@@ -1,0 +1,11 @@
+Compiled from "JavaListIterator.java"
+class jdk.nashorn.internal.runtime.arrays.JavaListIterator extends jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> {
+  protected final java.util.List<?> list;
+  protected final long length;
+  protected jdk.nashorn.internal.runtime.arrays.JavaListIterator(java.util.List<?>, boolean);
+  protected boolean indexInArray();
+  public java.lang.Object next();
+  public long getLength();
+  public boolean hasNext();
+  public void remove();
+}

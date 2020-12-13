@@ -1,0 +1,7 @@
+Compiled from "XIDGenerator.java"
+public class sun.java2d.xr.XIDGenerator {
+  int[] xidBuffer;
+  int currentIndex;
+  public sun.java2d.xr.XIDGenerator();
+  public int getNextXID();
+}

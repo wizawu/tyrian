@@ -1,0 +1,12 @@
+Compiled from "ConfigurableValidationState.java"
+public final class com.sun.org.apache.xerces.internal.impl.validation.ConfigurableValidationState extends com.sun.org.apache.xerces.internal.impl.validation.ValidationState {
+  public com.sun.org.apache.xerces.internal.impl.validation.ConfigurableValidationState();
+  public void setIdIdrefChecking(boolean);
+  public void setUnparsedEntityChecking(boolean);
+  public java.util.Iterator<java.lang.String> checkIDRefID();
+  public boolean isIdDeclared(java.lang.String);
+  public boolean isEntityDeclared(java.lang.String);
+  public boolean isEntityUnparsed(java.lang.String);
+  public void addId(java.lang.String);
+  public void addIdRef(java.lang.String);
+}

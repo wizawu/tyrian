@@ -1,0 +1,19 @@
+Compiled from "NativeSet.java"
+public class jdk.nashorn.internal.objects.NativeSet extends jdk.nashorn.internal.runtime.ScriptObject {
+  public static java.lang.Object construct(boolean, java.lang.Object, java.lang.Object);
+  public static java.lang.Object add(java.lang.Object, java.lang.Object);
+  public static boolean has(java.lang.Object, java.lang.Object);
+  public static void clear(java.lang.Object);
+  public static boolean delete(java.lang.Object, java.lang.Object);
+  public static int size(java.lang.Object);
+  public static java.lang.Object entries(java.lang.Object);
+  public static java.lang.Object keys(java.lang.Object);
+  public static java.lang.Object values(java.lang.Object);
+  public static java.lang.Object getIterator(java.lang.Object);
+  public static void forEach(java.lang.Object, java.lang.Object, java.lang.Object);
+  public java.lang.String getClassName();
+  static void populateSet(jdk.nashorn.internal.objects.LinkedMap, java.lang.Object, jdk.nashorn.internal.objects.Global);
+  jdk.nashorn.internal.objects.LinkedMap getJavaMap();
+  static {};
+  public static void $clinit$();
+}

@@ -1,0 +1,22 @@
+Compiled from "AbstractLdapNamingEnumeration.java"
+abstract class com.sun.jndi.ldap.AbstractLdapNamingEnumeration<T extends javax.naming.NameClassPair> implements javax.naming.NamingEnumeration<T>, com.sun.jndi.ldap.ReferralEnumeration<T> {
+  protected javax.naming.Name listArg;
+  protected com.sun.jndi.ldap.LdapCtx homeCtx;
+  com.sun.jndi.ldap.AbstractLdapNamingEnumeration(com.sun.jndi.ldap.LdapCtx, com.sun.jndi.ldap.LdapResult, javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  public final T nextElement();
+  public final boolean hasMoreElements();
+  public final boolean hasMore() throws javax.naming.NamingException;
+  public final T next() throws javax.naming.NamingException;
+  protected final java.lang.String getAtom(java.lang.String);
+  protected abstract T createItem(java.lang.String, javax.naming.directory.Attributes, java.util.Vector<javax.naming.ldap.Control>) throws javax.naming.NamingException;
+  public void appendUnprocessedReferrals(com.sun.jndi.ldap.LdapReferralException);
+  final void setNamingException(javax.naming.NamingException);
+  protected abstract com.sun.jndi.ldap.AbstractLdapNamingEnumeration<? extends javax.naming.NameClassPair> getReferredResults(com.sun.jndi.ldap.LdapReferralContext) throws javax.naming.NamingException;
+  protected final boolean hasMoreReferrals() throws javax.naming.NamingException;
+  protected void update(com.sun.jndi.ldap.AbstractLdapNamingEnumeration<? extends javax.naming.NameClassPair>);
+  protected final void finalize();
+  protected final void cleanup();
+  public final void close();
+  public java.lang.Object next() throws javax.naming.NamingException;
+  public java.lang.Object nextElement();
+}

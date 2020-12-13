@@ -1,0 +1,8 @@
+Compiled from "NameSpace.java"
+public class com.sun.org.apache.xml.internal.utils.NameSpace implements java.io.Serializable {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xml.internal.utils.NameSpace m_next;
+  public java.lang.String m_prefix;
+  public java.lang.String m_uri;
+  public com.sun.org.apache.xml.internal.utils.NameSpace(java.lang.String, java.lang.String);
+}

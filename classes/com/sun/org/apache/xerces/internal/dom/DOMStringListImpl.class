@@ -1,0 +1,9 @@
+Compiled from "DOMStringListImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DOMStringListImpl implements org.w3c.dom.DOMStringList {
+  public com.sun.org.apache.xerces.internal.dom.DOMStringListImpl();
+  public com.sun.org.apache.xerces.internal.dom.DOMStringListImpl(java.util.List<java.lang.String>);
+  public java.lang.String item(int);
+  public int getLength();
+  public boolean contains(java.lang.String);
+  public void add(java.lang.String);
+}

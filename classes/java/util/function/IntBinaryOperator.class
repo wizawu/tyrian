@@ -1,0 +1,4 @@
+Compiled from "IntBinaryOperator.java"
+public interface java.util.function.IntBinaryOperator {
+  public abstract int applyAsInt(int, int);
+}

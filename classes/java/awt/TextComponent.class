@@ -1,0 +1,39 @@
+Compiled from "TextComponent.java"
+public class java.awt.TextComponent extends java.awt.Component implements javax.accessibility.Accessible {
+  java.lang.String text;
+  boolean editable;
+  int selectionStart;
+  int selectionEnd;
+  boolean backgroundSetByClientCode;
+  protected transient java.awt.event.TextListener textListener;
+  java.awt.TextComponent(java.lang.String) throws java.awt.HeadlessException;
+  public void enableInputMethods(boolean);
+  boolean areInputMethodsEnabled();
+  public java.awt.im.InputMethodRequests getInputMethodRequests();
+  public void addNotify();
+  public void removeNotify();
+  public synchronized void setText(java.lang.String);
+  public synchronized java.lang.String getText();
+  public synchronized java.lang.String getSelectedText();
+  public boolean isEditable();
+  public synchronized void setEditable(boolean);
+  public java.awt.Color getBackground();
+  public void setBackground(java.awt.Color);
+  public synchronized int getSelectionStart();
+  public synchronized void setSelectionStart(int);
+  public synchronized int getSelectionEnd();
+  public synchronized void setSelectionEnd(int);
+  public synchronized void select(int, int);
+  public synchronized void selectAll();
+  public synchronized void setCaretPosition(int);
+  public synchronized int getCaretPosition();
+  public synchronized void addTextListener(java.awt.event.TextListener);
+  public synchronized void removeTextListener(java.awt.event.TextListener);
+  public synchronized java.awt.event.TextListener[] getTextListeners();
+  public <T extends java.util.EventListener> T[] getListeners(java.lang.Class<T>);
+  boolean eventEnabled(java.awt.AWTEvent);
+  protected void processEvent(java.awt.AWTEvent);
+  protected void processTextEvent(java.awt.event.TextEvent);
+  protected java.lang.String paramString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+}

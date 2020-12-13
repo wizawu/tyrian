@@ -1,0 +1,19 @@
+Compiled from "AbstractRegionPainter.java"
+public abstract class javax.swing.plaf.nimbus.AbstractRegionPainter implements javax.swing.Painter<javax.swing.JComponent> {
+  protected javax.swing.plaf.nimbus.AbstractRegionPainter();
+  public final void paint(java.awt.Graphics2D, javax.swing.JComponent, int, int);
+  protected java.lang.Object[] getExtendedCacheKeys(javax.swing.JComponent);
+  protected abstract javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext getPaintContext();
+  protected void configureGraphics(java.awt.Graphics2D);
+  protected abstract void doPaint(java.awt.Graphics2D, javax.swing.JComponent, int, int, java.lang.Object[]);
+  protected final float decodeX(float);
+  protected final float decodeY(float);
+  protected final float decodeAnchorX(float, float);
+  protected final float decodeAnchorY(float, float);
+  protected final java.awt.Color decodeColor(java.lang.String, float, float, float, int);
+  protected final java.awt.Color decodeColor(java.awt.Color, java.awt.Color, float);
+  protected final java.awt.LinearGradientPaint decodeGradient(float, float, float, float, float[], java.awt.Color[]);
+  protected final java.awt.RadialGradientPaint decodeRadialGradient(float, float, float, float[], java.awt.Color[]);
+  protected final java.awt.Color getComponentColor(javax.swing.JComponent, java.lang.String, java.awt.Color, float, float, int);
+  public void paint(java.awt.Graphics2D, java.lang.Object, int, int);
+}

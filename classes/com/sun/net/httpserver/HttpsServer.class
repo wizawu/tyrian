@@ -1,0 +1,8 @@
+Compiled from "HttpsServer.java"
+public abstract class com.sun.net.httpserver.HttpsServer extends com.sun.net.httpserver.HttpServer {
+  protected com.sun.net.httpserver.HttpsServer();
+  public static com.sun.net.httpserver.HttpsServer create() throws java.io.IOException;
+  public static com.sun.net.httpserver.HttpsServer create(java.net.InetSocketAddress, int) throws java.io.IOException;
+  public abstract void setHttpsConfigurator(com.sun.net.httpserver.HttpsConfigurator);
+  public abstract com.sun.net.httpserver.HttpsConfigurator getHttpsConfigurator();
+}

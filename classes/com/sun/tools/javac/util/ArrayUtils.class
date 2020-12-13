@@ -1,0 +1,8 @@
+Compiled from "ArrayUtils.java"
+public class com.sun.tools.javac.util.ArrayUtils {
+  public com.sun.tools.javac.util.ArrayUtils();
+  public static <T> T[] ensureCapacity(T[], int);
+  public static byte[] ensureCapacity(byte[], int);
+  public static char[] ensureCapacity(char[], int);
+  public static int[] ensureCapacity(int[], int);
+}

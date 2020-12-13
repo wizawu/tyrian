@@ -1,0 +1,31 @@
+Compiled from "OpMap.java"
+public class com.sun.org.apache.xpath.internal.compiler.OpMap {
+  protected java.lang.String m_currentPattern;
+  static final int MAXTOKENQUEUESIZE;
+  static final int BLOCKTOKENQUEUESIZE;
+  com.sun.org.apache.xml.internal.utils.ObjectVector m_tokenQueue;
+  com.sun.org.apache.xpath.internal.compiler.OpMapVector m_opMap;
+  public static final int MAPINDEX_LENGTH;
+  public com.sun.org.apache.xpath.internal.compiler.OpMap();
+  public java.lang.String toString();
+  public java.lang.String getPatternString();
+  public com.sun.org.apache.xml.internal.utils.ObjectVector getTokenQueue();
+  public java.lang.Object getToken(int);
+  public int getTokenQueueSize();
+  public com.sun.org.apache.xpath.internal.compiler.OpMapVector getOpMap();
+  void shrink();
+  public int getOp(int);
+  public void setOp(int, int);
+  public int getNextOpPos(int);
+  public int getNextStepPos(int);
+  public static int getNextOpPos(int[], int);
+  public int getFirstPredicateOpPos(int) throws javax.xml.transform.TransformerException;
+  public void error(java.lang.String, java.lang.Object[]) throws javax.xml.transform.TransformerException;
+  public static int getFirstChildPos(int);
+  public int getArgLength(int);
+  public int getArgLengthOfStep(int);
+  public static int getFirstChildPosOfStep(int);
+  public int getStepTestType(int);
+  public java.lang.String getStepNS(int);
+  public java.lang.String getStepLocalName(int);
+}

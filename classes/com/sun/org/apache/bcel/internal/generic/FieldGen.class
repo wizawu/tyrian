@@ -1,0 +1,28 @@
+Compiled from "FieldGen.java"
+public class com.sun.org.apache.bcel.internal.generic.FieldGen extends com.sun.org.apache.bcel.internal.generic.FieldGenOrMethodGen {
+  public com.sun.org.apache.bcel.internal.generic.FieldGen(int, com.sun.org.apache.bcel.internal.generic.Type, java.lang.String, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.FieldGen(com.sun.org.apache.bcel.internal.classfile.Field, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public void setInitValue(java.lang.String);
+  public void setInitValue(long);
+  public void setInitValue(int);
+  public void setInitValue(short);
+  public void setInitValue(char);
+  public void setInitValue(byte);
+  public void setInitValue(boolean);
+  public void setInitValue(float);
+  public void setInitValue(double);
+  public void cancelInitValue();
+  public com.sun.org.apache.bcel.internal.classfile.Field getField();
+  public java.lang.String getSignature();
+  public void addObserver(com.sun.org.apache.bcel.internal.generic.FieldObserver);
+  public void removeObserver(com.sun.org.apache.bcel.internal.generic.FieldObserver);
+  public void update();
+  public java.lang.String getInitValue();
+  public final java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.generic.FieldGen copy(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public static com.sun.org.apache.bcel.internal.util.BCELComparator getComparator();
+  public static void setComparator(com.sun.org.apache.bcel.internal.util.BCELComparator);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

@@ -1,0 +1,17 @@
+Compiled from "RIXMLProvider.java"
+public final class com.sun.rowset.providers.RIXMLProvider extends javax.sql.rowset.spi.SyncProvider {
+  public com.sun.rowset.providers.RIXMLProvider();
+  public java.lang.String getProviderID();
+  public void setXmlReader(javax.sql.rowset.spi.XmlReader) throws java.sql.SQLException;
+  public void setXmlWriter(javax.sql.rowset.spi.XmlWriter) throws java.sql.SQLException;
+  public javax.sql.rowset.spi.XmlReader getXmlReader() throws java.sql.SQLException;
+  public javax.sql.rowset.spi.XmlWriter getXmlWriter() throws java.sql.SQLException;
+  public int getProviderGrade();
+  public int supportsUpdatableView();
+  public int getDataSourceLock() throws javax.sql.rowset.spi.SyncProviderException;
+  public void setDataSourceLock(int) throws javax.sql.rowset.spi.SyncProviderException;
+  public javax.sql.RowSetWriter getRowSetWriter();
+  public javax.sql.RowSetReader getRowSetReader();
+  public java.lang.String getVersion();
+  public java.lang.String getVendor();
+}

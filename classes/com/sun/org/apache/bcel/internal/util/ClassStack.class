@@ -1,0 +1,8 @@
+Compiled from "ClassStack.java"
+public class com.sun.org.apache.bcel.internal.util.ClassStack {
+  public com.sun.org.apache.bcel.internal.util.ClassStack();
+  public void push(com.sun.org.apache.bcel.internal.classfile.JavaClass);
+  public com.sun.org.apache.bcel.internal.classfile.JavaClass pop();
+  public com.sun.org.apache.bcel.internal.classfile.JavaClass top();
+  public boolean empty();
+}

@@ -1,0 +1,11 @@
+Compiled from "HTMLMetaElement.java"
+public interface org.w3c.dom.html.HTMLMetaElement extends org.w3c.dom.html.HTMLElement {
+  public abstract java.lang.String getContent();
+  public abstract void setContent(java.lang.String);
+  public abstract java.lang.String getHttpEquiv();
+  public abstract void setHttpEquiv(java.lang.String);
+  public abstract java.lang.String getName();
+  public abstract void setName(java.lang.String);
+  public abstract java.lang.String getScheme();
+  public abstract void setScheme(java.lang.String);
+}

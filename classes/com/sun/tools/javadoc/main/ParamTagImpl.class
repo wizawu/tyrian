@@ -1,0 +1,11 @@
+Compiled from "ParamTagImpl.java"
+class com.sun.tools.javadoc.main.ParamTagImpl extends com.sun.tools.javadoc.main.TagImpl implements com.sun.javadoc.ParamTag {
+  com.sun.tools.javadoc.main.ParamTagImpl(com.sun.tools.javadoc.main.DocImpl, java.lang.String, java.lang.String);
+  public java.lang.String parameterName();
+  public java.lang.String parameterComment();
+  public java.lang.String kind();
+  public boolean isTypeParameter();
+  public java.lang.String toString();
+  public com.sun.javadoc.Tag[] inlineTags();
+  static {};
+}

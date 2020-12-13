@@ -1,0 +1,5 @@
+Compiled from "UnalignedAddressException.java"
+public class sun.jvm.hotspot.debugger.UnalignedAddressException extends sun.jvm.hotspot.debugger.AddressException {
+  public sun.jvm.hotspot.debugger.UnalignedAddressException(long);
+  public sun.jvm.hotspot.debugger.UnalignedAddressException(java.lang.String, long);
+}

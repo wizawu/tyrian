@@ -1,0 +1,12 @@
+Compiled from "PKCS10Attribute.java"
+public class sun.security.pkcs10.PKCS10Attribute implements sun.security.util.DerEncoder {
+  protected sun.security.util.ObjectIdentifier attributeId;
+  protected java.lang.Object attributeValue;
+  public sun.security.pkcs10.PKCS10Attribute(sun.security.util.DerValue) throws java.io.IOException;
+  public sun.security.pkcs10.PKCS10Attribute(sun.security.util.ObjectIdentifier, java.lang.Object);
+  public sun.security.pkcs10.PKCS10Attribute(sun.security.pkcs.PKCS9Attribute);
+  public void derEncode(java.io.OutputStream) throws java.io.IOException;
+  public sun.security.util.ObjectIdentifier getAttributeId();
+  public java.lang.Object getAttributeValue();
+  public java.lang.String toString();
+}

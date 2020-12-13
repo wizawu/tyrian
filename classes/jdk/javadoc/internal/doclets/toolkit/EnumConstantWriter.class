@@ -1,0 +1,11 @@
+Compiled from "EnumConstantWriter.java"
+public interface jdk.javadoc.internal.doclets.toolkit.EnumConstantWriter {
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getEnumConstantsDetailsTreeHeader(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getEnumConstantsTreeHeader(javax.lang.model.element.VariableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getSignature(javax.lang.model.element.VariableElement);
+  public abstract void addDeprecated(javax.lang.model.element.VariableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addComments(javax.lang.model.element.VariableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addTags(javax.lang.model.element.VariableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getEnumConstantsDetails(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getEnumConstants(jdk.javadoc.internal.doclets.toolkit.Content, boolean);
+}

@@ -1,0 +1,4 @@
+Compiled from "SSLKeyAgreementGenerator.java"
+interface sun.security.ssl.SSLKeyAgreementGenerator {
+  public abstract sun.security.ssl.SSLKeyDerivation createKeyDerivation(sun.security.ssl.HandshakeContext) throws java.io.IOException;
+}

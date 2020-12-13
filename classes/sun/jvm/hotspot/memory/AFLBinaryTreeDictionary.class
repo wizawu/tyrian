@@ -1,0 +1,6 @@
+Compiled from "AFLBinaryTreeDictionary.java"
+public class sun.jvm.hotspot.memory.AFLBinaryTreeDictionary extends sun.jvm.hotspot.runtime.VMObject {
+  public long size();
+  public sun.jvm.hotspot.memory.AFLBinaryTreeDictionary(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

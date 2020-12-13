@@ -1,0 +1,7 @@
+Compiled from "DTMDefaultBaseIterators.java"
+public abstract class com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators extends com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseTraversers {
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators(com.sun.org.apache.xml.internal.dtm.DTMManager, javax.xml.transform.Source, int, com.sun.org.apache.xml.internal.dtm.DTMWSFilter, com.sun.org.apache.xml.internal.utils.XMLStringFactory, boolean);
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMDefaultBaseIterators(com.sun.org.apache.xml.internal.dtm.DTMManager, javax.xml.transform.Source, int, com.sun.org.apache.xml.internal.dtm.DTMWSFilter, com.sun.org.apache.xml.internal.utils.XMLStringFactory, boolean, int, boolean, boolean);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator getTypedAxisIterator(int, int);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator getAxisIterator(int);
+}

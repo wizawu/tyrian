@@ -1,0 +1,18 @@
+Compiled from "RuleBasedCollator.java"
+public class java.text.RuleBasedCollator extends java.text.Collator {
+  static final int CHARINDEX;
+  static final int EXPANDCHARINDEX;
+  static final int CONTRACTCHARINDEX;
+  static final int UNMAPPED;
+  public java.text.RuleBasedCollator(java.lang.String) throws java.text.ParseException;
+  java.text.RuleBasedCollator(java.lang.String, int) throws java.text.ParseException;
+  public java.lang.String getRules();
+  public java.text.CollationElementIterator getCollationElementIterator(java.lang.String);
+  public java.text.CollationElementIterator getCollationElementIterator(java.text.CharacterIterator);
+  public synchronized int compare(java.lang.String, java.lang.String);
+  public synchronized java.text.CollationKey getCollationKey(java.lang.String);
+  public java.lang.Object clone();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  java.text.RBCollationTables getTables();
+}

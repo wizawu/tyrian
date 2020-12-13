@@ -1,0 +1,44 @@
+Compiled from "ChronoZonedDateTime.java"
+public interface java.time.chrono.ChronoZonedDateTime<D extends java.time.chrono.ChronoLocalDate> extends java.time.temporal.Temporal, java.lang.Comparable<java.time.chrono.ChronoZonedDateTime<?>> {
+  public static java.util.Comparator<java.time.chrono.ChronoZonedDateTime<?>> timeLineOrder();
+  public static java.time.chrono.ChronoZonedDateTime<?> from(java.time.temporal.TemporalAccessor);
+  public default java.time.temporal.ValueRange range(java.time.temporal.TemporalField);
+  public default int get(java.time.temporal.TemporalField);
+  public default long getLong(java.time.temporal.TemporalField);
+  public default D toLocalDate();
+  public default java.time.LocalTime toLocalTime();
+  public abstract java.time.chrono.ChronoLocalDateTime<D> toLocalDateTime();
+  public default java.time.chrono.Chronology getChronology();
+  public abstract java.time.ZoneOffset getOffset();
+  public abstract java.time.ZoneId getZone();
+  public abstract java.time.chrono.ChronoZonedDateTime<D> withEarlierOffsetAtOverlap();
+  public abstract java.time.chrono.ChronoZonedDateTime<D> withLaterOffsetAtOverlap();
+  public abstract java.time.chrono.ChronoZonedDateTime<D> withZoneSameLocal(java.time.ZoneId);
+  public abstract java.time.chrono.ChronoZonedDateTime<D> withZoneSameInstant(java.time.ZoneId);
+  public abstract boolean isSupported(java.time.temporal.TemporalField);
+  public default boolean isSupported(java.time.temporal.TemporalUnit);
+  public default java.time.chrono.ChronoZonedDateTime<D> with(java.time.temporal.TemporalAdjuster);
+  public abstract java.time.chrono.ChronoZonedDateTime<D> with(java.time.temporal.TemporalField, long);
+  public default java.time.chrono.ChronoZonedDateTime<D> plus(java.time.temporal.TemporalAmount);
+  public abstract java.time.chrono.ChronoZonedDateTime<D> plus(long, java.time.temporal.TemporalUnit);
+  public default java.time.chrono.ChronoZonedDateTime<D> minus(java.time.temporal.TemporalAmount);
+  public default java.time.chrono.ChronoZonedDateTime<D> minus(long, java.time.temporal.TemporalUnit);
+  public default <R> R query(java.time.temporal.TemporalQuery<R>);
+  public default java.lang.String format(java.time.format.DateTimeFormatter);
+  public default java.time.Instant toInstant();
+  public default long toEpochSecond();
+  public default int compareTo(java.time.chrono.ChronoZonedDateTime<?>);
+  public default boolean isBefore(java.time.chrono.ChronoZonedDateTime<?>);
+  public default boolean isAfter(java.time.chrono.ChronoZonedDateTime<?>);
+  public default boolean isEqual(java.time.chrono.ChronoZonedDateTime<?>);
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public abstract java.lang.String toString();
+  public default java.time.temporal.Temporal minus(long, java.time.temporal.TemporalUnit);
+  public default java.time.temporal.Temporal minus(java.time.temporal.TemporalAmount);
+  public default java.time.temporal.Temporal plus(long, java.time.temporal.TemporalUnit);
+  public default java.time.temporal.Temporal plus(java.time.temporal.TemporalAmount);
+  public default java.time.temporal.Temporal with(java.time.temporal.TemporalField, long);
+  public default java.time.temporal.Temporal with(java.time.temporal.TemporalAdjuster);
+  public default int compareTo(java.lang.Object);
+}

@@ -1,0 +1,8 @@
+Compiled from "ListResourceBundle.java"
+public abstract class java.util.ListResourceBundle extends java.util.ResourceBundle {
+  public java.util.ListResourceBundle();
+  public final java.lang.Object handleGetObject(java.lang.String);
+  public java.util.Enumeration<java.lang.String> getKeys();
+  protected java.util.Set<java.lang.String> handleKeySet();
+  protected abstract java.lang.Object[][] getContents();
+}

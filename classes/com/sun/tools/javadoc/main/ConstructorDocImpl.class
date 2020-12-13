@@ -1,0 +1,9 @@
+Compiled from "ConstructorDocImpl.java"
+public class com.sun.tools.javadoc.main.ConstructorDocImpl extends com.sun.tools.javadoc.main.ExecutableMemberDocImpl implements com.sun.javadoc.ConstructorDoc {
+  public com.sun.tools.javadoc.main.ConstructorDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$MethodSymbol);
+  public com.sun.tools.javadoc.main.ConstructorDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$MethodSymbol, com.sun.source.util.TreePath);
+  public boolean isConstructor();
+  public java.lang.String name();
+  public java.lang.String qualifiedName();
+  public java.lang.String toString();
+}

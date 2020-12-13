@@ -1,0 +1,10 @@
+Compiled from "PSVIErrorList.java"
+final class com.sun.org.apache.xerces.internal.impl.xs.PSVIErrorList extends java.util.AbstractList<java.lang.String> implements com.sun.org.apache.xerces.internal.xs.StringList {
+  public com.sun.org.apache.xerces.internal.impl.xs.PSVIErrorList(java.lang.String[], boolean);
+  public boolean contains(java.lang.String);
+  public int getLength();
+  public java.lang.String item(int);
+  public java.lang.String get(int);
+  public int size();
+  public java.lang.Object get(int);
+}

@@ -1,0 +1,14 @@
+Compiled from "AlgorithmParameterGenerator.java"
+public class java.security.AlgorithmParameterGenerator {
+  protected java.security.AlgorithmParameterGenerator(java.security.AlgorithmParameterGeneratorSpi, java.security.Provider, java.lang.String);
+  public final java.lang.String getAlgorithm();
+  public static java.security.AlgorithmParameterGenerator getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  public static java.security.AlgorithmParameterGenerator getInstance(java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  public static java.security.AlgorithmParameterGenerator getInstance(java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  public final java.security.Provider getProvider();
+  public final void init(int);
+  public final void init(int, java.security.SecureRandom);
+  public final void init(java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidAlgorithmParameterException;
+  public final void init(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
+  public final java.security.AlgorithmParameters generateParameters();
+}

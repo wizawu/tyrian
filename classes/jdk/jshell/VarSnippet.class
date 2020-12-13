@@ -1,0 +1,9 @@
+Compiled from "VarSnippet.java"
+public class jdk.jshell.VarSnippet extends jdk.jshell.DeclarationSnippet {
+  final java.lang.String typeName;
+  final java.lang.String fullTypeName;
+  final java.util.Set<java.lang.String> anonymousClasses;
+  jdk.jshell.VarSnippet(jdk.jshell.Key$VarKey, java.lang.String, jdk.jshell.Wrap, java.lang.String, jdk.jshell.Snippet$SubKind, java.lang.String, java.lang.String, java.util.Set<java.lang.String>, java.util.Collection<java.lang.String>, jdk.jshell.DiagList);
+  public java.lang.String typeName();
+  java.lang.String importLine(jdk.jshell.JShell);
+}

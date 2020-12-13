@@ -1,0 +1,28 @@
+Compiled from "OptionHelper.java"
+public abstract class com.sun.tools.sjavac.options.OptionHelper {
+  public com.sun.tools.sjavac.options.OptionHelper();
+  public abstract void reportError(java.lang.String);
+  public abstract void exclude(java.lang.String);
+  public abstract void include(java.lang.String);
+  public abstract void sourceRoots(java.util.List<java.nio.file.Path>);
+  public abstract void addTransformer(java.lang.String, com.sun.tools.sjavac.Transformer);
+  public abstract void sourcepath(java.util.List<java.nio.file.Path>);
+  public abstract void modulepath(java.util.List<java.nio.file.Path>);
+  public abstract void classpath(java.util.List<java.nio.file.Path>);
+  public abstract void numCores(int);
+  public abstract void logLevel(java.lang.String);
+  public abstract void compareFoundSources(java.nio.file.Path);
+  public abstract void permitArtifact(java.lang.String);
+  public abstract void permitUnidentifiedArtifacts();
+  public abstract void permitDefaultPackage();
+  public abstract void serverConf(java.lang.String);
+  public abstract void startServerConf(java.lang.String);
+  public abstract void javacArg(java.lang.String...);
+  public abstract void destDir(java.nio.file.Path);
+  public abstract void generatedSourcesDir(java.nio.file.Path);
+  public abstract void headerDir(java.nio.file.Path);
+  public abstract void stateDir(java.nio.file.Path);
+  public abstract void implicit(java.lang.String);
+  void traverse(java.lang.String[]);
+  public static java.lang.String unescapeCmdArg(java.lang.String);
+}

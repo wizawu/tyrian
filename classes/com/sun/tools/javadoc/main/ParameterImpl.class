@@ -1,0 +1,9 @@
+Compiled from "ParameterImpl.java"
+class com.sun.tools.javadoc.main.ParameterImpl implements com.sun.javadoc.Parameter {
+  com.sun.tools.javadoc.main.ParameterImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$VarSymbol);
+  public com.sun.javadoc.Type type();
+  public java.lang.String name();
+  public java.lang.String typeName();
+  public java.lang.String toString();
+  public com.sun.javadoc.AnnotationDesc[] annotations();
+}

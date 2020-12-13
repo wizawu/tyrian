@@ -1,0 +1,19 @@
+Compiled from "StringVector.java"
+public class com.sun.org.apache.xml.internal.utils.StringVector implements java.io.Serializable {
+  static final long serialVersionUID;
+  protected int m_blocksize;
+  protected java.lang.String[] m_map;
+  protected int m_firstFree;
+  protected int m_mapSize;
+  public com.sun.org.apache.xml.internal.utils.StringVector();
+  public com.sun.org.apache.xml.internal.utils.StringVector(int);
+  public int getLength();
+  public final int size();
+  public final void addElement(java.lang.String);
+  public final java.lang.String elementAt(int);
+  public final boolean contains(java.lang.String);
+  public final boolean containsIgnoreCase(java.lang.String);
+  public final void push(java.lang.String);
+  public final java.lang.String pop();
+  public final java.lang.String peek();
+}

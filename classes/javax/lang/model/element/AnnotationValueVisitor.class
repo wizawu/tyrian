@@ -1,0 +1,19 @@
+Compiled from "AnnotationValueVisitor.java"
+public interface javax.lang.model.element.AnnotationValueVisitor<R, P> {
+  public abstract R visit(javax.lang.model.element.AnnotationValue, P);
+  public default R visit(javax.lang.model.element.AnnotationValue);
+  public abstract R visitBoolean(boolean, P);
+  public abstract R visitByte(byte, P);
+  public abstract R visitChar(char, P);
+  public abstract R visitDouble(double, P);
+  public abstract R visitFloat(float, P);
+  public abstract R visitInt(int, P);
+  public abstract R visitLong(long, P);
+  public abstract R visitShort(short, P);
+  public abstract R visitString(java.lang.String, P);
+  public abstract R visitType(javax.lang.model.type.TypeMirror, P);
+  public abstract R visitEnumConstant(javax.lang.model.element.VariableElement, P);
+  public abstract R visitAnnotation(javax.lang.model.element.AnnotationMirror, P);
+  public abstract R visitArray(java.util.List<? extends javax.lang.model.element.AnnotationValue>, P);
+  public abstract R visitUnknown(javax.lang.model.element.AnnotationValue, P);
+}

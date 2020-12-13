@@ -1,0 +1,8 @@
+Compiled from "Logger.java"
+public final class jdk.jfr.internal.Logger {
+  public jdk.jfr.internal.Logger();
+  public static void log(jdk.jfr.internal.LogTag, jdk.jfr.internal.LogLevel, java.lang.String);
+  public static void log(jdk.jfr.internal.LogTag, jdk.jfr.internal.LogLevel, java.util.function.Supplier<java.lang.String>);
+  public static boolean shouldLog(jdk.jfr.internal.LogTag, jdk.jfr.internal.LogLevel);
+  static {};
+}

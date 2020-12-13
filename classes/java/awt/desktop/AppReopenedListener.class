@@ -1,0 +1,4 @@
+Compiled from "AppReopenedListener.java"
+public interface java.awt.desktop.AppReopenedListener extends java.awt.desktop.SystemEventListener {
+  public abstract void appReopened(java.awt.desktop.AppReopenedEvent);
+}

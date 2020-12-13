@@ -1,0 +1,3 @@
+Compiled from "ScheduledFuture.java"
+public interface java.util.concurrent.ScheduledFuture<V> extends java.util.concurrent.Delayed, java.util.concurrent.Future<V> {
+}

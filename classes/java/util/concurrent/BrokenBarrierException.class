@@ -1,0 +1,5 @@
+Compiled from "BrokenBarrierException.java"
+public class java.util.concurrent.BrokenBarrierException extends java.lang.Exception {
+  public java.util.concurrent.BrokenBarrierException();
+  public java.util.concurrent.BrokenBarrierException(java.lang.String);
+}

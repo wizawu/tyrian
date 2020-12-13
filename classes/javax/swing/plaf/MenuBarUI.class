@@ -1,0 +1,4 @@
+Compiled from "MenuBarUI.java"
+public abstract class javax.swing.plaf.MenuBarUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.MenuBarUI();
+}

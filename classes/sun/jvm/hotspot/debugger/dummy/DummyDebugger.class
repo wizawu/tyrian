@@ -1,0 +1,25 @@
+Compiled from "DummyDebugger.java"
+public class sun.jvm.hotspot.debugger.dummy.DummyDebugger extends sun.jvm.hotspot.debugger.DebuggerBase {
+  public sun.jvm.hotspot.debugger.dummy.DummyDebugger(sun.jvm.hotspot.debugger.MachineDescription);
+  public boolean hasProcessList() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public java.util.List getProcessList() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public void attach(int) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public void attach(java.lang.String, java.lang.String) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public boolean detach();
+  public sun.jvm.hotspot.debugger.Address parseAddress(java.lang.String);
+  public long getAddressValue(sun.jvm.hotspot.debugger.Address);
+  public java.lang.String getOS();
+  public java.lang.String getCPU();
+  public sun.jvm.hotspot.debugger.MachineDescription getMachineDescription() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public boolean hasConsole();
+  public java.lang.String consoleExecuteCommand(java.lang.String) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public java.lang.String getConsolePrompt() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public sun.jvm.hotspot.debugger.cdbg.CDebugger getCDebugger() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public sun.jvm.hotspot.debugger.Address lookup(java.lang.String, java.lang.String);
+  public sun.jvm.hotspot.debugger.OopHandle lookupOop(java.lang.String, java.lang.String);
+  public sun.jvm.hotspot.debugger.ThreadProxy getThreadForIdentifierAddress(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.ThreadProxy getThreadForThreadId(long);
+  public sun.jvm.hotspot.debugger.ReadResult readBytesFromProcess(long, long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public void writeBytesToProcess(long, long, byte[]) throws sun.jvm.hotspot.debugger.DebuggerException;
+  java.lang.String addressToString(sun.jvm.hotspot.debugger.dummy.DummyAddress);
+}

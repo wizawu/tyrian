@@ -1,0 +1,5 @@
+Compiled from "Unicode.java"
+abstract class sun.nio.cs.Unicode extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
+  public sun.nio.cs.Unicode(java.lang.String, java.lang.String[]);
+  public boolean contains(java.nio.charset.Charset);
+}

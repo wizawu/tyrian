@@ -1,0 +1,15 @@
+Compiled from "DelegateStrike.java"
+class sun.font.DelegateStrike extends sun.font.NativeStrike {
+  sun.font.DelegateStrike(sun.font.NativeFont, sun.font.FontStrikeDesc, sun.font.FontStrike);
+  sun.font.StrikeMetrics getFontMetrics();
+  void getGlyphImagePtrs(int[], long[], int);
+  long getGlyphImagePtr(int);
+  void getGlyphImageBounds(int, java.awt.geom.Point2D$Float, java.awt.Rectangle);
+  java.awt.geom.Point2D$Float getGlyphMetrics(int);
+  float getGlyphAdvance(int);
+  java.awt.geom.Point2D$Float getCharMetrics(char);
+  float getCodePointAdvance(int);
+  java.awt.geom.Rectangle2D$Float getGlyphOutlineBounds(int);
+  java.awt.geom.GeneralPath getGlyphOutline(int, float, float);
+  java.awt.geom.GeneralPath getGlyphVectorOutline(int[], float, float);
+}

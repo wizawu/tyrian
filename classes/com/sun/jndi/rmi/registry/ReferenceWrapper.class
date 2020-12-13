@@ -1,0 +1,6 @@
+Compiled from "ReferenceWrapper.java"
+public class com.sun.jndi.rmi.registry.ReferenceWrapper extends java.rmi.server.UnicastRemoteObject implements com.sun.jndi.rmi.registry.RemoteReference {
+  protected javax.naming.Reference wrappee;
+  public com.sun.jndi.rmi.registry.ReferenceWrapper(javax.naming.Reference) throws javax.naming.NamingException, java.rmi.RemoteException;
+  public javax.naming.Reference getReference() throws java.rmi.RemoteException;
+}

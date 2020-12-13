@@ -1,0 +1,5 @@
+Compiled from "CommunicationException.java"
+public class javax.naming.CommunicationException extends javax.naming.NamingException {
+  public javax.naming.CommunicationException(java.lang.String);
+  public javax.naming.CommunicationException();
+}

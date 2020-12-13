@@ -1,0 +1,4 @@
+Compiled from "KeyValueContent.java"
+public interface com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
+  public abstract java.security.PublicKey getPublicKey() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+}

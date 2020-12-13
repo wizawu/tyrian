@@ -1,0 +1,11 @@
+Compiled from "LayoutCharacters.java"
+public interface com.sun.tools.javac.util.LayoutCharacters {
+  public static final int TabInc;
+  public static final int DiagInc;
+  public static final int DetailsInc;
+  public static final byte TAB;
+  public static final byte LF;
+  public static final byte FF;
+  public static final byte CR;
+  public static final byte EOI;
+}

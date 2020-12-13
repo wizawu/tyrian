@@ -1,0 +1,13 @@
+Compiled from "ExecutionControl.java"
+public interface jdk.jshell.spi.ExecutionControl extends java.lang.AutoCloseable {
+  public abstract void load(jdk.jshell.spi.ExecutionControl$ClassBytecodes[]) throws jdk.jshell.spi.ExecutionControl$ClassInstallException, jdk.jshell.spi.ExecutionControl$NotImplementedException, jdk.jshell.spi.ExecutionControl$EngineTerminationException;
+  public abstract void redefine(jdk.jshell.spi.ExecutionControl$ClassBytecodes[]) throws jdk.jshell.spi.ExecutionControl$ClassInstallException, jdk.jshell.spi.ExecutionControl$NotImplementedException, jdk.jshell.spi.ExecutionControl$EngineTerminationException;
+  public abstract java.lang.String invoke(java.lang.String, java.lang.String) throws jdk.jshell.spi.ExecutionControl$RunException, jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  public abstract java.lang.String varValue(java.lang.String, java.lang.String) throws jdk.jshell.spi.ExecutionControl$RunException, jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  public abstract void addToClasspath(java.lang.String) throws jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  public abstract void stop() throws jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  public abstract java.lang.Object extensionCommand(java.lang.String, java.lang.Object) throws jdk.jshell.spi.ExecutionControl$RunException, jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  public abstract void close();
+  public static jdk.jshell.spi.ExecutionControl generate(jdk.jshell.spi.ExecutionEnv, java.lang.String, java.util.Map<java.lang.String, java.lang.String>) throws java.lang.Throwable;
+  public static jdk.jshell.spi.ExecutionControl generate(jdk.jshell.spi.ExecutionEnv, java.lang.String) throws java.lang.Throwable;
+}

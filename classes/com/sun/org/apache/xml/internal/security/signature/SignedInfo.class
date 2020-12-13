@@ -1,0 +1,20 @@
+Compiled from "SignedInfo.java"
+public class com.sun.org.apache.xml.internal.security.signature.SignedInfo extends com.sun.org.apache.xml.internal.security.signature.Manifest {
+  public com.sun.org.apache.xml.internal.security.signature.SignedInfo(org.w3c.dom.Document) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.signature.SignedInfo(org.w3c.dom.Document, java.lang.String, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.signature.SignedInfo(org.w3c.dom.Document, java.lang.String, int, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.signature.SignedInfo(org.w3c.dom.Document, org.w3c.dom.Element, org.w3c.dom.Element) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.signature.SignedInfo(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.signature.SignedInfo(org.w3c.dom.Element, java.lang.String, boolean) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public boolean verify() throws com.sun.org.apache.xml.internal.security.signature.MissingResourceFailureException, com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public boolean verify(boolean) throws com.sun.org.apache.xml.internal.security.signature.MissingResourceFailureException, com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public byte[] getCanonicalizedOctetStream() throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException, com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public void signInOctetStream(java.io.OutputStream) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException, com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.lang.String getCanonicalizationMethodURI();
+  public java.lang.String getSignatureMethodURI();
+  public org.w3c.dom.Element getSignatureMethodElement();
+  public javax.crypto.SecretKey createSecretKey(byte[]);
+  public com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm getSignatureAlgorithm();
+  public java.lang.String getBaseLocalName();
+  public java.lang.String getInclusiveNamespaces();
+}

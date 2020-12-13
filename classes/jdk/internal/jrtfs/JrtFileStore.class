@@ -1,0 +1,15 @@
+Compiled from "JrtFileStore.java"
+final class jdk.internal.jrtfs.JrtFileStore extends java.nio.file.FileStore {
+  protected final java.nio.file.FileSystem jrtfs;
+  jdk.internal.jrtfs.JrtFileStore(jdk.internal.jrtfs.JrtPath);
+  public java.lang.String name();
+  public java.lang.String type();
+  public boolean isReadOnly();
+  public boolean supportsFileAttributeView(java.lang.String);
+  public <V extends java.nio.file.attribute.FileStoreAttributeView> V getFileStoreAttributeView(java.lang.Class<V>);
+  public long getTotalSpace() throws java.io.IOException;
+  public long getUsableSpace() throws java.io.IOException;
+  public long getUnallocatedSpace() throws java.io.IOException;
+  public java.lang.Object getAttribute(java.lang.String) throws java.io.IOException;
+  public boolean supportsFileAttributeView(java.lang.Class<? extends java.nio.file.attribute.FileAttributeView>);
+}

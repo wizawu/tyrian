@@ -1,0 +1,9 @@
+Compiled from "ThreadGroupReference.java"
+public interface com.sun.jdi.ThreadGroupReference extends com.sun.jdi.ObjectReference {
+  public abstract java.lang.String name();
+  public abstract com.sun.jdi.ThreadGroupReference parent();
+  public abstract void suspend();
+  public abstract void resume();
+  public abstract java.util.List<com.sun.jdi.ThreadReference> threads();
+  public abstract java.util.List<com.sun.jdi.ThreadGroupReference> threadGroups();
+}

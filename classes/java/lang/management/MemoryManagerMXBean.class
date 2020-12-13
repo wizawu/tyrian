@@ -1,0 +1,6 @@
+Compiled from "MemoryManagerMXBean.java"
+public interface java.lang.management.MemoryManagerMXBean extends java.lang.management.PlatformManagedObject {
+  public abstract java.lang.String getName();
+  public abstract boolean isValid();
+  public abstract java.lang.String[] getMemoryPoolNames();
+}

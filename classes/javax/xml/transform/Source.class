@@ -1,0 +1,6 @@
+Compiled from "Source.java"
+public interface javax.xml.transform.Source {
+  public abstract void setSystemId(java.lang.String);
+  public abstract java.lang.String getSystemId();
+  public default boolean isEmpty();
+}

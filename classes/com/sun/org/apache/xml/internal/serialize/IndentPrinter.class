@@ -1,0 +1,20 @@
+Compiled from "IndentPrinter.java"
+public class com.sun.org.apache.xml.internal.serialize.IndentPrinter extends com.sun.org.apache.xml.internal.serialize.Printer {
+  public com.sun.org.apache.xml.internal.serialize.IndentPrinter(java.io.Writer, com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public void enterDTD();
+  public java.lang.String leaveDTD();
+  public void printText(java.lang.String);
+  public void printText(java.lang.StringBuffer);
+  public void printText(char);
+  public void printText(char[], int, int);
+  public void printSpace();
+  public void breakLine();
+  public void breakLine(boolean);
+  public void flushLine(boolean);
+  public void flush();
+  public void indent();
+  public void unindent();
+  public int getNextIndent();
+  public void setNextIndent(int);
+  public void setThisIndent(int);
+}

@@ -1,0 +1,8 @@
+Compiled from "KeyGeneratorCore.java"
+final class com.sun.crypto.provider.KeyGeneratorCore {
+  com.sun.crypto.provider.KeyGeneratorCore(java.lang.String, int);
+  void implInit(java.security.SecureRandom);
+  void implInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
+  void implInit(int, java.security.SecureRandom);
+  javax.crypto.SecretKey implGenerateKey();
+}

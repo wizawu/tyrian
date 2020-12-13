@@ -1,0 +1,8 @@
+Compiled from "ByteArrayCounterSnapshot.java"
+class sun.management.counter.perf.ByteArrayCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.ByteArrayCounter {
+  byte[] value;
+  sun.management.counter.perf.ByteArrayCounterSnapshot(java.lang.String, sun.management.counter.Units, sun.management.counter.Variability, int, int, byte[]);
+  public java.lang.Object getValue();
+  public byte[] byteArrayValue();
+  public byte byteAt(int);
+}

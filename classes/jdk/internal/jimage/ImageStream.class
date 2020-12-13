@@ -1,0 +1,34 @@
+Compiled from "ImageStream.java"
+public class jdk.internal.jimage.ImageStream {
+  public jdk.internal.jimage.ImageStream();
+  public jdk.internal.jimage.ImageStream(int);
+  public jdk.internal.jimage.ImageStream(byte[]);
+  public jdk.internal.jimage.ImageStream(java.nio.ByteOrder);
+  public jdk.internal.jimage.ImageStream(int, java.nio.ByteOrder);
+  public jdk.internal.jimage.ImageStream(byte[], java.nio.ByteOrder);
+  public jdk.internal.jimage.ImageStream(java.nio.ByteBuffer);
+  public jdk.internal.jimage.ImageStream align(int);
+  public void ensure(int);
+  public boolean hasByte();
+  public boolean hasBytes(int);
+  public void skip(int);
+  public int get();
+  public void get(byte[], int, int);
+  public int getShort();
+  public int getInt();
+  public long getLong();
+  public jdk.internal.jimage.ImageStream put(byte);
+  public jdk.internal.jimage.ImageStream put(int);
+  public jdk.internal.jimage.ImageStream put(byte[], int, int);
+  public jdk.internal.jimage.ImageStream put(jdk.internal.jimage.ImageStream);
+  public jdk.internal.jimage.ImageStream putShort(short);
+  public jdk.internal.jimage.ImageStream putShort(int);
+  public jdk.internal.jimage.ImageStream putInt(int);
+  public jdk.internal.jimage.ImageStream putLong(long);
+  public java.nio.ByteBuffer getBuffer();
+  public int getPosition();
+  public int getSize();
+  public byte[] getBytes();
+  public void setPosition(int);
+  public byte[] toArray();
+}

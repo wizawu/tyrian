@@ -1,0 +1,12 @@
+Compiled from "CharacterIteratorWrapper.java"
+class sun.text.normalizer.CharacterIteratorWrapper extends sun.text.normalizer.UCharacterIterator {
+  public sun.text.normalizer.CharacterIteratorWrapper(java.text.CharacterIterator);
+  public int current();
+  public int getLength();
+  public int getIndex();
+  public int next();
+  public int previous();
+  public void setIndex(int);
+  public int getText(char[], int);
+  public java.lang.Object clone();
+}

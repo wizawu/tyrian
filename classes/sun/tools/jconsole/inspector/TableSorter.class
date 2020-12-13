@@ -1,0 +1,17 @@
+Compiled from "TableSorter.java"
+public class sun.tools.jconsole.inspector.TableSorter extends javax.swing.table.DefaultTableModel implements java.awt.event.MouseListener {
+  public sun.tools.jconsole.inspector.TableSorter();
+  public sun.tools.jconsole.inspector.TableSorter(java.lang.Object[], int);
+  public void newDataAvailable(javax.swing.event.TableModelEvent);
+  public void addTableModelListener(javax.swing.event.TableModelListener);
+  public void removeTableModelListener(javax.swing.event.TableModelListener);
+  public void sortByColumn(int);
+  public void sortByColumn(int, boolean);
+  public int getIndexOfRow(int);
+  public void addMouseListenerToHeaderInTable(javax.swing.JTable);
+  public void mouseClicked(java.awt.event.MouseEvent);
+  public void mousePressed(java.awt.event.MouseEvent);
+  public void mouseEntered(java.awt.event.MouseEvent);
+  public void mouseExited(java.awt.event.MouseEvent);
+  public void mouseReleased(java.awt.event.MouseEvent);
+}

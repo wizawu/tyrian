@@ -1,0 +1,6 @@
+Compiled from "SAXNotRecognizedException.java"
+public class org.xml.sax.SAXNotRecognizedException extends org.xml.sax.SAXException {
+  static final long serialVersionUID;
+  public org.xml.sax.SAXNotRecognizedException();
+  public org.xml.sax.SAXNotRecognizedException(java.lang.String);
+}

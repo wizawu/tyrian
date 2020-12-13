@@ -1,0 +1,21 @@
+Compiled from "MBeanInstantiator.java"
+public class com.sun.jmx.mbeanserver.MBeanInstantiator {
+  com.sun.jmx.mbeanserver.MBeanInstantiator(com.sun.jmx.mbeanserver.ModifiableClassLoaderRepository);
+  public void testCreation(java.lang.Class<?>) throws javax.management.NotCompliantMBeanException;
+  public java.lang.Class<?> findClassWithDefaultLoaderRepository(java.lang.String) throws javax.management.ReflectionException;
+  public java.lang.Class<?> findClass(java.lang.String, java.lang.ClassLoader) throws javax.management.ReflectionException;
+  public java.lang.Class<?> findClass(java.lang.String, javax.management.ObjectName) throws javax.management.ReflectionException, javax.management.InstanceNotFoundException;
+  public java.lang.Class<?>[] findSignatureClasses(java.lang.String[], java.lang.ClassLoader) throws javax.management.ReflectionException;
+  public java.lang.Object instantiate(java.lang.Class<?>) throws javax.management.ReflectionException, javax.management.MBeanException;
+  public java.lang.Object instantiate(java.lang.Class<?>, java.lang.Object[], java.lang.String[], java.lang.ClassLoader) throws javax.management.ReflectionException, javax.management.MBeanException;
+  public java.io.ObjectInputStream deserialize(java.lang.ClassLoader, byte[]) throws javax.management.OperationsException;
+  public java.io.ObjectInputStream deserialize(java.lang.String, javax.management.ObjectName, byte[], java.lang.ClassLoader) throws javax.management.InstanceNotFoundException, javax.management.OperationsException, javax.management.ReflectionException;
+  public java.lang.Object instantiate(java.lang.String) throws javax.management.ReflectionException, javax.management.MBeanException;
+  public java.lang.Object instantiate(java.lang.String, javax.management.ObjectName, java.lang.ClassLoader) throws javax.management.ReflectionException, javax.management.MBeanException, javax.management.InstanceNotFoundException;
+  public java.lang.Object instantiate(java.lang.String, java.lang.Object[], java.lang.String[], java.lang.ClassLoader) throws javax.management.ReflectionException, javax.management.MBeanException;
+  public java.lang.Object instantiate(java.lang.String, javax.management.ObjectName, java.lang.Object[], java.lang.String[], java.lang.ClassLoader) throws javax.management.ReflectionException, javax.management.MBeanException, javax.management.InstanceNotFoundException;
+  public com.sun.jmx.mbeanserver.ModifiableClassLoaderRepository getClassLoaderRepository();
+  static java.lang.Class<?> loadClass(java.lang.String, java.lang.ClassLoader) throws javax.management.ReflectionException;
+  static java.lang.Class<?>[] loadSignatureClasses(java.lang.String[], java.lang.ClassLoader) throws javax.management.ReflectionException;
+  static {};
+}

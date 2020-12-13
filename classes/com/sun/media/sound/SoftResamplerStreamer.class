@@ -1,0 +1,4 @@
+Compiled from "SoftResamplerStreamer.java"
+public interface com.sun.media.sound.SoftResamplerStreamer extends com.sun.media.sound.ModelOscillatorStream {
+  public abstract void open(com.sun.media.sound.ModelWavetable, float) throws java.io.IOException;
+}

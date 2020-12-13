@@ -1,0 +1,28 @@
+Compiled from "Validator.java"
+public abstract class sun.security.validator.Validator {
+  static final java.security.cert.X509Certificate[] CHAIN0;
+  public static final java.lang.String TYPE_SIMPLE;
+  public static final java.lang.String TYPE_PKIX;
+  public static final java.lang.String VAR_GENERIC;
+  public static final java.lang.String VAR_CODE_SIGNING;
+  public static final java.lang.String VAR_JCE_SIGNING;
+  public static final java.lang.String VAR_TLS_CLIENT;
+  public static final java.lang.String VAR_TLS_SERVER;
+  public static final java.lang.String VAR_TSA_SERVER;
+  public static final java.lang.String VAR_PLUGIN_CODE_SIGNING;
+  final sun.security.validator.EndEntityChecker endEntityChecker;
+  final java.lang.String variant;
+  volatile java.util.Date validationDate;
+  sun.security.validator.Validator(java.lang.String, java.lang.String);
+  public static sun.security.validator.Validator getInstance(java.lang.String, java.lang.String, java.security.KeyStore);
+  public static sun.security.validator.Validator getInstance(java.lang.String, java.lang.String, java.util.Collection<java.security.cert.X509Certificate>);
+  public static sun.security.validator.Validator getInstance(java.lang.String, java.lang.String, java.security.cert.PKIXBuilderParameters);
+  public final java.security.cert.X509Certificate[] validate(java.security.cert.X509Certificate[]) throws java.security.cert.CertificateException;
+  public final java.security.cert.X509Certificate[] validate(java.security.cert.X509Certificate[], java.util.Collection<java.security.cert.X509Certificate>) throws java.security.cert.CertificateException;
+  public final java.security.cert.X509Certificate[] validate(java.security.cert.X509Certificate[], java.util.Collection<java.security.cert.X509Certificate>, java.lang.Object) throws java.security.cert.CertificateException;
+  public final java.security.cert.X509Certificate[] validate(java.security.cert.X509Certificate[], java.util.Collection<java.security.cert.X509Certificate>, java.util.List<byte[]>, java.security.AlgorithmConstraints, java.lang.Object) throws java.security.cert.CertificateException;
+  abstract java.security.cert.X509Certificate[] engineValidate(java.security.cert.X509Certificate[], java.util.Collection<java.security.cert.X509Certificate>, java.util.List<byte[]>, java.security.AlgorithmConstraints, java.lang.Object) throws java.security.cert.CertificateException;
+  public abstract java.util.Collection<java.security.cert.X509Certificate> getTrustedCertificates();
+  public void setValidationDate(java.util.Date);
+  static {};
+}

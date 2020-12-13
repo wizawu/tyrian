@@ -1,0 +1,32 @@
+Compiled from "DocLint.java"
+public class com.sun.tools.doclint.DocLint implements com.sun.source.util.Plugin {
+  public static final java.lang.String XMSGS_OPTION;
+  public static final java.lang.String XMSGS_CUSTOM_PREFIX;
+  public static final java.lang.String XIMPLICIT_HEADERS;
+  public static final java.lang.String XCUSTOM_TAGS_PREFIX;
+  public static final java.lang.String XHTML_VERSION_PREFIX;
+  public static final java.lang.String XCHECK_PACKAGE;
+  public static final java.lang.String SEPARATOR;
+  java.util.List<java.io.File> javacBootClassPath;
+  java.util.List<java.io.File> javacClassPath;
+  java.util.List<java.io.File> javacSourcePath;
+  java.util.List<java.lang.String> javacOpts;
+  java.util.List<java.io.File> javacFiles;
+  boolean needHelp;
+  com.sun.tools.doclint.Env env;
+  com.sun.tools.doclint.Checker checker;
+  public com.sun.tools.doclint.DocLint();
+  public static void main(java.lang.String...);
+  public void run(java.lang.String...) throws com.sun.tools.doclint.DocLint$BadArgs, java.io.IOException;
+  public void run(java.io.PrintWriter, java.lang.String...) throws com.sun.tools.doclint.DocLint$BadArgs, java.io.IOException;
+  void processArgs(java.lang.String...) throws com.sun.tools.doclint.DocLint$BadArgs;
+  void showHelp(java.io.PrintWriter);
+  java.util.List<java.io.File> splitPath(java.lang.String);
+  public java.lang.String getName();
+  public void init(com.sun.source.util.JavacTask, java.lang.String...);
+  public void init(com.sun.source.util.JavacTask, java.lang.String[], boolean);
+  public void scan(com.sun.source.util.TreePath);
+  public boolean shouldCheck(com.sun.source.tree.CompilationUnitTree);
+  public void reportStats(java.io.PrintWriter);
+  public static boolean isValidOption(java.lang.String);
+}

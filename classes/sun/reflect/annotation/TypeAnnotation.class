@@ -1,0 +1,10 @@
+Compiled from "TypeAnnotation.java"
+public final class sun.reflect.annotation.TypeAnnotation {
+  public sun.reflect.annotation.TypeAnnotation(sun.reflect.annotation.TypeAnnotation$TypeAnnotationTargetInfo, sun.reflect.annotation.TypeAnnotation$LocationInfo, java.lang.annotation.Annotation, java.lang.reflect.AnnotatedElement);
+  public sun.reflect.annotation.TypeAnnotation$TypeAnnotationTargetInfo getTargetInfo();
+  public java.lang.annotation.Annotation getAnnotation();
+  public java.lang.reflect.AnnotatedElement getBaseDeclaration();
+  public sun.reflect.annotation.TypeAnnotation$LocationInfo getLocationInfo();
+  public static java.util.List<sun.reflect.annotation.TypeAnnotation> filter(sun.reflect.annotation.TypeAnnotation[], sun.reflect.annotation.TypeAnnotation$TypeAnnotationTarget);
+  public java.lang.String toString();
+}

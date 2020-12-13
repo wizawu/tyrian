@@ -1,0 +1,12 @@
+Compiled from "BidiRun.java"
+class sun.text.bidi.BidiRun {
+  int start;
+  int limit;
+  int insertRemove;
+  byte level;
+  sun.text.bidi.BidiRun();
+  sun.text.bidi.BidiRun(int, int, byte);
+  void copyFrom(sun.text.bidi.BidiRun);
+  byte getEmbeddingLevel();
+  boolean isEvenRun();
+}

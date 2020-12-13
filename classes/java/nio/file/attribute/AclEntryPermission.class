@@ -1,0 +1,23 @@
+Compiled from "AclEntryPermission.java"
+public final class java.nio.file.attribute.AclEntryPermission extends java.lang.Enum<java.nio.file.attribute.AclEntryPermission> {
+  public static final java.nio.file.attribute.AclEntryPermission READ_DATA;
+  public static final java.nio.file.attribute.AclEntryPermission WRITE_DATA;
+  public static final java.nio.file.attribute.AclEntryPermission APPEND_DATA;
+  public static final java.nio.file.attribute.AclEntryPermission READ_NAMED_ATTRS;
+  public static final java.nio.file.attribute.AclEntryPermission WRITE_NAMED_ATTRS;
+  public static final java.nio.file.attribute.AclEntryPermission EXECUTE;
+  public static final java.nio.file.attribute.AclEntryPermission DELETE_CHILD;
+  public static final java.nio.file.attribute.AclEntryPermission READ_ATTRIBUTES;
+  public static final java.nio.file.attribute.AclEntryPermission WRITE_ATTRIBUTES;
+  public static final java.nio.file.attribute.AclEntryPermission DELETE;
+  public static final java.nio.file.attribute.AclEntryPermission READ_ACL;
+  public static final java.nio.file.attribute.AclEntryPermission WRITE_ACL;
+  public static final java.nio.file.attribute.AclEntryPermission WRITE_OWNER;
+  public static final java.nio.file.attribute.AclEntryPermission SYNCHRONIZE;
+  public static final java.nio.file.attribute.AclEntryPermission LIST_DIRECTORY;
+  public static final java.nio.file.attribute.AclEntryPermission ADD_FILE;
+  public static final java.nio.file.attribute.AclEntryPermission ADD_SUBDIRECTORY;
+  public static java.nio.file.attribute.AclEntryPermission[] values();
+  public static java.nio.file.attribute.AclEntryPermission valueOf(java.lang.String);
+  static {};
+}

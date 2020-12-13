@@ -1,0 +1,5 @@
+Compiled from "ClosedConnectionException.java"
+public class com.sun.jdi.connect.spi.ClosedConnectionException extends java.io.IOException {
+  public com.sun.jdi.connect.spi.ClosedConnectionException();
+  public com.sun.jdi.connect.spi.ClosedConnectionException(java.lang.String);
+}

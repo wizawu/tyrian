@@ -1,0 +1,19 @@
+Compiled from "AnnotationTypeWriter.java"
+public interface jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter {
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getHeader(java.lang.String);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getAnnotationContentHeader();
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getAnnotationInfoTreeHeader();
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getAnnotationInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addAnnotationTypeSignature(java.lang.String, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addAnnotationTypeDescription(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addAnnotationTypeTagInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addAnnotationTypeDeprecationInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMemberTreeHeader();
+  public abstract void addAnnotationContentTree(jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMemberTree(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMemberSummaryTree(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMemberDetailsTree(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void printDocument(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  public abstract javax.lang.model.element.TypeElement getAnnotationTypeElement();
+}

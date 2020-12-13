@@ -1,0 +1,17 @@
+Compiled from "HeaderParser.java"
+public class sun.net.www.HeaderParser {
+  java.lang.String raw;
+  java.lang.String[][] tab;
+  int nkeys;
+  int asize;
+  public sun.net.www.HeaderParser(java.lang.String);
+  public sun.net.www.HeaderParser subsequence(int, int);
+  public java.lang.String findKey(int);
+  public java.lang.String findValue(int);
+  public java.lang.String findValue(java.lang.String);
+  public java.lang.String findValue(java.lang.String, java.lang.String);
+  public java.util.Iterator<java.lang.String> keys();
+  public java.util.Iterator<java.lang.String> values();
+  public java.lang.String toString();
+  public int findInt(java.lang.String, int);
+}

@@ -1,0 +1,12 @@
+Compiled from "SimpleElementVisitor6.java"
+public class javax.lang.model.util.SimpleElementVisitor6<R, P> extends javax.lang.model.util.AbstractElementVisitor6<R, P> {
+  protected final R DEFAULT_VALUE;
+  protected javax.lang.model.util.SimpleElementVisitor6();
+  protected javax.lang.model.util.SimpleElementVisitor6(R);
+  protected R defaultAction(javax.lang.model.element.Element, P);
+  public R visitPackage(javax.lang.model.element.PackageElement, P);
+  public R visitType(javax.lang.model.element.TypeElement, P);
+  public R visitVariable(javax.lang.model.element.VariableElement, P);
+  public R visitExecutable(javax.lang.model.element.ExecutableElement, P);
+  public R visitTypeParameter(javax.lang.model.element.TypeParameterElement, P);
+}

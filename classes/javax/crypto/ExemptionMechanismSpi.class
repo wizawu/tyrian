@@ -1,0 +1,10 @@
+Compiled from "ExemptionMechanismSpi.java"
+public abstract class javax.crypto.ExemptionMechanismSpi {
+  public javax.crypto.ExemptionMechanismSpi();
+  protected abstract int engineGetOutputSize(int);
+  protected abstract void engineInit(java.security.Key) throws java.security.InvalidKeyException, javax.crypto.ExemptionMechanismException;
+  protected abstract void engineInit(java.security.Key, java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException, javax.crypto.ExemptionMechanismException;
+  protected abstract void engineInit(java.security.Key, java.security.AlgorithmParameters) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException, javax.crypto.ExemptionMechanismException;
+  protected abstract byte[] engineGenExemptionBlob() throws javax.crypto.ExemptionMechanismException;
+  protected abstract int engineGenExemptionBlob(byte[], int) throws javax.crypto.ShortBufferException, javax.crypto.ExemptionMechanismException;
+}

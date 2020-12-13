@@ -1,0 +1,16 @@
+Compiled from "Pair.java"
+public class jdk.internal.util.xml.impl.Pair {
+  public java.lang.String name;
+  public java.lang.String value;
+  public int num;
+  public char[] chars;
+  public int id;
+  public jdk.internal.util.xml.impl.Pair list;
+  public jdk.internal.util.xml.impl.Pair next;
+  public jdk.internal.util.xml.impl.Pair();
+  public java.lang.String qname();
+  public java.lang.String local();
+  public java.lang.String pref();
+  public boolean eqpref(char[]);
+  public boolean eqname(char[]);
+}

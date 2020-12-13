@@ -1,0 +1,16 @@
+Compiled from "DefaultMXBeanMappingFactory.java"
+public class com.sun.jmx.mbeanserver.DefaultMXBeanMappingFactory extends com.sun.jmx.mbeanserver.MXBeanMappingFactory {
+  static final boolean $assertionsDisabled;
+  public com.sun.jmx.mbeanserver.DefaultMXBeanMappingFactory();
+  static boolean isIdentity(com.sun.jmx.mbeanserver.MXBeanMapping);
+  public synchronized com.sun.jmx.mbeanserver.MXBeanMapping mappingForType(java.lang.reflect.Type, com.sun.jmx.mbeanserver.MXBeanMappingFactory) throws javax.management.openmbean.OpenDataException;
+  static java.io.InvalidObjectException invalidObjectException(java.lang.String, java.lang.Throwable);
+  static java.io.InvalidObjectException invalidObjectException(java.lang.Throwable);
+  static javax.management.openmbean.OpenDataException openDataException(java.lang.String, java.lang.Throwable);
+  static javax.management.openmbean.OpenDataException openDataException(java.lang.Throwable);
+  static void mustBeComparable(java.lang.Class<?>, java.lang.reflect.Type) throws javax.management.openmbean.OpenDataException;
+  public static java.lang.String decapitalize(java.lang.String);
+  static java.lang.String capitalize(java.lang.String);
+  public static java.lang.String propertyName(java.lang.reflect.Method);
+  static {};
+}

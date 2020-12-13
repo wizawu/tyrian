@@ -1,0 +1,5 @@
+Compiled from "Formatter.java"
+final class jdk.nashorn.api.scripting.Formatter {
+  static java.lang.String format(java.lang.String, java.lang.Object[]);
+  static {};
+}

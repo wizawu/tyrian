@@ -1,0 +1,7 @@
+Compiled from "SaslOutputStream.java"
+class com.sun.jndi.ldap.sasl.SaslOutputStream extends java.io.FilterOutputStream {
+  com.sun.jndi.ldap.sasl.SaslOutputStream(javax.security.sasl.SaslClient, java.io.OutputStream) throws javax.security.sasl.SaslException;
+  public void write(int) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

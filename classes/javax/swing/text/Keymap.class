@@ -1,0 +1,16 @@
+Compiled from "Keymap.java"
+public interface javax.swing.text.Keymap {
+  public abstract java.lang.String getName();
+  public abstract javax.swing.Action getDefaultAction();
+  public abstract void setDefaultAction(javax.swing.Action);
+  public abstract javax.swing.Action getAction(javax.swing.KeyStroke);
+  public abstract javax.swing.KeyStroke[] getBoundKeyStrokes();
+  public abstract javax.swing.Action[] getBoundActions();
+  public abstract javax.swing.KeyStroke[] getKeyStrokesForAction(javax.swing.Action);
+  public abstract boolean isLocallyDefined(javax.swing.KeyStroke);
+  public abstract void addActionForKeyStroke(javax.swing.KeyStroke, javax.swing.Action);
+  public abstract void removeKeyStrokeBinding(javax.swing.KeyStroke);
+  public abstract void removeBindings();
+  public abstract javax.swing.text.Keymap getResolveParent();
+  public abstract void setResolveParent(javax.swing.text.Keymap);
+}

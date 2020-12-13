@@ -1,0 +1,6 @@
+Compiled from "AWTEventListenerProxy.java"
+public class java.awt.event.AWTEventListenerProxy extends java.util.EventListenerProxy<java.awt.event.AWTEventListener> implements java.awt.event.AWTEventListener {
+  public java.awt.event.AWTEventListenerProxy(long, java.awt.event.AWTEventListener);
+  public void eventDispatched(java.awt.AWTEvent);
+  public long getEventMask();
+}

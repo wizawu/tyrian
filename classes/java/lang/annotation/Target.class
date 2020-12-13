@@ -1,0 +1,4 @@
+Compiled from "Target.java"
+public interface java.lang.annotation.Target extends java.lang.annotation.Annotation {
+  public abstract java.lang.annotation.ElementType[] value();
+}

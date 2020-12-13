@@ -1,0 +1,14 @@
+Compiled from "LocalVariableInstruction.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.LocalVariableInstruction extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.TypedInstruction,com.sun.org.apache.bcel.internal.generic.IndexedInstruction {
+  com.sun.org.apache.bcel.internal.generic.LocalVariableInstruction(short, short);
+  com.sun.org.apache.bcel.internal.generic.LocalVariableInstruction();
+  protected com.sun.org.apache.bcel.internal.generic.LocalVariableInstruction(short, short, int);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public java.lang.String toString(boolean);
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public final int getIndex();
+  public void setIndex(int);
+  public short getCanonicalTag();
+  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  final void setIndexOnly(int);
+}

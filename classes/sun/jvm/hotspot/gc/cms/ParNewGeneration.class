@@ -1,0 +1,5 @@
+Compiled from "ParNewGeneration.java"
+public class sun.jvm.hotspot.gc.cms.ParNewGeneration extends sun.jvm.hotspot.gc.serial.DefNewGeneration {
+  public sun.jvm.hotspot.gc.cms.ParNewGeneration(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.gc.shared.Generation$Name kind();
+}

@@ -1,0 +1,8 @@
+Compiled from "ClassLoadingMXBean.java"
+public interface java.lang.management.ClassLoadingMXBean extends java.lang.management.PlatformManagedObject {
+  public abstract long getTotalLoadedClassCount();
+  public abstract int getLoadedClassCount();
+  public abstract long getUnloadedClassCount();
+  public abstract boolean isVerbose();
+  public abstract void setVerbose(boolean);
+}

@@ -1,0 +1,18 @@
+Compiled from "EventType.java"
+public final class jdk.jfr.EventType {
+  jdk.jfr.EventType(jdk.jfr.internal.PlatformEventType);
+  public java.util.List<jdk.jfr.ValueDescriptor> getFields();
+  public jdk.jfr.ValueDescriptor getField(java.lang.String);
+  public java.lang.String getName();
+  public java.lang.String getLabel();
+  public long getId();
+  public java.util.List<jdk.jfr.AnnotationElement> getAnnotationElements();
+  public boolean isEnabled();
+  public java.lang.String getDescription();
+  public <A extends java.lang.annotation.Annotation> A getAnnotation(java.lang.Class<A>);
+  public static jdk.jfr.EventType getEventType(java.lang.Class<? extends jdk.jfr.Event>);
+  public java.util.List<jdk.jfr.SettingDescriptor> getSettingDescriptors();
+  public java.util.List<java.lang.String> getCategoryNames();
+  jdk.jfr.internal.Type getType();
+  jdk.jfr.internal.PlatformEventType getPlatformEventType();
+}

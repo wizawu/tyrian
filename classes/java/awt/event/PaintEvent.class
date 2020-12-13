@@ -1,0 +1,12 @@
+Compiled from "PaintEvent.java"
+public class java.awt.event.PaintEvent extends java.awt.event.ComponentEvent {
+  public static final int PAINT_FIRST;
+  public static final int PAINT_LAST;
+  public static final int PAINT;
+  public static final int UPDATE;
+  java.awt.Rectangle updateRect;
+  public java.awt.event.PaintEvent(java.awt.Component, int, java.awt.Rectangle);
+  public java.awt.Rectangle getUpdateRect();
+  public void setUpdateRect(java.awt.Rectangle);
+  public java.lang.String paramString();
+}

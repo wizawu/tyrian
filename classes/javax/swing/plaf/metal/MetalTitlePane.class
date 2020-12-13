@@ -1,0 +1,11 @@
+Compiled from "MetalTitlePane.java"
+class javax.swing.plaf.metal.MetalTitlePane extends javax.swing.JComponent {
+  static final boolean $assertionsDisabled;
+  public javax.swing.plaf.metal.MetalTitlePane(javax.swing.JRootPane, javax.swing.plaf.metal.MetalRootPaneUI);
+  public javax.swing.JRootPane getRootPane();
+  public void addNotify();
+  public void removeNotify();
+  protected javax.swing.JMenuBar createMenuBar();
+  public void paintComponent(java.awt.Graphics);
+  static {};
+}

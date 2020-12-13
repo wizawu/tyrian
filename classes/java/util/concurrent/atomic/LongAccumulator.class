@@ -1,0 +1,13 @@
+Compiled from "LongAccumulator.java"
+public class java.util.concurrent.atomic.LongAccumulator extends java.util.concurrent.atomic.Striped64 implements java.io.Serializable {
+  public java.util.concurrent.atomic.LongAccumulator(java.util.function.LongBinaryOperator, long);
+  public void accumulate(long);
+  public long get();
+  public void reset();
+  public long getThenReset();
+  public java.lang.String toString();
+  public long longValue();
+  public int intValue();
+  public float floatValue();
+  public double doubleValue();
+}

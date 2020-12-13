@@ -1,0 +1,6 @@
+Compiled from "BasicPointerType.java"
+public class sun.jvm.hotspot.types.basic.BasicPointerType extends sun.jvm.hotspot.types.basic.BasicType implements sun.jvm.hotspot.types.PointerType {
+  public sun.jvm.hotspot.types.basic.BasicPointerType(sun.jvm.hotspot.types.basic.BasicTypeDataBase, java.lang.String, sun.jvm.hotspot.types.Type);
+  public boolean isPointerType();
+  public sun.jvm.hotspot.types.Type getTargetType();
+}

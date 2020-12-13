@@ -1,0 +1,9 @@
+Compiled from "Handler.java"
+public class sun.net.www.protocol.jar.Handler extends java.net.URLStreamHandler {
+  public sun.net.www.protocol.jar.Handler();
+  protected java.net.URLConnection openConnection(java.net.URL) throws java.io.IOException;
+  protected boolean sameFile(java.net.URL, java.net.URL);
+  protected int hashCode(java.net.URL);
+  public java.lang.String checkNestedProtocol(java.lang.String);
+  protected void parseURL(java.net.URL, java.lang.String, int, int);
+}

@@ -1,0 +1,13 @@
+Compiled from "TimerQueue.java"
+class javax.swing.TimerQueue implements java.lang.Runnable {
+  static final boolean $assertionsDisabled;
+  public javax.swing.TimerQueue();
+  public static javax.swing.TimerQueue sharedInstance();
+  void startIfNeeded();
+  void addTimer(javax.swing.Timer, long);
+  void removeTimer(javax.swing.Timer);
+  boolean containsTimer(javax.swing.Timer);
+  public void run();
+  public java.lang.String toString();
+  static {};
+}

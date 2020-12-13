@@ -1,0 +1,13 @@
+Compiled from "SPARCArgument.java"
+public class sun.jvm.hotspot.asm.sparc.SPARCArgument {
+  public static final int NUM_REGISTER_PARAMETERS;
+  public sun.jvm.hotspot.asm.sparc.SPARCArgument(int, boolean);
+  int getNumber();
+  boolean getIsIn();
+  boolean getIsOut();
+  public sun.jvm.hotspot.asm.sparc.SPARCArgument getSuccessor();
+  public sun.jvm.hotspot.asm.sparc.SPARCArgument asIn();
+  public sun.jvm.hotspot.asm.sparc.SPARCArgument asOut();
+  public boolean isRegister();
+  public sun.jvm.hotspot.asm.sparc.SPARCRegister asRegister();
+}

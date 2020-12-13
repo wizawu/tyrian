@@ -1,0 +1,17 @@
+Compiled from "PhysicalFont.java"
+public abstract class sun.font.PhysicalFont extends sun.font.Font2D {
+  protected java.lang.String platName;
+  protected java.lang.Object nativeNames;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  sun.font.PhysicalFont(java.lang.String, java.lang.Object) throws java.awt.FontFormatException;
+  protected sun.font.PhysicalFont();
+  java.awt.geom.Point2D$Float getGlyphPoint(long, int, int);
+  abstract sun.font.StrikeMetrics getFontMetrics(long);
+  abstract float getGlyphAdvance(long, int);
+  abstract void getGlyphMetrics(long, int, java.awt.geom.Point2D$Float);
+  abstract long getGlyphImage(long, int);
+  abstract java.awt.geom.Rectangle2D$Float getGlyphOutlineBounds(long, int);
+  abstract java.awt.geom.GeneralPath getGlyphOutline(long, int, float, float);
+  abstract java.awt.geom.GeneralPath getGlyphVectorOutline(long, int[], int, float, float);
+}

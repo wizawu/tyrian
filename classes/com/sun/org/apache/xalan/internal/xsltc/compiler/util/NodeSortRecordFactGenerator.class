@@ -1,0 +1,5 @@
+Compiled from "NodeSortRecordFactGenerator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.NodeSortRecordFactGenerator extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.NodeSortRecordFactGenerator(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String[], com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet);
+  public boolean isExternal();
+}

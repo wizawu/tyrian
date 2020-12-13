@@ -1,0 +1,18 @@
+Compiled from "BasicTypeSize.java"
+public class sun.jvm.hotspot.runtime.BasicTypeSize {
+  public sun.jvm.hotspot.runtime.BasicTypeSize();
+  public static int getTBooleanSize();
+  public static int getTCharSize();
+  public static int getTFloatSize();
+  public static int getTDoubleSize();
+  public static int getTByteSize();
+  public static int getTShortSize();
+  public static int getTIntSize();
+  public static int getTLongSize();
+  public static int getTObjectSize();
+  public static int getTArraySize();
+  public static int getTNarrowOopSize();
+  public static int getTNarrowKlassSize();
+  public static int getTVoidSize();
+  static {};
+}

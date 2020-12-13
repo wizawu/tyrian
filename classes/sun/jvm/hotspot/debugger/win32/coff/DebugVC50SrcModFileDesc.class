@@ -1,0 +1,8 @@
+Compiled from "DebugVC50SrcModFileDesc.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SrcModFileDesc {
+  public abstract int getNumCodeSegments();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugVC50SrcModLineNumberMap getLineNumberMap(int);
+  public abstract int getSegmentStartOffset(int);
+  public abstract int getSegmentEndOffset(int);
+  public abstract java.lang.String getSourceFileName();
+}

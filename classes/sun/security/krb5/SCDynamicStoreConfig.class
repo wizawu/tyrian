@@ -1,0 +1,6 @@
+Compiled from "SCDynamicStoreConfig.java"
+public class sun.security.krb5.SCDynamicStoreConfig {
+  public sun.security.krb5.SCDynamicStoreConfig();
+  public static java.util.Hashtable<java.lang.String, java.lang.Object> getConfig() throws java.io.IOException;
+  static {};
+}

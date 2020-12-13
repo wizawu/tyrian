@@ -1,0 +1,5 @@
+Compiled from "SheetDialog.java"
+public final class sun.tools.jconsole.SheetDialog {
+  static javax.swing.JOptionPane showOptionDialog(sun.tools.jconsole.VMPanel, java.lang.Object, int, int, javax.swing.Icon, java.lang.Object[], java.lang.Object);
+  static {};
+}

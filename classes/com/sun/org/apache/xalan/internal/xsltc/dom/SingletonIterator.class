@@ -1,0 +1,11 @@
+Compiled from "SingletonIterator.java"
+public class com.sun.org.apache.xalan.internal.xsltc.dom.SingletonIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIteratorBase {
+  public com.sun.org.apache.xalan.internal.xsltc.dom.SingletonIterator();
+  public com.sun.org.apache.xalan.internal.xsltc.dom.SingletonIterator(int);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.SingletonIterator(int, boolean);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator setStartNode(int);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator reset();
+  public int next();
+  public void setMark();
+  public void gotoMark();
+}

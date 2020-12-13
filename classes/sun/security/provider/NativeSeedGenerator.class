@@ -1,0 +1,4 @@
+Compiled from "NativeSeedGenerator.java"
+class sun.security.provider.NativeSeedGenerator extends sun.security.provider.SeedGenerator$URLSeedGenerator {
+  sun.security.provider.NativeSeedGenerator(java.lang.String) throws java.io.IOException;
+}

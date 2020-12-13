@@ -1,0 +1,13 @@
+Compiled from "FunctionSignature.java"
+public final class jdk.nashorn.internal.codegen.FunctionSignature {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.codegen.FunctionSignature(boolean, boolean, jdk.nashorn.internal.codegen.types.Type, java.util.List<? extends jdk.nashorn.internal.ir.Expression>);
+  public jdk.nashorn.internal.codegen.FunctionSignature(boolean, boolean, jdk.nashorn.internal.codegen.types.Type, int);
+  public jdk.nashorn.internal.codegen.FunctionSignature(jdk.nashorn.internal.ir.FunctionNode);
+  public java.lang.String toString();
+  public int size();
+  public jdk.nashorn.internal.codegen.types.Type[] getParamTypes();
+  public java.lang.invoke.MethodType getMethodType();
+  public jdk.nashorn.internal.codegen.types.Type getReturnType();
+  static {};
+}

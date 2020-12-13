@@ -1,0 +1,26 @@
+Compiled from "InputMethodContext.java"
+public class sun.awt.im.InputMethodContext extends sun.awt.im.InputContext implements java.awt.im.spi.InputMethodContext {
+  public sun.awt.im.InputMethodContext();
+  void setInputMethodSupportsBelowTheSpot(boolean);
+  boolean useBelowTheSpotInput();
+  public void dispatchInputMethodEvent(int, java.text.AttributedCharacterIterator, int, java.awt.font.TextHitInfo, java.awt.font.TextHitInfo);
+  synchronized void dispatchCommittedText(java.awt.Component, java.text.AttributedCharacterIterator, int);
+  public void dispatchEvent(java.awt.AWTEvent);
+  void grabCompositionArea(boolean);
+  void releaseCompositionArea();
+  boolean isCompositionAreaVisible();
+  void setCompositionAreaVisible(boolean);
+  public java.awt.Rectangle getTextLocation(java.awt.font.TextHitInfo);
+  public java.awt.font.TextHitInfo getLocationOffset(int, int);
+  public int getInsertPositionOffset();
+  public java.text.AttributedCharacterIterator getCommittedText(int, int, java.text.AttributedCharacterIterator$Attribute[]);
+  public int getCommittedTextLength();
+  public java.text.AttributedCharacterIterator cancelLatestCommittedText(java.text.AttributedCharacterIterator$Attribute[]);
+  public java.text.AttributedCharacterIterator getSelectedText(java.text.AttributedCharacterIterator$Attribute[]);
+  public java.awt.Window createInputMethodWindow(java.lang.String, boolean);
+  public javax.swing.JFrame createInputMethodJFrame(java.lang.String, boolean);
+  static java.awt.Window createInputMethodWindow(java.lang.String, sun.awt.im.InputContext, boolean);
+  public void enableClientWindowNotification(java.awt.im.spi.InputMethod, boolean);
+  void setCompositionAreaUndecorated(boolean);
+  static {};
+}

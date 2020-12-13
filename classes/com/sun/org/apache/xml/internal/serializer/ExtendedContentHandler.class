@@ -1,0 +1,25 @@
+Compiled from "ExtendedContentHandler.java"
+interface com.sun.org.apache.xml.internal.serializer.ExtendedContentHandler extends org.xml.sax.ContentHandler {
+  public static final int NO_BAD_CHARS;
+  public static final int HTML_ATTREMPTY;
+  public static final int HTML_ATTRURL;
+  public abstract void addAttribute(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean) throws org.xml.sax.SAXException;
+  public abstract void addAttributes(org.xml.sax.Attributes) throws org.xml.sax.SAXException;
+  public abstract void addAttribute(java.lang.String, java.lang.String);
+  public abstract void characters(java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void characters(org.w3c.dom.Node) throws org.xml.sax.SAXException;
+  public abstract void endElement(java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void startElement(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void startElement(java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void namespaceAfterStartElement(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public abstract boolean startPrefixMapping(java.lang.String, java.lang.String, boolean) throws org.xml.sax.SAXException;
+  public abstract void entityReference(java.lang.String) throws org.xml.sax.SAXException;
+  public abstract com.sun.org.apache.xml.internal.serializer.NamespaceMappings getNamespaceMappings();
+  public abstract java.lang.String getPrefix(java.lang.String);
+  public abstract java.lang.String getNamespaceURI(java.lang.String, boolean);
+  public abstract java.lang.String getNamespaceURIFromPrefix(java.lang.String);
+  public abstract void setSourceLocator(javax.xml.transform.SourceLocator);
+  public abstract void addUniqueAttribute(java.lang.String, java.lang.String, int) throws org.xml.sax.SAXException;
+  public abstract void addXSLAttribute(java.lang.String, java.lang.String, java.lang.String);
+  public abstract void addAttribute(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+}

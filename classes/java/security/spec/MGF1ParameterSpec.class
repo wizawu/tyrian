@@ -1,0 +1,13 @@
+Compiled from "MGF1ParameterSpec.java"
+public class java.security.spec.MGF1ParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public static final java.security.spec.MGF1ParameterSpec SHA1;
+  public static final java.security.spec.MGF1ParameterSpec SHA224;
+  public static final java.security.spec.MGF1ParameterSpec SHA256;
+  public static final java.security.spec.MGF1ParameterSpec SHA384;
+  public static final java.security.spec.MGF1ParameterSpec SHA512;
+  public static final java.security.spec.MGF1ParameterSpec SHA512_224;
+  public static final java.security.spec.MGF1ParameterSpec SHA512_256;
+  public java.security.spec.MGF1ParameterSpec(java.lang.String);
+  public java.lang.String getDigestAlgorithm();
+  static {};
+}

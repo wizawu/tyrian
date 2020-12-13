@@ -1,0 +1,6 @@
+Compiled from "CausedFocusEvent.java"
+class sun.awt.CausedFocusEvent extends java.awt.event.FocusEvent {
+  java.lang.Object readResolve() throws java.io.ObjectStreamException;
+  static boolean access$000(sun.awt.CausedFocusEvent);
+  static {};
+}

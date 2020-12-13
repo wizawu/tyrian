@@ -1,0 +1,35 @@
+Compiled from "TIFFTag.java"
+public class javax.imageio.plugins.tiff.TIFFTag {
+  public static final int TIFF_BYTE;
+  public static final int TIFF_ASCII;
+  public static final int TIFF_SHORT;
+  public static final int TIFF_LONG;
+  public static final int TIFF_RATIONAL;
+  public static final int TIFF_SBYTE;
+  public static final int TIFF_UNDEFINED;
+  public static final int TIFF_SSHORT;
+  public static final int TIFF_SLONG;
+  public static final int TIFF_SRATIONAL;
+  public static final int TIFF_FLOAT;
+  public static final int TIFF_DOUBLE;
+  public static final int TIFF_IFD_POINTER;
+  public static final int MIN_DATATYPE;
+  public static final int MAX_DATATYPE;
+  public static final java.lang.String UNKNOWN_TAG_NAME;
+  public javax.imageio.plugins.tiff.TIFFTag(java.lang.String, int, int, int);
+  public javax.imageio.plugins.tiff.TIFFTag(java.lang.String, int, javax.imageio.plugins.tiff.TIFFTagSet);
+  public javax.imageio.plugins.tiff.TIFFTag(java.lang.String, int, int);
+  public static int getSizeOfType(int);
+  public java.lang.String getName();
+  public int getNumber();
+  public int getDataTypes();
+  public int getCount();
+  public boolean isDataTypeOK(int);
+  public javax.imageio.plugins.tiff.TIFFTagSet getTagSet();
+  public boolean isIFDPointer();
+  public boolean hasValueNames();
+  protected void addValueName(int, java.lang.String);
+  public java.lang.String getValueName(int);
+  public int[] getNamedValues();
+  static {};
+}

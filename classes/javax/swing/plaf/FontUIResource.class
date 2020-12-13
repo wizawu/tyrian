@@ -1,0 +1,5 @@
+Compiled from "FontUIResource.java"
+public class javax.swing.plaf.FontUIResource extends java.awt.Font implements javax.swing.plaf.UIResource {
+  public javax.swing.plaf.FontUIResource(java.lang.String, int, int);
+  public javax.swing.plaf.FontUIResource(java.awt.Font);
+}

@@ -1,0 +1,5 @@
+Compiled from "ErrorMessages_ko.java"
+public class com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMessages_ko extends java.util.ListResourceBundle {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMessages_ko();
+  public java.lang.Object[][] getContents();
+}

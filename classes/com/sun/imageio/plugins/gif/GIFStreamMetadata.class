@@ -1,0 +1,31 @@
+Compiled from "GIFStreamMetadata.java"
+public class com.sun.imageio.plugins.gif.GIFStreamMetadata extends com.sun.imageio.plugins.gif.GIFMetadata {
+  static final java.lang.String nativeMetadataFormatName;
+  static final java.lang.String[] versionStrings;
+  public java.lang.String version;
+  public int logicalScreenWidth;
+  public int logicalScreenHeight;
+  public int colorResolution;
+  public int pixelAspectRatio;
+  public int backgroundColorIndex;
+  public boolean sortFlag;
+  static final java.lang.String[] colorTableSizes;
+  public byte[] globalColorTable;
+  protected com.sun.imageio.plugins.gif.GIFStreamMetadata(boolean, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[]);
+  public com.sun.imageio.plugins.gif.GIFStreamMetadata();
+  public boolean isReadOnly();
+  public org.w3c.dom.Node getAsTree(java.lang.String);
+  public javax.imageio.metadata.IIOMetadataNode getStandardChromaNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardCompressionNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardDataNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardDimensionNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardDocumentNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardTextNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardTransparencyNode();
+  public void setFromTree(java.lang.String, org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected void mergeNativeTree(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected void mergeStandardTree(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  public void reset();
+  public void mergeTree(java.lang.String, org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  static {};
+}

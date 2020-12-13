@@ -1,0 +1,4 @@
+Compiled from "Reflect.java"
+class sun.nio.fs.Reflect {
+  static java.lang.reflect.Field lookupField(java.lang.String, java.lang.String);
+}

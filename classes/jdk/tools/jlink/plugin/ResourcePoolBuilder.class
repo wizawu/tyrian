@@ -1,0 +1,5 @@
+Compiled from "ResourcePoolBuilder.java"
+public interface jdk.tools.jlink.plugin.ResourcePoolBuilder {
+  public abstract void add(jdk.tools.jlink.plugin.ResourcePoolEntry);
+  public abstract jdk.tools.jlink.plugin.ResourcePool build();
+}

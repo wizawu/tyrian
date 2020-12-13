@@ -1,0 +1,5 @@
+Compiled from "VoidValue.java"
+public interface com.sun.jdi.VoidValue extends com.sun.jdi.Value {
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+}

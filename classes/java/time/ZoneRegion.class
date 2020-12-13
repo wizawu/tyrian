@@ -1,0 +1,10 @@
+Compiled from "ZoneRegion.java"
+final class java.time.ZoneRegion extends java.time.ZoneId implements java.io.Serializable {
+  static java.time.ZoneRegion ofId(java.lang.String, boolean);
+  java.time.ZoneRegion(java.lang.String, java.time.zone.ZoneRules);
+  public java.lang.String getId();
+  public java.time.zone.ZoneRules getRules();
+  void write(java.io.DataOutput) throws java.io.IOException;
+  void writeExternal(java.io.DataOutput) throws java.io.IOException;
+  static java.time.ZoneId readExternal(java.io.DataInput) throws java.io.IOException;
+}

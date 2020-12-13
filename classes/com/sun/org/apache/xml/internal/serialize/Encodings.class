@@ -1,0 +1,11 @@
+Compiled from "Encodings.java"
+class com.sun.org.apache.xml.internal.serialize.Encodings {
+  static final int DEFAULT_LAST_PRINTABLE;
+  static final int LAST_PRINTABLE_UNICODE;
+  static final java.lang.String[] UNICODE_ENCODINGS;
+  static final java.lang.String DEFAULT_ENCODING;
+  static final java.lang.String JIS_DANGER_CHARS;
+  com.sun.org.apache.xml.internal.serialize.Encodings();
+  static com.sun.org.apache.xml.internal.serialize.EncodingInfo getEncodingInfo(java.lang.String, boolean) throws java.io.UnsupportedEncodingException;
+  static {};
+}

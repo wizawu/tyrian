@@ -1,0 +1,16 @@
+Compiled from "HeapRegionType.java"
+public class sun.jvm.hotspot.gc.g1.HeapRegionType extends sun.jvm.hotspot.runtime.VMObject {
+  public boolean isFree();
+  public boolean isEden();
+  public boolean isSurvivor();
+  public boolean isYoung();
+  public boolean isHumongous();
+  public boolean isStartsHumongous();
+  public boolean isContinuesHumongous();
+  public boolean isArchive();
+  public boolean isPinned();
+  public boolean isOld();
+  public sun.jvm.hotspot.gc.g1.HeapRegionType(sun.jvm.hotspot.debugger.Address);
+  public java.lang.String typeAnnotation();
+  static {};
+}

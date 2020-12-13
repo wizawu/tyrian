@@ -1,0 +1,7 @@
+Compiled from "JdpPacketWriter.java"
+public final class sun.management.jdp.JdpPacketWriter {
+  public sun.management.jdp.JdpPacketWriter() throws java.io.IOException;
+  public void addEntry(java.lang.String) throws java.io.IOException;
+  public void addEntry(java.lang.String, java.lang.String) throws java.io.IOException;
+  public byte[] getPacketBytes();
+}

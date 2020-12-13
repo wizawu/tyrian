@@ -1,0 +1,17 @@
+Compiled from "RetrievalMethod.java"
+public class com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.KeyInfoContent {
+  public static final java.lang.String TYPE_DSA;
+  public static final java.lang.String TYPE_RSA;
+  public static final java.lang.String TYPE_PGP;
+  public static final java.lang.String TYPE_SPKI;
+  public static final java.lang.String TYPE_MGMT;
+  public static final java.lang.String TYPE_X509;
+  public static final java.lang.String TYPE_RAWX509;
+  public com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.keys.content.RetrievalMethod(org.w3c.dom.Document, java.lang.String, com.sun.org.apache.xml.internal.security.transforms.Transforms, java.lang.String);
+  public org.w3c.dom.Attr getURIAttr();
+  public java.lang.String getURI();
+  public java.lang.String getType();
+  public com.sun.org.apache.xml.internal.security.transforms.Transforms getTransforms() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.lang.String getBaseLocalName();
+}

@@ -1,0 +1,6 @@
+Compiled from "IllegalFormatFlagsException.java"
+public class java.util.IllegalFormatFlagsException extends java.util.IllegalFormatException {
+  public java.util.IllegalFormatFlagsException(java.lang.String);
+  public java.lang.String getFlags();
+  public java.lang.String getMessage();
+}

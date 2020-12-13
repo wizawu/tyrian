@@ -1,0 +1,14 @@
+Compiled from "ProgramPoints.java"
+class jdk.nashorn.internal.codegen.ProgramPoints extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
+  jdk.nashorn.internal.codegen.ProgramPoints();
+  public boolean enterFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
+  public jdk.nashorn.internal.ir.Node leaveFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
+  public boolean enterVarNode(jdk.nashorn.internal.ir.VarNode);
+  public boolean enterIdentNode(jdk.nashorn.internal.ir.IdentNode);
+  public jdk.nashorn.internal.ir.Node leaveIdentNode(jdk.nashorn.internal.ir.IdentNode);
+  public jdk.nashorn.internal.ir.Node leaveCallNode(jdk.nashorn.internal.ir.CallNode);
+  public jdk.nashorn.internal.ir.Node leaveAccessNode(jdk.nashorn.internal.ir.AccessNode);
+  public jdk.nashorn.internal.ir.Node leaveIndexNode(jdk.nashorn.internal.ir.IndexNode);
+  public jdk.nashorn.internal.ir.Node leaveBinaryNode(jdk.nashorn.internal.ir.BinaryNode);
+  public jdk.nashorn.internal.ir.Node leaveUnaryNode(jdk.nashorn.internal.ir.UnaryNode);
+}

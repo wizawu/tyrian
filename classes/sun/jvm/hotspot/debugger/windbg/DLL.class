@@ -1,0 +1,15 @@
+Compiled from "DLL.java"
+public class sun.jvm.hotspot.debugger.windbg.DLL implements sun.jvm.hotspot.debugger.cdbg.LoadObject {
+  public sun.jvm.hotspot.debugger.windbg.DLL(sun.jvm.hotspot.debugger.windbg.WindbgDebugger, java.lang.String, long, sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public sun.jvm.hotspot.debugger.windbg.DLL(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public boolean isDLL();
+  public sun.jvm.hotspot.debugger.Address lookupSymbol(java.lang.String) throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public sun.jvm.hotspot.debugger.Address getBase();
+  public java.lang.String getName();
+  public long getSize();
+  public sun.jvm.hotspot.debugger.cdbg.CDebugInfoDataBase getDebugInfoDataBase() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public sun.jvm.hotspot.debugger.cdbg.BlockSym debugInfoForPC(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public sun.jvm.hotspot.debugger.cdbg.ClosestSymbol closestSymbolToPC(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public sun.jvm.hotspot.debugger.cdbg.LineNumberInfo lineNumberForPC(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public void close();
+}

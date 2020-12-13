@@ -1,0 +1,5 @@
+Compiled from "ConfigurationException.java"
+public class javax.naming.ConfigurationException extends javax.naming.NamingException {
+  public javax.naming.ConfigurationException(java.lang.String);
+  public javax.naming.ConfigurationException();
+}

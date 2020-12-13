@@ -1,0 +1,11 @@
+Compiled from "MethodUtil.java"
+public final class sun.reflect.misc.MethodUtil extends java.security.SecureClassLoader {
+  public static java.lang.reflect.Method getMethod(java.lang.Class<?>, java.lang.String, java.lang.Class<?>[]) throws java.lang.NoSuchMethodException;
+  public static java.lang.reflect.Method[] getMethods(java.lang.Class<?>);
+  public static java.lang.reflect.Method[] getPublicMethods(java.lang.Class<?>);
+  public static java.lang.Object invoke(java.lang.reflect.Method, java.lang.Object, java.lang.Object[]) throws java.lang.reflect.InvocationTargetException, java.lang.IllegalAccessException;
+  protected synchronized java.lang.Class<?> loadClass(java.lang.String, boolean) throws java.lang.ClassNotFoundException;
+  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  protected java.security.PermissionCollection getPermissions(java.security.CodeSource);
+  static {};
+}

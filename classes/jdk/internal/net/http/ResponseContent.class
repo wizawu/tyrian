@@ -1,0 +1,11 @@
+Compiled from "ResponseContent.java"
+class jdk.internal.net.http.ResponseContent {
+  final java.net.http.HttpResponse$BodySubscriber<?> pusher;
+  final long contentLength;
+  final java.net.http.HttpHeaders headers;
+  static final int LF;
+  static final int CR;
+  jdk.internal.net.http.ResponseContent(jdk.internal.net.http.HttpConnection, long, java.net.http.HttpHeaders, java.net.http.HttpResponse$BodySubscriber<?>, java.lang.Runnable);
+  boolean contentChunked() throws java.io.IOException;
+  jdk.internal.net.http.ResponseContent$BodyParser getBodyParser(java.util.function.Consumer<java.lang.Throwable>) throws java.io.IOException;
+}

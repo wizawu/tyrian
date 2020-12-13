@@ -1,0 +1,20 @@
+Compiled from "DefaultComboBoxModel.java"
+public class javax.swing.DefaultComboBoxModel<E> extends javax.swing.AbstractListModel<E> implements javax.swing.MutableComboBoxModel<E>, java.io.Serializable {
+  java.util.Vector<E> objects;
+  java.lang.Object selectedObject;
+  public javax.swing.DefaultComboBoxModel();
+  public javax.swing.DefaultComboBoxModel(E[]);
+  public javax.swing.DefaultComboBoxModel(java.util.Vector<E>);
+  public void setSelectedItem(java.lang.Object);
+  public java.lang.Object getSelectedItem();
+  public int getSize();
+  public E getElementAt(int);
+  public int getIndexOf(java.lang.Object);
+  public void addElement(E);
+  public void insertElementAt(E, int);
+  public void removeElementAt(int);
+  public void removeElement(java.lang.Object);
+  public void removeAllElements();
+  public void addAll(java.util.Collection<? extends E>);
+  public void addAll(int, java.util.Collection<? extends E>);
+}

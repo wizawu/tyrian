@@ -1,0 +1,21 @@
+Compiled from "NameConstraintsExtension.java"
+public class sun.security.x509.NameConstraintsExtension extends sun.security.x509.Extension implements sun.security.x509.CertAttrSet<java.lang.String>, java.lang.Cloneable {
+  public static final java.lang.String IDENT;
+  public static final java.lang.String NAME;
+  public static final java.lang.String PERMITTED_SUBTREES;
+  public static final java.lang.String EXCLUDED_SUBTREES;
+  public sun.security.x509.NameConstraintsExtension(sun.security.x509.GeneralSubtrees, sun.security.x509.GeneralSubtrees) throws java.io.IOException;
+  public sun.security.x509.NameConstraintsExtension(java.lang.Boolean, java.lang.Object) throws java.io.IOException;
+  public java.lang.String toString();
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+  public void set(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public sun.security.x509.GeneralSubtrees get(java.lang.String) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  public java.lang.String getName();
+  public void merge(sun.security.x509.NameConstraintsExtension) throws java.io.IOException;
+  public boolean verify(java.security.cert.X509Certificate) throws java.io.IOException;
+  public boolean verify(sun.security.x509.GeneralNameInterface) throws java.io.IOException;
+  public java.lang.Object clone();
+  public java.lang.Object get(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+}

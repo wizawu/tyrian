@@ -1,0 +1,5 @@
+Compiled from "FileNotFoundException.java"
+public class java.io.FileNotFoundException extends java.io.IOException {
+  public java.io.FileNotFoundException();
+  public java.io.FileNotFoundException(java.lang.String);
+}

@@ -1,0 +1,11 @@
+Compiled from "XCanvasPeer.java"
+class sun.awt.X11.XCanvasPeer extends sun.awt.X11.XComponentPeer implements java.awt.peer.CanvasPeer {
+  sun.awt.X11.XCanvasPeer();
+  sun.awt.X11.XCanvasPeer(sun.awt.X11.XCreateWindowParams);
+  sun.awt.X11.XCanvasPeer(java.awt.Component);
+  void preInit(sun.awt.X11.XCreateWindowParams);
+  public java.awt.GraphicsConfiguration getAppropriateGraphicsConfiguration(java.awt.GraphicsConfiguration);
+  protected boolean shouldFocusOnClick();
+  public void disableBackgroundErase();
+  protected boolean doEraseBackground();
+}

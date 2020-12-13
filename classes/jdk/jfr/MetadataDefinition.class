@@ -1,0 +1,3 @@
+Compiled from "MetadataDefinition.java"
+public interface jdk.jfr.MetadataDefinition extends java.lang.annotation.Annotation {
+}

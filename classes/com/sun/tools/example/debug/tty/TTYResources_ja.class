@@ -1,0 +1,5 @@
+Compiled from "TTYResources_ja.java"
+public class com.sun.tools.example.debug.tty.TTYResources_ja extends java.util.ListResourceBundle {
+  public com.sun.tools.example.debug.tty.TTYResources_ja();
+  public java.lang.Object[][] getContents();
+}

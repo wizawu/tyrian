@@ -1,0 +1,4 @@
+Compiled from "ModificationWatchpointEvent.java"
+public interface com.sun.jdi.event.ModificationWatchpointEvent extends com.sun.jdi.event.WatchpointEvent {
+  public abstract com.sun.jdi.Value valueToBe();
+}

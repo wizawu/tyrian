@@ -1,0 +1,5 @@
+Compiled from "PointerFinder.java"
+public class sun.jvm.hotspot.utilities.PointerFinder {
+  public sun.jvm.hotspot.utilities.PointerFinder();
+  public static sun.jvm.hotspot.utilities.PointerLocation find(sun.jvm.hotspot.debugger.Address);
+}

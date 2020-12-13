@@ -1,0 +1,5 @@
+Compiled from "ClassCircularityError.java"
+public class java.lang.ClassCircularityError extends java.lang.LinkageError {
+  public java.lang.ClassCircularityError();
+  public java.lang.ClassCircularityError(java.lang.String);
+}

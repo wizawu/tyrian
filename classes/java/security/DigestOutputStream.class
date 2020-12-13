@@ -1,0 +1,11 @@
+Compiled from "DigestOutputStream.java"
+public class java.security.DigestOutputStream extends java.io.FilterOutputStream {
+  protected java.security.MessageDigest digest;
+  public java.security.DigestOutputStream(java.io.OutputStream, java.security.MessageDigest);
+  public java.security.MessageDigest getMessageDigest();
+  public void setMessageDigest(java.security.MessageDigest);
+  public void write(int) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void on(boolean);
+  public java.lang.String toString();
+}

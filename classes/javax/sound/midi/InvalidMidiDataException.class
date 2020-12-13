@@ -1,0 +1,5 @@
+Compiled from "InvalidMidiDataException.java"
+public class javax.sound.midi.InvalidMidiDataException extends java.lang.Exception {
+  public javax.sound.midi.InvalidMidiDataException();
+  public javax.sound.midi.InvalidMidiDataException(java.lang.String);
+}

@@ -1,0 +1,18 @@
+Compiled from "MediaPrintableArea.java"
+public final class javax.print.attribute.standard.MediaPrintableArea implements javax.print.attribute.DocAttribute,javax.print.attribute.PrintRequestAttribute,javax.print.attribute.PrintJobAttribute {
+  public static final int INCH;
+  public static final int MM;
+  public javax.print.attribute.standard.MediaPrintableArea(float, float, float, float, int);
+  public javax.print.attribute.standard.MediaPrintableArea(int, int, int, int, int);
+  public float[] getPrintableArea(int);
+  public float getX(int);
+  public float getY(int);
+  public float getWidth(int);
+  public float getHeight(int);
+  public boolean equals(java.lang.Object);
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  public java.lang.String toString(int, java.lang.String);
+  public java.lang.String toString();
+  public int hashCode();
+}

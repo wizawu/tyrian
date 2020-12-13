@@ -1,0 +1,4 @@
+Compiled from "IdentifierTree.java"
+public interface com.sun.source.doctree.IdentifierTree extends com.sun.source.doctree.DocTree {
+  public abstract javax.lang.model.element.Name getName();
+}

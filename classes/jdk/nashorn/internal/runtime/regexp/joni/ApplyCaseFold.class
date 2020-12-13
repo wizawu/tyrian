@@ -1,0 +1,7 @@
+Compiled from "ApplyCaseFold.java"
+final class jdk.nashorn.internal.runtime.regexp.joni.ApplyCaseFold {
+  static final jdk.nashorn.internal.runtime.regexp.joni.ApplyCaseFold INSTANCE;
+  jdk.nashorn.internal.runtime.regexp.joni.ApplyCaseFold();
+  public static void apply(int, int, java.lang.Object);
+  static {};
+}

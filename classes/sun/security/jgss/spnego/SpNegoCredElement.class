@@ -1,0 +1,15 @@
+Compiled from "SpNegoCredElement.java"
+public class sun.security.jgss.spnego.SpNegoCredElement implements sun.security.jgss.spi.GSSCredentialSpi {
+  public sun.security.jgss.spnego.SpNegoCredElement(sun.security.jgss.spi.GSSCredentialSpi) throws org.ietf.jgss.GSSException;
+  org.ietf.jgss.Oid getInternalMech();
+  public sun.security.jgss.spi.GSSCredentialSpi getInternalCred();
+  public java.security.Provider getProvider();
+  public void dispose() throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.spi.GSSNameSpi getName() throws org.ietf.jgss.GSSException;
+  public int getInitLifetime() throws org.ietf.jgss.GSSException;
+  public int getAcceptLifetime() throws org.ietf.jgss.GSSException;
+  public boolean isInitiatorCredential() throws org.ietf.jgss.GSSException;
+  public boolean isAcceptorCredential() throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.Oid getMechanism();
+  public sun.security.jgss.spi.GSSCredentialSpi impersonate(sun.security.jgss.spi.GSSNameSpi) throws org.ietf.jgss.GSSException;
+}

@@ -1,0 +1,8 @@
+Compiled from "NewClassTree.java"
+public interface com.sun.source.tree.NewClassTree extends com.sun.source.tree.ExpressionTree {
+  public abstract com.sun.source.tree.ExpressionTree getEnclosingExpression();
+  public abstract java.util.List<? extends com.sun.source.tree.Tree> getTypeArguments();
+  public abstract com.sun.source.tree.ExpressionTree getIdentifier();
+  public abstract java.util.List<? extends com.sun.source.tree.ExpressionTree> getArguments();
+  public abstract com.sun.source.tree.ClassTree getClassBody();
+}

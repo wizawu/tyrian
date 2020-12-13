@@ -1,0 +1,10 @@
+Compiled from "GCWhen.java"
+public final class sun.jvm.hotspot.gc.shared.GCWhen extends java.lang.Enum<sun.jvm.hotspot.gc.shared.GCWhen> {
+  public static final sun.jvm.hotspot.gc.shared.GCWhen BeforeGC;
+  public static final sun.jvm.hotspot.gc.shared.GCWhen AfterGC;
+  public static final sun.jvm.hotspot.gc.shared.GCWhen GCWhenEndSentinel;
+  public static sun.jvm.hotspot.gc.shared.GCWhen[] values();
+  public static sun.jvm.hotspot.gc.shared.GCWhen valueOf(java.lang.String);
+  public java.lang.String value();
+  static {};
+}

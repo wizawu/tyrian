@@ -1,0 +1,6 @@
+Compiled from "NashornLinkerExporter.java"
+public final class jdk.nashorn.api.linker.NashornLinkerExporter extends jdk.dynalink.linker.GuardingDynamicLinkerExporter {
+  public jdk.nashorn.api.linker.NashornLinkerExporter();
+  public java.util.List<jdk.dynalink.linker.GuardingDynamicLinker> get();
+  public java.lang.Object get();
+}

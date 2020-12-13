@@ -1,0 +1,18 @@
+Compiled from "FileDispatcher.java"
+abstract class sun.nio.ch.FileDispatcher extends sun.nio.ch.NativeDispatcher {
+  public static final int NO_LOCK;
+  public static final int LOCKED;
+  public static final int RET_EX_LOCK;
+  public static final int INTERRUPTED;
+  sun.nio.ch.FileDispatcher();
+  abstract long seek(java.io.FileDescriptor, long) throws java.io.IOException;
+  abstract int force(java.io.FileDescriptor, boolean) throws java.io.IOException;
+  abstract int truncate(java.io.FileDescriptor, long) throws java.io.IOException;
+  abstract long size(java.io.FileDescriptor) throws java.io.IOException;
+  abstract int lock(java.io.FileDescriptor, boolean, long, long, boolean) throws java.io.IOException;
+  abstract void release(java.io.FileDescriptor, long, long) throws java.io.IOException;
+  abstract java.io.FileDescriptor duplicateForMapping(java.io.FileDescriptor) throws java.io.IOException;
+  abstract boolean canTransferToDirectly(java.nio.channels.SelectableChannel);
+  abstract boolean transferToDirectlyNeedsPositionLock();
+  abstract int setDirectIO(java.io.FileDescriptor, java.lang.String);
+}

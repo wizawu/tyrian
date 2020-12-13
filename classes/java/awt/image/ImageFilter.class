@@ -1,0 +1,15 @@
+Compiled from "ImageFilter.java"
+public class java.awt.image.ImageFilter implements java.awt.image.ImageConsumer,java.lang.Cloneable {
+  protected java.awt.image.ImageConsumer consumer;
+  public java.awt.image.ImageFilter();
+  public java.awt.image.ImageFilter getFilterInstance(java.awt.image.ImageConsumer);
+  public void setDimensions(int, int);
+  public void setProperties(java.util.Hashtable<?, ?>);
+  public void setColorModel(java.awt.image.ColorModel);
+  public void setHints(int);
+  public void setPixels(int, int, int, int, java.awt.image.ColorModel, byte[], int, int);
+  public void setPixels(int, int, int, int, java.awt.image.ColorModel, int[], int, int);
+  public void imageComplete(int);
+  public void resendTopDownLeftRight(java.awt.image.ImageProducer);
+  public java.lang.Object clone();
+}

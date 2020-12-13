@@ -1,0 +1,6 @@
+Compiled from "PKIXCertPathBuilderResult.java"
+public class java.security.cert.PKIXCertPathBuilderResult extends java.security.cert.PKIXCertPathValidatorResult implements java.security.cert.CertPathBuilderResult {
+  public java.security.cert.PKIXCertPathBuilderResult(java.security.cert.CertPath, java.security.cert.TrustAnchor, java.security.cert.PolicyNode, java.security.PublicKey);
+  public java.security.cert.CertPath getCertPath();
+  public java.lang.String toString();
+}

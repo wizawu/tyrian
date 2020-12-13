@@ -1,0 +1,19 @@
+Compiled from "RepositoryChunk.java"
+final class jdk.jfr.internal.RepositoryChunk {
+  static final java.util.Comparator<jdk.jfr.internal.RepositoryChunk> END_TIME_COMPARATOR;
+  jdk.jfr.internal.RepositoryChunk(jdk.jfr.internal.SecuritySupport$SafePath, java.time.Instant) throws java.lang.Exception;
+  public jdk.jfr.internal.SecuritySupport$SafePath getUnfishedFile();
+  void finish(java.time.Instant);
+  public java.time.Instant getStartTime();
+  public java.time.Instant getEndTime();
+  public synchronized void use();
+  public synchronized void release();
+  protected void finalize();
+  public long getSize();
+  public boolean isFinished();
+  public java.lang.String toString();
+  java.nio.channels.ReadableByteChannel newChannel() throws java.io.IOException;
+  public boolean inInterval(java.time.Instant, java.time.Instant);
+  public jdk.jfr.internal.SecuritySupport$SafePath getFile();
+  static {};
+}

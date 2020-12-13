@@ -1,0 +1,11 @@
+Compiled from "BaseStream.java"
+public interface java.util.stream.BaseStream<T, S extends java.util.stream.BaseStream<T, S>> extends java.lang.AutoCloseable {
+  public abstract java.util.Iterator<T> iterator();
+  public abstract java.util.Spliterator<T> spliterator();
+  public abstract boolean isParallel();
+  public abstract S sequential();
+  public abstract S parallel();
+  public abstract S unordered();
+  public abstract S onClose(java.lang.Runnable);
+  public abstract void close();
+}

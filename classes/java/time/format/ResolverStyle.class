@@ -1,0 +1,9 @@
+Compiled from "ResolverStyle.java"
+public final class java.time.format.ResolverStyle extends java.lang.Enum<java.time.format.ResolverStyle> {
+  public static final java.time.format.ResolverStyle STRICT;
+  public static final java.time.format.ResolverStyle SMART;
+  public static final java.time.format.ResolverStyle LENIENT;
+  public static java.time.format.ResolverStyle[] values();
+  public static java.time.format.ResolverStyle valueOf(java.lang.String);
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "BasicFormattedTextFieldUI.java"
+public class javax.swing.plaf.basic.BasicFormattedTextFieldUI extends javax.swing.plaf.basic.BasicTextFieldUI {
+  public javax.swing.plaf.basic.BasicFormattedTextFieldUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected java.lang.String getPropertyPrefix();
+}

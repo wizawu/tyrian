@@ -1,0 +1,8 @@
+Compiled from "SSLTransport.java"
+interface sun.security.ssl.SSLTransport {
+  public abstract java.lang.String getPeerHost();
+  public abstract int getPeerPort();
+  public default void shutdown() throws java.io.IOException;
+  public abstract boolean useDelegatedTask();
+  public static sun.security.ssl.Plaintext decode(sun.security.ssl.TransportContext, java.nio.ByteBuffer[], int, int, java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+}

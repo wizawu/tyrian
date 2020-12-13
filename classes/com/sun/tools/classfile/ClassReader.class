@@ -1,0 +1,15 @@
+Compiled from "ClassReader.java"
+public class com.sun.tools.classfile.ClassReader {
+  com.sun.tools.classfile.ClassReader(com.sun.tools.classfile.ClassFile, java.io.InputStream, com.sun.tools.classfile.Attribute$Factory) throws java.io.IOException;
+  com.sun.tools.classfile.ClassFile getClassFile();
+  com.sun.tools.classfile.ConstantPool getConstantPool();
+  public com.sun.tools.classfile.Attribute readAttribute() throws java.io.IOException;
+  public void readFully(byte[]) throws java.io.IOException;
+  public int readUnsignedByte() throws java.io.IOException;
+  public int readUnsignedShort() throws java.io.IOException;
+  public int readInt() throws java.io.IOException;
+  public long readLong() throws java.io.IOException;
+  public float readFloat() throws java.io.IOException;
+  public double readDouble() throws java.io.IOException;
+  public java.lang.String readUTF() throws java.io.IOException;
+}

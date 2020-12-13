@@ -1,0 +1,15 @@
+Compiled from "WBMPMetadata.java"
+public class com.sun.imageio.plugins.wbmp.WBMPMetadata extends javax.imageio.metadata.IIOMetadata {
+  static final java.lang.String nativeMetadataFormatName;
+  public int wbmpType;
+  public int width;
+  public int height;
+  public com.sun.imageio.plugins.wbmp.WBMPMetadata();
+  public boolean isReadOnly();
+  public org.w3c.dom.Node getAsTree(java.lang.String);
+  public void setFromTree(java.lang.String, org.w3c.dom.Node);
+  public void mergeTree(java.lang.String, org.w3c.dom.Node);
+  public void reset();
+  protected javax.imageio.metadata.IIOMetadataNode getStandardChromaNode();
+  protected javax.imageio.metadata.IIOMetadataNode getStandardDimensionNode();
+}

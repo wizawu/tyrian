@@ -1,0 +1,9 @@
+Compiled from "RuleBasedCollationKey.java"
+final class java.text.RuleBasedCollationKey extends java.text.CollationKey {
+  public int compareTo(java.text.CollationKey);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public byte[] toByteArray();
+  java.text.RuleBasedCollationKey(java.lang.String, java.lang.String);
+  public int compareTo(java.lang.Object);
+}

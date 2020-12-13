@@ -1,0 +1,8 @@
+Compiled from "WebRowSetXmlReader.java"
+public class com.sun.rowset.internal.WebRowSetXmlReader implements javax.sql.rowset.spi.XmlReader,java.io.Serializable {
+  static final long serialVersionUID;
+  public com.sun.rowset.internal.WebRowSetXmlReader();
+  public void readXML(javax.sql.rowset.WebRowSet, java.io.Reader) throws java.sql.SQLException;
+  public void readXML(javax.sql.rowset.WebRowSet, java.io.InputStream) throws java.sql.SQLException;
+  public void readData(javax.sql.RowSetInternal);
+}

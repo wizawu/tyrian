@@ -1,0 +1,16 @@
+Compiled from "KerberosKey.java"
+public class javax.security.auth.kerberos.KerberosKey implements javax.crypto.SecretKey {
+  public javax.security.auth.kerberos.KerberosKey(javax.security.auth.kerberos.KerberosPrincipal, byte[], int, int);
+  public javax.security.auth.kerberos.KerberosKey(javax.security.auth.kerberos.KerberosPrincipal, char[], java.lang.String);
+  public final javax.security.auth.kerberos.KerberosPrincipal getPrincipal();
+  public final int getVersionNumber();
+  public final int getKeyType();
+  public final java.lang.String getAlgorithm();
+  public final java.lang.String getFormat();
+  public final byte[] getEncoded();
+  public void destroy() throws javax.security.auth.DestroyFailedException;
+  public boolean isDestroyed();
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

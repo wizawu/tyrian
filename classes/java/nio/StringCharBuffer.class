@@ -1,0 +1,26 @@
+Compiled from "StringCharBuffer.java"
+class java.nio.StringCharBuffer extends java.nio.CharBuffer {
+  java.lang.CharSequence str;
+  java.nio.StringCharBuffer(java.lang.CharSequence, int, int);
+  public java.nio.CharBuffer slice();
+  public java.nio.CharBuffer duplicate();
+  public java.nio.CharBuffer asReadOnlyBuffer();
+  public final char get();
+  public final char get(int);
+  char getUnchecked(int);
+  public final java.nio.CharBuffer put(char);
+  public final java.nio.CharBuffer put(int, char);
+  public final java.nio.CharBuffer compact();
+  public final boolean isReadOnly();
+  final java.lang.String toString(int, int);
+  public final java.nio.CharBuffer subSequence(int, int);
+  public boolean isDirect();
+  public java.nio.ByteOrder order();
+  java.nio.ByteOrder charRegionOrder();
+  public boolean equals(java.lang.Object);
+  public int compareTo(java.nio.CharBuffer);
+  public int compareTo(java.lang.Object);
+  public java.lang.CharSequence subSequence(int, int);
+  public java.nio.Buffer duplicate();
+  public java.nio.Buffer slice();
+}

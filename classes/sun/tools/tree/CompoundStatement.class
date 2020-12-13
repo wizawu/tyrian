@@ -1,0 +1,13 @@
+Compiled from "CompoundStatement.java"
+public class sun.tools.tree.CompoundStatement extends sun.tools.tree.Statement {
+  sun.tools.tree.Statement[] args;
+  public sun.tools.tree.CompoundStatement(long, sun.tools.tree.Statement[]);
+  public void insertStatement(sun.tools.tree.Statement);
+  sun.tools.tree.Vset check(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public sun.tools.tree.Statement inline(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Statement copyInline(sun.tools.tree.Context, boolean);
+  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
+  public void code(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public sun.tools.tree.Expression firstConstructor();
+  public void print(java.io.PrintStream, int);
+}

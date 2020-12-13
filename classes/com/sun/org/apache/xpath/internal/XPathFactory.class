@@ -1,0 +1,4 @@
+Compiled from "XPathFactory.java"
+public interface com.sun.org.apache.xpath.internal.XPathFactory {
+  public abstract com.sun.org.apache.xpath.internal.XPath create(java.lang.String, javax.xml.transform.SourceLocator, com.sun.org.apache.xml.internal.utils.PrefixResolver, int);
+}

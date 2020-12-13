@@ -1,0 +1,14 @@
+Compiled from "XIncludeTextReader.java"
+public class com.sun.org.apache.xerces.internal.xinclude.XIncludeTextReader {
+  public com.sun.org.apache.xerces.internal.xinclude.XIncludeTextReader(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource, com.sun.org.apache.xerces.internal.xinclude.XIncludeHandler, int) throws java.io.IOException;
+  public void setErrorReporter(com.sun.org.apache.xerces.internal.impl.XMLErrorReporter);
+  protected java.io.Reader getReader(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource) throws java.io.IOException;
+  protected java.lang.String getEncodingName(java.io.InputStream) throws java.io.IOException;
+  protected java.lang.String consumeBOM(java.io.InputStream, java.lang.String) throws java.io.IOException;
+  protected java.lang.String getEncodingName(byte[]);
+  public void parse() throws java.io.IOException;
+  public void setInputSource(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource);
+  public void close() throws java.io.IOException;
+  protected boolean isValid(int);
+  protected void setBufferSize(int);
+}

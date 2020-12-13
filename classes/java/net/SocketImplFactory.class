@@ -1,0 +1,4 @@
+Compiled from "SocketImplFactory.java"
+public interface java.net.SocketImplFactory {
+  public abstract java.net.SocketImpl createSocketImpl();
+}

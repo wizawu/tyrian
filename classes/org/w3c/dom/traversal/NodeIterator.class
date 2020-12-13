@@ -1,0 +1,10 @@
+Compiled from "NodeIterator.java"
+public interface org.w3c.dom.traversal.NodeIterator {
+  public abstract org.w3c.dom.Node getRoot();
+  public abstract int getWhatToShow();
+  public abstract org.w3c.dom.traversal.NodeFilter getFilter();
+  public abstract boolean getExpandEntityReferences();
+  public abstract org.w3c.dom.Node nextNode() throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.Node previousNode() throws org.w3c.dom.DOMException;
+  public abstract void detach();
+}

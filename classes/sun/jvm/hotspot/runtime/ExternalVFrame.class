@@ -1,0 +1,9 @@
+Compiled from "ExternalVFrame.java"
+public class sun.jvm.hotspot.runtime.ExternalVFrame extends sun.jvm.hotspot.runtime.VFrame {
+  sun.jvm.hotspot.runtime.ExternalVFrame(sun.jvm.hotspot.runtime.Frame, sun.jvm.hotspot.runtime.RegisterMap, sun.jvm.hotspot.runtime.JavaThread, boolean);
+  public void print();
+  public void printOn(java.io.PrintStream);
+  public void printValue();
+  public void printValueOn(java.io.PrintStream);
+  public boolean mayBeImpreciseDbg();
+}

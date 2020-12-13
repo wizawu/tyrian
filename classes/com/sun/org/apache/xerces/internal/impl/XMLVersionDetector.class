@@ -1,0 +1,17 @@
+Compiled from "XMLVersionDetector.java"
+public class com.sun.org.apache.xerces.internal.impl.XMLVersionDetector {
+  protected static final java.lang.String SYMBOL_TABLE;
+  protected static final java.lang.String ERROR_REPORTER;
+  protected static final java.lang.String ENTITY_MANAGER;
+  protected static final java.lang.String fVersionSymbol;
+  protected static final java.lang.String fXMLSymbol;
+  protected com.sun.org.apache.xerces.internal.util.SymbolTable fSymbolTable;
+  protected com.sun.org.apache.xerces.internal.impl.XMLErrorReporter fErrorReporter;
+  protected com.sun.org.apache.xerces.internal.impl.XMLEntityManager fEntityManager;
+  protected java.lang.String fEncoding;
+  public com.sun.org.apache.xerces.internal.impl.XMLVersionDetector();
+  public void reset(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public void startDocumentParsing(com.sun.org.apache.xerces.internal.impl.XMLEntityHandler, short);
+  public short determineDocVersion(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource) throws java.io.IOException;
+  static {};
+}

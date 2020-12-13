@@ -1,0 +1,22 @@
+Compiled from "XMLSymbols.java"
+public class com.sun.org.apache.xerces.internal.util.XMLSymbols {
+  public static final java.lang.String EMPTY_STRING;
+  public static final java.lang.String PREFIX_XML;
+  public static final java.lang.String PREFIX_XMLNS;
+  public static final java.lang.String fANYSymbol;
+  public static final java.lang.String fCDATASymbol;
+  public static final java.lang.String fIDSymbol;
+  public static final java.lang.String fIDREFSymbol;
+  public static final java.lang.String fIDREFSSymbol;
+  public static final java.lang.String fENTITYSymbol;
+  public static final java.lang.String fENTITIESSymbol;
+  public static final java.lang.String fNMTOKENSymbol;
+  public static final java.lang.String fNMTOKENSSymbol;
+  public static final java.lang.String fNOTATIONSymbol;
+  public static final java.lang.String fENUMERATIONSymbol;
+  public static final java.lang.String fIMPLIEDSymbol;
+  public static final java.lang.String fREQUIREDSymbol;
+  public static final java.lang.String fFIXEDSymbol;
+  public com.sun.org.apache.xerces.internal.util.XMLSymbols();
+  static {};
+}

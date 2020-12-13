@@ -1,0 +1,9 @@
+Compiled from "XToolkitThreadBlockedHandler.java"
+final class sun.awt.X11.XToolkitThreadBlockedHandler implements sun.awt.datatransfer.ToolkitThreadBlockedHandler {
+  static sun.awt.datatransfer.ToolkitThreadBlockedHandler getToolkitThreadBlockedHandler();
+  public void lock();
+  public void unlock();
+  public void enter();
+  public void exit();
+  static {};
+}

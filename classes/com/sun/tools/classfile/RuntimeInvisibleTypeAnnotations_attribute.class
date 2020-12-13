@@ -1,0 +1,7 @@
+Compiled from "RuntimeInvisibleTypeAnnotations_attribute.java"
+public class com.sun.tools.classfile.RuntimeInvisibleTypeAnnotations_attribute extends com.sun.tools.classfile.RuntimeTypeAnnotations_attribute {
+  com.sun.tools.classfile.RuntimeInvisibleTypeAnnotations_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException, com.sun.tools.classfile.Annotation$InvalidAnnotation;
+  public com.sun.tools.classfile.RuntimeInvisibleTypeAnnotations_attribute(com.sun.tools.classfile.ConstantPool, com.sun.tools.classfile.TypeAnnotation[]) throws com.sun.tools.classfile.ConstantPoolException;
+  public com.sun.tools.classfile.RuntimeInvisibleTypeAnnotations_attribute(int, com.sun.tools.classfile.TypeAnnotation[]);
+  public <R, P> R accept(com.sun.tools.classfile.Attribute$Visitor<R, P>, P);
+}

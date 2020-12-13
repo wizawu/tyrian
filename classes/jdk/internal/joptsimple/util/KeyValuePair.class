@@ -1,0 +1,9 @@
+Compiled from "KeyValuePair.java"
+public final class jdk.internal.joptsimple.util.KeyValuePair {
+  public final java.lang.String key;
+  public final java.lang.String value;
+  public static jdk.internal.joptsimple.util.KeyValuePair valueOf(java.lang.String);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

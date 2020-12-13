@@ -1,0 +1,4 @@
+Compiled from "FindInCodeCachePanel.java"
+public class sun.jvm.hotspot.ui.FindInCodeCachePanel extends sun.jvm.hotspot.ui.SAPanel {
+  public sun.jvm.hotspot.ui.FindInCodeCachePanel();
+}

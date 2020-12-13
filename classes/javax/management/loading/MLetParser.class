@@ -1,0 +1,10 @@
+Compiled from "MLetParser.java"
+class javax.management.loading.MLetParser {
+  public javax.management.loading.MLetParser();
+  public void skipSpace(java.io.Reader) throws java.io.IOException;
+  public java.lang.String scanIdentifier(java.io.Reader) throws java.io.IOException;
+  public java.util.Map<java.lang.String, java.lang.String> scanTag(java.io.Reader) throws java.io.IOException;
+  public java.util.List<javax.management.loading.MLetContent> parse(java.net.URL) throws java.io.IOException;
+  public java.util.List<javax.management.loading.MLetContent> parseURL(java.lang.String) throws java.io.IOException;
+  static {};
+}

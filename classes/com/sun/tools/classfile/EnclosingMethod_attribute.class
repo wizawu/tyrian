@@ -1,0 +1,11 @@
+Compiled from "EnclosingMethod_attribute.java"
+public class com.sun.tools.classfile.EnclosingMethod_attribute extends com.sun.tools.classfile.Attribute {
+  public final int class_index;
+  public final int method_index;
+  com.sun.tools.classfile.EnclosingMethod_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException;
+  public com.sun.tools.classfile.EnclosingMethod_attribute(com.sun.tools.classfile.ConstantPool, int, int) throws com.sun.tools.classfile.ConstantPoolException;
+  public com.sun.tools.classfile.EnclosingMethod_attribute(int, int, int);
+  public java.lang.String getClassName(com.sun.tools.classfile.ConstantPool) throws com.sun.tools.classfile.ConstantPoolException;
+  public java.lang.String getMethodName(com.sun.tools.classfile.ConstantPool) throws com.sun.tools.classfile.ConstantPoolException;
+  public <R, D> R accept(com.sun.tools.classfile.Attribute$Visitor<R, D>, D);
+}

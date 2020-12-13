@@ -1,0 +1,16 @@
+Compiled from "NotationDeclarationImpl.java"
+public class com.sun.xml.internal.stream.events.NotationDeclarationImpl extends com.sun.xml.internal.stream.events.DummyEvent implements javax.xml.stream.events.NotationDeclaration {
+  java.lang.String fName;
+  java.lang.String fPublicId;
+  java.lang.String fSystemId;
+  public com.sun.xml.internal.stream.events.NotationDeclarationImpl();
+  public com.sun.xml.internal.stream.events.NotationDeclarationImpl(java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.xml.internal.stream.events.NotationDeclarationImpl(com.sun.xml.internal.stream.dtd.nonvalidating.XMLNotationDecl);
+  public java.lang.String getName();
+  public java.lang.String getPublicId();
+  public java.lang.String getSystemId();
+  void setPublicId(java.lang.String);
+  void setSystemId(java.lang.String);
+  void setName(java.lang.String);
+  protected void writeAsEncodedUnicodeEx(java.io.Writer) throws java.io.IOException;
+}

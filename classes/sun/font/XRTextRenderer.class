@@ -1,0 +1,10 @@
+Compiled from "XRTextRenderer.java"
+public class sun.font.XRTextRenderer extends sun.java2d.pipe.GlyphListPipe {
+  static final int MAX_ELT_GLYPH_COUNT;
+  sun.font.XRGlyphCache glyphCache;
+  sun.java2d.xr.XRCompositeManager maskBuffer;
+  sun.java2d.xr.XRBackend backend;
+  sun.java2d.xr.GrowableEltArray eltList;
+  public sun.font.XRTextRenderer(sun.java2d.xr.XRCompositeManager);
+  protected void drawGlyphList(sun.java2d.SunGraphics2D, sun.font.GlyphList);
+}

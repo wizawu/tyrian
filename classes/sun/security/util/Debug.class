@@ -1,0 +1,17 @@
+Compiled from "Debug.java"
+public class sun.security.util.Debug {
+  public sun.security.util.Debug();
+  public static void Help();
+  public static sun.security.util.Debug getInstance(java.lang.String);
+  public static sun.security.util.Debug getInstance(java.lang.String, java.lang.String);
+  public static boolean isOn(java.lang.String);
+  public static boolean isVerbose();
+  public void println(java.lang.String);
+  public void println(java.lang.Object, java.lang.String);
+  public void println();
+  public static void println(java.lang.String, java.lang.String);
+  public java.io.PrintStream getPrintStream();
+  public static java.lang.String toHexString(java.math.BigInteger);
+  public static java.lang.String toString(byte[]);
+  static {};
+}

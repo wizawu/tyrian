@@ -1,0 +1,5 @@
+Compiled from "LSLoadEvent.java"
+public interface org.w3c.dom.ls.LSLoadEvent extends org.w3c.dom.events.Event {
+  public abstract org.w3c.dom.Document getNewDocument();
+  public abstract org.w3c.dom.ls.LSInput getInput();
+}

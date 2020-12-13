@@ -1,0 +1,15 @@
+Compiled from "CommonMenuBar.java"
+public abstract class com.sun.java.swing.ui.CommonMenuBar extends javax.swing.JMenuBar {
+  protected com.sun.java.swing.action.ActionManager manager;
+  protected com.sun.java.swing.ui.CommonMenuBar(com.sun.java.swing.action.ActionManager);
+  protected com.sun.java.swing.ui.CommonMenuBar(com.sun.java.swing.action.ActionManager, com.sun.java.swing.ui.StatusBar);
+  protected abstract void configureMenu();
+  protected void configureToggleMenuItem(javax.swing.JMenuItem, javax.swing.Action);
+  protected void configureMenuItem(javax.swing.JMenuItem, javax.swing.Action);
+  protected javax.swing.JMenu createMenu(java.lang.String, char);
+  protected void addMenuItem(javax.swing.JMenu, javax.swing.Action);
+  protected void addCheckBoxMenuItem(javax.swing.JMenu, com.sun.java.swing.action.StateChangeAction);
+  protected void addCheckBoxMenuItem(javax.swing.JMenu, com.sun.java.swing.action.StateChangeAction, boolean);
+  protected void addRadioButtonMenuItem(javax.swing.JMenu, javax.swing.ButtonGroup, com.sun.java.swing.action.StateChangeAction);
+  protected void addRadioButtonMenuItem(javax.swing.JMenu, javax.swing.ButtonGroup, com.sun.java.swing.action.StateChangeAction, boolean);
+}

@@ -1,0 +1,13 @@
+Compiled from "CallSiteDescriptor.java"
+public class jdk.dynalink.CallSiteDescriptor extends jdk.dynalink.SecureLookupSupplier {
+  public jdk.dynalink.CallSiteDescriptor(java.lang.invoke.MethodHandles$Lookup, jdk.dynalink.Operation, java.lang.invoke.MethodType);
+  public final jdk.dynalink.Operation getOperation();
+  public final java.lang.invoke.MethodType getMethodType();
+  public final jdk.dynalink.CallSiteDescriptor changeMethodType(java.lang.invoke.MethodType);
+  protected jdk.dynalink.CallSiteDescriptor changeMethodTypeInternal(java.lang.invoke.MethodType);
+  public final jdk.dynalink.CallSiteDescriptor changeOperation(jdk.dynalink.Operation);
+  protected jdk.dynalink.CallSiteDescriptor changeOperationInternal(jdk.dynalink.Operation);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

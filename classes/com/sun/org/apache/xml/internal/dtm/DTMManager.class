@@ -1,0 +1,32 @@
+Compiled from "DTMManager.java"
+public abstract class com.sun.org.apache.xml.internal.dtm.DTMManager {
+  protected com.sun.org.apache.xml.internal.utils.XMLStringFactory m_xsf;
+  public boolean m_incremental;
+  public boolean m_source_location;
+  public static final int IDENT_DTM_NODE_BITS;
+  public static final int IDENT_NODE_DEFAULT;
+  public static final int IDENT_DTM_DEFAULT;
+  public static final int IDENT_MAX_DTMS;
+  protected com.sun.org.apache.xml.internal.dtm.DTMManager();
+  public com.sun.org.apache.xml.internal.utils.XMLStringFactory getXMLStringFactory();
+  public void setXMLStringFactory(com.sun.org.apache.xml.internal.utils.XMLStringFactory);
+  public static com.sun.org.apache.xml.internal.dtm.DTMManager newInstance(com.sun.org.apache.xml.internal.utils.XMLStringFactory) throws com.sun.org.apache.xml.internal.dtm.DTMException;
+  public abstract com.sun.org.apache.xml.internal.dtm.DTM getDTM(javax.xml.transform.Source, boolean, com.sun.org.apache.xml.internal.dtm.DTMWSFilter, boolean, boolean);
+  public abstract com.sun.org.apache.xml.internal.dtm.DTM getDTM(int);
+  public abstract int getDTMHandleFromNode(org.w3c.dom.Node);
+  public abstract com.sun.org.apache.xml.internal.dtm.DTM createDocumentFragment();
+  public abstract boolean release(com.sun.org.apache.xml.internal.dtm.DTM, boolean);
+  public abstract com.sun.org.apache.xml.internal.dtm.DTMIterator createDTMIterator(java.lang.Object, int);
+  public abstract com.sun.org.apache.xml.internal.dtm.DTMIterator createDTMIterator(java.lang.String, com.sun.org.apache.xml.internal.utils.PrefixResolver);
+  public abstract com.sun.org.apache.xml.internal.dtm.DTMIterator createDTMIterator(int, com.sun.org.apache.xml.internal.dtm.DTMFilter, boolean);
+  public abstract com.sun.org.apache.xml.internal.dtm.DTMIterator createDTMIterator(int);
+  public boolean getIncremental();
+  public void setIncremental(boolean);
+  public boolean getSource_location();
+  public void setSource_location(boolean);
+  public boolean overrideDefaultParser();
+  public void setOverrideDefaultParser(boolean);
+  public abstract int getDTMIdentity(com.sun.org.apache.xml.internal.dtm.DTM);
+  public int getDTMIdentityMask();
+  public int getNodeIdentityMask();
+}

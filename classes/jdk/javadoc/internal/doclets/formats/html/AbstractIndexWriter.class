@@ -1,0 +1,23 @@
+Compiled from "AbstractIndexWriter.java"
+public class jdk.javadoc.internal.doclets.formats.html.AbstractIndexWriter extends jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter {
+  protected jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder indexbuilder;
+  protected jdk.javadoc.internal.doclets.formats.html.markup.Navigation navBar;
+  protected jdk.javadoc.internal.doclets.formats.html.AbstractIndexWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath, jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder);
+  protected void addContents(java.lang.Character, java.util.Collection<? extends javax.lang.model.element.Element>, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addSearchContents(java.lang.Character, java.util.List<jdk.javadoc.internal.doclets.formats.html.SearchIndexItem>, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addContents(java.lang.Character, java.util.List<? extends javax.lang.model.element.Element>, java.util.List<jdk.javadoc.internal.doclets.formats.html.SearchIndexItem>, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addHeading(java.lang.Character, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addDescription(jdk.javadoc.internal.doclets.toolkit.Content, javax.lang.model.element.Element);
+  protected void addDescription(javax.lang.model.element.ModuleElement, jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.formats.html.SearchIndexItem);
+  protected void addDescription(javax.lang.model.element.PackageElement, jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.formats.html.SearchIndexItem);
+  protected void addDescription(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.formats.html.SearchIndexItem);
+  protected void addClassInfo(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addDescription(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.formats.html.SearchIndexItem);
+  protected void addDescription(jdk.javadoc.internal.doclets.formats.html.SearchIndexItem, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addComment(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addMemberDesc(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.toolkit.Content getMarkerAnchorForIndex(java.lang.String);
+  public java.lang.String getNameForIndex(java.lang.String);
+  protected void createSearchIndexFiles() throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void createSearchIndexFile(jdk.javadoc.internal.doclets.toolkit.util.DocPath, jdk.javadoc.internal.doclets.toolkit.util.DocPath, jdk.javadoc.internal.doclets.toolkit.util.DocPath, java.util.Collection<jdk.javadoc.internal.doclets.formats.html.SearchIndexItem>, java.lang.String) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+}

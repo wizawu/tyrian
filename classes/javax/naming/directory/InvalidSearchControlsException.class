@@ -1,0 +1,5 @@
+Compiled from "InvalidSearchControlsException.java"
+public class javax.naming.directory.InvalidSearchControlsException extends javax.naming.NamingException {
+  public javax.naming.directory.InvalidSearchControlsException();
+  public javax.naming.directory.InvalidSearchControlsException(java.lang.String);
+}

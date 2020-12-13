@@ -1,0 +1,5 @@
+Compiled from "FormatData_fi_FI.java"
+public class sun.text.resources.ext.FormatData_fi_FI extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_fi_FI();
+  protected final java.lang.Object[][] getContents();
+}

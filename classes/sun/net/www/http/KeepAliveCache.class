@@ -1,0 +1,14 @@
+Compiled from "KeepAliveCache.java"
+public class sun.net.www.http.KeepAliveCache extends java.util.HashMap<sun.net.www.http.KeepAliveKey, sun.net.www.http.ClientVector> implements java.lang.Runnable {
+  static final int MAX_CONNECTIONS;
+  static int result;
+  static final int LIFETIME;
+  static int getMaxConnections();
+  public sun.net.www.http.KeepAliveCache();
+  public synchronized void put(java.net.URL, java.lang.Object, sun.net.www.http.HttpClient);
+  public synchronized void remove(sun.net.www.http.HttpClient, java.lang.Object);
+  synchronized void removeVector(sun.net.www.http.KeepAliveKey);
+  public synchronized sun.net.www.http.HttpClient get(java.net.URL, java.lang.Object);
+  public void run();
+  static {};
+}

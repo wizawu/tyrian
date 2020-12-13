@@ -1,0 +1,25 @@
+Compiled from "DkCrypto.java"
+public abstract class sun.security.krb5.internal.crypto.dk.DkCrypto {
+  protected static final boolean debug;
+  static final byte[] KERBEROS_CONSTANT;
+  public sun.security.krb5.internal.crypto.dk.DkCrypto();
+  protected abstract int getKeySeedLength();
+  protected abstract byte[] randomToKey(byte[]);
+  protected abstract javax.crypto.Cipher getCipher(byte[], byte[], int) throws java.security.GeneralSecurityException;
+  public abstract int getChecksumLength();
+  protected abstract byte[] getHmac(byte[], byte[]) throws java.security.GeneralSecurityException;
+  public byte[] encrypt(byte[], int, byte[], byte[], byte[], int, int) throws java.security.GeneralSecurityException, sun.security.krb5.KrbCryptoException;
+  public byte[] encryptRaw(byte[], int, byte[], byte[], int, int) throws java.security.GeneralSecurityException, sun.security.krb5.KrbCryptoException;
+  public byte[] decryptRaw(byte[], int, byte[], byte[], int, int) throws java.security.GeneralSecurityException;
+  public byte[] decrypt(byte[], int, byte[], byte[], int, int) throws java.security.GeneralSecurityException;
+  int roundup(int, int);
+  public byte[] calculateChecksum(byte[], int, byte[], int, int) throws java.security.GeneralSecurityException;
+  byte[] dk(byte[], byte[]) throws java.security.GeneralSecurityException;
+  protected byte[] dr(byte[], byte[]) throws java.security.GeneralSecurityException;
+  static byte[] nfold(byte[], int);
+  static java.lang.String bytesToString(byte[]);
+  static void traceOutput(java.lang.String, byte[], int, int);
+  static byte[] charToUtf8(char[]);
+  static byte[] charToUtf16(char[]);
+  static {};
+}

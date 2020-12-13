@@ -1,0 +1,10 @@
+Compiled from "VariableTreeImpl.java"
+final class jdk.nashorn.api.tree.VariableTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.VariableTree {
+  jdk.nashorn.api.tree.VariableTreeImpl(jdk.nashorn.internal.ir.VarNode, jdk.nashorn.api.tree.IdentifierTree, jdk.nashorn.api.tree.ExpressionTree);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public jdk.nashorn.api.tree.ExpressionTree getBinding();
+  public jdk.nashorn.api.tree.ExpressionTree getInitializer();
+  public boolean isConst();
+  public boolean isLet();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

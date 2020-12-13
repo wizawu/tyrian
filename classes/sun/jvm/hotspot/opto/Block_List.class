@@ -1,0 +1,6 @@
+Compiled from "Block_List.java"
+public class sun.jvm.hotspot.opto.Block_List extends sun.jvm.hotspot.opto.Block_Array {
+  public sun.jvm.hotspot.opto.Block_List(sun.jvm.hotspot.debugger.Address);
+  public int size();
+  static {};
+}

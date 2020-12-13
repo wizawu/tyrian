@@ -1,0 +1,9 @@
+Compiled from "WriteableUserPath.java"
+public final class jdk.jfr.internal.WriteableUserPath {
+  public jdk.jfr.internal.WriteableUserPath(java.nio.file.Path) throws java.io.IOException;
+  public java.nio.file.Path getPotentiallyMaliciousOriginal();
+  public java.lang.String getRealPathText();
+  public java.lang.String getOriginalText();
+  public java.nio.file.Path getReal();
+  public void doPriviligedIO(java.util.concurrent.Callable<?>) throws java.io.IOException;
+}

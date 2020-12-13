@@ -1,0 +1,5 @@
+Compiled from "JarException.java"
+public class java.util.jar.JarException extends java.util.zip.ZipException {
+  public java.util.jar.JarException();
+  public java.util.jar.JarException(java.lang.String);
+}

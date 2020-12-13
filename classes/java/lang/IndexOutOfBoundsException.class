@@ -1,0 +1,6 @@
+Compiled from "IndexOutOfBoundsException.java"
+public class java.lang.IndexOutOfBoundsException extends java.lang.RuntimeException {
+  public java.lang.IndexOutOfBoundsException();
+  public java.lang.IndexOutOfBoundsException(java.lang.String);
+  public java.lang.IndexOutOfBoundsException(int);
+}

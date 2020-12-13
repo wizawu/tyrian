@@ -1,0 +1,17 @@
+Compiled from "PushGroup.java"
+class jdk.internal.net.http.PushGroup<T> {
+  final java.util.concurrent.CompletableFuture<java.lang.Void> noMorePushesCF;
+  volatile java.lang.Throwable error;
+  final java.net.http.HttpResponse$PushPromiseHandler<T> pushPromiseHandler;
+  int numberOfPushes;
+  int remainingPushes;
+  boolean noMorePushes;
+  jdk.internal.net.http.PushGroup(java.net.http.HttpResponse$PushPromiseHandler<T>, jdk.internal.net.http.HttpRequestImpl, java.util.concurrent.Executor);
+  jdk.internal.net.http.PushGroup$Acceptor<T> acceptPushRequest(java.net.http.HttpRequest);
+  synchronized void noMorePushes(boolean);
+  synchronized java.util.concurrent.CompletableFuture<java.lang.Void> pushesCF();
+  synchronized boolean noMorePushes();
+  synchronized void pushCompleted();
+  synchronized void checkIfCompleted();
+  synchronized void pushError(java.lang.Throwable);
+}

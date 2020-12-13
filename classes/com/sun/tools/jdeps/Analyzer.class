@@ -1,0 +1,19 @@
+Compiled from "Analyzer.java"
+public class com.sun.tools.jdeps.Analyzer {
+  protected final com.sun.tools.jdeps.JdepsConfiguration configuration;
+  protected final com.sun.tools.jdeps.Analyzer$Type type;
+  protected final com.sun.tools.jdeps.Analyzer$Filter filter;
+  protected final java.util.Map<com.sun.tools.jdeps.Archive, com.sun.tools.jdeps.Analyzer$Dependences> results;
+  protected final java.util.Map<com.sun.tools.classfile.Dependency$Location, com.sun.tools.jdeps.Archive> locationToArchive;
+  static final com.sun.tools.jdeps.Archive NOT_FOUND;
+  static final com.sun.tools.jdeps.Analyzer$Jdk8Internals REMOVED_JDK_INTERNALS;
+  com.sun.tools.jdeps.Analyzer(com.sun.tools.jdeps.JdepsConfiguration, com.sun.tools.jdeps.Analyzer$Type, com.sun.tools.jdeps.Analyzer$Filter);
+  boolean run(java.lang.Iterable<? extends com.sun.tools.jdeps.Archive>, java.util.Map<com.sun.tools.classfile.Dependency$Location, com.sun.tools.jdeps.Archive>);
+  java.util.Set<com.sun.tools.jdeps.Archive> archives();
+  boolean hasDependences(com.sun.tools.jdeps.Archive);
+  java.util.Set<java.lang.String> dependences(com.sun.tools.jdeps.Archive);
+  java.util.stream.Stream<com.sun.tools.jdeps.Archive> requires(com.sun.tools.jdeps.Archive);
+  void visitDependences(com.sun.tools.jdeps.Archive, com.sun.tools.jdeps.Analyzer$Visitor, com.sun.tools.jdeps.Analyzer$Type);
+  void visitDependences(com.sun.tools.jdeps.Archive, com.sun.tools.jdeps.Analyzer$Visitor);
+  static {};
+}

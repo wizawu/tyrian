@@ -1,0 +1,18 @@
+Compiled from "BasicValue.java"
+public class jdk.internal.org.objectweb.asm.tree.analysis.BasicValue implements jdk.internal.org.objectweb.asm.tree.analysis.Value {
+  public static final jdk.internal.org.objectweb.asm.tree.analysis.BasicValue UNINITIALIZED_VALUE;
+  public static final jdk.internal.org.objectweb.asm.tree.analysis.BasicValue INT_VALUE;
+  public static final jdk.internal.org.objectweb.asm.tree.analysis.BasicValue FLOAT_VALUE;
+  public static final jdk.internal.org.objectweb.asm.tree.analysis.BasicValue LONG_VALUE;
+  public static final jdk.internal.org.objectweb.asm.tree.analysis.BasicValue DOUBLE_VALUE;
+  public static final jdk.internal.org.objectweb.asm.tree.analysis.BasicValue REFERENCE_VALUE;
+  public static final jdk.internal.org.objectweb.asm.tree.analysis.BasicValue RETURNADDRESS_VALUE;
+  public jdk.internal.org.objectweb.asm.tree.analysis.BasicValue(jdk.internal.org.objectweb.asm.Type);
+  public jdk.internal.org.objectweb.asm.Type getType();
+  public int getSize();
+  public boolean isReference();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  static {};
+}

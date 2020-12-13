@@ -1,0 +1,7 @@
+Compiled from "LayoutComparator.java"
+final class javax.swing.LayoutComparator implements java.util.Comparator<java.awt.Component>, java.io.Serializable {
+  javax.swing.LayoutComparator();
+  void setComponentOrientation(java.awt.ComponentOrientation);
+  public int compare(java.awt.Component, java.awt.Component);
+  public int compare(java.lang.Object, java.lang.Object);
+}

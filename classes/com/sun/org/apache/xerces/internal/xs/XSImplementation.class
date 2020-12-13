@@ -1,0 +1,5 @@
+Compiled from "XSImplementation.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSImplementation {
+  public abstract com.sun.org.apache.xerces.internal.xs.StringList getRecognizedVersions();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSLoader createXSLoader(com.sun.org.apache.xerces.internal.xs.StringList) throws com.sun.org.apache.xerces.internal.xs.XSException;
+}

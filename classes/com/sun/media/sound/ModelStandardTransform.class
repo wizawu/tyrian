@@ -1,0 +1,23 @@
+Compiled from "ModelStandardTransform.java"
+public final class com.sun.media.sound.ModelStandardTransform implements com.sun.media.sound.ModelTransform {
+  public static final boolean DIRECTION_MIN2MAX;
+  public static final boolean DIRECTION_MAX2MIN;
+  public static final boolean POLARITY_UNIPOLAR;
+  public static final boolean POLARITY_BIPOLAR;
+  public static final int TRANSFORM_LINEAR;
+  public static final int TRANSFORM_CONCAVE;
+  public static final int TRANSFORM_CONVEX;
+  public static final int TRANSFORM_SWITCH;
+  public static final int TRANSFORM_ABSOLUTE;
+  public com.sun.media.sound.ModelStandardTransform();
+  public com.sun.media.sound.ModelStandardTransform(boolean);
+  public com.sun.media.sound.ModelStandardTransform(boolean, boolean);
+  public com.sun.media.sound.ModelStandardTransform(boolean, boolean, int);
+  public double transform(double);
+  public boolean getDirection();
+  public void setDirection(boolean);
+  public boolean getPolarity();
+  public void setPolarity(boolean);
+  public int getTransform();
+  public void setTransform(int);
+}

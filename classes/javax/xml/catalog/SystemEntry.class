@@ -1,0 +1,11 @@
+Compiled from "SystemEntry.java"
+final class javax.xml.catalog.SystemEntry extends javax.xml.catalog.BaseEntry {
+  java.lang.String systemId;
+  java.net.URL uri;
+  public javax.xml.catalog.SystemEntry(java.lang.String, java.lang.String, java.lang.String);
+  public void setSystemId(java.lang.String);
+  public void setURI(java.lang.String);
+  public java.lang.String getSystemId();
+  public java.net.URL getURI();
+  public java.lang.String match(java.lang.String);
+}

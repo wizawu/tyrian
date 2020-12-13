@@ -1,0 +1,4 @@
+Compiled from "JavaObjectInputStreamAccess.java"
+public interface jdk.internal.misc.JavaObjectInputStreamAccess {
+  public abstract void checkArray(java.io.ObjectInputStream, java.lang.Class<?>, int) throws java.io.InvalidClassException;
+}

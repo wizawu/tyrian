@@ -1,0 +1,9 @@
+Compiled from "BooleanValueExp.java"
+class javax.management.BooleanValueExp extends javax.management.QueryEval implements javax.management.ValueExp {
+  javax.management.BooleanValueExp(boolean);
+  javax.management.BooleanValueExp(java.lang.Boolean);
+  public java.lang.Boolean getValue();
+  public java.lang.String toString();
+  public javax.management.ValueExp apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
+  public void setMBeanServer(javax.management.MBeanServer);
+}

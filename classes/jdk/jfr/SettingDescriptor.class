@@ -1,0 +1,15 @@
+Compiled from "SettingDescriptor.java"
+public final class jdk.jfr.SettingDescriptor {
+  jdk.jfr.SettingDescriptor(jdk.jfr.internal.Type, java.lang.String, java.lang.String, java.util.List<jdk.jfr.AnnotationElement>);
+  void setAnnotations(java.util.List<jdk.jfr.AnnotationElement>);
+  public java.lang.String getName();
+  public java.lang.String getLabel();
+  public java.lang.String getDescription();
+  public java.lang.String getContentType();
+  public java.lang.String getTypeName();
+  public long getTypeId();
+  public <A extends java.lang.annotation.Annotation> A getAnnotation(java.lang.Class<A>);
+  public java.util.List<jdk.jfr.AnnotationElement> getAnnotationElements();
+  public java.lang.String getDefaultValue();
+  jdk.jfr.internal.Type getType();
+}

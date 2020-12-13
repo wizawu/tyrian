@@ -1,0 +1,12 @@
+Compiled from "ElementVisitor.java"
+public interface javax.lang.model.element.ElementVisitor<R, P> {
+  public abstract R visit(javax.lang.model.element.Element, P);
+  public default R visit(javax.lang.model.element.Element);
+  public abstract R visitPackage(javax.lang.model.element.PackageElement, P);
+  public abstract R visitType(javax.lang.model.element.TypeElement, P);
+  public abstract R visitVariable(javax.lang.model.element.VariableElement, P);
+  public abstract R visitExecutable(javax.lang.model.element.ExecutableElement, P);
+  public abstract R visitTypeParameter(javax.lang.model.element.TypeParameterElement, P);
+  public abstract R visitUnknown(javax.lang.model.element.Element, P);
+  public default R visitModule(javax.lang.model.element.ModuleElement, P);
+}

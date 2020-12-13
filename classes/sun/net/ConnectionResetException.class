@@ -1,0 +1,5 @@
+Compiled from "ConnectionResetException.java"
+public class sun.net.ConnectionResetException extends java.net.SocketException {
+  public sun.net.ConnectionResetException(java.lang.String);
+  public sun.net.ConnectionResetException();
+}

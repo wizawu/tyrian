@@ -1,0 +1,16 @@
+Compiled from "CCacheInputStream.java"
+public class sun.security.krb5.internal.ccache.CCacheInputStream extends sun.security.krb5.internal.util.KrbDataInputStream implements sun.security.krb5.internal.ccache.FileCCacheConstants {
+  public sun.security.krb5.internal.ccache.CCacheInputStream(java.io.InputStream);
+  public sun.security.krb5.internal.ccache.Tag readTag() throws java.io.IOException;
+  public sun.security.krb5.PrincipalName readPrincipal(int) throws java.io.IOException, sun.security.krb5.RealmException;
+  boolean isRealm(java.lang.String);
+  sun.security.krb5.EncryptionKey readKey(int) throws java.io.IOException;
+  long[] readTimes() throws java.io.IOException;
+  boolean readskey() throws java.io.IOException;
+  sun.security.krb5.internal.HostAddress[] readAddr() throws java.io.IOException, sun.security.krb5.internal.KrbApErrException;
+  sun.security.krb5.internal.AuthorizationDataEntry[] readAuth() throws java.io.IOException;
+  byte[] readData() throws java.io.IOException;
+  boolean[] readFlags() throws java.io.IOException;
+  java.lang.Object readCred(int) throws java.io.IOException, sun.security.krb5.RealmException, sun.security.krb5.internal.KrbApErrException, sun.security.krb5.Asn1Exception;
+  static {};
+}

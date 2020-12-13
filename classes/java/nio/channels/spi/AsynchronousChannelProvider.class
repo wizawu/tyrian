@@ -1,0 +1,9 @@
+Compiled from "AsynchronousChannelProvider.java"
+public abstract class java.nio.channels.spi.AsynchronousChannelProvider {
+  protected java.nio.channels.spi.AsynchronousChannelProvider();
+  public static java.nio.channels.spi.AsynchronousChannelProvider provider();
+  public abstract java.nio.channels.AsynchronousChannelGroup openAsynchronousChannelGroup(int, java.util.concurrent.ThreadFactory) throws java.io.IOException;
+  public abstract java.nio.channels.AsynchronousChannelGroup openAsynchronousChannelGroup(java.util.concurrent.ExecutorService, int) throws java.io.IOException;
+  public abstract java.nio.channels.AsynchronousServerSocketChannel openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException;
+  public abstract java.nio.channels.AsynchronousSocketChannel openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException;
+}

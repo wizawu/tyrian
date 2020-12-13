@@ -1,0 +1,4 @@
+Compiled from "ScreenSleepEvent.java"
+public final class java.awt.desktop.ScreenSleepEvent extends java.awt.desktop.AppEvent {
+  public java.awt.desktop.ScreenSleepEvent();
+}

@@ -1,0 +1,8 @@
+Compiled from "SynthCheckBoxMenuItemUI.java"
+public class javax.swing.plaf.synth.SynthCheckBoxMenuItemUI extends javax.swing.plaf.synth.SynthMenuItemUI {
+  public javax.swing.plaf.synth.SynthCheckBoxMenuItemUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected java.lang.String getPropertyPrefix();
+  void paintBackground(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, javax.swing.JComponent);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+}

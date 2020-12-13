@@ -1,0 +1,29 @@
+Compiled from "TCPEndpoint.java"
+public class sun.rmi.transport.tcp.TCPEndpoint implements sun.rmi.transport.Endpoint {
+  public sun.rmi.transport.tcp.TCPEndpoint(java.lang.String, int);
+  public sun.rmi.transport.tcp.TCPEndpoint(java.lang.String, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory);
+  public static sun.rmi.transport.tcp.TCPEndpoint getLocalEndpoint(int);
+  public static sun.rmi.transport.tcp.TCPEndpoint getLocalEndpoint(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory);
+  static void setLocalHost(java.lang.String);
+  static void setDefaultPort(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory);
+  public sun.rmi.transport.Transport getOutboundTransport();
+  public static void shedConnectionCaches();
+  public void exportObject(sun.rmi.transport.Target) throws java.rmi.RemoteException;
+  public sun.rmi.transport.Channel getChannel();
+  public java.lang.String getHost();
+  public int getPort();
+  public int getListenPort();
+  public sun.rmi.transport.Transport getInboundTransport();
+  public java.rmi.server.RMIClientSocketFactory getClientSocketFactory();
+  public java.rmi.server.RMIServerSocketFactory getServerSocketFactory();
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public void write(java.io.ObjectOutput) throws java.io.IOException;
+  public static sun.rmi.transport.tcp.TCPEndpoint read(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+  public void writeHostPortFormat(java.io.DataOutput) throws java.io.IOException;
+  public static sun.rmi.transport.tcp.TCPEndpoint readHostPortFormat(java.io.DataInput) throws java.io.IOException;
+  java.net.Socket newSocket() throws java.rmi.RemoteException;
+  java.net.ServerSocket newServerSocket() throws java.io.IOException;
+  static {};
+}

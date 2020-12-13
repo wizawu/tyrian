@@ -1,0 +1,13 @@
+Compiled from "JarEntry.java"
+public class java.util.jar.JarEntry extends java.util.zip.ZipEntry {
+  java.util.jar.Attributes attr;
+  java.security.cert.Certificate[] certs;
+  java.security.CodeSigner[] signers;
+  public java.util.jar.JarEntry(java.lang.String);
+  public java.util.jar.JarEntry(java.util.zip.ZipEntry);
+  public java.util.jar.JarEntry(java.util.jar.JarEntry);
+  public java.util.jar.Attributes getAttributes() throws java.io.IOException;
+  public java.security.cert.Certificate[] getCertificates();
+  public java.security.CodeSigner[] getCodeSigners();
+  public java.lang.String getRealName();
+}

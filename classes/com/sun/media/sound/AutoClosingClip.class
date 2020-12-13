@@ -1,0 +1,5 @@
+Compiled from "AutoClosingClip.java"
+interface com.sun.media.sound.AutoClosingClip extends javax.sound.sampled.Clip {
+  public abstract boolean isAutoClosing();
+  public abstract void setAutoClosing(boolean);
+}

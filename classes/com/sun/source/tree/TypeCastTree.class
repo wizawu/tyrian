@@ -1,0 +1,5 @@
+Compiled from "TypeCastTree.java"
+public interface com.sun.source.tree.TypeCastTree extends com.sun.source.tree.ExpressionTree {
+  public abstract com.sun.source.tree.Tree getType();
+  public abstract com.sun.source.tree.ExpressionTree getExpression();
+}

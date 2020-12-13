@@ -1,0 +1,16 @@
+Compiled from "CryptoPrimitive.java"
+public final class java.security.CryptoPrimitive extends java.lang.Enum<java.security.CryptoPrimitive> {
+  public static final java.security.CryptoPrimitive MESSAGE_DIGEST;
+  public static final java.security.CryptoPrimitive SECURE_RANDOM;
+  public static final java.security.CryptoPrimitive BLOCK_CIPHER;
+  public static final java.security.CryptoPrimitive STREAM_CIPHER;
+  public static final java.security.CryptoPrimitive MAC;
+  public static final java.security.CryptoPrimitive KEY_WRAP;
+  public static final java.security.CryptoPrimitive PUBLIC_KEY_ENCRYPTION;
+  public static final java.security.CryptoPrimitive SIGNATURE;
+  public static final java.security.CryptoPrimitive KEY_ENCAPSULATION;
+  public static final java.security.CryptoPrimitive KEY_AGREEMENT;
+  public static java.security.CryptoPrimitive[] values();
+  public static java.security.CryptoPrimitive valueOf(java.lang.String);
+  static {};
+}

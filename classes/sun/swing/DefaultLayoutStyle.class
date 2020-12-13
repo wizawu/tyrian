@@ -1,0 +1,15 @@
+Compiled from "DefaultLayoutStyle.java"
+public class sun.swing.DefaultLayoutStyle extends javax.swing.LayoutStyle {
+  static final boolean $assertionsDisabled;
+  public sun.swing.DefaultLayoutStyle();
+  public static javax.swing.LayoutStyle getInstance();
+  public int getPreferredGap(javax.swing.JComponent, javax.swing.JComponent, javax.swing.LayoutStyle$ComponentPlacement, int, java.awt.Container);
+  public int getContainerGap(javax.swing.JComponent, int, java.awt.Container);
+  protected boolean isLabelAndNonlabel(javax.swing.JComponent, javax.swing.JComponent, int);
+  protected int getButtonGap(javax.swing.JComponent, javax.swing.JComponent, int, int);
+  protected int getButtonGap(javax.swing.JComponent, int, int);
+  public int getButtonGap(javax.swing.JComponent, int);
+  protected int flipDirection(int);
+  protected int getIndent(javax.swing.JComponent, int);
+  static {};
+}

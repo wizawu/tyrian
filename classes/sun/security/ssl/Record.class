@@ -1,0 +1,28 @@
+Compiled from "Record.java"
+interface sun.security.ssl.Record {
+  public static final int maxMacSize;
+  public static final int maxDataSize;
+  public static final int maxPadding;
+  public static final int maxIVLength;
+  public static final int maxFragmentSize;
+  public static final boolean enableCBCProtection;
+  public static final int OVERFLOW_OF_INT08;
+  public static final int OVERFLOW_OF_INT16;
+  public static final int OVERFLOW_OF_INT24;
+  public static int getInt8(java.nio.ByteBuffer) throws java.io.IOException;
+  public static int getInt16(java.nio.ByteBuffer) throws java.io.IOException;
+  public static int getInt24(java.nio.ByteBuffer) throws java.io.IOException;
+  public static int getInt32(java.nio.ByteBuffer) throws java.io.IOException;
+  public static byte[] getBytes8(java.nio.ByteBuffer) throws java.io.IOException;
+  public static byte[] getBytes16(java.nio.ByteBuffer) throws java.io.IOException;
+  public static byte[] getBytes24(java.nio.ByteBuffer) throws java.io.IOException;
+  public static void putInt8(java.nio.ByteBuffer, int) throws java.io.IOException;
+  public static void putInt16(java.nio.ByteBuffer, int) throws java.io.IOException;
+  public static void putInt24(java.nio.ByteBuffer, int) throws java.io.IOException;
+  public static void putInt32(java.nio.ByteBuffer, int) throws java.io.IOException;
+  public static void putBytes8(java.nio.ByteBuffer, byte[]) throws java.io.IOException;
+  public static void putBytes16(java.nio.ByteBuffer, byte[]) throws java.io.IOException;
+  public static void putBytes24(java.nio.ByteBuffer, byte[]) throws java.io.IOException;
+  public static void verifyLength(java.nio.ByteBuffer, int) throws javax.net.ssl.SSLException;
+  static {};
+}

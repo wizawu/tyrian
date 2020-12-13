@@ -1,0 +1,6 @@
+Compiled from "GetPropertyAction.java"
+public class com.sun.jmx.mbeanserver.GetPropertyAction implements java.security.PrivilegedAction<java.lang.String> {
+  public com.sun.jmx.mbeanserver.GetPropertyAction(java.lang.String);
+  public java.lang.String run();
+  public java.lang.Object run();
+}

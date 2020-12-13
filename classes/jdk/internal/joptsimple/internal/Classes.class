@@ -1,0 +1,6 @@
+Compiled from "Classes.java"
+public final class jdk.internal.joptsimple.internal.Classes {
+  public static java.lang.String shortNameOf(java.lang.String);
+  public static <T> java.lang.Class<T> wrapperOf(java.lang.Class<T>);
+  static {};
+}

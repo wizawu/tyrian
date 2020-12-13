@@ -1,0 +1,5 @@
+Compiled from "LdapSasl.java"
+public final class com.sun.jndi.ldap.sasl.LdapSasl {
+  public static com.sun.jndi.ldap.LdapResult saslBind(com.sun.jndi.ldap.LdapClient, com.sun.jndi.ldap.Connection, java.lang.String, java.lang.String, java.lang.Object, java.lang.String, java.util.Hashtable<?, ?>, javax.naming.ldap.Control[]) throws java.io.IOException, javax.naming.NamingException;
+  static {};
+}

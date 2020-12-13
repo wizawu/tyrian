@@ -1,0 +1,26 @@
+Compiled from "MotifDnDDropTargetProtocol.java"
+class sun.awt.X11.MotifDnDDropTargetProtocol extends sun.awt.X11.XDropTargetProtocol {
+  static final boolean $assertionsDisabled;
+  protected sun.awt.X11.MotifDnDDropTargetProtocol(sun.awt.X11.XDropTargetProtocolListener);
+  static sun.awt.X11.XDropTargetProtocol createInstance(sun.awt.X11.XDropTargetProtocolListener);
+  public java.lang.String getProtocolName();
+  public void registerDropTarget(long);
+  public void unregisterDropTarget(long);
+  public void registerEmbedderDropSite(long);
+  public void unregisterEmbedderDropSite(long);
+  public void registerEmbeddedDropSite(long);
+  public boolean isProtocolSupported(long);
+  public int getMessageType(sun.awt.X11.XClientMessageEvent);
+  protected boolean processClientMessageImpl(sun.awt.X11.XClientMessageEvent);
+  protected void sendEnterMessageToToplevel(long, sun.awt.X11.XClientMessageEvent);
+  protected void sendLeaveMessageToToplevel(long, sun.awt.X11.XClientMessageEvent);
+  public boolean forwardEventToEmbedded(long, long, int);
+  public boolean isXEmbedSupported();
+  public boolean sendResponse(long, int, int);
+  public java.lang.Object getData(long, long) throws java.lang.IllegalArgumentException, java.io.IOException;
+  public boolean sendDropDone(long, boolean, int);
+  public final long getSourceWindow();
+  public void cleanup();
+  public boolean isDragOverComponent();
+  static {};
+}

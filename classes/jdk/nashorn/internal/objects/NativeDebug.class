@@ -1,0 +1,28 @@
+Compiled from "NativeDebug.java"
+public final class jdk.nashorn.internal.objects.NativeDebug extends jdk.nashorn.internal.runtime.ScriptObject {
+  public java.lang.String getClassName();
+  public static java.lang.Object getArrayDataClass(java.lang.Object, java.lang.Object);
+  public static java.lang.Object getArrayData(java.lang.Object, java.lang.Object);
+  public static java.lang.Object getContext(java.lang.Object);
+  public static java.lang.Object map(java.lang.Object, java.lang.Object);
+  public static boolean identical(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.Object equalWithoutType(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.Object diffPropertyMaps(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.Object getClass(java.lang.Object, java.lang.Object);
+  public static boolean equals(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.String toJavaString(java.lang.Object, java.lang.Object);
+  public static java.lang.String toIdentString(java.lang.Object, java.lang.Object);
+  public static java.lang.Object isDebuggableFunction(java.lang.Object, java.lang.Object);
+  public static int getListenerCount(java.lang.Object, java.lang.Object);
+  public static java.lang.Object dumpCounters(java.lang.Object);
+  public static java.lang.Object getEventQueueCapacity(java.lang.Object);
+  public static void setEventQueueCapacity(java.lang.Object, java.lang.Object);
+  public static void addRuntimeEvent(java.lang.Object, java.lang.Object);
+  public static void expandEventQueueCapacity(java.lang.Object, java.lang.Object);
+  public static void clearRuntimeEvents(java.lang.Object);
+  public static void removeRuntimeEvent(java.lang.Object, java.lang.Object);
+  public static java.lang.Object getRuntimeEvents(java.lang.Object);
+  public static java.lang.Object getLastRuntimeEvent(java.lang.Object);
+  public static {};
+  public static void $clinit$();
+}

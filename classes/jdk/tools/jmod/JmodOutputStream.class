@@ -1,0 +1,9 @@
+Compiled from "JmodOutputStream.java"
+class jdk.tools.jmod.JmodOutputStream extends java.io.OutputStream implements java.lang.AutoCloseable {
+  static jdk.tools.jmod.JmodOutputStream newOutputStream(java.nio.file.Path) throws java.io.IOException;
+  public void writeEntry(java.io.InputStream, jdk.internal.jmod.JmodFile$Section, java.lang.String) throws java.io.IOException;
+  public void writeEntry(byte[], jdk.internal.jmod.JmodFile$Section, java.lang.String) throws java.io.IOException;
+  public void writeEntry(java.io.InputStream, jdk.internal.jmod.JmodFile$Entry) throws java.io.IOException;
+  public void write(int) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

@@ -1,0 +1,4 @@
+Compiled from "ControllerEventListener.java"
+public interface javax.sound.midi.ControllerEventListener extends java.util.EventListener {
+  public abstract void controlChange(javax.sound.midi.ShortMessage);
+}

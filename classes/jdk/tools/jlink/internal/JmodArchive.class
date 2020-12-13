@@ -1,0 +1,9 @@
+Compiled from "JmodArchive.java"
+public class jdk.tools.jlink.internal.JmodArchive implements jdk.tools.jlink.internal.Archive {
+  public jdk.tools.jlink.internal.JmodArchive(java.lang.String, java.nio.file.Path);
+  public java.lang.String moduleName();
+  public java.nio.file.Path getPath();
+  public java.util.stream.Stream<jdk.tools.jlink.internal.Archive$Entry> entries();
+  public void open() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

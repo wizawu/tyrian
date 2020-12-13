@@ -1,0 +1,9 @@
+Compiled from "OrQueryExp.java"
+class javax.management.OrQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+  public javax.management.OrQueryExp();
+  public javax.management.OrQueryExp(javax.management.QueryExp, javax.management.QueryExp);
+  public javax.management.QueryExp getLeftExp();
+  public javax.management.QueryExp getRightExp();
+  public boolean apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
+  public java.lang.String toString();
+}

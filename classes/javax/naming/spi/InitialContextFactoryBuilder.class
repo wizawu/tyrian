@@ -1,0 +1,4 @@
+Compiled from "InitialContextFactoryBuilder.java"
+public interface javax.naming.spi.InitialContextFactoryBuilder {
+  public abstract javax.naming.spi.InitialContextFactory createInitialContextFactory(java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+}

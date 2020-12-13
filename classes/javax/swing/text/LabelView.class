@@ -1,0 +1,20 @@
+Compiled from "LabelView.java"
+public class javax.swing.text.LabelView extends javax.swing.text.GlyphView implements javax.swing.text.TabableView {
+  public javax.swing.text.LabelView(javax.swing.text.Element);
+  final void sync();
+  protected void setUnderline(boolean);
+  protected void setStrikeThrough(boolean);
+  protected void setSuperscript(boolean);
+  protected void setSubscript(boolean);
+  protected void setBackground(java.awt.Color);
+  protected void setPropertiesFromAttributes();
+  protected java.awt.FontMetrics getFontMetrics();
+  public java.awt.Color getBackground();
+  public java.awt.Color getForeground();
+  public java.awt.Font getFont();
+  public boolean isUnderline();
+  public boolean isStrikeThrough();
+  public boolean isSubscript();
+  public boolean isSuperscript();
+  public void changedUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+}

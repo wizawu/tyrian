@@ -1,0 +1,10 @@
+Compiled from "AbstractHashDrbg.java"
+public abstract class sun.security.provider.AbstractHashDrbg extends sun.security.provider.AbstractDrbg {
+  protected int outLen;
+  protected int seedLen;
+  public sun.security.provider.AbstractHashDrbg();
+  protected void chooseAlgorithmAndStrength();
+  public void instantiateAlgorithm(byte[]);
+  protected void reseedAlgorithm(byte[], byte[]);
+  protected abstract void hashReseedInternal(java.util.List<byte[]>);
+}

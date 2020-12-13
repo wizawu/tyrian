@@ -1,0 +1,4 @@
+Compiled from "SpaceClosure.java"
+public interface sun.jvm.hotspot.gc.shared.SpaceClosure {
+  public abstract void doSpace(sun.jvm.hotspot.gc.shared.Space);
+}

@@ -1,0 +1,13 @@
+Compiled from "InfoFromMemberName.java"
+final class java.lang.invoke.InfoFromMemberName implements java.lang.invoke.MethodHandleInfo {
+  static final boolean $assertionsDisabled;
+  java.lang.invoke.InfoFromMemberName(java.lang.invoke.MethodHandles$Lookup, java.lang.invoke.MemberName, byte);
+  public java.lang.Class<?> getDeclaringClass();
+  public java.lang.String getName();
+  public java.lang.invoke.MethodType getMethodType();
+  public int getModifiers();
+  public int getReferenceKind();
+  public java.lang.String toString();
+  public <T extends java.lang.reflect.Member> T reflectAs(java.lang.Class<T>, java.lang.invoke.MethodHandles$Lookup);
+  static {};
+}

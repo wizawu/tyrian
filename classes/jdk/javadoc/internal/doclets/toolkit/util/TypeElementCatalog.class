@@ -1,0 +1,15 @@
+Compiled from "TypeElementCatalog.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.TypeElementCatalog {
+  public jdk.javadoc.internal.doclets.toolkit.util.TypeElementCatalog(java.lang.Iterable<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public jdk.javadoc.internal.doclets.toolkit.util.TypeElementCatalog(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public final void addTypeElement(javax.lang.model.element.TypeElement);
+  public java.util.SortedSet<javax.lang.model.element.TypeElement> allClasses(javax.lang.model.element.PackageElement);
+  public java.util.SortedSet<javax.lang.model.element.TypeElement> allUnnamedClasses();
+  public java.util.SortedSet<javax.lang.model.element.PackageElement> packages();
+  public java.util.SortedSet<javax.lang.model.element.TypeElement> errors(javax.lang.model.element.PackageElement);
+  public java.util.SortedSet<javax.lang.model.element.TypeElement> exceptions(javax.lang.model.element.PackageElement);
+  public java.util.SortedSet<javax.lang.model.element.TypeElement> enums(javax.lang.model.element.PackageElement);
+  public java.util.SortedSet<javax.lang.model.element.TypeElement> annotationTypes(javax.lang.model.element.PackageElement);
+  public java.util.SortedSet<javax.lang.model.element.TypeElement> interfaces(javax.lang.model.element.PackageElement);
+  public java.util.SortedSet<javax.lang.model.element.TypeElement> ordinaryClasses(javax.lang.model.element.PackageElement);
+}

@@ -1,0 +1,16 @@
+Compiled from "InvokableTypeImpl.java"
+abstract class com.sun.tools.jdi.InvokableTypeImpl extends com.sun.tools.jdi.ReferenceTypeImpl {
+  com.sun.tools.jdi.InvokableTypeImpl(com.sun.jdi.VirtualMachine, long);
+  public final com.sun.jdi.Value invokeMethod(com.sun.jdi.ThreadReference, com.sun.jdi.Method, java.util.List<? extends com.sun.jdi.Value>, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException, com.sun.jdi.IncompatibleThreadStateException, com.sun.jdi.InvocationException;
+  boolean isAssignableTo(com.sun.jdi.ReferenceType);
+  final void addVisibleMethods(java.util.Map<java.lang.String, com.sun.jdi.Method>, java.util.Set<com.sun.jdi.InterfaceType>);
+  final void addInterfaces(java.util.List<com.sun.jdi.InterfaceType>);
+  final java.util.List<com.sun.jdi.InterfaceType> getAllInterfaces();
+  public final java.util.List<com.sun.jdi.Method> allMethods();
+  final java.util.List<com.sun.jdi.ReferenceType> inheritedTypes();
+  abstract com.sun.tools.jdi.CommandSender getInvokeMethodSender(com.sun.tools.jdi.ThreadReferenceImpl, com.sun.tools.jdi.MethodImpl, com.sun.tools.jdi.ValueImpl[], int);
+  abstract com.sun.tools.jdi.InvokableTypeImpl$InvocationResult waitForReply(com.sun.tools.jdi.PacketStream) throws com.sun.tools.jdi.JDWPException;
+  abstract com.sun.jdi.ClassType superclass();
+  abstract java.util.List<com.sun.jdi.InterfaceType> interfaces();
+  abstract boolean canInvoke(com.sun.jdi.Method);
+}

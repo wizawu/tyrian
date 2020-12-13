@@ -1,0 +1,6 @@
+Compiled from "ECPublicKeySpec.java"
+public class java.security.spec.ECPublicKeySpec implements java.security.spec.KeySpec {
+  public java.security.spec.ECPublicKeySpec(java.security.spec.ECPoint, java.security.spec.ECParameterSpec);
+  public java.security.spec.ECPoint getW();
+  public java.security.spec.ECParameterSpec getParams();
+}

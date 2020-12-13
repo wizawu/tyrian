@@ -1,0 +1,7 @@
+Compiled from "XLayerProtocol.java"
+public interface sun.awt.X11.XLayerProtocol {
+  public static final int LAYER_NORMAL;
+  public static final int LAYER_ALWAYS_ON_TOP;
+  public abstract boolean supportsLayer(int);
+  public abstract void setLayer(sun.awt.X11.XWindowPeer, int);
+}

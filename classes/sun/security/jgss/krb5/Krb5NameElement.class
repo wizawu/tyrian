@@ -1,0 +1,17 @@
+Compiled from "Krb5NameElement.java"
+public class sun.security.jgss.krb5.Krb5NameElement implements sun.security.jgss.spi.GSSNameSpi {
+  static sun.security.jgss.krb5.Krb5NameElement getInstance(java.lang.String, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public static sun.security.jgss.krb5.Krb5NameElement getInstance(sun.security.krb5.PrincipalName);
+  public final sun.security.krb5.PrincipalName getKrb5PrincipalName();
+  public boolean equals(sun.security.jgss.spi.GSSNameSpi) throws org.ietf.jgss.GSSException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public byte[] export() throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.Oid getMechanism();
+  public java.lang.String toString();
+  public org.ietf.jgss.Oid getGSSNameType();
+  public org.ietf.jgss.Oid getStringNameType();
+  public boolean isAnonymousName();
+  public java.security.Provider getProvider();
+  static {};
+}

@@ -1,0 +1,9 @@
+Compiled from "DOMImplementationLS.java"
+public interface org.w3c.dom.ls.DOMImplementationLS {
+  public static final short MODE_SYNCHRONOUS;
+  public static final short MODE_ASYNCHRONOUS;
+  public abstract org.w3c.dom.ls.LSParser createLSParser(short, java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.ls.LSSerializer createLSSerializer();
+  public abstract org.w3c.dom.ls.LSInput createLSInput();
+  public abstract org.w3c.dom.ls.LSOutput createLSOutput();
+}

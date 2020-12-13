@@ -1,0 +1,5 @@
+Compiled from "ArrayDecoder.java"
+public interface sun.nio.cs.ArrayDecoder {
+  public abstract int decode(byte[], int, int, char[]);
+  public default boolean isASCIICompatible();
+}

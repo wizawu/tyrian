@@ -1,0 +1,8 @@
+Compiled from "DTDDVFactoryImpl.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.dtd.DTDDVFactoryImpl extends com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory {
+  static final java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator> fBuiltInTypes;
+  public com.sun.org.apache.xerces.internal.impl.dv.dtd.DTDDVFactoryImpl();
+  public com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator getBuiltInDV(java.lang.String);
+  public java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator> getBuiltInTypes();
+  static {};
+}

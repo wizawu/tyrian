@@ -1,0 +1,9 @@
+Compiled from "AssertionStatusDirectives.java"
+class java.lang.AssertionStatusDirectives {
+  java.lang.String[] classes;
+  boolean[] classEnabled;
+  java.lang.String[] packages;
+  boolean[] packageEnabled;
+  boolean deflt;
+  java.lang.AssertionStatusDirectives();
+}

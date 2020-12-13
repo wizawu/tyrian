@@ -1,0 +1,40 @@
+Compiled from "FileDispatcherImpl.java"
+class sun.nio.ch.FileDispatcherImpl extends sun.nio.ch.FileDispatcher {
+  sun.nio.ch.FileDispatcherImpl();
+  int read(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  int pread(java.io.FileDescriptor, long, int, long) throws java.io.IOException;
+  long readv(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  int write(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  int pwrite(java.io.FileDescriptor, long, int, long) throws java.io.IOException;
+  long writev(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  long seek(java.io.FileDescriptor, long) throws java.io.IOException;
+  int force(java.io.FileDescriptor, boolean) throws java.io.IOException;
+  int truncate(java.io.FileDescriptor, long) throws java.io.IOException;
+  long size(java.io.FileDescriptor) throws java.io.IOException;
+  int lock(java.io.FileDescriptor, boolean, long, long, boolean) throws java.io.IOException;
+  void release(java.io.FileDescriptor, long, long) throws java.io.IOException;
+  void close(java.io.FileDescriptor) throws java.io.IOException;
+  void preClose(java.io.FileDescriptor) throws java.io.IOException;
+  java.io.FileDescriptor duplicateForMapping(java.io.FileDescriptor);
+  boolean canTransferToDirectly(java.nio.channels.SelectableChannel);
+  boolean transferToDirectlyNeedsPositionLock();
+  int setDirectIO(java.io.FileDescriptor, java.lang.String);
+  static native int read0(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  static native int pread0(java.io.FileDescriptor, long, int, long) throws java.io.IOException;
+  static native long readv0(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  static native int write0(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  static native int pwrite0(java.io.FileDescriptor, long, int, long) throws java.io.IOException;
+  static native long writev0(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  static native int force0(java.io.FileDescriptor, boolean) throws java.io.IOException;
+  static native long seek0(java.io.FileDescriptor, long) throws java.io.IOException;
+  static native int truncate0(java.io.FileDescriptor, long) throws java.io.IOException;
+  static native long size0(java.io.FileDescriptor) throws java.io.IOException;
+  static native int lock0(java.io.FileDescriptor, boolean, long, long, boolean) throws java.io.IOException;
+  static native void release0(java.io.FileDescriptor, long, long) throws java.io.IOException;
+  static native void close0(java.io.FileDescriptor) throws java.io.IOException;
+  static native void preClose0(java.io.FileDescriptor) throws java.io.IOException;
+  static native void closeIntFD(int) throws java.io.IOException;
+  static native int setDirect0(java.io.FileDescriptor) throws java.io.IOException;
+  static native void init();
+  static {};
+}

@@ -1,0 +1,28 @@
+Compiled from "HttpResponseImpl.java"
+class jdk.internal.net.http.HttpResponseImpl<T> implements java.net.http.HttpResponse<T>, jdk.internal.net.http.websocket.RawChannel$Provider {
+  final int responseCode;
+  final jdk.internal.net.http.Exchange<T> exchange;
+  final java.net.http.HttpRequest initialRequest;
+  final java.util.Optional<java.net.http.HttpResponse<T>> previousResponse;
+  final java.net.http.HttpHeaders headers;
+  final java.util.Optional<javax.net.ssl.SSLSession> sslSession;
+  final java.net.URI uri;
+  final java.net.http.HttpClient$Version version;
+  jdk.internal.net.http.websocket.RawChannel rawchan;
+  final jdk.internal.net.http.HttpConnection connection;
+  final jdk.internal.net.http.Stream<T> stream;
+  final T body;
+  static final boolean $assertionsDisabled;
+  public jdk.internal.net.http.HttpResponseImpl(java.net.http.HttpRequest, jdk.internal.net.http.Response, java.net.http.HttpResponse<T>, T, jdk.internal.net.http.Exchange<T>);
+  public int statusCode();
+  public java.net.http.HttpRequest request();
+  public java.util.Optional<java.net.http.HttpResponse<T>> previousResponse();
+  public java.net.http.HttpHeaders headers();
+  public T body();
+  public java.util.Optional<javax.net.ssl.SSLSession> sslSession();
+  public java.net.URI uri();
+  public java.net.http.HttpClient$Version version();
+  public synchronized jdk.internal.net.http.websocket.RawChannel rawChannel() throws java.io.IOException;
+  public java.lang.String toString();
+  static {};
+}

@@ -1,0 +1,10 @@
+Compiled from "MemoryManagerImpl.java"
+class sun.management.MemoryManagerImpl extends sun.management.NotificationEmitterSupport implements java.lang.management.MemoryManagerMXBean {
+  sun.management.MemoryManagerImpl(java.lang.String);
+  public java.lang.String getName();
+  public boolean isValid();
+  public java.lang.String[] getMemoryPoolNames();
+  synchronized java.lang.management.MemoryPoolMXBean[] getMemoryPools();
+  public javax.management.MBeanNotificationInfo[] getNotificationInfo();
+  public javax.management.ObjectName getObjectName();
+}

@@ -1,0 +1,24 @@
+Compiled from "Ber.java"
+public abstract class com.sun.jndi.ldap.Ber {
+  protected byte[] buf;
+  protected int offset;
+  protected int bufsize;
+  public static final int ASN_BOOLEAN;
+  public static final int ASN_INTEGER;
+  public static final int ASN_BIT_STRING;
+  public static final int ASN_SIMPLE_STRING;
+  public static final int ASN_OCTET_STR;
+  public static final int ASN_NULL;
+  public static final int ASN_OBJECT_ID;
+  public static final int ASN_SEQUENCE;
+  public static final int ASN_SET;
+  public static final int ASN_PRIMITIVE;
+  public static final int ASN_UNIVERSAL;
+  public static final int ASN_CONSTRUCTOR;
+  public static final int ASN_APPLICATION;
+  public static final int ASN_CONTEXT;
+  public static final int ASN_PRIVATE;
+  public static final int ASN_ENUMERATED;
+  protected com.sun.jndi.ldap.Ber();
+  public static void dumpBER(java.io.OutputStream, java.lang.String, byte[], int, int);
+}

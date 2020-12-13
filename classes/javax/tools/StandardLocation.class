@@ -1,0 +1,23 @@
+Compiled from "StandardLocation.java"
+public final class javax.tools.StandardLocation extends java.lang.Enum<javax.tools.StandardLocation> implements javax.tools.JavaFileManager$Location {
+  public static final javax.tools.StandardLocation CLASS_OUTPUT;
+  public static final javax.tools.StandardLocation SOURCE_OUTPUT;
+  public static final javax.tools.StandardLocation CLASS_PATH;
+  public static final javax.tools.StandardLocation SOURCE_PATH;
+  public static final javax.tools.StandardLocation ANNOTATION_PROCESSOR_PATH;
+  public static final javax.tools.StandardLocation ANNOTATION_PROCESSOR_MODULE_PATH;
+  public static final javax.tools.StandardLocation PLATFORM_CLASS_PATH;
+  public static final javax.tools.StandardLocation NATIVE_HEADER_OUTPUT;
+  public static final javax.tools.StandardLocation MODULE_SOURCE_PATH;
+  public static final javax.tools.StandardLocation UPGRADE_MODULE_PATH;
+  public static final javax.tools.StandardLocation SYSTEM_MODULES;
+  public static final javax.tools.StandardLocation MODULE_PATH;
+  public static final javax.tools.StandardLocation PATCH_MODULE_PATH;
+  public static javax.tools.StandardLocation[] values();
+  public static javax.tools.StandardLocation valueOf(java.lang.String);
+  public static javax.tools.JavaFileManager$Location locationFor(java.lang.String);
+  public java.lang.String getName();
+  public boolean isOutputLocation();
+  public boolean isModuleOrientedLocation();
+  static {};
+}

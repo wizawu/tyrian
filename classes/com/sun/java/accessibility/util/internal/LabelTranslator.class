@@ -1,0 +1,7 @@
+Compiled from "LabelTranslator.java"
+public class com.sun.java.accessibility.util.internal.LabelTranslator extends com.sun.java.accessibility.util.Translator {
+  public com.sun.java.accessibility.util.internal.LabelTranslator();
+  public java.lang.String getAccessibleName();
+  public void setAccessibleName(java.lang.String);
+  public javax.accessibility.AccessibleRole getAccessibleRole();
+}

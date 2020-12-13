@@ -1,0 +1,4 @@
+Compiled from "GUIInitializedListener.java"
+public interface com.sun.java.accessibility.util.GUIInitializedListener extends java.util.EventListener {
+  public abstract void guiInitialized();
+}

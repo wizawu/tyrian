@@ -1,0 +1,18 @@
+Compiled from "JavadocTool.java"
+public class jdk.javadoc.internal.tool.JavadocTool extends com.sun.tools.javac.main.JavaCompiler {
+  jdk.javadoc.internal.tool.ToolEnvironment toolEnv;
+  final jdk.javadoc.internal.tool.Messager messager;
+  final com.sun.tools.javac.code.ClassFinder javadocFinder;
+  final com.sun.tools.javac.code.DeferredCompletionFailureHandler dcfh;
+  final com.sun.tools.javac.comp.Enter javadocEnter;
+  final java.util.Set<javax.tools.JavaFileObject> uniquefiles;
+  static final boolean surrogatesSupported;
+  protected jdk.javadoc.internal.tool.JavadocTool(com.sun.tools.javac.util.Context);
+  protected boolean keepComments();
+  public static jdk.javadoc.internal.tool.JavadocTool make0(com.sun.tools.javac.util.Context);
+  public jdk.javadoc.doclet.DocletEnvironment getEnvironment(java.util.Map<jdk.javadoc.internal.tool.ToolOption, java.lang.Object>, java.util.List<java.lang.String>, java.lang.Iterable<? extends javax.tools.JavaFileObject>) throws jdk.javadoc.internal.tool.ToolException;
+  boolean isValidPackageName(java.lang.String);
+  public static boolean isValidClassName(java.lang.String);
+  java.util.List<com.sun.tools.javac.tree.JCTree$JCClassDecl> listClasses(java.util.List<com.sun.tools.javac.tree.JCTree$JCCompilationUnit>);
+  static {};
+}

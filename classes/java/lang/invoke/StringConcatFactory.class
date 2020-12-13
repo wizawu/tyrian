@@ -1,0 +1,11 @@
+Compiled from "StringConcatFactory.java"
+public final class java.lang.invoke.StringConcatFactory {
+  public static java.lang.invoke.CallSite makeConcat(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.invoke.MethodType) throws java.lang.invoke.StringConcatException;
+  public static java.lang.invoke.CallSite makeConcatWithConstants(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.invoke.MethodType, java.lang.String, java.lang.Object...) throws java.lang.invoke.StringConcatException;
+  static java.lang.invoke.MethodHandle lookupStatic(java.lang.invoke.MethodHandles$Lookup, java.lang.Class<?>, java.lang.String, java.lang.Class<?>, java.lang.Class<?>...);
+  static java.lang.invoke.MethodHandle lookupVirtual(java.lang.invoke.MethodHandles$Lookup, java.lang.Class<?>, java.lang.String, java.lang.Class<?>, java.lang.Class<?>...);
+  static java.lang.invoke.MethodHandle lookupConstructor(java.lang.invoke.MethodHandles$Lookup, java.lang.Class<?>, java.lang.Class<?>);
+  static int estimateSize(java.lang.Class<?>);
+  static java.lang.Class<?> adaptToStringBuilder(java.lang.Class<?>);
+  static {};
+}

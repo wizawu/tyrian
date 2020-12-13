@@ -1,0 +1,23 @@
+Compiled from "NameImpl.java"
+class javax.naming.NameImpl {
+  javax.naming.NameImpl(java.util.Properties);
+  javax.naming.NameImpl(java.util.Properties, java.lang.String) throws javax.naming.InvalidNameException;
+  javax.naming.NameImpl(java.util.Properties, java.util.Enumeration<java.lang.String>);
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int compareTo(javax.naming.NameImpl);
+  public int size();
+  public java.util.Enumeration<java.lang.String> getAll();
+  public java.lang.String get(int);
+  public java.util.Enumeration<java.lang.String> getPrefix(int);
+  public java.util.Enumeration<java.lang.String> getSuffix(int);
+  public boolean isEmpty();
+  public boolean startsWith(int, java.util.Enumeration<java.lang.String>);
+  public boolean endsWith(int, java.util.Enumeration<java.lang.String>);
+  public boolean addAll(java.util.Enumeration<java.lang.String>) throws javax.naming.InvalidNameException;
+  public boolean addAll(int, java.util.Enumeration<java.lang.String>) throws javax.naming.InvalidNameException;
+  public void add(java.lang.String) throws javax.naming.InvalidNameException;
+  public void add(int, java.lang.String) throws javax.naming.InvalidNameException;
+  public java.lang.Object remove(int);
+  public int hashCode();
+}

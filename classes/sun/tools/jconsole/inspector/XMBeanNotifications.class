@@ -1,0 +1,27 @@
+Compiled from "XMBeanNotifications.java"
+public class sun.tools.jconsole.inspector.XMBeanNotifications extends javax.swing.JTable implements javax.management.NotificationListener {
+  public static final java.lang.String NOTIFICATION_RECEIVED_EVENT;
+  public sun.tools.jconsole.inspector.XMBeanNotifications();
+  public void cancelCellEditing();
+  public void stopCellEditing();
+  public boolean isCellEditable(int, int);
+  public void setValueAt(java.lang.Object, int, int);
+  public synchronized java.awt.Component prepareRenderer(javax.swing.table.TableCellRenderer, int, int);
+  public synchronized javax.swing.table.TableCellRenderer getCellRenderer(int, int);
+  synchronized void dispose();
+  public long getReceivedNotifications(sun.tools.jconsole.inspector.XMBean);
+  public synchronized boolean clearCurrentNotifications();
+  public synchronized boolean unregisterListener(javax.swing.tree.DefaultMutableTreeNode);
+  public synchronized void registerListener(javax.swing.tree.DefaultMutableTreeNode) throws javax.management.InstanceNotFoundException, java.io.IOException;
+  public synchronized void handleNotification(javax.management.Notification, java.lang.Object);
+  public synchronized void disableNotifications();
+  public void addNotificationsListener(javax.management.NotificationListener);
+  public void removeNotificationsListener(javax.management.NotificationListener);
+  void fireNotificationReceived(sun.tools.jconsole.inspector.XMBeanNotifications$XMBeanNotificationsListener, sun.tools.jconsole.inspector.XMBean, javax.swing.tree.DefaultMutableTreeNode, java.lang.Object[], long);
+  public synchronized boolean isListenerRegistered(sun.tools.jconsole.inspector.XMBean);
+  public synchronized void loadNotifications(sun.tools.jconsole.inspector.XMBean);
+  public boolean isTableEditable();
+  public synchronized void emptyTable();
+  synchronized void updateUserDataCell(int, int);
+  static {};
+}

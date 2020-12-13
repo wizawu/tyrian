@@ -1,0 +1,7 @@
+Compiled from "Symbol.java"
+public class sun.awt.Symbol extends java.nio.charset.Charset {
+  public sun.awt.Symbol();
+  public java.nio.charset.CharsetEncoder newEncoder();
+  public java.nio.charset.CharsetDecoder newDecoder();
+  public boolean contains(java.nio.charset.Charset);
+}

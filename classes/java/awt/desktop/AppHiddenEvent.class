@@ -1,0 +1,4 @@
+Compiled from "AppHiddenEvent.java"
+public final class java.awt.desktop.AppHiddenEvent extends java.awt.desktop.AppEvent {
+  public java.awt.desktop.AppHiddenEvent();
+}

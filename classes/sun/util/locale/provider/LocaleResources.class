@@ -1,0 +1,23 @@
+Compiled from "LocaleResources.java"
+public class sun.util.locale.provider.LocaleResources {
+  static final boolean $assertionsDisabled;
+  sun.util.locale.provider.LocaleResources(sun.util.locale.provider.ResourceBundleBasedAdapter, java.util.Locale);
+  java.lang.Object getBreakIteratorInfo(java.lang.String);
+  byte[] getBreakIteratorResources(java.lang.String);
+  public java.lang.String getCalendarData(java.lang.String);
+  public java.lang.String getCollationData();
+  public java.lang.Object[] getDecimalFormatSymbolsData();
+  public java.lang.String getCurrencyName(java.lang.String);
+  public java.lang.String getLocaleName(java.lang.String);
+  public java.lang.Object getTimeZoneNames(java.lang.String);
+  java.util.Set<java.lang.String> getZoneIDs();
+  java.lang.String[][] getZoneStrings();
+  java.lang.String[] getCalendarNames(java.lang.String);
+  java.lang.String[] getJavaTimeNames(java.lang.String);
+  public java.lang.String getDateTimePattern(int, int, java.util.Calendar);
+  public java.lang.String getJavaTimeDateTimePattern(int, int, java.lang.String);
+  public java.lang.String[] getNumberPatterns();
+  public java.util.ResourceBundle getJavaTimeFormatData();
+  public static void trace(java.lang.String, java.lang.Object...);
+  static {};
+}

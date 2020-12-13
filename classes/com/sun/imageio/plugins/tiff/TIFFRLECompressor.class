@@ -1,0 +1,14 @@
+Compiled from "TIFFRLECompressor.java"
+public class com.sun.imageio.plugins.tiff.TIFFRLECompressor extends com.sun.imageio.plugins.tiff.TIFFFaxCompressor {
+  public com.sun.imageio.plugins.tiff.TIFFRLECompressor();
+  public int encodeRLE(byte[], int, int, int, byte[]);
+  public int encode(byte[], int, int, int, int[], int) throws java.io.IOException;
+  public int encode1D(byte[], int, int, int, byte[], int);
+  public int addEOFB(byte[], int);
+  public int addEOL(boolean, boolean, boolean, byte[], int);
+  public int add2DBits(byte[], int, int[][], int);
+  public int add1DBits(byte[], int, int, int);
+  public void initBitBuf();
+  public int nextState(byte[], int, int, int);
+  public void setMetadata(javax.imageio.metadata.IIOMetadata);
+}

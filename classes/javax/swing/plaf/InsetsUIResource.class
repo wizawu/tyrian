@@ -1,0 +1,4 @@
+Compiled from "InsetsUIResource.java"
+public class javax.swing.plaf.InsetsUIResource extends java.awt.Insets implements javax.swing.plaf.UIResource {
+  public javax.swing.plaf.InsetsUIResource(int, int, int, int);
+}

@@ -1,0 +1,6 @@
+Compiled from "XPathProcessorException.java"
+public class com.sun.org.apache.xpath.internal.XPathProcessorException extends com.sun.org.apache.xpath.internal.XPathException {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.XPathProcessorException(java.lang.String);
+  public com.sun.org.apache.xpath.internal.XPathProcessorException(java.lang.String, java.lang.Exception);
+}

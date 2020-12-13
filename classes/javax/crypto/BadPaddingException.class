@@ -1,0 +1,5 @@
+Compiled from "BadPaddingException.java"
+public class javax.crypto.BadPaddingException extends java.security.GeneralSecurityException {
+  public javax.crypto.BadPaddingException();
+  public javax.crypto.BadPaddingException(java.lang.String);
+}

@@ -1,0 +1,13 @@
+Compiled from "BaseDVFactory.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.xs.BaseDVFactory extends com.sun.org.apache.xerces.internal.impl.dv.SchemaDVFactory {
+  static final java.lang.String URI_SCHEMAFORSCHEMA;
+  static com.sun.org.apache.xerces.internal.util.SymbolHash fBaseTypes;
+  public com.sun.org.apache.xerces.internal.impl.dv.xs.BaseDVFactory();
+  public com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType getBuiltInType(java.lang.String);
+  public com.sun.org.apache.xerces.internal.util.SymbolHash getBuiltInTypes();
+  public com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType createTypeRestriction(java.lang.String, java.lang.String, short, com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType, com.sun.org.apache.xerces.internal.xs.XSObjectList);
+  public com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType createTypeList(java.lang.String, java.lang.String, short, com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType, com.sun.org.apache.xerces.internal.xs.XSObjectList);
+  public com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType createTypeUnion(java.lang.String, java.lang.String, short, com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType[], com.sun.org.apache.xerces.internal.xs.XSObjectList);
+  static void createBuiltInTypes(com.sun.org.apache.xerces.internal.util.SymbolHash);
+  static {};
+}

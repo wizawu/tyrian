@@ -1,0 +1,5 @@
+Compiled from "UnmappedAddressException.java"
+public class sun.jvm.hotspot.debugger.UnmappedAddressException extends sun.jvm.hotspot.debugger.AddressException {
+  public sun.jvm.hotspot.debugger.UnmappedAddressException(long);
+  public sun.jvm.hotspot.debugger.UnmappedAddressException(java.lang.String, long);
+}

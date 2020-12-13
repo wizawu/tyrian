@@ -1,0 +1,14 @@
+Compiled from "SSLTrafficKeyDerivation.java"
+final class sun.security.ssl.SSLTrafficKeyDerivation extends java.lang.Enum<sun.security.ssl.SSLTrafficKeyDerivation> implements sun.security.ssl.SSLKeyDerivationGenerator {
+  public static final sun.security.ssl.SSLTrafficKeyDerivation SSL30;
+  public static final sun.security.ssl.SSLTrafficKeyDerivation TLS10;
+  public static final sun.security.ssl.SSLTrafficKeyDerivation TLS12;
+  public static final sun.security.ssl.SSLTrafficKeyDerivation TLS13;
+  final java.lang.String name;
+  final sun.security.ssl.SSLKeyDerivationGenerator keyDerivationGenerator;
+  public static sun.security.ssl.SSLTrafficKeyDerivation[] values();
+  public static sun.security.ssl.SSLTrafficKeyDerivation valueOf(java.lang.String);
+  static sun.security.ssl.SSLTrafficKeyDerivation valueOf(sun.security.ssl.ProtocolVersion);
+  public sun.security.ssl.SSLKeyDerivation createKeyDerivation(sun.security.ssl.HandshakeContext, javax.crypto.SecretKey) throws java.io.IOException;
+  static {};
+}

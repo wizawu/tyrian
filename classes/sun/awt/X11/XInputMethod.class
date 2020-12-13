@@ -1,0 +1,17 @@
+Compiled from "XInputMethod.java"
+public class sun.awt.X11.XInputMethod extends sun.awt.X11InputMethod {
+  public sun.awt.X11.XInputMethod() throws java.awt.AWTException;
+  public void setInputMethodContext(java.awt.im.spi.InputMethodContext);
+  public void notifyClientWindowChange(java.awt.Rectangle);
+  protected boolean openXIM();
+  protected boolean createXIC();
+  protected void setXICFocus(java.awt.peer.ComponentPeer, boolean, boolean);
+  public static long getXICFocus();
+  protected java.awt.Container getParent(java.awt.Component);
+  protected java.awt.peer.ComponentPeer getPeer(java.awt.Component);
+  protected synchronized void disposeImpl();
+  protected void awtLock();
+  protected void awtUnlock();
+  long getCurrentParentWindow();
+  static {};
+}

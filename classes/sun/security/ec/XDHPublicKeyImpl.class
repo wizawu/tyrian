@@ -1,0 +1,10 @@
+Compiled from "XDHPublicKeyImpl.java"
+public final class sun.security.ec.XDHPublicKeyImpl extends sun.security.x509.X509Key implements java.security.interfaces.XECPublicKey {
+  sun.security.ec.XDHPublicKeyImpl(sun.security.ec.XECParameters, java.math.BigInteger) throws java.security.InvalidKeyException;
+  sun.security.ec.XDHPublicKeyImpl(byte[]) throws java.security.InvalidKeyException;
+  void checkLength(sun.security.ec.XECParameters) throws java.security.InvalidKeyException;
+  public java.math.BigInteger getU();
+  public java.security.spec.AlgorithmParameterSpec getParams();
+  public java.lang.String getAlgorithm();
+  protected java.lang.Object writeReplace() throws java.io.ObjectStreamException;
+}

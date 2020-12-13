@@ -1,0 +1,20 @@
+Compiled from "NullFontScaler.java"
+class sun.font.NullFontScaler extends sun.font.FontScaler {
+  sun.font.NullFontScaler();
+  public sun.font.NullFontScaler(sun.font.Font2D, int, boolean, int);
+  sun.font.StrikeMetrics getFontMetrics(long);
+  float getGlyphAdvance(long, int);
+  void getGlyphMetrics(long, int, java.awt.geom.Point2D$Float);
+  java.awt.geom.Rectangle2D$Float getGlyphOutlineBounds(long, int);
+  java.awt.geom.GeneralPath getGlyphOutline(long, int, float, float);
+  java.awt.geom.GeneralPath getGlyphVectorOutline(long, int[], int, float, float);
+  long createScalerContext(double[], int, int, float, float, boolean);
+  void invalidateScalerContext(long);
+  int getNumGlyphs() throws sun.font.FontScalerException;
+  int getMissingGlyphCode() throws sun.font.FontScalerException;
+  int getGlyphCode(char) throws sun.font.FontScalerException;
+  long getUnitsPerEm();
+  java.awt.geom.Point2D$Float getGlyphPoint(long, int, int);
+  static native long getNullScalerContext();
+  native long getGlyphImage(long, int);
+}

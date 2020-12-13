@@ -1,0 +1,4 @@
+Compiled from "StreamClosedException.java"
+class sun.net.httpserver.StreamClosedException extends java.io.IOException {
+  sun.net.httpserver.StreamClosedException();
+}

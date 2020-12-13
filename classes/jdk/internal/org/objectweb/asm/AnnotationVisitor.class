@@ -1,0 +1,12 @@
+Compiled from "AnnotationVisitor.java"
+public abstract class jdk.internal.org.objectweb.asm.AnnotationVisitor {
+  protected final int api;
+  protected jdk.internal.org.objectweb.asm.AnnotationVisitor av;
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor(int);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor(int, jdk.internal.org.objectweb.asm.AnnotationVisitor);
+  public void visit(java.lang.String, java.lang.Object);
+  public void visitEnum(java.lang.String, java.lang.String, java.lang.String);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitAnnotation(java.lang.String, java.lang.String);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitArray(java.lang.String);
+  public void visitEnd();
+}

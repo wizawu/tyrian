@@ -1,0 +1,8 @@
+Compiled from "NotQueryExp.java"
+class javax.management.NotQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+  public javax.management.NotQueryExp();
+  public javax.management.NotQueryExp(javax.management.QueryExp);
+  public javax.management.QueryExp getNegatedExp();
+  public boolean apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
+  public java.lang.String toString();
+}

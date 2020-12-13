@@ -1,0 +1,7 @@
+Compiled from "DOMImplementationSourceImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DOMImplementationSourceImpl implements org.w3c.dom.DOMImplementationSource {
+  public com.sun.org.apache.xerces.internal.dom.DOMImplementationSourceImpl();
+  public org.w3c.dom.DOMImplementation getDOMImplementation(java.lang.String);
+  public org.w3c.dom.DOMImplementationList getDOMImplementationList(java.lang.String);
+  boolean testImpl(org.w3c.dom.DOMImplementation, java.lang.String);
+}

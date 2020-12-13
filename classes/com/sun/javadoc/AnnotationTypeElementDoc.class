@@ -1,0 +1,4 @@
+Compiled from "AnnotationTypeElementDoc.java"
+public interface com.sun.javadoc.AnnotationTypeElementDoc extends com.sun.javadoc.MethodDoc {
+  public abstract com.sun.javadoc.AnnotationValue defaultValue();
+}

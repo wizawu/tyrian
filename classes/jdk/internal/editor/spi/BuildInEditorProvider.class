@@ -1,0 +1,5 @@
+Compiled from "BuildInEditorProvider.java"
+public interface jdk.internal.editor.spi.BuildInEditorProvider {
+  public abstract int rank();
+  public abstract void edit(java.lang.String, java.lang.String, java.util.function.Consumer<java.lang.String>, java.util.function.Consumer<java.lang.String>);
+}

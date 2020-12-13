@@ -1,0 +1,5 @@
+Compiled from "GarbageCollectorMXBean.java"
+public interface java.lang.management.GarbageCollectorMXBean extends java.lang.management.MemoryManagerMXBean {
+  public abstract long getCollectionCount();
+  public abstract long getCollectionTime();
+}

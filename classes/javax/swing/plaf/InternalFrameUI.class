@@ -1,0 +1,4 @@
+Compiled from "InternalFrameUI.java"
+public abstract class javax.swing.plaf.InternalFrameUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.InternalFrameUI();
+}

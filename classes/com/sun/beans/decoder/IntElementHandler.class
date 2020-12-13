@@ -1,0 +1,5 @@
+Compiled from "IntElementHandler.java"
+final class com.sun.beans.decoder.IntElementHandler extends com.sun.beans.decoder.StringElementHandler {
+  com.sun.beans.decoder.IntElementHandler();
+  public java.lang.Object getValue(java.lang.String);
+}

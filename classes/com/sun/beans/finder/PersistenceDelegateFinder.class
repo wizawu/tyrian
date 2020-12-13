@@ -1,0 +1,9 @@
+Compiled from "PersistenceDelegateFinder.java"
+public final class com.sun.beans.finder.PersistenceDelegateFinder extends com.sun.beans.finder.InstanceFinder<java.beans.PersistenceDelegate> {
+  public com.sun.beans.finder.PersistenceDelegateFinder();
+  public void register(java.lang.Class<?>, java.beans.PersistenceDelegate);
+  public java.beans.PersistenceDelegate find(java.lang.Class<?>);
+  public java.lang.Object find(java.lang.Class);
+  public void setPackages(java.lang.String[]);
+  public java.lang.String[] getPackages();
+}

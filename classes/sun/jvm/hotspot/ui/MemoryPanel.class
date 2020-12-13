@@ -1,0 +1,5 @@
+Compiled from "MemoryPanel.java"
+public class sun.jvm.hotspot.ui.MemoryPanel extends javax.swing.JPanel {
+  public sun.jvm.hotspot.ui.MemoryPanel(sun.jvm.hotspot.debugger.Debugger, boolean);
+  public void makeVisible(sun.jvm.hotspot.debugger.Address);
+}

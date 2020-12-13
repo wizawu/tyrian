@@ -1,0 +1,6 @@
+Compiled from "SerialException.java"
+public class javax.sql.rowset.serial.SerialException extends java.sql.SQLException {
+  static final long serialVersionUID;
+  public javax.sql.rowset.serial.SerialException();
+  public javax.sql.rowset.serial.SerialException(java.lang.String);
+}

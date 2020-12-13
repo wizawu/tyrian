@@ -1,0 +1,7 @@
+Compiled from "XRGraphicsConfig.java"
+public class sun.java2d.xr.XRGraphicsConfig extends sun.awt.X11GraphicsConfig implements sun.awt.image.SurfaceManager$ProxiedGraphicsConfig {
+  public sun.java2d.SurfaceData createSurfaceData(sun.awt.X11ComponentPeer);
+  public static sun.java2d.xr.XRGraphicsConfig getConfig(sun.awt.X11GraphicsDevice, int, int, int, boolean);
+  public java.lang.Object getProxyKey();
+  public synchronized sun.java2d.loops.SurfaceType getSurfaceType();
+}

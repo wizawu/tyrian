@@ -1,0 +1,4 @@
+Compiled from "TreeCellRenderer.java"
+public interface javax.swing.tree.TreeCellRenderer {
+  public abstract java.awt.Component getTreeCellRendererComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int, boolean);
+}

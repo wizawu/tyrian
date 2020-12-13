@@ -1,0 +1,16 @@
+Compiled from "AnnotationTypeBuilder.java"
+public class jdk.javadoc.internal.doclets.toolkit.builders.AnnotationTypeBuilder extends jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder {
+  public static jdk.javadoc.internal.doclets.toolkit.builders.AnnotationTypeBuilder getInstance(jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder$Context, javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter);
+  public void build() throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildAnnotationTypeDoc(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildAnnotationTypeInfo(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildDeprecationInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildAnnotationTypeSignature(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildAnnotationTypeDescription(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildAnnotationTypeTagInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildMemberSummary(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildAnnotationTypeMemberDetails(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildAnnotationTypeFieldDetails(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildAnnotationTypeOptionalMemberDetails(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildAnnotationTypeRequiredMemberDetails(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+}

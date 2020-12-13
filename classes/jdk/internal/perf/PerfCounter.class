@@ -1,0 +1,19 @@
+Compiled from "PerfCounter.java"
+public class jdk.internal.perf.PerfCounter {
+  public static jdk.internal.perf.PerfCounter newPerfCounter(java.lang.String);
+  public static jdk.internal.perf.PerfCounter newConstantPerfCounter(java.lang.String);
+  public synchronized long get();
+  public synchronized void set(long);
+  public synchronized void add(long);
+  public void increment();
+  public void addTime(long);
+  public void addElapsedTimeFrom(long);
+  public java.lang.String toString();
+  public static jdk.internal.perf.PerfCounter getFindClasses();
+  public static jdk.internal.perf.PerfCounter getFindClassTime();
+  public static jdk.internal.perf.PerfCounter getReadClassBytesTime();
+  public static jdk.internal.perf.PerfCounter getParentDelegationTime();
+  public static jdk.internal.perf.PerfCounter getZipFileCount();
+  public static jdk.internal.perf.PerfCounter getZipFileOpenTime();
+  static {};
+}

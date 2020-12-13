@@ -1,0 +1,6 @@
+Compiled from "CramMD5Server.java"
+final class com.sun.security.sasl.CramMD5Server extends com.sun.security.sasl.CramMD5Base implements javax.security.sasl.SaslServer {
+  com.sun.security.sasl.CramMD5Server(java.lang.String, java.lang.String, java.util.Map<java.lang.String, ?>, javax.security.auth.callback.CallbackHandler) throws javax.security.sasl.SaslException;
+  public byte[] evaluateResponse(byte[]) throws javax.security.sasl.SaslException;
+  public java.lang.String getAuthorizationID();
+}

@@ -1,0 +1,10 @@
+Compiled from "US_ASCII.java"
+public class sun.nio.cs.US_ASCII extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
+  public static final sun.nio.cs.US_ASCII INSTANCE;
+  public sun.nio.cs.US_ASCII();
+  public java.lang.String historicalName();
+  public boolean contains(java.nio.charset.Charset);
+  public java.nio.charset.CharsetDecoder newDecoder();
+  public java.nio.charset.CharsetEncoder newEncoder();
+  static {};
+}

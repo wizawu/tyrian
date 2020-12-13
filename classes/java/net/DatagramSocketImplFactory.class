@@ -1,0 +1,4 @@
+Compiled from "DatagramSocketImplFactory.java"
+public interface java.net.DatagramSocketImplFactory {
+  public abstract java.net.DatagramSocketImpl createDatagramSocketImpl();
+}

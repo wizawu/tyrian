@@ -1,0 +1,17 @@
+Compiled from "IntHashtable.java"
+public final class sun.text.IntHashtable {
+  public sun.text.IntHashtable();
+  public sun.text.IntHashtable(int);
+  public int size();
+  public boolean isEmpty();
+  public void put(int, int);
+  public int get(int);
+  public void remove(int);
+  public int getDefaultValue();
+  public void setDefaultValue(int);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public void putInternal(int, int);
+  static {};
+}

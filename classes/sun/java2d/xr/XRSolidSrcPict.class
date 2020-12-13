@@ -1,0 +1,9 @@
+Compiled from "XRSolidSrcPict.java"
+public class sun.java2d.xr.XRSolidSrcPict {
+  sun.java2d.xr.XRBackend con;
+  sun.java2d.xr.XRSurfaceData srcPict;
+  sun.java2d.xr.XRColor xrCol;
+  int curPixVal;
+  public sun.java2d.xr.XRSolidSrcPict(sun.java2d.xr.XRBackend, int);
+  public sun.java2d.xr.XRSurfaceData prepareSrcPict(int);
+}

@@ -1,0 +1,40 @@
+Compiled from "DatatypeConstants.java"
+public final class javax.xml.datatype.DatatypeConstants {
+  public static final int JANUARY;
+  public static final int FEBRUARY;
+  public static final int MARCH;
+  public static final int APRIL;
+  public static final int MAY;
+  public static final int JUNE;
+  public static final int JULY;
+  public static final int AUGUST;
+  public static final int SEPTEMBER;
+  public static final int OCTOBER;
+  public static final int NOVEMBER;
+  public static final int DECEMBER;
+  public static final int LESSER;
+  public static final int EQUAL;
+  public static final int GREATER;
+  public static final int INDETERMINATE;
+  public static final int FIELD_UNDEFINED;
+  public static final javax.xml.datatype.DatatypeConstants$Field YEARS;
+  public static final javax.xml.datatype.DatatypeConstants$Field MONTHS;
+  public static final javax.xml.datatype.DatatypeConstants$Field DAYS;
+  public static final javax.xml.datatype.DatatypeConstants$Field HOURS;
+  public static final javax.xml.datatype.DatatypeConstants$Field MINUTES;
+  public static final javax.xml.datatype.DatatypeConstants$Field SECONDS;
+  public static final javax.xml.namespace.QName DATETIME;
+  public static final javax.xml.namespace.QName TIME;
+  public static final javax.xml.namespace.QName DATE;
+  public static final javax.xml.namespace.QName GYEARMONTH;
+  public static final javax.xml.namespace.QName GMONTHDAY;
+  public static final javax.xml.namespace.QName GYEAR;
+  public static final javax.xml.namespace.QName GMONTH;
+  public static final javax.xml.namespace.QName GDAY;
+  public static final javax.xml.namespace.QName DURATION;
+  public static final javax.xml.namespace.QName DURATION_DAYTIME;
+  public static final javax.xml.namespace.QName DURATION_YEARMONTH;
+  public static final int MAX_TIMEZONE_OFFSET;
+  public static final int MIN_TIMEZONE_OFFSET;
+  static {};
+}

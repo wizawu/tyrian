@@ -1,0 +1,11 @@
+Compiled from "ParameterizedTypeImpl.java"
+public class sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl implements java.lang.reflect.ParameterizedType {
+  public static sun.reflect.generics.reflectiveObjects.ParameterizedTypeImpl make(java.lang.Class<?>, java.lang.reflect.Type[], java.lang.reflect.Type);
+  public java.lang.reflect.Type[] getActualTypeArguments();
+  public java.lang.Class<?> getRawType();
+  public java.lang.reflect.Type getOwnerType();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public java.lang.reflect.Type getRawType();
+}

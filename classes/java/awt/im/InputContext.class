@@ -1,0 +1,16 @@
+Compiled from "InputContext.java"
+public class java.awt.im.InputContext {
+  protected java.awt.im.InputContext();
+  public static java.awt.im.InputContext getInstance();
+  public boolean selectInputMethod(java.util.Locale);
+  public java.util.Locale getLocale();
+  public void setCharacterSubsets(java.lang.Character$Subset[]);
+  public void setCompositionEnabled(boolean);
+  public boolean isCompositionEnabled();
+  public void reconvert();
+  public void dispatchEvent(java.awt.AWTEvent);
+  public void removeNotify(java.awt.Component);
+  public void endComposition();
+  public void dispose();
+  public java.lang.Object getInputMethodControlObject();
+}

@@ -1,0 +1,19 @@
+Compiled from "SAXParserImpl.java"
+public class com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl extends javax.xml.parsers.SAXParser implements com.sun.org.apache.xerces.internal.jaxp.JAXPConstants,com.sun.org.apache.xerces.internal.xs.PSVIProvider {
+  com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl(com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl, java.util.Map<java.lang.String, java.lang.Boolean>) throws org.xml.sax.SAXException;
+  com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl(com.sun.org.apache.xerces.internal.jaxp.SAXParserFactoryImpl, java.util.Map<java.lang.String, java.lang.Boolean>, boolean) throws org.xml.sax.SAXException;
+  public org.xml.sax.Parser getParser() throws org.xml.sax.SAXException;
+  public org.xml.sax.XMLReader getXMLReader();
+  public boolean isNamespaceAware();
+  public boolean isValidating();
+  public boolean isXIncludeAware();
+  public void setProperty(java.lang.String, java.lang.Object) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public java.lang.Object getProperty(java.lang.String) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public void parse(org.xml.sax.InputSource, org.xml.sax.helpers.DefaultHandler) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(org.xml.sax.InputSource, org.xml.sax.HandlerBase) throws org.xml.sax.SAXException, java.io.IOException;
+  public javax.xml.validation.Schema getSchema();
+  public void reset();
+  public com.sun.org.apache.xerces.internal.xs.ElementPSVI getElementPSVI();
+  public com.sun.org.apache.xerces.internal.xs.AttributePSVI getAttributePSVI(int);
+  public com.sun.org.apache.xerces.internal.xs.AttributePSVI getAttributePSVIByName(java.lang.String, java.lang.String);
+}

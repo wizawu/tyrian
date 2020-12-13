@@ -1,0 +1,9 @@
+Compiled from "CertPathHelper.java"
+public abstract class sun.security.provider.certpath.CertPathHelper {
+  protected static sun.security.provider.certpath.CertPathHelper instance;
+  protected sun.security.provider.certpath.CertPathHelper();
+  protected abstract void implSetPathToNames(java.security.cert.X509CertSelector, java.util.Set<sun.security.x509.GeneralNameInterface>);
+  protected abstract void implSetDateAndTime(java.security.cert.X509CRLSelector, java.util.Date, long);
+  static void setPathToNames(java.security.cert.X509CertSelector, java.util.Set<sun.security.x509.GeneralNameInterface>);
+  public static void setDateAndTime(java.security.cert.X509CRLSelector, java.util.Date, long);
+}

@@ -1,0 +1,14 @@
+Compiled from "Reference.java"
+public abstract class java.lang.ref.Reference<T> {
+  volatile java.lang.ref.ReferenceQueue<? super T> queue;
+  volatile java.lang.ref.Reference next;
+  public T get();
+  public void clear();
+  public boolean isEnqueued();
+  public boolean enqueue();
+  protected java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  java.lang.ref.Reference(T);
+  java.lang.ref.Reference(T, java.lang.ref.ReferenceQueue<? super T>);
+  public static void reachabilityFence(java.lang.Object);
+  static {};
+}

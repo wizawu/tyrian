@@ -1,0 +1,4 @@
+Compiled from "AttributeReader.java"
+public interface com.sun.org.apache.bcel.internal.classfile.AttributeReader {
+  public abstract com.sun.org.apache.bcel.internal.classfile.Attribute createAttribute(int, int, java.io.DataInputStream, com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+}

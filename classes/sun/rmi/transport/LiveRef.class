@@ -1,0 +1,22 @@
+Compiled from "LiveRef.java"
+public class sun.rmi.transport.LiveRef implements java.lang.Cloneable {
+  public sun.rmi.transport.LiveRef(java.rmi.server.ObjID, sun.rmi.transport.Endpoint, boolean);
+  public sun.rmi.transport.LiveRef(int);
+  public sun.rmi.transport.LiveRef(int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory);
+  public sun.rmi.transport.LiveRef(java.rmi.server.ObjID, int);
+  public sun.rmi.transport.LiveRef(java.rmi.server.ObjID, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory);
+  public java.lang.Object clone();
+  public int getPort();
+  public java.rmi.server.RMIClientSocketFactory getClientSocketFactory();
+  public java.rmi.server.RMIServerSocketFactory getServerSocketFactory();
+  public void exportObject(sun.rmi.transport.Target) throws java.rmi.RemoteException;
+  public sun.rmi.transport.Channel getChannel() throws java.rmi.RemoteException;
+  public java.rmi.server.ObjID getObjID();
+  sun.rmi.transport.Endpoint getEndpoint();
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public boolean remoteEquals(java.lang.Object);
+  public void write(java.io.ObjectOutput, boolean) throws java.io.IOException;
+  public static sun.rmi.transport.LiveRef read(java.io.ObjectInput, boolean) throws java.io.IOException, java.lang.ClassNotFoundException;
+}

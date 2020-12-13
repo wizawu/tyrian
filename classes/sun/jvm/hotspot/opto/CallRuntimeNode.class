@@ -1,0 +1,7 @@
+Compiled from "CallRuntimeNode.java"
+public class sun.jvm.hotspot.opto.CallRuntimeNode extends sun.jvm.hotspot.opto.CallNode {
+  public java.lang.String name();
+  public sun.jvm.hotspot.opto.CallRuntimeNode(sun.jvm.hotspot.debugger.Address);
+  public void dumpSpec(java.io.PrintStream);
+  static {};
+}

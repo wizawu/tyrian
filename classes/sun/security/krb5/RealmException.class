@@ -1,0 +1,7 @@
+Compiled from "RealmException.java"
+public class sun.security.krb5.RealmException extends sun.security.krb5.KrbException {
+  public sun.security.krb5.RealmException(int);
+  public sun.security.krb5.RealmException(java.lang.String);
+  public sun.security.krb5.RealmException(int, java.lang.String);
+  public sun.security.krb5.RealmException(java.lang.Throwable);
+}

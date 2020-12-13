@@ -1,0 +1,8 @@
+Compiled from "HotspotRuntime.java"
+class sun.management.HotspotRuntime implements sun.management.HotspotRuntimeMBean {
+  sun.management.HotspotRuntime(sun.management.VMManagement);
+  public long getSafepointCount();
+  public long getTotalSafepointTime();
+  public long getSafepointSyncTime();
+  public java.util.List<sun.management.counter.Counter> getInternalRuntimeCounters();
+}

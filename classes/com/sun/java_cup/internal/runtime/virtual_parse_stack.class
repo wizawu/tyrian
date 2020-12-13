@@ -1,0 +1,12 @@
+Compiled from "virtual_parse_stack.java"
+public class com.sun.java_cup.internal.runtime.virtual_parse_stack {
+  protected java.util.Stack<com.sun.java_cup.internal.runtime.Symbol> real_stack;
+  protected int real_next;
+  protected java.util.Stack<java.lang.Integer> vstack;
+  public com.sun.java_cup.internal.runtime.virtual_parse_stack(java.util.Stack<com.sun.java_cup.internal.runtime.Symbol>) throws java.lang.Exception;
+  protected void get_from_real();
+  public boolean empty();
+  public int top() throws java.lang.Exception;
+  public void pop() throws java.lang.Exception;
+  public void push(int);
+}

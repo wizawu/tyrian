@@ -1,0 +1,13 @@
+Compiled from "AAShapePipe.java"
+public final class sun.java2d.pipe.AAShapePipe implements sun.java2d.pipe.ShapeDrawPipe,sun.java2d.pipe.ParallelogramPipe {
+  static final sun.java2d.pipe.RenderingEngine RDR_ENGINE;
+  final sun.java2d.pipe.CompositePipe outpipe;
+  public sun.java2d.pipe.AAShapePipe(sun.java2d.pipe.CompositePipe);
+  public void draw(sun.java2d.SunGraphics2D, java.awt.Shape);
+  public void fill(sun.java2d.SunGraphics2D, java.awt.Shape);
+  public void fillParallelogram(sun.java2d.SunGraphics2D, double, double, double, double, double, double, double, double, double, double);
+  public void drawParallelogram(sun.java2d.SunGraphics2D, double, double, double, double, double, double, double, double, double, double, double, double);
+  public void renderPath(sun.java2d.SunGraphics2D, java.awt.Shape, java.awt.BasicStroke);
+  public void renderTiles(sun.java2d.SunGraphics2D, java.awt.Shape, sun.java2d.pipe.AATileGenerator, int[], sun.java2d.pipe.AAShapePipe$TileState);
+  static {};
+}

@@ -1,0 +1,7 @@
+Compiled from "XMLMessageFormatter_sv.java"
+public class com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter_sv implements com.sun.org.apache.xerces.internal.util.MessageFormatter {
+  public static final java.lang.String XML_DOMAIN;
+  public static final java.lang.String XMLNS_DOMAIN;
+  public com.sun.org.apache.xerces.internal.impl.msg.XMLMessageFormatter_sv();
+  public java.lang.String formatMessage(java.util.Locale, java.lang.String, java.lang.Object[]) throws java.util.MissingResourceException;
+}

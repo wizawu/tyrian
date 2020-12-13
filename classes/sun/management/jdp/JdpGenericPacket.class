@@ -1,0 +1,8 @@
+Compiled from "JdpGenericPacket.java"
+public abstract class sun.management.jdp.JdpGenericPacket implements sun.management.jdp.JdpPacket {
+  protected sun.management.jdp.JdpGenericPacket();
+  public static void checkMagic(int) throws sun.management.jdp.JdpException;
+  public static void checkVersion(short) throws sun.management.jdp.JdpException;
+  public static int getMagic();
+  public static short getVersion();
+}

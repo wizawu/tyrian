@@ -1,0 +1,13 @@
+Compiled from "ReferenceType.java"
+public final class sun.jvm.hotspot.memory.ReferenceType extends java.lang.Enum<sun.jvm.hotspot.memory.ReferenceType> {
+  public static final sun.jvm.hotspot.memory.ReferenceType REF_NONE;
+  public static final sun.jvm.hotspot.memory.ReferenceType REF_OTHER;
+  public static final sun.jvm.hotspot.memory.ReferenceType REF_SOFT;
+  public static final sun.jvm.hotspot.memory.ReferenceType REF_WEAK;
+  public static final sun.jvm.hotspot.memory.ReferenceType REF_FINAL;
+  public static final sun.jvm.hotspot.memory.ReferenceType REF_PHANTOM;
+  public static sun.jvm.hotspot.memory.ReferenceType[] values();
+  public static sun.jvm.hotspot.memory.ReferenceType valueOf(java.lang.String);
+  public java.lang.String value();
+  static {};
+}

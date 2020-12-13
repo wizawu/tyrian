@@ -1,0 +1,41 @@
+Compiled from "GlyphList.java"
+public final class sun.font.GlyphList {
+  int glyphindex;
+  int[] metrics;
+  byte[] graybits;
+  java.lang.Object strikelist;
+  int len;
+  int maxLen;
+  int maxPosLen;
+  int[] glyphData;
+  char[] chData;
+  long[] images;
+  float[] positions;
+  float x;
+  float y;
+  float gposx;
+  float gposy;
+  boolean usePositions;
+  boolean lcdRGBOrder;
+  boolean lcdSubPixPos;
+  void ensureCapacity(int);
+  public static sun.font.GlyphList getInstance();
+  public boolean setFromString(sun.java2d.loops.FontInfo, java.lang.String, float, float);
+  public boolean setFromChars(sun.java2d.loops.FontInfo, char[], int, int, float, float);
+  public void setFromGlyphVector(sun.java2d.loops.FontInfo, java.awt.font.GlyphVector, float, float);
+  public int[] getBounds();
+  public void setGlyphIndex(int);
+  public int[] getMetrics();
+  public byte[] getGrayBits();
+  public long[] getImages();
+  public boolean usePositions();
+  public float[] getPositions();
+  public float getX();
+  public float getY();
+  public java.lang.Object getStrike();
+  public boolean isSubPixPos();
+  public boolean isRGBOrder();
+  public void dispose();
+  public int getNumGlyphs();
+  static {};
+}

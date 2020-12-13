@@ -1,0 +1,11 @@
+Compiled from "SocketOutputStream.java"
+class java.net.SocketOutputStream extends java.io.FileOutputStream {
+  java.net.SocketOutputStream(java.net.AbstractPlainSocketImpl) throws java.io.IOException;
+  public final java.nio.channels.FileChannel getChannel();
+  public void write(int) throws java.io.IOException;
+  public void write(byte[]) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  protected void finalize();
+  static {};
+}

@@ -1,0 +1,32 @@
+Compiled from "Reference.java"
+public class com.sun.org.apache.xml.internal.security.signature.Reference extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
+  public static final java.lang.String OBJECT_URI;
+  public static final java.lang.String MANIFEST_URI;
+  public static final int MAXIMUM_TRANSFORM_COUNT;
+  protected com.sun.org.apache.xml.internal.security.signature.Reference(org.w3c.dom.Document, java.lang.String, java.lang.String, com.sun.org.apache.xml.internal.security.signature.Manifest, com.sun.org.apache.xml.internal.security.transforms.Transforms, java.lang.String) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected com.sun.org.apache.xml.internal.security.signature.Reference(org.w3c.dom.Element, java.lang.String, com.sun.org.apache.xml.internal.security.signature.Manifest) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  protected com.sun.org.apache.xml.internal.security.signature.Reference(org.w3c.dom.Element, java.lang.String, com.sun.org.apache.xml.internal.security.signature.Manifest, boolean) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm getMessageDigestAlgorithm() throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public void setURI(java.lang.String);
+  public java.lang.String getURI();
+  public void setId(java.lang.String);
+  public java.lang.String getId();
+  public void setType(java.lang.String);
+  public java.lang.String getType();
+  public boolean typeIsReferenceToObject();
+  public boolean typeIsReferenceToManifest();
+  public void generateDigestValue() throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException, com.sun.org.apache.xml.internal.security.signature.ReferenceNotInitializedException;
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput getContentsBeforeTransformation() throws com.sun.org.apache.xml.internal.security.signature.ReferenceNotInitializedException;
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput getContentsAfterTransformation() throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput getNodesetBeforeFirstCanonicalization() throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public java.lang.String getHTMLRepresentation() throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput getTransformsOutput();
+  public com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData getReferenceData();
+  protected com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput dereferenceURIandPerformTransforms(java.io.OutputStream) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public com.sun.org.apache.xml.internal.security.transforms.Transforms getTransforms() throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException, com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException, com.sun.org.apache.xml.internal.security.transforms.TransformationException, com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public byte[] getReferencedBytes() throws com.sun.org.apache.xml.internal.security.signature.ReferenceNotInitializedException, com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public byte[] getDigestValue() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public boolean verify() throws com.sun.org.apache.xml.internal.security.signature.ReferenceNotInitializedException, com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.lang.String getBaseLocalName();
+  static {};
+}

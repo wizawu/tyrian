@@ -1,0 +1,11 @@
+Compiled from "DateTimeTextProvider.java"
+class java.time.format.DateTimeTextProvider {
+  java.time.format.DateTimeTextProvider();
+  static java.time.format.DateTimeTextProvider getInstance();
+  public java.lang.String getText(java.time.temporal.TemporalField, long, java.time.format.TextStyle, java.util.Locale);
+  public java.lang.String getText(java.time.chrono.Chronology, java.time.temporal.TemporalField, long, java.time.format.TextStyle, java.util.Locale);
+  public java.util.Iterator<java.util.Map$Entry<java.lang.String, java.lang.Long>> getTextIterator(java.time.temporal.TemporalField, java.time.format.TextStyle, java.util.Locale);
+  public java.util.Iterator<java.util.Map$Entry<java.lang.String, java.lang.Long>> getTextIterator(java.time.chrono.Chronology, java.time.temporal.TemporalField, java.time.format.TextStyle, java.util.Locale);
+  static <T> T getLocalizedResource(java.lang.String, java.util.Locale);
+  static {};
+}

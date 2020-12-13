@@ -1,0 +1,18 @@
+Compiled from "VolatileImage.java"
+public abstract class java.awt.image.VolatileImage extends java.awt.Image implements java.awt.Transparency {
+  public static final int IMAGE_OK;
+  public static final int IMAGE_RESTORED;
+  public static final int IMAGE_INCOMPATIBLE;
+  protected int transparency;
+  public java.awt.image.VolatileImage();
+  public abstract java.awt.image.BufferedImage getSnapshot();
+  public abstract int getWidth();
+  public abstract int getHeight();
+  public java.awt.image.ImageProducer getSource();
+  public java.awt.Graphics getGraphics();
+  public abstract java.awt.Graphics2D createGraphics();
+  public abstract int validate(java.awt.GraphicsConfiguration);
+  public abstract boolean contentsLost();
+  public abstract java.awt.ImageCapabilities getCapabilities();
+  public int getTransparency();
+}

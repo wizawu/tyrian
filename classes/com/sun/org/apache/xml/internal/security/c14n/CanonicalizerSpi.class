@@ -1,0 +1,19 @@
+Compiled from "CanonicalizerSpi.java"
+public abstract class com.sun.org.apache.xml.internal.security.c14n.CanonicalizerSpi {
+  protected boolean reset;
+  protected boolean secureValidation;
+  public com.sun.org.apache.xml.internal.security.c14n.CanonicalizerSpi();
+  public byte[] engineCanonicalize(byte[]) throws javax.xml.parsers.ParserConfigurationException, java.io.IOException, org.xml.sax.SAXException, com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] engineCanonicalizeXPathNodeSet(org.w3c.dom.NodeList) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] engineCanonicalizeXPathNodeSet(org.w3c.dom.NodeList, java.lang.String) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public abstract java.lang.String engineGetURI();
+  public abstract boolean engineGetIncludeComments();
+  public abstract byte[] engineCanonicalizeXPathNodeSet(java.util.Set<org.w3c.dom.Node>) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public abstract byte[] engineCanonicalizeXPathNodeSet(java.util.Set<org.w3c.dom.Node>, java.lang.String) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public abstract byte[] engineCanonicalizeSubTree(org.w3c.dom.Node) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public abstract byte[] engineCanonicalizeSubTree(org.w3c.dom.Node, java.lang.String) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public abstract byte[] engineCanonicalizeSubTree(org.w3c.dom.Node, java.lang.String, boolean) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public abstract void setWriter(java.io.OutputStream);
+  public boolean isSecureValidation();
+  public void setSecureValidation(boolean);
+}

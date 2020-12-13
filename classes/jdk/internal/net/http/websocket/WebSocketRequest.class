@@ -1,0 +1,6 @@
+Compiled from "WebSocketRequest.java"
+public interface jdk.internal.net.http.websocket.WebSocketRequest {
+  public abstract void isWebSocket(boolean);
+  public abstract void setSystemHeader(java.lang.String, java.lang.String);
+  public abstract void setProxy(java.net.Proxy);
+}

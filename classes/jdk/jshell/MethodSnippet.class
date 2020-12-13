@@ -1,0 +1,12 @@
+Compiled from "MethodSnippet.java"
+public class jdk.jshell.MethodSnippet extends jdk.jshell.DeclarationSnippet {
+  final java.lang.String signature;
+  jdk.jshell.MethodSnippet(jdk.jshell.Key$MethodKey, java.lang.String, jdk.jshell.Wrap, java.lang.String, java.lang.String, jdk.jshell.Wrap, java.util.Collection<java.lang.String>, java.util.Collection<java.lang.String>, jdk.jshell.DiagList);
+  public java.lang.String parameterTypes();
+  public java.lang.String signature();
+  public java.lang.String toString();
+  jdk.jshell.Key$MethodKey key();
+  java.lang.String qualifiedParameterTypes();
+  void setQualifiedParameterTypes(java.lang.String);
+  jdk.jshell.Key key();
+}

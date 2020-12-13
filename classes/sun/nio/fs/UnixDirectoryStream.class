@@ -1,0 +1,12 @@
+Compiled from "UnixDirectoryStream.java"
+class sun.nio.fs.UnixDirectoryStream implements java.nio.file.DirectoryStream<java.nio.file.Path> {
+  sun.nio.fs.UnixDirectoryStream(sun.nio.fs.UnixPath, long, java.nio.file.DirectoryStream$Filter<? super java.nio.file.Path>);
+  protected final sun.nio.fs.UnixPath directory();
+  protected final java.util.concurrent.locks.Lock readLock();
+  protected final java.util.concurrent.locks.Lock writeLock();
+  protected final boolean isOpen();
+  protected final boolean closeImpl() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  protected final java.util.Iterator<java.nio.file.Path> iterator(java.nio.file.DirectoryStream<java.nio.file.Path>);
+  public java.util.Iterator<java.nio.file.Path> iterator();
+}

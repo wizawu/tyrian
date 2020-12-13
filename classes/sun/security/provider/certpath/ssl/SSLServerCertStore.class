@@ -1,0 +1,8 @@
+Compiled from "SSLServerCertStore.java"
+public final class sun.security.provider.certpath.ssl.SSLServerCertStore extends java.security.cert.CertStoreSpi {
+  sun.security.provider.certpath.ssl.SSLServerCertStore(java.net.URI) throws java.security.InvalidAlgorithmParameterException;
+  public java.util.Collection<java.security.cert.X509Certificate> engineGetCertificates(java.security.cert.CertSelector) throws java.security.cert.CertStoreException;
+  public java.util.Collection<java.security.cert.X509CRL> engineGetCRLs(java.security.cert.CRLSelector) throws java.security.cert.CertStoreException;
+  public static java.security.cert.CertStore getInstance(java.net.URI) throws java.security.InvalidAlgorithmParameterException;
+  static {};
+}

@@ -1,0 +1,4 @@
+Compiled from "IllegalOptionValue.java"
+class jdk.javadoc.internal.tool.IllegalOptionValue extends jdk.javadoc.internal.tool.OptionException {
+  jdk.javadoc.internal.tool.IllegalOptionValue(java.lang.Runnable, java.lang.String);
+}

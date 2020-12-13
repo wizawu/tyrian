@@ -1,0 +1,6 @@
+Compiled from "KeySelector.java"
+public abstract class javax.xml.crypto.KeySelector {
+  protected javax.xml.crypto.KeySelector();
+  public abstract javax.xml.crypto.KeySelectorResult select(javax.xml.crypto.dsig.keyinfo.KeyInfo, javax.xml.crypto.KeySelector$Purpose, javax.xml.crypto.AlgorithmMethod, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.KeySelectorException;
+  public static javax.xml.crypto.KeySelector singletonKeySelector(java.security.Key);
+}

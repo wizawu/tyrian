@@ -1,0 +1,15 @@
+Compiled from "DesktopProperty.java"
+public class sun.swing.plaf.DesktopProperty implements javax.swing.UIDefaults$ActiveValue {
+  public static void flushUnreferencedProperties();
+  protected void updateAllUIs();
+  public sun.swing.plaf.DesktopProperty(java.lang.String, java.lang.Object);
+  public java.lang.Object createValue(javax.swing.UIDefaults);
+  protected java.lang.Object getValueFromDesktop();
+  protected java.lang.Object getDefaultValue();
+  public void invalidate(javax.swing.LookAndFeel);
+  public void invalidate();
+  protected void updateUI();
+  protected java.lang.Object configureValue(java.lang.Object);
+  protected java.lang.String getKey();
+  static {};
+}

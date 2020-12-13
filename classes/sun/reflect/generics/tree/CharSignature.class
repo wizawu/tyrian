@@ -1,0 +1,6 @@
+Compiled from "CharSignature.java"
+public class sun.reflect.generics.tree.CharSignature implements sun.reflect.generics.tree.BaseType {
+  public static sun.reflect.generics.tree.CharSignature make();
+  public void accept(sun.reflect.generics.visitor.TypeTreeVisitor<?>);
+  static {};
+}

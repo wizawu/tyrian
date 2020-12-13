@@ -1,0 +1,4 @@
+Compiled from "IOError.java"
+public class java.io.IOError extends java.lang.Error {
+  public java.io.IOError(java.lang.Throwable);
+}

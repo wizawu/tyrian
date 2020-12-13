@@ -1,0 +1,5 @@
+Compiled from "StAXValidatorHelper.java"
+public final class com.sun.org.apache.xerces.internal.jaxp.validation.StAXValidatorHelper implements com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHelper {
+  public com.sun.org.apache.xerces.internal.jaxp.validation.StAXValidatorHelper(com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaValidatorComponentManager);
+  public void validate(javax.xml.transform.Source, javax.xml.transform.Result) throws org.xml.sax.SAXException, java.io.IOException;
+}

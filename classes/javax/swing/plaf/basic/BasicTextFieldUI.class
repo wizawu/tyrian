@@ -1,0 +1,9 @@
+Compiled from "BasicTextFieldUI.java"
+public class javax.swing.plaf.basic.BasicTextFieldUI extends javax.swing.plaf.basic.BasicTextUI {
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.plaf.basic.BasicTextFieldUI();
+  protected java.lang.String getPropertyPrefix();
+  public javax.swing.text.View create(javax.swing.text.Element);
+  public int getBaseline(javax.swing.JComponent, int, int);
+  public java.awt.Component$BaselineResizeBehavior getBaselineResizeBehavior(javax.swing.JComponent);
+}

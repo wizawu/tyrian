@@ -1,0 +1,34 @@
+Compiled from "StateNode.java"
+public abstract class jdk.nashorn.internal.runtime.regexp.joni.ast.StateNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.Node implements jdk.nashorn.internal.runtime.regexp.joni.constants.NodeStatus {
+  protected int state;
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.StateNode();
+  public java.lang.String toString(int);
+  public java.lang.String stateToString();
+  public boolean isMinFixed();
+  public void setMinFixed();
+  public boolean isMaxFixed();
+  public void setMaxFixed();
+  public boolean isCLenFixed();
+  public void setCLenFixed();
+  public boolean isMark1();
+  public void setMark1();
+  public boolean isMark2();
+  public void setMark2();
+  public void clearMark2();
+  public boolean isMemBackrefed();
+  public void setMemBackrefed();
+  public boolean isStopBtSimpleRepeat();
+  public void setStopBtSimpleRepeat();
+  public boolean isRecursion();
+  public void setRecursion();
+  public boolean isCalled();
+  public void setCalled();
+  public boolean isAddrFixed();
+  public void setAddrFixed();
+  public boolean isInRepeat();
+  public void setInRepeat();
+  public boolean isNestLevel();
+  public void setNestLevel();
+  public boolean isByNumber();
+  public void setByNumber();
+}

@@ -1,0 +1,5 @@
+Compiled from "XSNamespaceItemList.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSNamespaceItemList extends java.util.List<com.sun.org.apache.xerces.internal.xs.XSNamespaceItem> {
+  public abstract int getLength();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSNamespaceItem item(int);
+}

@@ -1,0 +1,6 @@
+Compiled from "ModuleReferences.java"
+class jdk.internal.module.ModuleReferences {
+  static java.lang.module.ModuleReference newJarModule(jdk.internal.module.ModuleInfo$Attributes, jdk.internal.module.ModulePatcher, java.nio.file.Path);
+  static java.lang.module.ModuleReference newJModModule(jdk.internal.module.ModuleInfo$Attributes, java.nio.file.Path);
+  static java.lang.module.ModuleReference newExplodedModule(jdk.internal.module.ModuleInfo$Attributes, jdk.internal.module.ModulePatcher, java.nio.file.Path);
+}

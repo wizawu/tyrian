@@ -1,0 +1,7 @@
+Compiled from "FilterGenerator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.FilterGenerator extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.FilterGenerator(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String[], com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet);
+  public final com.sun.org.apache.bcel.internal.generic.Instruction loadTranslet();
+  public boolean isExternal();
+  static {};
+}

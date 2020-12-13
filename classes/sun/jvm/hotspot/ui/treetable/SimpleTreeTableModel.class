@@ -1,0 +1,12 @@
+Compiled from "SimpleTreeTableModel.java"
+public class sun.jvm.hotspot.ui.treetable.SimpleTreeTableModel extends sun.jvm.hotspot.ui.tree.SimpleTreeModel implements sun.jvm.hotspot.ui.treetable.TreeTableModel {
+  public sun.jvm.hotspot.ui.treetable.SimpleTreeTableModel();
+  public int getColumnCount();
+  public java.lang.String getColumnName(int);
+  public java.lang.Class getColumnClass(int);
+  public java.lang.Object getValueAt(java.lang.Object, int);
+  public boolean isCellEditable(java.lang.Object, int);
+  public void setValueAt(java.lang.Object, java.lang.Object, int);
+  public boolean getValuesEditable();
+  public void setValuesEditable(boolean);
+}

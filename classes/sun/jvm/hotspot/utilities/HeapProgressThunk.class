@@ -1,0 +1,5 @@
+Compiled from "HeapProgressThunk.java"
+public interface sun.jvm.hotspot.utilities.HeapProgressThunk {
+  public abstract void heapIterationFractionUpdate(double);
+  public abstract void heapIterationComplete();
+}

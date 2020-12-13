@@ -1,0 +1,12 @@
+Compiled from "EventHandler.java"
+public class java.beans.EventHandler implements java.lang.reflect.InvocationHandler {
+  public java.beans.EventHandler(java.lang.Object, java.lang.String, java.lang.String, java.lang.String);
+  public java.lang.Object getTarget();
+  public java.lang.String getAction();
+  public java.lang.String getEventPropertyName();
+  public java.lang.String getListenerMethodName();
+  public java.lang.Object invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]);
+  public static <T> T create(java.lang.Class<T>, java.lang.Object, java.lang.String);
+  public static <T> T create(java.lang.Class<T>, java.lang.Object, java.lang.String, java.lang.String);
+  public static <T> T create(java.lang.Class<T>, java.lang.Object, java.lang.String, java.lang.String, java.lang.String);
+}

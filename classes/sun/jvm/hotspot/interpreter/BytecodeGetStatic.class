@@ -1,0 +1,10 @@
+Compiled from "BytecodeGetStatic.java"
+public class sun.jvm.hotspot.interpreter.BytecodeGetStatic extends sun.jvm.hotspot.interpreter.BytecodeGetPut {
+  sun.jvm.hotspot.interpreter.BytecodeGetStatic(sun.jvm.hotspot.oops.Method, int);
+  public boolean isStatic();
+  public void verify();
+  public boolean isValid();
+  public static sun.jvm.hotspot.interpreter.BytecodeGetStatic at(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeGetStatic atCheck(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeGetStatic at(sun.jvm.hotspot.interpreter.BytecodeStream);
+}

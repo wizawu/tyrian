@@ -1,0 +1,8 @@
+Compiled from "NamedParameterSpec.java"
+public class java.security.spec.NamedParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public static final java.security.spec.NamedParameterSpec X25519;
+  public static final java.security.spec.NamedParameterSpec X448;
+  public java.security.spec.NamedParameterSpec(java.lang.String);
+  public java.lang.String getName();
+  static {};
+}

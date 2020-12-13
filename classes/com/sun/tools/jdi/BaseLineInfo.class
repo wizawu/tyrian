@@ -1,0 +1,8 @@
+Compiled from "BaseLineInfo.java"
+class com.sun.tools.jdi.BaseLineInfo implements com.sun.tools.jdi.LineInfo {
+  com.sun.tools.jdi.BaseLineInfo(int, com.sun.tools.jdi.ReferenceTypeImpl);
+  public java.lang.String liStratum();
+  public int liLineNumber();
+  public java.lang.String liSourceName() throws com.sun.jdi.AbsentInformationException;
+  public java.lang.String liSourcePath() throws com.sun.jdi.AbsentInformationException;
+}

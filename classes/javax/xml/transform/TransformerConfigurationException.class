@@ -1,0 +1,9 @@
+Compiled from "TransformerConfigurationException.java"
+public class javax.xml.transform.TransformerConfigurationException extends javax.xml.transform.TransformerException {
+  public javax.xml.transform.TransformerConfigurationException();
+  public javax.xml.transform.TransformerConfigurationException(java.lang.String);
+  public javax.xml.transform.TransformerConfigurationException(java.lang.Throwable);
+  public javax.xml.transform.TransformerConfigurationException(java.lang.String, java.lang.Throwable);
+  public javax.xml.transform.TransformerConfigurationException(java.lang.String, javax.xml.transform.SourceLocator);
+  public javax.xml.transform.TransformerConfigurationException(java.lang.String, javax.xml.transform.SourceLocator, java.lang.Throwable);
+}

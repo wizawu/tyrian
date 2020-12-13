@@ -1,0 +1,8 @@
+Compiled from "NameCodec.java"
+public final class jdk.nashorn.internal.runtime.linker.NameCodec {
+  public static final java.lang.String EMPTY_NAME;
+  static final boolean $assertionsDisabled;
+  public static java.lang.String encode(java.lang.String);
+  public static java.lang.String decode(java.lang.String);
+  static {};
+}

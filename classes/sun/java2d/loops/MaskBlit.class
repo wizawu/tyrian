@@ -1,0 +1,13 @@
+Compiled from "MaskBlit.java"
+public class sun.java2d.loops.MaskBlit extends sun.java2d.loops.GraphicsPrimitive {
+  public static final java.lang.String methodSignature;
+  public static final int primTypeID;
+  public static sun.java2d.loops.MaskBlit locate(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public static sun.java2d.loops.MaskBlit getFromCache(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  protected sun.java2d.loops.MaskBlit(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public sun.java2d.loops.MaskBlit(long, sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public native void MaskBlit(sun.java2d.SurfaceData, sun.java2d.SurfaceData, java.awt.Composite, sun.java2d.pipe.Region, int, int, int, int, int, int, byte[], int, int);
+  public sun.java2d.loops.GraphicsPrimitive makePrimitive(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public sun.java2d.loops.GraphicsPrimitive traceWrap();
+  static {};
+}

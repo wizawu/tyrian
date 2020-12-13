@@ -1,0 +1,4 @@
+Compiled from "PrivilegedExceptionAction.java"
+public interface java.security.PrivilegedExceptionAction<T> {
+  public abstract T run() throws java.lang.Exception;
+}

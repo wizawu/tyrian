@@ -1,0 +1,29 @@
+Compiled from "AppletClassLoader.java"
+public class sun.applet.AppletClassLoader extends java.net.URLClassLoader {
+  int usageCount;
+  protected sun.applet.AppletClassLoader(java.net.URL);
+  public void disableRecursiveDirectoryRead();
+  void setCodebaseLookup(boolean);
+  java.net.URL getBaseURL();
+  public java.net.URL[] getURLs();
+  protected void addJar(java.lang.String) throws java.io.IOException;
+  public synchronized java.lang.Class<?> loadClass(java.lang.String, boolean) throws java.lang.ClassNotFoundException;
+  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  protected java.security.PermissionCollection getPermissions(java.security.CodeSource);
+  public java.io.InputStream getResourceAsStream(java.lang.String);
+  public java.io.InputStream getResourceAsStreamFromJar(java.lang.String);
+  public java.net.URL findResource(java.lang.String);
+  public java.util.Enumeration<java.net.URL> findResources(java.lang.String) throws java.io.IOException;
+  java.lang.Class<?> loadCode(java.lang.String) throws java.lang.ClassNotFoundException;
+  public java.lang.ThreadGroup getThreadGroup();
+  public sun.awt.AppContext getAppContext();
+  public void grab();
+  protected void setExceptionStatus();
+  public boolean getExceptionStatus();
+  protected void release();
+  protected sun.awt.AppContext resetAppContext();
+  void setJDK11Target(java.lang.Class<?>, boolean);
+  void setJDK12Target(java.lang.Class<?>, boolean);
+  java.lang.Boolean isJDK11Target(java.lang.Class<?>);
+  java.lang.Boolean isJDK12Target(java.lang.Class<?>);
+}

@@ -1,0 +1,21 @@
+Compiled from "Comparator.java"
+public interface java.util.Comparator<T> {
+  public abstract int compare(T, T);
+  public abstract boolean equals(java.lang.Object);
+  public default java.util.Comparator<T> reversed();
+  public default java.util.Comparator<T> thenComparing(java.util.Comparator<? super T>);
+  public default <U> java.util.Comparator<T> thenComparing(java.util.function.Function<? super T, ? extends U>, java.util.Comparator<? super U>);
+  public default <U extends java.lang.Comparable<? super U>> java.util.Comparator<T> thenComparing(java.util.function.Function<? super T, ? extends U>);
+  public default java.util.Comparator<T> thenComparingInt(java.util.function.ToIntFunction<? super T>);
+  public default java.util.Comparator<T> thenComparingLong(java.util.function.ToLongFunction<? super T>);
+  public default java.util.Comparator<T> thenComparingDouble(java.util.function.ToDoubleFunction<? super T>);
+  public static <T extends java.lang.Comparable<? super T>> java.util.Comparator<T> reverseOrder();
+  public static <T extends java.lang.Comparable<? super T>> java.util.Comparator<T> naturalOrder();
+  public static <T> java.util.Comparator<T> nullsFirst(java.util.Comparator<? super T>);
+  public static <T> java.util.Comparator<T> nullsLast(java.util.Comparator<? super T>);
+  public static <T, U> java.util.Comparator<T> comparing(java.util.function.Function<? super T, ? extends U>, java.util.Comparator<? super U>);
+  public static <T, U extends java.lang.Comparable<? super U>> java.util.Comparator<T> comparing(java.util.function.Function<? super T, ? extends U>);
+  public static <T> java.util.Comparator<T> comparingInt(java.util.function.ToIntFunction<? super T>);
+  public static <T> java.util.Comparator<T> comparingLong(java.util.function.ToLongFunction<? super T>);
+  public static <T> java.util.Comparator<T> comparingDouble(java.util.function.ToDoubleFunction<? super T>);
+}

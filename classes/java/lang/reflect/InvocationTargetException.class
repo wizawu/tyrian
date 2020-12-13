@@ -1,0 +1,8 @@
+Compiled from "InvocationTargetException.java"
+public class java.lang.reflect.InvocationTargetException extends java.lang.ReflectiveOperationException {
+  protected java.lang.reflect.InvocationTargetException();
+  public java.lang.reflect.InvocationTargetException(java.lang.Throwable);
+  public java.lang.reflect.InvocationTargetException(java.lang.Throwable, java.lang.String);
+  public java.lang.Throwable getTargetException();
+  public java.lang.Throwable getCause();
+}

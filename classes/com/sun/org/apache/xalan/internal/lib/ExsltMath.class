@@ -1,0 +1,23 @@
+Compiled from "ExsltMath.java"
+public class com.sun.org.apache.xalan.internal.lib.ExsltMath extends com.sun.org.apache.xalan.internal.lib.ExsltBase {
+  public com.sun.org.apache.xalan.internal.lib.ExsltMath();
+  public static double max(org.w3c.dom.NodeList);
+  public static double min(org.w3c.dom.NodeList);
+  public static org.w3c.dom.NodeList highest(org.w3c.dom.NodeList);
+  public static org.w3c.dom.NodeList lowest(org.w3c.dom.NodeList);
+  public static double abs(double);
+  public static double acos(double);
+  public static double asin(double);
+  public static double atan(double);
+  public static double atan2(double, double);
+  public static double cos(double);
+  public static double exp(double);
+  public static double log(double);
+  public static double power(double, double);
+  public static double random();
+  public static double sin(double);
+  public static double sqrt(double);
+  public static double tan(double);
+  public static double constant(java.lang.String, double);
+  static {};
+}

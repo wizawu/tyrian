@@ -1,0 +1,13 @@
+Compiled from "SpinnerListModel.java"
+public class javax.swing.SpinnerListModel extends javax.swing.AbstractSpinnerModel implements java.io.Serializable {
+  public javax.swing.SpinnerListModel(java.util.List<?>);
+  public javax.swing.SpinnerListModel(java.lang.Object[]);
+  public javax.swing.SpinnerListModel();
+  public java.util.List<?> getList();
+  public void setList(java.util.List<?>);
+  public java.lang.Object getValue();
+  public void setValue(java.lang.Object);
+  public java.lang.Object getNextValue();
+  public java.lang.Object getPreviousValue();
+  java.lang.Object findNextMatch(java.lang.String);
+}

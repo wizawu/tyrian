@@ -1,0 +1,4 @@
+Compiled from "SerializationConstructorAccessorImpl.java"
+abstract class jdk.internal.reflect.SerializationConstructorAccessorImpl extends jdk.internal.reflect.ConstructorAccessorImpl {
+  jdk.internal.reflect.SerializationConstructorAccessorImpl();
+}

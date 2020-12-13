@@ -1,0 +1,13 @@
+Compiled from "SubImageInputStream.java"
+public final class com.sun.imageio.plugins.common.SubImageInputStream extends javax.imageio.stream.ImageInputStreamImpl {
+  javax.imageio.stream.ImageInputStream stream;
+  long startingPos;
+  int startingLength;
+  int length;
+  public com.sun.imageio.plugins.common.SubImageInputStream(javax.imageio.stream.ImageInputStream, int) throws java.io.IOException;
+  public int read() throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public long length();
+  public void seek(long) throws java.io.IOException;
+  protected void finalize() throws java.lang.Throwable;
+}

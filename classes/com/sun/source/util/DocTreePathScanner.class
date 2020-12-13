@@ -1,0 +1,7 @@
+Compiled from "DocTreePathScanner.java"
+public class com.sun.source.util.DocTreePathScanner<R, P> extends com.sun.source.util.DocTreeScanner<R, P> {
+  public com.sun.source.util.DocTreePathScanner();
+  public R scan(com.sun.source.util.DocTreePath, P);
+  public R scan(com.sun.source.doctree.DocTree, P);
+  public com.sun.source.util.DocTreePath getCurrentPath();
+}

@@ -1,0 +1,4 @@
+Compiled from "MemberDoc.java"
+public interface com.sun.javadoc.MemberDoc extends com.sun.javadoc.ProgramElementDoc {
+  public abstract boolean isSynthetic();
+}

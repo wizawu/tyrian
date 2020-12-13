@@ -1,0 +1,19 @@
+Compiled from "ValueRange.java"
+public final class java.time.temporal.ValueRange implements java.io.Serializable {
+  public static java.time.temporal.ValueRange of(long, long);
+  public static java.time.temporal.ValueRange of(long, long, long);
+  public static java.time.temporal.ValueRange of(long, long, long, long);
+  public boolean isFixed();
+  public long getMinimum();
+  public long getLargestMinimum();
+  public long getSmallestMaximum();
+  public long getMaximum();
+  public boolean isIntValue();
+  public boolean isValidValue(long);
+  public boolean isValidIntValue(long);
+  public long checkValidValue(long, java.time.temporal.TemporalField);
+  public int checkValidIntValue(long, java.time.temporal.TemporalField);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

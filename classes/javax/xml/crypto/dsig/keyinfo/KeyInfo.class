@@ -1,0 +1,6 @@
+Compiled from "KeyInfo.java"
+public interface javax.xml.crypto.dsig.keyinfo.KeyInfo extends javax.xml.crypto.XMLStructure {
+  public abstract java.util.List<javax.xml.crypto.XMLStructure> getContent();
+  public abstract java.lang.String getId();
+  public abstract void marshal(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.MarshalException;
+}

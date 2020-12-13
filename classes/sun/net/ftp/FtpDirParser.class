@@ -1,0 +1,4 @@
+Compiled from "FtpDirParser.java"
+public interface sun.net.ftp.FtpDirParser {
+  public abstract sun.net.ftp.FtpDirEntry parseLine(java.lang.String);
+}

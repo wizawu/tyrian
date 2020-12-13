@@ -1,0 +1,20 @@
+Compiled from "SignatureAlgorithmSpi.java"
+public abstract class com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi {
+  public com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithmSpi();
+  protected abstract java.lang.String engineGetURI();
+  protected abstract java.lang.String engineGetJCEAlgorithmString();
+  protected abstract java.lang.String engineGetJCEProviderName();
+  protected abstract void engineUpdate(byte[]) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected abstract void engineUpdate(byte) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected abstract void engineUpdate(byte[], int, int) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected abstract void engineInitSign(java.security.Key) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected abstract void engineInitSign(java.security.Key, java.security.SecureRandom) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected abstract void engineInitSign(java.security.Key, java.security.spec.AlgorithmParameterSpec) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected abstract byte[] engineSign() throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected abstract void engineInitVerify(java.security.Key) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected abstract boolean engineVerify(byte[]) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected abstract void engineSetParameter(java.security.spec.AlgorithmParameterSpec) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  protected void engineGetContextFromElement(org.w3c.dom.Element);
+  protected abstract void engineSetHMACOutputLength(int) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public void reset();
+}

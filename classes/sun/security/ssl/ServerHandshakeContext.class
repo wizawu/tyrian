@@ -1,0 +1,12 @@
+Compiled from "ServerHandshakeContext.java"
+class sun.security.ssl.ServerHandshakeContext extends sun.security.ssl.HandshakeContext {
+  static final boolean rejectClientInitiatedRenego;
+  static final java.security.AlgorithmConstraints legacyAlgorithmConstraints;
+  sun.security.ssl.SSLPossession interimAuthn;
+  sun.security.ssl.StatusResponseManager$StaplingParameters stapleParams;
+  sun.security.ssl.CertificateMessage$CertificateEntry currentCertEntry;
+  final long statusRespTimeout;
+  sun.security.ssl.ServerHandshakeContext(sun.security.ssl.SSLContextImpl, sun.security.ssl.TransportContext) throws java.io.IOException;
+  void kickstart() throws java.io.IOException;
+  static {};
+}

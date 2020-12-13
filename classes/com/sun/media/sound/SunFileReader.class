@@ -1,0 +1,17 @@
+Compiled from "SunFileReader.java"
+abstract class com.sun.media.sound.SunFileReader extends javax.sound.sampled.spi.AudioFileReader {
+  com.sun.media.sound.SunFileReader();
+  public final com.sun.media.sound.StandardFileFormat getAudioFileFormat(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public final javax.sound.sampled.AudioFileFormat getAudioFileFormat(java.net.URL) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public final javax.sound.sampled.AudioFileFormat getAudioFileFormat(java.io.File) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public javax.sound.sampled.AudioInputStream getAudioInputStream(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public final javax.sound.sampled.AudioInputStream getAudioInputStream(java.net.URL) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public final javax.sound.sampled.AudioInputStream getAudioInputStream(java.io.File) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  abstract com.sun.media.sound.StandardFileFormat getAudioFileFormatImpl(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  final int rllong(java.io.DataInputStream) throws java.io.IOException;
+  final int big2little(int);
+  final short rlshort(java.io.DataInputStream) throws java.io.IOException;
+  final short big2littleShort(short);
+  static final int calculatePCMFrameSize(int, int);
+  public javax.sound.sampled.AudioFileFormat getAudioFileFormat(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+}

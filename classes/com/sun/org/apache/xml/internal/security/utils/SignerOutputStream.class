@@ -1,0 +1,9 @@
+Compiled from "SignerOutputStream.java"
+public class com.sun.org.apache.xml.internal.security.utils.SignerOutputStream extends java.io.ByteArrayOutputStream {
+  final com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm sa;
+  public com.sun.org.apache.xml.internal.security.utils.SignerOutputStream(com.sun.org.apache.xml.internal.security.algorithms.SignatureAlgorithm);
+  public void write(byte[]);
+  public void write(int);
+  public void write(byte[], int, int);
+  static {};
+}

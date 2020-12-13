@@ -1,0 +1,6 @@
+Compiled from "DebuggerNode.java"
+public final class jdk.nashorn.internal.ir.DebuggerNode extends jdk.nashorn.internal.ir.Statement {
+  public jdk.nashorn.internal.ir.DebuggerNode(int, long, int);
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public void toString(java.lang.StringBuilder, boolean);
+}

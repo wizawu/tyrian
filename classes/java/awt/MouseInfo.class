@@ -1,0 +1,7 @@
+Compiled from "MouseInfo.java"
+public class java.awt.MouseInfo {
+  static final boolean $assertionsDisabled;
+  public static java.awt.PointerInfo getPointerInfo() throws java.awt.HeadlessException;
+  public static int getNumberOfButtons() throws java.awt.HeadlessException;
+  static {};
+}

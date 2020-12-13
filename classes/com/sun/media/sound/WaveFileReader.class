@@ -1,0 +1,6 @@
+Compiled from "WaveFileReader.java"
+public final class com.sun.media.sound.WaveFileReader extends com.sun.media.sound.SunFileReader {
+  public com.sun.media.sound.WaveFileReader();
+  com.sun.media.sound.StandardFileFormat getAudioFileFormatImpl(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public javax.sound.sampled.AudioInputStream getAudioInputStream(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+}

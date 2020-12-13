@@ -1,0 +1,41 @@
+Compiled from "Trie2.java"
+abstract class sun.text.normalizer.Trie2 implements java.lang.Iterable<sun.text.normalizer.Trie2$Range> {
+  sun.text.normalizer.Trie2$UTrie2Header header;
+  char[] index;
+  int data16;
+  int[] data32;
+  int indexLength;
+  int dataLength;
+  int index2NullOffset;
+  int initialValue;
+  int errorValue;
+  int highStart;
+  int highValueIndex;
+  int dataNullOffset;
+  static final int UTRIE2_OPTIONS_VALUE_BITS_MASK;
+  static final int UTRIE2_SHIFT_1;
+  static final int UTRIE2_SHIFT_2;
+  static final int UTRIE2_SHIFT_1_2;
+  static final int UTRIE2_OMITTED_BMP_INDEX_1_LENGTH;
+  static final int UTRIE2_INDEX_2_BLOCK_LENGTH;
+  static final int UTRIE2_INDEX_2_MASK;
+  static final int UTRIE2_DATA_BLOCK_LENGTH;
+  static final int UTRIE2_DATA_MASK;
+  static final int UTRIE2_INDEX_SHIFT;
+  static final int UTRIE2_DATA_GRANULARITY;
+  static final int UTRIE2_LSCP_INDEX_2_OFFSET;
+  static final int UTRIE2_LSCP_INDEX_2_LENGTH;
+  static final int UTRIE2_INDEX_2_BMP_LENGTH;
+  static final int UTRIE2_UTF8_2B_INDEX_2_OFFSET;
+  static final int UTRIE2_UTF8_2B_INDEX_2_LENGTH;
+  static final int UTRIE2_INDEX_1_OFFSET;
+  static final int UTRIE2_BAD_UTF8_DATA_OFFSET;
+  sun.text.normalizer.Trie2();
+  public static sun.text.normalizer.Trie2 createFromSerialized(java.nio.ByteBuffer) throws java.io.IOException;
+  public abstract int get(int);
+  public abstract int getFromU16SingleLead(char);
+  public java.util.Iterator<sun.text.normalizer.Trie2$Range> iterator();
+  public java.util.Iterator<sun.text.normalizer.Trie2$Range> iterator(sun.text.normalizer.Trie2$ValueMapper);
+  int rangeEnd(int, int, int);
+  static {};
+}

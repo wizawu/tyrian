@@ -1,0 +1,7 @@
+Compiled from "IFNULL.java"
+public class com.sun.org.apache.bcel.internal.generic.IFNULL extends com.sun.org.apache.bcel.internal.generic.IfInstruction {
+  com.sun.org.apache.bcel.internal.generic.IFNULL();
+  public com.sun.org.apache.bcel.internal.generic.IFNULL(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public com.sun.org.apache.bcel.internal.generic.IfInstruction negate();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

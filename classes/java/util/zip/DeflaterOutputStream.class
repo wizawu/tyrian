@@ -1,0 +1,18 @@
+Compiled from "DeflaterOutputStream.java"
+public class java.util.zip.DeflaterOutputStream extends java.io.FilterOutputStream {
+  protected java.util.zip.Deflater def;
+  protected byte[] buf;
+  boolean usesDefaultDeflater;
+  public java.util.zip.DeflaterOutputStream(java.io.OutputStream, java.util.zip.Deflater, int, boolean);
+  public java.util.zip.DeflaterOutputStream(java.io.OutputStream, java.util.zip.Deflater, int);
+  public java.util.zip.DeflaterOutputStream(java.io.OutputStream, java.util.zip.Deflater, boolean);
+  public java.util.zip.DeflaterOutputStream(java.io.OutputStream, java.util.zip.Deflater);
+  public java.util.zip.DeflaterOutputStream(java.io.OutputStream, boolean);
+  public java.util.zip.DeflaterOutputStream(java.io.OutputStream);
+  public void write(int) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void finish() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  protected void deflate() throws java.io.IOException;
+  public void flush() throws java.io.IOException;
+}

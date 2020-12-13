@@ -1,0 +1,4 @@
+Compiled from "ComponentInputMapUIResource.java"
+public class javax.swing.plaf.ComponentInputMapUIResource extends javax.swing.ComponentInputMap implements javax.swing.plaf.UIResource {
+  public javax.swing.plaf.ComponentInputMapUIResource(javax.swing.JComponent);
+}

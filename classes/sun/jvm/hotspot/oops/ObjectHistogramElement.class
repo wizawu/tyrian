@@ -1,0 +1,12 @@
+Compiled from "ObjectHistogramElement.java"
+public class sun.jvm.hotspot.oops.ObjectHistogramElement {
+  public sun.jvm.hotspot.oops.ObjectHistogramElement(sun.jvm.hotspot.oops.Klass);
+  public void updateWith(sun.jvm.hotspot.oops.Oop);
+  public int compare(sun.jvm.hotspot.oops.ObjectHistogramElement);
+  public sun.jvm.hotspot.oops.Klass getKlass();
+  public long getCount();
+  public long getSize();
+  public java.lang.String getDescription();
+  public static void titleOn(java.io.PrintStream);
+  public void printOn(java.io.PrintStream);
+}

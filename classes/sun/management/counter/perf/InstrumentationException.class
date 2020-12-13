@@ -1,0 +1,5 @@
+Compiled from "InstrumentationException.java"
+public class sun.management.counter.perf.InstrumentationException extends java.lang.RuntimeException {
+  public sun.management.counter.perf.InstrumentationException();
+  public sun.management.counter.perf.InstrumentationException(java.lang.String);
+}

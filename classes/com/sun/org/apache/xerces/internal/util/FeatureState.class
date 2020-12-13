@@ -1,0 +1,17 @@
+Compiled from "FeatureState.java"
+public class com.sun.org.apache.xerces.internal.util.FeatureState {
+  public final com.sun.org.apache.xerces.internal.util.Status status;
+  public final boolean state;
+  public static final com.sun.org.apache.xerces.internal.util.FeatureState SET_ENABLED;
+  public static final com.sun.org.apache.xerces.internal.util.FeatureState SET_DISABLED;
+  public static final com.sun.org.apache.xerces.internal.util.FeatureState UNKNOWN;
+  public static final com.sun.org.apache.xerces.internal.util.FeatureState RECOGNIZED;
+  public static final com.sun.org.apache.xerces.internal.util.FeatureState NOT_SUPPORTED;
+  public static final com.sun.org.apache.xerces.internal.util.FeatureState NOT_RECOGNIZED;
+  public static final com.sun.org.apache.xerces.internal.util.FeatureState NOT_ALLOWED;
+  public com.sun.org.apache.xerces.internal.util.FeatureState(com.sun.org.apache.xerces.internal.util.Status, boolean);
+  public static com.sun.org.apache.xerces.internal.util.FeatureState of(com.sun.org.apache.xerces.internal.util.Status);
+  public static com.sun.org.apache.xerces.internal.util.FeatureState is(boolean);
+  public boolean isExceptional();
+  static {};
+}

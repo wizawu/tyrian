@@ -1,0 +1,6 @@
+Compiled from "TreeExpansionEvent.java"
+public class javax.swing.event.TreeExpansionEvent extends java.util.EventObject {
+  protected javax.swing.tree.TreePath path;
+  public javax.swing.event.TreeExpansionEvent(java.lang.Object, javax.swing.tree.TreePath);
+  public javax.swing.tree.TreePath getPath();
+}

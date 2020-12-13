@@ -1,0 +1,27 @@
+Compiled from "Mark.java"
+public class sun.jvm.hotspot.oops.Mark extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.oops.Mark(sun.jvm.hotspot.debugger.Address);
+  public long value();
+  public sun.jvm.hotspot.debugger.Address valueAsAddress();
+  public boolean hasBiasPattern();
+  public sun.jvm.hotspot.runtime.JavaThread biasedLocker();
+  public boolean isBiasedAnonymously();
+  public boolean isLocked();
+  public boolean isUnlocked();
+  public boolean isMarked();
+  public boolean isBeingInflated();
+  public boolean mustBePreserved();
+  public boolean hasLocker();
+  public sun.jvm.hotspot.runtime.BasicLock locker();
+  public boolean hasMonitor();
+  public sun.jvm.hotspot.runtime.ObjectMonitor monitor();
+  public boolean hasDisplacedMarkHelper();
+  public sun.jvm.hotspot.oops.Mark displacedMarkHelper();
+  public int age();
+  public long hash();
+  public boolean hasNoHash();
+  public void printOn(java.io.PrintStream);
+  public boolean isCmsFreeChunk();
+  public long getSize();
+  static {};
+}

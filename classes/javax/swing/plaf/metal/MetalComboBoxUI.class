@@ -1,0 +1,29 @@
+Compiled from "MetalComboBoxUI.java"
+public class javax.swing.plaf.metal.MetalComboBoxUI extends javax.swing.plaf.basic.BasicComboBoxUI {
+  public javax.swing.plaf.metal.MetalComboBoxUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public void paintCurrentValue(java.awt.Graphics, java.awt.Rectangle, boolean);
+  public void paintCurrentValueBackground(java.awt.Graphics, java.awt.Rectangle, boolean);
+  public int getBaseline(javax.swing.JComponent, int, int);
+  protected javax.swing.ComboBoxEditor createEditor();
+  protected javax.swing.plaf.basic.ComboPopup createPopup();
+  protected javax.swing.JButton createArrowButton();
+  public java.beans.PropertyChangeListener createPropertyChangeListener();
+  protected void editablePropertyChanged(java.beans.PropertyChangeEvent);
+  protected java.awt.LayoutManager createLayoutManager();
+  public void layoutComboBox(java.awt.Container, javax.swing.plaf.metal.MetalComboBoxUI$MetalComboBoxLayoutManager);
+  protected void removeListeners();
+  public void configureEditor();
+  public void unconfigureEditor();
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  static javax.swing.JButton access$000(javax.swing.plaf.metal.MetalComboBoxUI);
+  static javax.swing.JButton access$100(javax.swing.plaf.metal.MetalComboBoxUI);
+  static javax.swing.JComboBox access$200(javax.swing.plaf.metal.MetalComboBoxUI);
+  static javax.swing.JComboBox access$300(javax.swing.plaf.metal.MetalComboBoxUI);
+  static javax.swing.JButton access$400(javax.swing.plaf.metal.MetalComboBoxUI);
+  static javax.swing.JButton access$500(javax.swing.plaf.metal.MetalComboBoxUI);
+  static javax.swing.JList access$600(javax.swing.plaf.metal.MetalComboBoxUI);
+  static javax.swing.JButton access$700(javax.swing.plaf.metal.MetalComboBoxUI);
+  static javax.swing.JList access$800(javax.swing.plaf.metal.MetalComboBoxUI);
+}

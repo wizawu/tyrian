@@ -1,0 +1,8 @@
+Compiled from "OGLGraphicsConfig.java"
+interface sun.java2d.opengl.OGLGraphicsConfig extends sun.java2d.pipe.hw.AccelGraphicsConfig,sun.awt.image.SurfaceManager$ProxiedGraphicsConfig {
+  public abstract sun.java2d.opengl.OGLContext getContext();
+  public abstract long getNativeConfigInfo();
+  public abstract boolean isCapPresent(int);
+  public abstract sun.java2d.SurfaceData createManagedSurface(int, int, int);
+  public default sun.java2d.pipe.BufferedContext getContext();
+}

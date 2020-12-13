@@ -1,0 +1,4 @@
+Compiled from "DoubleSupplier.java"
+public interface java.util.function.DoubleSupplier {
+  public abstract double getAsDouble();
+}

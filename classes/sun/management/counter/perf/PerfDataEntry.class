@@ -1,0 +1,15 @@
+Compiled from "PerfDataEntry.java"
+class sun.management.counter.perf.PerfDataEntry {
+  static final boolean $assertionsDisabled;
+  sun.management.counter.perf.PerfDataEntry(java.nio.ByteBuffer);
+  public int size();
+  public java.lang.String name();
+  public sun.management.counter.perf.PerfDataType type();
+  public sun.management.counter.Units units();
+  public int flags();
+  public int vectorLength();
+  public sun.management.counter.Variability variability();
+  public java.nio.ByteBuffer byteData();
+  public java.nio.LongBuffer longData();
+  static {};
+}

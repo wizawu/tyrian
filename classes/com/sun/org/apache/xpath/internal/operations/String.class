@@ -1,0 +1,6 @@
+Compiled from "String.java"
+public class com.sun.org.apache.xpath.internal.operations.String extends com.sun.org.apache.xpath.internal.operations.UnaryOperation {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.operations.String();
+  public com.sun.org.apache.xpath.internal.objects.XObject operate(com.sun.org.apache.xpath.internal.objects.XObject) throws javax.xml.transform.TransformerException;
+}

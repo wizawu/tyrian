@@ -1,0 +1,21 @@
+Compiled from "ExchangeImpl.java"
+abstract class jdk.internal.net.http.ExchangeImpl<T> {
+  final jdk.internal.net.http.Exchange<T> exchange;
+  jdk.internal.net.http.ExchangeImpl(jdk.internal.net.http.Exchange<T>);
+  final jdk.internal.net.http.Exchange<T> getExchange();
+  abstract jdk.internal.net.http.HttpConnection connection();
+  static <U> java.util.concurrent.CompletableFuture<? extends jdk.internal.net.http.ExchangeImpl<U>> get(jdk.internal.net.http.Exchange<U>, jdk.internal.net.http.HttpConnection);
+  void nullBody(java.net.http.HttpResponse<T>, java.lang.Throwable);
+  abstract java.util.concurrent.CompletableFuture<jdk.internal.net.http.ExchangeImpl<T>> sendHeadersAsync();
+  abstract java.util.concurrent.CompletableFuture<jdk.internal.net.http.ExchangeImpl<T>> sendBodyAsync();
+  abstract java.util.concurrent.CompletableFuture<T> readBodyAsync(java.net.http.HttpResponse$BodyHandler<T>, boolean, java.util.concurrent.Executor);
+  abstract java.util.concurrent.CompletableFuture<java.lang.Void> ignoreBody();
+  abstract java.util.concurrent.CompletableFuture<jdk.internal.net.http.Response> getResponseAsync(java.util.concurrent.Executor);
+  abstract void cancel();
+  abstract void cancel(java.io.IOException);
+  abstract void released();
+  abstract void completed();
+  abstract boolean isCanceled();
+  abstract java.lang.Throwable getCancelCause();
+  static {};
+}

@@ -1,0 +1,8 @@
+Compiled from "JSR.java"
+public class com.sun.org.apache.bcel.internal.generic.JSR extends com.sun.org.apache.bcel.internal.generic.JsrInstruction implements com.sun.org.apache.bcel.internal.generic.VariableLengthInstruction {
+  com.sun.org.apache.bcel.internal.generic.JSR();
+  public com.sun.org.apache.bcel.internal.generic.JSR(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  protected int updatePosition(int, int);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

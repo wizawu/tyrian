@@ -1,0 +1,4 @@
+Compiled from "JMXAuthenticator.java"
+public interface javax.management.remote.JMXAuthenticator {
+  public abstract javax.security.auth.Subject authenticate(java.lang.Object);
+}

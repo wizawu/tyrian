@@ -1,0 +1,5 @@
+Compiled from "HTMLPreElement.java"
+public interface org.w3c.dom.html.HTMLPreElement extends org.w3c.dom.html.HTMLElement {
+  public abstract int getWidth();
+  public abstract void setWidth(int);
+}

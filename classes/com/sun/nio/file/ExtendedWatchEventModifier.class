@@ -1,0 +1,7 @@
+Compiled from "ExtendedWatchEventModifier.java"
+public final class com.sun.nio.file.ExtendedWatchEventModifier extends java.lang.Enum<com.sun.nio.file.ExtendedWatchEventModifier> implements java.nio.file.WatchEvent$Modifier {
+  public static final com.sun.nio.file.ExtendedWatchEventModifier FILE_TREE;
+  public static com.sun.nio.file.ExtendedWatchEventModifier[] values();
+  public static com.sun.nio.file.ExtendedWatchEventModifier valueOf(java.lang.String);
+  static {};
+}

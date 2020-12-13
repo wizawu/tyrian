@@ -1,0 +1,7 @@
+Compiled from "HashPrintRequestAttributeSet.java"
+public class javax.print.attribute.HashPrintRequestAttributeSet extends javax.print.attribute.HashAttributeSet implements javax.print.attribute.PrintRequestAttributeSet,java.io.Serializable {
+  public javax.print.attribute.HashPrintRequestAttributeSet();
+  public javax.print.attribute.HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttribute);
+  public javax.print.attribute.HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttribute[]);
+  public javax.print.attribute.HashPrintRequestAttributeSet(javax.print.attribute.PrintRequestAttributeSet);
+}

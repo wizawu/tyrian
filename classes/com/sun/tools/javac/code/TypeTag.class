@@ -1,0 +1,40 @@
+Compiled from "TypeTag.java"
+public final class com.sun.tools.javac.code.TypeTag extends java.lang.Enum<com.sun.tools.javac.code.TypeTag> {
+  public static final com.sun.tools.javac.code.TypeTag BYTE;
+  public static final com.sun.tools.javac.code.TypeTag CHAR;
+  public static final com.sun.tools.javac.code.TypeTag SHORT;
+  public static final com.sun.tools.javac.code.TypeTag LONG;
+  public static final com.sun.tools.javac.code.TypeTag FLOAT;
+  public static final com.sun.tools.javac.code.TypeTag INT;
+  public static final com.sun.tools.javac.code.TypeTag DOUBLE;
+  public static final com.sun.tools.javac.code.TypeTag BOOLEAN;
+  public static final com.sun.tools.javac.code.TypeTag VOID;
+  public static final com.sun.tools.javac.code.TypeTag CLASS;
+  public static final com.sun.tools.javac.code.TypeTag ARRAY;
+  public static final com.sun.tools.javac.code.TypeTag METHOD;
+  public static final com.sun.tools.javac.code.TypeTag PACKAGE;
+  public static final com.sun.tools.javac.code.TypeTag MODULE;
+  public static final com.sun.tools.javac.code.TypeTag TYPEVAR;
+  public static final com.sun.tools.javac.code.TypeTag WILDCARD;
+  public static final com.sun.tools.javac.code.TypeTag FORALL;
+  public static final com.sun.tools.javac.code.TypeTag DEFERRED;
+  public static final com.sun.tools.javac.code.TypeTag BOT;
+  public static final com.sun.tools.javac.code.TypeTag NONE;
+  public static final com.sun.tools.javac.code.TypeTag ERROR;
+  public static final com.sun.tools.javac.code.TypeTag UNKNOWN;
+  public static final com.sun.tools.javac.code.TypeTag UNDETVAR;
+  public static final com.sun.tools.javac.code.TypeTag UNINITIALIZED_THIS;
+  public static final com.sun.tools.javac.code.TypeTag UNINITIALIZED_OBJECT;
+  final int superClasses;
+  final int numericClass;
+  final boolean isPrimitive;
+  public static com.sun.tools.javac.code.TypeTag[] values();
+  public static com.sun.tools.javac.code.TypeTag valueOf(java.lang.String);
+  public boolean isStrictSubRangeOf(com.sun.tools.javac.code.TypeTag);
+  public boolean isSubRangeOf(com.sun.tools.javac.code.TypeTag);
+  public static int getTypeTagCount();
+  public com.sun.source.tree.Tree$Kind getKindLiteral();
+  public javax.lang.model.type.TypeKind getPrimitiveTypeKind();
+  public boolean checkRange(int);
+  static {};
+}

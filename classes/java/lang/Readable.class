@@ -1,0 +1,4 @@
+Compiled from "Readable.java"
+public interface java.lang.Readable {
+  public abstract int read(java.nio.CharBuffer) throws java.io.IOException;
+}

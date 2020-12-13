@@ -1,0 +1,12 @@
+Compiled from "SequenceInputStream.java"
+public class java.io.SequenceInputStream extends java.io.InputStream {
+  java.util.Enumeration<? extends java.io.InputStream> e;
+  java.io.InputStream in;
+  public java.io.SequenceInputStream(java.util.Enumeration<? extends java.io.InputStream>);
+  public java.io.SequenceInputStream(java.io.InputStream, java.io.InputStream);
+  final void nextStream() throws java.io.IOException;
+  public int available() throws java.io.IOException;
+  public int read() throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

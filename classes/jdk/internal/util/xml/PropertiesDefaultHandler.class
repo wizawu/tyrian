@@ -1,0 +1,23 @@
+Compiled from "PropertiesDefaultHandler.java"
+public class jdk.internal.util.xml.PropertiesDefaultHandler extends jdk.internal.org.xml.sax.helpers.DefaultHandler {
+  static final java.lang.String ALLOWED_ELEMENTS;
+  static final java.lang.String ALLOWED_COMMENT;
+  java.lang.StringBuilder buf;
+  boolean sawRoot;
+  boolean sawComment;
+  boolean validEntry;
+  java.lang.String key;
+  java.lang.String rootElm;
+  public jdk.internal.util.xml.PropertiesDefaultHandler();
+  public void load(java.util.Properties, java.io.InputStream) throws java.io.IOException, java.util.InvalidPropertiesFormatException, java.io.UnsupportedEncodingException;
+  public void store(java.util.Properties, java.io.OutputStream, java.lang.String, java.nio.charset.Charset) throws java.io.IOException;
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, jdk.internal.org.xml.sax.Attributes) throws jdk.internal.org.xml.sax.SAXException;
+  public void characters(char[], int, int) throws jdk.internal.org.xml.sax.SAXException;
+  public void endElement(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public jdk.internal.org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException, java.io.IOException;
+  public void error(jdk.internal.org.xml.sax.SAXParseException) throws jdk.internal.org.xml.sax.SAXException;
+  public void fatalError(jdk.internal.org.xml.sax.SAXParseException) throws jdk.internal.org.xml.sax.SAXException;
+  public void warning(jdk.internal.org.xml.sax.SAXParseException) throws jdk.internal.org.xml.sax.SAXException;
+  public void startDTD(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public void startInternalSub() throws jdk.internal.org.xml.sax.SAXException;
+}

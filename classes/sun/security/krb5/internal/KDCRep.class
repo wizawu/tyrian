@@ -1,0 +1,14 @@
+Compiled from "KDCRep.java"
+public class sun.security.krb5.internal.KDCRep {
+  public sun.security.krb5.PrincipalName cname;
+  public sun.security.krb5.internal.Ticket ticket;
+  public sun.security.krb5.EncryptedData encPart;
+  public sun.security.krb5.internal.EncKDCRepPart encKDCRepPart;
+  public sun.security.krb5.internal.PAData[] pAData;
+  public sun.security.krb5.internal.KDCRep(sun.security.krb5.internal.PAData[], sun.security.krb5.PrincipalName, sun.security.krb5.internal.Ticket, sun.security.krb5.EncryptedData, int) throws java.io.IOException;
+  public sun.security.krb5.internal.KDCRep();
+  public sun.security.krb5.internal.KDCRep(byte[], int) throws sun.security.krb5.Asn1Exception, sun.security.krb5.internal.KrbApErrException, sun.security.krb5.RealmException, java.io.IOException;
+  public sun.security.krb5.internal.KDCRep(sun.security.util.DerValue, int) throws sun.security.krb5.Asn1Exception, sun.security.krb5.RealmException, sun.security.krb5.internal.KrbApErrException, java.io.IOException;
+  protected void init(sun.security.util.DerValue, int) throws sun.security.krb5.Asn1Exception, sun.security.krb5.RealmException, java.io.IOException, sun.security.krb5.internal.KrbApErrException;
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+}

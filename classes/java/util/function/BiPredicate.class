@@ -1,0 +1,7 @@
+Compiled from "BiPredicate.java"
+public interface java.util.function.BiPredicate<T, U> {
+  public abstract boolean test(T, U);
+  public default java.util.function.BiPredicate<T, U> and(java.util.function.BiPredicate<? super T, ? super U>);
+  public default java.util.function.BiPredicate<T, U> negate();
+  public default java.util.function.BiPredicate<T, U> or(java.util.function.BiPredicate<? super T, ? super U>);
+}

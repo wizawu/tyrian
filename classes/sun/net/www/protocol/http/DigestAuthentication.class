@@ -1,0 +1,15 @@
+Compiled from "DigestAuthentication.java"
+class sun.net.www.protocol.http.DigestAuthentication extends sun.net.www.protocol.http.AuthenticationInfo {
+  sun.net.www.protocol.http.DigestAuthentication$Parameters params;
+  static final boolean $assertionsDisabled;
+  public sun.net.www.protocol.http.DigestAuthentication(boolean, java.net.URL, java.lang.String, java.lang.String, java.net.PasswordAuthentication, sun.net.www.protocol.http.DigestAuthentication$Parameters, java.lang.String);
+  public sun.net.www.protocol.http.DigestAuthentication(boolean, java.lang.String, int, java.lang.String, java.lang.String, java.net.PasswordAuthentication, sun.net.www.protocol.http.DigestAuthentication$Parameters, java.lang.String);
+  public boolean supportsPreemptiveAuthorization();
+  public java.lang.String getHeaderValue(java.net.URL, java.lang.String);
+  java.lang.String getHeaderValue(java.lang.String, java.lang.String);
+  public boolean isAuthorizationStale(java.lang.String);
+  public boolean setHeaders(sun.net.www.protocol.http.HttpURLConnection, sun.net.www.HeaderParser, java.lang.String);
+  public void checkResponse(java.lang.String, java.lang.String, java.net.URL) throws java.io.IOException;
+  public void checkResponse(java.lang.String, java.lang.String, java.lang.String) throws java.io.IOException;
+  static {};
+}

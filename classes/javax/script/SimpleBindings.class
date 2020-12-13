@@ -1,0 +1,18 @@
+Compiled from "SimpleBindings.java"
+public class javax.script.SimpleBindings implements javax.script.Bindings {
+  public javax.script.SimpleBindings(java.util.Map<java.lang.String, java.lang.Object>);
+  public javax.script.SimpleBindings();
+  public java.lang.Object put(java.lang.String, java.lang.Object);
+  public void putAll(java.util.Map<? extends java.lang.String, ? extends java.lang.Object>);
+  public void clear();
+  public boolean containsKey(java.lang.Object);
+  public boolean containsValue(java.lang.Object);
+  public java.util.Set<java.util.Map$Entry<java.lang.String, java.lang.Object>> entrySet();
+  public java.lang.Object get(java.lang.Object);
+  public boolean isEmpty();
+  public java.util.Set<java.lang.String> keySet();
+  public java.lang.Object remove(java.lang.Object);
+  public int size();
+  public java.util.Collection<java.lang.Object> values();
+  public java.lang.Object put(java.lang.Object, java.lang.Object);
+}

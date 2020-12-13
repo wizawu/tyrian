@@ -1,0 +1,27 @@
+Compiled from "MultiTreeUI.java"
+public class javax.swing.plaf.multi.MultiTreeUI extends javax.swing.plaf.TreeUI {
+  protected java.util.Vector<javax.swing.plaf.ComponentUI> uis;
+  public javax.swing.plaf.multi.MultiTreeUI();
+  public javax.swing.plaf.ComponentUI[] getUIs();
+  public java.awt.Rectangle getPathBounds(javax.swing.JTree, javax.swing.tree.TreePath);
+  public javax.swing.tree.TreePath getPathForRow(javax.swing.JTree, int);
+  public int getRowForPath(javax.swing.JTree, javax.swing.tree.TreePath);
+  public int getRowCount(javax.swing.JTree);
+  public javax.swing.tree.TreePath getClosestPathForLocation(javax.swing.JTree, int, int);
+  public boolean isEditing(javax.swing.JTree);
+  public boolean stopEditing(javax.swing.JTree);
+  public void cancelEditing(javax.swing.JTree);
+  public void startEditingAtPath(javax.swing.JTree, javax.swing.tree.TreePath);
+  public javax.swing.tree.TreePath getEditingPath(javax.swing.JTree);
+  public boolean contains(javax.swing.JComponent, int, int);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  public int getAccessibleChildrenCount(javax.swing.JComponent);
+  public javax.accessibility.Accessible getAccessibleChild(javax.swing.JComponent, int);
+}

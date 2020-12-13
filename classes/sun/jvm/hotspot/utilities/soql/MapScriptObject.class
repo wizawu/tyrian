@@ -1,0 +1,17 @@
+Compiled from "MapScriptObject.java"
+public class sun.jvm.hotspot.utilities.soql.MapScriptObject implements sun.jvm.hotspot.utilities.soql.ScriptObject {
+  public sun.jvm.hotspot.utilities.soql.MapScriptObject();
+  public sun.jvm.hotspot.utilities.soql.MapScriptObject(java.util.Map);
+  public java.lang.Object[] getIds();
+  public java.lang.Object get(java.lang.String);
+  public java.lang.Object get(int);
+  public void put(java.lang.String, java.lang.Object);
+  public void put(int, java.lang.Object);
+  public boolean has(java.lang.String);
+  public boolean has(int);
+  public boolean delete(java.lang.String);
+  public boolean delete(int);
+  protected void putFunction(java.lang.Object, java.lang.reflect.Method);
+  protected void putFunction(java.lang.Object, java.lang.reflect.Method, boolean);
+  protected void putFunction(java.lang.Object, java.lang.String, javax.script.Invocable);
+}

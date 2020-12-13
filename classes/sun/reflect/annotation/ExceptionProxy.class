@@ -1,0 +1,5 @@
+Compiled from "ExceptionProxy.java"
+public abstract class sun.reflect.annotation.ExceptionProxy implements java.io.Serializable {
+  public sun.reflect.annotation.ExceptionProxy();
+  protected abstract java.lang.RuntimeException generateException();
+}

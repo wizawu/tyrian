@@ -1,0 +1,3 @@
+Compiled from "DebugVC50SSTypes.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSTypes extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
+}

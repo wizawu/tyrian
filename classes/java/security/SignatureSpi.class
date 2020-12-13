@@ -1,0 +1,22 @@
+Compiled from "SignatureSpi.java"
+public abstract class java.security.SignatureSpi {
+  protected java.security.SecureRandom appRandom;
+  public java.security.SignatureSpi();
+  protected abstract void engineInitVerify(java.security.PublicKey) throws java.security.InvalidKeyException;
+  void engineInitVerify(java.security.PublicKey, java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  protected abstract void engineInitSign(java.security.PrivateKey) throws java.security.InvalidKeyException;
+  protected void engineInitSign(java.security.PrivateKey, java.security.SecureRandom) throws java.security.InvalidKeyException;
+  void engineInitSign(java.security.PrivateKey, java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  protected abstract void engineUpdate(byte) throws java.security.SignatureException;
+  protected abstract void engineUpdate(byte[], int, int) throws java.security.SignatureException;
+  protected void engineUpdate(java.nio.ByteBuffer);
+  protected abstract byte[] engineSign() throws java.security.SignatureException;
+  protected int engineSign(byte[], int, int) throws java.security.SignatureException;
+  protected abstract boolean engineVerify(byte[]) throws java.security.SignatureException;
+  protected boolean engineVerify(byte[], int, int) throws java.security.SignatureException;
+  protected abstract void engineSetParameter(java.lang.String, java.lang.Object) throws java.security.InvalidParameterException;
+  protected void engineSetParameter(java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidAlgorithmParameterException;
+  protected java.security.AlgorithmParameters engineGetParameters();
+  protected abstract java.lang.Object engineGetParameter(java.lang.String) throws java.security.InvalidParameterException;
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+}

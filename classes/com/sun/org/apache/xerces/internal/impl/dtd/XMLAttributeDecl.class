@@ -1,0 +1,9 @@
+Compiled from "XMLAttributeDecl.java"
+public class com.sun.org.apache.xerces.internal.impl.dtd.XMLAttributeDecl {
+  public final com.sun.org.apache.xerces.internal.xni.QName name;
+  public final com.sun.org.apache.xerces.internal.impl.dtd.XMLSimpleType simpleType;
+  public boolean optional;
+  public com.sun.org.apache.xerces.internal.impl.dtd.XMLAttributeDecl();
+  public void setValues(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.impl.dtd.XMLSimpleType, boolean);
+  public void clear();
+}

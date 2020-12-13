@@ -1,0 +1,8 @@
+Compiled from "XmlErrorHandler.java"
+public class com.sun.rowset.internal.XmlErrorHandler extends org.xml.sax.helpers.DefaultHandler {
+  public int errorCounter;
+  public com.sun.rowset.internal.XmlErrorHandler();
+  public void error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+}

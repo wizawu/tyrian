@@ -1,0 +1,6 @@
+Compiled from "ImageReaderFactory.java"
+public class jdk.internal.jimage.ImageReaderFactory {
+  public static jdk.internal.jimage.ImageReader get(java.nio.file.Path) throws java.io.IOException;
+  public static jdk.internal.jimage.ImageReader getImageReader();
+  static {};
+}

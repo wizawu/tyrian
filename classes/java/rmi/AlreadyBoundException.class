@@ -1,0 +1,5 @@
+Compiled from "AlreadyBoundException.java"
+public class java.rmi.AlreadyBoundException extends java.lang.Exception {
+  public java.rmi.AlreadyBoundException();
+  public java.rmi.AlreadyBoundException(java.lang.String);
+}

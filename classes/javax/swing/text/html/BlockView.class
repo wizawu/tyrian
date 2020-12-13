@@ -1,0 +1,20 @@
+Compiled from "BlockView.java"
+public class javax.swing.text.html.BlockView extends javax.swing.text.BoxView {
+  public javax.swing.text.html.BlockView(javax.swing.text.Element, int);
+  public void setParent(javax.swing.text.View);
+  protected javax.swing.SizeRequirements calculateMajorAxisRequirements(int, javax.swing.SizeRequirements);
+  protected javax.swing.SizeRequirements calculateMinorAxisRequirements(int, javax.swing.SizeRequirements);
+  boolean isPercentage(int, javax.swing.text.AttributeSet);
+  static boolean spanSetFromAttributes(int, javax.swing.SizeRequirements, javax.swing.text.html.CSS$LengthValue, javax.swing.text.html.CSS$LengthValue);
+  protected void layoutMinorAxis(int, int, int[], int[]);
+  public void paint(java.awt.Graphics, java.awt.Shape);
+  public javax.swing.text.AttributeSet getAttributes();
+  public int getResizeWeight(int);
+  public float getAlignment(int);
+  public void changedUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  public float getPreferredSpan(int);
+  public float getMinimumSpan(int);
+  public float getMaximumSpan(int);
+  protected void setPropertiesFromAttributes();
+  protected javax.swing.text.html.StyleSheet getStyleSheet();
+}

@@ -1,0 +1,10 @@
+Compiled from "EncryptedPrivateKeyInfo.java"
+public class sun.security.pkcs.EncryptedPrivateKeyInfo {
+  public sun.security.pkcs.EncryptedPrivateKeyInfo(byte[]) throws java.io.IOException;
+  public sun.security.pkcs.EncryptedPrivateKeyInfo(sun.security.x509.AlgorithmId, byte[]);
+  public sun.security.x509.AlgorithmId getAlgorithm();
+  public byte[] getEncryptedData();
+  public byte[] getEncoded() throws java.io.IOException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

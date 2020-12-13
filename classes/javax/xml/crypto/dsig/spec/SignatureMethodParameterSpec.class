@@ -1,0 +1,3 @@
+Compiled from "SignatureMethodParameterSpec.java"
+public interface javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
+}

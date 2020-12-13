@@ -1,0 +1,6 @@
+Compiled from "IllegalFormatCodePointException.java"
+public class java.util.IllegalFormatCodePointException extends java.util.IllegalFormatException {
+  public java.util.IllegalFormatCodePointException(int);
+  public int getCodePoint();
+  public java.lang.String getMessage();
+}

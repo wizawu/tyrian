@@ -1,0 +1,7 @@
+Compiled from "BasicIndexableFieldIdentifier.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicIndexableFieldIdentifier implements sun.jvm.hotspot.debugger.cdbg.IndexableFieldIdentifier {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicIndexableFieldIdentifier(sun.jvm.hotspot.debugger.cdbg.Type, int);
+  public sun.jvm.hotspot.debugger.cdbg.Type getType();
+  public int getIndex();
+  public java.lang.String toString();
+}

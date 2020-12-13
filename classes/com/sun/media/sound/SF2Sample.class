@@ -1,0 +1,42 @@
+Compiled from "SF2Sample.java"
+public final class com.sun.media.sound.SF2Sample extends javax.sound.midi.SoundbankResource {
+  java.lang.String name;
+  long startLoop;
+  long endLoop;
+  long sampleRate;
+  int originalPitch;
+  byte pitchCorrection;
+  int sampleLink;
+  int sampleType;
+  com.sun.media.sound.ModelByteBuffer data;
+  com.sun.media.sound.ModelByteBuffer data24;
+  public com.sun.media.sound.SF2Sample(javax.sound.midi.Soundbank);
+  public com.sun.media.sound.SF2Sample();
+  public java.lang.Object getData();
+  public com.sun.media.sound.ModelByteBuffer getDataBuffer();
+  public com.sun.media.sound.ModelByteBuffer getData24Buffer();
+  public javax.sound.sampled.AudioFormat getFormat();
+  public void setData(com.sun.media.sound.ModelByteBuffer);
+  public void setData(byte[]);
+  public void setData(byte[], int, int);
+  public void setData24(com.sun.media.sound.ModelByteBuffer);
+  public void setData24(byte[]);
+  public void setData24(byte[], int, int);
+  public java.lang.String getName();
+  public void setName(java.lang.String);
+  public long getEndLoop();
+  public void setEndLoop(long);
+  public int getOriginalPitch();
+  public void setOriginalPitch(int);
+  public byte getPitchCorrection();
+  public void setPitchCorrection(byte);
+  public int getSampleLink();
+  public void setSampleLink(int);
+  public long getSampleRate();
+  public void setSampleRate(long);
+  public int getSampleType();
+  public void setSampleType(int);
+  public long getStartLoop();
+  public void setStartLoop(long);
+  public java.lang.String toString();
+}

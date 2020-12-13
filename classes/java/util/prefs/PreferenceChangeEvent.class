@@ -1,0 +1,7 @@
+Compiled from "PreferenceChangeEvent.java"
+public class java.util.prefs.PreferenceChangeEvent extends java.util.EventObject {
+  public java.util.prefs.PreferenceChangeEvent(java.util.prefs.Preferences, java.lang.String, java.lang.String);
+  public java.util.prefs.Preferences getNode();
+  public java.lang.String getKey();
+  public java.lang.String getNewValue();
+}

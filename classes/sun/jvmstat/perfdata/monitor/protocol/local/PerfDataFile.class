@@ -1,0 +1,14 @@
+Compiled from "PerfDataFile.java"
+public class sun.jvmstat.perfdata.monitor.protocol.local.PerfDataFile {
+  public static final java.lang.String dirNamePrefix;
+  public static final java.lang.String userDirNamePattern;
+  public static final java.lang.String fileNamePattern;
+  public static final java.lang.String tmpFileNamePattern;
+  public static java.io.File getFile(int);
+  public static java.io.File getFile(java.lang.String, int);
+  public static int getLocalVmId(java.io.File);
+  public static java.lang.String getTempDirectory();
+  public static java.lang.String getTempDirectory(java.lang.String);
+  public static java.util.List<java.lang.String> getTempDirectories(java.lang.String, int);
+  static {};
+}

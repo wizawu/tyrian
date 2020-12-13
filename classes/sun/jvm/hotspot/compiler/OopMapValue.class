@@ -1,0 +1,34 @@
+Compiled from "OopMapValue.java"
+public class sun.jvm.hotspot.compiler.OopMapValue {
+  static int TYPE_BITS;
+  static int REGISTER_BITS;
+  static int TYPE_SHIFT;
+  static int REGISTER_SHIFT;
+  static int TYPE_MASK;
+  static int TYPE_MASK_IN_PLACE;
+  static int REGISTER_MASK;
+  static int REGISTER_MASK_IN_PLACE;
+  static int OOP_VALUE;
+  static int NARROWOOP_VALUE;
+  static int CALLEE_SAVED_VALUE;
+  static int DERIVED_OOP_VALUE;
+  public sun.jvm.hotspot.compiler.OopMapValue();
+  public sun.jvm.hotspot.compiler.OopMapValue(sun.jvm.hotspot.runtime.VMReg, sun.jvm.hotspot.compiler.OopMapValue$OopTypes);
+  public sun.jvm.hotspot.compiler.OopMapValue(sun.jvm.hotspot.runtime.VMReg, sun.jvm.hotspot.compiler.OopMapValue$OopTypes, sun.jvm.hotspot.runtime.VMReg);
+  public sun.jvm.hotspot.compiler.OopMapValue(sun.jvm.hotspot.code.CompressedReadStream);
+  public void readFrom(sun.jvm.hotspot.code.CompressedReadStream);
+  public boolean isOop();
+  public boolean isNarrowOop();
+  public boolean isCalleeSaved();
+  public boolean isDerivedOop();
+  public sun.jvm.hotspot.runtime.VMReg getReg();
+  public void setReg(sun.jvm.hotspot.runtime.VMReg);
+  public sun.jvm.hotspot.compiler.OopMapValue$OopTypes getType();
+  public void setType(sun.jvm.hotspot.compiler.OopMapValue$OopTypes);
+  public sun.jvm.hotspot.runtime.VMReg getContentReg();
+  public void setContentReg(sun.jvm.hotspot.runtime.VMReg);
+  public boolean isRegisterLoc();
+  public boolean isStackLoc();
+  public int getStackOffset();
+  static {};
+}

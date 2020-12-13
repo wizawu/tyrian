@@ -1,0 +1,19 @@
+Compiled from "GIFImageWriter.java"
+public class com.sun.imageio.plugins.gif.GIFImageWriter extends javax.imageio.ImageWriter {
+  static final java.lang.String STANDARD_METADATA_NAME;
+  static final java.lang.String STREAM_METADATA_NAME;
+  static final java.lang.String IMAGE_METADATA_NAME;
+  public com.sun.imageio.plugins.gif.GIFImageWriter(com.sun.imageio.plugins.gif.GIFImageWriterSpi);
+  public boolean canWriteSequence();
+  public javax.imageio.metadata.IIOMetadata convertStreamMetadata(javax.imageio.metadata.IIOMetadata, javax.imageio.ImageWriteParam);
+  public javax.imageio.metadata.IIOMetadata convertImageMetadata(javax.imageio.metadata.IIOMetadata, javax.imageio.ImageTypeSpecifier, javax.imageio.ImageWriteParam);
+  public void endWriteSequence() throws java.io.IOException;
+  public javax.imageio.metadata.IIOMetadata getDefaultImageMetadata(javax.imageio.ImageTypeSpecifier, javax.imageio.ImageWriteParam);
+  public javax.imageio.metadata.IIOMetadata getDefaultStreamMetadata(javax.imageio.ImageWriteParam);
+  public javax.imageio.ImageWriteParam getDefaultWriteParam();
+  public void prepareWriteSequence(javax.imageio.metadata.IIOMetadata) throws java.io.IOException;
+  public void reset();
+  public void setOutput(java.lang.Object);
+  public void write(javax.imageio.metadata.IIOMetadata, javax.imageio.IIOImage, javax.imageio.ImageWriteParam) throws java.io.IOException;
+  public void writeToSequence(javax.imageio.IIOImage, javax.imageio.ImageWriteParam) throws java.io.IOException;
+}

@@ -1,0 +1,13 @@
+Compiled from "StringToStringTableVector.java"
+public class com.sun.org.apache.xml.internal.utils.StringToStringTableVector {
+  public com.sun.org.apache.xml.internal.utils.StringToStringTableVector();
+  public com.sun.org.apache.xml.internal.utils.StringToStringTableVector(int);
+  public final int getLength();
+  public final int size();
+  public final void addElement(com.sun.org.apache.xml.internal.utils.StringToStringTable);
+  public final java.lang.String get(java.lang.String);
+  public final boolean containsKey(java.lang.String);
+  public final void removeLastElem();
+  public final com.sun.org.apache.xml.internal.utils.StringToStringTable elementAt(int);
+  public final boolean contains(com.sun.org.apache.xml.internal.utils.StringToStringTable);
+}

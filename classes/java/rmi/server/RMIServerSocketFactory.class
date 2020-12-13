@@ -1,0 +1,4 @@
+Compiled from "RMIServerSocketFactory.java"
+public interface java.rmi.server.RMIServerSocketFactory {
+  public abstract java.net.ServerSocket createServerSocket(int) throws java.io.IOException;
+}

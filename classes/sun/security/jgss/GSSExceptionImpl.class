@@ -1,0 +1,8 @@
+Compiled from "GSSExceptionImpl.java"
+public class sun.security.jgss.GSSExceptionImpl extends org.ietf.jgss.GSSException {
+  sun.security.jgss.GSSExceptionImpl(int, org.ietf.jgss.Oid);
+  public sun.security.jgss.GSSExceptionImpl(int, java.lang.String);
+  public sun.security.jgss.GSSExceptionImpl(int, java.lang.Exception);
+  public sun.security.jgss.GSSExceptionImpl(int, java.lang.String, java.lang.Exception);
+  public java.lang.String getMessage();
+}

@@ -1,0 +1,21 @@
+Compiled from "MemoryTab.java"
+class sun.tools.jconsole.MemoryTab extends sun.tools.jconsole.Tab implements java.awt.event.ActionListener,java.awt.event.ItemListener {
+  javax.swing.JComboBox<sun.tools.jconsole.Plotter> plotterChoice;
+  sun.tools.jconsole.TimeComboBox timeComboBox;
+  javax.swing.JButton gcButton;
+  sun.tools.jconsole.PlotterPanel plotterPanel;
+  javax.swing.JPanel bottomPanel;
+  sun.tools.jconsole.HTMLPane details;
+  sun.tools.jconsole.MemoryTab$PoolChart poolChart;
+  java.util.ArrayList<sun.tools.jconsole.Plotter> plotterList;
+  sun.tools.jconsole.Plotter heapPlotter;
+  sun.tools.jconsole.Plotter nonHeapPlotter;
+  public static java.lang.String getTabName();
+  public sun.tools.jconsole.MemoryTab(sun.tools.jconsole.VMPanel);
+  public void itemStateChanged(java.awt.event.ItemEvent);
+  public void gc();
+  public javax.swing.SwingWorker<?, ?> newSwingWorker();
+  public void actionPerformed(java.awt.event.ActionEvent);
+  sun.tools.jconsole.OverviewPanel[] getOverviewPanels();
+  static {};
+}

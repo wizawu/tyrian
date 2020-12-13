@@ -1,0 +1,6 @@
+Compiled from "AnnotationValue.java"
+public interface javax.lang.model.element.AnnotationValue {
+  public abstract java.lang.Object getValue();
+  public abstract java.lang.String toString();
+  public abstract <R, P> R accept(javax.lang.model.element.AnnotationValueVisitor<R, P>, P);
+}

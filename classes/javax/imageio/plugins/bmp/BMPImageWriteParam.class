@@ -1,0 +1,7 @@
+Compiled from "BMPImageWriteParam.java"
+public class javax.imageio.plugins.bmp.BMPImageWriteParam extends javax.imageio.ImageWriteParam {
+  public javax.imageio.plugins.bmp.BMPImageWriteParam(java.util.Locale);
+  public javax.imageio.plugins.bmp.BMPImageWriteParam();
+  public void setTopDown(boolean);
+  public boolean isTopDown();
+}

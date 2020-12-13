@@ -1,0 +1,29 @@
+Compiled from "ManagementFactoryHelper.java"
+public class sun.management.ManagementFactoryHelper {
+  static final java.lang.String LOGGING_MXBEAN_NAME;
+  public static sun.management.VMManagement getVMManagement();
+  public static synchronized java.lang.management.ClassLoadingMXBean getClassLoadingMXBean();
+  public static synchronized java.lang.management.MemoryMXBean getMemoryMXBean();
+  public static synchronized java.lang.management.ThreadMXBean getThreadMXBean();
+  public static synchronized java.lang.management.RuntimeMXBean getRuntimeMXBean();
+  public static synchronized java.lang.management.CompilationMXBean getCompilationMXBean();
+  public static synchronized java.lang.management.OperatingSystemMXBean getOperatingSystemMXBean();
+  public static java.util.List<java.lang.management.MemoryPoolMXBean> getMemoryPoolMXBeans();
+  public static java.util.List<java.lang.management.MemoryManagerMXBean> getMemoryManagerMXBeans();
+  public static java.util.List<java.lang.management.GarbageCollectorMXBean> getGarbageCollectorMXBeans();
+  public static java.lang.management.PlatformLoggingMXBean getPlatformLoggingMXBean();
+  public static boolean isPlatformLoggingMXBeanAvailable();
+  public static java.lang.String[] getAllMemoryPoolNames();
+  public static synchronized java.util.List<java.lang.management.BufferPoolMXBean> getBufferPoolMXBeans();
+  public static synchronized sun.management.HotspotRuntimeMBean getHotspotRuntimeMBean();
+  public static synchronized sun.management.HotspotClassLoadingMBean getHotspotClassLoadingMBean();
+  public static synchronized sun.management.HotspotThreadMBean getHotspotThreadMBean();
+  public static synchronized sun.management.HotspotMemoryMBean getHotspotMemoryMBean();
+  public static synchronized sun.management.HotspotCompilationMBean getHotspotCompilationMBean();
+  static void registerInternalMBeans(javax.management.MBeanServer);
+  static void unregisterInternalMBeans(javax.management.MBeanServer);
+  public static boolean isThreadSuspended(int);
+  public static boolean isThreadRunningNative(int);
+  public static java.lang.Thread$State toThreadState(int);
+  static {};
+}

@@ -1,0 +1,3 @@
+Compiled from "NumericElements.java"
+public interface jdk.nashorn.internal.runtime.arrays.NumericElements extends jdk.nashorn.internal.runtime.arrays.AnyElements {
+}

@@ -1,0 +1,23 @@
+Compiled from "CurveLink.java"
+final class sun.awt.geom.CurveLink {
+  sun.awt.geom.Curve curve;
+  double ytop;
+  double ybot;
+  int etag;
+  sun.awt.geom.CurveLink next;
+  public sun.awt.geom.CurveLink(sun.awt.geom.Curve, double, double, int);
+  public boolean absorb(sun.awt.geom.CurveLink);
+  public boolean absorb(sun.awt.geom.Curve, double, double, int);
+  public boolean isEmpty();
+  public sun.awt.geom.Curve getCurve();
+  public sun.awt.geom.Curve getSubCurve();
+  public sun.awt.geom.Curve getMoveto();
+  public double getXTop();
+  public double getYTop();
+  public double getXBot();
+  public double getYBot();
+  public double getX();
+  public int getEdgeTag();
+  public void setNext(sun.awt.geom.CurveLink);
+  public sun.awt.geom.CurveLink getNext();
+}

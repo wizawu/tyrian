@@ -1,0 +1,14 @@
+Compiled from "LinuxDosFileAttributeView.java"
+class sun.nio.fs.LinuxDosFileAttributeView extends sun.nio.fs.UnixFileAttributeViews$Basic implements java.nio.file.attribute.DosFileAttributeView {
+  sun.nio.fs.LinuxDosFileAttributeView(sun.nio.fs.UnixPath, boolean);
+  public java.lang.String name();
+  public void setAttribute(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public java.util.Map<java.lang.String, java.lang.Object> readAttributes(java.lang.String[]) throws java.io.IOException;
+  public java.nio.file.attribute.DosFileAttributes readAttributes() throws java.io.IOException;
+  public void setReadOnly(boolean) throws java.io.IOException;
+  public void setHidden(boolean) throws java.io.IOException;
+  public void setArchive(boolean) throws java.io.IOException;
+  public void setSystem(boolean) throws java.io.IOException;
+  public java.nio.file.attribute.BasicFileAttributes readAttributes() throws java.io.IOException;
+  static {};
+}

@@ -1,0 +1,8 @@
+Compiled from "CatchData.java"
+public final class sun.tools.asm.CatchData {
+  java.lang.Object type;
+  sun.tools.asm.Label label;
+  sun.tools.asm.CatchData(java.lang.Object);
+  public sun.tools.asm.Label getLabel();
+  public java.lang.Object getType();
+}

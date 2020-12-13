@@ -1,0 +1,10 @@
+Compiled from "ObjectHistogram.java"
+public class sun.jvm.hotspot.oops.ObjectHistogram implements sun.jvm.hotspot.oops.HeapVisitor {
+  public sun.jvm.hotspot.oops.ObjectHistogram();
+  public void prologue(long);
+  public boolean doObj(sun.jvm.hotspot.oops.Oop);
+  public void epilogue();
+  public java.util.List getElements();
+  public void print();
+  public void printOn(java.io.PrintStream);
+}

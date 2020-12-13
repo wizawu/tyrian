@@ -1,0 +1,5 @@
+Compiled from "HotspotMemory.java"
+class sun.management.HotspotMemory implements sun.management.HotspotMemoryMBean {
+  sun.management.HotspotMemory(sun.management.VMManagement);
+  public java.util.List<sun.management.counter.Counter> getInternalMemoryCounters();
+}

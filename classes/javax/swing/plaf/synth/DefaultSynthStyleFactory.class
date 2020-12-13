@@ -1,0 +1,8 @@
+Compiled from "DefaultSynthStyleFactory.java"
+class javax.swing.plaf.synth.DefaultSynthStyleFactory extends javax.swing.plaf.synth.SynthStyleFactory {
+  public static final int NAME;
+  public static final int REGION;
+  javax.swing.plaf.synth.DefaultSynthStyleFactory();
+  public synchronized void addStyle(sun.swing.plaf.synth.DefaultSynthStyle, java.lang.String, int) throws java.util.regex.PatternSyntaxException;
+  public synchronized javax.swing.plaf.synth.SynthStyle getStyle(javax.swing.JComponent, javax.swing.plaf.synth.Region);
+}

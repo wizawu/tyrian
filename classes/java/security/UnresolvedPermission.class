@@ -1,0 +1,16 @@
+Compiled from "UnresolvedPermission.java"
+public final class java.security.UnresolvedPermission extends java.security.Permission implements java.io.Serializable {
+  public java.security.UnresolvedPermission(java.lang.String, java.lang.String, java.lang.String, java.security.cert.Certificate[]);
+  java.security.Permission resolve(java.security.Permission, java.security.cert.Certificate[]);
+  public boolean implies(java.security.Permission);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String getActions();
+  public java.lang.String getUnresolvedType();
+  public java.lang.String getUnresolvedName();
+  public java.lang.String getUnresolvedActions();
+  public java.security.cert.Certificate[] getUnresolvedCerts();
+  public java.lang.String toString();
+  public java.security.PermissionCollection newPermissionCollection();
+  static {};
+}

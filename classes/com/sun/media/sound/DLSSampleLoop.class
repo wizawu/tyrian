@@ -1,0 +1,15 @@
+Compiled from "DLSSampleLoop.java"
+public final class com.sun.media.sound.DLSSampleLoop {
+  public static final int LOOP_TYPE_FORWARD;
+  public static final int LOOP_TYPE_RELEASE;
+  long type;
+  long start;
+  long length;
+  public com.sun.media.sound.DLSSampleLoop();
+  public long getLength();
+  public void setLength(long);
+  public long getStart();
+  public void setStart(long);
+  public long getType();
+  public void setType(long);
+}

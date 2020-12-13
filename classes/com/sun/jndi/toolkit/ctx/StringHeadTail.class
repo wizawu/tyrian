@@ -1,0 +1,9 @@
+Compiled from "StringHeadTail.java"
+public class com.sun.jndi.toolkit.ctx.StringHeadTail {
+  public com.sun.jndi.toolkit.ctx.StringHeadTail(java.lang.String, java.lang.String);
+  public com.sun.jndi.toolkit.ctx.StringHeadTail(java.lang.String, java.lang.String, int);
+  public void setStatus(int);
+  public java.lang.String getHead();
+  public java.lang.String getTail();
+  public int getStatus();
+}

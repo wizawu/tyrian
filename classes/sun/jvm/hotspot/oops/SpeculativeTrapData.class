@@ -1,0 +1,12 @@
+Compiled from "SpeculativeTrapData.java"
+public class sun.jvm.hotspot.oops.SpeculativeTrapData<K, M> extends sun.jvm.hotspot.oops.ProfileData {
+  static final int speculativeTrapMethod;
+  static final int speculativeTrapCellCount;
+  final sun.jvm.hotspot.oops.MethodDataInterface<K, M> methodData;
+  public sun.jvm.hotspot.oops.SpeculativeTrapData(sun.jvm.hotspot.oops.MethodDataInterface<K, M>, sun.jvm.hotspot.oops.DataLayout);
+  static int staticCellCount();
+  public int cellCount();
+  public M method();
+  public static int methodIndex();
+  public void printDataOn(java.io.PrintStream);
+}

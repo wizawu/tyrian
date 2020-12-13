@@ -1,0 +1,7 @@
+Compiled from "BootstrapCallInfo.java"
+interface java.lang.invoke.BootstrapCallInfo<T> extends java.lang.invoke.ConstantGroup {
+  public abstract java.lang.invoke.MethodHandle bootstrapMethod();
+  public abstract java.lang.String invocationName();
+  public abstract T invocationType();
+  public static <T> java.lang.invoke.BootstrapCallInfo<T> makeBootstrapCallInfo(java.lang.invoke.MethodHandle, java.lang.String, T, java.lang.invoke.ConstantGroup);
+}

@@ -1,0 +1,26 @@
+Compiled from "BasicColorChooserUI.java"
+public class javax.swing.plaf.basic.BasicColorChooserUI extends javax.swing.plaf.ColorChooserUI {
+  protected javax.swing.JColorChooser chooser;
+  javax.swing.JTabbedPane tabbedPane;
+  javax.swing.JPanel singlePanel;
+  javax.swing.JPanel previewPanelHolder;
+  javax.swing.JComponent previewPanel;
+  boolean isMultiPanel;
+  protected javax.swing.colorchooser.AbstractColorChooserPanel[] defaultChoosers;
+  protected javax.swing.event.ChangeListener previewListener;
+  protected java.beans.PropertyChangeListener propertyChangeListener;
+  public javax.swing.plaf.basic.BasicColorChooserUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected javax.swing.colorchooser.AbstractColorChooserPanel[] createDefaultChoosers();
+  protected void uninstallDefaultChoosers();
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void installPreviewPanel();
+  protected void uninstallPreviewPanel();
+  protected void installDefaults();
+  protected void uninstallDefaults();
+  protected void installListeners();
+  protected java.beans.PropertyChangeListener createPropertyChangeListener();
+  protected void uninstallListeners();
+  static {};
+}

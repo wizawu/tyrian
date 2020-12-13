@@ -1,0 +1,10 @@
+Compiled from "AbstractLauncher.java"
+abstract class com.sun.tools.jdi.AbstractLauncher extends com.sun.tools.jdi.ConnectorImpl implements com.sun.jdi.connect.LaunchingConnector {
+  java.lang.ThreadGroup grp;
+  public abstract com.sun.jdi.VirtualMachine launch(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException, com.sun.jdi.connect.VMStartException;
+  public abstract java.lang.String name();
+  public abstract java.lang.String description();
+  com.sun.tools.jdi.AbstractLauncher();
+  java.lang.String[] tokenizeCommand(java.lang.String, char);
+  protected com.sun.jdi.VirtualMachine launch(java.lang.String[], java.lang.String, com.sun.jdi.connect.spi.TransportService$ListenKey, com.sun.jdi.connect.spi.TransportService) throws java.io.IOException, com.sun.jdi.connect.VMStartException;
+}

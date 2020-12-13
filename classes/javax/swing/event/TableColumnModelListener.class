@@ -1,0 +1,8 @@
+Compiled from "TableColumnModelListener.java"
+public interface javax.swing.event.TableColumnModelListener extends java.util.EventListener {
+  public abstract void columnAdded(javax.swing.event.TableColumnModelEvent);
+  public abstract void columnRemoved(javax.swing.event.TableColumnModelEvent);
+  public abstract void columnMoved(javax.swing.event.TableColumnModelEvent);
+  public abstract void columnMarginChanged(javax.swing.event.ChangeEvent);
+  public abstract void columnSelectionChanged(javax.swing.event.ListSelectionEvent);
+}

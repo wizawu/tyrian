@@ -1,0 +1,12 @@
+Compiled from "JPEGHuffmanTable.java"
+public class javax.imageio.plugins.jpeg.JPEGHuffmanTable {
+  public static final javax.imageio.plugins.jpeg.JPEGHuffmanTable StdDCLuminance;
+  public static final javax.imageio.plugins.jpeg.JPEGHuffmanTable StdDCChrominance;
+  public static final javax.imageio.plugins.jpeg.JPEGHuffmanTable StdACLuminance;
+  public static final javax.imageio.plugins.jpeg.JPEGHuffmanTable StdACChrominance;
+  public javax.imageio.plugins.jpeg.JPEGHuffmanTable(short[], short[]);
+  public short[] getLengths();
+  public short[] getValues();
+  public java.lang.String toString();
+  static {};
+}

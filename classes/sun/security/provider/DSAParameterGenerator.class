@@ -1,0 +1,7 @@
+Compiled from "DSAParameterGenerator.java"
+public class sun.security.provider.DSAParameterGenerator extends java.security.AlgorithmParameterGeneratorSpi {
+  public sun.security.provider.DSAParameterGenerator();
+  protected void engineInit(int, java.security.SecureRandom);
+  protected void engineInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
+  protected java.security.AlgorithmParameters engineGenerateParameters();
+}

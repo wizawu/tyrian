@@ -1,0 +1,12 @@
+Compiled from "AtomicMarkableReference.java"
+public class java.util.concurrent.atomic.AtomicMarkableReference<V> {
+  public java.util.concurrent.atomic.AtomicMarkableReference(V, boolean);
+  public V getReference();
+  public boolean isMarked();
+  public V get(boolean[]);
+  public boolean weakCompareAndSet(V, V, boolean, boolean);
+  public boolean compareAndSet(V, V, boolean, boolean);
+  public void set(V, boolean);
+  public boolean attemptMark(V, boolean);
+  static {};
+}

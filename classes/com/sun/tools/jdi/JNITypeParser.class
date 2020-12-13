@@ -1,0 +1,14 @@
+Compiled from "JNITypeParser.java"
+public class com.sun.tools.jdi.JNITypeParser {
+  static final char SIGNATURE_ENDCLASS;
+  static final char SIGNATURE_FUNC;
+  static final char SIGNATURE_ENDFUNC;
+  com.sun.tools.jdi.JNITypeParser(java.lang.String);
+  static java.lang.String typeNameToSignature(java.lang.String);
+  java.lang.String typeName();
+  java.util.List<java.lang.String> argumentTypeNames();
+  java.lang.String signature();
+  java.util.List<java.lang.String> argumentSignatures();
+  int dimensionCount();
+  java.lang.String componentSignature(int);
+}

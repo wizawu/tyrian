@@ -1,0 +1,14 @@
+Compiled from "SerializationHandler.java"
+public interface com.sun.org.apache.xml.internal.serializer.SerializationHandler extends com.sun.org.apache.xml.internal.serializer.ExtendedContentHandler,com.sun.org.apache.xml.internal.serializer.ExtendedLexicalHandler,com.sun.org.apache.xml.internal.serializer.XSLOutputAttributes,org.xml.sax.ext.DeclHandler,org.xml.sax.DTDHandler,org.xml.sax.ErrorHandler,com.sun.org.apache.xml.internal.serializer.DOMSerializer,com.sun.org.apache.xml.internal.serializer.Serializer {
+  public abstract void setContentHandler(org.xml.sax.ContentHandler);
+  public abstract void close();
+  public abstract void serialize(org.w3c.dom.Node) throws java.io.IOException;
+  public abstract boolean setEscaping(boolean) throws org.xml.sax.SAXException;
+  public abstract void setIndentAmount(int);
+  public abstract void setTransformer(javax.xml.transform.Transformer);
+  public abstract javax.xml.transform.Transformer getTransformer();
+  public abstract void setNamespaceMappings(com.sun.org.apache.xml.internal.serializer.NamespaceMappings);
+  public abstract void flushPending() throws org.xml.sax.SAXException;
+  public abstract void setDTDEntityExpansion(boolean);
+  public abstract void setIsStandalone(boolean);
+}

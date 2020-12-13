@@ -1,0 +1,5 @@
+Compiled from "UnsupportedClassVersionError.java"
+public class java.lang.UnsupportedClassVersionError extends java.lang.ClassFormatError {
+  public java.lang.UnsupportedClassVersionError();
+  public java.lang.UnsupportedClassVersionError(java.lang.String);
+}

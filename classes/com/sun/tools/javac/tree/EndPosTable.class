@@ -1,0 +1,6 @@
+Compiled from "EndPosTable.java"
+public interface com.sun.tools.javac.tree.EndPosTable {
+  public abstract int getEndPos(com.sun.tools.javac.tree.JCTree);
+  public abstract void storeEnd(com.sun.tools.javac.tree.JCTree, int);
+  public abstract int replaceTree(com.sun.tools.javac.tree.JCTree, com.sun.tools.javac.tree.JCTree);
+}

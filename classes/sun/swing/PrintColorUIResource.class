@@ -1,0 +1,5 @@
+Compiled from "PrintColorUIResource.java"
+public class sun.swing.PrintColorUIResource extends javax.swing.plaf.ColorUIResource {
+  public sun.swing.PrintColorUIResource(int, java.awt.Color);
+  public java.awt.Color getPrintColor();
+}

@@ -1,0 +1,22 @@
+Compiled from "LazyCompositeData.java"
+public abstract class sun.management.LazyCompositeData implements javax.management.openmbean.CompositeData,java.io.Serializable {
+  public sun.management.LazyCompositeData();
+  public boolean containsKey(java.lang.String);
+  public boolean containsValue(java.lang.Object);
+  public boolean equals(java.lang.Object);
+  public java.lang.Object get(java.lang.String);
+  public java.lang.Object[] getAll(java.lang.String[]);
+  public javax.management.openmbean.CompositeType getCompositeType();
+  public int hashCode();
+  public java.lang.String toString();
+  public java.util.Collection<?> values();
+  protected java.lang.Object writeReplace() throws java.io.ObjectStreamException;
+  protected abstract javax.management.openmbean.CompositeData getCompositeData();
+  public static java.lang.String getString(javax.management.openmbean.CompositeData, java.lang.String);
+  public static boolean getBoolean(javax.management.openmbean.CompositeData, java.lang.String);
+  public static long getLong(javax.management.openmbean.CompositeData, java.lang.String);
+  public static int getInt(javax.management.openmbean.CompositeData, java.lang.String);
+  protected static boolean isTypeMatched(javax.management.openmbean.CompositeType, javax.management.openmbean.CompositeType);
+  protected static boolean isTypeMatched(javax.management.openmbean.TabularType, javax.management.openmbean.TabularType);
+  protected static boolean isTypeMatched(javax.management.openmbean.ArrayType<?>, javax.management.openmbean.ArrayType<?>);
+}

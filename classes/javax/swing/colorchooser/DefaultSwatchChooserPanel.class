@@ -1,0 +1,17 @@
+Compiled from "DefaultSwatchChooserPanel.java"
+class javax.swing.colorchooser.DefaultSwatchChooserPanel extends javax.swing.colorchooser.AbstractColorChooserPanel {
+  javax.swing.colorchooser.SwatchPanel swatchPanel;
+  javax.swing.colorchooser.RecentSwatchPanel recentSwatchPanel;
+  java.awt.event.MouseListener mainSwatchListener;
+  java.awt.event.MouseListener recentSwatchListener;
+  public javax.swing.colorchooser.DefaultSwatchChooserPanel();
+  public java.lang.String getDisplayName();
+  public int getMnemonic();
+  public int getDisplayedMnemonicIndex();
+  public javax.swing.Icon getSmallDisplayIcon();
+  public javax.swing.Icon getLargeDisplayIcon();
+  public void installChooserPanel(javax.swing.JColorChooser);
+  protected void buildChooser();
+  public void uninstallChooserPanel(javax.swing.JColorChooser);
+  public void updateChooser();
+}

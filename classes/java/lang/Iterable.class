@@ -1,0 +1,6 @@
+Compiled from "Iterable.java"
+public interface java.lang.Iterable<T> {
+  public abstract java.util.Iterator<T> iterator();
+  public default void forEach(java.util.function.Consumer<? super T>);
+  public default java.util.Spliterator<T> spliterator();
+}

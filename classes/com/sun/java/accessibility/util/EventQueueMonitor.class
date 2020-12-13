@@ -1,0 +1,34 @@
+Compiled from "EventQueueMonitor.java"
+public class com.sun.java.accessibility.util.EventQueueMonitor implements java.awt.event.AWTEventListener {
+  static java.util.Vector<java.awt.Container> topLevelWindows;
+  static java.awt.Window topLevelWindowWithFocus;
+  static java.awt.Point currentMousePosition;
+  static java.awt.Component currentMouseComponent;
+  static com.sun.java.accessibility.util.GUIInitializedListener guiInitializedListener;
+  static com.sun.java.accessibility.util.TopLevelWindowListener topLevelWindowListener;
+  static java.awt.event.MouseMotionListener mouseMotionListener;
+  static boolean guiInitialized;
+  static com.sun.java.accessibility.util.EventQueueMonitorItem componentEventQueue;
+  static java.lang.Object componentEventQueueLock;
+  public com.sun.java.accessibility.util.EventQueueMonitor();
+  static void queueComponentEvent(java.awt.event.ComponentEvent);
+  public static void maybeInitialize();
+  public void eventDispatched(java.awt.AWTEvent);
+  static void maybeNotifyAssistiveTechnologies();
+  static void addTopLevelWindow(java.awt.Component);
+  static void removeTopLevelWindow(java.awt.Window);
+  static void updateCurrentMousePosition(java.awt.event.MouseEvent);
+  static void processEvent(java.awt.AWTEvent);
+  static synchronized java.awt.Component getShowingComponentAt(java.awt.Container, int, int);
+  static synchronized java.awt.Component getComponentAt(java.awt.Container, java.awt.Point);
+  public static javax.accessibility.Accessible getAccessibleAt(java.awt.Point);
+  public static boolean isGUIInitialized();
+  public static void addGUIInitializedListener(com.sun.java.accessibility.util.GUIInitializedListener);
+  public static void removeGUIInitializedListener(com.sun.java.accessibility.util.GUIInitializedListener);
+  public static void addTopLevelWindowListener(com.sun.java.accessibility.util.TopLevelWindowListener);
+  public static void removeTopLevelWindowListener(com.sun.java.accessibility.util.TopLevelWindowListener);
+  public static java.awt.Point getCurrentMousePosition();
+  public static java.awt.Window[] getTopLevelWindows();
+  public static java.awt.Window getTopLevelWindowWithFocus();
+  static {};
+}

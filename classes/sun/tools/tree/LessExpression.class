@@ -1,0 +1,10 @@
+Compiled from "LessExpression.java"
+public class sun.tools.tree.LessExpression extends sun.tools.tree.BinaryCompareExpression {
+  public sun.tools.tree.LessExpression(long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  sun.tools.tree.Expression eval(int, int);
+  sun.tools.tree.Expression eval(long, long);
+  sun.tools.tree.Expression eval(float, float);
+  sun.tools.tree.Expression eval(double, double);
+  sun.tools.tree.Expression simplify();
+  void codeBranch(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler, sun.tools.asm.Label, boolean);
+}

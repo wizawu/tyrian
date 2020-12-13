@@ -1,0 +1,7 @@
+Compiled from "HtmlDocument.java"
+public class jdk.javadoc.internal.doclets.formats.html.markup.HtmlDocument {
+  public jdk.javadoc.internal.doclets.formats.html.markup.HtmlDocument(jdk.javadoc.internal.doclets.formats.html.markup.DocType, jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.formats.html.markup.HtmlDocument(jdk.javadoc.internal.doclets.formats.html.markup.DocType, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void write(jdk.javadoc.internal.doclets.toolkit.util.DocFile) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  public java.lang.String toString();
+}

@@ -1,0 +1,10 @@
+Compiled from "GLXSurfaceData.java"
+public abstract class sun.java2d.opengl.GLXSurfaceData extends sun.java2d.opengl.OGLSurfaceData {
+  protected sun.awt.X11ComponentPeer peer;
+  protected sun.java2d.opengl.GLXSurfaceData(sun.awt.X11ComponentPeer, sun.java2d.opengl.GLXGraphicsConfig, java.awt.image.ColorModel, int);
+  public java.awt.GraphicsConfiguration getDeviceConfiguration();
+  public static sun.java2d.opengl.GLXSurfaceData$GLXWindowSurfaceData createData(sun.awt.X11ComponentPeer);
+  public static sun.java2d.opengl.GLXSurfaceData$GLXOffScreenSurfaceData createData(sun.awt.X11ComponentPeer, java.awt.Image, int);
+  public static sun.java2d.opengl.GLXSurfaceData$GLXOffScreenSurfaceData createData(sun.java2d.opengl.GLXGraphicsConfig, int, int, java.awt.image.ColorModel, java.awt.Image, int);
+  public static sun.java2d.opengl.GLXGraphicsConfig getGC(sun.awt.X11ComponentPeer);
+}

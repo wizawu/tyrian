@@ -1,0 +1,9 @@
+Compiled from "Identifier.java"
+public class sun.tools.jstat.Identifier extends sun.tools.jstat.Expression {
+  public sun.tools.jstat.Identifier(java.lang.String);
+  public java.lang.String getName();
+  public void setValue(java.lang.Object);
+  public java.lang.Object getValue();
+  public boolean isResolved();
+  public java.lang.String toString();
+}

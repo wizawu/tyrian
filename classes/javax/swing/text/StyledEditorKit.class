@@ -1,0 +1,17 @@
+Compiled from "StyledEditorKit.java"
+public class javax.swing.text.StyledEditorKit extends javax.swing.text.DefaultEditorKit {
+  javax.swing.text.Element currentRun;
+  javax.swing.text.Element currentParagraph;
+  javax.swing.text.MutableAttributeSet inputAttributes;
+  public javax.swing.text.StyledEditorKit();
+  public javax.swing.text.MutableAttributeSet getInputAttributes();
+  public javax.swing.text.Element getCharacterAttributeRun();
+  public javax.swing.Action[] getActions();
+  public javax.swing.text.Document createDefaultDocument();
+  public void install(javax.swing.JEditorPane);
+  public void deinstall(javax.swing.JEditorPane);
+  public javax.swing.text.ViewFactory getViewFactory();
+  public java.lang.Object clone();
+  protected void createInputAttributes(javax.swing.text.Element, javax.swing.text.MutableAttributeSet);
+  static {};
+}

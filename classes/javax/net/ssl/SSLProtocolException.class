@@ -1,0 +1,4 @@
+Compiled from "SSLProtocolException.java"
+public class javax.net.ssl.SSLProtocolException extends javax.net.ssl.SSLException {
+  public javax.net.ssl.SSLProtocolException(java.lang.String);
+}

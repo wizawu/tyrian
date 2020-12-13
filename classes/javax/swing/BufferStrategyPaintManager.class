@@ -1,0 +1,12 @@
+Compiled from "BufferStrategyPaintManager.java"
+class javax.swing.BufferStrategyPaintManager extends javax.swing.RepaintManager$PaintManager {
+  javax.swing.BufferStrategyPaintManager();
+  protected void dispose();
+  public boolean show(java.awt.Container, int, int, int, int);
+  public boolean paint(javax.swing.JComponent, javax.swing.JComponent, java.awt.Graphics, int, int, int, int);
+  public void copyArea(javax.swing.JComponent, java.awt.Graphics, int, int, int, int, int, int, boolean);
+  public void beginPaint();
+  public void endPaint();
+  public void doubleBufferingChanged(javax.swing.JRootPane);
+  static {};
+}

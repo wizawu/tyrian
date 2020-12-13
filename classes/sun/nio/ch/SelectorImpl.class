@@ -1,0 +1,25 @@
+Compiled from "SelectorImpl.java"
+abstract class sun.nio.ch.SelectorImpl extends java.nio.channels.spi.AbstractSelector {
+  static final boolean $assertionsDisabled;
+  protected sun.nio.ch.SelectorImpl(java.nio.channels.spi.SelectorProvider);
+  public final java.util.Set<java.nio.channels.SelectionKey> keys();
+  public final java.util.Set<java.nio.channels.SelectionKey> selectedKeys();
+  protected final void begin(boolean);
+  protected final void end(boolean);
+  protected abstract int doSelect(java.util.function.Consumer<java.nio.channels.SelectionKey>, long) throws java.io.IOException;
+  public final int select(long) throws java.io.IOException;
+  public final int select() throws java.io.IOException;
+  public final int selectNow() throws java.io.IOException;
+  public final int select(java.util.function.Consumer<java.nio.channels.SelectionKey>, long) throws java.io.IOException;
+  public final int select(java.util.function.Consumer<java.nio.channels.SelectionKey>) throws java.io.IOException;
+  public final int selectNow(java.util.function.Consumer<java.nio.channels.SelectionKey>) throws java.io.IOException;
+  protected abstract void implClose() throws java.io.IOException;
+  public final void implCloseSelector() throws java.io.IOException;
+  protected final java.nio.channels.SelectionKey register(java.nio.channels.spi.AbstractSelectableChannel, int, java.lang.Object);
+  protected void implRegister(sun.nio.ch.SelectionKeyImpl);
+  protected abstract void implDereg(sun.nio.ch.SelectionKeyImpl) throws java.io.IOException;
+  protected final void processDeregisterQueue() throws java.io.IOException;
+  protected final int processReadyEvents(int, sun.nio.ch.SelectionKeyImpl, java.util.function.Consumer<java.nio.channels.SelectionKey>);
+  protected abstract void setEventOps(sun.nio.ch.SelectionKeyImpl);
+  static {};
+}

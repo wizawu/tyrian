@@ -1,0 +1,6 @@
+Compiled from "HeapRegionSetBase.java"
+public class sun.jvm.hotspot.gc.g1.HeapRegionSetBase extends sun.jvm.hotspot.runtime.VMObject {
+  public long length();
+  public sun.jvm.hotspot.gc.g1.HeapRegionSetBase(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

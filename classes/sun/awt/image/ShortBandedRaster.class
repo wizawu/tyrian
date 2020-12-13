@@ -1,0 +1,29 @@
+Compiled from "ShortBandedRaster.java"
+public class sun.awt.image.ShortBandedRaster extends sun.awt.image.SunWritableRaster {
+  int[] dataOffsets;
+  int scanlineStride;
+  short[][] data;
+  public sun.awt.image.ShortBandedRaster(java.awt.image.SampleModel, java.awt.Point);
+  public sun.awt.image.ShortBandedRaster(java.awt.image.SampleModel, java.awt.image.DataBufferUShort, java.awt.Point);
+  public sun.awt.image.ShortBandedRaster(java.awt.image.SampleModel, java.awt.image.DataBufferUShort, java.awt.Rectangle, java.awt.Point, sun.awt.image.ShortBandedRaster);
+  public int[] getDataOffsets();
+  public int getDataOffset(int);
+  public int getScanlineStride();
+  public int getPixelStride();
+  public short[][] getDataStorage();
+  public short[] getDataStorage(int);
+  public java.lang.Object getDataElements(int, int, java.lang.Object);
+  public java.lang.Object getDataElements(int, int, int, int, java.lang.Object);
+  public short[] getShortData(int, int, int, int, int, short[]);
+  public short[] getShortData(int, int, int, int, short[]);
+  public void setDataElements(int, int, java.lang.Object);
+  public void setDataElements(int, int, java.awt.image.Raster);
+  public void setDataElements(int, int, int, int, java.lang.Object);
+  public void putShortData(int, int, int, int, int, short[]);
+  public void putShortData(int, int, int, int, short[]);
+  public java.awt.image.WritableRaster createWritableChild(int, int, int, int, int, int, int[]);
+  public java.awt.image.Raster createChild(int, int, int, int, int, int, int[]);
+  public java.awt.image.WritableRaster createCompatibleWritableRaster(int, int);
+  public java.awt.image.WritableRaster createCompatibleWritableRaster();
+  public java.lang.String toString();
+}

@@ -1,0 +1,7 @@
+Compiled from "PrivilegedExecutor.java"
+class jdk.internal.net.http.PrivilegedExecutor implements java.util.concurrent.Executor {
+  final java.util.concurrent.Executor executor;
+  final java.security.AccessControlContext acc;
+  public jdk.internal.net.http.PrivilegedExecutor(java.util.concurrent.Executor, java.security.AccessControlContext);
+  public void execute(java.lang.Runnable);
+}

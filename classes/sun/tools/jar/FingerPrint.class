@@ -1,0 +1,16 @@
+Compiled from "FingerPrint.java"
+final class sun.tools.jar.FingerPrint {
+  public sun.tools.jar.FingerPrint(java.lang.String, java.lang.String, int, byte[]) throws java.io.IOException;
+  public boolean isClass();
+  public boolean isNestedClass();
+  public boolean isPublicClass();
+  public boolean isIdentical(sun.tools.jar.FingerPrint);
+  public boolean isCompatibleVersion(sun.tools.jar.FingerPrint);
+  public boolean isSameAPI(sun.tools.jar.FingerPrint);
+  public java.lang.String basename();
+  public java.lang.String entryName();
+  public java.lang.String className();
+  public int mrversion();
+  public java.lang.String outerClassName();
+  static {};
+}

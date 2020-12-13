@@ -1,0 +1,15 @@
+Compiled from "Channels.java"
+public final class java.nio.channels.Channels {
+  public static java.io.InputStream newInputStream(java.nio.channels.ReadableByteChannel);
+  public static java.io.OutputStream newOutputStream(java.nio.channels.WritableByteChannel);
+  public static java.io.InputStream newInputStream(java.nio.channels.AsynchronousByteChannel);
+  public static java.io.OutputStream newOutputStream(java.nio.channels.AsynchronousByteChannel);
+  public static java.nio.channels.ReadableByteChannel newChannel(java.io.InputStream);
+  public static java.nio.channels.WritableByteChannel newChannel(java.io.OutputStream);
+  public static java.io.Reader newReader(java.nio.channels.ReadableByteChannel, java.nio.charset.CharsetDecoder, int);
+  public static java.io.Reader newReader(java.nio.channels.ReadableByteChannel, java.lang.String);
+  public static java.io.Reader newReader(java.nio.channels.ReadableByteChannel, java.nio.charset.Charset);
+  public static java.io.Writer newWriter(java.nio.channels.WritableByteChannel, java.nio.charset.CharsetEncoder, int);
+  public static java.io.Writer newWriter(java.nio.channels.WritableByteChannel, java.lang.String);
+  public static java.io.Writer newWriter(java.nio.channels.WritableByteChannel, java.nio.charset.Charset);
+}

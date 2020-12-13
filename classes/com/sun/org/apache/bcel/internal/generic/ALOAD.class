@@ -1,0 +1,6 @@
+Compiled from "ALOAD.java"
+public class com.sun.org.apache.bcel.internal.generic.ALOAD extends com.sun.org.apache.bcel.internal.generic.LoadInstruction {
+  com.sun.org.apache.bcel.internal.generic.ALOAD();
+  public com.sun.org.apache.bcel.internal.generic.ALOAD(int);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

@@ -1,0 +1,32 @@
+Compiled from "TypedArrayData.java"
+public abstract class jdk.nashorn.internal.runtime.arrays.TypedArrayData<T extends java.nio.Buffer> extends jdk.nashorn.internal.runtime.arrays.ContinuousArrayData {
+  protected final T nb;
+  protected jdk.nashorn.internal.runtime.arrays.TypedArrayData(T, int);
+  public final int getElementLength();
+  public boolean isUnsigned();
+  public boolean isClamped();
+  public boolean canDelete(int, boolean);
+  public boolean canDelete(long, boolean);
+  public jdk.nashorn.internal.runtime.arrays.TypedArrayData<T> copy();
+  public java.lang.Object[] asObjectArray();
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shiftLeft(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shiftRight(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData ensure(long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shrink(long);
+  public final boolean has(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData delete(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData delete(long, long);
+  public jdk.nashorn.internal.runtime.arrays.TypedArrayData<T> convert(java.lang.Class<?>);
+  public java.lang.Object pop();
+  public jdk.nashorn.internal.runtime.arrays.ArrayData slice(long, long);
+  protected abstract java.lang.invoke.MethodHandle getGetElem();
+  protected abstract java.lang.invoke.MethodHandle getSetElem();
+  public java.lang.invoke.MethodHandle getElementGetter(java.lang.Class<?>, int);
+  public java.lang.invoke.MethodHandle getElementSetter(java.lang.Class<?>);
+  protected java.lang.invoke.MethodHandle getContinuousElementSetter(java.lang.Class<? extends jdk.nashorn.internal.runtime.arrays.ContinuousArrayData>, java.lang.invoke.MethodHandle, java.lang.Class<?>);
+  public jdk.dynalink.linker.GuardedInvocation findFastGetIndexMethod(java.lang.Class<? extends jdk.nashorn.internal.runtime.arrays.ArrayData>, jdk.dynalink.CallSiteDescriptor, jdk.dynalink.linker.LinkRequest);
+  public jdk.dynalink.linker.GuardedInvocation findFastSetIndexMethod(java.lang.Class<? extends jdk.nashorn.internal.runtime.arrays.ArrayData>, jdk.dynalink.CallSiteDescriptor, jdk.dynalink.linker.LinkRequest);
+  public jdk.nashorn.internal.runtime.arrays.ContinuousArrayData copy();
+  public jdk.nashorn.internal.runtime.arrays.ArrayData convert(java.lang.Class);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData copy();
+}

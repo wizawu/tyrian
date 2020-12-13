@@ -1,0 +1,8 @@
+Compiled from "StringUtils.java"
+public class com.sun.tools.javac.util.StringUtils {
+  public com.sun.tools.javac.util.StringUtils();
+  public static java.lang.String toLowerCase(java.lang.String);
+  public static java.lang.String toUpperCase(java.lang.String);
+  public static int indexOfIgnoreCase(java.lang.String, java.lang.String);
+  public static int indexOfIgnoreCase(java.lang.String, java.lang.String, int);
+}

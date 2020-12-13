@@ -1,0 +1,18 @@
+Compiled from "XSNotationDecl.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.XSNotationDecl implements com.sun.org.apache.xerces.internal.xs.XSNotationDeclaration {
+  public java.lang.String fName;
+  public java.lang.String fTargetNamespace;
+  public java.lang.String fPublicId;
+  public java.lang.String fSystemId;
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList fAnnotations;
+  public com.sun.org.apache.xerces.internal.impl.xs.XSNotationDecl();
+  public short getType();
+  public java.lang.String getName();
+  public java.lang.String getNamespace();
+  public java.lang.String getSystemId();
+  public java.lang.String getPublicId();
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation getAnnotation();
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+  public com.sun.org.apache.xerces.internal.xs.XSNamespaceItem getNamespaceItem();
+  void setNamespaceItem(com.sun.org.apache.xerces.internal.xs.XSNamespaceItem);
+}

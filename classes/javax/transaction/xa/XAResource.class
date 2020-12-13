@@ -1,0 +1,24 @@
+Compiled from "XAResource.java"
+public interface javax.transaction.xa.XAResource {
+  public static final int TMENDRSCAN;
+  public static final int TMFAIL;
+  public static final int TMJOIN;
+  public static final int TMNOFLAGS;
+  public static final int TMONEPHASE;
+  public static final int TMRESUME;
+  public static final int TMSTARTRSCAN;
+  public static final int TMSUCCESS;
+  public static final int TMSUSPEND;
+  public static final int XA_RDONLY;
+  public static final int XA_OK;
+  public abstract void commit(javax.transaction.xa.Xid, boolean) throws javax.transaction.xa.XAException;
+  public abstract void end(javax.transaction.xa.Xid, int) throws javax.transaction.xa.XAException;
+  public abstract void forget(javax.transaction.xa.Xid) throws javax.transaction.xa.XAException;
+  public abstract int getTransactionTimeout() throws javax.transaction.xa.XAException;
+  public abstract boolean isSameRM(javax.transaction.xa.XAResource) throws javax.transaction.xa.XAException;
+  public abstract int prepare(javax.transaction.xa.Xid) throws javax.transaction.xa.XAException;
+  public abstract javax.transaction.xa.Xid[] recover(int) throws javax.transaction.xa.XAException;
+  public abstract void rollback(javax.transaction.xa.Xid) throws javax.transaction.xa.XAException;
+  public abstract boolean setTransactionTimeout(int) throws javax.transaction.xa.XAException;
+  public abstract void start(javax.transaction.xa.Xid, int) throws javax.transaction.xa.XAException;
+}

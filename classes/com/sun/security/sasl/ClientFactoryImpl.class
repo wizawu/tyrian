@@ -1,0 +1,7 @@
+Compiled from "ClientFactoryImpl.java"
+public final class com.sun.security.sasl.ClientFactoryImpl implements javax.security.sasl.SaslClientFactory {
+  public com.sun.security.sasl.ClientFactoryImpl();
+  public javax.security.sasl.SaslClient createSaslClient(java.lang.String[], java.lang.String, java.lang.String, java.lang.String, java.util.Map<java.lang.String, ?>, javax.security.auth.callback.CallbackHandler) throws javax.security.sasl.SaslException;
+  public java.lang.String[] getMechanismNames(java.util.Map<java.lang.String, ?>);
+  static {};
+}

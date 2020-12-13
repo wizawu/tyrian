@@ -1,0 +1,34 @@
+Compiled from "MimeEntry.java"
+public class sun.net.www.MimeEntry implements java.lang.Cloneable {
+  boolean starred;
+  public static final int UNKNOWN;
+  public static final int LOAD_INTO_BROWSER;
+  public static final int SAVE_TO_FILE;
+  public static final int LAUNCH_APPLICATION;
+  static final java.lang.String[] actionKeywords;
+  public sun.net.www.MimeEntry(java.lang.String);
+  sun.net.www.MimeEntry(java.lang.String, java.lang.String, java.lang.String);
+  sun.net.www.MimeEntry(java.lang.String, int, java.lang.String, java.lang.String);
+  sun.net.www.MimeEntry(java.lang.String, int, java.lang.String, java.lang.String, java.lang.String[]);
+  public synchronized java.lang.String getType();
+  public synchronized void setType(java.lang.String);
+  public synchronized int getAction();
+  public synchronized void setAction(int, java.lang.String);
+  public synchronized void setAction(int);
+  public synchronized java.lang.String getLaunchString();
+  public synchronized void setCommand(java.lang.String);
+  public synchronized java.lang.String getDescription();
+  public synchronized void setDescription(java.lang.String);
+  public java.lang.String getImageFileName();
+  public synchronized void setImageFileName(java.lang.String);
+  public java.lang.String getTempFileTemplate();
+  public synchronized java.lang.String[] getExtensions();
+  public synchronized java.lang.String getExtensionsAsList();
+  public synchronized void setExtensions(java.lang.String);
+  public java.lang.Object launch(java.net.URLConnection, java.io.InputStream, sun.net.www.MimeTable) throws sun.net.www.ApplicationLaunchException;
+  public boolean matches(java.lang.String);
+  public java.lang.Object clone();
+  public synchronized java.lang.String toProperty();
+  public java.lang.String toString();
+  static {};
+}

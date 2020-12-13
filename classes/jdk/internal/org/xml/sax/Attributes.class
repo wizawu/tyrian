@@ -1,0 +1,15 @@
+Compiled from "Attributes.java"
+public interface jdk.internal.org.xml.sax.Attributes {
+  public abstract int getLength();
+  public abstract java.lang.String getURI(int);
+  public abstract java.lang.String getLocalName(int);
+  public abstract java.lang.String getQName(int);
+  public abstract java.lang.String getType(int);
+  public abstract java.lang.String getValue(int);
+  public abstract int getIndex(java.lang.String, java.lang.String);
+  public abstract int getIndex(java.lang.String);
+  public abstract java.lang.String getType(java.lang.String, java.lang.String);
+  public abstract java.lang.String getType(java.lang.String);
+  public abstract java.lang.String getValue(java.lang.String, java.lang.String);
+  public abstract java.lang.String getValue(java.lang.String);
+}

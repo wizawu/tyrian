@@ -1,0 +1,5 @@
+Compiled from "MalformedParametersException.java"
+public class java.lang.reflect.MalformedParametersException extends java.lang.RuntimeException {
+  public java.lang.reflect.MalformedParametersException();
+  public java.lang.reflect.MalformedParametersException(java.lang.String);
+}

@@ -1,0 +1,5 @@
+Compiled from "Handler.java"
+public class sun.net.www.protocol.jrt.Handler extends java.net.URLStreamHandler {
+  public sun.net.www.protocol.jrt.Handler();
+  protected java.net.URLConnection openConnection(java.net.URL) throws java.io.IOException;
+}

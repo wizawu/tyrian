@@ -1,0 +1,4 @@
+Compiled from "AttributeNameEnumeration.java"
+public class sun.security.x509.AttributeNameEnumeration extends java.util.Vector<java.lang.String> {
+  public sun.security.x509.AttributeNameEnumeration();
+}

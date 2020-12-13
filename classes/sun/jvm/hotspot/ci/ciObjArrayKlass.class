@@ -1,0 +1,5 @@
+Compiled from "ciObjArrayKlass.java"
+public class sun.jvm.hotspot.ci.ciObjArrayKlass extends sun.jvm.hotspot.ci.ciArrayKlass {
+  public sun.jvm.hotspot.ci.ciObjArrayKlass(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

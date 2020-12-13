@@ -1,0 +1,11 @@
+Compiled from "CtrDrbg.java"
+public class sun.security.provider.CtrDrbg extends sun.security.provider.AbstractDrbg {
+  public sun.security.provider.CtrDrbg(java.security.SecureRandomParameters);
+  protected void chooseAlgorithmAndStrength();
+  protected void initEngine();
+  protected void instantiateAlgorithm(byte[]);
+  protected synchronized void reseedAlgorithm(byte[], byte[]);
+  public synchronized void generateAlgorithm(byte[], byte[]);
+  public java.lang.String toString();
+  static {};
+}

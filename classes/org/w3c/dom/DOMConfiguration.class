@@ -1,0 +1,7 @@
+Compiled from "DOMConfiguration.java"
+public interface org.w3c.dom.DOMConfiguration {
+  public abstract void setParameter(java.lang.String, java.lang.Object) throws org.w3c.dom.DOMException;
+  public abstract java.lang.Object getParameter(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract boolean canSetParameter(java.lang.String, java.lang.Object);
+  public abstract org.w3c.dom.DOMStringList getParameterNames();
+}

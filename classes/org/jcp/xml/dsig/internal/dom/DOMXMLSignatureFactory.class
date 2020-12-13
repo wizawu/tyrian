@@ -1,0 +1,27 @@
+Compiled from "DOMXMLSignatureFactory.java"
+public final class org.jcp.xml.dsig.internal.dom.DOMXMLSignatureFactory extends javax.xml.crypto.dsig.XMLSignatureFactory {
+  public org.jcp.xml.dsig.internal.dom.DOMXMLSignatureFactory();
+  public javax.xml.crypto.dsig.XMLSignature newXMLSignature(javax.xml.crypto.dsig.SignedInfo, javax.xml.crypto.dsig.keyinfo.KeyInfo);
+  public javax.xml.crypto.dsig.XMLSignature newXMLSignature(javax.xml.crypto.dsig.SignedInfo, javax.xml.crypto.dsig.keyinfo.KeyInfo, java.util.List, java.lang.String, java.lang.String);
+  public javax.xml.crypto.dsig.Reference newReference(java.lang.String, javax.xml.crypto.dsig.DigestMethod);
+  public javax.xml.crypto.dsig.Reference newReference(java.lang.String, javax.xml.crypto.dsig.DigestMethod, java.util.List, java.lang.String, java.lang.String);
+  public javax.xml.crypto.dsig.Reference newReference(java.lang.String, javax.xml.crypto.dsig.DigestMethod, java.util.List, javax.xml.crypto.Data, java.util.List, java.lang.String, java.lang.String);
+  public javax.xml.crypto.dsig.Reference newReference(java.lang.String, javax.xml.crypto.dsig.DigestMethod, java.util.List, java.lang.String, java.lang.String, byte[]);
+  public javax.xml.crypto.dsig.SignedInfo newSignedInfo(javax.xml.crypto.dsig.CanonicalizationMethod, javax.xml.crypto.dsig.SignatureMethod, java.util.List);
+  public javax.xml.crypto.dsig.SignedInfo newSignedInfo(javax.xml.crypto.dsig.CanonicalizationMethod, javax.xml.crypto.dsig.SignatureMethod, java.util.List, java.lang.String);
+  public javax.xml.crypto.dsig.XMLObject newXMLObject(java.util.List, java.lang.String, java.lang.String, java.lang.String);
+  public javax.xml.crypto.dsig.Manifest newManifest(java.util.List);
+  public javax.xml.crypto.dsig.Manifest newManifest(java.util.List, java.lang.String);
+  public javax.xml.crypto.dsig.SignatureProperties newSignatureProperties(java.util.List, java.lang.String);
+  public javax.xml.crypto.dsig.SignatureProperty newSignatureProperty(java.util.List, java.lang.String, java.lang.String);
+  public javax.xml.crypto.dsig.XMLSignature unmarshalXMLSignature(javax.xml.crypto.dsig.XMLValidateContext) throws javax.xml.crypto.MarshalException;
+  public javax.xml.crypto.dsig.XMLSignature unmarshalXMLSignature(javax.xml.crypto.XMLStructure) throws javax.xml.crypto.MarshalException;
+  public boolean isFeatureSupported(java.lang.String);
+  public javax.xml.crypto.dsig.DigestMethod newDigestMethod(java.lang.String, javax.xml.crypto.dsig.spec.DigestMethodParameterSpec) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
+  public javax.xml.crypto.dsig.SignatureMethod newSignatureMethod(java.lang.String, javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
+  public javax.xml.crypto.dsig.Transform newTransform(java.lang.String, javax.xml.crypto.dsig.spec.TransformParameterSpec) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
+  public javax.xml.crypto.dsig.Transform newTransform(java.lang.String, javax.xml.crypto.XMLStructure) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
+  public javax.xml.crypto.dsig.CanonicalizationMethod newCanonicalizationMethod(java.lang.String, javax.xml.crypto.dsig.spec.C14NMethodParameterSpec) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
+  public javax.xml.crypto.dsig.CanonicalizationMethod newCanonicalizationMethod(java.lang.String, javax.xml.crypto.XMLStructure) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
+  public javax.xml.crypto.URIDereferencer getURIDereferencer();
+}

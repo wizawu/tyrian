@@ -1,0 +1,8 @@
+Compiled from "ContainerPeer.java"
+public interface java.awt.peer.ContainerPeer extends java.awt.peer.ComponentPeer {
+  public abstract java.awt.Insets getInsets();
+  public abstract void beginValidate();
+  public abstract void endValidate();
+  public abstract void beginLayout();
+  public abstract void endLayout();
+}

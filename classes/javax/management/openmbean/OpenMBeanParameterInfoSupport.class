@@ -1,0 +1,22 @@
+Compiled from "OpenMBeanParameterInfoSupport.java"
+public class javax.management.openmbean.OpenMBeanParameterInfoSupport extends javax.management.MBeanParameterInfo implements javax.management.openmbean.OpenMBeanParameterInfo {
+  static final long serialVersionUID;
+  public javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType<?>);
+  public javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType<?>, javax.management.Descriptor);
+  public <T> javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType<T>, T) throws javax.management.openmbean.OpenDataException;
+  public <T> javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType<T>, T, T[]) throws javax.management.openmbean.OpenDataException;
+  public <T> javax.management.openmbean.OpenMBeanParameterInfoSupport(java.lang.String, java.lang.String, javax.management.openmbean.OpenType<T>, T, java.lang.Comparable<T>, java.lang.Comparable<T>) throws javax.management.openmbean.OpenDataException;
+  public javax.management.openmbean.OpenType<?> getOpenType();
+  public java.lang.Object getDefaultValue();
+  public java.util.Set<?> getLegalValues();
+  public java.lang.Comparable<?> getMinValue();
+  public java.lang.Comparable<?> getMaxValue();
+  public boolean hasDefaultValue();
+  public boolean hasLegalValues();
+  public boolean hasMinValue();
+  public boolean hasMaxValue();
+  public boolean isValue(java.lang.Object);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

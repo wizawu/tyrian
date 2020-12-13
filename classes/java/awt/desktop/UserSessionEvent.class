@@ -1,0 +1,5 @@
+Compiled from "UserSessionEvent.java"
+public final class java.awt.desktop.UserSessionEvent extends java.awt.desktop.AppEvent {
+  public java.awt.desktop.UserSessionEvent(java.awt.desktop.UserSessionEvent$Reason);
+  public java.awt.desktop.UserSessionEvent$Reason getReason();
+}

@@ -1,0 +1,37 @@
+Compiled from "DTDGrammar.java"
+public class com.sun.xml.internal.stream.dtd.nonvalidating.DTDGrammar {
+  public static final int TOP_LEVEL_SCOPE;
+  protected com.sun.org.apache.xerces.internal.xni.parser.XMLDTDSource fDTDSource;
+  protected com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource fDTDContentModelSource;
+  protected int fCurrentElementIndex;
+  protected int fCurrentAttributeIndex;
+  protected boolean fReadingExternalDTD;
+  protected com.sun.xml.internal.stream.dtd.nonvalidating.XMLAttributeDecl fAttributeDecl;
+  java.util.Map<java.lang.String, com.sun.xml.internal.stream.dtd.nonvalidating.XMLElementDecl> fElementDeclTab;
+  public com.sun.xml.internal.stream.dtd.nonvalidating.DTDGrammar(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public int getAttributeDeclIndex(int, java.lang.String);
+  public void startDTD(com.sun.org.apache.xerces.internal.xni.XMLLocator, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void elementDecl(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void attributeDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String[], java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public com.sun.org.apache.xerces.internal.util.SymbolTable getSymbolTable();
+  public int getFirstElementDeclIndex();
+  public int getNextElementDeclIndex(int);
+  public int getElementDeclIndex(java.lang.String);
+  public int getElementDeclIndex(com.sun.org.apache.xerces.internal.xni.QName);
+  public short getContentSpecType(int);
+  public boolean getElementDecl(int, com.sun.xml.internal.stream.dtd.nonvalidating.XMLElementDecl);
+  public int getFirstAttributeDeclIndex(int);
+  public int getNextAttributeDeclIndex(int);
+  public boolean getAttributeDecl(int, com.sun.xml.internal.stream.dtd.nonvalidating.XMLAttributeDecl);
+  public boolean isCDATAAttribute(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.QName);
+  public void printElements();
+  public void printAttributes(int);
+  protected int createElementDecl();
+  protected void setElementDecl(int, com.sun.xml.internal.stream.dtd.nonvalidating.XMLElementDecl);
+  protected void setFirstAttributeDeclIndex(int, int);
+  protected int createAttributeDecl();
+  protected void setAttributeDecl(int, int, com.sun.xml.internal.stream.dtd.nonvalidating.XMLAttributeDecl);
+  public void notationDecl(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public java.util.List<com.sun.xml.internal.stream.dtd.nonvalidating.XMLNotationDecl> getNotationDecls();
+  public void endDTD(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+}

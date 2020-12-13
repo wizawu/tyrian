@@ -1,0 +1,5 @@
+Compiled from "ByteArrayCounter.java"
+public interface sun.management.counter.ByteArrayCounter extends sun.management.counter.Counter {
+  public abstract byte[] byteArrayValue();
+  public abstract byte byteAt(int);
+}

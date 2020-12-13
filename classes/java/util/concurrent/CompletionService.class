@@ -1,0 +1,8 @@
+Compiled from "CompletionService.java"
+public interface java.util.concurrent.CompletionService<V> {
+  public abstract java.util.concurrent.Future<V> submit(java.util.concurrent.Callable<V>);
+  public abstract java.util.concurrent.Future<V> submit(java.lang.Runnable, V);
+  public abstract java.util.concurrent.Future<V> take() throws java.lang.InterruptedException;
+  public abstract java.util.concurrent.Future<V> poll();
+  public abstract java.util.concurrent.Future<V> poll(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+}

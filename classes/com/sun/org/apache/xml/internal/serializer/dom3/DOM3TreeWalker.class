@@ -1,0 +1,36 @@
+Compiled from "DOM3TreeWalker.java"
+final class com.sun.org.apache.xml.internal.serializer.dom3.DOM3TreeWalker {
+  boolean fNextIsRaw;
+  protected com.sun.org.apache.xml.internal.serializer.dom3.NamespaceSupport fNSBinder;
+  protected com.sun.org.apache.xml.internal.serializer.dom3.NamespaceSupport fLocalNSBinder;
+  com.sun.org.apache.xml.internal.serializer.dom3.DOM3TreeWalker(com.sun.org.apache.xml.internal.serializer.SerializationHandler, org.w3c.dom.DOMErrorHandler, org.w3c.dom.ls.LSSerializerFilter, java.lang.String);
+  public void traverse(org.w3c.dom.Node) throws org.xml.sax.SAXException;
+  public void traverse(org.w3c.dom.Node, org.w3c.dom.Node) throws org.xml.sax.SAXException;
+  protected void startNode(org.w3c.dom.Node) throws org.xml.sax.SAXException;
+  protected void endNode(org.w3c.dom.Node) throws org.xml.sax.SAXException;
+  protected boolean applyFilter(org.w3c.dom.Node, int);
+  protected void serializeDocType(org.w3c.dom.DocumentType, boolean) throws org.xml.sax.SAXException;
+  protected void serializeComment(org.w3c.dom.Comment) throws org.xml.sax.SAXException;
+  protected void serializeElement(org.w3c.dom.Element, boolean) throws org.xml.sax.SAXException;
+  protected void serializeAttList(org.w3c.dom.Element) throws org.xml.sax.SAXException;
+  protected void serializePI(org.w3c.dom.ProcessingInstruction) throws org.xml.sax.SAXException;
+  protected void serializeCDATASection(org.w3c.dom.CDATASection) throws org.xml.sax.SAXException;
+  protected void serializeText(org.w3c.dom.Text) throws org.xml.sax.SAXException;
+  protected void serializeEntityReference(org.w3c.dom.EntityReference, boolean) throws org.xml.sax.SAXException;
+  protected boolean isXMLName(java.lang.String, boolean);
+  protected boolean isValidQName(java.lang.String, java.lang.String, boolean);
+  protected boolean isWFXMLChar(java.lang.String, java.lang.Character);
+  protected java.lang.Character isWFXMLChar(java.lang.String);
+  protected void isCommentWellFormed(java.lang.String);
+  protected void isElementWellFormed(org.w3c.dom.Node);
+  protected void isAttributeWellFormed(org.w3c.dom.Node);
+  protected void isPIWellFormed(org.w3c.dom.ProcessingInstruction);
+  protected void isCDATASectionWellFormed(org.w3c.dom.CDATASection);
+  protected void isTextWellFormed(org.w3c.dom.Text);
+  protected void isEntityReferneceWellFormed(org.w3c.dom.EntityReference);
+  protected void checkUnboundPrefixInEntRef(org.w3c.dom.Node);
+  protected void recordLocalNSDecl(org.w3c.dom.Node);
+  protected void fixupElementNS(org.w3c.dom.Node) throws org.xml.sax.SAXException;
+  protected void initProperties(java.util.Properties);
+  static {};
+}

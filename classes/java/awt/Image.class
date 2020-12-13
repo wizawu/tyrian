@@ -1,0 +1,23 @@
+Compiled from "Image.java"
+public abstract class java.awt.Image {
+  protected float accelerationPriority;
+  public static final java.lang.Object UndefinedProperty;
+  public static final int SCALE_DEFAULT;
+  public static final int SCALE_FAST;
+  public static final int SCALE_SMOOTH;
+  public static final int SCALE_REPLICATE;
+  public static final int SCALE_AREA_AVERAGING;
+  sun.awt.image.SurfaceManager surfaceManager;
+  public java.awt.Image();
+  public abstract int getWidth(java.awt.image.ImageObserver);
+  public abstract int getHeight(java.awt.image.ImageObserver);
+  public abstract java.awt.image.ImageProducer getSource();
+  public abstract java.awt.Graphics getGraphics();
+  public abstract java.lang.Object getProperty(java.lang.String, java.awt.image.ImageObserver);
+  public java.awt.Image getScaledInstance(int, int, int);
+  public void flush();
+  public java.awt.ImageCapabilities getCapabilities(java.awt.GraphicsConfiguration);
+  public void setAccelerationPriority(float);
+  public float getAccelerationPriority();
+  static {};
+}

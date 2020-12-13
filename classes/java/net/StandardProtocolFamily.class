@@ -1,0 +1,8 @@
+Compiled from "StandardProtocolFamily.java"
+public final class java.net.StandardProtocolFamily extends java.lang.Enum<java.net.StandardProtocolFamily> implements java.net.ProtocolFamily {
+  public static final java.net.StandardProtocolFamily INET;
+  public static final java.net.StandardProtocolFamily INET6;
+  public static java.net.StandardProtocolFamily[] values();
+  public static java.net.StandardProtocolFamily valueOf(java.lang.String);
+  static {};
+}

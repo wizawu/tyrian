@@ -1,0 +1,10 @@
+Compiled from "Lexer.java"
+class com.sun.org.apache.xpath.internal.compiler.Lexer {
+  com.sun.org.apache.xml.internal.utils.PrefixResolver m_namespaceContext;
+  com.sun.org.apache.xpath.internal.compiler.XPathParser m_processor;
+  static final int TARGETEXTRA;
+  com.sun.org.apache.xpath.internal.compiler.Lexer(com.sun.org.apache.xpath.internal.compiler.Compiler, com.sun.org.apache.xml.internal.utils.PrefixResolver, com.sun.org.apache.xpath.internal.compiler.XPathParser);
+  void tokenize(java.lang.String) throws javax.xml.transform.TransformerException;
+  void tokenize(java.lang.String, java.util.List<java.lang.String>) throws javax.xml.transform.TransformerException;
+  final int getKeywordToken(java.lang.String);
+}

@@ -1,0 +1,6 @@
+Compiled from "ciBaseObject.java"
+public class sun.jvm.hotspot.ci.ciBaseObject extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.ci.ciBaseObject(sun.jvm.hotspot.debugger.Address);
+  public void dumpReplayData(java.io.PrintStream);
+  static {};
+}

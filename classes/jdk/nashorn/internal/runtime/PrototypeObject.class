@@ -1,0 +1,9 @@
+Compiled from "PrototypeObject.java"
+public class jdk.nashorn.internal.runtime.PrototypeObject extends jdk.nashorn.internal.runtime.ScriptObject {
+  protected jdk.nashorn.internal.runtime.PrototypeObject();
+  protected jdk.nashorn.internal.runtime.PrototypeObject(jdk.nashorn.internal.runtime.PropertyMap);
+  protected jdk.nashorn.internal.runtime.PrototypeObject(jdk.nashorn.internal.runtime.ScriptFunction);
+  public static java.lang.Object getConstructor(java.lang.Object);
+  public static void setConstructor(java.lang.Object, java.lang.Object);
+  static {};
+}

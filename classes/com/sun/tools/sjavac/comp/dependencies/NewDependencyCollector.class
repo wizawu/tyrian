@@ -1,0 +1,7 @@
+Compiled from "NewDependencyCollector.java"
+public class com.sun.tools.sjavac.comp.dependencies.NewDependencyCollector implements com.sun.source.util.TaskListener {
+  public com.sun.tools.sjavac.comp.dependencies.NewDependencyCollector(com.sun.tools.javac.util.Context, java.util.Collection<javax.tools.JavaFileObject>);
+  public void finished(com.sun.source.util.TaskEvent);
+  public java.util.Map<java.lang.String, java.util.Map<java.lang.String, java.util.Set<java.lang.String>>> getDependencies(boolean);
+  public boolean isSymbolRelevant(boolean, com.sun.tools.javac.code.Symbol$ClassSymbol);
+}

@@ -1,0 +1,34 @@
+Compiled from "CK_ATTRIBUTE.java"
+public class sun.security.pkcs11.wrapper.CK_ATTRIBUTE {
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE TOKEN_FALSE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE SENSITIVE_FALSE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE EXTRACTABLE_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE ENCRYPT_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE DECRYPT_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE WRAP_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE UNWRAP_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE SIGN_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE VERIFY_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE SIGN_RECOVER_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE VERIFY_RECOVER_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE DERIVE_TRUE;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE ENCRYPT_NULL;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE DECRYPT_NULL;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE WRAP_NULL;
+  public static final sun.security.pkcs11.wrapper.CK_ATTRIBUTE UNWRAP_NULL;
+  public long type;
+  public java.lang.Object pValue;
+  public sun.security.pkcs11.wrapper.CK_ATTRIBUTE();
+  public sun.security.pkcs11.wrapper.CK_ATTRIBUTE(long);
+  public sun.security.pkcs11.wrapper.CK_ATTRIBUTE(long, java.lang.Object);
+  public sun.security.pkcs11.wrapper.CK_ATTRIBUTE(long, boolean);
+  public sun.security.pkcs11.wrapper.CK_ATTRIBUTE(long, long);
+  public sun.security.pkcs11.wrapper.CK_ATTRIBUTE(long, java.math.BigInteger);
+  public java.math.BigInteger getBigInteger();
+  public boolean getBoolean();
+  public char[] getCharArray();
+  public byte[] getByteArray();
+  public long getLong();
+  public java.lang.String toString();
+  static {};
+}

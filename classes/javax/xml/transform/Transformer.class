@@ -1,0 +1,17 @@
+Compiled from "Transformer.java"
+public abstract class javax.xml.transform.Transformer {
+  protected javax.xml.transform.Transformer();
+  public void reset();
+  public abstract void transform(javax.xml.transform.Source, javax.xml.transform.Result) throws javax.xml.transform.TransformerException;
+  public abstract void setParameter(java.lang.String, java.lang.Object);
+  public abstract java.lang.Object getParameter(java.lang.String);
+  public abstract void clearParameters();
+  public abstract void setURIResolver(javax.xml.transform.URIResolver);
+  public abstract javax.xml.transform.URIResolver getURIResolver();
+  public abstract void setOutputProperties(java.util.Properties);
+  public abstract java.util.Properties getOutputProperties();
+  public abstract void setOutputProperty(java.lang.String, java.lang.String) throws java.lang.IllegalArgumentException;
+  public abstract java.lang.String getOutputProperty(java.lang.String) throws java.lang.IllegalArgumentException;
+  public abstract void setErrorListener(javax.xml.transform.ErrorListener) throws java.lang.IllegalArgumentException;
+  public abstract javax.xml.transform.ErrorListener getErrorListener();
+}

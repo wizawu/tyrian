@@ -1,0 +1,13 @@
+Compiled from "TypeMap.java"
+public final class jdk.nashorn.internal.codegen.TypeMap {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.codegen.TypeMap(int, java.lang.invoke.MethodType, boolean);
+  public jdk.nashorn.internal.codegen.types.Type[] getParameterTypes(int);
+  java.lang.invoke.MethodType getCallSiteType(jdk.nashorn.internal.ir.FunctionNode);
+  public boolean needsCallee();
+  jdk.nashorn.internal.codegen.types.Type get(jdk.nashorn.internal.ir.FunctionNode, int);
+  jdk.nashorn.internal.codegen.types.Type getReturnType();
+  public java.lang.String toString();
+  java.lang.String toString(java.lang.String);
+  static {};
+}

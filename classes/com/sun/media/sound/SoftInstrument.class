@@ -1,0 +1,9 @@
+Compiled from "SoftInstrument.java"
+public final class com.sun.media.sound.SoftInstrument extends javax.sound.midi.Instrument {
+  public com.sun.media.sound.SoftInstrument(com.sun.media.sound.ModelInstrument);
+  public com.sun.media.sound.SoftInstrument(com.sun.media.sound.ModelInstrument, com.sun.media.sound.ModelPerformer[]);
+  public com.sun.media.sound.ModelDirector getDirector(javax.sound.midi.MidiChannel, com.sun.media.sound.ModelDirectedPlayer);
+  public com.sun.media.sound.ModelInstrument getSourceInstrument();
+  public java.lang.Object getData();
+  public com.sun.media.sound.SoftPerformer getPerformer(int);
+}

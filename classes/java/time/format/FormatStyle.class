@@ -1,0 +1,10 @@
+Compiled from "FormatStyle.java"
+public final class java.time.format.FormatStyle extends java.lang.Enum<java.time.format.FormatStyle> {
+  public static final java.time.format.FormatStyle FULL;
+  public static final java.time.format.FormatStyle LONG;
+  public static final java.time.format.FormatStyle MEDIUM;
+  public static final java.time.format.FormatStyle SHORT;
+  public static java.time.format.FormatStyle[] values();
+  public static java.time.format.FormatStyle valueOf(java.lang.String);
+  static {};
+}

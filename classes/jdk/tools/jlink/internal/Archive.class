@@ -1,0 +1,8 @@
+Compiled from "Archive.java"
+public interface jdk.tools.jlink.internal.Archive {
+  public abstract java.lang.String moduleName();
+  public abstract java.nio.file.Path getPath();
+  public abstract java.util.stream.Stream<jdk.tools.jlink.internal.Archive$Entry> entries();
+  public abstract void open() throws java.io.IOException;
+  public abstract void close() throws java.io.IOException;
+}

@@ -1,0 +1,5 @@
+Compiled from "PrintServiceAttributeSet.java"
+public interface javax.print.attribute.PrintServiceAttributeSet extends javax.print.attribute.AttributeSet {
+  public abstract boolean add(javax.print.attribute.Attribute);
+  public abstract boolean addAll(javax.print.attribute.AttributeSet);
+}

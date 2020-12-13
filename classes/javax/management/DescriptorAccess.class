@@ -1,0 +1,4 @@
+Compiled from "DescriptorAccess.java"
+public interface javax.management.DescriptorAccess extends javax.management.DescriptorRead {
+  public abstract void setDescriptor(javax.management.Descriptor);
+}

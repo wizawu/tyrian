@@ -1,0 +1,20 @@
+Compiled from "XRDrawLine.java"
+public class sun.java2d.xr.XRDrawLine {
+  static final int BIG_MAX;
+  static final int BIG_MIN;
+  static final int OUTCODE_TOP;
+  static final int OUTCODE_BOTTOM;
+  static final int OUTCODE_LEFT;
+  static final int OUTCODE_RIGHT;
+  int x1;
+  int y1;
+  int x2;
+  int y2;
+  int ucX1;
+  int ucY1;
+  int ucX2;
+  int ucY2;
+  sun.java2d.xr.DirtyRegion region;
+  public sun.java2d.xr.XRDrawLine();
+  protected void rasterizeLine(sun.java2d.xr.GrowableRectArray, int, int, int, int, int, int, int, int, boolean, boolean);
+}

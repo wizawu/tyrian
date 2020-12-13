@@ -1,0 +1,34 @@
+Compiled from "XMLDTDLoader.java"
+public class com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDLoader extends com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDProcessor implements com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarLoader {
+  protected static final java.lang.String STANDARD_URI_CONFORMANT_FEATURE;
+  protected static final java.lang.String BALANCE_SYNTAX_TREES;
+  protected static final java.lang.String ERROR_HANDLER;
+  public static final java.lang.String ENTITY_RESOLVER;
+  public static final java.lang.String LOCALE;
+  protected com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver fEntityResolver;
+  protected com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl fDTDScanner;
+  protected com.sun.org.apache.xerces.internal.impl.XMLEntityManager fEntityManager;
+  protected java.util.Locale fLocale;
+  public com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDLoader();
+  public com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDLoader(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDLoader(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
+  com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDLoader(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool, com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver);
+  public java.lang.String[] getRecognizedFeatures();
+  public void setFeature(java.lang.String, boolean) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public java.lang.String[] getRecognizedProperties();
+  public java.lang.Object getProperty(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public void setProperty(java.lang.String, java.lang.Object) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public boolean getFeature(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public void setLocale(java.util.Locale);
+  public java.util.Locale getLocale();
+  public void setErrorHandler(com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler);
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler getErrorHandler();
+  public void setEntityResolver(com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver);
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver getEntityResolver();
+  public com.sun.org.apache.xerces.internal.xni.grammars.Grammar loadGrammar(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void loadGrammarWithContext(com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected void reset();
+  protected com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl createDTDScanner(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, com.sun.org.apache.xerces.internal.impl.XMLEntityManager);
+  protected short getScannerVersion();
+  static {};
+}

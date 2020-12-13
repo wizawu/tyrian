@@ -1,0 +1,7 @@
+Compiled from "DOMXPathFilter2Transform.java"
+public final class org.jcp.xml.dsig.internal.dom.DOMXPathFilter2Transform extends org.jcp.xml.dsig.internal.dom.ApacheTransform {
+  public org.jcp.xml.dsig.internal.dom.DOMXPathFilter2Transform();
+  public void init(javax.xml.crypto.dsig.spec.TransformParameterSpec) throws java.security.InvalidAlgorithmParameterException;
+  public void init(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws java.security.InvalidAlgorithmParameterException;
+  public void marshalParams(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.MarshalException;
+}

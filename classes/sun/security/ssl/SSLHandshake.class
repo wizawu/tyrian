@@ -1,0 +1,38 @@
+Compiled from "SSLHandshake.java"
+final class sun.security.ssl.SSLHandshake extends java.lang.Enum<sun.security.ssl.SSLHandshake> implements sun.security.ssl.SSLConsumer, sun.security.ssl.HandshakeProducer {
+  public static final sun.security.ssl.SSLHandshake HELLO_REQUEST;
+  public static final sun.security.ssl.SSLHandshake CLIENT_HELLO;
+  public static final sun.security.ssl.SSLHandshake SERVER_HELLO;
+  public static final sun.security.ssl.SSLHandshake HELLO_RETRY_REQUEST;
+  public static final sun.security.ssl.SSLHandshake HELLO_VERIFY_REQUEST;
+  public static final sun.security.ssl.SSLHandshake NEW_SESSION_TICKET;
+  public static final sun.security.ssl.SSLHandshake END_OF_EARLY_DATA;
+  public static final sun.security.ssl.SSLHandshake ENCRYPTED_EXTENSIONS;
+  public static final sun.security.ssl.SSLHandshake CERTIFICATE;
+  public static final sun.security.ssl.SSLHandshake SERVER_KEY_EXCHANGE;
+  public static final sun.security.ssl.SSLHandshake CERTIFICATE_REQUEST;
+  public static final sun.security.ssl.SSLHandshake SERVER_HELLO_DONE;
+  public static final sun.security.ssl.SSLHandshake CERTIFICATE_VERIFY;
+  public static final sun.security.ssl.SSLHandshake CLIENT_KEY_EXCHANGE;
+  public static final sun.security.ssl.SSLHandshake FINISHED;
+  public static final sun.security.ssl.SSLHandshake CERTIFICATE_URL;
+  public static final sun.security.ssl.SSLHandshake CERTIFICATE_STATUS;
+  public static final sun.security.ssl.SSLHandshake SUPPLEMENTAL_DATA;
+  public static final sun.security.ssl.SSLHandshake KEY_UPDATE;
+  public static final sun.security.ssl.SSLHandshake MESSAGE_HASH;
+  public static final sun.security.ssl.SSLHandshake NOT_APPLICABLE;
+  final byte id;
+  final java.lang.String name;
+  final java.util.Map$Entry<sun.security.ssl.SSLConsumer, sun.security.ssl.ProtocolVersion[]>[] handshakeConsumers;
+  final java.util.Map$Entry<sun.security.ssl.HandshakeProducer, sun.security.ssl.ProtocolVersion[]>[] handshakeProducers;
+  final java.util.Map$Entry<sun.security.ssl.HandshakeAbsence, sun.security.ssl.ProtocolVersion[]>[] handshakeAbsences;
+  public static sun.security.ssl.SSLHandshake[] values();
+  public static sun.security.ssl.SSLHandshake valueOf(java.lang.String);
+  public void consume(sun.security.ssl.ConnectionContext, java.nio.ByteBuffer) throws java.io.IOException;
+  public byte[] produce(sun.security.ssl.ConnectionContext, sun.security.ssl.SSLHandshake$HandshakeMessage) throws java.io.IOException;
+  public java.lang.String toString();
+  static java.lang.String nameOf(byte);
+  static boolean isKnown(byte);
+  static final void kickstart(sun.security.ssl.HandshakeContext) throws java.io.IOException;
+  static {};
+}

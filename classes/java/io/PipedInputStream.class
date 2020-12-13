@@ -1,0 +1,26 @@
+Compiled from "PipedInputStream.java"
+public class java.io.PipedInputStream extends java.io.InputStream {
+  boolean closedByWriter;
+  volatile boolean closedByReader;
+  boolean connected;
+  java.lang.Thread readSide;
+  java.lang.Thread writeSide;
+  protected static final int PIPE_SIZE;
+  protected byte[] buffer;
+  protected int in;
+  protected int out;
+  static final boolean $assertionsDisabled;
+  public java.io.PipedInputStream(java.io.PipedOutputStream) throws java.io.IOException;
+  public java.io.PipedInputStream(java.io.PipedOutputStream, int) throws java.io.IOException;
+  public java.io.PipedInputStream();
+  public java.io.PipedInputStream(int);
+  public void connect(java.io.PipedOutputStream) throws java.io.IOException;
+  protected synchronized void receive(int) throws java.io.IOException;
+  synchronized void receive(byte[], int, int) throws java.io.IOException;
+  synchronized void receivedLast();
+  public synchronized int read() throws java.io.IOException;
+  public synchronized int read(byte[], int, int) throws java.io.IOException;
+  public synchronized int available() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  static {};
+}

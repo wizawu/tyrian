@@ -1,0 +1,3 @@
+Compiled from "ReservedStackAccess.java"
+public interface jdk.internal.vm.annotation.ReservedStackAccess extends java.lang.annotation.Annotation {
+}

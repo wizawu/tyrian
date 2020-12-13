@@ -1,0 +1,9 @@
+Compiled from "Hashtable.java"
+public class sun.jvm.hotspot.utilities.Hashtable extends sun.jvm.hotspot.utilities.BasicHashtable {
+  protected java.lang.Class getHashtableEntryClass();
+  public long computeHash(sun.jvm.hotspot.oops.Symbol);
+  public int hashToIndex(long);
+  public sun.jvm.hotspot.utilities.Hashtable(sun.jvm.hotspot.debugger.Address);
+  protected static long hashSymbol(byte[]);
+  static {};
+}

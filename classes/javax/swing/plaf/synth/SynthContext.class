@@ -1,0 +1,14 @@
+Compiled from "SynthContext.java"
+public class javax.swing.plaf.synth.SynthContext {
+  static javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent, javax.swing.plaf.synth.SynthStyle, int);
+  static javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent, javax.swing.plaf.synth.Region, javax.swing.plaf.synth.SynthStyle, int);
+  public javax.swing.plaf.synth.SynthContext(javax.swing.JComponent, javax.swing.plaf.synth.Region, javax.swing.plaf.synth.SynthStyle, int);
+  public javax.swing.JComponent getComponent();
+  public javax.swing.plaf.synth.Region getRegion();
+  boolean isSubregion();
+  void setStyle(javax.swing.plaf.synth.SynthStyle);
+  public javax.swing.plaf.synth.SynthStyle getStyle();
+  void setComponentState(int);
+  public int getComponentState();
+  javax.swing.plaf.synth.SynthPainter getPainter();
+}

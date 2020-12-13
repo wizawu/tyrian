@@ -1,0 +1,5 @@
+Compiled from "BootstrapConstructorAccessorImpl.java"
+class jdk.internal.reflect.BootstrapConstructorAccessorImpl extends jdk.internal.reflect.ConstructorAccessorImpl {
+  jdk.internal.reflect.BootstrapConstructorAccessorImpl(java.lang.reflect.Constructor<?>);
+  public java.lang.Object newInstance(java.lang.Object[]) throws java.lang.IllegalArgumentException, java.lang.reflect.InvocationTargetException;
+}

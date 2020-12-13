@@ -1,0 +1,5 @@
+Compiled from "MotifMenuBarUI.java"
+public class com.sun.java.swing.plaf.motif.MotifMenuBarUI extends javax.swing.plaf.basic.BasicMenuBarUI {
+  public com.sun.java.swing.plaf.motif.MotifMenuBarUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+}

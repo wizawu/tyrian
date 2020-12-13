@@ -1,0 +1,5 @@
+Compiled from "AnnotatedTypeVariable.java"
+public interface java.lang.reflect.AnnotatedTypeVariable extends java.lang.reflect.AnnotatedType {
+  public abstract java.lang.reflect.AnnotatedType[] getAnnotatedBounds();
+  public abstract java.lang.reflect.AnnotatedType getAnnotatedOwnerType();
+}

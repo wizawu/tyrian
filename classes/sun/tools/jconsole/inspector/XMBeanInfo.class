@@ -1,0 +1,11 @@
+Compiled from "XMBeanInfo.java"
+public class sun.tools.jconsole.inspector.XMBeanInfo extends javax.swing.JPanel {
+  public sun.tools.jconsole.inspector.XMBeanInfo();
+  public void emptyInfoTable();
+  public void emptyDescTable();
+  public void addMBeanInfo(sun.tools.jconsole.inspector.XMBean, javax.management.MBeanInfo);
+  public void addMBeanAttributeInfo(javax.management.MBeanAttributeInfo);
+  public void addMBeanOperationInfo(javax.management.MBeanOperationInfo);
+  public void addMBeanNotificationInfo(javax.management.MBeanNotificationInfo);
+  static {};
+}

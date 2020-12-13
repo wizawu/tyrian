@@ -1,0 +1,12 @@
+Compiled from "LogLevel.java"
+public final class jdk.jfr.internal.LogLevel extends java.lang.Enum<jdk.jfr.internal.LogLevel> {
+  public static final jdk.jfr.internal.LogLevel TRACE;
+  public static final jdk.jfr.internal.LogLevel DEBUG;
+  public static final jdk.jfr.internal.LogLevel INFO;
+  public static final jdk.jfr.internal.LogLevel WARN;
+  public static final jdk.jfr.internal.LogLevel ERROR;
+  final int level;
+  public static jdk.jfr.internal.LogLevel[] values();
+  public static jdk.jfr.internal.LogLevel valueOf(java.lang.String);
+  static {};
+}

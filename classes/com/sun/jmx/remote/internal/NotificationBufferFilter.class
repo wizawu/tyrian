@@ -1,0 +1,4 @@
+Compiled from "NotificationBufferFilter.java"
+public interface com.sun.jmx.remote.internal.NotificationBufferFilter {
+  public abstract void apply(java.util.List<javax.management.remote.TargetedNotification>, javax.management.ObjectName, javax.management.Notification);
+}

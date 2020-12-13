@@ -1,0 +1,15 @@
+Compiled from "TokenKind.java"
+public final class jdk.nashorn.internal.parser.TokenKind extends java.lang.Enum<jdk.nashorn.internal.parser.TokenKind> {
+  public static final jdk.nashorn.internal.parser.TokenKind SPECIAL;
+  public static final jdk.nashorn.internal.parser.TokenKind UNARY;
+  public static final jdk.nashorn.internal.parser.TokenKind BINARY;
+  public static final jdk.nashorn.internal.parser.TokenKind BRACKET;
+  public static final jdk.nashorn.internal.parser.TokenKind KEYWORD;
+  public static final jdk.nashorn.internal.parser.TokenKind LITERAL;
+  public static final jdk.nashorn.internal.parser.TokenKind IR;
+  public static final jdk.nashorn.internal.parser.TokenKind FUTURE;
+  public static final jdk.nashorn.internal.parser.TokenKind FUTURESTRICT;
+  public static jdk.nashorn.internal.parser.TokenKind[] values();
+  public static jdk.nashorn.internal.parser.TokenKind valueOf(java.lang.String);
+  static {};
+}

@@ -1,0 +1,20 @@
+Compiled from "AttrNSImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.AttrNSImpl extends com.sun.org.apache.xerces.internal.dom.AttrImpl {
+  static final long serialVersionUID;
+  static final java.lang.String xmlnsURI;
+  static final java.lang.String xmlURI;
+  protected java.lang.String namespaceURI;
+  protected java.lang.String localName;
+  public com.sun.org.apache.xerces.internal.dom.AttrNSImpl();
+  protected com.sun.org.apache.xerces.internal.dom.AttrNSImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xerces.internal.dom.AttrNSImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String, java.lang.String, java.lang.String);
+  protected com.sun.org.apache.xerces.internal.dom.AttrNSImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String);
+  void rename(java.lang.String, java.lang.String);
+  public java.lang.String getNamespaceURI();
+  public java.lang.String getPrefix();
+  public void setPrefix(java.lang.String) throws org.w3c.dom.DOMException;
+  public java.lang.String getLocalName();
+  public java.lang.String getTypeName();
+  public boolean isDerivedFrom(java.lang.String, java.lang.String, int);
+  public java.lang.String getTypeNamespace();
+}

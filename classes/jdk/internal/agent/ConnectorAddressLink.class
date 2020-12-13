@@ -1,0 +1,10 @@
+Compiled from "ConnectorAddressLink.java"
+public class jdk.internal.agent.ConnectorAddressLink {
+  public jdk.internal.agent.ConnectorAddressLink();
+  public static void export(java.lang.String);
+  public static void unexportRemote();
+  public static java.lang.String importFrom(int) throws java.io.IOException;
+  public static void exportRemote(java.util.Map<java.lang.String, java.lang.String>);
+  public static java.util.Map<java.lang.String, java.lang.String> importRemoteFrom(int) throws java.io.IOException;
+  static {};
+}

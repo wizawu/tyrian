@@ -1,0 +1,11 @@
+Compiled from "GarbageCollectorExtImpl.java"
+public class com.sun.management.internal.GarbageCollectorExtImpl extends sun.management.GarbageCollectorImpl implements com.sun.management.GarbageCollectorMXBean {
+  public com.sun.management.internal.GarbageCollectorExtImpl(java.lang.String);
+  public com.sun.management.GcInfo getLastGcInfo();
+  public javax.management.MBeanNotificationInfo[] getNotificationInfo();
+  protected void createGCNotification(long, java.lang.String, java.lang.String, java.lang.String, com.sun.management.GcInfo);
+  public synchronized void addNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object);
+  public synchronized void removeNotificationListener(javax.management.NotificationListener) throws javax.management.ListenerNotFoundException;
+  public synchronized void removeNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) throws javax.management.ListenerNotFoundException;
+  static {};
+}

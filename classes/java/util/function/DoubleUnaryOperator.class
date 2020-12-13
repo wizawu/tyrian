@@ -1,0 +1,7 @@
+Compiled from "DoubleUnaryOperator.java"
+public interface java.util.function.DoubleUnaryOperator {
+  public abstract double applyAsDouble(double);
+  public default java.util.function.DoubleUnaryOperator compose(java.util.function.DoubleUnaryOperator);
+  public default java.util.function.DoubleUnaryOperator andThen(java.util.function.DoubleUnaryOperator);
+  public static java.util.function.DoubleUnaryOperator identity();
+}

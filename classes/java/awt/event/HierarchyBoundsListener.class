@@ -1,0 +1,5 @@
+Compiled from "HierarchyBoundsListener.java"
+public interface java.awt.event.HierarchyBoundsListener extends java.util.EventListener {
+  public abstract void ancestorMoved(java.awt.event.HierarchyEvent);
+  public abstract void ancestorResized(java.awt.event.HierarchyEvent);
+}

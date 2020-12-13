@@ -1,0 +1,11 @@
+Compiled from "SummaryTab.java"
+class sun.tools.jconsole.SummaryTab extends sun.tools.jconsole.Tab {
+  sun.tools.jconsole.HTMLPane info;
+  java.lang.StringBuilder buf;
+  public static java.lang.String getTabName();
+  public sun.tools.jconsole.SummaryTab(sun.tools.jconsole.VMPanel);
+  public javax.swing.SwingWorker<?, ?> newSwingWorker();
+  synchronized sun.tools.jconsole.SummaryTab$Result formatSummary();
+  void append(java.lang.String, java.lang.String);
+  sun.tools.jconsole.OverviewPanel[] getOverviewPanels();
+}

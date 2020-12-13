@@ -1,0 +1,15 @@
+Compiled from "WithParam.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.WithParam extends com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction {
+  protected java.lang.String _escapedName;
+  com.sun.org.apache.xalan.internal.xsltc.compiler.WithParam();
+  public void display(int);
+  public java.lang.String getEscapedName();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.QName getName();
+  public void setName(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public void setDoParameterOptimization(boolean);
+  public void parseContents(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public void translateValue(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public void releaseResultTree(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

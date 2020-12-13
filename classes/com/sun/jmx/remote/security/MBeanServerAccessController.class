@@ -1,0 +1,46 @@
+Compiled from "MBeanServerAccessController.java"
+public abstract class com.sun.jmx.remote.security.MBeanServerAccessController implements javax.management.remote.MBeanServerForwarder {
+  public com.sun.jmx.remote.security.MBeanServerAccessController();
+  public javax.management.MBeanServer getMBeanServer();
+  public void setMBeanServer(javax.management.MBeanServer);
+  protected abstract void checkRead();
+  protected abstract void checkWrite();
+  protected void checkCreate(java.lang.String);
+  protected void checkUnregister(javax.management.ObjectName);
+  public void addNotificationListener(javax.management.ObjectName, javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) throws javax.management.InstanceNotFoundException;
+  public void addNotificationListener(javax.management.ObjectName, javax.management.ObjectName, javax.management.NotificationFilter, java.lang.Object) throws javax.management.InstanceNotFoundException;
+  public javax.management.ObjectInstance createMBean(java.lang.String, javax.management.ObjectName) throws javax.management.ReflectionException, javax.management.InstanceAlreadyExistsException, javax.management.MBeanRegistrationException, javax.management.MBeanException, javax.management.NotCompliantMBeanException;
+  public javax.management.ObjectInstance createMBean(java.lang.String, javax.management.ObjectName, java.lang.Object[], java.lang.String[]) throws javax.management.ReflectionException, javax.management.InstanceAlreadyExistsException, javax.management.MBeanRegistrationException, javax.management.MBeanException, javax.management.NotCompliantMBeanException;
+  public javax.management.ObjectInstance createMBean(java.lang.String, javax.management.ObjectName, javax.management.ObjectName) throws javax.management.ReflectionException, javax.management.InstanceAlreadyExistsException, javax.management.MBeanRegistrationException, javax.management.MBeanException, javax.management.NotCompliantMBeanException, javax.management.InstanceNotFoundException;
+  public javax.management.ObjectInstance createMBean(java.lang.String, javax.management.ObjectName, javax.management.ObjectName, java.lang.Object[], java.lang.String[]) throws javax.management.ReflectionException, javax.management.InstanceAlreadyExistsException, javax.management.MBeanRegistrationException, javax.management.MBeanException, javax.management.NotCompliantMBeanException, javax.management.InstanceNotFoundException;
+  public java.io.ObjectInputStream deserialize(javax.management.ObjectName, byte[]) throws javax.management.InstanceNotFoundException, javax.management.OperationsException;
+  public java.io.ObjectInputStream deserialize(java.lang.String, byte[]) throws javax.management.OperationsException, javax.management.ReflectionException;
+  public java.io.ObjectInputStream deserialize(java.lang.String, javax.management.ObjectName, byte[]) throws javax.management.InstanceNotFoundException, javax.management.OperationsException, javax.management.ReflectionException;
+  public java.lang.Object getAttribute(javax.management.ObjectName, java.lang.String) throws javax.management.MBeanException, javax.management.AttributeNotFoundException, javax.management.InstanceNotFoundException, javax.management.ReflectionException;
+  public javax.management.AttributeList getAttributes(javax.management.ObjectName, java.lang.String[]) throws javax.management.InstanceNotFoundException, javax.management.ReflectionException;
+  public java.lang.ClassLoader getClassLoader(javax.management.ObjectName) throws javax.management.InstanceNotFoundException;
+  public java.lang.ClassLoader getClassLoaderFor(javax.management.ObjectName) throws javax.management.InstanceNotFoundException;
+  public javax.management.loading.ClassLoaderRepository getClassLoaderRepository();
+  public java.lang.String getDefaultDomain();
+  public java.lang.String[] getDomains();
+  public java.lang.Integer getMBeanCount();
+  public javax.management.MBeanInfo getMBeanInfo(javax.management.ObjectName) throws javax.management.InstanceNotFoundException, javax.management.IntrospectionException, javax.management.ReflectionException;
+  public javax.management.ObjectInstance getObjectInstance(javax.management.ObjectName) throws javax.management.InstanceNotFoundException;
+  public java.lang.Object instantiate(java.lang.String) throws javax.management.ReflectionException, javax.management.MBeanException;
+  public java.lang.Object instantiate(java.lang.String, java.lang.Object[], java.lang.String[]) throws javax.management.ReflectionException, javax.management.MBeanException;
+  public java.lang.Object instantiate(java.lang.String, javax.management.ObjectName) throws javax.management.ReflectionException, javax.management.MBeanException, javax.management.InstanceNotFoundException;
+  public java.lang.Object instantiate(java.lang.String, javax.management.ObjectName, java.lang.Object[], java.lang.String[]) throws javax.management.ReflectionException, javax.management.MBeanException, javax.management.InstanceNotFoundException;
+  public java.lang.Object invoke(javax.management.ObjectName, java.lang.String, java.lang.Object[], java.lang.String[]) throws javax.management.InstanceNotFoundException, javax.management.MBeanException, javax.management.ReflectionException;
+  public boolean isInstanceOf(javax.management.ObjectName, java.lang.String) throws javax.management.InstanceNotFoundException;
+  public boolean isRegistered(javax.management.ObjectName);
+  public java.util.Set<javax.management.ObjectInstance> queryMBeans(javax.management.ObjectName, javax.management.QueryExp);
+  public java.util.Set<javax.management.ObjectName> queryNames(javax.management.ObjectName, javax.management.QueryExp);
+  public javax.management.ObjectInstance registerMBean(java.lang.Object, javax.management.ObjectName) throws javax.management.InstanceAlreadyExistsException, javax.management.MBeanRegistrationException, javax.management.NotCompliantMBeanException;
+  public void removeNotificationListener(javax.management.ObjectName, javax.management.NotificationListener) throws javax.management.InstanceNotFoundException, javax.management.ListenerNotFoundException;
+  public void removeNotificationListener(javax.management.ObjectName, javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) throws javax.management.InstanceNotFoundException, javax.management.ListenerNotFoundException;
+  public void removeNotificationListener(javax.management.ObjectName, javax.management.ObjectName) throws javax.management.InstanceNotFoundException, javax.management.ListenerNotFoundException;
+  public void removeNotificationListener(javax.management.ObjectName, javax.management.ObjectName, javax.management.NotificationFilter, java.lang.Object) throws javax.management.InstanceNotFoundException, javax.management.ListenerNotFoundException;
+  public void setAttribute(javax.management.ObjectName, javax.management.Attribute) throws javax.management.InstanceNotFoundException, javax.management.AttributeNotFoundException, javax.management.InvalidAttributeValueException, javax.management.MBeanException, javax.management.ReflectionException;
+  public javax.management.AttributeList setAttributes(javax.management.ObjectName, javax.management.AttributeList) throws javax.management.InstanceNotFoundException, javax.management.ReflectionException;
+  public void unregisterMBean(javax.management.ObjectName) throws javax.management.InstanceNotFoundException, javax.management.MBeanRegistrationException;
+}

@@ -1,0 +1,13 @@
+Compiled from "NEWARRAY.java"
+public class com.sun.org.apache.bcel.internal.generic.NEWARRAY extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.AllocationInstruction,com.sun.org.apache.bcel.internal.generic.ExceptionThrower,com.sun.org.apache.bcel.internal.generic.StackProducer {
+  com.sun.org.apache.bcel.internal.generic.NEWARRAY();
+  public com.sun.org.apache.bcel.internal.generic.NEWARRAY(byte);
+  public com.sun.org.apache.bcel.internal.generic.NEWARRAY(com.sun.org.apache.bcel.internal.generic.BasicType);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final byte getTypecode();
+  public final com.sun.org.apache.bcel.internal.generic.Type getType();
+  public java.lang.String toString(boolean);
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

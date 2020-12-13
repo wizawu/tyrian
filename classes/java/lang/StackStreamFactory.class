@@ -1,0 +1,7 @@
+Compiled from "StackStreamFactory.java"
+final class java.lang.StackStreamFactory {
+  static final boolean isDebug;
+  static <T> java.lang.StackStreamFactory$StackFrameTraverser<T> makeStackTraverser(java.lang.StackWalker, java.util.function.Function<? super java.util.stream.Stream<java.lang.StackWalker$StackFrame>, ? extends T>);
+  static java.lang.StackStreamFactory$CallerClassFinder makeCallerFinder(java.lang.StackWalker);
+  static {};
+}

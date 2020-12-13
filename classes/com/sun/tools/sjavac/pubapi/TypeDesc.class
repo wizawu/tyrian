@@ -1,0 +1,10 @@
+Compiled from "TypeDesc.java"
+public abstract class com.sun.tools.sjavac.pubapi.TypeDesc implements java.io.Serializable {
+  javax.lang.model.type.TypeKind typeKind;
+  public com.sun.tools.sjavac.pubapi.TypeDesc(javax.lang.model.type.TypeKind);
+  public static com.sun.tools.sjavac.pubapi.TypeDesc decodeString(java.lang.String);
+  public static java.lang.String encodeAsString(com.sun.tools.sjavac.pubapi.TypeDesc);
+  public static com.sun.tools.sjavac.pubapi.TypeDesc fromType(javax.lang.model.type.TypeMirror);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

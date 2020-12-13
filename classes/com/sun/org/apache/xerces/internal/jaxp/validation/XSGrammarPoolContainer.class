@@ -1,0 +1,9 @@
+Compiled from "XSGrammarPoolContainer.java"
+public interface com.sun.org.apache.xerces.internal.jaxp.validation.XSGrammarPoolContainer {
+  public abstract com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool getGrammarPool();
+  public abstract boolean isFullyComposed();
+  public abstract java.lang.Boolean getFeature(java.lang.String);
+  public abstract void setFeature(java.lang.String, boolean);
+  public abstract java.lang.Object getProperty(java.lang.String);
+  public abstract void setProperty(java.lang.String, java.lang.Object);
+}

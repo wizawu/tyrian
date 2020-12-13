@@ -1,0 +1,16 @@
+Compiled from "XMLLimitAnalyzer.java"
+public final class com.sun.org.apache.xerces.internal.utils.XMLLimitAnalyzer {
+  public com.sun.org.apache.xerces.internal.utils.XMLLimitAnalyzer();
+  public void addValue(com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$Limit, java.lang.String, int);
+  public void addValue(int, java.lang.String, int);
+  public int getValue(com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$Limit);
+  public int getValue(int);
+  public int getTotalValue(com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$Limit);
+  public int getTotalValue(int);
+  public int getValueByIndex(int);
+  public void startEntity(java.lang.String);
+  public boolean isTracking(java.lang.String);
+  public void endEntity(com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$Limit, java.lang.String);
+  public void reset(com.sun.org.apache.xerces.internal.utils.XMLSecurityManager$Limit);
+  public void debugPrint(com.sun.org.apache.xerces.internal.utils.XMLSecurityManager);
+}

@@ -1,0 +1,27 @@
+Compiled from "TimeUnit.java"
+public final class java.util.concurrent.TimeUnit extends java.lang.Enum<java.util.concurrent.TimeUnit> {
+  public static final java.util.concurrent.TimeUnit NANOSECONDS;
+  public static final java.util.concurrent.TimeUnit MICROSECONDS;
+  public static final java.util.concurrent.TimeUnit MILLISECONDS;
+  public static final java.util.concurrent.TimeUnit SECONDS;
+  public static final java.util.concurrent.TimeUnit MINUTES;
+  public static final java.util.concurrent.TimeUnit HOURS;
+  public static final java.util.concurrent.TimeUnit DAYS;
+  public static java.util.concurrent.TimeUnit[] values();
+  public static java.util.concurrent.TimeUnit valueOf(java.lang.String);
+  public long convert(long, java.util.concurrent.TimeUnit);
+  public long convert(java.time.Duration);
+  public long toNanos(long);
+  public long toMicros(long);
+  public long toMillis(long);
+  public long toSeconds(long);
+  public long toMinutes(long);
+  public long toHours(long);
+  public long toDays(long);
+  public void timedWait(java.lang.Object, long) throws java.lang.InterruptedException;
+  public void timedJoin(java.lang.Thread, long) throws java.lang.InterruptedException;
+  public void sleep(long) throws java.lang.InterruptedException;
+  public java.time.temporal.ChronoUnit toChronoUnit();
+  public static java.util.concurrent.TimeUnit of(java.time.temporal.ChronoUnit);
+  static {};
+}

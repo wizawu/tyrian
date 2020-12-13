@@ -1,0 +1,10 @@
+Compiled from "PsuedoNames.java"
+public class com.sun.org.apache.xpath.internal.compiler.PsuedoNames {
+  public static final java.lang.String PSEUDONAME_ANY;
+  public static final java.lang.String PSEUDONAME_ROOT;
+  public static final java.lang.String PSEUDONAME_TEXT;
+  public static final java.lang.String PSEUDONAME_COMMENT;
+  public static final java.lang.String PSEUDONAME_PI;
+  public static final java.lang.String PSEUDONAME_OTHER;
+  public com.sun.org.apache.xpath.internal.compiler.PsuedoNames();
+}

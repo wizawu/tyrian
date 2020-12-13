@@ -1,0 +1,9 @@
+Compiled from "RegexMatcher.java"
+public class jdk.internal.joptsimple.util.RegexMatcher implements jdk.internal.joptsimple.ValueConverter<java.lang.String> {
+  public jdk.internal.joptsimple.util.RegexMatcher(java.lang.String, int);
+  public static jdk.internal.joptsimple.ValueConverter<java.lang.String> regex(java.lang.String);
+  public java.lang.String convert(java.lang.String);
+  public java.lang.Class<java.lang.String> valueType();
+  public java.lang.String valuePattern();
+  public java.lang.Object convert(java.lang.String);
+}

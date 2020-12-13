@@ -1,0 +1,3 @@
+Compiled from "AlgorithmParameterSpec.java"
+public interface java.security.spec.AlgorithmParameterSpec {
+}

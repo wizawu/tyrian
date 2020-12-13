@@ -1,0 +1,9 @@
+Compiled from "BasicCFrame.java"
+public abstract class sun.jvm.hotspot.debugger.cdbg.basic.BasicCFrame implements sun.jvm.hotspot.debugger.cdbg.CFrame {
+  protected sun.jvm.hotspot.debugger.cdbg.basic.BasicCFrame(sun.jvm.hotspot.debugger.cdbg.CDebugger);
+  protected sun.jvm.hotspot.debugger.cdbg.CDebugger dbg();
+  public sun.jvm.hotspot.debugger.cdbg.LoadObject loadObjectForPC();
+  public sun.jvm.hotspot.debugger.cdbg.BlockSym blockForPC();
+  public sun.jvm.hotspot.debugger.cdbg.ClosestSymbol closestSymbolToPC();
+  public void iterateLocals(sun.jvm.hotspot.debugger.cdbg.ObjectVisitor);
+}

@@ -1,0 +1,5 @@
+Compiled from "InvalidRoleValueException.java"
+public class javax.management.relation.InvalidRoleValueException extends javax.management.relation.RelationException {
+  public javax.management.relation.InvalidRoleValueException();
+  public javax.management.relation.InvalidRoleValueException(java.lang.String);
+}

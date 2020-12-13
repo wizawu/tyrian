@@ -1,0 +1,17 @@
+Compiled from "SunWritableRaster.java"
+public class sun.awt.image.SunWritableRaster extends java.awt.image.WritableRaster {
+  public static void setDataStealer(sun.awt.image.SunWritableRaster$DataStealer);
+  public static byte[] stealData(java.awt.image.DataBufferByte, int);
+  public static short[] stealData(java.awt.image.DataBufferUShort, int);
+  public static int[] stealData(java.awt.image.DataBufferInt, int);
+  public static sun.java2d.StateTrackableDelegate stealTrackable(java.awt.image.DataBuffer);
+  public static void setTrackable(java.awt.image.DataBuffer, sun.java2d.StateTrackableDelegate);
+  public static void makeTrackable(java.awt.image.DataBuffer);
+  public static void markDirty(java.awt.image.DataBuffer);
+  public static void markDirty(java.awt.image.WritableRaster);
+  public static void markDirty(java.awt.Image);
+  public sun.awt.image.SunWritableRaster(java.awt.image.SampleModel, java.awt.Point);
+  public sun.awt.image.SunWritableRaster(java.awt.image.SampleModel, java.awt.image.DataBuffer, java.awt.Point);
+  public sun.awt.image.SunWritableRaster(java.awt.image.SampleModel, java.awt.image.DataBuffer, java.awt.Rectangle, java.awt.Point, java.awt.image.WritableRaster);
+  public final void markDirty();
+}

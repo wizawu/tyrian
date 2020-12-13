@@ -1,0 +1,22 @@
+Compiled from "ImageReadParam.java"
+public class javax.imageio.ImageReadParam extends javax.imageio.IIOParam {
+  protected boolean canSetSourceRenderSize;
+  protected java.awt.Dimension sourceRenderSize;
+  protected java.awt.image.BufferedImage destination;
+  protected int[] destinationBands;
+  protected int minProgressivePass;
+  protected int numProgressivePasses;
+  public javax.imageio.ImageReadParam();
+  public void setDestinationType(javax.imageio.ImageTypeSpecifier);
+  public void setDestination(java.awt.image.BufferedImage);
+  public java.awt.image.BufferedImage getDestination();
+  public void setDestinationBands(int[]);
+  public int[] getDestinationBands();
+  public boolean canSetSourceRenderSize();
+  public void setSourceRenderSize(java.awt.Dimension) throws java.lang.UnsupportedOperationException;
+  public java.awt.Dimension getSourceRenderSize();
+  public void setSourceProgressivePasses(int, int);
+  public int getSourceMinProgressivePass();
+  public int getSourceMaxProgressivePass();
+  public int getSourceNumProgressivePasses();
+}

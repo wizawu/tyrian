@@ -1,0 +1,10 @@
+Compiled from "CPEntries.java"
+class com.sun.tools.jdeprscan.scan.CPEntries {
+  final java.util.List<com.sun.tools.classfile.ConstantPool$CONSTANT_Class_info> classes;
+  final java.util.List<com.sun.tools.classfile.ConstantPool$CONSTANT_Fieldref_info> fieldRefs;
+  final java.util.List<com.sun.tools.classfile.ConstantPool$CONSTANT_Methodref_info> methodRefs;
+  final java.util.List<com.sun.tools.classfile.ConstantPool$CONSTANT_InterfaceMethodref_info> intfMethodRefs;
+  com.sun.tools.jdeprscan.scan.CPEntries();
+  public static com.sun.tools.jdeprscan.scan.CPEntries loadFrom(com.sun.tools.classfile.ClassFile);
+  public java.lang.String toString();
+}

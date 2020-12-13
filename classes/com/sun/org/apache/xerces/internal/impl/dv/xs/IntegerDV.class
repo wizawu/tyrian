@@ -1,0 +1,5 @@
+Compiled from "IntegerDV.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.xs.IntegerDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.DecimalDV {
+  public com.sun.org.apache.xerces.internal.impl.dv.xs.IntegerDV();
+  public java.lang.Object getActualValue(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
+}

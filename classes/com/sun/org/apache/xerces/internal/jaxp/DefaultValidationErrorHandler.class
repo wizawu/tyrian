@@ -1,0 +1,6 @@
+Compiled from "DefaultValidationErrorHandler.java"
+class com.sun.org.apache.xerces.internal.jaxp.DefaultValidationErrorHandler extends org.xml.sax.helpers.DefaultHandler {
+  public com.sun.org.apache.xerces.internal.jaxp.DefaultValidationErrorHandler(java.util.Locale);
+  public void error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  static {};
+}

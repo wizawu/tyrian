@@ -1,0 +1,4 @@
+Compiled from "ApacheData.java"
+public interface org.jcp.xml.dsig.internal.dom.ApacheData extends javax.xml.crypto.Data {
+  public abstract com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput getXMLSignatureInput();
+}

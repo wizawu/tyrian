@@ -1,0 +1,5 @@
+Compiled from "AbsentInformationException.java"
+public class com.sun.jdi.AbsentInformationException extends java.lang.Exception {
+  public com.sun.jdi.AbsentInformationException();
+  public com.sun.jdi.AbsentInformationException(java.lang.String);
+}

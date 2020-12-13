@@ -1,0 +1,5 @@
+Compiled from "NoSuchProviderException.java"
+public class java.security.NoSuchProviderException extends java.security.GeneralSecurityException {
+  public java.security.NoSuchProviderException();
+  public java.security.NoSuchProviderException(java.lang.String);
+}

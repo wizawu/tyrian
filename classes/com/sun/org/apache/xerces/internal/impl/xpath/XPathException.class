@@ -1,0 +1,7 @@
+Compiled from "XPathException.java"
+public class com.sun.org.apache.xerces.internal.impl.xpath.XPathException extends java.lang.Exception {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xerces.internal.impl.xpath.XPathException();
+  public com.sun.org.apache.xerces.internal.impl.xpath.XPathException(java.lang.String);
+  public java.lang.String getKey();
+}

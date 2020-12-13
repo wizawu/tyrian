@@ -1,0 +1,10 @@
+Compiled from "StartTlsResponseImpl.java"
+public final class com.sun.jndi.ldap.ext.StartTlsResponseImpl extends javax.naming.ldap.StartTlsResponse {
+  public com.sun.jndi.ldap.ext.StartTlsResponseImpl();
+  public void setEnabledCipherSuites(java.lang.String[]);
+  public void setHostnameVerifier(javax.net.ssl.HostnameVerifier);
+  public javax.net.ssl.SSLSession negotiate() throws java.io.IOException;
+  public javax.net.ssl.SSLSession negotiate(javax.net.ssl.SSLSocketFactory) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public void setConnection(com.sun.jndi.ldap.Connection, java.lang.String);
+}

@@ -1,0 +1,6 @@
+Compiled from "Tool.java"
+public interface javax.tools.Tool {
+  public default java.lang.String name();
+  public abstract int run(java.io.InputStream, java.io.OutputStream, java.io.OutputStream, java.lang.String...);
+  public abstract java.util.Set<javax.lang.model.SourceVersion> getSourceVersions();
+}

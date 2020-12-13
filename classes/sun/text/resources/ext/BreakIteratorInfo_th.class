@@ -1,0 +1,5 @@
+Compiled from "BreakIteratorInfo_th.java"
+public class sun.text.resources.ext.BreakIteratorInfo_th extends java.util.ListResourceBundle {
+  public sun.text.resources.ext.BreakIteratorInfo_th();
+  protected final java.lang.Object[][] getContents();
+}

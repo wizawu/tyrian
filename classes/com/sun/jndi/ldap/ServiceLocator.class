@@ -1,0 +1,7 @@
+Compiled from "ServiceLocator.java"
+class com.sun.jndi.ldap.ServiceLocator {
+  static java.lang.String mapDnToDomainName(java.lang.String) throws javax.naming.InvalidNameException;
+  static java.lang.String[] getLdapService(java.lang.String, java.util.Map<?, ?>);
+  static java.lang.String[] getLdapService(java.lang.String, java.util.Hashtable<?, ?>);
+  static {};
+}

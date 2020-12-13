@@ -1,0 +1,24 @@
+Compiled from "Module.java"
+public class com.sun.tools.sjavac.Module implements java.lang.Comparable<com.sun.tools.sjavac.Module> {
+  public com.sun.tools.sjavac.Module(java.lang.String, java.lang.String);
+  public java.lang.String name();
+  public java.lang.String dirname();
+  public java.util.Map<java.lang.String, com.sun.tools.sjavac.Package> packages();
+  public java.util.Map<java.lang.String, com.sun.tools.sjavac.Source> sources();
+  public java.util.Map<java.lang.String, java.io.File> artifacts();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public int compareTo(com.sun.tools.sjavac.Module);
+  public void save(java.lang.StringBuilder);
+  public static com.sun.tools.sjavac.Module load(java.lang.String);
+  public static void saveModules(java.util.Map<java.lang.String, com.sun.tools.sjavac.Module>, java.lang.StringBuilder);
+  public void addPackage(com.sun.tools.sjavac.Package);
+  public com.sun.tools.sjavac.Package lookupPackage(java.lang.String);
+  public void addSource(java.lang.String, com.sun.tools.sjavac.Source);
+  public com.sun.tools.sjavac.Source lookupSource(java.lang.String);
+  public void addArtifacts(java.lang.String, java.util.Set<java.net.URI>);
+  public void setDependencies(java.lang.String, java.util.Map<java.lang.String, java.util.Set<java.lang.String>>, boolean);
+  public void setPubapi(java.lang.String, com.sun.tools.sjavac.pubapi.PubApi);
+  public boolean hasPubapiChanged(java.lang.String, com.sun.tools.sjavac.pubapi.PubApi);
+  public int compareTo(java.lang.Object);
+}

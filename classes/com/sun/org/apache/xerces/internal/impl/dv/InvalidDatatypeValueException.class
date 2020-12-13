@@ -1,0 +1,5 @@
+Compiled from "InvalidDatatypeValueException.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException extends com.sun.org.apache.xerces.internal.impl.dv.DatatypeException {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException(java.lang.String, java.lang.Object[]);
+}

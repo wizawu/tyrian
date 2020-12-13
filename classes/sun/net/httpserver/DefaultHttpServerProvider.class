@@ -1,0 +1,6 @@
+Compiled from "DefaultHttpServerProvider.java"
+public class sun.net.httpserver.DefaultHttpServerProvider extends com.sun.net.httpserver.spi.HttpServerProvider {
+  public sun.net.httpserver.DefaultHttpServerProvider();
+  public com.sun.net.httpserver.HttpServer createHttpServer(java.net.InetSocketAddress, int) throws java.io.IOException;
+  public com.sun.net.httpserver.HttpsServer createHttpsServer(java.net.InetSocketAddress, int) throws java.io.IOException;
+}

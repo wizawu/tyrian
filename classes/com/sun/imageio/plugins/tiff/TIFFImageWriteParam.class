@@ -1,0 +1,4 @@
+Compiled from "TIFFImageWriteParam.java"
+public class com.sun.imageio.plugins.tiff.TIFFImageWriteParam extends javax.imageio.ImageWriteParam {
+  public com.sun.imageio.plugins.tiff.TIFFImageWriteParam(java.util.Locale);
+}

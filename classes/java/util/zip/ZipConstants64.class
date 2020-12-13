@@ -1,0 +1,35 @@
+Compiled from "ZipConstants64.java"
+class java.util.zip.ZipConstants64 {
+  static final long ZIP64_ENDSIG;
+  static final long ZIP64_LOCSIG;
+  static final int ZIP64_ENDHDR;
+  static final int ZIP64_LOCHDR;
+  static final int ZIP64_EXTHDR;
+  static final int ZIP64_EXTID;
+  static final int ZIP64_MAGICCOUNT;
+  static final long ZIP64_MAGICVAL;
+  static final int ZIP64_ENDLEN;
+  static final int ZIP64_ENDVEM;
+  static final int ZIP64_ENDVER;
+  static final int ZIP64_ENDNMD;
+  static final int ZIP64_ENDDSK;
+  static final int ZIP64_ENDTOD;
+  static final int ZIP64_ENDTOT;
+  static final int ZIP64_ENDSIZ;
+  static final int ZIP64_ENDOFF;
+  static final int ZIP64_ENDEXT;
+  static final int ZIP64_LOCDSK;
+  static final int ZIP64_LOCOFF;
+  static final int ZIP64_LOCTOT;
+  static final int ZIP64_EXTCRC;
+  static final int ZIP64_EXTSIZ;
+  static final int ZIP64_EXTLEN;
+  static final int USE_UTF8;
+  static final int EXTID_ZIP64;
+  static final int EXTID_NTFS;
+  static final int EXTID_UNIX;
+  static final int EXTID_EXTT;
+  static final int EXTT_FLAG_LMT;
+  static final int EXTT_FLAG_LAT;
+  static final int EXTT_FLAT_CT;
+}

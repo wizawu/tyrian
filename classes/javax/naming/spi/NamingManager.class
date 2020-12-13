@@ -1,0 +1,20 @@
+Compiled from "NamingManager.java"
+public class javax.naming.spi.NamingManager {
+  static final com.sun.naming.internal.VersionHelper helper;
+  public static final java.lang.String CPE;
+  javax.naming.spi.NamingManager();
+  public static synchronized void setObjectFactoryBuilder(javax.naming.spi.ObjectFactoryBuilder) throws javax.naming.NamingException;
+  static synchronized javax.naming.spi.ObjectFactoryBuilder getObjectFactoryBuilder();
+  static javax.naming.spi.ObjectFactory getObjectFactoryFromReference(javax.naming.Reference, java.lang.String) throws java.lang.IllegalAccessException, java.lang.InstantiationException, java.net.MalformedURLException;
+  public static java.lang.Object getObjectInstance(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws java.lang.Exception;
+  static java.lang.Object processURLAddrs(javax.naming.Reference, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  static javax.naming.Context getContext(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  static javax.naming.spi.Resolver getResolver(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  public static javax.naming.Context getURLContext(java.lang.String, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  public static javax.naming.Context getInitialContext(java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  public static synchronized void setInitialContextFactoryBuilder(javax.naming.spi.InitialContextFactoryBuilder) throws javax.naming.NamingException;
+  public static boolean hasInitialContextFactoryBuilder();
+  public static javax.naming.Context getContinuationContext(javax.naming.CannotProceedException) throws javax.naming.NamingException;
+  public static java.lang.Object getStateToBind(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  static {};
+}

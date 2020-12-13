@@ -1,0 +1,9 @@
+Compiled from "PersistentStorage.java"
+interface jdk.internal.jshell.tool.PersistentStorage {
+  public abstract void clear();
+  public abstract java.lang.String[] keys();
+  public abstract java.lang.String get(java.lang.String);
+  public abstract void put(java.lang.String, java.lang.String);
+  public abstract void remove(java.lang.String);
+  public abstract void flush();
+}

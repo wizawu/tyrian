@@ -1,0 +1,5 @@
+Compiled from "TransformStateSetter.java"
+public interface com.sun.org.apache.xml.internal.serializer.TransformStateSetter {
+  public abstract void setCurrentNode(org.w3c.dom.Node);
+  public abstract void resetState(javax.xml.transform.Transformer);
+}

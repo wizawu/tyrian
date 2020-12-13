@@ -1,0 +1,23 @@
+Compiled from "ConstructorWriterImpl.java"
+public class jdk.javadoc.internal.doclets.formats.html.ConstructorWriterImpl extends jdk.javadoc.internal.doclets.formats.html.AbstractExecutableMemberWriter implements jdk.javadoc.internal.doclets.toolkit.ConstructorWriter,jdk.javadoc.internal.doclets.toolkit.MemberSummaryWriter {
+  public jdk.javadoc.internal.doclets.formats.html.ConstructorWriterImpl(jdk.javadoc.internal.doclets.formats.html.SubWriterHolderWriter, javax.lang.model.element.TypeElement);
+  public jdk.javadoc.internal.doclets.formats.html.ConstructorWriterImpl(jdk.javadoc.internal.doclets.formats.html.SubWriterHolderWriter);
+  public jdk.javadoc.internal.doclets.toolkit.Content getMemberSummaryHeader(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addMemberTree(jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.toolkit.Content getConstructorDetailsTreeHeader(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.toolkit.Content getConstructorDocTreeHeader(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.toolkit.Content getSignature(javax.lang.model.element.ExecutableElement);
+  public void addDeprecated(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addComments(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addTags(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.toolkit.Content getConstructorDetails(jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.toolkit.Content getConstructorDoc(jdk.javadoc.internal.doclets.toolkit.Content, boolean);
+  public void setFoundNonPubConstructor(boolean);
+  public void addSummaryLabel(jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.formats.html.markup.TableHeader getSummaryTableHeader(javax.lang.model.element.Element);
+  protected jdk.javadoc.internal.doclets.formats.html.markup.Table createSummaryTable();
+  public void addSummaryAnchor(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addInheritedSummaryAnchor(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addInheritedSummaryLabel(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addSummaryType(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+}

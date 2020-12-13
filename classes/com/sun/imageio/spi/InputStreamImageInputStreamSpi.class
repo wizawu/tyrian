@@ -1,0 +1,9 @@
+Compiled from "InputStreamImageInputStreamSpi.java"
+public class com.sun.imageio.spi.InputStreamImageInputStreamSpi extends javax.imageio.spi.ImageInputStreamSpi {
+  public com.sun.imageio.spi.InputStreamImageInputStreamSpi();
+  public java.lang.String getDescription(java.util.Locale);
+  public boolean canUseCacheFile();
+  public boolean needsCacheFile();
+  public javax.imageio.stream.ImageInputStream createInputStreamInstance(java.lang.Object, boolean, java.io.File) throws java.io.IOException;
+  static {};
+}

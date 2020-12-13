@@ -1,0 +1,18 @@
+Compiled from "DnDEventMulticaster.java"
+class java.awt.dnd.DnDEventMulticaster extends java.awt.AWTEventMulticaster implements java.awt.dnd.DragSourceListener,java.awt.dnd.DragSourceMotionListener {
+  protected java.awt.dnd.DnDEventMulticaster(java.util.EventListener, java.util.EventListener);
+  public void dragEnter(java.awt.dnd.DragSourceDragEvent);
+  public void dragOver(java.awt.dnd.DragSourceDragEvent);
+  public void dropActionChanged(java.awt.dnd.DragSourceDragEvent);
+  public void dragExit(java.awt.dnd.DragSourceEvent);
+  public void dragDropEnd(java.awt.dnd.DragSourceDropEvent);
+  public void dragMouseMoved(java.awt.dnd.DragSourceDragEvent);
+  public static java.awt.dnd.DragSourceListener add(java.awt.dnd.DragSourceListener, java.awt.dnd.DragSourceListener);
+  public static java.awt.dnd.DragSourceMotionListener add(java.awt.dnd.DragSourceMotionListener, java.awt.dnd.DragSourceMotionListener);
+  public static java.awt.dnd.DragSourceListener remove(java.awt.dnd.DragSourceListener, java.awt.dnd.DragSourceListener);
+  public static java.awt.dnd.DragSourceMotionListener remove(java.awt.dnd.DragSourceMotionListener, java.awt.dnd.DragSourceMotionListener);
+  protected static java.util.EventListener addInternal(java.util.EventListener, java.util.EventListener);
+  protected java.util.EventListener remove(java.util.EventListener);
+  protected static java.util.EventListener removeInternal(java.util.EventListener, java.util.EventListener);
+  protected static void save(java.io.ObjectOutputStream, java.lang.String, java.util.EventListener) throws java.io.IOException;
+}

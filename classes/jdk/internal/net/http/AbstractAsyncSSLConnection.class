@@ -1,0 +1,13 @@
+Compiled from "AbstractAsyncSSLConnection.java"
+abstract class jdk.internal.net.http.AbstractAsyncSSLConnection extends jdk.internal.net.http.HttpConnection {
+  protected final javax.net.ssl.SSLEngine engine;
+  protected final java.lang.String serverName;
+  protected final javax.net.ssl.SSLParameters sslParameters;
+  jdk.internal.net.http.AbstractAsyncSSLConnection(java.net.InetSocketAddress, jdk.internal.net.http.HttpClientImpl, jdk.internal.net.http.common.Utils$ServerName, int, java.lang.String[]);
+  abstract jdk.internal.net.http.common.SSLTube getConnectionFlow();
+  final java.util.concurrent.CompletableFuture<java.lang.String> getALPN();
+  final javax.net.ssl.SSLEngine getEngine();
+  final boolean isSecure();
+  jdk.internal.net.http.common.FlowTube getConnectionFlow();
+  static {};
+}

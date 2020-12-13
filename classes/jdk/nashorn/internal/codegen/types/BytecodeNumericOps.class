@@ -1,0 +1,9 @@
+Compiled from "BytecodeNumericOps.java"
+interface jdk.nashorn.internal.codegen.types.BytecodeNumericOps {
+  public abstract jdk.nashorn.internal.codegen.types.Type neg(jdk.internal.org.objectweb.asm.MethodVisitor, int);
+  public abstract jdk.nashorn.internal.codegen.types.Type sub(jdk.internal.org.objectweb.asm.MethodVisitor, int);
+  public abstract jdk.nashorn.internal.codegen.types.Type mul(jdk.internal.org.objectweb.asm.MethodVisitor, int);
+  public abstract jdk.nashorn.internal.codegen.types.Type div(jdk.internal.org.objectweb.asm.MethodVisitor, int);
+  public abstract jdk.nashorn.internal.codegen.types.Type rem(jdk.internal.org.objectweb.asm.MethodVisitor, int);
+  public abstract jdk.nashorn.internal.codegen.types.Type cmp(jdk.internal.org.objectweb.asm.MethodVisitor, boolean);
+}

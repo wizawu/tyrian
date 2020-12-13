@@ -1,0 +1,7 @@
+Compiled from "DTDHandler.java"
+public interface jdk.internal.org.xml.sax.DTDHandler {
+  public abstract void notationDecl(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void unparsedEntityDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public default void startDTD(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public default void startInternalSub() throws jdk.internal.org.xml.sax.SAXException;
+}

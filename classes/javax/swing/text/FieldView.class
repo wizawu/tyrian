@@ -1,0 +1,15 @@
+Compiled from "FieldView.java"
+public class javax.swing.text.FieldView extends javax.swing.text.PlainView {
+  public javax.swing.text.FieldView(javax.swing.text.Element);
+  protected java.awt.FontMetrics getFontMetrics();
+  protected java.awt.Shape adjustAllocation(java.awt.Shape);
+  void updateVisibilityModel();
+  public void paint(java.awt.Graphics, java.awt.Shape);
+  java.awt.Shape adjustPaintRegion(java.awt.Shape);
+  public float getPreferredSpan(int);
+  public int getResizeWeight(int);
+  public java.awt.Shape modelToView(int, java.awt.Shape, javax.swing.text.Position$Bias) throws javax.swing.text.BadLocationException;
+  public int viewToModel(float, float, java.awt.Shape, javax.swing.text.Position$Bias[]);
+  public void insertUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  public void removeUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+}

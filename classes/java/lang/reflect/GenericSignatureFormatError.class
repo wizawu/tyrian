@@ -1,0 +1,5 @@
+Compiled from "GenericSignatureFormatError.java"
+public class java.lang.reflect.GenericSignatureFormatError extends java.lang.ClassFormatError {
+  public java.lang.reflect.GenericSignatureFormatError();
+  public java.lang.reflect.GenericSignatureFormatError(java.lang.String);
+}

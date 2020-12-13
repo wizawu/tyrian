@@ -1,0 +1,5 @@
+Compiled from "ResultTypeFinder.java"
+public class sun.jvm.hotspot.runtime.ResultTypeFinder extends sun.jvm.hotspot.runtime.SignatureInfo {
+  protected void set(int, int);
+  public sun.jvm.hotspot.runtime.ResultTypeFinder(sun.jvm.hotspot.oops.Symbol);
+}

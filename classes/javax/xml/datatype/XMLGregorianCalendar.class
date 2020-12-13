@@ -1,0 +1,43 @@
+Compiled from "XMLGregorianCalendar.java"
+public abstract class javax.xml.datatype.XMLGregorianCalendar implements java.lang.Cloneable {
+  public javax.xml.datatype.XMLGregorianCalendar();
+  public abstract void clear();
+  public abstract void reset();
+  public abstract void setYear(java.math.BigInteger);
+  public abstract void setYear(int);
+  public abstract void setMonth(int);
+  public abstract void setDay(int);
+  public abstract void setTimezone(int);
+  public void setTime(int, int, int);
+  public abstract void setHour(int);
+  public abstract void setMinute(int);
+  public abstract void setSecond(int);
+  public abstract void setMillisecond(int);
+  public abstract void setFractionalSecond(java.math.BigDecimal);
+  public void setTime(int, int, int, java.math.BigDecimal);
+  public void setTime(int, int, int, int);
+  public abstract java.math.BigInteger getEon();
+  public abstract int getYear();
+  public abstract java.math.BigInteger getEonAndYear();
+  public abstract int getMonth();
+  public abstract int getDay();
+  public abstract int getTimezone();
+  public abstract int getHour();
+  public abstract int getMinute();
+  public abstract int getSecond();
+  public int getMillisecond();
+  public abstract java.math.BigDecimal getFractionalSecond();
+  public abstract int compare(javax.xml.datatype.XMLGregorianCalendar);
+  public abstract javax.xml.datatype.XMLGregorianCalendar normalize();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public abstract java.lang.String toXMLFormat();
+  public abstract javax.xml.namespace.QName getXMLSchemaType();
+  public java.lang.String toString();
+  public abstract boolean isValid();
+  public abstract void add(javax.xml.datatype.Duration);
+  public abstract java.util.GregorianCalendar toGregorianCalendar();
+  public abstract java.util.GregorianCalendar toGregorianCalendar(java.util.TimeZone, java.util.Locale, javax.xml.datatype.XMLGregorianCalendar);
+  public abstract java.util.TimeZone getTimeZone(int);
+  public abstract java.lang.Object clone();
+}

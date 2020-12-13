@@ -1,0 +1,4 @@
+Compiled from "Grammar.java"
+public interface com.sun.org.apache.xerces.internal.xni.grammars.Grammar {
+  public abstract com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription getGrammarDescription();
+}

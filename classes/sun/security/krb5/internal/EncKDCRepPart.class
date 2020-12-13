@@ -1,0 +1,22 @@
+Compiled from "EncKDCRepPart.java"
+public class sun.security.krb5.internal.EncKDCRepPart {
+  public sun.security.krb5.EncryptionKey key;
+  public sun.security.krb5.internal.LastReq lastReq;
+  public int nonce;
+  public sun.security.krb5.internal.KerberosTime keyExpiration;
+  public sun.security.krb5.internal.TicketFlags flags;
+  public sun.security.krb5.internal.KerberosTime authtime;
+  public sun.security.krb5.internal.KerberosTime starttime;
+  public sun.security.krb5.internal.KerberosTime endtime;
+  public sun.security.krb5.internal.KerberosTime renewTill;
+  public sun.security.krb5.PrincipalName sname;
+  public sun.security.krb5.internal.HostAddresses caddr;
+  public sun.security.krb5.internal.PAData[] pAData;
+  public int msgType;
+  public sun.security.krb5.internal.EncKDCRepPart(sun.security.krb5.EncryptionKey, sun.security.krb5.internal.LastReq, int, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.TicketFlags, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.PrincipalName, sun.security.krb5.internal.HostAddresses, sun.security.krb5.internal.PAData[], int);
+  public sun.security.krb5.internal.EncKDCRepPart();
+  public sun.security.krb5.internal.EncKDCRepPart(byte[], int) throws sun.security.krb5.Asn1Exception, java.io.IOException, sun.security.krb5.RealmException;
+  public sun.security.krb5.internal.EncKDCRepPart(sun.security.util.DerValue, int) throws sun.security.krb5.Asn1Exception, java.io.IOException, sun.security.krb5.RealmException;
+  protected void init(sun.security.util.DerValue, int) throws sun.security.krb5.Asn1Exception, java.io.IOException, sun.security.krb5.RealmException;
+  public byte[] asn1Encode(int) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+}

@@ -1,0 +1,6 @@
+Compiled from "PopupMenuListener.java"
+public interface javax.swing.event.PopupMenuListener extends java.util.EventListener {
+  public abstract void popupMenuWillBecomeVisible(javax.swing.event.PopupMenuEvent);
+  public abstract void popupMenuWillBecomeInvisible(javax.swing.event.PopupMenuEvent);
+  public abstract void popupMenuCanceled(javax.swing.event.PopupMenuEvent);
+}

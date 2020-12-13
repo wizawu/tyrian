@@ -1,0 +1,4 @@
+Compiled from "ExpressionEvaluator.java"
+interface sun.tools.jstat.ExpressionEvaluator {
+  public abstract java.lang.Object evaluate(sun.tools.jstat.Expression) throws sun.jvmstat.monitor.MonitorException;
+}

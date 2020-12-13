@@ -1,0 +1,15 @@
+Compiled from "AbstractDOMSignatureMethod.java"
+abstract class org.jcp.xml.dsig.internal.dom.AbstractDOMSignatureMethod extends org.jcp.xml.dsig.internal.dom.DOMStructure implements javax.xml.crypto.dsig.SignatureMethod {
+  org.jcp.xml.dsig.internal.dom.AbstractDOMSignatureMethod();
+  abstract boolean verify(java.security.Key, javax.xml.crypto.dsig.SignedInfo, byte[], javax.xml.crypto.dsig.XMLValidateContext) throws java.security.InvalidKeyException, java.security.SignatureException, javax.xml.crypto.dsig.XMLSignatureException;
+  abstract byte[] sign(java.security.Key, javax.xml.crypto.dsig.SignedInfo, javax.xml.crypto.dsig.XMLSignContext) throws java.security.InvalidKeyException, javax.xml.crypto.dsig.XMLSignatureException;
+  abstract java.lang.String getJCAAlgorithm();
+  abstract org.jcp.xml.dsig.internal.dom.AbstractDOMSignatureMethod$Type getAlgorithmType();
+  public void marshal(org.w3c.dom.Node, java.lang.String, javax.xml.crypto.dom.DOMCryptoContext) throws javax.xml.crypto.MarshalException;
+  void marshalParams(org.w3c.dom.Element, java.lang.String) throws javax.xml.crypto.MarshalException;
+  javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec unmarshalParams(org.w3c.dom.Element) throws javax.xml.crypto.MarshalException;
+  void checkParams(javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec) throws java.security.InvalidAlgorithmParameterException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  boolean paramsEqual(java.security.spec.AlgorithmParameterSpec);
+}

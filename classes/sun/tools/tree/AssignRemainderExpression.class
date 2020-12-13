@@ -1,0 +1,5 @@
+Compiled from "AssignRemainderExpression.java"
+public class sun.tools.tree.AssignRemainderExpression extends sun.tools.tree.AssignOpExpression {
+  public sun.tools.tree.AssignRemainderExpression(long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  void codeOperation(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+}

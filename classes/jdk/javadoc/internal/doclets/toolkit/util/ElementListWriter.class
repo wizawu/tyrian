@@ -1,0 +1,6 @@
+Compiled from "ElementListWriter.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.ElementListWriter {
+  public jdk.javadoc.internal.doclets.toolkit.util.ElementListWriter(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public static void generate(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void generateElementListFile(jdk.javadoc.doclet.DocletEnvironment) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+}

@@ -1,0 +1,7 @@
+Compiled from "SourceLocator.java"
+public interface javax.xml.transform.SourceLocator {
+  public abstract java.lang.String getPublicId();
+  public abstract java.lang.String getSystemId();
+  public abstract int getLineNumber();
+  public abstract int getColumnNumber();
+}

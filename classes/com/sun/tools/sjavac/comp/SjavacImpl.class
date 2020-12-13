@@ -1,0 +1,7 @@
+Compiled from "SjavacImpl.java"
+public class com.sun.tools.sjavac.comp.SjavacImpl implements com.sun.tools.sjavac.server.Sjavac {
+  public com.sun.tools.sjavac.comp.SjavacImpl();
+  public com.sun.tools.javac.main.Main$Result compile(java.lang.String[]);
+  public void shutdown();
+  public static void findSourceFiles(java.util.List<com.sun.tools.sjavac.options.SourceLocation>, java.util.Set<java.lang.String>, java.util.Map<java.lang.String, com.sun.tools.sjavac.Source>, java.util.Map<java.lang.String, com.sun.tools.sjavac.Module>, com.sun.tools.sjavac.Module, boolean, boolean) throws java.io.IOException;
+}

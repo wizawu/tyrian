@@ -1,0 +1,13 @@
+Compiled from "DoubleConversion.java"
+public final class jdk.nashorn.internal.runtime.doubleconv.DoubleConversion {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.runtime.doubleconv.DoubleConversion();
+  public static java.lang.String toShortestString(double);
+  public static java.lang.String toFixed(double, int);
+  public static java.lang.String toPrecision(double, int);
+  public static void bignumDtoa(double, jdk.nashorn.internal.runtime.doubleconv.DtoaMode, int, jdk.nashorn.internal.runtime.doubleconv.DtoaBuffer);
+  public static boolean fastDtoaShortest(double, jdk.nashorn.internal.runtime.doubleconv.DtoaBuffer);
+  public static boolean fastDtoaCounted(double, int, jdk.nashorn.internal.runtime.doubleconv.DtoaBuffer);
+  public static boolean fixedDtoa(double, int, jdk.nashorn.internal.runtime.doubleconv.DtoaBuffer);
+  static {};
+}

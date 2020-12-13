@@ -1,0 +1,4 @@
+Compiled from "CallbackHandler.java"
+public interface javax.security.auth.callback.CallbackHandler {
+  public abstract void handle(javax.security.auth.callback.Callback[]) throws java.io.IOException, javax.security.auth.callback.UnsupportedCallbackException;
+}

@@ -1,0 +1,6 @@
+Compiled from "ZAddressRangeMapForPageTable.java"
+public class sun.jvm.hotspot.gc.z.ZAddressRangeMapForPageTable extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.gc.z.ZAddressRangeMapForPageTable(sun.jvm.hotspot.debugger.Address);
+  sun.jvm.hotspot.debugger.Address get(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

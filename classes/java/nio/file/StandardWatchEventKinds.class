@@ -1,0 +1,8 @@
+Compiled from "StandardWatchEventKinds.java"
+public final class java.nio.file.StandardWatchEventKinds {
+  public static final java.nio.file.WatchEvent$Kind<java.lang.Object> OVERFLOW;
+  public static final java.nio.file.WatchEvent$Kind<java.nio.file.Path> ENTRY_CREATE;
+  public static final java.nio.file.WatchEvent$Kind<java.nio.file.Path> ENTRY_DELETE;
+  public static final java.nio.file.WatchEvent$Kind<java.nio.file.Path> ENTRY_MODIFY;
+  static {};
+}

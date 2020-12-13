@@ -1,0 +1,14 @@
+Compiled from "Units.java"
+public class sun.jvmstat.monitor.Units implements java.io.Serializable {
+  public static final sun.jvmstat.monitor.Units INVALID;
+  public static final sun.jvmstat.monitor.Units NONE;
+  public static final sun.jvmstat.monitor.Units BYTES;
+  public static final sun.jvmstat.monitor.Units TICKS;
+  public static final sun.jvmstat.monitor.Units EVENTS;
+  public static final sun.jvmstat.monitor.Units STRING;
+  public static final sun.jvmstat.monitor.Units HERTZ;
+  public java.lang.String toString();
+  public int intValue();
+  public static sun.jvmstat.monitor.Units toUnits(int);
+  static {};
+}

@@ -1,0 +1,15 @@
+Compiled from "G1HeapRegionType.java"
+public final class sun.jvm.hotspot.gc.shared.G1HeapRegionType extends java.lang.Enum<sun.jvm.hotspot.gc.shared.G1HeapRegionType> {
+  public static final sun.jvm.hotspot.gc.shared.G1HeapRegionType Free;
+  public static final sun.jvm.hotspot.gc.shared.G1HeapRegionType Eden;
+  public static final sun.jvm.hotspot.gc.shared.G1HeapRegionType Survivor;
+  public static final sun.jvm.hotspot.gc.shared.G1HeapRegionType StartsHumongous;
+  public static final sun.jvm.hotspot.gc.shared.G1HeapRegionType ContinuesHumongous;
+  public static final sun.jvm.hotspot.gc.shared.G1HeapRegionType Old;
+  public static final sun.jvm.hotspot.gc.shared.G1HeapRegionType Archive;
+  public static final sun.jvm.hotspot.gc.shared.G1HeapRegionType G1HeapRegionTypeEndSentinel;
+  public static sun.jvm.hotspot.gc.shared.G1HeapRegionType[] values();
+  public static sun.jvm.hotspot.gc.shared.G1HeapRegionType valueOf(java.lang.String);
+  public java.lang.String value();
+  static {};
+}

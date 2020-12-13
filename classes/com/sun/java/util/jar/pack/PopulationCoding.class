@@ -1,0 +1,35 @@
+Compiled from "PopulationCoding.java"
+class com.sun.java.util.jar.pack.PopulationCoding implements com.sun.java.util.jar.pack.CodingMethod {
+  com.sun.java.util.jar.pack.Histogram vHist;
+  int[] fValues;
+  int fVlen;
+  long[] symtab;
+  com.sun.java.util.jar.pack.CodingMethod favoredCoding;
+  com.sun.java.util.jar.pack.CodingMethod tokenCoding;
+  com.sun.java.util.jar.pack.CodingMethod unfavoredCoding;
+  int L;
+  static final int[] LValuesCoded;
+  static final boolean $assertionsDisabled;
+  com.sun.java.util.jar.pack.PopulationCoding();
+  public void setFavoredValues(int[], int);
+  public void setFavoredValues(int[]);
+  public void setHistogram(com.sun.java.util.jar.pack.Histogram);
+  public void setL(int);
+  public static com.sun.java.util.jar.pack.Coding fitTokenCoding(int, int);
+  public void setFavoredCoding(com.sun.java.util.jar.pack.CodingMethod);
+  public void setTokenCoding(com.sun.java.util.jar.pack.CodingMethod);
+  public void setUnfavoredCoding(com.sun.java.util.jar.pack.CodingMethod);
+  public int favoredValueMaxLength();
+  public void resortFavoredValues();
+  public int getToken(int);
+  public int[][] encodeValues(int[], int, int);
+  public void writeArrayTo(java.io.OutputStream, int[], int, int) throws java.io.IOException;
+  void writeSequencesTo(java.io.OutputStream, int[], int[]) throws java.io.IOException;
+  int computeSentinelValue();
+  public void readArrayFrom(java.io.InputStream, int[], int, int) throws java.io.IOException;
+  int[] readFavoredValuesFrom(java.io.InputStream, int) throws java.io.IOException;
+  public byte[] getMetaCoding(com.sun.java.util.jar.pack.Coding);
+  public static int parseMetaCoding(byte[], int, com.sun.java.util.jar.pack.Coding, com.sun.java.util.jar.pack.CodingMethod[]);
+  public java.lang.String toString();
+  static {};
+}

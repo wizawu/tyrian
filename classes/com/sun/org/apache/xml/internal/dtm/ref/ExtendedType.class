@@ -1,0 +1,12 @@
+Compiled from "ExtendedType.java"
+public final class com.sun.org.apache.xml.internal.dtm.ref.ExtendedType {
+  public com.sun.org.apache.xml.internal.dtm.ref.ExtendedType(int, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xml.internal.dtm.ref.ExtendedType(int, java.lang.String, java.lang.String, int);
+  protected void redefine(int, java.lang.String, java.lang.String);
+  protected void redefine(int, java.lang.String, java.lang.String, int);
+  public int hashCode();
+  public boolean equals(com.sun.org.apache.xml.internal.dtm.ref.ExtendedType);
+  public int getNodeType();
+  public java.lang.String getLocalName();
+  public java.lang.String getNamespace();
+}

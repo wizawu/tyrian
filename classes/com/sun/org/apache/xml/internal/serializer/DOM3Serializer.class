@@ -1,0 +1,9 @@
+Compiled from "DOM3Serializer.java"
+public interface com.sun.org.apache.xml.internal.serializer.DOM3Serializer {
+  public abstract void serializeDOM3(org.w3c.dom.Node) throws java.io.IOException;
+  public abstract void setErrorHandler(org.w3c.dom.DOMErrorHandler);
+  public abstract org.w3c.dom.DOMErrorHandler getErrorHandler();
+  public abstract void setNodeFilter(org.w3c.dom.ls.LSSerializerFilter);
+  public abstract org.w3c.dom.ls.LSSerializerFilter getNodeFilter();
+  public abstract void setNewLine(java.lang.String);
+}

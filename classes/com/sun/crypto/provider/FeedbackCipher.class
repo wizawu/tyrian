@@ -1,0 +1,21 @@
+Compiled from "FeedbackCipher.java"
+abstract class com.sun.crypto.provider.FeedbackCipher {
+  final com.sun.crypto.provider.SymmetricCipher embeddedCipher;
+  final int blockSize;
+  byte[] iv;
+  com.sun.crypto.provider.FeedbackCipher(com.sun.crypto.provider.SymmetricCipher);
+  final com.sun.crypto.provider.SymmetricCipher getEmbeddedCipher();
+  final int getBlockSize();
+  abstract java.lang.String getFeedback();
+  abstract void save();
+  abstract void restore();
+  abstract void init(boolean, java.lang.String, byte[], byte[]) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  final byte[] getIV();
+  abstract void reset();
+  abstract int encrypt(byte[], int, int, byte[], int);
+  int encryptFinal(byte[], int, int, byte[], int) throws javax.crypto.IllegalBlockSizeException, javax.crypto.ShortBufferException;
+  abstract int decrypt(byte[], int, int, byte[], int);
+  int decryptFinal(byte[], int, int, byte[], int) throws javax.crypto.IllegalBlockSizeException, javax.crypto.AEADBadTagException, javax.crypto.ShortBufferException;
+  void updateAAD(byte[], int, int);
+  int getBufferedLength();
+}

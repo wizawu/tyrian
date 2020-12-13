@@ -1,0 +1,7 @@
+Compiled from "Confounder.java"
+public final class sun.security.krb5.Confounder {
+  public static byte[] bytes(int);
+  public static int intValue();
+  public static long longValue();
+  static {};
+}

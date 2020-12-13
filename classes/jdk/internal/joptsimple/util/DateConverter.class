@@ -1,0 +1,9 @@
+Compiled from "DateConverter.java"
+public class jdk.internal.joptsimple.util.DateConverter implements jdk.internal.joptsimple.ValueConverter<java.util.Date> {
+  public jdk.internal.joptsimple.util.DateConverter(java.text.DateFormat);
+  public static jdk.internal.joptsimple.util.DateConverter datePattern(java.lang.String);
+  public java.util.Date convert(java.lang.String);
+  public java.lang.Class<java.util.Date> valueType();
+  public java.lang.String valuePattern();
+  public java.lang.Object convert(java.lang.String);
+}

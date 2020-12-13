@@ -1,0 +1,5 @@
+Compiled from "ImageTranscoder.java"
+public interface javax.imageio.ImageTranscoder {
+  public abstract javax.imageio.metadata.IIOMetadata convertStreamMetadata(javax.imageio.metadata.IIOMetadata, javax.imageio.ImageWriteParam);
+  public abstract javax.imageio.metadata.IIOMetadata convertImageMetadata(javax.imageio.metadata.IIOMetadata, javax.imageio.ImageTypeSpecifier, javax.imageio.ImageWriteParam);
+}

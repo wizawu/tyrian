@@ -1,0 +1,6 @@
+Compiled from "DirectoryIteratorException.java"
+public final class java.nio.file.DirectoryIteratorException extends java.util.ConcurrentModificationException {
+  public java.nio.file.DirectoryIteratorException(java.io.IOException);
+  public java.io.IOException getCause();
+  public java.lang.Throwable getCause();
+}

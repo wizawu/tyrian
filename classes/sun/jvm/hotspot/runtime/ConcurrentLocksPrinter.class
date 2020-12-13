@@ -1,0 +1,5 @@
+Compiled from "ConcurrentLocksPrinter.java"
+public class sun.jvm.hotspot.runtime.ConcurrentLocksPrinter {
+  public sun.jvm.hotspot.runtime.ConcurrentLocksPrinter();
+  public void print(sun.jvm.hotspot.runtime.JavaThread, java.io.PrintStream);
+}

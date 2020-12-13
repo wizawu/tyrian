@@ -1,0 +1,9 @@
+Compiled from "EventFactory.java"
+public final class jdk.jfr.EventFactory {
+  public static jdk.jfr.EventFactory create(java.util.List<jdk.jfr.AnnotationElement>, java.util.List<jdk.jfr.ValueDescriptor>);
+  public jdk.jfr.Event newEvent();
+  public jdk.jfr.EventType getEventType();
+  public void register();
+  public void unregister();
+  static {};
+}

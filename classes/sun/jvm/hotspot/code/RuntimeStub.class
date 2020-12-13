@@ -1,0 +1,8 @@
+Compiled from "RuntimeStub.java"
+public class sun.jvm.hotspot.code.RuntimeStub extends sun.jvm.hotspot.code.RuntimeBlob {
+  public sun.jvm.hotspot.code.RuntimeStub(sun.jvm.hotspot.debugger.Address);
+  public boolean isRuntimeStub();
+  public boolean callerMustGCArguments();
+  public java.lang.String getName();
+  static {};
+}

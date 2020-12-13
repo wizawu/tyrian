@@ -1,0 +1,6 @@
+Compiled from "Border.java"
+public interface javax.swing.border.Border {
+  public abstract void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
+  public abstract java.awt.Insets getBorderInsets(java.awt.Component);
+  public abstract boolean isBorderOpaque();
+}

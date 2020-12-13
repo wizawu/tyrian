@@ -1,0 +1,8 @@
+Compiled from "MachineDescription.java"
+public interface sun.jvm.hotspot.debugger.MachineDescription extends java.io.Serializable {
+  public abstract long getAddressSize();
+  public abstract long cIntegerTypeMaxValue(long, boolean);
+  public abstract long cIntegerTypeMinValue(long, boolean);
+  public abstract boolean isBigEndian();
+  public abstract boolean isLP64();
+}

@@ -1,0 +1,6 @@
+Compiled from "UnresolvedReferenceException.java"
+public class jdk.jshell.UnresolvedReferenceException extends jdk.jshell.JShellException {
+  final jdk.jshell.DeclarationSnippet snippet;
+  jdk.jshell.UnresolvedReferenceException(jdk.jshell.DeclarationSnippet, java.lang.StackTraceElement[]);
+  public jdk.jshell.DeclarationSnippet getSnippet();
+}

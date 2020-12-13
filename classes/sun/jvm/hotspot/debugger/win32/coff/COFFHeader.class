@@ -1,0 +1,16 @@
+Compiled from "COFFHeader.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.COFFHeader {
+  public abstract short getMachineType();
+  public abstract short getNumberOfSections();
+  public abstract int getTimeDateStamp();
+  public abstract int getPointerToSymbolTable();
+  public abstract int getNumberOfSymbols();
+  public abstract short getSizeOfOptionalHeader();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.OptionalHeader getOptionalHeader() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract short getCharacteristics();
+  public abstract boolean hasCharacteristic(short);
+  public abstract sun.jvm.hotspot.debugger.win32.coff.SectionHeader getSectionHeader(int);
+  public abstract sun.jvm.hotspot.debugger.win32.coff.COFFSymbol getCOFFSymbol(int);
+  public abstract int getNumberOfStrings();
+  public abstract java.lang.String getString(int);
+}

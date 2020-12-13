@@ -1,0 +1,15 @@
+Compiled from "StyledDocument.java"
+public interface javax.swing.text.StyledDocument extends javax.swing.text.Document {
+  public abstract javax.swing.text.Style addStyle(java.lang.String, javax.swing.text.Style);
+  public abstract void removeStyle(java.lang.String);
+  public abstract javax.swing.text.Style getStyle(java.lang.String);
+  public abstract void setCharacterAttributes(int, int, javax.swing.text.AttributeSet, boolean);
+  public abstract void setParagraphAttributes(int, int, javax.swing.text.AttributeSet, boolean);
+  public abstract void setLogicalStyle(int, javax.swing.text.Style);
+  public abstract javax.swing.text.Style getLogicalStyle(int);
+  public abstract javax.swing.text.Element getParagraphElement(int);
+  public abstract javax.swing.text.Element getCharacterElement(int);
+  public abstract java.awt.Color getForeground(javax.swing.text.AttributeSet);
+  public abstract java.awt.Color getBackground(javax.swing.text.AttributeSet);
+  public abstract java.awt.Font getFont(javax.swing.text.AttributeSet);
+}

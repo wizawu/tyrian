@@ -1,0 +1,11 @@
+Compiled from "XML11DTDProcessor.java"
+public class com.sun.org.apache.xerces.internal.impl.dtd.XML11DTDProcessor extends com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDLoader {
+  public com.sun.org.apache.xerces.internal.impl.dtd.XML11DTDProcessor();
+  public com.sun.org.apache.xerces.internal.impl.dtd.XML11DTDProcessor(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public com.sun.org.apache.xerces.internal.impl.dtd.XML11DTDProcessor(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
+  com.sun.org.apache.xerces.internal.impl.dtd.XML11DTDProcessor(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool, com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver);
+  protected boolean isValidNmtoken(java.lang.String);
+  protected boolean isValidName(java.lang.String);
+  protected com.sun.org.apache.xerces.internal.impl.XMLDTDScannerImpl createDTDScanner(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.impl.XMLErrorReporter, com.sun.org.apache.xerces.internal.impl.XMLEntityManager);
+  protected short getScannerVersion();
+}

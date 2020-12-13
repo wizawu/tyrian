@@ -1,0 +1,5 @@
+Compiled from "CALOAD.java"
+public class com.sun.org.apache.bcel.internal.generic.CALOAD extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
+  public com.sun.org.apache.bcel.internal.generic.CALOAD();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

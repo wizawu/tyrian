@@ -1,0 +1,5 @@
+Compiled from "ByteCodeMachine.java"
+class jdk.nashorn.internal.runtime.regexp.joni.ByteCodeMachine extends jdk.nashorn.internal.runtime.regexp.joni.StackMachine {
+  jdk.nashorn.internal.runtime.regexp.joni.ByteCodeMachine(jdk.nashorn.internal.runtime.regexp.joni.Regex, char[], int, int);
+  protected final int matchAt(int, int, int);
+}

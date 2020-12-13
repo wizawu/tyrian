@@ -1,0 +1,4 @@
+Compiled from "LockObject.java"
+public class com.sun.tools.jdi.LockObject {
+  public com.sun.tools.jdi.LockObject();
+}

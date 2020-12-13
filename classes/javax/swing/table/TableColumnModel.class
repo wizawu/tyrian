@@ -1,0 +1,22 @@
+Compiled from "TableColumnModel.java"
+public interface javax.swing.table.TableColumnModel {
+  public abstract void addColumn(javax.swing.table.TableColumn);
+  public abstract void removeColumn(javax.swing.table.TableColumn);
+  public abstract void moveColumn(int, int);
+  public abstract void setColumnMargin(int);
+  public abstract int getColumnCount();
+  public abstract java.util.Enumeration<javax.swing.table.TableColumn> getColumns();
+  public abstract int getColumnIndex(java.lang.Object);
+  public abstract javax.swing.table.TableColumn getColumn(int);
+  public abstract int getColumnMargin();
+  public abstract int getColumnIndexAtX(int);
+  public abstract int getTotalColumnWidth();
+  public abstract void setColumnSelectionAllowed(boolean);
+  public abstract boolean getColumnSelectionAllowed();
+  public abstract int[] getSelectedColumns();
+  public abstract int getSelectedColumnCount();
+  public abstract void setSelectionModel(javax.swing.ListSelectionModel);
+  public abstract javax.swing.ListSelectionModel getSelectionModel();
+  public abstract void addColumnModelListener(javax.swing.event.TableColumnModelListener);
+  public abstract void removeColumnModelListener(javax.swing.event.TableColumnModelListener);
+}

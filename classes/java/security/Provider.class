@@ -1,0 +1,41 @@
+Compiled from "Provider.java"
+public abstract class java.security.Provider extends java.util.Properties {
+  protected java.security.Provider(java.lang.String, double, java.lang.String);
+  protected java.security.Provider(java.lang.String, java.lang.String, java.lang.String);
+  public java.security.Provider configure(java.lang.String);
+  public boolean isConfigured();
+  public java.lang.String getName();
+  public double getVersion();
+  public java.lang.String getVersionStr();
+  public java.lang.String getInfo();
+  public java.lang.String toString();
+  public synchronized void clear();
+  public synchronized void load(java.io.InputStream) throws java.io.IOException;
+  public synchronized void putAll(java.util.Map<?, ?>);
+  public synchronized java.util.Set<java.util.Map$Entry<java.lang.Object, java.lang.Object>> entrySet();
+  public java.util.Set<java.lang.Object> keySet();
+  public java.util.Collection<java.lang.Object> values();
+  public synchronized java.lang.Object put(java.lang.Object, java.lang.Object);
+  public synchronized java.lang.Object putIfAbsent(java.lang.Object, java.lang.Object);
+  public synchronized java.lang.Object remove(java.lang.Object);
+  public synchronized boolean remove(java.lang.Object, java.lang.Object);
+  public synchronized boolean replace(java.lang.Object, java.lang.Object, java.lang.Object);
+  public synchronized java.lang.Object replace(java.lang.Object, java.lang.Object);
+  public synchronized void replaceAll(java.util.function.BiFunction<? super java.lang.Object, ? super java.lang.Object, ? extends java.lang.Object>);
+  public synchronized java.lang.Object compute(java.lang.Object, java.util.function.BiFunction<? super java.lang.Object, ? super java.lang.Object, ? extends java.lang.Object>);
+  public synchronized java.lang.Object computeIfAbsent(java.lang.Object, java.util.function.Function<? super java.lang.Object, ? extends java.lang.Object>);
+  public synchronized java.lang.Object computeIfPresent(java.lang.Object, java.util.function.BiFunction<? super java.lang.Object, ? super java.lang.Object, ? extends java.lang.Object>);
+  public synchronized java.lang.Object merge(java.lang.Object, java.lang.Object, java.util.function.BiFunction<? super java.lang.Object, ? super java.lang.Object, ? extends java.lang.Object>);
+  public java.lang.Object get(java.lang.Object);
+  public synchronized java.lang.Object getOrDefault(java.lang.Object, java.lang.Object);
+  public synchronized void forEach(java.util.function.BiConsumer<? super java.lang.Object, ? super java.lang.Object>);
+  public java.util.Enumeration<java.lang.Object> keys();
+  public java.util.Enumeration<java.lang.Object> elements();
+  public java.lang.String getProperty(java.lang.String);
+  public java.security.Provider$Service getService(java.lang.String, java.lang.String);
+  public synchronized java.util.Set<java.security.Provider$Service> getServices();
+  protected void putService(java.security.Provider$Service);
+  synchronized java.security.Provider$Service getDefaultSecureRandomService();
+  protected void removeService(java.security.Provider$Service);
+  static {};
+}

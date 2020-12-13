@@ -1,0 +1,5 @@
+Compiled from "DummySymbolFinder.java"
+public class sun.jvm.hotspot.asm.DummySymbolFinder implements sun.jvm.hotspot.asm.SymbolFinder {
+  public sun.jvm.hotspot.asm.DummySymbolFinder();
+  public java.lang.String getSymbolFor(long);
+}

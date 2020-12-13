@@ -1,0 +1,15 @@
+Compiled from "HTMLBodyElement.java"
+public interface org.w3c.dom.html.HTMLBodyElement extends org.w3c.dom.html.HTMLElement {
+  public abstract java.lang.String getALink();
+  public abstract void setALink(java.lang.String);
+  public abstract java.lang.String getBackground();
+  public abstract void setBackground(java.lang.String);
+  public abstract java.lang.String getBgColor();
+  public abstract void setBgColor(java.lang.String);
+  public abstract java.lang.String getLink();
+  public abstract void setLink(java.lang.String);
+  public abstract java.lang.String getText();
+  public abstract void setText(java.lang.String);
+  public abstract java.lang.String getVLink();
+  public abstract void setVLink(java.lang.String);
+}

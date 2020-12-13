@@ -1,0 +1,7 @@
+Compiled from "TreePathScanner.java"
+public class com.sun.source.util.TreePathScanner<R, P> extends com.sun.source.util.TreeScanner<R, P> {
+  public com.sun.source.util.TreePathScanner();
+  public R scan(com.sun.source.util.TreePath, P);
+  public R scan(com.sun.source.tree.Tree, P);
+  public com.sun.source.util.TreePath getCurrentPath();
+}

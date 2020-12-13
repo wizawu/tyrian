@@ -1,0 +1,10 @@
+Compiled from "XDHPrivateKeyImpl.java"
+public final class sun.security.ec.XDHPrivateKeyImpl extends sun.security.pkcs.PKCS8Key implements java.security.interfaces.XECPrivateKey {
+  sun.security.ec.XDHPrivateKeyImpl(sun.security.ec.XECParameters, byte[]) throws java.security.InvalidKeyException;
+  sun.security.ec.XDHPrivateKeyImpl(byte[]) throws java.security.InvalidKeyException;
+  void checkLength(sun.security.ec.XECParameters) throws java.security.InvalidKeyException;
+  public byte[] getK();
+  public java.lang.String getAlgorithm();
+  public java.security.spec.AlgorithmParameterSpec getParams();
+  public java.util.Optional<byte[]> getScalar();
+}

@@ -1,0 +1,21 @@
+Compiled from "XMenuWindow.java"
+public class sun.awt.X11.XMenuWindow extends sun.awt.X11.XBaseMenuWindow {
+  sun.awt.X11.XMenuWindow(sun.awt.X11.XMenuPeer);
+  void postInit(sun.awt.X11.XCreateWindowParams);
+  protected sun.awt.X11.XBaseMenuWindow getParentMenuWindow();
+  protected sun.awt.X11.XMenuWindow$MappingData map();
+  protected java.awt.Rectangle getSubmenuBounds(java.awt.Rectangle, java.awt.Dimension);
+  protected void updateSize();
+  protected java.awt.Dimension getCaptionSize();
+  protected void paintCaption(java.awt.Graphics, java.awt.Rectangle);
+  sun.awt.X11.XMenuPeer getMenuPeer();
+  java.util.Vector<java.awt.MenuItem> getMenuTargetItems();
+  java.awt.Dimension getDesiredSize();
+  boolean isCreated();
+  boolean ensureCreated();
+  void show(java.awt.Rectangle);
+  void hide();
+  public void paintPeer(java.awt.Graphics);
+  protected sun.awt.X11.XBaseMenuWindow$MappingData map();
+  static {};
+}

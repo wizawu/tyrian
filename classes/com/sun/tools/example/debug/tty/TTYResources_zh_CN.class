@@ -1,0 +1,5 @@
+Compiled from "TTYResources_zh_CN.java"
+public class com.sun.tools.example.debug.tty.TTYResources_zh_CN extends java.util.ListResourceBundle {
+  public com.sun.tools.example.debug.tty.TTYResources_zh_CN();
+  public java.lang.Object[][] getContents();
+}

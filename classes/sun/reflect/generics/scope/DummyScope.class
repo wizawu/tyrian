@@ -1,0 +1,6 @@
+Compiled from "DummyScope.java"
+public class sun.reflect.generics.scope.DummyScope implements sun.reflect.generics.scope.Scope {
+  public static sun.reflect.generics.scope.DummyScope make();
+  public java.lang.reflect.TypeVariable<?> lookup(java.lang.String);
+  static {};
+}

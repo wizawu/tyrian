@@ -1,0 +1,11 @@
+Compiled from "BasicPermission.java"
+public abstract class java.security.BasicPermission extends java.security.Permission implements java.io.Serializable {
+  public java.security.BasicPermission(java.lang.String);
+  public java.security.BasicPermission(java.lang.String, java.lang.String);
+  public boolean implies(java.security.Permission);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String getActions();
+  public java.security.PermissionCollection newPermissionCollection();
+  final java.lang.String getCanonicalName();
+}

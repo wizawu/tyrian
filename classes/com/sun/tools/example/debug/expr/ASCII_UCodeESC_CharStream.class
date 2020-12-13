@@ -1,0 +1,26 @@
+Compiled from "ASCII_UCodeESC_CharStream.java"
+public final class com.sun.tools.example.debug.expr.ASCII_UCodeESC_CharStream {
+  public static final boolean staticFlag;
+  public int bufpos;
+  int bufsize;
+  int available;
+  int tokenBegin;
+  static final int hexval(char) throws java.io.IOException;
+  public final char BeginToken() throws java.io.IOException;
+  public final char readChar() throws java.io.IOException;
+  public final int getColumn();
+  public final int getLine();
+  public final int getEndColumn();
+  public final int getEndLine();
+  public final int getBeginColumn();
+  public final int getBeginLine();
+  public final void backup(int);
+  public com.sun.tools.example.debug.expr.ASCII_UCodeESC_CharStream(java.io.InputStream, int, int, int);
+  public com.sun.tools.example.debug.expr.ASCII_UCodeESC_CharStream(java.io.InputStream, int, int);
+  public void ReInit(java.io.InputStream, int, int, int);
+  public void ReInit(java.io.InputStream, int, int);
+  public final java.lang.String GetImage();
+  public final char[] GetSuffix(int);
+  public void Done();
+  public void adjustBeginLineColumn(int, int);
+}

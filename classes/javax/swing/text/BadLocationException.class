@@ -1,0 +1,5 @@
+Compiled from "BadLocationException.java"
+public class javax.swing.text.BadLocationException extends java.lang.Exception {
+  public javax.swing.text.BadLocationException(java.lang.String, int);
+  public int offsetRequested();
+}

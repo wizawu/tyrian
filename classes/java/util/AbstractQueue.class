@@ -1,0 +1,9 @@
+Compiled from "AbstractQueue.java"
+public abstract class java.util.AbstractQueue<E> extends java.util.AbstractCollection<E> implements java.util.Queue<E> {
+  protected java.util.AbstractQueue();
+  public boolean add(E);
+  public E remove();
+  public E element();
+  public void clear();
+  public boolean addAll(java.util.Collection<? extends E>);
+}

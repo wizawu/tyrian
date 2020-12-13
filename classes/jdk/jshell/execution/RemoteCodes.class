@@ -1,0 +1,21 @@
+Compiled from "RemoteCodes.java"
+class jdk.jshell.execution.RemoteCodes {
+  static final int COMMAND_PREFIX;
+  static final java.lang.String CMD_CLOSE;
+  static final java.lang.String CMD_LOAD;
+  static final java.lang.String CMD_REDEFINE;
+  static final java.lang.String CMD_INVOKE;
+  static final java.lang.String CMD_VAR_VALUE;
+  static final java.lang.String CMD_ADD_CLASSPATH;
+  static final java.lang.String CMD_STOP;
+  static final int RESULT_SUCCESS;
+  static final int RESULT_TERMINATED;
+  static final int RESULT_NOT_IMPLEMENTED;
+  static final int RESULT_INTERNAL_PROBLEM;
+  static final int RESULT_USER_EXCEPTION;
+  static final int RESULT_CORRALLED;
+  static final int RESULT_CLASS_INSTALL_EXCEPTION;
+  static final int RESULT_STOPPED;
+  static final int RESULT_USER_EXCEPTION_CHAINED;
+  jdk.jshell.execution.RemoteCodes();
+}

@@ -1,0 +1,19 @@
+Compiled from "JlinkTask.java"
+public class jdk.tools.jlink.internal.JlinkTask {
+  static final boolean DEBUG;
+  static final boolean IGNORE_SIGNING_DEFAULT;
+  static final int EXIT_OK;
+  static final int EXIT_ERROR;
+  static final int EXIT_CMDERR;
+  static final int EXIT_SYSERR;
+  static final int EXIT_ABNORMAL;
+  public jdk.tools.jlink.internal.JlinkTask();
+  void setLog(java.io.PrintWriter, java.io.PrintWriter);
+  int run(java.lang.String[]);
+  public static void createImage(jdk.tools.jlink.internal.Jlink$JlinkConfiguration, jdk.tools.jlink.internal.Jlink$PluginsConfiguration) throws java.lang.Exception;
+  public static void postProcessImage(jdk.tools.jlink.internal.ExecutableImage, java.util.List<jdk.tools.jlink.plugin.Plugin>) throws java.lang.Exception;
+  public static java.nio.file.Path getDefaultModulePath();
+  public static java.lang.module.ModuleFinder newModuleFinder(java.util.List<java.nio.file.Path>, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>);
+  public static java.lang.module.ModuleFinder limitFinder(java.lang.module.ModuleFinder, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>);
+  static {};
+}

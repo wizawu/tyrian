@@ -1,0 +1,16 @@
+Compiled from "ModuleInfoBuilder.java"
+public class com.sun.tools.jdeps.ModuleInfoBuilder {
+  final com.sun.tools.jdeps.JdepsConfiguration configuration;
+  final java.nio.file.Path outputdir;
+  final boolean open;
+  final com.sun.tools.jdeps.DependencyFinder dependencyFinder;
+  final com.sun.tools.jdeps.Analyzer analyzer;
+  final java.util.Map<com.sun.tools.jdeps.Module, com.sun.tools.jdeps.Module> automaticToNormalModule;
+  public com.sun.tools.jdeps.ModuleInfoBuilder(com.sun.tools.jdeps.JdepsConfiguration, java.util.List<java.lang.String>, java.nio.file.Path, boolean);
+  public boolean run() throws java.io.IOException;
+  boolean notFound(com.sun.tools.jdeps.Archive);
+  java.util.stream.Stream<com.sun.tools.jdeps.Module> modules();
+  public java.util.stream.Stream<java.lang.module.ModuleDescriptor> descriptors();
+  void visitMissingDeps(com.sun.tools.jdeps.Analyzer$Visitor);
+  void writeModuleInfo(java.nio.file.Path, java.lang.module.ModuleDescriptor);
+}

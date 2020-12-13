@@ -1,0 +1,9 @@
+Compiled from "KerberosString.java"
+public final class sun.security.krb5.internal.util.KerberosString {
+  public static final boolean MSNAME;
+  public sun.security.krb5.internal.util.KerberosString(java.lang.String);
+  public sun.security.krb5.internal.util.KerberosString(sun.security.util.DerValue) throws java.io.IOException;
+  public java.lang.String toString();
+  public sun.security.util.DerValue toDerValue() throws java.io.IOException;
+  static {};
+}

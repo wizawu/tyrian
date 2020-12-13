@@ -1,0 +1,5 @@
+Compiled from "rmiURLContextFactory.java"
+public class com.sun.jndi.url.rmi.rmiURLContextFactory implements javax.naming.spi.ObjectFactory {
+  public com.sun.jndi.url.rmi.rmiURLContextFactory();
+  public java.lang.Object getObjectInstance(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+}

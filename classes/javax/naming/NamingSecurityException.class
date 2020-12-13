@@ -1,0 +1,5 @@
+Compiled from "NamingSecurityException.java"
+public abstract class javax.naming.NamingSecurityException extends javax.naming.NamingException {
+  public javax.naming.NamingSecurityException(java.lang.String);
+  public javax.naming.NamingSecurityException();
+}

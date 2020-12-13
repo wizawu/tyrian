@@ -1,0 +1,5 @@
+Compiled from "XException.java"
+public class sun.awt.X11.XException extends java.lang.RuntimeException {
+  public sun.awt.X11.XException();
+  public sun.awt.X11.XException(java.lang.String);
+}

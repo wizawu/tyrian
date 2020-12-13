@@ -1,0 +1,12 @@
+Compiled from "ECFieldF2m.java"
+public class java.security.spec.ECFieldF2m implements java.security.spec.ECField {
+  public java.security.spec.ECFieldF2m(int);
+  public java.security.spec.ECFieldF2m(int, java.math.BigInteger);
+  public java.security.spec.ECFieldF2m(int, int[]);
+  public int getFieldSize();
+  public int getM();
+  public java.math.BigInteger getReductionPolynomial();
+  public int[] getMidTermsOfReductionPolynomial();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

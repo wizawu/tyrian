@@ -1,0 +1,5 @@
+Compiled from "AuxBfEfRecord.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.AuxBfEfRecord extends sun.jvm.hotspot.debugger.win32.coff.AuxSymbolRecord {
+  public abstract short getLineNumber();
+  public abstract int getPointerToNextFunction();
+}

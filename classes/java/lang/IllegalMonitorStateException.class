@@ -1,0 +1,5 @@
+Compiled from "IllegalMonitorStateException.java"
+public class java.lang.IllegalMonitorStateException extends java.lang.RuntimeException {
+  public java.lang.IllegalMonitorStateException();
+  public java.lang.IllegalMonitorStateException(java.lang.String);
+}

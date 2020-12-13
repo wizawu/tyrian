@@ -1,0 +1,11 @@
+Compiled from "ElementDefinitionImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.ElementDefinitionImpl extends com.sun.org.apache.xerces.internal.dom.ParentNode {
+  static final long serialVersionUID;
+  protected java.lang.String name;
+  protected com.sun.org.apache.xerces.internal.dom.NamedNodeMapImpl attributes;
+  public com.sun.org.apache.xerces.internal.dom.ElementDefinitionImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String);
+  public short getNodeType();
+  public java.lang.String getNodeName();
+  public org.w3c.dom.Node cloneNode(boolean);
+  public org.w3c.dom.NamedNodeMap getAttributes();
+}

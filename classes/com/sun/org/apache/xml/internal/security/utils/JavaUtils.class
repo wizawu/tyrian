@@ -1,0 +1,10 @@
+Compiled from "JavaUtils.java"
+public final class com.sun.org.apache.xml.internal.security.utils.JavaUtils {
+  public static byte[] getBytesFromFile(java.lang.String) throws java.io.FileNotFoundException, java.io.IOException;
+  public static void writeBytesToFilename(java.lang.String, byte[]);
+  public static byte[] getBytesFromStream(java.io.InputStream) throws java.io.IOException;
+  public static byte[] convertDsaASN1toXMLDSIG(byte[], int) throws java.io.IOException;
+  public static byte[] convertDsaXMLDSIGtoASN1(byte[], int) throws java.io.IOException;
+  public static void checkRegisterPermission();
+  static {};
+}

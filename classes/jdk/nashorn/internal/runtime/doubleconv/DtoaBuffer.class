@@ -1,0 +1,16 @@
+Compiled from "DtoaBuffer.java"
+public class jdk.nashorn.internal.runtime.doubleconv.DtoaBuffer {
+  final char[] chars;
+  int length;
+  int decimalPoint;
+  boolean isNegative;
+  public static final int kFastDtoaMaximalLength;
+  public jdk.nashorn.internal.runtime.doubleconv.DtoaBuffer(int);
+  void append(char);
+  public void reset();
+  public java.lang.String getRawDigits();
+  public int getDecimalPoint();
+  public int getLength();
+  public java.lang.String format(jdk.nashorn.internal.runtime.doubleconv.DtoaMode, int);
+  public java.lang.String toString();
+}

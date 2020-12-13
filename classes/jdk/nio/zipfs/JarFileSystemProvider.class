@@ -1,0 +1,7 @@
+Compiled from "JarFileSystemProvider.java"
+class jdk.nio.zipfs.JarFileSystemProvider extends jdk.nio.zipfs.ZipFileSystemProvider {
+  jdk.nio.zipfs.JarFileSystemProvider();
+  public java.lang.String getScheme();
+  protected java.nio.file.Path uriToPath(java.net.URI);
+  public java.nio.file.Path getPath(java.net.URI);
+}

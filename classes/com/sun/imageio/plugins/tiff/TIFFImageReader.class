@@ -1,0 +1,28 @@
+Compiled from "TIFFImageReader.java"
+public class com.sun.imageio.plugins.tiff.TIFFImageReader extends javax.imageio.ImageReader {
+  public com.sun.imageio.plugins.tiff.TIFFImageReader(javax.imageio.spi.ImageReaderSpi);
+  public void setInput(java.lang.Object, boolean, boolean);
+  public int getNumImages(boolean) throws java.io.IOException;
+  public javax.imageio.metadata.IIOMetadata getStreamMetadata() throws javax.imageio.IIOException;
+  public int getWidth(int) throws java.io.IOException;
+  public int getHeight(int) throws java.io.IOException;
+  public java.util.Iterator<javax.imageio.ImageTypeSpecifier> getImageTypes(int) throws javax.imageio.IIOException;
+  public javax.imageio.metadata.IIOMetadata getImageMetadata(int) throws javax.imageio.IIOException;
+  public javax.imageio.metadata.IIOMetadata getStreamMetadata(int) throws javax.imageio.IIOException;
+  public boolean isRandomAccessEasy(int) throws java.io.IOException;
+  public boolean readSupportsThumbnails();
+  public boolean hasThumbnails(int);
+  public int getNumThumbnails(int) throws java.io.IOException;
+  public javax.imageio.ImageReadParam getDefaultReadParam();
+  public boolean isImageTiled(int) throws java.io.IOException;
+  public int getTileWidth(int) throws java.io.IOException;
+  public int getTileHeight(int) throws java.io.IOException;
+  public java.awt.image.BufferedImage readTile(int, int, int) throws java.io.IOException;
+  public boolean canReadRaster();
+  public java.awt.image.Raster readRaster(int, javax.imageio.ImageReadParam) throws java.io.IOException;
+  public java.awt.image.RenderedImage readAsRenderedImage(int, javax.imageio.ImageReadParam) throws java.io.IOException;
+  public java.awt.image.BufferedImage read(int, javax.imageio.ImageReadParam) throws java.io.IOException;
+  public void reset();
+  protected void resetLocal();
+  void forwardWarningMessage(java.lang.String);
+}

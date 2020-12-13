@@ -1,0 +1,11 @@
+Compiled from "ClientPropertyKey.java"
+final class javax.swing.ClientPropertyKey extends java.lang.Enum<javax.swing.ClientPropertyKey> {
+  public static final javax.swing.ClientPropertyKey JComponent_INPUT_VERIFIER;
+  public static final javax.swing.ClientPropertyKey JComponent_TRANSFER_HANDLER;
+  public static final javax.swing.ClientPropertyKey JComponent_ANCESTOR_NOTIFIER;
+  public static final javax.swing.ClientPropertyKey PopupFactory_FORCE_HEAVYWEIGHT_POPUP;
+  public static javax.swing.ClientPropertyKey[] values();
+  public static javax.swing.ClientPropertyKey valueOf(java.lang.String);
+  public boolean getReportValueNotSerializable();
+  static {};
+}

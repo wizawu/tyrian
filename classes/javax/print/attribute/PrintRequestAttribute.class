@@ -1,0 +1,3 @@
+Compiled from "PrintRequestAttribute.java"
+public interface javax.print.attribute.PrintRequestAttribute extends javax.print.attribute.Attribute {
+}

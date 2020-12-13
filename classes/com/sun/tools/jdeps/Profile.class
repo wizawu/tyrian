@@ -1,0 +1,20 @@
+Compiled from "Profile.java"
+final class com.sun.tools.jdeps.Profile extends java.lang.Enum<com.sun.tools.jdeps.Profile> {
+  public static final com.sun.tools.jdeps.Profile COMPACT1;
+  public static final com.sun.tools.jdeps.Profile COMPACT2;
+  public static final com.sun.tools.jdeps.Profile COMPACT3;
+  final java.lang.String name;
+  final int profile;
+  final java.lang.String[] mnames;
+  final java.util.Map<java.lang.String, com.sun.tools.jdeps.Module> modules;
+  public static com.sun.tools.jdeps.Profile[] values();
+  public static com.sun.tools.jdeps.Profile valueOf(java.lang.String);
+  public java.lang.String profileName();
+  public java.lang.String toString();
+  public static int getProfileCount();
+  public static com.sun.tools.jdeps.Profile getProfile(java.lang.String);
+  public static com.sun.tools.jdeps.Profile getProfile(com.sun.tools.jdeps.Module);
+  static synchronized void init(java.util.Map<java.lang.String, com.sun.tools.jdeps.Module>);
+  public static void main(java.lang.String[]) throws java.io.IOException;
+  static {};
+}

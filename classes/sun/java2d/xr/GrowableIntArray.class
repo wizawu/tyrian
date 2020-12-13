@@ -1,0 +1,16 @@
+Compiled from "GrowableIntArray.java"
+public class sun.java2d.xr.GrowableIntArray {
+  int[] array;
+  int size;
+  int cellSize;
+  public sun.java2d.xr.GrowableIntArray(int, int);
+  public int[] getArray();
+  public int[] getSizedArray();
+  public final int getNextIndex();
+  protected final int getCellIndex(int);
+  public final int getInt(int);
+  public final void addInt(int);
+  public final int getSize();
+  public void clear();
+  protected void growArray();
+}

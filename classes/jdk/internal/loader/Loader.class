@@ -1,0 +1,18 @@
+Compiled from "Loader.java"
+public final class jdk.internal.loader.Loader extends java.security.SecureClassLoader {
+  static final boolean $assertionsDisabled;
+  public jdk.internal.loader.Loader(java.lang.module.ResolvedModule, jdk.internal.loader.LoaderPool, java.lang.ClassLoader);
+  public jdk.internal.loader.Loader(java.util.Collection<java.lang.module.ResolvedModule>, java.lang.ClassLoader);
+  public jdk.internal.loader.Loader initRemotePackageMap(java.lang.module.Configuration, java.util.List<java.lang.ModuleLayer>);
+  public jdk.internal.loader.LoaderPool pool();
+  protected java.net.URL findResource(java.lang.String, java.lang.String) throws java.io.IOException;
+  public java.net.URL findResource(java.lang.String);
+  public java.util.Enumeration<java.net.URL> findResources(java.lang.String) throws java.io.IOException;
+  public java.net.URL getResource(java.lang.String);
+  public java.util.Enumeration<java.net.URL> getResources(java.lang.String) throws java.io.IOException;
+  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  protected java.lang.Class<?> findClass(java.lang.String, java.lang.String);
+  protected java.lang.Class<?> loadClass(java.lang.String, boolean) throws java.lang.ClassNotFoundException;
+  protected java.security.PermissionCollection getPermissions(java.security.CodeSource);
+  static {};
+}

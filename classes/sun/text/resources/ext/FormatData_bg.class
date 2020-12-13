@@ -1,0 +1,5 @@
+Compiled from "FormatData_bg.java"
+public class sun.text.resources.ext.FormatData_bg extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_bg();
+  protected final java.lang.Object[][] getContents();
+}

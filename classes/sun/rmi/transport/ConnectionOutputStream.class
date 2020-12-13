@@ -1,0 +1,11 @@
+Compiled from "ConnectionOutputStream.java"
+class sun.rmi.transport.ConnectionOutputStream extends sun.rmi.server.MarshalOutputStream {
+  static final boolean $assertionsDisabled;
+  sun.rmi.transport.ConnectionOutputStream(sun.rmi.transport.Connection, boolean) throws java.io.IOException;
+  void writeID() throws java.io.IOException;
+  boolean isResultStream();
+  void saveObject(java.lang.Object);
+  sun.rmi.transport.DGCAckHandler getDGCAckHandler();
+  void done();
+  static {};
+}

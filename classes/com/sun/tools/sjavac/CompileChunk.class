@@ -1,0 +1,12 @@
+Compiled from "CompileChunk.java"
+public class com.sun.tools.sjavac.CompileChunk implements java.lang.Comparable<com.sun.tools.sjavac.CompileChunk> {
+  public int numPackages;
+  public int numDependents;
+  public java.util.Set<java.net.URI> srcs;
+  public java.lang.StringBuilder pkgNames;
+  public java.lang.String pkgFromTos;
+  public com.sun.tools.sjavac.CompileChunk();
+  public int compareTo(com.sun.tools.sjavac.CompileChunk);
+  boolean equal(com.sun.tools.sjavac.CompileChunk);
+  public int compareTo(java.lang.Object);
+}

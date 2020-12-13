@@ -1,0 +1,31 @@
+Compiled from "ContinuousArrayData.java"
+public abstract class jdk.nashorn.internal.runtime.arrays.ContinuousArrayData extends jdk.nashorn.internal.runtime.arrays.ArrayData {
+  protected static final java.lang.invoke.MethodHandle FAST_ACCESS_GUARD;
+  protected jdk.nashorn.internal.runtime.arrays.ContinuousArrayData(long);
+  public final boolean hasRoomFor(int);
+  public boolean isEmpty();
+  public abstract java.lang.invoke.MethodHandle getElementGetter(java.lang.Class<?>, int);
+  public abstract java.lang.invoke.MethodHandle getElementSetter(java.lang.Class<?>);
+  protected final int throwHas(int);
+  public abstract jdk.nashorn.internal.runtime.arrays.ContinuousArrayData copy();
+  public abstract java.lang.Class<?> getElementType();
+  public jdk.nashorn.internal.codegen.types.Type getOptimisticType();
+  public abstract java.lang.Class<?> getBoxedElementType();
+  public jdk.nashorn.internal.runtime.arrays.ContinuousArrayData widest(jdk.nashorn.internal.runtime.arrays.ContinuousArrayData);
+  protected final java.lang.invoke.MethodHandle getContinuousElementGetter(java.lang.invoke.MethodHandle, java.lang.Class<?>, int);
+  protected final java.lang.invoke.MethodHandle getContinuousElementSetter(java.lang.invoke.MethodHandle, java.lang.Class<?>);
+  protected java.lang.invoke.MethodHandle getContinuousElementGetter(java.lang.Class<? extends jdk.nashorn.internal.runtime.arrays.ContinuousArrayData>, java.lang.invoke.MethodHandle, java.lang.Class<?>, int);
+  protected java.lang.invoke.MethodHandle getContinuousElementSetter(java.lang.Class<? extends jdk.nashorn.internal.runtime.arrays.ContinuousArrayData>, java.lang.invoke.MethodHandle, java.lang.Class<?>);
+  public jdk.dynalink.linker.GuardedInvocation findFastGetIndexMethod(java.lang.Class<? extends jdk.nashorn.internal.runtime.arrays.ArrayData>, jdk.dynalink.CallSiteDescriptor, jdk.dynalink.linker.LinkRequest);
+  public jdk.dynalink.linker.GuardedInvocation findFastSetIndexMethod(java.lang.Class<? extends jdk.nashorn.internal.runtime.arrays.ArrayData>, jdk.dynalink.CallSiteDescriptor, jdk.dynalink.linker.LinkRequest);
+  public double fastPush(int);
+  public double fastPush(long);
+  public double fastPush(double);
+  public double fastPush(java.lang.Object);
+  public int fastPopInt();
+  public double fastPopDouble();
+  public java.lang.Object fastPopObject();
+  public jdk.nashorn.internal.runtime.arrays.ContinuousArrayData fastConcat(jdk.nashorn.internal.runtime.arrays.ContinuousArrayData);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData copy();
+  static {};
+}

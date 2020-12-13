@@ -1,0 +1,6 @@
+Compiled from "StackPopLevel.java"
+public interface jdk.nashorn.internal.runtime.regexp.joni.constants.StackPopLevel {
+  public static final int FREE;
+  public static final int MEM_START;
+  public static final int ALL;
+}

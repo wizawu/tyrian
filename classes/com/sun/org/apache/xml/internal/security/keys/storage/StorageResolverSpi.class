@@ -1,0 +1,5 @@
+Compiled from "StorageResolverSpi.java"
+public abstract class com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi {
+  public com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi();
+  public abstract java.util.Iterator<java.security.cert.Certificate> getIterator();
+}

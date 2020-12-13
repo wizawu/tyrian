@@ -1,0 +1,4 @@
+Compiled from "InnerGlowEffect.java"
+class javax.swing.plaf.nimbus.InnerGlowEffect extends javax.swing.plaf.nimbus.InnerShadowEffect {
+  javax.swing.plaf.nimbus.InnerGlowEffect();
+}

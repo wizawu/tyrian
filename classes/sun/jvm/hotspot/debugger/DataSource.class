@@ -1,0 +1,11 @@
+Compiled from "DataSource.java"
+public interface sun.jvm.hotspot.debugger.DataSource {
+  public abstract byte readByte() throws java.io.IOException;
+  public abstract short readShort() throws java.io.IOException;
+  public abstract int readInt() throws java.io.IOException;
+  public abstract long readLong() throws java.io.IOException;
+  public abstract int read(byte[]) throws java.io.IOException;
+  public abstract void seek(long) throws java.io.IOException;
+  public abstract long getFilePointer() throws java.io.IOException;
+  public abstract void close() throws java.io.IOException;
+}

@@ -1,0 +1,10 @@
+Compiled from "DigesterOutputStream.java"
+public class com.sun.org.apache.xml.internal.security.utils.DigesterOutputStream extends java.io.ByteArrayOutputStream {
+  final com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm mda;
+  public com.sun.org.apache.xml.internal.security.utils.DigesterOutputStream(com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm);
+  public void write(byte[]);
+  public void write(int);
+  public void write(byte[], int, int);
+  public byte[] getDigestValue();
+  static {};
+}

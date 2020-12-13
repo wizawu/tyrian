@@ -1,0 +1,18 @@
+Compiled from "RMIConnector.java"
+public class javax.management.remote.rmi.RMIConnector implements javax.management.remote.JMXConnector,java.io.Serializable,javax.management.remote.JMXAddressable {
+  public javax.management.remote.rmi.RMIConnector(javax.management.remote.JMXServiceURL, java.util.Map<java.lang.String, ?>);
+  public javax.management.remote.rmi.RMIConnector(javax.management.remote.rmi.RMIServer, java.util.Map<java.lang.String, ?>);
+  public java.lang.String toString();
+  public javax.management.remote.JMXServiceURL getAddress();
+  public void connect() throws java.io.IOException;
+  public synchronized void connect(java.util.Map<java.lang.String, ?>) throws java.io.IOException;
+  public synchronized java.lang.String getConnectionId() throws java.io.IOException;
+  public synchronized javax.management.MBeanServerConnection getMBeanServerConnection() throws java.io.IOException;
+  public synchronized javax.management.MBeanServerConnection getMBeanServerConnection(javax.security.auth.Subject) throws java.io.IOException;
+  public void addConnectionNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object);
+  public void removeConnectionNotificationListener(javax.management.NotificationListener) throws javax.management.ListenerNotFoundException;
+  public void removeConnectionNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) throws javax.management.ListenerNotFoundException;
+  public synchronized void close() throws java.io.IOException;
+  static java.lang.String getAttributesNames(javax.management.AttributeList);
+  static {};
+}

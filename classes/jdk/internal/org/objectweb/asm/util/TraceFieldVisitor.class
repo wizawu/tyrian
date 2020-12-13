@@ -1,0 +1,10 @@
+Compiled from "TraceFieldVisitor.java"
+public final class jdk.internal.org.objectweb.asm.util.TraceFieldVisitor extends jdk.internal.org.objectweb.asm.FieldVisitor {
+  public final jdk.internal.org.objectweb.asm.util.Printer p;
+  public jdk.internal.org.objectweb.asm.util.TraceFieldVisitor(jdk.internal.org.objectweb.asm.util.Printer);
+  public jdk.internal.org.objectweb.asm.util.TraceFieldVisitor(jdk.internal.org.objectweb.asm.FieldVisitor, jdk.internal.org.objectweb.asm.util.Printer);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitAnnotation(java.lang.String, boolean);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitTypeAnnotation(int, jdk.internal.org.objectweb.asm.TypePath, java.lang.String, boolean);
+  public void visitAttribute(jdk.internal.org.objectweb.asm.Attribute);
+  public void visitEnd();
+}

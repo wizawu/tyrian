@@ -1,0 +1,20 @@
+Compiled from "ChunkHeader.java"
+public final class jdk.jfr.internal.consumer.ChunkHeader {
+  public jdk.jfr.internal.consumer.ChunkHeader(jdk.jfr.internal.consumer.RecordingInput) throws java.io.IOException;
+  public jdk.jfr.internal.consumer.ChunkHeader nextHeader() throws java.io.IOException;
+  public jdk.jfr.internal.MetadataDescriptor readMetadata() throws java.io.IOException;
+  public boolean isLastChunk();
+  public short getMajor();
+  public short getMinor();
+  public long getAbsoluteChunkStart();
+  public long getConstantPoolPosition();
+  public long getStartTicks();
+  public double getTicksPerSecond();
+  public long getStartNanos();
+  public long getEnd();
+  public long getSize();
+  public long getDurationNanos();
+  public jdk.jfr.internal.consumer.RecordingInput getInput();
+  public long getEventStart();
+  static {};
+}

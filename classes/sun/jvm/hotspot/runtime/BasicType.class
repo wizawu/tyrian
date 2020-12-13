@@ -1,0 +1,43 @@
+Compiled from "BasicType.java"
+public class sun.jvm.hotspot.runtime.BasicType {
+  public static final sun.jvm.hotspot.runtime.BasicType T_BOOLEAN;
+  public static final sun.jvm.hotspot.runtime.BasicType T_CHAR;
+  public static final sun.jvm.hotspot.runtime.BasicType T_FLOAT;
+  public static final sun.jvm.hotspot.runtime.BasicType T_DOUBLE;
+  public static final sun.jvm.hotspot.runtime.BasicType T_BYTE;
+  public static final sun.jvm.hotspot.runtime.BasicType T_SHORT;
+  public static final sun.jvm.hotspot.runtime.BasicType T_INT;
+  public static final sun.jvm.hotspot.runtime.BasicType T_LONG;
+  public static final sun.jvm.hotspot.runtime.BasicType T_OBJECT;
+  public static final sun.jvm.hotspot.runtime.BasicType T_ARRAY;
+  public static final sun.jvm.hotspot.runtime.BasicType T_VOID;
+  public static final sun.jvm.hotspot.runtime.BasicType T_ADDRESS;
+  public static final sun.jvm.hotspot.runtime.BasicType T_NARROWOOP;
+  public static final sun.jvm.hotspot.runtime.BasicType T_METADATA;
+  public static final sun.jvm.hotspot.runtime.BasicType T_NARROWKLASS;
+  public static final sun.jvm.hotspot.runtime.BasicType T_CONFLICT;
+  public static final sun.jvm.hotspot.runtime.BasicType T_ILLEGAL;
+  public static int getTBoolean();
+  public static int getTChar();
+  public static int getTFloat();
+  public static int getTDouble();
+  public static int getTByte();
+  public static int getTShort();
+  public static int getTInt();
+  public static int getTLong();
+  public static int getTObject();
+  public static int getTArray();
+  public static int getTVoid();
+  public static int getTAddress();
+  public static int getTNarrowOop();
+  public static int getTMetadata();
+  public static int getTNarrowKlass();
+  public static int getTConflict();
+  public static int getTIllegal();
+  public static sun.jvm.hotspot.runtime.BasicType intToBasicType(int);
+  public static sun.jvm.hotspot.runtime.BasicType charToBasicType(char);
+  public static int charToType(char);
+  public int getType();
+  public java.lang.String getName();
+  static {};
+}

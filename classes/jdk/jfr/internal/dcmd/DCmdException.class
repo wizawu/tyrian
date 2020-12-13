@@ -1,0 +1,5 @@
+Compiled from "DCmdException.java"
+final class jdk.jfr.internal.dcmd.DCmdException extends java.lang.Exception {
+  public jdk.jfr.internal.dcmd.DCmdException(java.lang.String, java.lang.Object...);
+  public jdk.jfr.internal.dcmd.DCmdException(java.lang.Throwable, java.lang.String, java.lang.Object...);
+}

@@ -1,0 +1,12 @@
+Compiled from "GeneralName.java"
+public class sun.security.x509.GeneralName {
+  public sun.security.x509.GeneralName(sun.security.x509.GeneralNameInterface);
+  public sun.security.x509.GeneralName(sun.security.util.DerValue) throws java.io.IOException;
+  public sun.security.x509.GeneralName(sun.security.util.DerValue, boolean) throws java.io.IOException;
+  public int getType();
+  public sun.security.x509.GeneralNameInterface getName();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+}

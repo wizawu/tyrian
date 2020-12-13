@@ -1,0 +1,5 @@
+Compiled from "ParserContextLabelNode.java"
+class jdk.nashorn.internal.parser.ParserContextLabelNode extends jdk.nashorn.internal.parser.ParserContextBaseNode {
+  public jdk.nashorn.internal.parser.ParserContextLabelNode(java.lang.String);
+  public java.lang.String getLabelName();
+}

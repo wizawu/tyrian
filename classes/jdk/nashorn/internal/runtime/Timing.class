@@ -1,0 +1,14 @@
+Compiled from "Timing.java"
+public final class jdk.nashorn.internal.runtime.Timing implements jdk.nashorn.internal.runtime.logging.Loggable {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.runtime.Timing(boolean);
+  public java.lang.String getLogInfo();
+  public java.lang.String[] getLogInfoLines();
+  boolean isEnabled();
+  public void accumulateTime(java.lang.String, long);
+  static java.lang.String getLoggerName();
+  public jdk.nashorn.internal.runtime.logging.DebugLogger initLogger(jdk.nashorn.internal.runtime.Context);
+  public jdk.nashorn.internal.runtime.logging.DebugLogger getLogger();
+  public static java.lang.String toMillisPrint(long);
+  static {};
+}

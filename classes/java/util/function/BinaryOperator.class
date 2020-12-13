@@ -1,0 +1,5 @@
+Compiled from "BinaryOperator.java"
+public interface java.util.function.BinaryOperator<T> extends java.util.function.BiFunction<T, T, T> {
+  public static <T> java.util.function.BinaryOperator<T> minBy(java.util.Comparator<? super T>);
+  public static <T> java.util.function.BinaryOperator<T> maxBy(java.util.Comparator<? super T>);
+}

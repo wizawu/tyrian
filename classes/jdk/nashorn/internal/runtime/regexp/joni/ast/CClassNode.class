@@ -1,0 +1,34 @@
+Compiled from "CClassNode.java"
+public final class jdk.nashorn.internal.runtime.regexp.joni.ast.CClassNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.Node {
+  int flags;
+  public final jdk.nashorn.internal.runtime.regexp.joni.BitSet bs;
+  public jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer mbuf;
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.CClassNode();
+  public void clear();
+  public int getType();
+  public java.lang.String getName();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString(int);
+  public java.lang.String flagsToString();
+  public boolean isEmpty();
+  public void addCodeRangeToBuf(int, int);
+  public void addCodeRange(jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment, int, int);
+  public void addAllMultiByteRange();
+  public void clearNotFlag();
+  public void and(jdk.nashorn.internal.runtime.regexp.joni.ast.CClassNode);
+  public void or(jdk.nashorn.internal.runtime.regexp.joni.ast.CClassNode);
+  public void addCTypeByRange(int, boolean, int, int[]);
+  public void addCType(int, boolean, jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment, jdk.nashorn.internal.runtime.regexp.joni.encoding.IntHolder);
+  public void nextStateClass(jdk.nashorn.internal.runtime.regexp.joni.ast.CClassNode$CCStateArg, jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment);
+  public void nextStateValue(jdk.nashorn.internal.runtime.regexp.joni.ast.CClassNode$CCStateArg, jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment);
+  public boolean isCodeInCCLength(int);
+  public boolean isCodeInCC(int);
+  public void setNot();
+  public void clearNot();
+  public boolean isNot();
+  public void setShare();
+  public void clearShare();
+  public boolean isShare();
+  static {};
+}

@@ -1,0 +1,8 @@
+Compiled from "DeferredTextImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DeferredTextImpl extends com.sun.org.apache.xerces.internal.dom.TextImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
+  static final long serialVersionUID;
+  protected transient int fNodeIndex;
+  com.sun.org.apache.xerces.internal.dom.DeferredTextImpl(com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl, int);
+  public int getNodeIndex();
+  protected void synchronizeData();
+}

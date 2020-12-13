@@ -1,0 +1,16 @@
+Compiled from "LocaleData.java"
+public class sun.util.resources.LocaleData {
+  public sun.util.resources.LocaleData(sun.util.locale.provider.LocaleProviderAdapter$Type);
+  public java.util.ResourceBundle getCalendarData(java.util.Locale);
+  public sun.util.resources.OpenListResourceBundle getCurrencyNames(java.util.Locale);
+  public sun.util.resources.OpenListResourceBundle getLocaleNames(java.util.Locale);
+  public sun.util.resources.TimeZoneNamesBundle getTimeZoneNames(java.util.Locale);
+  public java.util.ResourceBundle getBreakIteratorInfo(java.util.Locale);
+  public java.util.ResourceBundle getBreakIteratorResources(java.util.Locale);
+  public java.util.ResourceBundle getCollationData(java.util.Locale);
+  public java.util.ResourceBundle getDateFormatData(java.util.Locale);
+  public void setSupplementary(sun.util.resources.ParallelListResourceBundle);
+  public java.util.ResourceBundle getNumberFormatData(java.util.Locale);
+  public static java.util.ResourceBundle getBundle(java.lang.String, java.util.Locale);
+  static {};
+}

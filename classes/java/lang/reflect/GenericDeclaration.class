@@ -1,0 +1,4 @@
+Compiled from "GenericDeclaration.java"
+public interface java.lang.reflect.GenericDeclaration extends java.lang.reflect.AnnotatedElement {
+  public abstract java.lang.reflect.TypeVariable<?>[] getTypeParameters();
+}

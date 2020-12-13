@@ -1,0 +1,25 @@
+Compiled from "ReasonFlags.java"
+public class sun.security.x509.ReasonFlags {
+  public static final java.lang.String UNUSED;
+  public static final java.lang.String KEY_COMPROMISE;
+  public static final java.lang.String CA_COMPROMISE;
+  public static final java.lang.String AFFILIATION_CHANGED;
+  public static final java.lang.String SUPERSEDED;
+  public static final java.lang.String CESSATION_OF_OPERATION;
+  public static final java.lang.String CERTIFICATE_HOLD;
+  public static final java.lang.String PRIVILEGE_WITHDRAWN;
+  public static final java.lang.String AA_COMPROMISE;
+  public sun.security.x509.ReasonFlags(byte[]);
+  public sun.security.x509.ReasonFlags(boolean[]);
+  public sun.security.x509.ReasonFlags(sun.security.util.BitArray);
+  public sun.security.x509.ReasonFlags(sun.security.util.DerInputStream) throws java.io.IOException;
+  public sun.security.x509.ReasonFlags(sun.security.util.DerValue) throws java.io.IOException;
+  public boolean[] getFlags();
+  public void set(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public java.lang.Object get(java.lang.String) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  public java.lang.String toString();
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  static {};
+}

@@ -1,0 +1,4 @@
+Compiled from "BitMapClosure.java"
+public interface sun.jvm.hotspot.utilities.BitMapClosure {
+  public abstract void doBit(int);
+}

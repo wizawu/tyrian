@@ -1,0 +1,16 @@
+Compiled from "BufferedImageFilter.java"
+public class java.awt.image.BufferedImageFilter extends java.awt.image.ImageFilter implements java.lang.Cloneable {
+  java.awt.image.BufferedImageOp bufferedImageOp;
+  java.awt.image.ColorModel model;
+  int width;
+  int height;
+  byte[] bytePixels;
+  int[] intPixels;
+  public java.awt.image.BufferedImageFilter(java.awt.image.BufferedImageOp);
+  public java.awt.image.BufferedImageOp getBufferedImageOp();
+  public void setDimensions(int, int);
+  public void setColorModel(java.awt.image.ColorModel);
+  public void setPixels(int, int, int, int, java.awt.image.ColorModel, byte[], int, int);
+  public void setPixels(int, int, int, int, java.awt.image.ColorModel, int[], int, int);
+  public void imageComplete(int);
+}

@@ -1,0 +1,16 @@
+Compiled from "ModelIdentifier.java"
+public final class com.sun.media.sound.ModelIdentifier {
+  public com.sun.media.sound.ModelIdentifier(java.lang.String);
+  public com.sun.media.sound.ModelIdentifier(java.lang.String, int);
+  public com.sun.media.sound.ModelIdentifier(java.lang.String, java.lang.String);
+  public com.sun.media.sound.ModelIdentifier(java.lang.String, java.lang.String, int);
+  public int getInstance();
+  public void setInstance(int);
+  public java.lang.String getObject();
+  public void setObject(java.lang.String);
+  public java.lang.String getVariable();
+  public void setVariable(java.lang.String);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

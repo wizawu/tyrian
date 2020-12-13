@@ -1,0 +1,5 @@
+Compiled from "NoInitialContextException.java"
+public class javax.naming.NoInitialContextException extends javax.naming.NamingException {
+  public javax.naming.NoInitialContextException();
+  public javax.naming.NoInitialContextException(java.lang.String);
+}

@@ -1,0 +1,12 @@
+Compiled from "DocLink.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.DocLink {
+  final jdk.javadoc.internal.doclets.toolkit.util.DocPath path;
+  final java.lang.String query;
+  final java.lang.String fragment;
+  public static jdk.javadoc.internal.doclets.toolkit.util.DocLink fragment(java.lang.String);
+  public jdk.javadoc.internal.doclets.toolkit.util.DocLink(jdk.javadoc.internal.doclets.toolkit.util.DocPath);
+  public jdk.javadoc.internal.doclets.toolkit.util.DocLink(jdk.javadoc.internal.doclets.toolkit.util.DocPath, java.lang.String, java.lang.String);
+  public jdk.javadoc.internal.doclets.toolkit.util.DocLink(java.lang.String, java.lang.String, java.lang.String);
+  public jdk.javadoc.internal.doclets.toolkit.util.DocLink relativizeAgainst(jdk.javadoc.internal.doclets.toolkit.util.DocPath);
+  public java.lang.String toString();
+}

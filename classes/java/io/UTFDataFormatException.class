@@ -1,0 +1,5 @@
+Compiled from "UTFDataFormatException.java"
+public class java.io.UTFDataFormatException extends java.io.IOException {
+  public java.io.UTFDataFormatException();
+  public java.io.UTFDataFormatException(java.lang.String);
+}

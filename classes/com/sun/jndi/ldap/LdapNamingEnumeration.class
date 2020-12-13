@@ -1,0 +1,7 @@
+Compiled from "LdapNamingEnumeration.java"
+final class com.sun.jndi.ldap.LdapNamingEnumeration extends com.sun.jndi.ldap.AbstractLdapNamingEnumeration<javax.naming.NameClassPair> {
+  com.sun.jndi.ldap.LdapNamingEnumeration(com.sun.jndi.ldap.LdapCtx, com.sun.jndi.ldap.LdapResult, javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NameClassPair createItem(java.lang.String, javax.naming.directory.Attributes, java.util.Vector<javax.naming.ldap.Control>) throws javax.naming.NamingException;
+  protected com.sun.jndi.ldap.AbstractLdapNamingEnumeration<? extends javax.naming.NameClassPair> getReferredResults(com.sun.jndi.ldap.LdapReferralContext) throws javax.naming.NamingException;
+  static {};
+}

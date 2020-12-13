@@ -1,0 +1,5 @@
+Compiled from "ZipException.java"
+public class java.util.zip.ZipException extends java.io.IOException {
+  public java.util.zip.ZipException();
+  public java.util.zip.ZipException(java.lang.String);
+}

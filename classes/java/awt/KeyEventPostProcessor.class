@@ -1,0 +1,4 @@
+Compiled from "KeyEventPostProcessor.java"
+public interface java.awt.KeyEventPostProcessor {
+  public abstract boolean postProcessKeyEvent(java.awt.event.KeyEvent);
+}

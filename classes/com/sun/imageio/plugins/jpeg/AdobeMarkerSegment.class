@@ -1,0 +1,15 @@
+Compiled from "AdobeMarkerSegment.java"
+class com.sun.imageio.plugins.jpeg.AdobeMarkerSegment extends com.sun.imageio.plugins.jpeg.MarkerSegment {
+  int version;
+  int flags0;
+  int flags1;
+  int transform;
+  com.sun.imageio.plugins.jpeg.AdobeMarkerSegment(int);
+  com.sun.imageio.plugins.jpeg.AdobeMarkerSegment(com.sun.imageio.plugins.jpeg.JPEGBuffer) throws java.io.IOException;
+  com.sun.imageio.plugins.jpeg.AdobeMarkerSegment(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  javax.imageio.metadata.IIOMetadataNode getNativeNode();
+  void updateFromNativeNode(org.w3c.dom.Node, boolean) throws javax.imageio.metadata.IIOInvalidTreeException;
+  void write(javax.imageio.stream.ImageOutputStream) throws java.io.IOException;
+  static void writeAdobeSegment(javax.imageio.stream.ImageOutputStream, int) throws java.io.IOException;
+  void print();
+}

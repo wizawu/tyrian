@@ -1,0 +1,5 @@
+Compiled from "WildcardType.java"
+public interface javax.lang.model.type.WildcardType extends javax.lang.model.type.TypeMirror {
+  public abstract javax.lang.model.type.TypeMirror getExtendsBound();
+  public abstract javax.lang.model.type.TypeMirror getSuperBound();
+}

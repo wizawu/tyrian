@@ -1,0 +1,10 @@
+Compiled from "TimestampToken.java"
+public class sun.security.timestamp.TimestampToken {
+  public sun.security.timestamp.TimestampToken(byte[]) throws java.io.IOException;
+  public java.util.Date getDate();
+  public sun.security.x509.AlgorithmId getHashAlgorithm();
+  public byte[] getHashedMessage();
+  public java.math.BigInteger getNonce();
+  public java.lang.String getPolicyID();
+  public java.math.BigInteger getSerialNumber();
+}

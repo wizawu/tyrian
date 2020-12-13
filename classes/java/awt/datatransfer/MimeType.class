@@ -1,0 +1,23 @@
+Compiled from "MimeType.java"
+class java.awt.datatransfer.MimeType implements java.io.Externalizable,java.lang.Cloneable {
+  static final long serialVersionUID;
+  public java.awt.datatransfer.MimeType();
+  public java.awt.datatransfer.MimeType(java.lang.String) throws java.awt.datatransfer.MimeTypeParseException;
+  public java.awt.datatransfer.MimeType(java.lang.String, java.lang.String) throws java.awt.datatransfer.MimeTypeParseException;
+  public java.awt.datatransfer.MimeType(java.lang.String, java.lang.String, java.awt.datatransfer.MimeTypeParameterList) throws java.awt.datatransfer.MimeTypeParseException;
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String getPrimaryType();
+  public java.lang.String getSubType();
+  public java.awt.datatransfer.MimeTypeParameterList getParameters();
+  public java.lang.String getParameter(java.lang.String);
+  public void setParameter(java.lang.String, java.lang.String);
+  public void removeParameter(java.lang.String);
+  public java.lang.String toString();
+  public java.lang.String getBaseType();
+  public boolean match(java.awt.datatransfer.MimeType);
+  public boolean match(java.lang.String) throws java.awt.datatransfer.MimeTypeParseException;
+  public void writeExternal(java.io.ObjectOutput) throws java.io.IOException;
+  public void readExternal(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+  public java.lang.Object clone();
+}

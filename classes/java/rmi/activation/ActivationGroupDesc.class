@@ -1,0 +1,12 @@
+Compiled from "ActivationGroupDesc.java"
+public final class java.rmi.activation.ActivationGroupDesc implements java.io.Serializable {
+  public java.rmi.activation.ActivationGroupDesc(java.util.Properties, java.rmi.activation.ActivationGroupDesc$CommandEnvironment);
+  public java.rmi.activation.ActivationGroupDesc(java.lang.String, java.lang.String, java.rmi.MarshalledObject<?>, java.util.Properties, java.rmi.activation.ActivationGroupDesc$CommandEnvironment);
+  public java.lang.String getClassName();
+  public java.lang.String getLocation();
+  public java.rmi.MarshalledObject<?> getData();
+  public java.util.Properties getPropertyOverrides();
+  public java.rmi.activation.ActivationGroupDesc$CommandEnvironment getCommandEnvironment();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

@@ -1,0 +1,7 @@
+Compiled from "PerfDataBuffer.java"
+public class sun.jvmstat.perfdata.monitor.protocol.rmi.PerfDataBuffer extends sun.jvmstat.perfdata.monitor.AbstractPerfDataBuffer {
+  static final boolean $assertionsDisabled;
+  public sun.jvmstat.perfdata.monitor.protocol.rmi.PerfDataBuffer(sun.jvmstat.monitor.remote.RemoteVm, int) throws sun.jvmstat.monitor.MonitorException;
+  public void sample(java.nio.ByteBuffer) throws java.rmi.RemoteException;
+  static {};
+}

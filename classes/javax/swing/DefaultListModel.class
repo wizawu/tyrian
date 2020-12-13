@@ -1,0 +1,38 @@
+Compiled from "DefaultListModel.java"
+public class javax.swing.DefaultListModel<E> extends javax.swing.AbstractListModel<E> {
+  public javax.swing.DefaultListModel();
+  public int getSize();
+  public E getElementAt(int);
+  public void copyInto(java.lang.Object[]);
+  public void trimToSize();
+  public void ensureCapacity(int);
+  public void setSize(int);
+  public int capacity();
+  public int size();
+  public boolean isEmpty();
+  public java.util.Enumeration<E> elements();
+  public boolean contains(java.lang.Object);
+  public int indexOf(java.lang.Object);
+  public int indexOf(java.lang.Object, int);
+  public int lastIndexOf(java.lang.Object);
+  public int lastIndexOf(java.lang.Object, int);
+  public E elementAt(int);
+  public E firstElement();
+  public E lastElement();
+  public void setElementAt(E, int);
+  public void removeElementAt(int);
+  public void insertElementAt(E, int);
+  public void addElement(E);
+  public boolean removeElement(java.lang.Object);
+  public void removeAllElements();
+  public java.lang.String toString();
+  public java.lang.Object[] toArray();
+  public E get(int);
+  public E set(int, E);
+  public void add(int, E);
+  public E remove(int);
+  public void clear();
+  public void removeRange(int, int);
+  public void addAll(java.util.Collection<? extends E>);
+  public void addAll(int, java.util.Collection<? extends E>);
+}

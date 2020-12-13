@@ -1,0 +1,20 @@
+Compiled from "KrbApReq.java"
+public class sun.security.krb5.KrbApReq {
+  public sun.security.krb5.KrbApReq(sun.security.krb5.Credentials, boolean, boolean, boolean, sun.security.krb5.Checksum) throws sun.security.krb5.Asn1Exception, sun.security.krb5.KrbCryptoException, sun.security.krb5.KrbException, java.io.IOException;
+  public sun.security.krb5.KrbApReq(byte[], sun.security.jgss.krb5.Krb5AcceptCredential, java.net.InetAddress) throws sun.security.krb5.KrbException, java.io.IOException;
+  sun.security.krb5.KrbApReq(sun.security.krb5.internal.APOptions, sun.security.krb5.internal.Ticket, sun.security.krb5.EncryptionKey, sun.security.krb5.PrincipalName, sun.security.krb5.Checksum, sun.security.krb5.internal.KerberosTime, sun.security.krb5.EncryptionKey, sun.security.krb5.internal.SeqNumber, sun.security.krb5.internal.AuthorizationData) throws sun.security.krb5.Asn1Exception, java.io.IOException, sun.security.krb5.internal.KdcErrException, sun.security.krb5.KrbCryptoException;
+  void decode() throws sun.security.krb5.KrbException, java.io.IOException;
+  void decode(sun.security.util.DerValue) throws sun.security.krb5.KrbException, java.io.IOException;
+  public sun.security.krb5.Credentials getCreds();
+  sun.security.krb5.internal.KerberosTime getCtime();
+  int cusec();
+  sun.security.krb5.internal.APOptions getAPOptions() throws sun.security.krb5.KrbException, java.io.IOException;
+  public boolean getMutualAuthRequired() throws sun.security.krb5.KrbException, java.io.IOException;
+  boolean useSessionKey() throws sun.security.krb5.KrbException, java.io.IOException;
+  public sun.security.krb5.EncryptionKey getSubKey();
+  public java.lang.Integer getSeqNumber();
+  public sun.security.krb5.Checksum getChecksum();
+  public byte[] getMessage();
+  public sun.security.krb5.PrincipalName getClient();
+  static {};
+}

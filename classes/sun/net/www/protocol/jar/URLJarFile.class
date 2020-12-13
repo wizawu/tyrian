@@ -1,0 +1,12 @@
+Compiled from "URLJarFile.java"
+public class sun.net.www.protocol.jar.URLJarFile extends java.util.jar.JarFile {
+  static java.util.jar.JarFile getJarFile(java.net.URL) throws java.io.IOException;
+  static java.util.jar.JarFile getJarFile(java.net.URL, sun.net.www.protocol.jar.URLJarFile$URLJarFileCloseController) throws java.io.IOException;
+  public sun.net.www.protocol.jar.URLJarFile(java.io.File) throws java.io.IOException;
+  public sun.net.www.protocol.jar.URLJarFile(java.io.File, sun.net.www.protocol.jar.URLJarFile$URLJarFileCloseController) throws java.io.IOException;
+  public java.util.zip.ZipEntry getEntry(java.lang.String);
+  public java.util.jar.Manifest getManifest() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public static void setCallBack(sun.net.www.protocol.jar.URLJarFileCallBack);
+  static {};
+}

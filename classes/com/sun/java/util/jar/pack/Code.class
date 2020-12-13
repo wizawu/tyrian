@@ -1,0 +1,48 @@
+Compiled from "Code.java"
+class com.sun.java.util.jar.pack.Code extends com.sun.java.util.jar.pack.Attribute$Holder {
+  com.sun.java.util.jar.pack.Package$Class$Method m;
+  int max_stack;
+  int max_locals;
+  com.sun.java.util.jar.pack.ConstantPool$Entry[] handler_class;
+  int[] handler_start;
+  int[] handler_end;
+  int[] handler_catch;
+  byte[] bytes;
+  com.sun.java.util.jar.pack.Fixups fixups;
+  java.lang.Object insnMap;
+  static final boolean shrinkMaps;
+  static final boolean $assertionsDisabled;
+  public com.sun.java.util.jar.pack.Code(com.sun.java.util.jar.pack.Package$Class$Method);
+  public com.sun.java.util.jar.pack.Package$Class$Method getMethod();
+  public com.sun.java.util.jar.pack.Package$Class thisClass();
+  public com.sun.java.util.jar.pack.Package getPackage();
+  public com.sun.java.util.jar.pack.ConstantPool$Entry[] getCPMap();
+  int getLength();
+  int getMaxStack();
+  void setMaxStack(int);
+  int getMaxNALocals();
+  void setMaxNALocals(int);
+  int getHandlerCount();
+  void setHandlerCount(int);
+  void setBytes(byte[]);
+  void setInstructionMap(int[], int);
+  void setInstructionMap(int[]);
+  int[] getInstructionMap();
+  void addFixups(java.util.Collection<com.sun.java.util.jar.pack.Fixups$Fixup>);
+  public void trimToSize();
+  protected void visitRefs(int, java.util.Collection<com.sun.java.util.jar.pack.ConstantPool$Entry>);
+  java.lang.Object getInsnMap();
+  public int encodeBCI(int);
+  public int decodeBCI(int);
+  public void finishRefs(com.sun.java.util.jar.pack.ConstantPool$Index);
+  com.sun.java.util.jar.pack.Instruction instructionAt(int);
+  static boolean flagsRequireCode(int);
+  public java.lang.String toString();
+  public int getInt(int);
+  public int getShort(int);
+  public int getByte(int);
+  void setInt(int, int);
+  void setShort(int, int);
+  void setByte(int, int);
+  static {};
+}

@@ -1,0 +1,12 @@
+Compiled from "CertificateFactorySpi.java"
+public abstract class java.security.cert.CertificateFactorySpi {
+  public java.security.cert.CertificateFactorySpi();
+  public abstract java.security.cert.Certificate engineGenerateCertificate(java.io.InputStream) throws java.security.cert.CertificateException;
+  public java.security.cert.CertPath engineGenerateCertPath(java.io.InputStream) throws java.security.cert.CertificateException;
+  public java.security.cert.CertPath engineGenerateCertPath(java.io.InputStream, java.lang.String) throws java.security.cert.CertificateException;
+  public java.security.cert.CertPath engineGenerateCertPath(java.util.List<? extends java.security.cert.Certificate>) throws java.security.cert.CertificateException;
+  public java.util.Iterator<java.lang.String> engineGetCertPathEncodings();
+  public abstract java.util.Collection<? extends java.security.cert.Certificate> engineGenerateCertificates(java.io.InputStream) throws java.security.cert.CertificateException;
+  public abstract java.security.cert.CRL engineGenerateCRL(java.io.InputStream) throws java.security.cert.CRLException;
+  public abstract java.util.Collection<? extends java.security.cert.CRL> engineGenerateCRLs(java.io.InputStream) throws java.security.cert.CRLException;
+}

@@ -1,0 +1,27 @@
+Compiled from "ModelPerformer.java"
+public final class com.sun.media.sound.ModelPerformer {
+  public com.sun.media.sound.ModelPerformer();
+  public java.lang.String getName();
+  public void setName(java.lang.String);
+  public java.util.List<com.sun.media.sound.ModelConnectionBlock> getConnectionBlocks();
+  public void setConnectionBlocks(java.util.List<com.sun.media.sound.ModelConnectionBlock>);
+  public java.util.List<com.sun.media.sound.ModelOscillator> getOscillators();
+  public int getExclusiveClass();
+  public void setExclusiveClass(int);
+  public boolean isSelfNonExclusive();
+  public void setSelfNonExclusive(boolean);
+  public int getKeyFrom();
+  public void setKeyFrom(int);
+  public int getKeyTo();
+  public void setKeyTo(int);
+  public int getVelFrom();
+  public void setVelFrom(int);
+  public int getVelTo();
+  public void setVelTo(int);
+  public boolean isReleaseTriggered();
+  public void setReleaseTriggered(boolean);
+  public java.lang.Object getUserObject();
+  public void setUserObject(java.lang.Object);
+  public boolean isDefaultConnectionsEnabled();
+  public void setDefaultConnectionsEnabled(boolean);
+}

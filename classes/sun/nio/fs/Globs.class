@@ -1,0 +1,6 @@
+Compiled from "Globs.java"
+public class sun.nio.fs.Globs {
+  static java.lang.String toUnixRegexPattern(java.lang.String);
+  static java.lang.String toWindowsRegexPattern(java.lang.String);
+  static {};
+}

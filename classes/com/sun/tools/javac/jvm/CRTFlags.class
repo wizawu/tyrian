@@ -1,0 +1,13 @@
+Compiled from "CRTFlags.java"
+public interface com.sun.tools.javac.jvm.CRTFlags {
+  public static final int CRT_STATEMENT;
+  public static final int CRT_BLOCK;
+  public static final int CRT_ASSIGNMENT;
+  public static final int CRT_FLOW_CONTROLLER;
+  public static final int CRT_FLOW_TARGET;
+  public static final int CRT_INVOKE;
+  public static final int CRT_CREATE;
+  public static final int CRT_BRANCH_TRUE;
+  public static final int CRT_BRANCH_FALSE;
+  public static final int CRT_VALID_FLAGS;
+}

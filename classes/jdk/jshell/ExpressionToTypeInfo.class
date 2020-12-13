@@ -1,0 +1,15 @@
+Compiled from "ExpressionToTypeInfo.java"
+class jdk.jshell.ExpressionToTypeInfo {
+  final jdk.jshell.TaskFactory$AnalyzeTask at;
+  final com.sun.source.tree.CompilationUnitTree cu;
+  final jdk.jshell.JShell state;
+  final boolean computeEnhancedInfo;
+  final boolean enhancedTypesAccessible;
+  final com.sun.tools.javac.code.Symtab syms;
+  final com.sun.tools.javac.code.Types types;
+  final java.util.Map<com.sun.tools.javac.code.Symbol$TypeSymbol, java.lang.String> anon2Name;
+  public static jdk.jshell.ExpressionToTypeInfo$ExpressionInfo expressionInfo(java.lang.String, jdk.jshell.JShell);
+  public static jdk.jshell.ExpressionToTypeInfo$ExpressionInfo localVariableTypeForInitializer(java.lang.String, jdk.jshell.JShell, boolean);
+  public static com.sun.tools.javac.util.List<com.sun.source.tree.NewClassTree> listAnonymousClassesToConvert(com.sun.source.tree.Tree);
+  static {};
+}

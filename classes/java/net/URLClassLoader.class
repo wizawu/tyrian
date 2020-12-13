@@ -1,0 +1,22 @@
+Compiled from "URLClassLoader.java"
+public class java.net.URLClassLoader extends java.security.SecureClassLoader implements java.io.Closeable {
+  public java.net.URLClassLoader(java.net.URL[], java.lang.ClassLoader);
+  java.net.URLClassLoader(java.lang.String, java.net.URL[], java.lang.ClassLoader, java.security.AccessControlContext);
+  public java.net.URLClassLoader(java.net.URL[]);
+  java.net.URLClassLoader(java.net.URL[], java.security.AccessControlContext);
+  public java.net.URLClassLoader(java.net.URL[], java.lang.ClassLoader, java.net.URLStreamHandlerFactory);
+  public java.net.URLClassLoader(java.lang.String, java.net.URL[], java.lang.ClassLoader);
+  public java.net.URLClassLoader(java.lang.String, java.net.URL[], java.lang.ClassLoader, java.net.URLStreamHandlerFactory);
+  public java.io.InputStream getResourceAsStream(java.lang.String);
+  public void close() throws java.io.IOException;
+  protected void addURL(java.net.URL);
+  public java.net.URL[] getURLs();
+  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  protected java.lang.Package definePackage(java.lang.String, java.util.jar.Manifest, java.net.URL);
+  public java.net.URL findResource(java.lang.String);
+  public java.util.Enumeration<java.net.URL> findResources(java.lang.String) throws java.io.IOException;
+  protected java.security.PermissionCollection getPermissions(java.security.CodeSource);
+  public static java.net.URLClassLoader newInstance(java.net.URL[], java.lang.ClassLoader);
+  public static java.net.URLClassLoader newInstance(java.net.URL[]);
+  static {};
+}

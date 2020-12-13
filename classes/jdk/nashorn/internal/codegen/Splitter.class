@@ -1,0 +1,16 @@
+Compiled from "Splitter.java"
+final class jdk.nashorn.internal.codegen.Splitter extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor implements jdk.nashorn.internal.runtime.logging.Loggable {
+  public static final long SPLIT_THRESHOLD;
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.codegen.Splitter(jdk.nashorn.internal.codegen.Compiler, jdk.nashorn.internal.ir.FunctionNode, jdk.nashorn.internal.codegen.CompileUnit);
+  public jdk.nashorn.internal.runtime.logging.DebugLogger initLogger(jdk.nashorn.internal.runtime.Context);
+  public jdk.nashorn.internal.runtime.logging.DebugLogger getLogger();
+  jdk.nashorn.internal.ir.FunctionNode split(jdk.nashorn.internal.ir.FunctionNode, boolean);
+  protected jdk.nashorn.internal.codegen.CompileUnit findUnit(long);
+  public boolean enterBlock(jdk.nashorn.internal.ir.Block);
+  public jdk.nashorn.internal.ir.Node leaveBlock(jdk.nashorn.internal.ir.Block);
+  public jdk.nashorn.internal.ir.Node leaveLiteralNode(jdk.nashorn.internal.ir.LiteralNode);
+  public jdk.nashorn.internal.ir.Node leaveObjectNode(jdk.nashorn.internal.ir.ObjectNode);
+  public boolean enterFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
+  static {};
+}

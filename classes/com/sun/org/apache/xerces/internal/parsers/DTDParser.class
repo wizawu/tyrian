@@ -1,0 +1,33 @@
+Compiled from "DTDParser.java"
+public abstract class com.sun.org.apache.xerces.internal.parsers.DTDParser extends com.sun.org.apache.xerces.internal.parsers.XMLGrammarParser implements com.sun.org.apache.xerces.internal.xni.XMLDTDHandler,com.sun.org.apache.xerces.internal.xni.XMLDTDContentModelHandler {
+  protected com.sun.org.apache.xerces.internal.xni.parser.XMLDTDScanner fDTDScanner;
+  public com.sun.org.apache.xerces.internal.parsers.DTDParser(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar getDTDGrammar();
+  public void startEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void textDecl(java.lang.String, java.lang.String) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startDTD(com.sun.org.apache.xerces.internal.xni.XMLLocator, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void comment(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void processingInstruction(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startExternalSubset(com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endExternalSubset(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void elementDecl(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startAttlist(java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void attributeDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String[], java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endAttlist(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void internalEntityDecl(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void externalEntityDecl(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void unparsedEntityDecl(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void notationDecl(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startConditional(short, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endConditional(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endDTD(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endEntity(java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startContentModel(java.lang.String, short) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void mixedElement(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void childrenStartGroup() throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void childrenElement(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void childrenSeparator(short) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void childrenOccurrence(short) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void childrenEndGroup() throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endContentModel() throws com.sun.org.apache.xerces.internal.xni.XNIException;
+}

@@ -1,0 +1,9 @@
+Compiled from "PipeInputStream.java"
+class jdk.jshell.execution.PipeInputStream extends java.io.InputStream {
+  jdk.jshell.execution.PipeInputStream();
+  public synchronized int read() throws java.io.IOException;
+  public synchronized int read(byte[], int, int) throws java.io.IOException;
+  protected void inputNeeded() throws java.io.IOException;
+  public synchronized void close();
+  public java.io.OutputStream createOutput();
+}

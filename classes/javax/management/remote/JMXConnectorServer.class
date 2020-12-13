@@ -1,0 +1,19 @@
+Compiled from "JMXConnectorServer.java"
+public abstract class javax.management.remote.JMXConnectorServer extends javax.management.NotificationBroadcasterSupport implements javax.management.remote.JMXConnectorServerMBean,javax.management.MBeanRegistration,javax.management.remote.JMXAddressable {
+  public static final java.lang.String AUTHENTICATOR;
+  public javax.management.remote.JMXConnectorServer();
+  public javax.management.remote.JMXConnectorServer(javax.management.MBeanServer);
+  public synchronized javax.management.MBeanServer getMBeanServer();
+  public synchronized void setMBeanServerForwarder(javax.management.remote.MBeanServerForwarder);
+  public java.lang.String[] getConnectionIds();
+  public javax.management.remote.JMXConnector toJMXConnector(java.util.Map<java.lang.String, ?>) throws java.io.IOException;
+  public javax.management.MBeanNotificationInfo[] getNotificationInfo();
+  protected void connectionOpened(java.lang.String, java.lang.String, java.lang.Object);
+  protected void connectionClosed(java.lang.String, java.lang.String, java.lang.Object);
+  protected void connectionFailed(java.lang.String, java.lang.String, java.lang.Object);
+  public synchronized javax.management.ObjectName preRegister(javax.management.MBeanServer, javax.management.ObjectName);
+  public void postRegister(java.lang.Boolean);
+  public synchronized void preDeregister() throws java.lang.Exception;
+  public void postDeregister();
+  static {};
+}

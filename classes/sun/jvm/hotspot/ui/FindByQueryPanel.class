@@ -1,0 +1,4 @@
+Compiled from "FindByQueryPanel.java"
+public class sun.jvm.hotspot.ui.FindByQueryPanel extends sun.jvm.hotspot.ui.SAPanel {
+  public sun.jvm.hotspot.ui.FindByQueryPanel();
+}

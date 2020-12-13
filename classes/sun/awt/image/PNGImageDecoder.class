@@ -1,0 +1,23 @@
+Compiled from "PNGImageDecoder.java"
+public class sun.awt.image.PNGImageDecoder extends sun.awt.image.ImageDecoder {
+  int pos;
+  int limit;
+  int chunkStart;
+  int chunkKey;
+  int chunkLength;
+  int chunkCRC;
+  boolean seenEOF;
+  sun.awt.image.PNGFilterInputStream inputStream;
+  java.io.InputStream underlyingInputStream;
+  byte[] inbuf;
+  protected boolean handleChunk(int, byte[], int, int) throws java.io.IOException;
+  public void produceImage() throws java.io.IOException, sun.awt.image.ImageFormatException;
+  public sun.awt.image.PNGImageDecoder(sun.awt.image.InputStreamImageSource, java.io.InputStream) throws java.io.IOException;
+  boolean getData() throws java.io.IOException;
+  public static boolean getCheckCRC();
+  public static void setCheckCRC(boolean);
+  protected void wrc(int);
+  protected void wrk(int);
+  public void print();
+  static {};
+}

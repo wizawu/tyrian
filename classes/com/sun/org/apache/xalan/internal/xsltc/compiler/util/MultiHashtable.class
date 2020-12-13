@@ -1,0 +1,8 @@
+Compiled from "MultiHashtable.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.MultiHashtable<K, V> {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.MultiHashtable();
+  public java.util.Set<V> put(K, V);
+  public V maps(K, V);
+  public void makeUnmodifiable();
+}

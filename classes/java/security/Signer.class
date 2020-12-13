@@ -1,0 +1,10 @@
+Compiled from "Signer.java"
+public abstract class java.security.Signer extends java.security.Identity {
+  protected java.security.Signer();
+  public java.security.Signer(java.lang.String);
+  public java.security.Signer(java.lang.String, java.security.IdentityScope) throws java.security.KeyManagementException;
+  public java.security.PrivateKey getPrivateKey();
+  public final void setKeyPair(java.security.KeyPair) throws java.security.InvalidParameterException, java.security.KeyException;
+  java.lang.String printKeys();
+  public java.lang.String toString();
+}

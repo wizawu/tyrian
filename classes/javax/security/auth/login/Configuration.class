@@ -1,0 +1,14 @@
+Compiled from "Configuration.java"
+public abstract class javax.security.auth.login.Configuration {
+  protected javax.security.auth.login.Configuration();
+  public static javax.security.auth.login.Configuration getConfiguration();
+  public static void setConfiguration(javax.security.auth.login.Configuration);
+  public static javax.security.auth.login.Configuration getInstance(java.lang.String, javax.security.auth.login.Configuration$Parameters) throws java.security.NoSuchAlgorithmException;
+  public static javax.security.auth.login.Configuration getInstance(java.lang.String, javax.security.auth.login.Configuration$Parameters, java.lang.String) throws java.security.NoSuchProviderException, java.security.NoSuchAlgorithmException;
+  public static javax.security.auth.login.Configuration getInstance(java.lang.String, javax.security.auth.login.Configuration$Parameters, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  public java.security.Provider getProvider();
+  public java.lang.String getType();
+  public javax.security.auth.login.Configuration$Parameters getParameters();
+  public abstract javax.security.auth.login.AppConfigurationEntry[] getAppConfigurationEntry(java.lang.String);
+  public void refresh();
+}

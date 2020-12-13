@@ -1,0 +1,5 @@
+Compiled from "TextComponentTranslator.java"
+public class com.sun.java.accessibility.util.internal.TextComponentTranslator extends com.sun.java.accessibility.util.Translator {
+  public com.sun.java.accessibility.util.internal.TextComponentTranslator();
+  public javax.accessibility.AccessibleRole getAccessibleRole();
+}

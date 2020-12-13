@@ -1,0 +1,16 @@
+Compiled from "Mixer.java"
+public interface javax.sound.sampled.Mixer extends javax.sound.sampled.Line {
+  public abstract javax.sound.sampled.Mixer$Info getMixerInfo();
+  public abstract javax.sound.sampled.Line$Info[] getSourceLineInfo();
+  public abstract javax.sound.sampled.Line$Info[] getTargetLineInfo();
+  public abstract javax.sound.sampled.Line$Info[] getSourceLineInfo(javax.sound.sampled.Line$Info);
+  public abstract javax.sound.sampled.Line$Info[] getTargetLineInfo(javax.sound.sampled.Line$Info);
+  public abstract boolean isLineSupported(javax.sound.sampled.Line$Info);
+  public abstract javax.sound.sampled.Line getLine(javax.sound.sampled.Line$Info) throws javax.sound.sampled.LineUnavailableException;
+  public abstract int getMaxLines(javax.sound.sampled.Line$Info);
+  public abstract javax.sound.sampled.Line[] getSourceLines();
+  public abstract javax.sound.sampled.Line[] getTargetLines();
+  public abstract void synchronize(javax.sound.sampled.Line[], boolean);
+  public abstract void unsynchronize(javax.sound.sampled.Line[]);
+  public abstract boolean isSynchronizationSupported(javax.sound.sampled.Line[], boolean);
+}

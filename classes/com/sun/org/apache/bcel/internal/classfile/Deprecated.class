@@ -1,0 +1,12 @@
+Compiled from "Deprecated.java"
+public final class com.sun.org.apache.bcel.internal.classfile.Deprecated extends com.sun.org.apache.bcel.internal.classfile.Attribute {
+  public com.sun.org.apache.bcel.internal.classfile.Deprecated(com.sun.org.apache.bcel.internal.classfile.Deprecated);
+  public com.sun.org.apache.bcel.internal.classfile.Deprecated(int, int, byte[], com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  com.sun.org.apache.bcel.internal.classfile.Deprecated(int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final byte[] getBytes();
+  public final void setBytes(byte[]);
+  public final java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.classfile.Attribute copy(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+}

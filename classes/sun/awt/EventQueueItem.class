@@ -1,0 +1,6 @@
+Compiled from "EventQueueItem.java"
+public class sun.awt.EventQueueItem {
+  public java.awt.AWTEvent event;
+  public sun.awt.EventQueueItem next;
+  public sun.awt.EventQueueItem(java.awt.AWTEvent);
+}

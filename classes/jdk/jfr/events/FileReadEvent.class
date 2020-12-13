@@ -1,0 +1,10 @@
+Compiled from "FileReadEvent.java"
+public final class jdk.jfr.events.FileReadEvent extends jdk.jfr.events.AbstractJDKEvent {
+  public static final java.lang.ThreadLocal<jdk.jfr.events.FileReadEvent> EVENT;
+  public java.lang.String path;
+  public long bytesRead;
+  public boolean endOfFile;
+  public jdk.jfr.events.FileReadEvent();
+  public void reset();
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "SoftReference.java"
+public class java.lang.ref.SoftReference<T> extends java.lang.ref.Reference<T> {
+  public java.lang.ref.SoftReference(T);
+  public java.lang.ref.SoftReference(T, java.lang.ref.ReferenceQueue<? super T>);
+  public T get();
+}

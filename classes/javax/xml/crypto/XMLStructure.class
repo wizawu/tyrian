@@ -1,0 +1,4 @@
+Compiled from "XMLStructure.java"
+public interface javax.xml.crypto.XMLStructure {
+  public abstract boolean isFeatureSupported(java.lang.String);
+}

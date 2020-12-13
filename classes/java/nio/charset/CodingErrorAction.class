@@ -1,0 +1,8 @@
+Compiled from "CodingErrorAction.java"
+public class java.nio.charset.CodingErrorAction {
+  public static final java.nio.charset.CodingErrorAction IGNORE;
+  public static final java.nio.charset.CodingErrorAction REPLACE;
+  public static final java.nio.charset.CodingErrorAction REPORT;
+  public java.lang.String toString();
+  static {};
+}

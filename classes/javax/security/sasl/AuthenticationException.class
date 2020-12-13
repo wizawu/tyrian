@@ -1,0 +1,6 @@
+Compiled from "AuthenticationException.java"
+public class javax.security.sasl.AuthenticationException extends javax.security.sasl.SaslException {
+  public javax.security.sasl.AuthenticationException();
+  public javax.security.sasl.AuthenticationException(java.lang.String);
+  public javax.security.sasl.AuthenticationException(java.lang.String, java.lang.Throwable);
+}

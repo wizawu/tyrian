@@ -1,0 +1,7 @@
+Compiled from "Jps.java"
+public class sun.tools.jps.Jps {
+  static final boolean $assertionsDisabled;
+  public sun.tools.jps.Jps();
+  public static void main(java.lang.String[]);
+  static {};
+}

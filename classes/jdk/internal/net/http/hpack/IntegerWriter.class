@@ -1,0 +1,7 @@
+Compiled from "IntegerWriter.java"
+final class jdk.internal.net.http.hpack.IntegerWriter {
+  jdk.internal.net.http.hpack.IntegerWriter();
+  public jdk.internal.net.http.hpack.IntegerWriter configure(int, int, int);
+  public boolean write(java.nio.ByteBuffer);
+  public jdk.internal.net.http.hpack.IntegerWriter reset();
+}

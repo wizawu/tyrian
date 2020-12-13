@@ -1,0 +1,32 @@
+Compiled from "Canonicalizer.java"
+public class com.sun.org.apache.xml.internal.security.c14n.Canonicalizer {
+  public static final java.lang.String ENCODING;
+  public static final java.lang.String XPATH_C14N_WITH_COMMENTS_SINGLE_NODE;
+  public static final java.lang.String ALGO_ID_C14N_OMIT_COMMENTS;
+  public static final java.lang.String ALGO_ID_C14N_WITH_COMMENTS;
+  public static final java.lang.String ALGO_ID_C14N_EXCL_OMIT_COMMENTS;
+  public static final java.lang.String ALGO_ID_C14N_EXCL_WITH_COMMENTS;
+  public static final java.lang.String ALGO_ID_C14N11_OMIT_COMMENTS;
+  public static final java.lang.String ALGO_ID_C14N11_WITH_COMMENTS;
+  public static final java.lang.String ALGO_ID_C14N_PHYSICAL;
+  public static final com.sun.org.apache.xml.internal.security.c14n.Canonicalizer getInstance(java.lang.String) throws com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException;
+  public static void register(java.lang.String, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException, java.lang.ClassNotFoundException;
+  public static void register(java.lang.String, java.lang.Class<? extends com.sun.org.apache.xml.internal.security.c14n.CanonicalizerSpi>) throws com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException, java.lang.ClassNotFoundException;
+  public static void registerDefaultAlgorithms();
+  public final java.lang.String getURI();
+  public boolean getIncludeComments();
+  public byte[] canonicalize(byte[]) throws javax.xml.parsers.ParserConfigurationException, java.io.IOException, org.xml.sax.SAXException, com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] canonicalizeSubtree(org.w3c.dom.Node) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] canonicalizeSubtree(org.w3c.dom.Node, java.lang.String) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] canonicalizeSubtree(org.w3c.dom.Node, java.lang.String, boolean) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] canonicalizeXPathNodeSet(org.w3c.dom.NodeList) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] canonicalizeXPathNodeSet(org.w3c.dom.NodeList, java.lang.String) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] canonicalizeXPathNodeSet(java.util.Set<org.w3c.dom.Node>) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] canonicalizeXPathNodeSet(java.util.Set<org.w3c.dom.Node>, java.lang.String) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public void setWriter(java.io.OutputStream);
+  public java.lang.String getImplementingCanonicalizerClass();
+  public void notReset();
+  public boolean isSecureValidation();
+  public void setSecureValidation(boolean);
+  static {};
+}

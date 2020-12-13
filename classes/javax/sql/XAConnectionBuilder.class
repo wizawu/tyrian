@@ -1,0 +1,8 @@
+Compiled from "XAConnectionBuilder.java"
+public interface javax.sql.XAConnectionBuilder {
+  public abstract javax.sql.XAConnectionBuilder user(java.lang.String);
+  public abstract javax.sql.XAConnectionBuilder password(java.lang.String);
+  public abstract javax.sql.XAConnectionBuilder shardingKey(java.sql.ShardingKey);
+  public abstract javax.sql.XAConnectionBuilder superShardingKey(java.sql.ShardingKey);
+  public abstract javax.sql.XAConnection build() throws java.sql.SQLException;
+}

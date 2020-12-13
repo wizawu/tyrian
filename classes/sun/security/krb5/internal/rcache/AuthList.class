@@ -1,0 +1,7 @@
+Compiled from "AuthList.java"
+public class sun.security.krb5.internal.rcache.AuthList {
+  public sun.security.krb5.internal.rcache.AuthList(int);
+  public synchronized void put(sun.security.krb5.internal.rcache.AuthTimeWithHash, sun.security.krb5.internal.KerberosTime) throws sun.security.krb5.internal.KrbApErrException;
+  public boolean isEmpty();
+  public java.lang.String toString();
+}

@@ -1,0 +1,15 @@
+Compiled from "StateTrackableDelegate.java"
+public final class sun.java2d.StateTrackableDelegate implements sun.java2d.StateTrackable {
+  public static final sun.java2d.StateTrackableDelegate UNTRACKABLE_DELEGATE;
+  public static final sun.java2d.StateTrackableDelegate IMMUTABLE_DELEGATE;
+  sun.java2d.StateTracker theTracker;
+  public static sun.java2d.StateTrackableDelegate createInstance(sun.java2d.StateTrackable$State);
+  public sun.java2d.StateTrackable$State getState();
+  public synchronized sun.java2d.StateTracker getStateTracker();
+  public synchronized void setImmutable();
+  public synchronized void setUntrackable();
+  public synchronized void addDynamicAgent();
+  protected synchronized void removeDynamicAgent();
+  public void markDirty();
+  static {};
+}

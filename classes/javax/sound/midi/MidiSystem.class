@@ -1,0 +1,25 @@
+Compiled from "MidiSystem.java"
+public class javax.sound.midi.MidiSystem {
+  public static javax.sound.midi.MidiDevice$Info[] getMidiDeviceInfo();
+  public static javax.sound.midi.MidiDevice getMidiDevice(javax.sound.midi.MidiDevice$Info) throws javax.sound.midi.MidiUnavailableException;
+  public static javax.sound.midi.Receiver getReceiver() throws javax.sound.midi.MidiUnavailableException;
+  public static javax.sound.midi.Transmitter getTransmitter() throws javax.sound.midi.MidiUnavailableException;
+  public static javax.sound.midi.Synthesizer getSynthesizer() throws javax.sound.midi.MidiUnavailableException;
+  public static javax.sound.midi.Sequencer getSequencer() throws javax.sound.midi.MidiUnavailableException;
+  public static javax.sound.midi.Sequencer getSequencer(boolean) throws javax.sound.midi.MidiUnavailableException;
+  public static javax.sound.midi.Soundbank getSoundbank(java.io.InputStream) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public static javax.sound.midi.Soundbank getSoundbank(java.net.URL) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public static javax.sound.midi.Soundbank getSoundbank(java.io.File) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public static javax.sound.midi.MidiFileFormat getMidiFileFormat(java.io.InputStream) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public static javax.sound.midi.MidiFileFormat getMidiFileFormat(java.net.URL) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public static javax.sound.midi.MidiFileFormat getMidiFileFormat(java.io.File) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public static javax.sound.midi.Sequence getSequence(java.io.InputStream) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public static javax.sound.midi.Sequence getSequence(java.net.URL) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public static javax.sound.midi.Sequence getSequence(java.io.File) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public static int[] getMidiFileTypes();
+  public static boolean isFileTypeSupported(int);
+  public static int[] getMidiFileTypes(javax.sound.midi.Sequence);
+  public static boolean isFileTypeSupported(int, javax.sound.midi.Sequence);
+  public static int write(javax.sound.midi.Sequence, int, java.io.OutputStream) throws java.io.IOException;
+  public static int write(javax.sound.midi.Sequence, int, java.io.File) throws java.io.IOException;
+}

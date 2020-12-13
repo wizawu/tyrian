@@ -1,0 +1,7 @@
+Compiled from "Spans.java"
+public class sun.java2d.Spans {
+  public sun.java2d.Spans();
+  public void add(float, float);
+  public void addInfinite();
+  public boolean intersects(float, float);
+}

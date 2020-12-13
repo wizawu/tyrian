@@ -1,0 +1,9 @@
+Compiled from "LocaleObjectCache.java"
+public abstract class sun.util.locale.LocaleObjectCache<K, V> {
+  public sun.util.locale.LocaleObjectCache();
+  public sun.util.locale.LocaleObjectCache(int, float, int);
+  public V get(K);
+  protected V put(K, V);
+  protected abstract V createObject(K);
+  protected K normalizeKey(K);
+}

@@ -1,0 +1,5 @@
+Compiled from "HeaderFilter.java"
+interface jdk.internal.net.http.HeaderFilter {
+  public abstract void request(jdk.internal.net.http.HttpRequestImpl, jdk.internal.net.http.MultiExchange<?>) throws java.io.IOException;
+  public abstract jdk.internal.net.http.HttpRequestImpl response(jdk.internal.net.http.Response) throws java.io.IOException;
+}

@@ -1,0 +1,13 @@
+Compiled from "AudioFloatFormatConverter.java"
+public final class com.sun.media.sound.AudioFloatFormatConverter extends javax.sound.sampled.spi.FormatConversionProvider {
+  public com.sun.media.sound.AudioFloatFormatConverter();
+  public javax.sound.sampled.AudioInputStream getAudioInputStream(javax.sound.sampled.AudioFormat$Encoding, javax.sound.sampled.AudioInputStream);
+  public javax.sound.sampled.AudioInputStream getAudioInputStream(javax.sound.sampled.AudioFormat, javax.sound.sampled.AudioInputStream);
+  public javax.sound.sampled.AudioInputStream getAudioInputStream(javax.sound.sampled.AudioFormat, com.sun.media.sound.AudioFloatInputStream);
+  public javax.sound.sampled.AudioFormat$Encoding[] getSourceEncodings();
+  public javax.sound.sampled.AudioFormat$Encoding[] getTargetEncodings();
+  public javax.sound.sampled.AudioFormat$Encoding[] getTargetEncodings(javax.sound.sampled.AudioFormat);
+  public javax.sound.sampled.AudioFormat[] getTargetFormats(javax.sound.sampled.AudioFormat$Encoding, javax.sound.sampled.AudioFormat);
+  public boolean isConversionSupported(javax.sound.sampled.AudioFormat, javax.sound.sampled.AudioFormat);
+  public boolean isConversionSupported(javax.sound.sampled.AudioFormat$Encoding, javax.sound.sampled.AudioFormat);
+}

@@ -1,0 +1,15 @@
+Compiled from "AbstractCellEditor.java"
+public abstract class javax.swing.AbstractCellEditor implements javax.swing.CellEditor,java.io.Serializable {
+  protected javax.swing.event.EventListenerList listenerList;
+  protected transient javax.swing.event.ChangeEvent changeEvent;
+  public javax.swing.AbstractCellEditor();
+  public boolean isCellEditable(java.util.EventObject);
+  public boolean shouldSelectCell(java.util.EventObject);
+  public boolean stopCellEditing();
+  public void cancelCellEditing();
+  public void addCellEditorListener(javax.swing.event.CellEditorListener);
+  public void removeCellEditorListener(javax.swing.event.CellEditorListener);
+  public javax.swing.event.CellEditorListener[] getCellEditorListeners();
+  protected void fireEditingStopped();
+  protected void fireEditingCanceled();
+}

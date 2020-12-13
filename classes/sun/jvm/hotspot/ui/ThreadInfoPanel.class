@@ -1,0 +1,6 @@
+Compiled from "ThreadInfoPanel.java"
+public class sun.jvm.hotspot.ui.ThreadInfoPanel extends javax.swing.JPanel {
+  public sun.jvm.hotspot.ui.ThreadInfoPanel();
+  public sun.jvm.hotspot.ui.ThreadInfoPanel(sun.jvm.hotspot.runtime.JavaThread);
+  public void setJavaThread(sun.jvm.hotspot.runtime.JavaThread);
+}

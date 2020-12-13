@@ -1,0 +1,28 @@
+Compiled from "DocumentBuilderFactory.java"
+public abstract class javax.xml.parsers.DocumentBuilderFactory {
+  protected javax.xml.parsers.DocumentBuilderFactory();
+  public static javax.xml.parsers.DocumentBuilderFactory newDefaultInstance();
+  public static javax.xml.parsers.DocumentBuilderFactory newInstance();
+  public static javax.xml.parsers.DocumentBuilderFactory newInstance(java.lang.String, java.lang.ClassLoader);
+  public abstract javax.xml.parsers.DocumentBuilder newDocumentBuilder() throws javax.xml.parsers.ParserConfigurationException;
+  public void setNamespaceAware(boolean);
+  public void setValidating(boolean);
+  public void setIgnoringElementContentWhitespace(boolean);
+  public void setExpandEntityReferences(boolean);
+  public void setIgnoringComments(boolean);
+  public void setCoalescing(boolean);
+  public boolean isNamespaceAware();
+  public boolean isValidating();
+  public boolean isIgnoringElementContentWhitespace();
+  public boolean isExpandEntityReferences();
+  public boolean isIgnoringComments();
+  public boolean isCoalescing();
+  public abstract void setAttribute(java.lang.String, java.lang.Object) throws java.lang.IllegalArgumentException;
+  public abstract java.lang.Object getAttribute(java.lang.String) throws java.lang.IllegalArgumentException;
+  public abstract void setFeature(java.lang.String, boolean) throws javax.xml.parsers.ParserConfigurationException;
+  public abstract boolean getFeature(java.lang.String) throws javax.xml.parsers.ParserConfigurationException;
+  public javax.xml.validation.Schema getSchema();
+  public void setSchema(javax.xml.validation.Schema);
+  public void setXIncludeAware(boolean);
+  public boolean isXIncludeAware();
+}

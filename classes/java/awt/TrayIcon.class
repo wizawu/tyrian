@@ -1,0 +1,41 @@
+Compiled from "TrayIcon.java"
+public class java.awt.TrayIcon {
+  transient java.awt.event.MouseListener mouseListener;
+  transient java.awt.event.MouseMotionListener mouseMotionListener;
+  transient java.awt.event.ActionListener actionListener;
+  final java.security.AccessControlContext getAccessControlContext();
+  public java.awt.TrayIcon(java.awt.Image);
+  public java.awt.TrayIcon(java.awt.Image, java.lang.String);
+  public java.awt.TrayIcon(java.awt.Image, java.lang.String, java.awt.PopupMenu);
+  public void setImage(java.awt.Image);
+  public java.awt.Image getImage();
+  public void setPopupMenu(java.awt.PopupMenu);
+  public java.awt.PopupMenu getPopupMenu();
+  public void setToolTip(java.lang.String);
+  public java.lang.String getToolTip();
+  public void setImageAutoSize(boolean);
+  public boolean isImageAutoSize();
+  public synchronized void addMouseListener(java.awt.event.MouseListener);
+  public synchronized void removeMouseListener(java.awt.event.MouseListener);
+  public synchronized java.awt.event.MouseListener[] getMouseListeners();
+  public synchronized void addMouseMotionListener(java.awt.event.MouseMotionListener);
+  public synchronized void removeMouseMotionListener(java.awt.event.MouseMotionListener);
+  public synchronized java.awt.event.MouseMotionListener[] getMouseMotionListeners();
+  public java.lang.String getActionCommand();
+  public void setActionCommand(java.lang.String);
+  public synchronized void addActionListener(java.awt.event.ActionListener);
+  public synchronized void removeActionListener(java.awt.event.ActionListener);
+  public synchronized java.awt.event.ActionListener[] getActionListeners();
+  public void displayMessage(java.lang.String, java.lang.String, java.awt.TrayIcon$MessageType);
+  public java.awt.Dimension getSize();
+  void addNotify() throws java.awt.AWTException;
+  void removeNotify();
+  void setID(int);
+  int getID();
+  void dispatchEvent(java.awt.AWTEvent);
+  void processEvent(java.awt.AWTEvent);
+  void processMouseEvent(java.awt.event.MouseEvent);
+  void processMouseMotionEvent(java.awt.event.MouseEvent);
+  void processActionEvent(java.awt.event.ActionEvent);
+  static {};
+}

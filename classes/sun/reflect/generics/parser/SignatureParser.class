@@ -1,0 +1,9 @@
+Compiled from "SignatureParser.java"
+public class sun.reflect.generics.parser.SignatureParser {
+  static final boolean $assertionsDisabled;
+  public static sun.reflect.generics.parser.SignatureParser make();
+  public sun.reflect.generics.tree.ClassSignature parseClassSig(java.lang.String);
+  public sun.reflect.generics.tree.MethodTypeSignature parseMethodSig(java.lang.String);
+  public sun.reflect.generics.tree.TypeSignature parseTypeSig(java.lang.String);
+  static {};
+}

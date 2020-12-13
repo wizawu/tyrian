@@ -1,0 +1,11 @@
+Compiled from "DSAKeyPairGenerator.java"
+class sun.security.provider.DSAKeyPairGenerator extends java.security.KeyPairGenerator {
+  boolean forceNewParameters;
+  sun.security.provider.DSAKeyPairGenerator(int);
+  public void initialize(int, java.security.SecureRandom);
+  public void initialize(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
+  void init(int, java.security.SecureRandom, boolean);
+  void init(java.security.spec.DSAParameterSpec, java.security.SecureRandom, boolean);
+  public java.security.KeyPair generateKeyPair();
+  java.math.BigInteger generateY(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger);
+}

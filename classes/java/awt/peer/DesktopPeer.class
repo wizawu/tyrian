@@ -1,0 +1,25 @@
+Compiled from "DesktopPeer.java"
+public interface java.awt.peer.DesktopPeer {
+  public abstract boolean isSupported(java.awt.Desktop$Action);
+  public abstract void open(java.io.File) throws java.io.IOException;
+  public abstract void edit(java.io.File) throws java.io.IOException;
+  public abstract void print(java.io.File) throws java.io.IOException;
+  public abstract void mail(java.net.URI) throws java.io.IOException;
+  public abstract void browse(java.net.URI) throws java.io.IOException;
+  public default void addAppEventListener(java.awt.desktop.SystemEventListener);
+  public default void removeAppEventListener(java.awt.desktop.SystemEventListener);
+  public default void setAboutHandler(java.awt.desktop.AboutHandler);
+  public default void setPreferencesHandler(java.awt.desktop.PreferencesHandler);
+  public default void setOpenFileHandler(java.awt.desktop.OpenFilesHandler);
+  public default void setPrintFileHandler(java.awt.desktop.PrintFilesHandler);
+  public default void setOpenURIHandler(java.awt.desktop.OpenURIHandler);
+  public default void setQuitHandler(java.awt.desktop.QuitHandler);
+  public default void setQuitStrategy(java.awt.desktop.QuitStrategy);
+  public default void enableSuddenTermination();
+  public default void disableSuddenTermination();
+  public default void requestForeground(boolean);
+  public default void openHelpViewer();
+  public default void setDefaultMenuBar(javax.swing.JMenuBar);
+  public default boolean browseFileDirectory(java.io.File);
+  public default boolean moveToTrash(java.io.File);
+}

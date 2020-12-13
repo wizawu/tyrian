@@ -1,0 +1,6 @@
+Compiled from "LazyReflectiveObjectGenerator.java"
+public abstract class sun.reflect.generics.reflectiveObjects.LazyReflectiveObjectGenerator {
+  protected sun.reflect.generics.reflectiveObjects.LazyReflectiveObjectGenerator(sun.reflect.generics.factory.GenericsFactory);
+  protected sun.reflect.generics.visitor.Reifier getReifier();
+  java.lang.reflect.Type[] reifyBounds(sun.reflect.generics.tree.FieldTypeSignature[]);
+}

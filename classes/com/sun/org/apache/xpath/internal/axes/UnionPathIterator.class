@@ -1,0 +1,21 @@
+Compiled from "UnionPathIterator.java"
+public class com.sun.org.apache.xpath.internal.axes.UnionPathIterator extends com.sun.org.apache.xpath.internal.axes.LocPathIterator implements java.lang.Cloneable,com.sun.org.apache.xml.internal.dtm.DTMIterator,java.io.Serializable,com.sun.org.apache.xpath.internal.axes.PathComponent {
+  static final long serialVersionUID;
+  protected com.sun.org.apache.xpath.internal.axes.LocPathIterator[] m_exprs;
+  protected com.sun.org.apache.xml.internal.dtm.DTMIterator[] m_iterators;
+  public com.sun.org.apache.xpath.internal.axes.UnionPathIterator();
+  public void setRoot(int, java.lang.Object);
+  public void addIterator(com.sun.org.apache.xml.internal.dtm.DTMIterator);
+  public void detach();
+  public com.sun.org.apache.xpath.internal.axes.UnionPathIterator(com.sun.org.apache.xpath.internal.compiler.Compiler, int) throws javax.xml.transform.TransformerException;
+  public static com.sun.org.apache.xpath.internal.axes.LocPathIterator createUnionIterator(com.sun.org.apache.xpath.internal.compiler.Compiler, int) throws javax.xml.transform.TransformerException;
+  public int getAnalysisBits();
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  protected com.sun.org.apache.xpath.internal.axes.LocPathIterator createDTMIterator(com.sun.org.apache.xpath.internal.compiler.Compiler, int) throws javax.xml.transform.TransformerException;
+  protected void loadLocationPaths(com.sun.org.apache.xpath.internal.compiler.Compiler, int, int) throws javax.xml.transform.TransformerException;
+  public int nextNode();
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public int getAxis();
+  public void callVisitors(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.XPathVisitor);
+  public boolean deepEquals(com.sun.org.apache.xpath.internal.Expression);
+}

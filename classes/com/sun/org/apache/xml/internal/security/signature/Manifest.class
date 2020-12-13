@@ -1,0 +1,30 @@
+Compiled from "Manifest.java"
+public class com.sun.org.apache.xml.internal.security.signature.Manifest extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
+  public static final int MAXIMUM_REFERENCE_COUNT;
+  public com.sun.org.apache.xml.internal.security.signature.Manifest(org.w3c.dom.Document);
+  public com.sun.org.apache.xml.internal.security.signature.Manifest(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.signature.Manifest(org.w3c.dom.Element, java.lang.String, boolean) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public void addDocument(java.lang.String, java.lang.String, com.sun.org.apache.xml.internal.security.transforms.Transforms, java.lang.String, java.lang.String, java.lang.String) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public void generateDigestValues() throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException, com.sun.org.apache.xml.internal.security.signature.ReferenceNotInitializedException;
+  public int getLength();
+  public com.sun.org.apache.xml.internal.security.signature.Reference item(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public void setId(java.lang.String);
+  public java.lang.String getId();
+  public boolean verifyReferences() throws com.sun.org.apache.xml.internal.security.signature.MissingResourceFailureException, com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public boolean verifyReferences(boolean) throws com.sun.org.apache.xml.internal.security.signature.MissingResourceFailureException, com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public boolean getVerificationResult(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.util.List<com.sun.org.apache.xml.internal.security.signature.VerifiedReference> getVerificationResults();
+  public void addResourceResolver(com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver);
+  public void addResourceResolver(com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi);
+  public java.util.List<com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolver> getPerManifestResolvers();
+  public java.util.Map<java.lang.String, java.lang.String> getResolverProperties();
+  public void setResolverProperty(java.lang.String, java.lang.String);
+  public java.lang.String getResolverProperty(java.lang.String);
+  public byte[] getSignedContentItem(int) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput getReferencedContentBeforeTransformsItem(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput getReferencedContentAfterTransformsItem(int) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public int getSignedContentLength();
+  public java.lang.String getBaseLocalName();
+  public boolean isSecureValidation();
+  static {};
+}

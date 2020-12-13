@@ -1,0 +1,16 @@
+Compiled from "CompactByteArray.java"
+public final class sun.text.CompactByteArray implements java.lang.Cloneable {
+  public static final int UNICODECOUNT;
+  public sun.text.CompactByteArray(byte);
+  public sun.text.CompactByteArray(short[], byte[]);
+  public byte elementAt(char);
+  public void setElementAt(char, byte);
+  public void setElementAt(char, char, byte);
+  public void compact();
+  static final boolean arrayRegionMatches(byte[], int, byte[], int, int);
+  public short[] getIndexArray();
+  public byte[] getStringArray();
+  public java.lang.Object clone();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

@@ -1,0 +1,6 @@
+Compiled from "BytecodeJmp.java"
+public abstract class sun.jvm.hotspot.interpreter.BytecodeJmp extends sun.jvm.hotspot.interpreter.Bytecode {
+  sun.jvm.hotspot.interpreter.BytecodeJmp(sun.jvm.hotspot.oops.Method, int);
+  public abstract int getTargetBCI();
+  public java.lang.String toString();
+}

@@ -1,0 +1,8 @@
+Compiled from "LoaderPool.java"
+public final class jdk.internal.loader.LoaderPool {
+  static final boolean $assertionsDisabled;
+  public jdk.internal.loader.LoaderPool(java.lang.module.Configuration, java.util.List<java.lang.ModuleLayer>, java.lang.ClassLoader);
+  public jdk.internal.loader.Loader loaderFor(java.lang.String);
+  public java.util.stream.Stream<jdk.internal.loader.Loader> loaders();
+  static {};
+}

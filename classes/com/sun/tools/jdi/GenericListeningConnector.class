@@ -1,0 +1,23 @@
+Compiled from "GenericListeningConnector.java"
+public class com.sun.tools.jdi.GenericListeningConnector extends com.sun.tools.jdi.ConnectorImpl implements com.sun.jdi.connect.ListeningConnector {
+  static final java.lang.String ARG_ADDRESS;
+  static final java.lang.String ARG_TIMEOUT;
+  java.util.Map<java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>, com.sun.jdi.connect.spi.TransportService$ListenKey> listenMap;
+  com.sun.jdi.connect.spi.TransportService transportService;
+  com.sun.jdi.connect.Transport transport;
+  static final boolean $assertionsDisabled;
+  protected com.sun.tools.jdi.GenericListeningConnector(com.sun.jdi.connect.spi.TransportService);
+  public static com.sun.tools.jdi.GenericListeningConnector create(com.sun.jdi.connect.spi.TransportService);
+  public java.lang.String startListening(java.lang.String, java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
+  public java.lang.String startListening(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
+  public void stopListening(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
+  public com.sun.jdi.VirtualMachine accept(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
+  public boolean supportsMultipleConnections();
+  public java.lang.String name();
+  public java.lang.String description();
+  public com.sun.jdi.connect.Transport transport();
+  protected void updateArgumentMapIfRequired(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>, com.sun.jdi.connect.spi.TransportService$ListenKey);
+  public java.lang.String toString();
+  public java.util.Map defaultArguments();
+  static {};
+}

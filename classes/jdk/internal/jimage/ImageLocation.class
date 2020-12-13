@@ -1,0 +1,38 @@
+Compiled from "ImageLocation.java"
+public class jdk.internal.jimage.ImageLocation {
+  public static final int ATTRIBUTE_END;
+  public static final int ATTRIBUTE_MODULE;
+  public static final int ATTRIBUTE_PARENT;
+  public static final int ATTRIBUTE_BASE;
+  public static final int ATTRIBUTE_EXTENSION;
+  public static final int ATTRIBUTE_OFFSET;
+  public static final int ATTRIBUTE_COMPRESSED;
+  public static final int ATTRIBUTE_UNCOMPRESSED;
+  public static final int ATTRIBUTE_COUNT;
+  protected final long[] attributes;
+  protected final jdk.internal.jimage.ImageStrings strings;
+  public jdk.internal.jimage.ImageLocation(long[], jdk.internal.jimage.ImageStrings);
+  jdk.internal.jimage.ImageStrings getStrings();
+  static long[] decompress(java.nio.ByteBuffer);
+  public static byte[] compress(long[]);
+  public boolean verify(java.lang.String);
+  static boolean verify(java.lang.String, long[], jdk.internal.jimage.ImageStrings);
+  static boolean verify(java.lang.String, java.lang.String, long[], jdk.internal.jimage.ImageStrings);
+  long getAttribute(int);
+  java.lang.String getAttributeString(int);
+  public java.lang.String getModule();
+  public int getModuleOffset();
+  public java.lang.String getBase();
+  public int getBaseOffset();
+  public java.lang.String getParent();
+  public int getParentOffset();
+  public java.lang.String getExtension();
+  public int getExtensionOffset();
+  public java.lang.String getFullName();
+  public java.lang.String getFullName(boolean);
+  java.lang.String buildName(boolean, boolean, boolean);
+  public long getContentOffset();
+  public long getCompressedSize();
+  public long getUncompressedSize();
+  static jdk.internal.jimage.ImageLocation readFrom(jdk.internal.jimage.BasicImageReader, int);
+}

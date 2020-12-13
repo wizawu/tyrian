@@ -1,0 +1,6 @@
+Compiled from "ciConstant.java"
+public class sun.jvm.hotspot.ci.ciConstant extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.ci.ciConstant(sun.jvm.hotspot.debugger.Address);
+  public void dumpReplayData(java.io.PrintStream);
+  static {};
+}

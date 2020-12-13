@@ -1,0 +1,9 @@
+Compiled from "JSJavaObject.java"
+public abstract class sun.jvm.hotspot.utilities.soql.JSJavaObject extends sun.jvm.hotspot.utilities.soql.DefaultScriptObject {
+  protected final sun.jvm.hotspot.utilities.soql.JSJavaFactory factory;
+  public sun.jvm.hotspot.utilities.soql.JSJavaObject(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
+  public final sun.jvm.hotspot.oops.Oop getOop();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

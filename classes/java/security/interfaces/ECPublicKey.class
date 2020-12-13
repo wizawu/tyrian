@@ -1,0 +1,5 @@
+Compiled from "ECPublicKey.java"
+public interface java.security.interfaces.ECPublicKey extends java.security.PublicKey,java.security.interfaces.ECKey {
+  public static final long serialVersionUID;
+  public abstract java.security.spec.ECPoint getW();
+}

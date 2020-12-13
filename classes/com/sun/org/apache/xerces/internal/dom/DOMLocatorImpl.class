@@ -1,0 +1,20 @@
+Compiled from "DOMLocatorImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DOMLocatorImpl implements org.w3c.dom.DOMLocator {
+  public int fColumnNumber;
+  public int fLineNumber;
+  public org.w3c.dom.Node fRelatedNode;
+  public java.lang.String fUri;
+  public int fByteOffset;
+  public int fUtf16Offset;
+  public com.sun.org.apache.xerces.internal.dom.DOMLocatorImpl();
+  public com.sun.org.apache.xerces.internal.dom.DOMLocatorImpl(int, int, java.lang.String);
+  public com.sun.org.apache.xerces.internal.dom.DOMLocatorImpl(int, int, int, java.lang.String);
+  public com.sun.org.apache.xerces.internal.dom.DOMLocatorImpl(int, int, int, org.w3c.dom.Node, java.lang.String);
+  public com.sun.org.apache.xerces.internal.dom.DOMLocatorImpl(int, int, int, org.w3c.dom.Node, java.lang.String, int);
+  public int getLineNumber();
+  public int getColumnNumber();
+  public java.lang.String getUri();
+  public org.w3c.dom.Node getRelatedNode();
+  public int getByteOffset();
+  public int getUtf16Offset();
+}

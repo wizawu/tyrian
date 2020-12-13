@@ -1,0 +1,9 @@
+Compiled from "ClassLoaderDataGraph.java"
+public class sun.jvm.hotspot.classfile.ClassLoaderDataGraph {
+  public sun.jvm.hotspot.classfile.ClassLoaderDataGraph();
+  public sun.jvm.hotspot.classfile.ClassLoaderData getClassLoaderGraphHead();
+  public sun.jvm.hotspot.oops.Klass find(java.lang.String);
+  public void classesDo(sun.jvm.hotspot.classfile.ClassLoaderDataGraph$ClassVisitor);
+  public void allEntriesDo(sun.jvm.hotspot.classfile.ClassLoaderDataGraph$ClassAndLoaderVisitor);
+  static {};
+}

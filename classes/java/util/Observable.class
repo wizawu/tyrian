@@ -1,0 +1,13 @@
+Compiled from "Observable.java"
+public class java.util.Observable {
+  public java.util.Observable();
+  public synchronized void addObserver(java.util.Observer);
+  public synchronized void deleteObserver(java.util.Observer);
+  public void notifyObservers();
+  public void notifyObservers(java.lang.Object);
+  public synchronized void deleteObservers();
+  protected synchronized void setChanged();
+  protected synchronized void clearChanged();
+  public synchronized boolean hasChanged();
+  public synchronized int countObservers();
+}

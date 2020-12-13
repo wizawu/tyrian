@@ -1,0 +1,15 @@
+Compiled from "GrowableEltArray.java"
+public class sun.java2d.xr.GrowableEltArray extends sun.java2d.xr.GrowableIntArray {
+  sun.java2d.xr.GrowableIntArray glyphs;
+  public sun.java2d.xr.GrowableEltArray(int);
+  public final int getCharCnt(int);
+  public final void setCharCnt(int, int);
+  public final int getXOff(int);
+  public final void setXOff(int, int);
+  public final int getYOff(int);
+  public final void setYOff(int, int);
+  public final int getGlyphSet(int);
+  public final void setGlyphSet(int, int);
+  public sun.java2d.xr.GrowableIntArray getGlyphs();
+  public void clear();
+}

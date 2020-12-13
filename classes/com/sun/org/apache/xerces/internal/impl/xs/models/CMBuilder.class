@@ -1,0 +1,9 @@
+Compiled from "CMBuilder.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.models.CMBuilder {
+  public com.sun.org.apache.xerces.internal.impl.xs.models.CMBuilder(com.sun.org.apache.xerces.internal.impl.xs.models.CMNodeFactory);
+  public void setDeclPool(com.sun.org.apache.xerces.internal.impl.xs.XSDeclarationPool);
+  public com.sun.org.apache.xerces.internal.impl.xs.models.XSCMValidator getContentModel(com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl, boolean);
+  com.sun.org.apache.xerces.internal.impl.xs.models.XSCMValidator createAllCM(com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl);
+  com.sun.org.apache.xerces.internal.impl.xs.models.XSCMValidator createDFACM(com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl, boolean);
+  static {};
+}

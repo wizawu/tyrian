@@ -1,0 +1,7 @@
+Compiled from "ConnectionEvent.java"
+public class javax.sql.ConnectionEvent extends java.util.EventObject {
+  static final long serialVersionUID;
+  public javax.sql.ConnectionEvent(javax.sql.PooledConnection);
+  public javax.sql.ConnectionEvent(javax.sql.PooledConnection, java.sql.SQLException);
+  public java.sql.SQLException getSQLException();
+}

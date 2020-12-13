@@ -1,0 +1,6 @@
+Compiled from "OptionOutputFormatter.java"
+public class sun.tools.jstat.OptionOutputFormatter implements sun.tools.jstat.OutputFormatter {
+  public sun.tools.jstat.OptionOutputFormatter(sun.jvmstat.monitor.MonitoredVm, sun.tools.jstat.OptionFormat) throws sun.jvmstat.monitor.MonitorException;
+  public java.lang.String getHeader() throws sun.jvmstat.monitor.MonitorException;
+  public java.lang.String getRow() throws sun.jvmstat.monitor.MonitorException;
+}

@@ -1,0 +1,4 @@
+Compiled from "SoftJitterCorrector.java"
+public final class com.sun.media.sound.SoftJitterCorrector extends javax.sound.sampled.AudioInputStream {
+  public com.sun.media.sound.SoftJitterCorrector(javax.sound.sampled.AudioInputStream, int, int);
+}

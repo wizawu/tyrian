@@ -1,0 +1,17 @@
+Compiled from "TypeStackSlotEntries.java"
+public class sun.jvm.hotspot.oops.TypeStackSlotEntries<K, M> extends sun.jvm.hotspot.oops.TypeEntries<K, M> {
+  static final int stackSlotEntry;
+  static final int typeEntry;
+  static final int perArgCellCount;
+  final int numberOfEntries;
+  int stackSlotOffset(int);
+  int typeOffsetInCells(int);
+  sun.jvm.hotspot.oops.TypeStackSlotEntries(sun.jvm.hotspot.oops.MethodDataInterface<K, M>, sun.jvm.hotspot.oops.ProfileData, int, int);
+  static int stackSlotLocalOffset(int);
+  static int typeLocalOffset(int);
+  int stackSlot(int);
+  K type(int);
+  static int perArgCount();
+  int typeIndex(int);
+  void printDataOn(java.io.PrintStream);
+}

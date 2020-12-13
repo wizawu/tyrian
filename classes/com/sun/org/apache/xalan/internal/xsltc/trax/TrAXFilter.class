@@ -1,0 +1,9 @@
+Compiled from "TrAXFilter.java"
+public class com.sun.org.apache.xalan.internal.xsltc.trax.TrAXFilter extends org.xml.sax.helpers.XMLFilterImpl {
+  public com.sun.org.apache.xalan.internal.xsltc.trax.TrAXFilter(javax.xml.transform.Templates) throws javax.xml.transform.TransformerConfigurationException;
+  public javax.xml.transform.Transformer getTransformer();
+  public void parse(org.xml.sax.InputSource) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(java.lang.String) throws org.xml.sax.SAXException, java.io.IOException;
+  public void setContentHandler(org.xml.sax.ContentHandler);
+  public void setErrorListener(javax.xml.transform.ErrorListener);
+}

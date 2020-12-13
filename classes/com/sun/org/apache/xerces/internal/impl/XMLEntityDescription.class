@@ -1,0 +1,5 @@
+Compiled from "XMLEntityDescription.java"
+public interface com.sun.org.apache.xerces.internal.impl.XMLEntityDescription extends com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier {
+  public abstract void setEntityName(java.lang.String);
+  public abstract java.lang.String getEntityName();
+}

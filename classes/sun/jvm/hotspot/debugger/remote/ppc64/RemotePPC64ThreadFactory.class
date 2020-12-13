@@ -1,0 +1,6 @@
+Compiled from "RemotePPC64ThreadFactory.java"
+public class sun.jvm.hotspot.debugger.remote.ppc64.RemotePPC64ThreadFactory implements sun.jvm.hotspot.debugger.remote.RemoteThreadFactory {
+  public sun.jvm.hotspot.debugger.remote.ppc64.RemotePPC64ThreadFactory(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient);
+  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(long);
+}

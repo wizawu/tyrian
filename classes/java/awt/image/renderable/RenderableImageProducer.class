@@ -1,0 +1,14 @@
+Compiled from "RenderableImageProducer.java"
+public class java.awt.image.renderable.RenderableImageProducer implements java.awt.image.ImageProducer,java.lang.Runnable {
+  java.awt.image.renderable.RenderableImage rdblImage;
+  java.awt.image.renderable.RenderContext rc;
+  java.util.Vector<java.awt.image.ImageConsumer> ics;
+  public java.awt.image.renderable.RenderableImageProducer(java.awt.image.renderable.RenderableImage, java.awt.image.renderable.RenderContext);
+  public synchronized void setRenderContext(java.awt.image.renderable.RenderContext);
+  public synchronized void addConsumer(java.awt.image.ImageConsumer);
+  public synchronized boolean isConsumer(java.awt.image.ImageConsumer);
+  public synchronized void removeConsumer(java.awt.image.ImageConsumer);
+  public synchronized void startProduction(java.awt.image.ImageConsumer);
+  public void requestTopDownLeftRightResend(java.awt.image.ImageConsumer);
+  public void run();
+}

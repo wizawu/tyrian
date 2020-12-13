@@ -1,0 +1,15 @@
+Compiled from "SimpleTreeVisitorES6.java"
+public class jdk.nashorn.api.tree.SimpleTreeVisitorES6<R, P> extends jdk.nashorn.api.tree.SimpleTreeVisitorES5_1<R, P> {
+  public jdk.nashorn.api.tree.SimpleTreeVisitorES6();
+  public R visitCompilationUnit(jdk.nashorn.api.tree.CompilationUnitTree, P);
+  public R visitModule(jdk.nashorn.api.tree.ModuleTree, P);
+  public R visitExportEntry(jdk.nashorn.api.tree.ExportEntryTree, P);
+  public R visitImportEntry(jdk.nashorn.api.tree.ImportEntryTree, P);
+  public R visitClassDeclaration(jdk.nashorn.api.tree.ClassDeclarationTree, P);
+  public R visitClassExpression(jdk.nashorn.api.tree.ClassExpressionTree, P);
+  public R visitForOfLoop(jdk.nashorn.api.tree.ForOfLoopTree, P);
+  public R visitYield(jdk.nashorn.api.tree.YieldTree, P);
+  public R visitSpread(jdk.nashorn.api.tree.SpreadTree, P);
+  public R visitTemplateLiteral(jdk.nashorn.api.tree.TemplateLiteralTree, P);
+  public R visitVariable(jdk.nashorn.api.tree.VariableTree, P);
+}

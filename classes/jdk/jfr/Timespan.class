@@ -1,0 +1,9 @@
+Compiled from "Timespan.java"
+public interface jdk.jfr.Timespan extends java.lang.annotation.Annotation {
+  public static final java.lang.String TICKS;
+  public static final java.lang.String SECONDS;
+  public static final java.lang.String MILLISECONDS;
+  public static final java.lang.String NANOSECONDS;
+  public static final java.lang.String MICROSECONDS;
+  public abstract java.lang.String value();
+}

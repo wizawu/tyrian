@@ -1,0 +1,23 @@
+Compiled from "StartElementEvent.java"
+public class com.sun.xml.internal.stream.events.StartElementEvent extends com.sun.xml.internal.stream.events.DummyEvent implements javax.xml.stream.events.StartElement {
+  public com.sun.xml.internal.stream.events.StartElementEvent(java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.xml.internal.stream.events.StartElementEvent(javax.xml.namespace.QName);
+  public com.sun.xml.internal.stream.events.StartElementEvent(javax.xml.stream.events.StartElement);
+  protected final void init();
+  public javax.xml.namespace.QName getName();
+  public void setName(javax.xml.namespace.QName);
+  public java.util.Iterator<javax.xml.stream.events.Attribute> getAttributes();
+  public java.util.Iterator<javax.xml.stream.events.Namespace> getNamespaces();
+  public javax.xml.stream.events.Attribute getAttributeByName(javax.xml.namespace.QName);
+  public java.lang.String getNamespace();
+  public java.lang.String getNamespaceURI(java.lang.String);
+  public java.lang.String toString();
+  public java.lang.String nameAsString();
+  public javax.xml.namespace.NamespaceContext getNamespaceContext();
+  public void setNamespaceContext(javax.xml.namespace.NamespaceContext);
+  protected void writeAsEncodedUnicodeEx(java.io.Writer) throws java.io.IOException;
+  void addAttribute(javax.xml.stream.events.Attribute);
+  final void addAttributes(java.util.Iterator<? extends javax.xml.stream.events.Attribute>);
+  void addNamespaceAttribute(javax.xml.stream.events.Namespace);
+  final void addNamespaceAttributes(java.util.Iterator<? extends javax.xml.stream.events.Namespace>);
+}

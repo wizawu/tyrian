@@ -1,0 +1,5 @@
+Compiled from "TargetLostException.java"
+public final class com.sun.org.apache.bcel.internal.generic.TargetLostException extends java.lang.Exception {
+  com.sun.org.apache.bcel.internal.generic.TargetLostException(com.sun.org.apache.bcel.internal.generic.InstructionHandle[], java.lang.String);
+  public com.sun.org.apache.bcel.internal.generic.InstructionHandle[] getTargets();
+}

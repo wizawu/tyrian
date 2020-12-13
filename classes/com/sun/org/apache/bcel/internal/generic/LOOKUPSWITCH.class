@@ -1,0 +1,8 @@
+Compiled from "LOOKUPSWITCH.java"
+public class com.sun.org.apache.bcel.internal.generic.LOOKUPSWITCH extends com.sun.org.apache.bcel.internal.generic.Select {
+  com.sun.org.apache.bcel.internal.generic.LOOKUPSWITCH();
+  public com.sun.org.apache.bcel.internal.generic.LOOKUPSWITCH(int[], com.sun.org.apache.bcel.internal.generic.InstructionHandle[], com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

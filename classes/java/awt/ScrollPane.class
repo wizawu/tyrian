@@ -1,0 +1,33 @@
+Compiled from "ScrollPane.java"
+public class java.awt.ScrollPane extends java.awt.Container implements javax.accessibility.Accessible {
+  public static final int SCROLLBARS_AS_NEEDED;
+  public static final int SCROLLBARS_ALWAYS;
+  public static final int SCROLLBARS_NEVER;
+  public java.awt.ScrollPane() throws java.awt.HeadlessException;
+  public java.awt.ScrollPane(int) throws java.awt.HeadlessException;
+  java.lang.String constructComponentName();
+  protected final void addImpl(java.awt.Component, java.lang.Object, int);
+  public int getScrollbarDisplayPolicy();
+  public java.awt.Dimension getViewportSize();
+  public int getHScrollbarHeight();
+  public int getVScrollbarWidth();
+  public java.awt.Adjustable getVAdjustable();
+  public java.awt.Adjustable getHAdjustable();
+  public void setScrollPosition(int, int);
+  public void setScrollPosition(java.awt.Point);
+  public java.awt.Point getScrollPosition();
+  public final void setLayout(java.awt.LayoutManager);
+  public void doLayout();
+  java.awt.Dimension calculateChildSize();
+  public void layout();
+  public void printComponents(java.awt.Graphics);
+  public void addNotify();
+  public java.lang.String paramString();
+  void autoProcessMouseWheel(java.awt.event.MouseWheelEvent);
+  protected void processMouseWheelEvent(java.awt.event.MouseWheelEvent);
+  protected boolean eventTypeEnabled(int);
+  public void setWheelScrollingEnabled(boolean);
+  public boolean isWheelScrollingEnabled();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  static {};
+}

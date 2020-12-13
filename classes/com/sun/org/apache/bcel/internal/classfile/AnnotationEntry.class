@@ -1,0 +1,18 @@
+Compiled from "AnnotationEntry.java"
+public class com.sun.org.apache.bcel.internal.classfile.AnnotationEntry implements com.sun.org.apache.bcel.internal.classfile.Node {
+  public static com.sun.org.apache.bcel.internal.classfile.AnnotationEntry read(java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool, boolean) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.AnnotationEntry(int, com.sun.org.apache.bcel.internal.classfile.ConstantPool, boolean);
+  public int getTypeIndex();
+  public com.sun.org.apache.bcel.internal.classfile.ConstantPool getConstantPool();
+  public boolean isRuntimeVisible();
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public java.lang.String getAnnotationType();
+  public int getAnnotationTypeIndex();
+  public final int getNumElementValuePairs();
+  public com.sun.org.apache.bcel.internal.classfile.ElementValuePair[] getElementValuePairs();
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public void addElementNameValuePair(com.sun.org.apache.bcel.internal.classfile.ElementValuePair);
+  public java.lang.String toShortString();
+  public java.lang.String toString();
+  public static com.sun.org.apache.bcel.internal.classfile.AnnotationEntry[] createAnnotationEntries(com.sun.org.apache.bcel.internal.classfile.Attribute[]);
+}

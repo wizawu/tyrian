@@ -1,0 +1,8 @@
+Compiled from "ExtendedSSLSession.java"
+public abstract class javax.net.ssl.ExtendedSSLSession implements javax.net.ssl.SSLSession {
+  public javax.net.ssl.ExtendedSSLSession();
+  public abstract java.lang.String[] getLocalSupportedSignatureAlgorithms();
+  public abstract java.lang.String[] getPeerSupportedSignatureAlgorithms();
+  public java.util.List<javax.net.ssl.SNIServerName> getRequestedServerNames();
+  public java.util.List<byte[]> getStatusResponses();
+}

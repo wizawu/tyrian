@@ -1,0 +1,19 @@
+Compiled from "DatatypeFactoryImpl.java"
+public class com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl extends javax.xml.datatype.DatatypeFactory {
+  public com.sun.org.apache.xerces.internal.jaxp.datatype.DatatypeFactoryImpl();
+  public javax.xml.datatype.Duration newDuration(java.lang.String);
+  public javax.xml.datatype.Duration newDuration(long);
+  public javax.xml.datatype.Duration newDuration(boolean, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigDecimal);
+  public javax.xml.datatype.Duration newDurationYearMonth(boolean, java.math.BigInteger, java.math.BigInteger);
+  public javax.xml.datatype.Duration newDurationYearMonth(boolean, int, int);
+  public javax.xml.datatype.Duration newDurationYearMonth(java.lang.String);
+  public javax.xml.datatype.Duration newDurationYearMonth(long);
+  public javax.xml.datatype.Duration newDurationDayTime(java.lang.String);
+  public javax.xml.datatype.Duration newDurationDayTime(long);
+  public javax.xml.datatype.Duration newDurationDayTime(boolean, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger);
+  public javax.xml.datatype.Duration newDurationDayTime(boolean, int, int, int, int);
+  public javax.xml.datatype.XMLGregorianCalendar newXMLGregorianCalendar();
+  public javax.xml.datatype.XMLGregorianCalendar newXMLGregorianCalendar(java.lang.String);
+  public javax.xml.datatype.XMLGregorianCalendar newXMLGregorianCalendar(java.util.GregorianCalendar);
+  public javax.xml.datatype.XMLGregorianCalendar newXMLGregorianCalendar(java.math.BigInteger, int, int, int, int, int, java.math.BigDecimal, int);
+}

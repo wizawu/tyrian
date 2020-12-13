@@ -1,0 +1,20 @@
+Compiled from "Lookup.java"
+public final class jdk.dynalink.linker.support.Lookup {
+  public static final jdk.dynalink.linker.support.Lookup PUBLIC;
+  public jdk.dynalink.linker.support.Lookup(java.lang.invoke.MethodHandles$Lookup);
+  public java.lang.invoke.MethodHandle unreflect(java.lang.reflect.Method);
+  public static java.lang.invoke.MethodHandle unreflect(java.lang.invoke.MethodHandles$Lookup, java.lang.reflect.Method);
+  public java.lang.invoke.MethodHandle unreflectGetter(java.lang.reflect.Field);
+  public java.lang.invoke.MethodHandle findGetter(java.lang.Class<?>, java.lang.String, java.lang.Class<?>);
+  public java.lang.invoke.MethodHandle unreflectSetter(java.lang.reflect.Field);
+  public java.lang.invoke.MethodHandle unreflectConstructor(java.lang.reflect.Constructor<?>);
+  public static java.lang.invoke.MethodHandle unreflectConstructor(java.lang.invoke.MethodHandles$Lookup, java.lang.reflect.Constructor<?>);
+  public java.lang.invoke.MethodHandle findSpecial(java.lang.Class<?>, java.lang.String, java.lang.invoke.MethodType);
+  public java.lang.invoke.MethodHandle findStatic(java.lang.Class<?>, java.lang.String, java.lang.invoke.MethodType);
+  public java.lang.invoke.MethodHandle findVirtual(java.lang.Class<?>, java.lang.String, java.lang.invoke.MethodType);
+  public static java.lang.invoke.MethodHandle findOwnSpecial(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<?>, java.lang.Class<?>...);
+  public java.lang.invoke.MethodHandle findOwnSpecial(java.lang.String, java.lang.Class<?>, java.lang.Class<?>...);
+  public static java.lang.invoke.MethodHandle findOwnStatic(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<?>, java.lang.Class<?>...);
+  public java.lang.invoke.MethodHandle findOwnStatic(java.lang.String, java.lang.Class<?>, java.lang.Class<?>...);
+  static {};
+}

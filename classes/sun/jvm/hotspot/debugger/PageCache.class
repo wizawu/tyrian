@@ -1,0 +1,17 @@
+Compiled from "PageCache.java"
+public class sun.jvm.hotspot.debugger.PageCache {
+  public sun.jvm.hotspot.debugger.PageCache(long, long, sun.jvm.hotspot.debugger.PageFetcher);
+  public synchronized byte[] getData(long, long) throws sun.jvm.hotspot.debugger.UnmappedAddressException;
+  public synchronized boolean getBoolean(long);
+  public synchronized byte getByte(long);
+  public synchronized short getShort(long, boolean);
+  public synchronized char getChar(long, boolean);
+  public synchronized int getInt(long, boolean);
+  public synchronized long getLong(long, boolean);
+  public synchronized float getFloat(long, boolean);
+  public synchronized double getDouble(long, boolean);
+  public synchronized void clear(long, long);
+  public synchronized void clear();
+  public synchronized void disable();
+  public synchronized void enable();
+}

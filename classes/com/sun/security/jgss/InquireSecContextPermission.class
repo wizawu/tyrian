@@ -1,0 +1,4 @@
+Compiled from "InquireSecContextPermission.java"
+public final class com.sun.security.jgss.InquireSecContextPermission extends java.security.BasicPermission {
+  public com.sun.security.jgss.InquireSecContextPermission(java.lang.String);
+}

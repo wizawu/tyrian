@@ -1,0 +1,8 @@
+Compiled from "ciMetadata.java"
+public class sun.jvm.hotspot.ci.ciMetadata extends sun.jvm.hotspot.ci.ciBaseObject {
+  public sun.jvm.hotspot.oops.Metadata getMetadata();
+  public sun.jvm.hotspot.ci.ciMetadata(sun.jvm.hotspot.debugger.Address);
+  public void printOn(java.io.PrintStream);
+  public java.lang.String toString();
+  static {};
+}

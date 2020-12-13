@@ -1,0 +1,16 @@
+Compiled from "AlgorithmParameters.java"
+public class java.security.AlgorithmParameters {
+  protected java.security.AlgorithmParameters(java.security.AlgorithmParametersSpi, java.security.Provider, java.lang.String);
+  public final java.lang.String getAlgorithm();
+  public static java.security.AlgorithmParameters getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  public static java.security.AlgorithmParameters getInstance(java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  public static java.security.AlgorithmParameters getInstance(java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  public final java.security.Provider getProvider();
+  public final void init(java.security.spec.AlgorithmParameterSpec) throws java.security.spec.InvalidParameterSpecException;
+  public final void init(byte[]) throws java.io.IOException;
+  public final void init(byte[], java.lang.String) throws java.io.IOException;
+  public final <T extends java.security.spec.AlgorithmParameterSpec> T getParameterSpec(java.lang.Class<T>) throws java.security.spec.InvalidParameterSpecException;
+  public final byte[] getEncoded() throws java.io.IOException;
+  public final byte[] getEncoded(java.lang.String) throws java.io.IOException;
+  public final java.lang.String toString();
+}

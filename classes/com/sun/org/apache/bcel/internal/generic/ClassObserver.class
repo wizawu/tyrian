@@ -1,0 +1,4 @@
+Compiled from "ClassObserver.java"
+public interface com.sun.org.apache.bcel.internal.generic.ClassObserver {
+  public abstract void notify(com.sun.org.apache.bcel.internal.generic.ClassGen);
+}

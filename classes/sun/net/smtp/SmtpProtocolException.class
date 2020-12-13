@@ -1,0 +1,4 @@
+Compiled from "SmtpProtocolException.java"
+public class sun.net.smtp.SmtpProtocolException extends java.io.IOException {
+  sun.net.smtp.SmtpProtocolException(java.lang.String);
+}

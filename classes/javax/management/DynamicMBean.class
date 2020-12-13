@@ -1,0 +1,9 @@
+Compiled from "DynamicMBean.java"
+public interface javax.management.DynamicMBean {
+  public abstract java.lang.Object getAttribute(java.lang.String) throws javax.management.AttributeNotFoundException, javax.management.MBeanException, javax.management.ReflectionException;
+  public abstract void setAttribute(javax.management.Attribute) throws javax.management.AttributeNotFoundException, javax.management.InvalidAttributeValueException, javax.management.MBeanException, javax.management.ReflectionException;
+  public abstract javax.management.AttributeList getAttributes(java.lang.String[]);
+  public abstract javax.management.AttributeList setAttributes(javax.management.AttributeList);
+  public abstract java.lang.Object invoke(java.lang.String, java.lang.Object[], java.lang.String[]) throws javax.management.MBeanException, javax.management.ReflectionException;
+  public abstract javax.management.MBeanInfo getMBeanInfo();
+}

@@ -1,0 +1,20 @@
+Compiled from "AudioInputStream.java"
+public class javax.sound.sampled.AudioInputStream extends java.io.InputStream {
+  protected javax.sound.sampled.AudioFormat format;
+  protected long frameLength;
+  protected int frameSize;
+  protected long framePos;
+  public javax.sound.sampled.AudioInputStream(java.io.InputStream, javax.sound.sampled.AudioFormat, long);
+  public javax.sound.sampled.AudioInputStream(javax.sound.sampled.TargetDataLine);
+  public javax.sound.sampled.AudioFormat getFormat();
+  public long getFrameLength();
+  public int read() throws java.io.IOException;
+  public int read(byte[]) throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public long skip(long) throws java.io.IOException;
+  public int available() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public void mark(int);
+  public void reset() throws java.io.IOException;
+  public boolean markSupported();
+}

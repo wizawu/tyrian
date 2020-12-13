@@ -1,0 +1,10 @@
+Compiled from "InputMethodRequests.java"
+public interface java.awt.im.InputMethodRequests {
+  public abstract java.awt.Rectangle getTextLocation(java.awt.font.TextHitInfo);
+  public abstract java.awt.font.TextHitInfo getLocationOffset(int, int);
+  public abstract int getInsertPositionOffset();
+  public abstract java.text.AttributedCharacterIterator getCommittedText(int, int, java.text.AttributedCharacterIterator$Attribute[]);
+  public abstract int getCommittedTextLength();
+  public abstract java.text.AttributedCharacterIterator cancelLatestCommittedText(java.text.AttributedCharacterIterator$Attribute[]);
+  public abstract java.text.AttributedCharacterIterator getSelectedText(java.text.AttributedCharacterIterator$Attribute[]);
+}

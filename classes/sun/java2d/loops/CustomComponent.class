@@ -1,0 +1,6 @@
+Compiled from "CustomComponent.java"
+public final class sun.java2d.loops.CustomComponent {
+  public sun.java2d.loops.CustomComponent();
+  public static void register();
+  public static sun.java2d.pipe.Region getRegionOfInterest(sun.java2d.SurfaceData, sun.java2d.SurfaceData, sun.java2d.pipe.Region, int, int, int, int, int, int);
+}

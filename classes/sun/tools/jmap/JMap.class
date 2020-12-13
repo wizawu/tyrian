@@ -1,0 +1,5 @@
+Compiled from "JMap.java"
+public class sun.tools.jmap.JMap {
+  public sun.tools.jmap.JMap();
+  public static void main(java.lang.String[]) throws java.lang.Exception;
+}

@@ -1,0 +1,6 @@
+Compiled from "BasicJLongField.java"
+public class sun.jvm.hotspot.types.basic.BasicJLongField extends sun.jvm.hotspot.types.basic.BasicField implements sun.jvm.hotspot.types.JLongField {
+  public sun.jvm.hotspot.types.basic.BasicJLongField(sun.jvm.hotspot.types.basic.BasicTypeDataBase, sun.jvm.hotspot.types.Type, java.lang.String, sun.jvm.hotspot.types.Type, boolean, long, sun.jvm.hotspot.debugger.Address);
+  public long getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+  public long getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+}

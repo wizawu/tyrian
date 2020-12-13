@@ -1,0 +1,10 @@
+Compiled from "AbstractMemberBuilder.java"
+public abstract class jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder extends jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder {
+  protected final javax.lang.model.element.TypeElement typeElement;
+  protected final jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable visibleMemberTable;
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder(jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder$Context, javax.lang.model.element.TypeElement);
+  public void build();
+  public abstract void build(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  public abstract boolean hasMembersToDocument();
+  protected java.util.List<? extends javax.lang.model.element.Element> getVisibleMembers(jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable$Kind);
+}

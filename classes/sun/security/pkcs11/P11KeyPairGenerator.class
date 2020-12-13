@@ -1,0 +1,7 @@
+Compiled from "P11KeyPairGenerator.java"
+final class sun.security.pkcs11.P11KeyPairGenerator extends java.security.KeyPairGeneratorSpi {
+  sun.security.pkcs11.P11KeyPairGenerator(sun.security.pkcs11.Token, java.lang.String, long) throws sun.security.pkcs11.wrapper.PKCS11Exception;
+  public void initialize(int, java.security.SecureRandom);
+  public void initialize(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
+  public java.security.KeyPair generateKeyPair();
+}

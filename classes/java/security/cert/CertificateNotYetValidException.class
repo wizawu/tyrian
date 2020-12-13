@@ -1,0 +1,6 @@
+Compiled from "CertificateNotYetValidException.java"
+public class java.security.cert.CertificateNotYetValidException extends java.security.cert.CertificateException {
+  static final long serialVersionUID;
+  public java.security.cert.CertificateNotYetValidException();
+  public java.security.cert.CertificateNotYetValidException(java.lang.String);
+}

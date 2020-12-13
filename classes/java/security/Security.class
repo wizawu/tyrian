@@ -1,0 +1,20 @@
+Compiled from "Security.java"
+public final class java.security.Security {
+  public static java.lang.String getAlgorithmProperty(java.lang.String, java.lang.String);
+  public static synchronized int insertProviderAt(java.security.Provider, int);
+  public static int addProvider(java.security.Provider);
+  public static synchronized void removeProvider(java.lang.String);
+  public static java.security.Provider[] getProviders();
+  public static java.security.Provider getProvider(java.lang.String);
+  public static java.security.Provider[] getProviders(java.lang.String);
+  public static java.security.Provider[] getProviders(java.util.Map<java.lang.String, java.lang.String>);
+  static java.lang.Object[] getImpl(java.lang.String, java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  static java.lang.Object[] getImpl(java.lang.String, java.lang.String, java.lang.String, java.lang.Object) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException, java.security.InvalidAlgorithmParameterException;
+  static java.lang.Object[] getImpl(java.lang.String, java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  static java.lang.Object[] getImpl(java.lang.String, java.lang.String, java.security.Provider, java.lang.Object) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
+  public static java.lang.String getProperty(java.lang.String);
+  public static void setProperty(java.lang.String, java.lang.String);
+  static java.lang.String[] getFilterComponents(java.lang.String, java.lang.String);
+  public static java.util.Set<java.lang.String> getAlgorithms(java.lang.String);
+  static {};
+}

@@ -1,0 +1,31 @@
+Compiled from "AbstractLog.java"
+public abstract class com.sun.tools.javac.util.AbstractLog {
+  protected com.sun.tools.javac.util.JCDiagnostic$Factory diags;
+  protected com.sun.tools.javac.util.DiagnosticSource source;
+  protected java.util.Map<javax.tools.JavaFileObject, com.sun.tools.javac.util.DiagnosticSource> sourceMap;
+  com.sun.tools.javac.util.AbstractLog(com.sun.tools.javac.util.JCDiagnostic$Factory);
+  public javax.tools.JavaFileObject useSource(javax.tools.JavaFileObject);
+  protected com.sun.tools.javac.util.DiagnosticSource getSource(javax.tools.JavaFileObject);
+  public com.sun.tools.javac.util.DiagnosticSource currentSource();
+  public void error(java.lang.String, java.lang.Object...);
+  public void error(com.sun.tools.javac.util.JCDiagnostic$Error);
+  public void error(com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, com.sun.tools.javac.util.JCDiagnostic$Error);
+  public void error(com.sun.tools.javac.util.JCDiagnostic$DiagnosticFlag, com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, com.sun.tools.javac.util.JCDiagnostic$Error);
+  public void error(int, java.lang.String, java.lang.Object...);
+  public void error(int, com.sun.tools.javac.util.JCDiagnostic$Error);
+  public void error(com.sun.tools.javac.util.JCDiagnostic$DiagnosticFlag, int, com.sun.tools.javac.util.JCDiagnostic$Error);
+  public void warning(com.sun.tools.javac.util.JCDiagnostic$Warning);
+  public void warning(com.sun.tools.javac.code.Lint$LintCategory, com.sun.tools.javac.util.JCDiagnostic$Warning);
+  public void warning(com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, com.sun.tools.javac.util.JCDiagnostic$Warning);
+  public void warning(com.sun.tools.javac.code.Lint$LintCategory, com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, com.sun.tools.javac.util.JCDiagnostic$Warning);
+  public void warning(int, com.sun.tools.javac.util.JCDiagnostic$Warning);
+  public void mandatoryWarning(com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, com.sun.tools.javac.util.JCDiagnostic$Warning);
+  public void mandatoryWarning(com.sun.tools.javac.code.Lint$LintCategory, com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, com.sun.tools.javac.util.JCDiagnostic$Warning);
+  public void note(com.sun.tools.javac.util.JCDiagnostic$Note);
+  public void note(com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, com.sun.tools.javac.util.JCDiagnostic$Note);
+  public void note(int, com.sun.tools.javac.util.JCDiagnostic$Note);
+  public void note(javax.tools.JavaFileObject, com.sun.tools.javac.util.JCDiagnostic$Note);
+  public void mandatoryNote(javax.tools.JavaFileObject, com.sun.tools.javac.util.JCDiagnostic$Note);
+  protected abstract void report(com.sun.tools.javac.util.JCDiagnostic);
+  protected abstract void directError(java.lang.String, java.lang.Object...);
+}

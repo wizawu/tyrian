@@ -1,0 +1,23 @@
+Compiled from "CoreDOMImplementationImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.CoreDOMImplementationImpl implements org.w3c.dom.DOMImplementation,org.w3c.dom.ls.DOMImplementationLS {
+  static final com.sun.org.apache.xerces.internal.dom.CoreDOMImplementationImpl singleton;
+  public com.sun.org.apache.xerces.internal.dom.CoreDOMImplementationImpl();
+  public static org.w3c.dom.DOMImplementation getDOMImplementation();
+  public boolean hasFeature(java.lang.String, java.lang.String);
+  public org.w3c.dom.DocumentType createDocumentType(java.lang.String, java.lang.String, java.lang.String);
+  final void checkQName(java.lang.String);
+  public org.w3c.dom.Document createDocument(java.lang.String, java.lang.String, org.w3c.dom.DocumentType) throws org.w3c.dom.DOMException;
+  protected com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl createDocument(org.w3c.dom.DocumentType);
+  public java.lang.Object getFeature(java.lang.String, java.lang.String);
+  public org.w3c.dom.ls.LSParser createLSParser(short, java.lang.String) throws org.w3c.dom.DOMException;
+  public org.w3c.dom.ls.LSSerializer createLSSerializer();
+  public org.w3c.dom.ls.LSInput createLSInput();
+  synchronized com.sun.org.apache.xerces.internal.impl.RevalidationHandler getValidator(java.lang.String, java.lang.String);
+  synchronized void releaseValidator(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.impl.RevalidationHandler);
+  final synchronized com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDLoader getDTDLoader(java.lang.String);
+  final synchronized void releaseDTDLoader(java.lang.String, com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDLoader);
+  protected synchronized int assignDocumentNumber();
+  protected synchronized int assignDocTypeNumber();
+  public org.w3c.dom.ls.LSOutput createLSOutput();
+  static {};
+}

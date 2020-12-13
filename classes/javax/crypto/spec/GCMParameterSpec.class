@@ -1,0 +1,7 @@
+Compiled from "GCMParameterSpec.java"
+public class javax.crypto.spec.GCMParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public javax.crypto.spec.GCMParameterSpec(int, byte[]);
+  public javax.crypto.spec.GCMParameterSpec(int, byte[], int, int);
+  public int getTLen();
+  public byte[] getIV();
+}

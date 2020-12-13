@@ -1,0 +1,14 @@
+Compiled from "BMPattern.java"
+public class com.sun.org.apache.xerces.internal.impl.xpath.regex.BMPattern {
+  final char[] pattern;
+  final int[] shiftTable;
+  final boolean ignoreCase;
+  public com.sun.org.apache.xerces.internal.impl.xpath.regex.BMPattern(java.lang.String, boolean);
+  public com.sun.org.apache.xerces.internal.impl.xpath.regex.BMPattern(java.lang.String, int, boolean);
+  public int matches(java.text.CharacterIterator, int, int);
+  public int matches(java.lang.String, int, int);
+  public int matches(char[], int, int);
+  int matchesIgnoreCase(java.text.CharacterIterator, int, int);
+  int matchesIgnoreCase(java.lang.String, int, int);
+  int matchesIgnoreCase(char[], int, int);
+}

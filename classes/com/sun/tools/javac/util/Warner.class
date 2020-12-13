@@ -1,0 +1,13 @@
+Compiled from "Warner.java"
+public class com.sun.tools.javac.util.Warner {
+  protected boolean warned;
+  public com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition pos();
+  public void warn(com.sun.tools.javac.code.Lint$LintCategory);
+  public void silentWarn(com.sun.tools.javac.code.Lint$LintCategory);
+  public com.sun.tools.javac.util.Warner(com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition);
+  public boolean hasSilentLint(com.sun.tools.javac.code.Lint$LintCategory);
+  public boolean hasNonSilentLint(com.sun.tools.javac.code.Lint$LintCategory);
+  public boolean hasLint(com.sun.tools.javac.code.Lint$LintCategory);
+  public void clear();
+  public com.sun.tools.javac.util.Warner();
+}

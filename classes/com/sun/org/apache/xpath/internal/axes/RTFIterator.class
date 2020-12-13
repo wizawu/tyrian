@@ -1,0 +1,5 @@
+Compiled from "RTFIterator.java"
+public class com.sun.org.apache.xpath.internal.axes.RTFIterator extends com.sun.org.apache.xpath.internal.NodeSetDTM {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.axes.RTFIterator(int, com.sun.org.apache.xml.internal.dtm.DTMManager);
+}

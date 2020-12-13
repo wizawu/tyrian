@@ -1,0 +1,16 @@
+Compiled from "ProtectionDomain.java"
+public class java.security.ProtectionDomain {
+  final java.security.ProtectionDomain$Key key;
+  public java.security.ProtectionDomain(java.security.CodeSource, java.security.PermissionCollection);
+  public java.security.ProtectionDomain(java.security.CodeSource, java.security.PermissionCollection, java.lang.ClassLoader, java.security.Principal[]);
+  public final java.security.CodeSource getCodeSource();
+  public final java.lang.ClassLoader getClassLoader();
+  public final java.security.Principal[] getPrincipals();
+  public final java.security.PermissionCollection getPermissions();
+  public final boolean staticPermissionsOnly();
+  public boolean implies(java.security.Permission);
+  boolean impliesWithAltFilePerm(java.security.Permission);
+  boolean impliesCreateAccessControlContext();
+  public java.lang.String toString();
+  static {};
+}

@@ -1,0 +1,29 @@
+Compiled from "PrintServiceLookupProvider.java"
+public class sun.print.PrintServiceLookupProvider extends javax.print.PrintServiceLookup implements sun.print.BackgroundServiceLookup,java.lang.Runnable {
+  static java.lang.String osname;
+  java.lang.String[] lpNameComAix;
+  static final int UNINITIALIZED;
+  static final int BSD_LPD;
+  static final int BSD_LPD_NG;
+  static int cmdIndex;
+  java.lang.String[] lpcFirstCom;
+  java.lang.String[] lpcAllCom;
+  java.lang.String[] lpcNameCom;
+  static boolean isMac();
+  static boolean isSysV();
+  static boolean isLinux();
+  static boolean isBSD();
+  static boolean isAIX();
+  static int getBSDCommandIndex();
+  public sun.print.PrintServiceLookupProvider();
+  public synchronized javax.print.PrintService[] getPrintServices();
+  public synchronized void refreshServices();
+  public javax.print.PrintService[] getPrintServices(javax.print.DocFlavor, javax.print.attribute.AttributeSet);
+  public javax.print.MultiDocPrintService[] getMultiDocPrintServices(javax.print.DocFlavor[], javax.print.attribute.AttributeSet);
+  public synchronized javax.print.PrintService getDefaultPrintService();
+  public synchronized void getServicesInbackground(sun.print.BackgroundLookupListener);
+  public void run();
+  static java.lang.String getDefaultPrinterNameSysV();
+  static java.lang.String[] execCmd(java.lang.String);
+  static {};
+}

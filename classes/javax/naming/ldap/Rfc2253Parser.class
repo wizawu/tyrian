@@ -1,0 +1,7 @@
+Compiled from "Rfc2253Parser.java"
+final class javax.naming.ldap.Rfc2253Parser {
+  javax.naming.ldap.Rfc2253Parser(java.lang.String);
+  java.util.List<javax.naming.ldap.Rdn> parseDn() throws javax.naming.InvalidNameException;
+  javax.naming.ldap.Rdn parseRdn() throws javax.naming.InvalidNameException;
+  javax.naming.ldap.Rdn parseRdn(javax.naming.ldap.Rdn) throws javax.naming.InvalidNameException;
+}

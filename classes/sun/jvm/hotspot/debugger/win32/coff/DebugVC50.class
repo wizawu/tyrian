@@ -1,0 +1,5 @@
+Compiled from "DebugVC50.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50 {
+  public abstract int getSubsectionDirectoryOffset();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugVC50SubsectionDirectory getSubsectionDirectory();
+}

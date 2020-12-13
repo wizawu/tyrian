@@ -1,0 +1,5 @@
+Compiled from "IMUL.java"
+public class com.sun.org.apache.bcel.internal.generic.IMUL extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
+  public com.sun.org.apache.bcel.internal.generic.IMUL();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

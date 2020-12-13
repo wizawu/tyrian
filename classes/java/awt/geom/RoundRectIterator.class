@@ -1,0 +1,18 @@
+Compiled from "RoundRectIterator.java"
+class java.awt.geom.RoundRectIterator implements java.awt.geom.PathIterator {
+  double x;
+  double y;
+  double w;
+  double h;
+  double aw;
+  double ah;
+  java.awt.geom.AffineTransform affine;
+  int index;
+  java.awt.geom.RoundRectIterator(java.awt.geom.RoundRectangle2D, java.awt.geom.AffineTransform);
+  public int getWindingRule();
+  public boolean isDone();
+  public void next();
+  public int currentSegment(float[]);
+  public int currentSegment(double[]);
+  static {};
+}

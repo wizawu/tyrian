@@ -1,0 +1,10 @@
+Compiled from "Extension.java"
+class sun.util.locale.Extension {
+  protected sun.util.locale.Extension(char);
+  sun.util.locale.Extension(char, java.lang.String);
+  protected void setValue(java.lang.String);
+  public char getKey();
+  public java.lang.String getValue();
+  public java.lang.String getID();
+  public java.lang.String toString();
+}

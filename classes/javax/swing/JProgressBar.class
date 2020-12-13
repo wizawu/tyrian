@@ -1,0 +1,47 @@
+Compiled from "JProgressBar.java"
+public class javax.swing.JProgressBar extends javax.swing.JComponent implements javax.swing.SwingConstants,javax.accessibility.Accessible {
+  protected int orientation;
+  protected boolean paintBorder;
+  protected javax.swing.BoundedRangeModel model;
+  protected java.lang.String progressString;
+  protected boolean paintString;
+  protected transient javax.swing.event.ChangeEvent changeEvent;
+  protected javax.swing.event.ChangeListener changeListener;
+  public javax.swing.JProgressBar();
+  public javax.swing.JProgressBar(int);
+  public javax.swing.JProgressBar(int, int);
+  public javax.swing.JProgressBar(int, int, int);
+  public javax.swing.JProgressBar(javax.swing.BoundedRangeModel);
+  public int getOrientation();
+  public void setOrientation(int);
+  public boolean isStringPainted();
+  public void setStringPainted(boolean);
+  public java.lang.String getString();
+  public void setString(java.lang.String);
+  public double getPercentComplete();
+  public boolean isBorderPainted();
+  public void setBorderPainted(boolean);
+  protected void paintBorder(java.awt.Graphics);
+  public javax.swing.plaf.ProgressBarUI getUI();
+  public void setUI(javax.swing.plaf.ProgressBarUI);
+  public void updateUI();
+  public java.lang.String getUIClassID();
+  protected javax.swing.event.ChangeListener createChangeListener();
+  public void addChangeListener(javax.swing.event.ChangeListener);
+  public void removeChangeListener(javax.swing.event.ChangeListener);
+  public javax.swing.event.ChangeListener[] getChangeListeners();
+  protected void fireStateChanged();
+  public javax.swing.BoundedRangeModel getModel();
+  public void setModel(javax.swing.BoundedRangeModel);
+  public int getValue();
+  public int getMinimum();
+  public int getMaximum();
+  public void setValue(int);
+  public void setMinimum(int);
+  public void setMaximum(int);
+  public void setIndeterminate(boolean);
+  public boolean isIndeterminate();
+  protected java.lang.String paramString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  public javax.swing.plaf.ComponentUI getUI();
+}

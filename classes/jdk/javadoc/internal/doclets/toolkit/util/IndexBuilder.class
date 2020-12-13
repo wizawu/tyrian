@@ -1,0 +1,13 @@
+Compiled from "IndexBuilder.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder {
+  public jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration, boolean);
+  public jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration, boolean, boolean);
+  protected void buildIndexMap(jdk.javadoc.doclet.DocletEnvironment);
+  protected void putMembersInIndexMap(javax.lang.model.element.TypeElement);
+  protected void adjustIndexMap(java.lang.Iterable<? extends javax.lang.model.element.Element>);
+  protected void addModulesToIndexMap();
+  protected boolean shouldAddToIndexMap(javax.lang.model.element.Element);
+  public java.util.Map<java.lang.Character, java.util.SortedSet<javax.lang.model.element.Element>> getIndexMap();
+  public java.util.List<? extends javax.lang.model.element.Element> getMemberList(java.lang.Character);
+  public java.util.List<java.lang.Character> index();
+}

@@ -1,0 +1,9 @@
+Compiled from "NashornClassReader.java"
+public class jdk.nashorn.internal.ir.debug.NashornClassReader extends jdk.internal.org.objectweb.asm.ClassReader {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.ir.debug.NashornClassReader(byte[]);
+  java.util.List<jdk.internal.org.objectweb.asm.Label> getExtraLabels(java.lang.String, java.lang.String, java.lang.String);
+  public void accept(jdk.internal.org.objectweb.asm.ClassVisitor, jdk.internal.org.objectweb.asm.Attribute[], int);
+  protected jdk.internal.org.objectweb.asm.Label readLabel(int, jdk.internal.org.objectweb.asm.Label[]);
+  static {};
+}

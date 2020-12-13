@@ -1,0 +1,7 @@
+Compiled from "KeyManagerFactorySpi.java"
+public abstract class javax.net.ssl.KeyManagerFactorySpi {
+  public javax.net.ssl.KeyManagerFactorySpi();
+  protected abstract void engineInit(java.security.KeyStore, char[]) throws java.security.KeyStoreException, java.security.NoSuchAlgorithmException, java.security.UnrecoverableKeyException;
+  protected abstract void engineInit(javax.net.ssl.ManagerFactoryParameters) throws java.security.InvalidAlgorithmParameterException;
+  protected abstract javax.net.ssl.KeyManager[] engineGetKeyManagers();
+}

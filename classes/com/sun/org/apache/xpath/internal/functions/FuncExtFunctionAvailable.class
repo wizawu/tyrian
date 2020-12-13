@@ -1,0 +1,7 @@
+Compiled from "FuncExtFunctionAvailable.java"
+public class com.sun.org.apache.xpath.internal.functions.FuncExtFunctionAvailable extends com.sun.org.apache.xpath.internal.functions.FunctionOneArg {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.functions.FuncExtFunctionAvailable();
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public void setFunctionTable(com.sun.org.apache.xpath.internal.compiler.FunctionTable);
+}

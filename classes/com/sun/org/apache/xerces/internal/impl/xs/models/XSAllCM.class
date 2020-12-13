@@ -1,0 +1,15 @@
+Compiled from "XSAllCM.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.models.XSAllCM implements com.sun.org.apache.xerces.internal.impl.xs.models.XSCMValidator {
+  public com.sun.org.apache.xerces.internal.impl.xs.models.XSAllCM(boolean, int);
+  public void addElement(com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, boolean);
+  public int[] startContentModel();
+  java.lang.Object findMatchingDecl(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler);
+  public java.lang.Object oneTransition(com.sun.org.apache.xerces.internal.xni.QName, int[], com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler);
+  public boolean endContentModel(int[]);
+  public boolean checkUniqueParticleAttribution(com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler) throws com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaException;
+  public java.util.List<java.lang.Object> whatCanGoHere(int[]);
+  public java.util.List<java.lang.String> checkMinMaxBounds();
+  public int[] occurenceInfo(int[]);
+  public java.lang.String getTermName(int);
+  public boolean isCompactedForUPA();
+}

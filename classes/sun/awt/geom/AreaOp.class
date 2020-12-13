@@ -1,0 +1,18 @@
+Compiled from "AreaOp.java"
+public abstract class sun.awt.geom.AreaOp {
+  public static final int CTAG_LEFT;
+  public static final int CTAG_RIGHT;
+  public static final int ETAG_IGNORE;
+  public static final int ETAG_ENTER;
+  public static final int ETAG_EXIT;
+  public static final int RSTAG_INSIDE;
+  public static final int RSTAG_OUTSIDE;
+  public abstract void newRow();
+  public abstract int classify(sun.awt.geom.Edge);
+  public abstract int getState();
+  public java.util.Vector<sun.awt.geom.Curve> calculate(java.util.Vector<sun.awt.geom.Curve>, java.util.Vector<sun.awt.geom.Curve>);
+  public static void finalizeSubCurves(java.util.Vector<sun.awt.geom.CurveLink>, java.util.Vector<sun.awt.geom.ChainEnd>);
+  public static void resolveLinks(java.util.Vector<sun.awt.geom.CurveLink>, java.util.Vector<sun.awt.geom.ChainEnd>, java.util.Vector<sun.awt.geom.CurveLink>);
+  public static boolean obstructs(double, double, int);
+  static {};
+}

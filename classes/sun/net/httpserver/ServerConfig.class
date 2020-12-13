@@ -1,0 +1,16 @@
+Compiled from "ServerConfig.java"
+class sun.net.httpserver.ServerConfig {
+  sun.net.httpserver.ServerConfig();
+  static void checkLegacyProperties(java.lang.System$Logger);
+  static boolean debugEnabled();
+  static long getIdleInterval();
+  static int getClockTick();
+  static int getMaxIdleConnections();
+  static long getDrainAmount();
+  static int getMaxReqHeaders();
+  static long getMaxReqTime();
+  static long getMaxRspTime();
+  static long getTimerMillis();
+  static boolean noDelay();
+  static {};
+}

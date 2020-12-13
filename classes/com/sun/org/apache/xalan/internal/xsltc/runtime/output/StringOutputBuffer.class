@@ -1,0 +1,8 @@
+Compiled from "StringOutputBuffer.java"
+class com.sun.org.apache.xalan.internal.xsltc.runtime.output.StringOutputBuffer implements com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer {
+  public com.sun.org.apache.xalan.internal.xsltc.runtime.output.StringOutputBuffer();
+  public java.lang.String close();
+  public com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer append(java.lang.String);
+  public com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer append(char[], int, int);
+  public com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer append(char);
+}

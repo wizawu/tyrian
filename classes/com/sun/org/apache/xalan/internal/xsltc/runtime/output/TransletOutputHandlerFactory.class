@@ -1,0 +1,26 @@
+Compiled from "TransletOutputHandlerFactory.java"
+public class com.sun.org.apache.xalan.internal.xsltc.runtime.output.TransletOutputHandlerFactory {
+  public static final int STREAM;
+  public static final int SAX;
+  public static final int DOM;
+  public static final int STAX;
+  public static com.sun.org.apache.xalan.internal.xsltc.runtime.output.TransletOutputHandlerFactory newInstance();
+  public static com.sun.org.apache.xalan.internal.xsltc.runtime.output.TransletOutputHandlerFactory newInstance(boolean);
+  public com.sun.org.apache.xalan.internal.xsltc.runtime.output.TransletOutputHandlerFactory(boolean);
+  public void setOutputType(int);
+  public void setEncoding(java.lang.String);
+  public void setOutputMethod(java.lang.String);
+  public void setOutputStream(java.io.OutputStream);
+  public void setWriter(java.io.Writer);
+  public void setHandler(org.xml.sax.ContentHandler);
+  public void setLexicalHandler(org.xml.sax.ext.LexicalHandler);
+  public void setNode(org.w3c.dom.Node);
+  public org.w3c.dom.Node getNode();
+  public void setNextSibling(org.w3c.dom.Node);
+  public javax.xml.stream.XMLEventWriter getXMLEventWriter();
+  public void setXMLEventWriter(javax.xml.stream.XMLEventWriter);
+  public javax.xml.stream.XMLStreamWriter getXMLStreamWriter();
+  public void setXMLStreamWriter(javax.xml.stream.XMLStreamWriter);
+  public void setIndentNumber(int);
+  public com.sun.org.apache.xml.internal.serializer.SerializationHandler getSerializationHandler() throws java.io.IOException, javax.xml.parsers.ParserConfigurationException;
+}

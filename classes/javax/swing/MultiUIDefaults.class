@@ -1,0 +1,16 @@
+Compiled from "MultiUIDefaults.java"
+class javax.swing.MultiUIDefaults extends javax.swing.UIDefaults {
+  public javax.swing.MultiUIDefaults(javax.swing.UIDefaults[]);
+  public javax.swing.MultiUIDefaults();
+  public java.lang.Object get(java.lang.Object);
+  public java.lang.Object get(java.lang.Object, java.util.Locale);
+  public int size();
+  public boolean isEmpty();
+  public java.util.Enumeration<java.lang.Object> keys();
+  public java.util.Enumeration<java.lang.Object> elements();
+  public java.util.Set<java.util.Map$Entry<java.lang.Object, java.lang.Object>> entrySet();
+  protected void getUIError(java.lang.String);
+  public java.lang.Object remove(java.lang.Object);
+  public void clear();
+  public synchronized java.lang.String toString();
+}

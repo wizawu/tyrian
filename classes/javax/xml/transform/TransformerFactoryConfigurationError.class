@@ -1,0 +1,10 @@
+Compiled from "TransformerFactoryConfigurationError.java"
+public class javax.xml.transform.TransformerFactoryConfigurationError extends java.lang.Error {
+  public javax.xml.transform.TransformerFactoryConfigurationError();
+  public javax.xml.transform.TransformerFactoryConfigurationError(java.lang.String);
+  public javax.xml.transform.TransformerFactoryConfigurationError(java.lang.Exception);
+  public javax.xml.transform.TransformerFactoryConfigurationError(java.lang.Exception, java.lang.String);
+  public java.lang.String getMessage();
+  public java.lang.Exception getException();
+  public java.lang.Throwable getCause();
+}

@@ -1,0 +1,9 @@
+Compiled from "ShortLookupTable.java"
+public class java.awt.image.ShortLookupTable extends java.awt.image.LookupTable {
+  short[][] data;
+  public java.awt.image.ShortLookupTable(int, short[][]);
+  public java.awt.image.ShortLookupTable(int, short[]);
+  public final short[][] getTable();
+  public int[] lookupPixel(int[], int[]);
+  public short[] lookupPixel(short[], short[]);
+}

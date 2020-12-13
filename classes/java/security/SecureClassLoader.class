@@ -1,0 +1,10 @@
+Compiled from "SecureClassLoader.java"
+public class java.security.SecureClassLoader extends java.lang.ClassLoader {
+  protected java.security.SecureClassLoader(java.lang.ClassLoader);
+  protected java.security.SecureClassLoader();
+  protected java.security.SecureClassLoader(java.lang.String, java.lang.ClassLoader);
+  protected final java.lang.Class<?> defineClass(java.lang.String, byte[], int, int, java.security.CodeSource);
+  protected final java.lang.Class<?> defineClass(java.lang.String, java.nio.ByteBuffer, java.security.CodeSource);
+  protected java.security.PermissionCollection getPermissions(java.security.CodeSource);
+  static {};
+}

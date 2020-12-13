@@ -1,0 +1,3 @@
+Compiled from "EndDocument.java"
+public interface javax.xml.stream.events.EndDocument extends javax.xml.stream.events.XMLEvent {
+}

@@ -1,0 +1,4 @@
+Compiled from "AbstractView.java"
+public interface org.w3c.dom.views.AbstractView {
+  public abstract org.w3c.dom.views.DocumentView getDocument();
+}

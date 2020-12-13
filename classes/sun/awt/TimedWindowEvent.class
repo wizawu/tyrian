@@ -1,0 +1,6 @@
+Compiled from "TimedWindowEvent.java"
+public class sun.awt.TimedWindowEvent extends java.awt.event.WindowEvent {
+  public long getWhen();
+  public sun.awt.TimedWindowEvent(java.awt.Window, int, java.awt.Window, long);
+  public sun.awt.TimedWindowEvent(java.awt.Window, int, java.awt.Window, int, int, long);
+}

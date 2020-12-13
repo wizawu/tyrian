@@ -1,0 +1,4 @@
+Compiled from "SSLPeerUnverifiedException.java"
+public class javax.net.ssl.SSLPeerUnverifiedException extends javax.net.ssl.SSLException {
+  public javax.net.ssl.SSLPeerUnverifiedException(java.lang.String);
+}

@@ -1,0 +1,16 @@
+Compiled from "FontConfigManager.java"
+public class sun.font.FontConfigManager {
+  static boolean fontConfigFailed;
+  public sun.font.FontConfigManager();
+  public static java.lang.Object getFontConfigAAHint();
+  public static java.lang.Object getFontConfigAAHint(java.lang.String);
+  public static native int getFontConfigVersion();
+  public synchronized void initFontConfigFonts(boolean);
+  public sun.font.PhysicalFont registerFromFcInfo(sun.font.FontConfigManager$FcCompFont);
+  public sun.font.CompositeFont getFontConfigFont(java.lang.String, int);
+  public sun.font.FontConfigManager$FcCompFont[] getFontConfigFonts();
+  void populateFontConfig(sun.font.FontConfigManager$FcCompFont[]);
+  sun.font.FontConfigManager$FcCompFont[] loadFontConfig();
+  sun.font.FontConfigManager$FontConfigInfo getFontConfigInfo();
+  static {};
+}

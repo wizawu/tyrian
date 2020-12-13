@@ -1,0 +1,5 @@
+Compiled from "JMException.java"
+public class javax.management.JMException extends java.lang.Exception {
+  public javax.management.JMException();
+  public javax.management.JMException(java.lang.String);
+}

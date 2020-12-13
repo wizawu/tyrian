@@ -1,0 +1,4 @@
+Compiled from "ClipboardOwner.java"
+public interface java.awt.datatransfer.ClipboardOwner {
+  public abstract void lostOwnership(java.awt.datatransfer.Clipboard, java.awt.datatransfer.Transferable);
+}

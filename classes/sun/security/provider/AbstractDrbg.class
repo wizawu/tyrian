@@ -1,0 +1,41 @@
+Compiled from "AbstractDrbg.java"
+public abstract class sun.security.provider.AbstractDrbg {
+  protected static final sun.security.util.Debug debug;
+  protected volatile int reseedCounter;
+  protected static final int DEFAULT_STRENGTH;
+  protected java.lang.String mechName;
+  protected int highestSupportedSecurityStrength;
+  protected boolean supportPredictionResistance;
+  protected boolean supportReseeding;
+  protected int minLength;
+  protected int maxLength;
+  protected int maxPersonalizationStringLength;
+  protected int maxAdditionalInputLength;
+  protected int maxNumberOfBytesPerRequest;
+  protected int reseedInterval;
+  protected java.lang.String algorithm;
+  protected int securityStrength;
+  protected int requestedInstantiationSecurityStrength;
+  protected byte[] personalizationString;
+  protected boolean usedf;
+  protected byte[] nonce;
+  protected java.lang.String requestedAlgorithm;
+  protected abstract void chooseAlgorithmAndStrength();
+  protected abstract void initEngine();
+  protected abstract void instantiateAlgorithm(byte[]);
+  protected abstract void generateAlgorithm(byte[], byte[]);
+  protected void reseedAlgorithm(byte[], byte[]);
+  protected final void engineNextBytes(byte[]);
+  protected final void engineNextBytes(byte[], java.security.SecureRandomParameters);
+  public final void engineReseed(java.security.SecureRandomParameters);
+  public final byte[] engineGenerateSeed(int);
+  public final synchronized void engineSetSeed(byte[]);
+  protected sun.security.provider.AbstractDrbg();
+  protected sun.security.provider.AbstractDrbg(java.security.SecureRandomParameters);
+  protected java.security.SecureRandomParameters engineGetParameters();
+  protected final void configure(java.security.SecureRandomParameters);
+  protected static java.lang.String hex(byte[]);
+  protected static int getStandardStrength(int);
+  public java.lang.String toString();
+  static {};
+}

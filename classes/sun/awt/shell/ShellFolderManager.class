@@ -1,0 +1,9 @@
+Compiled from "ShellFolderManager.java"
+class sun.awt.shell.ShellFolderManager {
+  sun.awt.shell.ShellFolderManager();
+  public sun.awt.shell.ShellFolder createShellFolder(java.io.File) throws java.io.FileNotFoundException;
+  public java.lang.Object get(java.lang.String);
+  public boolean isComputerNode(java.io.File);
+  public boolean isFileSystemRoot(java.io.File);
+  protected sun.awt.shell.ShellFolder$Invoker createInvoker();
+}

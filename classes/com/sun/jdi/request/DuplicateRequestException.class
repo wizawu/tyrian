@@ -1,0 +1,5 @@
+Compiled from "DuplicateRequestException.java"
+public class com.sun.jdi.request.DuplicateRequestException extends java.lang.RuntimeException {
+  public com.sun.jdi.request.DuplicateRequestException();
+  public com.sun.jdi.request.DuplicateRequestException(java.lang.String);
+}

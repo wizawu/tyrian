@@ -1,0 +1,5 @@
+Compiled from "DemultiplexInput.java"
+class jdk.jshell.execution.DemultiplexInput extends java.lang.Thread {
+  jdk.jshell.execution.DemultiplexInput(java.io.InputStream, java.util.Map<java.lang.String, java.io.OutputStream>, java.lang.Iterable<java.io.OutputStream>);
+  public void run();
+}

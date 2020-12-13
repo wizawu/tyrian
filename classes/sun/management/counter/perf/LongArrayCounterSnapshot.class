@@ -1,0 +1,8 @@
+Compiled from "LongArrayCounterSnapshot.java"
+class sun.management.counter.perf.LongArrayCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.LongArrayCounter {
+  long[] value;
+  sun.management.counter.perf.LongArrayCounterSnapshot(java.lang.String, sun.management.counter.Units, sun.management.counter.Variability, int, int, long[]);
+  public java.lang.Object getValue();
+  public long[] longArrayValue();
+  public long longAt(int);
+}

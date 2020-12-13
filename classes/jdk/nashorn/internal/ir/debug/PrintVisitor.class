@@ -1,0 +1,32 @@
+Compiled from "PrintVisitor.java"
+public final class jdk.nashorn.internal.ir.debug.PrintVisitor extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.ir.debug.PrintVisitor();
+  public jdk.nashorn.internal.ir.debug.PrintVisitor(boolean, boolean);
+  public jdk.nashorn.internal.ir.debug.PrintVisitor(jdk.nashorn.internal.ir.Node);
+  public jdk.nashorn.internal.ir.debug.PrintVisitor(jdk.nashorn.internal.ir.Node, boolean, boolean);
+  public java.lang.String toString();
+  public boolean enterDefault(jdk.nashorn.internal.ir.Node);
+  public boolean enterContinueNode(jdk.nashorn.internal.ir.ContinueNode);
+  public boolean enterBreakNode(jdk.nashorn.internal.ir.BreakNode);
+  public boolean enterThrowNode(jdk.nashorn.internal.ir.ThrowNode);
+  public boolean enterBlock(jdk.nashorn.internal.ir.Block);
+  public boolean enterBlockStatement(jdk.nashorn.internal.ir.BlockStatement);
+  public boolean enterBinaryNode(jdk.nashorn.internal.ir.BinaryNode);
+  public boolean enterJoinPredecessorExpression(jdk.nashorn.internal.ir.JoinPredecessorExpression);
+  public boolean enterIdentNode(jdk.nashorn.internal.ir.IdentNode);
+  public boolean enterUnaryNode(jdk.nashorn.internal.ir.UnaryNode);
+  public boolean enterExpressionStatement(jdk.nashorn.internal.ir.ExpressionStatement);
+  public boolean enterForNode(jdk.nashorn.internal.ir.ForNode);
+  public boolean enterFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
+  public boolean enterIfNode(jdk.nashorn.internal.ir.IfNode);
+  public boolean enterLabelNode(jdk.nashorn.internal.ir.LabelNode);
+  public boolean enterSplitNode(jdk.nashorn.internal.ir.SplitNode);
+  public jdk.nashorn.internal.ir.Node leaveSplitNode(jdk.nashorn.internal.ir.SplitNode);
+  public boolean enterSwitchNode(jdk.nashorn.internal.ir.SwitchNode);
+  public boolean enterTryNode(jdk.nashorn.internal.ir.TryNode);
+  public boolean enterVarNode(jdk.nashorn.internal.ir.VarNode);
+  public boolean enterWhileNode(jdk.nashorn.internal.ir.WhileNode);
+  public boolean enterWithNode(jdk.nashorn.internal.ir.WithNode);
+  static {};
+}

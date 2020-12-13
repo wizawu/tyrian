@@ -1,0 +1,7 @@
+Compiled from "PerfIntegerMonitor.java"
+public class sun.jvmstat.perfdata.monitor.PerfIntegerMonitor extends sun.jvmstat.monitor.AbstractMonitor implements sun.jvmstat.monitor.IntegerMonitor {
+  java.nio.IntBuffer ib;
+  public sun.jvmstat.perfdata.monitor.PerfIntegerMonitor(java.lang.String, sun.jvmstat.monitor.Units, sun.jvmstat.monitor.Variability, boolean, java.nio.IntBuffer);
+  public java.lang.Object getValue();
+  public int intValue();
+}

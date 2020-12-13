@@ -1,0 +1,8 @@
+Compiled from "JMXPrincipal.java"
+public class javax.management.remote.JMXPrincipal implements java.security.Principal,java.io.Serializable {
+  public javax.management.remote.JMXPrincipal(java.lang.String);
+  public java.lang.String getName();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

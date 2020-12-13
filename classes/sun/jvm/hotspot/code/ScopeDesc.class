@@ -1,0 +1,18 @@
+Compiled from "ScopeDesc.java"
+public class sun.jvm.hotspot.code.ScopeDesc {
+  public sun.jvm.hotspot.code.ScopeDesc(sun.jvm.hotspot.code.NMethod, int, int, boolean);
+  public sun.jvm.hotspot.code.NMethod getNMethod();
+  public sun.jvm.hotspot.oops.Method getMethod();
+  public int getBCI();
+  public boolean getReexecute();
+  public java.util.List getLocals();
+  public java.util.List getExpressions();
+  public java.util.List getMonitors();
+  public java.util.List getObjects();
+  public sun.jvm.hotspot.code.ScopeDesc sender();
+  public int getDecodeOffset();
+  public boolean isTop();
+  public boolean equals(java.lang.Object);
+  public void printValue();
+  public void printValueOn(java.io.PrintStream);
+}

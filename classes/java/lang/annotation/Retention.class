@@ -1,0 +1,4 @@
+Compiled from "Retention.java"
+public interface java.lang.annotation.Retention extends java.lang.annotation.Annotation {
+  public abstract java.lang.annotation.RetentionPolicy value();
+}

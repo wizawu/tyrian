@@ -1,0 +1,6 @@
+Compiled from "ParamTag.java"
+public interface com.sun.javadoc.ParamTag extends com.sun.javadoc.Tag {
+  public abstract java.lang.String parameterName();
+  public abstract java.lang.String parameterComment();
+  public abstract boolean isTypeParameter();
+}

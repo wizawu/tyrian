@@ -1,0 +1,5 @@
+Compiled from "LdapNameParser.java"
+class com.sun.jndi.ldap.LdapNameParser implements javax.naming.NameParser {
+  public com.sun.jndi.ldap.LdapNameParser();
+  public javax.naming.Name parse(java.lang.String) throws javax.naming.NamingException;
+}

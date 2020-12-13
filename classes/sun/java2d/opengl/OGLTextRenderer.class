@@ -1,0 +1,8 @@
+Compiled from "OGLTextRenderer.java"
+class sun.java2d.opengl.OGLTextRenderer extends sun.java2d.pipe.BufferedTextPipe {
+  sun.java2d.opengl.OGLTextRenderer(sun.java2d.pipe.RenderQueue);
+  protected native void drawGlyphList(int, boolean, boolean, boolean, int, float, float, long[], float[]);
+  protected void validateContext(sun.java2d.SunGraphics2D, java.awt.Composite);
+  sun.java2d.opengl.OGLTextRenderer traceWrap();
+  static sun.java2d.pipe.RenderQueue access$000(sun.java2d.opengl.OGLTextRenderer);
+}

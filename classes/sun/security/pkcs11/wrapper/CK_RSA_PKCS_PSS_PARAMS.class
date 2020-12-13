@@ -1,0 +1,7 @@
+Compiled from "CK_RSA_PKCS_PSS_PARAMS.java"
+public class sun.security.pkcs11.wrapper.CK_RSA_PKCS_PSS_PARAMS {
+  public sun.security.pkcs11.wrapper.CK_RSA_PKCS_PSS_PARAMS(java.lang.String, java.lang.String, java.lang.String, int);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

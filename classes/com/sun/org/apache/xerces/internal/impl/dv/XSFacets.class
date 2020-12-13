@@ -1,0 +1,30 @@
+Compiled from "XSFacets.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.XSFacets {
+  public int length;
+  public int minLength;
+  public int maxLength;
+  public short whiteSpace;
+  public int totalDigits;
+  public int fractionDigits;
+  public java.lang.String pattern;
+  public java.util.List<java.lang.String> enumeration;
+  public java.util.List<com.sun.org.apache.xerces.internal.xni.NamespaceContext> enumNSDecls;
+  public java.lang.String maxInclusive;
+  public java.lang.String maxExclusive;
+  public java.lang.String minInclusive;
+  public java.lang.String minExclusive;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation lengthAnnotation;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation minLengthAnnotation;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation maxLengthAnnotation;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation whiteSpaceAnnotation;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation totalDigitsAnnotation;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation fractionDigitsAnnotation;
+  public com.sun.org.apache.xerces.internal.impl.xs.util.XSObjectListImpl patternAnnotations;
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList enumAnnotations;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation maxInclusiveAnnotation;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation maxExclusiveAnnotation;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation minInclusiveAnnotation;
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation minExclusiveAnnotation;
+  public com.sun.org.apache.xerces.internal.impl.dv.XSFacets();
+  public void reset();
+}

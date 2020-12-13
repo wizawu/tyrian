@@ -1,0 +1,21 @@
+Compiled from "NodeSortRecord.java"
+public abstract class com.sun.org.apache.xalan.internal.xsltc.dom.NodeSortRecord {
+  public static final int COMPARE_STRING;
+  public static final int COMPARE_NUMERIC;
+  public static final int COMPARE_ASCENDING;
+  public static final int COMPARE_DESCENDING;
+  protected java.text.Collator _collator;
+  protected java.text.Collator[] _collators;
+  protected java.util.Locale _locale;
+  protected com.sun.org.apache.xalan.internal.xsltc.CollatorFactory _collatorFactory;
+  protected com.sun.org.apache.xalan.internal.xsltc.dom.SortSettings _settings;
+  public com.sun.org.apache.xalan.internal.xsltc.dom.NodeSortRecord(int);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.NodeSortRecord();
+  public final void initialize(int, int, com.sun.org.apache.xalan.internal.xsltc.DOM, com.sun.org.apache.xalan.internal.xsltc.dom.SortSettings) throws com.sun.org.apache.xalan.internal.xsltc.TransletException;
+  public final int getNode();
+  public final int compareDocOrder(com.sun.org.apache.xalan.internal.xsltc.dom.NodeSortRecord);
+  public int compareTo(com.sun.org.apache.xalan.internal.xsltc.dom.NodeSortRecord);
+  public java.text.Collator[] getCollator();
+  public abstract java.lang.String extractValueFromDOM(com.sun.org.apache.xalan.internal.xsltc.DOM, int, int, com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet, int);
+  static {};
+}

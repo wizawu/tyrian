@@ -1,0 +1,5 @@
+Compiled from "JFloatField.java"
+public interface sun.jvm.hotspot.types.JFloatField extends sun.jvm.hotspot.types.Field {
+  public abstract float getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+  public abstract float getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+}

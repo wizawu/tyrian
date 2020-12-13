@@ -1,0 +1,5 @@
+Compiled from "LinkLoopException.java"
+public class javax.naming.LinkLoopException extends javax.naming.LinkException {
+  public javax.naming.LinkLoopException(java.lang.String);
+  public javax.naming.LinkLoopException();
+}

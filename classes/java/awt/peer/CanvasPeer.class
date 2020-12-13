@@ -1,0 +1,4 @@
+Compiled from "CanvasPeer.java"
+public interface java.awt.peer.CanvasPeer extends java.awt.peer.ComponentPeer {
+  public abstract java.awt.GraphicsConfiguration getAppropriateGraphicsConfiguration(java.awt.GraphicsConfiguration);
+}

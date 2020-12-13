@@ -1,0 +1,9 @@
+Compiled from "DocumentFragmentImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DocumentFragmentImpl extends com.sun.org.apache.xerces.internal.dom.ParentNode implements org.w3c.dom.DocumentFragment {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xerces.internal.dom.DocumentFragmentImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl);
+  public com.sun.org.apache.xerces.internal.dom.DocumentFragmentImpl();
+  public short getNodeType();
+  public java.lang.String getNodeName();
+  public void normalize();
+}

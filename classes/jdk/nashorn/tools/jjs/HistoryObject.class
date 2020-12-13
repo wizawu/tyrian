@@ -1,0 +1,11 @@
+Compiled from "HistoryObject.java"
+final class jdk.nashorn.tools.jjs.HistoryObject extends jdk.nashorn.api.scripting.AbstractJSObject {
+  jdk.nashorn.tools.jjs.HistoryObject(jdk.internal.org.jline.reader.History, java.io.PrintWriter, java.util.function.Consumer<java.lang.String>);
+  public boolean isFunction();
+  public java.lang.Object call(java.lang.Object, java.lang.Object...);
+  public java.lang.Object getMember(java.lang.String);
+  public java.lang.Object getDefaultValue(java.lang.Class<?>);
+  public java.lang.String toString();
+  public java.util.Set<java.lang.String> keySet();
+  static {};
+}

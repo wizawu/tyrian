@@ -1,0 +1,7 @@
+Compiled from "HashPrintJobAttributeSet.java"
+public class javax.print.attribute.HashPrintJobAttributeSet extends javax.print.attribute.HashAttributeSet implements javax.print.attribute.PrintJobAttributeSet,java.io.Serializable {
+  public javax.print.attribute.HashPrintJobAttributeSet();
+  public javax.print.attribute.HashPrintJobAttributeSet(javax.print.attribute.PrintJobAttribute);
+  public javax.print.attribute.HashPrintJobAttributeSet(javax.print.attribute.PrintJobAttribute[]);
+  public javax.print.attribute.HashPrintJobAttributeSet(javax.print.attribute.PrintJobAttributeSet);
+}

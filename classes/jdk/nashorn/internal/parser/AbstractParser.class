@@ -1,0 +1,43 @@
+Compiled from "AbstractParser.java"
+public abstract class jdk.nashorn.internal.parser.AbstractParser {
+  protected final jdk.nashorn.internal.runtime.Source source;
+  protected final jdk.nashorn.internal.runtime.ErrorManager errors;
+  protected jdk.nashorn.internal.parser.TokenStream stream;
+  protected int k;
+  protected long previousToken;
+  protected long token;
+  protected jdk.nashorn.internal.parser.TokenType type;
+  protected jdk.nashorn.internal.parser.TokenType last;
+  protected int start;
+  protected int finish;
+  protected int line;
+  protected int linePosition;
+  protected jdk.nashorn.internal.parser.Lexer lexer;
+  protected boolean isStrictMode;
+  protected final int lineOffset;
+  static final boolean $assertionsDisabled;
+  protected jdk.nashorn.internal.parser.AbstractParser(jdk.nashorn.internal.runtime.Source, jdk.nashorn.internal.runtime.ErrorManager, boolean, int);
+  protected final long getToken(int);
+  protected final jdk.nashorn.internal.parser.TokenType T(int);
+  protected final jdk.nashorn.internal.parser.TokenType next();
+  protected final jdk.nashorn.internal.parser.TokenType nextOrEOL();
+  protected static java.lang.String message(java.lang.String, java.lang.String...);
+  protected final jdk.nashorn.internal.runtime.ParserException error(java.lang.String, long);
+  protected final jdk.nashorn.internal.runtime.ParserException error(jdk.nashorn.internal.runtime.JSErrorType, java.lang.String, long);
+  protected final jdk.nashorn.internal.runtime.ParserException error(java.lang.String);
+  protected final jdk.nashorn.internal.runtime.ParserException error(jdk.nashorn.internal.runtime.JSErrorType, java.lang.String);
+  protected final void warning(jdk.nashorn.internal.runtime.JSErrorType, java.lang.String, long);
+  protected final java.lang.String expectMessage(jdk.nashorn.internal.parser.TokenType);
+  protected final void expect(jdk.nashorn.internal.parser.TokenType) throws jdk.nashorn.internal.runtime.ParserException;
+  protected final void expectDontAdvance(jdk.nashorn.internal.parser.TokenType) throws jdk.nashorn.internal.runtime.ParserException;
+  protected final java.lang.Object expectValue(jdk.nashorn.internal.parser.TokenType) throws jdk.nashorn.internal.runtime.ParserException;
+  protected final java.lang.Object getValue();
+  protected final java.lang.Object getValue(long);
+  protected final boolean isNonStrictModeIdent();
+  protected final jdk.nashorn.internal.ir.IdentNode getIdent();
+  protected jdk.nashorn.internal.ir.IdentNode createIdentNode(long, int, java.lang.String);
+  protected final boolean isIdentifierName();
+  protected final jdk.nashorn.internal.ir.IdentNode getIdentifierName();
+  protected final jdk.nashorn.internal.ir.LiteralNode<?> getLiteral() throws jdk.nashorn.internal.runtime.ParserException;
+  static {};
+}

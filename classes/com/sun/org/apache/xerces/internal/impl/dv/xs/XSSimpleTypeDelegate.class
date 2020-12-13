@@ -1,0 +1,46 @@
+Compiled from "XSSimpleTypeDelegate.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.xs.XSSimpleTypeDelegate implements com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType {
+  protected final com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType type;
+  public com.sun.org.apache.xerces.internal.impl.dv.xs.XSSimpleTypeDelegate(com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType);
+  public com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType getWrappedXSSimpleType();
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+  public boolean getBounded();
+  public short getBuiltInKind();
+  public short getDefinedFacets();
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList getFacets();
+  public com.sun.org.apache.xerces.internal.xs.XSObject getFacet(int);
+  public boolean getFinite();
+  public short getFixedFacets();
+  public com.sun.org.apache.xerces.internal.xs.XSSimpleTypeDefinition getItemType();
+  public com.sun.org.apache.xerces.internal.xs.StringList getLexicalEnumeration();
+  public java.lang.String getLexicalFacetValue(short);
+  public com.sun.org.apache.xerces.internal.xs.StringList getLexicalPattern();
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList getMemberTypes();
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList getMultiValueFacets();
+  public boolean getNumeric();
+  public short getOrdered();
+  public com.sun.org.apache.xerces.internal.xs.XSSimpleTypeDefinition getPrimitiveType();
+  public short getVariety();
+  public boolean isDefinedFacet(short);
+  public boolean isFixedFacet(short);
+  public boolean derivedFrom(java.lang.String, java.lang.String, short);
+  public boolean derivedFromType(com.sun.org.apache.xerces.internal.xs.XSTypeDefinition, short);
+  public boolean getAnonymous();
+  public com.sun.org.apache.xerces.internal.xs.XSTypeDefinition getBaseType();
+  public short getFinal();
+  public short getTypeCategory();
+  public boolean isFinal(short);
+  public java.lang.String getName();
+  public java.lang.String getNamespace();
+  public com.sun.org.apache.xerces.internal.xs.XSNamespaceItem getNamespaceItem();
+  public short getType();
+  public void applyFacets(com.sun.org.apache.xerces.internal.impl.dv.XSFacets, short, short, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeFacetException;
+  public short getPrimitiveKind();
+  public short getWhitespace() throws com.sun.org.apache.xerces.internal.impl.dv.DatatypeException;
+  public boolean isEqual(java.lang.Object, java.lang.Object);
+  public boolean isIDType();
+  public void validate(com.sun.org.apache.xerces.internal.impl.dv.ValidationContext, com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
+  public java.lang.Object validate(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext, com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
+  public java.lang.Object validate(java.lang.Object, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext, com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
+  public java.lang.String toString();
+}

@@ -1,0 +1,16 @@
+Compiled from "Arguments.java"
+public class sun.tools.jps.Arguments {
+  public static void printUsage(java.io.PrintStream);
+  public sun.tools.jps.Arguments(java.lang.String[]) throws java.lang.IllegalArgumentException;
+  public boolean isDebug();
+  public boolean printStackTrace();
+  public boolean isHelp();
+  public boolean isQuiet();
+  public boolean showLongPaths();
+  public boolean showVmArgs();
+  public boolean showVmFlags();
+  public boolean showMainArgs();
+  public java.lang.String hostname();
+  public sun.jvmstat.monitor.HostIdentifier hostId();
+  static {};
+}

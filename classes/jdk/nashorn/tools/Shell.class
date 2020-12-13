@@ -1,0 +1,20 @@
+Compiled from "Shell.java"
+public class jdk.nashorn.tools.Shell implements jdk.nashorn.tools.PartialParser {
+  protected static final java.util.ResourceBundle bundle;
+  public static final int SUCCESS;
+  public static final int COMMANDLINE_ERROR;
+  public static final int COMPILATION_ERROR;
+  public static final int RUNTIME_ERROR;
+  public static final int IO_ERROR;
+  public static final int INTERNAL_ERROR;
+  protected jdk.nashorn.tools.Shell();
+  public static void main(java.lang.String[]);
+  public static int main(java.io.InputStream, java.io.OutputStream, java.io.OutputStream, java.lang.String[]) throws java.io.IOException;
+  protected final int run(java.io.InputStream, java.io.OutputStream, java.io.OutputStream, java.lang.String[]) throws java.io.IOException;
+  public static java.util.List<java.lang.String> tokenizeString(java.lang.String);
+  protected java.lang.Object apply(jdk.nashorn.internal.runtime.ScriptFunction, java.lang.Object);
+  public final int getLastExpressionStart(jdk.nashorn.internal.runtime.Context, java.lang.String);
+  protected int readEvalPrint(jdk.nashorn.internal.runtime.Context, jdk.nashorn.internal.objects.Global);
+  protected static java.lang.String toString(java.lang.Object, jdk.nashorn.internal.objects.Global);
+  static {};
+}

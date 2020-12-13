@@ -1,0 +1,6 @@
+Compiled from "ISTORE.java"
+public class com.sun.org.apache.bcel.internal.generic.ISTORE extends com.sun.org.apache.bcel.internal.generic.StoreInstruction {
+  com.sun.org.apache.bcel.internal.generic.ISTORE();
+  public com.sun.org.apache.bcel.internal.generic.ISTORE(int);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

@@ -1,0 +1,14 @@
+Compiled from "ExecutableInputMethodManager.java"
+class sun.awt.im.ExecutableInputMethodManager extends sun.awt.im.InputMethodManager implements java.lang.Runnable {
+  sun.awt.im.ExecutableInputMethodManager();
+  synchronized void initialize();
+  public void run();
+  void setInputContext(sun.awt.im.InputContext);
+  public synchronized void notifyChangeRequest(java.awt.Component);
+  public synchronized void notifyChangeRequestByHotKey(java.awt.Component);
+  public java.lang.String getTriggerMenuString();
+  boolean hasMultipleInputMethods();
+  synchronized void changeInputMethod(java.lang.String);
+  sun.awt.im.InputMethodLocator findInputMethod(java.util.Locale);
+  java.util.Locale getDefaultKeyboardLocale();
+}

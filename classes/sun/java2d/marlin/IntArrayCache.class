@@ -1,0 +1,12 @@
+Compiled from "IntArrayCache.java"
+final class sun.java2d.marlin.IntArrayCache implements sun.java2d.marlin.MarlinConst {
+  final boolean clean;
+  final sun.java2d.marlin.ArrayCacheConst$CacheStats stats;
+  sun.java2d.marlin.IntArrayCache(boolean, int);
+  sun.java2d.marlin.IntArrayCache$Bucket getCacheBucket(int);
+  sun.java2d.marlin.IntArrayCache$Reference createRef(int);
+  static int[] createArray(int);
+  static void fill(int[], int, int, int);
+  static void check(int[], int, int, int);
+  static java.lang.String getLogPrefix(boolean);
+}

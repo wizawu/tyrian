@@ -1,0 +1,13 @@
+Compiled from "PerfMemory.java"
+public class sun.jvm.hotspot.runtime.PerfMemory {
+  public sun.jvm.hotspot.runtime.PerfMemory();
+  public static sun.jvm.hotspot.debugger.Address start();
+  public static sun.jvm.hotspot.debugger.Address end();
+  public static sun.jvm.hotspot.debugger.Address top();
+  public static long capacity();
+  public static boolean initialized();
+  public static sun.jvm.hotspot.runtime.PerfDataPrologue prologue();
+  public static boolean contains(sun.jvm.hotspot.debugger.Address);
+  public static void iterate(sun.jvm.hotspot.runtime.PerfMemory$PerfDataEntryVisitor);
+  static {};
+}

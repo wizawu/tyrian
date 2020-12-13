@@ -1,0 +1,6 @@
+Compiled from "FileOutputStreamInstrumentor.java"
+final class jdk.jfr.internal.instrument.FileOutputStreamInstrumentor {
+  public void write(int) throws java.io.IOException;
+  public void write(byte[]) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+}

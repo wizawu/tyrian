@@ -1,0 +1,5 @@
+Compiled from "Permission.java"
+public interface java.security.acl.Permission {
+  public abstract boolean equals(java.lang.Object);
+  public abstract java.lang.String toString();
+}

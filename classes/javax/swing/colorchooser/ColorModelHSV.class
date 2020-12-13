@@ -1,0 +1,8 @@
+Compiled from "ColorModelHSV.java"
+final class javax.swing.colorchooser.ColorModelHSV extends javax.swing.colorchooser.ColorModel {
+  javax.swing.colorchooser.ColorModelHSV();
+  void setColor(int, float[]);
+  int getColor(float[]);
+  int getMaximum(int);
+  float getDefault(int);
+}

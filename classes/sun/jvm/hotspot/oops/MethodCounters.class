@@ -1,0 +1,10 @@
+Compiled from "MethodCounters.java"
+public class sun.jvm.hotspot.oops.MethodCounters extends sun.jvm.hotspot.oops.Metadata {
+  public sun.jvm.hotspot.oops.MethodCounters(sun.jvm.hotspot.debugger.Address);
+  public int interpreterInvocationCount();
+  public int interpreterThrowoutCount();
+  public long getInvocationCounter();
+  public long getBackedgeCounter();
+  public void printValueOn(java.io.PrintStream);
+  static {};
+}

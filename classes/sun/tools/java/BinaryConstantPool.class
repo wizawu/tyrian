@@ -1,0 +1,21 @@
+Compiled from "BinaryConstantPool.java"
+public final class sun.tools.java.BinaryConstantPool implements sun.tools.java.Constants {
+  java.util.Hashtable<java.lang.Object, java.lang.Integer> indexHashObject;
+  java.util.Hashtable<java.lang.Object, java.lang.Integer> indexHashAscii;
+  java.util.Vector<java.lang.String> MoreStuff;
+  sun.tools.java.BinaryConstantPool(java.io.DataInputStream) throws java.io.IOException;
+  public int getInteger(int);
+  public java.lang.Object getValue(int);
+  public java.lang.String getString(int);
+  public sun.tools.java.Identifier getIdentifier(int);
+  public sun.tools.java.ClassDeclaration getDeclarationFromName(sun.tools.java.Environment, int);
+  public sun.tools.java.ClassDeclaration getDeclaration(sun.tools.java.Environment, int);
+  public sun.tools.java.Type getType(int);
+  public int getConstantType(int);
+  public java.lang.Object getConstant(int, sun.tools.java.Environment);
+  public java.util.Vector<sun.tools.java.ClassDeclaration> getDependencies(sun.tools.java.Environment);
+  public int indexObject(java.lang.Object, sun.tools.java.Environment);
+  public int indexString(java.lang.String, sun.tools.java.Environment);
+  public void createIndexHash(sun.tools.java.Environment);
+  public void write(java.io.DataOutputStream, sun.tools.java.Environment) throws java.io.IOException;
+}

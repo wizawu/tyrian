@@ -1,0 +1,15 @@
+Compiled from "GlyphPainter2.java"
+class javax.swing.text.GlyphPainter2 extends javax.swing.text.GlyphView$GlyphPainter {
+  java.awt.font.TextLayout layout;
+  public javax.swing.text.GlyphPainter2(java.awt.font.TextLayout);
+  public javax.swing.text.GlyphView$GlyphPainter getPainter(javax.swing.text.GlyphView, int, int);
+  public float getSpan(javax.swing.text.GlyphView, int, int, javax.swing.text.TabExpander, float);
+  public float getHeight(javax.swing.text.GlyphView);
+  public float getAscent(javax.swing.text.GlyphView);
+  public float getDescent(javax.swing.text.GlyphView);
+  public void paint(javax.swing.text.GlyphView, java.awt.Graphics, java.awt.Shape, int, int);
+  public java.awt.Shape modelToView(javax.swing.text.GlyphView, int, javax.swing.text.Position$Bias, java.awt.Shape) throws javax.swing.text.BadLocationException;
+  public int viewToModel(javax.swing.text.GlyphView, float, float, java.awt.Shape, javax.swing.text.Position$Bias[]);
+  public int getBoundedPosition(javax.swing.text.GlyphView, int, float, float);
+  public int getNextVisualPositionFrom(javax.swing.text.GlyphView, int, javax.swing.text.Position$Bias, java.awt.Shape, int, javax.swing.text.Position$Bias[]) throws javax.swing.text.BadLocationException;
+}

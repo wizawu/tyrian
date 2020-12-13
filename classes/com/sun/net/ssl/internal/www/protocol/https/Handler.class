@@ -1,0 +1,7 @@
+Compiled from "Handler.java"
+public class com.sun.net.ssl.internal.www.protocol.https.Handler extends sun.net.www.protocol.https.Handler {
+  public com.sun.net.ssl.internal.www.protocol.https.Handler();
+  public com.sun.net.ssl.internal.www.protocol.https.Handler(java.lang.String, int);
+  protected java.net.URLConnection openConnection(java.net.URL) throws java.io.IOException;
+  protected java.net.URLConnection openConnection(java.net.URL, java.net.Proxy) throws java.io.IOException;
+}

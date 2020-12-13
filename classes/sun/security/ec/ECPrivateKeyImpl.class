@@ -1,0 +1,11 @@
+Compiled from "ECPrivateKeyImpl.java"
+public final class sun.security.ec.ECPrivateKeyImpl extends sun.security.pkcs.PKCS8Key implements java.security.interfaces.ECPrivateKey {
+  sun.security.ec.ECPrivateKeyImpl(byte[]) throws java.security.InvalidKeyException;
+  sun.security.ec.ECPrivateKeyImpl(java.math.BigInteger, java.security.spec.ECParameterSpec) throws java.security.InvalidKeyException;
+  sun.security.ec.ECPrivateKeyImpl(byte[], java.security.spec.ECParameterSpec) throws java.security.InvalidKeyException;
+  public java.lang.String getAlgorithm();
+  public java.math.BigInteger getS();
+  public byte[] getArrayS();
+  public java.security.spec.ECParameterSpec getParams();
+  protected void parseKeyBits() throws java.security.InvalidKeyException;
+}

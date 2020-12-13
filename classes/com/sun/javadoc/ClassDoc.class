@@ -1,0 +1,28 @@
+Compiled from "ClassDoc.java"
+public interface com.sun.javadoc.ClassDoc extends com.sun.javadoc.ProgramElementDoc,com.sun.javadoc.Type {
+  public abstract boolean isAbstract();
+  public abstract boolean isSerializable();
+  public abstract boolean isExternalizable();
+  public abstract com.sun.javadoc.MethodDoc[] serializationMethods();
+  public abstract com.sun.javadoc.FieldDoc[] serializableFields();
+  public abstract boolean definesSerializableFields();
+  public abstract com.sun.javadoc.ClassDoc superclass();
+  public abstract com.sun.javadoc.Type superclassType();
+  public abstract boolean subclassOf(com.sun.javadoc.ClassDoc);
+  public abstract com.sun.javadoc.ClassDoc[] interfaces();
+  public abstract com.sun.javadoc.Type[] interfaceTypes();
+  public abstract com.sun.javadoc.TypeVariable[] typeParameters();
+  public abstract com.sun.javadoc.ParamTag[] typeParamTags();
+  public abstract com.sun.javadoc.FieldDoc[] fields();
+  public abstract com.sun.javadoc.FieldDoc[] fields(boolean);
+  public abstract com.sun.javadoc.FieldDoc[] enumConstants();
+  public abstract com.sun.javadoc.MethodDoc[] methods();
+  public abstract com.sun.javadoc.MethodDoc[] methods(boolean);
+  public abstract com.sun.javadoc.ConstructorDoc[] constructors();
+  public abstract com.sun.javadoc.ConstructorDoc[] constructors(boolean);
+  public abstract com.sun.javadoc.ClassDoc[] innerClasses();
+  public abstract com.sun.javadoc.ClassDoc[] innerClasses(boolean);
+  public abstract com.sun.javadoc.ClassDoc findClass(java.lang.String);
+  public abstract com.sun.javadoc.ClassDoc[] importedClasses();
+  public abstract com.sun.javadoc.PackageDoc[] importedPackages();
+}

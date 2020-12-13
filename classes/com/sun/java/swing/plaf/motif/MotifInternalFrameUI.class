@@ -1,0 +1,22 @@
+Compiled from "MotifInternalFrameUI.java"
+public class com.sun.java.swing.plaf.motif.MotifInternalFrameUI extends javax.swing.plaf.basic.BasicInternalFrameUI {
+  java.awt.Color color;
+  java.awt.Color highlight;
+  java.awt.Color shadow;
+  com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane titlePane;
+  protected javax.swing.KeyStroke closeMenuKey;
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public com.sun.java.swing.plaf.motif.MotifInternalFrameUI(javax.swing.JInternalFrame);
+  public void installUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void installKeyboardActions();
+  protected void uninstallDefaults();
+  public javax.swing.JComponent createNorthPane(javax.swing.JInternalFrame);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  protected void uninstallKeyboardActions();
+  protected void setupMenuOpenKey();
+  protected void setupMenuCloseKey();
+  protected void activateFrame(javax.swing.JInternalFrame);
+  protected void deactivateFrame(javax.swing.JInternalFrame);
+  void setColors(javax.swing.JInternalFrame);
+}

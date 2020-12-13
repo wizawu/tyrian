@@ -1,0 +1,9 @@
+Compiled from "URLPermission.java"
+public final class java.net.URLPermission extends java.security.Permission {
+  public java.net.URLPermission(java.lang.String, java.lang.String);
+  public java.net.URLPermission(java.lang.String);
+  public java.lang.String getActions();
+  public boolean implies(java.security.Permission);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

@@ -1,0 +1,9 @@
+Compiled from "Field.java"
+public interface sun.jvm.hotspot.debugger.cdbg.Field {
+  public abstract int getAccessControl();
+  public abstract java.lang.String getName();
+  public abstract sun.jvm.hotspot.debugger.cdbg.Type getType();
+  public abstract boolean isStatic();
+  public abstract long getOffset();
+  public abstract sun.jvm.hotspot.debugger.Address getAddress();
+}

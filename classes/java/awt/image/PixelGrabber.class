@@ -1,0 +1,33 @@
+Compiled from "PixelGrabber.java"
+public class java.awt.image.PixelGrabber implements java.awt.image.ImageConsumer {
+  java.awt.image.ImageProducer producer;
+  int dstX;
+  int dstY;
+  int dstW;
+  int dstH;
+  java.awt.image.ColorModel imageModel;
+  byte[] bytePixels;
+  int[] intPixels;
+  int dstOff;
+  int dstScan;
+  public java.awt.image.PixelGrabber(java.awt.Image, int, int, int, int, int[], int, int);
+  public java.awt.image.PixelGrabber(java.awt.image.ImageProducer, int, int, int, int, int[], int, int);
+  public java.awt.image.PixelGrabber(java.awt.Image, int, int, int, int, boolean);
+  public synchronized void startGrabbing();
+  public synchronized void abortGrabbing();
+  public boolean grabPixels() throws java.lang.InterruptedException;
+  public synchronized boolean grabPixels(long) throws java.lang.InterruptedException;
+  public synchronized int getStatus();
+  public synchronized int getWidth();
+  public synchronized int getHeight();
+  public synchronized java.lang.Object getPixels();
+  public synchronized java.awt.image.ColorModel getColorModel();
+  public void setDimensions(int, int);
+  public void setHints(int);
+  public void setProperties(java.util.Hashtable<?, ?>);
+  public void setColorModel(java.awt.image.ColorModel);
+  public void setPixels(int, int, int, int, java.awt.image.ColorModel, byte[], int, int);
+  public void setPixels(int, int, int, int, java.awt.image.ColorModel, int[], int, int);
+  public synchronized void imageComplete(int);
+  public synchronized int status();
+}

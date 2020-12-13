@@ -1,0 +1,5 @@
+Compiled from "XMLFilter.java"
+public interface org.xml.sax.XMLFilter extends org.xml.sax.XMLReader {
+  public abstract void setParent(org.xml.sax.XMLReader);
+  public abstract org.xml.sax.XMLReader getParent();
+}

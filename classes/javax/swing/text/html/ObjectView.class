@@ -1,0 +1,6 @@
+Compiled from "ObjectView.java"
+public class javax.swing.text.html.ObjectView extends javax.swing.text.ComponentView {
+  public javax.swing.text.html.ObjectView(javax.swing.text.Element);
+  protected java.awt.Component createComponent();
+  java.awt.Component getUnloadableRepresentation();
+}

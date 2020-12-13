@@ -1,0 +1,7 @@
+Compiled from "HexBin.java"
+public final class com.sun.org.apache.xerces.internal.impl.dv.util.HexBin {
+  public com.sun.org.apache.xerces.internal.impl.dv.util.HexBin();
+  public static java.lang.String encode(byte[]);
+  public static byte[] decode(java.lang.String);
+  static {};
+}

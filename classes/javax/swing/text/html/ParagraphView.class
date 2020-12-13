@@ -1,0 +1,14 @@
+Compiled from "ParagraphView.java"
+public class javax.swing.text.html.ParagraphView extends javax.swing.text.ParagraphView {
+  public javax.swing.text.html.ParagraphView(javax.swing.text.Element);
+  public void setParent(javax.swing.text.View);
+  public javax.swing.text.AttributeSet getAttributes();
+  protected void setPropertiesFromAttributes();
+  protected javax.swing.text.html.StyleSheet getStyleSheet();
+  protected javax.swing.SizeRequirements calculateMinorAxisRequirements(int, javax.swing.SizeRequirements);
+  public boolean isVisible();
+  public void paint(java.awt.Graphics, java.awt.Shape);
+  public float getPreferredSpan(int);
+  public float getMinimumSpan(int);
+  public float getMaximumSpan(int);
+}

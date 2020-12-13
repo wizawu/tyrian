@@ -1,0 +1,11 @@
+Compiled from "SQLRecoverableException.java"
+public class java.sql.SQLRecoverableException extends java.sql.SQLException {
+  public java.sql.SQLRecoverableException();
+  public java.sql.SQLRecoverableException(java.lang.String);
+  public java.sql.SQLRecoverableException(java.lang.String, java.lang.String);
+  public java.sql.SQLRecoverableException(java.lang.String, java.lang.String, int);
+  public java.sql.SQLRecoverableException(java.lang.Throwable);
+  public java.sql.SQLRecoverableException(java.lang.String, java.lang.Throwable);
+  public java.sql.SQLRecoverableException(java.lang.String, java.lang.String, java.lang.Throwable);
+  public java.sql.SQLRecoverableException(java.lang.String, java.lang.String, int, java.lang.Throwable);
+}

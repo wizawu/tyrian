@@ -1,0 +1,17 @@
+Compiled from "ArrayNodeListIterator.java"
+public class com.sun.org.apache.xalan.internal.xsltc.dom.ArrayNodeListIterator implements com.sun.org.apache.xml.internal.dtm.DTMAxisIterator {
+  public com.sun.org.apache.xalan.internal.xsltc.dom.ArrayNodeListIterator(int[]);
+  public int next();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator reset();
+  public int getLast();
+  public int getPosition();
+  public void setMark();
+  public void gotoMark();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator setStartNode(int);
+  public int getStartNode();
+  public boolean isReverse();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator cloneIterator();
+  public void setRestartable(boolean);
+  public int getNodeByPosition(int);
+  static {};
+}

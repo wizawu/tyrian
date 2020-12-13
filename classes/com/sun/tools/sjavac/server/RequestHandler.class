@@ -1,0 +1,5 @@
+Compiled from "RequestHandler.java"
+public class com.sun.tools.sjavac.server.RequestHandler extends java.lang.Thread {
+  public com.sun.tools.sjavac.server.RequestHandler(java.net.Socket, com.sun.tools.sjavac.server.Sjavac);
+  public void run();
+}

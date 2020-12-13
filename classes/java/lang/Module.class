@@ -1,0 +1,45 @@
+Compiled from "Module.java"
+public final class java.lang.Module implements java.lang.reflect.AnnotatedElement {
+  static final boolean $assertionsDisabled;
+  java.lang.Module(java.lang.ModuleLayer, java.lang.ClassLoader, java.lang.module.ModuleDescriptor, java.net.URI);
+  java.lang.Module(java.lang.ClassLoader);
+  java.lang.Module(java.lang.ClassLoader, java.lang.module.ModuleDescriptor);
+  public boolean isNamed();
+  public java.lang.String getName();
+  public java.lang.ClassLoader getClassLoader();
+  public java.lang.module.ModuleDescriptor getDescriptor();
+  public java.lang.ModuleLayer getLayer();
+  public boolean canRead(java.lang.Module);
+  public java.lang.Module addReads(java.lang.Module);
+  void implAddReads(java.lang.Module);
+  void implAddReadsAllUnnamed();
+  void implAddReadsNoSync(java.lang.Module);
+  public boolean isExported(java.lang.String, java.lang.Module);
+  public boolean isOpen(java.lang.String, java.lang.Module);
+  public boolean isExported(java.lang.String);
+  public boolean isOpen(java.lang.String);
+  boolean isReflectivelyExported(java.lang.String, java.lang.Module);
+  boolean isReflectivelyOpened(java.lang.String, java.lang.Module);
+  public java.lang.Module addExports(java.lang.String, java.lang.Module);
+  public java.lang.Module addOpens(java.lang.String, java.lang.Module);
+  void implAddExports(java.lang.String);
+  void implAddExports(java.lang.String, java.lang.Module);
+  void implAddExportsToAllUnnamed(java.lang.String);
+  void implAddExportsNoSync(java.lang.String);
+  void implAddExportsNoSync(java.lang.String, java.lang.Module);
+  void implAddOpens(java.lang.String);
+  void implAddOpens(java.lang.String, java.lang.Module);
+  void implAddOpensToAllUnnamed(java.lang.String);
+  void implAddOpensToAllUnnamed(java.util.Iterator<java.lang.String>);
+  public java.lang.Module addUses(java.lang.Class<?>);
+  void implAddUses(java.lang.Class<?>);
+  public boolean canUse(java.lang.Class<?>);
+  public java.util.Set<java.lang.String> getPackages();
+  static java.util.Map<java.lang.String, java.lang.Module> defineModules(java.lang.module.Configuration, java.util.function.Function<java.lang.String, java.lang.ClassLoader>, java.lang.ModuleLayer);
+  public <T extends java.lang.annotation.Annotation> T getAnnotation(java.lang.Class<T>);
+  public java.lang.annotation.Annotation[] getAnnotations();
+  public java.lang.annotation.Annotation[] getDeclaredAnnotations();
+  public java.io.InputStream getResourceAsStream(java.lang.String) throws java.io.IOException;
+  public java.lang.String toString();
+  static {};
+}

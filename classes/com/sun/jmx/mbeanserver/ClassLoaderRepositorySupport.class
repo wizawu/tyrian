@@ -1,0 +1,13 @@
+Compiled from "ClassLoaderRepositorySupport.java"
+final class com.sun.jmx.mbeanserver.ClassLoaderRepositorySupport implements com.sun.jmx.mbeanserver.ModifiableClassLoaderRepository {
+  com.sun.jmx.mbeanserver.ClassLoaderRepositorySupport();
+  public final java.lang.Class<?> loadClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  public final java.lang.Class<?> loadClassWithout(java.lang.ClassLoader, java.lang.String) throws java.lang.ClassNotFoundException;
+  public final java.lang.Class<?> loadClassBefore(java.lang.ClassLoader, java.lang.String) throws java.lang.ClassNotFoundException;
+  public final void addClassLoader(java.lang.ClassLoader);
+  public final void removeClassLoader(java.lang.ClassLoader);
+  public final synchronized void addClassLoader(javax.management.ObjectName, java.lang.ClassLoader);
+  public final synchronized void removeClassLoader(javax.management.ObjectName);
+  public final java.lang.ClassLoader getClassLoader(javax.management.ObjectName);
+  static {};
+}

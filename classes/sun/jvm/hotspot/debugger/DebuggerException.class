@@ -1,0 +1,7 @@
+Compiled from "DebuggerException.java"
+public class sun.jvm.hotspot.debugger.DebuggerException extends java.lang.RuntimeException {
+  public sun.jvm.hotspot.debugger.DebuggerException();
+  public sun.jvm.hotspot.debugger.DebuggerException(java.lang.String);
+  public sun.jvm.hotspot.debugger.DebuggerException(java.lang.String, java.lang.Throwable);
+  public sun.jvm.hotspot.debugger.DebuggerException(java.lang.Throwable);
+}

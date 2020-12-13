@@ -1,0 +1,19 @@
+Compiled from "StringConcat.java"
+public abstract class com.sun.tools.javac.jvm.StringConcat {
+  protected final com.sun.tools.javac.jvm.Gen gen;
+  protected final com.sun.tools.javac.code.Symtab syms;
+  protected final com.sun.tools.javac.util.Names names;
+  protected final com.sun.tools.javac.tree.TreeMaker make;
+  protected final com.sun.tools.javac.code.Types types;
+  protected final java.util.Map<com.sun.tools.javac.code.Type, com.sun.tools.javac.code.Symbol> sbAppends;
+  protected final com.sun.tools.javac.comp.Resolve rs;
+  protected static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.jvm.StringConcat> concatKey;
+  public static com.sun.tools.javac.jvm.StringConcat instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.jvm.StringConcat(com.sun.tools.javac.util.Context);
+  public abstract com.sun.tools.javac.jvm.Items$Item makeConcat(com.sun.tools.javac.tree.JCTree$JCAssignOp);
+  public abstract com.sun.tools.javac.jvm.Items$Item makeConcat(com.sun.tools.javac.tree.JCTree$JCBinary);
+  protected com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree> collectAll(com.sun.tools.javac.tree.JCTree);
+  protected com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree> collectAll(com.sun.tools.javac.tree.JCTree$JCExpression, com.sun.tools.javac.tree.JCTree$JCExpression);
+  com.sun.tools.javac.code.Type sharpestAccessible(com.sun.tools.javac.code.Type);
+  static {};
+}

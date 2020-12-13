@@ -1,0 +1,5 @@
+Compiled from "UnknownError.java"
+public class java.lang.UnknownError extends java.lang.VirtualMachineError {
+  public java.lang.UnknownError();
+  public java.lang.UnknownError(java.lang.String);
+}

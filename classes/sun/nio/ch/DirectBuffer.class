@@ -1,0 +1,6 @@
+Compiled from "DirectBuffer.java"
+public interface sun.nio.ch.DirectBuffer {
+  public abstract long address();
+  public abstract java.lang.Object attachment();
+  public abstract jdk.internal.ref.Cleaner cleaner();
+}

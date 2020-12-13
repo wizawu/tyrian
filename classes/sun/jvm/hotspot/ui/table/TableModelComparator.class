@@ -1,0 +1,11 @@
+Compiled from "TableModelComparator.java"
+public abstract class sun.jvm.hotspot.ui.table.TableModelComparator implements java.util.Comparator {
+  protected javax.swing.table.TableModel model;
+  public sun.jvm.hotspot.ui.table.TableModelComparator(javax.swing.table.TableModel);
+  public void addColumn(int);
+  public int getColumn();
+  public void setAscending(boolean);
+  public boolean isAscending();
+  public int compare(java.lang.Object, java.lang.Object);
+  public abstract java.lang.Object getValueForColumn(java.lang.Object, int);
+}

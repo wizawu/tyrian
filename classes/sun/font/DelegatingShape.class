@@ -1,0 +1,15 @@
+Compiled from "DelegatingShape.java"
+public final class sun.font.DelegatingShape implements java.awt.Shape {
+  java.awt.Shape delegate;
+  public sun.font.DelegatingShape(java.awt.Shape);
+  public java.awt.Rectangle getBounds();
+  public java.awt.geom.Rectangle2D getBounds2D();
+  public boolean contains(double, double);
+  public boolean contains(java.awt.geom.Point2D);
+  public boolean intersects(double, double, double, double);
+  public boolean intersects(java.awt.geom.Rectangle2D);
+  public boolean contains(double, double, double, double);
+  public boolean contains(java.awt.geom.Rectangle2D);
+  public java.awt.geom.PathIterator getPathIterator(java.awt.geom.AffineTransform);
+  public java.awt.geom.PathIterator getPathIterator(java.awt.geom.AffineTransform, double);
+}

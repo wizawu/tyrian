@@ -1,0 +1,11 @@
+Compiled from "PermissionCollection.java"
+public abstract class java.security.PermissionCollection implements java.io.Serializable {
+  public java.security.PermissionCollection();
+  public abstract void add(java.security.Permission);
+  public abstract boolean implies(java.security.Permission);
+  public abstract java.util.Enumeration<java.security.Permission> elements();
+  public java.util.stream.Stream<java.security.Permission> elementsAsStream();
+  public void setReadOnly();
+  public boolean isReadOnly();
+  public java.lang.String toString();
+}

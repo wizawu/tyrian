@@ -1,0 +1,4 @@
+Compiled from "NoSuchObjectException.java"
+public class java.rmi.NoSuchObjectException extends java.rmi.RemoteException {
+  public java.rmi.NoSuchObjectException(java.lang.String);
+}

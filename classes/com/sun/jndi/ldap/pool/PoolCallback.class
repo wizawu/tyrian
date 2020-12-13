@@ -1,0 +1,5 @@
+Compiled from "PoolCallback.java"
+public interface com.sun.jndi.ldap.pool.PoolCallback {
+  public abstract boolean releasePooledConnection(com.sun.jndi.ldap.pool.PooledConnection);
+  public abstract boolean removePooledConnection(com.sun.jndi.ldap.pool.PooledConnection);
+}

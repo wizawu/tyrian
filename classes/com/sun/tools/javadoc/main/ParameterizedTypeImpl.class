@@ -1,0 +1,24 @@
+Compiled from "ParameterizedTypeImpl.java"
+public class com.sun.tools.javadoc.main.ParameterizedTypeImpl extends com.sun.tools.javadoc.main.AbstractTypeImpl implements com.sun.javadoc.ParameterizedType {
+  com.sun.tools.javadoc.main.ParameterizedTypeImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type);
+  public com.sun.javadoc.ClassDoc asClassDoc();
+  public com.sun.javadoc.Type[] typeArguments();
+  public com.sun.javadoc.Type superclassType();
+  public com.sun.javadoc.Type[] interfaceTypes();
+  public com.sun.javadoc.Type containingType();
+  public java.lang.String typeName();
+  public com.sun.javadoc.ParameterizedType asParameterizedType();
+  public java.lang.String toString();
+  static java.lang.String parameterizedTypeToString(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type$ClassType, boolean);
+  public com.sun.javadoc.AnnotatedType asAnnotatedType();
+  public com.sun.javadoc.AnnotationTypeDoc asAnnotationTypeDoc();
+  public com.sun.javadoc.WildcardType asWildcardType();
+  public com.sun.javadoc.TypeVariable asTypeVariable();
+  public boolean isPrimitive();
+  public java.lang.String dimension();
+  public java.lang.String qualifiedName();
+  public java.lang.String name();
+  public java.lang.String simpleTypeName();
+  public com.sun.javadoc.Type getElementType();
+  public java.lang.String qualifiedTypeName();
+}

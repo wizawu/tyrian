@@ -1,0 +1,5 @@
+Compiled from "UnknownOopException.java"
+public class sun.jvm.hotspot.oops.UnknownOopException extends java.lang.RuntimeException {
+  public sun.jvm.hotspot.oops.UnknownOopException();
+  public sun.jvm.hotspot.oops.UnknownOopException(java.lang.String);
+}

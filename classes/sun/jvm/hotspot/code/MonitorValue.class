@@ -1,0 +1,8 @@
+Compiled from "MonitorValue.java"
+public class sun.jvm.hotspot.code.MonitorValue {
+  public sun.jvm.hotspot.code.MonitorValue(sun.jvm.hotspot.code.DebugInfoReadStream);
+  public sun.jvm.hotspot.code.ScopeValue owner();
+  public sun.jvm.hotspot.code.Location basicLock();
+  public boolean eliminated();
+  public void printOn(java.io.PrintStream);
+}

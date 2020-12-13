@@ -1,0 +1,11 @@
+Compiled from "ObsoleteMethodImpl.java"
+public class com.sun.tools.jdi.ObsoleteMethodImpl extends com.sun.tools.jdi.NonConcreteMethodImpl {
+  com.sun.tools.jdi.ObsoleteMethodImpl(com.sun.jdi.VirtualMachine, com.sun.tools.jdi.ReferenceTypeImpl);
+  public boolean isObsolete();
+  public java.lang.String returnTypeName();
+  public com.sun.jdi.Type returnType() throws com.sun.jdi.ClassNotLoadedException;
+  public java.util.List<java.lang.String> argumentTypeNames();
+  public java.util.List<java.lang.String> argumentSignatures();
+  com.sun.jdi.Type argumentType(int) throws com.sun.jdi.ClassNotLoadedException;
+  public java.util.List<com.sun.jdi.Type> argumentTypes() throws com.sun.jdi.ClassNotLoadedException;
+}

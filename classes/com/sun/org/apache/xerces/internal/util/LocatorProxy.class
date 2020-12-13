@@ -1,0 +1,10 @@
+Compiled from "LocatorProxy.java"
+public class com.sun.org.apache.xerces.internal.util.LocatorProxy implements org.xml.sax.ext.Locator2 {
+  public com.sun.org.apache.xerces.internal.util.LocatorProxy(com.sun.org.apache.xerces.internal.xni.XMLLocator);
+  public java.lang.String getPublicId();
+  public java.lang.String getSystemId();
+  public int getLineNumber();
+  public int getColumnNumber();
+  public java.lang.String getXMLVersion();
+  public java.lang.String getEncoding();
+}

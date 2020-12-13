@@ -1,0 +1,9 @@
+Compiled from "SelChImpl.java"
+public interface sun.nio.ch.SelChImpl extends java.nio.channels.Channel {
+  public abstract java.io.FileDescriptor getFD();
+  public abstract int getFDVal();
+  public abstract boolean translateAndUpdateReadyOps(int, sun.nio.ch.SelectionKeyImpl);
+  public abstract boolean translateAndSetReadyOps(int, sun.nio.ch.SelectionKeyImpl);
+  public abstract int translateInterestOps(int);
+  public abstract void kill() throws java.io.IOException;
+}

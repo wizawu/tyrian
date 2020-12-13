@@ -1,0 +1,44 @@
+Compiled from "DatagramChannelImpl.java"
+class sun.nio.ch.DatagramChannelImpl extends java.nio.channels.DatagramChannel implements sun.nio.ch.SelChImpl {
+  static final boolean $assertionsDisabled;
+  public sun.nio.ch.DatagramChannelImpl(java.nio.channels.spi.SelectorProvider) throws java.io.IOException;
+  public sun.nio.ch.DatagramChannelImpl(java.nio.channels.spi.SelectorProvider, java.net.ProtocolFamily) throws java.io.IOException;
+  public sun.nio.ch.DatagramChannelImpl(java.nio.channels.spi.SelectorProvider, java.io.FileDescriptor) throws java.io.IOException;
+  public java.net.DatagramSocket socket();
+  public java.net.SocketAddress getLocalAddress() throws java.io.IOException;
+  public java.net.SocketAddress getRemoteAddress() throws java.io.IOException;
+  public <T> java.nio.channels.DatagramChannel setOption(java.net.SocketOption<T>, T) throws java.io.IOException;
+  public <T> T getOption(java.net.SocketOption<T>) throws java.io.IOException;
+  public final java.util.Set<java.net.SocketOption<?>> supportedOptions();
+  public java.net.SocketAddress receive(java.nio.ByteBuffer) throws java.io.IOException;
+  public int send(java.nio.ByteBuffer, java.net.SocketAddress) throws java.io.IOException;
+  public int read(java.nio.ByteBuffer) throws java.io.IOException;
+  public long read(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  public int write(java.nio.ByteBuffer) throws java.io.IOException;
+  public long write(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  protected void implConfigureBlocking(boolean) throws java.io.IOException;
+  java.net.InetSocketAddress localAddress();
+  java.net.InetSocketAddress remoteAddress();
+  public java.nio.channels.DatagramChannel bind(java.net.SocketAddress) throws java.io.IOException;
+  public boolean isConnected();
+  public java.nio.channels.DatagramChannel connect(java.net.SocketAddress) throws java.io.IOException;
+  public java.nio.channels.DatagramChannel disconnect() throws java.io.IOException;
+  public java.nio.channels.MembershipKey join(java.net.InetAddress, java.net.NetworkInterface) throws java.io.IOException;
+  public java.nio.channels.MembershipKey join(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress) throws java.io.IOException;
+  void drop(sun.nio.ch.MembershipKeyImpl);
+  void block(sun.nio.ch.MembershipKeyImpl, java.net.InetAddress) throws java.io.IOException;
+  void unblock(sun.nio.ch.MembershipKeyImpl, java.net.InetAddress);
+  protected void implCloseSelectableChannel() throws java.io.IOException;
+  public void kill() throws java.io.IOException;
+  protected void finalize() throws java.io.IOException;
+  public boolean translateReadyOps(int, int, sun.nio.ch.SelectionKeyImpl);
+  public boolean translateAndUpdateReadyOps(int, sun.nio.ch.SelectionKeyImpl);
+  public boolean translateAndSetReadyOps(int, sun.nio.ch.SelectionKeyImpl);
+  boolean pollRead(long) throws java.io.IOException;
+  public int translateInterestOps(int);
+  public java.io.FileDescriptor getFD();
+  public int getFDVal();
+  public java.nio.channels.NetworkChannel setOption(java.net.SocketOption, java.lang.Object) throws java.io.IOException;
+  public java.nio.channels.NetworkChannel bind(java.net.SocketAddress) throws java.io.IOException;
+  static {};
+}

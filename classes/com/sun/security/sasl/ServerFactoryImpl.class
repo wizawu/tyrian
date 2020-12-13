@@ -1,0 +1,7 @@
+Compiled from "ServerFactoryImpl.java"
+public final class com.sun.security.sasl.ServerFactoryImpl implements javax.security.sasl.SaslServerFactory {
+  public com.sun.security.sasl.ServerFactoryImpl();
+  public javax.security.sasl.SaslServer createSaslServer(java.lang.String, java.lang.String, java.lang.String, java.util.Map<java.lang.String, ?>, javax.security.auth.callback.CallbackHandler) throws javax.security.sasl.SaslException;
+  public java.lang.String[] getMechanismNames(java.util.Map<java.lang.String, ?>);
+  static {};
+}

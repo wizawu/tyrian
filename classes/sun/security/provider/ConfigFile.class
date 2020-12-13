@@ -1,0 +1,6 @@
+Compiled from "ConfigFile.java"
+public final class sun.security.provider.ConfigFile extends javax.security.auth.login.Configuration {
+  public sun.security.provider.ConfigFile();
+  public javax.security.auth.login.AppConfigurationEntry[] getAppConfigurationEntry(java.lang.String);
+  public synchronized void refresh();
+}

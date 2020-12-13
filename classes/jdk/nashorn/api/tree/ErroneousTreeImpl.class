@@ -1,0 +1,6 @@
+Compiled from "ErroneousTreeImpl.java"
+final class jdk.nashorn.api.tree.ErroneousTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.ErroneousTree {
+  jdk.nashorn.api.tree.ErroneousTreeImpl(jdk.nashorn.internal.ir.ErrorNode);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

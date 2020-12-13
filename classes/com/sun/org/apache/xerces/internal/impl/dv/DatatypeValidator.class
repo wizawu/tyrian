@@ -1,0 +1,4 @@
+Compiled from "DatatypeValidator.java"
+public interface com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator {
+  public abstract void validate(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
+}

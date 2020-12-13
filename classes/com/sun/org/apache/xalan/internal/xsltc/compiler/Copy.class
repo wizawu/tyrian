@@ -1,0 +1,8 @@
+Compiled from "Copy.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.Copy extends com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.Copy();
+  public void parseContents(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+  public void display(int);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

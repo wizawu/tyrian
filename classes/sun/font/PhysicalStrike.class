@@ -1,0 +1,22 @@
+Compiled from "PhysicalStrike.java"
+public abstract class sun.font.PhysicalStrike extends sun.font.FontStrike {
+  static final long INTMASK;
+  static boolean longAddresses;
+  protected sun.font.CharToGlyphMapper mapper;
+  protected long pScalerContext;
+  protected long[] longGlyphImages;
+  protected int[] intGlyphImages;
+  java.util.concurrent.ConcurrentHashMap<java.lang.Integer, java.awt.geom.Point2D$Float> glyphPointMapCache;
+  protected boolean getImageWithAdvance;
+  protected static final int complexTX;
+  sun.font.PhysicalStrike(sun.font.PhysicalFont, sun.font.FontStrikeDesc);
+  protected sun.font.PhysicalStrike();
+  public int getNumGlyphs();
+  sun.font.StrikeMetrics getFontMetrics();
+  float getCodePointAdvance(int);
+  java.awt.geom.Point2D$Float getCharMetrics(char);
+  int getSlot0GlyphImagePtrs(int[], long[], int);
+  java.awt.geom.Point2D$Float getGlyphPoint(int, int);
+  protected void adjustPoint(java.awt.geom.Point2D$Float);
+  static {};
+}

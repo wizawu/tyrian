@@ -1,0 +1,5 @@
+Compiled from "CellEditorListener.java"
+public interface javax.swing.event.CellEditorListener extends java.util.EventListener {
+  public abstract void editingStopped(javax.swing.event.ChangeEvent);
+  public abstract void editingCanceled(javax.swing.event.ChangeEvent);
+}

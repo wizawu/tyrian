@@ -1,0 +1,7 @@
+Compiled from "GlobalSym.java"
+public interface sun.jvm.hotspot.debugger.cdbg.GlobalSym extends sun.jvm.hotspot.debugger.cdbg.Sym {
+  public abstract java.lang.String getName();
+  public abstract sun.jvm.hotspot.debugger.cdbg.Type getType();
+  public abstract sun.jvm.hotspot.debugger.Address getAddress();
+  public abstract boolean isModuleLocal();
+}

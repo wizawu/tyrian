@@ -1,0 +1,11 @@
+Compiled from "ImageLocationWriter.java"
+public final class jdk.tools.jlink.internal.ImageLocationWriter extends jdk.internal.jimage.ImageLocation {
+  static final boolean $assertionsDisabled;
+  void writeTo(jdk.internal.jimage.ImageStream);
+  static jdk.tools.jlink.internal.ImageLocationWriter newLocation(java.lang.String, jdk.tools.jlink.internal.ImageStringsWriter, long, long, long);
+  public int hashCode();
+  int hashCode(int);
+  public boolean equals(java.lang.Object);
+  int getLocationOffset();
+  static {};
+}

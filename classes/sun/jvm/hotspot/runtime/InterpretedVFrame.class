@@ -1,0 +1,11 @@
+Compiled from "InterpretedVFrame.java"
+public class sun.jvm.hotspot.runtime.InterpretedVFrame extends sun.jvm.hotspot.runtime.JavaVFrame {
+  public sun.jvm.hotspot.oops.Method getMethod();
+  public sun.jvm.hotspot.runtime.StackValueCollection getLocals();
+  public sun.jvm.hotspot.runtime.StackValueCollection getExpressions();
+  public java.util.List<sun.jvm.hotspot.runtime.MonitorInfo> getMonitors();
+  public boolean isInterpretedFrame();
+  sun.jvm.hotspot.runtime.InterpretedVFrame(sun.jvm.hotspot.runtime.Frame, sun.jvm.hotspot.runtime.RegisterMap, sun.jvm.hotspot.runtime.JavaThread);
+  public int getBCI();
+  public void verify();
+}

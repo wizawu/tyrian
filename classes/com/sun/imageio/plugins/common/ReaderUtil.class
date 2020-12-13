@@ -1,0 +1,6 @@
+Compiled from "ReaderUtil.java"
+public class com.sun.imageio.plugins.common.ReaderUtil {
+  public com.sun.imageio.plugins.common.ReaderUtil();
+  public static int[] computeUpdatedPixels(java.awt.Rectangle, java.awt.Point, int, int, int, int, int, int, int, int, int, int, int, int);
+  public static int readMultiByteInteger(javax.imageio.stream.ImageInputStream) throws java.io.IOException;
+}

@@ -1,0 +1,7 @@
+Compiled from "RejectedExecutionException.java"
+public class java.util.concurrent.RejectedExecutionException extends java.lang.RuntimeException {
+  public java.util.concurrent.RejectedExecutionException();
+  public java.util.concurrent.RejectedExecutionException(java.lang.String);
+  public java.util.concurrent.RejectedExecutionException(java.lang.String, java.lang.Throwable);
+  public java.util.concurrent.RejectedExecutionException(java.lang.Throwable);
+}

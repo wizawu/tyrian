@@ -1,0 +1,8 @@
+Compiled from "X509ExtendedTrustManager.java"
+public abstract class javax.net.ssl.X509ExtendedTrustManager implements javax.net.ssl.X509TrustManager {
+  public javax.net.ssl.X509ExtendedTrustManager();
+  public abstract void checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String, java.net.Socket) throws java.security.cert.CertificateException;
+  public abstract void checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String, java.net.Socket) throws java.security.cert.CertificateException;
+  public abstract void checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String, javax.net.ssl.SSLEngine) throws java.security.cert.CertificateException;
+  public abstract void checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String, javax.net.ssl.SSLEngine) throws java.security.cert.CertificateException;
+}

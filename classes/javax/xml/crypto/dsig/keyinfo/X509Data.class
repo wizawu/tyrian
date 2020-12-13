@@ -1,0 +1,6 @@
+Compiled from "X509Data.java"
+public interface javax.xml.crypto.dsig.keyinfo.X509Data extends javax.xml.crypto.XMLStructure {
+  public static final java.lang.String TYPE;
+  public static final java.lang.String RAW_X509_CERTIFICATE_TYPE;
+  public abstract java.util.List<?> getContent();
+}

@@ -1,0 +1,5 @@
+Compiled from "OutputFormatter.java"
+public interface sun.tools.jstat.OutputFormatter {
+  public abstract java.lang.String getHeader() throws sun.jvmstat.monitor.MonitorException;
+  public abstract java.lang.String getRow() throws sun.jvmstat.monitor.MonitorException;
+}

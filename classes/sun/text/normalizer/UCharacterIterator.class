@@ -1,0 +1,21 @@
+Compiled from "UCharacterIterator.java"
+public abstract class sun.text.normalizer.UCharacterIterator implements java.lang.Cloneable {
+  public static final int DONE;
+  protected sun.text.normalizer.UCharacterIterator();
+  public static final sun.text.normalizer.UCharacterIterator getInstance(java.lang.String);
+  public static final sun.text.normalizer.UCharacterIterator getInstance(java.lang.StringBuffer);
+  public static final sun.text.normalizer.UCharacterIterator getInstance(java.text.CharacterIterator);
+  public abstract int getLength();
+  public abstract int getIndex();
+  public abstract int next();
+  public int nextCodePoint();
+  public abstract int previous();
+  public int previousCodePoint();
+  public abstract void setIndex(int);
+  public void setToStart();
+  public abstract int getText(char[], int);
+  public final int getText(char[]);
+  public java.lang.String getText();
+  public int moveCodePointIndex(int);
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+}

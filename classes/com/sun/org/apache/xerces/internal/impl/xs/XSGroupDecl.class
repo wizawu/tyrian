@@ -1,0 +1,16 @@
+Compiled from "XSGroupDecl.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.XSGroupDecl implements com.sun.org.apache.xerces.internal.xs.XSModelGroupDefinition {
+  public java.lang.String fName;
+  public java.lang.String fTargetNamespace;
+  public com.sun.org.apache.xerces.internal.impl.xs.XSModelGroupImpl fModelGroup;
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList fAnnotations;
+  public com.sun.org.apache.xerces.internal.impl.xs.XSGroupDecl();
+  public short getType();
+  public java.lang.String getName();
+  public java.lang.String getNamespace();
+  public com.sun.org.apache.xerces.internal.xs.XSModelGroup getModelGroup();
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation getAnnotation();
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+  public com.sun.org.apache.xerces.internal.xs.XSNamespaceItem getNamespaceItem();
+  void setNamespaceItem(com.sun.org.apache.xerces.internal.xs.XSNamespaceItem);
+}

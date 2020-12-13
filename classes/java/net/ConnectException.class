@@ -1,0 +1,5 @@
+Compiled from "ConnectException.java"
+public class java.net.ConnectException extends java.net.SocketException {
+  public java.net.ConnectException(java.lang.String);
+  public java.net.ConnectException();
+}

@@ -1,0 +1,6 @@
+Compiled from "MotifSplitPaneUI.java"
+public class com.sun.java.swing.plaf.motif.MotifSplitPaneUI extends javax.swing.plaf.basic.BasicSplitPaneUI {
+  public com.sun.java.swing.plaf.motif.MotifSplitPaneUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.plaf.basic.BasicSplitPaneDivider createDefaultDivider();
+}

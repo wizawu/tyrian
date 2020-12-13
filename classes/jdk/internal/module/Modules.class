@@ -1,0 +1,17 @@
+Compiled from "Modules.java"
+public class jdk.internal.module.Modules {
+  static final boolean $assertionsDisabled;
+  public static java.lang.Module defineModule(java.lang.ClassLoader, java.lang.module.ModuleDescriptor, java.net.URI);
+  public static void addReads(java.lang.Module, java.lang.Module);
+  public static void addReadsAllUnnamed(java.lang.Module);
+  public static void addExports(java.lang.Module, java.lang.String, java.lang.Module);
+  public static void addExportsToAllUnnamed(java.lang.Module, java.lang.String);
+  public static void addOpens(java.lang.Module, java.lang.String, java.lang.Module);
+  public static void addOpensToAllUnnamed(java.lang.Module, java.lang.String);
+  public static void addUses(java.lang.Module, java.lang.Class<?>);
+  public static void addProvides(java.lang.Module, java.lang.Class<?>, java.lang.Class<?>);
+  public static void transformedByAgent(java.lang.Module);
+  public static synchronized java.lang.Module loadModule(java.lang.String);
+  public static java.util.Optional<java.lang.Module> findLoadedModule(java.lang.String);
+  static {};
+}

@@ -1,0 +1,9 @@
+Compiled from "PathResourcePoolEntry.java"
+public class jdk.tools.jlink.internal.PathResourcePoolEntry extends jdk.tools.jlink.internal.AbstractResourcePoolEntry {
+  public jdk.tools.jlink.internal.PathResourcePoolEntry(java.lang.String, java.lang.String, jdk.tools.jlink.plugin.ResourcePoolEntry$Type, java.nio.file.Path);
+  public final java.io.InputStream content();
+  public final long contentLength();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

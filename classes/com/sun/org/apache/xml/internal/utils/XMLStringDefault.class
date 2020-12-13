@@ -1,0 +1,42 @@
+Compiled from "XMLStringDefault.java"
+public class com.sun.org.apache.xml.internal.utils.XMLStringDefault implements com.sun.org.apache.xml.internal.utils.XMLString {
+  public com.sun.org.apache.xml.internal.utils.XMLStringDefault(java.lang.String);
+  public void dispatchCharactersEvents(org.xml.sax.ContentHandler) throws org.xml.sax.SAXException;
+  public void dispatchAsComment(org.xml.sax.ext.LexicalHandler) throws org.xml.sax.SAXException;
+  public com.sun.org.apache.xml.internal.utils.XMLString fixWhiteSpace(boolean, boolean, boolean);
+  public int length();
+  public char charAt(int);
+  public void getChars(int, int, char[], int);
+  public boolean equals(java.lang.String);
+  public boolean equals(com.sun.org.apache.xml.internal.utils.XMLString);
+  public boolean equals(java.lang.Object);
+  public boolean equalsIgnoreCase(java.lang.String);
+  public int compareTo(com.sun.org.apache.xml.internal.utils.XMLString);
+  public int compareToIgnoreCase(com.sun.org.apache.xml.internal.utils.XMLString);
+  public boolean startsWith(java.lang.String, int);
+  public boolean startsWith(com.sun.org.apache.xml.internal.utils.XMLString, int);
+  public boolean startsWith(java.lang.String);
+  public boolean startsWith(com.sun.org.apache.xml.internal.utils.XMLString);
+  public boolean endsWith(java.lang.String);
+  public int hashCode();
+  public int indexOf(int);
+  public int indexOf(int, int);
+  public int lastIndexOf(int);
+  public int lastIndexOf(int, int);
+  public int indexOf(java.lang.String);
+  public int indexOf(com.sun.org.apache.xml.internal.utils.XMLString);
+  public int indexOf(java.lang.String, int);
+  public int lastIndexOf(java.lang.String);
+  public int lastIndexOf(java.lang.String, int);
+  public com.sun.org.apache.xml.internal.utils.XMLString substring(int);
+  public com.sun.org.apache.xml.internal.utils.XMLString substring(int, int);
+  public com.sun.org.apache.xml.internal.utils.XMLString concat(java.lang.String);
+  public com.sun.org.apache.xml.internal.utils.XMLString toLowerCase(java.util.Locale);
+  public com.sun.org.apache.xml.internal.utils.XMLString toLowerCase();
+  public com.sun.org.apache.xml.internal.utils.XMLString toUpperCase(java.util.Locale);
+  public com.sun.org.apache.xml.internal.utils.XMLString toUpperCase();
+  public com.sun.org.apache.xml.internal.utils.XMLString trim();
+  public java.lang.String toString();
+  public boolean hasString();
+  public double toDouble();
+}

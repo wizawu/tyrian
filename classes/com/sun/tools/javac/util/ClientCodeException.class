@@ -1,0 +1,5 @@
+Compiled from "ClientCodeException.java"
+public class com.sun.tools.javac.util.ClientCodeException extends java.lang.RuntimeException {
+  static final long serialVersionUID;
+  public com.sun.tools.javac.util.ClientCodeException(java.lang.Throwable);
+}

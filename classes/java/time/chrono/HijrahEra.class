@@ -1,0 +1,11 @@
+Compiled from "HijrahEra.java"
+public final class java.time.chrono.HijrahEra extends java.lang.Enum<java.time.chrono.HijrahEra> implements java.time.chrono.Era {
+  public static final java.time.chrono.HijrahEra AH;
+  public static java.time.chrono.HijrahEra[] values();
+  public static java.time.chrono.HijrahEra valueOf(java.lang.String);
+  public static java.time.chrono.HijrahEra of(int);
+  public int getValue();
+  public java.time.temporal.ValueRange range(java.time.temporal.TemporalField);
+  public java.lang.String getDisplayName(java.time.format.TextStyle, java.util.Locale);
+  static {};
+}

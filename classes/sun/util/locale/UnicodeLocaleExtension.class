@@ -1,0 +1,19 @@
+Compiled from "UnicodeLocaleExtension.java"
+public class sun.util.locale.UnicodeLocaleExtension extends sun.util.locale.Extension {
+  public static final char SINGLETON;
+  public static final sun.util.locale.UnicodeLocaleExtension CA_JAPANESE;
+  public static final sun.util.locale.UnicodeLocaleExtension NU_THAI;
+  sun.util.locale.UnicodeLocaleExtension(java.util.SortedSet<java.lang.String>, java.util.SortedMap<java.lang.String, java.lang.String>);
+  public java.util.Set<java.lang.String> getUnicodeLocaleAttributes();
+  public java.util.Set<java.lang.String> getUnicodeLocaleKeys();
+  public java.lang.String getUnicodeLocaleType(java.lang.String);
+  public static boolean isSingletonChar(char);
+  public static boolean isAttribute(java.lang.String);
+  public static boolean isKey(java.lang.String);
+  public static boolean isTypeSubtag(java.lang.String);
+  public java.lang.String toString();
+  public java.lang.String getID();
+  public java.lang.String getValue();
+  public char getKey();
+  static {};
+}

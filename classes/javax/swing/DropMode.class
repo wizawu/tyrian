@@ -1,0 +1,14 @@
+Compiled from "DropMode.java"
+public final class javax.swing.DropMode extends java.lang.Enum<javax.swing.DropMode> {
+  public static final javax.swing.DropMode USE_SELECTION;
+  public static final javax.swing.DropMode ON;
+  public static final javax.swing.DropMode INSERT;
+  public static final javax.swing.DropMode INSERT_ROWS;
+  public static final javax.swing.DropMode INSERT_COLS;
+  public static final javax.swing.DropMode ON_OR_INSERT;
+  public static final javax.swing.DropMode ON_OR_INSERT_ROWS;
+  public static final javax.swing.DropMode ON_OR_INSERT_COLS;
+  public static javax.swing.DropMode[] values();
+  public static javax.swing.DropMode valueOf(java.lang.String);
+  static {};
+}

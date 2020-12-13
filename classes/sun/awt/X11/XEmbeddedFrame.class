@@ -1,0 +1,15 @@
+Compiled from "XEmbeddedFrame.java"
+public class sun.awt.X11.XEmbeddedFrame extends sun.awt.EmbeddedFrame {
+  long handle;
+  public sun.awt.X11.XEmbeddedFrame();
+  public sun.awt.X11.XEmbeddedFrame(long);
+  public sun.awt.X11.XEmbeddedFrame(long, boolean, boolean);
+  public void addNotify();
+  public sun.awt.X11.XEmbeddedFrame(long, boolean);
+  public boolean traverseIn(boolean);
+  protected boolean traverseOut(boolean);
+  public void synthesizeWindowActivation(boolean);
+  public void registerAccelerator(java.awt.AWTKeyStroke);
+  public void unregisterAccelerator(java.awt.AWTKeyStroke);
+  static {};
+}

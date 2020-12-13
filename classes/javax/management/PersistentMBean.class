@@ -1,0 +1,5 @@
+Compiled from "PersistentMBean.java"
+public interface javax.management.PersistentMBean {
+  public abstract void load() throws javax.management.MBeanException, javax.management.RuntimeOperationsException, javax.management.InstanceNotFoundException;
+  public abstract void store() throws javax.management.MBeanException, javax.management.RuntimeOperationsException, javax.management.InstanceNotFoundException;
+}

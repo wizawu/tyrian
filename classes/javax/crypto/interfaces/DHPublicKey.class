@@ -1,0 +1,5 @@
+Compiled from "DHPublicKey.java"
+public interface javax.crypto.interfaces.DHPublicKey extends javax.crypto.interfaces.DHKey,java.security.PublicKey {
+  public static final long serialVersionUID;
+  public abstract java.math.BigInteger getY();
+}

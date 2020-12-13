@@ -1,0 +1,4 @@
+Compiled from "AnnotationTypeOptionalMemberWriter.java"
+public interface jdk.javadoc.internal.doclets.toolkit.AnnotationTypeOptionalMemberWriter extends jdk.javadoc.internal.doclets.toolkit.AnnotationTypeRequiredMemberWriter {
+  public abstract void addDefaultValueInfo(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+}

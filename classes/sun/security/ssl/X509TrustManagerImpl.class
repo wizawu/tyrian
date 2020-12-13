@@ -1,0 +1,16 @@
+Compiled from "X509TrustManagerImpl.java"
+final class sun.security.ssl.X509TrustManagerImpl extends javax.net.ssl.X509ExtendedTrustManager implements javax.net.ssl.X509TrustManager {
+  sun.security.ssl.X509TrustManagerImpl(java.lang.String, java.util.Collection<java.security.cert.X509Certificate>);
+  sun.security.ssl.X509TrustManagerImpl(java.lang.String, java.security.cert.PKIXBuilderParameters);
+  public void checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String) throws java.security.cert.CertificateException;
+  public void checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String) throws java.security.cert.CertificateException;
+  public java.security.cert.X509Certificate[] getAcceptedIssuers();
+  public void checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String, java.net.Socket) throws java.security.cert.CertificateException;
+  public void checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String, java.net.Socket) throws java.security.cert.CertificateException;
+  public void checkClientTrusted(java.security.cert.X509Certificate[], java.lang.String, javax.net.ssl.SSLEngine) throws java.security.cert.CertificateException;
+  public void checkServerTrusted(java.security.cert.X509Certificate[], java.lang.String, javax.net.ssl.SSLEngine) throws java.security.cert.CertificateException;
+  static java.util.List<javax.net.ssl.SNIServerName> getRequestedServerNames(java.net.Socket);
+  static java.util.List<javax.net.ssl.SNIServerName> getRequestedServerNames(javax.net.ssl.SSLEngine);
+  static void checkIdentity(javax.net.ssl.SSLSession, java.security.cert.X509Certificate[], java.lang.String, boolean) throws java.security.cert.CertificateException;
+  static void checkIdentity(java.lang.String, java.security.cert.X509Certificate, java.lang.String) throws java.security.cert.CertificateException;
+}

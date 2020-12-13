@@ -1,0 +1,5 @@
+Compiled from "PoolCleaner.java"
+public final class com.sun.jndi.ldap.pool.PoolCleaner implements java.lang.Runnable {
+  public com.sun.jndi.ldap.pool.PoolCleaner(long, com.sun.jndi.ldap.pool.Pool[]);
+  public void run();
+}

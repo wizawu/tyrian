@@ -1,0 +1,8 @@
+Compiled from "DTMSafeStringPool.java"
+public class com.sun.org.apache.xml.internal.dtm.ref.DTMSafeStringPool extends com.sun.org.apache.xml.internal.dtm.ref.DTMStringPool {
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMSafeStringPool();
+  public synchronized void removeAllElements();
+  public synchronized java.lang.String indexToString(int) throws java.lang.ArrayIndexOutOfBoundsException;
+  public synchronized int stringToIndex(java.lang.String);
+  public static void _main(java.lang.String[]);
+}

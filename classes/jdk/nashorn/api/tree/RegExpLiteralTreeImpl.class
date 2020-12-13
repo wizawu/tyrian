@@ -1,0 +1,10 @@
+Compiled from "RegExpLiteralTreeImpl.java"
+final class jdk.nashorn.api.tree.RegExpLiteralTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.RegExpLiteralTree {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.api.tree.RegExpLiteralTreeImpl(jdk.nashorn.internal.ir.LiteralNode<?>);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public java.lang.String getPattern();
+  public java.lang.String getOptions();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+  static {};
+}

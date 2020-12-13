@@ -1,0 +1,5 @@
+Compiled from "DestroyFailedException.java"
+public class javax.security.auth.DestroyFailedException extends java.lang.Exception {
+  public javax.security.auth.DestroyFailedException();
+  public javax.security.auth.DestroyFailedException(java.lang.String);
+}

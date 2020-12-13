@@ -1,0 +1,5 @@
+Compiled from "ConsoleCallbackHandler.java"
+public class sun.security.util.ConsoleCallbackHandler implements javax.security.auth.callback.CallbackHandler {
+  public sun.security.util.ConsoleCallbackHandler();
+  public void handle(javax.security.auth.callback.Callback[]) throws java.io.IOException, javax.security.auth.callback.UnsupportedCallbackException;
+}

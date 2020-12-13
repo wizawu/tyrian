@@ -1,0 +1,18 @@
+Compiled from "SwingAccessor.java"
+public final class sun.swing.SwingAccessor {
+  public static void setJComponentAccessor(sun.swing.SwingAccessor$JComponentAccessor);
+  public static sun.swing.SwingAccessor$JComponentAccessor getJComponentAccessor();
+  public static void setJTextComponentAccessor(sun.swing.SwingAccessor$JTextComponentAccessor);
+  public static sun.swing.SwingAccessor$JTextComponentAccessor getJTextComponentAccessor();
+  public static void setJLightweightFrameAccessor(sun.swing.SwingAccessor$JLightweightFrameAccessor);
+  public static sun.swing.SwingAccessor$JLightweightFrameAccessor getJLightweightFrameAccessor();
+  public static void setUIDefaultsAccessor(sun.swing.SwingAccessor$UIDefaultsAccessor);
+  public static sun.swing.SwingAccessor$UIDefaultsAccessor getUIDefaultsAccessor();
+  public static void setRepaintManagerAccessor(sun.swing.SwingAccessor$RepaintManagerAccessor);
+  public static sun.swing.SwingAccessor$RepaintManagerAccessor getRepaintManagerAccessor();
+  public static sun.swing.SwingAccessor$PopupFactoryAccessor getPopupFactoryAccessor();
+  public static void setPopupFactoryAccessor(sun.swing.SwingAccessor$PopupFactoryAccessor);
+  public static sun.swing.SwingAccessor$KeyStrokeAccessor getKeyStrokeAccessor();
+  public static void setKeyStrokeAccessor(sun.swing.SwingAccessor$KeyStrokeAccessor);
+  static {};
+}

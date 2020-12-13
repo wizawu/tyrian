@@ -1,0 +1,12 @@
+Compiled from "SignedMutableBigInteger.java"
+class java.math.SignedMutableBigInteger extends java.math.MutableBigInteger {
+  int sign;
+  java.math.SignedMutableBigInteger();
+  java.math.SignedMutableBigInteger(int);
+  java.math.SignedMutableBigInteger(java.math.MutableBigInteger);
+  void signedAdd(java.math.SignedMutableBigInteger);
+  void signedAdd(java.math.MutableBigInteger);
+  void signedSubtract(java.math.SignedMutableBigInteger);
+  void signedSubtract(java.math.MutableBigInteger);
+  public java.lang.String toString();
+}

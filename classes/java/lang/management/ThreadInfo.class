@@ -1,0 +1,24 @@
+Compiled from "ThreadInfo.java"
+public class java.lang.management.ThreadInfo {
+  public long getThreadId();
+  public java.lang.String getThreadName();
+  public java.lang.Thread$State getThreadState();
+  public long getBlockedTime();
+  public long getBlockedCount();
+  public long getWaitedTime();
+  public long getWaitedCount();
+  public java.lang.management.LockInfo getLockInfo();
+  public java.lang.String getLockName();
+  public long getLockOwnerId();
+  public java.lang.String getLockOwnerName();
+  public java.lang.StackTraceElement[] getStackTrace();
+  public boolean isSuspended();
+  public boolean isInNative();
+  public boolean isDaemon();
+  public int getPriority();
+  public java.lang.String toString();
+  public static java.lang.management.ThreadInfo from(javax.management.openmbean.CompositeData);
+  public java.lang.management.MonitorInfo[] getLockedMonitors();
+  public java.lang.management.LockInfo[] getLockedSynchronizers();
+  static {};
+}

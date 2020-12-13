@@ -1,0 +1,5 @@
+Compiled from "QuickHuffman.java"
+public final class jdk.internal.net.http.hpack.QuickHuffman {
+  static final boolean $assertionsDisabled;
+  static {};
+}

@@ -1,0 +1,14 @@
+Compiled from "ChunkedInputStream.java"
+public class sun.net.www.http.ChunkedInputStream extends java.io.InputStream implements sun.net.www.http.Hurryable {
+  static final int STATE_AWAITING_CHUNK_HEADER;
+  static final int STATE_READING_CHUNK;
+  static final int STATE_AWAITING_CHUNK_EOL;
+  static final int STATE_AWAITING_TRAILERS;
+  static final int STATE_DONE;
+  public sun.net.www.http.ChunkedInputStream(java.io.InputStream, sun.net.www.http.HttpClient, sun.net.www.MessageHeader) throws java.io.IOException;
+  public synchronized int read() throws java.io.IOException;
+  public synchronized int read(byte[], int, int) throws java.io.IOException;
+  public synchronized int available() throws java.io.IOException;
+  public synchronized void close() throws java.io.IOException;
+  public synchronized boolean hurry();
+}

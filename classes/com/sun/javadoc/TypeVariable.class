@@ -1,0 +1,6 @@
+Compiled from "TypeVariable.java"
+public interface com.sun.javadoc.TypeVariable extends com.sun.javadoc.Type {
+  public abstract com.sun.javadoc.Type[] bounds();
+  public abstract com.sun.javadoc.ProgramElementDoc owner();
+  public abstract com.sun.javadoc.AnnotationDesc[] annotations();
+}

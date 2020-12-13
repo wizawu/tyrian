@@ -1,0 +1,13 @@
+Compiled from "JSJavaArray.java"
+public abstract class sun.jvm.hotspot.utilities.soql.JSJavaArray extends sun.jvm.hotspot.utilities.soql.JSJavaObject {
+  public sun.jvm.hotspot.utilities.soql.JSJavaArray(sun.jvm.hotspot.oops.Array, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
+  public final sun.jvm.hotspot.oops.Array getArray();
+  public final sun.jvm.hotspot.utilities.soql.JSJavaClass getJSJavaClass();
+  public java.lang.Object get(java.lang.String);
+  public java.lang.Object get(int);
+  public java.lang.Object[] getIds();
+  public boolean has(java.lang.String);
+  public boolean has(int);
+  public void put(java.lang.String, java.lang.Object);
+  public void put(int, java.lang.Object);
+}

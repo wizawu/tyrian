@@ -1,0 +1,13 @@
+Compiled from "PortMixer.java"
+final class com.sun.media.sound.PortMixer extends com.sun.media.sound.AbstractMixer {
+  com.sun.media.sound.PortMixer(com.sun.media.sound.PortMixerProvider$PortMixerInfo);
+  public javax.sound.sampled.Line getLine(javax.sound.sampled.Line$Info) throws javax.sound.sampled.LineUnavailableException;
+  public int getMaxLines(javax.sound.sampled.Line$Info);
+  protected void implOpen() throws javax.sound.sampled.LineUnavailableException;
+  protected void implClose();
+  protected void implStart();
+  protected void implStop();
+  int getMixerIndex();
+  javax.sound.sampled.Port getPort(int);
+  long getID();
+}

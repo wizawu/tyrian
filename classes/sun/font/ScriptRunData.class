@@ -1,0 +1,5 @@
+Compiled from "ScriptRunData.java"
+public final class sun.font.ScriptRunData {
+  public static int getScript(int);
+  static {};
+}

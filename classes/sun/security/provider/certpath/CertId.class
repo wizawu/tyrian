@@ -1,0 +1,15 @@
+Compiled from "CertId.java"
+public class sun.security.provider.certpath.CertId {
+  public sun.security.provider.certpath.CertId(java.security.cert.X509Certificate, sun.security.x509.SerialNumber) throws java.io.IOException;
+  public sun.security.provider.certpath.CertId(javax.security.auth.x500.X500Principal, java.security.PublicKey, sun.security.x509.SerialNumber) throws java.io.IOException;
+  public sun.security.provider.certpath.CertId(sun.security.util.DerInputStream) throws java.io.IOException;
+  public sun.security.x509.AlgorithmId getHashAlgorithm();
+  public byte[] getIssuerNameHash();
+  public byte[] getIssuerKeyHash();
+  public java.math.BigInteger getSerialNumber();
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+  static {};
+}

@@ -1,0 +1,20 @@
+Compiled from "Objects.java"
+public final class java.util.Objects {
+  public static boolean equals(java.lang.Object, java.lang.Object);
+  public static boolean deepEquals(java.lang.Object, java.lang.Object);
+  public static int hashCode(java.lang.Object);
+  public static int hash(java.lang.Object...);
+  public static java.lang.String toString(java.lang.Object);
+  public static java.lang.String toString(java.lang.Object, java.lang.String);
+  public static <T> int compare(T, T, java.util.Comparator<? super T>);
+  public static <T> T requireNonNull(T);
+  public static <T> T requireNonNull(T, java.lang.String);
+  public static boolean isNull(java.lang.Object);
+  public static boolean nonNull(java.lang.Object);
+  public static <T> T requireNonNullElse(T, T);
+  public static <T> T requireNonNullElseGet(T, java.util.function.Supplier<? extends T>);
+  public static <T> T requireNonNull(T, java.util.function.Supplier<java.lang.String>);
+  public static int checkIndex(int, int);
+  public static int checkFromToIndex(int, int, int);
+  public static int checkFromIndexSize(int, int, int);
+}

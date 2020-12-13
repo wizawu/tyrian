@@ -1,0 +1,4 @@
+Compiled from "NumericType.java"
+public abstract class jdk.nashorn.internal.codegen.types.NumericType extends jdk.nashorn.internal.codegen.types.Type implements jdk.nashorn.internal.codegen.types.BytecodeNumericOps {
+  protected jdk.nashorn.internal.codegen.types.NumericType(java.lang.String, java.lang.Class<?>, int, int);
+}

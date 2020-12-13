@@ -1,0 +1,26 @@
+Compiled from "MonitoredHost.java"
+public abstract class sun.jvmstat.monitor.MonitoredHost {
+  protected sun.jvmstat.monitor.HostIdentifier hostId;
+  protected int interval;
+  protected java.lang.Exception lastException;
+  static final boolean $assertionsDisabled;
+  public sun.jvmstat.monitor.MonitoredHost();
+  public static sun.jvmstat.monitor.MonitoredHost getMonitoredHost(java.lang.String) throws sun.jvmstat.monitor.MonitorException, java.net.URISyntaxException;
+  public static sun.jvmstat.monitor.MonitoredHost getMonitoredHost(sun.jvmstat.monitor.VmIdentifier) throws sun.jvmstat.monitor.MonitorException;
+  public static sun.jvmstat.monitor.MonitoredHost getMonitoredHost(sun.jvmstat.monitor.HostIdentifier) throws sun.jvmstat.monitor.MonitorException;
+  protected static sun.jvmstat.monitor.HostIdentifier resolveHostId(sun.jvmstat.monitor.HostIdentifier) throws sun.jvmstat.monitor.MonitorException;
+  public sun.jvmstat.monitor.HostIdentifier getHostIdentifier();
+  public void setInterval(int);
+  public int getInterval();
+  public void setLastException(java.lang.Exception);
+  public java.lang.Exception getLastException();
+  public void clearLastException();
+  public boolean isErrored();
+  public abstract sun.jvmstat.monitor.MonitoredVm getMonitoredVm(sun.jvmstat.monitor.VmIdentifier) throws sun.jvmstat.monitor.MonitorException;
+  public abstract sun.jvmstat.monitor.MonitoredVm getMonitoredVm(sun.jvmstat.monitor.VmIdentifier, int) throws sun.jvmstat.monitor.MonitorException;
+  public abstract void detach(sun.jvmstat.monitor.MonitoredVm) throws sun.jvmstat.monitor.MonitorException;
+  public abstract void addHostListener(sun.jvmstat.monitor.event.HostListener) throws sun.jvmstat.monitor.MonitorException;
+  public abstract void removeHostListener(sun.jvmstat.monitor.event.HostListener) throws sun.jvmstat.monitor.MonitorException;
+  public abstract java.util.Set<java.lang.Integer> activeVms() throws sun.jvmstat.monitor.MonitorException;
+  static {};
+}

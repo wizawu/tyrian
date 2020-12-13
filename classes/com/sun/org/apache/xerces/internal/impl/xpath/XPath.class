@@ -1,0 +1,11 @@
+Compiled from "XPath.java"
+public class com.sun.org.apache.xerces.internal.impl.xpath.XPath {
+  protected final java.lang.String fExpression;
+  protected final com.sun.org.apache.xerces.internal.util.SymbolTable fSymbolTable;
+  protected final com.sun.org.apache.xerces.internal.impl.xpath.XPath$LocationPath[] fLocationPaths;
+  public com.sun.org.apache.xerces.internal.impl.xpath.XPath(java.lang.String, com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.NamespaceContext) throws com.sun.org.apache.xerces.internal.impl.xpath.XPathException;
+  public com.sun.org.apache.xerces.internal.impl.xpath.XPath$LocationPath[] getLocationPaths();
+  public com.sun.org.apache.xerces.internal.impl.xpath.XPath$LocationPath getLocationPath();
+  public java.lang.String toString();
+  public static void main(java.lang.String[]) throws java.lang.Exception;
+}

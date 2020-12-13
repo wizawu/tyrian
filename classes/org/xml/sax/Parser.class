@@ -1,0 +1,10 @@
+Compiled from "Parser.java"
+public interface org.xml.sax.Parser {
+  public abstract void setLocale(java.util.Locale) throws org.xml.sax.SAXException;
+  public abstract void setEntityResolver(org.xml.sax.EntityResolver);
+  public abstract void setDTDHandler(org.xml.sax.DTDHandler);
+  public abstract void setDocumentHandler(org.xml.sax.DocumentHandler);
+  public abstract void setErrorHandler(org.xml.sax.ErrorHandler);
+  public abstract void parse(org.xml.sax.InputSource) throws org.xml.sax.SAXException, java.io.IOException;
+  public abstract void parse(java.lang.String) throws org.xml.sax.SAXException, java.io.IOException;
+}

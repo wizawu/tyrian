@@ -1,0 +1,10 @@
+Compiled from "IllegalAccessLogger.java"
+public final class jdk.internal.module.IllegalAccessLogger {
+  public static jdk.internal.module.IllegalAccessLogger illegalAccessLogger();
+  public boolean isExportedForIllegalAccess(java.lang.Module, java.lang.String);
+  public boolean isOpenForIllegalAccess(java.lang.Module, java.lang.String);
+  public void logIfExportedForIllegalAccess(java.lang.Class<?>, java.lang.Class<?>, java.util.function.Supplier<java.lang.String>);
+  public void logIfOpenedForIllegalAccess(java.lang.Class<?>, java.lang.Class<?>, java.util.function.Supplier<java.lang.String>);
+  public void logIfOpenedForIllegalAccess(java.lang.invoke.MethodHandles$Lookup, java.lang.Class<?>);
+  static {};
+}

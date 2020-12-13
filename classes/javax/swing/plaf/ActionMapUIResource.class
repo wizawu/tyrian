@@ -1,0 +1,4 @@
+Compiled from "ActionMapUIResource.java"
+public class javax.swing.plaf.ActionMapUIResource extends javax.swing.ActionMap implements javax.swing.plaf.UIResource {
+  public javax.swing.plaf.ActionMapUIResource();
+}

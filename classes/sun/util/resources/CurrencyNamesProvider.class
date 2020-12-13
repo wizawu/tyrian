@@ -1,0 +1,3 @@
+Compiled from "CurrencyNamesProvider.java"
+public interface sun.util.resources.CurrencyNamesProvider extends java.util.spi.ResourceBundleProvider {
+}

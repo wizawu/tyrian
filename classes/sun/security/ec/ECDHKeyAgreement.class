@@ -1,0 +1,10 @@
+Compiled from "ECDHKeyAgreement.java"
+public final class sun.security.ec.ECDHKeyAgreement extends javax.crypto.KeyAgreementSpi {
+  public sun.security.ec.ECDHKeyAgreement();
+  protected void engineInit(java.security.Key, java.security.SecureRandom) throws java.security.InvalidKeyException;
+  protected void engineInit(java.security.Key, java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  protected java.security.Key engineDoPhase(java.security.Key, boolean) throws java.security.InvalidKeyException, java.lang.IllegalStateException;
+  protected byte[] engineGenerateSecret() throws java.lang.IllegalStateException;
+  protected int engineGenerateSecret(byte[], int) throws java.lang.IllegalStateException, javax.crypto.ShortBufferException;
+  protected javax.crypto.SecretKey engineGenerateSecret(java.lang.String) throws java.lang.IllegalStateException, java.security.NoSuchAlgorithmException, java.security.InvalidKeyException;
+}

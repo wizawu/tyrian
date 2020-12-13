@@ -1,0 +1,16 @@
+Compiled from "PeekMetrics.java"
+public class sun.print.PeekMetrics {
+  public sun.print.PeekMetrics();
+  public boolean hasNonSolidColors();
+  public boolean hasCompositing();
+  public boolean hasText();
+  public boolean hasImages();
+  public void fill(java.awt.Graphics2D);
+  public void draw(java.awt.Graphics2D);
+  public void clear(java.awt.Graphics2D);
+  public void drawText(java.awt.Graphics2D);
+  public void drawText(java.awt.Graphics2D, java.awt.font.TextLayout);
+  public void drawImage(java.awt.Graphics2D, java.awt.Image);
+  public void drawImage(java.awt.Graphics2D, java.awt.image.RenderedImage);
+  public void drawImage(java.awt.Graphics2D, java.awt.image.renderable.RenderableImage);
+}

@@ -1,0 +1,15 @@
+Compiled from "KeyboardFocusManagerPeerImpl.java"
+public abstract class sun.awt.KeyboardFocusManagerPeerImpl implements java.awt.peer.KeyboardFocusManagerPeer {
+  public static final int SNFH_FAILURE;
+  public static final int SNFH_SUCCESS_HANDLED;
+  public static final int SNFH_SUCCESS_PROCEED;
+  public sun.awt.KeyboardFocusManagerPeerImpl();
+  public void clearGlobalFocusOwner(java.awt.Window);
+  public static boolean shouldFocusOnClick(java.awt.Component);
+  public static boolean deliverFocus(java.awt.Component, java.awt.Component, boolean, boolean, long, java.awt.event.FocusEvent$Cause, java.awt.Component);
+  public static void requestFocusFor(java.awt.Component, java.awt.event.FocusEvent$Cause);
+  public static int shouldNativelyFocusHeavyweight(java.awt.Component, java.awt.Component, boolean, boolean, long, java.awt.event.FocusEvent$Cause);
+  public static void removeLastFocusRequest(java.awt.Component);
+  public static boolean processSynchronousLightweightTransfer(java.awt.Component, java.awt.Component, boolean, boolean, long);
+  static {};
+}

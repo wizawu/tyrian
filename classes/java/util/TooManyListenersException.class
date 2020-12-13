@@ -1,0 +1,5 @@
+Compiled from "TooManyListenersException.java"
+public class java.util.TooManyListenersException extends java.lang.Exception {
+  public java.util.TooManyListenersException();
+  public java.util.TooManyListenersException(java.lang.String);
+}

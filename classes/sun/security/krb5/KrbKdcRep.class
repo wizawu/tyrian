@@ -1,0 +1,5 @@
+Compiled from "KrbKdcRep.java"
+abstract class sun.security.krb5.KrbKdcRep {
+  sun.security.krb5.KrbKdcRep();
+  static void check(boolean, sun.security.krb5.internal.KDCReq, sun.security.krb5.internal.KDCRep, sun.security.krb5.EncryptionKey) throws sun.security.krb5.internal.KrbApErrException;
+}

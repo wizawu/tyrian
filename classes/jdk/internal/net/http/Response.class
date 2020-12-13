@@ -1,0 +1,19 @@
+Compiled from "Response.java"
+class jdk.internal.net.http.Response {
+  final java.net.http.HttpHeaders headers;
+  final int statusCode;
+  final jdk.internal.net.http.HttpRequestImpl request;
+  final jdk.internal.net.http.Exchange<?> exchange;
+  final java.net.http.HttpClient$Version version;
+  final boolean isConnectResponse;
+  final javax.net.ssl.SSLSession sslSession;
+  final java.net.InetSocketAddress localAddress;
+  jdk.internal.net.http.Response(jdk.internal.net.http.HttpRequestImpl, jdk.internal.net.http.Exchange<?>, java.net.http.HttpHeaders, jdk.internal.net.http.HttpConnection, int, java.net.http.HttpClient$Version);
+  jdk.internal.net.http.Response(jdk.internal.net.http.HttpRequestImpl, jdk.internal.net.http.Exchange<?>, java.net.http.HttpHeaders, jdk.internal.net.http.HttpConnection, int, java.net.http.HttpClient$Version, boolean);
+  jdk.internal.net.http.HttpRequestImpl request();
+  java.net.http.HttpClient$Version version();
+  java.net.http.HttpHeaders headers();
+  int statusCode();
+  javax.net.ssl.SSLSession getSSLSession();
+  public java.lang.String toString();
+}

@@ -1,0 +1,27 @@
+Compiled from "QuantifierNode.java"
+public final class jdk.nashorn.internal.runtime.regexp.joni.ast.QuantifierNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.StateNode {
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.Node target;
+  public int lower;
+  public int upper;
+  public boolean greedy;
+  public int targetEmptyInfo;
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.Node headExact;
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.Node nextHeadExact;
+  public boolean isRefered;
+  public static final int REPEAT_INFINITE;
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.QuantifierNode(int, int, boolean);
+  public int getType();
+  protected void setChild(jdk.nashorn.internal.runtime.regexp.joni.ast.Node);
+  protected jdk.nashorn.internal.runtime.regexp.joni.ast.Node getChild();
+  public void setTarget(jdk.nashorn.internal.runtime.regexp.joni.ast.Node);
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode convertToString(int);
+  public java.lang.String getName();
+  public java.lang.String toString(int);
+  public boolean isAnyCharStar();
+  protected int popularNum();
+  protected void set(jdk.nashorn.internal.runtime.regexp.joni.ast.QuantifierNode);
+  public void reduceNestedQuantifier(jdk.nashorn.internal.runtime.regexp.joni.ast.QuantifierNode);
+  public int setQuantifier(jdk.nashorn.internal.runtime.regexp.joni.ast.Node, boolean, jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment, char[], int, int);
+  public static boolean isRepeatInfinite(int);
+  static {};
+}

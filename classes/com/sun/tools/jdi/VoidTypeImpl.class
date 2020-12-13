@@ -1,0 +1,6 @@
+Compiled from "VoidTypeImpl.java"
+public class com.sun.tools.jdi.VoidTypeImpl extends com.sun.tools.jdi.TypeImpl implements com.sun.jdi.VoidType {
+  com.sun.tools.jdi.VoidTypeImpl(com.sun.jdi.VirtualMachine);
+  public java.lang.String signature();
+  public java.lang.String toString();
+}

@@ -1,0 +1,4 @@
+Compiled from "StackConsumer.java"
+public interface com.sun.org.apache.bcel.internal.generic.StackConsumer {
+  public abstract int consumeStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+}

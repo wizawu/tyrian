@@ -1,0 +1,27 @@
+Compiled from "KeyIndex.java"
+public class com.sun.org.apache.xalan.internal.xsltc.dom.KeyIndex extends com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIteratorBase {
+  public com.sun.org.apache.xalan.internal.xsltc.dom.KeyIndex(int);
+  public void setRestartable(boolean);
+  public void add(java.lang.String, int, int);
+  public void merge(com.sun.org.apache.xalan.internal.xsltc.dom.KeyIndex);
+  public void lookupId(java.lang.Object);
+  public com.sun.org.apache.xalan.internal.xsltc.util.IntegerArray getDOMNodeById(java.lang.String);
+  public void lookupKey(java.lang.Object);
+  public int next();
+  public int containsID(int, java.lang.Object);
+  public int containsKey(int, java.lang.Object);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator reset();
+  public int getLast();
+  public int getPosition();
+  public void setMark();
+  public void gotoMark();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator setStartNode(int);
+  public int getStartNode();
+  public boolean isReverse();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator cloneIterator();
+  public void setDom(com.sun.org.apache.xalan.internal.xsltc.DOM, int);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.KeyIndex$KeyIndexIterator getKeyIndexIterator(java.lang.Object, boolean);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.KeyIndex$KeyIndexIterator getKeyIndexIterator(java.lang.String, boolean);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.KeyIndex$KeyIndexIterator getKeyIndexIterator(com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, boolean);
+  static {};
+}

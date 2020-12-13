@@ -1,0 +1,6 @@
+Compiled from "FontManagerNativeLibrary.java"
+public class sun.font.FontManagerNativeLibrary {
+  public sun.font.FontManagerNativeLibrary();
+  public static void load();
+  static {};
+}

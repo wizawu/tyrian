@@ -1,0 +1,5 @@
+Compiled from "InvalidRelationTypeException.java"
+public class javax.management.relation.InvalidRelationTypeException extends javax.management.relation.RelationException {
+  public javax.management.relation.InvalidRelationTypeException();
+  public javax.management.relation.InvalidRelationTypeException(java.lang.String);
+}

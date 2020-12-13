@@ -1,0 +1,5 @@
+Compiled from "ProcThreadFactory.java"
+public interface sun.jvm.hotspot.debugger.proc.ProcThreadFactory {
+  public abstract sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(sun.jvm.hotspot.debugger.Address);
+  public abstract sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(long);
+}

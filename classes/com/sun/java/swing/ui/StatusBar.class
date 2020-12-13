@@ -1,0 +1,18 @@
+Compiled from "StatusBar.java"
+public class com.sun.java.swing.ui.StatusBar extends javax.swing.JPanel implements java.awt.event.ActionListener,java.awt.event.MouseListener {
+  public com.sun.java.swing.ui.StatusBar();
+  public static com.sun.java.swing.ui.StatusBar getInstance();
+  public static void setInstance(com.sun.java.swing.ui.StatusBar);
+  protected int getWidth(java.lang.String);
+  protected int getFontHeight();
+  public java.awt.Dimension getPreferredSize();
+  public void setMessage(java.lang.String);
+  public void startBusyBar();
+  public void stopBusyBar();
+  public void actionPerformed(java.awt.event.ActionEvent);
+  public void mouseClicked(java.awt.event.MouseEvent);
+  public void mousePressed(java.awt.event.MouseEvent);
+  public void mouseReleased(java.awt.event.MouseEvent);
+  public void mouseExited(java.awt.event.MouseEvent);
+  public void mouseEntered(java.awt.event.MouseEvent);
+}

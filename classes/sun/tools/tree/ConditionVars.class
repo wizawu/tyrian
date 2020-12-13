@@ -1,0 +1,6 @@
+Compiled from "ConditionVars.java"
+class sun.tools.tree.ConditionVars {
+  sun.tools.tree.Vset vsTrue;
+  sun.tools.tree.Vset vsFalse;
+  sun.tools.tree.ConditionVars();
+}

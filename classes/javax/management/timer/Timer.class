@@ -1,0 +1,39 @@
+Compiled from "Timer.java"
+public class javax.management.timer.Timer extends javax.management.NotificationBroadcasterSupport implements javax.management.timer.TimerMBean,javax.management.MBeanRegistration {
+  public static final long ONE_SECOND;
+  public static final long ONE_MINUTE;
+  public static final long ONE_HOUR;
+  public static final long ONE_DAY;
+  public static final long ONE_WEEK;
+  public javax.management.timer.Timer();
+  public javax.management.ObjectName preRegister(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public void postRegister(java.lang.Boolean);
+  public void preDeregister() throws java.lang.Exception;
+  public void postDeregister();
+  public synchronized javax.management.MBeanNotificationInfo[] getNotificationInfo();
+  public synchronized void start();
+  public synchronized void stop();
+  public synchronized java.lang.Integer addNotification(java.lang.String, java.lang.String, java.lang.Object, java.util.Date, long, long, boolean) throws java.lang.IllegalArgumentException;
+  public synchronized java.lang.Integer addNotification(java.lang.String, java.lang.String, java.lang.Object, java.util.Date, long, long) throws java.lang.IllegalArgumentException;
+  public synchronized java.lang.Integer addNotification(java.lang.String, java.lang.String, java.lang.Object, java.util.Date, long) throws java.lang.IllegalArgumentException;
+  public synchronized java.lang.Integer addNotification(java.lang.String, java.lang.String, java.lang.Object, java.util.Date) throws java.lang.IllegalArgumentException;
+  public synchronized void removeNotification(java.lang.Integer) throws javax.management.InstanceNotFoundException;
+  public synchronized void removeNotifications(java.lang.String) throws javax.management.InstanceNotFoundException;
+  public synchronized void removeAllNotifications();
+  public synchronized int getNbNotifications();
+  public synchronized java.util.Vector<java.lang.Integer> getAllNotificationIDs();
+  public synchronized java.util.Vector<java.lang.Integer> getNotificationIDs(java.lang.String);
+  public synchronized java.lang.String getNotificationType(java.lang.Integer);
+  public synchronized java.lang.String getNotificationMessage(java.lang.Integer);
+  public synchronized java.lang.Object getNotificationUserData(java.lang.Integer);
+  public synchronized java.util.Date getDate(java.lang.Integer);
+  public synchronized java.lang.Long getPeriod(java.lang.Integer);
+  public synchronized java.lang.Long getNbOccurences(java.lang.Integer);
+  public synchronized java.lang.Boolean getFixedRate(java.lang.Integer);
+  public boolean getSendPastNotifications();
+  public void setSendPastNotifications(boolean);
+  public boolean isActive();
+  public synchronized boolean isEmpty();
+  void notifyAlarmClock(javax.management.timer.TimerAlarmClockNotification);
+  void sendNotification(java.util.Date, javax.management.timer.TimerNotification);
+}

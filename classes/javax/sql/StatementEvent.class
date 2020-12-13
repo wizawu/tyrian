@@ -1,0 +1,8 @@
+Compiled from "StatementEvent.java"
+public class javax.sql.StatementEvent extends java.util.EventObject {
+  static final long serialVersionUID;
+  public javax.sql.StatementEvent(javax.sql.PooledConnection, java.sql.PreparedStatement);
+  public javax.sql.StatementEvent(javax.sql.PooledConnection, java.sql.PreparedStatement, java.sql.SQLException);
+  public java.sql.PreparedStatement getStatement();
+  public java.sql.SQLException getSQLException();
+}

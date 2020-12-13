@@ -1,0 +1,17 @@
+Compiled from "JobState.java"
+public class javax.print.attribute.standard.JobState extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintJobAttribute {
+  public static final javax.print.attribute.standard.JobState UNKNOWN;
+  public static final javax.print.attribute.standard.JobState PENDING;
+  public static final javax.print.attribute.standard.JobState PENDING_HELD;
+  public static final javax.print.attribute.standard.JobState PROCESSING;
+  public static final javax.print.attribute.standard.JobState PROCESSING_STOPPED;
+  public static final javax.print.attribute.standard.JobState CANCELED;
+  public static final javax.print.attribute.standard.JobState ABORTED;
+  public static final javax.print.attribute.standard.JobState COMPLETED;
+  protected javax.print.attribute.standard.JobState(int);
+  protected java.lang.String[] getStringTable();
+  protected javax.print.attribute.EnumSyntax[] getEnumValueTable();
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  static {};
+}

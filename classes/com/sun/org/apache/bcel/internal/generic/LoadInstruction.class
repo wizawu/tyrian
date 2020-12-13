@@ -1,0 +1,6 @@
+Compiled from "LoadInstruction.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.LoadInstruction extends com.sun.org.apache.bcel.internal.generic.LocalVariableInstruction implements com.sun.org.apache.bcel.internal.generic.PushInstruction {
+  com.sun.org.apache.bcel.internal.generic.LoadInstruction(short, short);
+  protected com.sun.org.apache.bcel.internal.generic.LoadInstruction(short, short, int);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

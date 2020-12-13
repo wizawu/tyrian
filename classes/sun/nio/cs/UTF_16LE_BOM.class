@@ -1,0 +1,7 @@
+Compiled from "UTF_16LE_BOM.java"
+class sun.nio.cs.UTF_16LE_BOM extends sun.nio.cs.Unicode {
+  public sun.nio.cs.UTF_16LE_BOM();
+  public java.lang.String historicalName();
+  public java.nio.charset.CharsetDecoder newDecoder();
+  public java.nio.charset.CharsetEncoder newEncoder();
+}

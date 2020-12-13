@@ -1,0 +1,18 @@
+Compiled from "OutputStreamWriter.java"
+public class java.io.OutputStreamWriter extends java.io.Writer {
+  public java.io.OutputStreamWriter(java.io.OutputStream, java.lang.String) throws java.io.UnsupportedEncodingException;
+  public java.io.OutputStreamWriter(java.io.OutputStream);
+  public java.io.OutputStreamWriter(java.io.OutputStream, java.nio.charset.Charset);
+  public java.io.OutputStreamWriter(java.io.OutputStream, java.nio.charset.CharsetEncoder);
+  public java.lang.String getEncoding();
+  void flushBuffer() throws java.io.IOException;
+  public void write(int) throws java.io.IOException;
+  public void write(char[], int, int) throws java.io.IOException;
+  public void write(java.lang.String, int, int) throws java.io.IOException;
+  public java.io.Writer append(java.lang.CharSequence, int, int) throws java.io.IOException;
+  public java.io.Writer append(java.lang.CharSequence) throws java.io.IOException;
+  public void flush() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public java.lang.Appendable append(java.lang.CharSequence, int, int) throws java.io.IOException;
+  public java.lang.Appendable append(java.lang.CharSequence) throws java.io.IOException;
+}

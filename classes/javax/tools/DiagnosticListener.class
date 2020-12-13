@@ -1,0 +1,4 @@
+Compiled from "DiagnosticListener.java"
+public interface javax.tools.DiagnosticListener<S> {
+  public abstract void report(javax.tools.Diagnostic<? extends S>);
+}

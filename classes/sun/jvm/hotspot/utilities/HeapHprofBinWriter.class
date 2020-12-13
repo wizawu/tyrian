@@ -1,0 +1,18 @@
+Compiled from "HeapHprofBinWriter.java"
+public class sun.jvm.hotspot.utilities.HeapHprofBinWriter extends sun.jvm.hotspot.utilities.AbstractHeapGraphWriter {
+  int serialNum;
+  static final boolean $assertionsDisabled;
+  public sun.jvm.hotspot.utilities.HeapHprofBinWriter();
+  public synchronized void write(java.lang.String) throws java.io.IOException;
+  protected void writeHeapRecordPrologue() throws java.io.IOException;
+  protected void writeHeapRecordEpilogue() throws java.io.IOException;
+  protected void writeClass(sun.jvm.hotspot.oops.Instance) throws java.io.IOException;
+  protected void writeJavaThread(sun.jvm.hotspot.runtime.JavaThread, int) throws java.io.IOException;
+  protected void writeLocalJNIHandles(sun.jvm.hotspot.runtime.JavaThread, int) throws java.io.IOException;
+  protected void writeGlobalJNIHandle(sun.jvm.hotspot.debugger.Address) throws java.io.IOException;
+  protected void writeObjectArray(sun.jvm.hotspot.oops.ObjArray) throws java.io.IOException;
+  protected void writePrimitiveArray(sun.jvm.hotspot.oops.TypeArray) throws java.io.IOException;
+  protected void writeInstance(sun.jvm.hotspot.oops.Instance) throws java.io.IOException;
+  public static int signatureToHprofKind(char);
+  static {};
+}

@@ -1,0 +1,18 @@
+Compiled from "OpenMBeanParameterInfo.java"
+public interface javax.management.openmbean.OpenMBeanParameterInfo {
+  public abstract java.lang.String getDescription();
+  public abstract java.lang.String getName();
+  public abstract javax.management.openmbean.OpenType<?> getOpenType();
+  public abstract java.lang.Object getDefaultValue();
+  public abstract java.util.Set<?> getLegalValues();
+  public abstract java.lang.Comparable<?> getMinValue();
+  public abstract java.lang.Comparable<?> getMaxValue();
+  public abstract boolean hasDefaultValue();
+  public abstract boolean hasLegalValues();
+  public abstract boolean hasMinValue();
+  public abstract boolean hasMaxValue();
+  public abstract boolean isValue(java.lang.Object);
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public abstract java.lang.String toString();
+}

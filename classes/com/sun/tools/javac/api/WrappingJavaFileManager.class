@@ -1,0 +1,17 @@
+Compiled from "WrappingJavaFileManager.java"
+public class com.sun.tools.javac.api.WrappingJavaFileManager<M extends javax.tools.JavaFileManager> extends javax.tools.ForwardingJavaFileManager<M> {
+  protected com.sun.tools.javac.api.WrappingJavaFileManager(M);
+  protected javax.tools.FileObject wrap(javax.tools.FileObject);
+  protected javax.tools.JavaFileObject wrap(javax.tools.JavaFileObject);
+  protected javax.tools.FileObject unwrap(javax.tools.FileObject);
+  protected javax.tools.JavaFileObject unwrap(javax.tools.JavaFileObject);
+  protected java.lang.Iterable<javax.tools.JavaFileObject> wrap(java.lang.Iterable<javax.tools.JavaFileObject>);
+  protected java.net.URI unwrap(java.net.URI);
+  public java.lang.Iterable<javax.tools.JavaFileObject> list(javax.tools.JavaFileManager$Location, java.lang.String, java.util.Set<javax.tools.JavaFileObject$Kind>, boolean) throws java.io.IOException;
+  public java.lang.String inferBinaryName(javax.tools.JavaFileManager$Location, javax.tools.JavaFileObject);
+  public javax.tools.JavaFileObject getJavaFileForInput(javax.tools.JavaFileManager$Location, java.lang.String, javax.tools.JavaFileObject$Kind) throws java.io.IOException;
+  public javax.tools.JavaFileObject getJavaFileForOutput(javax.tools.JavaFileManager$Location, java.lang.String, javax.tools.JavaFileObject$Kind, javax.tools.FileObject) throws java.io.IOException;
+  public javax.tools.FileObject getFileForInput(javax.tools.JavaFileManager$Location, java.lang.String, java.lang.String) throws java.io.IOException;
+  public javax.tools.FileObject getFileForOutput(javax.tools.JavaFileManager$Location, java.lang.String, java.lang.String, javax.tools.FileObject) throws java.io.IOException;
+  public boolean contains(javax.tools.JavaFileManager$Location, javax.tools.FileObject) throws java.io.IOException;
+}

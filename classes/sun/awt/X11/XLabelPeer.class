@@ -1,0 +1,16 @@
+Compiled from "XLabelPeer.java"
+class sun.awt.X11.XLabelPeer extends sun.awt.X11.XComponentPeer implements java.awt.peer.LabelPeer {
+  static final int TEXT_XPAD;
+  static final int TEXT_YPAD;
+  java.lang.String label;
+  int alignment;
+  java.awt.FontMetrics cachedFontMetrics;
+  java.awt.Font oldfont;
+  java.awt.FontMetrics getFontMetrics();
+  void preInit(sun.awt.X11.XCreateWindowParams);
+  sun.awt.X11.XLabelPeer(java.awt.Label);
+  public java.awt.Dimension getMinimumSize();
+  void paintPeer(java.awt.Graphics);
+  public void setText(java.lang.String);
+  public void setAlignment(int);
+}

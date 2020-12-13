@@ -1,0 +1,12 @@
+Compiled from "GNUStyleOptions.java"
+class sun.tools.jar.GNUStyleOptions {
+  static sun.tools.jar.GNUStyleOptions$Option[] recognizedOptions;
+  sun.tools.jar.GNUStyleOptions();
+  static int parseOptions(sun.tools.jar.Main, java.lang.String[]) throws sun.tools.jar.GNUStyleOptions$BadArgs;
+  static void printHelpExtra(java.io.PrintWriter);
+  static void printHelp(java.io.PrintWriter);
+  static void printCompatHelp(java.io.PrintWriter);
+  static void printUsageTryHelp(java.io.PrintWriter);
+  static void printVersion(java.io.PrintWriter);
+  static {};
+}

@@ -1,0 +1,41 @@
+Compiled from "AWTEvent.java"
+public abstract class java.awt.AWTEvent extends java.util.EventObject {
+  protected int id;
+  protected boolean consumed;
+  transient boolean focusManagerIsDispatching;
+  transient boolean isPosted;
+  public static final long COMPONENT_EVENT_MASK;
+  public static final long CONTAINER_EVENT_MASK;
+  public static final long FOCUS_EVENT_MASK;
+  public static final long KEY_EVENT_MASK;
+  public static final long MOUSE_EVENT_MASK;
+  public static final long MOUSE_MOTION_EVENT_MASK;
+  public static final long WINDOW_EVENT_MASK;
+  public static final long ACTION_EVENT_MASK;
+  public static final long ADJUSTMENT_EVENT_MASK;
+  public static final long ITEM_EVENT_MASK;
+  public static final long TEXT_EVENT_MASK;
+  public static final long INPUT_METHOD_EVENT_MASK;
+  static final long INPUT_METHODS_ENABLED_MASK;
+  public static final long PAINT_EVENT_MASK;
+  public static final long INVOCATION_EVENT_MASK;
+  public static final long HIERARCHY_EVENT_MASK;
+  public static final long HIERARCHY_BOUNDS_EVENT_MASK;
+  public static final long MOUSE_WHEEL_EVENT_MASK;
+  public static final long WINDOW_STATE_EVENT_MASK;
+  public static final long WINDOW_FOCUS_EVENT_MASK;
+  public static final int RESERVED_ID_MAX;
+  final java.security.AccessControlContext getAccessControlContext();
+  public java.awt.AWTEvent(java.awt.Event);
+  public java.awt.AWTEvent(java.lang.Object, int);
+  public void setSource(java.lang.Object);
+  public int getID();
+  public java.lang.String toString();
+  public java.lang.String paramString();
+  protected void consume();
+  protected boolean isConsumed();
+  java.awt.Event convertToOld();
+  void copyPrivateDataInto(java.awt.AWTEvent);
+  void dispatched();
+  static {};
+}

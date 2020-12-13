@@ -1,0 +1,3 @@
+Compiled from "Documented.java"
+public interface java.lang.annotation.Documented extends java.lang.annotation.Annotation {
+}

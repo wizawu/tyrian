@@ -1,0 +1,8 @@
+Compiled from "AdaptiveFreeList.java"
+public class sun.jvm.hotspot.gc.cms.AdaptiveFreeList extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.gc.cms.AdaptiveFreeList(sun.jvm.hotspot.debugger.Address);
+  public long size();
+  public long count();
+  public static long sizeOf();
+  static {};
+}

@@ -1,0 +1,26 @@
+Compiled from "KerberosTime.java"
+public class sun.security.krb5.internal.KerberosTime {
+  public sun.security.krb5.internal.KerberosTime(long);
+  public sun.security.krb5.internal.KerberosTime(java.lang.String) throws sun.security.krb5.Asn1Exception;
+  public sun.security.krb5.internal.KerberosTime(java.util.Date);
+  public sun.security.krb5.internal.KerberosTime(java.time.Instant);
+  public static sun.security.krb5.internal.KerberosTime now();
+  public java.lang.String toGeneralizedTimeString();
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public long getTime();
+  public java.util.Date toDate();
+  public int getMicroSeconds();
+  public sun.security.krb5.internal.KerberosTime withMicroSeconds(int);
+  public boolean inClockSkew();
+  public boolean greaterThanWRTClockSkew(sun.security.krb5.internal.KerberosTime, int);
+  public boolean greaterThanWRTClockSkew(sun.security.krb5.internal.KerberosTime);
+  public boolean greaterThan(sun.security.krb5.internal.KerberosTime);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public boolean isZero();
+  public int getSeconds();
+  public static sun.security.krb5.internal.KerberosTime parse(sun.security.util.DerInputStream, byte, boolean) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public static int getDefaultSkew();
+  public java.lang.String toString();
+  static {};
+}

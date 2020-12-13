@@ -1,0 +1,22 @@
+Compiled from "MultipleGradientPaint.java"
+public abstract class java.awt.MultipleGradientPaint implements java.awt.Paint {
+  final int transparency;
+  final float[] fractions;
+  final java.awt.Color[] colors;
+  final java.awt.geom.AffineTransform gradientTransform;
+  final java.awt.MultipleGradientPaint$CycleMethod cycleMethod;
+  final java.awt.MultipleGradientPaint$ColorSpaceType colorSpace;
+  java.awt.image.ColorModel model;
+  float[] normalizedIntervals;
+  boolean isSimpleLookup;
+  java.lang.ref.SoftReference<int[][]> gradients;
+  java.lang.ref.SoftReference<int[]> gradient;
+  int fastGradientArraySize;
+  java.awt.MultipleGradientPaint(float[], java.awt.Color[], java.awt.MultipleGradientPaint$CycleMethod, java.awt.MultipleGradientPaint$ColorSpaceType, java.awt.geom.AffineTransform);
+  public final float[] getFractions();
+  public final java.awt.Color[] getColors();
+  public final java.awt.MultipleGradientPaint$CycleMethod getCycleMethod();
+  public final java.awt.MultipleGradientPaint$ColorSpaceType getColorSpace();
+  public final java.awt.geom.AffineTransform getTransform();
+  public final int getTransparency();
+}

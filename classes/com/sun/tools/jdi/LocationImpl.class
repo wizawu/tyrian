@@ -1,0 +1,27 @@
+Compiled from "LocationImpl.java"
+public class com.sun.tools.jdi.LocationImpl extends com.sun.tools.jdi.MirrorImpl implements com.sun.jdi.Location {
+  com.sun.tools.jdi.LocationImpl(com.sun.jdi.VirtualMachine, com.sun.jdi.Method, long);
+  com.sun.tools.jdi.LocationImpl(com.sun.jdi.VirtualMachine, com.sun.tools.jdi.ReferenceTypeImpl, long, long);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public int compareTo(com.sun.jdi.Location);
+  public com.sun.jdi.ReferenceType declaringType();
+  public com.sun.jdi.Method method();
+  public long codeIndex();
+  com.sun.tools.jdi.LineInfo getBaseLineInfo(com.sun.tools.jdi.SDE$Stratum);
+  com.sun.tools.jdi.LineInfo getLineInfo(com.sun.tools.jdi.SDE$Stratum);
+  void addStratumLineInfo(com.sun.tools.jdi.LineInfo);
+  void addBaseLineInfo(com.sun.tools.jdi.LineInfo);
+  public java.lang.String sourceName() throws com.sun.jdi.AbsentInformationException;
+  public java.lang.String sourceName(java.lang.String) throws com.sun.jdi.AbsentInformationException;
+  java.lang.String sourceName(com.sun.tools.jdi.SDE$Stratum) throws com.sun.jdi.AbsentInformationException;
+  public java.lang.String sourcePath() throws com.sun.jdi.AbsentInformationException;
+  public java.lang.String sourcePath(java.lang.String) throws com.sun.jdi.AbsentInformationException;
+  java.lang.String sourcePath(com.sun.tools.jdi.SDE$Stratum) throws com.sun.jdi.AbsentInformationException;
+  public int lineNumber();
+  public int lineNumber(java.lang.String);
+  int lineNumber(com.sun.tools.jdi.SDE$Stratum);
+  public java.lang.String toString();
+  public com.sun.jdi.VirtualMachine virtualMachine();
+  public int compareTo(java.lang.Object);
+}

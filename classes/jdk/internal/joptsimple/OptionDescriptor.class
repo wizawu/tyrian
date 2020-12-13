@@ -1,0 +1,12 @@
+Compiled from "OptionDescriptor.java"
+public interface jdk.internal.joptsimple.OptionDescriptor {
+  public abstract java.util.List<java.lang.String> options();
+  public abstract java.lang.String description();
+  public abstract java.util.List<?> defaultValues();
+  public abstract boolean isRequired();
+  public abstract boolean acceptsArguments();
+  public abstract boolean requiresArgument();
+  public abstract java.lang.String argumentDescription();
+  public abstract java.lang.String argumentTypeIndicator();
+  public abstract boolean representsNonOptions();
+}

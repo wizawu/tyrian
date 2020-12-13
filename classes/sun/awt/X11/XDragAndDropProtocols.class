@@ -1,0 +1,11 @@
+Compiled from "XDragAndDropProtocols.java"
+final class sun.awt.X11.XDragAndDropProtocols {
+  public static final java.lang.String XDnD;
+  public static final java.lang.String MotifDnD;
+  sun.awt.X11.XDragAndDropProtocols();
+  static java.util.Iterator<sun.awt.X11.XDragSourceProtocol> getDragSourceProtocols();
+  static java.util.Iterator<sun.awt.X11.XDropTargetProtocol> getDropTargetProtocols();
+  public static sun.awt.X11.XDragSourceProtocol getDragSourceProtocol(java.lang.String);
+  public static sun.awt.X11.XDropTargetProtocol getDropTargetProtocol(java.lang.String);
+  static {};
+}

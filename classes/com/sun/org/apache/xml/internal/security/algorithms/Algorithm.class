@@ -1,0 +1,7 @@
+Compiled from "Algorithm.java"
+public abstract class com.sun.org.apache.xml.internal.security.algorithms.Algorithm extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
+  public com.sun.org.apache.xml.internal.security.algorithms.Algorithm(org.w3c.dom.Document, java.lang.String);
+  public com.sun.org.apache.xml.internal.security.algorithms.Algorithm(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.lang.String getAlgorithmURI();
+  protected void setAlgorithmURI(java.lang.String);
+}

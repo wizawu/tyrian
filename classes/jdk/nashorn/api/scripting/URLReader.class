@@ -1,0 +1,10 @@
+Compiled from "URLReader.java"
+public final class jdk.nashorn.api.scripting.URLReader extends java.io.Reader {
+  public jdk.nashorn.api.scripting.URLReader(java.net.URL);
+  public jdk.nashorn.api.scripting.URLReader(java.net.URL, java.lang.String);
+  public jdk.nashorn.api.scripting.URLReader(java.net.URL, java.nio.charset.Charset);
+  public int read(char[], int, int) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public java.net.URL getURL();
+  public java.nio.charset.Charset getCharset();
+}

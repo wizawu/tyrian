@@ -1,0 +1,6 @@
+Compiled from "Channel.java"
+public interface sun.rmi.transport.Channel {
+  public abstract sun.rmi.transport.Connection newConnection() throws java.rmi.RemoteException;
+  public abstract sun.rmi.transport.Endpoint getEndpoint();
+  public abstract void free(sun.rmi.transport.Connection, boolean) throws java.rmi.RemoteException;
+}

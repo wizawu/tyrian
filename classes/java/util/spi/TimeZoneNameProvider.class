@@ -1,0 +1,6 @@
+Compiled from "TimeZoneNameProvider.java"
+public abstract class java.util.spi.TimeZoneNameProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.util.spi.TimeZoneNameProvider();
+  public abstract java.lang.String getDisplayName(java.lang.String, boolean, int, java.util.Locale);
+  public java.lang.String getGenericDisplayName(java.lang.String, int, java.util.Locale);
+}

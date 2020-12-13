@@ -1,0 +1,12 @@
+Compiled from "LocalVariable.java"
+public interface com.sun.jdi.LocalVariable extends com.sun.jdi.Mirror, java.lang.Comparable<com.sun.jdi.LocalVariable> {
+  public abstract java.lang.String name();
+  public abstract java.lang.String typeName();
+  public abstract com.sun.jdi.Type type() throws com.sun.jdi.ClassNotLoadedException;
+  public abstract java.lang.String signature();
+  public abstract java.lang.String genericSignature();
+  public abstract boolean isVisible(com.sun.jdi.StackFrame);
+  public abstract boolean isArgument();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+}

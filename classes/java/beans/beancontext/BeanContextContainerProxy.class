@@ -1,0 +1,4 @@
+Compiled from "BeanContextContainerProxy.java"
+public interface java.beans.beancontext.BeanContextContainerProxy {
+  public abstract java.awt.Container getContainer();
+}

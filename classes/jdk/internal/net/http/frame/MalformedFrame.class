@@ -1,0 +1,8 @@
+Compiled from "MalformedFrame.java"
+public class jdk.internal.net.http.frame.MalformedFrame extends jdk.internal.net.http.frame.Http2Frame {
+  public jdk.internal.net.http.frame.MalformedFrame(int, java.lang.String);
+  public jdk.internal.net.http.frame.MalformedFrame(int, int, java.lang.String);
+  public java.lang.String toString();
+  public int getErrorCode();
+  public java.lang.String getMessage();
+}

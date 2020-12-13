@@ -1,0 +1,6 @@
+Compiled from "DoubleByte.java"
+public class sun.nio.cs.DoubleByte {
+  public static final char[] B2C_UNMAPPABLE;
+  public sun.nio.cs.DoubleByte();
+  static {};
+}

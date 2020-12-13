@@ -1,0 +1,3 @@
+Compiled from "FileAttributeView.java"
+public interface java.nio.file.attribute.FileAttributeView extends java.nio.file.attribute.AttributeView {
+}

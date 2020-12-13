@@ -1,0 +1,15 @@
+Compiled from "XMLLocatorWrapper.java"
+public final class com.sun.org.apache.xerces.internal.util.XMLLocatorWrapper implements com.sun.org.apache.xerces.internal.xni.XMLLocator {
+  public com.sun.org.apache.xerces.internal.util.XMLLocatorWrapper();
+  public void setLocator(com.sun.org.apache.xerces.internal.xni.XMLLocator);
+  public com.sun.org.apache.xerces.internal.xni.XMLLocator getLocator();
+  public java.lang.String getPublicId();
+  public java.lang.String getLiteralSystemId();
+  public java.lang.String getBaseSystemId();
+  public java.lang.String getExpandedSystemId();
+  public int getLineNumber();
+  public int getColumnNumber();
+  public int getCharacterOffset();
+  public java.lang.String getEncoding();
+  public java.lang.String getXMLVersion();
+}

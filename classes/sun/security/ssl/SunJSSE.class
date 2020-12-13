@@ -1,0 +1,10 @@
+Compiled from "SunJSSE.java"
+public abstract class sun.security.ssl.SunJSSE extends java.security.Provider {
+  static java.security.Provider cryptoProvider;
+  protected static synchronized boolean isFIPS();
+  protected sun.security.ssl.SunJSSE();
+  protected sun.security.ssl.SunJSSE(java.security.Provider);
+  protected sun.security.ssl.SunJSSE(java.lang.String);
+  protected final void finalize() throws java.lang.Throwable;
+  static {};
+}

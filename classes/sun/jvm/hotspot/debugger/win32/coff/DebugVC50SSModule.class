@@ -1,0 +1,9 @@
+Compiled from "DebugVC50SSModule.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSModule extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
+  public abstract short getOverlayNumber();
+  public abstract short getLibrariesIndex();
+  public abstract short getNumCodeSegments();
+  public abstract short getDebuggingStyle();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugVC50SegInfo getSegInfo(int);
+  public abstract java.lang.String getName();
+}

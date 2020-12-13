@@ -1,0 +1,10 @@
+Compiled from "OptionalHeader.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.OptionalHeader {
+  public static final short MAGIC_PE32;
+  public static final short MAGIC_PE32_PLUS;
+  public static final short MAGIC_ROM_IMAGE;
+  public abstract short getMagicNumber();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderStandardFields getStandardFields();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderWindowsSpecificFields getWindowsSpecificFields();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderDataDirectories getDataDirectories();
+}

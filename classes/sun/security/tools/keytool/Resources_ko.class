@@ -1,0 +1,6 @@
+Compiled from "Resources_ko.java"
+public class sun.security.tools.keytool.Resources_ko extends java.util.ListResourceBundle {
+  public sun.security.tools.keytool.Resources_ko();
+  public java.lang.Object[][] getContents();
+  static {};
+}

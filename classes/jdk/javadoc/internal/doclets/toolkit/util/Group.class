@@ -1,0 +1,13 @@
+Compiled from "Group.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.Group {
+  public jdk.javadoc.internal.doclets.toolkit.util.Group(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public boolean checkModuleGroups(java.lang.String, java.lang.String);
+  public boolean checkPackageGroups(java.lang.String, java.lang.String);
+  boolean foundGroupFormat(java.util.Map<java.lang.String, ?>, java.lang.String);
+  public java.util.Map<java.lang.String, java.util.SortedSet<javax.lang.model.element.ModuleElement>> groupModules(java.util.Set<javax.lang.model.element.ModuleElement>);
+  public java.util.Map<java.lang.String, java.util.SortedSet<javax.lang.model.element.PackageElement>> groupPackages(java.util.Set<javax.lang.model.element.PackageElement>);
+  java.lang.String regExpGroupName(java.lang.String);
+  java.util.SortedSet<javax.lang.model.element.PackageElement> getPkgList(java.util.Map<java.lang.String, java.util.SortedSet<javax.lang.model.element.PackageElement>>, java.lang.String);
+  java.util.SortedSet<javax.lang.model.element.ModuleElement> getModuleList(java.util.Map<java.lang.String, java.util.SortedSet<javax.lang.model.element.ModuleElement>>, java.lang.String);
+  public java.util.List<java.lang.String> getGroupList();
+}

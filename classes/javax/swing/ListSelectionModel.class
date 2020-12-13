@@ -1,0 +1,28 @@
+Compiled from "ListSelectionModel.java"
+public interface javax.swing.ListSelectionModel {
+  public static final int SINGLE_SELECTION;
+  public static final int SINGLE_INTERVAL_SELECTION;
+  public static final int MULTIPLE_INTERVAL_SELECTION;
+  public abstract void setSelectionInterval(int, int);
+  public abstract void addSelectionInterval(int, int);
+  public abstract void removeSelectionInterval(int, int);
+  public abstract int getMinSelectionIndex();
+  public abstract int getMaxSelectionIndex();
+  public abstract boolean isSelectedIndex(int);
+  public abstract int getAnchorSelectionIndex();
+  public abstract void setAnchorSelectionIndex(int);
+  public abstract int getLeadSelectionIndex();
+  public abstract void setLeadSelectionIndex(int);
+  public abstract void clearSelection();
+  public abstract boolean isSelectionEmpty();
+  public abstract void insertIndexInterval(int, int, boolean);
+  public abstract void removeIndexInterval(int, int);
+  public abstract void setValueIsAdjusting(boolean);
+  public abstract boolean getValueIsAdjusting();
+  public abstract void setSelectionMode(int);
+  public abstract int getSelectionMode();
+  public abstract void addListSelectionListener(javax.swing.event.ListSelectionListener);
+  public abstract void removeListSelectionListener(javax.swing.event.ListSelectionListener);
+  public default int[] getSelectedIndices();
+  public default int getSelectedItemsCount();
+}

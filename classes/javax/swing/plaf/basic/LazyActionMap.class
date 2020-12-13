@@ -1,0 +1,16 @@
+Compiled from "LazyActionMap.java"
+class javax.swing.plaf.basic.LazyActionMap extends javax.swing.plaf.ActionMapUIResource {
+  static final boolean $assertionsDisabled;
+  static void installLazyActionMap(javax.swing.JComponent, java.lang.Class<?>, java.lang.String);
+  static javax.swing.ActionMap getActionMap(java.lang.Class<?>, java.lang.String);
+  public void put(javax.swing.Action);
+  public void put(java.lang.Object, javax.swing.Action);
+  public javax.swing.Action get(java.lang.Object);
+  public void remove(java.lang.Object);
+  public void clear();
+  public java.lang.Object[] keys();
+  public int size();
+  public java.lang.Object[] allKeys();
+  public void setParent(javax.swing.ActionMap);
+  static {};
+}

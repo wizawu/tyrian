@@ -1,0 +1,13 @@
+Compiled from "Paper.java"
+public class java.awt.print.Paper implements java.lang.Cloneable {
+  public java.awt.print.Paper();
+  public java.lang.Object clone();
+  public double getHeight();
+  public void setSize(double, double);
+  public double getWidth();
+  public void setImageableArea(double, double, double, double);
+  public double getImageableX();
+  public double getImageableY();
+  public double getImageableWidth();
+  public double getImageableHeight();
+}

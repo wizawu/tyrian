@@ -1,0 +1,21 @@
+Compiled from "CardImpl.java"
+final class sun.security.smartcardio.CardImpl extends javax.smartcardio.Card {
+  final long cardId;
+  final int protocol;
+  sun.security.smartcardio.CardImpl(sun.security.smartcardio.TerminalImpl, java.lang.String) throws sun.security.smartcardio.PCSCException;
+  void checkState();
+  boolean isValid();
+  void handleError(sun.security.smartcardio.PCSCException);
+  public javax.smartcardio.ATR getATR();
+  public java.lang.String getProtocol();
+  public javax.smartcardio.CardChannel getBasicChannel();
+  public javax.smartcardio.CardChannel openLogicalChannel() throws javax.smartcardio.CardException;
+  void checkExclusive() throws javax.smartcardio.CardException;
+  public synchronized void beginExclusive() throws javax.smartcardio.CardException;
+  public synchronized void endExclusive() throws javax.smartcardio.CardException;
+  public byte[] transmitControlCommand(int, byte[]) throws javax.smartcardio.CardException;
+  public void disconnect(boolean) throws javax.smartcardio.CardException;
+  public java.lang.String toString();
+  protected void finalize() throws java.lang.Throwable;
+  static {};
+}

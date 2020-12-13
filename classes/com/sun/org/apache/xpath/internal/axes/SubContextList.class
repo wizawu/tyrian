@@ -1,0 +1,5 @@
+Compiled from "SubContextList.java"
+public interface com.sun.org.apache.xpath.internal.axes.SubContextList {
+  public abstract int getLastPos(com.sun.org.apache.xpath.internal.XPathContext);
+  public abstract int getProximityPosition(com.sun.org.apache.xpath.internal.XPathContext);
+}

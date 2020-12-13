@@ -1,0 +1,17 @@
+Compiled from "StandardJavaFileManager.java"
+public interface javax.tools.StandardJavaFileManager extends javax.tools.JavaFileManager {
+  public abstract boolean isSameFile(javax.tools.FileObject, javax.tools.FileObject);
+  public abstract java.lang.Iterable<? extends javax.tools.JavaFileObject> getJavaFileObjectsFromFiles(java.lang.Iterable<? extends java.io.File>);
+  public default java.lang.Iterable<? extends javax.tools.JavaFileObject> getJavaFileObjectsFromPaths(java.lang.Iterable<? extends java.nio.file.Path>);
+  public abstract java.lang.Iterable<? extends javax.tools.JavaFileObject> getJavaFileObjects(java.io.File...);
+  public default java.lang.Iterable<? extends javax.tools.JavaFileObject> getJavaFileObjects(java.nio.file.Path...);
+  public abstract java.lang.Iterable<? extends javax.tools.JavaFileObject> getJavaFileObjectsFromStrings(java.lang.Iterable<java.lang.String>);
+  public abstract java.lang.Iterable<? extends javax.tools.JavaFileObject> getJavaFileObjects(java.lang.String...);
+  public abstract void setLocation(javax.tools.JavaFileManager$Location, java.lang.Iterable<? extends java.io.File>) throws java.io.IOException;
+  public default void setLocationFromPaths(javax.tools.JavaFileManager$Location, java.util.Collection<? extends java.nio.file.Path>) throws java.io.IOException;
+  public default void setLocationForModule(javax.tools.JavaFileManager$Location, java.lang.String, java.util.Collection<? extends java.nio.file.Path>) throws java.io.IOException;
+  public abstract java.lang.Iterable<? extends java.io.File> getLocation(javax.tools.JavaFileManager$Location);
+  public default java.lang.Iterable<? extends java.nio.file.Path> getLocationAsPaths(javax.tools.JavaFileManager$Location);
+  public default java.nio.file.Path asPath(javax.tools.FileObject);
+  public default void setPathFactory(javax.tools.StandardJavaFileManager$PathFactory);
+}

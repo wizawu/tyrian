@@ -1,0 +1,7 @@
+Compiled from "ClassParser.java"
+public final class com.sun.org.apache.bcel.internal.classfile.ClassParser {
+  public com.sun.org.apache.bcel.internal.classfile.ClassParser(java.io.InputStream, java.lang.String);
+  public com.sun.org.apache.bcel.internal.classfile.ClassParser(java.lang.String);
+  public com.sun.org.apache.bcel.internal.classfile.ClassParser(java.lang.String, java.lang.String);
+  public com.sun.org.apache.bcel.internal.classfile.JavaClass parse() throws java.io.IOException, com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
+}

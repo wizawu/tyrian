@@ -1,0 +1,20 @@
+Compiled from "LocaleUtils.java"
+public final class sun.util.locale.LocaleUtils {
+  public static boolean caseIgnoreMatch(java.lang.String, java.lang.String);
+  static int caseIgnoreCompare(java.lang.String, java.lang.String);
+  static char toUpper(char);
+  static char toLower(char);
+  public static java.lang.String toLowerString(java.lang.String);
+  static java.lang.String toUpperString(java.lang.String);
+  static java.lang.String toTitleString(java.lang.String);
+  static boolean isAlpha(char);
+  static boolean isAlphaString(java.lang.String);
+  static boolean isNumeric(char);
+  static boolean isNumericString(java.lang.String);
+  static boolean isAlphaNumeric(char);
+  public static boolean isAlphaNumericString(java.lang.String);
+  static boolean isEmpty(java.lang.String);
+  static boolean isEmpty(java.util.Set<?>);
+  static boolean isEmpty(java.util.Map<?, ?>);
+  static boolean isEmpty(java.util.List<?>);
+}

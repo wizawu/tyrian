@@ -1,0 +1,10 @@
+Compiled from "CellEditor.java"
+public interface javax.swing.CellEditor {
+  public abstract java.lang.Object getCellEditorValue();
+  public abstract boolean isCellEditable(java.util.EventObject);
+  public abstract boolean shouldSelectCell(java.util.EventObject);
+  public abstract boolean stopCellEditing();
+  public abstract void cancelCellEditing();
+  public abstract void addCellEditorListener(javax.swing.event.CellEditorListener);
+  public abstract void removeCellEditorListener(javax.swing.event.CellEditorListener);
+}

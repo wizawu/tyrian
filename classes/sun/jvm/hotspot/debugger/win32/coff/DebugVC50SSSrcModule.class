@@ -1,0 +1,9 @@
+Compiled from "DebugVC50SSSrcModule.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSrcModule extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
+  public abstract int getNumSourceFiles();
+  public abstract int getNumCodeSegments();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugVC50SrcModFileDesc getSourceFileDesc(int);
+  public abstract int getSegmentStartOffset(int);
+  public abstract int getSegmentEndOffset(int);
+  public abstract int getSegment(int);
+}

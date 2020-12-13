@@ -1,0 +1,10 @@
+Compiled from "AuthorizeCallback.java"
+public class javax.security.sasl.AuthorizeCallback implements javax.security.auth.callback.Callback,java.io.Serializable {
+  public javax.security.sasl.AuthorizeCallback(java.lang.String, java.lang.String);
+  public java.lang.String getAuthenticationID();
+  public java.lang.String getAuthorizationID();
+  public boolean isAuthorized();
+  public void setAuthorized(boolean);
+  public java.lang.String getAuthorizedID();
+  public void setAuthorizedID(java.lang.String);
+}

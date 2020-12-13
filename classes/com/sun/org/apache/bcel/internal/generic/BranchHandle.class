@@ -1,0 +1,11 @@
+Compiled from "BranchHandle.java"
+public final class com.sun.org.apache.bcel.internal.generic.BranchHandle extends com.sun.org.apache.bcel.internal.generic.InstructionHandle {
+  static com.sun.org.apache.bcel.internal.generic.BranchHandle getBranchHandle(com.sun.org.apache.bcel.internal.generic.BranchInstruction);
+  public int getPosition();
+  void setPosition(int);
+  protected int updatePosition(int, int);
+  public void setTarget(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public void updateTarget(com.sun.org.apache.bcel.internal.generic.InstructionHandle, com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+  public com.sun.org.apache.bcel.internal.generic.InstructionHandle getTarget();
+  public void setInstruction(com.sun.org.apache.bcel.internal.generic.Instruction);
+}

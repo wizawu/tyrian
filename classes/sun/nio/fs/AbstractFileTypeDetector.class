@@ -1,0 +1,7 @@
+Compiled from "AbstractFileTypeDetector.java"
+public abstract class sun.nio.fs.AbstractFileTypeDetector extends java.nio.file.spi.FileTypeDetector {
+  protected sun.nio.fs.AbstractFileTypeDetector();
+  protected final java.lang.String getExtension(java.lang.String);
+  public final java.lang.String probeContentType(java.nio.file.Path) throws java.io.IOException;
+  protected abstract java.lang.String implProbeContentType(java.nio.file.Path) throws java.io.IOException;
+}

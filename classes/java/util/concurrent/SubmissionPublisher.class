@@ -1,0 +1,35 @@
+Compiled from "SubmissionPublisher.java"
+public class java.util.concurrent.SubmissionPublisher<T> implements java.util.concurrent.Flow$Publisher<T>, java.lang.AutoCloseable {
+  static final int BUFFER_CAPACITY_LIMIT;
+  static final int INITIAL_CAPACITY;
+  java.util.concurrent.SubmissionPublisher$BufferedSubscription<T> clients;
+  volatile boolean closed;
+  boolean subscribed;
+  java.lang.Thread owner;
+  volatile java.lang.Throwable closedException;
+  final java.util.concurrent.Executor executor;
+  final java.util.function.BiConsumer<? super java.util.concurrent.Flow$Subscriber<? super T>, ? super java.lang.Throwable> onNextHandler;
+  final int maxBufferCapacity;
+  static final int roundCapacity(int);
+  public java.util.concurrent.SubmissionPublisher(java.util.concurrent.Executor, int, java.util.function.BiConsumer<? super java.util.concurrent.Flow$Subscriber<? super T>, ? super java.lang.Throwable>);
+  public java.util.concurrent.SubmissionPublisher(java.util.concurrent.Executor, int);
+  public java.util.concurrent.SubmissionPublisher();
+  public void subscribe(java.util.concurrent.Flow$Subscriber<? super T>);
+  public int submit(T);
+  public int offer(T, java.util.function.BiPredicate<java.util.concurrent.Flow$Subscriber<? super T>, ? super T>);
+  public int offer(T, long, java.util.concurrent.TimeUnit, java.util.function.BiPredicate<java.util.concurrent.Flow$Subscriber<? super T>, ? super T>);
+  public void close();
+  public void closeExceptionally(java.lang.Throwable);
+  public boolean isClosed();
+  public java.lang.Throwable getClosedException();
+  public boolean hasSubscribers();
+  public int getNumberOfSubscribers();
+  public java.util.concurrent.Executor getExecutor();
+  public int getMaxBufferCapacity();
+  public java.util.List<java.util.concurrent.Flow$Subscriber<? super T>> getSubscribers();
+  public boolean isSubscribed(java.util.concurrent.Flow$Subscriber<? super T>);
+  public long estimateMinimumDemand();
+  public int estimateMaximumLag();
+  public java.util.concurrent.CompletableFuture<java.lang.Void> consume(java.util.function.Consumer<? super T>);
+  static {};
+}

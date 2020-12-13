@@ -1,0 +1,14 @@
+Compiled from "IfNode.java"
+public final class jdk.nashorn.internal.ir.IfNode extends jdk.nashorn.internal.ir.Statement implements jdk.nashorn.internal.ir.JoinPredecessor {
+  public jdk.nashorn.internal.ir.IfNode(int, long, int, jdk.nashorn.internal.ir.Expression, jdk.nashorn.internal.ir.Block, jdk.nashorn.internal.ir.Block);
+  public boolean isTerminal();
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public void toString(java.lang.StringBuilder, boolean);
+  public jdk.nashorn.internal.ir.Block getFail();
+  public jdk.nashorn.internal.ir.Block getPass();
+  public jdk.nashorn.internal.ir.Expression getTest();
+  public jdk.nashorn.internal.ir.IfNode setTest(jdk.nashorn.internal.ir.Expression);
+  public jdk.nashorn.internal.ir.IfNode setLocalVariableConversion(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.LocalVariableConversion);
+  public jdk.nashorn.internal.ir.LocalVariableConversion getLocalVariableConversion();
+  public jdk.nashorn.internal.ir.JoinPredecessor setLocalVariableConversion(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.LocalVariableConversion);
+}

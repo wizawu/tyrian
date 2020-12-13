@@ -1,0 +1,9 @@
+Compiled from "VSyncedBSManager.java"
+public abstract class sun.awt.image.VSyncedBSManager {
+  public sun.awt.image.VSyncedBSManager();
+  abstract boolean checkAllowed(java.awt.image.BufferStrategy);
+  abstract void relinquishVsync(java.awt.image.BufferStrategy);
+  public static boolean vsyncAllowed(java.awt.image.BufferStrategy);
+  public static synchronized void releaseVsync(java.awt.image.BufferStrategy);
+  static {};
+}

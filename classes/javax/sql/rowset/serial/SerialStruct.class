@@ -1,0 +1,12 @@
+Compiled from "SerialStruct.java"
+public class javax.sql.rowset.serial.SerialStruct implements java.sql.Struct,java.io.Serializable,java.lang.Cloneable {
+  static final long serialVersionUID;
+  public javax.sql.rowset.serial.SerialStruct(java.sql.Struct, java.util.Map<java.lang.String, java.lang.Class<?>>) throws javax.sql.rowset.serial.SerialException;
+  public javax.sql.rowset.serial.SerialStruct(java.sql.SQLData, java.util.Map<java.lang.String, java.lang.Class<?>>) throws javax.sql.rowset.serial.SerialException;
+  public java.lang.String getSQLTypeName() throws javax.sql.rowset.serial.SerialException;
+  public java.lang.Object[] getAttributes() throws javax.sql.rowset.serial.SerialException;
+  public java.lang.Object[] getAttributes(java.util.Map<java.lang.String, java.lang.Class<?>>) throws javax.sql.rowset.serial.SerialException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.Object clone();
+}

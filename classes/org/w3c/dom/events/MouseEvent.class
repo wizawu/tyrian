@@ -1,0 +1,14 @@
+Compiled from "MouseEvent.java"
+public interface org.w3c.dom.events.MouseEvent extends org.w3c.dom.events.UIEvent {
+  public abstract int getScreenX();
+  public abstract int getScreenY();
+  public abstract int getClientX();
+  public abstract int getClientY();
+  public abstract boolean getCtrlKey();
+  public abstract boolean getShiftKey();
+  public abstract boolean getAltKey();
+  public abstract boolean getMetaKey();
+  public abstract short getButton();
+  public abstract org.w3c.dom.events.EventTarget getRelatedTarget();
+  public abstract void initMouseEvent(java.lang.String, boolean, boolean, org.w3c.dom.views.AbstractView, int, int, int, int, int, boolean, boolean, boolean, boolean, short, org.w3c.dom.events.EventTarget);
+}

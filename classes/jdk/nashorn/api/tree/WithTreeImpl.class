@@ -1,0 +1,8 @@
+Compiled from "WithTreeImpl.java"
+final class jdk.nashorn.api.tree.WithTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.WithTree {
+  jdk.nashorn.api.tree.WithTreeImpl(jdk.nashorn.internal.ir.WithNode, jdk.nashorn.api.tree.ExpressionTree, jdk.nashorn.api.tree.StatementTree);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public jdk.nashorn.api.tree.ExpressionTree getScope();
+  public jdk.nashorn.api.tree.StatementTree getStatement();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

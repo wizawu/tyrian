@@ -1,0 +1,18 @@
+Compiled from "ErrorManager.java"
+public class jdk.nashorn.internal.runtime.ErrorManager {
+  public jdk.nashorn.internal.runtime.ErrorManager();
+  public jdk.nashorn.internal.runtime.ErrorManager(java.io.PrintWriter);
+  public static java.lang.String format(java.lang.String, jdk.nashorn.internal.runtime.Source, int, int, long);
+  public void error(jdk.nashorn.internal.runtime.ParserException);
+  public void error(java.lang.String);
+  public void warning(jdk.nashorn.internal.runtime.ParserException);
+  public void warning(java.lang.String);
+  public boolean hasErrors();
+  public int getLimit();
+  public void setLimit(int);
+  public boolean isWarningsAsErrors();
+  public void setWarningsAsErrors(boolean);
+  public int getNumberOfErrors();
+  public int getNumberOfWarnings();
+  void reset();
+}

@@ -1,0 +1,11 @@
+Compiled from "XMLX509Digest.java"
+public class com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest extends com.sun.org.apache.xml.internal.security.utils.Signature11ElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest(org.w3c.dom.Document, byte[], java.lang.String);
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509Digest(org.w3c.dom.Document, java.security.cert.X509Certificate, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public org.w3c.dom.Attr getAlgorithmAttr();
+  public java.lang.String getAlgorithm();
+  public byte[] getDigestBytes() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public static byte[] getDigestBytesFromCert(java.security.cert.X509Certificate, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.lang.String getBaseLocalName();
+}

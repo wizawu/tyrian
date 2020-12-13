@@ -1,0 +1,6 @@
+Compiled from "RobustOopDeterminator.java"
+public class sun.jvm.hotspot.utilities.RobustOopDeterminator {
+  public sun.jvm.hotspot.utilities.RobustOopDeterminator();
+  public static boolean oopLooksValid(sun.jvm.hotspot.debugger.OopHandle);
+  static {};
+}

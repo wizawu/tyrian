@@ -1,0 +1,7 @@
+Compiled from "GrowableArray.java"
+public class sun.jvm.hotspot.utilities.GrowableArray<T> extends sun.jvm.hotspot.utilities.GenericGrowableArray {
+  public static <S> sun.jvm.hotspot.utilities.GrowableArray<S> create(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.runtime.InstanceConstructor<S>);
+  public T at(int);
+  public sun.jvm.hotspot.debugger.Address getData();
+  static {};
+}

@@ -1,0 +1,12 @@
+Compiled from "ObjArrayKlass.java"
+public class sun.jvm.hotspot.oops.ObjArrayKlass extends sun.jvm.hotspot.oops.ArrayKlass {
+  public sun.jvm.hotspot.oops.ObjArrayKlass(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.oops.Klass getElementKlass();
+  public sun.jvm.hotspot.oops.Klass getBottomKlass();
+  public long computeModifierFlags();
+  public void iterateFields(sun.jvm.hotspot.oops.MetadataVisitor);
+  public sun.jvm.hotspot.oops.Klass arrayKlassImpl(boolean, int);
+  public sun.jvm.hotspot.oops.Klass arrayKlassImpl(boolean);
+  public void printValueOn(java.io.PrintStream);
+  static {};
+}

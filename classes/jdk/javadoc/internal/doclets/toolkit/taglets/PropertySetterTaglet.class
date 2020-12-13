@@ -1,0 +1,5 @@
+Compiled from "PropertySetterTaglet.java"
+public class jdk.javadoc.internal.doclets.toolkit.taglets.PropertySetterTaglet extends jdk.javadoc.internal.doclets.toolkit.taglets.BasePropertyTaglet {
+  public jdk.javadoc.internal.doclets.toolkit.taglets.PropertySetterTaglet();
+  java.lang.String getText(jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
+}

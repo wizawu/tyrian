@@ -1,0 +1,7 @@
+Compiled from "CallJavaNode.java"
+public class sun.jvm.hotspot.opto.CallJavaNode extends sun.jvm.hotspot.opto.CallNode {
+  public sun.jvm.hotspot.opto.CallJavaNode(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.ci.ciMethod method();
+  public void dumpSpec(java.io.PrintStream);
+  static {};
+}

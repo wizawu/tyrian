@@ -1,0 +1,4 @@
+Compiled from "LineListener.java"
+public interface javax.sound.sampled.LineListener extends java.util.EventListener {
+  public abstract void update(javax.sound.sampled.LineEvent);
+}

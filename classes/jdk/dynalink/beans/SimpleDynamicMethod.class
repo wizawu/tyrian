@@ -1,0 +1,9 @@
+Compiled from "SimpleDynamicMethod.java"
+class jdk.dynalink.beans.SimpleDynamicMethod extends jdk.dynalink.beans.SingleDynamicMethod {
+  jdk.dynalink.beans.SimpleDynamicMethod(java.lang.invoke.MethodHandle, java.lang.Class<?>, java.lang.String);
+  jdk.dynalink.beans.SimpleDynamicMethod(java.lang.invoke.MethodHandle, java.lang.Class<?>, java.lang.String, boolean);
+  boolean isVarArgs();
+  java.lang.invoke.MethodType getMethodType();
+  java.lang.invoke.MethodHandle getTarget(jdk.dynalink.CallSiteDescriptor);
+  boolean isConstructor();
+}

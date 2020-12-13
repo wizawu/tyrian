@@ -1,0 +1,10 @@
+Compiled from "ApplicableOverloadedMethods.java"
+class jdk.dynalink.beans.ApplicableOverloadedMethods {
+  static final jdk.dynalink.beans.ApplicableOverloadedMethods$ApplicabilityTest APPLICABLE_BY_SUBTYPING;
+  static final jdk.dynalink.beans.ApplicableOverloadedMethods$ApplicabilityTest APPLICABLE_BY_METHOD_INVOCATION_CONVERSION;
+  static final jdk.dynalink.beans.ApplicableOverloadedMethods$ApplicabilityTest APPLICABLE_BY_VARIABLE_ARITY;
+  jdk.dynalink.beans.ApplicableOverloadedMethods(java.util.List<jdk.dynalink.beans.SingleDynamicMethod>, java.lang.invoke.MethodType, jdk.dynalink.beans.ApplicableOverloadedMethods$ApplicabilityTest);
+  java.util.List<jdk.dynalink.beans.SingleDynamicMethod> getMethods();
+  java.util.List<jdk.dynalink.beans.SingleDynamicMethod> findMaximallySpecificMethods();
+  static {};
+}

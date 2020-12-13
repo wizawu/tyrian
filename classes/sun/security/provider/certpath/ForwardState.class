@@ -1,0 +1,18 @@
+Compiled from "ForwardState.java"
+class sun.security.provider.certpath.ForwardState implements sun.security.provider.certpath.State {
+  javax.security.auth.x500.X500Principal issuerDN;
+  sun.security.x509.X509CertImpl cert;
+  java.util.HashSet<sun.security.x509.GeneralNameInterface> subjectNamesTraversed;
+  int traversedCACerts;
+  sun.security.provider.certpath.UntrustedChecker untrustedChecker;
+  java.util.ArrayList<java.security.cert.PKIXCertPathChecker> forwardCheckers;
+  boolean keyParamsNeededFlag;
+  sun.security.provider.certpath.ForwardState();
+  public boolean isInitial();
+  public boolean keyParamsNeeded();
+  public java.lang.String toString();
+  public void initState(java.util.List<java.security.cert.PKIXCertPathChecker>) throws java.security.cert.CertPathValidatorException;
+  public void updateState(java.security.cert.X509Certificate) throws java.security.cert.CertificateException, java.io.IOException, java.security.cert.CertPathValidatorException;
+  public java.lang.Object clone();
+  static {};
+}

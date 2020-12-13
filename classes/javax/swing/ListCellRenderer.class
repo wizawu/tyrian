@@ -1,0 +1,4 @@
+Compiled from "ListCellRenderer.java"
+public interface javax.swing.ListCellRenderer<E> {
+  public abstract java.awt.Component getListCellRendererComponent(javax.swing.JList<? extends E>, E, int, boolean, boolean);
+}

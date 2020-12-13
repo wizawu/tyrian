@@ -1,0 +1,20 @@
+Compiled from "ClassRemapper.java"
+public class jdk.internal.org.objectweb.asm.commons.ClassRemapper extends jdk.internal.org.objectweb.asm.ClassVisitor {
+  protected final jdk.internal.org.objectweb.asm.commons.Remapper remapper;
+  protected java.lang.String className;
+  public jdk.internal.org.objectweb.asm.commons.ClassRemapper(jdk.internal.org.objectweb.asm.ClassVisitor, jdk.internal.org.objectweb.asm.commons.Remapper);
+  protected jdk.internal.org.objectweb.asm.commons.ClassRemapper(int, jdk.internal.org.objectweb.asm.ClassVisitor, jdk.internal.org.objectweb.asm.commons.Remapper);
+  public void visit(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
+  public jdk.internal.org.objectweb.asm.ModuleVisitor visitModule(java.lang.String, int, java.lang.String);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitAnnotation(java.lang.String, boolean);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitTypeAnnotation(int, jdk.internal.org.objectweb.asm.TypePath, java.lang.String, boolean);
+  public void visitAttribute(jdk.internal.org.objectweb.asm.Attribute);
+  public jdk.internal.org.objectweb.asm.FieldVisitor visitField(int, java.lang.String, java.lang.String, java.lang.String, java.lang.Object);
+  public jdk.internal.org.objectweb.asm.MethodVisitor visitMethod(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
+  public void visitInnerClass(java.lang.String, java.lang.String, java.lang.String, int);
+  public void visitOuterClass(java.lang.String, java.lang.String, java.lang.String);
+  protected jdk.internal.org.objectweb.asm.FieldVisitor createFieldRemapper(jdk.internal.org.objectweb.asm.FieldVisitor);
+  protected jdk.internal.org.objectweb.asm.MethodVisitor createMethodRemapper(jdk.internal.org.objectweb.asm.MethodVisitor);
+  protected jdk.internal.org.objectweb.asm.AnnotationVisitor createAnnotationRemapper(jdk.internal.org.objectweb.asm.AnnotationVisitor);
+  protected jdk.internal.org.objectweb.asm.ModuleVisitor createModuleRemapper(jdk.internal.org.objectweb.asm.ModuleVisitor);
+}

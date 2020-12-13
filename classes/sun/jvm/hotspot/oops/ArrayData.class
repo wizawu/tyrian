@@ -1,0 +1,14 @@
+Compiled from "ArrayData.java"
+abstract class sun.jvm.hotspot.oops.ArrayData extends sun.jvm.hotspot.oops.ProfileData {
+  static final int arrayLenOffSet;
+  static final int arrayStartOffSet;
+  int arrayUintAt(int);
+  int arrayIntAt(int);
+  static int arrayElementOffset(int);
+  sun.jvm.hotspot.oops.ArrayData(sun.jvm.hotspot.oops.DataLayout);
+  static int staticCellCount();
+  int arrayLen();
+  public int cellCount();
+  static int arrayLenOffset();
+  static int arrayStartOffset();
+}

@@ -1,0 +1,8 @@
+Compiled from "ExpressionList.java"
+public final class jdk.nashorn.internal.ir.ExpressionList extends jdk.nashorn.internal.ir.Expression {
+  public jdk.nashorn.internal.ir.ExpressionList(long, int, java.util.List<jdk.nashorn.internal.ir.Expression>);
+  public java.util.List<jdk.nashorn.internal.ir.Expression> getExpressions();
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public jdk.nashorn.internal.codegen.types.Type getType();
+  public void toString(java.lang.StringBuilder, boolean);
+}

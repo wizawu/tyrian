@@ -1,0 +1,14 @@
+Compiled from "Messages.java"
+public class com.sun.tools.doclint.Messages {
+  java.util.ResourceBundle bundle;
+  com.sun.tools.doclint.Env env;
+  com.sun.tools.doclint.Messages(com.sun.tools.doclint.Env);
+  void error(com.sun.tools.doclint.Messages$Group, com.sun.source.doctree.DocTree, java.lang.String, java.lang.Object...);
+  void warning(com.sun.tools.doclint.Messages$Group, com.sun.source.doctree.DocTree, java.lang.String, java.lang.Object...);
+  void setOptions(java.lang.String);
+  void setStatsEnabled(boolean);
+  void reportStats(java.io.PrintWriter);
+  protected void report(com.sun.tools.doclint.Messages$Group, javax.tools.Diagnostic$Kind, com.sun.source.doctree.DocTree, java.lang.String, java.lang.Object...);
+  protected void report(com.sun.tools.doclint.Messages$Group, javax.tools.Diagnostic$Kind, com.sun.source.tree.Tree, java.lang.String, java.lang.Object...);
+  java.lang.String localize(java.lang.String, java.lang.Object...);
+}

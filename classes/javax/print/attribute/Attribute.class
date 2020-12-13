@@ -1,0 +1,5 @@
+Compiled from "Attribute.java"
+public interface javax.print.attribute.Attribute extends java.io.Serializable {
+  public abstract java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public abstract java.lang.String getName();
+}

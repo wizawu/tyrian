@@ -1,0 +1,6 @@
+Compiled from "ExpressionExecuter.java"
+public class sun.tools.jstat.ExpressionExecuter implements sun.tools.jstat.ExpressionEvaluator {
+  sun.tools.jstat.ExpressionExecuter(sun.jvmstat.monitor.MonitoredVm);
+  public java.lang.Object evaluate(sun.tools.jstat.Expression);
+  static {};
+}

@@ -1,0 +1,14 @@
+Compiled from "Port.java"
+abstract class sun.nio.ch.Port extends sun.nio.ch.AsynchronousChannelGroupImpl {
+  protected final java.util.concurrent.locks.ReadWriteLock fdToChannelLock;
+  protected final java.util.Map<java.lang.Integer, sun.nio.ch.Port$PollableChannel> fdToChannel;
+  sun.nio.ch.Port(java.nio.channels.spi.AsynchronousChannelProvider, sun.nio.ch.ThreadPool);
+  final void register(int, sun.nio.ch.Port$PollableChannel);
+  protected void preUnregister(int);
+  final void unregister(int);
+  abstract void startPoll(int, int);
+  final boolean isEmpty();
+  final java.lang.Object attachForeignChannel(java.nio.channels.Channel, java.io.FileDescriptor);
+  final void detachForeignChannel(java.lang.Object);
+  final void closeAllChannels();
+}

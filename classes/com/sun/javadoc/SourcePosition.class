@@ -1,0 +1,7 @@
+Compiled from "SourcePosition.java"
+public interface com.sun.javadoc.SourcePosition {
+  public abstract java.io.File file();
+  public abstract int line();
+  public abstract int column();
+  public abstract java.lang.String toString();
+}

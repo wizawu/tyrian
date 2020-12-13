@@ -1,0 +1,5 @@
+Compiled from "SocketOption.java"
+public interface java.net.SocketOption<T> {
+  public abstract java.lang.String name();
+  public abstract java.lang.Class<T> type();
+}

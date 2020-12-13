@@ -1,0 +1,5 @@
+Compiled from "Sun.java"
+public final class sun.security.provider.Sun extends java.security.Provider {
+  public sun.security.provider.Sun();
+  void putEntries(java.util.Iterator<java.security.Provider$Service>);
+}

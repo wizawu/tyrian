@@ -1,0 +1,9 @@
+Compiled from "SyncProviderException.java"
+public class javax.sql.rowset.spi.SyncProviderException extends java.sql.SQLException {
+  static final long serialVersionUID;
+  public javax.sql.rowset.spi.SyncProviderException();
+  public javax.sql.rowset.spi.SyncProviderException(java.lang.String);
+  public javax.sql.rowset.spi.SyncProviderException(javax.sql.rowset.spi.SyncResolver);
+  public javax.sql.rowset.spi.SyncResolver getSyncResolver();
+  public void setSyncResolver(javax.sql.rowset.spi.SyncResolver);
+}

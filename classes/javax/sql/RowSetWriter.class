@@ -1,0 +1,4 @@
+Compiled from "RowSetWriter.java"
+public interface javax.sql.RowSetWriter {
+  public abstract boolean writeData(javax.sql.RowSetInternal) throws java.sql.SQLException;
+}

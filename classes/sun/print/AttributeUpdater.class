@@ -1,0 +1,4 @@
+Compiled from "AttributeUpdater.java"
+interface sun.print.AttributeUpdater {
+  public abstract javax.print.attribute.PrintServiceAttributeSet getUpdatedAttributes();
+}

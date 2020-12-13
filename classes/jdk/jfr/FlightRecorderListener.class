@@ -1,0 +1,5 @@
+Compiled from "FlightRecorderListener.java"
+public interface jdk.jfr.FlightRecorderListener {
+  public default void recorderInitialized(jdk.jfr.FlightRecorder);
+  public default void recordingStateChanged(jdk.jfr.Recording);
+}

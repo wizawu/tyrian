@@ -1,0 +1,4 @@
+Compiled from "PrivilegedAction.java"
+public interface java.security.PrivilegedAction<T> {
+  public abstract T run();
+}

@@ -1,0 +1,7 @@
+Compiled from "ECDHServerKeyExchange.java"
+final class sun.security.ssl.ECDHServerKeyExchange {
+  static final sun.security.ssl.SSLConsumer ecdheHandshakeConsumer;
+  static final sun.security.ssl.HandshakeProducer ecdheHandshakeProducer;
+  sun.security.ssl.ECDHServerKeyExchange();
+  static {};
+}

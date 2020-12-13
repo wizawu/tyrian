@@ -1,0 +1,15 @@
+Compiled from "HttpRequest.java"
+public abstract class java.net.http.HttpRequest {
+  protected java.net.http.HttpRequest();
+  public static java.net.http.HttpRequest$Builder newBuilder(java.net.URI);
+  public static java.net.http.HttpRequest$Builder newBuilder();
+  public abstract java.util.Optional<java.net.http.HttpRequest$BodyPublisher> bodyPublisher();
+  public abstract java.lang.String method();
+  public abstract java.util.Optional<java.time.Duration> timeout();
+  public abstract boolean expectContinue();
+  public abstract java.net.URI uri();
+  public abstract java.util.Optional<java.net.http.HttpClient$Version> version();
+  public abstract java.net.http.HttpHeaders headers();
+  public final boolean equals(java.lang.Object);
+  public final int hashCode();
+}

@@ -1,0 +1,4 @@
+Compiled from "VersionTree.java"
+public interface com.sun.source.doctree.VersionTree extends com.sun.source.doctree.BlockTagTree {
+  public abstract java.util.List<? extends com.sun.source.doctree.DocTree> getBody();
+}

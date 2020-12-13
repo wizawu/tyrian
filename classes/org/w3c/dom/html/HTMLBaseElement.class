@@ -1,0 +1,7 @@
+Compiled from "HTMLBaseElement.java"
+public interface org.w3c.dom.html.HTMLBaseElement extends org.w3c.dom.html.HTMLElement {
+  public abstract java.lang.String getHref();
+  public abstract void setHref(java.lang.String);
+  public abstract java.lang.String getTarget();
+  public abstract void setTarget(java.lang.String);
+}

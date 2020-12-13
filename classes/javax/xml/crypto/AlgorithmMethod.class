@@ -1,0 +1,5 @@
+Compiled from "AlgorithmMethod.java"
+public interface javax.xml.crypto.AlgorithmMethod {
+  public abstract java.lang.String getAlgorithm();
+  public abstract java.security.spec.AlgorithmParameterSpec getParameterSpec();
+}

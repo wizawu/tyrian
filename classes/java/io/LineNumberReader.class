@@ -1,0 +1,13 @@
+Compiled from "LineNumberReader.java"
+public class java.io.LineNumberReader extends java.io.BufferedReader {
+  public java.io.LineNumberReader(java.io.Reader);
+  public java.io.LineNumberReader(java.io.Reader, int);
+  public void setLineNumber(int);
+  public int getLineNumber();
+  public int read() throws java.io.IOException;
+  public int read(char[], int, int) throws java.io.IOException;
+  public java.lang.String readLine() throws java.io.IOException;
+  public long skip(long) throws java.io.IOException;
+  public void mark(int) throws java.io.IOException;
+  public void reset() throws java.io.IOException;
+}

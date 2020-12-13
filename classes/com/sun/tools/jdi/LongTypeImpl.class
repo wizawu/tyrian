@@ -1,0 +1,7 @@
+Compiled from "LongTypeImpl.java"
+public class com.sun.tools.jdi.LongTypeImpl extends com.sun.tools.jdi.PrimitiveTypeImpl implements com.sun.jdi.LongType {
+  com.sun.tools.jdi.LongTypeImpl(com.sun.jdi.VirtualMachine);
+  public java.lang.String signature();
+  com.sun.jdi.PrimitiveValue convert(com.sun.jdi.PrimitiveValue) throws com.sun.jdi.InvalidTypeException;
+  public java.lang.String toString();
+}

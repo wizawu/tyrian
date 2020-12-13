@@ -1,0 +1,6 @@
+Compiled from "JPEGStreamMetadataFormat.java"
+public class com.sun.imageio.plugins.jpeg.JPEGStreamMetadataFormat extends com.sun.imageio.plugins.jpeg.JPEGMetadataFormat {
+  public static synchronized javax.imageio.metadata.IIOMetadataFormat getInstance();
+  public boolean canNodeAppear(java.lang.String, javax.imageio.ImageTypeSpecifier);
+  static {};
+}

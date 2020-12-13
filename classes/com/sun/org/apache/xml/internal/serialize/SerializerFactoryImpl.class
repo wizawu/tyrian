@@ -1,0 +1,8 @@
+Compiled from "SerializerFactoryImpl.java"
+final class com.sun.org.apache.xml.internal.serialize.SerializerFactoryImpl extends com.sun.org.apache.xml.internal.serialize.SerializerFactory {
+  com.sun.org.apache.xml.internal.serialize.SerializerFactoryImpl(java.lang.String);
+  public com.sun.org.apache.xml.internal.serialize.Serializer makeSerializer(com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public com.sun.org.apache.xml.internal.serialize.Serializer makeSerializer(java.io.Writer, com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public com.sun.org.apache.xml.internal.serialize.Serializer makeSerializer(java.io.OutputStream, com.sun.org.apache.xml.internal.serialize.OutputFormat) throws java.io.UnsupportedEncodingException;
+  protected java.lang.String getSupportedMethod();
+}

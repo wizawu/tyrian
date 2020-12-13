@@ -1,0 +1,13 @@
+Compiled from "ChunkedOutputStream.java"
+class sun.net.httpserver.ChunkedOutputStream extends java.io.FilterOutputStream {
+  static final int CHUNK_SIZE;
+  static final int OFFSET;
+  sun.net.httpserver.ExchangeImpl t;
+  static final boolean $assertionsDisabled;
+  sun.net.httpserver.ChunkedOutputStream(sun.net.httpserver.ExchangeImpl, java.io.OutputStream);
+  public void write(int) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public void flush() throws java.io.IOException;
+  static {};
+}

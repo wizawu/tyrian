@@ -1,0 +1,23 @@
+Compiled from "PackageWriterImpl.java"
+public class jdk.javadoc.internal.doclets.formats.html.PackageWriterImpl extends jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter implements jdk.javadoc.internal.doclets.toolkit.PackageSummaryWriter {
+  protected javax.lang.model.element.PackageElement packageElement;
+  protected jdk.javadoc.internal.doclets.formats.html.markup.HtmlTree mainTree;
+  protected jdk.javadoc.internal.doclets.formats.html.markup.HtmlTree sectionTree;
+  public jdk.javadoc.internal.doclets.formats.html.PackageWriterImpl(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, javax.lang.model.element.PackageElement);
+  public jdk.javadoc.internal.doclets.toolkit.Content getPackageHeader(java.lang.String);
+  public jdk.javadoc.internal.doclets.toolkit.Content getContentHeader();
+  public void addDeprecationInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.toolkit.Content getSummaryHeader();
+  public void addInterfaceSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addClassSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addEnumSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addExceptionSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addErrorSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addAnnotationTypeSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addClassesSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, java.lang.String, java.lang.String, jdk.javadoc.internal.doclets.formats.html.markup.TableHeader, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addPackageDescription(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addPackageTags(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addPackageContent(jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addPackageFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void printDocument(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+}

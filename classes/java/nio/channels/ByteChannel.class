@@ -1,0 +1,3 @@
+Compiled from "ByteChannel.java"
+public interface java.nio.channels.ByteChannel extends java.nio.channels.ReadableByteChannel,java.nio.channels.WritableByteChannel {
+}

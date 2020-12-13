@@ -1,0 +1,28 @@
+Compiled from "ZoneInfo.java"
+public class sun.util.calendar.ZoneInfo extends java.util.TimeZone {
+  public sun.util.calendar.ZoneInfo();
+  public sun.util.calendar.ZoneInfo(java.lang.String, int);
+  sun.util.calendar.ZoneInfo(java.lang.String, int, int, int, long[], int[], int[], boolean);
+  public int getOffset(long);
+  public int getOffsets(long, int[]);
+  public int getOffsetsByStandard(long, int[]);
+  public int getOffsetsByWall(long, int[]);
+  public int getOffset(int, int, int, int, int, int);
+  public synchronized void setRawOffset(int);
+  public int getRawOffset();
+  public boolean isDirty();
+  public boolean useDaylightTime();
+  public boolean observesDaylightTime();
+  public boolean inDaylightTime(java.util.Date);
+  public int getDSTSavings();
+  public java.lang.String toString();
+  public static java.lang.String[] getAvailableIDs();
+  public static java.lang.String[] getAvailableIDs(int);
+  public static java.util.TimeZone getTimeZone(java.lang.String);
+  public java.util.SimpleTimeZone getLastRuleInstance();
+  public java.lang.Object clone();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public boolean hasSameRules(java.util.TimeZone);
+  public static java.util.Map<java.lang.String, java.lang.String> getAliasTable();
+}

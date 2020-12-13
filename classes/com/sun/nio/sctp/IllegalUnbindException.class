@@ -1,0 +1,5 @@
+Compiled from "IllegalUnbindException.java"
+public class com.sun.nio.sctp.IllegalUnbindException extends java.lang.IllegalStateException {
+  public com.sun.nio.sctp.IllegalUnbindException();
+  public com.sun.nio.sctp.IllegalUnbindException(java.lang.String);
+}

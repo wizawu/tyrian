@@ -1,0 +1,10 @@
+Compiled from "URLEncoder.java"
+public class java.net.URLEncoder {
+  static java.util.BitSet dontNeedEncoding;
+  static final int caseDiff;
+  static java.lang.String dfltEncName;
+  public static java.lang.String encode(java.lang.String);
+  public static java.lang.String encode(java.lang.String, java.lang.String) throws java.io.UnsupportedEncodingException;
+  public static java.lang.String encode(java.lang.String, java.nio.charset.Charset);
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "ExternalEditor.java"
+final class jdk.nashorn.tools.jjs.ExternalEditor {
+  jdk.nashorn.tools.jjs.ExternalEditor(java.util.function.Consumer<java.lang.String>, java.util.function.Consumer<java.lang.String>, jdk.nashorn.tools.jjs.Console);
+  static void edit(java.lang.String, java.util.function.Consumer<java.lang.String>, java.lang.String, java.util.function.Consumer<java.lang.String>, jdk.nashorn.tools.jjs.Console);
+}

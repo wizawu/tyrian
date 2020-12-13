@@ -1,0 +1,19 @@
+Compiled from "FloatMath.java"
+public final class sun.java2d.marlin.FloatMath implements sun.java2d.marlin.MarlinConst {
+  static final boolean CHECK_OVERFLOW;
+  static final boolean CHECK_NAN;
+  public static final int FLOAT_SIGNIFICAND_WIDTH;
+  public static final int FLOAT_EXP_BIAS;
+  public static final int FLOAT_EXP_BIT_MASK;
+  public static final int FLOAT_SIGNIF_BIT_MASK;
+  static final boolean $assertionsDisabled;
+  static int max(int, int);
+  static int min(int, int);
+  public static float ceil_f(float);
+  public static float floor_f(float);
+  public static int ceil_int(float);
+  public static int ceil_int(double);
+  public static int floor_int(float);
+  public static int floor_int(double);
+  static {};
+}

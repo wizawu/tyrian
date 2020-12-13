@@ -1,0 +1,10 @@
+Compiled from "SwingUtilities3.java"
+public class com.sun.java.swing.SwingUtilities3 {
+  static final boolean $assertionsDisabled;
+  public com.sun.java.swing.SwingUtilities3();
+  public static void setDelegateRepaintManager(javax.swing.JComponent, javax.swing.RepaintManager);
+  public static void setVsyncRequested(java.awt.Container, boolean);
+  public static boolean isVsyncRequested(java.awt.Container);
+  public static javax.swing.RepaintManager getDelegateRepaintManager(java.awt.Component);
+  static {};
+}

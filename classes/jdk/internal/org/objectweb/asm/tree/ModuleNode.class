@@ -1,0 +1,24 @@
+Compiled from "ModuleNode.java"
+public class jdk.internal.org.objectweb.asm.tree.ModuleNode extends jdk.internal.org.objectweb.asm.ModuleVisitor {
+  public java.lang.String name;
+  public int access;
+  public java.lang.String version;
+  public java.lang.String mainClass;
+  public java.util.List<java.lang.String> packages;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.ModuleRequireNode> requires;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.ModuleExportNode> exports;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.ModuleOpenNode> opens;
+  public java.util.List<java.lang.String> uses;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.ModuleProvideNode> provides;
+  public jdk.internal.org.objectweb.asm.tree.ModuleNode(java.lang.String, int, java.lang.String);
+  public jdk.internal.org.objectweb.asm.tree.ModuleNode(int, java.lang.String, int, java.lang.String, java.util.List<jdk.internal.org.objectweb.asm.tree.ModuleRequireNode>, java.util.List<jdk.internal.org.objectweb.asm.tree.ModuleExportNode>, java.util.List<jdk.internal.org.objectweb.asm.tree.ModuleOpenNode>, java.util.List<java.lang.String>, java.util.List<jdk.internal.org.objectweb.asm.tree.ModuleProvideNode>);
+  public void visitMainClass(java.lang.String);
+  public void visitPackage(java.lang.String);
+  public void visitRequire(java.lang.String, int, java.lang.String);
+  public void visitExport(java.lang.String, int, java.lang.String...);
+  public void visitOpen(java.lang.String, int, java.lang.String...);
+  public void visitUse(java.lang.String);
+  public void visitProvide(java.lang.String, java.lang.String...);
+  public void visitEnd();
+  public void accept(jdk.internal.org.objectweb.asm.ClassVisitor);
+}

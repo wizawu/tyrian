@@ -1,0 +1,17 @@
+Compiled from "ShortHandPointer.java"
+final class com.sun.org.apache.xerces.internal.xpointer.ShortHandPointer implements com.sun.org.apache.xerces.internal.xpointer.XPointerPart {
+  int fMatchingChildCount;
+  public com.sun.org.apache.xerces.internal.xpointer.ShortHandPointer();
+  public com.sun.org.apache.xerces.internal.xpointer.ShortHandPointer(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public void parseXPointer(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public boolean resolveXPointer(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations, int) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public java.lang.String getDTDDeterminedID(com.sun.org.apache.xerces.internal.xni.XMLAttributes, int) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public java.lang.String getSchemaDeterminedID(com.sun.org.apache.xerces.internal.xni.XMLAttributes, int) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public java.lang.String getChildrenSchemaDeterminedID(com.sun.org.apache.xerces.internal.xni.XMLAttributes, int) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public boolean isFragmentResolved();
+  public boolean isChildFragmentResolved();
+  public java.lang.String getSchemeName();
+  public java.lang.String getSchemeData();
+  public void setSchemeName(java.lang.String);
+  public void setSchemeData(java.lang.String);
+}

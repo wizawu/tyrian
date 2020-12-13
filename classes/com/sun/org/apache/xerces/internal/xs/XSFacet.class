@@ -1,0 +1,10 @@
+Compiled from "XSFacet.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSFacet extends com.sun.org.apache.xerces.internal.xs.XSObject {
+  public abstract short getFacetKind();
+  public abstract java.lang.String getLexicalFacetValue();
+  public abstract int getIntFacetValue();
+  public abstract java.lang.Object getActualFacetValue();
+  public abstract boolean getFixed();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSAnnotation getAnnotation();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+}

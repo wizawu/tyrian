@@ -1,0 +1,21 @@
+Compiled from "DefaultHandler.java"
+public class jdk.internal.org.xml.sax.helpers.DefaultHandler implements jdk.internal.org.xml.sax.EntityResolver,jdk.internal.org.xml.sax.DTDHandler,jdk.internal.org.xml.sax.ContentHandler,jdk.internal.org.xml.sax.ErrorHandler {
+  public jdk.internal.org.xml.sax.helpers.DefaultHandler();
+  public jdk.internal.org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String) throws java.io.IOException, jdk.internal.org.xml.sax.SAXException;
+  public void notationDecl(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public void unparsedEntityDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public void setDocumentLocator(jdk.internal.org.xml.sax.Locator);
+  public void startDocument() throws jdk.internal.org.xml.sax.SAXException;
+  public void endDocument() throws jdk.internal.org.xml.sax.SAXException;
+  public void startPrefixMapping(java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public void endPrefixMapping(java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, jdk.internal.org.xml.sax.Attributes) throws jdk.internal.org.xml.sax.SAXException;
+  public void endElement(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public void characters(char[], int, int) throws jdk.internal.org.xml.sax.SAXException;
+  public void ignorableWhitespace(char[], int, int) throws jdk.internal.org.xml.sax.SAXException;
+  public void processingInstruction(java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public void skippedEntity(java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public void warning(jdk.internal.org.xml.sax.SAXParseException) throws jdk.internal.org.xml.sax.SAXException;
+  public void error(jdk.internal.org.xml.sax.SAXParseException) throws jdk.internal.org.xml.sax.SAXException;
+  public void fatalError(jdk.internal.org.xml.sax.SAXParseException) throws jdk.internal.org.xml.sax.SAXException;
+}

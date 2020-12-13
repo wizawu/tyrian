@@ -1,0 +1,25 @@
+Compiled from "Crossings.java"
+public abstract class sun.awt.geom.Crossings {
+  public static final boolean debug;
+  int limit;
+  double[] yranges;
+  double xlo;
+  double ylo;
+  double xhi;
+  double yhi;
+  public sun.awt.geom.Crossings(double, double, double, double);
+  public final double getXLo();
+  public final double getYLo();
+  public final double getXHi();
+  public final double getYHi();
+  public abstract void record(double, double, int);
+  public void print();
+  public final boolean isEmpty();
+  public abstract boolean covers(double, double);
+  public static sun.awt.geom.Crossings findCrossings(java.util.Vector<? extends sun.awt.geom.Curve>, double, double, double, double);
+  public static sun.awt.geom.Crossings findCrossings(java.awt.geom.PathIterator, double, double, double, double);
+  public boolean accumulateLine(double, double, double, double);
+  public boolean accumulateLine(double, double, double, double, int);
+  public boolean accumulateQuad(double, double, double[]);
+  public boolean accumulateCubic(double, double, double[]);
+}

@@ -1,0 +1,8 @@
+Compiled from "XmlSupport.java"
+class java.util.prefs.XmlSupport {
+  java.util.prefs.XmlSupport();
+  static void export(java.io.OutputStream, java.util.prefs.Preferences, boolean) throws java.io.IOException, java.util.prefs.BackingStoreException;
+  static void importPreferences(java.io.InputStream) throws java.io.IOException, java.util.prefs.InvalidPreferencesFormatException;
+  static void exportMap(java.io.OutputStream, java.util.Map<java.lang.String, java.lang.String>) throws java.io.IOException;
+  static void importMap(java.io.InputStream, java.util.Map<java.lang.String, java.lang.String>) throws java.io.IOException, java.util.prefs.InvalidPreferencesFormatException;
+}

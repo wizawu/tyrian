@@ -1,0 +1,5 @@
+Compiled from "AssignUnsignedShiftRightExpression.java"
+public class sun.tools.tree.AssignUnsignedShiftRightExpression extends sun.tools.tree.AssignOpExpression {
+  public sun.tools.tree.AssignUnsignedShiftRightExpression(long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  void codeOperation(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+}

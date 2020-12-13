@@ -1,0 +1,11 @@
+Compiled from "Chromaticity.java"
+public final class javax.print.attribute.standard.Chromaticity extends javax.print.attribute.EnumSyntax implements javax.print.attribute.DocAttribute,javax.print.attribute.PrintRequestAttribute,javax.print.attribute.PrintJobAttribute {
+  public static final javax.print.attribute.standard.Chromaticity MONOCHROME;
+  public static final javax.print.attribute.standard.Chromaticity COLOR;
+  protected javax.print.attribute.standard.Chromaticity(int);
+  protected java.lang.String[] getStringTable();
+  protected javax.print.attribute.EnumSyntax[] getEnumValueTable();
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  static {};
+}

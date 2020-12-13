@@ -1,0 +1,4 @@
+Compiled from "SunPrinterJobService.java"
+public interface sun.print.SunPrinterJobService {
+  public abstract boolean usesClass(java.lang.Class<?>);
+}

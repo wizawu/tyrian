@@ -1,0 +1,7 @@
+Compiled from "BasicNarrowOopField.java"
+public class sun.jvm.hotspot.types.basic.BasicNarrowOopField extends sun.jvm.hotspot.types.basic.BasicOopField implements sun.jvm.hotspot.types.NarrowOopField {
+  public sun.jvm.hotspot.types.basic.BasicNarrowOopField(sun.jvm.hotspot.types.OopField);
+  public sun.jvm.hotspot.types.basic.BasicNarrowOopField(sun.jvm.hotspot.types.basic.BasicTypeDataBase, sun.jvm.hotspot.types.Type, java.lang.String, sun.jvm.hotspot.types.Type, boolean, long, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.OopHandle getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+  public sun.jvm.hotspot.debugger.OopHandle getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+}

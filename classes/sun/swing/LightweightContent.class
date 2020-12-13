@@ -1,0 +1,21 @@
+Compiled from "LightweightContent.java"
+public interface sun.swing.LightweightContent {
+  public abstract javax.swing.JComponent getComponent();
+  public abstract void paintLock();
+  public abstract void paintUnlock();
+  public default void imageBufferReset(int[], int, int, int, int, int, int);
+  public default void imageBufferReset(int[], int, int, int, int, int, double, double);
+  public default void imageBufferReset(int[], int, int, int, int, int);
+  public abstract void imageReshaped(int, int, int, int);
+  public abstract void imageUpdated(int, int, int, int);
+  public abstract void focusGrabbed();
+  public abstract void focusUngrabbed();
+  public abstract void preferredSizeChanged(int, int);
+  public abstract void maximumSizeChanged(int, int);
+  public abstract void minimumSizeChanged(int, int);
+  public default void setCursor(java.awt.Cursor);
+  public default <T extends java.awt.dnd.DragGestureRecognizer> T createDragGestureRecognizer(java.lang.Class<T>, java.awt.dnd.DragSource, java.awt.Component, int, java.awt.dnd.DragGestureListener);
+  public default java.awt.dnd.peer.DragSourceContextPeer createDragSourceContextPeer(java.awt.dnd.DragGestureEvent) throws java.awt.dnd.InvalidDnDOperationException;
+  public default void addDropTarget(java.awt.dnd.DropTarget);
+  public default void removeDropTarget(java.awt.dnd.DropTarget);
+}

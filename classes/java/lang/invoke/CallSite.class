@@ -1,0 +1,19 @@
+Compiled from "CallSite.java"
+public abstract class java.lang.invoke.CallSite {
+  java.lang.invoke.MethodHandle target;
+  static final boolean $assertionsDisabled;
+  java.lang.invoke.CallSite(java.lang.invoke.MethodType);
+  java.lang.invoke.CallSite(java.lang.invoke.MethodHandle);
+  java.lang.invoke.CallSite(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle) throws java.lang.Throwable;
+  public java.lang.invoke.MethodType type();
+  public abstract java.lang.invoke.MethodHandle getTarget();
+  public abstract void setTarget(java.lang.invoke.MethodHandle);
+  void checkTargetChange(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
+  public abstract java.lang.invoke.MethodHandle dynamicInvoker();
+  java.lang.invoke.MethodHandle makeDynamicInvoker();
+  void setTargetNormal(java.lang.invoke.MethodHandle);
+  java.lang.invoke.MethodHandle getTargetVolatile();
+  void setTargetVolatile(java.lang.invoke.MethodHandle);
+  static java.lang.invoke.CallSite makeSite(java.lang.invoke.MethodHandle, java.lang.String, java.lang.invoke.MethodType, java.lang.Object, java.lang.Class<?>);
+  static {};
+}

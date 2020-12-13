@@ -1,0 +1,3 @@
+Compiled from "CopyOption.java"
+public interface java.nio.file.CopyOption {
+}

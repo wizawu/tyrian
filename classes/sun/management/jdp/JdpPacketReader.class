@@ -1,0 +1,6 @@
+Compiled from "JdpPacketReader.java"
+public final class sun.management.jdp.JdpPacketReader {
+  public sun.management.jdp.JdpPacketReader(byte[]) throws sun.management.jdp.JdpException;
+  public java.lang.String getEntry() throws java.io.EOFException, sun.management.jdp.JdpException;
+  public java.util.Map<java.lang.String, java.lang.String> getDiscoveryDataAsMap() throws sun.management.jdp.JdpException;
+}

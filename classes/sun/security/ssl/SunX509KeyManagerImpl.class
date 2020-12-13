@@ -1,0 +1,13 @@
+Compiled from "SunX509KeyManagerImpl.java"
+final class sun.security.ssl.SunX509KeyManagerImpl extends javax.net.ssl.X509ExtendedKeyManager {
+  sun.security.ssl.SunX509KeyManagerImpl(java.security.KeyStore, char[]) throws java.security.KeyStoreException, java.security.NoSuchAlgorithmException, java.security.UnrecoverableKeyException;
+  public java.security.cert.X509Certificate[] getCertificateChain(java.lang.String);
+  public java.security.PrivateKey getPrivateKey(java.lang.String);
+  public java.lang.String chooseClientAlias(java.lang.String[], java.security.Principal[], java.net.Socket);
+  public java.lang.String chooseEngineClientAlias(java.lang.String[], java.security.Principal[], javax.net.ssl.SSLEngine);
+  public java.lang.String chooseServerAlias(java.lang.String, java.security.Principal[], java.net.Socket);
+  public java.lang.String chooseEngineServerAlias(java.lang.String, java.security.Principal[], javax.net.ssl.SSLEngine);
+  public java.lang.String[] getClientAliases(java.lang.String, java.security.Principal[]);
+  public java.lang.String[] getServerAliases(java.lang.String, java.security.Principal[]);
+  static {};
+}

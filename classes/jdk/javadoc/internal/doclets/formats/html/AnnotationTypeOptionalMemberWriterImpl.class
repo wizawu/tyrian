@@ -1,0 +1,12 @@
+Compiled from "AnnotationTypeOptionalMemberWriterImpl.java"
+public class jdk.javadoc.internal.doclets.formats.html.AnnotationTypeOptionalMemberWriterImpl extends jdk.javadoc.internal.doclets.formats.html.AnnotationTypeRequiredMemberWriterImpl implements jdk.javadoc.internal.doclets.toolkit.AnnotationTypeOptionalMemberWriter,jdk.javadoc.internal.doclets.toolkit.MemberSummaryWriter {
+  public jdk.javadoc.internal.doclets.formats.html.AnnotationTypeOptionalMemberWriterImpl(jdk.javadoc.internal.doclets.formats.html.SubWriterHolderWriter, javax.lang.model.element.TypeElement);
+  public jdk.javadoc.internal.doclets.toolkit.Content getMemberSummaryHeader(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addMemberTree(jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addDefaultValueInfo(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addSummaryLabel(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected java.lang.String getTableSummary();
+  protected jdk.javadoc.internal.doclets.toolkit.Content getCaption();
+  public jdk.javadoc.internal.doclets.formats.html.markup.TableHeader getSummaryTableHeader(javax.lang.model.element.Element);
+  public void addSummaryAnchor(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+}

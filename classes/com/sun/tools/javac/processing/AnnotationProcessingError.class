@@ -1,0 +1,5 @@
+Compiled from "AnnotationProcessingError.java"
+public class com.sun.tools.javac.processing.AnnotationProcessingError extends java.lang.Error {
+  static final long serialVersionUID;
+  com.sun.tools.javac.processing.AnnotationProcessingError(java.lang.Throwable);
+}

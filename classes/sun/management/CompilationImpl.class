@@ -1,0 +1,8 @@
+Compiled from "CompilationImpl.java"
+class sun.management.CompilationImpl implements java.lang.management.CompilationMXBean {
+  sun.management.CompilationImpl(sun.management.VMManagement);
+  public java.lang.String getName();
+  public boolean isCompilationTimeMonitoringSupported();
+  public long getTotalCompilationTime();
+  public javax.management.ObjectName getObjectName();
+}

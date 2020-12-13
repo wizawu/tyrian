@@ -1,0 +1,11 @@
+Compiled from "Lexer.java"
+public interface com.sun.tools.javac.parser.Lexer {
+  public abstract void nextToken();
+  public abstract com.sun.tools.javac.parser.Tokens$Token token();
+  public abstract com.sun.tools.javac.parser.Tokens$Token token(int);
+  public abstract com.sun.tools.javac.parser.Tokens$Token prevToken();
+  public abstract com.sun.tools.javac.parser.Tokens$Token split();
+  public abstract int errPos();
+  public abstract void errPos(int);
+  public abstract com.sun.tools.javac.util.Position$LineMap getLineMap();
+}

@@ -1,0 +1,10 @@
+Compiled from "RC2ParameterSpec.java"
+public class javax.crypto.spec.RC2ParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public javax.crypto.spec.RC2ParameterSpec(int);
+  public javax.crypto.spec.RC2ParameterSpec(int, byte[]);
+  public javax.crypto.spec.RC2ParameterSpec(int, byte[], int);
+  public int getEffectiveKeyBits();
+  public byte[] getIV();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

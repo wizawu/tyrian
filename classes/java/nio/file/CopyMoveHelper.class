@@ -1,0 +1,5 @@
+Compiled from "CopyMoveHelper.java"
+class java.nio.file.CopyMoveHelper {
+  static void copyToForeignTarget(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption...) throws java.io.IOException;
+  static void moveToForeignTarget(java.nio.file.Path, java.nio.file.Path, java.nio.file.CopyOption...) throws java.io.IOException;
+}

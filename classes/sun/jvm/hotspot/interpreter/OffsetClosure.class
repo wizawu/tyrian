@@ -1,0 +1,4 @@
+Compiled from "OffsetClosure.java"
+public interface sun.jvm.hotspot.interpreter.OffsetClosure {
+  public abstract void offsetDo(int);
+}

@@ -1,0 +1,38 @@
+Compiled from "DOMParserImpl.java"
+public class com.sun.org.apache.xerces.internal.parsers.DOMParserImpl extends com.sun.org.apache.xerces.internal.parsers.AbstractDOMParser implements org.w3c.dom.ls.LSParser,org.w3c.dom.DOMConfiguration {
+  protected static final java.lang.String NAMESPACES;
+  protected static final java.lang.String VALIDATION_FEATURE;
+  protected static final java.lang.String XMLSCHEMA;
+  protected static final java.lang.String XMLSCHEMA_FULL_CHECKING;
+  protected static final java.lang.String DYNAMIC_VALIDATION;
+  protected static final java.lang.String NORMALIZE_DATA;
+  protected static final java.lang.String DISALLOW_DOCTYPE_DECL_FEATURE;
+  protected static final java.lang.String NAMESPACE_GROWTH;
+  protected static final java.lang.String TOLERATE_DUPLICATES;
+  protected static final java.lang.String SYMBOL_TABLE;
+  protected static final java.lang.String PSVI_AUGMENT;
+  protected boolean fNamespaceDeclarations;
+  protected java.lang.String fSchemaType;
+  protected boolean fBusy;
+  protected static final boolean DEBUG;
+  public com.sun.org.apache.xerces.internal.parsers.DOMParserImpl(com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration, java.lang.String);
+  public com.sun.org.apache.xerces.internal.parsers.DOMParserImpl(com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration);
+  public com.sun.org.apache.xerces.internal.parsers.DOMParserImpl(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public com.sun.org.apache.xerces.internal.parsers.DOMParserImpl(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
+  public void reset();
+  public org.w3c.dom.DOMConfiguration getDomConfig();
+  public org.w3c.dom.ls.LSParserFilter getFilter();
+  public void setFilter(org.w3c.dom.ls.LSParserFilter);
+  public void setParameter(java.lang.String, java.lang.Object) throws org.w3c.dom.DOMException;
+  public java.lang.Object getParameter(java.lang.String) throws org.w3c.dom.DOMException;
+  public boolean canSetParameter(java.lang.String, java.lang.Object);
+  public org.w3c.dom.DOMStringList getParameterNames();
+  public org.w3c.dom.Document parseURI(java.lang.String) throws org.w3c.dom.ls.LSException;
+  public org.w3c.dom.Document parse(org.w3c.dom.ls.LSInput) throws org.w3c.dom.ls.LSException;
+  public org.w3c.dom.Node parseWithContext(org.w3c.dom.ls.LSInput, org.w3c.dom.Node, short) throws org.w3c.dom.DOMException, org.w3c.dom.ls.LSException;
+  com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource dom2xmlInputSource(org.w3c.dom.ls.LSInput);
+  public boolean getAsync();
+  public boolean getBusy();
+  public void abort();
+  public void startElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations);
+}

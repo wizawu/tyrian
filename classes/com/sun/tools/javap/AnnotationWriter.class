@@ -1,0 +1,14 @@
+Compiled from "AnnotationWriter.java"
+public class com.sun.tools.javap.AnnotationWriter extends com.sun.tools.javap.BasicWriter {
+  com.sun.tools.javap.AnnotationWriter$element_value_Writer ev_writer;
+  static com.sun.tools.javap.AnnotationWriter instance(com.sun.tools.javap.Context);
+  protected com.sun.tools.javap.AnnotationWriter(com.sun.tools.javap.Context);
+  public void write(com.sun.tools.classfile.Annotation);
+  public void write(com.sun.tools.classfile.Annotation, boolean);
+  public void write(com.sun.tools.classfile.TypeAnnotation);
+  public void write(com.sun.tools.classfile.TypeAnnotation, boolean, boolean);
+  public void write(com.sun.tools.classfile.TypeAnnotation$Position, boolean);
+  public void write(com.sun.tools.classfile.Annotation$element_value_pair, boolean);
+  public void write(com.sun.tools.classfile.Annotation$element_value);
+  public void write(com.sun.tools.classfile.Annotation$element_value, boolean);
+}

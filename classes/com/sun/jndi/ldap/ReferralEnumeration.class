@@ -1,0 +1,4 @@
+Compiled from "ReferralEnumeration.java"
+interface com.sun.jndi.ldap.ReferralEnumeration<T> extends javax.naming.NamingEnumeration<T> {
+  public abstract void appendUnprocessedReferrals(com.sun.jndi.ldap.LdapReferralException);
+}

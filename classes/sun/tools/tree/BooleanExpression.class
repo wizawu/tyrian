@@ -1,0 +1,13 @@
+Compiled from "BooleanExpression.java"
+public class sun.tools.tree.BooleanExpression extends sun.tools.tree.ConstantExpression {
+  boolean value;
+  public sun.tools.tree.BooleanExpression(long, boolean);
+  public java.lang.Object getValue();
+  public boolean equals(boolean);
+  public boolean equalsDefault();
+  public void checkCondition(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>, sun.tools.tree.ConditionVars);
+  void codeBranch(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler, sun.tools.asm.Label, boolean);
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public void print(java.io.PrintStream);
+  public boolean isConstant();
+}

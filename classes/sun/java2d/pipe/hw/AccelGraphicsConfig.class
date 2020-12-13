@@ -1,0 +1,5 @@
+Compiled from "AccelGraphicsConfig.java"
+public interface sun.java2d.pipe.hw.AccelGraphicsConfig extends sun.java2d.pipe.hw.BufferedContextProvider {
+  public abstract java.awt.image.VolatileImage createCompatibleVolatileImage(int, int, int, int);
+  public abstract sun.java2d.pipe.hw.ContextCapabilities getContextCapabilities();
+}

@@ -1,0 +1,45 @@
+Compiled from "NodeSequence.java"
+public class com.sun.org.apache.xpath.internal.axes.NodeSequence extends com.sun.org.apache.xpath.internal.objects.XObject implements com.sun.org.apache.xml.internal.dtm.DTMIterator,java.lang.Cloneable,com.sun.org.apache.xpath.internal.axes.PathComponent {
+  static final long serialVersionUID;
+  protected int m_last;
+  protected int m_next;
+  protected com.sun.org.apache.xml.internal.dtm.DTMIterator m_iter;
+  protected com.sun.org.apache.xml.internal.dtm.DTMManager m_dtmMgr;
+  protected com.sun.org.apache.xml.internal.utils.NodeVector getVector();
+  protected void SetVector(com.sun.org.apache.xml.internal.utils.NodeVector);
+  public boolean hasCache();
+  public final void setIter(com.sun.org.apache.xml.internal.dtm.DTMIterator);
+  public final com.sun.org.apache.xml.internal.dtm.DTMIterator getContainedIter();
+  public com.sun.org.apache.xpath.internal.axes.NodeSequence(java.lang.Object);
+  public com.sun.org.apache.xpath.internal.axes.NodeSequence();
+  public com.sun.org.apache.xml.internal.dtm.DTM getDTM(int);
+  public com.sun.org.apache.xml.internal.dtm.DTMManager getDTMManager();
+  public int getRoot();
+  public void setRoot(int, java.lang.Object);
+  public void reset();
+  public int getWhatToShow();
+  public boolean getExpandEntityReferences();
+  public int nextNode();
+  public int previousNode();
+  public void detach();
+  public void allowDetachToRelease(boolean);
+  public int getCurrentNode();
+  public boolean isFresh();
+  public void setShouldCacheNodes(boolean);
+  public boolean isMutable();
+  public int getCurrentPos();
+  public void runTo(int);
+  public void setCurrentPos(int);
+  public int item(int);
+  public void setItem(int, int);
+  public int getLength();
+  public com.sun.org.apache.xml.internal.dtm.DTMIterator cloneWithReset() throws java.lang.CloneNotSupportedException;
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public boolean isDocOrdered();
+  public int getAxis();
+  public int getAnalysisBits();
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  protected int addNodeInDocOrder(int);
+  protected void setObject(java.lang.Object);
+  protected com.sun.org.apache.xpath.internal.axes.NodeSequence$IteratorCache getIteratorCache();
+}

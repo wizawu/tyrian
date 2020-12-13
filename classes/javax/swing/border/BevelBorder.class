@@ -1,0 +1,27 @@
+Compiled from "BevelBorder.java"
+public class javax.swing.border.BevelBorder extends javax.swing.border.AbstractBorder {
+  public static final int RAISED;
+  public static final int LOWERED;
+  protected int bevelType;
+  protected java.awt.Color highlightOuter;
+  protected java.awt.Color highlightInner;
+  protected java.awt.Color shadowInner;
+  protected java.awt.Color shadowOuter;
+  public javax.swing.border.BevelBorder(int);
+  public javax.swing.border.BevelBorder(int, java.awt.Color, java.awt.Color);
+  public javax.swing.border.BevelBorder(int, java.awt.Color, java.awt.Color, java.awt.Color, java.awt.Color);
+  public void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
+  public java.awt.Insets getBorderInsets(java.awt.Component, java.awt.Insets);
+  public java.awt.Color getHighlightOuterColor(java.awt.Component);
+  public java.awt.Color getHighlightInnerColor(java.awt.Component);
+  public java.awt.Color getShadowInnerColor(java.awt.Component);
+  public java.awt.Color getShadowOuterColor(java.awt.Component);
+  public java.awt.Color getHighlightOuterColor();
+  public java.awt.Color getHighlightInnerColor();
+  public java.awt.Color getShadowInnerColor();
+  public java.awt.Color getShadowOuterColor();
+  public int getBevelType();
+  public boolean isBorderOpaque();
+  protected void paintRaisedBevel(java.awt.Component, java.awt.Graphics, int, int, int, int);
+  protected void paintLoweredBevel(java.awt.Component, java.awt.Graphics, int, int, int, int);
+}

@@ -1,0 +1,11 @@
+Compiled from "SessionManager.java"
+final class sun.security.pkcs11.SessionManager {
+  sun.security.pkcs11.SessionManager(sun.security.pkcs11.Token);
+  boolean lowMaxSessions();
+  sun.security.pkcs11.Session getObjSession() throws sun.security.pkcs11.wrapper.PKCS11Exception;
+  sun.security.pkcs11.Session getOpSession() throws sun.security.pkcs11.wrapper.PKCS11Exception;
+  sun.security.pkcs11.Session killSession(sun.security.pkcs11.Session);
+  sun.security.pkcs11.Session releaseSession(sun.security.pkcs11.Session);
+  void demoteObjSession(sun.security.pkcs11.Session);
+  static {};
+}

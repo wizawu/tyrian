@@ -1,0 +1,9 @@
+Compiled from "ComponentInputMap.java"
+public class javax.swing.ComponentInputMap extends javax.swing.InputMap {
+  public javax.swing.ComponentInputMap(javax.swing.JComponent);
+  public void setParent(javax.swing.InputMap);
+  public javax.swing.JComponent getComponent();
+  public void put(javax.swing.KeyStroke, java.lang.Object);
+  public void remove(javax.swing.KeyStroke);
+  public void clear();
+}

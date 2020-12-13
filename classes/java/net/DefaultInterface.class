@@ -1,0 +1,5 @@
+Compiled from "DefaultInterface.java"
+class java.net.DefaultInterface {
+  java.net.DefaultInterface();
+  static java.net.NetworkInterface getDefault();
+}

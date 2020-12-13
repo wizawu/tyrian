@@ -1,0 +1,16 @@
+Compiled from "G1CollectedHeap.java"
+public class sun.jvm.hotspot.gc.g1.G1CollectedHeap extends sun.jvm.hotspot.gc.shared.CollectedHeap {
+  public long capacity();
+  public long used();
+  public long n_regions();
+  public sun.jvm.hotspot.gc.g1.HeapRegionManager hrm();
+  public sun.jvm.hotspot.gc.g1.G1MonitoringSupport g1mm();
+  public sun.jvm.hotspot.gc.g1.HeapRegionSetBase oldSet();
+  public sun.jvm.hotspot.gc.g1.HeapRegionSetBase humongousSet();
+  public void heapRegionIterate(sun.jvm.hotspot.gc.shared.SpaceClosure);
+  public sun.jvm.hotspot.gc.shared.CollectedHeapName kind();
+  public void printOn(java.io.PrintStream);
+  public void printRegionDetails(java.io.PrintStream);
+  public sun.jvm.hotspot.gc.g1.G1CollectedHeap(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

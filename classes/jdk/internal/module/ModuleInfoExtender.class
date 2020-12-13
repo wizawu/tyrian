@@ -1,0 +1,12 @@
+Compiled from "ModuleInfoExtender.java"
+public final class jdk.internal.module.ModuleInfoExtender {
+  public jdk.internal.module.ModuleInfoExtender packages(java.util.Set<java.lang.String>);
+  public jdk.internal.module.ModuleInfoExtender version(java.lang.module.ModuleDescriptor$Version);
+  public jdk.internal.module.ModuleInfoExtender mainClass(java.lang.String);
+  public jdk.internal.module.ModuleInfoExtender targetPlatform(java.lang.String);
+  public jdk.internal.module.ModuleInfoExtender hashes(jdk.internal.module.ModuleHashes);
+  public jdk.internal.module.ModuleInfoExtender moduleResolution(jdk.internal.module.ModuleResolution);
+  public void write(java.io.OutputStream) throws java.io.IOException;
+  public byte[] toByteArray() throws java.io.IOException;
+  public static jdk.internal.module.ModuleInfoExtender newExtender(java.io.InputStream);
+}

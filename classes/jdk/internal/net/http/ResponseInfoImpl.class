@@ -1,0 +1,8 @@
+Compiled from "ResponseInfoImpl.java"
+class jdk.internal.net.http.ResponseInfoImpl implements java.net.http.HttpResponse$ResponseInfo {
+  jdk.internal.net.http.ResponseInfoImpl(jdk.internal.net.http.Response);
+  jdk.internal.net.http.ResponseInfoImpl(int, java.net.http.HttpHeaders, java.net.http.HttpClient$Version);
+  public int statusCode();
+  public java.net.http.HttpHeaders headers();
+  public java.net.http.HttpClient$Version version();
+}

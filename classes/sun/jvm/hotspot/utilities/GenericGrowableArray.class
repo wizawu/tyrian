@@ -1,0 +1,7 @@
+Compiled from "GenericGrowableArray.java"
+public class sun.jvm.hotspot.utilities.GenericGrowableArray extends sun.jvm.hotspot.runtime.VMObject {
+  public int max();
+  public int length();
+  public sun.jvm.hotspot.utilities.GenericGrowableArray(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

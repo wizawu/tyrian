@@ -1,0 +1,41 @@
+Compiled from "Address.java"
+public interface sun.jvm.hotspot.debugger.Address {
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public abstract long getCIntegerAt(long, long, boolean) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract sun.jvm.hotspot.debugger.Address getAddressAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract sun.jvm.hotspot.debugger.Address getCompOopAddressAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract sun.jvm.hotspot.debugger.Address getCompKlassAddressAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract boolean getJBooleanAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract byte getJByteAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract char getJCharAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract double getJDoubleAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract float getJFloatAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract int getJIntAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract long getJLongAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract short getJShortAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract sun.jvm.hotspot.debugger.OopHandle getOopHandleAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.debugger.NotInHeapException;
+  public abstract sun.jvm.hotspot.debugger.OopHandle getCompOopHandleAt(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.debugger.NotInHeapException;
+  public abstract void setCIntegerAt(long, long, long);
+  public abstract void setAddressAt(long, sun.jvm.hotspot.debugger.Address);
+  public abstract void setJBooleanAt(long, boolean) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract void setJByteAt(long, byte) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract void setJCharAt(long, char) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract void setJDoubleAt(long, double) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract void setJFloatAt(long, float) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract void setJIntAt(long, int) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract void setJLongAt(long, long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract void setJShortAt(long, short) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract void setOopHandleAt(long, sun.jvm.hotspot.debugger.OopHandle) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public abstract sun.jvm.hotspot.debugger.Address addOffsetTo(long) throws java.lang.UnsupportedOperationException;
+  public abstract sun.jvm.hotspot.debugger.OopHandle addOffsetToAsOopHandle(long) throws java.lang.UnsupportedOperationException;
+  public abstract long minus(sun.jvm.hotspot.debugger.Address);
+  public abstract boolean lessThan(sun.jvm.hotspot.debugger.Address);
+  public abstract boolean lessThanOrEqual(sun.jvm.hotspot.debugger.Address);
+  public abstract boolean greaterThan(sun.jvm.hotspot.debugger.Address);
+  public abstract boolean greaterThanOrEqual(sun.jvm.hotspot.debugger.Address);
+  public abstract sun.jvm.hotspot.debugger.Address andWithMask(long) throws java.lang.UnsupportedOperationException;
+  public abstract sun.jvm.hotspot.debugger.Address orWithMask(long) throws java.lang.UnsupportedOperationException;
+  public abstract sun.jvm.hotspot.debugger.Address xorWithMask(long) throws java.lang.UnsupportedOperationException;
+  public abstract long asLongValue();
+}

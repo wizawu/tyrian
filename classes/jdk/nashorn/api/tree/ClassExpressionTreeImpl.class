@@ -1,0 +1,10 @@
+Compiled from "ClassExpressionTreeImpl.java"
+final class jdk.nashorn.api.tree.ClassExpressionTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.ClassExpressionTree {
+  jdk.nashorn.api.tree.ClassExpressionTreeImpl(jdk.nashorn.internal.ir.ClassNode, jdk.nashorn.api.tree.IdentifierTree, jdk.nashorn.api.tree.ExpressionTree, jdk.nashorn.api.tree.PropertyTree, java.util.List<? extends jdk.nashorn.api.tree.PropertyTree>);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public jdk.nashorn.api.tree.IdentifierTree getName();
+  public jdk.nashorn.api.tree.ExpressionTree getClassHeritage();
+  public jdk.nashorn.api.tree.PropertyTree getConstructor();
+  public java.util.List<? extends jdk.nashorn.api.tree.PropertyTree> getClassElements();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

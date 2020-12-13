@@ -1,0 +1,4 @@
+Compiled from "UnsolicitedNotificationListener.java"
+public interface javax.naming.ldap.UnsolicitedNotificationListener extends javax.naming.event.NamingListener {
+  public abstract void notificationReceived(javax.naming.ldap.UnsolicitedNotificationEvent);
+}

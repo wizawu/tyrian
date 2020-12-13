@@ -1,0 +1,18 @@
+Compiled from "DigestBase.java"
+abstract class sun.security.provider.DigestBase extends java.security.MessageDigestSpi implements java.lang.Cloneable {
+  byte[] buffer;
+  long bytesProcessed;
+  static final byte[] padding;
+  sun.security.provider.DigestBase(java.lang.String, int, int);
+  protected final int engineGetDigestLength();
+  protected final void engineUpdate(byte);
+  protected final void engineUpdate(byte[], int, int);
+  protected final void engineReset();
+  protected final byte[] engineDigest();
+  protected final int engineDigest(byte[], int, int) throws java.security.DigestException;
+  abstract void implCompress(byte[], int);
+  abstract void implDigest(byte[], int);
+  abstract void implReset();
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  static {};
+}

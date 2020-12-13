@@ -1,0 +1,36 @@
+Compiled from "DerOutputStream.java"
+public class sun.security.util.DerOutputStream extends java.io.ByteArrayOutputStream implements sun.security.util.DerEncoder {
+  public sun.security.util.DerOutputStream(int);
+  public sun.security.util.DerOutputStream();
+  public void write(byte, byte[]) throws java.io.IOException;
+  public void write(byte, sun.security.util.DerOutputStream) throws java.io.IOException;
+  public void writeImplicit(byte, sun.security.util.DerOutputStream) throws java.io.IOException;
+  public void putDerValue(sun.security.util.DerValue) throws java.io.IOException;
+  public void putBoolean(boolean) throws java.io.IOException;
+  public void putEnumerated(int) throws java.io.IOException;
+  public void putInteger(java.math.BigInteger) throws java.io.IOException;
+  public void putInteger(java.lang.Integer) throws java.io.IOException;
+  public void putInteger(int) throws java.io.IOException;
+  public void putBitString(byte[]) throws java.io.IOException;
+  public void putUnalignedBitString(sun.security.util.BitArray) throws java.io.IOException;
+  public void putTruncatedUnalignedBitString(sun.security.util.BitArray) throws java.io.IOException;
+  public void putOctetString(byte[]) throws java.io.IOException;
+  public void putNull() throws java.io.IOException;
+  public void putOID(sun.security.util.ObjectIdentifier) throws java.io.IOException;
+  public void putSequence(sun.security.util.DerValue[]) throws java.io.IOException;
+  public void putSet(sun.security.util.DerValue[]) throws java.io.IOException;
+  public void putOrderedSetOf(byte, sun.security.util.DerEncoder[]) throws java.io.IOException;
+  public void putOrderedSet(byte, sun.security.util.DerEncoder[]) throws java.io.IOException;
+  public void putUTF8String(java.lang.String) throws java.io.IOException;
+  public void putPrintableString(java.lang.String) throws java.io.IOException;
+  public void putT61String(java.lang.String) throws java.io.IOException;
+  public void putIA5String(java.lang.String) throws java.io.IOException;
+  public void putBMPString(java.lang.String) throws java.io.IOException;
+  public void putGeneralString(java.lang.String) throws java.io.IOException;
+  public void putUTCTime(java.util.Date) throws java.io.IOException;
+  public void putGeneralizedTime(java.util.Date) throws java.io.IOException;
+  public void putLength(int) throws java.io.IOException;
+  public void putTag(byte, boolean, byte);
+  public void derEncode(java.io.OutputStream) throws java.io.IOException;
+  static {};
+}

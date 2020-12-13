@@ -1,0 +1,4 @@
+Compiled from "FormatterClosedException.java"
+public class java.util.FormatterClosedException extends java.lang.IllegalStateException {
+  public java.util.FormatterClosedException();
+}

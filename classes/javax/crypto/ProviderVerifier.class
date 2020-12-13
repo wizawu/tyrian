@@ -1,0 +1,9 @@
+Compiled from "ProviderVerifier.java"
+final class javax.crypto.ProviderVerifier {
+  javax.crypto.ProviderVerifier(java.net.URL, boolean);
+  javax.crypto.ProviderVerifier(java.net.URL, java.security.Provider, boolean);
+  void verify() throws java.io.IOException;
+  static void verifyPolicySigned(java.security.cert.Certificate[]) throws java.lang.Exception;
+  static boolean isTrustedCryptoProvider(java.security.Provider);
+  javax.crypto.CryptoPermissions getPermissions();
+}

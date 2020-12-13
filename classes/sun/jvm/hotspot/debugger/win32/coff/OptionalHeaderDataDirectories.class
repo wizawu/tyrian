@@ -1,0 +1,20 @@
+Compiled from "OptionalHeaderDataDirectories.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderDataDirectories {
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getExportTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.ExportDirectoryTable getExportDirectoryTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getImportTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getResourceTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getExceptionTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getCertificateTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getBaseRelocationTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getDebug() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugDirectory getDebugDirectory() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getArchitecture() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getGlobalPtr() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getTLSTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getLoadConfigTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getBoundImportTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getImportAddressTable() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getDelayImportDescriptor() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DataDirectory getCOMPlusRuntimeHeader() throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
+}

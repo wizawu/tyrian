@@ -1,0 +1,15 @@
+Compiled from "ModuleSummaryWriter.java"
+public interface jdk.javadoc.internal.doclets.toolkit.ModuleSummaryWriter {
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getModuleHeader(java.lang.String);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getContentHeader();
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getSummaryHeader();
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getSummaryTree(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addModuleDescription(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addModuleTags(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addModulesSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addPackagesSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addServicesSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addModuleContent(jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addModuleFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void printDocument(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+}

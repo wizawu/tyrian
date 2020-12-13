@@ -1,0 +1,5 @@
+Compiled from "UndoableEditEvent.java"
+public class javax.swing.event.UndoableEditEvent extends java.util.EventObject {
+  public javax.swing.event.UndoableEditEvent(java.lang.Object, javax.swing.undo.UndoableEdit);
+  public javax.swing.undo.UndoableEdit getEdit();
+}

@@ -1,0 +1,3 @@
+Compiled from "ExtendedSAX.java"
+public interface com.sun.org.apache.xalan.internal.xsltc.dom.ExtendedSAX extends org.xml.sax.ContentHandler,org.xml.sax.ext.LexicalHandler,org.xml.sax.DTDHandler,org.xml.sax.ext.DeclHandler {
+}

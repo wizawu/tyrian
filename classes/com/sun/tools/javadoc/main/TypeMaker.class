@@ -1,0 +1,13 @@
+Compiled from "TypeMaker.java"
+public class com.sun.tools.javadoc.main.TypeMaker {
+  public com.sun.tools.javadoc.main.TypeMaker();
+  public static com.sun.javadoc.Type getType(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type);
+  public static com.sun.javadoc.Type getType(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type, boolean);
+  public static com.sun.javadoc.Type getType(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type, boolean, boolean);
+  public static com.sun.javadoc.Type[] getTypes(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>);
+  public static com.sun.javadoc.Type[] getTypes(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, com.sun.javadoc.Type[]);
+  public static java.lang.String getTypeName(com.sun.tools.javac.code.Type, boolean);
+  static java.lang.String getTypeString(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type, boolean);
+  static java.lang.String typeParametersString(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol, boolean);
+  static java.lang.String typeArgumentsString(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type$ClassType, boolean);
+}

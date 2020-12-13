@@ -1,0 +1,3 @@
+Compiled from "AccessWatchpointEvent.java"
+public interface com.sun.jdi.event.AccessWatchpointEvent extends com.sun.jdi.event.WatchpointEvent {
+}

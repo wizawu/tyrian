@@ -1,0 +1,22 @@
+Compiled from "LinkInfo.java"
+public abstract class jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo {
+  public javax.lang.model.element.TypeElement typeElement;
+  public javax.lang.model.element.ExecutableElement executableElement;
+  public javax.lang.model.type.TypeMirror type;
+  public boolean isVarArg;
+  public boolean isTypeBound;
+  public boolean isJava5DeclarationLocation;
+  public jdk.javadoc.internal.doclets.toolkit.Content label;
+  public boolean isStrong;
+  public boolean includeTypeInClassLinkLabel;
+  public boolean includeTypeAsSepLink;
+  public boolean excludeTypeBounds;
+  public boolean excludeTypeParameterLinks;
+  public boolean excludeTypeBoundsLinks;
+  public boolean linkToSelf;
+  public jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo();
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content newContent();
+  public abstract boolean isLinkable();
+  public jdk.javadoc.internal.doclets.toolkit.Content getClassLinkLabel(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public java.lang.String toString();
+}

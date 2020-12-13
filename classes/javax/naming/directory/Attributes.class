@@ -1,0 +1,12 @@
+Compiled from "Attributes.java"
+public interface javax.naming.directory.Attributes extends java.lang.Cloneable,java.io.Serializable {
+  public abstract boolean isCaseIgnored();
+  public abstract int size();
+  public abstract javax.naming.directory.Attribute get(java.lang.String);
+  public abstract javax.naming.NamingEnumeration<? extends javax.naming.directory.Attribute> getAll();
+  public abstract javax.naming.NamingEnumeration<java.lang.String> getIDs();
+  public abstract javax.naming.directory.Attribute put(java.lang.String, java.lang.Object);
+  public abstract javax.naming.directory.Attribute put(javax.naming.directory.Attribute);
+  public abstract javax.naming.directory.Attribute remove(java.lang.String);
+  public abstract java.lang.Object clone();
+}

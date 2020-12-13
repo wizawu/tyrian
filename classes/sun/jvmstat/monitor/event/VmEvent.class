@@ -1,0 +1,5 @@
+Compiled from "VmEvent.java"
+public class sun.jvmstat.monitor.event.VmEvent extends java.util.EventObject {
+  public sun.jvmstat.monitor.event.VmEvent(sun.jvmstat.monitor.MonitoredVm);
+  public sun.jvmstat.monitor.MonitoredVm getMonitoredVm();
+}

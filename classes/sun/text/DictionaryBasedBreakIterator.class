@@ -1,0 +1,12 @@
+Compiled from "DictionaryBasedBreakIterator.java"
+public class sun.text.DictionaryBasedBreakIterator extends sun.text.RuleBasedBreakIterator {
+  public sun.text.DictionaryBasedBreakIterator(java.lang.String, byte[], java.lang.String, byte[]);
+  public void setText(java.text.CharacterIterator);
+  public int first();
+  public int last();
+  public int previous();
+  public int preceding(int);
+  public int following(int);
+  protected int handleNext();
+  protected int lookupCategory(int);
+}

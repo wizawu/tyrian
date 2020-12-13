@@ -1,0 +1,3 @@
+Compiled from "JIInstrumentationMethod.java"
+interface jdk.jfr.internal.instrument.JIInstrumentationMethod extends java.lang.annotation.Annotation {
+}

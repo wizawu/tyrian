@@ -1,0 +1,6 @@
+Compiled from "BeanContextServiceProvider.java"
+public interface java.beans.beancontext.BeanContextServiceProvider {
+  public abstract java.lang.Object getService(java.beans.beancontext.BeanContextServices, java.lang.Object, java.lang.Class<?>, java.lang.Object);
+  public abstract void releaseService(java.beans.beancontext.BeanContextServices, java.lang.Object, java.lang.Object);
+  public abstract java.util.Iterator<?> getCurrentServiceSelectors(java.beans.beancontext.BeanContextServices, java.lang.Class<?>);
+}

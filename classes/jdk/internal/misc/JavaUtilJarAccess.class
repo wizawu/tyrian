@@ -1,0 +1,13 @@
+Compiled from "JavaUtilJarAccess.java"
+public interface jdk.internal.misc.JavaUtilJarAccess {
+  public abstract boolean jarFileHasClassPathAttribute(java.util.jar.JarFile) throws java.io.IOException;
+  public abstract java.security.CodeSource[] getCodeSources(java.util.jar.JarFile, java.net.URL);
+  public abstract java.security.CodeSource getCodeSource(java.util.jar.JarFile, java.net.URL, java.lang.String);
+  public abstract java.util.Enumeration<java.lang.String> entryNames(java.util.jar.JarFile, java.security.CodeSource[]);
+  public abstract java.util.Enumeration<java.util.jar.JarEntry> entries2(java.util.jar.JarFile);
+  public abstract void setEagerValidation(java.util.jar.JarFile, boolean);
+  public abstract java.util.List<java.lang.Object> getManifestDigests(java.util.jar.JarFile);
+  public abstract java.util.jar.Attributes getTrustedAttributes(java.util.jar.Manifest, java.lang.String);
+  public abstract void ensureInitialization(java.util.jar.JarFile);
+  public abstract boolean isInitializing();
+}

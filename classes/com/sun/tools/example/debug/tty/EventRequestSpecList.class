@@ -1,0 +1,14 @@
+Compiled from "EventRequestSpecList.java"
+class com.sun.tools.example.debug.tty.EventRequestSpecList {
+  com.sun.tools.example.debug.tty.EventRequestSpecList();
+  boolean resolve(com.sun.jdi.event.ClassPrepareEvent);
+  void resolveAll();
+  boolean addEagerlyResolve(com.sun.tools.example.debug.tty.EventRequestSpec);
+  com.sun.tools.example.debug.tty.BreakpointSpec createBreakpoint(java.lang.String, int) throws java.lang.ClassNotFoundException;
+  com.sun.tools.example.debug.tty.BreakpointSpec createBreakpoint(java.lang.String, java.lang.String, java.util.List<java.lang.String>) throws com.sun.tools.example.debug.tty.MalformedMemberNameException, java.lang.ClassNotFoundException;
+  com.sun.tools.example.debug.tty.EventRequestSpec createExceptionCatch(java.lang.String, boolean, boolean) throws java.lang.ClassNotFoundException;
+  com.sun.tools.example.debug.tty.WatchpointSpec createAccessWatchpoint(java.lang.String, java.lang.String) throws com.sun.tools.example.debug.tty.MalformedMemberNameException, java.lang.ClassNotFoundException;
+  com.sun.tools.example.debug.tty.WatchpointSpec createModificationWatchpoint(java.lang.String, java.lang.String) throws com.sun.tools.example.debug.tty.MalformedMemberNameException, java.lang.ClassNotFoundException;
+  boolean delete(com.sun.tools.example.debug.tty.EventRequestSpec);
+  java.util.List<com.sun.tools.example.debug.tty.EventRequestSpec> eventRequestSpecs();
+}

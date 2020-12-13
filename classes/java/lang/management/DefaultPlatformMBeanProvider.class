@@ -1,0 +1,5 @@
+Compiled from "DefaultPlatformMBeanProvider.java"
+class java.lang.management.DefaultPlatformMBeanProvider extends sun.management.spi.PlatformMBeanProvider {
+  java.lang.management.DefaultPlatformMBeanProvider();
+  public java.util.List<sun.management.spi.PlatformMBeanProvider$PlatformComponent<?>> getPlatformComponentList();
+}

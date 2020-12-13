@@ -1,0 +1,17 @@
+Compiled from "DesCbcMd5EType.java"
+public final class sun.security.krb5.internal.crypto.DesCbcMd5EType extends sun.security.krb5.internal.crypto.DesCbcEType {
+  public sun.security.krb5.internal.crypto.DesCbcMd5EType();
+  public int eType();
+  public int minimumPadSize();
+  public int confounderSize();
+  public int checksumType();
+  public int checksumSize();
+  protected byte[] calculateChecksum(byte[], int) throws sun.security.krb5.KrbCryptoException;
+  public byte[] decrypt(byte[], byte[], byte[], int) throws sun.security.krb5.internal.KrbApErrException, sun.security.krb5.KrbCryptoException;
+  public byte[] decrypt(byte[], byte[], int) throws sun.security.krb5.internal.KrbApErrException, sun.security.krb5.KrbCryptoException;
+  public byte[] encrypt(byte[], byte[], byte[], int) throws sun.security.krb5.KrbCryptoException;
+  public byte[] encrypt(byte[], byte[], int) throws sun.security.krb5.KrbCryptoException;
+  public int keySize();
+  public int keyType();
+  public int blockSize();
+}

@@ -1,0 +1,7 @@
+Compiled from "MotifDesktopPaneUI.java"
+public class com.sun.java.swing.plaf.motif.MotifDesktopPaneUI extends javax.swing.plaf.basic.BasicDesktopPaneUI {
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public com.sun.java.swing.plaf.motif.MotifDesktopPaneUI();
+  protected void installDesktopManager();
+  public java.awt.Insets getInsets(javax.swing.JComponent);
+}

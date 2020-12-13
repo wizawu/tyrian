@@ -1,0 +1,12 @@
+Compiled from "LinuxUserDefinedFileAttributeView.java"
+class sun.nio.fs.LinuxUserDefinedFileAttributeView extends sun.nio.fs.AbstractUserDefinedFileAttributeView {
+  static final boolean $assertionsDisabled;
+  sun.nio.fs.LinuxUserDefinedFileAttributeView(sun.nio.fs.UnixPath, boolean);
+  public java.util.List<java.lang.String> list() throws java.io.IOException;
+  public int size(java.lang.String) throws java.io.IOException;
+  public int read(java.lang.String, java.nio.ByteBuffer) throws java.io.IOException;
+  public int write(java.lang.String, java.nio.ByteBuffer) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  static void copyExtendedAttributes(int, int);
+  static {};
+}

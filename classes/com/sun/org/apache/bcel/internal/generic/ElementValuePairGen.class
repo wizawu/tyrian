@@ -1,0 +1,12 @@
+Compiled from "ElementValuePairGen.java"
+public class com.sun.org.apache.bcel.internal.generic.ElementValuePairGen {
+  public com.sun.org.apache.bcel.internal.generic.ElementValuePairGen(com.sun.org.apache.bcel.internal.classfile.ElementValuePair, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, boolean);
+  public com.sun.org.apache.bcel.internal.classfile.ElementValuePair getElementNameValuePair();
+  protected com.sun.org.apache.bcel.internal.generic.ElementValuePairGen(int, com.sun.org.apache.bcel.internal.generic.ElementValueGen, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.ElementValuePairGen(java.lang.String, com.sun.org.apache.bcel.internal.generic.ElementValueGen, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  protected void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public int getNameIndex();
+  public final java.lang.String getNameString();
+  public final com.sun.org.apache.bcel.internal.generic.ElementValueGen getValue();
+  public java.lang.String toString();
+}

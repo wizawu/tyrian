@@ -1,0 +1,7 @@
+Compiled from "PackageFrameWriter.java"
+public class jdk.javadoc.internal.doclets.formats.html.PackageFrameWriter extends jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter {
+  public jdk.javadoc.internal.doclets.formats.html.PackageFrameWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, javax.lang.model.element.PackageElement);
+  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, javax.lang.model.element.PackageElement) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void addClassListing(jdk.javadoc.internal.doclets.formats.html.markup.HtmlTree);
+  protected void addClassKindListing(java.lang.Iterable<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.formats.html.markup.HtmlTree);
+}

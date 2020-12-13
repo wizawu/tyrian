@@ -1,0 +1,14 @@
+Compiled from "DTMStringPool.java"
+public class com.sun.org.apache.xml.internal.dtm.ref.DTMStringPool {
+  java.util.List<java.lang.String> m_intToString;
+  static final int HASHPRIME;
+  int[] m_hashStart;
+  com.sun.org.apache.xml.internal.utils.IntVector m_hashChain;
+  public static final int NULL;
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMStringPool(int);
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMStringPool();
+  public void removeAllElements();
+  public java.lang.String indexToString(int) throws java.lang.IndexOutOfBoundsException;
+  public int stringToIndex(java.lang.String);
+  public static void _main(java.lang.String[]);
+}

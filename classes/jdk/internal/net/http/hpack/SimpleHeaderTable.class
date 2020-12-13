@@ -1,0 +1,20 @@
+Compiled from "SimpleHeaderTable.java"
+class jdk.internal.net.http.hpack.SimpleHeaderTable {
+  protected static final java.util.List<jdk.internal.net.http.hpack.SimpleHeaderTable$HeaderField> staticTable;
+  protected static final int STATIC_TABLE_LENGTH;
+  protected static final int ENTRY_SIZE;
+  public jdk.internal.net.http.hpack.SimpleHeaderTable(int, jdk.internal.net.http.hpack.HPACK$Logger);
+  public int size();
+  public int maxSize();
+  public int length();
+  jdk.internal.net.http.hpack.SimpleHeaderTable$HeaderField get(int);
+  void put(java.lang.CharSequence, java.lang.CharSequence);
+  void setMaxSize(int);
+  jdk.internal.net.http.hpack.SimpleHeaderTable$HeaderField evictEntry();
+  public java.lang.String toString();
+  int sizeOf(jdk.internal.net.http.hpack.SimpleHeaderTable$HeaderField);
+  java.lang.String getStateString();
+  protected void add(jdk.internal.net.http.hpack.SimpleHeaderTable$HeaderField);
+  protected jdk.internal.net.http.hpack.SimpleHeaderTable$HeaderField remove();
+  static {};
+}

@@ -1,0 +1,8 @@
+Compiled from "XMLCharacterRecognizer.java"
+public class com.sun.org.apache.xml.internal.utils.XMLCharacterRecognizer {
+  public com.sun.org.apache.xml.internal.utils.XMLCharacterRecognizer();
+  public static boolean isWhiteSpace(char);
+  public static boolean isWhiteSpace(char[], int, int);
+  public static boolean isWhiteSpace(java.lang.StringBuffer);
+  public static boolean isWhiteSpace(java.lang.String);
+}

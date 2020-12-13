@@ -1,0 +1,8 @@
+Compiled from "PrintPattern.java"
+class java.util.regex.PrintPattern {
+  static java.util.HashMap<java.util.regex.Pattern$CharPredicate, java.lang.String> pmap;
+  java.util.regex.PrintPattern();
+  static void walk(java.util.regex.Pattern$Node, int);
+  public static void main(java.lang.String[]);
+  static {};
+}

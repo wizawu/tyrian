@@ -1,0 +1,10 @@
+Compiled from "PStack.java"
+public class sun.jvm.hotspot.tools.PStack extends sun.jvm.hotspot.tools.Tool {
+  public sun.jvm.hotspot.tools.PStack(boolean, boolean);
+  public sun.jvm.hotspot.tools.PStack();
+  public sun.jvm.hotspot.tools.PStack(sun.jvm.hotspot.debugger.JVMDebugger);
+  public void run();
+  public void run(java.io.PrintStream);
+  public void run(java.io.PrintStream, sun.jvm.hotspot.debugger.Debugger);
+  public static void main(java.lang.String[]) throws java.lang.Exception;
+}

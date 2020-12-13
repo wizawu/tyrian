@@ -1,0 +1,13 @@
+Compiled from "ArrayIndex.java"
+public final class jdk.nashorn.internal.runtime.arrays.ArrayIndex {
+  static final boolean $assertionsDisabled;
+  public static int getArrayIndex(java.lang.Object);
+  public static int getArrayIndex(int);
+  public static int getArrayIndex(long);
+  public static int getArrayIndex(double);
+  public static int getArrayIndex(java.lang.String);
+  public static boolean isValidArrayIndex(int);
+  public static long toLongIndex(int);
+  public static java.lang.String toKey(int);
+  static {};
+}

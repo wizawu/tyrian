@@ -1,0 +1,5 @@
+Compiled from "UTF8.java"
+class jdk.internal.reflect.UTF8 {
+  jdk.internal.reflect.UTF8();
+  static byte[] encode(java.lang.String);
+}

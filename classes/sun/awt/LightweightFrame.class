@@ -1,0 +1,30 @@
+Compiled from "LightweightFrame.java"
+public abstract class sun.awt.LightweightFrame extends java.awt.Frame {
+  public sun.awt.LightweightFrame();
+  public final java.awt.Container getParent();
+  public java.awt.Graphics getGraphics();
+  public final boolean isResizable();
+  public final void setTitle(java.lang.String);
+  public final void setIconImage(java.awt.Image);
+  public final void setIconImages(java.util.List<? extends java.awt.Image>);
+  public final void setMenuBar(java.awt.MenuBar);
+  public final void setResizable(boolean);
+  public final void remove(java.awt.MenuComponent);
+  public final void toFront();
+  public final void toBack();
+  public void addNotify();
+  public void emulateActivation(boolean);
+  public abstract void grabFocus();
+  public abstract void ungrabFocus();
+  public abstract int getScaleFactor();
+  public abstract double getScaleFactorX();
+  public abstract double getScaleFactorY();
+  public abstract void notifyDisplayChanged(int);
+  public abstract void notifyDisplayChanged(double, double);
+  public java.awt.Rectangle getHostBounds();
+  public void setHostBounds(int, int, int, int);
+  public abstract <T extends java.awt.dnd.DragGestureRecognizer> T createDragGestureRecognizer(java.lang.Class<T>, java.awt.dnd.DragSource, java.awt.Component, int, java.awt.dnd.DragGestureListener);
+  public abstract java.awt.dnd.peer.DragSourceContextPeer createDragSourceContextPeer(java.awt.dnd.DragGestureEvent) throws java.awt.dnd.InvalidDnDOperationException;
+  public abstract void addDropTarget(java.awt.dnd.DropTarget);
+  public abstract void removeDropTarget(java.awt.dnd.DropTarget);
+}

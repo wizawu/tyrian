@@ -1,0 +1,11 @@
+Compiled from "AdaptableX509CertSelector.java"
+class sun.security.provider.certpath.AdaptableX509CertSelector extends java.security.cert.X509CertSelector {
+  sun.security.provider.certpath.AdaptableX509CertSelector();
+  void setValidityPeriod(java.util.Date, java.util.Date);
+  public void setSubjectKeyIdentifier(byte[]);
+  public void setSerialNumber(java.math.BigInteger);
+  void setSkiAndSerialNumber(sun.security.x509.AuthorityKeyIdentifierExtension) throws java.io.IOException;
+  public boolean match(java.security.cert.Certificate);
+  public java.lang.Object clone();
+  static {};
+}

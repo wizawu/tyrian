@@ -1,0 +1,8 @@
+Compiled from "KrbDataInputStream.java"
+public class sun.security.krb5.internal.util.KrbDataInputStream extends java.io.BufferedInputStream {
+  public void setNativeByteOrder();
+  public sun.security.krb5.internal.util.KrbDataInputStream(java.io.InputStream);
+  public final int readLength4() throws java.io.IOException;
+  public int read(int) throws java.io.IOException;
+  public int readVersion() throws java.io.IOException;
+}

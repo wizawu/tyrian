@@ -1,0 +1,5 @@
+Compiled from "AccountNotFoundException.java"
+public class javax.security.auth.login.AccountNotFoundException extends javax.security.auth.login.AccountException {
+  public javax.security.auth.login.AccountNotFoundException();
+  public javax.security.auth.login.AccountNotFoundException(java.lang.String);
+}

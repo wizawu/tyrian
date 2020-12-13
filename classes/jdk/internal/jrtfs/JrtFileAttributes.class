@@ -1,0 +1,16 @@
+Compiled from "JrtFileAttributes.java"
+final class jdk.internal.jrtfs.JrtFileAttributes implements java.nio.file.attribute.BasicFileAttributes {
+  jdk.internal.jrtfs.JrtFileAttributes(jdk.internal.jimage.ImageReader$Node);
+  public java.nio.file.attribute.FileTime creationTime();
+  public boolean isDirectory();
+  public boolean isOther();
+  public boolean isRegularFile();
+  public java.nio.file.attribute.FileTime lastAccessTime();
+  public java.nio.file.attribute.FileTime lastModifiedTime();
+  public long size();
+  public boolean isSymbolicLink();
+  public java.lang.Object fileKey();
+  public long compressedSize();
+  public java.lang.String extension();
+  public final java.lang.String toString();
+}

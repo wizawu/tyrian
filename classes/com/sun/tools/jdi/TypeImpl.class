@@ -1,0 +1,9 @@
+Compiled from "TypeImpl.java"
+public abstract class com.sun.tools.jdi.TypeImpl extends com.sun.tools.jdi.MirrorImpl implements com.sun.jdi.Type {
+  com.sun.tools.jdi.TypeImpl(com.sun.jdi.VirtualMachine);
+  public abstract java.lang.String signature();
+  public java.lang.String name();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public com.sun.jdi.VirtualMachine virtualMachine();
+}

@@ -1,0 +1,6 @@
+Compiled from "SSLSessionBindingEvent.java"
+public class javax.net.ssl.SSLSessionBindingEvent extends java.util.EventObject {
+  public javax.net.ssl.SSLSessionBindingEvent(javax.net.ssl.SSLSession, java.lang.String);
+  public java.lang.String getName();
+  public javax.net.ssl.SSLSession getSession();
+}

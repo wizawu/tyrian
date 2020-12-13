@@ -1,0 +1,13 @@
+Compiled from "CleanerImpl.java"
+public final class jdk.internal.ref.CleanerImpl implements java.lang.Runnable {
+  final jdk.internal.ref.PhantomCleanable<?> phantomCleanableList;
+  final jdk.internal.ref.WeakCleanable<?> weakCleanableList;
+  final jdk.internal.ref.SoftCleanable<?> softCleanableList;
+  final java.lang.ref.ReferenceQueue<java.lang.Object> queue;
+  public static void setCleanerImplAccess(java.util.function.Function<java.lang.ref.Cleaner, jdk.internal.ref.CleanerImpl>);
+  static jdk.internal.ref.CleanerImpl getCleanerImpl(java.lang.ref.Cleaner);
+  public jdk.internal.ref.CleanerImpl();
+  public void start(java.lang.ref.Cleaner, java.util.concurrent.ThreadFactory);
+  public void run();
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "JavaNetHttpCookieAccess.java"
+public interface jdk.internal.misc.JavaNetHttpCookieAccess {
+  public abstract java.util.List<java.net.HttpCookie> parse(java.lang.String);
+  public abstract java.lang.String header(java.net.HttpCookie);
+}

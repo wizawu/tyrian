@@ -1,0 +1,8 @@
+Compiled from "RMIGenerator.java"
+public class sun.rmi.rmic.RMIGenerator implements sun.rmi.rmic.RMIConstants,sun.rmi.rmic.Generator {
+  public sun.rmi.rmic.RMIGenerator();
+  public boolean parseArgs(java.lang.String[], sun.rmi.rmic.Main);
+  public void generate(sun.rmi.rmic.BatchEnvironment, sun.tools.java.ClassDefinition, java.io.File);
+  protected static java.io.File sourceFileForClass(sun.tools.java.Identifier, sun.tools.java.Identifier, java.io.File, sun.rmi.rmic.BatchEnvironment);
+  static {};
+}

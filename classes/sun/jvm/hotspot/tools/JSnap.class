@@ -1,0 +1,8 @@
+Compiled from "JSnap.java"
+public class sun.jvm.hotspot.tools.JSnap extends sun.jvm.hotspot.tools.Tool {
+  public sun.jvm.hotspot.tools.JSnap();
+  public sun.jvm.hotspot.tools.JSnap(sun.jvm.hotspot.debugger.JVMDebugger);
+  public void run();
+  protected void printFlagsUsage();
+  public static void main(java.lang.String[]);
+}

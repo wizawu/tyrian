@@ -1,0 +1,10 @@
+Compiled from "MetaKeywords.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.MetaKeywords {
+  public jdk.javadoc.internal.doclets.toolkit.util.MetaKeywords(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public java.util.List<java.lang.String> getMetaKeywords(javax.lang.model.element.TypeElement);
+  protected java.util.List<java.lang.String> getClassKeyword(javax.lang.model.element.TypeElement);
+  public java.util.List<java.lang.String> getMetaKeywords(javax.lang.model.element.PackageElement);
+  public java.util.List<java.lang.String> getMetaKeywordsForModule(javax.lang.model.element.ModuleElement);
+  public java.util.List<java.lang.String> getOverviewMetaKeywords(java.lang.String, java.lang.String);
+  protected java.util.List<java.lang.String> getMemberKeywords(java.util.List<? extends javax.lang.model.element.Element>);
+}

@@ -1,0 +1,10 @@
+Compiled from "IntegerPolynomial448.java"
+public class sun.security.util.math.intpoly.IntegerPolynomial448 extends sun.security.util.math.intpoly.IntegerPolynomial {
+  public static final java.math.BigInteger MODULUS;
+  public sun.security.util.math.intpoly.IntegerPolynomial448();
+  protected void finalCarryReduceLast(long[]);
+  protected void reduce(long[]);
+  protected void mult(long[], long[], long[]);
+  protected void square(long[], long[]);
+  static {};
+}

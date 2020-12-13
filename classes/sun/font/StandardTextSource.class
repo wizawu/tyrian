@@ -1,0 +1,17 @@
+Compiled from "StandardTextSource.java"
+final class sun.font.StandardTextSource extends sun.font.TextSource {
+  sun.font.StandardTextSource(char[], int, int, int, int, int, int, java.awt.Font, java.awt.font.FontRenderContext, sun.font.CoreMetrics);
+  public char[] getChars();
+  public int getStart();
+  public int getLength();
+  public int getContextStart();
+  public int getContextLength();
+  public int getLayoutFlags();
+  public int getBidiLevel();
+  public java.awt.Font getFont();
+  public java.awt.font.FontRenderContext getFRC();
+  public sun.font.CoreMetrics getCoreMetrics();
+  public sun.font.TextSource getSubSource(int, int, int);
+  public java.lang.String toString();
+  public java.lang.String toString(boolean);
+}

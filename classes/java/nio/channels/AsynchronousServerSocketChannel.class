@@ -1,0 +1,15 @@
+Compiled from "AsynchronousServerSocketChannel.java"
+public abstract class java.nio.channels.AsynchronousServerSocketChannel implements java.nio.channels.AsynchronousChannel,java.nio.channels.NetworkChannel {
+  protected java.nio.channels.AsynchronousServerSocketChannel(java.nio.channels.spi.AsynchronousChannelProvider);
+  public final java.nio.channels.spi.AsynchronousChannelProvider provider();
+  public static java.nio.channels.AsynchronousServerSocketChannel open(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException;
+  public static java.nio.channels.AsynchronousServerSocketChannel open() throws java.io.IOException;
+  public final java.nio.channels.AsynchronousServerSocketChannel bind(java.net.SocketAddress) throws java.io.IOException;
+  public abstract java.nio.channels.AsynchronousServerSocketChannel bind(java.net.SocketAddress, int) throws java.io.IOException;
+  public abstract <T> java.nio.channels.AsynchronousServerSocketChannel setOption(java.net.SocketOption<T>, T) throws java.io.IOException;
+  public abstract <A> void accept(A, java.nio.channels.CompletionHandler<java.nio.channels.AsynchronousSocketChannel, ? super A>);
+  public abstract java.util.concurrent.Future<java.nio.channels.AsynchronousSocketChannel> accept();
+  public abstract java.net.SocketAddress getLocalAddress() throws java.io.IOException;
+  public java.nio.channels.NetworkChannel setOption(java.net.SocketOption, java.lang.Object) throws java.io.IOException;
+  public java.nio.channels.NetworkChannel bind(java.net.SocketAddress) throws java.io.IOException;
+}

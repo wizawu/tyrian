@@ -1,0 +1,10 @@
+Compiled from "BitStatus.java"
+final class jdk.nashorn.internal.runtime.regexp.joni.BitStatus {
+  public static final int BIT_STATUS_BITS_NUM;
+  jdk.nashorn.internal.runtime.regexp.joni.BitStatus();
+  public static int bsClear();
+  public static int bsAll();
+  public static boolean bsAt(int, int);
+  public static int bsOnAt(int, int);
+  public static int bsOnOff(int, int, boolean);
+}

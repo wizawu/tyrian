@@ -1,0 +1,5 @@
+Compiled from "FSUB.java"
+public class com.sun.org.apache.bcel.internal.generic.FSUB extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
+  public com.sun.org.apache.bcel.internal.generic.FSUB();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

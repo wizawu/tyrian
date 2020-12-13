@@ -1,0 +1,10 @@
+Compiled from "PeerEvent.java"
+public class sun.awt.PeerEvent extends java.awt.event.InvocationEvent {
+  public static final long PRIORITY_EVENT;
+  public static final long ULTIMATE_PRIORITY_EVENT;
+  public static final long LOW_PRIORITY_EVENT;
+  public sun.awt.PeerEvent(java.lang.Object, java.lang.Runnable, long);
+  public sun.awt.PeerEvent(java.lang.Object, java.lang.Runnable, java.lang.Object, boolean, long);
+  public long getFlags();
+  public sun.awt.PeerEvent coalesceEvents(sun.awt.PeerEvent);
+}

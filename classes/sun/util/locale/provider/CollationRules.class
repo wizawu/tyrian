@@ -1,0 +1,4 @@
+Compiled from "CollationRules.java"
+final class sun.util.locale.provider.CollationRules {
+  static final java.lang.String DEFAULTRULES;
+}

@@ -1,0 +1,4 @@
+Compiled from "ScriptClass.java"
+public interface jdk.nashorn.internal.objects.annotations.ScriptClass extends java.lang.annotation.Annotation {
+  public abstract java.lang.String value();
+}

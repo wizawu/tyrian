@@ -1,0 +1,8 @@
+Compiled from "QuitStrategy.java"
+public final class java.awt.desktop.QuitStrategy extends java.lang.Enum<java.awt.desktop.QuitStrategy> {
+  public static final java.awt.desktop.QuitStrategy NORMAL_EXIT;
+  public static final java.awt.desktop.QuitStrategy CLOSE_ALL_WINDOWS;
+  public static java.awt.desktop.QuitStrategy[] values();
+  public static java.awt.desktop.QuitStrategy valueOf(java.lang.String);
+  static {};
+}

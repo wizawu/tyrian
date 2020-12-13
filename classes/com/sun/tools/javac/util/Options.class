@@ -1,0 +1,26 @@
+Compiled from "Options.java"
+public class com.sun.tools.javac.util.Options {
+  public static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.util.Options> optionsKey;
+  public static com.sun.tools.javac.util.Options instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.util.Options(com.sun.tools.javac.util.Context);
+  public java.lang.String get(java.lang.String);
+  public java.lang.String get(com.sun.tools.javac.main.Option);
+  public boolean getBoolean(java.lang.String);
+  public boolean getBoolean(java.lang.String, boolean);
+  public boolean isSet(java.lang.String);
+  public boolean isSet(com.sun.tools.javac.main.Option);
+  public boolean isSet(com.sun.tools.javac.main.Option, java.lang.String);
+  public boolean isLintSet(java.lang.String);
+  public boolean isUnset(java.lang.String);
+  public boolean isUnset(com.sun.tools.javac.main.Option);
+  public boolean isUnset(com.sun.tools.javac.main.Option, java.lang.String);
+  public void put(java.lang.String, java.lang.String);
+  public void put(com.sun.tools.javac.main.Option, java.lang.String);
+  public void putAll(com.sun.tools.javac.util.Options);
+  public void remove(java.lang.String);
+  public java.util.Set<java.lang.String> keySet();
+  public int size();
+  public void addListener(java.lang.Runnable);
+  public void notifyListeners();
+  static {};
+}

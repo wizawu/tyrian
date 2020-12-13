@@ -1,0 +1,14 @@
+Compiled from "PopupFactory.java"
+public class javax.swing.PopupFactory {
+  static final int LIGHT_WEIGHT_POPUP;
+  static final int MEDIUM_WEIGHT_POPUP;
+  static final int HEAVY_WEIGHT_POPUP;
+  public javax.swing.PopupFactory();
+  public static void setSharedInstance(javax.swing.PopupFactory);
+  public static javax.swing.PopupFactory getSharedInstance();
+  void setPopupType(int);
+  int getPopupType();
+  public javax.swing.Popup getPopup(java.awt.Component, java.awt.Component, int, int) throws java.lang.IllegalArgumentException;
+  protected javax.swing.Popup getPopup(java.awt.Component, java.awt.Component, int, int, boolean) throws java.lang.IllegalArgumentException;
+  static {};
+}

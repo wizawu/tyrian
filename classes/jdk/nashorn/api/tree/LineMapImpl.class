@@ -1,0 +1,6 @@
+Compiled from "LineMapImpl.java"
+final class jdk.nashorn.api.tree.LineMapImpl implements jdk.nashorn.api.tree.LineMap {
+  jdk.nashorn.api.tree.LineMapImpl(jdk.nashorn.internal.runtime.Source);
+  public long getLineNumber(long);
+  public long getColumnNumber(long);
+}

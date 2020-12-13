@@ -1,0 +1,9 @@
+Compiled from "SyntaxException.java"
+public class sun.tools.jstat.SyntaxException extends sun.tools.jstat.ParserException {
+  public sun.tools.jstat.SyntaxException(java.lang.String);
+  public sun.tools.jstat.SyntaxException(int, java.lang.String, java.lang.String);
+  public sun.tools.jstat.SyntaxException(int, java.lang.String, sun.tools.jstat.Token);
+  public sun.tools.jstat.SyntaxException(int, sun.tools.jstat.Token, sun.tools.jstat.Token);
+  public sun.tools.jstat.SyntaxException(int, java.util.Set<java.lang.String>, sun.tools.jstat.Token);
+  public java.lang.String getMessage();
+}

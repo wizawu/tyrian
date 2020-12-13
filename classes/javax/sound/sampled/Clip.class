@@ -1,0 +1,12 @@
+Compiled from "Clip.java"
+public interface javax.sound.sampled.Clip extends javax.sound.sampled.DataLine {
+  public static final int LOOP_CONTINUOUSLY;
+  public abstract void open(javax.sound.sampled.AudioFormat, byte[], int, int) throws javax.sound.sampled.LineUnavailableException;
+  public abstract void open(javax.sound.sampled.AudioInputStream) throws javax.sound.sampled.LineUnavailableException, java.io.IOException;
+  public abstract int getFrameLength();
+  public abstract long getMicrosecondLength();
+  public abstract void setFramePosition(int);
+  public abstract void setMicrosecondPosition(long);
+  public abstract void setLoopPoints(int, int);
+  public abstract void loop(int);
+}

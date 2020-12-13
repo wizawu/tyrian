@@ -1,0 +1,34 @@
+Compiled from "ReflectionFactory.java"
+public class jdk.internal.reflect.ReflectionFactory {
+  static final boolean $assertionsDisabled;
+  public static jdk.internal.reflect.ReflectionFactory getReflectionFactory();
+  public void setLangReflectAccess(jdk.internal.reflect.LangReflectAccess);
+  public jdk.internal.reflect.FieldAccessor newFieldAccessor(java.lang.reflect.Field, boolean);
+  public jdk.internal.reflect.MethodAccessor newMethodAccessor(java.lang.reflect.Method);
+  public jdk.internal.reflect.ConstructorAccessor newConstructorAccessor(java.lang.reflect.Constructor<?>);
+  public java.lang.reflect.Field newField(java.lang.Class<?>, java.lang.String, java.lang.Class<?>, int, int, java.lang.String, byte[]);
+  public java.lang.reflect.Method newMethod(java.lang.Class<?>, java.lang.String, java.lang.Class<?>[], java.lang.Class<?>, java.lang.Class<?>[], int, int, java.lang.String, byte[], byte[], byte[]);
+  public java.lang.reflect.Constructor<?> newConstructor(java.lang.Class<?>, java.lang.Class<?>[], java.lang.Class<?>[], int, int, java.lang.String, byte[], byte[]);
+  public jdk.internal.reflect.MethodAccessor getMethodAccessor(java.lang.reflect.Method);
+  public void setMethodAccessor(java.lang.reflect.Method, jdk.internal.reflect.MethodAccessor);
+  public jdk.internal.reflect.ConstructorAccessor getConstructorAccessor(java.lang.reflect.Constructor<?>);
+  public void setConstructorAccessor(java.lang.reflect.Constructor<?>, jdk.internal.reflect.ConstructorAccessor);
+  public java.lang.reflect.Method copyMethod(java.lang.reflect.Method);
+  public java.lang.reflect.Method leafCopyMethod(java.lang.reflect.Method);
+  public java.lang.reflect.Field copyField(java.lang.reflect.Field);
+  public <T> java.lang.reflect.Constructor<T> copyConstructor(java.lang.reflect.Constructor<T>);
+  public byte[] getExecutableTypeAnnotationBytes(java.lang.reflect.Executable);
+  public java.lang.Class<?>[] getExecutableSharedParameterTypes(java.lang.reflect.Executable);
+  public final java.lang.reflect.Constructor<?> newConstructorForExternalization(java.lang.Class<?>);
+  public final java.lang.reflect.Constructor<?> newConstructorForSerialization(java.lang.Class<?>, java.lang.reflect.Constructor<?>);
+  public final java.lang.reflect.Constructor<?> newConstructorForSerialization(java.lang.Class<?>);
+  public final java.lang.invoke.MethodHandle readObjectForSerialization(java.lang.Class<?>);
+  public final java.lang.invoke.MethodHandle readObjectNoDataForSerialization(java.lang.Class<?>);
+  public final java.lang.invoke.MethodHandle writeObjectForSerialization(java.lang.Class<?>);
+  public final java.lang.invoke.MethodHandle writeReplaceForSerialization(java.lang.Class<?>);
+  public final java.lang.invoke.MethodHandle readResolveForSerialization(java.lang.Class<?>);
+  public final boolean hasStaticInitializerForSerialization(java.lang.Class<?>);
+  public final java.lang.reflect.Constructor<java.io.OptionalDataException> newOptionalDataExceptionForSerialization();
+  static int inflationThreshold();
+  static {};
+}

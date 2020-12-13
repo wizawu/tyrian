@@ -1,0 +1,29 @@
+Compiled from "XMLInputSource.java"
+public class com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource {
+  protected java.lang.String fPublicId;
+  protected java.lang.String fSystemId;
+  protected java.lang.String fBaseSystemId;
+  protected java.io.InputStream fByteStream;
+  protected java.io.Reader fCharStream;
+  protected java.lang.String fEncoding;
+  boolean fIsCreatedByResolver;
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource(java.lang.String, java.lang.String, java.lang.String, boolean);
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource(com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier);
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource(org.xml.sax.InputSource, boolean);
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource(java.lang.String, java.lang.String, java.lang.String, java.io.InputStream, java.lang.String);
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource(java.lang.String, java.lang.String, java.lang.String, java.io.Reader, java.lang.String);
+  public void setPublicId(java.lang.String);
+  public java.lang.String getPublicId();
+  public void setSystemId(java.lang.String);
+  public java.lang.String getSystemId();
+  public void setBaseSystemId(java.lang.String);
+  public java.lang.String getBaseSystemId();
+  public void setByteStream(java.io.InputStream);
+  public java.io.InputStream getByteStream();
+  public void setCharacterStream(java.io.Reader);
+  public java.io.Reader getCharacterStream();
+  public void setEncoding(java.lang.String);
+  public java.lang.String getEncoding();
+  public void setCreatedByResolver(boolean);
+  public boolean isCreatedByResolver();
+}

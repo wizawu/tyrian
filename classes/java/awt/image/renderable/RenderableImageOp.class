@@ -1,0 +1,20 @@
+Compiled from "RenderableImageOp.java"
+public class java.awt.image.renderable.RenderableImageOp implements java.awt.image.renderable.RenderableImage {
+  java.awt.image.renderable.ParameterBlock paramBlock;
+  java.awt.image.renderable.ContextualRenderedImageFactory myCRIF;
+  java.awt.geom.Rectangle2D boundingBox;
+  public java.awt.image.renderable.RenderableImageOp(java.awt.image.renderable.ContextualRenderedImageFactory, java.awt.image.renderable.ParameterBlock);
+  public java.util.Vector<java.awt.image.renderable.RenderableImage> getSources();
+  public java.lang.Object getProperty(java.lang.String);
+  public java.lang.String[] getPropertyNames();
+  public boolean isDynamic();
+  public float getWidth();
+  public float getHeight();
+  public float getMinX();
+  public float getMinY();
+  public java.awt.image.renderable.ParameterBlock setParameterBlock(java.awt.image.renderable.ParameterBlock);
+  public java.awt.image.renderable.ParameterBlock getParameterBlock();
+  public java.awt.image.RenderedImage createScaledRendering(int, int, java.awt.RenderingHints);
+  public java.awt.image.RenderedImage createDefaultRendering();
+  public java.awt.image.RenderedImage createRendering(java.awt.image.renderable.RenderContext);
+}

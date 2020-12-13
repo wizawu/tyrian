@@ -1,0 +1,13 @@
+Compiled from "SoftCleanable.java"
+public abstract class jdk.internal.ref.SoftCleanable<T> extends java.lang.ref.SoftReference<T> implements java.lang.ref.Cleaner$Cleanable {
+  jdk.internal.ref.SoftCleanable<?> prev;
+  jdk.internal.ref.SoftCleanable<?> next;
+  public jdk.internal.ref.SoftCleanable(T, java.lang.ref.Cleaner);
+  jdk.internal.ref.SoftCleanable();
+  boolean isListEmpty();
+  public final void clean();
+  public void clear();
+  protected abstract void performCleanup();
+  public final boolean isEnqueued();
+  public final boolean enqueue();
+}

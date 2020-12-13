@@ -1,0 +1,17 @@
+Compiled from "TextStyle.java"
+public final class java.time.format.TextStyle extends java.lang.Enum<java.time.format.TextStyle> {
+  public static final java.time.format.TextStyle FULL;
+  public static final java.time.format.TextStyle FULL_STANDALONE;
+  public static final java.time.format.TextStyle SHORT;
+  public static final java.time.format.TextStyle SHORT_STANDALONE;
+  public static final java.time.format.TextStyle NARROW;
+  public static final java.time.format.TextStyle NARROW_STANDALONE;
+  public static java.time.format.TextStyle[] values();
+  public static java.time.format.TextStyle valueOf(java.lang.String);
+  public boolean isStandalone();
+  public java.time.format.TextStyle asStandalone();
+  public java.time.format.TextStyle asNormal();
+  int toCalendarStyle();
+  int zoneNameStyleIndex();
+  static {};
+}

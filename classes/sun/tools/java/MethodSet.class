@@ -1,0 +1,13 @@
+Compiled from "MethodSet.java"
+public class sun.tools.java.MethodSet {
+  public sun.tools.java.MethodSet();
+  public int size();
+  public void add(sun.tools.java.MemberDefinition);
+  public void replace(sun.tools.java.MemberDefinition);
+  public sun.tools.java.MemberDefinition lookupSig(sun.tools.java.Identifier, sun.tools.java.Type);
+  public java.util.Iterator<sun.tools.java.MemberDefinition> lookupName(sun.tools.java.Identifier);
+  public java.util.Iterator<sun.tools.java.MemberDefinition> iterator();
+  public void freeze();
+  public boolean isFrozen();
+  public java.lang.String toString();
+}

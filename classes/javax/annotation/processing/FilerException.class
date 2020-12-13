@@ -1,0 +1,5 @@
+Compiled from "FilerException.java"
+public class javax.annotation.processing.FilerException extends java.io.IOException {
+  static final long serialVersionUID;
+  public javax.annotation.processing.FilerException(java.lang.String);
+}

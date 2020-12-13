@@ -1,0 +1,29 @@
+Compiled from "RectangularShape.java"
+public abstract class java.awt.geom.RectangularShape implements java.awt.Shape,java.lang.Cloneable {
+  protected java.awt.geom.RectangularShape();
+  public abstract double getX();
+  public abstract double getY();
+  public abstract double getWidth();
+  public abstract double getHeight();
+  public double getMinX();
+  public double getMinY();
+  public double getMaxX();
+  public double getMaxY();
+  public double getCenterX();
+  public double getCenterY();
+  public java.awt.geom.Rectangle2D getFrame();
+  public abstract boolean isEmpty();
+  public abstract void setFrame(double, double, double, double);
+  public void setFrame(java.awt.geom.Point2D, java.awt.geom.Dimension2D);
+  public void setFrame(java.awt.geom.Rectangle2D);
+  public void setFrameFromDiagonal(double, double, double, double);
+  public void setFrameFromDiagonal(java.awt.geom.Point2D, java.awt.geom.Point2D);
+  public void setFrameFromCenter(double, double, double, double);
+  public void setFrameFromCenter(java.awt.geom.Point2D, java.awt.geom.Point2D);
+  public boolean contains(java.awt.geom.Point2D);
+  public boolean intersects(java.awt.geom.Rectangle2D);
+  public boolean contains(java.awt.geom.Rectangle2D);
+  public java.awt.Rectangle getBounds();
+  public java.awt.geom.PathIterator getPathIterator(java.awt.geom.AffineTransform, double);
+  public java.lang.Object clone();
+}

@@ -1,0 +1,19 @@
+Compiled from "WBMPImageReader.java"
+public class com.sun.imageio.plugins.wbmp.WBMPImageReader extends javax.imageio.ImageReader {
+  public com.sun.imageio.plugins.wbmp.WBMPImageReader(javax.imageio.spi.ImageReaderSpi);
+  public void setInput(java.lang.Object, boolean, boolean);
+  public int getNumImages(boolean) throws java.io.IOException;
+  public int getWidth(int) throws java.io.IOException;
+  public int getHeight(int) throws java.io.IOException;
+  public boolean isRandomAccessEasy(int) throws java.io.IOException;
+  public void readHeader() throws java.io.IOException;
+  public java.util.Iterator<javax.imageio.ImageTypeSpecifier> getImageTypes(int) throws java.io.IOException;
+  public javax.imageio.ImageReadParam getDefaultReadParam();
+  public javax.imageio.metadata.IIOMetadata getImageMetadata(int) throws java.io.IOException;
+  public javax.imageio.metadata.IIOMetadata getStreamMetadata() throws java.io.IOException;
+  public java.awt.image.BufferedImage read(int, javax.imageio.ImageReadParam) throws java.io.IOException;
+  public boolean canReadRaster();
+  public java.awt.image.Raster readRaster(int, javax.imageio.ImageReadParam) throws java.io.IOException;
+  public void reset();
+  boolean isValidWbmpType(int);
+}

@@ -1,0 +1,6 @@
+Compiled from "Name.java"
+public interface javax.lang.model.element.Name extends java.lang.CharSequence {
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public abstract boolean contentEquals(java.lang.CharSequence);
+}

@@ -1,0 +1,10 @@
+Compiled from "XPointerProcessor.java"
+public interface com.sun.org.apache.xerces.internal.xpointer.XPointerProcessor {
+  public static final int EVENT_ELEMENT_START;
+  public static final int EVENT_ELEMENT_END;
+  public static final int EVENT_ELEMENT_EMPTY;
+  public abstract void parseXPointer(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract boolean resolveXPointer(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations, int) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract boolean isFragmentResolved() throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract boolean isXPointerResolved() throws com.sun.org.apache.xerces.internal.xni.XNIException;
+}

@@ -1,0 +1,10 @@
+Compiled from "CompoundType.java"
+public interface sun.jvm.hotspot.debugger.cdbg.CompoundType {
+  public abstract int getNumBaseClasses();
+  public abstract sun.jvm.hotspot.debugger.cdbg.BaseClass getBaseClass(int);
+  public abstract int getNumFields();
+  public abstract sun.jvm.hotspot.debugger.cdbg.Field getField(int);
+  public abstract boolean isClass();
+  public abstract boolean isStruct();
+  public abstract boolean isUnion();
+}

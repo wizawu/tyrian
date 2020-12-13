@@ -1,0 +1,7 @@
+Compiled from "JDWPException.java"
+class com.sun.tools.jdi.JDWPException extends java.lang.Exception {
+  short errorCode;
+  com.sun.tools.jdi.JDWPException(short);
+  short errorCode();
+  java.lang.RuntimeException toJDIException();
+}

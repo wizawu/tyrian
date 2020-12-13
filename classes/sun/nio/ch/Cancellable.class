@@ -1,0 +1,4 @@
+Compiled from "Cancellable.java"
+interface sun.nio.ch.Cancellable {
+  public abstract void onCancel(sun.nio.ch.PendingFuture<?, ?>);
+}

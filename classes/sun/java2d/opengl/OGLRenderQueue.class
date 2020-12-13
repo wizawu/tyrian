@@ -1,0 +1,10 @@
+Compiled from "OGLRenderQueue.java"
+public class sun.java2d.opengl.OGLRenderQueue extends sun.java2d.pipe.RenderQueue {
+  public static synchronized sun.java2d.opengl.OGLRenderQueue getInstance();
+  public static void sync();
+  public static void disposeGraphicsConfig(long);
+  public static boolean isQueueFlusherThread();
+  public void flushNow();
+  public void flushAndInvokeNow(java.lang.Runnable);
+  static sun.java2d.pipe.RenderBuffer access$000(sun.java2d.opengl.OGLRenderQueue);
+}

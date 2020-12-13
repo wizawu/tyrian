@@ -1,0 +1,24 @@
+Compiled from "ZGlobals.java"
+public class sun.jvm.hotspot.gc.z.ZGlobals {
+  public static int ZPhaseRelocate;
+  public static byte ZPageTypeSmall;
+  public static byte ZPageTypeMedium;
+  public static byte ZPageTypeLarge;
+  public static long ZPageSizeSmallShift;
+  public static long ZPageSizeMediumShift;
+  public static long ZPageSizeMinShift;
+  public static int ZObjectAlignmentMediumShift;
+  public static int ZObjectAlignmentLargeShift;
+  public static long ZAddressOffsetShift;
+  public static long ZAddressOffsetBits;
+  public static long ZAddressOffsetMask;
+  public static long ZAddressSpaceStart;
+  public sun.jvm.hotspot.gc.z.ZGlobals();
+  public static int ZGlobalPhase();
+  public static long ZAddressGoodMask();
+  public static long ZAddressBadMask();
+  public static long ZAddressWeakBadMask();
+  public static int ZObjectAlignmentSmallShift();
+  public static int ZObjectAlignmentSmall();
+  static {};
+}

@@ -1,0 +1,41 @@
+Compiled from "Buffer.java"
+public abstract class java.nio.Buffer {
+  static final jdk.internal.misc.Unsafe UNSAFE;
+  static final int SPLITERATOR_CHARACTERISTICS;
+  long address;
+  static final boolean $assertionsDisabled;
+  java.nio.Buffer(int, int, int, int);
+  static java.lang.IllegalArgumentException createSameBufferException();
+  static java.lang.IllegalArgumentException createCapacityException(int);
+  public final int capacity();
+  public final int position();
+  public java.nio.Buffer position(int);
+  public final int limit();
+  public java.nio.Buffer limit(int);
+  public java.nio.Buffer mark();
+  public java.nio.Buffer reset();
+  public java.nio.Buffer clear();
+  public java.nio.Buffer flip();
+  public java.nio.Buffer rewind();
+  public final int remaining();
+  public final boolean hasRemaining();
+  public abstract boolean isReadOnly();
+  public abstract boolean hasArray();
+  public abstract java.lang.Object array();
+  public abstract int arrayOffset();
+  public abstract boolean isDirect();
+  public abstract java.nio.Buffer slice();
+  public abstract java.nio.Buffer duplicate();
+  abstract java.lang.Object base();
+  final int nextGetIndex();
+  final int nextGetIndex(int);
+  final int nextPutIndex();
+  final int nextPutIndex(int);
+  final int checkIndex(int);
+  final int checkIndex(int, int);
+  final int markValue();
+  final void truncate();
+  final void discardMark();
+  static void checkBounds(int, int, int);
+  static {};
+}

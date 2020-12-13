@@ -1,0 +1,9 @@
+Compiled from "BsdOopHandle.java"
+class sun.jvm.hotspot.debugger.bsd.BsdOopHandle extends sun.jvm.hotspot.debugger.bsd.BsdAddress implements sun.jvm.hotspot.debugger.OopHandle {
+  sun.jvm.hotspot.debugger.bsd.BsdOopHandle(sun.jvm.hotspot.debugger.bsd.BsdDebugger, long);
+  public boolean equals(java.lang.Object);
+  public sun.jvm.hotspot.debugger.Address addOffsetTo(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address andWithMask(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address orWithMask(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address xorWithMask(long) throws java.lang.UnsupportedOperationException;
+}

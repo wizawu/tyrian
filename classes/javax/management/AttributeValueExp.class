@@ -1,0 +1,10 @@
+Compiled from "AttributeValueExp.java"
+public class javax.management.AttributeValueExp implements javax.management.ValueExp {
+  public javax.management.AttributeValueExp();
+  public javax.management.AttributeValueExp(java.lang.String);
+  public java.lang.String getAttributeName();
+  public javax.management.ValueExp apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
+  public java.lang.String toString();
+  public void setMBeanServer(javax.management.MBeanServer);
+  protected java.lang.Object getAttribute(javax.management.ObjectName);
+}

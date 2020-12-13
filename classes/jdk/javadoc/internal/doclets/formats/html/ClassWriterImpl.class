@@ -1,0 +1,27 @@
+Compiled from "ClassWriterImpl.java"
+public class jdk.javadoc.internal.doclets.formats.html.ClassWriterImpl extends jdk.javadoc.internal.doclets.formats.html.SubWriterHolderWriter implements jdk.javadoc.internal.doclets.toolkit.ClassWriter {
+  protected final javax.lang.model.element.TypeElement typeElement;
+  protected final jdk.javadoc.internal.doclets.toolkit.util.ClassTree classtree;
+  public jdk.javadoc.internal.doclets.formats.html.ClassWriterImpl(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.util.ClassTree);
+  public jdk.javadoc.internal.doclets.toolkit.Content getHeader(java.lang.String);
+  public jdk.javadoc.internal.doclets.toolkit.Content getClassContentHeader();
+  public void addFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void printDocument(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  public jdk.javadoc.internal.doclets.toolkit.Content getClassInfoTreeHeader();
+  public jdk.javadoc.internal.doclets.toolkit.Content getClassInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addClassSignature(java.lang.String, jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addClassDescription(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addClassTagInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addClassTree(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addTypeParamInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addSubClassInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addSubInterfacesInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addInterfaceUsageInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addImplementedInterfacesInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addSuperInterfacesInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addNestedClassInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addFunctionalInterfaceInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public boolean isFunctionalInterface();
+  public void addClassDeprecationInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public javax.lang.model.element.TypeElement getTypeElement();
+}

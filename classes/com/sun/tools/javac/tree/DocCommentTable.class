@@ -1,0 +1,8 @@
+Compiled from "DocCommentTable.java"
+public interface com.sun.tools.javac.tree.DocCommentTable {
+  public abstract boolean hasComment(com.sun.tools.javac.tree.JCTree);
+  public abstract com.sun.tools.javac.parser.Tokens$Comment getComment(com.sun.tools.javac.tree.JCTree);
+  public abstract java.lang.String getCommentText(com.sun.tools.javac.tree.JCTree);
+  public abstract com.sun.tools.javac.tree.DCTree$DCDocComment getCommentTree(com.sun.tools.javac.tree.JCTree);
+  public abstract void putComment(com.sun.tools.javac.tree.JCTree, com.sun.tools.javac.parser.Tokens$Comment);
+}

@@ -1,0 +1,11 @@
+Compiled from "FilteredImageSource.java"
+public class java.awt.image.FilteredImageSource implements java.awt.image.ImageProducer {
+  java.awt.image.ImageProducer src;
+  java.awt.image.ImageFilter filter;
+  public java.awt.image.FilteredImageSource(java.awt.image.ImageProducer, java.awt.image.ImageFilter);
+  public synchronized void addConsumer(java.awt.image.ImageConsumer);
+  public synchronized boolean isConsumer(java.awt.image.ImageConsumer);
+  public synchronized void removeConsumer(java.awt.image.ImageConsumer);
+  public synchronized void startProduction(java.awt.image.ImageConsumer);
+  public synchronized void requestTopDownLeftRightResend(java.awt.image.ImageConsumer);
+}

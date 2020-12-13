@@ -1,0 +1,4 @@
+Compiled from "AboutEvent.java"
+public final class java.awt.desktop.AboutEvent extends java.awt.desktop.AppEvent {
+  public java.awt.desktop.AboutEvent();
+}

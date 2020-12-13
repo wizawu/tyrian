@@ -1,0 +1,8 @@
+Compiled from "JFC.java"
+public final class jdk.jfr.internal.jfc.JFC {
+  public static jdk.jfr.Configuration create(java.lang.String, java.io.Reader) throws java.io.IOException, java.text.ParseException;
+  public static java.lang.String nameFromPath(java.nio.file.Path) throws java.io.IOException;
+  public static jdk.jfr.Configuration createKnown(java.lang.String) throws java.io.IOException, java.text.ParseException;
+  public static java.util.List<jdk.jfr.Configuration> getConfigurations();
+  public static jdk.jfr.Configuration getPredefined(java.lang.String) throws java.io.IOException, java.text.ParseException;
+}

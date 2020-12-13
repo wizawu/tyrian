@@ -1,0 +1,6 @@
+Compiled from "MenuContainer.java"
+public interface java.awt.MenuContainer {
+  public abstract java.awt.Font getFont();
+  public abstract void remove(java.awt.MenuComponent);
+  public abstract boolean postEvent(java.awt.Event);
+}

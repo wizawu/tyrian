@@ -1,0 +1,17 @@
+Compiled from "ConditionalSpecialCasing.java"
+final class java.lang.ConditionalSpecialCasing {
+  static final int FINAL_CASED;
+  static final int AFTER_SOFT_DOTTED;
+  static final int MORE_ABOVE;
+  static final int AFTER_I;
+  static final int NOT_BEFORE_DOT;
+  static final int COMBINING_CLASS_ABOVE;
+  static java.lang.ConditionalSpecialCasing$Entry[] entry;
+  static java.util.Hashtable<java.lang.Integer, java.util.HashSet<java.lang.ConditionalSpecialCasing$Entry>> entryTable;
+  java.lang.ConditionalSpecialCasing();
+  static int toLowerCaseEx(java.lang.String, int, java.util.Locale);
+  static int toUpperCaseEx(java.lang.String, int, java.util.Locale);
+  static char[] toLowerCaseCharArray(java.lang.String, int, java.util.Locale);
+  static char[] toUpperCaseCharArray(java.lang.String, int, java.util.Locale);
+  static {};
+}

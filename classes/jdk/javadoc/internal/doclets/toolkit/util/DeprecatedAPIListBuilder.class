@@ -1,0 +1,6 @@
+Compiled from "DeprecatedAPIListBuilder.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.DeprecatedAPIListBuilder {
+  public jdk.javadoc.internal.doclets.toolkit.util.DeprecatedAPIListBuilder(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public java.util.SortedSet<javax.lang.model.element.Element> getSet(jdk.javadoc.internal.doclets.toolkit.util.DeprecatedAPIListBuilder$DeprElementKind);
+  public boolean hasDocumentation(jdk.javadoc.internal.doclets.toolkit.util.DeprecatedAPIListBuilder$DeprElementKind);
+}

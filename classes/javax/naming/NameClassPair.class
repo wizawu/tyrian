@@ -1,0 +1,14 @@
+Compiled from "NameClassPair.java"
+public class javax.naming.NameClassPair implements java.io.Serializable {
+  public javax.naming.NameClassPair(java.lang.String, java.lang.String);
+  public javax.naming.NameClassPair(java.lang.String, java.lang.String, boolean);
+  public java.lang.String getClassName();
+  public java.lang.String getName();
+  public void setName(java.lang.String);
+  public void setClassName(java.lang.String);
+  public boolean isRelative();
+  public void setRelative(boolean);
+  public java.lang.String getNameInNamespace();
+  public void setNameInNamespace(java.lang.String);
+  public java.lang.String toString();
+}

@@ -1,0 +1,19 @@
+Compiled from "RelationNotification.java"
+public class javax.management.relation.RelationNotification extends javax.management.Notification {
+  public static final java.lang.String RELATION_BASIC_CREATION;
+  public static final java.lang.String RELATION_MBEAN_CREATION;
+  public static final java.lang.String RELATION_BASIC_UPDATE;
+  public static final java.lang.String RELATION_MBEAN_UPDATE;
+  public static final java.lang.String RELATION_BASIC_REMOVAL;
+  public static final java.lang.String RELATION_MBEAN_REMOVAL;
+  public javax.management.relation.RelationNotification(java.lang.String, java.lang.Object, long, long, java.lang.String, java.lang.String, java.lang.String, javax.management.ObjectName, java.util.List<javax.management.ObjectName>) throws java.lang.IllegalArgumentException;
+  public javax.management.relation.RelationNotification(java.lang.String, java.lang.Object, long, long, java.lang.String, java.lang.String, java.lang.String, javax.management.ObjectName, java.lang.String, java.util.List<javax.management.ObjectName>, java.util.List<javax.management.ObjectName>) throws java.lang.IllegalArgumentException;
+  public java.lang.String getRelationId();
+  public java.lang.String getRelationTypeName();
+  public javax.management.ObjectName getObjectName();
+  public java.util.List<javax.management.ObjectName> getMBeansToUnregister();
+  public java.lang.String getRoleName();
+  public java.util.List<javax.management.ObjectName> getOldRoleValue();
+  public java.util.List<javax.management.ObjectName> getNewRoleValue();
+  static {};
+}

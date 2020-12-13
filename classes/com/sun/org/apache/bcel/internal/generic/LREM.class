@@ -1,0 +1,6 @@
+Compiled from "LREM.java"
+public class com.sun.org.apache.bcel.internal.generic.LREM extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction implements com.sun.org.apache.bcel.internal.generic.ExceptionThrower {
+  public com.sun.org.apache.bcel.internal.generic.LREM();
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

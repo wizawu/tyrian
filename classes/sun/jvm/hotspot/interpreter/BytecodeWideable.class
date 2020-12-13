@@ -1,0 +1,6 @@
+Compiled from "BytecodeWideable.java"
+public abstract class sun.jvm.hotspot.interpreter.BytecodeWideable extends sun.jvm.hotspot.interpreter.Bytecode {
+  sun.jvm.hotspot.interpreter.BytecodeWideable(sun.jvm.hotspot.oops.Method, int);
+  public boolean isWide();
+  public int getLocalVarIndex();
+}

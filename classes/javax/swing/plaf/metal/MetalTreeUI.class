@@ -1,0 +1,14 @@
+Compiled from "MetalTreeUI.java"
+public class javax.swing.plaf.metal.MetalTreeUI extends javax.swing.plaf.basic.BasicTreeUI {
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.plaf.metal.MetalTreeUI();
+  protected int getHorizontalLegBuffer();
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void decodeLineStyle(java.lang.Object);
+  protected boolean isLocationInExpandControl(int, int, int, int);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paintHorizontalSeparators(java.awt.Graphics, javax.swing.JComponent);
+  protected void paintVerticalPartOfLeg(java.awt.Graphics, java.awt.Rectangle, java.awt.Insets, javax.swing.tree.TreePath);
+  protected void paintHorizontalPartOfLeg(java.awt.Graphics, java.awt.Rectangle, java.awt.Insets, java.awt.Rectangle, javax.swing.tree.TreePath, int, boolean, boolean, boolean);
+}

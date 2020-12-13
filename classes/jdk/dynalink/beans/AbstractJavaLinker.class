@@ -1,0 +1,24 @@
+Compiled from "AbstractJavaLinker.java"
+abstract class jdk.dynalink.beans.AbstractJavaLinker implements jdk.dynalink.linker.GuardingDynamicLinker {
+  final java.lang.Class<?> clazz;
+  static final boolean $assertionsDisabled;
+  jdk.dynalink.beans.AbstractJavaLinker(java.lang.Class<?>, java.lang.invoke.MethodHandle);
+  jdk.dynalink.beans.AbstractJavaLinker(java.lang.Class<?>, java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
+  abstract jdk.dynalink.beans.FacetIntrospector createFacetIntrospector();
+  java.util.Set<java.lang.String> getReadablePropertyNames();
+  java.util.Set<java.lang.String> getWritablePropertyNames();
+  java.util.Set<java.lang.String> getMethodNames();
+  void setPropertyGetter(java.lang.String, java.lang.invoke.MethodHandle, jdk.dynalink.beans.GuardedInvocationComponent$ValidationType);
+  static jdk.dynalink.beans.DynamicMethod createDynamicMethod(java.lang.Iterable<? extends java.lang.reflect.AccessibleObject>, java.lang.Class<?>, java.lang.String);
+  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
+  protected jdk.dynalink.beans.GuardedInvocationComponent getGuardedInvocationComponent(jdk.dynalink.beans.AbstractJavaLinker$ComponentLinkRequest) throws java.lang.Exception;
+  jdk.dynalink.beans.GuardedInvocationComponent getNextComponent(jdk.dynalink.beans.AbstractJavaLinker$ComponentLinkRequest) throws java.lang.Exception;
+  static final <T> java.util.List<T> pop(java.util.List<T>);
+  java.lang.invoke.MethodHandle getClassGuard(jdk.dynalink.CallSiteDescriptor);
+  java.lang.invoke.MethodHandle getClassGuard(java.lang.invoke.MethodType);
+  jdk.dynalink.beans.GuardedInvocationComponent getClassGuardedInvocationComponent(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType);
+  abstract jdk.dynalink.beans.SingleDynamicMethod getConstructorMethod(java.lang.String);
+  static jdk.dynalink.beans.AbstractJavaLinker$MethodPair matchReturnTypes(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
+  jdk.dynalink.beans.DynamicMethod getDynamicMethod(java.lang.String);
+  static {};
+}

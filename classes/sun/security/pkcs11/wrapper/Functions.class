@@ -1,0 +1,32 @@
+Compiled from "Functions.java"
+public class sun.security.pkcs11.wrapper.Functions {
+  public sun.security.pkcs11.wrapper.Functions();
+  public static java.lang.String toFullHexString(long);
+  public static java.lang.String toFullHexString(int);
+  public static java.lang.String toHexString(long);
+  public static java.lang.String toHexString(byte[]);
+  public static java.lang.String toBinaryString(long);
+  public static java.lang.String toBinaryString(byte[]);
+  public static java.lang.String slotInfoFlagsToString(long);
+  public static java.lang.String tokenInfoFlagsToString(long);
+  public static java.lang.String sessionInfoFlagsToString(long);
+  public static java.lang.String sessionStateToString(long);
+  public static java.lang.String mechanismInfoFlagsToString(long);
+  public static long getId(java.util.Map<java.lang.String, java.lang.Integer>, java.lang.String);
+  public static java.lang.String getMechanismName(long);
+  public static long getMechanismId(java.lang.String);
+  public static java.lang.String getKeyName(long);
+  public static long getKeyId(java.lang.String);
+  public static java.lang.String getAttributeName(long);
+  public static long getAttributeId(java.lang.String);
+  public static java.lang.String getObjectClassName(long);
+  public static long getObjectClassId(java.lang.String);
+  public static long getHashMechId(java.lang.String);
+  public static java.lang.String getMGFName(long);
+  public static long getMGFId(java.lang.String);
+  public static boolean equals(sun.security.pkcs11.wrapper.CK_DATE, sun.security.pkcs11.wrapper.CK_DATE);
+  public static int hashCode(byte[]);
+  public static int hashCode(char[]);
+  public static int hashCode(sun.security.pkcs11.wrapper.CK_DATE);
+  static {};
+}

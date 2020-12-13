@@ -1,0 +1,5 @@
+Compiled from "ToggleActionPropertyChangeListener.java"
+public class com.sun.java.swing.ui.ToggleActionPropertyChangeListener implements java.beans.PropertyChangeListener {
+  public com.sun.java.swing.ui.ToggleActionPropertyChangeListener(javax.swing.AbstractButton);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+}

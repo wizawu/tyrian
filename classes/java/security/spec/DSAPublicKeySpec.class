@@ -1,0 +1,8 @@
+Compiled from "DSAPublicKeySpec.java"
+public class java.security.spec.DSAPublicKeySpec implements java.security.spec.KeySpec {
+  public java.security.spec.DSAPublicKeySpec(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger);
+  public java.math.BigInteger getY();
+  public java.math.BigInteger getP();
+  public java.math.BigInteger getQ();
+  public java.math.BigInteger getG();
+}

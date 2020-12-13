@@ -1,0 +1,9 @@
+Compiled from "ExecutionControlForwarder.java"
+class jdk.jshell.execution.ExecutionControlForwarder {
+  static final java.lang.String NULL_MARKER;
+  jdk.jshell.execution.ExecutionControlForwarder(jdk.jshell.spi.ExecutionControl, java.io.ObjectInput, java.io.ObjectOutput);
+  void writeInternalException(java.lang.Throwable) throws java.io.IOException;
+  void writeUserException(jdk.jshell.spi.ExecutionControl$UserException) throws java.io.IOException;
+  void writeResolutionException(jdk.jshell.spi.ExecutionControl$ResolutionException) throws java.io.IOException;
+  void commandLoop();
+}

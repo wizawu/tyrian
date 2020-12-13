@@ -1,0 +1,6 @@
+Compiled from "XPlotter.java"
+public class sun.tools.jconsole.inspector.XPlotter extends sun.tools.jconsole.Plotter {
+  javax.swing.JTable table;
+  public sun.tools.jconsole.inspector.XPlotter(javax.swing.JTable, sun.tools.jconsole.Plotter$Unit);
+  public void addValues(long, long...);
+}

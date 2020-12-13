@@ -1,0 +1,16 @@
+Compiled from "CollectedHeap.java"
+public abstract class sun.jvm.hotspot.gc.shared.CollectedHeap extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.gc.shared.CollectedHeap(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address start();
+  public abstract long capacity();
+  public abstract long used();
+  public sun.jvm.hotspot.memory.MemRegion reservedRegion();
+  public boolean isIn(sun.jvm.hotspot.debugger.Address);
+  public boolean isInReserved(sun.jvm.hotspot.debugger.Address);
+  public abstract sun.jvm.hotspot.gc.shared.CollectedHeapName kind();
+  public java.lang.String oopAddressDescription(sun.jvm.hotspot.debugger.OopHandle);
+  public sun.jvm.hotspot.debugger.OopHandle oop_load_at(sun.jvm.hotspot.debugger.OopHandle, long);
+  public void print();
+  public void printOn(java.io.PrintStream);
+  static {};
+}

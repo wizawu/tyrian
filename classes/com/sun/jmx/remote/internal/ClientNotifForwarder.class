@@ -1,0 +1,19 @@
+Compiled from "ClientNotifForwarder.java"
+public abstract class com.sun.jmx.remote.internal.ClientNotifForwarder {
+  public com.sun.jmx.remote.internal.ClientNotifForwarder(java.util.Map<java.lang.String, ?>);
+  public com.sun.jmx.remote.internal.ClientNotifForwarder(java.lang.ClassLoader, java.util.Map<java.lang.String, ?>);
+  protected abstract javax.management.remote.NotificationResult fetchNotifs(long, int, long) throws java.io.IOException, java.lang.ClassNotFoundException;
+  protected abstract java.lang.Integer addListenerForMBeanRemovedNotif() throws java.io.IOException, javax.management.InstanceNotFoundException;
+  protected abstract void removeListenerForMBeanRemovedNotif(java.lang.Integer) throws java.io.IOException, javax.management.InstanceNotFoundException, javax.management.ListenerNotFoundException;
+  protected abstract void lostNotifs(java.lang.String, long);
+  public synchronized void addNotificationListener(java.lang.Integer, javax.management.ObjectName, javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object, javax.security.auth.Subject) throws java.io.IOException, javax.management.InstanceNotFoundException;
+  public synchronized java.lang.Integer[] getListenerIds(javax.management.ObjectName, javax.management.NotificationListener) throws javax.management.ListenerNotFoundException, java.io.IOException;
+  public synchronized java.lang.Integer getListenerId(javax.management.ObjectName, javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) throws javax.management.ListenerNotFoundException, java.io.IOException;
+  public synchronized java.lang.Integer[] removeNotificationListener(javax.management.ObjectName, javax.management.NotificationListener) throws javax.management.ListenerNotFoundException, java.io.IOException;
+  public synchronized java.lang.Integer removeNotificationListener(javax.management.ObjectName, javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) throws javax.management.ListenerNotFoundException, java.io.IOException;
+  public synchronized java.lang.Integer[] removeNotificationListener(javax.management.ObjectName);
+  public synchronized com.sun.jmx.remote.internal.ClientListenerInfo[] preReconnection() throws java.io.IOException;
+  public synchronized void postReconnection(com.sun.jmx.remote.internal.ClientListenerInfo[]) throws java.io.IOException;
+  public synchronized void terminate();
+  static {};
+}

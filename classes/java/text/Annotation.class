@@ -1,0 +1,6 @@
+Compiled from "Annotation.java"
+public class java.text.Annotation {
+  public java.text.Annotation(java.lang.Object);
+  public java.lang.Object getValue();
+  public java.lang.String toString();
+}

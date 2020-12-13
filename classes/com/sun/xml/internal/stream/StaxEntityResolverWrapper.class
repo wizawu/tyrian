@@ -1,0 +1,9 @@
+Compiled from "StaxEntityResolverWrapper.java"
+public class com.sun.xml.internal.stream.StaxEntityResolverWrapper {
+  javax.xml.stream.XMLResolver fStaxResolver;
+  public com.sun.xml.internal.stream.StaxEntityResolverWrapper(javax.xml.stream.XMLResolver);
+  public void setStaxEntityResolver(javax.xml.stream.XMLResolver);
+  public javax.xml.stream.XMLResolver getStaxEntityResolver();
+  public com.sun.xml.internal.stream.StaxXMLInputSource resolveEntity(com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier) throws com.sun.org.apache.xerces.internal.xni.XNIException, java.io.IOException;
+  com.sun.xml.internal.stream.StaxXMLInputSource getStaxInputSource(java.lang.Object);
+}

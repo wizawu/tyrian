@@ -1,0 +1,7 @@
+Compiled from "DefaultDatagramSocketImplFactory.java"
+class java.net.DefaultDatagramSocketImplFactory {
+  static java.lang.Class<?> prefixImplClass;
+  java.net.DefaultDatagramSocketImplFactory();
+  static java.net.DatagramSocketImpl createDatagramSocketImpl(boolean) throws java.net.SocketException;
+  static {};
+}

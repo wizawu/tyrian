@@ -1,0 +1,19 @@
+Compiled from "WrapToken.java"
+class sun.security.jgss.krb5.WrapToken extends sun.security.jgss.krb5.MessageToken {
+  static final int CONFOUNDER_SIZE;
+  static final byte[][] pads;
+  byte[] confounder;
+  byte[] padding;
+  public sun.security.jgss.krb5.WrapToken(sun.security.jgss.krb5.Krb5Context, byte[], int, int, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.krb5.WrapToken(sun.security.jgss.krb5.Krb5Context, java.io.InputStream, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public byte[] getData() throws org.ietf.jgss.GSSException;
+  public int getData(byte[], int) throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.krb5.WrapToken(sun.security.jgss.krb5.Krb5Context, org.ietf.jgss.MessageProp, byte[], int, int) throws org.ietf.jgss.GSSException;
+  public void encode(java.io.OutputStream) throws java.io.IOException, org.ietf.jgss.GSSException;
+  public byte[] encode() throws java.io.IOException, org.ietf.jgss.GSSException;
+  public int encode(byte[], int) throws java.io.IOException, org.ietf.jgss.GSSException;
+  protected int getKrb5TokenSize() throws org.ietf.jgss.GSSException;
+  protected int getSealAlg(boolean, int) throws org.ietf.jgss.GSSException;
+  static int getSizeLimit(int, boolean, int, sun.security.jgss.krb5.CipherHelper) throws org.ietf.jgss.GSSException;
+  static {};
+}

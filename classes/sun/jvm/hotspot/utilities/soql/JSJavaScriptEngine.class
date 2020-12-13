@@ -1,0 +1,45 @@
+Compiled from "JSJavaScriptEngine.java"
+public abstract class sun.jvm.hotspot.utilities.soql.JSJavaScriptEngine extends sun.jvm.hotspot.utilities.soql.MapScriptObject {
+  protected final boolean debug;
+  public void startConsole();
+  public void start();
+  public void defineFunction(java.lang.Object, java.lang.reflect.Method);
+  public java.lang.Object call(java.lang.String, java.lang.Object[]);
+  public java.lang.Object address(java.lang.Object[]);
+  public java.lang.Object classof(java.lang.Object[]);
+  public java.lang.Object dumpClass(java.lang.Object[]);
+  public java.lang.Object dumpHeap(java.lang.Object[]);
+  public void help(java.lang.Object[]);
+  public java.lang.Object identityHash(java.lang.Object[]);
+  public void load(java.lang.Object[]);
+  public java.lang.Object mirror(java.lang.Object[]);
+  public java.lang.Object owner(java.lang.Object[]);
+  public java.lang.Object object(java.lang.Object[]);
+  public java.lang.Object sizeof(java.lang.Object[]);
+  public java.lang.Object staticof(java.lang.Object[]);
+  public java.lang.Object read(java.lang.Object[]);
+  public void quit(java.lang.Object[]);
+  public void writeln(java.lang.Object[]);
+  public void write(java.lang.Object[]);
+  protected void start(boolean);
+  protected sun.jvm.hotspot.utilities.soql.JSJavaScriptEngine(boolean);
+  protected sun.jvm.hotspot.utilities.soql.JSJavaScriptEngine();
+  protected abstract sun.jvm.hotspot.utilities.ObjectReader getObjectReader();
+  protected abstract sun.jvm.hotspot.utilities.soql.JSJavaFactory getJSJavaFactory();
+  protected void printPrompt(java.lang.String);
+  protected void loadInitFile();
+  protected void loadUserInitFile();
+  protected java.lang.String getUserInitFileDir();
+  protected java.lang.String getUserInitFileName();
+  protected java.io.BufferedReader getInputReader();
+  protected java.io.PrintStream getOutputStream();
+  protected java.io.PrintStream getErrorStream();
+  protected void print(java.lang.String);
+  protected void println(java.lang.String);
+  protected void printError(java.lang.String);
+  protected void printError(java.lang.String, java.lang.Exception);
+  protected boolean isQuitting();
+  protected void quit();
+  protected javax.script.ScriptEngine getScriptEngine();
+  protected java.lang.Object evalString(java.lang.String, java.lang.String, int);
+}

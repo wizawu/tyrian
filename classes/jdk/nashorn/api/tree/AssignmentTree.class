@@ -1,0 +1,5 @@
+Compiled from "AssignmentTree.java"
+public interface jdk.nashorn.api.tree.AssignmentTree extends jdk.nashorn.api.tree.ExpressionTree {
+  public abstract jdk.nashorn.api.tree.ExpressionTree getVariable();
+  public abstract jdk.nashorn.api.tree.ExpressionTree getExpression();
+}

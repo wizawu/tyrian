@@ -1,0 +1,33 @@
+Compiled from "JdkXmlUtils.java"
+public class jdk.xml.internal.JdkXmlUtils {
+  public static final java.lang.String NAMESPACES_FEATURE;
+  public static final java.lang.String NAMESPACE_PREFIXES_FEATURE;
+  public static final java.lang.String USE_CATALOG;
+  public static final java.lang.String SP_USE_CATALOG;
+  public static final java.lang.String CATALOG_FILES;
+  public static final java.lang.String CATALOG_DEFER;
+  public static final java.lang.String CATALOG_PREFER;
+  public static final java.lang.String CATALOG_RESOLVE;
+  public static final java.lang.String RESET_SYMBOL_TABLE;
+  public static final java.lang.String OVERRIDE_PARSER;
+  public static final boolean OVERRIDE_PARSER_DEFAULT;
+  public static final java.lang.String FEATURE_TRUE;
+  public static final java.lang.String FEATURE_FALSE;
+  public static final boolean USE_CATALOG_DEFAULT;
+  public static final boolean RESET_SYMBOL_TABLE_DEFAULT;
+  public static final java.lang.String CDATA_CHUNK_SIZE;
+  public static final int CDATA_CHUNK_SIZE_DEFAULT;
+  public jdk.xml.internal.JdkXmlUtils();
+  public static int getValue(java.lang.Object, int);
+  public static void setXMLReaderPropertyIfSupport(org.xml.sax.XMLReader, java.lang.String, java.lang.Object, boolean);
+  public static java.lang.String getCatalogFeature(javax.xml.catalog.CatalogFeatures, java.lang.String);
+  public static javax.xml.catalog.CatalogFeatures getCatalogFeatures(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public static void catalogFeaturesConfig2Config(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager, com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings);
+  public static void catalogFeaturesConfig2Reader(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager, org.xml.sax.XMLReader);
+  public static org.xml.sax.XMLReader getXMLReader(boolean, boolean);
+  public static org.w3c.dom.Document getDOMDocument();
+  public static javax.xml.parsers.DocumentBuilderFactory getDOMFactory(boolean);
+  public static javax.xml.parsers.SAXParserFactory getSAXFactory(boolean);
+  public static javax.xml.transform.sax.SAXTransformerFactory getSAXTransformFactory(boolean);
+  static {};
+}

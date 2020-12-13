@@ -1,0 +1,15 @@
+Compiled from "MarlinTileGenerator.java"
+final class sun.java2d.marlin.MarlinTileGenerator implements sun.java2d.pipe.AATileGenerator,sun.java2d.marlin.MarlinConst {
+  final sun.java2d.marlin.RendererStats rdrStats;
+  sun.java2d.marlin.MarlinTileGenerator(sun.java2d.marlin.RendererStats, sun.java2d.marlin.MarlinRenderer, sun.java2d.marlin.MarlinCache);
+  sun.java2d.marlin.MarlinTileGenerator init();
+  public void dispose();
+  void getBbox(int[]);
+  public int getTileWidth();
+  public int getTileHeight();
+  public int getTypicalAlpha();
+  public void nextTile();
+  public void getAlpha(byte[], int, int);
+  static java.lang.String hex(int, int);
+  static {};
+}

@@ -1,0 +1,16 @@
+Compiled from "DefaultText.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.opti.DefaultText extends com.sun.org.apache.xerces.internal.impl.xs.opti.NodeImpl implements org.w3c.dom.Text {
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.DefaultText();
+  public java.lang.String getData() throws org.w3c.dom.DOMException;
+  public void setData(java.lang.String) throws org.w3c.dom.DOMException;
+  public int getLength();
+  public java.lang.String substringData(int, int) throws org.w3c.dom.DOMException;
+  public void appendData(java.lang.String) throws org.w3c.dom.DOMException;
+  public void insertData(int, java.lang.String) throws org.w3c.dom.DOMException;
+  public void deleteData(int, int) throws org.w3c.dom.DOMException;
+  public void replaceData(int, int, java.lang.String) throws org.w3c.dom.DOMException;
+  public org.w3c.dom.Text splitText(int) throws org.w3c.dom.DOMException;
+  public boolean isElementContentWhitespace();
+  public java.lang.String getWholeText();
+  public org.w3c.dom.Text replaceWholeText(java.lang.String) throws org.w3c.dom.DOMException;
+}

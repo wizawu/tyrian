@@ -1,0 +1,17 @@
+Compiled from "AbstractExecutableMemberWriter.java"
+public abstract class jdk.javadoc.internal.doclets.formats.html.AbstractExecutableMemberWriter extends jdk.javadoc.internal.doclets.formats.html.AbstractMemberWriter {
+  public jdk.javadoc.internal.doclets.formats.html.AbstractExecutableMemberWriter(jdk.javadoc.internal.doclets.formats.html.SubWriterHolderWriter, javax.lang.model.element.TypeElement);
+  public jdk.javadoc.internal.doclets.formats.html.AbstractExecutableMemberWriter(jdk.javadoc.internal.doclets.formats.html.SubWriterHolderWriter);
+  protected void addTypeParameters(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected jdk.javadoc.internal.doclets.toolkit.Content getTypeParameters(javax.lang.model.element.ExecutableElement);
+  protected jdk.javadoc.internal.doclets.toolkit.Content getDeprecatedLink(javax.lang.model.element.Element);
+  protected void addSummaryLink(jdk.javadoc.internal.doclets.formats.html.LinkInfoImpl$Kind, javax.lang.model.element.TypeElement, javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addInheritedSummaryLink(javax.lang.model.element.TypeElement, javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addParam(javax.lang.model.element.ExecutableElement, javax.lang.model.element.VariableElement, boolean, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addReceiverAnnotations(javax.lang.model.element.ExecutableElement, javax.lang.model.type.TypeMirror, java.util.List<? extends javax.lang.model.element.AnnotationMirror>, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addParameters(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content, int);
+  protected void addParameters(javax.lang.model.element.ExecutableElement, boolean, jdk.javadoc.internal.doclets.toolkit.Content, int);
+  protected void addExceptions(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content, int);
+  protected javax.lang.model.element.TypeElement implementsMethodInIntfac(javax.lang.model.element.ExecutableElement, java.util.List<javax.lang.model.element.TypeElement>);
+  protected java.lang.String getErasureAnchor(javax.lang.model.element.ExecutableElement);
+}

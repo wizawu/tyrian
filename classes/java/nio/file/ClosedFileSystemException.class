@@ -1,0 +1,5 @@
+Compiled from "ClosedFileSystemException.java"
+public class java.nio.file.ClosedFileSystemException extends java.lang.IllegalStateException {
+  static final long serialVersionUID;
+  public java.nio.file.ClosedFileSystemException();
+}

@@ -1,0 +1,8 @@
+Compiled from "SchemaFactoryFinder.java"
+class javax.xml.validation.SchemaFactoryFinder {
+  static final boolean $assertionsDisabled;
+  public javax.xml.validation.SchemaFactoryFinder(java.lang.ClassLoader);
+  public javax.xml.validation.SchemaFactory newFactory(java.lang.String);
+  javax.xml.validation.SchemaFactory createInstance(java.lang.String);
+  static {};
+}

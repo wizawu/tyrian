@@ -1,0 +1,15 @@
+Compiled from "NotifierArgs.java"
+final class com.sun.jndi.ldap.NotifierArgs {
+  static final int ADDED_MASK;
+  static final int REMOVED_MASK;
+  static final int CHANGED_MASK;
+  static final int RENAMED_MASK;
+  java.lang.String name;
+  java.lang.String filter;
+  javax.naming.directory.SearchControls controls;
+  int mask;
+  com.sun.jndi.ldap.NotifierArgs(java.lang.String, int, javax.naming.event.NamingListener);
+  com.sun.jndi.ldap.NotifierArgs(java.lang.String, java.lang.String, javax.naming.directory.SearchControls, javax.naming.event.NamingListener);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

@@ -1,0 +1,38 @@
+Compiled from "ParserSAX.java"
+final class jdk.internal.util.xml.impl.ParserSAX extends jdk.internal.util.xml.impl.Parser implements jdk.internal.org.xml.sax.XMLReader,jdk.internal.org.xml.sax.Locator {
+  public static final java.lang.String FEATURE_NS;
+  public static final java.lang.String FEATURE_PREF;
+  public jdk.internal.util.xml.impl.ParserSAX();
+  public jdk.internal.org.xml.sax.ContentHandler getContentHandler();
+  public void setContentHandler(jdk.internal.org.xml.sax.ContentHandler);
+  public jdk.internal.org.xml.sax.DTDHandler getDTDHandler();
+  public void setDTDHandler(jdk.internal.org.xml.sax.DTDHandler);
+  public jdk.internal.org.xml.sax.ErrorHandler getErrorHandler();
+  public void setErrorHandler(jdk.internal.org.xml.sax.ErrorHandler);
+  public jdk.internal.org.xml.sax.EntityResolver getEntityResolver();
+  public void setEntityResolver(jdk.internal.org.xml.sax.EntityResolver);
+  public java.lang.String getPublicId();
+  public java.lang.String getSystemId();
+  public int getLineNumber();
+  public int getColumnNumber();
+  public void parse(java.lang.String) throws java.io.IOException, jdk.internal.org.xml.sax.SAXException;
+  public void parse(jdk.internal.org.xml.sax.InputSource) throws java.io.IOException, jdk.internal.org.xml.sax.SAXException;
+  public void parse(java.io.InputStream, jdk.internal.org.xml.sax.helpers.DefaultHandler) throws jdk.internal.org.xml.sax.SAXException, java.io.IOException;
+  public void parse(jdk.internal.org.xml.sax.InputSource, jdk.internal.org.xml.sax.helpers.DefaultHandler) throws jdk.internal.org.xml.sax.SAXException, java.io.IOException;
+  protected void docType(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public void startInternalSub() throws jdk.internal.org.xml.sax.SAXException;
+  protected void comm(char[], int);
+  protected void pi(java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  protected void newPrefix() throws jdk.internal.org.xml.sax.SAXException;
+  protected void skippedEnt(java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  protected jdk.internal.org.xml.sax.InputSource resolveEnt(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException, java.io.IOException;
+  protected void notDecl(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  protected void unparsedEntDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  protected void panic(java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  protected void bflash() throws jdk.internal.org.xml.sax.SAXException;
+  protected void bflash_ws() throws jdk.internal.org.xml.sax.SAXException;
+  public boolean getFeature(java.lang.String);
+  public void setFeature(java.lang.String, boolean);
+  public java.lang.Object getProperty(java.lang.String);
+  public void setProperty(java.lang.String, java.lang.Object);
+}

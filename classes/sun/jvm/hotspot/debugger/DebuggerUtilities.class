@@ -1,0 +1,29 @@
+Compiled from "DebuggerUtilities.java"
+public class sun.jvm.hotspot.debugger.DebuggerUtilities {
+  protected long addressSize;
+  protected boolean isBigEndian;
+  public sun.jvm.hotspot.debugger.DebuggerUtilities(long, boolean);
+  public java.lang.String addressValueToString(long);
+  public void checkAlignment(long, long);
+  public long scanAddress(java.lang.String) throws java.lang.NumberFormatException;
+  public int charToNibble(char) throws java.lang.NumberFormatException;
+  public boolean dataToJBoolean(byte[], long);
+  public byte dataToJByte(byte[], long);
+  public char dataToJChar(byte[], long);
+  public double dataToJDouble(byte[], long);
+  public float dataToJFloat(byte[], long);
+  public int dataToJInt(byte[], long);
+  public long dataToJLong(byte[], long);
+  public short dataToJShort(byte[], long);
+  public long dataToCInteger(byte[], boolean);
+  public long dataToAddressValue(byte[]);
+  public byte[] jbooleanToData(boolean);
+  public byte[] jbyteToData(byte);
+  public byte[] jcharToData(char);
+  public byte[] jdoubleToData(double);
+  public byte[] jfloatToData(float);
+  public byte[] jintToData(int);
+  public byte[] jlongToData(long);
+  public byte[] jshortToData(short);
+  public byte[] cIntegerToData(long, long);
+}

@@ -1,0 +1,10 @@
+Compiled from "BytecodeGoto.java"
+public class sun.jvm.hotspot.interpreter.BytecodeGoto extends sun.jvm.hotspot.interpreter.BytecodeJmp {
+  sun.jvm.hotspot.interpreter.BytecodeGoto(sun.jvm.hotspot.oops.Method, int);
+  public int getTargetBCI();
+  public void verify();
+  public boolean isValid();
+  public static sun.jvm.hotspot.interpreter.BytecodeGoto at(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeGoto atCheck(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeGoto at(sun.jvm.hotspot.interpreter.BytecodeStream);
+}

@@ -1,0 +1,9 @@
+Compiled from "ResponseTimerEvent.java"
+public class jdk.internal.net.http.ResponseTimerEvent extends jdk.internal.net.http.TimeoutEvent {
+  static jdk.internal.net.http.ResponseTimerEvent of(jdk.internal.net.http.MultiExchange<?>);
+  public void handle();
+  public java.lang.String toString();
+  public int compareTo(jdk.internal.net.http.TimeoutEvent);
+  public java.time.Instant deadline();
+  static {};
+}

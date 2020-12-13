@@ -1,0 +1,9 @@
+Compiled from "UnresolvedPermissionCollection.java"
+final class java.security.UnresolvedPermissionCollection extends java.security.PermissionCollection implements java.io.Serializable {
+  public java.security.UnresolvedPermissionCollection();
+  public void add(java.security.Permission);
+  java.util.List<java.security.UnresolvedPermission> getUnresolvedPermissions(java.security.Permission);
+  public boolean implies(java.security.Permission);
+  public java.util.Enumeration<java.security.Permission> elements();
+  static {};
+}

@@ -1,0 +1,38 @@
+Compiled from "SchemaDOM.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOM extends com.sun.org.apache.xerces.internal.impl.xs.opti.DefaultDocument {
+  static final int relationsRowResizeFactor;
+  static final int relationsColResizeFactor;
+  com.sun.org.apache.xerces.internal.impl.xs.opti.NodeImpl[][] relations;
+  com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl parent;
+  int currLoc;
+  int nextFreeLoc;
+  boolean hidden;
+  boolean inCDATA;
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOM();
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl startElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, int, int, int);
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl emptyElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, int, int, int);
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl startElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, int, int);
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl emptyElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, int, int);
+  public void endElement();
+  void comment(com.sun.org.apache.xerces.internal.xni.XMLString);
+  void processingInstruction(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLString);
+  void characters(com.sun.org.apache.xerces.internal.xni.XMLString);
+  void charactersRaw(java.lang.String);
+  void endAnnotation(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.impl.xs.opti.ElementImpl);
+  void endAnnotationElement(com.sun.org.apache.xerces.internal.xni.QName);
+  void endAnnotationElement(java.lang.String);
+  void endSyntheticAnnotationElement(com.sun.org.apache.xerces.internal.xni.QName, boolean);
+  void endSyntheticAnnotationElement(java.lang.String, boolean);
+  void startAnnotationCDATA();
+  void endAnnotationCDATA();
+  public void reset();
+  public void printDOM();
+  public static void traverse(org.w3c.dom.Node, int);
+  public static void indent(int);
+  public org.w3c.dom.Element getDocumentElement();
+  public org.w3c.dom.DOMImplementation getImplementation();
+  void startAnnotation(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.NamespaceContext);
+  void startAnnotation(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.NamespaceContext);
+  void startAnnotationElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes);
+  void startAnnotationElement(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLAttributes);
+}

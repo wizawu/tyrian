@@ -1,0 +1,7 @@
+Compiled from "DOMImplementation.java"
+public interface org.w3c.dom.DOMImplementation {
+  public abstract boolean hasFeature(java.lang.String, java.lang.String);
+  public abstract org.w3c.dom.DocumentType createDocumentType(java.lang.String, java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.Document createDocument(java.lang.String, java.lang.String, org.w3c.dom.DocumentType) throws org.w3c.dom.DOMException;
+  public abstract java.lang.Object getFeature(java.lang.String, java.lang.String);
+}

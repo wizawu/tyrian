@@ -1,0 +1,7 @@
+Compiled from "Media.java"
+public abstract class javax.print.attribute.standard.Media extends javax.print.attribute.EnumSyntax implements javax.print.attribute.DocAttribute,javax.print.attribute.PrintRequestAttribute,javax.print.attribute.PrintJobAttribute {
+  protected javax.print.attribute.standard.Media(int);
+  public boolean equals(java.lang.Object);
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+}

@@ -1,0 +1,28 @@
+Compiled from "IndentingWriter.java"
+public class sun.rmi.rmic.IndentingWriter extends java.io.BufferedWriter {
+  public sun.rmi.rmic.IndentingWriter(java.io.Writer);
+  public sun.rmi.rmic.IndentingWriter(java.io.Writer, int);
+  public sun.rmi.rmic.IndentingWriter(java.io.Writer, int, int);
+  public void write(int) throws java.io.IOException;
+  public void write(char[], int, int) throws java.io.IOException;
+  public void write(java.lang.String, int, int) throws java.io.IOException;
+  public void newLine() throws java.io.IOException;
+  protected void checkWrite() throws java.io.IOException;
+  protected void indentIn();
+  protected void indentOut();
+  public void pI();
+  public void pO();
+  public void p(java.lang.String) throws java.io.IOException;
+  public void pln() throws java.io.IOException;
+  public void pln(java.lang.String) throws java.io.IOException;
+  public void plnI(java.lang.String) throws java.io.IOException;
+  public void pO(java.lang.String) throws java.io.IOException;
+  public void pOln(java.lang.String) throws java.io.IOException;
+  public void pOlnI(java.lang.String) throws java.io.IOException;
+  public void p(java.lang.Object) throws java.io.IOException;
+  public void pln(java.lang.Object) throws java.io.IOException;
+  public void plnI(java.lang.Object) throws java.io.IOException;
+  public void pO(java.lang.Object) throws java.io.IOException;
+  public void pOln(java.lang.Object) throws java.io.IOException;
+  public void pOlnI(java.lang.Object) throws java.io.IOException;
+}

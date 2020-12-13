@@ -1,0 +1,5 @@
+Compiled from "ResourceBundleBasedAdapter.java"
+public interface sun.util.locale.provider.ResourceBundleBasedAdapter {
+  public abstract sun.util.resources.LocaleData getLocaleData();
+  public abstract java.util.List<java.util.Locale> getCandidateLocales(java.lang.String, java.util.Locale);
+}

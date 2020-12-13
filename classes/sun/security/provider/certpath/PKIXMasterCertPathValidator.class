@@ -1,0 +1,6 @@
+Compiled from "PKIXMasterCertPathValidator.java"
+class sun.security.provider.certpath.PKIXMasterCertPathValidator {
+  sun.security.provider.certpath.PKIXMasterCertPathValidator();
+  static void validate(java.security.cert.CertPath, java.util.List<java.security.cert.X509Certificate>, java.util.List<java.security.cert.PKIXCertPathChecker>) throws java.security.cert.CertPathValidatorException;
+  static {};
+}

@@ -1,0 +1,11 @@
+Compiled from "LoweredBorder.java"
+class javax.swing.plaf.nimbus.LoweredBorder extends javax.swing.plaf.nimbus.AbstractRegionPainter implements javax.swing.border.Border {
+  javax.swing.plaf.nimbus.LoweredBorder();
+  protected java.lang.Object[] getExtendedCacheKeys(javax.swing.JComponent);
+  protected void doPaint(java.awt.Graphics2D, javax.swing.JComponent, int, int, java.lang.Object[]);
+  protected javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext getPaintContext();
+  public java.awt.Insets getBorderInsets(java.awt.Component);
+  public boolean isBorderOpaque();
+  public void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
+  static {};
+}

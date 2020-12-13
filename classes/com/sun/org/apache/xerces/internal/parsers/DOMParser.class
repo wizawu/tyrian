@@ -1,0 +1,25 @@
+Compiled from "DOMParser.java"
+public class com.sun.org.apache.xerces.internal.parsers.DOMParser extends com.sun.org.apache.xerces.internal.parsers.AbstractDOMParser {
+  protected static final java.lang.String USE_ENTITY_RESOLVER2;
+  protected static final java.lang.String REPORT_WHITESPACE;
+  protected static final java.lang.String SYMBOL_TABLE;
+  protected static final java.lang.String XMLGRAMMAR_POOL;
+  protected boolean fUseEntityResolver2;
+  public com.sun.org.apache.xerces.internal.parsers.DOMParser(com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration);
+  public com.sun.org.apache.xerces.internal.parsers.DOMParser();
+  public com.sun.org.apache.xerces.internal.parsers.DOMParser(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public com.sun.org.apache.xerces.internal.parsers.DOMParser(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
+  public void parse(java.lang.String) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(org.xml.sax.InputSource) throws org.xml.sax.SAXException, java.io.IOException;
+  public void setEntityResolver(org.xml.sax.EntityResolver);
+  public org.xml.sax.EntityResolver getEntityResolver();
+  public void setErrorHandler(org.xml.sax.ErrorHandler);
+  public org.xml.sax.ErrorHandler getErrorHandler();
+  public void setFeature(java.lang.String, boolean) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public boolean getFeature(java.lang.String) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public void setProperty(java.lang.String, java.lang.Object) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public void setProperty0(java.lang.String, java.lang.Object) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public java.lang.Object getProperty(java.lang.String) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration getXMLParserConfiguration();
+  static {};
+}

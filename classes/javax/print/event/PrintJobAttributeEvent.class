@@ -1,0 +1,6 @@
+Compiled from "PrintJobAttributeEvent.java"
+public class javax.print.event.PrintJobAttributeEvent extends javax.print.event.PrintEvent {
+  public javax.print.event.PrintJobAttributeEvent(javax.print.DocPrintJob, javax.print.attribute.PrintJobAttributeSet);
+  public javax.print.DocPrintJob getPrintJob();
+  public javax.print.attribute.PrintJobAttributeSet getAttributes();
+}

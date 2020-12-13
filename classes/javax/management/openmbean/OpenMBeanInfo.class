@@ -1,0 +1,12 @@
+Compiled from "OpenMBeanInfo.java"
+public interface javax.management.openmbean.OpenMBeanInfo {
+  public abstract java.lang.String getClassName();
+  public abstract java.lang.String getDescription();
+  public abstract javax.management.MBeanAttributeInfo[] getAttributes();
+  public abstract javax.management.MBeanOperationInfo[] getOperations();
+  public abstract javax.management.MBeanConstructorInfo[] getConstructors();
+  public abstract javax.management.MBeanNotificationInfo[] getNotifications();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public abstract java.lang.String toString();
+}

@@ -1,0 +1,19 @@
+Compiled from "MemberSummaryBuilder.java"
+public abstract class jdk.javadoc.internal.doclets.toolkit.builders.MemberSummaryBuilder extends jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder {
+  final jdk.javadoc.internal.doclets.toolkit.builders.MemberSummaryBuilder$PropertyHelper pHelper;
+  public static jdk.javadoc.internal.doclets.toolkit.builders.MemberSummaryBuilder getInstance(jdk.javadoc.internal.doclets.toolkit.ClassWriter, jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder$Context);
+  public static jdk.javadoc.internal.doclets.toolkit.builders.MemberSummaryBuilder getInstance(jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter, jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder$Context);
+  public jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable getVisibleMemberTable();
+  public jdk.javadoc.internal.doclets.toolkit.MemberSummaryWriter getMemberSummaryWriter(jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable$Kind);
+  public java.util.SortedSet<javax.lang.model.element.Element> members(jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable$Kind);
+  public boolean hasMembers(jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable$Kind);
+  protected void buildEnumConstantsSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildAnnotationTypeFieldsSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildAnnotationTypeOptionalMemberSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildAnnotationTypeRequiredMemberSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildFieldsSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildPropertiesSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildNestedClassesSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildMethodsSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildConstructorsSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+}

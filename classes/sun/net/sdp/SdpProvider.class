@@ -1,0 +1,6 @@
+Compiled from "SdpProvider.java"
+public class sun.net.sdp.SdpProvider extends sun.net.NetHooks$Provider {
+  public sun.net.sdp.SdpProvider();
+  public void implBeforeTcpBind(java.io.FileDescriptor, java.net.InetAddress, int) throws java.io.IOException;
+  public void implBeforeTcpConnect(java.io.FileDescriptor, java.net.InetAddress, int) throws java.io.IOException;
+}

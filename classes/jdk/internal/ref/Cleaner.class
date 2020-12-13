@@ -1,0 +1,6 @@
+Compiled from "Cleaner.java"
+public class jdk.internal.ref.Cleaner extends java.lang.ref.PhantomReference<java.lang.Object> {
+  public static jdk.internal.ref.Cleaner create(java.lang.Object, java.lang.Runnable);
+  public void clean();
+  static {};
+}

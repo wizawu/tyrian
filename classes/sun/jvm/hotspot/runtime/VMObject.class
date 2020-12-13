@@ -1,0 +1,9 @@
+Compiled from "VMObject.java"
+public class sun.jvm.hotspot.runtime.VMObject {
+  protected sun.jvm.hotspot.debugger.Address addr;
+  public sun.jvm.hotspot.runtime.VMObject(sun.jvm.hotspot.debugger.Address);
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public sun.jvm.hotspot.debugger.Address getAddress();
+}

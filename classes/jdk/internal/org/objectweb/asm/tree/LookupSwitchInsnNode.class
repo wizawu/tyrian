@@ -1,0 +1,10 @@
+Compiled from "LookupSwitchInsnNode.java"
+public class jdk.internal.org.objectweb.asm.tree.LookupSwitchInsnNode extends jdk.internal.org.objectweb.asm.tree.AbstractInsnNode {
+  public jdk.internal.org.objectweb.asm.tree.LabelNode dflt;
+  public java.util.List<java.lang.Integer> keys;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.LabelNode> labels;
+  public jdk.internal.org.objectweb.asm.tree.LookupSwitchInsnNode(jdk.internal.org.objectweb.asm.tree.LabelNode, int[], jdk.internal.org.objectweb.asm.tree.LabelNode[]);
+  public int getType();
+  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode clone(java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
+}

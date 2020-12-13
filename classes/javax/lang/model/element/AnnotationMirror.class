@@ -1,0 +1,5 @@
+Compiled from "AnnotationMirror.java"
+public interface javax.lang.model.element.AnnotationMirror {
+  public abstract javax.lang.model.type.DeclaredType getAnnotationType();
+  public abstract java.util.Map<? extends javax.lang.model.element.ExecutableElement, ? extends javax.lang.model.element.AnnotationValue> getElementValues();
+}

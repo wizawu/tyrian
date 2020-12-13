@@ -1,0 +1,6 @@
+Compiled from "Counter.java"
+public interface org.w3c.dom.css.Counter {
+  public abstract java.lang.String getIdentifier();
+  public abstract java.lang.String getListStyle();
+  public abstract java.lang.String getSeparator();
+}

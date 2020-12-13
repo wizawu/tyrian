@@ -1,0 +1,7 @@
+Compiled from "MatcherFactory.java"
+public abstract class jdk.nashorn.internal.runtime.regexp.joni.MatcherFactory {
+  static final jdk.nashorn.internal.runtime.regexp.joni.MatcherFactory DEFAULT;
+  public jdk.nashorn.internal.runtime.regexp.joni.MatcherFactory();
+  public abstract jdk.nashorn.internal.runtime.regexp.joni.Matcher create(jdk.nashorn.internal.runtime.regexp.joni.Regex, char[], int, int);
+  static {};
+}

@@ -1,0 +1,20 @@
+Compiled from "XECParameters.java"
+public class sun.security.ec.XECParameters {
+  public sun.security.ec.XECParameters(int, java.math.BigInteger, int, byte, int, sun.security.util.ObjectIdentifier, java.lang.String);
+  public int getBits();
+  public int getBytes();
+  public int getLogCofactor();
+  public java.math.BigInteger getP();
+  public int getA24();
+  public byte getBasePoint();
+  public sun.security.util.ObjectIdentifier getOid();
+  public java.lang.String getName();
+  public static java.util.Optional<sun.security.ec.XECParameters> getByOid(sun.security.util.ObjectIdentifier);
+  public static java.util.Optional<sun.security.ec.XECParameters> getBySize(int);
+  public static java.util.Optional<sun.security.ec.XECParameters> getByName(java.lang.String);
+  boolean oidEquals(sun.security.ec.XECParameters);
+  public static <T extends java.lang.Throwable> sun.security.ec.XECParameters getBySize(java.util.function.Function<java.lang.String, T>, int) throws T;
+  public static <T extends java.lang.Throwable> sun.security.ec.XECParameters get(java.util.function.Function<java.lang.String, T>, sun.security.x509.AlgorithmId) throws T;
+  public static <T extends java.lang.Throwable> sun.security.ec.XECParameters get(java.util.function.Function<java.lang.String, T>, java.security.spec.AlgorithmParameterSpec) throws T;
+  static {};
+}

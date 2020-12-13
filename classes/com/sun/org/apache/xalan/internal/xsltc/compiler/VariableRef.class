@@ -1,0 +1,5 @@
+Compiled from "VariableRef.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRef extends com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRef(com.sun.org.apache.xalan.internal.xsltc.compiler.Variable);
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

@@ -1,0 +1,18 @@
+Compiled from "XML11DocumentScannerImpl.java"
+public class com.sun.org.apache.xerces.internal.impl.XML11DocumentScannerImpl extends com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl {
+  public com.sun.org.apache.xerces.internal.impl.XML11DocumentScannerImpl();
+  protected int scanContent(com.sun.org.apache.xerces.internal.util.XMLStringBuffer) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected boolean scanAttributeValue(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.XMLString, java.lang.String, boolean, java.lang.String, boolean) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected boolean scanPubidLiteral(com.sun.org.apache.xerces.internal.xni.XMLString) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected void normalizeWhitespace(com.sun.org.apache.xerces.internal.xni.XMLString);
+  protected void normalizeWhitespace(com.sun.org.apache.xerces.internal.xni.XMLString, int);
+  protected int isUnchangedByNormalization(com.sun.org.apache.xerces.internal.xni.XMLString);
+  protected boolean isInvalid(int);
+  protected boolean isInvalidLiteral(int);
+  protected boolean isValidNameChar(int);
+  protected boolean isValidNameStartChar(int);
+  protected boolean isValidNCName(int);
+  protected boolean isValidNameStartHighSurrogate(int);
+  protected boolean versionSupported(java.lang.String);
+  protected java.lang.String getVersionNotSupportedKey();
+}

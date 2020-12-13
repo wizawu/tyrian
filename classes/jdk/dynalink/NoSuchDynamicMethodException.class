@@ -1,0 +1,4 @@
+Compiled from "NoSuchDynamicMethodException.java"
+public class jdk.dynalink.NoSuchDynamicMethodException extends java.lang.RuntimeException {
+  public jdk.dynalink.NoSuchDynamicMethodException(java.lang.String);
+}

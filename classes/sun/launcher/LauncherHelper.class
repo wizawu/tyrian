@@ -1,0 +1,26 @@
+Compiled from "LauncherHelper.java"
+public final class sun.launcher.LauncherHelper {
+  static final boolean trace;
+  static void showSettings(boolean, java.lang.String, long, long, long);
+  public static void printSystemMetrics();
+  static void initHelpMessage(java.lang.String);
+  static void appendVmSelectMessage(java.lang.String, java.lang.String);
+  static void appendVmSynonymMessage(java.lang.String, java.lang.String);
+  static void printHelpMessage(boolean);
+  static void printXUsageMessage(boolean);
+  static void initOutput(boolean);
+  static void initOutput(java.io.PrintStream);
+  static java.lang.String getMainClassFromJar(java.lang.String);
+  static void addExportsOrOpens(java.lang.String, boolean);
+  static void abort(java.lang.Throwable, java.lang.String, java.lang.Object...);
+  public static java.lang.Class<?> checkAndLoadMain(boolean, int, java.lang.String);
+  public static java.lang.Class<?> getApplicationClass();
+  static void validateMainClass(java.lang.Class<?>);
+  static java.lang.String makePlatformString(boolean, byte[]);
+  static java.lang.String[] expandArgs(java.lang.String[]);
+  static java.lang.String[] expandArgs(java.util.List<sun.launcher.LauncherHelper$StdArg>);
+  static void listModules();
+  static void showResolvedModules();
+  static void describeModule(java.lang.String);
+  static {};
+}

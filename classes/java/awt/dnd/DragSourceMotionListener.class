@@ -1,0 +1,4 @@
+Compiled from "DragSourceMotionListener.java"
+public interface java.awt.dnd.DragSourceMotionListener extends java.util.EventListener {
+  public abstract void dragMouseMoved(java.awt.dnd.DragSourceDragEvent);
+}

@@ -1,0 +1,8 @@
+Compiled from "MetalMenuBarUI.java"
+public class javax.swing.plaf.metal.MetalMenuBarUI extends javax.swing.plaf.basic.BasicMenuBarUI {
+  public javax.swing.plaf.metal.MetalMenuBarUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+}

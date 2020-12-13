@@ -1,0 +1,10 @@
+Compiled from "BytecodeNew.java"
+public class sun.jvm.hotspot.interpreter.BytecodeNew extends sun.jvm.hotspot.interpreter.BytecodeWithKlass {
+  sun.jvm.hotspot.interpreter.BytecodeNew(sun.jvm.hotspot.oops.Method, int);
+  public sun.jvm.hotspot.oops.InstanceKlass getNewKlass();
+  public void verify();
+  public boolean isValid();
+  public static sun.jvm.hotspot.interpreter.BytecodeNew at(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeNew atCheck(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeNew at(sun.jvm.hotspot.interpreter.BytecodeStream);
+}

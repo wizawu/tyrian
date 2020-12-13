@@ -1,0 +1,13 @@
+Compiled from "MembershipKeyImpl.java"
+class sun.nio.ch.MembershipKeyImpl extends java.nio.channels.MembershipKey {
+  public boolean isValid();
+  void invalidate();
+  public void drop();
+  public java.nio.channels.MulticastChannel channel();
+  public java.net.InetAddress group();
+  public java.net.NetworkInterface networkInterface();
+  public java.net.InetAddress sourceAddress();
+  public java.nio.channels.MembershipKey block(java.net.InetAddress) throws java.io.IOException;
+  public java.nio.channels.MembershipKey unblock(java.net.InetAddress);
+  public java.lang.String toString();
+}

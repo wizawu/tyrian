@@ -1,0 +1,4 @@
+Compiled from "NodeSetData.java"
+public interface javax.xml.crypto.NodeSetData<T> extends javax.xml.crypto.Data, java.lang.Iterable<T> {
+  public abstract java.util.Iterator<T> iterator();
+}

@@ -1,0 +1,8 @@
+Compiled from "ArrayElementHandler.java"
+final class com.sun.beans.decoder.ArrayElementHandler extends com.sun.beans.decoder.NewElementHandler {
+  com.sun.beans.decoder.ArrayElementHandler();
+  public void addAttribute(java.lang.String, java.lang.String);
+  public void startElement();
+  protected boolean isArgument();
+  protected com.sun.beans.decoder.ValueObject getValueObject(java.lang.Class<?>, java.lang.Object[]);
+}

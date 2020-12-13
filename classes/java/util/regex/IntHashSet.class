@@ -1,0 +1,7 @@
+Compiled from "IntHashSet.java"
+class java.util.regex.IntHashSet {
+  public java.util.regex.IntHashSet();
+  public boolean contains(int);
+  public void add(int);
+  public void clear();
+}

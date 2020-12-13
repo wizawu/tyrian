@@ -1,0 +1,41 @@
+Compiled from "AbstractDateTimeDV.java"
+public abstract class com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
+  protected static final int YEAR;
+  protected static final int MONTH;
+  protected static final int DAY;
+  protected static final javax.xml.datatype.DatatypeFactory datatypeFactory;
+  public com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV();
+  public short getAllowedFacets();
+  public boolean isIdentical(java.lang.Object, java.lang.Object);
+  public int compare(java.lang.Object, java.lang.Object);
+  protected short compareDates(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData, com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData, boolean);
+  protected short compareOrder(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData, com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
+  protected void getTime(java.lang.String, int, int, com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData) throws java.lang.RuntimeException;
+  protected int getDate(java.lang.String, int, int, com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData) throws java.lang.RuntimeException;
+  protected int getYearMonth(java.lang.String, int, int, com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData) throws java.lang.RuntimeException;
+  protected void parseTimeZone(java.lang.String, int, int, com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData) throws java.lang.RuntimeException;
+  protected void getTimeZone(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData, int, int) throws java.lang.RuntimeException;
+  protected int indexOf(java.lang.String, int, int, char);
+  protected void validateDateTime(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
+  protected int findUTCSign(java.lang.String, int, int);
+  protected final boolean isNextCharUTCSign(java.lang.String, int, int);
+  protected int parseInt(java.lang.String, int, int) throws java.lang.NumberFormatException;
+  protected int parseIntYear(java.lang.String, int);
+  protected void normalize(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
+  protected void saveUnnormalized(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
+  protected void resetDateObj(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
+  protected int maxDayInMonthFor(int, int);
+  protected int mod(int, int, int);
+  protected int fQuotient(int, int);
+  protected int modulo(int, int, int);
+  protected int fQuotient(int, int, int);
+  protected java.lang.String dateToString(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
+  protected final void append(java.lang.StringBuffer, int, int);
+  protected final void append(java.lang.StringBuffer, double);
+  protected final void append2(java.lang.StringBuffer, double);
+  protected double parseSecond(java.lang.String, int, int) throws java.lang.NumberFormatException;
+  protected javax.xml.datatype.XMLGregorianCalendar getXMLGregorianCalendar(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
+  protected javax.xml.datatype.Duration getDuration(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
+  protected final java.math.BigDecimal getFractionalSecondsAsBigDecimal(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
+  static {};
+}

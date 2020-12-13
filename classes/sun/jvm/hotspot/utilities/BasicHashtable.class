@@ -1,0 +1,8 @@
+Compiled from "BasicHashtable.java"
+public class sun.jvm.hotspot.utilities.BasicHashtable extends sun.jvm.hotspot.runtime.VMObject {
+  protected int tableSize();
+  protected sun.jvm.hotspot.utilities.BasicHashtableEntry bucket(int);
+  protected java.lang.Class getHashtableEntryClass();
+  public sun.jvm.hotspot.utilities.BasicHashtable(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

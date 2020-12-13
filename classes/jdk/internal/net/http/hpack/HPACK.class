@@ -1,0 +1,9 @@
+Compiled from "HPACK.java"
+public final class jdk.internal.net.http.hpack.HPACK {
+  static final boolean $assertionsDisabled;
+  public static jdk.internal.net.http.hpack.HPACK$Logger getLogger();
+  public static int read(java.nio.ByteBuffer, long, int, jdk.internal.net.http.hpack.HPACK$BufferUpdateConsumer);
+  public static int write(long, int, jdk.internal.net.http.hpack.HPACK$BufferUpdateConsumer, java.nio.ByteBuffer);
+  static int bytesForBits(int);
+  static {};
+}

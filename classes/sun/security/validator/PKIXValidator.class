@@ -1,0 +1,10 @@
+Compiled from "PKIXValidator.java"
+public final class sun.security.validator.PKIXValidator extends sun.security.validator.Validator {
+  sun.security.validator.PKIXValidator(java.lang.String, java.util.Collection<java.security.cert.X509Certificate>);
+  sun.security.validator.PKIXValidator(java.lang.String, java.security.cert.PKIXBuilderParameters);
+  public java.util.Collection<java.security.cert.X509Certificate> getTrustedCertificates();
+  public int getCertPathLength();
+  public java.security.cert.PKIXBuilderParameters getParameters();
+  java.security.cert.X509Certificate[] engineValidate(java.security.cert.X509Certificate[], java.util.Collection<java.security.cert.X509Certificate>, java.util.List<byte[]>, java.security.AlgorithmConstraints, java.lang.Object) throws java.security.cert.CertificateException;
+  static {};
+}

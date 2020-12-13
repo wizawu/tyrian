@@ -1,0 +1,18 @@
+Compiled from "NamingEvent.java"
+public class javax.naming.event.NamingEvent extends java.util.EventObject {
+  public static final int OBJECT_ADDED;
+  public static final int OBJECT_REMOVED;
+  public static final int OBJECT_RENAMED;
+  public static final int OBJECT_CHANGED;
+  protected java.lang.Object changeInfo;
+  protected int type;
+  protected javax.naming.Binding oldBinding;
+  protected javax.naming.Binding newBinding;
+  public javax.naming.event.NamingEvent(javax.naming.event.EventContext, int, javax.naming.Binding, javax.naming.Binding, java.lang.Object);
+  public int getType();
+  public javax.naming.event.EventContext getEventContext();
+  public javax.naming.Binding getOldBinding();
+  public javax.naming.Binding getNewBinding();
+  public java.lang.Object getChangeInfo();
+  public void dispatch(javax.naming.event.NamingListener);
+}

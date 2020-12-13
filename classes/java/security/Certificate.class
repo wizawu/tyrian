@@ -1,0 +1,10 @@
+Compiled from "Certificate.java"
+public interface java.security.Certificate {
+  public abstract java.security.Principal getGuarantor();
+  public abstract java.security.Principal getPrincipal();
+  public abstract java.security.PublicKey getPublicKey();
+  public abstract void encode(java.io.OutputStream) throws java.security.KeyException, java.io.IOException;
+  public abstract void decode(java.io.InputStream) throws java.security.KeyException, java.io.IOException;
+  public abstract java.lang.String getFormat();
+  public abstract java.lang.String toString(boolean);
+}

@@ -1,0 +1,17 @@
+Compiled from "SOFMarkerSegment.java"
+class com.sun.imageio.plugins.jpeg.SOFMarkerSegment extends com.sun.imageio.plugins.jpeg.MarkerSegment {
+  int samplePrecision;
+  int numLines;
+  int samplesPerLine;
+  com.sun.imageio.plugins.jpeg.SOFMarkerSegment$ComponentSpec[] componentSpecs;
+  com.sun.imageio.plugins.jpeg.SOFMarkerSegment(boolean, boolean, boolean, byte[], int);
+  com.sun.imageio.plugins.jpeg.SOFMarkerSegment(com.sun.imageio.plugins.jpeg.JPEGBuffer) throws java.io.IOException;
+  com.sun.imageio.plugins.jpeg.SOFMarkerSegment(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected java.lang.Object clone();
+  javax.imageio.metadata.IIOMetadataNode getNativeNode();
+  void updateFromNativeNode(org.w3c.dom.Node, boolean) throws javax.imageio.metadata.IIOInvalidTreeException;
+  void write(javax.imageio.stream.ImageOutputStream) throws java.io.IOException;
+  void print();
+  int getIDencodedCSType();
+  com.sun.imageio.plugins.jpeg.SOFMarkerSegment$ComponentSpec getComponentSpec(byte, int, int);
+}

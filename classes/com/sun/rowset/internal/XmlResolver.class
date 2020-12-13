@@ -1,0 +1,5 @@
+Compiled from "XmlResolver.java"
+public class com.sun.rowset.internal.XmlResolver implements org.xml.sax.EntityResolver {
+  public com.sun.rowset.internal.XmlResolver();
+  public org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String);
+}

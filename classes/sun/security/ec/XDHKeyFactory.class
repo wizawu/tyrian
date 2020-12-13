@@ -1,0 +1,9 @@
+Compiled from "XDHKeyFactory.java"
+public class sun.security.ec.XDHKeyFactory extends java.security.KeyFactorySpi {
+  sun.security.ec.XDHKeyFactory();
+  protected sun.security.ec.XDHKeyFactory(java.security.spec.AlgorithmParameterSpec);
+  protected java.security.Key engineTranslateKey(java.security.Key) throws java.security.InvalidKeyException;
+  protected java.security.PublicKey engineGeneratePublic(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
+  protected java.security.PrivateKey engineGeneratePrivate(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
+  protected <T extends java.security.spec.KeySpec> T engineGetKeySpec(java.security.Key, java.lang.Class<T>) throws java.security.spec.InvalidKeySpecException;
+}

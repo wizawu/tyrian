@@ -1,0 +1,6 @@
+Compiled from "LongArrayWrapper.java"
+public class com.sun.org.apache.xml.internal.utils.res.LongArrayWrapper {
+  public com.sun.org.apache.xml.internal.utils.res.LongArrayWrapper(long[]);
+  public long getLong(int);
+  public int getLength();
+}

@@ -1,0 +1,9 @@
+Compiled from "SynthArrowButton.java"
+class javax.swing.plaf.synth.SynthArrowButton extends javax.swing.JButton implements javax.swing.SwingConstants,javax.swing.plaf.UIResource {
+  public javax.swing.plaf.synth.SynthArrowButton(int);
+  public java.lang.String getUIClassID();
+  public void updateUI();
+  public void setDirection(int);
+  public int getDirection();
+  public void setFocusable(boolean);
+}

@@ -1,0 +1,9 @@
+Compiled from "BoundCallable.java"
+public final class jdk.nashorn.internal.runtime.linker.BoundCallable {
+  jdk.nashorn.internal.runtime.linker.BoundCallable(java.lang.Object, java.lang.Object, java.lang.Object[]);
+  java.lang.Object getCallable();
+  java.lang.Object getBoundThis();
+  java.lang.Object[] getBoundArgs();
+  jdk.nashorn.internal.runtime.linker.BoundCallable bind(java.lang.Object[]);
+  public java.lang.String toString();
+}

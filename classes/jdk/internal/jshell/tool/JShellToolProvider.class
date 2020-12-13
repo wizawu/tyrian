@@ -1,0 +1,8 @@
+Compiled from "JShellToolProvider.java"
+public class jdk.internal.jshell.tool.JShellToolProvider implements javax.tools.Tool {
+  public jdk.internal.jshell.tool.JShellToolProvider();
+  public java.lang.String name();
+  public int run(java.io.InputStream, java.io.OutputStream, java.io.OutputStream, java.lang.String...);
+  public java.util.Set<javax.lang.model.SourceVersion> getSourceVersions();
+  public static void main(java.lang.String[]) throws java.lang.Exception;
+}

@@ -1,0 +1,5 @@
+Compiled from "CertSelector.java"
+public interface java.security.cert.CertSelector extends java.lang.Cloneable {
+  public abstract boolean match(java.security.cert.Certificate);
+  public abstract java.lang.Object clone();
+}

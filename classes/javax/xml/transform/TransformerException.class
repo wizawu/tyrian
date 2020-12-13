@@ -1,0 +1,20 @@
+Compiled from "TransformerException.java"
+public class javax.xml.transform.TransformerException extends java.lang.Exception {
+  javax.xml.transform.SourceLocator locator;
+  java.lang.Throwable containedException;
+  public javax.xml.transform.SourceLocator getLocator();
+  public void setLocator(javax.xml.transform.SourceLocator);
+  public java.lang.Throwable getException();
+  public java.lang.Throwable getCause();
+  public synchronized java.lang.Throwable initCause(java.lang.Throwable);
+  public javax.xml.transform.TransformerException(java.lang.String);
+  public javax.xml.transform.TransformerException(java.lang.Throwable);
+  public javax.xml.transform.TransformerException(java.lang.String, java.lang.Throwable);
+  public javax.xml.transform.TransformerException(java.lang.String, javax.xml.transform.SourceLocator);
+  public javax.xml.transform.TransformerException(java.lang.String, javax.xml.transform.SourceLocator, java.lang.Throwable);
+  public java.lang.String getMessageAndLocation();
+  public java.lang.String getLocationAsString();
+  public void printStackTrace();
+  public void printStackTrace(java.io.PrintStream);
+  public void printStackTrace(java.io.PrintWriter);
+}

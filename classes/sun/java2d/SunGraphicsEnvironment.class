@@ -1,0 +1,32 @@
+Compiled from "SunGraphicsEnvironment.java"
+public abstract class sun.java2d.SunGraphicsEnvironment extends java.awt.GraphicsEnvironment implements sun.awt.DisplayChangedListener {
+  public static boolean isOpenSolaris;
+  protected java.awt.GraphicsDevice[] screens;
+  protected sun.awt.SunDisplayChanger displayChanger;
+  public sun.java2d.SunGraphicsEnvironment();
+  public synchronized java.awt.GraphicsDevice[] getScreenDevices();
+  protected abstract int getNumScreens();
+  protected abstract java.awt.GraphicsDevice makeScreenDevice(int);
+  public java.awt.GraphicsDevice getDefaultScreenDevice();
+  public java.awt.Graphics2D createGraphics(java.awt.image.BufferedImage);
+  public static sun.font.FontManagerForSGE getFontManagerForSGE();
+  public static void useAlternateFontforJALocales();
+  public java.awt.Font[] getAllFonts();
+  public java.lang.String[] getAvailableFontFamilyNames(java.util.Locale);
+  public java.lang.String[] getAvailableFontFamilyNames();
+  public static java.awt.Rectangle getUsableBounds(java.awt.GraphicsDevice);
+  public void displayChanged();
+  public void paletteChanged();
+  public abstract boolean isDisplayLocal();
+  public void addDisplayChangedListener(sun.awt.DisplayChangedListener);
+  public void removeDisplayChangedListener(sun.awt.DisplayChangedListener);
+  public boolean isFlipStrategyPreferred(java.awt.peer.ComponentPeer);
+  public static boolean isUIScaleEnabled();
+  public static double getDebugScale();
+  public static double getScaleFactor(java.lang.String);
+  public static java.awt.GraphicsConfiguration getGraphicsConfigurationAtPoint(java.awt.GraphicsConfiguration, double, double);
+  public static java.awt.Point convertToDeviceSpace(double, double);
+  public static java.awt.Rectangle convertToDeviceSpace(java.awt.Rectangle);
+  public static java.awt.Rectangle convertToDeviceSpace(java.awt.GraphicsConfiguration, java.awt.Rectangle);
+  static {};
+}

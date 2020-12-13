@@ -1,0 +1,8 @@
+Compiled from "OutlineableChunkStart.java"
+class com.sun.org.apache.xalan.internal.xsltc.compiler.util.OutlineableChunkStart extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.MarkerInstruction {
+  public static final com.sun.org.apache.bcel.internal.generic.Instruction OUTLINEABLECHUNKSTART;
+  public java.lang.String getName();
+  public java.lang.String toString();
+  public java.lang.String toString(boolean);
+  static {};
+}

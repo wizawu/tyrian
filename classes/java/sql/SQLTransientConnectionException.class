@@ -1,0 +1,11 @@
+Compiled from "SQLTransientConnectionException.java"
+public class java.sql.SQLTransientConnectionException extends java.sql.SQLTransientException {
+  public java.sql.SQLTransientConnectionException();
+  public java.sql.SQLTransientConnectionException(java.lang.String);
+  public java.sql.SQLTransientConnectionException(java.lang.String, java.lang.String);
+  public java.sql.SQLTransientConnectionException(java.lang.String, java.lang.String, int);
+  public java.sql.SQLTransientConnectionException(java.lang.Throwable);
+  public java.sql.SQLTransientConnectionException(java.lang.String, java.lang.Throwable);
+  public java.sql.SQLTransientConnectionException(java.lang.String, java.lang.String, java.lang.Throwable);
+  public java.sql.SQLTransientConnectionException(java.lang.String, java.lang.String, int, java.lang.Throwable);
+}

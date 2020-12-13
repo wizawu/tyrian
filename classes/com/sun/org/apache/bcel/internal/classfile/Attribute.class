@@ -1,0 +1,22 @@
+Compiled from "Attribute.java"
+public abstract class com.sun.org.apache.bcel.internal.classfile.Attribute implements java.lang.Cloneable,com.sun.org.apache.bcel.internal.classfile.Node {
+  protected com.sun.org.apache.bcel.internal.classfile.Attribute(byte, int, int, com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public abstract void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public static void addAttributeReader(java.lang.String, com.sun.org.apache.bcel.internal.classfile.UnknownAttributeReader);
+  public static void removeAttributeReader(java.lang.String);
+  public static com.sun.org.apache.bcel.internal.classfile.Attribute readAttribute(java.io.DataInputStream, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException, com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
+  public static com.sun.org.apache.bcel.internal.classfile.Attribute readAttribute(java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException, com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
+  public java.lang.String getName();
+  public final int getLength();
+  public final void setLength(int);
+  public final void setNameIndex(int);
+  public final int getNameIndex();
+  public final byte getTag();
+  public final com.sun.org.apache.bcel.internal.classfile.ConstantPool getConstantPool();
+  public final void setConstantPool(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public java.lang.Object clone();
+  public abstract com.sun.org.apache.bcel.internal.classfile.Attribute copy(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public java.lang.String toString();
+  static {};
+}

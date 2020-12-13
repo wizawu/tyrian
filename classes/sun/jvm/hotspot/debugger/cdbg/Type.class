@@ -1,0 +1,34 @@
+Compiled from "Type.java"
+public interface sun.jvm.hotspot.debugger.cdbg.Type {
+  public abstract java.lang.String getName();
+  public abstract int getSize();
+  public abstract sun.jvm.hotspot.debugger.cdbg.BitType asBit();
+  public abstract sun.jvm.hotspot.debugger.cdbg.IntType asInt();
+  public abstract sun.jvm.hotspot.debugger.cdbg.EnumType asEnum();
+  public abstract sun.jvm.hotspot.debugger.cdbg.FloatType asFloat();
+  public abstract sun.jvm.hotspot.debugger.cdbg.DoubleType asDouble();
+  public abstract sun.jvm.hotspot.debugger.cdbg.PointerType asPointer();
+  public abstract sun.jvm.hotspot.debugger.cdbg.ArrayType asArray();
+  public abstract sun.jvm.hotspot.debugger.cdbg.RefType asRef();
+  public abstract sun.jvm.hotspot.debugger.cdbg.CompoundType asCompound();
+  public abstract sun.jvm.hotspot.debugger.cdbg.FunctionType asFunction();
+  public abstract sun.jvm.hotspot.debugger.cdbg.MemberFunctionType asMemberFunction();
+  public abstract sun.jvm.hotspot.debugger.cdbg.VoidType asVoid();
+  public abstract boolean isBit();
+  public abstract boolean isInt();
+  public abstract boolean isEnum();
+  public abstract boolean isFloat();
+  public abstract boolean isDouble();
+  public abstract boolean isPointer();
+  public abstract boolean isArray();
+  public abstract boolean isRef();
+  public abstract boolean isCompound();
+  public abstract boolean isFunction();
+  public abstract boolean isMemberFunction();
+  public abstract boolean isVoid();
+  public abstract boolean isConst();
+  public abstract boolean isVolatile();
+  public abstract void iterateObject(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.cdbg.ObjectVisitor);
+  public abstract void iterateObject(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.cdbg.ObjectVisitor, sun.jvm.hotspot.debugger.cdbg.FieldIdentifier);
+  public abstract java.lang.String toString();
+}

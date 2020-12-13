@@ -1,0 +1,17 @@
+Compiled from "XSelection.java"
+final class sun.awt.X11.XSelection {
+  public static final long MAX_LENGTH;
+  public static final int MAX_PROPERTY_SIZE;
+  static sun.awt.X11.XSelection getSelection(sun.awt.X11.XAtom);
+  sun.awt.X11.XSelection(sun.awt.X11.XAtom);
+  public sun.awt.X11.XAtom getSelectionAtom();
+  synchronized boolean setOwner(java.awt.datatransfer.Transferable, java.util.Map<java.lang.Long, java.awt.datatransfer.DataFlavor>, long[], long);
+  public long[] getTargets(long);
+  static long[] getFormats(sun.awt.X11.WindowPropertyGetter);
+  public byte[] getData(long, long) throws java.io.IOException;
+  boolean isOwner();
+  public synchronized void reset();
+  void registerOwershipListener(sun.awt.X11.OwnershipListener);
+  void unregisterOwnershipListener();
+  static {};
+}

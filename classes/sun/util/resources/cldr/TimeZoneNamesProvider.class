@@ -1,0 +1,3 @@
+Compiled from "TimeZoneNamesProvider.java"
+public interface sun.util.resources.cldr.TimeZoneNamesProvider extends java.util.spi.ResourceBundleProvider {
+}

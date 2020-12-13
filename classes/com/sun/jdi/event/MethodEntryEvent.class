@@ -1,0 +1,4 @@
+Compiled from "MethodEntryEvent.java"
+public interface com.sun.jdi.event.MethodEntryEvent extends com.sun.jdi.event.LocatableEvent {
+  public abstract com.sun.jdi.Method method();
+}

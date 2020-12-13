@@ -1,0 +1,9 @@
+Compiled from "Finished.java"
+final class sun.security.ssl.Finished {
+  static final sun.security.ssl.SSLConsumer t12HandshakeConsumer;
+  static final sun.security.ssl.HandshakeProducer t12HandshakeProducer;
+  static final sun.security.ssl.SSLConsumer t13HandshakeConsumer;
+  static final sun.security.ssl.HandshakeProducer t13HandshakeProducer;
+  sun.security.ssl.Finished();
+  static {};
+}

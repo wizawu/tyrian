@@ -1,0 +1,21 @@
+Compiled from "AccessControlContext.java"
+public final class java.security.AccessControlContext {
+  static sun.security.util.Debug getDebug();
+  public java.security.AccessControlContext(java.security.ProtectionDomain[]);
+  public java.security.AccessControlContext(java.security.AccessControlContext, java.security.DomainCombiner);
+  java.security.AccessControlContext(java.security.AccessControlContext, java.security.DomainCombiner, boolean);
+  java.security.AccessControlContext(java.security.ProtectionDomain, java.security.DomainCombiner, java.security.AccessControlContext, java.security.AccessControlContext, java.security.Permission[]);
+  java.security.AccessControlContext(java.security.ProtectionDomain[], boolean);
+  java.security.AccessControlContext(java.security.ProtectionDomain[], java.security.AccessControlContext);
+  java.security.ProtectionDomain[] getContext();
+  boolean isPrivileged();
+  java.security.DomainCombiner getAssignedCombiner();
+  public java.security.DomainCombiner getDomainCombiner();
+  java.security.DomainCombiner getCombiner();
+  boolean isAuthorized();
+  public void checkPermission(java.security.Permission) throws java.security.AccessControlException;
+  java.security.AccessControlContext optimize();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

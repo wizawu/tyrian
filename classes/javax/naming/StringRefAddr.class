@@ -1,0 +1,5 @@
+Compiled from "StringRefAddr.java"
+public class javax.naming.StringRefAddr extends javax.naming.RefAddr {
+  public javax.naming.StringRefAddr(java.lang.String, java.lang.String);
+  public java.lang.Object getContent();
+}

@@ -1,0 +1,17 @@
+Compiled from "EllipseIterator.java"
+class java.awt.geom.EllipseIterator implements java.awt.geom.PathIterator {
+  double x;
+  double y;
+  double w;
+  double h;
+  java.awt.geom.AffineTransform affine;
+  int index;
+  public static final double CtrlVal;
+  java.awt.geom.EllipseIterator(java.awt.geom.Ellipse2D, java.awt.geom.AffineTransform);
+  public int getWindingRule();
+  public boolean isDone();
+  public void next();
+  public int currentSegment(float[]);
+  public int currentSegment(double[]);
+  static {};
+}

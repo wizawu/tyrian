@@ -1,0 +1,4 @@
+Compiled from "JavaNetURLAccess.java"
+public interface jdk.internal.misc.JavaNetURLAccess {
+  public abstract java.net.URLStreamHandler getHandler(java.net.URL);
+}

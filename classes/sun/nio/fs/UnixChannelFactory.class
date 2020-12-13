@@ -1,0 +1,10 @@
+Compiled from "UnixChannelFactory.java"
+class sun.nio.fs.UnixChannelFactory {
+  protected sun.nio.fs.UnixChannelFactory();
+  static java.nio.channels.FileChannel newFileChannel(int, java.lang.String, boolean, boolean);
+  static java.nio.channels.FileChannel newFileChannel(int, sun.nio.fs.UnixPath, java.lang.String, java.util.Set<? extends java.nio.file.OpenOption>, int) throws sun.nio.fs.UnixException;
+  static java.nio.channels.FileChannel newFileChannel(sun.nio.fs.UnixPath, java.util.Set<? extends java.nio.file.OpenOption>, int) throws sun.nio.fs.UnixException;
+  static java.nio.channels.AsynchronousFileChannel newAsynchronousFileChannel(sun.nio.fs.UnixPath, java.util.Set<? extends java.nio.file.OpenOption>, int, sun.nio.ch.ThreadPool) throws sun.nio.fs.UnixException;
+  protected static java.io.FileDescriptor open(int, sun.nio.fs.UnixPath, java.lang.String, sun.nio.fs.UnixChannelFactory$Flags, int) throws sun.nio.fs.UnixException;
+  static {};
+}

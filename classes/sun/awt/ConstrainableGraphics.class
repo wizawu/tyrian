@@ -1,0 +1,4 @@
+Compiled from "ConstrainableGraphics.java"
+public interface sun.awt.ConstrainableGraphics {
+  public abstract void constrain(int, int, int, int);
+}

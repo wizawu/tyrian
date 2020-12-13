@@ -1,0 +1,13 @@
+Compiled from "JavadocEnter.java"
+public class com.sun.tools.javadoc.main.JavadocEnter extends com.sun.tools.javac.comp.Enter {
+  final com.sun.tools.javadoc.main.Messager messager;
+  final com.sun.tools.javadoc.main.DocEnv docenv;
+  final com.sun.tools.javac.main.JavaCompiler compiler;
+  public static com.sun.tools.javadoc.main.JavadocEnter instance(com.sun.tools.javac.util.Context);
+  public static void preRegister(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javadoc.main.JavadocEnter(com.sun.tools.javac.util.Context);
+  public void main(com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCCompilationUnit>);
+  public void visitTopLevel(com.sun.tools.javac.tree.JCTree$JCCompilationUnit);
+  public void visitClassDef(com.sun.tools.javac.tree.JCTree$JCClassDecl);
+  protected void duplicateClass(com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition, com.sun.tools.javac.code.Symbol$ClassSymbol);
+}

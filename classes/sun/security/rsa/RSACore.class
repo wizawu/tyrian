@@ -1,0 +1,11 @@
+Compiled from "RSACore.java"
+public final class sun.security.rsa.RSACore {
+  static final boolean $assertionsDisabled;
+  public static int getByteLength(java.math.BigInteger);
+  public static int getByteLength(java.security.interfaces.RSAKey);
+  public static byte[] convert(byte[], int, int);
+  public static byte[] rsa(byte[], java.security.interfaces.RSAPublicKey) throws javax.crypto.BadPaddingException;
+  public static byte[] rsa(byte[], java.security.interfaces.RSAPrivateKey) throws javax.crypto.BadPaddingException;
+  public static byte[] rsa(byte[], java.security.interfaces.RSAPrivateKey, boolean) throws javax.crypto.BadPaddingException;
+  static {};
+}

@@ -1,0 +1,44 @@
+Compiled from "SocketChannelImpl.java"
+class sun.nio.ch.SocketChannelImpl extends java.nio.channels.SocketChannel implements sun.nio.ch.SelChImpl {
+  static final boolean $assertionsDisabled;
+  sun.nio.ch.SocketChannelImpl(java.nio.channels.spi.SelectorProvider) throws java.io.IOException;
+  sun.nio.ch.SocketChannelImpl(java.nio.channels.spi.SelectorProvider, java.io.FileDescriptor, boolean) throws java.io.IOException;
+  sun.nio.ch.SocketChannelImpl(java.nio.channels.spi.SelectorProvider, java.io.FileDescriptor, java.net.InetSocketAddress) throws java.io.IOException;
+  public java.net.Socket socket();
+  public java.net.SocketAddress getLocalAddress() throws java.io.IOException;
+  public java.net.SocketAddress getRemoteAddress() throws java.io.IOException;
+  public <T> java.nio.channels.SocketChannel setOption(java.net.SocketOption<T>, T) throws java.io.IOException;
+  public <T> T getOption(java.net.SocketOption<T>) throws java.io.IOException;
+  public final java.util.Set<java.net.SocketOption<?>> supportedOptions();
+  public int read(java.nio.ByteBuffer) throws java.io.IOException;
+  public long read(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  public int write(java.nio.ByteBuffer) throws java.io.IOException;
+  public long write(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  int sendOutOfBandData(byte) throws java.io.IOException;
+  protected void implConfigureBlocking(boolean) throws java.io.IOException;
+  java.net.InetSocketAddress localAddress();
+  java.net.InetSocketAddress remoteAddress();
+  public java.nio.channels.SocketChannel bind(java.net.SocketAddress) throws java.io.IOException;
+  public boolean isConnected();
+  public boolean isConnectionPending();
+  public boolean connect(java.net.SocketAddress) throws java.io.IOException;
+  public boolean finishConnect() throws java.io.IOException;
+  protected void implCloseSelectableChannel() throws java.io.IOException;
+  public void kill() throws java.io.IOException;
+  public java.nio.channels.SocketChannel shutdownInput() throws java.io.IOException;
+  public java.nio.channels.SocketChannel shutdownOutput() throws java.io.IOException;
+  boolean isInputOpen();
+  boolean isOutputOpen();
+  boolean pollRead(long) throws java.io.IOException;
+  boolean pollConnected(long) throws java.io.IOException;
+  public boolean translateReadyOps(int, int, sun.nio.ch.SelectionKeyImpl);
+  public boolean translateAndUpdateReadyOps(int, sun.nio.ch.SelectionKeyImpl);
+  public boolean translateAndSetReadyOps(int, sun.nio.ch.SelectionKeyImpl);
+  public int translateInterestOps(int);
+  public java.io.FileDescriptor getFD();
+  public int getFDVal();
+  public java.lang.String toString();
+  public java.nio.channels.NetworkChannel setOption(java.net.SocketOption, java.lang.Object) throws java.io.IOException;
+  public java.nio.channels.NetworkChannel bind(java.net.SocketAddress) throws java.io.IOException;
+  static {};
+}

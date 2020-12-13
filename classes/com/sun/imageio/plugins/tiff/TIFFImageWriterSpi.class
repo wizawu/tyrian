@@ -1,0 +1,8 @@
+Compiled from "TIFFImageWriterSpi.java"
+public class com.sun.imageio.plugins.tiff.TIFFImageWriterSpi extends javax.imageio.spi.ImageWriterSpi {
+  public com.sun.imageio.plugins.tiff.TIFFImageWriterSpi();
+  public boolean canEncodeImage(javax.imageio.ImageTypeSpecifier);
+  public java.lang.String getDescription(java.util.Locale);
+  public javax.imageio.ImageWriter createWriterInstance(java.lang.Object);
+  public void onRegistration(javax.imageio.spi.ServiceRegistry, java.lang.Class<?>);
+}

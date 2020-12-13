@@ -1,0 +1,5 @@
+Compiled from "TIFFPackBitsCompressor.java"
+public class com.sun.imageio.plugins.tiff.TIFFPackBitsCompressor extends com.sun.imageio.plugins.tiff.TIFFCompressor {
+  public com.sun.imageio.plugins.tiff.TIFFPackBitsCompressor();
+  public int encode(byte[], int, int, int, int[], int) throws java.io.IOException;
+}

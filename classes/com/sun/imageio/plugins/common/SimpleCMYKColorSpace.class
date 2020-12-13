@@ -1,0 +1,11 @@
+Compiled from "SimpleCMYKColorSpace.java"
+public final class com.sun.imageio.plugins.common.SimpleCMYKColorSpace extends java.awt.color.ColorSpace {
+  public static final synchronized java.awt.color.ColorSpace getInstance();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public float[] toRGB(float[]);
+  public float[] fromRGB(float[]);
+  public float[] toCIEXYZ(float[]);
+  public float[] fromCIEXYZ(float[]);
+  static {};
+}

@@ -1,0 +1,36 @@
+Compiled from "MonthDay.java"
+public final class java.time.MonthDay implements java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.MonthDay>, java.io.Serializable {
+  public static java.time.MonthDay now();
+  public static java.time.MonthDay now(java.time.ZoneId);
+  public static java.time.MonthDay now(java.time.Clock);
+  public static java.time.MonthDay of(java.time.Month, int);
+  public static java.time.MonthDay of(int, int);
+  public static java.time.MonthDay from(java.time.temporal.TemporalAccessor);
+  public static java.time.MonthDay parse(java.lang.CharSequence);
+  public static java.time.MonthDay parse(java.lang.CharSequence, java.time.format.DateTimeFormatter);
+  public boolean isSupported(java.time.temporal.TemporalField);
+  public java.time.temporal.ValueRange range(java.time.temporal.TemporalField);
+  public int get(java.time.temporal.TemporalField);
+  public long getLong(java.time.temporal.TemporalField);
+  public int getMonthValue();
+  public java.time.Month getMonth();
+  public int getDayOfMonth();
+  public boolean isValidYear(int);
+  public java.time.MonthDay withMonth(int);
+  public java.time.MonthDay with(java.time.Month);
+  public java.time.MonthDay withDayOfMonth(int);
+  public <R> R query(java.time.temporal.TemporalQuery<R>);
+  public java.time.temporal.Temporal adjustInto(java.time.temporal.Temporal);
+  public java.lang.String format(java.time.format.DateTimeFormatter);
+  public java.time.LocalDate atYear(int);
+  public int compareTo(java.time.MonthDay);
+  public boolean isAfter(java.time.MonthDay);
+  public boolean isBefore(java.time.MonthDay);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  void writeExternal(java.io.DataOutput) throws java.io.IOException;
+  static java.time.MonthDay readExternal(java.io.DataInput) throws java.io.IOException;
+  public int compareTo(java.lang.Object);
+  static {};
+}

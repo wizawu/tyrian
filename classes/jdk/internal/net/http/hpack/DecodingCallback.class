@@ -1,0 +1,13 @@
+Compiled from "DecodingCallback.java"
+public interface jdk.internal.net.http.hpack.DecodingCallback {
+  public abstract void onDecoded(java.lang.CharSequence, java.lang.CharSequence);
+  public default void onDecoded(java.lang.CharSequence, java.lang.CharSequence, boolean);
+  public default void onIndexed(int, java.lang.CharSequence, java.lang.CharSequence);
+  public default void onLiteral(int, java.lang.CharSequence, java.lang.CharSequence, boolean);
+  public default void onLiteral(java.lang.CharSequence, boolean, java.lang.CharSequence, boolean);
+  public default void onLiteralNeverIndexed(int, java.lang.CharSequence, java.lang.CharSequence, boolean);
+  public default void onLiteralNeverIndexed(java.lang.CharSequence, boolean, java.lang.CharSequence, boolean);
+  public default void onLiteralWithIndexing(int, java.lang.CharSequence, java.lang.CharSequence, boolean);
+  public default void onLiteralWithIndexing(java.lang.CharSequence, boolean, java.lang.CharSequence, boolean);
+  public default void onSizeUpdate(int);
+}

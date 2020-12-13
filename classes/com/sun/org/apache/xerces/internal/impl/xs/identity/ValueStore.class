@@ -1,0 +1,5 @@
+Compiled from "ValueStore.java"
+public interface com.sun.org.apache.xerces.internal.impl.xs.identity.ValueStore {
+  public abstract void addValue(com.sun.org.apache.xerces.internal.impl.xs.identity.Field, boolean, java.lang.Object, short, com.sun.org.apache.xerces.internal.xs.ShortList);
+  public abstract void reportError(java.lang.String, java.lang.Object[]);
+}

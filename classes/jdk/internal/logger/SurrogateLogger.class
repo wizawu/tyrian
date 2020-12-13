@@ -1,0 +1,10 @@
+Compiled from "SurrogateLogger.java"
+public final class jdk.internal.logger.SurrogateLogger extends jdk.internal.logger.SimpleConsoleLogger {
+  jdk.internal.logger.SurrogateLogger(java.lang.String);
+  sun.util.logging.PlatformLogger$Level defaultPlatformLevel();
+  java.lang.String getSimpleFormatString();
+  public static java.lang.String getSimpleFormat(java.util.function.Function<java.lang.String, java.lang.String>);
+  public static jdk.internal.logger.SurrogateLogger makeSurrogateLogger(java.lang.String);
+  public static boolean isFilteredFrame(java.lang.StackWalker$StackFrame);
+  static {};
+}

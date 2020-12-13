@@ -1,0 +1,12 @@
+Compiled from "ConstantInteger.java"
+public final class com.sun.org.apache.bcel.internal.classfile.ConstantInteger extends com.sun.org.apache.bcel.internal.classfile.Constant implements com.sun.org.apache.bcel.internal.classfile.ConstantObject {
+  public com.sun.org.apache.bcel.internal.classfile.ConstantInteger(int);
+  public com.sun.org.apache.bcel.internal.classfile.ConstantInteger(com.sun.org.apache.bcel.internal.classfile.ConstantInteger);
+  com.sun.org.apache.bcel.internal.classfile.ConstantInteger(java.io.DataInput) throws java.io.IOException;
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final int getBytes();
+  public final void setBytes(int);
+  public final java.lang.String toString();
+  public java.lang.Object getConstantValue(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+}

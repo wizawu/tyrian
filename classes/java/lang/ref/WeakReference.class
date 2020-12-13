@@ -1,0 +1,5 @@
+Compiled from "WeakReference.java"
+public class java.lang.ref.WeakReference<T> extends java.lang.ref.Reference<T> {
+  public java.lang.ref.WeakReference(T);
+  public java.lang.ref.WeakReference(T, java.lang.ref.ReferenceQueue<? super T>);
+}

@@ -1,0 +1,4 @@
+Compiled from "DocumentEvent.java"
+public interface org.w3c.dom.events.DocumentEvent {
+  public abstract org.w3c.dom.events.Event createEvent(java.lang.String) throws org.w3c.dom.DOMException;
+}

@@ -1,0 +1,4 @@
+Compiled from "SymbolFinder.java"
+public interface sun.jvm.hotspot.asm.SymbolFinder {
+  public abstract java.lang.String getSymbolFor(long);
+}

@@ -1,0 +1,23 @@
+Compiled from "MultiFileChooserUI.java"
+public class javax.swing.plaf.multi.MultiFileChooserUI extends javax.swing.plaf.FileChooserUI {
+  protected java.util.Vector<javax.swing.plaf.ComponentUI> uis;
+  public javax.swing.plaf.multi.MultiFileChooserUI();
+  public javax.swing.plaf.ComponentUI[] getUIs();
+  public javax.swing.filechooser.FileFilter getAcceptAllFileFilter(javax.swing.JFileChooser);
+  public javax.swing.filechooser.FileView getFileView(javax.swing.JFileChooser);
+  public java.lang.String getApproveButtonText(javax.swing.JFileChooser);
+  public java.lang.String getDialogTitle(javax.swing.JFileChooser);
+  public void rescanCurrentDirectory(javax.swing.JFileChooser);
+  public void ensureFileIsVisible(javax.swing.JFileChooser, java.io.File);
+  public boolean contains(javax.swing.JComponent, int, int);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  public int getAccessibleChildrenCount(javax.swing.JComponent);
+  public javax.accessibility.Accessible getAccessibleChild(javax.swing.JComponent, int);
+}

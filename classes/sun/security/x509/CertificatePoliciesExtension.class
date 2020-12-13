@@ -1,0 +1,17 @@
+Compiled from "CertificatePoliciesExtension.java"
+public class sun.security.x509.CertificatePoliciesExtension extends sun.security.x509.Extension implements sun.security.x509.CertAttrSet<java.lang.String> {
+  public static final java.lang.String IDENT;
+  public static final java.lang.String NAME;
+  public static final java.lang.String POLICIES;
+  public sun.security.x509.CertificatePoliciesExtension(java.util.List<sun.security.x509.PolicyInformation>) throws java.io.IOException;
+  public sun.security.x509.CertificatePoliciesExtension(java.lang.Boolean, java.util.List<sun.security.x509.PolicyInformation>) throws java.io.IOException;
+  public sun.security.x509.CertificatePoliciesExtension(java.lang.Boolean, java.lang.Object) throws java.io.IOException;
+  public java.lang.String toString();
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+  public void set(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public java.util.List<sun.security.x509.PolicyInformation> get(java.lang.String) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  public java.lang.String getName();
+  public java.lang.Object get(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+}

@@ -1,0 +1,21 @@
+Compiled from "ELFSymbol.java"
+public interface sun.jvm.hotspot.debugger.posix.elf.ELFSymbol {
+  public static final int BINDING_LOCAL;
+  public static final int BINDING_GLOBAL;
+  public static final int BINDING_WEAK;
+  public static final int BINDING_LOPROC;
+  public static final int BINDING_HIPROC;
+  public static final byte TYPE_NOOBJECT;
+  public static final byte TYPE_OBJECT;
+  public static final byte TYPE_FUNCTION;
+  public static final byte TYPE_SECTION;
+  public static final byte TYPE_FILE;
+  public static final byte TYPE_LOPROC;
+  public static final byte TYPE_HIPROC;
+  public abstract long getOffset();
+  public abstract java.lang.String getName();
+  public abstract int getBinding();
+  public abstract int getType();
+  public abstract long getValue();
+  public abstract int getSize();
+}

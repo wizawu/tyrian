@@ -1,0 +1,44 @@
+Compiled from "IntArrayData.java"
+final class jdk.nashorn.internal.runtime.arrays.IntArrayData extends jdk.nashorn.internal.runtime.arrays.ContinuousArrayData implements jdk.nashorn.internal.runtime.arrays.IntElements {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.runtime.arrays.IntArrayData();
+  jdk.nashorn.internal.runtime.arrays.IntArrayData(int);
+  jdk.nashorn.internal.runtime.arrays.IntArrayData(int[], int);
+  public final java.lang.Class<?> getElementType();
+  public final java.lang.Class<?> getBoxedElementType();
+  public final int getElementWeight();
+  public final jdk.nashorn.internal.runtime.arrays.ContinuousArrayData widest(jdk.nashorn.internal.runtime.arrays.ContinuousArrayData);
+  public java.lang.Object[] asObjectArray();
+  public java.lang.invoke.MethodHandle getElementGetter(java.lang.Class<?>, int);
+  public java.lang.invoke.MethodHandle getElementSetter(java.lang.Class<?>);
+  public jdk.nashorn.internal.runtime.arrays.IntArrayData copy();
+  public java.lang.Object asArrayOfType(java.lang.Class<?>);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData convert(java.lang.Class<?>);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shiftLeft(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shiftRight(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData ensure(long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shrink(long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, java.lang.Object, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, int, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, double, boolean);
+  public int getInt(int);
+  public int getIntOptimistic(int, int);
+  public double getDouble(int);
+  public double getDoubleOptimistic(int, int);
+  public java.lang.Object getObject(int);
+  public boolean has(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData delete(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData delete(long, long);
+  public java.lang.Object pop();
+  public jdk.nashorn.internal.runtime.arrays.ArrayData slice(long, long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData fastSplice(int, int, int) throws java.lang.UnsupportedOperationException;
+  public double fastPush(int);
+  public int fastPopInt();
+  public double fastPopDouble();
+  public java.lang.Object fastPopObject();
+  public jdk.nashorn.internal.runtime.arrays.ContinuousArrayData fastConcat(jdk.nashorn.internal.runtime.arrays.ContinuousArrayData);
+  public java.lang.String toString();
+  public jdk.nashorn.internal.runtime.arrays.ContinuousArrayData copy();
+  public jdk.nashorn.internal.runtime.arrays.ArrayData copy();
+  static {};
+}

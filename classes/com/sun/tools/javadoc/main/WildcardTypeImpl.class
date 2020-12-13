@@ -1,0 +1,22 @@
+Compiled from "WildcardTypeImpl.java"
+public class com.sun.tools.javadoc.main.WildcardTypeImpl extends com.sun.tools.javadoc.main.AbstractTypeImpl implements com.sun.javadoc.WildcardType {
+  com.sun.tools.javadoc.main.WildcardTypeImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type$WildcardType);
+  public com.sun.javadoc.Type[] extendsBounds();
+  public com.sun.javadoc.Type[] superBounds();
+  public com.sun.javadoc.ClassDoc asClassDoc();
+  public com.sun.javadoc.WildcardType asWildcardType();
+  public java.lang.String typeName();
+  public java.lang.String qualifiedTypeName();
+  public java.lang.String simpleTypeName();
+  public java.lang.String toString();
+  static java.lang.String wildcardTypeToString(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type$WildcardType, boolean);
+  public com.sun.javadoc.AnnotatedType asAnnotatedType();
+  public com.sun.javadoc.AnnotationTypeDoc asAnnotationTypeDoc();
+  public com.sun.javadoc.ParameterizedType asParameterizedType();
+  public com.sun.javadoc.TypeVariable asTypeVariable();
+  public boolean isPrimitive();
+  public java.lang.String dimension();
+  public java.lang.String qualifiedName();
+  public java.lang.String name();
+  public com.sun.javadoc.Type getElementType();
+}

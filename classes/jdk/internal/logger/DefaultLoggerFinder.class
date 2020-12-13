@@ -1,0 +1,10 @@
+Compiled from "DefaultLoggerFinder.java"
+public class jdk.internal.logger.DefaultLoggerFinder extends java.lang.System$LoggerFinder {
+  static final java.lang.RuntimePermission LOGGERFINDER_PERMISSION;
+  protected jdk.internal.logger.DefaultLoggerFinder();
+  public static boolean isSystem(java.lang.Module);
+  public final java.lang.System$Logger getLogger(java.lang.String, java.lang.Module);
+  public final java.lang.System$Logger getLocalizedLogger(java.lang.String, java.util.ResourceBundle, java.lang.Module);
+  protected java.lang.System$Logger demandLoggerFor(java.lang.String, java.lang.Module);
+  static {};
+}

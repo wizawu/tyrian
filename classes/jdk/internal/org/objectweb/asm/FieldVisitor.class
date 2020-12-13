@@ -1,0 +1,11 @@
+Compiled from "FieldVisitor.java"
+public abstract class jdk.internal.org.objectweb.asm.FieldVisitor {
+  protected final int api;
+  protected jdk.internal.org.objectweb.asm.FieldVisitor fv;
+  public jdk.internal.org.objectweb.asm.FieldVisitor(int);
+  public jdk.internal.org.objectweb.asm.FieldVisitor(int, jdk.internal.org.objectweb.asm.FieldVisitor);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitAnnotation(java.lang.String, boolean);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitTypeAnnotation(int, jdk.internal.org.objectweb.asm.TypePath, java.lang.String, boolean);
+  public void visitAttribute(jdk.internal.org.objectweb.asm.Attribute);
+  public void visitEnd();
+}

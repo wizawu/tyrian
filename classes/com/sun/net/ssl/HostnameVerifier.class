@@ -1,0 +1,4 @@
+Compiled from "HostnameVerifier.java"
+public interface com.sun.net.ssl.HostnameVerifier {
+  public abstract boolean verify(java.lang.String, java.lang.String);
+}

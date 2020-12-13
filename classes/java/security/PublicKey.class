@@ -1,0 +1,4 @@
+Compiled from "PublicKey.java"
+public interface java.security.PublicKey extends java.security.Key {
+  public static final long serialVersionUID;
+}

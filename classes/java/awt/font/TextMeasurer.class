@@ -1,0 +1,14 @@
+Compiled from "TextMeasurer.java"
+public final class java.awt.font.TextMeasurer implements java.lang.Cloneable {
+  int layoutCount;
+  int layoutCharCount;
+  public java.awt.font.TextMeasurer(java.text.AttributedCharacterIterator, java.awt.font.FontRenderContext);
+  protected java.lang.Object clone();
+  public int getLineBreakIndex(int, float);
+  public float getAdvanceBetween(int, int);
+  public java.awt.font.TextLayout getLayout(int, int);
+  public void insertChar(java.text.AttributedCharacterIterator, int);
+  public void deleteChar(java.text.AttributedCharacterIterator, int);
+  char[] getChars();
+  static {};
+}

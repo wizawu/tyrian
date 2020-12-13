@@ -1,0 +1,42 @@
+Compiled from "SwingEventMonitor.java"
+public class com.sun.java.accessibility.util.SwingEventMonitor extends com.sun.java.accessibility.util.AWTEventMonitor {
+  protected static final javax.swing.event.EventListenerList listenerList;
+  public com.sun.java.accessibility.util.SwingEventMonitor();
+  public static void addAncestorListener(javax.swing.event.AncestorListener);
+  public static void removeAncestorListener(javax.swing.event.AncestorListener);
+  public static void addCaretListener(javax.swing.event.CaretListener);
+  public static void removeCaretListener(javax.swing.event.CaretListener);
+  public static void addCellEditorListener(javax.swing.event.CellEditorListener);
+  public static void removeCellEditorListener(javax.swing.event.CellEditorListener);
+  public static void addChangeListener(javax.swing.event.ChangeListener);
+  public static void removeChangeListener(javax.swing.event.ChangeListener);
+  public static void addColumnModelListener(javax.swing.event.TableColumnModelListener);
+  public static void removeColumnModelListener(javax.swing.event.TableColumnModelListener);
+  public static void addDocumentListener(javax.swing.event.DocumentListener);
+  public static void removeDocumentListener(javax.swing.event.DocumentListener);
+  public static void addListDataListener(javax.swing.event.ListDataListener);
+  public static void removeListDataListener(javax.swing.event.ListDataListener);
+  public static void addListSelectionListener(javax.swing.event.ListSelectionListener);
+  public static void removeListSelectionListener(javax.swing.event.ListSelectionListener);
+  public static void addMenuListener(javax.swing.event.MenuListener);
+  public static void removeMenuListener(javax.swing.event.MenuListener);
+  public static void addPopupMenuListener(javax.swing.event.PopupMenuListener);
+  public static void removePopupMenuListener(javax.swing.event.PopupMenuListener);
+  public static void addTableModelListener(javax.swing.event.TableModelListener);
+  public static void removeTableModelListener(javax.swing.event.TableModelListener);
+  public static void addTreeExpansionListener(javax.swing.event.TreeExpansionListener);
+  public static void removeTreeExpansionListener(javax.swing.event.TreeExpansionListener);
+  public static void addTreeModelListener(javax.swing.event.TreeModelListener);
+  public static void removeTreeModelListener(javax.swing.event.TreeModelListener);
+  public static void addTreeSelectionListener(javax.swing.event.TreeSelectionListener);
+  public static void removeTreeSelectionListener(javax.swing.event.TreeSelectionListener);
+  public static void addUndoableEditListener(javax.swing.event.UndoableEditListener);
+  public static void removeUndoableEditListener(javax.swing.event.UndoableEditListener);
+  public static void addInternalFrameListener(javax.swing.event.InternalFrameListener);
+  public static void removeInternalFrameListener(javax.swing.event.InternalFrameListener);
+  public static void addPropertyChangeListener(java.beans.PropertyChangeListener);
+  public static void removePropertyChangeListener(java.beans.PropertyChangeListener);
+  public static void addVetoableChangeListener(java.beans.VetoableChangeListener);
+  public static void removeVetoableChangeListener(java.beans.VetoableChangeListener);
+  static {};
+}

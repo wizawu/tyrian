@@ -1,0 +1,21 @@
+Compiled from "BasicCDebugInfoDataBase.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase implements sun.jvm.hotspot.debugger.cdbg.CDebugInfoDataBase {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase();
+  public void beginConstruction();
+  public void addType(java.lang.Object, sun.jvm.hotspot.debugger.cdbg.Type);
+  public void resolve(sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
+  public void endConstruction();
+  public sun.jvm.hotspot.debugger.cdbg.Type lookupType(java.lang.String);
+  public sun.jvm.hotspot.debugger.cdbg.Type lookupType(java.lang.String, int);
+  public void iterate(sun.jvm.hotspot.debugger.cdbg.TypeVisitor);
+  public void addBlock(java.lang.Object, sun.jvm.hotspot.debugger.cdbg.BlockSym);
+  public void addGlobalSym(sun.jvm.hotspot.debugger.cdbg.GlobalSym);
+  public sun.jvm.hotspot.debugger.cdbg.BlockSym debugInfoForPC(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.cdbg.GlobalSym lookupSym(java.lang.String);
+  public void addLineNumberInfo(sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberInfo);
+  public sun.jvm.hotspot.debugger.cdbg.LineNumberInfo lineNumberForPC(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public void iterate(sun.jvm.hotspot.debugger.cdbg.LineNumberVisitor);
+  public sun.jvm.hotspot.debugger.cdbg.Type resolveType(sun.jvm.hotspot.debugger.cdbg.Type, sun.jvm.hotspot.debugger.cdbg.Type, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener, java.lang.String);
+  public sun.jvm.hotspot.debugger.cdbg.Type resolveType(sun.jvm.hotspot.debugger.cdbg.Sym, sun.jvm.hotspot.debugger.cdbg.Type, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener, java.lang.String);
+  public sun.jvm.hotspot.debugger.cdbg.Sym resolveSym(sun.jvm.hotspot.debugger.cdbg.Sym, sun.jvm.hotspot.debugger.cdbg.Sym, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener, java.lang.String);
+}

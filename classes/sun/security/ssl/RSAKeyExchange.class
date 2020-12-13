@@ -1,0 +1,7 @@
+Compiled from "RSAKeyExchange.java"
+final class sun.security.ssl.RSAKeyExchange {
+  static final sun.security.ssl.SSLPossessionGenerator poGenerator;
+  static final sun.security.ssl.SSLKeyAgreementGenerator kaGenerator;
+  sun.security.ssl.RSAKeyExchange();
+  static {};
+}

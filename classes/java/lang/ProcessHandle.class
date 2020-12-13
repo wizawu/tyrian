@@ -1,0 +1,20 @@
+Compiled from "ProcessHandle.java"
+public interface java.lang.ProcessHandle extends java.lang.Comparable<java.lang.ProcessHandle> {
+  public abstract long pid();
+  public static java.util.Optional<java.lang.ProcessHandle> of(long);
+  public static java.lang.ProcessHandle current();
+  public abstract java.util.Optional<java.lang.ProcessHandle> parent();
+  public abstract java.util.stream.Stream<java.lang.ProcessHandle> children();
+  public abstract java.util.stream.Stream<java.lang.ProcessHandle> descendants();
+  public static java.util.stream.Stream<java.lang.ProcessHandle> allProcesses();
+  public abstract java.lang.ProcessHandle$Info info();
+  public abstract java.util.concurrent.CompletableFuture<java.lang.ProcessHandle> onExit();
+  public abstract boolean supportsNormalTermination();
+  public abstract boolean destroy();
+  public abstract boolean destroyForcibly();
+  public abstract boolean isAlive();
+  public abstract int hashCode();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int compareTo(java.lang.ProcessHandle);
+  public default int compareTo(java.lang.Object);
+}

@@ -1,0 +1,21 @@
+Compiled from "StreamDecoder.java"
+public class sun.nio.cs.StreamDecoder extends java.io.Reader {
+  static final boolean $assertionsDisabled;
+  public static sun.nio.cs.StreamDecoder forInputStreamReader(java.io.InputStream, java.lang.Object, java.lang.String) throws java.io.UnsupportedEncodingException;
+  public static sun.nio.cs.StreamDecoder forInputStreamReader(java.io.InputStream, java.lang.Object, java.nio.charset.Charset);
+  public static sun.nio.cs.StreamDecoder forInputStreamReader(java.io.InputStream, java.lang.Object, java.nio.charset.CharsetDecoder);
+  public static sun.nio.cs.StreamDecoder forDecoder(java.nio.channels.ReadableByteChannel, java.nio.charset.CharsetDecoder, int);
+  public java.lang.String getEncoding();
+  public int read() throws java.io.IOException;
+  public int read(char[], int, int) throws java.io.IOException;
+  public boolean ready() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  sun.nio.cs.StreamDecoder(java.io.InputStream, java.lang.Object, java.nio.charset.Charset);
+  sun.nio.cs.StreamDecoder(java.io.InputStream, java.lang.Object, java.nio.charset.CharsetDecoder);
+  sun.nio.cs.StreamDecoder(java.nio.channels.ReadableByteChannel, java.nio.charset.CharsetDecoder, int);
+  int implRead(char[], int, int) throws java.io.IOException;
+  java.lang.String encodingName();
+  boolean implReady();
+  void implClose() throws java.io.IOException;
+  static {};
+}

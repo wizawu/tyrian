@@ -1,0 +1,9 @@
+Compiled from "LinkFactoryImpl.java"
+public class jdk.javadoc.internal.doclets.formats.html.LinkFactoryImpl extends jdk.javadoc.internal.doclets.toolkit.util.links.LinkFactory {
+  public jdk.javadoc.internal.doclets.formats.html.LinkFactoryImpl(jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter);
+  protected jdk.javadoc.internal.doclets.toolkit.Content newContent();
+  protected jdk.javadoc.internal.doclets.toolkit.Content getClassLink(jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo);
+  protected jdk.javadoc.internal.doclets.toolkit.Content getTypeParameterLinks(jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo, boolean);
+  protected jdk.javadoc.internal.doclets.toolkit.Content getTypeParameterLink(jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo, javax.lang.model.type.TypeMirror);
+  public jdk.javadoc.internal.doclets.toolkit.Content getTypeAnnotationLinks(jdk.javadoc.internal.doclets.toolkit.util.links.LinkInfo);
+}

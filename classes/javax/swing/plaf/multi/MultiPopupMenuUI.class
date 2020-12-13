@@ -1,0 +1,19 @@
+Compiled from "MultiPopupMenuUI.java"
+public class javax.swing.plaf.multi.MultiPopupMenuUI extends javax.swing.plaf.PopupMenuUI {
+  protected java.util.Vector<javax.swing.plaf.ComponentUI> uis;
+  public javax.swing.plaf.multi.MultiPopupMenuUI();
+  public javax.swing.plaf.ComponentUI[] getUIs();
+  public boolean isPopupTrigger(java.awt.event.MouseEvent);
+  public javax.swing.Popup getPopup(javax.swing.JPopupMenu, int, int);
+  public boolean contains(javax.swing.JComponent, int, int);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  public int getAccessibleChildrenCount(javax.swing.JComponent);
+  public javax.accessibility.Accessible getAccessibleChild(javax.swing.JComponent, int);
+}

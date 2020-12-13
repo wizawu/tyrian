@@ -1,0 +1,11 @@
+Compiled from "LinkedMap.java"
+public class jdk.nashorn.internal.objects.LinkedMap {
+  public jdk.nashorn.internal.objects.LinkedMap();
+  public void set(java.lang.Object, java.lang.Object);
+  public java.lang.Object get(java.lang.Object);
+  public boolean has(java.lang.Object);
+  public boolean delete(java.lang.Object);
+  public void clear();
+  public int size();
+  public jdk.nashorn.internal.objects.LinkedMap$LinkedMapIterator getIterator();
+}

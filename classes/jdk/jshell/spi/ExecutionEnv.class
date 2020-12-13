@@ -1,0 +1,8 @@
+Compiled from "ExecutionEnv.java"
+public interface jdk.jshell.spi.ExecutionEnv {
+  public abstract java.io.InputStream userIn();
+  public abstract java.io.PrintStream userOut();
+  public abstract java.io.PrintStream userErr();
+  public abstract java.util.List<java.lang.String> extraRemoteVMOptions();
+  public abstract void closeDown();
+}

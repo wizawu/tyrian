@@ -1,0 +1,10 @@
+Compiled from "DosFileAttributeView.java"
+public interface java.nio.file.attribute.DosFileAttributeView extends java.nio.file.attribute.BasicFileAttributeView {
+  public abstract java.lang.String name();
+  public abstract java.nio.file.attribute.DosFileAttributes readAttributes() throws java.io.IOException;
+  public abstract void setReadOnly(boolean) throws java.io.IOException;
+  public abstract void setHidden(boolean) throws java.io.IOException;
+  public abstract void setSystem(boolean) throws java.io.IOException;
+  public abstract void setArchive(boolean) throws java.io.IOException;
+  public default java.nio.file.attribute.BasicFileAttributes readAttributes() throws java.io.IOException;
+}

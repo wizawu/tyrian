@@ -1,0 +1,13 @@
+Compiled from "ResponseAPDU.java"
+public final class javax.smartcardio.ResponseAPDU implements java.io.Serializable {
+  public javax.smartcardio.ResponseAPDU(byte[]);
+  public int getNr();
+  public byte[] getData();
+  public int getSW1();
+  public int getSW2();
+  public int getSW();
+  public byte[] getBytes();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

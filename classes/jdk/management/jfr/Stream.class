@@ -1,0 +1,8 @@
+Compiled from "Stream.java"
+final class jdk.management.jfr.Stream implements java.io.Closeable {
+  jdk.management.jfr.Stream(java.io.InputStream, long, int);
+  public long getLastTouched();
+  public byte[] read() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public long getId();
+}

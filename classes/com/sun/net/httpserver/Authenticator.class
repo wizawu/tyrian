@@ -1,0 +1,5 @@
+Compiled from "Authenticator.java"
+public abstract class com.sun.net.httpserver.Authenticator {
+  public com.sun.net.httpserver.Authenticator();
+  public abstract com.sun.net.httpserver.Authenticator$Result authenticate(com.sun.net.httpserver.HttpExchange);
+}

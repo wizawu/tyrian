@@ -1,0 +1,4 @@
+Compiled from "ObjectVisitor.java"
+public interface sun.jvm.hotspot.utilities.soql.ObjectVisitor {
+  public abstract void visit(java.lang.Object);
+}

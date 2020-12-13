@@ -1,0 +1,24 @@
+Compiled from "SimpleType.java"
+public final class javax.management.openmbean.SimpleType<T> extends javax.management.openmbean.OpenType<T> {
+  static final long serialVersionUID;
+  public static final javax.management.openmbean.SimpleType<java.lang.Void> VOID;
+  public static final javax.management.openmbean.SimpleType<java.lang.Boolean> BOOLEAN;
+  public static final javax.management.openmbean.SimpleType<java.lang.Character> CHARACTER;
+  public static final javax.management.openmbean.SimpleType<java.lang.Byte> BYTE;
+  public static final javax.management.openmbean.SimpleType<java.lang.Short> SHORT;
+  public static final javax.management.openmbean.SimpleType<java.lang.Integer> INTEGER;
+  public static final javax.management.openmbean.SimpleType<java.lang.Long> LONG;
+  public static final javax.management.openmbean.SimpleType<java.lang.Float> FLOAT;
+  public static final javax.management.openmbean.SimpleType<java.lang.Double> DOUBLE;
+  public static final javax.management.openmbean.SimpleType<java.lang.String> STRING;
+  public static final javax.management.openmbean.SimpleType<java.math.BigDecimal> BIGDECIMAL;
+  public static final javax.management.openmbean.SimpleType<java.math.BigInteger> BIGINTEGER;
+  public static final javax.management.openmbean.SimpleType<java.util.Date> DATE;
+  public static final javax.management.openmbean.SimpleType<javax.management.ObjectName> OBJECTNAME;
+  public boolean isValue(java.lang.Object);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public java.lang.Object readResolve() throws java.io.ObjectStreamException;
+  static {};
+}

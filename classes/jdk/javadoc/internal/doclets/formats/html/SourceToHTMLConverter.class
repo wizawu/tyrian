@@ -1,0 +1,11 @@
+Compiled from "SourceToHTMLConverter.java"
+public class jdk.javadoc.internal.doclets.formats.html.SourceToHTMLConverter {
+  public static void convertRoot(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.doclet.DocletEnvironment, jdk.javadoc.internal.doclets.toolkit.util.DocPath) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException, jdk.javadoc.internal.doclets.toolkit.util.SimpleDocletException;
+  void generate() throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException, jdk.javadoc.internal.doclets.toolkit.util.SimpleDocletException;
+  public void convertPackage(javax.lang.model.element.PackageElement, jdk.javadoc.internal.doclets.toolkit.util.DocPath) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException, jdk.javadoc.internal.doclets.toolkit.util.SimpleDocletException;
+  public void convertClass(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.util.DocPath) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException, jdk.javadoc.internal.doclets.toolkit.util.SimpleDocletException;
+  public void addStyleSheetProperties(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addStylesheets(jdk.javadoc.internal.doclets.toolkit.Content);
+  public static java.lang.String getAnchorName(jdk.javadoc.internal.doclets.toolkit.util.Utils, javax.lang.model.element.Element);
+  static {};
+}

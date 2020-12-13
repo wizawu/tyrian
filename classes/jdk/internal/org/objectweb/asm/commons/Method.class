@@ -1,0 +1,17 @@
+Compiled from "Method.java"
+public class jdk.internal.org.objectweb.asm.commons.Method {
+  public jdk.internal.org.objectweb.asm.commons.Method(java.lang.String, java.lang.String);
+  public jdk.internal.org.objectweb.asm.commons.Method(java.lang.String, jdk.internal.org.objectweb.asm.Type, jdk.internal.org.objectweb.asm.Type[]);
+  public static jdk.internal.org.objectweb.asm.commons.Method getMethod(java.lang.reflect.Method);
+  public static jdk.internal.org.objectweb.asm.commons.Method getMethod(java.lang.reflect.Constructor<?>);
+  public static jdk.internal.org.objectweb.asm.commons.Method getMethod(java.lang.String) throws java.lang.IllegalArgumentException;
+  public static jdk.internal.org.objectweb.asm.commons.Method getMethod(java.lang.String, boolean) throws java.lang.IllegalArgumentException;
+  public java.lang.String getName();
+  public java.lang.String getDescriptor();
+  public jdk.internal.org.objectweb.asm.Type getReturnType();
+  public jdk.internal.org.objectweb.asm.Type[] getArgumentTypes();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

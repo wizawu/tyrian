@@ -1,0 +1,13 @@
+Compiled from "Repository.java"
+public class com.sun.jmx.mbeanserver.Repository {
+  public com.sun.jmx.mbeanserver.Repository(java.lang.String);
+  public com.sun.jmx.mbeanserver.Repository(java.lang.String, boolean);
+  public java.lang.String[] getDomains();
+  public void addMBean(javax.management.DynamicMBean, javax.management.ObjectName, com.sun.jmx.mbeanserver.Repository$RegistrationContext) throws javax.management.InstanceAlreadyExistsException;
+  public boolean contains(javax.management.ObjectName);
+  public javax.management.DynamicMBean retrieve(javax.management.ObjectName);
+  public java.util.Set<com.sun.jmx.mbeanserver.NamedObject> query(javax.management.ObjectName, javax.management.QueryExp);
+  public void remove(javax.management.ObjectName, com.sun.jmx.mbeanserver.Repository$RegistrationContext) throws javax.management.InstanceNotFoundException;
+  public java.lang.Integer getCount();
+  public java.lang.String getDefaultDomain();
+}

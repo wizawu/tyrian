@@ -1,0 +1,7 @@
+Compiled from "WeakIdentityHashMap.java"
+class com.sun.jmx.mbeanserver.WeakIdentityHashMap<K, V> {
+  static <K, V> com.sun.jmx.mbeanserver.WeakIdentityHashMap<K, V> make();
+  V get(K);
+  public V put(K, V);
+  public V remove(K);
+}

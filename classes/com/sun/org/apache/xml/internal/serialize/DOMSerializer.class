@@ -1,0 +1,6 @@
+Compiled from "DOMSerializer.java"
+public interface com.sun.org.apache.xml.internal.serialize.DOMSerializer {
+  public abstract void serialize(org.w3c.dom.Element) throws java.io.IOException;
+  public abstract void serialize(org.w3c.dom.Document) throws java.io.IOException;
+  public abstract void serialize(org.w3c.dom.DocumentFragment) throws java.io.IOException;
+}

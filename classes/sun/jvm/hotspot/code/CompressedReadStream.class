@@ -1,0 +1,14 @@
+Compiled from "CompressedReadStream.java"
+public class sun.jvm.hotspot.code.CompressedReadStream extends sun.jvm.hotspot.code.CompressedStream {
+  public sun.jvm.hotspot.code.CompressedReadStream(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.code.CompressedReadStream(sun.jvm.hotspot.debugger.Address, int);
+  public boolean readBoolean();
+  public byte readByte();
+  public char readChar();
+  public short readShort();
+  public int readSignedInt();
+  public int readInt();
+  public float readFloat();
+  public double readDouble();
+  public long readLong();
+}

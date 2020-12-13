@@ -1,0 +1,9 @@
+Compiled from "ThreadDialog.java"
+public class sun.tools.jconsole.inspector.ThreadDialog implements java.lang.Runnable {
+  java.awt.Component parentComponent;
+  java.lang.Object message;
+  java.lang.String title;
+  int messageType;
+  public sun.tools.jconsole.inspector.ThreadDialog(java.awt.Component, java.lang.Object, java.lang.String, int);
+  public void run();
+}

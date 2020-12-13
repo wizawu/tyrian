@@ -1,0 +1,18 @@
+Compiled from "XScrollbarPeer.java"
+class sun.awt.X11.XScrollbarPeer extends sun.awt.X11.XComponentPeer implements java.awt.peer.ScrollbarPeer,sun.awt.X11.XScrollbarClient {
+  sun.awt.X11.XScrollbar tsb;
+  public void preInit(sun.awt.X11.XCreateWindowParams);
+  sun.awt.X11.XScrollbarPeer(java.awt.Scrollbar);
+  public java.awt.Dimension getMinimumSize();
+  void paintPeer(java.awt.Graphics);
+  public void repaintScrollbarRequest(sun.awt.X11.XScrollbar);
+  public void notifyValue(sun.awt.X11.XScrollbar, int, int, boolean);
+  public void handleJavaMouseEvent(java.awt.event.MouseEvent);
+  public void handleJavaKeyEvent(java.awt.event.KeyEvent);
+  public void setValue(int);
+  public void setValues(int, int, int, int);
+  public void setLineIncrement(int);
+  public void setPageIncrement(int);
+  public void layout();
+  static {};
+}

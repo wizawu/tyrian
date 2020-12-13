@@ -1,0 +1,29 @@
+Compiled from "XDataTransferer.java"
+public class sun.awt.X11.XDataTransferer extends sun.awt.datatransfer.DataTransferer {
+  static final sun.awt.X11.XAtom FILE_NAME_ATOM;
+  static final sun.awt.X11.XAtom DT_NET_FILE_ATOM;
+  static final sun.awt.X11.XAtom PNG_ATOM;
+  static final sun.awt.X11.XAtom JFIF_ATOM;
+  static final sun.awt.X11.XAtom TARGETS_ATOM;
+  static final sun.awt.X11.XAtom INCR_ATOM;
+  static final sun.awt.X11.XAtom MULTIPLE_ATOM;
+  static synchronized sun.awt.X11.XDataTransferer getInstanceImpl();
+  public java.lang.String getDefaultUnicodeEncoding();
+  public boolean isLocaleDependentTextFormat(long);
+  public boolean isTextFormat(long);
+  protected java.lang.String getCharsetForTextFormat(java.lang.Long);
+  protected boolean isURIListFormat(long);
+  public boolean isFileFormat(long);
+  public boolean isImageFormat(long);
+  protected java.lang.Long getFormatForNativeAsLong(java.lang.String);
+  protected java.lang.String getNativeForFormat(long);
+  public sun.awt.datatransfer.ToolkitThreadBlockedHandler getToolkitThreadBlockedHandler();
+  protected byte[] imageToPlatformBytes(java.awt.Image, long) throws java.io.IOException;
+  protected java.io.ByteArrayOutputStream convertFileListToBytes(java.util.ArrayList<java.lang.String>) throws java.io.IOException;
+  protected java.awt.Image platformImageBytesToImage(byte[], long) throws java.io.IOException;
+  protected java.lang.String[] dragQueryFile(byte[]);
+  protected java.net.URI[] dragQueryURIs(java.io.InputStream, long, java.awt.datatransfer.Transferable) throws java.io.IOException;
+  public java.util.LinkedHashSet<java.awt.datatransfer.DataFlavor> getPlatformMappingsForNative(java.lang.String);
+  public java.util.LinkedHashSet<java.lang.String> getPlatformMappingsForFlavor(java.awt.datatransfer.DataFlavor);
+  static {};
+}

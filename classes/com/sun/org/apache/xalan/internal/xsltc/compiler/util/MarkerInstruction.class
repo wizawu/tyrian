@@ -1,0 +1,9 @@
+Compiled from "MarkerInstruction.java"
+abstract class com.sun.org.apache.xalan.internal.xsltc.compiler.util.MarkerInstruction extends com.sun.org.apache.bcel.internal.generic.Instruction {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.MarkerInstruction();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+  public final int consumeStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public final int produceStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.Instruction copy();
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+}

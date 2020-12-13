@@ -1,0 +1,5 @@
+Compiled from "CeilingCall.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.CeilingCall extends com.sun.org.apache.xalan.internal.xsltc.compiler.FunctionCall {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.CeilingCall(com.sun.org.apache.xalan.internal.xsltc.compiler.QName, java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.Expression>);
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

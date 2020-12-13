@@ -1,0 +1,6 @@
+Compiled from "InnerShadowEffect.java"
+class javax.swing.plaf.nimbus.InnerShadowEffect extends javax.swing.plaf.nimbus.ShadowEffect {
+  javax.swing.plaf.nimbus.InnerShadowEffect();
+  javax.swing.plaf.nimbus.Effect$EffectType getEffectType();
+  java.awt.image.BufferedImage applyEffect(java.awt.image.BufferedImage, java.awt.image.BufferedImage, int, int);
+}

@@ -1,0 +1,14 @@
+Compiled from "FileClassFile.java"
+final class sun.tools.java.FileClassFile extends sun.tools.java.ClassFile {
+  public sun.tools.java.FileClassFile(java.io.File);
+  public boolean isZipped();
+  public java.io.InputStream getInputStream() throws java.io.IOException;
+  public boolean exists();
+  public boolean isDirectory();
+  public long lastModified();
+  public java.lang.String getPath();
+  public java.lang.String getName();
+  public java.lang.String getAbsoluteName();
+  public long length();
+  public java.lang.String toString();
+}

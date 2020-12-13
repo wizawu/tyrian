@@ -1,0 +1,7 @@
+Compiled from "DeclHandler.java"
+public interface org.xml.sax.ext.DeclHandler {
+  public abstract void elementDecl(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void attributeDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void internalEntityDecl(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void externalEntityDecl(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+}

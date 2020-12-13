@@ -1,0 +1,20 @@
+Compiled from "BuilderFactory.java"
+public class jdk.javadoc.internal.doclets.toolkit.builders.BuilderFactory {
+  public jdk.javadoc.internal.doclets.toolkit.builders.BuilderFactory(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder getConstantsSummaryBuilder();
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder getPackageSummaryBuilder(javax.lang.model.element.PackageElement);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder getModuleSummaryBuilder(javax.lang.model.element.ModuleElement);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder getClassBuilder(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.util.ClassTree);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder getAnnotationTypeBuilder(javax.lang.model.element.TypeElement);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder getMethodBuilder(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder getAnnotationTypeFieldsBuilder(jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder getAnnotationTypeOptionalMemberBuilder(jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder getAnnotationTypeRequiredMemberBuilder(jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder getEnumConstantsBuilder(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder getFieldBuilder(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder getPropertyBuilder(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder getConstructorBuilder(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.MemberSummaryBuilder getMemberSummaryBuilder(jdk.javadoc.internal.doclets.toolkit.ClassWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.MemberSummaryBuilder getMemberSummaryBuilder(jdk.javadoc.internal.doclets.toolkit.AnnotationTypeWriter);
+  public jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder getSerializedFormBuilder();
+}

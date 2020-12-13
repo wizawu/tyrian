@@ -1,0 +1,37 @@
+Compiled from "Signature.java"
+public abstract class java.security.Signature extends java.security.SignatureSpi {
+  java.security.Provider provider;
+  protected static final int UNINITIALIZED;
+  protected static final int SIGN;
+  protected static final int VERIFY;
+  protected int state;
+  protected java.security.Signature(java.lang.String);
+  public static java.security.Signature getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  public static java.security.Signature getInstance(java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  public static java.security.Signature getInstance(java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  public final java.security.Provider getProvider();
+  void chooseFirstProvider();
+  public final void initVerify(java.security.PublicKey) throws java.security.InvalidKeyException;
+  final void initVerify(java.security.PublicKey, java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  public final void initVerify(java.security.cert.Certificate) throws java.security.InvalidKeyException;
+  final void initVerify(java.security.cert.Certificate, java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  public final void initSign(java.security.PrivateKey) throws java.security.InvalidKeyException;
+  public final void initSign(java.security.PrivateKey, java.security.SecureRandom) throws java.security.InvalidKeyException;
+  final void initSign(java.security.PrivateKey, java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  public final byte[] sign() throws java.security.SignatureException;
+  public final int sign(byte[], int, int) throws java.security.SignatureException;
+  public final boolean verify(byte[]) throws java.security.SignatureException;
+  public final boolean verify(byte[], int, int) throws java.security.SignatureException;
+  public final void update(byte) throws java.security.SignatureException;
+  public final void update(byte[]) throws java.security.SignatureException;
+  public final void update(byte[], int, int) throws java.security.SignatureException;
+  public final void update(java.nio.ByteBuffer) throws java.security.SignatureException;
+  public final java.lang.String getAlgorithm();
+  public java.lang.String toString();
+  public final void setParameter(java.lang.String, java.lang.Object) throws java.security.InvalidParameterException;
+  public final void setParameter(java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidAlgorithmParameterException;
+  public final java.security.AlgorithmParameters getParameters();
+  public final java.lang.Object getParameter(java.lang.String) throws java.security.InvalidParameterException;
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  static {};
+}

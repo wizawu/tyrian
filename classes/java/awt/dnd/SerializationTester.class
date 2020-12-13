@@ -1,0 +1,5 @@
+Compiled from "SerializationTester.java"
+final class java.awt.dnd.SerializationTester {
+  static boolean test(java.lang.Object);
+  static {};
+}

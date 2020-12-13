@@ -1,0 +1,10 @@
+Compiled from "SoftReceiver.java"
+public final class com.sun.media.sound.SoftReceiver implements javax.sound.midi.MidiDeviceReceiver {
+  boolean open;
+  java.util.TreeMap<java.lang.Long, java.lang.Object> midimessages;
+  com.sun.media.sound.SoftMainMixer mainmixer;
+  public com.sun.media.sound.SoftReceiver(com.sun.media.sound.SoftSynthesizer);
+  public javax.sound.midi.MidiDevice getMidiDevice();
+  public void send(javax.sound.midi.MidiMessage, long);
+  public void close();
+}

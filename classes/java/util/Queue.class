@@ -1,0 +1,9 @@
+Compiled from "Queue.java"
+public interface java.util.Queue<E> extends java.util.Collection<E> {
+  public abstract boolean add(E);
+  public abstract boolean offer(E);
+  public abstract E remove();
+  public abstract E poll();
+  public abstract E element();
+  public abstract E peek();
+}

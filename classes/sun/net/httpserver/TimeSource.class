@@ -1,0 +1,4 @@
+Compiled from "TimeSource.java"
+interface sun.net.httpserver.TimeSource {
+  public abstract long getTime();
+}

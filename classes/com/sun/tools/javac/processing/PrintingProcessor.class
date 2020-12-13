@@ -1,0 +1,8 @@
+Compiled from "PrintingProcessor.java"
+public class com.sun.tools.javac.processing.PrintingProcessor extends javax.annotation.processing.AbstractProcessor {
+  java.io.PrintWriter writer;
+  public com.sun.tools.javac.processing.PrintingProcessor();
+  public void setWriter(java.io.Writer);
+  public boolean process(java.util.Set<? extends javax.lang.model.element.TypeElement>, javax.annotation.processing.RoundEnvironment);
+  void print(javax.lang.model.element.Element);
+}

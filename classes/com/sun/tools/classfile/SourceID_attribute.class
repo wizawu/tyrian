@@ -1,0 +1,9 @@
+Compiled from "SourceID_attribute.java"
+public class com.sun.tools.classfile.SourceID_attribute extends com.sun.tools.classfile.Attribute {
+  public final int sourceID_index;
+  com.sun.tools.classfile.SourceID_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException;
+  public com.sun.tools.classfile.SourceID_attribute(com.sun.tools.classfile.ConstantPool, int) throws com.sun.tools.classfile.ConstantPoolException;
+  public com.sun.tools.classfile.SourceID_attribute(int, int);
+  java.lang.String getSourceID(com.sun.tools.classfile.ConstantPool) throws com.sun.tools.classfile.ConstantPoolException;
+  public <R, D> R accept(com.sun.tools.classfile.Attribute$Visitor<R, D>, D);
+}

@@ -1,0 +1,15 @@
+Compiled from "RemoteMonitoredVm.java"
+public class sun.jvmstat.perfdata.monitor.protocol.rmi.RemoteMonitoredVm extends sun.jvmstat.perfdata.monitor.AbstractMonitoredVm {
+  static final boolean $assertionsDisabled;
+  public sun.jvmstat.perfdata.monitor.protocol.rmi.RemoteMonitoredVm(sun.jvmstat.monitor.remote.RemoteVm, sun.jvmstat.monitor.VmIdentifier, java.util.Timer, int) throws sun.jvmstat.monitor.MonitorException;
+  public void attach() throws sun.jvmstat.monitor.MonitorException;
+  public void detach();
+  public void sample() throws java.rmi.RemoteException;
+  public sun.jvmstat.monitor.remote.RemoteVm getRemoteVm();
+  public void addVmListener(sun.jvmstat.monitor.event.VmListener);
+  public void removeVmListener(sun.jvmstat.monitor.event.VmListener);
+  public void setInterval(int);
+  void fireMonitorStatusChangedEvents(java.util.List<sun.jvmstat.monitor.Monitor>, java.util.List<sun.jvmstat.monitor.Monitor>);
+  void fireMonitorsUpdatedEvents();
+  static {};
+}

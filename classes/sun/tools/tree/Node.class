@@ -1,0 +1,12 @@
+Compiled from "Node.java"
+public class sun.tools.tree.Node implements sun.tools.java.Constants,java.lang.Cloneable {
+  int op;
+  long where;
+  sun.tools.tree.Node(int, long);
+  public int getOp();
+  public long getWhere();
+  public sun.tools.tree.Expression convert(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.java.Type, sun.tools.tree.Expression);
+  public void print(java.io.PrintStream);
+  public java.lang.Object clone();
+  public java.lang.String toString();
+}

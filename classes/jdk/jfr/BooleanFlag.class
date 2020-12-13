@@ -1,0 +1,3 @@
+Compiled from "BooleanFlag.java"
+public interface jdk.jfr.BooleanFlag extends java.lang.annotation.Annotation {
+}

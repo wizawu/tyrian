@@ -1,0 +1,13 @@
+Compiled from "PlainDocument.java"
+public class javax.swing.text.PlainDocument extends javax.swing.text.AbstractDocument {
+  public static final java.lang.String tabSizeAttribute;
+  public static final java.lang.String lineLimitAttribute;
+  public javax.swing.text.PlainDocument();
+  public javax.swing.text.PlainDocument(javax.swing.text.AbstractDocument$Content);
+  public void insertString(int, java.lang.String, javax.swing.text.AttributeSet) throws javax.swing.text.BadLocationException;
+  public javax.swing.text.Element getDefaultRootElement();
+  protected javax.swing.text.AbstractDocument$AbstractElement createDefaultRoot();
+  public javax.swing.text.Element getParagraphElement(int);
+  protected void insertUpdate(javax.swing.text.AbstractDocument$DefaultDocumentEvent, javax.swing.text.AttributeSet);
+  protected void removeUpdate(javax.swing.text.AbstractDocument$DefaultDocumentEvent);
+}

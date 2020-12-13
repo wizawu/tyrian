@@ -1,0 +1,7 @@
+Compiled from "SecureClassLoaderRepository.java"
+final class com.sun.jmx.mbeanserver.SecureClassLoaderRepository implements javax.management.loading.ClassLoaderRepository {
+  public com.sun.jmx.mbeanserver.SecureClassLoaderRepository(javax.management.loading.ClassLoaderRepository);
+  public final java.lang.Class<?> loadClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  public final java.lang.Class<?> loadClassWithout(java.lang.ClassLoader, java.lang.String) throws java.lang.ClassNotFoundException;
+  public final java.lang.Class<?> loadClassBefore(java.lang.ClassLoader, java.lang.String) throws java.lang.ClassNotFoundException;
+}

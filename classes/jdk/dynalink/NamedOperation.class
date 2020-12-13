@@ -1,0 +1,12 @@
+Compiled from "NamedOperation.java"
+public final class jdk.dynalink.NamedOperation implements jdk.dynalink.Operation {
+  public jdk.dynalink.NamedOperation(jdk.dynalink.Operation, java.lang.Object);
+  public jdk.dynalink.Operation getBaseOperation();
+  public java.lang.Object getName();
+  public final jdk.dynalink.NamedOperation changeName(java.lang.String);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public static jdk.dynalink.Operation getBaseOperation(jdk.dynalink.Operation);
+  public static java.lang.Object getName(jdk.dynalink.Operation);
+}

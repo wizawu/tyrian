@@ -1,0 +1,10 @@
+Compiled from "PixelConverter.java"
+public class sun.awt.image.PixelConverter {
+  public static final sun.awt.image.PixelConverter instance;
+  protected int alphaMask;
+  protected sun.awt.image.PixelConverter();
+  public int rgbToPixel(int, java.awt.image.ColorModel);
+  public int pixelToRgb(int, java.awt.image.ColorModel);
+  public final int getAlphaMask();
+  static {};
+}

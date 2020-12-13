@@ -1,0 +1,5 @@
+Compiled from "ShortBufferException.java"
+public class javax.crypto.ShortBufferException extends java.security.GeneralSecurityException {
+  public javax.crypto.ShortBufferException();
+  public javax.crypto.ShortBufferException(java.lang.String);
+}

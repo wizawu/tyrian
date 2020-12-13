@@ -1,0 +1,5 @@
+Compiled from "CompletenessAnalyzer.java"
+class jdk.jshell.CompletenessAnalyzer {
+  jdk.jshell.CompletenessAnalyzer(jdk.jshell.JShell);
+  jdk.jshell.CompletenessAnalyzer$CaInfo scan(java.lang.String);
+}

@@ -1,0 +1,14 @@
+Compiled from "MenuShortcut.java"
+public class java.awt.MenuShortcut implements java.io.Serializable {
+  int key;
+  boolean usesShift;
+  public java.awt.MenuShortcut(int);
+  public java.awt.MenuShortcut(int, boolean);
+  public int getKey();
+  public boolean usesShiftModifier();
+  public boolean equals(java.awt.MenuShortcut);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  protected java.lang.String paramString();
+}

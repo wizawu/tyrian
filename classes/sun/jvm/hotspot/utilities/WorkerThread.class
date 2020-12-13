@@ -1,0 +1,6 @@
+Compiled from "WorkerThread.java"
+public class sun.jvm.hotspot.utilities.WorkerThread {
+  public sun.jvm.hotspot.utilities.WorkerThread();
+  public void invokeLater(java.lang.Runnable);
+  public void shutdown();
+}

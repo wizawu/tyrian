@@ -1,0 +1,5 @@
+Compiled from "TabableView.java"
+public interface javax.swing.text.TabableView {
+  public abstract float getTabbedSpan(float, javax.swing.text.TabExpander);
+  public abstract float getPartialSpan(int, int);
+}

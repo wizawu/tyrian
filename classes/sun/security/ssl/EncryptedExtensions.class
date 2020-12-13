@@ -1,0 +1,7 @@
+Compiled from "EncryptedExtensions.java"
+final class sun.security.ssl.EncryptedExtensions {
+  static final sun.security.ssl.HandshakeProducer handshakeProducer;
+  static final sun.security.ssl.SSLConsumer handshakeConsumer;
+  sun.security.ssl.EncryptedExtensions();
+  static {};
+}

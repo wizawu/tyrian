@@ -1,0 +1,30 @@
+Compiled from "MetalSliderUI.java"
+public class javax.swing.plaf.metal.MetalSliderUI extends javax.swing.plaf.basic.BasicSliderUI {
+  protected final int TICK_BUFFER;
+  protected boolean filledSlider;
+  protected static java.awt.Color thumbColor;
+  protected static java.awt.Color highlightColor;
+  protected static java.awt.Color darkShadowColor;
+  protected static int trackWidth;
+  protected static int tickLength;
+  protected static javax.swing.Icon horizThumbIcon;
+  protected static javax.swing.Icon vertThumbIcon;
+  protected final java.lang.String SLIDER_FILL;
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.plaf.metal.MetalSliderUI();
+  public void installUI(javax.swing.JComponent);
+  protected java.beans.PropertyChangeListener createPropertyChangeListener(javax.swing.JSlider);
+  public void paintThumb(java.awt.Graphics);
+  public void paintTrack(java.awt.Graphics);
+  public void paintFocus(java.awt.Graphics);
+  protected java.awt.Dimension getThumbSize();
+  public int getTickLength();
+  protected int getTrackWidth();
+  protected int getTrackLength();
+  protected int getThumbOverhang();
+  protected void scrollDueToClickInTrack(int);
+  protected void paintMinorTickForHorizSlider(java.awt.Graphics, java.awt.Rectangle, int);
+  protected void paintMajorTickForHorizSlider(java.awt.Graphics, java.awt.Rectangle, int);
+  protected void paintMinorTickForVertSlider(java.awt.Graphics, java.awt.Rectangle, int);
+  protected void paintMajorTickForVertSlider(java.awt.Graphics, java.awt.Rectangle, int);
+}

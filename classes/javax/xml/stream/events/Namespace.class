@@ -1,0 +1,6 @@
+Compiled from "Namespace.java"
+public interface javax.xml.stream.events.Namespace extends javax.xml.stream.events.Attribute {
+  public abstract java.lang.String getPrefix();
+  public abstract java.lang.String getNamespaceURI();
+  public abstract boolean isDefaultNamespaceDeclaration();
+}

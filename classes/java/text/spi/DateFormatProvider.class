@@ -1,0 +1,7 @@
+Compiled from "DateFormatProvider.java"
+public abstract class java.text.spi.DateFormatProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.text.spi.DateFormatProvider();
+  public abstract java.text.DateFormat getTimeInstance(int, java.util.Locale);
+  public abstract java.text.DateFormat getDateInstance(int, java.util.Locale);
+  public abstract java.text.DateFormat getDateTimeInstance(int, int, java.util.Locale);
+}

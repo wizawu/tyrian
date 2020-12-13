@@ -1,0 +1,12 @@
+Compiled from "StringToIntTable.java"
+public class com.sun.org.apache.xml.internal.utils.StringToIntTable {
+  public static final int INVALID_KEY;
+  public com.sun.org.apache.xml.internal.utils.StringToIntTable();
+  public com.sun.org.apache.xml.internal.utils.StringToIntTable(int);
+  public final int getLength();
+  public final void put(java.lang.String, int);
+  public final int get(java.lang.String);
+  public final int getIgnoreCase(java.lang.String);
+  public final boolean contains(java.lang.String);
+  public final java.lang.String[] keys();
+}

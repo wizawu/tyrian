@@ -1,0 +1,3 @@
+Compiled from "VMDeathEvent.java"
+public interface com.sun.jdi.event.VMDeathEvent extends com.sun.jdi.event.Event {
+}

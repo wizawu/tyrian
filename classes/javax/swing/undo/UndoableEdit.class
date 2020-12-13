@@ -1,0 +1,14 @@
+Compiled from "UndoableEdit.java"
+public interface javax.swing.undo.UndoableEdit {
+  public abstract void undo() throws javax.swing.undo.CannotUndoException;
+  public abstract boolean canUndo();
+  public abstract void redo() throws javax.swing.undo.CannotRedoException;
+  public abstract boolean canRedo();
+  public abstract void die();
+  public abstract boolean addEdit(javax.swing.undo.UndoableEdit);
+  public abstract boolean replaceEdit(javax.swing.undo.UndoableEdit);
+  public abstract boolean isSignificant();
+  public abstract java.lang.String getPresentationName();
+  public abstract java.lang.String getUndoPresentationName();
+  public abstract java.lang.String getRedoPresentationName();
+}

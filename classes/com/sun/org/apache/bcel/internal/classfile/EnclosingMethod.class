@@ -1,0 +1,13 @@
+Compiled from "EnclosingMethod.java"
+public class com.sun.org.apache.bcel.internal.classfile.EnclosingMethod extends com.sun.org.apache.bcel.internal.classfile.Attribute {
+  com.sun.org.apache.bcel.internal.classfile.EnclosingMethod(int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public com.sun.org.apache.bcel.internal.classfile.Attribute copy(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public final int getEnclosingClassIndex();
+  public final int getEnclosingMethodIndex();
+  public final void setEnclosingClassIndex(int);
+  public final void setEnclosingMethodIndex(int);
+  public final com.sun.org.apache.bcel.internal.classfile.ConstantClass getEnclosingClass();
+  public final com.sun.org.apache.bcel.internal.classfile.ConstantNameAndType getEnclosingMethod();
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+}

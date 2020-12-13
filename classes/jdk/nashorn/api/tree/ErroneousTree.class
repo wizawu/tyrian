@@ -1,0 +1,3 @@
+Compiled from "ErroneousTree.java"
+public interface jdk.nashorn.api.tree.ErroneousTree extends jdk.nashorn.api.tree.ExpressionTree {
+}

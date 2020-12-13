@@ -1,0 +1,5 @@
+Compiled from "ByteExpression.java"
+public class sun.tools.tree.ByteExpression extends sun.tools.tree.IntegerExpression {
+  public sun.tools.tree.ByteExpression(long, byte);
+  public void print(java.io.PrintStream);
+}

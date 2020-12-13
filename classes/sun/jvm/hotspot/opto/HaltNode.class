@@ -1,0 +1,5 @@
+Compiled from "HaltNode.java"
+public class sun.jvm.hotspot.opto.HaltNode extends sun.jvm.hotspot.opto.Node {
+  public sun.jvm.hotspot.opto.HaltNode(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

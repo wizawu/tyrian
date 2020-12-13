@@ -1,0 +1,15 @@
+Compiled from "AtomicReferenceFieldUpdater.java"
+public abstract class java.util.concurrent.atomic.AtomicReferenceFieldUpdater<T, V> {
+  public static <U, W> java.util.concurrent.atomic.AtomicReferenceFieldUpdater<U, W> newUpdater(java.lang.Class<U>, java.lang.Class<W>, java.lang.String);
+  protected java.util.concurrent.atomic.AtomicReferenceFieldUpdater();
+  public abstract boolean compareAndSet(T, V, V);
+  public abstract boolean weakCompareAndSet(T, V, V);
+  public abstract void set(T, V);
+  public abstract void lazySet(T, V);
+  public abstract V get(T);
+  public V getAndSet(T, V);
+  public final V getAndUpdate(T, java.util.function.UnaryOperator<V>);
+  public final V updateAndGet(T, java.util.function.UnaryOperator<V>);
+  public final V getAndAccumulate(T, V, java.util.function.BinaryOperator<V>);
+  public final V accumulateAndGet(T, V, java.util.function.BinaryOperator<V>);
+}

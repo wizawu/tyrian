@@ -1,0 +1,39 @@
+Compiled from "LanguageTag.java"
+public class sun.util.locale.LanguageTag {
+  public static final java.lang.String SEP;
+  public static final java.lang.String PRIVATEUSE;
+  public static final java.lang.String UNDETERMINED;
+  public static final java.lang.String PRIVUSE_VARIANT_PREFIX;
+  public static sun.util.locale.LanguageTag parse(java.lang.String, sun.util.locale.ParseStatus);
+  public static sun.util.locale.LanguageTag parseLocale(sun.util.locale.BaseLocale, sun.util.locale.LocaleExtensions);
+  public java.lang.String getLanguage();
+  public java.util.List<java.lang.String> getExtlangs();
+  public java.lang.String getScript();
+  public java.lang.String getRegion();
+  public java.util.List<java.lang.String> getVariants();
+  public java.util.List<java.lang.String> getExtensions();
+  public java.lang.String getPrivateuse();
+  public static boolean isLanguage(java.lang.String);
+  public static boolean isExtlang(java.lang.String);
+  public static boolean isScript(java.lang.String);
+  public static boolean isRegion(java.lang.String);
+  public static boolean isVariant(java.lang.String);
+  public static boolean isExtensionSingleton(java.lang.String);
+  public static boolean isExtensionSingletonChar(char);
+  public static boolean isExtensionSubtag(java.lang.String);
+  public static boolean isPrivateusePrefix(java.lang.String);
+  public static boolean isPrivateusePrefixChar(char);
+  public static boolean isPrivateuseSubtag(java.lang.String);
+  public static java.lang.String canonicalizeLanguage(java.lang.String);
+  public static java.lang.String canonicalizeExtlang(java.lang.String);
+  public static java.lang.String canonicalizeScript(java.lang.String);
+  public static java.lang.String canonicalizeRegion(java.lang.String);
+  public static java.lang.String canonicalizeVariant(java.lang.String);
+  public static java.lang.String canonicalizeExtension(java.lang.String);
+  public static java.lang.String canonicalizeExtensionSingleton(java.lang.String);
+  public static java.lang.String canonicalizeExtensionSubtag(java.lang.String);
+  public static java.lang.String canonicalizePrivateuse(java.lang.String);
+  public static java.lang.String canonicalizePrivateuseSubtag(java.lang.String);
+  public java.lang.String toString();
+  static {};
+}

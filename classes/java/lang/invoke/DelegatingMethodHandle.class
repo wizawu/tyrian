@@ -1,0 +1,20 @@
+Compiled from "DelegatingMethodHandle.java"
+abstract class java.lang.invoke.DelegatingMethodHandle extends java.lang.invoke.MethodHandle {
+  static final java.lang.invoke.LambdaForm$NamedFunction NF_getTarget;
+  static final boolean $assertionsDisabled;
+  protected java.lang.invoke.DelegatingMethodHandle(java.lang.invoke.MethodHandle);
+  protected java.lang.invoke.DelegatingMethodHandle(java.lang.invoke.MethodType, java.lang.invoke.MethodHandle);
+  protected java.lang.invoke.DelegatingMethodHandle(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm);
+  protected abstract java.lang.invoke.MethodHandle getTarget();
+  abstract java.lang.invoke.MethodHandle asTypeUncached(java.lang.invoke.MethodType);
+  java.lang.invoke.MemberName internalMemberName();
+  boolean isInvokeSpecial();
+  java.lang.Class<?> internalCallerClass();
+  java.lang.invoke.MethodHandle copyWith(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm);
+  java.lang.String internalProperties();
+  java.lang.invoke.BoundMethodHandle rebind();
+  static java.lang.invoke.LambdaForm makeReinvokerForm(java.lang.invoke.MethodHandle, int, java.lang.Object, java.lang.invoke.LambdaForm$NamedFunction);
+  static java.lang.invoke.LambdaForm makeReinvokerForm(java.lang.invoke.MethodHandle, int, java.lang.Object, boolean, java.lang.invoke.LambdaForm$NamedFunction, java.lang.invoke.LambdaForm$NamedFunction);
+  java.lang.Object internalProperties();
+  static {};
+}

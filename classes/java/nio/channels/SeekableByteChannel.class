@@ -1,0 +1,9 @@
+Compiled from "SeekableByteChannel.java"
+public interface java.nio.channels.SeekableByteChannel extends java.nio.channels.ByteChannel {
+  public abstract int read(java.nio.ByteBuffer) throws java.io.IOException;
+  public abstract int write(java.nio.ByteBuffer) throws java.io.IOException;
+  public abstract long position() throws java.io.IOException;
+  public abstract java.nio.channels.SeekableByteChannel position(long) throws java.io.IOException;
+  public abstract long size() throws java.io.IOException;
+  public abstract java.nio.channels.SeekableByteChannel truncate(long) throws java.io.IOException;
+}

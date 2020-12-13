@@ -1,0 +1,4 @@
+Compiled from "EventFilter.java"
+public interface javax.xml.stream.EventFilter {
+  public abstract boolean accept(javax.xml.stream.events.XMLEvent);
+}

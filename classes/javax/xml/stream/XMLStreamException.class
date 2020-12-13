@@ -1,0 +1,13 @@
+Compiled from "XMLStreamException.java"
+public class javax.xml.stream.XMLStreamException extends java.lang.Exception {
+  protected java.lang.Throwable nested;
+  protected javax.xml.stream.Location location;
+  public javax.xml.stream.XMLStreamException();
+  public javax.xml.stream.XMLStreamException(java.lang.String);
+  public javax.xml.stream.XMLStreamException(java.lang.Throwable);
+  public javax.xml.stream.XMLStreamException(java.lang.String, java.lang.Throwable);
+  public javax.xml.stream.XMLStreamException(java.lang.String, javax.xml.stream.Location, java.lang.Throwable);
+  public javax.xml.stream.XMLStreamException(java.lang.String, javax.xml.stream.Location);
+  public java.lang.Throwable getNestedException();
+  public javax.xml.stream.Location getLocation();
+}

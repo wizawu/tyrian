@@ -1,0 +1,13 @@
+Compiled from "XMLParser.java"
+public abstract class com.sun.org.apache.xerces.internal.parsers.XMLParser {
+  protected static final java.lang.String ENTITY_RESOLVER;
+  protected static final java.lang.String ERROR_HANDLER;
+  protected com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration fConfiguration;
+  com.sun.org.apache.xerces.internal.utils.XMLSecurityManager securityManager;
+  com.sun.org.apache.xerces.internal.utils.XMLSecurityPropertyManager securityPropertyManager;
+  public boolean getFeature(java.lang.String) throws org.xml.sax.SAXNotSupportedException, org.xml.sax.SAXNotRecognizedException;
+  protected com.sun.org.apache.xerces.internal.parsers.XMLParser(com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration);
+  public void parse(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource) throws com.sun.org.apache.xerces.internal.xni.XNIException, java.io.IOException;
+  protected void reset() throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  static {};
+}

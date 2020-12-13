@@ -1,0 +1,7 @@
+Compiled from "ConstantMethodref.java"
+public final class com.sun.org.apache.bcel.internal.classfile.ConstantMethodref extends com.sun.org.apache.bcel.internal.classfile.ConstantCP {
+  public com.sun.org.apache.bcel.internal.classfile.ConstantMethodref(com.sun.org.apache.bcel.internal.classfile.ConstantMethodref);
+  com.sun.org.apache.bcel.internal.classfile.ConstantMethodref(java.io.DataInput) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.ConstantMethodref(int, int);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+}

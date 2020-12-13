@@ -1,0 +1,6 @@
+Compiled from "HeadlessException.java"
+public class java.awt.HeadlessException extends java.lang.UnsupportedOperationException {
+  public java.awt.HeadlessException();
+  public java.awt.HeadlessException(java.lang.String);
+  public java.lang.String getMessage();
+}

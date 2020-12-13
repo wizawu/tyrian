@@ -1,0 +1,7 @@
+Compiled from "NegotiatorImpl.java"
+public class sun.net.www.protocol.http.spnego.NegotiatorImpl extends sun.net.www.protocol.http.Negotiator {
+  public sun.net.www.protocol.http.spnego.NegotiatorImpl(sun.net.www.protocol.http.HttpCallerInfo) throws java.io.IOException;
+  public byte[] firstToken();
+  public byte[] nextToken(byte[]) throws java.io.IOException;
+  static {};
+}

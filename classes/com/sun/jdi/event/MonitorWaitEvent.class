@@ -1,0 +1,6 @@
+Compiled from "MonitorWaitEvent.java"
+public interface com.sun.jdi.event.MonitorWaitEvent extends com.sun.jdi.event.LocatableEvent {
+  public abstract com.sun.jdi.ThreadReference thread();
+  public abstract com.sun.jdi.ObjectReference monitor();
+  public abstract long timeout();
+}

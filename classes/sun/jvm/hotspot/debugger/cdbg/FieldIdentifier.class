@@ -1,0 +1,5 @@
+Compiled from "FieldIdentifier.java"
+public interface sun.jvm.hotspot.debugger.cdbg.FieldIdentifier {
+  public abstract sun.jvm.hotspot.debugger.cdbg.Type getType();
+  public abstract java.lang.String toString();
+}

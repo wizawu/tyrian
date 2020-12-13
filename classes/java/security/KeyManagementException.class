@@ -1,0 +1,7 @@
+Compiled from "KeyManagementException.java"
+public class java.security.KeyManagementException extends java.security.KeyException {
+  public java.security.KeyManagementException();
+  public java.security.KeyManagementException(java.lang.String);
+  public java.security.KeyManagementException(java.lang.String, java.lang.Throwable);
+  public java.security.KeyManagementException(java.lang.Throwable);
+}

@@ -1,0 +1,5 @@
+Compiled from "Plugin.java"
+public interface com.sun.source.util.Plugin {
+  public abstract java.lang.String getName();
+  public abstract void init(com.sun.source.util.JavacTask, java.lang.String...);
+}

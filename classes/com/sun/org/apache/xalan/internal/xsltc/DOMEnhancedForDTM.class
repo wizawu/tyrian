@@ -1,0 +1,12 @@
+Compiled from "DOMEnhancedForDTM.java"
+public interface com.sun.org.apache.xalan.internal.xsltc.DOMEnhancedForDTM extends com.sun.org.apache.xalan.internal.xsltc.DOM {
+  public abstract short[] getMapping(java.lang.String[], java.lang.String[], int[]);
+  public abstract int[] getReverseMapping(java.lang.String[], java.lang.String[], int[]);
+  public abstract short[] getNamespaceMapping(java.lang.String[]);
+  public abstract short[] getReverseNamespaceMapping(java.lang.String[]);
+  public abstract java.lang.String getDocumentURI();
+  public abstract void setDocumentURI(java.lang.String);
+  public abstract int getExpandedTypeID2(int);
+  public abstract boolean hasDOMSource();
+  public abstract int getElementById(java.lang.String);
+}

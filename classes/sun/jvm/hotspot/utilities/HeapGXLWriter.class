@@ -1,0 +1,21 @@
+Compiled from "HeapGXLWriter.java"
+public class sun.jvm.hotspot.utilities.HeapGXLWriter extends sun.jvm.hotspot.utilities.AbstractHeapGraphWriter {
+  public sun.jvm.hotspot.utilities.HeapGXLWriter();
+  public void write(java.lang.String) throws java.io.IOException;
+  protected void writeHeapHeader() throws java.io.IOException;
+  protected void writeObjectHeader(sun.jvm.hotspot.oops.Oop) throws java.io.IOException;
+  protected void writeObjectFooter(sun.jvm.hotspot.oops.Oop) throws java.io.IOException;
+  protected void writeObjectArray(sun.jvm.hotspot.oops.ObjArray) throws java.io.IOException;
+  protected void writePrimitiveArray(sun.jvm.hotspot.oops.TypeArray) throws java.io.IOException;
+  protected void writeClass(sun.jvm.hotspot.oops.Instance) throws java.io.IOException;
+  protected void writeReferenceField(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.OopField) throws java.io.IOException;
+  protected void writeByteField(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.ByteField) throws java.io.IOException;
+  protected void writeCharField(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.CharField) throws java.io.IOException;
+  protected void writeBooleanField(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.BooleanField) throws java.io.IOException;
+  protected void writeShortField(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.ShortField) throws java.io.IOException;
+  protected void writeIntField(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.IntField) throws java.io.IOException;
+  protected void writeLongField(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.LongField) throws java.io.IOException;
+  protected void writeFloatField(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.FloatField) throws java.io.IOException;
+  protected void writeDoubleField(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.DoubleField) throws java.io.IOException;
+  protected void writeHeapFooter() throws java.io.IOException;
+}

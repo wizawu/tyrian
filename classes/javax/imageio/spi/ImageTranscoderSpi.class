@@ -1,0 +1,8 @@
+Compiled from "ImageTranscoderSpi.java"
+public abstract class javax.imageio.spi.ImageTranscoderSpi extends javax.imageio.spi.IIOServiceProvider {
+  protected javax.imageio.spi.ImageTranscoderSpi();
+  public javax.imageio.spi.ImageTranscoderSpi(java.lang.String, java.lang.String);
+  public abstract java.lang.String getReaderServiceProviderName();
+  public abstract java.lang.String getWriterServiceProviderName();
+  public abstract javax.imageio.ImageTranscoder createTranscoderInstance();
+}

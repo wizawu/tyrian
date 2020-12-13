@@ -1,0 +1,4 @@
+Compiled from "MultiDocPrintService.java"
+public interface javax.print.MultiDocPrintService extends javax.print.PrintService {
+  public abstract javax.print.MultiDocPrintJob createMultiDocPrintJob();
+}

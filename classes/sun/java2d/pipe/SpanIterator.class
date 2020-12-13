@@ -1,0 +1,8 @@
+Compiled from "SpanIterator.java"
+public interface sun.java2d.pipe.SpanIterator {
+  public abstract void getPathBox(int[]);
+  public abstract void intersectClipBox(int, int, int, int);
+  public abstract boolean nextSpan(int[]);
+  public abstract void skipDownTo(int);
+  public abstract long getNativeIterator();
+}

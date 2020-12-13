@@ -1,0 +1,14 @@
+Compiled from "ContentHandler.java"
+public interface jdk.internal.org.xml.sax.ContentHandler {
+  public abstract void setDocumentLocator(jdk.internal.org.xml.sax.Locator);
+  public abstract void startDocument() throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void endDocument() throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void startPrefixMapping(java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void endPrefixMapping(java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void startElement(java.lang.String, java.lang.String, java.lang.String, jdk.internal.org.xml.sax.Attributes) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void endElement(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void characters(char[], int, int) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void ignorableWhitespace(char[], int, int) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void processingInstruction(java.lang.String, java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void skippedEntity(java.lang.String) throws jdk.internal.org.xml.sax.SAXException;
+}

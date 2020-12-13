@@ -1,0 +1,9 @@
+Compiled from "CCacheOutputStream.java"
+public class sun.security.krb5.internal.ccache.CCacheOutputStream extends sun.security.krb5.internal.util.KrbDataOutputStream implements sun.security.krb5.internal.ccache.FileCCacheConstants {
+  public sun.security.krb5.internal.ccache.CCacheOutputStream(java.io.OutputStream);
+  public void writeHeader(sun.security.krb5.PrincipalName, int) throws java.io.IOException;
+  public void addCreds(sun.security.krb5.internal.ccache.Credentials) throws java.io.IOException, sun.security.krb5.Asn1Exception;
+  public void addConfigEntry(sun.security.krb5.PrincipalName, sun.security.krb5.internal.ccache.CredentialsCache$ConfigEntry) throws java.io.IOException;
+  void writeTicket(sun.security.krb5.internal.Ticket) throws java.io.IOException, sun.security.krb5.Asn1Exception;
+  void writeFlags(sun.security.krb5.internal.TicketFlags) throws java.io.IOException;
+}

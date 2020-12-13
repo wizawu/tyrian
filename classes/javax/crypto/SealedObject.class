@@ -1,0 +1,12 @@
+Compiled from "SealedObject.java"
+public class javax.crypto.SealedObject implements java.io.Serializable {
+  static final long serialVersionUID;
+  protected byte[] encodedParams;
+  public javax.crypto.SealedObject(java.io.Serializable, javax.crypto.Cipher) throws java.io.IOException, javax.crypto.IllegalBlockSizeException;
+  protected javax.crypto.SealedObject(javax.crypto.SealedObject);
+  public final java.lang.String getAlgorithm();
+  public final java.lang.Object getObject(java.security.Key) throws java.io.IOException, java.lang.ClassNotFoundException, java.security.NoSuchAlgorithmException, java.security.InvalidKeyException;
+  public final java.lang.Object getObject(javax.crypto.Cipher) throws java.io.IOException, java.lang.ClassNotFoundException, javax.crypto.IllegalBlockSizeException, javax.crypto.BadPaddingException;
+  public final java.lang.Object getObject(java.security.Key, java.lang.String) throws java.io.IOException, java.lang.ClassNotFoundException, java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException, java.security.InvalidKeyException;
+  static {};
+}

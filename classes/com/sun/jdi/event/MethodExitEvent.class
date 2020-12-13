@@ -1,0 +1,5 @@
+Compiled from "MethodExitEvent.java"
+public interface com.sun.jdi.event.MethodExitEvent extends com.sun.jdi.event.LocatableEvent {
+  public abstract com.sun.jdi.Method method();
+  public abstract com.sun.jdi.Value returnValue();
+}

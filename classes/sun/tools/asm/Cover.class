@@ -1,0 +1,7 @@
+Compiled from "Cover.java"
+public class sun.tools.asm.Cover {
+  public int Type;
+  public long Addr;
+  public int NumCommand;
+  public sun.tools.asm.Cover(int, long, int);
+}

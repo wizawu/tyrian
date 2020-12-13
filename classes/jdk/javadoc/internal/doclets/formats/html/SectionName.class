@@ -1,0 +1,41 @@
+Compiled from "SectionName.java"
+public final class jdk.javadoc.internal.doclets.formats.html.SectionName extends java.lang.Enum<jdk.javadoc.internal.doclets.formats.html.SectionName> {
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName ANNOTATION_TYPE_ELEMENT_DETAIL;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName ANNOTATION_TYPE_FIELD_DETAIL;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName ANNOTATION_TYPE_FIELD_SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName ANNOTATION_TYPE_OPTIONAL_ELEMENT_SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName ANNOTATION_TYPE_REQUIRED_ELEMENT_SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName CONSTRUCTOR_DETAIL;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName CONSTRUCTOR_SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName ENUM_CONSTANT_DETAIL;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName ENUM_CONSTANTS_INHERITANCE;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName ENUM_CONSTANT_SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName FIELD_DETAIL;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName FIELDS_INHERITANCE;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName FIELD_SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName METHOD_DETAIL;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName METHODS_INHERITANCE;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName METHOD_SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName MODULE_DESCRIPTION;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName MODULES;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName PACKAGES;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName SERVICES;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName NAVBAR_BOTTOM;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName NAVBAR_BOTTOM_FIRSTROW;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName NAVBAR_TOP;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName NAVBAR_TOP_FIRSTROW;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName NESTED_CLASSES_INHERITANCE;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName NESTED_CLASS_SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName OVERVIEW_DESCRIPTION;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName PACKAGE_DESCRIPTION;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName PROPERTY_DETAIL;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName PROPERTIES_INHERITANCE;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName PROPERTY_SUMMARY;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName SKIP_NAVBAR_BOTTOM;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName SKIP_NAVBAR_TOP;
+  public static final jdk.javadoc.internal.doclets.formats.html.SectionName UNNAMED_PACKAGE_ANCHOR;
+  public static jdk.javadoc.internal.doclets.formats.html.SectionName[] values();
+  public static jdk.javadoc.internal.doclets.formats.html.SectionName valueOf(java.lang.String);
+  public java.lang.String getName();
+  static {};
+}

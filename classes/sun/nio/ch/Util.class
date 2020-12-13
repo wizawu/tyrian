@@ -1,0 +1,21 @@
+Compiled from "Util.java"
+public class sun.nio.ch.Util {
+  static final boolean $assertionsDisabled;
+  public sun.nio.ch.Util();
+  public static java.nio.ByteBuffer getTemporaryDirectBuffer(int);
+  public static java.nio.ByteBuffer getTemporaryAlignedDirectBuffer(int, int);
+  public static void releaseTemporaryDirectBuffer(java.nio.ByteBuffer);
+  static void offerFirstTemporaryDirectBuffer(java.nio.ByteBuffer);
+  static void offerLastTemporaryDirectBuffer(java.nio.ByteBuffer);
+  static java.nio.ByteBuffer[] subsequence(java.nio.ByteBuffer[], int, int);
+  static <E> java.util.Set<E> ungrowableSet(java.util.Set<E>);
+  static void erase(java.nio.ByteBuffer);
+  static jdk.internal.misc.Unsafe unsafe();
+  static int pageSize();
+  static java.nio.MappedByteBuffer newMappedByteBuffer(int, long, java.io.FileDescriptor, java.lang.Runnable);
+  static java.nio.MappedByteBuffer newMappedByteBufferR(int, long, java.io.FileDescriptor, java.lang.Runnable);
+  static void checkBufferPositionAligned(java.nio.ByteBuffer, int, int) throws java.io.IOException;
+  static void checkRemainingBufferSizeAligned(int, int) throws java.io.IOException;
+  static void checkChannelPositionAligned(long, int) throws java.io.IOException;
+  static {};
+}

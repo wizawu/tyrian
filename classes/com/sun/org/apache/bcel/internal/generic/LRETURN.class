@@ -1,0 +1,5 @@
+Compiled from "LRETURN.java"
+public class com.sun.org.apache.bcel.internal.generic.LRETURN extends com.sun.org.apache.bcel.internal.generic.ReturnInstruction {
+  public com.sun.org.apache.bcel.internal.generic.LRETURN();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

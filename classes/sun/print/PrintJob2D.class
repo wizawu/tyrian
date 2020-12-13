@@ -1,0 +1,17 @@
+Compiled from "PrintJob2D.java"
+public class sun.print.PrintJob2D extends java.awt.PrintJob implements java.awt.print.Printable,java.lang.Runnable {
+  public sun.print.PrintJob2D(java.awt.Frame, java.lang.String, java.util.Properties);
+  public sun.print.PrintJob2D(java.awt.Frame, java.lang.String, java.awt.JobAttributes, java.awt.PageAttributes);
+  public boolean printDialog();
+  public java.awt.Graphics getGraphics();
+  public java.awt.Dimension getPageDimension();
+  public int getPageResolution();
+  public boolean lastPageFirst();
+  public synchronized void end();
+  public void finalize();
+  public int print(java.awt.Graphics, java.awt.print.PageFormat, int) throws java.awt.print.PrinterException;
+  public void run();
+  public static javax.print.attribute.standard.MediaSizeName mapMedia(java.awt.PageAttributes$MediaType);
+  public static java.awt.PageAttributes$MediaType unMapMedia(javax.print.attribute.standard.MediaSizeName);
+  static {};
+}

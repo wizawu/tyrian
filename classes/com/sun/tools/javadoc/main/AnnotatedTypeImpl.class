@@ -1,0 +1,21 @@
+Compiled from "AnnotatedTypeImpl.java"
+public class com.sun.tools.javadoc.main.AnnotatedTypeImpl extends com.sun.tools.javadoc.main.AbstractTypeImpl implements com.sun.javadoc.AnnotatedType {
+  com.sun.tools.javadoc.main.AnnotatedTypeImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Type);
+  public com.sun.javadoc.AnnotationDesc[] annotations();
+  public com.sun.javadoc.Type underlyingType();
+  public com.sun.javadoc.AnnotatedType asAnnotatedType();
+  public java.lang.String toString();
+  public java.lang.String typeName();
+  public java.lang.String qualifiedTypeName();
+  public java.lang.String simpleTypeName();
+  public java.lang.String dimension();
+  public boolean isPrimitive();
+  public com.sun.javadoc.ClassDoc asClassDoc();
+  public com.sun.javadoc.TypeVariable asTypeVariable();
+  public com.sun.javadoc.WildcardType asWildcardType();
+  public com.sun.javadoc.ParameterizedType asParameterizedType();
+  public com.sun.javadoc.AnnotationTypeDoc asAnnotationTypeDoc();
+  public java.lang.String qualifiedName();
+  public java.lang.String name();
+  public com.sun.javadoc.Type getElementType();
+}

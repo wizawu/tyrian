@@ -1,0 +1,6 @@
+Compiled from "X509AttributeName.java"
+public class sun.security.x509.X509AttributeName {
+  public sun.security.x509.X509AttributeName(java.lang.String);
+  public java.lang.String getPrefix();
+  public java.lang.String getSuffix();
+}

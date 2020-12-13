@@ -1,0 +1,12 @@
+Compiled from "ImagePluginStack.java"
+public final class jdk.tools.jlink.internal.ImagePluginStack {
+  public jdk.tools.jlink.internal.ImagePluginStack();
+  public jdk.tools.jlink.internal.ImagePluginStack(jdk.tools.jlink.builder.ImageBuilder, java.util.List<jdk.tools.jlink.plugin.Plugin>, jdk.tools.jlink.plugin.Plugin);
+  public jdk.tools.jlink.internal.ImagePluginStack(jdk.tools.jlink.builder.ImageBuilder, java.util.List<jdk.tools.jlink.plugin.Plugin>, jdk.tools.jlink.plugin.Plugin, boolean);
+  public void operate(jdk.tools.jlink.internal.ImagePluginStack$ImageProvider) throws java.lang.Exception;
+  public java.io.DataOutputStream getJImageFileOutputStream() throws java.io.IOException;
+  public jdk.tools.jlink.builder.ImageBuilder getImageBuilder();
+  public jdk.tools.jlink.plugin.ResourcePool visitResources(jdk.tools.jlink.internal.ResourcePoolManager) throws java.lang.Exception;
+  public void storeFiles(jdk.tools.jlink.plugin.ResourcePool, jdk.tools.jlink.plugin.ResourcePool, jdk.tools.jlink.internal.BasicImageWriter) throws java.lang.Exception;
+  public jdk.tools.jlink.internal.ExecutableImage getExecutableImage() throws java.io.IOException;
+}

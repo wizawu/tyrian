@@ -1,0 +1,19 @@
+Compiled from "ProgressSource.java"
+public class sun.net.ProgressSource {
+  public sun.net.ProgressSource(java.net.URL, java.lang.String);
+  public sun.net.ProgressSource(java.net.URL, java.lang.String, long);
+  public boolean connected();
+  public void close();
+  public java.net.URL getURL();
+  public java.lang.String getMethod();
+  public java.lang.String getContentType();
+  public void setContentType(java.lang.String);
+  public long getProgress();
+  public long getExpected();
+  public sun.net.ProgressSource$State getState();
+  public void beginTracking();
+  public void finishTracking();
+  public void updateProgress(long, long);
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public java.lang.String toString();
+}

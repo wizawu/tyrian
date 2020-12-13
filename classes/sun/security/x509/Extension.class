@@ -1,0 +1,21 @@
+Compiled from "Extension.java"
+public class sun.security.x509.Extension implements java.security.cert.Extension {
+  protected sun.security.util.ObjectIdentifier extensionId;
+  protected boolean critical;
+  protected byte[] extensionValue;
+  public sun.security.x509.Extension();
+  public sun.security.x509.Extension(sun.security.util.DerValue) throws java.io.IOException;
+  public sun.security.x509.Extension(sun.security.util.ObjectIdentifier, boolean, byte[]) throws java.io.IOException;
+  public sun.security.x509.Extension(sun.security.x509.Extension);
+  public static sun.security.x509.Extension newExtension(sun.security.util.ObjectIdentifier, boolean, byte[]) throws java.io.IOException;
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public boolean isCritical();
+  public sun.security.util.ObjectIdentifier getExtensionId();
+  public byte[] getValue();
+  public byte[] getExtensionValue();
+  public java.lang.String getId();
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

@@ -1,0 +1,19 @@
+Compiled from "BuildState.java"
+public class com.sun.tools.sjavac.BuildState {
+  public com.sun.tools.sjavac.BuildState();
+  public java.util.Map<java.lang.String, com.sun.tools.sjavac.Module> modules();
+  public java.util.Map<java.lang.String, com.sun.tools.sjavac.Package> packages();
+  public java.util.Map<java.lang.String, com.sun.tools.sjavac.Source> sources();
+  public java.util.Map<java.lang.String, java.io.File> artifacts();
+  public java.util.Map<java.lang.String, java.util.Set<java.lang.String>> dependents();
+  public com.sun.tools.sjavac.Module lookupModule(java.lang.String);
+  com.sun.tools.sjavac.Module findModuleFromPackageName(java.lang.String);
+  public void flattenPackagesSourcesAndArtifacts(java.util.Map<java.lang.String, com.sun.tools.sjavac.Module>);
+  public void flattenArtifacts(java.util.Map<java.lang.String, com.sun.tools.sjavac.Module>);
+  public void calculateDependents();
+  public void checkInternalState(java.lang.String, boolean, java.util.Map<java.lang.String, com.sun.tools.sjavac.Source>);
+  public com.sun.tools.sjavac.Module loadModule(java.lang.String);
+  public com.sun.tools.sjavac.Package loadPackage(com.sun.tools.sjavac.Module, java.lang.String);
+  public com.sun.tools.sjavac.Source loadSource(com.sun.tools.sjavac.Package, java.lang.String, boolean);
+  public void copyPackagesExcept(com.sun.tools.sjavac.BuildState, java.util.Set<java.lang.String>, java.util.Set<java.lang.String>);
+}

@@ -1,0 +1,26 @@
+Compiled from "ExecutableMemberDocImpl.java"
+public abstract class com.sun.tools.javadoc.main.ExecutableMemberDocImpl extends com.sun.tools.javadoc.main.MemberDocImpl implements com.sun.javadoc.ExecutableMemberDoc {
+  protected final com.sun.tools.javac.code.Symbol$MethodSymbol sym;
+  public com.sun.tools.javadoc.main.ExecutableMemberDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$MethodSymbol, com.sun.source.util.TreePath);
+  public com.sun.tools.javadoc.main.ExecutableMemberDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$MethodSymbol);
+  protected long getFlags();
+  protected com.sun.tools.javac.code.Symbol$ClassSymbol getContainingClass();
+  public boolean isNative();
+  public boolean isSynchronized();
+  public boolean isVarArgs();
+  public boolean isSynthetic();
+  public boolean isIncluded();
+  public com.sun.javadoc.ThrowsTag[] throwsTags();
+  public com.sun.javadoc.ParamTag[] paramTags();
+  public com.sun.javadoc.ParamTag[] typeParamTags();
+  public com.sun.javadoc.ClassDoc[] thrownExceptions();
+  public com.sun.javadoc.Type[] thrownExceptionTypes();
+  public com.sun.javadoc.Parameter[] parameters();
+  public com.sun.javadoc.Type receiverType();
+  public com.sun.javadoc.TypeVariable[] typeParameters();
+  public java.lang.String signature();
+  public java.lang.String flatSignature();
+  protected java.lang.String typeParametersString();
+  java.text.CollationKey generateKey();
+  public com.sun.javadoc.SourcePosition position();
+}

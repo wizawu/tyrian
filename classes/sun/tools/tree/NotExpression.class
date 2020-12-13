@@ -1,0 +1,10 @@
+Compiled from "NotExpression.java"
+public class sun.tools.tree.NotExpression extends sun.tools.tree.UnaryExpression {
+  public sun.tools.tree.NotExpression(long, sun.tools.tree.Expression);
+  void selectType(sun.tools.java.Environment, sun.tools.tree.Context, int);
+  public void checkCondition(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>, sun.tools.tree.ConditionVars);
+  sun.tools.tree.Expression eval(boolean);
+  sun.tools.tree.Expression simplify();
+  void codeBranch(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler, sun.tools.asm.Label, boolean);
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+}

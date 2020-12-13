@@ -1,0 +1,3 @@
+Compiled from "DebugVC50SSPreComp.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSPreComp extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
+}

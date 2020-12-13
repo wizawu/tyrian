@@ -1,0 +1,15 @@
+Compiled from "PrinterGraphicsConfig.java"
+public class sun.print.PrinterGraphicsConfig extends java.awt.GraphicsConfiguration {
+  static java.awt.image.ColorModel theModel;
+  java.awt.GraphicsDevice gd;
+  int pageWidth;
+  int pageHeight;
+  java.awt.geom.AffineTransform deviceTransform;
+  public sun.print.PrinterGraphicsConfig(java.lang.String, java.awt.geom.AffineTransform, int, int);
+  public java.awt.GraphicsDevice getDevice();
+  public java.awt.image.ColorModel getColorModel();
+  public java.awt.image.ColorModel getColorModel(int);
+  public java.awt.geom.AffineTransform getDefaultTransform();
+  public java.awt.geom.AffineTransform getNormalizingTransform();
+  public java.awt.Rectangle getBounds();
+}

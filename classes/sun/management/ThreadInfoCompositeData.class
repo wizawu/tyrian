@@ -1,0 +1,28 @@
+Compiled from "ThreadInfoCompositeData.java"
+public class sun.management.ThreadInfoCompositeData extends sun.management.LazyCompositeData {
+  static final int RUNTIME_VERSION;
+  public java.lang.management.ThreadInfo getThreadInfo();
+  public static sun.management.ThreadInfoCompositeData getInstance(javax.management.openmbean.CompositeData);
+  public static javax.management.openmbean.CompositeData toCompositeData(java.lang.management.ThreadInfo);
+  protected javax.management.openmbean.CompositeData getCompositeData();
+  public long threadId();
+  public java.lang.String threadName();
+  public java.lang.Thread$State threadState();
+  public long blockedTime();
+  public long blockedCount();
+  public long waitedTime();
+  public long waitedCount();
+  public java.lang.String lockName();
+  public long lockOwnerId();
+  public java.lang.String lockOwnerName();
+  public boolean suspended();
+  public boolean inNative();
+  public boolean isDaemon();
+  public int getPriority();
+  public java.lang.StackTraceElement[] stackTrace();
+  public java.lang.management.LockInfo lockInfo();
+  public java.lang.management.MonitorInfo[] lockedMonitors();
+  public java.lang.management.LockInfo[] lockedSynchronizers();
+  public static void validateCompositeData(javax.management.openmbean.CompositeData);
+  static {};
+}

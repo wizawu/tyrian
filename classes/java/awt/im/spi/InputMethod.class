@@ -1,0 +1,19 @@
+Compiled from "InputMethod.java"
+public interface java.awt.im.spi.InputMethod {
+  public abstract void setInputMethodContext(java.awt.im.spi.InputMethodContext);
+  public abstract boolean setLocale(java.util.Locale);
+  public abstract java.util.Locale getLocale();
+  public abstract void setCharacterSubsets(java.lang.Character$Subset[]);
+  public abstract void setCompositionEnabled(boolean);
+  public abstract boolean isCompositionEnabled();
+  public abstract void reconvert();
+  public abstract void dispatchEvent(java.awt.AWTEvent);
+  public abstract void notifyClientWindowChange(java.awt.Rectangle);
+  public abstract void activate();
+  public abstract void deactivate(boolean);
+  public abstract void hideWindows();
+  public abstract void removeNotify();
+  public abstract void endComposition();
+  public abstract void dispose();
+  public abstract java.lang.Object getControlObject();
+}

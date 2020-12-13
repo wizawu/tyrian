@@ -1,0 +1,13 @@
+Compiled from "Serializer.java"
+public interface com.sun.org.apache.xml.internal.serializer.Serializer {
+  public abstract void setOutputStream(java.io.OutputStream);
+  public abstract java.io.OutputStream getOutputStream();
+  public abstract void setWriter(java.io.Writer);
+  public abstract java.io.Writer getWriter();
+  public abstract void setOutputFormat(java.util.Properties);
+  public abstract java.util.Properties getOutputFormat();
+  public abstract org.xml.sax.ContentHandler asContentHandler() throws java.io.IOException;
+  public abstract com.sun.org.apache.xml.internal.serializer.DOMSerializer asDOMSerializer() throws java.io.IOException;
+  public abstract boolean reset();
+  public abstract java.lang.Object asDOM3Serializer() throws java.io.IOException;
+}

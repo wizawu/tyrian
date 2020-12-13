@@ -1,0 +1,5 @@
+Compiled from "MalformedMemberNameException.java"
+class com.sun.tools.example.debug.tty.MalformedMemberNameException extends java.lang.Exception {
+  public com.sun.tools.example.debug.tty.MalformedMemberNameException();
+  public com.sun.tools.example.debug.tty.MalformedMemberNameException(java.lang.String);
+}

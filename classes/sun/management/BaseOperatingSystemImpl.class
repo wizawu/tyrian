@@ -1,0 +1,11 @@
+Compiled from "BaseOperatingSystemImpl.java"
+public class sun.management.BaseOperatingSystemImpl implements java.lang.management.OperatingSystemMXBean {
+  protected sun.management.BaseOperatingSystemImpl(sun.management.VMManagement);
+  public java.lang.String getName();
+  public java.lang.String getArch();
+  public java.lang.String getVersion();
+  public int getAvailableProcessors();
+  public double getSystemLoadAverage();
+  public javax.management.ObjectName getObjectName();
+  static {};
+}

@@ -1,0 +1,43 @@
+Compiled from "ParserForXMLSchema.java"
+class com.sun.org.apache.xerces.internal.impl.xpath.regex.ParserForXMLSchema extends com.sun.org.apache.xerces.internal.impl.xpath.regex.RegexParser {
+  public com.sun.org.apache.xerces.internal.impl.xpath.regex.ParserForXMLSchema();
+  public com.sun.org.apache.xerces.internal.impl.xpath.regex.ParserForXMLSchema(java.util.Locale);
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processCaret() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processDollar() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processLookahead() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processNegativelookahead() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processLookbehind() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processNegativelookbehind() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_A() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_Z() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_z() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_b() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_B() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_lt() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_gt() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processStar(com.sun.org.apache.xerces.internal.impl.xpath.regex.Token) throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processPlus(com.sun.org.apache.xerces.internal.impl.xpath.regex.Token) throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processQuestion(com.sun.org.apache.xerces.internal.impl.xpath.regex.Token) throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  boolean checkQuestion(int);
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processParen() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processParen2() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processCondition() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processModifiers() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processIndependent() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_c() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_C() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_i() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_I() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_g() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBacksolidus_X() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token processBackreference() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  int processCIinCharacterClass(com.sun.org.apache.xerces.internal.impl.xpath.regex.RangeToken, int);
+  protected com.sun.org.apache.xerces.internal.impl.xpath.regex.RangeToken parseCharacterClass(boolean) throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  protected com.sun.org.apache.xerces.internal.impl.xpath.regex.RangeToken parseSetOperations() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.Token getTokenForShorthand(int);
+  int decodeEscaped() throws com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
+  protected static synchronized com.sun.org.apache.xerces.internal.impl.xpath.regex.RangeToken getRange(java.lang.String, boolean);
+  static void setupRange(com.sun.org.apache.xerces.internal.impl.xpath.regex.Token, java.lang.String);
+  static void setupRange(com.sun.org.apache.xerces.internal.impl.xpath.regex.Token, int[]);
+  static {};
+}

@@ -1,0 +1,10 @@
+Compiled from "Logger.java"
+public interface jdk.internal.net.http.common.Logger extends java.lang.System$Logger {
+  public default boolean on();
+  public default void log(java.lang.String);
+  public default void log(java.util.function.Supplier<java.lang.String>);
+  public default void log(java.lang.Object);
+  public default void log(java.lang.String, java.lang.Throwable);
+  public default void log(java.util.function.Supplier<java.lang.String>, java.lang.Throwable);
+  public default void log(java.lang.String, java.lang.Object...);
+}

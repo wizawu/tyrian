@@ -1,0 +1,20 @@
+Compiled from "SynthSeparatorUI.java"
+public class javax.swing.plaf.synth.SynthSeparatorUI extends javax.swing.plaf.SeparatorUI implements java.beans.PropertyChangeListener,javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthSeparatorUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  public void installDefaults(javax.swing.JSeparator);
+  public void uninstallDefaults(javax.swing.JSeparator);
+  public void installListeners(javax.swing.JSeparator);
+  public void uninstallListeners(javax.swing.JSeparator);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+}

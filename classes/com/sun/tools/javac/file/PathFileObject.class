@@ -1,0 +1,35 @@
+Compiled from "PathFileObject.java"
+public abstract class com.sun.tools.javac.file.PathFileObject implements javax.tools.JavaFileObject {
+  protected final com.sun.tools.javac.file.BaseFileManager fileManager;
+  protected final java.nio.file.Path path;
+  static com.sun.tools.javac.file.PathFileObject forDirectoryPath(com.sun.tools.javac.file.BaseFileManager, java.nio.file.Path, java.nio.file.Path, com.sun.tools.javac.file.RelativePath);
+  public static com.sun.tools.javac.file.PathFileObject forJarPath(com.sun.tools.javac.file.BaseFileManager, java.nio.file.Path, java.nio.file.Path);
+  public static com.sun.tools.javac.file.PathFileObject forJRTPath(com.sun.tools.javac.file.BaseFileManager, java.nio.file.Path);
+  static com.sun.tools.javac.file.PathFileObject forSimplePath(com.sun.tools.javac.file.BaseFileManager, java.nio.file.Path, java.nio.file.Path);
+  protected com.sun.tools.javac.file.PathFileObject(com.sun.tools.javac.file.BaseFileManager, java.nio.file.Path);
+  abstract java.lang.String inferBinaryName(java.lang.Iterable<? extends java.nio.file.Path>);
+  abstract com.sun.tools.javac.file.PathFileObject getSibling(java.lang.String);
+  public java.nio.file.Path getPath();
+  public java.lang.String getShortName();
+  public javax.tools.JavaFileObject$Kind getKind();
+  public boolean isNameCompatible(java.lang.String, javax.tools.JavaFileObject$Kind);
+  protected boolean isPathNameCompatible(java.nio.file.Path, java.lang.String, javax.tools.JavaFileObject$Kind);
+  public javax.lang.model.element.NestingKind getNestingKind();
+  public javax.lang.model.element.Modifier getAccessLevel();
+  public java.net.URI toUri();
+  public java.io.InputStream openInputStream() throws java.io.IOException;
+  public java.io.OutputStream openOutputStream() throws java.io.IOException;
+  public java.io.Reader openReader(boolean) throws java.io.IOException;
+  public java.lang.CharSequence getCharContent(boolean) throws java.io.IOException;
+  public java.io.Writer openWriter() throws java.io.IOException;
+  public long getLastModified();
+  public boolean delete();
+  boolean isSameFile(com.sun.tools.javac.file.PathFileObject);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  protected static java.lang.String toBinaryName(com.sun.tools.javac.file.RelativePath);
+  protected static java.lang.String toBinaryName(java.nio.file.Path);
+  public static java.lang.String getSimpleName(javax.tools.FileObject);
+  static {};
+}

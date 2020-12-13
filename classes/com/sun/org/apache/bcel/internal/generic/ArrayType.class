@@ -1,0 +1,11 @@
+Compiled from "ArrayType.java"
+public final class com.sun.org.apache.bcel.internal.generic.ArrayType extends com.sun.org.apache.bcel.internal.generic.ReferenceType {
+  public com.sun.org.apache.bcel.internal.generic.ArrayType(byte, int);
+  public com.sun.org.apache.bcel.internal.generic.ArrayType(java.lang.String, int);
+  public com.sun.org.apache.bcel.internal.generic.ArrayType(com.sun.org.apache.bcel.internal.generic.Type, int);
+  public com.sun.org.apache.bcel.internal.generic.Type getBasicType();
+  public com.sun.org.apache.bcel.internal.generic.Type getElementType();
+  public int getDimensions();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

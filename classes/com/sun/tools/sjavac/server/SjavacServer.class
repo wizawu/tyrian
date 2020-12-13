@@ -1,0 +1,14 @@
+Compiled from "SjavacServer.java"
+public class com.sun.tools.sjavac.server.SjavacServer implements com.sun.tools.sjavac.server.Terminable {
+  public static final java.lang.String LINE_TYPE_RC;
+  com.sun.tools.sjavac.server.Sjavac sjavac;
+  final java.util.concurrent.atomic.AtomicBoolean keepAcceptingRequests;
+  public com.sun.tools.sjavac.server.SjavacServer(java.lang.String) throws java.io.FileNotFoundException;
+  public com.sun.tools.sjavac.server.SjavacServer(java.lang.String, int, int) throws java.io.FileNotFoundException;
+  public static synchronized com.sun.tools.sjavac.server.PortFile getPortFile(java.lang.String);
+  long getCookie();
+  int getPort();
+  public void addBuildTime(long);
+  public int startServer() throws java.io.IOException, java.lang.InterruptedException;
+  public void shutdown(java.lang.String);
+}

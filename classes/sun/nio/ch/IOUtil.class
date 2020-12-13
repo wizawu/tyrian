@@ -1,0 +1,29 @@
+Compiled from "IOUtil.java"
+public class sun.nio.ch.IOUtil {
+  static final int IOV_MAX;
+  static final boolean $assertionsDisabled;
+  static int write(java.io.FileDescriptor, java.nio.ByteBuffer, long, sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  static int write(java.io.FileDescriptor, java.nio.ByteBuffer, long, boolean, int, sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  static long write(java.io.FileDescriptor, java.nio.ByteBuffer[], sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  static long write(java.io.FileDescriptor, java.nio.ByteBuffer[], int, int, sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  static long write(java.io.FileDescriptor, java.nio.ByteBuffer[], int, int, boolean, int, sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  static int read(java.io.FileDescriptor, java.nio.ByteBuffer, long, sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  static int read(java.io.FileDescriptor, java.nio.ByteBuffer, long, boolean, int, sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  static long read(java.io.FileDescriptor, java.nio.ByteBuffer[], sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  static long read(java.io.FileDescriptor, java.nio.ByteBuffer[], int, int, sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  static long read(java.io.FileDescriptor, java.nio.ByteBuffer[], int, int, boolean, int, sun.nio.ch.NativeDispatcher) throws java.io.IOException;
+  public static java.io.FileDescriptor newFD(int);
+  static native boolean randomBytes(byte[]);
+  static native long makePipe(boolean) throws java.io.IOException;
+  static native int write1(int, byte) throws java.io.IOException;
+  static native boolean drain(int) throws java.io.IOException;
+  static native int drain1(int) throws java.io.IOException;
+  public static native void configureBlocking(java.io.FileDescriptor, boolean) throws java.io.IOException;
+  public static native int fdVal(java.io.FileDescriptor);
+  static native void setfdVal(java.io.FileDescriptor, int);
+  static native int fdLimit();
+  static native int iovMax();
+  static native void initIDs();
+  public static void load();
+  static {};
+}

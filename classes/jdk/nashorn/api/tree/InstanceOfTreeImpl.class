@@ -1,0 +1,10 @@
+Compiled from "InstanceOfTreeImpl.java"
+final class jdk.nashorn.api.tree.InstanceOfTreeImpl extends jdk.nashorn.api.tree.BinaryTreeImpl implements jdk.nashorn.api.tree.InstanceOfTree {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.api.tree.InstanceOfTreeImpl(jdk.nashorn.internal.ir.BinaryNode, jdk.nashorn.api.tree.ExpressionTree, jdk.nashorn.api.tree.ExpressionTree);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public jdk.nashorn.api.tree.ExpressionTree getExpression();
+  public jdk.nashorn.api.tree.Tree getType();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+  static {};
+}

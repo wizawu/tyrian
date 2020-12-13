@@ -1,0 +1,6 @@
+Compiled from "SymbolResolutionClosure.java"
+public class sun.tools.jstat.SymbolResolutionClosure implements sun.tools.jstat.Closure {
+  public sun.tools.jstat.SymbolResolutionClosure(sun.tools.jstat.ExpressionEvaluator);
+  public void visit(java.lang.Object, boolean) throws sun.jvmstat.monitor.MonitorException;
+  static {};
+}

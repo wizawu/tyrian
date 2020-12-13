@@ -1,0 +1,17 @@
+Compiled from "ArrayReferenceImpl.java"
+public class com.sun.tools.jdi.ArrayReferenceImpl extends com.sun.tools.jdi.ObjectReferenceImpl implements com.sun.jdi.ArrayReference {
+  int length;
+  com.sun.tools.jdi.ArrayReferenceImpl(com.sun.jdi.VirtualMachine, long);
+  protected com.sun.tools.jdi.ClassTypeImpl invokableReferenceType(com.sun.jdi.Method);
+  com.sun.tools.jdi.ArrayTypeImpl arrayType();
+  public int length();
+  public com.sun.jdi.Value getValue(int);
+  public java.util.List<com.sun.jdi.Value> getValues();
+  public java.util.List<com.sun.jdi.Value> getValues(int, int);
+  public void setValue(int, com.sun.jdi.Value) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  public void setValues(java.util.List<? extends com.sun.jdi.Value>) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  public void setValues(int, java.util.List<? extends com.sun.jdi.Value>, int, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  public java.lang.String toString();
+  byte typeValueKey();
+  void validateAssignment(com.sun.tools.jdi.ValueContainer) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+}

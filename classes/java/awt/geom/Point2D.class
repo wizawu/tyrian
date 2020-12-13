@@ -1,0 +1,17 @@
+Compiled from "Point2D.java"
+public abstract class java.awt.geom.Point2D implements java.lang.Cloneable {
+  protected java.awt.geom.Point2D();
+  public abstract double getX();
+  public abstract double getY();
+  public abstract void setLocation(double, double);
+  public void setLocation(java.awt.geom.Point2D);
+  public static double distanceSq(double, double, double, double);
+  public static double distance(double, double, double, double);
+  public double distanceSq(double, double);
+  public double distanceSq(java.awt.geom.Point2D);
+  public double distance(double, double);
+  public double distance(java.awt.geom.Point2D);
+  public java.lang.Object clone();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

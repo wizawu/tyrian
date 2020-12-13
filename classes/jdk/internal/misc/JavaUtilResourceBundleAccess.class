@@ -1,0 +1,9 @@
+Compiled from "JavaUtilResourceBundleAccess.java"
+public interface jdk.internal.misc.JavaUtilResourceBundleAccess {
+  public abstract void setParent(java.util.ResourceBundle, java.util.ResourceBundle);
+  public abstract java.util.ResourceBundle getParent(java.util.ResourceBundle);
+  public abstract void setLocale(java.util.ResourceBundle, java.util.Locale);
+  public abstract void setName(java.util.ResourceBundle, java.lang.String);
+  public abstract java.util.ResourceBundle getBundle(java.lang.String, java.util.Locale, java.lang.Module);
+  public abstract java.util.ResourceBundle newResourceBundle(java.lang.Class<? extends java.util.ResourceBundle>);
+}

@@ -1,0 +1,10 @@
+Compiled from "PixelDrawPipe.java"
+public interface sun.java2d.pipe.PixelDrawPipe {
+  public abstract void drawLine(sun.java2d.SunGraphics2D, int, int, int, int);
+  public abstract void drawRect(sun.java2d.SunGraphics2D, int, int, int, int);
+  public abstract void drawRoundRect(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public abstract void drawOval(sun.java2d.SunGraphics2D, int, int, int, int);
+  public abstract void drawArc(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public abstract void drawPolyline(sun.java2d.SunGraphics2D, int[], int[], int);
+  public abstract void drawPolygon(sun.java2d.SunGraphics2D, int[], int[], int);
+}

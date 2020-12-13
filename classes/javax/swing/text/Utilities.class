@@ -1,0 +1,47 @@
+Compiled from "Utilities.java"
+public class javax.swing.text.Utilities {
+  public javax.swing.text.Utilities();
+  static javax.swing.JComponent getJComponent(javax.swing.text.View);
+  public static final int drawTabbedText(javax.swing.text.Segment, int, int, java.awt.Graphics, javax.swing.text.TabExpander, int);
+  public static final float drawTabbedText(javax.swing.text.Segment, float, float, java.awt.Graphics2D, javax.swing.text.TabExpander, int);
+  static final int drawTabbedText(javax.swing.text.View, javax.swing.text.Segment, int, int, java.awt.Graphics, javax.swing.text.TabExpander, int);
+  static final int drawTabbedText(javax.swing.text.View, javax.swing.text.Segment, int, int, java.awt.Graphics, javax.swing.text.TabExpander, int, int[]);
+  static final float drawTabbedText(javax.swing.text.View, javax.swing.text.Segment, float, float, java.awt.Graphics, javax.swing.text.TabExpander, int, int[], boolean);
+  public static final int getTabbedTextWidth(javax.swing.text.Segment, java.awt.FontMetrics, int, javax.swing.text.TabExpander, int);
+  public static final float getTabbedTextWidth(javax.swing.text.Segment, java.awt.FontMetrics, float, javax.swing.text.TabExpander, int);
+  static final int getTabbedTextWidth(javax.swing.text.View, javax.swing.text.Segment, java.awt.FontMetrics, int, javax.swing.text.TabExpander, int, int[]);
+  static final float getTabbedTextWidth(javax.swing.text.View, javax.swing.text.Segment, java.awt.FontMetrics, float, javax.swing.text.TabExpander, int, int[]);
+  static final float getTabbedTextWidth(javax.swing.text.View, javax.swing.text.Segment, java.awt.FontMetrics, float, javax.swing.text.TabExpander, int, int[], boolean);
+  public static final int getTabbedTextOffset(javax.swing.text.Segment, java.awt.FontMetrics, int, int, javax.swing.text.TabExpander, int);
+  static final int getTabbedTextOffset(javax.swing.text.View, javax.swing.text.Segment, java.awt.FontMetrics, int, int, javax.swing.text.TabExpander, int, int[]);
+  public static final int getTabbedTextOffset(javax.swing.text.Segment, java.awt.FontMetrics, int, int, javax.swing.text.TabExpander, int, boolean);
+  public static final int getTabbedTextOffset(javax.swing.text.Segment, java.awt.FontMetrics, float, float, javax.swing.text.TabExpander, int, boolean);
+  static final int getTabbedTextOffset(javax.swing.text.View, javax.swing.text.Segment, java.awt.FontMetrics, float, float, javax.swing.text.TabExpander, int, boolean, int[], boolean);
+  public static final int getBreakLocation(javax.swing.text.Segment, java.awt.FontMetrics, int, int, javax.swing.text.TabExpander, int);
+  static final int getBreakLocation(javax.swing.text.Segment, java.awt.FontMetrics, float, float, javax.swing.text.TabExpander, int, boolean);
+  public static final int getBreakLocation(javax.swing.text.Segment, java.awt.FontMetrics, float, float, javax.swing.text.TabExpander, int);
+  public static final int getRowStart(javax.swing.text.JTextComponent, int) throws javax.swing.text.BadLocationException;
+  public static final int getRowEnd(javax.swing.text.JTextComponent, int) throws javax.swing.text.BadLocationException;
+  public static final int getPositionAbove(javax.swing.text.JTextComponent, int, int) throws javax.swing.text.BadLocationException;
+  static final int getPositionAbove(javax.swing.text.JTextComponent, int, float, boolean) throws javax.swing.text.BadLocationException;
+  public static final int getPositionAbove(javax.swing.text.JTextComponent, int, float) throws javax.swing.text.BadLocationException;
+  public static final int getPositionBelow(javax.swing.text.JTextComponent, int, int) throws javax.swing.text.BadLocationException;
+  static final int getPositionBelow(javax.swing.text.JTextComponent, int, float, boolean) throws javax.swing.text.BadLocationException;
+  public static final int getPositionBelow(javax.swing.text.JTextComponent, int, float) throws javax.swing.text.BadLocationException;
+  public static final int getWordStart(javax.swing.text.JTextComponent, int) throws javax.swing.text.BadLocationException;
+  public static final int getWordEnd(javax.swing.text.JTextComponent, int) throws javax.swing.text.BadLocationException;
+  public static final int getNextWord(javax.swing.text.JTextComponent, int) throws javax.swing.text.BadLocationException;
+  static int getNextWordInParagraph(javax.swing.text.JTextComponent, javax.swing.text.Element, int, boolean) throws javax.swing.text.BadLocationException;
+  public static final int getPreviousWord(javax.swing.text.JTextComponent, int) throws javax.swing.text.BadLocationException;
+  static int getPrevWordInParagraph(javax.swing.text.JTextComponent, javax.swing.text.Element, int) throws javax.swing.text.BadLocationException;
+  public static final javax.swing.text.Element getParagraphElement(javax.swing.text.JTextComponent, int);
+  static boolean isComposedTextElement(javax.swing.text.Document, int);
+  static boolean isComposedTextElement(javax.swing.text.Element);
+  static boolean isComposedTextAttributeDefined(javax.swing.text.AttributeSet);
+  static int drawComposedText(javax.swing.text.View, javax.swing.text.AttributeSet, java.awt.Graphics, int, int, int, int) throws javax.swing.text.BadLocationException;
+  static float drawComposedText(javax.swing.text.View, javax.swing.text.AttributeSet, java.awt.Graphics, float, float, int, int) throws javax.swing.text.BadLocationException;
+  static float drawComposedText(javax.swing.text.View, javax.swing.text.AttributeSet, java.awt.Graphics, float, float, int, int, boolean) throws javax.swing.text.BadLocationException;
+  static void paintComposedText(java.awt.Graphics, java.awt.Rectangle, javax.swing.text.GlyphView);
+  static boolean isLeftToRight(java.awt.Component);
+  static int getNextVisualPositionFrom(javax.swing.text.View, int, javax.swing.text.Position$Bias, java.awt.Shape, int, javax.swing.text.Position$Bias[]) throws javax.swing.text.BadLocationException;
+}

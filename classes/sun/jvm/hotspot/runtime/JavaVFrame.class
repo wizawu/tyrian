@@ -1,0 +1,21 @@
+Compiled from "JavaVFrame.java"
+public abstract class sun.jvm.hotspot.runtime.JavaVFrame extends sun.jvm.hotspot.runtime.VFrame {
+  public abstract sun.jvm.hotspot.oops.Method getMethod();
+  public abstract int getBCI();
+  public abstract sun.jvm.hotspot.runtime.StackValueCollection getLocals();
+  public abstract sun.jvm.hotspot.runtime.StackValueCollection getExpressions();
+  public abstract java.util.List<sun.jvm.hotspot.runtime.MonitorInfo> getMonitors();
+  public boolean isJavaFrame();
+  sun.jvm.hotspot.runtime.JavaVFrame(sun.jvm.hotspot.runtime.Frame, sun.jvm.hotspot.runtime.RegisterMap, sun.jvm.hotspot.runtime.JavaThread);
+  public void printLockedObjectClassName(java.io.PrintStream, sun.jvm.hotspot.debugger.OopHandle, java.lang.String);
+  public void printLockInfo(java.io.PrintStream, int);
+  public void print();
+  public void printOn(java.io.PrintStream);
+  public void printActivation(int);
+  public void printActivationOn(java.io.PrintStream, int);
+  public void verify();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public boolean structuralCompare(sun.jvm.hotspot.runtime.JavaVFrame);
+  static {};
+}

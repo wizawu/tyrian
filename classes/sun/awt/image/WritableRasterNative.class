@@ -1,0 +1,6 @@
+Compiled from "WritableRasterNative.java"
+public class sun.awt.image.WritableRasterNative extends java.awt.image.WritableRaster {
+  public static sun.awt.image.WritableRasterNative createNativeRaster(java.awt.image.SampleModel, java.awt.image.DataBuffer);
+  protected sun.awt.image.WritableRasterNative(java.awt.image.SampleModel, java.awt.image.DataBuffer);
+  public static sun.awt.image.WritableRasterNative createNativeRaster(java.awt.image.ColorModel, sun.java2d.SurfaceData, int, int);
+}

@@ -1,0 +1,5 @@
+Compiled from "DefaultFileSystem.java"
+class java.io.DefaultFileSystem {
+  java.io.DefaultFileSystem();
+  public static java.io.FileSystem getFileSystem();
+}

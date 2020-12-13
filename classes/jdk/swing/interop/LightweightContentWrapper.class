@@ -1,0 +1,21 @@
+Compiled from "LightweightContentWrapper.java"
+public abstract class jdk.swing.interop.LightweightContentWrapper {
+  public jdk.swing.interop.LightweightContentWrapper();
+  jdk.swing.interop.LightweightContentWrapper$LightweightContentProxy getContent();
+  public abstract void imageBufferReset(int[], int, int, int, int, int);
+  public abstract void imageBufferReset(int[], int, int, int, int, int, double, double);
+  public abstract javax.swing.JComponent getComponent();
+  public abstract void paintLock();
+  public abstract void paintUnlock();
+  public abstract void imageReshaped(int, int, int, int);
+  public abstract void imageUpdated(int, int, int, int);
+  public abstract void focusGrabbed();
+  public abstract void focusUngrabbed();
+  public abstract void preferredSizeChanged(int, int);
+  public abstract void maximumSizeChanged(int, int);
+  public abstract void minimumSizeChanged(int, int);
+  public abstract <T extends java.awt.dnd.DragGestureRecognizer> T createDragGestureRecognizer(java.lang.Class<T>, java.awt.dnd.DragSource, java.awt.Component, int, java.awt.dnd.DragGestureListener);
+  public abstract jdk.swing.interop.DragSourceContextWrapper createDragSourceContext(java.awt.dnd.DragGestureEvent) throws java.awt.dnd.InvalidDnDOperationException;
+  public abstract void addDropTarget(java.awt.dnd.DropTarget);
+  public abstract void removeDropTarget(java.awt.dnd.DropTarget);
+}

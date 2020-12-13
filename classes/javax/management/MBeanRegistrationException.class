@@ -1,0 +1,5 @@
+Compiled from "MBeanRegistrationException.java"
+public class javax.management.MBeanRegistrationException extends javax.management.MBeanException {
+  public javax.management.MBeanRegistrationException(java.lang.Exception);
+  public javax.management.MBeanRegistrationException(java.lang.Exception, java.lang.String);
+}

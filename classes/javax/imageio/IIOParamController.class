@@ -1,0 +1,4 @@
+Compiled from "IIOParamController.java"
+public interface javax.imageio.IIOParamController {
+  public abstract boolean activate(javax.imageio.IIOParam);
+}

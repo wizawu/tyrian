@@ -1,0 +1,16 @@
+Compiled from "XPathVisitor.java"
+public class com.sun.org.apache.xpath.internal.XPathVisitor {
+  public com.sun.org.apache.xpath.internal.XPathVisitor();
+  public boolean visitLocationPath(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.axes.LocPathIterator);
+  public boolean visitUnionPath(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.axes.UnionPathIterator);
+  public boolean visitStep(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.patterns.NodeTest);
+  public boolean visitPredicate(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.Expression);
+  public boolean visitBinaryOperation(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.operations.Operation);
+  public boolean visitUnaryOperation(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.operations.UnaryOperation);
+  public boolean visitVariableRef(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.operations.Variable);
+  public boolean visitFunction(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.functions.Function);
+  public boolean visitMatchPattern(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.patterns.StepPattern);
+  public boolean visitUnionPattern(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.patterns.UnionPattern);
+  public boolean visitStringLiteral(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.objects.XString);
+  public boolean visitNumberLiteral(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.objects.XNumber);
+}

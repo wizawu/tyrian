@@ -1,0 +1,16 @@
+Compiled from "TextHitInfo.java"
+public final class java.awt.font.TextHitInfo {
+  public int getCharIndex();
+  public boolean isLeadingEdge();
+  public int getInsertionIndex();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public boolean equals(java.awt.font.TextHitInfo);
+  public java.lang.String toString();
+  public static java.awt.font.TextHitInfo leading(int);
+  public static java.awt.font.TextHitInfo trailing(int);
+  public static java.awt.font.TextHitInfo beforeOffset(int);
+  public static java.awt.font.TextHitInfo afterOffset(int);
+  public java.awt.font.TextHitInfo getOtherHit();
+  public java.awt.font.TextHitInfo getOffsetHit(int);
+}

@@ -1,0 +1,25 @@
+Compiled from "DOMUtils.java"
+public final class org.jcp.xml.dsig.internal.dom.DOMUtils {
+  public static org.w3c.dom.Document getOwnerDocument(org.w3c.dom.Node);
+  public static java.lang.String getQNameString(java.lang.String, java.lang.String);
+  public static org.w3c.dom.Element createElement(org.w3c.dom.Document, java.lang.String, java.lang.String, java.lang.String);
+  public static void setAttribute(org.w3c.dom.Element, java.lang.String, java.lang.String);
+  public static void setAttributeID(org.w3c.dom.Element, java.lang.String, java.lang.String);
+  public static org.w3c.dom.Element getFirstChildElement(org.w3c.dom.Node);
+  public static org.w3c.dom.Element getFirstChildElement(org.w3c.dom.Node, java.lang.String) throws javax.xml.crypto.MarshalException;
+  public static org.w3c.dom.Element getFirstChildElement(org.w3c.dom.Node, java.lang.String, java.lang.String) throws javax.xml.crypto.MarshalException;
+  public static org.w3c.dom.Element getLastChildElement(org.w3c.dom.Node);
+  public static org.w3c.dom.Element getNextSiblingElement(org.w3c.dom.Node);
+  public static org.w3c.dom.Element getNextSiblingElement(org.w3c.dom.Node, java.lang.String) throws javax.xml.crypto.MarshalException;
+  public static org.w3c.dom.Element getNextSiblingElement(org.w3c.dom.Node, java.lang.String, java.lang.String) throws javax.xml.crypto.MarshalException;
+  public static java.lang.String getAttributeValue(org.w3c.dom.Element, java.lang.String);
+  public static <N> java.lang.String getIdAttributeValue(org.w3c.dom.Element, java.lang.String);
+  public static java.util.Set<org.w3c.dom.Node> nodeSet(org.w3c.dom.NodeList);
+  public static java.lang.String getNSPrefix(javax.xml.crypto.XMLCryptoContext, java.lang.String);
+  public static java.lang.String getSignaturePrefix(javax.xml.crypto.XMLCryptoContext);
+  public static void removeAllChildren(org.w3c.dom.Node);
+  public static boolean nodesEqual(org.w3c.dom.Node, org.w3c.dom.Node);
+  public static void appendChild(org.w3c.dom.Node, org.w3c.dom.Node);
+  public static boolean paramsEqual(java.security.spec.AlgorithmParameterSpec, java.security.spec.AlgorithmParameterSpec);
+  public static boolean isNamespace(org.w3c.dom.Node);
+}

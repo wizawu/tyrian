@@ -1,0 +1,19 @@
+Compiled from "OptionalLong.java"
+public final class java.util.OptionalLong {
+  public static java.util.OptionalLong empty();
+  public static java.util.OptionalLong of(long);
+  public long getAsLong();
+  public boolean isPresent();
+  public boolean isEmpty();
+  public void ifPresent(java.util.function.LongConsumer);
+  public void ifPresentOrElse(java.util.function.LongConsumer, java.lang.Runnable);
+  public java.util.stream.LongStream stream();
+  public long orElse(long);
+  public long orElseGet(java.util.function.LongSupplier);
+  public long orElseThrow();
+  public <X extends java.lang.Throwable> long orElseThrow(java.util.function.Supplier<? extends X>) throws X;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "HTMLIsIndexElement.java"
+public interface org.w3c.dom.html.HTMLIsIndexElement extends org.w3c.dom.html.HTMLElement {
+  public abstract org.w3c.dom.html.HTMLFormElement getForm();
+  public abstract java.lang.String getPrompt();
+  public abstract void setPrompt(java.lang.String);
+}

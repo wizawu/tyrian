@@ -1,0 +1,19 @@
+Compiled from "ContextCapabilities.java"
+public class sun.java2d.pipe.hw.ContextCapabilities {
+  public static final int CAPS_EMPTY;
+  public static final int CAPS_RT_PLAIN_ALPHA;
+  public static final int CAPS_RT_TEXTURE_ALPHA;
+  public static final int CAPS_RT_TEXTURE_OPAQUE;
+  public static final int CAPS_MULTITEXTURE;
+  public static final int CAPS_TEXNONPOW2;
+  public static final int CAPS_TEXNONSQUARE;
+  public static final int CAPS_PS20;
+  public static final int CAPS_PS30;
+  protected static final int FIRST_PRIVATE_CAP;
+  protected final int caps;
+  protected final java.lang.String adapterId;
+  protected sun.java2d.pipe.hw.ContextCapabilities(int, java.lang.String);
+  public java.lang.String getAdapterId();
+  public int getCaps();
+  public java.lang.String toString();
+}

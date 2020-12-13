@@ -1,0 +1,20 @@
+Compiled from "AbstractDCmd.java"
+abstract class jdk.jfr.internal.dcmd.AbstractDCmd {
+  protected jdk.jfr.internal.dcmd.AbstractDCmd();
+  protected final jdk.jfr.FlightRecorder getFlightRecorder();
+  public final java.lang.String getResult();
+  public java.lang.String getPid();
+  protected final jdk.jfr.internal.SecuritySupport$SafePath resolvePath(jdk.jfr.Recording, java.lang.String) throws java.nio.file.InvalidPathException;
+  protected final jdk.jfr.Recording findRecording(java.lang.String) throws jdk.jfr.internal.dcmd.DCmdException;
+  protected final void reportOperationComplete(java.lang.String, java.lang.String, jdk.jfr.internal.SecuritySupport$SafePath);
+  protected final java.util.List<jdk.jfr.Recording> getRecordings();
+  static java.lang.String quoteIfNeeded(java.lang.String);
+  protected final void println();
+  protected final void print(java.lang.String);
+  protected final void print(java.lang.String, java.lang.Object...);
+  protected final void println(java.lang.String, java.lang.Object...);
+  protected final void printBytes(long);
+  protected final void printTimespan(java.time.Duration, java.lang.String);
+  protected final void printPath(jdk.jfr.internal.SecuritySupport$SafePath);
+  protected final void printPath(java.nio.file.Path);
+}

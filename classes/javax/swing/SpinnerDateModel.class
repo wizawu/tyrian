@@ -1,0 +1,16 @@
+Compiled from "SpinnerDateModel.java"
+public class javax.swing.SpinnerDateModel extends javax.swing.AbstractSpinnerModel implements java.io.Serializable {
+  public javax.swing.SpinnerDateModel(java.util.Date, java.lang.Comparable<java.util.Date>, java.lang.Comparable<java.util.Date>, int);
+  public javax.swing.SpinnerDateModel();
+  public void setStart(java.lang.Comparable<java.util.Date>);
+  public java.lang.Comparable<java.util.Date> getStart();
+  public void setEnd(java.lang.Comparable<java.util.Date>);
+  public java.lang.Comparable<java.util.Date> getEnd();
+  public void setCalendarField(int);
+  public int getCalendarField();
+  public java.lang.Object getNextValue();
+  public java.lang.Object getPreviousValue();
+  public java.util.Date getDate();
+  public java.lang.Object getValue();
+  public void setValue(java.lang.Object);
+}

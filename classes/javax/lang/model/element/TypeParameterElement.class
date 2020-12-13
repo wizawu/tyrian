@@ -1,0 +1,6 @@
+Compiled from "TypeParameterElement.java"
+public interface javax.lang.model.element.TypeParameterElement extends javax.lang.model.element.Element {
+  public abstract javax.lang.model.element.Element getGenericElement();
+  public abstract java.util.List<? extends javax.lang.model.type.TypeMirror> getBounds();
+  public abstract javax.lang.model.element.Element getEnclosingElement();
+}

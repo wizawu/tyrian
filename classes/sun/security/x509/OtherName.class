@@ -1,0 +1,14 @@
+Compiled from "OtherName.java"
+public class sun.security.x509.OtherName implements sun.security.x509.GeneralNameInterface {
+  public sun.security.x509.OtherName(sun.security.util.ObjectIdentifier, byte[]) throws java.io.IOException;
+  public sun.security.x509.OtherName(sun.security.util.DerValue) throws java.io.IOException;
+  public sun.security.util.ObjectIdentifier getOID();
+  public byte[] getNameValue();
+  public int getType();
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public int constrains(sun.security.x509.GeneralNameInterface);
+  public int subtreeDepth();
+}

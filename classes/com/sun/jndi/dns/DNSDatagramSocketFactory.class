@@ -1,0 +1,25 @@
+Compiled from "DNSDatagramSocketFactory.java"
+class com.sun.jndi.dns.DNSDatagramSocketFactory {
+  static final int DEVIATION;
+  static final int THRESHOLD;
+  static final int BIT_DEVIATION;
+  static final int HISTORY;
+  static final int MAX_RANDOM_TRIES;
+  int lastport;
+  int suitablePortCount;
+  int unsuitablePortCount;
+  final java.net.ProtocolFamily family;
+  final int thresholdCount;
+  final int deviation;
+  final java.util.Random random;
+  final com.sun.jndi.dns.DNSDatagramSocketFactory$PortHistory history;
+  static final boolean $assertionsDisabled;
+  com.sun.jndi.dns.DNSDatagramSocketFactory();
+  com.sun.jndi.dns.DNSDatagramSocketFactory(java.util.Random);
+  com.sun.jndi.dns.DNSDatagramSocketFactory(java.util.Random, java.net.ProtocolFamily, int, int);
+  public synchronized java.net.DatagramSocket open() throws java.net.SocketException;
+  synchronized boolean isUsingNativePortRandomization();
+  synchronized boolean isUsingJavaPortRandomization();
+  synchronized boolean isUndecided();
+  static {};
+}

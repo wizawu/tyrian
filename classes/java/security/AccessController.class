@@ -1,0 +1,16 @@
+Compiled from "AccessController.java"
+public final class java.security.AccessController {
+  public static native <T> T doPrivileged(java.security.PrivilegedAction<T>);
+  public static <T> T doPrivilegedWithCombiner(java.security.PrivilegedAction<T>);
+  public static native <T> T doPrivileged(java.security.PrivilegedAction<T>, java.security.AccessControlContext);
+  public static <T> T doPrivileged(java.security.PrivilegedAction<T>, java.security.AccessControlContext, java.security.Permission...);
+  public static <T> T doPrivilegedWithCombiner(java.security.PrivilegedAction<T>, java.security.AccessControlContext, java.security.Permission...);
+  public static native <T> T doPrivileged(java.security.PrivilegedExceptionAction<T>) throws java.security.PrivilegedActionException;
+  public static <T> T doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction<T>) throws java.security.PrivilegedActionException;
+  public static native <T> T doPrivileged(java.security.PrivilegedExceptionAction<T>, java.security.AccessControlContext) throws java.security.PrivilegedActionException;
+  public static <T> T doPrivileged(java.security.PrivilegedExceptionAction<T>, java.security.AccessControlContext, java.security.Permission...) throws java.security.PrivilegedActionException;
+  public static <T> T doPrivilegedWithCombiner(java.security.PrivilegedExceptionAction<T>, java.security.AccessControlContext, java.security.Permission...) throws java.security.PrivilegedActionException;
+  static native java.security.AccessControlContext getInheritedAccessControlContext();
+  public static java.security.AccessControlContext getContext();
+  public static void checkPermission(java.security.Permission) throws java.security.AccessControlException;
+}

@@ -1,0 +1,24 @@
+Compiled from "SAX2RTFDTM.java"
+public class com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2RTFDTM extends com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2DTM {
+  com.sun.org.apache.xml.internal.utils.IntStack mark_size;
+  com.sun.org.apache.xml.internal.utils.IntStack mark_data_size;
+  com.sun.org.apache.xml.internal.utils.IntStack mark_char_size;
+  com.sun.org.apache.xml.internal.utils.IntStack mark_doq_size;
+  com.sun.org.apache.xml.internal.utils.IntStack mark_nsdeclset_size;
+  com.sun.org.apache.xml.internal.utils.IntStack mark_nsdeclelem_size;
+  int m_emptyNodeCount;
+  int m_emptyNSDeclSetCount;
+  int m_emptyNSDeclSetElemsCount;
+  int m_emptyDataCount;
+  int m_emptyCharsCount;
+  int m_emptyDataQNCount;
+  public com.sun.org.apache.xml.internal.dtm.ref.sax2dtm.SAX2RTFDTM(com.sun.org.apache.xml.internal.dtm.DTMManager, javax.xml.transform.Source, int, com.sun.org.apache.xml.internal.dtm.DTMWSFilter, com.sun.org.apache.xml.internal.utils.XMLStringFactory, boolean);
+  public int getDocument();
+  public int getDocumentRoot(int);
+  protected int _documentRoot(int);
+  public void startDocument() throws org.xml.sax.SAXException;
+  public void endDocument() throws org.xml.sax.SAXException;
+  public void pushRewindMark();
+  public boolean popRewindMark();
+  public boolean isTreeIncomplete();
+}

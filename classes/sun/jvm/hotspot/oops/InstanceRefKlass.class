@@ -1,0 +1,5 @@
+Compiled from "InstanceRefKlass.java"
+public class sun.jvm.hotspot.oops.InstanceRefKlass extends sun.jvm.hotspot.oops.InstanceKlass {
+  public sun.jvm.hotspot.oops.InstanceRefKlass(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

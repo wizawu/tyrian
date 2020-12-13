@@ -1,0 +1,20 @@
+Compiled from "BMPConstants.java"
+public interface com.sun.imageio.plugins.bmp.BMPConstants {
+  public static final java.lang.String VERSION_2;
+  public static final java.lang.String VERSION_3;
+  public static final java.lang.String VERSION_3_NT;
+  public static final java.lang.String VERSION_3_EXT;
+  public static final java.lang.String VERSION_4;
+  public static final java.lang.String VERSION_5;
+  public static final int LCS_CALIBRATED_RGB;
+  public static final int LCS_sRGB;
+  public static final int LCS_WINDOWS_COLOR_SPACE;
+  public static final int PROFILE_LINKED;
+  public static final int PROFILE_EMBEDDED;
+  public static final int BI_RGB;
+  public static final int BI_RLE8;
+  public static final int BI_RLE4;
+  public static final int BI_BITFIELDS;
+  public static final int BI_JPEG;
+  public static final int BI_PNG;
+}

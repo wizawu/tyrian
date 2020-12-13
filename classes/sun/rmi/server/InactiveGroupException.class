@@ -1,0 +1,4 @@
+Compiled from "InactiveGroupException.java"
+public class sun.rmi.server.InactiveGroupException extends java.rmi.activation.ActivationException {
+  public sun.rmi.server.InactiveGroupException(java.lang.String);
+}

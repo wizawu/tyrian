@@ -1,0 +1,10 @@
+Compiled from "MaskFillerForNative.java"
+class sun.jvm.hotspot.interpreter.MaskFillerForNative extends sun.jvm.hotspot.runtime.NativeSignatureIterator {
+  sun.jvm.hotspot.interpreter.MaskFillerForNative(sun.jvm.hotspot.oops.Method, sun.jvm.hotspot.utilities.BitMap, int);
+  public void passInt();
+  public void passLong();
+  public void passFloat();
+  public void passDouble();
+  public void passObject();
+  public void generate();
+}

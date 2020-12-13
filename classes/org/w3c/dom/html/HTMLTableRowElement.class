@@ -1,0 +1,18 @@
+Compiled from "HTMLTableRowElement.java"
+public interface org.w3c.dom.html.HTMLTableRowElement extends org.w3c.dom.html.HTMLElement {
+  public abstract int getRowIndex();
+  public abstract int getSectionRowIndex();
+  public abstract org.w3c.dom.html.HTMLCollection getCells();
+  public abstract java.lang.String getAlign();
+  public abstract void setAlign(java.lang.String);
+  public abstract java.lang.String getBgColor();
+  public abstract void setBgColor(java.lang.String);
+  public abstract java.lang.String getCh();
+  public abstract void setCh(java.lang.String);
+  public abstract java.lang.String getChOff();
+  public abstract void setChOff(java.lang.String);
+  public abstract java.lang.String getVAlign();
+  public abstract void setVAlign(java.lang.String);
+  public abstract org.w3c.dom.html.HTMLElement insertCell(int) throws org.w3c.dom.DOMException;
+  public abstract void deleteCell(int) throws org.w3c.dom.DOMException;
+}

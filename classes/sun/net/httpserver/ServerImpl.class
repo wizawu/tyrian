@@ -1,0 +1,45 @@
+Compiled from "ServerImpl.java"
+class sun.net.httpserver.ServerImpl implements sun.net.httpserver.TimeSource {
+  static final int CLOCK_TICK;
+  static final long IDLE_INTERVAL;
+  static final int MAX_IDLE_CONNECTIONS;
+  static final long TIMER_MILLIS;
+  static final long MAX_REQ_TIME;
+  static final long MAX_RSP_TIME;
+  static final boolean timer1Enabled;
+  sun.net.httpserver.ServerImpl$Dispatcher dispatcher;
+  static boolean debug;
+  static final boolean $assertionsDisabled;
+  sun.net.httpserver.ServerImpl(com.sun.net.httpserver.HttpServer, java.lang.String, java.net.InetSocketAddress, int) throws java.io.IOException;
+  public void bind(java.net.InetSocketAddress, int) throws java.io.IOException;
+  public void start();
+  public void setExecutor(java.util.concurrent.Executor);
+  public java.util.concurrent.Executor getExecutor();
+  public void setHttpsConfigurator(com.sun.net.httpserver.HttpsConfigurator);
+  public com.sun.net.httpserver.HttpsConfigurator getHttpsConfigurator();
+  public final boolean isFinishing();
+  public void stop(int);
+  public synchronized sun.net.httpserver.HttpContextImpl createContext(java.lang.String, com.sun.net.httpserver.HttpHandler);
+  public synchronized sun.net.httpserver.HttpContextImpl createContext(java.lang.String);
+  public synchronized void removeContext(java.lang.String) throws java.lang.IllegalArgumentException;
+  public synchronized void removeContext(com.sun.net.httpserver.HttpContext) throws java.lang.IllegalArgumentException;
+  public java.net.InetSocketAddress getAddress();
+  java.nio.channels.Selector getSelector();
+  void addEvent(sun.net.httpserver.Event);
+  static synchronized void dprint(java.lang.String);
+  static synchronized void dprint(java.lang.Exception);
+  java.lang.System$Logger getLogger();
+  void logReply(int, java.lang.String, java.lang.String);
+  long getTicks();
+  public long getTime();
+  void delay();
+  synchronized void startExchange();
+  synchronized int endExchange();
+  com.sun.net.httpserver.HttpServer getWrapper();
+  void requestStarted(sun.net.httpserver.HttpConnection);
+  void requestCompleted(sun.net.httpserver.HttpConnection);
+  void responseCompleted(sun.net.httpserver.HttpConnection);
+  void logStackTrace(java.lang.String);
+  static long getTimeMillis(long);
+  static {};
+}

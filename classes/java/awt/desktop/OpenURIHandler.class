@@ -1,0 +1,4 @@
+Compiled from "OpenURIHandler.java"
+public interface java.awt.desktop.OpenURIHandler {
+  public abstract void openURI(java.awt.desktop.OpenURIEvent);
+}

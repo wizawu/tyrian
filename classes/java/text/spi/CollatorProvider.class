@@ -1,0 +1,5 @@
+Compiled from "CollatorProvider.java"
+public abstract class java.text.spi.CollatorProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.text.spi.CollatorProvider();
+  public abstract java.text.Collator getInstance(java.util.Locale);
+}

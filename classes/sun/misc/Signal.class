@@ -1,0 +1,11 @@
+Compiled from "Signal.java"
+public final class sun.misc.Signal {
+  public int getNumber();
+  public java.lang.String getName();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public sun.misc.Signal(java.lang.String);
+  public static synchronized sun.misc.SignalHandler handle(sun.misc.Signal, sun.misc.SignalHandler) throws java.lang.IllegalArgumentException;
+  public static void raise(sun.misc.Signal) throws java.lang.IllegalArgumentException;
+}

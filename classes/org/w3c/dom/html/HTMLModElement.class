@@ -1,0 +1,7 @@
+Compiled from "HTMLModElement.java"
+public interface org.w3c.dom.html.HTMLModElement extends org.w3c.dom.html.HTMLElement {
+  public abstract java.lang.String getCite();
+  public abstract void setCite(java.lang.String);
+  public abstract java.lang.String getDateTime();
+  public abstract void setDateTime(java.lang.String);
+}

@@ -1,0 +1,11 @@
+Compiled from "DialogOwner.java"
+public final class javax.print.attribute.standard.DialogOwner implements javax.print.attribute.PrintRequestAttribute {
+  public javax.print.attribute.standard.DialogOwner();
+  public javax.print.attribute.standard.DialogOwner(java.awt.Window);
+  javax.print.attribute.standard.DialogOwner(long);
+  long getID();
+  public java.awt.Window getOwner();
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  static {};
+}

@@ -1,0 +1,31 @@
+Compiled from "XWINProtocol.java"
+class sun.awt.X11.XWINProtocol extends sun.awt.X11.XProtocol implements sun.awt.X11.XStateProtocol,sun.awt.X11.XLayerProtocol {
+  static final sun.util.logging.PlatformLogger log;
+  sun.awt.X11.XAtom XA_WIN_SUPPORTING_WM_CHECK;
+  sun.awt.X11.XAtom XA_WIN_PROTOCOLS;
+  sun.awt.X11.XAtom XA_WIN_STATE;
+  sun.awt.X11.XAtom XA_WIN_LAYER;
+  static final int WIN_STATE_STICKY;
+  static final int WIN_STATE_MINIMIZED;
+  static final int WIN_STATE_MAXIMIZED_VERT;
+  static final int WIN_STATE_MAXIMIZED_HORIZ;
+  static final int WIN_STATE_HIDDEN;
+  static final int WIN_STATE_SHADED;
+  static final int WIN_LAYER_ONTOP;
+  static final int WIN_LAYER_NORMAL;
+  long WinWindow;
+  boolean supportChecked;
+  sun.awt.X11.XWINProtocol();
+  public boolean supportsState(int);
+  public void setState(sun.awt.X11.XWindowPeer, int);
+  public int getState(sun.awt.X11.XWindowPeer);
+  public boolean isStateChange(sun.awt.X11.XPropertyEvent);
+  public void unshadeKludge(sun.awt.X11.XWindowPeer);
+  public boolean supportsLayer(int);
+  public void setLayer(sun.awt.X11.XWindowPeer, int);
+  void detect();
+  boolean active();
+  boolean doStateProtocol();
+  boolean doLayerProtocol();
+  static {};
+}

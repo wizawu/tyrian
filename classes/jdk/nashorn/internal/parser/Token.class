@@ -1,0 +1,16 @@
+Compiled from "Token.java"
+public class jdk.nashorn.internal.parser.Token {
+  public static final int LENGTH_MASK;
+  static final boolean $assertionsDisabled;
+  public static long toDesc(jdk.nashorn.internal.parser.TokenType, int, int);
+  public static int descPosition(long);
+  public static long withDelimiter(long);
+  public static int descLength(long);
+  public static jdk.nashorn.internal.parser.TokenType descType(long);
+  public static long recast(long, jdk.nashorn.internal.parser.TokenType);
+  public static java.lang.String toString(jdk.nashorn.internal.runtime.Source, long, boolean);
+  public static java.lang.String toString(jdk.nashorn.internal.runtime.Source, long);
+  public static java.lang.String toString(long);
+  public static int hashCode(long);
+  static {};
+}

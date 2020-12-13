@@ -1,0 +1,5 @@
+Compiled from "SymbolLookup.java"
+public interface sun.jvm.hotspot.debugger.SymbolLookup {
+  public abstract sun.jvm.hotspot.debugger.Address lookup(java.lang.String, java.lang.String);
+  public abstract sun.jvm.hotspot.debugger.OopHandle lookupOop(java.lang.String, java.lang.String);
+}

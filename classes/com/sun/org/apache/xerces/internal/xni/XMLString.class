@@ -1,0 +1,15 @@
+Compiled from "XMLString.java"
+public class com.sun.org.apache.xerces.internal.xni.XMLString {
+  public char[] ch;
+  public int offset;
+  public int length;
+  public com.sun.org.apache.xerces.internal.xni.XMLString();
+  public com.sun.org.apache.xerces.internal.xni.XMLString(char[], int, int);
+  public com.sun.org.apache.xerces.internal.xni.XMLString(com.sun.org.apache.xerces.internal.xni.XMLString);
+  public void setValues(char[], int, int);
+  public void setValues(com.sun.org.apache.xerces.internal.xni.XMLString);
+  public void clear();
+  public boolean equals(char[], int, int);
+  public boolean equals(java.lang.String);
+  public java.lang.String toString();
+}

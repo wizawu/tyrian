@@ -1,0 +1,5 @@
+Compiled from "FormatData_be_BY.java"
+public class sun.text.resources.ext.FormatData_be_BY extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_be_BY();
+  protected final java.lang.Object[][] getContents();
+}

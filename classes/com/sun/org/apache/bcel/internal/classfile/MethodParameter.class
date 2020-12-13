@@ -1,0 +1,15 @@
+Compiled from "MethodParameter.java"
+public class com.sun.org.apache.bcel.internal.classfile.MethodParameter implements java.lang.Cloneable {
+  public com.sun.org.apache.bcel.internal.classfile.MethodParameter();
+  com.sun.org.apache.bcel.internal.classfile.MethodParameter(java.io.DataInput) throws java.io.IOException;
+  public int getNameIndex();
+  public void setNameIndex(int);
+  public java.lang.String getParameterName(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public int getAccessFlags();
+  public void setAccessFlags(int);
+  public boolean isFinal();
+  public boolean isSynthetic();
+  public boolean isMandated();
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.MethodParameter copy();
+}

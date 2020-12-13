@@ -1,0 +1,4 @@
+Compiled from "HandshakeProducer.java"
+interface sun.security.ssl.HandshakeProducer {
+  public abstract byte[] produce(sun.security.ssl.ConnectionContext, sun.security.ssl.SSLHandshake$HandshakeMessage) throws java.io.IOException;
+}

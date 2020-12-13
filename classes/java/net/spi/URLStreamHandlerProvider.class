@@ -1,0 +1,4 @@
+Compiled from "URLStreamHandlerProvider.java"
+public abstract class java.net.spi.URLStreamHandlerProvider implements java.net.URLStreamHandlerFactory {
+  protected java.net.spi.URLStreamHandlerProvider();
+}

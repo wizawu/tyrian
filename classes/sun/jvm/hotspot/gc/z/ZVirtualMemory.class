@@ -1,0 +1,7 @@
+Compiled from "ZVirtualMemory.java"
+public class sun.jvm.hotspot.gc.z.ZVirtualMemory extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.gc.z.ZVirtualMemory(sun.jvm.hotspot.debugger.Address);
+  long start();
+  long end();
+  static {};
+}

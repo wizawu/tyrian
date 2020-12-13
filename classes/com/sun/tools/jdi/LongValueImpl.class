@@ -1,0 +1,24 @@
+Compiled from "LongValueImpl.java"
+public class com.sun.tools.jdi.LongValueImpl extends com.sun.tools.jdi.PrimitiveValueImpl implements com.sun.jdi.LongValue {
+  com.sun.tools.jdi.LongValueImpl(com.sun.jdi.VirtualMachine, long);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public int compareTo(com.sun.jdi.LongValue);
+  public com.sun.jdi.Type type();
+  public long value();
+  public boolean booleanValue();
+  public byte byteValue();
+  public char charValue();
+  public short shortValue();
+  public int intValue();
+  public long longValue();
+  public float floatValue();
+  public double doubleValue();
+  byte checkedByteValue() throws com.sun.jdi.InvalidTypeException;
+  char checkedCharValue() throws com.sun.jdi.InvalidTypeException;
+  short checkedShortValue() throws com.sun.jdi.InvalidTypeException;
+  int checkedIntValue() throws com.sun.jdi.InvalidTypeException;
+  public java.lang.String toString();
+  byte typeValueKey();
+  public int compareTo(java.lang.Object);
+}

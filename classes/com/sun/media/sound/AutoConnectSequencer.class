@@ -1,0 +1,4 @@
+Compiled from "AutoConnectSequencer.java"
+public interface com.sun.media.sound.AutoConnectSequencer {
+  public abstract void setAutoConnect(javax.sound.midi.Receiver);
+}

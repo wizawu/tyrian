@@ -1,0 +1,13 @@
+Compiled from "XMLResourceIdentifier.java"
+public interface com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier {
+  public abstract void setPublicId(java.lang.String);
+  public abstract java.lang.String getPublicId();
+  public abstract void setExpandedSystemId(java.lang.String);
+  public abstract java.lang.String getExpandedSystemId();
+  public abstract void setLiteralSystemId(java.lang.String);
+  public abstract java.lang.String getLiteralSystemId();
+  public abstract void setBaseSystemId(java.lang.String);
+  public abstract java.lang.String getBaseSystemId();
+  public abstract void setNamespace(java.lang.String);
+  public abstract java.lang.String getNamespace();
+}

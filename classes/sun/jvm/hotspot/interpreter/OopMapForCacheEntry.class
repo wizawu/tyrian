@@ -1,0 +1,12 @@
+Compiled from "OopMapForCacheEntry.java"
+class sun.jvm.hotspot.interpreter.OopMapForCacheEntry extends sun.jvm.hotspot.oops.GenerateOopMap {
+  sun.jvm.hotspot.interpreter.OopMapForCacheEntry(sun.jvm.hotspot.oops.Method, int, sun.jvm.hotspot.interpreter.OopMapCacheEntry);
+  public boolean reportResults();
+  public boolean possibleGCPoint(sun.jvm.hotspot.interpreter.BytecodeStream);
+  public void fillStackmapProlog(int);
+  public void fillStackmapEpilog();
+  public void fillStackmapForOpcodes(sun.jvm.hotspot.interpreter.BytecodeStream, sun.jvm.hotspot.oops.CellTypeStateList, sun.jvm.hotspot.oops.CellTypeStateList, int);
+  public void fillInitVars(java.util.List);
+  public void computeMap();
+  public int size();
+}

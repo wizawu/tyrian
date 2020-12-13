@@ -1,0 +1,17 @@
+Compiled from "AbstractSpinedBuffer.java"
+abstract class java.util.stream.AbstractSpinedBuffer {
+  public static final int MIN_CHUNK_POWER;
+  public static final int MIN_CHUNK_SIZE;
+  public static final int MAX_CHUNK_POWER;
+  public static final int MIN_SPINE_SIZE;
+  protected final int initialChunkPower;
+  protected int elementIndex;
+  protected int spineIndex;
+  protected long[] priorElementCount;
+  protected java.util.stream.AbstractSpinedBuffer();
+  protected java.util.stream.AbstractSpinedBuffer(int);
+  public boolean isEmpty();
+  public long count();
+  protected int chunkSize(int);
+  public abstract void clear();
+}

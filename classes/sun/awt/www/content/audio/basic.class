@@ -1,0 +1,5 @@
+Compiled from "basic.java"
+public class sun.awt.www.content.audio.basic extends java.net.ContentHandler {
+  public sun.awt.www.content.audio.basic();
+  public java.lang.Object getContent(java.net.URLConnection) throws java.io.IOException;
+}

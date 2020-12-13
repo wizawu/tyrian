@@ -1,0 +1,12 @@
+Compiled from "AsyncEvent.java"
+abstract class jdk.internal.net.http.AsyncEvent {
+  public static final int REPEATING;
+  protected final int flags;
+  jdk.internal.net.http.AsyncEvent();
+  jdk.internal.net.http.AsyncEvent(int);
+  public abstract java.nio.channels.SelectableChannel channel();
+  public abstract int interestOps();
+  public abstract void handle();
+  public abstract void abort(java.io.IOException);
+  public boolean repeating();
+}

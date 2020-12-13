@@ -1,0 +1,4 @@
+Compiled from "ResourcePrevisitor.java"
+public interface jdk.tools.jlink.internal.ResourcePrevisitor {
+  public abstract void previsit(jdk.tools.jlink.plugin.ResourcePool, jdk.tools.jlink.internal.StringTable);
+}

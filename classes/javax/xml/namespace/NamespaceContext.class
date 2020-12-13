@@ -1,0 +1,6 @@
+Compiled from "NamespaceContext.java"
+public interface javax.xml.namespace.NamespaceContext {
+  public abstract java.lang.String getNamespaceURI(java.lang.String);
+  public abstract java.lang.String getPrefix(java.lang.String);
+  public abstract java.util.Iterator<java.lang.String> getPrefixes(java.lang.String);
+}

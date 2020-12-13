@@ -1,0 +1,6 @@
+Compiled from "ByteArrayLexOrder.java"
+public class sun.security.util.ByteArrayLexOrder implements java.util.Comparator<byte[]> {
+  public sun.security.util.ByteArrayLexOrder();
+  public final int compare(byte[], byte[]);
+  public int compare(java.lang.Object, java.lang.Object);
+}

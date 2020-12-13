@@ -1,0 +1,15 @@
+Compiled from "XMLEntityDecl.java"
+public class com.sun.org.apache.xerces.internal.impl.dtd.XMLEntityDecl {
+  public java.lang.String name;
+  public java.lang.String publicId;
+  public java.lang.String systemId;
+  public java.lang.String baseSystemId;
+  public java.lang.String notation;
+  public boolean isPE;
+  public boolean inExternal;
+  public java.lang.String value;
+  public com.sun.org.apache.xerces.internal.impl.dtd.XMLEntityDecl();
+  public void setValues(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean);
+  public void setValues(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, boolean, boolean);
+  public void clear();
+}

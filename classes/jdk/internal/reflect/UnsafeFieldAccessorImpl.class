@@ -1,0 +1,40 @@
+Compiled from "UnsafeFieldAccessorImpl.java"
+abstract class jdk.internal.reflect.UnsafeFieldAccessorImpl extends jdk.internal.reflect.FieldAccessorImpl {
+  static final jdk.internal.misc.Unsafe unsafe;
+  protected final java.lang.reflect.Field field;
+  protected final long fieldOffset;
+  protected final boolean isFinal;
+  jdk.internal.reflect.UnsafeFieldAccessorImpl(java.lang.reflect.Field);
+  protected void ensureObj(java.lang.Object);
+  protected java.lang.IllegalArgumentException newGetIllegalArgumentException(java.lang.String);
+  protected void throwFinalFieldIllegalAccessException(java.lang.String, java.lang.String) throws java.lang.IllegalAccessException;
+  protected void throwFinalFieldIllegalAccessException(java.lang.Object) throws java.lang.IllegalAccessException;
+  protected void throwFinalFieldIllegalAccessException(boolean) throws java.lang.IllegalAccessException;
+  protected void throwFinalFieldIllegalAccessException(char) throws java.lang.IllegalAccessException;
+  protected void throwFinalFieldIllegalAccessException(byte) throws java.lang.IllegalAccessException;
+  protected void throwFinalFieldIllegalAccessException(short) throws java.lang.IllegalAccessException;
+  protected void throwFinalFieldIllegalAccessException(int) throws java.lang.IllegalAccessException;
+  protected void throwFinalFieldIllegalAccessException(long) throws java.lang.IllegalAccessException;
+  protected void throwFinalFieldIllegalAccessException(float) throws java.lang.IllegalAccessException;
+  protected void throwFinalFieldIllegalAccessException(double) throws java.lang.IllegalAccessException;
+  protected java.lang.IllegalArgumentException newGetBooleanIllegalArgumentException();
+  protected java.lang.IllegalArgumentException newGetByteIllegalArgumentException();
+  protected java.lang.IllegalArgumentException newGetCharIllegalArgumentException();
+  protected java.lang.IllegalArgumentException newGetShortIllegalArgumentException();
+  protected java.lang.IllegalArgumentException newGetIntIllegalArgumentException();
+  protected java.lang.IllegalArgumentException newGetLongIllegalArgumentException();
+  protected java.lang.IllegalArgumentException newGetFloatIllegalArgumentException();
+  protected java.lang.IllegalArgumentException newGetDoubleIllegalArgumentException();
+  protected java.lang.String getSetMessage(java.lang.String, java.lang.String);
+  protected void throwSetIllegalArgumentException(java.lang.String, java.lang.String);
+  protected void throwSetIllegalArgumentException(java.lang.Object);
+  protected void throwSetIllegalArgumentException(boolean);
+  protected void throwSetIllegalArgumentException(byte);
+  protected void throwSetIllegalArgumentException(char);
+  protected void throwSetIllegalArgumentException(short);
+  protected void throwSetIllegalArgumentException(int);
+  protected void throwSetIllegalArgumentException(long);
+  protected void throwSetIllegalArgumentException(float);
+  protected void throwSetIllegalArgumentException(double);
+  static {};
+}

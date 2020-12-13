@@ -1,0 +1,25 @@
+Compiled from "ButtonModel.java"
+public interface javax.swing.ButtonModel extends java.awt.ItemSelectable {
+  public abstract boolean isArmed();
+  public abstract boolean isSelected();
+  public abstract boolean isEnabled();
+  public abstract boolean isPressed();
+  public abstract boolean isRollover();
+  public abstract void setArmed(boolean);
+  public abstract void setSelected(boolean);
+  public abstract void setEnabled(boolean);
+  public abstract void setPressed(boolean);
+  public abstract void setRollover(boolean);
+  public abstract void setMnemonic(int);
+  public abstract int getMnemonic();
+  public abstract void setActionCommand(java.lang.String);
+  public abstract java.lang.String getActionCommand();
+  public abstract void setGroup(javax.swing.ButtonGroup);
+  public default javax.swing.ButtonGroup getGroup();
+  public abstract void addActionListener(java.awt.event.ActionListener);
+  public abstract void removeActionListener(java.awt.event.ActionListener);
+  public abstract void addItemListener(java.awt.event.ItemListener);
+  public abstract void removeItemListener(java.awt.event.ItemListener);
+  public abstract void addChangeListener(javax.swing.event.ChangeListener);
+  public abstract void removeChangeListener(javax.swing.event.ChangeListener);
+}

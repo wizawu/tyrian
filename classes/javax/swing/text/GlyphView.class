@@ -1,0 +1,45 @@
+Compiled from "GlyphView.java"
+public class javax.swing.text.GlyphView extends javax.swing.text.View implements javax.swing.text.TabableView,java.lang.Cloneable {
+  int offset;
+  int length;
+  boolean impliedCR;
+  boolean skipWidth;
+  javax.swing.text.TabExpander expander;
+  int x;
+  javax.swing.text.GlyphView$GlyphPainter painter;
+  static javax.swing.text.GlyphView$GlyphPainter defaultPainter;
+  public javax.swing.text.GlyphView(javax.swing.text.Element);
+  protected final java.lang.Object clone();
+  public javax.swing.text.GlyphView$GlyphPainter getGlyphPainter();
+  public void setGlyphPainter(javax.swing.text.GlyphView$GlyphPainter);
+  public javax.swing.text.Segment getText(int, int);
+  public java.awt.Color getBackground();
+  public java.awt.Color getForeground();
+  public java.awt.Font getFont();
+  public boolean isUnderline();
+  public boolean isStrikeThrough();
+  public boolean isSubscript();
+  public boolean isSuperscript();
+  public javax.swing.text.TabExpander getTabExpander();
+  protected void checkPainter();
+  public float getTabbedSpan(float, javax.swing.text.TabExpander);
+  public float getPartialSpan(int, int);
+  public int getStartOffset();
+  public int getEndOffset();
+  public void paint(java.awt.Graphics, java.awt.Shape);
+  final void paintTextUsingColor(java.awt.Graphics, java.awt.Shape, java.awt.Color, int, int);
+  public float getMinimumSpan(int);
+  public float getPreferredSpan(int);
+  public float getAlignment(int);
+  public java.awt.Shape modelToView(int, java.awt.Shape, javax.swing.text.Position$Bias) throws javax.swing.text.BadLocationException;
+  public int viewToModel(float, float, java.awt.Shape, javax.swing.text.Position$Bias[]);
+  public int getBreakWeight(int, float, float);
+  public javax.swing.text.View breakView(int, int, float, float);
+  public javax.swing.text.View createFragment(int, int);
+  public int getNextVisualPositionFrom(int, javax.swing.text.Position$Bias, java.awt.Shape, int, javax.swing.text.Position$Bias[]) throws javax.swing.text.BadLocationException;
+  public void insertUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  public void removeUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  public void changedUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  void updateAfterChange();
+  javax.swing.text.GlyphView$JustificationInfo getJustificationInfo(int);
+}

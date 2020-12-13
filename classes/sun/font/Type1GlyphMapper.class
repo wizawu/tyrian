@@ -1,0 +1,14 @@
+Compiled from "Type1GlyphMapper.java"
+public final class sun.font.Type1GlyphMapper extends sun.font.CharToGlyphMapper {
+  sun.font.Type1Font font;
+  sun.font.FontScaler scaler;
+  public sun.font.Type1GlyphMapper(sun.font.Type1Font);
+  public int getNumGlyphs();
+  public int getMissingGlyphCode();
+  public boolean canDisplay(char);
+  public int charToGlyph(char);
+  public int charToGlyph(int);
+  public void charsToGlyphs(int, char[], int[]);
+  public void charsToGlyphs(int, int[], int[]);
+  public boolean charsToGlyphsNS(int, char[], int[]);
+}

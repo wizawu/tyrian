@@ -1,0 +1,18 @@
+Compiled from "VirtualCallTypeData.java"
+public class sun.jvm.hotspot.oops.VirtualCallTypeData<K, M> extends sun.jvm.hotspot.oops.VirtualCallData implements sun.jvm.hotspot.oops.CallTypeDataInterface<K> {
+  final sun.jvm.hotspot.oops.TypeStackSlotEntries<K, M> args;
+  final sun.jvm.hotspot.oops.ReturnTypeEntry<K, M> ret;
+  int cellCountGlobalOffset();
+  int cellCountNoHeader();
+  public sun.jvm.hotspot.oops.VirtualCallTypeData(sun.jvm.hotspot.oops.MethodDataInterface<K, M>, sun.jvm.hotspot.oops.DataLayout);
+  static int staticCellCount();
+  public int cellCount();
+  public int numberOfArguments();
+  public boolean hasArguments();
+  public K argumentType(int);
+  public boolean hasReturn();
+  public K returnType();
+  public int argumentTypeIndex(int);
+  public int returnTypeIndex();
+  public void printDataOn(java.io.PrintStream);
+}

@@ -1,0 +1,22 @@
+Compiled from "SoftPerformer.java"
+public final class com.sun.media.sound.SoftPerformer {
+  static com.sun.media.sound.ModelConnectionBlock[] defaultconnections;
+  public int keyFrom;
+  public int keyTo;
+  public int velFrom;
+  public int velTo;
+  public int exclusiveClass;
+  public boolean selfNonExclusive;
+  public boolean forcedVelocity;
+  public boolean forcedKeynumber;
+  public com.sun.media.sound.ModelPerformer performer;
+  public com.sun.media.sound.ModelConnectionBlock[] connections;
+  public com.sun.media.sound.ModelOscillator[] oscillators;
+  public java.util.Map<java.lang.Integer, int[]> midi_rpn_connections;
+  public java.util.Map<java.lang.Integer, int[]> midi_nrpn_connections;
+  public int[][] midi_ctrl_connections;
+  public int[][] midi_connections;
+  public int[] ctrl_connections;
+  public com.sun.media.sound.SoftPerformer(com.sun.media.sound.ModelPerformer);
+  static {};
+}

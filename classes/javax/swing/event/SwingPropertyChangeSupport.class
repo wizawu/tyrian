@@ -1,0 +1,8 @@
+Compiled from "SwingPropertyChangeSupport.java"
+public final class javax.swing.event.SwingPropertyChangeSupport extends java.beans.PropertyChangeSupport {
+  static final long serialVersionUID;
+  public javax.swing.event.SwingPropertyChangeSupport(java.lang.Object);
+  public javax.swing.event.SwingPropertyChangeSupport(java.lang.Object, boolean);
+  public void firePropertyChange(java.beans.PropertyChangeEvent);
+  public boolean isNotifyOnEDT();
+}

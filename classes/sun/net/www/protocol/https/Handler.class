@@ -1,0 +1,10 @@
+Compiled from "Handler.java"
+public class sun.net.www.protocol.https.Handler extends sun.net.www.protocol.http.Handler {
+  protected java.lang.String proxy;
+  protected int proxyPort;
+  protected int getDefaultPort();
+  public sun.net.www.protocol.https.Handler();
+  public sun.net.www.protocol.https.Handler(java.lang.String, int);
+  protected java.net.URLConnection openConnection(java.net.URL) throws java.io.IOException;
+  protected java.net.URLConnection openConnection(java.net.URL, java.net.Proxy) throws java.io.IOException;
+}

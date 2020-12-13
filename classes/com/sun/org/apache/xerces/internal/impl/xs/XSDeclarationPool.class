@@ -1,0 +1,13 @@
+Compiled from "XSDeclarationPool.java"
+public final class com.sun.org.apache.xerces.internal.impl.xs.XSDeclarationPool {
+  public com.sun.org.apache.xerces.internal.impl.xs.XSDeclarationPool();
+  public void setDVFactory(com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDVFactoryImpl);
+  public final com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl getElementDecl();
+  public final com.sun.org.apache.xerces.internal.impl.xs.XSAttributeDecl getAttributeDecl();
+  public final com.sun.org.apache.xerces.internal.impl.xs.XSAttributeUseImpl getAttributeUse();
+  public final com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl getComplexTypeDecl();
+  public final com.sun.org.apache.xerces.internal.impl.dv.xs.XSSimpleTypeDecl getSimpleTypeDecl();
+  public final com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl getParticleDecl();
+  public final com.sun.org.apache.xerces.internal.impl.xs.XSModelGroupImpl getModelGroup();
+  public void reset();
+}

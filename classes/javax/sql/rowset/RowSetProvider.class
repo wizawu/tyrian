@@ -1,0 +1,7 @@
+Compiled from "RowSetProvider.java"
+public class javax.sql.rowset.RowSetProvider {
+  protected javax.sql.rowset.RowSetProvider();
+  public static javax.sql.rowset.RowSetFactory newFactory() throws java.sql.SQLException;
+  public static javax.sql.rowset.RowSetFactory newFactory(java.lang.String, java.lang.ClassLoader) throws java.sql.SQLException;
+  static {};
+}

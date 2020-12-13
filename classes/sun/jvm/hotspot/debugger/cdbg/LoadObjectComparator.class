@@ -1,0 +1,6 @@
+Compiled from "LoadObjectComparator.java"
+public class sun.jvm.hotspot.debugger.cdbg.LoadObjectComparator implements java.util.Comparator {
+  public sun.jvm.hotspot.debugger.cdbg.LoadObjectComparator();
+  public int compare(java.lang.Object, java.lang.Object);
+  public boolean equals(java.lang.Object);
+}

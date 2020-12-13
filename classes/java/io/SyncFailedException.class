@@ -1,0 +1,4 @@
+Compiled from "SyncFailedException.java"
+public class java.io.SyncFailedException extends java.io.IOException {
+  public java.io.SyncFailedException(java.lang.String);
+}

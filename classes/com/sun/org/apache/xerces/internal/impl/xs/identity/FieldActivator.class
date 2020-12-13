@@ -1,0 +1,6 @@
+Compiled from "FieldActivator.java"
+public interface com.sun.org.apache.xerces.internal.impl.xs.identity.FieldActivator {
+  public abstract void startValueScopeFor(com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint, int);
+  public abstract com.sun.org.apache.xerces.internal.impl.xs.identity.XPathMatcher activateField(com.sun.org.apache.xerces.internal.impl.xs.identity.Field, int);
+  public abstract void endValueScopeFor(com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint, int);
+}

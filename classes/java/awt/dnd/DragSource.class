@@ -1,0 +1,37 @@
+Compiled from "DragSource.java"
+public class java.awt.dnd.DragSource implements java.io.Serializable {
+  public static final java.awt.Cursor DefaultCopyDrop;
+  public static final java.awt.Cursor DefaultMoveDrop;
+  public static final java.awt.Cursor DefaultLinkDrop;
+  public static final java.awt.Cursor DefaultCopyNoDrop;
+  public static final java.awt.Cursor DefaultMoveNoDrop;
+  public static final java.awt.Cursor DefaultLinkNoDrop;
+  static final java.lang.String dragSourceListenerK;
+  static final java.lang.String dragSourceMotionListenerK;
+  public static java.awt.dnd.DragSource getDefaultDragSource();
+  public static boolean isDragImageSupported();
+  public java.awt.dnd.DragSource() throws java.awt.HeadlessException;
+  public void startDrag(java.awt.dnd.DragGestureEvent, java.awt.Cursor, java.awt.Image, java.awt.Point, java.awt.datatransfer.Transferable, java.awt.dnd.DragSourceListener, java.awt.datatransfer.FlavorMap) throws java.awt.dnd.InvalidDnDOperationException;
+  public void startDrag(java.awt.dnd.DragGestureEvent, java.awt.Cursor, java.awt.datatransfer.Transferable, java.awt.dnd.DragSourceListener, java.awt.datatransfer.FlavorMap) throws java.awt.dnd.InvalidDnDOperationException;
+  public void startDrag(java.awt.dnd.DragGestureEvent, java.awt.Cursor, java.awt.Image, java.awt.Point, java.awt.datatransfer.Transferable, java.awt.dnd.DragSourceListener) throws java.awt.dnd.InvalidDnDOperationException;
+  public void startDrag(java.awt.dnd.DragGestureEvent, java.awt.Cursor, java.awt.datatransfer.Transferable, java.awt.dnd.DragSourceListener) throws java.awt.dnd.InvalidDnDOperationException;
+  protected java.awt.dnd.DragSourceContext createDragSourceContext(java.awt.dnd.DragGestureEvent, java.awt.Cursor, java.awt.Image, java.awt.Point, java.awt.datatransfer.Transferable, java.awt.dnd.DragSourceListener);
+  public java.awt.datatransfer.FlavorMap getFlavorMap();
+  public <T extends java.awt.dnd.DragGestureRecognizer> T createDragGestureRecognizer(java.lang.Class<T>, java.awt.Component, int, java.awt.dnd.DragGestureListener);
+  public java.awt.dnd.DragGestureRecognizer createDefaultDragGestureRecognizer(java.awt.Component, int, java.awt.dnd.DragGestureListener);
+  public void addDragSourceListener(java.awt.dnd.DragSourceListener);
+  public void removeDragSourceListener(java.awt.dnd.DragSourceListener);
+  public java.awt.dnd.DragSourceListener[] getDragSourceListeners();
+  public void addDragSourceMotionListener(java.awt.dnd.DragSourceMotionListener);
+  public void removeDragSourceMotionListener(java.awt.dnd.DragSourceMotionListener);
+  public java.awt.dnd.DragSourceMotionListener[] getDragSourceMotionListeners();
+  public <T extends java.util.EventListener> T[] getListeners(java.lang.Class<T>);
+  void processDragEnter(java.awt.dnd.DragSourceDragEvent);
+  void processDragOver(java.awt.dnd.DragSourceDragEvent);
+  void processDropActionChanged(java.awt.dnd.DragSourceDragEvent);
+  void processDragExit(java.awt.dnd.DragSourceEvent);
+  void processDragDropEnd(java.awt.dnd.DragSourceDropEvent);
+  void processDragMouseMoved(java.awt.dnd.DragSourceDragEvent);
+  public static int getDragThreshold();
+  static {};
+}

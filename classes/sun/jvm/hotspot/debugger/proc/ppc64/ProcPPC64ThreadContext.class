@@ -1,0 +1,6 @@
+Compiled from "ProcPPC64ThreadContext.java"
+public class sun.jvm.hotspot.debugger.proc.ppc64.ProcPPC64ThreadContext extends sun.jvm.hotspot.debugger.ppc64.PPC64ThreadContext {
+  public sun.jvm.hotspot.debugger.proc.ppc64.ProcPPC64ThreadContext(sun.jvm.hotspot.debugger.proc.ProcDebugger);
+  public void setRegisterAsAddress(int, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address getRegisterAsAddress(int);
+}

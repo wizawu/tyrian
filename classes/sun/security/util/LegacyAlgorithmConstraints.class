@@ -1,0 +1,8 @@
+Compiled from "LegacyAlgorithmConstraints.java"
+public class sun.security.util.LegacyAlgorithmConstraints extends sun.security.util.AbstractAlgorithmConstraints {
+  public static final java.lang.String PROPERTY_TLS_LEGACY_ALGS;
+  public sun.security.util.LegacyAlgorithmConstraints(java.lang.String, sun.security.util.AlgorithmDecomposer);
+  public final boolean permits(java.util.Set<java.security.CryptoPrimitive>, java.lang.String, java.security.AlgorithmParameters);
+  public final boolean permits(java.util.Set<java.security.CryptoPrimitive>, java.security.Key);
+  public final boolean permits(java.util.Set<java.security.CryptoPrimitive>, java.lang.String, java.security.Key, java.security.AlgorithmParameters);
+}

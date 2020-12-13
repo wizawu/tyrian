@@ -1,0 +1,17 @@
+Compiled from "KeyShareExtension.java"
+final class sun.security.ssl.KeyShareExtension {
+  static final sun.security.ssl.HandshakeProducer chNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer chOnLoadConsumer;
+  static final sun.security.ssl.HandshakeAbsence chOnTradAbsence;
+  static final sun.security.ssl.SSLStringizer chStringizer;
+  static final sun.security.ssl.HandshakeProducer shNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer shOnLoadConsumer;
+  static final sun.security.ssl.HandshakeAbsence shOnLoadAbsence;
+  static final sun.security.ssl.SSLStringizer shStringizer;
+  static final sun.security.ssl.HandshakeProducer hrrNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer hrrOnLoadConsumer;
+  static final sun.security.ssl.HandshakeProducer hrrNetworkReproducer;
+  static final sun.security.ssl.SSLStringizer hrrStringizer;
+  sun.security.ssl.KeyShareExtension();
+  static {};
+}

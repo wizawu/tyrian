@@ -1,0 +1,10 @@
+Compiled from "XMLStringFactoryImpl.java"
+public class com.sun.org.apache.xpath.internal.objects.XMLStringFactoryImpl extends com.sun.org.apache.xml.internal.utils.XMLStringFactory {
+  public com.sun.org.apache.xpath.internal.objects.XMLStringFactoryImpl();
+  public static com.sun.org.apache.xml.internal.utils.XMLStringFactory getFactory();
+  public com.sun.org.apache.xml.internal.utils.XMLString newstr(java.lang.String);
+  public com.sun.org.apache.xml.internal.utils.XMLString newstr(com.sun.org.apache.xml.internal.utils.FastStringBuffer, int, int);
+  public com.sun.org.apache.xml.internal.utils.XMLString newstr(char[], int, int);
+  public com.sun.org.apache.xml.internal.utils.XMLString emptystr();
+  static {};
+}

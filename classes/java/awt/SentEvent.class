@@ -1,0 +1,10 @@
+Compiled from "SentEvent.java"
+class java.awt.SentEvent extends java.awt.AWTEvent implements java.awt.ActiveEvent {
+  static final int ID;
+  boolean dispatched;
+  java.awt.SentEvent();
+  java.awt.SentEvent(java.awt.AWTEvent);
+  java.awt.SentEvent(java.awt.AWTEvent, sun.awt.AppContext);
+  public void dispatch();
+  final void dispose();
+}

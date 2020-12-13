@@ -1,0 +1,37 @@
+Compiled from "XMLDOMWriterImpl.java"
+public class com.sun.xml.internal.stream.writers.XMLDOMWriterImpl implements com.sun.xml.internal.stream.writers.XMLStreamWriterBase {
+  public com.sun.xml.internal.stream.writers.XMLDOMWriterImpl(javax.xml.transform.dom.DOMResult);
+  public void close() throws javax.xml.stream.XMLStreamException;
+  public void flush() throws javax.xml.stream.XMLStreamException;
+  public javax.xml.namespace.NamespaceContext getNamespaceContext();
+  public java.lang.String getPrefix(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public java.lang.Object getProperty(java.lang.String) throws java.lang.IllegalArgumentException;
+  public void setDefaultNamespace(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void setNamespaceContext(javax.xml.namespace.NamespaceContext) throws javax.xml.stream.XMLStreamException;
+  public void setPrefix(java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeAttribute(java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeAttribute(java.lang.String, java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeAttribute(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeCData(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeCharacters(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeCharacters(char[], int, int) throws javax.xml.stream.XMLStreamException;
+  public void writeComment(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeDTD(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeDefaultNamespace(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeEmptyElement(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeEmptyElement(java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeEmptyElement(java.lang.String, java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeEndDocument() throws javax.xml.stream.XMLStreamException;
+  public void writeEndElement() throws javax.xml.stream.XMLStreamException;
+  public void writeEntityRef(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeNamespace(java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeProcessingInstruction(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeProcessingInstruction(java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeStartDocument() throws javax.xml.stream.XMLStreamException;
+  public void writeStartDocument(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeStartDocument(java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeStartDocument(java.lang.String, java.lang.String, boolean, boolean) throws javax.xml.stream.XMLStreamException;
+  public void writeStartElement(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeStartElement(java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void writeStartElement(java.lang.String, java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+}

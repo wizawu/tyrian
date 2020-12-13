@@ -1,0 +1,9 @@
+Compiled from "SunDisplayChanger.java"
+public class sun.awt.SunDisplayChanger {
+  public sun.awt.SunDisplayChanger();
+  public void add(sun.awt.DisplayChangedListener);
+  public void remove(sun.awt.DisplayChangedListener);
+  public void notifyListeners();
+  public void notifyPaletteChanged();
+  static {};
+}

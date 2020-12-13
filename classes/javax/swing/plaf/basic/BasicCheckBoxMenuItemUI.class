@@ -1,0 +1,7 @@
+Compiled from "BasicCheckBoxMenuItemUI.java"
+public class javax.swing.plaf.basic.BasicCheckBoxMenuItemUI extends javax.swing.plaf.basic.BasicMenuItemUI {
+  public javax.swing.plaf.basic.BasicCheckBoxMenuItemUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected java.lang.String getPropertyPrefix();
+  public void processMouseEvent(javax.swing.JMenuItem, java.awt.event.MouseEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager);
+}

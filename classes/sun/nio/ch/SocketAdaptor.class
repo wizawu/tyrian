@@ -1,0 +1,44 @@
+Compiled from "SocketAdaptor.java"
+class sun.nio.ch.SocketAdaptor extends java.net.Socket {
+  static final boolean $assertionsDisabled;
+  public static java.net.Socket create(sun.nio.ch.SocketChannelImpl);
+  public java.nio.channels.SocketChannel getChannel();
+  public void connect(java.net.SocketAddress) throws java.io.IOException;
+  public void connect(java.net.SocketAddress, int) throws java.io.IOException;
+  public void bind(java.net.SocketAddress) throws java.io.IOException;
+  public java.net.InetAddress getInetAddress();
+  public java.net.InetAddress getLocalAddress();
+  public int getPort();
+  public int getLocalPort();
+  public java.io.InputStream getInputStream() throws java.io.IOException;
+  public java.io.OutputStream getOutputStream() throws java.io.IOException;
+  public void setTcpNoDelay(boolean) throws java.net.SocketException;
+  public boolean getTcpNoDelay() throws java.net.SocketException;
+  public void setSoLinger(boolean, int) throws java.net.SocketException;
+  public int getSoLinger() throws java.net.SocketException;
+  public void sendUrgentData(int) throws java.io.IOException;
+  public void setOOBInline(boolean) throws java.net.SocketException;
+  public boolean getOOBInline() throws java.net.SocketException;
+  public void setSoTimeout(int) throws java.net.SocketException;
+  public int getSoTimeout() throws java.net.SocketException;
+  public void setSendBufferSize(int) throws java.net.SocketException;
+  public int getSendBufferSize() throws java.net.SocketException;
+  public void setReceiveBufferSize(int) throws java.net.SocketException;
+  public int getReceiveBufferSize() throws java.net.SocketException;
+  public void setKeepAlive(boolean) throws java.net.SocketException;
+  public boolean getKeepAlive() throws java.net.SocketException;
+  public void setTrafficClass(int) throws java.net.SocketException;
+  public int getTrafficClass() throws java.net.SocketException;
+  public void setReuseAddress(boolean) throws java.net.SocketException;
+  public boolean getReuseAddress() throws java.net.SocketException;
+  public void close() throws java.io.IOException;
+  public void shutdownInput() throws java.io.IOException;
+  public void shutdownOutput() throws java.io.IOException;
+  public java.lang.String toString();
+  public boolean isConnected();
+  public boolean isBound();
+  public boolean isClosed();
+  public boolean isInputShutdown();
+  public boolean isOutputShutdown();
+  static {};
+}

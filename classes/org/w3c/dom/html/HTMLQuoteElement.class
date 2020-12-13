@@ -1,0 +1,5 @@
+Compiled from "HTMLQuoteElement.java"
+public interface org.w3c.dom.html.HTMLQuoteElement extends org.w3c.dom.html.HTMLElement {
+  public abstract java.lang.String getCite();
+  public abstract void setCite(java.lang.String);
+}

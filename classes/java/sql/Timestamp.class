@@ -1,0 +1,24 @@
+Compiled from "Timestamp.java"
+public class java.sql.Timestamp extends java.util.Date {
+  static final long serialVersionUID;
+  public java.sql.Timestamp(int, int, int, int, int, int, int);
+  public java.sql.Timestamp(long);
+  public void setTime(long);
+  public long getTime();
+  public static java.sql.Timestamp valueOf(java.lang.String);
+  public java.lang.String toString();
+  public int getNanos();
+  public void setNanos(int);
+  public boolean equals(java.sql.Timestamp);
+  public boolean equals(java.lang.Object);
+  public boolean before(java.sql.Timestamp);
+  public boolean after(java.sql.Timestamp);
+  public int compareTo(java.sql.Timestamp);
+  public int compareTo(java.util.Date);
+  public int hashCode();
+  public static java.sql.Timestamp valueOf(java.time.LocalDateTime);
+  public java.time.LocalDateTime toLocalDateTime();
+  public static java.sql.Timestamp from(java.time.Instant);
+  public java.time.Instant toInstant();
+  public int compareTo(java.lang.Object);
+}

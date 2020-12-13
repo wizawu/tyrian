@@ -1,0 +1,45 @@
+Compiled from "SignatureScheme.java"
+final class sun.security.ssl.SignatureScheme extends java.lang.Enum<sun.security.ssl.SignatureScheme> {
+  public static final sun.security.ssl.SignatureScheme ED25519;
+  public static final sun.security.ssl.SignatureScheme ED448;
+  public static final sun.security.ssl.SignatureScheme ECDSA_SECP256R1_SHA256;
+  public static final sun.security.ssl.SignatureScheme ECDSA_SECP384R1_SHA384;
+  public static final sun.security.ssl.SignatureScheme ECDSA_SECP521R1_SHA512;
+  public static final sun.security.ssl.SignatureScheme RSA_PSS_RSAE_SHA256;
+  public static final sun.security.ssl.SignatureScheme RSA_PSS_RSAE_SHA384;
+  public static final sun.security.ssl.SignatureScheme RSA_PSS_RSAE_SHA512;
+  public static final sun.security.ssl.SignatureScheme RSA_PSS_PSS_SHA256;
+  public static final sun.security.ssl.SignatureScheme RSA_PSS_PSS_SHA384;
+  public static final sun.security.ssl.SignatureScheme RSA_PSS_PSS_SHA512;
+  public static final sun.security.ssl.SignatureScheme RSA_PKCS1_SHA256;
+  public static final sun.security.ssl.SignatureScheme RSA_PKCS1_SHA384;
+  public static final sun.security.ssl.SignatureScheme RSA_PKCS1_SHA512;
+  public static final sun.security.ssl.SignatureScheme DSA_SHA256;
+  public static final sun.security.ssl.SignatureScheme ECDSA_SHA224;
+  public static final sun.security.ssl.SignatureScheme RSA_SHA224;
+  public static final sun.security.ssl.SignatureScheme DSA_SHA224;
+  public static final sun.security.ssl.SignatureScheme ECDSA_SHA1;
+  public static final sun.security.ssl.SignatureScheme RSA_PKCS1_SHA1;
+  public static final sun.security.ssl.SignatureScheme DSA_SHA1;
+  public static final sun.security.ssl.SignatureScheme RSA_MD5;
+  final int id;
+  final java.lang.String name;
+  final java.lang.String keyAlgorithm;
+  final int minimalKeySize;
+  final java.util.List<sun.security.ssl.ProtocolVersion> supportedProtocols;
+  final java.util.List<sun.security.ssl.ProtocolVersion> handshakeSupportedProtocols;
+  final boolean isAvailable;
+  public static sun.security.ssl.SignatureScheme[] values();
+  public static sun.security.ssl.SignatureScheme valueOf(java.lang.String);
+  static sun.security.ssl.SignatureScheme valueOf(int);
+  static java.lang.String nameOf(int);
+  static sun.security.ssl.SignatureScheme nameOf(java.lang.String);
+  static int sizeInRecord();
+  static java.util.List<sun.security.ssl.SignatureScheme> getSupportedAlgorithms(sun.security.ssl.SSLConfiguration, java.security.AlgorithmConstraints, java.util.List<sun.security.ssl.ProtocolVersion>);
+  static java.util.List<sun.security.ssl.SignatureScheme> getSupportedAlgorithms(sun.security.ssl.SSLConfiguration, java.security.AlgorithmConstraints, sun.security.ssl.ProtocolVersion, int[]);
+  static sun.security.ssl.SignatureScheme getPreferableAlgorithm(java.util.List<sun.security.ssl.SignatureScheme>, sun.security.ssl.SignatureScheme, sun.security.ssl.ProtocolVersion);
+  static java.util.Map$Entry<sun.security.ssl.SignatureScheme, java.security.Signature> getSignerOfPreferableAlgorithm(java.util.List<sun.security.ssl.SignatureScheme>, sun.security.ssl.X509Authentication$X509Possession, sun.security.ssl.ProtocolVersion);
+  static java.lang.String[] getAlgorithmNames(java.util.Collection<sun.security.ssl.SignatureScheme>);
+  java.security.Signature getVerifier(java.security.PublicKey) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException, java.security.InvalidKeyException;
+  static {};
+}

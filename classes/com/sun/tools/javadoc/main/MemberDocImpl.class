@@ -1,0 +1,5 @@
+Compiled from "MemberDocImpl.java"
+public abstract class com.sun.tools.javadoc.main.MemberDocImpl extends com.sun.tools.javadoc.main.ProgramElementDocImpl implements com.sun.javadoc.MemberDoc {
+  public com.sun.tools.javadoc.main.MemberDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol, com.sun.source.util.TreePath);
+  public abstract boolean isSynthetic();
+}

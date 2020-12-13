@@ -1,0 +1,6 @@
+Compiled from "ProcX86ThreadContext.java"
+public class sun.jvm.hotspot.debugger.proc.x86.ProcX86ThreadContext extends sun.jvm.hotspot.debugger.x86.X86ThreadContext {
+  public sun.jvm.hotspot.debugger.proc.x86.ProcX86ThreadContext(sun.jvm.hotspot.debugger.proc.ProcDebugger);
+  public void setRegisterAsAddress(int, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address getRegisterAsAddress(int);
+}

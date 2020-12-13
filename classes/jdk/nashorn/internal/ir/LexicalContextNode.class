@@ -1,0 +1,4 @@
+Compiled from "LexicalContextNode.java"
+public interface jdk.nashorn.internal.ir.LexicalContextNode {
+  public abstract jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+}

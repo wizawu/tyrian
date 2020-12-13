@@ -1,0 +1,5 @@
+Compiled from "UndoableEditLockSupport.java"
+public interface sun.swing.text.UndoableEditLockSupport extends javax.swing.undo.UndoableEdit {
+  public abstract void lockEdit();
+  public abstract void unlockEdit();
+}

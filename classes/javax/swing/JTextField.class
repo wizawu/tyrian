@@ -1,0 +1,40 @@
+Compiled from "JTextField.java"
+public class javax.swing.JTextField extends javax.swing.text.JTextComponent implements javax.swing.SwingConstants {
+  public static final java.lang.String notifyAction;
+  public javax.swing.JTextField();
+  public javax.swing.JTextField(java.lang.String);
+  public javax.swing.JTextField(int);
+  public javax.swing.JTextField(java.lang.String, int);
+  public javax.swing.JTextField(javax.swing.text.Document, java.lang.String, int);
+  public java.lang.String getUIClassID();
+  public void setDocument(javax.swing.text.Document);
+  public boolean isValidateRoot();
+  public int getHorizontalAlignment();
+  public void setHorizontalAlignment(int);
+  protected javax.swing.text.Document createDefaultModel();
+  public int getColumns();
+  public void setColumns(int);
+  protected int getColumnWidth();
+  public java.awt.Dimension getPreferredSize();
+  public void setFont(java.awt.Font);
+  public synchronized void addActionListener(java.awt.event.ActionListener);
+  public synchronized void removeActionListener(java.awt.event.ActionListener);
+  public synchronized java.awt.event.ActionListener[] getActionListeners();
+  protected void fireActionPerformed();
+  public void setActionCommand(java.lang.String);
+  public void setAction(javax.swing.Action);
+  public javax.swing.Action getAction();
+  protected void configurePropertiesFromAction(javax.swing.Action);
+  protected void actionPropertyChanged(javax.swing.Action, java.lang.String);
+  protected java.beans.PropertyChangeListener createActionPropertyChangeListener(javax.swing.Action);
+  public javax.swing.Action[] getActions();
+  public void postActionEvent();
+  public javax.swing.BoundedRangeModel getHorizontalVisibility();
+  public int getScrollOffset();
+  public void setScrollOffset(int);
+  public void scrollRectToVisible(java.awt.Rectangle);
+  boolean hasActionListener();
+  protected java.lang.String paramString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  static {};
+}

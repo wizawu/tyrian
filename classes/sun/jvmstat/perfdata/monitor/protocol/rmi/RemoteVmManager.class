@@ -1,0 +1,6 @@
+Compiled from "RemoteVmManager.java"
+public class sun.jvmstat.perfdata.monitor.protocol.rmi.RemoteVmManager {
+  public sun.jvmstat.perfdata.monitor.protocol.rmi.RemoteVmManager(sun.jvmstat.monitor.remote.RemoteHost);
+  public sun.jvmstat.perfdata.monitor.protocol.rmi.RemoteVmManager(sun.jvmstat.monitor.remote.RemoteHost, java.lang.String);
+  public java.util.Set<java.lang.Integer> activeVms() throws sun.jvmstat.monitor.MonitorException;
+}

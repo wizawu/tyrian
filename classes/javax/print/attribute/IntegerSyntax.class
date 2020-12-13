@@ -1,0 +1,9 @@
+Compiled from "IntegerSyntax.java"
+public abstract class javax.print.attribute.IntegerSyntax implements java.io.Serializable,java.lang.Cloneable {
+  protected javax.print.attribute.IntegerSyntax(int);
+  protected javax.print.attribute.IntegerSyntax(int, int, int);
+  public int getValue();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

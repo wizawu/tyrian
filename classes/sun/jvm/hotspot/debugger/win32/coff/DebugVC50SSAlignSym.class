@@ -1,0 +1,4 @@
+Compiled from "DebugVC50SSAlignSym.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSAlignSym extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator getSymbolIterator();
+}

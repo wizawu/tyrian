@@ -1,0 +1,38 @@
+Compiled from "StreamOpFlag.java"
+final class java.util.stream.StreamOpFlag extends java.lang.Enum<java.util.stream.StreamOpFlag> {
+  public static final java.util.stream.StreamOpFlag DISTINCT;
+  public static final java.util.stream.StreamOpFlag SORTED;
+  public static final java.util.stream.StreamOpFlag ORDERED;
+  public static final java.util.stream.StreamOpFlag SIZED;
+  public static final java.util.stream.StreamOpFlag SHORT_CIRCUIT;
+  static final int SPLITERATOR_CHARACTERISTICS_MASK;
+  static final int STREAM_MASK;
+  static final int OP_MASK;
+  static final int TERMINAL_OP_MASK;
+  static final int UPSTREAM_TERMINAL_OP_MASK;
+  static final int INITIAL_OPS_VALUE;
+  static final int IS_DISTINCT;
+  static final int NOT_DISTINCT;
+  static final int IS_SORTED;
+  static final int NOT_SORTED;
+  static final int IS_ORDERED;
+  static final int NOT_ORDERED;
+  static final int IS_SIZED;
+  static final int NOT_SIZED;
+  static final int IS_SHORT_CIRCUIT;
+  public static java.util.stream.StreamOpFlag[] values();
+  public static java.util.stream.StreamOpFlag valueOf(java.lang.String);
+  int set();
+  int clear();
+  boolean isStreamFlag();
+  boolean isKnown(int);
+  boolean isCleared(int);
+  boolean isPreserved(int);
+  boolean canSet(java.util.stream.StreamOpFlag$Type);
+  static int combineOpFlags(int, int);
+  static int toStreamFlags(int);
+  static int toCharacteristics(int);
+  static int fromCharacteristics(java.util.Spliterator<?>);
+  static int fromCharacteristics(int);
+  static {};
+}

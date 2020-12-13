@@ -1,0 +1,45 @@
+Compiled from "RowSetMetaDataImpl.java"
+public class javax.sql.rowset.RowSetMetaDataImpl implements javax.sql.RowSetMetaData,java.io.Serializable {
+  static final long serialVersionUID;
+  public javax.sql.rowset.RowSetMetaDataImpl();
+  public void setColumnCount(int) throws java.sql.SQLException;
+  public void setAutoIncrement(int, boolean) throws java.sql.SQLException;
+  public void setCaseSensitive(int, boolean) throws java.sql.SQLException;
+  public void setSearchable(int, boolean) throws java.sql.SQLException;
+  public void setCurrency(int, boolean) throws java.sql.SQLException;
+  public void setNullable(int, int) throws java.sql.SQLException;
+  public void setSigned(int, boolean) throws java.sql.SQLException;
+  public void setColumnDisplaySize(int, int) throws java.sql.SQLException;
+  public void setColumnLabel(int, java.lang.String) throws java.sql.SQLException;
+  public void setColumnName(int, java.lang.String) throws java.sql.SQLException;
+  public void setSchemaName(int, java.lang.String) throws java.sql.SQLException;
+  public void setPrecision(int, int) throws java.sql.SQLException;
+  public void setScale(int, int) throws java.sql.SQLException;
+  public void setTableName(int, java.lang.String) throws java.sql.SQLException;
+  public void setCatalogName(int, java.lang.String) throws java.sql.SQLException;
+  public void setColumnType(int, int) throws java.sql.SQLException;
+  public void setColumnTypeName(int, java.lang.String) throws java.sql.SQLException;
+  public int getColumnCount() throws java.sql.SQLException;
+  public boolean isAutoIncrement(int) throws java.sql.SQLException;
+  public boolean isCaseSensitive(int) throws java.sql.SQLException;
+  public boolean isSearchable(int) throws java.sql.SQLException;
+  public boolean isCurrency(int) throws java.sql.SQLException;
+  public int isNullable(int) throws java.sql.SQLException;
+  public boolean isSigned(int) throws java.sql.SQLException;
+  public int getColumnDisplaySize(int) throws java.sql.SQLException;
+  public java.lang.String getColumnLabel(int) throws java.sql.SQLException;
+  public java.lang.String getColumnName(int) throws java.sql.SQLException;
+  public java.lang.String getSchemaName(int) throws java.sql.SQLException;
+  public int getPrecision(int) throws java.sql.SQLException;
+  public int getScale(int) throws java.sql.SQLException;
+  public java.lang.String getTableName(int) throws java.sql.SQLException;
+  public java.lang.String getCatalogName(int) throws java.sql.SQLException;
+  public int getColumnType(int) throws java.sql.SQLException;
+  public java.lang.String getColumnTypeName(int) throws java.sql.SQLException;
+  public boolean isReadOnly(int) throws java.sql.SQLException;
+  public boolean isWritable(int) throws java.sql.SQLException;
+  public boolean isDefinitelyWritable(int) throws java.sql.SQLException;
+  public java.lang.String getColumnClassName(int) throws java.sql.SQLException;
+  public <T> T unwrap(java.lang.Class<T>) throws java.sql.SQLException;
+  public boolean isWrapperFor(java.lang.Class<?>) throws java.sql.SQLException;
+}

@@ -1,0 +1,24 @@
+Compiled from "JoinRowSet.java"
+public interface javax.sql.rowset.JoinRowSet extends javax.sql.rowset.WebRowSet {
+  public static final int CROSS_JOIN;
+  public static final int INNER_JOIN;
+  public static final int LEFT_OUTER_JOIN;
+  public static final int RIGHT_OUTER_JOIN;
+  public static final int FULL_JOIN;
+  public abstract void addRowSet(javax.sql.rowset.Joinable) throws java.sql.SQLException;
+  public abstract void addRowSet(javax.sql.RowSet, int) throws java.sql.SQLException;
+  public abstract void addRowSet(javax.sql.RowSet, java.lang.String) throws java.sql.SQLException;
+  public abstract void addRowSet(javax.sql.RowSet[], int[]) throws java.sql.SQLException;
+  public abstract void addRowSet(javax.sql.RowSet[], java.lang.String[]) throws java.sql.SQLException;
+  public abstract java.util.Collection<?> getRowSets() throws java.sql.SQLException;
+  public abstract java.lang.String[] getRowSetNames() throws java.sql.SQLException;
+  public abstract javax.sql.rowset.CachedRowSet toCachedRowSet() throws java.sql.SQLException;
+  public abstract boolean supportsCrossJoin();
+  public abstract boolean supportsInnerJoin();
+  public abstract boolean supportsLeftOuterJoin();
+  public abstract boolean supportsRightOuterJoin();
+  public abstract boolean supportsFullJoin();
+  public abstract void setJoinType(int) throws java.sql.SQLException;
+  public abstract java.lang.String getWhereClause() throws java.sql.SQLException;
+  public abstract int getJoinType() throws java.sql.SQLException;
+}

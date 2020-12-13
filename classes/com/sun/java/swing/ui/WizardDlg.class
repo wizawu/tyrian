@@ -1,0 +1,18 @@
+Compiled from "WizardDlg.java"
+public class com.sun.java.swing.ui.WizardDlg extends javax.swing.JDialog {
+  public com.sun.java.swing.ui.WizardDlg(javax.swing.JFrame, java.lang.String, java.util.Vector, java.util.Vector);
+  public com.sun.java.swing.ui.WizardDlg(javax.swing.JFrame, java.lang.String, java.util.Vector);
+  public com.sun.java.swing.ui.WizardDlg(java.lang.String, java.util.Vector);
+  public void setPanels(java.util.Vector);
+  public void reset();
+  public void setWestPanel(javax.swing.JPanel);
+  public static void main(java.lang.String[]);
+  public synchronized void addFinishListener(java.awt.event.ActionListener);
+  public synchronized void removeFinishListener(java.awt.event.ActionListener);
+  public synchronized void addCancelListener(java.awt.event.ActionListener);
+  public synchronized void removeCancelListener(java.awt.event.ActionListener);
+  public synchronized void addNextListener(java.awt.event.ActionListener);
+  public synchronized void removeNextListener(java.awt.event.ActionListener);
+  public synchronized void addBackListener(java.awt.event.ActionListener);
+  public synchronized void removeBackListener(java.awt.event.ActionListener);
+}

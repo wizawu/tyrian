@@ -1,0 +1,5 @@
+Compiled from "ServiceProxy.java"
+class com.sun.tools.javac.processing.ServiceProxy {
+  com.sun.tools.javac.processing.ServiceProxy();
+  public static boolean hasService(java.lang.Class<?>, java.net.URL[]) throws com.sun.tools.javac.processing.ServiceProxy$ServiceConfigurationError;
+}

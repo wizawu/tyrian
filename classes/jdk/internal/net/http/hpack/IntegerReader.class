@@ -1,0 +1,9 @@
+Compiled from "IntegerReader.java"
+final class jdk.internal.net.http.hpack.IntegerReader {
+  jdk.internal.net.http.hpack.IntegerReader();
+  public jdk.internal.net.http.hpack.IntegerReader configure(int);
+  public jdk.internal.net.http.hpack.IntegerReader configure(int, int);
+  public boolean read(java.nio.ByteBuffer) throws java.io.IOException;
+  public int get() throws java.lang.IllegalStateException;
+  public jdk.internal.net.http.hpack.IntegerReader reset();
+}

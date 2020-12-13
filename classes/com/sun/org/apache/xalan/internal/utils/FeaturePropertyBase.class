@@ -1,0 +1,17 @@
+Compiled from "FeaturePropertyBase.java"
+public abstract class com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase {
+  java.lang.String[] values;
+  com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase$State[] states;
+  public com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase();
+  public void setValue(java.lang.Enum<?>, com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase$State, java.lang.String);
+  public void setValue(int, com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase$State, java.lang.String);
+  public boolean setValue(java.lang.String, com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase$State, java.lang.Object);
+  public boolean setValue(java.lang.String, com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase$State, boolean);
+  public java.lang.String getValue(java.lang.Enum<?>);
+  public java.lang.String getValue(java.lang.String);
+  public java.lang.String getValueAsString(java.lang.String);
+  public java.lang.String getValueByIndex(int);
+  public abstract int getIndex(java.lang.String);
+  public <E extends java.lang.Enum<E>> int getIndex(java.lang.Class<E>, java.lang.String);
+  void getSystemProperty(java.lang.Enum<?>, java.lang.String);
+}

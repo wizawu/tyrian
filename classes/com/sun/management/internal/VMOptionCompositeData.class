@@ -1,0 +1,13 @@
+Compiled from "VMOptionCompositeData.java"
+public class com.sun.management.internal.VMOptionCompositeData extends sun.management.LazyCompositeData {
+  public com.sun.management.VMOption getVMOption();
+  public static javax.management.openmbean.CompositeData toCompositeData(com.sun.management.VMOption);
+  protected javax.management.openmbean.CompositeData getCompositeData();
+  static javax.management.openmbean.CompositeType getVMOptionCompositeType();
+  public static java.lang.String getName(javax.management.openmbean.CompositeData);
+  public static java.lang.String getValue(javax.management.openmbean.CompositeData);
+  public static com.sun.management.VMOption$Origin getOrigin(javax.management.openmbean.CompositeData);
+  public static boolean isWriteable(javax.management.openmbean.CompositeData);
+  public static void validateCompositeData(javax.management.openmbean.CompositeData);
+  static {};
+}

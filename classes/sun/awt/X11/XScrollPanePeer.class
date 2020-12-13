@@ -1,0 +1,46 @@
+Compiled from "XScrollPanePeer.java"
+class sun.awt.X11.XScrollPanePeer extends sun.awt.X11.XComponentPeer implements java.awt.peer.ScrollPanePeer,sun.awt.X11.XScrollbarClient {
+  public static final int MARGIN;
+  public static final int SCROLLBAR;
+  public static final int SPACE;
+  public static final int SCROLLBAR_INSET;
+  public static final int VERTICAL;
+  public static final int HORIZONTAL;
+  sun.awt.X11.XVerticalScrollbar vsb;
+  sun.awt.X11.XHorizontalScrollbar hsb;
+  sun.awt.X11.XWindow clip;
+  int active;
+  int hsbSpace;
+  int vsbSpace;
+  int vval;
+  int hval;
+  int vmax;
+  int hmax;
+  sun.awt.X11.XScrollPanePeer(java.awt.ScrollPane);
+  public long getContentWindow();
+  public void setBounds(int, int, int, int, int);
+  public java.awt.Insets getInsets();
+  public int getHScrollbarHeight();
+  public int getVScrollbarWidth();
+  public void childResized(int, int);
+  java.awt.Dimension getChildSize();
+  boolean setScrollbarSpace();
+  void setViewportSize();
+  public void setUnitIncrement(java.awt.Adjustable, int);
+  public void setValue(java.awt.Adjustable, int);
+  public void setScrollPosition(int, int);
+  void scroll(int, int, int);
+  void scroll(int, int, int, int);
+  void paintPeer(java.awt.Graphics);
+  void repaintScrollBars();
+  public void repaintScrollbarRequest(sun.awt.X11.XScrollbar);
+  public void handleEvent(java.awt.AWTEvent);
+  void paintHorScrollbar(java.awt.Graphics, java.awt.Color[], boolean);
+  void paintVerScrollbar(java.awt.Graphics, java.awt.Color[], boolean);
+  public void handleJavaMouseEvent(java.awt.event.MouseEvent);
+  public void notifyValue(sun.awt.X11.XScrollbar, int, int, boolean);
+  boolean inVerticalScrollbar(int, int);
+  boolean inHorizontalScrollbar(int, int);
+  public void print(java.awt.Graphics);
+  static {};
+}

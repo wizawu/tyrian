@@ -1,0 +1,22 @@
+Compiled from "DataInputStream.java"
+public class java.io.DataInputStream extends java.io.FilterInputStream implements java.io.DataInput {
+  public java.io.DataInputStream(java.io.InputStream);
+  public final int read(byte[]) throws java.io.IOException;
+  public final int read(byte[], int, int) throws java.io.IOException;
+  public final void readFully(byte[]) throws java.io.IOException;
+  public final void readFully(byte[], int, int) throws java.io.IOException;
+  public final int skipBytes(int) throws java.io.IOException;
+  public final boolean readBoolean() throws java.io.IOException;
+  public final byte readByte() throws java.io.IOException;
+  public final int readUnsignedByte() throws java.io.IOException;
+  public final short readShort() throws java.io.IOException;
+  public final int readUnsignedShort() throws java.io.IOException;
+  public final char readChar() throws java.io.IOException;
+  public final int readInt() throws java.io.IOException;
+  public final long readLong() throws java.io.IOException;
+  public final float readFloat() throws java.io.IOException;
+  public final double readDouble() throws java.io.IOException;
+  public final java.lang.String readLine() throws java.io.IOException;
+  public final java.lang.String readUTF() throws java.io.IOException;
+  public static final java.lang.String readUTF(java.io.DataInput) throws java.io.IOException;
+}

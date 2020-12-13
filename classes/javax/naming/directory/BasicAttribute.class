@@ -1,0 +1,29 @@
+Compiled from "BasicAttribute.java"
+public class javax.naming.directory.BasicAttribute implements javax.naming.directory.Attribute {
+  protected java.lang.String attrID;
+  protected transient java.util.Vector<java.lang.Object> values;
+  protected boolean ordered;
+  public java.lang.Object clone();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public javax.naming.directory.BasicAttribute(java.lang.String);
+  public javax.naming.directory.BasicAttribute(java.lang.String, java.lang.Object);
+  public javax.naming.directory.BasicAttribute(java.lang.String, boolean);
+  public javax.naming.directory.BasicAttribute(java.lang.String, java.lang.Object, boolean);
+  public javax.naming.NamingEnumeration<?> getAll() throws javax.naming.NamingException;
+  public java.lang.Object get() throws javax.naming.NamingException;
+  public int size();
+  public java.lang.String getID();
+  public boolean contains(java.lang.Object);
+  public boolean add(java.lang.Object);
+  public boolean remove(java.lang.Object);
+  public void clear();
+  public boolean isOrdered();
+  public java.lang.Object get(int) throws javax.naming.NamingException;
+  public java.lang.Object remove(int);
+  public void add(int, java.lang.Object);
+  public java.lang.Object set(int, java.lang.Object);
+  public javax.naming.directory.DirContext getAttributeSyntaxDefinition() throws javax.naming.NamingException;
+  public javax.naming.directory.DirContext getAttributeDefinition() throws javax.naming.NamingException;
+}

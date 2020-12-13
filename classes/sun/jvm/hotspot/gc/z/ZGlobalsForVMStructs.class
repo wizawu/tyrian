@@ -1,0 +1,11 @@
+Compiled from "ZGlobalsForVMStructs.java"
+class sun.jvm.hotspot.gc.z.ZGlobalsForVMStructs extends sun.jvm.hotspot.runtime.VMObject {
+  sun.jvm.hotspot.gc.z.ZGlobalsForVMStructs(sun.jvm.hotspot.debugger.Address);
+  int ZGlobalPhase();
+  long ZAddressGoodMask();
+  long ZAddressBadMask();
+  long ZAddressWeakBadMask();
+  int ZObjectAlignmentSmallShift();
+  int ZObjectAlignmentSmall();
+  static {};
+}

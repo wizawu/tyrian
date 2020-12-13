@@ -1,0 +1,8 @@
+Compiled from "Pair.java"
+public final class jdk.internal.net.http.common.Pair<T, U> {
+  public final T first;
+  public final U second;
+  public jdk.internal.net.http.common.Pair(T, U);
+  public static <T, U> jdk.internal.net.http.common.Pair<T, U> pair(T, U);
+  public java.lang.String toString();
+}

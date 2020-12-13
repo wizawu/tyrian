@@ -1,0 +1,13 @@
+Compiled from "BootstrapMethods.java"
+public class com.sun.org.apache.bcel.internal.classfile.BootstrapMethods extends com.sun.org.apache.bcel.internal.classfile.Attribute {
+  public com.sun.org.apache.bcel.internal.classfile.BootstrapMethods(com.sun.org.apache.bcel.internal.classfile.BootstrapMethods);
+  public com.sun.org.apache.bcel.internal.classfile.BootstrapMethods(int, int, com.sun.org.apache.bcel.internal.classfile.BootstrapMethod[], com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  com.sun.org.apache.bcel.internal.classfile.BootstrapMethods(int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
+  public final com.sun.org.apache.bcel.internal.classfile.BootstrapMethod[] getBootstrapMethods();
+  public final void setBootstrapMethods(com.sun.org.apache.bcel.internal.classfile.BootstrapMethod[]);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public com.sun.org.apache.bcel.internal.classfile.BootstrapMethods copy(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.classfile.Attribute copy(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+}

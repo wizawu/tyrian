@@ -1,0 +1,7 @@
+Compiled from "TimeConverter.java"
+final class jdk.jfr.consumer.TimeConverter {
+  jdk.jfr.consumer.TimeConverter(jdk.jfr.internal.consumer.ChunkHeader, int);
+  public long convertTimestamp(long);
+  public long convertTimespan(long);
+  public java.time.ZoneOffset getZoneOffset();
+}

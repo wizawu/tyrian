@@ -1,0 +1,15 @@
+Compiled from "PushPromiseFrame.java"
+public class jdk.internal.net.http.frame.PushPromiseFrame extends jdk.internal.net.http.frame.HeaderFrame {
+  public static final int TYPE;
+  public static final int END_HEADERS;
+  public static final int PADDED;
+  public jdk.internal.net.http.frame.PushPromiseFrame(int, int, int, java.util.List<java.nio.ByteBuffer>, int);
+  public int type();
+  int length();
+  public java.lang.String toString();
+  public java.lang.String flagAsString(int);
+  public void setPadLength(int);
+  public int getPadLength();
+  public int getPromisedStream();
+  public boolean endHeaders();
+}

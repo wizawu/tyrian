@@ -1,0 +1,13 @@
+Compiled from "EmptyBorder.java"
+public class javax.swing.border.EmptyBorder extends javax.swing.border.AbstractBorder implements java.io.Serializable {
+  protected int left;
+  protected int right;
+  protected int top;
+  protected int bottom;
+  public javax.swing.border.EmptyBorder(int, int, int, int);
+  public javax.swing.border.EmptyBorder(java.awt.Insets);
+  public void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
+  public java.awt.Insets getBorderInsets(java.awt.Component, java.awt.Insets);
+  public java.awt.Insets getBorderInsets();
+  public boolean isBorderOpaque();
+}

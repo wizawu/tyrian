@@ -1,0 +1,7 @@
+Compiled from "ModuleProvideNode.java"
+public class jdk.internal.org.objectweb.asm.tree.ModuleProvideNode {
+  public java.lang.String service;
+  public java.util.List<java.lang.String> providers;
+  public jdk.internal.org.objectweb.asm.tree.ModuleProvideNode(java.lang.String, java.util.List<java.lang.String>);
+  public void accept(jdk.internal.org.objectweb.asm.ModuleVisitor);
+}

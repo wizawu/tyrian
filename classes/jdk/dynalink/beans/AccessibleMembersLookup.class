@@ -1,0 +1,7 @@
+Compiled from "AccessibleMembersLookup.java"
+class jdk.dynalink.beans.AccessibleMembersLookup {
+  jdk.dynalink.beans.AccessibleMembersLookup(java.lang.Class<?>, boolean);
+  java.lang.reflect.Method getAccessibleMethod(java.lang.reflect.Method);
+  java.util.Collection<java.lang.reflect.Method> getMethods();
+  java.lang.Class<?>[] getInnerClasses();
+}

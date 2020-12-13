@@ -1,0 +1,4 @@
+Compiled from "VMNotification.java"
+public interface jdk.internal.misc.VMNotification {
+  public abstract void newAllocState(int, int, boolean);
+}

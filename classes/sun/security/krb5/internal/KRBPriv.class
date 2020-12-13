@@ -1,0 +1,10 @@
+Compiled from "KRBPriv.java"
+public class sun.security.krb5.internal.KRBPriv {
+  public int pvno;
+  public int msgType;
+  public sun.security.krb5.EncryptedData encPart;
+  public sun.security.krb5.internal.KRBPriv(sun.security.krb5.EncryptedData);
+  public sun.security.krb5.internal.KRBPriv(byte[]) throws sun.security.krb5.Asn1Exception, sun.security.krb5.internal.KrbApErrException, java.io.IOException;
+  public sun.security.krb5.internal.KRBPriv(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, sun.security.krb5.internal.KrbApErrException, java.io.IOException;
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+}

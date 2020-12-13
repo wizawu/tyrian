@@ -1,0 +1,8 @@
+Compiled from "Flags.java"
+public interface jdk.nashorn.internal.ir.Flags<T extends jdk.nashorn.internal.ir.LexicalContextNode> {
+  public abstract int getFlags();
+  public abstract boolean getFlag(int);
+  public abstract T clearFlag(jdk.nashorn.internal.ir.LexicalContext, int);
+  public abstract T setFlag(jdk.nashorn.internal.ir.LexicalContext, int);
+  public abstract T setFlags(jdk.nashorn.internal.ir.LexicalContext, int);
+}

@@ -1,0 +1,10 @@
+Compiled from "BoundKind.java"
+public final class com.sun.tools.javac.code.BoundKind extends java.lang.Enum<com.sun.tools.javac.code.BoundKind> {
+  public static final com.sun.tools.javac.code.BoundKind EXTENDS;
+  public static final com.sun.tools.javac.code.BoundKind SUPER;
+  public static final com.sun.tools.javac.code.BoundKind UNBOUND;
+  public static com.sun.tools.javac.code.BoundKind[] values();
+  public static com.sun.tools.javac.code.BoundKind valueOf(java.lang.String);
+  public java.lang.String toString();
+  static {};
+}

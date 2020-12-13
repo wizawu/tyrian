@@ -1,0 +1,7 @@
+Compiled from "StandardFileFormat.java"
+class com.sun.media.sound.StandardFileFormat extends javax.sound.sampled.AudioFileFormat {
+  com.sun.media.sound.StandardFileFormat(javax.sound.sampled.AudioFileFormat$Type, javax.sound.sampled.AudioFormat, long);
+  com.sun.media.sound.StandardFileFormat(javax.sound.sampled.AudioFileFormat$Type, long, javax.sound.sampled.AudioFormat, long);
+  public final long getLongFrameLength();
+  public final long getLongByteLength();
+}

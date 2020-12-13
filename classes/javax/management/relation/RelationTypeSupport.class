@@ -1,0 +1,12 @@
+Compiled from "RelationTypeSupport.java"
+public class javax.management.relation.RelationTypeSupport implements javax.management.relation.RelationType {
+  public javax.management.relation.RelationTypeSupport(java.lang.String, javax.management.relation.RoleInfo[]) throws java.lang.IllegalArgumentException, javax.management.relation.InvalidRelationTypeException;
+  protected javax.management.relation.RelationTypeSupport(java.lang.String);
+  public java.lang.String getRelationTypeName();
+  public java.util.List<javax.management.relation.RoleInfo> getRoleInfos();
+  public javax.management.relation.RoleInfo getRoleInfo(java.lang.String) throws java.lang.IllegalArgumentException, javax.management.relation.RoleInfoNotFoundException;
+  protected void addRoleInfo(javax.management.relation.RoleInfo) throws java.lang.IllegalArgumentException, javax.management.relation.InvalidRelationTypeException;
+  void setRelationServiceFlag(boolean);
+  static void checkRoleInfos(javax.management.relation.RoleInfo[]) throws java.lang.IllegalArgumentException, javax.management.relation.InvalidRelationTypeException;
+  static {};
+}

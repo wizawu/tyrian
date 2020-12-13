@@ -1,0 +1,19 @@
+Compiled from "Selector.java"
+public abstract class java.nio.channels.Selector implements java.io.Closeable {
+  static final boolean $assertionsDisabled;
+  protected java.nio.channels.Selector();
+  public static java.nio.channels.Selector open() throws java.io.IOException;
+  public abstract boolean isOpen();
+  public abstract java.nio.channels.spi.SelectorProvider provider();
+  public abstract java.util.Set<java.nio.channels.SelectionKey> keys();
+  public abstract java.util.Set<java.nio.channels.SelectionKey> selectedKeys();
+  public abstract int selectNow() throws java.io.IOException;
+  public abstract int select(long) throws java.io.IOException;
+  public abstract int select() throws java.io.IOException;
+  public int select(java.util.function.Consumer<java.nio.channels.SelectionKey>, long) throws java.io.IOException;
+  public int select(java.util.function.Consumer<java.nio.channels.SelectionKey>) throws java.io.IOException;
+  public int selectNow(java.util.function.Consumer<java.nio.channels.SelectionKey>) throws java.io.IOException;
+  public abstract java.nio.channels.Selector wakeup();
+  public abstract void close() throws java.io.IOException;
+  static {};
+}

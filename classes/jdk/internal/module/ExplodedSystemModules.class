@@ -1,0 +1,13 @@
+Compiled from "ExplodedSystemModules.java"
+class jdk.internal.module.ExplodedSystemModules implements jdk.internal.module.SystemModules {
+  jdk.internal.module.ExplodedSystemModules();
+  public boolean hasSplitPackages();
+  public boolean hasIncubatorModules();
+  public java.lang.module.ModuleDescriptor[] moduleDescriptors();
+  public jdk.internal.module.ModuleTarget[] moduleTargets();
+  public jdk.internal.module.ModuleHashes[] moduleHashes();
+  public jdk.internal.module.ModuleResolution[] moduleResolutions();
+  public java.util.Map<java.lang.String, java.util.Set<java.lang.String>> moduleReads();
+  public java.util.Map<java.lang.String, java.util.Set<java.lang.String>> concealedPackagesToOpen();
+  public java.util.Map<java.lang.String, java.util.Set<java.lang.String>> exportedPackagesToOpen();
+}

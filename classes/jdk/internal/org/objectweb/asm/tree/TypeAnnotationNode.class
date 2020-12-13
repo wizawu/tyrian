@@ -1,0 +1,7 @@
+Compiled from "TypeAnnotationNode.java"
+public class jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode extends jdk.internal.org.objectweb.asm.tree.AnnotationNode {
+  public int typeRef;
+  public jdk.internal.org.objectweb.asm.TypePath typePath;
+  public jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode(int, jdk.internal.org.objectweb.asm.TypePath, java.lang.String);
+  public jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode(int, int, jdk.internal.org.objectweb.asm.TypePath, java.lang.String);
+}

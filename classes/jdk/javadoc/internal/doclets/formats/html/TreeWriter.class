@@ -1,0 +1,9 @@
+Compiled from "TreeWriter.java"
+public class jdk.javadoc.internal.doclets.formats.html.TreeWriter extends jdk.javadoc.internal.doclets.formats.html.AbstractTreeWriter {
+  java.util.SortedSet<javax.lang.model.element.PackageElement> packages;
+  public jdk.javadoc.internal.doclets.formats.html.TreeWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath, jdk.javadoc.internal.doclets.toolkit.util.ClassTree);
+  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.ClassTree) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  public void generateTreeFile() throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void addPackageTreeLinks(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected jdk.javadoc.internal.doclets.formats.html.markup.HtmlTree getTreeHeader();
+}

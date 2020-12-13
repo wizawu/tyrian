@@ -1,0 +1,6 @@
+Compiled from "XSModelGroupDefinition.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSModelGroupDefinition extends com.sun.org.apache.xerces.internal.xs.XSObject {
+  public abstract com.sun.org.apache.xerces.internal.xs.XSModelGroup getModelGroup();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSAnnotation getAnnotation();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+}

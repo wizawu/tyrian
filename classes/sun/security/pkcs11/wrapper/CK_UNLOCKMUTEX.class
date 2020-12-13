@@ -1,0 +1,4 @@
+Compiled from "CK_UNLOCKMUTEX.java"
+public interface sun.security.pkcs11.wrapper.CK_UNLOCKMUTEX {
+  public abstract void CK_UNLOCKMUTEX(java.lang.Object) throws sun.security.pkcs11.wrapper.PKCS11Exception;
+}

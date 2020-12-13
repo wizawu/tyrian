@@ -1,0 +1,11 @@
+Compiled from "MultiResolutionToolkitImage.java"
+public class sun.awt.image.MultiResolutionToolkitImage extends sun.awt.image.ToolkitImage implements java.awt.image.MultiResolutionImage {
+  java.awt.Image resolutionVariant;
+  public sun.awt.image.MultiResolutionToolkitImage(java.awt.Image, java.awt.Image);
+  public java.awt.Image getResolutionVariant(double, double);
+  public static java.awt.Image map(sun.awt.image.MultiResolutionToolkitImage, java.util.function.Function<java.awt.Image, java.awt.Image>);
+  public java.awt.Image getResolutionVariant();
+  public java.util.List<java.awt.Image> getResolutionVariants();
+  public static java.awt.image.ImageObserver getResolutionVariantObserver(java.awt.Image, java.awt.image.ImageObserver, int, int, int, int);
+  public static java.awt.image.ImageObserver getResolutionVariantObserver(java.awt.Image, java.awt.image.ImageObserver, int, int, int, int, boolean);
+}

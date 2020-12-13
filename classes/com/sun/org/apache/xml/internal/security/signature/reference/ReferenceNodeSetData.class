@@ -1,0 +1,4 @@
+Compiled from "ReferenceNodeSetData.java"
+public interface com.sun.org.apache.xml.internal.security.signature.reference.ReferenceNodeSetData extends com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData {
+  public abstract java.util.Iterator<org.w3c.dom.Node> iterator();
+}

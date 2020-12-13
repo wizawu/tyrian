@@ -1,0 +1,5 @@
+Compiled from "BinaryEqualityExpression.java"
+public class sun.tools.tree.BinaryEqualityExpression extends sun.tools.tree.BinaryExpression {
+  public sun.tools.tree.BinaryEqualityExpression(int, long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  void selectType(sun.tools.java.Environment, sun.tools.tree.Context, int);
+}

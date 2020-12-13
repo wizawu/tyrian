@@ -1,0 +1,42 @@
+Compiled from "Renderer.java"
+final class sun.java2d.marlin.Renderer implements sun.awt.geom.PathConsumer2D,sun.java2d.marlin.MarlinRenderer {
+  static final boolean DISABLE_RENDER;
+  static final boolean ENABLE_BLOCK_FLAGS;
+  static final boolean ENABLE_BLOCK_FLAGS_HEURISTICS;
+  static final float SUBPIXEL_SCALE_X;
+  static final float SUBPIXEL_SCALE_Y;
+  static final int SUBPIXEL_MASK_X;
+  static final int SUBPIXEL_MASK_Y;
+  static final float RDR_OFFSET_X;
+  static final float RDR_OFFSET_Y;
+  static final int INITIAL_BUCKET_ARRAY;
+  static final int INITIAL_CROSSING_COUNT;
+  public static final long OFF_CURX_OR;
+  public static final long OFF_ERROR;
+  public static final long OFF_BUMP_X;
+  public static final long OFF_BUMP_ERR;
+  public static final long OFF_NEXT;
+  public static final long OFF_YMAX;
+  public static final int SIZEOF_EDGE_BYTES;
+  public static final float SCALE_DY;
+  public static final float CUB_DEC_BND;
+  public static final float CUB_INC_BND;
+  public static final int CUB_COUNT_LG;
+  public static final float QUAD_DEC_BND;
+  final sun.java2d.marlin.MarlinCache cache;
+  final sun.java2d.marlin.RendererContext rdrCtx;
+  sun.java2d.marlin.Renderer(sun.java2d.marlin.RendererContext);
+  sun.java2d.marlin.Renderer init(int, int, int, int, int);
+  void dispose();
+  public void moveTo(float, float);
+  public void lineTo(float, float);
+  public void curveTo(float, float, float, float, float, float);
+  public void quadTo(float, float, float, float);
+  public void closePath();
+  public void pathDone();
+  public long getNativeConsumer();
+  boolean endRendering();
+  void endRendering(int);
+  void copyAARow(int[], int, int, int, boolean);
+  static {};
+}

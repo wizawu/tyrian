@@ -1,0 +1,4 @@
+Compiled from "BreakTree.java"
+public interface com.sun.source.tree.BreakTree extends com.sun.source.tree.StatementTree {
+  public abstract javax.lang.model.element.Name getLabel();
+}

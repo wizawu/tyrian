@@ -1,0 +1,7 @@
+Compiled from "Rect.java"
+public interface org.w3c.dom.css.Rect {
+  public abstract org.w3c.dom.css.CSSPrimitiveValue getTop();
+  public abstract org.w3c.dom.css.CSSPrimitiveValue getRight();
+  public abstract org.w3c.dom.css.CSSPrimitiveValue getBottom();
+  public abstract org.w3c.dom.css.CSSPrimitiveValue getLeft();
+}

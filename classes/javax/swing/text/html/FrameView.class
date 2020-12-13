@@ -1,0 +1,19 @@
+Compiled from "FrameView.java"
+class javax.swing.text.html.FrameView extends javax.swing.text.ComponentView implements javax.swing.event.HyperlinkListener {
+  javax.swing.JEditorPane htmlPane;
+  javax.swing.JScrollPane scroller;
+  boolean editable;
+  float width;
+  float height;
+  java.net.URL src;
+  public javax.swing.text.html.FrameView(javax.swing.text.Element);
+  protected java.awt.Component createComponent();
+  javax.swing.JEditorPane getHostPane();
+  public void setParent(javax.swing.text.View);
+  public void paint(java.awt.Graphics, java.awt.Shape);
+  javax.swing.JEditorPane getOutermostJEditorPane();
+  public void hyperlinkUpdate(javax.swing.event.HyperlinkEvent);
+  public void changedUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  public float getMinimumSpan(int);
+  public float getMaximumSpan(int);
+}

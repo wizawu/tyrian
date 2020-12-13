@@ -1,0 +1,12 @@
+Compiled from "MotifToggleButtonUI.java"
+public class com.sun.java.swing.plaf.motif.MotifToggleButtonUI extends javax.swing.plaf.basic.BasicToggleButtonUI {
+  protected java.awt.Color selectColor;
+  public com.sun.java.swing.plaf.motif.MotifToggleButtonUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installDefaults(javax.swing.AbstractButton);
+  protected void uninstallDefaults(javax.swing.AbstractButton);
+  protected java.awt.Color getSelectColor();
+  protected void paintButtonPressed(java.awt.Graphics, javax.swing.AbstractButton);
+  public java.awt.Insets getInsets(javax.swing.JComponent);
+  static {};
+}

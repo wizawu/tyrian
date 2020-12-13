@@ -1,0 +1,12 @@
+Compiled from "I18n.java"
+public class com.sun.org.apache.xml.internal.security.utils.I18n {
+  public static final java.lang.String NOT_INITIALIZED_MSG;
+  public static java.lang.String translate(java.lang.String, java.lang.Object[]);
+  public static java.lang.String translate(java.lang.String);
+  public static java.lang.String getExceptionMessage(java.lang.String);
+  public static java.lang.String getExceptionMessage(java.lang.String, java.lang.Exception);
+  public static java.lang.String getExceptionMessage(java.lang.String, java.lang.Object[]);
+  public static synchronized void init(java.lang.String, java.lang.String);
+  public static synchronized void init(java.util.ResourceBundle);
+  static {};
+}

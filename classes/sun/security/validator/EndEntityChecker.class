@@ -1,0 +1,6 @@
+Compiled from "EndEntityChecker.java"
+class sun.security.validator.EndEntityChecker {
+  static sun.security.validator.EndEntityChecker getInstance(java.lang.String, java.lang.String);
+  void check(java.security.cert.X509Certificate[], java.lang.Object, boolean) throws java.security.cert.CertificateException;
+  static {};
+}

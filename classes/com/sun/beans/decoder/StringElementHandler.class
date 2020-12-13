@@ -1,0 +1,8 @@
+Compiled from "StringElementHandler.java"
+public class com.sun.beans.decoder.StringElementHandler extends com.sun.beans.decoder.ElementHandler {
+  public com.sun.beans.decoder.StringElementHandler();
+  public final void addCharacter(char);
+  protected final void addArgument(java.lang.Object);
+  protected final com.sun.beans.decoder.ValueObject getValueObject();
+  protected java.lang.Object getValue(java.lang.String);
+}

@@ -1,0 +1,22 @@
+Compiled from "ValueDescriptor.java"
+public final class jdk.jfr.ValueDescriptor {
+  jdk.jfr.ValueDescriptor(jdk.jfr.internal.Type, java.lang.String, java.util.List<jdk.jfr.AnnotationElement>, int, boolean, java.lang.String);
+  public jdk.jfr.ValueDescriptor(java.lang.Class<?>, java.lang.String);
+  public jdk.jfr.ValueDescriptor(java.lang.Class<?>, java.lang.String, java.util.List<jdk.jfr.AnnotationElement>);
+  jdk.jfr.ValueDescriptor(java.lang.Class<?>, java.lang.String, java.util.List<jdk.jfr.AnnotationElement>, boolean);
+  public java.lang.String getLabel();
+  public java.lang.String getName();
+  public java.lang.String getDescription();
+  public java.lang.String getContentType();
+  public java.lang.String getTypeName();
+  public long getTypeId();
+  public boolean isArray();
+  public <A extends java.lang.annotation.Annotation> A getAnnotation(java.lang.Class<A>);
+  public java.util.List<jdk.jfr.AnnotationElement> getAnnotationElements();
+  public java.util.List<jdk.jfr.ValueDescriptor> getFields();
+  jdk.jfr.internal.Type getType();
+  void setAnnotations(java.util.List<jdk.jfr.AnnotationElement>);
+  boolean isConstantPool();
+  java.lang.String getJavaFieldName();
+  boolean isUnsigned();
+}

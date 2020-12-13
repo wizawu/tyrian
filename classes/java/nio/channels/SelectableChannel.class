@@ -1,0 +1,13 @@
+Compiled from "SelectableChannel.java"
+public abstract class java.nio.channels.SelectableChannel extends java.nio.channels.spi.AbstractInterruptibleChannel implements java.nio.channels.Channel {
+  protected java.nio.channels.SelectableChannel();
+  public abstract java.nio.channels.spi.SelectorProvider provider();
+  public abstract int validOps();
+  public abstract boolean isRegistered();
+  public abstract java.nio.channels.SelectionKey keyFor(java.nio.channels.Selector);
+  public abstract java.nio.channels.SelectionKey register(java.nio.channels.Selector, int, java.lang.Object) throws java.nio.channels.ClosedChannelException;
+  public final java.nio.channels.SelectionKey register(java.nio.channels.Selector, int) throws java.nio.channels.ClosedChannelException;
+  public abstract java.nio.channels.SelectableChannel configureBlocking(boolean) throws java.io.IOException;
+  public abstract boolean isBlocking();
+  public abstract java.lang.Object blockingLock();
+}

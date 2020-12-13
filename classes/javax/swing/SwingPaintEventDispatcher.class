@@ -1,0 +1,8 @@
+Compiled from "SwingPaintEventDispatcher.java"
+class javax.swing.SwingPaintEventDispatcher extends sun.awt.PaintEventDispatcher {
+  javax.swing.SwingPaintEventDispatcher();
+  public java.awt.event.PaintEvent createPaintEvent(java.awt.Component, int, int, int, int);
+  public boolean shouldDoNativeBackgroundErase(java.awt.Component);
+  public boolean queueSurfaceDataReplacing(java.awt.Component, java.lang.Runnable);
+  static {};
+}

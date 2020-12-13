@@ -1,0 +1,7 @@
+Compiled from "RowId.java"
+public interface java.sql.RowId {
+  public abstract boolean equals(java.lang.Object);
+  public abstract byte[] getBytes();
+  public abstract java.lang.String toString();
+  public abstract int hashCode();
+}

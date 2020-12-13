@@ -1,0 +1,29 @@
+Compiled from "ChronoLocalDateImpl.java"
+abstract class java.time.chrono.ChronoLocalDateImpl<D extends java.time.chrono.ChronoLocalDate> implements java.time.chrono.ChronoLocalDate, java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.io.Serializable {
+  static <D extends java.time.chrono.ChronoLocalDate> D ensureValid(java.time.chrono.Chronology, java.time.temporal.Temporal);
+  java.time.chrono.ChronoLocalDateImpl();
+  public D with(java.time.temporal.TemporalAdjuster);
+  public D with(java.time.temporal.TemporalField, long);
+  public D plus(java.time.temporal.TemporalAmount);
+  public D plus(long, java.time.temporal.TemporalUnit);
+  public D minus(java.time.temporal.TemporalAmount);
+  public D minus(long, java.time.temporal.TemporalUnit);
+  abstract D plusYears(long);
+  abstract D plusMonths(long);
+  D plusWeeks(long);
+  abstract D plusDays(long);
+  D minusYears(long);
+  D minusMonths(long);
+  D minusWeeks(long);
+  D minusDays(long);
+  public long until(java.time.temporal.Temporal, java.time.temporal.TemporalUnit);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public java.time.temporal.Temporal minus(long, java.time.temporal.TemporalUnit);
+  public java.time.temporal.Temporal minus(java.time.temporal.TemporalAmount);
+  public java.time.temporal.Temporal plus(long, java.time.temporal.TemporalUnit);
+  public java.time.temporal.Temporal plus(java.time.temporal.TemporalAmount);
+  public java.time.temporal.Temporal with(java.time.temporal.TemporalField, long);
+  public java.time.temporal.Temporal with(java.time.temporal.TemporalAdjuster);
+}

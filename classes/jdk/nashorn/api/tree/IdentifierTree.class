@@ -1,0 +1,10 @@
+Compiled from "IdentifierTree.java"
+public interface jdk.nashorn.api.tree.IdentifierTree extends jdk.nashorn.api.tree.ExpressionTree {
+  public abstract java.lang.String getName();
+  public abstract boolean isRestParameter();
+  public abstract boolean isSuper();
+  public abstract boolean isThis();
+  public abstract boolean isStar();
+  public abstract boolean isDefault();
+  public abstract boolean isStarDefaultStar();
+}

@@ -1,0 +1,13 @@
+Compiled from "BasicField.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicField implements sun.jvm.hotspot.debugger.cdbg.Field {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicField(java.lang.String, sun.jvm.hotspot.debugger.cdbg.Type, int, boolean);
+  public int getAccessControl();
+  public java.lang.String getName();
+  public sun.jvm.hotspot.debugger.cdbg.Type getType();
+  public boolean isStatic();
+  public void setOffset(long);
+  public long getOffset();
+  public void setAddress(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address getAddress();
+  public void resolveTypes(sun.jvm.hotspot.debugger.cdbg.Type, sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
+}

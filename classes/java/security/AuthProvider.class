@@ -1,0 +1,8 @@
+Compiled from "AuthProvider.java"
+public abstract class java.security.AuthProvider extends java.security.Provider {
+  protected java.security.AuthProvider(java.lang.String, double, java.lang.String);
+  protected java.security.AuthProvider(java.lang.String, java.lang.String, java.lang.String);
+  public abstract void login(javax.security.auth.Subject, javax.security.auth.callback.CallbackHandler) throws javax.security.auth.login.LoginException;
+  public abstract void logout() throws javax.security.auth.login.LoginException;
+  public abstract void setCallbackHandler(javax.security.auth.callback.CallbackHandler);
+}

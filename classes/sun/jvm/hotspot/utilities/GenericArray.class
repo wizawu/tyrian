@@ -1,0 +1,11 @@
+Compiled from "GenericArray.java"
+public abstract class sun.jvm.hotspot.utilities.GenericArray extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.utilities.GenericArray(sun.jvm.hotspot.debugger.Address, long);
+  public int length();
+  public int getLength();
+  protected long getIntegerAt(int);
+  protected sun.jvm.hotspot.debugger.Address getAddressAt(int);
+  public long getSize();
+  public abstract sun.jvm.hotspot.types.Type getElemType();
+  static {};
+}

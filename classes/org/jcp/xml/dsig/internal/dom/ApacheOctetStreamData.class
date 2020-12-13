@@ -1,0 +1,5 @@
+Compiled from "ApacheOctetStreamData.java"
+public class org.jcp.xml.dsig.internal.dom.ApacheOctetStreamData extends javax.xml.crypto.OctetStreamData implements org.jcp.xml.dsig.internal.dom.ApacheData {
+  public org.jcp.xml.dsig.internal.dom.ApacheOctetStreamData(com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, java.io.IOException;
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput getXMLSignatureInput();
+}

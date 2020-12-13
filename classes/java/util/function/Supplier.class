@@ -1,0 +1,4 @@
+Compiled from "Supplier.java"
+public interface java.util.function.Supplier<T> {
+  public abstract T get();
+}

@@ -1,0 +1,16 @@
+Compiled from "InputLexer.java"
+public class sun.jvm.hotspot.debugger.InputLexer {
+  public sun.jvm.hotspot.debugger.InputLexer(java.io.BufferedInputStream) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public boolean parseBoolean() throws java.io.IOException;
+  public int parseInt() throws java.io.IOException;
+  public long parseLong() throws java.io.IOException;
+  public long parseAddress() throws java.io.IOException;
+  public void skipByte() throws java.io.IOException;
+  public byte readByte() throws java.io.IOException;
+  public void readBytes(byte[], int, int) throws java.io.IOException;
+  public char readChar() throws java.io.IOException;
+  public long readUnsignedInt() throws java.io.IOException;
+  public java.lang.String readByteString(int) throws java.io.IOException;
+  public java.lang.String readCharString(int) throws java.io.IOException;
+}

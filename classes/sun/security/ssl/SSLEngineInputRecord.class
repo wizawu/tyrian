@@ -1,0 +1,7 @@
+Compiled from "SSLEngineInputRecord.java"
+final class sun.security.ssl.SSLEngineInputRecord extends sun.security.ssl.InputRecord implements sun.security.ssl.SSLRecord {
+  sun.security.ssl.SSLEngineInputRecord(sun.security.ssl.HandshakeHash);
+  int estimateFragmentSize(int);
+  int bytesInCompletePacket(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  sun.security.ssl.Plaintext[] decode(java.nio.ByteBuffer[], int, int) throws java.io.IOException, javax.crypto.BadPaddingException;
+}

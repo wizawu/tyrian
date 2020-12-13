@@ -1,0 +1,7 @@
+Compiled from "PerfStringConstantMonitor.java"
+public class sun.jvmstat.perfdata.monitor.PerfStringConstantMonitor extends sun.jvmstat.perfdata.monitor.PerfStringMonitor {
+  java.lang.String data;
+  public sun.jvmstat.perfdata.monitor.PerfStringConstantMonitor(java.lang.String, boolean, java.nio.ByteBuffer);
+  public java.lang.Object getValue();
+  public java.lang.String stringValue();
+}

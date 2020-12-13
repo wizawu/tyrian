@@ -1,0 +1,10 @@
+Compiled from "PlatformSupport.java"
+public class sun.jvmstat.PlatformSupport {
+  public static sun.jvmstat.PlatformSupport getInstance();
+  sun.jvmstat.PlatformSupport();
+  public static java.lang.String getTemporaryDirectory();
+  public java.util.List<java.lang.String> getTemporaryDirectories(int);
+  public int getLocalVmId(java.io.File) throws java.lang.NumberFormatException;
+  public int getNamespaceVmId(int);
+  static {};
+}

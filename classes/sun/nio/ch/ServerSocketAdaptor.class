@@ -1,0 +1,22 @@
+Compiled from "ServerSocketAdaptor.java"
+class sun.nio.ch.ServerSocketAdaptor extends java.net.ServerSocket {
+  static final boolean $assertionsDisabled;
+  public static java.net.ServerSocket create(sun.nio.ch.ServerSocketChannelImpl);
+  public void bind(java.net.SocketAddress) throws java.io.IOException;
+  public void bind(java.net.SocketAddress, int) throws java.io.IOException;
+  public java.net.InetAddress getInetAddress();
+  public int getLocalPort();
+  public java.net.Socket accept() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public java.nio.channels.ServerSocketChannel getChannel();
+  public boolean isBound();
+  public boolean isClosed();
+  public void setSoTimeout(int) throws java.net.SocketException;
+  public int getSoTimeout() throws java.net.SocketException;
+  public void setReuseAddress(boolean) throws java.net.SocketException;
+  public boolean getReuseAddress() throws java.net.SocketException;
+  public java.lang.String toString();
+  public void setReceiveBufferSize(int) throws java.net.SocketException;
+  public int getReceiveBufferSize() throws java.net.SocketException;
+  static {};
+}

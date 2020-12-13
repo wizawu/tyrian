@@ -1,0 +1,10 @@
+Compiled from "LoadObject.java"
+public interface sun.jvm.hotspot.debugger.cdbg.LoadObject {
+  public abstract sun.jvm.hotspot.debugger.Address getBase();
+  public abstract java.lang.String getName();
+  public abstract long getSize();
+  public abstract sun.jvm.hotspot.debugger.cdbg.CDebugInfoDataBase getDebugInfoDataBase() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.cdbg.BlockSym debugInfoForPC(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.cdbg.ClosestSymbol closestSymbolToPC(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.cdbg.LineNumberInfo lineNumberForPC(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+}

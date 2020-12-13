@@ -1,0 +1,6 @@
+Compiled from "NTSidDomainPrincipal.java"
+public class com.sun.security.auth.NTSidDomainPrincipal extends com.sun.security.auth.NTSid {
+  public com.sun.security.auth.NTSidDomainPrincipal(java.lang.String);
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+}

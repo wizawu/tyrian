@@ -1,0 +1,24 @@
+Compiled from "BitSet.java"
+public final class jdk.nashorn.internal.runtime.regexp.joni.BitSet {
+  static final int BITS_PER_BYTE;
+  public static final int SINGLE_BYTE_SIZE;
+  static final int BITSET_SIZE;
+  static final int ROOM_SHIFT;
+  final int[] bits;
+  public jdk.nashorn.internal.runtime.regexp.joni.BitSet();
+  public java.lang.String toString();
+  public boolean at(int);
+  public void set(int);
+  public void clear(int);
+  public void clear();
+  public boolean isEmpty();
+  public void setRange(int, int);
+  public void invert();
+  public void invertTo(jdk.nashorn.internal.runtime.regexp.joni.BitSet);
+  public void and(jdk.nashorn.internal.runtime.regexp.joni.BitSet);
+  public void or(jdk.nashorn.internal.runtime.regexp.joni.BitSet);
+  public void copy(jdk.nashorn.internal.runtime.regexp.joni.BitSet);
+  public int numOn();
+  static int bit(int);
+  static {};
+}

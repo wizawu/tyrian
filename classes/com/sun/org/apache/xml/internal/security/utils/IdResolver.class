@@ -1,0 +1,5 @@
+Compiled from "IdResolver.java"
+public class com.sun.org.apache.xml.internal.security.utils.IdResolver {
+  public static void registerElementById(org.w3c.dom.Element, org.w3c.dom.Attr);
+  public static org.w3c.dom.Element getElementById(org.w3c.dom.Document, java.lang.String);
+}

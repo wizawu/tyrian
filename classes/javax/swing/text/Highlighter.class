@@ -1,0 +1,11 @@
+Compiled from "Highlighter.java"
+public interface javax.swing.text.Highlighter {
+  public abstract void install(javax.swing.text.JTextComponent);
+  public abstract void deinstall(javax.swing.text.JTextComponent);
+  public abstract void paint(java.awt.Graphics);
+  public abstract java.lang.Object addHighlight(int, int, javax.swing.text.Highlighter$HighlightPainter) throws javax.swing.text.BadLocationException;
+  public abstract void removeHighlight(java.lang.Object);
+  public abstract void removeAllHighlights();
+  public abstract void changeHighlight(java.lang.Object, int, int) throws javax.swing.text.BadLocationException;
+  public abstract javax.swing.text.Highlighter$Highlight[] getHighlights();
+}

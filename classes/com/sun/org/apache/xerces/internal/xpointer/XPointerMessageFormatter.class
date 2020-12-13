@@ -1,0 +1,6 @@
+Compiled from "XPointerMessageFormatter.java"
+final class com.sun.org.apache.xerces.internal.xpointer.XPointerMessageFormatter implements com.sun.org.apache.xerces.internal.util.MessageFormatter {
+  public static final java.lang.String XPOINTER_DOMAIN;
+  com.sun.org.apache.xerces.internal.xpointer.XPointerMessageFormatter();
+  public java.lang.String formatMessage(java.util.Locale, java.lang.String, java.lang.Object[]) throws java.util.MissingResourceException;
+}

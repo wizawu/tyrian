@@ -1,0 +1,7 @@
+Compiled from "JVMDIClassStatus.java"
+public interface sun.jvm.hotspot.oops.JVMDIClassStatus {
+  public static final int VERIFIED;
+  public static final int PREPARED;
+  public static final int INITIALIZED;
+  public static final int ERROR;
+}

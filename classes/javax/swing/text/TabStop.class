@@ -1,0 +1,22 @@
+Compiled from "TabStop.java"
+public class javax.swing.text.TabStop implements java.io.Serializable {
+  public static final int ALIGN_LEFT;
+  public static final int ALIGN_RIGHT;
+  public static final int ALIGN_CENTER;
+  public static final int ALIGN_DECIMAL;
+  public static final int ALIGN_BAR;
+  public static final int LEAD_NONE;
+  public static final int LEAD_DOTS;
+  public static final int LEAD_HYPHENS;
+  public static final int LEAD_UNDERLINE;
+  public static final int LEAD_THICKLINE;
+  public static final int LEAD_EQUALS;
+  public javax.swing.text.TabStop(float);
+  public javax.swing.text.TabStop(float, int, int);
+  public float getPosition();
+  public int getAlignment();
+  public int getLeader();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

@@ -1,0 +1,12 @@
+Compiled from "TableModel.java"
+public interface javax.swing.table.TableModel {
+  public abstract int getRowCount();
+  public abstract int getColumnCount();
+  public abstract java.lang.String getColumnName(int);
+  public abstract java.lang.Class<?> getColumnClass(int);
+  public abstract boolean isCellEditable(int, int);
+  public abstract java.lang.Object getValueAt(int, int);
+  public abstract void setValueAt(java.lang.Object, int, int);
+  public abstract void addTableModelListener(javax.swing.event.TableModelListener);
+  public abstract void removeTableModelListener(javax.swing.event.TableModelListener);
+}

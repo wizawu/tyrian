@@ -1,0 +1,16 @@
+Compiled from "Striped64.java"
+abstract class java.util.concurrent.atomic.Striped64 extends java.lang.Number {
+  static final int NCPU;
+  volatile transient java.util.concurrent.atomic.Striped64$Cell[] cells;
+  volatile transient long base;
+  volatile transient int cellsBusy;
+  java.util.concurrent.atomic.Striped64();
+  final boolean casBase(long, long);
+  final long getAndSetBase(long);
+  final boolean casCellsBusy();
+  static final int getProbe();
+  static final int advanceProbe(int);
+  final void longAccumulate(long, java.util.function.LongBinaryOperator, boolean);
+  final void doubleAccumulate(double, java.util.function.DoubleBinaryOperator, boolean);
+  static {};
+}

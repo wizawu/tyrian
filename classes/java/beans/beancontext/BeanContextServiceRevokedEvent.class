@@ -1,0 +1,9 @@
+Compiled from "BeanContextServiceRevokedEvent.java"
+public class java.beans.beancontext.BeanContextServiceRevokedEvent extends java.beans.beancontext.BeanContextEvent {
+  protected java.lang.Class<?> serviceClass;
+  public java.beans.beancontext.BeanContextServiceRevokedEvent(java.beans.beancontext.BeanContextServices, java.lang.Class<?>, boolean);
+  public java.beans.beancontext.BeanContextServices getSourceAsBeanContextServices();
+  public java.lang.Class<?> getServiceClass();
+  public boolean isServiceClass(java.lang.Class<?>);
+  public boolean isCurrentServiceInvalidNow();
+}

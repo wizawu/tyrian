@@ -1,0 +1,5 @@
+Compiled from "NetworkPermission.java"
+public final class jdk.net.NetworkPermission extends java.security.BasicPermission {
+  public jdk.net.NetworkPermission(java.lang.String);
+  public jdk.net.NetworkPermission(java.lang.String, java.lang.String);
+}

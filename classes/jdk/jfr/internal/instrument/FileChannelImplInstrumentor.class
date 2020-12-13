@@ -1,0 +1,10 @@
+Compiled from "FileChannelImplInstrumentor.java"
+final class jdk.jfr.internal.instrument.FileChannelImplInstrumentor {
+  public void force(boolean) throws java.io.IOException;
+  public int read(java.nio.ByteBuffer) throws java.io.IOException;
+  public int read(java.nio.ByteBuffer, long) throws java.io.IOException;
+  public long read(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  public int write(java.nio.ByteBuffer) throws java.io.IOException;
+  public int write(java.nio.ByteBuffer, long) throws java.io.IOException;
+  public long write(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+}

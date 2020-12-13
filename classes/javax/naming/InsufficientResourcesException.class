@@ -1,0 +1,5 @@
+Compiled from "InsufficientResourcesException.java"
+public class javax.naming.InsufficientResourcesException extends javax.naming.NamingException {
+  public javax.naming.InsufficientResourcesException(java.lang.String);
+  public javax.naming.InsufficientResourcesException();
+}

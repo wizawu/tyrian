@@ -1,0 +1,6 @@
+Compiled from "MONITORENTER.java"
+public class com.sun.org.apache.bcel.internal.generic.MONITORENTER extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.ExceptionThrower,com.sun.org.apache.bcel.internal.generic.StackConsumer {
+  public com.sun.org.apache.bcel.internal.generic.MONITORENTER();
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

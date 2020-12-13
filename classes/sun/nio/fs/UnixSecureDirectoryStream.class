@@ -1,0 +1,19 @@
+Compiled from "UnixSecureDirectoryStream.java"
+class sun.nio.fs.UnixSecureDirectoryStream implements java.nio.file.SecureDirectoryStream<java.nio.file.Path> {
+  sun.nio.fs.UnixSecureDirectoryStream(sun.nio.fs.UnixPath, long, int, java.nio.file.DirectoryStream$Filter<? super java.nio.file.Path>);
+  public void close() throws java.io.IOException;
+  public java.util.Iterator<java.nio.file.Path> iterator();
+  public java.nio.file.SecureDirectoryStream<java.nio.file.Path> newDirectoryStream(java.nio.file.Path, java.nio.file.LinkOption...) throws java.io.IOException;
+  public java.nio.channels.SeekableByteChannel newByteChannel(java.nio.file.Path, java.util.Set<? extends java.nio.file.OpenOption>, java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException;
+  public void deleteFile(java.nio.file.Path) throws java.io.IOException;
+  public void deleteDirectory(java.nio.file.Path) throws java.io.IOException;
+  public void move(java.nio.file.Path, java.nio.file.SecureDirectoryStream<java.nio.file.Path>, java.nio.file.Path) throws java.io.IOException;
+  public <V extends java.nio.file.attribute.FileAttributeView> V getFileAttributeView(java.lang.Class<V>);
+  public <V extends java.nio.file.attribute.FileAttributeView> V getFileAttributeView(java.nio.file.Path, java.lang.Class<V>, java.nio.file.LinkOption...);
+  public java.nio.file.attribute.FileAttributeView getFileAttributeView(java.lang.Object, java.lang.Class, java.nio.file.LinkOption[]);
+  public void move(java.lang.Object, java.nio.file.SecureDirectoryStream, java.lang.Object) throws java.io.IOException;
+  public void deleteDirectory(java.lang.Object) throws java.io.IOException;
+  public void deleteFile(java.lang.Object) throws java.io.IOException;
+  public java.nio.channels.SeekableByteChannel newByteChannel(java.lang.Object, java.util.Set, java.nio.file.attribute.FileAttribute[]) throws java.io.IOException;
+  public java.nio.file.SecureDirectoryStream newDirectoryStream(java.lang.Object, java.nio.file.LinkOption[]) throws java.io.IOException;
+}

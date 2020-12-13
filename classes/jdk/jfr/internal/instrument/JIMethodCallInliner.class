@@ -1,0 +1,7 @@
+Compiled from "JIMethodCallInliner.java"
+final class jdk.jfr.internal.instrument.JIMethodCallInliner extends jdk.internal.org.objectweb.asm.commons.LocalVariablesSorter {
+  public jdk.jfr.internal.instrument.JIMethodCallInliner(int, java.lang.String, jdk.internal.org.objectweb.asm.MethodVisitor, jdk.internal.org.objectweb.asm.tree.MethodNode, java.lang.String, java.lang.String);
+  public void visitMethodInsn(int, java.lang.String, java.lang.String, java.lang.String, boolean);
+  public void visitTryCatchBlock(jdk.internal.org.objectweb.asm.Label, jdk.internal.org.objectweb.asm.Label, jdk.internal.org.objectweb.asm.Label, java.lang.String);
+  public void visitMaxs(int, int);
+}

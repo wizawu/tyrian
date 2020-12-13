@@ -1,0 +1,6 @@
+Compiled from "XSDAttributeGroupTraverser.java"
+class com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeGroupTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
+  com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeGroupTraverser(com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker);
+  com.sun.org.apache.xerces.internal.impl.xs.XSAttributeGroupDecl traverseLocal(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
+  com.sun.org.apache.xerces.internal.impl.xs.XSAttributeGroupDecl traverseGlobal(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
+}

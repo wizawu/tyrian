@@ -1,0 +1,18 @@
+Compiled from "Remapper.java"
+public abstract class jdk.internal.org.objectweb.asm.commons.Remapper {
+  public jdk.internal.org.objectweb.asm.commons.Remapper();
+  public java.lang.String mapDesc(java.lang.String);
+  public java.lang.String mapType(java.lang.String);
+  public java.lang.String[] mapTypes(java.lang.String[]);
+  public java.lang.String mapMethodDesc(java.lang.String);
+  public java.lang.Object mapValue(java.lang.Object);
+  public java.lang.String mapSignature(java.lang.String, boolean);
+  protected jdk.internal.org.objectweb.asm.signature.SignatureVisitor createRemappingSignatureAdapter(jdk.internal.org.objectweb.asm.signature.SignatureVisitor);
+  protected jdk.internal.org.objectweb.asm.signature.SignatureVisitor createSignatureRemapper(jdk.internal.org.objectweb.asm.signature.SignatureVisitor);
+  public java.lang.String mapMethodName(java.lang.String, java.lang.String, java.lang.String);
+  public java.lang.String mapInvokeDynamicMethodName(java.lang.String, java.lang.String);
+  public java.lang.String mapFieldName(java.lang.String, java.lang.String, java.lang.String);
+  public java.lang.String mapPackageName(java.lang.String);
+  public java.lang.String mapModuleName(java.lang.String);
+  public java.lang.String map(java.lang.String);
+}

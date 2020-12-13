@@ -1,0 +1,10 @@
+Compiled from "FcFontManager.java"
+public class sun.awt.FcFontManager extends sun.font.SunFontManager {
+  public sun.awt.FcFontManager();
+  public synchronized sun.font.FontConfigManager getFontConfigManager();
+  protected sun.awt.FontConfiguration createFontConfiguration();
+  public sun.awt.FontConfiguration createFontConfiguration(boolean, boolean);
+  protected java.lang.String[] getDefaultPlatformFont();
+  native java.lang.String getFontPathNative(boolean, boolean);
+  protected synchronized java.lang.String getFontPath(boolean);
+}

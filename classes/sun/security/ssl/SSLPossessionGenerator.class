@@ -1,0 +1,4 @@
+Compiled from "SSLPossessionGenerator.java"
+interface sun.security.ssl.SSLPossessionGenerator {
+  public abstract sun.security.ssl.SSLPossession createPossession(sun.security.ssl.HandshakeContext);
+}

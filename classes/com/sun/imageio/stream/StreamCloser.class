@@ -1,0 +1,7 @@
+Compiled from "StreamCloser.java"
+public class com.sun.imageio.stream.StreamCloser {
+  public com.sun.imageio.stream.StreamCloser();
+  public static void addToQueue(com.sun.imageio.stream.StreamCloser$CloseAction);
+  public static void removeFromQueue(com.sun.imageio.stream.StreamCloser$CloseAction);
+  public static com.sun.imageio.stream.StreamCloser$CloseAction createCloseAction(javax.imageio.stream.ImageInputStream);
+}

@@ -1,0 +1,13 @@
+Compiled from "XMLEventWriterImpl.java"
+public class com.sun.xml.internal.stream.writers.XMLEventWriterImpl implements javax.xml.stream.XMLEventWriter {
+  public com.sun.xml.internal.stream.writers.XMLEventWriterImpl(javax.xml.stream.XMLStreamWriter);
+  public void add(javax.xml.stream.XMLEventReader) throws javax.xml.stream.XMLStreamException;
+  public void add(javax.xml.stream.events.XMLEvent) throws javax.xml.stream.XMLStreamException;
+  public void close() throws javax.xml.stream.XMLStreamException;
+  public void flush() throws javax.xml.stream.XMLStreamException;
+  public javax.xml.namespace.NamespaceContext getNamespaceContext();
+  public java.lang.String getPrefix(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void setDefaultNamespace(java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public void setNamespaceContext(javax.xml.namespace.NamespaceContext) throws javax.xml.stream.XMLStreamException;
+  public void setPrefix(java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+}

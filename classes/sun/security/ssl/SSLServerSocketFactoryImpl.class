@@ -1,0 +1,11 @@
+Compiled from "SSLServerSocketFactoryImpl.java"
+public final class sun.security.ssl.SSLServerSocketFactoryImpl extends javax.net.ssl.SSLServerSocketFactory {
+  public sun.security.ssl.SSLServerSocketFactoryImpl() throws java.lang.Exception;
+  sun.security.ssl.SSLServerSocketFactoryImpl(sun.security.ssl.SSLContextImpl);
+  public java.net.ServerSocket createServerSocket() throws java.io.IOException;
+  public java.net.ServerSocket createServerSocket(int) throws java.io.IOException;
+  public java.net.ServerSocket createServerSocket(int, int) throws java.io.IOException;
+  public java.net.ServerSocket createServerSocket(int, int, java.net.InetAddress) throws java.io.IOException;
+  public java.lang.String[] getDefaultCipherSuites();
+  public java.lang.String[] getSupportedCipherSuites();
+}

@@ -1,0 +1,7 @@
+Compiled from "OutputDeviceAssigned.java"
+public final class javax.print.attribute.standard.OutputDeviceAssigned extends javax.print.attribute.TextSyntax implements javax.print.attribute.PrintJobAttribute {
+  public javax.print.attribute.standard.OutputDeviceAssigned(java.lang.String, java.util.Locale);
+  public boolean equals(java.lang.Object);
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+}

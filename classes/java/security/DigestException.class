@@ -1,0 +1,7 @@
+Compiled from "DigestException.java"
+public class java.security.DigestException extends java.security.GeneralSecurityException {
+  public java.security.DigestException();
+  public java.security.DigestException(java.lang.String);
+  public java.security.DigestException(java.lang.String, java.lang.Throwable);
+  public java.security.DigestException(java.lang.Throwable);
+}

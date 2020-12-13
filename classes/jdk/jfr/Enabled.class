@@ -1,0 +1,5 @@
+Compiled from "Enabled.java"
+public interface jdk.jfr.Enabled extends java.lang.annotation.Annotation {
+  public static final java.lang.String NAME;
+  public abstract boolean value();
+}

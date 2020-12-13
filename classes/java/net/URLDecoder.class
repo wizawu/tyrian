@@ -1,0 +1,9 @@
+Compiled from "URLDecoder.java"
+public class java.net.URLDecoder {
+  static java.lang.String dfltEncName;
+  public java.net.URLDecoder();
+  public static java.lang.String decode(java.lang.String);
+  public static java.lang.String decode(java.lang.String, java.lang.String) throws java.io.UnsupportedEncodingException;
+  public static java.lang.String decode(java.lang.String, java.nio.charset.Charset);
+  static {};
+}

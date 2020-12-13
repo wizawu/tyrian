@@ -1,0 +1,7 @@
+Compiled from "XMLParseException.java"
+public class javax.management.modelmbean.XMLParseException extends java.lang.Exception {
+  public javax.management.modelmbean.XMLParseException();
+  public javax.management.modelmbean.XMLParseException(java.lang.String);
+  public javax.management.modelmbean.XMLParseException(java.lang.Exception, java.lang.String);
+  static {};
+}

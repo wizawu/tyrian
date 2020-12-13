@@ -1,0 +1,7 @@
+Compiled from "DragSourceContextPeer.java"
+public interface java.awt.dnd.peer.DragSourceContextPeer {
+  public abstract void startDrag(java.awt.dnd.DragSourceContext, java.awt.Cursor, java.awt.Image, java.awt.Point) throws java.awt.dnd.InvalidDnDOperationException;
+  public abstract java.awt.Cursor getCursor();
+  public abstract void setCursor(java.awt.Cursor) throws java.awt.dnd.InvalidDnDOperationException;
+  public abstract void transferablesFlavorsChanged();
+}

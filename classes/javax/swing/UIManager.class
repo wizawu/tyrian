@@ -1,0 +1,46 @@
+Compiled from "UIManager.java"
+public class javax.swing.UIManager implements java.io.Serializable {
+  public javax.swing.UIManager();
+  public static javax.swing.UIManager$LookAndFeelInfo[] getInstalledLookAndFeels();
+  public static void setInstalledLookAndFeels(javax.swing.UIManager$LookAndFeelInfo[]) throws java.lang.SecurityException;
+  public static void installLookAndFeel(javax.swing.UIManager$LookAndFeelInfo);
+  public static void installLookAndFeel(java.lang.String, java.lang.String);
+  public static javax.swing.LookAndFeel getLookAndFeel();
+  public static javax.swing.LookAndFeel createLookAndFeel(java.lang.String) throws javax.swing.UnsupportedLookAndFeelException;
+  public static void setLookAndFeel(javax.swing.LookAndFeel) throws javax.swing.UnsupportedLookAndFeelException;
+  public static void setLookAndFeel(java.lang.String) throws java.lang.ClassNotFoundException, java.lang.InstantiationException, java.lang.IllegalAccessException, javax.swing.UnsupportedLookAndFeelException;
+  public static java.lang.String getSystemLookAndFeelClassName();
+  public static java.lang.String getCrossPlatformLookAndFeelClassName();
+  public static javax.swing.UIDefaults getDefaults();
+  public static java.awt.Font getFont(java.lang.Object);
+  public static java.awt.Font getFont(java.lang.Object, java.util.Locale);
+  public static java.awt.Color getColor(java.lang.Object);
+  public static java.awt.Color getColor(java.lang.Object, java.util.Locale);
+  public static javax.swing.Icon getIcon(java.lang.Object);
+  public static javax.swing.Icon getIcon(java.lang.Object, java.util.Locale);
+  public static javax.swing.border.Border getBorder(java.lang.Object);
+  public static javax.swing.border.Border getBorder(java.lang.Object, java.util.Locale);
+  public static java.lang.String getString(java.lang.Object);
+  public static java.lang.String getString(java.lang.Object, java.util.Locale);
+  static java.lang.String getString(java.lang.Object, java.awt.Component);
+  public static int getInt(java.lang.Object);
+  public static int getInt(java.lang.Object, java.util.Locale);
+  public static boolean getBoolean(java.lang.Object);
+  public static boolean getBoolean(java.lang.Object, java.util.Locale);
+  public static java.awt.Insets getInsets(java.lang.Object);
+  public static java.awt.Insets getInsets(java.lang.Object, java.util.Locale);
+  public static java.awt.Dimension getDimension(java.lang.Object);
+  public static java.awt.Dimension getDimension(java.lang.Object, java.util.Locale);
+  public static java.lang.Object get(java.lang.Object);
+  public static java.lang.Object get(java.lang.Object, java.util.Locale);
+  public static java.lang.Object put(java.lang.Object, java.lang.Object);
+  public static javax.swing.plaf.ComponentUI getUI(javax.swing.JComponent);
+  public static javax.swing.UIDefaults getLookAndFeelDefaults();
+  public static void addAuxiliaryLookAndFeel(javax.swing.LookAndFeel);
+  public static boolean removeAuxiliaryLookAndFeel(javax.swing.LookAndFeel);
+  public static javax.swing.LookAndFeel[] getAuxiliaryLookAndFeels();
+  public static void addPropertyChangeListener(java.beans.PropertyChangeListener);
+  public static void removePropertyChangeListener(java.beans.PropertyChangeListener);
+  public static java.beans.PropertyChangeListener[] getPropertyChangeListeners();
+  static {};
+}

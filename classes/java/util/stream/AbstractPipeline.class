@@ -1,0 +1,39 @@
+Compiled from "AbstractPipeline.java"
+abstract class java.util.stream.AbstractPipeline<E_IN, E_OUT, S extends java.util.stream.BaseStream<E_OUT, S>> extends java.util.stream.PipelineHelper<E_OUT> implements java.util.stream.BaseStream<E_OUT, S> {
+  protected final int sourceOrOpFlags;
+  static final boolean $assertionsDisabled;
+  java.util.stream.AbstractPipeline(java.util.function.Supplier<? extends java.util.Spliterator<?>>, int, boolean);
+  java.util.stream.AbstractPipeline(java.util.Spliterator<?>, int, boolean);
+  java.util.stream.AbstractPipeline(java.util.stream.AbstractPipeline<?, E_IN, ?>, int);
+  final <R> R evaluate(java.util.stream.TerminalOp<E_OUT, R>);
+  final java.util.stream.Node<E_OUT> evaluateToArrayNode(java.util.function.IntFunction<E_OUT[]>);
+  final java.util.Spliterator<E_OUT> sourceStageSpliterator();
+  public final S sequential();
+  public final S parallel();
+  public void close();
+  public S onClose(java.lang.Runnable);
+  public java.util.Spliterator<E_OUT> spliterator();
+  public final boolean isParallel();
+  final int getStreamFlags();
+  final java.util.stream.StreamShape getSourceShape();
+  final <P_IN> long exactOutputSizeIfKnown(java.util.Spliterator<P_IN>);
+  final <P_IN, S extends java.util.stream.Sink<E_OUT>> S wrapAndCopyInto(S, java.util.Spliterator<P_IN>);
+  final <P_IN> void copyInto(java.util.stream.Sink<P_IN>, java.util.Spliterator<P_IN>);
+  final <P_IN> boolean copyIntoWithCancel(java.util.stream.Sink<P_IN>, java.util.Spliterator<P_IN>);
+  final int getStreamAndOpFlags();
+  final boolean isOrdered();
+  final <P_IN> java.util.stream.Sink<P_IN> wrapSink(java.util.stream.Sink<E_OUT>);
+  final <P_IN> java.util.Spliterator<E_OUT> wrapSpliterator(java.util.Spliterator<P_IN>);
+  final <P_IN> java.util.stream.Node<E_OUT> evaluate(java.util.Spliterator<P_IN>, boolean, java.util.function.IntFunction<E_OUT[]>);
+  abstract java.util.stream.StreamShape getOutputShape();
+  abstract <P_IN> java.util.stream.Node<E_OUT> evaluateToNode(java.util.stream.PipelineHelper<E_OUT>, java.util.Spliterator<P_IN>, boolean, java.util.function.IntFunction<E_OUT[]>);
+  abstract <P_IN> java.util.Spliterator<E_OUT> wrap(java.util.stream.PipelineHelper<E_OUT>, java.util.function.Supplier<java.util.Spliterator<P_IN>>, boolean);
+  abstract java.util.Spliterator<E_OUT> lazySpliterator(java.util.function.Supplier<? extends java.util.Spliterator<E_OUT>>);
+  abstract boolean forEachWithCancel(java.util.Spliterator<E_OUT>, java.util.stream.Sink<E_OUT>);
+  abstract java.util.stream.Node$Builder<E_OUT> makeNodeBuilder(long, java.util.function.IntFunction<E_OUT[]>);
+  abstract boolean opIsStateful();
+  abstract java.util.stream.Sink<E_IN> opWrapSink(int, java.util.stream.Sink<E_OUT>);
+  <P_IN> java.util.stream.Node<E_OUT> opEvaluateParallel(java.util.stream.PipelineHelper<E_OUT>, java.util.Spliterator<P_IN>, java.util.function.IntFunction<E_OUT[]>);
+  <P_IN> java.util.Spliterator<E_OUT> opEvaluateParallelLazy(java.util.stream.PipelineHelper<E_OUT>, java.util.Spliterator<P_IN>);
+  static {};
+}

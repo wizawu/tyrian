@@ -1,0 +1,5 @@
+Compiled from "Util.java"
+public class sun.rmi.rmic.Util implements sun.rmi.rmic.Constants {
+  public sun.rmi.rmic.Util();
+  public static java.io.File getOutputDirectoryFor(sun.tools.java.Identifier, java.io.File, sun.rmi.rmic.BatchEnvironment);
+}

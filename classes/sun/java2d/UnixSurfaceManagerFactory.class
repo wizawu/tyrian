@@ -1,0 +1,5 @@
+Compiled from "UnixSurfaceManagerFactory.java"
+public class sun.java2d.UnixSurfaceManagerFactory extends sun.java2d.SurfaceManagerFactory {
+  public sun.java2d.UnixSurfaceManagerFactory();
+  public sun.awt.image.VolatileSurfaceManager createVolatileManager(sun.awt.image.SunVolatileImage, java.lang.Object);
+}

@@ -1,0 +1,31 @@
+Compiled from "XWindowAttributesData.java"
+class sun.awt.X11.XWindowAttributesData {
+  static int NORMAL;
+  static int ICONIC;
+  static int MAXIMIZED;
+  static int AWT_DECOR_NONE;
+  static int AWT_DECOR_ALL;
+  static int AWT_DECOR_BORDER;
+  static int AWT_DECOR_RESIZEH;
+  static int AWT_DECOR_TITLE;
+  static int AWT_DECOR_MENU;
+  static int AWT_DECOR_MINIMIZE;
+  static int AWT_DECOR_MAXIMIZE;
+  static int AWT_UNOBSCURED;
+  static int AWT_PARTIALLY_OBSCURED;
+  static int AWT_FULLY_OBSCURED;
+  static int AWT_UNKNOWN_OBSCURITY;
+  boolean nativeDecor;
+  boolean initialFocus;
+  boolean isResizable;
+  int initialState;
+  boolean initialResizability;
+  int visibilityState;
+  java.lang.String title;
+  java.util.List<sun.awt.IconInfo> icons;
+  boolean iconsInherited;
+  int decorations;
+  int functions;
+  sun.awt.X11.XWindowAttributesData();
+  static {};
+}

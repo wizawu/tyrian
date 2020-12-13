@@ -1,0 +1,6 @@
+Compiled from "CMMServiceProvider.java"
+public abstract class sun.java2d.cmm.CMMServiceProvider {
+  public sun.java2d.cmm.CMMServiceProvider();
+  public final sun.java2d.cmm.PCMM getColorManagementModule();
+  protected abstract sun.java2d.cmm.PCMM getModule();
+}

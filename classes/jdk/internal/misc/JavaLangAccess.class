@@ -1,0 +1,42 @@
+Compiled from "JavaLangAccess.java"
+public interface jdk.internal.misc.JavaLangAccess {
+  public abstract java.util.List<java.lang.reflect.Method> getDeclaredPublicMethods(java.lang.Class<?>, java.lang.String, java.lang.Class<?>...);
+  public abstract jdk.internal.reflect.ConstantPool getConstantPool(java.lang.Class<?>);
+  public abstract boolean casAnnotationType(java.lang.Class<?>, sun.reflect.annotation.AnnotationType, sun.reflect.annotation.AnnotationType);
+  public abstract sun.reflect.annotation.AnnotationType getAnnotationType(java.lang.Class<?>);
+  public abstract java.util.Map<java.lang.Class<? extends java.lang.annotation.Annotation>, java.lang.annotation.Annotation> getDeclaredAnnotationMap(java.lang.Class<?>);
+  public abstract byte[] getRawClassAnnotations(java.lang.Class<?>);
+  public abstract byte[] getRawClassTypeAnnotations(java.lang.Class<?>);
+  public abstract byte[] getRawExecutableTypeAnnotations(java.lang.reflect.Executable);
+  public abstract <E extends java.lang.Enum<E>> E[] getEnumConstantsShared(java.lang.Class<E>);
+  public abstract void blockedOn(sun.nio.ch.Interruptible);
+  public abstract void registerShutdownHook(int, boolean, java.lang.Runnable);
+  public abstract java.lang.Thread newThreadWithAcc(java.lang.Runnable, java.security.AccessControlContext);
+  public abstract void invokeFinalize(java.lang.Object) throws java.lang.Throwable;
+  public abstract java.util.concurrent.ConcurrentHashMap<?, ?> createOrGetClassLoaderValueMap(java.lang.ClassLoader);
+  public abstract java.lang.Class<?> defineClass(java.lang.ClassLoader, java.lang.String, byte[], java.security.ProtectionDomain, java.lang.String);
+  public abstract java.lang.Class<?> findBootstrapClassOrNull(java.lang.ClassLoader, java.lang.String);
+  public abstract java.lang.Package definePackage(java.lang.ClassLoader, java.lang.String, java.lang.Module);
+  public abstract java.lang.String fastUUID(long, long);
+  public abstract void addNonExportedPackages(java.lang.ModuleLayer);
+  public abstract void invalidatePackageAccessCache();
+  public abstract java.lang.Module defineModule(java.lang.ClassLoader, java.lang.module.ModuleDescriptor, java.net.URI);
+  public abstract java.lang.Module defineUnnamedModule(java.lang.ClassLoader);
+  public abstract void addReads(java.lang.Module, java.lang.Module);
+  public abstract void addReadsAllUnnamed(java.lang.Module);
+  public abstract void addExports(java.lang.Module, java.lang.String, java.lang.Module);
+  public abstract void addExportsToAllUnnamed(java.lang.Module, java.lang.String);
+  public abstract void addOpens(java.lang.Module, java.lang.String, java.lang.Module);
+  public abstract void addOpensToAllUnnamed(java.lang.Module, java.lang.String);
+  public abstract void addOpensToAllUnnamed(java.lang.Module, java.util.Iterator<java.lang.String>);
+  public abstract void addUses(java.lang.Module, java.lang.Class<?>);
+  public abstract boolean isReflectivelyExported(java.lang.Module, java.lang.String, java.lang.Module);
+  public abstract boolean isReflectivelyOpened(java.lang.Module, java.lang.String, java.lang.Module);
+  public abstract jdk.internal.module.ServicesCatalog getServicesCatalog(java.lang.ModuleLayer);
+  public abstract java.util.stream.Stream<java.lang.ModuleLayer> layers(java.lang.ModuleLayer);
+  public abstract java.util.stream.Stream<java.lang.ModuleLayer> layers(java.lang.ClassLoader);
+  public abstract java.lang.String newStringNoRepl(byte[], java.nio.charset.Charset) throws java.nio.charset.CharacterCodingException;
+  public abstract byte[] getBytesNoRepl(java.lang.String, java.nio.charset.Charset) throws java.nio.charset.CharacterCodingException;
+  public abstract java.lang.String newStringUTF8NoRepl(byte[], int, int);
+  public abstract byte[] getBytesUTF8NoRepl(java.lang.String);
+}

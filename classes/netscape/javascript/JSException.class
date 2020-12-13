@@ -1,0 +1,6 @@
+Compiled from "JSException.java"
+public class netscape.javascript.JSException extends java.lang.RuntimeException {
+  public netscape.javascript.JSException();
+  public netscape.javascript.JSException(java.lang.String);
+  public netscape.javascript.JSException(java.lang.Throwable);
+}

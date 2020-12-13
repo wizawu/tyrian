@@ -1,0 +1,21 @@
+Compiled from "ClassFileConstants.java"
+public class jdk.internal.module.ClassFileConstants {
+  public static final java.lang.String MODULE;
+  public static final java.lang.String SOURCE_FILE;
+  public static final java.lang.String SDE;
+  public static final java.lang.String MODULE_PACKAGES;
+  public static final java.lang.String MODULE_MAIN_CLASS;
+  public static final java.lang.String MODULE_TARGET;
+  public static final java.lang.String MODULE_HASHES;
+  public static final java.lang.String MODULE_RESOLUTION;
+  public static final int ACC_MODULE;
+  public static final int ACC_OPEN;
+  public static final int ACC_TRANSITIVE;
+  public static final int ACC_STATIC_PHASE;
+  public static final int ACC_SYNTHETIC;
+  public static final int ACC_MANDATED;
+  public static final int DO_NOT_RESOLVE_BY_DEFAULT;
+  public static final int WARN_DEPRECATED;
+  public static final int WARN_DEPRECATED_FOR_REMOVAL;
+  public static final int WARN_INCUBATING;
+}

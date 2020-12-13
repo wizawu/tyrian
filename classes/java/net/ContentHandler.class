@@ -1,0 +1,6 @@
+Compiled from "ContentHandler.java"
+public abstract class java.net.ContentHandler {
+  public java.net.ContentHandler();
+  public abstract java.lang.Object getContent(java.net.URLConnection) throws java.io.IOException;
+  public java.lang.Object getContent(java.net.URLConnection, java.lang.Class[]) throws java.io.IOException;
+}

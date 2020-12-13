@@ -1,0 +1,41 @@
+Compiled from "StackEntry.java"
+final class jdk.nashorn.internal.runtime.regexp.joni.StackEntry {
+  int type;
+  jdk.nashorn.internal.runtime.regexp.joni.StackEntry();
+  void setStatePCode(int);
+  int getStatePCode();
+  void setStatePStr(int);
+  int getStatePStr();
+  void setStatePStrPrev(int);
+  int getStatePStrPrev();
+  void setStateCheck(int);
+  int getStateCheck();
+  void setRepeatCount(int);
+  int getRepeatCount();
+  void decreaseRepeatCount();
+  void increaseRepeatCount();
+  void setRepeatPCode(int);
+  int getRepeatPCode();
+  void setRepeatNum(int);
+  int getRepeatNum();
+  void setSi(int);
+  int getSi();
+  void setMemNum(int);
+  int getMemNum();
+  void setMemPstr(int);
+  int getMemPStr();
+  void setMemStart(int);
+  int getMemStart();
+  void setMemEnd(int);
+  int getMemEnd();
+  void setNullCheckNum(int);
+  int getNullCheckNum();
+  void setNullCheckPStr(int);
+  int getNullCheckPStr();
+  void setCallFrameRetAddr(int);
+  int getCallFrameRetAddr();
+  void setCallFrameNum(int);
+  int getCallFrameNum();
+  void setCallFramePStr(int);
+  int getCallFramePStr();
+}

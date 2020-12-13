@@ -1,0 +1,11 @@
+Compiled from "LongExpression.java"
+public class sun.tools.tree.LongExpression extends sun.tools.tree.ConstantExpression {
+  long value;
+  public sun.tools.tree.LongExpression(long, long);
+  public java.lang.Object getValue();
+  public boolean equals(int);
+  public boolean equalsDefault();
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public void print(java.io.PrintStream);
+  public boolean isConstant();
+}

@@ -1,0 +1,30 @@
+Compiled from "SF2Instrument.java"
+public final class com.sun.media.sound.SF2Instrument extends com.sun.media.sound.ModelInstrument {
+  java.lang.String name;
+  int preset;
+  int bank;
+  long library;
+  long genre;
+  long morphology;
+  com.sun.media.sound.SF2GlobalRegion globalregion;
+  java.util.List<com.sun.media.sound.SF2InstrumentRegion> regions;
+  public com.sun.media.sound.SF2Instrument();
+  public com.sun.media.sound.SF2Instrument(com.sun.media.sound.SF2Soundbank);
+  public java.lang.String getName();
+  public void setName(java.lang.String);
+  public javax.sound.midi.Patch getPatch();
+  public void setPatch(javax.sound.midi.Patch);
+  public java.lang.Object getData();
+  public long getGenre();
+  public void setGenre(long);
+  public long getLibrary();
+  public void setLibrary(long);
+  public long getMorphology();
+  public void setMorphology(long);
+  public java.util.List<com.sun.media.sound.SF2InstrumentRegion> getRegions();
+  public com.sun.media.sound.SF2GlobalRegion getGlobalRegion();
+  public void setGlobalZone(com.sun.media.sound.SF2GlobalRegion);
+  public java.lang.String toString();
+  public com.sun.media.sound.ModelPerformer[] getPerformers();
+  static com.sun.media.sound.ModelDestination convertDestination(int, double[], com.sun.media.sound.ModelSource[]);
+}

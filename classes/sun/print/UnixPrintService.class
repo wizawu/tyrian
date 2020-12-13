@@ -1,0 +1,31 @@
+Compiled from "UnixPrintService.java"
+public class sun.print.UnixPrintService implements javax.print.PrintService,sun.print.AttributeUpdater,sun.print.SunPrinterJobService {
+  java.lang.String[] lpcStatusCom;
+  java.lang.String[] lpcQueueCom;
+  static final boolean $assertionsDisabled;
+  sun.print.UnixPrintService(java.lang.String);
+  public void invalidateService();
+  public java.lang.String getName();
+  protected static java.lang.String[] filterPrinterNamesAIX(java.lang.String[]);
+  public javax.print.DocPrintJob createPrintJob();
+  public javax.print.attribute.PrintServiceAttributeSet getUpdatedAttributes();
+  public void wakeNotifier();
+  public void addPrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener);
+  public void removePrintServiceAttributeListener(javax.print.event.PrintServiceAttributeListener);
+  public <T extends javax.print.attribute.PrintServiceAttribute> T getAttribute(java.lang.Class<T>);
+  public javax.print.attribute.PrintServiceAttributeSet getAttributes();
+  public javax.print.DocFlavor[] getSupportedDocFlavors();
+  public boolean isDocFlavorSupported(javax.print.DocFlavor);
+  public java.lang.Class<?>[] getSupportedAttributeCategories();
+  public boolean isAttributeCategorySupported(java.lang.Class<? extends javax.print.attribute.Attribute>);
+  public java.lang.Object getDefaultAttributeValue(java.lang.Class<? extends javax.print.attribute.Attribute>);
+  public java.lang.Object getSupportedAttributeValues(java.lang.Class<? extends javax.print.attribute.Attribute>, javax.print.DocFlavor, javax.print.attribute.AttributeSet);
+  public boolean isAttributeValueSupported(javax.print.attribute.Attribute, javax.print.DocFlavor, javax.print.attribute.AttributeSet);
+  public javax.print.attribute.AttributeSet getUnsupportedAttributes(javax.print.DocFlavor, javax.print.attribute.AttributeSet);
+  public javax.print.ServiceUIFactory getServiceUIFactory();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public boolean usesClass(java.lang.Class<?>);
+  static {};
+}

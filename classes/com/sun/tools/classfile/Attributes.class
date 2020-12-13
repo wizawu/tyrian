@@ -1,0 +1,14 @@
+Compiled from "Attributes.java"
+public class com.sun.tools.classfile.Attributes implements java.lang.Iterable<com.sun.tools.classfile.Attribute> {
+  public final com.sun.tools.classfile.Attribute[] attrs;
+  public final java.util.Map<java.lang.String, com.sun.tools.classfile.Attribute> map;
+  com.sun.tools.classfile.Attributes(com.sun.tools.classfile.ClassReader) throws java.io.IOException;
+  public com.sun.tools.classfile.Attributes(com.sun.tools.classfile.ConstantPool, com.sun.tools.classfile.Attribute[]);
+  public com.sun.tools.classfile.Attributes(java.util.Map<java.lang.String, com.sun.tools.classfile.Attribute>);
+  public java.util.Iterator<com.sun.tools.classfile.Attribute> iterator();
+  public com.sun.tools.classfile.Attribute get(int);
+  public com.sun.tools.classfile.Attribute get(java.lang.String);
+  public int getIndex(com.sun.tools.classfile.ConstantPool, java.lang.String);
+  public int size();
+  public int byteLength();
+}

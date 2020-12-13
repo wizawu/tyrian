@@ -1,0 +1,15 @@
+Compiled from "HttpCallerInfo.java"
+public final class sun.net.www.protocol.http.HttpCallerInfo {
+  public final java.net.URL url;
+  public final java.lang.String host;
+  public final java.lang.String protocol;
+  public final java.lang.String prompt;
+  public final java.lang.String scheme;
+  public final int port;
+  public final java.net.InetAddress addr;
+  public final java.net.Authenticator$RequestorType authType;
+  public final java.net.Authenticator authenticator;
+  public sun.net.www.protocol.http.HttpCallerInfo(sun.net.www.protocol.http.HttpCallerInfo, java.lang.String);
+  public sun.net.www.protocol.http.HttpCallerInfo(java.net.URL, java.net.Authenticator);
+  public sun.net.www.protocol.http.HttpCallerInfo(java.net.URL, java.lang.String, int, java.net.Authenticator);
+}

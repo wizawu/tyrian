@@ -1,0 +1,25 @@
+Compiled from "Executors.java"
+public class java.util.concurrent.Executors {
+  public static java.util.concurrent.ExecutorService newFixedThreadPool(int);
+  public static java.util.concurrent.ExecutorService newWorkStealingPool(int);
+  public static java.util.concurrent.ExecutorService newWorkStealingPool();
+  public static java.util.concurrent.ExecutorService newFixedThreadPool(int, java.util.concurrent.ThreadFactory);
+  public static java.util.concurrent.ExecutorService newSingleThreadExecutor();
+  public static java.util.concurrent.ExecutorService newSingleThreadExecutor(java.util.concurrent.ThreadFactory);
+  public static java.util.concurrent.ExecutorService newCachedThreadPool();
+  public static java.util.concurrent.ExecutorService newCachedThreadPool(java.util.concurrent.ThreadFactory);
+  public static java.util.concurrent.ScheduledExecutorService newSingleThreadScheduledExecutor();
+  public static java.util.concurrent.ScheduledExecutorService newSingleThreadScheduledExecutor(java.util.concurrent.ThreadFactory);
+  public static java.util.concurrent.ScheduledExecutorService newScheduledThreadPool(int);
+  public static java.util.concurrent.ScheduledExecutorService newScheduledThreadPool(int, java.util.concurrent.ThreadFactory);
+  public static java.util.concurrent.ExecutorService unconfigurableExecutorService(java.util.concurrent.ExecutorService);
+  public static java.util.concurrent.ScheduledExecutorService unconfigurableScheduledExecutorService(java.util.concurrent.ScheduledExecutorService);
+  public static java.util.concurrent.ThreadFactory defaultThreadFactory();
+  public static java.util.concurrent.ThreadFactory privilegedThreadFactory();
+  public static <T> java.util.concurrent.Callable<T> callable(java.lang.Runnable, T);
+  public static java.util.concurrent.Callable<java.lang.Object> callable(java.lang.Runnable);
+  public static java.util.concurrent.Callable<java.lang.Object> callable(java.security.PrivilegedAction<?>);
+  public static java.util.concurrent.Callable<java.lang.Object> callable(java.security.PrivilegedExceptionAction<?>);
+  public static <T> java.util.concurrent.Callable<T> privilegedCallable(java.util.concurrent.Callable<T>);
+  public static <T> java.util.concurrent.Callable<T> privilegedCallableUsingCurrentClassLoader(java.util.concurrent.Callable<T>);
+}

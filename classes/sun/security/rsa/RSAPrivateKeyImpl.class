@@ -1,0 +1,9 @@
+Compiled from "RSAPrivateKeyImpl.java"
+public final class sun.security.rsa.RSAPrivateKeyImpl extends sun.security.pkcs.PKCS8Key implements java.security.interfaces.RSAPrivateKey {
+  sun.security.rsa.RSAPrivateKeyImpl(sun.security.x509.AlgorithmId, java.math.BigInteger, java.math.BigInteger) throws java.security.InvalidKeyException;
+  public java.lang.String getAlgorithm();
+  public java.math.BigInteger getModulus();
+  public java.math.BigInteger getPrivateExponent();
+  public java.security.spec.AlgorithmParameterSpec getParams();
+  public java.lang.String toString();
+}

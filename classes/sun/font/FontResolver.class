@@ -1,0 +1,8 @@
+Compiled from "FontResolver.java"
+public final class sun.font.FontResolver {
+  public int getFontIndex(char);
+  public int getFontIndex(int);
+  public int nextFontRunIndex(sun.font.CodePointIterator);
+  public java.awt.Font getFont(int, java.util.Map<? extends java.text.AttributedCharacterIterator$Attribute, ?>);
+  public static sun.font.FontResolver getInstance();
+}

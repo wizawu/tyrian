@@ -1,0 +1,30 @@
+Compiled from "CatalogImpl.java"
+class javax.xml.catalog.CatalogImpl extends javax.xml.catalog.GroupEntry implements javax.xml.catalog.Catalog {
+  int level;
+  boolean isDeferred;
+  javax.xml.catalog.GroupEntry$ResolveType resolveType;
+  boolean isEmpty;
+  int current;
+  java.lang.String systemId;
+  java.util.List<java.lang.String> inputFiles;
+  java.util.List<javax.xml.catalog.NextCatalog> nextCatalogs;
+  javax.xml.parsers.SAXParser parser;
+  public javax.xml.catalog.CatalogImpl(javax.xml.catalog.CatalogFeatures, java.net.URI...) throws javax.xml.catalog.CatalogException;
+  public javax.xml.catalog.CatalogImpl(javax.xml.catalog.CatalogImpl, javax.xml.catalog.CatalogFeatures, java.net.URI...) throws javax.xml.catalog.CatalogException;
+  void load();
+  public void reset();
+  boolean isTop();
+  public javax.xml.catalog.Catalog getParent();
+  public final void setDeferred(java.lang.String);
+  public boolean isDeferred();
+  public final void setResolve(java.lang.String);
+  public final javax.xml.catalog.GroupEntry$ResolveType getResolve();
+  void markAsSearched();
+  public boolean isEmpty();
+  public java.util.stream.Stream<javax.xml.catalog.Catalog> catalogs();
+  void addNextCatalog(javax.xml.catalog.NextCatalog);
+  void loadNextCatalogs();
+  javax.xml.catalog.Catalog getCatalog(javax.xml.catalog.CatalogImpl, java.net.URI);
+  void saveLoadedCatalog(java.lang.String, javax.xml.catalog.CatalogImpl);
+  int loadedCatalogCount();
+}

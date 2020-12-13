@@ -1,0 +1,9 @@
+Compiled from "LinuxOopHandle.java"
+public class sun.jvm.hotspot.debugger.linux.LinuxOopHandle extends sun.jvm.hotspot.debugger.linux.LinuxAddress implements sun.jvm.hotspot.debugger.OopHandle {
+  public sun.jvm.hotspot.debugger.linux.LinuxOopHandle(sun.jvm.hotspot.debugger.linux.LinuxDebugger, long);
+  public boolean equals(java.lang.Object);
+  public sun.jvm.hotspot.debugger.Address addOffsetTo(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address andWithMask(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address orWithMask(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address xorWithMask(long) throws java.lang.UnsupportedOperationException;
+}

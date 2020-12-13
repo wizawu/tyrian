@@ -1,0 +1,5 @@
+Compiled from "LayeredHighlighter.java"
+public abstract class javax.swing.text.LayeredHighlighter implements javax.swing.text.Highlighter {
+  public javax.swing.text.LayeredHighlighter();
+  public abstract void paintLayeredHighlights(java.awt.Graphics, int, int, java.awt.Shape, javax.swing.text.JTextComponent, javax.swing.text.View);
+}

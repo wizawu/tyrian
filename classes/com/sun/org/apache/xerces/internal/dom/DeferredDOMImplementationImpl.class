@@ -1,0 +1,7 @@
+Compiled from "DeferredDOMImplementationImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DeferredDOMImplementationImpl extends com.sun.org.apache.xerces.internal.dom.DOMImplementationImpl {
+  static com.sun.org.apache.xerces.internal.dom.DeferredDOMImplementationImpl singleton;
+  public com.sun.org.apache.xerces.internal.dom.DeferredDOMImplementationImpl();
+  public static org.w3c.dom.DOMImplementation getDOMImplementation();
+  static {};
+}

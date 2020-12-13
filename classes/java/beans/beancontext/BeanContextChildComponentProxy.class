@@ -1,0 +1,4 @@
+Compiled from "BeanContextChildComponentProxy.java"
+public interface java.beans.beancontext.BeanContextChildComponentProxy {
+  public abstract java.awt.Component getComponent();
+}

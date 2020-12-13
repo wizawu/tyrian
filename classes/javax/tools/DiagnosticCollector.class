@@ -1,0 +1,6 @@
+Compiled from "DiagnosticCollector.java"
+public final class javax.tools.DiagnosticCollector<S> implements javax.tools.DiagnosticListener<S> {
+  public javax.tools.DiagnosticCollector();
+  public void report(javax.tools.Diagnostic<? extends S>);
+  public java.util.List<javax.tools.Diagnostic<? extends S>> getDiagnostics();
+}

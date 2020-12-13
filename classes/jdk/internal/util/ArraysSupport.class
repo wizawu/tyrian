@@ -1,0 +1,30 @@
+Compiled from "ArraysSupport.java"
+public class jdk.internal.util.ArraysSupport {
+  static final jdk.internal.misc.Unsafe U;
+  public static final int LOG2_ARRAY_BOOLEAN_INDEX_SCALE;
+  public static final int LOG2_ARRAY_BYTE_INDEX_SCALE;
+  public static final int LOG2_ARRAY_CHAR_INDEX_SCALE;
+  public static final int LOG2_ARRAY_SHORT_INDEX_SCALE;
+  public static final int LOG2_ARRAY_INT_INDEX_SCALE;
+  public static final int LOG2_ARRAY_LONG_INDEX_SCALE;
+  public static final int LOG2_ARRAY_FLOAT_INDEX_SCALE;
+  public static final int LOG2_ARRAY_DOUBLE_INDEX_SCALE;
+  public static int vectorizedMismatch(java.lang.Object, long, java.lang.Object, long, int, int);
+  public static int mismatch(boolean[], boolean[], int);
+  public static int mismatch(boolean[], int, boolean[], int, int);
+  public static int mismatch(byte[], byte[], int);
+  public static int mismatch(byte[], int, byte[], int, int);
+  public static int mismatch(char[], char[], int);
+  public static int mismatch(char[], int, char[], int, int);
+  public static int mismatch(short[], short[], int);
+  public static int mismatch(short[], int, short[], int, int);
+  public static int mismatch(int[], int[], int);
+  public static int mismatch(int[], int, int[], int, int);
+  public static int mismatch(float[], float[], int);
+  public static int mismatch(float[], int, float[], int, int);
+  public static int mismatch(long[], long[], int);
+  public static int mismatch(long[], int, long[], int, int);
+  public static int mismatch(double[], double[], int);
+  public static int mismatch(double[], int, double[], int, int);
+  static {};
+}

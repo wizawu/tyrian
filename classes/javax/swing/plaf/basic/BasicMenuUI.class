@@ -1,0 +1,28 @@
+Compiled from "BasicMenuUI.java"
+public class javax.swing.plaf.basic.BasicMenuUI extends javax.swing.plaf.basic.BasicMenuItemUI {
+  protected javax.swing.event.ChangeListener changeListener;
+  protected javax.swing.event.MenuListener menuListener;
+  public javax.swing.plaf.basic.BasicMenuUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  static void loadActionMap(javax.swing.plaf.basic.LazyActionMap);
+  protected void installDefaults();
+  protected java.lang.String getPropertyPrefix();
+  protected void installListeners();
+  protected void installKeyboardActions();
+  void installLazyActionMap();
+  void updateMnemonicBinding();
+  protected void uninstallKeyboardActions();
+  protected javax.swing.event.MouseInputListener createMouseInputListener(javax.swing.JComponent);
+  protected javax.swing.event.MenuListener createMenuListener(javax.swing.JComponent);
+  protected javax.swing.event.ChangeListener createChangeListener(javax.swing.JComponent);
+  protected java.beans.PropertyChangeListener createPropertyChangeListener(javax.swing.JComponent);
+  javax.swing.plaf.basic.BasicMenuItemUI$Handler getHandler();
+  protected void uninstallDefaults();
+  protected void uninstallListeners();
+  protected javax.swing.event.MenuDragMouseListener createMenuDragMouseListener(javax.swing.JComponent);
+  protected javax.swing.event.MenuKeyListener createMenuKeyListener(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  protected void setupPostTimer(javax.swing.JMenu);
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "ConstantHTML.java"
+final class com.sun.org.apache.bcel.internal.util.ConstantHTML {
+  com.sun.org.apache.bcel.internal.util.ConstantHTML(java.lang.String, java.lang.String, java.lang.String, com.sun.org.apache.bcel.internal.classfile.Method[], com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
+  java.lang.String referenceConstant(int);
+}

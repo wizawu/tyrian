@@ -1,0 +1,41 @@
+Compiled from "AccessFlags.java"
+public abstract class com.sun.org.apache.bcel.internal.classfile.AccessFlags {
+  public com.sun.org.apache.bcel.internal.classfile.AccessFlags();
+  public com.sun.org.apache.bcel.internal.classfile.AccessFlags(int);
+  public final int getAccessFlags();
+  public final int getModifiers();
+  public final void setAccessFlags(int);
+  public final void setModifiers(int);
+  public final void isPublic(boolean);
+  public final boolean isPublic();
+  public final void isPrivate(boolean);
+  public final boolean isPrivate();
+  public final void isProtected(boolean);
+  public final boolean isProtected();
+  public final void isStatic(boolean);
+  public final boolean isStatic();
+  public final void isFinal(boolean);
+  public final boolean isFinal();
+  public final void isSynchronized(boolean);
+  public final boolean isSynchronized();
+  public final void isVolatile(boolean);
+  public final boolean isVolatile();
+  public final void isTransient(boolean);
+  public final boolean isTransient();
+  public final void isNative(boolean);
+  public final boolean isNative();
+  public final void isInterface(boolean);
+  public final boolean isInterface();
+  public final void isAbstract(boolean);
+  public final boolean isAbstract();
+  public final void isStrictfp(boolean);
+  public final boolean isStrictfp();
+  public final void isSynthetic(boolean);
+  public final boolean isSynthetic();
+  public final void isAnnotation(boolean);
+  public final boolean isAnnotation();
+  public final void isEnum(boolean);
+  public final boolean isEnum();
+  public final void isVarArgs(boolean);
+  public final boolean isVarArgs();
+}

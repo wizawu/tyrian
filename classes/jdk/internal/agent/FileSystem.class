@@ -1,0 +1,8 @@
+Compiled from "FileSystem.java"
+public abstract class jdk.internal.agent.FileSystem {
+  protected jdk.internal.agent.FileSystem();
+  public static jdk.internal.agent.FileSystem open();
+  public abstract boolean supportsFileSecurity(java.io.File) throws java.io.IOException;
+  public abstract boolean isAccessUserOnly(java.io.File) throws java.io.IOException;
+  static {};
+}

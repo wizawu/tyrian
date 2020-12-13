@@ -1,0 +1,23 @@
+Compiled from "NodeSetType.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.NodeSetType extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type {
+  protected com.sun.org.apache.xalan.internal.xsltc.compiler.util.NodeSetType();
+  public java.lang.String toString();
+  public boolean identicalTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type);
+  public java.lang.String toSignature();
+  public com.sun.org.apache.bcel.internal.generic.Type toJCType();
+  public void translateTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type);
+  public void translateFrom(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, java.lang.Class<?>);
+  public void translateTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.BooleanType);
+  public void translateTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.StringType);
+  public void translateTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.RealType);
+  public void translateTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.NodeType);
+  public void translateTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.ObjectType);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.FlowList translateToDesynthesized(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.BooleanType);
+  public void translateTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.ReferenceType);
+  public void translateTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, java.lang.Class<?>);
+  public void translateBox(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public void translateUnBox(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public java.lang.String getClassName();
+  public com.sun.org.apache.bcel.internal.generic.Instruction LOAD(int);
+  public com.sun.org.apache.bcel.internal.generic.Instruction STORE(int);
+}

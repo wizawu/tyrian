@@ -1,0 +1,9 @@
+Compiled from "JMXConnectorServerFactory.java"
+public class javax.management.remote.JMXConnectorServerFactory {
+  public static final java.lang.String DEFAULT_CLASS_LOADER;
+  public static final java.lang.String DEFAULT_CLASS_LOADER_NAME;
+  public static final java.lang.String PROTOCOL_PROVIDER_PACKAGES;
+  public static final java.lang.String PROTOCOL_PROVIDER_CLASS_LOADER;
+  public static javax.management.remote.JMXConnectorServer newJMXConnectorServer(javax.management.remote.JMXServiceURL, java.util.Map<java.lang.String, ?>, javax.management.MBeanServer) throws java.io.IOException;
+  static {};
+}

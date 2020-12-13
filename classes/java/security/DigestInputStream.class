@@ -1,0 +1,11 @@
+Compiled from "DigestInputStream.java"
+public class java.security.DigestInputStream extends java.io.FilterInputStream {
+  protected java.security.MessageDigest digest;
+  public java.security.DigestInputStream(java.io.InputStream, java.security.MessageDigest);
+  public java.security.MessageDigest getMessageDigest();
+  public void setMessageDigest(java.security.MessageDigest);
+  public int read() throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public void on(boolean);
+  public java.lang.String toString();
+}

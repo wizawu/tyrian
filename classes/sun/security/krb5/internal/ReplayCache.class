@@ -1,0 +1,7 @@
+Compiled from "ReplayCache.java"
+public abstract class sun.security.krb5.internal.ReplayCache {
+  public sun.security.krb5.internal.ReplayCache();
+  public static sun.security.krb5.internal.ReplayCache getInstance(java.lang.String);
+  public static sun.security.krb5.internal.ReplayCache getInstance();
+  public abstract void checkAndStore(sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.rcache.AuthTimeWithHash) throws sun.security.krb5.internal.KrbApErrException;
+}

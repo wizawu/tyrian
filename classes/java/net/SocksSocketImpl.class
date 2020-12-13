@@ -1,0 +1,16 @@
+Compiled from "SocksSocketImpl.java"
+class java.net.SocksSocketImpl extends java.net.PlainSocketImpl implements java.net.SocksConsts {
+  static final boolean $assertionsDisabled;
+  java.net.SocksSocketImpl();
+  java.net.SocksSocketImpl(java.lang.String, int);
+  java.net.SocksSocketImpl(java.net.Proxy);
+  void setV4();
+  protected void connect(java.net.SocketAddress, int) throws java.io.IOException;
+  protected synchronized void socksBind(java.net.InetSocketAddress) throws java.io.IOException;
+  protected void acceptFrom(java.net.SocketImpl, java.net.InetSocketAddress) throws java.io.IOException;
+  protected java.net.InetAddress getInetAddress();
+  protected int getPort();
+  protected int getLocalPort();
+  protected void close() throws java.io.IOException;
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "MemoizedChar.java"
+public abstract class sun.jvm.hotspot.utilities.memo.MemoizedChar {
+  public sun.jvm.hotspot.utilities.memo.MemoizedChar();
+  protected abstract char computeValue();
+  public char getValue();
+}

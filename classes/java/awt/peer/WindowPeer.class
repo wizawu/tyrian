@@ -1,0 +1,14 @@
+Compiled from "WindowPeer.java"
+public interface java.awt.peer.WindowPeer extends java.awt.peer.ContainerPeer {
+  public abstract void toFront();
+  public abstract void toBack();
+  public abstract void updateAlwaysOnTopState();
+  public abstract void updateFocusableWindowState();
+  public abstract void setModalBlocked(java.awt.Dialog, boolean);
+  public abstract void updateMinimumSize();
+  public abstract void updateIconImages();
+  public abstract void setOpacity(float);
+  public abstract void setOpaque(boolean);
+  public abstract void updateWindow();
+  public abstract void repositionSecurityWarning();
+}

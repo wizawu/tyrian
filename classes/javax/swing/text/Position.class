@@ -1,0 +1,4 @@
+Compiled from "Position.java"
+public interface javax.swing.text.Position {
+  public abstract int getOffset();
+}

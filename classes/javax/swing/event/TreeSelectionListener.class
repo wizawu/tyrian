@@ -1,0 +1,4 @@
+Compiled from "TreeSelectionListener.java"
+public interface javax.swing.event.TreeSelectionListener extends java.util.EventListener {
+  public abstract void valueChanged(javax.swing.event.TreeSelectionEvent);
+}

@@ -1,0 +1,14 @@
+Compiled from "SocketFlow.java"
+public class jdk.net.SocketFlow {
+  public static final int UNSET;
+  public static final int NORMAL_PRIORITY;
+  public static final int HIGH_PRIORITY;
+  public static jdk.net.SocketFlow create();
+  public jdk.net.SocketFlow priority(int);
+  public jdk.net.SocketFlow bandwidth(long);
+  public int priority();
+  public long bandwidth();
+  public jdk.net.SocketFlow$Status status();
+  void status(int);
+  public java.lang.String toString();
+}

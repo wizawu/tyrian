@@ -1,0 +1,8 @@
+Compiled from "NameAndTypeData.java"
+final class sun.tools.asm.NameAndTypeData {
+  sun.tools.java.MemberDefinition field;
+  sun.tools.asm.NameAndTypeData(sun.tools.java.MemberDefinition);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

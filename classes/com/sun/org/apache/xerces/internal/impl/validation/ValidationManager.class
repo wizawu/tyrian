@@ -1,0 +1,14 @@
+Compiled from "ValidationManager.java"
+public class com.sun.org.apache.xerces.internal.impl.validation.ValidationManager {
+  protected final java.util.List<com.sun.org.apache.xerces.internal.impl.validation.ValidationState> fVSs;
+  protected boolean fGrammarFound;
+  protected boolean fCachedDTD;
+  public com.sun.org.apache.xerces.internal.impl.validation.ValidationManager();
+  public final void addValidationState(com.sun.org.apache.xerces.internal.impl.validation.ValidationState);
+  public final void setEntityState(com.sun.org.apache.xerces.internal.impl.validation.EntityState);
+  public final void setGrammarFound(boolean);
+  public final boolean isGrammarFound();
+  public final void setCachedDTD(boolean);
+  public final boolean isCachedDTD();
+  public final void reset();
+}

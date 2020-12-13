@@ -1,0 +1,22 @@
+Compiled from "Http1Response.java"
+class jdk.internal.net.http.Http1Response<T> {
+  final jdk.internal.net.http.common.Logger debug;
+  static final java.util.concurrent.atomic.AtomicLong responseCount;
+  final long id;
+  java.lang.String dbgTag;
+  static final java.util.concurrent.Flow$Subscription NOP;
+  static final boolean $assertionsDisabled;
+  jdk.internal.net.http.Http1Response(jdk.internal.net.http.HttpConnection, jdk.internal.net.http.Http1Exchange<T>, jdk.internal.net.http.Http1AsyncReceiver);
+  public java.util.concurrent.CompletableFuture<jdk.internal.net.http.Response> readHeadersAsync(java.util.concurrent.Executor);
+  synchronized void completed();
+  synchronized boolean finished();
+  long fixupContentLen(long);
+  public java.util.concurrent.CompletableFuture<java.lang.Void> ignoreBody(java.util.concurrent.Executor);
+  public void nullBody(java.net.http.HttpResponse<T>, java.lang.Throwable);
+  public <U> java.util.concurrent.CompletableFuture<U> readBody(java.net.http.HttpResponse$BodySubscriber<U>, boolean, java.util.concurrent.Executor);
+  java.net.http.HttpHeaders responseHeaders();
+  int responseCode();
+  void onReadError(java.lang.Throwable);
+  jdk.internal.net.http.Http1Response$Receiver<?> receiver(jdk.internal.net.http.Http1Response$State);
+  static {};
+}

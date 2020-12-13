@@ -1,0 +1,9 @@
+Compiled from "Member.java"
+public interface java.lang.reflect.Member {
+  public static final int PUBLIC;
+  public static final int DECLARED;
+  public abstract java.lang.Class<?> getDeclaringClass();
+  public abstract java.lang.String getName();
+  public abstract int getModifiers();
+  public abstract boolean isSynthetic();
+}

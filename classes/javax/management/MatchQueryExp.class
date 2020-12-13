@@ -1,0 +1,9 @@
+Compiled from "MatchQueryExp.java"
+class javax.management.MatchQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
+  public javax.management.MatchQueryExp();
+  public javax.management.MatchQueryExp(javax.management.AttributeValueExp, javax.management.StringValueExp);
+  public javax.management.AttributeValueExp getAttribute();
+  public java.lang.String getPattern();
+  public boolean apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
+  public java.lang.String toString();
+}

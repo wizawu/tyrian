@@ -1,0 +1,6 @@
+Compiled from "LocaleServiceProvider.java"
+public abstract class java.util.spi.LocaleServiceProvider {
+  protected java.util.spi.LocaleServiceProvider();
+  public abstract java.util.Locale[] getAvailableLocales();
+  public boolean isSupportedLocale(java.util.Locale);
+}

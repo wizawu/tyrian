@@ -1,0 +1,7 @@
+Compiled from "NoSuchAlgorithmException.java"
+public class java.security.NoSuchAlgorithmException extends java.security.GeneralSecurityException {
+  public java.security.NoSuchAlgorithmException();
+  public java.security.NoSuchAlgorithmException(java.lang.String);
+  public java.security.NoSuchAlgorithmException(java.lang.String, java.lang.Throwable);
+  public java.security.NoSuchAlgorithmException(java.lang.Throwable);
+}

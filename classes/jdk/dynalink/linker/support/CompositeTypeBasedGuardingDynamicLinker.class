@@ -1,0 +1,7 @@
+Compiled from "CompositeTypeBasedGuardingDynamicLinker.java"
+public class jdk.dynalink.linker.support.CompositeTypeBasedGuardingDynamicLinker implements jdk.dynalink.linker.TypeBasedGuardingDynamicLinker {
+  public jdk.dynalink.linker.support.CompositeTypeBasedGuardingDynamicLinker(java.lang.Iterable<? extends jdk.dynalink.linker.TypeBasedGuardingDynamicLinker>);
+  public boolean canLinkType(java.lang.Class<?>);
+  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
+  public static java.util.List<jdk.dynalink.linker.GuardingDynamicLinker> optimize(java.lang.Iterable<? extends jdk.dynalink.linker.GuardingDynamicLinker>);
+}

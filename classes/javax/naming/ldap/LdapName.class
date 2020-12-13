@@ -1,0 +1,31 @@
+Compiled from "LdapName.java"
+public class javax.naming.ldap.LdapName implements javax.naming.Name {
+  public javax.naming.ldap.LdapName(java.lang.String) throws javax.naming.InvalidNameException;
+  public javax.naming.ldap.LdapName(java.util.List<javax.naming.ldap.Rdn>);
+  public int size();
+  public boolean isEmpty();
+  public java.util.Enumeration<java.lang.String> getAll();
+  public java.lang.String get(int);
+  public javax.naming.ldap.Rdn getRdn(int);
+  public javax.naming.Name getPrefix(int);
+  public javax.naming.Name getSuffix(int);
+  public boolean startsWith(javax.naming.Name);
+  public boolean startsWith(java.util.List<javax.naming.ldap.Rdn>);
+  public boolean endsWith(javax.naming.Name);
+  public boolean endsWith(java.util.List<javax.naming.ldap.Rdn>);
+  public javax.naming.Name addAll(javax.naming.Name) throws javax.naming.InvalidNameException;
+  public javax.naming.Name addAll(java.util.List<javax.naming.ldap.Rdn>);
+  public javax.naming.Name addAll(int, javax.naming.Name) throws javax.naming.InvalidNameException;
+  public javax.naming.Name addAll(int, java.util.List<javax.naming.ldap.Rdn>);
+  public javax.naming.Name add(java.lang.String) throws javax.naming.InvalidNameException;
+  public javax.naming.Name add(javax.naming.ldap.Rdn);
+  public javax.naming.Name add(int, java.lang.String) throws javax.naming.InvalidNameException;
+  public javax.naming.Name add(int, javax.naming.ldap.Rdn);
+  public java.lang.Object remove(int) throws javax.naming.InvalidNameException;
+  public java.util.List<javax.naming.ldap.Rdn> getRdns();
+  public java.lang.Object clone();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int compareTo(java.lang.Object);
+  public int hashCode();
+}

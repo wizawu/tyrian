@@ -1,0 +1,14 @@
+Compiled from "RFC822Name.java"
+public class sun.security.x509.RFC822Name implements sun.security.x509.GeneralNameInterface {
+  public sun.security.x509.RFC822Name(sun.security.util.DerValue) throws java.io.IOException;
+  public sun.security.x509.RFC822Name(java.lang.String) throws java.io.IOException;
+  public void parseName(java.lang.String) throws java.io.IOException;
+  public int getType();
+  public java.lang.String getName();
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public int constrains(sun.security.x509.GeneralNameInterface) throws java.lang.UnsupportedOperationException;
+  public int subtreeDepth() throws java.lang.UnsupportedOperationException;
+}

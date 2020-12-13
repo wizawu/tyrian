@@ -1,0 +1,12 @@
+Compiled from "SystemSuffix.java"
+final class javax.xml.catalog.SystemSuffix extends javax.xml.catalog.BaseEntry {
+  java.lang.String systemIdSuffix;
+  java.net.URL uri;
+  public javax.xml.catalog.SystemSuffix(java.lang.String, java.lang.String, java.lang.String);
+  public void setSystemIdSuffix(java.lang.String);
+  public void setURI(java.lang.String);
+  public java.lang.String getSystemIdSuffix();
+  public java.net.URL getURI();
+  public java.lang.String match(java.lang.String, int);
+  public java.lang.String match(java.lang.String);
+}

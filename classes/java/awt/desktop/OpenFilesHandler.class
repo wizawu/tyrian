@@ -1,0 +1,4 @@
+Compiled from "OpenFilesHandler.java"
+public interface java.awt.desktop.OpenFilesHandler {
+  public abstract void openFiles(java.awt.desktop.OpenFilesEvent);
+}

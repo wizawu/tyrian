@@ -1,0 +1,18 @@
+Compiled from "MathContext.java"
+public final class java.math.MathContext implements java.io.Serializable {
+  public static final java.math.MathContext UNLIMITED;
+  public static final java.math.MathContext DECIMAL32;
+  public static final java.math.MathContext DECIMAL64;
+  public static final java.math.MathContext DECIMAL128;
+  final int precision;
+  final java.math.RoundingMode roundingMode;
+  public java.math.MathContext(int);
+  public java.math.MathContext(int, java.math.RoundingMode);
+  public java.math.MathContext(java.lang.String);
+  public int getPrecision();
+  public java.math.RoundingMode getRoundingMode();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  static {};
+}

@@ -1,0 +1,7 @@
+Compiled from "ActivationGroupID.java"
+public class java.rmi.activation.ActivationGroupID implements java.io.Serializable {
+  public java.rmi.activation.ActivationGroupID(java.rmi.activation.ActivationSystem);
+  public java.rmi.activation.ActivationSystem getSystem();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

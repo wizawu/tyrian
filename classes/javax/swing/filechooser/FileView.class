@@ -1,0 +1,9 @@
+Compiled from "FileView.java"
+public abstract class javax.swing.filechooser.FileView {
+  public javax.swing.filechooser.FileView();
+  public java.lang.String getName(java.io.File);
+  public java.lang.String getDescription(java.io.File);
+  public java.lang.String getTypeDescription(java.io.File);
+  public javax.swing.Icon getIcon(java.io.File);
+  public java.lang.Boolean isTraversable(java.io.File);
+}

@@ -1,0 +1,9 @@
+Compiled from "SequentialScheduler.java"
+public final class jdk.internal.net.http.common.SequentialScheduler {
+  public jdk.internal.net.http.common.SequentialScheduler(jdk.internal.net.http.common.SequentialScheduler$RestartableTask);
+  public void runOrSchedule();
+  public void runOrSchedule(java.util.concurrent.Executor);
+  public boolean isStopped();
+  public void stop();
+  public static jdk.internal.net.http.common.SequentialScheduler synchronizedScheduler(java.lang.Runnable);
+}

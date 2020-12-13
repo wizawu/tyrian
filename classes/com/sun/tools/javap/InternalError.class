@@ -1,0 +1,6 @@
+Compiled from "InternalError.java"
+public class com.sun.tools.javap.InternalError extends java.lang.Error {
+  public final java.lang.Object[] args;
+  com.sun.tools.javap.InternalError(java.lang.Throwable, java.lang.Object...);
+  com.sun.tools.javap.InternalError(java.lang.Object...);
+}

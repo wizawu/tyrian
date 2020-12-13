@@ -1,0 +1,35 @@
+Compiled from "EAttribute.java"
+public final class sun.font.EAttribute extends java.lang.Enum<sun.font.EAttribute> {
+  public static final sun.font.EAttribute EFAMILY;
+  public static final sun.font.EAttribute EWEIGHT;
+  public static final sun.font.EAttribute EWIDTH;
+  public static final sun.font.EAttribute EPOSTURE;
+  public static final sun.font.EAttribute ESIZE;
+  public static final sun.font.EAttribute ETRANSFORM;
+  public static final sun.font.EAttribute ESUPERSCRIPT;
+  public static final sun.font.EAttribute EFONT;
+  public static final sun.font.EAttribute ECHAR_REPLACEMENT;
+  public static final sun.font.EAttribute EFOREGROUND;
+  public static final sun.font.EAttribute EBACKGROUND;
+  public static final sun.font.EAttribute EUNDERLINE;
+  public static final sun.font.EAttribute ESTRIKETHROUGH;
+  public static final sun.font.EAttribute ERUN_DIRECTION;
+  public static final sun.font.EAttribute EBIDI_EMBEDDING;
+  public static final sun.font.EAttribute EJUSTIFICATION;
+  public static final sun.font.EAttribute EINPUT_METHOD_HIGHLIGHT;
+  public static final sun.font.EAttribute EINPUT_METHOD_UNDERLINE;
+  public static final sun.font.EAttribute ESWAP_COLORS;
+  public static final sun.font.EAttribute ENUMERIC_SHAPING;
+  public static final sun.font.EAttribute EKERNING;
+  public static final sun.font.EAttribute ELIGATURES;
+  public static final sun.font.EAttribute ETRACKING;
+  public static final sun.font.EAttribute EBASELINE_TRANSFORM;
+  final int mask;
+  final java.awt.font.TextAttribute att;
+  static final sun.font.EAttribute[] atts;
+  public static sun.font.EAttribute[] values();
+  public static sun.font.EAttribute valueOf(java.lang.String);
+  public static sun.font.EAttribute forAttribute(java.text.AttributedCharacterIterator$Attribute);
+  public java.lang.String toString();
+  static {};
+}

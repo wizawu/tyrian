@@ -1,0 +1,11 @@
+Compiled from "Connections.java"
+final class com.sun.jndi.ldap.pool.Connections implements com.sun.jndi.ldap.pool.PoolCallback {
+  com.sun.jndi.ldap.pool.Connections(java.lang.Object, int, int, int, com.sun.jndi.ldap.pool.PooledConnectionFactory) throws javax.naming.NamingException;
+  synchronized com.sun.jndi.ldap.pool.PooledConnection get(long, com.sun.jndi.ldap.pool.PooledConnectionFactory) throws javax.naming.NamingException;
+  public synchronized boolean releasePooledConnection(com.sun.jndi.ldap.pool.PooledConnection);
+  public synchronized boolean removePooledConnection(com.sun.jndi.ldap.pool.PooledConnection);
+  boolean expire(long);
+  synchronized void close();
+  java.lang.String getStats();
+  static {};
+}

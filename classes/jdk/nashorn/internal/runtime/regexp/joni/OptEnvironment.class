@@ -1,0 +1,9 @@
+Compiled from "OptEnvironment.java"
+final class jdk.nashorn.internal.runtime.regexp.joni.OptEnvironment {
+  final jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen mmd;
+  int options;
+  int caseFoldFlag;
+  jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment scanEnv;
+  jdk.nashorn.internal.runtime.regexp.joni.OptEnvironment();
+  void copy(jdk.nashorn.internal.runtime.regexp.joni.OptEnvironment);
+}

@@ -1,0 +1,4 @@
+Compiled from "Logger.java"
+public interface jdk.nashorn.internal.runtime.logging.Logger extends java.lang.annotation.Annotation {
+  public abstract java.lang.String name();
+}

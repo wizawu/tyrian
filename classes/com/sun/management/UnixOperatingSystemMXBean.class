@@ -1,0 +1,5 @@
+Compiled from "UnixOperatingSystemMXBean.java"
+public interface com.sun.management.UnixOperatingSystemMXBean extends com.sun.management.OperatingSystemMXBean {
+  public abstract long getOpenFileDescriptorCount();
+  public abstract long getMaxFileDescriptorCount();
+}

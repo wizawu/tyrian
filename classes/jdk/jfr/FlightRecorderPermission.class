@@ -1,0 +1,5 @@
+Compiled from "FlightRecorderPermission.java"
+public final class jdk.jfr.FlightRecorderPermission extends java.security.BasicPermission {
+  public jdk.jfr.FlightRecorderPermission(java.lang.String);
+  static {};
+}

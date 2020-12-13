@@ -1,0 +1,14 @@
+Compiled from "ModuleBootstrap.java"
+public final class jdk.internal.module.ModuleBootstrap {
+  public static jdk.internal.module.ModulePatcher patcher();
+  public static java.lang.module.ModuleFinder unlimitedFinder();
+  public static java.lang.module.ModuleFinder limitedFinder();
+  public static java.lang.ModuleLayer boot() throws java.lang.Exception;
+  static void fail(java.lang.String);
+  static void warn(java.lang.String);
+  static void warnUnknownModule(java.lang.String, java.lang.String);
+  static java.lang.String unableToParse(java.lang.String, java.lang.String, java.lang.String);
+  static java.lang.String option(java.lang.String);
+  static <T> java.util.Iterator<T> concat(java.util.Iterator<T>, java.util.Iterator<T>);
+  static {};
+}

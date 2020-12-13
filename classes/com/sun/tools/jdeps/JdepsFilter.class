@@ -1,0 +1,14 @@
+Compiled from "JdepsFilter.java"
+public class com.sun.tools.jdeps.JdepsFilter implements com.sun.tools.classfile.Dependency$Filter,com.sun.tools.jdeps.Analyzer$Filter {
+  public static final com.sun.tools.jdeps.JdepsFilter DEFAULT_FILTER;
+  public boolean matches(java.lang.String);
+  public boolean matches(com.sun.tools.jdeps.Archive);
+  public boolean hasIncludePattern();
+  public boolean hasTargetFilter();
+  public java.util.Set<java.lang.String> requiresFilter();
+  public boolean accepts(com.sun.tools.classfile.Dependency);
+  public boolean accepts(com.sun.tools.classfile.Dependency$Location, com.sun.tools.jdeps.Archive, com.sun.tools.classfile.Dependency$Location, com.sun.tools.jdeps.Archive);
+  public boolean isJDKInternalPackage(com.sun.tools.jdeps.Module, java.lang.String);
+  public java.lang.String toString();
+  static {};
+}

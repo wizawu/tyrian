@@ -1,0 +1,13 @@
+Compiled from "SAXParseException.java"
+public class jdk.internal.org.xml.sax.SAXParseException extends jdk.internal.org.xml.sax.SAXException {
+  static final long serialVersionUID;
+  public jdk.internal.org.xml.sax.SAXParseException(java.lang.String, jdk.internal.org.xml.sax.Locator);
+  public jdk.internal.org.xml.sax.SAXParseException(java.lang.String, jdk.internal.org.xml.sax.Locator, java.lang.Exception);
+  public jdk.internal.org.xml.sax.SAXParseException(java.lang.String, java.lang.String, java.lang.String, int, int);
+  public jdk.internal.org.xml.sax.SAXParseException(java.lang.String, java.lang.String, java.lang.String, int, int, java.lang.Exception);
+  public java.lang.String getPublicId();
+  public java.lang.String getSystemId();
+  public int getLineNumber();
+  public int getColumnNumber();
+  public java.lang.String toString();
+}

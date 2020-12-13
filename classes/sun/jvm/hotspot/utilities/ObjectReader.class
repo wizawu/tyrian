@@ -1,0 +1,36 @@
+Compiled from "ObjectReader.java"
+public class sun.jvm.hotspot.utilities.ObjectReader {
+  protected java.lang.String javaLangString;
+  protected java.lang.String javaUtilHashtableEntry;
+  protected java.lang.String javaUtilHashtable;
+  protected java.lang.String javaUtilProperties;
+  protected final java.lang.ClassLoader cl;
+  protected java.util.Map oopToObjMap;
+  protected java.util.Map fieldMap;
+  public sun.jvm.hotspot.utilities.ObjectReader(java.lang.ClassLoader);
+  public sun.jvm.hotspot.utilities.ObjectReader();
+  static void debugPrintln(java.lang.String);
+  static void debugPrintStackTrace(java.lang.Exception);
+  public java.lang.Object readObject(sun.jvm.hotspot.oops.Oop) throws java.lang.ClassNotFoundException;
+  protected final java.lang.Object getDefaultPrimitiveValue(java.lang.Class);
+  protected java.lang.String javaLangString();
+  protected java.lang.String javaUtilHashtableEntry();
+  protected java.lang.String javaUtilHashtable();
+  protected java.lang.String javaUtilProperties();
+  protected java.lang.Object getHashtable(sun.jvm.hotspot.oops.Instance);
+  public java.lang.Object readInstance(sun.jvm.hotspot.oops.Instance) throws java.lang.ClassNotFoundException;
+  public java.lang.Object readPrimitiveArray(sun.jvm.hotspot.oops.TypeArray);
+  protected final boolean isRobust(sun.jvm.hotspot.debugger.OopHandle);
+  public java.lang.Object readObjectArray(sun.jvm.hotspot.oops.ObjArray) throws java.lang.ClassNotFoundException;
+  public java.lang.Class readClass(sun.jvm.hotspot.oops.InstanceKlass) throws java.lang.ClassNotFoundException;
+  public java.lang.Object readMethodOrConstructor(sun.jvm.hotspot.oops.Method) throws java.lang.NoSuchMethodException, java.lang.ClassNotFoundException;
+  public java.lang.reflect.Method readMethod(sun.jvm.hotspot.oops.Method) throws java.lang.NoSuchMethodException, java.lang.ClassNotFoundException;
+  public java.lang.reflect.Constructor readConstructor(sun.jvm.hotspot.oops.Method) throws java.lang.NoSuchMethodException, java.lang.ClassNotFoundException;
+  public java.lang.reflect.Field readField(sun.jvm.hotspot.oops.Field) throws java.lang.NoSuchFieldException, java.lang.ClassNotFoundException;
+  protected void putIntoObjTable(sun.jvm.hotspot.oops.Oop, java.lang.Object);
+  protected java.lang.Object getFromObjTable(sun.jvm.hotspot.oops.Oop);
+  protected void putIntoObjTable(sun.jvm.hotspot.oops.Metadata, java.lang.Object);
+  protected java.lang.Object getFromObjTable(sun.jvm.hotspot.oops.Metadata);
+  protected java.lang.Class[] getParamTypes(sun.jvm.hotspot.oops.Symbol);
+  static {};
+}

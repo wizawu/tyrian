@@ -1,0 +1,10 @@
+Compiled from "CheckAnnotationAdapter.java"
+public class jdk.internal.org.objectweb.asm.util.CheckAnnotationAdapter extends jdk.internal.org.objectweb.asm.AnnotationVisitor {
+  public jdk.internal.org.objectweb.asm.util.CheckAnnotationAdapter(jdk.internal.org.objectweb.asm.AnnotationVisitor);
+  jdk.internal.org.objectweb.asm.util.CheckAnnotationAdapter(jdk.internal.org.objectweb.asm.AnnotationVisitor, boolean);
+  public void visit(java.lang.String, java.lang.Object);
+  public void visitEnum(java.lang.String, java.lang.String, java.lang.String);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitAnnotation(java.lang.String, java.lang.String);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitArray(java.lang.String);
+  public void visitEnd();
+}

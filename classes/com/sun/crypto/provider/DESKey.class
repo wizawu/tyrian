@@ -1,0 +1,11 @@
+Compiled from "DESKey.java"
+final class com.sun.crypto.provider.DESKey implements javax.crypto.SecretKey {
+  static final long serialVersionUID;
+  com.sun.crypto.provider.DESKey(byte[]) throws java.security.InvalidKeyException;
+  com.sun.crypto.provider.DESKey(byte[], int) throws java.security.InvalidKeyException;
+  public byte[] getEncoded();
+  public java.lang.String getAlgorithm();
+  public java.lang.String getFormat();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

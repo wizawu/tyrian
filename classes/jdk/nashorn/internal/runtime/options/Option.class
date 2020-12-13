@@ -1,0 +1,7 @@
+Compiled from "Option.java"
+public class jdk.nashorn.internal.runtime.options.Option<T> {
+  protected T value;
+  jdk.nashorn.internal.runtime.options.Option(T);
+  public T getValue();
+  public java.lang.String toString();
+}

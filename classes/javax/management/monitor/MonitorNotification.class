@@ -1,0 +1,18 @@
+Compiled from "MonitorNotification.java"
+public class javax.management.monitor.MonitorNotification extends javax.management.Notification {
+  public static final java.lang.String OBSERVED_OBJECT_ERROR;
+  public static final java.lang.String OBSERVED_ATTRIBUTE_ERROR;
+  public static final java.lang.String OBSERVED_ATTRIBUTE_TYPE_ERROR;
+  public static final java.lang.String THRESHOLD_ERROR;
+  public static final java.lang.String RUNTIME_ERROR;
+  public static final java.lang.String THRESHOLD_VALUE_EXCEEDED;
+  public static final java.lang.String THRESHOLD_HIGH_VALUE_EXCEEDED;
+  public static final java.lang.String THRESHOLD_LOW_VALUE_EXCEEDED;
+  public static final java.lang.String STRING_TO_COMPARE_VALUE_MATCHED;
+  public static final java.lang.String STRING_TO_COMPARE_VALUE_DIFFERED;
+  javax.management.monitor.MonitorNotification(java.lang.String, java.lang.Object, long, long, java.lang.String, javax.management.ObjectName, java.lang.String, java.lang.Object, java.lang.Object);
+  public javax.management.ObjectName getObservedObject();
+  public java.lang.String getObservedAttribute();
+  public java.lang.Object getDerivedGauge();
+  public java.lang.Object getTrigger();
+}

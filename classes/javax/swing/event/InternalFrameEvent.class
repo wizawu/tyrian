@@ -1,0 +1,15 @@
+Compiled from "InternalFrameEvent.java"
+public class javax.swing.event.InternalFrameEvent extends java.awt.AWTEvent {
+  public static final int INTERNAL_FRAME_FIRST;
+  public static final int INTERNAL_FRAME_LAST;
+  public static final int INTERNAL_FRAME_OPENED;
+  public static final int INTERNAL_FRAME_CLOSING;
+  public static final int INTERNAL_FRAME_CLOSED;
+  public static final int INTERNAL_FRAME_ICONIFIED;
+  public static final int INTERNAL_FRAME_DEICONIFIED;
+  public static final int INTERNAL_FRAME_ACTIVATED;
+  public static final int INTERNAL_FRAME_DEACTIVATED;
+  public javax.swing.event.InternalFrameEvent(javax.swing.JInternalFrame, int);
+  public java.lang.String paramString();
+  public javax.swing.JInternalFrame getInternalFrame();
+}

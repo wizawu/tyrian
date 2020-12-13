@@ -1,0 +1,7 @@
+Compiled from "PKIX.java"
+class sun.security.provider.certpath.PKIX {
+  static boolean isDSAPublicKeyWithoutParams(java.security.PublicKey);
+  static sun.security.provider.certpath.PKIX$ValidatorParams checkParams(java.security.cert.CertPath, java.security.cert.CertPathParameters) throws java.security.InvalidAlgorithmParameterException;
+  static sun.security.provider.certpath.PKIX$BuilderParams checkBuilderParams(java.security.cert.CertPathParameters) throws java.security.InvalidAlgorithmParameterException;
+  static {};
+}

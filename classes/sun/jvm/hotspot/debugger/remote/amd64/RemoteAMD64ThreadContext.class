@@ -1,0 +1,6 @@
+Compiled from "RemoteAMD64ThreadContext.java"
+public class sun.jvm.hotspot.debugger.remote.amd64.RemoteAMD64ThreadContext extends sun.jvm.hotspot.debugger.amd64.AMD64ThreadContext {
+  public sun.jvm.hotspot.debugger.remote.amd64.RemoteAMD64ThreadContext(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient);
+  public void setRegisterAsAddress(int, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address getRegisterAsAddress(int);
+}

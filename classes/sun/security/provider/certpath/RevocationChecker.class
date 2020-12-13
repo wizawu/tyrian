@@ -1,0 +1,14 @@
+Compiled from "RevocationChecker.java"
+class sun.security.provider.certpath.RevocationChecker extends java.security.cert.PKIXRevocationChecker {
+  sun.security.provider.certpath.RevocationChecker();
+  sun.security.provider.certpath.RevocationChecker(java.security.cert.TrustAnchor, sun.security.provider.certpath.PKIX$ValidatorParams) throws java.security.cert.CertPathValidatorException;
+  void init(java.security.cert.TrustAnchor, sun.security.provider.certpath.PKIX$ValidatorParams) throws java.security.cert.CertPathValidatorException;
+  public void init(boolean) throws java.security.cert.CertPathValidatorException;
+  public boolean isForwardCheckingSupported();
+  public java.util.Set<java.lang.String> getSupportedExtensions();
+  public java.util.List<java.security.cert.CertPathValidatorException> getSoftFailExceptions();
+  public void check(java.security.cert.Certificate, java.util.Collection<java.lang.String>) throws java.security.cert.CertPathValidatorException;
+  static boolean isCausedByNetworkIssue(java.lang.String, java.security.cert.CertStoreException);
+  static boolean certCanSignCrl(java.security.cert.X509Certificate);
+  static {};
+}

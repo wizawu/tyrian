@@ -1,0 +1,12 @@
+Compiled from "RecordedEvent.java"
+public final class jdk.jfr.consumer.RecordedEvent extends jdk.jfr.consumer.RecordedObject {
+  final long endTime;
+  jdk.jfr.consumer.RecordedEvent(jdk.jfr.EventType, java.util.List<jdk.jfr.ValueDescriptor>, java.lang.Object[], long, long, jdk.jfr.consumer.TimeConverter);
+  public jdk.jfr.consumer.RecordedStackTrace getStackTrace();
+  public jdk.jfr.consumer.RecordedThread getThread();
+  public jdk.jfr.EventType getEventType();
+  public java.time.Instant getStartTime();
+  public java.time.Instant getEndTime();
+  public java.time.Duration getDuration();
+  public java.util.List<jdk.jfr.ValueDescriptor> getFields();
+}

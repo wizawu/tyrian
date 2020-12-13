@@ -1,0 +1,6 @@
+Compiled from "Main.java"
+public class com.sun.tools.script.shell.Main {
+  public com.sun.tools.script.shell.Main();
+  public static void main(java.lang.String[]);
+  static {};
+}

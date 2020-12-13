@@ -1,0 +1,9 @@
+Compiled from "WaitDispatchSupport.java"
+class java.awt.WaitDispatchSupport implements java.awt.SecondaryLoop {
+  public java.awt.WaitDispatchSupport(java.awt.EventDispatchThread);
+  public java.awt.WaitDispatchSupport(java.awt.EventDispatchThread, java.awt.Conditional);
+  public java.awt.WaitDispatchSupport(java.awt.EventDispatchThread, java.awt.Conditional, java.awt.EventFilter, long);
+  public boolean enter();
+  public boolean exit();
+  static {};
+}

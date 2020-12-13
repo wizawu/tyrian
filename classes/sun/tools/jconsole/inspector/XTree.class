@@ -1,0 +1,13 @@
+Compiled from "XTree.java"
+public class sun.tools.jconsole.inspector.XTree extends javax.swing.JTree {
+  public sun.tools.jconsole.inspector.XTree(sun.tools.jconsole.MBeansTab);
+  public sun.tools.jconsole.inspector.XTree(javax.swing.tree.TreeNode, sun.tools.jconsole.MBeansTab);
+  public synchronized void removeAll();
+  public synchronized void removeMBeanFromView(javax.management.ObjectName);
+  public boolean hasMetadataNodes(javax.swing.tree.DefaultMutableTreeNode);
+  public boolean isMetadataNode(javax.swing.tree.DefaultMutableTreeNode);
+  public synchronized void addMBeansToView(java.util.Set<javax.management.ObjectName>);
+  public synchronized void addMBeanToView(javax.management.ObjectName);
+  public void addMetadataNodes(javax.swing.tree.DefaultMutableTreeNode);
+  static {};
+}

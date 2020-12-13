@@ -1,0 +1,17 @@
+Compiled from "DropTargetDropEvent.java"
+public class java.awt.dnd.DropTargetDropEvent extends java.awt.dnd.DropTargetEvent {
+  public java.awt.dnd.DropTargetDropEvent(java.awt.dnd.DropTargetContext, java.awt.Point, int, int);
+  public java.awt.dnd.DropTargetDropEvent(java.awt.dnd.DropTargetContext, java.awt.Point, int, int, boolean);
+  public java.awt.Point getLocation();
+  public java.awt.datatransfer.DataFlavor[] getCurrentDataFlavors();
+  public java.util.List<java.awt.datatransfer.DataFlavor> getCurrentDataFlavorsAsList();
+  public boolean isDataFlavorSupported(java.awt.datatransfer.DataFlavor);
+  public int getSourceActions();
+  public int getDropAction();
+  public java.awt.datatransfer.Transferable getTransferable();
+  public void acceptDrop(int);
+  public void rejectDrop();
+  public void dropComplete(boolean);
+  public boolean isLocalTransfer();
+  static {};
+}

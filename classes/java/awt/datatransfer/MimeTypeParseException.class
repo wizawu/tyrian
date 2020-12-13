@@ -1,0 +1,5 @@
+Compiled from "MimeTypeParseException.java"
+public class java.awt.datatransfer.MimeTypeParseException extends java.lang.Exception {
+  public java.awt.datatransfer.MimeTypeParseException();
+  public java.awt.datatransfer.MimeTypeParseException(java.lang.String);
+}

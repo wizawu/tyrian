@@ -1,0 +1,6 @@
+Compiled from "PosixFilePermissions.java"
+public final class java.nio.file.attribute.PosixFilePermissions {
+  public static java.lang.String toString(java.util.Set<java.nio.file.attribute.PosixFilePermission>);
+  public static java.util.Set<java.nio.file.attribute.PosixFilePermission> fromString(java.lang.String);
+  public static java.nio.file.attribute.FileAttribute<java.util.Set<java.nio.file.attribute.PosixFilePermission>> asFileAttribute(java.util.Set<java.nio.file.attribute.PosixFilePermission>);
+}

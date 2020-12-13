@@ -1,0 +1,12 @@
+Compiled from "MethodTree.java"
+public interface com.sun.source.tree.MethodTree extends com.sun.source.tree.Tree {
+  public abstract com.sun.source.tree.ModifiersTree getModifiers();
+  public abstract javax.lang.model.element.Name getName();
+  public abstract com.sun.source.tree.Tree getReturnType();
+  public abstract java.util.List<? extends com.sun.source.tree.TypeParameterTree> getTypeParameters();
+  public abstract java.util.List<? extends com.sun.source.tree.VariableTree> getParameters();
+  public abstract com.sun.source.tree.VariableTree getReceiverParameter();
+  public abstract java.util.List<? extends com.sun.source.tree.ExpressionTree> getThrows();
+  public abstract com.sun.source.tree.BlockTree getBody();
+  public abstract com.sun.source.tree.Tree getDefaultValue();
+}

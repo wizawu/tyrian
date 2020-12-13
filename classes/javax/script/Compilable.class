@@ -1,0 +1,5 @@
+Compiled from "Compilable.java"
+public interface javax.script.Compilable {
+  public abstract javax.script.CompiledScript compile(java.lang.String) throws javax.script.ScriptException;
+  public abstract javax.script.CompiledScript compile(java.io.Reader) throws javax.script.ScriptException;
+}

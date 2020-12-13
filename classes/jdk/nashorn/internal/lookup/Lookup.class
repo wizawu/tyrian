@@ -1,0 +1,19 @@
+Compiled from "Lookup.java"
+public final class jdk.nashorn.internal.lookup.Lookup {
+  public static final jdk.nashorn.internal.lookup.MethodHandleFunctionality MH;
+  public static final java.lang.invoke.MethodHandle EMPTY_GETTER;
+  public static final java.lang.invoke.MethodHandle EMPTY_SETTER;
+  public static final java.lang.invoke.MethodHandle TYPE_ERROR_THROWER;
+  public static final java.lang.invoke.MethodType GET_OBJECT_TYPE;
+  public static final java.lang.invoke.MethodType SET_OBJECT_TYPE;
+  public static final java.lang.invoke.MethodType GET_PRIMITIVE_TYPE;
+  public static final java.lang.invoke.MethodType SET_PRIMITIVE_TYPE;
+  static final boolean $assertionsDisabled;
+  public static java.lang.Object emptyGetter(java.lang.Object);
+  public static void emptySetter(java.lang.Object, java.lang.Object);
+  public static java.lang.invoke.MethodHandle emptyGetter(java.lang.Class<?>);
+  public static java.lang.Object typeErrorThrower(java.lang.Object);
+  public static java.lang.invoke.MethodHandle filterArgumentType(java.lang.invoke.MethodHandle, int, java.lang.Class<?>);
+  public static java.lang.invoke.MethodHandle filterReturnType(java.lang.invoke.MethodHandle, java.lang.Class<?>);
+  static {};
+}

@@ -1,0 +1,7 @@
+Compiled from "CSV.java"
+public class com.sun.tools.jdeprscan.CSV {
+  public com.sun.tools.jdeprscan.CSV();
+  static java.lang.String quote(java.lang.String);
+  public static void write(java.io.PrintStream, java.lang.Object...);
+  public static java.util.List<java.lang.String> split(java.lang.String);
+}

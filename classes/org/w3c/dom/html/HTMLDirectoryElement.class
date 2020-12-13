@@ -1,0 +1,5 @@
+Compiled from "HTMLDirectoryElement.java"
+public interface org.w3c.dom.html.HTMLDirectoryElement extends org.w3c.dom.html.HTMLElement {
+  public abstract boolean getCompact();
+  public abstract void setCompact(boolean);
+}

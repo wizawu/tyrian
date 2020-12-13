@@ -1,0 +1,15 @@
+Compiled from "SimpleMethodHandle.java"
+final class java.lang.invoke.SimpleMethodHandle extends java.lang.invoke.BoundMethodHandle {
+  static java.lang.invoke.BoundMethodHandle$SpeciesData BMH_SPECIES;
+  static java.lang.invoke.BoundMethodHandle make(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm);
+  java.lang.invoke.BoundMethodHandle$SpeciesData speciesData();
+  java.lang.invoke.BoundMethodHandle copyWith(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm);
+  java.lang.String internalProperties();
+  final java.lang.invoke.BoundMethodHandle copyWithExtendL(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm, java.lang.Object);
+  final java.lang.invoke.BoundMethodHandle copyWithExtendI(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm, int);
+  final java.lang.invoke.BoundMethodHandle copyWithExtendJ(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm, long);
+  final java.lang.invoke.BoundMethodHandle copyWithExtendF(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm, float);
+  final java.lang.invoke.BoundMethodHandle copyWithExtendD(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm, double);
+  java.lang.Object internalProperties();
+  java.lang.invoke.MethodHandle copyWith(java.lang.invoke.MethodType, java.lang.invoke.LambdaForm);
+}

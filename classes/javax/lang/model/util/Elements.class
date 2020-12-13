@@ -1,0 +1,29 @@
+Compiled from "Elements.java"
+public interface javax.lang.model.util.Elements {
+  public abstract javax.lang.model.element.PackageElement getPackageElement(java.lang.CharSequence);
+  public default javax.lang.model.element.PackageElement getPackageElement(javax.lang.model.element.ModuleElement, java.lang.CharSequence);
+  public default java.util.Set<? extends javax.lang.model.element.PackageElement> getAllPackageElements(java.lang.CharSequence);
+  public abstract javax.lang.model.element.TypeElement getTypeElement(java.lang.CharSequence);
+  public default javax.lang.model.element.TypeElement getTypeElement(javax.lang.model.element.ModuleElement, java.lang.CharSequence);
+  public default java.util.Set<? extends javax.lang.model.element.TypeElement> getAllTypeElements(java.lang.CharSequence);
+  public default javax.lang.model.element.ModuleElement getModuleElement(java.lang.CharSequence);
+  public default java.util.Set<? extends javax.lang.model.element.ModuleElement> getAllModuleElements();
+  public abstract java.util.Map<? extends javax.lang.model.element.ExecutableElement, ? extends javax.lang.model.element.AnnotationValue> getElementValuesWithDefaults(javax.lang.model.element.AnnotationMirror);
+  public abstract java.lang.String getDocComment(javax.lang.model.element.Element);
+  public abstract boolean isDeprecated(javax.lang.model.element.Element);
+  public default javax.lang.model.util.Elements$Origin getOrigin(javax.lang.model.element.Element);
+  public default javax.lang.model.util.Elements$Origin getOrigin(javax.lang.model.AnnotatedConstruct, javax.lang.model.element.AnnotationMirror);
+  public default javax.lang.model.util.Elements$Origin getOrigin(javax.lang.model.element.ModuleElement, javax.lang.model.element.ModuleElement$Directive);
+  public default boolean isBridge(javax.lang.model.element.ExecutableElement);
+  public abstract javax.lang.model.element.Name getBinaryName(javax.lang.model.element.TypeElement);
+  public abstract javax.lang.model.element.PackageElement getPackageOf(javax.lang.model.element.Element);
+  public default javax.lang.model.element.ModuleElement getModuleOf(javax.lang.model.element.Element);
+  public abstract java.util.List<? extends javax.lang.model.element.Element> getAllMembers(javax.lang.model.element.TypeElement);
+  public abstract java.util.List<? extends javax.lang.model.element.AnnotationMirror> getAllAnnotationMirrors(javax.lang.model.element.Element);
+  public abstract boolean hides(javax.lang.model.element.Element, javax.lang.model.element.Element);
+  public abstract boolean overrides(javax.lang.model.element.ExecutableElement, javax.lang.model.element.ExecutableElement, javax.lang.model.element.TypeElement);
+  public abstract java.lang.String getConstantExpression(java.lang.Object);
+  public abstract void printElements(java.io.Writer, javax.lang.model.element.Element...);
+  public abstract javax.lang.model.element.Name getName(java.lang.CharSequence);
+  public abstract boolean isFunctionalInterface(javax.lang.model.element.TypeElement);
+}

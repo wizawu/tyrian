@@ -1,0 +1,22 @@
+Compiled from "CodeRangeBuffer.java"
+public final class jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer implements java.lang.Cloneable {
+  int[] p;
+  int used;
+  public jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer();
+  public boolean isInCodeRange(int);
+  public java.lang.String toString();
+  public void expand(int);
+  public void ensureSize(int);
+  protected void moveLeft(int, int, int);
+  public void writeCodePoint(int, int);
+  public jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer clone();
+  public static jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer addCodeRangeToBuff(jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer, int, int);
+  public static jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer addCodeRange(jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer, jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment, int, int);
+  protected static jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer setAllMultiByteRange(jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer);
+  public static jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer addAllMultiByteRange(jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer);
+  public static jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer notCodeRangeBuff(jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer);
+  public static jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer orCodeRangeBuff(jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer, boolean, jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer, boolean);
+  public static jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer andCodeRange1(jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer, int, int, int[], int);
+  public static jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer andCodeRangeBuff(jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer, boolean, jdk.nashorn.internal.runtime.regexp.joni.CodeRangeBuffer, boolean);
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+}

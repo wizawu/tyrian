@@ -1,0 +1,7 @@
+Compiled from "MidiDeviceProvider.java"
+public abstract class javax.sound.midi.spi.MidiDeviceProvider {
+  public javax.sound.midi.spi.MidiDeviceProvider();
+  public boolean isDeviceSupported(javax.sound.midi.MidiDevice$Info);
+  public abstract javax.sound.midi.MidiDevice$Info[] getDeviceInfo();
+  public abstract javax.sound.midi.MidiDevice getDevice(javax.sound.midi.MidiDevice$Info);
+}

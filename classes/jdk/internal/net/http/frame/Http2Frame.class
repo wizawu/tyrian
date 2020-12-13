@@ -1,0 +1,17 @@
+Compiled from "Http2Frame.java"
+public abstract class jdk.internal.net.http.frame.Http2Frame {
+  public static final int FRAME_HEADER_SIZE;
+  protected int streamid;
+  protected int flags;
+  public jdk.internal.net.http.frame.Http2Frame(int, int);
+  public int streamid();
+  public void setFlag(int);
+  public int getFlags();
+  public boolean getFlag(int);
+  public void streamid(int);
+  public int type();
+  int length();
+  public static java.lang.String asString(int);
+  public java.lang.String toString();
+  public java.lang.String flagAsString(int);
+}

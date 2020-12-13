@@ -1,0 +1,20 @@
+Compiled from "Annotation.java"
+public class sun.jvm.hotspot.ui.Annotation {
+  public sun.jvm.hotspot.ui.Annotation(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address, java.lang.String);
+  public sun.jvm.hotspot.utilities.Interval getInterval();
+  public sun.jvm.hotspot.debugger.Address getLowAddress();
+  public sun.jvm.hotspot.debugger.Address getHighAddress();
+  public void draw(java.awt.Graphics);
+  public void setColor(java.awt.Color);
+  public java.awt.Color getColor();
+  public void computeWidthAndHeight(java.awt.Graphics);
+  public int getWidth();
+  public int getHeight();
+  public void setXAndY(int, int);
+  public void setX(int);
+  public int getX();
+  public void setY(int);
+  public int getY();
+  public java.awt.Rectangle getBounds();
+  public java.lang.String toString();
+}

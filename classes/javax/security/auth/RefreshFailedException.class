@@ -1,0 +1,5 @@
+Compiled from "RefreshFailedException.java"
+public class javax.security.auth.RefreshFailedException extends java.lang.Exception {
+  public javax.security.auth.RefreshFailedException();
+  public javax.security.auth.RefreshFailedException(java.lang.String);
+}

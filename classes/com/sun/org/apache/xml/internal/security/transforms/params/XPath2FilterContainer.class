@@ -1,0 +1,20 @@
+Compiled from "XPath2FilterContainer.java"
+public class com.sun.org.apache.xml.internal.security.transforms.params.XPath2FilterContainer extends com.sun.org.apache.xml.internal.security.utils.ElementProxy implements com.sun.org.apache.xml.internal.security.transforms.TransformParam {
+  public static final java.lang.String INTERSECT;
+  public static final java.lang.String SUBTRACT;
+  public static final java.lang.String UNION;
+  public static final java.lang.String _TAG_XPATH2;
+  public static final java.lang.String XPathFilter2NS;
+  public static com.sun.org.apache.xml.internal.security.transforms.params.XPath2FilterContainer newInstanceIntersect(org.w3c.dom.Document, java.lang.String);
+  public static com.sun.org.apache.xml.internal.security.transforms.params.XPath2FilterContainer newInstanceSubtract(org.w3c.dom.Document, java.lang.String);
+  public static com.sun.org.apache.xml.internal.security.transforms.params.XPath2FilterContainer newInstanceUnion(org.w3c.dom.Document, java.lang.String);
+  public static org.w3c.dom.NodeList newInstances(org.w3c.dom.Document, java.lang.String[][]);
+  public static com.sun.org.apache.xml.internal.security.transforms.params.XPath2FilterContainer newInstance(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public boolean isIntersect();
+  public boolean isSubtract();
+  public boolean isUnion();
+  public java.lang.String getXPathFilterStr();
+  public org.w3c.dom.Node getXPathFilterTextNode();
+  public final java.lang.String getBaseLocalName();
+  public final java.lang.String getBaseNamespace();
+}

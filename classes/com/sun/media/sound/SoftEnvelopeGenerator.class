@@ -1,0 +1,19 @@
+Compiled from "SoftEnvelopeGenerator.java"
+public final class com.sun.media.sound.SoftEnvelopeGenerator implements com.sun.media.sound.SoftProcess {
+  public static final int EG_OFF;
+  public static final int EG_DELAY;
+  public static final int EG_ATTACK;
+  public static final int EG_HOLD;
+  public static final int EG_DECAY;
+  public static final int EG_SUSTAIN;
+  public static final int EG_RELEASE;
+  public static final int EG_SHUTDOWN;
+  public static final int EG_END;
+  int max_count;
+  int used_count;
+  public com.sun.media.sound.SoftEnvelopeGenerator();
+  public void reset();
+  public void init(com.sun.media.sound.SoftSynthesizer);
+  public double[] get(int, java.lang.String);
+  public void processControlLogic();
+}

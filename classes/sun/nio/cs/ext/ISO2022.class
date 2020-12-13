@@ -1,0 +1,6 @@
+Compiled from "ISO2022.java"
+abstract class sun.nio.cs.ext.ISO2022 extends java.nio.charset.Charset {
+  public sun.nio.cs.ext.ISO2022(java.lang.String, java.lang.String[]);
+  public java.nio.charset.CharsetDecoder newDecoder();
+  public java.nio.charset.CharsetEncoder newEncoder();
+}

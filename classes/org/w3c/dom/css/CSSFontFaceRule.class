@@ -1,0 +1,4 @@
+Compiled from "CSSFontFaceRule.java"
+public interface org.w3c.dom.css.CSSFontFaceRule extends org.w3c.dom.css.CSSRule {
+  public abstract org.w3c.dom.css.CSSStyleDeclaration getStyle();
+}

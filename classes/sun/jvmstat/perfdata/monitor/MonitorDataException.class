@@ -1,0 +1,5 @@
+Compiled from "MonitorDataException.java"
+public class sun.jvmstat.perfdata.monitor.MonitorDataException extends sun.jvmstat.monitor.MonitorException {
+  public sun.jvmstat.perfdata.monitor.MonitorDataException();
+  public sun.jvmstat.perfdata.monitor.MonitorDataException(java.lang.String);
+}

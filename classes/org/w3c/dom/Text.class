@@ -1,0 +1,7 @@
+Compiled from "Text.java"
+public interface org.w3c.dom.Text extends org.w3c.dom.CharacterData {
+  public abstract org.w3c.dom.Text splitText(int) throws org.w3c.dom.DOMException;
+  public abstract boolean isElementContentWhitespace();
+  public abstract java.lang.String getWholeText();
+  public abstract org.w3c.dom.Text replaceWholeText(java.lang.String) throws org.w3c.dom.DOMException;
+}

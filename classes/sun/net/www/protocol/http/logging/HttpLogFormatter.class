@@ -1,0 +1,6 @@
+Compiled from "HttpLogFormatter.java"
+public class sun.net.www.protocol.http.logging.HttpLogFormatter extends java.util.logging.SimpleFormatter {
+  public sun.net.www.protocol.http.logging.HttpLogFormatter();
+  public java.lang.String format(java.util.logging.LogRecord);
+  static {};
+}

@@ -1,0 +1,9 @@
+Compiled from "MemoryMXBean.java"
+public interface java.lang.management.MemoryMXBean extends java.lang.management.PlatformManagedObject {
+  public abstract int getObjectPendingFinalizationCount();
+  public abstract java.lang.management.MemoryUsage getHeapMemoryUsage();
+  public abstract java.lang.management.MemoryUsage getNonHeapMemoryUsage();
+  public abstract boolean isVerbose();
+  public abstract void setVerbose(boolean);
+  public abstract void gc();
+}

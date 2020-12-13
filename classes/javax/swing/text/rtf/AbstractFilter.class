@@ -1,0 +1,17 @@
+Compiled from "AbstractFilter.java"
+abstract class javax.swing.text.rtf.AbstractFilter extends java.io.OutputStream {
+  protected char[] translationTable;
+  protected boolean[] specialsTable;
+  static final char[] latin1TranslationTable;
+  static final boolean[] noSpecialsTable;
+  static final boolean[] allSpecialsTable;
+  public void readFromStream(java.io.InputStream) throws java.io.IOException;
+  public void readFromReader(java.io.Reader) throws java.io.IOException;
+  public javax.swing.text.rtf.AbstractFilter();
+  public void write(int) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void write(java.lang.String) throws java.io.IOException;
+  protected abstract void write(char) throws java.io.IOException;
+  protected abstract void writeSpecial(int) throws java.io.IOException;
+  static {};
+}

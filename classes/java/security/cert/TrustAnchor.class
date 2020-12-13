@@ -1,0 +1,12 @@
+Compiled from "TrustAnchor.java"
+public class java.security.cert.TrustAnchor {
+  public java.security.cert.TrustAnchor(java.security.cert.X509Certificate, byte[]);
+  public java.security.cert.TrustAnchor(javax.security.auth.x500.X500Principal, java.security.PublicKey, byte[]);
+  public java.security.cert.TrustAnchor(java.lang.String, java.security.PublicKey, byte[]);
+  public final java.security.cert.X509Certificate getTrustedCert();
+  public final javax.security.auth.x500.X500Principal getCA();
+  public final java.lang.String getCAName();
+  public final java.security.PublicKey getCAPublicKey();
+  public final byte[] getNameConstraints();
+  public java.lang.String toString();
+}

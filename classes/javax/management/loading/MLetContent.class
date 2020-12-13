@@ -1,0 +1,14 @@
+Compiled from "MLetContent.java"
+public class javax.management.loading.MLetContent {
+  public javax.management.loading.MLetContent(java.net.URL, java.util.Map<java.lang.String, java.lang.String>, java.util.List<java.lang.String>, java.util.List<java.lang.String>);
+  public java.util.Map<java.lang.String, java.lang.String> getAttributes();
+  public java.net.URL getDocumentBase();
+  public java.net.URL getCodeBase();
+  public java.lang.String getJarFiles();
+  public java.lang.String getCode();
+  public java.lang.String getSerializedObject();
+  public java.lang.String getName();
+  public java.lang.String getVersion();
+  public java.util.List<java.lang.String> getParameterTypes();
+  public java.util.List<java.lang.String> getParameterValues();
+}

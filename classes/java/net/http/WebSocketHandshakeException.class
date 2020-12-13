@@ -1,0 +1,7 @@
+Compiled from "WebSocketHandshakeException.java"
+public final class java.net.http.WebSocketHandshakeException extends java.io.IOException {
+  public java.net.http.WebSocketHandshakeException(java.net.http.HttpResponse<?>);
+  public java.net.http.HttpResponse<?> getResponse();
+  public java.net.http.WebSocketHandshakeException initCause(java.lang.Throwable);
+  public java.lang.Throwable initCause(java.lang.Throwable);
+}

@@ -1,0 +1,6 @@
+Compiled from "ACONST_NULL.java"
+public class com.sun.org.apache.bcel.internal.generic.ACONST_NULL extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.PushInstruction,com.sun.org.apache.bcel.internal.generic.TypedInstruction {
+  public com.sun.org.apache.bcel.internal.generic.ACONST_NULL();
+  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

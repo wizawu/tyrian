@@ -1,0 +1,5 @@
+Compiled from "ClassPrepareEvent.java"
+public interface com.sun.jdi.event.ClassPrepareEvent extends com.sun.jdi.event.Event {
+  public abstract com.sun.jdi.ThreadReference thread();
+  public abstract com.sun.jdi.ReferenceType referenceType();
+}

@@ -1,0 +1,5 @@
+Compiled from "DebugVC50WrongNumericTypeException.java"
+public class sun.jvm.hotspot.debugger.win32.coff.DebugVC50WrongNumericTypeException extends java.lang.RuntimeException {
+  public sun.jvm.hotspot.debugger.win32.coff.DebugVC50WrongNumericTypeException();
+  public sun.jvm.hotspot.debugger.win32.coff.DebugVC50WrongNumericTypeException(java.lang.String);
+}

@@ -1,0 +1,7 @@
+Compiled from "NamingExceptionEvent.java"
+public class javax.naming.event.NamingExceptionEvent extends java.util.EventObject {
+  public javax.naming.event.NamingExceptionEvent(javax.naming.event.EventContext, javax.naming.NamingException);
+  public javax.naming.NamingException getException();
+  public javax.naming.event.EventContext getEventContext();
+  public void dispatch(javax.naming.event.NamingListener);
+}

@@ -1,0 +1,11 @@
+Compiled from "ElementIterator.java"
+public class javax.swing.text.ElementIterator implements java.lang.Cloneable {
+  public javax.swing.text.ElementIterator(javax.swing.text.Document);
+  public javax.swing.text.ElementIterator(javax.swing.text.Element);
+  public synchronized java.lang.Object clone();
+  public javax.swing.text.Element first();
+  public int depth();
+  public javax.swing.text.Element current();
+  public javax.swing.text.Element next();
+  public javax.swing.text.Element previous();
+}

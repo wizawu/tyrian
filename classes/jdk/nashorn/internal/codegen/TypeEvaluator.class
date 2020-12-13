@@ -1,0 +1,9 @@
+Compiled from "TypeEvaluator.java"
+final class jdk.nashorn.internal.codegen.TypeEvaluator {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.codegen.TypeEvaluator(jdk.nashorn.internal.codegen.Compiler, jdk.nashorn.internal.runtime.ScriptObject);
+  boolean hasStringPropertyIterator(jdk.nashorn.internal.ir.Expression);
+  jdk.nashorn.internal.codegen.types.Type getOptimisticType(jdk.nashorn.internal.ir.Optimistic);
+  void declareLocalSymbol(java.lang.String);
+  static {};
+}

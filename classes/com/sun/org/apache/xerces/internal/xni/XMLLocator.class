@@ -1,0 +1,12 @@
+Compiled from "XMLLocator.java"
+public interface com.sun.org.apache.xerces.internal.xni.XMLLocator {
+  public abstract java.lang.String getPublicId();
+  public abstract java.lang.String getLiteralSystemId();
+  public abstract java.lang.String getBaseSystemId();
+  public abstract java.lang.String getExpandedSystemId();
+  public abstract int getLineNumber();
+  public abstract int getColumnNumber();
+  public abstract int getCharacterOffset();
+  public abstract java.lang.String getEncoding();
+  public abstract java.lang.String getXMLVersion();
+}

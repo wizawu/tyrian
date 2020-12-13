@@ -1,0 +1,27 @@
+Compiled from "EnumSet.java"
+public abstract class java.util.EnumSet<E extends java.lang.Enum<E>> extends java.util.AbstractSet<E> implements java.lang.Cloneable, java.io.Serializable {
+  final java.lang.Class<E> elementType;
+  final java.lang.Enum<?>[] universe;
+  static java.lang.Enum<?>[] access$000();
+  java.util.EnumSet(java.lang.Class<E>, java.lang.Enum<?>[]);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> noneOf(java.lang.Class<E>);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> allOf(java.lang.Class<E>);
+  abstract void addAll();
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> copyOf(java.util.EnumSet<E>);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> copyOf(java.util.Collection<E>);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> complementOf(java.util.EnumSet<E>);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> of(E);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> of(E, E);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> of(E, E, E);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> of(E, E, E, E);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> of(E, E, E, E, E);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> of(E, E...);
+  public static <E extends java.lang.Enum<E>> java.util.EnumSet<E> range(E, E);
+  abstract void addRange(E, E);
+  public java.util.EnumSet<E> clone();
+  abstract void complement();
+  final void typeCheck(E);
+  java.lang.Object writeReplace();
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  static {};
+}

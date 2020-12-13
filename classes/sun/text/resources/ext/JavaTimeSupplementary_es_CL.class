@@ -1,0 +1,5 @@
+Compiled from "JavaTimeSupplementary_es_CL.java"
+public class sun.text.resources.ext.JavaTimeSupplementary_es_CL extends sun.util.resources.OpenListResourceBundle {
+  public sun.text.resources.ext.JavaTimeSupplementary_es_CL();
+  protected final java.lang.Object[][] getContents();
+}

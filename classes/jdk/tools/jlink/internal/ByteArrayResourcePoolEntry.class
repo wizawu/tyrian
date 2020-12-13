@@ -1,0 +1,8 @@
+Compiled from "ByteArrayResourcePoolEntry.java"
+class jdk.tools.jlink.internal.ByteArrayResourcePoolEntry extends jdk.tools.jlink.internal.AbstractResourcePoolEntry {
+  jdk.tools.jlink.internal.ByteArrayResourcePoolEntry(java.lang.String, java.lang.String, jdk.tools.jlink.plugin.ResourcePoolEntry$Type, byte[]);
+  public byte[] contentBytes();
+  public java.io.InputStream content();
+  public void write(java.io.OutputStream);
+  public long contentLength();
+}

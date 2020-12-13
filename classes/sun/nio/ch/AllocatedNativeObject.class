@@ -1,0 +1,5 @@
+Compiled from "AllocatedNativeObject.java"
+class sun.nio.ch.AllocatedNativeObject extends sun.nio.ch.NativeObject {
+  sun.nio.ch.AllocatedNativeObject(int, boolean);
+  synchronized void free();
+}

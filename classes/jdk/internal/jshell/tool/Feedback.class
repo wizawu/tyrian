@@ -1,0 +1,24 @@
+Compiled from "Feedback.java"
+class jdk.internal.jshell.tool.Feedback {
+  jdk.internal.jshell.tool.Feedback();
+  public boolean shouldDisplayCommandFluff();
+  public java.lang.String getPre();
+  public java.lang.String getPost();
+  public java.lang.String getErrorPre();
+  public java.lang.String getErrorPost();
+  public java.lang.String format(jdk.internal.jshell.tool.Feedback$FormatCase, jdk.internal.jshell.tool.Feedback$FormatAction, jdk.internal.jshell.tool.Feedback$FormatWhen, jdk.internal.jshell.tool.Feedback$FormatResolve, jdk.internal.jshell.tool.Feedback$FormatUnresolved, jdk.internal.jshell.tool.Feedback$FormatErrors, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List<java.lang.String>);
+  public java.lang.String format(java.lang.String, jdk.internal.jshell.tool.Feedback$FormatCase, jdk.internal.jshell.tool.Feedback$FormatAction, jdk.internal.jshell.tool.Feedback$FormatWhen, jdk.internal.jshell.tool.Feedback$FormatResolve, jdk.internal.jshell.tool.Feedback$FormatUnresolved, jdk.internal.jshell.tool.Feedback$FormatErrors, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List<java.lang.String>);
+  public java.lang.String truncateVarValue(java.lang.String);
+  public java.lang.String getPrompt(java.lang.String);
+  public java.lang.String getContinuationPrompt(java.lang.String);
+  public boolean setFeedback(jdk.internal.jshell.tool.MessageHandler, jdk.internal.jshell.tool.ArgTokenizer, java.util.function.Consumer<java.lang.String>);
+  public boolean setFormat(jdk.internal.jshell.tool.MessageHandler, jdk.internal.jshell.tool.ArgTokenizer);
+  public boolean setTruncation(jdk.internal.jshell.tool.MessageHandler, jdk.internal.jshell.tool.ArgTokenizer);
+  public boolean setMode(jdk.internal.jshell.tool.MessageHandler, jdk.internal.jshell.tool.ArgTokenizer, java.util.function.Consumer<java.lang.String>);
+  public boolean setPrompt(jdk.internal.jshell.tool.MessageHandler, jdk.internal.jshell.tool.ArgTokenizer);
+  public boolean restoreEncodedModes(jdk.internal.jshell.tool.MessageHandler, java.lang.String);
+  public void markModesReadOnly();
+  jdk.internal.jshell.tool.JShellTool$CompletionProvider modeCompletions();
+  jdk.internal.jshell.tool.JShellTool$CompletionProvider modeCompletions(jdk.internal.jshell.tool.JShellTool$CompletionProvider);
+  static {};
+}

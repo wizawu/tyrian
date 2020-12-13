@@ -1,0 +1,16 @@
+Compiled from "PropertyNode.java"
+public final class jdk.nashorn.internal.ir.PropertyNode extends jdk.nashorn.internal.ir.Node {
+  public jdk.nashorn.internal.ir.PropertyNode(long, int, jdk.nashorn.internal.ir.Expression, jdk.nashorn.internal.ir.Expression, jdk.nashorn.internal.ir.FunctionNode, jdk.nashorn.internal.ir.FunctionNode, boolean, boolean);
+  public java.lang.String getKeyName();
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public void toString(java.lang.StringBuilder, boolean);
+  public jdk.nashorn.internal.ir.FunctionNode getGetter();
+  public jdk.nashorn.internal.ir.PropertyNode setGetter(jdk.nashorn.internal.ir.FunctionNode);
+  public jdk.nashorn.internal.ir.Expression getKey();
+  public jdk.nashorn.internal.ir.FunctionNode getSetter();
+  public jdk.nashorn.internal.ir.PropertyNode setSetter(jdk.nashorn.internal.ir.FunctionNode);
+  public jdk.nashorn.internal.ir.Expression getValue();
+  public jdk.nashorn.internal.ir.PropertyNode setValue(jdk.nashorn.internal.ir.Expression);
+  public boolean isStatic();
+  public boolean isComputed();
+}

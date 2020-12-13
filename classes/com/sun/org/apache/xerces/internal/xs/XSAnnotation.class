@@ -1,0 +1,8 @@
+Compiled from "XSAnnotation.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSAnnotation extends com.sun.org.apache.xerces.internal.xs.XSObject {
+  public static final short W3C_DOM_ELEMENT;
+  public static final short SAX_CONTENTHANDLER;
+  public static final short W3C_DOM_DOCUMENT;
+  public abstract boolean writeAnnotation(java.lang.Object, short);
+  public abstract java.lang.String getAnnotationString();
+}

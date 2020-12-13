@@ -1,0 +1,9 @@
+Compiled from "CheckFieldAdapter.java"
+public class jdk.internal.org.objectweb.asm.util.CheckFieldAdapter extends jdk.internal.org.objectweb.asm.FieldVisitor {
+  public jdk.internal.org.objectweb.asm.util.CheckFieldAdapter(jdk.internal.org.objectweb.asm.FieldVisitor);
+  protected jdk.internal.org.objectweb.asm.util.CheckFieldAdapter(int, jdk.internal.org.objectweb.asm.FieldVisitor);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitAnnotation(java.lang.String, boolean);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitTypeAnnotation(int, jdk.internal.org.objectweb.asm.TypePath, java.lang.String, boolean);
+  public void visitAttribute(jdk.internal.org.objectweb.asm.Attribute);
+  public void visitEnd();
+}

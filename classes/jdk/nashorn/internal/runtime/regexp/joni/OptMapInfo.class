@@ -1,0 +1,17 @@
+Compiled from "OptMapInfo.java"
+final class jdk.nashorn.internal.runtime.regexp.joni.OptMapInfo {
+  final jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen mmd;
+  final jdk.nashorn.internal.runtime.regexp.joni.OptAnchorInfo anchor;
+  int value;
+  final byte[] map;
+  static final short[] ByteValTable;
+  jdk.nashorn.internal.runtime.regexp.joni.OptMapInfo();
+  void clear();
+  void copy(jdk.nashorn.internal.runtime.regexp.joni.OptMapInfo);
+  void addChar(int);
+  void addCharAmb(char[], int, int, int);
+  void select(jdk.nashorn.internal.runtime.regexp.joni.OptMapInfo);
+  void altMerge(jdk.nashorn.internal.runtime.regexp.joni.OptMapInfo);
+  static int positionValue(int);
+  static {};
+}

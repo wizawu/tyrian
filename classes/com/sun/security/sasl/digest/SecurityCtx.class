@@ -1,0 +1,5 @@
+Compiled from "SecurityCtx.java"
+interface com.sun.security.sasl.digest.SecurityCtx {
+  public abstract byte[] wrap(byte[], int, int) throws javax.security.sasl.SaslException;
+  public abstract byte[] unwrap(byte[], int, int) throws javax.security.sasl.SaslException;
+}

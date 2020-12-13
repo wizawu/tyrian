@@ -1,0 +1,8 @@
+Compiled from "Namespace.java"
+public class jdk.nashorn.internal.codegen.Namespace {
+  public jdk.nashorn.internal.codegen.Namespace();
+  public jdk.nashorn.internal.codegen.Namespace(jdk.nashorn.internal.codegen.Namespace);
+  public jdk.nashorn.internal.codegen.Namespace getParent();
+  public java.lang.String uniqueName(java.lang.String);
+  public java.lang.String toString();
+}

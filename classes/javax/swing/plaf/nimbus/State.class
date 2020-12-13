@@ -1,0 +1,19 @@
+Compiled from "State.java"
+public abstract class javax.swing.plaf.nimbus.State<T extends javax.swing.JComponent> {
+  static final java.util.Map<java.lang.String, javax.swing.plaf.nimbus.State$StandardState> standardStates;
+  static final javax.swing.plaf.nimbus.State<javax.swing.JComponent> Enabled;
+  static final javax.swing.plaf.nimbus.State<javax.swing.JComponent> MouseOver;
+  static final javax.swing.plaf.nimbus.State<javax.swing.JComponent> Pressed;
+  static final javax.swing.plaf.nimbus.State<javax.swing.JComponent> Disabled;
+  static final javax.swing.plaf.nimbus.State<javax.swing.JComponent> Focused;
+  static final javax.swing.plaf.nimbus.State<javax.swing.JComponent> Selected;
+  static final javax.swing.plaf.nimbus.State<javax.swing.JComponent> Default;
+  protected javax.swing.plaf.nimbus.State(java.lang.String);
+  public java.lang.String toString();
+  boolean isInState(T, int);
+  protected abstract boolean isInState(T);
+  java.lang.String getName();
+  static boolean isStandardStateName(java.lang.String);
+  static javax.swing.plaf.nimbus.State$StandardState getStandardState(java.lang.String);
+  static {};
+}

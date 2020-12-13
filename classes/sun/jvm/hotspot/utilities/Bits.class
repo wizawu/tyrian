@@ -1,0 +1,21 @@
+Compiled from "Bits.java"
+public class sun.jvm.hotspot.utilities.Bits {
+  public static final int AllBits;
+  public static final int NoBits;
+  public static final int OneBit;
+  public static final int BitsPerByte;
+  public static final int BitsPerInt;
+  public static final int LogBytesPerInt;
+  public static final int LogBytesPerLong;
+  public sun.jvm.hotspot.utilities.Bits();
+  public static int setBits(int, int);
+  public static int clearBits(int, int);
+  public static int nthBit(int);
+  public static int setNthBit(int, int);
+  public static int clearNthBit(int, int);
+  public static boolean isSetNthBit(int, int);
+  public static int rightNBits(int);
+  public static int maskBits(int, int);
+  public static long maskBitsLong(long, long);
+  public static int roundTo(int, int);
+}

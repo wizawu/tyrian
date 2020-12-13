@@ -1,0 +1,5 @@
+Compiled from "ImageStrings.java"
+public interface jdk.internal.jimage.ImageStrings {
+  public abstract java.lang.String get(int);
+  public abstract int add(java.lang.String);
+}

@@ -1,0 +1,18 @@
+Compiled from "AttList.java"
+public class com.sun.org.apache.xml.internal.utils.AttList implements org.xml.sax.Attributes {
+  org.w3c.dom.NamedNodeMap m_attrs;
+  int m_lastIndex;
+  public com.sun.org.apache.xml.internal.utils.AttList(org.w3c.dom.NamedNodeMap);
+  public int getLength();
+  public java.lang.String getURI(int);
+  public java.lang.String getLocalName(int);
+  public java.lang.String getQName(int);
+  public java.lang.String getType(int);
+  public java.lang.String getValue(int);
+  public java.lang.String getType(java.lang.String);
+  public java.lang.String getType(java.lang.String, java.lang.String);
+  public java.lang.String getValue(java.lang.String);
+  public java.lang.String getValue(java.lang.String, java.lang.String);
+  public int getIndex(java.lang.String, java.lang.String);
+  public int getIndex(java.lang.String);
+}

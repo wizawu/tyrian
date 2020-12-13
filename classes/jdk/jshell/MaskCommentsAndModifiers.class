@@ -1,0 +1,8 @@
+Compiled from "MaskCommentsAndModifiers.java"
+class jdk.jshell.MaskCommentsAndModifiers {
+  jdk.jshell.MaskCommentsAndModifiers(java.lang.String, boolean);
+  java.lang.String cleared();
+  java.lang.String mask();
+  boolean endsWithOpenComment();
+  static {};
+}

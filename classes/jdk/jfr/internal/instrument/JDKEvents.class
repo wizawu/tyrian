@@ -1,0 +1,9 @@
+Compiled from "JDKEvents.java"
+public final class jdk.jfr.internal.instrument.JDKEvents {
+  public jdk.jfr.internal.instrument.JDKEvents();
+  public static synchronized void initialize();
+  public static void addInstrumentation();
+  public static byte[] retransformCallback(java.lang.Class<?>, byte[]) throws java.lang.Throwable;
+  public static void remove();
+  static {};
+}

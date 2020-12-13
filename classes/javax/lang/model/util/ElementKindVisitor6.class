@@ -1,0 +1,26 @@
+Compiled from "ElementKindVisitor6.java"
+public class javax.lang.model.util.ElementKindVisitor6<R, P> extends javax.lang.model.util.SimpleElementVisitor6<R, P> {
+  static final boolean $assertionsDisabled;
+  protected javax.lang.model.util.ElementKindVisitor6();
+  protected javax.lang.model.util.ElementKindVisitor6(R);
+  public R visitPackage(javax.lang.model.element.PackageElement, P);
+  public R visitType(javax.lang.model.element.TypeElement, P);
+  public R visitTypeAsAnnotationType(javax.lang.model.element.TypeElement, P);
+  public R visitTypeAsClass(javax.lang.model.element.TypeElement, P);
+  public R visitTypeAsEnum(javax.lang.model.element.TypeElement, P);
+  public R visitTypeAsInterface(javax.lang.model.element.TypeElement, P);
+  public R visitVariable(javax.lang.model.element.VariableElement, P);
+  public R visitVariableAsEnumConstant(javax.lang.model.element.VariableElement, P);
+  public R visitVariableAsExceptionParameter(javax.lang.model.element.VariableElement, P);
+  public R visitVariableAsField(javax.lang.model.element.VariableElement, P);
+  public R visitVariableAsLocalVariable(javax.lang.model.element.VariableElement, P);
+  public R visitVariableAsParameter(javax.lang.model.element.VariableElement, P);
+  public R visitVariableAsResourceVariable(javax.lang.model.element.VariableElement, P);
+  public R visitExecutable(javax.lang.model.element.ExecutableElement, P);
+  public R visitExecutableAsConstructor(javax.lang.model.element.ExecutableElement, P);
+  public R visitExecutableAsInstanceInit(javax.lang.model.element.ExecutableElement, P);
+  public R visitExecutableAsMethod(javax.lang.model.element.ExecutableElement, P);
+  public R visitExecutableAsStaticInit(javax.lang.model.element.ExecutableElement, P);
+  public R visitTypeParameter(javax.lang.model.element.TypeParameterElement, P);
+  static {};
+}

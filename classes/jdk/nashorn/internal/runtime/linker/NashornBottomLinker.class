@@ -1,0 +1,9 @@
+Compiled from "NashornBottomLinker.java"
+final class jdk.nashorn.internal.runtime.linker.NashornBottomLinker implements jdk.dynalink.linker.GuardingDynamicLinker,jdk.dynalink.linker.GuardingTypeConverterFactory {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.runtime.linker.NashornBottomLinker();
+  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
+  static java.lang.invoke.MethodHandle linkMissingBeanMember(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
+  public jdk.dynalink.linker.GuardedInvocation convertToType(java.lang.Class<?>, java.lang.Class<?>, java.util.function.Supplier<java.lang.invoke.MethodHandles$Lookup>) throws java.lang.Exception;
+  static {};
+}

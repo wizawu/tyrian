@@ -1,0 +1,9 @@
+Compiled from "XPathNodesImpl.java"
+public class com.sun.org.apache.xpath.internal.jaxp.XPathNodesImpl implements javax.xml.xpath.XPathNodes {
+  java.lang.Class<org.w3c.dom.Node> elementType;
+  org.w3c.dom.NodeList nodeList;
+  public com.sun.org.apache.xpath.internal.jaxp.XPathNodesImpl(org.w3c.dom.NodeList, java.lang.Class<org.w3c.dom.Node>);
+  public java.util.Iterator<org.w3c.dom.Node> iterator();
+  public int size();
+  public org.w3c.dom.Node get(int) throws javax.xml.xpath.XPathException;
+}

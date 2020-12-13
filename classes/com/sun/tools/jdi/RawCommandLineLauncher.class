@@ -1,0 +1,13 @@
+Compiled from "RawCommandLineLauncher.java"
+public class com.sun.tools.jdi.RawCommandLineLauncher extends com.sun.tools.jdi.AbstractLauncher {
+  com.sun.jdi.connect.spi.TransportService transportService;
+  com.sun.jdi.connect.Transport transport;
+  public com.sun.jdi.connect.spi.TransportService transportService();
+  public com.sun.jdi.connect.Transport transport();
+  public com.sun.tools.jdi.RawCommandLineLauncher();
+  public com.sun.jdi.VirtualMachine launch(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException, com.sun.jdi.connect.VMStartException;
+  public java.lang.String name();
+  public java.lang.String description();
+  public java.lang.String toString();
+  public java.util.Map defaultArguments();
+}

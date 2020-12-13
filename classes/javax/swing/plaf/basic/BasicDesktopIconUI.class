@@ -1,0 +1,23 @@
+Compiled from "BasicDesktopIconUI.java"
+public class javax.swing.plaf.basic.BasicDesktopIconUI extends javax.swing.plaf.DesktopIconUI {
+  protected javax.swing.JInternalFrame$JDesktopIcon desktopIcon;
+  protected javax.swing.JInternalFrame frame;
+  protected javax.swing.JComponent iconPane;
+  javax.swing.event.MouseInputListener mouseInputListener;
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.plaf.basic.BasicDesktopIconUI();
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void installComponents();
+  protected void uninstallComponents();
+  protected void installListeners();
+  protected void uninstallListeners();
+  protected void installDefaults();
+  protected void uninstallDefaults();
+  protected javax.swing.event.MouseInputListener createMouseInputListener();
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  public java.awt.Insets getInsets(javax.swing.JComponent);
+  public void deiconize();
+}

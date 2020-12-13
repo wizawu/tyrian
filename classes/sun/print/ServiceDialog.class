@@ -1,0 +1,20 @@
+Compiled from "ServiceDialog.java"
+public class sun.print.ServiceDialog extends javax.swing.JDialog implements java.awt.event.ActionListener {
+  public static final int WAITING;
+  public static final int APPROVE;
+  public static final int CANCEL;
+  static java.lang.Class<?> _keyEventClazz;
+  public sun.print.ServiceDialog(java.awt.GraphicsConfiguration, int, int, javax.print.PrintService[], int, javax.print.DocFlavor, javax.print.attribute.PrintRequestAttributeSet, java.awt.Window);
+  void initPrintDialog(int, int, javax.print.PrintService[], int, javax.print.DocFlavor, javax.print.attribute.PrintRequestAttributeSet);
+  public sun.print.ServiceDialog(java.awt.GraphicsConfiguration, int, int, javax.print.PrintService, javax.print.DocFlavor, javax.print.attribute.PrintRequestAttributeSet, java.awt.Window);
+  void initPageDialog(int, int, javax.print.PrintService, javax.print.DocFlavor, javax.print.attribute.PrintRequestAttributeSet);
+  public int getStatus();
+  public javax.print.attribute.PrintRequestAttributeSet getAttributes();
+  public javax.print.PrintService getPrintService();
+  public void dispose(int);
+  public void actionPerformed(java.awt.event.ActionEvent);
+  public static void initResource();
+  public static java.lang.String getMsg(java.lang.String);
+  public static void showNoPrintService(java.awt.GraphicsConfiguration);
+  static {};
+}

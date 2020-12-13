@@ -1,0 +1,6 @@
+Compiled from "UnsupportedCallbackException.java"
+public class javax.security.auth.callback.UnsupportedCallbackException extends java.lang.Exception {
+  public javax.security.auth.callback.UnsupportedCallbackException(javax.security.auth.callback.Callback);
+  public javax.security.auth.callback.UnsupportedCallbackException(javax.security.auth.callback.Callback, java.lang.String);
+  public javax.security.auth.callback.Callback getCallback();
+}

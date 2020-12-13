@@ -1,0 +1,30 @@
+Compiled from "MessageDigestAlgorithm.java"
+public class com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm extends com.sun.org.apache.xml.internal.security.algorithms.Algorithm {
+  public static final java.lang.String ALGO_ID_DIGEST_NOT_RECOMMENDED_MD5;
+  public static final java.lang.String ALGO_ID_DIGEST_SHA1;
+  public static final java.lang.String ALGO_ID_DIGEST_SHA224;
+  public static final java.lang.String ALGO_ID_DIGEST_SHA256;
+  public static final java.lang.String ALGO_ID_DIGEST_SHA384;
+  public static final java.lang.String ALGO_ID_DIGEST_SHA512;
+  public static final java.lang.String ALGO_ID_DIGEST_RIPEMD160;
+  public static final java.lang.String ALGO_ID_DIGEST_WHIRLPOOL;
+  public static final java.lang.String ALGO_ID_DIGEST_SHA3_224;
+  public static final java.lang.String ALGO_ID_DIGEST_SHA3_256;
+  public static final java.lang.String ALGO_ID_DIGEST_SHA3_384;
+  public static final java.lang.String ALGO_ID_DIGEST_SHA3_512;
+  public static com.sun.org.apache.xml.internal.security.algorithms.MessageDigestAlgorithm getInstance(org.w3c.dom.Document, java.lang.String) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public java.security.MessageDigest getAlgorithm();
+  public static boolean isEqual(byte[], byte[]);
+  public byte[] digest();
+  public byte[] digest(byte[]);
+  public int digest(byte[], int, int) throws java.security.DigestException;
+  public java.lang.String getJCEAlgorithmString();
+  public java.security.Provider getJCEProvider();
+  public int getDigestLength();
+  public void reset();
+  public void update(byte[]);
+  public void update(byte);
+  public void update(byte[], int, int);
+  public java.lang.String getBaseNamespace();
+  public java.lang.String getBaseLocalName();
+}

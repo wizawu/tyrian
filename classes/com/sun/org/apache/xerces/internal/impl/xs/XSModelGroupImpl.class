@@ -1,0 +1,24 @@
+Compiled from "XSModelGroupImpl.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.XSModelGroupImpl implements com.sun.org.apache.xerces.internal.xs.XSModelGroup {
+  public static final short MODELGROUP_CHOICE;
+  public static final short MODELGROUP_SEQUENCE;
+  public static final short MODELGROUP_ALL;
+  public short fCompositor;
+  public com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl[] fParticles;
+  public int fParticleCount;
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList fAnnotations;
+  public com.sun.org.apache.xerces.internal.impl.xs.XSModelGroupImpl();
+  public boolean isEmpty();
+  public int minEffectiveTotalRange();
+  public int maxEffectiveTotalRange();
+  public java.lang.String toString();
+  public void reset();
+  public short getType();
+  public java.lang.String getName();
+  public java.lang.String getNamespace();
+  public short getCompositor();
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList getParticles();
+  public com.sun.org.apache.xerces.internal.xs.XSAnnotation getAnnotation();
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+  public com.sun.org.apache.xerces.internal.xs.XSNamespaceItem getNamespaceItem();
+}

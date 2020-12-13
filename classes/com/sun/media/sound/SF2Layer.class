@@ -1,0 +1,15 @@
+Compiled from "SF2Layer.java"
+public final class com.sun.media.sound.SF2Layer extends javax.sound.midi.SoundbankResource {
+  java.lang.String name;
+  com.sun.media.sound.SF2GlobalRegion globalregion;
+  java.util.List<com.sun.media.sound.SF2LayerRegion> regions;
+  public com.sun.media.sound.SF2Layer(com.sun.media.sound.SF2Soundbank);
+  public com.sun.media.sound.SF2Layer();
+  public java.lang.Object getData();
+  public java.lang.String getName();
+  public void setName(java.lang.String);
+  public java.util.List<com.sun.media.sound.SF2LayerRegion> getRegions();
+  public com.sun.media.sound.SF2GlobalRegion getGlobalRegion();
+  public void setGlobalZone(com.sun.media.sound.SF2GlobalRegion);
+  public java.lang.String toString();
+}

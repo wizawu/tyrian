@@ -1,0 +1,17 @@
+Compiled from "SplitIntoFunctions.java"
+final class jdk.nashorn.internal.codegen.SplitIntoFunctions extends jdk.nashorn.internal.ir.visitor.NodeVisitor<jdk.nashorn.internal.ir.BlockLexicalContext> {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.codegen.SplitIntoFunctions(jdk.nashorn.internal.codegen.Compiler);
+  public boolean enterFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
+  public jdk.nashorn.internal.ir.Node leaveFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
+  protected jdk.nashorn.internal.ir.Node leaveDefault(jdk.nashorn.internal.ir.Node);
+  public boolean enterSplitNode(jdk.nashorn.internal.ir.SplitNode);
+  public jdk.nashorn.internal.ir.Node leaveSplitNode(jdk.nashorn.internal.ir.SplitNode);
+  public boolean enterVarNode(jdk.nashorn.internal.ir.VarNode);
+  public jdk.nashorn.internal.ir.Node leaveBlock(jdk.nashorn.internal.ir.Block);
+  public jdk.nashorn.internal.ir.Node leaveBreakNode(jdk.nashorn.internal.ir.BreakNode);
+  public jdk.nashorn.internal.ir.Node leaveContinueNode(jdk.nashorn.internal.ir.ContinueNode);
+  public jdk.nashorn.internal.ir.Node leaveJumpToInlinedFinally(jdk.nashorn.internal.ir.JumpToInlinedFinally);
+  public jdk.nashorn.internal.ir.Node leaveReturnNode(jdk.nashorn.internal.ir.ReturnNode);
+  static {};
+}

@@ -1,0 +1,9 @@
+Compiled from "CountDownLatch.java"
+public class java.util.concurrent.CountDownLatch {
+  public java.util.concurrent.CountDownLatch(int);
+  public void await() throws java.lang.InterruptedException;
+  public boolean await(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public void countDown();
+  public long getCount();
+  public java.lang.String toString();
+}

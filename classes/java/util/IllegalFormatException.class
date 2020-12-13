@@ -1,0 +1,4 @@
+Compiled from "IllegalFormatException.java"
+public class java.util.IllegalFormatException extends java.lang.IllegalArgumentException {
+  java.util.IllegalFormatException();
+}

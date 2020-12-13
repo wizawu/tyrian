@@ -1,0 +1,37 @@
+Compiled from "ParentNode.java"
+public abstract class com.sun.org.apache.xerces.internal.dom.ParentNode extends com.sun.org.apache.xerces.internal.dom.ChildNode {
+  static final long serialVersionUID;
+  protected com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl ownerDocument;
+  protected com.sun.org.apache.xerces.internal.dom.ChildNode firstChild;
+  protected transient com.sun.org.apache.xerces.internal.dom.NodeListCache fNodeListCache;
+  protected com.sun.org.apache.xerces.internal.dom.ParentNode(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl);
+  public com.sun.org.apache.xerces.internal.dom.ParentNode();
+  public org.w3c.dom.Node cloneNode(boolean);
+  public org.w3c.dom.Document getOwnerDocument();
+  com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl ownerDocument();
+  protected void setOwnerDocument(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl);
+  public boolean hasChildNodes();
+  public org.w3c.dom.NodeList getChildNodes();
+  public org.w3c.dom.Node getFirstChild();
+  public org.w3c.dom.Node getLastChild();
+  final com.sun.org.apache.xerces.internal.dom.ChildNode lastChild();
+  final void lastChild(com.sun.org.apache.xerces.internal.dom.ChildNode);
+  public org.w3c.dom.Node insertBefore(org.w3c.dom.Node, org.w3c.dom.Node) throws org.w3c.dom.DOMException;
+  org.w3c.dom.Node internalInsertBefore(org.w3c.dom.Node, org.w3c.dom.Node, boolean) throws org.w3c.dom.DOMException;
+  public org.w3c.dom.Node removeChild(org.w3c.dom.Node) throws org.w3c.dom.DOMException;
+  org.w3c.dom.Node internalRemoveChild(org.w3c.dom.Node, boolean) throws org.w3c.dom.DOMException;
+  public org.w3c.dom.Node replaceChild(org.w3c.dom.Node, org.w3c.dom.Node) throws org.w3c.dom.DOMException;
+  public java.lang.String getTextContent() throws org.w3c.dom.DOMException;
+  void getTextContent(java.lang.StringBuilder) throws org.w3c.dom.DOMException;
+  final boolean hasTextContent(org.w3c.dom.Node);
+  public void setTextContent(java.lang.String) throws org.w3c.dom.DOMException;
+  public int getLength();
+  public org.w3c.dom.Node item(int);
+  protected final org.w3c.dom.NodeList getChildNodesUnoptimized();
+  public void normalize();
+  public boolean isEqualNode(org.w3c.dom.Node);
+  public void setReadOnly(boolean, boolean);
+  protected void synchronizeChildren();
+  void checkNormalizationAfterInsert(com.sun.org.apache.xerces.internal.dom.ChildNode);
+  void checkNormalizationAfterRemove(com.sun.org.apache.xerces.internal.dom.ChildNode);
+}

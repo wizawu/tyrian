@@ -1,0 +1,4 @@
+Compiled from "DragGestureListener.java"
+public interface java.awt.dnd.DragGestureListener extends java.util.EventListener {
+  public abstract void dragGestureRecognized(java.awt.dnd.DragGestureEvent);
+}

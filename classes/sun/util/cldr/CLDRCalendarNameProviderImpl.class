@@ -1,0 +1,5 @@
+Compiled from "CLDRCalendarNameProviderImpl.java"
+public class sun.util.cldr.CLDRCalendarNameProviderImpl extends sun.util.locale.provider.CalendarNameProviderImpl implements sun.util.locale.provider.AvailableLanguageTags {
+  public sun.util.cldr.CLDRCalendarNameProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
+  public boolean isSupportedLocale(java.util.Locale);
+}

@@ -1,0 +1,5 @@
+Compiled from "DSAKeyPairGenerator.java"
+public interface java.security.interfaces.DSAKeyPairGenerator {
+  public abstract void initialize(java.security.interfaces.DSAParams, java.security.SecureRandom) throws java.security.InvalidParameterException;
+  public abstract void initialize(int, boolean, java.security.SecureRandom) throws java.security.InvalidParameterException;
+}

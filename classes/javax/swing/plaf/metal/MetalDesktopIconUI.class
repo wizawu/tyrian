@@ -1,0 +1,16 @@
+Compiled from "MetalDesktopIconUI.java"
+public class javax.swing.plaf.metal.MetalDesktopIconUI extends javax.swing.plaf.basic.BasicDesktopIconUI {
+  javax.swing.JButton button;
+  javax.swing.JLabel label;
+  javax.swing.plaf.metal.MetalDesktopIconUI$TitleListener titleListener;
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.plaf.metal.MetalDesktopIconUI();
+  protected void installDefaults();
+  protected void installComponents();
+  protected void uninstallComponents();
+  protected void installListeners();
+  protected void uninstallListeners();
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+}

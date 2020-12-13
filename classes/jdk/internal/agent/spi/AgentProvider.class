@@ -1,0 +1,9 @@
+Compiled from "AgentProvider.java"
+public abstract class jdk.internal.agent.spi.AgentProvider {
+  protected jdk.internal.agent.spi.AgentProvider();
+  public abstract java.lang.String getName();
+  public abstract void startAgent();
+  public abstract void startAgent(java.util.Properties);
+  public abstract boolean isActive();
+  public abstract void stopAgent();
+}

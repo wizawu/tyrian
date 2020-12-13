@@ -1,0 +1,6 @@
+Compiled from "DebugVC50SSSegMap.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSegMap extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
+  public abstract short getNumSegDesc();
+  public abstract short getNumLogicalSegDesc();
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugVC50SegDesc getSegDesc(int);
+}

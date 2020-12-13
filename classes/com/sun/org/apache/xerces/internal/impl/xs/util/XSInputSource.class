@@ -1,0 +1,9 @@
+Compiled from "XSInputSource.java"
+public final class com.sun.org.apache.xerces.internal.impl.xs.util.XSInputSource extends com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource {
+  public com.sun.org.apache.xerces.internal.impl.xs.util.XSInputSource(com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar[]);
+  public com.sun.org.apache.xerces.internal.impl.xs.util.XSInputSource(com.sun.org.apache.xerces.internal.xs.XSObject[]);
+  public com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar[] getGrammars();
+  public void setGrammars(com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar[]);
+  public com.sun.org.apache.xerces.internal.xs.XSObject[] getComponents();
+  public void setComponents(com.sun.org.apache.xerces.internal.xs.XSObject[]);
+}

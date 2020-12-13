@@ -1,0 +1,44 @@
+Compiled from "URI.java"
+public class com.sun.org.apache.xerces.internal.util.URI implements java.io.Serializable {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xerces.internal.util.URI();
+  public com.sun.org.apache.xerces.internal.util.URI(com.sun.org.apache.xerces.internal.util.URI);
+  public com.sun.org.apache.xerces.internal.util.URI(java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public com.sun.org.apache.xerces.internal.util.URI(java.lang.String, boolean) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public com.sun.org.apache.xerces.internal.util.URI(com.sun.org.apache.xerces.internal.util.URI, java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public com.sun.org.apache.xerces.internal.util.URI(com.sun.org.apache.xerces.internal.util.URI, java.lang.String, boolean) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public com.sun.org.apache.xerces.internal.util.URI(java.lang.String, java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public com.sun.org.apache.xerces.internal.util.URI(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public com.sun.org.apache.xerces.internal.util.URI(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public void absolutize(com.sun.org.apache.xerces.internal.util.URI);
+  public java.lang.String getScheme();
+  public java.lang.String getSchemeSpecificPart();
+  public java.lang.String getUserinfo();
+  public java.lang.String getHost();
+  public int getPort();
+  public java.lang.String getRegBasedAuthority();
+  public java.lang.String getAuthority();
+  public java.lang.String getPath(boolean, boolean);
+  public java.lang.String getPath();
+  public java.lang.String getQueryString();
+  public java.lang.String getFragment();
+  public void setScheme(java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public void setUserinfo(java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public void setHost(java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public void setPort(int) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public void setRegBasedAuthority(java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public void setPath(java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public void appendPath(java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public void setQueryString(java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public void setFragment(java.lang.String) throws com.sun.org.apache.xerces.internal.util.URI$MalformedURIException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public boolean isGenericURI();
+  public boolean isAbsoluteURI();
+  public static boolean isConformantSchemeName(java.lang.String);
+  public static boolean isWellFormedAddress(java.lang.String);
+  public static boolean isWellFormedIPv4Address(java.lang.String);
+  public static boolean isWellFormedIPv6Reference(java.lang.String);
+  static {};
+}

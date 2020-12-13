@@ -1,0 +1,10 @@
+Compiled from "DSAPublicKey.java"
+public class sun.security.provider.DSAPublicKey extends sun.security.x509.X509Key implements java.security.interfaces.DSAPublicKey,java.io.Serializable {
+  public sun.security.provider.DSAPublicKey();
+  public sun.security.provider.DSAPublicKey(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger) throws java.security.InvalidKeyException;
+  public sun.security.provider.DSAPublicKey(byte[]) throws java.security.InvalidKeyException;
+  public java.security.interfaces.DSAParams getParams();
+  public java.math.BigInteger getY();
+  public java.lang.String toString();
+  protected void parseKeyBits() throws java.security.InvalidKeyException;
+}

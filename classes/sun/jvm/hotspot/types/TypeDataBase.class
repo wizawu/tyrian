@@ -1,0 +1,25 @@
+Compiled from "TypeDataBase.java"
+public interface sun.jvm.hotspot.types.TypeDataBase {
+  public abstract sun.jvm.hotspot.types.Type lookupType(java.lang.String);
+  public abstract sun.jvm.hotspot.types.Type lookupType(java.lang.String, boolean);
+  public abstract java.lang.Integer lookupIntConstant(java.lang.String);
+  public abstract java.lang.Integer lookupIntConstant(java.lang.String, boolean);
+  public abstract java.lang.Long lookupLongConstant(java.lang.String);
+  public abstract java.lang.Long lookupLongConstant(java.lang.String, boolean);
+  public abstract sun.jvm.hotspot.types.Type getJBooleanType();
+  public abstract sun.jvm.hotspot.types.Type getJByteType();
+  public abstract sun.jvm.hotspot.types.Type getJCharType();
+  public abstract sun.jvm.hotspot.types.Type getJDoubleType();
+  public abstract sun.jvm.hotspot.types.Type getJFloatType();
+  public abstract sun.jvm.hotspot.types.Type getJIntType();
+  public abstract sun.jvm.hotspot.types.Type getJLongType();
+  public abstract sun.jvm.hotspot.types.Type getJShortType();
+  public abstract long getAddressSize();
+  public abstract long getOopSize();
+  public abstract boolean addressTypeIsEqualToType(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.types.Type);
+  public abstract sun.jvm.hotspot.types.Type guessTypeForAddress(sun.jvm.hotspot.debugger.Address);
+  public abstract sun.jvm.hotspot.types.Type findDynamicTypeForAddress(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.types.Type);
+  public abstract java.util.Iterator getTypes();
+  public abstract java.util.Iterator getIntConstants();
+  public abstract java.util.Iterator getLongConstants();
+}

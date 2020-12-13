@@ -1,0 +1,4 @@
+Compiled from "LongToIntFunction.java"
+public interface java.util.function.LongToIntFunction {
+  public abstract int applyAsInt(long);
+}

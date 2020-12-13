@@ -1,0 +1,8 @@
+Compiled from "TextComponentPrintable.java"
+public class sun.swing.text.TextComponentPrintable implements sun.swing.text.CountingPrintable {
+  static final boolean $assertionsDisabled;
+  public static java.awt.print.Printable getPrintable(javax.swing.text.JTextComponent, java.text.MessageFormat, java.text.MessageFormat);
+  public int getNumberOfPages();
+  public int print(java.awt.Graphics, java.awt.print.PageFormat, int) throws java.awt.print.PrinterException;
+  static {};
+}

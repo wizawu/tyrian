@@ -1,0 +1,8 @@
+Compiled from "SortedOps.java"
+final class java.util.stream.SortedOps {
+  static <T> java.util.stream.Stream<T> makeRef(java.util.stream.AbstractPipeline<?, T, ?>);
+  static <T> java.util.stream.Stream<T> makeRef(java.util.stream.AbstractPipeline<?, T, ?>, java.util.Comparator<? super T>);
+  static <T> java.util.stream.IntStream makeInt(java.util.stream.AbstractPipeline<?, java.lang.Integer, ?>);
+  static <T> java.util.stream.LongStream makeLong(java.util.stream.AbstractPipeline<?, java.lang.Long, ?>);
+  static <T> java.util.stream.DoubleStream makeDouble(java.util.stream.AbstractPipeline<?, java.lang.Double, ?>);
+}

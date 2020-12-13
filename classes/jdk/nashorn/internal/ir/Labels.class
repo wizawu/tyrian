@@ -1,0 +1,4 @@
+Compiled from "Labels.java"
+public interface jdk.nashorn.internal.ir.Labels {
+  public abstract java.util.List<jdk.nashorn.internal.codegen.Label> getLabels();
+}

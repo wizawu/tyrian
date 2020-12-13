@@ -1,0 +1,10 @@
+Compiled from "AugmentationsImpl.java"
+public class com.sun.org.apache.xerces.internal.util.AugmentationsImpl implements com.sun.org.apache.xerces.internal.xni.Augmentations {
+  public com.sun.org.apache.xerces.internal.util.AugmentationsImpl();
+  public java.lang.Object putItem(java.lang.String, java.lang.Object);
+  public java.lang.Object getItem(java.lang.String);
+  public java.lang.Object removeItem(java.lang.String);
+  public java.util.Enumeration<java.lang.Object> keys();
+  public void removeAllItems();
+  public java.lang.String toString();
+}

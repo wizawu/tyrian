@@ -1,0 +1,7 @@
+Compiled from "COFFException.java"
+public class sun.jvm.hotspot.debugger.win32.coff.COFFException extends java.lang.RuntimeException {
+  public sun.jvm.hotspot.debugger.win32.coff.COFFException();
+  public sun.jvm.hotspot.debugger.win32.coff.COFFException(java.lang.Throwable);
+  public sun.jvm.hotspot.debugger.win32.coff.COFFException(java.lang.String);
+  public sun.jvm.hotspot.debugger.win32.coff.COFFException(java.lang.String, java.lang.Throwable);
+}

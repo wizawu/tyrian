@@ -1,0 +1,10 @@
+Compiled from "JavaxSecurityAuthKerberosAccess.java"
+public interface sun.security.krb5.JavaxSecurityAuthKerberosAccess {
+  public abstract sun.security.krb5.internal.ktab.KeyTab keyTabTakeSnapshot(javax.security.auth.kerberos.KeyTab);
+  public abstract javax.security.auth.kerberos.KerberosPrincipal kerberosTicketGetClientAlias(javax.security.auth.kerberos.KerberosTicket);
+  public abstract void kerberosTicketSetClientAlias(javax.security.auth.kerberos.KerberosTicket, javax.security.auth.kerberos.KerberosPrincipal);
+  public abstract javax.security.auth.kerberos.KerberosPrincipal kerberosTicketGetServerAlias(javax.security.auth.kerberos.KerberosTicket);
+  public abstract void kerberosTicketSetServerAlias(javax.security.auth.kerberos.KerberosTicket, javax.security.auth.kerberos.KerberosPrincipal);
+  public abstract javax.security.auth.kerberos.KerberosTicket kerberosTicketGetProxy(javax.security.auth.kerberos.KerberosTicket);
+  public abstract void kerberosTicketSetProxy(javax.security.auth.kerberos.KerberosTicket, javax.security.auth.kerberos.KerberosTicket);
+}

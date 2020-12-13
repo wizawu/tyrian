@@ -1,0 +1,44 @@
+Compiled from "BootstrapLogger.java"
+public final class jdk.internal.logger.BootstrapLogger implements java.lang.System$Logger,sun.util.logging.PlatformLogger$Bridge,sun.util.logging.PlatformLogger$ConfigurableBridge {
+  final jdk.internal.logger.LazyLoggers$LazyLoggerAccessor holder;
+  static final boolean $assertionsDisabled;
+  jdk.internal.logger.BootstrapLogger(jdk.internal.logger.LazyLoggers$LazyLoggerAccessor);
+  void push(jdk.internal.logger.BootstrapLogger$LogEvent);
+  void flush(jdk.internal.logger.BootstrapLogger$LogEvent);
+  public java.lang.String getName();
+  boolean checkBootstrapping();
+  public boolean isLoggable(java.lang.System$Logger$Level);
+  public void log(java.lang.System$Logger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Throwable);
+  public void log(java.lang.System$Logger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Object...);
+  public void log(java.lang.System$Logger$Level, java.lang.String, java.lang.Throwable);
+  public void log(java.lang.System$Logger$Level, java.lang.String, java.lang.Object...);
+  public void log(java.lang.System$Logger$Level, java.util.function.Supplier<java.lang.String>);
+  public void log(java.lang.System$Logger$Level, java.lang.Object);
+  public void log(java.lang.System$Logger$Level, java.lang.String);
+  public void log(java.lang.System$Logger$Level, java.util.function.Supplier<java.lang.String>, java.lang.Throwable);
+  public boolean isLoggable(sun.util.logging.PlatformLogger$Level);
+  public boolean isEnabled();
+  public void log(sun.util.logging.PlatformLogger$Level, java.lang.String);
+  public void log(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.Throwable);
+  public void log(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.Object...);
+  public void log(sun.util.logging.PlatformLogger$Level, java.util.function.Supplier<java.lang.String>);
+  public void log(sun.util.logging.PlatformLogger$Level, java.lang.Throwable, java.util.function.Supplier<java.lang.String>);
+  public void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.String);
+  public void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.util.function.Supplier<java.lang.String>);
+  public void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.String, java.lang.Object...);
+  public void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.String, java.lang.Throwable);
+  public void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.Throwable, java.util.function.Supplier<java.lang.String>);
+  public void logrb(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.util.ResourceBundle, java.lang.String, java.lang.Object...);
+  public void logrb(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.util.ResourceBundle, java.lang.String, java.lang.Throwable);
+  public void logrb(sun.util.logging.PlatformLogger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Object...);
+  public void logrb(sun.util.logging.PlatformLogger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Throwable);
+  public sun.util.logging.PlatformLogger$ConfigurableBridge$LoggerConfiguration getLoggerConfiguration();
+  public static boolean isBooted();
+  public static synchronized boolean useLazyLoggers();
+  static java.lang.System$Logger getLogger(jdk.internal.logger.LazyLoggers$LazyLoggerAccessor);
+  static synchronized java.lang.System$Logger createSurrogateLogger(jdk.internal.logger.LazyLoggers$LazyLoggerAccessor);
+  public static void redirectTemporaryLoggers();
+  static void awaitPendingTasks();
+  static boolean isAlive();
+  static {};
+}

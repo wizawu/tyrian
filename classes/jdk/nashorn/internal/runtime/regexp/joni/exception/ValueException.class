@@ -1,0 +1,5 @@
+Compiled from "ValueException.java"
+public class jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException extends jdk.nashorn.internal.runtime.regexp.joni.exception.SyntaxException {
+  public jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException(java.lang.String);
+  public jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException(java.lang.String, java.lang.String);
+}

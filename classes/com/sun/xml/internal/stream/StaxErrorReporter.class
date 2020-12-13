@@ -1,0 +1,9 @@
+Compiled from "StaxErrorReporter.java"
+public class com.sun.xml.internal.stream.StaxErrorReporter extends com.sun.org.apache.xerces.internal.impl.XMLErrorReporter {
+  protected javax.xml.stream.XMLReporter fXMLReporter;
+  public com.sun.xml.internal.stream.StaxErrorReporter(com.sun.org.apache.xerces.internal.impl.PropertyManager);
+  public com.sun.xml.internal.stream.StaxErrorReporter();
+  public void reset(com.sun.org.apache.xerces.internal.impl.PropertyManager);
+  public java.lang.String reportError(com.sun.org.apache.xerces.internal.xni.XMLLocator, java.lang.String, java.lang.String, java.lang.Object[], short) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  javax.xml.stream.Location convertToStaxLocation(com.sun.org.apache.xerces.internal.xni.XMLLocator);
+}

@@ -1,0 +1,7 @@
+Compiled from "CertStoreException.java"
+public class java.security.cert.CertStoreException extends java.security.GeneralSecurityException {
+  public java.security.cert.CertStoreException();
+  public java.security.cert.CertStoreException(java.lang.String);
+  public java.security.cert.CertStoreException(java.lang.Throwable);
+  public java.security.cert.CertStoreException(java.lang.String, java.lang.Throwable);
+}

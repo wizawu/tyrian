@@ -1,0 +1,18 @@
+Compiled from "TemporalQueries.java"
+public final class java.time.temporal.TemporalQueries {
+  static final java.time.temporal.TemporalQuery<java.time.ZoneId> ZONE_ID;
+  static final java.time.temporal.TemporalQuery<java.time.chrono.Chronology> CHRONO;
+  static final java.time.temporal.TemporalQuery<java.time.temporal.TemporalUnit> PRECISION;
+  static final java.time.temporal.TemporalQuery<java.time.ZoneOffset> OFFSET;
+  static final java.time.temporal.TemporalQuery<java.time.ZoneId> ZONE;
+  static final java.time.temporal.TemporalQuery<java.time.LocalDate> LOCAL_DATE;
+  static final java.time.temporal.TemporalQuery<java.time.LocalTime> LOCAL_TIME;
+  public static java.time.temporal.TemporalQuery<java.time.ZoneId> zoneId();
+  public static java.time.temporal.TemporalQuery<java.time.chrono.Chronology> chronology();
+  public static java.time.temporal.TemporalQuery<java.time.temporal.TemporalUnit> precision();
+  public static java.time.temporal.TemporalQuery<java.time.ZoneId> zone();
+  public static java.time.temporal.TemporalQuery<java.time.ZoneOffset> offset();
+  public static java.time.temporal.TemporalQuery<java.time.LocalDate> localDate();
+  public static java.time.temporal.TemporalQuery<java.time.LocalTime> localTime();
+  static {};
+}

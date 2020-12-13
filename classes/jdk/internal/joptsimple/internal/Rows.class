@@ -1,0 +1,8 @@
+Compiled from "Rows.java"
+public class jdk.internal.joptsimple.internal.Rows {
+  public jdk.internal.joptsimple.internal.Rows(int, int);
+  public void add(java.lang.String, java.lang.String);
+  public void reset();
+  public void fitToWidth();
+  public java.lang.String render();
+}

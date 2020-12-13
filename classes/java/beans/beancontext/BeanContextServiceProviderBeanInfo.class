@@ -1,0 +1,4 @@
+Compiled from "BeanContextServiceProviderBeanInfo.java"
+public interface java.beans.beancontext.BeanContextServiceProviderBeanInfo extends java.beans.BeanInfo {
+  public abstract java.beans.BeanInfo[] getServicesBeanInfo();
+}

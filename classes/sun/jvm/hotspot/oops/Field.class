@@ -1,0 +1,31 @@
+Compiled from "Field.java"
+public class sun.jvm.hotspot.oops.Field {
+  sun.jvm.hotspot.oops.Field(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
+  sun.jvm.hotspot.oops.Field(sun.jvm.hotspot.oops.InstanceKlass, int);
+  public long getOffset();
+  public sun.jvm.hotspot.oops.FieldIdentifier getID();
+  public sun.jvm.hotspot.oops.Symbol getName();
+  public boolean isVMField();
+  public boolean isNamedField();
+  public void printOn(java.io.PrintStream);
+  public sun.jvm.hotspot.oops.InstanceKlass getFieldHolder();
+  public int getFieldIndex();
+  public long getAccessFlags();
+  public sun.jvm.hotspot.oops.AccessFlags getAccessFlagsObj();
+  public sun.jvm.hotspot.oops.FieldType getFieldType();
+  public sun.jvm.hotspot.oops.Symbol getSignature();
+  public sun.jvm.hotspot.oops.Symbol getGenericSignature();
+  public boolean hasInitialValue();
+  public boolean isPublic();
+  public boolean isPrivate();
+  public boolean isProtected();
+  public boolean isPackagePrivate();
+  public boolean isStatic();
+  public boolean isFinal();
+  public boolean isVolatile();
+  public boolean isTransient();
+  public boolean isSynthetic();
+  public boolean isEnumConstant();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

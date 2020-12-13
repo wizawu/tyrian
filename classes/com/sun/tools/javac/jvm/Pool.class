@@ -1,0 +1,16 @@
+Compiled from "Pool.java"
+public class com.sun.tools.javac.jvm.Pool {
+  public static final int MAX_ENTRIES;
+  public static final int MAX_STRING_LENGTH;
+  int pp;
+  java.lang.Object[] pool;
+  java.util.Map<java.lang.Object, java.lang.Integer> indices;
+  com.sun.tools.javac.code.Types types;
+  public com.sun.tools.javac.jvm.Pool(int, java.lang.Object[], com.sun.tools.javac.code.Types);
+  public com.sun.tools.javac.jvm.Pool(com.sun.tools.javac.code.Types);
+  public int numEntries();
+  public void reset();
+  public int put(java.lang.Object);
+  java.lang.Object makePoolValue(java.lang.Object);
+  public int get(java.lang.Object);
+}

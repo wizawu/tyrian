@@ -1,0 +1,9 @@
+Compiled from "FunctionExpressionTree.java"
+public interface jdk.nashorn.api.tree.FunctionExpressionTree extends jdk.nashorn.api.tree.ExpressionTree {
+  public abstract jdk.nashorn.api.tree.IdentifierTree getName();
+  public abstract java.util.List<? extends jdk.nashorn.api.tree.ExpressionTree> getParameters();
+  public abstract jdk.nashorn.api.tree.Tree getBody();
+  public abstract boolean isStrict();
+  public abstract boolean isArrow();
+  public abstract boolean isGenerator();
+}

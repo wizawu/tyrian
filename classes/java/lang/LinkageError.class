@@ -1,0 +1,6 @@
+Compiled from "LinkageError.java"
+public class java.lang.LinkageError extends java.lang.Error {
+  public java.lang.LinkageError();
+  public java.lang.LinkageError(java.lang.String);
+  public java.lang.LinkageError(java.lang.String, java.lang.Throwable);
+}

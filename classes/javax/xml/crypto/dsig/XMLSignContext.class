@@ -1,0 +1,3 @@
+Compiled from "XMLSignContext.java"
+public interface javax.xml.crypto.dsig.XMLSignContext extends javax.xml.crypto.XMLCryptoContext {
+}

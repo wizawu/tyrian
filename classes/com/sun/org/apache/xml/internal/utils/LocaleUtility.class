@@ -1,0 +1,7 @@
+Compiled from "LocaleUtility.java"
+public class com.sun.org.apache.xml.internal.utils.LocaleUtility {
+  public static final char IETF_SEPARATOR;
+  public static final java.lang.String EMPTY_STRING;
+  public com.sun.org.apache.xml.internal.utils.LocaleUtility();
+  public static java.util.Locale langToLocale(java.lang.String);
+}

@@ -1,0 +1,18 @@
+Compiled from "OutgoingHeaders.java"
+public class jdk.internal.net.http.frame.OutgoingHeaders<T> extends jdk.internal.net.http.frame.Http2Frame {
+  int streamDependency;
+  int weight;
+  boolean exclusive;
+  T attachment;
+  public static final int PRIORITY;
+  java.net.http.HttpHeaders user;
+  java.net.http.HttpHeaders system;
+  public jdk.internal.net.http.frame.OutgoingHeaders(java.net.http.HttpHeaders, java.net.http.HttpHeaders, T);
+  public void setPriority(int, boolean, int);
+  public int getStreamDependency();
+  public int getWeight();
+  public boolean getExclusive();
+  public T getAttachment();
+  public java.net.http.HttpHeaders getUserHeaders();
+  public java.net.http.HttpHeaders getSystemHeaders();
+}

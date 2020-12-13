@@ -1,0 +1,15 @@
+Compiled from "PosixFilePermission.java"
+public final class java.nio.file.attribute.PosixFilePermission extends java.lang.Enum<java.nio.file.attribute.PosixFilePermission> {
+  public static final java.nio.file.attribute.PosixFilePermission OWNER_READ;
+  public static final java.nio.file.attribute.PosixFilePermission OWNER_WRITE;
+  public static final java.nio.file.attribute.PosixFilePermission OWNER_EXECUTE;
+  public static final java.nio.file.attribute.PosixFilePermission GROUP_READ;
+  public static final java.nio.file.attribute.PosixFilePermission GROUP_WRITE;
+  public static final java.nio.file.attribute.PosixFilePermission GROUP_EXECUTE;
+  public static final java.nio.file.attribute.PosixFilePermission OTHERS_READ;
+  public static final java.nio.file.attribute.PosixFilePermission OTHERS_WRITE;
+  public static final java.nio.file.attribute.PosixFilePermission OTHERS_EXECUTE;
+  public static java.nio.file.attribute.PosixFilePermission[] values();
+  public static java.nio.file.attribute.PosixFilePermission valueOf(java.lang.String);
+  static {};
+}

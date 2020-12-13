@@ -1,0 +1,15 @@
+Compiled from "ContextNodeList.java"
+public interface com.sun.org.apache.xpath.internal.axes.ContextNodeList {
+  public abstract org.w3c.dom.Node getCurrentNode();
+  public abstract int getCurrentPos();
+  public abstract void reset();
+  public abstract void setShouldCacheNodes(boolean);
+  public abstract void runTo(int);
+  public abstract void setCurrentPos(int);
+  public abstract int size();
+  public abstract boolean isFresh();
+  public abstract org.w3c.dom.traversal.NodeIterator cloneWithReset() throws java.lang.CloneNotSupportedException;
+  public abstract java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public abstract int getLast();
+  public abstract void setLast(int);
+}

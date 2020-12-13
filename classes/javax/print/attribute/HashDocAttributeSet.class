@@ -1,0 +1,7 @@
+Compiled from "HashDocAttributeSet.java"
+public class javax.print.attribute.HashDocAttributeSet extends javax.print.attribute.HashAttributeSet implements javax.print.attribute.DocAttributeSet,java.io.Serializable {
+  public javax.print.attribute.HashDocAttributeSet();
+  public javax.print.attribute.HashDocAttributeSet(javax.print.attribute.DocAttribute);
+  public javax.print.attribute.HashDocAttributeSet(javax.print.attribute.DocAttribute[]);
+  public javax.print.attribute.HashDocAttributeSet(javax.print.attribute.DocAttributeSet);
+}

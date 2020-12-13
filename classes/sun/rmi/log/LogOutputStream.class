@@ -1,0 +1,8 @@
+Compiled from "LogOutputStream.java"
+public class sun.rmi.log.LogOutputStream extends java.io.OutputStream {
+  public sun.rmi.log.LogOutputStream(java.io.RandomAccessFile) throws java.io.IOException;
+  public void write(int) throws java.io.IOException;
+  public void write(byte[]) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public final void close() throws java.io.IOException;
+}

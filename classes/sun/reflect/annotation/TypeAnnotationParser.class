@@ -1,0 +1,13 @@
+Compiled from "TypeAnnotationParser.java"
+public final class sun.reflect.annotation.TypeAnnotationParser {
+  public sun.reflect.annotation.TypeAnnotationParser();
+  public static java.lang.reflect.AnnotatedType buildAnnotatedType(byte[], jdk.internal.reflect.ConstantPool, java.lang.reflect.AnnotatedElement, java.lang.Class<?>, java.lang.reflect.Type, sun.reflect.annotation.TypeAnnotation$TypeAnnotationTarget);
+  public static java.lang.reflect.AnnotatedType[] buildAnnotatedTypes(byte[], jdk.internal.reflect.ConstantPool, java.lang.reflect.AnnotatedElement, java.lang.Class<?>, java.lang.reflect.Type[], sun.reflect.annotation.TypeAnnotation$TypeAnnotationTarget);
+  public static java.lang.reflect.AnnotatedType buildAnnotatedSuperclass(byte[], jdk.internal.reflect.ConstantPool, java.lang.Class<?>);
+  public static java.lang.reflect.AnnotatedType[] buildAnnotatedInterfaces(byte[], jdk.internal.reflect.ConstantPool, java.lang.Class<?>);
+  public static <D extends java.lang.reflect.GenericDeclaration> java.lang.annotation.Annotation[] parseTypeVariableAnnotations(D, int);
+  public static <D extends java.lang.reflect.GenericDeclaration> java.lang.reflect.AnnotatedType[] parseAnnotatedBounds(java.lang.reflect.Type[], D, int);
+  static sun.reflect.annotation.TypeAnnotation[] parseAllTypeAnnotations(java.lang.reflect.AnnotatedElement);
+  static java.util.Map<java.lang.Class<? extends java.lang.annotation.Annotation>, java.lang.annotation.Annotation> mapTypeAnnotations(sun.reflect.annotation.TypeAnnotation[]);
+  static {};
+}

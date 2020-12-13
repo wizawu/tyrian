@@ -1,0 +1,7 @@
+Compiled from "TIFFNullDecompressor.java"
+public class com.sun.imageio.plugins.tiff.TIFFNullDecompressor extends com.sun.imageio.plugins.tiff.TIFFDecompressor {
+  public com.sun.imageio.plugins.tiff.TIFFNullDecompressor();
+  public void beginDecoding();
+  public void decode() throws java.io.IOException;
+  public void decodeRaw(byte[], int, int, int) throws java.io.IOException;
+}

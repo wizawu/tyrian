@@ -1,0 +1,13 @@
+Compiled from "Blit.java"
+public class sun.java2d.loops.Blit extends sun.java2d.loops.GraphicsPrimitive {
+  public static final java.lang.String methodSignature;
+  public static final int primTypeID;
+  public static sun.java2d.loops.Blit locate(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public static sun.java2d.loops.Blit getFromCache(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  protected sun.java2d.loops.Blit(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public sun.java2d.loops.Blit(long, sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public native void Blit(sun.java2d.SurfaceData, sun.java2d.SurfaceData, java.awt.Composite, sun.java2d.pipe.Region, int, int, int, int, int, int);
+  public sun.java2d.loops.GraphicsPrimitive makePrimitive(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
+  public sun.java2d.loops.GraphicsPrimitive traceWrap();
+  static {};
+}

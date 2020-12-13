@@ -1,0 +1,8 @@
+Compiled from "IOException.java"
+public class java.io.IOException extends java.lang.Exception {
+  static final long serialVersionUID;
+  public java.io.IOException();
+  public java.io.IOException(java.lang.String);
+  public java.io.IOException(java.lang.String, java.lang.Throwable);
+  public java.io.IOException(java.lang.Throwable);
+}

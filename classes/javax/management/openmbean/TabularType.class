@@ -1,0 +1,12 @@
+Compiled from "TabularType.java"
+public class javax.management.openmbean.TabularType extends javax.management.openmbean.OpenType<javax.management.openmbean.TabularData> {
+  static final long serialVersionUID;
+  public javax.management.openmbean.TabularType(java.lang.String, java.lang.String, javax.management.openmbean.CompositeType, java.lang.String[]) throws javax.management.openmbean.OpenDataException;
+  public javax.management.openmbean.CompositeType getRowType();
+  public java.util.List<java.lang.String> getIndexNames();
+  public boolean isValue(java.lang.Object);
+  boolean isAssignableFrom(javax.management.openmbean.OpenType<?>);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

@@ -1,0 +1,4 @@
+Compiled from "JavapFileManager.java"
+public class com.sun.tools.javap.JavapFileManager extends com.sun.tools.javac.file.JavacFileManager {
+  public static com.sun.tools.javap.JavapFileManager create(javax.tools.DiagnosticListener<? super javax.tools.JavaFileObject>, java.io.PrintWriter);
+}

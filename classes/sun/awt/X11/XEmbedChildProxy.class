@@ -1,0 +1,9 @@
+Compiled from "XEmbedChildProxy.java"
+public class sun.awt.X11.XEmbedChildProxy extends java.awt.Component {
+  long handle;
+  sun.awt.X11.XEmbeddingContainer container;
+  public sun.awt.X11.XEmbedChildProxy(sun.awt.X11.XEmbeddingContainer, long);
+  public void addNotify();
+  sun.awt.X11.XEmbeddingContainer getEmbeddingContainer();
+  long getHandle();
+}

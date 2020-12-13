@@ -1,0 +1,9 @@
+Compiled from "PrintJobListener.java"
+public interface javax.print.event.PrintJobListener {
+  public abstract void printDataTransferCompleted(javax.print.event.PrintJobEvent);
+  public abstract void printJobCompleted(javax.print.event.PrintJobEvent);
+  public abstract void printJobFailed(javax.print.event.PrintJobEvent);
+  public abstract void printJobCanceled(javax.print.event.PrintJobEvent);
+  public abstract void printJobNoMoreEvents(javax.print.event.PrintJobEvent);
+  public abstract void printJobRequiresAttention(javax.print.event.PrintJobEvent);
+}

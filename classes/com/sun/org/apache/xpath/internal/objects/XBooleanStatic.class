@@ -1,0 +1,6 @@
+Compiled from "XBooleanStatic.java"
+public class com.sun.org.apache.xpath.internal.objects.XBooleanStatic extends com.sun.org.apache.xpath.internal.objects.XBoolean {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.objects.XBooleanStatic(boolean);
+  public boolean equals(com.sun.org.apache.xpath.internal.objects.XObject);
+}

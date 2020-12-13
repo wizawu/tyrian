@@ -1,0 +1,12 @@
+Compiled from "RC5ParameterSpec.java"
+public class javax.crypto.spec.RC5ParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public javax.crypto.spec.RC5ParameterSpec(int, int, int);
+  public javax.crypto.spec.RC5ParameterSpec(int, int, int, byte[]);
+  public javax.crypto.spec.RC5ParameterSpec(int, int, int, byte[], int);
+  public int getVersion();
+  public int getRounds();
+  public int getWordSize();
+  public byte[] getIV();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

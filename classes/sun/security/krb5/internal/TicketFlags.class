@@ -1,0 +1,12 @@
+Compiled from "TicketFlags.java"
+public class sun.security.krb5.internal.TicketFlags extends sun.security.krb5.internal.util.KerberosFlags {
+  public sun.security.krb5.internal.TicketFlags();
+  public sun.security.krb5.internal.TicketFlags(boolean[]) throws sun.security.krb5.Asn1Exception;
+  public sun.security.krb5.internal.TicketFlags(int, byte[]) throws sun.security.krb5.Asn1Exception;
+  public sun.security.krb5.internal.TicketFlags(sun.security.util.DerValue) throws java.io.IOException, sun.security.krb5.Asn1Exception;
+  public static sun.security.krb5.internal.TicketFlags parse(sun.security.util.DerInputStream, byte, boolean) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public java.lang.Object clone();
+  public boolean match(sun.security.krb5.internal.LoginOptions);
+  public boolean match(sun.security.krb5.internal.TicketFlags);
+  public java.lang.String toString();
+}

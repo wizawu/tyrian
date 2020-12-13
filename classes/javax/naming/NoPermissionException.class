@@ -1,0 +1,5 @@
+Compiled from "NoPermissionException.java"
+public class javax.naming.NoPermissionException extends javax.naming.NamingSecurityException {
+  public javax.naming.NoPermissionException(java.lang.String);
+  public javax.naming.NoPermissionException();
+}

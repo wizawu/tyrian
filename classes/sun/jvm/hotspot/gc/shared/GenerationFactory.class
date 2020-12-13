@@ -1,0 +1,6 @@
+Compiled from "GenerationFactory.java"
+public class sun.jvm.hotspot.gc.shared.GenerationFactory {
+  public sun.jvm.hotspot.gc.shared.GenerationFactory();
+  public static sun.jvm.hotspot.gc.shared.Generation newObject(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "AclFileAttributeView.java"
+public interface java.nio.file.attribute.AclFileAttributeView extends java.nio.file.attribute.FileOwnerAttributeView {
+  public abstract java.lang.String name();
+  public abstract java.util.List<java.nio.file.attribute.AclEntry> getAcl() throws java.io.IOException;
+  public abstract void setAcl(java.util.List<java.nio.file.attribute.AclEntry>) throws java.io.IOException;
+}

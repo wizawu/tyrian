@@ -1,0 +1,11 @@
+Compiled from "Monitor.java"
+public interface sun.jvmstat.monitor.Monitor {
+  public abstract java.lang.String getName();
+  public abstract java.lang.String getBaseName();
+  public abstract sun.jvmstat.monitor.Units getUnits();
+  public abstract sun.jvmstat.monitor.Variability getVariability();
+  public abstract boolean isVector();
+  public abstract int getVectorLength();
+  public abstract boolean isSupported();
+  public abstract java.lang.Object getValue();
+}

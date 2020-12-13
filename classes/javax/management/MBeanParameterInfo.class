@@ -1,0 +1,13 @@
+Compiled from "MBeanParameterInfo.java"
+public class javax.management.MBeanParameterInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
+  static final long serialVersionUID;
+  static final javax.management.MBeanParameterInfo[] NO_PARAMS;
+  public javax.management.MBeanParameterInfo(java.lang.String, java.lang.String, java.lang.String);
+  public javax.management.MBeanParameterInfo(java.lang.String, java.lang.String, java.lang.String, javax.management.Descriptor);
+  public java.lang.Object clone();
+  public java.lang.String getType();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

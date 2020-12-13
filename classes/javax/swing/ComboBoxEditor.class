@@ -1,0 +1,9 @@
+Compiled from "ComboBoxEditor.java"
+public interface javax.swing.ComboBoxEditor {
+  public abstract java.awt.Component getEditorComponent();
+  public abstract void setItem(java.lang.Object);
+  public abstract java.lang.Object getItem();
+  public abstract void selectAll();
+  public abstract void addActionListener(java.awt.event.ActionListener);
+  public abstract void removeActionListener(java.awt.event.ActionListener);
+}

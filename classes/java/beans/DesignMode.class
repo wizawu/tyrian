@@ -1,0 +1,6 @@
+Compiled from "DesignMode.java"
+public interface java.beans.DesignMode {
+  public static final java.lang.String PROPERTYNAME;
+  public abstract void setDesignTime(boolean);
+  public abstract boolean isDesignTime();
+}

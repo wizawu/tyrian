@@ -1,0 +1,9 @@
+Compiled from "CodeViewerPanel.java"
+public class sun.jvm.hotspot.ui.classbrowser.CodeViewerPanel extends javax.swing.JPanel {
+  protected sun.jvm.hotspot.ui.SAEditorPane contentEditor;
+  protected sun.jvm.hotspot.ui.HistoryComboBox address;
+  protected sun.jvm.hotspot.ui.classbrowser.HTMLGenerator htmlGen;
+  protected javax.swing.JScrollPane scrollPane;
+  public sun.jvm.hotspot.ui.classbrowser.CodeViewerPanel();
+  public void viewAddress(sun.jvm.hotspot.debugger.Address);
+}

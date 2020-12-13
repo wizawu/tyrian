@@ -1,0 +1,13 @@
+Compiled from "PhantomCleanable.java"
+public abstract class jdk.internal.ref.PhantomCleanable<T> extends java.lang.ref.PhantomReference<T> implements java.lang.ref.Cleaner$Cleanable {
+  jdk.internal.ref.PhantomCleanable<?> prev;
+  jdk.internal.ref.PhantomCleanable<?> next;
+  public jdk.internal.ref.PhantomCleanable(T, java.lang.ref.Cleaner);
+  jdk.internal.ref.PhantomCleanable();
+  boolean isListEmpty();
+  public final void clean();
+  public void clear();
+  protected abstract void performCleanup();
+  public final boolean isEnqueued();
+  public final boolean enqueue();
+}

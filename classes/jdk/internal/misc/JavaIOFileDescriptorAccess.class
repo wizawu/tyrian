@@ -1,0 +1,13 @@
+Compiled from "JavaIOFileDescriptorAccess.java"
+public interface jdk.internal.misc.JavaIOFileDescriptorAccess {
+  public abstract void set(java.io.FileDescriptor, int);
+  public abstract int get(java.io.FileDescriptor);
+  public abstract void setAppend(java.io.FileDescriptor, boolean);
+  public abstract boolean getAppend(java.io.FileDescriptor);
+  public abstract void close(java.io.FileDescriptor) throws java.io.IOException;
+  public abstract void registerCleanup(java.io.FileDescriptor);
+  public abstract void registerCleanup(java.io.FileDescriptor, jdk.internal.ref.PhantomCleanable<java.io.FileDescriptor>);
+  public abstract void unregisterCleanup(java.io.FileDescriptor);
+  public abstract void setHandle(java.io.FileDescriptor, long);
+  public abstract long getHandle(java.io.FileDescriptor);
+}

@@ -1,0 +1,24 @@
+Compiled from "BsdDebugger.java"
+public interface sun.jvm.hotspot.debugger.bsd.BsdDebugger extends sun.jvm.hotspot.debugger.JVMDebugger {
+  public abstract java.lang.String addressValueToString(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract boolean readJBoolean(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract byte readJByte(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract char readJChar(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract double readJDouble(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract float readJFloat(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract int readJInt(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract long readJLong(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract short readJShort(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract long readCInteger(long, long, boolean) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.bsd.BsdAddress readAddress(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.bsd.BsdAddress readCompOopAddress(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.bsd.BsdAddress readCompKlassAddress(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.bsd.BsdOopHandle readOopHandle(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.bsd.BsdOopHandle readCompOopHandle(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract long[] getThreadIntegerRegisterSet(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract long getAddressValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.Address newAddress(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract java.util.List getThreadList();
+  public abstract java.util.List getLoadObjectList();
+  public abstract sun.jvm.hotspot.debugger.cdbg.ClosestSymbol lookup(long);
+}

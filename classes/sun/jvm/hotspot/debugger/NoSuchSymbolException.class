@@ -1,0 +1,8 @@
+Compiled from "NoSuchSymbolException.java"
+public class sun.jvm.hotspot.debugger.NoSuchSymbolException extends java.lang.RuntimeException {
+  public sun.jvm.hotspot.debugger.NoSuchSymbolException(java.lang.String);
+  public sun.jvm.hotspot.debugger.NoSuchSymbolException(java.lang.String, java.lang.Throwable);
+  public sun.jvm.hotspot.debugger.NoSuchSymbolException(java.lang.String, java.lang.String);
+  public sun.jvm.hotspot.debugger.NoSuchSymbolException(java.lang.String, java.lang.String, java.lang.Throwable);
+  public java.lang.String getSymbol();
+}

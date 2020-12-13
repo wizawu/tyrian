@@ -1,0 +1,6 @@
+Compiled from "CompactibleSpace.java"
+public abstract class sun.jvm.hotspot.gc.shared.CompactibleSpace extends sun.jvm.hotspot.gc.shared.Space {
+  public sun.jvm.hotspot.gc.shared.CompactibleSpace(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address compactionTop();
+  static {};
+}

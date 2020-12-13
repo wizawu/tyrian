@@ -1,0 +1,27 @@
+Compiled from "ClassWriter.java"
+public interface jdk.javadoc.internal.doclets.toolkit.ClassWriter {
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getHeader(java.lang.String);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getClassContentHeader();
+  public abstract void addClassTree(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getClassInfoTreeHeader();
+  public abstract void addTypeParamInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addSuperInterfacesInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addImplementedInterfacesInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addSubClassInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addSubInterfacesInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addInterfaceUsageInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addFunctionalInterfaceInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addNestedClassInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getClassInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addClassDeprecationInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addClassSignature(java.lang.String, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addClassDescription(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addClassTagInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMemberTreeHeader();
+  public abstract void addClassContentTree(jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void printDocument(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  public abstract javax.lang.model.element.TypeElement getTypeElement();
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMemberSummaryTree(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMemberDetailsTree(jdk.javadoc.internal.doclets.toolkit.Content);
+}

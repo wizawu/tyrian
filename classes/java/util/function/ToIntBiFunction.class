@@ -1,0 +1,4 @@
+Compiled from "ToIntBiFunction.java"
+public interface java.util.function.ToIntBiFunction<T, U> {
+  public abstract int applyAsInt(T, U);
+}

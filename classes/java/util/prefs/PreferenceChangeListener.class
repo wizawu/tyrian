@@ -1,0 +1,4 @@
+Compiled from "PreferenceChangeListener.java"
+public interface java.util.prefs.PreferenceChangeListener extends java.util.EventListener {
+  public abstract void preferenceChange(java.util.prefs.PreferenceChangeEvent);
+}

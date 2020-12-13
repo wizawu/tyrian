@@ -1,0 +1,9 @@
+Compiled from "TextSyntax.java"
+public abstract class javax.print.attribute.TextSyntax implements java.io.Serializable,java.lang.Cloneable {
+  protected javax.print.attribute.TextSyntax(java.lang.String, java.util.Locale);
+  public java.lang.String getValue();
+  public java.util.Locale getLocale();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

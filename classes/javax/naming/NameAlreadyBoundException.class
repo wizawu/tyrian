@@ -1,0 +1,5 @@
+Compiled from "NameAlreadyBoundException.java"
+public class javax.naming.NameAlreadyBoundException extends javax.naming.NamingException {
+  public javax.naming.NameAlreadyBoundException(java.lang.String);
+  public javax.naming.NameAlreadyBoundException();
+}

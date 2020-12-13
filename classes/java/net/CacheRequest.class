@@ -1,0 +1,6 @@
+Compiled from "CacheRequest.java"
+public abstract class java.net.CacheRequest {
+  public java.net.CacheRequest();
+  public abstract java.io.OutputStream getBody() throws java.io.IOException;
+  public abstract void abort();
+}

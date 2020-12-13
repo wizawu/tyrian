@@ -1,0 +1,10 @@
+Compiled from "LexicalHandler.java"
+public interface org.xml.sax.ext.LexicalHandler {
+  public abstract void startDTD(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void endDTD() throws org.xml.sax.SAXException;
+  public abstract void startEntity(java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void endEntity(java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void startCDATA() throws org.xml.sax.SAXException;
+  public abstract void endCDATA() throws org.xml.sax.SAXException;
+  public abstract void comment(char[], int, int) throws org.xml.sax.SAXException;
+}

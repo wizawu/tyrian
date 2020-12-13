@@ -1,0 +1,29 @@
+Compiled from "Area.java"
+public class java.awt.geom.Area implements java.awt.Shape,java.lang.Cloneable {
+  public java.awt.geom.Area();
+  public java.awt.geom.Area(java.awt.Shape);
+  public void add(java.awt.geom.Area);
+  public void subtract(java.awt.geom.Area);
+  public void intersect(java.awt.geom.Area);
+  public void exclusiveOr(java.awt.geom.Area);
+  public void reset();
+  public boolean isEmpty();
+  public boolean isPolygonal();
+  public boolean isRectangular();
+  public boolean isSingular();
+  public java.awt.geom.Rectangle2D getBounds2D();
+  public java.awt.Rectangle getBounds();
+  public java.lang.Object clone();
+  public boolean equals(java.awt.geom.Area);
+  public void transform(java.awt.geom.AffineTransform);
+  public java.awt.geom.Area createTransformedArea(java.awt.geom.AffineTransform);
+  public boolean contains(double, double);
+  public boolean contains(java.awt.geom.Point2D);
+  public boolean contains(double, double, double, double);
+  public boolean contains(java.awt.geom.Rectangle2D);
+  public boolean intersects(double, double, double, double);
+  public boolean intersects(java.awt.geom.Rectangle2D);
+  public java.awt.geom.PathIterator getPathIterator(java.awt.geom.AffineTransform);
+  public java.awt.geom.PathIterator getPathIterator(java.awt.geom.AffineTransform, double);
+  static {};
+}

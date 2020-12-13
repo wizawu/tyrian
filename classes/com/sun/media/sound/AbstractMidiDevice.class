@@ -1,0 +1,29 @@
+Compiled from "AbstractMidiDevice.java"
+abstract class com.sun.media.sound.AbstractMidiDevice implements javax.sound.midi.MidiDevice,com.sun.media.sound.ReferenceCountingDevice {
+  protected volatile long id;
+  protected com.sun.media.sound.AbstractMidiDevice(javax.sound.midi.MidiDevice$Info);
+  public final javax.sound.midi.MidiDevice$Info getDeviceInfo();
+  public final void open() throws javax.sound.midi.MidiUnavailableException;
+  public final void close();
+  public final void closeInternal(java.lang.Object);
+  public final void doClose();
+  public final boolean isOpen();
+  protected void implClose();
+  public long getMicrosecondPosition();
+  public final int getMaxReceivers();
+  public final int getMaxTransmitters();
+  public final javax.sound.midi.Receiver getReceiver() throws javax.sound.midi.MidiUnavailableException;
+  public final java.util.List<javax.sound.midi.Receiver> getReceivers();
+  public final javax.sound.midi.Transmitter getTransmitter() throws javax.sound.midi.MidiUnavailableException;
+  public final java.util.List<javax.sound.midi.Transmitter> getTransmitters();
+  final long getId();
+  public final javax.sound.midi.Receiver getReceiverReferenceCounting() throws javax.sound.midi.MidiUnavailableException;
+  public final javax.sound.midi.Transmitter getTransmitterReferenceCounting() throws javax.sound.midi.MidiUnavailableException;
+  protected boolean hasReceivers();
+  protected javax.sound.midi.Receiver createReceiver() throws javax.sound.midi.MidiUnavailableException;
+  final com.sun.media.sound.AbstractMidiDevice$TransmitterList getTransmitterList();
+  protected boolean hasTransmitters();
+  protected javax.sound.midi.Transmitter createTransmitter() throws javax.sound.midi.MidiUnavailableException;
+  protected abstract void implOpen() throws javax.sound.midi.MidiUnavailableException;
+  protected final void finalize();
+}

@@ -1,0 +1,8 @@
+Compiled from "WebRowSetXmlWriter.java"
+public class com.sun.rowset.internal.WebRowSetXmlWriter implements javax.sql.rowset.spi.XmlWriter,java.io.Serializable {
+  static final long serialVersionUID;
+  public com.sun.rowset.internal.WebRowSetXmlWriter();
+  public void writeXML(javax.sql.rowset.WebRowSet, java.io.Writer) throws java.sql.SQLException;
+  public void writeXML(javax.sql.rowset.WebRowSet, java.io.OutputStream) throws java.sql.SQLException;
+  public boolean writeData(javax.sql.RowSetInternal);
+}

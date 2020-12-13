@@ -1,0 +1,4 @@
+Compiled from "TemporalAdjuster.java"
+public interface java.time.temporal.TemporalAdjuster {
+  public abstract java.time.temporal.Temporal adjustInto(java.time.temporal.Temporal);
+}

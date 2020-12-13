@@ -1,0 +1,5 @@
+Compiled from "SocketSecurityException.java"
+public class java.rmi.server.SocketSecurityException extends java.rmi.server.ExportException {
+  public java.rmi.server.SocketSecurityException(java.lang.String);
+  public java.rmi.server.SocketSecurityException(java.lang.String, java.lang.Exception);
+}

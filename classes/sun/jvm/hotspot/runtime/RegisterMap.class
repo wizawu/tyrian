@@ -1,0 +1,29 @@
+Compiled from "RegisterMap.java"
+public abstract class sun.jvm.hotspot.runtime.RegisterMap implements java.lang.Cloneable {
+  protected sun.jvm.hotspot.debugger.Address[] location;
+  protected long[] locationValid;
+  protected boolean includeArgumentOops;
+  protected sun.jvm.hotspot.runtime.JavaThread thread;
+  protected boolean updateMap;
+  protected static int regCount;
+  protected static int locationValidTypeSize;
+  protected static int locationValidSize;
+  protected sun.jvm.hotspot.runtime.RegisterMap(sun.jvm.hotspot.runtime.JavaThread, boolean);
+  protected sun.jvm.hotspot.runtime.RegisterMap(sun.jvm.hotspot.runtime.RegisterMap);
+  public abstract java.lang.Object clone();
+  public sun.jvm.hotspot.runtime.RegisterMap copy();
+  public void clear();
+  public sun.jvm.hotspot.debugger.Address getLocation(sun.jvm.hotspot.runtime.VMReg);
+  public void setLocation(sun.jvm.hotspot.runtime.VMReg, sun.jvm.hotspot.debugger.Address);
+  public boolean getIncludeArgumentOops();
+  public void setIncludeArgumentOops(boolean);
+  public sun.jvm.hotspot.runtime.JavaThread getThread();
+  public boolean getUpdateMap();
+  public void print();
+  public void printOn(java.io.PrintStream);
+  protected abstract void clearPD();
+  protected abstract void initializePD();
+  protected abstract void initializeFromPD(sun.jvm.hotspot.runtime.RegisterMap);
+  protected abstract sun.jvm.hotspot.debugger.Address getLocationPD(sun.jvm.hotspot.runtime.VMReg);
+  static {};
+}

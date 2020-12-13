@@ -1,0 +1,4 @@
+Compiled from "LiteralNeverIndexedWriter.java"
+final class jdk.internal.net.http.hpack.LiteralNeverIndexedWriter extends jdk.internal.net.http.hpack.IndexNameValueWriter {
+  jdk.internal.net.http.hpack.LiteralNeverIndexedWriter();
+}

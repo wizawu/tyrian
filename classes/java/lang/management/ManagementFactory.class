@@ -1,0 +1,30 @@
+Compiled from "ManagementFactory.java"
+public class java.lang.management.ManagementFactory {
+  public static final java.lang.String CLASS_LOADING_MXBEAN_NAME;
+  public static final java.lang.String COMPILATION_MXBEAN_NAME;
+  public static final java.lang.String MEMORY_MXBEAN_NAME;
+  public static final java.lang.String OPERATING_SYSTEM_MXBEAN_NAME;
+  public static final java.lang.String RUNTIME_MXBEAN_NAME;
+  public static final java.lang.String THREAD_MXBEAN_NAME;
+  public static final java.lang.String GARBAGE_COLLECTOR_MXBEAN_DOMAIN_TYPE;
+  public static final java.lang.String MEMORY_MANAGER_MXBEAN_DOMAIN_TYPE;
+  public static final java.lang.String MEMORY_POOL_MXBEAN_DOMAIN_TYPE;
+  static final boolean $assertionsDisabled;
+  public static java.lang.management.ClassLoadingMXBean getClassLoadingMXBean();
+  public static java.lang.management.MemoryMXBean getMemoryMXBean();
+  public static java.lang.management.ThreadMXBean getThreadMXBean();
+  public static java.lang.management.RuntimeMXBean getRuntimeMXBean();
+  public static java.lang.management.CompilationMXBean getCompilationMXBean();
+  public static java.lang.management.OperatingSystemMXBean getOperatingSystemMXBean();
+  public static java.util.List<java.lang.management.MemoryPoolMXBean> getMemoryPoolMXBeans();
+  public static java.util.List<java.lang.management.MemoryManagerMXBean> getMemoryManagerMXBeans();
+  public static java.util.List<java.lang.management.GarbageCollectorMXBean> getGarbageCollectorMXBeans();
+  public static synchronized javax.management.MBeanServer getPlatformMBeanServer();
+  public static <T> T newPlatformMXBeanProxy(javax.management.MBeanServerConnection, java.lang.String, java.lang.Class<T>) throws java.io.IOException;
+  public static <T extends java.lang.management.PlatformManagedObject> T getPlatformMXBean(java.lang.Class<T>);
+  public static <T extends java.lang.management.PlatformManagedObject> java.util.List<T> getPlatformMXBeans(java.lang.Class<T>);
+  public static <T extends java.lang.management.PlatformManagedObject> T getPlatformMXBean(javax.management.MBeanServerConnection, java.lang.Class<T>) throws java.io.IOException;
+  public static <T extends java.lang.management.PlatformManagedObject> java.util.List<T> getPlatformMXBeans(javax.management.MBeanServerConnection, java.lang.Class<T>) throws java.io.IOException;
+  public static java.util.Set<java.lang.Class<? extends java.lang.management.PlatformManagedObject>> getPlatformManagementInterfaces();
+  static {};
+}

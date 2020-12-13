@@ -1,0 +1,5 @@
+Compiled from "ServiceNotFoundException.java"
+public class javax.management.ServiceNotFoundException extends javax.management.OperationsException {
+  public javax.management.ServiceNotFoundException();
+  public javax.management.ServiceNotFoundException(java.lang.String);
+}

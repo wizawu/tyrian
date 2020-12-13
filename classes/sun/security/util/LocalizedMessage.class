@@ -1,0 +1,9 @@
+Compiled from "LocalizedMessage.java"
+public class sun.security.util.LocalizedMessage {
+  public sun.security.util.LocalizedMessage(java.lang.String);
+  public java.lang.String formatLocalized(java.lang.Object...);
+  public java.lang.String formatNonlocalized(java.lang.Object...);
+  public static java.lang.String getNonlocalized(java.lang.String, java.lang.Object...);
+  public static java.lang.String getLocalized(java.lang.String, java.lang.Object...);
+  static {};
+}

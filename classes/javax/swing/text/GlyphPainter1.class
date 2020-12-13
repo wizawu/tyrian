@@ -1,0 +1,14 @@
+Compiled from "GlyphPainter1.java"
+class javax.swing.text.GlyphPainter1 extends javax.swing.text.GlyphView$GlyphPainter {
+  java.awt.FontMetrics metrics;
+  javax.swing.text.GlyphPainter1();
+  public float getSpan(javax.swing.text.GlyphView, int, int, javax.swing.text.TabExpander, float);
+  public float getHeight(javax.swing.text.GlyphView);
+  public float getAscent(javax.swing.text.GlyphView);
+  public float getDescent(javax.swing.text.GlyphView);
+  public void paint(javax.swing.text.GlyphView, java.awt.Graphics, java.awt.Shape, int, int);
+  public java.awt.Shape modelToView(javax.swing.text.GlyphView, int, javax.swing.text.Position$Bias, java.awt.Shape) throws javax.swing.text.BadLocationException;
+  public int viewToModel(javax.swing.text.GlyphView, float, float, java.awt.Shape, javax.swing.text.Position$Bias[]);
+  public int getBoundedPosition(javax.swing.text.GlyphView, int, float, float);
+  void sync(javax.swing.text.GlyphView);
+}

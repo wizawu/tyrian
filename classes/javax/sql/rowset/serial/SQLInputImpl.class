@@ -1,0 +1,31 @@
+Compiled from "SQLInputImpl.java"
+public class javax.sql.rowset.serial.SQLInputImpl implements java.sql.SQLInput {
+  public javax.sql.rowset.serial.SQLInputImpl(java.lang.Object[], java.util.Map<java.lang.String, java.lang.Class<?>>) throws java.sql.SQLException;
+  public java.lang.String readString() throws java.sql.SQLException;
+  public boolean readBoolean() throws java.sql.SQLException;
+  public byte readByte() throws java.sql.SQLException;
+  public short readShort() throws java.sql.SQLException;
+  public int readInt() throws java.sql.SQLException;
+  public long readLong() throws java.sql.SQLException;
+  public float readFloat() throws java.sql.SQLException;
+  public double readDouble() throws java.sql.SQLException;
+  public java.math.BigDecimal readBigDecimal() throws java.sql.SQLException;
+  public byte[] readBytes() throws java.sql.SQLException;
+  public java.sql.Date readDate() throws java.sql.SQLException;
+  public java.sql.Time readTime() throws java.sql.SQLException;
+  public java.sql.Timestamp readTimestamp() throws java.sql.SQLException;
+  public java.io.Reader readCharacterStream() throws java.sql.SQLException;
+  public java.io.InputStream readAsciiStream() throws java.sql.SQLException;
+  public java.io.InputStream readBinaryStream() throws java.sql.SQLException;
+  public java.lang.Object readObject() throws java.sql.SQLException;
+  public java.sql.Ref readRef() throws java.sql.SQLException;
+  public java.sql.Blob readBlob() throws java.sql.SQLException;
+  public java.sql.Clob readClob() throws java.sql.SQLException;
+  public java.sql.Array readArray() throws java.sql.SQLException;
+  public boolean wasNull() throws java.sql.SQLException;
+  public java.net.URL readURL() throws java.sql.SQLException;
+  public java.sql.NClob readNClob() throws java.sql.SQLException;
+  public java.lang.String readNString() throws java.sql.SQLException;
+  public java.sql.SQLXML readSQLXML() throws java.sql.SQLException;
+  public java.sql.RowId readRowId() throws java.sql.SQLException;
+}

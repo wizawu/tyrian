@@ -1,0 +1,4 @@
+Compiled from "SoftControl.java"
+public interface com.sun.media.sound.SoftControl {
+  public abstract double[] get(int, java.lang.String);
+}

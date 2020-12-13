@@ -1,0 +1,20 @@
+Compiled from "SerialArray.java"
+public class javax.sql.rowset.serial.SerialArray implements java.sql.Array,java.io.Serializable,java.lang.Cloneable {
+  static final long serialVersionUID;
+  public javax.sql.rowset.serial.SerialArray(java.sql.Array, java.util.Map<java.lang.String, java.lang.Class<?>>) throws javax.sql.rowset.serial.SerialException, java.sql.SQLException;
+  public void free() throws java.sql.SQLException;
+  public javax.sql.rowset.serial.SerialArray(java.sql.Array) throws javax.sql.rowset.serial.SerialException, java.sql.SQLException;
+  public java.lang.Object getArray() throws javax.sql.rowset.serial.SerialException;
+  public java.lang.Object getArray(java.util.Map<java.lang.String, java.lang.Class<?>>) throws javax.sql.rowset.serial.SerialException;
+  public java.lang.Object getArray(long, int) throws javax.sql.rowset.serial.SerialException;
+  public java.lang.Object getArray(long, int, java.util.Map<java.lang.String, java.lang.Class<?>>) throws javax.sql.rowset.serial.SerialException;
+  public int getBaseType() throws javax.sql.rowset.serial.SerialException;
+  public java.lang.String getBaseTypeName() throws javax.sql.rowset.serial.SerialException;
+  public java.sql.ResultSet getResultSet(long, int) throws javax.sql.rowset.serial.SerialException;
+  public java.sql.ResultSet getResultSet(java.util.Map<java.lang.String, java.lang.Class<?>>) throws javax.sql.rowset.serial.SerialException;
+  public java.sql.ResultSet getResultSet() throws javax.sql.rowset.serial.SerialException;
+  public java.sql.ResultSet getResultSet(long, int, java.util.Map<java.lang.String, java.lang.Class<?>>) throws javax.sql.rowset.serial.SerialException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.Object clone();
+}

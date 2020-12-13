@@ -1,0 +1,13 @@
+Compiled from "SettingDescriptorInfo.java"
+public final class jdk.management.jfr.SettingDescriptorInfo {
+  jdk.management.jfr.SettingDescriptorInfo(jdk.jfr.SettingDescriptor);
+  public java.lang.String getLabel();
+  public java.lang.String getName();
+  public java.lang.String getDescription();
+  public java.lang.String getTypeName();
+  public java.lang.String getContentType();
+  public java.lang.String getDefaultValue();
+  public static jdk.management.jfr.SettingDescriptorInfo from(javax.management.openmbean.CompositeData);
+  public java.lang.String toString();
+  static {};
+}

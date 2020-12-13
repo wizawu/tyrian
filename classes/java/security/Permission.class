@@ -1,0 +1,12 @@
+Compiled from "Permission.java"
+public abstract class java.security.Permission implements java.security.Guard,java.io.Serializable {
+  public java.security.Permission(java.lang.String);
+  public void checkGuard(java.lang.Object) throws java.lang.SecurityException;
+  public abstract boolean implies(java.security.Permission);
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public final java.lang.String getName();
+  public abstract java.lang.String getActions();
+  public java.security.PermissionCollection newPermissionCollection();
+  public java.lang.String toString();
+}

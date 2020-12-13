@@ -1,0 +1,11 @@
+Compiled from "ListDataEvent.java"
+public class javax.swing.event.ListDataEvent extends java.util.EventObject {
+  public static final int CONTENTS_CHANGED;
+  public static final int INTERVAL_ADDED;
+  public static final int INTERVAL_REMOVED;
+  public int getType();
+  public int getIndex0();
+  public int getIndex1();
+  public javax.swing.event.ListDataEvent(java.lang.Object, int, int, int);
+  public java.lang.String toString();
+}

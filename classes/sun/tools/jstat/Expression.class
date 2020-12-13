@@ -1,0 +1,13 @@
+Compiled from "Expression.java"
+public class sun.tools.jstat.Expression {
+  sun.tools.jstat.Expression();
+  void setLeft(sun.tools.jstat.Expression);
+  sun.tools.jstat.Expression getLeft();
+  void setRight(sun.tools.jstat.Expression);
+  sun.tools.jstat.Expression getRight();
+  void setOperator(sun.tools.jstat.Operator);
+  sun.tools.jstat.Operator getOperator();
+  void setRequired(boolean);
+  boolean isRequired();
+  public java.lang.String toString();
+}

@@ -1,0 +1,22 @@
+Compiled from "XMLEntityReader.java"
+public abstract class com.sun.xml.internal.stream.XMLEntityReader implements com.sun.org.apache.xerces.internal.xni.XMLLocator {
+  public com.sun.xml.internal.stream.XMLEntityReader();
+  public abstract void setEncoding(java.lang.String) throws java.io.IOException;
+  public abstract java.lang.String getEncoding();
+  public abstract int getCharacterOffset();
+  public abstract void setVersion(java.lang.String);
+  public abstract java.lang.String getVersion();
+  public abstract boolean isExternal();
+  public abstract int peekChar() throws java.io.IOException;
+  public abstract int scanChar() throws java.io.IOException;
+  public abstract java.lang.String scanNmtoken() throws java.io.IOException;
+  public abstract java.lang.String scanName() throws java.io.IOException;
+  public abstract boolean scanQName(com.sun.org.apache.xerces.internal.xni.QName) throws java.io.IOException;
+  public abstract int scanContent(com.sun.org.apache.xerces.internal.xni.XMLString) throws java.io.IOException;
+  public abstract int scanLiteral(int, com.sun.org.apache.xerces.internal.xni.XMLString) throws java.io.IOException;
+  public abstract boolean scanData(java.lang.String, com.sun.org.apache.xerces.internal.util.XMLStringBuffer) throws java.io.IOException;
+  public abstract boolean skipChar(int) throws java.io.IOException;
+  public abstract boolean skipSpaces() throws java.io.IOException;
+  public abstract boolean skipString(java.lang.String) throws java.io.IOException;
+  public abstract void registerListener(com.sun.xml.internal.stream.XMLBufferListener);
+}

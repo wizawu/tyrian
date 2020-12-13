@@ -1,0 +1,5 @@
+Compiled from "FunctionCallTree.java"
+public interface jdk.nashorn.api.tree.FunctionCallTree extends jdk.nashorn.api.tree.ExpressionTree {
+  public abstract jdk.nashorn.api.tree.ExpressionTree getFunctionSelect();
+  public abstract java.util.List<? extends jdk.nashorn.api.tree.ExpressionTree> getArguments();
+}

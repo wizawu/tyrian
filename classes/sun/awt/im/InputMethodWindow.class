@@ -1,0 +1,4 @@
+Compiled from "InputMethodWindow.java"
+public interface sun.awt.im.InputMethodWindow {
+  public abstract void setInputContext(sun.awt.im.InputContext);
+}

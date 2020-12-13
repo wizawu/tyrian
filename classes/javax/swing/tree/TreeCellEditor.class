@@ -1,0 +1,4 @@
+Compiled from "TreeCellEditor.java"
+public interface javax.swing.tree.TreeCellEditor extends javax.swing.CellEditor {
+  public abstract java.awt.Component getTreeCellEditorComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int);
+}

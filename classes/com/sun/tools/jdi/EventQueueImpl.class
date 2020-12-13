@@ -1,0 +1,16 @@
+Compiled from "EventQueueImpl.java"
+public class com.sun.tools.jdi.EventQueueImpl extends com.sun.tools.jdi.MirrorImpl implements com.sun.jdi.event.EventQueue {
+  java.util.LinkedList<com.sun.jdi.event.EventSet> eventSets;
+  com.sun.tools.jdi.TargetVM target;
+  boolean closed;
+  com.sun.tools.jdi.EventQueueImpl(com.sun.jdi.VirtualMachine, com.sun.tools.jdi.TargetVM);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  synchronized void enqueue(com.sun.jdi.event.EventSet);
+  synchronized int size();
+  synchronized void close();
+  public com.sun.jdi.event.EventSet remove() throws java.lang.InterruptedException;
+  public com.sun.jdi.event.EventSet remove(long) throws java.lang.InterruptedException;
+  com.sun.jdi.event.EventSet removeInternal() throws java.lang.InterruptedException;
+  public com.sun.jdi.VirtualMachine virtualMachine();
+}

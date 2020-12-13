@@ -1,0 +1,24 @@
+Compiled from "Optional.java"
+public final class java.util.Optional<T> {
+  public static <T> java.util.Optional<T> empty();
+  public static <T> java.util.Optional<T> of(T);
+  public static <T> java.util.Optional<T> ofNullable(T);
+  public T get();
+  public boolean isPresent();
+  public boolean isEmpty();
+  public void ifPresent(java.util.function.Consumer<? super T>);
+  public void ifPresentOrElse(java.util.function.Consumer<? super T>, java.lang.Runnable);
+  public java.util.Optional<T> filter(java.util.function.Predicate<? super T>);
+  public <U> java.util.Optional<U> map(java.util.function.Function<? super T, ? extends U>);
+  public <U> java.util.Optional<U> flatMap(java.util.function.Function<? super T, ? extends java.util.Optional<? extends U>>);
+  public java.util.Optional<T> or(java.util.function.Supplier<? extends java.util.Optional<? extends T>>);
+  public java.util.stream.Stream<T> stream();
+  public T orElse(T);
+  public T orElseGet(java.util.function.Supplier<? extends T>);
+  public T orElseThrow();
+  public <X extends java.lang.Throwable> T orElseThrow(java.util.function.Supplier<? extends X>) throws X;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  static {};
+}

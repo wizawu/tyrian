@@ -1,0 +1,10 @@
+Compiled from "SharedPropertyMap.java"
+public final class jdk.nashorn.internal.runtime.SharedPropertyMap extends jdk.nashorn.internal.runtime.PropertyMap {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.runtime.SharedPropertyMap(jdk.nashorn.internal.runtime.PropertyMap);
+  public void propertyChanged(jdk.nashorn.internal.runtime.Property);
+  synchronized boolean isValidSharedProtoMap();
+  synchronized java.lang.invoke.SwitchPoint getSharedProtoSwitchPoint();
+  synchronized void invalidateSwitchPoint();
+  static {};
+}

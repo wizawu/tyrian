@@ -1,0 +1,3 @@
+Compiled from "ByteType.java"
+public interface com.sun.jdi.ByteType extends com.sun.jdi.PrimitiveType {
+}

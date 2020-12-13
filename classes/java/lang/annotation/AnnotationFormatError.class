@@ -1,0 +1,6 @@
+Compiled from "AnnotationFormatError.java"
+public class java.lang.annotation.AnnotationFormatError extends java.lang.Error {
+  public java.lang.annotation.AnnotationFormatError(java.lang.String);
+  public java.lang.annotation.AnnotationFormatError(java.lang.String, java.lang.Throwable);
+  public java.lang.annotation.AnnotationFormatError(java.lang.Throwable);
+}

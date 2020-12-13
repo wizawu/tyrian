@@ -1,0 +1,4 @@
+Compiled from "NodeTestFilter.java"
+public interface com.sun.org.apache.xpath.internal.patterns.NodeTestFilter {
+  public abstract void setNodeTest(com.sun.org.apache.xpath.internal.patterns.NodeTest);
+}

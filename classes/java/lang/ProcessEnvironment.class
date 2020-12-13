@@ -1,0 +1,10 @@
+Compiled from "ProcessEnvironment.java"
+final class java.lang.ProcessEnvironment {
+  static final int MIN_NAME_LENGTH;
+  static java.lang.String getenv(java.lang.String);
+  static java.util.Map<java.lang.String, java.lang.String> getenv();
+  static java.util.Map<java.lang.String, java.lang.String> environment();
+  static java.util.Map<java.lang.String, java.lang.String> emptyEnvironment(int);
+  static byte[] toEnvironmentBlock(java.util.Map<java.lang.String, java.lang.String>, int[]);
+  static {};
+}

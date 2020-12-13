@@ -1,0 +1,8 @@
+Compiled from "U2Array.java"
+public class sun.jvm.hotspot.utilities.U2Array extends sun.jvm.hotspot.utilities.GenericArray {
+  protected static sun.jvm.hotspot.types.Type elemType;
+  public sun.jvm.hotspot.utilities.U2Array(sun.jvm.hotspot.debugger.Address);
+  public short at(int);
+  public sun.jvm.hotspot.types.Type getElemType();
+  static {};
+}

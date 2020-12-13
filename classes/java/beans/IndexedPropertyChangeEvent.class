@@ -1,0 +1,6 @@
+Compiled from "IndexedPropertyChangeEvent.java"
+public class java.beans.IndexedPropertyChangeEvent extends java.beans.PropertyChangeEvent {
+  public java.beans.IndexedPropertyChangeEvent(java.lang.Object, java.lang.String, java.lang.Object, java.lang.Object, int);
+  public int getIndex();
+  void appendTo(java.lang.StringBuilder);
+}

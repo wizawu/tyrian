@@ -1,0 +1,11 @@
+Compiled from "WildcardTypeImpl.java"
+public class sun.reflect.generics.reflectiveObjects.WildcardTypeImpl extends sun.reflect.generics.reflectiveObjects.LazyReflectiveObjectGenerator implements java.lang.reflect.WildcardType {
+  static final boolean $assertionsDisabled;
+  public static sun.reflect.generics.reflectiveObjects.WildcardTypeImpl make(sun.reflect.generics.tree.FieldTypeSignature[], sun.reflect.generics.tree.FieldTypeSignature[], sun.reflect.generics.factory.GenericsFactory);
+  public java.lang.reflect.Type[] getUpperBounds();
+  public java.lang.reflect.Type[] getLowerBounds();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

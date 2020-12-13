@@ -1,0 +1,43 @@
+Compiled from "Type.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.Type {
+  public static final com.sun.org.apache.bcel.internal.generic.BasicType VOID;
+  public static final com.sun.org.apache.bcel.internal.generic.BasicType BOOLEAN;
+  public static final com.sun.org.apache.bcel.internal.generic.BasicType INT;
+  public static final com.sun.org.apache.bcel.internal.generic.BasicType SHORT;
+  public static final com.sun.org.apache.bcel.internal.generic.BasicType BYTE;
+  public static final com.sun.org.apache.bcel.internal.generic.BasicType LONG;
+  public static final com.sun.org.apache.bcel.internal.generic.BasicType DOUBLE;
+  public static final com.sun.org.apache.bcel.internal.generic.BasicType FLOAT;
+  public static final com.sun.org.apache.bcel.internal.generic.BasicType CHAR;
+  public static final com.sun.org.apache.bcel.internal.generic.ObjectType OBJECT;
+  public static final com.sun.org.apache.bcel.internal.generic.ObjectType CLASS;
+  public static final com.sun.org.apache.bcel.internal.generic.ObjectType STRING;
+  public static final com.sun.org.apache.bcel.internal.generic.ObjectType STRINGBUFFER;
+  public static final com.sun.org.apache.bcel.internal.generic.ObjectType THROWABLE;
+  public static final com.sun.org.apache.bcel.internal.generic.Type[] NO_ARGS;
+  public static final com.sun.org.apache.bcel.internal.generic.ReferenceType NULL;
+  public static final com.sun.org.apache.bcel.internal.generic.Type UNKNOWN;
+  protected com.sun.org.apache.bcel.internal.generic.Type(byte, java.lang.String);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String getSignature();
+  public byte getType();
+  public com.sun.org.apache.bcel.internal.generic.Type normalizeForStackOrLocal();
+  public int getSize();
+  public java.lang.String toString();
+  public static java.lang.String getMethodSignature(com.sun.org.apache.bcel.internal.generic.Type, com.sun.org.apache.bcel.internal.generic.Type[]);
+  public static com.sun.org.apache.bcel.internal.generic.Type getType(java.lang.String) throws java.lang.StringIndexOutOfBoundsException;
+  public static com.sun.org.apache.bcel.internal.generic.Type getReturnType(java.lang.String);
+  public static com.sun.org.apache.bcel.internal.generic.Type[] getArgumentTypes(java.lang.String);
+  public static com.sun.org.apache.bcel.internal.generic.Type getType(java.lang.Class<?>);
+  public static com.sun.org.apache.bcel.internal.generic.Type[] getTypes(java.lang.Class<?>[]);
+  public static java.lang.String getSignature(java.lang.reflect.Method);
+  static int size(int);
+  static int consumed(int);
+  static int encode(int, int);
+  static int getArgumentTypesSize(java.lang.String);
+  static int getTypeSize(java.lang.String) throws java.lang.StringIndexOutOfBoundsException;
+  static int getReturnTypeSize(java.lang.String);
+  void setSignature(java.lang.String);
+  static {};
+}

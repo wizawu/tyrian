@@ -1,0 +1,41 @@
+Compiled from "ObjectReferenceImpl.java"
+public class com.sun.tools.jdi.ObjectReferenceImpl extends com.sun.tools.jdi.ValueImpl implements com.sun.jdi.ObjectReference,com.sun.tools.jdi.VMListener {
+  protected long ref;
+  boolean addedListener;
+  protected com.sun.tools.jdi.ObjectReferenceImpl$Cache newCache();
+  protected com.sun.tools.jdi.ObjectReferenceImpl$Cache getCache();
+  protected com.sun.tools.jdi.ClassTypeImpl invokableReferenceType(com.sun.jdi.Method);
+  com.sun.tools.jdi.ObjectReferenceImpl(com.sun.jdi.VirtualMachine, long);
+  protected java.lang.String description();
+  public boolean vmSuspended(com.sun.tools.jdi.VMAction);
+  public boolean vmNotSuspended(com.sun.tools.jdi.VMAction);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public com.sun.jdi.Type type();
+  public com.sun.jdi.ReferenceType referenceType();
+  public com.sun.jdi.Value getValue(com.sun.jdi.Field);
+  public java.util.Map<com.sun.jdi.Field, com.sun.jdi.Value> getValues(java.util.List<? extends com.sun.jdi.Field>);
+  public void setValue(com.sun.jdi.Field, com.sun.jdi.Value) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  void validateMethodInvocation(com.sun.jdi.Method, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.InvocationException;
+  void validateClassMethodInvocation(com.sun.jdi.Method, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.InvocationException;
+  void validateIfaceMethodInvocation(com.sun.jdi.Method, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.InvocationException;
+  com.sun.tools.jdi.PacketStream sendInvokeCommand(com.sun.tools.jdi.ThreadReferenceImpl, com.sun.tools.jdi.ClassTypeImpl, com.sun.tools.jdi.MethodImpl, com.sun.tools.jdi.ValueImpl[], int);
+  public com.sun.jdi.Value invokeMethod(com.sun.jdi.ThreadReference, com.sun.jdi.Method, java.util.List<? extends com.sun.jdi.Value>, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.IncompatibleThreadStateException, com.sun.jdi.InvocationException, com.sun.jdi.ClassNotLoadedException;
+  public synchronized void disableCollection();
+  public synchronized void enableCollection();
+  public boolean isCollected();
+  public long uniqueID();
+  com.sun.tools.jdi.JDWP$ObjectReference$MonitorInfo jdwpMonitorInfo() throws com.sun.jdi.IncompatibleThreadStateException;
+  public java.util.List<com.sun.jdi.ThreadReference> waitingThreads() throws com.sun.jdi.IncompatibleThreadStateException;
+  public com.sun.jdi.ThreadReference owningThread() throws com.sun.jdi.IncompatibleThreadStateException;
+  public int entryCount() throws com.sun.jdi.IncompatibleThreadStateException;
+  public java.util.List<com.sun.jdi.ObjectReference> referringObjects(long);
+  long ref();
+  boolean isClassObject();
+  com.sun.tools.jdi.ValueImpl prepareForAssignmentTo(com.sun.tools.jdi.ValueContainer) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  void validateAssignment(com.sun.tools.jdi.ValueContainer) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  public java.lang.String toString();
+  byte typeValueKey();
+  public com.sun.jdi.VirtualMachine virtualMachine();
+  static {};
+}

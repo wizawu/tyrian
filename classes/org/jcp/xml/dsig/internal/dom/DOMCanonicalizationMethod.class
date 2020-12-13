@@ -1,0 +1,9 @@
+Compiled from "DOMCanonicalizationMethod.java"
+public class org.jcp.xml.dsig.internal.dom.DOMCanonicalizationMethod extends org.jcp.xml.dsig.internal.dom.DOMTransform implements javax.xml.crypto.dsig.CanonicalizationMethod {
+  public org.jcp.xml.dsig.internal.dom.DOMCanonicalizationMethod(javax.xml.crypto.dsig.TransformService) throws java.security.InvalidAlgorithmParameterException;
+  public org.jcp.xml.dsig.internal.dom.DOMCanonicalizationMethod(org.w3c.dom.Element, javax.xml.crypto.XMLCryptoContext, java.security.Provider) throws javax.xml.crypto.MarshalException;
+  public javax.xml.crypto.Data canonicalize(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.dsig.TransformException;
+  public javax.xml.crypto.Data canonicalize(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext, java.io.OutputStream) throws javax.xml.crypto.dsig.TransformException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

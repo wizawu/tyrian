@@ -1,0 +1,22 @@
+Compiled from "OptionTemplate.java"
+public final class jdk.nashorn.internal.runtime.options.OptionTemplate implements java.lang.Comparable<jdk.nashorn.internal.runtime.options.OptionTemplate> {
+  jdk.nashorn.internal.runtime.options.OptionTemplate(java.lang.String, java.lang.String, java.lang.String, boolean, boolean);
+  public boolean isHelp();
+  public boolean isXHelp();
+  public java.lang.String getResource();
+  public java.lang.String getType();
+  public java.lang.String getKey();
+  public java.lang.String getDefaultValue();
+  public java.lang.String getDependency();
+  public java.lang.String getConflict();
+  public boolean isUndocumented();
+  public java.lang.String getShortName();
+  public java.lang.String getName();
+  public java.lang.String getDescription();
+  public boolean isValueNextArg();
+  public boolean isRepeated();
+  boolean nameMatches(java.lang.String);
+  public java.lang.String toString();
+  public int compareTo(jdk.nashorn.internal.runtime.options.OptionTemplate);
+  public int compareTo(java.lang.Object);
+}

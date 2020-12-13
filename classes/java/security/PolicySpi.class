@@ -1,0 +1,8 @@
+Compiled from "PolicySpi.java"
+public abstract class java.security.PolicySpi {
+  public java.security.PolicySpi();
+  protected abstract boolean engineImplies(java.security.ProtectionDomain, java.security.Permission);
+  protected void engineRefresh();
+  protected java.security.PermissionCollection engineGetPermissions(java.security.CodeSource);
+  protected java.security.PermissionCollection engineGetPermissions(java.security.ProtectionDomain);
+}

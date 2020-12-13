@@ -1,0 +1,18 @@
+Compiled from "TagStack.java"
+final class javax.swing.text.html.parser.TagStack implements javax.swing.text.html.parser.DTDConstants {
+  javax.swing.text.html.parser.TagElement tag;
+  javax.swing.text.html.parser.Element elem;
+  javax.swing.text.html.parser.ContentModelState state;
+  javax.swing.text.html.parser.TagStack next;
+  java.util.BitSet inclusions;
+  java.util.BitSet exclusions;
+  boolean net;
+  boolean pre;
+  javax.swing.text.html.parser.TagStack(javax.swing.text.html.parser.TagElement, javax.swing.text.html.parser.TagStack);
+  public javax.swing.text.html.parser.Element first();
+  public javax.swing.text.html.parser.ContentModel contentModel();
+  boolean excluded(int);
+  boolean advance(javax.swing.text.html.parser.Element);
+  boolean terminate();
+  public java.lang.String toString();
+}

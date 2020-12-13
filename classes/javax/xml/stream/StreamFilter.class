@@ -1,0 +1,4 @@
+Compiled from "StreamFilter.java"
+public interface javax.xml.stream.StreamFilter {
+  public abstract boolean accept(javax.xml.stream.XMLStreamReader);
+}

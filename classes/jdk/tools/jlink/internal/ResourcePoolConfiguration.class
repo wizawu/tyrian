@@ -1,0 +1,4 @@
+Compiled from "ResourcePoolConfiguration.java"
+final class jdk.tools.jlink.internal.ResourcePoolConfiguration {
+  static java.lang.module.Configuration validate(jdk.tools.jlink.plugin.ResourcePool);
+}

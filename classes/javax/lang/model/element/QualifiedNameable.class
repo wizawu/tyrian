@@ -1,0 +1,4 @@
+Compiled from "QualifiedNameable.java"
+public interface javax.lang.model.element.QualifiedNameable extends javax.lang.model.element.Element {
+  public abstract javax.lang.model.element.Name getQualifiedName();
+}

@@ -1,0 +1,7 @@
+Compiled from "InsnNode.java"
+public class jdk.internal.org.objectweb.asm.tree.InsnNode extends jdk.internal.org.objectweb.asm.tree.AbstractInsnNode {
+  public jdk.internal.org.objectweb.asm.tree.InsnNode(int);
+  public int getType();
+  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode clone(java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
+}

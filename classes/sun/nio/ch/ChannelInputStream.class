@@ -1,0 +1,11 @@
+Compiled from "ChannelInputStream.java"
+public class sun.nio.ch.ChannelInputStream extends java.io.InputStream {
+  protected final java.nio.channels.ReadableByteChannel ch;
+  public static int read(java.nio.channels.ReadableByteChannel, java.nio.ByteBuffer, boolean) throws java.io.IOException;
+  public sun.nio.ch.ChannelInputStream(java.nio.channels.ReadableByteChannel);
+  public synchronized int read() throws java.io.IOException;
+  public synchronized int read(byte[], int, int) throws java.io.IOException;
+  protected int read(java.nio.ByteBuffer) throws java.io.IOException;
+  public int available() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

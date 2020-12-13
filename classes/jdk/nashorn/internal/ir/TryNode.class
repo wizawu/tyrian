@@ -1,0 +1,26 @@
+Compiled from "TryNode.java"
+public final class jdk.nashorn.internal.ir.TryNode extends jdk.nashorn.internal.ir.LexicalContextStatement implements jdk.nashorn.internal.ir.JoinPredecessor {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.ir.TryNode(int, long, int, jdk.nashorn.internal.ir.Block, java.util.List<jdk.nashorn.internal.ir.Block>, jdk.nashorn.internal.ir.Block);
+  public jdk.nashorn.internal.ir.Node ensureUniqueLabels(jdk.nashorn.internal.ir.LexicalContext);
+  public boolean isTerminal();
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public void toString(java.lang.StringBuilder, boolean);
+  public jdk.nashorn.internal.ir.Block getBody();
+  public jdk.nashorn.internal.ir.TryNode setBody(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.Block);
+  public java.util.List<jdk.nashorn.internal.ir.CatchNode> getCatches();
+  public java.util.List<jdk.nashorn.internal.ir.Block> getCatchBlocks();
+  public jdk.nashorn.internal.ir.TryNode setCatchBlocks(jdk.nashorn.internal.ir.LexicalContext, java.util.List<jdk.nashorn.internal.ir.Block>);
+  public jdk.nashorn.internal.ir.Symbol getException();
+  public jdk.nashorn.internal.ir.TryNode setException(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.Symbol);
+  public jdk.nashorn.internal.ir.Block getFinallyBody();
+  public jdk.nashorn.internal.ir.Block getInlinedFinally(java.lang.String);
+  public static jdk.nashorn.internal.ir.Block getLabelledInlinedFinallyBlock(jdk.nashorn.internal.ir.Block);
+  public java.util.List<jdk.nashorn.internal.ir.Block> getInlinedFinallies();
+  public jdk.nashorn.internal.ir.TryNode setFinallyBody(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.Block);
+  public jdk.nashorn.internal.ir.TryNode setInlinedFinallies(jdk.nashorn.internal.ir.LexicalContext, java.util.List<jdk.nashorn.internal.ir.Block>);
+  public jdk.nashorn.internal.ir.JoinPredecessor setLocalVariableConversion(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.LocalVariableConversion);
+  public jdk.nashorn.internal.ir.LocalVariableConversion getLocalVariableConversion();
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor);
+  static {};
+}

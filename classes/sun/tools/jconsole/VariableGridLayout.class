@@ -1,0 +1,10 @@
+Compiled from "VariableGridLayout.java"
+public class sun.tools.jconsole.VariableGridLayout extends java.awt.GridLayout {
+  public sun.tools.jconsole.VariableGridLayout(int, int, int, int, boolean, boolean);
+  public void setFillRow(javax.swing.JComponent, boolean);
+  public void setFillColumn(javax.swing.JComponent, boolean);
+  public boolean getFillRow(javax.swing.JComponent);
+  public boolean getFillColumn(javax.swing.JComponent);
+  public void layoutContainer(java.awt.Container);
+  public java.awt.Dimension preferredLayoutSize(java.awt.Container);
+}

@@ -1,0 +1,8 @@
+Compiled from "AnnotationElementValue.java"
+public class com.sun.org.apache.bcel.internal.classfile.AnnotationElementValue extends com.sun.org.apache.bcel.internal.classfile.ElementValue {
+  public com.sun.org.apache.bcel.internal.classfile.AnnotationElementValue(int, com.sun.org.apache.bcel.internal.classfile.AnnotationEntry, com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public java.lang.String stringifyValue();
+  public java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.classfile.AnnotationEntry getAnnotationEntry();
+}

@@ -1,0 +1,7 @@
+Compiled from "Context.java"
+public class com.sun.tools.javap.Context {
+  java.util.Map<java.lang.Class<?>, java.lang.Object> map;
+  public com.sun.tools.javap.Context();
+  public <T> T get(java.lang.Class<T>);
+  public <T> T put(java.lang.Class<T>, T);
+}

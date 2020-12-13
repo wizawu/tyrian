@@ -1,0 +1,12 @@
+Compiled from "TransferProtocolClient.java"
+public class sun.net.TransferProtocolClient extends sun.net.NetworkClient {
+  static final boolean debug;
+  protected java.util.Vector<java.lang.String> serverResponse;
+  protected int lastReplyCode;
+  public int readServerResponse() throws java.io.IOException;
+  public void sendServer(java.lang.String);
+  public java.lang.String getResponseString();
+  public java.util.Vector<java.lang.String> getResponseStrings();
+  public sun.net.TransferProtocolClient(java.lang.String, int) throws java.io.IOException;
+  public sun.net.TransferProtocolClient();
+}

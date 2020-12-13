@@ -1,0 +1,11 @@
+Compiled from "CoroutineParser.java"
+public interface com.sun.org.apache.xml.internal.dtm.ref.CoroutineParser {
+  public abstract int getParserCoroutineID();
+  public abstract com.sun.org.apache.xml.internal.dtm.ref.CoroutineManager getCoroutineManager();
+  public abstract void setContentHandler(org.xml.sax.ContentHandler);
+  public abstract void setLexHandler(org.xml.sax.ext.LexicalHandler);
+  public abstract java.lang.Object doParse(org.xml.sax.InputSource, int);
+  public abstract java.lang.Object doMore(boolean, int);
+  public abstract void doTerminate(int);
+  public abstract void init(com.sun.org.apache.xml.internal.dtm.ref.CoroutineManager, int, org.xml.sax.XMLReader);
+}

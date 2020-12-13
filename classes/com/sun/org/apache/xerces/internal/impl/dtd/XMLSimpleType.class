@@ -1,0 +1,27 @@
+Compiled from "XMLSimpleType.java"
+public class com.sun.org.apache.xerces.internal.impl.dtd.XMLSimpleType {
+  public static final short TYPE_CDATA;
+  public static final short TYPE_ENTITY;
+  public static final short TYPE_ENUMERATION;
+  public static final short TYPE_ID;
+  public static final short TYPE_IDREF;
+  public static final short TYPE_NMTOKEN;
+  public static final short TYPE_NOTATION;
+  public static final short TYPE_NAMED;
+  public static final short DEFAULT_TYPE_DEFAULT;
+  public static final short DEFAULT_TYPE_FIXED;
+  public static final short DEFAULT_TYPE_IMPLIED;
+  public static final short DEFAULT_TYPE_REQUIRED;
+  public short type;
+  public java.lang.String name;
+  public java.lang.String[] enumeration;
+  public boolean list;
+  public short defaultType;
+  public java.lang.String defaultValue;
+  public java.lang.String nonNormalizedDefaultValue;
+  public com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator datatypeValidator;
+  public com.sun.org.apache.xerces.internal.impl.dtd.XMLSimpleType();
+  public void setValues(short, java.lang.String, java.lang.String[], boolean, short, java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator);
+  public void setValues(com.sun.org.apache.xerces.internal.impl.dtd.XMLSimpleType);
+  public void clear();
+}

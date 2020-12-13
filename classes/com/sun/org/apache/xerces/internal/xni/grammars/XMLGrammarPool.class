@@ -1,0 +1,9 @@
+Compiled from "XMLGrammarPool.java"
+public interface com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool {
+  public abstract com.sun.org.apache.xerces.internal.xni.grammars.Grammar[] retrieveInitialGrammarSet(java.lang.String);
+  public abstract void cacheGrammars(java.lang.String, com.sun.org.apache.xerces.internal.xni.grammars.Grammar[]);
+  public abstract com.sun.org.apache.xerces.internal.xni.grammars.Grammar retrieveGrammar(com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription);
+  public abstract void lockPool();
+  public abstract void unlockPool();
+  public abstract void clear();
+}

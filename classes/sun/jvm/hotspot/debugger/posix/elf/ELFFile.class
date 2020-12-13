@@ -1,0 +1,26 @@
+Compiled from "ELFFile.java"
+public interface sun.jvm.hotspot.debugger.posix.elf.ELFFile {
+  public static final byte[] ELF_MAGIC_NUMBER;
+  public static final byte CLASS_INVALID;
+  public static final byte CLASS_32;
+  public static final byte CLASS_64;
+  public static final byte DATA_INVALID;
+  public static final byte DATA_LSB;
+  public static final byte DATA_MSB;
+  public static final byte VERSION_INVALID;
+  public static final byte VERSION_CURRENT;
+  public static final byte NDX_MAGIC_0;
+  public static final byte NDX_MAGIC_1;
+  public static final byte NDX_MAGIC_2;
+  public static final byte NDX_MAGIC_3;
+  public static final byte NDX_OBJECT_SIZE;
+  public static final byte NDX_ENCODING;
+  public static final byte NDX_VERSION;
+  public abstract sun.jvm.hotspot.debugger.posix.elf.ELFHeader getHeader();
+  public abstract void close();
+  public abstract byte[] getMagicNumber();
+  public abstract byte getObjectSize();
+  public abstract byte getEncoding();
+  public abstract byte getVersion();
+  static {};
+}

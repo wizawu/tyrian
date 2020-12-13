@@ -1,0 +1,8 @@
+Compiled from "Messages.java"
+public class com.sun.tools.jdeprscan.Messages {
+  static final boolean REPLACE_LINESEP;
+  static final java.util.ResourceBundle bundle;
+  public com.sun.tools.jdeprscan.Messages();
+  public static java.lang.String get(java.lang.String, java.lang.Object...);
+  static {};
+}

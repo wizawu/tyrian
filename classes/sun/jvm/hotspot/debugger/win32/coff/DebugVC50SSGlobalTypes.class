@@ -1,0 +1,6 @@
+Compiled from "DebugVC50SSGlobalTypes.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSGlobalTypes extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
+  public abstract int getNumTypes();
+  public abstract int getTypeOffset(int);
+  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeIterator getTypeIterator();
+}

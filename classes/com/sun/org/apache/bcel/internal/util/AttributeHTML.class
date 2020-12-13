@@ -1,0 +1,7 @@
+Compiled from "AttributeHTML.java"
+final class com.sun.org.apache.bcel.internal.util.AttributeHTML {
+  com.sun.org.apache.bcel.internal.util.AttributeHTML(java.lang.String, java.lang.String, com.sun.org.apache.bcel.internal.classfile.ConstantPool, com.sun.org.apache.bcel.internal.util.ConstantHTML) throws java.io.IOException;
+  final void close();
+  final void writeAttribute(com.sun.org.apache.bcel.internal.classfile.Attribute, java.lang.String);
+  final void writeAttribute(com.sun.org.apache.bcel.internal.classfile.Attribute, java.lang.String, int);
+}

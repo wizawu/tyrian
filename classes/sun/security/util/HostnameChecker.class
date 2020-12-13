@@ -1,0 +1,10 @@
+Compiled from "HostnameChecker.java"
+public class sun.security.util.HostnameChecker {
+  public static final byte TYPE_TLS;
+  public static final byte TYPE_LDAP;
+  public static sun.security.util.HostnameChecker getInstance(byte);
+  public void match(java.lang.String, java.security.cert.X509Certificate, boolean) throws java.security.cert.CertificateException;
+  public void match(java.lang.String, java.security.cert.X509Certificate) throws java.security.cert.CertificateException;
+  public static sun.security.x509.X500Name getSubjectX500Name(java.security.cert.X509Certificate) throws java.security.cert.CertificateParsingException;
+  static {};
+}

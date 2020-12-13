@@ -1,0 +1,10 @@
+Compiled from "CK_PKCS5_PBKD2_PARAMS.java"
+public class sun.security.pkcs11.wrapper.CK_PKCS5_PBKD2_PARAMS {
+  public long saltSource;
+  public byte[] pSaltSourceData;
+  public long iterations;
+  public long prf;
+  public byte[] pPrfData;
+  public sun.security.pkcs11.wrapper.CK_PKCS5_PBKD2_PARAMS();
+  public java.lang.String toString();
+}

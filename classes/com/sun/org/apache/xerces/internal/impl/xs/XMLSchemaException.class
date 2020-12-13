@@ -1,0 +1,9 @@
+Compiled from "XMLSchemaException.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaException extends java.lang.Exception {
+  static final long serialVersionUID;
+  java.lang.String key;
+  java.lang.Object[] args;
+  public com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaException(java.lang.String, java.lang.Object[]);
+  public java.lang.String getKey();
+  public java.lang.Object[] getArgs();
+}

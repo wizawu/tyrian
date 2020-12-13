@@ -1,0 +1,9 @@
+Compiled from "SortableTableModel.java"
+public abstract class sun.jvm.hotspot.ui.table.SortableTableModel extends javax.swing.table.AbstractTableModel {
+  protected java.util.List elements;
+  public sun.jvm.hotspot.ui.table.SortableTableModel();
+  public void setComparator(sun.jvm.hotspot.ui.table.TableModelComparator);
+  public void sortByColumn(int, boolean);
+  public boolean isAscending();
+  public int getColumn();
+}

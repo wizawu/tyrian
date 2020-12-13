@@ -1,0 +1,15 @@
+Compiled from "ThreadGroupContext.java"
+final class java.beans.ThreadGroupContext {
+  static java.beans.ThreadGroupContext getContext();
+  boolean isDesignTime();
+  void setDesignTime(boolean);
+  boolean isGuiAvailable();
+  void setGuiAvailable(boolean);
+  java.beans.BeanInfo getBeanInfo(java.lang.Class<?>);
+  java.beans.BeanInfo putBeanInfo(java.lang.Class<?>, java.beans.BeanInfo);
+  void removeBeanInfo(java.lang.Class<?>);
+  void clearBeanInfoCache();
+  synchronized com.sun.beans.finder.BeanInfoFinder getBeanInfoFinder();
+  synchronized com.sun.beans.finder.PropertyEditorFinder getPropertyEditorFinder();
+  static {};
+}

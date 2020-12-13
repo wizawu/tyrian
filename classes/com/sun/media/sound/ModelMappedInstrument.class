@@ -1,0 +1,8 @@
+Compiled from "ModelMappedInstrument.java"
+public final class com.sun.media.sound.ModelMappedInstrument extends com.sun.media.sound.ModelInstrument {
+  public com.sun.media.sound.ModelMappedInstrument(com.sun.media.sound.ModelInstrument, javax.sound.midi.Patch);
+  public java.lang.Object getData();
+  public com.sun.media.sound.ModelPerformer[] getPerformers();
+  public com.sun.media.sound.ModelDirector getDirector(com.sun.media.sound.ModelPerformer[], javax.sound.midi.MidiChannel, com.sun.media.sound.ModelDirectedPlayer);
+  public com.sun.media.sound.ModelChannelMixer getChannelMixer(javax.sound.midi.MidiChannel, javax.sound.sampled.AudioFormat);
+}

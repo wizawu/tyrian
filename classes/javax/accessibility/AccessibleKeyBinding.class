@@ -1,0 +1,5 @@
+Compiled from "AccessibleKeyBinding.java"
+public interface javax.accessibility.AccessibleKeyBinding {
+  public abstract int getAccessibleKeyBindingCount();
+  public abstract java.lang.Object getAccessibleKeyBinding(int);
+}

@@ -1,0 +1,8 @@
+Compiled from "DescriptorCache.java"
+public class com.sun.jmx.mbeanserver.DescriptorCache {
+  static com.sun.jmx.mbeanserver.DescriptorCache getInstance();
+  public static com.sun.jmx.mbeanserver.DescriptorCache getInstance(javax.management.JMX);
+  public javax.management.ImmutableDescriptor get(javax.management.ImmutableDescriptor);
+  public javax.management.ImmutableDescriptor union(javax.management.Descriptor...);
+  static {};
+}

@@ -1,0 +1,45 @@
+Compiled from "TextLine.java"
+final class java.awt.font.TextLine {
+  public java.awt.font.TextLine(java.awt.font.FontRenderContext, sun.font.TextLineComponent[], float[], char[], int, int, int[], byte[], boolean);
+  public java.awt.Rectangle getPixelBounds(java.awt.font.FontRenderContext, float, float);
+  static java.awt.Rectangle computePixelBounds(java.awt.image.BufferedImage);
+  public int characterCount();
+  public boolean isDirectionLTR();
+  public java.awt.font.TextLine$TextLineMetrics getMetrics();
+  public int visualToLogical(int);
+  public int logicalToVisual(int);
+  public byte getCharLevel(int);
+  public boolean isCharLTR(int);
+  public int getCharType(int);
+  public boolean isCharSpace(int);
+  public boolean isCharWhitespace(int);
+  public float getCharAngle(int);
+  public sun.font.CoreMetrics getCoreMetricsAt(int);
+  public float getCharAscent(int);
+  public float getCharDescent(int);
+  public float getCharShift(int);
+  public float getCharAdvance(int);
+  public float getCharXPosition(int);
+  public float getCharYPosition(int);
+  public float getCharLinePosition(int);
+  public float getCharLinePosition(int, boolean);
+  public boolean caretAtOffsetIsValid(int);
+  public java.awt.geom.Rectangle2D getCharBounds(int);
+  public void draw(java.awt.Graphics2D, float, float);
+  public java.awt.geom.Rectangle2D getVisualBounds();
+  public java.awt.geom.Rectangle2D getItalicBounds();
+  public java.awt.Shape getOutline(java.awt.geom.AffineTransform);
+  public java.lang.String toString();
+  public static java.awt.font.TextLine fastCreateTextLine(java.awt.font.FontRenderContext, char[], java.awt.Font, sun.font.CoreMetrics, java.util.Map<? extends java.text.AttributedCharacterIterator$Attribute, ?>);
+  public static sun.font.TextLineComponent[] createComponentsOnRun(int, int, char[], int[], byte[], sun.font.TextLabelFactory, java.awt.Font, sun.font.CoreMetrics, java.awt.font.FontRenderContext, sun.font.Decoration, sun.font.TextLineComponent[], int);
+  public static sun.font.TextLineComponent[] getComponents(java.awt.font.StyledParagraph, char[], int, int, int[], byte[], sun.font.TextLabelFactory);
+  public static java.awt.font.TextLine createLineFromText(char[], java.awt.font.StyledParagraph, sun.font.TextLabelFactory, boolean, float[]);
+  public static java.awt.font.TextLine standardCreateTextLine(java.awt.font.FontRenderContext, java.text.AttributedCharacterIterator, char[], float[]);
+  static boolean advanceToFirstFont(java.text.AttributedCharacterIterator);
+  static float[] getNormalizedOffsets(float[], byte);
+  static java.awt.Font getFontAtCurrentPos(java.text.AttributedCharacterIterator);
+  public java.awt.font.TextLine getJustifiedLine(float, float, int, int);
+  public static float getAdvanceBetween(sun.font.TextLineComponent[], int, int);
+  sun.font.LayoutPathImpl getLayoutPath();
+  static {};
+}

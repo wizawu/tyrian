@@ -1,0 +1,19 @@
+Compiled from "SpinedBuffer.java"
+class java.util.stream.SpinedBuffer<E> extends java.util.stream.AbstractSpinedBuffer implements java.util.function.Consumer<E>, java.lang.Iterable<E> {
+  protected E[] curChunk;
+  protected E[][] spine;
+  java.util.stream.SpinedBuffer(int);
+  java.util.stream.SpinedBuffer();
+  protected long capacity();
+  protected final void ensureCapacity(long);
+  protected void increaseCapacity();
+  public E get(long);
+  public void copyInto(E[], int);
+  public E[] asArray(java.util.function.IntFunction<E[]>);
+  public void clear();
+  public java.util.Iterator<E> iterator();
+  public void forEach(java.util.function.Consumer<? super E>);
+  public void accept(E);
+  public java.lang.String toString();
+  public java.util.Spliterator<E> spliterator();
+}

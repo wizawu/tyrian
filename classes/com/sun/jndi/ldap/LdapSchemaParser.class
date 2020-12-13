@@ -1,0 +1,18 @@
+Compiled from "LdapSchemaParser.java"
+final class com.sun.jndi.ldap.LdapSchemaParser {
+  static final java.lang.String OBJECTCLASSDESC_ATTR_ID;
+  static final java.lang.String ATTRIBUTEDESC_ATTR_ID;
+  static final java.lang.String SYNTAXDESC_ATTR_ID;
+  static final java.lang.String MATCHRULEDESC_ATTR_ID;
+  static final java.lang.String OBJECTCLASS_DEFINITION_NAME;
+  static final java.lang.String ATTRIBUTE_DEFINITION_NAME;
+  static final java.lang.String SYNTAX_DEFINITION_NAME;
+  static final java.lang.String MATCHRULE_DEFINITION_NAME;
+  com.sun.jndi.ldap.LdapSchemaParser(boolean);
+  static final void LDAP2JNDISchema(javax.naming.directory.Attributes, com.sun.jndi.ldap.LdapSchemaCtx) throws javax.naming.NamingException;
+  final javax.naming.directory.Attribute stringifyObjDesc(javax.naming.directory.Attributes) throws javax.naming.NamingException;
+  final javax.naming.directory.Attribute stringifyAttrDesc(javax.naming.directory.Attributes) throws javax.naming.NamingException;
+  final javax.naming.directory.Attribute stringifySyntaxDesc(javax.naming.directory.Attributes) throws javax.naming.NamingException;
+  final javax.naming.directory.Attribute stringifyMatchRuleDesc(javax.naming.directory.Attributes) throws javax.naming.NamingException;
+  static {};
+}

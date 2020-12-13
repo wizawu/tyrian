@@ -1,0 +1,18 @@
+Compiled from "StackTraceElement.java"
+public final class java.lang.StackTraceElement implements java.io.Serializable {
+  public java.lang.StackTraceElement(java.lang.String, java.lang.String, java.lang.String, int);
+  public java.lang.StackTraceElement(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int);
+  public java.lang.String getFileName();
+  public int getLineNumber();
+  public java.lang.String getModuleName();
+  public java.lang.String getModuleVersion();
+  public java.lang.String getClassLoaderName();
+  public java.lang.String getClassName();
+  public java.lang.String getMethodName();
+  public boolean isNativeMethod();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static java.lang.StackTraceElement[] of(java.lang.Throwable, int);
+  static java.lang.StackTraceElement of(java.lang.StackFrameInfo);
+}

@@ -1,0 +1,5 @@
+Compiled from "UntrustedCertificates.java"
+public final class sun.security.util.UntrustedCertificates {
+  public static boolean isUntrusted(java.security.cert.X509Certificate);
+  static {};
+}

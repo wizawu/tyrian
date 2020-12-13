@@ -1,0 +1,11 @@
+Compiled from "JavaxSecurityAuthKerberosAccessImpl.java"
+class javax.security.auth.kerberos.JavaxSecurityAuthKerberosAccessImpl implements sun.security.krb5.JavaxSecurityAuthKerberosAccess {
+  javax.security.auth.kerberos.JavaxSecurityAuthKerberosAccessImpl();
+  public sun.security.krb5.internal.ktab.KeyTab keyTabTakeSnapshot(javax.security.auth.kerberos.KeyTab);
+  public javax.security.auth.kerberos.KerberosPrincipal kerberosTicketGetClientAlias(javax.security.auth.kerberos.KerberosTicket);
+  public void kerberosTicketSetClientAlias(javax.security.auth.kerberos.KerberosTicket, javax.security.auth.kerberos.KerberosPrincipal);
+  public javax.security.auth.kerberos.KerberosPrincipal kerberosTicketGetServerAlias(javax.security.auth.kerberos.KerberosTicket);
+  public void kerberosTicketSetServerAlias(javax.security.auth.kerberos.KerberosTicket, javax.security.auth.kerberos.KerberosPrincipal);
+  public javax.security.auth.kerberos.KerberosTicket kerberosTicketGetProxy(javax.security.auth.kerberos.KerberosTicket);
+  public void kerberosTicketSetProxy(javax.security.auth.kerberos.KerberosTicket, javax.security.auth.kerberos.KerberosTicket);
+}

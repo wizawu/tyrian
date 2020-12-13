@@ -1,0 +1,7 @@
+Compiled from "LastCall.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.LastCall extends com.sun.org.apache.xalan.internal.xsltc.compiler.FunctionCall {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.LastCall(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public boolean hasPositionCall();
+  public boolean hasLastCall();
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

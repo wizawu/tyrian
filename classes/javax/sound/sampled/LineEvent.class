@@ -1,0 +1,8 @@
+Compiled from "LineEvent.java"
+public class javax.sound.sampled.LineEvent extends java.util.EventObject {
+  public javax.sound.sampled.LineEvent(javax.sound.sampled.Line, javax.sound.sampled.LineEvent$Type, long);
+  public final javax.sound.sampled.Line getLine();
+  public final javax.sound.sampled.LineEvent$Type getType();
+  public final long getFramePosition();
+  public java.lang.String toString();
+}

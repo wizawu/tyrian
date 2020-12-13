@@ -1,0 +1,26 @@
+Compiled from "ZoneOffsetTransition.java"
+public final class java.time.zone.ZoneOffsetTransition implements java.lang.Comparable<java.time.zone.ZoneOffsetTransition>, java.io.Serializable {
+  static final boolean $assertionsDisabled;
+  public static java.time.zone.ZoneOffsetTransition of(java.time.LocalDateTime, java.time.ZoneOffset, java.time.ZoneOffset);
+  java.time.zone.ZoneOffsetTransition(java.time.LocalDateTime, java.time.ZoneOffset, java.time.ZoneOffset);
+  java.time.zone.ZoneOffsetTransition(long, java.time.ZoneOffset, java.time.ZoneOffset);
+  void writeExternal(java.io.DataOutput) throws java.io.IOException;
+  static java.time.zone.ZoneOffsetTransition readExternal(java.io.DataInput) throws java.io.IOException;
+  public java.time.Instant getInstant();
+  public long toEpochSecond();
+  public java.time.LocalDateTime getDateTimeBefore();
+  public java.time.LocalDateTime getDateTimeAfter();
+  public java.time.ZoneOffset getOffsetBefore();
+  public java.time.ZoneOffset getOffsetAfter();
+  public java.time.Duration getDuration();
+  public boolean isGap();
+  public boolean isOverlap();
+  public boolean isValidOffset(java.time.ZoneOffset);
+  java.util.List<java.time.ZoneOffset> getValidOffsets();
+  public int compareTo(java.time.zone.ZoneOffsetTransition);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public int compareTo(java.lang.Object);
+  static {};
+}

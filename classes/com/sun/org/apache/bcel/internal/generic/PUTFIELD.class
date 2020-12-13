@@ -1,0 +1,8 @@
+Compiled from "PUTFIELD.java"
+public class com.sun.org.apache.bcel.internal.generic.PUTFIELD extends com.sun.org.apache.bcel.internal.generic.FieldInstruction implements com.sun.org.apache.bcel.internal.generic.PopInstruction,com.sun.org.apache.bcel.internal.generic.ExceptionThrower {
+  com.sun.org.apache.bcel.internal.generic.PUTFIELD();
+  public com.sun.org.apache.bcel.internal.generic.PUTFIELD(int);
+  public int consumeStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

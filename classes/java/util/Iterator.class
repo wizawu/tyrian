@@ -1,0 +1,7 @@
+Compiled from "Iterator.java"
+public interface java.util.Iterator<E> {
+  public abstract boolean hasNext();
+  public abstract E next();
+  public default void remove();
+  public default void forEachRemaining(java.util.function.Consumer<? super E>);
+}

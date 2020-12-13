@@ -1,0 +1,10 @@
+Compiled from "InvalidTransformException.java"
+public class com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+  public com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException();
+  public com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException(java.lang.String);
+  public com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException(java.lang.String, java.lang.Object[]);
+  public com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException(java.lang.Exception, java.lang.String);
+  public com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException(java.lang.String, java.lang.Exception);
+  public com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException(java.lang.Exception, java.lang.String, java.lang.Object[]);
+  public com.sun.org.apache.xml.internal.security.transforms.InvalidTransformException(java.lang.String, java.lang.Object[], java.lang.Exception);
+}

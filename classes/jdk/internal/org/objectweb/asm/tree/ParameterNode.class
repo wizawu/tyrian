@@ -1,0 +1,7 @@
+Compiled from "ParameterNode.java"
+public class jdk.internal.org.objectweb.asm.tree.ParameterNode {
+  public java.lang.String name;
+  public int access;
+  public jdk.internal.org.objectweb.asm.tree.ParameterNode(java.lang.String, int);
+  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
+}

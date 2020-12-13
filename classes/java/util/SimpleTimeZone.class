@@ -1,0 +1,35 @@
+Compiled from "SimpleTimeZone.java"
+public class java.util.SimpleTimeZone extends java.util.TimeZone {
+  public static final int WALL_TIME;
+  public static final int STANDARD_TIME;
+  public static final int UTC_TIME;
+  static final long serialVersionUID;
+  static final int currentSerialVersion;
+  public java.util.SimpleTimeZone(int, java.lang.String);
+  public java.util.SimpleTimeZone(int, java.lang.String, int, int, int, int, int, int, int, int);
+  public java.util.SimpleTimeZone(int, java.lang.String, int, int, int, int, int, int, int, int, int);
+  public java.util.SimpleTimeZone(int, java.lang.String, int, int, int, int, int, int, int, int, int, int, int);
+  public void setStartYear(int);
+  public void setStartRule(int, int, int, int);
+  public void setStartRule(int, int, int);
+  public void setStartRule(int, int, int, int, boolean);
+  public void setEndRule(int, int, int, int);
+  public void setEndRule(int, int, int);
+  public void setEndRule(int, int, int, int, boolean);
+  public int getOffset(long);
+  int getOffsets(long, int[]);
+  public int getOffset(int, int, int, int, int, int);
+  public int getRawOffset();
+  public void setRawOffset(int);
+  public void setDSTSavings(int);
+  public int getDSTSavings();
+  public boolean useDaylightTime();
+  public boolean observesDaylightTime();
+  public boolean inDaylightTime(java.util.Date);
+  public java.lang.Object clone();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public boolean hasSameRules(java.util.TimeZone);
+  public java.lang.String toString();
+  static {};
+}

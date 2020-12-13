@@ -1,0 +1,27 @@
+Compiled from "VFrame.java"
+public class sun.jvm.hotspot.runtime.VFrame {
+  protected sun.jvm.hotspot.runtime.Frame fr;
+  protected sun.jvm.hotspot.runtime.RegisterMap regMap;
+  protected sun.jvm.hotspot.runtime.JavaThread thread;
+  protected sun.jvm.hotspot.runtime.VFrame(sun.jvm.hotspot.runtime.Frame, sun.jvm.hotspot.runtime.RegisterMap, sun.jvm.hotspot.runtime.JavaThread);
+  public static sun.jvm.hotspot.runtime.VFrame newVFrame(sun.jvm.hotspot.runtime.Frame, sun.jvm.hotspot.runtime.RegisterMap, sun.jvm.hotspot.runtime.JavaThread, boolean, boolean);
+  public static sun.jvm.hotspot.runtime.VFrame newVFrame(sun.jvm.hotspot.runtime.Frame, sun.jvm.hotspot.runtime.RegisterMap, sun.jvm.hotspot.runtime.JavaThread);
+  public sun.jvm.hotspot.runtime.Frame getFrame();
+  public sun.jvm.hotspot.runtime.RegisterMap getRegisterMap();
+  public sun.jvm.hotspot.runtime.JavaThread getThread();
+  public sun.jvm.hotspot.runtime.VFrame sender();
+  public sun.jvm.hotspot.runtime.VFrame sender(boolean);
+  public sun.jvm.hotspot.runtime.JavaVFrame javaSender();
+  public boolean isTop();
+  public sun.jvm.hotspot.runtime.VFrame top();
+  public boolean isEntryFrame();
+  public boolean isJavaFrame();
+  public boolean isInterpretedFrame();
+  public boolean isCompiledFrame();
+  public boolean isDeoptimized();
+  public boolean mayBeImpreciseDbg();
+  public void print();
+  public void printOn(java.io.PrintStream);
+  public void printValue();
+  public void printValueOn(java.io.PrintStream);
+}

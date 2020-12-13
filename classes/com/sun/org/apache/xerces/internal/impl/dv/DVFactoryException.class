@@ -1,0 +1,6 @@
+Compiled from "DVFactoryException.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.DVFactoryException extends java.lang.RuntimeException {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xerces.internal.impl.dv.DVFactoryException();
+  public com.sun.org.apache.xerces.internal.impl.dv.DVFactoryException(java.lang.String);
+}

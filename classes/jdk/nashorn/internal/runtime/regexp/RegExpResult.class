@@ -1,0 +1,13 @@
+Compiled from "RegExpResult.java"
+public final class jdk.nashorn.internal.runtime.regexp.RegExpResult {
+  final java.lang.Object[] groups;
+  final int index;
+  final java.lang.String input;
+  public jdk.nashorn.internal.runtime.regexp.RegExpResult(java.lang.String, int, java.lang.Object[]);
+  public java.lang.Object[] getGroups();
+  public java.lang.String getInput();
+  public int getIndex();
+  public int length();
+  public java.lang.Object getGroup(int);
+  public java.lang.Object getLastParen();
+}

@@ -1,0 +1,16 @@
+Compiled from "HTMLOptionElement.java"
+public interface org.w3c.dom.html.HTMLOptionElement extends org.w3c.dom.html.HTMLElement {
+  public abstract org.w3c.dom.html.HTMLFormElement getForm();
+  public abstract boolean getDefaultSelected();
+  public abstract void setDefaultSelected(boolean);
+  public abstract java.lang.String getText();
+  public abstract int getIndex();
+  public abstract boolean getDisabled();
+  public abstract void setDisabled(boolean);
+  public abstract java.lang.String getLabel();
+  public abstract void setLabel(java.lang.String);
+  public abstract boolean getSelected();
+  public abstract void setSelected(boolean);
+  public abstract java.lang.String getValue();
+  public abstract void setValue(java.lang.String);
+}

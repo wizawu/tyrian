@@ -1,0 +1,14 @@
+Compiled from "IdentifierToken.java"
+public class sun.tools.java.IdentifierToken {
+  long where;
+  int modifiers;
+  sun.tools.java.Identifier id;
+  public sun.tools.java.IdentifierToken(long, sun.tools.java.Identifier);
+  public sun.tools.java.IdentifierToken(sun.tools.java.Identifier);
+  public sun.tools.java.IdentifierToken(long, sun.tools.java.Identifier, int);
+  public long getWhere();
+  public sun.tools.java.Identifier getName();
+  public int getModifiers();
+  public java.lang.String toString();
+  public static long getWhere(sun.tools.java.IdentifierToken, long);
+}

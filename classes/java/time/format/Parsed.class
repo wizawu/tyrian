@@ -1,0 +1,15 @@
+Compiled from "Parsed.java"
+final class java.time.format.Parsed implements java.time.temporal.TemporalAccessor {
+  final java.util.Map<java.time.temporal.TemporalField, java.lang.Long> fieldValues;
+  java.time.ZoneId zone;
+  java.time.chrono.Chronology chrono;
+  boolean leapSecond;
+  java.time.Period excessDays;
+  java.time.format.Parsed();
+  java.time.format.Parsed copy();
+  public boolean isSupported(java.time.temporal.TemporalField);
+  public long getLong(java.time.temporal.TemporalField);
+  public <R> R query(java.time.temporal.TemporalQuery<R>);
+  java.time.temporal.TemporalAccessor resolve(java.time.format.ResolverStyle, java.util.Set<java.time.temporal.TemporalField>);
+  public java.lang.String toString();
+}

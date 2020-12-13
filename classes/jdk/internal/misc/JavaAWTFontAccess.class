@@ -1,0 +1,5 @@
+Compiled from "JavaAWTFontAccess.java"
+public interface jdk.internal.misc.JavaAWTFontAccess {
+  public abstract java.lang.Object getTextAttributeConstant(java.lang.String);
+  public abstract void shape(java.lang.Object, char[], int, int);
+}

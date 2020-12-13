@@ -1,0 +1,4 @@
+Compiled from "Scope.java"
+public interface sun.reflect.generics.scope.Scope {
+  public abstract java.lang.reflect.TypeVariable<?> lookup(java.lang.String);
+}

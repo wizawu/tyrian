@@ -1,0 +1,15 @@
+Compiled from "AuthenticationFilter.java"
+class jdk.internal.net.http.AuthenticationFilter implements jdk.internal.net.http.HeaderFilter {
+  volatile jdk.internal.net.http.MultiExchange<?> exchange;
+  static final int DEFAULT_RETRY_LIMIT;
+  static final int retry_limit;
+  static final int UNAUTHORIZED;
+  static final int PROXY_UNAUTHORIZED;
+  static final java.util.WeakHashMap<jdk.internal.net.http.HttpClientImpl, jdk.internal.net.http.AuthenticationFilter$Cache> caches;
+  public jdk.internal.net.http.AuthenticationFilter();
+  public void request(jdk.internal.net.http.HttpRequestImpl, jdk.internal.net.http.MultiExchange<?>) throws java.io.IOException;
+  public jdk.internal.net.http.HttpRequestImpl response(jdk.internal.net.http.Response) throws java.io.IOException;
+  static synchronized jdk.internal.net.http.AuthenticationFilter$Cache getCache(jdk.internal.net.http.MultiExchange<?>);
+  static java.net.URI normalize(java.net.URI, boolean);
+  static {};
+}

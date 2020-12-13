@@ -1,0 +1,9 @@
+Compiled from "Method.java"
+public final class com.sun.org.apache.xml.internal.serialize.Method {
+  public static final java.lang.String XML;
+  public static final java.lang.String HTML;
+  public static final java.lang.String XHTML;
+  public static final java.lang.String TEXT;
+  public static final java.lang.String FOP;
+  public com.sun.org.apache.xml.internal.serialize.Method();
+}

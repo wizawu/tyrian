@@ -1,0 +1,11 @@
+Compiled from "LogInputStream.java"
+public class sun.rmi.log.LogInputStream extends java.io.InputStream {
+  public sun.rmi.log.LogInputStream(java.io.InputStream, int) throws java.io.IOException;
+  public int read() throws java.io.IOException;
+  public int read(byte[]) throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public long skip(long) throws java.io.IOException;
+  public int available() throws java.io.IOException;
+  public void close();
+  protected void finalize() throws java.io.IOException;
+}

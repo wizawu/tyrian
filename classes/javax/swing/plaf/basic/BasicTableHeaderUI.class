@@ -1,0 +1,28 @@
+Compiled from "BasicTableHeaderUI.java"
+public class javax.swing.plaf.basic.BasicTableHeaderUI extends javax.swing.plaf.TableHeaderUI {
+  protected javax.swing.table.JTableHeader header;
+  protected javax.swing.CellRendererPane rendererPane;
+  protected javax.swing.event.MouseInputListener mouseInputListener;
+  public javax.swing.plaf.basic.BasicTableHeaderUI();
+  protected javax.swing.event.MouseInputListener createMouseInputListener();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void installListeners();
+  protected void installKeyboardActions();
+  public void uninstallUI(javax.swing.JComponent);
+  protected void uninstallDefaults();
+  protected void uninstallListeners();
+  protected void uninstallKeyboardActions();
+  static void loadActionMap(javax.swing.plaf.basic.LazyActionMap);
+  protected int getRolloverColumn();
+  protected void rolloverColumnUpdated(int, int);
+  void selectColumn(int);
+  void selectColumn(int, boolean);
+  public int getBaseline(javax.swing.JComponent, int, int);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  static {};
+}

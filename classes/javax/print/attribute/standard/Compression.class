@@ -1,0 +1,13 @@
+Compiled from "Compression.java"
+public class javax.print.attribute.standard.Compression extends javax.print.attribute.EnumSyntax implements javax.print.attribute.DocAttribute {
+  public static final javax.print.attribute.standard.Compression NONE;
+  public static final javax.print.attribute.standard.Compression DEFLATE;
+  public static final javax.print.attribute.standard.Compression GZIP;
+  public static final javax.print.attribute.standard.Compression COMPRESS;
+  protected javax.print.attribute.standard.Compression(int);
+  protected java.lang.String[] getStringTable();
+  protected javax.print.attribute.EnumSyntax[] getEnumValueTable();
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  static {};
+}

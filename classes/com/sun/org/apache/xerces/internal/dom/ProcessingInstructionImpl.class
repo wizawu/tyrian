@@ -1,0 +1,12 @@
+Compiled from "ProcessingInstructionImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.ProcessingInstructionImpl extends com.sun.org.apache.xerces.internal.dom.CharacterDataImpl implements org.w3c.dom.ProcessingInstruction {
+  static final long serialVersionUID;
+  protected java.lang.String target;
+  public com.sun.org.apache.xerces.internal.dom.ProcessingInstructionImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String, java.lang.String);
+  public short getNodeType();
+  public java.lang.String getNodeName();
+  public java.lang.String getTarget();
+  public java.lang.String getData();
+  public void setData(java.lang.String);
+  public java.lang.String getBaseURI();
+}

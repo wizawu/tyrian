@@ -1,0 +1,4 @@
+Compiled from "PermissionFactory.java"
+public interface sun.security.util.PermissionFactory<T extends java.security.Permission> {
+  public abstract T newPermission(java.lang.String);
+}

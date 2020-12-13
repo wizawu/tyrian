@@ -1,0 +1,5 @@
+Compiled from "AbstractElementVisitor9.java"
+public abstract class javax.lang.model.util.AbstractElementVisitor9<R, P> extends javax.lang.model.util.AbstractElementVisitor8<R, P> {
+  protected javax.lang.model.util.AbstractElementVisitor9();
+  public abstract R visitModule(javax.lang.model.element.ModuleElement, P);
+}

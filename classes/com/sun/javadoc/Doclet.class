@@ -1,0 +1,8 @@
+Compiled from "Doclet.java"
+public abstract class com.sun.javadoc.Doclet {
+  public com.sun.javadoc.Doclet();
+  public static boolean start(com.sun.javadoc.RootDoc);
+  public static int optionLength(java.lang.String);
+  public static boolean validOptions(java.lang.String[][], com.sun.javadoc.DocErrorReporter);
+  public static com.sun.javadoc.LanguageVersion languageVersion();
+}

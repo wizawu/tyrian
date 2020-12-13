@@ -1,0 +1,27 @@
+Compiled from "ExceptionConst.java"
+public final class com.sun.org.apache.bcel.internal.ExceptionConst {
+  public static final java.lang.Class<java.lang.Throwable> THROWABLE;
+  public static final java.lang.Class<java.lang.RuntimeException> RUNTIME_EXCEPTION;
+  public static final java.lang.Class<java.lang.LinkageError> LINKING_EXCEPTION;
+  public static final java.lang.Class<java.lang.ClassCircularityError> CLASS_CIRCULARITY_ERROR;
+  public static final java.lang.Class<java.lang.ClassFormatError> CLASS_FORMAT_ERROR;
+  public static final java.lang.Class<java.lang.ExceptionInInitializerError> EXCEPTION_IN_INITIALIZER_ERROR;
+  public static final java.lang.Class<java.lang.IncompatibleClassChangeError> INCOMPATIBLE_CLASS_CHANGE_ERROR;
+  public static final java.lang.Class<java.lang.AbstractMethodError> ABSTRACT_METHOD_ERROR;
+  public static final java.lang.Class<java.lang.IllegalAccessError> ILLEGAL_ACCESS_ERROR;
+  public static final java.lang.Class<java.lang.InstantiationError> INSTANTIATION_ERROR;
+  public static final java.lang.Class<java.lang.NoSuchFieldError> NO_SUCH_FIELD_ERROR;
+  public static final java.lang.Class<java.lang.NoSuchMethodError> NO_SUCH_METHOD_ERROR;
+  public static final java.lang.Class<java.lang.NoClassDefFoundError> NO_CLASS_DEF_FOUND_ERROR;
+  public static final java.lang.Class<java.lang.UnsatisfiedLinkError> UNSATISFIED_LINK_ERROR;
+  public static final java.lang.Class<java.lang.VerifyError> VERIFY_ERROR;
+  public static final java.lang.Class<java.lang.NullPointerException> NULL_POINTER_EXCEPTION;
+  public static final java.lang.Class<java.lang.ArrayIndexOutOfBoundsException> ARRAY_INDEX_OUT_OF_BOUNDS_EXCEPTION;
+  public static final java.lang.Class<java.lang.ArithmeticException> ARITHMETIC_EXCEPTION;
+  public static final java.lang.Class<java.lang.NegativeArraySizeException> NEGATIVE_ARRAY_SIZE_EXCEPTION;
+  public static final java.lang.Class<java.lang.ClassCastException> CLASS_CAST_EXCEPTION;
+  public static final java.lang.Class<java.lang.IllegalMonitorStateException> ILLEGAL_MONITOR_STATE;
+  public com.sun.org.apache.bcel.internal.ExceptionConst();
+  public static java.lang.Class<?>[] createExceptions(com.sun.org.apache.bcel.internal.ExceptionConst$EXCS, java.lang.Class<?>...);
+  static {};
+}

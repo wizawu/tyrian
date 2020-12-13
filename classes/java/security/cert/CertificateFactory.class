@@ -1,0 +1,17 @@
+Compiled from "CertificateFactory.java"
+public class java.security.cert.CertificateFactory {
+  protected java.security.cert.CertificateFactory(java.security.cert.CertificateFactorySpi, java.security.Provider, java.lang.String);
+  public static final java.security.cert.CertificateFactory getInstance(java.lang.String) throws java.security.cert.CertificateException;
+  public static final java.security.cert.CertificateFactory getInstance(java.lang.String, java.lang.String) throws java.security.cert.CertificateException, java.security.NoSuchProviderException;
+  public static final java.security.cert.CertificateFactory getInstance(java.lang.String, java.security.Provider) throws java.security.cert.CertificateException;
+  public final java.security.Provider getProvider();
+  public final java.lang.String getType();
+  public final java.security.cert.Certificate generateCertificate(java.io.InputStream) throws java.security.cert.CertificateException;
+  public final java.util.Iterator<java.lang.String> getCertPathEncodings();
+  public final java.security.cert.CertPath generateCertPath(java.io.InputStream) throws java.security.cert.CertificateException;
+  public final java.security.cert.CertPath generateCertPath(java.io.InputStream, java.lang.String) throws java.security.cert.CertificateException;
+  public final java.security.cert.CertPath generateCertPath(java.util.List<? extends java.security.cert.Certificate>) throws java.security.cert.CertificateException;
+  public final java.util.Collection<? extends java.security.cert.Certificate> generateCertificates(java.io.InputStream) throws java.security.cert.CertificateException;
+  public final java.security.cert.CRL generateCRL(java.io.InputStream) throws java.security.cert.CRLException;
+  public final java.util.Collection<? extends java.security.cert.CRL> generateCRLs(java.io.InputStream) throws java.security.cert.CRLException;
+}

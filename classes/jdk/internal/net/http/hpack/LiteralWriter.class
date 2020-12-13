@@ -1,0 +1,4 @@
+Compiled from "LiteralWriter.java"
+final class jdk.internal.net.http.hpack.LiteralWriter extends jdk.internal.net.http.hpack.IndexNameValueWriter {
+  jdk.internal.net.http.hpack.LiteralWriter();
+}

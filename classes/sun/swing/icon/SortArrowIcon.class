@@ -1,0 +1,8 @@
+Compiled from "SortArrowIcon.java"
+public class sun.swing.icon.SortArrowIcon implements javax.swing.Icon,javax.swing.plaf.UIResource,java.io.Serializable {
+  public sun.swing.icon.SortArrowIcon(boolean, java.awt.Color);
+  public sun.swing.icon.SortArrowIcon(boolean, java.lang.String);
+  public void paintIcon(java.awt.Component, java.awt.Graphics, int, int);
+  public int getIconWidth();
+  public int getIconHeight();
+}

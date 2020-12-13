@@ -1,0 +1,4 @@
+Compiled from "GarbageCollectorMXBean.java"
+public interface com.sun.management.GarbageCollectorMXBean extends java.lang.management.GarbageCollectorMXBean {
+  public abstract com.sun.management.GcInfo getLastGcInfo();
+}

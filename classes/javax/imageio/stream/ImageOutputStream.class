@@ -1,0 +1,26 @@
+Compiled from "ImageOutputStream.java"
+public interface javax.imageio.stream.ImageOutputStream extends javax.imageio.stream.ImageInputStream,java.io.DataOutput {
+  public abstract void write(int) throws java.io.IOException;
+  public abstract void write(byte[]) throws java.io.IOException;
+  public abstract void write(byte[], int, int) throws java.io.IOException;
+  public abstract void writeBoolean(boolean) throws java.io.IOException;
+  public abstract void writeByte(int) throws java.io.IOException;
+  public abstract void writeShort(int) throws java.io.IOException;
+  public abstract void writeChar(int) throws java.io.IOException;
+  public abstract void writeInt(int) throws java.io.IOException;
+  public abstract void writeLong(long) throws java.io.IOException;
+  public abstract void writeFloat(float) throws java.io.IOException;
+  public abstract void writeDouble(double) throws java.io.IOException;
+  public abstract void writeBytes(java.lang.String) throws java.io.IOException;
+  public abstract void writeChars(java.lang.String) throws java.io.IOException;
+  public abstract void writeUTF(java.lang.String) throws java.io.IOException;
+  public abstract void writeShorts(short[], int, int) throws java.io.IOException;
+  public abstract void writeChars(char[], int, int) throws java.io.IOException;
+  public abstract void writeInts(int[], int, int) throws java.io.IOException;
+  public abstract void writeLongs(long[], int, int) throws java.io.IOException;
+  public abstract void writeFloats(float[], int, int) throws java.io.IOException;
+  public abstract void writeDoubles(double[], int, int) throws java.io.IOException;
+  public abstract void writeBit(int) throws java.io.IOException;
+  public abstract void writeBits(long, int) throws java.io.IOException;
+  public abstract void flushBefore(long) throws java.io.IOException;
+}

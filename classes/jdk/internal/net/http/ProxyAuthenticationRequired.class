@@ -1,0 +1,7 @@
+Compiled from "ProxyAuthenticationRequired.java"
+final class jdk.internal.net.http.ProxyAuthenticationRequired extends java.io.IOException {
+  final transient jdk.internal.net.http.Response proxyResponse;
+  static final boolean $assertionsDisabled;
+  public jdk.internal.net.http.ProxyAuthenticationRequired(jdk.internal.net.http.Response);
+  static {};
+}

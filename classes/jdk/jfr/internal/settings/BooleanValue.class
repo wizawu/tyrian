@@ -1,0 +1,8 @@
+Compiled from "BooleanValue.java"
+final class jdk.jfr.internal.settings.BooleanValue {
+  public java.lang.String union(java.util.Set<java.lang.String>);
+  public void setValue(java.lang.String);
+  public final java.lang.String getValue();
+  public boolean getBoolean();
+  public static jdk.jfr.internal.settings.BooleanValue valueOf(java.lang.String);
+}

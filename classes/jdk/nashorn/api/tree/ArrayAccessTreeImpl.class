@@ -1,0 +1,8 @@
+Compiled from "ArrayAccessTreeImpl.java"
+final class jdk.nashorn.api.tree.ArrayAccessTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.ArrayAccessTree {
+  jdk.nashorn.api.tree.ArrayAccessTreeImpl(jdk.nashorn.internal.ir.Expression, jdk.nashorn.api.tree.ExpressionTree, jdk.nashorn.api.tree.ExpressionTree);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public jdk.nashorn.api.tree.ExpressionTree getExpression();
+  public jdk.nashorn.api.tree.ExpressionTree getIndex();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

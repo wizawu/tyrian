@@ -1,0 +1,21 @@
+Compiled from "ActivatableRef.java"
+public class sun.rmi.server.ActivatableRef implements java.rmi.server.RemoteRef {
+  protected java.rmi.activation.ActivationID id;
+  protected java.rmi.server.RemoteRef ref;
+  transient boolean force;
+  static final boolean $assertionsDisabled;
+  public sun.rmi.server.ActivatableRef();
+  public sun.rmi.server.ActivatableRef(java.rmi.activation.ActivationID, java.rmi.server.RemoteRef);
+  public static java.rmi.Remote getStub(java.rmi.activation.ActivationDesc, java.rmi.activation.ActivationID) throws java.rmi.StubNotFoundException;
+  public java.lang.Object invoke(java.rmi.Remote, java.lang.reflect.Method, java.lang.Object[], long) throws java.lang.Exception;
+  public synchronized java.rmi.server.RemoteCall newCall(java.rmi.server.RemoteObject, java.rmi.server.Operation[], int, long) throws java.rmi.RemoteException;
+  public void invoke(java.rmi.server.RemoteCall) throws java.lang.Exception;
+  public void done(java.rmi.server.RemoteCall) throws java.rmi.RemoteException;
+  public java.lang.String getRefClass(java.io.ObjectOutput);
+  public void writeExternal(java.io.ObjectOutput) throws java.io.IOException;
+  public void readExternal(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+  public java.lang.String remoteToString();
+  public int remoteHashCode();
+  public boolean remoteEquals(java.rmi.server.RemoteRef);
+  static {};
+}

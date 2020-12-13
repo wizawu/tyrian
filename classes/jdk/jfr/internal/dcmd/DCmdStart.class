@@ -1,0 +1,5 @@
+Compiled from "DCmdStart.java"
+final class jdk.jfr.internal.dcmd.DCmdStart extends jdk.jfr.internal.dcmd.AbstractDCmd {
+  jdk.jfr.internal.dcmd.DCmdStart();
+  public java.lang.String execute(java.lang.String, java.lang.String[], java.lang.Long, java.lang.Long, java.lang.Boolean, java.lang.String, java.lang.Long, java.lang.Long, java.lang.Boolean, java.lang.Boolean) throws jdk.jfr.internal.dcmd.DCmdException;
+}

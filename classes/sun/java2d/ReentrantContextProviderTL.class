@@ -1,0 +1,7 @@
+Compiled from "ReentrantContextProviderTL.java"
+public abstract class sun.java2d.ReentrantContextProviderTL<K extends sun.java2d.ReentrantContext> extends sun.java2d.ReentrantContextProvider<K> {
+  public sun.java2d.ReentrantContextProviderTL(int);
+  public sun.java2d.ReentrantContextProviderTL(int, int);
+  public final K acquire();
+  public final void release(K);
+}

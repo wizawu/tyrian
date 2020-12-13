@@ -1,0 +1,4 @@
+Compiled from "ListSelectionListener.java"
+public interface javax.swing.event.ListSelectionListener extends java.util.EventListener {
+  public abstract void valueChanged(javax.swing.event.ListSelectionEvent);
+}

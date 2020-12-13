@@ -1,0 +1,5 @@
+Compiled from "AccessibleStreamable.java"
+public interface javax.accessibility.AccessibleStreamable {
+  public abstract java.awt.datatransfer.DataFlavor[] getMimeTypes();
+  public abstract java.io.InputStream getStream(java.awt.datatransfer.DataFlavor);
+}

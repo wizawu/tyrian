@@ -1,0 +1,6 @@
+Compiled from "IndexedCollectionCertStore.java"
+public class sun.security.provider.certpath.IndexedCollectionCertStore extends java.security.cert.CertStoreSpi {
+  public sun.security.provider.certpath.IndexedCollectionCertStore(java.security.cert.CertStoreParameters) throws java.security.InvalidAlgorithmParameterException;
+  public java.util.Collection<? extends java.security.cert.Certificate> engineGetCertificates(java.security.cert.CertSelector) throws java.security.cert.CertStoreException;
+  public java.util.Collection<java.security.cert.CRL> engineGetCRLs(java.security.cert.CRLSelector) throws java.security.cert.CertStoreException;
+}

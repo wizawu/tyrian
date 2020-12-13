@@ -1,0 +1,24 @@
+Compiled from "ScannerSupport.java"
+abstract class jdk.nashorn.internal.runtime.regexp.joni.ScannerSupport extends jdk.nashorn.internal.runtime.regexp.joni.encoding.IntHolder implements jdk.nashorn.internal.runtime.regexp.joni.exception.ErrorMessages {
+  protected final char[] chars;
+  protected int p;
+  protected int stop;
+  protected int c;
+  protected int _p;
+  protected jdk.nashorn.internal.runtime.regexp.joni.ScannerSupport(char[], int, int);
+  protected int getBegin();
+  protected int getEnd();
+  protected final int scanUnsignedNumber();
+  protected final int scanUnsignedHexadecimalNumber(int);
+  protected final int scanUnsignedOctalNumber(int);
+  protected final void reset();
+  protected final void mark();
+  protected final void restore();
+  protected final void inc();
+  protected final void fetch();
+  protected int fetchTo();
+  protected final void unfetch();
+  protected final int peek();
+  protected final boolean peekIs(int);
+  protected final boolean left();
+}

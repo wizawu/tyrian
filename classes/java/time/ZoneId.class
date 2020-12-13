@@ -1,0 +1,21 @@
+Compiled from "ZoneId.java"
+public abstract class java.time.ZoneId implements java.io.Serializable {
+  public static final java.util.Map<java.lang.String, java.lang.String> SHORT_IDS;
+  public static java.time.ZoneId systemDefault();
+  public static java.util.Set<java.lang.String> getAvailableZoneIds();
+  public static java.time.ZoneId of(java.lang.String, java.util.Map<java.lang.String, java.lang.String>);
+  public static java.time.ZoneId of(java.lang.String);
+  public static java.time.ZoneId ofOffset(java.lang.String, java.time.ZoneOffset);
+  static java.time.ZoneId of(java.lang.String, boolean);
+  public static java.time.ZoneId from(java.time.temporal.TemporalAccessor);
+  java.time.ZoneId();
+  public abstract java.lang.String getId();
+  public java.lang.String getDisplayName(java.time.format.TextStyle, java.util.Locale);
+  public abstract java.time.zone.ZoneRules getRules();
+  public java.time.ZoneId normalized();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  abstract void write(java.io.DataOutput) throws java.io.IOException;
+  static {};
+}

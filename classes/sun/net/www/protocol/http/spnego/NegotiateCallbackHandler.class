@@ -1,0 +1,5 @@
+Compiled from "NegotiateCallbackHandler.java"
+public class sun.net.www.protocol.http.spnego.NegotiateCallbackHandler implements javax.security.auth.callback.CallbackHandler {
+  public sun.net.www.protocol.http.spnego.NegotiateCallbackHandler(sun.net.www.protocol.http.HttpCallerInfo);
+  public void handle(javax.security.auth.callback.Callback[]) throws javax.security.auth.callback.UnsupportedCallbackException, java.io.IOException;
+}

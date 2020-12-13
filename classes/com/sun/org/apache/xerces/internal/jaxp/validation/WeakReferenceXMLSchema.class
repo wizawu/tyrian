@@ -1,0 +1,6 @@
+Compiled from "WeakReferenceXMLSchema.java"
+final class com.sun.org.apache.xerces.internal.jaxp.validation.WeakReferenceXMLSchema extends com.sun.org.apache.xerces.internal.jaxp.validation.AbstractXMLSchema {
+  public com.sun.org.apache.xerces.internal.jaxp.validation.WeakReferenceXMLSchema();
+  public synchronized com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool getGrammarPool();
+  public boolean isFullyComposed();
+}

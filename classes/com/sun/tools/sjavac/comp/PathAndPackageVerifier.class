@@ -1,0 +1,7 @@
+Compiled from "PathAndPackageVerifier.java"
+public class com.sun.tools.sjavac.comp.PathAndPackageVerifier implements com.sun.source.util.TaskListener {
+  java.util.Set<com.sun.source.tree.CompilationUnitTree> misplacedCompilationUnits;
+  public com.sun.tools.sjavac.comp.PathAndPackageVerifier();
+  public void finished(com.sun.source.util.TaskEvent);
+  public boolean errorsDiscovered();
+}

@@ -1,0 +1,12 @@
+Compiled from "BinaryAssignExpression.java"
+public class sun.tools.tree.BinaryAssignExpression extends sun.tools.tree.BinaryExpression {
+  sun.tools.tree.Expression implementation;
+  sun.tools.tree.BinaryAssignExpression(int, long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  public sun.tools.tree.Expression getImplementation();
+  public sun.tools.tree.Expression order();
+  public sun.tools.tree.Vset check(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public sun.tools.tree.Expression inline(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Expression inlineValue(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Expression copyInline(sun.tools.tree.Context);
+  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
+}

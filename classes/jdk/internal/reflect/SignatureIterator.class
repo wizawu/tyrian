@@ -1,0 +1,8 @@
+Compiled from "SignatureIterator.java"
+class jdk.internal.reflect.SignatureIterator {
+  public jdk.internal.reflect.SignatureIterator(java.lang.String);
+  public void reset();
+  public boolean atEnd();
+  public java.lang.String next();
+  public java.lang.String returnType();
+}

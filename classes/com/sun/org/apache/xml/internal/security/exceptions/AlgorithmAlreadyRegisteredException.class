@@ -1,0 +1,10 @@
+Compiled from "AlgorithmAlreadyRegisteredException.java"
+public class com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+  public com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException();
+  public com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException(java.lang.String);
+  public com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException(java.lang.String, java.lang.Object[]);
+  public com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException(java.lang.Exception, java.lang.String);
+  public com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException(java.lang.String, java.lang.Exception);
+  public com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException(java.lang.Exception, java.lang.String, java.lang.Object[]);
+  public com.sun.org.apache.xml.internal.security.exceptions.AlgorithmAlreadyRegisteredException(java.lang.String, java.lang.Object[], java.lang.Exception);
+}

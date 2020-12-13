@@ -1,0 +1,7 @@
+Compiled from "OutputBuffer.java"
+interface com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer {
+  public abstract java.lang.String close();
+  public abstract com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer append(char);
+  public abstract com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer append(java.lang.String);
+  public abstract com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer append(char[], int, int);
+}

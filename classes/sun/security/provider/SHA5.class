@@ -1,0 +1,9 @@
+Compiled from "SHA5.java"
+abstract class sun.security.provider.SHA5 extends sun.security.provider.DigestBase {
+  sun.security.provider.SHA5(java.lang.String, int, long[]);
+  final void implReset();
+  final void implDigest(byte[], int);
+  final void implCompress(byte[], int);
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  static {};
+}

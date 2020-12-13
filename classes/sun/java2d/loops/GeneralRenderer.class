@@ -1,0 +1,18 @@
+Compiled from "GeneralRenderer.java"
+public final class sun.java2d.loops.GeneralRenderer {
+  static final int OUTCODE_TOP;
+  static final int OUTCODE_BOTTOM;
+  static final int OUTCODE_LEFT;
+  static final int OUTCODE_RIGHT;
+  public sun.java2d.loops.GeneralRenderer();
+  public static void register();
+  static void doDrawPoly(sun.java2d.SurfaceData, sun.java2d.loops.PixelWriter, int[], int[], int, int, sun.java2d.pipe.Region, int, int, boolean);
+  static void doSetRect(sun.java2d.SurfaceData, sun.java2d.loops.PixelWriter, int, int, int, int);
+  static int[] doDrawLine(sun.java2d.SurfaceData, sun.java2d.loops.PixelWriter, int[], sun.java2d.pipe.Region, int, int, int, int);
+  public static void doDrawRect(sun.java2d.loops.PixelWriter, sun.java2d.SunGraphics2D, sun.java2d.SurfaceData, int, int, int, int);
+  static void doDrawGlyphList(sun.java2d.SurfaceData, sun.java2d.loops.PixelWriter, sun.font.GlyphList, sun.java2d.pipe.Region);
+  static int outcode(int, int, int, int, int, int);
+  public static boolean adjustLine(int[], int, int, int, int);
+  static sun.java2d.loops.PixelWriter createSolidPixelWriter(sun.java2d.SunGraphics2D, sun.java2d.SurfaceData);
+  static sun.java2d.loops.PixelWriter createXorPixelWriter(sun.java2d.SunGraphics2D, sun.java2d.SurfaceData);
+}

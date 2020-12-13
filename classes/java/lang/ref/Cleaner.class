@@ -1,0 +1,8 @@
+Compiled from "Cleaner.java"
+public final class java.lang.ref.Cleaner {
+  final jdk.internal.ref.CleanerImpl impl;
+  public static java.lang.ref.Cleaner create();
+  public static java.lang.ref.Cleaner create(java.util.concurrent.ThreadFactory);
+  public java.lang.ref.Cleaner$Cleanable register(java.lang.Object, java.lang.Runnable);
+  static {};
+}

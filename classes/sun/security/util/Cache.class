@@ -1,0 +1,17 @@
+Compiled from "Cache.java"
+public abstract class sun.security.util.Cache<K, V> {
+  protected sun.security.util.Cache();
+  public abstract int size();
+  public abstract void clear();
+  public abstract void put(K, V);
+  public abstract V get(java.lang.Object);
+  public abstract void remove(java.lang.Object);
+  public abstract void setCapacity(int);
+  public abstract void setTimeout(int);
+  public abstract void accept(sun.security.util.Cache$CacheVisitor<K, V>);
+  public static <K, V> sun.security.util.Cache<K, V> newSoftMemoryCache(int);
+  public static <K, V> sun.security.util.Cache<K, V> newSoftMemoryCache(int, int);
+  public static <K, V> sun.security.util.Cache<K, V> newHardMemoryCache(int);
+  public static <K, V> sun.security.util.Cache<K, V> newNullCache();
+  public static <K, V> sun.security.util.Cache<K, V> newHardMemoryCache(int, int);
+}

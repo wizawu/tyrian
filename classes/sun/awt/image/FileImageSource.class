@@ -1,0 +1,7 @@
+Compiled from "FileImageSource.java"
+public class sun.awt.image.FileImageSource extends sun.awt.image.InputStreamImageSource {
+  java.lang.String imagefile;
+  public sun.awt.image.FileImageSource(java.lang.String);
+  final boolean checkSecurity(java.lang.Object, boolean);
+  protected sun.awt.image.ImageDecoder getDecoder();
+}

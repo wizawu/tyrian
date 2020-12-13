@@ -1,0 +1,5 @@
+Compiled from "ClassUnloadRequest.java"
+public interface com.sun.jdi.request.ClassUnloadRequest extends com.sun.jdi.request.EventRequest {
+  public abstract void addClassFilter(java.lang.String);
+  public abstract void addClassExclusionFilter(java.lang.String);
+}

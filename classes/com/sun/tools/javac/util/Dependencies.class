@@ -1,0 +1,9 @@
+Compiled from "Dependencies.java"
+public abstract class com.sun.tools.javac.util.Dependencies {
+  protected static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.util.Dependencies> dependenciesKey;
+  public static com.sun.tools.javac.util.Dependencies instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.util.Dependencies(com.sun.tools.javac.util.Context);
+  public abstract void push(com.sun.tools.javac.code.Symbol$ClassSymbol, com.sun.tools.javac.util.Dependencies$CompletionCause);
+  public abstract void pop();
+  static {};
+}

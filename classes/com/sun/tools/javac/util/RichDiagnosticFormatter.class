@@ -1,0 +1,26 @@
+Compiled from "RichDiagnosticFormatter.java"
+public class com.sun.tools.javac.util.RichDiagnosticFormatter extends com.sun.tools.javac.util.ForwardingDiagnosticFormatter<com.sun.tools.javac.util.JCDiagnostic, com.sun.tools.javac.util.AbstractDiagnosticFormatter> {
+  final com.sun.tools.javac.code.Symtab syms;
+  final com.sun.tools.javac.code.Types types;
+  final com.sun.tools.javac.util.JCDiagnostic$Factory diags;
+  final com.sun.tools.javac.util.JavacMessages messages;
+  protected com.sun.tools.javac.util.RichDiagnosticFormatter$ClassNameSimplifier nameSimplifier;
+  java.util.Map<com.sun.tools.javac.util.RichDiagnosticFormatter$WhereClauseKind, java.util.Map<com.sun.tools.javac.code.Type, com.sun.tools.javac.util.JCDiagnostic>> whereClauses;
+  protected com.sun.tools.javac.code.Types$UnaryVisitor<java.lang.Void> typePreprocessor;
+  protected com.sun.tools.javac.code.Types$DefaultSymbolVisitor<java.lang.Void, java.lang.Void> symbolPreprocessor;
+  public static com.sun.tools.javac.util.RichDiagnosticFormatter instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.util.RichDiagnosticFormatter(com.sun.tools.javac.util.Context);
+  public java.lang.String format(com.sun.tools.javac.util.JCDiagnostic, java.util.Locale);
+  public java.lang.String formatMessage(com.sun.tools.javac.util.JCDiagnostic, java.util.Locale);
+  protected void setRichPrinter(com.sun.tools.javac.util.RichDiagnosticFormatter$RichPrinter);
+  protected com.sun.tools.javac.util.RichDiagnosticFormatter$RichPrinter getRichPrinter();
+  protected void preprocessDiagnostic(com.sun.tools.javac.util.JCDiagnostic);
+  protected void preprocessArgument(java.lang.Object);
+  protected com.sun.tools.javac.util.List<com.sun.tools.javac.util.JCDiagnostic> getWhereClauses();
+  protected void preprocessType(com.sun.tools.javac.code.Type);
+  protected void preprocessSymbol(com.sun.tools.javac.code.Symbol);
+  public com.sun.tools.javac.util.RichDiagnosticFormatter$RichConfiguration getConfiguration();
+  public java.lang.String formatMessage(javax.tools.Diagnostic, java.util.Locale);
+  public java.lang.String format(javax.tools.Diagnostic, java.util.Locale);
+  public com.sun.tools.javac.api.DiagnosticFormatter$Configuration getConfiguration();
+}

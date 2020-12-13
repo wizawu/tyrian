@@ -1,0 +1,11 @@
+Compiled from "SourceLocation.java"
+public class com.sun.tools.sjavac.options.SourceLocation {
+  java.util.List<java.lang.String> includes;
+  java.util.List<java.lang.String> excludes;
+  public com.sun.tools.sjavac.options.SourceLocation(java.nio.file.Path, java.util.List<java.lang.String>, java.util.List<java.lang.String>);
+  public void findSourceFiles(java.util.Set<java.lang.String>, java.util.Map<java.lang.String, com.sun.tools.sjavac.Source>, java.util.Map<java.lang.String, com.sun.tools.sjavac.Module>, com.sun.tools.sjavac.Module, boolean, boolean) throws java.io.IOException;
+  public java.nio.file.Path getPath();
+  public java.util.List<java.lang.String> getIncludes();
+  public java.util.List<java.lang.String> getExcludes();
+  public java.lang.String toString();
+}

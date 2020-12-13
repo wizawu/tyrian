@@ -1,0 +1,25 @@
+Compiled from "DocumentHandler.java"
+public final class com.sun.beans.decoder.DocumentHandler extends org.xml.sax.helpers.DefaultHandler {
+  public com.sun.beans.decoder.DocumentHandler();
+  public java.lang.ClassLoader getClassLoader();
+  public void setClassLoader(java.lang.ClassLoader);
+  public java.beans.ExceptionListener getExceptionListener();
+  public void setExceptionListener(java.beans.ExceptionListener);
+  public java.lang.Object getOwner();
+  public void setOwner(java.lang.Object);
+  public java.lang.Class<? extends com.sun.beans.decoder.ElementHandler> getElementHandler(java.lang.String);
+  public void setElementHandler(java.lang.String, java.lang.Class<? extends com.sun.beans.decoder.ElementHandler>);
+  public boolean hasVariable(java.lang.String);
+  public java.lang.Object getVariable(java.lang.String);
+  public void setVariable(java.lang.String, java.lang.Object);
+  public java.lang.Object[] getObjects();
+  void addObject(java.lang.Object);
+  public org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String);
+  public void startDocument();
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String, java.lang.String, java.lang.String);
+  public void characters(char[], int, int);
+  public void handleException(java.lang.Exception);
+  public void parse(org.xml.sax.InputSource);
+  public java.lang.Class<?> findClass(java.lang.String);
+}

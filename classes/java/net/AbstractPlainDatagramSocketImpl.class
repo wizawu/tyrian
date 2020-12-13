@@ -1,0 +1,42 @@
+Compiled from "AbstractPlainDatagramSocketImpl.java"
+abstract class java.net.AbstractPlainDatagramSocketImpl extends java.net.DatagramSocketImpl {
+  int timeout;
+  boolean connected;
+  protected java.net.InetAddress connectedAddress;
+  java.net.AbstractPlainDatagramSocketImpl();
+  static boolean isReusePortAvailable();
+  protected java.util.Set<java.net.SocketOption<?>> supportedOptions();
+  protected synchronized void create() throws java.net.SocketException;
+  protected synchronized void bind(int, java.net.InetAddress) throws java.net.SocketException;
+  protected abstract void bind0(int, java.net.InetAddress) throws java.net.SocketException;
+  protected abstract void send(java.net.DatagramPacket) throws java.io.IOException;
+  protected void connect(java.net.InetAddress, int) throws java.net.SocketException;
+  protected void disconnect();
+  protected abstract int peek(java.net.InetAddress) throws java.io.IOException;
+  protected abstract int peekData(java.net.DatagramPacket) throws java.io.IOException;
+  protected synchronized void receive(java.net.DatagramPacket) throws java.io.IOException;
+  protected abstract void receive0(java.net.DatagramPacket) throws java.io.IOException;
+  protected abstract void setTimeToLive(int) throws java.io.IOException;
+  protected abstract int getTimeToLive() throws java.io.IOException;
+  protected abstract void setTTL(byte) throws java.io.IOException;
+  protected abstract byte getTTL() throws java.io.IOException;
+  protected void join(java.net.InetAddress) throws java.io.IOException;
+  protected void leave(java.net.InetAddress) throws java.io.IOException;
+  protected void joinGroup(java.net.SocketAddress, java.net.NetworkInterface) throws java.io.IOException;
+  protected abstract void join(java.net.InetAddress, java.net.NetworkInterface) throws java.io.IOException;
+  protected void leaveGroup(java.net.SocketAddress, java.net.NetworkInterface) throws java.io.IOException;
+  protected abstract void leave(java.net.InetAddress, java.net.NetworkInterface) throws java.io.IOException;
+  protected void close();
+  protected boolean isClosed();
+  public void setOption(int, java.lang.Object) throws java.net.SocketException;
+  public java.lang.Object getOption(int) throws java.net.SocketException;
+  protected abstract void datagramSocketCreate() throws java.net.SocketException;
+  protected abstract void datagramSocketClose();
+  protected abstract void socketSetOption(int, java.lang.Object) throws java.net.SocketException;
+  protected abstract java.lang.Object socketGetOption(int) throws java.net.SocketException;
+  protected abstract void connect0(java.net.InetAddress, int) throws java.net.SocketException;
+  protected abstract void disconnect0(int);
+  protected boolean nativeConnectDisabled();
+  abstract int dataAvailable();
+  static {};
+}

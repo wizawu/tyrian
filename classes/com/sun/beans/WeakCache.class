@@ -1,0 +1,7 @@
+Compiled from "WeakCache.java"
+public final class com.sun.beans.WeakCache<K, V> {
+  public com.sun.beans.WeakCache();
+  public V get(K);
+  public void put(K, V);
+  public void clear();
+}

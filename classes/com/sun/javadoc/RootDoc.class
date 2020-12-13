@@ -1,0 +1,9 @@
+Compiled from "RootDoc.java"
+public interface com.sun.javadoc.RootDoc extends com.sun.javadoc.Doc,com.sun.javadoc.DocErrorReporter {
+  public abstract java.lang.String[][] options();
+  public abstract com.sun.javadoc.PackageDoc[] specifiedPackages();
+  public abstract com.sun.javadoc.ClassDoc[] specifiedClasses();
+  public abstract com.sun.javadoc.ClassDoc[] classes();
+  public abstract com.sun.javadoc.PackageDoc packageNamed(java.lang.String);
+  public abstract com.sun.javadoc.ClassDoc classNamed(java.lang.String);
+}

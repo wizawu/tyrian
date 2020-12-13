@@ -1,0 +1,10 @@
+Compiled from "HttpPrincipal.java"
+public class com.sun.net.httpserver.HttpPrincipal implements java.security.Principal {
+  public com.sun.net.httpserver.HttpPrincipal(java.lang.String, java.lang.String);
+  public boolean equals(java.lang.Object);
+  public java.lang.String getName();
+  public java.lang.String getUsername();
+  public java.lang.String getRealm();
+  public int hashCode();
+  public java.lang.String toString();
+}

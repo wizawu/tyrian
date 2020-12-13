@@ -1,0 +1,32 @@
+Compiled from "RewriteException.java"
+public final class jdk.nashorn.internal.runtime.RewriteException extends java.lang.Exception {
+  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call GET_BYTECODE_SLOTS;
+  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call GET_PROGRAM_POINT;
+  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call GET_RETURN_VALUE;
+  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call BOOTSTRAP;
+  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call TO_LONG_ARRAY;
+  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call TO_DOUBLE_ARRAY;
+  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call TO_OBJECT_ARRAY;
+  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call INSTANCE_OR_NULL;
+  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call ASSERT_ARRAY_LENGTH;
+  static final boolean $assertionsDisabled;
+  public static jdk.nashorn.internal.runtime.RewriteException create(jdk.nashorn.internal.runtime.UnwarrantedOptimismException, java.lang.Object[], java.lang.String[]);
+  public static jdk.nashorn.internal.runtime.RewriteException create(jdk.nashorn.internal.runtime.UnwarrantedOptimismException, java.lang.Object[], java.lang.String[], int[]);
+  public static java.lang.invoke.CallSite populateArrayBootstrap(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.invoke.MethodType, int);
+  public static java.lang.Object[] populateArray(java.lang.Object[], int, java.lang.Object[]);
+  public static long[] toLongArray(java.lang.Object, jdk.nashorn.internal.runtime.RewriteException);
+  public static double[] toDoubleArray(java.lang.Object, jdk.nashorn.internal.runtime.RewriteException);
+  public static java.lang.Object[] toObjectArray(java.lang.Object, jdk.nashorn.internal.runtime.RewriteException);
+  public static java.lang.Object instanceOrNull(java.lang.Object, java.lang.Class<?>);
+  public static void assertArrayLength(java.lang.Object[], int);
+  public java.lang.Object getReturnValueDestructive();
+  java.lang.Object getReturnValueNonDestructive();
+  public jdk.nashorn.internal.codegen.types.Type getReturnType();
+  public int getProgramPoint();
+  public java.lang.Object[] getByteCodeSlots();
+  public int[] getPreviousContinuationEntryPoints();
+  public jdk.nashorn.internal.runtime.ScriptObject getRuntimeScope();
+  public java.lang.String getMessage();
+  public java.lang.String getMessageShort();
+  static {};
+}

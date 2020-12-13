@@ -1,0 +1,8 @@
+Compiled from "JavacPackagesHelper.java"
+final class jdk.nashorn.tools.jjs.JavacPackagesHelper extends jdk.nashorn.tools.jjs.PackagesHelper {
+  static boolean isAvailable();
+  jdk.nashorn.tools.jjs.JavacPackagesHelper(jdk.nashorn.internal.runtime.Context) throws java.io.IOException;
+  void close() throws java.io.IOException;
+  java.util.Set<java.lang.String> listPackage(java.lang.String) throws java.io.IOException;
+  static {};
+}

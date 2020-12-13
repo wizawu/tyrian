@@ -1,0 +1,7 @@
+Compiled from "RBColor.java"
+public class sun.jvm.hotspot.utilities.RBColor {
+  public static final sun.jvm.hotspot.utilities.RBColor RED;
+  public static final sun.jvm.hotspot.utilities.RBColor BLACK;
+  public java.lang.String getName();
+  static {};
+}

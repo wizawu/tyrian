@@ -1,0 +1,11 @@
+Compiled from "PDLOverrideSupported.java"
+public class javax.print.attribute.standard.PDLOverrideSupported extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintServiceAttribute {
+  public static final javax.print.attribute.standard.PDLOverrideSupported NOT_ATTEMPTED;
+  public static final javax.print.attribute.standard.PDLOverrideSupported ATTEMPTED;
+  protected javax.print.attribute.standard.PDLOverrideSupported(int);
+  protected java.lang.String[] getStringTable();
+  protected javax.print.attribute.EnumSyntax[] getEnumValueTable();
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  static {};
+}

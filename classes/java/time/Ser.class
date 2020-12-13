@@ -1,0 +1,23 @@
+Compiled from "Ser.java"
+final class java.time.Ser implements java.io.Externalizable {
+  static final byte DURATION_TYPE;
+  static final byte INSTANT_TYPE;
+  static final byte LOCAL_DATE_TYPE;
+  static final byte LOCAL_TIME_TYPE;
+  static final byte LOCAL_DATE_TIME_TYPE;
+  static final byte ZONE_DATE_TIME_TYPE;
+  static final byte ZONE_REGION_TYPE;
+  static final byte ZONE_OFFSET_TYPE;
+  static final byte OFFSET_TIME_TYPE;
+  static final byte OFFSET_DATE_TIME_TYPE;
+  static final byte YEAR_TYPE;
+  static final byte YEAR_MONTH_TYPE;
+  static final byte MONTH_DAY_TYPE;
+  static final byte PERIOD_TYPE;
+  public java.time.Ser();
+  java.time.Ser(byte, java.lang.Object);
+  public void writeExternal(java.io.ObjectOutput) throws java.io.IOException;
+  static void writeInternal(byte, java.lang.Object, java.io.ObjectOutput) throws java.io.IOException;
+  public void readExternal(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+  static java.lang.Object read(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+}

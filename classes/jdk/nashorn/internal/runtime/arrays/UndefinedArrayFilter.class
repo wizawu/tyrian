@@ -1,0 +1,22 @@
+Compiled from "UndefinedArrayFilter.java"
+final class jdk.nashorn.internal.runtime.arrays.UndefinedArrayFilter extends jdk.nashorn.internal.runtime.arrays.ArrayFilter {
+  jdk.nashorn.internal.runtime.arrays.UndefinedArrayFilter(jdk.nashorn.internal.runtime.arrays.ArrayData);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData copy();
+  public java.lang.Object[] asObjectArray();
+  public java.lang.Object asArrayOfType(java.lang.Class<?>);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shiftLeft(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shiftRight(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData ensure(long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData shrink(long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, java.lang.Object, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, int, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, double, boolean);
+  public int getInt(int);
+  public int getIntOptimistic(int, int);
+  public double getDouble(int);
+  public double getDoubleOptimistic(int, int);
+  public java.lang.Object getObject(int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData delete(int);
+  public java.lang.Object pop();
+  public jdk.nashorn.internal.runtime.arrays.ArrayData slice(long, long);
+}

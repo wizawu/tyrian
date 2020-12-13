@@ -1,0 +1,7 @@
+Compiled from "CertificateEncodingException.java"
+public class java.security.cert.CertificateEncodingException extends java.security.cert.CertificateException {
+  public java.security.cert.CertificateEncodingException();
+  public java.security.cert.CertificateEncodingException(java.lang.String);
+  public java.security.cert.CertificateEncodingException(java.lang.String, java.lang.Throwable);
+  public java.security.cert.CertificateEncodingException(java.lang.Throwable);
+}

@@ -1,0 +1,19 @@
+Compiled from "CatalogReader.java"
+class javax.xml.catalog.CatalogReader extends org.xml.sax.helpers.DefaultHandler implements org.xml.sax.EntityResolver,javax.xml.transform.URIResolver {
+  public static final java.lang.String xmlCatalogXSD;
+  public static final java.lang.String xmlCatalogPubId;
+  public static final java.lang.String NAMESPACE_OASIS;
+  boolean seenRoot;
+  boolean inGroup;
+  javax.xml.catalog.CatalogImpl catalog;
+  javax.xml.parsers.SAXParser parser;
+  javax.xml.catalog.CatalogEntry catalogEntry;
+  javax.xml.catalog.GroupEntry group;
+  javax.xml.catalog.BaseEntry entry;
+  boolean ignoreTheCatalog;
+  public javax.xml.catalog.CatalogReader(javax.xml.catalog.Catalog, javax.xml.parsers.SAXParser);
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String);
+  public javax.xml.transform.Source resolve(java.lang.String, java.lang.String) throws javax.xml.transform.TransformerException;
+}

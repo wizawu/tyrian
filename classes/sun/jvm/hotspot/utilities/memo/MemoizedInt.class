@@ -1,0 +1,6 @@
+Compiled from "MemoizedInt.java"
+public abstract class sun.jvm.hotspot.utilities.memo.MemoizedInt {
+  public sun.jvm.hotspot.utilities.memo.MemoizedInt();
+  protected abstract int computeValue();
+  public int getValue();
+}

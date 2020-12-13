@@ -1,0 +1,16 @@
+Compiled from "SignatureConverter.java"
+public class sun.jvm.hotspot.runtime.SignatureConverter extends sun.jvm.hotspot.runtime.SignatureIterator {
+  public sun.jvm.hotspot.runtime.SignatureConverter(sun.jvm.hotspot.oops.Symbol, java.lang.StringBuffer);
+  public void doBool();
+  public void doChar();
+  public void doFloat();
+  public void doDouble();
+  public void doByte();
+  public void doShort();
+  public void doInt();
+  public void doLong();
+  public void doVoid();
+  public void doObject(int, int);
+  public void doArray(int, int);
+  public void appendComma();
+}

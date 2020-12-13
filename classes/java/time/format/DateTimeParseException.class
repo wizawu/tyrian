@@ -1,0 +1,7 @@
+Compiled from "DateTimeParseException.java"
+public class java.time.format.DateTimeParseException extends java.time.DateTimeException {
+  public java.time.format.DateTimeParseException(java.lang.String, java.lang.CharSequence, int);
+  public java.time.format.DateTimeParseException(java.lang.String, java.lang.CharSequence, int, java.lang.Throwable);
+  public java.lang.String getParsedString();
+  public int getErrorIndex();
+}

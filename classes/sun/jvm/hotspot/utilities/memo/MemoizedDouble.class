@@ -1,0 +1,6 @@
+Compiled from "MemoizedDouble.java"
+public abstract class sun.jvm.hotspot.utilities.memo.MemoizedDouble {
+  public sun.jvm.hotspot.utilities.memo.MemoizedDouble();
+  protected abstract double computeValue();
+  public double getValue();
+}

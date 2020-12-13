@@ -1,0 +1,6 @@
+Compiled from "CaseInsensitiveMap.java"
+final class com.sun.org.apache.xerces.internal.impl.xpath.regex.CaseInsensitiveMap {
+  com.sun.org.apache.xerces.internal.impl.xpath.regex.CaseInsensitiveMap();
+  public static int[] get(int);
+  static {};
+}

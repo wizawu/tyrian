@@ -1,0 +1,9 @@
+Compiled from "AuthCacheImpl.java"
+public class sun.net.www.protocol.http.AuthCacheImpl implements sun.net.www.protocol.http.AuthCache {
+  java.util.HashMap<java.lang.String, java.util.LinkedList<sun.net.www.protocol.http.AuthCacheValue>> hashtable;
+  public sun.net.www.protocol.http.AuthCacheImpl();
+  public void setMap(java.util.HashMap<java.lang.String, java.util.LinkedList<sun.net.www.protocol.http.AuthCacheValue>>);
+  public synchronized void put(java.lang.String, sun.net.www.protocol.http.AuthCacheValue);
+  public synchronized sun.net.www.protocol.http.AuthCacheValue get(java.lang.String, java.lang.String);
+  public synchronized void remove(java.lang.String, sun.net.www.protocol.http.AuthCacheValue);
+}

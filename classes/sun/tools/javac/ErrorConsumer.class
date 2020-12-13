@@ -1,0 +1,4 @@
+Compiled from "ErrorConsumer.java"
+public interface sun.tools.javac.ErrorConsumer {
+  public abstract void pushError(java.lang.String, int, java.lang.String, java.lang.String, java.lang.String);
+}

@@ -1,0 +1,12 @@
+Compiled from "PCMM.java"
+public interface sun.java2d.cmm.PCMM {
+  public abstract sun.java2d.cmm.Profile loadProfile(byte[]);
+  public abstract void freeProfile(sun.java2d.cmm.Profile);
+  public abstract int getProfileSize(sun.java2d.cmm.Profile);
+  public abstract void getProfileData(sun.java2d.cmm.Profile, byte[]);
+  public abstract void getTagData(sun.java2d.cmm.Profile, int, byte[]);
+  public abstract int getTagSize(sun.java2d.cmm.Profile, int);
+  public abstract void setTagData(sun.java2d.cmm.Profile, int, byte[]);
+  public abstract sun.java2d.cmm.ColorTransform createTransform(java.awt.color.ICC_Profile, int, int);
+  public abstract sun.java2d.cmm.ColorTransform createTransform(sun.java2d.cmm.ColorTransform[]);
+}

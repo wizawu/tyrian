@@ -1,0 +1,17 @@
+Compiled from "DisabledAlgorithmConstraints.java"
+public class sun.security.util.DisabledAlgorithmConstraints extends sun.security.util.AbstractAlgorithmConstraints {
+  public static final java.lang.String PROPERTY_CERTPATH_DISABLED_ALGS;
+  public static final java.lang.String PROPERTY_SECURITY_LEGACY_ALGS;
+  public static final java.lang.String PROPERTY_TLS_DISABLED_ALGS;
+  public static final java.lang.String PROPERTY_JAR_DISABLED_ALGS;
+  public sun.security.util.DisabledAlgorithmConstraints(java.lang.String);
+  public sun.security.util.DisabledAlgorithmConstraints(java.lang.String, sun.security.util.AlgorithmDecomposer);
+  public final boolean permits(java.util.Set<java.security.CryptoPrimitive>, java.lang.String, java.security.AlgorithmParameters);
+  public final boolean permits(java.util.Set<java.security.CryptoPrimitive>, java.security.Key);
+  public final boolean permits(java.util.Set<java.security.CryptoPrimitive>, java.lang.String, java.security.Key, java.security.AlgorithmParameters);
+  public final void permits(sun.security.util.ConstraintsParameters) throws java.security.cert.CertPathValidatorException;
+  public final void permits(java.lang.String, java.security.Key, java.security.AlgorithmParameters, java.lang.String) throws java.security.cert.CertPathValidatorException;
+  public final void permits(java.lang.String, sun.security.util.ConstraintsParameters) throws java.security.cert.CertPathValidatorException;
+  public boolean checkProperty(java.lang.String);
+  static {};
+}

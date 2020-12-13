@@ -1,0 +1,24 @@
+Compiled from "LoopPipe.java"
+public class sun.java2d.pipe.LoopPipe implements sun.java2d.pipe.PixelDrawPipe,sun.java2d.pipe.PixelFillPipe,sun.java2d.pipe.ParallelogramPipe,sun.java2d.pipe.ShapeDrawPipe,sun.java2d.pipe.LoopBasedPipe {
+  static final sun.java2d.pipe.RenderingEngine RenderEngine;
+  public sun.java2d.pipe.LoopPipe();
+  public void drawLine(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void drawRect(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void drawRoundRect(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public void drawOval(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void drawArc(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public void drawPolyline(sun.java2d.SunGraphics2D, int[], int[], int);
+  public void drawPolygon(sun.java2d.SunGraphics2D, int[], int[], int);
+  public void fillRect(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void fillRoundRect(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public void fillOval(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void fillArc(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public void fillPolygon(sun.java2d.SunGraphics2D, int[], int[], int);
+  public void draw(sun.java2d.SunGraphics2D, java.awt.Shape);
+  public static sun.java2d.pipe.ShapeSpanIterator getFillSSI(sun.java2d.SunGraphics2D);
+  public static sun.java2d.pipe.ShapeSpanIterator getStrokeSpans(sun.java2d.SunGraphics2D, java.awt.Shape);
+  public void fill(sun.java2d.SunGraphics2D, java.awt.Shape);
+  public void fillParallelogram(sun.java2d.SunGraphics2D, double, double, double, double, double, double, double, double, double, double);
+  public void drawParallelogram(sun.java2d.SunGraphics2D, double, double, double, double, double, double, double, double, double, double, double, double);
+  static {};
+}

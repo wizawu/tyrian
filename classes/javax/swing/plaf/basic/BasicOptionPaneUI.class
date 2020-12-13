@@ -1,0 +1,48 @@
+Compiled from "BasicOptionPaneUI.java"
+public class javax.swing.plaf.basic.BasicOptionPaneUI extends javax.swing.plaf.OptionPaneUI {
+  public static final int MinimumWidth;
+  public static final int MinimumHeight;
+  protected javax.swing.JOptionPane optionPane;
+  protected java.awt.Dimension minimumSize;
+  protected javax.swing.JComponent inputComponent;
+  protected java.awt.Component initialFocusComponent;
+  protected boolean hasCustomComponents;
+  protected java.beans.PropertyChangeListener propertyChangeListener;
+  public javax.swing.plaf.basic.BasicOptionPaneUI();
+  static void loadActionMap(javax.swing.plaf.basic.LazyActionMap);
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void uninstallDefaults();
+  protected void installComponents();
+  protected void uninstallComponents();
+  protected java.awt.LayoutManager createLayoutManager();
+  protected void installListeners();
+  protected void uninstallListeners();
+  protected java.beans.PropertyChangeListener createPropertyChangeListener();
+  protected void installKeyboardActions();
+  protected void uninstallKeyboardActions();
+  javax.swing.InputMap getInputMap(int);
+  public java.awt.Dimension getMinimumOptionPaneSize();
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  protected java.awt.Container createMessageArea();
+  protected void addMessageComponents(java.awt.Container, java.awt.GridBagConstraints, java.lang.Object, int, boolean);
+  protected java.lang.Object getMessage();
+  protected void addIcon(java.awt.Container);
+  protected javax.swing.Icon getIcon();
+  protected javax.swing.Icon getIconForType(int);
+  protected int getMaxCharactersPerLineCount();
+  protected void burstStringInto(java.awt.Container, java.lang.String, int);
+  protected java.awt.Container createSeparator();
+  protected java.awt.Container createButtonArea();
+  protected void addButtonComponents(java.awt.Container, java.lang.Object[], int);
+  protected java.awt.event.ActionListener createButtonActionListener(int);
+  protected java.lang.Object[] getButtons();
+  protected boolean getSizeButtonsToSameWidth();
+  protected int getInitialValueIndex();
+  protected void resetInputValue();
+  public void selectInitialValue(javax.swing.JOptionPane);
+  public boolean containsCustomComponents(javax.swing.JOptionPane);
+  static {};
+}

@@ -1,0 +1,29 @@
+Compiled from "Thread.java"
+public class sun.jvm.hotspot.runtime.Thread extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.runtime.Thread(sun.jvm.hotspot.debugger.Address);
+  public int suspendFlags();
+  public boolean isExternalSuspend();
+  public boolean isExtSuspended();
+  public boolean isBeingExtSuspended();
+  public boolean isAnySuspended();
+  public boolean hasAsyncException();
+  public sun.jvm.hotspot.runtime.ThreadLocalAllocBuffer tlab();
+  public sun.jvm.hotspot.runtime.JNIHandleBlock activeHandles();
+  public long allocatedBytes();
+  public boolean isVMThread();
+  public boolean isJavaThread();
+  public boolean isCompilerThread();
+  public boolean isCodeCacheSweeperThread();
+  public boolean isHiddenFromExternalView();
+  public boolean isJvmtiAgentThread();
+  public boolean isWatcherThread();
+  public boolean isConcurrentMarkSweepThread();
+  public boolean isServiceThread();
+  public void oopsDo(sun.jvm.hotspot.runtime.AddressVisitor);
+  public sun.jvm.hotspot.runtime.ObjectMonitor getCurrentPendingMonitor();
+  public sun.jvm.hotspot.runtime.ObjectMonitor getCurrentWaitingMonitor();
+  public boolean isLockOwned(sun.jvm.hotspot.debugger.Address);
+  public boolean isInStack(sun.jvm.hotspot.debugger.Address);
+  sun.jvm.hotspot.debugger.Address threadObjectAddress();
+  static {};
+}

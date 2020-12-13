@@ -1,0 +1,8 @@
+Compiled from "SimpleClassTypeSignature.java"
+public class sun.reflect.generics.tree.SimpleClassTypeSignature implements sun.reflect.generics.tree.FieldTypeSignature {
+  public static sun.reflect.generics.tree.SimpleClassTypeSignature make(java.lang.String, boolean, sun.reflect.generics.tree.TypeArgument[]);
+  public boolean getDollar();
+  public java.lang.String getName();
+  public sun.reflect.generics.tree.TypeArgument[] getTypeArguments();
+  public void accept(sun.reflect.generics.visitor.TypeTreeVisitor<?>);
+}

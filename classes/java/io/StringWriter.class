@@ -1,0 +1,22 @@
+Compiled from "StringWriter.java"
+public class java.io.StringWriter extends java.io.Writer {
+  public java.io.StringWriter();
+  public java.io.StringWriter(int);
+  public void write(int);
+  public void write(char[], int, int);
+  public void write(java.lang.String);
+  public void write(java.lang.String, int, int);
+  public java.io.StringWriter append(java.lang.CharSequence);
+  public java.io.StringWriter append(java.lang.CharSequence, int, int);
+  public java.io.StringWriter append(char);
+  public java.lang.String toString();
+  public java.lang.StringBuffer getBuffer();
+  public void flush();
+  public void close() throws java.io.IOException;
+  public java.io.Writer append(char) throws java.io.IOException;
+  public java.io.Writer append(java.lang.CharSequence, int, int) throws java.io.IOException;
+  public java.io.Writer append(java.lang.CharSequence) throws java.io.IOException;
+  public java.lang.Appendable append(char) throws java.io.IOException;
+  public java.lang.Appendable append(java.lang.CharSequence, int, int) throws java.io.IOException;
+  public java.lang.Appendable append(java.lang.CharSequence) throws java.io.IOException;
+}

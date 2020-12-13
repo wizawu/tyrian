@@ -1,0 +1,8 @@
+Compiled from "LDC2_W.java"
+public class com.sun.org.apache.bcel.internal.generic.LDC2_W extends com.sun.org.apache.bcel.internal.generic.CPInstruction implements com.sun.org.apache.bcel.internal.generic.PushInstruction {
+  com.sun.org.apache.bcel.internal.generic.LDC2_W();
+  public com.sun.org.apache.bcel.internal.generic.LDC2_W(int);
+  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public java.lang.Number getValue(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

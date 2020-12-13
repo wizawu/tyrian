@@ -1,0 +1,9 @@
+Compiled from "URICertStore.java"
+class sun.security.provider.certpath.URICertStore extends java.security.cert.CertStoreSpi {
+  sun.security.provider.certpath.URICertStore(java.security.cert.CertStoreParameters) throws java.security.InvalidAlgorithmParameterException, java.security.NoSuchAlgorithmException;
+  static synchronized java.security.cert.CertStore getInstance(java.security.cert.URICertStoreParameters) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
+  static java.security.cert.CertStore getInstance(sun.security.x509.AccessDescription);
+  public synchronized java.util.Collection<java.security.cert.X509Certificate> engineGetCertificates(java.security.cert.CertSelector) throws java.security.cert.CertStoreException;
+  public synchronized java.util.Collection<java.security.cert.X509CRL> engineGetCRLs(java.security.cert.CRLSelector) throws java.security.cert.CertStoreException;
+  static {};
+}

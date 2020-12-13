@@ -1,0 +1,5 @@
+Compiled from "CSSValueList.java"
+public interface org.w3c.dom.css.CSSValueList extends org.w3c.dom.css.CSSValue {
+  public abstract int getLength();
+  public abstract org.w3c.dom.css.CSSValue item(int);
+}

@@ -1,0 +1,5 @@
+Compiled from "PBMAC1Core.java"
+abstract class com.sun.crypto.provider.PBMAC1Core extends com.sun.crypto.provider.HmacCore {
+  com.sun.crypto.provider.PBMAC1Core(java.lang.String, java.lang.String, int) throws java.security.NoSuchAlgorithmException;
+  protected void engineInit(java.security.Key, java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+}

@@ -1,0 +1,4 @@
+Compiled from "CurrentNodeListFilter.java"
+public interface com.sun.org.apache.xalan.internal.xsltc.dom.CurrentNodeListFilter {
+  public abstract boolean test(int, int, int, int, com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet, com.sun.org.apache.xml.internal.dtm.DTMAxisIterator);
+}

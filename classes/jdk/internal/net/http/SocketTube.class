@@ -1,0 +1,24 @@
+Compiled from "SocketTube.java"
+final class jdk.internal.net.http.SocketTube implements jdk.internal.net.http.common.FlowTube {
+  final jdk.internal.net.http.common.Logger debug;
+  static final java.util.concurrent.atomic.AtomicLong IDS;
+  static final int MAX_BUFFERS;
+  static final java.util.List<java.nio.ByteBuffer> EOF;
+  static final java.util.List<java.nio.ByteBuffer> NOTHING;
+  static final boolean $assertionsDisabled;
+  public jdk.internal.net.http.SocketTube(jdk.internal.net.http.HttpClientImpl, java.nio.channels.SocketChannel, java.util.function.Supplier<java.nio.ByteBuffer>);
+  public boolean isFinished();
+  public void subscribe(java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>);
+  public void onSubscribe(java.util.concurrent.Flow$Subscription);
+  public void onNext(java.util.List<java.nio.ByteBuffer>);
+  public void onError(java.lang.Throwable);
+  public void onComplete();
+  void signalClosed();
+  void debugState(java.lang.String);
+  public void connectFlows(jdk.internal.net.http.common.FlowTube$TubePublisher, jdk.internal.net.http.common.FlowTube$TubeSubscriber);
+  public java.lang.String toString();
+  final java.lang.String dbgString();
+  final java.lang.String channelDescr();
+  public void onNext(java.lang.Object);
+  static {};
+}

@@ -1,0 +1,16 @@
+Compiled from "XDataViewer.java"
+public class sun.tools.jconsole.inspector.XDataViewer {
+  public static final int OPEN;
+  public static final int ARRAY;
+  public static final int NUMERIC;
+  public static final int NOT_SUPPORTED;
+  public sun.tools.jconsole.inspector.XDataViewer(sun.tools.jconsole.MBeansTab);
+  public static void registerForMouseEvent(java.awt.Component, java.awt.event.MouseListener);
+  public static void dispose(sun.tools.jconsole.MBeansTab);
+  public static boolean isViewableValue(java.lang.Object);
+  public static int getViewerType(java.lang.Object);
+  public static java.lang.String getActionLabel(int);
+  public java.awt.Component createOperationViewer(java.lang.Object, sun.tools.jconsole.inspector.XMBean);
+  public static java.awt.Component createNotificationViewer(java.lang.Object);
+  public java.awt.Component createAttributeViewer(java.lang.Object, sun.tools.jconsole.inspector.XMBean, java.lang.String, javax.swing.JTable);
+}

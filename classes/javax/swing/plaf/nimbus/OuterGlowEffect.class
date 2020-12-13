@@ -1,0 +1,4 @@
+Compiled from "OuterGlowEffect.java"
+class javax.swing.plaf.nimbus.OuterGlowEffect extends javax.swing.plaf.nimbus.DropShadowEffect {
+  javax.swing.plaf.nimbus.OuterGlowEffect();
+}

@@ -1,0 +1,6 @@
+Compiled from "RBTableBuilder.java"
+final class java.text.RBTableBuilder {
+  static final int CHARINDEX;
+  public java.text.RBTableBuilder(java.text.RBCollationTables$BuildAPI);
+  public void build(java.lang.String, int) throws java.text.ParseException;
+}

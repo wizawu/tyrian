@@ -1,0 +1,6 @@
+Compiled from "CalendarDataProvider.java"
+public abstract class java.util.spi.CalendarDataProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.util.spi.CalendarDataProvider();
+  public abstract int getFirstDayOfWeek(java.util.Locale);
+  public abstract int getMinimalDaysInFirstWeek(java.util.Locale);
+}

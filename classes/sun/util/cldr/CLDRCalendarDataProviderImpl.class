@@ -1,0 +1,7 @@
+Compiled from "CLDRCalendarDataProviderImpl.java"
+public class sun.util.cldr.CLDRCalendarDataProviderImpl extends sun.util.locale.provider.CalendarDataProviderImpl {
+  public sun.util.cldr.CLDRCalendarDataProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
+  public int getFirstDayOfWeek(java.util.Locale);
+  public int getMinimalDaysInFirstWeek(java.util.Locale);
+  static {};
+}

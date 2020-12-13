@@ -1,0 +1,16 @@
+Compiled from "FilterExprIterator.java"
+public class com.sun.org.apache.xpath.internal.axes.FilterExprIterator extends com.sun.org.apache.xpath.internal.axes.BasicTestIterator {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.axes.FilterExprIterator();
+  public com.sun.org.apache.xpath.internal.axes.FilterExprIterator(com.sun.org.apache.xpath.internal.Expression);
+  public void setRoot(int, java.lang.Object);
+  protected int getNextNode();
+  public void detach();
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public com.sun.org.apache.xpath.internal.Expression getInnerExpression();
+  public void setInnerExpression(com.sun.org.apache.xpath.internal.Expression);
+  public int getAnalysisBits();
+  public boolean isDocOrdered();
+  public void callPredicateVisitors(com.sun.org.apache.xpath.internal.XPathVisitor);
+  public boolean deepEquals(com.sun.org.apache.xpath.internal.Expression);
+}

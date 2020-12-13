@@ -1,0 +1,5 @@
+Compiled from "UnrecoverableKeyException.java"
+public class java.security.UnrecoverableKeyException extends java.security.UnrecoverableEntryException {
+  public java.security.UnrecoverableKeyException();
+  public java.security.UnrecoverableKeyException(java.lang.String);
+}

@@ -1,0 +1,11 @@
+Compiled from "RegionIterator.java"
+public class sun.java2d.pipe.RegionIterator {
+  sun.java2d.pipe.Region region;
+  int curIndex;
+  int numXbands;
+  sun.java2d.pipe.RegionIterator(sun.java2d.pipe.Region);
+  public sun.java2d.pipe.RegionIterator createCopy();
+  public void copyStateFrom(sun.java2d.pipe.RegionIterator);
+  public boolean nextYRange(int[]);
+  public boolean nextXBand(int[]);
+}

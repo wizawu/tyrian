@@ -1,0 +1,17 @@
+Compiled from "SizeSequence.java"
+public class javax.swing.SizeSequence {
+  public javax.swing.SizeSequence();
+  public javax.swing.SizeSequence(int);
+  public javax.swing.SizeSequence(int, int);
+  public javax.swing.SizeSequence(int[]);
+  void setSizes(int, int);
+  public void setSizes(int[]);
+  public int[] getSizes();
+  public int getPosition(int);
+  public int getIndex(int);
+  public int getSize(int);
+  public void setSize(int, int);
+  public void insertEntries(int, int, int);
+  public void removeEntries(int, int);
+  static {};
+}

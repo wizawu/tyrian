@@ -1,0 +1,19 @@
+Compiled from "MachineTypes.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.MachineTypes {
+  public static final short IMAGE_FILE_MACHINE_UNKNOWN;
+  public static final short IMAGE_FILE_MACHINE_ALPHA;
+  public static final short IMAGE_FILE_MACHINE_ARM;
+  public static final short IMAGE_FILE_MACHINE_ALPHA64;
+  public static final short IMAGE_FILE_MACHINE_I386;
+  public static final short IMAGE_FILE_MACHINE_M68K;
+  public static final short IMAGE_FILE_MACHINE_MIPS16;
+  public static final short IMAGE_FILE_MACHINE_MIPSFPU;
+  public static final short IMAGE_FILE_MACHINE_MIPSFPU16;
+  public static final short IMAGE_FILE_MACHINE_POWERPC;
+  public static final short IMAGE_FILE_MACHINE_R3000;
+  public static final short IMAGE_FILE_MACHINE_R4000;
+  public static final short IMAGE_FILE_MACHINE_R10000;
+  public static final short IMAGE_FILE_MACHINE_SH3;
+  public static final short IMAGE_FILE_MACHINE_SH4;
+  public static final short IMAGE_FILE_MACHINE_THUMB;
+}

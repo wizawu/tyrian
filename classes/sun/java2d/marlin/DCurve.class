@@ -1,0 +1,28 @@
+Compiled from "DCurve.java"
+final class sun.java2d.marlin.DCurve {
+  double ax;
+  double ay;
+  double bx;
+  double by;
+  double cx;
+  double cy;
+  double dx;
+  double dy;
+  double dax;
+  double day;
+  double dbx;
+  double dby;
+  static final boolean $assertionsDisabled;
+  sun.java2d.marlin.DCurve();
+  void set(double[], int);
+  void set(double, double, double, double, double, double, double, double);
+  void set(double, double, double, double, double, double);
+  void set(double, double, double, double);
+  int dxRoots(double[], int);
+  int dyRoots(double[], int);
+  int infPoints(double[], int);
+  int xPoints(double[], int, double);
+  int yPoints(double[], int, double);
+  int rootsOfROCMinusW(double[], int, double, double);
+  static {};
+}

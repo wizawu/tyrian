@@ -1,0 +1,10 @@
+Compiled from "DocLocale.java"
+class com.sun.tools.javadoc.main.DocLocale {
+  final java.lang.String localeName;
+  final java.util.Locale locale;
+  final java.text.Collator collator;
+  static final java.lang.String[] sentenceTerminators;
+  com.sun.tools.javadoc.main.DocLocale(com.sun.tools.javadoc.main.DocEnv, java.lang.String, boolean);
+  java.lang.String localeSpecificFirstSentence(com.sun.tools.javadoc.main.DocImpl, java.lang.String);
+  static {};
+}

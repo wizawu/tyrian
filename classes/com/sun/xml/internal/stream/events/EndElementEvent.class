@@ -1,0 +1,16 @@
+Compiled from "EndElementEvent.java"
+public class com.sun.xml.internal.stream.events.EndElementEvent extends com.sun.xml.internal.stream.events.DummyEvent implements javax.xml.stream.events.EndElement {
+  java.util.List<javax.xml.stream.events.Namespace> fNamespaces;
+  javax.xml.namespace.QName fQName;
+  public com.sun.xml.internal.stream.events.EndElementEvent();
+  protected final void init();
+  public com.sun.xml.internal.stream.events.EndElementEvent(java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.xml.internal.stream.events.EndElementEvent(javax.xml.namespace.QName);
+  public javax.xml.namespace.QName getName();
+  public void setName(javax.xml.namespace.QName);
+  protected void writeAsEncodedUnicodeEx(java.io.Writer) throws java.io.IOException;
+  public java.util.Iterator<javax.xml.stream.events.Namespace> getNamespaces();
+  void addNamespace(javax.xml.stream.events.Namespace);
+  public java.lang.String toString();
+  public java.lang.String nameAsString();
+}

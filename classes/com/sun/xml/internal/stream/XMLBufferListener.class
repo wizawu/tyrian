@@ -1,0 +1,5 @@
+Compiled from "XMLBufferListener.java"
+public interface com.sun.xml.internal.stream.XMLBufferListener {
+  public abstract void refresh();
+  public abstract void refresh(int);
+}

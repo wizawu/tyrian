@@ -1,0 +1,4 @@
+Compiled from "AnyElements.java"
+public interface jdk.nashorn.internal.runtime.arrays.AnyElements {
+  public abstract int getElementWeight();
+}

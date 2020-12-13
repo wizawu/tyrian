@@ -1,0 +1,8 @@
+Compiled from "XSLTCSource.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.trax.XSLTCSource implements javax.xml.transform.Source {
+  public com.sun.org.apache.xalan.internal.xsltc.trax.XSLTCSource(java.lang.String);
+  public com.sun.org.apache.xalan.internal.xsltc.trax.XSLTCSource(javax.xml.transform.Source);
+  public void setSystemId(java.lang.String);
+  public java.lang.String getSystemId();
+  protected com.sun.org.apache.xalan.internal.xsltc.DOM getDOM(com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager, com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet) throws org.xml.sax.SAXException;
+}

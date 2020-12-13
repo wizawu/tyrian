@@ -1,0 +1,10 @@
+Compiled from "Trie2_16.java"
+public final class sun.text.normalizer.Trie2_16 extends sun.text.normalizer.Trie2 {
+  sun.text.normalizer.Trie2_16();
+  public static sun.text.normalizer.Trie2_16 createFromSerialized(java.nio.ByteBuffer) throws java.io.IOException;
+  public final int get(int);
+  public int getFromU16SingleLead(char);
+  public int getSerializedLength();
+  public java.util.Iterator iterator(sun.text.normalizer.Trie2$ValueMapper);
+  public java.util.Iterator iterator();
+}

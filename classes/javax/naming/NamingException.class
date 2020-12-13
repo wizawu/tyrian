@@ -1,0 +1,24 @@
+Compiled from "NamingException.java"
+public class javax.naming.NamingException extends java.lang.Exception {
+  protected javax.naming.Name resolvedName;
+  protected java.lang.Object resolvedObj;
+  protected javax.naming.Name remainingName;
+  protected java.lang.Throwable rootException;
+  public javax.naming.NamingException(java.lang.String);
+  public javax.naming.NamingException();
+  public javax.naming.Name getResolvedName();
+  public javax.naming.Name getRemainingName();
+  public java.lang.Object getResolvedObj();
+  public java.lang.String getExplanation();
+  public void setResolvedName(javax.naming.Name);
+  public void setRemainingName(javax.naming.Name);
+  public void setResolvedObj(java.lang.Object);
+  public void appendRemainingComponent(java.lang.String);
+  public void appendRemainingName(javax.naming.Name);
+  public java.lang.Throwable getRootCause();
+  public void setRootCause(java.lang.Throwable);
+  public java.lang.Throwable getCause();
+  public java.lang.Throwable initCause(java.lang.Throwable);
+  public java.lang.String toString();
+  public java.lang.String toString(boolean);
+}

@@ -1,0 +1,18 @@
+Compiled from "XOpenTypeViewer.java"
+public class sun.tools.jconsole.inspector.XOpenTypeViewer extends javax.swing.JPanel implements java.awt.event.ActionListener {
+  javax.swing.JButton prev;
+  javax.swing.JButton incr;
+  javax.swing.JButton decr;
+  javax.swing.JButton tabularPrev;
+  javax.swing.JButton tabularNext;
+  javax.swing.JLabel compositeLabel;
+  javax.swing.JLabel tabularLabel;
+  javax.swing.JScrollPane container;
+  sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData current;
+  sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeDataListener listener;
+  public static boolean isViewableValue(java.lang.Object);
+  public static java.awt.Component loadOpenType(java.lang.Object);
+  void setOpenType(sun.tools.jconsole.inspector.XOpenTypeViewer$XOpenTypeData);
+  public void actionPerformed(java.awt.event.ActionEvent);
+  static {};
+}

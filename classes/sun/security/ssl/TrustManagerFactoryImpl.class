@@ -1,0 +1,9 @@
+Compiled from "TrustManagerFactoryImpl.java"
+abstract class sun.security.ssl.TrustManagerFactoryImpl extends javax.net.ssl.TrustManagerFactorySpi {
+  sun.security.ssl.TrustManagerFactoryImpl();
+  protected void engineInit(java.security.KeyStore) throws java.security.KeyStoreException;
+  abstract javax.net.ssl.X509TrustManager getInstance(java.util.Collection<java.security.cert.X509Certificate>);
+  abstract javax.net.ssl.X509TrustManager getInstance(javax.net.ssl.ManagerFactoryParameters) throws java.security.InvalidAlgorithmParameterException;
+  protected void engineInit(javax.net.ssl.ManagerFactoryParameters) throws java.security.InvalidAlgorithmParameterException;
+  protected javax.net.ssl.TrustManager[] engineGetTrustManagers();
+}

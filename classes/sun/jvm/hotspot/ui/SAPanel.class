@@ -1,0 +1,14 @@
+Compiled from "SAPanel.java"
+public class sun.jvm.hotspot.ui.SAPanel extends javax.swing.JPanel {
+  protected java.util.List listeners;
+  public sun.jvm.hotspot.ui.SAPanel();
+  public void addPanelListener(sun.jvm.hotspot.ui.SAListener);
+  public void removePanelListener(sun.jvm.hotspot.ui.SAListener);
+  public void showThreadOopInspector(sun.jvm.hotspot.runtime.JavaThread);
+  public void showInspector(sun.jvm.hotspot.oops.Oop);
+  public void showInspector(sun.jvm.hotspot.ui.tree.SimpleTreeNode);
+  public void showThreadStackMemory(sun.jvm.hotspot.runtime.JavaThread);
+  public void showJavaStackTrace(sun.jvm.hotspot.runtime.JavaThread);
+  public void showThreadInfo(sun.jvm.hotspot.runtime.JavaThread);
+  public void showCodeViewer(sun.jvm.hotspot.debugger.Address);
+}

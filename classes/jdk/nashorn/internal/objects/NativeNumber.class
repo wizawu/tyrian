@@ -1,0 +1,28 @@
+Compiled from "NativeNumber.java"
+public final class jdk.nashorn.internal.objects.NativeNumber extends jdk.nashorn.internal.runtime.ScriptObject {
+  static final java.lang.invoke.MethodHandle WRAPFILTER;
+  public static final double MAX_VALUE;
+  public static final double MIN_VALUE;
+  public static final double NaN;
+  public static final double NEGATIVE_INFINITY;
+  public static final double POSITIVE_INFINITY;
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.objects.NativeNumber(double, jdk.nashorn.internal.objects.Global);
+  public java.lang.String safeToString();
+  public java.lang.String toString();
+  public double getValue();
+  public double doubleValue();
+  public java.lang.String getClassName();
+  public static java.lang.Object constructor(boolean, java.lang.Object, java.lang.Object...);
+  public static java.lang.String toFixed(java.lang.Object, java.lang.Object);
+  public static java.lang.String toFixed(java.lang.Object, int);
+  public static java.lang.String toExponential(java.lang.Object, java.lang.Object);
+  public static java.lang.String toPrecision(java.lang.Object, java.lang.Object);
+  public static java.lang.String toPrecision(java.lang.Object, int);
+  public static java.lang.String toString(java.lang.Object, java.lang.Object);
+  public static java.lang.String toLocaleString(java.lang.Object);
+  public static double valueOf(java.lang.Object);
+  public static jdk.dynalink.linker.GuardedInvocation lookupPrimitive(jdk.dynalink.linker.LinkRequest, java.lang.Object);
+  static {};
+  public static void $clinit$();
+}

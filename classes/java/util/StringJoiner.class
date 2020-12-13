@@ -1,0 +1,10 @@
+Compiled from "StringJoiner.java"
+public final class java.util.StringJoiner {
+  public java.util.StringJoiner(java.lang.CharSequence);
+  public java.util.StringJoiner(java.lang.CharSequence, java.lang.CharSequence, java.lang.CharSequence);
+  public java.util.StringJoiner setEmptyValue(java.lang.CharSequence);
+  public java.lang.String toString();
+  public java.util.StringJoiner add(java.lang.CharSequence);
+  public java.util.StringJoiner merge(java.util.StringJoiner);
+  public int length();
+}

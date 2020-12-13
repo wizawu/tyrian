@@ -1,0 +1,11 @@
+Compiled from "P11Mac.java"
+final class sun.security.pkcs11.P11Mac extends javax.crypto.MacSpi {
+  sun.security.pkcs11.P11Mac(sun.security.pkcs11.Token, java.lang.String, long) throws sun.security.pkcs11.wrapper.PKCS11Exception;
+  protected int engineGetMacLength();
+  protected void engineReset();
+  protected void engineInit(java.security.Key, java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  protected byte[] engineDoFinal();
+  protected void engineUpdate(byte);
+  protected void engineUpdate(byte[], int, int);
+  protected void engineUpdate(java.nio.ByteBuffer);
+}

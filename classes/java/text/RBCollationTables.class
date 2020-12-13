@@ -1,0 +1,26 @@
+Compiled from "RBCollationTables.java"
+final class java.text.RBCollationTables {
+  static final int EXPANDCHARINDEX;
+  static final int CONTRACTCHARINDEX;
+  static final int UNMAPPED;
+  static final int PRIMARYORDERMASK;
+  static final int SECONDARYORDERMASK;
+  static final int TERTIARYORDERMASK;
+  static final int PRIMARYDIFFERENCEONLY;
+  static final int SECONDARYDIFFERENCEONLY;
+  static final int PRIMARYORDERSHIFT;
+  static final int SECONDARYORDERSHIFT;
+  public java.text.RBCollationTables(java.lang.String, int) throws java.text.ParseException;
+  public java.lang.String getRules();
+  public boolean isFrenchSec();
+  public boolean isSEAsianSwapping();
+  java.util.Vector<java.text.EntryPair> getContractValues(int);
+  boolean usedInContractSeq(int);
+  int getMaxExpansion(int);
+  final int[] getExpandValueList(int);
+  int getUnicodeOrder(int);
+  short getMaxSecOrder();
+  short getMaxTerOrder();
+  static void reverse(java.lang.StringBuffer, int, int);
+  static final int getEntry(java.util.Vector<java.text.EntryPair>, java.lang.String, boolean);
+}

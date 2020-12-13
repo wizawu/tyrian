@@ -1,0 +1,6 @@
+Compiled from "ManageReferralControl.java"
+public final class com.sun.jndi.ldap.ManageReferralControl extends com.sun.jndi.ldap.BasicControl {
+  public static final java.lang.String OID;
+  public com.sun.jndi.ldap.ManageReferralControl();
+  public com.sun.jndi.ldap.ManageReferralControl(boolean);
+}

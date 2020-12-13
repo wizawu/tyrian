@@ -1,0 +1,14 @@
+Compiled from "BidiLine.java"
+final class sun.text.bidi.BidiLine {
+  sun.text.bidi.BidiLine();
+  static void setTrailingWSStart(sun.text.bidi.BidiBase);
+  static java.text.Bidi setLine(sun.text.bidi.BidiBase, java.text.Bidi, sun.text.bidi.BidiBase, int, int);
+  static byte getLevelAt(sun.text.bidi.BidiBase, int);
+  static byte[] getLevels(sun.text.bidi.BidiBase);
+  static sun.text.bidi.BidiRun getVisualRun(sun.text.bidi.BidiBase, int);
+  static int getRunFromLogicalIndex(sun.text.bidi.BidiBase, int);
+  static void getRuns(sun.text.bidi.BidiBase);
+  static int[] prepareReorder(byte[], byte[], byte[]);
+  static int[] reorderVisual(byte[]);
+  static int[] getVisualMap(sun.text.bidi.BidiBase);
+}

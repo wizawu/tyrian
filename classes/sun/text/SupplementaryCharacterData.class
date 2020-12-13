@@ -1,0 +1,8 @@
+Compiled from "SupplementaryCharacterData.java"
+public final class sun.text.SupplementaryCharacterData implements java.lang.Cloneable {
+  static final boolean $assertionsDisabled;
+  public sun.text.SupplementaryCharacterData(int[]);
+  public int getValue(int);
+  public int[] getArray();
+  static {};
+}

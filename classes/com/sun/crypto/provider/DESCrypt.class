@@ -1,0 +1,13 @@
+Compiled from "DESCrypt.java"
+class com.sun.crypto.provider.DESCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.DESConstants {
+  byte[] expandedKey;
+  boolean decrypting;
+  com.sun.crypto.provider.DESCrypt();
+  int getBlockSize();
+  void init(boolean, java.lang.String, byte[]) throws java.security.InvalidKeyException;
+  void encryptBlock(byte[], int, byte[], int);
+  void decryptBlock(byte[], int, byte[], int);
+  void cipherBlock(byte[], int, byte[], int);
+  void expandKey(byte[]);
+  static {};
+}

@@ -1,0 +1,15 @@
+Compiled from "CalendarBuilder.java"
+class java.text.CalendarBuilder {
+  public static final int WEEK_YEAR;
+  public static final int ISO_DAY_OF_WEEK;
+  java.text.CalendarBuilder();
+  java.text.CalendarBuilder set(int, int);
+  java.text.CalendarBuilder addYear(int);
+  boolean isSet(int);
+  java.text.CalendarBuilder clear(int);
+  java.util.Calendar establish(java.util.Calendar);
+  public java.lang.String toString();
+  static int toISODayOfWeek(int);
+  static int toCalendarDayOfWeek(int);
+  static boolean isValidDayOfWeek(int);
+}

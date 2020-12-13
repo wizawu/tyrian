@@ -1,0 +1,7 @@
+Compiled from "AbstractSet.java"
+public abstract class java.util.AbstractSet<E> extends java.util.AbstractCollection<E> implements java.util.Set<E> {
+  protected java.util.AbstractSet();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public boolean removeAll(java.util.Collection<?>);
+}

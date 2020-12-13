@@ -1,0 +1,6 @@
+Compiled from "UnknownAnnotationValueException.java"
+public class javax.lang.model.element.UnknownAnnotationValueException extends javax.lang.model.UnknownEntityException {
+  public javax.lang.model.element.UnknownAnnotationValueException(javax.lang.model.element.AnnotationValue, java.lang.Object);
+  public javax.lang.model.element.AnnotationValue getUnknownAnnotationValue();
+  public java.lang.Object getArgument();
+}

@@ -1,0 +1,10 @@
+Compiled from "XMLComponent.java"
+public interface com.sun.org.apache.xerces.internal.xni.parser.XMLComponent {
+  public abstract void reset(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public abstract java.lang.String[] getRecognizedFeatures();
+  public abstract void setFeature(java.lang.String, boolean) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public abstract java.lang.String[] getRecognizedProperties();
+  public abstract void setProperty(java.lang.String, java.lang.Object) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public abstract java.lang.Boolean getFeatureDefault(java.lang.String);
+  public abstract java.lang.Object getPropertyDefault(java.lang.String);
+}

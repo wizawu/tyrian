@@ -1,0 +1,16 @@
+Compiled from "ExecutableMemberDoc.java"
+public interface com.sun.javadoc.ExecutableMemberDoc extends com.sun.javadoc.MemberDoc {
+  public abstract com.sun.javadoc.ClassDoc[] thrownExceptions();
+  public abstract com.sun.javadoc.Type[] thrownExceptionTypes();
+  public abstract boolean isNative();
+  public abstract boolean isSynchronized();
+  public abstract boolean isVarArgs();
+  public abstract com.sun.javadoc.Parameter[] parameters();
+  public abstract com.sun.javadoc.Type receiverType();
+  public abstract com.sun.javadoc.ThrowsTag[] throwsTags();
+  public abstract com.sun.javadoc.ParamTag[] paramTags();
+  public abstract com.sun.javadoc.ParamTag[] typeParamTags();
+  public abstract java.lang.String signature();
+  public abstract java.lang.String flatSignature();
+  public abstract com.sun.javadoc.TypeVariable[] typeParameters();
+}

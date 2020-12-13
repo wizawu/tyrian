@@ -1,0 +1,20 @@
+Compiled from "LocalizedLoggerWrapper.java"
+public class jdk.internal.logger.LocalizedLoggerWrapper<L extends java.lang.System$Logger> extends jdk.internal.logger.LoggerWrapper<L> {
+  public jdk.internal.logger.LocalizedLoggerWrapper(L, java.util.ResourceBundle);
+  public final java.util.ResourceBundle getBundle();
+  public final void log(java.lang.System$Logger$Level, java.lang.String);
+  public final void log(java.lang.System$Logger$Level, java.lang.String, java.lang.Throwable);
+  public final void log(java.lang.System$Logger$Level, java.lang.String, java.lang.Object...);
+  public final void log(java.lang.System$Logger$Level, java.lang.Object);
+  public final void log(java.lang.System$Logger$Level, java.util.function.Supplier<java.lang.String>);
+  public final void log(java.lang.System$Logger$Level, java.util.function.Supplier<java.lang.String>, java.lang.Throwable);
+  public final void log(java.lang.System$Logger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Object...);
+  public final void log(java.lang.System$Logger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Throwable);
+  public final boolean isLoggable(java.lang.System$Logger$Level);
+  public final void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.String);
+  public final void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.String, java.lang.Throwable);
+  public final void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.String, java.lang.Object...);
+  public final void log(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.Throwable);
+  public final void log(sun.util.logging.PlatformLogger$Level, java.lang.String);
+  public final void log(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.Object...);
+}

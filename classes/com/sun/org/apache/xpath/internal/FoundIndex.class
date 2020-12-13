@@ -1,0 +1,5 @@
+Compiled from "FoundIndex.java"
+public class com.sun.org.apache.xpath.internal.FoundIndex extends java.lang.RuntimeException {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.FoundIndex();
+}

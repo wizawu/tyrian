@@ -1,0 +1,29 @@
+Compiled from "UnaryNode.java"
+public final class jdk.nashorn.internal.ir.UnaryNode extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.Assignment<jdk.nashorn.internal.ir.Expression>, jdk.nashorn.internal.ir.Optimistic {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.ir.UnaryNode(long, jdk.nashorn.internal.ir.Expression);
+  public jdk.nashorn.internal.ir.UnaryNode(long, int, int, jdk.nashorn.internal.ir.Expression);
+  public boolean isAssignment();
+  public boolean isSelfModifying();
+  public jdk.nashorn.internal.codegen.types.Type getWidestOperationType();
+  public jdk.nashorn.internal.ir.Expression getAssignmentDest();
+  public jdk.nashorn.internal.ir.UnaryNode setAssignmentDest(jdk.nashorn.internal.ir.Expression);
+  public jdk.nashorn.internal.ir.Expression getAssignmentSource();
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public boolean isLocal();
+  public void toString(java.lang.StringBuilder, boolean);
+  public void toString(java.lang.StringBuilder, java.lang.Runnable, boolean);
+  public jdk.nashorn.internal.ir.Expression getExpression();
+  public jdk.nashorn.internal.ir.UnaryNode setExpression(jdk.nashorn.internal.ir.Expression);
+  public int getProgramPoint();
+  public jdk.nashorn.internal.ir.UnaryNode setProgramPoint(int);
+  public boolean canBeOptimistic();
+  public jdk.nashorn.internal.codegen.types.Type getMostOptimisticType();
+  public jdk.nashorn.internal.codegen.types.Type getMostPessimisticType();
+  public jdk.nashorn.internal.codegen.types.Type getType();
+  public jdk.nashorn.internal.ir.UnaryNode setType(jdk.nashorn.internal.codegen.types.Type);
+  public jdk.nashorn.internal.ir.Node setAssignmentDest(jdk.nashorn.internal.ir.Expression);
+  public jdk.nashorn.internal.ir.Optimistic setType(jdk.nashorn.internal.codegen.types.Type);
+  public jdk.nashorn.internal.ir.Optimistic setProgramPoint(int);
+  static {};
+}

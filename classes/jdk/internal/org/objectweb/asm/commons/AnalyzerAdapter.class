@@ -1,0 +1,25 @@
+Compiled from "AnalyzerAdapter.java"
+public class jdk.internal.org.objectweb.asm.commons.AnalyzerAdapter extends jdk.internal.org.objectweb.asm.MethodVisitor {
+  public java.util.List<java.lang.Object> locals;
+  public java.util.List<java.lang.Object> stack;
+  public java.util.Map<java.lang.Object, java.lang.Object> uninitializedTypes;
+  public jdk.internal.org.objectweb.asm.commons.AnalyzerAdapter(java.lang.String, int, java.lang.String, java.lang.String, jdk.internal.org.objectweb.asm.MethodVisitor);
+  protected jdk.internal.org.objectweb.asm.commons.AnalyzerAdapter(int, java.lang.String, int, java.lang.String, java.lang.String, jdk.internal.org.objectweb.asm.MethodVisitor);
+  public void visitFrame(int, int, java.lang.Object[], int, java.lang.Object[]);
+  public void visitInsn(int);
+  public void visitIntInsn(int, int);
+  public void visitVarInsn(int, int);
+  public void visitTypeInsn(int, java.lang.String);
+  public void visitFieldInsn(int, java.lang.String, java.lang.String, java.lang.String);
+  public void visitMethodInsn(int, java.lang.String, java.lang.String, java.lang.String);
+  public void visitMethodInsn(int, java.lang.String, java.lang.String, java.lang.String, boolean);
+  public void visitInvokeDynamicInsn(java.lang.String, java.lang.String, jdk.internal.org.objectweb.asm.Handle, java.lang.Object...);
+  public void visitJumpInsn(int, jdk.internal.org.objectweb.asm.Label);
+  public void visitLabel(jdk.internal.org.objectweb.asm.Label);
+  public void visitLdcInsn(java.lang.Object);
+  public void visitIincInsn(int, int);
+  public void visitTableSwitchInsn(int, int, jdk.internal.org.objectweb.asm.Label, jdk.internal.org.objectweb.asm.Label...);
+  public void visitLookupSwitchInsn(jdk.internal.org.objectweb.asm.Label, int[], jdk.internal.org.objectweb.asm.Label[]);
+  public void visitMultiANewArrayInsn(java.lang.String, int);
+  public void visitMaxs(int, int);
+}

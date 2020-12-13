@@ -1,0 +1,7 @@
+Compiled from "ELFException.java"
+public class sun.jvm.hotspot.debugger.posix.elf.ELFException extends java.lang.RuntimeException {
+  public sun.jvm.hotspot.debugger.posix.elf.ELFException();
+  public sun.jvm.hotspot.debugger.posix.elf.ELFException(java.lang.String);
+  public sun.jvm.hotspot.debugger.posix.elf.ELFException(java.lang.Throwable);
+  public sun.jvm.hotspot.debugger.posix.elf.ELFException(java.lang.String, java.lang.Throwable);
+}

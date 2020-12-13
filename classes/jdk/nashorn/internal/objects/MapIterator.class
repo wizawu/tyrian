@@ -1,0 +1,9 @@
+Compiled from "MapIterator.java"
+public class jdk.nashorn.internal.objects.MapIterator extends jdk.nashorn.internal.objects.AbstractIterator {
+  jdk.nashorn.internal.objects.MapIterator(jdk.nashorn.internal.objects.NativeMap, jdk.nashorn.internal.objects.AbstractIterator$IterationKind, jdk.nashorn.internal.objects.Global);
+  public static java.lang.Object next(java.lang.Object, java.lang.Object);
+  public java.lang.String getClassName();
+  protected jdk.nashorn.internal.objects.IteratorResult next(java.lang.Object);
+  public static {};
+  public static void $clinit$();
+}

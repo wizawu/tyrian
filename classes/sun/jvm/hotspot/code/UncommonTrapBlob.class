@@ -1,0 +1,6 @@
+Compiled from "UncommonTrapBlob.java"
+public class sun.jvm.hotspot.code.UncommonTrapBlob extends sun.jvm.hotspot.code.SingletonBlob {
+  public sun.jvm.hotspot.code.UncommonTrapBlob(sun.jvm.hotspot.debugger.Address);
+  public boolean isUncommonTrapStub();
+  static {};
+}

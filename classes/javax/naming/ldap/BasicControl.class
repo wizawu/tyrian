@@ -1,0 +1,11 @@
+Compiled from "BasicControl.java"
+public class javax.naming.ldap.BasicControl implements javax.naming.ldap.Control {
+  protected java.lang.String id;
+  protected boolean criticality;
+  protected byte[] value;
+  public javax.naming.ldap.BasicControl(java.lang.String);
+  public javax.naming.ldap.BasicControl(java.lang.String, boolean, byte[]);
+  public java.lang.String getID();
+  public boolean isCritical();
+  public byte[] getEncodedValue();
+}

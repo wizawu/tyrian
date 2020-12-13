@@ -1,0 +1,16 @@
+Compiled from "SctpStdSocketOption.java"
+public class sun.nio.ch.sctp.SctpStdSocketOption<T> implements com.sun.nio.sctp.SctpSocketOption<T> {
+  public static final int SCTP_DISABLE_FRAGMENTS;
+  public static final int SCTP_EXPLICIT_COMPLETE;
+  public static final int SCTP_FRAGMENT_INTERLEAVE;
+  public static final int SCTP_NODELAY;
+  public static final int SO_SNDBUF;
+  public static final int SO_RCVBUF;
+  public static final int SO_LINGER;
+  public sun.nio.ch.sctp.SctpStdSocketOption(java.lang.String, java.lang.Class<T>);
+  public sun.nio.ch.sctp.SctpStdSocketOption(java.lang.String, java.lang.Class<T>, int);
+  public java.lang.String name();
+  public java.lang.Class<T> type();
+  public java.lang.String toString();
+  int constValue();
+}

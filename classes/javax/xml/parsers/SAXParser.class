@@ -1,0 +1,23 @@
+Compiled from "SAXParser.java"
+public abstract class javax.xml.parsers.SAXParser {
+  protected javax.xml.parsers.SAXParser();
+  public void reset();
+  public void parse(java.io.InputStream, org.xml.sax.HandlerBase) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(java.io.InputStream, org.xml.sax.HandlerBase, java.lang.String) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(java.io.InputStream, org.xml.sax.helpers.DefaultHandler) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(java.io.InputStream, org.xml.sax.helpers.DefaultHandler, java.lang.String) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(java.lang.String, org.xml.sax.HandlerBase) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(java.lang.String, org.xml.sax.helpers.DefaultHandler) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(java.io.File, org.xml.sax.HandlerBase) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(java.io.File, org.xml.sax.helpers.DefaultHandler) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(org.xml.sax.InputSource, org.xml.sax.HandlerBase) throws org.xml.sax.SAXException, java.io.IOException;
+  public void parse(org.xml.sax.InputSource, org.xml.sax.helpers.DefaultHandler) throws org.xml.sax.SAXException, java.io.IOException;
+  public abstract org.xml.sax.Parser getParser() throws org.xml.sax.SAXException;
+  public abstract org.xml.sax.XMLReader getXMLReader() throws org.xml.sax.SAXException;
+  public abstract boolean isNamespaceAware();
+  public abstract boolean isValidating();
+  public abstract void setProperty(java.lang.String, java.lang.Object) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public abstract java.lang.Object getProperty(java.lang.String) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public javax.xml.validation.Schema getSchema();
+  public boolean isXIncludeAware();
+}

@@ -1,0 +1,5 @@
+Compiled from "IntType.java"
+public interface sun.jvm.hotspot.debugger.cdbg.IntType extends sun.jvm.hotspot.debugger.cdbg.Type {
+  public abstract int getIntSize();
+  public abstract boolean isUnsigned();
+}

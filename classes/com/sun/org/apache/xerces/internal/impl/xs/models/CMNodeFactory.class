@@ -1,0 +1,13 @@
+Compiled from "CMNodeFactory.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.models.CMNodeFactory {
+  public com.sun.org.apache.xerces.internal.impl.xs.models.CMNodeFactory();
+  public void reset(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager);
+  public void reset();
+  public com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode getCMLeafNode(int, java.lang.Object, int, int);
+  public com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode getCMRepeatingLeafNode(int, java.lang.Object, int, int, int, int);
+  public com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode getCMUniOpNode(int, com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode);
+  public com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode getCMBinOpNode(int, com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode, com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode);
+  public void nodeCountCheck();
+  public void resetNodeCount();
+  public void setProperty(java.lang.String, java.lang.Object) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+}

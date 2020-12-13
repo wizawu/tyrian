@@ -1,0 +1,4 @@
+Compiled from "RelativePathPattern.java"
+abstract class com.sun.org.apache.xalan.internal.xsltc.compiler.RelativePathPattern extends com.sun.org.apache.xalan.internal.xsltc.compiler.LocationPathPattern {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.RelativePathPattern();
+}

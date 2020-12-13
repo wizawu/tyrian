@@ -1,0 +1,18 @@
+Compiled from "RegionSpanIterator.java"
+public class sun.java2d.pipe.RegionSpanIterator implements sun.java2d.pipe.SpanIterator {
+  sun.java2d.pipe.RegionIterator ri;
+  int lox;
+  int loy;
+  int hix;
+  int hiy;
+  int curloy;
+  int curhiy;
+  boolean done;
+  boolean isrect;
+  public sun.java2d.pipe.RegionSpanIterator(sun.java2d.pipe.Region);
+  public void getPathBox(int[]);
+  public void intersectClipBox(int, int, int, int);
+  public boolean nextSpan(int[]);
+  public void skipDownTo(int);
+  public long getNativeIterator();
+}

@@ -1,0 +1,6 @@
+Compiled from "CookieFilter.java"
+class jdk.internal.net.http.CookieFilter implements jdk.internal.net.http.HeaderFilter {
+  public jdk.internal.net.http.CookieFilter();
+  public void request(jdk.internal.net.http.HttpRequestImpl, jdk.internal.net.http.MultiExchange<?>) throws java.io.IOException;
+  public jdk.internal.net.http.HttpRequestImpl response(jdk.internal.net.http.Response) throws java.io.IOException;
+}

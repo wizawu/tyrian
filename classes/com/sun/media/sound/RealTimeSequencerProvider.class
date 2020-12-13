@@ -1,0 +1,6 @@
+Compiled from "RealTimeSequencerProvider.java"
+public final class com.sun.media.sound.RealTimeSequencerProvider extends javax.sound.midi.spi.MidiDeviceProvider {
+  public com.sun.media.sound.RealTimeSequencerProvider();
+  public javax.sound.midi.MidiDevice$Info[] getDeviceInfo();
+  public javax.sound.midi.MidiDevice getDevice(javax.sound.midi.MidiDevice$Info);
+}

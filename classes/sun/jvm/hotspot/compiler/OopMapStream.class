@@ -1,0 +1,9 @@
+Compiled from "OopMapStream.java"
+public class sun.jvm.hotspot.compiler.OopMapStream {
+  public sun.jvm.hotspot.compiler.OopMapStream(sun.jvm.hotspot.compiler.ImmutableOopMap);
+  public sun.jvm.hotspot.compiler.OopMapStream(sun.jvm.hotspot.compiler.ImmutableOopMap, sun.jvm.hotspot.compiler.OopMapValue$OopTypes);
+  public sun.jvm.hotspot.compiler.OopMapStream(sun.jvm.hotspot.compiler.ImmutableOopMap, sun.jvm.hotspot.compiler.OopMapValue$OopTypes[]);
+  public boolean isDone();
+  public void next();
+  public sun.jvm.hotspot.compiler.OopMapValue getCurrent();
+}

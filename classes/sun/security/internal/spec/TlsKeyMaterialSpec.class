@@ -1,0 +1,16 @@
+Compiled from "TlsKeyMaterialSpec.java"
+public class sun.security.internal.spec.TlsKeyMaterialSpec implements java.security.spec.KeySpec,javax.crypto.SecretKey {
+  static final long serialVersionUID;
+  public sun.security.internal.spec.TlsKeyMaterialSpec(javax.crypto.SecretKey, javax.crypto.SecretKey);
+  public sun.security.internal.spec.TlsKeyMaterialSpec(javax.crypto.SecretKey, javax.crypto.SecretKey, javax.crypto.SecretKey, javax.crypto.SecretKey);
+  public sun.security.internal.spec.TlsKeyMaterialSpec(javax.crypto.SecretKey, javax.crypto.SecretKey, javax.crypto.SecretKey, javax.crypto.spec.IvParameterSpec, javax.crypto.SecretKey, javax.crypto.spec.IvParameterSpec);
+  public java.lang.String getAlgorithm();
+  public java.lang.String getFormat();
+  public byte[] getEncoded();
+  public javax.crypto.SecretKey getClientMacKey();
+  public javax.crypto.SecretKey getServerMacKey();
+  public javax.crypto.SecretKey getClientCipherKey();
+  public javax.crypto.spec.IvParameterSpec getClientIv();
+  public javax.crypto.SecretKey getServerCipherKey();
+  public javax.crypto.spec.IvParameterSpec getServerIv();
+}

@@ -1,0 +1,7 @@
+Compiled from "DictionaryEntry.java"
+public class sun.jvm.hotspot.memory.DictionaryEntry extends sun.jvm.hotspot.utilities.HashtableEntry {
+  public sun.jvm.hotspot.oops.Klass klass();
+  public sun.jvm.hotspot.memory.DictionaryEntry(sun.jvm.hotspot.debugger.Address);
+  public boolean equals(sun.jvm.hotspot.oops.Symbol);
+  static {};
+}

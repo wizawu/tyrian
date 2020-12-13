@@ -1,0 +1,8 @@
+Compiled from "LiveStackFrame.java"
+interface java.lang.LiveStackFrame extends java.lang.StackWalker$StackFrame {
+  public abstract java.lang.Object[] getMonitors();
+  public abstract java.lang.Object[] getLocals();
+  public abstract java.lang.Object[] getStack();
+  public static java.lang.StackWalker getStackWalker();
+  public static java.lang.StackWalker getStackWalker(java.util.Set<java.lang.StackWalker$Option>);
+}

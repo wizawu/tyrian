@@ -1,0 +1,19 @@
+Compiled from "RoleInfo.java"
+public class javax.management.relation.RoleInfo implements java.io.Serializable {
+  public static final int ROLE_CARDINALITY_INFINITY;
+  public javax.management.relation.RoleInfo(java.lang.String, java.lang.String, boolean, boolean, int, int, java.lang.String) throws java.lang.IllegalArgumentException, javax.management.relation.InvalidRoleInfoException, java.lang.ClassNotFoundException, javax.management.NotCompliantMBeanException;
+  public javax.management.relation.RoleInfo(java.lang.String, java.lang.String, boolean, boolean) throws java.lang.IllegalArgumentException, java.lang.ClassNotFoundException, javax.management.NotCompliantMBeanException;
+  public javax.management.relation.RoleInfo(java.lang.String, java.lang.String) throws java.lang.IllegalArgumentException, java.lang.ClassNotFoundException, javax.management.NotCompliantMBeanException;
+  public javax.management.relation.RoleInfo(javax.management.relation.RoleInfo) throws java.lang.IllegalArgumentException;
+  public java.lang.String getName();
+  public boolean isReadable();
+  public boolean isWritable();
+  public java.lang.String getDescription();
+  public int getMinDegree();
+  public int getMaxDegree();
+  public java.lang.String getRefMBeanClassName();
+  public boolean checkMinDegree(int);
+  public boolean checkMaxDegree(int);
+  public java.lang.String toString();
+  static {};
+}

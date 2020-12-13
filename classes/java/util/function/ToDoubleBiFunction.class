@@ -1,0 +1,4 @@
+Compiled from "ToDoubleBiFunction.java"
+public interface java.util.function.ToDoubleBiFunction<T, U> {
+  public abstract double applyAsDouble(T, U);
+}

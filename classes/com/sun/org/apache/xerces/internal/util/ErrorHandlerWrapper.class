@@ -1,0 +1,14 @@
+Compiled from "ErrorHandlerWrapper.java"
+public class com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper implements com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler {
+  protected org.xml.sax.ErrorHandler fErrorHandler;
+  public com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper();
+  public com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper(org.xml.sax.ErrorHandler);
+  public void setErrorHandler(org.xml.sax.ErrorHandler);
+  public org.xml.sax.ErrorHandler getErrorHandler();
+  public void warning(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void error(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void fatalError(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected static org.xml.sax.SAXParseException createSAXParseException(com.sun.org.apache.xerces.internal.xni.parser.XMLParseException);
+  protected static com.sun.org.apache.xerces.internal.xni.parser.XMLParseException createXMLParseException(org.xml.sax.SAXParseException);
+  protected static com.sun.org.apache.xerces.internal.xni.XNIException createXNIException(org.xml.sax.SAXException);
+}

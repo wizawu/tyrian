@@ -1,0 +1,4 @@
+Compiled from "URIDereferencer.java"
+public interface javax.xml.crypto.URIDereferencer {
+  public abstract javax.xml.crypto.Data dereference(javax.xml.crypto.URIReference, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.URIReferenceException;
+}

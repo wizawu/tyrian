@@ -1,0 +1,17 @@
+Compiled from "Disposer.java"
+public class sun.java2d.Disposer implements java.lang.Runnable {
+  public static final int WEAK;
+  public static final int PHANTOM;
+  public static int refType;
+  public static volatile boolean pollingQueue;
+  public sun.java2d.Disposer();
+  public static void addRecord(java.lang.Object, long, long);
+  public static void addRecord(java.lang.Object, sun.java2d.DisposerRecord);
+  synchronized void add(java.lang.Object, sun.java2d.DisposerRecord);
+  public void run();
+  public static void pollRemove();
+  public static void addReference(java.lang.ref.Reference<java.lang.Object>, sun.java2d.DisposerRecord);
+  public static void addObjectRecord(java.lang.Object, sun.java2d.DisposerRecord);
+  public static java.lang.ref.ReferenceQueue<java.lang.Object> getQueue();
+  static {};
+}

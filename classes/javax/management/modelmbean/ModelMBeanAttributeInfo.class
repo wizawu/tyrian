@@ -1,0 +1,13 @@
+Compiled from "ModelMBeanAttributeInfo.java"
+public class javax.management.modelmbean.ModelMBeanAttributeInfo extends javax.management.MBeanAttributeInfo implements javax.management.DescriptorAccess {
+  public javax.management.modelmbean.ModelMBeanAttributeInfo(java.lang.String, java.lang.String, java.lang.reflect.Method, java.lang.reflect.Method) throws javax.management.IntrospectionException;
+  public javax.management.modelmbean.ModelMBeanAttributeInfo(java.lang.String, java.lang.String, java.lang.reflect.Method, java.lang.reflect.Method, javax.management.Descriptor) throws javax.management.IntrospectionException;
+  public javax.management.modelmbean.ModelMBeanAttributeInfo(java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean);
+  public javax.management.modelmbean.ModelMBeanAttributeInfo(java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean, javax.management.Descriptor);
+  public javax.management.modelmbean.ModelMBeanAttributeInfo(javax.management.modelmbean.ModelMBeanAttributeInfo);
+  public javax.management.Descriptor getDescriptor();
+  public void setDescriptor(javax.management.Descriptor);
+  public java.lang.Object clone();
+  public java.lang.String toString();
+  static {};
+}

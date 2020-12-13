@@ -1,0 +1,29 @@
+Compiled from "PropertyDescriptor.java"
+public class java.beans.PropertyDescriptor extends java.beans.FeatureDescriptor {
+  public java.beans.PropertyDescriptor(java.lang.String, java.lang.Class<?>) throws java.beans.IntrospectionException;
+  public java.beans.PropertyDescriptor(java.lang.String, java.lang.Class<?>, java.lang.String, java.lang.String) throws java.beans.IntrospectionException;
+  public java.beans.PropertyDescriptor(java.lang.String, java.lang.reflect.Method, java.lang.reflect.Method) throws java.beans.IntrospectionException;
+  java.beans.PropertyDescriptor(java.util.Map$Entry<java.lang.String, com.sun.beans.introspect.PropertyInfo>, boolean);
+  public synchronized java.lang.Class<?> getPropertyType();
+  public synchronized java.lang.reflect.Method getReadMethod();
+  public synchronized void setReadMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException;
+  public synchronized java.lang.reflect.Method getWriteMethod();
+  public synchronized void setWriteMethod(java.lang.reflect.Method) throws java.beans.IntrospectionException;
+  void setClass0(java.lang.Class<?>);
+  public boolean isBound();
+  public void setBound(boolean);
+  public boolean isConstrained();
+  public void setConstrained(boolean);
+  public void setPropertyEditorClass(java.lang.Class<?>);
+  public java.lang.Class<?> getPropertyEditorClass();
+  public java.beans.PropertyEditor createPropertyEditor(java.lang.Object);
+  public boolean equals(java.lang.Object);
+  boolean compareMethods(java.lang.reflect.Method, java.lang.reflect.Method);
+  java.beans.PropertyDescriptor(java.beans.PropertyDescriptor, java.beans.PropertyDescriptor);
+  java.beans.PropertyDescriptor(java.beans.PropertyDescriptor);
+  void updateGenericsFor(java.lang.Class<?>);
+  public int hashCode();
+  java.lang.String getBaseName();
+  void appendTo(java.lang.StringBuilder);
+  boolean isAssignable(java.lang.reflect.Method, java.lang.reflect.Method);
+}

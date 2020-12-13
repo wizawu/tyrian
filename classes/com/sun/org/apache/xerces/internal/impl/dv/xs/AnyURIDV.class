@@ -1,0 +1,7 @@
+Compiled from "AnyURIDV.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.xs.AnyURIDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
+  public com.sun.org.apache.xerces.internal.impl.dv.xs.AnyURIDV();
+  public short getAllowedFacets();
+  public java.lang.Object getActualValue(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
+  static {};
+}

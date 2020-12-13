@@ -1,0 +1,14 @@
+Compiled from "OrientationRequested.java"
+public final class javax.print.attribute.standard.OrientationRequested extends javax.print.attribute.EnumSyntax implements javax.print.attribute.DocAttribute,javax.print.attribute.PrintRequestAttribute,javax.print.attribute.PrintJobAttribute {
+  public static final javax.print.attribute.standard.OrientationRequested PORTRAIT;
+  public static final javax.print.attribute.standard.OrientationRequested LANDSCAPE;
+  public static final javax.print.attribute.standard.OrientationRequested REVERSE_LANDSCAPE;
+  public static final javax.print.attribute.standard.OrientationRequested REVERSE_PORTRAIT;
+  protected javax.print.attribute.standard.OrientationRequested(int);
+  protected java.lang.String[] getStringTable();
+  protected javax.print.attribute.EnumSyntax[] getEnumValueTable();
+  protected int getOffset();
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  static {};
+}

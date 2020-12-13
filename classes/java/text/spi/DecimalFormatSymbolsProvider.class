@@ -1,0 +1,5 @@
+Compiled from "DecimalFormatSymbolsProvider.java"
+public abstract class java.text.spi.DecimalFormatSymbolsProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.text.spi.DecimalFormatSymbolsProvider();
+  public abstract java.text.DecimalFormatSymbols getInstance(java.util.Locale);
+}

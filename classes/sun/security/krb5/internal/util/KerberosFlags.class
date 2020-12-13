@@ -1,0 +1,13 @@
+Compiled from "KerberosFlags.java"
+public class sun.security.krb5.internal.util.KerberosFlags {
+  sun.security.util.BitArray bits;
+  protected static final int BITS_PER_UNIT;
+  public sun.security.krb5.internal.util.KerberosFlags(int) throws java.lang.IllegalArgumentException;
+  public sun.security.krb5.internal.util.KerberosFlags(int, byte[]) throws java.lang.IllegalArgumentException;
+  public sun.security.krb5.internal.util.KerberosFlags(boolean[]);
+  public void set(int, boolean);
+  public boolean get(int);
+  public boolean[] toBooleanArray();
+  public byte[] asn1Encode() throws java.io.IOException;
+  public java.lang.String toString();
+}

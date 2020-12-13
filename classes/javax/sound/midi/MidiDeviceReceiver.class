@@ -1,0 +1,4 @@
+Compiled from "MidiDeviceReceiver.java"
+public interface javax.sound.midi.MidiDeviceReceiver extends javax.sound.midi.Receiver {
+  public abstract javax.sound.midi.MidiDevice getMidiDevice();
+}

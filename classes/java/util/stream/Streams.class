@@ -1,0 +1,5 @@
+Compiled from "Streams.java"
+final class java.util.stream.Streams {
+  static java.lang.Runnable composeWithExceptions(java.lang.Runnable, java.lang.Runnable);
+  static java.lang.Runnable composedClose(java.util.stream.BaseStream<?, ?>, java.util.stream.BaseStream<?, ?>);
+}

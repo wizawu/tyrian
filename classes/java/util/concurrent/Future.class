@@ -1,0 +1,8 @@
+Compiled from "Future.java"
+public interface java.util.concurrent.Future<V> {
+  public abstract boolean cancel(boolean);
+  public abstract boolean isCancelled();
+  public abstract boolean isDone();
+  public abstract V get() throws java.lang.InterruptedException, java.util.concurrent.ExecutionException;
+  public abstract V get(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException, java.util.concurrent.ExecutionException, java.util.concurrent.TimeoutException;
+}

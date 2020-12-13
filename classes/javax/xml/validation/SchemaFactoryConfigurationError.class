@@ -1,0 +1,8 @@
+Compiled from "SchemaFactoryConfigurationError.java"
+public final class javax.xml.validation.SchemaFactoryConfigurationError extends java.lang.Error {
+  static final long serialVersionUID;
+  public javax.xml.validation.SchemaFactoryConfigurationError();
+  public javax.xml.validation.SchemaFactoryConfigurationError(java.lang.String);
+  public javax.xml.validation.SchemaFactoryConfigurationError(java.lang.Throwable);
+  public javax.xml.validation.SchemaFactoryConfigurationError(java.lang.String, java.lang.Throwable);
+}

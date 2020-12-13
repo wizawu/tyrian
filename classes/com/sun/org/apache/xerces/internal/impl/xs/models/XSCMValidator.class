@@ -1,0 +1,14 @@
+Compiled from "XSCMValidator.java"
+public interface com.sun.org.apache.xerces.internal.impl.xs.models.XSCMValidator {
+  public static final short FIRST_ERROR;
+  public static final short SUBSEQUENT_ERROR;
+  public abstract int[] startContentModel();
+  public abstract java.lang.Object oneTransition(com.sun.org.apache.xerces.internal.xni.QName, int[], com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler);
+  public abstract boolean endContentModel(int[]);
+  public abstract boolean checkUniqueParticleAttribution(com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler) throws com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaException;
+  public abstract java.util.List<java.lang.Object> whatCanGoHere(int[]);
+  public abstract java.util.List<java.lang.String> checkMinMaxBounds();
+  public abstract int[] occurenceInfo(int[]);
+  public abstract java.lang.String getTermName(int);
+  public abstract boolean isCompactedForUPA();
+}

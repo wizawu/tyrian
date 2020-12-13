@@ -1,0 +1,35 @@
+Compiled from "Config.java"
+final class sun.security.pkcs11.Config {
+  static final int ERR_HALT;
+  static final int ERR_IGNORE_ALL;
+  static final int ERR_IGNORE_LIB;
+  static final int ERR_IGNORE_MULTI_INIT;
+  sun.security.pkcs11.Config(java.lang.String) throws java.io.IOException;
+  java.lang.String getFileName();
+  java.lang.String getName();
+  java.lang.String getLibrary();
+  java.lang.String getDescription();
+  int getSlotID();
+  int getSlotListIndex();
+  boolean getShowInfo();
+  sun.security.pkcs11.TemplateManager getTemplateManager();
+  boolean isEnabled(long);
+  int getHandleStartupErrors();
+  boolean getKeyStoreCompatibilityMode();
+  boolean getExplicitCancel();
+  int getInsertionCheckInterval();
+  boolean getOmitInitialize();
+  boolean getAllowSingleThreadedModules();
+  java.lang.String getFunctionList();
+  boolean getNssUseSecmod();
+  java.lang.String getNssLibraryDirectory();
+  java.lang.String getNssSecmodDirectory();
+  java.lang.String getNssModule();
+  sun.security.pkcs11.Secmod$DbMode getNssDbMode();
+  public boolean getNssNetscapeDbWorkaround();
+  java.lang.String getNssArgs();
+  boolean getNssUseSecmodTrust();
+  boolean getUseEcX963Encoding();
+  boolean getNssOptimizeSpace();
+  static {};
+}

@@ -1,0 +1,25 @@
+Compiled from "LocalGregorianCalendar.java"
+public class sun.util.calendar.LocalGregorianCalendar extends sun.util.calendar.BaseCalendar {
+  static sun.util.calendar.LocalGregorianCalendar getLocalGregorianCalendar(java.lang.String);
+  public java.lang.String getName();
+  public sun.util.calendar.LocalGregorianCalendar$Date getCalendarDate();
+  public sun.util.calendar.LocalGregorianCalendar$Date getCalendarDate(long);
+  public sun.util.calendar.LocalGregorianCalendar$Date getCalendarDate(long, java.util.TimeZone);
+  public sun.util.calendar.LocalGregorianCalendar$Date getCalendarDate(long, sun.util.calendar.CalendarDate);
+  public sun.util.calendar.LocalGregorianCalendar$Date newCalendarDate();
+  public sun.util.calendar.LocalGregorianCalendar$Date newCalendarDate(java.util.TimeZone);
+  public boolean validate(sun.util.calendar.CalendarDate);
+  public boolean normalize(sun.util.calendar.CalendarDate);
+  void normalizeMonth(sun.util.calendar.CalendarDate);
+  void normalizeYear(sun.util.calendar.CalendarDate);
+  public boolean isLeapYear(int);
+  public boolean isLeapYear(sun.util.calendar.Era, int);
+  public void getCalendarDateFromFixedDate(sun.util.calendar.CalendarDate, long);
+  public sun.util.calendar.CalendarDate getCalendarDate(long, sun.util.calendar.CalendarDate);
+  public sun.util.calendar.CalendarDate getCalendarDate(long, java.util.TimeZone);
+  public sun.util.calendar.CalendarDate getCalendarDate(long);
+  public sun.util.calendar.CalendarDate getCalendarDate();
+  public sun.util.calendar.CalendarDate newCalendarDate(java.util.TimeZone);
+  public sun.util.calendar.CalendarDate newCalendarDate();
+  static {};
+}

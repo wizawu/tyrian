@@ -1,0 +1,4 @@
+Compiled from "CommentTree.java"
+public interface com.sun.source.doctree.CommentTree extends com.sun.source.doctree.DocTree {
+  public abstract java.lang.String getBody();
+}

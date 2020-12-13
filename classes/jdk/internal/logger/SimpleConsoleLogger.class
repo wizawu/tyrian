@@ -1,0 +1,39 @@
+Compiled from "SimpleConsoleLogger.java"
+public class jdk.internal.logger.SimpleConsoleLogger extends sun.util.logging.PlatformLogger$ConfigurableBridge$LoggerConfiguration implements java.lang.System$Logger,sun.util.logging.PlatformLogger$Bridge,sun.util.logging.PlatformLogger$ConfigurableBridge {
+  static final java.lang.System$Logger$Level DEFAULT_LEVEL;
+  static final sun.util.logging.PlatformLogger$Level DEFAULT_PLATFORM_LEVEL;
+  final java.lang.String name;
+  volatile sun.util.logging.PlatformLogger$Level level;
+  final boolean usePlatformLevel;
+  static java.lang.System$Logger$Level getDefaultLevel();
+  jdk.internal.logger.SimpleConsoleLogger(java.lang.String, boolean);
+  java.lang.String getSimpleFormatString();
+  sun.util.logging.PlatformLogger$Level defaultPlatformLevel();
+  public final java.lang.String getName();
+  public final boolean isLoggable(java.lang.System$Logger$Level);
+  public final void log(java.lang.System$Logger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Throwable);
+  public final void log(java.lang.System$Logger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Object...);
+  public final boolean isLoggable(sun.util.logging.PlatformLogger$Level);
+  public final boolean isEnabled();
+  public final void log(sun.util.logging.PlatformLogger$Level, java.lang.String);
+  public final void log(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.Throwable);
+  public final void log(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.Object...);
+  public final sun.util.logging.PlatformLogger$Level getPlatformLevel();
+  public final void setPlatformLevel(sun.util.logging.PlatformLogger$Level);
+  public final sun.util.logging.PlatformLogger$ConfigurableBridge$LoggerConfiguration getLoggerConfiguration();
+  static java.io.PrintStream outputStream();
+  public static jdk.internal.logger.SimpleConsoleLogger makeSimpleLogger(java.lang.String);
+  public final void log(sun.util.logging.PlatformLogger$Level, java.util.function.Supplier<java.lang.String>);
+  public final void log(sun.util.logging.PlatformLogger$Level, java.lang.Throwable, java.util.function.Supplier<java.lang.String>);
+  public final void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.String);
+  public final void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.util.function.Supplier<java.lang.String>);
+  public final void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.String, java.lang.Object...);
+  public final void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.String, java.lang.Throwable);
+  public final void logp(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.lang.Throwable, java.util.function.Supplier<java.lang.String>);
+  public final void logrb(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.util.ResourceBundle, java.lang.String, java.lang.Object...);
+  public final void logrb(sun.util.logging.PlatformLogger$Level, java.lang.String, java.lang.String, java.util.ResourceBundle, java.lang.String, java.lang.Throwable);
+  public final void logrb(sun.util.logging.PlatformLogger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Object...);
+  public final void logrb(sun.util.logging.PlatformLogger$Level, java.util.ResourceBundle, java.lang.String, java.lang.Throwable);
+  static java.lang.String getString(java.util.ResourceBundle, java.lang.String);
+  static {};
+}

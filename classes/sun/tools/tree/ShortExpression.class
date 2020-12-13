@@ -1,0 +1,5 @@
+Compiled from "ShortExpression.java"
+public class sun.tools.tree.ShortExpression extends sun.tools.tree.IntegerExpression {
+  public sun.tools.tree.ShortExpression(long, short);
+  public void print(java.io.PrintStream);
+}

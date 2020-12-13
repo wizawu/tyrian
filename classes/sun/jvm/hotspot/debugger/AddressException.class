@@ -1,0 +1,7 @@
+Compiled from "AddressException.java"
+public class sun.jvm.hotspot.debugger.AddressException extends java.lang.RuntimeException {
+  public sun.jvm.hotspot.debugger.AddressException(long);
+  public sun.jvm.hotspot.debugger.AddressException(java.lang.String, long);
+  public long getAddress();
+  public java.lang.String getMessage();
+}

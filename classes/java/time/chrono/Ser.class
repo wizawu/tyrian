@@ -1,0 +1,17 @@
+Compiled from "Ser.java"
+final class java.time.chrono.Ser implements java.io.Externalizable {
+  static final byte CHRONO_TYPE;
+  static final byte CHRONO_LOCAL_DATE_TIME_TYPE;
+  static final byte CHRONO_ZONE_DATE_TIME_TYPE;
+  static final byte JAPANESE_DATE_TYPE;
+  static final byte JAPANESE_ERA_TYPE;
+  static final byte HIJRAH_DATE_TYPE;
+  static final byte MINGUO_DATE_TYPE;
+  static final byte THAIBUDDHIST_DATE_TYPE;
+  static final byte CHRONO_PERIOD_TYPE;
+  public java.time.chrono.Ser();
+  java.time.chrono.Ser(byte, java.lang.Object);
+  public void writeExternal(java.io.ObjectOutput) throws java.io.IOException;
+  public void readExternal(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+  static java.lang.Object read(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+}

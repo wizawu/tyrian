@@ -1,0 +1,9 @@
+Compiled from "UCompactIntArray.java"
+public final class sun.text.UCompactIntArray implements java.lang.Cloneable {
+  public sun.text.UCompactIntArray();
+  public sun.text.UCompactIntArray(int);
+  public int elementAt(int);
+  public void setElementAt(int, int);
+  public void compact();
+  public int getKSize();
+}

@@ -1,0 +1,25 @@
+Compiled from "ChaCha20Cipher.java"
+abstract class com.sun.crypto.provider.ChaCha20Cipher extends javax.crypto.CipherSpi {
+  protected int mode;
+  protected java.lang.String authAlgName;
+  protected com.sun.crypto.provider.ChaCha20Cipher();
+  protected void engineSetMode(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  protected void engineSetPadding(java.lang.String) throws javax.crypto.NoSuchPaddingException;
+  protected int engineGetBlockSize();
+  protected int engineGetOutputSize(int);
+  protected byte[] engineGetIV();
+  protected java.security.AlgorithmParameters engineGetParameters();
+  protected void engineInit(int, java.security.Key, java.security.SecureRandom) throws java.security.InvalidKeyException;
+  protected void engineInit(int, java.security.Key, java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  protected void engineInit(int, java.security.Key, java.security.AlgorithmParameters, java.security.SecureRandom) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  protected void engineUpdateAAD(byte[], int, int);
+  protected void engineUpdateAAD(java.nio.ByteBuffer);
+  protected byte[] engineUpdate(byte[], int, int);
+  protected int engineUpdate(byte[], int, int, byte[], int) throws javax.crypto.ShortBufferException;
+  protected byte[] engineDoFinal(byte[], int, int) throws javax.crypto.AEADBadTagException;
+  protected int engineDoFinal(byte[], int, int, byte[], int) throws javax.crypto.ShortBufferException, javax.crypto.AEADBadTagException;
+  protected byte[] engineWrap(java.security.Key) throws javax.crypto.IllegalBlockSizeException, java.security.InvalidKeyException;
+  protected java.security.Key engineUnwrap(byte[], java.lang.String, int) throws java.security.InvalidKeyException, java.security.NoSuchAlgorithmException;
+  protected int engineGetKeySize(java.security.Key) throws java.security.InvalidKeyException;
+  static {};
+}

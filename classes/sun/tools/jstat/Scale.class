@@ -1,0 +1,30 @@
+Compiled from "Scale.java"
+public class sun.tools.jstat.Scale {
+  public static final sun.tools.jstat.Scale RAW;
+  public static final sun.tools.jstat.Scale PERCENT;
+  public static final sun.tools.jstat.Scale KILO;
+  public static final sun.tools.jstat.Scale MEGA;
+  public static final sun.tools.jstat.Scale GIGA;
+  public static final sun.tools.jstat.Scale TERA;
+  public static final sun.tools.jstat.Scale PETA;
+  public static final sun.tools.jstat.Scale PICO;
+  public static final sun.tools.jstat.Scale NANO;
+  public static final sun.tools.jstat.Scale MICRO;
+  public static final sun.tools.jstat.Scale MILLI;
+  public static final sun.tools.jstat.Scale PSEC;
+  public static final sun.tools.jstat.Scale NSEC;
+  public static final sun.tools.jstat.Scale USEC;
+  public static final sun.tools.jstat.Scale MSEC;
+  public static final sun.tools.jstat.Scale SEC;
+  public static final sun.tools.jstat.Scale SEC2;
+  public static final sun.tools.jstat.Scale MINUTES;
+  public static final sun.tools.jstat.Scale HOUR;
+  public static final sun.tools.jstat.Scale HOUR2;
+  static final boolean $assertionsDisabled;
+  public double getFactor();
+  public java.lang.String toString();
+  public static sun.tools.jstat.Scale toScale(java.lang.String);
+  protected static java.util.Set<java.lang.String> keySet();
+  protected double scale(double);
+  static {};
+}

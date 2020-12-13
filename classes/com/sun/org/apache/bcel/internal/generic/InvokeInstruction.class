@@ -1,0 +1,13 @@
+Compiled from "InvokeInstruction.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.InvokeInstruction extends com.sun.org.apache.bcel.internal.generic.FieldOrMethod implements com.sun.org.apache.bcel.internal.generic.ExceptionThrower,com.sun.org.apache.bcel.internal.generic.StackConsumer,com.sun.org.apache.bcel.internal.generic.StackProducer {
+  com.sun.org.apache.bcel.internal.generic.InvokeInstruction();
+  protected com.sun.org.apache.bcel.internal.generic.InvokeInstruction(short, int);
+  public java.lang.String toString(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public int consumeStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public int produceStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public java.lang.String getClassName(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public java.lang.String getMethodName(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.Type getReturnType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.Type[] getArgumentTypes(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+}

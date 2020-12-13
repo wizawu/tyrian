@@ -1,0 +1,7 @@
+Compiled from "ListeningConnector.java"
+public interface com.sun.jdi.connect.ListeningConnector extends com.sun.jdi.connect.Connector {
+  public abstract boolean supportsMultipleConnections();
+  public abstract java.lang.String startListening(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
+  public abstract void stopListening(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
+  public abstract com.sun.jdi.VirtualMachine accept(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
+}

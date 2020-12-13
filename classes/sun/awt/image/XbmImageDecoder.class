@@ -1,0 +1,6 @@
+Compiled from "XbmImageDecoder.java"
+public class sun.awt.image.XbmImageDecoder extends sun.awt.image.ImageDecoder {
+  public sun.awt.image.XbmImageDecoder(sun.awt.image.InputStreamImageSource, java.io.InputStream);
+  public void produceImage() throws java.io.IOException, sun.awt.image.ImageFormatException;
+  static {};
+}

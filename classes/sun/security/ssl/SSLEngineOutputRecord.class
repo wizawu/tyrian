@@ -1,0 +1,13 @@
+Compiled from "SSLEngineOutputRecord.java"
+final class sun.security.ssl.SSLEngineOutputRecord extends sun.security.ssl.OutputRecord implements sun.security.ssl.SSLRecord {
+  sun.security.ssl.SSLEngineOutputRecord(sun.security.ssl.HandshakeHash);
+  public synchronized void close() throws java.io.IOException;
+  boolean isClosed();
+  void encodeAlert(byte, byte) throws java.io.IOException;
+  void encodeHandshake(byte[], int, int) throws java.io.IOException;
+  void encodeChangeCipherSpec() throws java.io.IOException;
+  void encodeV2NoCipher() throws java.io.IOException;
+  sun.security.ssl.Ciphertext encode(java.nio.ByteBuffer[], int, int, java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  boolean isEmpty();
+  boolean needToSplitPayload();
+}

@@ -1,0 +1,7 @@
+Compiled from "DomainLoadStoreParameter.java"
+public final class java.security.DomainLoadStoreParameter implements java.security.KeyStore$LoadStoreParameter {
+  public java.security.DomainLoadStoreParameter(java.net.URI, java.util.Map<java.lang.String, java.security.KeyStore$ProtectionParameter>);
+  public java.net.URI getConfiguration();
+  public java.util.Map<java.lang.String, java.security.KeyStore$ProtectionParameter> getProtectionParams();
+  public java.security.KeyStore$ProtectionParameter getProtectionParameter();
+}

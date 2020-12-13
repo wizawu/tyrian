@@ -1,0 +1,25 @@
+Compiled from "Attrs.java"
+public class jdk.internal.util.xml.impl.Attrs implements jdk.internal.org.xml.sax.Attributes {
+  java.lang.String[] mItems;
+  public jdk.internal.util.xml.impl.Attrs();
+  public void setLength(char);
+  public int getLength();
+  public java.lang.String getURI(int);
+  public java.lang.String getLocalName(int);
+  public java.lang.String getQName(int);
+  public java.lang.String getType(int);
+  public java.lang.String getValue(int);
+  public int getIndex(java.lang.String, java.lang.String);
+  int getIndexNullNS(java.lang.String, java.lang.String);
+  public int getIndex(java.lang.String);
+  public java.lang.String getType(java.lang.String, java.lang.String);
+  public java.lang.String getType(java.lang.String);
+  public java.lang.String getValue(java.lang.String, java.lang.String);
+  public java.lang.String getValue(java.lang.String);
+  public boolean isDeclared(int);
+  public boolean isDeclared(java.lang.String);
+  public boolean isDeclared(java.lang.String, java.lang.String);
+  public boolean isSpecified(int);
+  public boolean isSpecified(java.lang.String, java.lang.String);
+  public boolean isSpecified(java.lang.String);
+}

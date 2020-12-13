@@ -1,0 +1,11 @@
+Compiled from "SQLTimeoutException.java"
+public class java.sql.SQLTimeoutException extends java.sql.SQLTransientException {
+  public java.sql.SQLTimeoutException();
+  public java.sql.SQLTimeoutException(java.lang.String);
+  public java.sql.SQLTimeoutException(java.lang.String, java.lang.String);
+  public java.sql.SQLTimeoutException(java.lang.String, java.lang.String, int);
+  public java.sql.SQLTimeoutException(java.lang.Throwable);
+  public java.sql.SQLTimeoutException(java.lang.String, java.lang.Throwable);
+  public java.sql.SQLTimeoutException(java.lang.String, java.lang.String, java.lang.Throwable);
+  public java.sql.SQLTimeoutException(java.lang.String, java.lang.String, int, java.lang.Throwable);
+}

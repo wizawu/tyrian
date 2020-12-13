@@ -1,0 +1,9 @@
+Compiled from "PropertyResourceBundle.java"
+public class java.util.PropertyResourceBundle extends java.util.ResourceBundle {
+  public java.util.PropertyResourceBundle(java.io.InputStream) throws java.io.IOException;
+  public java.util.PropertyResourceBundle(java.io.Reader) throws java.io.IOException;
+  public java.lang.Object handleGetObject(java.lang.String);
+  public java.util.Enumeration<java.lang.String> getKeys();
+  protected java.util.Set<java.lang.String> handleKeySet();
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "RemoteSPARCThreadFactory.java"
+public class sun.jvm.hotspot.debugger.remote.sparc.RemoteSPARCThreadFactory implements sun.jvm.hotspot.debugger.remote.RemoteThreadFactory {
+  public sun.jvm.hotspot.debugger.remote.sparc.RemoteSPARCThreadFactory(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient);
+  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(long);
+}

@@ -1,0 +1,7 @@
+Compiled from "XPathException.java"
+public class org.w3c.dom.xpath.XPathException extends java.lang.RuntimeException {
+  public short code;
+  public static final short INVALID_EXPRESSION_ERR;
+  public static final short TYPE_ERR;
+  public org.w3c.dom.xpath.XPathException(short, java.lang.String);
+}

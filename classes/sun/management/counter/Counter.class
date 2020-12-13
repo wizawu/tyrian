@@ -1,0 +1,11 @@
+Compiled from "Counter.java"
+public interface sun.management.counter.Counter extends java.io.Serializable {
+  public abstract java.lang.String getName();
+  public abstract sun.management.counter.Units getUnits();
+  public abstract sun.management.counter.Variability getVariability();
+  public abstract boolean isVector();
+  public abstract int getVectorLength();
+  public abstract java.lang.Object getValue();
+  public abstract boolean isInternal();
+  public abstract int getFlags();
+}

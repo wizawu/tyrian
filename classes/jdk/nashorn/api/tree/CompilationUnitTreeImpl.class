@@ -1,0 +1,13 @@
+Compiled from "CompilationUnitTreeImpl.java"
+final class jdk.nashorn.api.tree.CompilationUnitTreeImpl extends jdk.nashorn.api.tree.TreeImpl implements jdk.nashorn.api.tree.CompilationUnitTree {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.api.tree.CompilationUnitTreeImpl(jdk.nashorn.internal.ir.FunctionNode, java.util.List<? extends jdk.nashorn.api.tree.Tree>, jdk.nashorn.api.tree.ModuleTree);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public java.util.List<? extends jdk.nashorn.api.tree.Tree> getSourceElements();
+  public java.lang.String getSourceName();
+  public boolean isStrict();
+  public jdk.nashorn.api.tree.LineMap getLineMap();
+  public jdk.nashorn.api.tree.ModuleTree getModule();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+  static {};
+}

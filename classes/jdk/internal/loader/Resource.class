@@ -1,0 +1,14 @@
+Compiled from "Resource.java"
+public abstract class jdk.internal.loader.Resource {
+  public jdk.internal.loader.Resource();
+  public abstract java.lang.String getName();
+  public abstract java.net.URL getURL();
+  public abstract java.net.URL getCodeSourceURL();
+  public abstract java.io.InputStream getInputStream() throws java.io.IOException;
+  public abstract int getContentLength() throws java.io.IOException;
+  public byte[] getBytes() throws java.io.IOException;
+  public java.nio.ByteBuffer getByteBuffer() throws java.io.IOException;
+  public java.util.jar.Manifest getManifest() throws java.io.IOException;
+  public java.security.cert.Certificate[] getCertificates();
+  public java.security.CodeSigner[] getCodeSigners();
+}

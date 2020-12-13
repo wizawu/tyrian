@@ -1,0 +1,10 @@
+Compiled from "AnnoConstruct.java"
+public abstract class com.sun.tools.javac.code.AnnoConstruct implements javax.lang.model.AnnotatedConstruct {
+  public com.sun.tools.javac.code.AnnoConstruct();
+  public abstract com.sun.tools.javac.util.List<? extends com.sun.tools.javac.code.Attribute$Compound> getAnnotationMirrors();
+  protected <A extends java.lang.annotation.Annotation> com.sun.tools.javac.code.Attribute$Compound getAttribute(java.lang.Class<A>);
+  protected <A extends java.lang.annotation.Annotation> A[] getInheritedAnnotations(java.lang.Class<A>);
+  public <A extends java.lang.annotation.Annotation> A[] getAnnotationsByType(java.lang.Class<A>);
+  public <A extends java.lang.annotation.Annotation> A getAnnotation(java.lang.Class<A>);
+  public java.util.List getAnnotationMirrors();
+}

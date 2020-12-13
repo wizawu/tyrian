@@ -1,0 +1,3 @@
+Compiled from "DebugVC50SSGlobalSym.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSGlobalSym extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSymbolBase {
+}

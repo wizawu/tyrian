@@ -1,0 +1,8 @@
+Compiled from "NameList.java"
+public interface org.w3c.dom.NameList {
+  public abstract java.lang.String getName(int);
+  public abstract java.lang.String getNamespaceURI(int);
+  public abstract int getLength();
+  public abstract boolean contains(java.lang.String);
+  public abstract boolean containsNS(java.lang.String, java.lang.String);
+}

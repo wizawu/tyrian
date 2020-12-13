@@ -1,0 +1,19 @@
+Compiled from "TemplatesImpl.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl implements javax.xml.transform.Templates,java.io.Serializable {
+  static final long serialVersionUID;
+  public static final java.lang.String DESERIALIZE_TRANSLET;
+  static final boolean $assertionsDisabled;
+  protected com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl(byte[][], java.lang.String, java.util.Properties, int, com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl);
+  protected com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl(java.lang.Class<?>[], java.lang.String, java.util.Properties, int, com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl);
+  public com.sun.org.apache.xalan.internal.xsltc.trax.TemplatesImpl();
+  public boolean overrideDefaultParser();
+  public synchronized void setURIResolver(javax.xml.transform.URIResolver);
+  public synchronized int getTransletIndex();
+  protected synchronized void setTransletName(java.lang.String);
+  protected synchronized java.lang.String getTransletName();
+  public synchronized javax.xml.transform.Transformer newTransformer() throws javax.xml.transform.TransformerConfigurationException;
+  public synchronized java.util.Properties getOutputProperties();
+  public com.sun.org.apache.xalan.internal.xsltc.DOM getStylesheetDOM();
+  public void setStylesheetDOM(com.sun.org.apache.xalan.internal.xsltc.DOM);
+  static {};
+}

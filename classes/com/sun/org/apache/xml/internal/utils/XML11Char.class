@@ -1,0 +1,29 @@
+Compiled from "XML11Char.java"
+public class com.sun.org.apache.xml.internal.utils.XML11Char {
+  public static final int MASK_XML11_VALID;
+  public static final int MASK_XML11_SPACE;
+  public static final int MASK_XML11_NAME_START;
+  public static final int MASK_XML11_NAME;
+  public static final int MASK_XML11_CONTROL;
+  public static final int MASK_XML11_CONTENT;
+  public static final int MASK_XML11_NCNAME_START;
+  public static final int MASK_XML11_NCNAME;
+  public static final int MASK_XML11_CONTENT_INTERNAL;
+  public com.sun.org.apache.xml.internal.utils.XML11Char();
+  public static boolean isXML11Space(int);
+  public static boolean isXML11Valid(int);
+  public static boolean isXML11Invalid(int);
+  public static boolean isXML11ValidLiteral(int);
+  public static boolean isXML11Content(int);
+  public static boolean isXML11InternalEntityContent(int);
+  public static boolean isXML11NameStart(int);
+  public static boolean isXML11Name(int);
+  public static boolean isXML11NCNameStart(int);
+  public static boolean isXML11NCName(int);
+  public static boolean isXML11NameHighSurrogate(int);
+  public static boolean isXML11ValidName(java.lang.String);
+  public static boolean isXML11ValidNCName(java.lang.String);
+  public static boolean isXML11ValidNmtoken(java.lang.String);
+  public static boolean isXML11ValidQName(java.lang.String);
+  static {};
+}

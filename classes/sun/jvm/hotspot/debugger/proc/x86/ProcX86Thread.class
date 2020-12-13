@@ -1,0 +1,11 @@
+Compiled from "ProcX86Thread.java"
+public class sun.jvm.hotspot.debugger.proc.x86.ProcX86Thread implements sun.jvm.hotspot.debugger.ThreadProxy {
+  public sun.jvm.hotspot.debugger.proc.x86.ProcX86Thread(sun.jvm.hotspot.debugger.proc.ProcDebugger, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.proc.x86.ProcX86Thread(sun.jvm.hotspot.debugger.proc.ProcDebugger, long);
+  public sun.jvm.hotspot.debugger.ThreadContext getContext() throws java.lang.IllegalThreadStateException;
+  public boolean canSetContext() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public void setContext(sun.jvm.hotspot.debugger.ThreadContext) throws java.lang.IllegalThreadStateException, sun.jvm.hotspot.debugger.DebuggerException;
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

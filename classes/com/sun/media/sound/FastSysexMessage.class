@@ -1,0 +1,6 @@
+Compiled from "FastSysexMessage.java"
+final class com.sun.media.sound.FastSysexMessage extends javax.sound.midi.SysexMessage {
+  com.sun.media.sound.FastSysexMessage(byte[]) throws javax.sound.midi.InvalidMidiDataException;
+  byte[] getReadOnlyMessage();
+  public void setMessage(byte[], int) throws javax.sound.midi.InvalidMidiDataException;
+}

@@ -1,0 +1,28 @@
+Compiled from "PackageDocImpl.java"
+public class com.sun.tools.javadoc.main.PackageDocImpl extends com.sun.tools.javadoc.main.DocImpl implements com.sun.javadoc.PackageDoc {
+  public final com.sun.tools.javac.code.Symbol$PackageSymbol sym;
+  public javax.tools.FileObject docPath;
+  boolean isIncluded;
+  public boolean setDocPath;
+  public com.sun.tools.javadoc.main.PackageDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$PackageSymbol);
+  public com.sun.tools.javadoc.main.PackageDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$PackageSymbol, com.sun.source.util.TreePath);
+  void setTree(com.sun.tools.javac.tree.JCTree);
+  public void setTreePath(com.sun.source.util.TreePath);
+  protected java.lang.String documentation();
+  public void addAllClassesTo(com.sun.tools.javac.util.ListBuffer<com.sun.tools.javadoc.main.ClassDocImpl>);
+  public com.sun.javadoc.ClassDoc[] allClasses(boolean);
+  public com.sun.javadoc.ClassDoc[] allClasses();
+  public com.sun.javadoc.ClassDoc[] ordinaryClasses();
+  public com.sun.javadoc.ClassDoc[] exceptions();
+  public com.sun.javadoc.ClassDoc[] errors();
+  public com.sun.javadoc.ClassDoc[] enums();
+  public com.sun.javadoc.ClassDoc[] interfaces();
+  public com.sun.javadoc.AnnotationTypeDoc[] annotationTypes();
+  public com.sun.javadoc.AnnotationDesc[] annotations();
+  public com.sun.javadoc.ClassDoc findClass(java.lang.String);
+  public boolean isIncluded();
+  public java.lang.String name();
+  public java.lang.String qualifiedName();
+  public void setDocPath(javax.tools.FileObject);
+  public com.sun.javadoc.SourcePosition position();
+}

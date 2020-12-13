@@ -1,0 +1,6 @@
+Compiled from "HeapVisitor.java"
+public interface sun.jvm.hotspot.oops.HeapVisitor {
+  public abstract void prologue(long);
+  public abstract boolean doObj(sun.jvm.hotspot.oops.Oop);
+  public abstract void epilogue();
+}

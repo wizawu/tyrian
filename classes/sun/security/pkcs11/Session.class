@@ -1,0 +1,14 @@
+Compiled from "Session.java"
+final class sun.security.pkcs11.Session implements java.lang.Comparable<sun.security.pkcs11.Session> {
+  final sun.security.pkcs11.Token token;
+  sun.security.pkcs11.Session(sun.security.pkcs11.Token, long);
+  public int compareTo(sun.security.pkcs11.Session);
+  boolean isLive(long);
+  long idInternal();
+  long id();
+  void addObject();
+  void removeObject();
+  boolean hasObjects();
+  void close();
+  public int compareTo(java.lang.Object);
+}

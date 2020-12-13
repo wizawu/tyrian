@@ -1,0 +1,21 @@
+Compiled from "JavaFileManager.java"
+public interface javax.tools.JavaFileManager extends java.io.Closeable,java.io.Flushable,javax.tools.OptionChecker {
+  public abstract java.lang.ClassLoader getClassLoader(javax.tools.JavaFileManager$Location);
+  public abstract java.lang.Iterable<javax.tools.JavaFileObject> list(javax.tools.JavaFileManager$Location, java.lang.String, java.util.Set<javax.tools.JavaFileObject$Kind>, boolean) throws java.io.IOException;
+  public abstract java.lang.String inferBinaryName(javax.tools.JavaFileManager$Location, javax.tools.JavaFileObject);
+  public abstract boolean isSameFile(javax.tools.FileObject, javax.tools.FileObject);
+  public abstract boolean handleOption(java.lang.String, java.util.Iterator<java.lang.String>);
+  public abstract boolean hasLocation(javax.tools.JavaFileManager$Location);
+  public abstract javax.tools.JavaFileObject getJavaFileForInput(javax.tools.JavaFileManager$Location, java.lang.String, javax.tools.JavaFileObject$Kind) throws java.io.IOException;
+  public abstract javax.tools.JavaFileObject getJavaFileForOutput(javax.tools.JavaFileManager$Location, java.lang.String, javax.tools.JavaFileObject$Kind, javax.tools.FileObject) throws java.io.IOException;
+  public abstract javax.tools.FileObject getFileForInput(javax.tools.JavaFileManager$Location, java.lang.String, java.lang.String) throws java.io.IOException;
+  public abstract javax.tools.FileObject getFileForOutput(javax.tools.JavaFileManager$Location, java.lang.String, java.lang.String, javax.tools.FileObject) throws java.io.IOException;
+  public abstract void flush() throws java.io.IOException;
+  public abstract void close() throws java.io.IOException;
+  public default javax.tools.JavaFileManager$Location getLocationForModule(javax.tools.JavaFileManager$Location, java.lang.String) throws java.io.IOException;
+  public default javax.tools.JavaFileManager$Location getLocationForModule(javax.tools.JavaFileManager$Location, javax.tools.JavaFileObject) throws java.io.IOException;
+  public default <S> java.util.ServiceLoader<S> getServiceLoader(javax.tools.JavaFileManager$Location, java.lang.Class<S>) throws java.io.IOException;
+  public default java.lang.String inferModuleName(javax.tools.JavaFileManager$Location) throws java.io.IOException;
+  public default java.lang.Iterable<java.util.Set<javax.tools.JavaFileManager$Location>> listLocationsForModules(javax.tools.JavaFileManager$Location) throws java.io.IOException;
+  public default boolean contains(javax.tools.JavaFileManager$Location, javax.tools.FileObject) throws java.io.IOException;
+}

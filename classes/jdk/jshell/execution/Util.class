@@ -1,0 +1,8 @@
+Compiled from "Util.java"
+public class jdk.jshell.execution.Util {
+  public static void forwardExecutionControl(jdk.jshell.spi.ExecutionControl, java.io.ObjectInput, java.io.ObjectOutput);
+  public static void forwardExecutionControlAndIO(jdk.jshell.spi.ExecutionControl, java.io.InputStream, java.io.OutputStream, java.util.Map<java.lang.String, java.util.function.Consumer<java.io.OutputStream>>, java.util.Map<java.lang.String, java.util.function.Consumer<java.io.InputStream>>) throws java.io.IOException;
+  static java.io.OutputStream multiplexingOutputStream(java.lang.String, java.io.OutputStream);
+  public static jdk.jshell.spi.ExecutionControl remoteInputOutput(java.io.InputStream, java.io.OutputStream, java.util.Map<java.lang.String, java.io.OutputStream>, java.util.Map<java.lang.String, java.io.InputStream>, java.util.function.BiFunction<java.io.ObjectInput, java.io.ObjectOutput, jdk.jshell.spi.ExecutionControl>) throws java.io.IOException;
+  public static void detectJdiExitEvent(com.sun.jdi.VirtualMachine, java.util.function.Consumer<java.lang.String>);
+}

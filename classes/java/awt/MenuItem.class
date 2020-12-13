@@ -1,0 +1,39 @@
+Compiled from "MenuItem.java"
+public class java.awt.MenuItem extends java.awt.MenuComponent implements javax.accessibility.Accessible {
+  volatile java.lang.String label;
+  volatile long eventMask;
+  public java.awt.MenuItem() throws java.awt.HeadlessException;
+  public java.awt.MenuItem(java.lang.String) throws java.awt.HeadlessException;
+  public java.awt.MenuItem(java.lang.String, java.awt.MenuShortcut) throws java.awt.HeadlessException;
+  java.lang.String constructComponentName();
+  public void addNotify();
+  public java.lang.String getLabel();
+  public synchronized void setLabel(java.lang.String);
+  public boolean isEnabled();
+  public synchronized void setEnabled(boolean);
+  public synchronized void enable();
+  public void enable(boolean);
+  public synchronized void disable();
+  public java.awt.MenuShortcut getShortcut();
+  public void setShortcut(java.awt.MenuShortcut);
+  public void deleteShortcut();
+  void deleteShortcut(java.awt.MenuShortcut);
+  void doMenuEvent(long, int);
+  boolean handleShortcut(java.awt.event.KeyEvent);
+  java.awt.MenuItem getShortcutMenuItem(java.awt.MenuShortcut);
+  protected final void enableEvents(long);
+  protected final void disableEvents(long);
+  public void setActionCommand(java.lang.String);
+  public java.lang.String getActionCommand();
+  final java.lang.String getActionCommandImpl();
+  public synchronized void addActionListener(java.awt.event.ActionListener);
+  public synchronized void removeActionListener(java.awt.event.ActionListener);
+  public synchronized java.awt.event.ActionListener[] getActionListeners();
+  public <T extends java.util.EventListener> T[] getListeners(java.lang.Class<T>);
+  protected void processEvent(java.awt.AWTEvent);
+  boolean eventEnabled(java.awt.AWTEvent);
+  protected void processActionEvent(java.awt.event.ActionEvent);
+  public java.lang.String paramString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  static {};
+}

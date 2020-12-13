@@ -1,0 +1,22 @@
+Compiled from "ElementsTable.java"
+public class jdk.javadoc.internal.tool.ElementsTable {
+  final boolean xclasses;
+  java.util.Map<com.sun.tools.javac.code.Symbol$ModuleSymbol, java.lang.Boolean> haveModuleSourcesCache;
+  boolean haveSourceLocationWithModule;
+  javax.lang.model.util.SimpleElementVisitor9<java.lang.Boolean, java.lang.Void> visibleElementVisitor;
+  jdk.javadoc.internal.tool.ElementsTable(com.sun.tools.javac.util.Context, java.util.Map<jdk.javadoc.internal.tool.ToolOption, java.lang.Object>);
+  public jdk.javadoc.doclet.DocletEnvironment$ModuleMode getModuleMode();
+  public java.util.Set<? extends javax.lang.model.element.Element> getSpecifiedElements();
+  public java.util.Set<? extends javax.lang.model.element.Element> getIncludedElements();
+  public boolean isIncluded(javax.lang.model.element.Element);
+  void analyze() throws jdk.javadoc.internal.tool.ToolException;
+  jdk.javadoc.internal.tool.ElementsTable classTrees(com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCCompilationUnit>);
+  void sanityCheckSourcePathModules(java.util.List<java.lang.String>) throws jdk.javadoc.internal.tool.ToolException;
+  jdk.javadoc.internal.tool.ElementsTable scanSpecifiedItems() throws jdk.javadoc.internal.tool.ToolException;
+  jdk.javadoc.internal.tool.ElementsTable setClassArgList(java.util.List<java.lang.String>);
+  jdk.javadoc.internal.tool.ElementsTable setClassDeclList(java.util.List<com.sun.tools.javac.tree.JCTree$JCClassDecl>);
+  jdk.javadoc.internal.tool.ElementsTable packages(java.util.Collection<java.lang.String>);
+  java.lang.Iterable<jdk.javadoc.internal.tool.ElementsTable$ModulePackage> getPackagesToParse() throws java.io.IOException;
+  java.util.List<javax.tools.JavaFileObject> getFilesToParse() throws jdk.javadoc.internal.tool.ToolException;
+  public boolean isSelected(javax.lang.model.element.Element);
+}

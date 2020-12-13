@@ -1,0 +1,8 @@
+Compiled from "DurationDayTimeImpl.java"
+class com.sun.org.apache.xerces.internal.jaxp.datatype.DurationDayTimeImpl extends com.sun.org.apache.xerces.internal.jaxp.datatype.DurationImpl {
+  public com.sun.org.apache.xerces.internal.jaxp.datatype.DurationDayTimeImpl(boolean, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigDecimal);
+  public com.sun.org.apache.xerces.internal.jaxp.datatype.DurationDayTimeImpl(boolean, int, int, int, int);
+  protected com.sun.org.apache.xerces.internal.jaxp.datatype.DurationDayTimeImpl(java.lang.String);
+  protected com.sun.org.apache.xerces.internal.jaxp.datatype.DurationDayTimeImpl(long);
+  public float getValue();
+}

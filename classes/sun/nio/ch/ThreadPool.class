@@ -1,0 +1,11 @@
+Compiled from "ThreadPool.java"
+public class sun.nio.ch.ThreadPool {
+  java.util.concurrent.ExecutorService executor();
+  boolean isFixedThreadPool();
+  int poolSize();
+  static java.util.concurrent.ThreadFactory defaultThreadFactory();
+  static sun.nio.ch.ThreadPool getDefault();
+  static sun.nio.ch.ThreadPool createDefault();
+  static sun.nio.ch.ThreadPool create(int, java.util.concurrent.ThreadFactory);
+  public static sun.nio.ch.ThreadPool wrap(java.util.concurrent.ExecutorService, int);
+}

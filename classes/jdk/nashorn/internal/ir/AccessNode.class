@@ -1,0 +1,15 @@
+Compiled from "AccessNode.java"
+public final class jdk.nashorn.internal.ir.AccessNode extends jdk.nashorn.internal.ir.BaseNode {
+  public jdk.nashorn.internal.ir.AccessNode(long, int, jdk.nashorn.internal.ir.Expression, java.lang.String);
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public void toString(java.lang.StringBuilder, boolean);
+  public java.lang.String getProperty();
+  public jdk.nashorn.internal.ir.AccessNode setType(jdk.nashorn.internal.codegen.types.Type);
+  public jdk.nashorn.internal.ir.AccessNode setProgramPoint(int);
+  public jdk.nashorn.internal.ir.AccessNode setIsFunction();
+  public jdk.nashorn.internal.ir.AccessNode setIsSuper();
+  public jdk.nashorn.internal.ir.BaseNode setIsSuper();
+  public jdk.nashorn.internal.ir.BaseNode setIsFunction();
+  public jdk.nashorn.internal.ir.Optimistic setType(jdk.nashorn.internal.codegen.types.Type);
+  public jdk.nashorn.internal.ir.Optimistic setProgramPoint(int);
+}

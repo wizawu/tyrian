@@ -1,0 +1,11 @@
+Compiled from "JSJavaMethod.java"
+public class sun.jvm.hotspot.utilities.soql.JSJavaMethod extends sun.jvm.hotspot.utilities.soql.JSMetadata {
+  public sun.jvm.hotspot.utilities.soql.JSJavaMethod(sun.jvm.hotspot.oops.Method, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
+  public final sun.jvm.hotspot.oops.Method getMethod();
+  public java.lang.Object get(java.lang.String);
+  public java.lang.Object[] getIds();
+  public boolean has(java.lang.String);
+  public void put(java.lang.String, java.lang.Object);
+  public java.lang.String toString();
+  static {};
+}

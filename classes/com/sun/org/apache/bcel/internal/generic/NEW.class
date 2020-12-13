@@ -1,0 +1,8 @@
+Compiled from "NEW.java"
+public class com.sun.org.apache.bcel.internal.generic.NEW extends com.sun.org.apache.bcel.internal.generic.CPInstruction implements com.sun.org.apache.bcel.internal.generic.LoadClass,com.sun.org.apache.bcel.internal.generic.AllocationInstruction,com.sun.org.apache.bcel.internal.generic.ExceptionThrower,com.sun.org.apache.bcel.internal.generic.StackProducer {
+  com.sun.org.apache.bcel.internal.generic.NEW();
+  public com.sun.org.apache.bcel.internal.generic.NEW(int);
+  public java.lang.Class<?>[] getExceptions();
+  public com.sun.org.apache.bcel.internal.generic.ObjectType getLoadClassType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

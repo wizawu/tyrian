@@ -1,0 +1,6 @@
+Compiled from "SignerOutputStream.java"
+public class org.jcp.xml.dsig.internal.SignerOutputStream extends java.io.ByteArrayOutputStream {
+  public org.jcp.xml.dsig.internal.SignerOutputStream(java.security.Signature);
+  public void write(int);
+  public void write(byte[], int, int);
+}

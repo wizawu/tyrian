@@ -1,0 +1,36 @@
+Compiled from "Utils.java"
+class com.sun.java.util.jar.pack.Utils {
+  static final java.lang.String COM_PREFIX;
+  static final java.lang.String METAINF;
+  static final java.lang.String DEBUG_VERBOSE;
+  static final java.lang.String DEBUG_DISABLE_NATIVE;
+  static final java.lang.String UNPACK_MODIFICATION_TIME;
+  static final java.lang.String UNPACK_STRIP_DEBUG;
+  static final java.lang.String UNPACK_REMOVE_PACKFILE;
+  static final java.lang.String NOW;
+  static final java.lang.String PACK_KEEP_CLASS_ORDER;
+  static final java.lang.String PACK_ZIP_ARCHIVE_MARKER_COMMENT;
+  static final java.lang.String CLASS_FORMAT_ERROR;
+  static final java.lang.ThreadLocal<com.sun.java.util.jar.pack.TLGlobals> currentInstance;
+  static final boolean nolog;
+  static final boolean SORT_MEMBERS_DESCR_MAJOR;
+  static final boolean SORT_HANDLES_KIND_MAJOR;
+  static final boolean SORT_INDY_BSS_MAJOR;
+  static final boolean SORT_BSS_BSM_MAJOR;
+  static final com.sun.java.util.jar.pack.Utils$Pack200Logger log;
+  static com.sun.java.util.jar.pack.TLGlobals getTLGlobals();
+  static com.sun.java.util.jar.pack.PropMap currentPropMap();
+  static java.lang.String getVersionString();
+  static void markJarFile(java.util.jar.JarOutputStream) throws java.io.IOException;
+  static void copyJarFile(java.util.jar.JarInputStream, java.util.jar.JarOutputStream) throws java.io.IOException;
+  static void copyJarFile(java.util.jar.JarFile, java.util.jar.JarOutputStream) throws java.io.IOException;
+  static void copyJarFile(java.util.jar.JarInputStream, java.io.OutputStream) throws java.io.IOException;
+  static void copyJarFile(java.util.jar.JarFile, java.io.OutputStream) throws java.io.IOException;
+  static java.lang.String getJarEntryName(java.lang.String);
+  static java.lang.String zeString(java.util.zip.ZipEntry);
+  static byte[] readMagic(java.io.BufferedInputStream) throws java.io.IOException;
+  static boolean isJarMagic(byte[]);
+  static boolean isPackMagic(byte[]);
+  static boolean isGZIPMagic(byte[]);
+  static {};
+}

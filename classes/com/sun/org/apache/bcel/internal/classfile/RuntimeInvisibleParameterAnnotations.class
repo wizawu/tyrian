@@ -1,0 +1,4 @@
+Compiled from "RuntimeInvisibleParameterAnnotations.java"
+public class com.sun.org.apache.bcel.internal.classfile.RuntimeInvisibleParameterAnnotations extends com.sun.org.apache.bcel.internal.classfile.ParameterAnnotations {
+  public com.sun.org.apache.bcel.internal.classfile.RuntimeInvisibleParameterAnnotations(int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
+}

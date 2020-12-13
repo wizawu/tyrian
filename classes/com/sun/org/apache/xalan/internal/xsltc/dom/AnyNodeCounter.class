@@ -1,0 +1,8 @@
+Compiled from "AnyNodeCounter.java"
+public abstract class com.sun.org.apache.xalan.internal.xsltc.dom.AnyNodeCounter extends com.sun.org.apache.xalan.internal.xsltc.dom.NodeCounter {
+  public com.sun.org.apache.xalan.internal.xsltc.dom.AnyNodeCounter(com.sun.org.apache.xalan.internal.xsltc.Translet, com.sun.org.apache.xalan.internal.xsltc.DOM, com.sun.org.apache.xml.internal.dtm.DTMAxisIterator);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.AnyNodeCounter(com.sun.org.apache.xalan.internal.xsltc.Translet, com.sun.org.apache.xalan.internal.xsltc.DOM, com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, boolean);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.NodeCounter setStartNode(int);
+  public java.lang.String getCounter();
+  public static com.sun.org.apache.xalan.internal.xsltc.dom.NodeCounter getDefaultNodeCounter(com.sun.org.apache.xalan.internal.xsltc.Translet, com.sun.org.apache.xalan.internal.xsltc.DOM, com.sun.org.apache.xml.internal.dtm.DTMAxisIterator);
+}

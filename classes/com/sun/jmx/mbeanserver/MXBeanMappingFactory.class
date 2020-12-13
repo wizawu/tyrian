@@ -1,0 +1,7 @@
+Compiled from "MXBeanMappingFactory.java"
+public abstract class com.sun.jmx.mbeanserver.MXBeanMappingFactory {
+  public static final com.sun.jmx.mbeanserver.MXBeanMappingFactory DEFAULT;
+  protected com.sun.jmx.mbeanserver.MXBeanMappingFactory();
+  public abstract com.sun.jmx.mbeanserver.MXBeanMapping mappingForType(java.lang.reflect.Type, com.sun.jmx.mbeanserver.MXBeanMappingFactory) throws javax.management.openmbean.OpenDataException;
+  static {};
+}

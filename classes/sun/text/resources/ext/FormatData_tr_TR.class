@@ -1,0 +1,5 @@
+Compiled from "FormatData_tr_TR.java"
+public class sun.text.resources.ext.FormatData_tr_TR extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_tr_TR();
+  protected final java.lang.Object[][] getContents();
+}

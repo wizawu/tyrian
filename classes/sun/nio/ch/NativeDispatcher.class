@@ -1,0 +1,13 @@
+Compiled from "NativeDispatcher.java"
+abstract class sun.nio.ch.NativeDispatcher {
+  sun.nio.ch.NativeDispatcher();
+  abstract int read(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  boolean needsPositionLock();
+  int pread(java.io.FileDescriptor, long, int, long) throws java.io.IOException;
+  abstract long readv(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  abstract int write(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  int pwrite(java.io.FileDescriptor, long, int, long) throws java.io.IOException;
+  abstract long writev(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  abstract void close(java.io.FileDescriptor) throws java.io.IOException;
+  void preClose(java.io.FileDescriptor) throws java.io.IOException;
+}

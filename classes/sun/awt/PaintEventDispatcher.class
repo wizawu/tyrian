@@ -1,0 +1,9 @@
+Compiled from "PaintEventDispatcher.java"
+public class sun.awt.PaintEventDispatcher {
+  public sun.awt.PaintEventDispatcher();
+  public static void setPaintEventDispatcher(sun.awt.PaintEventDispatcher);
+  public static sun.awt.PaintEventDispatcher getPaintEventDispatcher();
+  public java.awt.event.PaintEvent createPaintEvent(java.awt.Component, int, int, int, int);
+  public boolean shouldDoNativeBackgroundErase(java.awt.Component);
+  public boolean queueSurfaceDataReplacing(java.awt.Component, java.lang.Runnable);
+}

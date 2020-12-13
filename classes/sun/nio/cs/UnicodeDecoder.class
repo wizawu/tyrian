@@ -1,0 +1,12 @@
+Compiled from "UnicodeDecoder.java"
+abstract class sun.nio.cs.UnicodeDecoder extends java.nio.charset.CharsetDecoder {
+  protected static final char BYTE_ORDER_MARK;
+  protected static final char REVERSED_MARK;
+  protected static final int NONE;
+  protected static final int BIG;
+  protected static final int LITTLE;
+  public sun.nio.cs.UnicodeDecoder(java.nio.charset.Charset, int);
+  public sun.nio.cs.UnicodeDecoder(java.nio.charset.Charset, int, int);
+  protected java.nio.charset.CoderResult decodeLoop(java.nio.ByteBuffer, java.nio.CharBuffer);
+  protected void implReset();
+}

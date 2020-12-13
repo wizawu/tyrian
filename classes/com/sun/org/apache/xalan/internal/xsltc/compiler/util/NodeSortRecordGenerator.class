@@ -1,0 +1,6 @@
+Compiled from "NodeSortRecordGenerator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.NodeSortRecordGenerator extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.NodeSortRecordGenerator(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String[], com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet);
+  public com.sun.org.apache.bcel.internal.generic.Instruction loadTranslet();
+  public boolean isExternal();
+}

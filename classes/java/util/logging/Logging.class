@@ -1,0 +1,9 @@
+Compiled from "Logging.java"
+final class java.util.logging.Logging implements java.util.logging.LoggingMXBean {
+  public java.util.List<java.lang.String> getLoggerNames();
+  public java.lang.String getLoggerLevel(java.lang.String);
+  public void setLoggerLevel(java.lang.String, java.lang.String);
+  public java.lang.String getParentLoggerName(java.lang.String);
+  static java.util.logging.Logging getInstance();
+  static {};
+}

@@ -1,0 +1,17 @@
+Compiled from "FileDescriptor.java"
+public final class java.io.FileDescriptor {
+  public static final java.io.FileDescriptor in;
+  public static final java.io.FileDescriptor out;
+  public static final java.io.FileDescriptor err;
+  public java.io.FileDescriptor();
+  public boolean valid();
+  public native void sync() throws java.io.SyncFailedException;
+  synchronized void set(int);
+  void setHandle(long);
+  synchronized void registerCleanup(jdk.internal.ref.PhantomCleanable<java.io.FileDescriptor>);
+  synchronized void unregisterCleanup();
+  synchronized void close() throws java.io.IOException;
+  synchronized void attach(java.io.Closeable);
+  synchronized void closeAll(java.io.Closeable) throws java.io.IOException;
+  static {};
+}

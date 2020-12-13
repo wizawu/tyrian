@@ -1,0 +1,35 @@
+Compiled from "RegionClipSpanIterator.java"
+public class sun.java2d.pipe.RegionClipSpanIterator implements sun.java2d.pipe.SpanIterator {
+  sun.java2d.pipe.Region rgn;
+  sun.java2d.pipe.SpanIterator spanIter;
+  sun.java2d.pipe.RegionIterator resetState;
+  sun.java2d.pipe.RegionIterator lwm;
+  sun.java2d.pipe.RegionIterator row;
+  sun.java2d.pipe.RegionIterator box;
+  int spanlox;
+  int spanhix;
+  int spanloy;
+  int spanhiy;
+  int lwmloy;
+  int lwmhiy;
+  int rgnlox;
+  int rgnloy;
+  int rgnhix;
+  int rgnhiy;
+  int rgnbndslox;
+  int rgnbndsloy;
+  int rgnbndshix;
+  int rgnbndshiy;
+  int[] rgnbox;
+  int[] spanbox;
+  boolean doNextSpan;
+  boolean doNextBox;
+  boolean done;
+  public sun.java2d.pipe.RegionClipSpanIterator(sun.java2d.pipe.Region, sun.java2d.pipe.SpanIterator);
+  public void getPathBox(int[]);
+  public void intersectClipBox(int, int, int, int);
+  public boolean nextSpan(int[]);
+  public void skipDownTo(int);
+  public long getNativeIterator();
+  protected void finalize();
+}

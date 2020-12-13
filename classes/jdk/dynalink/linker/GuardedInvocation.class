@@ -1,0 +1,25 @@
+Compiled from "GuardedInvocation.java"
+public class jdk.dynalink.linker.GuardedInvocation {
+  public jdk.dynalink.linker.GuardedInvocation(java.lang.invoke.MethodHandle);
+  public jdk.dynalink.linker.GuardedInvocation(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
+  public jdk.dynalink.linker.GuardedInvocation(java.lang.invoke.MethodHandle, java.lang.invoke.SwitchPoint);
+  public jdk.dynalink.linker.GuardedInvocation(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle, java.lang.invoke.SwitchPoint);
+  public jdk.dynalink.linker.GuardedInvocation(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle, java.lang.invoke.SwitchPoint, java.lang.Class<? extends java.lang.Throwable>);
+  public jdk.dynalink.linker.GuardedInvocation(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle, java.lang.invoke.SwitchPoint[], java.lang.Class<? extends java.lang.Throwable>);
+  public java.lang.invoke.MethodHandle getInvocation();
+  public java.lang.invoke.MethodHandle getGuard();
+  public java.lang.invoke.SwitchPoint[] getSwitchPoints();
+  public java.lang.Class<? extends java.lang.Throwable> getException();
+  public boolean hasBeenInvalidated();
+  public jdk.dynalink.linker.GuardedInvocation replaceMethods(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
+  public jdk.dynalink.linker.GuardedInvocation addSwitchPoint(java.lang.invoke.SwitchPoint);
+  public jdk.dynalink.linker.GuardedInvocation asType(java.lang.invoke.MethodType);
+  public jdk.dynalink.linker.GuardedInvocation asType(jdk.dynalink.linker.LinkerServices, java.lang.invoke.MethodType);
+  public jdk.dynalink.linker.GuardedInvocation asTypeSafeReturn(jdk.dynalink.linker.LinkerServices, java.lang.invoke.MethodType);
+  public jdk.dynalink.linker.GuardedInvocation asType(jdk.dynalink.CallSiteDescriptor);
+  public jdk.dynalink.linker.GuardedInvocation filterArguments(int, java.lang.invoke.MethodHandle...);
+  public jdk.dynalink.linker.GuardedInvocation dropArguments(int, java.util.List<java.lang.Class<?>>);
+  public jdk.dynalink.linker.GuardedInvocation dropArguments(int, java.lang.Class<?>...);
+  public java.lang.invoke.MethodHandle compose(java.lang.invoke.MethodHandle);
+  public java.lang.invoke.MethodHandle compose(java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
+}

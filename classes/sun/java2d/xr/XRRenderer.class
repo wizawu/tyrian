@@ -1,0 +1,25 @@
+Compiled from "XRRenderer.java"
+public class sun.java2d.xr.XRRenderer implements sun.java2d.pipe.PixelDrawPipe,sun.java2d.pipe.PixelFillPipe,sun.java2d.pipe.ShapeDrawPipe {
+  sun.java2d.xr.XRRenderer$XRDrawHandler drawHandler;
+  sun.java2d.xr.MaskTileManager tileManager;
+  sun.java2d.xr.XRDrawLine lineGen;
+  sun.java2d.xr.GrowableRectArray rectBuffer;
+  public sun.java2d.xr.XRRenderer(sun.java2d.xr.MaskTileManager);
+  public void drawLine(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void drawRect(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void drawPolyline(sun.java2d.SunGraphics2D, int[], int[], int);
+  public void drawPolygon(sun.java2d.SunGraphics2D, int[], int[], int);
+  public void fillRect(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void fillPolygon(sun.java2d.SunGraphics2D, int[], int[], int);
+  public void drawRoundRect(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public void fillRoundRect(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public void drawOval(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void fillOval(sun.java2d.SunGraphics2D, int, int, int, int);
+  public void drawArc(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public void fillArc(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  protected void drawPath(sun.java2d.SunGraphics2D, java.awt.geom.Path2D$Float, int, int);
+  protected void fillPath(sun.java2d.SunGraphics2D, java.awt.geom.Path2D$Float, int, int);
+  protected void fillSpans(sun.java2d.SunGraphics2D, sun.java2d.pipe.SpanIterator, int, int);
+  public void draw(sun.java2d.SunGraphics2D, java.awt.Shape);
+  public void fill(sun.java2d.SunGraphics2D, java.awt.Shape);
+}

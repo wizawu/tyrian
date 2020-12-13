@@ -1,0 +1,6 @@
+Compiled from "OptionalArgumentOptionSpec.java"
+class jdk.internal.joptsimple.OptionalArgumentOptionSpec<V> extends jdk.internal.joptsimple.ArgumentAcceptingOptionSpec<V> {
+  jdk.internal.joptsimple.OptionalArgumentOptionSpec(java.lang.String);
+  jdk.internal.joptsimple.OptionalArgumentOptionSpec(java.util.List<java.lang.String>, java.lang.String);
+  protected void detectOptionArgument(jdk.internal.joptsimple.OptionParser, jdk.internal.joptsimple.ArgumentList, jdk.internal.joptsimple.OptionSet);
+}

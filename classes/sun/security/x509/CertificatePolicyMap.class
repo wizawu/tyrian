@@ -1,0 +1,9 @@
+Compiled from "CertificatePolicyMap.java"
+public class sun.security.x509.CertificatePolicyMap {
+  public sun.security.x509.CertificatePolicyMap(sun.security.x509.CertificatePolicyId, sun.security.x509.CertificatePolicyId);
+  public sun.security.x509.CertificatePolicyMap(sun.security.util.DerValue) throws java.io.IOException;
+  public sun.security.x509.CertificatePolicyId getIssuerIdentifier();
+  public sun.security.x509.CertificatePolicyId getSubjectIdentifier();
+  public java.lang.String toString();
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+}

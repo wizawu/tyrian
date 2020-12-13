@@ -1,0 +1,5 @@
+Compiled from "NotInHeapException.java"
+public class sun.jvm.hotspot.debugger.NotInHeapException extends sun.jvm.hotspot.debugger.AddressException {
+  public sun.jvm.hotspot.debugger.NotInHeapException(long);
+  public sun.jvm.hotspot.debugger.NotInHeapException(java.lang.String, long);
+}

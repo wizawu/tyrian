@@ -1,0 +1,7 @@
+Compiled from "OpenBook.java"
+class sun.print.OpenBook implements java.awt.print.Pageable {
+  sun.print.OpenBook(java.awt.print.PageFormat, java.awt.print.Printable);
+  public int getNumberOfPages();
+  public java.awt.print.PageFormat getPageFormat(int);
+  public java.awt.print.Printable getPrintable(int) throws java.lang.IndexOutOfBoundsException;
+}

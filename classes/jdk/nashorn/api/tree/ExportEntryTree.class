@@ -1,0 +1,7 @@
+Compiled from "ExportEntryTree.java"
+public interface jdk.nashorn.api.tree.ExportEntryTree extends jdk.nashorn.api.tree.Tree {
+  public abstract jdk.nashorn.api.tree.IdentifierTree getExportName();
+  public abstract jdk.nashorn.api.tree.IdentifierTree getModuleRequest();
+  public abstract jdk.nashorn.api.tree.IdentifierTree getImportName();
+  public abstract jdk.nashorn.api.tree.IdentifierTree getLocalName();
+}

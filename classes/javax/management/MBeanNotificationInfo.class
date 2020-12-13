@@ -1,0 +1,13 @@
+Compiled from "MBeanNotificationInfo.java"
+public class javax.management.MBeanNotificationInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
+  static final long serialVersionUID;
+  static final javax.management.MBeanNotificationInfo[] NO_NOTIFICATIONS;
+  public javax.management.MBeanNotificationInfo(java.lang.String[], java.lang.String, java.lang.String);
+  public javax.management.MBeanNotificationInfo(java.lang.String[], java.lang.String, java.lang.String, javax.management.Descriptor);
+  public java.lang.Object clone();
+  public java.lang.String[] getNotifTypes();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

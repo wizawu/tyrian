@@ -1,0 +1,9 @@
+Compiled from "HTMLFrameHyperlinkEvent.java"
+public class javax.swing.text.html.HTMLFrameHyperlinkEvent extends javax.swing.event.HyperlinkEvent {
+  public javax.swing.text.html.HTMLFrameHyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String);
+  public javax.swing.text.html.HTMLFrameHyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String, java.lang.String);
+  public javax.swing.text.html.HTMLFrameHyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, javax.swing.text.Element, java.lang.String);
+  public javax.swing.text.html.HTMLFrameHyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String, javax.swing.text.Element, java.lang.String);
+  public javax.swing.text.html.HTMLFrameHyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String, javax.swing.text.Element, java.awt.event.InputEvent, java.lang.String);
+  public java.lang.String getTarget();
+}

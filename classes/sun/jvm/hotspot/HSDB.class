@@ -1,0 +1,20 @@
+Compiled from "HSDB.java"
+public class sun.jvm.hotspot.HSDB implements sun.jvm.hotspot.ui.ObjectHistogramPanel$Listener,sun.jvm.hotspot.ui.SAListener {
+  public static void main(java.lang.String[]);
+  public sun.jvm.hotspot.HSDB(sun.jvm.hotspot.debugger.JVMDebugger);
+  public void run();
+  public void showThreadOopInspector(sun.jvm.hotspot.runtime.JavaThread);
+  public void showInspector(sun.jvm.hotspot.ui.tree.SimpleTreeNode);
+  public void showLiveness(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.utilities.LivenessPathList);
+  public void showThreadStackMemory(sun.jvm.hotspot.runtime.JavaThread);
+  public void showObjectsOfType(sun.jvm.hotspot.oops.Klass);
+  public void showThreadInfo(sun.jvm.hotspot.runtime.JavaThread);
+  public void showJavaStackTrace(sun.jvm.hotspot.runtime.JavaThread);
+  public void showClassBrowser();
+  public void showCodeViewer();
+  public void showCodeViewer(sun.jvm.hotspot.debugger.Address);
+  public void showMemoryViewer();
+  public void showCommandLineFlags();
+  public void showVMVersion();
+  public void showSystemProperties();
+}

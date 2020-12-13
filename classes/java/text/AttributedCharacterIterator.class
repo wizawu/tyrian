@@ -1,0 +1,12 @@
+Compiled from "AttributedCharacterIterator.java"
+public interface java.text.AttributedCharacterIterator extends java.text.CharacterIterator {
+  public abstract int getRunStart();
+  public abstract int getRunStart(java.text.AttributedCharacterIterator$Attribute);
+  public abstract int getRunStart(java.util.Set<? extends java.text.AttributedCharacterIterator$Attribute>);
+  public abstract int getRunLimit();
+  public abstract int getRunLimit(java.text.AttributedCharacterIterator$Attribute);
+  public abstract int getRunLimit(java.util.Set<? extends java.text.AttributedCharacterIterator$Attribute>);
+  public abstract java.util.Map<java.text.AttributedCharacterIterator$Attribute, java.lang.Object> getAttributes();
+  public abstract java.lang.Object getAttribute(java.text.AttributedCharacterIterator$Attribute);
+  public abstract java.util.Set<java.text.AttributedCharacterIterator$Attribute> getAllAttributeKeys();
+}

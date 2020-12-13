@@ -1,0 +1,9 @@
+Compiled from "WeakRef.java"
+class sun.rmi.transport.WeakRef extends java.lang.ref.WeakReference<java.lang.Object> {
+  public sun.rmi.transport.WeakRef(java.lang.Object);
+  public sun.rmi.transport.WeakRef(java.lang.Object, java.lang.ref.ReferenceQueue<java.lang.Object>);
+  public synchronized void pin();
+  public synchronized void unpin();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

@@ -1,0 +1,6 @@
+Compiled from "AmbiguousClass.java"
+public class sun.tools.java.AmbiguousClass extends sun.tools.java.ClassNotFound {
+  public sun.tools.java.Identifier name1;
+  public sun.tools.java.Identifier name2;
+  public sun.tools.java.AmbiguousClass(sun.tools.java.Identifier, sun.tools.java.Identifier);
+}

@@ -1,0 +1,15 @@
+Compiled from "NamespaceContext.java"
+public interface com.sun.org.apache.xerces.internal.xni.NamespaceContext {
+  public static final java.lang.String XML_URI;
+  public static final java.lang.String XMLNS_URI;
+  public abstract void pushContext();
+  public abstract void popContext();
+  public abstract boolean declarePrefix(java.lang.String, java.lang.String);
+  public abstract java.lang.String getURI(java.lang.String);
+  public abstract java.lang.String getPrefix(java.lang.String);
+  public abstract int getDeclaredPrefixCount();
+  public abstract java.lang.String getDeclaredPrefixAt(int);
+  public abstract java.util.Enumeration<java.lang.String> getAllPrefixes();
+  public abstract void reset();
+  static {};
+}

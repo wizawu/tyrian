@@ -1,0 +1,4 @@
+Compiled from "CountingPrintable.java"
+public interface sun.swing.text.CountingPrintable extends java.awt.print.Printable {
+  public abstract int getNumberOfPages();
+}

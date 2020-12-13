@@ -1,0 +1,15 @@
+Compiled from "Control.java"
+public abstract class jdk.jfr.internal.Control {
+  public jdk.jfr.internal.Control(java.security.AccessControlContext);
+  public jdk.jfr.internal.Control(java.lang.String);
+  public abstract java.lang.String combine(java.util.Set<java.lang.String>);
+  public abstract void setValue(java.lang.String);
+  public abstract java.lang.String getValue();
+  final void apply(java.util.Set<java.lang.String>);
+  final void setDefault();
+  final java.lang.String getValueSafe();
+  final void setValueSafe(java.lang.String);
+  final java.lang.String getDefaultValue();
+  final java.lang.String getLastValue();
+  public final java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+}

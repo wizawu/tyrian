@@ -1,0 +1,34 @@
+Compiled from "CanonicalizerBase.java"
+public abstract class com.sun.org.apache.xml.internal.security.c14n.implementations.CanonicalizerBase extends com.sun.org.apache.xml.internal.security.c14n.CanonicalizerSpi {
+  public static final java.lang.String XML;
+  public static final java.lang.String XMLNS;
+  public static final java.lang.String XMLNS_URI;
+  public static final java.lang.String XML_LANG_URI;
+  protected static final com.sun.org.apache.xml.internal.security.c14n.helper.AttrCompare COMPARE;
+  protected static final int NODE_BEFORE_DOCUMENT_ELEMENT;
+  protected static final int NODE_NOT_BEFORE_OR_AFTER_DOCUMENT_ELEMENT;
+  protected static final int NODE_AFTER_DOCUMENT_ELEMENT;
+  public com.sun.org.apache.xml.internal.security.c14n.implementations.CanonicalizerBase(boolean);
+  public byte[] engineCanonicalizeSubTree(org.w3c.dom.Node) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] engineCanonicalizeXPathNodeSet(java.util.Set<org.w3c.dom.Node>) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public byte[] engineCanonicalize(com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public void setWriter(java.io.OutputStream);
+  protected java.io.OutputStream getWriter();
+  protected byte[] engineCanonicalizeSubTree(org.w3c.dom.Node, org.w3c.dom.Node) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  protected final void canonicalizeSubTree(org.w3c.dom.Node, com.sun.org.apache.xml.internal.security.c14n.implementations.NameSpaceSymbTable, org.w3c.dom.Node, int) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, java.io.IOException;
+  protected final void canonicalizeXPathNodeSet(org.w3c.dom.Node, org.w3c.dom.Node) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, java.io.IOException;
+  protected int isVisibleDO(org.w3c.dom.Node, int);
+  protected int isVisibleInt(org.w3c.dom.Node);
+  protected boolean isVisible(org.w3c.dom.Node);
+  protected void handleParent(org.w3c.dom.Element, com.sun.org.apache.xml.internal.security.c14n.implementations.NameSpaceSymbTable);
+  protected final void getParentNameSpaces(org.w3c.dom.Element, com.sun.org.apache.xml.internal.security.c14n.implementations.NameSpaceSymbTable);
+  abstract void outputAttributes(org.w3c.dom.Element, com.sun.org.apache.xml.internal.security.c14n.implementations.NameSpaceSymbTable, java.util.Map<java.lang.String, byte[]>) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, org.w3c.dom.DOMException, java.io.IOException;
+  abstract void outputAttributesSubtree(org.w3c.dom.Element, com.sun.org.apache.xml.internal.security.c14n.implementations.NameSpaceSymbTable, java.util.Map<java.lang.String, byte[]>) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, org.w3c.dom.DOMException, java.io.IOException;
+  abstract void circumventBugIfNeeded(com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, javax.xml.parsers.ParserConfigurationException, java.io.IOException, org.xml.sax.SAXException;
+  protected static final void outputAttrToWriter(java.lang.String, java.lang.String, java.io.OutputStream, java.util.Map<java.lang.String, byte[]>) throws java.io.IOException;
+  protected void outputPItoWriter(org.w3c.dom.ProcessingInstruction, java.io.OutputStream, int) throws java.io.IOException;
+  protected void outputCommentToWriter(org.w3c.dom.Comment, java.io.OutputStream, int) throws java.io.IOException;
+  protected static final void outputTextToWriter(java.lang.String, java.io.OutputStream) throws java.io.IOException;
+  protected org.w3c.dom.Attr getNullNode(org.w3c.dom.Document);
+  static {};
+}

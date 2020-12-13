@@ -1,0 +1,4 @@
+Compiled from "ImageFetchable.java"
+public interface sun.awt.image.ImageFetchable {
+  public abstract void doFetch();
+}

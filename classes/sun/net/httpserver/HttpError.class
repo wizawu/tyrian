@@ -1,0 +1,4 @@
+Compiled from "HttpError.java"
+class sun.net.httpserver.HttpError extends java.lang.RuntimeException {
+  public sun.net.httpserver.HttpError(java.lang.String);
+}

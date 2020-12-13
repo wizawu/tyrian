@@ -1,0 +1,12 @@
+Compiled from "RewriteUri.java"
+final class javax.xml.catalog.RewriteUri extends javax.xml.catalog.BaseEntry {
+  java.lang.String uriStartString;
+  java.net.URL rewritePrefix;
+  public javax.xml.catalog.RewriteUri(java.lang.String, java.lang.String, java.lang.String);
+  public void setURIStartString(java.lang.String);
+  public void setRewritePrefix(java.lang.String);
+  public java.lang.String getURIStartString();
+  public java.net.URL getRewritePrefix();
+  public java.lang.String match(java.lang.String, int);
+  public java.lang.String match(java.lang.String);
+}

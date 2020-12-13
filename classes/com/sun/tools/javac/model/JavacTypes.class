@@ -1,0 +1,26 @@
+Compiled from "JavacTypes.java"
+public class com.sun.tools.javac.model.JavacTypes implements javax.lang.model.util.Types {
+  public static com.sun.tools.javac.model.JavacTypes instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.model.JavacTypes(com.sun.tools.javac.util.Context);
+  public javax.lang.model.element.Element asElement(javax.lang.model.type.TypeMirror);
+  public boolean isSameType(javax.lang.model.type.TypeMirror, javax.lang.model.type.TypeMirror);
+  public boolean isSubtype(javax.lang.model.type.TypeMirror, javax.lang.model.type.TypeMirror);
+  public boolean isAssignable(javax.lang.model.type.TypeMirror, javax.lang.model.type.TypeMirror);
+  public boolean contains(javax.lang.model.type.TypeMirror, javax.lang.model.type.TypeMirror);
+  public boolean isSubsignature(javax.lang.model.type.ExecutableType, javax.lang.model.type.ExecutableType);
+  public java.util.List<com.sun.tools.javac.code.Type> directSupertypes(javax.lang.model.type.TypeMirror);
+  public javax.lang.model.type.TypeMirror erasure(javax.lang.model.type.TypeMirror);
+  public javax.lang.model.element.TypeElement boxedClass(javax.lang.model.type.PrimitiveType);
+  public javax.lang.model.type.PrimitiveType unboxedType(javax.lang.model.type.TypeMirror);
+  public javax.lang.model.type.TypeMirror capture(javax.lang.model.type.TypeMirror);
+  public javax.lang.model.type.PrimitiveType getPrimitiveType(javax.lang.model.type.TypeKind);
+  public javax.lang.model.type.NullType getNullType();
+  public javax.lang.model.type.NoType getNoType(javax.lang.model.type.TypeKind);
+  public javax.lang.model.type.ArrayType getArrayType(javax.lang.model.type.TypeMirror);
+  public javax.lang.model.type.WildcardType getWildcardType(javax.lang.model.type.TypeMirror, javax.lang.model.type.TypeMirror);
+  public javax.lang.model.type.DeclaredType getDeclaredType(javax.lang.model.element.TypeElement, javax.lang.model.type.TypeMirror...);
+  public javax.lang.model.type.DeclaredType getDeclaredType(javax.lang.model.type.DeclaredType, javax.lang.model.element.TypeElement, javax.lang.model.type.TypeMirror...);
+  public javax.lang.model.type.TypeMirror asMemberOf(javax.lang.model.type.DeclaredType, javax.lang.model.element.Element);
+  public java.util.Set<com.sun.tools.javac.code.Symbol$MethodSymbol> getOverriddenMethods(javax.lang.model.element.Element);
+  static {};
+}

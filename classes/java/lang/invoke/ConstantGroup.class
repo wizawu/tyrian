@@ -1,0 +1,15 @@
+Compiled from "ConstantGroup.java"
+interface java.lang.invoke.ConstantGroup {
+  public abstract int size();
+  public abstract java.lang.Object get(int) throws java.lang.LinkageError;
+  public abstract java.lang.Object get(int, java.lang.Object);
+  public abstract boolean isPresent(int);
+  public default java.util.List<java.lang.Object> asList();
+  public default java.util.List<java.lang.Object> asList(java.lang.Object);
+  public default java.lang.invoke.ConstantGroup subGroup(int, int);
+  public default int copyConstants(int, int, java.lang.Object[], int) throws java.lang.LinkageError;
+  public default int copyConstants(int, int, java.lang.Object[], int, java.lang.Object);
+  public static java.lang.invoke.ConstantGroup makeConstantGroup(java.util.List<java.lang.Object>, java.lang.Object, java.util.function.IntFunction<java.lang.Object>);
+  public static java.lang.invoke.ConstantGroup makeConstantGroup(java.util.List<java.lang.Object>);
+  static {};
+}

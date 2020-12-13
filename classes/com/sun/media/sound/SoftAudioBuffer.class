@@ -1,0 +1,11 @@
+Compiled from "SoftAudioBuffer.java"
+public final class com.sun.media.sound.SoftAudioBuffer {
+  public com.sun.media.sound.SoftAudioBuffer(int, javax.sound.sampled.AudioFormat);
+  public void swap(com.sun.media.sound.SoftAudioBuffer);
+  public javax.sound.sampled.AudioFormat getFormat();
+  public int getSize();
+  public void clear();
+  public boolean isSilent();
+  public float[] array();
+  public void get(byte[], int);
+}

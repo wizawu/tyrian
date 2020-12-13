@@ -1,0 +1,34 @@
+Compiled from "RecordingInput.java"
+public final class jdk.jfr.internal.consumer.RecordingInput implements java.io.DataInput,java.lang.AutoCloseable {
+  public static final byte STRING_ENCODING_NULL;
+  public static final byte STRING_ENCODING_EMPTY_STRING;
+  public static final byte STRING_ENCODING_CONSTANT_POOL;
+  public static final byte STRING_ENCODING_UTF8_BYTE_ARRAY;
+  public static final byte STRING_ENCODING_CHAR_ARRAY;
+  public static final byte STRING_ENCODING_LATIN1_BYTE_ARRAY;
+  public jdk.jfr.internal.consumer.RecordingInput(java.io.File) throws java.io.IOException;
+  public final byte readByte() throws java.io.IOException;
+  public final void readFully(byte[], int, int) throws java.io.IOException;
+  public final void readFully(byte[]) throws java.io.IOException;
+  public final short readRawShort() throws java.io.IOException;
+  public final double readDouble() throws java.io.IOException;
+  public final float readFloat() throws java.io.IOException;
+  public final int readRawInt() throws java.io.IOException;
+  public final long readRawLong() throws java.io.IOException;
+  public final long position() throws java.io.IOException;
+  public final void position(long) throws java.io.IOException;
+  public final long size() throws java.io.IOException;
+  public final void close() throws java.io.IOException;
+  public final int skipBytes(int) throws java.io.IOException;
+  public final boolean readBoolean() throws java.io.IOException;
+  public int readUnsignedByte() throws java.io.IOException;
+  public int readUnsignedShort() throws java.io.IOException;
+  public final java.lang.String readLine() throws java.io.IOException;
+  public java.lang.String readUTF() throws java.io.IOException;
+  public java.lang.String readEncodedString(byte) throws java.io.IOException;
+  public char readChar() throws java.io.IOException;
+  public short readShort() throws java.io.IOException;
+  public int readInt() throws java.io.IOException;
+  public long readLong() throws java.io.IOException;
+  static {};
+}

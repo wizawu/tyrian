@@ -1,0 +1,10 @@
+Compiled from "LinuxPPC64CFrame.java"
+public final class sun.jvm.hotspot.debugger.linux.ppc64.LinuxPPC64CFrame extends sun.jvm.hotspot.debugger.cdbg.basic.BasicCFrame {
+  public static int PPC64_STACK_BIAS;
+  public sun.jvm.hotspot.debugger.linux.ppc64.LinuxPPC64CFrame(sun.jvm.hotspot.debugger.linux.LinuxDebugger, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address, int);
+  public sun.jvm.hotspot.debugger.cdbg.ClosestSymbol closestSymbolToPC();
+  public sun.jvm.hotspot.debugger.Address pc();
+  public sun.jvm.hotspot.debugger.Address localVariableBase();
+  public sun.jvm.hotspot.debugger.cdbg.CFrame sender(sun.jvm.hotspot.debugger.ThreadProxy);
+  static {};
+}

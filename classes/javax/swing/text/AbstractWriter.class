@@ -1,0 +1,38 @@
+Compiled from "AbstractWriter.java"
+public abstract class javax.swing.text.AbstractWriter {
+  protected static final char NEWLINE;
+  protected javax.swing.text.AbstractWriter(java.io.Writer, javax.swing.text.Document);
+  protected javax.swing.text.AbstractWriter(java.io.Writer, javax.swing.text.Document, int, int);
+  protected javax.swing.text.AbstractWriter(java.io.Writer, javax.swing.text.Element);
+  protected javax.swing.text.AbstractWriter(java.io.Writer, javax.swing.text.Element, int, int);
+  public int getStartOffset();
+  public int getEndOffset();
+  protected javax.swing.text.ElementIterator getElementIterator();
+  protected java.io.Writer getWriter();
+  protected javax.swing.text.Document getDocument();
+  protected boolean inRange(javax.swing.text.Element);
+  protected abstract void write() throws java.io.IOException, javax.swing.text.BadLocationException;
+  protected java.lang.String getText(javax.swing.text.Element) throws javax.swing.text.BadLocationException;
+  protected void text(javax.swing.text.Element) throws javax.swing.text.BadLocationException, java.io.IOException;
+  protected void setLineLength(int);
+  protected int getLineLength();
+  protected void setCurrentLineLength(int);
+  protected int getCurrentLineLength();
+  protected boolean isLineEmpty();
+  protected void setCanWrapLines(boolean);
+  protected boolean getCanWrapLines();
+  protected void setIndentSpace(int);
+  protected int getIndentSpace();
+  public void setLineSeparator(java.lang.String);
+  public java.lang.String getLineSeparator();
+  protected void incrIndent();
+  protected void decrIndent();
+  protected int getIndentLevel();
+  protected void indent() throws java.io.IOException;
+  protected void write(char) throws java.io.IOException;
+  protected void write(java.lang.String) throws java.io.IOException;
+  protected void writeLineSeparator() throws java.io.IOException;
+  protected void write(char[], int, int) throws java.io.IOException;
+  protected void writeAttributes(javax.swing.text.AttributeSet) throws java.io.IOException;
+  protected void output(char[], int, int) throws java.io.IOException;
+}

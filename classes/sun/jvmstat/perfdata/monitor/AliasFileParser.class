@@ -1,0 +1,5 @@
+Compiled from "AliasFileParser.java"
+public class sun.jvmstat.perfdata.monitor.AliasFileParser {
+  sun.jvmstat.perfdata.monitor.AliasFileParser(java.net.URL);
+  public void parse(java.util.Map<java.lang.String, java.util.ArrayList<java.lang.String>>) throws sun.jvmstat.perfdata.monitor.SyntaxException, java.io.IOException;
+}

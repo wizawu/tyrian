@@ -1,0 +1,7 @@
+Compiled from "WaveFileWriter.java"
+public final class com.sun.media.sound.WaveFileWriter extends com.sun.media.sound.SunFileWriter {
+  public com.sun.media.sound.WaveFileWriter();
+  public javax.sound.sampled.AudioFileFormat$Type[] getAudioFileTypes(javax.sound.sampled.AudioInputStream);
+  public int write(javax.sound.sampled.AudioInputStream, javax.sound.sampled.AudioFileFormat$Type, java.io.OutputStream) throws java.io.IOException;
+  public int write(javax.sound.sampled.AudioInputStream, javax.sound.sampled.AudioFileFormat$Type, java.io.File) throws java.io.IOException;
+}

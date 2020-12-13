@@ -1,0 +1,5 @@
+Compiled from "ImagePluginConfiguration.java"
+public final class jdk.tools.jlink.internal.ImagePluginConfiguration {
+  public static jdk.tools.jlink.internal.ImagePluginStack parseConfiguration(jdk.tools.jlink.internal.Jlink$PluginsConfiguration) throws java.lang.Exception;
+  static {};
+}

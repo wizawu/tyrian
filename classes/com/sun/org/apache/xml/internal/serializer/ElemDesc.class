@@ -1,0 +1,26 @@
+Compiled from "ElemDesc.java"
+public final class com.sun.org.apache.xml.internal.serializer.ElemDesc {
+  static final int EMPTY;
+  static final int BLOCK;
+  static final int BLOCKFORM;
+  static final int BLOCKFORMFIELDSET;
+  static final int RAW;
+  static final int INLINELABEL;
+  static final int FONTSTYLE;
+  static final int PHRASE;
+  static final int FORMCTRL;
+  static final int SPECIAL;
+  static final int ASPECIAL;
+  static final int HEADMISC;
+  static final int HEAD;
+  static final int LIST;
+  static final int PREFORMATTED;
+  static final int WHITESPACESENSITIVE;
+  static final int HEADELEM;
+  public static final int ATTRURL;
+  public static final int ATTREMPTY;
+  com.sun.org.apache.xml.internal.serializer.ElemDesc(int);
+  int getFlags();
+  void setAttr(java.lang.String, int);
+  public boolean isAttrFlagSet(java.lang.String, int);
+}

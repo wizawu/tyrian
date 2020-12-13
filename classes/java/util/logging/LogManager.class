@@ -1,0 +1,38 @@
+Compiled from "LogManager.java"
+public class java.util.logging.LogManager {
+  static final java.security.Permission controlPermission;
+  public static final java.lang.String LOGGING_MXBEAN_NAME;
+  static final boolean $assertionsDisabled;
+  protected java.util.logging.LogManager();
+  final void ensureLogManagerInitialized();
+  public static java.util.logging.LogManager getLogManager();
+  final java.util.logging.LogManager$LoggerContext getSystemContext();
+  java.util.logging.Logger demandLogger(java.lang.String, java.lang.String, java.lang.Class<?>);
+  java.util.logging.Logger demandLogger(java.lang.String, java.lang.String, java.lang.Module);
+  java.util.logging.Logger demandSystemLogger(java.lang.String, java.lang.String, java.lang.Class<?>);
+  java.util.logging.Logger demandSystemLogger(java.lang.String, java.lang.String, java.lang.Module);
+  final void drainLoggerRefQueueBounded();
+  public boolean addLogger(java.util.logging.Logger);
+  public java.util.logging.Logger getLogger(java.lang.String);
+  public java.util.Enumeration<java.lang.String> getLoggerNames();
+  public void readConfiguration() throws java.io.IOException, java.lang.SecurityException;
+  java.lang.String getConfigurationFileName() throws java.io.IOException;
+  public void reset() throws java.lang.SecurityException;
+  public void readConfiguration(java.io.InputStream) throws java.io.IOException, java.lang.SecurityException;
+  public void updateConfiguration(java.util.function.Function<java.lang.String, java.util.function.BiFunction<java.lang.String, java.lang.String, java.lang.String>>) throws java.io.IOException;
+  public void updateConfiguration(java.io.InputStream, java.util.function.Function<java.lang.String, java.util.function.BiFunction<java.lang.String, java.lang.String, java.lang.String>>) throws java.io.IOException;
+  public java.lang.String getProperty(java.lang.String);
+  java.lang.String getStringProperty(java.lang.String, java.lang.String);
+  int getIntProperty(java.lang.String, int);
+  long getLongProperty(java.lang.String, long);
+  boolean getBooleanProperty(java.lang.String, boolean);
+  java.util.logging.Level getLevelProperty(java.lang.String, java.util.logging.Level);
+  java.util.logging.Filter getFilterProperty(java.lang.String, java.util.logging.Filter);
+  java.util.logging.Formatter getFormatterProperty(java.lang.String, java.util.logging.Formatter);
+  void checkPermission();
+  public void checkAccess() throws java.lang.SecurityException;
+  public static synchronized java.util.logging.LoggingMXBean getLoggingMXBean();
+  public java.util.logging.LogManager addConfigurationListener(java.lang.Runnable);
+  public void removeConfigurationListener(java.lang.Runnable);
+  static {};
+}

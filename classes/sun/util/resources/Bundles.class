@@ -1,0 +1,5 @@
+Compiled from "Bundles.java"
+public abstract class sun.util.resources.Bundles {
+  public static java.util.ResourceBundle of(java.lang.String, java.util.Locale, sun.util.resources.Bundles$Strategy);
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "FocusListener.java"
+public interface java.awt.event.FocusListener extends java.util.EventListener {
+  public abstract void focusGained(java.awt.event.FocusEvent);
+  public abstract void focusLost(java.awt.event.FocusEvent);
+}

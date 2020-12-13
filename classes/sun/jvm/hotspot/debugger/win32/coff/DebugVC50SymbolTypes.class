@@ -1,0 +1,39 @@
+Compiled from "DebugVC50SymbolTypes.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolTypes {
+  public static final int S_COMPILE;
+  public static final int S_SSEARCH;
+  public static final int S_END;
+  public static final int S_SKIP;
+  public static final int S_CVRESERVE;
+  public static final int S_OBJNAME;
+  public static final int S_ENDARG;
+  public static final int S_COBOLUDT;
+  public static final int S_MANYREG;
+  public static final int S_RETURN;
+  public static final int S_ENTRYTHIS;
+  public static final int S_REGISTER;
+  public static final int S_CONSTANT;
+  public static final int S_UDT;
+  public static final int S_COBOLUDT2;
+  public static final int S_MANYREG2;
+  public static final int S_BPREL32;
+  public static final int S_LDATA32;
+  public static final int S_GDATA32;
+  public static final int S_PUB32;
+  public static final int S_LPROC32;
+  public static final int S_GPROC32;
+  public static final int S_THUNK32;
+  public static final int S_BLOCK32;
+  public static final int S_WITH32;
+  public static final int S_LABEL32;
+  public static final int S_CEXMODEL32;
+  public static final int S_VFTTABLE32;
+  public static final int S_REGREL32;
+  public static final int S_LTHREAD32;
+  public static final int S_GTHREAD32;
+  public static final int S_LPROCMIPS;
+  public static final int S_GPROCMIPS;
+  public static final int S_PROCREF;
+  public static final int S_DATAREF;
+  public static final int S_ALIGN;
+}

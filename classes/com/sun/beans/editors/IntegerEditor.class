@@ -1,0 +1,5 @@
+Compiled from "IntegerEditor.java"
+public class com.sun.beans.editors.IntegerEditor extends com.sun.beans.editors.NumberEditor {
+  public com.sun.beans.editors.IntegerEditor();
+  public void setAsText(java.lang.String) throws java.lang.IllegalArgumentException;
+}

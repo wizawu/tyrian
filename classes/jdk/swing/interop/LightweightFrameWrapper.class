@@ -1,0 +1,20 @@
+Compiled from "LightweightFrameWrapper.java"
+public class jdk.swing.interop.LightweightFrameWrapper {
+  sun.swing.JLightweightFrame lwFrame;
+  public jdk.swing.interop.LightweightFrameWrapper();
+  public void notifyDisplayChanged(int);
+  void overrideNativeWindowHandle(long, java.lang.Runnable);
+  public void setHostBounds(int, int, int, int);
+  public void dispose();
+  public void addWindowFocusListener(java.awt.event.WindowFocusListener);
+  public void setVisible(boolean);
+  public void setBounds(int, int, int, int);
+  public void setContent(jdk.swing.interop.LightweightContentWrapper);
+  public void emulateActivation(boolean);
+  public java.awt.event.MouseEvent createMouseEvent(jdk.swing.interop.LightweightFrameWrapper, int, long, int, int, int, int, int, int, boolean, int);
+  public java.awt.event.MouseWheelEvent createMouseWheelEvent(jdk.swing.interop.LightweightFrameWrapper, int, int, int, int);
+  public java.awt.event.KeyEvent createKeyEvent(jdk.swing.interop.LightweightFrameWrapper, int, long, int, int, char);
+  public java.awt.AWTEvent createUngrabEvent(jdk.swing.interop.LightweightFrameWrapper);
+  public java.awt.Component findComponentAt(jdk.swing.interop.LightweightFrameWrapper, int, int, boolean);
+  public boolean isCompEqual(java.awt.Component, jdk.swing.interop.LightweightFrameWrapper);
+}

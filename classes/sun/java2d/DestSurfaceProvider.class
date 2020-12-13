@@ -1,0 +1,4 @@
+Compiled from "DestSurfaceProvider.java"
+public interface sun.java2d.DestSurfaceProvider {
+  public abstract sun.java2d.Surface getDestSurface();
+}

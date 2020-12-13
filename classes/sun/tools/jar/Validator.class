@@ -1,0 +1,6 @@
+Compiled from "Validator.java"
+final class sun.tools.jar.Validator {
+  static boolean validate(sun.tools.jar.Main, java.util.zip.ZipFile) throws java.io.IOException;
+  public void validateBase(java.util.Map<java.lang.String, sun.tools.jar.FingerPrint>);
+  public void validateVersioned(java.util.Map<java.lang.String, sun.tools.jar.FingerPrint>);
+}

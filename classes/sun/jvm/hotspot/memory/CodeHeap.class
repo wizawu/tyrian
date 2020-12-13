@@ -1,0 +1,10 @@
+Compiled from "CodeHeap.java"
+public class sun.jvm.hotspot.memory.CodeHeap extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.memory.CodeHeap(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address begin();
+  public sun.jvm.hotspot.debugger.Address end();
+  public boolean contains(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address findStart(sun.jvm.hotspot.debugger.Address);
+  public void iterate(sun.jvm.hotspot.code.CodeCacheVisitor, sun.jvm.hotspot.code.CodeCache);
+  static {};
+}

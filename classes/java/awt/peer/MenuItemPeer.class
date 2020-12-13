@@ -1,0 +1,5 @@
+Compiled from "MenuItemPeer.java"
+public interface java.awt.peer.MenuItemPeer extends java.awt.peer.MenuComponentPeer {
+  public abstract void setLabel(java.lang.String);
+  public abstract void setEnabled(boolean);
+}

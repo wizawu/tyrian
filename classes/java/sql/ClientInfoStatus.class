@@ -1,0 +1,10 @@
+Compiled from "ClientInfoStatus.java"
+public final class java.sql.ClientInfoStatus extends java.lang.Enum<java.sql.ClientInfoStatus> {
+  public static final java.sql.ClientInfoStatus REASON_UNKNOWN;
+  public static final java.sql.ClientInfoStatus REASON_UNKNOWN_PROPERTY;
+  public static final java.sql.ClientInfoStatus REASON_VALUE_INVALID;
+  public static final java.sql.ClientInfoStatus REASON_VALUE_TRUNCATED;
+  public static java.sql.ClientInfoStatus[] values();
+  public static java.sql.ClientInfoStatus valueOf(java.lang.String);
+  static {};
+}

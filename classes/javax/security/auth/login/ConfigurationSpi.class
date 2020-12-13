@@ -1,0 +1,6 @@
+Compiled from "ConfigurationSpi.java"
+public abstract class javax.security.auth.login.ConfigurationSpi {
+  public javax.security.auth.login.ConfigurationSpi();
+  protected abstract javax.security.auth.login.AppConfigurationEntry[] engineGetAppConfigurationEntry(java.lang.String);
+  protected void engineRefresh();
+}

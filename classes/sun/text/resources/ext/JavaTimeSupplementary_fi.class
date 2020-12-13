@@ -1,0 +1,5 @@
+Compiled from "JavaTimeSupplementary_fi.java"
+public class sun.text.resources.ext.JavaTimeSupplementary_fi extends sun.util.resources.OpenListResourceBundle {
+  public sun.text.resources.ext.JavaTimeSupplementary_fi();
+  protected final java.lang.Object[][] getContents();
+}

@@ -1,0 +1,24 @@
+Compiled from "XWarningWindow.java"
+class sun.awt.X11.XWarningWindow extends sun.awt.X11.XWindow {
+  sun.awt.X11.XWarningWindow(java.awt.Window, long, sun.awt.X11.XWindowPeer);
+  void postInit(sun.awt.X11.XCreateWindowParams);
+  public void reposition(int, int, int, int);
+  protected java.lang.String getWMName();
+  public java.awt.Graphics getGraphics();
+  void paint(java.awt.Graphics, int, int, int, int);
+  java.lang.String getWarningString();
+  int getWidth();
+  int getHeight();
+  java.awt.Color getBackground();
+  java.awt.Color getColor();
+  java.awt.Font getFont();
+  public void repaint();
+  public void handleExposeEvent(sun.awt.X11.XEvent);
+  protected boolean isEventDisabled(sun.awt.X11.XEvent);
+  protected void stateChanged(long, int, int);
+  protected void setMouseAbove(boolean);
+  protected void enterNotify(long);
+  protected void leaveNotify(long);
+  public void xSetVisible(boolean);
+  public void setSecurityWarningVisible(boolean, boolean);
+}

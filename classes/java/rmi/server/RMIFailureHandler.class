@@ -1,0 +1,4 @@
+Compiled from "RMIFailureHandler.java"
+public interface java.rmi.server.RMIFailureHandler {
+  public abstract boolean failure(java.lang.Exception);
+}

@@ -1,0 +1,5 @@
+Compiled from "Generator.java"
+public interface sun.rmi.rmic.Generator {
+  public abstract boolean parseArgs(java.lang.String[], sun.rmi.rmic.Main);
+  public abstract void generate(sun.rmi.rmic.BatchEnvironment, sun.tools.java.ClassDefinition, java.io.File);
+}

@@ -1,0 +1,13 @@
+Compiled from "AnnotationTypeRequiredMemberWriter.java"
+public interface jdk.javadoc.internal.doclets.toolkit.AnnotationTypeRequiredMemberWriter {
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMemberTreeHeader();
+  public abstract void addAnnotationDetailsMarker(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addAnnotationDetailsTreeHeader(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getAnnotationDocTreeHeader(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getAnnotationDetails(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getAnnotationDoc(jdk.javadoc.internal.doclets.toolkit.Content, boolean);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getSignature(javax.lang.model.element.Element);
+  public abstract void addDeprecated(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addComments(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addTags(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.Content);
+}

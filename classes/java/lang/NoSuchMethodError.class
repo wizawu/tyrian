@@ -1,0 +1,5 @@
+Compiled from "NoSuchMethodError.java"
+public class java.lang.NoSuchMethodError extends java.lang.IncompatibleClassChangeError {
+  public java.lang.NoSuchMethodError();
+  public java.lang.NoSuchMethodError(java.lang.String);
+}

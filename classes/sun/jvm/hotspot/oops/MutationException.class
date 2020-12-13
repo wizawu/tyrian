@@ -1,0 +1,5 @@
+Compiled from "MutationException.java"
+public class sun.jvm.hotspot.oops.MutationException extends java.lang.RuntimeException {
+  public sun.jvm.hotspot.oops.MutationException();
+  public sun.jvm.hotspot.oops.MutationException(java.lang.String);
+}

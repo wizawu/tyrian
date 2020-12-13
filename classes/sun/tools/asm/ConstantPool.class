@@ -1,0 +1,8 @@
+Compiled from "ConstantPool.java"
+public final class sun.tools.asm.ConstantPool implements sun.tools.java.RuntimeConstants {
+  java.util.Hashtable<java.lang.Object, sun.tools.asm.ConstantPoolData> hash;
+  public sun.tools.asm.ConstantPool();
+  public int index(java.lang.Object);
+  public void put(java.lang.Object);
+  public void write(sun.tools.java.Environment, java.io.DataOutputStream) throws java.io.IOException;
+}

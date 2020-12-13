@@ -1,0 +1,4 @@
+Compiled from "ValueTree.java"
+public interface com.sun.source.doctree.ValueTree extends com.sun.source.doctree.InlineTagTree {
+  public abstract com.sun.source.doctree.ReferenceTree getReference();
+}

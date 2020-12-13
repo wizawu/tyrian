@@ -1,0 +1,8 @@
+Compiled from "BsdAMD64CFrame.java"
+public final class sun.jvm.hotspot.debugger.bsd.amd64.BsdAMD64CFrame extends sun.jvm.hotspot.debugger.cdbg.basic.BasicCFrame {
+  public sun.jvm.hotspot.debugger.bsd.amd64.BsdAMD64CFrame(sun.jvm.hotspot.debugger.bsd.BsdDebugger, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.cdbg.ClosestSymbol closestSymbolToPC();
+  public sun.jvm.hotspot.debugger.Address pc();
+  public sun.jvm.hotspot.debugger.Address localVariableBase();
+  public sun.jvm.hotspot.debugger.cdbg.CFrame sender(sun.jvm.hotspot.debugger.ThreadProxy);
+}

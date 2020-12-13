@@ -1,0 +1,18 @@
+Compiled from "DocumentBuilderImpl.java"
+public class com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl extends javax.xml.parsers.DocumentBuilder implements com.sun.org.apache.xerces.internal.jaxp.JAXPConstants {
+  public static final java.lang.String ACCESS_EXTERNAL_DTD;
+  public static final java.lang.String ACCESS_EXTERNAL_SCHEMA;
+  com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl(com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl, java.util.Map<java.lang.String, java.lang.Object>, java.util.Map<java.lang.String, java.lang.Boolean>) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl(com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl, java.util.Map<java.lang.String, java.lang.Object>, java.util.Map<java.lang.String, java.lang.Boolean>, boolean) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public org.w3c.dom.Document newDocument();
+  public org.w3c.dom.DOMImplementation getDOMImplementation();
+  public org.w3c.dom.Document parse(org.xml.sax.InputSource) throws org.xml.sax.SAXException, java.io.IOException;
+  public boolean isNamespaceAware();
+  public boolean isValidating();
+  public boolean isXIncludeAware();
+  public void setEntityResolver(org.xml.sax.EntityResolver);
+  public void setErrorHandler(org.xml.sax.ErrorHandler);
+  public javax.xml.validation.Schema getSchema();
+  public void reset();
+  com.sun.org.apache.xerces.internal.parsers.DOMParser getDOMParser();
+}

@@ -1,0 +1,7 @@
+Compiled from "TokenTracker.java"
+public class sun.security.jgss.TokenTracker {
+  static final int MAX_INTERVALS;
+  public sun.security.jgss.TokenTracker(int);
+  public final synchronized void getProps(int, org.ietf.jgss.MessageProp);
+  public java.lang.String toString();
+}

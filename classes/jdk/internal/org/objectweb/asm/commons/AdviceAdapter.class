@@ -1,0 +1,25 @@
+Compiled from "AdviceAdapter.java"
+public abstract class jdk.internal.org.objectweb.asm.commons.AdviceAdapter extends jdk.internal.org.objectweb.asm.commons.GeneratorAdapter implements jdk.internal.org.objectweb.asm.Opcodes {
+  protected int methodAccess;
+  protected java.lang.String methodDesc;
+  protected jdk.internal.org.objectweb.asm.commons.AdviceAdapter(int, jdk.internal.org.objectweb.asm.MethodVisitor, int, java.lang.String, java.lang.String);
+  public void visitCode();
+  public void visitLabel(jdk.internal.org.objectweb.asm.Label);
+  public void visitInsn(int);
+  public void visitVarInsn(int, int);
+  public void visitFieldInsn(int, java.lang.String, java.lang.String, java.lang.String);
+  public void visitIntInsn(int, int);
+  public void visitLdcInsn(java.lang.Object);
+  public void visitMultiANewArrayInsn(java.lang.String, int);
+  public void visitTypeInsn(int, java.lang.String);
+  public void visitMethodInsn(int, java.lang.String, java.lang.String, java.lang.String);
+  public void visitMethodInsn(int, java.lang.String, java.lang.String, java.lang.String, boolean);
+  public void visitInvokeDynamicInsn(java.lang.String, java.lang.String, jdk.internal.org.objectweb.asm.Handle, java.lang.Object...);
+  public void visitJumpInsn(int, jdk.internal.org.objectweb.asm.Label);
+  public void visitLookupSwitchInsn(jdk.internal.org.objectweb.asm.Label, int[], jdk.internal.org.objectweb.asm.Label[]);
+  public void visitTableSwitchInsn(int, int, jdk.internal.org.objectweb.asm.Label, jdk.internal.org.objectweb.asm.Label...);
+  public void visitTryCatchBlock(jdk.internal.org.objectweb.asm.Label, jdk.internal.org.objectweb.asm.Label, jdk.internal.org.objectweb.asm.Label, java.lang.String);
+  protected void onMethodEnter();
+  protected void onMethodExit(int);
+  static {};
+}

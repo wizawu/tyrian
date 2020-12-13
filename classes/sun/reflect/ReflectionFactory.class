@@ -1,0 +1,16 @@
+Compiled from "ReflectionFactory.java"
+public class sun.reflect.ReflectionFactory {
+  public static sun.reflect.ReflectionFactory getReflectionFactory();
+  public java.lang.reflect.Constructor<?> newConstructorForSerialization(java.lang.Class<?>, java.lang.reflect.Constructor<?>);
+  public final java.lang.reflect.Constructor<?> newConstructorForSerialization(java.lang.Class<?>);
+  public final java.lang.reflect.Constructor<?> newConstructorForExternalization(java.lang.Class<?>);
+  public final java.lang.invoke.MethodHandle readObjectForSerialization(java.lang.Class<?>);
+  public final java.lang.Object newInstanceForSerialization(java.lang.reflect.Constructor<?>, java.security.ProtectionDomain[]) throws java.lang.InstantiationException, java.lang.reflect.InvocationTargetException, java.lang.IllegalAccessException;
+  public final java.lang.invoke.MethodHandle readObjectNoDataForSerialization(java.lang.Class<?>);
+  public final java.lang.invoke.MethodHandle writeObjectForSerialization(java.lang.Class<?>);
+  public final java.lang.invoke.MethodHandle readResolveForSerialization(java.lang.Class<?>);
+  public final java.lang.invoke.MethodHandle writeReplaceForSerialization(java.lang.Class<?>);
+  public final boolean hasStaticInitializerForSerialization(java.lang.Class<?>);
+  public final java.io.OptionalDataException newOptionalDataExceptionForSerialization(boolean);
+  static {};
+}

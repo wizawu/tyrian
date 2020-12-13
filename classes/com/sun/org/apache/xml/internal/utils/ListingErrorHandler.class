@@ -1,0 +1,24 @@
+Compiled from "ListingErrorHandler.java"
+public class com.sun.org.apache.xml.internal.utils.ListingErrorHandler implements org.xml.sax.ErrorHandler,javax.xml.transform.ErrorListener {
+  protected java.io.PrintWriter m_pw;
+  protected boolean throwOnWarning;
+  protected boolean throwOnError;
+  protected boolean throwOnFatalError;
+  public com.sun.org.apache.xml.internal.utils.ListingErrorHandler(java.io.PrintWriter);
+  public com.sun.org.apache.xml.internal.utils.ListingErrorHandler();
+  public void warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void warning(javax.xml.transform.TransformerException) throws javax.xml.transform.TransformerException;
+  public void error(javax.xml.transform.TransformerException) throws javax.xml.transform.TransformerException;
+  public void fatalError(javax.xml.transform.TransformerException) throws javax.xml.transform.TransformerException;
+  public static void logExceptionLocation(java.io.PrintWriter, java.lang.Throwable);
+  public static void logSourceLine(java.io.PrintWriter, javax.xml.transform.SourceLocator);
+  protected static java.lang.String getSourceLine(java.lang.String, int) throws java.lang.Exception;
+  public void setThrowOnWarning(boolean);
+  public boolean getThrowOnWarning();
+  public void setThrowOnError(boolean);
+  public boolean getThrowOnError();
+  public void setThrowOnFatalError(boolean);
+  public boolean getThrowOnFatalError();
+}

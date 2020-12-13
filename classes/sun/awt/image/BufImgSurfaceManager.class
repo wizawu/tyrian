@@ -1,0 +1,8 @@
+Compiled from "BufImgSurfaceManager.java"
+public class sun.awt.image.BufImgSurfaceManager extends sun.awt.image.SurfaceManager {
+  protected java.awt.image.BufferedImage bImg;
+  protected sun.java2d.SurfaceData sdDefault;
+  public sun.awt.image.BufImgSurfaceManager(java.awt.image.BufferedImage);
+  public sun.java2d.SurfaceData getPrimarySurfaceData();
+  public sun.java2d.SurfaceData restoreContents();
+}

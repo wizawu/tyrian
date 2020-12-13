@@ -1,0 +1,28 @@
+Compiled from "Method.java"
+public interface com.sun.jdi.Method extends com.sun.jdi.TypeComponent, com.sun.jdi.Locatable, java.lang.Comparable<com.sun.jdi.Method> {
+  public abstract java.lang.String returnTypeName();
+  public abstract com.sun.jdi.Type returnType() throws com.sun.jdi.ClassNotLoadedException;
+  public abstract java.util.List<java.lang.String> argumentTypeNames();
+  public abstract java.util.List<com.sun.jdi.Type> argumentTypes() throws com.sun.jdi.ClassNotLoadedException;
+  public abstract boolean isAbstract();
+  public default boolean isDefault();
+  public abstract boolean isSynchronized();
+  public abstract boolean isNative();
+  public abstract boolean isVarArgs();
+  public abstract boolean isBridge();
+  public abstract boolean isConstructor();
+  public abstract boolean isStaticInitializer();
+  public abstract boolean isObsolete();
+  public abstract java.util.List<com.sun.jdi.Location> allLineLocations() throws com.sun.jdi.AbsentInformationException;
+  public abstract java.util.List<com.sun.jdi.Location> allLineLocations(java.lang.String, java.lang.String) throws com.sun.jdi.AbsentInformationException;
+  public abstract java.util.List<com.sun.jdi.Location> locationsOfLine(int) throws com.sun.jdi.AbsentInformationException;
+  public abstract java.util.List<com.sun.jdi.Location> locationsOfLine(java.lang.String, java.lang.String, int) throws com.sun.jdi.AbsentInformationException;
+  public abstract com.sun.jdi.Location locationOfCodeIndex(long);
+  public abstract java.util.List<com.sun.jdi.LocalVariable> variables() throws com.sun.jdi.AbsentInformationException;
+  public abstract java.util.List<com.sun.jdi.LocalVariable> variablesByName(java.lang.String) throws com.sun.jdi.AbsentInformationException;
+  public abstract java.util.List<com.sun.jdi.LocalVariable> arguments() throws com.sun.jdi.AbsentInformationException;
+  public abstract byte[] bytecodes();
+  public abstract com.sun.jdi.Location location();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+}

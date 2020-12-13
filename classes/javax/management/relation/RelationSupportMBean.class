@@ -1,0 +1,5 @@
+Compiled from "RelationSupportMBean.java"
+public interface javax.management.relation.RelationSupportMBean extends javax.management.relation.Relation {
+  public abstract java.lang.Boolean isInRelationService();
+  public abstract void setRelationServiceManagementFlag(java.lang.Boolean) throws java.lang.IllegalArgumentException;
+}

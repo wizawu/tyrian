@@ -1,0 +1,12 @@
+Compiled from "TryCatchBlockNode.java"
+public class jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode {
+  public jdk.internal.org.objectweb.asm.tree.LabelNode start;
+  public jdk.internal.org.objectweb.asm.tree.LabelNode end;
+  public jdk.internal.org.objectweb.asm.tree.LabelNode handler;
+  public java.lang.String type;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode> visibleTypeAnnotations;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode> invisibleTypeAnnotations;
+  public jdk.internal.org.objectweb.asm.tree.TryCatchBlockNode(jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode, java.lang.String);
+  public void updateIndex(int);
+  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
+}

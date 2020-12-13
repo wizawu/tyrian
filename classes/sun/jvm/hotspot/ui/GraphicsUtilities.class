@@ -1,0 +1,17 @@
+Compiled from "GraphicsUtilities.java"
+public class sun.jvm.hotspot.ui.GraphicsUtilities {
+  static java.util.Random random;
+  public sun.jvm.hotspot.ui.GraphicsUtilities();
+  public static java.awt.Font lookupFont(java.lang.String);
+  public static java.awt.geom.Rectangle2D getStringBounds(java.lang.String, java.awt.Graphics);
+  public static int getStringWidth(java.lang.String, java.awt.FontMetrics);
+  public static void reshapeToAspectRatio(java.awt.Component, float, float, java.awt.Dimension);
+  public static void constrainToSize(java.awt.Component, java.awt.Dimension);
+  public static void centerInContainer(java.awt.Component);
+  public static void centerInContainer(java.awt.Component, java.awt.Dimension);
+  public static void moveToInContainer(java.awt.Component, float, float, int, int);
+  public static void randomLocation(java.awt.Component);
+  public static void randomLocation(java.awt.Component, java.awt.Dimension);
+  public static javax.swing.border.Border newBorder(int);
+  static {};
+}

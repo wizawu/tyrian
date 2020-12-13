@@ -1,0 +1,8 @@
+Compiled from "NamedMethodGenerator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.NamedMethodGenerator extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator {
+  protected static final int CURRENT_INDEX;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.NamedMethodGenerator(int, com.sun.org.apache.bcel.internal.generic.Type, com.sun.org.apache.bcel.internal.generic.Type[], java.lang.String[], java.lang.String, java.lang.String, com.sun.org.apache.bcel.internal.generic.InstructionList, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public int getLocalIndex(java.lang.String);
+  public com.sun.org.apache.bcel.internal.generic.Instruction loadParameter(int);
+  public com.sun.org.apache.bcel.internal.generic.Instruction storeParameter(int);
+}

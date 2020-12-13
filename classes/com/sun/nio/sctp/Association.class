@@ -1,0 +1,7 @@
+Compiled from "Association.java"
+public class com.sun.nio.sctp.Association {
+  protected com.sun.nio.sctp.Association(int, int, int);
+  public final int associationID();
+  public final int maxInboundStreams();
+  public final int maxOutboundStreams();
+}

@@ -1,0 +1,5 @@
+Compiled from "StackOverflowError.java"
+public class java.lang.StackOverflowError extends java.lang.VirtualMachineError {
+  public java.lang.StackOverflowError();
+  public java.lang.StackOverflowError(java.lang.String);
+}

@@ -1,0 +1,9 @@
+Compiled from "SystemIDResolver.java"
+public class com.sun.org.apache.xml.internal.utils.SystemIDResolver {
+  public com.sun.org.apache.xml.internal.utils.SystemIDResolver();
+  public static java.lang.String getAbsoluteURIFromRelative(java.lang.String);
+  public static boolean isAbsoluteURI(java.lang.String);
+  public static boolean isAbsolutePath(java.lang.String);
+  public static java.lang.String getAbsoluteURI(java.lang.String);
+  public static java.lang.String getAbsoluteURI(java.lang.String, java.lang.String) throws javax.xml.transform.TransformerException;
+}

@@ -1,0 +1,6 @@
+Compiled from "UnknownTypeException.java"
+public class javax.lang.model.type.UnknownTypeException extends javax.lang.model.UnknownEntityException {
+  public javax.lang.model.type.UnknownTypeException(javax.lang.model.type.TypeMirror, java.lang.Object);
+  public javax.lang.model.type.TypeMirror getUnknownType();
+  public java.lang.Object getArgument();
+}

@@ -1,0 +1,28 @@
+Compiled from "ServerSocketChannelImpl.java"
+class sun.nio.ch.ServerSocketChannelImpl extends java.nio.channels.ServerSocketChannel implements sun.nio.ch.SelChImpl {
+  static final boolean $assertionsDisabled;
+  sun.nio.ch.ServerSocketChannelImpl(java.nio.channels.spi.SelectorProvider) throws java.io.IOException;
+  sun.nio.ch.ServerSocketChannelImpl(java.nio.channels.spi.SelectorProvider, java.io.FileDescriptor, boolean) throws java.io.IOException;
+  public java.net.ServerSocket socket();
+  public java.net.SocketAddress getLocalAddress() throws java.io.IOException;
+  public <T> java.nio.channels.ServerSocketChannel setOption(java.net.SocketOption<T>, T) throws java.io.IOException;
+  public <T> T getOption(java.net.SocketOption<T>) throws java.io.IOException;
+  public final java.util.Set<java.net.SocketOption<?>> supportedOptions();
+  public java.nio.channels.ServerSocketChannel bind(java.net.SocketAddress, int) throws java.io.IOException;
+  public java.nio.channels.SocketChannel accept() throws java.io.IOException;
+  protected void implConfigureBlocking(boolean) throws java.io.IOException;
+  protected void implCloseSelectableChannel() throws java.io.IOException;
+  public void kill() throws java.io.IOException;
+  boolean isBound();
+  java.net.InetSocketAddress localAddress();
+  boolean pollAccept(long) throws java.io.IOException;
+  public boolean translateReadyOps(int, int, sun.nio.ch.SelectionKeyImpl);
+  public boolean translateAndUpdateReadyOps(int, sun.nio.ch.SelectionKeyImpl);
+  public boolean translateAndSetReadyOps(int, sun.nio.ch.SelectionKeyImpl);
+  public int translateInterestOps(int);
+  public java.io.FileDescriptor getFD();
+  public int getFDVal();
+  public java.lang.String toString();
+  public java.nio.channels.NetworkChannel setOption(java.net.SocketOption, java.lang.Object) throws java.io.IOException;
+  static {};
+}

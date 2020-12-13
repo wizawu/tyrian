@@ -1,0 +1,6 @@
+Compiled from "TGSRep.java"
+public class sun.security.krb5.internal.TGSRep extends sun.security.krb5.internal.KDCRep {
+  public sun.security.krb5.internal.TGSRep(sun.security.krb5.internal.PAData[], sun.security.krb5.PrincipalName, sun.security.krb5.internal.Ticket, sun.security.krb5.EncryptedData) throws java.io.IOException;
+  public sun.security.krb5.internal.TGSRep(byte[]) throws sun.security.krb5.Asn1Exception, sun.security.krb5.RealmException, sun.security.krb5.internal.KrbApErrException, java.io.IOException;
+  public sun.security.krb5.internal.TGSRep(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, sun.security.krb5.RealmException, sun.security.krb5.internal.KrbApErrException, java.io.IOException;
+}

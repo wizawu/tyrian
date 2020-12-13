@@ -1,0 +1,16 @@
+Compiled from "FileOutputStream.java"
+public class java.io.FileOutputStream extends java.io.OutputStream {
+  public java.io.FileOutputStream(java.lang.String) throws java.io.FileNotFoundException;
+  public java.io.FileOutputStream(java.lang.String, boolean) throws java.io.FileNotFoundException;
+  public java.io.FileOutputStream(java.io.File) throws java.io.FileNotFoundException;
+  public java.io.FileOutputStream(java.io.File, boolean) throws java.io.FileNotFoundException;
+  public java.io.FileOutputStream(java.io.FileDescriptor);
+  public void write(int) throws java.io.IOException;
+  public void write(byte[]) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public final java.io.FileDescriptor getFD() throws java.io.IOException;
+  public java.nio.channels.FileChannel getChannel();
+  protected void finalize() throws java.io.IOException;
+  static {};
+}

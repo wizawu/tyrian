@@ -1,0 +1,12 @@
+Compiled from "EditObject.java"
+final class jdk.nashorn.tools.jjs.EditObject extends jdk.nashorn.api.scripting.AbstractJSObject {
+  jdk.nashorn.tools.jjs.EditObject(jdk.nashorn.tools.jjs.Console, java.util.function.Consumer<java.lang.String>, java.util.function.Consumer<java.lang.String>);
+  public java.lang.Object getDefaultValue(java.lang.Class<?>);
+  public java.lang.String toString();
+  public java.util.Set<java.lang.String> keySet();
+  public java.lang.Object getMember(java.lang.String);
+  public void setMember(java.lang.String, java.lang.Object);
+  public java.lang.Object call(java.lang.Object, java.lang.Object...);
+  public boolean isFunction();
+  static {};
+}

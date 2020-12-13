@@ -1,0 +1,7 @@
+Compiled from "Characters.java"
+public interface javax.xml.stream.events.Characters extends javax.xml.stream.events.XMLEvent {
+  public abstract java.lang.String getData();
+  public abstract boolean isWhiteSpace();
+  public abstract boolean isCData();
+  public abstract boolean isIgnorableWhiteSpace();
+}

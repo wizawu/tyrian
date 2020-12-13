@@ -1,0 +1,6 @@
+Compiled from "PrimitiveTypeImpl.java"
+abstract class com.sun.tools.jdi.PrimitiveTypeImpl extends com.sun.tools.jdi.TypeImpl implements com.sun.jdi.PrimitiveType {
+  com.sun.tools.jdi.PrimitiveTypeImpl(com.sun.jdi.VirtualMachine);
+  abstract com.sun.jdi.PrimitiveValue convert(com.sun.jdi.PrimitiveValue) throws com.sun.jdi.InvalidTypeException;
+  public java.lang.String toString();
+}

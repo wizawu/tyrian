@@ -1,0 +1,11 @@
+Compiled from "HelperNodeList.java"
+public class com.sun.org.apache.xml.internal.security.utils.HelperNodeList implements org.w3c.dom.NodeList {
+  java.util.List<org.w3c.dom.Node> nodes;
+  boolean allNodesMustHaveSameParent;
+  public com.sun.org.apache.xml.internal.security.utils.HelperNodeList();
+  public com.sun.org.apache.xml.internal.security.utils.HelperNodeList(boolean);
+  public org.w3c.dom.Node item(int);
+  public int getLength();
+  public void appendChild(org.w3c.dom.Node) throws java.lang.IllegalArgumentException;
+  public org.w3c.dom.Document getOwnerDocument();
+}

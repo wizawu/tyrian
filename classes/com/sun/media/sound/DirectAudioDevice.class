@@ -1,0 +1,14 @@
+Compiled from "DirectAudioDevice.java"
+final class com.sun.media.sound.DirectAudioDevice extends com.sun.media.sound.AbstractMixer {
+  com.sun.media.sound.DirectAudioDevice(com.sun.media.sound.DirectAudioDeviceProvider$DirectAudioDeviceInfo);
+  public javax.sound.sampled.Line getLine(javax.sound.sampled.Line$Info) throws javax.sound.sampled.LineUnavailableException;
+  public int getMaxLines(javax.sound.sampled.Line$Info);
+  protected void implOpen() throws javax.sound.sampled.LineUnavailableException;
+  protected void implClose();
+  protected void implStart();
+  protected void implStop();
+  int getMixerIndex();
+  int getDeviceID();
+  int getMaxSimulLines();
+  protected static javax.sound.sampled.AudioFormat getSignOrEndianChangedFormat(javax.sound.sampled.AudioFormat);
+}

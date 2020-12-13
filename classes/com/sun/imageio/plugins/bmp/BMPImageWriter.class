@@ -1,0 +1,20 @@
+Compiled from "BMPImageWriter.java"
+public class com.sun.imageio.plugins.bmp.BMPImageWriter extends javax.imageio.ImageWriter implements com.sun.imageio.plugins.bmp.BMPConstants {
+  public com.sun.imageio.plugins.bmp.BMPImageWriter(javax.imageio.spi.ImageWriterSpi);
+  public void setOutput(java.lang.Object);
+  public javax.imageio.ImageWriteParam getDefaultWriteParam();
+  public javax.imageio.metadata.IIOMetadata getDefaultStreamMetadata(javax.imageio.ImageWriteParam);
+  public javax.imageio.metadata.IIOMetadata getDefaultImageMetadata(javax.imageio.ImageTypeSpecifier, javax.imageio.ImageWriteParam);
+  public javax.imageio.metadata.IIOMetadata convertStreamMetadata(javax.imageio.metadata.IIOMetadata, javax.imageio.ImageWriteParam);
+  public javax.imageio.metadata.IIOMetadata convertImageMetadata(javax.imageio.metadata.IIOMetadata, javax.imageio.ImageTypeSpecifier, javax.imageio.ImageWriteParam);
+  public boolean canWriteRasters();
+  public void write(javax.imageio.metadata.IIOMetadata, javax.imageio.IIOImage, javax.imageio.ImageWriteParam) throws java.io.IOException;
+  public void reset();
+  protected int getPreferredCompressionType(java.awt.image.ColorModel, java.awt.image.SampleModel);
+  protected int getPreferredCompressionType(javax.imageio.ImageTypeSpecifier);
+  protected boolean canEncodeImage(int, java.awt.image.ColorModel, java.awt.image.SampleModel);
+  protected boolean canEncodeImage(int, javax.imageio.ImageTypeSpecifier);
+  protected void writeMaskToPalette(int, int, byte[], byte[], byte[], byte[]);
+  static void access$000(com.sun.imageio.plugins.bmp.BMPImageWriter, float);
+  static void access$100(com.sun.imageio.plugins.bmp.BMPImageWriter, int, java.lang.String);
+}

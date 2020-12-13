@@ -1,0 +1,7 @@
+Compiled from "SlotAllocator.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.SlotAllocator {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.util.SlotAllocator();
+  public void initialize(com.sun.org.apache.bcel.internal.generic.LocalVariableGen[]);
+  public int allocateSlot(com.sun.org.apache.bcel.internal.generic.Type);
+  public void releaseSlot(com.sun.org.apache.bcel.internal.generic.LocalVariableGen);
+}

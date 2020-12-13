@@ -1,0 +1,6 @@
+Compiled from "SAEditorPane.java"
+public class sun.jvm.hotspot.ui.SAEditorPane extends javax.swing.JEditorPane {
+  public sun.jvm.hotspot.ui.SAEditorPane();
+  public java.lang.String getSelectedText();
+  public void setText(java.lang.String);
+}

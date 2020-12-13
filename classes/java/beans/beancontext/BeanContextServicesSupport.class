@@ -1,0 +1,38 @@
+Compiled from "BeanContextServicesSupport.java"
+public class java.beans.beancontext.BeanContextServicesSupport extends java.beans.beancontext.BeanContextSupport implements java.beans.beancontext.BeanContextServices {
+  protected transient java.util.HashMap<java.lang.Object, java.beans.beancontext.BeanContextServicesSupport$BCSSServiceProvider> services;
+  protected transient int serializable;
+  protected transient java.beans.beancontext.BeanContextServicesSupport$BCSSProxyServiceProvider proxy;
+  protected transient java.util.ArrayList<java.beans.beancontext.BeanContextServicesListener> bcsListeners;
+  public java.beans.beancontext.BeanContextServicesSupport(java.beans.beancontext.BeanContextServices, java.util.Locale, boolean, boolean);
+  public java.beans.beancontext.BeanContextServicesSupport(java.beans.beancontext.BeanContextServices, java.util.Locale, boolean);
+  public java.beans.beancontext.BeanContextServicesSupport(java.beans.beancontext.BeanContextServices, java.util.Locale);
+  public java.beans.beancontext.BeanContextServicesSupport(java.beans.beancontext.BeanContextServices);
+  public java.beans.beancontext.BeanContextServicesSupport();
+  public void initialize();
+  public java.beans.beancontext.BeanContextServices getBeanContextServicesPeer();
+  protected java.beans.beancontext.BeanContextSupport$BCSChild createBCSChild(java.lang.Object, java.lang.Object);
+  protected java.beans.beancontext.BeanContextServicesSupport$BCSSServiceProvider createBCSSServiceProvider(java.lang.Class<?>, java.beans.beancontext.BeanContextServiceProvider);
+  public void addBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener);
+  public void removeBeanContextServicesListener(java.beans.beancontext.BeanContextServicesListener);
+  public boolean addService(java.lang.Class<?>, java.beans.beancontext.BeanContextServiceProvider);
+  protected boolean addService(java.lang.Class<?>, java.beans.beancontext.BeanContextServiceProvider, boolean);
+  public void revokeService(java.lang.Class<?>, java.beans.beancontext.BeanContextServiceProvider, boolean);
+  public synchronized boolean hasService(java.lang.Class<?>);
+  public java.lang.Object getService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Class<?>, java.lang.Object, java.beans.beancontext.BeanContextServiceRevokedListener) throws java.util.TooManyListenersException;
+  public void releaseService(java.beans.beancontext.BeanContextChild, java.lang.Object, java.lang.Object);
+  public java.util.Iterator<java.lang.Object> getCurrentServiceClasses();
+  public java.util.Iterator<?> getCurrentServiceSelectors(java.lang.Class<?>);
+  public void serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent);
+  public void serviceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent);
+  protected static final java.beans.beancontext.BeanContextServicesListener getChildBeanContextServicesListener(java.lang.Object);
+  protected void childJustRemovedHook(java.lang.Object, java.beans.beancontext.BeanContextSupport$BCSChild);
+  protected synchronized void releaseBeanContextResources();
+  protected synchronized void initializeBeanContextResources();
+  protected final void fireServiceAdded(java.lang.Class<?>);
+  protected final void fireServiceAdded(java.beans.beancontext.BeanContextServiceAvailableEvent);
+  protected final void fireServiceRevoked(java.beans.beancontext.BeanContextServiceRevokedEvent);
+  protected final void fireServiceRevoked(java.lang.Class<?>, boolean);
+  protected synchronized void bcsPreSerializationHook(java.io.ObjectOutputStream) throws java.io.IOException;
+  protected synchronized void bcsPreDeserializationHook(java.io.ObjectInputStream) throws java.io.IOException, java.lang.ClassNotFoundException;
+}

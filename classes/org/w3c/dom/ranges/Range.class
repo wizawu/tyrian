@@ -1,0 +1,31 @@
+Compiled from "Range.java"
+public interface org.w3c.dom.ranges.Range {
+  public static final short START_TO_START;
+  public static final short START_TO_END;
+  public static final short END_TO_END;
+  public static final short END_TO_START;
+  public abstract org.w3c.dom.Node getStartContainer() throws org.w3c.dom.DOMException;
+  public abstract int getStartOffset() throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.Node getEndContainer() throws org.w3c.dom.DOMException;
+  public abstract int getEndOffset() throws org.w3c.dom.DOMException;
+  public abstract boolean getCollapsed() throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.Node getCommonAncestorContainer() throws org.w3c.dom.DOMException;
+  public abstract void setStart(org.w3c.dom.Node, int) throws org.w3c.dom.ranges.RangeException, org.w3c.dom.DOMException;
+  public abstract void setEnd(org.w3c.dom.Node, int) throws org.w3c.dom.ranges.RangeException, org.w3c.dom.DOMException;
+  public abstract void setStartBefore(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException, org.w3c.dom.DOMException;
+  public abstract void setStartAfter(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException, org.w3c.dom.DOMException;
+  public abstract void setEndBefore(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException, org.w3c.dom.DOMException;
+  public abstract void setEndAfter(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException, org.w3c.dom.DOMException;
+  public abstract void collapse(boolean) throws org.w3c.dom.DOMException;
+  public abstract void selectNode(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException, org.w3c.dom.DOMException;
+  public abstract void selectNodeContents(org.w3c.dom.Node) throws org.w3c.dom.ranges.RangeException, org.w3c.dom.DOMException;
+  public abstract short compareBoundaryPoints(short, org.w3c.dom.ranges.Range) throws org.w3c.dom.DOMException;
+  public abstract void deleteContents() throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.DocumentFragment extractContents() throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.DocumentFragment cloneContents() throws org.w3c.dom.DOMException;
+  public abstract void insertNode(org.w3c.dom.Node) throws org.w3c.dom.DOMException, org.w3c.dom.ranges.RangeException;
+  public abstract void surroundContents(org.w3c.dom.Node) throws org.w3c.dom.DOMException, org.w3c.dom.ranges.RangeException;
+  public abstract org.w3c.dom.ranges.Range cloneRange() throws org.w3c.dom.DOMException;
+  public abstract java.lang.String toString() throws org.w3c.dom.DOMException;
+  public abstract void detach() throws org.w3c.dom.DOMException;
+}

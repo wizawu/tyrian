@@ -1,0 +1,7 @@
+Compiled from "LayerInstantiationException.java"
+public class java.lang.LayerInstantiationException extends java.lang.RuntimeException {
+  public java.lang.LayerInstantiationException();
+  public java.lang.LayerInstantiationException(java.lang.String);
+  public java.lang.LayerInstantiationException(java.lang.Throwable);
+  public java.lang.LayerInstantiationException(java.lang.String, java.lang.Throwable);
+}

@@ -1,0 +1,14 @@
+Compiled from "BlockingQueue.java"
+public interface java.util.concurrent.BlockingQueue<E> extends java.util.Queue<E> {
+  public abstract boolean add(E);
+  public abstract boolean offer(E);
+  public abstract void put(E) throws java.lang.InterruptedException;
+  public abstract boolean offer(E, long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public abstract E take() throws java.lang.InterruptedException;
+  public abstract E poll(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public abstract int remainingCapacity();
+  public abstract boolean remove(java.lang.Object);
+  public abstract boolean contains(java.lang.Object);
+  public abstract int drainTo(java.util.Collection<? super E>);
+  public abstract int drainTo(java.util.Collection<? super E>, int);
+}

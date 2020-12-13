@@ -1,0 +1,5 @@
+Compiled from "ClientProvider.java"
+public class com.sun.jmx.remote.protocol.rmi.ClientProvider implements javax.management.remote.JMXConnectorProvider {
+  public com.sun.jmx.remote.protocol.rmi.ClientProvider();
+  public javax.management.remote.JMXConnector newJMXConnector(javax.management.remote.JMXServiceURL, java.util.Map<java.lang.String, ?>) throws java.io.IOException;
+}

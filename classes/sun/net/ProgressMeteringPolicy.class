@@ -1,0 +1,5 @@
+Compiled from "ProgressMeteringPolicy.java"
+public interface sun.net.ProgressMeteringPolicy {
+  public abstract boolean shouldMeterInput(java.net.URL, java.lang.String);
+  public abstract int getProgressUpdateThreshold();
+}

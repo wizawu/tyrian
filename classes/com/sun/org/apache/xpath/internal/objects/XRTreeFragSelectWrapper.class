@@ -1,0 +1,14 @@
+Compiled from "XRTreeFragSelectWrapper.java"
+public class com.sun.org.apache.xpath.internal.objects.XRTreeFragSelectWrapper extends com.sun.org.apache.xpath.internal.objects.XRTreeFrag implements java.lang.Cloneable {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.objects.XRTreeFragSelectWrapper(com.sun.org.apache.xpath.internal.Expression);
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public void detach();
+  public double num() throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xml.internal.utils.XMLString xstr();
+  public java.lang.String str();
+  public int getType();
+  public int rtf();
+  public com.sun.org.apache.xml.internal.dtm.DTMIterator asNodeIterator();
+}

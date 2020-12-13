@@ -1,0 +1,13 @@
+Compiled from "LDC.java"
+public class com.sun.org.apache.bcel.internal.generic.LDC extends com.sun.org.apache.bcel.internal.generic.CPInstruction implements com.sun.org.apache.bcel.internal.generic.PushInstruction,com.sun.org.apache.bcel.internal.generic.ExceptionThrower {
+  com.sun.org.apache.bcel.internal.generic.LDC();
+  public com.sun.org.apache.bcel.internal.generic.LDC(int);
+  protected final void setSize();
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final void setIndex(int);
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public java.lang.Object getValue(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

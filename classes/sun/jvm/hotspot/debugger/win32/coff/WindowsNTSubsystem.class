@@ -1,0 +1,12 @@
+Compiled from "WindowsNTSubsystem.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.WindowsNTSubsystem {
+  public static final short IMAGE_SUBSYSTEM_UNKNOWN;
+  public static final short IMAGE_SUBSYSTEM_NATIVE;
+  public static final short IMAGE_SUBSYSTEM_WINDOWS_GUI;
+  public static final short IMAGE_SUBSYSTEM_WINDOWS_CUI;
+  public static final short IMAGE_SUBSYSTEM_POSIX_CUI;
+  public static final short IMAGE_SUBSYSTEM_WINDOWS_CE_GUI;
+  public static final short IMAGE_SUBSYSTEM_EFI_APPLICATION;
+  public static final short IMAGE_SUBSYSTEM_EFI_BOOT_SERVICE_DRIVER;
+  public static final short IMAGE_SUBSYSTEM_EFI_RUNTIME_DRIVER;
+}

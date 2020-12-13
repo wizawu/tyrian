@@ -1,0 +1,6 @@
+Compiled from "MouseMotionAdapter.java"
+public abstract class java.awt.event.MouseMotionAdapter implements java.awt.event.MouseMotionListener {
+  public java.awt.event.MouseMotionAdapter();
+  public void mouseDragged(java.awt.event.MouseEvent);
+  public void mouseMoved(java.awt.event.MouseEvent);
+}

@@ -1,0 +1,6 @@
+Compiled from "VMInternalFrame.java"
+public class sun.tools.jconsole.VMInternalFrame extends sun.tools.jconsole.MaximizableInternalFrame {
+  public sun.tools.jconsole.VMInternalFrame(sun.tools.jconsole.VMPanel);
+  public sun.tools.jconsole.VMPanel getVMPanel();
+  public java.awt.Dimension getPreferredSize();
+}

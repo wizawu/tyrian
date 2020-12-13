@@ -1,0 +1,18 @@
+Compiled from "NonOptionArgumentSpec.java"
+public class jdk.internal.joptsimple.NonOptionArgumentSpec<V> extends jdk.internal.joptsimple.AbstractOptionSpec<V> {
+  static final java.lang.String NAME;
+  jdk.internal.joptsimple.NonOptionArgumentSpec();
+  jdk.internal.joptsimple.NonOptionArgumentSpec(java.lang.String);
+  public <T> jdk.internal.joptsimple.NonOptionArgumentSpec<T> ofType(java.lang.Class<T>);
+  public final <T> jdk.internal.joptsimple.NonOptionArgumentSpec<T> withValuesConvertedBy(jdk.internal.joptsimple.ValueConverter<T>);
+  public jdk.internal.joptsimple.NonOptionArgumentSpec<V> describedAs(java.lang.String);
+  protected final V convert(java.lang.String);
+  void handleOption(jdk.internal.joptsimple.OptionParser, jdk.internal.joptsimple.ArgumentList, jdk.internal.joptsimple.OptionSet, java.lang.String);
+  public java.util.List<?> defaultValues();
+  public boolean isRequired();
+  public boolean acceptsArguments();
+  public boolean requiresArgument();
+  public java.lang.String argumentDescription();
+  public java.lang.String argumentTypeIndicator();
+  public boolean representsNonOptions();
+}

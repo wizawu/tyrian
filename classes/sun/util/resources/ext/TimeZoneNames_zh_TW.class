@@ -1,0 +1,5 @@
+Compiled from "TimeZoneNames_zh_TW.java"
+public final class sun.util.resources.ext.TimeZoneNames_zh_TW extends sun.util.resources.TimeZoneNamesBundle {
+  public sun.util.resources.ext.TimeZoneNames_zh_TW();
+  protected final java.lang.Object[][] getContents();
+}

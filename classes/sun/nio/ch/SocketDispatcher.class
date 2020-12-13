@@ -1,0 +1,10 @@
+Compiled from "SocketDispatcher.java"
+class sun.nio.ch.SocketDispatcher extends sun.nio.ch.NativeDispatcher {
+  sun.nio.ch.SocketDispatcher();
+  int read(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  long readv(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  int write(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  long writev(java.io.FileDescriptor, long, int) throws java.io.IOException;
+  void close(java.io.FileDescriptor) throws java.io.IOException;
+  void preClose(java.io.FileDescriptor) throws java.io.IOException;
+}

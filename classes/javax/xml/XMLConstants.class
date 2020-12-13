@@ -1,0 +1,19 @@
+Compiled from "XMLConstants.java"
+public final class javax.xml.XMLConstants {
+  public static final java.lang.String NULL_NS_URI;
+  public static final java.lang.String DEFAULT_NS_PREFIX;
+  public static final java.lang.String XML_NS_URI;
+  public static final java.lang.String XML_NS_PREFIX;
+  public static final java.lang.String XMLNS_ATTRIBUTE_NS_URI;
+  public static final java.lang.String XMLNS_ATTRIBUTE;
+  public static final java.lang.String W3C_XML_SCHEMA_NS_URI;
+  public static final java.lang.String W3C_XML_SCHEMA_INSTANCE_NS_URI;
+  public static final java.lang.String W3C_XPATH_DATATYPE_NS_URI;
+  public static final java.lang.String XML_DTD_NS_URI;
+  public static final java.lang.String RELAXNG_NS_URI;
+  public static final java.lang.String FEATURE_SECURE_PROCESSING;
+  public static final java.lang.String ACCESS_EXTERNAL_DTD;
+  public static final java.lang.String ACCESS_EXTERNAL_SCHEMA;
+  public static final java.lang.String ACCESS_EXTERNAL_STYLESHEET;
+  public static final java.lang.String USE_CATALOG;
+}

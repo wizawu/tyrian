@@ -1,0 +1,8 @@
+Compiled from "Analyser.java"
+final class jdk.nashorn.internal.runtime.regexp.joni.Analyser extends jdk.nashorn.internal.runtime.regexp.joni.Parser {
+  protected jdk.nashorn.internal.runtime.regexp.joni.Analyser(jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment, char[], int, int);
+  protected final void compile();
+  protected final int getCharLengthTree(jdk.nashorn.internal.runtime.regexp.joni.ast.Node);
+  protected final jdk.nashorn.internal.runtime.regexp.joni.ast.Node setupTree(jdk.nashorn.internal.runtime.regexp.joni.ast.Node, int);
+  protected final void setOptimizedInfoFromTree(jdk.nashorn.internal.runtime.regexp.joni.ast.Node);
+}

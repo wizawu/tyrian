@@ -1,0 +1,4 @@
+Compiled from "XPathDumper.java"
+public class com.sun.org.apache.xpath.internal.compiler.XPathDumper {
+  public com.sun.org.apache.xpath.internal.compiler.XPathDumper();
+}

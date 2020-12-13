@@ -1,0 +1,6 @@
+Compiled from "CharArrayWrapper.java"
+public class com.sun.org.apache.xml.internal.utils.res.CharArrayWrapper {
+  public com.sun.org.apache.xml.internal.utils.res.CharArrayWrapper(char[]);
+  public char getChar(int);
+  public int getLength();
+}

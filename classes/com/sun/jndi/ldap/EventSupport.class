@@ -1,0 +1,12 @@
+Compiled from "EventSupport.java"
+final class com.sun.jndi.ldap.EventSupport {
+  com.sun.jndi.ldap.EventSupport(com.sun.jndi.ldap.LdapCtx);
+  synchronized void addNamingListener(java.lang.String, int, javax.naming.event.NamingListener) throws javax.naming.NamingException;
+  synchronized void addNamingListener(java.lang.String, java.lang.String, javax.naming.directory.SearchControls, javax.naming.event.NamingListener) throws javax.naming.NamingException;
+  synchronized void removeNamingListener(javax.naming.event.NamingListener);
+  synchronized boolean hasUnsolicited();
+  synchronized void removeDeadNotifier(com.sun.jndi.ldap.NotifierArgs);
+  synchronized void fireUnsolicited(java.lang.Object);
+  synchronized void cleanup();
+  synchronized void queueEvent(java.util.EventObject, java.util.Vector<? extends javax.naming.event.NamingListener>);
+}

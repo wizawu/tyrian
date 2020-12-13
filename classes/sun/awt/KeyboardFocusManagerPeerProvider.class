@@ -1,0 +1,4 @@
+Compiled from "KeyboardFocusManagerPeerProvider.java"
+public interface sun.awt.KeyboardFocusManagerPeerProvider {
+  public abstract java.awt.peer.KeyboardFocusManagerPeer getKeyboardFocusManagerPeer();
+}

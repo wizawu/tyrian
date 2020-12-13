@@ -1,0 +1,12 @@
+Compiled from "ECParameters.java"
+public final class sun.security.util.ECParameters extends java.security.AlgorithmParametersSpi {
+  public static java.security.AlgorithmParameters getAlgorithmParameters(java.security.spec.ECParameterSpec) throws java.security.InvalidKeyException;
+  public sun.security.util.ECParameters();
+  protected void engineInit(java.security.spec.AlgorithmParameterSpec) throws java.security.spec.InvalidParameterSpecException;
+  protected void engineInit(byte[]) throws java.io.IOException;
+  protected void engineInit(byte[], java.lang.String) throws java.io.IOException;
+  protected <T extends java.security.spec.AlgorithmParameterSpec> T engineGetParameterSpec(java.lang.Class<T>) throws java.security.spec.InvalidParameterSpecException;
+  protected byte[] engineGetEncoded() throws java.io.IOException;
+  protected byte[] engineGetEncoded(java.lang.String) throws java.io.IOException;
+  protected java.lang.String engineToString();
+}

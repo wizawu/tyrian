@@ -1,0 +1,26 @@
+Compiled from "StringConcatHelper.java"
+final class java.lang.StringConcatHelper {
+  static int mixLen(int, boolean);
+  static int mixLen(int, byte);
+  static int mixLen(int, char);
+  static int mixLen(int, short);
+  static int mixLen(int, int);
+  static int mixLen(int, long);
+  static int mixLen(int, java.lang.String);
+  static byte mixCoder(byte, char);
+  static byte mixCoder(byte, java.lang.String);
+  static byte mixCoder(byte, boolean);
+  static byte mixCoder(byte, byte);
+  static byte mixCoder(byte, short);
+  static byte mixCoder(byte, int);
+  static byte mixCoder(byte, long);
+  static int prepend(int, byte[], byte, boolean);
+  static int prepend(int, byte[], byte, byte);
+  static int prepend(int, byte[], byte, char);
+  static int prepend(int, byte[], byte, short);
+  static int prepend(int, byte[], byte, int);
+  static int prepend(int, byte[], byte, long);
+  static int prepend(int, byte[], byte, java.lang.String);
+  static java.lang.String newString(byte[], int, byte);
+  static byte initialCoder();
+}

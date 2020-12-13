@@ -1,0 +1,8 @@
+Compiled from "ScannerInputReader.java"
+public class sun.tools.java.ScannerInputReader extends java.io.FilterReader implements sun.tools.java.Constants {
+  sun.tools.java.Environment env;
+  long pos;
+  public sun.tools.java.ScannerInputReader(sun.tools.java.Environment, java.io.InputStream) throws java.io.UnsupportedEncodingException;
+  public int read(char[], int, int);
+  public int read() throws java.io.IOException;
+}

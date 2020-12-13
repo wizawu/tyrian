@@ -1,0 +1,7 @@
+Compiled from "Otherwise.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.Otherwise extends com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.Otherwise();
+  public void display(int);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

@@ -1,0 +1,5 @@
+Compiled from "NativeLibLoader.java"
+class sun.awt.image.NativeLibLoader {
+  sun.awt.image.NativeLibLoader();
+  static void loadLibraries();
+}

@@ -1,0 +1,5 @@
+Compiled from "ConstructorScope.java"
+public class sun.reflect.generics.scope.ConstructorScope extends sun.reflect.generics.scope.AbstractScope<java.lang.reflect.Constructor<?>> {
+  protected sun.reflect.generics.scope.Scope computeEnclosingScope();
+  public static sun.reflect.generics.scope.ConstructorScope make(java.lang.reflect.Constructor<?>);
+}

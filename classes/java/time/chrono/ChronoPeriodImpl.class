@@ -1,0 +1,25 @@
+Compiled from "ChronoPeriodImpl.java"
+final class java.time.chrono.ChronoPeriodImpl implements java.time.chrono.ChronoPeriod,java.io.Serializable {
+  final int years;
+  final int months;
+  final int days;
+  java.time.chrono.ChronoPeriodImpl(java.time.chrono.Chronology, int, int, int);
+  public long get(java.time.temporal.TemporalUnit);
+  public java.util.List<java.time.temporal.TemporalUnit> getUnits();
+  public java.time.chrono.Chronology getChronology();
+  public boolean isZero();
+  public boolean isNegative();
+  public java.time.chrono.ChronoPeriod plus(java.time.temporal.TemporalAmount);
+  public java.time.chrono.ChronoPeriod minus(java.time.temporal.TemporalAmount);
+  public java.time.chrono.ChronoPeriod multipliedBy(int);
+  public java.time.chrono.ChronoPeriod normalized();
+  public java.time.temporal.Temporal addTo(java.time.temporal.Temporal);
+  public java.time.temporal.Temporal subtractFrom(java.time.temporal.Temporal);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  protected java.lang.Object writeReplace();
+  void writeExternal(java.io.DataOutput) throws java.io.IOException;
+  static java.time.chrono.ChronoPeriodImpl readExternal(java.io.DataInput) throws java.io.IOException;
+  static {};
+}

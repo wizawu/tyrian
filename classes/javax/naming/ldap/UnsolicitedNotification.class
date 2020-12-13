@@ -1,0 +1,5 @@
+Compiled from "UnsolicitedNotification.java"
+public interface javax.naming.ldap.UnsolicitedNotification extends javax.naming.ldap.ExtendedResponse,javax.naming.ldap.HasControls {
+  public abstract java.lang.String[] getReferrals();
+  public abstract javax.naming.NamingException getException();
+}

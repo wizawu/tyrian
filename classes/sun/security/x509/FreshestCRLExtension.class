@@ -1,0 +1,7 @@
+Compiled from "FreshestCRLExtension.java"
+public class sun.security.x509.FreshestCRLExtension extends sun.security.x509.CRLDistributionPointsExtension {
+  public static final java.lang.String NAME;
+  public sun.security.x509.FreshestCRLExtension(java.util.List<sun.security.x509.DistributionPoint>) throws java.io.IOException;
+  public sun.security.x509.FreshestCRLExtension(java.lang.Boolean, java.lang.Object) throws java.io.IOException;
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+}

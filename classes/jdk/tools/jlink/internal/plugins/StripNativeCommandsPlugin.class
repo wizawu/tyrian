@@ -1,0 +1,9 @@
+Compiled from "StripNativeCommandsPlugin.java"
+public final class jdk.tools.jlink.internal.plugins.StripNativeCommandsPlugin implements jdk.tools.jlink.plugin.Plugin {
+  public static final java.lang.String NAME;
+  public jdk.tools.jlink.internal.plugins.StripNativeCommandsPlugin();
+  public java.lang.String getName();
+  public jdk.tools.jlink.plugin.Plugin$Category getType();
+  public jdk.tools.jlink.plugin.ResourcePool transform(jdk.tools.jlink.plugin.ResourcePool, jdk.tools.jlink.plugin.ResourcePoolBuilder);
+  public java.lang.String getDescription();
+}

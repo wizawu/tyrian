@@ -1,0 +1,9 @@
+Compiled from "ValueObjectImpl.java"
+final class com.sun.beans.decoder.ValueObjectImpl implements com.sun.beans.decoder.ValueObject {
+  static final com.sun.beans.decoder.ValueObject NULL;
+  static final com.sun.beans.decoder.ValueObject VOID;
+  static com.sun.beans.decoder.ValueObject create(java.lang.Object);
+  public java.lang.Object getValue();
+  public boolean isVoid();
+  static {};
+}

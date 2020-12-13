@@ -1,0 +1,26 @@
+Compiled from "CMap.java"
+abstract class sun.font.CMap {
+  static final short ShiftJISEncoding;
+  static final short GBKEncoding;
+  static final short Big5Encoding;
+  static final short WansungEncoding;
+  static final short JohabEncoding;
+  static final short MSUnicodeSurrogateEncoding;
+  static final char noSuchChar;
+  static final int SHORTMASK;
+  static final int INTMASK;
+  static final char[][] converterMaps;
+  char[] xlat;
+  sun.font.CMap$UVS uvs;
+  public static final sun.font.CMap$NullCMapClass theNullCmap;
+  sun.font.CMap();
+  static sun.font.CMap initialize(sun.font.TrueTypeFont);
+  static char[] getConverter(short);
+  static char[] getConverterMap(short);
+  static sun.font.CMap createCMap(java.nio.ByteBuffer, int, char[]);
+  abstract char getGlyph(int);
+  final int getControlCodeGlyph(int, boolean);
+  final char getFormatCharGlyph(int);
+  char getVariationGlyph(int, int);
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "PropertyVetoException.java"
+public class java.beans.PropertyVetoException extends java.lang.Exception {
+  public java.beans.PropertyVetoException(java.lang.String, java.beans.PropertyChangeEvent);
+  public java.beans.PropertyChangeEvent getPropertyChangeEvent();
+}

@@ -1,0 +1,7 @@
+Compiled from "HTMLUListElement.java"
+public interface org.w3c.dom.html.HTMLUListElement extends org.w3c.dom.html.HTMLElement {
+  public abstract boolean getCompact();
+  public abstract void setCompact(boolean);
+  public abstract java.lang.String getType();
+  public abstract void setType(java.lang.String);
+}

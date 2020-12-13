@@ -1,0 +1,27 @@
+Compiled from "Base64.java"
+public class com.sun.org.apache.xml.internal.security.utils.Base64 {
+  public static final int BASE64DEFAULTLENGTH;
+  static final byte[] getBytes(java.math.BigInteger, int);
+  public static final java.lang.String encode(java.math.BigInteger);
+  public static final byte[] encode(java.math.BigInteger, int);
+  public static final java.math.BigInteger decodeBigIntegerFromElement(org.w3c.dom.Element) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+  public static final java.math.BigInteger decodeBigIntegerFromText(org.w3c.dom.Text) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+  public static final void fillElementWithBigInteger(org.w3c.dom.Element, java.math.BigInteger);
+  public static final byte[] decode(org.w3c.dom.Element) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+  public static final org.w3c.dom.Element encodeToElement(org.w3c.dom.Document, java.lang.String, byte[]);
+  public static final byte[] decode(byte[]) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+  public static final java.lang.String encode(byte[]);
+  public static final byte[] decode(java.io.BufferedReader) throws java.io.IOException, com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+  protected static final boolean isWhiteSpace(byte);
+  protected static final boolean isPad(byte);
+  public static final java.lang.String encode(byte[], int);
+  public static final byte[] decode(java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+  protected static final int getBytesInternal(java.lang.String, byte[]);
+  protected static final byte[] decodeInternal(byte[], int) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException;
+  public static final void decode(java.lang.String, java.io.OutputStream) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException, java.io.IOException;
+  public static final void decode(byte[], java.io.OutputStream) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException, java.io.IOException;
+  protected static final void decode(byte[], java.io.OutputStream, int) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException, java.io.IOException;
+  public static final void decode(java.io.InputStream, java.io.OutputStream) throws com.sun.org.apache.xml.internal.security.exceptions.Base64DecodingException, java.io.IOException;
+  protected static final int removeWhiteSpace(byte[]);
+  static {};
+}

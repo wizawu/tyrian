@@ -1,0 +1,8 @@
+Compiled from "ExceptionSafePlugin.java"
+final class sun.tools.jconsole.ExceptionSafePlugin extends com.sun.tools.jconsole.JConsolePlugin {
+  public sun.tools.jconsole.ExceptionSafePlugin(com.sun.tools.jconsole.JConsolePlugin);
+  public java.util.Map<java.lang.String, javax.swing.JPanel> getTabs();
+  public javax.swing.SwingWorker<?, ?> newSwingWorker();
+  public void dispose();
+  public void executeSwingWorker(javax.swing.SwingWorker<?, ?>);
+}

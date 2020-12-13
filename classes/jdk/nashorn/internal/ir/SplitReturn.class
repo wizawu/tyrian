@@ -1,0 +1,8 @@
+Compiled from "SplitReturn.java"
+public final class jdk.nashorn.internal.ir.SplitReturn extends jdk.nashorn.internal.ir.Statement {
+  public static final jdk.nashorn.internal.ir.SplitReturn INSTANCE;
+  public boolean isTerminal();
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public void toString(java.lang.StringBuilder, boolean);
+  static {};
+}

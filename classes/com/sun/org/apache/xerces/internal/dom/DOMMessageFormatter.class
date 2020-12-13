@@ -1,0 +1,12 @@
+Compiled from "DOMMessageFormatter.java"
+public class com.sun.org.apache.xerces.internal.dom.DOMMessageFormatter {
+  public static final java.lang.String DOM_DOMAIN;
+  public static final java.lang.String XML_DOMAIN;
+  public static final java.lang.String SERIALIZER_DOMAIN;
+  com.sun.org.apache.xerces.internal.dom.DOMMessageFormatter();
+  public static java.lang.String formatMessage(java.lang.String, java.lang.String, java.lang.Object[]) throws java.util.MissingResourceException;
+  static java.util.ResourceBundle getResourceBundle(java.lang.String);
+  public static void init();
+  public static void setLocale(java.util.Locale);
+  static {};
+}

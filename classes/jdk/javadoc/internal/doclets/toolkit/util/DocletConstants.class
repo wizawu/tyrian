@@ -1,0 +1,11 @@
+Compiled from "DocletConstants.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.DocletConstants {
+  public static final int DEFAULT_TAB_STOP_LENGTH;
+  public static final java.lang.String NL;
+  public static final java.lang.String DEFAULT_PACKAGE_NAME;
+  public static final java.lang.String DEFAULT_ELEMENT_NAME;
+  public static final java.lang.String MODULE_PREFIX;
+  public static final java.lang.String DEFAULT_PACKAGE_FILE_NAME;
+  public jdk.javadoc.internal.doclets.toolkit.util.DocletConstants();
+  static {};
+}

@@ -1,0 +1,10 @@
+Compiled from "BasicToggleButtonUI.java"
+public class javax.swing.plaf.basic.BasicToggleButtonUI extends javax.swing.plaf.basic.BasicButtonUI {
+  public javax.swing.plaf.basic.BasicToggleButtonUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected java.lang.String getPropertyPrefix();
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paintIcon(java.awt.Graphics, javax.swing.AbstractButton, java.awt.Rectangle);
+  protected int getTextShiftOffset();
+  static {};
+}

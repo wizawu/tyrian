@@ -1,0 +1,18 @@
+Compiled from "XTextFieldEditor.java"
+public class sun.tools.jconsole.inspector.XTextFieldEditor extends sun.tools.jconsole.inspector.XTextField implements javax.swing.table.TableCellEditor {
+  protected javax.swing.event.EventListenerList evtListenerList;
+  protected javax.swing.event.ChangeEvent changeEvent;
+  public sun.tools.jconsole.inspector.XTextFieldEditor();
+  public void actionPerformed(java.awt.event.ActionEvent);
+  protected void dropSuccess();
+  public void addCellEditorListener(javax.swing.event.CellEditorListener);
+  public void removeCellEditorListener(javax.swing.event.CellEditorListener);
+  protected void fireEditingStopped();
+  protected void fireEditingCanceled();
+  public void cancelCellEditing();
+  public boolean stopCellEditing();
+  public boolean isCellEditable(java.util.EventObject);
+  public boolean shouldSelectCell(java.util.EventObject);
+  public java.lang.Object getCellEditorValue();
+  public java.awt.Component getTableCellEditorComponent(javax.swing.JTable, java.lang.Object, boolean, int, int);
+}

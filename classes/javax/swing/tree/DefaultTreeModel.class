@@ -1,0 +1,36 @@
+Compiled from "DefaultTreeModel.java"
+public class javax.swing.tree.DefaultTreeModel implements java.io.Serializable,javax.swing.tree.TreeModel {
+  protected javax.swing.tree.TreeNode root;
+  protected javax.swing.event.EventListenerList listenerList;
+  protected boolean asksAllowsChildren;
+  public javax.swing.tree.DefaultTreeModel(javax.swing.tree.TreeNode);
+  public javax.swing.tree.DefaultTreeModel(javax.swing.tree.TreeNode, boolean);
+  public void setAsksAllowsChildren(boolean);
+  public boolean asksAllowsChildren();
+  public void setRoot(javax.swing.tree.TreeNode);
+  public java.lang.Object getRoot();
+  public int getIndexOfChild(java.lang.Object, java.lang.Object);
+  public java.lang.Object getChild(java.lang.Object, int);
+  public int getChildCount(java.lang.Object);
+  public boolean isLeaf(java.lang.Object);
+  public void reload();
+  public void valueForPathChanged(javax.swing.tree.TreePath, java.lang.Object);
+  public void insertNodeInto(javax.swing.tree.MutableTreeNode, javax.swing.tree.MutableTreeNode, int);
+  public void removeNodeFromParent(javax.swing.tree.MutableTreeNode);
+  public void nodeChanged(javax.swing.tree.TreeNode);
+  public void reload(javax.swing.tree.TreeNode);
+  public void nodesWereInserted(javax.swing.tree.TreeNode, int[]);
+  public void nodesWereRemoved(javax.swing.tree.TreeNode, int[], java.lang.Object[]);
+  public void nodesChanged(javax.swing.tree.TreeNode, int[]);
+  public void nodeStructureChanged(javax.swing.tree.TreeNode);
+  public javax.swing.tree.TreeNode[] getPathToRoot(javax.swing.tree.TreeNode);
+  protected javax.swing.tree.TreeNode[] getPathToRoot(javax.swing.tree.TreeNode, int);
+  public void addTreeModelListener(javax.swing.event.TreeModelListener);
+  public void removeTreeModelListener(javax.swing.event.TreeModelListener);
+  public javax.swing.event.TreeModelListener[] getTreeModelListeners();
+  protected void fireTreeNodesChanged(java.lang.Object, java.lang.Object[], int[], java.lang.Object[]);
+  protected void fireTreeNodesInserted(java.lang.Object, java.lang.Object[], int[], java.lang.Object[]);
+  protected void fireTreeNodesRemoved(java.lang.Object, java.lang.Object[], int[], java.lang.Object[]);
+  protected void fireTreeStructureChanged(java.lang.Object, java.lang.Object[], int[], java.lang.Object[]);
+  public <T extends java.util.EventListener> T[] getListeners(java.lang.Class<T>);
+}

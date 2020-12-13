@@ -1,0 +1,4 @@
+Compiled from "XMLErrorResources_zh_HK.java"
+public class com.sun.org.apache.xml.internal.res.XMLErrorResources_zh_HK extends com.sun.org.apache.xml.internal.res.XMLErrorResources_zh_TW {
+  public com.sun.org.apache.xml.internal.res.XMLErrorResources_zh_HK();
+}

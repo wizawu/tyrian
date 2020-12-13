@@ -1,0 +1,15 @@
+Compiled from "BytecodeTableswitch.java"
+public class sun.jvm.hotspot.interpreter.BytecodeTableswitch extends sun.jvm.hotspot.interpreter.Bytecode {
+  sun.jvm.hotspot.interpreter.BytecodeTableswitch(sun.jvm.hotspot.oops.Method, int);
+  public int defaultOffset();
+  public int lowKey();
+  public int highKey();
+  public int length();
+  public int destOffsetAt(int);
+  public void verify();
+  public boolean isValid();
+  public static sun.jvm.hotspot.interpreter.BytecodeTableswitch at(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeTableswitch atCheck(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeTableswitch at(sun.jvm.hotspot.interpreter.BytecodeStream);
+  public java.lang.String toString();
+}

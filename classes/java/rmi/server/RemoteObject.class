@@ -1,0 +1,11 @@
+Compiled from "RemoteObject.java"
+public abstract class java.rmi.server.RemoteObject implements java.rmi.Remote,java.io.Serializable {
+  protected transient java.rmi.server.RemoteRef ref;
+  protected java.rmi.server.RemoteObject();
+  protected java.rmi.server.RemoteObject(java.rmi.server.RemoteRef);
+  public java.rmi.server.RemoteRef getRef();
+  public static java.rmi.Remote toStub(java.rmi.Remote) throws java.rmi.NoSuchObjectException;
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

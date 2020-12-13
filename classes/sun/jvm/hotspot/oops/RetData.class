@@ -1,0 +1,22 @@
+Compiled from "RetData.java"
+public class sun.jvm.hotspot.oops.RetData extends sun.jvm.hotspot.oops.CounterData {
+  static final int bci0Offset;
+  static final int count0Offset;
+  static final int displacement0Offset;
+  static final int retRowCellCount;
+  static final int noBci;
+  public sun.jvm.hotspot.oops.RetData(sun.jvm.hotspot.oops.DataLayout);
+  static int staticCellCount();
+  public int cellCount();
+  static int rowLimit();
+  static int bciCellIndex(int);
+  static int bciCountCellIndex(int);
+  static int bciDisplacementCellIndex(int);
+  int bci(int);
+  int bciCount(int);
+  int bciDisplacement(int);
+  static int bciOffset(int);
+  static int bciCountOffset(int);
+  static int bciDisplacementOffset(int);
+  public void printDataOn(java.io.PrintStream);
+}

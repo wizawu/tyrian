@@ -1,0 +1,32 @@
+Compiled from "Cursor.java"
+public class java.awt.Cursor implements java.io.Serializable {
+  public static final int DEFAULT_CURSOR;
+  public static final int CROSSHAIR_CURSOR;
+  public static final int TEXT_CURSOR;
+  public static final int WAIT_CURSOR;
+  public static final int SW_RESIZE_CURSOR;
+  public static final int SE_RESIZE_CURSOR;
+  public static final int NW_RESIZE_CURSOR;
+  public static final int NE_RESIZE_CURSOR;
+  public static final int N_RESIZE_CURSOR;
+  public static final int S_RESIZE_CURSOR;
+  public static final int W_RESIZE_CURSOR;
+  public static final int E_RESIZE_CURSOR;
+  public static final int HAND_CURSOR;
+  public static final int MOVE_CURSOR;
+  protected static java.awt.Cursor[] predefined;
+  static final java.lang.String[][] cursorProperties;
+  int type;
+  public static final int CUSTOM_CURSOR;
+  transient java.awt.Cursor$CursorDisposer disposer;
+  protected java.lang.String name;
+  public static java.awt.Cursor getPredefinedCursor(int);
+  public static java.awt.Cursor getSystemCustomCursor(java.lang.String) throws java.awt.AWTException, java.awt.HeadlessException;
+  public static java.awt.Cursor getDefaultCursor();
+  public java.awt.Cursor(int);
+  protected java.awt.Cursor(java.lang.String);
+  public int getType();
+  public java.lang.String getName();
+  public java.lang.String toString();
+  static {};
+}

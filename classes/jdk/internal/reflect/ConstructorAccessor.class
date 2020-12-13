@@ -1,0 +1,4 @@
+Compiled from "ConstructorAccessor.java"
+public interface jdk.internal.reflect.ConstructorAccessor {
+  public abstract java.lang.Object newInstance(java.lang.Object[]) throws java.lang.InstantiationException, java.lang.IllegalArgumentException, java.lang.reflect.InvocationTargetException;
+}

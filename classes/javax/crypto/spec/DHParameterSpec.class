@@ -1,0 +1,8 @@
+Compiled from "DHParameterSpec.java"
+public class javax.crypto.spec.DHParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public javax.crypto.spec.DHParameterSpec(java.math.BigInteger, java.math.BigInteger);
+  public javax.crypto.spec.DHParameterSpec(java.math.BigInteger, java.math.BigInteger, int);
+  public java.math.BigInteger getP();
+  public java.math.BigInteger getG();
+  public int getL();
+}

@@ -1,0 +1,32 @@
+Compiled from "Inet6Address.java"
+public final class java.net.Inet6Address extends java.net.InetAddress {
+  static final int INADDRSZ;
+  java.net.Inet6Address();
+  java.net.Inet6Address(java.lang.String, byte[], int);
+  java.net.Inet6Address(java.lang.String, byte[]);
+  java.net.Inet6Address(java.lang.String, byte[], java.net.NetworkInterface) throws java.net.UnknownHostException;
+  java.net.Inet6Address(java.lang.String, byte[], java.lang.String) throws java.net.UnknownHostException;
+  public static java.net.Inet6Address getByAddress(java.lang.String, byte[], java.net.NetworkInterface) throws java.net.UnknownHostException;
+  public static java.net.Inet6Address getByAddress(java.lang.String, byte[], int) throws java.net.UnknownHostException;
+  public boolean isMulticastAddress();
+  public boolean isAnyLocalAddress();
+  public boolean isLoopbackAddress();
+  public boolean isLinkLocalAddress();
+  static boolean isLinkLocalAddress(byte[]);
+  public boolean isSiteLocalAddress();
+  static boolean isSiteLocalAddress(byte[]);
+  public boolean isMCGlobal();
+  public boolean isMCNodeLocal();
+  public boolean isMCLinkLocal();
+  public boolean isMCSiteLocal();
+  public boolean isMCOrgLocal();
+  public byte[] getAddress();
+  public int getScopeId();
+  public java.net.NetworkInterface getScopedInterface();
+  public java.lang.String getHostAddress();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public boolean isIPv4CompatibleAddress();
+  static java.lang.String numericToTextFormat(byte[]);
+  static {};
+}

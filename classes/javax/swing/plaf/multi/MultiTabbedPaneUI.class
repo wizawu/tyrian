@@ -1,0 +1,20 @@
+Compiled from "MultiTabbedPaneUI.java"
+public class javax.swing.plaf.multi.MultiTabbedPaneUI extends javax.swing.plaf.TabbedPaneUI {
+  protected java.util.Vector<javax.swing.plaf.ComponentUI> uis;
+  public javax.swing.plaf.multi.MultiTabbedPaneUI();
+  public javax.swing.plaf.ComponentUI[] getUIs();
+  public int tabForCoordinate(javax.swing.JTabbedPane, int, int);
+  public java.awt.Rectangle getTabBounds(javax.swing.JTabbedPane, int);
+  public int getTabRunCount(javax.swing.JTabbedPane);
+  public boolean contains(javax.swing.JComponent, int, int);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  public int getAccessibleChildrenCount(javax.swing.JComponent);
+  public javax.accessibility.Accessible getAccessibleChild(javax.swing.JComponent, int);
+}

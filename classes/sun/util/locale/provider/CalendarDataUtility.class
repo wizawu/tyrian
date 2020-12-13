@@ -1,0 +1,13 @@
+Compiled from "CalendarDataUtility.java"
+public class sun.util.locale.provider.CalendarDataUtility {
+  public static final java.lang.String FIRST_DAY_OF_WEEK;
+  public static final java.lang.String MINIMAL_DAYS_IN_FIRST_WEEK;
+  public static int retrieveFirstDayOfWeek(java.util.Locale);
+  public static int retrieveMinimalDaysInFirstWeek(java.util.Locale);
+  public static java.lang.String retrieveFieldValueName(java.lang.String, int, int, int, java.util.Locale);
+  public static java.lang.String retrieveJavaTimeFieldValueName(java.lang.String, int, int, int, java.util.Locale);
+  public static java.util.Map<java.lang.String, java.lang.Integer> retrieveFieldValueNames(java.lang.String, int, int, java.util.Locale);
+  public static java.util.Map<java.lang.String, java.lang.Integer> retrieveJavaTimeFieldValueNames(java.lang.String, int, int, java.util.Locale);
+  public static java.util.Locale findRegionOverride(java.util.Locale);
+  static java.lang.String normalizeCalendarType(java.lang.String);
+}

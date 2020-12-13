@@ -1,0 +1,10 @@
+Compiled from "RawChannel.java"
+public interface jdk.internal.net.http.websocket.RawChannel extends java.io.Closeable {
+  public abstract void registerEvent(jdk.internal.net.http.websocket.RawChannel$RawEvent) throws java.io.IOException;
+  public abstract java.nio.ByteBuffer initialByteBuffer() throws java.lang.IllegalStateException;
+  public abstract java.nio.ByteBuffer read() throws java.io.IOException;
+  public abstract long write(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  public abstract void shutdownInput() throws java.io.IOException;
+  public abstract void shutdownOutput() throws java.io.IOException;
+  public abstract void close() throws java.io.IOException;
+}

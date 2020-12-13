@@ -1,0 +1,16 @@
+Compiled from "VirtualMachineImpl.java"
+public class sun.tools.attach.VirtualMachineImpl extends sun.tools.attach.HotSpotVirtualMachine {
+  java.lang.String socket_path;
+  static final boolean $assertionsDisabled;
+  sun.tools.attach.VirtualMachineImpl(com.sun.tools.attach.spi.AttachProvider, java.lang.String) throws com.sun.tools.attach.AttachNotSupportedException, java.io.IOException;
+  public void detach() throws java.io.IOException;
+  java.io.InputStream execute(java.lang.String, java.lang.Object...) throws com.sun.tools.attach.AgentLoadException, java.io.IOException;
+  static native void sendQuitTo(int) throws java.io.IOException;
+  static native void checkPermissions(java.lang.String) throws java.io.IOException;
+  static native int socket() throws java.io.IOException;
+  static native void connect(int, java.lang.String) throws java.io.IOException;
+  static native void close(int) throws java.io.IOException;
+  static native int read(int, byte[], int, int) throws java.io.IOException;
+  static native void write(int, byte[], int, int) throws java.io.IOException;
+  static {};
+}

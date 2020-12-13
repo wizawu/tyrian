@@ -1,0 +1,24 @@
+Compiled from "Convert.java"
+public class com.sun.tools.javac.util.Convert {
+  public com.sun.tools.javac.util.Convert();
+  public static int string2int(java.lang.String, int) throws java.lang.NumberFormatException;
+  public static long string2long(java.lang.String, int) throws java.lang.NumberFormatException;
+  public static int utf2chars(byte[], int, char[], int, int);
+  public static char[] utf2chars(byte[], int, int);
+  public static char[] utf2chars(byte[]);
+  public static java.lang.String utf2string(byte[], int, int);
+  public static java.lang.String utf2string(byte[]);
+  public static int chars2utf(char[], int, byte[], int, int);
+  public static byte[] chars2utf(char[], int, int);
+  public static byte[] chars2utf(char[]);
+  public static byte[] string2utf(java.lang.String);
+  public static java.lang.String quote(java.lang.String);
+  public static java.lang.String quote(char);
+  public static java.lang.String escapeUnicode(java.lang.String);
+  public static com.sun.tools.javac.util.Name shortName(com.sun.tools.javac.util.Name);
+  public static java.lang.String shortName(java.lang.String);
+  public static com.sun.tools.javac.util.Name packagePart(com.sun.tools.javac.util.Name);
+  public static java.lang.String packagePart(java.lang.String);
+  public static com.sun.tools.javac.util.List<com.sun.tools.javac.util.Name> enclosingCandidates(com.sun.tools.javac.util.Name);
+  public static com.sun.tools.javac.util.List<com.sun.tools.javac.util.Name> classCandidates(com.sun.tools.javac.util.Name);
+}

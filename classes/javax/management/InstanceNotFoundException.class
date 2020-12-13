@@ -1,0 +1,5 @@
+Compiled from "InstanceNotFoundException.java"
+public class javax.management.InstanceNotFoundException extends javax.management.OperationsException {
+  public javax.management.InstanceNotFoundException();
+  public javax.management.InstanceNotFoundException(java.lang.String);
+}

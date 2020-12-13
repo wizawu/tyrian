@@ -1,0 +1,10 @@
+Compiled from "TypeInfo.java"
+public interface org.w3c.dom.TypeInfo {
+  public static final int DERIVATION_RESTRICTION;
+  public static final int DERIVATION_EXTENSION;
+  public static final int DERIVATION_UNION;
+  public static final int DERIVATION_LIST;
+  public abstract java.lang.String getTypeName();
+  public abstract java.lang.String getTypeNamespace();
+  public abstract boolean isDerivedFrom(java.lang.String, java.lang.String, int);
+}

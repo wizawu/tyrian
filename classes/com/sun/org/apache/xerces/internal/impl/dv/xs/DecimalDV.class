@@ -1,0 +1,9 @@
+Compiled from "DecimalDV.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.xs.DecimalDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
+  public com.sun.org.apache.xerces.internal.impl.dv.xs.DecimalDV();
+  public final short getAllowedFacets();
+  public java.lang.Object getActualValue(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
+  public final int compare(java.lang.Object, java.lang.Object);
+  public final int getTotalDigits(java.lang.Object);
+  public final int getFractionDigits(java.lang.Object);
+}

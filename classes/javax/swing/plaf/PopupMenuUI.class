@@ -1,0 +1,6 @@
+Compiled from "PopupMenuUI.java"
+public abstract class javax.swing.plaf.PopupMenuUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.PopupMenuUI();
+  public boolean isPopupTrigger(java.awt.event.MouseEvent);
+  public javax.swing.Popup getPopup(javax.swing.JPopupMenu, int, int);
+}

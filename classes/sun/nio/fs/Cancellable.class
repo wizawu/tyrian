@@ -1,0 +1,11 @@
+Compiled from "Cancellable.java"
+abstract class sun.nio.fs.Cancellable implements java.lang.Runnable {
+  protected sun.nio.fs.Cancellable();
+  protected long addressToPollForCancel();
+  protected int cancelValue();
+  final void cancel();
+  public final void run();
+  abstract void implRun() throws java.lang.Throwable;
+  static void runInterruptibly(sun.nio.fs.Cancellable) throws java.util.concurrent.ExecutionException;
+  static {};
+}

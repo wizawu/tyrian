@@ -1,0 +1,5 @@
+Compiled from "ConstantExpression.java"
+class sun.tools.tree.ConstantExpression extends sun.tools.tree.Expression {
+  public sun.tools.tree.ConstantExpression(int, long, sun.tools.java.Type);
+  public boolean isConstant();
+}

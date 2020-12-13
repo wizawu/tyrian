@@ -1,0 +1,23 @@
+Compiled from "ParserConfigurationSettings.java"
+public class com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager {
+  protected static final java.lang.String PARSER_SETTINGS;
+  protected java.util.List<java.lang.String> fRecognizedProperties;
+  protected java.util.Map<java.lang.String, java.lang.Object> fProperties;
+  protected java.util.List<java.lang.String> fRecognizedFeatures;
+  protected java.util.Map<java.lang.String, java.lang.Boolean> fFeatures;
+  protected com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager fParentSettings;
+  public com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings();
+  public com.sun.org.apache.xerces.internal.util.ParserConfigurationSettings(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager);
+  public void addRecognizedFeatures(java.lang.String[]);
+  public void setFeature(java.lang.String, boolean) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public void addRecognizedProperties(java.lang.String[]);
+  public void setProperty(java.lang.String, java.lang.Object) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public boolean getFeature(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public final boolean getFeature(java.lang.String, boolean);
+  public com.sun.org.apache.xerces.internal.util.FeatureState getFeatureState(java.lang.String);
+  public java.lang.Object getProperty(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public final java.lang.Object getProperty(java.lang.String, java.lang.Object);
+  public com.sun.org.apache.xerces.internal.util.PropertyState getPropertyState(java.lang.String);
+  protected com.sun.org.apache.xerces.internal.util.FeatureState checkFeature(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  protected com.sun.org.apache.xerces.internal.util.PropertyState checkProperty(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+}

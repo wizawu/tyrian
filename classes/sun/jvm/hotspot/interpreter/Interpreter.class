@@ -1,0 +1,8 @@
+Compiled from "Interpreter.java"
+public class sun.jvm.hotspot.interpreter.Interpreter {
+  public sun.jvm.hotspot.interpreter.Interpreter();
+  public sun.jvm.hotspot.code.StubQueue getCode();
+  public boolean contains(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.interpreter.InterpreterCodelet getCodeletContaining(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

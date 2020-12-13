@@ -1,0 +1,4 @@
+Compiled from "ValidatorHelper.java"
+interface com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHelper {
+  public abstract void validate(javax.xml.transform.Source, javax.xml.transform.Result) throws org.xml.sax.SAXException, java.io.IOException;
+}

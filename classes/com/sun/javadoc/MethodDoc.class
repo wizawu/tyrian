@@ -1,0 +1,10 @@
+Compiled from "MethodDoc.java"
+public interface com.sun.javadoc.MethodDoc extends com.sun.javadoc.ExecutableMemberDoc {
+  public abstract boolean isAbstract();
+  public abstract boolean isDefault();
+  public abstract com.sun.javadoc.Type returnType();
+  public abstract com.sun.javadoc.ClassDoc overriddenClass();
+  public abstract com.sun.javadoc.Type overriddenType();
+  public abstract com.sun.javadoc.MethodDoc overriddenMethod();
+  public abstract boolean overrides(com.sun.javadoc.MethodDoc);
+}

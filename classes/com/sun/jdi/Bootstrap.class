@@ -1,0 +1,5 @@
+Compiled from "Bootstrap.java"
+public class com.sun.jdi.Bootstrap {
+  public com.sun.jdi.Bootstrap();
+  public static synchronized com.sun.jdi.VirtualMachineManager virtualMachineManager();
+}

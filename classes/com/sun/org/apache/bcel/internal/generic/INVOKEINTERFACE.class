@@ -1,0 +1,12 @@
+Compiled from "INVOKEINTERFACE.java"
+public final class com.sun.org.apache.bcel.internal.generic.INVOKEINTERFACE extends com.sun.org.apache.bcel.internal.generic.InvokeInstruction {
+  com.sun.org.apache.bcel.internal.generic.INVOKEINTERFACE();
+  public com.sun.org.apache.bcel.internal.generic.INVOKEINTERFACE(int, int);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public int getCount();
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public java.lang.String toString(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public int consumeStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

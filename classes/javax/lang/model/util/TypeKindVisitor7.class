@@ -1,0 +1,6 @@
+Compiled from "TypeKindVisitor7.java"
+public class javax.lang.model.util.TypeKindVisitor7<R, P> extends javax.lang.model.util.TypeKindVisitor6<R, P> {
+  protected javax.lang.model.util.TypeKindVisitor7();
+  protected javax.lang.model.util.TypeKindVisitor7(R);
+  public R visitUnion(javax.lang.model.type.UnionType, P);
+}

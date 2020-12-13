@@ -1,0 +1,3 @@
+Compiled from "Ignore.java"
+public interface jdk.nashorn.internal.ir.annotations.Ignore extends java.lang.annotation.Annotation {
+}

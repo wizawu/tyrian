@@ -1,0 +1,6 @@
+Compiled from "DSAParams.java"
+public interface java.security.interfaces.DSAParams {
+  public abstract java.math.BigInteger getP();
+  public abstract java.math.BigInteger getQ();
+  public abstract java.math.BigInteger getG();
+}

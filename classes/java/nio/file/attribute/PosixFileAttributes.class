@@ -1,0 +1,6 @@
+Compiled from "PosixFileAttributes.java"
+public interface java.nio.file.attribute.PosixFileAttributes extends java.nio.file.attribute.BasicFileAttributes {
+  public abstract java.nio.file.attribute.UserPrincipal owner();
+  public abstract java.nio.file.attribute.GroupPrincipal group();
+  public abstract java.util.Set<java.nio.file.attribute.PosixFilePermission> permissions();
+}

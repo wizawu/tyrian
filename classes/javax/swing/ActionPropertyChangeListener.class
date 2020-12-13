@@ -1,0 +1,8 @@
+Compiled from "ActionPropertyChangeListener.java"
+abstract class javax.swing.ActionPropertyChangeListener<T extends javax.swing.JComponent> implements java.beans.PropertyChangeListener, java.io.Serializable {
+  public javax.swing.ActionPropertyChangeListener(T, javax.swing.Action);
+  public final void propertyChange(java.beans.PropertyChangeEvent);
+  protected abstract void actionPropertyChanged(T, javax.swing.Action, java.beans.PropertyChangeEvent);
+  public T getTarget();
+  public javax.swing.Action getAction();
+}

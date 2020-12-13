@@ -1,0 +1,25 @@
+Compiled from "Trie.java"
+public abstract class sun.text.normalizer.Trie {
+  protected static final int LEAD_INDEX_OFFSET_;
+  protected static final int INDEX_STAGE_1_SHIFT_;
+  protected static final int INDEX_STAGE_2_SHIFT_;
+  protected static final int DATA_BLOCK_LENGTH;
+  protected static final int INDEX_STAGE_3_MASK_;
+  protected static final int SURROGATE_MASK_;
+  protected char[] m_index_;
+  protected sun.text.normalizer.Trie$DataManipulate m_dataManipulate_;
+  protected int m_dataOffset_;
+  protected int m_dataLength_;
+  protected static final int HEADER_OPTIONS_LATIN1_IS_LINEAR_MASK_;
+  protected static final int HEADER_SIGNATURE_;
+  protected static final int HEADER_OPTIONS_INDEX_SHIFT_;
+  protected static final int HEADER_OPTIONS_DATA_IS_32_BIT_;
+  protected sun.text.normalizer.Trie(java.io.InputStream, sun.text.normalizer.Trie$DataManipulate) throws java.io.IOException;
+  protected abstract int getSurrogateOffset(char, char);
+  protected final int getRawOffset(int, char);
+  protected final int getBMPOffset(char);
+  protected final int getLeadOffset(char);
+  protected final int getCodePointOffset(int);
+  protected void unserialize(java.io.InputStream) throws java.io.IOException;
+  protected final boolean isCharTrie();
+}

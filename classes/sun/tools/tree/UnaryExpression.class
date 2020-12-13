@@ -1,0 +1,21 @@
+Compiled from "UnaryExpression.java"
+public class sun.tools.tree.UnaryExpression extends sun.tools.tree.Expression {
+  sun.tools.tree.Expression right;
+  sun.tools.tree.UnaryExpression(int, long, sun.tools.java.Type, sun.tools.tree.Expression);
+  public sun.tools.tree.Expression order();
+  void selectType(sun.tools.java.Environment, sun.tools.tree.Context, int);
+  public sun.tools.tree.Vset checkValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public boolean isConstant();
+  sun.tools.tree.Expression eval(int);
+  sun.tools.tree.Expression eval(long);
+  sun.tools.tree.Expression eval(float);
+  sun.tools.tree.Expression eval(double);
+  sun.tools.tree.Expression eval(boolean);
+  sun.tools.tree.Expression eval(java.lang.String);
+  sun.tools.tree.Expression eval();
+  public sun.tools.tree.Expression inline(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Expression inlineValue(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Expression copyInline(sun.tools.tree.Context);
+  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
+  public void print(java.io.PrintStream);
+}

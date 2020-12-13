@@ -1,0 +1,14 @@
+Compiled from "NativeEvalError.java"
+public final class jdk.nashorn.internal.objects.NativeEvalError extends jdk.nashorn.internal.runtime.ScriptObject {
+  public java.lang.Object instMessage;
+  public java.lang.Object nashornException;
+  jdk.nashorn.internal.objects.NativeEvalError(java.lang.Object, jdk.nashorn.internal.objects.Global);
+  public java.lang.String getClassName();
+  public static jdk.nashorn.internal.objects.NativeEvalError constructor(boolean, java.lang.Object, java.lang.Object);
+  public static {};
+  public static void $clinit$();
+  public java.lang.Object G$instMessage();
+  public void S$instMessage(java.lang.Object);
+  public java.lang.Object G$nashornException();
+  public void S$nashornException(java.lang.Object);
+}

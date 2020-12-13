@@ -1,0 +1,22 @@
+Compiled from "XSNamedMapImpl.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.util.XSNamedMapImpl extends java.util.AbstractMap<javax.xml.namespace.QName, com.sun.org.apache.xerces.internal.xs.XSObject> implements com.sun.org.apache.xerces.internal.xs.XSNamedMap {
+  public static final com.sun.org.apache.xerces.internal.impl.xs.util.XSNamedMapImpl EMPTY_MAP;
+  final java.lang.String[] fNamespaces;
+  final int fNSNum;
+  final com.sun.org.apache.xerces.internal.util.SymbolHash[] fMaps;
+  com.sun.org.apache.xerces.internal.xs.XSObject[] fArray;
+  int fLength;
+  public com.sun.org.apache.xerces.internal.impl.xs.util.XSNamedMapImpl(java.lang.String, com.sun.org.apache.xerces.internal.util.SymbolHash);
+  public com.sun.org.apache.xerces.internal.impl.xs.util.XSNamedMapImpl(java.lang.String[], com.sun.org.apache.xerces.internal.util.SymbolHash[], int);
+  public com.sun.org.apache.xerces.internal.impl.xs.util.XSNamedMapImpl(com.sun.org.apache.xerces.internal.xs.XSObject[], int);
+  public synchronized int getLength();
+  public com.sun.org.apache.xerces.internal.xs.XSObject itemByName(java.lang.String, java.lang.String);
+  public synchronized com.sun.org.apache.xerces.internal.xs.XSObject item(int);
+  static boolean isEqual(java.lang.String, java.lang.String);
+  public boolean containsKey(java.lang.Object);
+  public com.sun.org.apache.xerces.internal.xs.XSObject get(java.lang.Object);
+  public int size();
+  public synchronized java.util.Set<java.util.Map$Entry<javax.xml.namespace.QName, com.sun.org.apache.xerces.internal.xs.XSObject>> entrySet();
+  public java.lang.Object get(java.lang.Object);
+  static {};
+}

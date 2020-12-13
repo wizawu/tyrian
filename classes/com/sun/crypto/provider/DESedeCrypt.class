@@ -1,0 +1,7 @@
+Compiled from "DESedeCrypt.java"
+final class com.sun.crypto.provider.DESedeCrypt extends com.sun.crypto.provider.DESCrypt implements com.sun.crypto.provider.DESConstants {
+  com.sun.crypto.provider.DESedeCrypt();
+  void init(boolean, java.lang.String, byte[]) throws java.security.InvalidKeyException;
+  void encryptBlock(byte[], int, byte[], int);
+  void decryptBlock(byte[], int, byte[], int);
+}

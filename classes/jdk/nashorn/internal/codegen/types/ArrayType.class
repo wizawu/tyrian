@@ -1,0 +1,24 @@
+Compiled from "ArrayType.java"
+public class jdk.nashorn.internal.codegen.types.ArrayType extends jdk.nashorn.internal.codegen.types.ObjectType implements jdk.nashorn.internal.codegen.types.BytecodeArrayOps {
+  static final boolean $assertionsDisabled;
+  protected jdk.nashorn.internal.codegen.types.ArrayType(java.lang.Class<?>);
+  public jdk.nashorn.internal.codegen.types.Type getElementType();
+  public void astore(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.nashorn.internal.codegen.types.Type aload(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.nashorn.internal.codegen.types.Type arraylength(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.nashorn.internal.codegen.types.Type newarray(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.nashorn.internal.codegen.types.Type newarray(jdk.internal.org.objectweb.asm.MethodVisitor, int);
+  public jdk.nashorn.internal.codegen.types.Type load(jdk.internal.org.objectweb.asm.MethodVisitor, int);
+  public java.lang.String toString();
+  public jdk.nashorn.internal.codegen.types.Type convert(jdk.internal.org.objectweb.asm.MethodVisitor, jdk.nashorn.internal.codegen.types.Type);
+  public char getBytecodeStackType();
+  public void _return(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.nashorn.internal.codegen.types.Type ldc(jdk.internal.org.objectweb.asm.MethodVisitor, java.lang.Object);
+  public jdk.nashorn.internal.codegen.types.Type loadEmpty(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.nashorn.internal.codegen.types.Type loadForcedInitializer(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.nashorn.internal.codegen.types.Type loadUndefined(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public void store(jdk.internal.org.objectweb.asm.MethodVisitor, int);
+  public jdk.nashorn.internal.codegen.types.Type add(jdk.internal.org.objectweb.asm.MethodVisitor, int);
+  public java.lang.String getShortDescriptor();
+  static {};
+}

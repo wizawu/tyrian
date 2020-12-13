@@ -1,0 +1,8 @@
+Compiled from "BinaryExceptionHandler.java"
+public class sun.tools.java.BinaryExceptionHandler {
+  public int startPC;
+  public int endPC;
+  public int handlerPC;
+  public sun.tools.java.ClassDeclaration exceptionClass;
+  sun.tools.java.BinaryExceptionHandler(int, int, int, sun.tools.java.ClassDeclaration);
+}

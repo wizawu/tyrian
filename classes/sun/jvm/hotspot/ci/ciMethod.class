@@ -1,0 +1,13 @@
+Compiled from "ciMethod.java"
+public class sun.jvm.hotspot.ci.ciMethod extends sun.jvm.hotspot.ci.ciMetadata {
+  public sun.jvm.hotspot.ci.ciMethod(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.oops.Method method();
+  public int interpreterThrowoutCount();
+  public int interpreterInvocationCount();
+  public int instructionsSize();
+  public void printShortName(java.io.PrintStream);
+  public void dumpReplayData(java.io.PrintStream);
+  public void printValueOn(java.io.PrintStream);
+  public java.lang.String nameAsAscii();
+  static {};
+}

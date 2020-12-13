@@ -1,0 +1,13 @@
+Compiled from "SPARCRegisterMap.java"
+public class sun.jvm.hotspot.runtime.sparc.SPARCRegisterMap extends sun.jvm.hotspot.runtime.RegisterMap {
+  public sun.jvm.hotspot.runtime.sparc.SPARCRegisterMap(sun.jvm.hotspot.runtime.JavaThread, boolean);
+  protected sun.jvm.hotspot.runtime.sparc.SPARCRegisterMap(sun.jvm.hotspot.runtime.RegisterMap);
+  public java.lang.Object clone();
+  protected void clearPD();
+  protected sun.jvm.hotspot.debugger.Address getLocationPD(sun.jvm.hotspot.runtime.VMReg);
+  protected void initializePD();
+  protected void initializeFromPD(sun.jvm.hotspot.runtime.RegisterMap);
+  public void shiftWindow(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
+  public void makeIntegerRegsUnsaved();
+  static {};
+}

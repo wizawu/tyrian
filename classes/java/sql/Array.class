@@ -1,0 +1,14 @@
+Compiled from "Array.java"
+public interface java.sql.Array {
+  public abstract java.lang.String getBaseTypeName() throws java.sql.SQLException;
+  public abstract int getBaseType() throws java.sql.SQLException;
+  public abstract java.lang.Object getArray() throws java.sql.SQLException;
+  public abstract java.lang.Object getArray(java.util.Map<java.lang.String, java.lang.Class<?>>) throws java.sql.SQLException;
+  public abstract java.lang.Object getArray(long, int) throws java.sql.SQLException;
+  public abstract java.lang.Object getArray(long, int, java.util.Map<java.lang.String, java.lang.Class<?>>) throws java.sql.SQLException;
+  public abstract java.sql.ResultSet getResultSet() throws java.sql.SQLException;
+  public abstract java.sql.ResultSet getResultSet(java.util.Map<java.lang.String, java.lang.Class<?>>) throws java.sql.SQLException;
+  public abstract java.sql.ResultSet getResultSet(long, int) throws java.sql.SQLException;
+  public abstract java.sql.ResultSet getResultSet(long, int, java.util.Map<java.lang.String, java.lang.Class<?>>) throws java.sql.SQLException;
+  public abstract void free() throws java.sql.SQLException;
+}

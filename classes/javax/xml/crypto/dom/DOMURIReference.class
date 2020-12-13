@@ -1,0 +1,4 @@
+Compiled from "DOMURIReference.java"
+public interface javax.xml.crypto.dom.DOMURIReference extends javax.xml.crypto.URIReference {
+  public abstract org.w3c.dom.Node getHere();
+}

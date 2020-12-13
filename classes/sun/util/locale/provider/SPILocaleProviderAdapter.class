@@ -1,0 +1,6 @@
+Compiled from "SPILocaleProviderAdapter.java"
+public class sun.util.locale.provider.SPILocaleProviderAdapter extends sun.util.locale.provider.AuxLocaleProviderAdapter {
+  public sun.util.locale.provider.SPILocaleProviderAdapter();
+  public sun.util.locale.provider.LocaleProviderAdapter$Type getAdapterType();
+  protected <P extends java.util.spi.LocaleServiceProvider> P findInstalledProvider(java.lang.Class<P>);
+}

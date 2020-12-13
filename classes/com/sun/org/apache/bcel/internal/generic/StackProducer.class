@@ -1,0 +1,4 @@
+Compiled from "StackProducer.java"
+public interface com.sun.org.apache.bcel.internal.generic.StackProducer {
+  public abstract int produceStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+}

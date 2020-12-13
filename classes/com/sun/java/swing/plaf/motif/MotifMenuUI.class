@@ -1,0 +1,7 @@
+Compiled from "MotifMenuUI.java"
+public class com.sun.java.swing.plaf.motif.MotifMenuUI extends javax.swing.plaf.basic.BasicMenuUI {
+  public com.sun.java.swing.plaf.motif.MotifMenuUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected javax.swing.event.ChangeListener createChangeListener(javax.swing.JComponent);
+  protected javax.swing.event.MouseInputListener createMouseInputListener(javax.swing.JComponent);
+}

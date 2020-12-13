@@ -1,0 +1,6 @@
+Compiled from "ObjectList.java"
+public interface com.sun.org.apache.xerces.internal.xs.datatypes.ObjectList extends java.util.List<java.lang.Object> {
+  public abstract int getLength();
+  public abstract boolean contains(java.lang.Object);
+  public abstract java.lang.Object item(int);
+}

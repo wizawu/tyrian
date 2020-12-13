@@ -1,0 +1,8 @@
+Compiled from "CompileTask.java"
+public class sun.jvm.hotspot.compiler.CompileTask extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.compiler.CompileTask(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.oops.Method method();
+  public int osrBci();
+  public int compLevel();
+  static {};
+}

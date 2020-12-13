@@ -1,0 +1,31 @@
+Compiled from "StandardParserConfiguration.java"
+public class com.sun.org.apache.xerces.internal.parsers.StandardParserConfiguration extends com.sun.org.apache.xerces.internal.parsers.DTDConfiguration {
+  protected static final java.lang.String NORMALIZE_DATA;
+  protected static final java.lang.String SCHEMA_ELEMENT_DEFAULT;
+  protected static final java.lang.String SCHEMA_AUGMENT_PSVI;
+  protected static final java.lang.String XMLSCHEMA_VALIDATION;
+  protected static final java.lang.String XMLSCHEMA_FULL_CHECKING;
+  protected static final java.lang.String GENERATE_SYNTHETIC_ANNOTATIONS;
+  protected static final java.lang.String VALIDATE_ANNOTATIONS;
+  protected static final java.lang.String HONOUR_ALL_SCHEMALOCATIONS;
+  protected static final java.lang.String IGNORE_XSI_TYPE;
+  protected static final java.lang.String ID_IDREF_CHECKING;
+  protected static final java.lang.String UNPARSED_ENTITY_CHECKING;
+  protected static final java.lang.String IDENTITY_CONSTRAINT_CHECKING;
+  protected static final java.lang.String NAMESPACE_GROWTH;
+  protected static final java.lang.String TOLERATE_DUPLICATES;
+  protected static final java.lang.String SCHEMA_VALIDATOR;
+  protected static final java.lang.String SCHEMA_LOCATION;
+  protected static final java.lang.String SCHEMA_NONS_LOCATION;
+  protected static final java.lang.String SCHEMA_DV_FACTORY;
+  protected static final java.lang.String ROOT_TYPE_DEF;
+  protected static final java.lang.String ROOT_ELEMENT_DECL;
+  protected com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator fSchemaValidator;
+  public com.sun.org.apache.xerces.internal.parsers.StandardParserConfiguration();
+  public com.sun.org.apache.xerces.internal.parsers.StandardParserConfiguration(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public com.sun.org.apache.xerces.internal.parsers.StandardParserConfiguration(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
+  public com.sun.org.apache.xerces.internal.parsers.StandardParserConfiguration(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool, com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager);
+  protected void configurePipeline();
+  protected com.sun.org.apache.xerces.internal.util.FeatureState checkFeature(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  protected com.sun.org.apache.xerces.internal.util.PropertyState checkProperty(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+}

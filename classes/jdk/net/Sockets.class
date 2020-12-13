@@ -1,0 +1,12 @@
+Compiled from "Sockets.java"
+public class jdk.net.Sockets {
+  public static <T> void setOption(java.net.Socket, java.net.SocketOption<T>, T) throws java.io.IOException;
+  public static <T> T getOption(java.net.Socket, java.net.SocketOption<T>) throws java.io.IOException;
+  public static <T> void setOption(java.net.ServerSocket, java.net.SocketOption<T>, T) throws java.io.IOException;
+  public static <T> T getOption(java.net.ServerSocket, java.net.SocketOption<T>) throws java.io.IOException;
+  public static <T> void setOption(java.net.DatagramSocket, java.net.SocketOption<T>, T) throws java.io.IOException;
+  public static <T> T getOption(java.net.DatagramSocket, java.net.SocketOption<T>) throws java.io.IOException;
+  public static java.util.Set<java.net.SocketOption<?>> supportedOptions(java.lang.Class<?>);
+  static boolean isReusePortAvailable();
+  static {};
+}

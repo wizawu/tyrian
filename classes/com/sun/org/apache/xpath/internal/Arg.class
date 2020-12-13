@@ -1,0 +1,19 @@
+Compiled from "Arg.java"
+public class com.sun.org.apache.xpath.internal.Arg {
+  public final com.sun.org.apache.xml.internal.utils.QName getQName();
+  public final void setQName(com.sun.org.apache.xml.internal.utils.QName);
+  public final com.sun.org.apache.xpath.internal.objects.XObject getVal();
+  public final void setVal(com.sun.org.apache.xpath.internal.objects.XObject);
+  public void detach();
+  public java.lang.String getExpression();
+  public void setExpression(java.lang.String);
+  public boolean isFromWithParam();
+  public boolean isVisible();
+  public void setIsVisible(boolean);
+  public com.sun.org.apache.xpath.internal.Arg();
+  public com.sun.org.apache.xpath.internal.Arg(com.sun.org.apache.xml.internal.utils.QName, java.lang.String, boolean);
+  public com.sun.org.apache.xpath.internal.Arg(com.sun.org.apache.xml.internal.utils.QName, com.sun.org.apache.xpath.internal.objects.XObject);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public com.sun.org.apache.xpath.internal.Arg(com.sun.org.apache.xml.internal.utils.QName, com.sun.org.apache.xpath.internal.objects.XObject, boolean);
+}

@@ -1,0 +1,7 @@
+Compiled from "JMXProviderException.java"
+public class javax.management.remote.JMXProviderException extends java.io.IOException {
+  public javax.management.remote.JMXProviderException();
+  public javax.management.remote.JMXProviderException(java.lang.String);
+  public javax.management.remote.JMXProviderException(java.lang.String, java.lang.Throwable);
+  public java.lang.Throwable getCause();
+}

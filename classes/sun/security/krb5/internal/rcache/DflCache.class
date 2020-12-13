@@ -1,0 +1,6 @@
+Compiled from "DflCache.java"
+public class sun.security.krb5.internal.rcache.DflCache extends sun.security.krb5.internal.ReplayCache {
+  public sun.security.krb5.internal.rcache.DflCache(java.lang.String);
+  public void checkAndStore(sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.rcache.AuthTimeWithHash) throws sun.security.krb5.internal.KrbApErrException;
+  static {};
+}

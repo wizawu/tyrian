@@ -1,0 +1,4 @@
+Compiled from "UnsupportedLookAndFeelException.java"
+public class javax.swing.UnsupportedLookAndFeelException extends java.lang.Exception {
+  public javax.swing.UnsupportedLookAndFeelException(java.lang.String);
+}

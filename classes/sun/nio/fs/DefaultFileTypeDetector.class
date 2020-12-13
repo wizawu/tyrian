@@ -1,0 +1,4 @@
+Compiled from "DefaultFileTypeDetector.java"
+public class sun.nio.fs.DefaultFileTypeDetector {
+  public static java.nio.file.spi.FileTypeDetector create();
+}

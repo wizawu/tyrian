@@ -1,0 +1,22 @@
+Compiled from "PlatformFont.java"
+public abstract class sun.awt.PlatformFont implements java.awt.peer.FontPeer {
+  protected sun.awt.FontDescriptor[] componentFonts;
+  protected char defaultChar;
+  protected sun.awt.FontConfiguration fontConfig;
+  protected sun.awt.FontDescriptor defaultFont;
+  protected java.lang.String familyName;
+  protected static int FONTCACHESIZE;
+  protected static int FONTCACHEMASK;
+  protected static java.lang.String osVersion;
+  public sun.awt.PlatformFont(java.lang.String, int);
+  protected abstract char getMissingGlyphCharacter();
+  public sun.awt.CharsetString[] makeMultiCharsetString(java.lang.String);
+  public sun.awt.CharsetString[] makeMultiCharsetString(java.lang.String, boolean);
+  public sun.awt.CharsetString[] makeMultiCharsetString(char[], int, int);
+  public sun.awt.CharsetString[] makeMultiCharsetString(char[], int, int, boolean);
+  public boolean mightHaveMultiFontMetrics();
+  public java.lang.Object[] makeConvertedMultiFontString(java.lang.String);
+  public java.lang.Object[] makeConvertedMultiFontChars(char[], int, int);
+  protected final java.lang.Object[] getFontCache();
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "PublicApiCollector.java"
+public class com.sun.tools.sjavac.comp.dependencies.PublicApiCollector implements com.sun.source.util.TaskListener {
+  public com.sun.tools.sjavac.comp.dependencies.PublicApiCollector(com.sun.tools.javac.util.Context, java.util.Collection<javax.tools.JavaFileObject>);
+  public void finished(com.sun.source.util.TaskEvent);
+  public java.util.Map<java.lang.String, com.sun.tools.sjavac.pubapi.PubApi> getPubApis(boolean);
+}

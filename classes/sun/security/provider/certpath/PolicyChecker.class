@@ -1,0 +1,15 @@
+Compiled from "PolicyChecker.java"
+class sun.security.provider.certpath.PolicyChecker extends java.security.cert.PKIXCertPathChecker {
+  static final java.lang.String ANY_POLICY;
+  sun.security.provider.certpath.PolicyChecker(java.util.Set<java.lang.String>, int, boolean, boolean, boolean, boolean, sun.security.provider.certpath.PolicyNodeImpl);
+  public void init(boolean) throws java.security.cert.CertPathValidatorException;
+  public boolean isForwardCheckingSupported();
+  public java.util.Set<java.lang.String> getSupportedExtensions();
+  public void check(java.security.cert.Certificate, java.util.Collection<java.lang.String>) throws java.security.cert.CertPathValidatorException;
+  static int mergeExplicitPolicy(int, sun.security.x509.X509CertImpl, boolean) throws java.security.cert.CertPathValidatorException;
+  static int mergePolicyMapping(int, sun.security.x509.X509CertImpl) throws java.security.cert.CertPathValidatorException;
+  static int mergeInhibitAnyPolicy(int, sun.security.x509.X509CertImpl) throws java.security.cert.CertPathValidatorException;
+  static sun.security.provider.certpath.PolicyNodeImpl processPolicies(int, java.util.Set<java.lang.String>, int, int, int, boolean, sun.security.provider.certpath.PolicyNodeImpl, sun.security.x509.X509CertImpl, boolean) throws java.security.cert.CertPathValidatorException;
+  java.security.cert.PolicyNode getPolicyTree();
+  static {};
+}

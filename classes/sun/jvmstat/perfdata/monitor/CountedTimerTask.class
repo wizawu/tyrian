@@ -1,0 +1,7 @@
+Compiled from "CountedTimerTask.java"
+public class sun.jvmstat.perfdata.monitor.CountedTimerTask extends java.util.TimerTask {
+  volatile long executionCount;
+  public sun.jvmstat.perfdata.monitor.CountedTimerTask();
+  public long executionCount();
+  public void run();
+}

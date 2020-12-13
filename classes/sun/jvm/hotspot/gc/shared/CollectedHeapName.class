@@ -1,0 +1,12 @@
+Compiled from "CollectedHeapName.java"
+public class sun.jvm.hotspot.gc.shared.CollectedHeapName {
+  public static final sun.jvm.hotspot.gc.shared.CollectedHeapName SERIAL;
+  public static final sun.jvm.hotspot.gc.shared.CollectedHeapName PARALLEL;
+  public static final sun.jvm.hotspot.gc.shared.CollectedHeapName CMS;
+  public static final sun.jvm.hotspot.gc.shared.CollectedHeapName G1;
+  public static final sun.jvm.hotspot.gc.shared.CollectedHeapName EPSILON;
+  public static final sun.jvm.hotspot.gc.shared.CollectedHeapName Z;
+  public static final sun.jvm.hotspot.gc.shared.CollectedHeapName SHENANDOAH;
+  public java.lang.String toString();
+  static {};
+}

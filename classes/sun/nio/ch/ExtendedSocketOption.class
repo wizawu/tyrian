@@ -1,0 +1,5 @@
+Compiled from "ExtendedSocketOption.java"
+class sun.nio.ch.ExtendedSocketOption {
+  static final java.net.SocketOption<java.lang.Boolean> SO_OOBINLINE;
+  static {};
+}

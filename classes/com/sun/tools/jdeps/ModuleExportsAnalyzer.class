@@ -1,0 +1,5 @@
+Compiled from "ModuleExportsAnalyzer.java"
+public class com.sun.tools.jdeps.ModuleExportsAnalyzer extends com.sun.tools.jdeps.DepsAnalyzer {
+  public com.sun.tools.jdeps.ModuleExportsAnalyzer(com.sun.tools.jdeps.JdepsConfiguration, com.sun.tools.jdeps.JdepsFilter, boolean, boolean, java.io.PrintWriter, java.lang.String);
+  public boolean run() throws java.io.IOException;
+}

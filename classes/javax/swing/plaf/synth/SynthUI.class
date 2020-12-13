@@ -1,0 +1,5 @@
+Compiled from "SynthUI.java"
+public interface javax.swing.plaf.synth.SynthUI extends javax.swing.plaf.synth.SynthConstants {
+  public abstract javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  public abstract void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+}

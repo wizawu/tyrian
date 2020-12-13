@@ -1,0 +1,27 @@
+Compiled from "DrawImage.java"
+public class sun.java2d.pipe.DrawImage implements sun.java2d.pipe.DrawImagePipe {
+  public sun.java2d.pipe.DrawImage();
+  public boolean copyImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, java.awt.Color);
+  public boolean copyImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, int, int, java.awt.Color);
+  public boolean scaleImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, java.awt.Color);
+  protected void transformImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, java.awt.geom.AffineTransform, int);
+  protected void transformImage(sun.java2d.SunGraphics2D, java.awt.Image, java.awt.geom.AffineTransform, int, int, int, int, int, java.awt.Color);
+  protected boolean tryCopyOrScale(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, java.awt.Color, int, double[]);
+  protected void renderImageXform(sun.java2d.SunGraphics2D, java.awt.Image, java.awt.geom.AffineTransform, int, int, int, int, int, java.awt.Color);
+  protected boolean renderImageCopy(sun.java2d.SunGraphics2D, java.awt.Image, java.awt.Color, int, int, int, int, int, int);
+  protected boolean renderImageScale(sun.java2d.SunGraphics2D, java.awt.Image, java.awt.Color, int, int, int, int, int, double, double, double, double);
+  public boolean scaleImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, int, int, int, int, java.awt.Color);
+  public static boolean closeToInteger(int, double);
+  public static boolean isSimpleTranslate(sun.java2d.SunGraphics2D);
+  protected static boolean isBgOperation(sun.java2d.SurfaceData, java.awt.Color);
+  protected java.awt.image.BufferedImage getBufferedImage(java.awt.Image);
+  protected void blitSurfaceData(sun.java2d.SunGraphics2D, sun.java2d.pipe.Region, sun.java2d.SurfaceData, sun.java2d.SurfaceData, sun.java2d.loops.SurfaceType, sun.java2d.loops.SurfaceType, int, int, int, int, int, int, java.awt.Color);
+  protected boolean scaleSurfaceData(sun.java2d.SunGraphics2D, sun.java2d.pipe.Region, sun.java2d.SurfaceData, sun.java2d.SurfaceData, sun.java2d.loops.SurfaceType, sun.java2d.loops.SurfaceType, int, int, int, int, double, double, double, double);
+  protected static boolean imageReady(sun.awt.image.ToolkitImage, java.awt.image.ImageObserver);
+  public boolean copyImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, java.awt.Color, java.awt.image.ImageObserver);
+  public boolean copyImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, int, int, java.awt.Color, java.awt.image.ImageObserver);
+  public boolean scaleImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, java.awt.Color, java.awt.image.ImageObserver);
+  public boolean scaleImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, int, int, int, int, java.awt.Color, java.awt.image.ImageObserver);
+  public boolean transformImage(sun.java2d.SunGraphics2D, java.awt.Image, java.awt.geom.AffineTransform, java.awt.image.ImageObserver);
+  public void transformImage(sun.java2d.SunGraphics2D, java.awt.image.BufferedImage, java.awt.image.BufferedImageOp, int, int);
+}

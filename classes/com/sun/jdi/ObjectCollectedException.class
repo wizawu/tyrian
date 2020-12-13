@@ -1,0 +1,5 @@
+Compiled from "ObjectCollectedException.java"
+public class com.sun.jdi.ObjectCollectedException extends java.lang.RuntimeException {
+  public com.sun.jdi.ObjectCollectedException();
+  public com.sun.jdi.ObjectCollectedException(java.lang.String);
+}

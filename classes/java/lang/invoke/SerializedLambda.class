@@ -1,0 +1,16 @@
+Compiled from "SerializedLambda.java"
+public final class java.lang.invoke.SerializedLambda implements java.io.Serializable {
+  public java.lang.invoke.SerializedLambda(java.lang.Class<?>, java.lang.String, java.lang.String, java.lang.String, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.Object[]);
+  public java.lang.String getCapturingClass();
+  public java.lang.String getFunctionalInterfaceClass();
+  public java.lang.String getFunctionalInterfaceMethodName();
+  public java.lang.String getFunctionalInterfaceMethodSignature();
+  public java.lang.String getImplClass();
+  public java.lang.String getImplMethodName();
+  public java.lang.String getImplMethodSignature();
+  public int getImplMethodKind();
+  public final java.lang.String getInstantiatedMethodType();
+  public int getCapturedArgCount();
+  public java.lang.Object getCapturedArg(int);
+  public java.lang.String toString();
+}

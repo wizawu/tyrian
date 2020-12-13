@@ -1,0 +1,13 @@
+Compiled from "InputSubset.java"
+public final class java.awt.im.InputSubset extends java.lang.Character$Subset {
+  public static final java.awt.im.InputSubset LATIN;
+  public static final java.awt.im.InputSubset LATIN_DIGITS;
+  public static final java.awt.im.InputSubset TRADITIONAL_HANZI;
+  public static final java.awt.im.InputSubset SIMPLIFIED_HANZI;
+  public static final java.awt.im.InputSubset KANJI;
+  public static final java.awt.im.InputSubset HANJA;
+  public static final java.awt.im.InputSubset HALFWIDTH_KATAKANA;
+  public static final java.awt.im.InputSubset FULLWIDTH_LATIN;
+  public static final java.awt.im.InputSubset FULLWIDTH_DIGITS;
+  static {};
+}

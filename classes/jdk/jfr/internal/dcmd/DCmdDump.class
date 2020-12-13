@@ -1,0 +1,6 @@
+Compiled from "DCmdDump.java"
+final class jdk.jfr.internal.dcmd.DCmdDump extends jdk.jfr.internal.dcmd.AbstractDCmd {
+  jdk.jfr.internal.dcmd.DCmdDump();
+  public java.lang.String execute(java.lang.String, java.lang.String, java.lang.Long, java.lang.Long, java.lang.String, java.lang.String, java.lang.Boolean) throws jdk.jfr.internal.dcmd.DCmdException;
+  public void dump(jdk.jfr.internal.PlatformRecorder, jdk.jfr.Recording, java.lang.String, java.lang.String, java.lang.Long, java.lang.Boolean, java.time.Instant, java.time.Instant) throws jdk.jfr.internal.dcmd.DCmdException, java.io.IOException;
+}

@@ -1,0 +1,7 @@
+Compiled from "FlowTube.java"
+public interface jdk.internal.net.http.common.FlowTube extends java.util.concurrent.Flow$Publisher<java.util.List<java.nio.ByteBuffer>>, java.util.concurrent.Flow$Subscriber<java.util.List<java.nio.ByteBuffer>> {
+  public default void connectFlows(jdk.internal.net.http.common.FlowTube$TubePublisher, jdk.internal.net.http.common.FlowTube$TubeSubscriber);
+  public abstract boolean isFinished();
+  public static jdk.internal.net.http.common.FlowTube$TubeSubscriber asTubeSubscriber(java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>);
+  public static jdk.internal.net.http.common.FlowTube$TubePublisher asTubePublisher(java.util.concurrent.Flow$Publisher<java.util.List<java.nio.ByteBuffer>>);
+}

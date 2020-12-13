@@ -1,0 +1,10 @@
+Compiled from "DGCAckHandler.java"
+public class sun.rmi.transport.DGCAckHandler {
+  static final boolean $assertionsDisabled;
+  sun.rmi.transport.DGCAckHandler(java.rmi.server.UID);
+  synchronized void add(java.lang.Object);
+  synchronized void startTimer();
+  synchronized void release();
+  public static void received(java.rmi.server.UID);
+  static {};
+}

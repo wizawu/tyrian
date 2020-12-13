@@ -1,0 +1,13 @@
+Compiled from "StringTokenIterator.java"
+public class sun.util.locale.StringTokenIterator {
+  public sun.util.locale.StringTokenIterator(java.lang.String, java.lang.String);
+  public java.lang.String first();
+  public java.lang.String current();
+  public int currentStart();
+  public int currentEnd();
+  public boolean isDone();
+  public java.lang.String next();
+  public boolean hasNext();
+  public sun.util.locale.StringTokenIterator setStart(int);
+  public sun.util.locale.StringTokenIterator setText(java.lang.String);
+}

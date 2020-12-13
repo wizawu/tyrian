@@ -1,0 +1,38 @@
+Compiled from "MarlinCache.java"
+public final class sun.java2d.marlin.MarlinCache implements sun.java2d.marlin.MarlinConst {
+  static final boolean FORCE_RLE;
+  static final boolean FORCE_NO_RLE;
+  static final int RLE_MIN_WIDTH;
+  static final int RLE_MAX_WIDTH;
+  static final long INITIAL_CHUNK_ARRAY;
+  static final byte[] ALPHA_MAP;
+  static final sun.java2d.marlin.OffHeapArray ALPHA_MAP_UNSAFE;
+  int bboxX0;
+  int bboxY0;
+  int bboxX1;
+  int bboxY1;
+  final long[] rowAAChunkIndex;
+  final int[] rowAAx0;
+  final int[] rowAAx1;
+  final int[] rowAAEnc;
+  final long[] rowAALen;
+  final long[] rowAAPos;
+  final sun.java2d.marlin.OffHeapArray rowAAChunk;
+  long rowAAChunkPos;
+  int[] touchedTile;
+  final sun.java2d.marlin.RendererStats rdrStats;
+  int tileMin;
+  int tileMax;
+  boolean useRLE;
+  sun.java2d.marlin.MarlinCache(sun.java2d.marlin.IRendererContext);
+  void init(int, int, int, int);
+  void dispose();
+  void resetTileLine(int);
+  void clearAARow(int);
+  void copyAARowNoRLE(int[], int, int, int);
+  void copyAARowRLE_WithBlockFlags(int[], int[], int, int, int);
+  long startRLERow(int, int, int);
+  int alphaSumInTile(int);
+  public java.lang.String toString();
+  static {};
+}

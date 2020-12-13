@@ -1,0 +1,3 @@
+Compiled from "DebugVC50SSSrcLnSeg.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSrcLnSeg extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
+}

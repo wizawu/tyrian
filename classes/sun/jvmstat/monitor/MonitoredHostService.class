@@ -1,0 +1,5 @@
+Compiled from "MonitoredHostService.java"
+public interface sun.jvmstat.monitor.MonitoredHostService {
+  public abstract sun.jvmstat.monitor.MonitoredHost getMonitoredHost(sun.jvmstat.monitor.HostIdentifier) throws sun.jvmstat.monitor.MonitorException;
+  public abstract java.lang.String getScheme();
+}

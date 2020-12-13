@@ -1,0 +1,15 @@
+Compiled from "ObjectValue.java"
+public class sun.jvm.hotspot.code.ObjectValue extends sun.jvm.hotspot.code.ScopeValue {
+  public sun.jvm.hotspot.code.ObjectValue(int);
+  public boolean isObject();
+  public int id();
+  public sun.jvm.hotspot.code.ScopeValue getKlass();
+  public java.util.List getFieldsValue();
+  public sun.jvm.hotspot.code.ScopeValue getFieldAt(int);
+  public int fieldsSize();
+  public sun.jvm.hotspot.debugger.OopHandle getValue();
+  void readObject(sun.jvm.hotspot.code.DebugInfoReadStream);
+  public void print();
+  public void printOn(java.io.PrintStream);
+  void printFieldsOn(java.io.PrintStream);
+}

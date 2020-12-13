@@ -1,0 +1,16 @@
+Compiled from "XMLSecurityException.java"
+public class com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException extends java.lang.Exception {
+  protected java.lang.String msgID;
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException();
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException(java.lang.String);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException(java.lang.String, java.lang.Object[]);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException(java.lang.Exception);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException(java.lang.Exception, java.lang.String);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException(java.lang.String, java.lang.Exception);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException(java.lang.Exception, java.lang.String, java.lang.Object[]);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException(java.lang.String, java.lang.Object[], java.lang.Exception);
+  public java.lang.String getMsgID();
+  public java.lang.String toString();
+  public void printStackTrace();
+  public java.lang.Exception getOriginalException();
+}

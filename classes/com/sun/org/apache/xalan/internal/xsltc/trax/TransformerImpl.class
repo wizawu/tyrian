@@ -1,0 +1,37 @@
+Compiled from "TransformerImpl.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl extends javax.xml.transform.Transformer implements com.sun.org.apache.xalan.internal.xsltc.DOMCache,javax.xml.transform.ErrorListener {
+  javax.xml.catalog.CatalogFeatures _catalogFeatures;
+  javax.xml.catalog.CatalogResolver _catalogUriResolver;
+  boolean _useCatalog;
+  int _cdataChunkSize;
+  protected com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl(java.util.Properties, int, com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl);
+  protected com.sun.org.apache.xalan.internal.xsltc.trax.TransformerImpl(com.sun.org.apache.xalan.internal.xsltc.Translet, java.util.Properties, int, com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl);
+  public boolean isSecureProcessing();
+  public void setSecureProcessing(boolean);
+  public boolean overrideDefaultParser();
+  public void setOverrideDefaultParser(boolean);
+  protected com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet getTranslet();
+  public boolean isIdentity();
+  public void transform(javax.xml.transform.Source, javax.xml.transform.Result) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xml.internal.serializer.SerializationHandler getOutputHandler(javax.xml.transform.Result) throws javax.xml.transform.TransformerException;
+  protected void setDOM(com.sun.org.apache.xalan.internal.xsltc.DOM);
+  protected com.sun.org.apache.xalan.internal.xsltc.trax.TransformerFactoryImpl getTransformerFactory();
+  protected com.sun.org.apache.xalan.internal.xsltc.runtime.output.TransletOutputHandlerFactory getTransletOutputHandlerFactory();
+  public javax.xml.transform.ErrorListener getErrorListener();
+  public void setErrorListener(javax.xml.transform.ErrorListener) throws java.lang.IllegalArgumentException;
+  public java.util.Properties getOutputProperties();
+  public java.lang.String getOutputProperty(java.lang.String) throws java.lang.IllegalArgumentException;
+  public void setOutputProperties(java.util.Properties) throws java.lang.IllegalArgumentException;
+  public void setOutputProperty(java.lang.String, java.lang.String) throws java.lang.IllegalArgumentException;
+  public void transferOutputProperties(com.sun.org.apache.xml.internal.serializer.SerializationHandler);
+  public void setParameter(java.lang.String, java.lang.Object);
+  public void clearParameters();
+  public final java.lang.Object getParameter(java.lang.String);
+  public javax.xml.transform.URIResolver getURIResolver();
+  public void setURIResolver(javax.xml.transform.URIResolver);
+  public com.sun.org.apache.xalan.internal.xsltc.DOM retrieveDocument(java.lang.String, java.lang.String, com.sun.org.apache.xalan.internal.xsltc.Translet);
+  public void error(javax.xml.transform.TransformerException) throws javax.xml.transform.TransformerException;
+  public void fatalError(javax.xml.transform.TransformerException) throws javax.xml.transform.TransformerException;
+  public void warning(javax.xml.transform.TransformerException) throws javax.xml.transform.TransformerException;
+  public void reset();
+}

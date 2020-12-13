@@ -1,0 +1,14 @@
+Compiled from "ContextList.java"
+class sun.net.httpserver.ContextList {
+  static final int MAX_CONTEXTS;
+  java.util.LinkedList<sun.net.httpserver.HttpContextImpl> list;
+  static final boolean $assertionsDisabled;
+  sun.net.httpserver.ContextList();
+  public synchronized void add(sun.net.httpserver.HttpContextImpl);
+  public synchronized int size();
+  synchronized sun.net.httpserver.HttpContextImpl findContext(java.lang.String, java.lang.String);
+  synchronized sun.net.httpserver.HttpContextImpl findContext(java.lang.String, java.lang.String, boolean);
+  public synchronized void remove(java.lang.String, java.lang.String) throws java.lang.IllegalArgumentException;
+  public synchronized void remove(sun.net.httpserver.HttpContextImpl) throws java.lang.IllegalArgumentException;
+  static {};
+}

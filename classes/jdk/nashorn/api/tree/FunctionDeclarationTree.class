@@ -1,0 +1,8 @@
+Compiled from "FunctionDeclarationTree.java"
+public interface jdk.nashorn.api.tree.FunctionDeclarationTree extends jdk.nashorn.api.tree.StatementTree {
+  public abstract jdk.nashorn.api.tree.IdentifierTree getName();
+  public abstract java.util.List<? extends jdk.nashorn.api.tree.ExpressionTree> getParameters();
+  public abstract jdk.nashorn.api.tree.BlockTree getBody();
+  public abstract boolean isStrict();
+  public abstract boolean isGenerator();
+}

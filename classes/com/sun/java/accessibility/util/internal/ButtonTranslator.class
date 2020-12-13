@@ -1,0 +1,7 @@
+Compiled from "ButtonTranslator.java"
+public class com.sun.java.accessibility.util.internal.ButtonTranslator extends com.sun.java.accessibility.util.Translator {
+  public com.sun.java.accessibility.util.internal.ButtonTranslator();
+  public java.lang.String getAccessibleName();
+  public void setAccessibleName(java.lang.String);
+  public javax.accessibility.AccessibleRole getAccessibleRole();
+}

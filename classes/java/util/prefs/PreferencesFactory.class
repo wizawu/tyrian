@@ -1,0 +1,5 @@
+Compiled from "PreferencesFactory.java"
+public interface java.util.prefs.PreferencesFactory {
+  public abstract java.util.prefs.Preferences systemRoot();
+  public abstract java.util.prefs.Preferences userRoot();
+}

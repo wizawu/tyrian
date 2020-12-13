@@ -1,0 +1,6 @@
+Compiled from "KrbAsReq.java"
+public class sun.security.krb5.KrbAsReq {
+  public sun.security.krb5.KrbAsReq(sun.security.krb5.EncryptionKey, sun.security.krb5.internal.KDCOptions, sun.security.krb5.PrincipalName, sun.security.krb5.PrincipalName, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, int[], sun.security.krb5.internal.HostAddresses, sun.security.krb5.internal.PAData[]) throws sun.security.krb5.KrbException, java.io.IOException;
+  byte[] encoding() throws java.io.IOException, sun.security.krb5.Asn1Exception;
+  sun.security.krb5.internal.ASReq getMessage();
+}

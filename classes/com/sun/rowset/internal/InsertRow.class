@@ -1,0 +1,10 @@
+Compiled from "InsertRow.java"
+public class com.sun.rowset.internal.InsertRow extends com.sun.rowset.internal.BaseRow implements java.io.Serializable,java.lang.Cloneable {
+  static final long serialVersionUID;
+  public com.sun.rowset.internal.InsertRow(int);
+  protected void markColInserted(int);
+  public boolean isCompleteRow(javax.sql.RowSetMetaData) throws java.sql.SQLException;
+  public void initInsertRow();
+  public java.lang.Object getColumnObject(int) throws java.sql.SQLException;
+  public void setColumnObject(int, java.lang.Object);
+}

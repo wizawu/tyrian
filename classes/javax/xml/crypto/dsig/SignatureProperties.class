@@ -1,0 +1,6 @@
+Compiled from "SignatureProperties.java"
+public interface javax.xml.crypto.dsig.SignatureProperties extends javax.xml.crypto.XMLStructure {
+  public static final java.lang.String TYPE;
+  public abstract java.lang.String getId();
+  public abstract java.util.List<javax.xml.crypto.dsig.SignatureProperty> getProperties();
+}

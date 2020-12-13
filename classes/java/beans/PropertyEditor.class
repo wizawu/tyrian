@@ -1,0 +1,15 @@
+Compiled from "PropertyEditor.java"
+public interface java.beans.PropertyEditor {
+  public abstract void setValue(java.lang.Object);
+  public abstract java.lang.Object getValue();
+  public abstract boolean isPaintable();
+  public abstract void paintValue(java.awt.Graphics, java.awt.Rectangle);
+  public abstract java.lang.String getJavaInitializationString();
+  public abstract java.lang.String getAsText();
+  public abstract void setAsText(java.lang.String) throws java.lang.IllegalArgumentException;
+  public abstract java.lang.String[] getTags();
+  public abstract java.awt.Component getCustomEditor();
+  public abstract boolean supportsCustomEditor();
+  public abstract void addPropertyChangeListener(java.beans.PropertyChangeListener);
+  public abstract void removePropertyChangeListener(java.beans.PropertyChangeListener);
+}

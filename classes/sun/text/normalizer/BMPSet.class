@@ -1,0 +1,9 @@
+Compiled from "BMPSet.java"
+final class sun.text.normalizer.BMPSet {
+  static final boolean $assertionsDisabled;
+  public sun.text.normalizer.BMPSet(int[], int);
+  public boolean contains(int);
+  public final int span(java.lang.CharSequence, int, sun.text.normalizer.UnicodeSet$SpanCondition, sun.text.normalizer.OutputInt);
+  public final int spanBack(java.lang.CharSequence, int, sun.text.normalizer.UnicodeSet$SpanCondition);
+  static {};
+}

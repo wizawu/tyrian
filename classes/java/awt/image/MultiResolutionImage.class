@@ -1,0 +1,5 @@
+Compiled from "MultiResolutionImage.java"
+public interface java.awt.image.MultiResolutionImage {
+  public abstract java.awt.Image getResolutionVariant(double, double);
+  public abstract java.util.List<java.awt.Image> getResolutionVariants();
+}

@@ -1,0 +1,14 @@
+Compiled from "Platform.java"
+public final class jdk.tools.jlink.internal.Platform extends java.lang.Enum<jdk.tools.jlink.internal.Platform> {
+  public static final jdk.tools.jlink.internal.Platform WINDOWS;
+  public static final jdk.tools.jlink.internal.Platform LINUX;
+  public static final jdk.tools.jlink.internal.Platform SOLARIS;
+  public static final jdk.tools.jlink.internal.Platform MACOS;
+  public static final jdk.tools.jlink.internal.Platform AIX;
+  public static final jdk.tools.jlink.internal.Platform UNKNOWN;
+  public static jdk.tools.jlink.internal.Platform[] values();
+  public static jdk.tools.jlink.internal.Platform valueOf(java.lang.String);
+  public static jdk.tools.jlink.internal.Platform toPlatform(java.lang.String);
+  public static jdk.tools.jlink.internal.Platform getTargetPlatform(jdk.tools.jlink.plugin.ResourcePoolModule);
+  static {};
+}

@@ -1,0 +1,32 @@
+Compiled from "TableView.java"
+public abstract class javax.swing.text.TableView extends javax.swing.text.BoxView {
+  int[] columnSpans;
+  int[] columnOffsets;
+  javax.swing.SizeRequirements totalColumnRequirements;
+  javax.swing.SizeRequirements[] columnRequirements;
+  java.util.Vector<javax.swing.text.TableView$TableRow> rows;
+  boolean gridValid;
+  public javax.swing.text.TableView(javax.swing.text.Element);
+  protected javax.swing.text.TableView$TableRow createTableRow(javax.swing.text.Element);
+  protected javax.swing.text.TableView$TableCell createTableCell(javax.swing.text.Element);
+  int getColumnCount();
+  int getColumnSpan(int);
+  int getRowCount();
+  int getRowSpan(int);
+  javax.swing.text.TableView$TableRow getRow(int);
+  int getColumnsOccupied(javax.swing.text.View);
+  int getRowsOccupied(javax.swing.text.View);
+  void invalidateGrid();
+  protected void forwardUpdate(javax.swing.event.DocumentEvent$ElementChange, javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  public void replace(int, int, javax.swing.text.View[]);
+  void updateGrid();
+  void addFill(int, int);
+  protected void layoutColumns(int, int[], int[], javax.swing.SizeRequirements[]);
+  protected void layoutMinorAxis(int, int, int[], int[]);
+  protected javax.swing.SizeRequirements calculateMinorAxisRequirements(int, javax.swing.SizeRequirements);
+  void calculateColumnRequirements(int);
+  void checkSingleColumnCell(int, int, javax.swing.text.View);
+  void checkMultiColumnCell(int, int, int, javax.swing.text.View);
+  protected javax.swing.text.View getViewAtPosition(int, java.awt.Rectangle);
+  static {};
+}

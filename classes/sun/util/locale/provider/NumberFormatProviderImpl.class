@@ -1,0 +1,11 @@
+Compiled from "NumberFormatProviderImpl.java"
+public class sun.util.locale.provider.NumberFormatProviderImpl extends java.text.spi.NumberFormatProvider implements sun.util.locale.provider.AvailableLanguageTags {
+  public sun.util.locale.provider.NumberFormatProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
+  public java.util.Locale[] getAvailableLocales();
+  public boolean isSupportedLocale(java.util.Locale);
+  public java.text.NumberFormat getCurrencyInstance(java.util.Locale);
+  public java.text.NumberFormat getIntegerInstance(java.util.Locale);
+  public java.text.NumberFormat getNumberInstance(java.util.Locale);
+  public java.text.NumberFormat getPercentInstance(java.util.Locale);
+  public java.util.Set<java.lang.String> getAvailableLanguageTags();
+}

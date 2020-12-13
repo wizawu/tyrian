@@ -1,0 +1,8 @@
+Compiled from "CheckedInputStream.java"
+public class java.util.zip.CheckedInputStream extends java.io.FilterInputStream {
+  public java.util.zip.CheckedInputStream(java.io.InputStream, java.util.zip.Checksum);
+  public int read() throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public long skip(long) throws java.io.IOException;
+  public java.util.zip.Checksum getChecksum();
+}

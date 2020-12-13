@@ -1,0 +1,16 @@
+Compiled from "EventHandler.java"
+public abstract class jdk.jfr.internal.handlers.EventHandler {
+  protected final jdk.jfr.internal.PlatformEventType platformEventType;
+  jdk.jfr.internal.handlers.EventHandler(boolean, jdk.jfr.EventType, jdk.jfr.internal.EventControl);
+  protected final jdk.jfr.internal.StringPool createStringFieldWriter();
+  public final boolean shouldCommit(long);
+  public final boolean isEnabled();
+  public final jdk.jfr.EventType getEventType();
+  public final jdk.jfr.internal.PlatformEventType getPlatformEventType();
+  public final jdk.jfr.internal.EventControl getEventControl();
+  public static long timestamp();
+  public static long duration(long);
+  public final java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public boolean isRegistered();
+  public boolean setRegistered(boolean);
+}

@@ -1,0 +1,20 @@
+Compiled from "ExportDirectoryTable.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.ExportDirectoryTable {
+  public abstract int getExportFlags();
+  public abstract int getTimeDateStamp();
+  public abstract short getMajorVersion();
+  public abstract short getMinorVersion();
+  public abstract int getNameRVA();
+  public abstract java.lang.String getDLLName();
+  public abstract int getOrdinalBase();
+  public abstract int getNumberOfAddressTableEntries();
+  public abstract int getNumberOfNamePointers();
+  public abstract int getExportAddressTableRVA();
+  public abstract int getNamePointerTableRVA();
+  public abstract int getOrdinalTableRVA();
+  public abstract java.lang.String getExportName(int);
+  public abstract short getExportOrdinal(int);
+  public abstract boolean isExportAddressForwarder(short);
+  public abstract java.lang.String getExportAddressForwarder(short);
+  public abstract int getExportAddress(short);
+}

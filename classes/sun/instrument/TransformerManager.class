@@ -1,0 +1,12 @@
+Compiled from "TransformerManager.java"
+public class sun.instrument.TransformerManager {
+  sun.instrument.TransformerManager(boolean);
+  boolean isRetransformable();
+  public synchronized void addTransformer(java.lang.instrument.ClassFileTransformer);
+  public synchronized boolean removeTransformer(java.lang.instrument.ClassFileTransformer);
+  synchronized boolean includesTransformer(java.lang.instrument.ClassFileTransformer);
+  public byte[] transform(java.lang.Module, java.lang.ClassLoader, java.lang.String, java.lang.Class<?>, java.security.ProtectionDomain, byte[]);
+  int getTransformerCount();
+  boolean setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer, java.lang.String);
+  java.lang.String[] getNativeMethodPrefixes();
+}

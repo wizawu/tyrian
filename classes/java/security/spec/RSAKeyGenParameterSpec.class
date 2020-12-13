@@ -1,0 +1,11 @@
+Compiled from "RSAKeyGenParameterSpec.java"
+public class java.security.spec.RSAKeyGenParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public static final java.math.BigInteger F0;
+  public static final java.math.BigInteger F4;
+  public java.security.spec.RSAKeyGenParameterSpec(int, java.math.BigInteger);
+  public java.security.spec.RSAKeyGenParameterSpec(int, java.math.BigInteger, java.security.spec.AlgorithmParameterSpec);
+  public int getKeysize();
+  public java.math.BigInteger getPublicExponent();
+  public java.security.spec.AlgorithmParameterSpec getKeyParams();
+  static {};
+}

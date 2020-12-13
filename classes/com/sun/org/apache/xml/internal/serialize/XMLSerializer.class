@@ -1,0 +1,30 @@
+Compiled from "XMLSerializer.java"
+public class com.sun.org.apache.xml.internal.serialize.XMLSerializer extends com.sun.org.apache.xml.internal.serialize.BaseMarkupSerializer {
+  protected static final boolean DEBUG;
+  protected com.sun.org.apache.xerces.internal.util.NamespaceSupport fNSBinder;
+  protected com.sun.org.apache.xerces.internal.util.NamespaceSupport fLocalNSBinder;
+  protected com.sun.org.apache.xerces.internal.util.SymbolTable fSymbolTable;
+  protected static final java.lang.String PREFIX;
+  protected boolean fNamespaces;
+  protected boolean fNamespacePrefixes;
+  public com.sun.org.apache.xml.internal.serialize.XMLSerializer();
+  public com.sun.org.apache.xml.internal.serialize.XMLSerializer(com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public com.sun.org.apache.xml.internal.serialize.XMLSerializer(java.io.Writer, com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public com.sun.org.apache.xml.internal.serialize.XMLSerializer(java.io.OutputStream, com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public void setOutputFormat(com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public void setNamespaces(boolean);
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void endElementIO(java.lang.String, java.lang.String, java.lang.String) throws java.io.IOException;
+  public void startElement(java.lang.String, org.xml.sax.AttributeList) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String) throws org.xml.sax.SAXException;
+  protected void startDocument(java.lang.String) throws java.io.IOException;
+  protected void serializeElement(org.w3c.dom.Element) throws java.io.IOException;
+  protected java.lang.String getEntityRef(int);
+  protected void printEscaped(java.lang.String) throws java.io.IOException;
+  protected void printXMLChar(int) throws java.io.IOException;
+  protected void printText(java.lang.String, boolean, boolean) throws java.io.IOException;
+  protected void printText(char[], int, int, boolean, boolean) throws java.io.IOException;
+  protected void checkUnboundNamespacePrefixedNode(org.w3c.dom.Node) throws java.io.IOException;
+  public boolean reset();
+}

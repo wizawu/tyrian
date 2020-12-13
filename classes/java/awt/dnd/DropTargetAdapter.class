@@ -1,0 +1,8 @@
+Compiled from "DropTargetAdapter.java"
+public abstract class java.awt.dnd.DropTargetAdapter implements java.awt.dnd.DropTargetListener {
+  public java.awt.dnd.DropTargetAdapter();
+  public void dragEnter(java.awt.dnd.DropTargetDragEvent);
+  public void dragOver(java.awt.dnd.DropTargetDragEvent);
+  public void dropActionChanged(java.awt.dnd.DropTargetDragEvent);
+  public void dragExit(java.awt.dnd.DropTargetEvent);
+}

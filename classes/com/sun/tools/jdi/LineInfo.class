@@ -1,0 +1,7 @@
+Compiled from "LineInfo.java"
+interface com.sun.tools.jdi.LineInfo {
+  public abstract java.lang.String liStratum();
+  public abstract int liLineNumber();
+  public abstract java.lang.String liSourceName() throws com.sun.jdi.AbsentInformationException;
+  public abstract java.lang.String liSourcePath() throws com.sun.jdi.AbsentInformationException;
+}

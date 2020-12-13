@@ -1,0 +1,42 @@
+Compiled from "InferenceContext.java"
+public class com.sun.tools.javac.comp.InferenceContext {
+  com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> undetvars;
+  com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> inferencevars;
+  java.util.Map<com.sun.tools.javac.comp.Infer$FreeTypeListener, com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>> freeTypeListeners;
+  com.sun.tools.javac.code.Types types;
+  com.sun.tools.javac.comp.Infer infer;
+  java.util.Map<com.sun.tools.javac.tree.JCTree, com.sun.tools.javac.code.Type> captureTypeCache;
+  com.sun.tools.javac.code.Type update(com.sun.tools.javac.code.Type);
+  public com.sun.tools.javac.comp.InferenceContext(com.sun.tools.javac.comp.Infer, com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>);
+  public com.sun.tools.javac.comp.InferenceContext(com.sun.tools.javac.comp.Infer, com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>);
+  void addVar(com.sun.tools.javac.code.Type$TypeVar);
+  com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> inferenceVars();
+  public com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> undetVars();
+  com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> restvars();
+  com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> instvars();
+  final com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> boundedVars();
+  final boolean free(com.sun.tools.javac.code.Type);
+  final boolean free(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>);
+  final com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> freeVarsIn(com.sun.tools.javac.code.Type);
+  final com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> freeVarsIn(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>);
+  public final com.sun.tools.javac.code.Type asUndetVar(com.sun.tools.javac.code.Type);
+  final com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> asUndetVars(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>);
+  com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> instTypes();
+  com.sun.tools.javac.code.Type asInstType(com.sun.tools.javac.code.Type);
+  com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> asInstTypes(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>);
+  void addFreeTypeListener(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, com.sun.tools.javac.comp.Infer$FreeTypeListener);
+  void notifyChange();
+  void notifyChange(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>);
+  public com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> save();
+  public void rollback(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>);
+  void dupTo(com.sun.tools.javac.comp.InferenceContext);
+  void dupTo(com.sun.tools.javac.comp.InferenceContext, boolean);
+  com.sun.tools.javac.comp.InferenceContext min(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, boolean, com.sun.tools.javac.util.Warner);
+  public void solve(com.sun.tools.javac.util.Warner);
+  public void solve(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, com.sun.tools.javac.util.Warner);
+  public void solveAny(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, com.sun.tools.javac.util.Warner);
+  com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type> solveBasic(com.sun.tools.javac.util.List<com.sun.tools.javac.code.Type>, java.util.EnumSet<com.sun.tools.javac.comp.Infer$InferenceStep>);
+  public void solveLegacy(boolean, com.sun.tools.javac.util.Warner, java.util.EnumSet<com.sun.tools.javac.comp.Infer$InferenceStep>);
+  public java.lang.String toString();
+  com.sun.tools.javac.code.Type cachedCapture(com.sun.tools.javac.tree.JCTree, com.sun.tools.javac.code.Type, boolean);
+}

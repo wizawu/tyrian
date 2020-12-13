@@ -1,0 +1,5 @@
+Compiled from "ConstantPoolException.java"
+public class com.sun.tools.classfile.ConstantPoolException extends java.lang.Exception {
+  public final int index;
+  com.sun.tools.classfile.ConstantPoolException(int);
+}

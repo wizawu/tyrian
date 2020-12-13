@@ -1,0 +1,6 @@
+Compiled from "ExecutionControlProvider.java"
+public interface jdk.jshell.spi.ExecutionControlProvider {
+  public abstract java.lang.String name();
+  public default java.util.Map<java.lang.String, java.lang.String> defaultParameters();
+  public abstract jdk.jshell.spi.ExecutionControl generate(jdk.jshell.spi.ExecutionEnv, java.util.Map<java.lang.String, java.lang.String>) throws java.lang.Throwable;
+}

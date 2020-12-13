@@ -1,0 +1,5 @@
+Compiled from "PhantomReference.java"
+public class java.lang.ref.PhantomReference<T> extends java.lang.ref.Reference<T> {
+  public T get();
+  public java.lang.ref.PhantomReference(T, java.lang.ref.ReferenceQueue<? super T>);
+}

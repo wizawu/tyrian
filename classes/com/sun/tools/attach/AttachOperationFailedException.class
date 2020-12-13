@@ -1,0 +1,4 @@
+Compiled from "AttachOperationFailedException.java"
+public class com.sun.tools.attach.AttachOperationFailedException extends java.io.IOException {
+  public com.sun.tools.attach.AttachOperationFailedException(java.lang.String);
+}

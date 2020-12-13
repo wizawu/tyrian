@@ -1,0 +1,23 @@
+Compiled from "ConstantPool.java"
+public class jdk.internal.reflect.ConstantPool {
+  public jdk.internal.reflect.ConstantPool();
+  public int getSize();
+  public java.lang.Class<?> getClassAt(int);
+  public java.lang.Class<?> getClassAtIfLoaded(int);
+  public int getClassRefIndexAt(int);
+  public java.lang.reflect.Member getMethodAt(int);
+  public java.lang.reflect.Member getMethodAtIfLoaded(int);
+  public java.lang.reflect.Field getFieldAt(int);
+  public java.lang.reflect.Field getFieldAtIfLoaded(int);
+  public java.lang.String[] getMemberRefInfoAt(int);
+  public int getNameAndTypeRefIndexAt(int);
+  public java.lang.String[] getNameAndTypeRefInfoAt(int);
+  public int getIntAt(int);
+  public long getLongAt(int);
+  public float getFloatAt(int);
+  public double getDoubleAt(int);
+  public java.lang.String getStringAt(int);
+  public java.lang.String getUTF8At(int);
+  public jdk.internal.reflect.ConstantPool$Tag getTagAt(int);
+  static {};
+}

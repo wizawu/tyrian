@@ -1,0 +1,43 @@
+Compiled from "TypeReference.java"
+public class jdk.internal.org.objectweb.asm.TypeReference {
+  public static final int CLASS_TYPE_PARAMETER;
+  public static final int METHOD_TYPE_PARAMETER;
+  public static final int CLASS_EXTENDS;
+  public static final int CLASS_TYPE_PARAMETER_BOUND;
+  public static final int METHOD_TYPE_PARAMETER_BOUND;
+  public static final int FIELD;
+  public static final int METHOD_RETURN;
+  public static final int METHOD_RECEIVER;
+  public static final int METHOD_FORMAL_PARAMETER;
+  public static final int THROWS;
+  public static final int LOCAL_VARIABLE;
+  public static final int RESOURCE_VARIABLE;
+  public static final int EXCEPTION_PARAMETER;
+  public static final int INSTANCEOF;
+  public static final int NEW;
+  public static final int CONSTRUCTOR_REFERENCE;
+  public static final int METHOD_REFERENCE;
+  public static final int CAST;
+  public static final int CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT;
+  public static final int METHOD_INVOCATION_TYPE_ARGUMENT;
+  public static final int CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT;
+  public static final int METHOD_REFERENCE_TYPE_ARGUMENT;
+  public jdk.internal.org.objectweb.asm.TypeReference(int);
+  public static jdk.internal.org.objectweb.asm.TypeReference newTypeReference(int);
+  public static jdk.internal.org.objectweb.asm.TypeReference newTypeParameterReference(int, int);
+  public static jdk.internal.org.objectweb.asm.TypeReference newTypeParameterBoundReference(int, int, int);
+  public static jdk.internal.org.objectweb.asm.TypeReference newSuperTypeReference(int);
+  public static jdk.internal.org.objectweb.asm.TypeReference newFormalParameterReference(int);
+  public static jdk.internal.org.objectweb.asm.TypeReference newExceptionReference(int);
+  public static jdk.internal.org.objectweb.asm.TypeReference newTryCatchReference(int);
+  public static jdk.internal.org.objectweb.asm.TypeReference newTypeArgumentReference(int, int);
+  public int getSort();
+  public int getTypeParameterIndex();
+  public int getTypeParameterBoundIndex();
+  public int getSuperTypeIndex();
+  public int getFormalParameterIndex();
+  public int getExceptionIndex();
+  public int getTryCatchBlockIndex();
+  public int getTypeArgumentIndex();
+  public int getValue();
+}

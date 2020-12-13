@@ -1,0 +1,6 @@
+Compiled from "DTMNodeListBase.java"
+public class com.sun.org.apache.xml.internal.dtm.ref.DTMNodeListBase implements org.w3c.dom.NodeList {
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMNodeListBase();
+  public org.w3c.dom.Node item(int);
+  public int getLength();
+}

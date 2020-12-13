@@ -1,0 +1,9 @@
+Compiled from "CollatorFactoryBase.java"
+public class com.sun.org.apache.xalan.internal.xsltc.dom.CollatorFactoryBase implements com.sun.org.apache.xalan.internal.xsltc.CollatorFactory {
+  public static final java.util.Locale DEFAULT_LOCALE;
+  public static final java.text.Collator DEFAULT_COLLATOR;
+  public com.sun.org.apache.xalan.internal.xsltc.dom.CollatorFactoryBase();
+  public java.text.Collator getCollator(java.lang.String, java.lang.String);
+  public java.text.Collator getCollator(java.util.Locale);
+  static {};
+}

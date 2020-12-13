@@ -1,0 +1,4 @@
+Compiled from "PanelUI.java"
+public abstract class javax.swing.plaf.PanelUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.PanelUI();
+}

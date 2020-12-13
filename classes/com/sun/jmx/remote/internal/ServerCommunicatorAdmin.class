@@ -1,0 +1,9 @@
+Compiled from "ServerCommunicatorAdmin.java"
+public abstract class com.sun.jmx.remote.internal.ServerCommunicatorAdmin {
+  public com.sun.jmx.remote.internal.ServerCommunicatorAdmin(long);
+  public boolean reqIncoming();
+  public boolean rspOutgoing();
+  protected abstract void doStop();
+  public void terminate();
+  static {};
+}

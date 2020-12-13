@@ -1,0 +1,5 @@
+Compiled from "ProtocolException.java"
+public class java.net.ProtocolException extends java.io.IOException {
+  public java.net.ProtocolException(java.lang.String);
+  public java.net.ProtocolException();
+}

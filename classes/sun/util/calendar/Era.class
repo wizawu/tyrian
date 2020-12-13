@@ -1,0 +1,14 @@
+Compiled from "Era.java"
+public final class sun.util.calendar.Era {
+  public sun.util.calendar.Era(java.lang.String, java.lang.String, long, boolean);
+  public java.lang.String getName();
+  public java.lang.String getDisplayName(java.util.Locale);
+  public java.lang.String getAbbreviation();
+  public java.lang.String getDiaplayAbbreviation(java.util.Locale);
+  public long getSince(java.util.TimeZone);
+  public sun.util.calendar.CalendarDate getSinceDate();
+  public boolean isLocalTime();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

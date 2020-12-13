@@ -1,0 +1,6 @@
+Compiled from "ParserContextBlockNode.java"
+class jdk.nashorn.internal.parser.ParserContextBlockNode extends jdk.nashorn.internal.parser.ParserContextBaseNode implements jdk.nashorn.internal.parser.ParserContextBreakableNode {
+  public jdk.nashorn.internal.parser.ParserContextBlockNode(long);
+  public boolean isBreakableWithoutLabel();
+  public long getToken();
+}

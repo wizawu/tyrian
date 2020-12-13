@@ -1,0 +1,9 @@
+Compiled from "HotspotInternal.java"
+public class sun.management.HotspotInternal implements sun.management.HotspotInternalMBean,javax.management.MBeanRegistration {
+  public sun.management.HotspotInternal();
+  public javax.management.ObjectName preRegister(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public void postRegister(java.lang.Boolean);
+  public void preDeregister() throws java.lang.Exception;
+  public void postDeregister();
+  static {};
+}

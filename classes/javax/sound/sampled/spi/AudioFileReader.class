@@ -1,0 +1,10 @@
+Compiled from "AudioFileReader.java"
+public abstract class javax.sound.sampled.spi.AudioFileReader {
+  public javax.sound.sampled.spi.AudioFileReader();
+  public abstract javax.sound.sampled.AudioFileFormat getAudioFileFormat(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public abstract javax.sound.sampled.AudioFileFormat getAudioFileFormat(java.net.URL) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public abstract javax.sound.sampled.AudioFileFormat getAudioFileFormat(java.io.File) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public abstract javax.sound.sampled.AudioInputStream getAudioInputStream(java.io.InputStream) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public abstract javax.sound.sampled.AudioInputStream getAudioInputStream(java.net.URL) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+  public abstract javax.sound.sampled.AudioInputStream getAudioInputStream(java.io.File) throws javax.sound.sampled.UnsupportedAudioFileException, java.io.IOException;
+}

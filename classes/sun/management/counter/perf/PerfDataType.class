@@ -1,0 +1,17 @@
+Compiled from "PerfDataType.java"
+class sun.management.counter.perf.PerfDataType {
+  public static final sun.management.counter.perf.PerfDataType BOOLEAN;
+  public static final sun.management.counter.perf.PerfDataType CHAR;
+  public static final sun.management.counter.perf.PerfDataType FLOAT;
+  public static final sun.management.counter.perf.PerfDataType DOUBLE;
+  public static final sun.management.counter.perf.PerfDataType BYTE;
+  public static final sun.management.counter.perf.PerfDataType SHORT;
+  public static final sun.management.counter.perf.PerfDataType INT;
+  public static final sun.management.counter.perf.PerfDataType LONG;
+  public static final sun.management.counter.perf.PerfDataType ILLEGAL;
+  public java.lang.String toString();
+  public byte byteValue();
+  public int size();
+  public static sun.management.counter.perf.PerfDataType toPerfDataType(byte);
+  static {};
+}

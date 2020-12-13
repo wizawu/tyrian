@@ -1,0 +1,19 @@
+Compiled from "Notification.java"
+public class javax.management.Notification extends java.util.EventObject {
+  protected java.lang.Object source;
+  public javax.management.Notification(java.lang.String, java.lang.Object, long);
+  public javax.management.Notification(java.lang.String, java.lang.Object, long, java.lang.String);
+  public javax.management.Notification(java.lang.String, java.lang.Object, long, long);
+  public javax.management.Notification(java.lang.String, java.lang.Object, long, long, java.lang.String);
+  public void setSource(java.lang.Object);
+  public long getSequenceNumber();
+  public void setSequenceNumber(long);
+  public java.lang.String getType();
+  public long getTimeStamp();
+  public void setTimeStamp(long);
+  public java.lang.String getMessage();
+  public java.lang.Object getUserData();
+  public void setUserData(java.lang.Object);
+  public java.lang.String toString();
+  static {};
+}

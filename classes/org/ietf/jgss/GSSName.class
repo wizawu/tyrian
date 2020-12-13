@@ -1,0 +1,19 @@
+Compiled from "GSSName.java"
+public interface org.ietf.jgss.GSSName {
+  public static final org.ietf.jgss.Oid NT_HOSTBASED_SERVICE;
+  public static final org.ietf.jgss.Oid NT_USER_NAME;
+  public static final org.ietf.jgss.Oid NT_MACHINE_UID_NAME;
+  public static final org.ietf.jgss.Oid NT_STRING_UID_NAME;
+  public static final org.ietf.jgss.Oid NT_ANONYMOUS;
+  public static final org.ietf.jgss.Oid NT_EXPORT_NAME;
+  public abstract boolean equals(org.ietf.jgss.GSSName) throws org.ietf.jgss.GSSException;
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public abstract org.ietf.jgss.GSSName canonicalize(org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public abstract byte[] export() throws org.ietf.jgss.GSSException;
+  public abstract java.lang.String toString();
+  public abstract org.ietf.jgss.Oid getStringNameType() throws org.ietf.jgss.GSSException;
+  public abstract boolean isAnonymous();
+  public abstract boolean isMN();
+  static {};
+}

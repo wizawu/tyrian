@@ -1,0 +1,26 @@
+Compiled from "XDragSourceProtocol.java"
+abstract class sun.awt.X11.XDragSourceProtocol {
+  static final boolean $assertionsDisabled;
+  static long getDragSourceWindow();
+  protected sun.awt.X11.XDragSourceProtocol(sun.awt.X11.XDragSourceProtocolListener);
+  protected final sun.awt.X11.XDragSourceProtocolListener getProtocolListener();
+  public abstract java.lang.String getProtocolName();
+  public final void initializeDrag(int, java.awt.datatransfer.Transferable, java.util.Map<java.lang.Long, java.awt.datatransfer.DataFlavor>, long[]) throws java.awt.dnd.InvalidDnDOperationException, java.lang.IllegalArgumentException, sun.awt.X11.XException;
+  protected abstract void initializeDragImpl(int, java.awt.datatransfer.Transferable, java.util.Map<java.lang.Long, java.awt.datatransfer.DataFlavor>, long[]) throws java.awt.dnd.InvalidDnDOperationException, java.lang.IllegalArgumentException, sun.awt.X11.XException;
+  public void cleanup();
+  public void cleanupTargetInfo();
+  public abstract boolean processClientMessage(sun.awt.X11.XClientMessageEvent) throws sun.awt.X11.XException;
+  public final boolean attachTargetWindow(long, long);
+  public abstract sun.awt.X11.XDragSourceProtocol$TargetWindowInfo getTargetWindowInfo(long);
+  public abstract void sendEnterMessage(long[], int, int, long);
+  public abstract void sendMoveMessage(int, int, int, int, long);
+  public abstract void sendLeaveMessage(long);
+  protected abstract void sendDropMessage(int, int, int, int, long);
+  public final void initiateDrop(int, int, int, int, long);
+  protected final void finalizeDrop();
+  public abstract boolean processProxyModeEvent(sun.awt.X11.XClientMessageEvent, long);
+  protected final long getTargetWindow();
+  protected final long getTargetProxyWindow();
+  protected final int getTargetProtocolVersion();
+  static {};
+}

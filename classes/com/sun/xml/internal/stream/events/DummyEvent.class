@@ -1,0 +1,28 @@
+Compiled from "DummyEvent.java"
+public abstract class com.sun.xml.internal.stream.events.DummyEvent implements javax.xml.stream.events.XMLEvent {
+  protected javax.xml.stream.Location fLocation;
+  public com.sun.xml.internal.stream.events.DummyEvent();
+  public com.sun.xml.internal.stream.events.DummyEvent(int);
+  public int getEventType();
+  protected void setEventType(int);
+  public boolean isStartElement();
+  public boolean isEndElement();
+  public boolean isEntityReference();
+  public boolean isProcessingInstruction();
+  public boolean isCharacterData();
+  public boolean isStartDocument();
+  public boolean isEndDocument();
+  public javax.xml.stream.Location getLocation();
+  void setLocation(javax.xml.stream.Location);
+  public javax.xml.stream.events.Characters asCharacters();
+  public javax.xml.stream.events.EndElement asEndElement();
+  public javax.xml.stream.events.StartElement asStartElement();
+  public javax.xml.namespace.QName getSchemaType();
+  public boolean isAttribute();
+  public boolean isCharacters();
+  public boolean isNamespace();
+  public void writeAsEncodedUnicode(java.io.Writer) throws javax.xml.stream.XMLStreamException;
+  protected abstract void writeAsEncodedUnicodeEx(java.io.Writer) throws java.io.IOException, javax.xml.stream.XMLStreamException;
+  protected void charEncode(java.io.Writer, java.lang.String) throws java.io.IOException;
+  static {};
+}

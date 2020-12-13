@@ -1,0 +1,12 @@
+Compiled from "AncestorEvent.java"
+public class javax.swing.event.AncestorEvent extends java.awt.AWTEvent {
+  public static final int ANCESTOR_ADDED;
+  public static final int ANCESTOR_REMOVED;
+  public static final int ANCESTOR_MOVED;
+  java.awt.Container ancestor;
+  java.awt.Container ancestorParent;
+  public javax.swing.event.AncestorEvent(javax.swing.JComponent, int, java.awt.Container, java.awt.Container);
+  public java.awt.Container getAncestor();
+  public java.awt.Container getAncestorParent();
+  public javax.swing.JComponent getComponent();
+}

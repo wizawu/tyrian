@@ -1,0 +1,21 @@
+Compiled from "BerEncoder.java"
+public final class com.sun.jndi.ldap.BerEncoder extends com.sun.jndi.ldap.Ber {
+  public com.sun.jndi.ldap.BerEncoder();
+  public com.sun.jndi.ldap.BerEncoder(int);
+  public void reset();
+  public int getDataLen();
+  public byte[] getBuf();
+  public byte[] getTrimmedBuf();
+  public void beginSeq(int);
+  public void endSeq() throws com.sun.jndi.ldap.Ber$EncodeException;
+  public void encodeByte(int);
+  public void encodeInt(int);
+  public void encodeInt(int, int);
+  public void encodeBoolean(boolean);
+  public void encodeBoolean(boolean, int);
+  public void encodeString(java.lang.String, boolean) throws com.sun.jndi.ldap.Ber$EncodeException;
+  public void encodeString(java.lang.String, int, boolean) throws com.sun.jndi.ldap.Ber$EncodeException;
+  public void encodeOctetString(byte[], int, int, int) throws com.sun.jndi.ldap.Ber$EncodeException;
+  public void encodeOctetString(byte[], int) throws com.sun.jndi.ldap.Ber$EncodeException;
+  public void encodeStringArray(java.lang.String[], boolean) throws com.sun.jndi.ldap.Ber$EncodeException;
+}

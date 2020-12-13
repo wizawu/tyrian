@@ -1,0 +1,38 @@
+Compiled from "XPathParser.java"
+public class com.sun.org.apache.xalan.internal.xsltc.compiler.XPathParser extends com.sun.java_cup.internal.runtime.lr_parser {
+  protected static final short[][] _production_table;
+  protected static final short[][] _action_table;
+  protected static final short[][] _reduce_table;
+  protected com.sun.org.apache.xalan.internal.xsltc.compiler.parser_actions action_obj;
+  public static final java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.Expression> EmptyArgs;
+  public static final com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRef DummyVarRef;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable _symbolTable;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.XPathParser();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.XPathParser(com.sun.java_cup.internal.runtime.Scanner);
+  public short[][] production_table();
+  public short[][] action_table();
+  public short[][] reduce_table();
+  protected void init_actions();
+  public com.sun.java_cup.internal.runtime.Symbol do_action(int, com.sun.java_cup.internal.runtime.lr_parser, java.util.Stack<com.sun.java_cup.internal.runtime.Symbol>, int) throws java.lang.Exception;
+  public int start_state();
+  public int start_production();
+  public int EOF_sym();
+  public int error_sym();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.XPathParser(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+  public int getLineNumber();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.QName getQNameIgnoreDefaultNs(java.lang.String);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.QName getQName(java.lang.String, java.lang.String, java.lang.String);
+  public void setMultiDocument(boolean);
+  public void setCallsNodeset(boolean);
+  public void setHasIdCall(boolean);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.StepPattern createStepPattern(int, java.lang.Object, java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.Predicate>);
+  public int findNodeType(int, java.lang.Object);
+  public com.sun.java_cup.internal.runtime.Symbol parse(java.lang.String, int) throws java.lang.Exception;
+  final com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode lookupName(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public final void addError(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMsg);
+  public void report_error(java.lang.String, java.lang.Object);
+  public void report_fatal_error(java.lang.String, java.lang.Object);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.RelativeLocationPath insertStep(com.sun.org.apache.xalan.internal.xsltc.compiler.Step, com.sun.org.apache.xalan.internal.xsltc.compiler.RelativeLocationPath);
+  public boolean isElementAxis(int);
+  static {};
+}

@@ -1,0 +1,8 @@
+Compiled from "ReflectionCheckLinker.java"
+final class jdk.nashorn.internal.runtime.linker.ReflectionCheckLinker implements jdk.dynalink.linker.TypeBasedGuardingDynamicLinker {
+  jdk.nashorn.internal.runtime.linker.ReflectionCheckLinker();
+  public boolean canLinkType(java.lang.Class<?>);
+  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
+  static void checkReflectionAccess(java.lang.Class<?>, boolean);
+  static {};
+}

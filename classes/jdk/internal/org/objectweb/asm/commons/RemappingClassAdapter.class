@@ -1,0 +1,18 @@
+Compiled from "RemappingClassAdapter.java"
+public class jdk.internal.org.objectweb.asm.commons.RemappingClassAdapter extends jdk.internal.org.objectweb.asm.ClassVisitor {
+  protected final jdk.internal.org.objectweb.asm.commons.Remapper remapper;
+  protected java.lang.String className;
+  public jdk.internal.org.objectweb.asm.commons.RemappingClassAdapter(jdk.internal.org.objectweb.asm.ClassVisitor, jdk.internal.org.objectweb.asm.commons.Remapper);
+  protected jdk.internal.org.objectweb.asm.commons.RemappingClassAdapter(int, jdk.internal.org.objectweb.asm.ClassVisitor, jdk.internal.org.objectweb.asm.commons.Remapper);
+  public void visit(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
+  public jdk.internal.org.objectweb.asm.ModuleVisitor visitModule(java.lang.String, int, java.lang.String);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitAnnotation(java.lang.String, boolean);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitTypeAnnotation(int, jdk.internal.org.objectweb.asm.TypePath, java.lang.String, boolean);
+  public jdk.internal.org.objectweb.asm.FieldVisitor visitField(int, java.lang.String, java.lang.String, java.lang.String, java.lang.Object);
+  public jdk.internal.org.objectweb.asm.MethodVisitor visitMethod(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
+  public void visitInnerClass(java.lang.String, java.lang.String, java.lang.String, int);
+  public void visitOuterClass(java.lang.String, java.lang.String, java.lang.String);
+  protected jdk.internal.org.objectweb.asm.FieldVisitor createRemappingFieldAdapter(jdk.internal.org.objectweb.asm.FieldVisitor);
+  protected jdk.internal.org.objectweb.asm.MethodVisitor createRemappingMethodAdapter(int, java.lang.String, jdk.internal.org.objectweb.asm.MethodVisitor);
+  protected jdk.internal.org.objectweb.asm.AnnotationVisitor createRemappingAnnotationAdapter(jdk.internal.org.objectweb.asm.AnnotationVisitor);
+}

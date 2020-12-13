@@ -1,0 +1,16 @@
+Compiled from "DiagnosticCommandImpl.java"
+public class com.sun.management.internal.DiagnosticCommandImpl extends sun.management.NotificationEmitterSupport implements com.sun.management.DiagnosticCommandMBean {
+  static synchronized com.sun.management.DiagnosticCommandMBean getDiagnosticCommandMBean();
+  public java.lang.Object getAttribute(java.lang.String) throws javax.management.AttributeNotFoundException, javax.management.MBeanException, javax.management.ReflectionException;
+  public void setAttribute(javax.management.Attribute) throws javax.management.AttributeNotFoundException, javax.management.InvalidAttributeValueException, javax.management.MBeanException, javax.management.ReflectionException;
+  public javax.management.AttributeList getAttributes(java.lang.String[]);
+  public javax.management.AttributeList setAttributes(javax.management.AttributeList);
+  com.sun.management.internal.DiagnosticCommandImpl(sun.management.VMManagement);
+  public javax.management.MBeanInfo getMBeanInfo();
+  public java.lang.Object invoke(java.lang.String, java.lang.Object[], java.lang.String[]) throws javax.management.MBeanException, javax.management.ReflectionException;
+  public javax.management.MBeanNotificationInfo[] getNotificationInfo();
+  public synchronized void addNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object);
+  public synchronized void removeNotificationListener(javax.management.NotificationListener) throws javax.management.ListenerNotFoundException;
+  public synchronized void removeNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) throws javax.management.ListenerNotFoundException;
+  static {};
+}

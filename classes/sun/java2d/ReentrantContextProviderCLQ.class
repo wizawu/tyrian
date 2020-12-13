@@ -1,0 +1,6 @@
+Compiled from "ReentrantContextProviderCLQ.java"
+public abstract class sun.java2d.ReentrantContextProviderCLQ<K extends sun.java2d.ReentrantContext> extends sun.java2d.ReentrantContextProvider<K> {
+  public sun.java2d.ReentrantContextProviderCLQ(int);
+  public final K acquire();
+  public final void release(K);
+}

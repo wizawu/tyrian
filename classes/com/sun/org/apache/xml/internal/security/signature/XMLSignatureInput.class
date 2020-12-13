@@ -1,0 +1,45 @@
+Compiled from "XMLSignatureInput.java"
+public class com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput {
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput(byte[]);
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput(java.io.InputStream);
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput(org.w3c.dom.Node);
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput(java.util.Set<org.w3c.dom.Node>);
+  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput(java.lang.String);
+  public boolean isNeedsToBeExpanded();
+  public void setNeedsToBeExpanded(boolean);
+  public java.util.Set<org.w3c.dom.Node> getNodeSet() throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, javax.xml.parsers.ParserConfigurationException, java.io.IOException, org.xml.sax.SAXException;
+  public java.util.Set<org.w3c.dom.Node> getInputNodeSet();
+  public java.util.Set<org.w3c.dom.Node> getNodeSet(boolean) throws javax.xml.parsers.ParserConfigurationException, java.io.IOException, org.xml.sax.SAXException, com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public java.io.InputStream getOctetStream() throws java.io.IOException;
+  public java.io.InputStream getOctetStreamReal();
+  public byte[] getBytes() throws java.io.IOException, com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException;
+  public boolean isNodeSet();
+  public boolean isElement();
+  public boolean isOctetStream();
+  public boolean isOutputStreamSet();
+  public boolean isByteArray();
+  public boolean isPreCalculatedDigest();
+  public boolean isInitialized();
+  public java.lang.String getMIMEType();
+  public void setMIMEType(java.lang.String);
+  public java.lang.String getSourceURI();
+  public void setSourceURI(java.lang.String);
+  public java.lang.String toString();
+  public java.lang.String getHTMLRepresentation() throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public java.lang.String getHTMLRepresentation(java.util.Set<java.lang.String>) throws com.sun.org.apache.xml.internal.security.signature.XMLSignatureException;
+  public org.w3c.dom.Node getExcludeNode();
+  public void setExcludeNode(org.w3c.dom.Node);
+  public org.w3c.dom.Node getSubNode();
+  public boolean isExcludeComments();
+  public void setExcludeComments(boolean);
+  public void updateOutputStream(java.io.OutputStream) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, java.io.IOException;
+  public void updateOutputStream(java.io.OutputStream, boolean) throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, java.io.IOException;
+  public void setOutputStream(java.io.OutputStream);
+  public void addNodeFilter(com.sun.org.apache.xml.internal.security.signature.NodeFilter);
+  public java.util.List<com.sun.org.apache.xml.internal.security.signature.NodeFilter> getNodeFilters();
+  public void setNodeSet(boolean);
+  void convertToNodes() throws com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, javax.xml.parsers.ParserConfigurationException, java.io.IOException, org.xml.sax.SAXException;
+  public boolean isSecureValidation();
+  public void setSecureValidation(boolean);
+  public java.lang.String getPreCalculatedDigest();
+}

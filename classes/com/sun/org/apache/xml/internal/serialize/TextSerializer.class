@@ -1,0 +1,20 @@
+Compiled from "TextSerializer.java"
+public class com.sun.org.apache.xml.internal.serialize.TextSerializer extends com.sun.org.apache.xml.internal.serialize.BaseMarkupSerializer {
+  public com.sun.org.apache.xml.internal.serialize.TextSerializer();
+  public void setOutputFormat(com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void startElement(java.lang.String, org.xml.sax.AttributeList) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String) throws org.xml.sax.SAXException;
+  public void endElementIO(java.lang.String) throws java.io.IOException;
+  public void processingInstructionIO(java.lang.String, java.lang.String) throws java.io.IOException;
+  public void comment(java.lang.String);
+  public void comment(char[], int, int);
+  public void characters(char[], int, int) throws org.xml.sax.SAXException;
+  protected void characters(java.lang.String, boolean) throws java.io.IOException;
+  protected void startDocument(java.lang.String) throws java.io.IOException;
+  protected void serializeElement(org.w3c.dom.Element) throws java.io.IOException;
+  protected void serializeNode(org.w3c.dom.Node) throws java.io.IOException;
+  protected com.sun.org.apache.xml.internal.serialize.ElementState content();
+  protected java.lang.String getEntityRef(int);
+}

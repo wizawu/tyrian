@@ -1,0 +1,11 @@
+Compiled from "ProcessControl.java"
+public interface sun.jvm.hotspot.debugger.cdbg.ProcessControl {
+  public abstract void suspend() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract void resume() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract boolean isSuspended() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract void setBreakpoint(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract void clearBreakpoint(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract boolean isBreakpointSet(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.cdbg.DebugEvent debugEventPoll() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract void debugEventContinue() throws sun.jvm.hotspot.debugger.DebuggerException;
+}

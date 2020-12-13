@@ -1,0 +1,5 @@
+Compiled from "XMLSecurityPropertyManager.java"
+public final class com.sun.org.apache.xalan.internal.utils.XMLSecurityPropertyManager extends com.sun.org.apache.xalan.internal.utils.FeaturePropertyBase {
+  public com.sun.org.apache.xalan.internal.utils.XMLSecurityPropertyManager();
+  public int getIndex(java.lang.String);
+}

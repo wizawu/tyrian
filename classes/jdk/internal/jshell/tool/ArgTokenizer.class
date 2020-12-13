@@ -1,0 +1,17 @@
+Compiled from "ArgTokenizer.java"
+class jdk.internal.jshell.tool.ArgTokenizer {
+  jdk.internal.jshell.tool.ArgTokenizer(java.lang.String, java.lang.String);
+  java.lang.String next();
+  void allowedOptions(java.lang.String...);
+  boolean isAllowedOption(java.lang.String);
+  boolean hasOption(java.lang.String);
+  int optionCount();
+  java.lang.String badOptions();
+  java.lang.String remainder();
+  java.lang.String val();
+  boolean isQuoted();
+  java.lang.String whole();
+  void mark();
+  void rewind();
+  public void nextToken();
+}

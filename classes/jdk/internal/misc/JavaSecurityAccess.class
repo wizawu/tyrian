@@ -1,0 +1,7 @@
+Compiled from "JavaSecurityAccess.java"
+public interface jdk.internal.misc.JavaSecurityAccess {
+  public abstract <T> T doIntersectionPrivilege(java.security.PrivilegedAction<T>, java.security.AccessControlContext, java.security.AccessControlContext);
+  public abstract <T> T doIntersectionPrivilege(java.security.PrivilegedAction<T>, java.security.AccessControlContext);
+  public abstract java.security.ProtectionDomain[] getProtectDomains(java.security.AccessControlContext);
+  public abstract jdk.internal.misc.JavaSecurityAccess$ProtectionDomainCache getProtectionDomainCache();
+}

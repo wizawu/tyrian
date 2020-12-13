@@ -1,0 +1,22 @@
+Compiled from "MBeanOperationInfo.java"
+public class javax.management.MBeanOperationInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
+  static final long serialVersionUID;
+  static final javax.management.MBeanOperationInfo[] NO_OPERATIONS;
+  public static final int INFO;
+  public static final int ACTION;
+  public static final int ACTION_INFO;
+  public static final int UNKNOWN;
+  static final boolean $assertionsDisabled;
+  public javax.management.MBeanOperationInfo(java.lang.String, java.lang.reflect.Method);
+  public javax.management.MBeanOperationInfo(java.lang.String, java.lang.String, javax.management.MBeanParameterInfo[], java.lang.String, int);
+  public javax.management.MBeanOperationInfo(java.lang.String, java.lang.String, javax.management.MBeanParameterInfo[], java.lang.String, int, javax.management.Descriptor);
+  public java.lang.Object clone();
+  public java.lang.String getReturnType();
+  public javax.management.MBeanParameterInfo[] getSignature();
+  public int getImpact();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static javax.management.MBeanParameterInfo[] parameters(java.lang.Class<?>[], java.lang.annotation.Annotation[][]);
+  static {};
+}

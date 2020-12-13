@@ -1,0 +1,7 @@
+Compiled from "Key.java"
+abstract class jdk.jshell.Key {
+  jdk.jshell.Key(jdk.jshell.JShell);
+  int index();
+  abstract jdk.jshell.Snippet$Kind kind();
+  jdk.jshell.JShell state();
+}

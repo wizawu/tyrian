@@ -1,0 +1,9 @@
+Compiled from "BooleanField.java"
+public class sun.jvm.hotspot.oops.BooleanField extends sun.jvm.hotspot.oops.Field {
+  public sun.jvm.hotspot.oops.BooleanField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
+  public sun.jvm.hotspot.oops.BooleanField(sun.jvm.hotspot.types.JBooleanField, long);
+  public sun.jvm.hotspot.oops.BooleanField(sun.jvm.hotspot.oops.InstanceKlass, int);
+  public boolean getValue(sun.jvm.hotspot.oops.Oop);
+  public boolean getValue(sun.jvm.hotspot.runtime.VMObject);
+  public void setValue(sun.jvm.hotspot.oops.Oop, boolean) throws sun.jvm.hotspot.oops.MutationException;
+}

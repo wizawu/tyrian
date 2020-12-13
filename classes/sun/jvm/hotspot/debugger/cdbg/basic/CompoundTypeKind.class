@@ -1,0 +1,7 @@
+Compiled from "CompoundTypeKind.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.CompoundTypeKind {
+  public static final sun.jvm.hotspot.debugger.cdbg.basic.CompoundTypeKind CLASS;
+  public static final sun.jvm.hotspot.debugger.cdbg.basic.CompoundTypeKind STRUCT;
+  public static final sun.jvm.hotspot.debugger.cdbg.basic.CompoundTypeKind UNION;
+  static {};
+}

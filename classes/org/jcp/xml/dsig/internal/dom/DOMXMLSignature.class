@@ -1,0 +1,18 @@
+Compiled from "DOMXMLSignature.java"
+public final class org.jcp.xml.dsig.internal.dom.DOMXMLSignature extends org.jcp.xml.dsig.internal.dom.DOMStructure implements javax.xml.crypto.dsig.XMLSignature {
+  public org.jcp.xml.dsig.internal.dom.DOMXMLSignature(javax.xml.crypto.dsig.SignedInfo, javax.xml.crypto.dsig.keyinfo.KeyInfo, java.util.List<? extends javax.xml.crypto.dsig.XMLObject>, java.lang.String, java.lang.String);
+  public org.jcp.xml.dsig.internal.dom.DOMXMLSignature(org.w3c.dom.Element, javax.xml.crypto.XMLCryptoContext, java.security.Provider) throws javax.xml.crypto.MarshalException;
+  public java.lang.String getId();
+  public javax.xml.crypto.dsig.keyinfo.KeyInfo getKeyInfo();
+  public javax.xml.crypto.dsig.SignedInfo getSignedInfo();
+  public java.util.List<javax.xml.crypto.dsig.XMLObject> getObjects();
+  public javax.xml.crypto.dsig.XMLSignature$SignatureValue getSignatureValue();
+  public javax.xml.crypto.KeySelectorResult getKeySelectorResult();
+  public void marshal(org.w3c.dom.Node, java.lang.String, javax.xml.crypto.dom.DOMCryptoContext) throws javax.xml.crypto.MarshalException;
+  public void marshal(org.w3c.dom.Node, org.w3c.dom.Node, java.lang.String, javax.xml.crypto.dom.DOMCryptoContext) throws javax.xml.crypto.MarshalException;
+  public boolean validate(javax.xml.crypto.dsig.XMLValidateContext) throws javax.xml.crypto.dsig.XMLSignatureException;
+  public void sign(javax.xml.crypto.dsig.XMLSignContext) throws javax.xml.crypto.MarshalException, javax.xml.crypto.dsig.XMLSignatureException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

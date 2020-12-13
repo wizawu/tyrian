@@ -1,0 +1,17 @@
+Compiled from "TagletManager.java"
+public class jdk.javadoc.internal.doclets.toolkit.taglets.TagletManager {
+  public static final char SIMPLE_TAGLET_OPT_SEPARATOR;
+  public jdk.javadoc.internal.doclets.toolkit.taglets.TagletManager(boolean, boolean, boolean, boolean, jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public void addCustomTag(jdk.javadoc.internal.doclets.toolkit.taglets.Taglet);
+  public java.util.Set<java.lang.String> getAllTagletNames();
+  public void addCustomTag(java.lang.String, javax.tools.JavaFileManager, java.lang.String);
+  public void addNewSimpleCustomTag(java.lang.String, java.lang.String, java.lang.String);
+  void seenCustomTag(java.lang.String);
+  public void checkTags(javax.lang.model.element.Element, java.lang.Iterable<? extends com.sun.source.doctree.DocTree>, boolean);
+  java.util.List<jdk.javadoc.internal.doclets.toolkit.taglets.Taglet> getInlineTaglets();
+  public java.util.List<jdk.javadoc.internal.doclets.toolkit.taglets.Taglet> getSerializedFormTaglets();
+  public java.util.List<jdk.javadoc.internal.doclets.toolkit.taglets.Taglet> getBlockTaglets(javax.lang.model.element.Element);
+  public boolean isKnownCustomTag(java.lang.String);
+  public void printReport();
+  jdk.javadoc.internal.doclets.toolkit.taglets.Taglet getTaglet(java.lang.String);
+}

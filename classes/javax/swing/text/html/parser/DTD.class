@@ -1,0 +1,42 @@
+Compiled from "DTD.java"
+public class javax.swing.text.html.parser.DTD implements javax.swing.text.html.parser.DTDConstants {
+  public java.lang.String name;
+  public java.util.Vector<javax.swing.text.html.parser.Element> elements;
+  public java.util.Hashtable<java.lang.String, javax.swing.text.html.parser.Element> elementHash;
+  public java.util.Hashtable<java.lang.Object, javax.swing.text.html.parser.Entity> entityHash;
+  public final javax.swing.text.html.parser.Element pcdata;
+  public final javax.swing.text.html.parser.Element html;
+  public final javax.swing.text.html.parser.Element meta;
+  public final javax.swing.text.html.parser.Element base;
+  public final javax.swing.text.html.parser.Element isindex;
+  public final javax.swing.text.html.parser.Element head;
+  public final javax.swing.text.html.parser.Element body;
+  public final javax.swing.text.html.parser.Element applet;
+  public final javax.swing.text.html.parser.Element param;
+  public final javax.swing.text.html.parser.Element p;
+  public final javax.swing.text.html.parser.Element title;
+  final javax.swing.text.html.parser.Element style;
+  final javax.swing.text.html.parser.Element link;
+  final javax.swing.text.html.parser.Element script;
+  public static final int FILE_VERSION;
+  protected javax.swing.text.html.parser.DTD(java.lang.String);
+  public java.lang.String getName();
+  public javax.swing.text.html.parser.Entity getEntity(java.lang.String);
+  public javax.swing.text.html.parser.Entity getEntity(int);
+  boolean elementExists(java.lang.String);
+  public javax.swing.text.html.parser.Element getElement(java.lang.String);
+  public javax.swing.text.html.parser.Element getElement(int);
+  public javax.swing.text.html.parser.Entity defineEntity(java.lang.String, int, char[]);
+  public javax.swing.text.html.parser.Element defineElement(java.lang.String, int, boolean, boolean, javax.swing.text.html.parser.ContentModel, java.util.BitSet, java.util.BitSet, javax.swing.text.html.parser.AttributeList);
+  public void defineAttributes(java.lang.String, javax.swing.text.html.parser.AttributeList);
+  public javax.swing.text.html.parser.Entity defEntity(java.lang.String, int, int);
+  protected javax.swing.text.html.parser.Entity defEntity(java.lang.String, int, java.lang.String);
+  protected javax.swing.text.html.parser.Element defElement(java.lang.String, int, boolean, boolean, javax.swing.text.html.parser.ContentModel, java.lang.String[], java.lang.String[], javax.swing.text.html.parser.AttributeList);
+  protected javax.swing.text.html.parser.AttributeList defAttributeList(java.lang.String, int, int, java.lang.String, java.lang.String, javax.swing.text.html.parser.AttributeList);
+  protected javax.swing.text.html.parser.ContentModel defContentModel(int, java.lang.Object, javax.swing.text.html.parser.ContentModel);
+  public java.lang.String toString();
+  public static void putDTDHash(java.lang.String, javax.swing.text.html.parser.DTD);
+  public static javax.swing.text.html.parser.DTD getDTD(java.lang.String) throws java.io.IOException;
+  public void read(java.io.DataInputStream) throws java.io.IOException;
+  static {};
+}

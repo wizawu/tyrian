@@ -1,0 +1,11 @@
+Compiled from "ImmutableCollections.java"
+class java.util.ImmutableCollections {
+  static final int SALT;
+  static final int EXPAND_FACTOR;
+  static java.lang.UnsupportedOperationException uoe();
+  static <E> java.util.List<E> listCopy(java.util.Collection<? extends E>);
+  static <E> java.util.List<E> emptyList();
+  static <E> java.util.Set<E> emptySet();
+  static <K, V> java.util.Map<K, V> emptyMap();
+  static {};
+}

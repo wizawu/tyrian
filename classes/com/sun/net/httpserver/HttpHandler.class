@@ -1,0 +1,4 @@
+Compiled from "HttpHandler.java"
+public interface com.sun.net.httpserver.HttpHandler {
+  public abstract void handle(com.sun.net.httpserver.HttpExchange) throws java.io.IOException;
+}

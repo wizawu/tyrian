@@ -1,0 +1,5 @@
+Compiled from "ImageIconUIResource.java"
+public class sun.swing.ImageIconUIResource extends javax.swing.ImageIcon implements javax.swing.plaf.UIResource {
+  public sun.swing.ImageIconUIResource(byte[]);
+  public sun.swing.ImageIconUIResource(java.awt.Image);
+}

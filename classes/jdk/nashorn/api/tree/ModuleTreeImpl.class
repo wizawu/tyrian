@@ -1,0 +1,13 @@
+Compiled from "ModuleTreeImpl.java"
+final class jdk.nashorn.api.tree.ModuleTreeImpl extends jdk.nashorn.api.tree.TreeImpl implements jdk.nashorn.api.tree.ModuleTree {
+  static final boolean $assertionsDisabled;
+  static jdk.nashorn.api.tree.ModuleTreeImpl create(jdk.nashorn.internal.ir.FunctionNode);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public java.util.List<? extends jdk.nashorn.api.tree.ImportEntryTree> getImportEntries();
+  public java.util.List<? extends jdk.nashorn.api.tree.ExportEntryTree> getLocalExportEntries();
+  public java.util.List<? extends jdk.nashorn.api.tree.ExportEntryTree> getIndirectExportEntries();
+  public java.util.List<? extends jdk.nashorn.api.tree.ExportEntryTree> getStarExportEntries();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+  static jdk.nashorn.api.tree.IdentifierTree identOrNull(jdk.nashorn.internal.ir.IdentNode);
+  static {};
+}

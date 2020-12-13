@@ -1,0 +1,24 @@
+Compiled from "RawChannelTube.java"
+public class jdk.internal.net.http.RawChannelTube implements jdk.internal.net.http.websocket.RawChannel {
+  final jdk.internal.net.http.HttpConnection connection;
+  final jdk.internal.net.http.common.FlowTube tube;
+  final jdk.internal.net.http.RawChannelTube$WritePublisher writePublisher;
+  final jdk.internal.net.http.RawChannelTube$ReadSubscriber readSubscriber;
+  final java.util.function.Supplier<java.nio.ByteBuffer> initial;
+  final java.util.concurrent.atomic.AtomicBoolean inited;
+  final java.util.concurrent.atomic.AtomicBoolean outputClosed;
+  final java.util.concurrent.atomic.AtomicBoolean inputClosed;
+  final java.util.concurrent.atomic.AtomicBoolean closed;
+  final java.lang.String dbgTag;
+  final jdk.internal.net.http.common.Logger debug;
+  static final boolean $assertionsDisabled;
+  jdk.internal.net.http.RawChannelTube(jdk.internal.net.http.HttpConnection, java.util.function.Supplier<java.nio.ByteBuffer>);
+  public void registerEvent(jdk.internal.net.http.websocket.RawChannel$RawEvent) throws java.io.IOException;
+  public java.nio.ByteBuffer initialByteBuffer() throws java.lang.IllegalStateException;
+  public java.nio.ByteBuffer read() throws java.io.IOException;
+  public long write(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  public void shutdownInput();
+  public void shutdownOutput();
+  public void close();
+  static {};
+}

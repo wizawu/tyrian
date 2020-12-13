@@ -1,0 +1,5 @@
+Compiled from "NotCompliantMBeanException.java"
+public class javax.management.NotCompliantMBeanException extends javax.management.OperationsException {
+  public javax.management.NotCompliantMBeanException();
+  public javax.management.NotCompliantMBeanException(java.lang.String);
+}

@@ -1,0 +1,15 @@
+Compiled from "LinuxSocketOptions.java"
+class jdk.net.LinuxSocketOptions extends jdk.net.ExtendedSocketOptions$PlatformSocketOptions {
+  public jdk.net.LinuxSocketOptions();
+  void setQuickAck(int, boolean) throws java.net.SocketException;
+  boolean getQuickAck(int) throws java.net.SocketException;
+  public boolean quickAckSupported();
+  boolean keepAliveOptionsSupported();
+  void setTcpkeepAliveProbes(int, int) throws java.net.SocketException;
+  void setTcpKeepAliveTime(int, int) throws java.net.SocketException;
+  void setTcpKeepAliveIntvl(int, int) throws java.net.SocketException;
+  int getTcpkeepAliveProbes(int) throws java.net.SocketException;
+  int getTcpKeepAliveTime(int) throws java.net.SocketException;
+  int getTcpKeepAliveIntvl(int) throws java.net.SocketException;
+  static {};
+}

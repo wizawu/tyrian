@@ -1,0 +1,8 @@
+Compiled from "LoginModule.java"
+public interface javax.security.auth.spi.LoginModule {
+  public abstract void initialize(javax.security.auth.Subject, javax.security.auth.callback.CallbackHandler, java.util.Map<java.lang.String, ?>, java.util.Map<java.lang.String, ?>);
+  public abstract boolean login() throws javax.security.auth.login.LoginException;
+  public abstract boolean commit() throws javax.security.auth.login.LoginException;
+  public abstract boolean abort() throws javax.security.auth.login.LoginException;
+  public abstract boolean logout() throws javax.security.auth.login.LoginException;
+}

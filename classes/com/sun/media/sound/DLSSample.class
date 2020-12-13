@@ -1,0 +1,25 @@
+Compiled from "DLSSample.java"
+public final class com.sun.media.sound.DLSSample extends javax.sound.midi.SoundbankResource {
+  byte[] guid;
+  com.sun.media.sound.DLSInfo info;
+  com.sun.media.sound.DLSSampleOptions sampleoptions;
+  com.sun.media.sound.ModelByteBuffer data;
+  javax.sound.sampled.AudioFormat format;
+  public com.sun.media.sound.DLSSample(javax.sound.midi.Soundbank);
+  public com.sun.media.sound.DLSSample();
+  public com.sun.media.sound.DLSInfo getInfo();
+  public java.lang.Object getData();
+  public com.sun.media.sound.ModelByteBuffer getDataBuffer();
+  public javax.sound.sampled.AudioFormat getFormat();
+  public void setFormat(javax.sound.sampled.AudioFormat);
+  public void setData(com.sun.media.sound.ModelByteBuffer);
+  public void setData(byte[]);
+  public void setData(byte[], int, int);
+  public java.lang.String getName();
+  public void setName(java.lang.String);
+  public com.sun.media.sound.DLSSampleOptions getSampleoptions();
+  public void setSampleoptions(com.sun.media.sound.DLSSampleOptions);
+  public java.lang.String toString();
+  public byte[] getGuid();
+  public void setGuid(byte[]);
+}

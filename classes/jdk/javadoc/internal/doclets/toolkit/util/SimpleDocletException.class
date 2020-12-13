@@ -1,0 +1,5 @@
+Compiled from "SimpleDocletException.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.SimpleDocletException extends jdk.javadoc.internal.doclets.toolkit.DocletException {
+  public jdk.javadoc.internal.doclets.toolkit.util.SimpleDocletException(java.lang.String);
+  public jdk.javadoc.internal.doclets.toolkit.util.SimpleDocletException(java.lang.String, java.lang.Throwable);
+}

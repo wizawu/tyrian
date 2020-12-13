@@ -1,0 +1,36 @@
+Compiled from "QName.java"
+public class com.sun.org.apache.xml.internal.utils.QName implements java.io.Serializable {
+  static final long serialVersionUID;
+  protected java.lang.String _localName;
+  protected java.lang.String _namespaceURI;
+  protected java.lang.String _prefix;
+  public static final java.lang.String S_XMLNAMESPACEURI;
+  public com.sun.org.apache.xml.internal.utils.QName();
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, java.lang.String);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, java.lang.String, boolean);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, java.lang.String, java.lang.String, boolean);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, boolean);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, java.util.Stack<com.sun.org.apache.xml.internal.utils.NameSpace>);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, java.util.Stack<com.sun.org.apache.xml.internal.utils.NameSpace>, boolean);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, org.w3c.dom.Element, com.sun.org.apache.xml.internal.utils.PrefixResolver);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, org.w3c.dom.Element, com.sun.org.apache.xml.internal.utils.PrefixResolver, boolean);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, com.sun.org.apache.xml.internal.utils.PrefixResolver);
+  public com.sun.org.apache.xml.internal.utils.QName(java.lang.String, com.sun.org.apache.xml.internal.utils.PrefixResolver, boolean);
+  public java.lang.String getNamespaceURI();
+  public java.lang.String getPrefix();
+  public java.lang.String getLocalName();
+  public java.lang.String toString();
+  public java.lang.String toNamespacedString();
+  public java.lang.String getNamespace();
+  public java.lang.String getLocalPart();
+  public int hashCode();
+  public boolean equals(java.lang.String, java.lang.String);
+  public boolean equals(java.lang.Object);
+  public static com.sun.org.apache.xml.internal.utils.QName getQNameFromString(java.lang.String);
+  public static boolean isXMLNSDecl(java.lang.String);
+  public static java.lang.String getPrefixFromXMLNSDecl(java.lang.String);
+  public static java.lang.String getLocalPart(java.lang.String);
+  public static java.lang.String getPrefixPart(java.lang.String);
+}

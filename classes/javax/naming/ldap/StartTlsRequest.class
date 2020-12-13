@@ -1,0 +1,8 @@
+Compiled from "StartTlsRequest.java"
+public class javax.naming.ldap.StartTlsRequest implements javax.naming.ldap.ExtendedRequest {
+  public static final java.lang.String OID;
+  public javax.naming.ldap.StartTlsRequest();
+  public java.lang.String getID();
+  public byte[] getEncodedValue();
+  public javax.naming.ldap.ExtendedResponse createExtendedResponse(java.lang.String, byte[], int, int) throws javax.naming.NamingException;
+}

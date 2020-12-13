@@ -1,0 +1,5 @@
+Compiled from "EditPad.java"
+class jdk.editpad.EditPad implements java.lang.Runnable {
+  jdk.editpad.EditPad(java.lang.String, java.util.function.Consumer<java.lang.String>, java.lang.String, java.lang.Runnable, java.util.function.Consumer<java.lang.String>);
+  public void run();
+}

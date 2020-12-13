@@ -1,0 +1,9 @@
+Compiled from "IconView.java"
+public class javax.swing.text.IconView extends javax.swing.text.View {
+  public javax.swing.text.IconView(javax.swing.text.Element);
+  public void paint(java.awt.Graphics, java.awt.Shape);
+  public float getPreferredSpan(int);
+  public float getAlignment(int);
+  public java.awt.Shape modelToView(int, java.awt.Shape, javax.swing.text.Position$Bias) throws javax.swing.text.BadLocationException;
+  public int viewToModel(float, float, java.awt.Shape, javax.swing.text.Position$Bias[]);
+}

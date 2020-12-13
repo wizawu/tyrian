@@ -1,0 +1,31 @@
+Compiled from "Timer.java"
+public class javax.swing.Timer implements java.io.Serializable {
+  protected javax.swing.event.EventListenerList listenerList;
+  transient javax.swing.TimerQueue$DelayedTimer delayedTimer;
+  public javax.swing.Timer(int, java.awt.event.ActionListener);
+  final java.security.AccessControlContext getAccessControlContext();
+  public void addActionListener(java.awt.event.ActionListener);
+  public void removeActionListener(java.awt.event.ActionListener);
+  public java.awt.event.ActionListener[] getActionListeners();
+  protected void fireActionPerformed(java.awt.event.ActionEvent);
+  public <T extends java.util.EventListener> T[] getListeners(java.lang.Class<T>);
+  public static void setLogTimers(boolean);
+  public static boolean getLogTimers();
+  public void setDelay(int);
+  public int getDelay();
+  public void setInitialDelay(int);
+  public int getInitialDelay();
+  public void setRepeats(boolean);
+  public boolean isRepeats();
+  public void setCoalesce(boolean);
+  public boolean isCoalesce();
+  public void setActionCommand(java.lang.String);
+  public java.lang.String getActionCommand();
+  public void start();
+  public boolean isRunning();
+  public void stop();
+  public void restart();
+  void cancelEvent();
+  void post();
+  java.util.concurrent.locks.Lock getLock();
+}

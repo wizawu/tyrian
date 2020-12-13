@@ -1,0 +1,46 @@
+Compiled from "PKCS9Attribute.java"
+public class sun.security.pkcs.PKCS9Attribute implements sun.security.util.DerEncoder {
+  static final sun.security.util.ObjectIdentifier[] PKCS9_OIDS;
+  public static final sun.security.util.ObjectIdentifier EMAIL_ADDRESS_OID;
+  public static final sun.security.util.ObjectIdentifier UNSTRUCTURED_NAME_OID;
+  public static final sun.security.util.ObjectIdentifier CONTENT_TYPE_OID;
+  public static final sun.security.util.ObjectIdentifier MESSAGE_DIGEST_OID;
+  public static final sun.security.util.ObjectIdentifier SIGNING_TIME_OID;
+  public static final sun.security.util.ObjectIdentifier COUNTERSIGNATURE_OID;
+  public static final sun.security.util.ObjectIdentifier CHALLENGE_PASSWORD_OID;
+  public static final sun.security.util.ObjectIdentifier UNSTRUCTURED_ADDRESS_OID;
+  public static final sun.security.util.ObjectIdentifier EXTENDED_CERTIFICATE_ATTRIBUTES_OID;
+  public static final sun.security.util.ObjectIdentifier ISSUER_SERIALNUMBER_OID;
+  public static final sun.security.util.ObjectIdentifier EXTENSION_REQUEST_OID;
+  public static final sun.security.util.ObjectIdentifier SMIME_CAPABILITY_OID;
+  public static final sun.security.util.ObjectIdentifier SIGNING_CERTIFICATE_OID;
+  public static final sun.security.util.ObjectIdentifier SIGNATURE_TIMESTAMP_TOKEN_OID;
+  public static final java.lang.String EMAIL_ADDRESS_STR;
+  public static final java.lang.String UNSTRUCTURED_NAME_STR;
+  public static final java.lang.String CONTENT_TYPE_STR;
+  public static final java.lang.String MESSAGE_DIGEST_STR;
+  public static final java.lang.String SIGNING_TIME_STR;
+  public static final java.lang.String COUNTERSIGNATURE_STR;
+  public static final java.lang.String CHALLENGE_PASSWORD_STR;
+  public static final java.lang.String UNSTRUCTURED_ADDRESS_STR;
+  public static final java.lang.String EXTENDED_CERTIFICATE_ATTRIBUTES_STR;
+  public static final java.lang.String ISSUER_SERIALNUMBER_STR;
+  public static final java.lang.String EXTENSION_REQUEST_STR;
+  public static final java.lang.String SMIME_CAPABILITY_STR;
+  public static final java.lang.String SIGNING_CERTIFICATE_STR;
+  public static final java.lang.String SIGNATURE_TIMESTAMP_TOKEN_STR;
+  public sun.security.pkcs.PKCS9Attribute(sun.security.util.ObjectIdentifier, java.lang.Object) throws java.lang.IllegalArgumentException;
+  public sun.security.pkcs.PKCS9Attribute(java.lang.String, java.lang.Object) throws java.lang.IllegalArgumentException;
+  public sun.security.pkcs.PKCS9Attribute(sun.security.util.DerValue) throws java.io.IOException;
+  public void derEncode(java.io.OutputStream) throws java.io.IOException;
+  public boolean isKnown();
+  public java.lang.Object getValue();
+  public boolean isSingleValued();
+  public sun.security.util.ObjectIdentifier getOID();
+  public java.lang.String getName();
+  public static sun.security.util.ObjectIdentifier getOID(java.lang.String);
+  public static java.lang.String getName(sun.security.util.ObjectIdentifier);
+  public java.lang.String toString();
+  static int indexOf(java.lang.Object, java.lang.Object[], int);
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "Threshold.java"
+public interface jdk.jfr.Threshold extends java.lang.annotation.Annotation {
+  public static final java.lang.String NAME;
+  public abstract java.lang.String value();
+}

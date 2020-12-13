@@ -1,0 +1,33 @@
+Compiled from "JavacState.java"
+public class com.sun.tools.sjavac.JavacState {
+  java.lang.String theArgs;
+  int numCores;
+  java.util.Set<com.sun.tools.sjavac.Source> removedSources;
+  java.util.Set<com.sun.tools.sjavac.Source> addedSources;
+  java.util.Set<com.sun.tools.sjavac.Source> modifiedSources;
+  java.util.Set<java.net.URI> visibleSrcs;
+  com.sun.tools.sjavac.JavacState(com.sun.tools.sjavac.options.Options, boolean);
+  public com.sun.tools.sjavac.BuildState prev();
+  public com.sun.tools.sjavac.BuildState now();
+  static java.lang.String[] removeArgsNotAffectingState(java.lang.String[]);
+  public void setVisibleSources(java.util.Map<java.lang.String, com.sun.tools.sjavac.Source>);
+  public boolean isIncremental();
+  public void findAllArtifacts();
+  public void deleteClassArtifactsInTaintedPackages();
+  public void save() throws java.io.IOException;
+  public static com.sun.tools.sjavac.JavacState load(com.sun.tools.sjavac.options.Options);
+  public void taintPackage(java.lang.String, java.lang.String);
+  public java.util.Set<java.lang.String> taintedPackages();
+  public void clearTaintedPackages();
+  public void checkSourceStatus(boolean);
+  public java.util.Map<java.lang.String, com.sun.tools.sjavac.Transformer> getJavaSuffixRule();
+  public void taintPackagesThatMissArtifacts();
+  public void taintPackagesDependingOnChangedPackages(java.util.Set<java.lang.String>, java.util.Set<java.lang.String>);
+  public void taintPackagesDependingOnChangedClasspathPackages() throws java.io.IOException;
+  public void removeUnidentifiedArtifacts();
+  public void removeSuperfluousArtifacts(java.util.Set<java.lang.String>);
+  public void performCopying(java.io.File, java.util.Map<java.lang.String, com.sun.tools.sjavac.Transformer>);
+  public void performTranslation(java.io.File, java.util.Map<java.lang.String, com.sun.tools.sjavac.Transformer>);
+  public boolean performJavaCompilations(com.sun.tools.sjavac.comp.CompilationService, com.sun.tools.sjavac.options.Options, java.util.Set<java.lang.String>, boolean[]);
+  public void compareWithMakefileList(java.io.File) throws com.sun.tools.sjavac.ProblemException;
+}

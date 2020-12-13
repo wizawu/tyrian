@@ -1,0 +1,13 @@
+Compiled from "RegExp.java"
+public abstract class jdk.nashorn.internal.runtime.regexp.RegExp {
+  protected jdk.nashorn.internal.runtime.BitVector groupsInNegativeLookahead;
+  protected jdk.nashorn.internal.runtime.regexp.RegExp(java.lang.String, java.lang.String);
+  public java.lang.String getSource();
+  public void setGlobal(boolean);
+  public boolean isGlobal();
+  public boolean isIgnoreCase();
+  public boolean isMultiline();
+  public jdk.nashorn.internal.runtime.BitVector getGroupsInNegativeLookahead();
+  public abstract jdk.nashorn.internal.runtime.regexp.RegExpMatcher match(java.lang.String);
+  protected static void throwParserException(java.lang.String, java.lang.String) throws jdk.nashorn.internal.runtime.ParserException;
+}

@@ -1,0 +1,5 @@
+Compiled from "MethodScope.java"
+public class sun.reflect.generics.scope.MethodScope extends sun.reflect.generics.scope.AbstractScope<java.lang.reflect.Method> {
+  protected sun.reflect.generics.scope.Scope computeEnclosingScope();
+  public static sun.reflect.generics.scope.MethodScope make(java.lang.reflect.Method);
+}

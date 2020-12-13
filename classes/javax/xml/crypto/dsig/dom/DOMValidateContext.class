@@ -1,0 +1,7 @@
+Compiled from "DOMValidateContext.java"
+public class javax.xml.crypto.dsig.dom.DOMValidateContext extends javax.xml.crypto.dom.DOMCryptoContext implements javax.xml.crypto.dsig.XMLValidateContext {
+  public javax.xml.crypto.dsig.dom.DOMValidateContext(javax.xml.crypto.KeySelector, org.w3c.dom.Node);
+  public javax.xml.crypto.dsig.dom.DOMValidateContext(java.security.Key, org.w3c.dom.Node);
+  public void setNode(org.w3c.dom.Node);
+  public org.w3c.dom.Node getNode();
+}

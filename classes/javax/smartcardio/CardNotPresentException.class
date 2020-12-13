@@ -1,0 +1,6 @@
+Compiled from "CardNotPresentException.java"
+public class javax.smartcardio.CardNotPresentException extends javax.smartcardio.CardException {
+  public javax.smartcardio.CardNotPresentException(java.lang.String);
+  public javax.smartcardio.CardNotPresentException(java.lang.Throwable);
+  public javax.smartcardio.CardNotPresentException(java.lang.String, java.lang.Throwable);
+}

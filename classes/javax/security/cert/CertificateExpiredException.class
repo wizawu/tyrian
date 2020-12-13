@@ -1,0 +1,5 @@
+Compiled from "CertificateExpiredException.java"
+public class javax.security.cert.CertificateExpiredException extends javax.security.cert.CertificateException {
+  public javax.security.cert.CertificateExpiredException();
+  public javax.security.cert.CertificateExpiredException(java.lang.String);
+}

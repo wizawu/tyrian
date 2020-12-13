@@ -1,0 +1,5 @@
+Compiled from "InvalidFormatException.java"
+public class com.sun.media.sound.InvalidFormatException extends com.sun.media.sound.InvalidDataException {
+  public com.sun.media.sound.InvalidFormatException();
+  public com.sun.media.sound.InvalidFormatException(java.lang.String);
+}

@@ -1,0 +1,6 @@
+Compiled from "UncheckedDocletException.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.UncheckedDocletException extends java.lang.Error {
+  public jdk.javadoc.internal.doclets.toolkit.util.UncheckedDocletException(jdk.javadoc.internal.doclets.toolkit.DocletException);
+  public synchronized java.lang.Throwable getCause();
+  public synchronized java.lang.Throwable initCause(java.lang.Throwable);
+}

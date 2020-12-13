@@ -1,0 +1,17 @@
+Compiled from "StackFrameInfo.java"
+class java.lang.StackFrameInfo implements java.lang.StackWalker$StackFrame {
+  java.lang.StackFrameInfo(java.lang.StackWalker);
+  java.lang.Class<?> declaringClass();
+  public java.lang.String getClassName();
+  public java.lang.Class<?> getDeclaringClass();
+  public java.lang.String getMethodName();
+  public java.lang.invoke.MethodType getMethodType();
+  public java.lang.String getDescriptor();
+  public int getByteCodeIndex();
+  public java.lang.String getFileName();
+  public int getLineNumber();
+  public boolean isNativeMethod();
+  public java.lang.String toString();
+  public java.lang.StackTraceElement toStackTraceElement();
+  static {};
+}

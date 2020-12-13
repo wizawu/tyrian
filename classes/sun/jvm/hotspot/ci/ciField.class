@@ -1,0 +1,5 @@
+Compiled from "ciField.java"
+public class sun.jvm.hotspot.ci.ciField extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.ci.ciField(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

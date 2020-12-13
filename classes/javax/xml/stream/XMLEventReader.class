@@ -1,0 +1,10 @@
+Compiled from "XMLEventReader.java"
+public interface javax.xml.stream.XMLEventReader extends java.util.Iterator<java.lang.Object> {
+  public abstract javax.xml.stream.events.XMLEvent nextEvent() throws javax.xml.stream.XMLStreamException;
+  public abstract boolean hasNext();
+  public abstract javax.xml.stream.events.XMLEvent peek() throws javax.xml.stream.XMLStreamException;
+  public abstract java.lang.String getElementText() throws javax.xml.stream.XMLStreamException;
+  public abstract javax.xml.stream.events.XMLEvent nextTag() throws javax.xml.stream.XMLStreamException;
+  public abstract java.lang.Object getProperty(java.lang.String) throws java.lang.IllegalArgumentException;
+  public abstract void close() throws javax.xml.stream.XMLStreamException;
+}

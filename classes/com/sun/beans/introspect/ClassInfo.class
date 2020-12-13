@@ -1,0 +1,8 @@
+Compiled from "ClassInfo.java"
+public final class com.sun.beans.introspect.ClassInfo {
+  public static com.sun.beans.introspect.ClassInfo get(java.lang.Class<?>);
+  public java.util.List<java.lang.reflect.Method> getMethods();
+  public java.util.Map<java.lang.String, com.sun.beans.introspect.PropertyInfo> getProperties();
+  public java.util.Map<java.lang.String, com.sun.beans.introspect.EventSetInfo> getEventSets();
+  static {};
+}

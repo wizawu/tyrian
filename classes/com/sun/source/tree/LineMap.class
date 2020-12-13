@@ -1,0 +1,7 @@
+Compiled from "LineMap.java"
+public interface com.sun.source.tree.LineMap {
+  public abstract long getStartPosition(long);
+  public abstract long getPosition(long, long);
+  public abstract long getLineNumber(long);
+  public abstract long getColumnNumber(long);
+}

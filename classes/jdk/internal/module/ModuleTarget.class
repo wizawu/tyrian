@@ -1,0 +1,5 @@
+Compiled from "ModuleTarget.java"
+public final class jdk.internal.module.ModuleTarget {
+  public jdk.internal.module.ModuleTarget(java.lang.String);
+  public java.lang.String targetPlatform();
+}

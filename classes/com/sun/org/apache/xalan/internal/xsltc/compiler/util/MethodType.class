@@ -1,0 +1,17 @@
+Compiled from "MethodType.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType(com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType(com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type, com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType(com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type, com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type, com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType(com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type, com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type, com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type, com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType(com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type, java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type>);
+  public java.lang.String toString();
+  public java.lang.String toSignature();
+  public java.lang.String toSignature(java.lang.String);
+  public com.sun.org.apache.bcel.internal.generic.Type toJCType();
+  public boolean identicalTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type);
+  public int distanceTo(com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type resultType();
+  public java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type> argsType();
+  public int argsCount();
+}

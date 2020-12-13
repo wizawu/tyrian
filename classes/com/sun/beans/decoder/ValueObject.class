@@ -1,0 +1,5 @@
+Compiled from "ValueObject.java"
+public interface com.sun.beans.decoder.ValueObject {
+  public abstract java.lang.Object getValue();
+  public abstract boolean isVoid();
+}

@@ -1,0 +1,20 @@
+Compiled from "PropertyChangeSupport.java"
+public class java.beans.PropertyChangeSupport implements java.io.Serializable {
+  static final long serialVersionUID;
+  public java.beans.PropertyChangeSupport(java.lang.Object);
+  public void addPropertyChangeListener(java.beans.PropertyChangeListener);
+  public void removePropertyChangeListener(java.beans.PropertyChangeListener);
+  public java.beans.PropertyChangeListener[] getPropertyChangeListeners();
+  public void addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener);
+  public void removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener);
+  public java.beans.PropertyChangeListener[] getPropertyChangeListeners(java.lang.String);
+  public void firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object);
+  public void firePropertyChange(java.lang.String, int, int);
+  public void firePropertyChange(java.lang.String, boolean, boolean);
+  public void firePropertyChange(java.beans.PropertyChangeEvent);
+  public void fireIndexedPropertyChange(java.lang.String, int, java.lang.Object, java.lang.Object);
+  public void fireIndexedPropertyChange(java.lang.String, int, int, int);
+  public void fireIndexedPropertyChange(java.lang.String, int, boolean, boolean);
+  public boolean hasListeners(java.lang.String);
+  static {};
+}

@@ -1,0 +1,13 @@
+Compiled from "BreakableStatement.java"
+abstract class jdk.nashorn.internal.ir.BreakableStatement extends jdk.nashorn.internal.ir.LexicalContextStatement implements jdk.nashorn.internal.ir.BreakableNode {
+  protected final jdk.nashorn.internal.codegen.Label breakLabel;
+  final jdk.nashorn.internal.ir.LocalVariableConversion conversion;
+  protected jdk.nashorn.internal.ir.BreakableStatement(int, long, int, jdk.nashorn.internal.codegen.Label);
+  protected jdk.nashorn.internal.ir.BreakableStatement(jdk.nashorn.internal.ir.BreakableStatement, jdk.nashorn.internal.ir.LocalVariableConversion);
+  public boolean isBreakableWithoutLabel();
+  public jdk.nashorn.internal.codegen.Label getBreakLabel();
+  public java.util.List<jdk.nashorn.internal.codegen.Label> getLabels();
+  public jdk.nashorn.internal.ir.JoinPredecessor setLocalVariableConversion(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.LocalVariableConversion);
+  public jdk.nashorn.internal.ir.LocalVariableConversion getLocalVariableConversion();
+  abstract jdk.nashorn.internal.ir.JoinPredecessor setLocalVariableConversionChanged(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.LocalVariableConversion);
+}

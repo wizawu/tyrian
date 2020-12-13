@@ -1,0 +1,7 @@
+Compiled from "HotSpotAttachProvider.java"
+public abstract class sun.tools.attach.HotSpotAttachProvider extends com.sun.tools.attach.spi.AttachProvider {
+  public sun.tools.attach.HotSpotAttachProvider();
+  public void checkAttachPermission();
+  public java.util.List<com.sun.tools.attach.VirtualMachineDescriptor> listVirtualMachines();
+  void testAttachable(java.lang.String) throws com.sun.tools.attach.AttachNotSupportedException;
+}

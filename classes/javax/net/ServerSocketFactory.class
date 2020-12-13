@@ -1,0 +1,9 @@
+Compiled from "ServerSocketFactory.java"
+public abstract class javax.net.ServerSocketFactory {
+  protected javax.net.ServerSocketFactory();
+  public static javax.net.ServerSocketFactory getDefault();
+  public java.net.ServerSocket createServerSocket() throws java.io.IOException;
+  public abstract java.net.ServerSocket createServerSocket(int) throws java.io.IOException;
+  public abstract java.net.ServerSocket createServerSocket(int, int) throws java.io.IOException;
+  public abstract java.net.ServerSocket createServerSocket(int, int, java.net.InetAddress) throws java.io.IOException;
+}

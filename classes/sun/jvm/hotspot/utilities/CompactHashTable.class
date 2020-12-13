@@ -1,0 +1,7 @@
+Compiled from "CompactHashTable.java"
+public class sun.jvm.hotspot.utilities.CompactHashTable extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.utilities.CompactHashTable(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.oops.Symbol probe(byte[], long);
+  public void symbolsDo(sun.jvm.hotspot.utilities.CompactHashTable$SymbolVisitor);
+  static {};
+}

@@ -1,0 +1,7 @@
+Compiled from "LastReqEntry.java"
+public class sun.security.krb5.internal.LastReqEntry {
+  public sun.security.krb5.internal.LastReqEntry(int, sun.security.krb5.internal.KerberosTime);
+  public sun.security.krb5.internal.LastReqEntry(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public java.lang.Object clone();
+}

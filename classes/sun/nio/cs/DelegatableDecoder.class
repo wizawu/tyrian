@@ -1,0 +1,6 @@
+Compiled from "DelegatableDecoder.java"
+public interface sun.nio.cs.DelegatableDecoder {
+  public abstract java.nio.charset.CoderResult decodeLoop(java.nio.ByteBuffer, java.nio.CharBuffer);
+  public abstract void implReset();
+  public abstract java.nio.charset.CoderResult implFlush(java.nio.CharBuffer);
+}

@@ -1,0 +1,5 @@
+Compiled from "UngrabEvent.java"
+public class sun.awt.UngrabEvent extends java.awt.AWTEvent {
+  public sun.awt.UngrabEvent(java.awt.Component);
+  public java.lang.String toString();
+}

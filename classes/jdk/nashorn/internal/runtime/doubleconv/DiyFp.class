@@ -1,0 +1,20 @@
+Compiled from "DiyFp.java"
+class jdk.nashorn.internal.runtime.doubleconv.DiyFp {
+  static final int kSignificandSize;
+  static final long kUint64MSB;
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.runtime.doubleconv.DiyFp();
+  jdk.nashorn.internal.runtime.doubleconv.DiyFp(long, int);
+  void subtract(jdk.nashorn.internal.runtime.doubleconv.DiyFp);
+  static jdk.nashorn.internal.runtime.doubleconv.DiyFp minus(jdk.nashorn.internal.runtime.doubleconv.DiyFp, jdk.nashorn.internal.runtime.doubleconv.DiyFp);
+  final void multiply(jdk.nashorn.internal.runtime.doubleconv.DiyFp);
+  static jdk.nashorn.internal.runtime.doubleconv.DiyFp times(jdk.nashorn.internal.runtime.doubleconv.DiyFp, jdk.nashorn.internal.runtime.doubleconv.DiyFp);
+  void normalize();
+  static jdk.nashorn.internal.runtime.doubleconv.DiyFp normalize(jdk.nashorn.internal.runtime.doubleconv.DiyFp);
+  long f();
+  int e();
+  void setF(long);
+  void setE(int);
+  public java.lang.String toString();
+  static {};
+}

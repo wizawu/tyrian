@@ -1,0 +1,8 @@
+Compiled from "ActivationID.java"
+public class java.rmi.activation.ActivationID implements java.io.Serializable {
+  public java.rmi.activation.ActivationID(java.rmi.activation.Activator);
+  public java.rmi.Remote activate(boolean) throws java.rmi.activation.ActivationException, java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  static {};
+}

@@ -1,0 +1,16 @@
+Compiled from "DragGestureEvent.java"
+public class java.awt.dnd.DragGestureEvent extends java.util.EventObject {
+  public java.awt.dnd.DragGestureEvent(java.awt.dnd.DragGestureRecognizer, int, java.awt.Point, java.util.List<? extends java.awt.event.InputEvent>);
+  public java.awt.dnd.DragGestureRecognizer getSourceAsDragGestureRecognizer();
+  public java.awt.Component getComponent();
+  public java.awt.dnd.DragSource getDragSource();
+  public java.awt.Point getDragOrigin();
+  public java.util.Iterator<java.awt.event.InputEvent> iterator();
+  public java.lang.Object[] toArray();
+  public java.lang.Object[] toArray(java.lang.Object[]);
+  public int getDragAction();
+  public java.awt.event.InputEvent getTriggerEvent();
+  public void startDrag(java.awt.Cursor, java.awt.datatransfer.Transferable) throws java.awt.dnd.InvalidDnDOperationException;
+  public void startDrag(java.awt.Cursor, java.awt.datatransfer.Transferable, java.awt.dnd.DragSourceListener) throws java.awt.dnd.InvalidDnDOperationException;
+  public void startDrag(java.awt.Cursor, java.awt.Image, java.awt.Point, java.awt.datatransfer.Transferable, java.awt.dnd.DragSourceListener) throws java.awt.dnd.InvalidDnDOperationException;
+}

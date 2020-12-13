@@ -1,0 +1,16 @@
+Compiled from "Utils.java"
+public class sun.tools.jconsole.inspector.Utils {
+  public static java.lang.Class<?> getClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  public static boolean isUniformCollection(java.util.Collection<?>, java.lang.Class<?>);
+  public static boolean canBeRenderedAsArray(java.lang.Object);
+  public static boolean isSupportedArray(java.lang.Object);
+  public static java.lang.String getArrayClassName(java.lang.String);
+  public static java.lang.String getReadableClassName(java.lang.String);
+  public static boolean isEditableType(java.lang.String);
+  public static java.lang.String getDefaultValue(java.lang.String);
+  public static java.lang.Object newStringConstructor(java.lang.String, java.lang.String) throws java.lang.Exception;
+  public static java.lang.Object createObjectFromString(java.lang.String, java.lang.String) throws java.lang.Exception;
+  public static java.lang.Object[] getParameters(sun.tools.jconsole.inspector.XTextField[], java.lang.String[]) throws java.lang.Exception;
+  public static java.lang.Throwable getActualException(java.lang.Throwable);
+  static {};
+}

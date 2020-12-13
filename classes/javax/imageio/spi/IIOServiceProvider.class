@@ -1,0 +1,12 @@
+Compiled from "IIOServiceProvider.java"
+public abstract class javax.imageio.spi.IIOServiceProvider implements javax.imageio.spi.RegisterableService {
+  protected java.lang.String vendorName;
+  protected java.lang.String version;
+  public javax.imageio.spi.IIOServiceProvider(java.lang.String, java.lang.String);
+  public javax.imageio.spi.IIOServiceProvider();
+  public void onRegistration(javax.imageio.spi.ServiceRegistry, java.lang.Class<?>);
+  public void onDeregistration(javax.imageio.spi.ServiceRegistry, java.lang.Class<?>);
+  public java.lang.String getVendorName();
+  public java.lang.String getVersion();
+  public abstract java.lang.String getDescription(java.util.Locale);
+}

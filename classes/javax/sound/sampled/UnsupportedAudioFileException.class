@@ -1,0 +1,5 @@
+Compiled from "UnsupportedAudioFileException.java"
+public class javax.sound.sampled.UnsupportedAudioFileException extends java.lang.Exception {
+  public javax.sound.sampled.UnsupportedAudioFileException();
+  public javax.sound.sampled.UnsupportedAudioFileException(java.lang.String);
+}

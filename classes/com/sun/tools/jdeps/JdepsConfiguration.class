@@ -1,0 +1,20 @@
+Compiled from "JdepsConfiguration.java"
+public class com.sun.tools.jdeps.JdepsConfiguration implements java.lang.AutoCloseable {
+  public static final java.lang.String ALL_MODULE_PATH;
+  public static final java.lang.String ALL_DEFAULT;
+  public static final java.lang.String ALL_SYSTEM;
+  public static final java.lang.String MODULE_INFO;
+  public java.util.Optional<com.sun.tools.jdeps.Module> findModule(java.lang.String);
+  public java.util.Optional<java.lang.module.ModuleDescriptor> findModuleDescriptor(java.lang.String);
+  public static boolean isToken(java.lang.String);
+  public java.util.Map<java.lang.String, java.util.Set<java.lang.String>> splitPackages();
+  public java.util.Optional<com.sun.tools.jdeps.Archive> findClass(com.sun.tools.classfile.Dependency$Location);
+  public java.util.Map<java.lang.String, com.sun.tools.jdeps.Module> getModules();
+  public java.lang.module.Configuration resolve(java.util.Set<java.lang.String>);
+  public java.util.List<com.sun.tools.jdeps.Archive> classPathArchives();
+  public java.util.List<com.sun.tools.jdeps.Archive> initialArchives();
+  public java.util.Set<com.sun.tools.jdeps.Module> rootModules();
+  public com.sun.tools.jdeps.Module toModule(java.lang.module.ModuleReference);
+  public java.lang.Runtime$Version getVersion();
+  public void close() throws java.io.IOException;
+}

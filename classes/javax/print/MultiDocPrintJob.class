@@ -1,0 +1,4 @@
+Compiled from "MultiDocPrintJob.java"
+public interface javax.print.MultiDocPrintJob extends javax.print.DocPrintJob {
+  public abstract void print(javax.print.MultiDoc, javax.print.attribute.PrintRequestAttributeSet) throws javax.print.PrintException;
+}

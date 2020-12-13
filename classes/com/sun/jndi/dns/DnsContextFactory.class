@@ -1,0 +1,8 @@
+Compiled from "DnsContextFactory.java"
+public class com.sun.jndi.dns.DnsContextFactory implements javax.naming.spi.InitialContextFactory {
+  public com.sun.jndi.dns.DnsContextFactory();
+  public javax.naming.Context getInitialContext(java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  public static com.sun.jndi.dns.DnsContext getContext(java.lang.String, java.lang.String[], java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  public static com.sun.jndi.dns.DnsContext getContext(java.lang.String, com.sun.jndi.dns.DnsUrl[], java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  public static boolean platformServersAvailable();
+}

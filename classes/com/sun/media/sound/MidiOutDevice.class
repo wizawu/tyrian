@@ -1,0 +1,9 @@
+Compiled from "MidiOutDevice.java"
+final class com.sun.media.sound.MidiOutDevice extends com.sun.media.sound.AbstractMidiDevice {
+  com.sun.media.sound.MidiOutDevice(com.sun.media.sound.AbstractMidiDeviceProvider$Info);
+  protected synchronized void implOpen() throws javax.sound.midi.MidiUnavailableException;
+  protected synchronized void implClose();
+  public long getMicrosecondPosition();
+  protected boolean hasReceivers();
+  protected javax.sound.midi.Receiver createReceiver();
+}

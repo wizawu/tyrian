@@ -1,0 +1,17 @@
+Compiled from "PKIXRevocationChecker.java"
+public abstract class java.security.cert.PKIXRevocationChecker extends java.security.cert.PKIXCertPathChecker {
+  protected java.security.cert.PKIXRevocationChecker();
+  public void setOcspResponder(java.net.URI);
+  public java.net.URI getOcspResponder();
+  public void setOcspResponderCert(java.security.cert.X509Certificate);
+  public java.security.cert.X509Certificate getOcspResponderCert();
+  public void setOcspExtensions(java.util.List<java.security.cert.Extension>);
+  public java.util.List<java.security.cert.Extension> getOcspExtensions();
+  public void setOcspResponses(java.util.Map<java.security.cert.X509Certificate, byte[]>);
+  public java.util.Map<java.security.cert.X509Certificate, byte[]> getOcspResponses();
+  public void setOptions(java.util.Set<java.security.cert.PKIXRevocationChecker$Option>);
+  public java.util.Set<java.security.cert.PKIXRevocationChecker$Option> getOptions();
+  public abstract java.util.List<java.security.cert.CertPathValidatorException> getSoftFailExceptions();
+  public java.security.cert.PKIXRevocationChecker clone();
+  public java.lang.Object clone();
+}

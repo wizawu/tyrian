@@ -1,0 +1,22 @@
+Compiled from "XPathResult.java"
+public interface org.w3c.dom.xpath.XPathResult {
+  public static final short ANY_TYPE;
+  public static final short NUMBER_TYPE;
+  public static final short STRING_TYPE;
+  public static final short BOOLEAN_TYPE;
+  public static final short UNORDERED_NODE_ITERATOR_TYPE;
+  public static final short ORDERED_NODE_ITERATOR_TYPE;
+  public static final short UNORDERED_NODE_SNAPSHOT_TYPE;
+  public static final short ORDERED_NODE_SNAPSHOT_TYPE;
+  public static final short ANY_UNORDERED_NODE_TYPE;
+  public static final short FIRST_ORDERED_NODE_TYPE;
+  public abstract short getResultType();
+  public abstract double getNumberValue() throws org.w3c.dom.xpath.XPathException;
+  public abstract java.lang.String getStringValue() throws org.w3c.dom.xpath.XPathException;
+  public abstract boolean getBooleanValue() throws org.w3c.dom.xpath.XPathException;
+  public abstract org.w3c.dom.Node getSingleNodeValue() throws org.w3c.dom.xpath.XPathException;
+  public abstract boolean getInvalidIteratorState();
+  public abstract int getSnapshotLength() throws org.w3c.dom.xpath.XPathException;
+  public abstract org.w3c.dom.Node iterateNext() throws org.w3c.dom.xpath.XPathException, org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.Node snapshotItem(int) throws org.w3c.dom.xpath.XPathException;
+}

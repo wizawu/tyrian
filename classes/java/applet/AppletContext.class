@@ -1,0 +1,13 @@
+Compiled from "AppletContext.java"
+public interface java.applet.AppletContext {
+  public abstract java.applet.AudioClip getAudioClip(java.net.URL);
+  public abstract java.awt.Image getImage(java.net.URL);
+  public abstract java.applet.Applet getApplet(java.lang.String);
+  public abstract java.util.Enumeration<java.applet.Applet> getApplets();
+  public abstract void showDocument(java.net.URL);
+  public abstract void showDocument(java.net.URL, java.lang.String);
+  public abstract void showStatus(java.lang.String);
+  public abstract void setStream(java.lang.String, java.io.InputStream) throws java.io.IOException;
+  public abstract java.io.InputStream getStream(java.lang.String);
+  public abstract java.util.Iterator<java.lang.String> getStreamKeys();
+}

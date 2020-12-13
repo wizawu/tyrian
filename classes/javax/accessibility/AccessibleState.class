@@ -1,0 +1,34 @@
+Compiled from "AccessibleState.java"
+public class javax.accessibility.AccessibleState extends javax.accessibility.AccessibleBundle {
+  public static final javax.accessibility.AccessibleState ACTIVE;
+  public static final javax.accessibility.AccessibleState PRESSED;
+  public static final javax.accessibility.AccessibleState ARMED;
+  public static final javax.accessibility.AccessibleState BUSY;
+  public static final javax.accessibility.AccessibleState CHECKED;
+  public static final javax.accessibility.AccessibleState EDITABLE;
+  public static final javax.accessibility.AccessibleState EXPANDABLE;
+  public static final javax.accessibility.AccessibleState COLLAPSED;
+  public static final javax.accessibility.AccessibleState EXPANDED;
+  public static final javax.accessibility.AccessibleState ENABLED;
+  public static final javax.accessibility.AccessibleState FOCUSABLE;
+  public static final javax.accessibility.AccessibleState FOCUSED;
+  public static final javax.accessibility.AccessibleState ICONIFIED;
+  public static final javax.accessibility.AccessibleState MODAL;
+  public static final javax.accessibility.AccessibleState OPAQUE;
+  public static final javax.accessibility.AccessibleState RESIZABLE;
+  public static final javax.accessibility.AccessibleState MULTISELECTABLE;
+  public static final javax.accessibility.AccessibleState SELECTABLE;
+  public static final javax.accessibility.AccessibleState SELECTED;
+  public static final javax.accessibility.AccessibleState SHOWING;
+  public static final javax.accessibility.AccessibleState VISIBLE;
+  public static final javax.accessibility.AccessibleState VERTICAL;
+  public static final javax.accessibility.AccessibleState HORIZONTAL;
+  public static final javax.accessibility.AccessibleState SINGLE_LINE;
+  public static final javax.accessibility.AccessibleState MULTI_LINE;
+  public static final javax.accessibility.AccessibleState TRANSIENT;
+  public static final javax.accessibility.AccessibleState MANAGES_DESCENDANTS;
+  public static final javax.accessibility.AccessibleState INDETERMINATE;
+  public static final javax.accessibility.AccessibleState TRUNCATED;
+  protected javax.accessibility.AccessibleState(java.lang.String);
+  static {};
+}

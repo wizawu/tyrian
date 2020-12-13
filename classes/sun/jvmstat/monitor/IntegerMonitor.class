@@ -1,0 +1,4 @@
+Compiled from "IntegerMonitor.java"
+public interface sun.jvmstat.monitor.IntegerMonitor extends sun.jvmstat.monitor.Monitor {
+  public abstract int intValue();
+}

@@ -1,0 +1,23 @@
+Compiled from "AnchorType.java"
+public interface jdk.nashorn.internal.runtime.regexp.joni.constants.AnchorType {
+  public static final int BEGIN_BUF;
+  public static final int BEGIN_LINE;
+  public static final int BEGIN_POSITION;
+  public static final int END_BUF;
+  public static final int SEMI_END_BUF;
+  public static final int END_LINE;
+  public static final int WORD_BOUND;
+  public static final int NOT_WORD_BOUND;
+  public static final int WORD_BEGIN;
+  public static final int WORD_END;
+  public static final int PREC_READ;
+  public static final int PREC_READ_NOT;
+  public static final int LOOK_BEHIND;
+  public static final int LOOK_BEHIND_NOT;
+  public static final int ANYCHAR_STAR;
+  public static final int ANYCHAR_STAR_ML;
+  public static final int ANYCHAR_STAR_MASK;
+  public static final int END_BUF_MASK;
+  public static final int ALLOWED_IN_LB;
+  public static final int ALLOWED_IN_LB_NOT;
+}

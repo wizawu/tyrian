@@ -1,0 +1,24 @@
+Compiled from "ProviderList.java"
+public final class sun.security.jca.ProviderList {
+  static final sun.security.util.Debug debug;
+  static final sun.security.jca.ProviderList EMPTY;
+  static sun.security.jca.ProviderList fromSecurityProperties();
+  public static sun.security.jca.ProviderList add(sun.security.jca.ProviderList, java.security.Provider);
+  public static sun.security.jca.ProviderList insertAt(sun.security.jca.ProviderList, java.security.Provider, int);
+  public static sun.security.jca.ProviderList remove(sun.security.jca.ProviderList, java.lang.String);
+  public static sun.security.jca.ProviderList newList(java.security.Provider...);
+  sun.security.jca.ProviderList getJarList(java.lang.String[]);
+  public int size();
+  java.security.Provider getProvider(int);
+  public java.util.List<java.security.Provider> providers();
+  public java.security.Provider getProvider(java.lang.String);
+  public int getIndex(java.lang.String);
+  sun.security.jca.ProviderList removeInvalid();
+  public java.security.Provider[] toArray();
+  public java.lang.String toString();
+  public java.security.Provider$Service getService(java.lang.String, java.lang.String);
+  public java.util.List<java.security.Provider$Service> getServices(java.lang.String, java.lang.String);
+  public java.util.List<java.security.Provider$Service> getServices(java.lang.String, java.util.List<java.lang.String>);
+  public java.util.List<java.security.Provider$Service> getServices(java.util.List<sun.security.jca.ServiceId>);
+  static {};
+}

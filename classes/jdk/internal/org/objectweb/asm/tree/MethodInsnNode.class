@@ -1,0 +1,13 @@
+Compiled from "MethodInsnNode.java"
+public class jdk.internal.org.objectweb.asm.tree.MethodInsnNode extends jdk.internal.org.objectweb.asm.tree.AbstractInsnNode {
+  public java.lang.String owner;
+  public java.lang.String name;
+  public java.lang.String desc;
+  public boolean itf;
+  public jdk.internal.org.objectweb.asm.tree.MethodInsnNode(int, java.lang.String, java.lang.String, java.lang.String);
+  public jdk.internal.org.objectweb.asm.tree.MethodInsnNode(int, java.lang.String, java.lang.String, java.lang.String, boolean);
+  public void setOpcode(int);
+  public int getType();
+  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode clone(java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
+}

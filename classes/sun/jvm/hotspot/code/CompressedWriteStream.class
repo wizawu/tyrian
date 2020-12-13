@@ -1,0 +1,5 @@
+Compiled from "CompressedWriteStream.java"
+public class sun.jvm.hotspot.code.CompressedWriteStream extends sun.jvm.hotspot.code.CompressedStream {
+  public sun.jvm.hotspot.code.CompressedWriteStream(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.code.CompressedWriteStream(sun.jvm.hotspot.debugger.Address, int);
+}

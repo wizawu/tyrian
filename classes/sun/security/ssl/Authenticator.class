@@ -1,0 +1,15 @@
+Compiled from "Authenticator.java"
+abstract class sun.security.ssl.Authenticator {
+  protected final byte[] block;
+  static sun.security.ssl.Authenticator valueOf(sun.security.ssl.ProtocolVersion);
+  static <T extends sun.security.ssl.Authenticator & sun.security.ssl.Authenticator$MAC> T valueOf(sun.security.ssl.ProtocolVersion, sun.security.ssl.CipherSuite$MacAlg, javax.crypto.SecretKey) throws java.security.NoSuchAlgorithmException, java.security.InvalidKeyException;
+  static sun.security.ssl.Authenticator nullTlsMac();
+  static sun.security.ssl.Authenticator nullDtlsMac();
+  abstract boolean seqNumOverflow();
+  abstract boolean seqNumIsHuge();
+  final byte[] sequenceNumber();
+  void setEpochNumber(int);
+  final void increaseSequenceNumber();
+  byte[] acquireAuthenticationBytes(byte, int, byte[]);
+  static final long toLong(byte[]);
+}

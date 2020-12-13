@@ -1,0 +1,26 @@
+Compiled from "DataBufferDouble.java"
+public final class java.awt.image.DataBufferDouble extends java.awt.image.DataBuffer {
+  double[][] bankdata;
+  double[] data;
+  public java.awt.image.DataBufferDouble(int);
+  public java.awt.image.DataBufferDouble(int, int);
+  public java.awt.image.DataBufferDouble(double[], int);
+  public java.awt.image.DataBufferDouble(double[], int, int);
+  public java.awt.image.DataBufferDouble(double[][], int);
+  public java.awt.image.DataBufferDouble(double[][], int, int[]);
+  public double[] getData();
+  public double[] getData(int);
+  public double[][] getBankData();
+  public int getElem(int);
+  public int getElem(int, int);
+  public void setElem(int, int);
+  public void setElem(int, int, int);
+  public float getElemFloat(int);
+  public float getElemFloat(int, int);
+  public void setElemFloat(int, float);
+  public void setElemFloat(int, int, float);
+  public double getElemDouble(int);
+  public double getElemDouble(int, int);
+  public void setElemDouble(int, double);
+  public void setElemDouble(int, int, double);
+}

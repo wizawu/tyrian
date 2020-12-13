@@ -1,0 +1,22 @@
+Compiled from "XSElementDeclaration.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSElementDeclaration extends com.sun.org.apache.xerces.internal.xs.XSTerm {
+  public abstract com.sun.org.apache.xerces.internal.xs.XSTypeDefinition getTypeDefinition();
+  public abstract short getScope();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSComplexTypeDefinition getEnclosingCTDefinition();
+  public abstract short getConstraintType();
+  public abstract java.lang.String getConstraintValue();
+  public abstract java.lang.Object getActualVC() throws com.sun.org.apache.xerces.internal.xs.XSException;
+  public abstract short getActualVCType() throws com.sun.org.apache.xerces.internal.xs.XSException;
+  public abstract com.sun.org.apache.xerces.internal.xs.ShortList getItemValueTypes() throws com.sun.org.apache.xerces.internal.xs.XSException;
+  public abstract com.sun.org.apache.xerces.internal.xs.XSValue getValueConstraintValue();
+  public abstract boolean getNillable();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSNamedMap getIdentityConstraints();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSElementDeclaration getSubstitutionGroupAffiliation();
+  public abstract boolean isSubstitutionGroupExclusion(short);
+  public abstract short getSubstitutionGroupExclusions();
+  public abstract boolean isDisallowedSubstitution(short);
+  public abstract short getDisallowedSubstitutions();
+  public abstract boolean getAbstract();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSAnnotation getAnnotation();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+}

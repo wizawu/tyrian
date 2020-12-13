@@ -1,0 +1,10 @@
+Compiled from "SoftMixingMixerProvider.java"
+public final class com.sun.media.sound.SoftMixingMixerProvider extends javax.sound.sampled.spi.MixerProvider {
+  static com.sun.media.sound.SoftMixingMixer globalmixer;
+  static java.lang.Thread lockthread;
+  static final java.lang.Object mutex;
+  public com.sun.media.sound.SoftMixingMixerProvider();
+  public javax.sound.sampled.Mixer getMixer(javax.sound.sampled.Mixer$Info);
+  public javax.sound.sampled.Mixer$Info[] getMixerInfo();
+  static {};
+}

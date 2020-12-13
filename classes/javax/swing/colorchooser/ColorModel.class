@@ -1,0 +1,14 @@
+Compiled from "ColorModel.java"
+class javax.swing.colorchooser.ColorModel {
+  javax.swing.colorchooser.ColorModel(java.lang.String, java.lang.String...);
+  javax.swing.colorchooser.ColorModel();
+  void setColor(int, float[]);
+  int getColor(float[]);
+  int getCount();
+  int getMinimum(int);
+  int getMaximum(int);
+  float getDefault(int);
+  final java.lang.String getLabel(java.awt.Component, int);
+  final java.lang.String getText(java.awt.Component, java.lang.String);
+  final int getInteger(java.awt.Component, java.lang.String);
+}

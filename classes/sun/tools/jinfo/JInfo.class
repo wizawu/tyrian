@@ -1,0 +1,5 @@
+Compiled from "JInfo.java"
+public final class sun.tools.jinfo.JInfo {
+  public sun.tools.jinfo.JInfo();
+  public static void main(java.lang.String[]) throws java.lang.Exception;
+}

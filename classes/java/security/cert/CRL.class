@@ -1,0 +1,7 @@
+Compiled from "CRL.java"
+public abstract class java.security.cert.CRL {
+  protected java.security.cert.CRL(java.lang.String);
+  public final java.lang.String getType();
+  public abstract java.lang.String toString();
+  public abstract boolean isRevoked(java.security.cert.Certificate);
+}

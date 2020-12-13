@@ -1,0 +1,13 @@
+Compiled from "NameNode.java"
+class com.sun.jndi.dns.NameNode {
+  com.sun.jndi.dns.NameNode(java.lang.String);
+  protected com.sun.jndi.dns.NameNode newNameNode(java.lang.String);
+  java.lang.String getLabel();
+  int depth();
+  boolean isZoneCut();
+  void setZoneCut(boolean);
+  java.util.Hashtable<java.lang.String, com.sun.jndi.dns.NameNode> getChildren();
+  com.sun.jndi.dns.NameNode get(java.lang.String);
+  com.sun.jndi.dns.NameNode get(com.sun.jndi.dns.DnsName, int);
+  com.sun.jndi.dns.NameNode add(com.sun.jndi.dns.DnsName, int);
+}

@@ -1,0 +1,9 @@
+Compiled from "MutableAttributeSet.java"
+public interface javax.swing.text.MutableAttributeSet extends javax.swing.text.AttributeSet {
+  public abstract void addAttribute(java.lang.Object, java.lang.Object);
+  public abstract void addAttributes(javax.swing.text.AttributeSet);
+  public abstract void removeAttribute(java.lang.Object);
+  public abstract void removeAttributes(java.util.Enumeration<?>);
+  public abstract void removeAttributes(javax.swing.text.AttributeSet);
+  public abstract void setResolveParent(javax.swing.text.AttributeSet);
+}

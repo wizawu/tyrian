@@ -1,0 +1,5 @@
+Compiled from "InstantiationException.java"
+public class java.lang.InstantiationException extends java.lang.ReflectiveOperationException {
+  public java.lang.InstantiationException();
+  public java.lang.InstantiationException(java.lang.String);
+}

@@ -1,0 +1,6 @@
+Compiled from "AccessWatchpointSpec.java"
+class com.sun.tools.example.debug.tty.AccessWatchpointSpec extends com.sun.tools.example.debug.tty.WatchpointSpec {
+  com.sun.tools.example.debug.tty.AccessWatchpointSpec(com.sun.tools.example.debug.tty.ReferenceTypeSpec, java.lang.String) throws com.sun.tools.example.debug.tty.MalformedMemberNameException;
+  com.sun.jdi.request.EventRequest resolveEventRequest(com.sun.jdi.ReferenceType) throws java.lang.NoSuchFieldException;
+  public java.lang.String toString();
+}

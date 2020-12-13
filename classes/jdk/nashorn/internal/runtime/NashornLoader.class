@@ -1,0 +1,21 @@
+Compiled from "NashornLoader.java"
+abstract class jdk.nashorn.internal.runtime.NashornLoader extends java.security.SecureClassLoader {
+  protected static final java.lang.String OBJECTS_PKG;
+  protected static final java.lang.String RUNTIME_PKG;
+  protected static final java.lang.String RUNTIME_ARRAYS_PKG;
+  protected static final java.lang.String RUNTIME_LINKER_PKG;
+  protected static final java.lang.String SCRIPTS_PKG;
+  protected static final java.lang.String OBJECTS_PKG_INTERNAL;
+  protected static final java.lang.String RUNTIME_PKG_INTERNAL;
+  protected static final java.lang.String RUNTIME_ARRAYS_PKG_INTERNAL;
+  protected static final java.lang.String RUNTIME_LINKER_PKG_INTERNAL;
+  protected static final java.lang.String SCRIPTS_PKG_INTERNAL;
+  static final java.lang.Module NASHORN_MODULE;
+  jdk.nashorn.internal.runtime.NashornLoader(java.lang.ClassLoader);
+  void loadModuleManipulator();
+  final void addModuleExport(java.lang.Module);
+  protected static void checkPackageAccess(java.lang.String);
+  protected java.security.PermissionCollection getPermissions(java.security.CodeSource);
+  static java.lang.ClassLoader createClassLoader(java.lang.String, java.lang.ClassLoader);
+  static {};
+}

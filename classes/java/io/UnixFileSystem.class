@@ -1,0 +1,34 @@
+Compiled from "UnixFileSystem.java"
+class java.io.UnixFileSystem extends java.io.FileSystem {
+  public java.io.UnixFileSystem();
+  public char getSeparator();
+  public char getPathSeparator();
+  public java.lang.String normalize(java.lang.String);
+  public int prefixLength(java.lang.String);
+  public java.lang.String resolve(java.lang.String, java.lang.String);
+  public java.lang.String getDefaultParent();
+  public java.lang.String fromURIPath(java.lang.String);
+  public boolean isAbsolute(java.io.File);
+  public java.lang.String resolve(java.io.File);
+  public java.lang.String canonicalize(java.lang.String) throws java.io.IOException;
+  static java.lang.String parentOrNull(java.lang.String);
+  public native int getBooleanAttributes0(java.io.File);
+  public int getBooleanAttributes(java.io.File);
+  public native boolean checkAccess(java.io.File, int);
+  public native long getLastModifiedTime(java.io.File);
+  public native long getLength(java.io.File);
+  public native boolean setPermission(java.io.File, int, boolean, boolean);
+  public native boolean createFileExclusively(java.lang.String) throws java.io.IOException;
+  public boolean delete(java.io.File);
+  public native java.lang.String[] list(java.io.File);
+  public native boolean createDirectory(java.io.File);
+  public boolean rename(java.io.File, java.io.File);
+  public native boolean setLastModifiedTime(java.io.File, long);
+  public native boolean setReadOnly(java.io.File);
+  public java.io.File[] listRoots();
+  public native long getSpace(java.io.File, int);
+  public int getNameMax(java.lang.String);
+  public int compare(java.io.File, java.io.File);
+  public int hashCode(java.io.File);
+  static {};
+}

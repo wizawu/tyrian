@@ -1,0 +1,10 @@
+Compiled from "KeepAliveCleanerEntry.java"
+class sun.net.www.http.KeepAliveCleanerEntry {
+  sun.net.www.http.KeepAliveStream kas;
+  sun.net.www.http.HttpClient hc;
+  public sun.net.www.http.KeepAliveCleanerEntry(sun.net.www.http.KeepAliveStream, sun.net.www.http.HttpClient);
+  protected sun.net.www.http.KeepAliveStream getKeepAliveStream();
+  protected sun.net.www.http.HttpClient getHttpClient();
+  protected void setQueuedForCleanup();
+  protected boolean getQueuedForCleanup();
+}

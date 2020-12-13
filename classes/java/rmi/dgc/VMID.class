@@ -1,0 +1,9 @@
+Compiled from "VMID.java"
+public final class java.rmi.dgc.VMID implements java.io.Serializable {
+  public java.rmi.dgc.VMID();
+  public static boolean isUnique();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+  static {};
+}

@@ -1,0 +1,9 @@
+Compiled from "IndexableFieldIdentifier.java"
+public class sun.jvm.hotspot.oops.IndexableFieldIdentifier extends sun.jvm.hotspot.oops.FieldIdentifier {
+  public sun.jvm.hotspot.oops.IndexableFieldIdentifier(int);
+  public int getIndex();
+  public java.lang.String getName();
+  public void printOn(java.io.PrintStream);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

@@ -1,0 +1,8 @@
+Compiled from "OutlineTextRenderer.java"
+public class sun.java2d.pipe.OutlineTextRenderer implements sun.java2d.pipe.TextPipe {
+  public static final int THRESHHOLD;
+  public sun.java2d.pipe.OutlineTextRenderer();
+  public void drawChars(sun.java2d.SunGraphics2D, char[], int, int, int, int);
+  public void drawString(sun.java2d.SunGraphics2D, java.lang.String, double, double);
+  public void drawGlyphVector(sun.java2d.SunGraphics2D, java.awt.font.GlyphVector, float, float);
+}

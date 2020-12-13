@@ -1,0 +1,24 @@
+Compiled from "CertificateVersion.java"
+public class sun.security.x509.CertificateVersion implements sun.security.x509.CertAttrSet<java.lang.String> {
+  public static final int V1;
+  public static final int V2;
+  public static final int V3;
+  public static final java.lang.String IDENT;
+  public static final java.lang.String NAME;
+  public static final java.lang.String VERSION;
+  int version;
+  public sun.security.x509.CertificateVersion();
+  public sun.security.x509.CertificateVersion(int) throws java.io.IOException;
+  public sun.security.x509.CertificateVersion(sun.security.util.DerInputStream) throws java.io.IOException;
+  public sun.security.x509.CertificateVersion(java.io.InputStream) throws java.io.IOException;
+  public sun.security.x509.CertificateVersion(sun.security.util.DerValue) throws java.io.IOException;
+  public java.lang.String toString();
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+  public void set(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public java.lang.Integer get(java.lang.String) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  public java.lang.String getName();
+  public int compare(int);
+  public java.lang.Object get(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+}

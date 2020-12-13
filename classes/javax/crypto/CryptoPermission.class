@@ -1,0 +1,21 @@
+Compiled from "CryptoPermission.java"
+class javax.crypto.CryptoPermission extends java.security.Permission {
+  static final java.lang.String ALG_NAME_WILDCARD;
+  javax.crypto.CryptoPermission(java.lang.String);
+  javax.crypto.CryptoPermission(java.lang.String, int);
+  javax.crypto.CryptoPermission(java.lang.String, int, java.security.spec.AlgorithmParameterSpec);
+  javax.crypto.CryptoPermission(java.lang.String, java.lang.String);
+  javax.crypto.CryptoPermission(java.lang.String, int, java.lang.String);
+  javax.crypto.CryptoPermission(java.lang.String, int, java.security.spec.AlgorithmParameterSpec, java.lang.String);
+  public boolean implies(java.security.Permission);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String getActions();
+  public java.security.PermissionCollection newPermissionCollection();
+  final java.lang.String getAlgorithm();
+  final java.lang.String getExemptionMechanism();
+  final int getMaxKeySize();
+  final boolean getCheckParam();
+  final java.security.spec.AlgorithmParameterSpec getAlgorithmParameterSpec();
+  public java.lang.String toString();
+}

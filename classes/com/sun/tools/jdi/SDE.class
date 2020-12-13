@@ -1,0 +1,40 @@
+Compiled from "SDE.java"
+class com.sun.tools.jdi.SDE {
+  static final java.lang.String BASE_STRATUM_NAME;
+  static final java.lang.String NullString;
+  final java.lang.String sourceDebugExtension;
+  java.lang.String jplsFilename;
+  java.lang.String defaultStratumId;
+  boolean isValid;
+  com.sun.tools.jdi.SDE(java.lang.String);
+  com.sun.tools.jdi.SDE();
+  char sdePeek();
+  char sdeRead();
+  void sdeAdvance();
+  void syntax();
+  void syntax(java.lang.String);
+  void assureLineTableSize();
+  void assureFileTableSize();
+  void assureStratumTableSize();
+  java.lang.String readLine();
+  int stratumTableIndex(java.lang.String);
+  com.sun.tools.jdi.SDE$Stratum stratum(java.lang.String);
+  java.util.List<java.lang.String> availableStrata();
+  void ignoreWhite();
+  void ignoreLine();
+  int readNumber();
+  void storeFile(int, java.lang.String, java.lang.String);
+  void fileLine();
+  void storeLine(int, int, int, int, int, int);
+  void lineLine();
+  void storeStratum(java.lang.String);
+  void stratumSection();
+  void fileSection();
+  void lineSection();
+  void ignoreSection();
+  void createJavaStratum();
+  void decode();
+  void createProxyForAbsentSDE();
+  boolean isValid();
+  static {};
+}

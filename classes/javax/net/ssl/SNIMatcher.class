@@ -1,0 +1,6 @@
+Compiled from "SNIMatcher.java"
+public abstract class javax.net.ssl.SNIMatcher {
+  protected javax.net.ssl.SNIMatcher(int);
+  public final int getType();
+  public abstract boolean matches(javax.net.ssl.SNIServerName);
+}

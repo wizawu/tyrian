@@ -1,0 +1,13 @@
+Compiled from "CommentView.java"
+class javax.swing.text.html.CommentView extends javax.swing.text.html.HiddenTagView {
+  static final javax.swing.border.Border CBorder;
+  static final int commentPadding;
+  static final int commentPaddingD;
+  javax.swing.text.html.CommentView(javax.swing.text.Element);
+  protected java.awt.Component createComponent();
+  void resetBorder();
+  void _updateModelFromText();
+  javax.swing.text.JTextComponent getTextComponent();
+  java.lang.String getRepresentedText();
+  static {};
+}

@@ -1,0 +1,33 @@
+Compiled from "DelegatingDefaultFocusManager.java"
+final class javax.swing.DelegatingDefaultFocusManager extends javax.swing.DefaultFocusManager {
+  javax.swing.DelegatingDefaultFocusManager(java.awt.KeyboardFocusManager);
+  java.awt.KeyboardFocusManager getDelegate();
+  public void processKeyEvent(java.awt.Component, java.awt.event.KeyEvent);
+  public void focusNextComponent(java.awt.Component);
+  public void focusPreviousComponent(java.awt.Component);
+  public java.awt.Component getFocusOwner();
+  public void clearGlobalFocusOwner();
+  public java.awt.Component getPermanentFocusOwner();
+  public java.awt.Window getFocusedWindow();
+  public java.awt.Window getActiveWindow();
+  public java.awt.FocusTraversalPolicy getDefaultFocusTraversalPolicy();
+  public void setDefaultFocusTraversalPolicy(java.awt.FocusTraversalPolicy);
+  public void setDefaultFocusTraversalKeys(int, java.util.Set<? extends java.awt.AWTKeyStroke>);
+  public java.util.Set<java.awt.AWTKeyStroke> getDefaultFocusTraversalKeys(int);
+  public java.awt.Container getCurrentFocusCycleRoot();
+  public void setGlobalCurrentFocusCycleRoot(java.awt.Container);
+  public void addPropertyChangeListener(java.beans.PropertyChangeListener);
+  public void removePropertyChangeListener(java.beans.PropertyChangeListener);
+  public void addPropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener);
+  public void removePropertyChangeListener(java.lang.String, java.beans.PropertyChangeListener);
+  public void addVetoableChangeListener(java.beans.VetoableChangeListener);
+  public void removeVetoableChangeListener(java.beans.VetoableChangeListener);
+  public void addVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener);
+  public void removeVetoableChangeListener(java.lang.String, java.beans.VetoableChangeListener);
+  public void addKeyEventDispatcher(java.awt.KeyEventDispatcher);
+  public void removeKeyEventDispatcher(java.awt.KeyEventDispatcher);
+  public boolean dispatchEvent(java.awt.AWTEvent);
+  public boolean dispatchKeyEvent(java.awt.event.KeyEvent);
+  public void upFocusCycle(java.awt.Component);
+  public void downFocusCycle(java.awt.Container);
+}

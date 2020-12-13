@@ -1,0 +1,11 @@
+Compiled from "DocumentHandler.java"
+public interface org.xml.sax.DocumentHandler {
+  public abstract void setDocumentLocator(org.xml.sax.Locator);
+  public abstract void startDocument() throws org.xml.sax.SAXException;
+  public abstract void endDocument() throws org.xml.sax.SAXException;
+  public abstract void startElement(java.lang.String, org.xml.sax.AttributeList) throws org.xml.sax.SAXException;
+  public abstract void endElement(java.lang.String) throws org.xml.sax.SAXException;
+  public abstract void characters(char[], int, int) throws org.xml.sax.SAXException;
+  public abstract void ignorableWhitespace(char[], int, int) throws org.xml.sax.SAXException;
+  public abstract void processingInstruction(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+}

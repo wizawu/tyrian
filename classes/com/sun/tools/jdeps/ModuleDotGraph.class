@@ -1,0 +1,9 @@
+Compiled from "ModuleDotGraph.java"
+public class com.sun.tools.jdeps.ModuleDotGraph {
+  public com.sun.tools.jdeps.ModuleDotGraph(com.sun.tools.jdeps.JdepsConfiguration, boolean);
+  public com.sun.tools.jdeps.ModuleDotGraph(java.util.Map<java.lang.String, java.lang.module.Configuration>, boolean);
+  public boolean genDotFiles(java.nio.file.Path) throws java.io.IOException;
+  public boolean genDotFiles(java.nio.file.Path, com.sun.tools.jdeps.ModuleDotGraph$Attributes) throws java.io.IOException;
+  public void genDotFile(java.nio.file.Path, java.lang.String, java.lang.module.Configuration, com.sun.tools.jdeps.ModuleDotGraph$Attributes) throws java.io.IOException;
+  public com.sun.tools.jdeps.Graph<java.lang.String> requiresTransitiveGraph(java.lang.module.Configuration, java.util.Set<java.lang.String>);
+}

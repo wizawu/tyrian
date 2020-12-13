@@ -1,0 +1,5 @@
+Compiled from "FormatData_zh_TW.java"
+public class sun.text.resources.ext.FormatData_zh_TW extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_zh_TW();
+  protected final java.lang.Object[][] getContents();
+}

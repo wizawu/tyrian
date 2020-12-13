@@ -1,0 +1,4 @@
+Compiled from "RealmChoiceCallback.java"
+public class javax.security.sasl.RealmChoiceCallback extends javax.security.auth.callback.ChoiceCallback {
+  public javax.security.sasl.RealmChoiceCallback(java.lang.String, java.lang.String[], int, boolean);
+}

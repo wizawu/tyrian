@@ -1,0 +1,10 @@
+Compiled from "XPathException.java"
+public class javax.xml.xpath.XPathException extends java.lang.Exception {
+  public javax.xml.xpath.XPathException(java.lang.String);
+  public javax.xml.xpath.XPathException(java.lang.Throwable);
+  public java.lang.Throwable getCause();
+  public void printStackTrace(java.io.PrintStream);
+  public void printStackTrace();
+  public void printStackTrace(java.io.PrintWriter);
+  static {};
+}

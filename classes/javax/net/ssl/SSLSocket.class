@@ -1,0 +1,33 @@
+Compiled from "SSLSocket.java"
+public abstract class javax.net.ssl.SSLSocket extends java.net.Socket {
+  protected javax.net.ssl.SSLSocket();
+  protected javax.net.ssl.SSLSocket(java.lang.String, int) throws java.io.IOException, java.net.UnknownHostException;
+  protected javax.net.ssl.SSLSocket(java.net.InetAddress, int) throws java.io.IOException;
+  protected javax.net.ssl.SSLSocket(java.lang.String, int, java.net.InetAddress, int) throws java.io.IOException, java.net.UnknownHostException;
+  protected javax.net.ssl.SSLSocket(java.net.InetAddress, int, java.net.InetAddress, int) throws java.io.IOException;
+  public abstract java.lang.String[] getSupportedCipherSuites();
+  public abstract java.lang.String[] getEnabledCipherSuites();
+  public abstract void setEnabledCipherSuites(java.lang.String[]);
+  public abstract java.lang.String[] getSupportedProtocols();
+  public abstract java.lang.String[] getEnabledProtocols();
+  public abstract void setEnabledProtocols(java.lang.String[]);
+  public abstract javax.net.ssl.SSLSession getSession();
+  public javax.net.ssl.SSLSession getHandshakeSession();
+  public abstract void addHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener);
+  public abstract void removeHandshakeCompletedListener(javax.net.ssl.HandshakeCompletedListener);
+  public abstract void startHandshake() throws java.io.IOException;
+  public abstract void setUseClientMode(boolean);
+  public abstract boolean getUseClientMode();
+  public abstract void setNeedClientAuth(boolean);
+  public abstract boolean getNeedClientAuth();
+  public abstract void setWantClientAuth(boolean);
+  public abstract boolean getWantClientAuth();
+  public abstract void setEnableSessionCreation(boolean);
+  public abstract boolean getEnableSessionCreation();
+  public javax.net.ssl.SSLParameters getSSLParameters();
+  public void setSSLParameters(javax.net.ssl.SSLParameters);
+  public java.lang.String getApplicationProtocol();
+  public java.lang.String getHandshakeApplicationProtocol();
+  public void setHandshakeApplicationProtocolSelector(java.util.function.BiFunction<javax.net.ssl.SSLSocket, java.util.List<java.lang.String>, java.lang.String>);
+  public java.util.function.BiFunction<javax.net.ssl.SSLSocket, java.util.List<java.lang.String>, java.lang.String> getHandshakeApplicationProtocolSelector();
+}

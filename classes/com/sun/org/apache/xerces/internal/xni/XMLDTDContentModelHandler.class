@@ -1,0 +1,20 @@
+Compiled from "XMLDTDContentModelHandler.java"
+public interface com.sun.org.apache.xerces.internal.xni.XMLDTDContentModelHandler {
+  public static final short SEPARATOR_CHOICE;
+  public static final short SEPARATOR_SEQUENCE;
+  public static final short OCCURS_ZERO_OR_ONE;
+  public static final short OCCURS_ZERO_OR_MORE;
+  public static final short OCCURS_ONE_OR_MORE;
+  public abstract void startContentModel(java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void any(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void empty(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void startGroup(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void pcdata(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void element(java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void separator(short, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void occurrence(short, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void endGroup(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void endContentModel(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void setDTDContentModelSource(com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource);
+  public abstract com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource getDTDContentModelSource();
+}

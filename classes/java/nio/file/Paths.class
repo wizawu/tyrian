@@ -1,0 +1,5 @@
+Compiled from "Paths.java"
+public final class java.nio.file.Paths {
+  public static java.nio.file.Path get(java.lang.String, java.lang.String...);
+  public static java.nio.file.Path get(java.net.URI);
+}

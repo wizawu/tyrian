@@ -1,0 +1,12 @@
+Compiled from "LegalNoticeFilePlugin.java"
+public final class jdk.tools.jlink.internal.plugins.LegalNoticeFilePlugin implements jdk.tools.jlink.plugin.Plugin {
+  public jdk.tools.jlink.internal.plugins.LegalNoticeFilePlugin();
+  public java.lang.String getName();
+  public java.util.Set<jdk.tools.jlink.plugin.Plugin$State> getState();
+  public void configure(java.util.Map<java.lang.String, java.lang.String>);
+  public jdk.tools.jlink.plugin.ResourcePool transform(jdk.tools.jlink.plugin.ResourcePool, jdk.tools.jlink.plugin.ResourcePoolBuilder);
+  public jdk.tools.jlink.plugin.Plugin$Category getType();
+  public java.lang.String getDescription();
+  public boolean hasArguments();
+  public java.lang.String getArgumentsDescription();
+}

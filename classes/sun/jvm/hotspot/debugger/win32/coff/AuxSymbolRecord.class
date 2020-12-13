@@ -1,0 +1,9 @@
+Compiled from "AuxSymbolRecord.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.AuxSymbolRecord {
+  public static final int FUNCTION_DEFINITION;
+  public static final int BF_EF_RECORD;
+  public static final int WEAK_EXTERNAL;
+  public static final int FILE;
+  public static final int SECTION_DEFINITION;
+  public abstract int getType();
+}

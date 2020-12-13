@@ -1,0 +1,9 @@
+Compiled from "MetalCheckBoxIcon.java"
+public class javax.swing.plaf.metal.MetalCheckBoxIcon implements javax.swing.Icon,javax.swing.plaf.UIResource,java.io.Serializable {
+  public javax.swing.plaf.metal.MetalCheckBoxIcon();
+  protected int getControlSize();
+  public void paintIcon(java.awt.Component, java.awt.Graphics, int, int);
+  protected void drawCheck(java.awt.Component, java.awt.Graphics, int, int);
+  public int getIconWidth();
+  public int getIconHeight();
+}

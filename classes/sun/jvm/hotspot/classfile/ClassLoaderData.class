@@ -1,0 +1,14 @@
+Compiled from "ClassLoaderData.java"
+public class sun.jvm.hotspot.classfile.ClassLoaderData extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.classfile.ClassLoaderData(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.memory.Dictionary dictionary();
+  public static sun.jvm.hotspot.classfile.ClassLoaderData instantiateWrapperFor(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.oops.Oop getClassLoader();
+  public boolean getIsAnonymous();
+  public sun.jvm.hotspot.classfile.ClassLoaderData next();
+  public sun.jvm.hotspot.oops.Klass getKlasses();
+  public sun.jvm.hotspot.oops.Klass find(java.lang.String);
+  public void classesDo(sun.jvm.hotspot.classfile.ClassLoaderDataGraph$ClassVisitor);
+  public void allEntriesDo(sun.jvm.hotspot.classfile.ClassLoaderDataGraph$ClassAndLoaderVisitor);
+  static {};
+}

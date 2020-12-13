@@ -1,0 +1,7 @@
+Compiled from "Operand.java"
+public abstract class sun.jvm.hotspot.asm.Operand {
+  public sun.jvm.hotspot.asm.Operand();
+  public boolean isAddress();
+  public boolean isImmediate();
+  public boolean isRegister();
+}

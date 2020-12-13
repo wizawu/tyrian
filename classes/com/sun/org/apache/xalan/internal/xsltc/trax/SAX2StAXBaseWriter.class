@@ -1,0 +1,32 @@
+Compiled from "SAX2StAXBaseWriter.java"
+public abstract class com.sun.org.apache.xalan.internal.xsltc.trax.SAX2StAXBaseWriter extends org.xml.sax.helpers.DefaultHandler implements org.xml.sax.ext.LexicalHandler {
+  protected boolean isCDATA;
+  protected java.lang.StringBuffer CDATABuffer;
+  protected java.util.List<java.lang.String> namespaces;
+  protected org.xml.sax.Locator docLocator;
+  protected javax.xml.stream.XMLReporter reporter;
+  public com.sun.org.apache.xalan.internal.xsltc.trax.SAX2StAXBaseWriter();
+  public com.sun.org.apache.xalan.internal.xsltc.trax.SAX2StAXBaseWriter(javax.xml.stream.XMLReporter);
+  public void setXMLReporter(javax.xml.stream.XMLReporter);
+  public void setDocumentLocator(org.xml.sax.Locator);
+  public javax.xml.stream.Location getCurrentLocation();
+  public void error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void startDocument() throws org.xml.sax.SAXException;
+  public void endDocument() throws org.xml.sax.SAXException;
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void startPrefixMapping(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void endPrefixMapping(java.lang.String) throws org.xml.sax.SAXException;
+  public void startCDATA() throws org.xml.sax.SAXException;
+  public void characters(char[], int, int) throws org.xml.sax.SAXException;
+  public void endCDATA() throws org.xml.sax.SAXException;
+  public void comment(char[], int, int) throws org.xml.sax.SAXException;
+  public void endDTD() throws org.xml.sax.SAXException;
+  public void endEntity(java.lang.String) throws org.xml.sax.SAXException;
+  public void startDTD(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void startEntity(java.lang.String) throws org.xml.sax.SAXException;
+  protected void reportException(java.lang.String, org.xml.sax.SAXException) throws org.xml.sax.SAXException;
+  public static final void parseQName(java.lang.String, java.lang.String[]);
+}

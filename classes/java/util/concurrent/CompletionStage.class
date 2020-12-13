@@ -1,0 +1,41 @@
+Compiled from "CompletionStage.java"
+public interface java.util.concurrent.CompletionStage<T> {
+  public abstract <U> java.util.concurrent.CompletionStage<U> thenApply(java.util.function.Function<? super T, ? extends U>);
+  public abstract <U> java.util.concurrent.CompletionStage<U> thenApplyAsync(java.util.function.Function<? super T, ? extends U>);
+  public abstract <U> java.util.concurrent.CompletionStage<U> thenApplyAsync(java.util.function.Function<? super T, ? extends U>, java.util.concurrent.Executor);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> thenAccept(java.util.function.Consumer<? super T>);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> thenAcceptAsync(java.util.function.Consumer<? super T>);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> thenAcceptAsync(java.util.function.Consumer<? super T>, java.util.concurrent.Executor);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> thenRun(java.lang.Runnable);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> thenRunAsync(java.lang.Runnable);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> thenRunAsync(java.lang.Runnable, java.util.concurrent.Executor);
+  public abstract <U, V> java.util.concurrent.CompletionStage<V> thenCombine(java.util.concurrent.CompletionStage<? extends U>, java.util.function.BiFunction<? super T, ? super U, ? extends V>);
+  public abstract <U, V> java.util.concurrent.CompletionStage<V> thenCombineAsync(java.util.concurrent.CompletionStage<? extends U>, java.util.function.BiFunction<? super T, ? super U, ? extends V>);
+  public abstract <U, V> java.util.concurrent.CompletionStage<V> thenCombineAsync(java.util.concurrent.CompletionStage<? extends U>, java.util.function.BiFunction<? super T, ? super U, ? extends V>, java.util.concurrent.Executor);
+  public abstract <U> java.util.concurrent.CompletionStage<java.lang.Void> thenAcceptBoth(java.util.concurrent.CompletionStage<? extends U>, java.util.function.BiConsumer<? super T, ? super U>);
+  public abstract <U> java.util.concurrent.CompletionStage<java.lang.Void> thenAcceptBothAsync(java.util.concurrent.CompletionStage<? extends U>, java.util.function.BiConsumer<? super T, ? super U>);
+  public abstract <U> java.util.concurrent.CompletionStage<java.lang.Void> thenAcceptBothAsync(java.util.concurrent.CompletionStage<? extends U>, java.util.function.BiConsumer<? super T, ? super U>, java.util.concurrent.Executor);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> runAfterBoth(java.util.concurrent.CompletionStage<?>, java.lang.Runnable);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> runAfterBothAsync(java.util.concurrent.CompletionStage<?>, java.lang.Runnable);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> runAfterBothAsync(java.util.concurrent.CompletionStage<?>, java.lang.Runnable, java.util.concurrent.Executor);
+  public abstract <U> java.util.concurrent.CompletionStage<U> applyToEither(java.util.concurrent.CompletionStage<? extends T>, java.util.function.Function<? super T, U>);
+  public abstract <U> java.util.concurrent.CompletionStage<U> applyToEitherAsync(java.util.concurrent.CompletionStage<? extends T>, java.util.function.Function<? super T, U>);
+  public abstract <U> java.util.concurrent.CompletionStage<U> applyToEitherAsync(java.util.concurrent.CompletionStage<? extends T>, java.util.function.Function<? super T, U>, java.util.concurrent.Executor);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> acceptEither(java.util.concurrent.CompletionStage<? extends T>, java.util.function.Consumer<? super T>);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> acceptEitherAsync(java.util.concurrent.CompletionStage<? extends T>, java.util.function.Consumer<? super T>);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> acceptEitherAsync(java.util.concurrent.CompletionStage<? extends T>, java.util.function.Consumer<? super T>, java.util.concurrent.Executor);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> runAfterEither(java.util.concurrent.CompletionStage<?>, java.lang.Runnable);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> runAfterEitherAsync(java.util.concurrent.CompletionStage<?>, java.lang.Runnable);
+  public abstract java.util.concurrent.CompletionStage<java.lang.Void> runAfterEitherAsync(java.util.concurrent.CompletionStage<?>, java.lang.Runnable, java.util.concurrent.Executor);
+  public abstract <U> java.util.concurrent.CompletionStage<U> thenCompose(java.util.function.Function<? super T, ? extends java.util.concurrent.CompletionStage<U>>);
+  public abstract <U> java.util.concurrent.CompletionStage<U> thenComposeAsync(java.util.function.Function<? super T, ? extends java.util.concurrent.CompletionStage<U>>);
+  public abstract <U> java.util.concurrent.CompletionStage<U> thenComposeAsync(java.util.function.Function<? super T, ? extends java.util.concurrent.CompletionStage<U>>, java.util.concurrent.Executor);
+  public abstract <U> java.util.concurrent.CompletionStage<U> handle(java.util.function.BiFunction<? super T, java.lang.Throwable, ? extends U>);
+  public abstract <U> java.util.concurrent.CompletionStage<U> handleAsync(java.util.function.BiFunction<? super T, java.lang.Throwable, ? extends U>);
+  public abstract <U> java.util.concurrent.CompletionStage<U> handleAsync(java.util.function.BiFunction<? super T, java.lang.Throwable, ? extends U>, java.util.concurrent.Executor);
+  public abstract java.util.concurrent.CompletionStage<T> whenComplete(java.util.function.BiConsumer<? super T, ? super java.lang.Throwable>);
+  public abstract java.util.concurrent.CompletionStage<T> whenCompleteAsync(java.util.function.BiConsumer<? super T, ? super java.lang.Throwable>);
+  public abstract java.util.concurrent.CompletionStage<T> whenCompleteAsync(java.util.function.BiConsumer<? super T, ? super java.lang.Throwable>, java.util.concurrent.Executor);
+  public abstract java.util.concurrent.CompletionStage<T> exceptionally(java.util.function.Function<java.lang.Throwable, ? extends T>);
+  public abstract java.util.concurrent.CompletableFuture<T> toCompletableFuture();
+}

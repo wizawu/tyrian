@@ -1,0 +1,10 @@
+Compiled from "LDAPCertStoreParameters.java"
+public class java.security.cert.LDAPCertStoreParameters implements java.security.cert.CertStoreParameters {
+  public java.security.cert.LDAPCertStoreParameters(java.lang.String, int);
+  public java.security.cert.LDAPCertStoreParameters(java.lang.String);
+  public java.security.cert.LDAPCertStoreParameters();
+  public java.lang.String getServerName();
+  public int getPort();
+  public java.lang.Object clone();
+  public java.lang.String toString();
+}

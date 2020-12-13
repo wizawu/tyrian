@@ -1,0 +1,5 @@
+Compiled from "VMNotConnectedException.java"
+public class com.sun.tools.example.debug.tty.VMNotConnectedException extends java.lang.RuntimeException {
+  public com.sun.tools.example.debug.tty.VMNotConnectedException();
+  public com.sun.tools.example.debug.tty.VMNotConnectedException(java.lang.String);
+}

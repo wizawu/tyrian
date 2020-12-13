@@ -1,0 +1,37 @@
+Compiled from "ComponentDirContext.java"
+public abstract class com.sun.jndi.toolkit.ctx.ComponentDirContext extends com.sun.jndi.toolkit.ctx.PartialCompositeDirContext {
+  protected com.sun.jndi.toolkit.ctx.ComponentDirContext();
+  protected abstract javax.naming.directory.Attributes c_getAttributes(javax.naming.Name, java.lang.String[], com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract void c_modifyAttributes(javax.naming.Name, int, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract void c_modifyAttributes(javax.naming.Name, javax.naming.directory.ModificationItem[], com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract void c_bind(javax.naming.Name, java.lang.Object, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract void c_rebind(javax.naming.Name, java.lang.Object, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.directory.DirContext c_createSubcontext(javax.naming.Name, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> c_search(javax.naming.Name, javax.naming.directory.Attributes, java.lang.String[], com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> c_search(javax.naming.Name, java.lang.String, javax.naming.directory.SearchControls, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> c_search(javax.naming.Name, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.directory.DirContext c_getSchema(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected abstract javax.naming.directory.DirContext c_getSchemaClassDefinition(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.directory.Attributes c_getAttributes_nns(javax.naming.Name, java.lang.String[], com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_modifyAttributes_nns(javax.naming.Name, int, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_modifyAttributes_nns(javax.naming.Name, javax.naming.directory.ModificationItem[], com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_bind_nns(javax.naming.Name, java.lang.Object, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void c_rebind_nns(javax.naming.Name, java.lang.Object, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.directory.DirContext c_createSubcontext_nns(javax.naming.Name, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> c_search_nns(javax.naming.Name, javax.naming.directory.Attributes, java.lang.String[], com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> c_search_nns(javax.naming.Name, java.lang.String, javax.naming.directory.SearchControls, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> c_search_nns(javax.naming.Name, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.directory.DirContext c_getSchema_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.directory.DirContext c_getSchemaClassDefinition_nns(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.directory.Attributes p_getAttributes(javax.naming.Name, java.lang.String[], com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void p_modifyAttributes(javax.naming.Name, int, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void p_modifyAttributes(javax.naming.Name, javax.naming.directory.ModificationItem[], com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void p_bind(javax.naming.Name, java.lang.Object, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected void p_rebind(javax.naming.Name, java.lang.Object, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.directory.DirContext p_createSubcontext(javax.naming.Name, javax.naming.directory.Attributes, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> p_search(javax.naming.Name, javax.naming.directory.Attributes, java.lang.String[], com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> p_search(javax.naming.Name, java.lang.String, javax.naming.directory.SearchControls, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> p_search(javax.naming.Name, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.directory.DirContext p_getSchema(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.directory.DirContext p_getSchemaClassDefinition(javax.naming.Name, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+}

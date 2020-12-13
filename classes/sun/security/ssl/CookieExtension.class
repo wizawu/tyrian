@@ -1,0 +1,12 @@
+Compiled from "CookieExtension.java"
+public class sun.security.ssl.CookieExtension {
+  static final sun.security.ssl.HandshakeProducer chNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer chOnLoadConsumer;
+  static final sun.security.ssl.HandshakeConsumer chOnTradeConsumer;
+  static final sun.security.ssl.HandshakeProducer hrrNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer hrrOnLoadConsumer;
+  static final sun.security.ssl.HandshakeProducer hrrNetworkReproducer;
+  static final sun.security.ssl.CookieExtension$CookieStringizer cookieStringizer;
+  public sun.security.ssl.CookieExtension();
+  static {};
+}

@@ -1,0 +1,23 @@
+Compiled from "DOM2SAX.java"
+public class com.sun.org.apache.xalan.internal.xsltc.trax.DOM2SAX implements org.xml.sax.XMLReader,org.xml.sax.Locator {
+  public com.sun.org.apache.xalan.internal.xsltc.trax.DOM2SAX(org.w3c.dom.Node);
+  public org.xml.sax.ContentHandler getContentHandler();
+  public void setContentHandler(org.xml.sax.ContentHandler) throws java.lang.NullPointerException;
+  public void parse(org.xml.sax.InputSource) throws java.io.IOException, org.xml.sax.SAXException;
+  public void parse() throws java.io.IOException, org.xml.sax.SAXException;
+  public org.xml.sax.DTDHandler getDTDHandler();
+  public org.xml.sax.ErrorHandler getErrorHandler();
+  public boolean getFeature(java.lang.String) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public void setFeature(java.lang.String, boolean) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public void parse(java.lang.String) throws java.io.IOException, org.xml.sax.SAXException;
+  public void setDTDHandler(org.xml.sax.DTDHandler) throws java.lang.NullPointerException;
+  public void setEntityResolver(org.xml.sax.EntityResolver) throws java.lang.NullPointerException;
+  public org.xml.sax.EntityResolver getEntityResolver();
+  public void setErrorHandler(org.xml.sax.ErrorHandler) throws java.lang.NullPointerException;
+  public void setProperty(java.lang.String, java.lang.Object) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public java.lang.Object getProperty(java.lang.String) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public int getColumnNumber();
+  public int getLineNumber();
+  public java.lang.String getPublicId();
+  public java.lang.String getSystemId();
+}

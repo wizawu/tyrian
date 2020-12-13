@@ -1,0 +1,28 @@
+Compiled from "SecureRandom.java"
+public class java.security.SecureRandom extends java.util.Random {
+  static final long serialVersionUID;
+  public java.security.SecureRandom();
+  public java.security.SecureRandom(byte[]);
+  protected java.security.SecureRandom(java.security.SecureRandomSpi, java.security.Provider);
+  public static java.security.SecureRandom getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  public static java.security.SecureRandom getInstance(java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  public static java.security.SecureRandom getInstance(java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  public static java.security.SecureRandom getInstance(java.lang.String, java.security.SecureRandomParameters) throws java.security.NoSuchAlgorithmException;
+  public static java.security.SecureRandom getInstance(java.lang.String, java.security.SecureRandomParameters, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  public static java.security.SecureRandom getInstance(java.lang.String, java.security.SecureRandomParameters, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  public final java.security.Provider getProvider();
+  public java.lang.String getAlgorithm();
+  public java.lang.String toString();
+  public java.security.SecureRandomParameters getParameters();
+  public void setSeed(byte[]);
+  public void setSeed(long);
+  public void nextBytes(byte[]);
+  public void nextBytes(byte[], java.security.SecureRandomParameters);
+  protected final int next(int);
+  public static byte[] getSeed(int);
+  public byte[] generateSeed(int);
+  public static java.security.SecureRandom getInstanceStrong() throws java.security.NoSuchAlgorithmException;
+  public void reseed();
+  public void reseed(java.security.SecureRandomParameters);
+  static {};
+}

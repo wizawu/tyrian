@@ -1,0 +1,6 @@
+Compiled from "PollSelectorProvider.java"
+public class sun.nio.ch.PollSelectorProvider extends sun.nio.ch.SelectorProviderImpl {
+  public sun.nio.ch.PollSelectorProvider();
+  public java.nio.channels.spi.AbstractSelector openSelector() throws java.io.IOException;
+  public java.nio.channels.Channel inheritedChannel() throws java.io.IOException;
+}

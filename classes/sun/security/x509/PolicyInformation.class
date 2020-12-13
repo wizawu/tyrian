@@ -1,0 +1,19 @@
+Compiled from "PolicyInformation.java"
+public class sun.security.x509.PolicyInformation {
+  public static final java.lang.String NAME;
+  public static final java.lang.String ID;
+  public static final java.lang.String QUALIFIERS;
+  public sun.security.x509.PolicyInformation(sun.security.x509.CertificatePolicyId, java.util.Set<java.security.cert.PolicyQualifierInfo>) throws java.io.IOException;
+  public sun.security.x509.PolicyInformation(sun.security.util.DerValue) throws java.io.IOException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public sun.security.x509.CertificatePolicyId getPolicyIdentifier();
+  public java.util.Set<java.security.cert.PolicyQualifierInfo> getPolicyQualifiers();
+  public java.lang.Object get(java.lang.String) throws java.io.IOException;
+  public void set(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  public java.lang.String getName();
+  public java.lang.String toString();
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+}

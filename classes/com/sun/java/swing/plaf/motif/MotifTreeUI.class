@@ -1,0 +1,11 @@
+Compiled from "MotifTreeUI.java"
+public class com.sun.java.swing.plaf.motif.MotifTreeUI extends javax.swing.plaf.basic.BasicTreeUI {
+  static final int HALF_SIZE;
+  static final int SIZE;
+  public com.sun.java.swing.plaf.motif.MotifTreeUI();
+  public void installUI(javax.swing.JComponent);
+  protected void paintVerticalLine(java.awt.Graphics, javax.swing.JComponent, int, int, int);
+  protected void paintHorizontalLine(java.awt.Graphics, javax.swing.JComponent, int, int, int);
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.tree.TreeCellRenderer createDefaultCellRenderer();
+}

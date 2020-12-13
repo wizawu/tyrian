@@ -1,0 +1,28 @@
+Compiled from "X509CRLEntryImpl.java"
+public class sun.security.x509.X509CRLEntryImpl extends java.security.cert.X509CRLEntry implements java.lang.Comparable<sun.security.x509.X509CRLEntryImpl> {
+  public sun.security.x509.X509CRLEntryImpl(java.math.BigInteger, java.util.Date);
+  public sun.security.x509.X509CRLEntryImpl(java.math.BigInteger, java.util.Date, sun.security.x509.CRLExtensions);
+  public sun.security.x509.X509CRLEntryImpl(byte[]) throws java.security.cert.CRLException;
+  public sun.security.x509.X509CRLEntryImpl(sun.security.util.DerValue) throws java.security.cert.CRLException;
+  public boolean hasExtensions();
+  public void encode(sun.security.util.DerOutputStream) throws java.security.cert.CRLException;
+  public byte[] getEncoded() throws java.security.cert.CRLException;
+  public javax.security.auth.x500.X500Principal getCertificateIssuer();
+  void setCertificateIssuer(javax.security.auth.x500.X500Principal, javax.security.auth.x500.X500Principal);
+  public java.math.BigInteger getSerialNumber();
+  public java.util.Date getRevocationDate();
+  public java.security.cert.CRLReason getRevocationReason();
+  public static java.security.cert.CRLReason getRevocationReason(java.security.cert.X509CRLEntry);
+  public java.lang.Integer getReasonCode() throws java.io.IOException;
+  public java.lang.String toString();
+  public boolean hasUnsupportedCriticalExtension();
+  public java.util.Set<java.lang.String> getCriticalExtensionOIDs();
+  public java.util.Set<java.lang.String> getNonCriticalExtensionOIDs();
+  public byte[] getExtensionValue(java.lang.String);
+  public sun.security.x509.Extension getExtension(sun.security.util.ObjectIdentifier);
+  public static sun.security.x509.X509CRLEntryImpl toImpl(java.security.cert.X509CRLEntry) throws java.security.cert.CRLException;
+  sun.security.x509.CertificateIssuerExtension getCertificateIssuerExtension();
+  public java.util.Map<java.lang.String, java.security.cert.Extension> getExtensions();
+  public int compareTo(sun.security.x509.X509CRLEntryImpl);
+  public int compareTo(java.lang.Object);
+}

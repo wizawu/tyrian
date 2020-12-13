@@ -1,0 +1,5 @@
+Compiled from "Channel.java"
+public interface java.nio.channels.Channel extends java.io.Closeable {
+  public abstract boolean isOpen();
+  public abstract void close() throws java.io.IOException;
+}

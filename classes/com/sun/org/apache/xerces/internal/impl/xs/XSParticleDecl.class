@@ -1,0 +1,33 @@
+Compiled from "XSParticleDecl.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl implements com.sun.org.apache.xerces.internal.xs.XSParticle {
+  public static final short PARTICLE_EMPTY;
+  public static final short PARTICLE_ELEMENT;
+  public static final short PARTICLE_WILDCARD;
+  public static final short PARTICLE_MODELGROUP;
+  public static final short PARTICLE_ZERO_OR_MORE;
+  public static final short PARTICLE_ZERO_OR_ONE;
+  public static final short PARTICLE_ONE_OR_MORE;
+  public short fType;
+  public com.sun.org.apache.xerces.internal.xs.XSTerm fValue;
+  public int fMinOccurs;
+  public int fMaxOccurs;
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList fAnnotations;
+  public com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl();
+  public com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl makeClone();
+  public boolean emptiable();
+  public boolean isEmpty();
+  public int minEffectiveTotalRange();
+  public int maxEffectiveTotalRange();
+  public java.lang.String toString();
+  void appendParticle(java.lang.StringBuffer);
+  public void reset();
+  public short getType();
+  public java.lang.String getName();
+  public java.lang.String getNamespace();
+  public int getMinOccurs();
+  public boolean getMaxOccursUnbounded();
+  public int getMaxOccurs();
+  public com.sun.org.apache.xerces.internal.xs.XSTerm getTerm();
+  public com.sun.org.apache.xerces.internal.xs.XSNamespaceItem getNamespaceItem();
+  public com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+}

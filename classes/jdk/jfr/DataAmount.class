@@ -1,0 +1,6 @@
+Compiled from "DataAmount.java"
+public interface jdk.jfr.DataAmount extends java.lang.annotation.Annotation {
+  public static final java.lang.String BITS;
+  public static final java.lang.String BYTES;
+  public abstract java.lang.String value();
+}

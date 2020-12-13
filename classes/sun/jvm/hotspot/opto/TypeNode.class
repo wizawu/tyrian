@@ -1,0 +1,5 @@
+Compiled from "TypeNode.java"
+public class sun.jvm.hotspot.opto.TypeNode extends sun.jvm.hotspot.opto.Node {
+  public sun.jvm.hotspot.opto.TypeNode(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

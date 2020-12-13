@@ -1,0 +1,4 @@
+Compiled from "AbstractAnnotationValueVisitor9.java"
+public abstract class javax.lang.model.util.AbstractAnnotationValueVisitor9<R, P> extends javax.lang.model.util.AbstractAnnotationValueVisitor8<R, P> {
+  protected javax.lang.model.util.AbstractAnnotationValueVisitor9();
+}

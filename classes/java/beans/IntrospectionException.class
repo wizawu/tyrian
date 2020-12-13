@@ -1,0 +1,4 @@
+Compiled from "IntrospectionException.java"
+public class java.beans.IntrospectionException extends java.lang.Exception {
+  public java.beans.IntrospectionException(java.lang.String);
+}

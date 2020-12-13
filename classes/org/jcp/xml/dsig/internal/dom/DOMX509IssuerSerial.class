@@ -1,0 +1,10 @@
+Compiled from "DOMX509IssuerSerial.java"
+public final class org.jcp.xml.dsig.internal.dom.DOMX509IssuerSerial extends org.jcp.xml.dsig.internal.dom.DOMStructure implements javax.xml.crypto.dsig.keyinfo.X509IssuerSerial {
+  public org.jcp.xml.dsig.internal.dom.DOMX509IssuerSerial(java.lang.String, java.math.BigInteger);
+  public org.jcp.xml.dsig.internal.dom.DOMX509IssuerSerial(org.w3c.dom.Element) throws javax.xml.crypto.MarshalException;
+  public java.lang.String getIssuerName();
+  public java.math.BigInteger getSerialNumber();
+  public void marshal(org.w3c.dom.Node, java.lang.String, javax.xml.crypto.dom.DOMCryptoContext) throws javax.xml.crypto.MarshalException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

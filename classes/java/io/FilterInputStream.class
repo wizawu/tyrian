@@ -1,0 +1,14 @@
+Compiled from "FilterInputStream.java"
+public class java.io.FilterInputStream extends java.io.InputStream {
+  protected volatile java.io.InputStream in;
+  protected java.io.FilterInputStream(java.io.InputStream);
+  public int read() throws java.io.IOException;
+  public int read(byte[]) throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public long skip(long) throws java.io.IOException;
+  public int available() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public synchronized void mark(int);
+  public synchronized void reset() throws java.io.IOException;
+  public boolean markSupported();
+}

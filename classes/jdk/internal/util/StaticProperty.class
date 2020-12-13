@@ -1,0 +1,9 @@
+Compiled from "StaticProperty.java"
+public final class jdk.internal.util.StaticProperty {
+  public static java.lang.String javaHome();
+  public static java.lang.String userHome();
+  public static java.lang.String userDir();
+  public static java.lang.String userName();
+  public static java.lang.String jdkSerialFilter();
+  static {};
+}

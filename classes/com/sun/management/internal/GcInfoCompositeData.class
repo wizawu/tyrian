@@ -1,0 +1,18 @@
+Compiled from "GcInfoCompositeData.java"
+public class com.sun.management.internal.GcInfoCompositeData extends sun.management.LazyCompositeData {
+  public com.sun.management.internal.GcInfoCompositeData(com.sun.management.GcInfo, com.sun.management.internal.GcInfoBuilder, java.lang.Object[]);
+  public com.sun.management.GcInfo getGcInfo();
+  public static javax.management.openmbean.CompositeData toCompositeData(com.sun.management.GcInfo);
+  protected javax.management.openmbean.CompositeData getCompositeData();
+  static java.lang.String[] getBaseGcInfoItemNames();
+  static synchronized javax.management.openmbean.OpenType<?>[] getBaseGcInfoItemTypes();
+  public static long getId(javax.management.openmbean.CompositeData);
+  public static long getStartTime(javax.management.openmbean.CompositeData);
+  public static long getEndTime(javax.management.openmbean.CompositeData);
+  public static java.util.Map<java.lang.String, java.lang.management.MemoryUsage> getMemoryUsageBeforeGc(javax.management.openmbean.CompositeData);
+  public static java.util.Map<java.lang.String, java.lang.management.MemoryUsage> cast(java.lang.Object);
+  public static java.util.Map<java.lang.String, java.lang.management.MemoryUsage> getMemoryUsageAfterGc(javax.management.openmbean.CompositeData);
+  public static void validateCompositeData(javax.management.openmbean.CompositeData);
+  static synchronized javax.management.openmbean.CompositeType getBaseGcInfoCompositeType();
+  static {};
+}

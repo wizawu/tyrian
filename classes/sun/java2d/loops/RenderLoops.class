@@ -1,0 +1,18 @@
+Compiled from "RenderLoops.java"
+public class sun.java2d.loops.RenderLoops {
+  public static final int primTypeID;
+  public sun.java2d.loops.DrawLine drawLineLoop;
+  public sun.java2d.loops.FillRect fillRectLoop;
+  public sun.java2d.loops.DrawRect drawRectLoop;
+  public sun.java2d.loops.DrawPolygons drawPolygonsLoop;
+  public sun.java2d.loops.DrawPath drawPathLoop;
+  public sun.java2d.loops.FillPath fillPathLoop;
+  public sun.java2d.loops.FillSpans fillSpansLoop;
+  public sun.java2d.loops.FillParallelogram fillParallelogramLoop;
+  public sun.java2d.loops.DrawParallelogram drawParallelogramLoop;
+  public sun.java2d.loops.DrawGlyphList drawGlyphListLoop;
+  public sun.java2d.loops.DrawGlyphListAA drawGlyphListAALoop;
+  public sun.java2d.loops.DrawGlyphListLCD drawGlyphListLCDLoop;
+  public sun.java2d.loops.RenderLoops();
+  static {};
+}

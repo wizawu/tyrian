@@ -1,0 +1,9 @@
+Compiled from "ElementValuePair.java"
+public class com.sun.org.apache.bcel.internal.classfile.ElementValuePair {
+  public com.sun.org.apache.bcel.internal.classfile.ElementValuePair(int, com.sun.org.apache.bcel.internal.classfile.ElementValue, com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public java.lang.String getNameString();
+  public final com.sun.org.apache.bcel.internal.classfile.ElementValue getValue();
+  public int getNameIndex();
+  public java.lang.String toShortString();
+  protected void dump(java.io.DataOutputStream) throws java.io.IOException;
+}

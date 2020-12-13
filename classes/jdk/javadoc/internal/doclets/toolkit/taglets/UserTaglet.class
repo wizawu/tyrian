@@ -1,0 +1,15 @@
+Compiled from "UserTaglet.java"
+public class jdk.javadoc.internal.doclets.toolkit.taglets.UserTaglet implements jdk.javadoc.internal.doclets.toolkit.taglets.Taglet {
+  public jdk.javadoc.internal.doclets.toolkit.taglets.UserTaglet(jdk.javadoc.doclet.Taglet);
+  public boolean inField();
+  public boolean inConstructor();
+  public boolean inMethod();
+  public boolean inOverview();
+  public boolean inModule();
+  public boolean inPackage();
+  public boolean inType();
+  public boolean isInlineTag();
+  public java.lang.String getName();
+  public jdk.javadoc.internal.doclets.toolkit.Content getTagletOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
+  public jdk.javadoc.internal.doclets.toolkit.Content getTagletOutput(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
+}

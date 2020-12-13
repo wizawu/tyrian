@@ -1,0 +1,47 @@
+Compiled from "Method.java"
+public final class java.lang.reflect.Method extends java.lang.reflect.Executable {
+  sun.reflect.generics.repository.MethodRepository getGenericInfo();
+  java.lang.reflect.Method(java.lang.Class<?>, java.lang.String, java.lang.Class<?>[], java.lang.Class<?>, java.lang.Class<?>[], int, int, java.lang.String, byte[], byte[], byte[]);
+  java.lang.reflect.Method copy();
+  java.lang.reflect.Method leafCopy();
+  public void setAccessible(boolean);
+  void checkCanSetAccessible(java.lang.Class<?>);
+  java.lang.reflect.Method getRoot();
+  boolean hasGenericInformation();
+  byte[] getAnnotationBytes();
+  public java.lang.Class<?> getDeclaringClass();
+  public java.lang.String getName();
+  public int getModifiers();
+  public java.lang.reflect.TypeVariable<java.lang.reflect.Method>[] getTypeParameters();
+  public java.lang.Class<?> getReturnType();
+  public java.lang.reflect.Type getGenericReturnType();
+  java.lang.Class<?>[] getSharedParameterTypes();
+  java.lang.Class<?>[] getSharedExceptionTypes();
+  public java.lang.Class<?>[] getParameterTypes();
+  public int getParameterCount();
+  public java.lang.reflect.Type[] getGenericParameterTypes();
+  public java.lang.Class<?>[] getExceptionTypes();
+  public java.lang.reflect.Type[] getGenericExceptionTypes();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  void specificToStringHeader(java.lang.StringBuilder);
+  java.lang.String toShortString();
+  public java.lang.String toGenericString();
+  void specificToGenericStringHeader(java.lang.StringBuilder);
+  public java.lang.Object invoke(java.lang.Object, java.lang.Object...) throws java.lang.IllegalAccessException, java.lang.IllegalArgumentException, java.lang.reflect.InvocationTargetException;
+  public boolean isBridge();
+  public boolean isVarArgs();
+  public boolean isSynthetic();
+  public boolean isDefault();
+  jdk.internal.reflect.MethodAccessor getMethodAccessor();
+  void setMethodAccessor(jdk.internal.reflect.MethodAccessor);
+  public java.lang.Object getDefaultValue();
+  public <T extends java.lang.annotation.Annotation> T getAnnotation(java.lang.Class<T>);
+  public java.lang.annotation.Annotation[] getDeclaredAnnotations();
+  public java.lang.annotation.Annotation[][] getParameterAnnotations();
+  public java.lang.reflect.AnnotatedType getAnnotatedReturnType();
+  boolean handleParameterNumberMismatch(int, int);
+  sun.reflect.generics.repository.ConstructorRepository getGenericInfo();
+  java.lang.reflect.AccessibleObject getRoot();
+}

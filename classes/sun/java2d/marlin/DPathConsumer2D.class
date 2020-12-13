@@ -1,0 +1,10 @@
+Compiled from "DPathConsumer2D.java"
+public interface sun.java2d.marlin.DPathConsumer2D {
+  public abstract void moveTo(double, double);
+  public abstract void lineTo(double, double);
+  public abstract void quadTo(double, double, double, double);
+  public abstract void curveTo(double, double, double, double, double, double);
+  public abstract void closePath();
+  public abstract void pathDone();
+  public abstract long getNativeConsumer();
+}

@@ -1,0 +1,15 @@
+Compiled from "RectIterator.java"
+class java.awt.geom.RectIterator implements java.awt.geom.PathIterator {
+  double x;
+  double y;
+  double w;
+  double h;
+  java.awt.geom.AffineTransform affine;
+  int index;
+  java.awt.geom.RectIterator(java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform);
+  public int getWindingRule();
+  public boolean isDone();
+  public void next();
+  public int currentSegment(float[]);
+  public int currentSegment(double[]);
+}

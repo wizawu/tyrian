@@ -1,0 +1,6 @@
+Compiled from "WindbgAMD64ThreadFactory.java"
+public class sun.jvm.hotspot.debugger.windbg.amd64.WindbgAMD64ThreadFactory implements sun.jvm.hotspot.debugger.windbg.WindbgThreadFactory {
+  public sun.jvm.hotspot.debugger.windbg.amd64.WindbgAMD64ThreadFactory(sun.jvm.hotspot.debugger.windbg.WindbgDebugger);
+  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(long);
+}

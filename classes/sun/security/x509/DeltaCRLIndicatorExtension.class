@@ -1,0 +1,8 @@
+Compiled from "DeltaCRLIndicatorExtension.java"
+public class sun.security.x509.DeltaCRLIndicatorExtension extends sun.security.x509.CRLNumberExtension {
+  public static final java.lang.String NAME;
+  public sun.security.x509.DeltaCRLIndicatorExtension(int) throws java.io.IOException;
+  public sun.security.x509.DeltaCRLIndicatorExtension(java.math.BigInteger) throws java.io.IOException;
+  public sun.security.x509.DeltaCRLIndicatorExtension(java.lang.Boolean, java.lang.Object) throws java.io.IOException;
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+}

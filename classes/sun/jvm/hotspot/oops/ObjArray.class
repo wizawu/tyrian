@@ -1,0 +1,10 @@
+Compiled from "ObjArray.java"
+public class sun.jvm.hotspot.oops.ObjArray extends sun.jvm.hotspot.oops.Array {
+  sun.jvm.hotspot.oops.ObjArray(sun.jvm.hotspot.debugger.OopHandle, sun.jvm.hotspot.oops.ObjectHeap);
+  public boolean isObjArray();
+  public sun.jvm.hotspot.debugger.OopHandle getOopHandleAt(long);
+  public sun.jvm.hotspot.oops.Oop getObjAt(long);
+  public void printValueOn(java.io.PrintStream);
+  public void iterateFields(sun.jvm.hotspot.oops.OopVisitor, boolean);
+  static {};
+}

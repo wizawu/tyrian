@@ -1,0 +1,13 @@
+Compiled from "BasicBitType.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicBitType extends sun.jvm.hotspot.debugger.cdbg.basic.BasicIntType implements sun.jvm.hotspot.debugger.cdbg.BitType {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicBitType(sun.jvm.hotspot.debugger.cdbg.Type, int, int);
+  public sun.jvm.hotspot.debugger.cdbg.BitType asBit();
+  public int getSize();
+  public boolean isUnsigned();
+  public int getSizeInBits();
+  public int getOffset();
+  sun.jvm.hotspot.debugger.cdbg.Type resolveTypes(sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
+  public void iterateObject(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.cdbg.ObjectVisitor, sun.jvm.hotspot.debugger.cdbg.FieldIdentifier);
+  protected sun.jvm.hotspot.debugger.cdbg.Type createCVVariant(int);
+  public void visit(sun.jvm.hotspot.debugger.cdbg.TypeVisitor);
+}

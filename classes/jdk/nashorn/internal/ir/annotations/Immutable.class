@@ -1,0 +1,3 @@
+Compiled from "Immutable.java"
+public interface jdk.nashorn.internal.ir.annotations.Immutable extends java.lang.annotation.Annotation {
+}

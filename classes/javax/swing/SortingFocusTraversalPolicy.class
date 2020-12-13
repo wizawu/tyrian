@@ -1,0 +1,17 @@
+Compiled from "SortingFocusTraversalPolicy.java"
+public class javax.swing.SortingFocusTraversalPolicy extends javax.swing.InternalFrameFocusTraversalPolicy {
+  protected javax.swing.SortingFocusTraversalPolicy();
+  public javax.swing.SortingFocusTraversalPolicy(java.util.Comparator<? super java.awt.Component>);
+  java.awt.Container getTopmostProvider(java.awt.Container, java.awt.Component);
+  public java.awt.Component getComponentAfter(java.awt.Container, java.awt.Component);
+  public java.awt.Component getComponentBefore(java.awt.Container, java.awt.Component);
+  public java.awt.Component getFirstComponent(java.awt.Container);
+  public java.awt.Component getLastComponent(java.awt.Container);
+  public java.awt.Component getDefaultComponent(java.awt.Container);
+  public void setImplicitDownCycleTraversal(boolean);
+  public boolean getImplicitDownCycleTraversal();
+  protected void setComparator(java.util.Comparator<? super java.awt.Component>);
+  protected java.util.Comparator<? super java.awt.Component> getComparator();
+  protected boolean accept(java.awt.Component);
+  static {};
+}

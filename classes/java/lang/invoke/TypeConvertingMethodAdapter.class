@@ -1,0 +1,13 @@
+Compiled from "TypeConvertingMethodAdapter.java"
+class java.lang.invoke.TypeConvertingMethodAdapter extends jdk.internal.org.objectweb.asm.MethodVisitor {
+  static final boolean $assertionsDisabled;
+  java.lang.invoke.TypeConvertingMethodAdapter(jdk.internal.org.objectweb.asm.MethodVisitor);
+  void boxIfTypePrimitive(jdk.internal.org.objectweb.asm.Type);
+  void widen(sun.invoke.util.Wrapper, sun.invoke.util.Wrapper);
+  void box(sun.invoke.util.Wrapper);
+  void unbox(java.lang.String, sun.invoke.util.Wrapper);
+  void cast(java.lang.String, java.lang.String);
+  void convertType(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>);
+  void iconst(int);
+  static {};
+}

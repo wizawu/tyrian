@@ -1,0 +1,22 @@
+Compiled from "AbstractMonitoredVm.java"
+public abstract class sun.jvmstat.perfdata.monitor.AbstractMonitoredVm implements sun.jvmstat.monitor.BufferedMonitoredVm {
+  protected sun.jvmstat.monitor.VmIdentifier vmid;
+  protected sun.jvmstat.perfdata.monitor.AbstractPerfDataBuffer pdb;
+  protected int interval;
+  public sun.jvmstat.perfdata.monitor.AbstractMonitoredVm(sun.jvmstat.monitor.VmIdentifier, int) throws sun.jvmstat.monitor.MonitorException;
+  public sun.jvmstat.monitor.VmIdentifier getVmIdentifier();
+  public sun.jvmstat.monitor.Monitor findByName(java.lang.String) throws sun.jvmstat.monitor.MonitorException;
+  public java.util.List<sun.jvmstat.monitor.Monitor> findByPattern(java.lang.String) throws sun.jvmstat.monitor.MonitorException;
+  public void detach();
+  public void setInterval(int);
+  public int getInterval();
+  public void setLastException(java.lang.Exception);
+  public java.lang.Exception getLastException();
+  public void clearLastException();
+  public boolean isErrored();
+  public sun.jvmstat.perfdata.monitor.MonitorStatus getMonitorStatus() throws sun.jvmstat.monitor.MonitorException;
+  public abstract void addVmListener(sun.jvmstat.monitor.event.VmListener);
+  public abstract void removeVmListener(sun.jvmstat.monitor.event.VmListener);
+  public byte[] getBytes();
+  public int getCapacity();
+}

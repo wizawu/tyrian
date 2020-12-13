@@ -1,0 +1,5 @@
+Compiled from "DisplayChangedListener.java"
+public interface sun.awt.DisplayChangedListener extends java.util.EventListener {
+  public abstract void displayChanged();
+  public abstract void paletteChanged();
+}

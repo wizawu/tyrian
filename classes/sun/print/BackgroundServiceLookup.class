@@ -1,0 +1,4 @@
+Compiled from "BackgroundServiceLookup.java"
+public interface sun.print.BackgroundServiceLookup {
+  public abstract void getServicesInbackground(sun.print.BackgroundLookupListener);
+}

@@ -1,0 +1,5 @@
+Compiled from "FormatData_hi_IN.java"
+public class sun.text.resources.ext.FormatData_hi_IN extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_hi_IN();
+  protected final java.lang.Object[][] getContents();
+}

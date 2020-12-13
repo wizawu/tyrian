@@ -1,0 +1,7 @@
+Compiled from "ParseException.java"
+public class com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException extends java.lang.RuntimeException {
+  static final long serialVersionUID;
+  final int location;
+  public com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException(java.lang.String, int);
+  public int getLocation();
+}

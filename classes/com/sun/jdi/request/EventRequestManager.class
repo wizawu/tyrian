@@ -1,0 +1,38 @@
+Compiled from "EventRequestManager.java"
+public interface com.sun.jdi.request.EventRequestManager extends com.sun.jdi.Mirror {
+  public abstract com.sun.jdi.request.ClassPrepareRequest createClassPrepareRequest();
+  public abstract com.sun.jdi.request.ClassUnloadRequest createClassUnloadRequest();
+  public abstract com.sun.jdi.request.ThreadStartRequest createThreadStartRequest();
+  public abstract com.sun.jdi.request.ThreadDeathRequest createThreadDeathRequest();
+  public abstract com.sun.jdi.request.ExceptionRequest createExceptionRequest(com.sun.jdi.ReferenceType, boolean, boolean);
+  public abstract com.sun.jdi.request.MethodEntryRequest createMethodEntryRequest();
+  public abstract com.sun.jdi.request.MethodExitRequest createMethodExitRequest();
+  public abstract com.sun.jdi.request.MonitorContendedEnterRequest createMonitorContendedEnterRequest();
+  public abstract com.sun.jdi.request.MonitorContendedEnteredRequest createMonitorContendedEnteredRequest();
+  public abstract com.sun.jdi.request.MonitorWaitRequest createMonitorWaitRequest();
+  public abstract com.sun.jdi.request.MonitorWaitedRequest createMonitorWaitedRequest();
+  public abstract com.sun.jdi.request.StepRequest createStepRequest(com.sun.jdi.ThreadReference, int, int);
+  public abstract com.sun.jdi.request.BreakpointRequest createBreakpointRequest(com.sun.jdi.Location);
+  public abstract com.sun.jdi.request.AccessWatchpointRequest createAccessWatchpointRequest(com.sun.jdi.Field);
+  public abstract com.sun.jdi.request.ModificationWatchpointRequest createModificationWatchpointRequest(com.sun.jdi.Field);
+  public abstract com.sun.jdi.request.VMDeathRequest createVMDeathRequest();
+  public abstract void deleteEventRequest(com.sun.jdi.request.EventRequest);
+  public abstract void deleteEventRequests(java.util.List<? extends com.sun.jdi.request.EventRequest>);
+  public abstract void deleteAllBreakpoints();
+  public abstract java.util.List<com.sun.jdi.request.StepRequest> stepRequests();
+  public abstract java.util.List<com.sun.jdi.request.ClassPrepareRequest> classPrepareRequests();
+  public abstract java.util.List<com.sun.jdi.request.ClassUnloadRequest> classUnloadRequests();
+  public abstract java.util.List<com.sun.jdi.request.ThreadStartRequest> threadStartRequests();
+  public abstract java.util.List<com.sun.jdi.request.ThreadDeathRequest> threadDeathRequests();
+  public abstract java.util.List<com.sun.jdi.request.ExceptionRequest> exceptionRequests();
+  public abstract java.util.List<com.sun.jdi.request.BreakpointRequest> breakpointRequests();
+  public abstract java.util.List<com.sun.jdi.request.AccessWatchpointRequest> accessWatchpointRequests();
+  public abstract java.util.List<com.sun.jdi.request.ModificationWatchpointRequest> modificationWatchpointRequests();
+  public abstract java.util.List<com.sun.jdi.request.MethodEntryRequest> methodEntryRequests();
+  public abstract java.util.List<com.sun.jdi.request.MethodExitRequest> methodExitRequests();
+  public abstract java.util.List<com.sun.jdi.request.MonitorContendedEnterRequest> monitorContendedEnterRequests();
+  public abstract java.util.List<com.sun.jdi.request.MonitorContendedEnteredRequest> monitorContendedEnteredRequests();
+  public abstract java.util.List<com.sun.jdi.request.MonitorWaitRequest> monitorWaitRequests();
+  public abstract java.util.List<com.sun.jdi.request.MonitorWaitedRequest> monitorWaitedRequests();
+  public abstract java.util.List<com.sun.jdi.request.VMDeathRequest> vmDeathRequests();
+}

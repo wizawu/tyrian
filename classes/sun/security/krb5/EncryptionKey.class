@@ -1,0 +1,25 @@
+Compiled from "EncryptionKey.java"
+public class sun.security.krb5.EncryptionKey implements java.lang.Cloneable {
+  public static final sun.security.krb5.EncryptionKey NULL_KEY;
+  public synchronized int getEType();
+  public final java.lang.Integer getKeyVersionNumber();
+  public final byte[] getBytes();
+  public synchronized java.lang.Object clone();
+  public static sun.security.krb5.EncryptionKey[] acquireSecretKeys(sun.security.krb5.PrincipalName, java.lang.String);
+  public static sun.security.krb5.EncryptionKey acquireSecretKey(sun.security.krb5.PrincipalName, char[], int, sun.security.krb5.internal.PAData$SaltAndParams) throws sun.security.krb5.KrbException;
+  public static sun.security.krb5.EncryptionKey acquireSecretKey(char[], java.lang.String, int, byte[]) throws sun.security.krb5.KrbException;
+  public static sun.security.krb5.EncryptionKey[] acquireSecretKeys(char[], java.lang.String) throws sun.security.krb5.KrbException;
+  public sun.security.krb5.EncryptionKey(byte[], int, java.lang.Integer);
+  public sun.security.krb5.EncryptionKey(int, byte[]);
+  public sun.security.krb5.EncryptionKey(char[], java.lang.String, java.lang.String) throws sun.security.krb5.KrbCryptoException;
+  public sun.security.krb5.EncryptionKey(sun.security.krb5.EncryptionKey) throws sun.security.krb5.KrbCryptoException;
+  public sun.security.krb5.EncryptionKey(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public synchronized byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public synchronized void destroy();
+  public static sun.security.krb5.EncryptionKey parse(sun.security.util.DerInputStream, byte, boolean) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public synchronized void writeKey(sun.security.krb5.internal.ccache.CCacheOutputStream) throws java.io.IOException;
+  public java.lang.String toString();
+  public static sun.security.krb5.EncryptionKey findKey(int, sun.security.krb5.EncryptionKey[]) throws sun.security.krb5.KrbException;
+  public static sun.security.krb5.EncryptionKey findKey(int, java.lang.Integer, sun.security.krb5.EncryptionKey[]) throws sun.security.krb5.KrbException;
+  static {};
+}

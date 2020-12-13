@@ -1,0 +1,34 @@
+Compiled from "BasicSplitPaneDivider.java"
+public class javax.swing.plaf.basic.BasicSplitPaneDivider extends java.awt.Container implements java.beans.PropertyChangeListener {
+  protected static final int ONE_TOUCH_SIZE;
+  protected static final int ONE_TOUCH_OFFSET;
+  protected javax.swing.plaf.basic.BasicSplitPaneDivider$DragController dragger;
+  protected javax.swing.plaf.basic.BasicSplitPaneUI splitPaneUI;
+  protected int dividerSize;
+  protected java.awt.Component hiddenDivider;
+  protected javax.swing.JSplitPane splitPane;
+  protected javax.swing.plaf.basic.BasicSplitPaneDivider$MouseHandler mouseHandler;
+  protected int orientation;
+  protected javax.swing.JButton leftButton;
+  protected javax.swing.JButton rightButton;
+  public javax.swing.plaf.basic.BasicSplitPaneDivider(javax.swing.plaf.basic.BasicSplitPaneUI);
+  public void setBasicSplitPaneUI(javax.swing.plaf.basic.BasicSplitPaneUI);
+  public javax.swing.plaf.basic.BasicSplitPaneUI getBasicSplitPaneUI();
+  public void setDividerSize(int);
+  public int getDividerSize();
+  public void setBorder(javax.swing.border.Border);
+  public javax.swing.border.Border getBorder();
+  public java.awt.Insets getInsets();
+  protected void setMouseOver(boolean);
+  public boolean isMouseOver();
+  public java.awt.Dimension getPreferredSize();
+  public java.awt.Dimension getMinimumSize();
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  public void paint(java.awt.Graphics);
+  protected void oneTouchExpandableChanged();
+  protected javax.swing.JButton createLeftOneTouchButton();
+  protected javax.swing.JButton createRightOneTouchButton();
+  protected void prepareForDragging();
+  protected void dragDividerTo(int);
+  protected void finishDraggingTo(int);
+}

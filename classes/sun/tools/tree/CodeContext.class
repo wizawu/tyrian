@@ -1,0 +1,6 @@
+Compiled from "CodeContext.java"
+class sun.tools.tree.CodeContext extends sun.tools.tree.Context {
+  sun.tools.asm.Label breakLabel;
+  sun.tools.asm.Label contLabel;
+  sun.tools.tree.CodeContext(sun.tools.tree.Context, sun.tools.tree.Node);
+}

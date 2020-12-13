@@ -1,0 +1,30 @@
+Compiled from "HTMLWriter.java"
+public class javax.swing.text.html.HTMLWriter extends javax.swing.text.AbstractWriter {
+  public javax.swing.text.html.HTMLWriter(java.io.Writer, javax.swing.text.html.HTMLDocument);
+  public javax.swing.text.html.HTMLWriter(java.io.Writer, javax.swing.text.html.HTMLDocument, int, int);
+  public void write() throws java.io.IOException, javax.swing.text.BadLocationException;
+  protected void writeAttributes(javax.swing.text.AttributeSet) throws java.io.IOException;
+  protected void emptyTag(javax.swing.text.Element) throws javax.swing.text.BadLocationException, java.io.IOException;
+  protected boolean isBlockTag(javax.swing.text.AttributeSet);
+  protected void startTag(javax.swing.text.Element) throws java.io.IOException, javax.swing.text.BadLocationException;
+  protected void textAreaContent(javax.swing.text.AttributeSet) throws javax.swing.text.BadLocationException, java.io.IOException;
+  protected void text(javax.swing.text.Element) throws javax.swing.text.BadLocationException, java.io.IOException;
+  protected void selectContent(javax.swing.text.AttributeSet) throws java.io.IOException;
+  protected void writeOption(javax.swing.text.html.Option) throws java.io.IOException;
+  protected void endTag(javax.swing.text.Element) throws java.io.IOException;
+  protected void comment(javax.swing.text.Element) throws javax.swing.text.BadLocationException, java.io.IOException;
+  void writeComment(java.lang.String) throws java.io.IOException;
+  void writeAdditionalComments() throws java.io.IOException;
+  protected boolean synthesizedElement(javax.swing.text.Element);
+  protected boolean matchNameAttribute(javax.swing.text.AttributeSet, javax.swing.text.html.HTML$Tag);
+  protected void writeEmbeddedTags(javax.swing.text.AttributeSet) throws java.io.IOException;
+  protected void closeOutUnwantedEmbeddedTags(javax.swing.text.AttributeSet) throws java.io.IOException;
+  void writeMaps(java.util.Enumeration<?>) throws java.io.IOException;
+  void writeStyles(javax.swing.text.html.StyleSheet) throws java.io.IOException;
+  boolean writeStyle(java.lang.String, javax.swing.text.Style, boolean) throws java.io.IOException;
+  void writeStyleStartTag() throws java.io.IOException;
+  void writeStyleEndTag() throws java.io.IOException;
+  javax.swing.text.AttributeSet convertToHTML(javax.swing.text.AttributeSet, javax.swing.text.MutableAttributeSet);
+  protected void writeLineSeparator() throws java.io.IOException;
+  protected void output(char[], int, int) throws java.io.IOException;
+}

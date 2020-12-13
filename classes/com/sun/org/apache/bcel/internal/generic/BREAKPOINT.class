@@ -1,0 +1,5 @@
+Compiled from "BREAKPOINT.java"
+public class com.sun.org.apache.bcel.internal.generic.BREAKPOINT extends com.sun.org.apache.bcel.internal.generic.Instruction {
+  public com.sun.org.apache.bcel.internal.generic.BREAKPOINT();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

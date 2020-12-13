@@ -1,0 +1,11 @@
+Compiled from "ValueFormatter.java"
+final class javax.swing.colorchooser.ValueFormatter extends javax.swing.JFormattedTextField$AbstractFormatter implements java.awt.event.FocusListener,java.lang.Runnable {
+  static void init(int, boolean, javax.swing.JFormattedTextField);
+  javax.swing.colorchooser.ValueFormatter(int, boolean);
+  public java.lang.Object stringToValue(java.lang.String) throws java.text.ParseException;
+  public java.lang.String valueToString(java.lang.Object) throws java.text.ParseException;
+  protected javax.swing.text.DocumentFilter getDocumentFilter();
+  public void focusGained(java.awt.event.FocusEvent);
+  public void focusLost(java.awt.event.FocusEvent);
+  public void run();
+}

@@ -1,0 +1,10 @@
+Compiled from "MXBeanMapping.java"
+public abstract class com.sun.jmx.mbeanserver.MXBeanMapping {
+  protected com.sun.jmx.mbeanserver.MXBeanMapping(java.lang.reflect.Type, javax.management.openmbean.OpenType<?>);
+  public final java.lang.reflect.Type getJavaType();
+  public final javax.management.openmbean.OpenType<?> getOpenType();
+  public final java.lang.Class<?> getOpenClass();
+  public abstract java.lang.Object fromOpenValue(java.lang.Object) throws java.io.InvalidObjectException;
+  public abstract java.lang.Object toOpenValue(java.lang.Object) throws javax.management.openmbean.OpenDataException;
+  public void checkReconstructible() throws java.io.InvalidObjectException;
+}

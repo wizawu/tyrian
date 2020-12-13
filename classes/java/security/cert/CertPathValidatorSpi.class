@@ -1,0 +1,6 @@
+Compiled from "CertPathValidatorSpi.java"
+public abstract class java.security.cert.CertPathValidatorSpi {
+  public java.security.cert.CertPathValidatorSpi();
+  public abstract java.security.cert.CertPathValidatorResult engineValidate(java.security.cert.CertPath, java.security.cert.CertPathParameters) throws java.security.cert.CertPathValidatorException, java.security.InvalidAlgorithmParameterException;
+  public java.security.cert.CertPathChecker engineGetRevocationChecker();
+}

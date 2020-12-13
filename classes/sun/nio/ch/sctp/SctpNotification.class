@@ -1,0 +1,5 @@
+Compiled from "SctpNotification.java"
+interface sun.nio.ch.sctp.SctpNotification extends com.sun.nio.sctp.Notification {
+  public abstract int assocId();
+  public abstract void setAssociation(com.sun.nio.sctp.Association);
+}

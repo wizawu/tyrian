@@ -1,0 +1,8 @@
+Compiled from "ShellFunctions.java"
+public final class jdk.nashorn.tools.ShellFunctions {
+  public static final java.lang.invoke.MethodHandle INPUT;
+  public static final java.lang.invoke.MethodHandle EVALINPUT;
+  public static java.lang.Object input(java.lang.Object, java.lang.Object, java.lang.Object) throws java.io.IOException;
+  public static java.lang.Object evalinput(java.lang.Object, java.lang.Object, java.lang.Object) throws java.io.IOException;
+  static {};
+}

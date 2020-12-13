@@ -1,0 +1,12 @@
+Compiled from "ImageConsumerQueue.java"
+class sun.awt.image.ImageConsumerQueue {
+  sun.awt.image.ImageConsumerQueue next;
+  java.awt.image.ImageConsumer consumer;
+  boolean interested;
+  java.lang.Object securityContext;
+  boolean secure;
+  static sun.awt.image.ImageConsumerQueue removeConsumer(sun.awt.image.ImageConsumerQueue, java.awt.image.ImageConsumer, boolean);
+  static boolean isConsumer(sun.awt.image.ImageConsumerQueue, java.awt.image.ImageConsumer);
+  sun.awt.image.ImageConsumerQueue(sun.awt.image.InputStreamImageSource, java.awt.image.ImageConsumer);
+  public java.lang.String toString();
+}

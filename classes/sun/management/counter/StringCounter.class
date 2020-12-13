@@ -1,0 +1,4 @@
+Compiled from "StringCounter.java"
+public interface sun.management.counter.StringCounter extends sun.management.counter.Counter {
+  public abstract java.lang.String stringValue();
+}

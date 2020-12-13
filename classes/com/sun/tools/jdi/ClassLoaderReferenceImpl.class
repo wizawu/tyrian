@@ -1,0 +1,10 @@
+Compiled from "ClassLoaderReferenceImpl.java"
+public class com.sun.tools.jdi.ClassLoaderReferenceImpl extends com.sun.tools.jdi.ObjectReferenceImpl implements com.sun.jdi.ClassLoaderReference {
+  protected com.sun.tools.jdi.ObjectReferenceImpl$Cache newCache();
+  com.sun.tools.jdi.ClassLoaderReferenceImpl(com.sun.jdi.VirtualMachine, long);
+  protected java.lang.String description();
+  public java.util.List<com.sun.jdi.ReferenceType> definedClasses();
+  public java.util.List<com.sun.jdi.ReferenceType> visibleClasses();
+  com.sun.jdi.Type findType(java.lang.String) throws com.sun.jdi.ClassNotLoadedException;
+  byte typeValueKey();
+}

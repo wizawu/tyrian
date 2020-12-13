@@ -1,0 +1,28 @@
+Compiled from "TagletWriter.java"
+public abstract class jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter {
+  protected final boolean isFirstSentence;
+  protected jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter(boolean);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getOutputInstance();
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content codeTagOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content indexTagOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content getDocRootOutput();
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content deprecatedTagOutput(javax.lang.model.element.Element);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content literalTagOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content getParamHeader(java.lang.String);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content paramTagOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree, java.lang.String);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content propertyTagOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree, java.lang.String);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content returnTagOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content seeTagOutput(javax.lang.model.element.Element, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content simpleTagOutput(javax.lang.model.element.Element, java.util.List<? extends com.sun.source.doctree.DocTree>, java.lang.String);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content simpleTagOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree, java.lang.String);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content getThrowsHeader();
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content throwsTagOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content throwsTagOutput(javax.lang.model.type.TypeMirror);
+  protected abstract jdk.javadoc.internal.doclets.toolkit.Content valueTagOutput(javax.lang.model.element.VariableElement, java.lang.String, boolean);
+  public static void genTagOutput(jdk.javadoc.internal.doclets.toolkit.taglets.TagletManager, javax.lang.model.element.Element, java.util.List<jdk.javadoc.internal.doclets.toolkit.taglets.Taglet>, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter, jdk.javadoc.internal.doclets.toolkit.Content);
+  public static jdk.javadoc.internal.doclets.toolkit.Content getInlineTagOutput(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.taglets.TagletManager, com.sun.source.doctree.DocTree, com.sun.source.doctree.DocTree, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content commentTagsToOutput(com.sun.source.doctree.DocTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content commentTagsToOutput(javax.lang.model.element.Element, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content commentTagsToOutput(com.sun.source.doctree.DocTree, javax.lang.model.element.Element, java.util.List<? extends com.sun.source.doctree.DocTree>, boolean);
+  public abstract jdk.javadoc.internal.doclets.toolkit.BaseConfiguration configuration();
+}

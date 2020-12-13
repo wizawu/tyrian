@@ -1,0 +1,8 @@
+Compiled from "TextEvent.java"
+public class java.awt.event.TextEvent extends java.awt.AWTEvent {
+  public static final int TEXT_FIRST;
+  public static final int TEXT_LAST;
+  public static final int TEXT_VALUE_CHANGED;
+  public java.awt.event.TextEvent(java.lang.Object, int);
+  public java.lang.String paramString();
+}

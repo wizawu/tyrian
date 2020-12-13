@@ -1,0 +1,9 @@
+Compiled from "AccessMode.java"
+public final class java.nio.file.AccessMode extends java.lang.Enum<java.nio.file.AccessMode> {
+  public static final java.nio.file.AccessMode READ;
+  public static final java.nio.file.AccessMode WRITE;
+  public static final java.nio.file.AccessMode EXECUTE;
+  public static java.nio.file.AccessMode[] values();
+  public static java.nio.file.AccessMode valueOf(java.lang.String);
+  static {};
+}

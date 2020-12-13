@@ -1,0 +1,9 @@
+Compiled from "Annotation.java"
+public class com.sun.tools.classfile.Annotation {
+  public final int type_index;
+  public final int num_element_value_pairs;
+  public final com.sun.tools.classfile.Annotation$element_value_pair[] element_value_pairs;
+  com.sun.tools.classfile.Annotation(com.sun.tools.classfile.ClassReader) throws java.io.IOException, com.sun.tools.classfile.Annotation$InvalidAnnotation;
+  public com.sun.tools.classfile.Annotation(com.sun.tools.classfile.ConstantPool, int, com.sun.tools.classfile.Annotation$element_value_pair[]);
+  public int length();
+}

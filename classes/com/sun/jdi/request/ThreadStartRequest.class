@@ -1,0 +1,4 @@
+Compiled from "ThreadStartRequest.java"
+public interface com.sun.jdi.request.ThreadStartRequest extends com.sun.jdi.request.EventRequest {
+  public abstract void addThreadFilter(com.sun.jdi.ThreadReference);
+}

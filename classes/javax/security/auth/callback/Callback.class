@@ -1,0 +1,3 @@
+Compiled from "Callback.java"
+public interface javax.security.auth.callback.Callback {
+}

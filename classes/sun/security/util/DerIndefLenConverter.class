@@ -1,0 +1,7 @@
+Compiled from "DerIndefLenConverter.java"
+class sun.security.util.DerIndefLenConverter {
+  static boolean isLongForm(int);
+  sun.security.util.DerIndefLenConverter();
+  static boolean isIndefinite(int);
+  byte[] convert(byte[]) throws java.io.IOException;
+}

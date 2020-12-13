@@ -1,0 +1,14 @@
+Compiled from "ThreadLocalAllocBuffer.java"
+public class sun.jvm.hotspot.runtime.ThreadLocalAllocBuffer extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.runtime.ThreadLocalAllocBuffer(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address start();
+  public sun.jvm.hotspot.debugger.Address end();
+  public sun.jvm.hotspot.debugger.Address top();
+  public sun.jvm.hotspot.debugger.Address hardEnd();
+  public sun.jvm.hotspot.debugger.OopHandle startAsOopHandle();
+  public sun.jvm.hotspot.debugger.OopHandle nextOopHandle(sun.jvm.hotspot.debugger.OopHandle, long);
+  public void print();
+  public boolean contains(sun.jvm.hotspot.debugger.Address);
+  public void printOn(java.io.PrintStream);
+  static {};
+}

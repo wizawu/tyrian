@@ -1,0 +1,4 @@
+Compiled from "JdpPacket.java"
+public interface sun.management.jdp.JdpPacket {
+  public abstract byte[] getPacketData() throws java.io.IOException;
+}

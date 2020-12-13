@@ -1,0 +1,10 @@
+Compiled from "FloatConsts.java"
+public class jdk.internal.math.FloatConsts {
+  public static final int SIGNIFICAND_WIDTH;
+  public static final int MIN_SUB_EXPONENT;
+  public static final int EXP_BIAS;
+  public static final int SIGN_BIT_MASK;
+  public static final int EXP_BIT_MASK;
+  public static final int SIGNIF_BIT_MASK;
+  static {};
+}

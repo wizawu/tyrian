@@ -1,0 +1,5 @@
+Compiled from "PackageTree.java"
+public interface com.sun.source.tree.PackageTree extends com.sun.source.tree.Tree {
+  public abstract java.util.List<? extends com.sun.source.tree.AnnotationTree> getAnnotations();
+  public abstract com.sun.source.tree.ExpressionTree getPackageName();
+}

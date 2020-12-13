@@ -1,0 +1,11 @@
+Compiled from "CK_ECDH2_DERIVE_PARAMS.java"
+public class sun.security.pkcs11.wrapper.CK_ECDH2_DERIVE_PARAMS {
+  public long kdf;
+  public byte[] pSharedData;
+  public byte[] pPublicData;
+  public long ulPrivateDataLen;
+  public long hPrivateData;
+  public byte[] pPublicData2;
+  public sun.security.pkcs11.wrapper.CK_ECDH2_DERIVE_PARAMS();
+  public java.lang.String toString();
+}

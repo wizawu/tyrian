@@ -1,0 +1,4 @@
+Compiled from "PropertyChangeListener.java"
+public interface java.beans.PropertyChangeListener extends java.util.EventListener {
+  public abstract void propertyChange(java.beans.PropertyChangeEvent);
+}

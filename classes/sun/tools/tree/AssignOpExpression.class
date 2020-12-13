@@ -1,0 +1,17 @@
+Compiled from "AssignOpExpression.java"
+public abstract class sun.tools.tree.AssignOpExpression extends sun.tools.tree.BinaryAssignExpression {
+  protected sun.tools.java.Type itype;
+  final int NOINC;
+  protected sun.tools.tree.FieldUpdater updater;
+  public sun.tools.tree.AssignOpExpression(int, long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  final void selectType(sun.tools.java.Environment, sun.tools.tree.Context, int);
+  int getIncrement();
+  public sun.tools.tree.Vset checkValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public sun.tools.tree.Expression inlineValue(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Expression copyInline(sun.tools.tree.Context);
+  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
+  void code(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler, boolean);
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public void code(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public void print(java.io.PrintStream);
+}

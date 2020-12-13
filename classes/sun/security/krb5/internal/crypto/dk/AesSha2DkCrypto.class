@@ -1,0 +1,18 @@
+Compiled from "AesSha2DkCrypto.java"
+public class sun.security.krb5.internal.crypto.dk.AesSha2DkCrypto extends sun.security.krb5.internal.crypto.dk.DkCrypto {
+  public sun.security.krb5.internal.crypto.dk.AesSha2DkCrypto(int);
+  protected int getKeySeedLength();
+  public byte[] stringToKey(char[], java.lang.String, byte[]) throws java.security.GeneralSecurityException;
+  protected byte[] randomToKey(byte[]);
+  protected byte[] dr(byte[], byte[]) throws java.security.GeneralSecurityException;
+  protected javax.crypto.Cipher getCipher(byte[], byte[], int) throws java.security.GeneralSecurityException;
+  public int getChecksumLength();
+  protected byte[] getHmac(byte[], byte[]) throws java.security.GeneralSecurityException;
+  public byte[] calculateChecksum(byte[], int, byte[], int, int) throws java.security.GeneralSecurityException;
+  public byte[] encrypt(byte[], int, byte[], byte[], byte[], int, int) throws java.security.GeneralSecurityException, sun.security.krb5.KrbCryptoException;
+  public byte[] encryptRaw(byte[], int, byte[], byte[], int, int) throws java.security.GeneralSecurityException, sun.security.krb5.KrbCryptoException;
+  public byte[] decrypt(byte[], int, byte[], byte[], int, int) throws java.security.GeneralSecurityException;
+  public byte[] decryptRaw(byte[], int, byte[], byte[], int, int) throws java.security.GeneralSecurityException;
+  public static final int readBigEndian(byte[], int, int);
+  static {};
+}

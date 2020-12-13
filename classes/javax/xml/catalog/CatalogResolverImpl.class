@@ -1,0 +1,11 @@
+Compiled from "CatalogResolverImpl.java"
+final class javax.xml.catalog.CatalogResolverImpl implements javax.xml.catalog.CatalogResolver {
+  javax.xml.catalog.Catalog catalog;
+  javax.xml.catalog.CatalogResolverImpl entityResolver;
+  public javax.xml.catalog.CatalogResolverImpl(javax.xml.catalog.Catalog);
+  public org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String);
+  public javax.xml.transform.Source resolve(java.lang.String, java.lang.String);
+  public java.io.InputStream resolveEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public org.w3c.dom.ls.LSInput resolveResource(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public java.lang.Object resolveEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+}

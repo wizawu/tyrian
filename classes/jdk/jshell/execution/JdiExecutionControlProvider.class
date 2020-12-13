@@ -1,0 +1,11 @@
+Compiled from "JdiExecutionControlProvider.java"
+public class jdk.jshell.execution.JdiExecutionControlProvider implements jdk.jshell.spi.ExecutionControlProvider {
+  public static final java.lang.String PARAM_REMOTE_AGENT;
+  public static final java.lang.String PARAM_TIMEOUT;
+  public static final java.lang.String PARAM_HOST_NAME;
+  public static final java.lang.String PARAM_LAUNCH;
+  public jdk.jshell.execution.JdiExecutionControlProvider();
+  public java.lang.String name();
+  public java.util.Map<java.lang.String, java.lang.String> defaultParameters();
+  public jdk.jshell.spi.ExecutionControl generate(jdk.jshell.spi.ExecutionEnv, java.util.Map<java.lang.String, java.lang.String>) throws java.io.IOException;
+}

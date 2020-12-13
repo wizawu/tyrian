@@ -1,0 +1,9 @@
+Compiled from "MXBeanSupport.java"
+public class com.sun.jmx.mbeanserver.MXBeanSupport extends com.sun.jmx.mbeanserver.MBeanSupport<com.sun.jmx.mbeanserver.ConvertingMethod> {
+  public <T> com.sun.jmx.mbeanserver.MXBeanSupport(T, java.lang.Class<T>) throws javax.management.NotCompliantMBeanException;
+  com.sun.jmx.mbeanserver.MBeanIntrospector<com.sun.jmx.mbeanserver.ConvertingMethod> getMBeanIntrospector();
+  java.lang.Object getCookie();
+  static <T> java.lang.Class<? super T> findMXBeanInterface(java.lang.Class<T>);
+  public void register(javax.management.MBeanServer, javax.management.ObjectName) throws javax.management.InstanceAlreadyExistsException;
+  public void unregister();
+}

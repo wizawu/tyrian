@@ -1,0 +1,6 @@
+Compiled from "CompoundControl.java"
+public abstract class javax.sound.sampled.CompoundControl extends javax.sound.sampled.Control {
+  protected javax.sound.sampled.CompoundControl(javax.sound.sampled.CompoundControl$Type, javax.sound.sampled.Control[]);
+  public javax.sound.sampled.Control[] getMemberControls();
+  public java.lang.String toString();
+}

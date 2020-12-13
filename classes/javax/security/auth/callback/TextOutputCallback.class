@@ -1,0 +1,9 @@
+Compiled from "TextOutputCallback.java"
+public class javax.security.auth.callback.TextOutputCallback implements javax.security.auth.callback.Callback,java.io.Serializable {
+  public static final int INFORMATION;
+  public static final int WARNING;
+  public static final int ERROR;
+  public javax.security.auth.callback.TextOutputCallback(int, java.lang.String);
+  public int getMessageType();
+  public java.lang.String getMessage();
+}

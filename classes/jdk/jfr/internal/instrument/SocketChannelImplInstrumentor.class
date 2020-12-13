@@ -1,0 +1,7 @@
+Compiled from "SocketChannelImplInstrumentor.java"
+final class jdk.jfr.internal.instrument.SocketChannelImplInstrumentor {
+  public int read(java.nio.ByteBuffer) throws java.io.IOException;
+  public long read(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  public int write(java.nio.ByteBuffer) throws java.io.IOException;
+  public long write(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+}

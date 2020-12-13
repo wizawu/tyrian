@@ -1,0 +1,5 @@
+Compiled from "VMListener.java"
+interface com.sun.tools.jdi.VMListener extends java.util.EventListener {
+  public abstract boolean vmSuspended(com.sun.tools.jdi.VMAction);
+  public abstract boolean vmNotSuspended(com.sun.tools.jdi.VMAction);
+}

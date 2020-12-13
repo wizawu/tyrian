@@ -1,0 +1,25 @@
+Compiled from "ReceiverTypeData.java"
+public class sun.jvm.hotspot.oops.ReceiverTypeData<K, M> extends sun.jvm.hotspot.oops.CounterData {
+  static final int INCLUDE_JVMCI;
+  static final int nonProfiledCountOffset;
+  static final int receiver0Offset;
+  static final int count0Offset;
+  static final int receiverTypeRowCellCount;
+  final sun.jvm.hotspot.oops.MethodDataInterface<K, M> methodData;
+  public sun.jvm.hotspot.oops.ReceiverTypeData(sun.jvm.hotspot.oops.MethodDataInterface<K, M>, sun.jvm.hotspot.oops.DataLayout);
+  boolean isReceivertypedata();
+  static int staticCellCount();
+  public int cellCount();
+  public static int rowLimit();
+  public static int receiverCellIndex(int);
+  public static int receiverCountCellIndex(int);
+  K receiverUnchecked(int);
+  public K receiver(int);
+  public int receiverCount(int);
+  static int receiverOffset(int);
+  static int receiverCountOffset(int);
+  static int receiverTypeDataSize();
+  void printReceiverDataOn(java.io.PrintStream);
+  public void printDataOn(java.io.PrintStream);
+  static {};
+}

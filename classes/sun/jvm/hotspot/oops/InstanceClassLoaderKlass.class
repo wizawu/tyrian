@@ -1,0 +1,5 @@
+Compiled from "InstanceClassLoaderKlass.java"
+public class sun.jvm.hotspot.oops.InstanceClassLoaderKlass extends sun.jvm.hotspot.oops.InstanceKlass {
+  public sun.jvm.hotspot.oops.InstanceClassLoaderKlass(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

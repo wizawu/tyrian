@@ -1,0 +1,17 @@
+Compiled from "XMLSchemaDescription.java"
+public interface com.sun.org.apache.xerces.internal.xni.grammars.XMLSchemaDescription extends com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription {
+  public static final short CONTEXT_INCLUDE;
+  public static final short CONTEXT_REDEFINE;
+  public static final short CONTEXT_IMPORT;
+  public static final short CONTEXT_PREPARSE;
+  public static final short CONTEXT_INSTANCE;
+  public static final short CONTEXT_ELEMENT;
+  public static final short CONTEXT_ATTRIBUTE;
+  public static final short CONTEXT_XSITYPE;
+  public abstract short getContextType();
+  public abstract java.lang.String getTargetNamespace();
+  public abstract java.lang.String[] getLocationHints();
+  public abstract com.sun.org.apache.xerces.internal.xni.QName getTriggeringComponent();
+  public abstract com.sun.org.apache.xerces.internal.xni.QName getEnclosingElementName();
+  public abstract com.sun.org.apache.xerces.internal.xni.XMLAttributes getAttributes();
+}

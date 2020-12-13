@@ -1,0 +1,7 @@
+Compiled from "AccessibleAttributeSequence.java"
+public class javax.accessibility.AccessibleAttributeSequence {
+  public int startIndex;
+  public int endIndex;
+  public javax.swing.text.AttributeSet attributes;
+  public javax.accessibility.AccessibleAttributeSequence(int, int, javax.swing.text.AttributeSet);
+}

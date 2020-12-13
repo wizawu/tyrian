@@ -1,0 +1,6 @@
+Compiled from "SigningCertificateInfo.java"
+public class sun.security.pkcs.SigningCertificateInfo {
+  public sun.security.pkcs.SigningCertificateInfo(byte[]) throws java.io.IOException;
+  public java.lang.String toString();
+  public void parse(byte[]) throws java.io.IOException;
+}

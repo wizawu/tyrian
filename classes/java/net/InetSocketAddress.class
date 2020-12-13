@@ -1,0 +1,16 @@
+Compiled from "InetSocketAddress.java"
+public class java.net.InetSocketAddress extends java.net.SocketAddress {
+  public java.net.InetSocketAddress(int);
+  public java.net.InetSocketAddress(java.net.InetAddress, int);
+  public java.net.InetSocketAddress(java.lang.String, int);
+  public static java.net.InetSocketAddress createUnresolved(java.lang.String, int);
+  public final int getPort();
+  public final java.net.InetAddress getAddress();
+  public final java.lang.String getHostName();
+  public final java.lang.String getHostString();
+  public final boolean isUnresolved();
+  public java.lang.String toString();
+  public final boolean equals(java.lang.Object);
+  public final int hashCode();
+  static {};
+}

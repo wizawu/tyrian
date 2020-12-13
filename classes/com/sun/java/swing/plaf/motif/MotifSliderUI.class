@@ -1,0 +1,18 @@
+Compiled from "MotifSliderUI.java"
+public class com.sun.java.swing.plaf.motif.MotifSliderUI extends javax.swing.plaf.basic.BasicSliderUI {
+  static final java.awt.Dimension PREFERRED_HORIZONTAL_SIZE;
+  static final java.awt.Dimension PREFERRED_VERTICAL_SIZE;
+  static final java.awt.Dimension MINIMUM_HORIZONTAL_SIZE;
+  static final java.awt.Dimension MINIMUM_VERTICAL_SIZE;
+  public com.sun.java.swing.plaf.motif.MotifSliderUI(javax.swing.JSlider);
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public java.awt.Dimension getPreferredHorizontalSize();
+  public java.awt.Dimension getPreferredVerticalSize();
+  public java.awt.Dimension getMinimumHorizontalSize();
+  public java.awt.Dimension getMinimumVerticalSize();
+  protected java.awt.Dimension getThumbSize();
+  public void paintFocus(java.awt.Graphics);
+  public void paintTrack(java.awt.Graphics);
+  public void paintThumb(java.awt.Graphics);
+  static {};
+}

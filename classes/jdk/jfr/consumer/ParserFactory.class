@@ -1,0 +1,7 @@
+Compiled from "ParserFactory.java"
+final class jdk.jfr.consumer.ParserFactory {
+  public jdk.jfr.consumer.ParserFactory(jdk.jfr.internal.MetadataDescriptor, jdk.jfr.consumer.TimeConverter) throws java.io.IOException;
+  public jdk.jfr.consumer.LongMap<jdk.jfr.consumer.Parser> getParsers();
+  public jdk.jfr.consumer.LongMap<jdk.jfr.consumer.ConstantMap> getConstantPools();
+  public jdk.jfr.consumer.LongMap<jdk.jfr.internal.Type> getTypeMap();
+}

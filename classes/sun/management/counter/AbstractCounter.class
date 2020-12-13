@@ -1,0 +1,19 @@
+Compiled from "AbstractCounter.java"
+public abstract class sun.management.counter.AbstractCounter implements sun.management.counter.Counter {
+  java.lang.String name;
+  sun.management.counter.Units units;
+  sun.management.counter.Variability variability;
+  int flags;
+  int vectorLength;
+  protected sun.management.counter.AbstractCounter(java.lang.String, sun.management.counter.Units, sun.management.counter.Variability, int, int);
+  protected sun.management.counter.AbstractCounter(java.lang.String, sun.management.counter.Units, sun.management.counter.Variability, int);
+  public java.lang.String getName();
+  public sun.management.counter.Units getUnits();
+  public sun.management.counter.Variability getVariability();
+  public boolean isVector();
+  public int getVectorLength();
+  public boolean isInternal();
+  public int getFlags();
+  public abstract java.lang.Object getValue();
+  public java.lang.String toString();
+}

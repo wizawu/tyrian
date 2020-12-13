@@ -1,0 +1,10 @@
+Compiled from "FactoryFinder.java"
+class javax.xml.parsers.FactoryFinder {
+  static volatile boolean firstTime;
+  static final boolean $assertionsDisabled;
+  javax.xml.parsers.FactoryFinder();
+  static <T> T newInstance(java.lang.Class<T>, java.lang.String, java.lang.ClassLoader, boolean) throws javax.xml.parsers.FactoryConfigurationError;
+  static <T> T newInstance(java.lang.Class<T>, java.lang.String, java.lang.ClassLoader, boolean, boolean) throws javax.xml.parsers.FactoryConfigurationError;
+  static <T> T find(java.lang.Class<T>, java.lang.String) throws javax.xml.parsers.FactoryConfigurationError;
+  static {};
+}

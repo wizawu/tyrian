@@ -1,0 +1,13 @@
+Compiled from "ConstantString.java"
+public final class com.sun.org.apache.bcel.internal.classfile.ConstantString extends com.sun.org.apache.bcel.internal.classfile.Constant implements com.sun.org.apache.bcel.internal.classfile.ConstantObject {
+  public com.sun.org.apache.bcel.internal.classfile.ConstantString(com.sun.org.apache.bcel.internal.classfile.ConstantString);
+  com.sun.org.apache.bcel.internal.classfile.ConstantString(java.io.DataInput) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.ConstantString(int);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final int getStringIndex();
+  public final void setStringIndex(int);
+  public final java.lang.String toString();
+  public java.lang.Object getConstantValue(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public java.lang.String getBytes(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+}

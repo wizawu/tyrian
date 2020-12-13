@@ -1,0 +1,6 @@
+Compiled from "EventClassBuilder.java"
+public final class jdk.jfr.internal.EventClassBuilder {
+  public jdk.jfr.internal.EventClassBuilder(java.util.List<jdk.jfr.AnnotationElement>, java.util.List<jdk.jfr.ValueDescriptor>);
+  public java.lang.Class<? extends jdk.jfr.Event> build();
+  static {};
+}

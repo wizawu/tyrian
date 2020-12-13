@@ -1,0 +1,4 @@
+Compiled from "OwnershipListener.java"
+interface sun.awt.X11.OwnershipListener {
+  public abstract void ownershipChanged(boolean);
+}

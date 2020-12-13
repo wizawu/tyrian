@@ -1,0 +1,5 @@
+Compiled from "AltPlatformInfo.java"
+public interface sun.jvm.hotspot.utilities.AltPlatformInfo {
+  public abstract boolean knownCPU(java.lang.String);
+  public abstract java.lang.String getCPU(java.lang.String);
+}

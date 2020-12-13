@@ -1,0 +1,6 @@
+Compiled from "AstSerializer.java"
+final class jdk.nashorn.internal.runtime.AstSerializer {
+  jdk.nashorn.internal.runtime.AstSerializer();
+  static byte[] serialize(jdk.nashorn.internal.ir.FunctionNode);
+  static {};
+}

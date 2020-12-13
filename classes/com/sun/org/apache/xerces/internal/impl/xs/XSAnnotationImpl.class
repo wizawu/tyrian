@@ -1,0 +1,10 @@
+Compiled from "XSAnnotationImpl.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.XSAnnotationImpl implements com.sun.org.apache.xerces.internal.xs.XSAnnotation {
+  public com.sun.org.apache.xerces.internal.impl.xs.XSAnnotationImpl(java.lang.String, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
+  public boolean writeAnnotation(java.lang.Object, short);
+  public java.lang.String getAnnotationString();
+  public short getType();
+  public java.lang.String getName();
+  public java.lang.String getNamespace();
+  public com.sun.org.apache.xerces.internal.xs.XSNamespaceItem getNamespaceItem();
+}

@@ -1,0 +1,11 @@
+Compiled from "LinuxThread.java"
+class sun.jvm.hotspot.debugger.linux.LinuxThread implements sun.jvm.hotspot.debugger.ThreadProxy {
+  sun.jvm.hotspot.debugger.linux.LinuxThread(sun.jvm.hotspot.debugger.linux.LinuxDebugger, sun.jvm.hotspot.debugger.Address);
+  sun.jvm.hotspot.debugger.linux.LinuxThread(sun.jvm.hotspot.debugger.linux.LinuxDebugger, long);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public sun.jvm.hotspot.debugger.ThreadContext getContext() throws java.lang.IllegalThreadStateException;
+  public boolean canSetContext() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public void setContext(sun.jvm.hotspot.debugger.ThreadContext) throws java.lang.IllegalThreadStateException, sun.jvm.hotspot.debugger.DebuggerException;
+}

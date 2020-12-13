@@ -1,0 +1,31 @@
+Compiled from "DTMIterator.java"
+public interface com.sun.org.apache.xml.internal.dtm.DTMIterator {
+  public static final short FILTER_ACCEPT;
+  public static final short FILTER_REJECT;
+  public static final short FILTER_SKIP;
+  public abstract com.sun.org.apache.xml.internal.dtm.DTM getDTM(int);
+  public abstract com.sun.org.apache.xml.internal.dtm.DTMManager getDTMManager();
+  public abstract int getRoot();
+  public abstract void setRoot(int, java.lang.Object);
+  public abstract void reset();
+  public abstract int getWhatToShow();
+  public abstract boolean getExpandEntityReferences();
+  public abstract int nextNode();
+  public abstract int previousNode();
+  public abstract void detach();
+  public abstract void allowDetachToRelease(boolean);
+  public abstract int getCurrentNode();
+  public abstract boolean isFresh();
+  public abstract void setShouldCacheNodes(boolean);
+  public abstract boolean isMutable();
+  public abstract int getCurrentPos();
+  public abstract void runTo(int);
+  public abstract void setCurrentPos(int);
+  public abstract int item(int);
+  public abstract void setItem(int, int);
+  public abstract int getLength();
+  public abstract com.sun.org.apache.xml.internal.dtm.DTMIterator cloneWithReset() throws java.lang.CloneNotSupportedException;
+  public abstract java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  public abstract boolean isDocOrdered();
+  public abstract int getAxis();
+}

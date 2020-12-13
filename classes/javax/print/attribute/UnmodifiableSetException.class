@@ -1,0 +1,5 @@
+Compiled from "UnmodifiableSetException.java"
+public class javax.print.attribute.UnmodifiableSetException extends java.lang.RuntimeException {
+  public javax.print.attribute.UnmodifiableSetException();
+  public javax.print.attribute.UnmodifiableSetException(java.lang.String);
+}

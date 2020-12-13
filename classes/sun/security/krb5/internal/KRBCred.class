@@ -1,0 +1,9 @@
+Compiled from "KRBCred.java"
+public class sun.security.krb5.internal.KRBCred {
+  public sun.security.krb5.internal.Ticket[] tickets;
+  public sun.security.krb5.EncryptedData encPart;
+  public sun.security.krb5.internal.KRBCred(sun.security.krb5.internal.Ticket[], sun.security.krb5.EncryptedData) throws java.io.IOException;
+  public sun.security.krb5.internal.KRBCred(byte[]) throws sun.security.krb5.Asn1Exception, sun.security.krb5.RealmException, sun.security.krb5.internal.KrbApErrException, java.io.IOException;
+  public sun.security.krb5.internal.KRBCred(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, sun.security.krb5.RealmException, sun.security.krb5.internal.KrbApErrException, java.io.IOException;
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+}

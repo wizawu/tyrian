@@ -1,0 +1,11 @@
+Compiled from "XPathExpression.java"
+public interface javax.xml.xpath.XPathExpression {
+  public abstract java.lang.Object evaluate(java.lang.Object, javax.xml.namespace.QName) throws javax.xml.xpath.XPathExpressionException;
+  public abstract java.lang.String evaluate(java.lang.Object) throws javax.xml.xpath.XPathExpressionException;
+  public abstract java.lang.Object evaluate(org.xml.sax.InputSource, javax.xml.namespace.QName) throws javax.xml.xpath.XPathExpressionException;
+  public abstract java.lang.String evaluate(org.xml.sax.InputSource) throws javax.xml.xpath.XPathExpressionException;
+  public default <T> T evaluateExpression(java.lang.Object, java.lang.Class<T>) throws javax.xml.xpath.XPathExpressionException;
+  public default javax.xml.xpath.XPathEvaluationResult<?> evaluateExpression(java.lang.Object) throws javax.xml.xpath.XPathExpressionException;
+  public default <T> T evaluateExpression(org.xml.sax.InputSource, java.lang.Class<T>) throws javax.xml.xpath.XPathExpressionException;
+  public default javax.xml.xpath.XPathEvaluationResult<?> evaluateExpression(org.xml.sax.InputSource) throws javax.xml.xpath.XPathExpressionException;
+}

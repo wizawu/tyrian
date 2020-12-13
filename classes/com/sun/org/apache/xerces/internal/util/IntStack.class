@@ -1,0 +1,11 @@
+Compiled from "IntStack.java"
+public final class com.sun.org.apache.xerces.internal.util.IntStack {
+  public com.sun.org.apache.xerces.internal.util.IntStack();
+  public int size();
+  public void push(int);
+  public int peek();
+  public int elementAt(int);
+  public int pop();
+  public void clear();
+  public void print();
+}

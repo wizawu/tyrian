@@ -1,0 +1,9 @@
+Compiled from "CustomStringPool.java"
+public class com.sun.org.apache.xml.internal.dtm.ref.CustomStringPool extends com.sun.org.apache.xml.internal.dtm.ref.DTMStringPool {
+  final java.util.Map<java.lang.String, java.lang.Integer> m_stringToInt;
+  public static final int NULL;
+  public com.sun.org.apache.xml.internal.dtm.ref.CustomStringPool();
+  public void removeAllElements();
+  public java.lang.String indexToString(int) throws java.lang.IndexOutOfBoundsException;
+  public int stringToIndex(java.lang.String);
+}

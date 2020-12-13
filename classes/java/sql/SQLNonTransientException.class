@@ -1,0 +1,11 @@
+Compiled from "SQLNonTransientException.java"
+public class java.sql.SQLNonTransientException extends java.sql.SQLException {
+  public java.sql.SQLNonTransientException();
+  public java.sql.SQLNonTransientException(java.lang.String);
+  public java.sql.SQLNonTransientException(java.lang.String, java.lang.String);
+  public java.sql.SQLNonTransientException(java.lang.String, java.lang.String, int);
+  public java.sql.SQLNonTransientException(java.lang.Throwable);
+  public java.sql.SQLNonTransientException(java.lang.String, java.lang.Throwable);
+  public java.sql.SQLNonTransientException(java.lang.String, java.lang.String, java.lang.Throwable);
+  public java.sql.SQLNonTransientException(java.lang.String, java.lang.String, int, java.lang.Throwable);
+}

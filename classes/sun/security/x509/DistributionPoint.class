@@ -1,0 +1,23 @@
+Compiled from "DistributionPoint.java"
+public class sun.security.x509.DistributionPoint {
+  public static final int KEY_COMPROMISE;
+  public static final int CA_COMPROMISE;
+  public static final int AFFILIATION_CHANGED;
+  public static final int SUPERSEDED;
+  public static final int CESSATION_OF_OPERATION;
+  public static final int CERTIFICATE_HOLD;
+  public static final int PRIVILEGE_WITHDRAWN;
+  public static final int AA_COMPROMISE;
+  public sun.security.x509.DistributionPoint(sun.security.x509.GeneralNames, boolean[], sun.security.x509.GeneralNames);
+  public sun.security.x509.DistributionPoint(sun.security.x509.RDN, boolean[], sun.security.x509.GeneralNames);
+  public sun.security.x509.DistributionPoint(sun.security.util.DerValue) throws java.io.IOException;
+  public sun.security.x509.GeneralNames getFullName();
+  public sun.security.x509.RDN getRelativeName();
+  public boolean[] getReasonFlags();
+  public sun.security.x509.GeneralNames getCRLIssuer();
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  static {};
+}

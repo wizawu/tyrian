@@ -1,0 +1,34 @@
+Compiled from "SynthScrollBarUI.java"
+public class javax.swing.plaf.synth.SynthScrollBarUI extends javax.swing.plaf.basic.BasicScrollBarUI implements java.beans.PropertyChangeListener,javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthScrollBarUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void configureScrollBarColors();
+  protected void installListeners();
+  protected void uninstallListeners();
+  protected void uninstallDefaults();
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  public boolean getSupportsAbsolutePositioning();
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  protected void paintTrack(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, java.awt.Rectangle);
+  protected void paintThumb(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, java.awt.Rectangle);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  protected java.awt.Dimension getMinimumThumbSize();
+  protected javax.swing.JButton createDecreaseButton(int);
+  protected javax.swing.JButton createIncreaseButton(int);
+  protected void setThumbRollover(boolean);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  static int access$000(javax.swing.plaf.synth.SynthScrollBarUI);
+  static javax.swing.JScrollBar access$100(javax.swing.plaf.synth.SynthScrollBarUI);
+  static int access$200(javax.swing.plaf.synth.SynthScrollBarUI);
+  static int access$300(javax.swing.plaf.synth.SynthScrollBarUI);
+  static int access$400(javax.swing.plaf.synth.SynthScrollBarUI);
+  static javax.swing.JScrollBar access$500(javax.swing.plaf.synth.SynthScrollBarUI);
+  static int access$600(javax.swing.plaf.synth.SynthScrollBarUI);
+  static int access$700(javax.swing.plaf.synth.SynthScrollBarUI);
+  static int access$800(javax.swing.plaf.synth.SynthScrollBarUI);
+  static int access$900(javax.swing.plaf.synth.SynthScrollBarUI);
+}

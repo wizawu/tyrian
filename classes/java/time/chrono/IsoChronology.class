@@ -1,0 +1,48 @@
+Compiled from "IsoChronology.java"
+public final class java.time.chrono.IsoChronology extends java.time.chrono.AbstractChronology implements java.io.Serializable {
+  public static final java.time.chrono.IsoChronology INSTANCE;
+  public java.lang.String getId();
+  public java.lang.String getCalendarType();
+  public java.time.LocalDate date(java.time.chrono.Era, int, int, int);
+  public java.time.LocalDate date(int, int, int);
+  public java.time.LocalDate dateYearDay(java.time.chrono.Era, int, int);
+  public java.time.LocalDate dateYearDay(int, int);
+  public java.time.LocalDate dateEpochDay(long);
+  public java.time.LocalDate date(java.time.temporal.TemporalAccessor);
+  public long epochSecond(int, int, int, int, int, int, java.time.ZoneOffset);
+  public java.time.LocalDateTime localDateTime(java.time.temporal.TemporalAccessor);
+  public java.time.ZonedDateTime zonedDateTime(java.time.temporal.TemporalAccessor);
+  public java.time.ZonedDateTime zonedDateTime(java.time.Instant, java.time.ZoneId);
+  public java.time.LocalDate dateNow();
+  public java.time.LocalDate dateNow(java.time.ZoneId);
+  public java.time.LocalDate dateNow(java.time.Clock);
+  public boolean isLeapYear(long);
+  public int prolepticYear(java.time.chrono.Era, int);
+  public java.time.chrono.IsoEra eraOf(int);
+  public java.util.List<java.time.chrono.Era> eras();
+  public java.time.LocalDate resolveDate(java.util.Map<java.time.temporal.TemporalField, java.lang.Long>, java.time.format.ResolverStyle);
+  void resolveProlepticMonth(java.util.Map<java.time.temporal.TemporalField, java.lang.Long>, java.time.format.ResolverStyle);
+  java.time.LocalDate resolveYearOfEra(java.util.Map<java.time.temporal.TemporalField, java.lang.Long>, java.time.format.ResolverStyle);
+  java.time.LocalDate resolveYMD(java.util.Map<java.time.temporal.TemporalField, java.lang.Long>, java.time.format.ResolverStyle);
+  public java.time.temporal.ValueRange range(java.time.temporal.ChronoField);
+  public java.time.Period period(int, int, int);
+  java.lang.Object writeReplace();
+  java.time.chrono.ChronoLocalDate resolveYMD(java.util.Map, java.time.format.ResolverStyle);
+  java.time.chrono.ChronoLocalDate resolveYearOfEra(java.util.Map, java.time.format.ResolverStyle);
+  public java.time.chrono.ChronoLocalDate resolveDate(java.util.Map, java.time.format.ResolverStyle);
+  public java.time.chrono.ChronoPeriod period(int, int, int);
+  public java.time.chrono.Era eraOf(int);
+  public java.time.chrono.ChronoZonedDateTime zonedDateTime(java.time.Instant, java.time.ZoneId);
+  public java.time.chrono.ChronoZonedDateTime zonedDateTime(java.time.temporal.TemporalAccessor);
+  public java.time.chrono.ChronoLocalDateTime localDateTime(java.time.temporal.TemporalAccessor);
+  public java.time.chrono.ChronoLocalDate date(java.time.temporal.TemporalAccessor);
+  public java.time.chrono.ChronoLocalDate dateNow(java.time.Clock);
+  public java.time.chrono.ChronoLocalDate dateNow(java.time.ZoneId);
+  public java.time.chrono.ChronoLocalDate dateNow();
+  public java.time.chrono.ChronoLocalDate dateEpochDay(long);
+  public java.time.chrono.ChronoLocalDate dateYearDay(int, int);
+  public java.time.chrono.ChronoLocalDate dateYearDay(java.time.chrono.Era, int, int);
+  public java.time.chrono.ChronoLocalDate date(int, int, int);
+  public java.time.chrono.ChronoLocalDate date(java.time.chrono.Era, int, int, int);
+  static {};
+}

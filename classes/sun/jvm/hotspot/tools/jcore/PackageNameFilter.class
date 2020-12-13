@@ -1,0 +1,7 @@
+Compiled from "PackageNameFilter.java"
+public class sun.jvm.hotspot.tools.jcore.PackageNameFilter implements sun.jvm.hotspot.tools.jcore.ClassFilter {
+  public java.lang.Object[] pkgList;
+  public sun.jvm.hotspot.tools.jcore.PackageNameFilter();
+  public sun.jvm.hotspot.tools.jcore.PackageNameFilter(java.lang.String);
+  public boolean canInclude(sun.jvm.hotspot.oops.InstanceKlass);
+}

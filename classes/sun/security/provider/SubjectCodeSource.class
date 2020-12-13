@@ -1,0 +1,11 @@
+Compiled from "SubjectCodeSource.java"
+class sun.security.provider.SubjectCodeSource extends java.security.CodeSource implements java.io.Serializable {
+  sun.security.provider.SubjectCodeSource(javax.security.auth.Subject, java.util.LinkedList<sun.security.provider.PolicyParser$PrincipalEntry>, java.net.URL, java.security.cert.Certificate[]);
+  java.util.LinkedList<sun.security.provider.PolicyParser$PrincipalEntry> getPrincipals();
+  javax.security.auth.Subject getSubject();
+  public boolean implies(java.security.CodeSource);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  static {};
+}

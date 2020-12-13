@@ -1,0 +1,5 @@
+Compiled from "OpenDataException.java"
+public class javax.management.openmbean.OpenDataException extends javax.management.JMException {
+  public javax.management.openmbean.OpenDataException();
+  public javax.management.openmbean.OpenDataException(java.lang.String);
+}

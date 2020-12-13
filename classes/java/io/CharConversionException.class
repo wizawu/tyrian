@@ -1,0 +1,5 @@
+Compiled from "CharConversionException.java"
+public class java.io.CharConversionException extends java.io.IOException {
+  public java.io.CharConversionException();
+  public java.io.CharConversionException(java.lang.String);
+}

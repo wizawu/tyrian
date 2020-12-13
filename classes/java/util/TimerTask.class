@@ -1,0 +1,15 @@
+Compiled from "TimerTask.java"
+public abstract class java.util.TimerTask implements java.lang.Runnable {
+  final java.lang.Object lock;
+  int state;
+  static final int VIRGIN;
+  static final int SCHEDULED;
+  static final int EXECUTED;
+  static final int CANCELLED;
+  long nextExecutionTime;
+  long period;
+  protected java.util.TimerTask();
+  public abstract void run();
+  public boolean cancel();
+  public long scheduledExecutionTime();
+}

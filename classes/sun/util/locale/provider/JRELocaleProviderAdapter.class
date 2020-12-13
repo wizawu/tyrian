@@ -1,0 +1,29 @@
+Compiled from "JRELocaleProviderAdapter.java"
+public class sun.util.locale.provider.JRELocaleProviderAdapter extends sun.util.locale.provider.LocaleProviderAdapter implements sun.util.locale.provider.ResourceBundleBasedAdapter {
+  protected volatile java.util.spi.TimeZoneNameProvider timeZoneNameProvider;
+  protected volatile java.util.spi.CalendarDataProvider calendarDataProvider;
+  protected volatile java.util.spi.CalendarNameProvider calendarNameProvider;
+  public sun.util.locale.provider.JRELocaleProviderAdapter();
+  public sun.util.locale.provider.LocaleProviderAdapter$Type getAdapterType();
+  public <P extends java.util.spi.LocaleServiceProvider> P getLocaleServiceProvider(java.lang.Class<P>);
+  public java.text.spi.BreakIteratorProvider getBreakIteratorProvider();
+  public java.text.spi.CollatorProvider getCollatorProvider();
+  public java.text.spi.DateFormatProvider getDateFormatProvider();
+  public java.text.spi.DateFormatSymbolsProvider getDateFormatSymbolsProvider();
+  public java.text.spi.DecimalFormatSymbolsProvider getDecimalFormatSymbolsProvider();
+  public java.text.spi.NumberFormatProvider getNumberFormatProvider();
+  public java.util.spi.CurrencyNameProvider getCurrencyNameProvider();
+  public java.util.spi.LocaleNameProvider getLocaleNameProvider();
+  public java.util.spi.TimeZoneNameProvider getTimeZoneNameProvider();
+  public java.util.spi.CalendarDataProvider getCalendarDataProvider();
+  public java.util.spi.CalendarNameProvider getCalendarNameProvider();
+  public sun.util.spi.CalendarProvider getCalendarProvider();
+  public sun.text.spi.JavaTimeDateTimePatternProvider getJavaTimeDateTimePatternProvider();
+  public sun.util.locale.provider.LocaleResources getLocaleResources(java.util.Locale);
+  public sun.util.resources.LocaleData getLocaleData();
+  public java.util.List<java.util.Locale> getCandidateLocales(java.lang.String, java.util.Locale);
+  public java.util.Locale[] getAvailableLocales();
+  public java.util.Set<java.lang.String> getLanguageTagSet(java.lang.String);
+  protected java.util.Set<java.lang.String> createLanguageTagSet(java.lang.String);
+  public boolean isSupportedProviderLocale(java.util.Locale, java.util.Set<java.lang.String>);
+}

@@ -1,0 +1,8 @@
+Compiled from "ReplaceableString.java"
+class sun.text.normalizer.ReplaceableString implements sun.text.normalizer.Replaceable {
+  public sun.text.normalizer.ReplaceableString(java.lang.String);
+  public sun.text.normalizer.ReplaceableString(java.lang.StringBuffer);
+  public int length();
+  public char charAt(int);
+  public void getChars(int, int, char[], int);
+}

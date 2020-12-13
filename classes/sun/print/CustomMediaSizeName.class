@@ -1,0 +1,12 @@
+Compiled from "CustomMediaSizeName.java"
+class sun.print.CustomMediaSizeName extends javax.print.attribute.standard.MediaSizeName {
+  public sun.print.CustomMediaSizeName(java.lang.String);
+  public sun.print.CustomMediaSizeName(java.lang.String, java.lang.String, float, float);
+  public java.lang.String getChoiceName();
+  public javax.print.attribute.standard.MediaSizeName getStandardMedia();
+  public static javax.print.attribute.standard.MediaSizeName findMedia(javax.print.attribute.standard.Media[], float, float, int);
+  public javax.print.attribute.standard.Media[] getSuperEnumTable();
+  protected java.lang.String[] getStringTable();
+  protected javax.print.attribute.EnumSyntax[] getEnumValueTable();
+  static {};
+}

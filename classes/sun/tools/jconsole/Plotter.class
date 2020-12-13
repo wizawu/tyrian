@@ -1,0 +1,34 @@
+Compiled from "Plotter.java"
+public class sun.tools.jconsole.Plotter extends javax.swing.JComponent implements javax.accessibility.Accessible,java.awt.event.ActionListener,java.beans.PropertyChangeListener {
+  static final java.lang.String[] rangeNames;
+  static final int[] rangeValues;
+  static final long SECOND;
+  static final long MINUTE;
+  static final long HOUR;
+  static final long DAY;
+  static final java.awt.Color bgColor;
+  static final java.awt.Color defaultColor;
+  static final int ARRAY_SIZE_INCREMENT;
+  static final boolean $assertionsDisabled;
+  public sun.tools.jconsole.Plotter();
+  public sun.tools.jconsole.Plotter(sun.tools.jconsole.Plotter$Unit);
+  public sun.tools.jconsole.Plotter(sun.tools.jconsole.Plotter$Unit, int);
+  public sun.tools.jconsole.Plotter(sun.tools.jconsole.Plotter$Unit, int, boolean);
+  public void setUnit(sun.tools.jconsole.Plotter$Unit);
+  public void setDecimals(int);
+  public void createSequence(java.lang.String, java.lang.String, java.awt.Color, boolean);
+  public void setUseDashedTransitions(java.lang.String, boolean);
+  public void setIsPlotted(java.lang.String, boolean);
+  public synchronized void addValues(long, long...);
+  public int getViewRange();
+  public void setViewRange(int);
+  public javax.swing.JPopupMenu getComponentPopupMenu();
+  public void actionPerformed(java.awt.event.ActionEvent);
+  public void paintComponent(java.awt.Graphics);
+  long getValue();
+  long getLastTimeStamp();
+  long getLastValue(java.lang.String);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  static {};
+}

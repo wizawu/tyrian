@@ -1,0 +1,4 @@
+Compiled from "JavaNetUriAccess.java"
+public interface jdk.internal.misc.JavaNetUriAccess {
+  public abstract java.net.URI create(java.lang.String, java.lang.String);
+}

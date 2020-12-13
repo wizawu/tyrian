@@ -1,0 +1,9 @@
+Compiled from "CK_SESSION_INFO.java"
+public class sun.security.pkcs11.wrapper.CK_SESSION_INFO {
+  public long slotID;
+  public long state;
+  public long flags;
+  public long ulDeviceError;
+  public sun.security.pkcs11.wrapper.CK_SESSION_INFO(long, long, long, long);
+  public java.lang.String toString();
+}

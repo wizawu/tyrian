@@ -1,0 +1,11 @@
+Compiled from "RegistryImpl_Stub.java"
+public final class sun.rmi.registry.RegistryImpl_Stub extends java.rmi.server.RemoteStub implements java.rmi.registry.Registry,java.rmi.Remote {
+  public sun.rmi.registry.RegistryImpl_Stub();
+  public sun.rmi.registry.RegistryImpl_Stub(java.rmi.server.RemoteRef);
+  public void bind(java.lang.String, java.rmi.Remote) throws java.rmi.AccessException, java.rmi.AlreadyBoundException, java.rmi.RemoteException;
+  public java.lang.String[] list() throws java.rmi.AccessException, java.rmi.RemoteException;
+  public java.rmi.Remote lookup(java.lang.String) throws java.rmi.AccessException, java.rmi.NotBoundException, java.rmi.RemoteException;
+  public void rebind(java.lang.String, java.rmi.Remote) throws java.rmi.AccessException, java.rmi.RemoteException;
+  public void unbind(java.lang.String) throws java.rmi.AccessException, java.rmi.NotBoundException, java.rmi.RemoteException;
+  static {};
+}

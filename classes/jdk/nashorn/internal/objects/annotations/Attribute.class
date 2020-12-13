@@ -1,0 +1,10 @@
+Compiled from "Attribute.java"
+public interface jdk.nashorn.internal.objects.annotations.Attribute {
+  public static final int NOT_WRITABLE;
+  public static final int NOT_ENUMERABLE;
+  public static final int NOT_CONFIGURABLE;
+  public static final int IS_ACCESSOR;
+  public static final int CONSTANT;
+  public static final int NON_ENUMERABLE_CONSTANT;
+  public static final int DEFAULT_ATTRIBUTES;
+}

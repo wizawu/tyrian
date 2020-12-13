@@ -1,0 +1,11 @@
+Compiled from "Repository.java"
+public final class jdk.jfr.internal.Repository {
+  public static final java.time.format.DateTimeFormatter REPO_DATE_FORMAT;
+  public static jdk.jfr.internal.Repository getRepository();
+  public synchronized void setBasePath(jdk.jfr.internal.SecuritySupport$SafePath) throws java.lang.Exception;
+  synchronized void ensureRepository() throws java.lang.Exception;
+  synchronized jdk.jfr.internal.RepositoryChunk newChunk(java.time.Instant);
+  synchronized void clear();
+  public synchronized jdk.jfr.internal.SecuritySupport$SafePath getRepositoryPath();
+  static {};
+}

@@ -1,0 +1,24 @@
+Compiled from "Name.java"
+public abstract class com.sun.tools.javac.util.Name implements javax.lang.model.element.Name {
+  public final com.sun.tools.javac.util.Name$Table table;
+  protected com.sun.tools.javac.util.Name(com.sun.tools.javac.util.Name$Table);
+  public boolean contentEquals(java.lang.CharSequence);
+  public int length();
+  public char charAt(int);
+  public java.lang.CharSequence subSequence(int, int);
+  public com.sun.tools.javac.util.Name append(com.sun.tools.javac.util.Name);
+  public com.sun.tools.javac.util.Name append(char, com.sun.tools.javac.util.Name);
+  public int compareTo(com.sun.tools.javac.util.Name);
+  public boolean isEmpty();
+  public int lastIndexOf(byte);
+  public boolean startsWith(com.sun.tools.javac.util.Name);
+  public com.sun.tools.javac.util.Name subName(int, int);
+  public java.lang.String toString();
+  public byte[] toUtf();
+  public abstract int getIndex();
+  public abstract int getByteLength();
+  public abstract byte getByteAt(int);
+  public void getBytes(byte[], int);
+  public abstract byte[] getByteArray();
+  public abstract int getByteOffset();
+}

@@ -1,0 +1,10 @@
+Compiled from "FileLockTable.java"
+class sun.nio.ch.FileLockTable {
+  static final boolean $assertionsDisabled;
+  sun.nio.ch.FileLockTable(java.nio.channels.Channel, java.io.FileDescriptor) throws java.io.IOException;
+  void add(java.nio.channels.FileLock) throws java.nio.channels.OverlappingFileLockException;
+  void remove(java.nio.channels.FileLock);
+  java.util.List<java.nio.channels.FileLock> removeAll();
+  void replace(java.nio.channels.FileLock, java.nio.channels.FileLock);
+  static {};
+}

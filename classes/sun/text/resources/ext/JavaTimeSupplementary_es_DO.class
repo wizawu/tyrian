@@ -1,0 +1,5 @@
+Compiled from "JavaTimeSupplementary_es_DO.java"
+public class sun.text.resources.ext.JavaTimeSupplementary_es_DO extends sun.util.resources.OpenListResourceBundle {
+  public sun.text.resources.ext.JavaTimeSupplementary_es_DO();
+  protected final java.lang.Object[][] getContents();
+}

@@ -1,0 +1,9 @@
+Compiled from "ContextualRenderedImageFactory.java"
+public interface java.awt.image.renderable.ContextualRenderedImageFactory extends java.awt.image.renderable.RenderedImageFactory {
+  public abstract java.awt.image.renderable.RenderContext mapRenderContext(int, java.awt.image.renderable.RenderContext, java.awt.image.renderable.ParameterBlock, java.awt.image.renderable.RenderableImage);
+  public abstract java.awt.image.RenderedImage create(java.awt.image.renderable.RenderContext, java.awt.image.renderable.ParameterBlock);
+  public abstract java.awt.geom.Rectangle2D getBounds2D(java.awt.image.renderable.ParameterBlock);
+  public abstract java.lang.Object getProperty(java.awt.image.renderable.ParameterBlock, java.lang.String);
+  public abstract java.lang.String[] getPropertyNames();
+  public abstract boolean isDynamic();
+}

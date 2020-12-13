@@ -1,0 +1,8 @@
+Compiled from "CStringUtilities.java"
+public class sun.jvm.hotspot.utilities.CStringUtilities {
+  public sun.jvm.hotspot.utilities.CStringUtilities();
+  public static int getStringLength(sun.jvm.hotspot.debugger.Address);
+  public static java.lang.String getString(sun.jvm.hotspot.debugger.Address);
+  public static java.lang.String getString(sun.jvm.hotspot.debugger.Address, java.nio.charset.Charset);
+  static {};
+}

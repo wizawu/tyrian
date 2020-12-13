@@ -1,0 +1,5 @@
+Compiled from "OSEnvironment.java"
+public class jdk.internal.misc.OSEnvironment {
+  public jdk.internal.misc.OSEnvironment();
+  public static void initialize();
+}

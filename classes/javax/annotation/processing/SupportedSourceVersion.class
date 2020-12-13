@@ -1,0 +1,4 @@
+Compiled from "SupportedSourceVersion.java"
+public interface javax.annotation.processing.SupportedSourceVersion extends java.lang.annotation.Annotation {
+  public abstract javax.lang.model.SourceVersion value();
+}

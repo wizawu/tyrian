@@ -1,0 +1,9 @@
+Compiled from "CardPermission.java"
+public class javax.smartcardio.CardPermission extends java.security.Permission {
+  public javax.smartcardio.CardPermission(java.lang.String, java.lang.String);
+  public java.lang.String getActions();
+  public boolean implies(java.security.Permission);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

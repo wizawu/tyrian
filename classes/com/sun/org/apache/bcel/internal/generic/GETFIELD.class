@@ -1,0 +1,8 @@
+Compiled from "GETFIELD.java"
+public class com.sun.org.apache.bcel.internal.generic.GETFIELD extends com.sun.org.apache.bcel.internal.generic.FieldInstruction implements com.sun.org.apache.bcel.internal.generic.ExceptionThrower,com.sun.org.apache.bcel.internal.generic.StackConsumer,com.sun.org.apache.bcel.internal.generic.StackProducer {
+  com.sun.org.apache.bcel.internal.generic.GETFIELD();
+  public com.sun.org.apache.bcel.internal.generic.GETFIELD(int);
+  public int produceStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

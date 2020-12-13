@@ -1,0 +1,17 @@
+Compiled from "SourceTreeManager.java"
+public class com.sun.org.apache.xpath.internal.SourceTreeManager {
+  javax.xml.transform.URIResolver m_uriResolver;
+  public com.sun.org.apache.xpath.internal.SourceTreeManager();
+  public void reset();
+  public void setURIResolver(javax.xml.transform.URIResolver);
+  public javax.xml.transform.URIResolver getURIResolver();
+  public java.lang.String findURIFromDoc(int);
+  public javax.xml.transform.Source resolveURI(java.lang.String, java.lang.String, javax.xml.transform.SourceLocator) throws javax.xml.transform.TransformerException, java.io.IOException;
+  public void removeDocumentFromCache(int);
+  public void putDocumentInCache(int, javax.xml.transform.Source);
+  public int getNode(javax.xml.transform.Source);
+  public int getSourceTree(java.lang.String, java.lang.String, javax.xml.transform.SourceLocator, com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public int getSourceTree(javax.xml.transform.Source, javax.xml.transform.SourceLocator, com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public int parseToNode(javax.xml.transform.Source, javax.xml.transform.SourceLocator, com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public static org.xml.sax.XMLReader getXMLReader(javax.xml.transform.Source, javax.xml.transform.SourceLocator) throws javax.xml.transform.TransformerException;
+}

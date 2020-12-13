@@ -1,0 +1,8 @@
+Compiled from "PangoFonts.java"
+class com.sun.java.swing.plaf.gtk.PangoFonts {
+  public static final java.lang.String CHARS_DIGITS;
+  com.sun.java.swing.plaf.gtk.PangoFonts();
+  static java.awt.Font lookupFont(java.lang.String);
+  static int getFontSize(java.lang.String);
+  static {};
+}

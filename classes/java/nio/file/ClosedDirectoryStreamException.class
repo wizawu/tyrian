@@ -1,0 +1,5 @@
+Compiled from "ClosedDirectoryStreamException.java"
+public class java.nio.file.ClosedDirectoryStreamException extends java.lang.IllegalStateException {
+  static final long serialVersionUID;
+  public java.nio.file.ClosedDirectoryStreamException();
+}

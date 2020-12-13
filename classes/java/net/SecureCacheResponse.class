@@ -1,0 +1,9 @@
+Compiled from "SecureCacheResponse.java"
+public abstract class java.net.SecureCacheResponse extends java.net.CacheResponse {
+  public java.net.SecureCacheResponse();
+  public abstract java.lang.String getCipherSuite();
+  public abstract java.util.List<java.security.cert.Certificate> getLocalCertificateChain();
+  public abstract java.util.List<java.security.cert.Certificate> getServerCertificateChain() throws javax.net.ssl.SSLPeerUnverifiedException;
+  public abstract java.security.Principal getPeerPrincipal() throws javax.net.ssl.SSLPeerUnverifiedException;
+  public abstract java.security.Principal getLocalPrincipal();
+}

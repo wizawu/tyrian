@@ -1,0 +1,9 @@
+Compiled from "JSObjectIterator.java"
+class jdk.nashorn.internal.runtime.arrays.JSObjectIterator extends jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> {
+  protected final jdk.nashorn.api.scripting.JSObject obj;
+  jdk.nashorn.internal.runtime.arrays.JSObjectIterator(jdk.nashorn.api.scripting.JSObject, boolean);
+  protected boolean indexInArray();
+  public long getLength();
+  public boolean hasNext();
+  public java.lang.Object next();
+}

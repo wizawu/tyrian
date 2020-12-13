@@ -1,0 +1,21 @@
+Compiled from "Start.java"
+public class com.sun.tools.javadoc.main.Start extends com.sun.tools.javadoc.main.ToolOption$Helper {
+  public com.sun.tools.javadoc.main.Start(java.lang.String, java.io.PrintWriter, java.io.PrintWriter, java.io.PrintWriter, java.lang.String);
+  public com.sun.tools.javadoc.main.Start(java.io.PrintWriter);
+  public com.sun.tools.javadoc.main.Start(java.lang.String, java.io.PrintWriter, java.io.PrintWriter, java.io.PrintWriter, java.lang.String, java.lang.ClassLoader);
+  public com.sun.tools.javadoc.main.Start(java.lang.String, java.lang.String);
+  public com.sun.tools.javadoc.main.Start(java.lang.String, java.lang.String, java.lang.ClassLoader);
+  public com.sun.tools.javadoc.main.Start(java.lang.String, java.lang.ClassLoader);
+  public com.sun.tools.javadoc.main.Start(java.lang.String);
+  public com.sun.tools.javadoc.main.Start(java.lang.ClassLoader);
+  public com.sun.tools.javadoc.main.Start();
+  public com.sun.tools.javadoc.main.Start(com.sun.tools.javac.util.Context);
+  void usage();
+  void usage(boolean);
+  void Xusage();
+  void Xusage(boolean);
+  public int begin(java.lang.String...);
+  public boolean begin(java.lang.Class<?>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<? extends javax.tools.JavaFileObject>);
+  void usageError(java.lang.String, java.lang.Object...);
+  com.sun.tools.javac.main.OptionHelper getOptionHelper();
+}

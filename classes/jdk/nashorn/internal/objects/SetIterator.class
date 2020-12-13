@@ -1,0 +1,9 @@
+Compiled from "SetIterator.java"
+public class jdk.nashorn.internal.objects.SetIterator extends jdk.nashorn.internal.objects.AbstractIterator {
+  jdk.nashorn.internal.objects.SetIterator(jdk.nashorn.internal.objects.NativeSet, jdk.nashorn.internal.objects.AbstractIterator$IterationKind, jdk.nashorn.internal.objects.Global);
+  public static java.lang.Object next(java.lang.Object, java.lang.Object);
+  public java.lang.String getClassName();
+  protected jdk.nashorn.internal.objects.IteratorResult next(java.lang.Object);
+  public static {};
+  public static void $clinit$();
+}

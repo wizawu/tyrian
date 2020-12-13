@@ -1,0 +1,13 @@
+Compiled from "JSJavaKlass.java"
+public abstract class sun.jvm.hotspot.utilities.soql.JSJavaKlass {
+  protected final sun.jvm.hotspot.utilities.soql.JSJavaFactory factory;
+  public sun.jvm.hotspot.utilities.soql.JSJavaKlass(sun.jvm.hotspot.oops.Klass, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
+  public final sun.jvm.hotspot.oops.Klass getKlass();
+  public sun.jvm.hotspot.utilities.soql.JSJavaClass getJSJavaClass();
+  public java.lang.Object getMetaClassFieldValue(java.lang.String);
+  public boolean hasMetaClassField(java.lang.String);
+  public java.lang.String[] getMetaClassFieldNames();
+  public abstract java.lang.String getName();
+  public abstract boolean isArray();
+  static {};
+}

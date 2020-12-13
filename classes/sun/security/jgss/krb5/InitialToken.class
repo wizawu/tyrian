@@ -1,0 +1,5 @@
+Compiled from "InitialToken.java"
+abstract class sun.security.jgss.krb5.InitialToken extends sun.security.jgss.krb5.Krb5Token {
+  sun.security.jgss.krb5.InitialToken();
+  public abstract byte[] encode() throws java.io.IOException;
+}

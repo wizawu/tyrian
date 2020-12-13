@@ -1,0 +1,31 @@
+Compiled from "LocaleProviderAdapter.java"
+public abstract class sun.util.locale.provider.LocaleProviderAdapter {
+  static volatile sun.util.locale.provider.LocaleProviderAdapter$Type defaultLocaleProviderAdapter;
+  static final boolean $assertionsDisabled;
+  public sun.util.locale.provider.LocaleProviderAdapter();
+  public static sun.util.locale.provider.LocaleProviderAdapter forType(sun.util.locale.provider.LocaleProviderAdapter$Type);
+  public static sun.util.locale.provider.LocaleProviderAdapter forJRE();
+  public static sun.util.locale.provider.LocaleProviderAdapter getResourceBundleBased();
+  public static java.util.List<sun.util.locale.provider.LocaleProviderAdapter$Type> getAdapterPreference();
+  public static sun.util.locale.provider.LocaleProviderAdapter getAdapter(java.lang.Class<? extends java.util.spi.LocaleServiceProvider>, java.util.Locale);
+  public boolean isSupportedProviderLocale(java.util.Locale, java.util.Set<java.lang.String>);
+  public static java.util.Locale[] toLocaleArray(java.util.Set<java.lang.String>);
+  public abstract sun.util.locale.provider.LocaleProviderAdapter$Type getAdapterType();
+  public abstract <P extends java.util.spi.LocaleServiceProvider> P getLocaleServiceProvider(java.lang.Class<P>);
+  public abstract java.text.spi.BreakIteratorProvider getBreakIteratorProvider();
+  public abstract java.text.spi.CollatorProvider getCollatorProvider();
+  public abstract java.text.spi.DateFormatProvider getDateFormatProvider();
+  public abstract java.text.spi.DateFormatSymbolsProvider getDateFormatSymbolsProvider();
+  public abstract java.text.spi.DecimalFormatSymbolsProvider getDecimalFormatSymbolsProvider();
+  public abstract java.text.spi.NumberFormatProvider getNumberFormatProvider();
+  public abstract java.util.spi.CurrencyNameProvider getCurrencyNameProvider();
+  public abstract java.util.spi.LocaleNameProvider getLocaleNameProvider();
+  public abstract java.util.spi.TimeZoneNameProvider getTimeZoneNameProvider();
+  public abstract java.util.spi.CalendarDataProvider getCalendarDataProvider();
+  public abstract java.util.spi.CalendarNameProvider getCalendarNameProvider();
+  public abstract sun.util.spi.CalendarProvider getCalendarProvider();
+  public abstract sun.text.spi.JavaTimeDateTimePatternProvider getJavaTimeDateTimePatternProvider();
+  public abstract sun.util.locale.provider.LocaleResources getLocaleResources(java.util.Locale);
+  public abstract java.util.Locale[] getAvailableLocales();
+  static {};
+}

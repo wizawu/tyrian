@@ -1,0 +1,5 @@
+Compiled from "ParserContextLoopNode.java"
+class jdk.nashorn.internal.parser.ParserContextLoopNode extends jdk.nashorn.internal.parser.ParserContextBaseNode implements jdk.nashorn.internal.parser.ParserContextBreakableNode {
+  jdk.nashorn.internal.parser.ParserContextLoopNode();
+  public boolean isBreakableWithoutLabel();
+}

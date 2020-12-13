@@ -1,0 +1,4 @@
+Compiled from "SkeletonMismatchException.java"
+public class java.rmi.server.SkeletonMismatchException extends java.rmi.RemoteException {
+  public java.rmi.server.SkeletonMismatchException(java.lang.String);
+}

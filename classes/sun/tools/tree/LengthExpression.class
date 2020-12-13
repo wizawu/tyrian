@@ -1,0 +1,6 @@
+Compiled from "LengthExpression.java"
+public class sun.tools.tree.LengthExpression extends sun.tools.tree.UnaryExpression {
+  public sun.tools.tree.LengthExpression(long, sun.tools.tree.Expression);
+  public sun.tools.tree.Vset checkValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+}

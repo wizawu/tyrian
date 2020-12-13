@@ -1,0 +1,15 @@
+Compiled from "BlockLexicalContext.java"
+public class jdk.nashorn.internal.ir.BlockLexicalContext extends jdk.nashorn.internal.ir.LexicalContext {
+  protected jdk.nashorn.internal.ir.Statement lastStatement;
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.ir.BlockLexicalContext();
+  public <T extends jdk.nashorn.internal.ir.LexicalContextNode> T push(T);
+  protected java.util.List<jdk.nashorn.internal.ir.Statement> popStatements();
+  protected jdk.nashorn.internal.ir.Block afterSetStatements(jdk.nashorn.internal.ir.Block);
+  public <T extends jdk.nashorn.internal.ir.Node> T pop(T);
+  public void appendStatement(jdk.nashorn.internal.ir.Statement);
+  public jdk.nashorn.internal.ir.Node prependStatement(jdk.nashorn.internal.ir.Statement);
+  public void prependStatements(java.util.List<jdk.nashorn.internal.ir.Statement>);
+  public jdk.nashorn.internal.ir.Statement getLastStatement();
+  static {};
+}

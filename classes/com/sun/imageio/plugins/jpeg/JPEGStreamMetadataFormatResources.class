@@ -1,0 +1,5 @@
+Compiled from "JPEGStreamMetadataFormatResources.java"
+public class com.sun.imageio.plugins.jpeg.JPEGStreamMetadataFormatResources extends com.sun.imageio.plugins.jpeg.JPEGMetadataFormatResources {
+  public com.sun.imageio.plugins.jpeg.JPEGStreamMetadataFormatResources();
+  protected java.lang.Object[][] getContents();
+}

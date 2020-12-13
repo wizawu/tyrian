@@ -1,0 +1,7 @@
+Compiled from "OopStorage.java"
+public class sun.jvm.hotspot.gc.shared.OopStorage extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.gc.shared.OopStorage(sun.jvm.hotspot.debugger.Address);
+  public boolean findOop(sun.jvm.hotspot.debugger.Address);
+  public void oopsDo(sun.jvm.hotspot.runtime.AddressVisitor);
+  static {};
+}

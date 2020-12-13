@@ -1,0 +1,16 @@
+Compiled from "MouseDragGestureRecognizer.java"
+public abstract class java.awt.dnd.MouseDragGestureRecognizer extends java.awt.dnd.DragGestureRecognizer implements java.awt.event.MouseListener,java.awt.event.MouseMotionListener {
+  protected java.awt.dnd.MouseDragGestureRecognizer(java.awt.dnd.DragSource, java.awt.Component, int, java.awt.dnd.DragGestureListener);
+  protected java.awt.dnd.MouseDragGestureRecognizer(java.awt.dnd.DragSource, java.awt.Component, int);
+  protected java.awt.dnd.MouseDragGestureRecognizer(java.awt.dnd.DragSource, java.awt.Component);
+  protected java.awt.dnd.MouseDragGestureRecognizer(java.awt.dnd.DragSource);
+  protected void registerListeners();
+  protected void unregisterListeners();
+  public void mouseClicked(java.awt.event.MouseEvent);
+  public void mousePressed(java.awt.event.MouseEvent);
+  public void mouseReleased(java.awt.event.MouseEvent);
+  public void mouseEntered(java.awt.event.MouseEvent);
+  public void mouseExited(java.awt.event.MouseEvent);
+  public void mouseDragged(java.awt.event.MouseEvent);
+  public void mouseMoved(java.awt.event.MouseEvent);
+}

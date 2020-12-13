@@ -1,0 +1,5 @@
+Compiled from "TestDebugInfo.java"
+public class sun.jvm.hotspot.debugger.win32.coff.TestDebugInfo implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SubsectionTypes,sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolTypes,sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeLeafIndices {
+  public sun.jvm.hotspot.debugger.win32.coff.TestDebugInfo();
+  public static void main(java.lang.String[]);
+}

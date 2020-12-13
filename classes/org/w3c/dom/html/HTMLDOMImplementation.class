@@ -1,0 +1,4 @@
+Compiled from "HTMLDOMImplementation.java"
+public interface org.w3c.dom.html.HTMLDOMImplementation extends org.w3c.dom.DOMImplementation {
+  public abstract org.w3c.dom.html.HTMLDocument createHTMLDocument(java.lang.String);
+}

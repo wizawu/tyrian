@@ -1,0 +1,8 @@
+Compiled from "DeferredProcessingInstructionImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DeferredProcessingInstructionImpl extends com.sun.org.apache.xerces.internal.dom.ProcessingInstructionImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
+  static final long serialVersionUID;
+  protected transient int fNodeIndex;
+  com.sun.org.apache.xerces.internal.dom.DeferredProcessingInstructionImpl(com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl, int);
+  public int getNodeIndex();
+  protected void synchronizeData();
+}

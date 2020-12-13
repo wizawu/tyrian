@@ -1,0 +1,15 @@
+Compiled from "WindowController.java"
+final class jdk.internal.net.http.WindowController {
+  static final jdk.internal.net.http.common.Logger debug;
+  static final boolean $assertionsDisabled;
+  jdk.internal.net.http.WindowController();
+  void registerStream(int, int);
+  void removeStream(int);
+  int tryAcquire(int, int, jdk.internal.net.http.Stream<?>);
+  boolean increaseConnectionWindow(int);
+  boolean increaseStreamWindow(int, int);
+  void adjustActiveStreams(int);
+  int connectionWindowSize();
+  int streamWindowSize(int);
+  static {};
+}

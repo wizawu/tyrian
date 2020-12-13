@@ -1,0 +1,24 @@
+Compiled from "JulianCalendar.java"
+public class sun.util.calendar.JulianCalendar extends sun.util.calendar.BaseCalendar {
+  static final boolean $assertionsDisabled;
+  sun.util.calendar.JulianCalendar();
+  public java.lang.String getName();
+  public sun.util.calendar.JulianCalendar$Date getCalendarDate();
+  public sun.util.calendar.JulianCalendar$Date getCalendarDate(long);
+  public sun.util.calendar.JulianCalendar$Date getCalendarDate(long, sun.util.calendar.CalendarDate);
+  public sun.util.calendar.JulianCalendar$Date getCalendarDate(long, java.util.TimeZone);
+  public sun.util.calendar.JulianCalendar$Date newCalendarDate();
+  public sun.util.calendar.JulianCalendar$Date newCalendarDate(java.util.TimeZone);
+  public long getFixedDate(int, int, int, sun.util.calendar.BaseCalendar$Date);
+  public void getCalendarDateFromFixedDate(sun.util.calendar.CalendarDate, long);
+  public int getYearFromFixedDate(long);
+  public int getDayOfWeek(sun.util.calendar.CalendarDate);
+  boolean isLeapYear(int);
+  public sun.util.calendar.CalendarDate getCalendarDate(long, sun.util.calendar.CalendarDate);
+  public sun.util.calendar.CalendarDate getCalendarDate(long, java.util.TimeZone);
+  public sun.util.calendar.CalendarDate getCalendarDate(long);
+  public sun.util.calendar.CalendarDate getCalendarDate();
+  public sun.util.calendar.CalendarDate newCalendarDate(java.util.TimeZone);
+  public sun.util.calendar.CalendarDate newCalendarDate();
+  static {};
+}

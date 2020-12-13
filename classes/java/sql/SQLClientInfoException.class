@@ -1,0 +1,13 @@
+Compiled from "SQLClientInfoException.java"
+public class java.sql.SQLClientInfoException extends java.sql.SQLException {
+  public java.sql.SQLClientInfoException();
+  public java.sql.SQLClientInfoException(java.util.Map<java.lang.String, java.sql.ClientInfoStatus>);
+  public java.sql.SQLClientInfoException(java.util.Map<java.lang.String, java.sql.ClientInfoStatus>, java.lang.Throwable);
+  public java.sql.SQLClientInfoException(java.lang.String, java.util.Map<java.lang.String, java.sql.ClientInfoStatus>);
+  public java.sql.SQLClientInfoException(java.lang.String, java.util.Map<java.lang.String, java.sql.ClientInfoStatus>, java.lang.Throwable);
+  public java.sql.SQLClientInfoException(java.lang.String, java.lang.String, java.util.Map<java.lang.String, java.sql.ClientInfoStatus>);
+  public java.sql.SQLClientInfoException(java.lang.String, java.lang.String, java.util.Map<java.lang.String, java.sql.ClientInfoStatus>, java.lang.Throwable);
+  public java.sql.SQLClientInfoException(java.lang.String, java.lang.String, int, java.util.Map<java.lang.String, java.sql.ClientInfoStatus>);
+  public java.sql.SQLClientInfoException(java.lang.String, java.lang.String, int, java.util.Map<java.lang.String, java.sql.ClientInfoStatus>, java.lang.Throwable);
+  public java.util.Map<java.lang.String, java.sql.ClientInfoStatus> getFailedProperties();
+}

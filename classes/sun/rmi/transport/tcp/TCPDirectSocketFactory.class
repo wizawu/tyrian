@@ -1,0 +1,6 @@
+Compiled from "TCPDirectSocketFactory.java"
+public class sun.rmi.transport.tcp.TCPDirectSocketFactory extends java.rmi.server.RMISocketFactory {
+  public sun.rmi.transport.tcp.TCPDirectSocketFactory();
+  public java.net.Socket createSocket(java.lang.String, int) throws java.io.IOException;
+  public java.net.ServerSocket createServerSocket(int) throws java.io.IOException;
+}

@@ -1,0 +1,18 @@
+Compiled from "BerDecoder.java"
+public final class com.sun.jndi.ldap.BerDecoder extends com.sun.jndi.ldap.Ber {
+  public com.sun.jndi.ldap.BerDecoder(byte[], int, int);
+  public void reset();
+  public int getParsePosition();
+  public int parseLength() throws com.sun.jndi.ldap.Ber$DecodeException;
+  public int parseSeq(int[]) throws com.sun.jndi.ldap.Ber$DecodeException;
+  void seek(int) throws com.sun.jndi.ldap.Ber$DecodeException;
+  public int parseByte() throws com.sun.jndi.ldap.Ber$DecodeException;
+  public int peekByte() throws com.sun.jndi.ldap.Ber$DecodeException;
+  public boolean parseBoolean() throws com.sun.jndi.ldap.Ber$DecodeException;
+  public int parseEnumeration() throws com.sun.jndi.ldap.Ber$DecodeException;
+  public int parseInt() throws com.sun.jndi.ldap.Ber$DecodeException;
+  public java.lang.String parseString(boolean) throws com.sun.jndi.ldap.Ber$DecodeException;
+  public java.lang.String parseStringWithTag(int, boolean, int[]) throws com.sun.jndi.ldap.Ber$DecodeException;
+  public byte[] parseOctetString(int, int[]) throws com.sun.jndi.ldap.Ber$DecodeException;
+  public int bytesLeft();
+}

@@ -1,0 +1,10 @@
+Compiled from "CastExpression.java"
+public class sun.tools.tree.CastExpression extends sun.tools.tree.BinaryExpression {
+  public sun.tools.tree.CastExpression(long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  public sun.tools.tree.Vset checkValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public boolean isConstant();
+  public sun.tools.tree.Expression inline(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Expression inlineValue(sun.tools.java.Environment, sun.tools.tree.Context);
+  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
+  public void print(java.io.PrintStream);
+}

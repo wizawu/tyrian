@@ -1,0 +1,23 @@
+Compiled from "Mac.java"
+public class javax.crypto.Mac implements java.lang.Cloneable {
+  protected javax.crypto.Mac(javax.crypto.MacSpi, java.security.Provider, java.lang.String);
+  public final java.lang.String getAlgorithm();
+  public static final javax.crypto.Mac getInstance(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  public static final javax.crypto.Mac getInstance(java.lang.String, java.lang.String) throws java.security.NoSuchAlgorithmException, java.security.NoSuchProviderException;
+  public static final javax.crypto.Mac getInstance(java.lang.String, java.security.Provider) throws java.security.NoSuchAlgorithmException;
+  void chooseFirstProvider();
+  public final java.security.Provider getProvider();
+  public final int getMacLength();
+  public final void init(java.security.Key) throws java.security.InvalidKeyException;
+  public final void init(java.security.Key, java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  public final void update(byte) throws java.lang.IllegalStateException;
+  public final void update(byte[]) throws java.lang.IllegalStateException;
+  public final void update(byte[], int, int) throws java.lang.IllegalStateException;
+  public final void update(java.nio.ByteBuffer);
+  public final byte[] doFinal() throws java.lang.IllegalStateException;
+  public final void doFinal(byte[], int) throws javax.crypto.ShortBufferException, java.lang.IllegalStateException;
+  public final byte[] doFinal(byte[]) throws java.lang.IllegalStateException;
+  public final void reset();
+  public final java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  static {};
+}

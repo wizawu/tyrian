@@ -1,0 +1,28 @@
+Compiled from "UserAccessorProperty.java"
+public final class jdk.nashorn.internal.runtime.UserAccessorProperty extends jdk.nashorn.internal.runtime.SpillProperty {
+  static final boolean $assertionsDisabled;
+  static java.lang.invoke.MethodHandle getINVOKE_UA_GETTER(java.lang.Class<?>, int);
+  static java.lang.invoke.MethodHandle getINVOKE_UA_SETTER(java.lang.Class<?>);
+  jdk.nashorn.internal.runtime.UserAccessorProperty(java.lang.Object, int, int);
+  public jdk.nashorn.internal.runtime.Property copy();
+  public jdk.nashorn.internal.runtime.Property copy(java.lang.Class<?>);
+  void setAccessors(jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.PropertyMap, jdk.nashorn.internal.runtime.UserAccessorProperty$Accessors);
+  jdk.nashorn.internal.runtime.UserAccessorProperty$Accessors getAccessors(jdk.nashorn.internal.runtime.ScriptObject);
+  protected java.lang.Class<?> getLocalType();
+  public boolean hasGetterFunction(jdk.nashorn.internal.runtime.ScriptObject);
+  public boolean hasSetterFunction(jdk.nashorn.internal.runtime.ScriptObject);
+  public int getIntValue(jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.ScriptObject);
+  public double getDoubleValue(jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.ScriptObject);
+  public java.lang.Object getObjectValue(jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.ScriptObject);
+  public void setValue(jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.ScriptObject, int, boolean);
+  public void setValue(jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.ScriptObject, double, boolean);
+  public void setValue(jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.ScriptObject, java.lang.Object, boolean);
+  public java.lang.invoke.MethodHandle getGetter(java.lang.Class<?>);
+  public java.lang.invoke.MethodHandle getOptimisticGetter(java.lang.Class<?>, int);
+  void initMethodHandles(java.lang.Class<?>);
+  public jdk.nashorn.internal.runtime.ScriptFunction getGetterFunction(jdk.nashorn.internal.runtime.ScriptObject);
+  public java.lang.invoke.MethodHandle getSetter(java.lang.Class<?>, jdk.nashorn.internal.runtime.PropertyMap);
+  public jdk.nashorn.internal.runtime.ScriptFunction getSetterFunction(jdk.nashorn.internal.runtime.ScriptObject);
+  java.lang.invoke.MethodHandle getAccessorsGetter();
+  static {};
+}

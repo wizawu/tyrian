@@ -1,0 +1,20 @@
+Compiled from "NativeJava.java"
+public final class jdk.nashorn.internal.objects.NativeJava {
+  public static boolean isType(java.lang.Object, java.lang.Object);
+  public static java.lang.Object synchronizedFunc(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static boolean isJavaMethod(java.lang.Object, java.lang.Object);
+  public static boolean isJavaFunction(java.lang.Object, java.lang.Object);
+  public static boolean isJavaObject(java.lang.Object, java.lang.Object);
+  public static boolean isScriptObject(java.lang.Object, java.lang.Object);
+  public static boolean isScriptFunction(java.lang.Object, java.lang.Object);
+  public static java.lang.Object type(java.lang.Object, java.lang.Object) throws java.lang.ClassNotFoundException;
+  public static java.lang.Object typeName(java.lang.Object, java.lang.Object);
+  public static java.lang.Object to(java.lang.Object, java.lang.Object, java.lang.Object) throws java.lang.ClassNotFoundException;
+  public static jdk.nashorn.internal.objects.NativeArray from(java.lang.Object, java.lang.Object);
+  public static java.util.List<java.lang.String> getProperties(java.lang.Object);
+  public static java.lang.Object extend(java.lang.Object, java.lang.Object...);
+  public static java.lang.Object _super(java.lang.Object, java.lang.Object);
+  public static java.lang.Object asJSONCompatible(java.lang.Object, java.lang.Object);
+  public static {};
+  public static void $clinit$();
+}

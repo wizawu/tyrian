@@ -1,0 +1,5 @@
+Compiled from "SingleByte.java"
+public class sun.nio.cs.SingleByte {
+  public sun.nio.cs.SingleByte();
+  public static void initC2B(char[], char[], char[], char[]);
+}

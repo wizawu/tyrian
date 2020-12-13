@@ -1,0 +1,6 @@
+Compiled from "XSDGroupTraverser.java"
+class com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDGroupTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractParticleTraverser {
+  com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDGroupTraverser(com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker);
+  com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl traverseLocal(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
+  com.sun.org.apache.xerces.internal.impl.xs.XSGroupDecl traverseGlobal(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
+}

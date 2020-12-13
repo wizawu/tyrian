@@ -1,0 +1,12 @@
+Compiled from "PropertyInfo.java"
+public final class com.sun.beans.introspect.PropertyInfo {
+  public java.lang.Class<?> getPropertyType();
+  public java.lang.reflect.Method getReadMethod();
+  public java.lang.reflect.Method getWriteMethod();
+  public com.sun.beans.introspect.PropertyInfo getIndexed();
+  public boolean isConstrained();
+  public boolean is(com.sun.beans.introspect.PropertyInfo$Name);
+  public java.lang.Object get(com.sun.beans.introspect.PropertyInfo$Name);
+  public static java.util.Map<java.lang.String, com.sun.beans.introspect.PropertyInfo> get(java.lang.Class<?>);
+  static {};
+}

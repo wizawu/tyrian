@@ -1,0 +1,42 @@
+Compiled from "PPC64Frame.java"
+public class sun.jvm.hotspot.runtime.ppc64.PPC64Frame extends sun.jvm.hotspot.runtime.Frame {
+  sun.jvm.hotspot.debugger.Address raw_fp;
+  public sun.jvm.hotspot.runtime.ppc64.PPC64Frame(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.runtime.ppc64.PPC64Frame(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.runtime.ppc64.PPC64Frame(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
+  public java.lang.Object clone();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public sun.jvm.hotspot.debugger.Address getFP();
+  public sun.jvm.hotspot.debugger.Address getSP();
+  public sun.jvm.hotspot.debugger.Address getID();
+  public boolean isSignalHandlerFrameDbg();
+  public int getSignalNumberDbg();
+  public java.lang.String getSignalNameDbg();
+  public boolean isInterpretedFrameValid();
+  public sun.jvm.hotspot.runtime.Frame sender(sun.jvm.hotspot.runtime.RegisterMap, sun.jvm.hotspot.code.CodeBlob);
+  protected boolean hasSenderPD();
+  public long frameSize();
+  public sun.jvm.hotspot.debugger.Address getLink();
+  public sun.jvm.hotspot.debugger.Address getUnextendedSP();
+  public sun.jvm.hotspot.debugger.Address getSenderPC();
+  public sun.jvm.hotspot.debugger.Address getSenderSP();
+  public sun.jvm.hotspot.debugger.Address addressOfInterpreterFrameLocals();
+  public int getInterpreterFrameBCI();
+  public sun.jvm.hotspot.debugger.Address addressOfInterpreterFrameMDX();
+  public sun.jvm.hotspot.debugger.Address addressOfInterpreterFrameExpressionStack();
+  public int getInterpreterFrameExpressionStackDirection();
+  public sun.jvm.hotspot.debugger.Address addressOfInterpreterFrameTOS();
+  public sun.jvm.hotspot.debugger.Address addressOfInterpreterFrameTOSAt(int);
+  public sun.jvm.hotspot.debugger.Address getInterpreterFrameSenderSP();
+  public sun.jvm.hotspot.runtime.BasicObjectLock interpreterFrameMonitorBegin();
+  public sun.jvm.hotspot.runtime.BasicObjectLock interpreterFrameMonitorEnd();
+  public int interpreterFrameMonitorSize();
+  public sun.jvm.hotspot.debugger.Address addressOfInterpreterFrameMethod();
+  public sun.jvm.hotspot.debugger.Address addressOfInterpreterFrameCPCache();
+  public sun.jvm.hotspot.runtime.JavaCallWrapper getEntryFrameCallWrapper();
+  protected sun.jvm.hotspot.debugger.Address addressOfSavedOopResult();
+  protected sun.jvm.hotspot.debugger.Address addressOfSavedReceiver();
+  static {};
+}

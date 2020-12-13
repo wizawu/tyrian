@@ -1,0 +1,33 @@
+Compiled from "MultiExchange.java"
+class jdk.internal.net.http.MultiExchange<T> {
+  static final jdk.internal.net.http.common.Logger debug;
+  final java.security.AccessControlContext acc;
+  final jdk.internal.net.http.HttpClientImpl client;
+  final java.net.http.HttpResponse$BodyHandler<T> responseHandler;
+  final jdk.internal.net.http.HttpClientImpl$DelegatingExecutor executor;
+  final java.util.concurrent.atomic.AtomicInteger attempts;
+  jdk.internal.net.http.HttpRequestImpl currentreq;
+  jdk.internal.net.http.HttpRequestImpl previousreq;
+  jdk.internal.net.http.Exchange<T> exchange;
+  jdk.internal.net.http.Exchange<T> previous;
+  volatile java.lang.Throwable retryCause;
+  volatile boolean expiredOnce;
+  volatile java.net.http.HttpResponse<T> response;
+  static final int DEFAULT_MAX_ATTEMPTS;
+  static final int max_attempts;
+  jdk.internal.net.http.ResponseTimerEvent responseTimerEvent;
+  volatile boolean cancelled;
+  final jdk.internal.net.http.PushGroup<T> pushGroup;
+  volatile jdk.internal.net.http.AuthenticationFilter$AuthInfo serverauth;
+  volatile jdk.internal.net.http.AuthenticationFilter$AuthInfo proxyauth;
+  volatile int numberOfRedirects;
+  static final boolean $assertionsDisabled;
+  jdk.internal.net.http.MultiExchange(java.net.http.HttpRequest, jdk.internal.net.http.HttpRequestImpl, jdk.internal.net.http.HttpClientImpl, java.net.http.HttpResponse$BodyHandler<T>, java.net.http.HttpResponse$PushPromiseHandler<T>, java.security.AccessControlContext);
+  synchronized jdk.internal.net.http.Exchange<T> getExchange();
+  jdk.internal.net.http.HttpClientImpl client();
+  java.net.http.HttpClient$Version version();
+  public java.util.Optional<java.time.Duration> remainingConnectTimeout();
+  public void cancel(java.io.IOException);
+  public java.util.concurrent.CompletableFuture<java.net.http.HttpResponse<T>> responseAsync(java.util.concurrent.Executor);
+  static {};
+}

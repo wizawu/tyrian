@@ -1,0 +1,6 @@
+Compiled from "GTKRegion.java"
+class com.sun.java.swing.plaf.gtk.GTKRegion extends javax.swing.plaf.synth.Region {
+  public static final javax.swing.plaf.synth.Region HANDLE_BOX;
+  protected com.sun.java.swing.plaf.gtk.GTKRegion(java.lang.String, java.lang.String, boolean);
+  static {};
+}

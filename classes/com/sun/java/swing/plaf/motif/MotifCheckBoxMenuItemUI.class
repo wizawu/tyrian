@@ -1,0 +1,10 @@
+Compiled from "MotifCheckBoxMenuItemUI.java"
+public class com.sun.java.swing.plaf.motif.MotifCheckBoxMenuItemUI extends javax.swing.plaf.basic.BasicCheckBoxMenuItemUI {
+  protected javax.swing.event.ChangeListener changeListener;
+  public com.sun.java.swing.plaf.motif.MotifCheckBoxMenuItemUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installListeners();
+  protected void uninstallListeners();
+  protected javax.swing.event.ChangeListener createChangeListener(javax.swing.JComponent);
+  protected javax.swing.event.MouseInputListener createMouseInputListener(javax.swing.JComponent);
+}

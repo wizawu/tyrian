@@ -1,0 +1,5 @@
+Compiled from "KeyRep.java"
+public class java.security.KeyRep implements java.io.Serializable {
+  public java.security.KeyRep(java.security.KeyRep$Type, java.lang.String, java.lang.String, byte[]);
+  protected java.lang.Object readResolve() throws java.io.ObjectStreamException;
+}

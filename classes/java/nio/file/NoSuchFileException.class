@@ -1,0 +1,6 @@
+Compiled from "NoSuchFileException.java"
+public class java.nio.file.NoSuchFileException extends java.nio.file.FileSystemException {
+  static final long serialVersionUID;
+  public java.nio.file.NoSuchFileException(java.lang.String);
+  public java.nio.file.NoSuchFileException(java.lang.String, java.lang.String, java.lang.String);
+}

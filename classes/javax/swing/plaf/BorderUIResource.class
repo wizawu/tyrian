@@ -1,0 +1,15 @@
+Compiled from "BorderUIResource.java"
+public class javax.swing.plaf.BorderUIResource implements javax.swing.border.Border,javax.swing.plaf.UIResource,java.io.Serializable {
+  static javax.swing.border.Border etched;
+  static javax.swing.border.Border loweredBevel;
+  static javax.swing.border.Border raisedBevel;
+  static javax.swing.border.Border blackLine;
+  public static javax.swing.border.Border getEtchedBorderUIResource();
+  public static javax.swing.border.Border getLoweredBevelBorderUIResource();
+  public static javax.swing.border.Border getRaisedBevelBorderUIResource();
+  public static javax.swing.border.Border getBlackLineBorderUIResource();
+  public javax.swing.plaf.BorderUIResource(javax.swing.border.Border);
+  public void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
+  public java.awt.Insets getBorderInsets(java.awt.Component);
+  public boolean isBorderOpaque();
+}

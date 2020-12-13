@@ -1,0 +1,12 @@
+Compiled from "CounterMode.java"
+class com.sun.crypto.provider.CounterMode extends com.sun.crypto.provider.FeedbackCipher {
+  final byte[] counter;
+  com.sun.crypto.provider.CounterMode(com.sun.crypto.provider.SymmetricCipher);
+  java.lang.String getFeedback();
+  void reset();
+  void save();
+  void restore();
+  void init(boolean, java.lang.String, byte[], byte[]) throws java.security.InvalidKeyException;
+  int encrypt(byte[], int, int, byte[], int);
+  int decrypt(byte[], int, int, byte[], int);
+}

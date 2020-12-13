@@ -1,0 +1,10 @@
+Compiled from "PerfByteArrayCounter.java"
+public class sun.management.counter.perf.PerfByteArrayCounter extends sun.management.counter.AbstractCounter implements sun.management.counter.ByteArrayCounter {
+  java.nio.ByteBuffer bb;
+  sun.management.counter.perf.PerfByteArrayCounter(java.lang.String, sun.management.counter.Units, sun.management.counter.Variability, int, int, java.nio.ByteBuffer);
+  public java.lang.Object getValue();
+  public byte[] byteArrayValue();
+  public byte byteAt(int);
+  public java.lang.String toString();
+  protected java.lang.Object writeReplace() throws java.io.ObjectStreamException;
+}

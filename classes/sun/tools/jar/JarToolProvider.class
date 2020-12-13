@@ -1,0 +1,6 @@
+Compiled from "JarToolProvider.java"
+public class sun.tools.jar.JarToolProvider implements java.util.spi.ToolProvider {
+  public sun.tools.jar.JarToolProvider();
+  public java.lang.String name();
+  public int run(java.io.PrintWriter, java.io.PrintWriter, java.lang.String...);
+}

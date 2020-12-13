@@ -1,0 +1,8 @@
+Compiled from "SerializedForm.java"
+class com.sun.tools.javadoc.main.SerializedForm {
+  com.sun.tools.javac.util.ListBuffer<com.sun.javadoc.MethodDoc> methods;
+  com.sun.tools.javadoc.main.SerializedForm(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$ClassSymbol, com.sun.tools.javadoc.main.ClassDocImpl);
+  com.sun.javadoc.FieldDoc[] fields();
+  com.sun.javadoc.MethodDoc[] methods();
+  boolean definesSerializableFields();
+}

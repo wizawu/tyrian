@@ -1,0 +1,25 @@
+Compiled from "UnixFileSystem.java"
+abstract class sun.nio.fs.UnixFileSystem extends java.nio.file.FileSystem {
+  sun.nio.fs.UnixFileSystem(sun.nio.fs.UnixFileSystemProvider, java.lang.String);
+  byte[] defaultDirectory();
+  boolean needToResolveAgainstDefaultDirectory();
+  sun.nio.fs.UnixPath rootDirectory();
+  boolean isSolaris();
+  static java.util.List<java.lang.String> standardFileAttributeViews();
+  public final java.nio.file.spi.FileSystemProvider provider();
+  public final java.lang.String getSeparator();
+  public final boolean isOpen();
+  public final boolean isReadOnly();
+  public final void close() throws java.io.IOException;
+  void copyNonPosixAttributes(int, int);
+  public final java.lang.Iterable<java.nio.file.Path> getRootDirectories();
+  abstract java.lang.Iterable<sun.nio.fs.UnixMountEntry> getMountEntries();
+  abstract java.nio.file.FileStore getFileStore(sun.nio.fs.UnixMountEntry) throws java.io.IOException;
+  public final java.lang.Iterable<java.nio.file.FileStore> getFileStores();
+  public final java.nio.file.Path getPath(java.lang.String, java.lang.String...);
+  public java.nio.file.PathMatcher getPathMatcher(java.lang.String);
+  public final java.nio.file.attribute.UserPrincipalLookupService getUserPrincipalLookupService();
+  java.util.regex.Pattern compilePathMatchPattern(java.lang.String);
+  char[] normalizeNativePath(char[]);
+  java.lang.String normalizeJavaPath(java.lang.String);
+}

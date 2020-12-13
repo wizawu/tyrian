@@ -1,0 +1,14 @@
+Compiled from "Prologue.java"
+class sun.management.counter.perf.Prologue {
+  sun.management.counter.perf.Prologue(java.nio.ByteBuffer);
+  public int getMagic();
+  public int getMajorVersion();
+  public int getMinorVersion();
+  public java.nio.ByteOrder getByteOrder();
+  public int getEntryOffset();
+  public int getUsed();
+  public int getOverflow();
+  public long getModificationTimeStamp();
+  public int getNumEntries();
+  public boolean isAccessible();
+}

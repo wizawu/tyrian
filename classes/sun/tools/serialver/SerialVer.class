@@ -1,0 +1,11 @@
+Compiled from "SerialVer.java"
+public class sun.tools.serialver.SerialVer {
+  static java.net.URLClassLoader loader;
+  public sun.tools.serialver.SerialVer();
+  static void initializeLoader(java.lang.String) throws java.io.IOException;
+  static java.lang.String serialSyntax(java.lang.String) throws java.lang.ClassNotFoundException;
+  static java.lang.String resolveClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  public static void main(java.lang.String[]);
+  public static void usage();
+  static {};
+}

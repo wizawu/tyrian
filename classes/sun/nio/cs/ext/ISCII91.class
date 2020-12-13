@@ -1,0 +1,9 @@
+Compiled from "ISCII91.java"
+public class sun.nio.cs.ext.ISCII91 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
+  public sun.nio.cs.ext.ISCII91();
+  public java.lang.String historicalName();
+  public boolean contains(java.nio.charset.Charset);
+  public java.nio.charset.CharsetDecoder newDecoder();
+  public java.nio.charset.CharsetEncoder newEncoder();
+  static {};
+}

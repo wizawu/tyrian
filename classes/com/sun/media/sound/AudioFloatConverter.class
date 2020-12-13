@@ -1,0 +1,16 @@
+Compiled from "AudioFloatConverter.java"
+public abstract class com.sun.media.sound.AudioFloatConverter {
+  public com.sun.media.sound.AudioFloatConverter();
+  public static com.sun.media.sound.AudioFloatConverter getConverter(javax.sound.sampled.AudioFormat);
+  public final javax.sound.sampled.AudioFormat getFormat();
+  public abstract float[] toFloatArray(byte[], int, float[], int, int);
+  public final float[] toFloatArray(byte[], float[], int, int);
+  public final float[] toFloatArray(byte[], int, float[], int);
+  public final float[] toFloatArray(byte[], float[], int);
+  public final float[] toFloatArray(byte[], float[]);
+  public abstract byte[] toByteArray(float[], int, int, byte[], int);
+  public final byte[] toByteArray(float[], int, byte[], int);
+  public final byte[] toByteArray(float[], int, int, byte[]);
+  public final byte[] toByteArray(float[], int, byte[]);
+  public final byte[] toByteArray(float[], byte[]);
+}

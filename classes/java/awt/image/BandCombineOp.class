@@ -1,0 +1,14 @@
+Compiled from "BandCombineOp.java"
+public class java.awt.image.BandCombineOp implements java.awt.image.RasterOp {
+  float[][] matrix;
+  int nrows;
+  int ncols;
+  java.awt.RenderingHints hints;
+  public java.awt.image.BandCombineOp(float[][], java.awt.RenderingHints);
+  public final float[][] getMatrix();
+  public java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);
+  public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.Raster);
+  public java.awt.image.WritableRaster createCompatibleDestRaster(java.awt.image.Raster);
+  public final java.awt.geom.Point2D getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D);
+  public final java.awt.RenderingHints getRenderingHints();
+}

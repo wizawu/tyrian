@@ -1,0 +1,6 @@
+Compiled from "BasePropertyTaglet.java"
+public abstract class jdk.javadoc.internal.doclets.toolkit.taglets.BasePropertyTaglet extends jdk.javadoc.internal.doclets.toolkit.taglets.BaseTaglet {
+  public jdk.javadoc.internal.doclets.toolkit.taglets.BasePropertyTaglet(java.lang.String);
+  abstract java.lang.String getText(jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
+  public jdk.javadoc.internal.doclets.toolkit.Content getTagletOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
+}

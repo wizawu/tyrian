@@ -1,0 +1,9 @@
+Compiled from "Edge.java"
+class jdk.internal.org.objectweb.asm.Edge {
+  static final int NORMAL;
+  static final int EXCEPTION;
+  int info;
+  jdk.internal.org.objectweb.asm.Label successor;
+  jdk.internal.org.objectweb.asm.Edge next;
+  jdk.internal.org.objectweb.asm.Edge();
+}

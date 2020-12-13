@@ -1,0 +1,6 @@
+Compiled from "TrustManagerFactorySpi.java"
+public abstract class com.sun.net.ssl.TrustManagerFactorySpi {
+  public com.sun.net.ssl.TrustManagerFactorySpi();
+  protected abstract void engineInit(java.security.KeyStore) throws java.security.KeyStoreException;
+  protected abstract com.sun.net.ssl.TrustManager[] engineGetTrustManagers();
+}

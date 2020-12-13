@@ -1,0 +1,10 @@
+Compiled from "ConnectionInputStream.java"
+class sun.rmi.transport.ConnectionInputStream extends sun.rmi.server.MarshalInputStream {
+  sun.rmi.transport.ConnectionInputStream(java.io.InputStream) throws java.io.IOException;
+  void readID() throws java.io.IOException;
+  void saveRef(sun.rmi.transport.LiveRef);
+  void discardRefs();
+  void registerRefs() throws java.io.IOException;
+  void setAckNeeded();
+  void done(sun.rmi.transport.Connection);
+}

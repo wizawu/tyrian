@@ -1,0 +1,13 @@
+Compiled from "LineView.java"
+class javax.swing.text.html.LineView extends javax.swing.text.html.ParagraphView {
+  int tabBase;
+  public javax.swing.text.html.LineView(javax.swing.text.Element);
+  public boolean isVisible();
+  public float getMinimumSpan(int);
+  public int getResizeWeight(int);
+  public float getAlignment(int);
+  protected void layout(int, int);
+  public float nextTabStop(float, int);
+  protected float getPreTab(float, int);
+  protected int getCharactersPerTab();
+}

@@ -1,0 +1,16 @@
+Compiled from "CharBufferSpliterator.java"
+class java.nio.CharBufferSpliterator implements java.util.Spliterator$OfInt {
+  static final boolean $assertionsDisabled;
+  java.nio.CharBufferSpliterator(java.nio.CharBuffer);
+  java.nio.CharBufferSpliterator(java.nio.CharBuffer, int, int);
+  public java.util.Spliterator$OfInt trySplit();
+  public void forEachRemaining(java.util.function.IntConsumer);
+  public boolean tryAdvance(java.util.function.IntConsumer);
+  public long estimateSize();
+  public int characteristics();
+  public void forEachRemaining(java.lang.Object);
+  public boolean tryAdvance(java.lang.Object);
+  public java.util.Spliterator$OfPrimitive trySplit();
+  public java.util.Spliterator trySplit();
+  static {};
+}

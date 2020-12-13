@@ -1,0 +1,5 @@
+Compiled from "ParseException.java"
+public class java.text.ParseException extends java.lang.Exception {
+  public java.text.ParseException(java.lang.String, int);
+  public int getErrorOffset();
+}

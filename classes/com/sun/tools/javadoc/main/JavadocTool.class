@@ -1,0 +1,20 @@
+Compiled from "JavadocTool.java"
+public class com.sun.tools.javadoc.main.JavadocTool extends com.sun.tools.javac.main.JavaCompiler {
+  com.sun.tools.javadoc.main.DocEnv docenv;
+  final com.sun.tools.javadoc.main.Messager messager;
+  final com.sun.tools.javac.code.ClassFinder javadocFinder;
+  final com.sun.tools.javac.comp.Enter javadocEnter;
+  final java.util.Set<javax.tools.JavaFileObject> uniquefiles;
+  static final boolean surrogatesSupported;
+  protected com.sun.tools.javadoc.main.JavadocTool(com.sun.tools.javac.util.Context);
+  protected boolean keepComments();
+  public static com.sun.tools.javadoc.main.JavadocTool make0(com.sun.tools.javac.util.Context);
+  public com.sun.tools.javadoc.main.RootDocImpl getRootDocImpl(java.lang.String, java.lang.String, com.sun.tools.javadoc.main.ModifierFilter, com.sun.tools.javac.util.List<java.lang.String>, com.sun.tools.javac.util.List<java.lang.String[]>, java.lang.Iterable<? extends javax.tools.JavaFileObject>, boolean, com.sun.tools.javac.util.List<java.lang.String>, com.sun.tools.javac.util.List<java.lang.String>, boolean, boolean, boolean) throws java.io.IOException;
+  boolean isValidPackageName(java.lang.String);
+  public static boolean isValidClassName(java.lang.String);
+  com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCClassDecl> listClasses(com.sun.tools.javac.util.List<com.sun.tools.javac.tree.JCTree$JCCompilationUnit>);
+  static com.sun.tools.javac.util.Names access$000(com.sun.tools.javadoc.main.JavadocTool);
+  static com.sun.tools.javac.comp.Modules access$100(com.sun.tools.javadoc.main.JavadocTool);
+  static com.sun.tools.javac.code.Symtab access$200(com.sun.tools.javadoc.main.JavadocTool);
+  static {};
+}

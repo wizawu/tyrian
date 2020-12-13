@@ -1,0 +1,15 @@
+Compiled from "CompositeDataSupport.java"
+public class javax.management.openmbean.CompositeDataSupport implements javax.management.openmbean.CompositeData,java.io.Serializable {
+  static final long serialVersionUID;
+  public javax.management.openmbean.CompositeDataSupport(javax.management.openmbean.CompositeType, java.lang.String[], java.lang.Object[]) throws javax.management.openmbean.OpenDataException;
+  public javax.management.openmbean.CompositeDataSupport(javax.management.openmbean.CompositeType, java.util.Map<java.lang.String, ?>) throws javax.management.openmbean.OpenDataException;
+  public javax.management.openmbean.CompositeType getCompositeType();
+  public java.lang.Object get(java.lang.String);
+  public java.lang.Object[] getAll(java.lang.String[]);
+  public boolean containsKey(java.lang.String);
+  public boolean containsValue(java.lang.Object);
+  public java.util.Collection<?> values();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

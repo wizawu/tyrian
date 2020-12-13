@@ -1,0 +1,6 @@
+Compiled from "FuncGenerateId.java"
+public class com.sun.org.apache.xpath.internal.functions.FuncGenerateId extends com.sun.org.apache.xpath.internal.functions.FunctionDef1Arg {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.functions.FuncGenerateId();
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+}

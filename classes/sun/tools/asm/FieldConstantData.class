@@ -1,0 +1,8 @@
+Compiled from "FieldConstantData.java"
+final class sun.tools.asm.FieldConstantData extends sun.tools.asm.ConstantPoolData {
+  sun.tools.java.MemberDefinition field;
+  sun.tools.asm.NameAndTypeData nt;
+  sun.tools.asm.FieldConstantData(sun.tools.asm.ConstantPool, sun.tools.java.MemberDefinition);
+  void write(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
+  int order();
+}

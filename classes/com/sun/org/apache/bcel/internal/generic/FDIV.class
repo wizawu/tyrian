@@ -1,0 +1,5 @@
+Compiled from "FDIV.java"
+public class com.sun.org.apache.bcel.internal.generic.FDIV extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
+  public com.sun.org.apache.bcel.internal.generic.FDIV();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

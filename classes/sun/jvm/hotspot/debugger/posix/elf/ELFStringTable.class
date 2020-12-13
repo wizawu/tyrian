@@ -1,0 +1,5 @@
+Compiled from "ELFStringTable.java"
+public interface sun.jvm.hotspot.debugger.posix.elf.ELFStringTable {
+  public abstract java.lang.String get(int);
+  public abstract int getNumStrings();
+}

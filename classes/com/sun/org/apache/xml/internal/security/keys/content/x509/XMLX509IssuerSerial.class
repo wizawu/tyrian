@@ -1,0 +1,15 @@
+Compiled from "XMLX509IssuerSerial.java"
+public class com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial(org.w3c.dom.Document, java.lang.String, java.math.BigInteger);
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial(org.w3c.dom.Document, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial(org.w3c.dom.Document, java.lang.String, int);
+  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509IssuerSerial(org.w3c.dom.Document, java.security.cert.X509Certificate);
+  public java.math.BigInteger getSerialNumber();
+  public int getSerialNumberInteger();
+  public java.lang.String getIssuerName();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String getBaseLocalName();
+  static {};
+}

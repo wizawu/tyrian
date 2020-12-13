@@ -1,0 +1,7 @@
+Compiled from "XMLFormatter.java"
+public class java.util.logging.XMLFormatter extends java.util.logging.Formatter {
+  public java.util.logging.XMLFormatter();
+  public java.lang.String format(java.util.logging.LogRecord);
+  public java.lang.String getHead(java.util.logging.Handler);
+  public java.lang.String getTail(java.util.logging.Handler);
+}

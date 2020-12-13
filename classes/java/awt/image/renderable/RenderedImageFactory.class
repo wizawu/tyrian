@@ -1,0 +1,4 @@
+Compiled from "RenderedImageFactory.java"
+public interface java.awt.image.renderable.RenderedImageFactory {
+  public abstract java.awt.image.RenderedImage create(java.awt.image.renderable.ParameterBlock, java.awt.RenderingHints);
+}

@@ -1,0 +1,25 @@
+Compiled from "SynthButtonUI.java"
+public class javax.swing.plaf.synth.SynthButtonUI extends javax.swing.plaf.basic.BasicButtonUI implements java.beans.PropertyChangeListener,javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthButtonUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installDefaults(javax.swing.AbstractButton);
+  protected void installListeners(javax.swing.AbstractButton);
+  void updateStyle(javax.swing.AbstractButton);
+  protected void uninstallListeners(javax.swing.AbstractButton);
+  protected void uninstallDefaults(javax.swing.AbstractButton);
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent, int);
+  public int getBaseline(javax.swing.JComponent, int, int);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  void paintBackground(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, javax.swing.JComponent);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  protected javax.swing.Icon getDefaultIcon(javax.swing.AbstractButton);
+  protected javax.swing.Icon getIcon(javax.swing.AbstractButton);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  protected javax.swing.Icon getSizingIcon(javax.swing.AbstractButton);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+}

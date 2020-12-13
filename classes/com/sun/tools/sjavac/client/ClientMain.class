@@ -1,0 +1,6 @@
+Compiled from "ClientMain.java"
+public class com.sun.tools.sjavac.client.ClientMain {
+  public com.sun.tools.sjavac.client.ClientMain();
+  public static int run(java.lang.String[]);
+  public static int run(java.lang.String[], java.io.Writer, java.io.Writer);
+}

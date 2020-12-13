@@ -1,0 +1,33 @@
+Compiled from "ObjectName.java"
+public class javax.management.ObjectName implements java.lang.Comparable<javax.management.ObjectName>, javax.management.QueryExp {
+  public static final javax.management.ObjectName WILDCARD;
+  public static javax.management.ObjectName getInstance(java.lang.String) throws javax.management.MalformedObjectNameException, java.lang.NullPointerException;
+  public static javax.management.ObjectName getInstance(java.lang.String, java.lang.String, java.lang.String) throws javax.management.MalformedObjectNameException;
+  public static javax.management.ObjectName getInstance(java.lang.String, java.util.Hashtable<java.lang.String, java.lang.String>) throws javax.management.MalformedObjectNameException;
+  public static javax.management.ObjectName getInstance(javax.management.ObjectName);
+  public javax.management.ObjectName(java.lang.String) throws javax.management.MalformedObjectNameException;
+  public javax.management.ObjectName(java.lang.String, java.lang.String, java.lang.String) throws javax.management.MalformedObjectNameException;
+  public javax.management.ObjectName(java.lang.String, java.util.Hashtable<java.lang.String, java.lang.String>) throws javax.management.MalformedObjectNameException;
+  public boolean isPattern();
+  public boolean isDomainPattern();
+  public boolean isPropertyPattern();
+  public boolean isPropertyListPattern();
+  public boolean isPropertyValuePattern();
+  public boolean isPropertyValuePattern(java.lang.String);
+  public java.lang.String getCanonicalName();
+  public java.lang.String getDomain();
+  public java.lang.String getKeyProperty(java.lang.String);
+  public java.util.Hashtable<java.lang.String, java.lang.String> getKeyPropertyList();
+  public java.lang.String getKeyPropertyListString();
+  public java.lang.String getCanonicalKeyPropertyListString();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public static java.lang.String quote(java.lang.String);
+  public static java.lang.String unquote(java.lang.String);
+  public boolean apply(javax.management.ObjectName);
+  public void setMBeanServer(javax.management.MBeanServer);
+  public int compareTo(javax.management.ObjectName);
+  public int compareTo(java.lang.Object);
+  static {};
+}

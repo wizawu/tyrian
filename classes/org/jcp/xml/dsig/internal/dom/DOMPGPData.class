@@ -1,0 +1,10 @@
+Compiled from "DOMPGPData.java"
+public final class org.jcp.xml.dsig.internal.dom.DOMPGPData extends org.jcp.xml.dsig.internal.dom.DOMStructure implements javax.xml.crypto.dsig.keyinfo.PGPData {
+  public org.jcp.xml.dsig.internal.dom.DOMPGPData(byte[], java.util.List<? extends javax.xml.crypto.XMLStructure>);
+  public org.jcp.xml.dsig.internal.dom.DOMPGPData(byte[], byte[], java.util.List<? extends javax.xml.crypto.XMLStructure>);
+  public org.jcp.xml.dsig.internal.dom.DOMPGPData(org.w3c.dom.Element) throws javax.xml.crypto.MarshalException;
+  public byte[] getKeyId();
+  public byte[] getKeyPacket();
+  public java.util.List<javax.xml.crypto.XMLStructure> getExternalElements();
+  public void marshal(org.w3c.dom.Node, java.lang.String, javax.xml.crypto.dom.DOMCryptoContext) throws javax.xml.crypto.MarshalException;
+}

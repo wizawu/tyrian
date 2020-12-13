@@ -1,0 +1,9 @@
+Compiled from "DragSourceEvent.java"
+public class java.awt.dnd.DragSourceEvent extends java.util.EventObject {
+  public java.awt.dnd.DragSourceEvent(java.awt.dnd.DragSourceContext);
+  public java.awt.dnd.DragSourceEvent(java.awt.dnd.DragSourceContext, int, int);
+  public java.awt.dnd.DragSourceContext getDragSourceContext();
+  public java.awt.Point getLocation();
+  public int getX();
+  public int getY();
+}

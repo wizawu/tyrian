@@ -1,0 +1,5 @@
+Compiled from "ArithmeticException.java"
+public class java.lang.ArithmeticException extends java.lang.RuntimeException {
+  public java.lang.ArithmeticException();
+  public java.lang.ArithmeticException(java.lang.String);
+}

@@ -1,0 +1,7 @@
+Compiled from "ReverseScriptArrayIterator.java"
+final class jdk.nashorn.internal.runtime.arrays.ReverseScriptArrayIterator extends jdk.nashorn.internal.runtime.arrays.ScriptArrayIterator {
+  public jdk.nashorn.internal.runtime.arrays.ReverseScriptArrayIterator(jdk.nashorn.internal.runtime.ScriptObject, boolean);
+  public boolean isReverse();
+  protected boolean indexInArray();
+  protected long bumpIndex();
+}

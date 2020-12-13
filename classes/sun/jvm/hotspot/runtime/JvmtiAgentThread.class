@@ -1,0 +1,6 @@
+Compiled from "JvmtiAgentThread.java"
+public class sun.jvm.hotspot.runtime.JvmtiAgentThread extends sun.jvm.hotspot.runtime.JavaThread {
+  public sun.jvm.hotspot.runtime.JvmtiAgentThread(sun.jvm.hotspot.debugger.Address);
+  public boolean isJavaThread();
+  public boolean isJvmtiAgentThread();
+}

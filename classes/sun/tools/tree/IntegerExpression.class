@@ -1,0 +1,11 @@
+Compiled from "IntegerExpression.java"
+public class sun.tools.tree.IntegerExpression extends sun.tools.tree.ConstantExpression {
+  int value;
+  sun.tools.tree.IntegerExpression(int, long, sun.tools.java.Type, int);
+  public boolean fitsType(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.java.Type);
+  public java.lang.Object getValue();
+  public boolean equals(int);
+  public boolean equalsDefault();
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public boolean isConstant();
+}

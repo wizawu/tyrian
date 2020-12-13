@@ -1,0 +1,21 @@
+Compiled from "BuildStep.java"
+public class sun.security.provider.certpath.BuildStep {
+  public static final int POSSIBLE;
+  public static final int BACK;
+  public static final int FOLLOW;
+  public static final int FAIL;
+  public static final int SUCCEED;
+  public sun.security.provider.certpath.BuildStep(sun.security.provider.certpath.Vertex, int);
+  public sun.security.provider.certpath.Vertex getVertex();
+  public java.security.cert.X509Certificate getCertificate();
+  public java.lang.String getIssuerName();
+  public java.lang.String getIssuerName(java.lang.String);
+  public java.lang.String getSubjectName();
+  public java.lang.String getSubjectName(java.lang.String);
+  public java.lang.Throwable getThrowable();
+  public int getResult();
+  public java.lang.String resultToString(int);
+  public java.lang.String toString();
+  public java.lang.String verboseToString();
+  public java.lang.String fullToString();
+}

@@ -1,0 +1,22 @@
+Compiled from "KeyTab.java"
+public class sun.security.krb5.internal.ktab.KeyTab implements sun.security.krb5.internal.ktab.KeyTabConstants {
+  public static sun.security.krb5.internal.ktab.KeyTab getInstance(java.lang.String);
+  public static sun.security.krb5.internal.ktab.KeyTab getInstance(java.io.File);
+  public static sun.security.krb5.internal.ktab.KeyTab getInstance();
+  public boolean isMissing();
+  public boolean isValid();
+  public static java.lang.String normalize(java.lang.String);
+  public sun.security.krb5.PrincipalName getOneName();
+  public sun.security.krb5.EncryptionKey[] readServiceKeys(sun.security.krb5.PrincipalName);
+  public boolean findServiceEntry(sun.security.krb5.PrincipalName);
+  public java.lang.String tabName();
+  public void addEntry(sun.security.krb5.PrincipalName, char[], int, boolean) throws sun.security.krb5.KrbException;
+  public void addEntry(sun.security.krb5.PrincipalName, java.lang.String, char[], int, boolean) throws sun.security.krb5.KrbException;
+  public sun.security.krb5.internal.ktab.KeyTabEntry[] getEntries();
+  public static synchronized sun.security.krb5.internal.ktab.KeyTab create() throws java.io.IOException, sun.security.krb5.RealmException;
+  public static synchronized sun.security.krb5.internal.ktab.KeyTab create(java.lang.String) throws java.io.IOException, sun.security.krb5.RealmException;
+  public synchronized void save() throws java.io.IOException;
+  public int deleteEntries(sun.security.krb5.PrincipalName, int, int);
+  public synchronized void createVersion(java.io.File) throws java.io.IOException;
+  static {};
+}

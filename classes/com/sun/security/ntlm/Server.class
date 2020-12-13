@@ -1,0 +1,9 @@
+Compiled from "Server.java"
+public abstract class com.sun.security.ntlm.Server extends com.sun.security.ntlm.NTLM {
+  public com.sun.security.ntlm.Server(java.lang.String, java.lang.String) throws com.sun.security.ntlm.NTLMException;
+  public byte[] type2(byte[], byte[]) throws com.sun.security.ntlm.NTLMException;
+  public java.lang.String[] verify(byte[], byte[]) throws com.sun.security.ntlm.NTLMException;
+  public abstract char[] getPassword(java.lang.String, java.lang.String);
+  public void debug(byte[]);
+  public void debug(java.lang.String, java.lang.Object[]);
+}

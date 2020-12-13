@@ -1,0 +1,45 @@
+Compiled from "Source.java"
+public final class jdk.nashorn.internal.runtime.Source implements jdk.nashorn.internal.runtime.logging.Loggable {
+  jdk.nashorn.internal.runtime.DebuggerSupport$SourceInfo getSourceInfo();
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, char[], boolean);
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, char[]);
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, java.lang.String, boolean);
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, java.lang.String);
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, java.net.URL) throws java.io.IOException;
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, java.net.URL, java.nio.charset.Charset) throws java.io.IOException;
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, java.io.File) throws java.io.IOException;
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, java.nio.file.Path) throws java.io.IOException;
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, java.io.File, java.nio.charset.Charset) throws java.io.IOException;
+  public static jdk.nashorn.internal.runtime.Source sourceFor(java.lang.String, java.io.Reader) throws java.io.IOException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String getString();
+  public java.lang.String getName();
+  public long getLastModified();
+  public java.lang.String getBase();
+  public java.lang.String getString(int, int);
+  public java.lang.String getString(long);
+  public java.net.URL getURL();
+  public java.lang.String getExplicitURL();
+  public void setExplicitURL(java.lang.String);
+  public boolean isEvalCode();
+  public int getLine(int);
+  public int getColumn(int);
+  public java.lang.String getSourceLine(int);
+  public char[] getContent();
+  public int getLength();
+  public static char[] readFully(java.io.Reader) throws java.io.IOException;
+  public static char[] readFully(java.io.File) throws java.io.IOException;
+  public static char[] readFully(java.io.File, java.nio.charset.Charset) throws java.io.IOException;
+  public static char[] readFully(java.net.URL) throws java.io.IOException;
+  public static char[] readFully(java.net.URL, java.nio.charset.Charset) throws java.io.IOException;
+  public java.lang.String getDigest();
+  public static java.lang.String baseURL(java.net.URL);
+  public static char[] readFully(java.io.InputStream) throws java.io.IOException;
+  static byte[] readBytes(java.io.InputStream) throws java.io.IOException;
+  public java.lang.String toString();
+  public jdk.nashorn.internal.runtime.logging.DebugLogger initLogger(jdk.nashorn.internal.runtime.Context);
+  public jdk.nashorn.internal.runtime.logging.DebugLogger getLogger();
+  void dump(java.lang.String);
+  static {};
+}

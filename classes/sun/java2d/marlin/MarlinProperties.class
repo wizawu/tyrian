@@ -1,0 +1,41 @@
+Compiled from "MarlinProperties.java"
+public final class sun.java2d.marlin.MarlinProperties {
+  public static boolean isUseThreadLocal();
+  public static int getInitialEdges();
+  public static int getInitialPixelWidth();
+  public static int getInitialPixelHeight();
+  public static int getSubPixel_Log2_X();
+  public static int getSubPixel_Log2_Y();
+  public static int getTileSize_Log2();
+  public static int getTileWidth_Log2();
+  public static int getBlockSize_Log2();
+  public static boolean isForceRLE();
+  public static boolean isForceNoRLE();
+  public static boolean isUseTileFlags();
+  public static boolean isUseTileFlagsWithHeuristics();
+  public static int getRLEMinWidth();
+  public static boolean isUseSimplifier();
+  public static boolean isUsePathSimplifier();
+  public static float getPathSimplifierPixelTolerance();
+  public static boolean isDoClip();
+  public static boolean isDoClipRuntimeFlag();
+  public static boolean isDoClipAtRuntime();
+  public static boolean isDoClipSubdivider();
+  public static float getSubdividerMinLength();
+  public static boolean isDoStats();
+  public static boolean isDoMonitors();
+  public static boolean isDoChecks();
+  public static boolean isLoggingEnabled();
+  public static boolean isUseLogger();
+  public static boolean isLogCreateContext();
+  public static boolean isLogUnsafeMalloc();
+  public static float getCurveLengthError();
+  public static float getCubicDecD2();
+  public static float getCubicIncD1();
+  public static float getQuadDecD2();
+  static boolean getBoolean(java.lang.String, java.lang.String);
+  static int getInteger(java.lang.String, int, int, int);
+  static int align(int, int);
+  public static double getDouble(java.lang.String, double, double, double);
+  public static float getFloat(java.lang.String, float, float, float);
+}

@@ -1,0 +1,9 @@
+Compiled from "JarSigner.java"
+public final class jdk.security.jarsigner.JarSigner {
+  public void sign(java.util.zip.ZipFile, java.io.OutputStream);
+  public java.lang.String getDigestAlgorithm();
+  public java.lang.String getSignatureAlgorithm();
+  public java.net.URI getTsa();
+  public java.lang.String getSignerName();
+  public java.lang.String getProperty(java.lang.String);
+}

@@ -1,0 +1,11 @@
+Compiled from "RenderingEngine.java"
+public abstract class sun.java2d.pipe.RenderingEngine {
+  public sun.java2d.pipe.RenderingEngine();
+  public static synchronized sun.java2d.pipe.RenderingEngine getInstance();
+  public abstract java.awt.Shape createStrokedShape(java.awt.Shape, float, int, int, float, float[], float);
+  public abstract void strokeTo(java.awt.Shape, java.awt.geom.AffineTransform, java.awt.BasicStroke, boolean, boolean, boolean, sun.awt.geom.PathConsumer2D);
+  public abstract sun.java2d.pipe.AATileGenerator getAATileGenerator(java.awt.Shape, java.awt.geom.AffineTransform, sun.java2d.pipe.Region, java.awt.BasicStroke, boolean, boolean, int[]);
+  public abstract sun.java2d.pipe.AATileGenerator getAATileGenerator(double, double, double, double, double, double, double, double, sun.java2d.pipe.Region, int[]);
+  public abstract float getMinimumAAPenSize();
+  public static void feedConsumer(java.awt.geom.PathIterator, sun.awt.geom.PathConsumer2D);
+}

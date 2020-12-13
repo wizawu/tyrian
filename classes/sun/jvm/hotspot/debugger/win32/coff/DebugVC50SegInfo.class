@@ -1,0 +1,6 @@
+Compiled from "DebugVC50SegInfo.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SegInfo {
+  public abstract short getSegment();
+  public abstract int getOffset();
+  public abstract int getSegmentCodeSize();
+}

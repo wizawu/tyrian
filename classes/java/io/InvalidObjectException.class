@@ -1,0 +1,4 @@
+Compiled from "InvalidObjectException.java"
+public class java.io.InvalidObjectException extends java.io.ObjectStreamException {
+  public java.io.InvalidObjectException(java.lang.String);
+}

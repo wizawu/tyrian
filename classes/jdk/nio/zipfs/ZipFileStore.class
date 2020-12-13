@@ -1,0 +1,14 @@
+Compiled from "ZipFileStore.java"
+class jdk.nio.zipfs.ZipFileStore extends java.nio.file.FileStore {
+  jdk.nio.zipfs.ZipFileStore(jdk.nio.zipfs.ZipPath);
+  public java.lang.String name();
+  public java.lang.String type();
+  public boolean isReadOnly();
+  public boolean supportsFileAttributeView(java.lang.Class<? extends java.nio.file.attribute.FileAttributeView>);
+  public boolean supportsFileAttributeView(java.lang.String);
+  public <V extends java.nio.file.attribute.FileStoreAttributeView> V getFileStoreAttributeView(java.lang.Class<V>);
+  public long getTotalSpace() throws java.io.IOException;
+  public long getUsableSpace() throws java.io.IOException;
+  public long getUnallocatedSpace() throws java.io.IOException;
+  public java.lang.Object getAttribute(java.lang.String) throws java.io.IOException;
+}

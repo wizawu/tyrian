@@ -1,0 +1,25 @@
+Compiled from "AsynchronousSocketChannel.java"
+public abstract class java.nio.channels.AsynchronousSocketChannel implements java.nio.channels.AsynchronousByteChannel,java.nio.channels.NetworkChannel {
+  protected java.nio.channels.AsynchronousSocketChannel(java.nio.channels.spi.AsynchronousChannelProvider);
+  public final java.nio.channels.spi.AsynchronousChannelProvider provider();
+  public static java.nio.channels.AsynchronousSocketChannel open(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException;
+  public static java.nio.channels.AsynchronousSocketChannel open() throws java.io.IOException;
+  public abstract java.nio.channels.AsynchronousSocketChannel bind(java.net.SocketAddress) throws java.io.IOException;
+  public abstract <T> java.nio.channels.AsynchronousSocketChannel setOption(java.net.SocketOption<T>, T) throws java.io.IOException;
+  public abstract java.nio.channels.AsynchronousSocketChannel shutdownInput() throws java.io.IOException;
+  public abstract java.nio.channels.AsynchronousSocketChannel shutdownOutput() throws java.io.IOException;
+  public abstract java.net.SocketAddress getRemoteAddress() throws java.io.IOException;
+  public abstract <A> void connect(java.net.SocketAddress, A, java.nio.channels.CompletionHandler<java.lang.Void, ? super A>);
+  public abstract java.util.concurrent.Future<java.lang.Void> connect(java.net.SocketAddress);
+  public abstract <A> void read(java.nio.ByteBuffer, long, java.util.concurrent.TimeUnit, A, java.nio.channels.CompletionHandler<java.lang.Integer, ? super A>);
+  public final <A> void read(java.nio.ByteBuffer, A, java.nio.channels.CompletionHandler<java.lang.Integer, ? super A>);
+  public abstract java.util.concurrent.Future<java.lang.Integer> read(java.nio.ByteBuffer);
+  public abstract <A> void read(java.nio.ByteBuffer[], int, int, long, java.util.concurrent.TimeUnit, A, java.nio.channels.CompletionHandler<java.lang.Long, ? super A>);
+  public abstract <A> void write(java.nio.ByteBuffer, long, java.util.concurrent.TimeUnit, A, java.nio.channels.CompletionHandler<java.lang.Integer, ? super A>);
+  public final <A> void write(java.nio.ByteBuffer, A, java.nio.channels.CompletionHandler<java.lang.Integer, ? super A>);
+  public abstract java.util.concurrent.Future<java.lang.Integer> write(java.nio.ByteBuffer);
+  public abstract <A> void write(java.nio.ByteBuffer[], int, int, long, java.util.concurrent.TimeUnit, A, java.nio.channels.CompletionHandler<java.lang.Long, ? super A>);
+  public abstract java.net.SocketAddress getLocalAddress() throws java.io.IOException;
+  public java.nio.channels.NetworkChannel setOption(java.net.SocketOption, java.lang.Object) throws java.io.IOException;
+  public java.nio.channels.NetworkChannel bind(java.net.SocketAddress) throws java.io.IOException;
+}

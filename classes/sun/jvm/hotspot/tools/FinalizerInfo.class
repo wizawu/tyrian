@@ -1,0 +1,8 @@
+Compiled from "FinalizerInfo.java"
+public class sun.jvm.hotspot.tools.FinalizerInfo extends sun.jvm.hotspot.tools.Tool {
+  public sun.jvm.hotspot.tools.FinalizerInfo();
+  public sun.jvm.hotspot.tools.FinalizerInfo(sun.jvm.hotspot.debugger.JVMDebugger);
+  public java.lang.String getName();
+  public static void main(java.lang.String[]);
+  public void run();
+}

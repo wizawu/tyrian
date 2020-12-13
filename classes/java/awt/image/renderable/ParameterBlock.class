@@ -1,0 +1,48 @@
+Compiled from "ParameterBlock.java"
+public class java.awt.image.renderable.ParameterBlock implements java.lang.Cloneable,java.io.Serializable {
+  protected java.util.Vector<java.lang.Object> sources;
+  protected java.util.Vector<java.lang.Object> parameters;
+  public java.awt.image.renderable.ParameterBlock();
+  public java.awt.image.renderable.ParameterBlock(java.util.Vector<java.lang.Object>);
+  public java.awt.image.renderable.ParameterBlock(java.util.Vector<java.lang.Object>, java.util.Vector<java.lang.Object>);
+  public java.lang.Object shallowClone();
+  public java.lang.Object clone();
+  public java.awt.image.renderable.ParameterBlock addSource(java.lang.Object);
+  public java.lang.Object getSource(int);
+  public java.awt.image.renderable.ParameterBlock setSource(java.lang.Object, int);
+  public java.awt.image.RenderedImage getRenderedSource(int);
+  public java.awt.image.renderable.RenderableImage getRenderableSource(int);
+  public int getNumSources();
+  public java.util.Vector<java.lang.Object> getSources();
+  public void setSources(java.util.Vector<java.lang.Object>);
+  public void removeSources();
+  public int getNumParameters();
+  public java.util.Vector<java.lang.Object> getParameters();
+  public void setParameters(java.util.Vector<java.lang.Object>);
+  public void removeParameters();
+  public java.awt.image.renderable.ParameterBlock add(java.lang.Object);
+  public java.awt.image.renderable.ParameterBlock add(byte);
+  public java.awt.image.renderable.ParameterBlock add(char);
+  public java.awt.image.renderable.ParameterBlock add(short);
+  public java.awt.image.renderable.ParameterBlock add(int);
+  public java.awt.image.renderable.ParameterBlock add(long);
+  public java.awt.image.renderable.ParameterBlock add(float);
+  public java.awt.image.renderable.ParameterBlock add(double);
+  public java.awt.image.renderable.ParameterBlock set(java.lang.Object, int);
+  public java.awt.image.renderable.ParameterBlock set(byte, int);
+  public java.awt.image.renderable.ParameterBlock set(char, int);
+  public java.awt.image.renderable.ParameterBlock set(short, int);
+  public java.awt.image.renderable.ParameterBlock set(int, int);
+  public java.awt.image.renderable.ParameterBlock set(long, int);
+  public java.awt.image.renderable.ParameterBlock set(float, int);
+  public java.awt.image.renderable.ParameterBlock set(double, int);
+  public java.lang.Object getObjectParameter(int);
+  public byte getByteParameter(int);
+  public char getCharParameter(int);
+  public short getShortParameter(int);
+  public int getIntParameter(int);
+  public long getLongParameter(int);
+  public float getFloatParameter(int);
+  public double getDoubleParameter(int);
+  public java.lang.Class<?>[] getParamClasses();
+}

@@ -1,0 +1,5 @@
+Compiled from "Formattable.java"
+public interface com.sun.tools.javac.api.Formattable {
+  public abstract java.lang.String toString(java.util.Locale, com.sun.tools.javac.api.Messages);
+  public abstract java.lang.String getKind();
+}

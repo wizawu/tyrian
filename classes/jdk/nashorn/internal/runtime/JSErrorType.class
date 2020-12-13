@@ -1,0 +1,13 @@
+Compiled from "JSErrorType.java"
+public final class jdk.nashorn.internal.runtime.JSErrorType extends java.lang.Enum<jdk.nashorn.internal.runtime.JSErrorType> {
+  public static final jdk.nashorn.internal.runtime.JSErrorType ERROR;
+  public static final jdk.nashorn.internal.runtime.JSErrorType EVAL_ERROR;
+  public static final jdk.nashorn.internal.runtime.JSErrorType RANGE_ERROR;
+  public static final jdk.nashorn.internal.runtime.JSErrorType REFERENCE_ERROR;
+  public static final jdk.nashorn.internal.runtime.JSErrorType SYNTAX_ERROR;
+  public static final jdk.nashorn.internal.runtime.JSErrorType TYPE_ERROR;
+  public static final jdk.nashorn.internal.runtime.JSErrorType URI_ERROR;
+  public static jdk.nashorn.internal.runtime.JSErrorType[] values();
+  public static jdk.nashorn.internal.runtime.JSErrorType valueOf(java.lang.String);
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "WindowFocusListener.java"
+public interface java.awt.event.WindowFocusListener extends java.util.EventListener {
+  public abstract void windowGainedFocus(java.awt.event.WindowEvent);
+  public abstract void windowLostFocus(java.awt.event.WindowEvent);
+}

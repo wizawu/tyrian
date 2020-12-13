@@ -1,0 +1,11 @@
+Compiled from "EPollSelectorImpl.java"
+class sun.nio.ch.EPollSelectorImpl extends sun.nio.ch.SelectorImpl {
+  static final boolean $assertionsDisabled;
+  sun.nio.ch.EPollSelectorImpl(java.nio.channels.spi.SelectorProvider) throws java.io.IOException;
+  protected int doSelect(java.util.function.Consumer<java.nio.channels.SelectionKey>, long) throws java.io.IOException;
+  protected void implClose() throws java.io.IOException;
+  protected void implDereg(sun.nio.ch.SelectionKeyImpl) throws java.io.IOException;
+  public void setEventOps(sun.nio.ch.SelectionKeyImpl);
+  public java.nio.channels.Selector wakeup();
+  static {};
+}

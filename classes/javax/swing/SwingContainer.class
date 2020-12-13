@@ -1,0 +1,5 @@
+Compiled from "SwingContainer.java"
+public interface javax.swing.SwingContainer extends java.lang.annotation.Annotation {
+  public abstract boolean value();
+  public abstract java.lang.String delegate();
+}

@@ -1,0 +1,11 @@
+Compiled from "XMLWriter.java"
+public class jdk.internal.util.xml.impl.XMLWriter {
+  public jdk.internal.util.xml.impl.XMLWriter(java.io.OutputStream, java.lang.String, java.nio.charset.Charset) throws jdk.internal.util.xml.XMLStreamException;
+  public boolean canEncode(char);
+  public void write(java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void write(java.lang.String, int, int) throws jdk.internal.util.xml.XMLStreamException;
+  public void write(char[], int, int) throws jdk.internal.util.xml.XMLStreamException;
+  void write(int) throws jdk.internal.util.xml.XMLStreamException;
+  void flush() throws jdk.internal.util.xml.XMLStreamException;
+  void close() throws jdk.internal.util.xml.XMLStreamException;
+}

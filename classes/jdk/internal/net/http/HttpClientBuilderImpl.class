@@ -1,0 +1,35 @@
+Compiled from "HttpClientBuilderImpl.java"
+public class jdk.internal.net.http.HttpClientBuilderImpl implements java.net.http.HttpClient$Builder {
+  java.net.CookieHandler cookieHandler;
+  java.time.Duration connectTimeout;
+  java.net.http.HttpClient$Redirect followRedirects;
+  java.net.ProxySelector proxy;
+  java.net.Authenticator authenticator;
+  java.net.http.HttpClient$Version version;
+  java.util.concurrent.Executor executor;
+  javax.net.ssl.SSLContext sslContext;
+  javax.net.ssl.SSLParameters sslParams;
+  int priority;
+  public jdk.internal.net.http.HttpClientBuilderImpl();
+  public jdk.internal.net.http.HttpClientBuilderImpl cookieHandler(java.net.CookieHandler);
+  public jdk.internal.net.http.HttpClientBuilderImpl connectTimeout(java.time.Duration);
+  public jdk.internal.net.http.HttpClientBuilderImpl sslContext(javax.net.ssl.SSLContext);
+  public jdk.internal.net.http.HttpClientBuilderImpl sslParameters(javax.net.ssl.SSLParameters);
+  public jdk.internal.net.http.HttpClientBuilderImpl executor(java.util.concurrent.Executor);
+  public jdk.internal.net.http.HttpClientBuilderImpl followRedirects(java.net.http.HttpClient$Redirect);
+  public jdk.internal.net.http.HttpClientBuilderImpl version(java.net.http.HttpClient$Version);
+  public jdk.internal.net.http.HttpClientBuilderImpl priority(int);
+  public jdk.internal.net.http.HttpClientBuilderImpl proxy(java.net.ProxySelector);
+  public jdk.internal.net.http.HttpClientBuilderImpl authenticator(java.net.Authenticator);
+  public java.net.http.HttpClient build();
+  public java.net.http.HttpClient$Builder authenticator(java.net.Authenticator);
+  public java.net.http.HttpClient$Builder proxy(java.net.ProxySelector);
+  public java.net.http.HttpClient$Builder priority(int);
+  public java.net.http.HttpClient$Builder version(java.net.http.HttpClient$Version);
+  public java.net.http.HttpClient$Builder followRedirects(java.net.http.HttpClient$Redirect);
+  public java.net.http.HttpClient$Builder executor(java.util.concurrent.Executor);
+  public java.net.http.HttpClient$Builder sslParameters(javax.net.ssl.SSLParameters);
+  public java.net.http.HttpClient$Builder sslContext(javax.net.ssl.SSLContext);
+  public java.net.http.HttpClient$Builder connectTimeout(java.time.Duration);
+  public java.net.http.HttpClient$Builder cookieHandler(java.net.CookieHandler);
+}

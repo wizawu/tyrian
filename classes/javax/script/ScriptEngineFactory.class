@@ -1,0 +1,15 @@
+Compiled from "ScriptEngineFactory.java"
+public interface javax.script.ScriptEngineFactory {
+  public abstract java.lang.String getEngineName();
+  public abstract java.lang.String getEngineVersion();
+  public abstract java.util.List<java.lang.String> getExtensions();
+  public abstract java.util.List<java.lang.String> getMimeTypes();
+  public abstract java.util.List<java.lang.String> getNames();
+  public abstract java.lang.String getLanguageName();
+  public abstract java.lang.String getLanguageVersion();
+  public abstract java.lang.Object getParameter(java.lang.String);
+  public abstract java.lang.String getMethodCallSyntax(java.lang.String, java.lang.String, java.lang.String...);
+  public abstract java.lang.String getOutputStatement(java.lang.String);
+  public abstract java.lang.String getProgram(java.lang.String...);
+  public abstract javax.script.ScriptEngine getScriptEngine();
+}

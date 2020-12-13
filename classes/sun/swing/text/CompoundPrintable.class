@@ -1,0 +1,6 @@
+Compiled from "CompoundPrintable.java"
+class sun.swing.text.CompoundPrintable implements sun.swing.text.CountingPrintable {
+  public sun.swing.text.CompoundPrintable(java.util.List<sun.swing.text.CountingPrintable>);
+  public int print(java.awt.Graphics, java.awt.print.PageFormat, int) throws java.awt.print.PrinterException;
+  public int getNumberOfPages();
+}

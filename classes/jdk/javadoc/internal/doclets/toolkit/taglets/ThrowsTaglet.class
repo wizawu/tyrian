@@ -1,0 +1,7 @@
+Compiled from "ThrowsTaglet.java"
+public class jdk.javadoc.internal.doclets.toolkit.taglets.ThrowsTaglet extends jdk.javadoc.internal.doclets.toolkit.taglets.BaseTaglet implements jdk.javadoc.internal.doclets.toolkit.taglets.InheritableTaglet {
+  public jdk.javadoc.internal.doclets.toolkit.taglets.ThrowsTaglet();
+  public void inherit(jdk.javadoc.internal.doclets.toolkit.util.DocFinder$Input, jdk.javadoc.internal.doclets.toolkit.util.DocFinder$Output);
+  public jdk.javadoc.internal.doclets.toolkit.Content getTagletOutput(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
+  protected jdk.javadoc.internal.doclets.toolkit.Content throwsTagsOutput(java.util.Map<java.util.List<? extends com.sun.source.doctree.DocTree>, javax.lang.model.element.ExecutableElement>, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter, java.util.Set<java.lang.String>, boolean);
+}

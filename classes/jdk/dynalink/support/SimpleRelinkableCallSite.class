@@ -1,0 +1,6 @@
+Compiled from "SimpleRelinkableCallSite.java"
+public class jdk.dynalink.support.SimpleRelinkableCallSite extends jdk.dynalink.support.AbstractRelinkableCallSite {
+  public jdk.dynalink.support.SimpleRelinkableCallSite(jdk.dynalink.CallSiteDescriptor);
+  public void relink(jdk.dynalink.linker.GuardedInvocation, java.lang.invoke.MethodHandle);
+  public void resetAndRelink(jdk.dynalink.linker.GuardedInvocation, java.lang.invoke.MethodHandle);
+}

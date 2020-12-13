@@ -1,0 +1,10 @@
+Compiled from "VMOption.java"
+public class com.sun.management.VMOption {
+  public com.sun.management.VMOption(java.lang.String, java.lang.String, boolean, com.sun.management.VMOption$Origin);
+  public java.lang.String getName();
+  public java.lang.String getValue();
+  public com.sun.management.VMOption$Origin getOrigin();
+  public boolean isWriteable();
+  public java.lang.String toString();
+  public static com.sun.management.VMOption from(javax.management.openmbean.CompositeData);
+}

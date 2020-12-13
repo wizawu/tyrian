@@ -1,0 +1,4 @@
+Compiled from "Value.java"
+public interface com.sun.jdi.Value extends com.sun.jdi.Mirror {
+  public abstract com.sun.jdi.Type type();
+}

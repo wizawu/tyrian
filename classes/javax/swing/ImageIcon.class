@@ -1,0 +1,34 @@
+Compiled from "ImageIcon.java"
+public class javax.swing.ImageIcon implements javax.swing.Icon,java.io.Serializable,javax.accessibility.Accessible {
+  transient java.awt.Image image;
+  transient int loadStatus;
+  java.awt.image.ImageObserver imageObserver;
+  java.lang.String description;
+  protected static final java.awt.Component component;
+  protected static final java.awt.MediaTracker tracker;
+  int width;
+  int height;
+  public javax.swing.ImageIcon(java.lang.String, java.lang.String);
+  public javax.swing.ImageIcon(java.lang.String);
+  public javax.swing.ImageIcon(java.net.URL, java.lang.String);
+  public javax.swing.ImageIcon(java.net.URL);
+  public javax.swing.ImageIcon(java.awt.Image, java.lang.String);
+  public javax.swing.ImageIcon(java.awt.Image);
+  public javax.swing.ImageIcon(byte[], java.lang.String);
+  public javax.swing.ImageIcon(byte[]);
+  public javax.swing.ImageIcon();
+  protected void loadImage(java.awt.Image);
+  public int getImageLoadStatus();
+  public java.awt.Image getImage();
+  public void setImage(java.awt.Image);
+  public java.lang.String getDescription();
+  public void setDescription(java.lang.String);
+  public synchronized void paintIcon(java.awt.Component, java.awt.Graphics, int, int);
+  public int getIconWidth();
+  public int getIconHeight();
+  public void setImageObserver(java.awt.image.ImageObserver);
+  public java.awt.image.ImageObserver getImageObserver();
+  public java.lang.String toString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  static {};
+}

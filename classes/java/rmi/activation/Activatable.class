@@ -1,0 +1,16 @@
+Compiled from "Activatable.java"
+public abstract class java.rmi.activation.Activatable extends java.rmi.server.RemoteServer {
+  protected java.rmi.activation.Activatable(java.lang.String, java.rmi.MarshalledObject<?>, boolean, int) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;
+  protected java.rmi.activation.Activatable(java.lang.String, java.rmi.MarshalledObject<?>, boolean, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;
+  protected java.rmi.activation.Activatable(java.rmi.activation.ActivationID, int) throws java.rmi.RemoteException;
+  protected java.rmi.activation.Activatable(java.rmi.activation.ActivationID, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException;
+  protected java.rmi.activation.ActivationID getID();
+  public static java.rmi.Remote register(java.rmi.activation.ActivationDesc) throws java.rmi.activation.UnknownGroupException, java.rmi.activation.ActivationException, java.rmi.RemoteException;
+  public static boolean inactive(java.rmi.activation.ActivationID) throws java.rmi.activation.UnknownObjectException, java.rmi.activation.ActivationException, java.rmi.RemoteException;
+  public static void unregister(java.rmi.activation.ActivationID) throws java.rmi.activation.UnknownObjectException, java.rmi.activation.ActivationException, java.rmi.RemoteException;
+  public static java.rmi.activation.ActivationID exportObject(java.rmi.Remote, java.lang.String, java.rmi.MarshalledObject<?>, boolean, int) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;
+  public static java.rmi.activation.ActivationID exportObject(java.rmi.Remote, java.lang.String, java.rmi.MarshalledObject<?>, boolean, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;
+  public static java.rmi.Remote exportObject(java.rmi.Remote, java.rmi.activation.ActivationID, int) throws java.rmi.RemoteException;
+  public static java.rmi.Remote exportObject(java.rmi.Remote, java.rmi.activation.ActivationID, int, java.rmi.server.RMIClientSocketFactory, java.rmi.server.RMIServerSocketFactory) throws java.rmi.RemoteException;
+  public static boolean unexportObject(java.rmi.Remote, boolean) throws java.rmi.NoSuchObjectException;
+}

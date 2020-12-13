@@ -1,0 +1,5 @@
+Compiled from "MotifProgressBarUI.java"
+public class com.sun.java.swing.plaf.motif.MotifProgressBarUI extends javax.swing.plaf.basic.BasicProgressBarUI {
+  public com.sun.java.swing.plaf.motif.MotifProgressBarUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+}

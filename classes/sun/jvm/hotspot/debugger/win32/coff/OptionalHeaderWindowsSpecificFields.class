@@ -1,0 +1,23 @@
+Compiled from "OptionalHeaderWindowsSpecificFields.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.OptionalHeaderWindowsSpecificFields {
+  public abstract long getImageBase();
+  public abstract int getSectionAlignment();
+  public abstract int getFileAlignment();
+  public abstract short getMajorOperatingSystemVersion();
+  public abstract short getMinorOperatingSystemVersion();
+  public abstract short getMajorImageVersion();
+  public abstract short getMinorImageVersion();
+  public abstract short getMajorSubsystemVersion();
+  public abstract short getMinorSubsystemVersion();
+  public abstract int getSizeOfImage();
+  public abstract int getSizeOfHeaders();
+  public abstract int getCheckSum();
+  public abstract short getSubsystem();
+  public abstract short getDLLCharacteristics();
+  public abstract long getSizeOfStackReserve();
+  public abstract long getSizeOfStackCommit();
+  public abstract long getSizeOfHeapReserve();
+  public abstract long getSizeOfHeapCommit();
+  public abstract int getLoaderFlags();
+  public abstract int getNumberOfRvaAndSizes();
+}

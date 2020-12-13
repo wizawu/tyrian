@@ -1,0 +1,5 @@
+Compiled from "PhaseRegAlloc.java"
+public class sun.jvm.hotspot.opto.PhaseRegAlloc extends sun.jvm.hotspot.opto.Phase {
+  public sun.jvm.hotspot.opto.PhaseRegAlloc(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

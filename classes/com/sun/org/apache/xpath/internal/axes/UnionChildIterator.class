@@ -1,0 +1,8 @@
+Compiled from "UnionChildIterator.java"
+public class com.sun.org.apache.xpath.internal.axes.UnionChildIterator extends com.sun.org.apache.xpath.internal.axes.ChildTestIterator {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.axes.UnionChildIterator();
+  public void addNodeTest(com.sun.org.apache.xpath.internal.axes.PredicatedNodeTest);
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public short acceptNode(int);
+}

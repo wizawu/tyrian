@@ -1,0 +1,4 @@
+Compiled from "DoubleToIntFunction.java"
+public interface java.util.function.DoubleToIntFunction {
+  public abstract int applyAsInt(double);
+}

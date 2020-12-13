@@ -1,0 +1,6 @@
+Compiled from "NotationDeclaration.java"
+public interface javax.xml.stream.events.NotationDeclaration extends javax.xml.stream.events.XMLEvent {
+  public abstract java.lang.String getName();
+  public abstract java.lang.String getPublicId();
+  public abstract java.lang.String getSystemId();
+}

@@ -1,0 +1,5 @@
+Compiled from "Nonce.java"
+public class sun.security.krb5.internal.crypto.Nonce {
+  public sun.security.krb5.internal.crypto.Nonce();
+  public static synchronized int value();
+}

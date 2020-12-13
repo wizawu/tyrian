@@ -1,0 +1,29 @@
+Compiled from "SimpleInstrument.java"
+public class com.sun.media.sound.SimpleInstrument extends com.sun.media.sound.ModelInstrument {
+  protected int preset;
+  protected int bank;
+  protected boolean percussion;
+  protected java.lang.String name;
+  protected java.util.List<com.sun.media.sound.SimpleInstrument$SimpleInstrumentPart> parts;
+  public com.sun.media.sound.SimpleInstrument();
+  public void clear();
+  public void add(com.sun.media.sound.ModelPerformer[], int, int, int, int, int);
+  public void add(com.sun.media.sound.ModelPerformer[], int, int, int, int);
+  public void add(com.sun.media.sound.ModelPerformer[], int, int);
+  public void add(com.sun.media.sound.ModelPerformer[]);
+  public void add(com.sun.media.sound.ModelPerformer, int, int, int, int, int);
+  public void add(com.sun.media.sound.ModelPerformer, int, int, int, int);
+  public void add(com.sun.media.sound.ModelPerformer, int, int);
+  public void add(com.sun.media.sound.ModelPerformer);
+  public void add(com.sun.media.sound.ModelInstrument, int, int, int, int, int);
+  public void add(com.sun.media.sound.ModelInstrument, int, int, int, int);
+  public void add(com.sun.media.sound.ModelInstrument, int, int);
+  public void add(com.sun.media.sound.ModelInstrument);
+  public com.sun.media.sound.ModelPerformer[] getPerformers();
+  public java.lang.Object getData();
+  public java.lang.String getName();
+  public void setName(java.lang.String);
+  public com.sun.media.sound.ModelPatch getPatch();
+  public void setPatch(javax.sound.midi.Patch);
+  public javax.sound.midi.Patch getPatch();
+}

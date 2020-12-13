@@ -1,0 +1,4 @@
+Compiled from "PrintFilesHandler.java"
+public interface java.awt.desktop.PrintFilesHandler {
+  public abstract void printFiles(java.awt.desktop.PrintFilesEvent);
+}

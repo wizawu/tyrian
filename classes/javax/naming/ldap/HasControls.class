@@ -1,0 +1,4 @@
+Compiled from "HasControls.java"
+public interface javax.naming.ldap.HasControls {
+  public abstract javax.naming.ldap.Control[] getControls() throws javax.naming.NamingException;
+}

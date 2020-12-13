@@ -1,0 +1,4 @@
+Compiled from "RowMapper.java"
+public interface javax.swing.tree.RowMapper {
+  public abstract int[] getRowsForPaths(javax.swing.tree.TreePath[]);
+}

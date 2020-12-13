@@ -1,0 +1,10 @@
+Compiled from "OutputStream.java"
+public abstract class java.io.OutputStream implements java.io.Closeable,java.io.Flushable {
+  public java.io.OutputStream();
+  public static java.io.OutputStream nullOutputStream();
+  public abstract void write(int) throws java.io.IOException;
+  public void write(byte[]) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void flush() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

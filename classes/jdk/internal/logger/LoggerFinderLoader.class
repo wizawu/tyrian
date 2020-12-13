@@ -1,0 +1,8 @@
+Compiled from "LoggerFinderLoader.java"
+public final class jdk.internal.logger.LoggerFinderLoader {
+  static final java.security.Permission CLASSLOADER_PERMISSION;
+  static final java.security.Permission READ_PERMISSION;
+  public static final java.lang.RuntimePermission LOGGERFINDER_PERMISSION;
+  public static java.lang.System$LoggerFinder getLoggerFinder();
+  static {};
+}

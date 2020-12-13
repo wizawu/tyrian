@@ -1,0 +1,9 @@
+Compiled from "CSVParseException.java"
+public class com.sun.tools.jdeprscan.CSVParseException extends java.lang.IllegalArgumentException {
+  final java.lang.String input;
+  final int index;
+  public com.sun.tools.jdeprscan.CSVParseException(java.lang.String, java.lang.String, int);
+  public java.lang.String getInput();
+  public int getIndex();
+  public java.lang.String getMessage();
+}

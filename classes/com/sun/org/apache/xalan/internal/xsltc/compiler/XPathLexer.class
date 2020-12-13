@@ -1,0 +1,18 @@
+Compiled from "XPathLexer.java"
+class com.sun.org.apache.xalan.internal.xsltc.compiler.XPathLexer implements com.sun.java_cup.internal.runtime.Scanner {
+  public final int YYEOF;
+  int last;
+  int beforeLast;
+  void initialize();
+  static boolean isWhitespace(int);
+  com.sun.java_cup.internal.runtime.Symbol disambiguateAxisOrFunction(int) throws java.lang.Exception;
+  com.sun.java_cup.internal.runtime.Symbol disambiguateOperator(int) throws java.lang.Exception;
+  com.sun.java_cup.internal.runtime.Symbol newSymbol(int);
+  com.sun.java_cup.internal.runtime.Symbol newSymbol(int, java.lang.String);
+  com.sun.java_cup.internal.runtime.Symbol newSymbol(int, java.lang.Long);
+  com.sun.java_cup.internal.runtime.Symbol newSymbol(int, java.lang.Double);
+  com.sun.org.apache.xalan.internal.xsltc.compiler.XPathLexer(java.io.Reader);
+  com.sun.org.apache.xalan.internal.xsltc.compiler.XPathLexer(java.io.InputStream);
+  public com.sun.java_cup.internal.runtime.Symbol next_token() throws java.io.IOException, java.lang.Exception;
+  static {};
+}

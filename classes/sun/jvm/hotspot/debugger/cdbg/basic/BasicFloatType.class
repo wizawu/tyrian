@@ -1,0 +1,8 @@
+Compiled from "BasicFloatType.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicFloatType extends sun.jvm.hotspot.debugger.cdbg.basic.BasicType implements sun.jvm.hotspot.debugger.cdbg.FloatType {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicFloatType(java.lang.String, int);
+  public sun.jvm.hotspot.debugger.cdbg.FloatType asFloat();
+  public void iterateObject(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.cdbg.ObjectVisitor, sun.jvm.hotspot.debugger.cdbg.FieldIdentifier);
+  protected sun.jvm.hotspot.debugger.cdbg.Type createCVVariant(int);
+  public void visit(sun.jvm.hotspot.debugger.cdbg.TypeVisitor);
+}

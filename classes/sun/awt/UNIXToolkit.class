@@ -1,0 +1,21 @@
+Compiled from "UNIXToolkit.java"
+public abstract class sun.awt.UNIXToolkit extends sun.awt.SunToolkit {
+  public static final java.lang.Object GTK_LOCK;
+  public static final java.lang.String FONTCONFIGAAHINT;
+  public sun.awt.UNIXToolkit();
+  public static int getDatatransferTimeout();
+  public boolean isNativeGTKAvailable();
+  public boolean loadGTK();
+  protected java.lang.Object lazilyLoadDesktopProperty(java.lang.String);
+  protected java.lang.Object lazilyLoadGTKIcon(java.lang.String);
+  public java.awt.image.BufferedImage getGTKIcon(java.lang.String);
+  public java.awt.image.BufferedImage getStockIcon(int, java.lang.String, int, int, java.lang.String);
+  public void loadIconCallback(byte[], int, int, int, int, int, boolean);
+  public void sync();
+  protected java.awt.RenderingHints getDesktopAAHints();
+  public boolean checkGtkVersion(int, int, int);
+  public static sun.awt.UNIXToolkit$GtkVersions getEnabledGtkVersion();
+  public static sun.awt.UNIXToolkit$GtkVersions getGtkVersion();
+  public static boolean isGtkVerbose();
+  static {};
+}

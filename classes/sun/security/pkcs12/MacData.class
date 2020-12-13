@@ -1,0 +1,11 @@
+Compiled from "MacData.java"
+class sun.security.pkcs12.MacData {
+  sun.security.pkcs12.MacData(sun.security.util.DerInputStream) throws java.io.IOException, sun.security.pkcs.ParsingException;
+  sun.security.pkcs12.MacData(java.lang.String, byte[], byte[], int) throws java.security.NoSuchAlgorithmException;
+  sun.security.pkcs12.MacData(java.security.AlgorithmParameters, byte[], byte[], int) throws java.security.NoSuchAlgorithmException;
+  java.lang.String getDigestAlgName();
+  byte[] getSalt();
+  int getIterations();
+  byte[] getDigest();
+  public byte[] getEncoded() throws java.security.NoSuchAlgorithmException, java.io.IOException;
+}

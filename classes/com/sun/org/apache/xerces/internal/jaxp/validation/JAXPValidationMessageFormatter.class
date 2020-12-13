@@ -1,0 +1,5 @@
+Compiled from "JAXPValidationMessageFormatter.java"
+final class com.sun.org.apache.xerces.internal.jaxp.validation.JAXPValidationMessageFormatter {
+  com.sun.org.apache.xerces.internal.jaxp.validation.JAXPValidationMessageFormatter();
+  public static java.lang.String formatMessage(java.util.Locale, java.lang.String, java.lang.Object[]) throws java.util.MissingResourceException;
+}

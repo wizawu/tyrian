@@ -1,0 +1,5 @@
+Compiled from "ServerProvider.java"
+public class com.sun.jmx.remote.protocol.rmi.ServerProvider implements javax.management.remote.JMXConnectorServerProvider {
+  public com.sun.jmx.remote.protocol.rmi.ServerProvider();
+  public javax.management.remote.JMXConnectorServer newJMXConnectorServer(javax.management.remote.JMXServiceURL, java.util.Map<java.lang.String, ?>, javax.management.MBeanServer) throws java.io.IOException;
+}

@@ -1,0 +1,11 @@
+Compiled from "TypeMetadata.java"
+public class com.sun.tools.javac.code.TypeMetadata {
+  public static final com.sun.tools.javac.code.TypeMetadata EMPTY;
+  public com.sun.tools.javac.code.TypeMetadata(com.sun.tools.javac.code.TypeMetadata$Entry);
+  public com.sun.tools.javac.code.TypeMetadata(com.sun.tools.javac.code.TypeMetadata);
+  public com.sun.tools.javac.code.TypeMetadata combine(com.sun.tools.javac.code.TypeMetadata$Entry);
+  public com.sun.tools.javac.code.TypeMetadata combineAll(com.sun.tools.javac.code.TypeMetadata);
+  public com.sun.tools.javac.code.TypeMetadata without(com.sun.tools.javac.code.TypeMetadata$Entry$Kind);
+  public com.sun.tools.javac.code.TypeMetadata$Entry get(com.sun.tools.javac.code.TypeMetadata$Entry$Kind);
+  static {};
+}

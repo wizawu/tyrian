@@ -1,0 +1,4 @@
+Compiled from "BeanContextProxy.java"
+public interface java.beans.beancontext.BeanContextProxy {
+  public abstract java.beans.beancontext.BeanContextChild getBeanContextProxy();
+}

@@ -1,0 +1,12 @@
+Compiled from "JrtFileAttributeView.java"
+final class jdk.internal.jrtfs.JrtFileAttributeView implements java.nio.file.attribute.BasicFileAttributeView {
+  static <V extends java.nio.file.attribute.FileAttributeView> V get(jdk.internal.jrtfs.JrtPath, java.lang.Class<V>, java.nio.file.LinkOption...);
+  static jdk.internal.jrtfs.JrtFileAttributeView get(jdk.internal.jrtfs.JrtPath, java.lang.String, java.nio.file.LinkOption...);
+  public java.lang.String name();
+  public jdk.internal.jrtfs.JrtFileAttributes readAttributes() throws java.io.IOException;
+  public void setTimes(java.nio.file.attribute.FileTime, java.nio.file.attribute.FileTime, java.nio.file.attribute.FileTime) throws java.io.IOException;
+  static void setAttribute(jdk.internal.jrtfs.JrtPath, java.lang.String, java.lang.Object) throws java.io.IOException;
+  static java.util.Map<java.lang.String, java.lang.Object> readAttributes(jdk.internal.jrtfs.JrtPath, java.lang.String, java.nio.file.LinkOption...) throws java.io.IOException;
+  static java.lang.Object attribute(jdk.internal.jrtfs.JrtFileAttributeView$AttrID, jdk.internal.jrtfs.JrtFileAttributes, boolean);
+  public java.nio.file.attribute.BasicFileAttributes readAttributes() throws java.io.IOException;
+}

@@ -1,0 +1,12 @@
+Compiled from "LinuxNativeDispatcher.java"
+class sun.nio.fs.LinuxNativeDispatcher extends sun.nio.fs.UnixNativeDispatcher {
+  static long setmntent(byte[], byte[]) throws sun.nio.fs.UnixException;
+  static int getmntent(long, sun.nio.fs.UnixMountEntry, int) throws sun.nio.fs.UnixException;
+  static native int getmntent0(long, sun.nio.fs.UnixMountEntry, long, int) throws sun.nio.fs.UnixException;
+  static native void endmntent(long) throws sun.nio.fs.UnixException;
+  static int fgetxattr(int, byte[], long, int) throws sun.nio.fs.UnixException;
+  static void fsetxattr(int, byte[], long, int) throws sun.nio.fs.UnixException;
+  static void fremovexattr(int, byte[]) throws sun.nio.fs.UnixException;
+  static native int flistxattr(int, long, int) throws sun.nio.fs.UnixException;
+  static {};
+}

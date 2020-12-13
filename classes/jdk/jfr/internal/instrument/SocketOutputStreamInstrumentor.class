@@ -1,0 +1,4 @@
+Compiled from "SocketOutputStreamInstrumentor.java"
+final class jdk.jfr.internal.instrument.SocketOutputStreamInstrumentor {
+  void silenceFindBugsUnwrittenField(java.net.InetAddress);
+}

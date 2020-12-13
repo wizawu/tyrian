@@ -1,0 +1,10 @@
+Compiled from "JPEGImageReadParam.java"
+public class javax.imageio.plugins.jpeg.JPEGImageReadParam extends javax.imageio.ImageReadParam {
+  public javax.imageio.plugins.jpeg.JPEGImageReadParam();
+  public boolean areTablesSet();
+  public void setDecodeTables(javax.imageio.plugins.jpeg.JPEGQTable[], javax.imageio.plugins.jpeg.JPEGHuffmanTable[], javax.imageio.plugins.jpeg.JPEGHuffmanTable[]);
+  public void unsetDecodeTables();
+  public javax.imageio.plugins.jpeg.JPEGQTable[] getQTables();
+  public javax.imageio.plugins.jpeg.JPEGHuffmanTable[] getDCHuffmanTables();
+  public javax.imageio.plugins.jpeg.JPEGHuffmanTable[] getACHuffmanTables();
+}

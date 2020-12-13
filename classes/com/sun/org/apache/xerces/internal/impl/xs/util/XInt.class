@@ -1,0 +1,8 @@
+Compiled from "XInt.java"
+public final class com.sun.org.apache.xerces.internal.impl.xs.util.XInt {
+  com.sun.org.apache.xerces.internal.impl.xs.util.XInt(int);
+  public final int intValue();
+  public final short shortValue();
+  public final boolean equals(com.sun.org.apache.xerces.internal.impl.xs.util.XInt);
+  public java.lang.String toString();
+}

@@ -1,0 +1,6 @@
+Compiled from "MemoizedByte.java"
+public abstract class sun.jvm.hotspot.utilities.memo.MemoizedByte {
+  public sun.jvm.hotspot.utilities.memo.MemoizedByte();
+  protected abstract byte computeValue();
+  public byte getValue();
+}

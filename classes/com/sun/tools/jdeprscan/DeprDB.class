@@ -1,0 +1,14 @@
+Compiled from "DeprDB.java"
+public class com.sun.tools.jdeprscan.DeprDB {
+  final java.util.Map<java.lang.String, com.sun.tools.jdeprscan.DeprData> types;
+  final java.util.Map<java.lang.String, java.util.Map<java.lang.String, com.sun.tools.jdeprscan.DeprData>> methods;
+  final java.util.Map<java.lang.String, java.util.Map<java.lang.String, com.sun.tools.jdeprscan.DeprData>> fields;
+  static final java.util.Set<java.lang.String> validElementKinds;
+  public static java.util.List<com.sun.tools.jdeprscan.DeprData> loadFromFile(java.lang.String) throws java.io.IOException;
+  public static com.sun.tools.jdeprscan.DeprDB loadFromList(java.util.List<com.sun.tools.jdeprscan.DeprData>);
+  public java.lang.String toString();
+  public com.sun.tools.jdeprscan.DeprData getTypeDeprecated(java.lang.String);
+  public com.sun.tools.jdeprscan.DeprData getMethodDeprecated(java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.tools.jdeprscan.DeprData getFieldDeprecated(java.lang.String, java.lang.String);
+  static {};
+}

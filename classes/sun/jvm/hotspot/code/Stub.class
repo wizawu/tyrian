@@ -1,0 +1,10 @@
+Compiled from "Stub.java"
+public class sun.jvm.hotspot.code.Stub extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.code.Stub(sun.jvm.hotspot.debugger.Address);
+  public long getSize();
+  public sun.jvm.hotspot.debugger.Address getAddress();
+  public sun.jvm.hotspot.debugger.Address codeBegin();
+  public sun.jvm.hotspot.debugger.Address codeEnd();
+  public void verify();
+  public void printOn(java.io.PrintStream);
+}

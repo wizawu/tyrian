@@ -1,0 +1,12 @@
+Compiled from "CodeStore.java"
+public abstract class jdk.nashorn.internal.runtime.CodeStore implements jdk.nashorn.internal.runtime.logging.Loggable {
+  protected jdk.nashorn.internal.runtime.CodeStore();
+  public jdk.nashorn.internal.runtime.logging.DebugLogger initLogger(jdk.nashorn.internal.runtime.Context);
+  public jdk.nashorn.internal.runtime.logging.DebugLogger getLogger();
+  public static jdk.nashorn.internal.runtime.CodeStore newCodeStore(jdk.nashorn.internal.runtime.Context);
+  public jdk.nashorn.internal.runtime.StoredScript store(java.lang.String, jdk.nashorn.internal.runtime.Source, java.lang.String, java.util.Map<java.lang.String, byte[]>, java.util.Map<java.lang.Integer, jdk.nashorn.internal.runtime.FunctionInitializer>, java.lang.Object[], int);
+  public abstract jdk.nashorn.internal.runtime.StoredScript store(java.lang.String, jdk.nashorn.internal.runtime.Source, jdk.nashorn.internal.runtime.StoredScript);
+  public abstract jdk.nashorn.internal.runtime.StoredScript load(jdk.nashorn.internal.runtime.Source, java.lang.String);
+  public jdk.nashorn.internal.runtime.StoredScript storedScriptFor(jdk.nashorn.internal.runtime.Source, java.lang.String, java.util.Map<java.lang.String, byte[]>, java.util.Map<java.lang.Integer, jdk.nashorn.internal.runtime.FunctionInitializer>, java.lang.Object[], int);
+  public static java.lang.String getCacheKey(java.lang.Object, jdk.nashorn.internal.codegen.types.Type[]);
+}

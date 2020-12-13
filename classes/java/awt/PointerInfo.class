@@ -1,0 +1,6 @@
+Compiled from "PointerInfo.java"
+public class java.awt.PointerInfo {
+  java.awt.PointerInfo(java.awt.GraphicsDevice, java.awt.Point);
+  public java.awt.GraphicsDevice getDevice();
+  public java.awt.Point getLocation();
+}

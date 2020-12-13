@@ -1,0 +1,13 @@
+Compiled from "ZForwardingTable.java"
+public class sun.jvm.hotspot.gc.z.ZForwardingTable extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.gc.z.ZForwardingTable(sun.jvm.hotspot.debugger.Address);
+  sun.jvm.hotspot.debugger.Address table();
+  long size();
+  sun.jvm.hotspot.gc.z.ZForwardingTableEntry at(sun.jvm.hotspot.gc.z.ZForwardingTableCursor);
+  sun.jvm.hotspot.gc.z.ZForwardingTableEntry first(long, sun.jvm.hotspot.gc.z.ZForwardingTableCursor);
+  sun.jvm.hotspot.gc.z.ZForwardingTableEntry next(sun.jvm.hotspot.gc.z.ZForwardingTableCursor);
+  sun.jvm.hotspot.gc.z.ZForwardingTableEntry find(long, sun.jvm.hotspot.gc.z.ZForwardingTableCursor);
+  sun.jvm.hotspot.gc.z.ZForwardingTableEntry find(long);
+  void dump();
+  static {};
+}

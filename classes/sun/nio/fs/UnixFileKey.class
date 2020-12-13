@@ -1,0 +1,7 @@
+Compiled from "UnixFileKey.java"
+class sun.nio.fs.UnixFileKey {
+  sun.nio.fs.UnixFileKey(long, long);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

@@ -1,0 +1,10 @@
+Compiled from "Underline.java"
+abstract class sun.font.Underline {
+  sun.font.Underline();
+  abstract void drawUnderline(java.awt.Graphics2D, float, float, float, float);
+  abstract float getLowerDrawLimit(float);
+  abstract java.awt.Shape getUnderlineShape(float, float, float, float);
+  static sun.font.Underline getUnderline(java.lang.Object);
+  static sun.font.Underline getUnderline(int);
+  static {};
+}

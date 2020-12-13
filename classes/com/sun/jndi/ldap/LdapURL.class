@@ -1,0 +1,13 @@
+Compiled from "LdapURL.java"
+public final class com.sun.jndi.ldap.LdapURL extends com.sun.jndi.toolkit.url.Uri {
+  public com.sun.jndi.ldap.LdapURL(java.lang.String) throws javax.naming.NamingException;
+  public boolean useSsl();
+  public java.lang.String getDN();
+  public java.lang.String getAttributes();
+  public java.lang.String getScope();
+  public java.lang.String getFilter();
+  public java.lang.String getExtensions();
+  public static java.lang.String[] fromList(java.lang.String) throws javax.naming.NamingException;
+  public static boolean hasQueryComponents(java.lang.String);
+  static java.lang.String toUrlString(java.lang.String, int, java.lang.String, boolean);
+}

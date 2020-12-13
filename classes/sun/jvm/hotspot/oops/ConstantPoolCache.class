@@ -1,0 +1,15 @@
+Compiled from "ConstantPoolCache.java"
+public class sun.jvm.hotspot.oops.ConstantPoolCache extends sun.jvm.hotspot.oops.Metadata {
+  public sun.jvm.hotspot.oops.ConstantPoolCache(sun.jvm.hotspot.debugger.Address);
+  public boolean isConstantPoolCache();
+  public sun.jvm.hotspot.oops.ConstantPool getConstants();
+  public long getSize();
+  public sun.jvm.hotspot.oops.ConstantPoolCacheEntry getEntryAt(int);
+  public int getIntAt(int, int);
+  public void printValueOn(java.io.PrintStream);
+  public int getLength();
+  public void iterateFields(sun.jvm.hotspot.oops.MetadataVisitor);
+  public sun.jvm.hotspot.oops.Oop getResolvedReferences();
+  public sun.jvm.hotspot.utilities.U2Array referenceMap();
+  static {};
+}

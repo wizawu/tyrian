@@ -1,0 +1,5 @@
+Compiled from "XML11NamespaceBinder.java"
+public class com.sun.org.apache.xerces.internal.impl.XML11NamespaceBinder extends com.sun.org.apache.xerces.internal.impl.XMLNamespaceBinder {
+  public com.sun.org.apache.xerces.internal.impl.XML11NamespaceBinder();
+  protected boolean prefixBoundToNullURI(java.lang.String, java.lang.String);
+}

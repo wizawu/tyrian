@@ -1,0 +1,6 @@
+Compiled from "DrbgParameters.java"
+public class java.security.DrbgParameters {
+  public static java.security.DrbgParameters$Instantiation instantiation(int, java.security.DrbgParameters$Capability, byte[]);
+  public static java.security.DrbgParameters$NextBytes nextBytes(int, boolean, byte[]);
+  public static java.security.DrbgParameters$Reseed reseed(boolean, byte[]);
+}

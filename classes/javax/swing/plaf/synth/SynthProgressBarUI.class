@@ -1,0 +1,20 @@
+Compiled from "SynthProgressBarUI.java"
+public class javax.swing.plaf.synth.SynthProgressBarUI extends javax.swing.plaf.basic.BasicProgressBarUI implements javax.swing.plaf.synth.SynthUI,java.beans.PropertyChangeListener {
+  public javax.swing.plaf.synth.SynthProgressBarUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installListeners();
+  protected void uninstallListeners();
+  protected void installDefaults();
+  protected void uninstallDefaults();
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  public int getBaseline(javax.swing.JComponent, int, int);
+  protected java.awt.Rectangle getBox(java.awt.Rectangle);
+  protected void setAnimationIndex(int);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  protected void paintText(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, java.lang.String);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+}

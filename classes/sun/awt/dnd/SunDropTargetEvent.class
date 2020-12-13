@@ -1,0 +1,10 @@
+Compiled from "SunDropTargetEvent.java"
+public final class sun.awt.dnd.SunDropTargetEvent extends java.awt.event.MouseEvent {
+  public static final int MOUSE_DROPPED;
+  public sun.awt.dnd.SunDropTargetEvent(java.awt.Component, int, int, int, sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher);
+  public void dispatch();
+  public void consume();
+  public void dispose();
+  public sun.awt.dnd.SunDropTargetContextPeer$EventDispatcher getDispatcher();
+  public java.lang.String paramString();
+}

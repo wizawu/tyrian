@@ -1,0 +1,9 @@
+Compiled from "AMD64CurrentFrameGuess.java"
+public class sun.jvm.hotspot.runtime.amd64.AMD64CurrentFrameGuess {
+  public sun.jvm.hotspot.runtime.amd64.AMD64CurrentFrameGuess(sun.jvm.hotspot.debugger.amd64.AMD64ThreadContext, sun.jvm.hotspot.runtime.JavaThread);
+  public boolean run(long);
+  public sun.jvm.hotspot.debugger.Address getSP();
+  public sun.jvm.hotspot.debugger.Address getFP();
+  public sun.jvm.hotspot.debugger.Address getPC();
+  static {};
+}

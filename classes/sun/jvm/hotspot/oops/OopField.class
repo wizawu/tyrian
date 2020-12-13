@@ -1,0 +1,11 @@
+Compiled from "OopField.java"
+public class sun.jvm.hotspot.oops.OopField extends sun.jvm.hotspot.oops.Field {
+  public sun.jvm.hotspot.oops.OopField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
+  public sun.jvm.hotspot.oops.OopField(sun.jvm.hotspot.types.OopField, long);
+  public sun.jvm.hotspot.oops.OopField(sun.jvm.hotspot.oops.InstanceKlass, int);
+  public sun.jvm.hotspot.oops.Oop getValue(sun.jvm.hotspot.oops.Oop);
+  public sun.jvm.hotspot.debugger.OopHandle getValueAsOopHandle(sun.jvm.hotspot.oops.Oop);
+  public sun.jvm.hotspot.oops.Oop getValue(sun.jvm.hotspot.runtime.VMObject);
+  public sun.jvm.hotspot.debugger.OopHandle getValueAsOopHandle(sun.jvm.hotspot.runtime.VMObject);
+  public void setValue(sun.jvm.hotspot.oops.Oop) throws sun.jvm.hotspot.oops.MutationException;
+}

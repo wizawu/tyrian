@@ -1,0 +1,3 @@
+Compiled from "TrustManager.java"
+public interface javax.net.ssl.TrustManager {
+}

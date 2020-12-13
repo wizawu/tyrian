@@ -1,0 +1,16 @@
+Compiled from "UnaryOperation.java"
+public abstract class com.sun.org.apache.xpath.internal.operations.UnaryOperation extends com.sun.org.apache.xpath.internal.Expression implements com.sun.org.apache.xpath.internal.ExpressionOwner {
+  static final long serialVersionUID;
+  protected com.sun.org.apache.xpath.internal.Expression m_right;
+  public com.sun.org.apache.xpath.internal.operations.UnaryOperation();
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public boolean canTraverseOutsideSubtree();
+  public void setRight(com.sun.org.apache.xpath.internal.Expression);
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public abstract com.sun.org.apache.xpath.internal.objects.XObject operate(com.sun.org.apache.xpath.internal.objects.XObject) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.Expression getOperand();
+  public void callVisitors(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.XPathVisitor);
+  public com.sun.org.apache.xpath.internal.Expression getExpression();
+  public void setExpression(com.sun.org.apache.xpath.internal.Expression);
+  public boolean deepEquals(com.sun.org.apache.xpath.internal.Expression);
+}

@@ -1,0 +1,23 @@
+Compiled from "ImmutableDescriptor.java"
+public class javax.management.ImmutableDescriptor implements javax.management.Descriptor {
+  public static final javax.management.ImmutableDescriptor EMPTY_DESCRIPTOR;
+  public javax.management.ImmutableDescriptor(java.lang.String[], java.lang.Object[]);
+  public javax.management.ImmutableDescriptor(java.lang.String...);
+  public javax.management.ImmutableDescriptor(java.util.Map<java.lang.String, ?>);
+  public static javax.management.ImmutableDescriptor union(javax.management.Descriptor...);
+  public final java.lang.Object getFieldValue(java.lang.String);
+  public final java.lang.String[] getFields();
+  public final java.lang.Object[] getFieldValues(java.lang.String...);
+  public final java.lang.String[] getFieldNames();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public boolean isValid();
+  public javax.management.Descriptor clone();
+  public final void setFields(java.lang.String[], java.lang.Object[]) throws javax.management.RuntimeOperationsException;
+  public final void setField(java.lang.String, java.lang.Object) throws javax.management.RuntimeOperationsException;
+  public final void removeField(java.lang.String);
+  static javax.management.Descriptor nonNullDescriptor(javax.management.Descriptor);
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+  static {};
+}

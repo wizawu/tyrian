@@ -1,0 +1,6 @@
+Compiled from "FormattableFlags.java"
+public class java.util.FormattableFlags {
+  public static final int LEFT_JUSTIFY;
+  public static final int UPPERCASE;
+  public static final int ALTERNATE;
+}

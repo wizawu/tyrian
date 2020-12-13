@@ -1,0 +1,40 @@
+Compiled from "JavacElements.java"
+public class com.sun.tools.javac.model.JavacElements implements javax.lang.model.util.Elements {
+  public static com.sun.tools.javac.model.JavacElements instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.model.JavacElements(com.sun.tools.javac.util.Context);
+  public java.util.Set<? extends javax.lang.model.element.ModuleElement> getAllModuleElements();
+  public com.sun.tools.javac.code.Symbol$ModuleSymbol getModuleElement(java.lang.CharSequence);
+  public com.sun.tools.javac.code.Symbol$PackageSymbol getPackageElement(java.lang.CharSequence);
+  public com.sun.tools.javac.code.Symbol$PackageSymbol getPackageElement(javax.lang.model.element.ModuleElement, java.lang.CharSequence);
+  public com.sun.tools.javac.code.Symbol$ClassSymbol getTypeElement(java.lang.CharSequence);
+  public com.sun.tools.javac.code.Symbol$ClassSymbol getTypeElement(javax.lang.model.element.ModuleElement, java.lang.CharSequence);
+  public com.sun.tools.javac.tree.JCTree getTree(javax.lang.model.element.Element);
+  public java.lang.String getDocComment(javax.lang.model.element.Element);
+  public javax.lang.model.element.PackageElement getPackageOf(javax.lang.model.element.Element);
+  public javax.lang.model.element.ModuleElement getModuleOf(javax.lang.model.element.Element);
+  public boolean isDeprecated(javax.lang.model.element.Element);
+  public javax.lang.model.util.Elements$Origin getOrigin(javax.lang.model.element.Element);
+  public javax.lang.model.util.Elements$Origin getOrigin(javax.lang.model.AnnotatedConstruct, javax.lang.model.element.AnnotationMirror);
+  public javax.lang.model.util.Elements$Origin getOrigin(javax.lang.model.element.ModuleElement, javax.lang.model.element.ModuleElement$Directive);
+  public com.sun.tools.javac.util.Name getBinaryName(javax.lang.model.element.TypeElement);
+  public java.util.Map<com.sun.tools.javac.code.Symbol$MethodSymbol, com.sun.tools.javac.code.Attribute> getElementValuesWithDefaults(javax.lang.model.element.AnnotationMirror);
+  public com.sun.tools.javac.model.FilteredMemberList getAllMembers(javax.lang.model.element.TypeElement);
+  public com.sun.tools.javac.util.List<com.sun.tools.javac.code.Attribute$Compound> getAllAnnotationMirrors(javax.lang.model.element.Element);
+  public boolean hides(javax.lang.model.element.Element, javax.lang.model.element.Element);
+  public boolean overrides(javax.lang.model.element.ExecutableElement, javax.lang.model.element.ExecutableElement, javax.lang.model.element.TypeElement);
+  public java.lang.String getConstantExpression(java.lang.Object);
+  public void printElements(java.io.Writer, javax.lang.model.element.Element...);
+  public com.sun.tools.javac.util.Name getName(java.lang.CharSequence);
+  public boolean isFunctionalInterface(javax.lang.model.element.TypeElement);
+  public com.sun.tools.javac.util.Pair<com.sun.tools.javac.tree.JCTree, com.sun.tools.javac.tree.JCTree$JCCompilationUnit> getTreeAndTopLevel(javax.lang.model.element.Element, javax.lang.model.element.AnnotationMirror, javax.lang.model.element.AnnotationValue);
+  public void newRound();
+  public javax.lang.model.element.Name getName(java.lang.CharSequence);
+  public java.util.List getAllAnnotationMirrors(javax.lang.model.element.Element);
+  public java.util.List getAllMembers(javax.lang.model.element.TypeElement);
+  public javax.lang.model.element.Name getBinaryName(javax.lang.model.element.TypeElement);
+  public javax.lang.model.element.ModuleElement getModuleElement(java.lang.CharSequence);
+  public javax.lang.model.element.TypeElement getTypeElement(javax.lang.model.element.ModuleElement, java.lang.CharSequence);
+  public javax.lang.model.element.TypeElement getTypeElement(java.lang.CharSequence);
+  public javax.lang.model.element.PackageElement getPackageElement(javax.lang.model.element.ModuleElement, java.lang.CharSequence);
+  public javax.lang.model.element.PackageElement getPackageElement(java.lang.CharSequence);
+}

@@ -1,0 +1,9 @@
+Compiled from "StartDocument.java"
+public interface javax.xml.stream.events.StartDocument extends javax.xml.stream.events.XMLEvent {
+  public abstract java.lang.String getSystemId();
+  public abstract java.lang.String getCharacterEncodingScheme();
+  public abstract boolean encodingSet();
+  public abstract boolean isStandalone();
+  public abstract boolean standaloneSet();
+  public abstract java.lang.String getVersion();
+}

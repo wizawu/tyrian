@@ -1,0 +1,9 @@
+Compiled from "PerfLongArrayCounter.java"
+public class sun.management.counter.perf.PerfLongArrayCounter extends sun.management.counter.AbstractCounter implements sun.management.counter.LongArrayCounter {
+  java.nio.LongBuffer lb;
+  sun.management.counter.perf.PerfLongArrayCounter(java.lang.String, sun.management.counter.Units, sun.management.counter.Variability, int, int, java.nio.LongBuffer);
+  public java.lang.Object getValue();
+  public long[] longArrayValue();
+  public long longAt(int);
+  protected java.lang.Object writeReplace() throws java.io.ObjectStreamException;
+}

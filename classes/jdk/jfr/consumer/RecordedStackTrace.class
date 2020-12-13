@@ -1,0 +1,6 @@
+Compiled from "RecordedStackTrace.java"
+public final class jdk.jfr.consumer.RecordedStackTrace extends jdk.jfr.consumer.RecordedObject {
+  static jdk.jfr.consumer.ObjectFactory<jdk.jfr.consumer.RecordedStackTrace> createFactory(jdk.jfr.internal.Type, jdk.jfr.consumer.TimeConverter);
+  public java.util.List<jdk.jfr.consumer.RecordedFrame> getFrames();
+  public boolean isTruncated();
+}

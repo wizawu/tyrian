@@ -1,0 +1,35 @@
+Compiled from "Expression.java"
+public abstract class com.sun.org.apache.xpath.internal.Expression implements java.io.Serializable,com.sun.org.apache.xpath.internal.ExpressionNode,com.sun.org.apache.xpath.internal.XPathVisitable {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.Expression();
+  public boolean canTraverseOutsideSubtree();
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, int) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, int, com.sun.org.apache.xml.internal.dtm.DTM, int) throws javax.xml.transform.TransformerException;
+  public abstract com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, boolean) throws javax.xml.transform.TransformerException;
+  public double num(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public boolean bool(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xml.internal.utils.XMLString xstr(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public boolean isNodesetExpr();
+  public int asNode(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xml.internal.dtm.DTMIterator asIterator(com.sun.org.apache.xpath.internal.XPathContext, int) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xml.internal.dtm.DTMIterator asIteratorRaw(com.sun.org.apache.xpath.internal.XPathContext, int) throws javax.xml.transform.TransformerException;
+  public void executeCharsToContentHandler(com.sun.org.apache.xpath.internal.XPathContext, org.xml.sax.ContentHandler) throws javax.xml.transform.TransformerException, org.xml.sax.SAXException;
+  public boolean isStableNumber();
+  public abstract void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public abstract boolean deepEquals(com.sun.org.apache.xpath.internal.Expression);
+  protected final boolean isSameClass(com.sun.org.apache.xpath.internal.Expression);
+  public void warn(com.sun.org.apache.xpath.internal.XPathContext, java.lang.String, java.lang.Object[]) throws javax.xml.transform.TransformerException;
+  public void assertion(boolean, java.lang.String);
+  public void error(com.sun.org.apache.xpath.internal.XPathContext, java.lang.String, java.lang.Object[]) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.ExpressionNode getExpressionOwner();
+  public void exprSetParent(com.sun.org.apache.xpath.internal.ExpressionNode);
+  public com.sun.org.apache.xpath.internal.ExpressionNode exprGetParent();
+  public void exprAddChild(com.sun.org.apache.xpath.internal.ExpressionNode, int);
+  public com.sun.org.apache.xpath.internal.ExpressionNode exprGetChild(int);
+  public int exprGetNumChildren();
+  public java.lang.String getPublicId();
+  public java.lang.String getSystemId();
+  public int getLineNumber();
+  public int getColumnNumber();
+}

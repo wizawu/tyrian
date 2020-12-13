@@ -1,0 +1,14 @@
+Compiled from "TraceModuleVisitor.java"
+public final class jdk.internal.org.objectweb.asm.util.TraceModuleVisitor extends jdk.internal.org.objectweb.asm.ModuleVisitor {
+  public final jdk.internal.org.objectweb.asm.util.Printer p;
+  public jdk.internal.org.objectweb.asm.util.TraceModuleVisitor(jdk.internal.org.objectweb.asm.util.Printer);
+  public jdk.internal.org.objectweb.asm.util.TraceModuleVisitor(jdk.internal.org.objectweb.asm.ModuleVisitor, jdk.internal.org.objectweb.asm.util.Printer);
+  public void visitMainClass(java.lang.String);
+  public void visitPackage(java.lang.String);
+  public void visitRequire(java.lang.String, int, java.lang.String);
+  public void visitExport(java.lang.String, int, java.lang.String...);
+  public void visitOpen(java.lang.String, int, java.lang.String...);
+  public void visitUse(java.lang.String);
+  public void visitProvide(java.lang.String, java.lang.String...);
+  public void visitEnd();
+}

@@ -1,0 +1,15 @@
+Compiled from "JarIndex.java"
+public class jdk.internal.util.jar.JarIndex {
+  public static final java.lang.String INDEX_NAME;
+  public jdk.internal.util.jar.JarIndex();
+  public jdk.internal.util.jar.JarIndex(java.io.InputStream) throws java.io.IOException;
+  public jdk.internal.util.jar.JarIndex(java.lang.String[]) throws java.io.IOException;
+  public static jdk.internal.util.jar.JarIndex getJarIndex(java.util.jar.JarFile) throws java.io.IOException;
+  public java.lang.String[] getJarFiles();
+  public java.util.LinkedList<java.lang.String> get(java.lang.String);
+  public void add(java.lang.String, java.lang.String);
+  public void write(java.io.OutputStream) throws java.io.IOException;
+  public void read(java.io.InputStream) throws java.io.IOException;
+  public void merge(jdk.internal.util.jar.JarIndex, java.lang.String);
+  static {};
+}

@@ -1,0 +1,17 @@
+Compiled from "AccessibleText.java"
+public interface javax.accessibility.AccessibleText {
+  public static final int CHARACTER;
+  public static final int WORD;
+  public static final int SENTENCE;
+  public abstract int getIndexAtPoint(java.awt.Point);
+  public abstract java.awt.Rectangle getCharacterBounds(int);
+  public abstract int getCharCount();
+  public abstract int getCaretPosition();
+  public abstract java.lang.String getAtIndex(int, int);
+  public abstract java.lang.String getAfterIndex(int, int);
+  public abstract java.lang.String getBeforeIndex(int, int);
+  public abstract javax.swing.text.AttributeSet getCharacterAttribute(int);
+  public abstract int getSelectionStart();
+  public abstract int getSelectionEnd();
+  public abstract java.lang.String getSelectedText();
+}

@@ -1,0 +1,12 @@
+Compiled from "QuadIterator.java"
+class java.awt.geom.QuadIterator implements java.awt.geom.PathIterator {
+  java.awt.geom.QuadCurve2D quad;
+  java.awt.geom.AffineTransform affine;
+  int index;
+  java.awt.geom.QuadIterator(java.awt.geom.QuadCurve2D, java.awt.geom.AffineTransform);
+  public int getWindingRule();
+  public boolean isDone();
+  public void next();
+  public int currentSegment(float[]);
+  public int currentSegment(double[]);
+}

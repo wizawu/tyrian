@@ -1,0 +1,10 @@
+Compiled from "PageRanges.java"
+public final class javax.print.attribute.standard.PageRanges extends javax.print.attribute.SetOfIntegerSyntax implements javax.print.attribute.DocAttribute,javax.print.attribute.PrintRequestAttribute,javax.print.attribute.PrintJobAttribute {
+  public javax.print.attribute.standard.PageRanges(int[][]);
+  public javax.print.attribute.standard.PageRanges(java.lang.String);
+  public javax.print.attribute.standard.PageRanges(int);
+  public javax.print.attribute.standard.PageRanges(int, int);
+  public boolean equals(java.lang.Object);
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+}

@@ -1,0 +1,20 @@
+Compiled from "Caret.java"
+public interface javax.swing.text.Caret {
+  public abstract void install(javax.swing.text.JTextComponent);
+  public abstract void deinstall(javax.swing.text.JTextComponent);
+  public abstract void paint(java.awt.Graphics);
+  public abstract void addChangeListener(javax.swing.event.ChangeListener);
+  public abstract void removeChangeListener(javax.swing.event.ChangeListener);
+  public abstract boolean isVisible();
+  public abstract void setVisible(boolean);
+  public abstract boolean isSelectionVisible();
+  public abstract void setSelectionVisible(boolean);
+  public abstract void setMagicCaretPosition(java.awt.Point);
+  public abstract java.awt.Point getMagicCaretPosition();
+  public abstract void setBlinkRate(int);
+  public abstract int getBlinkRate();
+  public abstract int getDot();
+  public abstract int getMark();
+  public abstract void setDot(int);
+  public abstract void moveDot(int);
+}

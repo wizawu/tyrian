@@ -1,0 +1,8 @@
+Compiled from "SequencedEvent.java"
+class java.awt.SequencedEvent extends java.awt.AWTEvent implements java.awt.ActiveEvent {
+  public java.awt.SequencedEvent(java.awt.AWTEvent);
+  public final void dispatch();
+  public final boolean isFirstOrDisposed();
+  final void dispose();
+  static {};
+}

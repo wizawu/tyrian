@@ -1,0 +1,17 @@
+Compiled from "LineBorder.java"
+public class javax.swing.border.LineBorder extends javax.swing.border.AbstractBorder {
+  protected int thickness;
+  protected java.awt.Color lineColor;
+  protected boolean roundedCorners;
+  public static javax.swing.border.Border createBlackLineBorder();
+  public static javax.swing.border.Border createGrayLineBorder();
+  public javax.swing.border.LineBorder(java.awt.Color);
+  public javax.swing.border.LineBorder(java.awt.Color, int);
+  public javax.swing.border.LineBorder(java.awt.Color, int, boolean);
+  public void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
+  public java.awt.Insets getBorderInsets(java.awt.Component, java.awt.Insets);
+  public java.awt.Color getLineColor();
+  public int getThickness();
+  public boolean getRoundedCorners();
+  public boolean isBorderOpaque();
+}

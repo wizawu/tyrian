@@ -1,0 +1,10 @@
+Compiled from "AclEntryType.java"
+public final class java.nio.file.attribute.AclEntryType extends java.lang.Enum<java.nio.file.attribute.AclEntryType> {
+  public static final java.nio.file.attribute.AclEntryType ALLOW;
+  public static final java.nio.file.attribute.AclEntryType DENY;
+  public static final java.nio.file.attribute.AclEntryType AUDIT;
+  public static final java.nio.file.attribute.AclEntryType ALARM;
+  public static java.nio.file.attribute.AclEntryType[] values();
+  public static java.nio.file.attribute.AclEntryType valueOf(java.lang.String);
+  static {};
+}

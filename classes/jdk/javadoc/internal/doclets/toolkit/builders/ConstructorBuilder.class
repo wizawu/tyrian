@@ -1,0 +1,12 @@
+Compiled from "ConstructorBuilder.java"
+public class jdk.javadoc.internal.doclets.toolkit.builders.ConstructorBuilder extends jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder {
+  public static jdk.javadoc.internal.doclets.toolkit.builders.ConstructorBuilder getInstance(jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder$Context, javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.ConstructorWriter);
+  public boolean hasMembersToDocument();
+  public jdk.javadoc.internal.doclets.toolkit.ConstructorWriter getWriter();
+  public void build(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildConstructorDoc(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildSignature(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildDeprecationInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildConstructorComments(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildTagInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+}

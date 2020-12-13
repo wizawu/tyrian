@@ -1,0 +1,7 @@
+Compiled from "RecompilationEvent.java"
+public final class jdk.nashorn.internal.runtime.events.RecompilationEvent extends jdk.nashorn.internal.runtime.events.RuntimeEvent<jdk.nashorn.internal.runtime.RewriteException> {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.runtime.events.RecompilationEvent(java.util.logging.Level, jdk.nashorn.internal.runtime.RewriteException, java.lang.Object);
+  public java.lang.Object getReturnValue();
+  static {};
+}

@@ -1,0 +1,42 @@
+Compiled from "XMLStreamWriterImpl.java"
+public class jdk.internal.util.xml.impl.XMLStreamWriterImpl implements jdk.internal.util.xml.XMLStreamWriter {
+  static final int STATE_XML_DECL;
+  static final int STATE_PROLOG;
+  static final int STATE_DTD_DECL;
+  static final int STATE_ELEMENT;
+  static final int ELEMENT_STARTTAG_OPEN;
+  static final int ELEMENT_STARTTAG_CLOSE;
+  static final int ELEMENT_ENDTAG_OPEN;
+  static final int ELEMENT_ENDTAG_CLOSE;
+  public static final char CLOSE_START_TAG;
+  public static final char OPEN_START_TAG;
+  public static final java.lang.String OPEN_END_TAG;
+  public static final char CLOSE_END_TAG;
+  public static final java.lang.String START_CDATA;
+  public static final java.lang.String END_CDATA;
+  public static final java.lang.String CLOSE_EMPTY_ELEMENT;
+  public static final java.lang.String ENCODING_PREFIX;
+  public static final char SPACE;
+  public static final char AMPERSAND;
+  public static final char DOUBLEQUOT;
+  public static final char SEMICOLON;
+  boolean _escapeCharacters;
+  public jdk.internal.util.xml.impl.XMLStreamWriterImpl(java.io.OutputStream) throws jdk.internal.util.xml.XMLStreamException;
+  public jdk.internal.util.xml.impl.XMLStreamWriterImpl(java.io.OutputStream, java.nio.charset.Charset) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeStartDocument() throws jdk.internal.util.xml.XMLStreamException;
+  public void writeStartDocument(java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeStartDocument(java.lang.String, java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeStartDocument(java.lang.String, java.lang.String, java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeDTD(java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeStartElement(java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeEmptyElement(java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeAttribute(java.lang.String, java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeEndDocument() throws jdk.internal.util.xml.XMLStreamException;
+  public void writeEndElement() throws jdk.internal.util.xml.XMLStreamException;
+  public void writeCData(java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeCharacters(java.lang.String) throws jdk.internal.util.xml.XMLStreamException;
+  public void writeCharacters(char[], int, int) throws jdk.internal.util.xml.XMLStreamException;
+  public void close() throws jdk.internal.util.xml.XMLStreamException;
+  public void flush() throws jdk.internal.util.xml.XMLStreamException;
+  public void setDoIndent(boolean);
+}

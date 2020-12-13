@@ -1,0 +1,4 @@
+Compiled from "StringReference.java"
+public interface com.sun.jdi.StringReference extends com.sun.jdi.ObjectReference {
+  public abstract java.lang.String value();
+}

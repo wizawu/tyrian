@@ -1,0 +1,4 @@
+Compiled from "XSLTErrorResources_en.java"
+public class com.sun.org.apache.xalan.internal.res.XSLTErrorResources_en extends com.sun.org.apache.xalan.internal.res.XSLTErrorResources {
+  public com.sun.org.apache.xalan.internal.res.XSLTErrorResources_en();
+}

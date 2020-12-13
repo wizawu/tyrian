@@ -1,0 +1,36 @@
+Compiled from "ChronoLocalDateTime.java"
+public interface java.time.chrono.ChronoLocalDateTime<D extends java.time.chrono.ChronoLocalDate> extends java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.chrono.ChronoLocalDateTime<?>> {
+  public static java.util.Comparator<java.time.chrono.ChronoLocalDateTime<?>> timeLineOrder();
+  public static java.time.chrono.ChronoLocalDateTime<?> from(java.time.temporal.TemporalAccessor);
+  public default java.time.chrono.Chronology getChronology();
+  public abstract D toLocalDate();
+  public abstract java.time.LocalTime toLocalTime();
+  public abstract boolean isSupported(java.time.temporal.TemporalField);
+  public default boolean isSupported(java.time.temporal.TemporalUnit);
+  public default java.time.chrono.ChronoLocalDateTime<D> with(java.time.temporal.TemporalAdjuster);
+  public abstract java.time.chrono.ChronoLocalDateTime<D> with(java.time.temporal.TemporalField, long);
+  public default java.time.chrono.ChronoLocalDateTime<D> plus(java.time.temporal.TemporalAmount);
+  public abstract java.time.chrono.ChronoLocalDateTime<D> plus(long, java.time.temporal.TemporalUnit);
+  public default java.time.chrono.ChronoLocalDateTime<D> minus(java.time.temporal.TemporalAmount);
+  public default java.time.chrono.ChronoLocalDateTime<D> minus(long, java.time.temporal.TemporalUnit);
+  public default <R> R query(java.time.temporal.TemporalQuery<R>);
+  public default java.time.temporal.Temporal adjustInto(java.time.temporal.Temporal);
+  public default java.lang.String format(java.time.format.DateTimeFormatter);
+  public abstract java.time.chrono.ChronoZonedDateTime<D> atZone(java.time.ZoneId);
+  public default java.time.Instant toInstant(java.time.ZoneOffset);
+  public default long toEpochSecond(java.time.ZoneOffset);
+  public default int compareTo(java.time.chrono.ChronoLocalDateTime<?>);
+  public default boolean isAfter(java.time.chrono.ChronoLocalDateTime<?>);
+  public default boolean isBefore(java.time.chrono.ChronoLocalDateTime<?>);
+  public default boolean isEqual(java.time.chrono.ChronoLocalDateTime<?>);
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+  public abstract java.lang.String toString();
+  public default java.time.temporal.Temporal minus(long, java.time.temporal.TemporalUnit);
+  public default java.time.temporal.Temporal minus(java.time.temporal.TemporalAmount);
+  public default java.time.temporal.Temporal plus(long, java.time.temporal.TemporalUnit);
+  public default java.time.temporal.Temporal plus(java.time.temporal.TemporalAmount);
+  public default java.time.temporal.Temporal with(java.time.temporal.TemporalField, long);
+  public default java.time.temporal.Temporal with(java.time.temporal.TemporalAdjuster);
+  public default int compareTo(java.lang.Object);
+}

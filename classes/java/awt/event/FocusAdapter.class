@@ -1,0 +1,6 @@
+Compiled from "FocusAdapter.java"
+public abstract class java.awt.event.FocusAdapter implements java.awt.event.FocusListener {
+  public java.awt.event.FocusAdapter();
+  public void focusGained(java.awt.event.FocusEvent);
+  public void focusLost(java.awt.event.FocusEvent);
+}

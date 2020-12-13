@@ -1,0 +1,7 @@
+Compiled from "InvalidKeySpecException.java"
+public class java.security.spec.InvalidKeySpecException extends java.security.GeneralSecurityException {
+  public java.security.spec.InvalidKeySpecException();
+  public java.security.spec.InvalidKeySpecException(java.lang.String);
+  public java.security.spec.InvalidKeySpecException(java.lang.String, java.lang.Throwable);
+  public java.security.spec.InvalidKeySpecException(java.lang.Throwable);
+}

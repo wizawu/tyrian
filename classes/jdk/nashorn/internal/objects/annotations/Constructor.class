@@ -1,0 +1,5 @@
+Compiled from "Constructor.java"
+public interface jdk.nashorn.internal.objects.annotations.Constructor extends java.lang.annotation.Annotation {
+  public abstract java.lang.String name();
+  public abstract int arity();
+}

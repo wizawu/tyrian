@@ -1,0 +1,5 @@
+Compiled from "InputMismatchException.java"
+public class java.util.InputMismatchException extends java.util.NoSuchElementException {
+  public java.util.InputMismatchException();
+  public java.util.InputMismatchException(java.lang.String);
+}

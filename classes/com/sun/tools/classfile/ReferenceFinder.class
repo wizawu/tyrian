@@ -1,0 +1,5 @@
+Compiled from "ReferenceFinder.java"
+public final class com.sun.tools.classfile.ReferenceFinder {
+  public com.sun.tools.classfile.ReferenceFinder(com.sun.tools.classfile.ReferenceFinder$Filter, com.sun.tools.classfile.ReferenceFinder$Visitor);
+  public boolean parse(com.sun.tools.classfile.ClassFile) throws com.sun.tools.classfile.ConstantPoolException;
+}

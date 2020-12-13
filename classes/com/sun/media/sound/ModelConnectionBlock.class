@@ -1,0 +1,17 @@
+Compiled from "ModelConnectionBlock.java"
+public final class com.sun.media.sound.ModelConnectionBlock {
+  public com.sun.media.sound.ModelConnectionBlock();
+  public com.sun.media.sound.ModelConnectionBlock(double, com.sun.media.sound.ModelDestination);
+  public com.sun.media.sound.ModelConnectionBlock(com.sun.media.sound.ModelSource, com.sun.media.sound.ModelDestination);
+  public com.sun.media.sound.ModelConnectionBlock(com.sun.media.sound.ModelSource, double, com.sun.media.sound.ModelDestination);
+  public com.sun.media.sound.ModelConnectionBlock(com.sun.media.sound.ModelSource, com.sun.media.sound.ModelSource, com.sun.media.sound.ModelDestination);
+  public com.sun.media.sound.ModelConnectionBlock(com.sun.media.sound.ModelSource, com.sun.media.sound.ModelSource, double, com.sun.media.sound.ModelDestination);
+  public com.sun.media.sound.ModelDestination getDestination();
+  public void setDestination(com.sun.media.sound.ModelDestination);
+  public double getScale();
+  public void setScale(double);
+  public com.sun.media.sound.ModelSource[] getSources();
+  public void setSources(com.sun.media.sound.ModelSource[]);
+  public void addSource(com.sun.media.sound.ModelSource);
+  static {};
+}

@@ -1,0 +1,12 @@
+Compiled from "AtomicStampedReference.java"
+public class java.util.concurrent.atomic.AtomicStampedReference<V> {
+  public java.util.concurrent.atomic.AtomicStampedReference(V, int);
+  public V getReference();
+  public int getStamp();
+  public V get(int[]);
+  public boolean weakCompareAndSet(V, V, int, int);
+  public boolean compareAndSet(V, V, int, int);
+  public void set(V, int);
+  public boolean attemptStamp(V, int);
+  static {};
+}

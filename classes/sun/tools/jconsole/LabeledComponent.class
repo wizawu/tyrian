@@ -1,0 +1,14 @@
+Compiled from "LabeledComponent.java"
+public class sun.tools.jconsole.LabeledComponent extends javax.swing.JPanel {
+  javax.swing.JPanel rightPanel;
+  java.lang.String labelStr;
+  java.lang.String valueLabelStr;
+  java.lang.String compoundStr;
+  javax.swing.JLabel label;
+  javax.swing.JComponent comp;
+  public sun.tools.jconsole.LabeledComponent(java.lang.String, javax.swing.JComponent);
+  public sun.tools.jconsole.LabeledComponent(java.lang.String, int, javax.swing.JComponent);
+  public void setLabel(java.lang.String);
+  public void setValueLabel(java.lang.String);
+  public static void layout(java.awt.Container);
+}

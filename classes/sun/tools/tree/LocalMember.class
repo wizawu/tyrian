@@ -1,0 +1,27 @@
+Compiled from "LocalMember.java"
+public class sun.tools.tree.LocalMember extends sun.tools.java.MemberDefinition {
+  int number;
+  int readcount;
+  int writecount;
+  int scopeNumber;
+  sun.tools.tree.LocalMember originalOfCopy;
+  sun.tools.tree.LocalMember prev;
+  public int getScopeNumber();
+  public sun.tools.tree.LocalMember(long, sun.tools.java.ClassDefinition, int, sun.tools.java.Type, sun.tools.java.Identifier);
+  public sun.tools.tree.LocalMember(sun.tools.java.ClassDefinition);
+  sun.tools.tree.LocalMember(sun.tools.java.MemberDefinition);
+  final sun.tools.java.MemberDefinition getMember();
+  public boolean isLocal();
+  public sun.tools.tree.LocalMember copyInline(sun.tools.tree.Context);
+  public sun.tools.tree.LocalMember getCurrentInlineCopy(sun.tools.tree.Context);
+  public static sun.tools.tree.LocalMember[] copyArguments(sun.tools.tree.Context, sun.tools.java.MemberDefinition);
+  public static void doneWithArguments(sun.tools.tree.Context, sun.tools.tree.LocalMember[]);
+  public boolean isInlineable(sun.tools.java.Environment, boolean);
+  public boolean isUsed();
+  sun.tools.tree.LocalMember getAccessVar();
+  void setAccessVar(sun.tools.tree.LocalMember);
+  sun.tools.java.MemberDefinition getAccessVarMember();
+  void setAccessVarMember(sun.tools.java.MemberDefinition);
+  public sun.tools.tree.Node getValue(sun.tools.java.Environment);
+  public int getNumber(sun.tools.tree.Context);
+}

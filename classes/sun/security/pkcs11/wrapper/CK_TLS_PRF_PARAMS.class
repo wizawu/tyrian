@@ -1,0 +1,7 @@
+Compiled from "CK_TLS_PRF_PARAMS.java"
+public class sun.security.pkcs11.wrapper.CK_TLS_PRF_PARAMS {
+  public byte[] pSeed;
+  public byte[] pLabel;
+  public byte[] pOutput;
+  public sun.security.pkcs11.wrapper.CK_TLS_PRF_PARAMS(byte[], byte[], byte[]);
+}

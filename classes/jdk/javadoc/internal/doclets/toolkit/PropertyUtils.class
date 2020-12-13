@@ -1,0 +1,15 @@
+Compiled from "PropertyUtils.java"
+public class jdk.javadoc.internal.doclets.toolkit.PropertyUtils {
+  final javax.lang.model.type.TypeMirror jbObservableType;
+  final java.util.regex.Pattern fxMethodPatterns;
+  final boolean javafx;
+  final javax.lang.model.util.Types typeUtils;
+  jdk.javadoc.internal.doclets.toolkit.PropertyUtils(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public java.lang.String getBaseName(javax.lang.model.element.ExecutableElement);
+  public java.lang.String getGetName(javax.lang.model.element.ExecutableElement);
+  public java.lang.String getIsName(javax.lang.model.element.ExecutableElement);
+  public boolean hasIsMethod(javax.lang.model.element.ExecutableElement);
+  public java.lang.String getSetName(javax.lang.model.element.ExecutableElement);
+  public boolean isValidSetterMethod(javax.lang.model.element.ExecutableElement);
+  public boolean isPropertyMethod(javax.lang.model.element.ExecutableElement);
+}

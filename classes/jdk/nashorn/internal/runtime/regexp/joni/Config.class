@@ -1,0 +1,44 @@
+Compiled from "Config.java"
+public interface jdk.nashorn.internal.runtime.regexp.joni.Config {
+  public static final int CHAR_TABLE_SIZE;
+  public static final boolean VANILLA;
+  public static final int INTERNAL_ENC_CASE_FOLD_MULTI_CHAR;
+  public static final int ENC_CASE_FOLD_MIN;
+  public static final int ENC_CASE_FOLD_DEFAULT;
+  public static final boolean USE_MONOMANIAC_CHECK_CAPTURES_IN_ENDLESS_REPEAT;
+  public static final boolean USE_NEWLINE_AT_END_OF_STRING_HAS_EMPTY_LINE;
+  public static final boolean USE_WARNING_REDUNDANT_NESTED_REPEAT_OPERATOR;
+  public static final boolean CASE_FOLD_IS_APPLIED_INSIDE_NEGATIVE_CCLASS;
+  public static final boolean USE_MATCH_RANGE_MUST_BE_INSIDE_OF_SPECIFIED_RANGE;
+  public static final boolean USE_VARIABLE_META_CHARS;
+  public static final boolean USE_WORD_BEGIN_END;
+  public static final boolean USE_POSIX_API_REGION_OPTION;
+  public static final boolean USE_FIND_LONGEST_SEARCH_ALL_OF_RANGE;
+  public static final int NREGION;
+  public static final int MAX_BACKREF_NUM;
+  public static final int MAX_CAPTURE_GROUP_NUM;
+  public static final int MAX_REPEAT_NUM;
+  public static final int MAX_MULTI_BYTE_RANGES_NUM;
+  public static final boolean USE_WARN;
+  public static final boolean USE_PARSE_TREE_NODE_RECYCLE;
+  public static final boolean USE_OP_PUSH_OR_JUMP_EXACT;
+  public static final boolean USE_SHARED_CCLASS_TABLE;
+  public static final boolean USE_QTFR_PEEK_NEXT;
+  public static final int INIT_MATCH_STACK_SIZE;
+  public static final int DEFAULT_MATCH_STACK_LIMIT_SIZE;
+  public static final int NUMBER_OF_POOLED_STACKS;
+  public static final boolean DONT_OPTIMIZE;
+  public static final boolean USE_STRING_TEMPLATES;
+  public static final boolean NON_UNICODE_SDW;
+  public static final java.io.PrintStream log;
+  public static final java.io.PrintStream err;
+  public static final boolean DEBUG_ALL;
+  public static final boolean DEBUG;
+  public static final boolean DEBUG_PARSE_TREE;
+  public static final boolean DEBUG_PARSE_TREE_RAW;
+  public static final boolean DEBUG_COMPILE;
+  public static final boolean DEBUG_COMPILE_BYTE_CODE_INFO;
+  public static final boolean DEBUG_SEARCH;
+  public static final boolean DEBUG_MATCH;
+  static {};
+}

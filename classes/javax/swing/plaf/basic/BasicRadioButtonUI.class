@@ -1,0 +1,16 @@
+Compiled from "BasicRadioButtonUI.java"
+public class javax.swing.plaf.basic.BasicRadioButtonUI extends javax.swing.plaf.basic.BasicToggleButtonUI {
+  protected javax.swing.Icon icon;
+  public javax.swing.plaf.basic.BasicRadioButtonUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected java.lang.String getPropertyPrefix();
+  protected void installDefaults(javax.swing.AbstractButton);
+  protected void uninstallDefaults(javax.swing.AbstractButton);
+  public javax.swing.Icon getDefaultIcon();
+  protected void installListeners(javax.swing.AbstractButton);
+  protected void uninstallListeners(javax.swing.AbstractButton);
+  public synchronized void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paintFocus(java.awt.Graphics, java.awt.Rectangle, java.awt.Dimension);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  static {};
+}

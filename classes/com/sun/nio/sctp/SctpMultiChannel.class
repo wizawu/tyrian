@@ -1,0 +1,20 @@
+Compiled from "SctpMultiChannel.java"
+public abstract class com.sun.nio.sctp.SctpMultiChannel extends java.nio.channels.spi.AbstractSelectableChannel {
+  protected com.sun.nio.sctp.SctpMultiChannel(java.nio.channels.spi.SelectorProvider);
+  public static com.sun.nio.sctp.SctpMultiChannel open() throws java.io.IOException;
+  public abstract java.util.Set<com.sun.nio.sctp.Association> associations() throws java.io.IOException;
+  public abstract com.sun.nio.sctp.SctpMultiChannel bind(java.net.SocketAddress, int) throws java.io.IOException;
+  public final com.sun.nio.sctp.SctpMultiChannel bind(java.net.SocketAddress) throws java.io.IOException;
+  public abstract com.sun.nio.sctp.SctpMultiChannel bindAddress(java.net.InetAddress) throws java.io.IOException;
+  public abstract com.sun.nio.sctp.SctpMultiChannel unbindAddress(java.net.InetAddress) throws java.io.IOException;
+  public abstract java.util.Set<java.net.SocketAddress> getAllLocalAddresses() throws java.io.IOException;
+  public abstract java.util.Set<java.net.SocketAddress> getRemoteAddresses(com.sun.nio.sctp.Association) throws java.io.IOException;
+  public abstract com.sun.nio.sctp.SctpMultiChannel shutdown(com.sun.nio.sctp.Association) throws java.io.IOException;
+  public abstract <T> T getOption(com.sun.nio.sctp.SctpSocketOption<T>, com.sun.nio.sctp.Association) throws java.io.IOException;
+  public abstract <T> com.sun.nio.sctp.SctpMultiChannel setOption(com.sun.nio.sctp.SctpSocketOption<T>, T, com.sun.nio.sctp.Association) throws java.io.IOException;
+  public abstract java.util.Set<com.sun.nio.sctp.SctpSocketOption<?>> supportedOptions();
+  public final int validOps();
+  public abstract <T> com.sun.nio.sctp.MessageInfo receive(java.nio.ByteBuffer, T, com.sun.nio.sctp.NotificationHandler<T>) throws java.io.IOException;
+  public abstract int send(java.nio.ByteBuffer, com.sun.nio.sctp.MessageInfo) throws java.io.IOException;
+  public abstract com.sun.nio.sctp.SctpChannel branch(com.sun.nio.sctp.Association) throws java.io.IOException;
+}

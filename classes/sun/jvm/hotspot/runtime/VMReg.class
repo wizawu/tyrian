@@ -1,0 +1,15 @@
+Compiled from "VMReg.java"
+public class sun.jvm.hotspot.runtime.VMReg {
+  public static sun.jvm.hotspot.debugger.Address matcherRegEncodeAddr;
+  public sun.jvm.hotspot.runtime.VMReg(int);
+  public int getValue();
+  public int regEncode();
+  public boolean equals(java.lang.Object);
+  public boolean lessThan(sun.jvm.hotspot.runtime.VMReg);
+  public boolean lessThanOrEqual(sun.jvm.hotspot.runtime.VMReg);
+  public boolean greaterThan(sun.jvm.hotspot.runtime.VMReg);
+  public boolean greaterThanOrEqual(sun.jvm.hotspot.runtime.VMReg);
+  public int minus(sun.jvm.hotspot.runtime.VMReg);
+  public int reg2Stack();
+  static {};
+}

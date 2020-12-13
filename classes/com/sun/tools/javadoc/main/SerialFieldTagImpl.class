@@ -1,0 +1,14 @@
+Compiled from "SerialFieldTagImpl.java"
+class com.sun.tools.javadoc.main.SerialFieldTagImpl extends com.sun.tools.javadoc.main.TagImpl implements com.sun.javadoc.SerialFieldTag, java.lang.Comparable<java.lang.Object> {
+  com.sun.tools.javadoc.main.SerialFieldTagImpl(com.sun.tools.javadoc.main.DocImpl, java.lang.String, java.lang.String);
+  java.lang.String key();
+  void mapToFieldDocImpl(com.sun.tools.javadoc.main.FieldDocImpl);
+  public java.lang.String fieldName();
+  public java.lang.String fieldType();
+  public com.sun.javadoc.ClassDoc fieldTypeDoc();
+  com.sun.tools.javadoc.main.FieldDocImpl getMatchingField();
+  public java.lang.String description();
+  public java.lang.String kind();
+  public java.lang.String toString();
+  public int compareTo(java.lang.Object);
+}

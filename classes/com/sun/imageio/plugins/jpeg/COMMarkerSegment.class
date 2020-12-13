@@ -1,0 +1,10 @@
+Compiled from "COMMarkerSegment.java"
+class com.sun.imageio.plugins.jpeg.COMMarkerSegment extends com.sun.imageio.plugins.jpeg.MarkerSegment {
+  com.sun.imageio.plugins.jpeg.COMMarkerSegment(com.sun.imageio.plugins.jpeg.JPEGBuffer) throws java.io.IOException;
+  com.sun.imageio.plugins.jpeg.COMMarkerSegment(java.lang.String);
+  com.sun.imageio.plugins.jpeg.COMMarkerSegment(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  java.lang.String getComment();
+  javax.imageio.metadata.IIOMetadataNode getNativeNode();
+  void write(javax.imageio.stream.ImageOutputStream) throws java.io.IOException;
+  void print();
+}

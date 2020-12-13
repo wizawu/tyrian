@@ -1,0 +1,28 @@
+Compiled from "TextLineComponent.java"
+public interface sun.font.TextLineComponent {
+  public static final int LEFT_TO_RIGHT;
+  public static final int RIGHT_TO_LEFT;
+  public static final int UNCHANGED;
+  public abstract sun.font.CoreMetrics getCoreMetrics();
+  public abstract void draw(java.awt.Graphics2D, float, float);
+  public abstract java.awt.geom.Rectangle2D getCharVisualBounds(int);
+  public abstract java.awt.geom.Rectangle2D getVisualBounds();
+  public abstract float getAdvance();
+  public abstract java.awt.Shape getOutline(float, float);
+  public abstract int getNumCharacters();
+  public abstract float getCharX(int);
+  public abstract float getCharY(int);
+  public abstract float getCharAdvance(int);
+  public abstract boolean caretAtOffsetIsValid(int);
+  public abstract int getLineBreakIndex(int, float);
+  public abstract float getAdvanceBetween(int, int);
+  public abstract java.awt.geom.Rectangle2D getLogicalBounds();
+  public abstract java.awt.geom.Rectangle2D getItalicBounds();
+  public abstract java.awt.geom.AffineTransform getBaselineTransform();
+  public abstract boolean isSimple();
+  public abstract java.awt.Rectangle getPixelBounds(java.awt.font.FontRenderContext, float, float);
+  public abstract sun.font.TextLineComponent getSubset(int, int, int);
+  public abstract int getNumJustificationInfos();
+  public abstract void getJustificationInfos(java.awt.font.GlyphJustificationInfo[], int, int, int);
+  public abstract sun.font.TextLineComponent applyJustificationDeltas(float[], int, boolean[]);
+}

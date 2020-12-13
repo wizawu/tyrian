@@ -1,0 +1,7 @@
+Compiled from "And.java"
+public class com.sun.org.apache.xpath.internal.operations.And extends com.sun.org.apache.xpath.internal.operations.Operation {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.operations.And();
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public boolean bool(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+}

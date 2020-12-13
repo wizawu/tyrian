@@ -1,0 +1,25 @@
+Compiled from "Instruction.java"
+public class sun.tools.asm.Instruction implements sun.tools.java.Constants {
+  long where;
+  int pc;
+  int opc;
+  java.lang.Object value;
+  sun.tools.asm.Instruction next;
+  boolean flagCondInverted;
+  boolean flagNoCovered;
+  public static final double SWITCHRATIO;
+  public sun.tools.asm.Instruction(long, int, java.lang.Object, boolean);
+  public sun.tools.asm.Instruction(boolean, long, int, java.lang.Object);
+  public sun.tools.asm.Instruction(long, int, boolean);
+  public sun.tools.asm.Instruction(long, int, java.lang.Object);
+  public int getOpcode();
+  public java.lang.Object getValue();
+  public void setValue(java.lang.Object);
+  void optimize(sun.tools.java.Environment);
+  void collect(sun.tools.asm.ConstantPool);
+  int balance();
+  int size(sun.tools.asm.ConstantPool);
+  void write(java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
+  public java.lang.String toString();
+  static {};
+}

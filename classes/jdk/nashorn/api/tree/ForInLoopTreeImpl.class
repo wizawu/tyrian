@@ -1,0 +1,12 @@
+Compiled from "ForInLoopTreeImpl.java"
+final class jdk.nashorn.api.tree.ForInLoopTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.ForInLoopTree {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.api.tree.ForInLoopTreeImpl(jdk.nashorn.internal.ir.ForNode, jdk.nashorn.api.tree.ExpressionTree, jdk.nashorn.api.tree.ExpressionTree, jdk.nashorn.api.tree.StatementTree);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public jdk.nashorn.api.tree.ExpressionTree getVariable();
+  public jdk.nashorn.api.tree.ExpressionTree getExpression();
+  public jdk.nashorn.api.tree.StatementTree getStatement();
+  public boolean isForEach();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+  static {};
+}

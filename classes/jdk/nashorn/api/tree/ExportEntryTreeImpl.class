@@ -1,0 +1,12 @@
+Compiled from "ExportEntryTreeImpl.java"
+final class jdk.nashorn.api.tree.ExportEntryTreeImpl extends jdk.nashorn.api.tree.TreeImpl implements jdk.nashorn.api.tree.ExportEntryTree {
+  static java.util.List<jdk.nashorn.api.tree.ExportEntryTreeImpl> createExportList(java.util.List<jdk.nashorn.internal.ir.Module$ExportEntry>);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+  public long getStartPosition();
+  public long getEndPosition();
+  public jdk.nashorn.api.tree.IdentifierTree getExportName();
+  public jdk.nashorn.api.tree.IdentifierTree getModuleRequest();
+  public jdk.nashorn.api.tree.IdentifierTree getImportName();
+  public jdk.nashorn.api.tree.IdentifierTree getLocalName();
+}

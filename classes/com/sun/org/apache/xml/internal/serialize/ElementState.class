@@ -1,0 +1,15 @@
+Compiled from "ElementState.java"
+public class com.sun.org.apache.xml.internal.serialize.ElementState {
+  public java.lang.String rawName;
+  public java.lang.String localName;
+  public java.lang.String namespaceURI;
+  public boolean preserveSpace;
+  public boolean empty;
+  public boolean afterElement;
+  public boolean afterComment;
+  public boolean doCData;
+  public boolean unescaped;
+  public boolean inCData;
+  public java.util.Map<java.lang.String, java.lang.String> prefixes;
+  public com.sun.org.apache.xml.internal.serialize.ElementState();
+}

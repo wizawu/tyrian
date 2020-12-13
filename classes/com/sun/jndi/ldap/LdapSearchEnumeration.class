@@ -1,0 +1,10 @@
+Compiled from "LdapSearchEnumeration.java"
+final class com.sun.jndi.ldap.LdapSearchEnumeration extends com.sun.jndi.ldap.AbstractLdapNamingEnumeration<javax.naming.directory.SearchResult> {
+  com.sun.jndi.ldap.LdapSearchEnumeration(com.sun.jndi.ldap.LdapCtx, com.sun.jndi.ldap.LdapResult, java.lang.String, com.sun.jndi.ldap.LdapCtx$SearchArgs, com.sun.jndi.toolkit.ctx.Continuation) throws javax.naming.NamingException;
+  protected javax.naming.directory.SearchResult createItem(java.lang.String, javax.naming.directory.Attributes, java.util.Vector<javax.naming.ldap.Control>) throws javax.naming.NamingException;
+  public void appendUnprocessedReferrals(com.sun.jndi.ldap.LdapReferralException);
+  protected com.sun.jndi.ldap.AbstractLdapNamingEnumeration<? extends javax.naming.NameClassPair> getReferredResults(com.sun.jndi.ldap.LdapReferralContext) throws javax.naming.NamingException;
+  protected void update(com.sun.jndi.ldap.AbstractLdapNamingEnumeration<? extends javax.naming.NameClassPair>);
+  void setStartName(javax.naming.Name);
+  protected javax.naming.NameClassPair createItem(java.lang.String, javax.naming.directory.Attributes, java.util.Vector) throws javax.naming.NamingException;
+}

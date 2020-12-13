@@ -1,0 +1,11 @@
+Compiled from "XPropertyCache.java"
+public class sun.awt.X11.XPropertyCache {
+  public sun.awt.X11.XPropertyCache();
+  public static boolean isCached(long, sun.awt.X11.XAtom);
+  public static sun.awt.X11.XPropertyCache$PropertyCacheEntry getCacheEntry(long, sun.awt.X11.XAtom);
+  public static void storeCache(sun.awt.X11.XPropertyCache$PropertyCacheEntry, long, sun.awt.X11.XAtom);
+  public static void clearCache(long);
+  public static void clearCache(long, sun.awt.X11.XAtom);
+  public static boolean isCachingSupported();
+  static {};
+}

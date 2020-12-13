@@ -1,0 +1,14 @@
+Compiled from "OffScreenImageSource.java"
+public class sun.awt.image.OffScreenImageSource implements java.awt.image.ImageProducer {
+  java.awt.image.BufferedImage image;
+  int width;
+  int height;
+  java.util.Hashtable<?, ?> properties;
+  public sun.awt.image.OffScreenImageSource(java.awt.image.BufferedImage, java.util.Hashtable<?, ?>);
+  public sun.awt.image.OffScreenImageSource(java.awt.image.BufferedImage);
+  public synchronized void addConsumer(java.awt.image.ImageConsumer);
+  public synchronized boolean isConsumer(java.awt.image.ImageConsumer);
+  public synchronized void removeConsumer(java.awt.image.ImageConsumer);
+  public void startProduction(java.awt.image.ImageConsumer);
+  public void requestTopDownLeftRightResend(java.awt.image.ImageConsumer);
+}

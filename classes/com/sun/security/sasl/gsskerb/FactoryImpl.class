@@ -1,0 +1,8 @@
+Compiled from "FactoryImpl.java"
+public final class com.sun.security.sasl.gsskerb.FactoryImpl implements javax.security.sasl.SaslClientFactory,javax.security.sasl.SaslServerFactory {
+  public com.sun.security.sasl.gsskerb.FactoryImpl();
+  public javax.security.sasl.SaslClient createSaslClient(java.lang.String[], java.lang.String, java.lang.String, java.lang.String, java.util.Map<java.lang.String, ?>, javax.security.auth.callback.CallbackHandler) throws javax.security.sasl.SaslException;
+  public javax.security.sasl.SaslServer createSaslServer(java.lang.String, java.lang.String, java.lang.String, java.util.Map<java.lang.String, ?>, javax.security.auth.callback.CallbackHandler) throws javax.security.sasl.SaslException;
+  public java.lang.String[] getMechanismNames(java.util.Map<java.lang.String, ?>);
+  static {};
+}

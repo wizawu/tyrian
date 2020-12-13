@@ -1,0 +1,11 @@
+Compiled from "Kernel.java"
+public class java.awt.image.Kernel implements java.lang.Cloneable {
+  public java.awt.image.Kernel(int, int, float[]);
+  public final int getXOrigin();
+  public final int getYOrigin();
+  public final int getWidth();
+  public final int getHeight();
+  public final float[] getKernelData(float[]);
+  public java.lang.Object clone();
+  static {};
+}

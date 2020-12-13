@@ -1,0 +1,7 @@
+Compiled from "JdbcRowSetResourceBundle.java"
+public class com.sun.rowset.JdbcRowSetResourceBundle implements java.io.Serializable {
+  static final long serialVersionUID;
+  public static com.sun.rowset.JdbcRowSetResourceBundle getJdbcRowSetResourceBundle() throws java.io.IOException;
+  public java.util.Enumeration getKeys();
+  public java.lang.Object handleGetObject(java.lang.String);
+}

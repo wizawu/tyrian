@@ -1,0 +1,5 @@
+Compiled from "CommandLine.java"
+public class sun.tools.util.CommandLine {
+  public sun.tools.util.CommandLine();
+  public static java.lang.String[] parse(java.lang.String[]) throws java.io.IOException;
+}

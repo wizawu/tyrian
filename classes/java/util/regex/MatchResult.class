@@ -1,0 +1,10 @@
+Compiled from "MatchResult.java"
+public interface java.util.regex.MatchResult {
+  public abstract int start();
+  public abstract int start(int);
+  public abstract int end();
+  public abstract int end(int);
+  public abstract java.lang.String group();
+  public abstract java.lang.String group(int);
+  public abstract int groupCount();
+}

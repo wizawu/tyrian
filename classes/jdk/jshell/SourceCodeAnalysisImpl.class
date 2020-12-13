@@ -1,0 +1,20 @@
+Compiled from "SourceCodeAnalysisImpl.java"
+class jdk.jshell.SourceCodeAnalysisImpl extends jdk.jshell.SourceCodeAnalysis {
+  jdk.jshell.SourceCodeAnalysisImpl(jdk.jshell.JShell);
+  public jdk.jshell.SourceCodeAnalysis$CompletionInfo analyzeCompletion(java.lang.String);
+  public java.util.List<jdk.jshell.SourceCodeAnalysis$Suggestion> completionSuggestions(java.lang.String, int, int[]);
+  public jdk.jshell.SourceCodeAnalysis$SnippetWrapper wrapper(jdk.jshell.Snippet);
+  public java.util.List<jdk.jshell.SourceCodeAnalysis$SnippetWrapper> wrappers(java.lang.String);
+  public java.util.List<jdk.jshell.Snippet> sourceToSnippets(java.lang.String);
+  public java.util.Collection<jdk.jshell.Snippet> dependents(jdk.jshell.Snippet);
+  void classpathChanged();
+  public java.util.List<jdk.jshell.SourceCodeAnalysis$Documentation> documentation(java.lang.String, int, boolean);
+  public void close();
+  public java.lang.String analyzeType(java.lang.String, int);
+  public jdk.jshell.SourceCodeAnalysis$QualifiedNames listQualifiedNames(java.lang.String, int);
+  public void suspendIndexing();
+  public void resumeIndexing();
+  static boolean isJRTMarkerFile(java.nio.file.Path);
+  public void waitBackgroundTaskFinished() throws java.lang.Exception;
+  static {};
+}

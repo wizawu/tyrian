@@ -1,0 +1,13 @@
+Compiled from "PackageUseWriter.java"
+public class jdk.javadoc.internal.doclets.formats.html.PackageUseWriter extends jdk.javadoc.internal.doclets.formats.html.SubWriterHolderWriter {
+  final javax.lang.model.element.PackageElement packageElement;
+  final java.util.SortedMap<java.lang.String, java.util.Set<javax.lang.model.element.TypeElement>> usingPackageToUsedClasses;
+  protected jdk.javadoc.internal.doclets.formats.html.markup.HtmlTree mainTree;
+  final java.lang.String packageUseTableSummary;
+  public jdk.javadoc.internal.doclets.formats.html.PackageUseWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.ClassUseMapper, jdk.javadoc.internal.doclets.toolkit.util.DocPath, javax.lang.model.element.PackageElement);
+  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.ClassUseMapper, javax.lang.model.element.PackageElement) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void generatePackageUseFile() throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void addPackageUse(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addPackageList(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addClassList(jdk.javadoc.internal.doclets.toolkit.Content);
+}

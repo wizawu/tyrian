@@ -1,0 +1,19 @@
+Compiled from "ProgressMonitor.java"
+public class javax.swing.ProgressMonitor implements javax.accessibility.Accessible {
+  protected javax.accessibility.AccessibleContext accessibleContext;
+  public javax.swing.ProgressMonitor(java.awt.Component, java.lang.Object, java.lang.String, int, int);
+  public void setProgress(int);
+  public void close();
+  public int getMinimum();
+  public void setMinimum(int);
+  public int getMaximum();
+  public void setMaximum(int);
+  public boolean isCanceled();
+  public void setMillisToDecideToPopup(int);
+  public int getMillisToDecideToPopup();
+  public void setMillisToPopup(int);
+  public int getMillisToPopup();
+  public void setNote(java.lang.String);
+  public java.lang.String getNote();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+}

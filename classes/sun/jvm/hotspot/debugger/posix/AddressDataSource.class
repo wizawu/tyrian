@@ -1,0 +1,12 @@
+Compiled from "AddressDataSource.java"
+class sun.jvm.hotspot.debugger.posix.AddressDataSource implements sun.jvm.hotspot.debugger.DataSource {
+  sun.jvm.hotspot.debugger.posix.AddressDataSource(sun.jvm.hotspot.debugger.Address);
+  public byte readByte() throws java.io.IOException;
+  public short readShort() throws java.io.IOException;
+  public int readInt() throws java.io.IOException;
+  public long readLong() throws java.io.IOException;
+  public int read(byte[]) throws java.io.IOException;
+  public void seek(long) throws java.io.IOException;
+  public long getFilePointer() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

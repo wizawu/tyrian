@@ -1,0 +1,5 @@
+Compiled from "CompositeContext.java"
+public interface java.awt.CompositeContext {
+  public abstract void dispose();
+  public abstract void compose(java.awt.image.Raster, java.awt.image.Raster, java.awt.image.WritableRaster);
+}

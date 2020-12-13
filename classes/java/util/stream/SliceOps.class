@@ -1,0 +1,9 @@
+Compiled from "SliceOps.java"
+final class java.util.stream.SliceOps {
+  static final boolean $assertionsDisabled;
+  public static <T> java.util.stream.Stream<T> makeRef(java.util.stream.AbstractPipeline<?, T, ?>, long, long);
+  public static java.util.stream.IntStream makeInt(java.util.stream.AbstractPipeline<?, java.lang.Integer, ?>, long, long);
+  public static java.util.stream.LongStream makeLong(java.util.stream.AbstractPipeline<?, java.lang.Long, ?>, long, long);
+  public static java.util.stream.DoubleStream makeDouble(java.util.stream.AbstractPipeline<?, java.lang.Double, ?>, long, long);
+  static {};
+}

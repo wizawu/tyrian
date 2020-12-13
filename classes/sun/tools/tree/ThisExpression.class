@@ -1,0 +1,21 @@
+Compiled from "ThisExpression.java"
+public class sun.tools.tree.ThisExpression extends sun.tools.tree.Expression {
+  sun.tools.tree.LocalMember field;
+  sun.tools.tree.Expression implementation;
+  sun.tools.tree.Expression outerArg;
+  public sun.tools.tree.ThisExpression(long);
+  protected sun.tools.tree.ThisExpression(int, long);
+  public sun.tools.tree.ThisExpression(long, sun.tools.tree.LocalMember);
+  public sun.tools.tree.ThisExpression(long, sun.tools.tree.Context);
+  public sun.tools.tree.ThisExpression(long, sun.tools.tree.Expression);
+  public sun.tools.tree.Expression getImplementation();
+  public sun.tools.tree.Expression getOuterArg();
+  public sun.tools.tree.Vset checkValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public boolean isNonNull();
+  public sun.tools.tree.FieldUpdater getAssigner(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.FieldUpdater getUpdater(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Expression inlineValue(sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Expression copyInline(sun.tools.tree.Context);
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public void print(java.io.PrintStream);
+}

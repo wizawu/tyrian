@@ -1,0 +1,9 @@
+Compiled from "ObjectEndpoint.java"
+class sun.rmi.transport.ObjectEndpoint {
+  static final boolean $assertionsDisabled;
+  sun.rmi.transport.ObjectEndpoint(java.rmi.server.ObjID, sun.rmi.transport.Transport);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  static {};
+}

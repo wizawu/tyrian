@@ -1,0 +1,10 @@
+Compiled from "ServicesCatalog.java"
+public final class jdk.internal.module.ServicesCatalog {
+  public static jdk.internal.module.ServicesCatalog create();
+  public void register(java.lang.Module);
+  public void addProvider(java.lang.Module, java.lang.Class<?>, java.lang.Class<?>);
+  public java.util.List<jdk.internal.module.ServicesCatalog$ServiceProvider> findServices(java.lang.String);
+  public static jdk.internal.module.ServicesCatalog getServicesCatalogOrNull(java.lang.ClassLoader);
+  public static jdk.internal.module.ServicesCatalog getServicesCatalog(java.lang.ClassLoader);
+  static {};
+}

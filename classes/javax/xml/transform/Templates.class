@@ -1,0 +1,5 @@
+Compiled from "Templates.java"
+public interface javax.xml.transform.Templates {
+  public abstract javax.xml.transform.Transformer newTransformer() throws javax.xml.transform.TransformerConfigurationException;
+  public abstract java.util.Properties getOutputProperties();
+}

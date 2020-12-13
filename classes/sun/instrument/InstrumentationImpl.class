@@ -1,0 +1,22 @@
+Compiled from "InstrumentationImpl.java"
+public class sun.instrument.InstrumentationImpl implements java.lang.instrument.Instrumentation {
+  public void addTransformer(java.lang.instrument.ClassFileTransformer);
+  public synchronized void addTransformer(java.lang.instrument.ClassFileTransformer, boolean);
+  public synchronized boolean removeTransformer(java.lang.instrument.ClassFileTransformer);
+  public boolean isModifiableClass(java.lang.Class<?>);
+  public boolean isModifiableModule(java.lang.Module);
+  public boolean isRetransformClassesSupported();
+  public void retransformClasses(java.lang.Class<?>...);
+  public boolean isRedefineClassesSupported();
+  public void redefineClasses(java.lang.instrument.ClassDefinition...) throws java.lang.ClassNotFoundException;
+  public java.lang.Class[] getAllLoadedClasses();
+  public java.lang.Class[] getInitiatedClasses(java.lang.ClassLoader);
+  public long getObjectSize(java.lang.Object);
+  public void appendToBootstrapClassLoaderSearch(java.util.jar.JarFile);
+  public void appendToSystemClassLoaderSearch(java.util.jar.JarFile);
+  public boolean isNativeMethodPrefixSupported();
+  public synchronized void setNativeMethodPrefix(java.lang.instrument.ClassFileTransformer, java.lang.String);
+  public void redefineModule(java.lang.Module, java.util.Set<java.lang.Module>, java.util.Map<java.lang.String, java.util.Set<java.lang.Module>>, java.util.Map<java.lang.String, java.util.Set<java.lang.Module>>, java.util.Set<java.lang.Class<?>>, java.util.Map<java.lang.Class<?>, java.util.List<java.lang.Class<?>>>);
+  public static void loadAgent(java.lang.String);
+  static {};
+}

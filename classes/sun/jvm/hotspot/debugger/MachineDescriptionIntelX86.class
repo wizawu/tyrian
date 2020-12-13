@@ -1,0 +1,6 @@
+Compiled from "MachineDescriptionIntelX86.java"
+public class sun.jvm.hotspot.debugger.MachineDescriptionIntelX86 extends sun.jvm.hotspot.debugger.MachineDescriptionTwosComplement implements sun.jvm.hotspot.debugger.MachineDescription {
+  public sun.jvm.hotspot.debugger.MachineDescriptionIntelX86();
+  public long getAddressSize();
+  public boolean isBigEndian();
+}

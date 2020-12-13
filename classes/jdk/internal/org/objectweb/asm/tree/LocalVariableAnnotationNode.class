@@ -1,0 +1,9 @@
+Compiled from "LocalVariableAnnotationNode.java"
+public class jdk.internal.org.objectweb.asm.tree.LocalVariableAnnotationNode extends jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode {
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.LabelNode> start;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.LabelNode> end;
+  public java.util.List<java.lang.Integer> index;
+  public jdk.internal.org.objectweb.asm.tree.LocalVariableAnnotationNode(int, jdk.internal.org.objectweb.asm.TypePath, jdk.internal.org.objectweb.asm.tree.LabelNode[], jdk.internal.org.objectweb.asm.tree.LabelNode[], int[], java.lang.String);
+  public jdk.internal.org.objectweb.asm.tree.LocalVariableAnnotationNode(int, int, jdk.internal.org.objectweb.asm.TypePath, jdk.internal.org.objectweb.asm.tree.LabelNode[], jdk.internal.org.objectweb.asm.tree.LabelNode[], int[], java.lang.String);
+  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor, boolean);
+}

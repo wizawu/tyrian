@@ -1,0 +1,5 @@
+Compiled from "CurrentFrame.java"
+class jdk.internal.org.objectweb.asm.CurrentFrame extends jdk.internal.org.objectweb.asm.Frame {
+  jdk.internal.org.objectweb.asm.CurrentFrame();
+  void execute(int, int, jdk.internal.org.objectweb.asm.ClassWriter, jdk.internal.org.objectweb.asm.Item);
+}

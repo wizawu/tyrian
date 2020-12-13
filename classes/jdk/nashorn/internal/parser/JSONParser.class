@@ -1,0 +1,11 @@
+Compiled from "JSONParser.java"
+public class jdk.nashorn.internal.parser.JSONParser {
+  final int length;
+  int pos;
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.parser.JSONParser(java.lang.String, jdk.nashorn.internal.objects.Global, boolean);
+  public static java.lang.String quote(java.lang.String);
+  public java.lang.Object parse();
+  jdk.nashorn.internal.runtime.ParserException error(java.lang.String, int, int) throws jdk.nashorn.internal.runtime.ParserException;
+  static {};
+}

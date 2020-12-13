@@ -1,0 +1,8 @@
+Compiled from "NumberConstantData.java"
+final class sun.tools.asm.NumberConstantData extends sun.tools.asm.ConstantPoolData {
+  java.lang.Number num;
+  sun.tools.asm.NumberConstantData(sun.tools.asm.ConstantPool, java.lang.Number);
+  void write(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
+  int order();
+  int width();
+}

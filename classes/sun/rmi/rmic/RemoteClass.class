@@ -1,0 +1,10 @@
+Compiled from "RemoteClass.java"
+public class sun.rmi.rmic.RemoteClass implements sun.rmi.rmic.RMIConstants {
+  public static sun.rmi.rmic.RemoteClass forClass(sun.rmi.rmic.BatchEnvironment, sun.tools.java.ClassDefinition);
+  public sun.tools.java.ClassDefinition getClassDefinition();
+  public sun.tools.java.Identifier getName();
+  public sun.tools.java.ClassDefinition[] getRemoteInterfaces();
+  public sun.rmi.rmic.RemoteClass$Method[] getRemoteMethods();
+  public long getInterfaceHash();
+  public java.lang.String toString();
+}

@@ -1,0 +1,5 @@
+Compiled from "Pack200.java"
+public abstract class java.util.jar.Pack200 {
+  public static synchronized java.util.jar.Pack200$Packer newPacker();
+  public static java.util.jar.Pack200$Unpacker newUnpacker();
+}

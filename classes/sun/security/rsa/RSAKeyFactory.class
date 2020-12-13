@@ -1,0 +1,17 @@
+Compiled from "RSAKeyFactory.java"
+public class sun.security.rsa.RSAKeyFactory extends java.security.KeyFactorySpi {
+  public static final int MIN_MODLEN;
+  public static final int MAX_MODLEN;
+  public static final int MAX_MODLEN_RESTRICT_EXP;
+  public static final int MAX_RESTRICTED_EXPLEN;
+  static sun.security.rsa.RSAKeyFactory getInstance(sun.security.rsa.RSAUtil$KeyType);
+  public static java.security.interfaces.RSAKey toRSAKey(java.security.Key) throws java.security.InvalidKeyException;
+  static void checkRSAProviderKeyLengths(int, java.math.BigInteger) throws java.security.InvalidKeyException;
+  public static void checkKeyLengths(int, java.math.BigInteger, int, int) throws java.security.InvalidKeyException;
+  public sun.security.rsa.RSAKeyFactory(sun.security.rsa.RSAUtil$KeyType);
+  protected java.security.Key engineTranslateKey(java.security.Key) throws java.security.InvalidKeyException;
+  protected java.security.PublicKey engineGeneratePublic(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
+  protected java.security.PrivateKey engineGeneratePrivate(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
+  protected <T extends java.security.spec.KeySpec> T engineGetKeySpec(java.security.Key, java.lang.Class<T>) throws java.security.spec.InvalidKeySpecException;
+  static {};
+}

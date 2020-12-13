@@ -1,0 +1,20 @@
+Compiled from "GTKIconFactory.java"
+class com.sun.java.swing.plaf.gtk.GTKIconFactory {
+  static final int CHECK_ICON_EXTRA_INSET;
+  static final int DEFAULT_ICON_SPACING;
+  static final int DEFAULT_ICON_SIZE;
+  static final int DEFAULT_TOGGLE_MENU_ITEM_SIZE;
+  com.sun.java.swing.plaf.gtk.GTKIconFactory();
+  public static javax.swing.Icon getAscendingSortIcon();
+  public static javax.swing.Icon getDescendingSortIcon();
+  public static javax.swing.plaf.synth.SynthIcon getTreeExpandedIcon();
+  public static javax.swing.plaf.synth.SynthIcon getTreeCollapsedIcon();
+  public static javax.swing.plaf.synth.SynthIcon getRadioButtonIcon();
+  public static javax.swing.plaf.synth.SynthIcon getCheckBoxIcon();
+  public static javax.swing.plaf.synth.SynthIcon getMenuArrowIcon();
+  public static javax.swing.plaf.synth.SynthIcon getCheckBoxMenuItemCheckIcon();
+  public static javax.swing.plaf.synth.SynthIcon getRadioButtonMenuItemCheckIcon();
+  public static javax.swing.plaf.synth.SynthIcon getToolBarHandleIcon();
+  static void resetIcons();
+  static {};
+}

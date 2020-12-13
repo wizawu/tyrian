@@ -1,0 +1,8 @@
+Compiled from "INVOKESTATIC.java"
+public class com.sun.org.apache.bcel.internal.generic.INVOKESTATIC extends com.sun.org.apache.bcel.internal.generic.InvokeInstruction {
+  com.sun.org.apache.bcel.internal.generic.INVOKESTATIC();
+  public com.sun.org.apache.bcel.internal.generic.INVOKESTATIC(int);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public java.lang.Class<?>[] getExceptions();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

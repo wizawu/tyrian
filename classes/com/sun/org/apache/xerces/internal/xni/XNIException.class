@@ -1,0 +1,9 @@
+Compiled from "XNIException.java"
+public class com.sun.org.apache.xerces.internal.xni.XNIException extends java.lang.RuntimeException {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xerces.internal.xni.XNIException(java.lang.String);
+  public com.sun.org.apache.xerces.internal.xni.XNIException(java.lang.Exception);
+  public com.sun.org.apache.xerces.internal.xni.XNIException(java.lang.String, java.lang.Exception);
+  public java.lang.Exception getException();
+  public java.lang.Throwable getCause();
+}

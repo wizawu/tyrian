@@ -1,0 +1,13 @@
+Compiled from "DoubleAdder.java"
+public class java.util.concurrent.atomic.DoubleAdder extends java.util.concurrent.atomic.Striped64 implements java.io.Serializable {
+  public java.util.concurrent.atomic.DoubleAdder();
+  public void add(double);
+  public double sum();
+  public void reset();
+  public double sumThenReset();
+  public java.lang.String toString();
+  public double doubleValue();
+  public long longValue();
+  public int intValue();
+  public float floatValue();
+}

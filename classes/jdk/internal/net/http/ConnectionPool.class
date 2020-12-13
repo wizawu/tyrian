@@ -1,0 +1,21 @@
+Compiled from "ConnectionPool.java"
+final class jdk.internal.net.http.ConnectionPool {
+  static final long KEEP_ALIVE;
+  static final long MAX_POOL_SIZE;
+  final jdk.internal.net.http.common.Logger debug;
+  boolean stopped;
+  static final boolean $assertionsDisabled;
+  jdk.internal.net.http.ConnectionPool(long);
+  final java.lang.String dbgString();
+  synchronized void start();
+  static jdk.internal.net.http.ConnectionPool$CacheKey cacheKey(java.net.InetSocketAddress, java.net.InetSocketAddress);
+  synchronized jdk.internal.net.http.HttpConnection getConnection(boolean, java.net.InetSocketAddress, java.net.InetSocketAddress);
+  void returnToPool(jdk.internal.net.http.HttpConnection);
+  void returnToPool(jdk.internal.net.http.HttpConnection, java.time.Instant, long);
+  long purgeExpiredConnectionsAndReturnNextDeadline();
+  long purgeExpiredConnectionsAndReturnNextDeadline(java.time.Instant);
+  void stop();
+  synchronized boolean contains(jdk.internal.net.http.HttpConnection);
+  void cleanup(jdk.internal.net.http.HttpConnection, java.lang.Throwable);
+  static {};
+}

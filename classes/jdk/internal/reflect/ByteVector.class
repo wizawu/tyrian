@@ -1,0 +1,9 @@
+Compiled from "ByteVector.java"
+interface jdk.internal.reflect.ByteVector {
+  public abstract int getLength();
+  public abstract byte get(int);
+  public abstract void put(int, byte);
+  public abstract void add(byte);
+  public abstract void trim();
+  public abstract byte[] getData();
+}

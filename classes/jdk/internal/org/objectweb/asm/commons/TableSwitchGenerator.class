@@ -1,0 +1,5 @@
+Compiled from "TableSwitchGenerator.java"
+public interface jdk.internal.org.objectweb.asm.commons.TableSwitchGenerator {
+  public abstract void generateCase(int, jdk.internal.org.objectweb.asm.Label);
+  public abstract void generateDefault();
+}

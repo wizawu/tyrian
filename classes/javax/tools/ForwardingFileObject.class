@@ -1,0 +1,14 @@
+Compiled from "ForwardingFileObject.java"
+public class javax.tools.ForwardingFileObject<F extends javax.tools.FileObject> implements javax.tools.FileObject {
+  protected final F fileObject;
+  protected javax.tools.ForwardingFileObject(F);
+  public java.net.URI toUri();
+  public java.lang.String getName();
+  public java.io.InputStream openInputStream() throws java.io.IOException;
+  public java.io.OutputStream openOutputStream() throws java.io.IOException;
+  public java.io.Reader openReader(boolean) throws java.io.IOException;
+  public java.lang.CharSequence getCharContent(boolean) throws java.io.IOException;
+  public java.io.Writer openWriter() throws java.io.IOException;
+  public long getLastModified();
+  public boolean delete();
+}

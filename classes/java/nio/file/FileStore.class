@@ -1,0 +1,15 @@
+Compiled from "FileStore.java"
+public abstract class java.nio.file.FileStore {
+  protected java.nio.file.FileStore();
+  public abstract java.lang.String name();
+  public abstract java.lang.String type();
+  public abstract boolean isReadOnly();
+  public abstract long getTotalSpace() throws java.io.IOException;
+  public abstract long getUsableSpace() throws java.io.IOException;
+  public long getBlockSize() throws java.io.IOException;
+  public abstract long getUnallocatedSpace() throws java.io.IOException;
+  public abstract boolean supportsFileAttributeView(java.lang.Class<? extends java.nio.file.attribute.FileAttributeView>);
+  public abstract boolean supportsFileAttributeView(java.lang.String);
+  public abstract <V extends java.nio.file.attribute.FileStoreAttributeView> V getFileStoreAttributeView(java.lang.Class<V>);
+  public abstract java.lang.Object getAttribute(java.lang.String) throws java.io.IOException;
+}

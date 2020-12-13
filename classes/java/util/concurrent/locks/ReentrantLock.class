@@ -1,0 +1,24 @@
+Compiled from "ReentrantLock.java"
+public class java.util.concurrent.locks.ReentrantLock implements java.util.concurrent.locks.Lock,java.io.Serializable {
+  public java.util.concurrent.locks.ReentrantLock();
+  public java.util.concurrent.locks.ReentrantLock(boolean);
+  public void lock();
+  public void lockInterruptibly() throws java.lang.InterruptedException;
+  public boolean tryLock();
+  public boolean tryLock(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public void unlock();
+  public java.util.concurrent.locks.Condition newCondition();
+  public int getHoldCount();
+  public boolean isHeldByCurrentThread();
+  public boolean isLocked();
+  public final boolean isFair();
+  protected java.lang.Thread getOwner();
+  public final boolean hasQueuedThreads();
+  public final boolean hasQueuedThread(java.lang.Thread);
+  public final int getQueueLength();
+  protected java.util.Collection<java.lang.Thread> getQueuedThreads();
+  public boolean hasWaiters(java.util.concurrent.locks.Condition);
+  public int getWaitQueueLength(java.util.concurrent.locks.Condition);
+  protected java.util.Collection<java.lang.Thread> getWaitingThreads(java.util.concurrent.locks.Condition);
+  public java.lang.String toString();
+}

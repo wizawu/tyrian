@@ -1,0 +1,12 @@
+Compiled from "SignatureProperty.java"
+public class com.sun.org.apache.xml.internal.security.signature.SignatureProperty extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy {
+  public com.sun.org.apache.xml.internal.security.signature.SignatureProperty(org.w3c.dom.Document, java.lang.String);
+  public com.sun.org.apache.xml.internal.security.signature.SignatureProperty(org.w3c.dom.Document, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xml.internal.security.signature.SignatureProperty(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public void setId(java.lang.String);
+  public java.lang.String getId();
+  public void setTarget(java.lang.String);
+  public java.lang.String getTarget();
+  public org.w3c.dom.Node appendChild(org.w3c.dom.Node);
+  public java.lang.String getBaseLocalName();
+}

@@ -1,0 +1,7 @@
+Compiled from "CertsInFilesystemDirectoryResolver.java"
+public class com.sun.org.apache.xml.internal.security.keys.storage.implementations.CertsInFilesystemDirectoryResolver extends com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi {
+  public com.sun.org.apache.xml.internal.security.keys.storage.implementations.CertsInFilesystemDirectoryResolver(java.lang.String) throws com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverException;
+  public java.util.Iterator<java.security.cert.Certificate> getIterator();
+  public static void main(java.lang.String[]) throws java.lang.Exception;
+  static {};
+}

@@ -1,0 +1,8 @@
+Compiled from "BooleanEditor.java"
+public class com.sun.beans.editors.BooleanEditor extends java.beans.PropertyEditorSupport {
+  public com.sun.beans.editors.BooleanEditor();
+  public java.lang.String getJavaInitializationString();
+  public java.lang.String getAsText();
+  public void setAsText(java.lang.String) throws java.lang.IllegalArgumentException;
+  public java.lang.String[] getTags();
+}

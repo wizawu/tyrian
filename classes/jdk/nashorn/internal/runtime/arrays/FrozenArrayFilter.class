@@ -1,0 +1,11 @@
+Compiled from "FrozenArrayFilter.java"
+final class jdk.nashorn.internal.runtime.arrays.FrozenArrayFilter extends jdk.nashorn.internal.runtime.arrays.SealedArrayFilter {
+  jdk.nashorn.internal.runtime.arrays.FrozenArrayFilter(jdk.nashorn.internal.runtime.arrays.ArrayData);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData copy();
+  public jdk.nashorn.internal.runtime.PropertyDescriptor getDescriptor(jdk.nashorn.internal.objects.Global, int);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, int, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, double, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, java.lang.Object, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData push(boolean, java.lang.Object...);
+  public java.lang.Object pop();
+}

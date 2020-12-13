@@ -1,0 +1,5 @@
+Compiled from "RSAPublicKey.java"
+public interface java.security.interfaces.RSAPublicKey extends java.security.PublicKey,java.security.interfaces.RSAKey {
+  public static final long serialVersionUID;
+  public abstract java.math.BigInteger getPublicExponent();
+}

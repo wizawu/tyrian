@@ -1,0 +1,10 @@
+Compiled from "GetPropertyAction.java"
+public class sun.security.action.GetPropertyAction implements java.security.PrivilegedAction<java.lang.String> {
+  public sun.security.action.GetPropertyAction(java.lang.String);
+  public sun.security.action.GetPropertyAction(java.lang.String, java.lang.String);
+  public java.lang.String run();
+  public static java.lang.String privilegedGetProperty(java.lang.String);
+  public static java.lang.String privilegedGetProperty(java.lang.String, java.lang.String);
+  public static java.util.Properties privilegedGetProperties();
+  public java.lang.Object run();
+}

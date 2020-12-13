@@ -1,0 +1,5 @@
+Compiled from "BranchOptimizer.java"
+final class jdk.nashorn.internal.codegen.BranchOptimizer {
+  jdk.nashorn.internal.codegen.BranchOptimizer(jdk.nashorn.internal.codegen.CodeGenerator, jdk.nashorn.internal.codegen.MethodEmitter);
+  void execute(jdk.nashorn.internal.ir.Expression, jdk.nashorn.internal.codegen.Label, boolean);
+}

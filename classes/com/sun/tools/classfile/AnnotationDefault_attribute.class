@@ -1,0 +1,8 @@
+Compiled from "AnnotationDefault_attribute.java"
+public class com.sun.tools.classfile.AnnotationDefault_attribute extends com.sun.tools.classfile.Attribute {
+  public final com.sun.tools.classfile.Annotation$element_value default_value;
+  com.sun.tools.classfile.AnnotationDefault_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException, com.sun.tools.classfile.Annotation$InvalidAnnotation;
+  public com.sun.tools.classfile.AnnotationDefault_attribute(com.sun.tools.classfile.ConstantPool, com.sun.tools.classfile.Annotation$element_value) throws com.sun.tools.classfile.ConstantPoolException;
+  public com.sun.tools.classfile.AnnotationDefault_attribute(int, com.sun.tools.classfile.Annotation$element_value);
+  public <R, D> R accept(com.sun.tools.classfile.Attribute$Visitor<R, D>, D);
+}

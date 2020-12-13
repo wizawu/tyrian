@@ -1,0 +1,24 @@
+Compiled from "SynthMenuItemLayoutHelper.java"
+class javax.swing.plaf.synth.SynthMenuItemLayoutHelper extends sun.swing.MenuItemLayoutHelper {
+  public static final sun.swing.StringUIClientPropertyKey MAX_ACC_OR_ARROW_WIDTH;
+  public static final sun.swing.MenuItemLayoutHelper$ColumnAlignment LTR_ALIGNMENT_1;
+  public static final sun.swing.MenuItemLayoutHelper$ColumnAlignment LTR_ALIGNMENT_2;
+  public static final sun.swing.MenuItemLayoutHelper$ColumnAlignment RTL_ALIGNMENT_1;
+  public static final sun.swing.MenuItemLayoutHelper$ColumnAlignment RTL_ALIGNMENT_2;
+  public javax.swing.plaf.synth.SynthMenuItemLayoutHelper(javax.swing.plaf.synth.SynthContext, javax.swing.plaf.synth.SynthContext, javax.swing.JMenuItem, javax.swing.Icon, javax.swing.Icon, java.awt.Rectangle, int, java.lang.String, boolean, boolean, java.lang.String);
+  protected void calcWidthsAndHeights();
+  protected void calcMaxWidths();
+  public javax.swing.plaf.synth.SynthContext getContext();
+  public javax.swing.plaf.synth.SynthContext getAccContext();
+  public javax.swing.plaf.synth.SynthStyle getStyle();
+  public javax.swing.plaf.synth.SynthStyle getAccStyle();
+  public javax.swing.plaf.synth.SynthGraphicsUtils getGraphicsUtils();
+  public javax.swing.plaf.synth.SynthGraphicsUtils getAccGraphicsUtils();
+  public boolean alignAcceleratorText();
+  public int getMaxAccOrArrowWidth();
+  protected void prepareForLayout(sun.swing.MenuItemLayoutHelper$LayoutResult);
+  public sun.swing.MenuItemLayoutHelper$ColumnAlignment getLTRColumnAlignment();
+  public sun.swing.MenuItemLayoutHelper$ColumnAlignment getRTLColumnAlignment();
+  protected void layoutIconAndTextInLabelRect(sun.swing.MenuItemLayoutHelper$LayoutResult);
+  static {};
+}

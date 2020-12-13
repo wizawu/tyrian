@@ -1,0 +1,6 @@
+Compiled from "MenuKeyEvent.java"
+public class javax.swing.event.MenuKeyEvent extends java.awt.event.KeyEvent {
+  public javax.swing.event.MenuKeyEvent(java.awt.Component, int, long, int, int, char, javax.swing.MenuElement[], javax.swing.MenuSelectionManager);
+  public javax.swing.MenuElement[] getPath();
+  public javax.swing.MenuSelectionManager getMenuSelectionManager();
+}

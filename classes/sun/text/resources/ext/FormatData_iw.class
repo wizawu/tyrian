@@ -1,0 +1,5 @@
+Compiled from "FormatData_iw.java"
+public class sun.text.resources.ext.FormatData_iw extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_iw();
+  protected final java.lang.Object[][] getContents();
+}

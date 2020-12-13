@@ -1,0 +1,5 @@
+Compiled from "FileTypeDetector.java"
+public abstract class java.nio.file.spi.FileTypeDetector {
+  protected java.nio.file.spi.FileTypeDetector();
+  public abstract java.lang.String probeContentType(java.nio.file.Path) throws java.io.IOException;
+}

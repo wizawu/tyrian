@@ -1,0 +1,4 @@
+Compiled from "WritableByteChannel.java"
+public interface java.nio.channels.WritableByteChannel extends java.nio.channels.Channel {
+  public abstract int write(java.nio.ByteBuffer) throws java.io.IOException;
+}

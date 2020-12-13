@@ -1,0 +1,4 @@
+Compiled from "SliderUI.java"
+public abstract class javax.swing.plaf.SliderUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.SliderUI();
+}

@@ -1,0 +1,9 @@
+Compiled from "SortOrder.java"
+public final class javax.swing.SortOrder extends java.lang.Enum<javax.swing.SortOrder> {
+  public static final javax.swing.SortOrder ASCENDING;
+  public static final javax.swing.SortOrder DESCENDING;
+  public static final javax.swing.SortOrder UNSORTED;
+  public static javax.swing.SortOrder[] values();
+  public static javax.swing.SortOrder valueOf(java.lang.String);
+  static {};
+}

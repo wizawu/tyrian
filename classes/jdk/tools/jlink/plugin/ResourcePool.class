@@ -1,0 +1,12 @@
+Compiled from "ResourcePool.java"
+public interface jdk.tools.jlink.plugin.ResourcePool {
+  public abstract jdk.tools.jlink.plugin.ResourcePoolModuleView moduleView();
+  public abstract java.util.stream.Stream<jdk.tools.jlink.plugin.ResourcePoolEntry> entries();
+  public abstract int entryCount();
+  public abstract java.util.Optional<jdk.tools.jlink.plugin.ResourcePoolEntry> findEntry(java.lang.String);
+  public abstract java.util.Optional<jdk.tools.jlink.plugin.ResourcePoolEntry> findEntryInContext(java.lang.String, jdk.tools.jlink.plugin.ResourcePoolEntry);
+  public abstract boolean contains(jdk.tools.jlink.plugin.ResourcePoolEntry);
+  public abstract boolean isEmpty();
+  public abstract java.nio.ByteOrder byteOrder();
+  public default void transformAndCopy(java.util.function.Function<jdk.tools.jlink.plugin.ResourcePoolEntry, jdk.tools.jlink.plugin.ResourcePoolEntry>, jdk.tools.jlink.plugin.ResourcePoolBuilder);
+}

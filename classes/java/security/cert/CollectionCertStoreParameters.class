@@ -1,0 +1,8 @@
+Compiled from "CollectionCertStoreParameters.java"
+public class java.security.cert.CollectionCertStoreParameters implements java.security.cert.CertStoreParameters {
+  public java.security.cert.CollectionCertStoreParameters(java.util.Collection<?>);
+  public java.security.cert.CollectionCertStoreParameters();
+  public java.util.Collection<?> getCollection();
+  public java.lang.Object clone();
+  public java.lang.String toString();
+}

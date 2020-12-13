@@ -1,0 +1,8 @@
+Compiled from "LdapPrincipal.java"
+public final class com.sun.security.auth.LdapPrincipal implements java.security.Principal,java.io.Serializable {
+  public com.sun.security.auth.LdapPrincipal(java.lang.String) throws javax.naming.InvalidNameException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String getName();
+  public java.lang.String toString();
+}

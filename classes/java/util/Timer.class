@@ -1,0 +1,16 @@
+Compiled from "Timer.java"
+public class java.util.Timer {
+  public java.util.Timer();
+  public java.util.Timer(boolean);
+  public java.util.Timer(java.lang.String);
+  public java.util.Timer(java.lang.String, boolean);
+  public void schedule(java.util.TimerTask, long);
+  public void schedule(java.util.TimerTask, java.util.Date);
+  public void schedule(java.util.TimerTask, long, long);
+  public void schedule(java.util.TimerTask, java.util.Date, long);
+  public void scheduleAtFixedRate(java.util.TimerTask, long, long);
+  public void scheduleAtFixedRate(java.util.TimerTask, java.util.Date, long);
+  public void cancel();
+  public int purge();
+  static {};
+}

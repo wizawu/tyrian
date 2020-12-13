@@ -1,0 +1,36 @@
+Compiled from "MotifFileChooserUI.java"
+public class com.sun.java.swing.plaf.motif.MotifFileChooserUI extends javax.swing.plaf.basic.BasicFileChooserUI {
+  protected javax.swing.JList<java.io.File> directoryList;
+  protected javax.swing.JList<java.io.File> fileList;
+  protected javax.swing.JTextField pathField;
+  protected javax.swing.JComboBox<javax.swing.filechooser.FileFilter> filterComboBox;
+  protected javax.swing.JTextField filenameTextField;
+  protected javax.swing.JButton approveButton;
+  public com.sun.java.swing.plaf.motif.MotifFileChooserUI(javax.swing.JFileChooser);
+  public java.lang.String getFileName();
+  public void setFileName(java.lang.String);
+  public java.lang.String getDirectoryName();
+  public void setDirectoryName(java.lang.String);
+  public void ensureFileIsVisible(javax.swing.JFileChooser, java.io.File);
+  public void rescanCurrentDirectory(javax.swing.JFileChooser);
+  public java.beans.PropertyChangeListener createPropertyChangeListener(javax.swing.JFileChooser);
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  public void installComponents(javax.swing.JFileChooser);
+  protected javax.swing.JPanel getBottomPanel();
+  public void uninstallComponents(javax.swing.JFileChooser);
+  protected void installStrings(javax.swing.JFileChooser);
+  protected void installIcons(javax.swing.JFileChooser);
+  protected void uninstallIcons(javax.swing.JFileChooser);
+  protected javax.swing.JScrollPane createFilesList();
+  protected javax.swing.JScrollPane createDirectoryList();
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  protected void align(javax.swing.JComponent);
+  protected com.sun.java.swing.plaf.motif.MotifFileChooserUI$FilterComboBoxModel createFilterComboBoxModel();
+  protected com.sun.java.swing.plaf.motif.MotifFileChooserUI$FilterComboBoxRenderer createFilterComboBoxRenderer();
+  protected javax.swing.JButton getApproveButton(javax.swing.JFileChooser);
+  static {};
+}

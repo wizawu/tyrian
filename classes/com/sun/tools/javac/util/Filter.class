@@ -1,0 +1,4 @@
+Compiled from "Filter.java"
+public interface com.sun.tools.javac.util.Filter<T> {
+  public abstract boolean accepts(T);
+}

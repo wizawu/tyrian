@@ -1,0 +1,18 @@
+Compiled from "SynthLabelUI.java"
+public class javax.swing.plaf.synth.SynthLabelUI extends javax.swing.plaf.basic.BasicLabelUI implements javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthLabelUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installDefaults(javax.swing.JLabel);
+  void updateStyle(javax.swing.JLabel);
+  protected void uninstallDefaults(javax.swing.JLabel);
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  public int getBaseline(javax.swing.JComponent, int, int);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+}

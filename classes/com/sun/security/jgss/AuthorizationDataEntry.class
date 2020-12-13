@@ -1,0 +1,7 @@
+Compiled from "AuthorizationDataEntry.java"
+public final class com.sun.security.jgss.AuthorizationDataEntry {
+  public com.sun.security.jgss.AuthorizationDataEntry(int, byte[]);
+  public int getType();
+  public byte[] getData();
+  public java.lang.String toString();
+}

@@ -1,0 +1,23 @@
+Compiled from "Throwable.java"
+public class java.lang.Throwable implements java.io.Serializable {
+  static final boolean $assertionsDisabled;
+  public java.lang.Throwable();
+  public java.lang.Throwable(java.lang.String);
+  public java.lang.Throwable(java.lang.String, java.lang.Throwable);
+  public java.lang.Throwable(java.lang.Throwable);
+  protected java.lang.Throwable(java.lang.String, java.lang.Throwable, boolean, boolean);
+  public java.lang.String getMessage();
+  public java.lang.String getLocalizedMessage();
+  public synchronized java.lang.Throwable getCause();
+  public synchronized java.lang.Throwable initCause(java.lang.Throwable);
+  public java.lang.String toString();
+  public void printStackTrace();
+  public void printStackTrace(java.io.PrintStream);
+  public void printStackTrace(java.io.PrintWriter);
+  public synchronized java.lang.Throwable fillInStackTrace();
+  public java.lang.StackTraceElement[] getStackTrace();
+  public void setStackTrace(java.lang.StackTraceElement[]);
+  public final synchronized void addSuppressed(java.lang.Throwable);
+  public final synchronized java.lang.Throwable[] getSuppressed();
+  static {};
+}

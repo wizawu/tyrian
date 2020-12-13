@@ -1,0 +1,4 @@
+Compiled from "KeyName.java"
+public interface javax.xml.crypto.dsig.keyinfo.KeyName extends javax.xml.crypto.XMLStructure {
+  public abstract java.lang.String getName();
+}

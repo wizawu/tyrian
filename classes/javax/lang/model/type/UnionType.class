@@ -1,0 +1,4 @@
+Compiled from "UnionType.java"
+public interface javax.lang.model.type.UnionType extends javax.lang.model.type.TypeMirror {
+  public abstract java.util.List<? extends javax.lang.model.type.TypeMirror> getAlternatives();
+}

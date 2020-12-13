@@ -1,0 +1,5 @@
+Compiled from "CMSHeap.java"
+public class sun.jvm.hotspot.gc.cms.CMSHeap extends sun.jvm.hotspot.gc.shared.GenCollectedHeap {
+  public sun.jvm.hotspot.gc.cms.CMSHeap(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.gc.shared.CollectedHeapName kind();
+}

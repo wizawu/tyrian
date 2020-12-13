@@ -1,0 +1,6 @@
+Compiled from "BMPMetadataFormat.java"
+public class com.sun.imageio.plugins.bmp.BMPMetadataFormat extends javax.imageio.metadata.IIOMetadataFormatImpl {
+  public boolean canNodeAppear(java.lang.String, javax.imageio.ImageTypeSpecifier);
+  public static synchronized javax.imageio.metadata.IIOMetadataFormat getInstance();
+  static {};
+}

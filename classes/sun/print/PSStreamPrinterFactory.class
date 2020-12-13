@@ -1,0 +1,11 @@
+Compiled from "PSStreamPrinterFactory.java"
+public class sun.print.PSStreamPrinterFactory extends javax.print.StreamPrintServiceFactory {
+  static final java.lang.String psMimeType;
+  static final javax.print.DocFlavor[] supportedDocFlavors;
+  public sun.print.PSStreamPrinterFactory();
+  public java.lang.String getOutputFormat();
+  public javax.print.DocFlavor[] getSupportedDocFlavors();
+  static javax.print.DocFlavor[] getFlavors();
+  public javax.print.StreamPrintService getPrintService(java.io.OutputStream);
+  static {};
+}

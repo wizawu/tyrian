@@ -1,0 +1,7 @@
+Compiled from "ToolException.java"
+class jdk.javadoc.internal.tool.ToolException extends java.lang.Exception {
+  final java.lang.String message;
+  final jdk.javadoc.internal.tool.Main$Result result;
+  jdk.javadoc.internal.tool.ToolException(jdk.javadoc.internal.tool.Main$Result, java.lang.String);
+  jdk.javadoc.internal.tool.ToolException(jdk.javadoc.internal.tool.Main$Result, java.lang.String, java.lang.Throwable);
+}

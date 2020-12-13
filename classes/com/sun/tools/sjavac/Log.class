@@ -1,0 +1,24 @@
+Compiled from "Log.java"
+public class com.sun.tools.sjavac.Log {
+  protected java.io.PrintWriter err;
+  protected java.io.PrintWriter out;
+  protected com.sun.tools.sjavac.Log$Level level;
+  public com.sun.tools.sjavac.Log(java.io.Writer, java.io.Writer);
+  public static void setLogForCurrentThread(com.sun.tools.sjavac.Log);
+  public static void setLogLevel(java.lang.String);
+  public static void setLogLevel(com.sun.tools.sjavac.Log$Level);
+  public static void trace(java.lang.String);
+  public static void debug(java.lang.String);
+  public static void info(java.lang.String);
+  public static void warn(java.lang.String);
+  public static void error(java.lang.String);
+  public static void error(java.lang.Throwable);
+  public static void log(com.sun.tools.sjavac.Log$Level, java.lang.String);
+  public static void debug(java.lang.Throwable);
+  public static void log(com.sun.tools.sjavac.Log$Level, java.lang.Throwable);
+  public static boolean isDebugging();
+  protected boolean isLevelLogged(com.sun.tools.sjavac.Log$Level);
+  public static com.sun.tools.sjavac.Log get();
+  protected void printLogMsg(com.sun.tools.sjavac.Log$Level, java.lang.String);
+  static {};
+}

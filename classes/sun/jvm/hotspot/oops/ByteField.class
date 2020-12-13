@@ -1,0 +1,9 @@
+Compiled from "ByteField.java"
+public class sun.jvm.hotspot.oops.ByteField extends sun.jvm.hotspot.oops.Field {
+  public sun.jvm.hotspot.oops.ByteField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
+  public sun.jvm.hotspot.oops.ByteField(sun.jvm.hotspot.types.JByteField, long);
+  public sun.jvm.hotspot.oops.ByteField(sun.jvm.hotspot.oops.InstanceKlass, int);
+  public byte getValue(sun.jvm.hotspot.oops.Oop);
+  public byte getValue(sun.jvm.hotspot.runtime.VMObject);
+  public void setValue(sun.jvm.hotspot.oops.Oop, char) throws sun.jvm.hotspot.oops.MutationException;
+}

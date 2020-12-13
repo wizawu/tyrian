@@ -1,0 +1,4 @@
+Compiled from "SSLKeyException.java"
+public class javax.net.ssl.SSLKeyException extends javax.net.ssl.SSLException {
+  public javax.net.ssl.SSLKeyException(java.lang.String);
+}

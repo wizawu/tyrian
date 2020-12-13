@@ -1,0 +1,5 @@
+Compiled from "AssertTree.java"
+public interface com.sun.source.tree.AssertTree extends com.sun.source.tree.StatementTree {
+  public abstract com.sun.source.tree.ExpressionTree getCondition();
+  public abstract com.sun.source.tree.ExpressionTree getDetail();
+}

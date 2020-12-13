@@ -1,0 +1,11 @@
+Compiled from "FieldWriter.java"
+public interface jdk.javadoc.internal.doclets.toolkit.FieldWriter {
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getFieldDetailsTreeHeader(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getFieldDocTreeHeader(javax.lang.model.element.VariableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getSignature(javax.lang.model.element.VariableElement);
+  public abstract void addDeprecated(javax.lang.model.element.VariableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addComments(javax.lang.model.element.VariableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addTags(javax.lang.model.element.VariableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getFieldDetails(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getFieldDoc(jdk.javadoc.internal.doclets.toolkit.Content, boolean);
+}

@@ -1,0 +1,25 @@
+Compiled from "TextSourceLabel.java"
+public class sun.font.TextSourceLabel extends sun.font.TextLabel {
+  sun.font.TextSource source;
+  java.awt.geom.Rectangle2D lb;
+  java.awt.geom.Rectangle2D ab;
+  java.awt.geom.Rectangle2D vb;
+  java.awt.geom.Rectangle2D ib;
+  java.awt.font.GlyphVector gv;
+  public sun.font.TextSourceLabel(sun.font.TextSource);
+  public sun.font.TextSourceLabel(sun.font.TextSource, java.awt.geom.Rectangle2D, java.awt.geom.Rectangle2D, java.awt.font.GlyphVector);
+  public sun.font.TextSource getSource();
+  public final java.awt.geom.Rectangle2D getLogicalBounds(float, float);
+  public final java.awt.geom.Rectangle2D getVisualBounds(float, float);
+  public final java.awt.geom.Rectangle2D getAlignBounds(float, float);
+  public java.awt.geom.Rectangle2D getItalicBounds(float, float);
+  public java.awt.Rectangle getPixelBounds(java.awt.font.FontRenderContext, float, float);
+  public java.awt.geom.AffineTransform getBaselineTransform();
+  public java.awt.Shape getOutline(float, float);
+  public void draw(java.awt.Graphics2D, float, float);
+  protected java.awt.geom.Rectangle2D createLogicalBounds();
+  protected java.awt.geom.Rectangle2D createVisualBounds();
+  protected java.awt.geom.Rectangle2D createItalicBounds();
+  protected java.awt.geom.Rectangle2D createAlignBounds();
+  protected java.awt.font.GlyphVector createGV();
+}

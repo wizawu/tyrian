@@ -1,0 +1,24 @@
+Compiled from "AttributeList.java"
+public final class javax.swing.text.html.parser.AttributeList implements javax.swing.text.html.parser.DTDConstants,java.io.Serializable {
+  public java.lang.String name;
+  public int type;
+  public java.util.Vector<?> values;
+  public int modifier;
+  public java.lang.String value;
+  public javax.swing.text.html.parser.AttributeList next;
+  static java.util.Hashtable<java.lang.Object, java.lang.Object> attributeTypes;
+  javax.swing.text.html.parser.AttributeList();
+  public javax.swing.text.html.parser.AttributeList(java.lang.String);
+  public javax.swing.text.html.parser.AttributeList(java.lang.String, int, int, java.lang.String, java.util.Vector<?>, javax.swing.text.html.parser.AttributeList);
+  public java.lang.String getName();
+  public int getType();
+  public int getModifier();
+  public java.util.Enumeration<?> getValues();
+  public java.lang.String getValue();
+  public javax.swing.text.html.parser.AttributeList getNext();
+  public java.lang.String toString();
+  static void defineAttributeType(java.lang.String, int);
+  public static int name2type(java.lang.String);
+  public static java.lang.String type2name(int);
+  static {};
+}

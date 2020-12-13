@@ -1,0 +1,9 @@
+Compiled from "SimpleTreeNode.java"
+public interface sun.jvm.hotspot.ui.tree.SimpleTreeNode {
+  public abstract int getChildCount();
+  public abstract sun.jvm.hotspot.ui.tree.SimpleTreeNode getChild(int);
+  public abstract boolean isLeaf();
+  public abstract int getIndexOfChild(sun.jvm.hotspot.ui.tree.SimpleTreeNode);
+  public abstract java.lang.String getName();
+  public abstract java.lang.String getValue();
+}

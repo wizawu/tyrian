@@ -1,0 +1,8 @@
+Compiled from "HmacMD5KeyGenerator.java"
+public final class com.sun.crypto.provider.HmacMD5KeyGenerator extends javax.crypto.KeyGeneratorSpi {
+  public com.sun.crypto.provider.HmacMD5KeyGenerator();
+  protected void engineInit(java.security.SecureRandom);
+  protected void engineInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
+  protected void engineInit(int, java.security.SecureRandom);
+  protected javax.crypto.SecretKey engineGenerateKey();
+}

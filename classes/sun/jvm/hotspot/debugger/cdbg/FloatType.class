@@ -1,0 +1,3 @@
+Compiled from "FloatType.java"
+public interface sun.jvm.hotspot.debugger.cdbg.FloatType extends sun.jvm.hotspot.debugger.cdbg.Type {
+}

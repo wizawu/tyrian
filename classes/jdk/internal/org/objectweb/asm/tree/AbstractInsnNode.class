@@ -1,0 +1,36 @@
+Compiled from "AbstractInsnNode.java"
+public abstract class jdk.internal.org.objectweb.asm.tree.AbstractInsnNode {
+  public static final int INSN;
+  public static final int INT_INSN;
+  public static final int VAR_INSN;
+  public static final int TYPE_INSN;
+  public static final int FIELD_INSN;
+  public static final int METHOD_INSN;
+  public static final int INVOKE_DYNAMIC_INSN;
+  public static final int JUMP_INSN;
+  public static final int LABEL;
+  public static final int LDC_INSN;
+  public static final int IINC_INSN;
+  public static final int TABLESWITCH_INSN;
+  public static final int LOOKUPSWITCH_INSN;
+  public static final int MULTIANEWARRAY_INSN;
+  public static final int FRAME;
+  public static final int LINE;
+  protected int opcode;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode> visibleTypeAnnotations;
+  public java.util.List<jdk.internal.org.objectweb.asm.tree.TypeAnnotationNode> invisibleTypeAnnotations;
+  jdk.internal.org.objectweb.asm.tree.AbstractInsnNode prev;
+  jdk.internal.org.objectweb.asm.tree.AbstractInsnNode next;
+  int index;
+  protected jdk.internal.org.objectweb.asm.tree.AbstractInsnNode(int);
+  public int getOpcode();
+  public abstract int getType();
+  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode getPrevious();
+  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode getNext();
+  public abstract void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
+  protected final void acceptAnnotations(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public abstract jdk.internal.org.objectweb.asm.tree.AbstractInsnNode clone(java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
+  static jdk.internal.org.objectweb.asm.tree.LabelNode clone(jdk.internal.org.objectweb.asm.tree.LabelNode, java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
+  static jdk.internal.org.objectweb.asm.tree.LabelNode[] clone(java.util.List<jdk.internal.org.objectweb.asm.tree.LabelNode>, java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
+  protected final jdk.internal.org.objectweb.asm.tree.AbstractInsnNode cloneAnnotations(jdk.internal.org.objectweb.asm.tree.AbstractInsnNode);
+}

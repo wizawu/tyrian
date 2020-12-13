@@ -1,0 +1,8 @@
+Compiled from "DCTree.java"
+public abstract class com.sun.tools.javac.tree.DCTree implements com.sun.source.doctree.DocTree {
+  public int pos;
+  public com.sun.tools.javac.tree.DCTree();
+  public long getSourcePosition(com.sun.tools.javac.tree.DCTree$DCDocComment);
+  public com.sun.tools.javac.util.JCDiagnostic$DiagnosticPosition pos(com.sun.tools.javac.tree.DCTree$DCDocComment);
+  public java.lang.String toString();
+}

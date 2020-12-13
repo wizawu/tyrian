@@ -1,0 +1,5 @@
+Compiled from "LineNotFoundException.java"
+public class com.sun.tools.example.debug.tty.LineNotFoundException extends java.lang.Exception {
+  public com.sun.tools.example.debug.tty.LineNotFoundException();
+  public com.sun.tools.example.debug.tty.LineNotFoundException(java.lang.String);
+}

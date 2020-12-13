@@ -1,0 +1,4 @@
+Compiled from "DSAKey.java"
+public interface java.security.interfaces.DSAKey {
+  public abstract java.security.interfaces.DSAParams getParams();
+}

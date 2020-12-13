@@ -1,0 +1,13 @@
+Compiled from "VarForm.java"
+final class java.lang.invoke.VarForm {
+  final java.lang.invoke.MethodType[] methodType_table;
+  final java.lang.invoke.MemberName[] memberName_table;
+  java.lang.invoke.MethodType[] methodType_V_table;
+  static final boolean $assertionsDisabled;
+  java.lang.invoke.VarForm(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>...);
+  final java.lang.invoke.MethodType getMethodType(int);
+  final java.lang.invoke.MemberName getMemberName(int);
+  final java.lang.invoke.MethodType[] getMethodType_V_init();
+  final java.lang.invoke.MethodType getMethodType_V(int);
+  static {};
+}

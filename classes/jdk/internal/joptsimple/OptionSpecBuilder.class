@@ -1,0 +1,20 @@
+Compiled from "OptionSpecBuilder.java"
+public class jdk.internal.joptsimple.OptionSpecBuilder extends jdk.internal.joptsimple.NoArgumentOptionSpec {
+  jdk.internal.joptsimple.OptionSpecBuilder(jdk.internal.joptsimple.OptionParser, java.util.List<java.lang.String>, java.lang.String);
+  public jdk.internal.joptsimple.ArgumentAcceptingOptionSpec<java.lang.String> withRequiredArg();
+  public jdk.internal.joptsimple.ArgumentAcceptingOptionSpec<java.lang.String> withOptionalArg();
+  public jdk.internal.joptsimple.OptionSpecBuilder requiredIf(java.lang.String, java.lang.String...);
+  public jdk.internal.joptsimple.OptionSpecBuilder requiredIf(jdk.internal.joptsimple.OptionSpec<?>, jdk.internal.joptsimple.OptionSpec<?>...);
+  public jdk.internal.joptsimple.OptionSpecBuilder requiredUnless(java.lang.String, java.lang.String...);
+  public jdk.internal.joptsimple.OptionSpecBuilder requiredUnless(jdk.internal.joptsimple.OptionSpec<?>, jdk.internal.joptsimple.OptionSpec<?>...);
+  public jdk.internal.joptsimple.OptionSpecBuilder availableIf(java.lang.String, java.lang.String...);
+  public jdk.internal.joptsimple.OptionSpecBuilder availableIf(jdk.internal.joptsimple.OptionSpec<?>, jdk.internal.joptsimple.OptionSpec<?>...);
+  public jdk.internal.joptsimple.OptionSpecBuilder availableUnless(java.lang.String, java.lang.String...);
+  public jdk.internal.joptsimple.OptionSpecBuilder availableUnless(jdk.internal.joptsimple.OptionSpec<?>, jdk.internal.joptsimple.OptionSpec<?>...);
+  public java.util.List defaultValues();
+  public java.lang.String argumentTypeIndicator();
+  public java.lang.String argumentDescription();
+  public boolean isRequired();
+  public boolean requiresArgument();
+  public boolean acceptsArguments();
+}

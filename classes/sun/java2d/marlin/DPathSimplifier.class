@@ -1,0 +1,13 @@
+Compiled from "DPathSimplifier.java"
+final class sun.java2d.marlin.DPathSimplifier implements sun.java2d.marlin.DPathConsumer2D {
+  sun.java2d.marlin.DPathSimplifier();
+  sun.java2d.marlin.DPathSimplifier init(sun.java2d.marlin.DPathConsumer2D);
+  public void pathDone();
+  public void closePath();
+  public long getNativeConsumer();
+  public void quadTo(double, double, double, double);
+  public void curveTo(double, double, double, double, double, double);
+  public void moveTo(double, double);
+  public void lineTo(double, double);
+  static {};
+}

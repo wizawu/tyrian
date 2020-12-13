@@ -1,0 +1,39 @@
+Compiled from "PlatformEventType.java"
+public final class jdk.jfr.internal.PlatformEventType extends jdk.jfr.internal.Type {
+  jdk.jfr.internal.PlatformEventType(java.lang.String, long, boolean, boolean);
+  public void add(jdk.jfr.SettingDescriptor);
+  public java.util.List<jdk.jfr.SettingDescriptor> getSettings();
+  public java.util.List<jdk.jfr.SettingDescriptor> getAllSettings();
+  public void setHasStackTrace(boolean);
+  public void setHasDuration(boolean);
+  public void setHasCutoff(boolean);
+  public void setCutoff(long);
+  public void setHasPeriod(boolean);
+  public boolean hasStackTrace();
+  public boolean hasDuration();
+  public boolean hasPeriod();
+  public boolean hasCutoff();
+  public boolean isEnabled();
+  public boolean isJVM();
+  public boolean isJDK();
+  public void setEnabled(boolean);
+  public void setPeriod(long, boolean, boolean);
+  public void setStackTraceEnabled(boolean);
+  public void setThreshold(long);
+  public boolean isEveryChunk();
+  public boolean getStackTraceEnabled();
+  public long getThresholdTicks();
+  public long getPeriod();
+  public boolean hasEventHook();
+  public void setEventHook(boolean);
+  public boolean isBeginChunk();
+  public boolean isEndChunk();
+  public boolean isInstrumented();
+  public void setInstrumented();
+  public void markForInstrumentation(boolean);
+  public boolean isMarkedForInstrumentation();
+  public boolean setRegistered(boolean);
+  public final boolean isRegistered();
+  public boolean isCommitable();
+  public int getStackTraceOffset();
+}

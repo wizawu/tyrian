@@ -1,0 +1,9 @@
+Compiled from "DocErrorReporter.java"
+public interface com.sun.javadoc.DocErrorReporter {
+  public abstract void printError(java.lang.String);
+  public abstract void printError(com.sun.javadoc.SourcePosition, java.lang.String);
+  public abstract void printWarning(java.lang.String);
+  public abstract void printWarning(com.sun.javadoc.SourcePosition, java.lang.String);
+  public abstract void printNotice(java.lang.String);
+  public abstract void printNotice(com.sun.javadoc.SourcePosition, java.lang.String);
+}

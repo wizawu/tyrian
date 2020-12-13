@@ -1,0 +1,9 @@
+Compiled from "PropertiesHelper.java"
+final class jdk.nashorn.tools.jjs.PropertiesHelper {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.tools.jjs.PropertiesHelper(jdk.nashorn.internal.runtime.Context);
+  void close() throws java.lang.Exception;
+  java.util.List<java.lang.String> getProperties(java.lang.Object);
+  java.util.List<java.lang.String> getProperties(java.lang.Object, java.lang.String);
+  static {};
+}

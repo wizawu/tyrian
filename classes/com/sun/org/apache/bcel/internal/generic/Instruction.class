@@ -1,0 +1,28 @@
+Compiled from "Instruction.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.Instruction implements java.lang.Cloneable {
+  com.sun.org.apache.bcel.internal.generic.Instruction();
+  public com.sun.org.apache.bcel.internal.generic.Instruction(short, short);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public java.lang.String getName();
+  public java.lang.String toString(boolean);
+  public java.lang.String toString();
+  public java.lang.String toString(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public com.sun.org.apache.bcel.internal.generic.Instruction copy();
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public static com.sun.org.apache.bcel.internal.generic.Instruction readInstruction(com.sun.org.apache.bcel.internal.util.ByteSequence) throws java.io.IOException;
+  public int consumeStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public int produceStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public short getOpcode();
+  public int getLength();
+  void setOpcode(short);
+  final void setLength(int);
+  void dispose();
+  public abstract void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+  public static com.sun.org.apache.bcel.internal.generic.InstructionComparator getComparator();
+  public static void setComparator(com.sun.org.apache.bcel.internal.generic.InstructionComparator);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public static boolean isValidByte(int);
+  public static boolean isValidShort(int);
+  static {};
+}

@@ -1,0 +1,9 @@
+Compiled from "SwingInterOpUtils.java"
+public class jdk.swing.interop.SwingInterOpUtils {
+  public static final int GRAB_EVENT_MASK;
+  public jdk.swing.interop.SwingInterOpUtils();
+  public static void postEvent(java.lang.Object, java.awt.AWTEvent);
+  public static void grab(java.awt.Toolkit, java.awt.Window);
+  public static void ungrab(java.awt.Toolkit, java.awt.Window);
+  public static boolean isUngrabEvent(java.awt.AWTEvent);
+}

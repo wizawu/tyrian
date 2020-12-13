@@ -1,0 +1,8 @@
+Compiled from "BasicDoubleType.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicDoubleType extends sun.jvm.hotspot.debugger.cdbg.basic.BasicType implements sun.jvm.hotspot.debugger.cdbg.DoubleType {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicDoubleType(java.lang.String, int);
+  public sun.jvm.hotspot.debugger.cdbg.DoubleType asDouble();
+  public void iterateObject(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.cdbg.ObjectVisitor, sun.jvm.hotspot.debugger.cdbg.FieldIdentifier);
+  protected sun.jvm.hotspot.debugger.cdbg.Type createCVVariant(int);
+  public void visit(sun.jvm.hotspot.debugger.cdbg.TypeVisitor);
+}

@@ -1,0 +1,12 @@
+Compiled from "G1YCType.java"
+public final class sun.jvm.hotspot.gc.shared.G1YCType extends java.lang.Enum<sun.jvm.hotspot.gc.shared.G1YCType> {
+  public static final sun.jvm.hotspot.gc.shared.G1YCType Normal;
+  public static final sun.jvm.hotspot.gc.shared.G1YCType InitialMark;
+  public static final sun.jvm.hotspot.gc.shared.G1YCType DuringMark;
+  public static final sun.jvm.hotspot.gc.shared.G1YCType Mixed;
+  public static final sun.jvm.hotspot.gc.shared.G1YCType G1YCTypeEndSentinel;
+  public static sun.jvm.hotspot.gc.shared.G1YCType[] values();
+  public static sun.jvm.hotspot.gc.shared.G1YCType valueOf(java.lang.String);
+  public java.lang.String value();
+  static {};
+}

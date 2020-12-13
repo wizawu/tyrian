@@ -1,0 +1,5 @@
+Compiled from "ObjectInputStreamWithLoader.java"
+class com.sun.jmx.mbeanserver.ObjectInputStreamWithLoader extends java.io.ObjectInputStream {
+  public com.sun.jmx.mbeanserver.ObjectInputStreamWithLoader(java.io.InputStream, java.lang.ClassLoader) throws java.io.IOException;
+  protected java.lang.Class<?> resolveClass(java.io.ObjectStreamClass) throws java.io.IOException, java.lang.ClassNotFoundException;
+}

@@ -1,0 +1,21 @@
+Compiled from "Currency.java"
+public final class java.util.Currency implements java.io.Serializable {
+  static int formatVersion;
+  static int dataVersion;
+  static int[] mainTable;
+  static java.util.List<java.util.Currency$SpecialCaseEntry> specialCasesList;
+  static java.util.List<java.util.Currency$OtherCurrencyEntry> otherCurrenciesList;
+  public static java.util.Currency getInstance(java.lang.String);
+  public static java.util.Currency getInstance(java.util.Locale);
+  public static java.util.Set<java.util.Currency> getAvailableCurrencies();
+  public java.lang.String getCurrencyCode();
+  public java.lang.String getSymbol();
+  public java.lang.String getSymbol(java.util.Locale);
+  public int getDefaultFractionDigits();
+  public int getNumericCode();
+  public java.lang.String getNumericCodeAsString();
+  public java.lang.String getDisplayName();
+  public java.lang.String getDisplayName(java.util.Locale);
+  public java.lang.String toString();
+  static {};
+}

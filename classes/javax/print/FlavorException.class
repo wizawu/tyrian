@@ -1,0 +1,4 @@
+Compiled from "FlavorException.java"
+public interface javax.print.FlavorException {
+  public abstract javax.print.DocFlavor[] getUnsupportedFlavors();
+}

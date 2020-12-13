@@ -1,0 +1,10 @@
+Compiled from "AllClassesFrameWriter.java"
+public class jdk.javadoc.internal.doclets.formats.html.AllClassesFrameWriter extends jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter {
+  protected jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder indexbuilder;
+  final jdk.javadoc.internal.doclets.formats.html.markup.HtmlTree BR;
+  public jdk.javadoc.internal.doclets.formats.html.AllClassesFrameWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath, jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder);
+  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.IndexBuilder) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void buildAllClassesFile(boolean) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void addAllClasses(jdk.javadoc.internal.doclets.toolkit.Content, boolean);
+  protected void addContents(java.lang.Iterable<? extends javax.lang.model.element.Element>, boolean, jdk.javadoc.internal.doclets.toolkit.Content);
+}

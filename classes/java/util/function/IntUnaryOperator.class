@@ -1,0 +1,7 @@
+Compiled from "IntUnaryOperator.java"
+public interface java.util.function.IntUnaryOperator {
+  public abstract int applyAsInt(int);
+  public default java.util.function.IntUnaryOperator compose(java.util.function.IntUnaryOperator);
+  public default java.util.function.IntUnaryOperator andThen(java.util.function.IntUnaryOperator);
+  public static java.util.function.IntUnaryOperator identity();
+}

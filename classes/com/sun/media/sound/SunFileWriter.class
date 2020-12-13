@@ -1,0 +1,12 @@
+Compiled from "SunFileWriter.java"
+abstract class com.sun.media.sound.SunFileWriter extends javax.sound.sampled.spi.AudioFileWriter {
+  protected static final int bufferSize;
+  protected static final int bisBufferSize;
+  final javax.sound.sampled.AudioFileFormat$Type[] types;
+  com.sun.media.sound.SunFileWriter(javax.sound.sampled.AudioFileFormat$Type[]);
+  public final javax.sound.sampled.AudioFileFormat$Type[] getAudioFileTypes();
+  final int rllong(java.io.DataInputStream) throws java.io.IOException;
+  final int big2little(int);
+  final short rlshort(java.io.DataInputStream) throws java.io.IOException;
+  final short big2littleShort(short);
+}

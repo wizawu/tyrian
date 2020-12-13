@@ -1,0 +1,13 @@
+Compiled from "JdepsWriter.java"
+public abstract class com.sun.tools.jdeps.JdepsWriter {
+  final com.sun.tools.jdeps.Analyzer$Type type;
+  final boolean showProfile;
+  final boolean showModule;
+  public static com.sun.tools.jdeps.JdepsWriter newDotWriter(java.nio.file.Path, com.sun.tools.jdeps.Analyzer$Type);
+  public static com.sun.tools.jdeps.JdepsWriter newSimpleWriter(java.io.PrintWriter, com.sun.tools.jdeps.Analyzer$Type);
+  com.sun.tools.jdeps.JdepsWriter(com.sun.tools.jdeps.Analyzer$Type, boolean, boolean);
+  abstract void generateOutput(java.util.Collection<com.sun.tools.jdeps.Archive>, com.sun.tools.jdeps.Analyzer) throws java.io.IOException;
+  java.lang.String toTag(com.sun.tools.jdeps.Archive, java.lang.String, com.sun.tools.jdeps.Archive);
+  java.lang.String showProfileOrModule(com.sun.tools.jdeps.Module);
+  com.sun.tools.jdeps.Profile getProfile(java.lang.String);
+}

@@ -1,0 +1,17 @@
+Compiled from "XNumber.java"
+public class com.sun.org.apache.xpath.internal.objects.XNumber extends com.sun.org.apache.xpath.internal.objects.XObject {
+  static final long serialVersionUID;
+  double m_val;
+  public com.sun.org.apache.xpath.internal.objects.XNumber(double);
+  public com.sun.org.apache.xpath.internal.objects.XNumber(java.lang.Number);
+  public int getType();
+  public java.lang.String getTypeString();
+  public double num();
+  public double num(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public boolean bool();
+  public java.lang.String str();
+  public java.lang.Object object();
+  public boolean equals(com.sun.org.apache.xpath.internal.objects.XObject);
+  public boolean isStableNumber();
+  public void callVisitors(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.XPathVisitor);
+}

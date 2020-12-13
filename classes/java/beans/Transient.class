@@ -1,0 +1,4 @@
+Compiled from "Transient.java"
+public interface java.beans.Transient extends java.lang.annotation.Annotation {
+  public abstract boolean value();
+}

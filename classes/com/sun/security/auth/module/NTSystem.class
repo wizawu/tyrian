@@ -1,0 +1,12 @@
+Compiled from "NTSystem.java"
+public class com.sun.security.auth.module.NTSystem {
+  public com.sun.security.auth.module.NTSystem();
+  com.sun.security.auth.module.NTSystem(boolean);
+  public java.lang.String getName();
+  public java.lang.String getDomain();
+  public java.lang.String getDomainSID();
+  public java.lang.String getUserSID();
+  public java.lang.String getPrimaryGroupID();
+  public java.lang.String[] getGroupIDs();
+  public synchronized long getImpersonationToken();
+}

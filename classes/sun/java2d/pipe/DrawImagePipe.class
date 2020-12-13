@@ -1,0 +1,9 @@
+Compiled from "DrawImagePipe.java"
+public interface sun.java2d.pipe.DrawImagePipe {
+  public abstract boolean copyImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, java.awt.Color, java.awt.image.ImageObserver);
+  public abstract boolean copyImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, int, int, java.awt.Color, java.awt.image.ImageObserver);
+  public abstract boolean scaleImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, java.awt.Color, java.awt.image.ImageObserver);
+  public abstract boolean scaleImage(sun.java2d.SunGraphics2D, java.awt.Image, int, int, int, int, int, int, int, int, java.awt.Color, java.awt.image.ImageObserver);
+  public abstract boolean transformImage(sun.java2d.SunGraphics2D, java.awt.Image, java.awt.geom.AffineTransform, java.awt.image.ImageObserver);
+  public abstract void transformImage(sun.java2d.SunGraphics2D, java.awt.image.BufferedImage, java.awt.image.BufferedImageOp, int, int);
+}

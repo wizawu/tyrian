@@ -1,0 +1,16 @@
+Compiled from "KeyTabEntry.java"
+public class sun.security.krb5.internal.ktab.KeyTabEntry implements sun.security.krb5.internal.ktab.KeyTabConstants {
+  sun.security.krb5.PrincipalName service;
+  sun.security.krb5.Realm realm;
+  sun.security.krb5.internal.KerberosTime timestamp;
+  int keyVersion;
+  int keyType;
+  byte[] keyblock;
+  boolean DEBUG;
+  public sun.security.krb5.internal.ktab.KeyTabEntry(sun.security.krb5.PrincipalName, sun.security.krb5.Realm, sun.security.krb5.internal.KerberosTime, int, int, byte[]);
+  public sun.security.krb5.PrincipalName getService();
+  public sun.security.krb5.EncryptionKey getKey();
+  public java.lang.String getKeyString();
+  public int entryLength();
+  public sun.security.krb5.internal.KerberosTime getTimeStamp();
+}

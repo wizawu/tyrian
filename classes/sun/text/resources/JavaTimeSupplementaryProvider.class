@@ -1,0 +1,3 @@
+Compiled from "JavaTimeSupplementaryProvider.java"
+public interface sun.text.resources.JavaTimeSupplementaryProvider extends java.util.spi.ResourceBundleProvider {
+}

@@ -1,0 +1,5 @@
+Compiled from "EmptyFilter.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.dom.EmptyFilter implements com.sun.org.apache.xalan.internal.xsltc.dom.Filter {
+  public com.sun.org.apache.xalan.internal.xsltc.dom.EmptyFilter();
+  public boolean test(int);
+}

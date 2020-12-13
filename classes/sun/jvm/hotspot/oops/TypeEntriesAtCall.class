@@ -1,0 +1,8 @@
+Compiled from "TypeEntriesAtCall.java"
+public abstract class sun.jvm.hotspot.oops.TypeEntriesAtCall {
+  public sun.jvm.hotspot.oops.TypeEntriesAtCall();
+  static int stackSlotLocalOffset(int);
+  static int argumentTypeLocalOffset(int);
+  static int headerCellCount();
+  static int cellCountLocalOffset();
+}

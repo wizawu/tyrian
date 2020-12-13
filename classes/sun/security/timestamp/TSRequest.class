@@ -1,0 +1,11 @@
+Compiled from "TSRequest.java"
+public class sun.security.timestamp.TSRequest {
+  public sun.security.timestamp.TSRequest(java.lang.String, byte[], java.security.MessageDigest) throws java.security.NoSuchAlgorithmException;
+  public byte[] getHashedMessage();
+  public void setVersion(int);
+  public void setPolicyId(java.lang.String);
+  public void setNonce(java.math.BigInteger);
+  public void requestCertificate(boolean);
+  public void setExtensions(java.security.cert.X509Extension[]);
+  public byte[] encode() throws java.io.IOException;
+}

@@ -1,0 +1,6 @@
+Compiled from "InvocationException.java"
+public class com.sun.jdi.InvocationException extends java.lang.Exception {
+  com.sun.jdi.ObjectReference exception;
+  public com.sun.jdi.InvocationException(com.sun.jdi.ObjectReference);
+  public com.sun.jdi.ObjectReference exception();
+}

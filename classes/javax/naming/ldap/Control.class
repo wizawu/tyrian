@@ -1,0 +1,8 @@
+Compiled from "Control.java"
+public interface javax.naming.ldap.Control extends java.io.Serializable {
+  public static final boolean CRITICAL;
+  public static final boolean NONCRITICAL;
+  public abstract java.lang.String getID();
+  public abstract boolean isCritical();
+  public abstract byte[] getEncodedValue();
+}

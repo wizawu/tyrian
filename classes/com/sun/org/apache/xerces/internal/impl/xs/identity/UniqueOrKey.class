@@ -1,0 +1,4 @@
+Compiled from "UniqueOrKey.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.identity.UniqueOrKey extends com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint {
+  public com.sun.org.apache.xerces.internal.impl.xs.identity.UniqueOrKey(java.lang.String, java.lang.String, java.lang.String, short);
+}

@@ -1,0 +1,6 @@
+Compiled from "Node.java"
+public class com.sun.org.apache.xalan.internal.xsltc.runtime.Node {
+  public int node;
+  public int type;
+  public com.sun.org.apache.xalan.internal.xsltc.runtime.Node(int, int);
+}

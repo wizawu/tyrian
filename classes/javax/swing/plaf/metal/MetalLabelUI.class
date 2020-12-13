@@ -1,0 +1,8 @@
+Compiled from "MetalLabelUI.java"
+public class javax.swing.plaf.metal.MetalLabelUI extends javax.swing.plaf.basic.BasicLabelUI {
+  protected static javax.swing.plaf.metal.MetalLabelUI metalLabelUI;
+  public javax.swing.plaf.metal.MetalLabelUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void paintDisabledText(javax.swing.JLabel, java.awt.Graphics, java.lang.String, int, int);
+  static {};
+}

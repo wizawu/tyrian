@@ -1,0 +1,4 @@
+Compiled from "StatementSnippet.java"
+public class jdk.jshell.StatementSnippet extends jdk.jshell.Snippet {
+  jdk.jshell.StatementSnippet(jdk.jshell.Key$StatementKey, java.lang.String, jdk.jshell.Wrap);
+}

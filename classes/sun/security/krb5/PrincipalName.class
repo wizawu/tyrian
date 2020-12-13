@@ -1,0 +1,48 @@
+Compiled from "PrincipalName.java"
+public class sun.security.krb5.PrincipalName implements java.lang.Cloneable {
+  public static final int KRB_NT_UNKNOWN;
+  public static final int KRB_NT_PRINCIPAL;
+  public static final int KRB_NT_SRV_INST;
+  public static final int KRB_NT_SRV_HST;
+  public static final int KRB_NT_SRV_XHST;
+  public static final int KRB_NT_UID;
+  public static final int KRB_NT_ENTERPRISE;
+  public static final java.lang.String TGS_DEFAULT_SRV_NAME;
+  public static final int TGS_DEFAULT_NT;
+  public static final char NAME_COMPONENT_SEPARATOR;
+  public static final char NAME_REALM_SEPARATOR;
+  public static final char REALM_COMPONENT_SEPARATOR;
+  public static final java.lang.String NAME_COMPONENT_SEPARATOR_STR;
+  public static final java.lang.String NAME_REALM_SEPARATOR_STR;
+  public static final java.lang.String REALM_COMPONENT_SEPARATOR_STR;
+  public sun.security.krb5.PrincipalName(int, java.lang.String[], sun.security.krb5.Realm);
+  public sun.security.krb5.PrincipalName(java.lang.String[], java.lang.String) throws sun.security.krb5.RealmException;
+  public java.lang.Object clone();
+  public boolean equals(java.lang.Object);
+  public sun.security.krb5.PrincipalName(sun.security.util.DerValue, sun.security.krb5.Realm) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public static sun.security.krb5.PrincipalName parse(sun.security.util.DerInputStream, byte, boolean, sun.security.krb5.Realm) throws sun.security.krb5.Asn1Exception, java.io.IOException, sun.security.krb5.RealmException;
+  public sun.security.krb5.PrincipalName(java.lang.String, int, java.lang.String) throws sun.security.krb5.RealmException;
+  public sun.security.krb5.PrincipalName(java.lang.String, int) throws sun.security.krb5.RealmException;
+  public sun.security.krb5.PrincipalName(java.lang.String) throws sun.security.krb5.RealmException;
+  public sun.security.krb5.PrincipalName(java.lang.String, java.lang.String) throws sun.security.krb5.RealmException;
+  public static sun.security.krb5.PrincipalName tgsService(java.lang.String, java.lang.String) throws sun.security.krb5.KrbException;
+  public java.lang.String getRealmAsString();
+  public java.lang.String getPrincipalNameAsString();
+  public int hashCode();
+  public java.lang.String getName();
+  public int getNameType();
+  public java.lang.String[] getNameStrings();
+  public byte[][] toByteArray();
+  public java.lang.String getRealmString();
+  public sun.security.krb5.Realm getRealm();
+  public java.lang.String getSalt();
+  public java.lang.String toString();
+  public java.lang.String getNameString();
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public boolean match(sun.security.krb5.PrincipalName);
+  public void writePrincipal(sun.security.krb5.internal.ccache.CCacheOutputStream) throws java.io.IOException;
+  public java.lang.String getInstanceComponent();
+  static java.lang.String mapHostToRealm(java.lang.String);
+  public boolean isRealmDeduced();
+  static {};
+}

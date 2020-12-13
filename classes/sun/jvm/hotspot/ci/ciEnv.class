@@ -1,0 +1,9 @@
+Compiled from "ciEnv.java"
+public class sun.jvm.hotspot.ci.ciEnv extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.ci.ciEnv(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.opto.Compile compilerData();
+  public sun.jvm.hotspot.ci.ciObjectFactory factory();
+  public sun.jvm.hotspot.compiler.CompileTask task();
+  public void dumpReplayData(java.io.PrintStream);
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "PolicyUtil.java"
+public class sun.security.util.PolicyUtil {
+  public sun.security.util.PolicyUtil();
+  public static java.io.InputStream getInputStream(java.net.URL) throws java.io.IOException;
+  public static java.security.KeyStore getKeyStore(java.net.URL, java.lang.String, java.lang.String, java.lang.String, java.lang.String, sun.security.util.Debug) throws java.security.KeyStoreException, java.net.MalformedURLException, java.io.IOException, java.security.NoSuchProviderException, java.security.NoSuchAlgorithmException, java.security.cert.CertificateException;
+}

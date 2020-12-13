@@ -1,0 +1,14 @@
+Compiled from "DocletEnvironment.java"
+public interface jdk.javadoc.doclet.DocletEnvironment {
+  public abstract java.util.Set<? extends javax.lang.model.element.Element> getSpecifiedElements();
+  public abstract java.util.Set<? extends javax.lang.model.element.Element> getIncludedElements();
+  public abstract com.sun.source.util.DocTrees getDocTrees();
+  public abstract javax.lang.model.util.Elements getElementUtils();
+  public abstract javax.lang.model.util.Types getTypeUtils();
+  public abstract boolean isIncluded(javax.lang.model.element.Element);
+  public abstract boolean isSelected(javax.lang.model.element.Element);
+  public abstract javax.tools.JavaFileManager getJavaFileManager();
+  public abstract javax.lang.model.SourceVersion getSourceVersion();
+  public abstract jdk.javadoc.doclet.DocletEnvironment$ModuleMode getModuleMode();
+  public abstract javax.tools.JavaFileObject$Kind getFileKind(javax.lang.model.element.TypeElement);
+}

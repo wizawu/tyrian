@@ -1,0 +1,5 @@
+Compiled from "DisassemblerTool.java"
+public interface com.sun.tools.javap.DisassemblerTool extends javax.tools.Tool,javax.tools.OptionChecker {
+  public abstract com.sun.tools.javap.DisassemblerTool$DisassemblerTask getTask(java.io.Writer, javax.tools.JavaFileManager, javax.tools.DiagnosticListener<? super javax.tools.JavaFileObject>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<java.lang.String>);
+  public abstract javax.tools.StandardJavaFileManager getStandardFileManager(javax.tools.DiagnosticListener<? super javax.tools.JavaFileObject>, java.util.Locale, java.nio.charset.Charset);
+}

@@ -1,0 +1,10 @@
+Compiled from "ExecPermission.java"
+public final class com.sun.rmi.rmid.ExecPermission extends java.security.Permission {
+  public com.sun.rmi.rmid.ExecPermission(java.lang.String);
+  public com.sun.rmi.rmid.ExecPermission(java.lang.String, java.lang.String);
+  public boolean implies(java.security.Permission);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String getActions();
+  public java.security.PermissionCollection newPermissionCollection();
+}

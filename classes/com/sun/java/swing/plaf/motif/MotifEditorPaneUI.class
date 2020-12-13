@@ -1,0 +1,6 @@
+Compiled from "MotifEditorPaneUI.java"
+public class com.sun.java.swing.plaf.motif.MotifEditorPaneUI extends javax.swing.plaf.basic.BasicEditorPaneUI {
+  public com.sun.java.swing.plaf.motif.MotifEditorPaneUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected javax.swing.text.Caret createCaret();
+}

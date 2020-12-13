@@ -1,0 +1,20 @@
+Compiled from "SocketOptions.java"
+public interface java.net.SocketOptions {
+  public static final int TCP_NODELAY;
+  public static final int SO_BINDADDR;
+  public static final int SO_REUSEADDR;
+  public static final int SO_REUSEPORT;
+  public static final int SO_BROADCAST;
+  public static final int IP_MULTICAST_IF;
+  public static final int IP_MULTICAST_IF2;
+  public static final int IP_MULTICAST_LOOP;
+  public static final int IP_TOS;
+  public static final int SO_LINGER;
+  public static final int SO_TIMEOUT;
+  public static final int SO_SNDBUF;
+  public static final int SO_RCVBUF;
+  public static final int SO_KEEPALIVE;
+  public static final int SO_OOBINLINE;
+  public abstract void setOption(int, java.lang.Object) throws java.net.SocketException;
+  public abstract java.lang.Object getOption(int) throws java.net.SocketException;
+}

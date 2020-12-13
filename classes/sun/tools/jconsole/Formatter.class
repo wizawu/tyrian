@@ -1,0 +1,30 @@
+Compiled from "Formatter.java"
+class sun.tools.jconsole.Formatter {
+  static final long SECOND;
+  static final long MINUTE;
+  static final long HOUR;
+  static final long DAY;
+  static final java.lang.String cr;
+  static final java.text.DateFormat timeDF;
+  sun.tools.jconsole.Formatter();
+  static java.lang.String formatTime(long);
+  static java.lang.String formatNanoTime(long);
+  static java.lang.String formatClockTime(long);
+  static java.lang.String formatDate(long);
+  static java.lang.String formatDateTime(long);
+  static java.text.DateFormat getDateTimeFormat(java.lang.String);
+  static double toExcelTime(long);
+  static java.lang.String[] formatKByteStrings(long...);
+  static java.lang.String formatKBytes(long);
+  static java.lang.String formatBytes(long, boolean);
+  static java.lang.String formatBytes(long, long);
+  static java.lang.String formatBytes(long, long, boolean);
+  static java.lang.String formatLong(long);
+  static java.lang.String[] formatLongs(long...);
+  static java.lang.String justify(long, int);
+  static java.lang.String justify(java.lang.String, int);
+  static java.lang.String newRow(java.lang.String, java.lang.String);
+  static java.lang.String newRow(java.lang.String, java.lang.String, int);
+  static java.lang.String newRow(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  static {};
+}

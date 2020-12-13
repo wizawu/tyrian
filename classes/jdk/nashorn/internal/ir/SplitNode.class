@@ -1,0 +1,11 @@
+Compiled from "SplitNode.java"
+public class jdk.nashorn.internal.ir.SplitNode extends jdk.nashorn.internal.ir.LexicalContextStatement implements jdk.nashorn.internal.ir.CompileUnitHolder {
+  public jdk.nashorn.internal.ir.SplitNode(java.lang.String, jdk.nashorn.internal.ir.Block, jdk.nashorn.internal.codegen.CompileUnit);
+  public jdk.nashorn.internal.ir.Block getBody();
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public void toString(java.lang.StringBuilder, boolean);
+  public java.lang.String getName();
+  public jdk.nashorn.internal.codegen.CompileUnit getCompileUnit();
+  public jdk.nashorn.internal.ir.SplitNode setCompileUnit(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.codegen.CompileUnit);
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor);
+}

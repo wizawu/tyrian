@@ -1,0 +1,21 @@
+Compiled from "ImageUtil.java"
+public class com.sun.imageio.plugins.common.ImageUtil {
+  public com.sun.imageio.plugins.common.ImageUtil();
+  public static final java.awt.image.ColorModel createColorModel(java.awt.image.SampleModel);
+  public static byte[] getPackedBinaryData(java.awt.image.Raster, java.awt.Rectangle);
+  public static byte[] getUnpackedBinaryData(java.awt.image.Raster, java.awt.Rectangle);
+  public static void setPackedBinaryData(byte[], java.awt.image.WritableRaster, java.awt.Rectangle);
+  public static void setUnpackedBinaryData(byte[], java.awt.image.WritableRaster, java.awt.Rectangle);
+  public static boolean isBinary(java.awt.image.SampleModel);
+  public static java.awt.image.ColorModel createColorModel(java.awt.color.ColorSpace, java.awt.image.SampleModel);
+  public static int getElementSize(java.awt.image.SampleModel);
+  public static long getTileSize(java.awt.image.SampleModel);
+  public static long getBandSize(java.awt.image.SampleModel);
+  public static boolean isIndicesForGrayscale(byte[], byte[], byte[]);
+  public static java.lang.String convertObjectToString(java.lang.Object);
+  public static final void canEncodeImage(javax.imageio.ImageWriter, javax.imageio.ImageTypeSpecifier) throws javax.imageio.IIOException;
+  public static final void canEncodeImage(javax.imageio.ImageWriter, java.awt.image.ColorModel, java.awt.image.SampleModel) throws javax.imageio.IIOException;
+  public static final boolean imageIsContiguous(java.awt.image.RenderedImage);
+  public static final javax.imageio.ImageTypeSpecifier getDestinationType(javax.imageio.ImageReadParam, java.util.Iterator<javax.imageio.ImageTypeSpecifier>) throws javax.imageio.IIOException;
+  public static boolean isNonStandardICCColorSpace(java.awt.color.ColorSpace);
+}

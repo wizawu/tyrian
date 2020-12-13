@@ -1,0 +1,6 @@
+Compiled from "SingletonBlob.java"
+public class sun.jvm.hotspot.code.SingletonBlob extends sun.jvm.hotspot.code.RuntimeBlob {
+  public sun.jvm.hotspot.code.SingletonBlob(sun.jvm.hotspot.debugger.Address);
+  public boolean isSingletonBlob();
+  static {};
+}

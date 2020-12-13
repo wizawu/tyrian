@@ -1,0 +1,41 @@
+Compiled from "RegistryContext.java"
+public class com.sun.jndi.rmi.registry.RegistryContext implements javax.naming.Context,javax.naming.Referenceable {
+  static final boolean trustURLCodebase;
+  javax.naming.Reference reference;
+  public static final java.lang.String SECURITY_MGR;
+  public com.sun.jndi.rmi.registry.RegistryContext(java.lang.String, int, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  com.sun.jndi.rmi.registry.RegistryContext(com.sun.jndi.rmi.registry.RegistryContext);
+  protected void finalize();
+  public java.lang.Object lookup(javax.naming.Name) throws javax.naming.NamingException;
+  public java.lang.Object lookup(java.lang.String) throws javax.naming.NamingException;
+  public void bind(javax.naming.Name, java.lang.Object) throws javax.naming.NamingException;
+  public void bind(java.lang.String, java.lang.Object) throws javax.naming.NamingException;
+  public void rebind(javax.naming.Name, java.lang.Object) throws javax.naming.NamingException;
+  public void rebind(java.lang.String, java.lang.Object) throws javax.naming.NamingException;
+  public void unbind(javax.naming.Name) throws javax.naming.NamingException;
+  public void unbind(java.lang.String) throws javax.naming.NamingException;
+  public void rename(javax.naming.Name, javax.naming.Name) throws javax.naming.NamingException;
+  public void rename(java.lang.String, java.lang.String) throws javax.naming.NamingException;
+  public javax.naming.NamingEnumeration<javax.naming.NameClassPair> list(javax.naming.Name) throws javax.naming.NamingException;
+  public javax.naming.NamingEnumeration<javax.naming.NameClassPair> list(java.lang.String) throws javax.naming.NamingException;
+  public javax.naming.NamingEnumeration<javax.naming.Binding> listBindings(javax.naming.Name) throws javax.naming.NamingException;
+  public javax.naming.NamingEnumeration<javax.naming.Binding> listBindings(java.lang.String) throws javax.naming.NamingException;
+  public void destroySubcontext(javax.naming.Name) throws javax.naming.NamingException;
+  public void destroySubcontext(java.lang.String) throws javax.naming.NamingException;
+  public javax.naming.Context createSubcontext(javax.naming.Name) throws javax.naming.NamingException;
+  public javax.naming.Context createSubcontext(java.lang.String) throws javax.naming.NamingException;
+  public java.lang.Object lookupLink(javax.naming.Name) throws javax.naming.NamingException;
+  public java.lang.Object lookupLink(java.lang.String) throws javax.naming.NamingException;
+  public javax.naming.NameParser getNameParser(javax.naming.Name) throws javax.naming.NamingException;
+  public javax.naming.NameParser getNameParser(java.lang.String) throws javax.naming.NamingException;
+  public javax.naming.Name composeName(javax.naming.Name, javax.naming.Name) throws javax.naming.NamingException;
+  public java.lang.String composeName(java.lang.String, java.lang.String) throws javax.naming.NamingException;
+  public java.lang.Object removeFromEnvironment(java.lang.String) throws javax.naming.NamingException;
+  public java.lang.Object addToEnvironment(java.lang.String, java.lang.Object) throws javax.naming.NamingException;
+  public java.util.Hashtable<java.lang.String, java.lang.Object> getEnvironment() throws javax.naming.NamingException;
+  public void close();
+  public java.lang.String getNameInNamespace();
+  public javax.naming.Reference getReference() throws javax.naming.NamingException;
+  public static javax.naming.NamingException wrapRemoteException(java.rmi.RemoteException);
+  static {};
+}

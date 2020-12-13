@@ -1,0 +1,5 @@
+Compiled from "NamedWeakReference.java"
+class com.sun.naming.internal.NamedWeakReference<T> extends java.lang.ref.WeakReference<T> {
+  com.sun.naming.internal.NamedWeakReference(T, java.lang.String);
+  java.lang.String getName();
+}

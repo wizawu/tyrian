@@ -1,0 +1,8 @@
+Compiled from "BasicBaseClass.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicBaseClass implements sun.jvm.hotspot.debugger.cdbg.BaseClass {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicBaseClass(int, boolean, sun.jvm.hotspot.debugger.cdbg.Type);
+  public int getAccessControl();
+  public boolean isVirtual();
+  public sun.jvm.hotspot.debugger.cdbg.Type getType();
+  public void resolveTypes(sun.jvm.hotspot.debugger.cdbg.Type, sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
+}

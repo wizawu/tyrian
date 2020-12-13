@@ -1,0 +1,18 @@
+Compiled from "BufferedImageGraphicsConfig.java"
+public class sun.awt.image.BufferedImageGraphicsConfig extends java.awt.GraphicsConfiguration {
+  java.awt.GraphicsDevice gd;
+  java.awt.image.ColorModel model;
+  java.awt.image.Raster raster;
+  public static sun.awt.image.BufferedImageGraphicsConfig getConfig(java.awt.image.BufferedImage);
+  public static sun.awt.image.BufferedImageGraphicsConfig getConfig(java.awt.image.BufferedImage, double, double);
+  public sun.awt.image.BufferedImageGraphicsConfig(java.awt.image.BufferedImage, java.awt.Component);
+  public sun.awt.image.BufferedImageGraphicsConfig(java.awt.image.BufferedImage, java.awt.Component, double, double);
+  public java.awt.GraphicsDevice getDevice();
+  public java.awt.image.BufferedImage createCompatibleImage(int, int);
+  public java.awt.image.ColorModel getColorModel();
+  public java.awt.image.ColorModel getColorModel(int);
+  public java.awt.geom.AffineTransform getDefaultTransform();
+  public java.awt.geom.AffineTransform getNormalizingTransform();
+  public java.awt.Rectangle getBounds();
+  static {};
+}

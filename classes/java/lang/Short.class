@@ -1,0 +1,35 @@
+Compiled from "Short.java"
+public final class java.lang.Short extends java.lang.Number implements java.lang.Comparable<java.lang.Short> {
+  public static final short MIN_VALUE;
+  public static final short MAX_VALUE;
+  public static final java.lang.Class<java.lang.Short> TYPE;
+  public static final int SIZE;
+  public static final int BYTES;
+  public static java.lang.String toString(short);
+  public static short parseShort(java.lang.String, int) throws java.lang.NumberFormatException;
+  public static short parseShort(java.lang.String) throws java.lang.NumberFormatException;
+  public static java.lang.Short valueOf(java.lang.String, int) throws java.lang.NumberFormatException;
+  public static java.lang.Short valueOf(java.lang.String) throws java.lang.NumberFormatException;
+  public static java.lang.Short valueOf(short);
+  public static java.lang.Short decode(java.lang.String) throws java.lang.NumberFormatException;
+  public java.lang.Short(short);
+  public java.lang.Short(java.lang.String) throws java.lang.NumberFormatException;
+  public byte byteValue();
+  public short shortValue();
+  public int intValue();
+  public long longValue();
+  public float floatValue();
+  public double doubleValue();
+  public java.lang.String toString();
+  public int hashCode();
+  public static int hashCode(short);
+  public boolean equals(java.lang.Object);
+  public int compareTo(java.lang.Short);
+  public static int compare(short, short);
+  public static int compareUnsigned(short, short);
+  public static short reverseBytes(short);
+  public static int toUnsignedInt(short);
+  public static long toUnsignedLong(short);
+  public int compareTo(java.lang.Object);
+  static {};
+}

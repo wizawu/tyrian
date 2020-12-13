@@ -1,0 +1,4 @@
+Compiled from "FileFilter.java"
+public interface java.io.FileFilter {
+  public abstract boolean accept(java.io.File);
+}

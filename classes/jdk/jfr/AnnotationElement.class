@@ -1,0 +1,17 @@
+Compiled from "AnnotationElement.java"
+public final class jdk.jfr.AnnotationElement {
+  jdk.jfr.AnnotationElement(jdk.jfr.internal.Type, java.util.List<java.lang.Object>, boolean);
+  public jdk.jfr.AnnotationElement(java.lang.Class<? extends java.lang.annotation.Annotation>, java.util.Map<java.lang.String, java.lang.Object>);
+  public jdk.jfr.AnnotationElement(java.lang.Class<? extends java.lang.annotation.Annotation>, java.lang.Object);
+  public jdk.jfr.AnnotationElement(java.lang.Class<? extends java.lang.annotation.Annotation>);
+  public java.util.List<java.lang.Object> getValues();
+  public java.util.List<jdk.jfr.ValueDescriptor> getValueDescriptors();
+  public java.util.List<jdk.jfr.AnnotationElement> getAnnotationElements();
+  public java.lang.String getTypeName();
+  public java.lang.Object getValue(java.lang.String);
+  public boolean hasValue(java.lang.String);
+  public final <A> A getAnnotation(java.lang.Class<? extends java.lang.annotation.Annotation>);
+  public long getTypeId();
+  jdk.jfr.internal.Type getType();
+  boolean isInBoot();
+}

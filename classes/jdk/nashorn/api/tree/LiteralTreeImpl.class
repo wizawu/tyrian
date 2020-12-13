@@ -1,0 +1,7 @@
+Compiled from "LiteralTreeImpl.java"
+final class jdk.nashorn.api.tree.LiteralTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.LiteralTree {
+  jdk.nashorn.api.tree.LiteralTreeImpl(jdk.nashorn.internal.ir.LiteralNode<?>);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public java.lang.Object getValue();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

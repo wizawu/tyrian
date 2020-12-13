@@ -1,0 +1,8 @@
+Compiled from "StringWriter.java"
+final class jdk.internal.net.http.hpack.StringWriter {
+  jdk.internal.net.http.hpack.StringWriter();
+  jdk.internal.net.http.hpack.StringWriter configure(java.lang.CharSequence, boolean);
+  jdk.internal.net.http.hpack.StringWriter configure(java.lang.CharSequence, int, int, boolean);
+  boolean write(java.nio.ByteBuffer);
+  void reset();
+}

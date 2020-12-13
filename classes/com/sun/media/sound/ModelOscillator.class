@@ -1,0 +1,6 @@
+Compiled from "ModelOscillator.java"
+public interface com.sun.media.sound.ModelOscillator {
+  public abstract int getChannels();
+  public abstract float getAttenuation();
+  public abstract com.sun.media.sound.ModelOscillatorStream open(float);
+}

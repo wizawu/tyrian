@@ -1,0 +1,9 @@
+Compiled from "XAbstractMenuItem.java"
+public interface sun.awt.X11.XAbstractMenuItem {
+  public abstract int getWidth(java.awt.Graphics);
+  public abstract int getShortcutWidth(java.awt.Graphics);
+  public abstract java.lang.String getLabel();
+  public abstract int getHeight(java.awt.Graphics);
+  public abstract void paint(java.awt.Graphics, int, int, int, int, boolean);
+  public abstract void setMenuPeer(sun.awt.X11.XMenuPeer);
+}

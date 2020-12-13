@@ -1,0 +1,5 @@
+Compiled from "ParserConfigurationException.java"
+public class javax.xml.parsers.ParserConfigurationException extends java.lang.Exception {
+  public javax.xml.parsers.ParserConfigurationException();
+  public javax.xml.parsers.ParserConfigurationException(java.lang.String);
+}

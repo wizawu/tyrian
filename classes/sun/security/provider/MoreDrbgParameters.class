@@ -1,0 +1,13 @@
+Compiled from "MoreDrbgParameters.java"
+public class sun.security.provider.MoreDrbgParameters implements java.security.SecureRandomParameters,java.io.Serializable {
+  final transient sun.security.provider.EntropySource es;
+  final java.lang.String mech;
+  final java.lang.String algorithm;
+  final boolean usedf;
+  final int strength;
+  final java.security.DrbgParameters$Capability capability;
+  byte[] nonce;
+  byte[] personalizationString;
+  public sun.security.provider.MoreDrbgParameters(sun.security.provider.EntropySource, java.lang.String, java.lang.String, byte[], boolean, java.security.DrbgParameters$Instantiation);
+  public java.lang.String toString();
+}

@@ -1,0 +1,9 @@
+Compiled from "FileWriteEvent.java"
+public final class jdk.jfr.events.FileWriteEvent extends jdk.jfr.events.AbstractJDKEvent {
+  public static final java.lang.ThreadLocal<jdk.jfr.events.FileWriteEvent> EVENT;
+  public java.lang.String path;
+  public long bytesWritten;
+  public jdk.jfr.events.FileWriteEvent();
+  public void reset();
+  static {};
+}

@@ -1,0 +1,45 @@
+Compiled from "SecuritySupport.java"
+public final class jdk.jfr.internal.SecuritySupport {
+  public static final jdk.jfr.internal.SecuritySupport$SafePath JFC_DIRECTORY;
+  static final jdk.jfr.internal.SecuritySupport$SafePath USER_HOME;
+  static final jdk.jfr.internal.SecuritySupport$SafePath JAVA_IO_TMPDIR;
+  public jdk.jfr.internal.SecuritySupport();
+  public static java.util.List<jdk.jfr.internal.SecuritySupport$SafePath> getPredefinedJFCFiles();
+  static void makeVisibleToJFR(java.lang.Class<?>);
+  static void addHandlerExport(java.lang.Class<?>);
+  static void addEventsExport(java.lang.Class<?>);
+  static void addInstrumentExport(java.lang.Class<?>);
+  static void addReadEdge(java.lang.Class<?>);
+  public static void registerEvent(java.lang.Class<? extends jdk.internal.event.Event>);
+  public static void registerMirror(java.lang.Class<? extends jdk.jfr.Event>);
+  static boolean getBooleanProperty(java.lang.String);
+  static java.lang.Thread createRecorderThread(java.lang.ThreadGroup, java.lang.ClassLoader);
+  static void registerShutdownHook(java.lang.Thread);
+  static void setUncaughtExceptionHandler(java.lang.Thread, java.lang.Thread$UncaughtExceptionHandler);
+  static void moveReplace(jdk.jfr.internal.SecuritySupport$SafePath, jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  static void clearDirectory(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  static jdk.jfr.internal.SecuritySupport$SafePath toRealPath(jdk.jfr.internal.SecuritySupport$SafePath) throws java.lang.Exception;
+  static boolean existDirectory(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  static java.io.RandomAccessFile createRandomAccessFile(jdk.jfr.internal.SecuritySupport$SafePath) throws java.lang.Exception;
+  public static java.io.InputStream newFileInputStream(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  public static long getFileSize(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  static jdk.jfr.internal.SecuritySupport$SafePath createDirectories(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  public static boolean exists(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  public static boolean isDirectory(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  static void delete(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  static boolean isWritable(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  static void deleteOnExit(jdk.jfr.internal.SecuritySupport$SafePath);
+  static java.nio.channels.ReadableByteChannel newFileChannelToRead(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  public static java.io.InputStream getResourceAsStream(java.lang.String) throws java.io.IOException;
+  public static java.io.Reader newFileReader(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.FileNotFoundException, java.io.IOException;
+  static void touch(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  static void setAccessible(java.lang.reflect.Method);
+  static void setAccessible(java.lang.reflect.Field);
+  static void setAccessible(java.lang.reflect.Constructor<?>);
+  static void ensureClassIsInitialized(java.lang.Class<?>);
+  static java.lang.Class<?> defineClass(java.lang.String, byte[], java.lang.ClassLoader);
+  static java.lang.Thread createThreadWitNoPermissions(java.lang.String, java.lang.Runnable);
+  static void setDaemonThread(java.lang.Thread, boolean);
+  public static jdk.jfr.internal.SecuritySupport$SafePath getAbsolutePath(jdk.jfr.internal.SecuritySupport$SafePath) throws java.io.IOException;
+  static {};
+}

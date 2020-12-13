@@ -1,0 +1,8 @@
+Compiled from "ThreadAction.java"
+class com.sun.tools.jdi.ThreadAction extends java.util.EventObject {
+  static final int THREAD_RESUMABLE;
+  int id;
+  com.sun.tools.jdi.ThreadAction(com.sun.jdi.ThreadReference, int);
+  com.sun.jdi.ThreadReference thread();
+  int id();
+}

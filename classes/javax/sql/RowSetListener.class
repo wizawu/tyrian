@@ -1,0 +1,6 @@
+Compiled from "RowSetListener.java"
+public interface javax.sql.RowSetListener extends java.util.EventListener {
+  public abstract void rowSetChanged(javax.sql.RowSetEvent);
+  public abstract void rowChanged(javax.sql.RowSetEvent);
+  public abstract void cursorMoved(javax.sql.RowSetEvent);
+}

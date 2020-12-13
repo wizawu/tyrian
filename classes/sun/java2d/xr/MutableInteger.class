@@ -1,0 +1,8 @@
+Compiled from "MutableInteger.java"
+public class sun.java2d.xr.MutableInteger {
+  public sun.java2d.xr.MutableInteger(int);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public void setValue(int);
+  public int getValue();
+}

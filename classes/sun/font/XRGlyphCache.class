@@ -1,0 +1,25 @@
+Compiled from "XRGlyphCache.java"
+public class sun.font.XRGlyphCache implements sun.font.GlyphDisposedListener {
+  sun.java2d.xr.XRBackend con;
+  sun.java2d.xr.XRCompositeManager maskBuffer;
+  java.util.HashMap<sun.java2d.xr.MutableInteger, sun.font.XRGlyphCacheEntry> cacheMap;
+  int nextID;
+  sun.java2d.xr.MutableInteger tmp;
+  int grayGlyphSet;
+  int lcdGlyphSet;
+  int time;
+  int cachedPixels;
+  static final int MAX_CACHED_PIXELS;
+  java.util.ArrayList<java.lang.Integer> freeGlyphIDs;
+  static final boolean batchGlyphUpload;
+  public sun.font.XRGlyphCache(sun.java2d.xr.XRCompositeManager);
+  public void glyphDisposed(java.util.ArrayList<java.lang.Long>);
+  protected int getFreeGlyphID();
+  protected sun.font.XRGlyphCacheEntry getEntryForPointer(long);
+  public sun.font.XRGlyphCacheEntry[] cacheGlyphs(sun.font.GlyphList);
+  protected void uploadGlyphs(sun.font.XRGlyphCacheEntry[], java.util.ArrayList<sun.font.XRGlyphCacheEntry>, sun.font.GlyphList, int[]);
+  protected java.util.List<sun.font.XRGlyphCacheEntry>[] seperateGlyphTypes(java.util.List<sun.font.XRGlyphCacheEntry>, boolean);
+  protected byte[] generateGlyphImageStream(java.util.List<sun.font.XRGlyphCacheEntry>);
+  protected boolean containsLCDGlyphs(java.util.List<sun.font.XRGlyphCacheEntry>);
+  protected void clearCache(sun.font.XRGlyphCacheEntry[]);
+}

@@ -1,0 +1,16 @@
+Compiled from "MBeanAttributeInfo.java"
+public class javax.management.MBeanAttributeInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
+  static final javax.management.MBeanAttributeInfo[] NO_ATTRIBUTES;
+  public javax.management.MBeanAttributeInfo(java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean);
+  public javax.management.MBeanAttributeInfo(java.lang.String, java.lang.String, java.lang.String, boolean, boolean, boolean, javax.management.Descriptor);
+  public javax.management.MBeanAttributeInfo(java.lang.String, java.lang.String, java.lang.reflect.Method, java.lang.reflect.Method) throws javax.management.IntrospectionException;
+  public java.lang.Object clone();
+  public java.lang.String getType();
+  public boolean isReadable();
+  public boolean isWritable();
+  public boolean isIs();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

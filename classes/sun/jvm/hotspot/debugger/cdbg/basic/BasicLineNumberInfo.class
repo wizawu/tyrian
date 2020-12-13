@@ -1,0 +1,9 @@
+Compiled from "BasicLineNumberInfo.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberInfo implements sun.jvm.hotspot.debugger.cdbg.LineNumberInfo {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberInfo(java.lang.String, int, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
+  public java.lang.String getSourceFileName();
+  public int getLineNumber();
+  public sun.jvm.hotspot.debugger.Address getStartPC();
+  public sun.jvm.hotspot.debugger.Address getEndPC();
+  public void setEndPC(sun.jvm.hotspot.debugger.Address);
+}

@@ -1,0 +1,4 @@
+Compiled from "ModelTransform.java"
+public interface com.sun.media.sound.ModelTransform {
+  public abstract double transform(double);
+}

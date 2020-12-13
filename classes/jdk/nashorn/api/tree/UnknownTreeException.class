@@ -1,0 +1,6 @@
+Compiled from "UnknownTreeException.java"
+public class jdk.nashorn.api.tree.UnknownTreeException extends java.lang.RuntimeException {
+  public jdk.nashorn.api.tree.UnknownTreeException(jdk.nashorn.api.tree.Tree, java.lang.Object);
+  public jdk.nashorn.api.tree.Tree getUnknownTree();
+  public java.lang.Object getArgument();
+}

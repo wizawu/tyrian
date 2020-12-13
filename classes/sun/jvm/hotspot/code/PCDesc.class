@@ -1,0 +1,13 @@
+Compiled from "PCDesc.java"
+public class sun.jvm.hotspot.code.PCDesc extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.code.PCDesc(sun.jvm.hotspot.debugger.Address);
+  public int getPCOffset();
+  public int getScopeDecodeOffset();
+  public int getObjDecodeOffset();
+  public sun.jvm.hotspot.debugger.Address getRealPC(sun.jvm.hotspot.code.NMethod);
+  public boolean getReexecute();
+  public boolean isMethodHandleInvoke();
+  public void print(sun.jvm.hotspot.code.NMethod);
+  public void printOn(java.io.PrintStream, sun.jvm.hotspot.code.NMethod);
+  static {};
+}

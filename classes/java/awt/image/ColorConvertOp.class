@@ -1,0 +1,29 @@
+Compiled from "ColorConvertOp.java"
+public class java.awt.image.ColorConvertOp implements java.awt.image.BufferedImageOp,java.awt.image.RasterOp {
+  java.awt.color.ICC_Profile[] profileList;
+  java.awt.color.ColorSpace[] CSList;
+  sun.java2d.cmm.ColorTransform thisTransform;
+  sun.java2d.cmm.ColorTransform thisRasterTransform;
+  java.awt.color.ICC_Profile thisSrcProfile;
+  java.awt.color.ICC_Profile thisDestProfile;
+  java.awt.RenderingHints hints;
+  boolean gotProfiles;
+  float[] srcMinVals;
+  float[] srcMaxVals;
+  float[] dstMinVals;
+  float[] dstMaxVals;
+  public java.awt.image.ColorConvertOp(java.awt.RenderingHints);
+  public java.awt.image.ColorConvertOp(java.awt.color.ColorSpace, java.awt.RenderingHints);
+  public java.awt.image.ColorConvertOp(java.awt.color.ColorSpace, java.awt.color.ColorSpace, java.awt.RenderingHints);
+  public java.awt.image.ColorConvertOp(java.awt.color.ICC_Profile[], java.awt.RenderingHints);
+  public final java.awt.color.ICC_Profile[] getICC_Profiles();
+  public final java.awt.image.BufferedImage filter(java.awt.image.BufferedImage, java.awt.image.BufferedImage);
+  public final java.awt.image.WritableRaster filter(java.awt.image.Raster, java.awt.image.WritableRaster);
+  public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.BufferedImage);
+  public final java.awt.geom.Rectangle2D getBounds2D(java.awt.image.Raster);
+  public java.awt.image.BufferedImage createCompatibleDestImage(java.awt.image.BufferedImage, java.awt.image.ColorModel);
+  public java.awt.image.WritableRaster createCompatibleDestRaster(java.awt.image.Raster);
+  public final java.awt.geom.Point2D getPoint2D(java.awt.geom.Point2D, java.awt.geom.Point2D);
+  public final java.awt.RenderingHints getRenderingHints();
+  static {};
+}

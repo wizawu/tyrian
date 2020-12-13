@@ -1,0 +1,10 @@
+Compiled from "JVMSupport.java"
+public final class jdk.jfr.internal.JVMSupport {
+  public jdk.jfr.internal.JVMSupport();
+  public static void ensureWithInternalError();
+  public static void ensureWithIOException() throws java.io.IOException;
+  public static void ensureWithIllegalStateException();
+  public static boolean isNotAvailable();
+  public static void tryToInitializeJVM();
+  static {};
+}

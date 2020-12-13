@@ -1,0 +1,10 @@
+Compiled from "DataBufferNative.java"
+public class sun.awt.image.DataBufferNative extends java.awt.image.DataBuffer {
+  protected sun.java2d.SurfaceData surfaceData;
+  protected int width;
+  public sun.awt.image.DataBufferNative(sun.java2d.SurfaceData, int, int, int);
+  protected native int getElem(int, int, sun.java2d.SurfaceData);
+  public int getElem(int, int);
+  protected native void setElem(int, int, int, sun.java2d.SurfaceData);
+  public void setElem(int, int, int);
+}

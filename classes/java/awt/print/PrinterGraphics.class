@@ -1,0 +1,4 @@
+Compiled from "PrinterGraphics.java"
+public interface java.awt.print.PrinterGraphics {
+  public abstract java.awt.print.PrinterJob getPrinterJob();
+}

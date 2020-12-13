@@ -1,0 +1,4 @@
+Compiled from "XMLErrorResources_en.java"
+public class com.sun.org.apache.xml.internal.res.XMLErrorResources_en extends com.sun.org.apache.xml.internal.res.XMLErrorResources {
+  public com.sun.org.apache.xml.internal.res.XMLErrorResources_en();
+}

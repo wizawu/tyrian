@@ -1,0 +1,29 @@
+Compiled from "BasicStroke.java"
+public class java.awt.BasicStroke implements java.awt.Stroke {
+  public static final int JOIN_MITER;
+  public static final int JOIN_ROUND;
+  public static final int JOIN_BEVEL;
+  public static final int CAP_BUTT;
+  public static final int CAP_ROUND;
+  public static final int CAP_SQUARE;
+  float width;
+  int join;
+  int cap;
+  float miterlimit;
+  float[] dash;
+  float dash_phase;
+  public java.awt.BasicStroke(float, int, int, float, float[], float);
+  public java.awt.BasicStroke(float, int, int, float);
+  public java.awt.BasicStroke(float, int, int);
+  public java.awt.BasicStroke(float);
+  public java.awt.BasicStroke();
+  public java.awt.Shape createStrokedShape(java.awt.Shape);
+  public float getLineWidth();
+  public int getEndCap();
+  public int getLineJoin();
+  public float getMiterLimit();
+  public float[] getDashArray();
+  public float getDashPhase();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

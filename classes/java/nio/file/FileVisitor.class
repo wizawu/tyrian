@@ -1,0 +1,7 @@
+Compiled from "FileVisitor.java"
+public interface java.nio.file.FileVisitor<T> {
+  public abstract java.nio.file.FileVisitResult preVisitDirectory(T, java.nio.file.attribute.BasicFileAttributes) throws java.io.IOException;
+  public abstract java.nio.file.FileVisitResult visitFile(T, java.nio.file.attribute.BasicFileAttributes) throws java.io.IOException;
+  public abstract java.nio.file.FileVisitResult visitFileFailed(T, java.io.IOException) throws java.io.IOException;
+  public abstract java.nio.file.FileVisitResult postVisitDirectory(T, java.io.IOException) throws java.io.IOException;
+}

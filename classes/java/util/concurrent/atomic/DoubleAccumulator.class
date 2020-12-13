@@ -1,0 +1,13 @@
+Compiled from "DoubleAccumulator.java"
+public class java.util.concurrent.atomic.DoubleAccumulator extends java.util.concurrent.atomic.Striped64 implements java.io.Serializable {
+  public java.util.concurrent.atomic.DoubleAccumulator(java.util.function.DoubleBinaryOperator, double);
+  public void accumulate(double);
+  public double get();
+  public void reset();
+  public double getThenReset();
+  public java.lang.String toString();
+  public double doubleValue();
+  public long longValue();
+  public int intValue();
+  public float floatValue();
+}

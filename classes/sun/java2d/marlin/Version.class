@@ -1,0 +1,4 @@
+Compiled from "Version.java"
+public final class sun.java2d.marlin.Version {
+  public static java.lang.String getVersion();
+}

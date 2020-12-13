@@ -1,0 +1,29 @@
+Compiled from "Type.java"
+public interface sun.jvm.hotspot.types.Type {
+  public abstract java.lang.String getName();
+  public abstract sun.jvm.hotspot.types.Type getSuperclass();
+  public abstract long getSize();
+  public abstract boolean isCIntegerType();
+  public abstract boolean isCStringType();
+  public abstract boolean isJavaPrimitiveType();
+  public abstract boolean isOopType();
+  public abstract boolean isPointerType();
+  public abstract sun.jvm.hotspot.types.Field getField(java.lang.String, boolean, boolean);
+  public abstract sun.jvm.hotspot.types.Field getField(java.lang.String, boolean);
+  public abstract sun.jvm.hotspot.types.Field getField(java.lang.String);
+  public abstract sun.jvm.hotspot.types.Field getField(java.lang.String, sun.jvm.hotspot.types.Type, boolean) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.Field getField(java.lang.String, sun.jvm.hotspot.types.Type) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract java.util.Iterator getFields();
+  public abstract sun.jvm.hotspot.types.JBooleanField getJBooleanField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.JByteField getJByteField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.JCharField getJCharField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.JDoubleField getJDoubleField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.JFloatField getJFloatField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.JIntField getJIntField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.JLongField getJLongField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.JShortField getJShortField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.CIntegerField getCIntegerField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.OopField getOopField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.NarrowOopField getNarrowOopField(java.lang.String) throws sun.jvm.hotspot.types.WrongTypeException;
+  public abstract sun.jvm.hotspot.types.AddressField getAddressField(java.lang.String);
+}

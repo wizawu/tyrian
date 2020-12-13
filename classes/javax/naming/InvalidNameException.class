@@ -1,0 +1,5 @@
+Compiled from "InvalidNameException.java"
+public class javax.naming.InvalidNameException extends javax.naming.NamingException {
+  public javax.naming.InvalidNameException(java.lang.String);
+  public javax.naming.InvalidNameException();
+}

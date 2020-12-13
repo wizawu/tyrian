@@ -1,0 +1,4 @@
+Compiled from "RefType.java"
+public interface sun.jvm.hotspot.debugger.cdbg.RefType extends sun.jvm.hotspot.debugger.cdbg.Type {
+  public abstract sun.jvm.hotspot.debugger.cdbg.Type getTargetType();
+}

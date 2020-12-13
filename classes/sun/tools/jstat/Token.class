@@ -1,0 +1,11 @@
+Compiled from "Token.java"
+public class sun.tools.jstat.Token {
+  public java.lang.String sval;
+  public double nval;
+  public int ttype;
+  public sun.tools.jstat.Token(int, java.lang.String, double);
+  public sun.tools.jstat.Token(int, java.lang.String);
+  public sun.tools.jstat.Token(int);
+  public java.lang.String toMessage();
+  public java.lang.String toString();
+}

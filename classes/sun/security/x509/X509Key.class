@@ -1,0 +1,25 @@
+Compiled from "X509Key.java"
+public class sun.security.x509.X509Key implements java.security.PublicKey {
+  protected sun.security.x509.AlgorithmId algid;
+  protected byte[] key;
+  protected byte[] encodedKey;
+  public sun.security.x509.X509Key();
+  protected void setKey(sun.security.util.BitArray);
+  protected sun.security.util.BitArray getKey();
+  public static java.security.PublicKey parse(sun.security.util.DerValue) throws java.io.IOException;
+  protected void parseKeyBits() throws java.io.IOException, java.security.InvalidKeyException;
+  static java.security.PublicKey buildX509Key(sun.security.x509.AlgorithmId, sun.security.util.BitArray) throws java.io.IOException, java.security.InvalidKeyException;
+  public java.lang.String getAlgorithm();
+  public sun.security.x509.AlgorithmId getAlgorithmId();
+  public final void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public byte[] getEncoded();
+  public byte[] getEncodedInternal() throws java.security.InvalidKeyException;
+  public java.lang.String getFormat();
+  public byte[] encode() throws java.security.InvalidKeyException;
+  public java.lang.String toString();
+  public void decode(java.io.InputStream) throws java.security.InvalidKeyException;
+  public void decode(byte[]) throws java.security.InvalidKeyException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static void encode(sun.security.util.DerOutputStream, sun.security.x509.AlgorithmId, sun.security.util.BitArray) throws java.io.IOException;
+}

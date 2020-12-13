@@ -1,0 +1,9 @@
+Compiled from "UserDataHandler.java"
+public interface org.w3c.dom.UserDataHandler {
+  public static final short NODE_CLONED;
+  public static final short NODE_IMPORTED;
+  public static final short NODE_DELETED;
+  public static final short NODE_RENAMED;
+  public static final short NODE_ADOPTED;
+  public abstract void handle(short, java.lang.String, java.lang.Object, org.w3c.dom.Node, org.w3c.dom.Node);
+}

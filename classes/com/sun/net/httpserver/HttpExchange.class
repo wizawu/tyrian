@@ -1,0 +1,21 @@
+Compiled from "HttpExchange.java"
+public abstract class com.sun.net.httpserver.HttpExchange {
+  protected com.sun.net.httpserver.HttpExchange();
+  public abstract com.sun.net.httpserver.Headers getRequestHeaders();
+  public abstract com.sun.net.httpserver.Headers getResponseHeaders();
+  public abstract java.net.URI getRequestURI();
+  public abstract java.lang.String getRequestMethod();
+  public abstract com.sun.net.httpserver.HttpContext getHttpContext();
+  public abstract void close();
+  public abstract java.io.InputStream getRequestBody();
+  public abstract java.io.OutputStream getResponseBody();
+  public abstract void sendResponseHeaders(int, long) throws java.io.IOException;
+  public abstract java.net.InetSocketAddress getRemoteAddress();
+  public abstract int getResponseCode();
+  public abstract java.net.InetSocketAddress getLocalAddress();
+  public abstract java.lang.String getProtocol();
+  public abstract java.lang.Object getAttribute(java.lang.String);
+  public abstract void setAttribute(java.lang.String, java.lang.Object);
+  public abstract void setStreams(java.io.InputStream, java.io.OutputStream);
+  public abstract com.sun.net.httpserver.HttpPrincipal getPrincipal();
+}

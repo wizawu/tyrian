@@ -1,0 +1,7 @@
+Compiled from "IllformedLocaleException.java"
+public class java.util.IllformedLocaleException extends java.lang.RuntimeException {
+  public java.util.IllformedLocaleException();
+  public java.util.IllformedLocaleException(java.lang.String);
+  public java.util.IllformedLocaleException(java.lang.String, int);
+  public int getErrorIndex();
+}

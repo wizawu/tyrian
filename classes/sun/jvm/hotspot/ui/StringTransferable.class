@@ -1,0 +1,8 @@
+Compiled from "StringTransferable.java"
+class sun.jvm.hotspot.ui.StringTransferable implements java.awt.datatransfer.Transferable {
+  public sun.jvm.hotspot.ui.StringTransferable(java.lang.String);
+  public java.awt.datatransfer.DataFlavor[] getTransferDataFlavors();
+  public boolean isDataFlavorSupported(java.awt.datatransfer.DataFlavor);
+  public java.lang.Object getTransferData(java.awt.datatransfer.DataFlavor) throws java.awt.datatransfer.UnsupportedFlavorException, java.io.IOException;
+  static {};
+}

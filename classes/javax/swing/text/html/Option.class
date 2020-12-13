@@ -1,0 +1,11 @@
+Compiled from "Option.java"
+public class javax.swing.text.html.Option implements java.io.Serializable {
+  public javax.swing.text.html.Option(javax.swing.text.AttributeSet);
+  public void setLabel(java.lang.String);
+  public java.lang.String getLabel();
+  public javax.swing.text.AttributeSet getAttributes();
+  public java.lang.String toString();
+  protected void setSelection(boolean);
+  public boolean isSelected();
+  public java.lang.String getValue();
+}

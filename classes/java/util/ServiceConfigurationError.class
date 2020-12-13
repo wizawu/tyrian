@@ -1,0 +1,5 @@
+Compiled from "ServiceConfigurationError.java"
+public class java.util.ServiceConfigurationError extends java.lang.Error {
+  public java.util.ServiceConfigurationError(java.lang.String);
+  public java.util.ServiceConfigurationError(java.lang.String, java.lang.Throwable);
+}

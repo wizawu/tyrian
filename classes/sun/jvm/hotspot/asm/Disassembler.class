@@ -1,0 +1,8 @@
+Compiled from "Disassembler.java"
+public class sun.jvm.hotspot.asm.Disassembler {
+  protected long startPc;
+  protected byte[] code;
+  public static void decode(sun.jvm.hotspot.asm.InstructionVisitor, sun.jvm.hotspot.code.CodeBlob);
+  public static void decode(sun.jvm.hotspot.asm.InstructionVisitor, sun.jvm.hotspot.code.CodeBlob, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
+  static {};
+}

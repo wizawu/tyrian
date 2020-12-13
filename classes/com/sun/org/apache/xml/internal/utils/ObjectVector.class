@@ -1,0 +1,28 @@
+Compiled from "ObjectVector.java"
+public class com.sun.org.apache.xml.internal.utils.ObjectVector implements java.lang.Cloneable {
+  protected int m_blocksize;
+  protected java.lang.Object[] m_map;
+  protected int m_firstFree;
+  protected int m_mapSize;
+  public com.sun.org.apache.xml.internal.utils.ObjectVector();
+  public com.sun.org.apache.xml.internal.utils.ObjectVector(int);
+  public com.sun.org.apache.xml.internal.utils.ObjectVector(int, int);
+  public com.sun.org.apache.xml.internal.utils.ObjectVector(com.sun.org.apache.xml.internal.utils.ObjectVector);
+  public final int size();
+  public final void setSize(int);
+  public final void addElement(java.lang.Object);
+  public final void addElements(java.lang.Object, int);
+  public final void addElements(int);
+  public final void insertElementAt(java.lang.Object, int);
+  public final void removeAllElements();
+  public final boolean removeElement(java.lang.Object);
+  public final void removeElementAt(int);
+  public final void setElementAt(java.lang.Object, int);
+  public final java.lang.Object elementAt(int);
+  public final boolean contains(java.lang.Object);
+  public final int indexOf(java.lang.Object, int);
+  public final int indexOf(java.lang.Object);
+  public final int lastIndexOf(java.lang.Object);
+  public final void setToSize(int);
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+}

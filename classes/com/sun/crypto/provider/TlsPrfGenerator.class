@@ -1,0 +1,22 @@
+Compiled from "TlsPrfGenerator.java"
+abstract class com.sun.crypto.provider.TlsPrfGenerator extends javax.crypto.KeyGeneratorSpi {
+  static final byte[] LABEL_MASTER_SECRET;
+  static final byte[] LABEL_EXTENDED_MASTER_SECRET;
+  static final byte[] LABEL_KEY_EXPANSION;
+  static final byte[] LABEL_CLIENT_WRITE_KEY;
+  static final byte[] LABEL_SERVER_WRITE_KEY;
+  static final byte[] LABEL_IV_BLOCK;
+  static final byte[][] SSL3_CONST;
+  static byte[] genPad(byte, int);
+  static byte[] concat(byte[], byte[]);
+  public com.sun.crypto.provider.TlsPrfGenerator();
+  protected void engineInit(java.security.SecureRandom);
+  protected void engineInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
+  protected void engineInit(int, java.security.SecureRandom);
+  javax.crypto.SecretKey engineGenerateKey0(boolean);
+  static byte[] doTLS12PRF(byte[], byte[], byte[], int, java.lang.String, int, int) throws java.security.NoSuchAlgorithmException, java.security.DigestException;
+  static byte[] doTLS12PRF(byte[], byte[], byte[], int, java.security.MessageDigest, int, int) throws java.security.DigestException;
+  static byte[] doTLS10PRF(byte[], byte[], byte[], int) throws java.security.NoSuchAlgorithmException, java.security.DigestException;
+  static byte[] doTLS10PRF(byte[], byte[], byte[], int, java.security.MessageDigest, java.security.MessageDigest) throws java.security.DigestException;
+  static {};
+}

@@ -1,0 +1,13 @@
+Compiled from "PathSimplifier.java"
+final class sun.java2d.marlin.PathSimplifier implements sun.awt.geom.PathConsumer2D {
+  sun.java2d.marlin.PathSimplifier();
+  sun.java2d.marlin.PathSimplifier init(sun.awt.geom.PathConsumer2D);
+  public void pathDone();
+  public void closePath();
+  public long getNativeConsumer();
+  public void quadTo(float, float, float, float);
+  public void curveTo(float, float, float, float, float, float);
+  public void moveTo(float, float);
+  public void lineTo(float, float);
+  static {};
+}

@@ -1,0 +1,10 @@
+Compiled from "Norm2AllModes.java"
+final class sun.text.normalizer.Norm2AllModes {
+  public final sun.text.normalizer.NormalizerImpl impl;
+  public final sun.text.normalizer.Norm2AllModes$ComposeNormalizer2 comp;
+  public final sun.text.normalizer.Norm2AllModes$DecomposeNormalizer2 decomp;
+  public static final sun.text.normalizer.Norm2AllModes$NoopNormalizer2 NOOP_NORMALIZER2;
+  public static sun.text.normalizer.Norm2AllModes getNFCInstance();
+  public static sun.text.normalizer.Norm2AllModes getNFKCInstance();
+  static {};
+}

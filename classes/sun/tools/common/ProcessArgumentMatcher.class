@@ -1,0 +1,8 @@
+Compiled from "ProcessArgumentMatcher.java"
+public class sun.tools.common.ProcessArgumentMatcher {
+  public sun.tools.common.ProcessArgumentMatcher(java.lang.String);
+  public java.util.Collection<com.sun.tools.attach.VirtualMachineDescriptor> getVirtualMachineDescriptors(java.lang.Class<?>);
+  public java.util.Collection<com.sun.tools.attach.VirtualMachineDescriptor> getVirtualMachineDescriptors();
+  public java.util.Collection<java.lang.String> getVirtualMachinePids(java.lang.Class<?>);
+  public java.util.Collection<java.lang.String> getVirtualMachinePids();
+}

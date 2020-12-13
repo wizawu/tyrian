@@ -1,0 +1,14 @@
+Compiled from "JMXServiceURL.java"
+public class javax.management.remote.JMXServiceURL implements java.io.Serializable {
+  public javax.management.remote.JMXServiceURL(java.lang.String) throws java.net.MalformedURLException;
+  public javax.management.remote.JMXServiceURL(java.lang.String, java.lang.String, int) throws java.net.MalformedURLException;
+  public javax.management.remote.JMXServiceURL(java.lang.String, java.lang.String, int, java.lang.String) throws java.net.MalformedURLException;
+  public java.lang.String getProtocol();
+  public java.lang.String getHost();
+  public int getPort();
+  public java.lang.String getURLPath();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

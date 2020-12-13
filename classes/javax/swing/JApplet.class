@@ -1,0 +1,30 @@
+Compiled from "JApplet.java"
+public class javax.swing.JApplet extends java.applet.Applet implements javax.accessibility.Accessible,javax.swing.RootPaneContainer,javax.swing.TransferHandler$HasGetTransferHandler {
+  protected javax.swing.JRootPane rootPane;
+  protected boolean rootPaneCheckingEnabled;
+  protected javax.accessibility.AccessibleContext accessibleContext;
+  public javax.swing.JApplet() throws java.awt.HeadlessException;
+  protected javax.swing.JRootPane createRootPane();
+  public void setTransferHandler(javax.swing.TransferHandler);
+  public javax.swing.TransferHandler getTransferHandler();
+  public void update(java.awt.Graphics);
+  public void setJMenuBar(javax.swing.JMenuBar);
+  public javax.swing.JMenuBar getJMenuBar();
+  protected boolean isRootPaneCheckingEnabled();
+  protected void setRootPaneCheckingEnabled(boolean);
+  protected void addImpl(java.awt.Component, java.lang.Object, int);
+  public void remove(java.awt.Component);
+  public void setLayout(java.awt.LayoutManager);
+  public javax.swing.JRootPane getRootPane();
+  protected void setRootPane(javax.swing.JRootPane);
+  public java.awt.Container getContentPane();
+  public void setContentPane(java.awt.Container);
+  public javax.swing.JLayeredPane getLayeredPane();
+  public void setLayeredPane(javax.swing.JLayeredPane);
+  public java.awt.Component getGlassPane();
+  public void setGlassPane(java.awt.Component);
+  public java.awt.Graphics getGraphics();
+  public void repaint(long, int, int, int, int);
+  protected java.lang.String paramString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+}

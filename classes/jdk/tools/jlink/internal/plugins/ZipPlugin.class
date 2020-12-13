@@ -1,0 +1,15 @@
+Compiled from "ZipPlugin.java"
+public final class jdk.tools.jlink.internal.plugins.ZipPlugin implements jdk.tools.jlink.plugin.Plugin {
+  public static final java.lang.String NAME;
+  public jdk.tools.jlink.internal.plugins.ZipPlugin();
+  jdk.tools.jlink.internal.plugins.ZipPlugin(java.lang.String[]);
+  jdk.tools.jlink.internal.plugins.ZipPlugin(java.util.function.Predicate<java.lang.String>);
+  public java.lang.String getName();
+  public jdk.tools.jlink.plugin.Plugin$Category getType();
+  public java.lang.String getDescription();
+  public boolean hasArguments();
+  public java.lang.String getArgumentsDescription();
+  public void configure(java.util.Map<java.lang.String, java.lang.String>);
+  static byte[] compress(byte[]);
+  public jdk.tools.jlink.plugin.ResourcePool transform(jdk.tools.jlink.plugin.ResourcePool, jdk.tools.jlink.plugin.ResourcePoolBuilder);
+}

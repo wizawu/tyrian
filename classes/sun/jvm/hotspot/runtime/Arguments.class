@@ -1,0 +1,8 @@
+Compiled from "Arguments.java"
+public class sun.jvm.hotspot.runtime.Arguments {
+  public sun.jvm.hotspot.runtime.Arguments();
+  public static java.lang.String getJVMFlags();
+  public static java.lang.String getJVMArgs();
+  public static java.lang.String getJavaCommand();
+  static {};
+}

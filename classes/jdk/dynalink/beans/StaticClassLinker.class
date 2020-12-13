@@ -1,0 +1,14 @@
+Compiled from "StaticClassLinker.java"
+class jdk.dynalink.beans.StaticClassLinker implements jdk.dynalink.linker.TypeBasedGuardingDynamicLinker {
+  static final java.lang.invoke.MethodHandle GET_CLASS;
+  static final java.lang.invoke.MethodHandle IS_CLASS;
+  static final java.lang.invoke.MethodHandle ARRAY_CTOR;
+  jdk.dynalink.beans.StaticClassLinker();
+  static java.lang.Object getConstructorMethod(java.lang.Class<?>, java.lang.String);
+  static java.util.Set<java.lang.String> getReadableStaticPropertyNames(java.lang.Class<?>);
+  static java.util.Set<java.lang.String> getWritableStaticPropertyNames(java.lang.Class<?>);
+  static java.util.Set<java.lang.String> getStaticMethodNames(java.lang.Class<?>);
+  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
+  public boolean canLinkType(java.lang.Class<?>);
+  static {};
+}

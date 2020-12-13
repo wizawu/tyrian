@@ -1,0 +1,27 @@
+Compiled from "SunVolatileImage.java"
+public class sun.awt.image.SunVolatileImage extends java.awt.image.VolatileImage implements sun.java2d.DestSurfaceProvider {
+  protected sun.awt.image.VolatileSurfaceManager volSurfaceManager;
+  protected java.awt.Component comp;
+  protected sun.awt.image.SunVolatileImage(java.awt.Component, java.awt.GraphicsConfiguration, int, int, java.lang.Object, int, java.awt.ImageCapabilities, int);
+  public sun.awt.image.SunVolatileImage(java.awt.Component, int, int);
+  public sun.awt.image.SunVolatileImage(java.awt.Component, int, int, java.lang.Object);
+  public sun.awt.image.SunVolatileImage(java.awt.GraphicsConfiguration, int, int, int, java.awt.ImageCapabilities);
+  public int getWidth();
+  public int getHeight();
+  public java.awt.GraphicsConfiguration getGraphicsConfig();
+  public void updateGraphicsConfig();
+  public java.awt.Component getComponent();
+  public int getForcedAccelSurfaceType();
+  protected sun.awt.image.VolatileSurfaceManager createSurfaceManager(java.lang.Object, java.awt.ImageCapabilities);
+  public java.awt.Graphics2D createGraphics();
+  public java.lang.Object getProperty(java.lang.String, java.awt.image.ImageObserver);
+  public int getWidth(java.awt.image.ImageObserver);
+  public int getHeight(java.awt.image.ImageObserver);
+  public java.awt.image.BufferedImage getBackupImage();
+  public java.awt.image.BufferedImage getBackupImage(double, double);
+  public java.awt.image.BufferedImage getSnapshot();
+  public int validate(java.awt.GraphicsConfiguration);
+  public boolean contentsLost();
+  public java.awt.ImageCapabilities getCapabilities();
+  public sun.java2d.Surface getDestSurface();
+}

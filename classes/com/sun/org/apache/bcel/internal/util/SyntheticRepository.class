@@ -1,0 +1,10 @@
+Compiled from "SyntheticRepository.java"
+public class com.sun.org.apache.bcel.internal.util.SyntheticRepository implements com.sun.org.apache.bcel.internal.util.Repository {
+  public static com.sun.org.apache.bcel.internal.util.SyntheticRepository getInstance();
+  public void storeClass(com.sun.org.apache.bcel.internal.classfile.JavaClass);
+  public void removeClass(com.sun.org.apache.bcel.internal.classfile.JavaClass);
+  public com.sun.org.apache.bcel.internal.classfile.JavaClass findClass(java.lang.String);
+  public com.sun.org.apache.bcel.internal.classfile.JavaClass loadClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  public com.sun.org.apache.bcel.internal.classfile.JavaClass loadClass(java.lang.Class<?>) throws java.lang.ClassNotFoundException;
+  public void clear();
+}

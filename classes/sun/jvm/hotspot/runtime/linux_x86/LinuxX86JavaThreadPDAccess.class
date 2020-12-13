@@ -1,0 +1,15 @@
+Compiled from "LinuxX86JavaThreadPDAccess.java"
+public class sun.jvm.hotspot.runtime.linux_x86.LinuxX86JavaThreadPDAccess implements sun.jvm.hotspot.runtime.JavaThreadPDAccess {
+  public sun.jvm.hotspot.runtime.linux_x86.LinuxX86JavaThreadPDAccess();
+  public sun.jvm.hotspot.debugger.Address getLastJavaFP(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address getLastJavaPC(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address getBaseOfStackPointer(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.runtime.Frame getLastFramePD(sun.jvm.hotspot.runtime.JavaThread, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.runtime.RegisterMap newRegisterMap(sun.jvm.hotspot.runtime.JavaThread, boolean);
+  public sun.jvm.hotspot.runtime.Frame getCurrentFrameGuess(sun.jvm.hotspot.runtime.JavaThread, sun.jvm.hotspot.debugger.Address);
+  public void printThreadIDOn(sun.jvm.hotspot.debugger.Address, java.io.PrintStream);
+  public void printInfoOn(sun.jvm.hotspot.debugger.Address, java.io.PrintStream);
+  public sun.jvm.hotspot.debugger.Address getLastSP(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.ThreadProxy getThreadProxy(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

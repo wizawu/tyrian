@@ -1,0 +1,5 @@
+Compiled from "WildcardType.java"
+public interface java.lang.reflect.WildcardType extends java.lang.reflect.Type {
+  public abstract java.lang.reflect.Type[] getUpperBounds();
+  public abstract java.lang.reflect.Type[] getLowerBounds();
+}

@@ -1,0 +1,10 @@
+Compiled from "NamingEventNotifier.java"
+final class com.sun.jndi.ldap.NamingEventNotifier implements java.lang.Runnable {
+  com.sun.jndi.ldap.NotifierArgs info;
+  com.sun.jndi.ldap.NamingEventNotifier(com.sun.jndi.ldap.EventSupport, com.sun.jndi.ldap.LdapCtx, com.sun.jndi.ldap.NotifierArgs, javax.naming.event.NamingListener) throws javax.naming.NamingException;
+  void addNamingListener(javax.naming.event.NamingListener);
+  void removeNamingListener(javax.naming.event.NamingListener);
+  boolean hasNamingListeners();
+  public void run();
+  void stop();
+}

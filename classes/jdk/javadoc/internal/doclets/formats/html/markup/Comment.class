@@ -1,0 +1,8 @@
+Compiled from "Comment.java"
+public class jdk.javadoc.internal.doclets.formats.html.markup.Comment extends jdk.javadoc.internal.doclets.toolkit.Content {
+  public jdk.javadoc.internal.doclets.formats.html.markup.Comment(java.lang.String);
+  public void addContent(jdk.javadoc.internal.doclets.toolkit.Content);
+  public void addContent(java.lang.CharSequence);
+  public boolean isEmpty();
+  public boolean write(java.io.Writer, boolean) throws java.io.IOException;
+}

@@ -1,0 +1,14 @@
+Compiled from "XGlobalCursorManager.java"
+public final class sun.awt.X11.XGlobalCursorManager extends sun.awt.GlobalCursorManager {
+  public sun.awt.X11.XGlobalCursorManager();
+  static sun.awt.GlobalCursorManager getCursorManager();
+  static void nativeUpdateCursor(java.awt.Component);
+  protected void setCursor(java.awt.Component, java.awt.Cursor, boolean);
+  protected void updateCursorOutOfJava();
+  protected void getCursorPos(java.awt.Point);
+  protected java.awt.Component findHeavyweightUnderCursor();
+  protected java.awt.Point getLocationOnScreen(java.awt.Component);
+  protected java.awt.Component findHeavyweightUnderCursor(boolean);
+  static long getCursor(java.awt.Cursor);
+  static void setPData(java.awt.Cursor, long);
+}

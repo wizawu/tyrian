@@ -1,0 +1,12 @@
+Compiled from "TaskEvent.java"
+public final class com.sun.source.util.TaskEvent {
+  public com.sun.source.util.TaskEvent(com.sun.source.util.TaskEvent$Kind);
+  public com.sun.source.util.TaskEvent(com.sun.source.util.TaskEvent$Kind, javax.tools.JavaFileObject);
+  public com.sun.source.util.TaskEvent(com.sun.source.util.TaskEvent$Kind, com.sun.source.tree.CompilationUnitTree);
+  public com.sun.source.util.TaskEvent(com.sun.source.util.TaskEvent$Kind, com.sun.source.tree.CompilationUnitTree, javax.lang.model.element.TypeElement);
+  public com.sun.source.util.TaskEvent$Kind getKind();
+  public javax.tools.JavaFileObject getSourceFile();
+  public com.sun.source.tree.CompilationUnitTree getCompilationUnit();
+  public javax.lang.model.element.TypeElement getTypeElement();
+  public java.lang.String toString();
+}

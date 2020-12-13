@@ -1,0 +1,10 @@
+Compiled from "DnsClient.java"
+public class com.sun.jndi.dns.DnsClient {
+  public com.sun.jndi.dns.DnsClient(java.lang.String[], int, int) throws javax.naming.NamingException;
+  java.net.DatagramSocket getDatagramSocket() throws javax.naming.NamingException;
+  protected void finalize();
+  public void close();
+  com.sun.jndi.dns.ResourceRecords query(com.sun.jndi.dns.DnsName, int, int, boolean, boolean) throws javax.naming.NamingException;
+  com.sun.jndi.dns.ResourceRecords queryZone(com.sun.jndi.dns.DnsName, int, boolean) throws javax.naming.NamingException;
+  static {};
+}

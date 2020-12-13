@@ -1,0 +1,8 @@
+Compiled from "EntryPair.java"
+final class java.text.EntryPair {
+  public java.lang.String entryName;
+  public int value;
+  public boolean fwd;
+  public java.text.EntryPair(java.lang.String, int);
+  public java.text.EntryPair(java.lang.String, int, boolean);
+}

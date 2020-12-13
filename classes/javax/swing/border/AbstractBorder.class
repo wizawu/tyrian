@@ -1,0 +1,13 @@
+Compiled from "AbstractBorder.java"
+public abstract class javax.swing.border.AbstractBorder implements javax.swing.border.Border,java.io.Serializable {
+  public javax.swing.border.AbstractBorder();
+  public void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
+  public java.awt.Insets getBorderInsets(java.awt.Component);
+  public java.awt.Insets getBorderInsets(java.awt.Component, java.awt.Insets);
+  public boolean isBorderOpaque();
+  public java.awt.Rectangle getInteriorRectangle(java.awt.Component, int, int, int, int);
+  public static java.awt.Rectangle getInteriorRectangle(java.awt.Component, javax.swing.border.Border, int, int, int, int);
+  public int getBaseline(java.awt.Component, int, int);
+  public java.awt.Component$BaselineResizeBehavior getBaselineResizeBehavior(java.awt.Component);
+  static boolean isLeftToRight(java.awt.Component);
+}

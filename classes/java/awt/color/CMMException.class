@@ -1,0 +1,4 @@
+Compiled from "CMMException.java"
+public class java.awt.color.CMMException extends java.lang.RuntimeException {
+  public java.awt.color.CMMException(java.lang.String);
+}

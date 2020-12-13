@@ -1,0 +1,10 @@
+Compiled from "BeanContextMembershipEvent.java"
+public class java.beans.beancontext.BeanContextMembershipEvent extends java.beans.beancontext.BeanContextEvent {
+  protected java.util.Collection children;
+  public java.beans.beancontext.BeanContextMembershipEvent(java.beans.beancontext.BeanContext, java.util.Collection);
+  public java.beans.beancontext.BeanContextMembershipEvent(java.beans.beancontext.BeanContext, java.lang.Object[]);
+  public int size();
+  public boolean contains(java.lang.Object);
+  public java.lang.Object[] toArray();
+  public java.util.Iterator iterator();
+}

@@ -1,0 +1,6 @@
+Compiled from "DefaultValueImpl.java"
+class jdk.nashorn.api.scripting.DefaultValueImpl {
+  jdk.nashorn.api.scripting.DefaultValueImpl();
+  static java.lang.Object getDefaultValue(jdk.nashorn.api.scripting.JSObject, java.lang.Class<?>) throws java.lang.UnsupportedOperationException;
+  static {};
+}

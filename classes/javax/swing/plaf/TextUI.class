@@ -1,0 +1,17 @@
+Compiled from "TextUI.java"
+public abstract class javax.swing.plaf.TextUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.TextUI();
+  public abstract java.awt.Rectangle modelToView(javax.swing.text.JTextComponent, int) throws javax.swing.text.BadLocationException;
+  public abstract java.awt.Rectangle modelToView(javax.swing.text.JTextComponent, int, javax.swing.text.Position$Bias) throws javax.swing.text.BadLocationException;
+  public java.awt.geom.Rectangle2D modelToView2D(javax.swing.text.JTextComponent, int, javax.swing.text.Position$Bias) throws javax.swing.text.BadLocationException;
+  public abstract int viewToModel(javax.swing.text.JTextComponent, java.awt.Point);
+  public abstract int viewToModel(javax.swing.text.JTextComponent, java.awt.Point, javax.swing.text.Position$Bias[]);
+  public int viewToModel2D(javax.swing.text.JTextComponent, java.awt.geom.Point2D, javax.swing.text.Position$Bias[]);
+  public abstract int getNextVisualPositionFrom(javax.swing.text.JTextComponent, int, javax.swing.text.Position$Bias, int, javax.swing.text.Position$Bias[]) throws javax.swing.text.BadLocationException;
+  public abstract void damageRange(javax.swing.text.JTextComponent, int, int);
+  public abstract void damageRange(javax.swing.text.JTextComponent, int, int, javax.swing.text.Position$Bias, javax.swing.text.Position$Bias);
+  public abstract javax.swing.text.EditorKit getEditorKit(javax.swing.text.JTextComponent);
+  public abstract javax.swing.text.View getRootView(javax.swing.text.JTextComponent);
+  public java.lang.String getToolTipText(javax.swing.text.JTextComponent, java.awt.Point);
+  public java.lang.String getToolTipText2D(javax.swing.text.JTextComponent, java.awt.geom.Point2D);
+}

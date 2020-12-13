@@ -1,0 +1,5 @@
+Compiled from "UnsupportedEncodingException.java"
+public class java.io.UnsupportedEncodingException extends java.io.IOException {
+  public java.io.UnsupportedEncodingException();
+  public java.io.UnsupportedEncodingException(java.lang.String);
+}

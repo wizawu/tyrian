@@ -1,0 +1,9 @@
+Compiled from "VarInsnNode.java"
+public class jdk.internal.org.objectweb.asm.tree.VarInsnNode extends jdk.internal.org.objectweb.asm.tree.AbstractInsnNode {
+  public int var;
+  public jdk.internal.org.objectweb.asm.tree.VarInsnNode(int, int);
+  public void setOpcode(int);
+  public int getType();
+  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
+  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode clone(java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
+}

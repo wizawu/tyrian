@@ -1,0 +1,13 @@
+Compiled from "CachedRowSetWriter.java"
+public class com.sun.rowset.internal.CachedRowSetWriter implements javax.sql.rowset.spi.TransactionalWriter,java.io.Serializable {
+  static final long serialVersionUID;
+  public com.sun.rowset.internal.CachedRowSetWriter();
+  public boolean writeData(javax.sql.RowSetInternal) throws java.sql.SQLException;
+  public void setReader(com.sun.rowset.internal.CachedRowSetReader) throws java.sql.SQLException;
+  public com.sun.rowset.internal.CachedRowSetReader getReader() throws java.sql.SQLException;
+  void updateResolvedConflictToDB(javax.sql.rowset.CachedRowSet, java.sql.Connection) throws java.sql.SQLException;
+  public void commit() throws java.sql.SQLException;
+  public void commit(com.sun.rowset.CachedRowSetImpl, boolean) throws java.sql.SQLException;
+  public void rollback() throws java.sql.SQLException;
+  public void rollback(java.sql.Savepoint) throws java.sql.SQLException;
+}

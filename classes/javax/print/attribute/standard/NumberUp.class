@@ -1,0 +1,7 @@
+Compiled from "NumberUp.java"
+public final class javax.print.attribute.standard.NumberUp extends javax.print.attribute.IntegerSyntax implements javax.print.attribute.DocAttribute,javax.print.attribute.PrintRequestAttribute,javax.print.attribute.PrintJobAttribute {
+  public javax.print.attribute.standard.NumberUp(int);
+  public boolean equals(java.lang.Object);
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+}

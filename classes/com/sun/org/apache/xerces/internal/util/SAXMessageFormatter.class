@@ -1,0 +1,5 @@
+Compiled from "SAXMessageFormatter.java"
+public class com.sun.org.apache.xerces.internal.util.SAXMessageFormatter {
+  public com.sun.org.apache.xerces.internal.util.SAXMessageFormatter();
+  public static java.lang.String formatMessage(java.util.Locale, java.lang.String, java.lang.Object[]) throws java.util.MissingResourceException;
+}

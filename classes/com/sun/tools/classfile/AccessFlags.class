@@ -1,0 +1,38 @@
+Compiled from "AccessFlags.java"
+public class com.sun.tools.classfile.AccessFlags {
+  public static final int ACC_PUBLIC;
+  public static final int ACC_PRIVATE;
+  public static final int ACC_PROTECTED;
+  public static final int ACC_STATIC;
+  public static final int ACC_FINAL;
+  public static final int ACC_SUPER;
+  public static final int ACC_SYNCHRONIZED;
+  public static final int ACC_VOLATILE;
+  public static final int ACC_BRIDGE;
+  public static final int ACC_TRANSIENT;
+  public static final int ACC_VARARGS;
+  public static final int ACC_NATIVE;
+  public static final int ACC_INTERFACE;
+  public static final int ACC_ABSTRACT;
+  public static final int ACC_STRICT;
+  public static final int ACC_SYNTHETIC;
+  public static final int ACC_ANNOTATION;
+  public static final int ACC_ENUM;
+  public static final int ACC_MANDATED;
+  public static final int ACC_MODULE;
+  public final int flags;
+  com.sun.tools.classfile.AccessFlags(com.sun.tools.classfile.ClassReader) throws java.io.IOException;
+  public com.sun.tools.classfile.AccessFlags(int);
+  public com.sun.tools.classfile.AccessFlags ignore(int);
+  public boolean is(int);
+  public int byteLength();
+  public java.util.Set<java.lang.String> getClassModifiers();
+  public java.util.Set<java.lang.String> getClassFlags();
+  public java.util.Set<java.lang.String> getInnerClassModifiers();
+  public java.util.Set<java.lang.String> getInnerClassFlags();
+  public java.util.Set<java.lang.String> getFieldModifiers();
+  public java.util.Set<java.lang.String> getFieldFlags();
+  public java.util.Set<java.lang.String> getMethodModifiers();
+  public java.util.Set<java.lang.String> getMethodFlags();
+  static {};
+}

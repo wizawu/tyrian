@@ -1,0 +1,33 @@
+Compiled from "AbstractDiagnosticFormatter.java"
+public abstract class com.sun.tools.javac.util.AbstractDiagnosticFormatter implements com.sun.tools.javac.api.DiagnosticFormatter<com.sun.tools.javac.util.JCDiagnostic> {
+  protected com.sun.tools.javac.util.JavacMessages messages;
+  protected int depth;
+  protected com.sun.tools.javac.code.Printer printer;
+  protected com.sun.tools.javac.util.AbstractDiagnosticFormatter(com.sun.tools.javac.util.JavacMessages, com.sun.tools.javac.util.AbstractDiagnosticFormatter$SimpleConfiguration);
+  public java.lang.String formatKind(com.sun.tools.javac.util.JCDiagnostic, java.util.Locale);
+  public java.lang.String format(com.sun.tools.javac.util.JCDiagnostic, java.util.Locale);
+  protected abstract java.lang.String formatDiagnostic(com.sun.tools.javac.util.JCDiagnostic, java.util.Locale);
+  public java.lang.String formatPosition(com.sun.tools.javac.util.JCDiagnostic, com.sun.tools.javac.api.DiagnosticFormatter$PositionKind, java.util.Locale);
+  public java.lang.String formatSource(com.sun.tools.javac.util.JCDiagnostic, boolean, java.util.Locale);
+  protected java.util.Collection<java.lang.String> formatArguments(com.sun.tools.javac.util.JCDiagnostic, java.util.Locale);
+  protected java.lang.String formatArgument(com.sun.tools.javac.util.JCDiagnostic, java.lang.Object, java.util.Locale);
+  protected java.lang.String formatIterable(com.sun.tools.javac.util.JCDiagnostic, java.lang.Iterable<?>, java.util.Locale);
+  protected com.sun.tools.javac.util.List<java.lang.String> formatSubdiagnostics(com.sun.tools.javac.util.JCDiagnostic, java.util.Locale);
+  protected java.lang.String formatSubdiagnostic(com.sun.tools.javac.util.JCDiagnostic, com.sun.tools.javac.util.JCDiagnostic, java.util.Locale);
+  protected java.lang.String formatSourceLine(com.sun.tools.javac.util.JCDiagnostic, int);
+  protected java.lang.String formatLintCategory(com.sun.tools.javac.util.JCDiagnostic, java.util.Locale);
+  protected java.lang.String localize(java.util.Locale, java.lang.String, java.lang.Object...);
+  public boolean displaySource(com.sun.tools.javac.util.JCDiagnostic);
+  public boolean isRaw();
+  protected java.lang.String indentString(int);
+  protected java.lang.String indent(java.lang.String, int);
+  public com.sun.tools.javac.util.AbstractDiagnosticFormatter$SimpleConfiguration getConfiguration();
+  public com.sun.tools.javac.code.Printer getPrinter();
+  public void setPrinter(com.sun.tools.javac.code.Printer);
+  public com.sun.tools.javac.api.DiagnosticFormatter$Configuration getConfiguration();
+  public java.lang.String formatPosition(javax.tools.Diagnostic, com.sun.tools.javac.api.DiagnosticFormatter$PositionKind, java.util.Locale);
+  public java.lang.String formatSource(javax.tools.Diagnostic, boolean, java.util.Locale);
+  public java.lang.String formatKind(javax.tools.Diagnostic, java.util.Locale);
+  public java.lang.String format(javax.tools.Diagnostic, java.util.Locale);
+  public boolean displaySource(javax.tools.Diagnostic);
+}

@@ -1,0 +1,6 @@
+Compiled from "ShortList.java"
+public interface com.sun.org.apache.xerces.internal.xs.ShortList extends java.util.List<java.lang.Short> {
+  public abstract int getLength();
+  public abstract boolean contains(short);
+  public abstract short item(int) throws com.sun.org.apache.xerces.internal.xs.XSException;
+}

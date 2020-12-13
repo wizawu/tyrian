@@ -1,0 +1,17 @@
+Compiled from "SimpleEUCEncoder.java"
+public abstract class sun.nio.cs.ext.SimpleEUCEncoder extends java.nio.charset.CharsetEncoder {
+  protected short[] index1;
+  protected java.lang.String index2;
+  protected java.lang.String index2a;
+  protected java.lang.String index2b;
+  protected java.lang.String index2c;
+  protected int mask1;
+  protected int mask2;
+  protected int shift;
+  static final boolean $assertionsDisabled;
+  protected sun.nio.cs.ext.SimpleEUCEncoder(java.nio.charset.Charset);
+  public boolean canEncode(char);
+  protected java.nio.charset.CoderResult encodeLoop(java.nio.CharBuffer, java.nio.ByteBuffer);
+  public byte encode(char);
+  static {};
+}

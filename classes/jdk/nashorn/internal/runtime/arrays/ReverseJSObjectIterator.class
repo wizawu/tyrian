@@ -1,0 +1,7 @@
+Compiled from "ReverseJSObjectIterator.java"
+final class jdk.nashorn.internal.runtime.arrays.ReverseJSObjectIterator extends jdk.nashorn.internal.runtime.arrays.JSObjectIterator {
+  jdk.nashorn.internal.runtime.arrays.ReverseJSObjectIterator(jdk.nashorn.api.scripting.JSObject, boolean);
+  public boolean isReverse();
+  protected boolean indexInArray();
+  protected long bumpIndex();
+}

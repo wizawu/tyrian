@@ -1,0 +1,38 @@
+Compiled from "ModelDestination.java"
+public final class com.sun.media.sound.ModelDestination {
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_NONE;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_KEYNUMBER;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_VELOCITY;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_PITCH;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_GAIN;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_PAN;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_REVERB;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_CHORUS;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_LFO1_DELAY;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_LFO1_FREQ;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_LFO2_DELAY;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_LFO2_FREQ;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG1_DELAY;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG1_ATTACK;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG1_HOLD;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG1_DECAY;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG1_SUSTAIN;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG1_RELEASE;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG1_SHUTDOWN;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG2_DELAY;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG2_ATTACK;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG2_HOLD;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG2_DECAY;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG2_SUSTAIN;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG2_RELEASE;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_EG2_SHUTDOWN;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_FILTER_FREQ;
+  public static final com.sun.media.sound.ModelIdentifier DESTINATION_FILTER_Q;
+  public com.sun.media.sound.ModelDestination();
+  public com.sun.media.sound.ModelDestination(com.sun.media.sound.ModelIdentifier);
+  public com.sun.media.sound.ModelIdentifier getIdentifier();
+  public void setIdentifier(com.sun.media.sound.ModelIdentifier);
+  public com.sun.media.sound.ModelTransform getTransform();
+  public void setTransform(com.sun.media.sound.ModelTransform);
+  static {};
+}

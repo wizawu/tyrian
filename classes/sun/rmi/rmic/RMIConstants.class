@@ -1,0 +1,19 @@
+Compiled from "RMIConstants.java"
+public interface sun.rmi.rmic.RMIConstants extends sun.rmi.rmic.Constants {
+  public static final sun.tools.java.Identifier idRemoteObject;
+  public static final sun.tools.java.Identifier idRemoteStub;
+  public static final sun.tools.java.Identifier idRemoteRef;
+  public static final sun.tools.java.Identifier idOperation;
+  public static final sun.tools.java.Identifier idSkeleton;
+  public static final sun.tools.java.Identifier idSkeletonMismatchException;
+  public static final sun.tools.java.Identifier idRemoteCall;
+  public static final sun.tools.java.Identifier idMarshalException;
+  public static final sun.tools.java.Identifier idUnmarshalException;
+  public static final sun.tools.java.Identifier idUnexpectedException;
+  public static final int STUB_VERSION_1_1;
+  public static final int STUB_VERSION_FAT;
+  public static final int STUB_VERSION_1_2;
+  public static final long STUB_SERIAL_VERSION_UID;
+  public static final int INTERFACE_HASH_STUB_VERSION;
+  static {};
+}

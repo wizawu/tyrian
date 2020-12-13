@@ -1,0 +1,39 @@
+Compiled from "ToolTipManager.java"
+public class javax.swing.ToolTipManager extends java.awt.event.MouseAdapter implements java.awt.event.MouseMotionListener {
+  javax.swing.Timer enterTimer;
+  javax.swing.Timer exitTimer;
+  javax.swing.Timer insideTimer;
+  java.lang.String toolTipText;
+  java.awt.Point preferredLocation;
+  javax.swing.JComponent insideComponent;
+  java.awt.event.MouseEvent mouseEvent;
+  boolean showImmediately;
+  transient javax.swing.Popup tipWindow;
+  javax.swing.JToolTip tip;
+  boolean enabled;
+  protected boolean lightWeightPopupEnabled;
+  protected boolean heavyWeightPopupEnabled;
+  javax.swing.ToolTipManager();
+  public void setEnabled(boolean);
+  public boolean isEnabled();
+  public void setLightWeightPopupEnabled(boolean);
+  public boolean isLightWeightPopupEnabled();
+  public void setInitialDelay(int);
+  public int getInitialDelay();
+  public void setDismissDelay(int);
+  public int getDismissDelay();
+  public void setReshowDelay(int);
+  public int getReshowDelay();
+  void showTipWindow();
+  void hideTipWindow();
+  public static javax.swing.ToolTipManager sharedInstance();
+  public void registerComponent(javax.swing.JComponent);
+  public void unregisterComponent(javax.swing.JComponent);
+  public void mouseEntered(java.awt.event.MouseEvent);
+  public void mouseExited(java.awt.event.MouseEvent);
+  public void mousePressed(java.awt.event.MouseEvent);
+  public void mouseDragged(java.awt.event.MouseEvent);
+  public void mouseMoved(java.awt.event.MouseEvent);
+  static java.awt.Frame frameForComponent(java.awt.Component);
+  static {};
+}

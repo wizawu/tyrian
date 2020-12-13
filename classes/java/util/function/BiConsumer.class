@@ -1,0 +1,5 @@
+Compiled from "BiConsumer.java"
+public interface java.util.function.BiConsumer<T, U> {
+  public abstract void accept(T, U);
+  public default java.util.function.BiConsumer<T, U> andThen(java.util.function.BiConsumer<? super T, ? super U>);
+}

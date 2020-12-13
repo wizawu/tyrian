@@ -1,0 +1,11 @@
+Compiled from "Adler32.java"
+public class java.util.zip.Adler32 implements java.util.zip.Checksum {
+  static final boolean $assertionsDisabled;
+  public java.util.zip.Adler32();
+  public void update(int);
+  public void update(byte[], int, int);
+  public void update(java.nio.ByteBuffer);
+  public void reset();
+  public long getValue();
+  static {};
+}

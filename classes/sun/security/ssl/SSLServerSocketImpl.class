@@ -1,0 +1,24 @@
+Compiled from "SSLServerSocketImpl.java"
+final class sun.security.ssl.SSLServerSocketImpl extends javax.net.ssl.SSLServerSocket {
+  sun.security.ssl.SSLServerSocketImpl(sun.security.ssl.SSLContextImpl) throws java.io.IOException;
+  sun.security.ssl.SSLServerSocketImpl(sun.security.ssl.SSLContextImpl, int, int) throws java.io.IOException;
+  sun.security.ssl.SSLServerSocketImpl(sun.security.ssl.SSLContextImpl, int, int, java.net.InetAddress) throws java.io.IOException;
+  public synchronized java.lang.String[] getEnabledCipherSuites();
+  public synchronized void setEnabledCipherSuites(java.lang.String[]);
+  public java.lang.String[] getSupportedCipherSuites();
+  public java.lang.String[] getSupportedProtocols();
+  public synchronized java.lang.String[] getEnabledProtocols();
+  public synchronized void setEnabledProtocols(java.lang.String[]);
+  public synchronized void setNeedClientAuth(boolean);
+  public synchronized boolean getNeedClientAuth();
+  public synchronized void setWantClientAuth(boolean);
+  public synchronized boolean getWantClientAuth();
+  public synchronized void setUseClientMode(boolean);
+  public synchronized boolean getUseClientMode();
+  public synchronized void setEnableSessionCreation(boolean);
+  public synchronized boolean getEnableSessionCreation();
+  public synchronized javax.net.ssl.SSLParameters getSSLParameters();
+  public synchronized void setSSLParameters(javax.net.ssl.SSLParameters);
+  public java.net.Socket accept() throws java.io.IOException;
+  public java.lang.String toString();
+}

@@ -1,0 +1,24 @@
+Compiled from "BMPImageReader.java"
+public class com.sun.imageio.plugins.bmp.BMPImageReader extends javax.imageio.ImageReader implements com.sun.imageio.plugins.bmp.BMPConstants {
+  public com.sun.imageio.plugins.bmp.BMPImageReader(javax.imageio.spi.ImageReaderSpi);
+  public void setInput(java.lang.Object, boolean, boolean);
+  public int getNumImages(boolean) throws java.io.IOException;
+  public int getWidth(int) throws java.io.IOException;
+  public int getHeight(int) throws java.io.IOException;
+  protected void readHeader() throws java.io.IOException, java.lang.IllegalArgumentException;
+  public java.util.Iterator<javax.imageio.ImageTypeSpecifier> getImageTypes(int) throws java.io.IOException;
+  public javax.imageio.ImageReadParam getDefaultReadParam();
+  public javax.imageio.metadata.IIOMetadata getImageMetadata(int) throws java.io.IOException;
+  public javax.imageio.metadata.IIOMetadata getStreamMetadata() throws java.io.IOException;
+  public boolean isRandomAccessEasy(int) throws java.io.IOException;
+  public java.awt.image.BufferedImage read(int, javax.imageio.ImageReadParam) throws java.io.IOException;
+  public boolean canReadRaster();
+  public java.awt.image.Raster readRaster(int, javax.imageio.ImageReadParam) throws java.io.IOException;
+  public void reset();
+  static void access$000(com.sun.imageio.plugins.bmp.BMPImageReader, float);
+  static void access$100(com.sun.imageio.plugins.bmp.BMPImageReader, java.awt.image.BufferedImage, int, int, int, int, int, int, int[]);
+  static void access$200(com.sun.imageio.plugins.bmp.BMPImageReader, java.awt.image.BufferedImage);
+  static void access$300(com.sun.imageio.plugins.bmp.BMPImageReader, java.awt.image.BufferedImage, int, int, int, int, int, int, int, int[]);
+  static void access$400(com.sun.imageio.plugins.bmp.BMPImageReader, java.lang.String);
+  static {};
+}

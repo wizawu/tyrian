@@ -1,0 +1,5 @@
+Compiled from "AstDeserializer.java"
+final class jdk.nashorn.internal.runtime.AstDeserializer {
+  jdk.nashorn.internal.runtime.AstDeserializer();
+  static jdk.nashorn.internal.ir.FunctionNode deserialize(byte[]);
+}

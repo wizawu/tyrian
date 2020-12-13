@@ -1,0 +1,15 @@
+Compiled from "AuFileFormat.java"
+final class com.sun.media.sound.AuFileFormat extends com.sun.media.sound.StandardFileFormat {
+  static final int AU_SUN_MAGIC;
+  static final int AU_ULAW_8;
+  static final int AU_LINEAR_8;
+  static final int AU_LINEAR_16;
+  static final int AU_LINEAR_24;
+  static final int AU_LINEAR_32;
+  static final int AU_FLOAT;
+  static final int AU_ALAW_8;
+  static final int AU_HEADERSIZE;
+  static final long UNKNOWN_SIZE;
+  com.sun.media.sound.AuFileFormat(javax.sound.sampled.AudioFileFormat$Type, long, javax.sound.sampled.AudioFormat, long);
+  public int getAuType();
+}

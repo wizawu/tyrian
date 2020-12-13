@@ -1,0 +1,7 @@
+Compiled from "ArrayEncoder.java"
+public interface sun.nio.cs.ArrayEncoder {
+  public abstract int encode(char[], int, int, byte[]);
+  public default int encodeFromLatin1(byte[], int, int, byte[]);
+  public default int encodeFromUTF16(byte[], int, int, byte[]);
+  public default boolean isASCIICompatible();
+}

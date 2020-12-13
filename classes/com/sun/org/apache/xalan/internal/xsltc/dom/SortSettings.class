@@ -1,0 +1,10 @@
+Compiled from "SortSettings.java"
+final class com.sun.org.apache.xalan.internal.xsltc.dom.SortSettings {
+  com.sun.org.apache.xalan.internal.xsltc.dom.SortSettings(com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet, int[], int[], java.util.Locale[], java.text.Collator[], java.lang.String[]);
+  com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet getTranslet();
+  int[] getSortOrders();
+  int[] getTypes();
+  java.util.Locale[] getLocales();
+  java.text.Collator[] getCollators();
+  java.lang.String[] getCaseOrders();
+}

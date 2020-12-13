@@ -1,0 +1,6 @@
+Compiled from "DefaultPreviewPanel.java"
+class javax.swing.colorchooser.DefaultPreviewPanel extends javax.swing.JPanel {
+  javax.swing.colorchooser.DefaultPreviewPanel();
+  public java.awt.Dimension getPreferredSize();
+  public void paintComponent(java.awt.Graphics);
+}

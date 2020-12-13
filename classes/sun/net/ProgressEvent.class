@@ -1,0 +1,11 @@
+Compiled from "ProgressEvent.java"
+public class sun.net.ProgressEvent extends java.util.EventObject {
+  public sun.net.ProgressEvent(sun.net.ProgressSource, java.net.URL, java.lang.String, java.lang.String, sun.net.ProgressSource$State, long, long);
+  public java.net.URL getURL();
+  public java.lang.String getMethod();
+  public java.lang.String getContentType();
+  public long getProgress();
+  public long getExpected();
+  public sun.net.ProgressSource$State getState();
+  public java.lang.String toString();
+}

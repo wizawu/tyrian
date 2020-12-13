@@ -1,0 +1,7 @@
+Compiled from "MonitorInfo.java"
+public class java.lang.management.MonitorInfo extends java.lang.management.LockInfo {
+  public java.lang.management.MonitorInfo(java.lang.String, int, int, java.lang.StackTraceElement);
+  public int getLockedStackDepth();
+  public java.lang.StackTraceElement getLockedStackFrame();
+  public static java.lang.management.MonitorInfo from(javax.management.openmbean.CompositeData);
+}

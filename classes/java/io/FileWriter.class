@@ -1,0 +1,12 @@
+Compiled from "FileWriter.java"
+public class java.io.FileWriter extends java.io.OutputStreamWriter {
+  public java.io.FileWriter(java.lang.String) throws java.io.IOException;
+  public java.io.FileWriter(java.lang.String, boolean) throws java.io.IOException;
+  public java.io.FileWriter(java.io.File) throws java.io.IOException;
+  public java.io.FileWriter(java.io.File, boolean) throws java.io.IOException;
+  public java.io.FileWriter(java.io.FileDescriptor);
+  public java.io.FileWriter(java.lang.String, java.nio.charset.Charset) throws java.io.IOException;
+  public java.io.FileWriter(java.lang.String, java.nio.charset.Charset, boolean) throws java.io.IOException;
+  public java.io.FileWriter(java.io.File, java.nio.charset.Charset) throws java.io.IOException;
+  public java.io.FileWriter(java.io.File, java.nio.charset.Charset, boolean) throws java.io.IOException;
+}

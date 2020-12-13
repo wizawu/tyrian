@@ -1,0 +1,18 @@
+Compiled from "Code_attribute.java"
+public class com.sun.tools.classfile.Code_attribute extends com.sun.tools.classfile.Attribute {
+  public final int max_stack;
+  public final int max_locals;
+  public final int code_length;
+  public final byte[] code;
+  public final int exception_table_length;
+  public final com.sun.tools.classfile.Code_attribute$Exception_data[] exception_table;
+  public final com.sun.tools.classfile.Attributes attributes;
+  com.sun.tools.classfile.Code_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException, com.sun.tools.classfile.ConstantPoolException;
+  public int getByte(int) throws com.sun.tools.classfile.Code_attribute$InvalidIndex;
+  public int getUnsignedByte(int) throws com.sun.tools.classfile.Code_attribute$InvalidIndex;
+  public int getShort(int) throws com.sun.tools.classfile.Code_attribute$InvalidIndex;
+  public int getUnsignedShort(int) throws com.sun.tools.classfile.Code_attribute$InvalidIndex;
+  public int getInt(int) throws com.sun.tools.classfile.Code_attribute$InvalidIndex;
+  public <R, D> R accept(com.sun.tools.classfile.Attribute$Visitor<R, D>, D);
+  public java.lang.Iterable<com.sun.tools.classfile.Instruction> getInstructions();
+}

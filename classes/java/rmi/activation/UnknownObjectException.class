@@ -1,0 +1,4 @@
+Compiled from "UnknownObjectException.java"
+public class java.rmi.activation.UnknownObjectException extends java.rmi.activation.ActivationException {
+  public java.rmi.activation.UnknownObjectException(java.lang.String);
+}

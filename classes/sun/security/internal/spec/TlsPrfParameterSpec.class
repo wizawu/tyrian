@@ -1,0 +1,11 @@
+Compiled from "TlsPrfParameterSpec.java"
+public class sun.security.internal.spec.TlsPrfParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public sun.security.internal.spec.TlsPrfParameterSpec(javax.crypto.SecretKey, java.lang.String, byte[], int, java.lang.String, int, int);
+  public javax.crypto.SecretKey getSecret();
+  public java.lang.String getLabel();
+  public byte[] getSeed();
+  public int getOutputLength();
+  public java.lang.String getPRFHashAlg();
+  public int getPRFHashLength();
+  public int getPRFBlockSize();
+}

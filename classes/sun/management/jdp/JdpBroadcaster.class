@@ -1,0 +1,7 @@
+Compiled from "JdpBroadcaster.java"
+public final class sun.management.jdp.JdpBroadcaster {
+  public sun.management.jdp.JdpBroadcaster(java.net.InetAddress, java.net.InetAddress, int, int) throws java.io.IOException, sun.management.jdp.JdpException;
+  public sun.management.jdp.JdpBroadcaster(java.net.InetAddress, int, int) throws java.io.IOException, sun.management.jdp.JdpException;
+  public void sendPacket(sun.management.jdp.JdpPacket) throws java.io.IOException;
+  public void shutdown() throws java.io.IOException;
+}

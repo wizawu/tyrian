@@ -1,0 +1,15 @@
+Compiled from "DefaultSingleSelectionModel.java"
+public class javax.swing.DefaultSingleSelectionModel implements javax.swing.SingleSelectionModel,java.io.Serializable {
+  protected transient javax.swing.event.ChangeEvent changeEvent;
+  protected javax.swing.event.EventListenerList listenerList;
+  public javax.swing.DefaultSingleSelectionModel();
+  public int getSelectedIndex();
+  public void setSelectedIndex(int);
+  public void clearSelection();
+  public boolean isSelected();
+  public void addChangeListener(javax.swing.event.ChangeListener);
+  public void removeChangeListener(javax.swing.event.ChangeListener);
+  public javax.swing.event.ChangeListener[] getChangeListeners();
+  protected void fireStateChanged();
+  public <T extends java.util.EventListener> T[] getListeners(java.lang.Class<T>);
+}

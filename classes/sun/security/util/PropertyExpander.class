@@ -1,0 +1,6 @@
+Compiled from "PropertyExpander.java"
+public class sun.security.util.PropertyExpander {
+  public sun.security.util.PropertyExpander();
+  public static java.lang.String expand(java.lang.String) throws sun.security.util.PropertyExpander$ExpandException;
+  public static java.lang.String expand(java.lang.String, boolean) throws sun.security.util.PropertyExpander$ExpandException;
+}

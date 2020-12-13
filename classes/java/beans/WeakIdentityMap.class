@@ -1,0 +1,7 @@
+Compiled from "WeakIdentityMap.java"
+abstract class java.beans.WeakIdentityMap<T> {
+  java.beans.WeakIdentityMap();
+  public T get(java.lang.Object);
+  protected abstract T create(java.lang.Object);
+  static {};
+}

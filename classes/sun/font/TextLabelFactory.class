@@ -1,0 +1,9 @@
+Compiled from "TextLabelFactory.java"
+public final class sun.font.TextLabelFactory {
+  public sun.font.TextLabelFactory(java.awt.font.FontRenderContext, char[], java.text.Bidi, int);
+  public java.awt.font.FontRenderContext getFontRenderContext();
+  public java.text.Bidi getLineBidi();
+  public void setLineContext(int, int);
+  public sun.font.ExtendedTextLabel createExtended(java.awt.Font, sun.font.CoreMetrics, sun.font.Decoration, int, int);
+  public sun.font.TextLabel createSimple(java.awt.Font, sun.font.CoreMetrics, int, int);
+}

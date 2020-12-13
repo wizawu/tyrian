@@ -1,0 +1,9 @@
+Compiled from "XMLComponentManager.java"
+public interface com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager {
+  public abstract boolean getFeature(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public abstract boolean getFeature(java.lang.String, boolean);
+  public abstract java.lang.Object getProperty(java.lang.String) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public abstract java.lang.Object getProperty(java.lang.String, java.lang.Object);
+  public abstract com.sun.org.apache.xerces.internal.util.FeatureState getFeatureState(java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.util.PropertyState getPropertyState(java.lang.String);
+}

@@ -1,0 +1,15 @@
+Compiled from "ForkJoinWorkerThread.java"
+public class java.util.concurrent.ForkJoinWorkerThread extends java.lang.Thread {
+  final java.util.concurrent.ForkJoinPool pool;
+  final java.util.concurrent.ForkJoinPool$WorkQueue workQueue;
+  protected java.util.concurrent.ForkJoinWorkerThread(java.util.concurrent.ForkJoinPool);
+  java.util.concurrent.ForkJoinWorkerThread(java.util.concurrent.ForkJoinPool, java.lang.ClassLoader);
+  java.util.concurrent.ForkJoinWorkerThread(java.util.concurrent.ForkJoinPool, java.lang.ClassLoader, java.lang.ThreadGroup, java.security.AccessControlContext);
+  public java.util.concurrent.ForkJoinPool getPool();
+  public int getPoolIndex();
+  protected void onStart();
+  protected void onTermination(java.lang.Throwable);
+  public void run();
+  void afterTopLevelExec();
+  static {};
+}

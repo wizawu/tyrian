@@ -1,0 +1,28 @@
+Compiled from "AsynchronousChannelGroupImpl.java"
+abstract class sun.nio.ch.AsynchronousChannelGroupImpl extends java.nio.channels.AsynchronousChannelGroup implements java.util.concurrent.Executor {
+  sun.nio.ch.AsynchronousChannelGroupImpl(java.nio.channels.spi.AsynchronousChannelProvider, sun.nio.ch.ThreadPool);
+  final java.util.concurrent.ExecutorService executor();
+  final boolean isFixedThreadPool();
+  final int fixedThreadCount();
+  protected final void startThreads(java.lang.Runnable);
+  final int threadCount();
+  final int threadExit(java.lang.Runnable, boolean);
+  abstract void executeOnHandlerTask(java.lang.Runnable);
+  final void executeOnPooledThread(java.lang.Runnable);
+  final void offerTask(java.lang.Runnable);
+  final java.lang.Runnable pollTask();
+  final java.util.concurrent.Future<?> schedule(java.lang.Runnable, long, java.util.concurrent.TimeUnit);
+  public final boolean isShutdown();
+  public final boolean isTerminated();
+  abstract boolean isEmpty();
+  abstract java.lang.Object attachForeignChannel(java.nio.channels.Channel, java.io.FileDescriptor) throws java.io.IOException;
+  abstract void detachForeignChannel(java.lang.Object);
+  abstract void closeAllChannels() throws java.io.IOException;
+  abstract void shutdownHandlerTasks();
+  public final void shutdown();
+  public final void shutdownNow() throws java.io.IOException;
+  final void detachFromThreadPool();
+  public final boolean awaitTermination(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public final void execute(java.lang.Runnable);
+  static {};
+}

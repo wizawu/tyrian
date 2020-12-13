@@ -1,0 +1,18 @@
+Compiled from "ConstantPool.java"
+public class com.sun.org.apache.bcel.internal.classfile.ConstantPool implements java.lang.Cloneable,com.sun.org.apache.bcel.internal.classfile.Node {
+  public com.sun.org.apache.bcel.internal.classfile.ConstantPool(com.sun.org.apache.bcel.internal.classfile.Constant[]);
+  public com.sun.org.apache.bcel.internal.classfile.ConstantPool(java.io.DataInput) throws java.io.IOException, com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public java.lang.String constantToString(com.sun.org.apache.bcel.internal.classfile.Constant) throws com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
+  public java.lang.String constantToString(int, byte) throws com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.Constant getConstant(int);
+  public com.sun.org.apache.bcel.internal.classfile.Constant getConstant(int, byte) throws com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
+  public com.sun.org.apache.bcel.internal.classfile.Constant[] getConstantPool();
+  public java.lang.String getConstantString(int, byte) throws com.sun.org.apache.bcel.internal.classfile.ClassFormatException;
+  public int getLength();
+  public void setConstant(int, com.sun.org.apache.bcel.internal.classfile.Constant);
+  public void setConstantPool(com.sun.org.apache.bcel.internal.classfile.Constant[]);
+  public java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.classfile.ConstantPool copy();
+}

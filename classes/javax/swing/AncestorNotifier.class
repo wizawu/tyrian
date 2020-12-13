@@ -1,0 +1,21 @@
+Compiled from "AncestorNotifier.java"
+class javax.swing.AncestorNotifier implements java.awt.event.ComponentListener,java.beans.PropertyChangeListener,java.io.Serializable {
+  transient java.awt.Component firstInvisibleAncestor;
+  javax.swing.event.EventListenerList listenerList;
+  javax.swing.JComponent root;
+  javax.swing.AncestorNotifier(javax.swing.JComponent);
+  void addAncestorListener(javax.swing.event.AncestorListener);
+  void removeAncestorListener(javax.swing.event.AncestorListener);
+  javax.swing.event.AncestorListener[] getAncestorListeners();
+  protected void fireAncestorAdded(javax.swing.JComponent, int, java.awt.Container, java.awt.Container);
+  protected void fireAncestorRemoved(javax.swing.JComponent, int, java.awt.Container, java.awt.Container);
+  protected void fireAncestorMoved(javax.swing.JComponent, int, java.awt.Container, java.awt.Container);
+  void removeAllListeners();
+  void addListeners(java.awt.Component, boolean);
+  void removeListeners(java.awt.Component);
+  public void componentResized(java.awt.event.ComponentEvent);
+  public void componentMoved(java.awt.event.ComponentEvent);
+  public void componentShown(java.awt.event.ComponentEvent);
+  public void componentHidden(java.awt.event.ComponentEvent);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+}

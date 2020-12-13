@@ -1,0 +1,6 @@
+Compiled from "JavaNioAccess.java"
+public interface jdk.internal.misc.JavaNioAccess {
+  public abstract jdk.internal.misc.JavaNioAccess$BufferPool getDirectBufferPool();
+  public abstract java.nio.ByteBuffer newDirectByteBuffer(long, int, java.lang.Object);
+  public abstract void truncate(java.nio.Buffer);
+}

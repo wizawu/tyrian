@@ -1,0 +1,5 @@
+Compiled from "ReflectPermission.java"
+public final class java.lang.reflect.ReflectPermission extends java.security.BasicPermission {
+  public java.lang.reflect.ReflectPermission(java.lang.String);
+  public java.lang.reflect.ReflectPermission(java.lang.String, java.lang.String);
+}

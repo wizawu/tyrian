@@ -1,0 +1,5 @@
+Compiled from "SignatureException.java"
+final class com.sun.beans.finder.SignatureException extends java.lang.RuntimeException {
+  com.sun.beans.finder.SignatureException(java.lang.Throwable);
+  java.lang.NoSuchMethodException toNoSuchMethodException(java.lang.String);
+}

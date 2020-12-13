@@ -1,0 +1,10 @@
+Compiled from "SearchResult.java"
+public class javax.naming.directory.SearchResult extends javax.naming.Binding {
+  public javax.naming.directory.SearchResult(java.lang.String, java.lang.Object, javax.naming.directory.Attributes);
+  public javax.naming.directory.SearchResult(java.lang.String, java.lang.Object, javax.naming.directory.Attributes, boolean);
+  public javax.naming.directory.SearchResult(java.lang.String, java.lang.String, java.lang.Object, javax.naming.directory.Attributes);
+  public javax.naming.directory.SearchResult(java.lang.String, java.lang.String, java.lang.Object, javax.naming.directory.Attributes, boolean);
+  public javax.naming.directory.Attributes getAttributes();
+  public void setAttributes(javax.naming.directory.Attributes);
+  public java.lang.String toString();
+}

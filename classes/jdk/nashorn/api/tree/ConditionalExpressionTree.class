@@ -1,0 +1,6 @@
+Compiled from "ConditionalExpressionTree.java"
+public interface jdk.nashorn.api.tree.ConditionalExpressionTree extends jdk.nashorn.api.tree.ExpressionTree {
+  public abstract jdk.nashorn.api.tree.ExpressionTree getCondition();
+  public abstract jdk.nashorn.api.tree.ExpressionTree getTrueExpression();
+  public abstract jdk.nashorn.api.tree.ExpressionTree getFalseExpression();
+}

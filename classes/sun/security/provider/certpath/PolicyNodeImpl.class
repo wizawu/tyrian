@@ -1,0 +1,23 @@
+Compiled from "PolicyNodeImpl.java"
+final class sun.security.provider.certpath.PolicyNodeImpl implements java.security.cert.PolicyNode {
+  sun.security.provider.certpath.PolicyNodeImpl(sun.security.provider.certpath.PolicyNodeImpl, java.lang.String, java.util.Set<java.security.cert.PolicyQualifierInfo>, boolean, java.util.Set<java.lang.String>, boolean);
+  sun.security.provider.certpath.PolicyNodeImpl(sun.security.provider.certpath.PolicyNodeImpl, sun.security.provider.certpath.PolicyNodeImpl);
+  public java.security.cert.PolicyNode getParent();
+  public java.util.Iterator<sun.security.provider.certpath.PolicyNodeImpl> getChildren();
+  public int getDepth();
+  public java.lang.String getValidPolicy();
+  public java.util.Set<java.security.cert.PolicyQualifierInfo> getPolicyQualifiers();
+  public java.util.Set<java.lang.String> getExpectedPolicies();
+  public boolean isCritical();
+  public java.lang.String toString();
+  boolean isImmutable();
+  void setImmutable();
+  void addExpectedPolicy(java.lang.String);
+  void prune(int);
+  void deleteChild(java.security.cert.PolicyNode);
+  sun.security.provider.certpath.PolicyNodeImpl copyTree();
+  java.util.Set<sun.security.provider.certpath.PolicyNodeImpl> getPolicyNodes(int);
+  java.util.Set<sun.security.provider.certpath.PolicyNodeImpl> getPolicyNodesExpected(int, java.lang.String, boolean);
+  java.util.Set<sun.security.provider.certpath.PolicyNodeImpl> getPolicyNodesValid(int, java.lang.String);
+  java.lang.String asString();
+}

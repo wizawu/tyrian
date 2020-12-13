@@ -1,0 +1,7 @@
+Compiled from "WindowsAMD64CFrame.java"
+public class sun.jvm.hotspot.debugger.windows.amd64.WindowsAMD64CFrame extends sun.jvm.hotspot.debugger.cdbg.basic.BasicCFrame {
+  public sun.jvm.hotspot.debugger.windows.amd64.WindowsAMD64CFrame(sun.jvm.hotspot.debugger.windbg.WindbgDebugger, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.cdbg.CFrame sender(sun.jvm.hotspot.debugger.ThreadProxy);
+  public sun.jvm.hotspot.debugger.Address pc();
+  public sun.jvm.hotspot.debugger.Address localVariableBase();
+}

@@ -1,0 +1,6 @@
+Compiled from "OverloadedMethod.java"
+class jdk.dynalink.beans.OverloadedMethod {
+  jdk.dynalink.beans.OverloadedMethod(java.util.List<java.lang.invoke.MethodHandle>, jdk.dynalink.beans.OverloadedDynamicMethod, java.lang.ClassLoader, java.lang.invoke.MethodType, jdk.dynalink.linker.LinkerServices, jdk.dynalink.SecureLookupSupplier);
+  java.lang.invoke.MethodHandle getInvoker();
+  static {};
+}

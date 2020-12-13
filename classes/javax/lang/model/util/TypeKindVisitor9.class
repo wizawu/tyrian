@@ -1,0 +1,6 @@
+Compiled from "TypeKindVisitor9.java"
+public class javax.lang.model.util.TypeKindVisitor9<R, P> extends javax.lang.model.util.TypeKindVisitor8<R, P> {
+  protected javax.lang.model.util.TypeKindVisitor9();
+  protected javax.lang.model.util.TypeKindVisitor9(R);
+  public R visitNoTypeAsModule(javax.lang.model.type.NoType, P);
+}

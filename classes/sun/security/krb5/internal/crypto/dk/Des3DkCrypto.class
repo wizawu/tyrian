@@ -1,0 +1,12 @@
+Compiled from "Des3DkCrypto.java"
+public class sun.security.krb5.internal.crypto.dk.Des3DkCrypto extends sun.security.krb5.internal.crypto.dk.DkCrypto {
+  public sun.security.krb5.internal.crypto.dk.Des3DkCrypto();
+  protected int getKeySeedLength();
+  public byte[] stringToKey(char[]) throws java.security.GeneralSecurityException;
+  public byte[] parityFix(byte[]) throws java.security.GeneralSecurityException;
+  protected byte[] randomToKey(byte[]);
+  protected javax.crypto.Cipher getCipher(byte[], byte[], int) throws java.security.GeneralSecurityException;
+  public int getChecksumLength();
+  protected byte[] getHmac(byte[], byte[]) throws java.security.GeneralSecurityException;
+  static {};
+}

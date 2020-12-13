@@ -1,0 +1,17 @@
+Compiled from "XAtomList.java"
+class sun.awt.X11.XAtomList {
+  java.util.Set<sun.awt.X11.XAtom> atoms;
+  public sun.awt.X11.XAtomList();
+  public sun.awt.X11.XAtomList(long, int);
+  public sun.awt.X11.XAtomList(sun.awt.X11.XAtom[]);
+  public sun.awt.X11.XAtom[] getAtoms();
+  public long getAtomsData();
+  public boolean contains(sun.awt.X11.XAtom);
+  public void add(sun.awt.X11.XAtom);
+  public void remove(sun.awt.X11.XAtom);
+  public int size();
+  public sun.awt.X11.XAtomList subset(int, java.util.Map<java.lang.Integer, sun.awt.X11.XAtom>);
+  public java.util.Iterator<sun.awt.X11.XAtom> iterator();
+  public void addAll(sun.awt.X11.XAtomList);
+  public java.lang.String toString();
+}

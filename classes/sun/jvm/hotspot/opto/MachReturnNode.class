@@ -1,0 +1,5 @@
+Compiled from "MachReturnNode.java"
+public class sun.jvm.hotspot.opto.MachReturnNode extends sun.jvm.hotspot.opto.MachNode {
+  public sun.jvm.hotspot.opto.MachReturnNode(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

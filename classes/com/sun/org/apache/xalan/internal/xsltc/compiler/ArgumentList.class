@@ -1,0 +1,5 @@
+Compiled from "ArgumentList.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.ArgumentList {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.ArgumentList(com.sun.org.apache.xalan.internal.xsltc.compiler.Expression, com.sun.org.apache.xalan.internal.xsltc.compiler.ArgumentList);
+  public java.lang.String toString();
+}

@@ -1,0 +1,13 @@
+Compiled from "CSSStyleDeclaration.java"
+public interface org.w3c.dom.css.CSSStyleDeclaration {
+  public abstract java.lang.String getCssText();
+  public abstract void setCssText(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract java.lang.String getPropertyValue(java.lang.String);
+  public abstract org.w3c.dom.css.CSSValue getPropertyCSSValue(java.lang.String);
+  public abstract java.lang.String removeProperty(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract java.lang.String getPropertyPriority(java.lang.String);
+  public abstract void setProperty(java.lang.String, java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract int getLength();
+  public abstract java.lang.String item(int);
+  public abstract org.w3c.dom.css.CSSRule getParentRule();
+}

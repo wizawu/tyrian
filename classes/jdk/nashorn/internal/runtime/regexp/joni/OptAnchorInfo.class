@@ -1,0 +1,15 @@
+Compiled from "OptAnchorInfo.java"
+final class jdk.nashorn.internal.runtime.regexp.joni.OptAnchorInfo implements jdk.nashorn.internal.runtime.regexp.joni.constants.AnchorType {
+  int leftAnchor;
+  int rightAnchor;
+  jdk.nashorn.internal.runtime.regexp.joni.OptAnchorInfo();
+  void clear();
+  void copy(jdk.nashorn.internal.runtime.regexp.joni.OptAnchorInfo);
+  void concat(jdk.nashorn.internal.runtime.regexp.joni.OptAnchorInfo, jdk.nashorn.internal.runtime.regexp.joni.OptAnchorInfo, int, int);
+  boolean isSet(int);
+  void add(int);
+  void remove(int);
+  void altMerge(jdk.nashorn.internal.runtime.regexp.joni.OptAnchorInfo);
+  static boolean isLeftAnchor(int);
+  static java.lang.String anchorToString(int);
+}

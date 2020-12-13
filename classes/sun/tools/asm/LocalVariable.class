@@ -1,0 +1,10 @@
+Compiled from "LocalVariable.java"
+public final class sun.tools.asm.LocalVariable {
+  sun.tools.java.MemberDefinition field;
+  int slot;
+  int from;
+  int to;
+  public sun.tools.asm.LocalVariable(sun.tools.java.MemberDefinition, int);
+  sun.tools.asm.LocalVariable(sun.tools.java.MemberDefinition, int, int, int);
+  public java.lang.String toString();
+}

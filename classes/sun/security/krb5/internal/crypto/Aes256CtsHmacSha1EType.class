@@ -1,0 +1,17 @@
+Compiled from "Aes256CtsHmacSha1EType.java"
+public final class sun.security.krb5.internal.crypto.Aes256CtsHmacSha1EType extends sun.security.krb5.internal.crypto.EType {
+  public sun.security.krb5.internal.crypto.Aes256CtsHmacSha1EType();
+  public int eType();
+  public int minimumPadSize();
+  public int confounderSize();
+  public int checksumType();
+  public int checksumSize();
+  public int blockSize();
+  public int keyType();
+  public int keySize();
+  public byte[] encrypt(byte[], byte[], int) throws sun.security.krb5.KrbCryptoException;
+  public byte[] encrypt(byte[], byte[], byte[], int) throws sun.security.krb5.KrbCryptoException;
+  public byte[] decrypt(byte[], byte[], int) throws sun.security.krb5.internal.KrbApErrException, sun.security.krb5.KrbCryptoException;
+  public byte[] decrypt(byte[], byte[], byte[], int) throws sun.security.krb5.internal.KrbApErrException, sun.security.krb5.KrbCryptoException;
+  public byte[] decryptedData(byte[]);
+}

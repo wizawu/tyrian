@@ -1,0 +1,5 @@
+Compiled from "JdkLDAP.java"
+public final class sun.security.provider.certpath.ldap.JdkLDAP extends java.security.Provider {
+  public sun.security.provider.certpath.ldap.JdkLDAP();
+  static void access$000(sun.security.provider.certpath.ldap.JdkLDAP, java.security.Provider$Service);
+}

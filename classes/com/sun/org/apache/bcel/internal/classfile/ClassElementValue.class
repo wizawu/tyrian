@@ -1,0 +1,8 @@
+Compiled from "ClassElementValue.java"
+public class com.sun.org.apache.bcel.internal.classfile.ClassElementValue extends com.sun.org.apache.bcel.internal.classfile.ElementValue {
+  public com.sun.org.apache.bcel.internal.classfile.ClassElementValue(int, int, com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public int getIndex();
+  public java.lang.String getClassString();
+  public java.lang.String stringifyValue();
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+}

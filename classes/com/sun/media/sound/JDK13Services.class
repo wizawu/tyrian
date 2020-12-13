@@ -1,0 +1,6 @@
+Compiled from "JDK13Services.java"
+public final class com.sun.media.sound.JDK13Services {
+  public static java.util.List<?> getProviders(java.lang.Class<?>);
+  public static synchronized java.lang.String getDefaultProviderClassName(java.lang.Class<?>);
+  public static synchronized java.lang.String getDefaultInstanceName(java.lang.Class<?>);
+}

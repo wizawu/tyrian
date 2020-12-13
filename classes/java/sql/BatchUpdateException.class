@@ -1,0 +1,16 @@
+Compiled from "BatchUpdateException.java"
+public class java.sql.BatchUpdateException extends java.sql.SQLException {
+  public java.sql.BatchUpdateException(java.lang.String, java.lang.String, int, int[]);
+  public java.sql.BatchUpdateException(java.lang.String, java.lang.String, int[]);
+  public java.sql.BatchUpdateException(java.lang.String, int[]);
+  public java.sql.BatchUpdateException(int[]);
+  public java.sql.BatchUpdateException();
+  public java.sql.BatchUpdateException(java.lang.Throwable);
+  public java.sql.BatchUpdateException(int[], java.lang.Throwable);
+  public java.sql.BatchUpdateException(java.lang.String, int[], java.lang.Throwable);
+  public java.sql.BatchUpdateException(java.lang.String, java.lang.String, int[], java.lang.Throwable);
+  public java.sql.BatchUpdateException(java.lang.String, java.lang.String, int, int[], java.lang.Throwable);
+  public int[] getUpdateCounts();
+  public java.sql.BatchUpdateException(java.lang.String, java.lang.String, int, long[], java.lang.Throwable);
+  public long[] getLargeUpdateCounts();
+}

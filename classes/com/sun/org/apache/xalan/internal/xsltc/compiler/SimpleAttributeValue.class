@@ -1,0 +1,8 @@
+Compiled from "SimpleAttributeValue.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.SimpleAttributeValue extends com.sun.org.apache.xalan.internal.xsltc.compiler.AttributeValue {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.SimpleAttributeValue(java.lang.String);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public java.lang.String toString();
+  protected boolean contextDependent();
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

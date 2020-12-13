@@ -1,0 +1,7 @@
+Compiled from "AbstractSelectionKey.java"
+public abstract class java.nio.channels.spi.AbstractSelectionKey extends java.nio.channels.SelectionKey {
+  protected java.nio.channels.spi.AbstractSelectionKey();
+  public final boolean isValid();
+  void invalidate();
+  public final void cancel();
+}

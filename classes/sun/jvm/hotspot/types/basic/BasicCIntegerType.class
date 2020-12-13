@@ -1,0 +1,11 @@
+Compiled from "BasicCIntegerType.java"
+public class sun.jvm.hotspot.types.basic.BasicCIntegerType extends sun.jvm.hotspot.types.basic.BasicType implements sun.jvm.hotspot.types.CIntegerType {
+  public sun.jvm.hotspot.types.basic.BasicCIntegerType(sun.jvm.hotspot.types.basic.BasicTypeDataBase, java.lang.String, boolean);
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+  public boolean isCIntegerType();
+  public boolean isUnsigned();
+  public void setIsUnsigned(boolean);
+  public long maxValue();
+  public long minValue();
+}

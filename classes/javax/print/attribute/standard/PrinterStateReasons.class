@@ -1,0 +1,12 @@
+Compiled from "PrinterStateReasons.java"
+public final class javax.print.attribute.standard.PrinterStateReasons extends java.util.HashMap<javax.print.attribute.standard.PrinterStateReason, javax.print.attribute.standard.Severity> implements javax.print.attribute.PrintServiceAttribute {
+  public javax.print.attribute.standard.PrinterStateReasons();
+  public javax.print.attribute.standard.PrinterStateReasons(int);
+  public javax.print.attribute.standard.PrinterStateReasons(int, float);
+  public javax.print.attribute.standard.PrinterStateReasons(java.util.Map<javax.print.attribute.standard.PrinterStateReason, javax.print.attribute.standard.Severity>);
+  public javax.print.attribute.standard.Severity put(javax.print.attribute.standard.PrinterStateReason, javax.print.attribute.standard.Severity);
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  public java.util.Set<javax.print.attribute.standard.PrinterStateReason> printerStateReasonSet(javax.print.attribute.standard.Severity);
+  public java.lang.Object put(java.lang.Object, java.lang.Object);
+}

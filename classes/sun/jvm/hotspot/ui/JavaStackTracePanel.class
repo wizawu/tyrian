@@ -1,0 +1,5 @@
+Compiled from "JavaStackTracePanel.java"
+public class sun.jvm.hotspot.ui.JavaStackTracePanel extends javax.swing.JPanel {
+  public sun.jvm.hotspot.ui.JavaStackTracePanel();
+  public void setJavaThread(sun.jvm.hotspot.runtime.JavaThread);
+}

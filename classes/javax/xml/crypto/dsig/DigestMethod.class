@@ -1,0 +1,14 @@
+Compiled from "DigestMethod.java"
+public interface javax.xml.crypto.dsig.DigestMethod extends javax.xml.crypto.XMLStructure,javax.xml.crypto.AlgorithmMethod {
+  public static final java.lang.String SHA1;
+  public static final java.lang.String SHA224;
+  public static final java.lang.String SHA256;
+  public static final java.lang.String SHA384;
+  public static final java.lang.String SHA512;
+  public static final java.lang.String RIPEMD160;
+  public static final java.lang.String SHA3_224;
+  public static final java.lang.String SHA3_256;
+  public static final java.lang.String SHA3_384;
+  public static final java.lang.String SHA3_512;
+  public abstract java.security.spec.AlgorithmParameterSpec getParameterSpec();
+}

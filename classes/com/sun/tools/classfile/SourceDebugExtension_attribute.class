@@ -1,0 +1,10 @@
+Compiled from "SourceDebugExtension_attribute.java"
+public class com.sun.tools.classfile.SourceDebugExtension_attribute extends com.sun.tools.classfile.Attribute {
+  public final byte[] debug_extension;
+  com.sun.tools.classfile.SourceDebugExtension_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException;
+  public com.sun.tools.classfile.SourceDebugExtension_attribute(com.sun.tools.classfile.ConstantPool, byte[]) throws com.sun.tools.classfile.ConstantPoolException;
+  public com.sun.tools.classfile.SourceDebugExtension_attribute(int, byte[]);
+  public java.lang.String getValue();
+  public <R, D> R accept(com.sun.tools.classfile.Attribute$Visitor<R, D>, D);
+  static {};
+}

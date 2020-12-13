@@ -1,0 +1,5 @@
+Compiled from "NotBoundException.java"
+public class java.rmi.NotBoundException extends java.lang.Exception {
+  public java.rmi.NotBoundException();
+  public java.rmi.NotBoundException(java.lang.String);
+}

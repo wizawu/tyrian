@@ -1,0 +1,9 @@
+Compiled from "Class2HTML.java"
+public class com.sun.org.apache.bcel.internal.util.Class2HTML {
+  public com.sun.org.apache.bcel.internal.util.Class2HTML(com.sun.org.apache.bcel.internal.classfile.JavaClass, java.lang.String) throws java.io.IOException;
+  public static void main(java.lang.String[]) throws java.io.IOException;
+  static java.lang.String referenceClass(int);
+  static java.lang.String referenceType(java.lang.String);
+  static java.lang.String toHTML(java.lang.String);
+  static {};
+}

@@ -1,0 +1,11 @@
+Compiled from "NestingKind.java"
+public final class javax.lang.model.element.NestingKind extends java.lang.Enum<javax.lang.model.element.NestingKind> {
+  public static final javax.lang.model.element.NestingKind TOP_LEVEL;
+  public static final javax.lang.model.element.NestingKind MEMBER;
+  public static final javax.lang.model.element.NestingKind LOCAL;
+  public static final javax.lang.model.element.NestingKind ANONYMOUS;
+  public static javax.lang.model.element.NestingKind[] values();
+  public static javax.lang.model.element.NestingKind valueOf(java.lang.String);
+  public boolean isNested();
+  static {};
+}

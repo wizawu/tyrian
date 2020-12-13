@@ -1,0 +1,4 @@
+Compiled from "ElementCSSInlineStyle.java"
+public interface org.w3c.dom.css.ElementCSSInlineStyle {
+  public abstract org.w3c.dom.css.CSSStyleDeclaration getStyle();
+}

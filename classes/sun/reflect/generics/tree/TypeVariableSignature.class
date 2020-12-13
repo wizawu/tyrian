@@ -1,0 +1,6 @@
+Compiled from "TypeVariableSignature.java"
+public class sun.reflect.generics.tree.TypeVariableSignature implements sun.reflect.generics.tree.FieldTypeSignature {
+  public static sun.reflect.generics.tree.TypeVariableSignature make(java.lang.String);
+  public java.lang.String getIdentifier();
+  public void accept(sun.reflect.generics.visitor.TypeTreeVisitor<?>);
+}

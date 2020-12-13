@@ -1,0 +1,7 @@
+Compiled from "SocketHandler.java"
+public class java.util.logging.SocketHandler extends java.util.logging.StreamHandler {
+  public java.util.logging.SocketHandler() throws java.io.IOException;
+  public java.util.logging.SocketHandler(java.lang.String, int) throws java.io.IOException;
+  public synchronized void close() throws java.lang.SecurityException;
+  public synchronized void publish(java.util.logging.LogRecord);
+}

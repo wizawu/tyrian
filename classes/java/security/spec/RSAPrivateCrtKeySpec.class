@@ -1,0 +1,11 @@
+Compiled from "RSAPrivateCrtKeySpec.java"
+public class java.security.spec.RSAPrivateCrtKeySpec extends java.security.spec.RSAPrivateKeySpec {
+  public java.security.spec.RSAPrivateCrtKeySpec(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger);
+  public java.security.spec.RSAPrivateCrtKeySpec(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.security.spec.AlgorithmParameterSpec);
+  public java.math.BigInteger getPublicExponent();
+  public java.math.BigInteger getPrimeP();
+  public java.math.BigInteger getPrimeQ();
+  public java.math.BigInteger getPrimeExponentP();
+  public java.math.BigInteger getPrimeExponentQ();
+  public java.math.BigInteger getCrtCoefficient();
+}

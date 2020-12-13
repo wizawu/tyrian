@@ -1,0 +1,11 @@
+Compiled from "Acl.java"
+public interface java.security.acl.Acl extends java.security.acl.Owner {
+  public abstract void setName(java.security.Principal, java.lang.String) throws java.security.acl.NotOwnerException;
+  public abstract java.lang.String getName();
+  public abstract boolean addEntry(java.security.Principal, java.security.acl.AclEntry) throws java.security.acl.NotOwnerException;
+  public abstract boolean removeEntry(java.security.Principal, java.security.acl.AclEntry) throws java.security.acl.NotOwnerException;
+  public abstract java.util.Enumeration<java.security.acl.Permission> getPermissions(java.security.Principal);
+  public abstract java.util.Enumeration<java.security.acl.AclEntry> entries();
+  public abstract boolean checkPermission(java.security.Principal, java.security.acl.Permission);
+  public abstract java.lang.String toString();
+}

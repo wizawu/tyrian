@@ -1,0 +1,10 @@
+Compiled from "EntityResolver2Wrapper.java"
+public class com.sun.org.apache.xerces.internal.util.EntityResolver2Wrapper implements com.sun.org.apache.xerces.internal.impl.ExternalSubsetResolver {
+  protected org.xml.sax.ext.EntityResolver2 fEntityResolver;
+  public com.sun.org.apache.xerces.internal.util.EntityResolver2Wrapper();
+  public com.sun.org.apache.xerces.internal.util.EntityResolver2Wrapper(org.xml.sax.ext.EntityResolver2);
+  public void setEntityResolver(org.xml.sax.ext.EntityResolver2);
+  public org.xml.sax.ext.EntityResolver2 getEntityResolver();
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource getExternalSubset(com.sun.org.apache.xerces.internal.xni.grammars.XMLDTDDescription) throws com.sun.org.apache.xerces.internal.xni.XNIException, java.io.IOException;
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource resolveEntity(com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier) throws com.sun.org.apache.xerces.internal.xni.XNIException, java.io.IOException;
+}

@@ -1,0 +1,28 @@
+Compiled from "SinglePixelPackedSampleModel.java"
+public class java.awt.image.SinglePixelPackedSampleModel extends java.awt.image.SampleModel {
+  public java.awt.image.SinglePixelPackedSampleModel(int, int, int, int[]);
+  public java.awt.image.SinglePixelPackedSampleModel(int, int, int, int, int[]);
+  public int getNumDataElements();
+  public java.awt.image.SampleModel createCompatibleSampleModel(int, int);
+  public java.awt.image.DataBuffer createDataBuffer();
+  public int[] getSampleSize();
+  public int getSampleSize(int);
+  public int getOffset(int, int);
+  public int[] getBitOffsets();
+  public int[] getBitMasks();
+  public int getScanlineStride();
+  public java.awt.image.SampleModel createSubsetSampleModel(int[]);
+  public java.lang.Object getDataElements(int, int, java.lang.Object, java.awt.image.DataBuffer);
+  public int[] getPixel(int, int, int[], java.awt.image.DataBuffer);
+  public int[] getPixels(int, int, int, int, int[], java.awt.image.DataBuffer);
+  public int getSample(int, int, int, java.awt.image.DataBuffer);
+  public int[] getSamples(int, int, int, int, int, int[], java.awt.image.DataBuffer);
+  public void setDataElements(int, int, java.lang.Object, java.awt.image.DataBuffer);
+  public void setPixel(int, int, int[], java.awt.image.DataBuffer);
+  public void setPixels(int, int, int, int, int[], java.awt.image.DataBuffer);
+  public void setSample(int, int, int, int, java.awt.image.DataBuffer);
+  public void setSamples(int, int, int, int, int, int[], java.awt.image.DataBuffer);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

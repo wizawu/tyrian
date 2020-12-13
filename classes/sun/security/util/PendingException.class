@@ -1,0 +1,5 @@
+Compiled from "PendingException.java"
+public class sun.security.util.PendingException extends java.lang.RuntimeException {
+  public sun.security.util.PendingException();
+  public sun.security.util.PendingException(java.lang.String);
+}

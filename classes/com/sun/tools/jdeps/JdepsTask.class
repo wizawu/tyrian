@@ -1,0 +1,17 @@
+Compiled from "JdepsTask.java"
+class com.sun.tools.jdeps.JdepsTask {
+  static com.sun.tools.jdeps.JdepsTask$Option[] recognizedOptions;
+  static final int EXIT_OK;
+  static final int EXIT_ERROR;
+  static final int EXIT_CMDERR;
+  static final int EXIT_SYSERR;
+  static final int EXIT_ABNORMAL;
+  com.sun.tools.jdeps.JdepsTask();
+  void setLog(java.io.PrintWriter);
+  int run(java.lang.String...);
+  boolean run() throws java.io.IOException;
+  public void handleOptions(java.lang.String[]) throws com.sun.tools.jdeps.JdepsTask$BadArgs;
+  void warning(java.lang.String, java.lang.Object...);
+  static java.lang.String getMessage(java.lang.String, java.lang.Object...);
+  static {};
+}

@@ -1,0 +1,42 @@
+Compiled from "SecurityConstants.java"
+public final class sun.security.util.SecurityConstants {
+  public static final java.lang.String FILE_DELETE_ACTION;
+  public static final java.lang.String FILE_EXECUTE_ACTION;
+  public static final java.lang.String FILE_READ_ACTION;
+  public static final java.lang.String FILE_WRITE_ACTION;
+  public static final java.lang.String FILE_READLINK_ACTION;
+  public static final java.lang.String SOCKET_RESOLVE_ACTION;
+  public static final java.lang.String SOCKET_CONNECT_ACTION;
+  public static final java.lang.String SOCKET_LISTEN_ACTION;
+  public static final java.lang.String SOCKET_ACCEPT_ACTION;
+  public static final java.lang.String SOCKET_CONNECT_ACCEPT_ACTION;
+  public static final java.lang.String PROPERTY_RW_ACTION;
+  public static final java.lang.String PROPERTY_READ_ACTION;
+  public static final java.lang.String PROPERTY_WRITE_ACTION;
+  public static final java.security.AllPermission ALL_PERMISSION;
+  public static final java.net.NetPermission SPECIFY_HANDLER_PERMISSION;
+  public static final java.net.NetPermission SET_PROXYSELECTOR_PERMISSION;
+  public static final java.net.NetPermission GET_PROXYSELECTOR_PERMISSION;
+  public static final java.net.NetPermission SET_COOKIEHANDLER_PERMISSION;
+  public static final java.net.NetPermission GET_COOKIEHANDLER_PERMISSION;
+  public static final java.net.NetPermission SET_RESPONSECACHE_PERMISSION;
+  public static final java.net.NetPermission GET_RESPONSECACHE_PERMISSION;
+  public static final java.net.NetPermission SET_SOCKETIMPL_PERMISSION;
+  public static final java.lang.RuntimePermission CREATE_CLASSLOADER_PERMISSION;
+  public static final java.lang.RuntimePermission CHECK_MEMBER_ACCESS_PERMISSION;
+  public static final java.lang.RuntimePermission MODIFY_THREAD_PERMISSION;
+  public static final java.lang.RuntimePermission MODIFY_THREADGROUP_PERMISSION;
+  public static final java.lang.RuntimePermission GET_PD_PERMISSION;
+  public static final java.lang.RuntimePermission GET_CLASSLOADER_PERMISSION;
+  public static final java.lang.RuntimePermission STOP_THREAD_PERMISSION;
+  public static final java.lang.RuntimePermission GET_STACK_TRACE_PERMISSION;
+  public static final java.lang.RuntimePermission SUBCLASS_IMPLEMENTATION_PERMISSION;
+  public static final java.security.SecurityPermission CREATE_ACC_PERMISSION;
+  public static final java.security.SecurityPermission GET_COMBINER_PERMISSION;
+  public static final java.security.SecurityPermission GET_POLICY_PERMISSION;
+  public static final java.net.SocketPermission LOCAL_LISTEN_PERMISSION;
+  public static final java.lang.String PROVIDER_VER;
+  public static final java.lang.reflect.ReflectPermission ACCESS_PERMISSION;
+  public static final java.lang.RuntimePermission REFLECTION_FACTORY_ACCESS_PERMISSION;
+  static {};
+}

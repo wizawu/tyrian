@@ -1,0 +1,6 @@
+Compiled from "StoreInstruction.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.StoreInstruction extends com.sun.org.apache.bcel.internal.generic.LocalVariableInstruction implements com.sun.org.apache.bcel.internal.generic.PopInstruction {
+  com.sun.org.apache.bcel.internal.generic.StoreInstruction(short, short);
+  protected com.sun.org.apache.bcel.internal.generic.StoreInstruction(short, short, int);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

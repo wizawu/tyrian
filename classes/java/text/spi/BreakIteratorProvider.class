@@ -1,0 +1,8 @@
+Compiled from "BreakIteratorProvider.java"
+public abstract class java.text.spi.BreakIteratorProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.text.spi.BreakIteratorProvider();
+  public abstract java.text.BreakIterator getWordInstance(java.util.Locale);
+  public abstract java.text.BreakIterator getLineInstance(java.util.Locale);
+  public abstract java.text.BreakIterator getCharacterInstance(java.util.Locale);
+  public abstract java.text.BreakIterator getSentenceInstance(java.util.Locale);
+}

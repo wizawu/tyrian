@@ -1,0 +1,25 @@
+Compiled from "DDasher.java"
+final class sun.java2d.marlin.DDasher implements sun.java2d.marlin.DPathConsumer2D,sun.java2d.marlin.MarlinConst {
+  static final int REC_LIMIT;
+  static final double CURVE_LEN_ERR;
+  static final double MIN_T_INC;
+  static final double EPS;
+  static final double MAX_CYCLES;
+  final sun.java2d.marlin.DRendererContext rdrCtx;
+  boolean recycleDashes;
+  final sun.java2d.marlin.DoubleArrayCache$Reference dashes_ref;
+  final sun.java2d.marlin.DoubleArrayCache$Reference firstSegmentsBuffer_ref;
+  sun.java2d.marlin.DDasher(sun.java2d.marlin.DRendererContext);
+  sun.java2d.marlin.DDasher init(sun.java2d.marlin.DPathConsumer2D, double[], int, double, boolean);
+  void dispose();
+  double[] copyDashArray(float[]);
+  public void moveTo(double, double);
+  public void lineTo(double, double);
+  public void skipLen();
+  public void curveTo(double, double, double, double, double, double);
+  public void quadTo(double, double, double, double);
+  public void closePath();
+  public void pathDone();
+  public long getNativeConsumer();
+  static {};
+}

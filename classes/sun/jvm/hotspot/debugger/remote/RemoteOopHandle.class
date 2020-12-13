@@ -1,0 +1,8 @@
+Compiled from "RemoteOopHandle.java"
+class sun.jvm.hotspot.debugger.remote.RemoteOopHandle extends sun.jvm.hotspot.debugger.remote.RemoteAddress implements sun.jvm.hotspot.debugger.OopHandle {
+  sun.jvm.hotspot.debugger.remote.RemoteOopHandle(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient, long);
+  public sun.jvm.hotspot.debugger.Address addOffsetTo(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address andWithMask(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address orWithMask(long) throws java.lang.UnsupportedOperationException;
+  public sun.jvm.hotspot.debugger.Address xorWithMask(long) throws java.lang.UnsupportedOperationException;
+}

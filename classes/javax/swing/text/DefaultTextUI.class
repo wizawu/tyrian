@@ -1,0 +1,4 @@
+Compiled from "DefaultTextUI.java"
+public abstract class javax.swing.text.DefaultTextUI extends javax.swing.plaf.basic.BasicTextUI {
+  public javax.swing.text.DefaultTextUI();
+}

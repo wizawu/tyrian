@@ -1,0 +1,14 @@
+Compiled from "DTMTreeWalker.java"
+public class com.sun.org.apache.xml.internal.dtm.ref.DTMTreeWalker {
+  protected com.sun.org.apache.xml.internal.dtm.DTM m_dtm;
+  boolean nextIsRaw;
+  public void setDTM(com.sun.org.apache.xml.internal.dtm.DTM);
+  public org.xml.sax.ContentHandler getcontentHandler();
+  public void setcontentHandler(org.xml.sax.ContentHandler);
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMTreeWalker();
+  public com.sun.org.apache.xml.internal.dtm.ref.DTMTreeWalker(org.xml.sax.ContentHandler, com.sun.org.apache.xml.internal.dtm.DTM);
+  public void traverse(int) throws org.xml.sax.SAXException;
+  public void traverse(int, int) throws org.xml.sax.SAXException;
+  protected void startNode(int) throws org.xml.sax.SAXException;
+  protected void endNode(int) throws org.xml.sax.SAXException;
+}

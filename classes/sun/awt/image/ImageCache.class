@@ -1,0 +1,9 @@
+Compiled from "ImageCache.java"
+public final class sun.awt.image.ImageCache {
+  public static sun.awt.image.ImageCache getInstance();
+  sun.awt.image.ImageCache(int);
+  sun.awt.image.ImageCache();
+  public void flush();
+  public java.awt.Image getImage(sun.awt.image.ImageCache$PixelsKey);
+  public void setImage(sun.awt.image.ImageCache$PixelsKey, java.awt.Image);
+}

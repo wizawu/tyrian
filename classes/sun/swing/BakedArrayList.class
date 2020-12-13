@@ -1,0 +1,8 @@
+Compiled from "BakedArrayList.java"
+public class sun.swing.BakedArrayList<E> extends java.util.ArrayList<E> {
+  public sun.swing.BakedArrayList(int);
+  public sun.swing.BakedArrayList(java.util.List<? extends E>);
+  public void cacheHashCode();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

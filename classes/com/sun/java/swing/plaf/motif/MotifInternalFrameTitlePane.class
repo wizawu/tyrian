@@ -1,0 +1,40 @@
+Compiled from "MotifInternalFrameTitlePane.java"
+public class com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane extends javax.swing.plaf.basic.BasicInternalFrameTitlePane implements java.awt.LayoutManager,java.awt.event.ActionListener,java.beans.PropertyChangeListener {
+  com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane$SystemButton systemButton;
+  com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane$MinimizeButton minimizeButton;
+  com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane$MaximizeButton maximizeButton;
+  javax.swing.JPopupMenu systemMenu;
+  com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane$Title title;
+  java.awt.Color color;
+  java.awt.Color highlight;
+  java.awt.Color shadow;
+  public static final int BUTTON_SIZE;
+  static java.awt.Dimension buttonDimension;
+  public com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane(javax.swing.JInternalFrame);
+  protected void installDefaults();
+  protected void uninstallListeners();
+  protected java.beans.PropertyChangeListener createPropertyChangeListener();
+  protected java.awt.LayoutManager createLayout();
+  javax.swing.JPopupMenu getSystemMenu();
+  protected void assembleSystemMenu();
+  protected void createButtons();
+  protected void addSubComponents();
+  public void paintComponent(java.awt.Graphics);
+  void setColors(java.awt.Color, java.awt.Color, java.awt.Color);
+  public void actionPerformed(java.awt.event.ActionEvent);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  public void addLayoutComponent(java.lang.String, java.awt.Component);
+  public void removeLayoutComponent(java.awt.Component);
+  public java.awt.Dimension preferredLayoutSize(java.awt.Container);
+  public java.awt.Dimension minimumLayoutSize(java.awt.Container);
+  public void layoutContainer(java.awt.Container);
+  protected void showSystemMenu();
+  protected void hideSystemMenu();
+  static javax.swing.JInternalFrame access$000(com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane);
+  static javax.swing.Action access$100(com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane);
+  static javax.swing.JInternalFrame access$200(com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane);
+  static javax.swing.JInternalFrame access$300(com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane);
+  static javax.swing.JInternalFrame access$400(com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane);
+  static javax.swing.JInternalFrame access$500(com.sun.java.swing.plaf.motif.MotifInternalFrameTitlePane);
+  static {};
+}

@@ -1,0 +1,10 @@
+Compiled from "DocPrintJob.java"
+public interface javax.print.DocPrintJob {
+  public abstract javax.print.PrintService getPrintService();
+  public abstract javax.print.attribute.PrintJobAttributeSet getAttributes();
+  public abstract void addPrintJobListener(javax.print.event.PrintJobListener);
+  public abstract void removePrintJobListener(javax.print.event.PrintJobListener);
+  public abstract void addPrintJobAttributeListener(javax.print.event.PrintJobAttributeListener, javax.print.attribute.PrintJobAttributeSet);
+  public abstract void removePrintJobAttributeListener(javax.print.event.PrintJobAttributeListener);
+  public abstract void print(javax.print.Doc, javax.print.attribute.PrintRequestAttributeSet) throws javax.print.PrintException;
+}

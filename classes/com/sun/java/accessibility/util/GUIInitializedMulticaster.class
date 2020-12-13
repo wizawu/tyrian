@@ -1,0 +1,9 @@
+Compiled from "GUIInitializedMulticaster.java"
+class com.sun.java.accessibility.util.GUIInitializedMulticaster extends java.awt.AWTEventMulticaster implements com.sun.java.accessibility.util.GUIInitializedListener {
+  protected com.sun.java.accessibility.util.GUIInitializedMulticaster(java.util.EventListener, java.util.EventListener);
+  public void guiInitialized();
+  public static com.sun.java.accessibility.util.GUIInitializedListener add(com.sun.java.accessibility.util.GUIInitializedListener, com.sun.java.accessibility.util.GUIInitializedListener);
+  public static com.sun.java.accessibility.util.GUIInitializedListener remove(com.sun.java.accessibility.util.GUIInitializedListener, com.sun.java.accessibility.util.GUIInitializedListener);
+  protected static java.util.EventListener addInternal(java.util.EventListener, java.util.EventListener);
+  protected static java.util.EventListener removeInternal(java.util.EventListener, java.util.EventListener);
+}

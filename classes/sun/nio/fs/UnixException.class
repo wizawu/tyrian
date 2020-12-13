@@ -1,0 +1,15 @@
+Compiled from "UnixException.java"
+class sun.nio.fs.UnixException extends java.lang.Exception {
+  static final long serialVersionUID;
+  sun.nio.fs.UnixException(int);
+  sun.nio.fs.UnixException(java.lang.String);
+  int errno();
+  void setError(int);
+  java.lang.String errorString();
+  public java.lang.String getMessage();
+  public java.lang.Throwable fillInStackTrace();
+  void rethrowAsIOException(java.lang.String) throws java.io.IOException;
+  void rethrowAsIOException(sun.nio.fs.UnixPath, sun.nio.fs.UnixPath) throws java.io.IOException;
+  void rethrowAsIOException(sun.nio.fs.UnixPath) throws java.io.IOException;
+  java.io.IOException asIOException(sun.nio.fs.UnixPath);
+}

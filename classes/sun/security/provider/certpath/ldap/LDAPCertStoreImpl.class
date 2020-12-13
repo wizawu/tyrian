@@ -1,0 +1,7 @@
+Compiled from "LDAPCertStoreImpl.java"
+final class sun.security.provider.certpath.ldap.LDAPCertStoreImpl {
+  sun.security.provider.certpath.ldap.LDAPCertStoreImpl(java.lang.String, int) throws java.security.InvalidAlgorithmParameterException;
+  synchronized java.util.Collection<java.security.cert.X509Certificate> getCertificates(java.security.cert.X509CertSelector, java.lang.String) throws java.security.cert.CertStoreException;
+  synchronized java.util.Collection<java.security.cert.X509CRL> getCRLs(java.security.cert.X509CRLSelector, java.lang.String) throws java.security.cert.CertStoreException;
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "TextPipe.java"
+public interface sun.java2d.pipe.TextPipe {
+  public abstract void drawString(sun.java2d.SunGraphics2D, java.lang.String, double, double);
+  public abstract void drawGlyphVector(sun.java2d.SunGraphics2D, java.awt.font.GlyphVector, float, float);
+  public abstract void drawChars(sun.java2d.SunGraphics2D, char[], int, int, int, int);
+}

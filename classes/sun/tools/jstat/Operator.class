@@ -1,0 +1,12 @@
+Compiled from "Operator.java"
+public abstract class sun.tools.jstat.Operator {
+  public static final sun.tools.jstat.Operator PLUS;
+  public static final sun.tools.jstat.Operator MINUS;
+  public static final sun.tools.jstat.Operator DIVIDE;
+  public static final sun.tools.jstat.Operator MULTIPLY;
+  protected abstract double eval(double, double);
+  public java.lang.String toString();
+  public static sun.tools.jstat.Operator toOperator(java.lang.String);
+  protected static java.util.Set<?> keySet();
+  static {};
+}

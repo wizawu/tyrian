@@ -1,0 +1,46 @@
+Compiled from "Assembler.java"
+public final class sun.tools.asm.Assembler implements sun.tools.java.Constants {
+  static final int NOTREACHED;
+  static final int REACHED;
+  static final int NEEDED;
+  sun.tools.asm.Label first;
+  sun.tools.asm.Instruction last;
+  int maxdepth;
+  int maxvar;
+  int maxpc;
+  static java.util.Vector<java.lang.String> SourceClassList;
+  static java.util.Vector<java.lang.String> TmpCovTable;
+  static int[] JcovClassCountArray;
+  static java.lang.String JcovMagicLine;
+  static java.lang.String JcovClassLine;
+  static java.lang.String JcovSrcfileLine;
+  static java.lang.String JcovTimestampLine;
+  static java.lang.String JcovDataLine;
+  static java.lang.String JcovHeadingLine;
+  static int[] arrayModifiers;
+  static int[] arrayModifiersOpc;
+  public sun.tools.asm.Assembler();
+  public void add(sun.tools.asm.Instruction);
+  public void add(long, int);
+  public void add(long, int, java.lang.Object);
+  public void add(long, int, java.lang.Object, boolean);
+  public void add(boolean, long, int, java.lang.Object);
+  public void add(long, int, boolean);
+  void optimize(sun.tools.java.Environment, sun.tools.asm.Label);
+  boolean eliminate();
+  public void optimize(sun.tools.java.Environment);
+  public void collect(sun.tools.java.Environment, sun.tools.java.MemberDefinition, sun.tools.asm.ConstantPool);
+  void balance(sun.tools.asm.Label, int);
+  public void write(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.java.MemberDefinition, sun.tools.asm.ConstantPool) throws java.io.IOException;
+  void writeExceptions(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool, sun.tools.asm.Instruction, sun.tools.asm.Instruction) throws java.io.IOException;
+  public void writeCoverageTable(sun.tools.java.Environment, sun.tools.java.ClassDefinition, java.io.DataOutputStream, sun.tools.asm.ConstantPool, long) throws java.io.IOException;
+  public void addNativeToJcovTab(sun.tools.java.Environment, sun.tools.java.ClassDefinition);
+  public void GenVecJCov(sun.tools.java.Environment, sun.tools.java.ClassDefinition, long);
+  public void GenJCov(sun.tools.java.Environment);
+  public void writeLineNumberTable(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
+  void flowFields(sun.tools.java.Environment, sun.tools.asm.Label, sun.tools.java.MemberDefinition[]);
+  public void writeLocalVariableTable(sun.tools.java.Environment, sun.tools.java.MemberDefinition, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
+  public boolean empty();
+  public void listing(java.io.PrintStream);
+  static {};
+}

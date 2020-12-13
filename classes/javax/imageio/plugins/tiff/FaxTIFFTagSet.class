@@ -1,0 +1,11 @@
+Compiled from "FaxTIFFTagSet.java"
+public final class javax.imageio.plugins.tiff.FaxTIFFTagSet extends javax.imageio.plugins.tiff.TIFFTagSet {
+  public static final int TAG_BAD_FAX_LINES;
+  public static final int TAG_CLEAN_FAX_DATA;
+  public static final int CLEAN_FAX_DATA_NO_ERRORS;
+  public static final int CLEAN_FAX_DATA_ERRORS_CORRECTED;
+  public static final int CLEAN_FAX_DATA_ERRORS_UNCORRECTED;
+  public static final int TAG_CONSECUTIVE_BAD_LINES;
+  public static synchronized javax.imageio.plugins.tiff.FaxTIFFTagSet getInstance();
+  static {};
+}

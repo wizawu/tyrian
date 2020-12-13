@@ -1,0 +1,10 @@
+Compiled from "ExpressionContext.java"
+public interface com.sun.org.apache.xalan.internal.extensions.ExpressionContext {
+  public abstract org.w3c.dom.Node getContextNode();
+  public abstract org.w3c.dom.traversal.NodeIterator getContextNodes();
+  public abstract javax.xml.transform.ErrorListener getErrorListener();
+  public abstract double toNumber(org.w3c.dom.Node);
+  public abstract java.lang.String toString(org.w3c.dom.Node);
+  public abstract com.sun.org.apache.xpath.internal.objects.XObject getVariableOrParam(com.sun.org.apache.xml.internal.utils.QName) throws javax.xml.transform.TransformerException;
+  public abstract com.sun.org.apache.xpath.internal.XPathContext getXPathContext() throws javax.xml.transform.TransformerException;
+}

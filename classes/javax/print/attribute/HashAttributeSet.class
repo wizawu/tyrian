@@ -1,0 +1,24 @@
+Compiled from "HashAttributeSet.java"
+public class javax.print.attribute.HashAttributeSet implements javax.print.attribute.AttributeSet,java.io.Serializable {
+  public javax.print.attribute.HashAttributeSet();
+  public javax.print.attribute.HashAttributeSet(javax.print.attribute.Attribute);
+  public javax.print.attribute.HashAttributeSet(javax.print.attribute.Attribute[]);
+  public javax.print.attribute.HashAttributeSet(javax.print.attribute.AttributeSet);
+  protected javax.print.attribute.HashAttributeSet(java.lang.Class<?>);
+  protected javax.print.attribute.HashAttributeSet(javax.print.attribute.Attribute, java.lang.Class<?>);
+  protected javax.print.attribute.HashAttributeSet(javax.print.attribute.Attribute[], java.lang.Class<?>);
+  protected javax.print.attribute.HashAttributeSet(javax.print.attribute.AttributeSet, java.lang.Class<?>);
+  public javax.print.attribute.Attribute get(java.lang.Class<?>);
+  public boolean add(javax.print.attribute.Attribute);
+  public boolean remove(java.lang.Class<?>);
+  public boolean remove(javax.print.attribute.Attribute);
+  public boolean containsKey(java.lang.Class<?>);
+  public boolean containsValue(javax.print.attribute.Attribute);
+  public boolean addAll(javax.print.attribute.AttributeSet);
+  public int size();
+  public javax.print.attribute.Attribute[] toArray();
+  public void clear();
+  public boolean isEmpty();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

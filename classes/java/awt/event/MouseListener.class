@@ -1,0 +1,8 @@
+Compiled from "MouseListener.java"
+public interface java.awt.event.MouseListener extends java.util.EventListener {
+  public abstract void mouseClicked(java.awt.event.MouseEvent);
+  public abstract void mousePressed(java.awt.event.MouseEvent);
+  public abstract void mouseReleased(java.awt.event.MouseEvent);
+  public abstract void mouseEntered(java.awt.event.MouseEvent);
+  public abstract void mouseExited(java.awt.event.MouseEvent);
+}

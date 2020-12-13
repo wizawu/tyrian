@@ -1,0 +1,12 @@
+Compiled from "TimeZoneNameProviderImpl.java"
+public class sun.util.locale.provider.TimeZoneNameProviderImpl extends java.util.spi.TimeZoneNameProvider {
+  static final boolean $assertionsDisabled;
+  protected sun.util.locale.provider.TimeZoneNameProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
+  public java.util.Locale[] getAvailableLocales();
+  public boolean isSupportedLocale(java.util.Locale);
+  public java.lang.String getDisplayName(java.lang.String, boolean, int, java.util.Locale);
+  public java.lang.String getGenericDisplayName(java.lang.String, int, java.util.Locale);
+  protected java.lang.String[] getDisplayNameArray(java.lang.String, java.util.Locale);
+  protected java.lang.String[][] getZoneStrings(java.util.Locale);
+  static {};
+}

@@ -1,0 +1,26 @@
+Compiled from "ScrollPaneAdjustable.java"
+public class java.awt.ScrollPaneAdjustable implements java.awt.Adjustable,java.io.Serializable {
+  java.awt.ScrollPaneAdjustable(java.awt.ScrollPane, java.awt.event.AdjustmentListener, int);
+  void setSpan(int, int, int);
+  public int getOrientation();
+  public void setMinimum(int);
+  public int getMinimum();
+  public void setMaximum(int);
+  public int getMaximum();
+  public synchronized void setUnitIncrement(int);
+  public int getUnitIncrement();
+  public synchronized void setBlockIncrement(int);
+  public int getBlockIncrement();
+  public void setVisibleAmount(int);
+  public int getVisibleAmount();
+  public void setValueIsAdjusting(boolean);
+  public boolean getValueIsAdjusting();
+  public void setValue(int);
+  public int getValue();
+  public synchronized void addAdjustmentListener(java.awt.event.AdjustmentListener);
+  public synchronized void removeAdjustmentListener(java.awt.event.AdjustmentListener);
+  public synchronized java.awt.event.AdjustmentListener[] getAdjustmentListeners();
+  public java.lang.String toString();
+  public java.lang.String paramString();
+  static {};
+}

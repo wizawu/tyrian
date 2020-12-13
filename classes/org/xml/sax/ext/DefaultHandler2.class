@@ -1,0 +1,18 @@
+Compiled from "DefaultHandler2.java"
+public class org.xml.sax.ext.DefaultHandler2 extends org.xml.sax.helpers.DefaultHandler implements org.xml.sax.ext.LexicalHandler,org.xml.sax.ext.DeclHandler,org.xml.sax.ext.EntityResolver2 {
+  public org.xml.sax.ext.DefaultHandler2();
+  public void startCDATA() throws org.xml.sax.SAXException;
+  public void endCDATA() throws org.xml.sax.SAXException;
+  public void startDTD(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void endDTD() throws org.xml.sax.SAXException;
+  public void startEntity(java.lang.String) throws org.xml.sax.SAXException;
+  public void endEntity(java.lang.String) throws org.xml.sax.SAXException;
+  public void comment(char[], int, int) throws org.xml.sax.SAXException;
+  public void attributeDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void elementDecl(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void externalEntityDecl(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void internalEntityDecl(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public org.xml.sax.InputSource getExternalSubset(java.lang.String, java.lang.String) throws org.xml.sax.SAXException, java.io.IOException;
+  public org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException, java.io.IOException;
+  public org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String) throws org.xml.sax.SAXException, java.io.IOException;
+}

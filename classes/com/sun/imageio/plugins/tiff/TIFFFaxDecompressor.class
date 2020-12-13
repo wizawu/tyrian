@@ -1,0 +1,12 @@
+Compiled from "TIFFFaxDecompressor.java"
+class com.sun.imageio.plugins.tiff.TIFFFaxDecompressor extends com.sun.imageio.plugins.tiff.TIFFDecompressor {
+  static byte[] flipTable;
+  public com.sun.imageio.plugins.tiff.TIFFFaxDecompressor();
+  public void beginDecoding();
+  public void decodeRaw(byte[], int, int, int) throws java.io.IOException;
+  public void decodeRLE() throws javax.imageio.IIOException;
+  public void decodeNextScanline(int) throws javax.imageio.IIOException;
+  public void decodeT4() throws javax.imageio.IIOException;
+  public synchronized void decodeT6() throws javax.imageio.IIOException;
+  static {};
+}

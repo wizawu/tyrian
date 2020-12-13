@@ -1,0 +1,4 @@
+Compiled from "AttributePSVI.java"
+public interface com.sun.org.apache.xerces.internal.xs.AttributePSVI extends com.sun.org.apache.xerces.internal.xs.ItemPSVI {
+  public abstract com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration getAttributeDeclaration();
+}

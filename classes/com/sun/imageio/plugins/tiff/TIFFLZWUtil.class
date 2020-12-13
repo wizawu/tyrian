@@ -1,0 +1,21 @@
+Compiled from "TIFFLZWUtil.java"
+class com.sun.imageio.plugins.tiff.TIFFLZWUtil {
+  byte[] srcData;
+  int srcIndex;
+  byte[] dstData;
+  int dstIndex;
+  byte[][] stringTable;
+  int tableIndex;
+  int bitsToGet;
+  int nextData;
+  int nextBits;
+  public com.sun.imageio.plugins.tiff.TIFFLZWUtil();
+  public byte[] decode(byte[], int, int, int, int) throws java.io.IOException;
+  public void initializeStringTable();
+  public void writeString(byte[]);
+  public void addStringToTable(byte[], byte);
+  public void addStringToTable(byte[]);
+  public byte[] composeString(byte[], byte);
+  public int getNextCode();
+  static {};
+}

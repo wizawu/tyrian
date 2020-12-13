@@ -1,0 +1,14 @@
+Compiled from "MinimalFuture.java"
+public final class jdk.internal.net.http.common.MinimalFuture<T> extends java.util.concurrent.CompletableFuture<T> {
+  public static <U> jdk.internal.net.http.common.MinimalFuture<U> completedFuture(U);
+  public static <U> java.util.concurrent.CompletableFuture<U> failedFuture(java.lang.Throwable);
+  public static <U> java.util.concurrent.CompletableFuture<U> supply(jdk.internal.net.http.common.MinimalFuture$ExceptionalSupplier<U>);
+  public jdk.internal.net.http.common.MinimalFuture();
+  public <U> jdk.internal.net.http.common.MinimalFuture<U> newIncompleteFuture();
+  public void obtrudeValue(T);
+  public void obtrudeException(java.lang.Throwable);
+  public java.lang.String toString();
+  public static <U> jdk.internal.net.http.common.MinimalFuture<U> of(java.util.concurrent.CompletionStage<U>);
+  public java.util.concurrent.CompletableFuture newIncompleteFuture();
+  static {};
+}

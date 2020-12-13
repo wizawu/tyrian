@@ -1,0 +1,18 @@
+Compiled from "TaskHelper.java"
+public final class jdk.tools.jlink.internal.TaskHelper {
+  public static final java.lang.String JLINK_BUNDLE;
+  public static final java.lang.String JIMAGE_BUNDLE;
+  public jdk.tools.jlink.internal.TaskHelper(java.lang.String);
+  public <T> jdk.tools.jlink.internal.TaskHelper$OptionsHelper<T> newOptionsHelper(java.lang.Class<T>, jdk.tools.jlink.internal.TaskHelper$Option<?>[]);
+  public jdk.tools.jlink.internal.TaskHelper$BadArgs newBadArgs(java.lang.String, java.lang.Object...);
+  public java.lang.String getMessage(java.lang.String, java.lang.Object...);
+  public void setLog(java.io.PrintWriter);
+  public void reportError(java.lang.String, java.lang.Object...);
+  public void reportUnknownError(java.lang.String);
+  public void warning(java.lang.String, java.lang.Object...);
+  public jdk.tools.jlink.internal.Jlink$PluginsConfiguration getPluginsConfig(java.nio.file.Path, java.util.Map<java.lang.String, java.lang.String>) throws java.io.IOException, jdk.tools.jlink.internal.TaskHelper$BadArgs;
+  public java.nio.file.Path getExistingImage();
+  public void showVersion(boolean);
+  public java.lang.String version(java.lang.String);
+  static java.lang.ModuleLayer createPluginsLayer(java.util.List<java.nio.file.Path>);
+}

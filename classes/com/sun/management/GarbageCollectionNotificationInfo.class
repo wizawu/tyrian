@@ -1,0 +1,12 @@
+Compiled from "GarbageCollectionNotificationInfo.java"
+public class com.sun.management.GarbageCollectionNotificationInfo implements javax.management.openmbean.CompositeDataView {
+  public static final java.lang.String GARBAGE_COLLECTION_NOTIFICATION;
+  public com.sun.management.GarbageCollectionNotificationInfo(java.lang.String, java.lang.String, java.lang.String, com.sun.management.GcInfo);
+  com.sun.management.GarbageCollectionNotificationInfo(javax.management.openmbean.CompositeData);
+  public java.lang.String getGcName();
+  public java.lang.String getGcAction();
+  public java.lang.String getGcCause();
+  public com.sun.management.GcInfo getGcInfo();
+  public static com.sun.management.GarbageCollectionNotificationInfo from(javax.management.openmbean.CompositeData);
+  public javax.management.openmbean.CompositeData toCompositeData(javax.management.openmbean.CompositeType);
+}

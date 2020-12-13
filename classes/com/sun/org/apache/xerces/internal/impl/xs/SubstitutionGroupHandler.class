@@ -1,0 +1,13 @@
+Compiled from "SubstitutionGroupHandler.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler {
+  java.util.Map<com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, java.lang.Object> fSubGroupsB;
+  java.util.Map<com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl[]> fSubGroups;
+  public com.sun.org.apache.xerces.internal.impl.xs.SubstitutionGroupHandler(com.sun.org.apache.xerces.internal.impl.xs.XSElementDeclHelper);
+  public com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl getMatchingElemDecl(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl);
+  protected boolean substitutionGroupOK(com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, short);
+  public boolean inSubstitutionGroup(com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl);
+  public void reset();
+  public void addSubstitutionGroup(com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl[]);
+  public com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl[] getSubstitutionGroup(com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl);
+  static {};
+}

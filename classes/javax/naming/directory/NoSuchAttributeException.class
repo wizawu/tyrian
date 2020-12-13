@@ -1,0 +1,5 @@
+Compiled from "NoSuchAttributeException.java"
+public class javax.naming.directory.NoSuchAttributeException extends javax.naming.NamingException {
+  public javax.naming.directory.NoSuchAttributeException(java.lang.String);
+  public javax.naming.directory.NoSuchAttributeException();
+}

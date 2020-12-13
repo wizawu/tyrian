@@ -1,0 +1,13 @@
+Compiled from "EventListenerList.java"
+public class javax.swing.event.EventListenerList implements java.io.Serializable {
+  protected volatile transient java.lang.Object[] listenerList;
+  public javax.swing.event.EventListenerList();
+  public java.lang.Object[] getListenerList();
+  public <T extends java.util.EventListener> T[] getListeners(java.lang.Class<T>);
+  public int getListenerCount();
+  public int getListenerCount(java.lang.Class<?>);
+  public synchronized <T extends java.util.EventListener> void add(java.lang.Class<T>, T);
+  public synchronized <T extends java.util.EventListener> void remove(java.lang.Class<T>, T);
+  public java.lang.String toString();
+  static {};
+}

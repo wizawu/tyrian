@@ -1,0 +1,14 @@
+Compiled from "SynthEditorPaneUI.java"
+public class javax.swing.plaf.synth.SynthEditorPaneUI extends javax.swing.plaf.basic.BasicEditorPaneUI implements javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthEditorPaneUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void uninstallDefaults();
+  protected void propertyChange(java.beans.PropertyChangeEvent);
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  protected void paintBackground(java.awt.Graphics);
+  void paintBackground(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, javax.swing.JComponent);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+}

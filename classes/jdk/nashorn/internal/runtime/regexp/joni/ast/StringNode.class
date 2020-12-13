@@ -1,0 +1,35 @@
+Compiled from "StringNode.java"
+public final class jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.Node implements jdk.nashorn.internal.runtime.regexp.joni.constants.StringType {
+  public char[] chars;
+  public int p;
+  public int end;
+  public int flag;
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode();
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode(char[], int, int);
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode(char);
+  public static jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode createEmpty();
+  public void ensure(int);
+  public int getType();
+  public java.lang.String getName();
+  public java.lang.String toString(int);
+  public int length();
+  public jdk.nashorn.internal.runtime.regexp.joni.ast.StringNode splitLastChar();
+  public boolean canBeSplit();
+  public void set(char[], int, int);
+  public void cat(char[], int, int);
+  public void cat(char);
+  public void catCode(int);
+  public void clear();
+  public void setRaw();
+  public void clearRaw();
+  public boolean isRaw();
+  public void setAmbig();
+  public void clearAmbig();
+  public boolean isAmbig();
+  public void setDontGetOptInfo();
+  public void clearDontGetOptInfo();
+  public boolean isDontGetOptInfo();
+  public void setShared();
+  public void clearShared();
+  public boolean isShared();
+}

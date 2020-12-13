@@ -1,0 +1,10 @@
+Compiled from "SAListener.java"
+public interface sun.jvm.hotspot.ui.SAListener {
+  public abstract void showThreadOopInspector(sun.jvm.hotspot.runtime.JavaThread);
+  public abstract void showInspector(sun.jvm.hotspot.ui.tree.SimpleTreeNode);
+  public abstract void showThreadStackMemory(sun.jvm.hotspot.runtime.JavaThread);
+  public abstract void showThreadInfo(sun.jvm.hotspot.runtime.JavaThread);
+  public abstract void showJavaStackTrace(sun.jvm.hotspot.runtime.JavaThread);
+  public abstract void showCodeViewer(sun.jvm.hotspot.debugger.Address);
+  public abstract void showLiveness(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.utilities.LivenessPathList);
+}

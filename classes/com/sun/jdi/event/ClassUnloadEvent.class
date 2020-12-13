@@ -1,0 +1,5 @@
+Compiled from "ClassUnloadEvent.java"
+public interface com.sun.jdi.event.ClassUnloadEvent extends com.sun.jdi.event.Event {
+  public abstract java.lang.String className();
+  public abstract java.lang.String classSignature();
+}

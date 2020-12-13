@@ -1,0 +1,4 @@
+Compiled from "UCharacterDirection.java"
+final class sun.net.idn.UCharacterDirection implements sun.net.idn.UCharacterEnums$ECharacterDirection {
+  public static java.lang.String toString(int);
+}

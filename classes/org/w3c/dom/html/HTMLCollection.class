@@ -1,0 +1,6 @@
+Compiled from "HTMLCollection.java"
+public interface org.w3c.dom.html.HTMLCollection {
+  public abstract int getLength();
+  public abstract org.w3c.dom.Node item(int);
+  public abstract org.w3c.dom.Node namedItem(java.lang.String);
+}

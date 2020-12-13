@@ -1,0 +1,14 @@
+Compiled from "ManifestEntryVerifier.java"
+public class sun.security.util.ManifestEntryVerifier {
+  java.util.HashMap<java.lang.String, java.security.MessageDigest> createdDigests;
+  java.util.ArrayList<java.security.MessageDigest> digests;
+  java.util.ArrayList<byte[]> manifestHashes;
+  public sun.security.util.ManifestEntryVerifier(java.util.jar.Manifest);
+  public void setEntry(java.lang.String, java.util.jar.JarEntry) throws java.io.IOException;
+  public void update(byte);
+  public void update(byte[], int, int);
+  public java.util.jar.JarEntry getEntry();
+  public java.security.CodeSigner[] verify(java.util.Hashtable<java.lang.String, java.security.CodeSigner[]>, java.util.Hashtable<java.lang.String, java.security.CodeSigner[]>) throws java.util.jar.JarException;
+  static java.lang.String toHex(byte[]);
+  static {};
+}

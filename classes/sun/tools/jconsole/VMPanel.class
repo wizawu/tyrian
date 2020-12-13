@@ -1,0 +1,27 @@
+Compiled from "VMPanel.java"
+public class sun.tools.jconsole.VMPanel extends javax.swing.JTabbedPane implements java.beans.PropertyChangeListener {
+  public static sun.tools.jconsole.VMPanel$TabInfo[] getTabInfos();
+  sun.tools.jconsole.VMPanel(sun.tools.jconsole.ProxyClient, int);
+  public void setUI(javax.swing.plaf.TabbedPaneUI);
+  protected void paintComponent(java.awt.Graphics);
+  public java.lang.String getToolTipText(java.awt.event.MouseEvent);
+  public synchronized void removeTabAt(int);
+  boolean isConnected();
+  public int getUpdateInterval();
+  sun.tools.jconsole.ProxyClient getProxyClient(boolean);
+  public sun.tools.jconsole.ProxyClient getProxyClient();
+  public void cleanUp();
+  public void connect();
+  public void disconnect();
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  void updateFrameTitle();
+  synchronized java.util.List<sun.tools.jconsole.Tab> getTabs();
+  public java.lang.String getHostName();
+  public int getPort();
+  public java.lang.String getUserName();
+  public java.lang.String getUrl();
+  public java.lang.String getPassword();
+  public java.lang.String getConnectionName();
+  public java.lang.String getDisplayName();
+  static {};
+}

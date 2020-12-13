@@ -1,0 +1,11 @@
+Compiled from "PropertyEditorFinder.java"
+public final class com.sun.beans.finder.PropertyEditorFinder extends com.sun.beans.finder.InstanceFinder<java.beans.PropertyEditor> {
+  public com.sun.beans.finder.PropertyEditorFinder();
+  public void register(java.lang.Class<?>, java.lang.Class<?>);
+  public java.beans.PropertyEditor find(java.lang.Class<?>);
+  protected java.beans.PropertyEditor instantiate(java.lang.Class<?>, java.lang.String, java.lang.String);
+  protected java.lang.Object instantiate(java.lang.Class, java.lang.String, java.lang.String);
+  public java.lang.Object find(java.lang.Class);
+  public void setPackages(java.lang.String[]);
+  public java.lang.String[] getPackages();
+}

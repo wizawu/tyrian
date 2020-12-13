@@ -1,0 +1,27 @@
+Compiled from "LocalVariable.java"
+public final class com.sun.org.apache.bcel.internal.classfile.LocalVariable implements java.lang.Cloneable,com.sun.org.apache.bcel.internal.classfile.Node {
+  public com.sun.org.apache.bcel.internal.classfile.LocalVariable(com.sun.org.apache.bcel.internal.classfile.LocalVariable);
+  com.sun.org.apache.bcel.internal.classfile.LocalVariable(java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.LocalVariable(int, int, int, int, int, com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public com.sun.org.apache.bcel.internal.classfile.LocalVariable(int, int, int, int, int, com.sun.org.apache.bcel.internal.classfile.ConstantPool, int);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final com.sun.org.apache.bcel.internal.classfile.ConstantPool getConstantPool();
+  public final int getLength();
+  public final java.lang.String getName();
+  public final int getNameIndex();
+  public final java.lang.String getSignature();
+  public final int getSignatureIndex();
+  public final int getIndex();
+  public final int getOrigIndex();
+  public final int getStartPC();
+  final java.lang.String toStringShared(boolean);
+  public final void setConstantPool(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public final void setLength(int);
+  public final void setNameIndex(int);
+  public final void setSignatureIndex(int);
+  public final void setIndex(int);
+  public final void setStartPC(int);
+  public final java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.classfile.LocalVariable copy();
+}

@@ -1,0 +1,6 @@
+Compiled from "FileInputStreamInstrumentor.java"
+final class jdk.jfr.internal.instrument.FileInputStreamInstrumentor {
+  public int read() throws java.io.IOException;
+  public int read(byte[]) throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+}

@@ -1,0 +1,8 @@
+Compiled from "MBeanServerNotification.java"
+public class javax.management.MBeanServerNotification extends javax.management.Notification {
+  public static final java.lang.String REGISTRATION_NOTIFICATION;
+  public static final java.lang.String UNREGISTRATION_NOTIFICATION;
+  public javax.management.MBeanServerNotification(java.lang.String, java.lang.Object, long, javax.management.ObjectName);
+  public javax.management.ObjectName getMBeanName();
+  public java.lang.String toString();
+}

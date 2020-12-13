@@ -1,0 +1,8 @@
+Compiled from "DurationYearMonthImpl.java"
+class com.sun.org.apache.xerces.internal.jaxp.datatype.DurationYearMonthImpl extends com.sun.org.apache.xerces.internal.jaxp.datatype.DurationImpl {
+  public com.sun.org.apache.xerces.internal.jaxp.datatype.DurationYearMonthImpl(boolean, java.math.BigInteger, java.math.BigInteger);
+  protected com.sun.org.apache.xerces.internal.jaxp.datatype.DurationYearMonthImpl(boolean, int, int);
+  protected com.sun.org.apache.xerces.internal.jaxp.datatype.DurationYearMonthImpl(long);
+  protected com.sun.org.apache.xerces.internal.jaxp.datatype.DurationYearMonthImpl(java.lang.String);
+  public int getValue();
+}

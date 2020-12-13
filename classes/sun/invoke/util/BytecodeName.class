@@ -1,0 +1,28 @@
+Compiled from "BytecodeName.java"
+public class sun.invoke.util.BytecodeName {
+  static char ESCAPE_C;
+  static char NULL_ESCAPE_C;
+  static java.lang.String NULL_ESCAPE;
+  static final java.lang.String DANGEROUS_CHARS;
+  static final java.lang.String REPLACEMENT_CHARS;
+  static final int DANGEROUS_CHAR_FIRST_INDEX;
+  static char[] DANGEROUS_CHARS_A;
+  static char[] REPLACEMENT_CHARS_A;
+  static final java.lang.Character[] DANGEROUS_CHARS_CA;
+  static final long[] SPECIAL_BITMAP;
+  static final boolean $assertionsDisabled;
+  public static java.lang.String toBytecodeName(java.lang.String);
+  public static java.lang.String toSourceName(java.lang.String);
+  public static java.lang.Object[] parseBytecodeName(java.lang.String);
+  public static java.lang.String unparseBytecodeName(java.lang.Object[]);
+  public static java.lang.String toDisplayName(java.lang.String);
+  public static boolean isSafeBytecodeName(java.lang.String);
+  public static boolean isSafeBytecodeChar(char);
+  static boolean isSpecial(char);
+  static char replacementOf(char);
+  static char originalOfReplacement(char);
+  static boolean isDangerous(char);
+  static int indexOfDangerousChar(java.lang.String, int);
+  static int lastIndexOfDangerousChar(java.lang.String, int);
+  static {};
+}

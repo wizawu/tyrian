@@ -1,0 +1,37 @@
+Compiled from "WrappedPlainView.java"
+public class javax.swing.text.WrappedPlainView extends javax.swing.text.BoxView implements javax.swing.text.TabExpander {
+  java.awt.FontMetrics metrics;
+  javax.swing.text.Segment lineBuffer;
+  boolean widthChanging;
+  int tabBase;
+  float tabSize;
+  boolean wordWrap;
+  int sel0;
+  int sel1;
+  java.awt.Color unselected;
+  java.awt.Color selected;
+  public javax.swing.text.WrappedPlainView(javax.swing.text.Element);
+  public javax.swing.text.WrappedPlainView(javax.swing.text.Element, boolean);
+  protected int getTabSize();
+  protected void drawLine(int, int, java.awt.Graphics, int, int);
+  protected void drawLine(int, int, java.awt.Graphics2D, float, float);
+  protected int drawUnselectedText(java.awt.Graphics, int, int, int, int) throws javax.swing.text.BadLocationException;
+  protected float drawUnselectedText(java.awt.Graphics2D, float, float, int, int) throws javax.swing.text.BadLocationException;
+  protected int drawSelectedText(java.awt.Graphics, int, int, int, int) throws javax.swing.text.BadLocationException;
+  protected float drawSelectedText(java.awt.Graphics2D, float, float, int, int) throws javax.swing.text.BadLocationException;
+  protected final javax.swing.text.Segment getLineBuffer();
+  protected int calculateBreakPosition(int, int);
+  protected void loadChildren(javax.swing.text.ViewFactory);
+  void updateChildren(javax.swing.event.DocumentEvent, java.awt.Shape);
+  final void loadText(javax.swing.text.Segment, int, int);
+  final void updateMetrics();
+  public float nextTabStop(float, int);
+  public void paint(java.awt.Graphics, java.awt.Shape);
+  public void setSize(float, float);
+  public float getPreferredSpan(int);
+  public float getMinimumSpan(int);
+  public float getMaximumSpan(int);
+  public void insertUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  public void removeUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  public void changedUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+}

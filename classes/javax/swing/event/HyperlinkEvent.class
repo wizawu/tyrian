@@ -1,0 +1,12 @@
+Compiled from "HyperlinkEvent.java"
+public class javax.swing.event.HyperlinkEvent extends java.util.EventObject {
+  public javax.swing.event.HyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL);
+  public javax.swing.event.HyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String);
+  public javax.swing.event.HyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String, javax.swing.text.Element);
+  public javax.swing.event.HyperlinkEvent(java.lang.Object, javax.swing.event.HyperlinkEvent$EventType, java.net.URL, java.lang.String, javax.swing.text.Element, java.awt.event.InputEvent);
+  public javax.swing.event.HyperlinkEvent$EventType getEventType();
+  public java.lang.String getDescription();
+  public java.net.URL getURL();
+  public javax.swing.text.Element getSourceElement();
+  public java.awt.event.InputEvent getInputEvent();
+}

@@ -1,0 +1,15 @@
+Compiled from "ReliableLog.java"
+public class sun.rmi.log.ReliableLog {
+  public static final int PreferredMajorVersion;
+  public static final int PreferredMinorVersion;
+  public sun.rmi.log.ReliableLog(java.lang.String, sun.rmi.log.LogHandler, boolean) throws java.io.IOException;
+  public sun.rmi.log.ReliableLog(java.lang.String, sun.rmi.log.LogHandler) throws java.io.IOException;
+  public synchronized java.lang.Object recover() throws java.io.IOException;
+  public synchronized void update(java.lang.Object) throws java.io.IOException;
+  public synchronized void update(java.lang.Object, boolean) throws java.io.IOException;
+  public synchronized void snapshot(java.lang.Object) throws java.io.IOException;
+  public synchronized void close() throws java.io.IOException;
+  public long snapshotSize();
+  public long logSize();
+  static {};
+}

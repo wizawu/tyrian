@@ -1,0 +1,8 @@
+Compiled from "ClientHello.java"
+final class sun.security.ssl.ClientHello {
+  static final sun.security.ssl.SSLProducer kickstartProducer;
+  static final sun.security.ssl.SSLConsumer handshakeConsumer;
+  static final sun.security.ssl.HandshakeProducer handshakeProducer;
+  sun.security.ssl.ClientHello();
+  static {};
+}

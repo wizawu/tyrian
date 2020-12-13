@@ -1,0 +1,13 @@
+Compiled from "NativeWeakMap.java"
+public class jdk.nashorn.internal.objects.NativeWeakMap extends jdk.nashorn.internal.runtime.ScriptObject {
+  public static java.lang.Object construct(boolean, java.lang.Object, java.lang.Object);
+  public static java.lang.Object set(java.lang.Object, java.lang.Object, java.lang.Object);
+  public static java.lang.Object get(java.lang.Object, java.lang.Object);
+  public static boolean delete(java.lang.Object, java.lang.Object);
+  public static boolean has(java.lang.Object, java.lang.Object);
+  public java.lang.String getClassName();
+  static java.lang.Object checkKey(java.lang.Object);
+  static void populateMap(java.util.Map<java.lang.Object, java.lang.Object>, java.lang.Object, jdk.nashorn.internal.objects.Global);
+  public static {};
+  public static void $clinit$();
+}

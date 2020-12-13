@@ -1,0 +1,5 @@
+Compiled from "PrimitiveTypeDesc.java"
+public class com.sun.tools.sjavac.pubapi.PrimitiveTypeDesc extends com.sun.tools.sjavac.pubapi.TypeDesc implements java.io.Serializable {
+  public com.sun.tools.sjavac.pubapi.PrimitiveTypeDesc(javax.lang.model.type.TypeKind);
+  public java.lang.String toString();
+}

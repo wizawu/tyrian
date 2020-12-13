@@ -1,0 +1,15 @@
+Compiled from "LocationImpl.java"
+public class com.sun.xml.internal.stream.events.LocationImpl implements javax.xml.stream.Location {
+  java.lang.String systemId;
+  java.lang.String publicId;
+  int colNo;
+  int lineNo;
+  int charOffset;
+  com.sun.xml.internal.stream.events.LocationImpl(javax.xml.stream.Location);
+  public int getCharacterOffset();
+  public int getColumnNumber();
+  public int getLineNumber();
+  public java.lang.String getPublicId();
+  public java.lang.String getSystemId();
+  public java.lang.String toString();
+}

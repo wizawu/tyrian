@@ -1,0 +1,16 @@
+Compiled from "HttpsURLConnection.java"
+public abstract class com.sun.net.ssl.HttpsURLConnection extends java.net.HttpURLConnection {
+  protected com.sun.net.ssl.HostnameVerifier hostnameVerifier;
+  public com.sun.net.ssl.HttpsURLConnection(java.net.URL) throws java.io.IOException;
+  public abstract java.lang.String getCipherSuite();
+  public abstract java.security.cert.Certificate[] getServerCertificates() throws javax.net.ssl.SSLPeerUnverifiedException;
+  public static void setDefaultHostnameVerifier(com.sun.net.ssl.HostnameVerifier);
+  public static com.sun.net.ssl.HostnameVerifier getDefaultHostnameVerifier();
+  public void setHostnameVerifier(com.sun.net.ssl.HostnameVerifier);
+  public com.sun.net.ssl.HostnameVerifier getHostnameVerifier();
+  public static void setDefaultSSLSocketFactory(javax.net.ssl.SSLSocketFactory);
+  public static javax.net.ssl.SSLSocketFactory getDefaultSSLSocketFactory();
+  public void setSSLSocketFactory(javax.net.ssl.SSLSocketFactory);
+  public javax.net.ssl.SSLSocketFactory getSSLSocketFactory();
+  static {};
+}

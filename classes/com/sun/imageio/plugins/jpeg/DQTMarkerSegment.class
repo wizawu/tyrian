@@ -1,0 +1,14 @@
+Compiled from "DQTMarkerSegment.java"
+class com.sun.imageio.plugins.jpeg.DQTMarkerSegment extends com.sun.imageio.plugins.jpeg.MarkerSegment {
+  java.util.List<com.sun.imageio.plugins.jpeg.DQTMarkerSegment$Qtable> tables;
+  com.sun.imageio.plugins.jpeg.DQTMarkerSegment(float, boolean);
+  com.sun.imageio.plugins.jpeg.DQTMarkerSegment(com.sun.imageio.plugins.jpeg.JPEGBuffer) throws java.io.IOException;
+  com.sun.imageio.plugins.jpeg.DQTMarkerSegment(javax.imageio.plugins.jpeg.JPEGQTable[]);
+  com.sun.imageio.plugins.jpeg.DQTMarkerSegment(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected java.lang.Object clone();
+  javax.imageio.metadata.IIOMetadataNode getNativeNode();
+  void write(javax.imageio.stream.ImageOutputStream) throws java.io.IOException;
+  void print();
+  com.sun.imageio.plugins.jpeg.DQTMarkerSegment$Qtable getChromaForLuma(com.sun.imageio.plugins.jpeg.DQTMarkerSegment$Qtable);
+  com.sun.imageio.plugins.jpeg.DQTMarkerSegment$Qtable getQtableFromNode(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+}

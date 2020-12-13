@@ -1,0 +1,16 @@
+Compiled from "XSModel.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSModel {
+  public abstract com.sun.org.apache.xerces.internal.xs.StringList getNamespaces();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSNamespaceItemList getNamespaceItems();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSNamedMap getComponents(short);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSNamedMap getComponentsByNamespace(short, java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSElementDeclaration getElementDeclaration(java.lang.String, java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration getAttributeDeclaration(java.lang.String, java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSTypeDefinition getTypeDefinition(java.lang.String, java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSAttributeGroupDefinition getAttributeGroup(java.lang.String, java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSModelGroupDefinition getModelGroupDefinition(java.lang.String, java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSNotationDeclaration getNotationDeclaration(java.lang.String, java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSIDCDefinition getIDCDefinition(java.lang.String, java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getSubstitutionGroup(com.sun.org.apache.xerces.internal.xs.XSElementDeclaration);
+}

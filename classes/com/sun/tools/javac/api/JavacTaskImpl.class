@@ -1,0 +1,22 @@
+Compiled from "JavacTaskImpl.java"
+public class com.sun.tools.javac.api.JavacTaskImpl extends com.sun.tools.javac.api.BasicJavacTask {
+  protected com.sun.tools.javac.api.JavacTaskImpl(com.sun.tools.javac.util.Context);
+  public java.lang.Boolean call();
+  public com.sun.tools.javac.main.Main$Result doCall();
+  public void addModules(java.lang.Iterable<java.lang.String>);
+  public void setProcessors(java.lang.Iterable<? extends javax.annotation.processing.Processor>);
+  public void setLocale(java.util.Locale);
+  <T> java.lang.String toString(java.lang.Iterable<T>, java.lang.String);
+  void cleanup();
+  public java.lang.Iterable<? extends com.sun.source.tree.CompilationUnitTree> parse();
+  public java.lang.Iterable<? extends javax.lang.model.element.Element> enter();
+  public java.lang.Iterable<? extends javax.lang.model.element.Element> enter(java.lang.Iterable<? extends com.sun.source.tree.CompilationUnitTree>);
+  public java.lang.Iterable<? extends javax.lang.model.element.Element> analyze();
+  public java.lang.Iterable<? extends javax.lang.model.element.Element> analyze(java.lang.Iterable<? extends javax.lang.model.element.Element>);
+  public java.lang.Iterable<? extends javax.tools.JavaFileObject> generate();
+  public java.lang.Iterable<? extends javax.tools.JavaFileObject> generate(java.lang.Iterable<? extends javax.lang.model.element.Element>);
+  public java.lang.Iterable<? extends com.sun.source.tree.Tree> pathFor(com.sun.source.tree.CompilationUnitTree, com.sun.source.tree.Tree);
+  public void ensureEntered();
+  public com.sun.tools.javac.code.Type parseType(java.lang.String, javax.lang.model.element.TypeElement);
+  public java.lang.Object call() throws java.lang.Exception;
+}

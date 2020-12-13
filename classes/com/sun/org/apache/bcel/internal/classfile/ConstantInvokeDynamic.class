@@ -1,0 +1,9 @@
+Compiled from "ConstantInvokeDynamic.java"
+public final class com.sun.org.apache.bcel.internal.classfile.ConstantInvokeDynamic extends com.sun.org.apache.bcel.internal.classfile.ConstantCP {
+  public com.sun.org.apache.bcel.internal.classfile.ConstantInvokeDynamic(com.sun.org.apache.bcel.internal.classfile.ConstantInvokeDynamic);
+  com.sun.org.apache.bcel.internal.classfile.ConstantInvokeDynamic(java.io.DataInput) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.ConstantInvokeDynamic(int, int);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final int getBootstrapMethodAttrIndex();
+  public final java.lang.String toString();
+}

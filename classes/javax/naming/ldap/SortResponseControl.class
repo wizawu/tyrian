@@ -1,0 +1,9 @@
+Compiled from "SortResponseControl.java"
+public final class javax.naming.ldap.SortResponseControl extends javax.naming.ldap.BasicControl {
+  public static final java.lang.String OID;
+  public javax.naming.ldap.SortResponseControl(java.lang.String, boolean, byte[]) throws java.io.IOException;
+  public boolean isSorted();
+  public int getResultCode();
+  public java.lang.String getAttributeID();
+  public javax.naming.NamingException getException();
+}

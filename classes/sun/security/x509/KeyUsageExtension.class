@@ -1,0 +1,28 @@
+Compiled from "KeyUsageExtension.java"
+public class sun.security.x509.KeyUsageExtension extends sun.security.x509.Extension implements sun.security.x509.CertAttrSet<java.lang.String> {
+  public static final java.lang.String IDENT;
+  public static final java.lang.String NAME;
+  public static final java.lang.String DIGITAL_SIGNATURE;
+  public static final java.lang.String NON_REPUDIATION;
+  public static final java.lang.String KEY_ENCIPHERMENT;
+  public static final java.lang.String DATA_ENCIPHERMENT;
+  public static final java.lang.String KEY_AGREEMENT;
+  public static final java.lang.String KEY_CERTSIGN;
+  public static final java.lang.String CRL_SIGN;
+  public static final java.lang.String ENCIPHER_ONLY;
+  public static final java.lang.String DECIPHER_ONLY;
+  public sun.security.x509.KeyUsageExtension(byte[]) throws java.io.IOException;
+  public sun.security.x509.KeyUsageExtension(boolean[]) throws java.io.IOException;
+  public sun.security.x509.KeyUsageExtension(sun.security.util.BitArray) throws java.io.IOException;
+  public sun.security.x509.KeyUsageExtension(java.lang.Boolean, java.lang.Object) throws java.io.IOException;
+  public sun.security.x509.KeyUsageExtension();
+  public void set(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public java.lang.Boolean get(java.lang.String) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  public java.lang.String toString();
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  public boolean[] getBits();
+  public java.lang.String getName();
+  public java.lang.Object get(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+}

@@ -1,0 +1,5 @@
+Compiled from "Receiver.java"
+public interface javax.sound.midi.Receiver extends java.lang.AutoCloseable {
+  public abstract void send(javax.sound.midi.MidiMessage, long);
+  public abstract void close();
+}

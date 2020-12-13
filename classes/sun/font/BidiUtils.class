@@ -1,0 +1,12 @@
+Compiled from "BidiUtils.java"
+public final class sun.font.BidiUtils {
+  static final char NUMLEVELS;
+  public sun.font.BidiUtils();
+  public static void getLevels(java.text.Bidi, byte[], int);
+  public static byte[] getLevels(java.text.Bidi);
+  public static int[] createVisualToLogicalMap(byte[]);
+  public static int[] createInverseMap(int[]);
+  public static int[] createContiguousOrder(int[]);
+  public static int[] createNormalizedMap(int[], byte[], int, int);
+  public static void reorderVisually(byte[], java.lang.Object[]);
+}

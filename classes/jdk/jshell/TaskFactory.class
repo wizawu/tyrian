@@ -1,0 +1,14 @@
+Compiled from "TaskFactory.java"
+class jdk.jshell.TaskFactory {
+  jdk.jshell.TaskFactory(jdk.jshell.JShell);
+  void addToClasspath(java.lang.String);
+  jdk.jshell.MemoryFileManager fileManager();
+  public <Z> Z parse(java.lang.String, boolean, jdk.jshell.TaskFactory$Worker<jdk.jshell.TaskFactory$ParseTask, Z>);
+  public <Z> Z analyze(jdk.jshell.OuterWrap, jdk.jshell.TaskFactory$Worker<jdk.jshell.TaskFactory$AnalyzeTask, Z>);
+  public <Z> Z analyze(jdk.jshell.OuterWrap, java.util.List<java.lang.String>, jdk.jshell.TaskFactory$Worker<jdk.jshell.TaskFactory$AnalyzeTask, Z>);
+  public <Z> Z analyze(java.util.Collection<jdk.jshell.OuterWrap>, jdk.jshell.TaskFactory$Worker<jdk.jshell.TaskFactory$AnalyzeTask, Z>);
+  public <Z> Z analyze(java.util.Collection<jdk.jshell.OuterWrap>, java.util.List<java.lang.String>, jdk.jshell.TaskFactory$Worker<jdk.jshell.TaskFactory$AnalyzeTask, Z>);
+  public <Z> Z compile(java.util.Collection<jdk.jshell.OuterWrap>, jdk.jshell.TaskFactory$Worker<jdk.jshell.TaskFactory$CompileTask, Z>);
+  <Z> Z parse(java.lang.String, jdk.jshell.TaskFactory$Worker<jdk.jshell.TaskFactory$ParseTask, Z>);
+  static {};
+}

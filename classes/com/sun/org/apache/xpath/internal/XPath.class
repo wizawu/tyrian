@@ -1,0 +1,29 @@
+Compiled from "XPath.java"
+public class com.sun.org.apache.xpath.internal.XPath implements java.io.Serializable,com.sun.org.apache.xpath.internal.ExpressionOwner {
+  static final long serialVersionUID;
+  java.lang.String m_patternString;
+  public static final int SELECT;
+  public static final int MATCH;
+  public static final double MATCH_SCORE_NONE;
+  public static final double MATCH_SCORE_QNAME;
+  public static final double MATCH_SCORE_NSWILD;
+  public static final double MATCH_SCORE_NODETEST;
+  public static final double MATCH_SCORE_OTHER;
+  public com.sun.org.apache.xpath.internal.Expression getExpression();
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public void setExpression(com.sun.org.apache.xpath.internal.Expression);
+  public javax.xml.transform.SourceLocator getLocator();
+  public java.lang.String getPatternString();
+  public com.sun.org.apache.xpath.internal.XPath(java.lang.String, javax.xml.transform.SourceLocator, com.sun.org.apache.xml.internal.utils.PrefixResolver, int, javax.xml.transform.ErrorListener) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.XPath(java.lang.String, javax.xml.transform.SourceLocator, com.sun.org.apache.xml.internal.utils.PrefixResolver, int, javax.xml.transform.ErrorListener, com.sun.org.apache.xpath.internal.compiler.FunctionTable) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.XPath(java.lang.String, javax.xml.transform.SourceLocator, com.sun.org.apache.xml.internal.utils.PrefixResolver, int) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.XPath(com.sun.org.apache.xpath.internal.Expression);
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, org.w3c.dom.Node, com.sun.org.apache.xml.internal.utils.PrefixResolver) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, int, com.sun.org.apache.xml.internal.utils.PrefixResolver) throws javax.xml.transform.TransformerException;
+  public boolean bool(com.sun.org.apache.xpath.internal.XPathContext, int, com.sun.org.apache.xml.internal.utils.PrefixResolver) throws javax.xml.transform.TransformerException;
+  public double getMatchScore(com.sun.org.apache.xpath.internal.XPathContext, int) throws javax.xml.transform.TransformerException;
+  public void warn(com.sun.org.apache.xpath.internal.XPathContext, int, java.lang.String, java.lang.Object[]) throws javax.xml.transform.TransformerException;
+  public void assertion(boolean, java.lang.String);
+  public void error(com.sun.org.apache.xpath.internal.XPathContext, int, java.lang.String, java.lang.Object[]) throws javax.xml.transform.TransformerException;
+  public void callVisitors(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.XPathVisitor);
+}

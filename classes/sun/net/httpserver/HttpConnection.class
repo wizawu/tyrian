@@ -1,0 +1,38 @@
+Compiled from "HttpConnection.java"
+class sun.net.httpserver.HttpConnection {
+  sun.net.httpserver.HttpContextImpl context;
+  javax.net.ssl.SSLEngine engine;
+  javax.net.ssl.SSLContext sslContext;
+  sun.net.httpserver.SSLStreams sslStreams;
+  java.io.InputStream i;
+  java.io.InputStream raw;
+  java.io.OutputStream rawout;
+  java.nio.channels.SocketChannel chan;
+  java.nio.channels.SelectionKey selectionKey;
+  java.lang.String protocol;
+  long time;
+  volatile long creationTime;
+  volatile long rspStartedTime;
+  int remaining;
+  boolean closed;
+  java.lang.System$Logger logger;
+  volatile sun.net.httpserver.HttpConnection$State state;
+  public java.lang.String toString();
+  sun.net.httpserver.HttpConnection();
+  void setChannel(java.nio.channels.SocketChannel);
+  void setContext(sun.net.httpserver.HttpContextImpl);
+  sun.net.httpserver.HttpConnection$State getState();
+  void setState(sun.net.httpserver.HttpConnection$State);
+  void setParameters(java.io.InputStream, java.io.OutputStream, java.nio.channels.SocketChannel, javax.net.ssl.SSLEngine, sun.net.httpserver.SSLStreams, javax.net.ssl.SSLContext, java.lang.String, sun.net.httpserver.HttpContextImpl, java.io.InputStream);
+  java.nio.channels.SocketChannel getChannel();
+  synchronized void close();
+  void setRemaining(int);
+  int getRemaining();
+  java.nio.channels.SelectionKey getSelectionKey();
+  java.io.InputStream getInputStream();
+  java.io.OutputStream getRawOutputStream();
+  java.lang.String getProtocol();
+  javax.net.ssl.SSLEngine getSSLEngine();
+  javax.net.ssl.SSLContext getSSLContext();
+  sun.net.httpserver.HttpContextImpl getHttpContext();
+}

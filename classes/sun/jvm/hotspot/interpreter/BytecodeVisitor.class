@@ -1,0 +1,6 @@
+Compiled from "BytecodeVisitor.java"
+public interface sun.jvm.hotspot.interpreter.BytecodeVisitor {
+  public abstract void prologue(sun.jvm.hotspot.oops.Method);
+  public abstract void visit(sun.jvm.hotspot.interpreter.Bytecode);
+  public abstract void epilogue();
+}

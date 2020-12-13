@@ -1,0 +1,12 @@
+Compiled from "PrintingStatus.java"
+public class sun.swing.PrintingStatus {
+  static final boolean $assertionsDisabled;
+  public static sun.swing.PrintingStatus createPrintingStatus(java.awt.Component, java.awt.print.PrinterJob);
+  protected sun.swing.PrintingStatus(java.awt.Component, java.awt.print.PrinterJob);
+  public void showModal(boolean);
+  public void dispose();
+  public boolean isAborted();
+  public java.awt.print.Printable createNotificationPrintable(java.awt.print.Printable);
+  static int getInt(java.lang.Object, int);
+  static {};
+}

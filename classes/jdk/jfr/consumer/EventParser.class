@@ -1,0 +1,5 @@
+Compiled from "EventParser.java"
+final class jdk.jfr.consumer.EventParser extends jdk.jfr.consumer.Parser {
+  jdk.jfr.consumer.EventParser(jdk.jfr.consumer.TimeConverter, jdk.jfr.EventType, jdk.jfr.consumer.Parser[]);
+  public java.lang.Object parse(jdk.jfr.internal.consumer.RecordingInput) throws java.io.IOException;
+}

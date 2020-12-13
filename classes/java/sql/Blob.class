@@ -1,0 +1,14 @@
+Compiled from "Blob.java"
+public interface java.sql.Blob {
+  public abstract long length() throws java.sql.SQLException;
+  public abstract byte[] getBytes(long, int) throws java.sql.SQLException;
+  public abstract java.io.InputStream getBinaryStream() throws java.sql.SQLException;
+  public abstract long position(byte[], long) throws java.sql.SQLException;
+  public abstract long position(java.sql.Blob, long) throws java.sql.SQLException;
+  public abstract int setBytes(long, byte[]) throws java.sql.SQLException;
+  public abstract int setBytes(long, byte[], int, int) throws java.sql.SQLException;
+  public abstract java.io.OutputStream setBinaryStream(long) throws java.sql.SQLException;
+  public abstract void truncate(long) throws java.sql.SQLException;
+  public abstract void free() throws java.sql.SQLException;
+  public abstract java.io.InputStream getBinaryStream(long, long) throws java.sql.SQLException;
+}

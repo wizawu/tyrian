@@ -1,0 +1,42 @@
+Compiled from "ThreadImpl.java"
+public class sun.management.ThreadImpl implements java.lang.management.ThreadMXBean {
+  protected sun.management.ThreadImpl(sun.management.VMManagement);
+  public int getThreadCount();
+  public int getPeakThreadCount();
+  public long getTotalStartedThreadCount();
+  public int getDaemonThreadCount();
+  public boolean isThreadContentionMonitoringSupported();
+  public synchronized boolean isThreadContentionMonitoringEnabled();
+  public boolean isThreadCpuTimeSupported();
+  public boolean isCurrentThreadCpuTimeSupported();
+  protected boolean isThreadAllocatedMemorySupported();
+  public boolean isThreadCpuTimeEnabled();
+  protected boolean isThreadAllocatedMemoryEnabled();
+  public long[] getAllThreadIds();
+  public java.lang.management.ThreadInfo getThreadInfo(long);
+  public java.lang.management.ThreadInfo getThreadInfo(long, int);
+  public java.lang.management.ThreadInfo[] getThreadInfo(long[]);
+  public java.lang.management.ThreadInfo[] getThreadInfo(long[], int);
+  public void setThreadContentionMonitoringEnabled(boolean);
+  public long getCurrentThreadCpuTime();
+  public long getThreadCpuTime(long);
+  protected long[] getThreadCpuTime(long[]);
+  public long getCurrentThreadUserTime();
+  public long getThreadUserTime(long);
+  protected long[] getThreadUserTime(long[]);
+  public void setThreadCpuTimeEnabled(boolean);
+  protected long getCurrentThreadAllocatedBytes();
+  protected long getThreadAllocatedBytes(long);
+  protected long[] getThreadAllocatedBytes(long[]);
+  protected void setThreadAllocatedMemoryEnabled(boolean);
+  public long[] findMonitorDeadlockedThreads();
+  public long[] findDeadlockedThreads();
+  public void resetPeakThreadCount();
+  public boolean isObjectMonitorUsageSupported();
+  public boolean isSynchronizerUsageSupported();
+  public java.lang.management.ThreadInfo[] getThreadInfo(long[], boolean, boolean);
+  public java.lang.management.ThreadInfo[] getThreadInfo(long[], boolean, boolean, int);
+  public java.lang.management.ThreadInfo[] dumpAllThreads(boolean, boolean);
+  public java.lang.management.ThreadInfo[] dumpAllThreads(boolean, boolean, int);
+  public javax.management.ObjectName getObjectName();
+}

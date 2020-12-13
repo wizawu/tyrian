@@ -1,0 +1,7 @@
+Compiled from "ReverseJavaListIterator.java"
+final class jdk.nashorn.internal.runtime.arrays.ReverseJavaListIterator extends jdk.nashorn.internal.runtime.arrays.JavaListIterator {
+  public jdk.nashorn.internal.runtime.arrays.ReverseJavaListIterator(java.util.List<?>, boolean);
+  public boolean isReverse();
+  protected boolean indexInArray();
+  protected long bumpIndex();
+}

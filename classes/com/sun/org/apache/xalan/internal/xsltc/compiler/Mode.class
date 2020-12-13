@@ -1,0 +1,13 @@
+Compiled from "Mode.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.Mode implements com.sun.org.apache.xalan.internal.xsltc.compiler.Constants {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Mode(com.sun.org.apache.xalan.internal.xsltc.compiler.QName, com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet, java.lang.String);
+  public java.lang.String functionName();
+  public java.lang.String functionName(int, int);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet getStylesheet();
+  public void addTemplate(com.sun.org.apache.xalan.internal.xsltc.compiler.Template);
+  public void processPatterns(java.util.Map<java.lang.String, com.sun.org.apache.xalan.internal.xsltc.compiler.Key>);
+  public static void compileGetChildren(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, int);
+  public void compileApplyTemplates(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator);
+  public void compileApplyImports(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, int, int);
+  public com.sun.org.apache.bcel.internal.generic.InstructionHandle getTemplateInstructionHandle(com.sun.org.apache.xalan.internal.xsltc.compiler.Template);
+}

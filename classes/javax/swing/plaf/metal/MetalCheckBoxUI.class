@@ -1,0 +1,9 @@
+Compiled from "MetalCheckBoxUI.java"
+public class javax.swing.plaf.metal.MetalCheckBoxUI extends javax.swing.plaf.metal.MetalRadioButtonUI {
+  public javax.swing.plaf.metal.MetalCheckBoxUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public java.lang.String getPropertyPrefix();
+  public void installDefaults(javax.swing.AbstractButton);
+  protected void uninstallDefaults(javax.swing.AbstractButton);
+  static {};
+}

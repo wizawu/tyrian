@@ -1,0 +1,37 @@
+Compiled from "JLayeredPane.java"
+public class javax.swing.JLayeredPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
+  public static final java.lang.Integer DEFAULT_LAYER;
+  public static final java.lang.Integer PALETTE_LAYER;
+  public static final java.lang.Integer MODAL_LAYER;
+  public static final java.lang.Integer POPUP_LAYER;
+  public static final java.lang.Integer DRAG_LAYER;
+  public static final java.lang.Integer FRAME_CONTENT_LAYER;
+  public static final java.lang.String LAYER_PROPERTY;
+  public javax.swing.JLayeredPane();
+  protected void addImpl(java.awt.Component, java.lang.Object, int);
+  public void remove(int);
+  public void removeAll();
+  public boolean isOptimizedDrawingEnabled();
+  public static void putLayer(javax.swing.JComponent, int);
+  public static int getLayer(javax.swing.JComponent);
+  public static javax.swing.JLayeredPane getLayeredPaneAbove(java.awt.Component);
+  public void setLayer(java.awt.Component, int);
+  public void setLayer(java.awt.Component, int, int);
+  public int getLayer(java.awt.Component);
+  public int getIndexOf(java.awt.Component);
+  public void moveToFront(java.awt.Component);
+  public void moveToBack(java.awt.Component);
+  public void setPosition(java.awt.Component, int);
+  public int getPosition(java.awt.Component);
+  public int highestLayer();
+  public int lowestLayer();
+  public int getComponentCountInLayer(int);
+  public java.awt.Component[] getComponentsInLayer(int);
+  public void paint(java.awt.Graphics);
+  protected java.util.Hashtable<java.awt.Component, java.lang.Integer> getComponentToLayer();
+  protected java.lang.Integer getObjectForLayer(int);
+  protected int insertIndexForLayer(int, int);
+  protected java.lang.String paramString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  static {};
+}

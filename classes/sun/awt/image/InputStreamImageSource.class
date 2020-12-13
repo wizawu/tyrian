@@ -1,0 +1,26 @@
+Compiled from "InputStreamImageSource.java"
+public abstract class sun.awt.image.InputStreamImageSource implements java.awt.image.ImageProducer,sun.awt.image.ImageFetchable {
+  sun.awt.image.ImageConsumerQueue consumers;
+  sun.awt.image.ImageDecoder decoder;
+  sun.awt.image.ImageDecoder decoders;
+  boolean awaitingFetch;
+  public sun.awt.image.InputStreamImageSource();
+  abstract boolean checkSecurity(java.lang.Object, boolean);
+  int countConsumers(sun.awt.image.ImageConsumerQueue);
+  synchronized int countConsumers();
+  public void addConsumer(java.awt.image.ImageConsumer);
+  synchronized void printQueue(sun.awt.image.ImageConsumerQueue, java.lang.String);
+  synchronized void printQueues(java.lang.String);
+  synchronized void addConsumer(java.awt.image.ImageConsumer, boolean);
+  public synchronized boolean isConsumer(java.awt.image.ImageConsumer);
+  public synchronized void removeConsumer(java.awt.image.ImageConsumer);
+  public void startProduction(java.awt.image.ImageConsumer);
+  public void requestTopDownLeftRightResend(java.awt.image.ImageConsumer);
+  protected abstract sun.awt.image.ImageDecoder getDecoder();
+  protected sun.awt.image.ImageDecoder decoderForType(java.io.InputStream, java.lang.String);
+  protected sun.awt.image.ImageDecoder getDecoder(java.io.InputStream);
+  public void doFetch();
+  synchronized void doneDecoding(sun.awt.image.ImageDecoder);
+  void latchConsumers(sun.awt.image.ImageDecoder);
+  synchronized void flush();
+}

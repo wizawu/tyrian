@@ -1,0 +1,10 @@
+Compiled from "PolicyNode.java"
+public interface java.security.cert.PolicyNode {
+  public abstract java.security.cert.PolicyNode getParent();
+  public abstract java.util.Iterator<? extends java.security.cert.PolicyNode> getChildren();
+  public abstract int getDepth();
+  public abstract java.lang.String getValidPolicy();
+  public abstract java.util.Set<? extends java.security.cert.PolicyQualifierInfo> getPolicyQualifiers();
+  public abstract java.util.Set<java.lang.String> getExpectedPolicies();
+  public abstract boolean isCritical();
+}

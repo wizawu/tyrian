@@ -1,0 +1,9 @@
+Compiled from "EditableAtEndDocument.java"
+public class sun.jvm.hotspot.ui.EditableAtEndDocument extends javax.swing.text.PlainDocument {
+  public sun.jvm.hotspot.ui.EditableAtEndDocument();
+  public void insertString(int, java.lang.String, javax.swing.text.AttributeSet) throws javax.swing.text.BadLocationException;
+  public void remove(int, int) throws javax.swing.text.BadLocationException;
+  public void setMark();
+  public java.lang.String getMarkedText() throws javax.swing.text.BadLocationException;
+  public void clear();
+}

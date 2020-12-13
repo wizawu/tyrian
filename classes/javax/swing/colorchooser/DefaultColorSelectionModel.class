@@ -1,0 +1,13 @@
+Compiled from "DefaultColorSelectionModel.java"
+public class javax.swing.colorchooser.DefaultColorSelectionModel implements javax.swing.colorchooser.ColorSelectionModel,java.io.Serializable {
+  protected transient javax.swing.event.ChangeEvent changeEvent;
+  protected javax.swing.event.EventListenerList listenerList;
+  public javax.swing.colorchooser.DefaultColorSelectionModel();
+  public javax.swing.colorchooser.DefaultColorSelectionModel(java.awt.Color);
+  public java.awt.Color getSelectedColor();
+  public void setSelectedColor(java.awt.Color);
+  public void addChangeListener(javax.swing.event.ChangeListener);
+  public void removeChangeListener(javax.swing.event.ChangeListener);
+  public javax.swing.event.ChangeListener[] getChangeListeners();
+  protected void fireStateChanged();
+}

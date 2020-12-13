@@ -1,0 +1,6 @@
+Compiled from "AbstractFinder.java"
+abstract class com.sun.beans.finder.AbstractFinder<T extends java.lang.reflect.Executable> {
+  protected com.sun.beans.finder.AbstractFinder(java.lang.Class<?>[]);
+  protected boolean isValid(T);
+  final T find(T[]) throws java.lang.NoSuchMethodException;
+}

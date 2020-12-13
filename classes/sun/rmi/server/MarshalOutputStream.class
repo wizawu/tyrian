@@ -1,0 +1,10 @@
+Compiled from "MarshalOutputStream.java"
+public class sun.rmi.server.MarshalOutputStream extends java.io.ObjectOutputStream {
+  public sun.rmi.server.MarshalOutputStream(java.io.OutputStream) throws java.io.IOException;
+  public sun.rmi.server.MarshalOutputStream(java.io.OutputStream, int) throws java.io.IOException;
+  protected final java.lang.Object replaceObject(java.lang.Object) throws java.io.IOException;
+  protected void annotateClass(java.lang.Class<?>) throws java.io.IOException;
+  protected void annotateProxyClass(java.lang.Class<?>) throws java.io.IOException;
+  protected void writeLocation(java.lang.String) throws java.io.IOException;
+  static boolean access$000(sun.rmi.server.MarshalOutputStream, boolean) throws java.lang.SecurityException;
+}

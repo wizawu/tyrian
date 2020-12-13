@@ -1,0 +1,6 @@
+Compiled from "ReplParser.java"
+class jdk.jshell.ReplParser extends com.sun.tools.javac.parser.JavacParser {
+  public jdk.jshell.ReplParser(com.sun.tools.javac.parser.ParserFactory, com.sun.tools.javac.parser.Lexer, boolean, boolean, boolean, boolean);
+  public com.sun.tools.javac.tree.JCTree$JCCompilationUnit parseCompilationUnit();
+  com.sun.tools.javac.util.List<? extends com.sun.tools.javac.tree.JCTree> replUnit(com.sun.tools.javac.tree.JCTree$JCModifiers, com.sun.tools.javac.parser.Tokens$Comment);
+}

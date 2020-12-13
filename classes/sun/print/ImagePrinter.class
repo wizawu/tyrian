@@ -1,0 +1,7 @@
+Compiled from "ImagePrinter.java"
+class sun.print.ImagePrinter implements java.awt.print.Printable {
+  java.awt.image.BufferedImage image;
+  sun.print.ImagePrinter(java.io.InputStream);
+  sun.print.ImagePrinter(java.net.URL);
+  public int print(java.awt.Graphics, java.awt.print.PageFormat, int);
+}

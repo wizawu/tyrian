@@ -1,0 +1,6 @@
+Compiled from "SoftPointResampler.java"
+public final class com.sun.media.sound.SoftPointResampler extends com.sun.media.sound.SoftAbstractResampler {
+  public com.sun.media.sound.SoftPointResampler();
+  public int getPadding();
+  public void interpolate(float[], float[], float, float[], float, float[], int[], int);
+}

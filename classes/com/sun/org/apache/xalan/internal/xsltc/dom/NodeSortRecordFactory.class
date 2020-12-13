@@ -1,0 +1,9 @@
+Compiled from "NodeSortRecordFactory.java"
+public class com.sun.org.apache.xalan.internal.xsltc.dom.NodeSortRecordFactory {
+  protected java.text.Collator _collator;
+  public com.sun.org.apache.xalan.internal.xsltc.dom.NodeSortRecordFactory(com.sun.org.apache.xalan.internal.xsltc.DOM, java.lang.String, com.sun.org.apache.xalan.internal.xsltc.Translet, java.lang.String[], java.lang.String[]) throws com.sun.org.apache.xalan.internal.xsltc.TransletException;
+  public com.sun.org.apache.xalan.internal.xsltc.dom.NodeSortRecordFactory(com.sun.org.apache.xalan.internal.xsltc.DOM, java.lang.String, com.sun.org.apache.xalan.internal.xsltc.Translet, java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String[]) throws com.sun.org.apache.xalan.internal.xsltc.TransletException;
+  public com.sun.org.apache.xalan.internal.xsltc.dom.NodeSortRecord makeNodeSortRecord(int, int) throws java.lang.ExceptionInInitializerError, java.lang.LinkageError, java.lang.IllegalAccessException, java.lang.InstantiationException, java.lang.SecurityException, com.sun.org.apache.xalan.internal.xsltc.TransletException;
+  public java.lang.String getClassName();
+  static {};
+}

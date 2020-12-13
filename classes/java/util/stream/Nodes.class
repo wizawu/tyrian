@@ -1,0 +1,30 @@
+Compiled from "Nodes.java"
+final class java.util.stream.Nodes {
+  static final long MAX_ARRAY_SIZE;
+  static final java.lang.String BAD_SIZE;
+  static <T> java.util.function.IntFunction<T[]> castingArray();
+  static <T> java.util.stream.Node<T> emptyNode(java.util.stream.StreamShape);
+  static <T> java.util.stream.Node<T> conc(java.util.stream.StreamShape, java.util.stream.Node<T>, java.util.stream.Node<T>);
+  static <T> java.util.stream.Node<T> node(T[]);
+  static <T> java.util.stream.Node<T> node(java.util.Collection<T>);
+  static <T> java.util.stream.Node$Builder<T> builder(long, java.util.function.IntFunction<T[]>);
+  static <T> java.util.stream.Node$Builder<T> builder();
+  static java.util.stream.Node$OfInt node(int[]);
+  static java.util.stream.Node$Builder$OfInt intBuilder(long);
+  static java.util.stream.Node$Builder$OfInt intBuilder();
+  static java.util.stream.Node$OfLong node(long[]);
+  static java.util.stream.Node$Builder$OfLong longBuilder(long);
+  static java.util.stream.Node$Builder$OfLong longBuilder();
+  static java.util.stream.Node$OfDouble node(double[]);
+  static java.util.stream.Node$Builder$OfDouble doubleBuilder(long);
+  static java.util.stream.Node$Builder$OfDouble doubleBuilder();
+  public static <P_IN, P_OUT> java.util.stream.Node<P_OUT> collect(java.util.stream.PipelineHelper<P_OUT>, java.util.Spliterator<P_IN>, boolean, java.util.function.IntFunction<P_OUT[]>);
+  public static <P_IN> java.util.stream.Node$OfInt collectInt(java.util.stream.PipelineHelper<java.lang.Integer>, java.util.Spliterator<P_IN>, boolean);
+  public static <P_IN> java.util.stream.Node$OfLong collectLong(java.util.stream.PipelineHelper<java.lang.Long>, java.util.Spliterator<P_IN>, boolean);
+  public static <P_IN> java.util.stream.Node$OfDouble collectDouble(java.util.stream.PipelineHelper<java.lang.Double>, java.util.Spliterator<P_IN>, boolean);
+  public static <T> java.util.stream.Node<T> flatten(java.util.stream.Node<T>, java.util.function.IntFunction<T[]>);
+  public static java.util.stream.Node$OfInt flattenInt(java.util.stream.Node$OfInt);
+  public static java.util.stream.Node$OfLong flattenLong(java.util.stream.Node$OfLong);
+  public static java.util.stream.Node$OfDouble flattenDouble(java.util.stream.Node$OfDouble);
+  static {};
+}

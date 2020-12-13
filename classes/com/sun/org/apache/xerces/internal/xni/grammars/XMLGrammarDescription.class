@@ -1,0 +1,6 @@
+Compiled from "XMLGrammarDescription.java"
+public interface com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription extends com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier {
+  public static final java.lang.String XML_SCHEMA;
+  public static final java.lang.String XML_DTD;
+  public abstract java.lang.String getGrammarType();
+}

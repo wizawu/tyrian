@@ -1,0 +1,5 @@
+Compiled from "ServerNotActiveException.java"
+public class java.rmi.server.ServerNotActiveException extends java.lang.Exception {
+  public java.rmi.server.ServerNotActiveException();
+  public java.rmi.server.ServerNotActiveException(java.lang.String);
+}

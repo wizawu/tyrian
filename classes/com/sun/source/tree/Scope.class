@@ -1,0 +1,7 @@
+Compiled from "Scope.java"
+public interface com.sun.source.tree.Scope {
+  public abstract com.sun.source.tree.Scope getEnclosingScope();
+  public abstract javax.lang.model.element.TypeElement getEnclosingClass();
+  public abstract javax.lang.model.element.ExecutableElement getEnclosingMethod();
+  public abstract java.lang.Iterable<? extends javax.lang.model.element.Element> getLocalElements();
+}

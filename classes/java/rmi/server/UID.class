@@ -1,0 +1,11 @@
+Compiled from "UID.java"
+public final class java.rmi.server.UID implements java.io.Serializable {
+  public java.rmi.server.UID();
+  public java.rmi.server.UID(short);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+  public void write(java.io.DataOutput) throws java.io.IOException;
+  public static java.rmi.server.UID read(java.io.DataInput) throws java.io.IOException;
+  static {};
+}

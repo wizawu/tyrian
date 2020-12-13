@@ -1,0 +1,4 @@
+Compiled from "HttpTimeoutException.java"
+public class java.net.http.HttpTimeoutException extends java.io.IOException {
+  public java.net.http.HttpTimeoutException(java.lang.String);
+}

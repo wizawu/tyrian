@@ -1,0 +1,32 @@
+Compiled from "ParagraphView.java"
+public class javax.swing.text.ParagraphView extends javax.swing.text.FlowView implements javax.swing.text.TabExpander {
+  protected int firstLineIndent;
+  static java.lang.Class<?> i18nStrategy;
+  static char[] tabChars;
+  static char[] tabDecimalChars;
+  public javax.swing.text.ParagraphView(javax.swing.text.Element);
+  protected void setJustification(int);
+  protected void setLineSpacing(float);
+  protected void setFirstLineIndent(float);
+  protected void setPropertiesFromAttributes();
+  protected int getLayoutViewCount();
+  protected javax.swing.text.View getLayoutView(int);
+  protected int getNextNorthSouthVisualPositionFrom(int, javax.swing.text.Position$Bias, java.awt.Shape, int, javax.swing.text.Position$Bias[]) throws javax.swing.text.BadLocationException;
+  protected int getClosestPositionTo(int, javax.swing.text.Position$Bias, java.awt.Shape, int, javax.swing.text.Position$Bias[], int, int) throws javax.swing.text.BadLocationException;
+  protected boolean flipEastAndWestAtEnds(int, javax.swing.text.Position$Bias);
+  public int getFlowSpan(int);
+  public int getFlowStart(int);
+  protected javax.swing.text.View createRow();
+  public float nextTabStop(float, int);
+  protected javax.swing.text.TabSet getTabSet();
+  protected float getPartialSize(int, int);
+  protected int findOffsetToCharactersInString(char[], int);
+  protected float getTabBase();
+  public void paint(java.awt.Graphics, java.awt.Shape);
+  public float getAlignment(int);
+  public javax.swing.text.View breakView(int, float, java.awt.Shape);
+  public int getBreakWeight(int, float);
+  protected javax.swing.SizeRequirements calculateMinorAxisRequirements(int, javax.swing.SizeRequirements);
+  public void changedUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  static {};
+}

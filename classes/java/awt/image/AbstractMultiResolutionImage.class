@@ -1,0 +1,10 @@
+Compiled from "AbstractMultiResolutionImage.java"
+public abstract class java.awt.image.AbstractMultiResolutionImage extends java.awt.Image implements java.awt.image.MultiResolutionImage {
+  public java.awt.image.AbstractMultiResolutionImage();
+  public int getWidth(java.awt.image.ImageObserver);
+  public int getHeight(java.awt.image.ImageObserver);
+  public java.awt.image.ImageProducer getSource();
+  public java.awt.Graphics getGraphics();
+  public java.lang.Object getProperty(java.lang.String, java.awt.image.ImageObserver);
+  protected abstract java.awt.Image getBaseImage();
+}

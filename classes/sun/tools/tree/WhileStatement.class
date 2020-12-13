@@ -1,0 +1,12 @@
+Compiled from "WhileStatement.java"
+public class sun.tools.tree.WhileStatement extends sun.tools.tree.Statement {
+  sun.tools.tree.Expression cond;
+  sun.tools.tree.Statement body;
+  public sun.tools.tree.WhileStatement(long, sun.tools.tree.Expression, sun.tools.tree.Statement);
+  sun.tools.tree.Vset check(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public sun.tools.tree.Statement inline(sun.tools.java.Environment, sun.tools.tree.Context);
+  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
+  public sun.tools.tree.Statement copyInline(sun.tools.tree.Context, boolean);
+  public void code(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  public void print(java.io.PrintStream, int);
+}

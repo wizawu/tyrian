@@ -1,0 +1,5 @@
+Compiled from "TestParser.java"
+public class sun.jvm.hotspot.debugger.win32.coff.TestParser {
+  public sun.jvm.hotspot.debugger.win32.coff.TestParser();
+  public static void main(java.lang.String[]);
+}

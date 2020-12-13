@@ -1,0 +1,11 @@
+Compiled from "DocFileFactory.java"
+public abstract class jdk.javadoc.internal.doclets.toolkit.util.DocFileFactory {
+  protected jdk.javadoc.internal.doclets.toolkit.BaseConfiguration configuration;
+  public static synchronized jdk.javadoc.internal.doclets.toolkit.util.DocFileFactory getFactory(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  protected jdk.javadoc.internal.doclets.toolkit.util.DocFileFactory(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
+  public abstract void setDestDir(java.lang.String) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  abstract jdk.javadoc.internal.doclets.toolkit.util.DocFile createFileForDirectory(java.lang.String);
+  abstract jdk.javadoc.internal.doclets.toolkit.util.DocFile createFileForInput(java.lang.String);
+  abstract jdk.javadoc.internal.doclets.toolkit.util.DocFile createFileForOutput(jdk.javadoc.internal.doclets.toolkit.util.DocPath);
+  abstract java.lang.Iterable<jdk.javadoc.internal.doclets.toolkit.util.DocFile> list(javax.tools.JavaFileManager$Location, jdk.javadoc.internal.doclets.toolkit.util.DocPath);
+}

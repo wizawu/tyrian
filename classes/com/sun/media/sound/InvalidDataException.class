@@ -1,0 +1,5 @@
+Compiled from "InvalidDataException.java"
+public class com.sun.media.sound.InvalidDataException extends java.io.IOException {
+  public com.sun.media.sound.InvalidDataException();
+  public com.sun.media.sound.InvalidDataException(java.lang.String);
+}

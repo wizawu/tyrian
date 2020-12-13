@@ -1,0 +1,4 @@
+Compiled from "LiteralTree.java"
+public interface com.sun.source.tree.LiteralTree extends com.sun.source.tree.ExpressionTree {
+  public abstract java.lang.Object getValue();
+}

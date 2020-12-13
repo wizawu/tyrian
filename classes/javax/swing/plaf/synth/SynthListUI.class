@@ -1,0 +1,13 @@
+Compiled from "SynthListUI.java"
+public class javax.swing.plaf.synth.SynthListUI extends javax.swing.plaf.basic.BasicListUI implements java.beans.PropertyChangeListener,javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthListUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  protected void installListeners();
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  protected void uninstallListeners();
+  protected void installDefaults();
+  protected void uninstallDefaults();
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+}

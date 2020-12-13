@@ -1,0 +1,15 @@
+Compiled from "ResourceResolverSpi.java"
+public abstract class com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
+  protected java.util.Map<java.lang.String, java.lang.String> properties;
+  public com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi();
+  public abstract com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput engineResolveURI(com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext) throws com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
+  public void engineSetProperty(java.lang.String, java.lang.String);
+  public java.lang.String engineGetProperty(java.lang.String);
+  public void engineAddProperies(java.util.Map<java.lang.String, java.lang.String>);
+  public boolean engineIsThreadSafe();
+  public abstract boolean engineCanResolveURI(com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext);
+  public java.lang.String[] engineGetPropertyKeys();
+  public boolean understandsProperty(java.lang.String);
+  public static java.lang.String fixURI(java.lang.String);
+  static {};
+}

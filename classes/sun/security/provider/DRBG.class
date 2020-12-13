@@ -1,0 +1,11 @@
+Compiled from "DRBG.java"
+public final class sun.security.provider.DRBG extends java.security.SecureRandomSpi {
+  public sun.security.provider.DRBG(java.security.SecureRandomParameters);
+  protected void engineSetSeed(byte[]);
+  protected void engineNextBytes(byte[]);
+  protected byte[] engineGenerateSeed(int);
+  protected void engineNextBytes(byte[], java.security.SecureRandomParameters);
+  protected void engineReseed(java.security.SecureRandomParameters);
+  protected java.security.SecureRandomParameters engineGetParameters();
+  public java.lang.String toString();
+}

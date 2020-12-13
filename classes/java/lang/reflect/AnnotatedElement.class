@@ -1,0 +1,10 @@
+Compiled from "AnnotatedElement.java"
+public interface java.lang.reflect.AnnotatedElement {
+  public default boolean isAnnotationPresent(java.lang.Class<? extends java.lang.annotation.Annotation>);
+  public abstract <T extends java.lang.annotation.Annotation> T getAnnotation(java.lang.Class<T>);
+  public abstract java.lang.annotation.Annotation[] getAnnotations();
+  public default <T extends java.lang.annotation.Annotation> T[] getAnnotationsByType(java.lang.Class<T>);
+  public default <T extends java.lang.annotation.Annotation> T getDeclaredAnnotation(java.lang.Class<T>);
+  public default <T extends java.lang.annotation.Annotation> T[] getDeclaredAnnotationsByType(java.lang.Class<T>);
+  public abstract java.lang.annotation.Annotation[] getDeclaredAnnotations();
+}

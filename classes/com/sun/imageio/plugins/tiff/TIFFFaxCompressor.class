@@ -1,0 +1,31 @@
+Compiled from "TIFFFaxCompressor.java"
+abstract class com.sun.imageio.plugins.tiff.TIFFFaxCompressor extends com.sun.imageio.plugins.tiff.TIFFCompressor {
+  protected static final int WHITE;
+  protected static final int BLACK;
+  protected static final byte[] byteTable;
+  protected static final int[] termCodesBlack;
+  protected static final int[] termCodesWhite;
+  protected static final int[] makeupCodesBlack;
+  protected static final int[] makeupCodesWhite;
+  protected static final int[] passMode;
+  protected static final int[] vertMode;
+  protected static final int[] horzMode;
+  protected static final int[][] termCodes;
+  protected static final int[][] makeupCodes;
+  protected static final int[][] pass;
+  protected static final int[][] vert;
+  protected static final int[][] horz;
+  protected boolean inverseFill;
+  protected int bits;
+  protected int ndex;
+  protected com.sun.imageio.plugins.tiff.TIFFFaxCompressor(java.lang.String, int, boolean);
+  public void setMetadata(javax.imageio.metadata.IIOMetadata);
+  public int nextState(byte[], int, int, int);
+  public void initBitBuf();
+  public int add1DBits(byte[], int, int, int);
+  public int add2DBits(byte[], int, int[][], int);
+  public int addEOL(boolean, boolean, boolean, byte[], int);
+  public int addEOFB(byte[], int);
+  public int encode1D(byte[], int, int, int, byte[], int);
+  static {};
+}

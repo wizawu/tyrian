@@ -1,0 +1,6 @@
+Compiled from "KrbAppMessage.java"
+abstract class sun.security.krb5.KrbAppMessage {
+  sun.security.krb5.KrbAppMessage();
+  void check(sun.security.krb5.internal.KerberosTime, java.lang.Integer, java.lang.Integer, sun.security.krb5.internal.HostAddress, sun.security.krb5.internal.HostAddress, sun.security.krb5.internal.SeqNumber, sun.security.krb5.internal.HostAddress, sun.security.krb5.internal.HostAddress, boolean, boolean, sun.security.krb5.PrincipalName) throws sun.security.krb5.internal.KrbApErrException;
+  static {};
+}

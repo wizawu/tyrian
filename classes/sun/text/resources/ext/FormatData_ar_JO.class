@@ -1,0 +1,5 @@
+Compiled from "FormatData_ar_JO.java"
+public class sun.text.resources.ext.FormatData_ar_JO extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_ar_JO();
+  protected final java.lang.Object[][] getContents();
+}

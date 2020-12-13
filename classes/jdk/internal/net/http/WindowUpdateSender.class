@@ -1,0 +1,15 @@
+Compiled from "WindowUpdateSender.java"
+abstract class jdk.internal.net.http.WindowUpdateSender {
+  final jdk.internal.net.http.common.Logger debug;
+  final int limit;
+  final jdk.internal.net.http.Http2Connection connection;
+  final java.util.concurrent.atomic.AtomicInteger received;
+  volatile java.lang.String dbgString;
+  jdk.internal.net.http.WindowUpdateSender(jdk.internal.net.http.Http2Connection);
+  jdk.internal.net.http.WindowUpdateSender(jdk.internal.net.http.Http2Connection, int);
+  jdk.internal.net.http.WindowUpdateSender(jdk.internal.net.http.Http2Connection, int, int);
+  abstract int getStreamId();
+  void update(int);
+  void sendWindowUpdate(int);
+  java.lang.String dbgString();
+}

@@ -1,0 +1,5 @@
+Compiled from "I2F.java"
+public class com.sun.org.apache.bcel.internal.generic.I2F extends com.sun.org.apache.bcel.internal.generic.ConversionInstruction {
+  public com.sun.org.apache.bcel.internal.generic.I2F();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

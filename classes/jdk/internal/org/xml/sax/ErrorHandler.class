@@ -1,0 +1,6 @@
+Compiled from "ErrorHandler.java"
+public interface jdk.internal.org.xml.sax.ErrorHandler {
+  public abstract void warning(jdk.internal.org.xml.sax.SAXParseException) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void error(jdk.internal.org.xml.sax.SAXParseException) throws jdk.internal.org.xml.sax.SAXException;
+  public abstract void fatalError(jdk.internal.org.xml.sax.SAXParseException) throws jdk.internal.org.xml.sax.SAXException;
+}

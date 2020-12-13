@@ -1,0 +1,5 @@
+Compiled from "PartialResultException.java"
+public class javax.naming.PartialResultException extends javax.naming.NamingException {
+  public javax.naming.PartialResultException(java.lang.String);
+  public javax.naming.PartialResultException();
+}

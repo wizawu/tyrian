@@ -1,0 +1,4 @@
+Compiled from "OptionChecker.java"
+public interface javax.tools.OptionChecker {
+  public abstract int isSupportedOption(java.lang.String);
+}

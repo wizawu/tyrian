@@ -1,0 +1,6 @@
+Compiled from "DSAPublicKeyImpl.java"
+public final class sun.security.provider.DSAPublicKeyImpl extends sun.security.provider.DSAPublicKey {
+  public sun.security.provider.DSAPublicKeyImpl(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger) throws java.security.InvalidKeyException;
+  public sun.security.provider.DSAPublicKeyImpl(byte[]) throws java.security.InvalidKeyException;
+  protected java.lang.Object writeReplace() throws java.io.ObjectStreamException;
+}

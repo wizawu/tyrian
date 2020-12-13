@@ -1,0 +1,7 @@
+Compiled from "JdiInitiator.java"
+public class jdk.jshell.execution.JdiInitiator {
+  public jdk.jshell.execution.JdiInitiator(int, java.util.List<java.lang.String>, java.lang.String, boolean, java.lang.String, int, java.util.Map<java.lang.String, java.lang.String>);
+  public com.sun.jdi.VirtualMachine vm();
+  public java.lang.Process process();
+  com.sun.jdi.VirtualMachine timedVirtualMachineCreation(java.util.concurrent.Callable<com.sun.jdi.VirtualMachine>, java.util.concurrent.Callable<java.lang.Integer>) throws java.lang.Exception;
+}

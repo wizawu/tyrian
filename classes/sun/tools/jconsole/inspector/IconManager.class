@@ -1,0 +1,8 @@
+Compiled from "IconManager.java"
+public class sun.tools.jconsole.inspector.IconManager {
+  public static javax.swing.Icon MBEAN;
+  public static javax.swing.Icon MBEANSERVERDELEGATE;
+  public static javax.swing.Icon DEFAULT_XOBJECT;
+  public sun.tools.jconsole.inspector.IconManager();
+  static {};
+}

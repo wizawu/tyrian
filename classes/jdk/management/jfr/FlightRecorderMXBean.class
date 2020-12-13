@@ -1,0 +1,23 @@
+Compiled from "FlightRecorderMXBean.java"
+public interface jdk.management.jfr.FlightRecorderMXBean extends java.lang.management.PlatformManagedObject {
+  public static final java.lang.String MXBEAN_NAME;
+  public abstract long newRecording() throws java.lang.IllegalStateException, java.lang.SecurityException;
+  public abstract long takeSnapshot();
+  public abstract long cloneRecording(long, boolean) throws java.lang.IllegalArgumentException, java.lang.SecurityException;
+  public abstract void startRecording(long) throws java.lang.IllegalStateException, java.lang.SecurityException;
+  public abstract boolean stopRecording(long) throws java.lang.IllegalArgumentException, java.lang.IllegalStateException, java.lang.SecurityException;
+  public abstract void closeRecording(long) throws java.io.IOException;
+  public abstract long openStream(long, java.util.Map<java.lang.String, java.lang.String>) throws java.io.IOException;
+  public abstract void closeStream(long) throws java.io.IOException;
+  public abstract byte[] readStream(long) throws java.io.IOException;
+  public abstract java.util.Map<java.lang.String, java.lang.String> getRecordingOptions(long) throws java.lang.IllegalArgumentException;
+  public abstract java.util.Map<java.lang.String, java.lang.String> getRecordingSettings(long) throws java.lang.IllegalArgumentException;
+  public abstract void setConfiguration(long, java.lang.String) throws java.lang.IllegalArgumentException;
+  public abstract void setPredefinedConfiguration(long, java.lang.String) throws java.lang.IllegalArgumentException;
+  public abstract void setRecordingSettings(long, java.util.Map<java.lang.String, java.lang.String>) throws java.lang.IllegalArgumentException;
+  public abstract void setRecordingOptions(long, java.util.Map<java.lang.String, java.lang.String>) throws java.lang.IllegalArgumentException;
+  public abstract java.util.List<jdk.management.jfr.RecordingInfo> getRecordings();
+  public abstract java.util.List<jdk.management.jfr.ConfigurationInfo> getConfigurations();
+  public abstract java.util.List<jdk.management.jfr.EventTypeInfo> getEventTypes();
+  public abstract void copyTo(long, java.lang.String) throws java.io.IOException, java.lang.SecurityException;
+}

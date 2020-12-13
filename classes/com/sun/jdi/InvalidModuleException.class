@@ -1,0 +1,5 @@
+Compiled from "InvalidModuleException.java"
+public class com.sun.jdi.InvalidModuleException extends java.lang.RuntimeException {
+  public com.sun.jdi.InvalidModuleException();
+  public com.sun.jdi.InvalidModuleException(java.lang.String);
+}

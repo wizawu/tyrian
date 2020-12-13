@@ -1,0 +1,14 @@
+Compiled from "RGBImageFilter.java"
+public abstract class java.awt.image.RGBImageFilter extends java.awt.image.ImageFilter {
+  protected java.awt.image.ColorModel origmodel;
+  protected java.awt.image.ColorModel newmodel;
+  protected boolean canFilterIndexColorModel;
+  public java.awt.image.RGBImageFilter();
+  public void setColorModel(java.awt.image.ColorModel);
+  public void substituteColorModel(java.awt.image.ColorModel, java.awt.image.ColorModel);
+  public java.awt.image.IndexColorModel filterIndexColorModel(java.awt.image.IndexColorModel);
+  public void filterRGBPixels(int, int, int, int, int[], int, int);
+  public void setPixels(int, int, int, int, java.awt.image.ColorModel, byte[], int, int);
+  public void setPixels(int, int, int, int, java.awt.image.ColorModel, int[], int, int);
+  public abstract int filterRGB(int, int, int);
+}

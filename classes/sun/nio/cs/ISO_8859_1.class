@@ -1,0 +1,10 @@
+Compiled from "ISO_8859_1.java"
+public class sun.nio.cs.ISO_8859_1 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
+  public static final sun.nio.cs.ISO_8859_1 INSTANCE;
+  public sun.nio.cs.ISO_8859_1();
+  public java.lang.String historicalName();
+  public boolean contains(java.nio.charset.Charset);
+  public java.nio.charset.CharsetDecoder newDecoder();
+  public java.nio.charset.CharsetEncoder newEncoder();
+  static {};
+}

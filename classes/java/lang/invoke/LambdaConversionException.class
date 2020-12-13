@@ -1,0 +1,8 @@
+Compiled from "LambdaConversionException.java"
+public class java.lang.invoke.LambdaConversionException extends java.lang.Exception {
+  public java.lang.invoke.LambdaConversionException();
+  public java.lang.invoke.LambdaConversionException(java.lang.String);
+  public java.lang.invoke.LambdaConversionException(java.lang.String, java.lang.Throwable);
+  public java.lang.invoke.LambdaConversionException(java.lang.Throwable);
+  public java.lang.invoke.LambdaConversionException(java.lang.String, java.lang.Throwable, boolean, boolean);
+}

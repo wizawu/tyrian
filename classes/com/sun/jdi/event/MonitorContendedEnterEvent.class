@@ -1,0 +1,5 @@
+Compiled from "MonitorContendedEnterEvent.java"
+public interface com.sun.jdi.event.MonitorContendedEnterEvent extends com.sun.jdi.event.LocatableEvent {
+  public abstract com.sun.jdi.ThreadReference thread();
+  public abstract com.sun.jdi.ObjectReference monitor();
+}

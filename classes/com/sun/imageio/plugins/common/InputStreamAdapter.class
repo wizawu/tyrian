@@ -1,0 +1,7 @@
+Compiled from "InputStreamAdapter.java"
+public class com.sun.imageio.plugins.common.InputStreamAdapter extends java.io.InputStream {
+  javax.imageio.stream.ImageInputStream stream;
+  public com.sun.imageio.plugins.common.InputStreamAdapter(javax.imageio.stream.ImageInputStream);
+  public int read() throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+}

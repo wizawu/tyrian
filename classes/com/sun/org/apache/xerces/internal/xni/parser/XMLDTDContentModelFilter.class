@@ -1,0 +1,3 @@
+Compiled from "XMLDTDContentModelFilter.java"
+public interface com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelFilter extends com.sun.org.apache.xerces.internal.xni.XMLDTDContentModelHandler,com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource {
+}

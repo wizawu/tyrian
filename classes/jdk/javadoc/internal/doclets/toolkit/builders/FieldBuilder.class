@@ -1,0 +1,12 @@
+Compiled from "FieldBuilder.java"
+public class jdk.javadoc.internal.doclets.toolkit.builders.FieldBuilder extends jdk.javadoc.internal.doclets.toolkit.builders.AbstractMemberBuilder {
+  public static jdk.javadoc.internal.doclets.toolkit.builders.FieldBuilder getInstance(jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder$Context, javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.FieldWriter);
+  public boolean hasMembersToDocument();
+  public void build(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildFieldDoc(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildSignature(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildDeprecationInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildFieldComments(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildTagInfo(jdk.javadoc.internal.doclets.toolkit.Content);
+  public jdk.javadoc.internal.doclets.toolkit.FieldWriter getWriter();
+}

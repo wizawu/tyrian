@@ -1,0 +1,16 @@
+Compiled from "HttpServer.java"
+public abstract class com.sun.net.httpserver.HttpServer {
+  protected com.sun.net.httpserver.HttpServer();
+  public static com.sun.net.httpserver.HttpServer create() throws java.io.IOException;
+  public static com.sun.net.httpserver.HttpServer create(java.net.InetSocketAddress, int) throws java.io.IOException;
+  public abstract void bind(java.net.InetSocketAddress, int) throws java.io.IOException;
+  public abstract void start();
+  public abstract void setExecutor(java.util.concurrent.Executor);
+  public abstract java.util.concurrent.Executor getExecutor();
+  public abstract void stop(int);
+  public abstract com.sun.net.httpserver.HttpContext createContext(java.lang.String, com.sun.net.httpserver.HttpHandler);
+  public abstract com.sun.net.httpserver.HttpContext createContext(java.lang.String);
+  public abstract void removeContext(java.lang.String) throws java.lang.IllegalArgumentException;
+  public abstract void removeContext(com.sun.net.httpserver.HttpContext);
+  public abstract java.net.InetSocketAddress getAddress();
+}

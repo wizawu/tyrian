@@ -1,0 +1,8 @@
+Compiled from "CatalogResolver.java"
+public interface javax.xml.catalog.CatalogResolver extends org.xml.sax.EntityResolver,javax.xml.stream.XMLResolver,javax.xml.transform.URIResolver,org.w3c.dom.ls.LSResourceResolver {
+  public abstract org.xml.sax.InputSource resolveEntity(java.lang.String, java.lang.String);
+  public abstract javax.xml.transform.Source resolve(java.lang.String, java.lang.String);
+  public abstract java.io.InputStream resolveEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public abstract org.w3c.dom.ls.LSInput resolveResource(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public default java.lang.Object resolveEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+}

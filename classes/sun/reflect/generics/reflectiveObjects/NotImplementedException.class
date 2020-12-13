@@ -1,0 +1,4 @@
+Compiled from "NotImplementedException.java"
+public class sun.reflect.generics.reflectiveObjects.NotImplementedException extends java.lang.RuntimeException {
+  public sun.reflect.generics.reflectiveObjects.NotImplementedException();
+}

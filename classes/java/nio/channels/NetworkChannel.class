@@ -1,0 +1,8 @@
+Compiled from "NetworkChannel.java"
+public interface java.nio.channels.NetworkChannel extends java.nio.channels.Channel {
+  public abstract java.nio.channels.NetworkChannel bind(java.net.SocketAddress) throws java.io.IOException;
+  public abstract java.net.SocketAddress getLocalAddress() throws java.io.IOException;
+  public abstract <T> java.nio.channels.NetworkChannel setOption(java.net.SocketOption<T>, T) throws java.io.IOException;
+  public abstract <T> T getOption(java.net.SocketOption<T>) throws java.io.IOException;
+  public abstract java.util.Set<java.net.SocketOption<?>> supportedOptions();
+}

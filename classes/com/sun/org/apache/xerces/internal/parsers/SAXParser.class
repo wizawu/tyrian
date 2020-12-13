@@ -1,0 +1,13 @@
+Compiled from "SAXParser.java"
+public class com.sun.org.apache.xerces.internal.parsers.SAXParser extends com.sun.org.apache.xerces.internal.parsers.AbstractSAXParser {
+  protected static final java.lang.String NOTIFY_BUILTIN_REFS;
+  protected static final java.lang.String REPORT_WHITESPACE;
+  protected static final java.lang.String SYMBOL_TABLE;
+  protected static final java.lang.String XMLGRAMMAR_POOL;
+  public com.sun.org.apache.xerces.internal.parsers.SAXParser(com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration);
+  public com.sun.org.apache.xerces.internal.parsers.SAXParser();
+  public com.sun.org.apache.xerces.internal.parsers.SAXParser(com.sun.org.apache.xerces.internal.util.SymbolTable);
+  public com.sun.org.apache.xerces.internal.parsers.SAXParser(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
+  public void setProperty(java.lang.String, java.lang.Object) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  static {};
+}

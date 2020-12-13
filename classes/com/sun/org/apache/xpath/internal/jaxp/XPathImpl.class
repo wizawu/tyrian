@@ -1,0 +1,21 @@
+Compiled from "XPathImpl.java"
+public class com.sun.org.apache.xpath.internal.jaxp.XPathImpl extends com.sun.org.apache.xpath.internal.jaxp.XPathImplUtil implements javax.xml.xpath.XPath {
+  com.sun.org.apache.xpath.internal.jaxp.XPathImpl(javax.xml.xpath.XPathVariableResolver, javax.xml.xpath.XPathFunctionResolver);
+  com.sun.org.apache.xpath.internal.jaxp.XPathImpl(javax.xml.xpath.XPathVariableResolver, javax.xml.xpath.XPathFunctionResolver, boolean, jdk.xml.internal.JdkXmlFeatures);
+  public void setXPathVariableResolver(javax.xml.xpath.XPathVariableResolver);
+  public javax.xml.xpath.XPathVariableResolver getXPathVariableResolver();
+  public void setXPathFunctionResolver(javax.xml.xpath.XPathFunctionResolver);
+  public javax.xml.xpath.XPathFunctionResolver getXPathFunctionResolver();
+  public void setNamespaceContext(javax.xml.namespace.NamespaceContext);
+  public javax.xml.namespace.NamespaceContext getNamespaceContext();
+  public java.lang.Object evaluate(java.lang.String, java.lang.Object, javax.xml.namespace.QName) throws javax.xml.xpath.XPathExpressionException;
+  public java.lang.String evaluate(java.lang.String, java.lang.Object) throws javax.xml.xpath.XPathExpressionException;
+  public javax.xml.xpath.XPathExpression compile(java.lang.String) throws javax.xml.xpath.XPathExpressionException;
+  public java.lang.Object evaluate(java.lang.String, org.xml.sax.InputSource, javax.xml.namespace.QName) throws javax.xml.xpath.XPathExpressionException;
+  public java.lang.String evaluate(java.lang.String, org.xml.sax.InputSource) throws javax.xml.xpath.XPathExpressionException;
+  public void reset();
+  public <T> T evaluateExpression(java.lang.String, java.lang.Object, java.lang.Class<T>) throws javax.xml.xpath.XPathExpressionException;
+  public javax.xml.xpath.XPathEvaluationResult<?> evaluateExpression(java.lang.String, java.lang.Object) throws javax.xml.xpath.XPathExpressionException;
+  public <T> T evaluateExpression(java.lang.String, org.xml.sax.InputSource, java.lang.Class<T>) throws javax.xml.xpath.XPathExpressionException;
+  public javax.xml.xpath.XPathEvaluationResult<?> evaluateExpression(java.lang.String, org.xml.sax.InputSource) throws javax.xml.xpath.XPathExpressionException;
+}

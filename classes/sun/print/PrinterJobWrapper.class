@@ -1,0 +1,9 @@
+Compiled from "PrinterJobWrapper.java"
+public class sun.print.PrinterJobWrapper implements javax.print.attribute.PrintRequestAttribute {
+  public sun.print.PrinterJobWrapper(java.awt.print.PrinterJob);
+  public java.awt.print.PrinterJob getPrinterJob();
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+  public java.lang.String toString();
+  public int hashCode();
+}

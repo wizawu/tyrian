@@ -1,0 +1,5 @@
+Compiled from "InvalidLineNumberException.java"
+public class com.sun.jdi.InvalidLineNumberException extends java.lang.RuntimeException {
+  public com.sun.jdi.InvalidLineNumberException();
+  public com.sun.jdi.InvalidLineNumberException(java.lang.String);
+}

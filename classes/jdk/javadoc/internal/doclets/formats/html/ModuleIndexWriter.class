@@ -1,0 +1,14 @@
+Compiled from "ModuleIndexWriter.java"
+public class jdk.javadoc.internal.doclets.formats.html.ModuleIndexWriter extends jdk.javadoc.internal.doclets.formats.html.AbstractModuleIndexWriter {
+  public jdk.javadoc.internal.doclets.formats.html.ModuleIndexWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath);
+  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void addIndex(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addIndexContents(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addModulesList(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addOverviewHeader(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addOverviewComment(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addOverview(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addNavigationBarHeader(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addNavigationBarFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addModulePackagesList(java.util.Map<javax.lang.model.element.ModuleElement, java.util.Set<javax.lang.model.element.PackageElement>>, java.lang.String, java.lang.String, jdk.javadoc.internal.doclets.toolkit.Content, javax.lang.model.element.ModuleElement);
+}

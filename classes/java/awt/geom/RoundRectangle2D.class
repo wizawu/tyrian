@@ -1,0 +1,15 @@
+Compiled from "RoundRectangle2D.java"
+public abstract class java.awt.geom.RoundRectangle2D extends java.awt.geom.RectangularShape {
+  protected java.awt.geom.RoundRectangle2D();
+  public abstract double getArcWidth();
+  public abstract double getArcHeight();
+  public abstract void setRoundRect(double, double, double, double, double, double);
+  public void setRoundRect(java.awt.geom.RoundRectangle2D);
+  public void setFrame(double, double, double, double);
+  public boolean contains(double, double);
+  public boolean intersects(double, double, double, double);
+  public boolean contains(double, double, double, double);
+  public java.awt.geom.PathIterator getPathIterator(java.awt.geom.AffineTransform);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

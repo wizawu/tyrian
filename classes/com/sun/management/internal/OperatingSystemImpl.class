@@ -1,0 +1,15 @@
+Compiled from "OperatingSystemImpl.java"
+class com.sun.management.internal.OperatingSystemImpl extends sun.management.BaseOperatingSystemImpl implements com.sun.management.UnixOperatingSystemMXBean {
+  com.sun.management.internal.OperatingSystemImpl(sun.management.VMManagement);
+  public long getCommittedVirtualMemorySize();
+  public long getTotalSwapSpaceSize();
+  public long getFreeSwapSpaceSize();
+  public long getProcessCpuTime();
+  public long getFreePhysicalMemorySize();
+  public long getTotalPhysicalMemorySize();
+  public long getOpenFileDescriptorCount();
+  public long getMaxFileDescriptorCount();
+  public double getSystemCpuLoad();
+  public double getProcessCpuLoad();
+  static {};
+}

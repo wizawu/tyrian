@@ -1,0 +1,9 @@
+Compiled from "MonitorInfo.java"
+public class sun.jvm.hotspot.runtime.MonitorInfo {
+  public sun.jvm.hotspot.runtime.MonitorInfo(sun.jvm.hotspot.debugger.OopHandle, sun.jvm.hotspot.runtime.BasicLock, boolean, boolean);
+  public sun.jvm.hotspot.debugger.OopHandle owner();
+  public sun.jvm.hotspot.debugger.OopHandle ownerKlass();
+  public sun.jvm.hotspot.runtime.BasicLock lock();
+  public boolean eliminated();
+  public boolean ownerIsScalarReplaced();
+}

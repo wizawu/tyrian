@@ -1,0 +1,8 @@
+Compiled from "LinkRequest.java"
+public interface jdk.dynalink.linker.LinkRequest {
+  public abstract jdk.dynalink.CallSiteDescriptor getCallSiteDescriptor();
+  public abstract java.lang.Object[] getArguments();
+  public abstract java.lang.Object getReceiver();
+  public abstract boolean isCallSiteUnstable();
+  public abstract jdk.dynalink.linker.LinkRequest replaceArguments(jdk.dynalink.CallSiteDescriptor, java.lang.Object...);
+}

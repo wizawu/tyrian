@@ -1,0 +1,5 @@
+Compiled from "HttpCaller.java"
+public class sun.security.jgss.HttpCaller extends sun.security.jgss.GSSCaller {
+  public sun.security.jgss.HttpCaller(sun.net.www.protocol.http.HttpCallerInfo);
+  public sun.net.www.protocol.http.HttpCallerInfo info();
+}

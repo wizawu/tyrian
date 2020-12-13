@@ -1,0 +1,6 @@
+Compiled from "XRepaintArea.java"
+final class sun.awt.X11.XRepaintArea extends sun.awt.RepaintArea {
+  sun.awt.X11.XRepaintArea();
+  protected void updateComponent(java.awt.Component, java.awt.Graphics);
+  protected void paintComponent(java.awt.Component, java.awt.Graphics);
+}

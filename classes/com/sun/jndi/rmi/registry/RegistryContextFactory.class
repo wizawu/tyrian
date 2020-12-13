@@ -1,0 +1,7 @@
+Compiled from "RegistryContextFactory.java"
+public class com.sun.jndi.rmi.registry.RegistryContextFactory implements javax.naming.spi.ObjectFactory,javax.naming.spi.InitialContextFactory {
+  public static final java.lang.String ADDRESS_TYPE;
+  public com.sun.jndi.rmi.registry.RegistryContextFactory();
+  public javax.naming.Context getInitialContext(java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  public java.lang.Object getObjectInstance(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+}

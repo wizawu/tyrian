@@ -1,0 +1,5 @@
+Compiled from "ConstructKeys.java"
+final class com.sun.crypto.provider.ConstructKeys {
+  com.sun.crypto.provider.ConstructKeys();
+  static final java.security.Key constructKey(byte[], java.lang.String, int) throws java.security.InvalidKeyException, java.security.NoSuchAlgorithmException;
+}

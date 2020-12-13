@@ -1,0 +1,10 @@
+Compiled from "ForwardPositionIterator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.dom.ForwardPositionIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIteratorBase {
+  public com.sun.org.apache.xalan.internal.xsltc.dom.ForwardPositionIterator(com.sun.org.apache.xml.internal.dtm.DTMAxisIterator);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator cloneIterator();
+  public int next();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator setStartNode(int);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator reset();
+  public void setMark();
+  public void gotoMark();
+}

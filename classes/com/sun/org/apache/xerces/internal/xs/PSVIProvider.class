@@ -1,0 +1,6 @@
+Compiled from "PSVIProvider.java"
+public interface com.sun.org.apache.xerces.internal.xs.PSVIProvider {
+  public abstract com.sun.org.apache.xerces.internal.xs.ElementPSVI getElementPSVI();
+  public abstract com.sun.org.apache.xerces.internal.xs.AttributePSVI getAttributePSVI(int);
+  public abstract com.sun.org.apache.xerces.internal.xs.AttributePSVI getAttributePSVIByName(java.lang.String, java.lang.String);
+}

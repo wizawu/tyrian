@@ -1,0 +1,6 @@
+Compiled from "JrtPackagesHelper.java"
+final class jdk.nashorn.tools.jjs.JrtPackagesHelper extends jdk.nashorn.tools.jjs.PackagesHelper {
+  jdk.nashorn.tools.jjs.JrtPackagesHelper(jdk.nashorn.internal.runtime.Context) throws java.io.IOException;
+  void close() throws java.io.IOException;
+  java.util.Set<java.lang.String> listPackage(java.lang.String) throws java.io.IOException;
+}

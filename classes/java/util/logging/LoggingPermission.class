@@ -1,0 +1,4 @@
+Compiled from "LoggingPermission.java"
+public final class java.util.logging.LoggingPermission extends java.security.BasicPermission {
+  public java.util.logging.LoggingPermission(java.lang.String, java.lang.String) throws java.lang.IllegalArgumentException;
+}

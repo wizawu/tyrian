@@ -1,0 +1,34 @@
+Compiled from "Choice.java"
+public class java.awt.Choice extends java.awt.Component implements java.awt.ItemSelectable,javax.accessibility.Accessible {
+  java.util.Vector<java.lang.String> pItems;
+  int selectedIndex;
+  transient java.awt.event.ItemListener itemListener;
+  public java.awt.Choice() throws java.awt.HeadlessException;
+  java.lang.String constructComponentName();
+  public void addNotify();
+  public int getItemCount();
+  public int countItems();
+  public java.lang.String getItem(int);
+  final java.lang.String getItemImpl(int);
+  public void add(java.lang.String);
+  public void addItem(java.lang.String);
+  public void insert(java.lang.String, int);
+  public void remove(java.lang.String);
+  public void remove(int);
+  public void removeAll();
+  public synchronized java.lang.String getSelectedItem();
+  public synchronized java.lang.Object[] getSelectedObjects();
+  public int getSelectedIndex();
+  public synchronized void select(int);
+  public synchronized void select(java.lang.String);
+  public synchronized void addItemListener(java.awt.event.ItemListener);
+  public synchronized void removeItemListener(java.awt.event.ItemListener);
+  public synchronized java.awt.event.ItemListener[] getItemListeners();
+  public <T extends java.util.EventListener> T[] getListeners(java.lang.Class<T>);
+  boolean eventEnabled(java.awt.AWTEvent);
+  protected void processEvent(java.awt.AWTEvent);
+  protected void processItemEvent(java.awt.event.ItemEvent);
+  protected java.lang.String paramString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  static {};
+}

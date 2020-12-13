@@ -1,0 +1,7 @@
+Compiled from "PeerAddressChangeNotification.java"
+public abstract class com.sun.nio.sctp.PeerAddressChangeNotification implements com.sun.nio.sctp.Notification {
+  protected com.sun.nio.sctp.PeerAddressChangeNotification();
+  public abstract java.net.SocketAddress address();
+  public abstract com.sun.nio.sctp.Association association();
+  public abstract com.sun.nio.sctp.PeerAddressChangeNotification$AddressChangeEvent event();
+}

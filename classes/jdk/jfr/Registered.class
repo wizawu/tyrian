@@ -1,0 +1,4 @@
+Compiled from "Registered.java"
+public interface jdk.jfr.Registered extends java.lang.annotation.Annotation {
+  public abstract boolean value();
+}

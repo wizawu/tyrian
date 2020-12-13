@@ -1,0 +1,11 @@
+Compiled from "TransformAttribute.java"
+public final class java.awt.font.TransformAttribute implements java.io.Serializable {
+  public static final java.awt.font.TransformAttribute IDENTITY;
+  static final long serialVersionUID;
+  public java.awt.font.TransformAttribute(java.awt.geom.AffineTransform);
+  public java.awt.geom.AffineTransform getTransform();
+  public boolean isIdentity();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  static {};
+}

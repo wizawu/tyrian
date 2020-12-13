@@ -1,0 +1,10 @@
+Compiled from "Attribute.java"
+public abstract class com.sun.tools.javac.code.Attribute implements javax.lang.model.element.AnnotationValue {
+  public com.sun.tools.javac.code.Type type;
+  public com.sun.tools.javac.code.Attribute(com.sun.tools.javac.code.Type);
+  public abstract void accept(com.sun.tools.javac.code.Attribute$Visitor);
+  public java.lang.Object getValue();
+  public <R, P> R accept(javax.lang.model.element.AnnotationValueVisitor<R, P>, P);
+  public boolean isSynthesized();
+  public com.sun.tools.javac.code.TypeAnnotationPosition getPosition();
+}

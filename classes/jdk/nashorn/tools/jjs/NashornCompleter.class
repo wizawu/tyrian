@@ -1,0 +1,10 @@
+Compiled from "NashornCompleter.java"
+final class jdk.nashorn.tools.jjs.NashornCompleter {
+  jdk.nashorn.tools.jjs.NashornCompleter(jdk.nashorn.internal.runtime.Context, jdk.nashorn.internal.objects.Global, jdk.nashorn.tools.PartialParser, jdk.nashorn.tools.jjs.PropertiesHelper, jdk.nashorn.internal.runtime.ScriptFunction);
+  boolean isSyntaxErrorAt(java.lang.Throwable, int, int);
+  boolean isParseErrorAt(java.lang.Throwable, int, int);
+  java.lang.String readMoreLines(java.lang.String, java.lang.Exception, jdk.nashorn.tools.jjs.Console, java.lang.String, java.io.PrintWriter);
+  public boolean isComplete(java.lang.String);
+  public int complete(java.lang.String, int, java.util.List<jdk.internal.org.jline.reader.Candidate>);
+  static {};
+}

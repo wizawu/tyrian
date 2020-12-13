@@ -1,0 +1,21 @@
+Compiled from "MinMaxLen.java"
+final class jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen {
+  int min;
+  int max;
+  static final int INFINITE_DISTANCE;
+  jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen();
+  jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen(int, int);
+  int distanceValue();
+  int compareDistanceValue(jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen, int, int);
+  boolean equal(jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen);
+  void set(int, int);
+  void clear();
+  void copy(jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen);
+  void add(jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen);
+  void addLength(int);
+  void altMerge(jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen);
+  static int distanceAdd(int, int);
+  static int distanceMultiply(int, int);
+  static java.lang.String distanceRangeToString(int, int);
+  static {};
+}

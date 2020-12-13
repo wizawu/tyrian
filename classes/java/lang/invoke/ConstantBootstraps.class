@@ -1,0 +1,14 @@
+Compiled from "ConstantBootstraps.java"
+public final class java.lang.invoke.ConstantBootstraps {
+  public java.lang.invoke.ConstantBootstraps();
+  static java.lang.Object makeConstant(java.lang.invoke.MethodHandle, java.lang.String, java.lang.Class<?>, java.lang.Object, java.lang.Class<?>);
+  public static java.lang.Object nullConstant(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<?>);
+  public static java.lang.Class<?> primitiveClass(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<?>);
+  public static <E extends java.lang.Enum<E>> E enumConstant(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<E>);
+  public static java.lang.Object getStaticFinal(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<?>, java.lang.Class<?>);
+  public static java.lang.Object getStaticFinal(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<?>);
+  public static java.lang.Object invoke(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<?>, java.lang.invoke.MethodHandle, java.lang.Object...) throws java.lang.Throwable;
+  public static java.lang.invoke.VarHandle fieldVarHandle(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<java.lang.invoke.VarHandle>, java.lang.Class<?>, java.lang.Class<?>);
+  public static java.lang.invoke.VarHandle staticFieldVarHandle(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<java.lang.invoke.VarHandle>, java.lang.Class<?>, java.lang.Class<?>);
+  public static java.lang.invoke.VarHandle arrayVarHandle(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.Class<java.lang.invoke.VarHandle>, java.lang.Class<?>);
+}

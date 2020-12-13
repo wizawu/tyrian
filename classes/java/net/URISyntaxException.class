@@ -1,0 +1,9 @@
+Compiled from "URISyntaxException.java"
+public class java.net.URISyntaxException extends java.lang.Exception {
+  public java.net.URISyntaxException(java.lang.String, java.lang.String, int);
+  public java.net.URISyntaxException(java.lang.String, java.lang.String);
+  public java.lang.String getInput();
+  public java.lang.String getReason();
+  public int getIndex();
+  public java.lang.String getMessage();
+}

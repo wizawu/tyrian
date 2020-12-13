@@ -1,0 +1,8 @@
+Compiled from "URIException.java"
+public interface javax.print.URIException {
+  public static final int URIInaccessible;
+  public static final int URISchemeNotSupported;
+  public static final int URIOtherProblem;
+  public abstract java.net.URI getUnsupportedURI();
+  public abstract int getReason();
+}

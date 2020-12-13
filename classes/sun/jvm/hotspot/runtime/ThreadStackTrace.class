@@ -1,0 +1,7 @@
+Compiled from "ThreadStackTrace.java"
+public class sun.jvm.hotspot.runtime.ThreadStackTrace {
+  public sun.jvm.hotspot.runtime.ThreadStackTrace(sun.jvm.hotspot.runtime.JavaThread);
+  public int getStackDepth();
+  public sun.jvm.hotspot.runtime.StackFrameInfo stackFrameAt(int);
+  public void dumpStack(int);
+}

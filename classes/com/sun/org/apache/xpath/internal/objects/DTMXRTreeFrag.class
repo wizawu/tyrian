@@ -1,0 +1,10 @@
+Compiled from "DTMXRTreeFrag.java"
+public final class com.sun.org.apache.xpath.internal.objects.DTMXRTreeFrag {
+  public com.sun.org.apache.xpath.internal.objects.DTMXRTreeFrag(int, com.sun.org.apache.xpath.internal.XPathContext);
+  public final void destruct();
+  final com.sun.org.apache.xml.internal.dtm.DTM getDTM();
+  public final int getDTMIdentity();
+  final com.sun.org.apache.xpath.internal.XPathContext getXPathContext();
+  public final int hashCode();
+  public final boolean equals(java.lang.Object);
+}

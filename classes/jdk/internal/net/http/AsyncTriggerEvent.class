@@ -1,0 +1,9 @@
+Compiled from "AsyncTriggerEvent.java"
+final class jdk.internal.net.http.AsyncTriggerEvent extends jdk.internal.net.http.AsyncEvent {
+  jdk.internal.net.http.AsyncTriggerEvent(java.util.function.Consumer<? super java.io.IOException>, java.lang.Runnable);
+  public java.nio.channels.SelectableChannel channel();
+  public int interestOps();
+  public void handle();
+  public void abort(java.io.IOException);
+  public boolean repeating();
+}

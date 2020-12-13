@@ -1,0 +1,5 @@
+Compiled from "TerminalFactorySpi.java"
+public abstract class javax.smartcardio.TerminalFactorySpi {
+  protected javax.smartcardio.TerminalFactorySpi();
+  protected abstract javax.smartcardio.CardTerminals engineTerminals();
+}

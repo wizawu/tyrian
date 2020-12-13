@@ -1,0 +1,21 @@
+Compiled from "TreeDependencyScanner.java"
+class jdk.jshell.TreeDependencyScanner extends com.sun.source.util.TreeScanner<java.lang.Void, java.util.Set<java.lang.String>> {
+  jdk.jshell.TreeDependencyScanner();
+  public void scan(com.sun.source.tree.Tree);
+  public java.util.Collection<java.lang.String> declareReferences();
+  public java.util.Collection<java.lang.String> bodyReferences();
+  public java.lang.Void visitClass(com.sun.source.tree.ClassTree, java.util.Set<java.lang.String>);
+  public java.lang.Void visitMethod(com.sun.source.tree.MethodTree, java.util.Set<java.lang.String>);
+  public java.lang.Void visitVariable(com.sun.source.tree.VariableTree, java.util.Set<java.lang.String>);
+  public java.lang.Void visitPackage(com.sun.source.tree.PackageTree, java.util.Set<java.lang.String>);
+  public java.lang.Void visitImport(com.sun.source.tree.ImportTree, java.util.Set<java.lang.String>);
+  public java.lang.Void visitMemberSelect(com.sun.source.tree.MemberSelectTree, java.util.Set<java.lang.String>);
+  public java.lang.Void visitIdentifier(com.sun.source.tree.IdentifierTree, java.util.Set<java.lang.String>);
+  public java.lang.Object visitIdentifier(com.sun.source.tree.IdentifierTree, java.lang.Object);
+  public java.lang.Object visitMemberSelect(com.sun.source.tree.MemberSelectTree, java.lang.Object);
+  public java.lang.Object visitVariable(com.sun.source.tree.VariableTree, java.lang.Object);
+  public java.lang.Object visitMethod(com.sun.source.tree.MethodTree, java.lang.Object);
+  public java.lang.Object visitClass(com.sun.source.tree.ClassTree, java.lang.Object);
+  public java.lang.Object visitImport(com.sun.source.tree.ImportTree, java.lang.Object);
+  public java.lang.Object visitPackage(com.sun.source.tree.PackageTree, java.lang.Object);
+}

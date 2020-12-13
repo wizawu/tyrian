@@ -1,0 +1,11 @@
+Compiled from "EventSettings.java"
+public abstract class jdk.jfr.EventSettings {
+  jdk.jfr.EventSettings();
+  public final jdk.jfr.EventSettings withStackTrace();
+  public final jdk.jfr.EventSettings withoutStackTrace();
+  public final jdk.jfr.EventSettings withoutThreshold();
+  public final jdk.jfr.EventSettings withPeriod(java.time.Duration);
+  public final jdk.jfr.EventSettings withThreshold(java.time.Duration);
+  public abstract jdk.jfr.EventSettings with(java.lang.String, java.lang.String);
+  abstract java.util.Map<java.lang.String, java.lang.String> toMap();
+}

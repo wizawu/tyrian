@@ -1,0 +1,8 @@
+Compiled from "LabeledStatementTreeImpl.java"
+final class jdk.nashorn.api.tree.LabeledStatementTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.LabeledStatementTree {
+  jdk.nashorn.api.tree.LabeledStatementTreeImpl(jdk.nashorn.internal.ir.LabelNode, jdk.nashorn.api.tree.StatementTree);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public java.lang.String getLabel();
+  public jdk.nashorn.api.tree.StatementTree getStatement();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

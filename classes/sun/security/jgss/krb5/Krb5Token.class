@@ -1,0 +1,14 @@
+Compiled from "Krb5Token.java"
+abstract class sun.security.jgss.krb5.Krb5Token extends sun.security.jgss.GSSToken {
+  public static final int AP_REQ_ID;
+  public static final int AP_REP_ID;
+  public static final int ERR_ID;
+  public static final int MIC_ID;
+  public static final int WRAP_ID;
+  public static final int MIC_ID_v2;
+  public static final int WRAP_ID_v2;
+  public static sun.security.util.ObjectIdentifier OID;
+  sun.security.jgss.krb5.Krb5Token();
+  public static java.lang.String getTokenName(int);
+  static {};
+}

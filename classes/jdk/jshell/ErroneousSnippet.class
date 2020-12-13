@@ -1,0 +1,5 @@
+Compiled from "ErroneousSnippet.java"
+public class jdk.jshell.ErroneousSnippet extends jdk.jshell.Snippet {
+  jdk.jshell.ErroneousSnippet(jdk.jshell.Key$ErroneousKey, java.lang.String, jdk.jshell.Wrap, jdk.jshell.Snippet$Kind, jdk.jshell.Snippet$SubKind);
+  public jdk.jshell.Snippet$Kind probableKind();
+}

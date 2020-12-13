@@ -1,0 +1,17 @@
+Compiled from "DateParser.java"
+public class jdk.nashorn.internal.parser.DateParser {
+  public static final int YEAR;
+  public static final int MONTH;
+  public static final int DAY;
+  public static final int HOUR;
+  public static final int MINUTE;
+  public static final int SECOND;
+  public static final int MILLISECOND;
+  public static final int TIMEZONE;
+  public jdk.nashorn.internal.parser.DateParser(java.lang.String);
+  public boolean parse();
+  public boolean parseEcmaDate();
+  public boolean parseLegacyDate();
+  public java.lang.Integer[] getDateFields();
+  static {};
+}

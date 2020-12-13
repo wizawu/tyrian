@@ -1,0 +1,16 @@
+Compiled from "PKCS10.java"
+public class sun.security.pkcs10.PKCS10 {
+  public sun.security.pkcs10.PKCS10(java.security.PublicKey);
+  public sun.security.pkcs10.PKCS10(java.security.PublicKey, sun.security.pkcs10.PKCS10Attributes);
+  public sun.security.pkcs10.PKCS10(byte[]) throws java.io.IOException, java.security.SignatureException, java.security.NoSuchAlgorithmException;
+  public void encodeAndSign(sun.security.x509.X500Name, java.security.Signature) throws java.security.cert.CertificateException, java.io.IOException, java.security.SignatureException;
+  public sun.security.x509.X500Name getSubjectName();
+  public java.security.PublicKey getSubjectPublicKeyInfo();
+  public java.lang.String getSigAlg();
+  public sun.security.pkcs10.PKCS10Attributes getAttributes();
+  public byte[] getEncoded();
+  public void print(java.io.PrintStream) throws java.io.IOException, java.security.SignatureException;
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

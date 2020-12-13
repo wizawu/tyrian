@@ -1,0 +1,3 @@
+Compiled from "DebugVC50SSSymbols.java"
+public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSymbols extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
+}

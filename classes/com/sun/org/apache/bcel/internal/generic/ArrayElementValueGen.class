@@ -1,0 +1,12 @@
+Compiled from "ArrayElementValueGen.java"
+public class com.sun.org.apache.bcel.internal.generic.ArrayElementValueGen extends com.sun.org.apache.bcel.internal.generic.ElementValueGen {
+  public com.sun.org.apache.bcel.internal.generic.ArrayElementValueGen(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.generic.ArrayElementValueGen(int, com.sun.org.apache.bcel.internal.classfile.ElementValue[], com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public com.sun.org.apache.bcel.internal.classfile.ElementValue getElementValue();
+  public com.sun.org.apache.bcel.internal.generic.ArrayElementValueGen(com.sun.org.apache.bcel.internal.classfile.ArrayElementValue, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, boolean);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public java.lang.String stringifyValue();
+  public java.util.List<com.sun.org.apache.bcel.internal.generic.ElementValueGen> getElementValues();
+  public int getElementValuesSize();
+  public void addElement(com.sun.org.apache.bcel.internal.generic.ElementValueGen);
+}

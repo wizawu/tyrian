@@ -1,0 +1,20 @@
+Compiled from "HostIdentifier.java"
+public class sun.jvmstat.monitor.HostIdentifier {
+  public sun.jvmstat.monitor.HostIdentifier(java.lang.String) throws java.net.URISyntaxException;
+  public sun.jvmstat.monitor.HostIdentifier(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws java.net.URISyntaxException;
+  public sun.jvmstat.monitor.HostIdentifier(sun.jvmstat.monitor.VmIdentifier);
+  public sun.jvmstat.monitor.VmIdentifier resolve(sun.jvmstat.monitor.VmIdentifier) throws java.net.URISyntaxException, sun.jvmstat.monitor.MonitorException;
+  public java.lang.String getScheme();
+  public java.lang.String getSchemeSpecificPart();
+  public java.lang.String getUserInfo();
+  public java.lang.String getHost();
+  public int getPort();
+  public java.lang.String getPath();
+  public java.lang.String getQuery();
+  public java.lang.String getFragment();
+  public java.lang.String getMode();
+  public java.net.URI getURI();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

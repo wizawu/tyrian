@@ -1,0 +1,34 @@
+Compiled from "BasicScrollPaneUI.java"
+public class javax.swing.plaf.basic.BasicScrollPaneUI extends javax.swing.plaf.ScrollPaneUI implements javax.swing.ScrollPaneConstants {
+  protected javax.swing.JScrollPane scrollpane;
+  protected javax.swing.event.ChangeListener vsbChangeListener;
+  protected javax.swing.event.ChangeListener hsbChangeListener;
+  protected javax.swing.event.ChangeListener viewportChangeListener;
+  protected java.beans.PropertyChangeListener spPropertyChangeListener;
+  public javax.swing.plaf.basic.BasicScrollPaneUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  static void loadActionMap(javax.swing.plaf.basic.LazyActionMap);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+  protected void installDefaults(javax.swing.JScrollPane);
+  protected void installListeners(javax.swing.JScrollPane);
+  protected void installKeyboardActions(javax.swing.JScrollPane);
+  javax.swing.InputMap getInputMap(int);
+  public void installUI(javax.swing.JComponent);
+  protected void uninstallDefaults(javax.swing.JScrollPane);
+  protected void uninstallListeners(javax.swing.JComponent);
+  protected void uninstallKeyboardActions(javax.swing.JScrollPane);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void syncScrollPaneWithViewport();
+  public int getBaseline(javax.swing.JComponent, int, int);
+  public java.awt.Component$BaselineResizeBehavior getBaselineResizeBehavior(javax.swing.JComponent);
+  protected javax.swing.event.ChangeListener createViewportChangeListener();
+  protected javax.swing.event.ChangeListener createHSBChangeListener();
+  protected javax.swing.event.ChangeListener createVSBChangeListener();
+  protected java.awt.event.MouseWheelListener createMouseWheelListener();
+  protected void updateScrollBarDisplayPolicy(java.beans.PropertyChangeEvent);
+  protected void updateViewport(java.beans.PropertyChangeEvent);
+  protected void updateRowHeader(java.beans.PropertyChangeEvent);
+  protected void updateColumnHeader(java.beans.PropertyChangeEvent);
+  protected java.beans.PropertyChangeListener createPropertyChangeListener();
+}

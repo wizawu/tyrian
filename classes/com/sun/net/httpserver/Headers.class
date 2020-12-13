@@ -1,0 +1,25 @@
+Compiled from "Headers.java"
+public class com.sun.net.httpserver.Headers implements java.util.Map<java.lang.String, java.util.List<java.lang.String>> {
+  java.util.HashMap<java.lang.String, java.util.List<java.lang.String>> map;
+  public com.sun.net.httpserver.Headers();
+  public int size();
+  public boolean isEmpty();
+  public boolean containsKey(java.lang.Object);
+  public boolean containsValue(java.lang.Object);
+  public java.util.List<java.lang.String> get(java.lang.Object);
+  public java.lang.String getFirst(java.lang.String);
+  public java.util.List<java.lang.String> put(java.lang.String, java.util.List<java.lang.String>);
+  public void add(java.lang.String, java.lang.String);
+  public void set(java.lang.String, java.lang.String);
+  public java.util.List<java.lang.String> remove(java.lang.Object);
+  public void putAll(java.util.Map<? extends java.lang.String, ? extends java.util.List<java.lang.String>>);
+  public void clear();
+  public java.util.Set<java.lang.String> keySet();
+  public java.util.Collection<java.util.List<java.lang.String>> values();
+  public java.util.Set<java.util.Map$Entry<java.lang.String, java.util.List<java.lang.String>>> entrySet();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.Object remove(java.lang.Object);
+  public java.lang.Object put(java.lang.Object, java.lang.Object);
+  public java.lang.Object get(java.lang.Object);
+}

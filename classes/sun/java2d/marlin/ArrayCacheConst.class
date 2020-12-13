@@ -1,0 +1,15 @@
+Compiled from "ArrayCacheConst.java"
+public final class sun.java2d.marlin.ArrayCacheConst implements sun.java2d.marlin.MarlinConst {
+  static final int BUCKETS;
+  static final int MIN_ARRAY_SIZE;
+  static final int MAX_ARRAY_SIZE;
+  static final int THRESHOLD_SMALL_ARRAY_SIZE;
+  static final int THRESHOLD_ARRAY_SIZE;
+  static final long THRESHOLD_HUGE_ARRAY_SIZE;
+  static final int[] ARRAY_SIZES;
+  static final boolean $assertionsDisabled;
+  static int getBucket(int);
+  public static int getNewSize(int, int);
+  public static long getNewLargeSize(long, long);
+  static {};
+}

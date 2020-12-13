@@ -1,0 +1,8 @@
+Compiled from "NameAndTypeConstantData.java"
+final class sun.tools.asm.NameAndTypeConstantData extends sun.tools.asm.ConstantPoolData {
+  java.lang.String name;
+  java.lang.String type;
+  sun.tools.asm.NameAndTypeConstantData(sun.tools.asm.ConstantPool, sun.tools.asm.NameAndTypeData);
+  void write(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
+  int order();
+}

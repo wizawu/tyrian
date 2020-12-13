@@ -1,0 +1,15 @@
+Compiled from "AnnotationWriter.java"
+final class jdk.internal.org.objectweb.asm.AnnotationWriter extends jdk.internal.org.objectweb.asm.AnnotationVisitor {
+  jdk.internal.org.objectweb.asm.AnnotationWriter next;
+  jdk.internal.org.objectweb.asm.AnnotationWriter prev;
+  jdk.internal.org.objectweb.asm.AnnotationWriter(jdk.internal.org.objectweb.asm.ClassWriter, boolean, jdk.internal.org.objectweb.asm.ByteVector, jdk.internal.org.objectweb.asm.ByteVector, int);
+  public void visit(java.lang.String, java.lang.Object);
+  public void visitEnum(java.lang.String, java.lang.String, java.lang.String);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitAnnotation(java.lang.String, java.lang.String);
+  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitArray(java.lang.String);
+  public void visitEnd();
+  int getSize();
+  void put(jdk.internal.org.objectweb.asm.ByteVector);
+  static void put(jdk.internal.org.objectweb.asm.AnnotationWriter[], int, jdk.internal.org.objectweb.asm.ByteVector);
+  static void putTarget(int, jdk.internal.org.objectweb.asm.TypePath, jdk.internal.org.objectweb.asm.ByteVector);
+}

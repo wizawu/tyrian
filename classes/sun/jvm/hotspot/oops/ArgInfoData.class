@@ -1,0 +1,8 @@
+Compiled from "ArgInfoData.java"
+public class sun.jvm.hotspot.oops.ArgInfoData extends sun.jvm.hotspot.oops.ArrayData {
+  public sun.jvm.hotspot.oops.ArgInfoData(sun.jvm.hotspot.oops.DataLayout);
+  int numberOfArgs();
+  int argModified(int);
+  public void printDataOn(java.io.PrintStream);
+  public int cellCount();
+}

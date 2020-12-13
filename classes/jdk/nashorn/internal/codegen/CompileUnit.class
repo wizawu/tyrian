@@ -1,0 +1,23 @@
+Compiled from "CompileUnit.java"
+public final class jdk.nashorn.internal.codegen.CompileUnit implements java.lang.Comparable<jdk.nashorn.internal.codegen.CompileUnit>, java.io.Serializable {
+  jdk.nashorn.internal.codegen.CompileUnit(java.lang.String, jdk.nashorn.internal.codegen.ClassEmitter, long);
+  static java.util.Set<jdk.nashorn.internal.codegen.CompileUnit> createCompileUnitSet();
+  static void increaseEmitCount();
+  public static int getEmittedUnitCount();
+  public boolean isUsed();
+  public boolean hasCode();
+  public void setUsed();
+  public java.lang.Class<?> getCode();
+  void setCode(java.lang.Class<?>);
+  void addFunctionInitializer(jdk.nashorn.internal.runtime.RecompilableScriptFunctionData, jdk.nashorn.internal.ir.FunctionNode);
+  public boolean isInitializing(jdk.nashorn.internal.runtime.RecompilableScriptFunctionData, jdk.nashorn.internal.ir.FunctionNode);
+  void initializeFunctionsCode();
+  java.util.Collection<jdk.nashorn.internal.ir.FunctionNode> getFunctionNodes();
+  void addWeight(long);
+  public boolean canHold(long);
+  public jdk.nashorn.internal.codegen.ClassEmitter getClassEmitter();
+  public java.lang.String getUnitClassName();
+  public java.lang.String toString();
+  public int compareTo(jdk.nashorn.internal.codegen.CompileUnit);
+  public int compareTo(java.lang.Object);
+}

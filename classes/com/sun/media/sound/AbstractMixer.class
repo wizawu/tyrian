@@ -1,0 +1,36 @@
+Compiled from "AbstractMixer.java"
+abstract class com.sun.media.sound.AbstractMixer extends com.sun.media.sound.AbstractLine implements javax.sound.sampled.Mixer {
+  protected static final int PCM;
+  protected static final int ULAW;
+  protected static final int ALAW;
+  protected javax.sound.sampled.Line$Info[] sourceLineInfo;
+  protected javax.sound.sampled.Line$Info[] targetLineInfo;
+  protected com.sun.media.sound.AbstractMixer(javax.sound.sampled.Mixer$Info, javax.sound.sampled.Control[], javax.sound.sampled.Line$Info[], javax.sound.sampled.Line$Info[]);
+  public final javax.sound.sampled.Mixer$Info getMixerInfo();
+  public final javax.sound.sampled.Line$Info[] getSourceLineInfo();
+  public final javax.sound.sampled.Line$Info[] getTargetLineInfo();
+  public final javax.sound.sampled.Line$Info[] getSourceLineInfo(javax.sound.sampled.Line$Info);
+  public final javax.sound.sampled.Line$Info[] getTargetLineInfo(javax.sound.sampled.Line$Info);
+  public final boolean isLineSupported(javax.sound.sampled.Line$Info);
+  public abstract javax.sound.sampled.Line getLine(javax.sound.sampled.Line$Info) throws javax.sound.sampled.LineUnavailableException;
+  public abstract int getMaxLines(javax.sound.sampled.Line$Info);
+  protected abstract void implOpen() throws javax.sound.sampled.LineUnavailableException;
+  protected abstract void implStart();
+  protected abstract void implStop();
+  protected abstract void implClose();
+  public final javax.sound.sampled.Line[] getSourceLines();
+  public final javax.sound.sampled.Line[] getTargetLines();
+  public final void synchronize(javax.sound.sampled.Line[], boolean);
+  public final void unsynchronize(javax.sound.sampled.Line[]);
+  public final boolean isSynchronizationSupported(javax.sound.sampled.Line[], boolean);
+  public final synchronized void open() throws javax.sound.sampled.LineUnavailableException;
+  final synchronized void open(boolean) throws javax.sound.sampled.LineUnavailableException;
+  final synchronized void open(javax.sound.sampled.Line) throws javax.sound.sampled.LineUnavailableException;
+  final synchronized void close(javax.sound.sampled.Line);
+  public final synchronized void close();
+  final synchronized void start(javax.sound.sampled.Line);
+  final synchronized void stop(javax.sound.sampled.Line);
+  final boolean isSourceLine(javax.sound.sampled.Line$Info);
+  final boolean isTargetLine(javax.sound.sampled.Line$Info);
+  final javax.sound.sampled.Line$Info getLineInfo(javax.sound.sampled.Line$Info);
+}

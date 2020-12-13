@@ -1,0 +1,6 @@
+Compiled from "CurrencyNameProvider.java"
+public abstract class java.util.spi.CurrencyNameProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.util.spi.CurrencyNameProvider();
+  public abstract java.lang.String getSymbol(java.lang.String, java.util.Locale);
+  public java.lang.String getDisplayName(java.lang.String, java.util.Locale);
+}

@@ -1,0 +1,11 @@
+Compiled from "Decoration.java"
+public class sun.font.Decoration {
+  public static sun.font.Decoration getPlainDecoration();
+  public static sun.font.Decoration getDecoration(sun.font.AttributeValues);
+  public static sun.font.Decoration getDecoration(java.util.Map<? extends java.text.AttributedCharacterIterator$Attribute, ?>);
+  public void drawTextAndDecorations(sun.font.Decoration$Label, java.awt.Graphics2D, float, float);
+  public java.awt.geom.Rectangle2D getVisualBounds(sun.font.Decoration$Label);
+  public java.awt.geom.Rectangle2D getCharVisualBounds(sun.font.Decoration$Label, int);
+  java.awt.Shape getOutline(sun.font.Decoration$Label, float, float);
+  static {};
+}

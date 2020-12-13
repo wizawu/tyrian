@@ -1,0 +1,31 @@
+Compiled from "XMLEntityStorage.java"
+public class com.sun.xml.internal.stream.XMLEntityStorage {
+  protected static final java.lang.String ERROR_REPORTER;
+  protected static final java.lang.String WARN_ON_DUPLICATE_ENTITYDEF;
+  protected boolean fWarnDuplicateEntityDef;
+  protected java.util.Map<java.lang.String, com.sun.xml.internal.stream.Entity> fEntities;
+  protected com.sun.xml.internal.stream.Entity$ScannedEntity fCurrentEntity;
+  protected com.sun.org.apache.xerces.internal.impl.XMLErrorReporter fErrorReporter;
+  protected com.sun.org.apache.xerces.internal.impl.PropertyManager fPropertyManager;
+  protected boolean fInExternalSubset;
+  public com.sun.xml.internal.stream.XMLEntityStorage(com.sun.org.apache.xerces.internal.impl.PropertyManager);
+  public com.sun.xml.internal.stream.XMLEntityStorage(com.sun.org.apache.xerces.internal.impl.XMLEntityManager);
+  public void reset(com.sun.org.apache.xerces.internal.impl.PropertyManager);
+  public void reset();
+  public void reset(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public com.sun.xml.internal.stream.Entity getEntity(java.lang.String);
+  public java.util.Map<java.lang.String, com.sun.xml.internal.stream.Entity> getEntities();
+  public void addInternalEntity(java.lang.String, java.lang.String);
+  public void addExternalEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public boolean isExternalEntity(java.lang.String);
+  public boolean isEntityDeclInExternalSubset(java.lang.String);
+  public void addUnparsedEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public boolean isUnparsedEntity(java.lang.String);
+  public boolean isDeclaredEntity(java.lang.String);
+  public static java.lang.String expandSystemId(java.lang.String);
+  public static java.lang.String expandSystemId(java.lang.String, java.lang.String);
+  protected static java.lang.String fixURI(java.lang.String);
+  public void startExternalSubset();
+  public void endExternalSubset();
+  static {};
+}

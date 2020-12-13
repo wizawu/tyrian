@@ -1,0 +1,8 @@
+Compiled from "CK_X9_42_DH1_DERIVE_PARAMS.java"
+public class sun.security.pkcs11.wrapper.CK_X9_42_DH1_DERIVE_PARAMS {
+  public long kdf;
+  public byte[] pOtherInfo;
+  public byte[] pPublicData;
+  public sun.security.pkcs11.wrapper.CK_X9_42_DH1_DERIVE_PARAMS();
+  public java.lang.String toString();
+}

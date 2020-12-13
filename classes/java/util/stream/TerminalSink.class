@@ -1,0 +1,3 @@
+Compiled from "TerminalSink.java"
+interface java.util.stream.TerminalSink<T, R> extends java.util.stream.Sink<T>, java.util.function.Supplier<R> {
+}

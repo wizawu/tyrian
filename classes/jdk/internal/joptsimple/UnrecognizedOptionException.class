@@ -1,0 +1,5 @@
+Compiled from "UnrecognizedOptionException.java"
+class jdk.internal.joptsimple.UnrecognizedOptionException extends jdk.internal.joptsimple.OptionException {
+  jdk.internal.joptsimple.UnrecognizedOptionException(java.lang.String);
+  java.lang.Object[] messageArguments();
+}

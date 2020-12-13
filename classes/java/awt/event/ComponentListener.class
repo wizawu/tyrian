@@ -1,0 +1,7 @@
+Compiled from "ComponentListener.java"
+public interface java.awt.event.ComponentListener extends java.util.EventListener {
+  public abstract void componentResized(java.awt.event.ComponentEvent);
+  public abstract void componentMoved(java.awt.event.ComponentEvent);
+  public abstract void componentShown(java.awt.event.ComponentEvent);
+  public abstract void componentHidden(java.awt.event.ComponentEvent);
+}

@@ -1,0 +1,9 @@
+Compiled from "Autoscroller.java"
+class javax.swing.Autoscroller implements java.awt.event.ActionListener {
+  public static void stop(javax.swing.JComponent);
+  public static boolean isRunning(javax.swing.JComponent);
+  public static void processMouseDragged(java.awt.event.MouseEvent);
+  javax.swing.Autoscroller();
+  public void actionPerformed(java.awt.event.ActionEvent);
+  static {};
+}

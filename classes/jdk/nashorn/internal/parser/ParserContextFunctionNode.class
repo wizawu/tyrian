@@ -1,0 +1,33 @@
+Compiled from "ParserContextFunctionNode.java"
+class jdk.nashorn.internal.parser.ParserContextFunctionNode extends jdk.nashorn.internal.parser.ParserContextBaseNode {
+  public jdk.nashorn.internal.parser.ParserContextFunctionNode(long, jdk.nashorn.internal.ir.IdentNode, java.lang.String, jdk.nashorn.internal.codegen.Namespace, int, jdk.nashorn.internal.ir.FunctionNode$Kind, java.util.List<jdk.nashorn.internal.ir.IdentNode>);
+  public java.lang.String getName();
+  public jdk.nashorn.internal.ir.IdentNode getIdent();
+  public boolean isProgram();
+  public boolean isStrict();
+  public boolean hasNestedEval();
+  public boolean hasScopeBlock();
+  public java.lang.String uniqueName(java.lang.String);
+  public int getLineNumber();
+  public jdk.nashorn.internal.ir.FunctionNode$Kind getKind();
+  public java.util.List<jdk.nashorn.internal.ir.IdentNode> getParameters();
+  void setParameters(java.util.List<jdk.nashorn.internal.ir.IdentNode>);
+  public java.util.Map<jdk.nashorn.internal.ir.IdentNode, jdk.nashorn.internal.ir.Expression> getParameterExpressions();
+  void addParameterExpression(jdk.nashorn.internal.ir.IdentNode, jdk.nashorn.internal.ir.Expression);
+  public void setLastToken(long);
+  public long getLastToken();
+  public java.lang.Object getEndParserState();
+  public void setEndParserState(java.lang.Object);
+  public int getId();
+  int getDebugFlags();
+  void setDebugFlag(int);
+  public boolean isMethod();
+  public boolean isClassConstructor();
+  public boolean isSubclassConstructor();
+  boolean addParameterBinding(jdk.nashorn.internal.ir.IdentNode);
+  public jdk.nashorn.internal.ir.IdentNode getDuplicateParameterBinding();
+  public boolean isSimpleParameterList();
+  public void setSimpleParameterList(boolean);
+  public jdk.nashorn.internal.ir.Module getModule();
+  public void setModule(jdk.nashorn.internal.ir.Module);
+}

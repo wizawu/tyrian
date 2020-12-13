@@ -1,0 +1,23 @@
+Compiled from "NimbusLookAndFeel.java"
+public class javax.swing.plaf.nimbus.NimbusLookAndFeel extends javax.swing.plaf.synth.SynthLookAndFeel {
+  public javax.swing.plaf.nimbus.NimbusLookAndFeel();
+  public void initialize();
+  public void uninitialize();
+  public javax.swing.UIDefaults getDefaults();
+  public static javax.swing.plaf.nimbus.NimbusStyle getStyle(javax.swing.JComponent, javax.swing.plaf.synth.Region);
+  public java.lang.String getName();
+  public java.lang.String getID();
+  public java.lang.String getDescription();
+  public boolean shouldUpdateStyleOnAncestorChanged();
+  protected boolean shouldUpdateStyleOnEvent(java.beans.PropertyChangeEvent);
+  public void register(javax.swing.plaf.synth.Region, java.lang.String);
+  public javax.swing.Icon getDisabledIcon(javax.swing.JComponent, javax.swing.Icon);
+  public java.awt.Color getDerivedColor(java.lang.String, float, float, float, int, boolean);
+  protected final java.awt.Color getDerivedColor(java.awt.Color, java.awt.Color, float, boolean);
+  protected final java.awt.Color getDerivedColor(java.awt.Color, java.awt.Color, float);
+  static java.lang.Object resolveToolbarConstraint(javax.swing.JToolBar);
+  static int deriveARGB(java.awt.Color, java.awt.Color, float);
+  static java.lang.String parsePrefix(java.lang.String);
+  java.util.Map<java.lang.String, java.lang.Object> getDefaultsForPrefix(java.lang.String);
+  static {};
+}

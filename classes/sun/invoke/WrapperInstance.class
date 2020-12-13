@@ -1,0 +1,5 @@
+Compiled from "WrapperInstance.java"
+public interface sun.invoke.WrapperInstance {
+  public abstract java.lang.invoke.MethodHandle getWrapperInstanceTarget();
+  public abstract java.lang.Class<?> getWrapperInstanceType();
+}

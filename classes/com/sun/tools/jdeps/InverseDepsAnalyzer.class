@@ -1,0 +1,7 @@
+Compiled from "InverseDepsAnalyzer.java"
+public class com.sun.tools.jdeps.InverseDepsAnalyzer extends com.sun.tools.jdeps.DepsAnalyzer {
+  public com.sun.tools.jdeps.InverseDepsAnalyzer(com.sun.tools.jdeps.JdepsConfiguration, com.sun.tools.jdeps.JdepsFilter, com.sun.tools.jdeps.JdepsWriter, com.sun.tools.jdeps.Analyzer$Type, boolean);
+  public boolean run() throws java.io.IOException;
+  public java.util.Set<com.sun.tools.jdeps.Archive> targets();
+  public java.util.Set<java.util.Deque<com.sun.tools.jdeps.Archive>> inverseDependences() throws java.io.IOException;
+}

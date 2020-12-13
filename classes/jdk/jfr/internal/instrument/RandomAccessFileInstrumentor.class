@@ -1,0 +1,9 @@
+Compiled from "RandomAccessFileInstrumentor.java"
+final class jdk.jfr.internal.instrument.RandomAccessFileInstrumentor {
+  public int read() throws java.io.IOException;
+  public int read(byte[]) throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public void write(int) throws java.io.IOException;
+  public void write(byte[]) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+}

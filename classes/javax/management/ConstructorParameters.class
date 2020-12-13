@@ -1,0 +1,4 @@
+Compiled from "ConstructorParameters.java"
+public interface javax.management.ConstructorParameters extends java.lang.annotation.Annotation {
+  public abstract java.lang.String[] value();
+}

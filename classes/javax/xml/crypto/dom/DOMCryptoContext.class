@@ -1,0 +1,21 @@
+Compiled from "DOMCryptoContext.java"
+public class javax.xml.crypto.dom.DOMCryptoContext implements javax.xml.crypto.XMLCryptoContext {
+  protected javax.xml.crypto.dom.DOMCryptoContext();
+  public java.lang.String getNamespacePrefix(java.lang.String, java.lang.String);
+  public java.lang.String putNamespacePrefix(java.lang.String, java.lang.String);
+  public java.lang.String getDefaultNamespacePrefix();
+  public void setDefaultNamespacePrefix(java.lang.String);
+  public java.lang.String getBaseURI();
+  public void setBaseURI(java.lang.String);
+  public javax.xml.crypto.URIDereferencer getURIDereferencer();
+  public void setURIDereferencer(javax.xml.crypto.URIDereferencer);
+  public java.lang.Object getProperty(java.lang.String);
+  public java.lang.Object setProperty(java.lang.String, java.lang.Object);
+  public javax.xml.crypto.KeySelector getKeySelector();
+  public void setKeySelector(javax.xml.crypto.KeySelector);
+  public org.w3c.dom.Element getElementById(java.lang.String);
+  public void setIdAttributeNS(org.w3c.dom.Element, java.lang.String, java.lang.String);
+  public java.util.Iterator<java.util.Map$Entry<java.lang.String, org.w3c.dom.Element>> iterator();
+  public java.lang.Object get(java.lang.Object);
+  public java.lang.Object put(java.lang.Object, java.lang.Object);
+}

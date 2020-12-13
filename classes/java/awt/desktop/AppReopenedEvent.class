@@ -1,0 +1,4 @@
+Compiled from "AppReopenedEvent.java"
+public final class java.awt.desktop.AppReopenedEvent extends java.awt.desktop.AppEvent {
+  public java.awt.desktop.AppReopenedEvent();
+}

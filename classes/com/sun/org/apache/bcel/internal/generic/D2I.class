@@ -1,0 +1,5 @@
+Compiled from "D2I.java"
+public class com.sun.org.apache.bcel.internal.generic.D2I extends com.sun.org.apache.bcel.internal.generic.ConversionInstruction {
+  public com.sun.org.apache.bcel.internal.generic.D2I();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

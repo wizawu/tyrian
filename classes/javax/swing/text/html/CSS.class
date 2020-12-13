@@ -1,0 +1,34 @@
+Compiled from "CSS.java"
+public class javax.swing.text.html.CSS implements java.io.Serializable {
+  static int baseFontSizeIndex;
+  public javax.swing.text.html.CSS();
+  void setBaseFontSize(int);
+  void setBaseFontSize(java.lang.String);
+  int getBaseFontSize();
+  void addInternalCSSValue(javax.swing.text.MutableAttributeSet, javax.swing.text.html.CSS$Attribute, java.lang.String);
+  java.lang.Object getInternalCSSValue(javax.swing.text.html.CSS$Attribute, java.lang.String);
+  javax.swing.text.html.CSS$Attribute styleConstantsKeyToCSSKey(javax.swing.text.StyleConstants);
+  java.lang.Object styleConstantsValueToCSSValue(javax.swing.text.StyleConstants, java.lang.Object);
+  java.lang.Object cssValueToStyleConstantsValue(javax.swing.text.StyleConstants, java.lang.Object);
+  java.awt.Font getFont(javax.swing.text.StyleContext, javax.swing.text.AttributeSet, int, javax.swing.text.html.StyleSheet);
+  static int getFontSize(javax.swing.text.AttributeSet, int, javax.swing.text.html.StyleSheet);
+  java.awt.Color getColor(javax.swing.text.AttributeSet, javax.swing.text.html.CSS$Attribute);
+  float getPointSize(java.lang.String, javax.swing.text.html.StyleSheet);
+  float getLength(javax.swing.text.AttributeSet, javax.swing.text.html.CSS$Attribute, javax.swing.text.html.StyleSheet);
+  javax.swing.text.AttributeSet translateHTMLToCSS(javax.swing.text.AttributeSet);
+  public static javax.swing.text.html.CSS$Attribute[] getAllAttributeKeys();
+  public static final javax.swing.text.html.CSS$Attribute getAttribute(java.lang.String);
+  static final javax.swing.text.html.CSS$Value getValue(java.lang.String);
+  static java.net.URL getURL(java.net.URL, java.lang.String);
+  static java.lang.String colorToHex(java.awt.Color);
+  static final java.awt.Color hexToColor(java.lang.String);
+  static java.awt.Color stringToColor(java.lang.String);
+  static int getIndexOfSize(float, int[]);
+  static int getIndexOfSize(float, javax.swing.text.html.StyleSheet);
+  static java.lang.String[] parseStrings(java.lang.String);
+  float getPointSize(int, javax.swing.text.html.StyleSheet);
+  java.lang.Object getCssValue(javax.swing.text.html.CSS$Attribute, java.lang.String);
+  static javax.swing.SizeRequirements calculateTiledRequirements(javax.swing.text.html.CSS$LayoutIterator, javax.swing.SizeRequirements);
+  static void calculateTiledLayout(javax.swing.text.html.CSS$LayoutIterator, int);
+  static {};
+}

@@ -1,0 +1,17 @@
+Compiled from "PackageSummaryWriter.java"
+public interface jdk.javadoc.internal.doclets.toolkit.PackageSummaryWriter {
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getPackageHeader(java.lang.String);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getContentHeader();
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getSummaryHeader();
+  public abstract void addInterfaceSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addClassSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addEnumSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addExceptionSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addErrorSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addAnnotationTypeSummary(java.util.SortedSet<javax.lang.model.element.TypeElement>, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addPackageDescription(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addPackageTags(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addPackageContent(jdk.javadoc.internal.doclets.toolkit.Content, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addPackageFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void printDocument(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+}

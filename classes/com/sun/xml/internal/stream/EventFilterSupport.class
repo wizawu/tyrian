@@ -1,0 +1,10 @@
+Compiled from "EventFilterSupport.java"
+public class com.sun.xml.internal.stream.EventFilterSupport extends javax.xml.stream.util.EventReaderDelegate {
+  javax.xml.stream.EventFilter fEventFilter;
+  public com.sun.xml.internal.stream.EventFilterSupport(javax.xml.stream.XMLEventReader, javax.xml.stream.EventFilter);
+  public java.lang.Object next();
+  public boolean hasNext();
+  public javax.xml.stream.events.XMLEvent nextEvent() throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.events.XMLEvent nextTag() throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.events.XMLEvent peek() throws javax.xml.stream.XMLStreamException;
+}

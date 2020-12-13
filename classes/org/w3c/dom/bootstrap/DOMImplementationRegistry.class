@@ -1,0 +1,8 @@
+Compiled from "DOMImplementationRegistry.java"
+public final class org.w3c.dom.bootstrap.DOMImplementationRegistry {
+  public static final java.lang.String PROPERTY;
+  public static org.w3c.dom.bootstrap.DOMImplementationRegistry newInstance() throws java.lang.ClassNotFoundException, java.lang.InstantiationException, java.lang.IllegalAccessException, java.lang.ClassCastException;
+  public org.w3c.dom.DOMImplementation getDOMImplementation(java.lang.String);
+  public org.w3c.dom.DOMImplementationList getDOMImplementationList(java.lang.String);
+  public void addSource(org.w3c.dom.DOMImplementationSource);
+}

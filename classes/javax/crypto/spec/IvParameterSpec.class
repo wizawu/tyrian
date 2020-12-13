@@ -1,0 +1,6 @@
+Compiled from "IvParameterSpec.java"
+public class javax.crypto.spec.IvParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public javax.crypto.spec.IvParameterSpec(byte[]);
+  public javax.crypto.spec.IvParameterSpec(byte[], int, int);
+  public byte[] getIV();
+}

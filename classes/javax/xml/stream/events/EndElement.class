@@ -1,0 +1,5 @@
+Compiled from "EndElement.java"
+public interface javax.xml.stream.events.EndElement extends javax.xml.stream.events.XMLEvent {
+  public abstract javax.xml.namespace.QName getName();
+  public abstract java.util.Iterator<javax.xml.stream.events.Namespace> getNamespaces();
+}

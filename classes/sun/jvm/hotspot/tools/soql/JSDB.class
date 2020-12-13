@@ -1,0 +1,7 @@
+Compiled from "JSDB.java"
+public class sun.jvm.hotspot.tools.soql.JSDB extends sun.jvm.hotspot.tools.Tool {
+  public sun.jvm.hotspot.tools.soql.JSDB();
+  public sun.jvm.hotspot.tools.soql.JSDB(sun.jvm.hotspot.debugger.JVMDebugger);
+  public static void main(java.lang.String[]);
+  public void run();
+}

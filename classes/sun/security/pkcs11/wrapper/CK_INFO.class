@@ -1,0 +1,10 @@
+Compiled from "CK_INFO.java"
+public class sun.security.pkcs11.wrapper.CK_INFO {
+  public sun.security.pkcs11.wrapper.CK_VERSION cryptokiVersion;
+  public char[] manufacturerID;
+  public long flags;
+  public char[] libraryDescription;
+  public sun.security.pkcs11.wrapper.CK_VERSION libraryVersion;
+  public sun.security.pkcs11.wrapper.CK_INFO(sun.security.pkcs11.wrapper.CK_VERSION, char[], long, char[], sun.security.pkcs11.wrapper.CK_VERSION);
+  public java.lang.String toString();
+}

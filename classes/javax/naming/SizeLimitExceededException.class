@@ -1,0 +1,5 @@
+Compiled from "SizeLimitExceededException.java"
+public class javax.naming.SizeLimitExceededException extends javax.naming.LimitExceededException {
+  public javax.naming.SizeLimitExceededException();
+  public javax.naming.SizeLimitExceededException(java.lang.String);
+}

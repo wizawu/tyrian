@@ -1,0 +1,30 @@
+Compiled from "Element.java"
+public final class javax.swing.text.html.parser.Element implements javax.swing.text.html.parser.DTDConstants,java.io.Serializable {
+  public int index;
+  public java.lang.String name;
+  public boolean oStart;
+  public boolean oEnd;
+  public java.util.BitSet inclusions;
+  public java.util.BitSet exclusions;
+  public int type;
+  public javax.swing.text.html.parser.ContentModel content;
+  public javax.swing.text.html.parser.AttributeList atts;
+  public java.lang.Object data;
+  static java.util.Hashtable<java.lang.String, java.lang.Integer> contentTypes;
+  javax.swing.text.html.parser.Element();
+  javax.swing.text.html.parser.Element(java.lang.String, int);
+  static int getMaxIndex();
+  public java.lang.String getName();
+  public boolean omitStart();
+  public boolean omitEnd();
+  public int getType();
+  public javax.swing.text.html.parser.ContentModel getContent();
+  public javax.swing.text.html.parser.AttributeList getAttributes();
+  public int getIndex();
+  public boolean isEmpty();
+  public java.lang.String toString();
+  public javax.swing.text.html.parser.AttributeList getAttribute(java.lang.String);
+  public javax.swing.text.html.parser.AttributeList getAttributeByValue(java.lang.String);
+  public static int name2type(java.lang.String);
+  static {};
+}

@@ -1,0 +1,13 @@
+Compiled from "Position.java"
+public class com.sun.tools.javac.util.Position {
+  public static final int NOPOS;
+  public static final int FIRSTPOS;
+  public static final int FIRSTLINE;
+  public static final int FIRSTCOLUMN;
+  public static final int LINESHIFT;
+  public static final int MAXCOLUMN;
+  public static final int MAXLINE;
+  public static final int MAXPOS;
+  public static com.sun.tools.javac.util.Position$LineMap makeLineMap(char[], int, boolean);
+  public static int encodePosition(int, int);
+}

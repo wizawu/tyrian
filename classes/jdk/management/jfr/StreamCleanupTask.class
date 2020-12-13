@@ -1,0 +1,5 @@
+Compiled from "StreamCleanupTask.java"
+final class jdk.management.jfr.StreamCleanupTask extends java.util.TimerTask {
+  jdk.management.jfr.StreamCleanupTask(jdk.management.jfr.StreamManager, jdk.management.jfr.Stream);
+  public void run();
+}

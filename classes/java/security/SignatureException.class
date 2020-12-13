@@ -1,0 +1,7 @@
+Compiled from "SignatureException.java"
+public class java.security.SignatureException extends java.security.GeneralSecurityException {
+  public java.security.SignatureException();
+  public java.security.SignatureException(java.lang.String);
+  public java.security.SignatureException(java.lang.String, java.lang.Throwable);
+  public java.security.SignatureException(java.lang.Throwable);
+}

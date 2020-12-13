@@ -1,0 +1,5 @@
+Compiled from "URIReference.java"
+public interface javax.xml.crypto.URIReference {
+  public abstract java.lang.String getURI();
+  public abstract java.lang.String getType();
+}

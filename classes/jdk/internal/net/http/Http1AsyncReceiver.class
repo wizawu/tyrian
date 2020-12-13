@@ -1,0 +1,20 @@
+Compiled from "Http1AsyncReceiver.java"
+class jdk.internal.net.http.Http1AsyncReceiver {
+  final jdk.internal.net.http.common.Logger debug;
+  final jdk.internal.net.http.common.MinimalFuture<java.lang.Void> whenFinished;
+  final java.util.concurrent.atomic.AtomicBoolean canRequestMore;
+  volatile java.lang.String dbgTag;
+  static final boolean $assertionsDisabled;
+  public jdk.internal.net.http.Http1AsyncReceiver(java.util.concurrent.Executor, jdk.internal.net.http.Http1Exchange<?>);
+  synchronized void setRetryOnError(boolean);
+  void clear();
+  void subscribe(jdk.internal.net.http.Http1AsyncReceiver$Http1AsyncDelegate);
+  long remaining();
+  void unsubscribe(jdk.internal.net.http.Http1AsyncReceiver$Http1AsyncDelegate);
+  void onReadError(java.lang.Throwable);
+  void stop();
+  jdk.internal.net.http.common.FlowTube$TubeSubscriber subscriber();
+  java.nio.ByteBuffer drain(java.nio.ByteBuffer);
+  java.lang.String dbgString();
+  static {};
+}

@@ -1,0 +1,17 @@
+Compiled from "NullSurfaceData.java"
+public class sun.java2d.NullSurfaceData extends sun.java2d.SurfaceData {
+  public static final sun.java2d.SurfaceData theInstance;
+  public void invalidate();
+  public sun.java2d.SurfaceData getReplacement();
+  public void validatePipe(sun.java2d.SunGraphics2D);
+  public java.awt.GraphicsConfiguration getDeviceConfiguration();
+  public java.awt.image.Raster getRaster(int, int, int, int);
+  public boolean useTightBBoxes();
+  public int pixelFor(int);
+  public int rgbFor(int);
+  public java.awt.Rectangle getBounds();
+  protected void checkCustomComposite();
+  public boolean copyArea(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
+  public java.lang.Object getDestination();
+  static {};
+}

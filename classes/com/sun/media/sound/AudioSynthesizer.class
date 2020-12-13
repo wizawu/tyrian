@@ -1,0 +1,7 @@
+Compiled from "AudioSynthesizer.java"
+public interface com.sun.media.sound.AudioSynthesizer extends javax.sound.midi.Synthesizer {
+  public abstract javax.sound.sampled.AudioFormat getFormat();
+  public abstract com.sun.media.sound.AudioSynthesizerPropertyInfo[] getPropertyInfo(java.util.Map<java.lang.String, java.lang.Object>);
+  public abstract void open(javax.sound.sampled.SourceDataLine, java.util.Map<java.lang.String, java.lang.Object>) throws javax.sound.midi.MidiUnavailableException;
+  public abstract javax.sound.sampled.AudioInputStream openStream(javax.sound.sampled.AudioFormat, java.util.Map<java.lang.String, java.lang.Object>) throws javax.sound.midi.MidiUnavailableException;
+}

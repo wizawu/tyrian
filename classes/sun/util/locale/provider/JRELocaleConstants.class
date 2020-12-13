@@ -1,0 +1,8 @@
+Compiled from "JRELocaleConstants.java"
+public class sun.util.locale.provider.JRELocaleConstants {
+  public static final java.util.Locale JA_JP_JP;
+  public static final java.util.Locale NO_NO_NY;
+  public static final java.util.Locale TH_TH;
+  public static final java.util.Locale TH_TH_TH;
+  static {};
+}

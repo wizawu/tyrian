@@ -1,0 +1,8 @@
+Compiled from "ModuleOpenNode.java"
+public class jdk.internal.org.objectweb.asm.tree.ModuleOpenNode {
+  public java.lang.String packaze;
+  public int access;
+  public java.util.List<java.lang.String> modules;
+  public jdk.internal.org.objectweb.asm.tree.ModuleOpenNode(java.lang.String, int, java.util.List<java.lang.String>);
+  public void accept(jdk.internal.org.objectweb.asm.ModuleVisitor);
+}

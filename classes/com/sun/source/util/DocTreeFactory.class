@@ -1,0 +1,43 @@
+Compiled from "DocTreeFactory.java"
+public interface com.sun.source.util.DocTreeFactory {
+  public abstract com.sun.source.doctree.AttributeTree newAttributeTree(javax.lang.model.element.Name, com.sun.source.doctree.AttributeTree$ValueKind, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.AuthorTree newAuthorTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.LiteralTree newCodeTree(com.sun.source.doctree.TextTree);
+  public abstract com.sun.source.doctree.CommentTree newCommentTree(java.lang.String);
+  public abstract com.sun.source.doctree.DeprecatedTree newDeprecatedTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.DocCommentTree newDocCommentTree(java.util.List<? extends com.sun.source.doctree.DocTree>, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.DocCommentTree newDocCommentTree(java.util.List<? extends com.sun.source.doctree.DocTree>, java.util.List<? extends com.sun.source.doctree.DocTree>, java.util.List<? extends com.sun.source.doctree.DocTree>, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.DocRootTree newDocRootTree();
+  public abstract com.sun.source.doctree.DocTypeTree newDocTypeTree(java.lang.String);
+  public abstract com.sun.source.doctree.EndElementTree newEndElementTree(javax.lang.model.element.Name);
+  public abstract com.sun.source.doctree.EntityTree newEntityTree(javax.lang.model.element.Name);
+  public abstract com.sun.source.doctree.ErroneousTree newErroneousTree(java.lang.String, javax.tools.Diagnostic<javax.tools.JavaFileObject>);
+  public abstract com.sun.source.doctree.ThrowsTree newExceptionTree(com.sun.source.doctree.ReferenceTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.HiddenTree newHiddenTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.IdentifierTree newIdentifierTree(javax.lang.model.element.Name);
+  public abstract com.sun.source.doctree.IndexTree newIndexTree(com.sun.source.doctree.DocTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.InheritDocTree newInheritDocTree();
+  public abstract com.sun.source.doctree.LinkTree newLinkTree(com.sun.source.doctree.ReferenceTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.LinkTree newLinkPlainTree(com.sun.source.doctree.ReferenceTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.LiteralTree newLiteralTree(com.sun.source.doctree.TextTree);
+  public abstract com.sun.source.doctree.ParamTree newParamTree(boolean, com.sun.source.doctree.IdentifierTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.ProvidesTree newProvidesTree(com.sun.source.doctree.ReferenceTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.ReferenceTree newReferenceTree(java.lang.String);
+  public abstract com.sun.source.doctree.ReturnTree newReturnTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.SeeTree newSeeTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.SerialTree newSerialTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.SerialDataTree newSerialDataTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.SerialFieldTree newSerialFieldTree(com.sun.source.doctree.IdentifierTree, com.sun.source.doctree.ReferenceTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.SinceTree newSinceTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.StartElementTree newStartElementTree(javax.lang.model.element.Name, java.util.List<? extends com.sun.source.doctree.DocTree>, boolean);
+  public default com.sun.source.doctree.SummaryTree newSummaryTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.TextTree newTextTree(java.lang.String);
+  public abstract com.sun.source.doctree.ThrowsTree newThrowsTree(com.sun.source.doctree.ReferenceTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.UnknownBlockTagTree newUnknownBlockTagTree(javax.lang.model.element.Name, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.UnknownInlineTagTree newUnknownInlineTagTree(javax.lang.model.element.Name, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.UsesTree newUsesTree(com.sun.source.doctree.ReferenceTree, java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.doctree.ValueTree newValueTree(com.sun.source.doctree.ReferenceTree);
+  public abstract com.sun.source.doctree.VersionTree newVersionTree(java.util.List<? extends com.sun.source.doctree.DocTree>);
+  public abstract com.sun.source.util.DocTreeFactory at(int);
+  public abstract java.util.List<com.sun.source.doctree.DocTree> getFirstSentence(java.util.List<? extends com.sun.source.doctree.DocTree>);
+}

@@ -1,0 +1,7 @@
+Compiled from "CharacterIteratorFieldDelegate.java"
+class java.text.CharacterIteratorFieldDelegate implements java.text.Format$FieldDelegate {
+  java.text.CharacterIteratorFieldDelegate();
+  public void formatted(java.text.Format$Field, java.lang.Object, int, int, java.lang.StringBuffer);
+  public void formatted(int, java.text.Format$Field, java.lang.Object, int, int, java.lang.StringBuffer);
+  public java.text.AttributedCharacterIterator getIterator(java.lang.String);
+}

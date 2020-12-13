@@ -1,0 +1,10 @@
+Compiled from "CheckModuleAdapter.java"
+public final class jdk.internal.org.objectweb.asm.util.CheckModuleAdapter extends jdk.internal.org.objectweb.asm.ModuleVisitor {
+  public jdk.internal.org.objectweb.asm.util.CheckModuleAdapter(jdk.internal.org.objectweb.asm.ModuleVisitor, boolean);
+  public void visitRequire(java.lang.String, int, java.lang.String);
+  public void visitExport(java.lang.String, int, java.lang.String...);
+  public void visitOpen(java.lang.String, int, java.lang.String...);
+  public void visitUse(java.lang.String);
+  public void visitProvide(java.lang.String, java.lang.String...);
+  public void visitEnd();
+}

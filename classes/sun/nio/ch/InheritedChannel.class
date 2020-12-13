@@ -1,0 +1,7 @@
+Compiled from "InheritedChannel.java"
+class sun.nio.ch.InheritedChannel {
+  static final boolean $assertionsDisabled;
+  sun.nio.ch.InheritedChannel();
+  public static synchronized java.nio.channels.Channel getChannel() throws java.io.IOException;
+  static {};
+}

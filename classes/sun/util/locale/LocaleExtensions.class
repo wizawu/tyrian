@@ -1,0 +1,21 @@
+Compiled from "LocaleExtensions.java"
+public class sun.util.locale.LocaleExtensions {
+  public static final sun.util.locale.LocaleExtensions CALENDAR_JAPANESE;
+  public static final sun.util.locale.LocaleExtensions NUMBER_THAI;
+  static final boolean $assertionsDisabled;
+  sun.util.locale.LocaleExtensions(java.util.Map<sun.util.locale.InternalLocaleBuilder$CaseInsensitiveChar, java.lang.String>, java.util.Set<sun.util.locale.InternalLocaleBuilder$CaseInsensitiveString>, java.util.Map<sun.util.locale.InternalLocaleBuilder$CaseInsensitiveString, java.lang.String>);
+  public java.util.Set<java.lang.Character> getKeys();
+  public sun.util.locale.Extension getExtension(java.lang.Character);
+  public java.lang.String getExtensionValue(java.lang.Character);
+  public java.util.Set<java.lang.String> getUnicodeLocaleAttributes();
+  public java.util.Set<java.lang.String> getUnicodeLocaleKeys();
+  public java.lang.String getUnicodeLocaleType(java.lang.String);
+  public boolean isEmpty();
+  public static boolean isValidKey(char);
+  public static boolean isValidUnicodeLocaleKey(java.lang.String);
+  public java.lang.String toString();
+  public java.lang.String getID();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  static {};
+}

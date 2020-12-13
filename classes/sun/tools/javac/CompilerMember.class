@@ -1,0 +1,12 @@
+Compiled from "CompilerMember.java"
+final class sun.tools.javac.CompilerMember implements java.lang.Comparable<java.lang.Object> {
+  sun.tools.java.MemberDefinition field;
+  sun.tools.asm.Assembler asm;
+  java.lang.Object value;
+  java.lang.String name;
+  java.lang.String sig;
+  java.lang.String key;
+  sun.tools.javac.CompilerMember(sun.tools.java.MemberDefinition, sun.tools.asm.Assembler);
+  public int compareTo(java.lang.Object);
+  java.lang.String getKey();
+}

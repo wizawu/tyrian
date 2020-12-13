@@ -1,0 +1,5 @@
+Compiled from "IllegalCharException.java"
+class com.sun.org.apache.xalan.internal.xsltc.compiler.IllegalCharException extends java.lang.Exception {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.IllegalCharException(java.lang.String);
+}

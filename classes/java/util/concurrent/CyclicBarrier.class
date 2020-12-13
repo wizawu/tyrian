@@ -1,0 +1,11 @@
+Compiled from "CyclicBarrier.java"
+public class java.util.concurrent.CyclicBarrier {
+  public java.util.concurrent.CyclicBarrier(int, java.lang.Runnable);
+  public java.util.concurrent.CyclicBarrier(int);
+  public int getParties();
+  public int await() throws java.lang.InterruptedException, java.util.concurrent.BrokenBarrierException;
+  public int await(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException, java.util.concurrent.BrokenBarrierException, java.util.concurrent.TimeoutException;
+  public boolean isBroken();
+  public void reset();
+  public int getNumberWaiting();
+}

@@ -1,0 +1,6 @@
+Compiled from "NativeConstructorAccessorImpl.java"
+class jdk.internal.reflect.NativeConstructorAccessorImpl extends jdk.internal.reflect.ConstructorAccessorImpl {
+  jdk.internal.reflect.NativeConstructorAccessorImpl(java.lang.reflect.Constructor<?>);
+  public java.lang.Object newInstance(java.lang.Object[]) throws java.lang.InstantiationException, java.lang.IllegalArgumentException, java.lang.reflect.InvocationTargetException;
+  void setParent(jdk.internal.reflect.DelegatingConstructorAccessorImpl);
+}

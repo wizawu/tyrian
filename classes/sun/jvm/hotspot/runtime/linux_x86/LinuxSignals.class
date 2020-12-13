@@ -1,0 +1,6 @@
+Compiled from "LinuxSignals.java"
+public class sun.jvm.hotspot.runtime.linux_x86.LinuxSignals {
+  public sun.jvm.hotspot.runtime.linux_x86.LinuxSignals();
+  public static java.lang.String getSignalName(int);
+  static {};
+}

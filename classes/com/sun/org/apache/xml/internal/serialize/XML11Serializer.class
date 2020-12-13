@@ -1,0 +1,23 @@
+Compiled from "XML11Serializer.java"
+public class com.sun.org.apache.xml.internal.serialize.XML11Serializer extends com.sun.org.apache.xml.internal.serialize.XMLSerializer {
+  protected static final boolean DEBUG;
+  protected com.sun.org.apache.xerces.internal.util.NamespaceSupport fNSBinder;
+  protected com.sun.org.apache.xerces.internal.util.NamespaceSupport fLocalNSBinder;
+  protected com.sun.org.apache.xerces.internal.util.SymbolTable fSymbolTable;
+  protected boolean fDOML1;
+  protected int fNamespaceCounter;
+  protected static final java.lang.String PREFIX;
+  protected boolean fNamespaces;
+  public com.sun.org.apache.xml.internal.serialize.XML11Serializer();
+  public com.sun.org.apache.xml.internal.serialize.XML11Serializer(com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public com.sun.org.apache.xml.internal.serialize.XML11Serializer(java.io.Writer, com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public com.sun.org.apache.xml.internal.serialize.XML11Serializer(java.io.OutputStream, com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public void characters(char[], int, int) throws org.xml.sax.SAXException;
+  protected void printEscaped(java.lang.String) throws java.io.IOException;
+  protected final void printCDATAText(java.lang.String) throws java.io.IOException;
+  protected final void printXMLChar(int) throws java.io.IOException;
+  protected final void surrogates(int, int, boolean) throws java.io.IOException;
+  protected void printText(java.lang.String, boolean, boolean) throws java.io.IOException;
+  protected void printText(char[], int, int, boolean, boolean) throws java.io.IOException;
+  public boolean reset();
+}

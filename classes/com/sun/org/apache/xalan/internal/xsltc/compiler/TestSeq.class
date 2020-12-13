@@ -1,0 +1,12 @@
+Compiled from "TestSeq.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.TestSeq {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.TestSeq(java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.LocationPathPattern>, com.sun.org.apache.xalan.internal.xsltc.compiler.Mode);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.TestSeq(java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.LocationPathPattern>, int, com.sun.org.apache.xalan.internal.xsltc.compiler.Mode);
+  public java.lang.String toString();
+  public com.sun.org.apache.bcel.internal.generic.InstructionList getInstructionList();
+  public double getPriority();
+  public int getPosition();
+  public void reduce();
+  public void findTemplates(java.util.Map<com.sun.org.apache.xalan.internal.xsltc.compiler.Template, java.lang.Object>);
+  public com.sun.org.apache.bcel.internal.generic.InstructionHandle compile(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator, com.sun.org.apache.bcel.internal.generic.InstructionHandle);
+}

@@ -1,0 +1,4 @@
+Compiled from "Formattable.java"
+public interface java.util.Formattable {
+  public abstract void formatTo(java.util.Formatter, int, int, int);
+}

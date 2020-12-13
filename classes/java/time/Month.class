@@ -1,0 +1,35 @@
+Compiled from "Month.java"
+public final class java.time.Month extends java.lang.Enum<java.time.Month> implements java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster {
+  public static final java.time.Month JANUARY;
+  public static final java.time.Month FEBRUARY;
+  public static final java.time.Month MARCH;
+  public static final java.time.Month APRIL;
+  public static final java.time.Month MAY;
+  public static final java.time.Month JUNE;
+  public static final java.time.Month JULY;
+  public static final java.time.Month AUGUST;
+  public static final java.time.Month SEPTEMBER;
+  public static final java.time.Month OCTOBER;
+  public static final java.time.Month NOVEMBER;
+  public static final java.time.Month DECEMBER;
+  public static java.time.Month[] values();
+  public static java.time.Month valueOf(java.lang.String);
+  public static java.time.Month of(int);
+  public static java.time.Month from(java.time.temporal.TemporalAccessor);
+  public int getValue();
+  public java.lang.String getDisplayName(java.time.format.TextStyle, java.util.Locale);
+  public boolean isSupported(java.time.temporal.TemporalField);
+  public java.time.temporal.ValueRange range(java.time.temporal.TemporalField);
+  public int get(java.time.temporal.TemporalField);
+  public long getLong(java.time.temporal.TemporalField);
+  public java.time.Month plus(long);
+  public java.time.Month minus(long);
+  public int length(boolean);
+  public int minLength();
+  public int maxLength();
+  public int firstDayOfYear(boolean);
+  public java.time.Month firstMonthOfQuarter();
+  public <R> R query(java.time.temporal.TemporalQuery<R>);
+  public java.time.temporal.Temporal adjustInto(java.time.temporal.Temporal);
+  static {};
+}

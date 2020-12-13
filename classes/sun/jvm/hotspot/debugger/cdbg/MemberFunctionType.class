@@ -1,0 +1,6 @@
+Compiled from "MemberFunctionType.java"
+public interface sun.jvm.hotspot.debugger.cdbg.MemberFunctionType extends sun.jvm.hotspot.debugger.cdbg.FunctionType {
+  public abstract sun.jvm.hotspot.debugger.cdbg.Type getContainingClass();
+  public abstract sun.jvm.hotspot.debugger.cdbg.Type getThisType();
+  public abstract long getThisAdjust();
+}

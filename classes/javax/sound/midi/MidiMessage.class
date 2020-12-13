@@ -1,0 +1,11 @@
+Compiled from "MidiMessage.java"
+public abstract class javax.sound.midi.MidiMessage implements java.lang.Cloneable {
+  protected byte[] data;
+  protected int length;
+  protected javax.sound.midi.MidiMessage(byte[]);
+  protected void setMessage(byte[], int) throws javax.sound.midi.InvalidMidiDataException;
+  public byte[] getMessage();
+  public int getStatus();
+  public int getLength();
+  public abstract java.lang.Object clone();
+}

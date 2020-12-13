@@ -1,0 +1,13 @@
+Compiled from "PrintServiceLookup.java"
+public abstract class javax.print.PrintServiceLookup {
+  public javax.print.PrintServiceLookup();
+  public static final javax.print.PrintService[] lookupPrintServices(javax.print.DocFlavor, javax.print.attribute.AttributeSet);
+  public static final javax.print.MultiDocPrintService[] lookupMultiDocPrintServices(javax.print.DocFlavor[], javax.print.attribute.AttributeSet);
+  public static final javax.print.PrintService lookupDefaultPrintService();
+  public static boolean registerServiceProvider(javax.print.PrintServiceLookup);
+  public static boolean registerService(javax.print.PrintService);
+  public abstract javax.print.PrintService[] getPrintServices(javax.print.DocFlavor, javax.print.attribute.AttributeSet);
+  public abstract javax.print.PrintService[] getPrintServices();
+  public abstract javax.print.MultiDocPrintService[] getMultiDocPrintServices(javax.print.DocFlavor[], javax.print.attribute.AttributeSet);
+  public abstract javax.print.PrintService getDefaultPrintService();
+}

@@ -1,0 +1,34 @@
+Compiled from "Document.java"
+public interface org.w3c.dom.Document extends org.w3c.dom.Node {
+  public abstract org.w3c.dom.DocumentType getDoctype();
+  public abstract org.w3c.dom.DOMImplementation getImplementation();
+  public abstract org.w3c.dom.Element getDocumentElement();
+  public abstract org.w3c.dom.Element createElement(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.DocumentFragment createDocumentFragment();
+  public abstract org.w3c.dom.Text createTextNode(java.lang.String);
+  public abstract org.w3c.dom.Comment createComment(java.lang.String);
+  public abstract org.w3c.dom.CDATASection createCDATASection(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.ProcessingInstruction createProcessingInstruction(java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.Attr createAttribute(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.EntityReference createEntityReference(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.NodeList getElementsByTagName(java.lang.String);
+  public abstract org.w3c.dom.Node importNode(org.w3c.dom.Node, boolean) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.Element createElementNS(java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.Attr createAttributeNS(java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.NodeList getElementsByTagNameNS(java.lang.String, java.lang.String);
+  public abstract org.w3c.dom.Element getElementById(java.lang.String);
+  public abstract java.lang.String getInputEncoding();
+  public abstract java.lang.String getXmlEncoding();
+  public abstract boolean getXmlStandalone();
+  public abstract void setXmlStandalone(boolean) throws org.w3c.dom.DOMException;
+  public abstract java.lang.String getXmlVersion();
+  public abstract void setXmlVersion(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract boolean getStrictErrorChecking();
+  public abstract void setStrictErrorChecking(boolean);
+  public abstract java.lang.String getDocumentURI();
+  public abstract void setDocumentURI(java.lang.String);
+  public abstract org.w3c.dom.Node adoptNode(org.w3c.dom.Node) throws org.w3c.dom.DOMException;
+  public abstract org.w3c.dom.DOMConfiguration getDomConfig();
+  public abstract void normalizeDocument();
+  public abstract org.w3c.dom.Node renameNode(org.w3c.dom.Node, java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
+}

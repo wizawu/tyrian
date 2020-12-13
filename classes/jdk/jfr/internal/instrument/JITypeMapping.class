@@ -1,0 +1,5 @@
+Compiled from "JITypeMapping.java"
+interface jdk.jfr.internal.instrument.JITypeMapping extends java.lang.annotation.Annotation {
+  public abstract java.lang.String from();
+  public abstract java.lang.String to();
+}

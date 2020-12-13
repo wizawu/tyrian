@@ -1,0 +1,5 @@
+Compiled from "Profile.java"
+public class sun.java2d.cmm.Profile {
+  protected sun.java2d.cmm.Profile(long);
+  protected final long getNativePtr();
+}

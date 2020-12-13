@@ -1,0 +1,8 @@
+Compiled from "SortKey.java"
+public class javax.naming.ldap.SortKey {
+  public javax.naming.ldap.SortKey(java.lang.String);
+  public javax.naming.ldap.SortKey(java.lang.String, boolean, java.lang.String);
+  public java.lang.String getAttributeID();
+  public boolean isAscending();
+  public java.lang.String getMatchingRuleID();
+}

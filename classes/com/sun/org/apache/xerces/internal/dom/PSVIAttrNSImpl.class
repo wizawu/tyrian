@@ -1,0 +1,33 @@
+Compiled from "PSVIAttrNSImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.PSVIAttrNSImpl extends com.sun.org.apache.xerces.internal.dom.AttrNSImpl implements com.sun.org.apache.xerces.internal.xs.AttributePSVI {
+  static final long serialVersionUID;
+  protected com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration fDeclaration;
+  protected com.sun.org.apache.xerces.internal.xs.XSTypeDefinition fTypeDecl;
+  protected boolean fSpecified;
+  protected com.sun.org.apache.xerces.internal.impl.dv.ValidatedInfo fValue;
+  protected short fValidationAttempted;
+  protected short fValidity;
+  protected com.sun.org.apache.xerces.internal.xs.StringList fErrorCodes;
+  protected com.sun.org.apache.xerces.internal.xs.StringList fErrorMessages;
+  protected java.lang.String fValidationContext;
+  public com.sun.org.apache.xerces.internal.dom.PSVIAttrNSImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xerces.internal.dom.PSVIAttrNSImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xerces.internal.xs.ItemPSVI constant();
+  public boolean isConstant();
+  public java.lang.String getSchemaDefault();
+  public java.lang.String getSchemaNormalizedValue();
+  public boolean getIsSchemaSpecified();
+  public short getValidationAttempted();
+  public short getValidity();
+  public com.sun.org.apache.xerces.internal.xs.StringList getErrorCodes();
+  public com.sun.org.apache.xerces.internal.xs.StringList getErrorMessages();
+  public java.lang.String getValidationContext();
+  public com.sun.org.apache.xerces.internal.xs.XSTypeDefinition getTypeDefinition();
+  public com.sun.org.apache.xerces.internal.xs.XSSimpleTypeDefinition getMemberTypeDefinition();
+  public com.sun.org.apache.xerces.internal.xs.XSAttributeDeclaration getAttributeDeclaration();
+  public void setPSVI(com.sun.org.apache.xerces.internal.xs.AttributePSVI);
+  public java.lang.Object getActualNormalizedValue();
+  public short getActualNormalizedValueType();
+  public com.sun.org.apache.xerces.internal.xs.ShortList getItemValueTypes();
+  public com.sun.org.apache.xerces.internal.xs.XSValue getSchemaValue();
+}

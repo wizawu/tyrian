@@ -1,0 +1,9 @@
+Compiled from "CharField.java"
+public class sun.jvm.hotspot.oops.CharField extends sun.jvm.hotspot.oops.Field {
+  public sun.jvm.hotspot.oops.CharField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
+  public sun.jvm.hotspot.oops.CharField(sun.jvm.hotspot.types.JCharField, long);
+  public sun.jvm.hotspot.oops.CharField(sun.jvm.hotspot.oops.InstanceKlass, int);
+  public char getValue(sun.jvm.hotspot.oops.Oop);
+  public char getValue(sun.jvm.hotspot.runtime.VMObject);
+  public void setValue(sun.jvm.hotspot.oops.Oop, char) throws sun.jvm.hotspot.oops.MutationException;
+}

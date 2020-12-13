@@ -1,0 +1,6 @@
+Compiled from "DocumentListener.java"
+public interface javax.swing.event.DocumentListener extends java.util.EventListener {
+  public abstract void insertUpdate(javax.swing.event.DocumentEvent);
+  public abstract void removeUpdate(javax.swing.event.DocumentEvent);
+  public abstract void changedUpdate(javax.swing.event.DocumentEvent);
+}

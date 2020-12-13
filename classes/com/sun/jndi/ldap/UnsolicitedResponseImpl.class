@@ -1,0 +1,9 @@
+Compiled from "UnsolicitedResponseImpl.java"
+final class com.sun.jndi.ldap.UnsolicitedResponseImpl implements javax.naming.ldap.UnsolicitedNotification {
+  com.sun.jndi.ldap.UnsolicitedResponseImpl(java.lang.String, byte[], java.util.Vector<java.util.Vector<java.lang.String>>, int, java.lang.String, java.lang.String, javax.naming.ldap.Control[]);
+  public java.lang.String getID();
+  public byte[] getEncodedValue();
+  public java.lang.String[] getReferrals();
+  public javax.naming.NamingException getException();
+  public javax.naming.ldap.Control[] getControls() throws javax.naming.NamingException;
+}

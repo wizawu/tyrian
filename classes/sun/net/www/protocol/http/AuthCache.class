@@ -1,0 +1,6 @@
+Compiled from "AuthCache.java"
+public interface sun.net.www.protocol.http.AuthCache {
+  public abstract void put(java.lang.String, sun.net.www.protocol.http.AuthCacheValue);
+  public abstract sun.net.www.protocol.http.AuthCacheValue get(java.lang.String, java.lang.String);
+  public abstract void remove(java.lang.String, sun.net.www.protocol.http.AuthCacheValue);
+}

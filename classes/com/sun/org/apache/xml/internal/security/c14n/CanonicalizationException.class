@@ -1,0 +1,11 @@
+Compiled from "CanonicalizationException.java"
+public class com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException extends com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException {
+  public com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException();
+  public com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException(java.lang.Exception);
+  public com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException(java.lang.String);
+  public com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException(java.lang.String, java.lang.Object[]);
+  public com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException(java.lang.Exception, java.lang.String);
+  public com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException(java.lang.String, java.lang.Exception);
+  public com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException(java.lang.Exception, java.lang.String, java.lang.Object[]);
+  public com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException(java.lang.String, java.lang.Object[], java.lang.Exception);
+}

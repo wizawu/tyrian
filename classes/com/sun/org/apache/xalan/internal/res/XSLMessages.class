@@ -1,0 +1,7 @@
+Compiled from "XSLMessages.java"
+public class com.sun.org.apache.xalan.internal.res.XSLMessages extends com.sun.org.apache.xpath.internal.res.XPATHMessages {
+  public com.sun.org.apache.xalan.internal.res.XSLMessages();
+  public static java.lang.String createMessage(java.lang.String, java.lang.Object[]);
+  public static java.lang.String createWarning(java.lang.String, java.lang.Object[]);
+  static {};
+}

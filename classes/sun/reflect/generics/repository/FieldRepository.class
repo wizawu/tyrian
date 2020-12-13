@@ -1,0 +1,8 @@
+Compiled from "FieldRepository.java"
+public class sun.reflect.generics.repository.FieldRepository extends sun.reflect.generics.repository.AbstractRepository<sun.reflect.generics.tree.TypeSignature> {
+  protected sun.reflect.generics.repository.FieldRepository(java.lang.String, sun.reflect.generics.factory.GenericsFactory);
+  protected sun.reflect.generics.tree.TypeSignature parse(java.lang.String);
+  public static sun.reflect.generics.repository.FieldRepository make(java.lang.String, sun.reflect.generics.factory.GenericsFactory);
+  public java.lang.reflect.Type getGenericType();
+  protected sun.reflect.generics.tree.Tree parse(java.lang.String);
+}

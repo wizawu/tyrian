@@ -1,0 +1,14 @@
+Compiled from "TextImpl.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.opti.TextImpl extends com.sun.org.apache.xerces.internal.impl.xs.opti.DefaultText {
+  java.lang.String fData;
+  com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOM fSchemaDOM;
+  int fRow;
+  int fCol;
+  public com.sun.org.apache.xerces.internal.impl.xs.opti.TextImpl(java.lang.StringBuffer, com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOM, int, int);
+  public org.w3c.dom.Node getParentNode();
+  public org.w3c.dom.Node getPreviousSibling();
+  public org.w3c.dom.Node getNextSibling();
+  public java.lang.String getData() throws org.w3c.dom.DOMException;
+  public int getLength();
+  public java.lang.String substringData(int, int) throws org.w3c.dom.DOMException;
+}

@@ -1,0 +1,40 @@
+Compiled from "ClassWriter.java"
+public class sun.jvm.hotspot.tools.jcore.ClassWriter implements sun.jvm.hotspot.runtime.ClassConstants {
+  public static final boolean DEBUG;
+  protected sun.jvm.hotspot.oops.InstanceKlass klass;
+  protected java.io.DataOutputStream dos;
+  protected sun.jvm.hotspot.oops.ConstantPool cpool;
+  protected java.util.Map<java.lang.String, java.lang.Short> classToIndex;
+  protected java.util.Map<java.lang.String, java.lang.Short> utf8ToIndex;
+  protected short _sourceFileIndex;
+  protected short _innerClassesIndex;
+  protected short _syntheticIndex;
+  protected short _deprecatedIndex;
+  protected short _constantValueIndex;
+  protected short _codeIndex;
+  protected short _exceptionsIndex;
+  protected short _lineNumberTableIndex;
+  protected short _localVariableTableIndex;
+  protected short _signatureIndex;
+  protected void debugMessage(java.lang.String);
+  protected static int extractHighShortFromInt(int);
+  protected static int extractLowShortFromInt(int);
+  public sun.jvm.hotspot.tools.jcore.ClassWriter(sun.jvm.hotspot.oops.InstanceKlass, java.io.OutputStream);
+  public void write() throws java.io.IOException;
+  protected void writeVersion() throws java.io.IOException;
+  protected void writeIndex(int) throws java.io.IOException;
+  protected void writeConstantPool() throws java.io.IOException;
+  protected void writeClassAccessFlags() throws java.io.IOException;
+  protected void writeThisClass() throws java.io.IOException;
+  protected void writeSuperClass() throws java.io.IOException;
+  protected void writeInterfaces() throws java.io.IOException;
+  protected void writeFields() throws java.io.IOException;
+  protected boolean isSynthetic(short);
+  protected boolean hasSyntheticAttribute(short);
+  protected void writeSynthetic() throws java.io.IOException;
+  protected void writeMethods() throws java.io.IOException;
+  protected void writeMethod(sun.jvm.hotspot.oops.Method) throws java.io.IOException;
+  protected void rewriteByteCode(sun.jvm.hotspot.oops.Method, byte[]);
+  protected void writeGenericSignature(java.lang.String) throws java.io.IOException;
+  protected void writeClassAttributes() throws java.io.IOException;
+}

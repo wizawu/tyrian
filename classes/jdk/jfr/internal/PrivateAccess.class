@@ -1,0 +1,21 @@
+Compiled from "PrivateAccess.java"
+public abstract class jdk.jfr.internal.PrivateAccess {
+  public jdk.jfr.internal.PrivateAccess();
+  public static jdk.jfr.internal.PrivateAccess getInstance();
+  public static void setPrivateAccess(jdk.jfr.internal.PrivateAccess);
+  public abstract jdk.jfr.internal.Type getType(java.lang.Object);
+  public abstract jdk.jfr.Configuration newConfiguration(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.Map<java.lang.String, java.lang.String>, java.lang.String);
+  public abstract jdk.jfr.EventType newEventType(jdk.jfr.internal.PlatformEventType);
+  public abstract jdk.jfr.AnnotationElement newAnnotation(jdk.jfr.internal.Type, java.util.List<java.lang.Object>, boolean);
+  public abstract jdk.jfr.ValueDescriptor newValueDescriptor(java.lang.String, jdk.jfr.internal.Type, java.util.List<jdk.jfr.AnnotationElement>, int, boolean, java.lang.String);
+  public abstract jdk.jfr.internal.PlatformRecording getPlatformRecording(jdk.jfr.Recording);
+  public abstract jdk.jfr.internal.PlatformEventType getPlatformEventType(jdk.jfr.EventType);
+  public abstract boolean isConstantPool(jdk.jfr.ValueDescriptor);
+  public abstract java.lang.String getFieldName(jdk.jfr.ValueDescriptor);
+  public abstract jdk.jfr.ValueDescriptor newValueDescriptor(java.lang.Class<?>, java.lang.String);
+  public abstract jdk.jfr.SettingDescriptor newSettingDescriptor(jdk.jfr.internal.Type, java.lang.String, java.lang.String, java.util.List<jdk.jfr.AnnotationElement>);
+  public abstract void setAnnotations(jdk.jfr.ValueDescriptor, java.util.List<jdk.jfr.AnnotationElement>);
+  public abstract void setAnnotations(jdk.jfr.SettingDescriptor, java.util.List<jdk.jfr.AnnotationElement>);
+  public abstract boolean isUnsigned(jdk.jfr.ValueDescriptor);
+  public abstract jdk.jfr.internal.PlatformRecorder getPlatformRecorder();
+}

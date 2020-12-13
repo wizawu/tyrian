@@ -1,0 +1,23 @@
+Compiled from "SSLServerSocket.java"
+public abstract class javax.net.ssl.SSLServerSocket extends java.net.ServerSocket {
+  protected javax.net.ssl.SSLServerSocket() throws java.io.IOException;
+  protected javax.net.ssl.SSLServerSocket(int) throws java.io.IOException;
+  protected javax.net.ssl.SSLServerSocket(int, int) throws java.io.IOException;
+  protected javax.net.ssl.SSLServerSocket(int, int, java.net.InetAddress) throws java.io.IOException;
+  public abstract java.lang.String[] getEnabledCipherSuites();
+  public abstract void setEnabledCipherSuites(java.lang.String[]);
+  public abstract java.lang.String[] getSupportedCipherSuites();
+  public abstract java.lang.String[] getSupportedProtocols();
+  public abstract java.lang.String[] getEnabledProtocols();
+  public abstract void setEnabledProtocols(java.lang.String[]);
+  public abstract void setNeedClientAuth(boolean);
+  public abstract boolean getNeedClientAuth();
+  public abstract void setWantClientAuth(boolean);
+  public abstract boolean getWantClientAuth();
+  public abstract void setUseClientMode(boolean);
+  public abstract boolean getUseClientMode();
+  public abstract void setEnableSessionCreation(boolean);
+  public abstract boolean getEnableSessionCreation();
+  public javax.net.ssl.SSLParameters getSSLParameters();
+  public void setSSLParameters(javax.net.ssl.SSLParameters);
+}

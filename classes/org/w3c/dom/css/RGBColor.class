@@ -1,0 +1,6 @@
+Compiled from "RGBColor.java"
+public interface org.w3c.dom.css.RGBColor {
+  public abstract org.w3c.dom.css.CSSPrimitiveValue getRed();
+  public abstract org.w3c.dom.css.CSSPrimitiveValue getGreen();
+  public abstract org.w3c.dom.css.CSSPrimitiveValue getBlue();
+}

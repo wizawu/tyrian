@@ -1,0 +1,23 @@
+Compiled from "AtomicLongFieldUpdater.java"
+public abstract class java.util.concurrent.atomic.AtomicLongFieldUpdater<T> {
+  public static <U> java.util.concurrent.atomic.AtomicLongFieldUpdater<U> newUpdater(java.lang.Class<U>, java.lang.String);
+  protected java.util.concurrent.atomic.AtomicLongFieldUpdater();
+  public abstract boolean compareAndSet(T, long, long);
+  public abstract boolean weakCompareAndSet(T, long, long);
+  public abstract void set(T, long);
+  public abstract void lazySet(T, long);
+  public abstract long get(T);
+  public long getAndSet(T, long);
+  public long getAndIncrement(T);
+  public long getAndDecrement(T);
+  public long getAndAdd(T, long);
+  public long incrementAndGet(T);
+  public long decrementAndGet(T);
+  public long addAndGet(T, long);
+  public final long getAndUpdate(T, java.util.function.LongUnaryOperator);
+  public final long updateAndGet(T, java.util.function.LongUnaryOperator);
+  public final long getAndAccumulate(T, long, java.util.function.LongBinaryOperator);
+  public final long accumulateAndGet(T, long, java.util.function.LongBinaryOperator);
+  static boolean isAncestor(java.lang.ClassLoader, java.lang.ClassLoader);
+  static boolean isSamePackage(java.lang.Class<?>, java.lang.Class<?>);
+}

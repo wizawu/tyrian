@@ -1,0 +1,7 @@
+Compiled from "IsindexView.java"
+class javax.swing.text.html.IsindexView extends javax.swing.text.ComponentView implements java.awt.event.ActionListener {
+  javax.swing.JTextField textField;
+  public javax.swing.text.html.IsindexView(javax.swing.text.Element);
+  public java.awt.Component createComponent();
+  public void actionPerformed(java.awt.event.ActionEvent);
+}

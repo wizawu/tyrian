@@ -1,0 +1,6 @@
+Compiled from "LambdaExpressionTree.java"
+public interface com.sun.source.tree.LambdaExpressionTree extends com.sun.source.tree.ExpressionTree {
+  public abstract java.util.List<? extends com.sun.source.tree.VariableTree> getParameters();
+  public abstract com.sun.source.tree.Tree getBody();
+  public abstract com.sun.source.tree.LambdaExpressionTree$BodyKind getBodyKind();
+}

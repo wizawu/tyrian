@@ -1,0 +1,10 @@
+Compiled from "ByteArrayImageSource.java"
+public class sun.awt.image.ByteArrayImageSource extends sun.awt.image.InputStreamImageSource {
+  byte[] imagedata;
+  int imageoffset;
+  int imagelength;
+  public sun.awt.image.ByteArrayImageSource(byte[]);
+  public sun.awt.image.ByteArrayImageSource(byte[], int, int);
+  final boolean checkSecurity(java.lang.Object, boolean);
+  protected sun.awt.image.ImageDecoder getDecoder();
+}

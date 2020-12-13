@@ -1,0 +1,13 @@
+Compiled from "InputMethodLocator.java"
+final class sun.awt.im.InputMethodLocator {
+  sun.awt.im.InputMethodLocator(java.awt.im.spi.InputMethodDescriptor, java.lang.ClassLoader, java.util.Locale);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  java.awt.im.spi.InputMethodDescriptor getDescriptor();
+  java.lang.ClassLoader getClassLoader();
+  java.util.Locale getLocale();
+  boolean isLocaleAvailable(java.util.Locale);
+  sun.awt.im.InputMethodLocator deriveLocator(java.util.Locale);
+  boolean sameInputMethod(sun.awt.im.InputMethodLocator);
+  java.lang.String getActionCommandString();
+}

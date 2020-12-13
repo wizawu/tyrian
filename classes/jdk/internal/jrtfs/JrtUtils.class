@@ -1,0 +1,4 @@
+Compiled from "JrtUtils.java"
+final class jdk.internal.jrtfs.JrtUtils {
+  public static java.lang.String toRegexPattern(java.lang.String);
+}

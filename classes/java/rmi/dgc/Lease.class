@@ -1,0 +1,6 @@
+Compiled from "Lease.java"
+public final class java.rmi.dgc.Lease implements java.io.Serializable {
+  public java.rmi.dgc.Lease(java.rmi.dgc.VMID, long);
+  public java.rmi.dgc.VMID getVMID();
+  public long getValue();
+}

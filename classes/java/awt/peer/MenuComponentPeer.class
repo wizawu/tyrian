@@ -1,0 +1,5 @@
+Compiled from "MenuComponentPeer.java"
+public interface java.awt.peer.MenuComponentPeer {
+  public abstract void dispose();
+  public abstract void setFont(java.awt.Font);
+}

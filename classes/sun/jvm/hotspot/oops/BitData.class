@@ -1,0 +1,11 @@
+Compiled from "BitData.java"
+public class sun.jvm.hotspot.oops.BitData extends sun.jvm.hotspot.oops.ProfileData {
+  static final int nullSeenFlag;
+  static final int bitCellCount;
+  public sun.jvm.hotspot.oops.BitData(sun.jvm.hotspot.oops.DataLayout);
+  static int staticCellCount();
+  public int cellCount();
+  boolean nullSeen();
+  static int bitDataSize();
+  public void printDataOn(java.io.PrintStream);
+}

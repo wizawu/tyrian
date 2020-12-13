@@ -1,0 +1,5 @@
+Compiled from "RegExpLiteralTree.java"
+public interface jdk.nashorn.api.tree.RegExpLiteralTree extends jdk.nashorn.api.tree.ExpressionTree {
+  public abstract java.lang.String getPattern();
+  public abstract java.lang.String getOptions();
+}

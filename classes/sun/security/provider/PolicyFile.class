@@ -1,0 +1,11 @@
+Compiled from "PolicyFile.java"
+public class sun.security.provider.PolicyFile extends java.security.Policy {
+  public sun.security.provider.PolicyFile();
+  public sun.security.provider.PolicyFile(java.net.URL);
+  public void refresh();
+  public boolean implies(java.security.ProtectionDomain, java.security.Permission);
+  public java.security.PermissionCollection getPermissions(java.security.ProtectionDomain);
+  public java.security.PermissionCollection getPermissions(java.security.CodeSource);
+  protected java.security.cert.Certificate[] getSignerCertificates(java.security.CodeSource);
+  static {};
+}

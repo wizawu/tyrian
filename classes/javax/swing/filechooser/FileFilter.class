@@ -1,0 +1,6 @@
+Compiled from "FileFilter.java"
+public abstract class javax.swing.filechooser.FileFilter {
+  public javax.swing.filechooser.FileFilter();
+  public abstract boolean accept(java.io.File);
+  public abstract java.lang.String getDescription();
+}

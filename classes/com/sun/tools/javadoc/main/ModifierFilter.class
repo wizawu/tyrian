@@ -1,0 +1,8 @@
+Compiled from "ModifierFilter.java"
+public class com.sun.tools.javadoc.main.ModifierFilter {
+  public static final long PACKAGE;
+  public static final long ALL_ACCESS;
+  public com.sun.tools.javadoc.main.ModifierFilter(long);
+  public com.sun.tools.javadoc.main.ModifierFilter(long, long, long);
+  public boolean checkModifier(int);
+}

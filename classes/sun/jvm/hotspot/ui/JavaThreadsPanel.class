@@ -1,0 +1,7 @@
+Compiled from "JavaThreadsPanel.java"
+public class sun.jvm.hotspot.ui.JavaThreadsPanel extends sun.jvm.hotspot.ui.SAPanel implements java.awt.event.ActionListener {
+  public sun.jvm.hotspot.ui.JavaThreadsPanel();
+  public void actionPerformed(java.awt.event.ActionEvent);
+  protected void registerActions();
+  static {};
+}

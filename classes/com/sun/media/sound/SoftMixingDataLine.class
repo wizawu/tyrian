@@ -1,0 +1,24 @@
+Compiled from "SoftMixingDataLine.java"
+public abstract class com.sun.media.sound.SoftMixingDataLine implements javax.sound.sampled.DataLine {
+  public static final javax.sound.sampled.FloatControl$Type CHORUS_SEND;
+  float leftgain;
+  float rightgain;
+  float eff1gain;
+  float eff2gain;
+  java.util.List<javax.sound.sampled.LineListener> listeners;
+  final java.lang.Object control_mutex;
+  com.sun.media.sound.SoftMixingMixer mixer;
+  javax.sound.sampled.DataLine$Info info;
+  protected abstract void processControlLogic();
+  protected abstract void processAudioLogic(com.sun.media.sound.SoftAudioBuffer[]);
+  com.sun.media.sound.SoftMixingDataLine(com.sun.media.sound.SoftMixingMixer, javax.sound.sampled.DataLine$Info);
+  final void calcVolume();
+  final void sendEvent(javax.sound.sampled.LineEvent);
+  public final void addLineListener(javax.sound.sampled.LineListener);
+  public final void removeLineListener(javax.sound.sampled.LineListener);
+  public final javax.sound.sampled.Line$Info getLineInfo();
+  public final javax.sound.sampled.Control getControl(javax.sound.sampled.Control$Type);
+  public final javax.sound.sampled.Control[] getControls();
+  public final boolean isControlSupported(javax.sound.sampled.Control$Type);
+  static {};
+}

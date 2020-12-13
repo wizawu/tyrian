@@ -1,0 +1,20 @@
+Compiled from "NativeArguments.java"
+public final class jdk.nashorn.internal.objects.NativeArguments extends jdk.nashorn.internal.runtime.ScriptObject {
+  static final boolean $assertionsDisabled;
+  static jdk.nashorn.internal.runtime.PropertyMap getInitialMap();
+  jdk.nashorn.internal.objects.NativeArguments(java.lang.Object[], java.lang.Object, int, jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.PropertyMap);
+  public java.lang.String getClassName();
+  public java.lang.Object getArgument(int);
+  public void setArgument(int, java.lang.Object);
+  public boolean delete(int, boolean);
+  public boolean delete(double, boolean);
+  public boolean delete(java.lang.Object, boolean);
+  public boolean defineOwnProperty(java.lang.Object, java.lang.Object, boolean);
+  public static jdk.nashorn.internal.runtime.ScriptObject allocate(java.lang.Object[], jdk.nashorn.internal.runtime.ScriptFunction, int);
+  public static java.lang.Object G$length(java.lang.Object);
+  public static void S$length(java.lang.Object, java.lang.Object);
+  public static java.lang.Object G$callee(java.lang.Object);
+  public static void S$callee(java.lang.Object, java.lang.Object);
+  public java.lang.Object getLength();
+  static {};
+}

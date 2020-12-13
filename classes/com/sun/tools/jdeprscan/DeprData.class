@@ -1,0 +1,12 @@
+Compiled from "DeprData.java"
+public class com.sun.tools.jdeprscan.DeprData {
+  final javax.lang.model.element.ElementKind kind;
+  final javax.lang.model.element.TypeElement type;
+  final java.lang.String typeName;
+  final java.lang.String nameSig;
+  final java.lang.String since;
+  final boolean forRemoval;
+  public com.sun.tools.jdeprscan.DeprData(javax.lang.model.element.ElementKind, javax.lang.model.element.TypeElement, java.lang.String, java.lang.String, java.lang.String, boolean);
+  public boolean isForRemoval();
+  public java.lang.String toString();
+}

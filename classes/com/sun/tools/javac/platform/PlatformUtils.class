@@ -1,0 +1,5 @@
+Compiled from "PlatformUtils.java"
+public class com.sun.tools.javac.platform.PlatformUtils {
+  public com.sun.tools.javac.platform.PlatformUtils();
+  public static com.sun.tools.javac.platform.PlatformDescription lookupPlatformDescription(java.lang.String);
+}

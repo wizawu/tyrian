@@ -1,0 +1,8 @@
+Compiled from "JPEGMetadataFormat.java"
+abstract class com.sun.imageio.plugins.jpeg.JPEGMetadataFormat extends javax.imageio.metadata.IIOMetadataFormatImpl {
+  java.lang.String resourceBaseName;
+  com.sun.imageio.plugins.jpeg.JPEGMetadataFormat(java.lang.String, int);
+  void addStreamElements(java.lang.String);
+  public boolean canNodeAppear(java.lang.String, javax.imageio.ImageTypeSpecifier);
+  protected boolean isInSubtree(java.lang.String, java.lang.String);
+}

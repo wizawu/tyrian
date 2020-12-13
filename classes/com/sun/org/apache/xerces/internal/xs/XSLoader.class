@@ -1,0 +1,8 @@
+Compiled from "XSLoader.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSLoader {
+  public abstract org.w3c.dom.DOMConfiguration getConfig();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSModel loadURIList(com.sun.org.apache.xerces.internal.xs.StringList);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSModel loadInputList(com.sun.org.apache.xerces.internal.xs.LSInputList);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSModel loadURI(java.lang.String);
+  public abstract com.sun.org.apache.xerces.internal.xs.XSModel load(org.w3c.dom.ls.LSInput);
+}

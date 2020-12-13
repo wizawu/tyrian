@@ -1,0 +1,5 @@
+Compiled from "OutOfMemoryError.java"
+public class java.lang.OutOfMemoryError extends java.lang.VirtualMachineError {
+  public java.lang.OutOfMemoryError();
+  public java.lang.OutOfMemoryError(java.lang.String);
+}

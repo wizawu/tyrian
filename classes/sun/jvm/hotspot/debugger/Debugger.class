@@ -1,0 +1,33 @@
+Compiled from "Debugger.java"
+public interface sun.jvm.hotspot.debugger.Debugger extends sun.jvm.hotspot.debugger.SymbolLookup,sun.jvm.hotspot.debugger.ThreadAccess {
+  public abstract boolean hasProcessList() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract java.util.List getProcessList() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract void attach(int) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract void attach(java.lang.String, java.lang.String) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract boolean detach() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.Address parseAddress(java.lang.String) throws java.lang.NumberFormatException, sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract long getAddressValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract java.lang.String getOS() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract java.lang.String getCPU() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.MachineDescription getMachineDescription() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract boolean hasConsole() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract java.lang.String consoleExecuteCommand(java.lang.String) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract java.lang.String getConsolePrompt() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract sun.jvm.hotspot.debugger.cdbg.CDebugger getCDebugger() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract long getJBooleanSize();
+  public abstract long getJByteSize();
+  public abstract long getJCharSize();
+  public abstract long getJDoubleSize();
+  public abstract long getJFloatSize();
+  public abstract long getJIntSize();
+  public abstract long getJLongSize();
+  public abstract long getJShortSize();
+  public abstract long getHeapOopSize();
+  public abstract long getNarrowOopBase();
+  public abstract int getNarrowOopShift();
+  public abstract long getKlassPtrSize();
+  public abstract long getNarrowKlassBase();
+  public abstract int getNarrowKlassShift();
+  public abstract sun.jvm.hotspot.debugger.ReadResult readBytesFromProcess(long, long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public abstract void writeBytesToProcess(long, long, byte[]) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.DebuggerException;
+}

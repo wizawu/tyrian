@@ -1,0 +1,5 @@
+Compiled from "NoSuchElementException.java"
+public class java.util.NoSuchElementException extends java.lang.RuntimeException {
+  public java.util.NoSuchElementException();
+  public java.util.NoSuchElementException(java.lang.String);
+}

@@ -1,0 +1,13 @@
+Compiled from "StepIterator.java"
+public class com.sun.org.apache.xalan.internal.xsltc.dom.StepIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIteratorBase {
+  protected com.sun.org.apache.xml.internal.dtm.DTMAxisIterator _source;
+  protected com.sun.org.apache.xml.internal.dtm.DTMAxisIterator _iterator;
+  public com.sun.org.apache.xalan.internal.xsltc.dom.StepIterator(com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, com.sun.org.apache.xml.internal.dtm.DTMAxisIterator);
+  public void setRestartable(boolean);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator cloneIterator();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator setStartNode(int);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator reset();
+  public int next();
+  public void setMark();
+  public void gotoMark();
+}

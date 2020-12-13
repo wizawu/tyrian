@@ -1,0 +1,38 @@
+Compiled from "DTDConstants.java"
+public interface javax.swing.text.html.parser.DTDConstants {
+  public static final int CDATA;
+  public static final int ENTITY;
+  public static final int ENTITIES;
+  public static final int ID;
+  public static final int IDREF;
+  public static final int IDREFS;
+  public static final int NAME;
+  public static final int NAMES;
+  public static final int NMTOKEN;
+  public static final int NMTOKENS;
+  public static final int NOTATION;
+  public static final int NUMBER;
+  public static final int NUMBERS;
+  public static final int NUTOKEN;
+  public static final int NUTOKENS;
+  public static final int RCDATA;
+  public static final int EMPTY;
+  public static final int MODEL;
+  public static final int ANY;
+  public static final int FIXED;
+  public static final int REQUIRED;
+  public static final int CURRENT;
+  public static final int CONREF;
+  public static final int IMPLIED;
+  public static final int PUBLIC;
+  public static final int SDATA;
+  public static final int PI;
+  public static final int STARTTAG;
+  public static final int ENDTAG;
+  public static final int MS;
+  public static final int MD;
+  public static final int SYSTEM;
+  public static final int GENERAL;
+  public static final int DEFAULT;
+  public static final int PARAMETER;
+}

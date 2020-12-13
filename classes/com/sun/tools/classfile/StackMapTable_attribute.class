@@ -1,0 +1,10 @@
+Compiled from "StackMapTable_attribute.java"
+public class com.sun.tools.classfile.StackMapTable_attribute extends com.sun.tools.classfile.Attribute {
+  public final int number_of_entries;
+  public final com.sun.tools.classfile.StackMapTable_attribute$stack_map_frame[] entries;
+  com.sun.tools.classfile.StackMapTable_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException, com.sun.tools.classfile.StackMapTable_attribute$InvalidStackMap;
+  public com.sun.tools.classfile.StackMapTable_attribute(com.sun.tools.classfile.ConstantPool, com.sun.tools.classfile.StackMapTable_attribute$stack_map_frame[]) throws com.sun.tools.classfile.ConstantPoolException;
+  public com.sun.tools.classfile.StackMapTable_attribute(int, com.sun.tools.classfile.StackMapTable_attribute$stack_map_frame[]);
+  public <R, D> R accept(com.sun.tools.classfile.Attribute$Visitor<R, D>, D);
+  static int length(com.sun.tools.classfile.StackMapTable_attribute$stack_map_frame[]);
+}

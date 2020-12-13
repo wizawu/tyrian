@@ -1,0 +1,24 @@
+Compiled from "ThreadInfo.java"
+class com.sun.tools.example.debug.tty.ThreadInfo {
+  static void addThread(com.sun.jdi.ThreadReference);
+  static void removeThread(com.sun.jdi.ThreadReference);
+  static java.util.List<com.sun.tools.example.debug.tty.ThreadInfo> threads();
+  static void invalidateAll();
+  static void setThreadGroup(com.sun.jdi.ThreadGroupReference);
+  static void setCurrentThread(com.sun.jdi.ThreadReference);
+  static void setCurrentThreadInfo(com.sun.tools.example.debug.tty.ThreadInfo);
+  static com.sun.tools.example.debug.tty.ThreadInfo getCurrentThreadInfo();
+  com.sun.jdi.ThreadReference getThread();
+  static com.sun.jdi.ThreadGroupReference group();
+  static com.sun.tools.example.debug.tty.ThreadInfo getThreadInfo(long);
+  static com.sun.tools.example.debug.tty.ThreadInfo getThreadInfo(com.sun.jdi.ThreadReference);
+  static com.sun.tools.example.debug.tty.ThreadInfo getThreadInfo(java.lang.String);
+  java.util.List<com.sun.jdi.StackFrame> getStack() throws com.sun.jdi.IncompatibleThreadStateException;
+  com.sun.jdi.StackFrame getCurrentFrame() throws com.sun.jdi.IncompatibleThreadStateException;
+  void invalidate();
+  int getCurrentFrameIndex();
+  void setCurrentFrameIndex(int) throws com.sun.jdi.IncompatibleThreadStateException;
+  void up(int) throws com.sun.jdi.IncompatibleThreadStateException;
+  void down(int) throws com.sun.jdi.IncompatibleThreadStateException;
+  static {};
+}

@@ -1,0 +1,9 @@
+Compiled from "DOMKeyName.java"
+public final class org.jcp.xml.dsig.internal.dom.DOMKeyName extends org.jcp.xml.dsig.internal.dom.DOMStructure implements javax.xml.crypto.dsig.keyinfo.KeyName {
+  public org.jcp.xml.dsig.internal.dom.DOMKeyName(java.lang.String);
+  public org.jcp.xml.dsig.internal.dom.DOMKeyName(org.w3c.dom.Element);
+  public java.lang.String getName();
+  public void marshal(org.w3c.dom.Node, java.lang.String, javax.xml.crypto.dom.DOMCryptoContext) throws javax.xml.crypto.MarshalException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

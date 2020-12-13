@@ -1,0 +1,25 @@
+Compiled from "SunPKCS11.java"
+public final class sun.security.pkcs11.SunPKCS11 extends java.security.AuthProvider {
+  static final sun.security.util.Debug debug;
+  final sun.security.pkcs11.wrapper.PKCS11 p11;
+  final sun.security.pkcs11.Config config;
+  final long slotID;
+  final boolean removable;
+  final sun.security.pkcs11.Secmod$Module nssModule;
+  final boolean nssUseSecmodTrust;
+  sun.security.pkcs11.Token getToken();
+  public sun.security.pkcs11.SunPKCS11();
+  public java.security.Provider configure(java.lang.String) throws java.security.InvalidParameterException;
+  public boolean isConfigured();
+  sun.security.pkcs11.SunPKCS11(sun.security.pkcs11.Config);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  synchronized void uninitToken(sun.security.pkcs11.Token);
+  public void login(javax.security.auth.Subject, javax.security.auth.callback.CallbackHandler) throws javax.security.auth.login.LoginException;
+  public void logout() throws javax.security.auth.login.LoginException;
+  public void setCallbackHandler(javax.security.auth.callback.CallbackHandler);
+  static void access$000(sun.security.pkcs11.SunPKCS11, java.security.Provider$Service);
+  static void access$100(sun.security.pkcs11.SunPKCS11, java.security.Provider$Service);
+  static void access$200(sun.security.pkcs11.SunPKCS11, java.security.Provider$Service);
+  static {};
+}

@@ -1,0 +1,24 @@
+Compiled from "X509V1CertImpl.java"
+public class com.sun.security.cert.internal.x509.X509V1CertImpl extends javax.security.cert.X509Certificate implements java.io.Serializable {
+  static final long serialVersionUID;
+  public com.sun.security.cert.internal.x509.X509V1CertImpl();
+  public com.sun.security.cert.internal.x509.X509V1CertImpl(byte[]) throws javax.security.cert.CertificateException;
+  public com.sun.security.cert.internal.x509.X509V1CertImpl(java.io.InputStream) throws javax.security.cert.CertificateException;
+  public byte[] getEncoded() throws javax.security.cert.CertificateEncodingException;
+  public void verify(java.security.PublicKey) throws javax.security.cert.CertificateException, java.security.NoSuchAlgorithmException, java.security.InvalidKeyException, java.security.NoSuchProviderException, java.security.SignatureException;
+  public void verify(java.security.PublicKey, java.lang.String) throws javax.security.cert.CertificateException, java.security.NoSuchAlgorithmException, java.security.InvalidKeyException, java.security.NoSuchProviderException, java.security.SignatureException;
+  public void checkValidity() throws javax.security.cert.CertificateExpiredException, javax.security.cert.CertificateNotYetValidException;
+  public void checkValidity(java.util.Date) throws javax.security.cert.CertificateExpiredException, javax.security.cert.CertificateNotYetValidException;
+  public java.lang.String toString();
+  public java.security.PublicKey getPublicKey();
+  public int getVersion();
+  public java.math.BigInteger getSerialNumber();
+  public java.security.Principal getSubjectDN();
+  public java.security.Principal getIssuerDN();
+  public java.util.Date getNotBefore();
+  public java.util.Date getNotAfter();
+  public java.lang.String getSigAlgName();
+  public java.lang.String getSigAlgOID();
+  public byte[] getSigAlgParams();
+  public java.security.cert.X509Certificate getX509Certificate();
+}

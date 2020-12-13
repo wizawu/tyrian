@@ -1,0 +1,18 @@
+Compiled from "JTreeTable.java"
+public class sun.jvm.hotspot.ui.treetable.JTreeTable extends javax.swing.JTable {
+  protected sun.jvm.hotspot.ui.treetable.JTreeTable$TreeTableCellRenderer tree;
+  public boolean getTreeEditable();
+  public void setTreeEditable(boolean);
+  public boolean getShowsIcons();
+  public void setShowsIcons(boolean);
+  public void setRootVisible(boolean);
+  public boolean getShowsRootHandles();
+  public void setShowsRootHandles(boolean);
+  public sun.jvm.hotspot.ui.treetable.JTreeTable(sun.jvm.hotspot.ui.treetable.TreeTableModel);
+  public void updateUI();
+  public int getEditingRow();
+  public void sizeColumnsToFit(int);
+  public void setRowHeight(int);
+  public javax.swing.JTree getTree();
+  public boolean editCellAt(int, int, java.util.EventObject);
+}

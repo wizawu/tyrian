@@ -1,0 +1,4 @@
+Compiled from "LongFunction.java"
+public interface java.util.function.LongFunction<R> {
+  public abstract R apply(long);
+}

@@ -1,0 +1,6 @@
+Compiled from "JrtDirectoryStream.java"
+final class jdk.internal.jrtfs.JrtDirectoryStream implements java.nio.file.DirectoryStream<java.nio.file.Path> {
+  jdk.internal.jrtfs.JrtDirectoryStream(jdk.internal.jrtfs.JrtPath, java.nio.file.DirectoryStream$Filter<? super java.nio.file.Path>) throws java.io.IOException;
+  public synchronized java.util.Iterator<java.nio.file.Path> iterator();
+  public synchronized void close() throws java.io.IOException;
+}

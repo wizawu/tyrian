@@ -1,0 +1,5 @@
+Compiled from "AnnotationValue.java"
+public interface com.sun.javadoc.AnnotationValue {
+  public abstract java.lang.Object value();
+  public abstract java.lang.String toString();
+}

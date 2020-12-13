@@ -1,0 +1,17 @@
+Compiled from "BuilderImpl.java"
+public final class jdk.internal.net.http.websocket.BuilderImpl implements java.net.http.WebSocket$Builder {
+  static final boolean $assertionsDisabled;
+  public jdk.internal.net.http.websocket.BuilderImpl(java.net.http.HttpClient, java.net.ProxySelector);
+  public java.net.http.WebSocket$Builder header(java.lang.String, java.lang.String);
+  public java.net.http.WebSocket$Builder subprotocols(java.lang.String, java.lang.String...);
+  public java.net.http.WebSocket$Builder connectTimeout(java.time.Duration);
+  public java.util.concurrent.CompletableFuture<java.net.http.WebSocket> buildAsync(java.net.URI, java.net.http.WebSocket$Listener);
+  java.net.http.HttpClient getClient();
+  java.net.URI getUri();
+  java.net.http.WebSocket$Listener getListener();
+  java.util.Collection<jdk.internal.net.http.common.Pair<java.lang.String, java.lang.String>> getHeaders();
+  java.util.Collection<java.lang.String> getSubprotocols();
+  java.time.Duration getConnectTimeout();
+  java.util.Optional<java.net.ProxySelector> getProxySelector();
+  static {};
+}

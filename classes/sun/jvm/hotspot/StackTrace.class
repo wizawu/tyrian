@@ -1,0 +1,5 @@
+Compiled from "StackTrace.java"
+public class sun.jvm.hotspot.StackTrace {
+  public sun.jvm.hotspot.StackTrace();
+  public static void main(java.lang.String[]);
+}

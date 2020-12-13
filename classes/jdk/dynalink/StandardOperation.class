@@ -1,0 +1,11 @@
+Compiled from "StandardOperation.java"
+public final class jdk.dynalink.StandardOperation extends java.lang.Enum<jdk.dynalink.StandardOperation> implements jdk.dynalink.Operation {
+  public static final jdk.dynalink.StandardOperation GET;
+  public static final jdk.dynalink.StandardOperation SET;
+  public static final jdk.dynalink.StandardOperation REMOVE;
+  public static final jdk.dynalink.StandardOperation CALL;
+  public static final jdk.dynalink.StandardOperation NEW;
+  public static jdk.dynalink.StandardOperation[] values();
+  public static jdk.dynalink.StandardOperation valueOf(java.lang.String);
+  static {};
+}

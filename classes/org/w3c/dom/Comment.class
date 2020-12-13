@@ -1,0 +1,3 @@
+Compiled from "Comment.java"
+public interface org.w3c.dom.Comment extends org.w3c.dom.CharacterData {
+}

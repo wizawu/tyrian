@@ -1,0 +1,12 @@
+Compiled from "XSGrammarBucket.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.XSGrammarBucket {
+  java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar> fGrammarRegistry;
+  com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar fNoNSGrammar;
+  public com.sun.org.apache.xerces.internal.impl.xs.XSGrammarBucket();
+  public com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar getGrammar(java.lang.String);
+  public void putGrammar(com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
+  public boolean putGrammar(com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar, boolean);
+  public boolean putGrammar(com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar, boolean, boolean);
+  public com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar[] getGrammars();
+  public void reset();
+}

@@ -1,0 +1,4 @@
+Compiled from "ExternalSubsetResolver.java"
+public interface com.sun.org.apache.xerces.internal.impl.ExternalSubsetResolver extends com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver {
+  public abstract com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource getExternalSubset(com.sun.org.apache.xerces.internal.xni.grammars.XMLDTDDescription) throws com.sun.org.apache.xerces.internal.xni.XNIException, java.io.IOException;
+}

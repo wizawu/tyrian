@@ -1,0 +1,27 @@
+Compiled from "NetworkClient.java"
+public class sun.net.NetworkClient {
+  public static final int DEFAULT_READ_TIMEOUT;
+  public static final int DEFAULT_CONNECT_TIMEOUT;
+  protected java.net.Proxy proxy;
+  protected java.net.Socket serverSocket;
+  public java.io.PrintStream serverOutput;
+  public java.io.InputStream serverInput;
+  protected static int defaultSoTimeout;
+  protected static int defaultConnectTimeout;
+  protected int readTimeout;
+  protected int connectTimeout;
+  protected static java.lang.String encoding;
+  public void openServer(java.lang.String, int) throws java.io.IOException, java.net.UnknownHostException;
+  protected java.net.Socket doConnect(java.lang.String, int) throws java.io.IOException, java.net.UnknownHostException;
+  protected java.net.Socket createSocket() throws java.io.IOException;
+  protected java.net.InetAddress getLocalAddress() throws java.io.IOException;
+  public void closeServer() throws java.io.IOException;
+  public boolean serverIsOpen();
+  public sun.net.NetworkClient(java.lang.String, int) throws java.io.IOException;
+  public sun.net.NetworkClient();
+  public void setConnectTimeout(int);
+  public int getConnectTimeout();
+  public void setReadTimeout(int);
+  public int getReadTimeout();
+  static {};
+}

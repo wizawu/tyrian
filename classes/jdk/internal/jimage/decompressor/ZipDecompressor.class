@@ -1,0 +1,7 @@
+Compiled from "ZipDecompressor.java"
+final class jdk.internal.jimage.decompressor.ZipDecompressor implements jdk.internal.jimage.decompressor.ResourceDecompressor {
+  jdk.internal.jimage.decompressor.ZipDecompressor();
+  public java.lang.String getName();
+  static byte[] decompress(byte[], int) throws java.lang.Exception;
+  public byte[] decompress(jdk.internal.jimage.decompressor.ResourceDecompressor$StringsProvider, byte[], int, long) throws java.lang.Exception;
+}

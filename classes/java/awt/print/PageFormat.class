@@ -1,0 +1,19 @@
+Compiled from "PageFormat.java"
+public class java.awt.print.PageFormat implements java.lang.Cloneable {
+  public static final int LANDSCAPE;
+  public static final int PORTRAIT;
+  public static final int REVERSE_LANDSCAPE;
+  public java.awt.print.PageFormat();
+  public java.lang.Object clone();
+  public double getWidth();
+  public double getHeight();
+  public double getImageableX();
+  public double getImageableY();
+  public double getImageableWidth();
+  public double getImageableHeight();
+  public java.awt.print.Paper getPaper();
+  public void setPaper(java.awt.print.Paper);
+  public void setOrientation(int) throws java.lang.IllegalArgumentException;
+  public int getOrientation();
+  public double[] getMatrix();
+}

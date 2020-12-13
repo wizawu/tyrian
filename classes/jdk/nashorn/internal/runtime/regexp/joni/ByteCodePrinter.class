@@ -1,0 +1,11 @@
+Compiled from "ByteCodePrinter.java"
+class jdk.nashorn.internal.runtime.regexp.joni.ByteCodePrinter {
+  final int[] code;
+  final int codeLength;
+  final char[][] templates;
+  java.lang.Object[] operands;
+  public jdk.nashorn.internal.runtime.regexp.joni.ByteCodePrinter(jdk.nashorn.internal.runtime.regexp.joni.Regex);
+  public java.lang.String byteCodeListToString();
+  public int compiledByteCodeToString(java.lang.StringBuilder, int);
+  static {};
+}

@@ -1,0 +1,15 @@
+Compiled from "GeneralNames.java"
+public class sun.security.x509.GeneralNames {
+  public sun.security.x509.GeneralNames(sun.security.util.DerValue) throws java.io.IOException;
+  public sun.security.x509.GeneralNames();
+  public sun.security.x509.GeneralNames add(sun.security.x509.GeneralName);
+  public sun.security.x509.GeneralName get(int);
+  public boolean isEmpty();
+  public int size();
+  public java.util.Iterator<sun.security.x509.GeneralName> iterator();
+  public java.util.List<sun.security.x509.GeneralName> names();
+  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

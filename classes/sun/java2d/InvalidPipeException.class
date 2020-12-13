@@ -1,0 +1,5 @@
+Compiled from "InvalidPipeException.java"
+public class sun.java2d.InvalidPipeException extends java.lang.IllegalStateException {
+  public sun.java2d.InvalidPipeException();
+  public sun.java2d.InvalidPipeException(java.lang.String);
+}

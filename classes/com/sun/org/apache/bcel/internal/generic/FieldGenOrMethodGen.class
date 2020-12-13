@@ -1,0 +1,21 @@
+Compiled from "FieldGenOrMethodGen.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.FieldGenOrMethodGen extends com.sun.org.apache.bcel.internal.classfile.AccessFlags implements com.sun.org.apache.bcel.internal.generic.NamedAndTyped,java.lang.Cloneable {
+  protected com.sun.org.apache.bcel.internal.generic.FieldGenOrMethodGen();
+  protected com.sun.org.apache.bcel.internal.generic.FieldGenOrMethodGen(int);
+  public void setType(com.sun.org.apache.bcel.internal.generic.Type);
+  public com.sun.org.apache.bcel.internal.generic.Type getType();
+  public java.lang.String getName();
+  public void setName(java.lang.String);
+  public com.sun.org.apache.bcel.internal.generic.ConstantPoolGen getConstantPool();
+  public void setConstantPool(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public void addAttribute(com.sun.org.apache.bcel.internal.classfile.Attribute);
+  protected void addAnnotationEntry(com.sun.org.apache.bcel.internal.generic.AnnotationEntryGen);
+  public void removeAttribute(com.sun.org.apache.bcel.internal.classfile.Attribute);
+  protected void removeAnnotationEntry(com.sun.org.apache.bcel.internal.generic.AnnotationEntryGen);
+  public void removeAttributes();
+  protected void removeAnnotationEntries();
+  public com.sun.org.apache.bcel.internal.classfile.Attribute[] getAttributes();
+  public com.sun.org.apache.bcel.internal.generic.AnnotationEntryGen[] getAnnotationEntries();
+  public abstract java.lang.String getSignature();
+  public java.lang.Object clone();
+}

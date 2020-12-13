@@ -1,0 +1,4 @@
+Compiled from "CK_NOTIFY.java"
+public interface sun.security.pkcs11.wrapper.CK_NOTIFY {
+  public abstract void CK_NOTIFY(long, long, java.lang.Object) throws sun.security.pkcs11.wrapper.PKCS11Exception;
+}

@@ -1,0 +1,21 @@
+Compiled from "GIFMetadata.java"
+abstract class com.sun.imageio.plugins.gif.GIFMetadata extends javax.imageio.metadata.IIOMetadata {
+  static final int UNDEFINED_INTEGER_VALUE;
+  protected static void fatal(org.w3c.dom.Node, java.lang.String) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static java.lang.String getStringAttribute(org.w3c.dom.Node, java.lang.String, java.lang.String, boolean, java.lang.String[]) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static int getIntAttribute(org.w3c.dom.Node, java.lang.String, int, boolean, boolean, int, int) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static float getFloatAttribute(org.w3c.dom.Node, java.lang.String, float, boolean) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static int getIntAttribute(org.w3c.dom.Node, java.lang.String, boolean, int, int) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static float getFloatAttribute(org.w3c.dom.Node, java.lang.String) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static boolean getBooleanAttribute(org.w3c.dom.Node, java.lang.String, boolean, boolean) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static boolean getBooleanAttribute(org.w3c.dom.Node, java.lang.String) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static int getEnumeratedAttribute(org.w3c.dom.Node, java.lang.String, java.lang.String[], int, boolean) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static int getEnumeratedAttribute(org.w3c.dom.Node, java.lang.String, java.lang.String[]) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static java.lang.String getAttribute(org.w3c.dom.Node, java.lang.String, java.lang.String, boolean) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected static java.lang.String getAttribute(org.w3c.dom.Node, java.lang.String) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected com.sun.imageio.plugins.gif.GIFMetadata(boolean, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[]);
+  public void mergeTree(java.lang.String, org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected byte[] getColorTable(org.w3c.dom.Node, java.lang.String, boolean, int) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected abstract void mergeNativeTree(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected abstract void mergeStandardTree(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+}

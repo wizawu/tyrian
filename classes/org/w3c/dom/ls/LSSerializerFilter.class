@@ -1,0 +1,4 @@
+Compiled from "LSSerializerFilter.java"
+public interface org.w3c.dom.ls.LSSerializerFilter extends org.w3c.dom.traversal.NodeFilter {
+  public abstract int getWhatToShow();
+}

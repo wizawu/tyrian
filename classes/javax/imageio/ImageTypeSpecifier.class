@@ -1,0 +1,27 @@
+Compiled from "ImageTypeSpecifier.java"
+public class javax.imageio.ImageTypeSpecifier {
+  protected java.awt.image.ColorModel colorModel;
+  protected java.awt.image.SampleModel sampleModel;
+  public javax.imageio.ImageTypeSpecifier(java.awt.image.ColorModel, java.awt.image.SampleModel);
+  public javax.imageio.ImageTypeSpecifier(java.awt.image.RenderedImage);
+  public static javax.imageio.ImageTypeSpecifier createPacked(java.awt.color.ColorSpace, int, int, int, int, int, boolean);
+  static java.awt.image.ColorModel createComponentCM(java.awt.color.ColorSpace, int, int, boolean, boolean);
+  public static javax.imageio.ImageTypeSpecifier createInterleaved(java.awt.color.ColorSpace, int[], int, boolean, boolean);
+  public static javax.imageio.ImageTypeSpecifier createBanded(java.awt.color.ColorSpace, int[], int[], int, boolean, boolean);
+  public static javax.imageio.ImageTypeSpecifier createGrayscale(int, int, boolean);
+  public static javax.imageio.ImageTypeSpecifier createGrayscale(int, int, boolean, boolean);
+  public static javax.imageio.ImageTypeSpecifier createIndexed(byte[], byte[], byte[], byte[], int, int);
+  public static javax.imageio.ImageTypeSpecifier createFromBufferedImageType(int);
+  public static javax.imageio.ImageTypeSpecifier createFromRenderedImage(java.awt.image.RenderedImage);
+  public int getBufferedImageType();
+  public int getNumComponents();
+  public int getNumBands();
+  public int getBitsPerBand(int);
+  public java.awt.image.SampleModel getSampleModel();
+  public java.awt.image.SampleModel getSampleModel(int, int);
+  public java.awt.image.ColorModel getColorModel();
+  public java.awt.image.BufferedImage createBufferedImage(int, int);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  static {};
+}

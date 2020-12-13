@@ -1,0 +1,21 @@
+Compiled from "Node.java"
+public class sun.jvm.hotspot.opto.Node extends sun.jvm.hotspot.runtime.VMObject {
+  static java.util.HashMap nodes;
+  static java.util.HashMap constructors;
+  public static sun.jvm.hotspot.opto.Node create(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.opto.Node(sun.jvm.hotspot.debugger.Address);
+  public int outcnt();
+  public int req();
+  public int len();
+  public int idx();
+  public sun.jvm.hotspot.opto.Node rawOut(int);
+  public sun.jvm.hotspot.opto.Node in(int);
+  public java.util.ArrayList collect(int, boolean);
+  protected void dumpNodes(sun.jvm.hotspot.opto.Node, int, boolean, java.io.PrintStream);
+  public void dump(int, java.io.PrintStream);
+  public java.lang.String Name();
+  public void dump(java.io.PrintStream);
+  void dumpOut(java.io.PrintStream);
+  public void dumpSpec(java.io.PrintStream);
+  static {};
+}

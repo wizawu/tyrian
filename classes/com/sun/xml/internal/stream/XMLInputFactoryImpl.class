@@ -1,0 +1,33 @@
+Compiled from "XMLInputFactoryImpl.java"
+public class com.sun.xml.internal.stream.XMLInputFactoryImpl extends javax.xml.stream.XMLInputFactory {
+  boolean fPropertyChanged;
+  boolean fReuseInstance;
+  public com.sun.xml.internal.stream.XMLInputFactoryImpl();
+  void initEventReader();
+  public javax.xml.stream.XMLEventReader createXMLEventReader(java.io.InputStream) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLEventReader createXMLEventReader(java.io.Reader) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLEventReader createXMLEventReader(javax.xml.transform.Source) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLEventReader createXMLEventReader(java.lang.String, java.io.InputStream) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLEventReader createXMLEventReader(java.io.InputStream, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLEventReader createXMLEventReader(java.lang.String, java.io.Reader) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLEventReader createXMLEventReader(javax.xml.stream.XMLStreamReader) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLStreamReader createXMLStreamReader(java.io.InputStream) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLStreamReader createXMLStreamReader(java.io.Reader) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLStreamReader createXMLStreamReader(java.lang.String, java.io.Reader) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLStreamReader createXMLStreamReader(javax.xml.transform.Source) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLStreamReader createXMLStreamReader(java.lang.String, java.io.InputStream) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLStreamReader createXMLStreamReader(java.io.InputStream, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.util.XMLEventAllocator getEventAllocator();
+  public javax.xml.stream.XMLReporter getXMLReporter();
+  public javax.xml.stream.XMLResolver getXMLResolver();
+  public void setXMLReporter(javax.xml.stream.XMLReporter);
+  public void setXMLResolver(javax.xml.stream.XMLResolver);
+  public javax.xml.stream.XMLEventReader createFilteredReader(javax.xml.stream.XMLEventReader, javax.xml.stream.EventFilter) throws javax.xml.stream.XMLStreamException;
+  public javax.xml.stream.XMLStreamReader createFilteredReader(javax.xml.stream.XMLStreamReader, javax.xml.stream.StreamFilter) throws javax.xml.stream.XMLStreamException;
+  public java.lang.Object getProperty(java.lang.String) throws java.lang.IllegalArgumentException;
+  public boolean isPropertySupported(java.lang.String);
+  public void setEventAllocator(javax.xml.stream.util.XMLEventAllocator);
+  public void setProperty(java.lang.String, java.lang.Object) throws java.lang.IllegalArgumentException;
+  javax.xml.stream.XMLStreamReader getXMLStreamReaderImpl(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource) throws javax.xml.stream.XMLStreamException;
+  com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource jaxpSourcetoXMLInputSource(javax.xml.transform.Source);
+}

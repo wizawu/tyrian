@@ -1,0 +1,7 @@
+Compiled from "AttributeIterator.java"
+public class com.sun.org.apache.xpath.internal.axes.AttributeIterator extends com.sun.org.apache.xpath.internal.axes.ChildTestIterator {
+  static final long serialVersionUID;
+  com.sun.org.apache.xpath.internal.axes.AttributeIterator(com.sun.org.apache.xpath.internal.compiler.Compiler, int, int) throws javax.xml.transform.TransformerException;
+  protected int getNextNode();
+  public int getAxis();
+}

@@ -1,0 +1,13 @@
+Compiled from "ClassString.java"
+final class jdk.dynalink.beans.ClassString {
+  static final java.lang.Class<?> NULL_CLASS;
+  jdk.dynalink.beans.ClassString(java.lang.Class<?>[]);
+  jdk.dynalink.beans.ClassString(java.lang.invoke.MethodType);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  boolean isVisibleFrom(java.lang.ClassLoader);
+  java.util.List<java.lang.invoke.MethodHandle> getMaximallySpecifics(java.util.List<java.lang.invoke.MethodHandle>, jdk.dynalink.linker.LinkerServices, boolean);
+  java.util.LinkedList<java.lang.invoke.MethodHandle> getApplicables(java.util.List<java.lang.invoke.MethodHandle>, jdk.dynalink.linker.LinkerServices, boolean);
+  static {};
+}

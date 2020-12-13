@@ -1,0 +1,8 @@
+Compiled from "Type.java"
+public abstract class com.sun.tools.classfile.Type {
+  protected com.sun.tools.classfile.Type();
+  public boolean isObject();
+  public abstract <R, D> R accept(com.sun.tools.classfile.Type$Visitor<R, D>, D);
+  protected static void append(java.lang.StringBuilder, java.lang.String, java.util.List<? extends com.sun.tools.classfile.Type>, java.lang.String);
+  protected static void appendIfNotEmpty(java.lang.StringBuilder, java.lang.String, java.util.List<? extends com.sun.tools.classfile.Type>, java.lang.String);
+}

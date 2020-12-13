@@ -1,0 +1,8 @@
+Compiled from "ELFFileParser.java"
+public class sun.jvm.hotspot.debugger.posix.elf.ELFFileParser {
+  public sun.jvm.hotspot.debugger.posix.elf.ELFFileParser();
+  public static sun.jvm.hotspot.debugger.posix.elf.ELFFileParser getParser();
+  public sun.jvm.hotspot.debugger.posix.elf.ELFFile parse(java.lang.String) throws sun.jvm.hotspot.debugger.posix.elf.ELFException;
+  public sun.jvm.hotspot.debugger.posix.elf.ELFFile parse(sun.jvm.hotspot.debugger.DataSource) throws sun.jvm.hotspot.debugger.posix.elf.ELFException;
+  public static void main(java.lang.String[]);
+}

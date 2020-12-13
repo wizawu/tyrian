@@ -1,0 +1,16 @@
+Compiled from "CMNode.java"
+public abstract class com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode {
+  public com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode(int);
+  public abstract boolean isNullable();
+  public final int type();
+  public final com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet firstPos();
+  public final com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet lastPos();
+  final void setFollowPos(com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet);
+  public final void setMaxStates(int);
+  public boolean isCompactedForUPA();
+  public void setIsCompactUPAModel(boolean);
+  public void setUserData(java.lang.Object);
+  public java.lang.Object getUserData();
+  protected abstract void calcFirstPos(com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet);
+  protected abstract void calcLastPos(com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet);
+}

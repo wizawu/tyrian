@@ -1,0 +1,36 @@
+Compiled from "GSSException.java"
+public class org.ietf.jgss.GSSException extends java.lang.Exception {
+  public static final int BAD_BINDINGS;
+  public static final int BAD_MECH;
+  public static final int BAD_NAME;
+  public static final int BAD_NAMETYPE;
+  public static final int BAD_STATUS;
+  public static final int BAD_MIC;
+  public static final int CONTEXT_EXPIRED;
+  public static final int CREDENTIALS_EXPIRED;
+  public static final int DEFECTIVE_CREDENTIAL;
+  public static final int DEFECTIVE_TOKEN;
+  public static final int FAILURE;
+  public static final int NO_CONTEXT;
+  public static final int NO_CRED;
+  public static final int BAD_QOP;
+  public static final int UNAUTHORIZED;
+  public static final int UNAVAILABLE;
+  public static final int DUPLICATE_ELEMENT;
+  public static final int NAME_NOT_MN;
+  public static final int DUPLICATE_TOKEN;
+  public static final int OLD_TOKEN;
+  public static final int UNSEQ_TOKEN;
+  public static final int GAP_TOKEN;
+  public org.ietf.jgss.GSSException(int);
+  org.ietf.jgss.GSSException(int, java.lang.String);
+  public org.ietf.jgss.GSSException(int, int, java.lang.String);
+  public int getMajor();
+  public int getMinor();
+  public java.lang.String getMajorString();
+  public java.lang.String getMinorString();
+  public void setMinor(int, java.lang.String);
+  public java.lang.String toString();
+  public java.lang.String getMessage();
+  static {};
+}

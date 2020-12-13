@@ -1,0 +1,9 @@
+Compiled from "TreeImpl.java"
+abstract class jdk.nashorn.api.tree.TreeImpl implements jdk.nashorn.api.tree.Tree {
+  protected final jdk.nashorn.internal.ir.Node node;
+  jdk.nashorn.api.tree.TreeImpl(jdk.nashorn.internal.ir.Node);
+  public long getStartPosition();
+  public long getEndPosition();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+  static jdk.nashorn.api.tree.Tree$Kind getOperator(jdk.nashorn.internal.parser.TokenType);
+}

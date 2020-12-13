@@ -1,0 +1,5 @@
+Compiled from "MXBeanProxy.java"
+public class com.sun.jmx.mbeanserver.MXBeanProxy {
+  public com.sun.jmx.mbeanserver.MXBeanProxy(java.lang.Class<?>);
+  public java.lang.Object invoke(javax.management.MBeanServerConnection, javax.management.ObjectName, java.lang.reflect.Method, java.lang.Object[]) throws java.lang.Throwable;
+}

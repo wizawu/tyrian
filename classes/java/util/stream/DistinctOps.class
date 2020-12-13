@@ -1,0 +1,4 @@
+Compiled from "DistinctOps.java"
+final class java.util.stream.DistinctOps {
+  static <T> java.util.stream.ReferencePipeline<T, T> makeRef(java.util.stream.AbstractPipeline<?, T, ?>);
+}

@@ -1,0 +1,26 @@
+Compiled from "Constants.java"
+public class com.sun.org.apache.xml.internal.utils.Constants {
+  public static final java.lang.String S_XMLNAMESPACEURI;
+  public static final java.lang.String S_XSLNAMESPACEURL;
+  public static final java.lang.String S_OLDXSLNAMESPACEURL;
+  public static final java.lang.String S_VENDOR;
+  public static final java.lang.String S_VENDORURL;
+  public static final java.lang.String S_BUILTIN_EXTENSIONS_URL;
+  public static final java.lang.String S_BUILTIN_OLD_EXTENSIONS_URL;
+  public static final java.lang.String S_EXTENSIONS_OLD_JAVA_URL;
+  public static final java.lang.String S_EXTENSIONS_JAVA_URL;
+  public static final java.lang.String S_EXTENSIONS_LOTUSXSL_JAVA_URL;
+  public static final java.lang.String S_EXTENSIONS_XALANLIB_URL;
+  public static final java.lang.String S_EXTENSIONS_REDIRECT_URL;
+  public static final java.lang.String S_EXTENSIONS_PIPE_URL;
+  public static final java.lang.String S_EXTENSIONS_SQL_URL;
+  public static final java.lang.String S_EXSLT_COMMON_URL;
+  public static final java.lang.String S_EXSLT_MATH_URL;
+  public static final java.lang.String S_EXSLT_SETS_URL;
+  public static final java.lang.String S_EXSLT_DATETIME_URL;
+  public static final java.lang.String S_EXSLT_FUNCTIONS_URL;
+  public static final java.lang.String S_EXSLT_DYNAMIC_URL;
+  public static final java.lang.String S_EXSLT_STRINGS_URL;
+  public static final double XSLTVERSUPPORTED;
+  public com.sun.org.apache.xml.internal.utils.Constants();
+}

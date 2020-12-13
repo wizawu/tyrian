@@ -1,0 +1,9 @@
+Compiled from "FieldDoc.java"
+public interface com.sun.javadoc.FieldDoc extends com.sun.javadoc.MemberDoc {
+  public abstract com.sun.javadoc.Type type();
+  public abstract boolean isTransient();
+  public abstract boolean isVolatile();
+  public abstract com.sun.javadoc.SerialFieldTag[] serialFieldTags();
+  public abstract java.lang.Object constantValue();
+  public abstract java.lang.String constantValueExpression();
+}

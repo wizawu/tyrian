@@ -1,0 +1,6 @@
+Compiled from "FuncNot.java"
+public class com.sun.org.apache.xpath.internal.functions.FuncNot extends com.sun.org.apache.xpath.internal.functions.FunctionOneArg {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.functions.FuncNot();
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+}

@@ -1,0 +1,14 @@
+Compiled from "ServiceUIFactory.java"
+public abstract class javax.print.ServiceUIFactory {
+  public static final java.lang.String JCOMPONENT_UI;
+  public static final java.lang.String PANEL_UI;
+  public static final java.lang.String DIALOG_UI;
+  public static final java.lang.String JDIALOG_UI;
+  public static final int ABOUT_UIROLE;
+  public static final int ADMIN_UIROLE;
+  public static final int MAIN_UIROLE;
+  public static final int RESERVED_UIROLE;
+  public javax.print.ServiceUIFactory();
+  public abstract java.lang.Object getUI(int, java.lang.String);
+  public abstract java.lang.String[] getUIClassNamesForRole(int);
+}

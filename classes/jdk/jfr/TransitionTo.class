@@ -1,0 +1,3 @@
+Compiled from "TransitionTo.java"
+public interface jdk.jfr.TransitionTo extends java.lang.annotation.Annotation {
+}

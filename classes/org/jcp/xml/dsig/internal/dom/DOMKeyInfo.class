@@ -1,0 +1,13 @@
+Compiled from "DOMKeyInfo.java"
+public final class org.jcp.xml.dsig.internal.dom.DOMKeyInfo extends org.jcp.xml.dsig.internal.dom.DOMStructure implements javax.xml.crypto.dsig.keyinfo.KeyInfo {
+  public static java.util.List<javax.xml.crypto.XMLStructure> getContent(javax.xml.crypto.dsig.keyinfo.KeyInfo);
+  public org.jcp.xml.dsig.internal.dom.DOMKeyInfo(java.util.List<? extends javax.xml.crypto.XMLStructure>, java.lang.String);
+  public org.jcp.xml.dsig.internal.dom.DOMKeyInfo(org.w3c.dom.Element, javax.xml.crypto.XMLCryptoContext, java.security.Provider) throws javax.xml.crypto.MarshalException;
+  public java.lang.String getId();
+  public java.util.List<javax.xml.crypto.XMLStructure> getContent();
+  public void marshal(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.MarshalException;
+  public void marshal(org.w3c.dom.Node, java.lang.String, javax.xml.crypto.dom.DOMCryptoContext) throws javax.xml.crypto.MarshalException;
+  public void marshal(org.w3c.dom.Node, org.w3c.dom.Node, java.lang.String, javax.xml.crypto.dom.DOMCryptoContext) throws javax.xml.crypto.MarshalException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

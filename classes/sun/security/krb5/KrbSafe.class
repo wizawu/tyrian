@@ -1,0 +1,7 @@
+Compiled from "KrbSafe.java"
+class sun.security.krb5.KrbSafe extends sun.security.krb5.KrbAppMessage {
+  public sun.security.krb5.KrbSafe(byte[], sun.security.krb5.Credentials, sun.security.krb5.EncryptionKey, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.SeqNumber, sun.security.krb5.internal.HostAddress, sun.security.krb5.internal.HostAddress) throws sun.security.krb5.KrbException, java.io.IOException;
+  public sun.security.krb5.KrbSafe(byte[], sun.security.krb5.Credentials, sun.security.krb5.EncryptionKey, sun.security.krb5.internal.SeqNumber, sun.security.krb5.internal.HostAddress, sun.security.krb5.internal.HostAddress, boolean, boolean) throws sun.security.krb5.KrbException, java.io.IOException;
+  public byte[] getMessage();
+  public byte[] getData();
+}

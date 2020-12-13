@@ -1,0 +1,9 @@
+Compiled from "FactoryFinder.java"
+class javax.xml.datatype.FactoryFinder {
+  static final boolean $assertionsDisabled;
+  javax.xml.datatype.FactoryFinder();
+  static <T> T newInstance(java.lang.Class<T>, java.lang.String, java.lang.ClassLoader, boolean) throws javax.xml.datatype.DatatypeConfigurationException;
+  static <T> T newInstance(java.lang.Class<T>, java.lang.String, java.lang.ClassLoader, boolean, boolean) throws javax.xml.datatype.DatatypeConfigurationException;
+  static <T> T find(java.lang.Class<T>, java.lang.String) throws javax.xml.datatype.DatatypeConfigurationException;
+  static {};
+}

@@ -1,0 +1,20 @@
+Compiled from "Attribute.java"
+public interface javax.naming.directory.Attribute extends java.lang.Cloneable,java.io.Serializable {
+  public static final long serialVersionUID;
+  public abstract javax.naming.NamingEnumeration<?> getAll() throws javax.naming.NamingException;
+  public abstract java.lang.Object get() throws javax.naming.NamingException;
+  public abstract int size();
+  public abstract java.lang.String getID();
+  public abstract boolean contains(java.lang.Object);
+  public abstract boolean add(java.lang.Object);
+  public abstract boolean remove(java.lang.Object);
+  public abstract void clear();
+  public abstract javax.naming.directory.DirContext getAttributeSyntaxDefinition() throws javax.naming.NamingException;
+  public abstract javax.naming.directory.DirContext getAttributeDefinition() throws javax.naming.NamingException;
+  public abstract java.lang.Object clone();
+  public abstract boolean isOrdered();
+  public abstract java.lang.Object get(int) throws javax.naming.NamingException;
+  public abstract java.lang.Object remove(int);
+  public abstract void add(int, java.lang.Object);
+  public abstract java.lang.Object set(int, java.lang.Object);
+}

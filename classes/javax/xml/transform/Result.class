@@ -1,0 +1,7 @@
+Compiled from "Result.java"
+public interface javax.xml.transform.Result {
+  public static final java.lang.String PI_DISABLE_OUTPUT_ESCAPING;
+  public static final java.lang.String PI_ENABLE_OUTPUT_ESCAPING;
+  public abstract void setSystemId(java.lang.String);
+  public abstract java.lang.String getSystemId();
+}

@@ -1,0 +1,4 @@
+Compiled from "ResourceBundleControlProvider.java"
+public interface java.util.spi.ResourceBundleControlProvider {
+  public abstract java.util.ResourceBundle$Control getControl(java.lang.String);
+}

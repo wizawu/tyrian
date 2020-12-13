@@ -1,0 +1,7 @@
+Compiled from "Resources.java"
+public final class sun.tools.jconsole.Resources {
+  public static java.lang.String format(java.lang.String, java.lang.Object...);
+  public static int getMnemonicInt(java.lang.String);
+  public static void initializeMessages(java.lang.Class<?>, java.lang.String);
+  static {};
+}

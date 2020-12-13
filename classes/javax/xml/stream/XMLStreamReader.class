@@ -1,0 +1,48 @@
+Compiled from "XMLStreamReader.java"
+public interface javax.xml.stream.XMLStreamReader extends javax.xml.stream.XMLStreamConstants {
+  public abstract java.lang.Object getProperty(java.lang.String) throws java.lang.IllegalArgumentException;
+  public abstract int next() throws javax.xml.stream.XMLStreamException;
+  public abstract void require(int, java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
+  public abstract java.lang.String getElementText() throws javax.xml.stream.XMLStreamException;
+  public abstract int nextTag() throws javax.xml.stream.XMLStreamException;
+  public abstract boolean hasNext() throws javax.xml.stream.XMLStreamException;
+  public abstract void close() throws javax.xml.stream.XMLStreamException;
+  public abstract java.lang.String getNamespaceURI(java.lang.String);
+  public abstract boolean isStartElement();
+  public abstract boolean isEndElement();
+  public abstract boolean isCharacters();
+  public abstract boolean isWhiteSpace();
+  public abstract java.lang.String getAttributeValue(java.lang.String, java.lang.String);
+  public abstract int getAttributeCount();
+  public abstract javax.xml.namespace.QName getAttributeName(int);
+  public abstract java.lang.String getAttributeNamespace(int);
+  public abstract java.lang.String getAttributeLocalName(int);
+  public abstract java.lang.String getAttributePrefix(int);
+  public abstract java.lang.String getAttributeType(int);
+  public abstract java.lang.String getAttributeValue(int);
+  public abstract boolean isAttributeSpecified(int);
+  public abstract int getNamespaceCount();
+  public abstract java.lang.String getNamespacePrefix(int);
+  public abstract java.lang.String getNamespaceURI(int);
+  public abstract javax.xml.namespace.NamespaceContext getNamespaceContext();
+  public abstract int getEventType();
+  public abstract java.lang.String getText();
+  public abstract char[] getTextCharacters();
+  public abstract int getTextCharacters(int, char[], int, int) throws javax.xml.stream.XMLStreamException;
+  public abstract int getTextStart();
+  public abstract int getTextLength();
+  public abstract java.lang.String getEncoding();
+  public abstract boolean hasText();
+  public abstract javax.xml.stream.Location getLocation();
+  public abstract javax.xml.namespace.QName getName();
+  public abstract java.lang.String getLocalName();
+  public abstract boolean hasName();
+  public abstract java.lang.String getNamespaceURI();
+  public abstract java.lang.String getPrefix();
+  public abstract java.lang.String getVersion();
+  public abstract boolean isStandalone();
+  public abstract boolean standaloneSet();
+  public abstract java.lang.String getCharacterEncodingScheme();
+  public abstract java.lang.String getPITarget();
+  public abstract java.lang.String getPIData();
+}

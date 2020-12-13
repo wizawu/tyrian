@@ -1,0 +1,17 @@
+Compiled from "BasicSeparatorUI.java"
+public class javax.swing.plaf.basic.BasicSeparatorUI extends javax.swing.plaf.SeparatorUI {
+  protected java.awt.Color shadow;
+  protected java.awt.Color highlight;
+  public javax.swing.plaf.basic.BasicSeparatorUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void installDefaults(javax.swing.JSeparator);
+  protected void uninstallDefaults(javax.swing.JSeparator);
+  protected void installListeners(javax.swing.JSeparator);
+  protected void uninstallListeners(javax.swing.JSeparator);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+}

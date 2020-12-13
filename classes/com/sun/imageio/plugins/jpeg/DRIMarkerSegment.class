@@ -1,0 +1,10 @@
+Compiled from "DRIMarkerSegment.java"
+class com.sun.imageio.plugins.jpeg.DRIMarkerSegment extends com.sun.imageio.plugins.jpeg.MarkerSegment {
+  int restartInterval;
+  com.sun.imageio.plugins.jpeg.DRIMarkerSegment(com.sun.imageio.plugins.jpeg.JPEGBuffer) throws java.io.IOException;
+  com.sun.imageio.plugins.jpeg.DRIMarkerSegment(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  javax.imageio.metadata.IIOMetadataNode getNativeNode();
+  void updateFromNativeNode(org.w3c.dom.Node, boolean) throws javax.imageio.metadata.IIOInvalidTreeException;
+  void write(javax.imageio.stream.ImageOutputStream) throws java.io.IOException;
+  void print();
+}

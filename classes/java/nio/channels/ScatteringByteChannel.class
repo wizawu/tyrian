@@ -1,0 +1,5 @@
+Compiled from "ScatteringByteChannel.java"
+public interface java.nio.channels.ScatteringByteChannel extends java.nio.channels.ReadableByteChannel {
+  public abstract long read(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  public abstract long read(java.nio.ByteBuffer[]) throws java.io.IOException;
+}

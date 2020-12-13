@@ -1,0 +1,8 @@
+Compiled from "ClientId.java"
+class com.sun.jndi.ldap.ClientId {
+  public static final boolean debug;
+  com.sun.jndi.ldap.ClientId(int, java.lang.String, int, java.lang.String, javax.naming.ldap.Control[], java.io.OutputStream, java.lang.String);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

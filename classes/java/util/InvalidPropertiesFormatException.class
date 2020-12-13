@@ -1,0 +1,5 @@
+Compiled from "InvalidPropertiesFormatException.java"
+public class java.util.InvalidPropertiesFormatException extends java.io.IOException {
+  public java.util.InvalidPropertiesFormatException(java.lang.Throwable);
+  public java.util.InvalidPropertiesFormatException(java.lang.String);
+}

@@ -1,0 +1,28 @@
+Compiled from "Order1.java"
+final class sun.awt.geom.Order1 extends sun.awt.geom.Curve {
+  public sun.awt.geom.Order1(double, double, double, double, int);
+  public int getOrder();
+  public double getXTop();
+  public double getYTop();
+  public double getXBot();
+  public double getYBot();
+  public double getXMin();
+  public double getXMax();
+  public double getX0();
+  public double getY0();
+  public double getX1();
+  public double getY1();
+  public double XforY(double);
+  public double TforY(double);
+  public double XforT(double);
+  public double YforT(double);
+  public double dXforT(double, int);
+  public double dYforT(double, int);
+  public double nextVertical(double, double);
+  public boolean accumulateCrossings(sun.awt.geom.Crossings);
+  public void enlarge(java.awt.geom.Rectangle2D);
+  public sun.awt.geom.Curve getSubCurve(double, double, int);
+  public sun.awt.geom.Curve getReversedCurve();
+  public int compareTo(sun.awt.geom.Curve, double[]);
+  public int getSegment(double[]);
+}

@@ -1,0 +1,11 @@
+Compiled from "StringComparable.java"
+public class com.sun.org.apache.xml.internal.utils.StringComparable implements java.lang.Comparable<com.sun.org.apache.xml.internal.utils.StringComparable> {
+  public static final int UNKNOWN_CASE;
+  public static final int UPPER_CASE;
+  public static final int LOWER_CASE;
+  public com.sun.org.apache.xml.internal.utils.StringComparable(java.lang.String, java.util.Locale, java.text.Collator, java.lang.String);
+  public static final java.lang.Comparable getComparator(java.lang.String, java.util.Locale, java.text.Collator, java.lang.String);
+  public final java.lang.String toString();
+  public int compareTo(com.sun.org.apache.xml.internal.utils.StringComparable);
+  public int compareTo(java.lang.Object);
+}

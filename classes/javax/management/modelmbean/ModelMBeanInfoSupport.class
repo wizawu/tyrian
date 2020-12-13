@@ -1,0 +1,20 @@
+Compiled from "ModelMBeanInfoSupport.java"
+public class javax.management.modelmbean.ModelMBeanInfoSupport extends javax.management.MBeanInfo implements javax.management.modelmbean.ModelMBeanInfo {
+  public javax.management.modelmbean.ModelMBeanInfoSupport(javax.management.modelmbean.ModelMBeanInfo);
+  public javax.management.modelmbean.ModelMBeanInfoSupport(java.lang.String, java.lang.String, javax.management.modelmbean.ModelMBeanAttributeInfo[], javax.management.modelmbean.ModelMBeanConstructorInfo[], javax.management.modelmbean.ModelMBeanOperationInfo[], javax.management.modelmbean.ModelMBeanNotificationInfo[]);
+  public javax.management.modelmbean.ModelMBeanInfoSupport(java.lang.String, java.lang.String, javax.management.modelmbean.ModelMBeanAttributeInfo[], javax.management.modelmbean.ModelMBeanConstructorInfo[], javax.management.modelmbean.ModelMBeanOperationInfo[], javax.management.modelmbean.ModelMBeanNotificationInfo[], javax.management.Descriptor);
+  public java.lang.Object clone();
+  public javax.management.Descriptor[] getDescriptors(java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public void setDescriptors(javax.management.Descriptor[]) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public javax.management.Descriptor getDescriptor(java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public javax.management.Descriptor getDescriptor(java.lang.String, java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public void setDescriptor(javax.management.Descriptor, java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public javax.management.modelmbean.ModelMBeanAttributeInfo getAttribute(java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public javax.management.modelmbean.ModelMBeanOperationInfo getOperation(java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public javax.management.modelmbean.ModelMBeanConstructorInfo getConstructor(java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public javax.management.modelmbean.ModelMBeanNotificationInfo getNotification(java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  public javax.management.Descriptor getDescriptor();
+  public javax.management.Descriptor getMBeanDescriptor() throws javax.management.MBeanException;
+  public void setMBeanDescriptor(javax.management.Descriptor) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
+  static {};
+}

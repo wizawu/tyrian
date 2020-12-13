@@ -1,0 +1,28 @@
+Compiled from "MimeTable.java"
+public class sun.net.www.MimeTable implements java.net.FileNameMap {
+  protected static java.lang.String[] mailcapLocations;
+  sun.net.www.MimeTable();
+  public static sun.net.www.MimeTable getDefaultTable();
+  public static java.net.FileNameMap loadTable();
+  public synchronized int getSize();
+  public synchronized java.lang.String getContentTypeFor(java.lang.String);
+  public synchronized void add(sun.net.www.MimeEntry);
+  public synchronized sun.net.www.MimeEntry remove(java.lang.String);
+  public synchronized sun.net.www.MimeEntry remove(sun.net.www.MimeEntry);
+  public synchronized sun.net.www.MimeEntry find(java.lang.String);
+  public sun.net.www.MimeEntry findByFileName(java.lang.String);
+  public synchronized sun.net.www.MimeEntry findByExt(java.lang.String);
+  public synchronized sun.net.www.MimeEntry findByDescription(java.lang.String);
+  java.lang.String getTempFileTemplate();
+  public synchronized java.util.Enumeration<sun.net.www.MimeEntry> elements();
+  public synchronized void load();
+  void parse(java.util.Properties);
+  void parse(java.lang.String, java.lang.String);
+  void parse(java.lang.String, sun.net.www.MimeEntry);
+  void fill(sun.net.www.MimeEntry, java.lang.String, java.lang.String);
+  java.lang.String[] getExtensions(java.lang.String);
+  int getActionCode(java.lang.String);
+  public java.util.Properties getAsProperties();
+  protected boolean saveAsProperties(java.io.File);
+  static {};
+}

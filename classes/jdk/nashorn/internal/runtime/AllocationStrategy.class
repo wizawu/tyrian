@@ -1,0 +1,9 @@
+Compiled from "AllocationStrategy.java"
+public final class jdk.nashorn.internal.runtime.AllocationStrategy implements java.io.Serializable {
+  static final boolean $assertionsDisabled;
+  public jdk.nashorn.internal.runtime.AllocationStrategy(int, boolean);
+  synchronized jdk.nashorn.internal.runtime.PropertyMap getAllocatorMap(jdk.nashorn.internal.runtime.ScriptObject);
+  jdk.nashorn.internal.runtime.ScriptObject allocate(jdk.nashorn.internal.runtime.PropertyMap);
+  public java.lang.String toString();
+  static {};
+}

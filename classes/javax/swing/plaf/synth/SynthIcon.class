@@ -1,0 +1,9 @@
+Compiled from "SynthIcon.java"
+public interface javax.swing.plaf.synth.SynthIcon extends javax.swing.Icon {
+  public abstract void paintIcon(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  public abstract int getIconWidth(javax.swing.plaf.synth.SynthContext);
+  public abstract int getIconHeight(javax.swing.plaf.synth.SynthContext);
+  public default void paintIcon(java.awt.Component, java.awt.Graphics, int, int);
+  public default int getIconWidth();
+  public default int getIconHeight();
+}

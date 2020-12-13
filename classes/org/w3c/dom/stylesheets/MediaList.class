@@ -1,0 +1,9 @@
+Compiled from "MediaList.java"
+public interface org.w3c.dom.stylesheets.MediaList {
+  public abstract java.lang.String getMediaText();
+  public abstract void setMediaText(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract int getLength();
+  public abstract java.lang.String item(int);
+  public abstract void deleteMedium(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract void appendMedium(java.lang.String) throws org.w3c.dom.DOMException;
+}

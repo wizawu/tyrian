@@ -1,0 +1,19 @@
+Compiled from "Secmod.java"
+public final class sun.security.pkcs11.Secmod {
+  static final java.lang.String TEMPLATE_EXTERNAL;
+  static final java.lang.String TEMPLATE_TRUSTANCHOR;
+  static final java.lang.String TEMPLATE_CRYPTO;
+  static final java.lang.String TEMPLATE_KEYSTORE;
+  static final java.lang.String TEMPLATE_FIPS;
+  public static sun.security.pkcs11.Secmod getInstance();
+  public synchronized boolean isInitialized() throws java.io.IOException;
+  java.lang.String getConfigDir();
+  java.lang.String getLibDir();
+  public void initialize(java.lang.String, java.lang.String) throws java.io.IOException;
+  public void initialize(sun.security.pkcs11.Secmod$DbMode, java.lang.String, java.lang.String) throws java.io.IOException;
+  public synchronized void initialize(sun.security.pkcs11.Secmod$DbMode, java.lang.String, java.lang.String, boolean) throws java.io.IOException;
+  public synchronized java.util.List<sun.security.pkcs11.Secmod$Module> getModules();
+  boolean isTrusted(java.security.cert.X509Certificate, sun.security.pkcs11.Secmod$TrustType);
+  public sun.security.pkcs11.Secmod$Module getModule(sun.security.pkcs11.Secmod$ModuleType);
+  static {};
+}

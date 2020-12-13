@@ -1,0 +1,11 @@
+Compiled from "DupFilterIterator.java"
+public final class com.sun.org.apache.xalan.internal.xsltc.dom.DupFilterIterator extends com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIteratorBase {
+  public com.sun.org.apache.xalan.internal.xsltc.dom.DupFilterIterator(com.sun.org.apache.xml.internal.dtm.DTMAxisIterator);
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator setStartNode(int);
+  public int next();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator cloneIterator();
+  public void setRestartable(boolean);
+  public void setMark();
+  public void gotoMark();
+  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator reset();
+}

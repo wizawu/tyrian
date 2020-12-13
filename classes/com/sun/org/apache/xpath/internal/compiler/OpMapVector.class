@@ -1,0 +1,11 @@
+Compiled from "OpMapVector.java"
+public class com.sun.org.apache.xpath.internal.compiler.OpMapVector {
+  protected int m_blocksize;
+  protected int[] m_map;
+  protected int m_lengthPos;
+  protected int m_mapSize;
+  public com.sun.org.apache.xpath.internal.compiler.OpMapVector(int, int, int);
+  public final int elementAt(int);
+  public final void setElementAt(int, int);
+  public final void setToSize(int);
+}

@@ -1,0 +1,22 @@
+Compiled from "ConvertingMethod.java"
+final class com.sun.jmx.mbeanserver.ConvertingMethod {
+  static com.sun.jmx.mbeanserver.ConvertingMethod from(java.lang.reflect.Method);
+  java.lang.reflect.Method getMethod();
+  javax.management.Descriptor getDescriptor();
+  java.lang.reflect.Type getGenericReturnType();
+  java.lang.reflect.Type[] getGenericParameterTypes();
+  java.lang.String getName();
+  javax.management.openmbean.OpenType<?> getOpenReturnType();
+  javax.management.openmbean.OpenType<?>[] getOpenParameterTypes();
+  void checkCallFromOpen();
+  void checkCallToOpen();
+  java.lang.String[] getOpenSignature();
+  final java.lang.Object toOpenReturnValue(com.sun.jmx.mbeanserver.MXBeanLookup, java.lang.Object) throws javax.management.openmbean.OpenDataException;
+  final java.lang.Object fromOpenReturnValue(com.sun.jmx.mbeanserver.MXBeanLookup, java.lang.Object) throws java.io.InvalidObjectException;
+  final java.lang.Object[] toOpenParameters(com.sun.jmx.mbeanserver.MXBeanLookup, java.lang.Object[]) throws javax.management.openmbean.OpenDataException;
+  final java.lang.Object[] fromOpenParameters(java.lang.Object[]) throws java.io.InvalidObjectException;
+  final java.lang.Object toOpenParameter(com.sun.jmx.mbeanserver.MXBeanLookup, java.lang.Object, int) throws javax.management.openmbean.OpenDataException;
+  final java.lang.Object fromOpenParameter(com.sun.jmx.mbeanserver.MXBeanLookup, java.lang.Object, int) throws java.io.InvalidObjectException;
+  java.lang.Object invokeWithOpenReturn(com.sun.jmx.mbeanserver.MXBeanLookup, java.lang.Object, java.lang.Object[]) throws javax.management.MBeanException, java.lang.IllegalAccessException, java.lang.reflect.InvocationTargetException;
+  static {};
+}

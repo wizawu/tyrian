@@ -1,0 +1,19 @@
+Compiled from "GapVector.java"
+abstract class javax.swing.text.GapVector implements java.io.Serializable {
+  public javax.swing.text.GapVector();
+  public javax.swing.text.GapVector(int);
+  protected abstract java.lang.Object allocateArray(int);
+  protected abstract int getArrayLength();
+  protected final java.lang.Object getArray();
+  protected final int getGapStart();
+  protected final int getGapEnd();
+  protected void replace(int, int, java.lang.Object, int);
+  void close(int, int);
+  int open(int, int);
+  void resize(int);
+  protected void shiftEnd(int);
+  int getNewArraySize(int);
+  protected void shiftGap(int);
+  protected void shiftGapStartDown(int);
+  protected void shiftGapEndUp(int);
+}

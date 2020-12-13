@@ -1,0 +1,16 @@
+Compiled from "RSAPadding.java"
+public final class sun.security.rsa.RSAPadding {
+  public static final int PAD_BLOCKTYPE_1;
+  public static final int PAD_BLOCKTYPE_2;
+  public static final int PAD_NONE;
+  public static final int PAD_OAEP_MGF1;
+  public static sun.security.rsa.RSAPadding getInstance(int, int) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  public static sun.security.rsa.RSAPadding getInstance(int, int, java.security.SecureRandom) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  public static sun.security.rsa.RSAPadding getInstance(int, int, java.security.SecureRandom, javax.crypto.spec.OAEPParameterSpec) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  public int getMaxDataSize();
+  public byte[] pad(byte[], int, int) throws javax.crypto.BadPaddingException;
+  public byte[] pad(byte[]) throws javax.crypto.BadPaddingException;
+  public byte[] unpad(byte[], int, int) throws javax.crypto.BadPaddingException;
+  public byte[] unpad(byte[]) throws javax.crypto.BadPaddingException;
+  static {};
+}

@@ -1,0 +1,7 @@
+Compiled from "ChoicePeer.java"
+public interface java.awt.peer.ChoicePeer extends java.awt.peer.ComponentPeer {
+  public abstract void add(java.lang.String, int);
+  public abstract void remove(int);
+  public abstract void removeAll();
+  public abstract void select(int);
+}

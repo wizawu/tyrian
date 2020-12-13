@@ -1,0 +1,6 @@
+Compiled from "StringEditor.java"
+public class com.sun.beans.editors.StringEditor extends java.beans.PropertyEditorSupport {
+  public com.sun.beans.editors.StringEditor();
+  public java.lang.String getJavaInitializationString();
+  public void setAsText(java.lang.String);
+}

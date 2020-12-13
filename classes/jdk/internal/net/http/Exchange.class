@@ -1,0 +1,39 @@
+Compiled from "Exchange.java"
+final class jdk.internal.net.http.Exchange<T> {
+  final jdk.internal.net.http.common.Logger debug;
+  final jdk.internal.net.http.HttpRequestImpl request;
+  final jdk.internal.net.http.HttpClientImpl client;
+  volatile jdk.internal.net.http.ExchangeImpl<T> exchImpl;
+  volatile java.util.concurrent.CompletableFuture<? extends jdk.internal.net.http.ExchangeImpl<T>> exchangeCF;
+  volatile java.util.concurrent.CompletableFuture<java.lang.Void> bodyIgnored;
+  final java.security.AccessControlContext acc;
+  final jdk.internal.net.http.MultiExchange<T> multi;
+  final java.util.concurrent.Executor parentExecutor;
+  boolean upgrading;
+  final jdk.internal.net.http.PushGroup<T> pushGroup;
+  final java.lang.String dbgTag;
+  final jdk.internal.net.http.Exchange$ConnectionAborter connectionAborter;
+  static final boolean $assertionsDisabled;
+  jdk.internal.net.http.Exchange(jdk.internal.net.http.HttpRequestImpl, jdk.internal.net.http.MultiExchange<T>);
+  jdk.internal.net.http.Exchange(jdk.internal.net.http.HttpRequestImpl, jdk.internal.net.http.MultiExchange<T>, java.security.AccessControlContext);
+  jdk.internal.net.http.PushGroup<T> getPushGroup();
+  java.util.concurrent.Executor executor();
+  public jdk.internal.net.http.HttpRequestImpl request();
+  public java.util.Optional<java.time.Duration> remainingConnectTimeout();
+  jdk.internal.net.http.HttpClientImpl client();
+  void nullBody(java.net.http.HttpResponse<T>, java.lang.Throwable);
+  public java.util.concurrent.CompletableFuture<T> readBodyAsync(java.net.http.HttpResponse$BodyHandler<T>);
+  public java.util.concurrent.CompletableFuture<java.lang.Void> ignoreBody();
+  public void released();
+  public void cancel();
+  public void cancel(java.io.IOException);
+  public void h2Upgrade();
+  synchronized java.io.IOException getCancelCause();
+  public java.util.concurrent.CompletableFuture<jdk.internal.net.http.Response> responseAsync();
+  java.util.concurrent.CompletableFuture<jdk.internal.net.http.Response> responseAsyncImpl(jdk.internal.net.http.HttpConnection);
+  java.util.concurrent.CompletableFuture<jdk.internal.net.http.Response> responseAsyncImpl0(jdk.internal.net.http.HttpConnection);
+  java.net.http.HttpResponse$BodySubscriber<T> ignoreBody(java.net.http.HttpResponse$ResponseInfo);
+  java.net.http.HttpClient$Version version();
+  java.lang.String dbgString();
+  static {};
+}

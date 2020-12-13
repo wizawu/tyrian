@@ -1,0 +1,6 @@
+Compiled from "DuplicateFormatFlagsException.java"
+public class java.util.DuplicateFormatFlagsException extends java.util.IllegalFormatException {
+  public java.util.DuplicateFormatFlagsException(java.lang.String);
+  public java.lang.String getFlags();
+  public java.lang.String getMessage();
+}

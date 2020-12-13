@@ -1,0 +1,5 @@
+Compiled from "AttributeValue.java"
+abstract class com.sun.org.apache.xalan.internal.xsltc.compiler.AttributeValue extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.AttributeValue();
+  public static final com.sun.org.apache.xalan.internal.xsltc.compiler.AttributeValue create(com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode, java.lang.String, com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+}

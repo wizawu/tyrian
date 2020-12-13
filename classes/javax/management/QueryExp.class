@@ -1,0 +1,5 @@
+Compiled from "QueryExp.java"
+public interface javax.management.QueryExp extends java.io.Serializable {
+  public abstract boolean apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
+  public abstract void setMBeanServer(javax.management.MBeanServer);
+}

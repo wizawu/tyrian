@@ -1,0 +1,8 @@
+Compiled from "DraconianErrorHandler.java"
+final class com.sun.org.apache.xerces.internal.jaxp.validation.DraconianErrorHandler implements org.xml.sax.ErrorHandler {
+  public static com.sun.org.apache.xerces.internal.jaxp.validation.DraconianErrorHandler getInstance();
+  public void warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  static {};
+}

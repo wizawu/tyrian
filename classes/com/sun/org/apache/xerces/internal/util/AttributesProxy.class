@@ -1,0 +1,25 @@
+Compiled from "AttributesProxy.java"
+public final class com.sun.org.apache.xerces.internal.util.AttributesProxy implements org.xml.sax.AttributeList,org.xml.sax.ext.Attributes2 {
+  public com.sun.org.apache.xerces.internal.util.AttributesProxy(com.sun.org.apache.xerces.internal.xni.XMLAttributes);
+  public void setAttributes(com.sun.org.apache.xerces.internal.xni.XMLAttributes);
+  public com.sun.org.apache.xerces.internal.xni.XMLAttributes getAttributes();
+  public int getLength();
+  public java.lang.String getQName(int);
+  public java.lang.String getURI(int);
+  public java.lang.String getLocalName(int);
+  public java.lang.String getType(int);
+  public java.lang.String getType(java.lang.String);
+  public java.lang.String getType(java.lang.String, java.lang.String);
+  public java.lang.String getValue(int);
+  public java.lang.String getValue(java.lang.String);
+  public java.lang.String getValue(java.lang.String, java.lang.String);
+  public int getIndex(java.lang.String);
+  public int getIndex(java.lang.String, java.lang.String);
+  public boolean isDeclared(int);
+  public boolean isDeclared(java.lang.String);
+  public boolean isDeclared(java.lang.String, java.lang.String);
+  public boolean isSpecified(int);
+  public boolean isSpecified(java.lang.String);
+  public boolean isSpecified(java.lang.String, java.lang.String);
+  public java.lang.String getName(int);
+}

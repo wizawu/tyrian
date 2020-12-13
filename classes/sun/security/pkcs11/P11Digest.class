@@ -1,0 +1,13 @@
+Compiled from "P11Digest.java"
+final class sun.security.pkcs11.P11Digest extends java.security.MessageDigestSpi implements java.lang.Cloneable,sun.security.util.MessageDigestSpi2 {
+  sun.security.pkcs11.P11Digest(sun.security.pkcs11.Token, java.lang.String, long);
+  protected int engineGetDigestLength();
+  protected void engineReset();
+  protected byte[] engineDigest();
+  protected int engineDigest(byte[], int, int) throws java.security.DigestException;
+  protected void engineUpdate(byte);
+  protected void engineUpdate(byte[], int, int);
+  public void engineUpdate(javax.crypto.SecretKey) throws java.security.InvalidKeyException;
+  protected void engineUpdate(java.nio.ByteBuffer);
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+}

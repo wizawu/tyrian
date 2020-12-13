@@ -1,0 +1,16 @@
+Compiled from "PUSH.java"
+public final class com.sun.org.apache.bcel.internal.generic.PUSH implements com.sun.org.apache.bcel.internal.generic.CompoundInstruction,com.sun.org.apache.bcel.internal.generic.VariableLengthInstruction {
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, int);
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, boolean);
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, float);
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, long);
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, double);
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, java.lang.String);
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, com.sun.org.apache.bcel.internal.generic.ObjectType);
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, java.lang.Number);
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, java.lang.Character);
+  public com.sun.org.apache.bcel.internal.generic.PUSH(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen, java.lang.Boolean);
+  public final com.sun.org.apache.bcel.internal.generic.InstructionList getInstructionList();
+  public final com.sun.org.apache.bcel.internal.generic.Instruction getInstruction();
+  public java.lang.String toString();
+}

@@ -1,0 +1,5 @@
+Compiled from "FormatData_ru_RU.java"
+public class sun.text.resources.ext.FormatData_ru_RU extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_ru_RU();
+  protected final java.lang.Object[][] getContents();
+}

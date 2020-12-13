@@ -1,0 +1,9 @@
+Compiled from "Panel.java"
+public class java.awt.Panel extends java.awt.Container implements javax.accessibility.Accessible {
+  public java.awt.Panel();
+  public java.awt.Panel(java.awt.LayoutManager);
+  java.lang.String constructComponentName();
+  public void addNotify();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  static {};
+}

@@ -1,0 +1,14 @@
+Compiled from "PipelineHelper.java"
+abstract class java.util.stream.PipelineHelper<P_OUT> {
+  java.util.stream.PipelineHelper();
+  abstract java.util.stream.StreamShape getSourceShape();
+  abstract int getStreamAndOpFlags();
+  abstract <P_IN> long exactOutputSizeIfKnown(java.util.Spliterator<P_IN>);
+  abstract <P_IN, S extends java.util.stream.Sink<P_OUT>> S wrapAndCopyInto(S, java.util.Spliterator<P_IN>);
+  abstract <P_IN> void copyInto(java.util.stream.Sink<P_IN>, java.util.Spliterator<P_IN>);
+  abstract <P_IN> boolean copyIntoWithCancel(java.util.stream.Sink<P_IN>, java.util.Spliterator<P_IN>);
+  abstract <P_IN> java.util.stream.Sink<P_IN> wrapSink(java.util.stream.Sink<P_OUT>);
+  abstract <P_IN> java.util.Spliterator<P_OUT> wrapSpliterator(java.util.Spliterator<P_IN>);
+  abstract java.util.stream.Node$Builder<P_OUT> makeNodeBuilder(long, java.util.function.IntFunction<P_OUT[]>);
+  abstract <P_IN> java.util.stream.Node<P_OUT> evaluate(java.util.Spliterator<P_IN>, boolean, java.util.function.IntFunction<P_OUT[]>);
+}

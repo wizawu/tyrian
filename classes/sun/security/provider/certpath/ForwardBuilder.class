@@ -1,0 +1,11 @@
+Compiled from "ForwardBuilder.java"
+class sun.security.provider.certpath.ForwardBuilder extends sun.security.provider.certpath.Builder {
+  java.security.cert.TrustAnchor trustAnchor;
+  sun.security.provider.certpath.ForwardBuilder(sun.security.provider.certpath.PKIX$BuilderParams, boolean);
+  java.util.Collection<java.security.cert.X509Certificate> getMatchingCerts(sun.security.provider.certpath.State, java.util.List<java.security.cert.CertStore>) throws java.security.cert.CertStoreException, java.security.cert.CertificateException, java.io.IOException;
+  void verifyCert(java.security.cert.X509Certificate, sun.security.provider.certpath.State, java.util.List<java.security.cert.X509Certificate>) throws java.security.GeneralSecurityException;
+  boolean isPathCompleted(java.security.cert.X509Certificate);
+  void addCertToPath(java.security.cert.X509Certificate, java.util.LinkedList<java.security.cert.X509Certificate>);
+  void removeFinalCertFromPath(java.util.LinkedList<java.security.cert.X509Certificate>);
+  static {};
+}

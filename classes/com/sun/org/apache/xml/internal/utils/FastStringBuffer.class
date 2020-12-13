@@ -1,0 +1,44 @@
+Compiled from "FastStringBuffer.java"
+public class com.sun.org.apache.xml.internal.utils.FastStringBuffer {
+  static final int DEBUG_FORCE_INIT_BITS;
+  static final boolean DEBUG_FORCE_FIXED_CHUNKSIZE;
+  public static final int SUPPRESS_LEADING_WS;
+  public static final int SUPPRESS_TRAILING_WS;
+  public static final int SUPPRESS_BOTH;
+  int m_chunkBits;
+  int m_maxChunkBits;
+  int m_rebundleBits;
+  int m_chunkSize;
+  int m_chunkMask;
+  char[][] m_array;
+  int m_lastChunk;
+  int m_firstFree;
+  com.sun.org.apache.xml.internal.utils.FastStringBuffer m_innerFSB;
+  static final char[] SINGLE_SPACE;
+  public com.sun.org.apache.xml.internal.utils.FastStringBuffer(int, int, int);
+  public com.sun.org.apache.xml.internal.utils.FastStringBuffer(int, int);
+  public com.sun.org.apache.xml.internal.utils.FastStringBuffer(int);
+  public com.sun.org.apache.xml.internal.utils.FastStringBuffer();
+  public final int size();
+  public final int length();
+  public final void reset();
+  public final void setLength(int);
+  public final java.lang.String toString();
+  public final void append(char);
+  public final void append(java.lang.String);
+  public final void append(java.lang.StringBuffer);
+  public final void append(char[], int, int);
+  public final void append(com.sun.org.apache.xml.internal.utils.FastStringBuffer);
+  public boolean isWhitespace(int, int);
+  public java.lang.String getString(int, int);
+  protected java.lang.String getOneChunkString(int, int, int);
+  java.lang.StringBuffer getString(java.lang.StringBuffer, int, int);
+  java.lang.StringBuffer getString(java.lang.StringBuffer, int, int, int);
+  public char charAt(int);
+  public void sendSAXcharacters(org.xml.sax.ContentHandler, int, int) throws org.xml.sax.SAXException;
+  public int sendNormalizedSAXcharacters(org.xml.sax.ContentHandler, int, int) throws org.xml.sax.SAXException;
+  static int sendNormalizedSAXcharacters(char[], int, int, org.xml.sax.ContentHandler, int) throws org.xml.sax.SAXException;
+  public static void sendNormalizedSAXcharacters(char[], int, int, org.xml.sax.ContentHandler) throws org.xml.sax.SAXException;
+  public void sendSAXComment(org.xml.sax.ext.LexicalHandler, int, int) throws org.xml.sax.SAXException;
+  static {};
+}

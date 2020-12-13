@@ -1,0 +1,26 @@
+Compiled from "MessageToken_v2.java"
+abstract class sun.security.jgss.krb5.MessageToken_v2 extends sun.security.jgss.krb5.Krb5Token {
+  protected static final int TOKEN_HEADER_SIZE;
+  protected static final int CONFOUNDER_SIZE;
+  static final int KG_USAGE_ACCEPTOR_SEAL;
+  static final int KG_USAGE_ACCEPTOR_SIGN;
+  static final int KG_USAGE_INITIATOR_SEAL;
+  static final int KG_USAGE_INITIATOR_SIGN;
+  protected byte[] tokenData;
+  protected int tokenDataLen;
+  byte[] checksum;
+  sun.security.jgss.krb5.CipherHelper cipherHelper;
+  sun.security.jgss.krb5.MessageToken_v2(int, sun.security.jgss.krb5.Krb5Context, byte[], int, int, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  sun.security.jgss.krb5.MessageToken_v2(int, sun.security.jgss.krb5.Krb5Context, java.io.InputStream, org.ietf.jgss.MessageProp) throws org.ietf.jgss.GSSException;
+  public final int getTokenId();
+  public final int getKeyUsage();
+  public final boolean getConfState();
+  public void genSignAndSeqNumber(org.ietf.jgss.MessageProp, byte[], int, int) throws org.ietf.jgss.GSSException;
+  public final boolean verifySign(byte[], int, int) throws org.ietf.jgss.GSSException;
+  public final int getSequenceNumber();
+  byte[] getChecksum(byte[], int, int) throws org.ietf.jgss.GSSException;
+  sun.security.jgss.krb5.MessageToken_v2(int, sun.security.jgss.krb5.Krb5Context) throws org.ietf.jgss.GSSException;
+  protected void encodeHeader(java.io.OutputStream) throws java.io.IOException;
+  public abstract void encode(java.io.OutputStream) throws java.io.IOException;
+  protected final byte[] getTokenHeader();
+}

@@ -1,0 +1,8 @@
+Compiled from "MonitorStatus.java"
+public class sun.jvmstat.perfdata.monitor.MonitorStatus {
+  protected java.util.List<sun.jvmstat.monitor.Monitor> inserted;
+  protected java.util.List<sun.jvmstat.monitor.Monitor> removed;
+  public sun.jvmstat.perfdata.monitor.MonitorStatus(java.util.List<sun.jvmstat.monitor.Monitor>, java.util.List<sun.jvmstat.monitor.Monitor>);
+  public java.util.List<sun.jvmstat.monitor.Monitor> getInserted();
+  public java.util.List<sun.jvmstat.monitor.Monitor> getRemoved();
+}

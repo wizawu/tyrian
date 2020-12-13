@@ -1,0 +1,14 @@
+Compiled from "WhitespaceBasedBreakIterator.java"
+class javax.swing.text.WhitespaceBasedBreakIterator extends java.text.BreakIterator {
+  javax.swing.text.WhitespaceBasedBreakIterator();
+  public void setText(java.text.CharacterIterator);
+  public java.text.CharacterIterator getText();
+  public int first();
+  public int last();
+  public int current();
+  public int next();
+  public int previous();
+  public int next(int);
+  public int following(int);
+  public int preceding(int);
+}

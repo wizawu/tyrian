@@ -1,0 +1,4 @@
+Compiled from "XPathVariableResolver.java"
+public interface javax.xml.xpath.XPathVariableResolver {
+  public abstract java.lang.Object resolveVariable(javax.xml.namespace.QName);
+}

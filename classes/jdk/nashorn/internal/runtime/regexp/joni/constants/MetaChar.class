@@ -1,0 +1,10 @@
+Compiled from "MetaChar.java"
+public interface jdk.nashorn.internal.runtime.regexp.joni.constants.MetaChar {
+  public static final int ESCAPE;
+  public static final int ANYCHAR;
+  public static final int ANYTIME;
+  public static final int ZERO_OR_ONE_TIME;
+  public static final int ONE_OR_MORE_TIME;
+  public static final int ANYCHAR_ANYTIME;
+  public static final int INEFFECTIVE_META_CHAR;
+}

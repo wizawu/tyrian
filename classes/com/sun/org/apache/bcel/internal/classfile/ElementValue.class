@@ -1,0 +1,25 @@
+Compiled from "ElementValue.java"
+public abstract class com.sun.org.apache.bcel.internal.classfile.ElementValue {
+  public static final byte STRING;
+  public static final byte ENUM_CONSTANT;
+  public static final byte CLASS;
+  public static final byte ANNOTATION;
+  public static final byte ARRAY;
+  public static final byte PRIMITIVE_INT;
+  public static final byte PRIMITIVE_BYTE;
+  public static final byte PRIMITIVE_CHAR;
+  public static final byte PRIMITIVE_DOUBLE;
+  public static final byte PRIMITIVE_FLOAT;
+  public static final byte PRIMITIVE_LONG;
+  public static final byte PRIMITIVE_SHORT;
+  public static final byte PRIMITIVE_BOOLEAN;
+  public java.lang.String toString();
+  protected com.sun.org.apache.bcel.internal.classfile.ElementValue(int, com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public int getElementValueType();
+  public abstract java.lang.String stringifyValue();
+  public abstract void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public static com.sun.org.apache.bcel.internal.classfile.ElementValue readElementValue(java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
+  final com.sun.org.apache.bcel.internal.classfile.ConstantPool getConstantPool();
+  final int getType();
+  public java.lang.String toShortString();
+}

@@ -1,0 +1,5 @@
+Compiled from "StyleSheetList.java"
+public interface org.w3c.dom.stylesheets.StyleSheetList {
+  public abstract int getLength();
+  public abstract org.w3c.dom.stylesheets.StyleSheet item(int);
+}

@@ -1,0 +1,11 @@
+Compiled from "NumberFormatter.java"
+public class javax.swing.text.NumberFormatter extends javax.swing.text.InternationalFormatter {
+  public javax.swing.text.NumberFormatter();
+  public javax.swing.text.NumberFormatter(java.text.NumberFormat);
+  public void setFormat(java.text.Format);
+  java.lang.Object stringToValue(java.lang.String, java.text.Format) throws java.text.ParseException;
+  boolean isLegalInsertText(java.lang.String);
+  boolean isLiteral(java.util.Map<?, ?>);
+  boolean isNavigatable(int);
+  void replace(javax.swing.text.DocumentFilter$FilterBypass, int, int, java.lang.String, javax.swing.text.AttributeSet) throws javax.swing.text.BadLocationException;
+}

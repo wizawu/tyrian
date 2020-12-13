@@ -1,0 +1,11 @@
+Compiled from "VarHandleByteArrayBase.java"
+abstract class java.lang.invoke.VarHandleByteArrayBase {
+  static final long BUFFER_ADDRESS;
+  static final long BUFFER_LIMIT;
+  static final long BYTE_BUFFER_HB;
+  static final long BYTE_BUFFER_IS_READ_ONLY;
+  static final boolean BE;
+  java.lang.invoke.VarHandleByteArrayBase();
+  static java.lang.IllegalStateException newIllegalStateExceptionForMisalignedAccess(int);
+  static {};
+}

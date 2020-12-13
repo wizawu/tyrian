@@ -1,0 +1,11 @@
+Compiled from "MinguoEra.java"
+public final class java.time.chrono.MinguoEra extends java.lang.Enum<java.time.chrono.MinguoEra> implements java.time.chrono.Era {
+  public static final java.time.chrono.MinguoEra BEFORE_ROC;
+  public static final java.time.chrono.MinguoEra ROC;
+  public static java.time.chrono.MinguoEra[] values();
+  public static java.time.chrono.MinguoEra valueOf(java.lang.String);
+  public static java.time.chrono.MinguoEra of(int);
+  public int getValue();
+  public java.lang.String getDisplayName(java.time.format.TextStyle, java.util.Locale);
+  static {};
+}

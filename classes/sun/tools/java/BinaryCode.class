@@ -1,0 +1,16 @@
+Compiled from "BinaryCode.java"
+public class sun.tools.java.BinaryCode implements sun.tools.java.Constants {
+  int maxStack;
+  int maxLocals;
+  sun.tools.java.BinaryExceptionHandler[] exceptionHandlers;
+  sun.tools.java.BinaryAttribute atts;
+  sun.tools.java.BinaryConstantPool cpool;
+  byte[] code;
+  public sun.tools.java.BinaryCode(byte[], sun.tools.java.BinaryConstantPool, sun.tools.java.Environment);
+  public sun.tools.java.BinaryExceptionHandler[] getExceptionHandlers();
+  public byte[] getCode();
+  public int getMaxStack();
+  public int getMaxLocals();
+  public sun.tools.java.BinaryAttribute getAttributes();
+  public static sun.tools.java.BinaryCode load(sun.tools.java.BinaryMember, sun.tools.java.BinaryConstantPool, sun.tools.java.Environment);
+}

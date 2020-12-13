@@ -1,0 +1,23 @@
+Compiled from "PlainSocketImpl.java"
+class java.net.PlainSocketImpl extends java.net.AbstractPlainSocketImpl {
+  static final sun.net.ext.ExtendedSocketOptions extendedOptions;
+  java.net.PlainSocketImpl();
+  java.net.PlainSocketImpl(java.io.FileDescriptor);
+  protected <T> void setOption(java.net.SocketOption<T>, T) throws java.io.IOException;
+  protected <T> T getOption(java.net.SocketOption<T>) throws java.io.IOException;
+  protected java.util.Set<java.net.SocketOption<?>> supportedOptions();
+  protected void socketSetOption(int, boolean, java.lang.Object) throws java.net.SocketException;
+  native void socketCreate(boolean) throws java.io.IOException;
+  native void socketConnect(java.net.InetAddress, int, int) throws java.io.IOException;
+  native void socketBind(java.net.InetAddress, int) throws java.io.IOException;
+  native void socketListen(int) throws java.io.IOException;
+  native void socketAccept(java.net.SocketImpl) throws java.io.IOException;
+  native int socketAvailable() throws java.io.IOException;
+  native void socketClose0(boolean) throws java.io.IOException;
+  native void socketShutdown(int) throws java.io.IOException;
+  static native void initProto();
+  native void socketSetOption0(int, boolean, java.lang.Object) throws java.net.SocketException;
+  native int socketGetOption(int, java.lang.Object) throws java.net.SocketException;
+  native void socketSendUrgentData(int) throws java.io.IOException;
+  static {};
+}

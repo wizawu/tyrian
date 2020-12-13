@@ -1,0 +1,12 @@
+Compiled from "ConstFold.java"
+class com.sun.tools.javac.comp.ConstFold {
+  protected static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.comp.ConstFold> constFoldKey;
+  static final java.lang.Integer minusOne;
+  static final java.lang.Integer zero;
+  static final java.lang.Integer one;
+  public static strictfp com.sun.tools.javac.comp.ConstFold instance(com.sun.tools.javac.util.Context);
+  strictfp com.sun.tools.javac.code.Type fold1(int, com.sun.tools.javac.code.Type);
+  strictfp com.sun.tools.javac.code.Type fold2(int, com.sun.tools.javac.code.Type, com.sun.tools.javac.code.Type);
+  strictfp com.sun.tools.javac.code.Type coerce(com.sun.tools.javac.code.Type, com.sun.tools.javac.code.Type);
+  static strictfp {};
+}

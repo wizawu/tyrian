@@ -1,0 +1,33 @@
+Compiled from "SynthFileChooserUIImpl.java"
+public class sun.swing.plaf.synth.SynthFileChooserUIImpl extends sun.swing.plaf.synth.SynthFileChooserUI {
+  static final int space;
+  public sun.swing.plaf.synth.SynthFileChooserUIImpl(javax.swing.JFileChooser);
+  protected void installDefaults(javax.swing.JFileChooser);
+  public void installComponents(javax.swing.JFileChooser);
+  protected void installListeners(javax.swing.JFileChooser);
+  protected void uninstallListeners(javax.swing.JFileChooser);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void installStrings(javax.swing.JFileChooser);
+  public java.lang.String getFileName();
+  public void setFileName(java.lang.String);
+  public void rescanCurrentDirectory(javax.swing.JFileChooser);
+  protected void doSelectedFileChanged(java.beans.PropertyChangeEvent);
+  protected void doSelectedFilesChanged(java.beans.PropertyChangeEvent);
+  protected void doDirectoryChanged(java.beans.PropertyChangeEvent);
+  protected void doFileSelectionModeChanged(java.beans.PropertyChangeEvent);
+  protected void doAccessoryChanged(java.beans.PropertyChangeEvent);
+  protected void doControlButtonsChanged(java.beans.PropertyChangeEvent);
+  protected void addControlButtons();
+  protected void removeControlButtons();
+  protected javax.swing.ActionMap createActionMap();
+  protected javax.swing.JComponent getDirectoryComboBox();
+  protected javax.swing.Action getDirectoryComboBoxAction();
+  protected sun.swing.plaf.synth.SynthFileChooserUIImpl$DirectoryComboBoxRenderer createDirectoryComboBoxRenderer(javax.swing.JFileChooser);
+  protected sun.swing.plaf.synth.SynthFileChooserUIImpl$DirectoryComboBoxModel createDirectoryComboBoxModel(javax.swing.JFileChooser);
+  protected sun.swing.plaf.synth.SynthFileChooserUIImpl$FilterComboBoxRenderer createFilterComboBoxRenderer();
+  protected sun.swing.plaf.synth.SynthFileChooserUIImpl$FilterComboBoxModel createFilterComboBoxModel();
+  static boolean access$000(sun.swing.plaf.synth.SynthFileChooserUIImpl);
+  static java.io.File access$100(sun.swing.plaf.synth.SynthFileChooserUIImpl);
+  static java.awt.event.MouseListener access$200(sun.swing.plaf.synth.SynthFileChooserUIImpl, javax.swing.JFileChooser, javax.swing.JList);
+  static {};
+}

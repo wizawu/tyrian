@@ -1,0 +1,11 @@
+Compiled from "ResolverConfigurationImpl.java"
+public class sun.net.dns.ResolverConfigurationImpl extends sun.net.dns.ResolverConfiguration {
+  static final boolean $assertionsDisabled;
+  sun.net.dns.ResolverConfigurationImpl();
+  public java.util.List<java.lang.String> searchlist();
+  public java.util.List<java.lang.String> nameservers();
+  public sun.net.dns.ResolverConfiguration$Options options();
+  static native java.lang.String localDomain0();
+  static native java.lang.String fallbackDomain0();
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "FinalReference.java"
+class java.lang.ref.FinalReference<T> extends java.lang.ref.Reference<T> {
+  public java.lang.ref.FinalReference(T, java.lang.ref.ReferenceQueue<? super T>);
+  public boolean enqueue();
+}

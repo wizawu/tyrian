@@ -1,0 +1,12 @@
+Compiled from "HotSpotThreadImpl.java"
+public class com.sun.management.internal.HotSpotThreadImpl extends sun.management.ThreadImpl implements com.sun.management.ThreadMXBean {
+  public com.sun.management.internal.HotSpotThreadImpl(sun.management.VMManagement);
+  public boolean isThreadAllocatedMemorySupported();
+  public boolean isThreadAllocatedMemoryEnabled();
+  public long[] getThreadCpuTime(long[]);
+  public long[] getThreadUserTime(long[]);
+  public long getCurrentThreadAllocatedBytes();
+  public long getThreadAllocatedBytes(long);
+  public long[] getThreadAllocatedBytes(long[]);
+  public void setThreadAllocatedMemoryEnabled(boolean);
+}

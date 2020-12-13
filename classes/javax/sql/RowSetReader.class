@@ -1,0 +1,4 @@
+Compiled from "RowSetReader.java"
+public interface javax.sql.RowSetReader {
+  public abstract void readData(javax.sql.RowSetInternal) throws java.sql.SQLException;
+}

@@ -1,0 +1,28 @@
+Compiled from "GaugeMonitor.java"
+public class javax.management.monitor.GaugeMonitor extends javax.management.monitor.Monitor implements javax.management.monitor.GaugeMonitorMBean {
+  public javax.management.monitor.GaugeMonitor();
+  public synchronized void start();
+  public synchronized void stop();
+  public synchronized java.lang.Number getDerivedGauge(javax.management.ObjectName);
+  public synchronized long getDerivedGaugeTimeStamp(javax.management.ObjectName);
+  public synchronized java.lang.Number getDerivedGauge();
+  public synchronized long getDerivedGaugeTimeStamp();
+  public synchronized java.lang.Number getHighThreshold();
+  public synchronized java.lang.Number getLowThreshold();
+  public synchronized void setThresholds(java.lang.Number, java.lang.Number) throws java.lang.IllegalArgumentException;
+  public synchronized boolean getNotifyHigh();
+  public synchronized void setNotifyHigh(boolean);
+  public synchronized boolean getNotifyLow();
+  public synchronized void setNotifyLow(boolean);
+  public synchronized boolean getDifferenceMode();
+  public synchronized void setDifferenceMode(boolean);
+  public javax.management.MBeanNotificationInfo[] getNotificationInfo();
+  javax.management.monitor.Monitor$ObservedObject createObservedObject(javax.management.ObjectName);
+  synchronized boolean isComparableTypeValid(javax.management.ObjectName, java.lang.String, java.lang.Comparable<?>);
+  synchronized java.lang.Comparable<?> getDerivedGaugeFromComparable(javax.management.ObjectName, java.lang.String, java.lang.Comparable<?>);
+  synchronized void onErrorNotification(javax.management.monitor.MonitorNotification);
+  synchronized javax.management.monitor.MonitorNotification buildAlarmNotification(javax.management.ObjectName, java.lang.String, java.lang.Comparable<?>);
+  synchronized boolean isThresholdTypeValid(javax.management.ObjectName, java.lang.String, java.lang.Comparable<?>);
+  public java.lang.Object getDerivedGauge(javax.management.ObjectName);
+  static {};
+}

@@ -1,0 +1,8 @@
+Compiled from "CertificateStatus.java"
+final class sun.security.ssl.CertificateStatus {
+  static final sun.security.ssl.SSLConsumer handshakeConsumer;
+  static final sun.security.ssl.HandshakeProducer handshakeProducer;
+  static final sun.security.ssl.HandshakeAbsence handshakeAbsence;
+  sun.security.ssl.CertificateStatus();
+  static {};
+}

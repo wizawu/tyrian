@@ -1,0 +1,21 @@
+Compiled from "DLSInfo.java"
+public final class com.sun.media.sound.DLSInfo {
+  public java.lang.String name;
+  public java.lang.String creationDate;
+  public java.lang.String engineers;
+  public java.lang.String product;
+  public java.lang.String copyright;
+  public java.lang.String comments;
+  public java.lang.String tools;
+  public java.lang.String archival_location;
+  public java.lang.String artist;
+  public java.lang.String commissioned;
+  public java.lang.String genre;
+  public java.lang.String keywords;
+  public java.lang.String medium;
+  public java.lang.String subject;
+  public java.lang.String source;
+  public java.lang.String source_form;
+  public java.lang.String technician;
+  public com.sun.media.sound.DLSInfo();
+}

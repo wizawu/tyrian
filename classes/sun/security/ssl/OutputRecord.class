@@ -1,0 +1,39 @@
+Compiled from "OutputRecord.java"
+abstract class sun.security.ssl.OutputRecord extends java.io.ByteArrayOutputStream implements sun.security.ssl.Record,java.io.Closeable {
+  sun.security.ssl.SSLCipher$SSLWriteCipher writeCipher;
+  sun.security.ssl.TransportContext tc;
+  final sun.security.ssl.HandshakeHash handshakeHash;
+  boolean firstMessage;
+  sun.security.ssl.ProtocolVersion protocolVersion;
+  sun.security.ssl.ProtocolVersion helloVersion;
+  boolean isFirstAppOutputRecord;
+  int packetSize;
+  volatile boolean isClosed;
+  sun.security.ssl.OutputRecord(sun.security.ssl.HandshakeHash, sun.security.ssl.SSLCipher$SSLWriteCipher);
+  synchronized void setVersion(sun.security.ssl.ProtocolVersion);
+  synchronized void setHelloVersion(sun.security.ssl.ProtocolVersion);
+  boolean isEmpty();
+  synchronized boolean seqNumIsHuge();
+  abstract void encodeAlert(byte, byte) throws java.io.IOException;
+  abstract void encodeHandshake(byte[], int, int) throws java.io.IOException;
+  abstract void encodeChangeCipherSpec() throws java.io.IOException;
+  sun.security.ssl.Ciphertext encode(java.nio.ByteBuffer[], int, int, java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  void encodeV2NoCipher() throws java.io.IOException;
+  void deliver(byte[], int, int) throws java.io.IOException;
+  void setDeliverStream(java.io.OutputStream);
+  synchronized void changeWriteCiphers(sun.security.ssl.SSLCipher$SSLWriteCipher, boolean) throws java.io.IOException;
+  synchronized void changeWriteCiphers(sun.security.ssl.SSLCipher$SSLWriteCipher, byte) throws java.io.IOException;
+  synchronized void changePacketSize(int);
+  synchronized void changeFragmentSize(int);
+  synchronized int getMaxPacketSize();
+  void initHandshaker();
+  void finishHandshake();
+  void launchRetransmission();
+  public synchronized void close() throws java.io.IOException;
+  boolean isClosed();
+  int calculateFragmentSize(int);
+  static long encrypt(sun.security.ssl.SSLCipher$SSLWriteCipher, byte, java.nio.ByteBuffer, int, int, int, sun.security.ssl.ProtocolVersion);
+  long encrypt(sun.security.ssl.SSLCipher$SSLWriteCipher, byte, int);
+  static java.nio.ByteBuffer encodeV2ClientHello(byte[], int, int) throws java.io.IOException;
+  static {};
+}

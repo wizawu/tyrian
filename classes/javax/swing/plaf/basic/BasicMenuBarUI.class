@@ -1,0 +1,22 @@
+Compiled from "BasicMenuBarUI.java"
+public class javax.swing.plaf.basic.BasicMenuBarUI extends javax.swing.plaf.MenuBarUI {
+  protected javax.swing.JMenuBar menuBar;
+  protected java.awt.event.ContainerListener containerListener;
+  protected javax.swing.event.ChangeListener changeListener;
+  public javax.swing.plaf.basic.BasicMenuBarUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  static void loadActionMap(javax.swing.plaf.basic.LazyActionMap);
+  public void installUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void installListeners();
+  protected void installKeyboardActions();
+  javax.swing.InputMap getInputMap(int);
+  public void uninstallUI(javax.swing.JComponent);
+  protected void uninstallDefaults();
+  protected void uninstallListeners();
+  protected void uninstallKeyboardActions();
+  protected java.awt.event.ContainerListener createContainerListener();
+  protected javax.swing.event.ChangeListener createChangeListener();
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  public java.awt.Dimension getMaximumSize(javax.swing.JComponent);
+}

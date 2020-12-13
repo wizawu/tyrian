@@ -1,0 +1,28 @@
+Compiled from "AccessibleObject.java"
+public class java.lang.reflect.AccessibleObject implements java.lang.reflect.AnnotatedElement {
+  boolean override;
+  static final jdk.internal.reflect.ReflectionFactory reflectionFactory;
+  volatile java.lang.Object securityCheckCache;
+  static void checkPermission();
+  public static void setAccessible(java.lang.reflect.AccessibleObject[], boolean);
+  public void setAccessible(boolean);
+  boolean setAccessible0(boolean);
+  public final boolean trySetAccessible();
+  void checkCanSetAccessible(java.lang.Class<?>);
+  final void checkCanSetAccessible(java.lang.Class<?>, java.lang.Class<?>);
+  java.lang.String toShortString();
+  public boolean isAccessible();
+  public final boolean canAccess(java.lang.Object);
+  protected java.lang.reflect.AccessibleObject();
+  public <T extends java.lang.annotation.Annotation> T getAnnotation(java.lang.Class<T>);
+  public boolean isAnnotationPresent(java.lang.Class<? extends java.lang.annotation.Annotation>);
+  public <T extends java.lang.annotation.Annotation> T[] getAnnotationsByType(java.lang.Class<T>);
+  public java.lang.annotation.Annotation[] getAnnotations();
+  public <T extends java.lang.annotation.Annotation> T getDeclaredAnnotation(java.lang.Class<T>);
+  public <T extends java.lang.annotation.Annotation> T[] getDeclaredAnnotationsByType(java.lang.Class<T>);
+  public java.lang.annotation.Annotation[] getDeclaredAnnotations();
+  final void checkAccess(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>, int) throws java.lang.IllegalAccessException;
+  final boolean verifyAccess(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>, int);
+  java.lang.reflect.AccessibleObject getRoot();
+  static {};
+}

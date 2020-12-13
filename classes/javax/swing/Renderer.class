@@ -1,0 +1,5 @@
+Compiled from "Renderer.java"
+public interface javax.swing.Renderer {
+  public abstract void setValue(java.lang.Object, boolean);
+  public abstract java.awt.Component getComponent();
+}

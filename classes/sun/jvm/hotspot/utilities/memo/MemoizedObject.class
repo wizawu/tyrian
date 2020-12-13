@@ -1,0 +1,6 @@
+Compiled from "MemoizedObject.java"
+public abstract class sun.jvm.hotspot.utilities.memo.MemoizedObject {
+  public sun.jvm.hotspot.utilities.memo.MemoizedObject();
+  protected abstract java.lang.Object computeValue();
+  public java.lang.Object getValue();
+}

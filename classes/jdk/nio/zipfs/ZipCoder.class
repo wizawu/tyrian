@@ -1,0 +1,8 @@
+Compiled from "ZipCoder.java"
+class jdk.nio.zipfs.ZipCoder {
+  public static jdk.nio.zipfs.ZipCoder get(java.lang.String);
+  java.lang.String toString(byte[]);
+  byte[] getBytes(java.lang.String);
+  boolean isUTF8();
+  static {};
+}

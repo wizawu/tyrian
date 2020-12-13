@@ -1,0 +1,10 @@
+Compiled from "Ellipse2D.java"
+public abstract class java.awt.geom.Ellipse2D extends java.awt.geom.RectangularShape {
+  protected java.awt.geom.Ellipse2D();
+  public boolean contains(double, double);
+  public boolean intersects(double, double, double, double);
+  public boolean contains(double, double, double, double);
+  public java.awt.geom.PathIterator getPathIterator(java.awt.geom.AffineTransform);
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

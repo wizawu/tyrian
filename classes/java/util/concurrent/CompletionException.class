@@ -1,0 +1,7 @@
+Compiled from "CompletionException.java"
+public class java.util.concurrent.CompletionException extends java.lang.RuntimeException {
+  protected java.util.concurrent.CompletionException();
+  protected java.util.concurrent.CompletionException(java.lang.String);
+  public java.util.concurrent.CompletionException(java.lang.String, java.lang.Throwable);
+  public java.util.concurrent.CompletionException(java.lang.Throwable);
+}

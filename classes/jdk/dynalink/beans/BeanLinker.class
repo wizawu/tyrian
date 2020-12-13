@@ -1,0 +1,9 @@
+Compiled from "BeanLinker.java"
+class jdk.dynalink.beans.BeanLinker extends jdk.dynalink.beans.AbstractJavaLinker implements jdk.dynalink.linker.TypeBasedGuardingDynamicLinker {
+  jdk.dynalink.beans.BeanLinker(java.lang.Class<?>);
+  public boolean canLinkType(java.lang.Class<?>);
+  jdk.dynalink.beans.FacetIntrospector createFacetIntrospector();
+  protected jdk.dynalink.beans.GuardedInvocationComponent getGuardedInvocationComponent(jdk.dynalink.beans.AbstractJavaLinker$ComponentLinkRequest) throws java.lang.Exception;
+  jdk.dynalink.beans.SingleDynamicMethod getConstructorMethod(java.lang.String);
+  static {};
+}

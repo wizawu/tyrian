@@ -1,0 +1,9 @@
+Compiled from "TCPChannel.java"
+public class sun.rmi.transport.tcp.TCPChannel implements sun.rmi.transport.Channel {
+  sun.rmi.transport.tcp.TCPChannel(sun.rmi.transport.tcp.TCPTransport, sun.rmi.transport.tcp.TCPEndpoint);
+  public sun.rmi.transport.Endpoint getEndpoint();
+  public sun.rmi.transport.Connection newConnection() throws java.rmi.RemoteException;
+  public void free(sun.rmi.transport.Connection, boolean);
+  public void shedCache();
+  static {};
+}

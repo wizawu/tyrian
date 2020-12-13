@@ -1,0 +1,11 @@
+Compiled from "WindbgX86Thread.java"
+class sun.jvm.hotspot.debugger.windbg.x86.WindbgX86Thread implements sun.jvm.hotspot.debugger.ThreadProxy {
+  sun.jvm.hotspot.debugger.windbg.x86.WindbgX86Thread(sun.jvm.hotspot.debugger.windbg.WindbgDebugger, sun.jvm.hotspot.debugger.Address);
+  sun.jvm.hotspot.debugger.windbg.x86.WindbgX86Thread(sun.jvm.hotspot.debugger.windbg.WindbgDebugger, long);
+  public sun.jvm.hotspot.debugger.ThreadContext getContext() throws java.lang.IllegalThreadStateException;
+  public boolean canSetContext() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public void setContext(sun.jvm.hotspot.debugger.ThreadContext) throws java.lang.IllegalThreadStateException, sun.jvm.hotspot.debugger.DebuggerException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

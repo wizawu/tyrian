@@ -1,0 +1,8 @@
+Compiled from "FuncSubstring.java"
+public class com.sun.org.apache.xpath.internal.functions.FuncSubstring extends com.sun.org.apache.xpath.internal.functions.Function3Args {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.functions.FuncSubstring();
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public void checkNumberArgs(int) throws com.sun.org.apache.xpath.internal.functions.WrongNumberArgsException;
+  protected void reportWrongNumberArgs() throws com.sun.org.apache.xpath.internal.functions.WrongNumberArgsException;
+}

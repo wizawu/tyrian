@@ -1,0 +1,8 @@
+Compiled from "ClassAttributeValueExp.java"
+class javax.management.ClassAttributeValueExp extends javax.management.AttributeValueExp {
+  public javax.management.ClassAttributeValueExp();
+  public javax.management.ValueExp apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
+  public java.lang.String toString();
+  protected java.lang.Object getValue(javax.management.ObjectName);
+  static {};
+}

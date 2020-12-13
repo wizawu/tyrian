@@ -1,0 +1,36 @@
+Compiled from "SynthTreeUI.java"
+public class javax.swing.plaf.synth.SynthTreeUI extends javax.swing.plaf.basic.BasicTreeUI implements java.beans.PropertyChangeListener,javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthTreeUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public javax.swing.Icon getExpandedIcon();
+  protected void installDefaults();
+  protected void installListeners();
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  protected javax.swing.tree.TreeCellEditor createDefaultCellEditor();
+  protected javax.swing.tree.TreeCellRenderer createDefaultCellRenderer();
+  protected void uninstallDefaults();
+  protected void uninstallListeners();
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  protected void paintHorizontalPartOfLeg(java.awt.Graphics, java.awt.Rectangle, java.awt.Insets, java.awt.Rectangle, javax.swing.tree.TreePath, int, boolean, boolean, boolean);
+  protected void paintHorizontalLine(java.awt.Graphics, javax.swing.JComponent, int, int, int);
+  protected void paintVerticalPartOfLeg(java.awt.Graphics, java.awt.Rectangle, java.awt.Insets, javax.swing.tree.TreePath);
+  protected void paintVerticalLine(java.awt.Graphics, javax.swing.JComponent, int, int, int);
+  protected void paintExpandControl(java.awt.Graphics, java.awt.Rectangle, java.awt.Insets, java.awt.Rectangle, javax.swing.tree.TreePath, int, boolean, boolean, boolean);
+  protected void drawCentered(java.awt.Component, java.awt.Graphics, javax.swing.Icon, int, int);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  protected void paintDropLine(java.awt.Graphics);
+  protected int getRowX(int, int);
+  static javax.swing.JTree access$000(javax.swing.plaf.synth.SynthTreeUI);
+  static javax.swing.JTree access$100(javax.swing.plaf.synth.SynthTreeUI);
+  static javax.swing.Icon access$200(javax.swing.plaf.synth.SynthTreeUI);
+  static javax.swing.Icon access$300(javax.swing.plaf.synth.SynthTreeUI);
+  static javax.swing.JTree access$400(javax.swing.plaf.synth.SynthTreeUI);
+  static javax.swing.Icon access$500(javax.swing.plaf.synth.SynthTreeUI);
+  static javax.swing.Icon access$600(javax.swing.plaf.synth.SynthTreeUI);
+  static javax.swing.JTree access$700(javax.swing.plaf.synth.SynthTreeUI);
+  static javax.swing.Icon access$800(javax.swing.plaf.synth.SynthTreeUI);
+  static javax.swing.Icon access$900(javax.swing.plaf.synth.SynthTreeUI);
+}

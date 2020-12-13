@@ -1,0 +1,7 @@
+Compiled from "Pipe.java"
+public abstract class java.nio.channels.Pipe {
+  protected java.nio.channels.Pipe();
+  public abstract java.nio.channels.Pipe$SourceChannel source();
+  public abstract java.nio.channels.Pipe$SinkChannel sink();
+  public static java.nio.channels.Pipe open() throws java.io.IOException;
+}

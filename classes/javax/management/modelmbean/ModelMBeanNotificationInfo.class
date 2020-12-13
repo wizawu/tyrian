@@ -1,0 +1,11 @@
+Compiled from "ModelMBeanNotificationInfo.java"
+public class javax.management.modelmbean.ModelMBeanNotificationInfo extends javax.management.MBeanNotificationInfo implements javax.management.DescriptorAccess {
+  public javax.management.modelmbean.ModelMBeanNotificationInfo(java.lang.String[], java.lang.String, java.lang.String);
+  public javax.management.modelmbean.ModelMBeanNotificationInfo(java.lang.String[], java.lang.String, java.lang.String, javax.management.Descriptor);
+  public javax.management.modelmbean.ModelMBeanNotificationInfo(javax.management.modelmbean.ModelMBeanNotificationInfo);
+  public java.lang.Object clone();
+  public javax.management.Descriptor getDescriptor();
+  public void setDescriptor(javax.management.Descriptor);
+  public java.lang.String toString();
+  static {};
+}

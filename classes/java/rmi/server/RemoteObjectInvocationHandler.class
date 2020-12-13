@@ -1,0 +1,6 @@
+Compiled from "RemoteObjectInvocationHandler.java"
+public class java.rmi.server.RemoteObjectInvocationHandler extends java.rmi.server.RemoteObject implements java.lang.reflect.InvocationHandler {
+  public java.rmi.server.RemoteObjectInvocationHandler(java.rmi.server.RemoteRef);
+  public java.lang.Object invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]) throws java.lang.Throwable;
+  static {};
+}

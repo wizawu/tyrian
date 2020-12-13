@@ -1,0 +1,44 @@
+Compiled from "CodingChooser.java"
+class com.sun.java.util.jar.pack.CodingChooser {
+  int verbose;
+  int effort;
+  boolean optUseHistogram;
+  boolean optUsePopulationCoding;
+  boolean optUseAdaptiveCoding;
+  boolean disablePopCoding;
+  boolean disableRunCoding;
+  boolean topLevel;
+  double fuzz;
+  com.sun.java.util.jar.pack.Coding[] allCodingChoices;
+  com.sun.java.util.jar.pack.CodingChooser$Choice[] choices;
+  java.io.ByteArrayOutputStream context;
+  com.sun.java.util.jar.pack.CodingChooser popHelper;
+  com.sun.java.util.jar.pack.CodingChooser runHelper;
+  java.util.Random stress;
+  public static final int MIN_EFFORT;
+  public static final int MID_EFFORT;
+  public static final int MAX_EFFORT;
+  public static final int POP_EFFORT;
+  public static final int RUN_EFFORT;
+  public static final int BYTE_SIZE;
+  public static final int ZIP_SIZE;
+  static final boolean $assertionsDisabled;
+  com.sun.java.util.jar.pack.CodingChooser(int, com.sun.java.util.jar.pack.Coding[]);
+  com.sun.java.util.jar.pack.CodingChooser$Choice makeExtraChoice(com.sun.java.util.jar.pack.Coding);
+  java.io.ByteArrayOutputStream getContext();
+  com.sun.java.util.jar.pack.CodingMethod choose(int[], int, int, com.sun.java.util.jar.pack.Coding, int[]);
+  com.sun.java.util.jar.pack.CodingMethod choose(int[], int, int, com.sun.java.util.jar.pack.Coding);
+  com.sun.java.util.jar.pack.CodingMethod choose(int[], com.sun.java.util.jar.pack.Coding, int[]);
+  com.sun.java.util.jar.pack.CodingMethod choose(int[], com.sun.java.util.jar.pack.Coding);
+  public void computeSize(com.sun.java.util.jar.pack.CodingMethod, int[], int, int, int[]);
+  public void computeSize(com.sun.java.util.jar.pack.CodingMethod, int[], int[]);
+  public int[] computeSize(com.sun.java.util.jar.pack.CodingMethod, int[], int, int);
+  public int[] computeSize(com.sun.java.util.jar.pack.CodingMethod, int[]);
+  public int computeByteSize(com.sun.java.util.jar.pack.CodingMethod, int[], int, int);
+  int[] getDeltas(int, int);
+  com.sun.java.util.jar.pack.Histogram getValueHistogram();
+  com.sun.java.util.jar.pack.Histogram getDeltaHistogram();
+  com.sun.java.util.jar.pack.Histogram getHistogram(boolean);
+  void addStressSeed(int);
+  static {};
+}

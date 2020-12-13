@@ -1,0 +1,16 @@
+Compiled from "FindScopeDepths.java"
+final class jdk.nashorn.internal.codegen.FindScopeDepths extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor implements jdk.nashorn.internal.runtime.logging.Loggable {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.codegen.FindScopeDepths(jdk.nashorn.internal.codegen.Compiler);
+  public jdk.nashorn.internal.runtime.logging.DebugLogger getLogger();
+  public jdk.nashorn.internal.runtime.logging.DebugLogger initLogger(jdk.nashorn.internal.runtime.Context);
+  static int findScopesToStart(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.FunctionNode, jdk.nashorn.internal.ir.Block);
+  static int findInternalDepth(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.FunctionNode, jdk.nashorn.internal.ir.Block, jdk.nashorn.internal.ir.Symbol);
+  static jdk.nashorn.internal.ir.Block findBodyBlock(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.FunctionNode, jdk.nashorn.internal.ir.Block);
+  public boolean enterFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
+  public jdk.nashorn.internal.ir.Node leaveFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
+  public boolean enterWithNode(jdk.nashorn.internal.ir.WithNode);
+  public boolean enterBlock(jdk.nashorn.internal.ir.Block);
+  public jdk.nashorn.internal.ir.Node leaveBlock(jdk.nashorn.internal.ir.Block);
+  static {};
+}

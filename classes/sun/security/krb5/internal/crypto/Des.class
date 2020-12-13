@@ -1,0 +1,19 @@
+Compiled from "Des.java"
+public final class sun.security.krb5.internal.crypto.Des {
+  public sun.security.krb5.internal.crypto.Des();
+  public static final byte[] set_parity(byte[]);
+  public static final long set_parity(long);
+  public static final boolean bad_key(long);
+  public static final boolean bad_key(byte[]);
+  public static long octet2long(byte[]);
+  public static long octet2long(byte[], int);
+  public static byte[] long2octet(long);
+  public static void long2octet(long, byte[]);
+  public static void long2octet(long, byte[], int);
+  public static void cbc_encrypt(byte[], byte[], byte[], byte[], boolean) throws sun.security.krb5.KrbCryptoException;
+  public static long char_to_key(char[]) throws sun.security.krb5.KrbCryptoException;
+  public static byte[] des_cksum(byte[], byte[], byte[]) throws sun.security.krb5.KrbCryptoException;
+  static byte[] pad(byte[]);
+  public static byte[] string_to_key_bytes(char[]) throws sun.security.krb5.KrbCryptoException;
+  static {};
+}

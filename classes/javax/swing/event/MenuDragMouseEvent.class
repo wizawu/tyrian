@@ -1,0 +1,7 @@
+Compiled from "MenuDragMouseEvent.java"
+public class javax.swing.event.MenuDragMouseEvent extends java.awt.event.MouseEvent {
+  public javax.swing.event.MenuDragMouseEvent(java.awt.Component, int, long, int, int, int, int, boolean, javax.swing.MenuElement[], javax.swing.MenuSelectionManager);
+  public javax.swing.event.MenuDragMouseEvent(java.awt.Component, int, long, int, int, int, int, int, int, boolean, javax.swing.MenuElement[], javax.swing.MenuSelectionManager);
+  public javax.swing.MenuElement[] getPath();
+  public javax.swing.MenuSelectionManager getMenuSelectionManager();
+}

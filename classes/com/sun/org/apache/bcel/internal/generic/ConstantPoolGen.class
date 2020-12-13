@@ -1,0 +1,44 @@
+Compiled from "ConstantPoolGen.java"
+public class com.sun.org.apache.bcel.internal.generic.ConstantPoolGen {
+  static final boolean $assertionsDisabled;
+  public com.sun.org.apache.bcel.internal.generic.ConstantPoolGen(com.sun.org.apache.bcel.internal.classfile.Constant[]);
+  public com.sun.org.apache.bcel.internal.generic.ConstantPoolGen(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public com.sun.org.apache.bcel.internal.generic.ConstantPoolGen();
+  protected void adjustSize();
+  public int lookupString(java.lang.String);
+  public int addString(java.lang.String);
+  public int lookupClass(java.lang.String);
+  public int addClass(java.lang.String);
+  public int addClass(com.sun.org.apache.bcel.internal.generic.ObjectType);
+  public int addArrayClass(com.sun.org.apache.bcel.internal.generic.ArrayType);
+  public int lookupInteger(int);
+  public int addInteger(int);
+  public int lookupFloat(float);
+  public int addFloat(float);
+  public int lookupUtf8(java.lang.String);
+  public int addUtf8(java.lang.String);
+  public int lookupLong(long);
+  public int addLong(long);
+  public int lookupDouble(double);
+  public int addDouble(double);
+  public int lookupNameAndType(java.lang.String, java.lang.String);
+  public int addNameAndType(java.lang.String, java.lang.String);
+  public int lookupMethodref(java.lang.String, java.lang.String, java.lang.String);
+  public int lookupMethodref(com.sun.org.apache.bcel.internal.generic.MethodGen);
+  public int addMethodref(java.lang.String, java.lang.String, java.lang.String);
+  public int addMethodref(com.sun.org.apache.bcel.internal.generic.MethodGen);
+  public int lookupInterfaceMethodref(java.lang.String, java.lang.String, java.lang.String);
+  public int lookupInterfaceMethodref(com.sun.org.apache.bcel.internal.generic.MethodGen);
+  public int addInterfaceMethodref(java.lang.String, java.lang.String, java.lang.String);
+  public int addInterfaceMethodref(com.sun.org.apache.bcel.internal.generic.MethodGen);
+  public int lookupFieldref(java.lang.String, java.lang.String, java.lang.String);
+  public int addFieldref(java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.org.apache.bcel.internal.classfile.Constant getConstant(int);
+  public void setConstant(int, com.sun.org.apache.bcel.internal.classfile.Constant);
+  public com.sun.org.apache.bcel.internal.classfile.ConstantPool getConstantPool();
+  public int getSize();
+  public com.sun.org.apache.bcel.internal.classfile.ConstantPool getFinalConstantPool();
+  public java.lang.String toString();
+  public int addConstant(com.sun.org.apache.bcel.internal.classfile.Constant, com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  static {};
+}

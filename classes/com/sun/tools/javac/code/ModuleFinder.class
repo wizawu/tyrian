@@ -1,0 +1,14 @@
+Compiled from "ModuleFinder.java"
+public class com.sun.tools.javac.code.ModuleFinder {
+  protected static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.code.ModuleFinder> moduleFinderKey;
+  public com.sun.tools.javac.code.ModuleFinder$ModuleNameFromSourceReader moduleNameFromSourceReader;
+  com.sun.tools.javac.code.ModuleFinder$ModuleLocationIterator moduleLocationIterator;
+  public static com.sun.tools.javac.code.ModuleFinder instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.code.ModuleFinder(com.sun.tools.javac.util.Context);
+  public com.sun.tools.javac.code.Symbol$ModuleSymbol findModule(com.sun.tools.javac.util.Name);
+  public com.sun.tools.javac.code.Symbol$ModuleSymbol findModule(com.sun.tools.javac.code.Symbol$ModuleSymbol);
+  public com.sun.tools.javac.util.List<com.sun.tools.javac.code.Symbol$ModuleSymbol> findAllModules();
+  public com.sun.tools.javac.code.Symbol$ModuleSymbol findSingleModule();
+  com.sun.tools.javac.util.JCDiagnostic$Fragment getDescription(javax.tools.StandardLocation);
+  static {};
+}

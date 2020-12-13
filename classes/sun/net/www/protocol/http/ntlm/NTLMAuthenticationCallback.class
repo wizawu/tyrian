@@ -1,0 +1,7 @@
+Compiled from "NTLMAuthenticationCallback.java"
+public abstract class sun.net.www.protocol.http.ntlm.NTLMAuthenticationCallback {
+  public sun.net.www.protocol.http.ntlm.NTLMAuthenticationCallback();
+  public static void setNTLMAuthenticationCallback(sun.net.www.protocol.http.ntlm.NTLMAuthenticationCallback);
+  public static sun.net.www.protocol.http.ntlm.NTLMAuthenticationCallback getNTLMAuthenticationCallback();
+  public abstract boolean isTrustedSite(java.net.URL);
+}

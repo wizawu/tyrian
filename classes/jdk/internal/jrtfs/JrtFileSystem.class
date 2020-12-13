@@ -1,0 +1,45 @@
+Compiled from "JrtFileSystem.java"
+class jdk.internal.jrtfs.JrtFileSystem extends java.nio.file.FileSystem {
+  jdk.internal.jrtfs.JrtFileSystem(jdk.internal.jrtfs.JrtFileSystemProvider, java.util.Map<java.lang.String, ?>) throws java.io.IOException;
+  public boolean isOpen();
+  public void close() throws java.io.IOException;
+  protected void finalize() throws java.lang.Throwable;
+  public java.nio.file.spi.FileSystemProvider provider();
+  public java.lang.Iterable<java.nio.file.Path> getRootDirectories();
+  public jdk.internal.jrtfs.JrtPath getPath(java.lang.String, java.lang.String...);
+  public final boolean isReadOnly();
+  public final java.nio.file.attribute.UserPrincipalLookupService getUserPrincipalLookupService();
+  public final java.nio.file.WatchService newWatchService();
+  public final java.lang.Iterable<java.nio.file.FileStore> getFileStores();
+  public final java.util.Set<java.lang.String> supportedFileAttributeViews();
+  public final java.lang.String toString();
+  public final java.lang.String getSeparator();
+  public java.nio.file.PathMatcher getPathMatcher(java.lang.String);
+  jdk.internal.jrtfs.JrtPath resolveLink(jdk.internal.jrtfs.JrtPath) throws java.io.IOException;
+  jdk.internal.jrtfs.JrtFileAttributes getFileAttributes(jdk.internal.jrtfs.JrtPath, java.nio.file.LinkOption...) throws java.io.IOException;
+  java.util.Iterator<java.nio.file.Path> iteratorOf(jdk.internal.jrtfs.JrtPath, java.nio.file.DirectoryStream$Filter<? super java.nio.file.Path>) throws java.io.IOException;
+  byte[] getFileContent(jdk.internal.jrtfs.JrtPath) throws java.io.IOException;
+  static java.nio.file.ReadOnlyFileSystemException readOnly();
+  static boolean followLinks(java.nio.file.LinkOption...);
+  static void checkOptions(java.util.Set<? extends java.nio.file.OpenOption>);
+  synchronized void cleanup() throws java.io.IOException;
+  final void setTimes(jdk.internal.jrtfs.JrtPath, java.nio.file.attribute.FileTime, java.nio.file.attribute.FileTime, java.nio.file.attribute.FileTime) throws java.io.IOException;
+  final void createDirectory(jdk.internal.jrtfs.JrtPath, java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException;
+  final void deleteFile(jdk.internal.jrtfs.JrtPath, boolean) throws java.io.IOException;
+  final java.io.OutputStream newOutputStream(jdk.internal.jrtfs.JrtPath, java.nio.file.OpenOption...) throws java.io.IOException;
+  final void copyFile(boolean, jdk.internal.jrtfs.JrtPath, jdk.internal.jrtfs.JrtPath, java.nio.file.CopyOption...) throws java.io.IOException;
+  final java.nio.channels.FileChannel newFileChannel(jdk.internal.jrtfs.JrtPath, java.util.Set<? extends java.nio.file.OpenOption>, java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException;
+  final java.io.InputStream newInputStream(jdk.internal.jrtfs.JrtPath) throws java.io.IOException;
+  final java.nio.channels.SeekableByteChannel newByteChannel(jdk.internal.jrtfs.JrtPath, java.util.Set<? extends java.nio.file.OpenOption>, java.nio.file.attribute.FileAttribute<?>...) throws java.io.IOException;
+  final jdk.internal.jrtfs.JrtFileStore getFileStore(jdk.internal.jrtfs.JrtPath);
+  final void ensureOpen() throws java.io.IOException;
+  final jdk.internal.jrtfs.JrtPath getRootPath();
+  boolean isSameFile(jdk.internal.jrtfs.JrtPath, jdk.internal.jrtfs.JrtPath) throws java.io.IOException;
+  boolean isLink(jdk.internal.jrtfs.JrtPath) throws java.io.IOException;
+  boolean exists(jdk.internal.jrtfs.JrtPath) throws java.io.IOException;
+  boolean isDirectory(jdk.internal.jrtfs.JrtPath, boolean) throws java.io.IOException;
+  jdk.internal.jrtfs.JrtPath toRealPath(jdk.internal.jrtfs.JrtPath, java.nio.file.LinkOption...) throws java.io.IOException;
+  jdk.internal.jimage.ImageReader$Node checkNode(jdk.internal.jrtfs.JrtPath) throws java.io.IOException;
+  public java.nio.file.Path getPath(java.lang.String, java.lang.String[]);
+  static {};
+}

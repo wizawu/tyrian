@@ -1,0 +1,9 @@
+Compiled from "BytecodeLoad.java"
+public class sun.jvm.hotspot.interpreter.BytecodeLoad extends sun.jvm.hotspot.interpreter.BytecodeLoadStore {
+  sun.jvm.hotspot.interpreter.BytecodeLoad(sun.jvm.hotspot.oops.Method, int);
+  public void verify();
+  public boolean isValid();
+  public static sun.jvm.hotspot.interpreter.BytecodeLoad at(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeLoad atCheck(sun.jvm.hotspot.oops.Method, int);
+  public static sun.jvm.hotspot.interpreter.BytecodeLoad at(sun.jvm.hotspot.interpreter.BytecodeStream);
+}

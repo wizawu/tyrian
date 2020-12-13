@@ -1,0 +1,15 @@
+Compiled from "Utilities.java"
+final class sun.security.ssl.Utilities {
+  static final char[] hexDigits;
+  sun.security.ssl.Utilities();
+  static java.util.List<javax.net.ssl.SNIServerName> addToSNIServerNameList(java.util.List<javax.net.ssl.SNIServerName>, java.lang.String);
+  static boolean getBooleanProperty(java.lang.String, boolean);
+  static java.lang.String indent(java.lang.String);
+  static java.lang.String indent(java.lang.String, java.lang.String);
+  static java.lang.String toHexString(byte);
+  static java.lang.String byte16HexString(int);
+  static java.lang.String toHexString(byte[]);
+  static java.lang.String toHexString(long);
+  static byte[] toByteArray(java.math.BigInteger);
+  static {};
+}

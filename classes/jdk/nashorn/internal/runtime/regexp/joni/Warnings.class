@@ -1,0 +1,6 @@
+Compiled from "Warnings.java"
+public interface jdk.nashorn.internal.runtime.regexp.joni.Warnings {
+  public static final java.lang.String INVALID_BACKREFERENCE;
+  public static final java.lang.String INVALID_SUBEXP_CALL;
+  public static final java.lang.String INVALID_UNICODE_PROPERTY;
+}

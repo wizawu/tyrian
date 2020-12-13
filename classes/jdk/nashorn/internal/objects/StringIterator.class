@@ -1,0 +1,9 @@
+Compiled from "StringIterator.java"
+public class jdk.nashorn.internal.objects.StringIterator extends jdk.nashorn.internal.objects.AbstractIterator {
+  jdk.nashorn.internal.objects.StringIterator(java.lang.String, jdk.nashorn.internal.objects.Global);
+  public static java.lang.Object next(java.lang.Object, java.lang.Object);
+  public java.lang.String getClassName();
+  protected jdk.nashorn.internal.objects.IteratorResult next(java.lang.Object);
+  public static {};
+  public static void $clinit$();
+}

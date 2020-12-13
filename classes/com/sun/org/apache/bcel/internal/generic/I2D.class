@@ -1,0 +1,5 @@
+Compiled from "I2D.java"
+public class com.sun.org.apache.bcel.internal.generic.I2D extends com.sun.org.apache.bcel.internal.generic.ConversionInstruction {
+  public com.sun.org.apache.bcel.internal.generic.I2D();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

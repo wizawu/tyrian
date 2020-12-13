@@ -1,0 +1,4 @@
+Compiled from "LabelUI.java"
+public abstract class javax.swing.plaf.LabelUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.LabelUI();
+}

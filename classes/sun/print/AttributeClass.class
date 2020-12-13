@@ -1,0 +1,38 @@
+Compiled from "AttributeClass.java"
+public class sun.print.AttributeClass {
+  public static final int TAG_UNSUPPORTED_VALUE;
+  public static final int TAG_INT;
+  public static final int TAG_BOOL;
+  public static final int TAG_ENUM;
+  public static final int TAG_OCTET;
+  public static final int TAG_DATE;
+  public static final int TAG_RESOLUTION;
+  public static final int TAG_RANGE_INTEGER;
+  public static final int TAG_TEXT_LANGUAGE;
+  public static final int TAG_NAME_LANGUAGE;
+  public static final int TAG_TEXT_WO_LANGUAGE;
+  public static final int TAG_NAME_WO_LANGUAGE;
+  public static final int TAG_KEYWORD;
+  public static final int TAG_URI;
+  public static final int TAG_CHARSET;
+  public static final int TAG_NATURALLANGUAGE;
+  public static final int TAG_MIME_MEDIATYPE;
+  public static final int TAG_MEMBER_ATTRNAME;
+  public static final sun.print.AttributeClass ATTRIBUTES_CHARSET;
+  public static final sun.print.AttributeClass ATTRIBUTES_NATURAL_LANGUAGE;
+  protected sun.print.AttributeClass(java.lang.String, int, java.lang.Object);
+  public byte getType();
+  public char[] getLenChars();
+  public java.lang.Object getObjectValue();
+  public int getIntValue();
+  public int[] getArrayOfIntValues();
+  public int[] getIntRangeValue();
+  public java.lang.String getStringValue();
+  public java.lang.String[] getArrayOfStringValues();
+  public byte getByteValue();
+  public java.lang.String getName();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  static {};
+}

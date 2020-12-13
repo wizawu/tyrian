@@ -1,0 +1,11 @@
+Compiled from "SQLInvalidAuthorizationSpecException.java"
+public class java.sql.SQLInvalidAuthorizationSpecException extends java.sql.SQLNonTransientException {
+  public java.sql.SQLInvalidAuthorizationSpecException();
+  public java.sql.SQLInvalidAuthorizationSpecException(java.lang.String);
+  public java.sql.SQLInvalidAuthorizationSpecException(java.lang.String, java.lang.String);
+  public java.sql.SQLInvalidAuthorizationSpecException(java.lang.String, java.lang.String, int);
+  public java.sql.SQLInvalidAuthorizationSpecException(java.lang.Throwable);
+  public java.sql.SQLInvalidAuthorizationSpecException(java.lang.String, java.lang.Throwable);
+  public java.sql.SQLInvalidAuthorizationSpecException(java.lang.String, java.lang.String, java.lang.Throwable);
+  public java.sql.SQLInvalidAuthorizationSpecException(java.lang.String, java.lang.String, int, java.lang.Throwable);
+}

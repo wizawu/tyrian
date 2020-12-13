@@ -1,0 +1,10 @@
+Compiled from "DatatypeException.java"
+public class com.sun.org.apache.xerces.internal.impl.dv.DatatypeException extends java.lang.Exception {
+  static final long serialVersionUID;
+  protected java.lang.String key;
+  protected java.lang.Object[] args;
+  public com.sun.org.apache.xerces.internal.impl.dv.DatatypeException(java.lang.String, java.lang.Object[]);
+  public java.lang.String getKey();
+  public java.lang.Object[] getArgs();
+  public java.lang.String getMessage();
+}

@@ -1,0 +1,7 @@
+Compiled from "Filer.java"
+public interface javax.annotation.processing.Filer {
+  public abstract javax.tools.JavaFileObject createSourceFile(java.lang.CharSequence, javax.lang.model.element.Element...) throws java.io.IOException;
+  public abstract javax.tools.JavaFileObject createClassFile(java.lang.CharSequence, javax.lang.model.element.Element...) throws java.io.IOException;
+  public abstract javax.tools.FileObject createResource(javax.tools.JavaFileManager$Location, java.lang.CharSequence, java.lang.CharSequence, javax.lang.model.element.Element...) throws java.io.IOException;
+  public abstract javax.tools.FileObject getResource(javax.tools.JavaFileManager$Location, java.lang.CharSequence, java.lang.CharSequence) throws java.io.IOException;
+}

@@ -1,0 +1,5 @@
+Compiled from "SynthDefaultLookup.java"
+class javax.swing.plaf.synth.SynthDefaultLookup extends sun.swing.DefaultLookup {
+  javax.swing.plaf.synth.SynthDefaultLookup();
+  public java.lang.Object getDefault(javax.swing.JComponent, javax.swing.plaf.ComponentUI, java.lang.String);
+}

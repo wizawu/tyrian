@@ -1,0 +1,13 @@
+Compiled from "KeyMap.java"
+class jdk.jshell.KeyMap {
+  jdk.jshell.KeyMap(jdk.jshell.JShell);
+  jdk.jshell.Key$TypeDeclKey keyForClass(java.lang.String);
+  jdk.jshell.Key$MethodKey keyForMethod(java.lang.String, java.lang.String);
+  jdk.jshell.Key$VarKey keyForVariable(java.lang.String);
+  jdk.jshell.Key$ImportKey keyForImport(java.lang.String, jdk.jshell.Snippet$SubKind);
+  jdk.jshell.Key$StatementKey keyForStatement();
+  jdk.jshell.Key$ExpressionKey keyForExpression(java.lang.String, java.lang.String);
+  jdk.jshell.Key$ErroneousKey keyForErroneous();
+  boolean doesVariableNameExist(java.lang.String);
+  java.util.stream.Stream<jdk.jshell.Key$ImportKey> importKeys();
+}

@@ -1,0 +1,5 @@
+Compiled from "IndexedInstruction.java"
+public interface com.sun.org.apache.bcel.internal.generic.IndexedInstruction {
+  public abstract int getIndex();
+  public abstract void setIndex(int);
+}

@@ -1,0 +1,48 @@
+Compiled from "RepaintManager.java"
+public class javax.swing.RepaintManager {
+  static final boolean HANDLE_TOP_LEVEL_PAINT;
+  boolean doubleBufferingEnabled;
+  javax.swing.RepaintManager$DoubleBufferInfo standardDoubleBuffer;
+  static boolean volatileImageBufferEnabled;
+  java.awt.Rectangle tmp;
+  public static javax.swing.RepaintManager currentManager(java.awt.Component);
+  static javax.swing.RepaintManager currentManager(sun.awt.AppContext);
+  public static javax.swing.RepaintManager currentManager(javax.swing.JComponent);
+  public static void setCurrentManager(javax.swing.RepaintManager);
+  public javax.swing.RepaintManager();
+  public synchronized void addInvalidComponent(javax.swing.JComponent);
+  public synchronized void removeInvalidComponent(javax.swing.JComponent);
+  public void addDirtyRegion(javax.swing.JComponent, int, int, int, int);
+  public void addDirtyRegion(java.awt.Window, int, int, int, int);
+  public void addDirtyRegion(java.applet.Applet, int, int, int, int);
+  void scheduleHeavyWeightPaints();
+  void nativeAddDirtyRegion(sun.awt.AppContext, java.awt.Container, int, int, int, int);
+  void nativeQueueSurfaceDataRunnable(sun.awt.AppContext, java.awt.Component, java.lang.Runnable);
+  public java.awt.Rectangle getDirtyRegion(javax.swing.JComponent);
+  public void markCompletelyDirty(javax.swing.JComponent);
+  public void markCompletelyClean(javax.swing.JComponent);
+  public boolean isCompletelyDirty(javax.swing.JComponent);
+  public void validateInvalidComponents();
+  boolean isPainting();
+  public void paintDirtyRegions();
+  void collectDirtyComponents(java.util.Map<java.awt.Component, java.awt.Rectangle>, java.awt.Component, java.util.List<java.awt.Component>);
+  public synchronized java.lang.String toString();
+  public java.awt.Image getOffscreenBuffer(java.awt.Component, int, int);
+  public java.awt.Image getVolatileOffscreenBuffer(java.awt.Component, int, int);
+  public void setDoubleBufferMaximumSize(java.awt.Dimension);
+  public java.awt.Dimension getDoubleBufferMaximumSize();
+  public void setDoubleBufferingEnabled(boolean);
+  public boolean isDoubleBufferingEnabled();
+  void resetDoubleBuffer();
+  void resetVolatileDoubleBuffer(java.awt.GraphicsConfiguration);
+  boolean useVolatileDoubleBuffer();
+  void paint(javax.swing.JComponent, javax.swing.JComponent, java.awt.Graphics, int, int, int, int);
+  void copyArea(javax.swing.JComponent, java.awt.Graphics, int, int, int, int, int, int, boolean);
+  void notifyRepaintPerformed(javax.swing.JComponent, int, int, int, int);
+  void beginPaint();
+  void endPaint();
+  boolean show(java.awt.Container, int, int, int, int);
+  void doubleBufferingChanged(javax.swing.JRootPane);
+  void setPaintManager(javax.swing.RepaintManager$PaintManager);
+  static {};
+}

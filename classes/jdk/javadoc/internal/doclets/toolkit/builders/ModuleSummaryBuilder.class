@@ -1,0 +1,13 @@
+Compiled from "ModuleSummaryBuilder.java"
+public class jdk.javadoc.internal.doclets.toolkit.builders.ModuleSummaryBuilder extends jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder {
+  public static jdk.javadoc.internal.doclets.toolkit.builders.ModuleSummaryBuilder getInstance(jdk.javadoc.internal.doclets.toolkit.builders.AbstractBuilder$Context, javax.lang.model.element.ModuleElement, jdk.javadoc.internal.doclets.toolkit.ModuleSummaryWriter);
+  public void build() throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildModuleDoc(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildContent(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildSummary(jdk.javadoc.internal.doclets.toolkit.Content) throws jdk.javadoc.internal.doclets.toolkit.DocletException;
+  protected void buildModulesSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildPackagesSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildServicesSummary(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildModuleDescription(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void buildModuleTags(jdk.javadoc.internal.doclets.toolkit.Content);
+}

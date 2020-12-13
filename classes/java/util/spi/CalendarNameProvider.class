@@ -1,0 +1,6 @@
+Compiled from "CalendarNameProvider.java"
+public abstract class java.util.spi.CalendarNameProvider extends java.util.spi.LocaleServiceProvider {
+  protected java.util.spi.CalendarNameProvider();
+  public abstract java.lang.String getDisplayName(java.lang.String, int, int, int, java.util.Locale);
+  public abstract java.util.Map<java.lang.String, java.lang.Integer> getDisplayNames(java.lang.String, int, int, java.util.Locale);
+}

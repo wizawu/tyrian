@@ -1,0 +1,14 @@
+Compiled from "CompressedResourceHeader.java"
+public final class jdk.internal.jimage.decompressor.CompressedResourceHeader {
+  public static final int MAGIC;
+  public jdk.internal.jimage.decompressor.CompressedResourceHeader(long, long, int, int, boolean);
+  public boolean isTerminal();
+  public int getDecompressorNameOffset();
+  public int getContentOffset();
+  public java.lang.String getStoredContent(jdk.internal.jimage.decompressor.ResourceDecompressor$StringsProvider);
+  public long getUncompressedSize();
+  public long getResourceSize();
+  public byte[] getBytes(java.nio.ByteOrder);
+  public static int getSize();
+  public static jdk.internal.jimage.decompressor.CompressedResourceHeader readFromResource(java.nio.ByteOrder, byte[]);
+}

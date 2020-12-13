@@ -1,0 +1,15 @@
+Compiled from "ScriptObject.java"
+public interface sun.jvm.hotspot.utilities.soql.ScriptObject {
+  public static final java.lang.Object UNDEFINED;
+  public static final java.lang.Object[] EMPTY_ARRAY;
+  public abstract java.lang.Object[] getIds();
+  public abstract java.lang.Object get(java.lang.String);
+  public abstract java.lang.Object get(int);
+  public abstract void put(java.lang.String, java.lang.Object);
+  public abstract void put(int, java.lang.Object);
+  public abstract boolean has(java.lang.String);
+  public abstract boolean has(int);
+  public abstract boolean delete(java.lang.String);
+  public abstract boolean delete(int);
+  static {};
+}

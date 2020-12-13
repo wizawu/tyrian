@@ -1,0 +1,7 @@
+Compiled from "ResetFrame.java"
+public class jdk.internal.net.http.frame.ResetFrame extends jdk.internal.net.http.frame.ErrorFrame {
+  public static final int TYPE;
+  public jdk.internal.net.http.frame.ResetFrame(int, int);
+  public int type();
+  int length();
+}

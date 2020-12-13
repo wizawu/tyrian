@@ -1,0 +1,4 @@
+Compiled from "ClassFilter.java"
+public interface jdk.nashorn.api.scripting.ClassFilter {
+  public abstract boolean exposeToScripts(java.lang.String);
+}

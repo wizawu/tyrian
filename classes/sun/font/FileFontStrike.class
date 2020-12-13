@@ -1,0 +1,30 @@
+Compiled from "FileFontStrike.java"
+public class sun.font.FileFontStrike extends sun.font.PhysicalStrike {
+  static final int INVISIBLE_GLYPHS;
+  java.util.concurrent.ConcurrentHashMap<java.lang.Integer, java.awt.geom.Rectangle2D$Float> boundsMap;
+  java.lang.ref.SoftReference<java.util.concurrent.ConcurrentHashMap<java.lang.Integer, java.awt.geom.Point2D$Float>> glyphMetricsMapRef;
+  java.awt.geom.AffineTransform invertDevTx;
+  boolean useNatives;
+  sun.font.NativeStrike[] nativeStrikes;
+  sun.font.FileFontStrike(sun.font.FileFont, sun.font.FontStrikeDesc);
+  public int getNumGlyphs();
+  long getGlyphImageFromNative(int);
+  long getGlyphImageFromWindows(int);
+  long getGlyphImageFromX11(int);
+  long getGlyphImagePtr(int);
+  void getGlyphImagePtrs(int[], long[], int);
+  int getSlot0GlyphImagePtrs(int[], long[], int);
+  long getCachedGlyphPtr(int);
+  float getGlyphAdvance(int);
+  float getCodePointAdvance(int);
+  void getGlyphImageBounds(int, java.awt.geom.Point2D$Float, java.awt.Rectangle);
+  sun.font.StrikeMetrics getFontMetrics();
+  java.awt.geom.Point2D$Float getGlyphMetrics(int);
+  java.awt.geom.Point2D$Float getCharMetrics(char);
+  java.awt.geom.Rectangle2D$Float getGlyphOutlineBounds(int);
+  public java.awt.geom.Rectangle2D getOutlineBounds(int);
+  java.awt.geom.GeneralPath getGlyphOutline(int, float, float);
+  java.awt.geom.GeneralPath getGlyphVectorOutline(int[], float, float);
+  protected void adjustPoint(java.awt.geom.Point2D$Float);
+  static {};
+}

@@ -1,0 +1,22 @@
+Compiled from "RMIServerImpl.java"
+public abstract class javax.management.remote.rmi.RMIServerImpl implements java.io.Closeable,javax.management.remote.rmi.RMIServer {
+  public javax.management.remote.rmi.RMIServerImpl(java.util.Map<java.lang.String, ?>);
+  void setRMIConnectorServer(javax.management.remote.rmi.RMIConnectorServer) throws java.io.IOException;
+  protected abstract void export() throws java.io.IOException;
+  public abstract java.rmi.Remote toStub() throws java.io.IOException;
+  public synchronized void setDefaultClassLoader(java.lang.ClassLoader);
+  public synchronized java.lang.ClassLoader getDefaultClassLoader();
+  public synchronized void setMBeanServer(javax.management.MBeanServer);
+  public synchronized javax.management.MBeanServer getMBeanServer();
+  public java.lang.String getVersion();
+  public javax.management.remote.rmi.RMIConnection newClient(java.lang.Object) throws java.io.IOException;
+  javax.management.remote.rmi.RMIConnection doNewClient(java.lang.Object) throws java.io.IOException;
+  protected abstract javax.management.remote.rmi.RMIConnection makeClient(java.lang.String, javax.security.auth.Subject) throws java.io.IOException;
+  protected abstract void closeClient(javax.management.remote.rmi.RMIConnection) throws java.io.IOException;
+  protected abstract java.lang.String getProtocol();
+  protected void clientClosed(javax.management.remote.rmi.RMIConnection) throws java.io.IOException;
+  public synchronized void close() throws java.io.IOException;
+  protected abstract void closeServer() throws java.io.IOException;
+  synchronized com.sun.jmx.remote.internal.NotificationBuffer getNotifBuffer();
+  static {};
+}

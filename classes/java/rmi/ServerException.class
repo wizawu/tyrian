@@ -1,0 +1,5 @@
+Compiled from "ServerException.java"
+public class java.rmi.ServerException extends java.rmi.RemoteException {
+  public java.rmi.ServerException(java.lang.String);
+  public java.rmi.ServerException(java.lang.String, java.lang.Exception);
+}

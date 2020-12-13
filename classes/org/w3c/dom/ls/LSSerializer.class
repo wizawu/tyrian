@@ -1,0 +1,11 @@
+Compiled from "LSSerializer.java"
+public interface org.w3c.dom.ls.LSSerializer {
+  public abstract org.w3c.dom.DOMConfiguration getDomConfig();
+  public abstract java.lang.String getNewLine();
+  public abstract void setNewLine(java.lang.String);
+  public abstract org.w3c.dom.ls.LSSerializerFilter getFilter();
+  public abstract void setFilter(org.w3c.dom.ls.LSSerializerFilter);
+  public abstract boolean write(org.w3c.dom.Node, org.w3c.dom.ls.LSOutput) throws org.w3c.dom.ls.LSException;
+  public abstract boolean writeToURI(org.w3c.dom.Node, java.lang.String) throws org.w3c.dom.ls.LSException;
+  public abstract java.lang.String writeToString(org.w3c.dom.Node) throws org.w3c.dom.DOMException, org.w3c.dom.ls.LSException;
+}

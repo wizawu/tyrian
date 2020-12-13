@@ -1,0 +1,24 @@
+Compiled from "ImageView.java"
+public class javax.swing.text.html.ImageView extends javax.swing.text.View {
+  public javax.swing.text.html.ImageView(javax.swing.text.Element);
+  public java.lang.String getAltText();
+  public java.net.URL getImageURL();
+  public javax.swing.Icon getNoImageIcon();
+  public javax.swing.Icon getLoadingImageIcon();
+  public java.awt.Image getImage();
+  public void setLoadsSynchronously(boolean);
+  public boolean getLoadsSynchronously();
+  protected javax.swing.text.html.StyleSheet getStyleSheet();
+  public javax.swing.text.AttributeSet getAttributes();
+  public java.lang.String getToolTipText(float, float, java.awt.Shape);
+  protected void setPropertiesFromAttributes();
+  public void setParent(javax.swing.text.View);
+  public void changedUpdate(javax.swing.event.DocumentEvent, java.awt.Shape, javax.swing.text.ViewFactory);
+  public void paint(java.awt.Graphics, java.awt.Shape);
+  public float getPreferredSpan(int);
+  public float getAlignment(int);
+  public java.awt.Shape modelToView(int, java.awt.Shape, javax.swing.text.Position$Bias) throws javax.swing.text.BadLocationException;
+  public int viewToModel(float, float, java.awt.Shape, javax.swing.text.Position$Bias[]);
+  public void setSize(float, float);
+  static {};
+}

@@ -1,0 +1,3 @@
+Compiled from "CharType.java"
+public interface com.sun.jdi.CharType extends com.sun.jdi.PrimitiveType {
+}

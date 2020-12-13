@@ -1,0 +1,7 @@
+Compiled from "DOMSubTreeData.java"
+public class org.jcp.xml.dsig.internal.dom.DOMSubTreeData implements javax.xml.crypto.NodeSetData<org.w3c.dom.Node> {
+  public org.jcp.xml.dsig.internal.dom.DOMSubTreeData(org.w3c.dom.Node, boolean);
+  public java.util.Iterator<org.w3c.dom.Node> iterator();
+  public org.w3c.dom.Node getRoot();
+  public boolean excludeComments();
+}

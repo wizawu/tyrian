@@ -1,0 +1,11 @@
+Compiled from "FileCacheImageInputStream.java"
+public class javax.imageio.stream.FileCacheImageInputStream extends javax.imageio.stream.ImageInputStreamImpl {
+  public javax.imageio.stream.FileCacheImageInputStream(java.io.InputStream, java.io.File) throws java.io.IOException;
+  public int read() throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public boolean isCached();
+  public boolean isCachedFile();
+  public boolean isCachedMemory();
+  public void close() throws java.io.IOException;
+  protected void finalize() throws java.lang.Throwable;
+}

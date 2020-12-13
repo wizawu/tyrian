@@ -1,0 +1,11 @@
+Compiled from "UnicodeEncoder.java"
+public abstract class sun.nio.cs.UnicodeEncoder extends java.nio.charset.CharsetEncoder {
+  protected static final char BYTE_ORDER_MARK;
+  protected static final char REVERSED_MARK;
+  protected static final int BIG;
+  protected static final int LITTLE;
+  protected sun.nio.cs.UnicodeEncoder(java.nio.charset.Charset, int, boolean);
+  protected java.nio.charset.CoderResult encodeLoop(java.nio.CharBuffer, java.nio.ByteBuffer);
+  protected void implReset();
+  public boolean canEncode(char);
+}

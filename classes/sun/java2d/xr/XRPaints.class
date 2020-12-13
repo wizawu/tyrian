@@ -1,0 +1,18 @@
+Compiled from "XRPaints.java"
+abstract class sun.java2d.xr.XRPaints {
+  static sun.java2d.xr.XRCompositeManager xrCompMan;
+  static final sun.java2d.xr.XRPaints$XRGradient xrGradient;
+  static final sun.java2d.xr.XRPaints$XRLinearGradient xrLinearGradient;
+  static final sun.java2d.xr.XRPaints$XRRadialGradient xrRadialGradient;
+  static final sun.java2d.xr.XRPaints$XRTexture xrTexture;
+  sun.java2d.xr.XRPaints();
+  public static void register(sun.java2d.xr.XRCompositeManager);
+  static boolean isValid(sun.java2d.SunGraphics2D);
+  static void setPaint(sun.java2d.SunGraphics2D, java.awt.Paint);
+  abstract boolean isPaintValid(sun.java2d.SunGraphics2D);
+  abstract void setXRPaint(sun.java2d.SunGraphics2D, java.awt.Paint);
+  public int getGradientLength(java.awt.geom.Point2D, java.awt.geom.Point2D);
+  public int[] convertToIntArgbPixels(java.awt.Color[]);
+  public int colorToIntArgbPixel(java.awt.Color);
+  static {};
+}

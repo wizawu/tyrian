@@ -1,0 +1,9 @@
+Compiled from "Timestamp.java"
+public final class java.security.Timestamp implements java.io.Serializable {
+  public java.security.Timestamp(java.util.Date, java.security.cert.CertPath);
+  public java.util.Date getTimestamp();
+  public java.security.cert.CertPath getSignerCertPath();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

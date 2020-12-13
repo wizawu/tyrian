@@ -1,0 +1,25 @@
+Compiled from "IdentityArrayList.java"
+public class sun.awt.util.IdentityArrayList<E> extends java.util.AbstractList<E> implements java.util.List<E>, java.util.RandomAccess {
+  public sun.awt.util.IdentityArrayList(int);
+  public sun.awt.util.IdentityArrayList();
+  public sun.awt.util.IdentityArrayList(java.util.Collection<? extends E>);
+  public void trimToSize();
+  public void ensureCapacity(int);
+  public int size();
+  public boolean isEmpty();
+  public boolean contains(java.lang.Object);
+  public int indexOf(java.lang.Object);
+  public int lastIndexOf(java.lang.Object);
+  public java.lang.Object[] toArray();
+  public <T> T[] toArray(T[]);
+  public E get(int);
+  public E set(int, E);
+  public boolean add(E);
+  public void add(int, E);
+  public E remove(int);
+  public boolean remove(java.lang.Object);
+  public void clear();
+  public boolean addAll(java.util.Collection<? extends E>);
+  public boolean addAll(int, java.util.Collection<? extends E>);
+  protected void removeRange(int, int);
+}

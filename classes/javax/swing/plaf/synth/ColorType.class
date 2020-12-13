@@ -1,0 +1,13 @@
+Compiled from "ColorType.java"
+public class javax.swing.plaf.synth.ColorType {
+  public static final javax.swing.plaf.synth.ColorType FOREGROUND;
+  public static final javax.swing.plaf.synth.ColorType BACKGROUND;
+  public static final javax.swing.plaf.synth.ColorType TEXT_FOREGROUND;
+  public static final javax.swing.plaf.synth.ColorType TEXT_BACKGROUND;
+  public static final javax.swing.plaf.synth.ColorType FOCUS;
+  public static final int MAX_COUNT;
+  protected javax.swing.plaf.synth.ColorType(java.lang.String);
+  public final int getID();
+  public java.lang.String toString();
+  static {};
+}

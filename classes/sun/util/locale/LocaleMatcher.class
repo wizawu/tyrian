@@ -1,0 +1,9 @@
+Compiled from "LocaleMatcher.java"
+public final class sun.util.locale.LocaleMatcher {
+  public static java.util.List<java.util.Locale> filter(java.util.List<java.util.Locale$LanguageRange>, java.util.Collection<java.util.Locale>, java.util.Locale$FilteringMode);
+  public static java.util.List<java.lang.String> filterTags(java.util.List<java.util.Locale$LanguageRange>, java.util.Collection<java.lang.String>, java.util.Locale$FilteringMode);
+  public static java.util.Locale lookup(java.util.List<java.util.Locale$LanguageRange>, java.util.Collection<java.util.Locale>);
+  public static java.lang.String lookupTag(java.util.List<java.util.Locale$LanguageRange>, java.util.Collection<java.lang.String>);
+  public static java.util.List<java.util.Locale$LanguageRange> parse(java.lang.String);
+  public static java.util.List<java.util.Locale$LanguageRange> mapEquivalents(java.util.List<java.util.Locale$LanguageRange>, java.util.Map<java.lang.String, java.util.List<java.lang.String>>);
+}

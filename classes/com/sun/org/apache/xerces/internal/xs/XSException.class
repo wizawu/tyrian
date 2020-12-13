@@ -1,0 +1,8 @@
+Compiled from "XSException.java"
+public class com.sun.org.apache.xerces.internal.xs.XSException extends java.lang.RuntimeException {
+  static final long serialVersionUID;
+  public short code;
+  public static final short NOT_SUPPORTED_ERR;
+  public static final short INDEX_SIZE_ERR;
+  public com.sun.org.apache.xerces.internal.xs.XSException(short, java.lang.String);
+}

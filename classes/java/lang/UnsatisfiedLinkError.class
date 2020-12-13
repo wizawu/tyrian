@@ -1,0 +1,5 @@
+Compiled from "UnsatisfiedLinkError.java"
+public class java.lang.UnsatisfiedLinkError extends java.lang.LinkageError {
+  public java.lang.UnsatisfiedLinkError();
+  public java.lang.UnsatisfiedLinkError(java.lang.String);
+}

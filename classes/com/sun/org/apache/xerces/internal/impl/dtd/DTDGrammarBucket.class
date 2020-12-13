@@ -1,0 +1,14 @@
+Compiled from "DTDGrammarBucket.java"
+public class com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammarBucket {
+  protected java.util.Map<com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDDescription, com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar> fGrammars;
+  protected com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar fActiveGrammar;
+  protected boolean fIsStandalone;
+  public com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammarBucket();
+  public void putGrammar(com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar);
+  public com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar getGrammar(com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription);
+  public void clear();
+  void setStandalone(boolean);
+  boolean getStandalone();
+  void setActiveGrammar(com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar);
+  com.sun.org.apache.xerces.internal.impl.dtd.DTDGrammar getActiveGrammar();
+}

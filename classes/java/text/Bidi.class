@@ -1,0 +1,25 @@
+Compiled from "Bidi.java"
+public final class java.text.Bidi {
+  public static final int DIRECTION_LEFT_TO_RIGHT;
+  public static final int DIRECTION_RIGHT_TO_LEFT;
+  public static final int DIRECTION_DEFAULT_LEFT_TO_RIGHT;
+  public static final int DIRECTION_DEFAULT_RIGHT_TO_LEFT;
+  public java.text.Bidi(java.lang.String, int);
+  public java.text.Bidi(java.text.AttributedCharacterIterator);
+  public java.text.Bidi(char[], int, byte[], int, int, int);
+  public java.text.Bidi createLineBidi(int, int);
+  public boolean isMixed();
+  public boolean isLeftToRight();
+  public boolean isRightToLeft();
+  public int getLength();
+  public boolean baseIsLeftToRight();
+  public int getBaseLevel();
+  public int getLevelAt(int);
+  public int getRunCount();
+  public int getRunLevel(int);
+  public int getRunStart(int);
+  public int getRunLimit(int);
+  public static boolean requiresBidi(char[], int, int);
+  public static void reorderVisually(byte[], int, java.lang.Object[], int, int);
+  public java.lang.String toString();
+}

@@ -1,0 +1,11 @@
+Compiled from "LocalMonitoredVm.java"
+public class sun.jvmstat.perfdata.monitor.protocol.local.LocalMonitoredVm extends sun.jvmstat.perfdata.monitor.AbstractMonitoredVm {
+  public sun.jvmstat.perfdata.monitor.protocol.local.LocalMonitoredVm(sun.jvmstat.monitor.VmIdentifier, int) throws sun.jvmstat.monitor.MonitorException;
+  public void detach();
+  public void addVmListener(sun.jvmstat.monitor.event.VmListener);
+  public void removeVmListener(sun.jvmstat.monitor.event.VmListener);
+  public void setInterval(int);
+  void fireMonitorStatusChangedEvents(java.util.List<sun.jvmstat.monitor.Monitor>, java.util.List<sun.jvmstat.monitor.Monitor>);
+  void fireMonitorsUpdatedEvents();
+  static <T> T cast(java.lang.Object);
+}

@@ -1,0 +1,5 @@
+Compiled from "MetadataWriter.java"
+final class jdk.jfr.internal.MetadataWriter {
+  public jdk.jfr.internal.MetadataWriter(jdk.jfr.internal.MetadataDescriptor);
+  public void writeBinary(java.io.DataOutput) throws java.io.IOException;
+}

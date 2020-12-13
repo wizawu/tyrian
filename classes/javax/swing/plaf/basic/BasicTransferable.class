@@ -1,0 +1,20 @@
+Compiled from "BasicTransferable.java"
+class javax.swing.plaf.basic.BasicTransferable implements java.awt.datatransfer.Transferable,javax.swing.plaf.UIResource {
+  protected java.lang.String plainData;
+  protected java.lang.String htmlData;
+  public javax.swing.plaf.basic.BasicTransferable(java.lang.String, java.lang.String);
+  public java.awt.datatransfer.DataFlavor[] getTransferDataFlavors();
+  public boolean isDataFlavorSupported(java.awt.datatransfer.DataFlavor);
+  public java.lang.Object getTransferData(java.awt.datatransfer.DataFlavor) throws java.awt.datatransfer.UnsupportedFlavorException, java.io.IOException;
+  protected boolean isRicherFlavor(java.awt.datatransfer.DataFlavor);
+  protected java.awt.datatransfer.DataFlavor[] getRicherFlavors();
+  protected java.lang.Object getRicherData(java.awt.datatransfer.DataFlavor) throws java.awt.datatransfer.UnsupportedFlavorException;
+  protected boolean isHTMLFlavor(java.awt.datatransfer.DataFlavor);
+  protected boolean isHTMLSupported();
+  protected java.lang.String getHTMLData();
+  protected boolean isPlainFlavor(java.awt.datatransfer.DataFlavor);
+  protected boolean isPlainSupported();
+  protected java.lang.String getPlainData();
+  protected boolean isStringFlavor(java.awt.datatransfer.DataFlavor);
+  static {};
+}

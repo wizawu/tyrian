@@ -1,0 +1,42 @@
+Compiled from "DOMBuilder.java"
+public class com.sun.org.apache.xml.internal.utils.DOMBuilder implements org.xml.sax.ContentHandler,org.xml.sax.ext.LexicalHandler {
+  public org.w3c.dom.Document m_doc;
+  protected org.w3c.dom.Node m_currentNode;
+  protected org.w3c.dom.Node m_root;
+  protected org.w3c.dom.Node m_nextSibling;
+  public org.w3c.dom.DocumentFragment m_docFrag;
+  protected java.util.Stack<org.w3c.dom.Node> m_elemStack;
+  protected boolean m_inCData;
+  public com.sun.org.apache.xml.internal.utils.DOMBuilder(org.w3c.dom.Document, org.w3c.dom.Node);
+  public com.sun.org.apache.xml.internal.utils.DOMBuilder(org.w3c.dom.Document, org.w3c.dom.DocumentFragment);
+  public com.sun.org.apache.xml.internal.utils.DOMBuilder(org.w3c.dom.Document);
+  public org.w3c.dom.Node getRootDocument();
+  public org.w3c.dom.Node getRootNode();
+  public org.w3c.dom.Node getCurrentNode();
+  public void setNextSibling(org.w3c.dom.Node);
+  public org.w3c.dom.Node getNextSibling();
+  public java.io.Writer getWriter();
+  protected void append(org.w3c.dom.Node) throws org.xml.sax.SAXException;
+  public void setDocumentLocator(org.xml.sax.Locator);
+  public void startDocument() throws org.xml.sax.SAXException;
+  public void endDocument() throws org.xml.sax.SAXException;
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes) throws org.xml.sax.SAXException;
+  public void endElement(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void setIDAttribute(java.lang.String, org.w3c.dom.Element);
+  public void characters(char[], int, int) throws org.xml.sax.SAXException;
+  public void charactersRaw(char[], int, int) throws org.xml.sax.SAXException;
+  public void startEntity(java.lang.String) throws org.xml.sax.SAXException;
+  public void endEntity(java.lang.String) throws org.xml.sax.SAXException;
+  public void entityReference(java.lang.String) throws org.xml.sax.SAXException;
+  public void ignorableWhitespace(char[], int, int) throws org.xml.sax.SAXException;
+  public void processingInstruction(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void comment(char[], int, int) throws org.xml.sax.SAXException;
+  public void startCDATA() throws org.xml.sax.SAXException;
+  public void endCDATA() throws org.xml.sax.SAXException;
+  public void cdata(char[], int, int) throws org.xml.sax.SAXException;
+  public void startDTD(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void endDTD() throws org.xml.sax.SAXException;
+  public void startPrefixMapping(java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+  public void endPrefixMapping(java.lang.String) throws org.xml.sax.SAXException;
+  public void skippedEntity(java.lang.String) throws org.xml.sax.SAXException;
+}

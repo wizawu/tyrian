@@ -1,0 +1,19 @@
+Compiled from "SynthMenuUI.java"
+public class javax.swing.plaf.synth.SynthMenuUI extends javax.swing.plaf.basic.BasicMenuUI implements java.beans.PropertyChangeListener,javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthMenuUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void installListeners();
+  public void uninstallUI(javax.swing.JComponent);
+  protected void uninstallDefaults();
+  protected void uninstallListeners();
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent, int);
+  javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent, javax.swing.plaf.synth.Region);
+  protected java.awt.Dimension getPreferredMenuItemSize(javax.swing.JComponent, javax.swing.Icon, javax.swing.Icon, int);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+}

@@ -1,0 +1,14 @@
+Compiled from "ModuleNameReader.java"
+public class com.sun.tools.javac.jvm.ModuleNameReader {
+  public com.sun.tools.javac.jvm.ModuleNameReader();
+  public java.lang.String readModuleName(java.nio.file.Path) throws java.io.IOException, com.sun.tools.javac.jvm.ModuleNameReader$BadClassFile;
+  public java.lang.String readModuleName(javax.tools.JavaFileObject) throws java.io.IOException, com.sun.tools.javac.jvm.ModuleNameReader$BadClassFile;
+  public java.lang.String readModuleName(java.io.InputStream) throws java.io.IOException, com.sun.tools.javac.jvm.ModuleNameReader$BadClassFile;
+  void checkZero(int, java.lang.String) throws com.sun.tools.javac.jvm.ModuleNameReader$BadClassFile;
+  char getChar(int);
+  char nextChar();
+  int nextInt();
+  void indexPool() throws com.sun.tools.javac.jvm.ModuleNameReader$BadClassFile;
+  java.lang.String getUtf8Value(int, boolean) throws com.sun.tools.javac.jvm.ModuleNameReader$BadClassFile;
+  java.lang.String getModuleName(int) throws com.sun.tools.javac.jvm.ModuleNameReader$BadClassFile;
+}

@@ -1,0 +1,5 @@
+Compiled from "JCmd.java"
+public class sun.tools.jcmd.JCmd {
+  public sun.tools.jcmd.JCmd();
+  public static void main(java.lang.String[]);
+}

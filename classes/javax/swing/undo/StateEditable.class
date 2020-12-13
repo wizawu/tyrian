@@ -1,0 +1,6 @@
+Compiled from "StateEditable.java"
+public interface javax.swing.undo.StateEditable {
+  public static final java.lang.String RCSID;
+  public abstract void storeState(java.util.Hashtable<java.lang.Object, java.lang.Object>);
+  public abstract void restoreState(java.util.Hashtable<?, ?>);
+}

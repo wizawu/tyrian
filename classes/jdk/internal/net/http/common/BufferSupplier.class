@@ -1,0 +1,6 @@
+Compiled from "BufferSupplier.java"
+public interface jdk.internal.net.http.common.BufferSupplier extends java.util.function.Supplier<java.nio.ByteBuffer> {
+  public abstract java.nio.ByteBuffer get();
+  public abstract void recycle(java.nio.ByteBuffer);
+  public default java.lang.Object get();
+}

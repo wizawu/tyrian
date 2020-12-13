@@ -1,0 +1,4 @@
+Compiled from "JdpException.java"
+public final class sun.management.jdp.JdpException extends java.lang.Exception {
+  public sun.management.jdp.JdpException(java.lang.String);
+}

@@ -1,0 +1,20 @@
+Compiled from "LocalVariableImpl.java"
+public class com.sun.tools.jdi.LocalVariableImpl extends com.sun.tools.jdi.MirrorImpl implements com.sun.jdi.LocalVariable,com.sun.tools.jdi.ValueContainer {
+  com.sun.tools.jdi.LocalVariableImpl(com.sun.jdi.VirtualMachine, com.sun.jdi.Method, int, com.sun.jdi.Location, com.sun.jdi.Location, java.lang.String, java.lang.String, java.lang.String);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public int compareTo(com.sun.jdi.LocalVariable);
+  public java.lang.String name();
+  public java.lang.String typeName();
+  public com.sun.jdi.Type type() throws com.sun.jdi.ClassNotLoadedException;
+  public com.sun.jdi.Type findType(java.lang.String) throws com.sun.jdi.ClassNotLoadedException;
+  public java.lang.String signature();
+  public java.lang.String genericSignature();
+  public boolean isVisible(com.sun.jdi.StackFrame);
+  public boolean isArgument();
+  int slot();
+  boolean hides(com.sun.jdi.LocalVariable);
+  public java.lang.String toString();
+  public com.sun.jdi.VirtualMachine virtualMachine();
+  public int compareTo(java.lang.Object);
+}

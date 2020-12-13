@@ -1,0 +1,19 @@
+Compiled from "SimpleVerifier.java"
+public class jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier extends jdk.internal.org.objectweb.asm.tree.analysis.BasicVerifier {
+  public jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier();
+  public jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier(jdk.internal.org.objectweb.asm.Type, jdk.internal.org.objectweb.asm.Type, boolean);
+  public jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier(jdk.internal.org.objectweb.asm.Type, jdk.internal.org.objectweb.asm.Type, java.util.List<jdk.internal.org.objectweb.asm.Type>, boolean);
+  protected jdk.internal.org.objectweb.asm.tree.analysis.SimpleVerifier(int, jdk.internal.org.objectweb.asm.Type, jdk.internal.org.objectweb.asm.Type, java.util.List<jdk.internal.org.objectweb.asm.Type>, boolean);
+  public void setClassLoader(java.lang.ClassLoader);
+  public jdk.internal.org.objectweb.asm.tree.analysis.BasicValue newValue(jdk.internal.org.objectweb.asm.Type);
+  protected boolean isArrayValue(jdk.internal.org.objectweb.asm.tree.analysis.BasicValue);
+  protected jdk.internal.org.objectweb.asm.tree.analysis.BasicValue getElementValue(jdk.internal.org.objectweb.asm.tree.analysis.BasicValue) throws jdk.internal.org.objectweb.asm.tree.analysis.AnalyzerException;
+  protected boolean isSubTypeOf(jdk.internal.org.objectweb.asm.tree.analysis.BasicValue, jdk.internal.org.objectweb.asm.tree.analysis.BasicValue);
+  public jdk.internal.org.objectweb.asm.tree.analysis.BasicValue merge(jdk.internal.org.objectweb.asm.tree.analysis.BasicValue, jdk.internal.org.objectweb.asm.tree.analysis.BasicValue);
+  protected boolean isInterface(jdk.internal.org.objectweb.asm.Type);
+  protected jdk.internal.org.objectweb.asm.Type getSuperClass(jdk.internal.org.objectweb.asm.Type);
+  protected boolean isAssignableFrom(jdk.internal.org.objectweb.asm.Type, jdk.internal.org.objectweb.asm.Type);
+  protected java.lang.Class<?> getClass(jdk.internal.org.objectweb.asm.Type);
+  public jdk.internal.org.objectweb.asm.tree.analysis.Value merge(jdk.internal.org.objectweb.asm.tree.analysis.Value, jdk.internal.org.objectweb.asm.tree.analysis.Value);
+  public jdk.internal.org.objectweb.asm.tree.analysis.Value newValue(jdk.internal.org.objectweb.asm.Type);
+}

@@ -1,0 +1,13 @@
+Compiled from "TIFFLZWDecompressor.java"
+class com.sun.imageio.plugins.tiff.TIFFLZWDecompressor extends com.sun.imageio.plugins.tiff.TIFFDecompressor {
+  public com.sun.imageio.plugins.tiff.TIFFLZWDecompressor(int, int) throws javax.imageio.IIOException;
+  public void decodeRaw(byte[], int, int, int) throws java.io.IOException;
+  public int decode(byte[], int, byte[], int) throws java.io.IOException;
+  public void initializeStringTable();
+  public void writeString(byte[]);
+  public void addStringToTable(byte[], byte);
+  public void addStringToTable(byte[]);
+  public byte[] composeString(byte[], byte);
+  public int getNextCode();
+  static {};
+}

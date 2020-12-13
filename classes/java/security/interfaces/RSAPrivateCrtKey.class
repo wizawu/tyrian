@@ -1,0 +1,10 @@
+Compiled from "RSAPrivateCrtKey.java"
+public interface java.security.interfaces.RSAPrivateCrtKey extends java.security.interfaces.RSAPrivateKey {
+  public static final long serialVersionUID;
+  public abstract java.math.BigInteger getPublicExponent();
+  public abstract java.math.BigInteger getPrimeP();
+  public abstract java.math.BigInteger getPrimeQ();
+  public abstract java.math.BigInteger getPrimeExponentP();
+  public abstract java.math.BigInteger getPrimeExponentQ();
+  public abstract java.math.BigInteger getCrtCoefficient();
+}

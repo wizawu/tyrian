@@ -1,0 +1,10 @@
+Compiled from "Base64.java"
+class java.util.prefs.Base64 {
+  java.util.prefs.Base64();
+  static java.lang.String byteArrayToBase64(byte[]);
+  static java.lang.String byteArrayToAltBase64(byte[]);
+  static byte[] base64ToByteArray(java.lang.String);
+  static byte[] altBase64ToByteArray(java.lang.String);
+  public static void main(java.lang.String[]);
+  static {};
+}

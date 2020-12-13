@@ -1,0 +1,7 @@
+Compiled from "AbstractAclFileAttributeView.java"
+abstract class sun.nio.fs.AbstractAclFileAttributeView implements java.nio.file.attribute.AclFileAttributeView,sun.nio.fs.DynamicFileAttributeView {
+  sun.nio.fs.AbstractAclFileAttributeView();
+  public final java.lang.String name();
+  public final void setAttribute(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public final java.util.Map<java.lang.String, java.lang.Object> readAttributes(java.lang.String[]) throws java.io.IOException;
+}

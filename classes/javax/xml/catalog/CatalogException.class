@@ -1,0 +1,5 @@
+Compiled from "CatalogException.java"
+public class javax.xml.catalog.CatalogException extends java.lang.RuntimeException {
+  public javax.xml.catalog.CatalogException(java.lang.String);
+  public javax.xml.catalog.CatalogException(java.lang.String, java.lang.Throwable);
+}

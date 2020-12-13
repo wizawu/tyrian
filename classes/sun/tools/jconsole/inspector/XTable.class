@@ -1,0 +1,28 @@
+Compiled from "XTable.java"
+public abstract class sun.tools.jconsole.inspector.XTable extends javax.swing.JTable {
+  static final int NAME_COLUMN;
+  static final int VALUE_COLUMN;
+  public sun.tools.jconsole.inspector.XTable();
+  java.awt.Color getDefaultColor();
+  java.awt.Color getEditableColor();
+  void sortRequested(int);
+  public int getSelectedIndex();
+  public int convertRowToIndex(int);
+  public void emptyTable();
+  public abstract boolean isTableEditable();
+  public abstract boolean isColumnEditable(int);
+  public abstract boolean isReadable(int);
+  public abstract boolean isWritable(int);
+  public abstract boolean isCellError(int, int);
+  public abstract boolean isAttributeViewable(int, int);
+  public abstract void setTableValue(java.lang.Object, int);
+  public abstract java.lang.Object getValue(int);
+  public abstract java.lang.String getClassName(int);
+  public abstract java.lang.String getValueName(int);
+  public boolean isReadWrite(int);
+  public boolean isCellEditable(int, int);
+  public boolean isCellDroppable(int, int);
+  public java.lang.String getToolTip(int, int);
+  public javax.swing.table.TableCellRenderer getCellRenderer(int, int);
+  public java.awt.Component prepareRenderer(javax.swing.table.TableCellRenderer, int, int);
+}

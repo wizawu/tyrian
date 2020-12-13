@@ -1,0 +1,5 @@
+Compiled from "PGPData.java"
+public class com.sun.org.apache.xml.internal.security.keys.content.PGPData extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.KeyInfoContent {
+  public com.sun.org.apache.xml.internal.security.keys.content.PGPData(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
+  public java.lang.String getBaseLocalName();
+}

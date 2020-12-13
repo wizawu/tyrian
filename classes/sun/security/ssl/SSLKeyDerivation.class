@@ -1,0 +1,4 @@
+Compiled from "SSLKeyDerivation.java"
+interface sun.security.ssl.SSLKeyDerivation {
+  public abstract javax.crypto.SecretKey deriveKey(java.lang.String, java.security.spec.AlgorithmParameterSpec) throws java.io.IOException;
+}

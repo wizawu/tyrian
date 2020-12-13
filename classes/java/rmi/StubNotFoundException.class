@@ -1,0 +1,5 @@
+Compiled from "StubNotFoundException.java"
+public class java.rmi.StubNotFoundException extends java.rmi.RemoteException {
+  public java.rmi.StubNotFoundException(java.lang.String);
+  public java.rmi.StubNotFoundException(java.lang.String, java.lang.Exception);
+}

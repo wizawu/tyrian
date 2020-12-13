@@ -1,0 +1,8 @@
+Compiled from "PagesPerMinuteColor.java"
+public final class javax.print.attribute.standard.PagesPerMinuteColor extends javax.print.attribute.IntegerSyntax implements javax.print.attribute.PrintServiceAttribute {
+  static final long serialVersionUID;
+  public javax.print.attribute.standard.PagesPerMinuteColor(int);
+  public boolean equals(java.lang.Object);
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+}

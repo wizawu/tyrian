@@ -1,0 +1,33 @@
+Compiled from "StandardMBeanIntrospector.java"
+class com.sun.jmx.mbeanserver.StandardMBeanIntrospector extends com.sun.jmx.mbeanserver.MBeanIntrospector<java.lang.reflect.Method> {
+  com.sun.jmx.mbeanserver.StandardMBeanIntrospector();
+  static com.sun.jmx.mbeanserver.StandardMBeanIntrospector getInstance();
+  com.sun.jmx.mbeanserver.MBeanIntrospector$PerInterfaceMap<java.lang.reflect.Method> getPerInterfaceMap();
+  com.sun.jmx.mbeanserver.MBeanIntrospector$MBeanInfoMap getMBeanInfoMap();
+  com.sun.jmx.mbeanserver.MBeanAnalyzer<java.lang.reflect.Method> getAnalyzer(java.lang.Class<?>) throws javax.management.NotCompliantMBeanException;
+  boolean isMXBean();
+  java.lang.reflect.Method mFrom(java.lang.reflect.Method);
+  java.lang.String getName(java.lang.reflect.Method);
+  java.lang.reflect.Type getGenericReturnType(java.lang.reflect.Method);
+  java.lang.reflect.Type[] getGenericParameterTypes(java.lang.reflect.Method);
+  java.lang.String[] getSignature(java.lang.reflect.Method);
+  void checkMethod(java.lang.reflect.Method);
+  java.lang.Object invokeM2(java.lang.reflect.Method, java.lang.Object, java.lang.Object[], java.lang.Object) throws java.lang.reflect.InvocationTargetException, java.lang.IllegalAccessException, javax.management.MBeanException;
+  boolean validParameter(java.lang.reflect.Method, java.lang.Object, int, java.lang.Object);
+  javax.management.MBeanAttributeInfo getMBeanAttributeInfo(java.lang.String, java.lang.reflect.Method, java.lang.reflect.Method);
+  javax.management.MBeanOperationInfo getMBeanOperationInfo(java.lang.String, java.lang.reflect.Method);
+  javax.management.Descriptor getBasicMBeanDescriptor();
+  javax.management.Descriptor getMBeanDescriptor(java.lang.Class<?>);
+  static boolean isDefinitelyImmutableInfo(java.lang.Class<?>);
+  javax.management.MBeanOperationInfo getMBeanOperationInfo(java.lang.String, java.lang.Object);
+  javax.management.MBeanAttributeInfo getMBeanAttributeInfo(java.lang.String, java.lang.Object, java.lang.Object);
+  boolean validParameter(java.lang.Object, java.lang.Object, int, java.lang.Object);
+  java.lang.Object invokeM2(java.lang.Object, java.lang.Object, java.lang.Object[], java.lang.Object) throws java.lang.reflect.InvocationTargetException, java.lang.IllegalAccessException, javax.management.MBeanException;
+  void checkMethod(java.lang.Object);
+  java.lang.String[] getSignature(java.lang.Object);
+  java.lang.reflect.Type[] getGenericParameterTypes(java.lang.Object);
+  java.lang.reflect.Type getGenericReturnType(java.lang.Object);
+  java.lang.String getName(java.lang.Object);
+  java.lang.Object mFrom(java.lang.reflect.Method);
+  static {};
+}

@@ -1,0 +1,39 @@
+Compiled from "NamedNodeMapImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.NamedNodeMapImpl implements org.w3c.dom.NamedNodeMap,java.io.Serializable {
+  static final long serialVersionUID;
+  protected short flags;
+  protected static final short READONLY;
+  protected static final short CHANGED;
+  protected static final short HASDEFAULTS;
+  protected java.util.List<org.w3c.dom.Node> nodes;
+  protected com.sun.org.apache.xerces.internal.dom.NodeImpl ownerNode;
+  protected com.sun.org.apache.xerces.internal.dom.NamedNodeMapImpl(com.sun.org.apache.xerces.internal.dom.NodeImpl);
+  public int getLength();
+  public org.w3c.dom.Node item(int);
+  public org.w3c.dom.Node getNamedItem(java.lang.String);
+  public org.w3c.dom.Node getNamedItemNS(java.lang.String, java.lang.String);
+  public org.w3c.dom.Node setNamedItem(org.w3c.dom.Node) throws org.w3c.dom.DOMException;
+  public org.w3c.dom.Node setNamedItemNS(org.w3c.dom.Node) throws org.w3c.dom.DOMException;
+  public org.w3c.dom.Node removeNamedItem(java.lang.String) throws org.w3c.dom.DOMException;
+  public org.w3c.dom.Node removeNamedItemNS(java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
+  public com.sun.org.apache.xerces.internal.dom.NamedNodeMapImpl cloneMap(com.sun.org.apache.xerces.internal.dom.NodeImpl);
+  protected void cloneContent(com.sun.org.apache.xerces.internal.dom.NamedNodeMapImpl);
+  void setReadOnly(boolean, boolean);
+  boolean getReadOnly();
+  protected void setOwnerDocument(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl);
+  final boolean isReadOnly();
+  final void isReadOnly(boolean);
+  final boolean changed();
+  final void changed(boolean);
+  final boolean hasDefaults();
+  final void hasDefaults(boolean);
+  protected int findNamePoint(java.lang.String, int);
+  protected int findNamePoint(java.lang.String, java.lang.String);
+  protected boolean precedes(org.w3c.dom.Node, org.w3c.dom.Node);
+  protected void removeItem(int);
+  protected java.lang.Object getItem(int);
+  protected int addItem(org.w3c.dom.Node);
+  protected java.util.List<org.w3c.dom.Node> cloneMap(java.util.List<org.w3c.dom.Node>);
+  protected int getNamedItemIndex(java.lang.String, java.lang.String);
+  public void removeAll();
+}

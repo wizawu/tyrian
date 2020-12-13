@@ -1,0 +1,9 @@
+Compiled from "FileForceEvent.java"
+public final class jdk.jfr.events.FileForceEvent extends jdk.jfr.events.AbstractJDKEvent {
+  public static final java.lang.ThreadLocal<jdk.jfr.events.FileForceEvent> EVENT;
+  public java.lang.String path;
+  public boolean metaData;
+  public jdk.jfr.events.FileForceEvent();
+  public void reset();
+  static {};
+}

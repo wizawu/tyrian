@@ -1,0 +1,12 @@
+Compiled from "CTypeTreeNodeAdapter.java"
+public class sun.jvm.hotspot.ui.tree.CTypeTreeNodeAdapter extends sun.jvm.hotspot.ui.tree.FieldTreeNodeAdapter {
+  public sun.jvm.hotspot.ui.tree.CTypeTreeNodeAdapter(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.types.Type, sun.jvm.hotspot.oops.FieldIdentifier);
+  public sun.jvm.hotspot.ui.tree.CTypeTreeNodeAdapter(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.types.Type, sun.jvm.hotspot.oops.FieldIdentifier, boolean);
+  public sun.jvm.hotspot.ui.tree.CTypeTreeNodeAdapter(sun.jvm.hotspot.types.Type);
+  public sun.jvm.hotspot.ui.tree.CTypeTreeNodeAdapter(java.util.Iterator);
+  public int getChildCount();
+  public sun.jvm.hotspot.ui.tree.SimpleTreeNode getChild(int);
+  public boolean isLeaf();
+  public int getIndexOfChild(sun.jvm.hotspot.ui.tree.SimpleTreeNode);
+  public java.lang.String getValue();
+}

@@ -1,0 +1,10 @@
+Compiled from "ReferralException.java"
+public abstract class javax.naming.ReferralException extends javax.naming.NamingException {
+  protected javax.naming.ReferralException(java.lang.String);
+  protected javax.naming.ReferralException();
+  public abstract java.lang.Object getReferralInfo();
+  public abstract javax.naming.Context getReferralContext() throws javax.naming.NamingException;
+  public abstract javax.naming.Context getReferralContext(java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+  public abstract boolean skipReferral();
+  public abstract void retryReferral();
+}

@@ -1,0 +1,11 @@
+Compiled from "MethodWriter.java"
+public interface jdk.javadoc.internal.doclets.toolkit.MethodWriter {
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMethodDetailsTreeHeader(javax.lang.model.element.TypeElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMethodDocTreeHeader(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getSignature(javax.lang.model.element.ExecutableElement);
+  public abstract void addDeprecated(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addComments(javax.lang.model.type.TypeMirror, javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract void addTags(javax.lang.model.element.ExecutableElement, jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMethodDetails(jdk.javadoc.internal.doclets.toolkit.Content);
+  public abstract jdk.javadoc.internal.doclets.toolkit.Content getMethodDoc(jdk.javadoc.internal.doclets.toolkit.Content, boolean);
+}

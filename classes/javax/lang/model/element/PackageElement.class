@@ -1,0 +1,8 @@
+Compiled from "PackageElement.java"
+public interface javax.lang.model.element.PackageElement extends javax.lang.model.element.Element,javax.lang.model.element.QualifiedNameable {
+  public abstract javax.lang.model.element.Name getQualifiedName();
+  public abstract javax.lang.model.element.Name getSimpleName();
+  public abstract java.util.List<? extends javax.lang.model.element.Element> getEnclosedElements();
+  public abstract boolean isUnnamed();
+  public abstract javax.lang.model.element.Element getEnclosingElement();
+}

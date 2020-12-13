@@ -1,0 +1,14 @@
+Compiled from "NoArgumentOptionSpec.java"
+class jdk.internal.joptsimple.NoArgumentOptionSpec extends jdk.internal.joptsimple.AbstractOptionSpec<java.lang.Void> {
+  jdk.internal.joptsimple.NoArgumentOptionSpec(java.lang.String);
+  jdk.internal.joptsimple.NoArgumentOptionSpec(java.util.List<java.lang.String>, java.lang.String);
+  void handleOption(jdk.internal.joptsimple.OptionParser, jdk.internal.joptsimple.ArgumentList, jdk.internal.joptsimple.OptionSet, java.lang.String);
+  public boolean acceptsArguments();
+  public boolean requiresArgument();
+  public boolean isRequired();
+  public java.lang.String argumentDescription();
+  public java.lang.String argumentTypeIndicator();
+  protected java.lang.Void convert(java.lang.String);
+  public java.util.List<java.lang.Void> defaultValues();
+  protected java.lang.Object convert(java.lang.String);
+}

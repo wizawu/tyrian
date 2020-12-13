@@ -1,0 +1,13 @@
+Compiled from "CodeInstaller.java"
+public interface jdk.nashorn.internal.runtime.CodeInstaller {
+  public abstract jdk.nashorn.internal.runtime.Context getContext();
+  public abstract java.lang.Class<?> install(java.lang.String, byte[]);
+  public abstract void initialize(java.util.Collection<java.lang.Class<?>>, jdk.nashorn.internal.runtime.Source, java.lang.Object[]);
+  public abstract void verify(byte[]);
+  public abstract long getUniqueScriptId();
+  public abstract void storeScript(java.lang.String, jdk.nashorn.internal.runtime.Source, java.lang.String, java.util.Map<java.lang.String, byte[]>, java.util.Map<java.lang.Integer, jdk.nashorn.internal.runtime.FunctionInitializer>, java.lang.Object[], int);
+  public abstract jdk.nashorn.internal.runtime.StoredScript loadScript(jdk.nashorn.internal.runtime.Source, java.lang.String);
+  public abstract jdk.nashorn.internal.runtime.CodeInstaller getOnDemandCompilationInstaller();
+  public abstract jdk.nashorn.internal.runtime.CodeInstaller getMultiClassCodeInstaller();
+  public abstract boolean isCompatibleWith(jdk.nashorn.internal.runtime.CodeInstaller);
+}

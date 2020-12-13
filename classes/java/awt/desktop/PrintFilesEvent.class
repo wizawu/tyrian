@@ -1,0 +1,4 @@
+Compiled from "PrintFilesEvent.java"
+public final class java.awt.desktop.PrintFilesEvent extends java.awt.desktop.FilesEvent {
+  public java.awt.desktop.PrintFilesEvent(java.util.List<java.io.File>);
+}

@@ -1,0 +1,15 @@
+Compiled from "GTKColorChooserPanel.java"
+class com.sun.java.swing.plaf.gtk.GTKColorChooserPanel extends javax.swing.colorchooser.AbstractColorChooserPanel implements javax.swing.event.ChangeListener {
+  com.sun.java.swing.plaf.gtk.GTKColorChooserPanel();
+  static void compositeRequestFocus(java.awt.Component, boolean);
+  public java.lang.String getDisplayName();
+  public int getMnemonic();
+  public int getDisplayedMnemonicIndex();
+  public javax.swing.Icon getSmallDisplayIcon();
+  public javax.swing.Icon getLargeDisplayIcon();
+  public void uninstallChooserPanel(javax.swing.JColorChooser);
+  protected void buildChooser();
+  public void updateChooser();
+  public java.awt.Color getColor();
+  public void stateChanged(javax.swing.event.ChangeEvent);
+}

@@ -1,0 +1,22 @@
+Compiled from "AbstractModuleIndexWriter.java"
+public abstract class jdk.javadoc.internal.doclets.formats.html.AbstractModuleIndexWriter extends jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter {
+  protected java.util.SortedMap<javax.lang.model.element.ModuleElement, java.util.Set<javax.lang.model.element.PackageElement>> modules;
+  protected jdk.javadoc.internal.doclets.formats.html.markup.Navigation navBar;
+  public jdk.javadoc.internal.doclets.formats.html.AbstractModuleIndexWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath);
+  protected abstract void addNavigationBarHeader(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected abstract void addNavigationBarFooter(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected abstract void addOverviewHeader(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected abstract void addModulesList(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected abstract void addModulePackagesList(java.util.Map<javax.lang.model.element.ModuleElement, java.util.Set<javax.lang.model.element.PackageElement>>, java.lang.String, java.lang.String, jdk.javadoc.internal.doclets.toolkit.Content, javax.lang.model.element.ModuleElement);
+  protected void buildModuleIndexFile(java.lang.String, boolean) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void buildModulePackagesIndexFile(java.lang.String, boolean, javax.lang.model.element.ModuleElement) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
+  protected void addOverview(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addIndex(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addModulePackagesIndex(jdk.javadoc.internal.doclets.toolkit.Content, javax.lang.model.element.ModuleElement);
+  protected void addIndexContents(java.util.Collection<javax.lang.model.element.ModuleElement>, java.lang.String, java.lang.String, jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addModulePackagesIndexContents(java.lang.String, java.lang.String, jdk.javadoc.internal.doclets.toolkit.Content, javax.lang.model.element.ModuleElement);
+  protected void addConfigurationTitle(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addAllClassesLink(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addAllPackagesLink(jdk.javadoc.internal.doclets.toolkit.Content);
+  protected void addAllModulesLink(jdk.javadoc.internal.doclets.toolkit.Content);
+}

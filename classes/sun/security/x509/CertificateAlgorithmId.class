@@ -1,0 +1,17 @@
+Compiled from "CertificateAlgorithmId.java"
+public class sun.security.x509.CertificateAlgorithmId implements sun.security.x509.CertAttrSet<java.lang.String> {
+  public static final java.lang.String IDENT;
+  public static final java.lang.String NAME;
+  public static final java.lang.String ALGORITHM;
+  public sun.security.x509.CertificateAlgorithmId(sun.security.x509.AlgorithmId);
+  public sun.security.x509.CertificateAlgorithmId(sun.security.util.DerInputStream) throws java.io.IOException;
+  public sun.security.x509.CertificateAlgorithmId(java.io.InputStream) throws java.io.IOException;
+  public java.lang.String toString();
+  public void encode(java.io.OutputStream) throws java.io.IOException;
+  public void set(java.lang.String, java.lang.Object) throws java.io.IOException;
+  public sun.security.x509.AlgorithmId get(java.lang.String) throws java.io.IOException;
+  public void delete(java.lang.String) throws java.io.IOException;
+  public java.util.Enumeration<java.lang.String> getElements();
+  public java.lang.String getName();
+  public java.lang.Object get(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+}

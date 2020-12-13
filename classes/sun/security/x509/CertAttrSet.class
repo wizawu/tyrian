@@ -1,0 +1,10 @@
+Compiled from "CertAttrSet.java"
+public interface sun.security.x509.CertAttrSet<T> {
+  public abstract java.lang.String toString();
+  public abstract void encode(java.io.OutputStream) throws java.security.cert.CertificateException, java.io.IOException;
+  public abstract void set(java.lang.String, java.lang.Object) throws java.security.cert.CertificateException, java.io.IOException;
+  public abstract java.lang.Object get(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+  public abstract void delete(java.lang.String) throws java.security.cert.CertificateException, java.io.IOException;
+  public abstract java.util.Enumeration<T> getElements();
+  public abstract java.lang.String getName();
+}

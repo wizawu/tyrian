@@ -1,0 +1,32 @@
+Compiled from "SymbolTable.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.DecimalFormatting getDecimalFormatting(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public void addDecimalFormatting(com.sun.org.apache.xalan.internal.xsltc.compiler.QName, com.sun.org.apache.xalan.internal.xsltc.compiler.DecimalFormatting);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Key getKey(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public void addKey(com.sun.org.apache.xalan.internal.xsltc.compiler.QName, com.sun.org.apache.xalan.internal.xsltc.compiler.Key);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet addStylesheet(com.sun.org.apache.xalan.internal.xsltc.compiler.QName, com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet lookupStylesheet(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Template addTemplate(com.sun.org.apache.xalan.internal.xsltc.compiler.Template);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Template lookupTemplate(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Variable addVariable(com.sun.org.apache.xalan.internal.xsltc.compiler.Variable);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Param addParam(com.sun.org.apache.xalan.internal.xsltc.compiler.Param);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Variable lookupVariable(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.Param lookupParam(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode lookupName(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.AttributeSet addAttributeSet(com.sun.org.apache.xalan.internal.xsltc.compiler.AttributeSet);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.AttributeSet lookupAttributeSet(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public void addPrimop(java.lang.String, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType);
+  public java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodType> lookupPrimop(java.lang.String);
+  public java.lang.String generateNamespacePrefix();
+  public void setCurrentNode(com.sun.org.apache.xalan.internal.xsltc.compiler.SyntaxTreeNode);
+  public java.lang.String lookupNamespace(java.lang.String);
+  public void addPrefixAlias(java.lang.String, java.lang.String);
+  public java.lang.String lookupPrefixAlias(java.lang.String);
+  public void excludeURI(java.lang.String);
+  public void excludeNamespaces(java.lang.String);
+  public boolean isExcludedNamespace(java.lang.String);
+  public void unExcludeNamespaces(java.lang.String);
+  public void pushExcludedNamespacesContext();
+  public void popExcludedNamespacesContext();
+}

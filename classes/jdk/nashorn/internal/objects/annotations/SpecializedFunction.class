@@ -1,0 +1,8 @@
+Compiled from "SpecializedFunction.java"
+public interface jdk.nashorn.internal.objects.annotations.SpecializedFunction extends java.lang.annotation.Annotation {
+  public abstract java.lang.String name();
+  public abstract java.lang.Class<?> linkLogic();
+  public abstract boolean isConstructor();
+  public abstract boolean isOptimistic();
+  public abstract boolean convertsNumericArgs();
+}

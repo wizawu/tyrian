@@ -1,0 +1,4 @@
+Compiled from "ThrowTree.java"
+public interface jdk.nashorn.api.tree.ThrowTree extends jdk.nashorn.api.tree.StatementTree {
+  public abstract jdk.nashorn.api.tree.ExpressionTree getExpression();
+}

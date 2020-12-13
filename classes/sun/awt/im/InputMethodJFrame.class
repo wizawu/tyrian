@@ -1,0 +1,7 @@
+Compiled from "InputMethodJFrame.java"
+public class sun.awt.im.InputMethodJFrame extends javax.swing.JFrame implements sun.awt.im.InputMethodWindow {
+  sun.awt.im.InputContext inputContext;
+  public sun.awt.im.InputMethodJFrame(java.lang.String, sun.awt.im.InputContext);
+  public void setInputContext(sun.awt.im.InputContext);
+  public java.awt.im.InputContext getInputContext();
+}

@@ -1,0 +1,5 @@
+Compiled from "ExceptionStatisticsEvent.java"
+public final class jdk.jfr.events.ExceptionStatisticsEvent extends jdk.jfr.events.AbstractJDKEvent {
+  public long throwables;
+  public jdk.jfr.events.ExceptionStatisticsEvent();
+}

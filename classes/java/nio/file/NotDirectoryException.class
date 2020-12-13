@@ -1,0 +1,4 @@
+Compiled from "NotDirectoryException.java"
+public class java.nio.file.NotDirectoryException extends java.nio.file.FileSystemException {
+  public java.nio.file.NotDirectoryException(java.lang.String);
+}

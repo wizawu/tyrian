@@ -1,0 +1,7 @@
+Compiled from "ModuleLoaderMap.java"
+public final class jdk.internal.module.ModuleLoaderMap {
+  public jdk.internal.module.ModuleLoaderMap();
+  public static java.util.Set<java.lang.String> bootModules();
+  public static java.util.Set<java.lang.String> platformModules();
+  static java.util.function.Function<java.lang.String, java.lang.ClassLoader> mappingFunction(java.lang.module.Configuration);
+}

@@ -1,0 +1,12 @@
+Compiled from "SoftChorus.java"
+public final class com.sun.media.sound.SoftChorus implements com.sun.media.sound.SoftAudioProcessor {
+  double silentcounter;
+  public com.sun.media.sound.SoftChorus();
+  public void init(float, float);
+  public void globalParameterControlChange(int[], long, long);
+  public void processControlLogic();
+  public void processAudio();
+  public void setInput(int, com.sun.media.sound.SoftAudioBuffer);
+  public void setMixMode(boolean);
+  public void setOutput(int, com.sun.media.sound.SoftAudioBuffer);
+}

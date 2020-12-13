@@ -1,0 +1,10 @@
+Compiled from "PathConsumer2D.java"
+public interface sun.awt.geom.PathConsumer2D {
+  public abstract void moveTo(float, float);
+  public abstract void lineTo(float, float);
+  public abstract void quadTo(float, float, float, float);
+  public abstract void curveTo(float, float, float, float, float, float);
+  public abstract void closePath();
+  public abstract void pathDone();
+  public abstract long getNativeConsumer();
+}

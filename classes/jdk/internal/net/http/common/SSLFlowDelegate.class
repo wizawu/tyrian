@@ -1,0 +1,41 @@
+Compiled from "SSLFlowDelegate.java"
+public class jdk.internal.net.http.common.SSLFlowDelegate {
+  final jdk.internal.net.http.common.Logger debug;
+  final java.util.concurrent.Executor exec;
+  final jdk.internal.net.http.common.SSLFlowDelegate$Reader reader;
+  final jdk.internal.net.http.common.SSLFlowDelegate$Writer writer;
+  final javax.net.ssl.SSLEngine engine;
+  final java.lang.String tubeName;
+  final java.util.concurrent.CompletableFuture<java.lang.String> alpnCF;
+  final jdk.internal.net.http.common.SSLFlowDelegate$Monitorable monitor;
+  volatile boolean close_notify_received;
+  final java.util.concurrent.CompletableFuture<java.lang.Void> readerCF;
+  final java.util.concurrent.CompletableFuture<java.lang.Void> writerCF;
+  final java.util.concurrent.CompletableFuture<java.lang.Void> stopCF;
+  final java.util.function.Consumer<java.nio.ByteBuffer> recycler;
+  static java.util.concurrent.atomic.AtomicInteger scount;
+  final int id;
+  boolean stopped;
+  final java.util.concurrent.atomic.AtomicInteger handshakeState;
+  final java.util.concurrent.ConcurrentLinkedQueue<java.lang.String> stateList;
+  volatile int packetBufferSize;
+  volatile int applicationBufferSize;
+  volatile int adaptiveAppBufferSize;
+  public jdk.internal.net.http.common.SSLFlowDelegate(javax.net.ssl.SSLEngine, java.util.concurrent.Executor, java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>, java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>);
+  public jdk.internal.net.http.common.SSLFlowDelegate(javax.net.ssl.SSLEngine, java.util.concurrent.Executor, java.util.function.Consumer<java.nio.ByteBuffer>, java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>, java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>);
+  public boolean closeNotifyReceived();
+  void connect(java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>, java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>);
+  public java.util.concurrent.CompletableFuture<java.lang.String> alpn();
+  public java.lang.String monitor();
+  protected jdk.internal.net.http.common.SubscriberWrapper$SchedulingAction enterReadScheduling();
+  boolean trySetALPN();
+  jdk.internal.net.http.common.SSLFlowDelegate$EngineResult doClosure(jdk.internal.net.http.common.SSLFlowDelegate$EngineResult) throws java.io.IOException;
+  public java.util.concurrent.Flow$Subscriber<java.util.List<java.nio.ByteBuffer>> upstreamReader();
+  public java.util.concurrent.Flow$Subscriber<java.util.List<java.nio.ByteBuffer>> upstreamWriter();
+  public boolean resumeReader();
+  public void resetReaderDemand();
+  final java.nio.ByteBuffer getNetBuffer();
+  final java.nio.ByteBuffer getAppBuffer();
+  final java.lang.String dbgString();
+  static {};
+}

@@ -1,0 +1,13 @@
+Compiled from "MLetMBean.java"
+public interface javax.management.loading.MLetMBean {
+  public abstract java.util.Set<java.lang.Object> getMBeansFromURL(java.lang.String) throws javax.management.ServiceNotFoundException;
+  public abstract java.util.Set<java.lang.Object> getMBeansFromURL(java.net.URL) throws javax.management.ServiceNotFoundException;
+  public abstract void addURL(java.net.URL);
+  public abstract void addURL(java.lang.String) throws javax.management.ServiceNotFoundException;
+  public abstract java.net.URL[] getURLs();
+  public abstract java.net.URL getResource(java.lang.String);
+  public abstract java.io.InputStream getResourceAsStream(java.lang.String);
+  public abstract java.util.Enumeration<java.net.URL> getResources(java.lang.String) throws java.io.IOException;
+  public abstract java.lang.String getLibraryDirectory();
+  public abstract void setLibraryDirectory(java.lang.String);
+}

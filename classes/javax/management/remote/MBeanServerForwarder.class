@@ -1,0 +1,5 @@
+Compiled from "MBeanServerForwarder.java"
+public interface javax.management.remote.MBeanServerForwarder extends javax.management.MBeanServer {
+  public abstract javax.management.MBeanServer getMBeanServer();
+  public abstract void setMBeanServer(javax.management.MBeanServer);
+}

@@ -1,0 +1,6 @@
+Compiled from "CheckboxPeer.java"
+public interface java.awt.peer.CheckboxPeer extends java.awt.peer.ComponentPeer {
+  public abstract void setState(boolean);
+  public abstract void setCheckboxGroup(java.awt.CheckboxGroup);
+  public abstract void setLabel(java.lang.String);
+}

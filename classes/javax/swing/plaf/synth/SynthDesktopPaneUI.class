@@ -1,0 +1,17 @@
+Compiled from "SynthDesktopPaneUI.java"
+public class javax.swing.plaf.synth.SynthDesktopPaneUI extends javax.swing.plaf.basic.BasicDesktopPaneUI implements java.beans.PropertyChangeListener,javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthDesktopPaneUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installListeners();
+  protected void installDefaults();
+  protected void uninstallListeners();
+  protected void uninstallDefaults();
+  protected void installDesktopManager();
+  protected void uninstallDesktopManager();
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+}

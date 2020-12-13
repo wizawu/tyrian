@@ -1,0 +1,15 @@
+Compiled from "CoroutineManager.java"
+public class com.sun.org.apache.xml.internal.dtm.ref.CoroutineManager {
+  java.util.BitSet m_activeIDs;
+  static final int m_unreasonableId;
+  java.lang.Object m_yield;
+  static final int NOBODY;
+  static final int ANYBODY;
+  int m_nextCoroutine;
+  public com.sun.org.apache.xml.internal.dtm.ref.CoroutineManager();
+  public synchronized int co_joinCoroutineSet(int);
+  public synchronized java.lang.Object co_entry_pause(int) throws java.lang.NoSuchMethodException;
+  public synchronized java.lang.Object co_resume(java.lang.Object, int, int) throws java.lang.NoSuchMethodException;
+  public synchronized void co_exit(int);
+  public synchronized void co_exit_to(java.lang.Object, int, int) throws java.lang.NoSuchMethodException;
+}

@@ -1,0 +1,18 @@
+Compiled from "GridBagLayoutInfo.java"
+public class java.awt.GridBagLayoutInfo implements java.io.Serializable {
+  int width;
+  int height;
+  int startx;
+  int starty;
+  int[] minWidth;
+  int[] minHeight;
+  double[] weightX;
+  double[] weightY;
+  boolean hasBaseline;
+  short[] baselineType;
+  int[] maxAscent;
+  int[] maxDescent;
+  java.awt.GridBagLayoutInfo(int, int);
+  boolean hasConstantDescent(int);
+  boolean hasBaseline(int);
+}

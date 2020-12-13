@@ -1,0 +1,6 @@
+Compiled from "Replaceable.java"
+interface sun.text.normalizer.Replaceable {
+  public abstract int length();
+  public abstract char charAt(int);
+  public abstract void getChars(int, int, char[], int);
+}

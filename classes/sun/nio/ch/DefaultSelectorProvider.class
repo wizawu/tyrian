@@ -1,0 +1,4 @@
+Compiled from "DefaultSelectorProvider.java"
+public class sun.nio.ch.DefaultSelectorProvider {
+  public static java.nio.channels.spi.SelectorProvider create();
+}

@@ -1,0 +1,26 @@
+Compiled from "JSpinner.java"
+public class javax.swing.JSpinner extends javax.swing.JComponent implements javax.accessibility.Accessible {
+  public javax.swing.JSpinner(javax.swing.SpinnerModel);
+  public javax.swing.JSpinner();
+  public javax.swing.plaf.SpinnerUI getUI();
+  public void setUI(javax.swing.plaf.SpinnerUI);
+  public java.lang.String getUIClassID();
+  public void updateUI();
+  protected javax.swing.JComponent createEditor(javax.swing.SpinnerModel);
+  public void setModel(javax.swing.SpinnerModel);
+  public javax.swing.SpinnerModel getModel();
+  public java.lang.Object getValue();
+  public void setValue(java.lang.Object);
+  public java.lang.Object getNextValue();
+  public void addChangeListener(javax.swing.event.ChangeListener);
+  public void removeChangeListener(javax.swing.event.ChangeListener);
+  public javax.swing.event.ChangeListener[] getChangeListeners();
+  protected void fireStateChanged();
+  public java.lang.Object getPreviousValue();
+  public void setEditor(javax.swing.JComponent);
+  public javax.swing.JComponent getEditor();
+  public void commitEdit() throws java.text.ParseException;
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  public javax.swing.plaf.ComponentUI getUI();
+  static {};
+}

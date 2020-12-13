@@ -1,0 +1,9 @@
+Compiled from "ReferenceType.java"
+public abstract class com.sun.org.apache.bcel.internal.generic.ReferenceType extends com.sun.org.apache.bcel.internal.generic.Type {
+  protected com.sun.org.apache.bcel.internal.generic.ReferenceType(byte, java.lang.String);
+  com.sun.org.apache.bcel.internal.generic.ReferenceType();
+  public boolean isCastableTo(com.sun.org.apache.bcel.internal.generic.Type) throws java.lang.ClassNotFoundException;
+  public boolean isAssignmentCompatibleWith(com.sun.org.apache.bcel.internal.generic.Type) throws java.lang.ClassNotFoundException;
+  public com.sun.org.apache.bcel.internal.generic.ReferenceType getFirstCommonSuperclass(com.sun.org.apache.bcel.internal.generic.ReferenceType) throws java.lang.ClassNotFoundException;
+  public com.sun.org.apache.bcel.internal.generic.ReferenceType firstCommonSuperclass(com.sun.org.apache.bcel.internal.generic.ReferenceType) throws java.lang.ClassNotFoundException;
+}

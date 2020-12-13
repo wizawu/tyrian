@@ -1,0 +1,14 @@
+Compiled from "TreeUI.java"
+public abstract class javax.swing.plaf.TreeUI extends javax.swing.plaf.ComponentUI {
+  public javax.swing.plaf.TreeUI();
+  public abstract java.awt.Rectangle getPathBounds(javax.swing.JTree, javax.swing.tree.TreePath);
+  public abstract javax.swing.tree.TreePath getPathForRow(javax.swing.JTree, int);
+  public abstract int getRowForPath(javax.swing.JTree, javax.swing.tree.TreePath);
+  public abstract int getRowCount(javax.swing.JTree);
+  public abstract javax.swing.tree.TreePath getClosestPathForLocation(javax.swing.JTree, int, int);
+  public abstract boolean isEditing(javax.swing.JTree);
+  public abstract boolean stopEditing(javax.swing.JTree);
+  public abstract void cancelEditing(javax.swing.JTree);
+  public abstract void startEditingAtPath(javax.swing.JTree, javax.swing.tree.TreePath);
+  public abstract javax.swing.tree.TreePath getEditingPath(javax.swing.JTree);
+}

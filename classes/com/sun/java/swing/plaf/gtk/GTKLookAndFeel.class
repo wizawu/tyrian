@@ -1,0 +1,29 @@
+Compiled from "GTKLookAndFeel.java"
+public class com.sun.java.swing.plaf.gtk.GTKLookAndFeel extends javax.swing.plaf.synth.SynthLookAndFeel {
+  static java.util.Map<java.lang.Object, java.lang.Object> aaTextInfo;
+  static java.lang.ref.ReferenceQueue<com.sun.java.swing.plaf.gtk.GTKLookAndFeel> queue;
+  static final boolean $assertionsDisabled;
+  public com.sun.java.swing.plaf.gtk.GTKLookAndFeel();
+  static boolean is2_2();
+  static boolean is3();
+  static com.sun.java.swing.plaf.gtk.GTKConstants$PositionType SwingOrientationConstantToGTK(int);
+  static com.sun.java.swing.plaf.gtk.GTKConstants$StateType synthStateToGTKStateType(int);
+  static int synthStateToGTKState(javax.swing.plaf.synth.Region, int);
+  static boolean isText(javax.swing.plaf.synth.Region);
+  public javax.swing.UIDefaults getDefaults();
+  protected void initComponentDefaults(javax.swing.UIDefaults);
+  protected void initSystemColorDefaults(javax.swing.UIDefaults);
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  static java.lang.String getGtkThemeName();
+  static boolean isLeftToRight(java.awt.Component);
+  public void initialize();
+  public boolean isSupportedLookAndFeel();
+  public boolean isNativeLookAndFeel();
+  public java.lang.String getDescription();
+  public java.lang.String getName();
+  public java.lang.String getID();
+  protected void loadSystemColors(javax.swing.UIDefaults, java.lang.String[], boolean);
+  public boolean shouldUpdateStyleOnAncestorChanged();
+  public javax.swing.LayoutStyle getLayoutStyle();
+  static {};
+}

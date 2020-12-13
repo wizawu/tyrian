@@ -1,0 +1,8 @@
+Compiled from "MetalFontDesktopProperty.java"
+final class javax.swing.plaf.metal.MetalFontDesktopProperty extends sun.swing.plaf.DesktopProperty {
+  javax.swing.plaf.metal.MetalFontDesktopProperty(int);
+  javax.swing.plaf.metal.MetalFontDesktopProperty(java.lang.String, int);
+  protected java.lang.Object configureValue(java.lang.Object);
+  protected java.lang.Object getDefaultValue();
+  static {};
+}

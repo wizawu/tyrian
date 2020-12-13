@@ -1,0 +1,16 @@
+Compiled from "ElemContext.java"
+final class com.sun.org.apache.xml.internal.serializer.ElemContext {
+  final int m_currentElemDepth;
+  com.sun.org.apache.xml.internal.serializer.ElemDesc m_elementDesc;
+  java.lang.String m_elementLocalName;
+  java.lang.String m_elementName;
+  java.lang.String m_elementURI;
+  boolean m_isCdataSection;
+  boolean m_isRaw;
+  final com.sun.org.apache.xml.internal.serializer.ElemContext m_prev;
+  boolean m_startTagOpen;
+  com.sun.org.apache.xml.internal.serializer.ElemContext();
+  final com.sun.org.apache.xml.internal.serializer.ElemContext pop();
+  final com.sun.org.apache.xml.internal.serializer.ElemContext push();
+  final com.sun.org.apache.xml.internal.serializer.ElemContext push(java.lang.String, java.lang.String, java.lang.String);
+}

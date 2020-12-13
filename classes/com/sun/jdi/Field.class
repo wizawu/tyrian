@@ -1,0 +1,10 @@
+Compiled from "Field.java"
+public interface com.sun.jdi.Field extends com.sun.jdi.TypeComponent, java.lang.Comparable<com.sun.jdi.Field> {
+  public abstract java.lang.String typeName();
+  public abstract com.sun.jdi.Type type() throws com.sun.jdi.ClassNotLoadedException;
+  public abstract boolean isTransient();
+  public abstract boolean isVolatile();
+  public abstract boolean isEnumConstant();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+}

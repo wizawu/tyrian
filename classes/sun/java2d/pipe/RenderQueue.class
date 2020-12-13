@@ -1,0 +1,17 @@
+Compiled from "RenderQueue.java"
+public abstract class sun.java2d.pipe.RenderQueue {
+  protected sun.java2d.pipe.RenderBuffer buf;
+  protected java.util.Set<java.lang.Object> refSet;
+  protected sun.java2d.pipe.RenderQueue();
+  public final void lock();
+  public final boolean tryLock();
+  public final void unlock();
+  public final void addReference(java.lang.Object);
+  public final sun.java2d.pipe.RenderBuffer getBuffer();
+  public final void ensureCapacity(int);
+  public final void ensureCapacityAndAlignment(int, int);
+  public final void ensureAlignment(int);
+  public abstract void flushNow();
+  public abstract void flushAndInvokeNow(java.lang.Runnable);
+  public void flushNow(int);
+}

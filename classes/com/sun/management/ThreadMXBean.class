@@ -1,0 +1,11 @@
+Compiled from "ThreadMXBean.java"
+public interface com.sun.management.ThreadMXBean extends java.lang.management.ThreadMXBean {
+  public abstract long[] getThreadCpuTime(long[]);
+  public abstract long[] getThreadUserTime(long[]);
+  public default long getCurrentThreadAllocatedBytes();
+  public abstract long getThreadAllocatedBytes(long);
+  public abstract long[] getThreadAllocatedBytes(long[]);
+  public abstract boolean isThreadAllocatedMemorySupported();
+  public abstract boolean isThreadAllocatedMemoryEnabled();
+  public abstract void setThreadAllocatedMemoryEnabled(boolean);
+}

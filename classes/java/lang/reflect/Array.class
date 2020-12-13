@@ -1,0 +1,24 @@
+Compiled from "Array.java"
+public final class java.lang.reflect.Array {
+  public static java.lang.Object newInstance(java.lang.Class<?>, int) throws java.lang.NegativeArraySizeException;
+  public static java.lang.Object newInstance(java.lang.Class<?>, int...) throws java.lang.IllegalArgumentException, java.lang.NegativeArraySizeException;
+  public static native int getLength(java.lang.Object) throws java.lang.IllegalArgumentException;
+  public static native java.lang.Object get(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native boolean getBoolean(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native byte getByte(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native char getChar(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native short getShort(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native int getInt(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native long getLong(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native float getFloat(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native double getDouble(java.lang.Object, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native void set(java.lang.Object, int, java.lang.Object) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native void setBoolean(java.lang.Object, int, boolean) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native void setByte(java.lang.Object, int, byte) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native void setChar(java.lang.Object, int, char) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native void setShort(java.lang.Object, int, short) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native void setInt(java.lang.Object, int, int) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native void setLong(java.lang.Object, int, long) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native void setFloat(java.lang.Object, int, float) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+  public static native void setDouble(java.lang.Object, int, double) throws java.lang.IllegalArgumentException, java.lang.ArrayIndexOutOfBoundsException;
+}

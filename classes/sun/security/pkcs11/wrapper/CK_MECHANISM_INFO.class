@@ -1,0 +1,10 @@
+Compiled from "CK_MECHANISM_INFO.java"
+public class sun.security.pkcs11.wrapper.CK_MECHANISM_INFO {
+  public long ulMinKeySize;
+  public final int iMinKeySize;
+  public long ulMaxKeySize;
+  public final int iMaxKeySize;
+  public long flags;
+  public sun.security.pkcs11.wrapper.CK_MECHANISM_INFO(long, long, long);
+  public java.lang.String toString();
+}

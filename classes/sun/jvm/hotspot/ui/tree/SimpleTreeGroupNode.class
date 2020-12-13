@@ -1,0 +1,13 @@
+Compiled from "SimpleTreeGroupNode.java"
+public class sun.jvm.hotspot.ui.tree.SimpleTreeGroupNode implements sun.jvm.hotspot.ui.tree.SimpleTreeNode {
+  public sun.jvm.hotspot.ui.tree.SimpleTreeGroupNode();
+  public int getChildCount();
+  public sun.jvm.hotspot.ui.tree.SimpleTreeNode getChild(int);
+  public void addChild(sun.jvm.hotspot.ui.tree.SimpleTreeNode);
+  public sun.jvm.hotspot.ui.tree.SimpleTreeNode removeChild(int);
+  public void removeAllChildren();
+  public boolean isLeaf();
+  public int getIndexOfChild(sun.jvm.hotspot.ui.tree.SimpleTreeNode);
+  public java.lang.String getName();
+  public java.lang.String getValue();
+}

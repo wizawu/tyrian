@@ -1,0 +1,25 @@
+Compiled from "JSONListAdapter.java"
+public final class jdk.nashorn.internal.runtime.JSONListAdapter extends jdk.nashorn.internal.runtime.ListAdapter implements jdk.nashorn.api.scripting.JSObject {
+  public jdk.nashorn.internal.runtime.JSONListAdapter(jdk.nashorn.api.scripting.JSObject, jdk.nashorn.internal.objects.Global);
+  public java.lang.Object unwrap(java.lang.Object);
+  public java.lang.Object call(java.lang.Object, java.lang.Object...);
+  public java.lang.Object newObject(java.lang.Object...);
+  public java.lang.Object eval(java.lang.String);
+  public java.lang.Object getMember(java.lang.String);
+  public java.lang.Object getSlot(int);
+  public boolean hasMember(java.lang.String);
+  public boolean hasSlot(int);
+  public void removeMember(java.lang.String);
+  public void setMember(java.lang.String, java.lang.Object);
+  public void setSlot(int, java.lang.Object);
+  public java.util.Set<java.lang.String> keySet();
+  public java.util.Collection<java.lang.Object> values();
+  public boolean isInstance(java.lang.Object);
+  public boolean isInstanceOf(java.lang.Object);
+  public java.lang.String getClassName();
+  public boolean isFunction();
+  public boolean isStrictFunction();
+  public boolean isArray();
+  public double toNumber();
+  public java.lang.Object getDefaultValue(java.lang.Class<?>) throws java.lang.UnsupportedOperationException;
+}

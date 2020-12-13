@@ -1,0 +1,9 @@
+Compiled from "Attribute.java"
+public class javax.management.Attribute implements java.io.Serializable {
+  public javax.management.Attribute(java.lang.String, java.lang.Object);
+  public java.lang.String getName();
+  public java.lang.Object getValue();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+}

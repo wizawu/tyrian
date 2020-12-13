@@ -1,0 +1,9 @@
+Compiled from "Shutdown.java"
+public class sun.nio.ch.sctp.Shutdown extends com.sun.nio.sctp.ShutdownNotification implements sun.nio.ch.sctp.SctpNotification {
+  static final boolean $assertionsDisabled;
+  public int assocId();
+  public void setAssociation(com.sun.nio.sctp.Association);
+  public com.sun.nio.sctp.Association association();
+  public java.lang.String toString();
+  static {};
+}

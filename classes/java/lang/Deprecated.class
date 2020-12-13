@@ -1,0 +1,5 @@
+Compiled from "Deprecated.java"
+public interface java.lang.Deprecated extends java.lang.annotation.Annotation {
+  public abstract java.lang.String since();
+  public abstract boolean forRemoval();
+}

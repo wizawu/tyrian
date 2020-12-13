@@ -1,0 +1,8 @@
+Compiled from "XMLStringFactory.java"
+public abstract class com.sun.org.apache.xml.internal.utils.XMLStringFactory {
+  public com.sun.org.apache.xml.internal.utils.XMLStringFactory();
+  public abstract com.sun.org.apache.xml.internal.utils.XMLString newstr(java.lang.String);
+  public abstract com.sun.org.apache.xml.internal.utils.XMLString newstr(com.sun.org.apache.xml.internal.utils.FastStringBuffer, int, int);
+  public abstract com.sun.org.apache.xml.internal.utils.XMLString newstr(char[], int, int);
+  public abstract com.sun.org.apache.xml.internal.utils.XMLString emptystr();
+}

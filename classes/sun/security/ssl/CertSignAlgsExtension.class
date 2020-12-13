@@ -1,0 +1,12 @@
+Compiled from "CertSignAlgsExtension.java"
+final class sun.security.ssl.CertSignAlgsExtension {
+  static final sun.security.ssl.HandshakeProducer chNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer chOnLoadConsumer;
+  static final sun.security.ssl.HandshakeConsumer chOnTradeConsumer;
+  static final sun.security.ssl.HandshakeProducer crNetworkProducer;
+  static final sun.security.ssl.SSLExtension$ExtensionConsumer crOnLoadConsumer;
+  static final sun.security.ssl.HandshakeConsumer crOnTradeConsumer;
+  static final sun.security.ssl.SSLStringizer ssStringizer;
+  sun.security.ssl.CertSignAlgsExtension();
+  static {};
+}

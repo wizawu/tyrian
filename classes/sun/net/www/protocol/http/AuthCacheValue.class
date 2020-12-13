@@ -1,0 +1,16 @@
+Compiled from "AuthCacheValue.java"
+public abstract class sun.net.www.protocol.http.AuthCacheValue implements java.io.Serializable {
+  static final long serialVersionUID;
+  protected static sun.net.www.protocol.http.AuthCache cache;
+  public static void setAuthCache(sun.net.www.protocol.http.AuthCache);
+  sun.net.www.protocol.http.AuthCacheValue();
+  abstract sun.net.www.protocol.http.AuthCacheValue$Type getAuthType();
+  abstract sun.net.www.protocol.http.AuthScheme getAuthScheme();
+  abstract java.lang.String getHost();
+  abstract int getPort();
+  abstract java.lang.String getRealm();
+  abstract java.lang.String getPath();
+  abstract java.lang.String getProtocolScheme();
+  abstract java.net.PasswordAuthentication credentials();
+  static {};
+}

@@ -1,0 +1,12 @@
+Compiled from "InnocuousThread.java"
+public final class jdk.internal.misc.InnocuousThread extends java.lang.Thread {
+  public static java.lang.Thread newThread(java.lang.Runnable);
+  public static java.lang.Thread newThread(java.lang.String, java.lang.Runnable);
+  public static java.lang.Thread newSystemThread(java.lang.Runnable);
+  public static java.lang.Thread newSystemThread(java.lang.String, java.lang.Runnable);
+  public void setUncaughtExceptionHandler(java.lang.Thread$UncaughtExceptionHandler);
+  public void setContextClassLoader(java.lang.ClassLoader);
+  public final void eraseThreadLocals();
+  public void run();
+  static {};
+}

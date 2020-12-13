@@ -1,0 +1,13 @@
+Compiled from "ClassType.java"
+public interface com.sun.jdi.ClassType extends com.sun.jdi.ReferenceType {
+  public static final int INVOKE_SINGLE_THREADED;
+  public abstract com.sun.jdi.ClassType superclass();
+  public abstract java.util.List<com.sun.jdi.InterfaceType> interfaces();
+  public abstract java.util.List<com.sun.jdi.InterfaceType> allInterfaces();
+  public abstract java.util.List<com.sun.jdi.ClassType> subclasses();
+  public abstract boolean isEnum();
+  public abstract void setValue(com.sun.jdi.Field, com.sun.jdi.Value) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
+  public abstract com.sun.jdi.Value invokeMethod(com.sun.jdi.ThreadReference, com.sun.jdi.Method, java.util.List<? extends com.sun.jdi.Value>, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException, com.sun.jdi.IncompatibleThreadStateException, com.sun.jdi.InvocationException;
+  public abstract com.sun.jdi.ObjectReference newInstance(com.sun.jdi.ThreadReference, com.sun.jdi.Method, java.util.List<? extends com.sun.jdi.Value>, int) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException, com.sun.jdi.IncompatibleThreadStateException, com.sun.jdi.InvocationException;
+  public abstract com.sun.jdi.Method concreteMethodByName(java.lang.String, java.lang.String);
+}

@@ -1,0 +1,18 @@
+Compiled from "DOMErrorImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DOMErrorImpl implements org.w3c.dom.DOMError {
+  public short fSeverity;
+  public java.lang.String fMessage;
+  public com.sun.org.apache.xerces.internal.dom.DOMLocatorImpl fLocator;
+  public java.lang.Exception fException;
+  public java.lang.String fType;
+  public java.lang.Object fRelatedData;
+  public com.sun.org.apache.xerces.internal.dom.DOMErrorImpl();
+  public com.sun.org.apache.xerces.internal.dom.DOMErrorImpl(short, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException);
+  public short getSeverity();
+  public java.lang.String getMessage();
+  public org.w3c.dom.DOMLocator getLocation();
+  public java.lang.Object getRelatedException();
+  public void reset();
+  public java.lang.String getType();
+  public java.lang.Object getRelatedData();
+}

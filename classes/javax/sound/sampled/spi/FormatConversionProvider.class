@@ -1,0 +1,14 @@
+Compiled from "FormatConversionProvider.java"
+public abstract class javax.sound.sampled.spi.FormatConversionProvider {
+  public javax.sound.sampled.spi.FormatConversionProvider();
+  public abstract javax.sound.sampled.AudioFormat$Encoding[] getSourceEncodings();
+  public abstract javax.sound.sampled.AudioFormat$Encoding[] getTargetEncodings();
+  public boolean isSourceEncodingSupported(javax.sound.sampled.AudioFormat$Encoding);
+  public boolean isTargetEncodingSupported(javax.sound.sampled.AudioFormat$Encoding);
+  public abstract javax.sound.sampled.AudioFormat$Encoding[] getTargetEncodings(javax.sound.sampled.AudioFormat);
+  public boolean isConversionSupported(javax.sound.sampled.AudioFormat$Encoding, javax.sound.sampled.AudioFormat);
+  public abstract javax.sound.sampled.AudioFormat[] getTargetFormats(javax.sound.sampled.AudioFormat$Encoding, javax.sound.sampled.AudioFormat);
+  public boolean isConversionSupported(javax.sound.sampled.AudioFormat, javax.sound.sampled.AudioFormat);
+  public abstract javax.sound.sampled.AudioInputStream getAudioInputStream(javax.sound.sampled.AudioFormat$Encoding, javax.sound.sampled.AudioInputStream);
+  public abstract javax.sound.sampled.AudioInputStream getAudioInputStream(javax.sound.sampled.AudioFormat, javax.sound.sampled.AudioInputStream);
+}

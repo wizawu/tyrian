@@ -1,0 +1,18 @@
+Compiled from "XMLStreamConstants.java"
+public interface javax.xml.stream.XMLStreamConstants {
+  public static final int START_ELEMENT;
+  public static final int END_ELEMENT;
+  public static final int PROCESSING_INSTRUCTION;
+  public static final int CHARACTERS;
+  public static final int COMMENT;
+  public static final int SPACE;
+  public static final int START_DOCUMENT;
+  public static final int END_DOCUMENT;
+  public static final int ENTITY_REFERENCE;
+  public static final int ATTRIBUTE;
+  public static final int DTD;
+  public static final int CDATA;
+  public static final int NAMESPACE;
+  public static final int NOTATION_DECLARATION;
+  public static final int ENTITY_DECLARATION;
+}

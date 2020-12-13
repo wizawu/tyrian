@@ -1,0 +1,11 @@
+Compiled from "XSIDCDefinition.java"
+public interface com.sun.org.apache.xerces.internal.xs.XSIDCDefinition extends com.sun.org.apache.xerces.internal.xs.XSObject {
+  public static final short IC_KEY;
+  public static final short IC_KEYREF;
+  public static final short IC_UNIQUE;
+  public abstract short getCategory();
+  public abstract java.lang.String getSelectorStr();
+  public abstract com.sun.org.apache.xerces.internal.xs.StringList getFieldStrs();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSIDCDefinition getRefKey();
+  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
+}

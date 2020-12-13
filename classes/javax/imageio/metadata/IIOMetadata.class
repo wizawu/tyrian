@@ -1,0 +1,36 @@
+Compiled from "IIOMetadata.java"
+public abstract class javax.imageio.metadata.IIOMetadata {
+  protected boolean standardFormatSupported;
+  protected java.lang.String nativeMetadataFormatName;
+  protected java.lang.String nativeMetadataFormatClassName;
+  protected java.lang.String[] extraMetadataFormatNames;
+  protected java.lang.String[] extraMetadataFormatClassNames;
+  protected javax.imageio.metadata.IIOMetadataController defaultController;
+  protected javax.imageio.metadata.IIOMetadataController controller;
+  protected javax.imageio.metadata.IIOMetadata();
+  protected javax.imageio.metadata.IIOMetadata(boolean, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[]);
+  public boolean isStandardMetadataFormatSupported();
+  public abstract boolean isReadOnly();
+  public java.lang.String getNativeMetadataFormatName();
+  public java.lang.String[] getExtraMetadataFormatNames();
+  public java.lang.String[] getMetadataFormatNames();
+  public javax.imageio.metadata.IIOMetadataFormat getMetadataFormat(java.lang.String);
+  public abstract org.w3c.dom.Node getAsTree(java.lang.String);
+  public abstract void mergeTree(java.lang.String, org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected javax.imageio.metadata.IIOMetadataNode getStandardChromaNode();
+  protected javax.imageio.metadata.IIOMetadataNode getStandardCompressionNode();
+  protected javax.imageio.metadata.IIOMetadataNode getStandardDataNode();
+  protected javax.imageio.metadata.IIOMetadataNode getStandardDimensionNode();
+  protected javax.imageio.metadata.IIOMetadataNode getStandardDocumentNode();
+  protected javax.imageio.metadata.IIOMetadataNode getStandardTextNode();
+  protected javax.imageio.metadata.IIOMetadataNode getStandardTileNode();
+  protected javax.imageio.metadata.IIOMetadataNode getStandardTransparencyNode();
+  protected final javax.imageio.metadata.IIOMetadataNode getStandardTree();
+  public void setFromTree(java.lang.String, org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  public abstract void reset();
+  public void setController(javax.imageio.metadata.IIOMetadataController);
+  public javax.imageio.metadata.IIOMetadataController getController();
+  public javax.imageio.metadata.IIOMetadataController getDefaultController();
+  public boolean hasController();
+  public boolean activateController();
+}

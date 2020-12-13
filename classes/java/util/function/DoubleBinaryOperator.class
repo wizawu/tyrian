@@ -1,0 +1,4 @@
+Compiled from "DoubleBinaryOperator.java"
+public interface java.util.function.DoubleBinaryOperator {
+  public abstract double applyAsDouble(double, double);
+}

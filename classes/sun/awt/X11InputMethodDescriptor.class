@@ -1,0 +1,10 @@
+Compiled from "X11InputMethodDescriptor.java"
+public abstract class sun.awt.X11InputMethodDescriptor implements java.awt.im.spi.InputMethodDescriptor {
+  public sun.awt.X11InputMethodDescriptor();
+  public java.util.Locale[] getAvailableLocales();
+  public boolean hasDynamicLocaleList();
+  public synchronized java.lang.String getInputMethodDisplayName(java.util.Locale, java.util.Locale);
+  public java.awt.Image getInputMethodIcon(java.util.Locale);
+  public abstract java.awt.im.spi.InputMethod createInputMethod() throws java.lang.Exception;
+  static java.util.Locale getSupportedLocale();
+}

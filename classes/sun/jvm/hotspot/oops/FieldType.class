@@ -1,0 +1,17 @@
+Compiled from "FieldType.java"
+public class sun.jvm.hotspot.oops.FieldType {
+  public sun.jvm.hotspot.oops.FieldType(sun.jvm.hotspot.oops.Symbol);
+  public boolean isOop();
+  public boolean isByte();
+  public boolean isChar();
+  public boolean isDouble();
+  public boolean isFloat();
+  public boolean isInt();
+  public boolean isLong();
+  public boolean isShort();
+  public boolean isBoolean();
+  public boolean isObject();
+  public boolean isArray();
+  public sun.jvm.hotspot.oops.Symbol getSignature();
+  public sun.jvm.hotspot.oops.FieldType$ArrayInfo getArrayInfo();
+}

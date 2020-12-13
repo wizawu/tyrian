@@ -1,0 +1,8 @@
+Compiled from "EncodedKeySpec.java"
+public abstract class java.security.spec.EncodedKeySpec implements java.security.spec.KeySpec {
+  public java.security.spec.EncodedKeySpec(byte[]);
+  protected java.security.spec.EncodedKeySpec(byte[], java.lang.String);
+  public java.lang.String getAlgorithm();
+  public byte[] getEncoded();
+  public abstract java.lang.String getFormat();
+}

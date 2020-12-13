@@ -1,0 +1,8 @@
+Compiled from "IteratorPool.java"
+public final class com.sun.org.apache.xpath.internal.axes.IteratorPool implements java.io.Serializable {
+  static final long serialVersionUID;
+  public com.sun.org.apache.xpath.internal.axes.IteratorPool(com.sun.org.apache.xml.internal.dtm.DTMIterator);
+  public synchronized com.sun.org.apache.xml.internal.dtm.DTMIterator getInstanceOrThrow() throws java.lang.CloneNotSupportedException;
+  public synchronized com.sun.org.apache.xml.internal.dtm.DTMIterator getInstance();
+  public synchronized void freeInstance(com.sun.org.apache.xml.internal.dtm.DTMIterator);
+}

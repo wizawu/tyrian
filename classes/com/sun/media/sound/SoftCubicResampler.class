@@ -1,0 +1,6 @@
+Compiled from "SoftCubicResampler.java"
+public final class com.sun.media.sound.SoftCubicResampler extends com.sun.media.sound.SoftAbstractResampler {
+  public com.sun.media.sound.SoftCubicResampler();
+  public int getPadding();
+  public void interpolate(float[], float[], float, float[], float, float[], int[], int);
+}

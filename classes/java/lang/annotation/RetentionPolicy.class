@@ -1,0 +1,9 @@
+Compiled from "RetentionPolicy.java"
+public final class java.lang.annotation.RetentionPolicy extends java.lang.Enum<java.lang.annotation.RetentionPolicy> {
+  public static final java.lang.annotation.RetentionPolicy SOURCE;
+  public static final java.lang.annotation.RetentionPolicy CLASS;
+  public static final java.lang.annotation.RetentionPolicy RUNTIME;
+  public static java.lang.annotation.RetentionPolicy[] values();
+  public static java.lang.annotation.RetentionPolicy valueOf(java.lang.String);
+  static {};
+}

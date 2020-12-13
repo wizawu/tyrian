@@ -1,0 +1,4 @@
+Compiled from "SerialDataTree.java"
+public interface com.sun.source.doctree.SerialDataTree extends com.sun.source.doctree.BlockTagTree {
+  public abstract java.util.List<? extends com.sun.source.doctree.DocTree> getDescription();
+}

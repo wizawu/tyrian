@@ -1,0 +1,26 @@
+Compiled from "JTextPane.java"
+public class javax.swing.JTextPane extends javax.swing.JEditorPane {
+  public javax.swing.JTextPane();
+  public javax.swing.JTextPane(javax.swing.text.StyledDocument);
+  public java.lang.String getUIClassID();
+  public void setDocument(javax.swing.text.Document);
+  public void setStyledDocument(javax.swing.text.StyledDocument);
+  public javax.swing.text.StyledDocument getStyledDocument();
+  public void replaceSelection(java.lang.String);
+  public void insertComponent(java.awt.Component);
+  public void insertIcon(javax.swing.Icon);
+  public javax.swing.text.Style addStyle(java.lang.String, javax.swing.text.Style);
+  public void removeStyle(java.lang.String);
+  public javax.swing.text.Style getStyle(java.lang.String);
+  public void setLogicalStyle(javax.swing.text.Style);
+  public javax.swing.text.Style getLogicalStyle();
+  public javax.swing.text.AttributeSet getCharacterAttributes();
+  public void setCharacterAttributes(javax.swing.text.AttributeSet, boolean);
+  public javax.swing.text.AttributeSet getParagraphAttributes();
+  public void setParagraphAttributes(javax.swing.text.AttributeSet, boolean);
+  public javax.swing.text.MutableAttributeSet getInputAttributes();
+  protected final javax.swing.text.StyledEditorKit getStyledEditorKit();
+  protected javax.swing.text.EditorKit createDefaultEditorKit();
+  public final void setEditorKit(javax.swing.text.EditorKit);
+  protected java.lang.String paramString();
+}

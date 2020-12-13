@@ -1,0 +1,32 @@
+Compiled from "PerfDataEntry.java"
+public class sun.jvm.hotspot.runtime.PerfDataEntry extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.runtime.PerfDataEntry(sun.jvm.hotspot.debugger.Address);
+  public int entryLength();
+  public int nameOffset();
+  public int vectorLength();
+  public int dataType();
+  public byte flags();
+  public boolean supported();
+  public int dataUnits();
+  public int dataVariability();
+  public int dataOffset();
+  public java.lang.String name();
+  public boolean booleanValue();
+  public char charValue();
+  public byte byteValue();
+  public short shortValue();
+  public int intValue();
+  public long longValue();
+  public float floatValue();
+  public double doubleValue();
+  public boolean[] booleanArrayValue();
+  public char[] charArrayValue();
+  public byte[] byteArrayValue();
+  public short[] shortArrayValue();
+  public int[] intArrayValue();
+  public long[] longArrayValue();
+  public float[] floatArrayValue();
+  public double[] doubleArrayValue();
+  public java.lang.String valueAsString();
+  static {};
+}

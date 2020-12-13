@@ -1,0 +1,11 @@
+Compiled from "ActiveRecordingEvent.java"
+public final class jdk.jfr.events.ActiveRecordingEvent extends jdk.jfr.events.AbstractJDKEvent {
+  public long id;
+  public java.lang.String name;
+  public java.lang.String destination;
+  public long maxAge;
+  public long maxSize;
+  public long recordingStart;
+  public long recordingDuration;
+  public jdk.jfr.events.ActiveRecordingEvent();
+}

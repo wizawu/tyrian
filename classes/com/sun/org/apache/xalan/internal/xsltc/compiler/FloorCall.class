@@ -1,0 +1,5 @@
+Compiled from "FloorCall.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.FloorCall extends com.sun.org.apache.xalan.internal.xsltc.compiler.FunctionCall {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.FloorCall(com.sun.org.apache.xalan.internal.xsltc.compiler.QName, java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.Expression>);
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

@@ -1,0 +1,11 @@
+Compiled from "NewElementHandler.java"
+class com.sun.beans.decoder.NewElementHandler extends com.sun.beans.decoder.ElementHandler {
+  com.sun.beans.decoder.NewElementHandler();
+  public void addAttribute(java.lang.String, java.lang.String);
+  protected final void addArgument(java.lang.Object);
+  protected final java.lang.Object getContextBean();
+  protected final com.sun.beans.decoder.ValueObject getValueObject();
+  com.sun.beans.decoder.ValueObject getValueObject(java.lang.Class<?>, java.lang.Object[]) throws java.lang.Exception;
+  static java.lang.Class<?>[] getArgumentTypes(java.lang.Object[]);
+  static java.lang.Object[] getArguments(java.lang.Object[], java.lang.Class<?>[]);
+}

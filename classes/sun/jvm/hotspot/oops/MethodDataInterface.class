@@ -1,0 +1,7 @@
+Compiled from "MethodDataInterface.java"
+public interface sun.jvm.hotspot.oops.MethodDataInterface<K, M> {
+  public abstract K getKlassAtAddress(sun.jvm.hotspot.debugger.Address);
+  public abstract M getMethodAtAddress(sun.jvm.hotspot.debugger.Address);
+  public abstract void printKlassValueOn(K, java.io.PrintStream);
+  public abstract void printMethodValueOn(M, java.io.PrintStream);
+}

@@ -1,0 +1,20 @@
+Compiled from "GcInfo.java"
+public class com.sun.management.GcInfo implements javax.management.openmbean.CompositeData,javax.management.openmbean.CompositeDataView {
+  public long getId();
+  public long getStartTime();
+  public long getEndTime();
+  public long getDuration();
+  public java.util.Map<java.lang.String, java.lang.management.MemoryUsage> getMemoryUsageBeforeGc();
+  public java.util.Map<java.lang.String, java.lang.management.MemoryUsage> getMemoryUsageAfterGc();
+  public static com.sun.management.GcInfo from(javax.management.openmbean.CompositeData);
+  public boolean containsKey(java.lang.String);
+  public boolean containsValue(java.lang.Object);
+  public boolean equals(java.lang.Object);
+  public java.lang.Object get(java.lang.String);
+  public java.lang.Object[] getAll(java.lang.String[]);
+  public javax.management.openmbean.CompositeType getCompositeType();
+  public int hashCode();
+  public java.lang.String toString();
+  public java.util.Collection<?> values();
+  public javax.management.openmbean.CompositeData toCompositeData(javax.management.openmbean.CompositeType);
+}

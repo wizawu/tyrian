@@ -1,0 +1,8 @@
+Compiled from "NTDomainPrincipal.java"
+public class com.sun.security.auth.NTDomainPrincipal implements java.security.Principal,java.io.Serializable {
+  public com.sun.security.auth.NTDomainPrincipal(java.lang.String);
+  public java.lang.String getName();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

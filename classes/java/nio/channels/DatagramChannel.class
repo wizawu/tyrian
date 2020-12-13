@@ -1,0 +1,25 @@
+Compiled from "DatagramChannel.java"
+public abstract class java.nio.channels.DatagramChannel extends java.nio.channels.spi.AbstractSelectableChannel implements java.nio.channels.ByteChannel,java.nio.channels.ScatteringByteChannel,java.nio.channels.GatheringByteChannel,java.nio.channels.MulticastChannel {
+  protected java.nio.channels.DatagramChannel(java.nio.channels.spi.SelectorProvider);
+  public static java.nio.channels.DatagramChannel open() throws java.io.IOException;
+  public static java.nio.channels.DatagramChannel open(java.net.ProtocolFamily) throws java.io.IOException;
+  public final int validOps();
+  public abstract java.nio.channels.DatagramChannel bind(java.net.SocketAddress) throws java.io.IOException;
+  public abstract <T> java.nio.channels.DatagramChannel setOption(java.net.SocketOption<T>, T) throws java.io.IOException;
+  public abstract java.net.DatagramSocket socket();
+  public abstract boolean isConnected();
+  public abstract java.nio.channels.DatagramChannel connect(java.net.SocketAddress) throws java.io.IOException;
+  public abstract java.nio.channels.DatagramChannel disconnect() throws java.io.IOException;
+  public abstract java.net.SocketAddress getRemoteAddress() throws java.io.IOException;
+  public abstract java.net.SocketAddress receive(java.nio.ByteBuffer) throws java.io.IOException;
+  public abstract int send(java.nio.ByteBuffer, java.net.SocketAddress) throws java.io.IOException;
+  public abstract int read(java.nio.ByteBuffer) throws java.io.IOException;
+  public abstract long read(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  public final long read(java.nio.ByteBuffer[]) throws java.io.IOException;
+  public abstract int write(java.nio.ByteBuffer) throws java.io.IOException;
+  public abstract long write(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  public final long write(java.nio.ByteBuffer[]) throws java.io.IOException;
+  public abstract java.net.SocketAddress getLocalAddress() throws java.io.IOException;
+  public java.nio.channels.NetworkChannel setOption(java.net.SocketOption, java.lang.Object) throws java.io.IOException;
+  public java.nio.channels.NetworkChannel bind(java.net.SocketAddress) throws java.io.IOException;
+}

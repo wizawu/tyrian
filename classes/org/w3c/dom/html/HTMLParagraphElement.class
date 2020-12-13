@@ -1,0 +1,5 @@
+Compiled from "HTMLParagraphElement.java"
+public interface org.w3c.dom.html.HTMLParagraphElement extends org.w3c.dom.html.HTMLElement {
+  public abstract java.lang.String getAlign();
+  public abstract void setAlign(java.lang.String);
+}

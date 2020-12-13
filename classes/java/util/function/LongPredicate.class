@@ -1,0 +1,7 @@
+Compiled from "LongPredicate.java"
+public interface java.util.function.LongPredicate {
+  public abstract boolean test(long);
+  public default java.util.function.LongPredicate and(java.util.function.LongPredicate);
+  public default java.util.function.LongPredicate negate();
+  public default java.util.function.LongPredicate or(java.util.function.LongPredicate);
+}

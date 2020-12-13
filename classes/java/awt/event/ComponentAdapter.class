@@ -1,0 +1,8 @@
+Compiled from "ComponentAdapter.java"
+public abstract class java.awt.event.ComponentAdapter implements java.awt.event.ComponentListener {
+  public java.awt.event.ComponentAdapter();
+  public void componentResized(java.awt.event.ComponentEvent);
+  public void componentMoved(java.awt.event.ComponentEvent);
+  public void componentShown(java.awt.event.ComponentEvent);
+  public void componentHidden(java.awt.event.ComponentEvent);
+}

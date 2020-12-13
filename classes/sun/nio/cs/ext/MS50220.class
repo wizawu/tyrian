@@ -1,0 +1,11 @@
+Compiled from "MS50220.java"
+public class sun.nio.cs.ext.MS50220 extends sun.nio.cs.ext.ISO2022_JP {
+  public sun.nio.cs.ext.MS50220();
+  protected sun.nio.cs.ext.MS50220(java.lang.String, java.lang.String[]);
+  public java.lang.String historicalName();
+  public boolean contains(java.nio.charset.Charset);
+  public java.nio.charset.CharsetDecoder newDecoder();
+  public java.nio.charset.CharsetEncoder newEncoder();
+  protected boolean doSBKANA();
+  static {};
+}

@@ -1,0 +1,13 @@
+Compiled from "XMLSecurityRuntimeException.java"
+public class com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException extends java.lang.RuntimeException {
+  protected java.lang.String msgID;
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException();
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException(java.lang.String);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException(java.lang.String, java.lang.Object[]);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException(java.lang.Exception);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException(java.lang.String, java.lang.Exception);
+  public com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityRuntimeException(java.lang.String, java.lang.Object[], java.lang.Exception);
+  public java.lang.String getMsgID();
+  public java.lang.String toString();
+  public java.lang.Exception getOriginalException();
+}

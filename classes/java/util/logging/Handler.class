@@ -1,0 +1,22 @@
+Compiled from "Handler.java"
+public abstract class java.util.logging.Handler {
+  protected java.util.logging.Handler();
+  java.util.logging.Handler(java.util.logging.Level, java.util.logging.Formatter, java.util.logging.Formatter);
+  public abstract void publish(java.util.logging.LogRecord);
+  public abstract void flush();
+  public abstract void close() throws java.lang.SecurityException;
+  public synchronized void setFormatter(java.util.logging.Formatter) throws java.lang.SecurityException;
+  public java.util.logging.Formatter getFormatter();
+  public synchronized void setEncoding(java.lang.String) throws java.lang.SecurityException, java.io.UnsupportedEncodingException;
+  public java.lang.String getEncoding();
+  public synchronized void setFilter(java.util.logging.Filter) throws java.lang.SecurityException;
+  public java.util.logging.Filter getFilter();
+  public synchronized void setErrorManager(java.util.logging.ErrorManager);
+  public java.util.logging.ErrorManager getErrorManager();
+  protected void reportError(java.lang.String, java.lang.Exception, int);
+  public synchronized void setLevel(java.util.logging.Level) throws java.lang.SecurityException;
+  public java.util.logging.Level getLevel();
+  public boolean isLoggable(java.util.logging.LogRecord);
+  void checkPermission() throws java.lang.SecurityException;
+  static {};
+}

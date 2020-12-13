@@ -1,0 +1,7 @@
+Compiled from "ISO10126Padding.java"
+final class com.sun.crypto.provider.ISO10126Padding implements com.sun.crypto.provider.Padding {
+  com.sun.crypto.provider.ISO10126Padding(int);
+  public void padWithLen(byte[], int, int) throws javax.crypto.ShortBufferException;
+  public int unpad(byte[], int, int);
+  public int padLength(int);
+}

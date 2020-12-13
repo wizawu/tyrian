@@ -1,0 +1,6 @@
+Compiled from "XMLErrorHandler.java"
+public interface com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler {
+  public abstract void warning(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void error(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public abstract void fatalError(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+}

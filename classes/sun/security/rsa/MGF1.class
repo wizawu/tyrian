@@ -1,0 +1,6 @@
+Compiled from "MGF1.java"
+public final class sun.security.rsa.MGF1 {
+  sun.security.rsa.MGF1(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  void generateAndXor(byte[], int, int, int, byte[], int) throws java.lang.RuntimeException;
+  java.lang.String getName();
+}

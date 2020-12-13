@@ -1,0 +1,3 @@
+Compiled from "Krb5CredElement.java"
+interface sun.security.jgss.krb5.Krb5CredElement extends sun.security.jgss.spi.GSSCredentialSpi {
+}

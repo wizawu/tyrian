@@ -1,0 +1,9 @@
+Compiled from "UntrustedChecker.java"
+public final class sun.security.provider.certpath.UntrustedChecker extends java.security.cert.PKIXCertPathChecker {
+  public sun.security.provider.certpath.UntrustedChecker();
+  public void init(boolean) throws java.security.cert.CertPathValidatorException;
+  public boolean isForwardCheckingSupported();
+  public java.util.Set<java.lang.String> getSupportedExtensions();
+  public void check(java.security.cert.Certificate, java.util.Collection<java.lang.String>) throws java.security.cert.CertPathValidatorException;
+  static {};
+}

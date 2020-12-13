@@ -1,0 +1,16 @@
+Compiled from "IPAddressUtil.java"
+public class sun.net.util.IPAddressUtil {
+  public sun.net.util.IPAddressUtil();
+  public static byte[] textToNumericFormatV4(java.lang.String);
+  public static byte[] textToNumericFormatV6(java.lang.String);
+  public static boolean isIPv4LiteralAddress(java.lang.String);
+  public static boolean isIPv6LiteralAddress(java.lang.String);
+  public static byte[] convertFromIPv4MappedAddress(byte[]);
+  public static boolean match(char, long, long);
+  public static int scan(java.lang.String, long, long);
+  public static int scan(java.lang.String, long, long, char[]);
+  public static java.lang.String checkAuthority(java.net.URL);
+  public static java.lang.String checkExternalForm(java.net.URL);
+  public static java.lang.String checkHostString(java.lang.String);
+  static {};
+}

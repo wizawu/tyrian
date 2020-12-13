@@ -1,0 +1,10 @@
+Compiled from "GZIPOutputStream.java"
+public class java.util.zip.GZIPOutputStream extends java.util.zip.DeflaterOutputStream {
+  protected java.util.zip.CRC32 crc;
+  public java.util.zip.GZIPOutputStream(java.io.OutputStream, int) throws java.io.IOException;
+  public java.util.zip.GZIPOutputStream(java.io.OutputStream, int, boolean) throws java.io.IOException;
+  public java.util.zip.GZIPOutputStream(java.io.OutputStream) throws java.io.IOException;
+  public java.util.zip.GZIPOutputStream(java.io.OutputStream, boolean) throws java.io.IOException;
+  public synchronized void write(byte[], int, int) throws java.io.IOException;
+  public void finish() throws java.io.IOException;
+}

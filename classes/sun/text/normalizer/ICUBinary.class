@@ -1,0 +1,12 @@
+Compiled from "ICUBinary.java"
+public final class sun.text.normalizer.ICUBinary {
+  static final boolean $assertionsDisabled;
+  public sun.text.normalizer.ICUBinary();
+  public static java.nio.ByteBuffer getRequiredData(java.lang.String);
+  public static sun.text.normalizer.VersionInfo readHeaderAndDataVersion(java.nio.ByteBuffer, int, sun.text.normalizer.ICUBinary$Authenticate) throws java.io.IOException;
+  public static final byte[] readHeader(java.io.InputStream, byte[], sun.text.normalizer.ICUBinary$Authenticate) throws java.io.IOException;
+  public static int readHeader(java.nio.ByteBuffer, int, sun.text.normalizer.ICUBinary$Authenticate) throws java.io.IOException;
+  public static void skipBytes(java.nio.ByteBuffer, int);
+  public static sun.text.normalizer.VersionInfo getVersionInfoFromCompactInt(int);
+  static {};
+}

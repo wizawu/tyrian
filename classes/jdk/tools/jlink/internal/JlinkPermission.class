@@ -1,0 +1,4 @@
+Compiled from "JlinkPermission.java"
+public final class jdk.tools.jlink.internal.JlinkPermission extends java.security.BasicPermission {
+  public jdk.tools.jlink.internal.JlinkPermission(java.lang.String);
+}

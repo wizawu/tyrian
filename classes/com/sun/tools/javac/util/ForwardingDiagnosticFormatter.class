@@ -1,0 +1,14 @@
+Compiled from "ForwardingDiagnosticFormatter.java"
+public class com.sun.tools.javac.util.ForwardingDiagnosticFormatter<D extends javax.tools.Diagnostic<?>, F extends com.sun.tools.javac.api.DiagnosticFormatter<D>> implements com.sun.tools.javac.api.DiagnosticFormatter<D> {
+  protected F formatter;
+  protected com.sun.tools.javac.util.ForwardingDiagnosticFormatter$ForwardingConfiguration configuration;
+  public com.sun.tools.javac.util.ForwardingDiagnosticFormatter(F);
+  public F getDelegatedFormatter();
+  public com.sun.tools.javac.api.DiagnosticFormatter$Configuration getConfiguration();
+  public boolean displaySource(D);
+  public java.lang.String format(D, java.util.Locale);
+  public java.lang.String formatKind(D, java.util.Locale);
+  public java.lang.String formatMessage(D, java.util.Locale);
+  public java.lang.String formatPosition(D, com.sun.tools.javac.api.DiagnosticFormatter$PositionKind, java.util.Locale);
+  public java.lang.String formatSource(D, boolean, java.util.Locale);
+}

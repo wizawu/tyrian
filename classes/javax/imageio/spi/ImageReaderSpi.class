@@ -1,0 +1,15 @@
+Compiled from "ImageReaderSpi.java"
+public abstract class javax.imageio.spi.ImageReaderSpi extends javax.imageio.spi.ImageReaderWriterSpi {
+  public static final java.lang.Class<?>[] STANDARD_INPUT_TYPE;
+  protected java.lang.Class<?>[] inputTypes;
+  protected java.lang.String[] writerSpiNames;
+  protected javax.imageio.spi.ImageReaderSpi();
+  public javax.imageio.spi.ImageReaderSpi(java.lang.String, java.lang.String, java.lang.String[], java.lang.String[], java.lang.String[], java.lang.String, java.lang.Class<?>[], java.lang.String[], boolean, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[], boolean, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[]);
+  public java.lang.Class<?>[] getInputTypes();
+  public abstract boolean canDecodeInput(java.lang.Object) throws java.io.IOException;
+  public javax.imageio.ImageReader createReaderInstance() throws java.io.IOException;
+  public abstract javax.imageio.ImageReader createReaderInstance(java.lang.Object) throws java.io.IOException;
+  public boolean isOwnReader(javax.imageio.ImageReader);
+  public java.lang.String[] getImageWriterSpiNames();
+  static {};
+}

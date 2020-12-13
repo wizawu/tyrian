@@ -1,0 +1,11 @@
+Compiled from "MonitoredHostProvider.java"
+public class sun.jvmstat.perfdata.monitor.protocol.local.MonitoredHostProvider extends sun.jvmstat.monitor.MonitoredHost {
+  public sun.jvmstat.perfdata.monitor.protocol.local.MonitoredHostProvider(sun.jvmstat.monitor.HostIdentifier);
+  public sun.jvmstat.monitor.MonitoredVm getMonitoredVm(sun.jvmstat.monitor.VmIdentifier) throws sun.jvmstat.monitor.MonitorException;
+  public sun.jvmstat.monitor.MonitoredVm getMonitoredVm(sun.jvmstat.monitor.VmIdentifier, int) throws sun.jvmstat.monitor.MonitorException;
+  public void detach(sun.jvmstat.monitor.MonitoredVm);
+  public void addHostListener(sun.jvmstat.monitor.event.HostListener);
+  public void removeHostListener(sun.jvmstat.monitor.event.HostListener);
+  public void setInterval(int);
+  public java.util.Set<java.lang.Integer> activeVms();
+}

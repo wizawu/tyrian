@@ -1,0 +1,36 @@
+Compiled from "DRendererContext.java"
+final class sun.java2d.marlin.DRendererContext extends sun.java2d.ReentrantContext implements sun.java2d.marlin.IRendererContext {
+  boolean dirty;
+  final double[] double6;
+  final sun.java2d.marlin.DCurve curve;
+  final sun.java2d.marlin.DMarlinRenderingEngine$NormalizingPathIterator nPCPathIterator;
+  final sun.java2d.marlin.DMarlinRenderingEngine$NormalizingPathIterator nPQPathIterator;
+  final sun.java2d.marlin.DTransformingPathConsumer2D transformerPC2D;
+  final sun.java2d.marlin.DRenderer renderer;
+  final sun.java2d.marlin.DStroker stroker;
+  final sun.java2d.marlin.DCollinearSimplifier simplifier;
+  final sun.java2d.marlin.DPathSimplifier pathSimplifier;
+  final sun.java2d.marlin.DDasher dasher;
+  final sun.java2d.marlin.MarlinTileGenerator ptg;
+  final sun.java2d.marlin.MarlinCache cache;
+  int stroking;
+  boolean doClip;
+  boolean closedPath;
+  final double[] clipRect;
+  double clipInvScale;
+  final sun.java2d.marlin.DTransformingPathConsumer2D$CurveBasicMonotonizer monotonizer;
+  final sun.java2d.marlin.DTransformingPathConsumer2D$CurveClipSplitter curveClipSplitter;
+  final sun.java2d.marlin.RendererStats stats;
+  final sun.java2d.marlin.DRendererContext$PathConsumer2DAdapter p2dAdapter;
+  static sun.java2d.marlin.DRendererContext createContext();
+  sun.java2d.marlin.DRendererContext(java.lang.String);
+  void dispose();
+  java.awt.geom.Path2D$Double getPath2D();
+  public sun.java2d.marlin.RendererStats stats();
+  public sun.java2d.marlin.OffHeapArray newOffHeapArray(long);
+  public sun.java2d.marlin.IntArrayCache$Reference newCleanIntArrayRef(int);
+  sun.java2d.marlin.IntArrayCache$Reference newDirtyIntArrayRef(int);
+  sun.java2d.marlin.DoubleArrayCache$Reference newDirtyDoubleArrayRef(int);
+  sun.java2d.marlin.ByteArrayCache$Reference newDirtyByteArrayRef(int);
+  static {};
+}

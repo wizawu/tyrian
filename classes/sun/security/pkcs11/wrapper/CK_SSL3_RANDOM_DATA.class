@@ -1,0 +1,7 @@
+Compiled from "CK_SSL3_RANDOM_DATA.java"
+public class sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA {
+  public byte[] pClientRandom;
+  public byte[] pServerRandom;
+  public sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA(byte[], byte[]);
+  public java.lang.String toString();
+}

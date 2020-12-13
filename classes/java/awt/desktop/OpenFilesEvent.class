@@ -1,0 +1,6 @@
+Compiled from "OpenFilesEvent.java"
+public final class java.awt.desktop.OpenFilesEvent extends java.awt.desktop.FilesEvent {
+  final java.lang.String searchTerm;
+  public java.awt.desktop.OpenFilesEvent(java.util.List<java.io.File>, java.lang.String);
+  public java.lang.String getSearchTerm();
+}

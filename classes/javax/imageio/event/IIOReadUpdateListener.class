@@ -1,0 +1,9 @@
+Compiled from "IIOReadUpdateListener.java"
+public interface javax.imageio.event.IIOReadUpdateListener extends java.util.EventListener {
+  public abstract void passStarted(javax.imageio.ImageReader, java.awt.image.BufferedImage, int, int, int, int, int, int, int, int[]);
+  public abstract void imageUpdate(javax.imageio.ImageReader, java.awt.image.BufferedImage, int, int, int, int, int, int, int[]);
+  public abstract void passComplete(javax.imageio.ImageReader, java.awt.image.BufferedImage);
+  public abstract void thumbnailPassStarted(javax.imageio.ImageReader, java.awt.image.BufferedImage, int, int, int, int, int, int, int, int[]);
+  public abstract void thumbnailUpdate(javax.imageio.ImageReader, java.awt.image.BufferedImage, int, int, int, int, int, int, int[]);
+  public abstract void thumbnailPassComplete(javax.imageio.ImageReader, java.awt.image.BufferedImage);
+}

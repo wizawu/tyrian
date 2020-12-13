@@ -1,0 +1,40 @@
+Compiled from "ComponentSampleModel.java"
+public class java.awt.image.ComponentSampleModel extends java.awt.image.SampleModel {
+  protected int[] bandOffsets;
+  protected int[] bankIndices;
+  protected int numBands;
+  protected int numBanks;
+  protected int scanlineStride;
+  protected int pixelStride;
+  public java.awt.image.ComponentSampleModel(int, int, int, int, int, int[]);
+  public java.awt.image.ComponentSampleModel(int, int, int, int, int, int[], int[]);
+  int[] orderBands(int[], int);
+  public java.awt.image.SampleModel createCompatibleSampleModel(int, int);
+  public java.awt.image.SampleModel createSubsetSampleModel(int[]);
+  public java.awt.image.DataBuffer createDataBuffer();
+  public int getOffset(int, int);
+  public int getOffset(int, int, int);
+  public final int[] getSampleSize();
+  public final int getSampleSize(int);
+  public final int[] getBankIndices();
+  public final int[] getBandOffsets();
+  public final int getScanlineStride();
+  public final int getPixelStride();
+  public final int getNumDataElements();
+  public java.lang.Object getDataElements(int, int, java.lang.Object, java.awt.image.DataBuffer);
+  public int[] getPixel(int, int, int[], java.awt.image.DataBuffer);
+  public int[] getPixels(int, int, int, int, int[], java.awt.image.DataBuffer);
+  public int getSample(int, int, int, java.awt.image.DataBuffer);
+  public float getSampleFloat(int, int, int, java.awt.image.DataBuffer);
+  public double getSampleDouble(int, int, int, java.awt.image.DataBuffer);
+  public int[] getSamples(int, int, int, int, int, int[], java.awt.image.DataBuffer);
+  public void setDataElements(int, int, java.lang.Object, java.awt.image.DataBuffer);
+  public void setPixel(int, int, int[], java.awt.image.DataBuffer);
+  public void setPixels(int, int, int, int, int[], java.awt.image.DataBuffer);
+  public void setSample(int, int, int, int, java.awt.image.DataBuffer);
+  public void setSample(int, int, int, float, java.awt.image.DataBuffer);
+  public void setSample(int, int, int, double, java.awt.image.DataBuffer);
+  public void setSamples(int, int, int, int, int, int[], java.awt.image.DataBuffer);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

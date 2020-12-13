@@ -1,0 +1,22 @@
+Compiled from "SwingConstants.java"
+public interface javax.swing.SwingConstants {
+  public static final int CENTER;
+  public static final int TOP;
+  public static final int LEFT;
+  public static final int BOTTOM;
+  public static final int RIGHT;
+  public static final int NORTH;
+  public static final int NORTH_EAST;
+  public static final int EAST;
+  public static final int SOUTH_EAST;
+  public static final int SOUTH;
+  public static final int SOUTH_WEST;
+  public static final int WEST;
+  public static final int NORTH_WEST;
+  public static final int HORIZONTAL;
+  public static final int VERTICAL;
+  public static final int LEADING;
+  public static final int TRAILING;
+  public static final int NEXT;
+  public static final int PREVIOUS;
+}

@@ -1,0 +1,6 @@
+Compiled from "Label.java"
+class jdk.internal.reflect.Label {
+  public jdk.internal.reflect.Label();
+  void add(jdk.internal.reflect.ClassFileAssembler, short, short, int);
+  public void bind();
+}

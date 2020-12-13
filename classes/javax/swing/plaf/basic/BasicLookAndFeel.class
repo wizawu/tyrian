@@ -1,0 +1,21 @@
+Compiled from "BasicLookAndFeel.java"
+public abstract class javax.swing.plaf.basic.BasicLookAndFeel extends javax.swing.LookAndFeel implements java.io.Serializable {
+  static boolean needsEventHelper;
+  javax.swing.plaf.basic.BasicLookAndFeel$AWTEventHelper invocator;
+  public javax.swing.plaf.basic.BasicLookAndFeel();
+  public javax.swing.UIDefaults getDefaults();
+  public void initialize();
+  void installAWTEventListener();
+  public void uninitialize();
+  protected void initClassDefaults(javax.swing.UIDefaults);
+  protected void initSystemColorDefaults(javax.swing.UIDefaults);
+  protected void loadSystemColors(javax.swing.UIDefaults, java.lang.String[], boolean);
+  protected void initComponentDefaults(javax.swing.UIDefaults);
+  static int getFocusAcceleratorKeyMask();
+  static java.lang.Object getUIOfType(javax.swing.plaf.ComponentUI, java.lang.Class<?>);
+  protected javax.swing.ActionMap getAudioActionMap();
+  protected javax.swing.Action createAudioAction(java.lang.Object);
+  protected void playSound(javax.swing.Action);
+  static void installAudioActionMap(javax.swing.ActionMap);
+  static void playSound(javax.swing.JComponent, java.lang.Object);
+}

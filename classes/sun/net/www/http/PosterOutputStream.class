@@ -1,0 +1,8 @@
+Compiled from "PosterOutputStream.java"
+public class sun.net.www.http.PosterOutputStream extends java.io.ByteArrayOutputStream {
+  public sun.net.www.http.PosterOutputStream();
+  public synchronized void write(int);
+  public synchronized void write(byte[], int, int);
+  public synchronized void reset();
+  public synchronized void close() throws java.io.IOException;
+}

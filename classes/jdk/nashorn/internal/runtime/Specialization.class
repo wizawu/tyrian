@@ -1,0 +1,10 @@
+Compiled from "Specialization.java"
+public final class jdk.nashorn.internal.runtime.Specialization {
+  public jdk.nashorn.internal.runtime.Specialization(java.lang.invoke.MethodHandle);
+  public jdk.nashorn.internal.runtime.Specialization(java.lang.invoke.MethodHandle, boolean, boolean);
+  public jdk.nashorn.internal.runtime.Specialization(java.lang.invoke.MethodHandle, java.lang.Class<? extends jdk.nashorn.internal.objects.annotations.SpecializedFunction$LinkLogic>, boolean, boolean);
+  public java.lang.invoke.MethodHandle getMethodHandle();
+  public java.lang.Class<? extends jdk.nashorn.internal.objects.annotations.SpecializedFunction$LinkLogic> getLinkLogicClass();
+  public boolean isOptimistic();
+  public boolean convertsNumericArgs();
+}

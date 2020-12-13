@@ -1,0 +1,19 @@
+Compiled from "TypeKindVisitor6.java"
+public class javax.lang.model.util.TypeKindVisitor6<R, P> extends javax.lang.model.util.SimpleTypeVisitor6<R, P> {
+  protected javax.lang.model.util.TypeKindVisitor6();
+  protected javax.lang.model.util.TypeKindVisitor6(R);
+  public R visitPrimitive(javax.lang.model.type.PrimitiveType, P);
+  public R visitPrimitiveAsBoolean(javax.lang.model.type.PrimitiveType, P);
+  public R visitPrimitiveAsByte(javax.lang.model.type.PrimitiveType, P);
+  public R visitPrimitiveAsShort(javax.lang.model.type.PrimitiveType, P);
+  public R visitPrimitiveAsInt(javax.lang.model.type.PrimitiveType, P);
+  public R visitPrimitiveAsLong(javax.lang.model.type.PrimitiveType, P);
+  public R visitPrimitiveAsChar(javax.lang.model.type.PrimitiveType, P);
+  public R visitPrimitiveAsFloat(javax.lang.model.type.PrimitiveType, P);
+  public R visitPrimitiveAsDouble(javax.lang.model.type.PrimitiveType, P);
+  public R visitNoType(javax.lang.model.type.NoType, P);
+  public R visitNoTypeAsVoid(javax.lang.model.type.NoType, P);
+  public R visitNoTypeAsPackage(javax.lang.model.type.NoType, P);
+  public R visitNoTypeAsModule(javax.lang.model.type.NoType, P);
+  public R visitNoTypeAsNone(javax.lang.model.type.NoType, P);
+}

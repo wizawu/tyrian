@@ -1,0 +1,12 @@
+Compiled from "HeapDumper.java"
+public class sun.jvm.hotspot.tools.HeapDumper extends sun.jvm.hotspot.tools.Tool {
+  public sun.jvm.hotspot.tools.HeapDumper();
+  public sun.jvm.hotspot.tools.HeapDumper(java.lang.String);
+  public sun.jvm.hotspot.tools.HeapDumper(java.lang.String, sun.jvm.hotspot.debugger.JVMDebugger);
+  public java.lang.String getName();
+  protected void printFlagsUsage();
+  public void run();
+  public static void main(java.lang.String[]);
+  public void runWithArgs(java.lang.String...);
+  static {};
+}

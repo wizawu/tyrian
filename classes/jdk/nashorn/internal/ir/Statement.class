@@ -1,0 +1,10 @@
+Compiled from "Statement.java"
+public abstract class jdk.nashorn.internal.ir.Statement extends jdk.nashorn.internal.ir.Node implements jdk.nashorn.internal.ir.Terminal {
+  public jdk.nashorn.internal.ir.Statement(int, long, int);
+  protected jdk.nashorn.internal.ir.Statement(int, long, int, int);
+  protected jdk.nashorn.internal.ir.Statement(jdk.nashorn.internal.ir.Statement);
+  public int getLineNumber();
+  public boolean isTerminal();
+  public boolean hasGoto();
+  public final boolean hasTerminalFlags();
+}

@@ -1,0 +1,8 @@
+Compiled from "JavadocTaskImpl.java"
+public class jdk.javadoc.internal.api.JavadocTaskImpl implements javax.tools.DocumentationTool$DocumentationTask {
+  public jdk.javadoc.internal.api.JavadocTaskImpl(com.sun.tools.javac.util.Context, java.lang.Class<?>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<? extends javax.tools.JavaFileObject>);
+  public void setLocale(java.util.Locale);
+  public void addModules(java.lang.Iterable<java.lang.String>);
+  public java.lang.Boolean call();
+  public java.lang.Object call() throws java.lang.Exception;
+}

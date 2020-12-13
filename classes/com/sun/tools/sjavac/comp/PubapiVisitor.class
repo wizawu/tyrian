@@ -1,0 +1,11 @@
+Compiled from "PubapiVisitor.java"
+public class com.sun.tools.sjavac.comp.PubapiVisitor extends javax.lang.model.util.ElementScanner9<java.lang.Void, java.lang.Void> {
+  public com.sun.tools.sjavac.comp.PubapiVisitor();
+  public java.lang.Void visitType(javax.lang.model.element.TypeElement, java.lang.Void);
+  public java.lang.Void visitVariable(javax.lang.model.element.VariableElement, java.lang.Void);
+  public java.lang.Void visitExecutable(javax.lang.model.element.ExecutableElement, java.lang.Void);
+  public com.sun.tools.sjavac.pubapi.PubApi getCollectedPubApi();
+  public java.lang.Object visitVariable(javax.lang.model.element.VariableElement, java.lang.Object);
+  public java.lang.Object visitExecutable(javax.lang.model.element.ExecutableElement, java.lang.Object);
+  public java.lang.Object visitType(javax.lang.model.element.TypeElement, java.lang.Object);
+}

@@ -1,0 +1,5 @@
+Compiled from "MergeSort.java"
+final class sun.java2d.marlin.MergeSort {
+  public static final int INSERTION_SORT_THRESHOLD;
+  static void mergeSortNoCopy(int[], int[], int[], int[], int, int);
+}

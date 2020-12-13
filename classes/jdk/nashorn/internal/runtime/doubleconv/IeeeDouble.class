@@ -1,0 +1,31 @@
+Compiled from "IeeeDouble.java"
+class jdk.nashorn.internal.runtime.doubleconv.IeeeDouble {
+  static final long kSignMask;
+  static final long kExponentMask;
+  static final long kSignificandMask;
+  static final long kHiddenBit;
+  static final int kPhysicalSignificandSize;
+  static final int kSignificandSize;
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.runtime.doubleconv.IeeeDouble();
+  static long doubleToLong(double);
+  static double longToDouble(long);
+  static jdk.nashorn.internal.runtime.doubleconv.DiyFp asDiyFp(long);
+  static jdk.nashorn.internal.runtime.doubleconv.DiyFp asNormalizedDiyFp(long);
+  static double nextDouble(long);
+  static double previousDouble(long);
+  static int exponent(long);
+  static long significand(long);
+  static boolean isDenormal(long);
+  static boolean isSpecial(long);
+  static boolean isNaN(long);
+  static boolean isInfinite(long);
+  static int sign(long);
+  static void normalizedBoundaries(long, jdk.nashorn.internal.runtime.doubleconv.DiyFp, jdk.nashorn.internal.runtime.doubleconv.DiyFp);
+  static boolean lowerBoundaryIsCloser(long);
+  static double value(long);
+  static int significandSizeForOrderOfMagnitude(int);
+  static double Infinity();
+  static double NaN();
+  static {};
+}

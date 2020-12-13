@@ -1,0 +1,15 @@
+Compiled from "UnixPrintJob.java"
+public class sun.print.UnixPrintJob implements javax.print.CancelablePrintJob {
+  sun.print.UnixPrintJob(javax.print.PrintService);
+  public javax.print.PrintService getPrintService();
+  public javax.print.attribute.PrintJobAttributeSet getAttributes();
+  public void addPrintJobListener(javax.print.event.PrintJobListener);
+  public void removePrintJobListener(javax.print.event.PrintJobListener);
+  public void addPrintJobAttributeListener(javax.print.event.PrintJobAttributeListener, javax.print.attribute.PrintJobAttributeSet);
+  public void removePrintJobAttributeListener(javax.print.event.PrintJobAttributeListener);
+  public void print(javax.print.Doc, javax.print.attribute.PrintRequestAttributeSet) throws javax.print.PrintException;
+  public void printableJob(java.awt.print.Printable) throws javax.print.PrintException;
+  public void pageableJob(java.awt.print.Pageable) throws javax.print.PrintException;
+  public void cancel() throws javax.print.PrintException;
+  static {};
+}

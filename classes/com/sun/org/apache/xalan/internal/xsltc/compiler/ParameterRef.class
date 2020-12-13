@@ -1,0 +1,7 @@
+Compiled from "ParameterRef.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.ParameterRef extends com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.QName _name;
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.ParameterRef(com.sun.org.apache.xalan.internal.xsltc.compiler.Param);
+  public java.lang.String toString();
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

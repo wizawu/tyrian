@@ -1,0 +1,22 @@
+Compiled from "UCharacter.java"
+public final class sun.text.normalizer.UCharacter {
+  public static final int MIN_VALUE;
+  public static final int MAX_VALUE;
+  public static final byte NON_SPACING_MARK;
+  public static final byte ENCLOSING_MARK;
+  public static final byte COMBINING_SPACING_MARK;
+  public static final byte CHAR_CATEGORY_COUNT;
+  public static final int RIGHT_TO_LEFT;
+  public static final int RIGHT_TO_LEFT_ARABIC;
+  public static int digit(int, int);
+  public static int digit(int);
+  public static int getType(int);
+  public static int getDirection(int);
+  public static int getMirror(int);
+  public static int getBidiPairedBracket(int);
+  public static int getCombiningClass(int);
+  public static sun.text.normalizer.VersionInfo getUnicodeVersion();
+  public static int getCodePoint(char, char);
+  public static sun.text.normalizer.VersionInfo getAge(int);
+  public static int getIntPropertyValue(int, int);
+}

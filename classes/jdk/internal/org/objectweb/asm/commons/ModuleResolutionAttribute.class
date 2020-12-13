@@ -1,0 +1,12 @@
+Compiled from "ModuleResolutionAttribute.java"
+public final class jdk.internal.org.objectweb.asm.commons.ModuleResolutionAttribute extends jdk.internal.org.objectweb.asm.Attribute {
+  public static final int RESOLUTION_DO_NOT_RESOLVE_BY_DEFAULT;
+  public static final int RESOLUTION_WARN_DEPRECATED;
+  public static final int RESOLUTION_WARN_DEPRECATED_FOR_REMOVAL;
+  public static final int RESOLUTION_WARN_INCUBATING;
+  public int resolution;
+  public jdk.internal.org.objectweb.asm.commons.ModuleResolutionAttribute(int);
+  public jdk.internal.org.objectweb.asm.commons.ModuleResolutionAttribute();
+  protected jdk.internal.org.objectweb.asm.Attribute read(jdk.internal.org.objectweb.asm.ClassReader, int, int, char[], int, jdk.internal.org.objectweb.asm.Label[]);
+  protected jdk.internal.org.objectweb.asm.ByteVector write(jdk.internal.org.objectweb.asm.ClassWriter, byte[], int, int, int);
+}

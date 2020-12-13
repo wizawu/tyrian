@@ -1,0 +1,5 @@
+Compiled from "BlowfishConstants.java"
+interface com.sun.crypto.provider.BlowfishConstants {
+  public static final int BLOWFISH_BLOCK_SIZE;
+  public static final int BLOWFISH_MAX_KEYSIZE;
+}

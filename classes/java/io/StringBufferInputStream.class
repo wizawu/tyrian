@@ -1,0 +1,12 @@
+Compiled from "StringBufferInputStream.java"
+public class java.io.StringBufferInputStream extends java.io.InputStream {
+  protected java.lang.String buffer;
+  protected int pos;
+  protected int count;
+  public java.io.StringBufferInputStream(java.lang.String);
+  public synchronized int read();
+  public synchronized int read(byte[], int, int);
+  public synchronized long skip(long);
+  public synchronized int available();
+  public synchronized void reset();
+}

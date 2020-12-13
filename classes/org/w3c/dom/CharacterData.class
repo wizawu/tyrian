@@ -1,0 +1,11 @@
+Compiled from "CharacterData.java"
+public interface org.w3c.dom.CharacterData extends org.w3c.dom.Node {
+  public abstract java.lang.String getData() throws org.w3c.dom.DOMException;
+  public abstract void setData(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract int getLength();
+  public abstract java.lang.String substringData(int, int) throws org.w3c.dom.DOMException;
+  public abstract void appendData(java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract void insertData(int, java.lang.String) throws org.w3c.dom.DOMException;
+  public abstract void deleteData(int, int) throws org.w3c.dom.DOMException;
+  public abstract void replaceData(int, int, java.lang.String) throws org.w3c.dom.DOMException;
+}

@@ -1,0 +1,4 @@
+Compiled from "FunctionCall.java"
+public interface jdk.nashorn.internal.ir.FunctionCall {
+  public abstract boolean isFunction();
+}

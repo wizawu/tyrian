@@ -1,0 +1,12 @@
+Compiled from "RET.java"
+public class com.sun.org.apache.bcel.internal.generic.RET extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.IndexedInstruction,com.sun.org.apache.bcel.internal.generic.TypedInstruction {
+  com.sun.org.apache.bcel.internal.generic.RET();
+  public com.sun.org.apache.bcel.internal.generic.RET(int);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public final int getIndex();
+  public final void setIndex(int);
+  public java.lang.String toString(boolean);
+  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

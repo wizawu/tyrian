@@ -1,0 +1,4 @@
+Compiled from "UnaryOperator.java"
+public interface java.util.function.UnaryOperator<T> extends java.util.function.Function<T, T> {
+  public static <T> java.util.function.UnaryOperator<T> identity();
+}

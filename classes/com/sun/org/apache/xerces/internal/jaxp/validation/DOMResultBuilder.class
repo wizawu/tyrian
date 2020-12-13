@@ -1,0 +1,30 @@
+Compiled from "DOMResultBuilder.java"
+final class com.sun.org.apache.xerces.internal.jaxp.validation.DOMResultBuilder implements com.sun.org.apache.xerces.internal.jaxp.validation.DOMDocumentHandler {
+  public com.sun.org.apache.xerces.internal.jaxp.validation.DOMResultBuilder();
+  public void setDOMResult(javax.xml.transform.dom.DOMResult);
+  public void doctypeDecl(org.w3c.dom.DocumentType) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void characters(org.w3c.dom.Text) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void cdata(org.w3c.dom.CDATASection) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void comment(org.w3c.dom.Comment) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void processingInstruction(org.w3c.dom.ProcessingInstruction) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void setIgnoringCharacters(boolean);
+  public void startDocument(com.sun.org.apache.xerces.internal.xni.XMLLocator, java.lang.String, com.sun.org.apache.xerces.internal.xni.NamespaceContext, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void xmlDecl(java.lang.String, java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void doctypeDecl(java.lang.String, java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void comment(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void processingInstruction(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void emptyElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startGeneralEntity(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void textDecl(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endGeneralEntity(java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void characters(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void ignorableWhitespace(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endDocument(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void setDocumentSource(com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource);
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource getDocumentSource();
+  static {};
+}

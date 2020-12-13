@@ -1,0 +1,40 @@
+Compiled from "JLayer.java"
+public final class javax.swing.JLayer<V extends java.awt.Component> extends javax.swing.JComponent implements javax.swing.Scrollable, java.beans.PropertyChangeListener, javax.accessibility.Accessible {
+  public javax.swing.JLayer();
+  public javax.swing.JLayer(V);
+  public javax.swing.JLayer(V, javax.swing.plaf.LayerUI<V>);
+  public V getView();
+  public void setView(V);
+  public void setUI(javax.swing.plaf.LayerUI<? super V>);
+  public javax.swing.plaf.LayerUI<? super V> getUI();
+  public javax.swing.JPanel getGlassPane();
+  public void setGlassPane(javax.swing.JPanel);
+  public javax.swing.JPanel createGlassPane();
+  public void setLayout(java.awt.LayoutManager);
+  public void setBorder(javax.swing.border.Border);
+  public javax.swing.border.Border getBorder();
+  protected void addImpl(java.awt.Component, java.lang.Object, int);
+  public void remove(java.awt.Component);
+  public void removeAll();
+  protected boolean isPaintingOrigin();
+  public void paintImmediately(int, int, int, int);
+  public boolean imageUpdate(java.awt.Image, int, int, int, int, int);
+  public void paint(java.awt.Graphics);
+  protected void paintComponent(java.awt.Graphics);
+  public boolean isOptimizedDrawingEnabled();
+  public void propertyChange(java.beans.PropertyChangeEvent);
+  public void setLayerEventMask(long);
+  public long getLayerEventMask();
+  public void updateUI();
+  public java.awt.Dimension getPreferredScrollableViewportSize();
+  public int getScrollableBlockIncrement(java.awt.Rectangle, int, int);
+  public boolean getScrollableTracksViewportHeight();
+  public boolean getScrollableTracksViewportWidth();
+  public int getScrollableUnitIncrement(java.awt.Rectangle, int, int);
+  public void addNotify();
+  public void removeNotify();
+  public void doLayout();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+  public javax.swing.plaf.ComponentUI getUI();
+  static {};
+}

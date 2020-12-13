@@ -1,0 +1,28 @@
+Compiled from "InputRecord.java"
+abstract class sun.security.ssl.InputRecord implements sun.security.ssl.Record,java.io.Closeable {
+  sun.security.ssl.SSLCipher$SSLReadCipher readCipher;
+  sun.security.ssl.TransportContext tc;
+  final sun.security.ssl.HandshakeHash handshakeHash;
+  boolean isClosed;
+  sun.security.ssl.ProtocolVersion helloVersion;
+  int fragmentSize;
+  sun.security.ssl.InputRecord(sun.security.ssl.HandshakeHash, sun.security.ssl.SSLCipher$SSLReadCipher);
+  void setHelloVersion(sun.security.ssl.ProtocolVersion);
+  boolean seqNumIsHuge();
+  boolean isEmpty();
+  void expectingFinishFlight();
+  void finishHandshake();
+  public synchronized void close() throws java.io.IOException;
+  synchronized boolean isClosed();
+  void changeReadCiphers(sun.security.ssl.SSLCipher$SSLReadCipher);
+  void changeFragmentSize(int);
+  int bytesInCompletePacket(java.nio.ByteBuffer[], int, int) throws java.io.IOException;
+  int bytesInCompletePacket() throws java.io.IOException;
+  void setReceiverStream(java.io.InputStream);
+  sun.security.ssl.Plaintext acquirePlaintext() throws java.io.IOException, javax.crypto.BadPaddingException;
+  abstract sun.security.ssl.Plaintext[] decode(java.nio.ByteBuffer[], int, int) throws java.io.IOException, javax.crypto.BadPaddingException;
+  void setDeliverStream(java.io.OutputStream);
+  int estimateFragmentSize(int);
+  static java.nio.ByteBuffer convertToClientHello(java.nio.ByteBuffer);
+  static java.nio.ByteBuffer extract(java.nio.ByteBuffer[], int, int, int);
+}

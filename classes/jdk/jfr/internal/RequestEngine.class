@@ -1,0 +1,12 @@
+Compiled from "RequestEngine.java"
+public final class jdk.jfr.internal.RequestEngine {
+  public jdk.jfr.internal.RequestEngine();
+  public static void addHook(java.security.AccessControlContext, jdk.jfr.internal.PlatformEventType, java.lang.Runnable);
+  public static void addTrustedJDKHook(java.lang.Class<? extends jdk.jfr.Event>, java.lang.Runnable);
+  public static boolean removeHook(java.lang.Runnable);
+  static void addHooks(java.util.List<jdk.jfr.internal.RequestEngine$RequestHook>);
+  static void doChunkEnd();
+  static void doChunkBegin();
+  static long doPeriodic();
+  static {};
+}

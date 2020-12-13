@@ -1,0 +1,6 @@
+Compiled from "WhiteBox.java"
+public final class jdk.jfr.internal.test.WhiteBox {
+  public jdk.jfr.internal.test.WhiteBox();
+  public static void setWriteAllObjectSamples(boolean);
+  public static boolean getWriteAllObjectSamples();
+}

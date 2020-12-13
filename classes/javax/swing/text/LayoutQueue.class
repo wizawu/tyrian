@@ -1,0 +1,9 @@
+Compiled from "LayoutQueue.java"
+public class javax.swing.text.LayoutQueue {
+  public javax.swing.text.LayoutQueue();
+  public static javax.swing.text.LayoutQueue getDefaultQueue();
+  public static void setDefaultQueue(javax.swing.text.LayoutQueue);
+  public synchronized void addTask(java.lang.Runnable);
+  protected synchronized java.lang.Runnable waitForWork();
+  static {};
+}

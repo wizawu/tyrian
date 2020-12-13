@@ -1,0 +1,40 @@
+Compiled from "AtomicInteger.java"
+public class java.util.concurrent.atomic.AtomicInteger extends java.lang.Number implements java.io.Serializable {
+  public java.util.concurrent.atomic.AtomicInteger(int);
+  public java.util.concurrent.atomic.AtomicInteger();
+  public final int get();
+  public final void set(int);
+  public final void lazySet(int);
+  public final int getAndSet(int);
+  public final boolean compareAndSet(int, int);
+  public final boolean weakCompareAndSet(int, int);
+  public final boolean weakCompareAndSetPlain(int, int);
+  public final int getAndIncrement();
+  public final int getAndDecrement();
+  public final int getAndAdd(int);
+  public final int incrementAndGet();
+  public final int decrementAndGet();
+  public final int addAndGet(int);
+  public final int getAndUpdate(java.util.function.IntUnaryOperator);
+  public final int updateAndGet(java.util.function.IntUnaryOperator);
+  public final int getAndAccumulate(int, java.util.function.IntBinaryOperator);
+  public final int accumulateAndGet(int, java.util.function.IntBinaryOperator);
+  public java.lang.String toString();
+  public int intValue();
+  public long longValue();
+  public float floatValue();
+  public double doubleValue();
+  public final int getPlain();
+  public final void setPlain(int);
+  public final int getOpaque();
+  public final void setOpaque(int);
+  public final int getAcquire();
+  public final void setRelease(int);
+  public final int compareAndExchange(int, int);
+  public final int compareAndExchangeAcquire(int, int);
+  public final int compareAndExchangeRelease(int, int);
+  public final boolean weakCompareAndSetVolatile(int, int);
+  public final boolean weakCompareAndSetAcquire(int, int);
+  public final boolean weakCompareAndSetRelease(int, int);
+  static {};
+}

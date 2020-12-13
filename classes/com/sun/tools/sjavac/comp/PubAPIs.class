@@ -1,0 +1,10 @@
+Compiled from "PubAPIs.java"
+public class com.sun.tools.sjavac.comp.PubAPIs {
+  protected static final com.sun.tools.javac.util.Context$Key<com.sun.tools.sjavac.comp.PubAPIs> pubApisKey;
+  protected com.sun.tools.javac.util.Log log;
+  protected java.util.Map<com.sun.tools.javac.code.Symbol$ClassSymbol, com.sun.tools.sjavac.pubapi.PubApi> publicApiPerClass;
+  public static com.sun.tools.sjavac.comp.PubAPIs instance(com.sun.tools.javac.util.Context);
+  public java.util.Map<java.lang.String, com.sun.tools.sjavac.pubapi.PubApi> getPubapis(java.util.Collection<javax.tools.JavaFileObject>, boolean);
+  public void visitPubapi(javax.lang.model.element.Element);
+  static {};
+}

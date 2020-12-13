@@ -1,0 +1,4 @@
+Compiled from "HeapGraphWriter.java"
+public interface sun.jvm.hotspot.utilities.HeapGraphWriter {
+  public abstract void write(java.lang.String) throws java.io.IOException;
+}

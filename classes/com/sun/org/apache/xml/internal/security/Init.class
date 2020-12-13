@@ -1,0 +1,8 @@
+Compiled from "Init.java"
+public class com.sun.org.apache.xml.internal.security.Init {
+  public static final java.lang.String CONF_NS;
+  public com.sun.org.apache.xml.internal.security.Init();
+  public static final synchronized boolean isInitialized();
+  public static synchronized void init();
+  static {};
+}

@@ -1,0 +1,16 @@
+Compiled from "CachedXPathAPI.java"
+public class com.sun.org.apache.xpath.internal.CachedXPathAPI {
+  protected com.sun.org.apache.xpath.internal.XPathContext xpathSupport;
+  public com.sun.org.apache.xpath.internal.CachedXPathAPI();
+  public com.sun.org.apache.xpath.internal.CachedXPathAPI(com.sun.org.apache.xpath.internal.CachedXPathAPI);
+  public com.sun.org.apache.xpath.internal.XPathContext getXPathContext();
+  public org.w3c.dom.Node selectSingleNode(org.w3c.dom.Node, java.lang.String) throws javax.xml.transform.TransformerException;
+  public org.w3c.dom.Node selectSingleNode(org.w3c.dom.Node, java.lang.String, org.w3c.dom.Node) throws javax.xml.transform.TransformerException;
+  public org.w3c.dom.traversal.NodeIterator selectNodeIterator(org.w3c.dom.Node, java.lang.String) throws javax.xml.transform.TransformerException;
+  public org.w3c.dom.traversal.NodeIterator selectNodeIterator(org.w3c.dom.Node, java.lang.String, org.w3c.dom.Node) throws javax.xml.transform.TransformerException;
+  public org.w3c.dom.NodeList selectNodeList(org.w3c.dom.Node, java.lang.String) throws javax.xml.transform.TransformerException;
+  public org.w3c.dom.NodeList selectNodeList(org.w3c.dom.Node, java.lang.String, org.w3c.dom.Node) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject eval(org.w3c.dom.Node, java.lang.String) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject eval(org.w3c.dom.Node, java.lang.String, org.w3c.dom.Node) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject eval(org.w3c.dom.Node, java.lang.String, com.sun.org.apache.xml.internal.utils.PrefixResolver) throws javax.xml.transform.TransformerException;
+}

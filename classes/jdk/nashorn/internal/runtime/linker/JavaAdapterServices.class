@@ -1,0 +1,21 @@
+Compiled from "JavaAdapterServices.java"
+public final class jdk.nashorn.internal.runtime.linker.JavaAdapterServices {
+  static final boolean $assertionsDisabled;
+  public static java.lang.Object getCallThis(jdk.nashorn.internal.runtime.ScriptFunction, java.lang.Object);
+  public static void notAnObject(java.lang.Object);
+  public static jdk.nashorn.internal.runtime.ScriptFunction checkFunction(java.lang.Object, java.lang.String);
+  public static jdk.nashorn.internal.runtime.ScriptObject getClassOverrides();
+  public static void invokeNoPermissions(java.lang.invoke.MethodHandle, java.lang.Object) throws java.lang.Throwable;
+  public static java.lang.Runnable setGlobal(jdk.nashorn.internal.runtime.ScriptObject);
+  public static jdk.nashorn.internal.runtime.ScriptObject getNonNullGlobal();
+  public static boolean hasOwnToString(jdk.nashorn.internal.runtime.ScriptObject);
+  public static jdk.nashorn.internal.runtime.ScriptObject unwrapMirror(java.lang.Object, boolean);
+  public static java.lang.invoke.CallSite bootstrap(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.invoke.MethodType, int);
+  static void setClassOverrides(jdk.nashorn.internal.runtime.ScriptObject);
+  public static java.lang.Object exportReturnValue(java.lang.Object);
+  public static char toCharPrimitive(java.lang.Object);
+  public static java.lang.RuntimeException wrapThrowable(java.lang.Throwable);
+  public static java.lang.UnsupportedOperationException unsupported();
+  public static java.lang.invoke.CallSite createArrayBootstrap(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.invoke.MethodType);
+  static {};
+}

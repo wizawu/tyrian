@@ -1,0 +1,33 @@
+Compiled from "ThreadReferenceImpl.java"
+public class com.sun.tools.jdi.ThreadReferenceImpl extends com.sun.tools.jdi.ObjectReferenceImpl implements com.sun.jdi.ThreadReference {
+  static final int SUSPEND_STATUS_SUSPENDED;
+  static final int SUSPEND_STATUS_BREAK;
+  protected com.sun.tools.jdi.ObjectReferenceImpl$Cache newCache();
+  com.sun.tools.jdi.ThreadReferenceImpl(com.sun.jdi.VirtualMachine, long);
+  protected java.lang.String description();
+  public boolean vmNotSuspended(com.sun.tools.jdi.VMAction);
+  public java.lang.String name();
+  com.sun.tools.jdi.PacketStream sendResumingCommand(com.sun.tools.jdi.CommandSender);
+  public void suspend();
+  public void resume();
+  public int suspendCount();
+  public void stop(com.sun.jdi.ObjectReference) throws com.sun.jdi.InvalidTypeException;
+  public void interrupt();
+  public int status();
+  public boolean isSuspended();
+  public boolean isAtBreakpoint();
+  public com.sun.jdi.ThreadGroupReference threadGroup();
+  public int frameCount() throws com.sun.jdi.IncompatibleThreadStateException;
+  public java.util.List<com.sun.jdi.StackFrame> frames() throws com.sun.jdi.IncompatibleThreadStateException;
+  public com.sun.jdi.StackFrame frame(int) throws com.sun.jdi.IncompatibleThreadStateException;
+  public java.util.List<com.sun.jdi.StackFrame> frames(int, int) throws com.sun.jdi.IncompatibleThreadStateException;
+  public java.util.List<com.sun.jdi.ObjectReference> ownedMonitors() throws com.sun.jdi.IncompatibleThreadStateException;
+  public com.sun.jdi.ObjectReference currentContendedMonitor() throws com.sun.jdi.IncompatibleThreadStateException;
+  public java.util.List<com.sun.jdi.MonitorInfo> ownedMonitorsAndFrames() throws com.sun.jdi.IncompatibleThreadStateException;
+  public void popFrames(com.sun.jdi.StackFrame) throws com.sun.jdi.IncompatibleThreadStateException;
+  public void forceEarlyReturn(com.sun.jdi.Value) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException, com.sun.jdi.IncompatibleThreadStateException;
+  public java.lang.String toString();
+  byte typeValueKey();
+  void addListener(com.sun.tools.jdi.ThreadListener);
+  void removeListener(com.sun.tools.jdi.ThreadListener);
+}

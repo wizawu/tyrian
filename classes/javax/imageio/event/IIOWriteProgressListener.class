@@ -1,0 +1,10 @@
+Compiled from "IIOWriteProgressListener.java"
+public interface javax.imageio.event.IIOWriteProgressListener extends java.util.EventListener {
+  public abstract void imageStarted(javax.imageio.ImageWriter, int);
+  public abstract void imageProgress(javax.imageio.ImageWriter, float);
+  public abstract void imageComplete(javax.imageio.ImageWriter);
+  public abstract void thumbnailStarted(javax.imageio.ImageWriter, int, int);
+  public abstract void thumbnailProgress(javax.imageio.ImageWriter, float);
+  public abstract void thumbnailComplete(javax.imageio.ImageWriter);
+  public abstract void writeAborted(javax.imageio.ImageWriter);
+}

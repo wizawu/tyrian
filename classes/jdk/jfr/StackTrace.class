@@ -1,0 +1,5 @@
+Compiled from "StackTrace.java"
+public interface jdk.jfr.StackTrace extends java.lang.annotation.Annotation {
+  public static final java.lang.String NAME;
+  public abstract boolean value();
+}

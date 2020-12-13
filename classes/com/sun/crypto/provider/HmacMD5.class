@@ -1,0 +1,5 @@
+Compiled from "HmacMD5.java"
+public final class com.sun.crypto.provider.HmacMD5 extends com.sun.crypto.provider.HmacCore {
+  public com.sun.crypto.provider.HmacMD5() throws java.security.NoSuchAlgorithmException;
+  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
+}

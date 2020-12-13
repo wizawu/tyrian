@@ -1,0 +1,16 @@
+Compiled from "BasicEnumType.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicEnumType extends sun.jvm.hotspot.debugger.cdbg.basic.BasicIntType implements sun.jvm.hotspot.debugger.cdbg.EnumType {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicEnumType(java.lang.String, sun.jvm.hotspot.debugger.cdbg.Type);
+  public sun.jvm.hotspot.debugger.cdbg.EnumType asEnum();
+  public int getSize();
+  public boolean isUnsigned();
+  public void addEnum(java.lang.String, long);
+  public int getNumEnumerates();
+  public java.lang.String getEnumName(int);
+  public long getEnumValue(int);
+  public java.lang.String enumNameForValue(long);
+  sun.jvm.hotspot.debugger.cdbg.Type resolveTypes(sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
+  public void iterateObject(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.cdbg.ObjectVisitor, sun.jvm.hotspot.debugger.cdbg.FieldIdentifier);
+  protected sun.jvm.hotspot.debugger.cdbg.Type createCVVariant(int);
+  public void visit(sun.jvm.hotspot.debugger.cdbg.TypeVisitor);
+}

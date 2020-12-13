@@ -1,0 +1,12 @@
+Compiled from "HttpHeaders.java"
+public final class java.net.http.HttpHeaders {
+  public java.util.Optional<java.lang.String> firstValue(java.lang.String);
+  public java.util.OptionalLong firstValueAsLong(java.lang.String);
+  public java.util.List<java.lang.String> allValues(java.lang.String);
+  public java.util.Map<java.lang.String, java.util.List<java.lang.String>> map();
+  public final boolean equals(java.lang.Object);
+  public final int hashCode();
+  public java.lang.String toString();
+  public static java.net.http.HttpHeaders of(java.util.Map<java.lang.String, java.util.List<java.lang.String>>, java.util.function.BiPredicate<java.lang.String, java.lang.String>);
+  static {};
+}

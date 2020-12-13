@@ -1,0 +1,21 @@
+Compiled from "RuntimeImpl.java"
+class sun.management.RuntimeImpl implements java.lang.management.RuntimeMXBean {
+  sun.management.RuntimeImpl(sun.management.VMManagement);
+  public java.lang.String getName();
+  public java.lang.String getManagementSpecVersion();
+  public java.lang.String getVmName();
+  public java.lang.String getVmVendor();
+  public java.lang.String getVmVersion();
+  public java.lang.String getSpecName();
+  public java.lang.String getSpecVendor();
+  public java.lang.String getSpecVersion();
+  public java.lang.String getClassPath();
+  public java.lang.String getLibraryPath();
+  public java.lang.String getBootClassPath();
+  public java.util.List<java.lang.String> getInputArguments();
+  public long getUptime();
+  public long getStartTime();
+  public boolean isBootClassPathSupported();
+  public java.util.Map<java.lang.String, java.lang.String> getSystemProperties();
+  public javax.management.ObjectName getObjectName();
+}

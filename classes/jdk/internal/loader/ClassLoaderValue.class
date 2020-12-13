@@ -1,0 +1,7 @@
+Compiled from "ClassLoaderValue.java"
+public final class jdk.internal.loader.ClassLoaderValue<V> extends jdk.internal.loader.AbstractClassLoaderValue<jdk.internal.loader.ClassLoaderValue<V>, V> {
+  public jdk.internal.loader.ClassLoaderValue();
+  public jdk.internal.loader.ClassLoaderValue<V> key();
+  public boolean isEqualOrDescendantOf(jdk.internal.loader.AbstractClassLoaderValue<?, V>);
+  public java.lang.Object key();
+}

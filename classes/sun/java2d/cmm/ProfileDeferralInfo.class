@@ -1,0 +1,9 @@
+Compiled from "ProfileDeferralInfo.java"
+public class sun.java2d.cmm.ProfileDeferralInfo extends java.io.InputStream {
+  public int colorSpaceType;
+  public int numComponents;
+  public int profileClass;
+  public java.lang.String filename;
+  public sun.java2d.cmm.ProfileDeferralInfo(java.lang.String, int, int, int);
+  public int read() throws java.io.IOException;
+}

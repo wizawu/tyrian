@@ -1,0 +1,4 @@
+Compiled from "LiteralTree.java"
+public interface com.sun.source.doctree.LiteralTree extends com.sun.source.doctree.InlineTagTree {
+  public abstract com.sun.source.doctree.TextTree getBody();
+}

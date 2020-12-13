@@ -1,0 +1,19 @@
+Compiled from "FontDesignMetrics.java"
+public final class sun.font.FontDesignMetrics extends java.awt.FontMetrics {
+  static final long serialVersionUID;
+  public static sun.font.FontDesignMetrics getMetrics(java.awt.Font);
+  public static sun.font.FontDesignMetrics getMetrics(java.awt.Font, java.awt.font.FontRenderContext);
+  public java.awt.font.FontRenderContext getFontRenderContext();
+  public int charWidth(char);
+  public int charWidth(int);
+  public int stringWidth(java.lang.String);
+  public int charsWidth(char[], int, int);
+  public java.awt.geom.Rectangle2D getSimpleBounds(char[], int, int);
+  public int[] getWidths();
+  public int getMaxAdvance();
+  public int getAscent();
+  public int getDescent();
+  public int getLeading();
+  public int getHeight();
+  static {};
+}

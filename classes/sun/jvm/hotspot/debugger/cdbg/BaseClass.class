@@ -1,0 +1,6 @@
+Compiled from "BaseClass.java"
+public interface sun.jvm.hotspot.debugger.cdbg.BaseClass {
+  public abstract int getAccessControl();
+  public abstract boolean isVirtual();
+  public abstract sun.jvm.hotspot.debugger.cdbg.Type getType();
+}

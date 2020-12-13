@@ -1,0 +1,18 @@
+Compiled from "AddExpression.java"
+public class sun.tools.tree.AddExpression extends sun.tools.tree.BinaryArithmeticExpression {
+  public sun.tools.tree.AddExpression(long, sun.tools.tree.Expression, sun.tools.tree.Expression);
+  void selectType(sun.tools.java.Environment, sun.tools.tree.Context, int);
+  public boolean isNonNull();
+  sun.tools.tree.Expression eval(int, int);
+  sun.tools.tree.Expression eval(long, long);
+  sun.tools.tree.Expression eval(float, float);
+  sun.tools.tree.Expression eval(double, double);
+  sun.tools.tree.Expression eval(java.lang.String, java.lang.String);
+  public sun.tools.tree.Expression inlineValue(sun.tools.java.Environment, sun.tools.tree.Context);
+  protected java.lang.StringBuffer inlineValueSB(sun.tools.java.Environment, sun.tools.tree.Context, java.lang.StringBuffer);
+  sun.tools.tree.Expression simplify();
+  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
+  void codeOperation(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+  void codeAppend(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler, sun.tools.java.ClassDeclaration, boolean) throws sun.tools.java.ClassNotFound, sun.tools.java.AmbiguousMember;
+  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
+}

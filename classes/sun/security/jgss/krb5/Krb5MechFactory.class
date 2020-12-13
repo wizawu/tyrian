@@ -1,0 +1,20 @@
+Compiled from "Krb5MechFactory.java"
+public final class sun.security.jgss.krb5.Krb5MechFactory implements sun.security.jgss.spi.MechanismFactory {
+  static final java.security.Provider PROVIDER;
+  static final org.ietf.jgss.Oid GSS_KRB5_MECH_OID;
+  static final org.ietf.jgss.Oid NT_GSS_KRB5_PRINCIPAL;
+  public sun.security.jgss.krb5.Krb5MechFactory();
+  public sun.security.jgss.krb5.Krb5MechFactory(sun.security.jgss.GSSCaller);
+  public sun.security.jgss.spi.GSSNameSpi getNameElement(java.lang.String, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.spi.GSSNameSpi getNameElement(byte[], org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.spi.GSSCredentialSpi getCredentialElement(sun.security.jgss.spi.GSSNameSpi, int, int, int) throws org.ietf.jgss.GSSException;
+  public static void checkInitCredPermission(sun.security.jgss.krb5.Krb5NameElement);
+  public static void checkAcceptCredPermission(sun.security.jgss.krb5.Krb5NameElement, sun.security.jgss.spi.GSSNameSpi);
+  public sun.security.jgss.spi.GSSContextSpi getMechanismContext(sun.security.jgss.spi.GSSNameSpi, sun.security.jgss.spi.GSSCredentialSpi, int) throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.spi.GSSContextSpi getMechanismContext(sun.security.jgss.spi.GSSCredentialSpi) throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.spi.GSSContextSpi getMechanismContext(byte[]) throws org.ietf.jgss.GSSException;
+  public final org.ietf.jgss.Oid getMechanismOid();
+  public java.security.Provider getProvider();
+  public org.ietf.jgss.Oid[] getNameTypes();
+  static {};
+}

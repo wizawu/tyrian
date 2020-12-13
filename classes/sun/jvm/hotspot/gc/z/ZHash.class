@@ -1,0 +1,5 @@
+Compiled from "ZHash.java"
+class sun.jvm.hotspot.gc.z.ZHash {
+  sun.jvm.hotspot.gc.z.ZHash();
+  static long uint32_to_uint32(long);
+}

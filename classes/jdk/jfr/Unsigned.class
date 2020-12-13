@@ -1,0 +1,3 @@
+Compiled from "Unsigned.java"
+public interface jdk.jfr.Unsigned extends java.lang.annotation.Annotation {
+}

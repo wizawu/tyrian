@@ -1,0 +1,21 @@
+Compiled from "MotifComboBoxUI.java"
+public class com.sun.java.swing.plaf.motif.MotifComboBoxUI extends javax.swing.plaf.basic.BasicComboBoxUI implements java.io.Serializable {
+  javax.swing.Icon arrowIcon;
+  static final int HORIZ_MARGIN;
+  public com.sun.java.swing.plaf.motif.MotifComboBoxUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installUI(javax.swing.JComponent);
+  public java.awt.Dimension getMinimumSize(javax.swing.JComponent);
+  protected javax.swing.plaf.basic.ComboPopup createPopup();
+  protected void installComponents();
+  protected void uninstallComponents();
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  public void paintCurrentValue(java.awt.Graphics, java.awt.Rectangle, boolean);
+  protected java.awt.Rectangle rectangleForArrowIcon();
+  protected java.awt.Rectangle rectangleForCurrentValue();
+  public int iconAreaWidth();
+  public void configureEditor();
+  protected java.awt.LayoutManager createLayoutManager();
+  protected java.beans.PropertyChangeListener createPropertyChangeListener();
+  static javax.swing.JComboBox access$000(com.sun.java.swing.plaf.motif.MotifComboBoxUI);
+}

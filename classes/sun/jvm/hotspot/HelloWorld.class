@@ -1,0 +1,8 @@
+Compiled from "HelloWorld.java"
+public class sun.jvm.hotspot.HelloWorld {
+  public sun.jvm.hotspot.HelloWorld();
+  public static void main(java.lang.String[]);
+  public static int e();
+  public static int fib(int);
+  static {};
+}

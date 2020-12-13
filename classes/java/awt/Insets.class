@@ -1,0 +1,14 @@
+Compiled from "Insets.java"
+public class java.awt.Insets implements java.lang.Cloneable,java.io.Serializable {
+  public int top;
+  public int left;
+  public int bottom;
+  public int right;
+  public java.awt.Insets(int, int, int, int);
+  public void set(int, int, int, int);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String toString();
+  public java.lang.Object clone();
+  static {};
+}

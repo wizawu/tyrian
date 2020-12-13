@@ -1,0 +1,10 @@
+Compiled from "CompilationUnitTree.java"
+public interface com.sun.source.tree.CompilationUnitTree extends com.sun.source.tree.Tree {
+  public abstract java.util.List<? extends com.sun.source.tree.AnnotationTree> getPackageAnnotations();
+  public abstract com.sun.source.tree.ExpressionTree getPackageName();
+  public abstract com.sun.source.tree.PackageTree getPackage();
+  public abstract java.util.List<? extends com.sun.source.tree.ImportTree> getImports();
+  public abstract java.util.List<? extends com.sun.source.tree.Tree> getTypeDecls();
+  public abstract javax.tools.JavaFileObject getSourceFile();
+  public abstract com.sun.source.tree.LineMap getLineMap();
+}

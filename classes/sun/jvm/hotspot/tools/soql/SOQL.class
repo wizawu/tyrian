@@ -1,0 +1,19 @@
+Compiled from "SOQL.java"
+public class sun.jvm.hotspot.tools.soql.SOQL extends sun.jvm.hotspot.tools.Tool {
+  protected sun.jvm.hotspot.utilities.soql.SOQLEngine soqlEngine;
+  protected java.io.BufferedReader in;
+  protected java.io.PrintStream out;
+  protected static java.lang.String prompt;
+  protected static java.lang.String secondPrompt;
+  public static void main(java.lang.String[]);
+  public sun.jvm.hotspot.tools.soql.SOQL();
+  public sun.jvm.hotspot.tools.soql.SOQL(sun.jvm.hotspot.debugger.JVMDebugger);
+  public void run();
+  protected void handleSelect(java.lang.String);
+  protected void handleClasses(java.lang.String);
+  protected void handleClass(java.lang.String);
+  protected sun.jvm.hotspot.oops.Oop getOopAtAddress(sun.jvm.hotspot.debugger.Address);
+  protected void handleObject(java.lang.String);
+  protected void handleUnknown(java.lang.String);
+  static {};
+}

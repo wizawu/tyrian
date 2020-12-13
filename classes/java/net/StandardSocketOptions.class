@@ -1,0 +1,16 @@
+Compiled from "StandardSocketOptions.java"
+public final class java.net.StandardSocketOptions {
+  public static final java.net.SocketOption<java.lang.Boolean> SO_BROADCAST;
+  public static final java.net.SocketOption<java.lang.Boolean> SO_KEEPALIVE;
+  public static final java.net.SocketOption<java.lang.Integer> SO_SNDBUF;
+  public static final java.net.SocketOption<java.lang.Integer> SO_RCVBUF;
+  public static final java.net.SocketOption<java.lang.Boolean> SO_REUSEADDR;
+  public static final java.net.SocketOption<java.lang.Boolean> SO_REUSEPORT;
+  public static final java.net.SocketOption<java.lang.Integer> SO_LINGER;
+  public static final java.net.SocketOption<java.lang.Integer> IP_TOS;
+  public static final java.net.SocketOption<java.net.NetworkInterface> IP_MULTICAST_IF;
+  public static final java.net.SocketOption<java.lang.Integer> IP_MULTICAST_TTL;
+  public static final java.net.SocketOption<java.lang.Boolean> IP_MULTICAST_LOOP;
+  public static final java.net.SocketOption<java.lang.Boolean> TCP_NODELAY;
+  static {};
+}

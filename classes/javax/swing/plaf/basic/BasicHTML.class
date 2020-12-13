@@ -1,0 +1,13 @@
+Compiled from "BasicHTML.java"
+public class javax.swing.plaf.basic.BasicHTML {
+  public static final java.lang.String propertyKey;
+  public static final java.lang.String documentBaseKey;
+  public javax.swing.plaf.basic.BasicHTML();
+  public static javax.swing.text.View createHTMLView(javax.swing.JComponent, java.lang.String);
+  public static int getHTMLBaseline(javax.swing.text.View, int, int);
+  static int getBaseline(javax.swing.JComponent, int, int, int, int);
+  static int getBaseline(javax.swing.text.View, int, int);
+  public static boolean isHTMLString(java.lang.String);
+  public static void updateRenderer(javax.swing.JComponent, java.lang.String);
+  static javax.swing.plaf.basic.BasicHTML$BasicEditorKit getFactory();
+}

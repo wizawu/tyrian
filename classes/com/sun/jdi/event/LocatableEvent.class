@@ -1,0 +1,4 @@
+Compiled from "LocatableEvent.java"
+public interface com.sun.jdi.event.LocatableEvent extends com.sun.jdi.event.Event,com.sun.jdi.Locatable {
+  public abstract com.sun.jdi.ThreadReference thread();
+}

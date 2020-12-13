@@ -1,0 +1,6 @@
+Compiled from "XMLNSDTDValidator.java"
+public class com.sun.org.apache.xerces.internal.impl.dtd.XMLNSDTDValidator extends com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidator {
+  public com.sun.org.apache.xerces.internal.impl.dtd.XMLNSDTDValidator();
+  protected final void startNamespaceScope(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected void endNamespaceScope(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.Augmentations, boolean) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+}

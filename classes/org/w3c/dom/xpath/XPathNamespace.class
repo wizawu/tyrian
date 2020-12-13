@@ -1,0 +1,5 @@
+Compiled from "XPathNamespace.java"
+public interface org.w3c.dom.xpath.XPathNamespace extends org.w3c.dom.Node {
+  public static final short XPATH_NAMESPACE_NODE;
+  public abstract org.w3c.dom.Element getOwnerElement();
+}

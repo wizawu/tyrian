@@ -1,0 +1,9 @@
+Compiled from "ATR.java"
+public final class javax.smartcardio.ATR implements java.io.Serializable {
+  public javax.smartcardio.ATR(byte[]);
+  public byte[] getBytes();
+  public byte[] getHistoricalBytes();
+  public java.lang.String toString();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

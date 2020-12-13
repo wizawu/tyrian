@@ -1,0 +1,24 @@
+Compiled from "Parameter.java"
+public final class java.lang.reflect.Parameter implements java.lang.reflect.AnnotatedElement {
+  java.lang.reflect.Parameter(java.lang.String, int, java.lang.reflect.Executable, int);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public boolean isNamePresent();
+  public java.lang.String toString();
+  public java.lang.reflect.Executable getDeclaringExecutable();
+  public int getModifiers();
+  public java.lang.String getName();
+  java.lang.String getRealName();
+  public java.lang.reflect.Type getParameterizedType();
+  public java.lang.Class<?> getType();
+  public java.lang.reflect.AnnotatedType getAnnotatedType();
+  public boolean isImplicit();
+  public boolean isSynthetic();
+  public boolean isVarArgs();
+  public <T extends java.lang.annotation.Annotation> T getAnnotation(java.lang.Class<T>);
+  public <T extends java.lang.annotation.Annotation> T[] getAnnotationsByType(java.lang.Class<T>);
+  public java.lang.annotation.Annotation[] getDeclaredAnnotations();
+  public <T extends java.lang.annotation.Annotation> T getDeclaredAnnotation(java.lang.Class<T>);
+  public <T extends java.lang.annotation.Annotation> T[] getDeclaredAnnotationsByType(java.lang.Class<T>);
+  public java.lang.annotation.Annotation[] getAnnotations();
+}

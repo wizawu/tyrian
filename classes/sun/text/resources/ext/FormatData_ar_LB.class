@@ -1,0 +1,5 @@
+Compiled from "FormatData_ar_LB.java"
+public class sun.text.resources.ext.FormatData_ar_LB extends sun.util.resources.ParallelListResourceBundle {
+  public sun.text.resources.ext.FormatData_ar_LB();
+  protected final java.lang.Object[][] getContents();
+}

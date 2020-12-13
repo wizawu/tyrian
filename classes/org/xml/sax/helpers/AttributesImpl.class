@@ -1,0 +1,29 @@
+Compiled from "AttributesImpl.java"
+public class org.xml.sax.helpers.AttributesImpl implements org.xml.sax.Attributes {
+  int length;
+  java.lang.String[] data;
+  public org.xml.sax.helpers.AttributesImpl();
+  public org.xml.sax.helpers.AttributesImpl(org.xml.sax.Attributes);
+  public int getLength();
+  public java.lang.String getURI(int);
+  public java.lang.String getLocalName(int);
+  public java.lang.String getQName(int);
+  public java.lang.String getType(int);
+  public java.lang.String getValue(int);
+  public int getIndex(java.lang.String, java.lang.String);
+  public int getIndex(java.lang.String);
+  public java.lang.String getType(java.lang.String, java.lang.String);
+  public java.lang.String getType(java.lang.String);
+  public java.lang.String getValue(java.lang.String, java.lang.String);
+  public java.lang.String getValue(java.lang.String);
+  public void clear();
+  public void setAttributes(org.xml.sax.Attributes);
+  public void addAttribute(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public void setAttribute(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public void removeAttribute(int);
+  public void setURI(int, java.lang.String);
+  public void setLocalName(int, java.lang.String);
+  public void setQName(int, java.lang.String);
+  public void setType(int, java.lang.String);
+  public void setValue(int, java.lang.String);
+}

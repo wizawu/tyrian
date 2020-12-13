@@ -1,0 +1,15 @@
+Compiled from "ChangeListenerMap.java"
+abstract class java.beans.ChangeListenerMap<L extends java.util.EventListener> {
+  java.beans.ChangeListenerMap();
+  protected abstract L[] newArray(int);
+  protected abstract L newProxy(java.lang.String, L);
+  public final synchronized void add(java.lang.String, L);
+  public final synchronized void remove(java.lang.String, L);
+  public final synchronized L[] get(java.lang.String);
+  public final void set(java.lang.String, L[]);
+  public final synchronized L[] getListeners();
+  public final L[] getListeners(java.lang.String);
+  public final synchronized boolean hasListeners(java.lang.String);
+  public final java.util.Set<java.util.Map$Entry<java.lang.String, L[]>> getEntries();
+  public abstract L extract(L);
+}

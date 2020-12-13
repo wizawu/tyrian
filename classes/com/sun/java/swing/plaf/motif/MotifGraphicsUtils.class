@@ -1,0 +1,6 @@
+Compiled from "MotifGraphicsUtils.java"
+final class com.sun.java.swing.plaf.motif.MotifGraphicsUtils {
+  com.sun.java.swing.plaf.motif.MotifGraphicsUtils();
+  static void drawGroove(java.awt.Graphics, int, int, int, int, java.awt.Color, java.awt.Color);
+  static void drawStringInRect(javax.swing.JComponent, java.awt.Graphics, java.lang.String, int, int, int, int, int);
+}

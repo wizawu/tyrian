@@ -1,0 +1,14 @@
+Compiled from "LabelNode.java"
+public final class jdk.nashorn.internal.ir.LabelNode extends jdk.nashorn.internal.ir.LexicalContextStatement implements jdk.nashorn.internal.ir.JoinPredecessor {
+  public jdk.nashorn.internal.ir.LabelNode(int, long, int, java.lang.String, jdk.nashorn.internal.ir.Block);
+  public boolean isTerminal();
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
+  public void toString(java.lang.StringBuilder, boolean);
+  public jdk.nashorn.internal.ir.Block getBody();
+  public jdk.nashorn.internal.ir.LabelNode setBody(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.Block);
+  public java.lang.String getLabelName();
+  public jdk.nashorn.internal.ir.LocalVariableConversion getLocalVariableConversion();
+  public jdk.nashorn.internal.ir.LabelNode setLocalVariableConversion(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.LocalVariableConversion);
+  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor);
+  public jdk.nashorn.internal.ir.JoinPredecessor setLocalVariableConversion(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.LocalVariableConversion);
+}

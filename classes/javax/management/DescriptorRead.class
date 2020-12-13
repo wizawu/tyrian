@@ -1,0 +1,4 @@
+Compiled from "DescriptorRead.java"
+public interface javax.management.DescriptorRead {
+  public abstract javax.management.Descriptor getDescriptor();
+}

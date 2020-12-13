@@ -1,0 +1,6 @@
+Compiled from "MessageQueueBackend.java"
+public class sun.jvm.hotspot.utilities.MessageQueueBackend {
+  public sun.jvm.hotspot.utilities.MessageQueueBackend();
+  public sun.jvm.hotspot.utilities.MessageQueue getFirstQueue();
+  public sun.jvm.hotspot.utilities.MessageQueue getSecondQueue();
+}

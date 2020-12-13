@@ -1,0 +1,9 @@
+Compiled from "JSJavaClass.java"
+public class sun.jvm.hotspot.utilities.soql.JSJavaClass extends sun.jvm.hotspot.utilities.soql.JSJavaInstance {
+  public sun.jvm.hotspot.utilities.soql.JSJavaClass(sun.jvm.hotspot.oops.Instance, sun.jvm.hotspot.utilities.soql.JSJavaKlass, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
+  public sun.jvm.hotspot.utilities.soql.JSJavaKlass getJSJavaKlass();
+  public java.lang.String toString();
+  protected java.lang.Object getFieldValue(java.lang.String);
+  protected java.lang.String[] getFieldNames();
+  protected boolean hasField(java.lang.String);
+}

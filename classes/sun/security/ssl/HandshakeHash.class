@@ -1,0 +1,24 @@
+Compiled from "HandshakeHash.java"
+final class sun.security.ssl.HandshakeHash {
+  sun.security.ssl.HandshakeHash();
+  void determine(sun.security.ssl.ProtocolVersion, sun.security.ssl.CipherSuite);
+  sun.security.ssl.HandshakeHash copy();
+  void receive(byte[]);
+  void receive(java.nio.ByteBuffer, int);
+  void receive(java.nio.ByteBuffer);
+  void push(byte[]);
+  byte[] removeLastReceived();
+  void deliver(byte[]);
+  void deliver(byte[], int, int);
+  void deliver(java.nio.ByteBuffer);
+  void utilize();
+  void consume();
+  void update();
+  byte[] digest();
+  void finish();
+  byte[] archived();
+  byte[] digest(java.lang.String);
+  byte[] digest(java.lang.String, javax.crypto.SecretKey);
+  byte[] digest(boolean, javax.crypto.SecretKey);
+  public boolean isHashable(byte);
+}

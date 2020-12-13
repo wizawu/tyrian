@@ -1,0 +1,13 @@
+Compiled from "PBKDF2KeyImpl.java"
+final class com.sun.crypto.provider.PBKDF2KeyImpl implements javax.crypto.interfaces.PBEKey {
+  static final long serialVersionUID;
+  com.sun.crypto.provider.PBKDF2KeyImpl(javax.crypto.spec.PBEKeySpec, java.lang.String) throws java.security.spec.InvalidKeySpecException;
+  public byte[] getEncoded();
+  public java.lang.String getAlgorithm();
+  public int getIterationCount();
+  public char[] getPassword();
+  public byte[] getSalt();
+  public java.lang.String getFormat();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

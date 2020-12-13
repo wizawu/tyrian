@@ -1,0 +1,7 @@
+Compiled from "TransformXPath2Filter.java"
+public class com.sun.org.apache.xml.internal.security.transforms.implementations.TransformXPath2Filter extends com.sun.org.apache.xml.internal.security.transforms.TransformSpi {
+  public static final java.lang.String implementedTransformURI;
+  public com.sun.org.apache.xml.internal.security.transforms.implementations.TransformXPath2Filter();
+  protected java.lang.String engineGetURI();
+  protected com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput enginePerformTransform(com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, java.io.OutputStream, com.sun.org.apache.xml.internal.security.transforms.Transform) throws com.sun.org.apache.xml.internal.security.transforms.TransformationException;
+}

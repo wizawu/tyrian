@@ -1,0 +1,9 @@
+Compiled from "XSDecimal.java"
+public interface com.sun.org.apache.xerces.internal.xs.datatypes.XSDecimal {
+  public abstract java.math.BigDecimal getBigDecimal();
+  public abstract java.math.BigInteger getBigInteger() throws java.lang.NumberFormatException;
+  public abstract long getLong() throws java.lang.NumberFormatException;
+  public abstract int getInt() throws java.lang.NumberFormatException;
+  public abstract short getShort() throws java.lang.NumberFormatException;
+  public abstract byte getByte() throws java.lang.NumberFormatException;
+}

@@ -1,0 +1,12 @@
+Compiled from "TypeResolver.java"
+public final class com.sun.beans.TypeResolver {
+  static final boolean $assertionsDisabled;
+  public com.sun.beans.TypeResolver();
+  public static java.lang.reflect.Type resolveInClass(java.lang.Class<?>, java.lang.reflect.Type);
+  public static java.lang.reflect.Type[] resolveInClass(java.lang.Class<?>, java.lang.reflect.Type[]);
+  public static java.lang.reflect.Type resolve(java.lang.reflect.Type, java.lang.reflect.Type);
+  public static java.lang.reflect.Type[] resolve(java.lang.reflect.Type, java.lang.reflect.Type[]);
+  public static java.lang.Class<?> erase(java.lang.reflect.Type);
+  public static java.lang.Class<?>[] erase(java.lang.reflect.Type[]);
+  static {};
+}

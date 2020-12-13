@@ -1,0 +1,5 @@
+Compiled from "JSJavaObjArray.java"
+public class sun.jvm.hotspot.utilities.soql.JSJavaObjArray extends sun.jvm.hotspot.utilities.soql.JSJavaArray {
+  public sun.jvm.hotspot.utilities.soql.JSJavaObjArray(sun.jvm.hotspot.oops.ObjArray, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
+  public final sun.jvm.hotspot.oops.ObjArray getObjArray();
+}

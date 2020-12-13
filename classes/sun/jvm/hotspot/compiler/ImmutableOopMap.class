@@ -1,0 +1,7 @@
+Compiled from "ImmutableOopMap.java"
+public class sun.jvm.hotspot.compiler.ImmutableOopMap extends sun.jvm.hotspot.runtime.VMObject {
+  public sun.jvm.hotspot.compiler.ImmutableOopMap(sun.jvm.hotspot.debugger.Address);
+  long getCount();
+  public sun.jvm.hotspot.debugger.Address getData();
+  static {};
+}

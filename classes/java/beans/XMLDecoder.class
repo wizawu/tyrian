@@ -1,0 +1,15 @@
+Compiled from "XMLDecoder.java"
+public class java.beans.XMLDecoder implements java.lang.AutoCloseable {
+  public java.beans.XMLDecoder(java.io.InputStream);
+  public java.beans.XMLDecoder(java.io.InputStream, java.lang.Object);
+  public java.beans.XMLDecoder(java.io.InputStream, java.lang.Object, java.beans.ExceptionListener);
+  public java.beans.XMLDecoder(java.io.InputStream, java.lang.Object, java.beans.ExceptionListener, java.lang.ClassLoader);
+  public java.beans.XMLDecoder(org.xml.sax.InputSource);
+  public void close();
+  public void setExceptionListener(java.beans.ExceptionListener);
+  public java.beans.ExceptionListener getExceptionListener();
+  public java.lang.Object readObject();
+  public void setOwner(java.lang.Object);
+  public java.lang.Object getOwner();
+  public static org.xml.sax.helpers.DefaultHandler createHandler(java.lang.Object, java.beans.ExceptionListener, java.lang.ClassLoader);
+}

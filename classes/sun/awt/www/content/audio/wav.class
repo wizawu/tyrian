@@ -1,0 +1,5 @@
+Compiled from "wav.java"
+public class sun.awt.www.content.audio.wav extends java.net.ContentHandler {
+  public sun.awt.www.content.audio.wav();
+  public java.lang.Object getContent(java.net.URLConnection) throws java.io.IOException;
+}

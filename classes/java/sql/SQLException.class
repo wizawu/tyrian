@@ -1,0 +1,17 @@
+Compiled from "SQLException.java"
+public class java.sql.SQLException extends java.lang.Exception implements java.lang.Iterable<java.lang.Throwable> {
+  public java.sql.SQLException(java.lang.String, java.lang.String, int);
+  public java.sql.SQLException(java.lang.String, java.lang.String);
+  public java.sql.SQLException(java.lang.String);
+  public java.sql.SQLException();
+  public java.sql.SQLException(java.lang.Throwable);
+  public java.sql.SQLException(java.lang.String, java.lang.Throwable);
+  public java.sql.SQLException(java.lang.String, java.lang.String, java.lang.Throwable);
+  public java.sql.SQLException(java.lang.String, java.lang.String, int, java.lang.Throwable);
+  public java.lang.String getSQLState();
+  public int getErrorCode();
+  public java.sql.SQLException getNextException();
+  public void setNextException(java.sql.SQLException);
+  public java.util.Iterator<java.lang.Throwable> iterator();
+  static {};
+}

@@ -1,0 +1,21 @@
+Compiled from "IntegerInterleavedRaster.java"
+public class sun.awt.image.IntegerInterleavedRaster extends sun.awt.image.IntegerComponentRaster {
+  public sun.awt.image.IntegerInterleavedRaster(java.awt.image.SampleModel, java.awt.Point);
+  public sun.awt.image.IntegerInterleavedRaster(java.awt.image.SampleModel, java.awt.image.DataBufferInt, java.awt.Point);
+  public sun.awt.image.IntegerInterleavedRaster(java.awt.image.SampleModel, java.awt.image.DataBufferInt, java.awt.Rectangle, java.awt.Point, sun.awt.image.IntegerInterleavedRaster);
+  public int[] getDataOffsets();
+  public int getDataOffset(int);
+  public int getScanlineStride();
+  public int getPixelStride();
+  public int[] getDataStorage();
+  public java.lang.Object getDataElements(int, int, java.lang.Object);
+  public java.lang.Object getDataElements(int, int, int, int, java.lang.Object);
+  public void setDataElements(int, int, java.lang.Object);
+  public void setDataElements(int, int, java.awt.image.Raster);
+  public void setDataElements(int, int, int, int, java.lang.Object);
+  public java.awt.image.WritableRaster createWritableChild(int, int, int, int, int, int, int[]);
+  public java.awt.image.Raster createChild(int, int, int, int, int, int, int[]);
+  public java.awt.image.WritableRaster createCompatibleWritableRaster(int, int);
+  public java.awt.image.WritableRaster createCompatibleWritableRaster();
+  public java.lang.String toString();
+}

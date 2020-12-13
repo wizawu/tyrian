@@ -1,0 +1,10 @@
+Compiled from "FactoryFinder.java"
+class javax.xml.stream.FactoryFinder {
+  static final boolean $assertionsDisabled;
+  javax.xml.stream.FactoryFinder();
+  static <T> T newInstance(java.lang.Class<T>, java.lang.String, java.lang.ClassLoader, boolean) throws javax.xml.stream.FactoryConfigurationError;
+  static <T> T newInstance(java.lang.Class<T>, java.lang.String, java.lang.ClassLoader, boolean, boolean) throws javax.xml.stream.FactoryConfigurationError;
+  static <T> T find(java.lang.Class<T>, java.lang.String) throws javax.xml.stream.FactoryConfigurationError;
+  static <T> T find(java.lang.Class<T>, java.lang.String, java.lang.ClassLoader, java.lang.String) throws javax.xml.stream.FactoryConfigurationError;
+  static {};
+}

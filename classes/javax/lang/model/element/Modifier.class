@@ -1,0 +1,19 @@
+Compiled from "Modifier.java"
+public final class javax.lang.model.element.Modifier extends java.lang.Enum<javax.lang.model.element.Modifier> {
+  public static final javax.lang.model.element.Modifier PUBLIC;
+  public static final javax.lang.model.element.Modifier PROTECTED;
+  public static final javax.lang.model.element.Modifier PRIVATE;
+  public static final javax.lang.model.element.Modifier ABSTRACT;
+  public static final javax.lang.model.element.Modifier DEFAULT;
+  public static final javax.lang.model.element.Modifier STATIC;
+  public static final javax.lang.model.element.Modifier FINAL;
+  public static final javax.lang.model.element.Modifier TRANSIENT;
+  public static final javax.lang.model.element.Modifier VOLATILE;
+  public static final javax.lang.model.element.Modifier SYNCHRONIZED;
+  public static final javax.lang.model.element.Modifier NATIVE;
+  public static final javax.lang.model.element.Modifier STRICTFP;
+  public static javax.lang.model.element.Modifier[] values();
+  public static javax.lang.model.element.Modifier valueOf(java.lang.String);
+  public java.lang.String toString();
+  static {};
+}

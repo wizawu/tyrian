@@ -1,0 +1,18 @@
+Compiled from "SourceCodePanel.java"
+public class sun.jvm.hotspot.ui.SourceCodePanel extends javax.swing.JPanel {
+  public sun.jvm.hotspot.ui.SourceCodePanel();
+  public void setFont(java.awt.Font);
+  public boolean getShowLineNumbers();
+  public void setShowLineNumbers(boolean);
+  public boolean openFile(java.lang.String);
+  public java.lang.String getSourceFileName();
+  public int getCurrentLineNumber();
+  public void showLineNumber(int);
+  public void highlightLineNumber(int);
+  public void showBreakpointAtLine(int);
+  public boolean hasBreakpointAtLine(int);
+  public void clearBreakpointAtLine(int);
+  public void clearBreakpoints();
+  public void setEditorCommands(sun.jvm.hotspot.ui.EditorCommands, sun.jvm.hotspot.ui.Editor);
+  public void requestFocus();
+}

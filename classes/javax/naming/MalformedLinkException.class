@@ -1,0 +1,5 @@
+Compiled from "MalformedLinkException.java"
+public class javax.naming.MalformedLinkException extends javax.naming.LinkException {
+  public javax.naming.MalformedLinkException(java.lang.String);
+  public javax.naming.MalformedLinkException();
+}

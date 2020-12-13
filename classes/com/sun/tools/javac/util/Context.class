@@ -1,0 +1,13 @@
+Compiled from "Context.java"
+public class com.sun.tools.javac.util.Context {
+  protected final java.util.Map<com.sun.tools.javac.util.Context$Key<?>, java.lang.Object> ht;
+  public <T> void put(com.sun.tools.javac.util.Context$Key<T>, com.sun.tools.javac.util.Context$Factory<T>);
+  public <T> void put(com.sun.tools.javac.util.Context$Key<T>, T);
+  public <T> T get(com.sun.tools.javac.util.Context$Key<T>);
+  public com.sun.tools.javac.util.Context();
+  protected <T> com.sun.tools.javac.util.Context$Key<T> key(java.lang.Class<T>);
+  public <T> T get(java.lang.Class<T>);
+  public <T> void put(java.lang.Class<T>, T);
+  public <T> void put(java.lang.Class<T>, com.sun.tools.javac.util.Context$Factory<T>);
+  public void dump();
+}

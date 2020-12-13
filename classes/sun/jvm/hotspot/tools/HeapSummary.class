@@ -1,0 +1,10 @@
+Compiled from "HeapSummary.java"
+public class sun.jvm.hotspot.tools.HeapSummary extends sun.jvm.hotspot.tools.Tool {
+  public sun.jvm.hotspot.tools.HeapSummary();
+  public sun.jvm.hotspot.tools.HeapSummary(sun.jvm.hotspot.debugger.JVMDebugger);
+  public static void main(java.lang.String[]);
+  public java.lang.String getName();
+  public void run();
+  public void printG1HeapSummary(sun.jvm.hotspot.gc.g1.G1CollectedHeap);
+  static {};
+}

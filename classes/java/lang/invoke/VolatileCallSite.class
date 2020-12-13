@@ -1,0 +1,8 @@
+Compiled from "VolatileCallSite.java"
+public class java.lang.invoke.VolatileCallSite extends java.lang.invoke.CallSite {
+  public java.lang.invoke.VolatileCallSite(java.lang.invoke.MethodType);
+  public java.lang.invoke.VolatileCallSite(java.lang.invoke.MethodHandle);
+  public final java.lang.invoke.MethodHandle getTarget();
+  public void setTarget(java.lang.invoke.MethodHandle);
+  public final java.lang.invoke.MethodHandle dynamicInvoker();
+}

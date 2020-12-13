@@ -1,0 +1,9 @@
+Compiled from "PooledConnection.java"
+public interface javax.sql.PooledConnection {
+  public abstract java.sql.Connection getConnection() throws java.sql.SQLException;
+  public abstract void close() throws java.sql.SQLException;
+  public abstract void addConnectionEventListener(javax.sql.ConnectionEventListener);
+  public abstract void removeConnectionEventListener(javax.sql.ConnectionEventListener);
+  public abstract void addStatementEventListener(javax.sql.StatementEventListener);
+  public abstract void removeStatementEventListener(javax.sql.StatementEventListener);
+}

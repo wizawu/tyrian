@@ -1,0 +1,9 @@
+Compiled from "XalanXPathAPI.java"
+public class com.sun.org.apache.xml.internal.security.utils.XalanXPathAPI implements com.sun.org.apache.xml.internal.security.utils.XPathAPI {
+  public com.sun.org.apache.xml.internal.security.utils.XalanXPathAPI();
+  public org.w3c.dom.NodeList selectNodeList(org.w3c.dom.Node, org.w3c.dom.Node, java.lang.String, org.w3c.dom.Node) throws javax.xml.transform.TransformerException;
+  public boolean evaluate(org.w3c.dom.Node, org.w3c.dom.Node, java.lang.String, org.w3c.dom.Node) throws javax.xml.transform.TransformerException;
+  public void clear();
+  public static synchronized boolean isInstalled();
+  static {};
+}

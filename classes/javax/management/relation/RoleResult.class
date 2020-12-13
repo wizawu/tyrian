@@ -1,0 +1,9 @@
+Compiled from "RoleResult.java"
+public class javax.management.relation.RoleResult implements java.io.Serializable {
+  public javax.management.relation.RoleResult(javax.management.relation.RoleList, javax.management.relation.RoleUnresolvedList);
+  public javax.management.relation.RoleList getRoles();
+  public javax.management.relation.RoleUnresolvedList getRolesUnresolved();
+  public void setRoles(javax.management.relation.RoleList);
+  public void setRolesUnresolved(javax.management.relation.RoleUnresolvedList);
+  static {};
+}

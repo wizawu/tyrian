@@ -1,0 +1,10 @@
+Compiled from "SocketListeningConnector.java"
+public class com.sun.tools.jdi.SocketListeningConnector extends com.sun.tools.jdi.GenericListeningConnector {
+  static final java.lang.String ARG_PORT;
+  static final java.lang.String ARG_LOCALADDR;
+  public com.sun.tools.jdi.SocketListeningConnector();
+  public java.lang.String startListening(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
+  public java.lang.String name();
+  public java.lang.String description();
+  protected void updateArgumentMapIfRequired(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>, com.sun.jdi.connect.spi.TransportService$ListenKey);
+}

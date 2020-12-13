@@ -1,0 +1,15 @@
+Compiled from "SynthPopupMenuUI.java"
+public class javax.swing.plaf.synth.SynthPopupMenuUI extends javax.swing.plaf.basic.BasicPopupMenuUI implements java.beans.PropertyChangeListener,javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthPopupMenuUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public void installDefaults();
+  protected void installListeners();
+  protected void uninstallDefaults();
+  protected void uninstallListeners();
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  public void paint(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  public void propertyChange(java.beans.PropertyChangeEvent);
+}

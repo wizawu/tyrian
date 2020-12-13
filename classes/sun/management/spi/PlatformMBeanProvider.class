@@ -1,0 +1,5 @@
+Compiled from "PlatformMBeanProvider.java"
+public abstract class sun.management.spi.PlatformMBeanProvider {
+  protected sun.management.spi.PlatformMBeanProvider();
+  public abstract java.util.List<sun.management.spi.PlatformMBeanProvider$PlatformComponent<?>> getPlatformComponentList();
+}

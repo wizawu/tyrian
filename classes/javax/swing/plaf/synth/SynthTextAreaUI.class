@@ -1,0 +1,15 @@
+Compiled from "SynthTextAreaUI.java"
+public class javax.swing.plaf.synth.SynthTextAreaUI extends javax.swing.plaf.basic.BasicTextAreaUI implements javax.swing.plaf.synth.SynthUI {
+  public javax.swing.plaf.synth.SynthTextAreaUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  protected void installDefaults();
+  protected void uninstallDefaults();
+  public javax.swing.plaf.synth.SynthContext getContext(javax.swing.JComponent);
+  public void update(java.awt.Graphics, javax.swing.JComponent);
+  protected void paint(javax.swing.plaf.synth.SynthContext, java.awt.Graphics);
+  protected void paintBackground(java.awt.Graphics);
+  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
+  protected void propertyChange(java.beans.PropertyChangeEvent);
+  static javax.swing.text.JTextComponent access$000(javax.swing.plaf.synth.SynthTextAreaUI);
+  static javax.swing.text.JTextComponent access$100(javax.swing.plaf.synth.SynthTextAreaUI);
+}

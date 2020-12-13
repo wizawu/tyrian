@@ -1,0 +1,10 @@
+Compiled from "CompositeFontDescriptor.java"
+public class sun.font.CompositeFontDescriptor {
+  public sun.font.CompositeFontDescriptor(java.lang.String, int, java.lang.String[], java.lang.String[], int[], int[]);
+  public java.lang.String getFaceName();
+  public int getCoreComponentCount();
+  public java.lang.String[] getComponentFaceNames();
+  public java.lang.String[] getComponentFileNames();
+  public int[] getExclusionRanges();
+  public int[] getExclusionRangeLimits();
+}

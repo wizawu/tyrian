@@ -1,0 +1,7 @@
+Compiled from "JSSecurityManager.java"
+final class com.sun.media.sound.JSSecurityManager {
+  static void checkRecordPermission() throws java.lang.SecurityException;
+  static void loadProperties(java.util.Properties);
+  static java.lang.Thread createThread(java.lang.Runnable, java.lang.String, boolean, int, boolean);
+  static synchronized <T> java.util.List<T> getProviders(java.lang.Class<T>);
+}

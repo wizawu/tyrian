@@ -1,0 +1,14 @@
+Compiled from "ScannerFactory.java"
+public class com.sun.tools.javac.parser.ScannerFactory {
+  public static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.parser.ScannerFactory> scannerFactoryKey;
+  final com.sun.tools.javac.util.Log log;
+  final com.sun.tools.javac.util.Names names;
+  final com.sun.tools.javac.code.Source source;
+  final com.sun.tools.javac.code.Preview preview;
+  final com.sun.tools.javac.parser.Tokens tokens;
+  public static com.sun.tools.javac.parser.ScannerFactory instance(com.sun.tools.javac.util.Context);
+  protected com.sun.tools.javac.parser.ScannerFactory(com.sun.tools.javac.util.Context);
+  public com.sun.tools.javac.parser.Scanner newScanner(java.lang.CharSequence, boolean);
+  public com.sun.tools.javac.parser.Scanner newScanner(char[], int, boolean);
+  static {};
+}

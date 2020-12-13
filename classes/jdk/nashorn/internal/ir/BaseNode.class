@@ -1,0 +1,19 @@
+Compiled from "BaseNode.java"
+public abstract class jdk.nashorn.internal.ir.BaseNode extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.FunctionCall,jdk.nashorn.internal.ir.Optimistic {
+  protected final jdk.nashorn.internal.ir.Expression base;
+  protected final jdk.nashorn.internal.codegen.types.Type type;
+  protected final int programPoint;
+  public jdk.nashorn.internal.ir.BaseNode(long, int, jdk.nashorn.internal.ir.Expression, boolean, boolean);
+  protected jdk.nashorn.internal.ir.BaseNode(jdk.nashorn.internal.ir.BaseNode, jdk.nashorn.internal.ir.Expression, boolean, jdk.nashorn.internal.codegen.types.Type, int, boolean);
+  public jdk.nashorn.internal.ir.Expression getBase();
+  public boolean isFunction();
+  public jdk.nashorn.internal.codegen.types.Type getType();
+  public int getProgramPoint();
+  public jdk.nashorn.internal.codegen.types.Type getMostOptimisticType();
+  public jdk.nashorn.internal.codegen.types.Type getMostPessimisticType();
+  public boolean canBeOptimistic();
+  public boolean isIndex();
+  public abstract jdk.nashorn.internal.ir.BaseNode setIsFunction();
+  public boolean isSuper();
+  public abstract jdk.nashorn.internal.ir.BaseNode setIsSuper();
+}

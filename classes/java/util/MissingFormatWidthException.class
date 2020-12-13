@@ -1,0 +1,6 @@
+Compiled from "MissingFormatWidthException.java"
+public class java.util.MissingFormatWidthException extends java.util.IllegalFormatException {
+  public java.util.MissingFormatWidthException(java.lang.String);
+  public java.lang.String getFormatSpecifier();
+  public java.lang.String getMessage();
+}

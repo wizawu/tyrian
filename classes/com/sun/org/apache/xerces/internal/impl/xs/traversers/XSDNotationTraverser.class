@@ -1,0 +1,5 @@
+Compiled from "XSDNotationTraverser.java"
+class com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDNotationTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
+  com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDNotationTraverser(com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker);
+  com.sun.org.apache.xerces.internal.impl.xs.XSNotationDecl traverse(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
+}

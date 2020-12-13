@@ -1,0 +1,14 @@
+Compiled from "Status.java"
+public final class com.sun.org.apache.xerces.internal.util.Status extends java.lang.Enum<com.sun.org.apache.xerces.internal.util.Status> {
+  public static final com.sun.org.apache.xerces.internal.util.Status SET;
+  public static final com.sun.org.apache.xerces.internal.util.Status UNKNOWN;
+  public static final com.sun.org.apache.xerces.internal.util.Status RECOGNIZED;
+  public static final com.sun.org.apache.xerces.internal.util.Status NOT_SUPPORTED;
+  public static final com.sun.org.apache.xerces.internal.util.Status NOT_RECOGNIZED;
+  public static final com.sun.org.apache.xerces.internal.util.Status NOT_ALLOWED;
+  public static com.sun.org.apache.xerces.internal.util.Status[] values();
+  public static com.sun.org.apache.xerces.internal.util.Status valueOf(java.lang.String);
+  public short getType();
+  public boolean isExceptional();
+  static {};
+}

@@ -1,0 +1,5 @@
+Compiled from "ObjectHistogram.java"
+public class sun.jvm.hotspot.ObjectHistogram {
+  public sun.jvm.hotspot.ObjectHistogram();
+  public static void main(java.lang.String[]);
+}

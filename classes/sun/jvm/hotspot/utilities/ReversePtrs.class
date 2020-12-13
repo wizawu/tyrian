@@ -1,0 +1,6 @@
+Compiled from "ReversePtrs.java"
+public class sun.jvm.hotspot.utilities.ReversePtrs {
+  public sun.jvm.hotspot.utilities.ReversePtrs();
+  public void put(sun.jvm.hotspot.utilities.LivenessPathElement, sun.jvm.hotspot.oops.Oop);
+  public java.util.ArrayList get(sun.jvm.hotspot.oops.Oop);
+}

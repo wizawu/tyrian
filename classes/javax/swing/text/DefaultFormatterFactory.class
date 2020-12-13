@@ -1,0 +1,17 @@
+Compiled from "DefaultFormatterFactory.java"
+public class javax.swing.text.DefaultFormatterFactory extends javax.swing.JFormattedTextField$AbstractFormatterFactory implements java.io.Serializable {
+  public javax.swing.text.DefaultFormatterFactory();
+  public javax.swing.text.DefaultFormatterFactory(javax.swing.JFormattedTextField$AbstractFormatter);
+  public javax.swing.text.DefaultFormatterFactory(javax.swing.JFormattedTextField$AbstractFormatter, javax.swing.JFormattedTextField$AbstractFormatter);
+  public javax.swing.text.DefaultFormatterFactory(javax.swing.JFormattedTextField$AbstractFormatter, javax.swing.JFormattedTextField$AbstractFormatter, javax.swing.JFormattedTextField$AbstractFormatter);
+  public javax.swing.text.DefaultFormatterFactory(javax.swing.JFormattedTextField$AbstractFormatter, javax.swing.JFormattedTextField$AbstractFormatter, javax.swing.JFormattedTextField$AbstractFormatter, javax.swing.JFormattedTextField$AbstractFormatter);
+  public void setDefaultFormatter(javax.swing.JFormattedTextField$AbstractFormatter);
+  public javax.swing.JFormattedTextField$AbstractFormatter getDefaultFormatter();
+  public void setDisplayFormatter(javax.swing.JFormattedTextField$AbstractFormatter);
+  public javax.swing.JFormattedTextField$AbstractFormatter getDisplayFormatter();
+  public void setEditFormatter(javax.swing.JFormattedTextField$AbstractFormatter);
+  public javax.swing.JFormattedTextField$AbstractFormatter getEditFormatter();
+  public void setNullFormatter(javax.swing.JFormattedTextField$AbstractFormatter);
+  public javax.swing.JFormattedTextField$AbstractFormatter getNullFormatter();
+  public javax.swing.JFormattedTextField$AbstractFormatter getFormatter(javax.swing.JFormattedTextField);
+}

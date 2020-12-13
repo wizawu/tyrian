@@ -1,0 +1,18 @@
+Compiled from "IntegerModuloP.java"
+public interface sun.security.util.math.IntegerModuloP {
+  public abstract sun.security.util.math.IntegerFieldModuloP getField();
+  public abstract java.math.BigInteger asBigInteger();
+  public abstract sun.security.util.math.ImmutableIntegerModuloP fixed();
+  public abstract sun.security.util.math.MutableIntegerModuloP mutable();
+  public abstract sun.security.util.math.ImmutableIntegerModuloP add(sun.security.util.math.IntegerModuloP);
+  public abstract sun.security.util.math.ImmutableIntegerModuloP additiveInverse();
+  public abstract sun.security.util.math.ImmutableIntegerModuloP multiply(sun.security.util.math.IntegerModuloP);
+  public default byte[] addModPowerTwo(sun.security.util.math.IntegerModuloP, int);
+  public abstract void addModPowerTwo(sun.security.util.math.IntegerModuloP, byte[]);
+  public default byte[] asByteArray(int);
+  public abstract void asByteArray(byte[]);
+  public default sun.security.util.math.ImmutableIntegerModuloP multiplicativeInverse();
+  public default sun.security.util.math.ImmutableIntegerModuloP subtract(sun.security.util.math.IntegerModuloP);
+  public default sun.security.util.math.ImmutableIntegerModuloP square();
+  public default sun.security.util.math.ImmutableIntegerModuloP pow(java.math.BigInteger);
+}

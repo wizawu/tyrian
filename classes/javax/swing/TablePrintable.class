@@ -1,0 +1,7 @@
+Compiled from "TablePrintable.java"
+class javax.swing.TablePrintable implements java.awt.print.Printable {
+  static final boolean $assertionsDisabled;
+  public javax.swing.TablePrintable(javax.swing.JTable, javax.swing.JTable$PrintMode, java.text.MessageFormat, java.text.MessageFormat);
+  public int print(java.awt.Graphics, java.awt.print.PageFormat, int) throws java.awt.print.PrinterException;
+  static {};
+}

@@ -1,0 +1,16 @@
+Compiled from "DOMOutputImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.DOMOutputImpl implements org.w3c.dom.ls.LSOutput {
+  protected java.io.Writer fCharStream;
+  protected java.io.OutputStream fByteStream;
+  protected java.lang.String fSystemId;
+  protected java.lang.String fEncoding;
+  public com.sun.org.apache.xerces.internal.dom.DOMOutputImpl();
+  public java.io.Writer getCharacterStream();
+  public void setCharacterStream(java.io.Writer);
+  public java.io.OutputStream getByteStream();
+  public void setByteStream(java.io.OutputStream);
+  public java.lang.String getSystemId();
+  public void setSystemId(java.lang.String);
+  public java.lang.String getEncoding();
+  public void setEncoding(java.lang.String);
+}

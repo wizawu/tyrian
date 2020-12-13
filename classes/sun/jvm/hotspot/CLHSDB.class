@@ -1,0 +1,6 @@
+Compiled from "CLHSDB.java"
+public class sun.jvm.hotspot.CLHSDB {
+  public sun.jvm.hotspot.CLHSDB(sun.jvm.hotspot.debugger.JVMDebugger);
+  public static void main(java.lang.String[]);
+  public void run();
+}

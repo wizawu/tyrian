@@ -1,0 +1,14 @@
+Compiled from "BaseLocale.java"
+public final class sun.util.locale.BaseLocale {
+  public static final java.lang.String SEP;
+  public static sun.util.locale.BaseLocale createInstance(java.lang.String, java.lang.String);
+  public static sun.util.locale.BaseLocale getInstance(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public java.lang.String getLanguage();
+  public java.lang.String getScript();
+  public java.lang.String getRegion();
+  public java.lang.String getVariant();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+  public int hashCode();
+  static {};
+}

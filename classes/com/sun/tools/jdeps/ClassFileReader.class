@@ -1,0 +1,21 @@
+Compiled from "ClassFileReader.java"
+public class com.sun.tools.jdeps.ClassFileReader implements java.io.Closeable {
+  protected final java.nio.file.Path path;
+  protected final java.lang.String baseFileName;
+  protected java.util.Set<java.lang.String> entries;
+  protected final java.util.List<java.lang.String> skippedEntries;
+  public static com.sun.tools.jdeps.ClassFileReader newInstance(java.nio.file.Path) throws java.io.IOException;
+  public static com.sun.tools.jdeps.ClassFileReader newInstance(java.nio.file.Path, java.lang.Runtime$Version) throws java.io.IOException;
+  public static com.sun.tools.jdeps.ClassFileReader newInstance(java.nio.file.FileSystem, java.nio.file.Path) throws java.io.IOException;
+  protected com.sun.tools.jdeps.ClassFileReader(java.nio.file.Path);
+  public java.lang.String getFileName();
+  public java.util.List<java.lang.String> skippedEntries();
+  public java.util.Set<java.lang.String> entries();
+  public com.sun.tools.classfile.ClassFile getClassFile(java.lang.String) throws java.io.IOException;
+  public java.lang.Iterable<com.sun.tools.classfile.ClassFile> getClassFiles() throws java.io.IOException;
+  protected com.sun.tools.classfile.ClassFile readClassFile(java.nio.file.Path) throws java.io.IOException;
+  protected java.util.Set<java.lang.String> scan();
+  static boolean isClass(java.nio.file.Path);
+  public void close() throws java.io.IOException;
+  public java.lang.String toString();
+}

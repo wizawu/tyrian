@@ -1,0 +1,14 @@
+Compiled from "JavacTask.java"
+public abstract class com.sun.source.util.JavacTask implements javax.tools.JavaCompiler$CompilationTask {
+  public com.sun.source.util.JavacTask();
+  public static com.sun.source.util.JavacTask instance(javax.annotation.processing.ProcessingEnvironment);
+  public abstract java.lang.Iterable<? extends com.sun.source.tree.CompilationUnitTree> parse() throws java.io.IOException;
+  public abstract java.lang.Iterable<? extends javax.lang.model.element.Element> analyze() throws java.io.IOException;
+  public abstract java.lang.Iterable<? extends javax.tools.JavaFileObject> generate() throws java.io.IOException;
+  public abstract void setTaskListener(com.sun.source.util.TaskListener);
+  public abstract void addTaskListener(com.sun.source.util.TaskListener);
+  public abstract void removeTaskListener(com.sun.source.util.TaskListener);
+  public abstract javax.lang.model.type.TypeMirror getTypeMirror(java.lang.Iterable<? extends com.sun.source.tree.Tree>);
+  public abstract javax.lang.model.util.Elements getElements();
+  public abstract javax.lang.model.util.Types getTypes();
+}

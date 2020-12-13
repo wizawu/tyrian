@@ -1,0 +1,5 @@
+Compiled from "MultipleArgumentsForOptionException.java"
+class jdk.internal.joptsimple.MultipleArgumentsForOptionException extends jdk.internal.joptsimple.OptionException {
+  jdk.internal.joptsimple.MultipleArgumentsForOptionException(jdk.internal.joptsimple.OptionSpec<?>);
+  java.lang.Object[] messageArguments();
+}

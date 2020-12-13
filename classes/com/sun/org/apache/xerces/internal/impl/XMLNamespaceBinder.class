@@ -1,0 +1,46 @@
+Compiled from "XMLNamespaceBinder.java"
+public class com.sun.org.apache.xerces.internal.impl.XMLNamespaceBinder implements com.sun.org.apache.xerces.internal.xni.parser.XMLComponent,com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter {
+  protected static final java.lang.String NAMESPACES;
+  protected static final java.lang.String SYMBOL_TABLE;
+  protected static final java.lang.String ERROR_REPORTER;
+  protected boolean fNamespaces;
+  protected com.sun.org.apache.xerces.internal.util.SymbolTable fSymbolTable;
+  protected com.sun.org.apache.xerces.internal.impl.XMLErrorReporter fErrorReporter;
+  protected com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler fDocumentHandler;
+  protected com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource fDocumentSource;
+  protected boolean fOnlyPassPrefixMappingEvents;
+  public com.sun.org.apache.xerces.internal.impl.XMLNamespaceBinder();
+  public void setOnlyPassPrefixMappingEvents(boolean);
+  public boolean getOnlyPassPrefixMappingEvents();
+  public void reset(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public java.lang.String[] getRecognizedFeatures();
+  public void setFeature(java.lang.String, boolean) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public java.lang.String[] getRecognizedProperties();
+  public void setProperty(java.lang.String, java.lang.Object) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  public java.lang.Boolean getFeatureDefault(java.lang.String);
+  public java.lang.Object getPropertyDefault(java.lang.String);
+  public void setDocumentHandler(com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler);
+  public com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler getDocumentHandler();
+  public void setDocumentSource(com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource);
+  public com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource getDocumentSource();
+  public void startGeneralEntity(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void textDecl(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startDocument(com.sun.org.apache.xerces.internal.xni.XMLLocator, java.lang.String, com.sun.org.apache.xerces.internal.xni.NamespaceContext, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void xmlDecl(java.lang.String, java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void doctypeDecl(java.lang.String, java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void comment(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void processingInstruction(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void emptyElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void characters(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void ignorableWhitespace(com.sun.org.apache.xerces.internal.xni.XMLString, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void startCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endCDATA(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endDocument(com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void endGeneralEntity(java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected void handleStartElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.XMLAttributes, com.sun.org.apache.xerces.internal.xni.Augmentations, boolean) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected void handleEndElement(com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.Augmentations, boolean) throws com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected boolean prefixBoundToNullURI(java.lang.String, java.lang.String);
+  static {};
+}

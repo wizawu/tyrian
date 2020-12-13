@@ -1,0 +1,6 @@
+Compiled from "NamespaceChangeListener.java"
+public interface javax.naming.event.NamespaceChangeListener extends javax.naming.event.NamingListener {
+  public abstract void objectAdded(javax.naming.event.NamingEvent);
+  public abstract void objectRemoved(javax.naming.event.NamingEvent);
+  public abstract void objectRenamed(javax.naming.event.NamingEvent);
+}

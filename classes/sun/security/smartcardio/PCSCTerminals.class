@@ -1,0 +1,9 @@
+Compiled from "PCSCTerminals.java"
+final class sun.security.smartcardio.PCSCTerminals extends javax.smartcardio.CardTerminals {
+  sun.security.smartcardio.PCSCTerminals();
+  static synchronized void initContext() throws sun.security.smartcardio.PCSCException;
+  public synchronized java.util.List<javax.smartcardio.CardTerminal> list(javax.smartcardio.CardTerminals$State) throws javax.smartcardio.CardException;
+  public synchronized boolean waitForChange(long) throws javax.smartcardio.CardException;
+  static java.util.List<javax.smartcardio.CardTerminal> waitForCards(java.util.List<? extends javax.smartcardio.CardTerminal>, long, boolean) throws javax.smartcardio.CardException;
+  static {};
+}

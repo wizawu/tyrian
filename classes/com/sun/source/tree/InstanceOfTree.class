@@ -1,0 +1,5 @@
+Compiled from "InstanceOfTree.java"
+public interface com.sun.source.tree.InstanceOfTree extends com.sun.source.tree.ExpressionTree {
+  public abstract com.sun.source.tree.ExpressionTree getExpression();
+  public abstract com.sun.source.tree.Tree getType();
+}

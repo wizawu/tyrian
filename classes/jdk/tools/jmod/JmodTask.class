@@ -1,0 +1,16 @@
+Compiled from "JmodTask.java"
+public class jdk.tools.jmod.JmodTask {
+  static final int EXIT_OK;
+  static final int EXIT_ERROR;
+  static final int EXIT_CMDERR;
+  static final int EXIT_SYSERR;
+  static final int EXIT_ABNORMAL;
+  public jdk.tools.jmod.JmodTask();
+  void setLog(java.io.PrintWriter, java.io.PrintWriter);
+  public int run(java.lang.String[]);
+  static <T> java.lang.String toLowerCaseString(java.util.Collection<T>);
+  static <T> java.lang.String toString(java.util.Collection<T>);
+  static boolean isValidJavaIdentifier(java.lang.String);
+  static <E> E getLastElement(java.util.List<E>);
+  static {};
+}

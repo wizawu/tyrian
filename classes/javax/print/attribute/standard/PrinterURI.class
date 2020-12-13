@@ -1,0 +1,7 @@
+Compiled from "PrinterURI.java"
+public final class javax.print.attribute.standard.PrinterURI extends javax.print.attribute.URISyntax implements javax.print.attribute.PrintServiceAttribute {
+  public javax.print.attribute.standard.PrinterURI(java.net.URI);
+  public boolean equals(java.lang.Object);
+  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public final java.lang.String getName();
+}

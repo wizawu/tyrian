@@ -1,0 +1,14 @@
+Compiled from "GtkFileDialogPeer.java"
+final class sun.awt.X11.GtkFileDialogPeer extends sun.awt.X11.XDialogPeer implements java.awt.peer.FileDialogPeer {
+  sun.awt.X11.GtkFileDialogPeer(java.awt.FileDialog);
+  public native void toFront();
+  public native void setBounds(int, int, int, int, int);
+  public void setVisible(boolean);
+  public void dispose();
+  public void setDirectory(java.lang.String);
+  public void setFile(java.lang.String);
+  protected void requestXFocus(long, boolean);
+  public void setFilenameFilter(java.io.FilenameFilter);
+  boolean setWindow(long);
+  static {};
+}

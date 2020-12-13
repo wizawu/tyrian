@@ -1,0 +1,19 @@
+Compiled from "HttpClient.java"
+public abstract class java.net.http.HttpClient {
+  protected java.net.http.HttpClient();
+  public static java.net.http.HttpClient newHttpClient();
+  public static java.net.http.HttpClient$Builder newBuilder();
+  public abstract java.util.Optional<java.net.CookieHandler> cookieHandler();
+  public abstract java.util.Optional<java.time.Duration> connectTimeout();
+  public abstract java.net.http.HttpClient$Redirect followRedirects();
+  public abstract java.util.Optional<java.net.ProxySelector> proxy();
+  public abstract javax.net.ssl.SSLContext sslContext();
+  public abstract javax.net.ssl.SSLParameters sslParameters();
+  public abstract java.util.Optional<java.net.Authenticator> authenticator();
+  public abstract java.net.http.HttpClient$Version version();
+  public abstract java.util.Optional<java.util.concurrent.Executor> executor();
+  public abstract <T> java.net.http.HttpResponse<T> send(java.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler<T>) throws java.io.IOException, java.lang.InterruptedException;
+  public abstract <T> java.util.concurrent.CompletableFuture<java.net.http.HttpResponse<T>> sendAsync(java.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler<T>);
+  public abstract <T> java.util.concurrent.CompletableFuture<java.net.http.HttpResponse<T>> sendAsync(java.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler<T>, java.net.http.HttpResponse$PushPromiseHandler<T>);
+  public java.net.http.WebSocket$Builder newWebSocketBuilder();
+}

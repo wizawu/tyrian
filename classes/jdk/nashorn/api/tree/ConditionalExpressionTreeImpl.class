@@ -1,0 +1,9 @@
+Compiled from "ConditionalExpressionTreeImpl.java"
+final class jdk.nashorn.api.tree.ConditionalExpressionTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.ConditionalExpressionTree {
+  jdk.nashorn.api.tree.ConditionalExpressionTreeImpl(jdk.nashorn.internal.ir.TernaryNode, jdk.nashorn.api.tree.ExpressionTree, jdk.nashorn.api.tree.ExpressionTree, jdk.nashorn.api.tree.ExpressionTree);
+  public jdk.nashorn.api.tree.Tree$Kind getKind();
+  public jdk.nashorn.api.tree.ExpressionTree getCondition();
+  public jdk.nashorn.api.tree.ExpressionTree getTrueExpression();
+  public jdk.nashorn.api.tree.ExpressionTree getFalseExpression();
+  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
+}

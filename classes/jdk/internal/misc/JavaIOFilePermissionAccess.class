@@ -1,0 +1,5 @@
+Compiled from "JavaIOFilePermissionAccess.java"
+public interface jdk.internal.misc.JavaIOFilePermissionAccess {
+  public abstract java.io.FilePermission newPermPlusAltPath(java.io.FilePermission);
+  public abstract java.io.FilePermission newPermUsingAltPath(java.io.FilePermission);
+}

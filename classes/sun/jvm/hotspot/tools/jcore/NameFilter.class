@@ -1,0 +1,7 @@
+Compiled from "NameFilter.java"
+public class sun.jvm.hotspot.tools.jcore.NameFilter implements sun.jvm.hotspot.tools.jcore.ClassFilter {
+  public java.util.regex.Pattern includePattern;
+  public sun.jvm.hotspot.tools.jcore.NameFilter();
+  public sun.jvm.hotspot.tools.jcore.NameFilter(java.lang.String);
+  public boolean canInclude(sun.jvm.hotspot.oops.InstanceKlass);
+}

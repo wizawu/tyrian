@@ -1,0 +1,9 @@
+Compiled from "HashDrbg.java"
+public class sun.security.provider.HashDrbg extends sun.security.provider.AbstractHashDrbg {
+  public sun.security.provider.HashDrbg(java.security.SecureRandomParameters);
+  protected void initEngine();
+  public static byte[] hashDf(java.security.MessageDigest, int, int, java.util.List<byte[]>);
+  protected final synchronized void hashReseedInternal(java.util.List<byte[]>);
+  public final synchronized void generateAlgorithm(byte[], byte[]);
+  static {};
+}

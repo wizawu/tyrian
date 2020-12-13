@@ -1,0 +1,5 @@
+Compiled from "QuitResponse.java"
+public interface java.awt.desktop.QuitResponse {
+  public abstract void performQuit();
+  public abstract void cancelQuit();
+}

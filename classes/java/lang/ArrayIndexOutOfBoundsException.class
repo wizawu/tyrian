@@ -1,0 +1,6 @@
+Compiled from "ArrayIndexOutOfBoundsException.java"
+public class java.lang.ArrayIndexOutOfBoundsException extends java.lang.IndexOutOfBoundsException {
+  public java.lang.ArrayIndexOutOfBoundsException();
+  public java.lang.ArrayIndexOutOfBoundsException(java.lang.String);
+  public java.lang.ArrayIndexOutOfBoundsException(int);
+}

@@ -1,0 +1,13 @@
+Compiled from "AppletSecurity.java"
+public class sun.applet.AppletSecurity extends sun.awt.AWTSecurityManager {
+  public sun.applet.AppletSecurity();
+  public void reset();
+  protected boolean inThreadGroup(java.lang.ThreadGroup);
+  protected boolean inThreadGroup(java.lang.Thread);
+  public void checkAccess(java.lang.Thread);
+  public synchronized void checkAccess(java.lang.ThreadGroup);
+  public void checkPackageAccess(java.lang.String);
+  public java.lang.ThreadGroup getThreadGroup();
+  public sun.awt.AppContext getAppContext();
+  static {};
+}

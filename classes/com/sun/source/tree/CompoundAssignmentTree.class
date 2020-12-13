@@ -1,0 +1,5 @@
+Compiled from "CompoundAssignmentTree.java"
+public interface com.sun.source.tree.CompoundAssignmentTree extends com.sun.source.tree.ExpressionTree {
+  public abstract com.sun.source.tree.ExpressionTree getVariable();
+  public abstract com.sun.source.tree.ExpressionTree getExpression();
+}

@@ -1,0 +1,13 @@
+Compiled from "AccessibleStateSet.java"
+public class javax.accessibility.AccessibleStateSet {
+  protected java.util.Vector<javax.accessibility.AccessibleState> states;
+  public javax.accessibility.AccessibleStateSet();
+  public javax.accessibility.AccessibleStateSet(javax.accessibility.AccessibleState[]);
+  public boolean add(javax.accessibility.AccessibleState);
+  public void addAll(javax.accessibility.AccessibleState[]);
+  public boolean remove(javax.accessibility.AccessibleState);
+  public void clear();
+  public boolean contains(javax.accessibility.AccessibleState);
+  public javax.accessibility.AccessibleState[] toArray();
+  public java.lang.String toString();
+}

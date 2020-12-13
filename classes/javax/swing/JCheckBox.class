@@ -1,0 +1,19 @@
+Compiled from "JCheckBox.java"
+public class javax.swing.JCheckBox extends javax.swing.JToggleButton implements javax.accessibility.Accessible {
+  public static final java.lang.String BORDER_PAINTED_FLAT_CHANGED_PROPERTY;
+  public javax.swing.JCheckBox();
+  public javax.swing.JCheckBox(javax.swing.Icon);
+  public javax.swing.JCheckBox(javax.swing.Icon, boolean);
+  public javax.swing.JCheckBox(java.lang.String);
+  public javax.swing.JCheckBox(javax.swing.Action);
+  public javax.swing.JCheckBox(java.lang.String, boolean);
+  public javax.swing.JCheckBox(java.lang.String, javax.swing.Icon);
+  public javax.swing.JCheckBox(java.lang.String, javax.swing.Icon, boolean);
+  public void setBorderPaintedFlat(boolean);
+  public boolean isBorderPaintedFlat();
+  public void updateUI();
+  public java.lang.String getUIClassID();
+  void setIconFromAction(javax.swing.Action);
+  protected java.lang.String paramString();
+  public javax.accessibility.AccessibleContext getAccessibleContext();
+}

@@ -1,0 +1,5 @@
+Compiled from "ECKeySizeParameterSpec.java"
+public class sun.security.util.ECKeySizeParameterSpec implements java.security.spec.AlgorithmParameterSpec {
+  public sun.security.util.ECKeySizeParameterSpec(int);
+  public int getKeySize();
+}

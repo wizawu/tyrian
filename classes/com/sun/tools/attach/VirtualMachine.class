@@ -1,0 +1,23 @@
+Compiled from "VirtualMachine.java"
+public abstract class com.sun.tools.attach.VirtualMachine {
+  protected com.sun.tools.attach.VirtualMachine(com.sun.tools.attach.spi.AttachProvider, java.lang.String);
+  public static java.util.List<com.sun.tools.attach.VirtualMachineDescriptor> list();
+  public static com.sun.tools.attach.VirtualMachine attach(java.lang.String) throws com.sun.tools.attach.AttachNotSupportedException, java.io.IOException;
+  public static com.sun.tools.attach.VirtualMachine attach(com.sun.tools.attach.VirtualMachineDescriptor) throws com.sun.tools.attach.AttachNotSupportedException, java.io.IOException;
+  public abstract void detach() throws java.io.IOException;
+  public final com.sun.tools.attach.spi.AttachProvider provider();
+  public final java.lang.String id();
+  public abstract void loadAgentLibrary(java.lang.String, java.lang.String) throws com.sun.tools.attach.AgentLoadException, com.sun.tools.attach.AgentInitializationException, java.io.IOException;
+  public void loadAgentLibrary(java.lang.String) throws com.sun.tools.attach.AgentLoadException, com.sun.tools.attach.AgentInitializationException, java.io.IOException;
+  public abstract void loadAgentPath(java.lang.String, java.lang.String) throws com.sun.tools.attach.AgentLoadException, com.sun.tools.attach.AgentInitializationException, java.io.IOException;
+  public void loadAgentPath(java.lang.String) throws com.sun.tools.attach.AgentLoadException, com.sun.tools.attach.AgentInitializationException, java.io.IOException;
+  public abstract void loadAgent(java.lang.String, java.lang.String) throws com.sun.tools.attach.AgentLoadException, com.sun.tools.attach.AgentInitializationException, java.io.IOException;
+  public void loadAgent(java.lang.String) throws com.sun.tools.attach.AgentLoadException, com.sun.tools.attach.AgentInitializationException, java.io.IOException;
+  public abstract java.util.Properties getSystemProperties() throws java.io.IOException;
+  public abstract java.util.Properties getAgentProperties() throws java.io.IOException;
+  public abstract void startManagementAgent(java.util.Properties) throws java.io.IOException;
+  public abstract java.lang.String startLocalManagementAgent() throws java.io.IOException;
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

@@ -1,0 +1,5 @@
+Compiled from "AmbiguousMethodException.java"
+public class com.sun.tools.example.debug.tty.AmbiguousMethodException extends java.lang.Exception {
+  public com.sun.tools.example.debug.tty.AmbiguousMethodException();
+  public com.sun.tools.example.debug.tty.AmbiguousMethodException(java.lang.String);
+}

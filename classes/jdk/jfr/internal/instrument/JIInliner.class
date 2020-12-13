@@ -1,0 +1,5 @@
+Compiled from "JIInliner.java"
+final class jdk.jfr.internal.instrument.JIInliner extends jdk.internal.org.objectweb.asm.ClassVisitor {
+  jdk.jfr.internal.instrument.JIInliner(int, jdk.internal.org.objectweb.asm.ClassVisitor, java.lang.String, java.lang.String, jdk.internal.org.objectweb.asm.ClassReader, java.util.List<java.lang.reflect.Method>);
+  public jdk.internal.org.objectweb.asm.MethodVisitor visitMethod(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
+}

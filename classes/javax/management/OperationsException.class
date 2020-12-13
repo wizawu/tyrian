@@ -1,0 +1,5 @@
+Compiled from "OperationsException.java"
+public class javax.management.OperationsException extends javax.management.JMException {
+  public javax.management.OperationsException();
+  public javax.management.OperationsException(java.lang.String);
+}

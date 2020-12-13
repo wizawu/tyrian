@@ -1,0 +1,5 @@
+Compiled from "FailedLoginException.java"
+public class javax.security.auth.login.FailedLoginException extends javax.security.auth.login.LoginException {
+  public javax.security.auth.login.FailedLoginException();
+  public javax.security.auth.login.FailedLoginException(java.lang.String);
+}

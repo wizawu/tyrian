@@ -1,0 +1,20 @@
+Compiled from "DefaultTableCellRenderer.java"
+public class javax.swing.table.DefaultTableCellRenderer extends javax.swing.JLabel implements javax.swing.table.TableCellRenderer,java.io.Serializable {
+  protected static javax.swing.border.Border noFocusBorder;
+  public javax.swing.table.DefaultTableCellRenderer();
+  public void setForeground(java.awt.Color);
+  public void setBackground(java.awt.Color);
+  public void updateUI();
+  public java.awt.Component getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int);
+  public boolean isOpaque();
+  public void invalidate();
+  public void validate();
+  public void revalidate();
+  public void repaint(long, int, int, int, int);
+  public void repaint(java.awt.Rectangle);
+  public void repaint();
+  protected void firePropertyChange(java.lang.String, java.lang.Object, java.lang.Object);
+  public void firePropertyChange(java.lang.String, boolean, boolean);
+  protected void setValue(java.lang.Object);
+  static {};
+}

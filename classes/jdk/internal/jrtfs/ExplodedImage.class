@@ -1,0 +1,10 @@
+Compiled from "ExplodedImage.java"
+class jdk.internal.jrtfs.ExplodedImage extends jdk.internal.jrtfs.SystemImage {
+  jdk.internal.jrtfs.ExplodedImage(java.nio.file.Path) throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public byte[] getResource(jdk.internal.jimage.ImageReader$Node) throws java.io.IOException;
+  public synchronized jdk.internal.jimage.ImageReader$Node findNode(java.lang.String);
+  jdk.internal.jimage.ImageReader$Node findModulesNode(java.lang.String);
+  java.nio.file.Path underlyingPath(java.lang.String);
+  static {};
+}

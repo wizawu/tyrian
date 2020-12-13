@@ -1,0 +1,7 @@
+Compiled from "RTFAttributes.java"
+class javax.swing.text.rtf.RTFAttributes {
+  static javax.swing.text.rtf.RTFAttribute[] attributes;
+  javax.swing.text.rtf.RTFAttributes();
+  static java.util.Dictionary<java.lang.String, javax.swing.text.rtf.RTFAttribute> attributesByKeyword();
+  static {};
+}

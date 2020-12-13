@@ -1,0 +1,13 @@
+Compiled from "SnippetMaps.java"
+final class jdk.jshell.SnippetMaps {
+  jdk.jshell.SnippetMaps(jdk.jshell.JShell);
+  void installSnippet(jdk.jshell.Snippet);
+  jdk.jshell.Snippet getSnippet(jdk.jshell.Key);
+  jdk.jshell.Snippet getSnippet(int);
+  jdk.jshell.Snippet getSnippetDeadOrAlive(int);
+  java.util.List<jdk.jshell.Snippet> snippetList();
+  java.lang.String packageAndImportsExcept(java.util.Set<jdk.jshell.Key>, java.util.Collection<jdk.jshell.Snippet>);
+  java.util.List<jdk.jshell.Snippet> getDependents(jdk.jshell.Snippet);
+  void mapDependencies(jdk.jshell.Snippet);
+  java.lang.String fullClassNameAndPackageToClass(java.lang.String, java.lang.String);
+}

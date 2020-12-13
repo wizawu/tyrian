@@ -1,0 +1,9 @@
+Compiled from "TIFFImageReadParam.java"
+public final class javax.imageio.plugins.tiff.TIFFImageReadParam extends javax.imageio.ImageReadParam {
+  public javax.imageio.plugins.tiff.TIFFImageReadParam();
+  public void addAllowedTagSet(javax.imageio.plugins.tiff.TIFFTagSet);
+  public void removeAllowedTagSet(javax.imageio.plugins.tiff.TIFFTagSet);
+  public java.util.List<javax.imageio.plugins.tiff.TIFFTagSet> getAllowedTagSets();
+  public void setReadUnknownTags(boolean);
+  public boolean getReadUnknownTags();
+}

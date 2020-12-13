@@ -1,0 +1,11 @@
+Compiled from "BreakIteratorProviderImpl.java"
+public class sun.util.locale.provider.BreakIteratorProviderImpl extends java.text.spi.BreakIteratorProvider implements sun.util.locale.provider.AvailableLanguageTags {
+  public sun.util.locale.provider.BreakIteratorProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
+  public java.util.Locale[] getAvailableLocales();
+  public java.text.BreakIterator getWordInstance(java.util.Locale);
+  public java.text.BreakIterator getLineInstance(java.util.Locale);
+  public java.text.BreakIterator getCharacterInstance(java.util.Locale);
+  public java.text.BreakIterator getSentenceInstance(java.util.Locale);
+  public java.util.Set<java.lang.String> getAvailableLanguageTags();
+  public boolean isSupportedLocale(java.util.Locale);
+}

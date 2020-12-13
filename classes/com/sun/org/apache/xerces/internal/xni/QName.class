@@ -1,0 +1,17 @@
+Compiled from "QName.java"
+public class com.sun.org.apache.xerces.internal.xni.QName implements java.lang.Cloneable {
+  public java.lang.String prefix;
+  public java.lang.String localpart;
+  public java.lang.String rawname;
+  public java.lang.String uri;
+  public com.sun.org.apache.xerces.internal.xni.QName();
+  public com.sun.org.apache.xerces.internal.xni.QName(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xerces.internal.xni.QName(com.sun.org.apache.xerces.internal.xni.QName);
+  public void setValues(com.sun.org.apache.xerces.internal.xni.QName);
+  public void setValues(java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  public void clear();
+  public java.lang.Object clone();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+  public java.lang.String toString();
+}

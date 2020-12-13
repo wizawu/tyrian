@@ -1,0 +1,5 @@
+Compiled from "GTKKeybindings.java"
+public class sun.swing.plaf.GTKKeybindings {
+  public sun.swing.plaf.GTKKeybindings();
+  public static void installKeybindings(javax.swing.UIDefaults);
+}

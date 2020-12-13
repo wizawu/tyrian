@@ -1,0 +1,6 @@
+Compiled from "FileInputStreamPool.java"
+class sun.security.provider.FileInputStreamPool {
+  sun.security.provider.FileInputStreamPool();
+  static java.io.InputStream getInputStream(java.io.File) throws java.io.IOException;
+  static {};
+}

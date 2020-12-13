@@ -1,0 +1,48 @@
+Compiled from "TransportContext.java"
+class sun.security.ssl.TransportContext implements sun.security.ssl.ConnectionContext {
+  final sun.security.ssl.SSLTransport transport;
+  final java.util.Map<java.lang.Byte, sun.security.ssl.SSLConsumer> consumers;
+  final java.security.AccessControlContext acc;
+  final sun.security.ssl.SSLContextImpl sslContext;
+  final sun.security.ssl.SSLConfiguration sslConfig;
+  final sun.security.ssl.InputRecord inputRecord;
+  final sun.security.ssl.OutputRecord outputRecord;
+  boolean isUnsureMode;
+  boolean isNegotiated;
+  boolean isBroken;
+  boolean isInputCloseNotified;
+  boolean peerUserCanceled;
+  java.lang.Exception closeReason;
+  java.lang.Exception delegatedThrown;
+  sun.security.ssl.SSLSessionImpl conSession;
+  sun.security.ssl.ProtocolVersion protocolVersion;
+  java.lang.String applicationProtocol;
+  sun.security.ssl.HandshakeContext handshakeContext;
+  boolean secureRenegotiation;
+  byte[] clientVerifyData;
+  byte[] serverVerifyData;
+  java.util.List<sun.security.ssl.SupportedGroupsExtension$NamedGroup> serverRequestedNamedGroups;
+  sun.security.ssl.CipherSuite cipherSuite;
+  sun.security.ssl.TransportContext(sun.security.ssl.SSLContextImpl, sun.security.ssl.SSLTransport, sun.security.ssl.InputRecord, sun.security.ssl.OutputRecord);
+  sun.security.ssl.TransportContext(sun.security.ssl.SSLContextImpl, sun.security.ssl.SSLTransport, sun.security.ssl.InputRecord, sun.security.ssl.OutputRecord, boolean);
+  sun.security.ssl.TransportContext(sun.security.ssl.SSLContextImpl, sun.security.ssl.SSLTransport, sun.security.ssl.SSLConfiguration, sun.security.ssl.InputRecord, sun.security.ssl.OutputRecord);
+  void dispatch(sun.security.ssl.Plaintext) throws java.io.IOException;
+  void kickstart() throws java.io.IOException;
+  boolean isPostHandshakeContext();
+  void warning(sun.security.ssl.Alert);
+  void closeNotify(boolean) throws java.io.IOException;
+  javax.net.ssl.SSLException fatal(sun.security.ssl.Alert, java.lang.String) throws javax.net.ssl.SSLException;
+  javax.net.ssl.SSLException fatal(sun.security.ssl.Alert, java.lang.Throwable) throws javax.net.ssl.SSLException;
+  javax.net.ssl.SSLException fatal(sun.security.ssl.Alert, java.lang.String, java.lang.Throwable) throws javax.net.ssl.SSLException;
+  javax.net.ssl.SSLException fatal(sun.security.ssl.Alert, java.lang.String, boolean, java.lang.Throwable) throws javax.net.ssl.SSLException;
+  void setUseClientMode(boolean);
+  boolean isOutboundDone();
+  boolean isOutboundClosed();
+  boolean isInboundClosed();
+  void closeInbound() throws javax.net.ssl.SSLException;
+  void closeOutbound();
+  javax.net.ssl.SSLEngineResult$HandshakeStatus getHandshakeStatus();
+  javax.net.ssl.SSLEngineResult$HandshakeStatus finishHandshake();
+  javax.net.ssl.SSLEngineResult$HandshakeStatus finishPostHandshake();
+  static {};
+}

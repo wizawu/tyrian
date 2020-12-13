@@ -1,0 +1,41 @@
+Compiled from "SubscriberWrapper.java"
+public abstract class jdk.internal.net.http.common.SubscriberWrapper implements jdk.internal.net.http.common.FlowTube$TubeSubscriber, java.io.Closeable, java.util.concurrent.Flow$Processor<java.util.List<java.nio.ByteBuffer>, java.util.List<java.nio.ByteBuffer>> {
+  final jdk.internal.net.http.common.Logger debug;
+  volatile java.util.concurrent.Flow$Subscription upstreamSubscription;
+  final jdk.internal.net.http.common.SubscriptionBase downstreamSubscription;
+  volatile boolean upstreamCompleted;
+  volatile boolean downstreamCompleted;
+  volatile boolean completionAcknowledged;
+  final java.util.concurrent.atomic.AtomicLong upstreamWindow;
+  static final boolean $assertionsDisabled;
+  public jdk.internal.net.http.common.SubscriberWrapper();
+  public final void subscribe(java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>);
+  public jdk.internal.net.http.common.SubscriberWrapper(java.util.concurrent.Flow$Subscriber<? super java.util.List<java.nio.ByteBuffer>>);
+  protected abstract void incoming(java.util.List<java.nio.ByteBuffer>, boolean);
+  protected long upstreamWindowUpdate(long, long);
+  protected void onSubscribe();
+  protected jdk.internal.net.http.common.SubscriberWrapper$SchedulingAction enterScheduling();
+  protected boolean signalScheduling();
+  public void outgoing(java.nio.ByteBuffer, boolean);
+  public boolean closing();
+  public void outgoing(java.util.List<java.nio.ByteBuffer>, boolean);
+  public java.util.concurrent.CompletableFuture<java.lang.Void> completion();
+  void upstreamWindowUpdate();
+  public void onSubscribe(java.util.concurrent.Flow$Subscription);
+  public void onNext(java.util.List<java.nio.ByteBuffer>);
+  protected void requestMore();
+  public long upstreamWindow();
+  public void onError(java.lang.Throwable);
+  protected boolean errorCommon(java.lang.Throwable);
+  public void close();
+  public void close(java.lang.Throwable);
+  public void onComplete();
+  public void addData(java.nio.ByteBuffer);
+  void checkCompletion();
+  void downstreamCompletion();
+  public void resetDownstreamDemand();
+  public java.lang.String toString();
+  public java.lang.String dbgString();
+  public void onNext(java.lang.Object);
+  static {};
+}

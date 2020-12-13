@@ -1,0 +1,6 @@
+Compiled from "EnhancedForLoopTree.java"
+public interface com.sun.source.tree.EnhancedForLoopTree extends com.sun.source.tree.StatementTree {
+  public abstract com.sun.source.tree.VariableTree getVariable();
+  public abstract com.sun.source.tree.ExpressionTree getExpression();
+  public abstract com.sun.source.tree.StatementTree getStatement();
+}

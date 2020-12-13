@@ -1,0 +1,7 @@
+Compiled from "Runtime1.java"
+public class sun.jvm.hotspot.c1.Runtime1 {
+  public sun.jvm.hotspot.c1.Runtime1();
+  public sun.jvm.hotspot.debugger.Address entryFor(int);
+  public sun.jvm.hotspot.code.CodeBlob blobFor(int);
+  static {};
+}

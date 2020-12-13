@@ -1,0 +1,6 @@
+Compiled from "TryCatchBlockSorter.java"
+public class jdk.internal.org.objectweb.asm.commons.TryCatchBlockSorter extends jdk.internal.org.objectweb.asm.tree.MethodNode {
+  public jdk.internal.org.objectweb.asm.commons.TryCatchBlockSorter(jdk.internal.org.objectweb.asm.MethodVisitor, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
+  protected jdk.internal.org.objectweb.asm.commons.TryCatchBlockSorter(int, jdk.internal.org.objectweb.asm.MethodVisitor, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
+  public void visitEnd();
+}

@@ -1,0 +1,8 @@
+Compiled from "LongMap.java"
+final class jdk.jfr.consumer.LongMap<T> implements java.lang.Iterable<T> {
+  jdk.jfr.consumer.LongMap();
+  void put(long, T);
+  T get(long);
+  public java.util.Iterator<T> iterator();
+  java.util.Iterator<java.lang.Long> keys();
+}

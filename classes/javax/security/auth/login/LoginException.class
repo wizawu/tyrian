@@ -1,0 +1,5 @@
+Compiled from "LoginException.java"
+public class javax.security.auth.login.LoginException extends java.security.GeneralSecurityException {
+  public javax.security.auth.login.LoginException();
+  public javax.security.auth.login.LoginException(java.lang.String);
+}

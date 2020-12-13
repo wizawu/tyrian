@@ -1,0 +1,14 @@
+Compiled from "DebuggerSupport.java"
+final class jdk.nashorn.internal.runtime.DebuggerSupport {
+  static boolean FORCELOAD;
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.runtime.DebuggerSupport();
+  static void notifyInvoke(java.lang.invoke.MethodHandle);
+  static jdk.nashorn.internal.runtime.DebuggerSupport$SourceInfo getSourceInfo(java.lang.Class<?>);
+  static java.lang.Object getGlobal();
+  static java.lang.Object eval(jdk.nashorn.internal.runtime.ScriptObject, java.lang.Object, java.lang.String, boolean);
+  static jdk.nashorn.internal.runtime.DebuggerSupport$DebuggerValueDesc[] valueInfos(java.lang.Object, boolean);
+  static jdk.nashorn.internal.runtime.DebuggerSupport$DebuggerValueDesc valueInfo(java.lang.String, java.lang.Object, boolean);
+  static java.lang.String valueAsString(java.lang.Object);
+  static {};
+}

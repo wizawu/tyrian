@@ -1,0 +1,13 @@
+Compiled from "IINC.java"
+public class com.sun.org.apache.bcel.internal.generic.IINC extends com.sun.org.apache.bcel.internal.generic.LocalVariableInstruction {
+  com.sun.org.apache.bcel.internal.generic.IINC();
+  public com.sun.org.apache.bcel.internal.generic.IINC(int, int);
+  public void dump(java.io.DataOutputStream) throws java.io.IOException;
+  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
+  public java.lang.String toString(boolean);
+  public final void setIndex(int);
+  public final int getIncrement();
+  public final void setIncrement(int);
+  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

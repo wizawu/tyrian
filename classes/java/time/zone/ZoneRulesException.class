@@ -1,0 +1,5 @@
+Compiled from "ZoneRulesException.java"
+public class java.time.zone.ZoneRulesException extends java.time.DateTimeException {
+  public java.time.zone.ZoneRulesException(java.lang.String);
+  public java.time.zone.ZoneRulesException(java.lang.String, java.lang.Throwable);
+}

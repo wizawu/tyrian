@@ -1,0 +1,18 @@
+Compiled from "IntHashTable.java"
+public class com.sun.tools.javac.util.IntHashTable {
+  protected java.lang.Object[] objs;
+  protected int[] ints;
+  protected int mask;
+  protected int num_bindings;
+  public com.sun.tools.javac.util.IntHashTable();
+  public com.sun.tools.javac.util.IntHashTable(int);
+  public int hash(java.lang.Object);
+  public int lookup(java.lang.Object, int);
+  public int lookup(java.lang.Object);
+  public int getFromIndex(int);
+  public int putAtIndex(java.lang.Object, int, int);
+  public int remove(java.lang.Object);
+  protected void rehash();
+  public void clear();
+  static {};
+}

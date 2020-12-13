@@ -1,0 +1,11 @@
+Compiled from "Extensions.java"
+public class com.sun.org.apache.xalan.internal.lib.Extensions {
+  public static com.sun.org.apache.xpath.internal.NodeSet nodeset(com.sun.org.apache.xalan.internal.extensions.ExpressionContext, java.lang.Object);
+  public static org.w3c.dom.NodeList intersection(org.w3c.dom.NodeList, org.w3c.dom.NodeList);
+  public static org.w3c.dom.NodeList difference(org.w3c.dom.NodeList, org.w3c.dom.NodeList);
+  public static org.w3c.dom.NodeList distinct(org.w3c.dom.NodeList);
+  public static boolean hasSameNodes(org.w3c.dom.NodeList, org.w3c.dom.NodeList);
+  public static com.sun.org.apache.xpath.internal.objects.XObject evaluate(com.sun.org.apache.xalan.internal.extensions.ExpressionContext, java.lang.String) throws org.xml.sax.SAXNotSupportedException;
+  public static org.w3c.dom.NodeList tokenize(java.lang.String, java.lang.String);
+  public static org.w3c.dom.NodeList tokenize(java.lang.String);
+}

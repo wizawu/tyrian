@@ -1,0 +1,7 @@
+Compiled from "FormatFlagsConversionMismatchException.java"
+public class java.util.FormatFlagsConversionMismatchException extends java.util.IllegalFormatException {
+  public java.util.FormatFlagsConversionMismatchException(java.lang.String, char);
+  public java.lang.String getFlags();
+  public char getConversion();
+  public java.lang.String getMessage();
+}

@@ -1,0 +1,5 @@
+Compiled from "LALOAD.java"
+public class com.sun.org.apache.bcel.internal.generic.LALOAD extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
+  public com.sun.org.apache.bcel.internal.generic.LALOAD();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

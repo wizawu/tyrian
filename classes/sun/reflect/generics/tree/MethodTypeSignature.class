@@ -1,0 +1,9 @@
+Compiled from "MethodTypeSignature.java"
+public class sun.reflect.generics.tree.MethodTypeSignature implements sun.reflect.generics.tree.Signature {
+  public static sun.reflect.generics.tree.MethodTypeSignature make(sun.reflect.generics.tree.FormalTypeParameter[], sun.reflect.generics.tree.TypeSignature[], sun.reflect.generics.tree.ReturnType, sun.reflect.generics.tree.FieldTypeSignature[]);
+  public sun.reflect.generics.tree.FormalTypeParameter[] getFormalTypeParameters();
+  public sun.reflect.generics.tree.TypeSignature[] getParameterTypes();
+  public sun.reflect.generics.tree.ReturnType getReturnType();
+  public sun.reflect.generics.tree.FieldTypeSignature[] getExceptionTypes();
+  public void accept(sun.reflect.generics.visitor.Visitor<?>);
+}

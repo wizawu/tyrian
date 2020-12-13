@@ -1,0 +1,17 @@
+Compiled from "BufferedContext.java"
+public abstract class sun.java2d.pipe.BufferedContext {
+  public static final int NO_CONTEXT_FLAGS;
+  public static final int SRC_IS_OPAQUE;
+  public static final int USE_MASK;
+  protected sun.java2d.pipe.RenderQueue rq;
+  protected sun.java2d.pipe.RenderBuffer buf;
+  protected static sun.java2d.pipe.BufferedContext currentContext;
+  protected sun.java2d.pipe.BufferedContext(sun.java2d.pipe.RenderQueue);
+  public static void validateContext(sun.java2d.pipe.hw.AccelSurface, sun.java2d.pipe.hw.AccelSurface, sun.java2d.pipe.Region, java.awt.Composite, java.awt.geom.AffineTransform, java.awt.Paint, sun.java2d.SunGraphics2D, int);
+  public static void validateContext(sun.java2d.pipe.hw.AccelSurface);
+  public void validate(sun.java2d.pipe.hw.AccelSurface, sun.java2d.pipe.hw.AccelSurface, sun.java2d.pipe.Region, java.awt.Composite, java.awt.geom.AffineTransform, java.awt.Paint, sun.java2d.SunGraphics2D, int);
+  public void invalidateContext();
+  public abstract sun.java2d.pipe.RenderQueue getRenderQueue();
+  public abstract void saveState();
+  public abstract void restoreState();
+}

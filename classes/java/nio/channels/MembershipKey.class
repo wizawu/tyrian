@@ -1,0 +1,12 @@
+Compiled from "MembershipKey.java"
+public abstract class java.nio.channels.MembershipKey {
+  protected java.nio.channels.MembershipKey();
+  public abstract boolean isValid();
+  public abstract void drop();
+  public abstract java.nio.channels.MembershipKey block(java.net.InetAddress) throws java.io.IOException;
+  public abstract java.nio.channels.MembershipKey unblock(java.net.InetAddress);
+  public abstract java.nio.channels.MulticastChannel channel();
+  public abstract java.net.InetAddress group();
+  public abstract java.net.NetworkInterface networkInterface();
+  public abstract java.net.InetAddress sourceAddress();
+}

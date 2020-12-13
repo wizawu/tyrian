@@ -1,0 +1,12 @@
+Compiled from "BasicBlockSym.java"
+public class sun.jvm.hotspot.debugger.cdbg.basic.BasicBlockSym extends sun.jvm.hotspot.debugger.cdbg.basic.BasicSym implements sun.jvm.hotspot.debugger.cdbg.BlockSym {
+  public sun.jvm.hotspot.debugger.cdbg.basic.BasicBlockSym(sun.jvm.hotspot.debugger.cdbg.BlockSym, long, sun.jvm.hotspot.debugger.Address, java.lang.String);
+  public sun.jvm.hotspot.debugger.cdbg.BlockSym asBlock();
+  public sun.jvm.hotspot.debugger.cdbg.BlockSym getParent();
+  public long getLength();
+  public sun.jvm.hotspot.debugger.Address getAddress();
+  public int getNumLocals();
+  public sun.jvm.hotspot.debugger.cdbg.LocalSym getLocal(int);
+  public void addLocal(sun.jvm.hotspot.debugger.cdbg.LocalSym);
+  public void resolve(sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
+}

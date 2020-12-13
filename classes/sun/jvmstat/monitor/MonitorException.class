@@ -1,0 +1,7 @@
+Compiled from "MonitorException.java"
+public class sun.jvmstat.monitor.MonitorException extends java.lang.Exception {
+  public sun.jvmstat.monitor.MonitorException();
+  public sun.jvmstat.monitor.MonitorException(java.lang.String);
+  public sun.jvmstat.monitor.MonitorException(java.lang.String, java.lang.Throwable);
+  public sun.jvmstat.monitor.MonitorException(java.lang.Throwable);
+}

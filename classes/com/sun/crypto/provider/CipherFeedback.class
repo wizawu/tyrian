@@ -1,0 +1,13 @@
+Compiled from "CipherFeedback.java"
+final class com.sun.crypto.provider.CipherFeedback extends com.sun.crypto.provider.FeedbackCipher {
+  com.sun.crypto.provider.CipherFeedback(com.sun.crypto.provider.SymmetricCipher, int);
+  java.lang.String getFeedback();
+  void init(boolean, java.lang.String, byte[], byte[]) throws java.security.InvalidKeyException;
+  void reset();
+  void save();
+  void restore();
+  int encrypt(byte[], int, int, byte[], int);
+  int encryptFinal(byte[], int, int, byte[], int);
+  int decrypt(byte[], int, int, byte[], int);
+  int decryptFinal(byte[], int, int, byte[], int);
+}

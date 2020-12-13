@@ -1,0 +1,22 @@
+Compiled from "Spring.java"
+public abstract class javax.swing.Spring {
+  public static final int UNSET;
+  protected javax.swing.Spring();
+  public abstract int getMinimumValue();
+  public abstract int getPreferredValue();
+  public abstract int getMaximumValue();
+  public abstract int getValue();
+  public abstract void setValue(int);
+  double getStrain();
+  void setStrain(double);
+  boolean isCyclic(javax.swing.SpringLayout);
+  public static javax.swing.Spring constant(int);
+  public static javax.swing.Spring constant(int, int, int);
+  public static javax.swing.Spring minus(javax.swing.Spring);
+  public static javax.swing.Spring sum(javax.swing.Spring, javax.swing.Spring);
+  public static javax.swing.Spring max(javax.swing.Spring, javax.swing.Spring);
+  static javax.swing.Spring difference(javax.swing.Spring, javax.swing.Spring);
+  public static javax.swing.Spring scale(javax.swing.Spring, float);
+  public static javax.swing.Spring width(java.awt.Component);
+  public static javax.swing.Spring height(java.awt.Component);
+}

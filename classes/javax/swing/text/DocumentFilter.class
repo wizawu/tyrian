@@ -1,0 +1,7 @@
+Compiled from "DocumentFilter.java"
+public class javax.swing.text.DocumentFilter {
+  public javax.swing.text.DocumentFilter();
+  public void remove(javax.swing.text.DocumentFilter$FilterBypass, int, int) throws javax.swing.text.BadLocationException;
+  public void insertString(javax.swing.text.DocumentFilter$FilterBypass, int, java.lang.String, javax.swing.text.AttributeSet) throws javax.swing.text.BadLocationException;
+  public void replace(javax.swing.text.DocumentFilter$FilterBypass, int, int, java.lang.String, javax.swing.text.AttributeSet) throws javax.swing.text.BadLocationException;
+}

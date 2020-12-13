@@ -1,0 +1,11 @@
+Compiled from "P11DHKeyFactory.java"
+final class sun.security.pkcs11.P11DHKeyFactory extends sun.security.pkcs11.P11KeyFactory {
+  sun.security.pkcs11.P11DHKeyFactory(sun.security.pkcs11.Token, java.lang.String);
+  java.security.PublicKey implTranslatePublicKey(java.security.PublicKey) throws java.security.InvalidKeyException;
+  java.security.PrivateKey implTranslatePrivateKey(java.security.PrivateKey) throws java.security.InvalidKeyException;
+  protected java.security.PublicKey engineGeneratePublic(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
+  protected java.security.PrivateKey engineGeneratePrivate(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
+  <T extends java.security.spec.KeySpec> T implGetPublicKeySpec(sun.security.pkcs11.P11Key, java.lang.Class<T>, sun.security.pkcs11.Session[]) throws sun.security.pkcs11.wrapper.PKCS11Exception, java.security.spec.InvalidKeySpecException;
+  <T extends java.security.spec.KeySpec> T implGetPrivateKeySpec(sun.security.pkcs11.P11Key, java.lang.Class<T>, sun.security.pkcs11.Session[]) throws sun.security.pkcs11.wrapper.PKCS11Exception, java.security.spec.InvalidKeySpecException;
+  java.security.KeyFactory implGetSoftwareFactory() throws java.security.GeneralSecurityException;
+}

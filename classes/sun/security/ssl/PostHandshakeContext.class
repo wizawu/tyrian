@@ -1,0 +1,7 @@
+Compiled from "PostHandshakeContext.java"
+final class sun.security.ssl.PostHandshakeContext extends sun.security.ssl.HandshakeContext {
+  sun.security.ssl.PostHandshakeContext(sun.security.ssl.TransportContext) throws java.io.IOException;
+  void kickstart() throws java.io.IOException;
+  void dispatch(byte, java.nio.ByteBuffer) throws java.io.IOException;
+  static boolean isConsumable(sun.security.ssl.TransportContext, byte);
+}

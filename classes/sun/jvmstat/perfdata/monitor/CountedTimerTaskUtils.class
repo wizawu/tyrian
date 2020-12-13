@@ -1,0 +1,5 @@
+Compiled from "CountedTimerTaskUtils.java"
+public class sun.jvmstat.perfdata.monitor.CountedTimerTaskUtils {
+  public sun.jvmstat.perfdata.monitor.CountedTimerTaskUtils();
+  public static void reschedule(java.util.Timer, sun.jvmstat.perfdata.monitor.CountedTimerTask, sun.jvmstat.perfdata.monitor.CountedTimerTask, int, int);
+}

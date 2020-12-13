@@ -1,0 +1,19 @@
+Compiled from "XlibUtil.java"
+public class sun.awt.X11.XlibUtil {
+  static java.lang.Boolean isShapingSupported;
+  public static long getRootWindow(int);
+  static boolean isRoot(long, long);
+  static java.awt.Rectangle getWindowGeometry(long, int);
+  static java.awt.Point translateCoordinates(long, long, java.awt.Point, int);
+  static java.awt.Rectangle translateCoordinates(long, long, java.awt.Rectangle, int);
+  static long getParentWindow(long);
+  static java.util.Set<java.lang.Long> getChildWindows(long);
+  static boolean isXAWTToplevelWindow(long);
+  static boolean isToplevelWindow(long);
+  static boolean isTrueToplevelWindow(long);
+  static int getWindowMapState(long);
+  static synchronized boolean isShapingSupported();
+  static int getButtonMask(int);
+  static int scaleDown(int, int);
+  static {};
+}

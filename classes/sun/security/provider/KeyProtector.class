@@ -1,0 +1,6 @@
+Compiled from "KeyProtector.java"
+final class sun.security.provider.KeyProtector {
+  public sun.security.provider.KeyProtector(byte[]) throws java.security.NoSuchAlgorithmException;
+  public byte[] protect(java.security.Key) throws java.security.KeyStoreException;
+  public java.security.Key recover(sun.security.pkcs.EncryptedPrivateKeyInfo) throws java.security.UnrecoverableKeyException;
+}

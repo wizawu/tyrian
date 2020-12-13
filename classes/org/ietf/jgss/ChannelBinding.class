@@ -1,0 +1,10 @@
+Compiled from "ChannelBinding.java"
+public class org.ietf.jgss.ChannelBinding {
+  public org.ietf.jgss.ChannelBinding(java.net.InetAddress, java.net.InetAddress, byte[]);
+  public org.ietf.jgss.ChannelBinding(byte[]);
+  public java.net.InetAddress getInitiatorAddress();
+  public java.net.InetAddress getAcceptorAddress();
+  public byte[] getApplicationData();
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+}

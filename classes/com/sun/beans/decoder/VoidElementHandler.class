@@ -1,0 +1,5 @@
+Compiled from "VoidElementHandler.java"
+final class com.sun.beans.decoder.VoidElementHandler extends com.sun.beans.decoder.ObjectElementHandler {
+  com.sun.beans.decoder.VoidElementHandler();
+  protected boolean isArgument();
+}

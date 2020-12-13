@@ -1,0 +1,8 @@
+Compiled from "HttpCaptureOutputStream.java"
+public class sun.net.www.http.HttpCaptureOutputStream extends java.io.FilterOutputStream {
+  public sun.net.www.http.HttpCaptureOutputStream(java.io.OutputStream, sun.net.www.http.HttpCapture);
+  public void write(int) throws java.io.IOException;
+  public void write(byte[]) throws java.io.IOException;
+  public void write(byte[], int, int) throws java.io.IOException;
+  public void flush() throws java.io.IOException;
+}

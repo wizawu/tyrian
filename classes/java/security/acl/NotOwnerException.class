@@ -1,0 +1,4 @@
+Compiled from "NotOwnerException.java"
+public class java.security.acl.NotOwnerException extends java.lang.Exception {
+  public java.security.acl.NotOwnerException();
+}

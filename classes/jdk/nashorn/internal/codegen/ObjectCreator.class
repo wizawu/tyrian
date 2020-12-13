@@ -1,0 +1,20 @@
+Compiled from "ObjectCreator.java"
+public abstract class jdk.nashorn.internal.codegen.ObjectCreator<T> implements jdk.nashorn.internal.codegen.CodeGenerator$SplitLiteralCreator {
+  final java.util.List<jdk.nashorn.internal.codegen.MapTuple<T>> tuples;
+  final jdk.nashorn.internal.codegen.CodeGenerator codegen;
+  protected jdk.nashorn.internal.runtime.PropertyMap propertyMap;
+  jdk.nashorn.internal.codegen.ObjectCreator(jdk.nashorn.internal.codegen.CodeGenerator, java.util.List<jdk.nashorn.internal.codegen.MapTuple<T>>, boolean, boolean);
+  public void makeObject(jdk.nashorn.internal.codegen.MethodEmitter);
+  protected abstract void createObject(jdk.nashorn.internal.codegen.MethodEmitter);
+  protected abstract jdk.nashorn.internal.runtime.PropertyMap makeMap();
+  protected jdk.nashorn.internal.codegen.MapCreator<?> newMapCreator(java.lang.Class<? extends jdk.nashorn.internal.runtime.ScriptObject>);
+  protected void loadScope(jdk.nashorn.internal.codegen.MethodEmitter);
+  protected jdk.nashorn.internal.codegen.MethodEmitter loadMap(jdk.nashorn.internal.codegen.MethodEmitter);
+  jdk.nashorn.internal.runtime.PropertyMap getMap();
+  protected boolean isScope();
+  protected boolean hasArguments();
+  protected abstract java.lang.Class<? extends jdk.nashorn.internal.runtime.ScriptObject> getAllocatorClass();
+  protected abstract void loadValue(T, jdk.nashorn.internal.codegen.types.Type);
+  jdk.nashorn.internal.codegen.MethodEmitter loadTuple(jdk.nashorn.internal.codegen.MethodEmitter, jdk.nashorn.internal.codegen.MapTuple<T>, boolean);
+  jdk.nashorn.internal.codegen.MethodEmitter loadIndex(jdk.nashorn.internal.codegen.MethodEmitter, long);
+}

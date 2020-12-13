@@ -1,0 +1,8 @@
+Compiled from "EncryptedPrivateKeyInfo.java"
+final class com.sun.crypto.provider.EncryptedPrivateKeyInfo {
+  com.sun.crypto.provider.EncryptedPrivateKeyInfo(byte[]) throws java.io.IOException;
+  com.sun.crypto.provider.EncryptedPrivateKeyInfo(sun.security.x509.AlgorithmId, byte[]);
+  sun.security.x509.AlgorithmId getAlgorithm();
+  byte[] getEncryptedData();
+  byte[] getEncoded() throws java.io.IOException;
+}

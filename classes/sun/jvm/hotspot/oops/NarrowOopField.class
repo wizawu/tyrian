@@ -1,0 +1,9 @@
+Compiled from "NarrowOopField.java"
+public class sun.jvm.hotspot.oops.NarrowOopField extends sun.jvm.hotspot.oops.OopField {
+  public sun.jvm.hotspot.oops.NarrowOopField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
+  public sun.jvm.hotspot.oops.NarrowOopField(sun.jvm.hotspot.types.OopField, long);
+  public sun.jvm.hotspot.oops.NarrowOopField(sun.jvm.hotspot.oops.InstanceKlass, int);
+  public sun.jvm.hotspot.oops.Oop getValue(sun.jvm.hotspot.oops.Oop);
+  public sun.jvm.hotspot.debugger.OopHandle getValueAsOopHandle(sun.jvm.hotspot.oops.Oop);
+  public void setValue(sun.jvm.hotspot.oops.Oop) throws sun.jvm.hotspot.oops.MutationException;
+}

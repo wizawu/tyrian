@@ -1,0 +1,14 @@
+Compiled from "JSJavaFactory.java"
+public interface sun.jvm.hotspot.utilities.soql.JSJavaFactory {
+  public abstract sun.jvm.hotspot.utilities.soql.JSJavaObject newJSJavaObject(sun.jvm.hotspot.oops.Oop);
+  public abstract sun.jvm.hotspot.utilities.soql.JSJavaKlass newJSJavaKlass(sun.jvm.hotspot.oops.Klass);
+  public abstract sun.jvm.hotspot.utilities.soql.JSJavaField newJSJavaField(sun.jvm.hotspot.oops.Field);
+  public abstract sun.jvm.hotspot.utilities.soql.JSJavaThread newJSJavaThread(sun.jvm.hotspot.runtime.JavaThread);
+  public abstract sun.jvm.hotspot.utilities.soql.JSJavaFrame newJSJavaFrame(sun.jvm.hotspot.runtime.JavaVFrame);
+  public abstract sun.jvm.hotspot.utilities.soql.JSJavaMethod newJSJavaMethod(sun.jvm.hotspot.oops.Method);
+  public abstract sun.jvm.hotspot.utilities.soql.JSList newJSList(java.util.List);
+  public abstract sun.jvm.hotspot.utilities.soql.JSMap newJSMap(java.util.Map);
+  public abstract sun.jvm.hotspot.utilities.soql.JSJavaHeap newJSJavaHeap();
+  public abstract sun.jvm.hotspot.utilities.soql.JSJavaVM newJSJavaVM();
+  public abstract java.lang.Object newJSJavaWrapper(java.lang.Object);
+}

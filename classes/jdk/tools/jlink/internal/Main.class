@@ -1,0 +1,6 @@
+Compiled from "Main.java"
+public class jdk.tools.jlink.internal.Main {
+  public jdk.tools.jlink.internal.Main();
+  public static void main(java.lang.String...) throws java.lang.Exception;
+  public static int run(java.io.PrintWriter, java.io.PrintWriter, java.lang.String...);
+}

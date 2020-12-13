@@ -1,0 +1,4 @@
+Compiled from "XECKey.java"
+public interface java.security.interfaces.XECKey {
+  public abstract java.security.spec.AlgorithmParameterSpec getParams();
+}

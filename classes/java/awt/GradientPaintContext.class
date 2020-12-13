@@ -1,0 +1,24 @@
+Compiled from "GradientPaintContext.java"
+class java.awt.GradientPaintContext implements java.awt.PaintContext {
+  static java.awt.image.ColorModel xrgbmodel;
+  static java.awt.image.ColorModel xbgrmodel;
+  static java.awt.image.ColorModel cachedModel;
+  static java.lang.ref.WeakReference<java.awt.image.Raster> cached;
+  double x1;
+  double y1;
+  double dx;
+  double dy;
+  boolean cyclic;
+  int[] interp;
+  java.awt.image.Raster saved;
+  java.awt.image.ColorModel model;
+  static synchronized java.awt.image.Raster getCachedRaster(java.awt.image.ColorModel, int, int);
+  static synchronized void putCachedRaster(java.awt.image.ColorModel, java.awt.image.Raster);
+  public java.awt.GradientPaintContext(java.awt.image.ColorModel, java.awt.geom.Point2D, java.awt.geom.Point2D, java.awt.geom.AffineTransform, java.awt.Color, java.awt.Color, boolean);
+  public void dispose();
+  public java.awt.image.ColorModel getColorModel();
+  public java.awt.image.Raster getRaster(int, int, int, int);
+  void cycleFillRaster(int[], int, int, int, int, double, double, double);
+  void clipFillRaster(int[], int, int, int, int, double, double, double);
+  static {};
+}

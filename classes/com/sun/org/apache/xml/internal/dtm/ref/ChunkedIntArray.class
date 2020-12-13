@@ -1,0 +1,19 @@
+Compiled from "ChunkedIntArray.java"
+final class com.sun.org.apache.xml.internal.dtm.ref.ChunkedIntArray {
+  final int slotsize;
+  static final int lowbits;
+  static final int chunkalloc;
+  static final int lowmask;
+  com.sun.org.apache.xml.internal.dtm.ref.ChunkedIntArray$ChunksVector chunks;
+  final int[] fastArray;
+  int lastUsed;
+  com.sun.org.apache.xml.internal.dtm.ref.ChunkedIntArray(int);
+  int appendSlot(int, int, int, int);
+  int readEntry(int, int) throws java.lang.ArrayIndexOutOfBoundsException;
+  int specialFind(int, int);
+  int slotsUsed();
+  void discardLast();
+  void writeEntry(int, int, int) throws java.lang.ArrayIndexOutOfBoundsException;
+  void writeSlot(int, int, int, int, int);
+  void readSlot(int, int[]);
+}

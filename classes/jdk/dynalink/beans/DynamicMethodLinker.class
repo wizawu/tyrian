@@ -1,0 +1,6 @@
+Compiled from "DynamicMethodLinker.java"
+class jdk.dynalink.beans.DynamicMethodLinker implements jdk.dynalink.linker.TypeBasedGuardingDynamicLinker {
+  jdk.dynalink.beans.DynamicMethodLinker();
+  public boolean canLinkType(java.lang.Class<?>);
+  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices);
+}

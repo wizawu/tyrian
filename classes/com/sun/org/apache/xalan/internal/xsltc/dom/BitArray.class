@@ -1,0 +1,23 @@
+Compiled from "BitArray.java"
+public class com.sun.org.apache.xalan.internal.xsltc.dom.BitArray implements java.io.Externalizable {
+  static final long serialVersionUID;
+  int _first;
+  int _last;
+  public com.sun.org.apache.xalan.internal.xsltc.dom.BitArray();
+  public com.sun.org.apache.xalan.internal.xsltc.dom.BitArray(int);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.BitArray(int, int[]);
+  public void setMask(int);
+  public int getMask();
+  public final int size();
+  public final boolean getBit(int);
+  public final int getNextBit(int);
+  public final int getBitNumber(int);
+  public final int[] data();
+  public final void setBit(int);
+  public final com.sun.org.apache.xalan.internal.xsltc.dom.BitArray merge(com.sun.org.apache.xalan.internal.xsltc.dom.BitArray);
+  public final void resize(int);
+  public com.sun.org.apache.xalan.internal.xsltc.dom.BitArray cloneArray();
+  public void writeExternal(java.io.ObjectOutput) throws java.io.IOException;
+  public void readExternal(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
+  static {};
+}

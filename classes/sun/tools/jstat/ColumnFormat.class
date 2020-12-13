@@ -1,0 +1,23 @@
+Compiled from "ColumnFormat.java"
+public class sun.tools.jstat.ColumnFormat extends sun.tools.jstat.OptionFormat {
+  public sun.tools.jstat.ColumnFormat(int);
+  public void validate() throws sun.tools.jstat.ParserException;
+  public void setWidth(int);
+  public void setAlignment(sun.tools.jstat.Alignment);
+  public void setScale(sun.tools.jstat.Scale);
+  public void setFormat(java.lang.String);
+  public void setHeader(java.lang.String);
+  public java.lang.String getHeader();
+  public java.lang.String getFormat();
+  public int getWidth();
+  public sun.tools.jstat.Alignment getAlignment();
+  public sun.tools.jstat.Scale getScale();
+  public sun.tools.jstat.Expression getExpression();
+  public void setExpression(sun.tools.jstat.Expression);
+  public void setRequired(boolean);
+  public boolean isRequired();
+  public void setPreviousValue(java.lang.Object);
+  public java.lang.Object getPreviousValue();
+  public void printFormat(int);
+  public java.lang.String getValue();
+}

@@ -1,0 +1,5 @@
+Compiled from "Dependency.java"
+public interface com.sun.tools.classfile.Dependency {
+  public abstract com.sun.tools.classfile.Dependency$Location getOrigin();
+  public abstract com.sun.tools.classfile.Dependency$Location getTarget();
+}

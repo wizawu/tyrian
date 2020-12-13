@@ -1,0 +1,11 @@
+Compiled from "SunPageSelection.java"
+public final class sun.print.SunPageSelection implements javax.print.attribute.PrintRequestAttribute {
+  public static final sun.print.SunPageSelection ALL;
+  public static final sun.print.SunPageSelection RANGE;
+  public static final sun.print.SunPageSelection SELECTION;
+  public sun.print.SunPageSelection(int);
+  public java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
+  public java.lang.String getName();
+  public java.lang.String toString();
+  static {};
+}

@@ -1,0 +1,4 @@
+Compiled from "GuardingTypeConverterFactory.java"
+public interface jdk.dynalink.linker.GuardingTypeConverterFactory {
+  public abstract jdk.dynalink.linker.GuardedInvocation convertToType(java.lang.Class<?>, java.lang.Class<?>, java.util.function.Supplier<java.lang.invoke.MethodHandles$Lookup>) throws java.lang.Exception;
+}

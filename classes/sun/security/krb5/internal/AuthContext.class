@@ -1,0 +1,18 @@
+Compiled from "AuthContext.java"
+public class sun.security.krb5.internal.AuthContext {
+  public sun.security.krb5.internal.HostAddress remoteAddress;
+  public int remotePort;
+  public sun.security.krb5.internal.HostAddress localAddress;
+  public int localPort;
+  public sun.security.krb5.EncryptionKey keyBlock;
+  public sun.security.krb5.EncryptionKey localSubkey;
+  public sun.security.krb5.EncryptionKey remoteSubkey;
+  public java.util.BitSet authContextFlags;
+  public int remoteSeqNumber;
+  public int localSeqNumber;
+  public sun.security.krb5.internal.Authenticator authenticator;
+  public int reqCksumType;
+  public int safeCksumType;
+  public byte[] initializationVector;
+  public sun.security.krb5.internal.AuthContext();
+}

@@ -1,0 +1,32 @@
+Compiled from "EnvHelp.java"
+public class com.sun.jmx.remote.util.EnvHelp {
+  public static final java.lang.String BUFFER_SIZE_PROPERTY;
+  public static final java.lang.String MAX_FETCH_NOTIFS;
+  public static final java.lang.String FETCH_TIMEOUT;
+  public static final java.lang.String NOTIF_ACCESS_CONTROLLER;
+  public static final java.lang.String DEFAULT_ORB;
+  public static final java.lang.String HIDDEN_ATTRIBUTES;
+  public static final java.lang.String DEFAULT_HIDDEN_ATTRIBUTES;
+  public static final java.lang.String SERVER_CONNECTION_TIMEOUT;
+  public static final java.lang.String CLIENT_CONNECTION_CHECK_PERIOD;
+  public static final java.lang.String JMX_SERVER_DAEMON;
+  public com.sun.jmx.remote.util.EnvHelp();
+  public static java.lang.ClassLoader resolveServerClassLoader(java.util.Map<java.lang.String, ?>, javax.management.MBeanServer) throws javax.management.InstanceNotFoundException;
+  public static java.lang.ClassLoader resolveClientClassLoader(java.util.Map<java.lang.String, ?>);
+  public static <T extends java.lang.Throwable> T initCause(T, java.lang.Throwable);
+  public static java.lang.Throwable getCause(java.lang.Throwable);
+  public static int getNotifBufferSize(java.util.Map<java.lang.String, ?>);
+  public static int getMaxFetchNotifNumber(java.util.Map<java.lang.String, ?>);
+  public static long getFetchTimeout(java.util.Map<java.lang.String, ?>);
+  public static com.sun.jmx.remote.security.NotificationAccessController getNotificationAccessController(java.util.Map<java.lang.String, ?>);
+  public static long getIntegerAttribute(java.util.Map<java.lang.String, ?>, java.lang.String, long, long, long);
+  public static void checkAttributes(java.util.Map<?, ?>);
+  public static <V> java.util.Map<java.lang.String, V> filterAttributes(java.util.Map<java.lang.String, V>);
+  public static long getServerConnectionTimeout(java.util.Map<java.lang.String, ?>);
+  public static long getConnectionCheckPeriod(java.util.Map<java.lang.String, ?>);
+  public static boolean computeBooleanFromString(java.lang.String);
+  public static boolean computeBooleanFromString(java.lang.String, boolean);
+  public static <K, V> java.util.Hashtable<K, V> mapToHashtable(java.util.Map<K, V>);
+  public static boolean isServerDaemon(java.util.Map<java.lang.String, ?>);
+  static {};
+}

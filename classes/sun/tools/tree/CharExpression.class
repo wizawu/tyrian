@@ -1,0 +1,5 @@
+Compiled from "CharExpression.java"
+public class sun.tools.tree.CharExpression extends sun.tools.tree.IntegerExpression {
+  public sun.tools.tree.CharExpression(long, char);
+  public void print(java.io.PrintStream);
+}

@@ -1,0 +1,9 @@
+Compiled from "AdaptationResult.java"
+final class jdk.nashorn.internal.runtime.linker.AdaptationResult {
+  static final jdk.nashorn.internal.runtime.linker.AdaptationResult SUCCESSFUL_RESULT;
+  jdk.nashorn.internal.runtime.linker.AdaptationResult(jdk.nashorn.internal.runtime.linker.AdaptationResult$Outcome, java.lang.RuntimeException, java.lang.String...);
+  jdk.nashorn.internal.runtime.linker.AdaptationResult(jdk.nashorn.internal.runtime.linker.AdaptationResult$Outcome, java.lang.String...);
+  jdk.nashorn.internal.runtime.linker.AdaptationResult$Outcome getOutcome();
+  jdk.nashorn.internal.runtime.ECMAException typeError();
+  static {};
+}

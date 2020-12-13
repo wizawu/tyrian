@@ -1,0 +1,9 @@
+Compiled from "MotifCheckBoxUI.java"
+public class com.sun.java.swing.plaf.motif.MotifCheckBoxUI extends com.sun.java.swing.plaf.motif.MotifRadioButtonUI {
+  public com.sun.java.swing.plaf.motif.MotifCheckBoxUI();
+  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
+  public java.lang.String getPropertyPrefix();
+  public void installDefaults(javax.swing.AbstractButton);
+  protected void uninstallDefaults(javax.swing.AbstractButton);
+  static {};
+}

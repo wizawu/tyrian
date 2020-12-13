@@ -1,0 +1,9 @@
+Compiled from "ProcCFrame.java"
+final class sun.jvm.hotspot.debugger.proc.ProcCFrame extends sun.jvm.hotspot.debugger.cdbg.basic.BasicCFrame {
+  public sun.jvm.hotspot.debugger.Address pc();
+  public sun.jvm.hotspot.debugger.Address localVariableBase();
+  public sun.jvm.hotspot.debugger.cdbg.CFrame sender(sun.jvm.hotspot.debugger.ThreadProxy);
+  public sun.jvm.hotspot.debugger.cdbg.ClosestSymbol closestSymbolToPC();
+  sun.jvm.hotspot.debugger.proc.ProcCFrame(sun.jvm.hotspot.debugger.proc.ProcDebugger, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
+  void setSender(sun.jvm.hotspot.debugger.proc.ProcCFrame);
+}

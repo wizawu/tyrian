@@ -1,0 +1,3 @@
+Compiled from "ImmutableIntegerModuloP.java"
+public interface sun.security.util.math.ImmutableIntegerModuloP extends sun.security.util.math.IntegerModuloP {
+}

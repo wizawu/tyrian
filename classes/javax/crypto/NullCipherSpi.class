@@ -1,0 +1,18 @@
+Compiled from "NullCipherSpi.java"
+final class javax.crypto.NullCipherSpi extends javax.crypto.CipherSpi {
+  protected javax.crypto.NullCipherSpi();
+  public void engineSetMode(java.lang.String);
+  public void engineSetPadding(java.lang.String);
+  protected int engineGetBlockSize();
+  protected int engineGetOutputSize(int);
+  protected byte[] engineGetIV();
+  protected java.security.AlgorithmParameters engineGetParameters();
+  protected void engineInit(int, java.security.Key, java.security.SecureRandom);
+  protected void engineInit(int, java.security.Key, java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom);
+  protected void engineInit(int, java.security.Key, java.security.AlgorithmParameters, java.security.SecureRandom);
+  protected byte[] engineUpdate(byte[], int, int);
+  protected int engineUpdate(byte[], int, int, byte[], int);
+  protected byte[] engineDoFinal(byte[], int, int);
+  protected int engineDoFinal(byte[], int, int, byte[], int);
+  protected int engineGetKeySize(java.security.Key);
+}

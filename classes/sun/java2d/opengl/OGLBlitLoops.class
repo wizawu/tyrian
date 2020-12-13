@@ -1,0 +1,7 @@
+Compiled from "OGLBlitLoops.java"
+final class sun.java2d.opengl.OGLBlitLoops {
+  sun.java2d.opengl.OGLBlitLoops();
+  static void register();
+  static void Blit(sun.java2d.SurfaceData, sun.java2d.SurfaceData, java.awt.Composite, sun.java2d.pipe.Region, java.awt.geom.AffineTransform, int, int, int, int, int, double, double, double, double, int, boolean);
+  static void IsoBlit(sun.java2d.SurfaceData, sun.java2d.SurfaceData, java.awt.image.BufferedImage, java.awt.image.BufferedImageOp, java.awt.Composite, sun.java2d.pipe.Region, java.awt.geom.AffineTransform, int, int, int, int, int, double, double, double, double, boolean);
+}

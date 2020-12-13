@@ -1,0 +1,6 @@
+Compiled from "CatalogManager.java"
+public final class javax.xml.catalog.CatalogManager {
+  public static javax.xml.catalog.Catalog catalog(javax.xml.catalog.CatalogFeatures, java.net.URI...);
+  public static javax.xml.catalog.CatalogResolver catalogResolver(javax.xml.catalog.Catalog);
+  public static javax.xml.catalog.CatalogResolver catalogResolver(javax.xml.catalog.CatalogFeatures, java.net.URI...);
+}

@@ -1,0 +1,40 @@
+Compiled from "NodeTest.java"
+public class com.sun.org.apache.xpath.internal.patterns.NodeTest extends com.sun.org.apache.xpath.internal.Expression {
+  static final long serialVersionUID;
+  public static final java.lang.String WILD;
+  public static final java.lang.String SUPPORTS_PRE_STRIPPING;
+  protected int m_whatToShow;
+  public static final int SHOW_BYFUNCTION;
+  java.lang.String m_namespace;
+  protected java.lang.String m_name;
+  com.sun.org.apache.xpath.internal.objects.XNumber m_score;
+  public static final com.sun.org.apache.xpath.internal.objects.XNumber SCORE_NODETEST;
+  public static final com.sun.org.apache.xpath.internal.objects.XNumber SCORE_NSWILD;
+  public static final com.sun.org.apache.xpath.internal.objects.XNumber SCORE_QNAME;
+  public static final com.sun.org.apache.xpath.internal.objects.XNumber SCORE_OTHER;
+  public static final com.sun.org.apache.xpath.internal.objects.XNumber SCORE_NONE;
+  public int getWhatToShow();
+  public void setWhatToShow(int);
+  public java.lang.String getNamespace();
+  public void setNamespace(java.lang.String);
+  public java.lang.String getLocalName();
+  public void setLocalName(java.lang.String);
+  public com.sun.org.apache.xpath.internal.patterns.NodeTest(int, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xpath.internal.patterns.NodeTest(int);
+  public boolean deepEquals(com.sun.org.apache.xpath.internal.Expression);
+  public com.sun.org.apache.xpath.internal.patterns.NodeTest();
+  public void initNodeTest(int);
+  public void initNodeTest(int, java.lang.String, java.lang.String);
+  public com.sun.org.apache.xpath.internal.objects.XNumber getStaticScore();
+  public void setStaticScore(com.sun.org.apache.xpath.internal.objects.XNumber);
+  protected void calcScore();
+  public double getDefaultScore();
+  public static int getNodeTypeTest(int);
+  public static void debugWhatToShow(int);
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, int) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, int, com.sun.org.apache.xml.internal.dtm.DTM, int) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public void callVisitors(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.XPathVisitor);
+  static {};
+}

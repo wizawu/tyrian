@@ -1,0 +1,6 @@
+Compiled from "FloatValue.java"
+public interface com.sun.jdi.FloatValue extends com.sun.jdi.PrimitiveValue, java.lang.Comparable<com.sun.jdi.FloatValue> {
+  public abstract float value();
+  public abstract boolean equals(java.lang.Object);
+  public abstract int hashCode();
+}

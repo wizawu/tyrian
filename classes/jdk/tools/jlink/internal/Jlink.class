@@ -1,0 +1,8 @@
+Compiled from "Jlink.java"
+public final class jdk.tools.jlink.internal.Jlink {
+  public static jdk.tools.jlink.plugin.Plugin newPlugin(java.lang.String, java.util.Map<java.lang.String, java.lang.String>, java.lang.ModuleLayer);
+  public jdk.tools.jlink.internal.Jlink();
+  public void build(jdk.tools.jlink.internal.Jlink$JlinkConfiguration);
+  public void build(jdk.tools.jlink.internal.Jlink$JlinkConfiguration, jdk.tools.jlink.internal.Jlink$PluginsConfiguration);
+  public void postProcess(jdk.tools.jlink.internal.ExecutableImage, java.util.List<jdk.tools.jlink.plugin.Plugin>);
+}

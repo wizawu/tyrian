@@ -1,0 +1,10 @@
+Compiled from "AttachProviderImpl.java"
+public class sun.tools.attach.AttachProviderImpl extends sun.tools.attach.HotSpotAttachProvider {
+  static final boolean $assertionsDisabled;
+  public sun.tools.attach.AttachProviderImpl();
+  public java.lang.String name();
+  public java.lang.String type();
+  public com.sun.tools.attach.VirtualMachine attachVirtualMachine(java.lang.String) throws com.sun.tools.attach.AttachNotSupportedException, java.io.IOException;
+  public com.sun.tools.attach.VirtualMachine attachVirtualMachine(com.sun.tools.attach.VirtualMachineDescriptor) throws com.sun.tools.attach.AttachNotSupportedException, java.io.IOException;
+  static {};
+}

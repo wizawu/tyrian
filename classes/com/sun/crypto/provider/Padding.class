@@ -1,0 +1,6 @@
+Compiled from "Padding.java"
+interface com.sun.crypto.provider.Padding {
+  public abstract void padWithLen(byte[], int, int) throws javax.crypto.ShortBufferException;
+  public abstract int unpad(byte[], int, int);
+  public abstract int padLength(int);
+}

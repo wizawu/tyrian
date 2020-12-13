@@ -1,0 +1,10 @@
+Compiled from "XslElement.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.XslElement extends com.sun.org.apache.xalan.internal.xsltc.compiler.Instruction {
+  com.sun.org.apache.xalan.internal.xsltc.compiler.XslElement();
+  public void display(int);
+  public void parseContents(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public void translateLiteral(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public void translateContents(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+}

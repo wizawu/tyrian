@@ -1,0 +1,7 @@
+Compiled from "SetMethodCreator.java"
+final class jdk.nashorn.internal.runtime.SetMethodCreator {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.runtime.SetMethodCreator(jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.FindProperty, jdk.dynalink.CallSiteDescriptor, jdk.dynalink.linker.LinkRequest);
+  jdk.dynalink.linker.GuardedInvocation createGuardedInvocation(java.lang.invoke.SwitchPoint);
+  static {};
+}

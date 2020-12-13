@@ -1,0 +1,6 @@
+Compiled from "ExceptionBlob.java"
+public class sun.jvm.hotspot.code.ExceptionBlob extends sun.jvm.hotspot.code.SingletonBlob {
+  public sun.jvm.hotspot.code.ExceptionBlob(sun.jvm.hotspot.debugger.Address);
+  public boolean isExceptionStub();
+  static {};
+}

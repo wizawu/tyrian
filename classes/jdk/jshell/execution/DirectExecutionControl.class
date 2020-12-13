@@ -1,0 +1,22 @@
+Compiled from "DirectExecutionControl.java"
+public class jdk.jshell.execution.DirectExecutionControl implements jdk.jshell.spi.ExecutionControl {
+  public jdk.jshell.execution.DirectExecutionControl(jdk.jshell.execution.LoaderDelegate);
+  public jdk.jshell.execution.DirectExecutionControl();
+  public void load(jdk.jshell.spi.ExecutionControl$ClassBytecodes[]) throws jdk.jshell.spi.ExecutionControl$ClassInstallException, jdk.jshell.spi.ExecutionControl$NotImplementedException, jdk.jshell.spi.ExecutionControl$EngineTerminationException;
+  public void redefine(jdk.jshell.spi.ExecutionControl$ClassBytecodes[]) throws jdk.jshell.spi.ExecutionControl$ClassInstallException, jdk.jshell.spi.ExecutionControl$NotImplementedException, jdk.jshell.spi.ExecutionControl$EngineTerminationException;
+  protected void classesRedefined(jdk.jshell.spi.ExecutionControl$ClassBytecodes[]) throws jdk.jshell.spi.ExecutionControl$NotImplementedException, jdk.jshell.spi.ExecutionControl$EngineTerminationException;
+  public java.lang.String invoke(java.lang.String, java.lang.String) throws jdk.jshell.spi.ExecutionControl$RunException, jdk.jshell.spi.ExecutionControl$InternalException, jdk.jshell.spi.ExecutionControl$EngineTerminationException;
+  public java.lang.String varValue(java.lang.String, java.lang.String) throws jdk.jshell.spi.ExecutionControl$RunException, jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  public void addToClasspath(java.lang.String) throws jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  public void stop() throws jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  public java.lang.Object extensionCommand(java.lang.String, java.lang.Object) throws jdk.jshell.spi.ExecutionControl$RunException, jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
+  public void close();
+  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
+  protected java.lang.String invoke(java.lang.reflect.Method) throws java.lang.Exception;
+  protected static java.lang.String valueString(java.lang.Object);
+  protected java.lang.String throwConvertedInvocationException(java.lang.Throwable) throws jdk.jshell.spi.ExecutionControl$RunException, jdk.jshell.spi.ExecutionControl$InternalException;
+  protected java.lang.String throwConvertedOtherException(java.lang.Throwable) throws jdk.jshell.spi.ExecutionControl$RunException, jdk.jshell.spi.ExecutionControl$InternalException;
+  protected void clientCodeEnter() throws jdk.jshell.spi.ExecutionControl$InternalException;
+  protected void clientCodeLeave() throws jdk.jshell.spi.ExecutionControl$InternalException;
+  static {};
+}

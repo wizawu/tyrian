@@ -1,0 +1,24 @@
+Compiled from "SignatureVisitor.java"
+public abstract class jdk.internal.org.objectweb.asm.signature.SignatureVisitor {
+  public static final char EXTENDS;
+  public static final char SUPER;
+  public static final char INSTANCEOF;
+  protected final int api;
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor(int);
+  public void visitFormalTypeParameter(java.lang.String);
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor visitClassBound();
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor visitInterfaceBound();
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor visitSuperclass();
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor visitInterface();
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor visitParameterType();
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor visitReturnType();
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor visitExceptionType();
+  public void visitBaseType(char);
+  public void visitTypeVariable(java.lang.String);
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor visitArrayType();
+  public void visitClassType(java.lang.String);
+  public void visitInnerClassType(java.lang.String);
+  public void visitTypeArgument();
+  public jdk.internal.org.objectweb.asm.signature.SignatureVisitor visitTypeArgument(char);
+  public void visitEnd();
+}

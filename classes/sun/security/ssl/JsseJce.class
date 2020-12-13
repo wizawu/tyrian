@@ -1,0 +1,38 @@
+Compiled from "JsseJce.java"
+final class sun.security.ssl.JsseJce {
+  static final boolean ALLOW_ECC;
+  static final java.lang.String CIPHER_RSA_PKCS1;
+  static final java.lang.String CIPHER_RC4;
+  static final java.lang.String CIPHER_DES;
+  static final java.lang.String CIPHER_3DES;
+  static final java.lang.String CIPHER_AES;
+  static final java.lang.String CIPHER_AES_GCM;
+  static final java.lang.String SIGNATURE_DSA;
+  static final java.lang.String SIGNATURE_ECDSA;
+  static final java.lang.String SIGNATURE_RAWDSA;
+  static final java.lang.String SIGNATURE_RAWECDSA;
+  static final java.lang.String SIGNATURE_RAWRSA;
+  static final java.lang.String SIGNATURE_SSLRSA;
+  static boolean isEcAvailable();
+  static javax.crypto.Cipher getCipher(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  static java.security.Signature getSignature(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  static javax.crypto.KeyGenerator getKeyGenerator(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  static java.security.KeyPairGenerator getKeyPairGenerator(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  static javax.crypto.KeyAgreement getKeyAgreement(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  static javax.crypto.Mac getMac(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  static java.security.KeyFactory getKeyFactory(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  static java.security.AlgorithmParameters getAlgorithmParameters(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  static java.security.SecureRandom getSecureRandom() throws java.security.KeyManagementException;
+  static java.security.MessageDigest getMD5();
+  static java.security.MessageDigest getSHA();
+  static java.security.MessageDigest getMessageDigest(java.lang.String);
+  static int getRSAKeyLength(java.security.PublicKey);
+  static java.security.spec.RSAPublicKeySpec getRSAPublicKeySpec(java.security.PublicKey);
+  static java.security.spec.ECParameterSpec getECParameterSpec(java.lang.String);
+  static java.lang.String getNamedCurveOid(java.security.spec.ECParameterSpec);
+  static java.security.spec.ECPoint decodePoint(byte[], java.security.spec.EllipticCurve) throws java.io.IOException;
+  static byte[] encodePoint(java.security.spec.ECPoint, java.security.spec.EllipticCurve);
+  static java.lang.Object beginFipsProvider();
+  static void endFipsProvider(java.lang.Object);
+  static {};
+}

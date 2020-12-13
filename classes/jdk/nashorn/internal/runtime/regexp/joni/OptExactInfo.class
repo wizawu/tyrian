@@ -1,0 +1,19 @@
+Compiled from "OptExactInfo.java"
+final class jdk.nashorn.internal.runtime.regexp.joni.OptExactInfo {
+  static final int OPT_EXACT_MAXLEN;
+  final jdk.nashorn.internal.runtime.regexp.joni.MinMaxLen mmd;
+  final jdk.nashorn.internal.runtime.regexp.joni.OptAnchorInfo anchor;
+  boolean reachEnd;
+  boolean ignoreCase;
+  final char[] chars;
+  int length;
+  jdk.nashorn.internal.runtime.regexp.joni.OptExactInfo();
+  boolean isFull();
+  void clear();
+  void copy(jdk.nashorn.internal.runtime.regexp.joni.OptExactInfo);
+  void concat(jdk.nashorn.internal.runtime.regexp.joni.OptExactInfo);
+  void concatStr(char[], int, int, boolean);
+  void altMerge(jdk.nashorn.internal.runtime.regexp.joni.OptExactInfo, jdk.nashorn.internal.runtime.regexp.joni.OptEnvironment);
+  void select(jdk.nashorn.internal.runtime.regexp.joni.OptExactInfo);
+  int compare(jdk.nashorn.internal.runtime.regexp.joni.OptMapInfo);
+}

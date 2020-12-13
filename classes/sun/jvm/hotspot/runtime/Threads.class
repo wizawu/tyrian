@@ -1,0 +1,13 @@
+Compiled from "Threads.java"
+public class sun.jvm.hotspot.runtime.Threads {
+  public sun.jvm.hotspot.runtime.Threads();
+  public sun.jvm.hotspot.runtime.JavaThread first();
+  public int getNumberOfThreads();
+  public sun.jvm.hotspot.runtime.JavaThread createJavaThreadWrapper(sun.jvm.hotspot.debugger.Address);
+  public void oopsDo(sun.jvm.hotspot.runtime.AddressVisitor);
+  public sun.jvm.hotspot.runtime.JavaThread owningThreadFromMonitor(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.runtime.JavaThread owningThreadFromMonitor(sun.jvm.hotspot.runtime.ObjectMonitor);
+  public java.util.List getPendingThreads(sun.jvm.hotspot.runtime.ObjectMonitor);
+  public java.util.List getWaitingThreads(sun.jvm.hotspot.runtime.ObjectMonitor);
+  static {};
+}

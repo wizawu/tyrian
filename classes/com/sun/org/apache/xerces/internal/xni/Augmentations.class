@@ -1,0 +1,8 @@
+Compiled from "Augmentations.java"
+public interface com.sun.org.apache.xerces.internal.xni.Augmentations {
+  public abstract java.lang.Object putItem(java.lang.String, java.lang.Object);
+  public abstract java.lang.Object getItem(java.lang.String);
+  public abstract java.lang.Object removeItem(java.lang.String);
+  public abstract java.util.Enumeration<java.lang.Object> keys();
+  public abstract void removeAllItems();
+}

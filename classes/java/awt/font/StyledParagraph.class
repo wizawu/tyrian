@@ -1,0 +1,13 @@
+Compiled from "StyledParagraph.java"
+final class java.awt.font.StyledParagraph {
+  int[] decorationStarts;
+  int[] fontStarts;
+  public java.awt.font.StyledParagraph(java.text.AttributedCharacterIterator, char[]);
+  public static java.awt.font.StyledParagraph insertChar(java.text.AttributedCharacterIterator, char[], int, java.awt.font.StyledParagraph);
+  public static java.awt.font.StyledParagraph deleteChar(java.text.AttributedCharacterIterator, char[], int, java.awt.font.StyledParagraph);
+  public int getRunLimit(int);
+  public sun.font.Decoration getDecorationAt(int);
+  public java.lang.Object getFontOrGraphicAt(int);
+  static java.util.Map<? extends java.text.AttributedCharacterIterator$Attribute, ?> addInputMethodAttrs(java.util.Map<? extends java.text.AttributedCharacterIterator$Attribute, ?>);
+  static {};
+}

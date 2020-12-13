@@ -1,0 +1,48 @@
+Compiled from "MethodHandleNatives.java"
+class java.lang.invoke.MethodHandleNatives {
+  static final boolean $assertionsDisabled;
+  static native void init(java.lang.invoke.MemberName, java.lang.Object);
+  static native void expand(java.lang.invoke.MemberName);
+  static native java.lang.invoke.MemberName resolve(java.lang.invoke.MemberName, java.lang.Class<?>, boolean) throws java.lang.LinkageError, java.lang.ClassNotFoundException;
+  static native int getMembers(java.lang.Class<?>, java.lang.String, java.lang.String, int, java.lang.Class<?>, int, java.lang.invoke.MemberName[]);
+  static native long objectFieldOffset(java.lang.invoke.MemberName);
+  static native long staticFieldOffset(java.lang.invoke.MemberName);
+  static native java.lang.Object staticFieldBase(java.lang.invoke.MemberName);
+  static native java.lang.Object getMemberVMInfo(java.lang.invoke.MemberName);
+  static native void setCallSiteTargetNormal(java.lang.invoke.CallSite, java.lang.invoke.MethodHandle);
+  static native void setCallSiteTargetVolatile(java.lang.invoke.CallSite, java.lang.invoke.MethodHandle);
+  static native void copyOutBootstrapArguments(java.lang.Class<?>, int[], int, int, java.lang.Object[], int, boolean, java.lang.Object);
+  static boolean refKindIsValid(int);
+  static boolean refKindIsField(byte);
+  static boolean refKindIsGetter(byte);
+  static boolean refKindIsSetter(byte);
+  static boolean refKindIsMethod(byte);
+  static boolean refKindIsConstructor(byte);
+  static boolean refKindHasReceiver(byte);
+  static boolean refKindIsStatic(byte);
+  static boolean refKindDoesDispatch(byte);
+  static java.lang.String refKindName(byte);
+  static boolean verifyConstants();
+  static java.lang.invoke.MemberName linkCallSite(java.lang.Object, int, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object[]);
+  static java.lang.invoke.MemberName linkCallSiteImpl(java.lang.Class<?>, java.lang.invoke.MethodHandle, java.lang.String, java.lang.invoke.MethodType, java.lang.Object, java.lang.Object[]);
+  static java.lang.invoke.MemberName linkCallSiteTracing(java.lang.Class<?>, java.lang.invoke.MethodHandle, java.lang.String, java.lang.invoke.MethodType, java.lang.Object, java.lang.Object[]);
+  static java.lang.Object linkDynamicConstant(java.lang.Object, int, java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object);
+  static java.lang.Object linkDynamicConstantImpl(java.lang.Class<?>, java.lang.invoke.MethodHandle, java.lang.String, java.lang.Class<?>, java.lang.Object);
+  static java.lang.Object linkDynamicConstantTracing(java.lang.Class<?>, java.lang.invoke.MethodHandle, java.lang.String, java.lang.Class<?>, java.lang.Object);
+  static boolean staticArgumentsPulled(java.lang.Object);
+  static boolean isPullModeBSM(java.lang.invoke.MethodHandle);
+  static java.lang.invoke.MethodType findMethodHandleType(java.lang.Class<?>, java.lang.Class<?>[]);
+  static java.lang.invoke.MemberName linkMethod(java.lang.Class<?>, int, java.lang.Class<?>, java.lang.String, java.lang.Object, java.lang.Object[]);
+  static java.lang.invoke.MemberName linkMethodImpl(java.lang.Class<?>, int, java.lang.Class<?>, java.lang.String, java.lang.Object, java.lang.Object[]);
+  static java.lang.invoke.MemberName linkMethodTracing(java.lang.Class<?>, int, java.lang.Class<?>, java.lang.String, java.lang.Object, java.lang.Object[]);
+  static java.lang.String getVarHandleGuardMethodName(java.lang.invoke.MethodType);
+  static char getCharType(java.lang.Class<?>);
+  static java.lang.NoSuchMethodError newNoSuchMethodErrorOnVarHandle(java.lang.String, java.lang.invoke.MethodType);
+  static java.lang.invoke.MethodHandle linkMethodHandleConstant(java.lang.Class<?>, int, java.lang.Class<?>, java.lang.String, java.lang.Object);
+  static java.lang.LinkageError mapLookupExceptionToError(java.lang.ReflectiveOperationException);
+  static <E extends java.lang.Error> E initCauseFrom(E, java.lang.Exception);
+  static boolean isCallerSensitive(java.lang.invoke.MemberName);
+  static boolean canBeCalledVirtual(java.lang.invoke.MemberName);
+  static boolean canBeCalledVirtual(java.lang.invoke.MemberName, java.lang.Class<?>);
+  static {};
+}

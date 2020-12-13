@@ -1,0 +1,22 @@
+Compiled from "ElementNSImpl.java"
+public class com.sun.org.apache.xerces.internal.dom.ElementNSImpl extends com.sun.org.apache.xerces.internal.dom.ElementImpl {
+  static final long serialVersionUID;
+  static final java.lang.String xmlURI;
+  protected java.lang.String namespaceURI;
+  protected java.lang.String localName;
+  transient com.sun.org.apache.xerces.internal.xs.XSTypeDefinition type;
+  protected com.sun.org.apache.xerces.internal.dom.ElementNSImpl();
+  protected com.sun.org.apache.xerces.internal.dom.ElementNSImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
+  protected com.sun.org.apache.xerces.internal.dom.ElementNSImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String, java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
+  protected com.sun.org.apache.xerces.internal.dom.ElementNSImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String);
+  void rename(java.lang.String, java.lang.String);
+  public java.lang.String getNamespaceURI();
+  public java.lang.String getPrefix();
+  public void setPrefix(java.lang.String) throws org.w3c.dom.DOMException;
+  public java.lang.String getLocalName();
+  protected org.w3c.dom.Attr getXMLBaseAttribute();
+  public java.lang.String getTypeName();
+  public java.lang.String getTypeNamespace();
+  public boolean isDerivedFrom(java.lang.String, java.lang.String, int);
+  public void setType(com.sun.org.apache.xerces.internal.xs.XSTypeDefinition);
+}

@@ -1,0 +1,5 @@
+Compiled from "Visitor.java"
+public interface sun.reflect.generics.visitor.Visitor<T> extends sun.reflect.generics.visitor.TypeTreeVisitor<T> {
+  public abstract void visitClassSignature(sun.reflect.generics.tree.ClassSignature);
+  public abstract void visitMethodTypeSignature(sun.reflect.generics.tree.MethodTypeSignature);
+}

@@ -1,0 +1,14 @@
+Compiled from "ObjectVisitor.java"
+public interface sun.jvm.hotspot.debugger.cdbg.ObjectVisitor {
+  public abstract void enterType(sun.jvm.hotspot.debugger.cdbg.Type, sun.jvm.hotspot.debugger.Address);
+  public abstract void exitType();
+  public abstract void doBit(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, long);
+  public abstract void doInt(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, long);
+  public abstract void doEnum(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, long, java.lang.String);
+  public abstract void doFloat(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, float);
+  public abstract void doDouble(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, double);
+  public abstract void doPointer(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, sun.jvm.hotspot.debugger.Address);
+  public abstract void doArray(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, sun.jvm.hotspot.debugger.Address);
+  public abstract void doRef(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, sun.jvm.hotspot.debugger.Address);
+  public abstract void doCompound(sun.jvm.hotspot.debugger.cdbg.FieldIdentifier, sun.jvm.hotspot.debugger.Address);
+}

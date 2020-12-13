@@ -1,0 +1,28 @@
+Compiled from "PrimitiveType.java"
+class com.sun.tools.javadoc.main.PrimitiveType implements com.sun.javadoc.Type {
+  static final com.sun.tools.javadoc.main.PrimitiveType voidType;
+  static final com.sun.tools.javadoc.main.PrimitiveType booleanType;
+  static final com.sun.tools.javadoc.main.PrimitiveType byteType;
+  static final com.sun.tools.javadoc.main.PrimitiveType charType;
+  static final com.sun.tools.javadoc.main.PrimitiveType shortType;
+  static final com.sun.tools.javadoc.main.PrimitiveType intType;
+  static final com.sun.tools.javadoc.main.PrimitiveType longType;
+  static final com.sun.tools.javadoc.main.PrimitiveType floatType;
+  static final com.sun.tools.javadoc.main.PrimitiveType doubleType;
+  static final com.sun.tools.javadoc.main.PrimitiveType errorType;
+  com.sun.tools.javadoc.main.PrimitiveType(java.lang.String);
+  public java.lang.String typeName();
+  public com.sun.javadoc.Type getElementType();
+  public java.lang.String qualifiedTypeName();
+  public java.lang.String simpleTypeName();
+  public java.lang.String dimension();
+  public com.sun.javadoc.ClassDoc asClassDoc();
+  public com.sun.javadoc.AnnotationTypeDoc asAnnotationTypeDoc();
+  public com.sun.javadoc.ParameterizedType asParameterizedType();
+  public com.sun.javadoc.TypeVariable asTypeVariable();
+  public com.sun.javadoc.WildcardType asWildcardType();
+  public com.sun.javadoc.AnnotatedType asAnnotatedType();
+  public java.lang.String toString();
+  public boolean isPrimitive();
+  static {};
+}

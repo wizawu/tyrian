@@ -1,0 +1,17 @@
+Compiled from "ElementType.java"
+public final class java.lang.annotation.ElementType extends java.lang.Enum<java.lang.annotation.ElementType> {
+  public static final java.lang.annotation.ElementType TYPE;
+  public static final java.lang.annotation.ElementType FIELD;
+  public static final java.lang.annotation.ElementType METHOD;
+  public static final java.lang.annotation.ElementType PARAMETER;
+  public static final java.lang.annotation.ElementType CONSTRUCTOR;
+  public static final java.lang.annotation.ElementType LOCAL_VARIABLE;
+  public static final java.lang.annotation.ElementType ANNOTATION_TYPE;
+  public static final java.lang.annotation.ElementType PACKAGE;
+  public static final java.lang.annotation.ElementType TYPE_PARAMETER;
+  public static final java.lang.annotation.ElementType TYPE_USE;
+  public static final java.lang.annotation.ElementType MODULE;
+  public static java.lang.annotation.ElementType[] values();
+  public static java.lang.annotation.ElementType valueOf(java.lang.String);
+  static {};
+}

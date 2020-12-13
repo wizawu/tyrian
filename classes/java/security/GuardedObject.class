@@ -1,0 +1,5 @@
+Compiled from "GuardedObject.java"
+public class java.security.GuardedObject implements java.io.Serializable {
+  public java.security.GuardedObject(java.lang.Object, java.security.Guard);
+  public java.lang.Object getObject() throws java.lang.SecurityException;
+}

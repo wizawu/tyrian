@@ -1,0 +1,11 @@
+Compiled from "Selector.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.identity.Selector {
+  protected final com.sun.org.apache.xerces.internal.impl.xs.identity.Selector$XPath fXPath;
+  protected final com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint fIdentityConstraint;
+  protected com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint fIDConstraint;
+  public com.sun.org.apache.xerces.internal.impl.xs.identity.Selector(com.sun.org.apache.xerces.internal.impl.xs.identity.Selector$XPath, com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint);
+  public com.sun.org.apache.xerces.internal.impl.xpath.XPath getXPath();
+  public com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint getIDConstraint();
+  public com.sun.org.apache.xerces.internal.impl.xs.identity.XPathMatcher createMatcher(com.sun.org.apache.xerces.internal.impl.xs.identity.FieldActivator, int);
+  public java.lang.String toString();
+}

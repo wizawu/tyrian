@@ -1,0 +1,11 @@
+Compiled from "ScriptUtils.java"
+public final class jdk.nashorn.api.scripting.ScriptUtils {
+  public static java.lang.String parse(java.lang.String, java.lang.String, boolean);
+  public static java.lang.String format(java.lang.String, java.lang.Object[]);
+  public static java.lang.Object makeSynchronizedFunction(java.lang.Object, java.lang.Object);
+  public static jdk.nashorn.api.scripting.ScriptObjectMirror wrap(java.lang.Object);
+  public static java.lang.Object unwrap(java.lang.Object);
+  public static java.lang.Object[] wrapArray(java.lang.Object[]);
+  public static java.lang.Object[] unwrapArray(java.lang.Object[]);
+  public static java.lang.Object convert(java.lang.Object, java.lang.Object);
+}

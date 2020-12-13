@@ -1,0 +1,9 @@
+Compiled from "JO.java"
+public class jdk.nashorn.internal.scripts.JO extends jdk.nashorn.internal.runtime.ScriptObject {
+  public static jdk.nashorn.internal.runtime.PropertyMap getInitialMap();
+  public jdk.nashorn.internal.scripts.JO(jdk.nashorn.internal.runtime.PropertyMap);
+  public jdk.nashorn.internal.scripts.JO(jdk.nashorn.internal.runtime.ScriptObject);
+  public jdk.nashorn.internal.scripts.JO(jdk.nashorn.internal.runtime.PropertyMap, long[], java.lang.Object[]);
+  public static jdk.nashorn.internal.runtime.ScriptObject allocate(jdk.nashorn.internal.runtime.PropertyMap);
+  static {};
+}

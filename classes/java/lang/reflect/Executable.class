@@ -1,0 +1,44 @@
+Compiled from "Executable.java"
+public abstract class java.lang.reflect.Executable extends java.lang.reflect.AccessibleObject implements java.lang.reflect.Member,java.lang.reflect.GenericDeclaration {
+  java.lang.reflect.Executable();
+  abstract byte[] getAnnotationBytes();
+  abstract boolean hasGenericInformation();
+  abstract sun.reflect.generics.repository.ConstructorRepository getGenericInfo();
+  boolean equalParamTypes(java.lang.Class<?>[], java.lang.Class<?>[]);
+  java.lang.annotation.Annotation[][] parseParameterAnnotations(byte[]);
+  void printModifiersIfNonzero(java.lang.StringBuilder, int, boolean);
+  java.lang.String sharedToString(int, boolean, java.lang.Class<?>[], java.lang.Class<?>[]);
+  abstract void specificToStringHeader(java.lang.StringBuilder);
+  java.lang.String sharedToGenericString(int, boolean);
+  abstract void specificToGenericStringHeader(java.lang.StringBuilder);
+  public abstract java.lang.Class<?> getDeclaringClass();
+  public abstract java.lang.String getName();
+  public abstract int getModifiers();
+  public abstract java.lang.reflect.TypeVariable<?>[] getTypeParameters();
+  abstract java.lang.Class<?>[] getSharedParameterTypes();
+  abstract java.lang.Class<?>[] getSharedExceptionTypes();
+  public abstract java.lang.Class<?>[] getParameterTypes();
+  public int getParameterCount();
+  public java.lang.reflect.Type[] getGenericParameterTypes();
+  java.lang.reflect.Type[] getAllGenericParameterTypes();
+  public java.lang.reflect.Parameter[] getParameters();
+  boolean hasRealParameterData();
+  native byte[] getTypeAnnotationBytes0();
+  byte[] getTypeAnnotationBytes();
+  public abstract java.lang.Class<?>[] getExceptionTypes();
+  public java.lang.reflect.Type[] getGenericExceptionTypes();
+  public abstract java.lang.String toGenericString();
+  public boolean isVarArgs();
+  public boolean isSynthetic();
+  public abstract java.lang.annotation.Annotation[][] getParameterAnnotations();
+  java.lang.annotation.Annotation[][] sharedGetParameterAnnotations(java.lang.Class<?>[], byte[]);
+  abstract boolean handleParameterNumberMismatch(int, int);
+  public <T extends java.lang.annotation.Annotation> T getAnnotation(java.lang.Class<T>);
+  public <T extends java.lang.annotation.Annotation> T[] getAnnotationsByType(java.lang.Class<T>);
+  public java.lang.annotation.Annotation[] getDeclaredAnnotations();
+  public abstract java.lang.reflect.AnnotatedType getAnnotatedReturnType();
+  java.lang.reflect.AnnotatedType getAnnotatedReturnType0(java.lang.reflect.Type);
+  public java.lang.reflect.AnnotatedType getAnnotatedReceiverType();
+  public java.lang.reflect.AnnotatedType[] getAnnotatedParameterTypes();
+  public java.lang.reflect.AnnotatedType[] getAnnotatedExceptionTypes();
+}

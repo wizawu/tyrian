@@ -1,0 +1,20 @@
+Compiled from "CodeException.java"
+public final class com.sun.org.apache.bcel.internal.classfile.CodeException implements java.lang.Cloneable,com.sun.org.apache.bcel.internal.classfile.Node {
+  public com.sun.org.apache.bcel.internal.classfile.CodeException(com.sun.org.apache.bcel.internal.classfile.CodeException);
+  com.sun.org.apache.bcel.internal.classfile.CodeException(java.io.DataInput) throws java.io.IOException;
+  public com.sun.org.apache.bcel.internal.classfile.CodeException(int, int, int, int);
+  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
+  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
+  public final int getCatchType();
+  public final int getEndPC();
+  public final int getHandlerPC();
+  public final int getStartPC();
+  public final void setCatchType(int);
+  public final void setEndPC(int);
+  public final void setHandlerPC(int);
+  public final void setStartPC(int);
+  public final java.lang.String toString();
+  public final java.lang.String toString(com.sun.org.apache.bcel.internal.classfile.ConstantPool, boolean);
+  public final java.lang.String toString(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
+  public com.sun.org.apache.bcel.internal.classfile.CodeException copy();
+}

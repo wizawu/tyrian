@@ -1,0 +1,8 @@
+Compiled from "ExpiringCache.java"
+class java.io.ExpiringCache {
+  java.io.ExpiringCache();
+  java.io.ExpiringCache(long);
+  synchronized java.lang.String get(java.lang.String);
+  synchronized void put(java.lang.String, java.lang.String);
+  synchronized void clear();
+}

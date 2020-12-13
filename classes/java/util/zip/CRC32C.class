@@ -1,0 +1,11 @@
+Compiled from "CRC32C.java"
+public final class java.util.zip.CRC32C implements java.util.zip.Checksum {
+  static final boolean $assertionsDisabled;
+  public java.util.zip.CRC32C();
+  public void update(int);
+  public void update(byte[], int, int);
+  public void update(java.nio.ByteBuffer);
+  public void reset();
+  public long getValue();
+  static {};
+}

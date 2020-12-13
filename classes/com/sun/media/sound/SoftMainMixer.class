@@ -1,0 +1,45 @@
+Compiled from "SoftMainMixer.java"
+public final class com.sun.media.sound.SoftMainMixer {
+  public static final int CHANNEL_LEFT;
+  public static final int CHANNEL_RIGHT;
+  public static final int CHANNEL_MONO;
+  public static final int CHANNEL_DELAY_LEFT;
+  public static final int CHANNEL_DELAY_RIGHT;
+  public static final int CHANNEL_DELAY_MONO;
+  public static final int CHANNEL_EFFECT1;
+  public static final int CHANNEL_EFFECT2;
+  public static final int CHANNEL_DELAY_EFFECT1;
+  public static final int CHANNEL_DELAY_EFFECT2;
+  public static final int CHANNEL_LEFT_DRY;
+  public static final int CHANNEL_RIGHT_DRY;
+  public static final int CHANNEL_SCRATCH1;
+  public static final int CHANNEL_SCRATCH2;
+  boolean active_sensing_on;
+  boolean readfully;
+  java.util.TreeMap<java.lang.Long, java.lang.Object> midimessages;
+  double last_volume_left;
+  double last_volume_right;
+  com.sun.media.sound.SoftControl co_master;
+  void processAudioBuffers();
+  public void activity();
+  public void stopMixer(com.sun.media.sound.ModelChannelMixer);
+  public void registerMixer(com.sun.media.sound.ModelChannelMixer);
+  public com.sun.media.sound.SoftMainMixer(com.sun.media.sound.SoftSynthesizer);
+  public javax.sound.sampled.AudioInputStream getInputStream();
+  public void reset();
+  public void setVolume(int);
+  public void setBalance(int);
+  public void setFineTuning(int);
+  public void setCoarseTuning(int);
+  public int getVolume();
+  public int getBalance();
+  public int getFineTuning();
+  public int getCoarseTuning();
+  public void globalParameterControlChange(int[], long[], long[]);
+  public void processMessage(java.lang.Object);
+  public void processMessage(javax.sound.midi.MidiMessage);
+  public void processMessage(byte[]);
+  public void processMessage(int, int, int, int);
+  public long getMicrosecondPosition();
+  public void close();
+}

@@ -1,0 +1,19 @@
+Compiled from "HTMLFormElement.java"
+public interface org.w3c.dom.html.HTMLFormElement extends org.w3c.dom.html.HTMLElement {
+  public abstract org.w3c.dom.html.HTMLCollection getElements();
+  public abstract int getLength();
+  public abstract java.lang.String getName();
+  public abstract void setName(java.lang.String);
+  public abstract java.lang.String getAcceptCharset();
+  public abstract void setAcceptCharset(java.lang.String);
+  public abstract java.lang.String getAction();
+  public abstract void setAction(java.lang.String);
+  public abstract java.lang.String getEnctype();
+  public abstract void setEnctype(java.lang.String);
+  public abstract java.lang.String getMethod();
+  public abstract void setMethod(java.lang.String);
+  public abstract java.lang.String getTarget();
+  public abstract void setTarget(java.lang.String);
+  public abstract void submit();
+  public abstract void reset();
+}

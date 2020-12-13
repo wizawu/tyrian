@@ -1,0 +1,32 @@
+Compiled from "SoftChannelProxy.java"
+public final class com.sun.media.sound.SoftChannelProxy implements javax.sound.midi.MidiChannel {
+  public com.sun.media.sound.SoftChannelProxy();
+  public javax.sound.midi.MidiChannel getChannel();
+  public void setChannel(javax.sound.midi.MidiChannel);
+  public void allNotesOff();
+  public void allSoundOff();
+  public void controlChange(int, int);
+  public int getChannelPressure();
+  public int getController(int);
+  public boolean getMono();
+  public boolean getMute();
+  public boolean getOmni();
+  public int getPitchBend();
+  public int getPolyPressure(int);
+  public int getProgram();
+  public boolean getSolo();
+  public boolean localControl(boolean);
+  public void noteOff(int);
+  public void noteOff(int, int);
+  public void noteOn(int, int);
+  public void programChange(int);
+  public void programChange(int, int);
+  public void resetAllControllers();
+  public void setChannelPressure(int);
+  public void setMono(boolean);
+  public void setMute(boolean);
+  public void setOmni(boolean);
+  public void setPitchBend(int);
+  public void setPolyPressure(int, int);
+  public void setSolo(boolean);
+}

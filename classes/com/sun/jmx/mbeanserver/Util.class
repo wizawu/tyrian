@@ -1,0 +1,19 @@
+Compiled from "Util.java"
+public class com.sun.jmx.mbeanserver.Util {
+  public com.sun.jmx.mbeanserver.Util();
+  public static javax.management.ObjectName newObjectName(java.lang.String);
+  static <K, V> java.util.Map<K, V> newMap();
+  static <K, V> java.util.Map<K, V> newSynchronizedMap();
+  static <K, V> java.util.IdentityHashMap<K, V> newIdentityHashMap();
+  static <K, V> java.util.Map<K, V> newSynchronizedIdentityHashMap();
+  static <K, V> java.util.SortedMap<K, V> newSortedMap();
+  static <K, V> java.util.SortedMap<K, V> newSortedMap(java.util.Comparator<? super K>);
+  static <K, V> java.util.Map<K, V> newInsertionOrderMap();
+  static <E> java.util.Set<E> newSet();
+  static <E> java.util.Set<E> newSet(java.util.Collection<E>);
+  static <E> java.util.List<E> newList();
+  static <E> java.util.List<E> newList(java.util.Collection<E>);
+  public static <T> T cast(java.lang.Object);
+  public static int hashCode(java.lang.String[], java.lang.Object[]);
+  public static boolean wildmatch(java.lang.String, java.lang.String);
+}

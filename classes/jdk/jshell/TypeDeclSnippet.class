@@ -1,0 +1,6 @@
+Compiled from "TypeDeclSnippet.java"
+public class jdk.jshell.TypeDeclSnippet extends jdk.jshell.DeclarationSnippet {
+  jdk.jshell.TypeDeclSnippet(jdk.jshell.Key$TypeDeclKey, java.lang.String, jdk.jshell.Wrap, java.lang.String, jdk.jshell.Snippet$SubKind, jdk.jshell.Wrap, java.util.Collection<java.lang.String>, java.util.Collection<java.lang.String>, jdk.jshell.DiagList);
+  jdk.jshell.Key$TypeDeclKey key();
+  jdk.jshell.Key key();
+}

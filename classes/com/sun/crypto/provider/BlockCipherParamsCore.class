@@ -1,0 +1,11 @@
+Compiled from "BlockCipherParamsCore.java"
+final class com.sun.crypto.provider.BlockCipherParamsCore {
+  com.sun.crypto.provider.BlockCipherParamsCore(int);
+  void init(java.security.spec.AlgorithmParameterSpec) throws java.security.spec.InvalidParameterSpecException;
+  void init(byte[]) throws java.io.IOException;
+  void init(byte[], java.lang.String) throws java.io.IOException;
+  <T extends java.security.spec.AlgorithmParameterSpec> T getParameterSpec(java.lang.Class<T>) throws java.security.spec.InvalidParameterSpecException;
+  byte[] getEncoded() throws java.io.IOException;
+  byte[] getEncoded(java.lang.String) throws java.io.IOException;
+  public java.lang.String toString();
+}

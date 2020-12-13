@@ -1,0 +1,8 @@
+Compiled from "UnresolvedRef.java"
+final class com.sun.org.apache.xalan.internal.xsltc.compiler.UnresolvedRef extends com.sun.org.apache.xalan.internal.xsltc.compiler.VariableRefBase {
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.UnresolvedRef(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.QName getName();
+  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
+  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
+  public java.lang.String toString();
+}

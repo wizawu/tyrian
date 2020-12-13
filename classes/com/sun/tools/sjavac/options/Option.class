@@ -1,0 +1,40 @@
+Compiled from "Option.java"
+public abstract class com.sun.tools.sjavac.options.Option extends java.lang.Enum<com.sun.tools.sjavac.options.Option> {
+  public static final com.sun.tools.sjavac.options.Option SRC;
+  public static final com.sun.tools.sjavac.options.Option SOURCE_PATH;
+  public static final com.sun.tools.sjavac.options.Option SOURCEPATH;
+  public static final com.sun.tools.sjavac.options.Option MODULE_PATH;
+  public static final com.sun.tools.sjavac.options.Option P;
+  public static final com.sun.tools.sjavac.options.Option CLASS_PATH;
+  public static final com.sun.tools.sjavac.options.Option CLASSPATH;
+  public static final com.sun.tools.sjavac.options.Option CP;
+  public static final com.sun.tools.sjavac.options.Option X;
+  public static final com.sun.tools.sjavac.options.Option I;
+  public static final com.sun.tools.sjavac.options.Option TR;
+  public static final com.sun.tools.sjavac.options.Option COPY;
+  public static final com.sun.tools.sjavac.options.Option J;
+  public static final com.sun.tools.sjavac.options.Option SERVER;
+  public static final com.sun.tools.sjavac.options.Option STARTSERVER;
+  public static final com.sun.tools.sjavac.options.Option IMPLICIT;
+  public static final com.sun.tools.sjavac.options.Option LOG;
+  public static final com.sun.tools.sjavac.options.Option VERBOSE;
+  public static final com.sun.tools.sjavac.options.Option PERMIT_ARTIFACT;
+  public static final com.sun.tools.sjavac.options.Option PERMIT_UNIDENTIFIED_ARTIFACTS;
+  public static final com.sun.tools.sjavac.options.Option PERMIT_SOURCES_WITHOUT_PACKAGE;
+  public static final com.sun.tools.sjavac.options.Option COMPARE_FOUND_SOURCES;
+  public static final com.sun.tools.sjavac.options.Option D;
+  public static final com.sun.tools.sjavac.options.Option S;
+  public static final com.sun.tools.sjavac.options.Option H;
+  public static final com.sun.tools.sjavac.options.Option STATE_DIR;
+  public final java.lang.String arg;
+  final java.lang.String description;
+  public static com.sun.tools.sjavac.options.Option[] values();
+  public static com.sun.tools.sjavac.options.Option valueOf(java.lang.String);
+  java.util.List<java.nio.file.Path> getFileListArg(com.sun.tools.sjavac.options.ArgumentIterator, com.sun.tools.sjavac.options.OptionHelper);
+  java.nio.file.Path getFileArg(com.sun.tools.sjavac.options.ArgumentIterator, com.sun.tools.sjavac.options.OptionHelper, boolean, boolean);
+  java.lang.String getFilePatternArg(com.sun.tools.sjavac.options.ArgumentIterator, com.sun.tools.sjavac.options.OptionHelper);
+  public boolean hasOption();
+  public final boolean processCurrent(com.sun.tools.sjavac.options.ArgumentIterator, com.sun.tools.sjavac.options.OptionHelper);
+  protected abstract void processMatching(com.sun.tools.sjavac.options.ArgumentIterator, com.sun.tools.sjavac.options.OptionHelper);
+  static {};
+}

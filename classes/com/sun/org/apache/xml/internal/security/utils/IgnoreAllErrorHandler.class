@@ -1,0 +1,8 @@
+Compiled from "IgnoreAllErrorHandler.java"
+public class com.sun.org.apache.xml.internal.security.utils.IgnoreAllErrorHandler implements org.xml.sax.ErrorHandler {
+  public com.sun.org.apache.xml.internal.security.utils.IgnoreAllErrorHandler();
+  public void warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  public void fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
+  static {};
+}

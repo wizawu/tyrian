@@ -1,0 +1,20 @@
+Compiled from "CollinearSimplifier.java"
+final class sun.java2d.marlin.CollinearSimplifier implements sun.awt.geom.PathConsumer2D {
+  static final float EPS;
+  sun.awt.geom.PathConsumer2D delegate;
+  sun.java2d.marlin.CollinearSimplifier$SimplifierState state;
+  float px1;
+  float py1;
+  float px2;
+  float py2;
+  float pslope;
+  sun.java2d.marlin.CollinearSimplifier();
+  public sun.java2d.marlin.CollinearSimplifier init(sun.awt.geom.PathConsumer2D);
+  public void pathDone();
+  public void closePath();
+  public long getNativeConsumer();
+  public void quadTo(float, float, float, float);
+  public void curveTo(float, float, float, float, float, float);
+  public void moveTo(float, float);
+  public void lineTo(float, float);
+}

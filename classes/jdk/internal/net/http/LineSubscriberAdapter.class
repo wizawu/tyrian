@@ -1,0 +1,10 @@
+Compiled from "LineSubscriberAdapter.java"
+public final class jdk.internal.net.http.LineSubscriberAdapter<S extends java.util.concurrent.Flow$Subscriber<? super java.lang.String>, R> implements java.net.http.HttpResponse$BodySubscriber<R> {
+  public void onSubscribe(java.util.concurrent.Flow$Subscription);
+  public void onNext(java.util.List<java.nio.ByteBuffer>);
+  public void onError(java.lang.Throwable);
+  public void onComplete();
+  public java.util.concurrent.CompletionStage<R> getBody();
+  public static <S extends java.util.concurrent.Flow$Subscriber<? super java.lang.String>, R> jdk.internal.net.http.LineSubscriberAdapter<S, R> create(S, java.util.function.Function<? super S, ? extends R>, java.nio.charset.Charset, java.lang.String);
+  public void onNext(java.lang.Object);
+}

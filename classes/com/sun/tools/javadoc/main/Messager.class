@@ -1,0 +1,29 @@
+Compiled from "Messager.java"
+public class com.sun.tools.javadoc.main.Messager extends com.sun.tools.javac.util.Log implements com.sun.javadoc.DocErrorReporter {
+  public static final com.sun.javadoc.SourcePosition NOPOS;
+  final java.lang.String programName;
+  static final java.io.PrintWriter defaultErrWriter;
+  static final java.io.PrintWriter defaultWarnWriter;
+  static final java.io.PrintWriter defaultNoticeWriter;
+  public static com.sun.tools.javadoc.main.Messager instance0(com.sun.tools.javac.util.Context);
+  public static void preRegister(com.sun.tools.javac.util.Context, java.lang.String);
+  public static void preRegister(com.sun.tools.javac.util.Context, java.lang.String, java.io.PrintWriter, java.io.PrintWriter, java.io.PrintWriter);
+  protected com.sun.tools.javadoc.main.Messager(com.sun.tools.javac.util.Context, java.lang.String);
+  protected com.sun.tools.javadoc.main.Messager(com.sun.tools.javac.util.Context, java.lang.String, java.io.PrintWriter, java.io.PrintWriter, java.io.PrintWriter);
+  public void setLocale(java.util.Locale);
+  java.lang.String getText(java.lang.String, java.lang.Object...);
+  public void printError(java.lang.String);
+  public void printError(com.sun.javadoc.SourcePosition, java.lang.String);
+  public void printWarning(java.lang.String);
+  public void printWarning(com.sun.javadoc.SourcePosition, java.lang.String);
+  public void printNotice(java.lang.String);
+  public void printNotice(com.sun.javadoc.SourcePosition, java.lang.String);
+  public void error(com.sun.javadoc.SourcePosition, java.lang.String, java.lang.Object...);
+  public void warning(com.sun.javadoc.SourcePosition, java.lang.String, java.lang.Object...);
+  public void notice(java.lang.String, java.lang.Object...);
+  public int nerrors();
+  public int nwarnings();
+  public void exitNotice();
+  public void exit();
+  static {};
+}

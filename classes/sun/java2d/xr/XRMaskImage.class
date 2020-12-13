@@ -1,0 +1,14 @@
+Compiled from "XRMaskImage.java"
+public class sun.java2d.xr.XRMaskImage {
+  java.awt.Dimension blitMaskDimensions;
+  int blitMaskPixmap;
+  int blitMaskPicture;
+  int lastMaskWidth;
+  int lastMaskHeight;
+  int lastEA;
+  java.awt.geom.AffineTransform lastMaskTransform;
+  sun.java2d.xr.XRCompositeManager xrMgr;
+  sun.java2d.xr.XRBackend con;
+  public sun.java2d.xr.XRMaskImage(sun.java2d.xr.XRCompositeManager, int);
+  public int prepareBlitMask(sun.java2d.xr.XRSurfaceData, java.awt.geom.AffineTransform, int, int);
+}

@@ -1,0 +1,9 @@
+Compiled from "NonExtensibleArrayFilter.java"
+final class jdk.nashorn.internal.runtime.arrays.NonExtensibleArrayFilter extends jdk.nashorn.internal.runtime.arrays.ArrayFilter {
+  jdk.nashorn.internal.runtime.arrays.NonExtensibleArrayFilter(jdk.nashorn.internal.runtime.arrays.ArrayData);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData copy();
+  public jdk.nashorn.internal.runtime.arrays.ArrayData slice(long, long);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, java.lang.Object, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, int, boolean);
+  public jdk.nashorn.internal.runtime.arrays.ArrayData set(int, double, boolean);
+}

@@ -1,0 +1,8 @@
+Compiled from "Parameter.java"
+public interface com.sun.javadoc.Parameter {
+  public abstract com.sun.javadoc.Type type();
+  public abstract java.lang.String name();
+  public abstract java.lang.String typeName();
+  public abstract java.lang.String toString();
+  public abstract com.sun.javadoc.AnnotationDesc[] annotations();
+}

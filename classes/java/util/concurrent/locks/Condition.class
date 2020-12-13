@@ -1,0 +1,10 @@
+Compiled from "Condition.java"
+public interface java.util.concurrent.locks.Condition {
+  public abstract void await() throws java.lang.InterruptedException;
+  public abstract void awaitUninterruptibly();
+  public abstract long awaitNanos(long) throws java.lang.InterruptedException;
+  public abstract boolean await(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public abstract boolean awaitUntil(java.util.Date) throws java.lang.InterruptedException;
+  public abstract void signal();
+  public abstract void signalAll();
+}

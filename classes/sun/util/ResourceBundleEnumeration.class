@@ -1,0 +1,11 @@
+Compiled from "ResourceBundleEnumeration.java"
+public class sun.util.ResourceBundleEnumeration implements java.util.Enumeration<java.lang.String> {
+  java.util.Set<java.lang.String> set;
+  java.util.Iterator<java.lang.String> iterator;
+  java.util.Enumeration<java.lang.String> enumeration;
+  java.lang.String next;
+  public sun.util.ResourceBundleEnumeration(java.util.Set<java.lang.String>, java.util.Enumeration<java.lang.String>);
+  public boolean hasMoreElements();
+  public java.lang.String nextElement();
+  public java.lang.Object nextElement();
+}

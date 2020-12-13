@@ -1,0 +1,4 @@
+Compiled from "Interruptible.java"
+public interface sun.nio.ch.Interruptible {
+  public abstract void interrupt(java.lang.Thread);
+}

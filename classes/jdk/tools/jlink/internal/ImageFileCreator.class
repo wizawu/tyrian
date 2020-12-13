@@ -1,0 +1,10 @@
+Compiled from "ImageFileCreator.java"
+public final class jdk.tools.jlink.internal.ImageFileCreator {
+  public static jdk.tools.jlink.internal.ExecutableImage create(java.util.Set<jdk.tools.jlink.internal.Archive>, jdk.tools.jlink.internal.ImagePluginStack) throws java.io.IOException;
+  public static jdk.tools.jlink.internal.ExecutableImage create(java.util.Set<jdk.tools.jlink.internal.Archive>, java.nio.ByteOrder) throws java.io.IOException;
+  public static jdk.tools.jlink.internal.ExecutableImage create(java.util.Set<jdk.tools.jlink.internal.Archive>, java.nio.ByteOrder, jdk.tools.jlink.internal.ImagePluginStack) throws java.io.IOException;
+  public static void recreateJimage(java.nio.file.Path, java.util.Set<jdk.tools.jlink.internal.Archive>, jdk.tools.jlink.internal.ImagePluginStack) throws java.io.IOException;
+  public static java.lang.String[] splitPath(java.lang.String);
+  public static java.lang.String resourceName(java.lang.String);
+  public static java.lang.String toPackage(java.lang.String);
+}

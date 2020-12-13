@@ -1,0 +1,29 @@
+Compiled from "WeakHashMap.java"
+public class java.util.WeakHashMap<K, V> extends java.util.AbstractMap<K, V> implements java.util.Map<K, V> {
+  java.util.WeakHashMap$Entry<K, V>[] table;
+  int modCount;
+  public java.util.WeakHashMap(int, float);
+  public java.util.WeakHashMap(int);
+  public java.util.WeakHashMap();
+  public java.util.WeakHashMap(java.util.Map<? extends K, ? extends V>);
+  static java.lang.Object unmaskNull(java.lang.Object);
+  final int hash(java.lang.Object);
+  public int size();
+  public boolean isEmpty();
+  public V get(java.lang.Object);
+  public boolean containsKey(java.lang.Object);
+  java.util.WeakHashMap$Entry<K, V> getEntry(java.lang.Object);
+  public V put(K, V);
+  void resize(int);
+  public void putAll(java.util.Map<? extends K, ? extends V>);
+  public V remove(java.lang.Object);
+  boolean removeMapping(java.lang.Object);
+  public void clear();
+  public boolean containsValue(java.lang.Object);
+  public java.util.Set<K> keySet();
+  public java.util.Collection<V> values();
+  public java.util.Set<java.util.Map$Entry<K, V>> entrySet();
+  public void forEach(java.util.function.BiConsumer<? super K, ? super V>);
+  public void replaceAll(java.util.function.BiFunction<? super K, ? super V, ? extends V>);
+  static {};
+}

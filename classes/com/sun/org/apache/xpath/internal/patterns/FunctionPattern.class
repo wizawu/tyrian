@@ -1,0 +1,12 @@
+Compiled from "FunctionPattern.java"
+public class com.sun.org.apache.xpath.internal.patterns.FunctionPattern extends com.sun.org.apache.xpath.internal.patterns.StepPattern {
+  static final long serialVersionUID;
+  com.sun.org.apache.xpath.internal.Expression m_functionExpr;
+  public com.sun.org.apache.xpath.internal.patterns.FunctionPattern(com.sun.org.apache.xpath.internal.Expression, int, int);
+  public final void calcScore();
+  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, int) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, int, com.sun.org.apache.xml.internal.dtm.DTM, int) throws javax.xml.transform.TransformerException;
+  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
+  protected void callSubtreeVisitors(com.sun.org.apache.xpath.internal.XPathVisitor);
+}

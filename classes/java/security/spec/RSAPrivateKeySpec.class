@@ -1,0 +1,8 @@
+Compiled from "RSAPrivateKeySpec.java"
+public class java.security.spec.RSAPrivateKeySpec implements java.security.spec.KeySpec {
+  public java.security.spec.RSAPrivateKeySpec(java.math.BigInteger, java.math.BigInteger);
+  public java.security.spec.RSAPrivateKeySpec(java.math.BigInteger, java.math.BigInteger, java.security.spec.AlgorithmParameterSpec);
+  public java.math.BigInteger getModulus();
+  public java.math.BigInteger getPrivateExponent();
+  public java.security.spec.AlgorithmParameterSpec getParams();
+}

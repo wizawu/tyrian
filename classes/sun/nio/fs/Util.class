@@ -1,0 +1,11 @@
+Compiled from "Util.java"
+class sun.nio.fs.Util {
+  static java.nio.charset.Charset jnuEncoding();
+  static byte[] toBytes(java.lang.String);
+  static java.lang.String toString(byte[]);
+  static java.lang.String[] split(java.lang.String, char);
+  static <E> java.util.Set<E> newSet(E...);
+  static <E> java.util.Set<E> newSet(java.util.Set<E>, E...);
+  static boolean followLinks(java.nio.file.LinkOption...);
+  static {};
+}

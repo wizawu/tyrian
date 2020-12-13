@@ -1,0 +1,5 @@
+Compiled from "BooleanElementHandler.java"
+final class com.sun.beans.decoder.BooleanElementHandler extends com.sun.beans.decoder.StringElementHandler {
+  com.sun.beans.decoder.BooleanElementHandler();
+  public java.lang.Object getValue(java.lang.String);
+}

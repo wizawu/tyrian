@@ -1,0 +1,17 @@
+Compiled from "BitMap.java"
+public class sun.jvm.hotspot.utilities.BitMap {
+  public sun.jvm.hotspot.utilities.BitMap(int);
+  public int size();
+  public boolean at(int);
+  public void atPut(int, boolean);
+  public void set_size(int);
+  public void set_map(sun.jvm.hotspot.debugger.Address);
+  public void clear();
+  public void iterate(sun.jvm.hotspot.utilities.BitMapClosure);
+  public boolean setUnion(sun.jvm.hotspot.utilities.BitMap);
+  public void setIntersection(sun.jvm.hotspot.utilities.BitMap);
+  public void setFrom(sun.jvm.hotspot.utilities.BitMap);
+  public boolean setDifference(sun.jvm.hotspot.utilities.BitMap);
+  public boolean isSame(sun.jvm.hotspot.utilities.BitMap);
+  public int getNextOneOffset(int, int);
+}

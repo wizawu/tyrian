@@ -1,0 +1,21 @@
+Compiled from "RSACipher.java"
+public final class com.sun.crypto.provider.RSACipher extends javax.crypto.CipherSpi {
+  public com.sun.crypto.provider.RSACipher();
+  protected void engineSetMode(java.lang.String) throws java.security.NoSuchAlgorithmException;
+  protected void engineSetPadding(java.lang.String) throws javax.crypto.NoSuchPaddingException;
+  protected int engineGetBlockSize();
+  protected int engineGetOutputSize(int);
+  protected byte[] engineGetIV();
+  protected java.security.AlgorithmParameters engineGetParameters();
+  protected void engineInit(int, java.security.Key, java.security.SecureRandom) throws java.security.InvalidKeyException;
+  protected void engineInit(int, java.security.Key, java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  protected void engineInit(int, java.security.Key, java.security.AlgorithmParameters, java.security.SecureRandom) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
+  protected byte[] engineUpdate(byte[], int, int);
+  protected int engineUpdate(byte[], int, int, byte[], int);
+  protected byte[] engineDoFinal(byte[], int, int) throws javax.crypto.BadPaddingException, javax.crypto.IllegalBlockSizeException;
+  protected int engineDoFinal(byte[], int, int, byte[], int) throws javax.crypto.ShortBufferException, javax.crypto.BadPaddingException, javax.crypto.IllegalBlockSizeException;
+  protected byte[] engineWrap(java.security.Key) throws java.security.InvalidKeyException, javax.crypto.IllegalBlockSizeException;
+  protected java.security.Key engineUnwrap(byte[], java.lang.String, int) throws java.security.InvalidKeyException, java.security.NoSuchAlgorithmException;
+  protected int engineGetKeySize(java.security.Key) throws java.security.InvalidKeyException;
+  static {};
+}

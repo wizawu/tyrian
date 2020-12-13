@@ -1,0 +1,30 @@
+Compiled from "GSSManagerImpl.java"
+public class sun.security.jgss.GSSManagerImpl extends org.ietf.jgss.GSSManager {
+  public sun.security.jgss.GSSManagerImpl(sun.security.jgss.GSSCaller, boolean);
+  public sun.security.jgss.GSSManagerImpl(sun.security.jgss.GSSCaller);
+  public sun.security.jgss.GSSManagerImpl();
+  public org.ietf.jgss.Oid[] getMechs();
+  public org.ietf.jgss.Oid[] getNamesForMech(org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.Oid[] getMechsForName(org.ietf.jgss.Oid);
+  public org.ietf.jgss.GSSName createName(java.lang.String, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSName createName(byte[], org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSName createName(java.lang.String, org.ietf.jgss.Oid, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSName createName(byte[], org.ietf.jgss.Oid, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSCredential createCredential(int) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSCredential createCredential(org.ietf.jgss.GSSName, int, org.ietf.jgss.Oid, int) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSCredential createCredential(org.ietf.jgss.GSSName, int, org.ietf.jgss.Oid[], int) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSContext createContext(org.ietf.jgss.GSSName, org.ietf.jgss.Oid, org.ietf.jgss.GSSCredential, int) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSContext createContext(org.ietf.jgss.GSSCredential) throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.GSSContext createContext(byte[]) throws org.ietf.jgss.GSSException;
+  public void addProviderAtFront(java.security.Provider, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public void addProviderAtEnd(java.security.Provider, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.spi.GSSCredentialSpi getCredentialElement(sun.security.jgss.spi.GSSNameSpi, int, int, org.ietf.jgss.Oid, int) throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.spi.GSSNameSpi getNameElement(java.lang.String, org.ietf.jgss.Oid, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  public sun.security.jgss.spi.GSSNameSpi getNameElement(byte[], org.ietf.jgss.Oid, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  sun.security.jgss.spi.GSSContextSpi getMechanismContext(sun.security.jgss.spi.GSSNameSpi, sun.security.jgss.spi.GSSCredentialSpi, int, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  sun.security.jgss.spi.GSSContextSpi getMechanismContext(sun.security.jgss.spi.GSSCredentialSpi, org.ietf.jgss.Oid) throws org.ietf.jgss.GSSException;
+  sun.security.jgss.spi.GSSContextSpi getMechanismContext(byte[]) throws org.ietf.jgss.GSSException;
+  static org.ietf.jgss.GSSCredential wrap(sun.security.jgss.GSSCredentialImpl);
+  static org.ietf.jgss.GSSContext wrap(sun.security.jgss.GSSContextImpl);
+  static {};
+}

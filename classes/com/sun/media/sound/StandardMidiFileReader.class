@@ -1,0 +1,10 @@
+Compiled from "StandardMidiFileReader.java"
+public final class com.sun.media.sound.StandardMidiFileReader extends javax.sound.midi.spi.MidiFileReader {
+  public com.sun.media.sound.StandardMidiFileReader();
+  public javax.sound.midi.MidiFileFormat getMidiFileFormat(java.io.InputStream) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public javax.sound.midi.MidiFileFormat getMidiFileFormat(java.net.URL) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public javax.sound.midi.MidiFileFormat getMidiFileFormat(java.io.File) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public javax.sound.midi.Sequence getSequence(java.io.InputStream) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public javax.sound.midi.Sequence getSequence(java.net.URL) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+  public javax.sound.midi.Sequence getSequence(java.io.File) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
+}

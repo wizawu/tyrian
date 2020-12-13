@@ -1,0 +1,8 @@
+Compiled from "BootstrapMethods_attribute.java"
+public class com.sun.tools.classfile.BootstrapMethods_attribute extends com.sun.tools.classfile.Attribute {
+  public final com.sun.tools.classfile.BootstrapMethods_attribute$BootstrapMethodSpecifier[] bootstrap_method_specifiers;
+  com.sun.tools.classfile.BootstrapMethods_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException, com.sun.tools.classfile.AttributeException;
+  public com.sun.tools.classfile.BootstrapMethods_attribute(int, com.sun.tools.classfile.BootstrapMethods_attribute$BootstrapMethodSpecifier[]);
+  public static int length(com.sun.tools.classfile.BootstrapMethods_attribute$BootstrapMethodSpecifier[]);
+  public <R, P> R accept(com.sun.tools.classfile.Attribute$Visitor<R, P>, P);
+}

@@ -1,0 +1,4 @@
+Compiled from "StreamSpliterators.java"
+class java.util.stream.StreamSpliterators {
+  java.util.stream.StreamSpliterators();
+}

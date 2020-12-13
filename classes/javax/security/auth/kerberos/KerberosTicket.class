@@ -1,0 +1,32 @@
+Compiled from "KerberosTicket.java"
+public class javax.security.auth.kerberos.KerberosTicket implements javax.security.auth.Destroyable,javax.security.auth.Refreshable,java.io.Serializable {
+  javax.security.auth.kerberos.KerberosTicket proxy;
+  transient javax.security.auth.kerberos.KerberosPrincipal clientAlias;
+  transient javax.security.auth.kerberos.KerberosPrincipal serverAlias;
+  public javax.security.auth.kerberos.KerberosTicket(byte[], javax.security.auth.kerberos.KerberosPrincipal, javax.security.auth.kerberos.KerberosPrincipal, byte[], int, boolean[], java.util.Date, java.util.Date, java.util.Date, java.util.Date, java.net.InetAddress[]);
+  public final javax.security.auth.kerberos.KerberosPrincipal getClient();
+  public final javax.security.auth.kerberos.KerberosPrincipal getServer();
+  public final javax.crypto.SecretKey getSessionKey();
+  public final int getSessionKeyType();
+  public final boolean isForwardable();
+  public final boolean isForwarded();
+  public final boolean isProxiable();
+  public final boolean isProxy();
+  public final boolean isPostdated();
+  public final boolean isRenewable();
+  public final boolean isInitial();
+  public final boolean[] getFlags();
+  public final java.util.Date getAuthTime();
+  public final java.util.Date getStartTime();
+  public final java.util.Date getEndTime();
+  public final java.util.Date getRenewTill();
+  public final java.net.InetAddress[] getClientAddresses();
+  public final byte[] getEncoded();
+  public boolean isCurrent();
+  public void refresh() throws javax.security.auth.RefreshFailedException;
+  public void destroy() throws javax.security.auth.DestroyFailedException;
+  public boolean isDestroyed();
+  public java.lang.String toString();
+  public int hashCode();
+  public boolean equals(java.lang.Object);
+}

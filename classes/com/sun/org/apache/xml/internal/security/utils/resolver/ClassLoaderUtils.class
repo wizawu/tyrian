@@ -1,0 +1,5 @@
+Compiled from "ClassLoaderUtils.java"
+final class com.sun.org.apache.xml.internal.security.utils.resolver.ClassLoaderUtils {
+  static java.lang.Class<?> loadClass(java.lang.String, java.lang.Class<?>) throws java.lang.ClassNotFoundException;
+  static {};
+}

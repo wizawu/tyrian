@@ -1,0 +1,32 @@
+Compiled from "Locations.java"
+public class com.sun.tools.javac.file.Locations {
+  static final java.nio.file.Path javaHome;
+  static final java.nio.file.Path thisSystemModules;
+  java.util.Map<java.nio.file.Path, java.nio.file.FileSystem> fileSystems;
+  java.util.List<java.io.Closeable> closeables;
+  java.util.Map<javax.tools.JavaFileManager$Location, com.sun.tools.javac.file.Locations$LocationHandler> handlersForLocation;
+  java.util.Map<com.sun.tools.javac.main.Option, com.sun.tools.javac.file.Locations$LocationHandler> handlersForOption;
+  com.sun.tools.javac.file.Locations();
+  java.nio.file.Path getPath(java.lang.String, java.lang.String...);
+  public void close() throws java.io.IOException;
+  void update(com.sun.tools.javac.util.Log, boolean, com.sun.tools.javac.file.FSInfo);
+  void setPathFactory(javax.tools.StandardJavaFileManager$PathFactory);
+  boolean isDefaultBootClassPath();
+  public void setMultiReleaseValue(java.lang.String);
+  void initHandlers();
+  boolean handleOption(com.sun.tools.javac.main.Option, java.lang.String);
+  boolean hasLocation(javax.tools.JavaFileManager$Location);
+  boolean hasExplicitLocation(javax.tools.JavaFileManager$Location);
+  java.util.Collection<java.nio.file.Path> getLocation(javax.tools.JavaFileManager$Location);
+  java.nio.file.Path getOutputLocation(javax.tools.JavaFileManager$Location);
+  void setLocation(javax.tools.JavaFileManager$Location, java.lang.Iterable<? extends java.nio.file.Path>) throws java.io.IOException;
+  javax.tools.JavaFileManager$Location getLocationForModule(javax.tools.JavaFileManager$Location, java.lang.String) throws java.io.IOException;
+  javax.tools.JavaFileManager$Location getLocationForModule(javax.tools.JavaFileManager$Location, java.nio.file.Path) throws java.io.IOException;
+  void setLocationForModule(javax.tools.JavaFileManager$Location, java.lang.String, java.lang.Iterable<? extends java.nio.file.Path>) throws java.io.IOException;
+  java.lang.String inferModuleName(javax.tools.JavaFileManager$Location);
+  java.lang.Iterable<java.util.Set<javax.tools.JavaFileManager$Location>> listLocationsForModules(javax.tools.JavaFileManager$Location) throws java.io.IOException;
+  boolean contains(javax.tools.JavaFileManager$Location, java.nio.file.Path) throws java.io.IOException;
+  protected com.sun.tools.javac.file.Locations$LocationHandler getHandler(javax.tools.JavaFileManager$Location);
+  static java.nio.file.Path normalize(java.nio.file.Path);
+  static {};
+}

@@ -1,0 +1,17 @@
+Compiled from "ConnectionDesc.java"
+final class com.sun.jndi.ldap.pool.ConnectionDesc {
+  static final byte BUSY;
+  static final byte IDLE;
+  static final byte EXPIRED;
+  com.sun.jndi.ldap.pool.ConnectionDesc(com.sun.jndi.ldap.pool.PooledConnection);
+  com.sun.jndi.ldap.pool.ConnectionDesc(com.sun.jndi.ldap.pool.PooledConnection, boolean);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  synchronized boolean release();
+  synchronized com.sun.jndi.ldap.pool.PooledConnection tryUse();
+  synchronized boolean expire(long);
+  public java.lang.String toString();
+  int getState();
+  long getUseCount();
+  static {};
+}

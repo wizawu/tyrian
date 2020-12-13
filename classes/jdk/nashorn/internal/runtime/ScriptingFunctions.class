@@ -1,0 +1,20 @@
+Compiled from "ScriptingFunctions.java"
+public final class jdk.nashorn.internal.runtime.ScriptingFunctions {
+  public static final java.lang.invoke.MethodHandle READLINE;
+  public static final java.lang.invoke.MethodHandle READFULLY;
+  public static final java.lang.invoke.MethodHandle EXEC;
+  public static final java.lang.String EXEC_NAME;
+  public static final java.lang.String OUT_NAME;
+  public static final java.lang.String ERR_NAME;
+  public static final java.lang.String EXIT_NAME;
+  public static final java.lang.String ENV_NAME;
+  public static final java.lang.String PWD_NAME;
+  static final boolean $assertionsDisabled;
+  public static java.lang.Object readLine(java.lang.Object, java.lang.Object) throws java.io.IOException;
+  public static java.lang.Object readFully(java.lang.Object, java.lang.Object) throws java.io.IOException;
+  public static java.lang.Object exec(java.lang.Object, java.lang.Object...);
+  public static void setReadLineHelper(java.util.function.Function<java.lang.String, java.lang.String>);
+  public static java.util.function.Function<java.lang.String, java.lang.String> getReadLineHelper();
+  public static java.lang.String readLine(java.lang.Object) throws java.io.IOException;
+  static {};
+}

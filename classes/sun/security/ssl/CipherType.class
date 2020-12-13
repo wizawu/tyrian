@@ -1,0 +1,10 @@
+Compiled from "CipherType.java"
+final class sun.security.ssl.CipherType extends java.lang.Enum<sun.security.ssl.CipherType> {
+  public static final sun.security.ssl.CipherType NULL_CIPHER;
+  public static final sun.security.ssl.CipherType STREAM_CIPHER;
+  public static final sun.security.ssl.CipherType BLOCK_CIPHER;
+  public static final sun.security.ssl.CipherType AEAD_CIPHER;
+  public static sun.security.ssl.CipherType[] values();
+  public static sun.security.ssl.CipherType valueOf(java.lang.String);
+  static {};
+}

@@ -1,0 +1,6 @@
+Compiled from "SALauncher.java"
+public class sun.jvm.hotspot.SALauncher {
+  public sun.jvm.hotspot.SALauncher();
+  public static void main(java.lang.String[]);
+  static {};
+}

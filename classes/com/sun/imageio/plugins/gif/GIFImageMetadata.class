@@ -1,0 +1,47 @@
+Compiled from "GIFImageMetadata.java"
+public class com.sun.imageio.plugins.gif.GIFImageMetadata extends com.sun.imageio.plugins.gif.GIFMetadata {
+  static final java.lang.String nativeMetadataFormatName;
+  static final java.lang.String[] disposalMethodNames;
+  public int imageLeftPosition;
+  public int imageTopPosition;
+  public int imageWidth;
+  public int imageHeight;
+  public boolean interlaceFlag;
+  public boolean sortFlag;
+  public byte[] localColorTable;
+  public int disposalMethod;
+  public boolean userInputFlag;
+  public boolean transparentColorFlag;
+  public int delayTime;
+  public int transparentColorIndex;
+  public boolean hasPlainTextExtension;
+  public int textGridLeft;
+  public int textGridTop;
+  public int textGridWidth;
+  public int textGridHeight;
+  public int characterCellWidth;
+  public int characterCellHeight;
+  public int textForegroundColor;
+  public int textBackgroundColor;
+  public byte[] text;
+  public java.util.List<byte[]> applicationIDs;
+  public java.util.List<byte[]> authenticationCodes;
+  public java.util.List<byte[]> applicationData;
+  public java.util.List<byte[]> comments;
+  protected com.sun.imageio.plugins.gif.GIFImageMetadata(boolean, java.lang.String, java.lang.String, java.lang.String[], java.lang.String[]);
+  public com.sun.imageio.plugins.gif.GIFImageMetadata();
+  public boolean isReadOnly();
+  public org.w3c.dom.Node getAsTree(java.lang.String);
+  public javax.imageio.metadata.IIOMetadataNode getStandardChromaNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardCompressionNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardDataNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardDimensionNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardTextNode();
+  public javax.imageio.metadata.IIOMetadataNode getStandardTransparencyNode();
+  public void setFromTree(java.lang.String, org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected void mergeNativeTree(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  protected void mergeStandardTree(org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  public void reset();
+  public void mergeTree(java.lang.String, org.w3c.dom.Node) throws javax.imageio.metadata.IIOInvalidTreeException;
+  static {};
+}

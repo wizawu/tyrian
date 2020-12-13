@@ -1,0 +1,20 @@
+Compiled from "CompositeGlyphMapper.java"
+public class sun.font.CompositeGlyphMapper extends sun.font.CharToGlyphMapper {
+  public static final int SLOTMASK;
+  public static final int GLYPHMASK;
+  public static final int NBLOCKS;
+  public static final int BLOCKSZ;
+  public static final int MAXUNICODE;
+  sun.font.CompositeFont font;
+  sun.font.CharToGlyphMapper[] slotMappers;
+  int[][] glyphMaps;
+  public sun.font.CompositeGlyphMapper(sun.font.CompositeFont);
+  public int compositeGlyphCode(int, int);
+  public int getNumGlyphs();
+  public int charToGlyph(int);
+  public int charToGlyph(int, int);
+  public int charToGlyph(char);
+  public boolean charsToGlyphsNS(int, char[], int[]);
+  public void charsToGlyphs(int, char[], int[]);
+  public void charsToGlyphs(int, int[], int[]);
+}

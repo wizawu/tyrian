@@ -1,0 +1,6 @@
+Compiled from "AbstractOwnableSynchronizer.java"
+public abstract class java.util.concurrent.locks.AbstractOwnableSynchronizer implements java.io.Serializable {
+  protected java.util.concurrent.locks.AbstractOwnableSynchronizer();
+  protected final void setExclusiveOwnerThread(java.lang.Thread);
+  protected final java.lang.Thread getExclusiveOwnerThread();
+}

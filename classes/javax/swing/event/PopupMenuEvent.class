@@ -1,0 +1,4 @@
+Compiled from "PopupMenuEvent.java"
+public class javax.swing.event.PopupMenuEvent extends java.util.EventObject {
+  public javax.swing.event.PopupMenuEvent(java.lang.Object);
+}

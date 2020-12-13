@@ -1,0 +1,5 @@
+Compiled from "DUP_X2.java"
+public class com.sun.org.apache.bcel.internal.generic.DUP_X2 extends com.sun.org.apache.bcel.internal.generic.StackInstruction {
+  public com.sun.org.apache.bcel.internal.generic.DUP_X2();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

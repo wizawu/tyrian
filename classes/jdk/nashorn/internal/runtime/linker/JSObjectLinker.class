@@ -1,0 +1,8 @@
+Compiled from "JSObjectLinker.java"
+final class jdk.nashorn.internal.runtime.linker.JSObjectLinker implements jdk.dynalink.linker.TypeBasedGuardingDynamicLinker {
+  static final boolean $assertionsDisabled;
+  jdk.nashorn.internal.runtime.linker.JSObjectLinker(jdk.nashorn.internal.runtime.linker.NashornBeansLinker);
+  public boolean canLinkType(java.lang.Class<?>);
+  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
+  static {};
+}

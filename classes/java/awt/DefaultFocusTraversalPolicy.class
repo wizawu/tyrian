@@ -1,0 +1,5 @@
+Compiled from "DefaultFocusTraversalPolicy.java"
+public class java.awt.DefaultFocusTraversalPolicy extends java.awt.ContainerOrderFocusTraversalPolicy {
+  public java.awt.DefaultFocusTraversalPolicy();
+  protected boolean accept(java.awt.Component);
+}

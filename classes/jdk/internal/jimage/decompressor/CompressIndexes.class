@@ -1,0 +1,8 @@
+Compiled from "CompressIndexes.java"
+public class jdk.internal.jimage.decompressor.CompressIndexes {
+  public jdk.internal.jimage.decompressor.CompressIndexes();
+  public static java.util.List<java.lang.Integer> decompressFlow(byte[]);
+  public static int readInt(java.io.DataInputStream) throws java.io.IOException;
+  public static int decompress(byte[], int);
+  public static byte[] compress(int);
+}

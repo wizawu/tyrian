@@ -1,0 +1,7 @@
+Compiled from "LocalExecutionControlProvider.java"
+public class jdk.jshell.execution.LocalExecutionControlProvider implements jdk.jshell.spi.ExecutionControlProvider {
+  public jdk.jshell.execution.LocalExecutionControlProvider();
+  public java.lang.String name();
+  public java.util.Map<java.lang.String, java.lang.String> defaultParameters();
+  public jdk.jshell.spi.ExecutionControl generate(jdk.jshell.spi.ExecutionEnv, java.util.Map<java.lang.String, java.lang.String>);
+}

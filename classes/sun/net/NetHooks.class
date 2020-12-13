@@ -1,0 +1,7 @@
+Compiled from "NetHooks.java"
+public final class sun.net.NetHooks {
+  public sun.net.NetHooks();
+  public static void beforeTcpBind(java.io.FileDescriptor, java.net.InetAddress, int) throws java.io.IOException;
+  public static void beforeTcpConnect(java.io.FileDescriptor, java.net.InetAddress, int) throws java.io.IOException;
+  static {};
+}

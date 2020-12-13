@@ -1,0 +1,19 @@
+Compiled from "UTF16Reader.java"
+public final class com.sun.org.apache.xerces.internal.impl.io.UTF16Reader extends java.io.Reader {
+  public static final int DEFAULT_BUFFER_SIZE;
+  protected final java.io.InputStream fInputStream;
+  protected final byte[] fBuffer;
+  protected final boolean fIsBigEndian;
+  public com.sun.org.apache.xerces.internal.impl.io.UTF16Reader(java.io.InputStream, boolean);
+  public com.sun.org.apache.xerces.internal.impl.io.UTF16Reader(java.io.InputStream, boolean, com.sun.org.apache.xerces.internal.util.MessageFormatter, java.util.Locale);
+  public com.sun.org.apache.xerces.internal.impl.io.UTF16Reader(java.io.InputStream, int, boolean, com.sun.org.apache.xerces.internal.util.MessageFormatter, java.util.Locale);
+  public com.sun.org.apache.xerces.internal.impl.io.UTF16Reader(java.io.InputStream, byte[], boolean, com.sun.org.apache.xerces.internal.util.MessageFormatter, java.util.Locale);
+  public int read() throws java.io.IOException;
+  public int read(char[], int, int) throws java.io.IOException;
+  public long skip(long) throws java.io.IOException;
+  public boolean ready() throws java.io.IOException;
+  public boolean markSupported();
+  public void mark(int) throws java.io.IOException;
+  public void reset() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+}

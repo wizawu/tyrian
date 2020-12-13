@@ -1,0 +1,12 @@
+Compiled from "SoftLanczosResampler.java"
+public final class com.sun.media.sound.SoftLanczosResampler extends com.sun.media.sound.SoftAbstractResampler {
+  float[][] sinc_table;
+  int sinc_table_fsize;
+  int sinc_table_size;
+  int sinc_table_center;
+  public com.sun.media.sound.SoftLanczosResampler();
+  public static double sinc(double);
+  public static float[] sincTable(int, float);
+  public int getPadding();
+  public void interpolate(float[], float[], float, float[], float, float[], int[], int);
+}

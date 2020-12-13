@@ -1,0 +1,9 @@
+Compiled from "RegExpScanner.java"
+final class jdk.nashorn.internal.runtime.regexp.RegExpScanner extends jdk.nashorn.internal.parser.Scanner {
+  static final boolean $assertionsDisabled;
+  public static jdk.nashorn.internal.runtime.regexp.RegExpScanner scan(java.lang.String);
+  final java.lang.StringBuilder getStringBuilder();
+  java.lang.String getJavaPattern();
+  jdk.nashorn.internal.runtime.BitVector getGroupsInNegativeLookahead();
+  static {};
+}

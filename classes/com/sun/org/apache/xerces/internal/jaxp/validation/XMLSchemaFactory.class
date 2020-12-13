@@ -1,0 +1,16 @@
+Compiled from "XMLSchemaFactory.java"
+public final class com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory extends javax.xml.validation.SchemaFactory {
+  public com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaFactory();
+  public boolean isSchemaLanguageSupported(java.lang.String);
+  public org.w3c.dom.ls.LSResourceResolver getResourceResolver();
+  public void setResourceResolver(org.w3c.dom.ls.LSResourceResolver);
+  public org.xml.sax.ErrorHandler getErrorHandler();
+  public void setErrorHandler(org.xml.sax.ErrorHandler);
+  public javax.xml.validation.Schema newSchema(javax.xml.transform.Source[]) throws org.xml.sax.SAXException;
+  public javax.xml.validation.Schema newSchema() throws org.xml.sax.SAXException;
+  public javax.xml.validation.Schema newSchema(com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool) throws org.xml.sax.SAXException;
+  public boolean getFeature(java.lang.String) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public java.lang.Object getProperty(java.lang.String) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public void setFeature(java.lang.String, boolean) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+  public void setProperty(java.lang.String, java.lang.Object) throws org.xml.sax.SAXNotRecognizedException, org.xml.sax.SAXNotSupportedException;
+}

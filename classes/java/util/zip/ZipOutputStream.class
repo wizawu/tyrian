@@ -1,0 +1,16 @@
+Compiled from "ZipOutputStream.java"
+public class java.util.zip.ZipOutputStream extends java.util.zip.DeflaterOutputStream implements java.util.zip.ZipConstants {
+  public static final int STORED;
+  public static final int DEFLATED;
+  public java.util.zip.ZipOutputStream(java.io.OutputStream);
+  public java.util.zip.ZipOutputStream(java.io.OutputStream, java.nio.charset.Charset);
+  public void setComment(java.lang.String);
+  public void setMethod(int);
+  public void setLevel(int);
+  public void putNextEntry(java.util.zip.ZipEntry) throws java.io.IOException;
+  public void closeEntry() throws java.io.IOException;
+  public synchronized void write(byte[], int, int) throws java.io.IOException;
+  public void finish() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  static {};
+}

@@ -1,0 +1,13 @@
+Compiled from "SunEntries.java"
+public final class sun.security.provider.SunEntries {
+  public static final java.lang.String DEF_SECURE_RANDOM_ALGO;
+  static final java.lang.String URL_DEV_RANDOM;
+  static final java.lang.String URL_DEV_URANDOM;
+  public static java.util.List<java.lang.String> createAliases(java.lang.String...);
+  public static java.util.List<java.lang.String> createAliasesWithOid(java.lang.String...);
+  sun.security.provider.SunEntries(java.security.Provider);
+  java.util.Iterator<java.security.Provider$Service> iterator();
+  static java.lang.String getSeedSource();
+  static java.io.File getDeviceFile(java.net.URL) throws java.io.IOException;
+  static {};
+}

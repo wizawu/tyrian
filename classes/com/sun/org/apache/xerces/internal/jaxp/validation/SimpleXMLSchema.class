@@ -1,0 +1,13 @@
+Compiled from "SimpleXMLSchema.java"
+final class com.sun.org.apache.xerces.internal.jaxp.validation.SimpleXMLSchema extends com.sun.org.apache.xerces.internal.jaxp.validation.AbstractXMLSchema implements com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool {
+  public com.sun.org.apache.xerces.internal.jaxp.validation.SimpleXMLSchema(com.sun.org.apache.xerces.internal.xni.grammars.Grammar);
+  public com.sun.org.apache.xerces.internal.xni.grammars.Grammar[] retrieveInitialGrammarSet(java.lang.String);
+  public void cacheGrammars(java.lang.String, com.sun.org.apache.xerces.internal.xni.grammars.Grammar[]);
+  public com.sun.org.apache.xerces.internal.xni.grammars.Grammar retrieveGrammar(com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription);
+  public void lockPool();
+  public void unlockPool();
+  public void clear();
+  public com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool getGrammarPool();
+  public boolean isFullyComposed();
+  static {};
+}

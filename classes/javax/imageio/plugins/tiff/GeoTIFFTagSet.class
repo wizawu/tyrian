@@ -1,0 +1,11 @@
+Compiled from "GeoTIFFTagSet.java"
+public final class javax.imageio.plugins.tiff.GeoTIFFTagSet extends javax.imageio.plugins.tiff.TIFFTagSet {
+  public static final int TAG_MODEL_PIXEL_SCALE;
+  public static final int TAG_MODEL_TRANSFORMATION;
+  public static final int TAG_MODEL_TIE_POINT;
+  public static final int TAG_GEO_KEY_DIRECTORY;
+  public static final int TAG_GEO_DOUBLE_PARAMS;
+  public static final int TAG_GEO_ASCII_PARAMS;
+  public static synchronized javax.imageio.plugins.tiff.GeoTIFFTagSet getInstance();
+  static {};
+}

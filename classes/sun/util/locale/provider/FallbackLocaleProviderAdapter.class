@@ -1,0 +1,9 @@
+Compiled from "FallbackLocaleProviderAdapter.java"
+public class sun.util.locale.provider.FallbackLocaleProviderAdapter extends sun.util.locale.provider.JRELocaleProviderAdapter {
+  public sun.util.locale.provider.FallbackLocaleProviderAdapter();
+  public sun.util.locale.provider.LocaleProviderAdapter$Type getAdapterType();
+  public sun.util.locale.provider.LocaleResources getLocaleResources(java.util.Locale);
+  protected java.util.Set<java.lang.String> createLanguageTagSet(java.lang.String);
+  public boolean isSupportedProviderLocale(java.util.Locale, java.util.Set<java.lang.String>);
+  static {};
+}

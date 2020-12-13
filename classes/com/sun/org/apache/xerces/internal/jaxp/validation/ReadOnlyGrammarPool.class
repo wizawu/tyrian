@@ -1,0 +1,10 @@
+Compiled from "ReadOnlyGrammarPool.java"
+final class com.sun.org.apache.xerces.internal.jaxp.validation.ReadOnlyGrammarPool implements com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool {
+  public com.sun.org.apache.xerces.internal.jaxp.validation.ReadOnlyGrammarPool(com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
+  public void cacheGrammars(java.lang.String, com.sun.org.apache.xerces.internal.xni.grammars.Grammar[]);
+  public void clear();
+  public void lockPool();
+  public com.sun.org.apache.xerces.internal.xni.grammars.Grammar retrieveGrammar(com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription);
+  public com.sun.org.apache.xerces.internal.xni.grammars.Grammar[] retrieveInitialGrammarSet(java.lang.String);
+  public void unlockPool();
+}

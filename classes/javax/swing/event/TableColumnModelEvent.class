@@ -1,0 +1,8 @@
+Compiled from "TableColumnModelEvent.java"
+public class javax.swing.event.TableColumnModelEvent extends java.util.EventObject {
+  protected int fromIndex;
+  protected int toIndex;
+  public javax.swing.event.TableColumnModelEvent(javax.swing.table.TableColumnModel, int, int);
+  public int getFromIndex();
+  public int getToIndex();
+}

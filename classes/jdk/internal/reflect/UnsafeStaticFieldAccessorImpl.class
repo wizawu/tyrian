@@ -1,0 +1,6 @@
+Compiled from "UnsafeStaticFieldAccessorImpl.java"
+abstract class jdk.internal.reflect.UnsafeStaticFieldAccessorImpl extends jdk.internal.reflect.UnsafeFieldAccessorImpl {
+  protected final java.lang.Object base;
+  jdk.internal.reflect.UnsafeStaticFieldAccessorImpl(java.lang.reflect.Field);
+  static {};
+}

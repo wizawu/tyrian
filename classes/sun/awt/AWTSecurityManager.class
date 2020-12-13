@@ -1,0 +1,5 @@
+Compiled from "AWTSecurityManager.java"
+public class sun.awt.AWTSecurityManager extends java.lang.SecurityManager {
+  public sun.awt.AWTSecurityManager();
+  public sun.awt.AppContext getAppContext();
+}

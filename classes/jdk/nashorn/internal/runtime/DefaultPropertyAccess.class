@@ -1,0 +1,30 @@
+Compiled from "DefaultPropertyAccess.java"
+public abstract class jdk.nashorn.internal.runtime.DefaultPropertyAccess implements jdk.nashorn.internal.runtime.PropertyAccess {
+  public jdk.nashorn.internal.runtime.DefaultPropertyAccess();
+  public int getInt(java.lang.Object, int);
+  public int getInt(double, int);
+  public int getInt(int, int);
+  public double getDouble(java.lang.Object, int);
+  public double getDouble(double, int);
+  public double getDouble(int, int);
+  public abstract java.lang.Object get(java.lang.Object);
+  public java.lang.Object get(double);
+  public java.lang.Object get(int);
+  public void set(double, int, int);
+  public void set(double, double, int);
+  public void set(double, java.lang.Object, int);
+  public void set(int, int, int);
+  public void set(int, double, int);
+  public void set(int, java.lang.Object, int);
+  public void set(java.lang.Object, int, int);
+  public void set(java.lang.Object, double, int);
+  public abstract void set(java.lang.Object, java.lang.Object, int);
+  public abstract boolean has(java.lang.Object);
+  public boolean has(int);
+  public boolean has(double);
+  public boolean hasOwnProperty(int);
+  public boolean hasOwnProperty(double);
+  public abstract boolean hasOwnProperty(java.lang.Object);
+  public boolean delete(int, boolean);
+  public boolean delete(double, boolean);
+}

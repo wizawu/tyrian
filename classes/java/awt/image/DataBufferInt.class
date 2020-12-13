@@ -1,0 +1,18 @@
+Compiled from "DataBufferInt.java"
+public final class java.awt.image.DataBufferInt extends java.awt.image.DataBuffer {
+  int[] data;
+  int[][] bankdata;
+  public java.awt.image.DataBufferInt(int);
+  public java.awt.image.DataBufferInt(int, int);
+  public java.awt.image.DataBufferInt(int[], int);
+  public java.awt.image.DataBufferInt(int[], int, int);
+  public java.awt.image.DataBufferInt(int[][], int);
+  public java.awt.image.DataBufferInt(int[][], int, int[]);
+  public int[] getData();
+  public int[] getData(int);
+  public int[][] getBankData();
+  public int getElem(int);
+  public int getElem(int, int);
+  public void setElem(int, int);
+  public void setElem(int, int, int);
+}

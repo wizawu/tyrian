@@ -1,0 +1,10 @@
+Compiled from "AudioFileWriter.java"
+public abstract class javax.sound.sampled.spi.AudioFileWriter {
+  public javax.sound.sampled.spi.AudioFileWriter();
+  public abstract javax.sound.sampled.AudioFileFormat$Type[] getAudioFileTypes();
+  public boolean isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type);
+  public abstract javax.sound.sampled.AudioFileFormat$Type[] getAudioFileTypes(javax.sound.sampled.AudioInputStream);
+  public boolean isFileTypeSupported(javax.sound.sampled.AudioFileFormat$Type, javax.sound.sampled.AudioInputStream);
+  public abstract int write(javax.sound.sampled.AudioInputStream, javax.sound.sampled.AudioFileFormat$Type, java.io.OutputStream) throws java.io.IOException;
+  public abstract int write(javax.sound.sampled.AudioInputStream, javax.sound.sampled.AudioFileFormat$Type, java.io.File) throws java.io.IOException;
+}

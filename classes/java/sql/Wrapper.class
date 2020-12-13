@@ -1,0 +1,5 @@
+Compiled from "Wrapper.java"
+public interface java.sql.Wrapper {
+  public abstract <T> T unwrap(java.lang.Class<T>) throws java.sql.SQLException;
+  public abstract boolean isWrapperFor(java.lang.Class<?>) throws java.sql.SQLException;
+}

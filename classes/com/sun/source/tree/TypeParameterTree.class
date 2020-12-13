@@ -1,0 +1,6 @@
+Compiled from "TypeParameterTree.java"
+public interface com.sun.source.tree.TypeParameterTree extends com.sun.source.tree.Tree {
+  public abstract javax.lang.model.element.Name getName();
+  public abstract java.util.List<? extends com.sun.source.tree.Tree> getBounds();
+  public abstract java.util.List<? extends com.sun.source.tree.AnnotationTree> getAnnotations();
+}

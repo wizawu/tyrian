@@ -1,0 +1,40 @@
+Compiled from "WindbgDebuggerLocal.java"
+public class sun.jvm.hotspot.debugger.windbg.WindbgDebuggerLocal extends sun.jvm.hotspot.debugger.DebuggerBase implements sun.jvm.hotspot.debugger.windbg.WindbgDebugger {
+  public sun.jvm.hotspot.debugger.windbg.WindbgDebuggerLocal(sun.jvm.hotspot.debugger.MachineDescription, boolean) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public boolean hasProcessList() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public java.util.List getProcessList() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public synchronized void attach(int) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public synchronized void attach(java.lang.String, java.lang.String) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public java.util.List getLoadObjectList();
+  public synchronized boolean detach();
+  public sun.jvm.hotspot.debugger.Address parseAddress(java.lang.String) throws java.lang.NumberFormatException;
+  public java.lang.String getOS();
+  public java.lang.String getCPU();
+  public boolean hasConsole() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public synchronized java.lang.String consoleExecuteCommand(java.lang.String) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public java.lang.String getConsolePrompt() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public sun.jvm.hotspot.debugger.cdbg.CDebugger getCDebugger() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public synchronized sun.jvm.hotspot.debugger.Address lookup(java.lang.String, java.lang.String);
+  public synchronized sun.jvm.hotspot.debugger.OopHandle lookupOop(java.lang.String, java.lang.String);
+  public synchronized sun.jvm.hotspot.debugger.cdbg.ClosestSymbol lookup(long);
+  public sun.jvm.hotspot.debugger.MachineDescription getMachineDescription();
+  public sun.jvm.hotspot.debugger.ThreadProxy getThreadForIdentifierAddress(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.ThreadProxy getThreadForThreadId(long);
+  public long getThreadIdFromSysId(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public long readJLong(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public java.lang.String addressValueToString(long);
+  public sun.jvm.hotspot.debugger.windbg.WindbgAddress readAddress(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public sun.jvm.hotspot.debugger.windbg.WindbgAddress readCompOopAddress(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public sun.jvm.hotspot.debugger.windbg.WindbgAddress readCompKlassAddress(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException;
+  public sun.jvm.hotspot.debugger.windbg.WindbgOopHandle readOopHandle(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.debugger.NotInHeapException;
+  public sun.jvm.hotspot.debugger.windbg.WindbgOopHandle readCompOopHandle(long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.debugger.NotInHeapException;
+  public int getAddressSize();
+  public synchronized long[] getThreadIntegerRegisterSet(long) throws sun.jvm.hotspot.debugger.DebuggerException;
+  public synchronized java.util.List getThreadList() throws sun.jvm.hotspot.debugger.DebuggerException;
+  public long getAddressValue(sun.jvm.hotspot.debugger.Address);
+  public sun.jvm.hotspot.debugger.Address newAddress(long);
+  synchronized long lookupByName(java.lang.String, java.lang.String);
+  public synchronized sun.jvm.hotspot.debugger.ReadResult readBytesFromProcess(long, long) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.DebuggerException;
+  public void writeBytesToProcess(long, long, byte[]) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.DebuggerException;
+  static {};
+}

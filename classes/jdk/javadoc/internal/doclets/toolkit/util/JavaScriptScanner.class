@@ -1,0 +1,9 @@
+Compiled from "JavaScriptScanner.java"
+public class jdk.javadoc.internal.doclets.toolkit.util.JavaScriptScanner extends com.sun.source.util.DocTreePathScanner<java.lang.Void, java.util.function.Consumer<com.sun.source.util.DocTreePath>> {
+  public jdk.javadoc.internal.doclets.toolkit.util.JavaScriptScanner();
+  public java.lang.Void scan(com.sun.source.doctree.DocCommentTree, com.sun.source.util.TreePath, java.util.function.Consumer<com.sun.source.util.DocTreePath>);
+  public java.lang.Void visitStartElement(com.sun.source.doctree.StartElementTree, java.util.function.Consumer<com.sun.source.util.DocTreePath>);
+  public java.lang.Void visitAttribute(com.sun.source.doctree.AttributeTree, java.util.function.Consumer<com.sun.source.util.DocTreePath>);
+  public java.lang.Object visitStartElement(com.sun.source.doctree.StartElementTree, java.lang.Object);
+  public java.lang.Object visitAttribute(com.sun.source.doctree.AttributeTree, java.lang.Object);
+}

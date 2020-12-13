@@ -1,0 +1,21 @@
+Compiled from "SerializerTrace.java"
+public interface com.sun.org.apache.xml.internal.serializer.SerializerTrace {
+  public static final int EVENTTYPE_STARTDOCUMENT;
+  public static final int EVENTTYPE_ENDDOCUMENT;
+  public static final int EVENTTYPE_STARTELEMENT;
+  public static final int EVENTTYPE_ENDELEMENT;
+  public static final int EVENTTYPE_CHARACTERS;
+  public static final int EVENTTYPE_IGNORABLEWHITESPACE;
+  public static final int EVENTTYPE_PI;
+  public static final int EVENTTYPE_COMMENT;
+  public static final int EVENTTYPE_ENTITYREF;
+  public static final int EVENTTYPE_CDATA;
+  public static final int EVENTTYPE_OUTPUT_PSEUDO_CHARACTERS;
+  public static final int EVENTTYPE_OUTPUT_CHARACTERS;
+  public abstract boolean hasTraceListeners();
+  public abstract void fireGenerateEvent(int);
+  public abstract void fireGenerateEvent(int, java.lang.String, org.xml.sax.Attributes);
+  public abstract void fireGenerateEvent(int, char[], int, int);
+  public abstract void fireGenerateEvent(int, java.lang.String, java.lang.String);
+  public abstract void fireGenerateEvent(int, java.lang.String);
+}

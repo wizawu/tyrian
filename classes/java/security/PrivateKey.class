@@ -1,0 +1,4 @@
+Compiled from "PrivateKey.java"
+public interface java.security.PrivateKey extends java.security.Key,javax.security.auth.Destroyable {
+  public static final long serialVersionUID;
+}

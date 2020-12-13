@@ -1,0 +1,7 @@
+Compiled from "DatatypeConfigurationException.java"
+public class javax.xml.datatype.DatatypeConfigurationException extends java.lang.Exception {
+  public javax.xml.datatype.DatatypeConfigurationException();
+  public javax.xml.datatype.DatatypeConfigurationException(java.lang.String);
+  public javax.xml.datatype.DatatypeConfigurationException(java.lang.String, java.lang.Throwable);
+  public javax.xml.datatype.DatatypeConfigurationException(java.lang.Throwable);
+}

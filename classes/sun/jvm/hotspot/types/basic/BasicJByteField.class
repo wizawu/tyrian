@@ -1,0 +1,6 @@
+Compiled from "BasicJByteField.java"
+public class sun.jvm.hotspot.types.basic.BasicJByteField extends sun.jvm.hotspot.types.basic.BasicField implements sun.jvm.hotspot.types.JByteField {
+  public sun.jvm.hotspot.types.basic.BasicJByteField(sun.jvm.hotspot.types.basic.BasicTypeDataBase, sun.jvm.hotspot.types.Type, java.lang.String, sun.jvm.hotspot.types.Type, boolean, long, sun.jvm.hotspot.debugger.Address);
+  public byte getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+  public byte getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
+}

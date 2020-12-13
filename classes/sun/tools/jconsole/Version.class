@@ -1,0 +1,8 @@
+Compiled from "Version.java"
+public class sun.tools.jconsole.Version {
+  public sun.tools.jconsole.Version();
+  public static void print(java.io.PrintStream);
+  public static void printFullVersion(java.io.PrintStream);
+  static java.lang.String getVersion();
+  static {};
+}

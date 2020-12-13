@@ -1,0 +1,11 @@
+Compiled from "ClassDump.java"
+public class sun.jvm.hotspot.tools.jcore.ClassDump extends sun.jvm.hotspot.tools.Tool {
+  public sun.jvm.hotspot.tools.jcore.ClassDump();
+  public sun.jvm.hotspot.tools.jcore.ClassDump(sun.jvm.hotspot.debugger.JVMDebugger, java.lang.String);
+  public void setClassFilter(sun.jvm.hotspot.tools.jcore.ClassFilter);
+  public void setOutputDirectory(java.lang.String);
+  public void setJarOutput(java.lang.String) throws java.io.IOException;
+  public void run();
+  public java.lang.String getName();
+  public static void main(java.lang.String[]);
+}

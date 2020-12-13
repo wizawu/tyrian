@@ -1,0 +1,3 @@
+Compiled from "CalendarDataProvider.java"
+public interface sun.util.resources.CalendarDataProvider extends java.util.spi.ResourceBundleProvider {
+}

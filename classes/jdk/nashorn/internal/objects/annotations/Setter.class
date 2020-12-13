@@ -1,0 +1,6 @@
+Compiled from "Setter.java"
+public interface jdk.nashorn.internal.objects.annotations.Setter extends java.lang.annotation.Annotation {
+  public abstract java.lang.String name();
+  public abstract int attributes();
+  public abstract jdk.nashorn.internal.objects.annotations.Where where();
+}

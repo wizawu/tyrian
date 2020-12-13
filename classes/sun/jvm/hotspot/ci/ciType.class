@@ -1,0 +1,5 @@
+Compiled from "ciType.java"
+public class sun.jvm.hotspot.ci.ciType extends sun.jvm.hotspot.ci.ciMetadata {
+  public sun.jvm.hotspot.ci.ciType(sun.jvm.hotspot.debugger.Address);
+  static {};
+}

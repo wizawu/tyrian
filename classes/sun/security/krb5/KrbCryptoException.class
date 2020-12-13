@@ -1,0 +1,4 @@
+Compiled from "KrbCryptoException.java"
+public class sun.security.krb5.KrbCryptoException extends sun.security.krb5.KrbException {
+  public sun.security.krb5.KrbCryptoException(java.lang.String);
+}

@@ -1,0 +1,12 @@
+Compiled from "CipherInputStream.java"
+public class javax.crypto.CipherInputStream extends java.io.FilterInputStream {
+  public javax.crypto.CipherInputStream(java.io.InputStream, javax.crypto.Cipher);
+  protected javax.crypto.CipherInputStream(java.io.InputStream);
+  public int read() throws java.io.IOException;
+  public int read(byte[]) throws java.io.IOException;
+  public int read(byte[], int, int) throws java.io.IOException;
+  public long skip(long) throws java.io.IOException;
+  public int available() throws java.io.IOException;
+  public void close() throws java.io.IOException;
+  public boolean markSupported();
+}

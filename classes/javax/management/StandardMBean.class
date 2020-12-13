@@ -1,0 +1,40 @@
+Compiled from "StandardMBean.java"
+public class javax.management.StandardMBean implements javax.management.DynamicMBean,javax.management.MBeanRegistration {
+  public <T> javax.management.StandardMBean(T, java.lang.Class<T>) throws javax.management.NotCompliantMBeanException;
+  protected javax.management.StandardMBean(java.lang.Class<?>) throws javax.management.NotCompliantMBeanException;
+  public <T> javax.management.StandardMBean(T, java.lang.Class<T>, boolean);
+  protected javax.management.StandardMBean(java.lang.Class<?>, boolean);
+  public void setImplementation(java.lang.Object) throws javax.management.NotCompliantMBeanException;
+  public java.lang.Object getImplementation();
+  public final java.lang.Class<?> getMBeanInterface();
+  public java.lang.Class<?> getImplementationClass();
+  public java.lang.Object getAttribute(java.lang.String) throws javax.management.AttributeNotFoundException, javax.management.MBeanException, javax.management.ReflectionException;
+  public void setAttribute(javax.management.Attribute) throws javax.management.AttributeNotFoundException, javax.management.InvalidAttributeValueException, javax.management.MBeanException, javax.management.ReflectionException;
+  public javax.management.AttributeList getAttributes(java.lang.String[]);
+  public javax.management.AttributeList setAttributes(javax.management.AttributeList);
+  public java.lang.Object invoke(java.lang.String, java.lang.Object[], java.lang.String[]) throws javax.management.MBeanException, javax.management.ReflectionException;
+  public javax.management.MBeanInfo getMBeanInfo();
+  protected java.lang.String getClassName(javax.management.MBeanInfo);
+  protected java.lang.String getDescription(javax.management.MBeanInfo);
+  protected java.lang.String getDescription(javax.management.MBeanFeatureInfo);
+  protected java.lang.String getDescription(javax.management.MBeanAttributeInfo);
+  protected java.lang.String getDescription(javax.management.MBeanConstructorInfo);
+  protected java.lang.String getDescription(javax.management.MBeanConstructorInfo, javax.management.MBeanParameterInfo, int);
+  protected java.lang.String getParameterName(javax.management.MBeanConstructorInfo, javax.management.MBeanParameterInfo, int);
+  protected java.lang.String getDescription(javax.management.MBeanOperationInfo);
+  protected int getImpact(javax.management.MBeanOperationInfo);
+  protected java.lang.String getParameterName(javax.management.MBeanOperationInfo, javax.management.MBeanParameterInfo, int);
+  protected java.lang.String getDescription(javax.management.MBeanOperationInfo, javax.management.MBeanParameterInfo, int);
+  protected javax.management.MBeanConstructorInfo[] getConstructors(javax.management.MBeanConstructorInfo[], java.lang.Object);
+  javax.management.MBeanNotificationInfo[] getNotifications(javax.management.MBeanInfo);
+  javax.management.Descriptor getDescriptor(javax.management.MBeanInfo, boolean);
+  protected javax.management.MBeanInfo getCachedMBeanInfo();
+  protected void cacheMBeanInfo(javax.management.MBeanInfo);
+  public javax.management.ObjectName preRegister(javax.management.MBeanServer, javax.management.ObjectName) throws java.lang.Exception;
+  public void postRegister(java.lang.Boolean);
+  public void preDeregister() throws java.lang.Exception;
+  public void postDeregister();
+  static boolean immutableInfo(java.lang.Class<? extends javax.management.StandardMBean>);
+  static boolean overrides(java.lang.Class<?>, java.lang.Class<?>, java.lang.String, java.lang.Class<?>...);
+  static {};
+}

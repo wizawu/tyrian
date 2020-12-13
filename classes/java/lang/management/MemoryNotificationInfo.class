@@ -1,0 +1,11 @@
+Compiled from "MemoryNotificationInfo.java"
+public class java.lang.management.MemoryNotificationInfo {
+  public static final java.lang.String MEMORY_THRESHOLD_EXCEEDED;
+  public static final java.lang.String MEMORY_COLLECTION_THRESHOLD_EXCEEDED;
+  public java.lang.management.MemoryNotificationInfo(java.lang.String, java.lang.management.MemoryUsage, long);
+  java.lang.management.MemoryNotificationInfo(javax.management.openmbean.CompositeData);
+  public java.lang.String getPoolName();
+  public java.lang.management.MemoryUsage getUsage();
+  public long getCount();
+  public static java.lang.management.MemoryNotificationInfo from(javax.management.openmbean.CompositeData);
+}

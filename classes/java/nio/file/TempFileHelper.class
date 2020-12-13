@@ -1,0 +1,6 @@
+Compiled from "TempFileHelper.java"
+class java.nio.file.TempFileHelper {
+  static java.nio.file.Path createTempFile(java.nio.file.Path, java.lang.String, java.lang.String, java.nio.file.attribute.FileAttribute<?>[]) throws java.io.IOException;
+  static java.nio.file.Path createTempDirectory(java.nio.file.Path, java.lang.String, java.nio.file.attribute.FileAttribute<?>[]) throws java.io.IOException;
+  static {};
+}

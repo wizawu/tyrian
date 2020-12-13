@@ -1,0 +1,8 @@
+Compiled from "ImageProducer.java"
+public interface java.awt.image.ImageProducer {
+  public abstract void addConsumer(java.awt.image.ImageConsumer);
+  public abstract boolean isConsumer(java.awt.image.ImageConsumer);
+  public abstract void removeConsumer(java.awt.image.ImageConsumer);
+  public abstract void startProduction(java.awt.image.ImageConsumer);
+  public abstract void requestTopDownLeftRightResend(java.awt.image.ImageConsumer);
+}

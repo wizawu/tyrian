@@ -1,0 +1,12 @@
+Compiled from "SerializerFactory.java"
+public abstract class com.sun.org.apache.xml.internal.serialize.SerializerFactory {
+  public static final java.lang.String FactoriesProperty;
+  public com.sun.org.apache.xml.internal.serialize.SerializerFactory();
+  public static void registerSerializerFactory(com.sun.org.apache.xml.internal.serialize.SerializerFactory);
+  public static com.sun.org.apache.xml.internal.serialize.SerializerFactory getSerializerFactory(java.lang.String);
+  protected abstract java.lang.String getSupportedMethod();
+  public abstract com.sun.org.apache.xml.internal.serialize.Serializer makeSerializer(com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public abstract com.sun.org.apache.xml.internal.serialize.Serializer makeSerializer(java.io.Writer, com.sun.org.apache.xml.internal.serialize.OutputFormat);
+  public abstract com.sun.org.apache.xml.internal.serialize.Serializer makeSerializer(java.io.OutputStream, com.sun.org.apache.xml.internal.serialize.OutputFormat) throws java.io.UnsupportedEncodingException;
+  static {};
+}

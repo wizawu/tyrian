@@ -1,0 +1,18 @@
+Compiled from "SystemFlavorMap.java"
+public final class java.awt.datatransfer.SystemFlavorMap implements java.awt.datatransfer.FlavorMap,java.awt.datatransfer.FlavorTable {
+  public static java.awt.datatransfer.FlavorMap getDefaultFlavorMap();
+  public synchronized java.util.List<java.lang.String> getNativesForFlavor(java.awt.datatransfer.DataFlavor);
+  public synchronized java.util.List<java.awt.datatransfer.DataFlavor> getFlavorsForNative(java.lang.String);
+  public synchronized java.util.Map<java.awt.datatransfer.DataFlavor, java.lang.String> getNativesForFlavors(java.awt.datatransfer.DataFlavor[]);
+  public synchronized java.util.Map<java.lang.String, java.awt.datatransfer.DataFlavor> getFlavorsForNatives(java.lang.String[]);
+  public synchronized void addUnencodedNativeForFlavor(java.awt.datatransfer.DataFlavor, java.lang.String);
+  public synchronized void setNativesForFlavor(java.awt.datatransfer.DataFlavor, java.lang.String[]);
+  public synchronized void addFlavorForUnencodedNative(java.lang.String, java.awt.datatransfer.DataFlavor);
+  public synchronized void setFlavorsForNative(java.lang.String, java.awt.datatransfer.DataFlavor[]);
+  public static java.lang.String encodeJavaMIMEType(java.lang.String);
+  public static java.lang.String encodeDataFlavor(java.awt.datatransfer.DataFlavor);
+  public static boolean isJavaMIMEType(java.lang.String);
+  public static java.lang.String decodeJavaMIMEType(java.lang.String);
+  public static java.awt.datatransfer.DataFlavor decodeDataFlavor(java.lang.String) throws java.lang.ClassNotFoundException;
+  static {};
+}

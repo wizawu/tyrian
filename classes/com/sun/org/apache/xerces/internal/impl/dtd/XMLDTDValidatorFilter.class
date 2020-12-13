@@ -1,0 +1,5 @@
+Compiled from "XMLDTDValidatorFilter.java"
+public interface com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidatorFilter extends com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter {
+  public abstract boolean hasGrammar();
+  public abstract boolean validate();
+}

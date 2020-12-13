@@ -1,0 +1,6 @@
+Compiled from "FileSystemAlreadyExistsException.java"
+public class java.nio.file.FileSystemAlreadyExistsException extends java.lang.RuntimeException {
+  static final long serialVersionUID;
+  public java.nio.file.FileSystemAlreadyExistsException();
+  public java.nio.file.FileSystemAlreadyExistsException(java.lang.String);
+}

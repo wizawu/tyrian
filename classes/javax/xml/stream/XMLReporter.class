@@ -1,0 +1,4 @@
+Compiled from "XMLReporter.java"
+public interface javax.xml.stream.XMLReporter {
+  public abstract void report(java.lang.String, java.lang.String, java.lang.Object, javax.xml.stream.Location) throws javax.xml.stream.XMLStreamException;
+}

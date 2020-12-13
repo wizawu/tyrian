@@ -1,0 +1,12 @@
+Compiled from "BranchData.java"
+public class sun.jvm.hotspot.oops.BranchData extends sun.jvm.hotspot.oops.JumpData {
+  static final int notTakenOffSet;
+  static final int branchCellCount;
+  public sun.jvm.hotspot.oops.BranchData(sun.jvm.hotspot.oops.DataLayout);
+  static int staticCellCount();
+  public int cellCount();
+  int notTaken();
+  static int notTakenOffset();
+  static int branchDataSize();
+  public void printDataOn(java.io.PrintStream);
+}

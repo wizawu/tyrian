@@ -1,0 +1,25 @@
+Compiled from "SAX2DOM.java"
+public class com.sun.org.apache.xalan.internal.xsltc.trax.SAX2DOM implements org.xml.sax.ContentHandler,org.xml.sax.ext.LexicalHandler,com.sun.org.apache.xalan.internal.xsltc.runtime.Constants {
+  public com.sun.org.apache.xalan.internal.xsltc.trax.SAX2DOM(boolean) throws javax.xml.parsers.ParserConfigurationException;
+  public com.sun.org.apache.xalan.internal.xsltc.trax.SAX2DOM(org.w3c.dom.Node, org.w3c.dom.Node, boolean) throws javax.xml.parsers.ParserConfigurationException;
+  public com.sun.org.apache.xalan.internal.xsltc.trax.SAX2DOM(org.w3c.dom.Node, boolean) throws javax.xml.parsers.ParserConfigurationException;
+  public org.w3c.dom.Node getDOM();
+  public void characters(char[], int, int);
+  public void startDocument();
+  public void endDocument();
+  public void startElement(java.lang.String, java.lang.String, java.lang.String, org.xml.sax.Attributes);
+  public void endElement(java.lang.String, java.lang.String, java.lang.String);
+  public void startPrefixMapping(java.lang.String, java.lang.String);
+  public void endPrefixMapping(java.lang.String);
+  public void ignorableWhitespace(char[], int, int);
+  public void processingInstruction(java.lang.String, java.lang.String);
+  public void setDocumentLocator(org.xml.sax.Locator);
+  public void skippedEntity(java.lang.String);
+  public void comment(char[], int, int);
+  public void startCDATA();
+  public void endCDATA();
+  public void startEntity(java.lang.String);
+  public void endDTD();
+  public void endEntity(java.lang.String);
+  public void startDTD(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
+}

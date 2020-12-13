@@ -1,0 +1,5 @@
+Compiled from "RIFFInvalidFormatException.java"
+public final class com.sun.media.sound.RIFFInvalidFormatException extends com.sun.media.sound.InvalidFormatException {
+  public com.sun.media.sound.RIFFInvalidFormatException();
+  public com.sun.media.sound.RIFFInvalidFormatException(java.lang.String);
+}

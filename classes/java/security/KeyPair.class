@@ -1,0 +1,6 @@
+Compiled from "KeyPair.java"
+public final class java.security.KeyPair implements java.io.Serializable {
+  public java.security.KeyPair(java.security.PublicKey, java.security.PrivateKey);
+  public java.security.PublicKey getPublic();
+  public java.security.PrivateKey getPrivate();
+}

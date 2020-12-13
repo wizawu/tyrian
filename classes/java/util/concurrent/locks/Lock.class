@@ -1,0 +1,9 @@
+Compiled from "Lock.java"
+public interface java.util.concurrent.locks.Lock {
+  public abstract void lock();
+  public abstract void lockInterruptibly() throws java.lang.InterruptedException;
+  public abstract boolean tryLock();
+  public abstract boolean tryLock(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
+  public abstract void unlock();
+  public abstract java.util.concurrent.locks.Condition newCondition();
+}

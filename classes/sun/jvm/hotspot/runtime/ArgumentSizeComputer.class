@@ -1,0 +1,5 @@
+Compiled from "ArgumentSizeComputer.java"
+public class sun.jvm.hotspot.runtime.ArgumentSizeComputer extends sun.jvm.hotspot.runtime.SignatureInfo {
+  protected void set(int, int);
+  public sun.jvm.hotspot.runtime.ArgumentSizeComputer(sun.jvm.hotspot.oops.Symbol);
+}

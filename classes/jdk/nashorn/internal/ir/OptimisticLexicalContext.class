@@ -1,0 +1,10 @@
+Compiled from "OptimisticLexicalContext.java"
+public class jdk.nashorn.internal.ir.OptimisticLexicalContext extends jdk.nashorn.internal.ir.LexicalContext {
+  public jdk.nashorn.internal.ir.OptimisticLexicalContext(boolean);
+  public boolean isEnabled();
+  public void logOptimisticAssumption(jdk.nashorn.internal.ir.Symbol, jdk.nashorn.internal.codegen.types.Type);
+  public java.util.List<jdk.nashorn.internal.ir.OptimisticLexicalContext$Assumption> getOptimisticAssumptions();
+  public boolean hasOptimisticAssumptions();
+  public <T extends jdk.nashorn.internal.ir.LexicalContextNode> T push(T);
+  public <T extends jdk.nashorn.internal.ir.Node> T pop(T);
+}

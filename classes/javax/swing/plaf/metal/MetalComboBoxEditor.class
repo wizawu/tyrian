@@ -1,0 +1,6 @@
+Compiled from "MetalComboBoxEditor.java"
+public class javax.swing.plaf.metal.MetalComboBoxEditor extends javax.swing.plaf.basic.BasicComboBoxEditor {
+  protected static java.awt.Insets editorBorderInsets;
+  public javax.swing.plaf.metal.MetalComboBoxEditor();
+  static {};
+}

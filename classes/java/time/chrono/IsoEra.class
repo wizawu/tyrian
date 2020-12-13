@@ -1,0 +1,10 @@
+Compiled from "IsoEra.java"
+public final class java.time.chrono.IsoEra extends java.lang.Enum<java.time.chrono.IsoEra> implements java.time.chrono.Era {
+  public static final java.time.chrono.IsoEra BCE;
+  public static final java.time.chrono.IsoEra CE;
+  public static java.time.chrono.IsoEra[] values();
+  public static java.time.chrono.IsoEra valueOf(java.lang.String);
+  public static java.time.chrono.IsoEra of(int);
+  public int getValue();
+  static {};
+}

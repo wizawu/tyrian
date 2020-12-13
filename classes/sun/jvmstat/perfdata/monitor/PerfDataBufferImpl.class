@@ -1,0 +1,22 @@
+Compiled from "PerfDataBufferImpl.java"
+public abstract class sun.jvmstat.perfdata.monitor.PerfDataBufferImpl {
+  protected java.nio.ByteBuffer buffer;
+  protected java.util.Map<java.lang.String, sun.jvmstat.monitor.Monitor> monitors;
+  protected int lvmid;
+  protected java.util.Map<java.lang.String, java.util.ArrayList<java.lang.String>> aliasMap;
+  protected java.util.Map<java.lang.String, sun.jvmstat.monitor.Monitor> aliasCache;
+  static final boolean $assertionsDisabled;
+  protected sun.jvmstat.perfdata.monitor.PerfDataBufferImpl(java.nio.ByteBuffer, int);
+  public int getLocalVmId();
+  public byte[] getBytes();
+  public int getCapacity();
+  java.nio.ByteBuffer getByteBuffer();
+  protected sun.jvmstat.monitor.Monitor findByAlias(java.lang.String);
+  public sun.jvmstat.monitor.Monitor findByName(java.lang.String) throws sun.jvmstat.monitor.MonitorException;
+  public java.util.List<sun.jvmstat.monitor.Monitor> findByPattern(java.lang.String) throws sun.jvmstat.monitor.MonitorException, java.util.regex.PatternSyntaxException;
+  public sun.jvmstat.perfdata.monitor.MonitorStatus getMonitorStatus() throws sun.jvmstat.monitor.MonitorException;
+  protected abstract sun.jvmstat.perfdata.monitor.MonitorStatus getMonitorStatus(java.util.Map<java.lang.String, sun.jvmstat.monitor.Monitor>) throws sun.jvmstat.monitor.MonitorException;
+  protected abstract void buildMonitorMap(java.util.Map<java.lang.String, sun.jvmstat.monitor.Monitor>) throws sun.jvmstat.monitor.MonitorException;
+  protected abstract void getNewMonitors(java.util.Map<java.lang.String, sun.jvmstat.monitor.Monitor>) throws sun.jvmstat.monitor.MonitorException;
+  static {};
+}

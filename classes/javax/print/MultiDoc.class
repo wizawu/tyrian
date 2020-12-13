@@ -1,0 +1,5 @@
+Compiled from "MultiDoc.java"
+public interface javax.print.MultiDoc {
+  public abstract javax.print.Doc getDoc() throws java.io.IOException;
+  public abstract javax.print.MultiDoc next() throws java.io.IOException;
+}

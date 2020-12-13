@@ -1,0 +1,5 @@
+Compiled from "DGCClient.java"
+final class sun.rmi.transport.DGCClient {
+  static void registerRefs(sun.rmi.transport.Endpoint, java.util.List<sun.rmi.transport.LiveRef>);
+  static {};
+}

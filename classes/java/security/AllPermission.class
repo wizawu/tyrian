@@ -1,0 +1,10 @@
+Compiled from "AllPermission.java"
+public final class java.security.AllPermission extends java.security.Permission {
+  public java.security.AllPermission();
+  public java.security.AllPermission(java.lang.String, java.lang.String);
+  public boolean implies(java.security.Permission);
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public java.lang.String getActions();
+  public java.security.PermissionCollection newPermissionCollection();
+}

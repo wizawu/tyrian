@@ -1,0 +1,6 @@
+Compiled from "Timestamp.java"
+public interface jdk.jfr.Timestamp extends java.lang.annotation.Annotation {
+  public static final java.lang.String MILLISECONDS_SINCE_EPOCH;
+  public static final java.lang.String TICKS;
+  public abstract java.lang.String value();
+}

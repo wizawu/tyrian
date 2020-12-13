@@ -1,0 +1,6 @@
+Compiled from "SplashScreen.java"
+public class com.sun.java.swing.ui.SplashScreen extends java.awt.Window {
+  public com.sun.java.swing.ui.SplashScreen(java.awt.Frame);
+  public void setVisible(boolean);
+  public void paint(java.awt.Graphics);
+}

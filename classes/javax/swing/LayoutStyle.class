@@ -1,0 +1,8 @@
+Compiled from "LayoutStyle.java"
+public abstract class javax.swing.LayoutStyle {
+  public static void setInstance(javax.swing.LayoutStyle);
+  public static javax.swing.LayoutStyle getInstance();
+  public javax.swing.LayoutStyle();
+  public abstract int getPreferredGap(javax.swing.JComponent, javax.swing.JComponent, javax.swing.LayoutStyle$ComponentPlacement, int, java.awt.Container);
+  public abstract int getContainerGap(javax.swing.JComponent, int, java.awt.Container);
+}

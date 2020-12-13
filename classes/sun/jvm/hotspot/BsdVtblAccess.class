@@ -1,0 +1,5 @@
+Compiled from "BsdVtblAccess.java"
+public class sun.jvm.hotspot.BsdVtblAccess extends sun.jvm.hotspot.types.basic.BasicVtblAccess {
+  public sun.jvm.hotspot.BsdVtblAccess(sun.jvm.hotspot.debugger.SymbolLookup, java.lang.String[]);
+  protected java.lang.String vtblSymbolForType(sun.jvm.hotspot.types.Type);
+}

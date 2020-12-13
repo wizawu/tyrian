@@ -1,0 +1,8 @@
+Compiled from "ParameterizedType.java"
+public interface com.sun.javadoc.ParameterizedType extends com.sun.javadoc.Type {
+  public abstract com.sun.javadoc.ClassDoc asClassDoc();
+  public abstract com.sun.javadoc.Type[] typeArguments();
+  public abstract com.sun.javadoc.Type superclassType();
+  public abstract com.sun.javadoc.Type[] interfaceTypes();
+  public abstract com.sun.javadoc.Type containingType();
+}

@@ -1,0 +1,18 @@
+Compiled from "Reflection.java"
+public class jdk.internal.reflect.Reflection {
+  public jdk.internal.reflect.Reflection();
+  public static native java.lang.Class<?> getCallerClass();
+  public static native int getClassAccessFlags(java.lang.Class<?>);
+  public static void ensureMemberAccess(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>, int) throws java.lang.IllegalAccessException;
+  public static boolean verifyMemberAccess(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>, int);
+  public static boolean verifyModuleAccess(java.lang.Module, java.lang.Class<?>);
+  static boolean isSubclassOf(java.lang.Class<?>, java.lang.Class<?>);
+  public static synchronized void registerFieldsToFilter(java.lang.Class<?>, java.lang.String...);
+  public static synchronized void registerMethodsToFilter(java.lang.Class<?>, java.lang.String...);
+  public static java.lang.reflect.Field[] filterFields(java.lang.Class<?>, java.lang.reflect.Field[]);
+  public static java.lang.reflect.Method[] filterMethods(java.lang.Class<?>, java.lang.reflect.Method[]);
+  public static boolean isCallerSensitive(java.lang.reflect.Method);
+  public static java.lang.IllegalAccessException newIllegalAccessException(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>, int) throws java.lang.IllegalAccessException;
+  public static native boolean areNestMates(java.lang.Class<?>, java.lang.Class<?>);
+  static {};
+}

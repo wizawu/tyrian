@@ -1,0 +1,15 @@
+Compiled from "XML11NSDocumentScannerImpl.java"
+public class com.sun.org.apache.xerces.internal.impl.XML11NSDocumentScannerImpl extends com.sun.org.apache.xerces.internal.impl.XML11DocumentScannerImpl {
+  protected boolean fBindNamespaces;
+  protected boolean fPerformValidation;
+  public com.sun.org.apache.xerces.internal.impl.XML11NSDocumentScannerImpl();
+  public void setDTDValidator(com.sun.org.apache.xerces.internal.impl.dtd.XMLDTDValidatorFilter);
+  protected boolean scanStartElement() throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected void scanStartElementName() throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected boolean scanStartElementAfterName() throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected void scanAttribute(com.sun.org.apache.xerces.internal.util.XMLAttributesImpl) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  protected int scanEndElement() throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+  public void reset(com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException;
+  protected com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$Driver createContentDriver();
+  public int next() throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
+}

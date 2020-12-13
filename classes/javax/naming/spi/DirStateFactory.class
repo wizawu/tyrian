@@ -1,0 +1,4 @@
+Compiled from "DirStateFactory.java"
+public interface javax.naming.spi.DirStateFactory extends javax.naming.spi.StateFactory {
+  public abstract javax.naming.spi.DirStateFactory$Result getStateToBind(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>, javax.naming.directory.Attributes) throws javax.naming.NamingException;
+}

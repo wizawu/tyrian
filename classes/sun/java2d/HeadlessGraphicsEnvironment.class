@@ -1,0 +1,13 @@
+Compiled from "HeadlessGraphicsEnvironment.java"
+public class sun.java2d.HeadlessGraphicsEnvironment extends java.awt.GraphicsEnvironment {
+  public sun.java2d.HeadlessGraphicsEnvironment(java.awt.GraphicsEnvironment);
+  public java.awt.GraphicsDevice[] getScreenDevices() throws java.awt.HeadlessException;
+  public java.awt.GraphicsDevice getDefaultScreenDevice() throws java.awt.HeadlessException;
+  public java.awt.Point getCenterPoint() throws java.awt.HeadlessException;
+  public java.awt.Rectangle getMaximumWindowBounds() throws java.awt.HeadlessException;
+  public java.awt.Graphics2D createGraphics(java.awt.image.BufferedImage);
+  public java.awt.Font[] getAllFonts();
+  public java.lang.String[] getAvailableFontFamilyNames();
+  public java.lang.String[] getAvailableFontFamilyNames(java.util.Locale);
+  public java.awt.GraphicsEnvironment getSunGraphicsEnvironment();
+}

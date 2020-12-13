@@ -1,0 +1,20 @@
+Compiled from "DefaultMetadataVisitor.java"
+public abstract class sun.jvm.hotspot.oops.DefaultMetadataVisitor implements sun.jvm.hotspot.oops.MetadataVisitor {
+  public sun.jvm.hotspot.oops.DefaultMetadataVisitor();
+  public void prologue();
+  public void epilogue();
+  public void setObj(sun.jvm.hotspot.oops.Metadata);
+  public sun.jvm.hotspot.oops.Metadata getObj();
+  public abstract void doMetadata(sun.jvm.hotspot.oops.MetadataField, boolean);
+  public void doOop(sun.jvm.hotspot.oops.OopField, boolean);
+  public void doOop(sun.jvm.hotspot.oops.NarrowOopField, boolean);
+  public void doByte(sun.jvm.hotspot.oops.ByteField, boolean);
+  public void doChar(sun.jvm.hotspot.oops.CharField, boolean);
+  public void doBoolean(sun.jvm.hotspot.oops.BooleanField, boolean);
+  public void doShort(sun.jvm.hotspot.oops.ShortField, boolean);
+  public void doInt(sun.jvm.hotspot.oops.IntField, boolean);
+  public void doLong(sun.jvm.hotspot.oops.LongField, boolean);
+  public void doFloat(sun.jvm.hotspot.oops.FloatField, boolean);
+  public void doDouble(sun.jvm.hotspot.oops.DoubleField, boolean);
+  public void doCInt(sun.jvm.hotspot.oops.CIntField, boolean);
+}

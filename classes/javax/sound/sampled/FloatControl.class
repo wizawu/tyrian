@@ -1,0 +1,17 @@
+Compiled from "FloatControl.java"
+public abstract class javax.sound.sampled.FloatControl extends javax.sound.sampled.Control {
+  protected javax.sound.sampled.FloatControl(javax.sound.sampled.FloatControl$Type, float, float, float, int, float, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
+  protected javax.sound.sampled.FloatControl(javax.sound.sampled.FloatControl$Type, float, float, float, int, float, java.lang.String);
+  public void setValue(float);
+  public float getValue();
+  public float getMaximum();
+  public float getMinimum();
+  public java.lang.String getUnits();
+  public java.lang.String getMinLabel();
+  public java.lang.String getMidLabel();
+  public java.lang.String getMaxLabel();
+  public float getPrecision();
+  public int getUpdatePeriod();
+  public void shift(float, float, int);
+  public java.lang.String toString();
+}

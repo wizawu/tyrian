@@ -1,0 +1,6 @@
+Compiled from "DeoptimizationBlob.java"
+public class sun.jvm.hotspot.code.DeoptimizationBlob extends sun.jvm.hotspot.code.SingletonBlob {
+  public sun.jvm.hotspot.code.DeoptimizationBlob(sun.jvm.hotspot.debugger.Address);
+  public boolean isDeoptimizationStub();
+  static {};
+}

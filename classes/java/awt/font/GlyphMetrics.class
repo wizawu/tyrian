@@ -1,0 +1,22 @@
+Compiled from "GlyphMetrics.java"
+public final class java.awt.font.GlyphMetrics {
+  public static final byte STANDARD;
+  public static final byte LIGATURE;
+  public static final byte COMBINING;
+  public static final byte COMPONENT;
+  public static final byte WHITESPACE;
+  public java.awt.font.GlyphMetrics(float, java.awt.geom.Rectangle2D, byte);
+  public java.awt.font.GlyphMetrics(boolean, float, float, java.awt.geom.Rectangle2D, byte);
+  public float getAdvance();
+  public float getAdvanceX();
+  public float getAdvanceY();
+  public java.awt.geom.Rectangle2D getBounds2D();
+  public float getLSB();
+  public float getRSB();
+  public int getType();
+  public boolean isStandard();
+  public boolean isLigature();
+  public boolean isCombining();
+  public boolean isComponent();
+  public boolean isWhitespace();
+}

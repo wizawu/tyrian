@@ -1,0 +1,4 @@
+Compiled from "CertParseError.java"
+class sun.security.x509.CertParseError extends sun.security.x509.CertException {
+  sun.security.x509.CertParseError(java.lang.String);
+}

@@ -1,0 +1,9 @@
+Compiled from "TextInputCallback.java"
+public class javax.security.auth.callback.TextInputCallback implements javax.security.auth.callback.Callback,java.io.Serializable {
+  public javax.security.auth.callback.TextInputCallback(java.lang.String);
+  public javax.security.auth.callback.TextInputCallback(java.lang.String, java.lang.String);
+  public java.lang.String getPrompt();
+  public java.lang.String getDefaultText();
+  public void setText(java.lang.String);
+  public java.lang.String getText();
+}

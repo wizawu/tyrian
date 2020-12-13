@@ -1,0 +1,17 @@
+Compiled from "EncTicketPart.java"
+public class sun.security.krb5.internal.EncTicketPart {
+  public sun.security.krb5.internal.TicketFlags flags;
+  public sun.security.krb5.EncryptionKey key;
+  public sun.security.krb5.PrincipalName cname;
+  public sun.security.krb5.internal.TransitedEncoding transited;
+  public sun.security.krb5.internal.KerberosTime authtime;
+  public sun.security.krb5.internal.KerberosTime starttime;
+  public sun.security.krb5.internal.KerberosTime endtime;
+  public sun.security.krb5.internal.KerberosTime renewTill;
+  public sun.security.krb5.internal.HostAddresses caddr;
+  public sun.security.krb5.internal.AuthorizationData authorizationData;
+  public sun.security.krb5.internal.EncTicketPart(sun.security.krb5.internal.TicketFlags, sun.security.krb5.EncryptionKey, sun.security.krb5.PrincipalName, sun.security.krb5.internal.TransitedEncoding, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.KerberosTime, sun.security.krb5.internal.HostAddresses, sun.security.krb5.internal.AuthorizationData);
+  public sun.security.krb5.internal.EncTicketPart(byte[]) throws sun.security.krb5.Asn1Exception, sun.security.krb5.KrbException, java.io.IOException;
+  public sun.security.krb5.internal.EncTicketPart(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, sun.security.krb5.KrbException, java.io.IOException;
+  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
+}

@@ -1,0 +1,7 @@
+Compiled from "StateTracker.java"
+public interface sun.java2d.StateTracker {
+  public static final sun.java2d.StateTracker ALWAYS_CURRENT;
+  public static final sun.java2d.StateTracker NEVER_CURRENT;
+  public abstract boolean isCurrent();
+  static {};
+}

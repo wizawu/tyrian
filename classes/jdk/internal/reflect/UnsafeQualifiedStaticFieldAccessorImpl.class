@@ -1,0 +1,5 @@
+Compiled from "UnsafeQualifiedStaticFieldAccessorImpl.java"
+abstract class jdk.internal.reflect.UnsafeQualifiedStaticFieldAccessorImpl extends jdk.internal.reflect.UnsafeStaticFieldAccessorImpl {
+  protected final boolean isReadOnly;
+  jdk.internal.reflect.UnsafeQualifiedStaticFieldAccessorImpl(java.lang.reflect.Field, boolean);
+}

@@ -1,0 +1,11 @@
+Compiled from "SaslServer.java"
+public interface javax.security.sasl.SaslServer {
+  public abstract java.lang.String getMechanismName();
+  public abstract byte[] evaluateResponse(byte[]) throws javax.security.sasl.SaslException;
+  public abstract boolean isComplete();
+  public abstract java.lang.String getAuthorizationID();
+  public abstract byte[] unwrap(byte[], int, int) throws javax.security.sasl.SaslException;
+  public abstract byte[] wrap(byte[], int, int) throws javax.security.sasl.SaslException;
+  public abstract java.lang.Object getNegotiatedProperty(java.lang.String);
+  public abstract void dispose() throws javax.security.sasl.SaslException;
+}

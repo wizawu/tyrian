@@ -1,0 +1,9 @@
+Compiled from "ConnectorBootstrap.java"
+public final class sun.management.jmxremote.ConnectorBootstrap {
+  public static void unexportRegistry();
+  public static synchronized javax.management.remote.JMXConnectorServer initialize();
+  public static synchronized javax.management.remote.JMXConnectorServer initialize(java.lang.String, java.util.Properties);
+  public static synchronized javax.management.remote.JMXConnectorServer startRemoteConnectorServer(java.lang.String, java.util.Properties);
+  public static javax.management.remote.JMXConnectorServer startLocalConnectorServer();
+  static {};
+}

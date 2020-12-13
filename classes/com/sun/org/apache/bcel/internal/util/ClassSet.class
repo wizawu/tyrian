@@ -1,0 +1,9 @@
+Compiled from "ClassSet.java"
+public class com.sun.org.apache.bcel.internal.util.ClassSet {
+  public com.sun.org.apache.bcel.internal.util.ClassSet();
+  public boolean add(com.sun.org.apache.bcel.internal.classfile.JavaClass);
+  public void remove(com.sun.org.apache.bcel.internal.classfile.JavaClass);
+  public boolean empty();
+  public com.sun.org.apache.bcel.internal.classfile.JavaClass[] toArray();
+  public java.lang.String[] getClassNames();
+}

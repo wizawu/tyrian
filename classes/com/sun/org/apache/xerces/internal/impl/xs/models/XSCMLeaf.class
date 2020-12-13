@@ -1,0 +1,12 @@
+Compiled from "XSCMLeaf.java"
+public class com.sun.org.apache.xerces.internal.impl.xs.models.XSCMLeaf extends com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode {
+  public com.sun.org.apache.xerces.internal.impl.xs.models.XSCMLeaf(int, java.lang.Object, int, int);
+  final java.lang.Object getLeaf();
+  final int getParticleId();
+  final int getPosition();
+  final void setPosition(int);
+  public boolean isNullable();
+  public java.lang.String toString();
+  protected void calcFirstPos(com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet);
+  protected void calcLastPos(com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet);
+}

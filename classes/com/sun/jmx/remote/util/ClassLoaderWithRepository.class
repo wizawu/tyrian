@@ -1,0 +1,5 @@
+Compiled from "ClassLoaderWithRepository.java"
+public class com.sun.jmx.remote.util.ClassLoaderWithRepository extends java.lang.ClassLoader {
+  public com.sun.jmx.remote.util.ClassLoaderWithRepository(javax.management.loading.ClassLoaderRepository, java.lang.ClassLoader);
+  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
+}

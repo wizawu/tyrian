@@ -1,0 +1,5 @@
+Compiled from "DREM.java"
+public class com.sun.org.apache.bcel.internal.generic.DREM extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
+  public com.sun.org.apache.bcel.internal.generic.DREM();
+  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
+}

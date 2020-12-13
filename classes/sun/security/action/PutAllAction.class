@@ -1,0 +1,6 @@
+Compiled from "PutAllAction.java"
+public class sun.security.action.PutAllAction implements java.security.PrivilegedAction<java.lang.Void> {
+  public sun.security.action.PutAllAction(java.security.Provider, java.util.Map<?, ?>);
+  public java.lang.Void run();
+  public java.lang.Object run();
+}

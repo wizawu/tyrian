@@ -1,0 +1,33 @@
+Compiled from "X11GraphicsDevice.java"
+public final class sun.awt.X11GraphicsDevice extends java.awt.GraphicsDevice implements sun.awt.DisplayChangedListener {
+  int screen;
+  java.util.HashMap<sun.java2d.loops.SurfaceType, java.lang.Object> x11ProxyKeyMap;
+  java.awt.GraphicsConfiguration[] configs;
+  java.awt.GraphicsConfiguration defaultConfig;
+  java.util.HashSet<java.lang.Integer> doubleBufferVisuals;
+  public sun.awt.X11GraphicsDevice(int);
+  public int getScreen();
+  public java.lang.Object getProxyKeyFor(sun.java2d.loops.SurfaceType);
+  public native long getDisplay();
+  public int getType();
+  public java.lang.String getIDstring();
+  public java.awt.GraphicsConfiguration[] getConfigurations();
+  public native int getNumConfigs(int);
+  public native int getConfigVisualId(int, int);
+  static native boolean isDBESupported();
+  public java.awt.GraphicsConfiguration getDefaultConfiguration();
+  public boolean isFullScreenSupported();
+  public boolean isDisplayChangeSupported();
+  public synchronized void setFullScreenWindow(java.awt.Window);
+  public synchronized java.awt.DisplayMode getDisplayMode();
+  public synchronized java.awt.DisplayMode[] getDisplayModes();
+  public synchronized void setDisplayMode(java.awt.DisplayMode);
+  public synchronized void displayChanged();
+  public void paletteChanged();
+  public void addDisplayChangedListener(sun.awt.DisplayChangedListener);
+  public int getScaleFactor();
+  public int getNativeScale();
+  public void removeDisplayChangedListener(sun.awt.DisplayChangedListener);
+  public java.lang.String toString();
+  static {};
+}

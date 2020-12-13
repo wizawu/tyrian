@@ -1,0 +1,7 @@
+Compiled from "ServiceThread.java"
+public class sun.jvm.hotspot.runtime.ServiceThread extends sun.jvm.hotspot.runtime.JavaThread {
+  public sun.jvm.hotspot.runtime.ServiceThread(sun.jvm.hotspot.debugger.Address);
+  public boolean isJavaThread();
+  public boolean isHiddenFromExternalView();
+  public boolean isServiceThread();
+}

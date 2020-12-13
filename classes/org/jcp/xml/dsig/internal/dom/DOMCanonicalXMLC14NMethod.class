@@ -1,0 +1,6 @@
+Compiled from "DOMCanonicalXMLC14NMethod.java"
+public final class org.jcp.xml.dsig.internal.dom.DOMCanonicalXMLC14NMethod extends org.jcp.xml.dsig.internal.dom.ApacheCanonicalizer {
+  public org.jcp.xml.dsig.internal.dom.DOMCanonicalXMLC14NMethod();
+  public void init(javax.xml.crypto.dsig.spec.TransformParameterSpec) throws java.security.InvalidAlgorithmParameterException;
+  public javax.xml.crypto.Data transform(javax.xml.crypto.Data, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.dsig.TransformException;
+}

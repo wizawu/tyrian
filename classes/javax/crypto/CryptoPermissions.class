@@ -1,0 +1,12 @@
+Compiled from "CryptoPermissions.java"
+final class javax.crypto.CryptoPermissions extends java.security.PermissionCollection implements java.io.Serializable {
+  javax.crypto.CryptoPermissions();
+  void load(java.io.InputStream) throws java.io.IOException, javax.crypto.CryptoPolicyParser$ParsingException;
+  boolean isEmpty();
+  public void add(java.security.Permission);
+  public boolean implies(java.security.Permission);
+  public java.util.Enumeration<java.security.Permission> elements();
+  javax.crypto.CryptoPermissions getMinimum(javax.crypto.CryptoPermissions);
+  java.security.PermissionCollection getPermissionCollection(java.lang.String);
+  static {};
+}

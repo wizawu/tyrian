@@ -1,0 +1,13 @@
+Compiled from "ThreadIterator.java"
+class com.sun.tools.example.debug.tty.ThreadIterator implements java.util.Iterator<com.sun.jdi.ThreadReference> {
+  java.util.Iterator<com.sun.jdi.ThreadReference> it;
+  com.sun.tools.example.debug.tty.ThreadGroupIterator tgi;
+  com.sun.tools.example.debug.tty.ThreadIterator(com.sun.jdi.ThreadGroupReference);
+  com.sun.tools.example.debug.tty.ThreadIterator(java.util.List<com.sun.jdi.ThreadGroupReference>);
+  com.sun.tools.example.debug.tty.ThreadIterator();
+  public boolean hasNext();
+  public com.sun.jdi.ThreadReference next();
+  public com.sun.jdi.ThreadReference nextThread();
+  public void remove();
+  public java.lang.Object next();
+}

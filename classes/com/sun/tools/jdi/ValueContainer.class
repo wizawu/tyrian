@@ -1,0 +1,7 @@
+Compiled from "ValueContainer.java"
+interface com.sun.tools.jdi.ValueContainer {
+  public abstract com.sun.jdi.Type type() throws com.sun.jdi.ClassNotLoadedException;
+  public abstract com.sun.jdi.Type findType(java.lang.String) throws com.sun.jdi.ClassNotLoadedException;
+  public abstract java.lang.String typeName();
+  public abstract java.lang.String signature();
+}

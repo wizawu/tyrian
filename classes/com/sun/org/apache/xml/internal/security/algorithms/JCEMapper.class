@@ -1,0 +1,15 @@
+Compiled from "JCEMapper.java"
+public class com.sun.org.apache.xml.internal.security.algorithms.JCEMapper {
+  public com.sun.org.apache.xml.internal.security.algorithms.JCEMapper();
+  public static void register(java.lang.String, com.sun.org.apache.xml.internal.security.algorithms.JCEMapper$Algorithm);
+  public static void registerDefaultAlgorithms();
+  public static java.lang.String translateURItoJCEID(java.lang.String);
+  public static java.lang.String getAlgorithmClassFromURI(java.lang.String);
+  public static int getKeyLengthFromURI(java.lang.String);
+  public static int getIVLengthFromURI(java.lang.String);
+  public static java.lang.String getJCEKeyAlgorithmFromURI(java.lang.String);
+  public static java.lang.String getJCEProviderFromURI(java.lang.String);
+  public static java.lang.String getProviderId();
+  public static void setProviderId(java.lang.String);
+  static {};
+}

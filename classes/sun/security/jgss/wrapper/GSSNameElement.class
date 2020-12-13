@@ -1,0 +1,21 @@
+Compiled from "GSSNameElement.java"
+public class sun.security.jgss.wrapper.GSSNameElement implements sun.security.jgss.spi.GSSNameSpi {
+  long pName;
+  static final sun.security.jgss.wrapper.GSSNameElement DEF_ACCEPTOR;
+  static final boolean $assertionsDisabled;
+  sun.security.jgss.wrapper.GSSNameElement(long, sun.security.jgss.wrapper.GSSLibStub) throws org.ietf.jgss.GSSException;
+  sun.security.jgss.wrapper.GSSNameElement(byte[], org.ietf.jgss.Oid, sun.security.jgss.wrapper.GSSLibStub) throws org.ietf.jgss.GSSException;
+  public java.lang.String getKrbName() throws org.ietf.jgss.GSSException;
+  public java.security.Provider getProvider();
+  public boolean equals(sun.security.jgss.spi.GSSNameSpi) throws org.ietf.jgss.GSSException;
+  public boolean equals(java.lang.Object);
+  public int hashCode();
+  public byte[] export() throws org.ietf.jgss.GSSException;
+  public org.ietf.jgss.Oid getMechanism();
+  public java.lang.String toString();
+  public org.ietf.jgss.Oid getStringNameType();
+  public boolean isAnonymousName();
+  public void dispose();
+  protected void finalize() throws java.lang.Throwable;
+  static {};
+}

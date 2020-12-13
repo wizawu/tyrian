@@ -1,0 +1,6 @@
+Compiled from "FilesEvent.java"
+public class java.awt.desktop.FilesEvent extends java.awt.desktop.AppEvent {
+  final java.util.List<java.io.File> files;
+  java.awt.desktop.FilesEvent(java.util.List<java.io.File>);
+  public java.util.List<java.io.File> getFiles();
+}

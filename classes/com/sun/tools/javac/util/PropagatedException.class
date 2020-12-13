@@ -1,0 +1,7 @@
+Compiled from "PropagatedException.java"
+public class com.sun.tools.javac.util.PropagatedException extends java.lang.RuntimeException {
+  static final long serialVersionUID;
+  public com.sun.tools.javac.util.PropagatedException(java.lang.RuntimeException);
+  public java.lang.RuntimeException getCause();
+  public java.lang.Throwable getCause();
+}

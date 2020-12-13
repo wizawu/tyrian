@@ -1,0 +1,7 @@
+Compiled from "ConsoleIOContextTestSupport.java"
+public abstract class jdk.internal.jshell.tool.ConsoleIOContextTestSupport {
+  public static jdk.internal.jshell.tool.ConsoleIOContextTestSupport IMPL;
+  public jdk.internal.jshell.tool.ConsoleIOContextTestSupport();
+  public static void willComputeCompletion();
+  protected abstract void willComputeCompletionCallback();
+}

@@ -1,0 +1,7 @@
+Compiled from "Extender.java"
+class com.sun.security.jgss.Extender extends sun.security.jgss.JgssExtender {
+  com.sun.security.jgss.Extender();
+  public org.ietf.jgss.GSSCredential wrap(org.ietf.jgss.GSSCredential);
+  public org.ietf.jgss.GSSContext wrap(org.ietf.jgss.GSSContext);
+  static {};
+}

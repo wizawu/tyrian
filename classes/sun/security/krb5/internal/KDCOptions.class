@@ -1,0 +1,32 @@
+Compiled from "KDCOptions.java"
+public class sun.security.krb5.internal.KDCOptions extends sun.security.krb5.internal.util.KerberosFlags {
+  public static final int RESERVED;
+  public static final int FORWARDABLE;
+  public static final int FORWARDED;
+  public static final int PROXIABLE;
+  public static final int PROXY;
+  public static final int ALLOW_POSTDATE;
+  public static final int POSTDATED;
+  public static final int UNUSED7;
+  public static final int RENEWABLE;
+  public static final int UNUSED9;
+  public static final int UNUSED10;
+  public static final int UNUSED11;
+  public static final int CNAME_IN_ADDL_TKT;
+  public static final int CANONICALIZE;
+  public static final int RENEWABLE_OK;
+  public static final int ENC_TKT_IN_SKEY;
+  public static final int RENEW;
+  public static final int VALIDATE;
+  public static sun.security.krb5.internal.KDCOptions with(int...);
+  public sun.security.krb5.internal.KDCOptions();
+  public sun.security.krb5.internal.KDCOptions(int, byte[]) throws sun.security.krb5.Asn1Exception;
+  public sun.security.krb5.internal.KDCOptions(boolean[]) throws sun.security.krb5.Asn1Exception;
+  public sun.security.krb5.internal.KDCOptions(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public sun.security.krb5.internal.KDCOptions(byte[]);
+  public static sun.security.krb5.internal.KDCOptions parse(sun.security.util.DerInputStream, byte, boolean) throws sun.security.krb5.Asn1Exception, java.io.IOException;
+  public void set(int, boolean) throws java.lang.ArrayIndexOutOfBoundsException;
+  public boolean get(int) throws java.lang.ArrayIndexOutOfBoundsException;
+  public java.lang.String toString();
+  static {};
+}

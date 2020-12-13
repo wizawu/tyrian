@@ -1,0 +1,10 @@
+Compiled from "UnsharedNameTable.java"
+public class com.sun.tools.javac.util.UnsharedNameTable extends com.sun.tools.javac.util.Name$Table {
+  public int index;
+  public static com.sun.tools.javac.util.Name$Table create(com.sun.tools.javac.util.Names);
+  public com.sun.tools.javac.util.UnsharedNameTable(com.sun.tools.javac.util.Names, int);
+  public com.sun.tools.javac.util.UnsharedNameTable(com.sun.tools.javac.util.Names);
+  public com.sun.tools.javac.util.Name fromChars(char[], int, int);
+  public com.sun.tools.javac.util.Name fromUtf(byte[], int, int);
+  public void dispose();
+}

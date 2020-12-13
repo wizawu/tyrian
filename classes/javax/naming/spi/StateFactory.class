@@ -1,0 +1,4 @@
+Compiled from "StateFactory.java"
+public interface javax.naming.spi.StateFactory {
+  public abstract java.lang.Object getStateToBind(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
+}

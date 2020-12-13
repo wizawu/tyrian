@@ -1,0 +1,7 @@
+Compiled from "MutableComboBoxModel.java"
+public interface javax.swing.MutableComboBoxModel<E> extends javax.swing.ComboBoxModel<E> {
+  public abstract void addElement(E);
+  public abstract void removeElement(java.lang.Object);
+  public abstract void insertElementAt(E, int);
+  public abstract void removeElementAt(int);
+}

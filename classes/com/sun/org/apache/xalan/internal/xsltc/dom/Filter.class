@@ -1,0 +1,4 @@
+Compiled from "Filter.java"
+public interface com.sun.org.apache.xalan.internal.xsltc.dom.Filter {
+  public abstract boolean test(int);
+}

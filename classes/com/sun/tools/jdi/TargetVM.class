@@ -1,0 +1,13 @@
+Compiled from "TargetVM.java"
+public class com.sun.tools.jdi.TargetVM implements java.lang.Runnable {
+  com.sun.tools.jdi.TargetVM(com.sun.tools.jdi.VirtualMachineImpl, com.sun.jdi.connect.spi.Connection);
+  void start();
+  public void run();
+  protected void handleVMCommand(com.sun.tools.jdi.Packet);
+  protected void handleEventCmdSet(com.sun.tools.jdi.Packet);
+  void notifyDequeueEventSet();
+  void send(com.sun.tools.jdi.Packet);
+  void waitForReply(com.sun.tools.jdi.Packet);
+  void addEventQueue(com.sun.tools.jdi.EventQueueImpl);
+  void stopListening();
+}

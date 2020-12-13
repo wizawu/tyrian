@@ -1,0 +1,6 @@
+Compiled from "ProcessInfo.java"
+public class sun.jvm.hotspot.debugger.ProcessInfo {
+  public sun.jvm.hotspot.debugger.ProcessInfo(java.lang.String, int);
+  public java.lang.String getName();
+  public int getPid();
+}

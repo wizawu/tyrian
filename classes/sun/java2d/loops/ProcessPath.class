@@ -1,0 +1,13 @@
+Compiled from "ProcessPath.java"
+public class sun.java2d.loops.ProcessPath {
+  public static final int PH_MODE_DRAW_CLIP;
+  public static final int PH_MODE_FILL_CLIP;
+  public static sun.java2d.loops.ProcessPath$EndSubPathHandler noopEndSubPathHandler;
+  public static final int EPSFX;
+  public static final float EPSF;
+  public sun.java2d.loops.ProcessPath();
+  public static boolean fillPath(sun.java2d.loops.ProcessPath$DrawHandler, java.awt.geom.Path2D$Float, int, int);
+  public static boolean drawPath(sun.java2d.loops.ProcessPath$DrawHandler, sun.java2d.loops.ProcessPath$EndSubPathHandler, java.awt.geom.Path2D$Float, int, int);
+  public static boolean drawPath(sun.java2d.loops.ProcessPath$DrawHandler, java.awt.geom.Path2D$Float, int, int);
+  static {};
+}

@@ -1,0 +1,13 @@
+Compiled from "LinkerServicesWithMissingMemberHandlerFactory.java"
+final class jdk.dynalink.beans.LinkerServicesWithMissingMemberHandlerFactory implements jdk.dynalink.linker.LinkerServices {
+  final jdk.dynalink.linker.LinkerServices linkerServices;
+  final jdk.dynalink.beans.MissingMemberHandlerFactory missingMemberHandlerFactory;
+  static jdk.dynalink.linker.LinkerServices get(jdk.dynalink.linker.LinkerServices, jdk.dynalink.beans.MissingMemberHandlerFactory);
+  public java.lang.invoke.MethodHandle asType(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType);
+  public java.lang.invoke.MethodHandle getTypeConverter(java.lang.Class<?>, java.lang.Class<?>);
+  public boolean canConvert(java.lang.Class<?>, java.lang.Class<?>);
+  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest) throws java.lang.Exception;
+  public jdk.dynalink.linker.ConversionComparator$Comparison compareConversion(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>);
+  public java.lang.invoke.MethodHandle filterInternalObjects(java.lang.invoke.MethodHandle);
+  public <T> T getWithLookup(java.util.function.Supplier<T>, jdk.dynalink.SecureLookupSupplier);
+}

@@ -1,0 +1,6 @@
+Compiled from "Krb5Util.java"
+class sun.security.jgss.wrapper.Krb5Util {
+  sun.security.jgss.wrapper.Krb5Util();
+  static java.lang.String getTGSName(sun.security.jgss.wrapper.GSSNameElement) throws org.ietf.jgss.GSSException;
+  static void checkServicePermission(java.lang.String, java.lang.String);
+}

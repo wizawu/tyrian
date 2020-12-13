@@ -1,0 +1,4 @@
+Compiled from "SSLProducer.java"
+interface sun.security.ssl.SSLProducer {
+  public abstract byte[] produce(sun.security.ssl.ConnectionContext) throws java.io.IOException;
+}

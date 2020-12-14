@@ -1,2 +1,3 @@
 /// <reference types="node" />
-export declare function runCommand(command: string, args: string[]): import("child_process").SpawnSyncReturns<Buffer>;
+import { SpawnSyncReturns } from "child_process";
+export declare function runCommand(command: string, args: string[]): SpawnSyncReturns<Buffer>;

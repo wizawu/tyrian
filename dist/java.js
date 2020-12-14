@@ -19,16 +19,16 @@ var utils_1 = require("./utils");
  */
 function javap(classPath, classList) {
     classList = classList.map(function (it) { return it.trim(); }).filter(function (v, i, a) { return v && a.indexOf(v) === i; });
-    var result = {};
+    var result = new Map();
     for (var i = 0; i < classList.length; i += 100) {
         var classes = classList.slice(i, i + 100);
         var command = utils_1.runCommand("javap", __spreadArrays(["-cp", ":" + classPath.join(":")], classes));
         if (command.stderr) {
             console.error(chalk_1.default.yellow((command.stderr || "").toString()));
         }
-        var stdout = (command.stdout || "").toString();
         // TODO parse output
-        classes.forEach(function (it) { return result[it] = ""; });
+        // const stdout = (command.stdout || "").toString()
+        classes.forEach(function (it) { return result.set(it, ""); });
     }
     return result;
 }

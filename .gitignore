@@ -1,4 +1,5 @@
 *.log
 *.swp
-_src/
+.antlr/
 node_modules/
+tmp/

@@ -5,6 +5,7 @@
   "license": "MIT",
   "bin": "bin/tyrian",
   "scripts": {
+    "antlr": "cd g4 && antlr4 -Dlanguage=JavaScript -visitor -o ../src/javap Javap.g4",
     "build": "tsc -p . -d --outDir dist",
     "watch": "tsc -p . -d --outDir dist -w",
     "test": "mocha tests/*.test.js",

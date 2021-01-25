@@ -1,4 +1,0 @@
-Compiled from "LSResourceResolver.java"
-public interface org.w3c.dom.ls.LSResourceResolver {
-  public abstract org.w3c.dom.ls.LSInput resolveResource(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
-}

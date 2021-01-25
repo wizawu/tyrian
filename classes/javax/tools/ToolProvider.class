@@ -1,7 +1,0 @@
-Compiled from "ToolProvider.java"
-public class javax.tools.ToolProvider {
-  public javax.tools.ToolProvider();
-  public static javax.tools.JavaCompiler getSystemJavaCompiler();
-  public static javax.tools.DocumentationTool getSystemDocumentationTool();
-  public static java.lang.ClassLoader getSystemToolClassLoader();
-}

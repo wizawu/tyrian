@@ -1,6 +1,0 @@
-Compiled from "HmacPKCS12PBESHA1.java"
-public final class com.sun.crypto.provider.HmacPKCS12PBESHA1 extends com.sun.crypto.provider.HmacCore {
-  public com.sun.crypto.provider.HmacPKCS12PBESHA1() throws java.security.NoSuchAlgorithmException;
-  protected void engineInit(java.security.Key, java.security.spec.AlgorithmParameterSpec) throws java.security.InvalidKeyException, java.security.InvalidAlgorithmParameterException;
-  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
-}

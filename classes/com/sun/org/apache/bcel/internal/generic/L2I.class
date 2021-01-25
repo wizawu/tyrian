@@ -1,5 +1,0 @@
-Compiled from "L2I.java"
-public class com.sun.org.apache.bcel.internal.generic.L2I extends com.sun.org.apache.bcel.internal.generic.ConversionInstruction {
-  public com.sun.org.apache.bcel.internal.generic.L2I();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

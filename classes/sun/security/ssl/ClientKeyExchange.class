@@ -1,7 +1,0 @@
-Compiled from "ClientKeyExchange.java"
-final class sun.security.ssl.ClientKeyExchange {
-  static final sun.security.ssl.SSLConsumer handshakeConsumer;
-  static final sun.security.ssl.HandshakeProducer handshakeProducer;
-  sun.security.ssl.ClientKeyExchange();
-  static {};
-}

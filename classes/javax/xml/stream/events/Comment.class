@@ -1,4 +1,0 @@
-Compiled from "Comment.java"
-public interface javax.xml.stream.events.Comment extends javax.xml.stream.events.XMLEvent {
-  public abstract java.lang.String getText();
-}

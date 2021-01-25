@@ -1,5 +1,0 @@
-Compiled from "IUSHR.java"
-public class com.sun.org.apache.bcel.internal.generic.IUSHR extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
-  public com.sun.org.apache.bcel.internal.generic.IUSHR();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

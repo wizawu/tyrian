@@ -1,7 +1,0 @@
-Compiled from "Main.java"
-public class com.sun.tools.javac.launcher.Main {
-  public static void main(java.lang.String...) throws java.lang.Throwable;
-  public com.sun.tools.javac.launcher.Main(java.io.PrintStream);
-  public com.sun.tools.javac.launcher.Main(java.io.PrintWriter);
-  public void run(java.lang.String[], java.lang.String[]) throws com.sun.tools.javac.launcher.Main$Fault, java.lang.reflect.InvocationTargetException;
-}

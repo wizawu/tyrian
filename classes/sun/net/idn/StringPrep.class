@@ -1,7 +1,0 @@
-Compiled from "StringPrep.java"
-public final class sun.net.idn.StringPrep {
-  public static final int DEFAULT;
-  public static final int ALLOW_UNASSIGNED;
-  public sun.net.idn.StringPrep(java.io.InputStream) throws java.io.IOException;
-  public java.lang.StringBuffer prepare(sun.text.normalizer.UCharacterIterator, int) throws java.text.ParseException;
-}

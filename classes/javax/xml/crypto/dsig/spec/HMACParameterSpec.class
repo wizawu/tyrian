@@ -1,5 +1,0 @@
-Compiled from "HMACParameterSpec.java"
-public final class javax.xml.crypto.dsig.spec.HMACParameterSpec implements javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec {
-  public javax.xml.crypto.dsig.spec.HMACParameterSpec(int);
-  public int getOutputLength();
-}

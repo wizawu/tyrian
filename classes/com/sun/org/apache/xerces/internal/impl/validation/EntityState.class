@@ -1,5 +1,0 @@
-Compiled from "EntityState.java"
-public interface com.sun.org.apache.xerces.internal.impl.validation.EntityState {
-  public abstract boolean isEntityDeclared(java.lang.String);
-  public abstract boolean isEntityUnparsed(java.lang.String);
-}

@@ -1,4 +1,0 @@
-Compiled from "SSLConsumer.java"
-interface sun.security.ssl.SSLConsumer {
-  public abstract void consume(sun.security.ssl.ConnectionContext, java.nio.ByteBuffer) throws java.io.IOException;
-}

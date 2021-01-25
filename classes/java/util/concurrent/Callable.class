@@ -1,4 +1,0 @@
-Compiled from "Callable.java"
-public interface java.util.concurrent.Callable<V> {
-  public abstract V call() throws java.lang.Exception;
-}

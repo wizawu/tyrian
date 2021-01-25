@@ -1,3 +1,0 @@
-Compiled from "SystemEventListener.java"
-public interface java.awt.desktop.SystemEventListener extends java.util.EventListener {
-}

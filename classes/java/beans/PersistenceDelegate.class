@@ -1,8 +1,0 @@
-Compiled from "PersistenceDelegate.java"
-public abstract class java.beans.PersistenceDelegate {
-  public java.beans.PersistenceDelegate();
-  public void writeObject(java.lang.Object, java.beans.Encoder);
-  protected boolean mutatesTo(java.lang.Object, java.lang.Object);
-  protected abstract java.beans.Expression instantiate(java.lang.Object, java.beans.Encoder);
-  protected void initialize(java.lang.Class<?>, java.lang.Object, java.lang.Object, java.beans.Encoder);
-}

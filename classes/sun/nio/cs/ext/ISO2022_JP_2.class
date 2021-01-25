@@ -1,8 +1,0 @@
-Compiled from "ISO2022_JP_2.java"
-public class sun.nio.cs.ext.ISO2022_JP_2 extends sun.nio.cs.ext.ISO2022_JP {
-  public sun.nio.cs.ext.ISO2022_JP_2();
-  public java.lang.String historicalName();
-  public boolean contains(java.nio.charset.Charset);
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public java.nio.charset.CharsetEncoder newEncoder();
-}

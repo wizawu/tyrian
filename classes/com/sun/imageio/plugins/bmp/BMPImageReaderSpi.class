@@ -1,9 +1,0 @@
-Compiled from "BMPImageReaderSpi.java"
-public class com.sun.imageio.plugins.bmp.BMPImageReaderSpi extends javax.imageio.spi.ImageReaderSpi {
-  public com.sun.imageio.plugins.bmp.BMPImageReaderSpi();
-  public void onRegistration(javax.imageio.spi.ServiceRegistry, java.lang.Class<?>);
-  public java.lang.String getDescription(java.util.Locale);
-  public boolean canDecodeInput(java.lang.Object) throws java.io.IOException;
-  public javax.imageio.ImageReader createReaderInstance(java.lang.Object) throws javax.imageio.IIOException;
-  static {};
-}

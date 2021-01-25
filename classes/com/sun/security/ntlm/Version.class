@@ -1,9 +1,0 @@
-Compiled from "Version.java"
-final class com.sun.security.ntlm.Version extends java.lang.Enum<com.sun.security.ntlm.Version> {
-  public static final com.sun.security.ntlm.Version NTLM;
-  public static final com.sun.security.ntlm.Version NTLM2;
-  public static final com.sun.security.ntlm.Version NTLMv2;
-  public static com.sun.security.ntlm.Version[] values();
-  public static com.sun.security.ntlm.Version valueOf(java.lang.String);
-  static {};
-}

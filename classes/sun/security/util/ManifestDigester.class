@@ -1,7 +1,0 @@
-Compiled from "ManifestDigester.java"
-public class sun.security.util.ManifestDigester {
-  public static final java.lang.String MF_MAIN_ATTRS;
-  public sun.security.util.ManifestDigester(byte[]);
-  public sun.security.util.ManifestDigester$Entry get(java.lang.String, boolean);
-  public byte[] manifestDigest(java.security.MessageDigest);
-}

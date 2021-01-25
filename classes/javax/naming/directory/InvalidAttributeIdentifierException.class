@@ -1,5 +1,0 @@
-Compiled from "InvalidAttributeIdentifierException.java"
-public class javax.naming.directory.InvalidAttributeIdentifierException extends javax.naming.NamingException {
-  public javax.naming.directory.InvalidAttributeIdentifierException(java.lang.String);
-  public javax.naming.directory.InvalidAttributeIdentifierException();
-}

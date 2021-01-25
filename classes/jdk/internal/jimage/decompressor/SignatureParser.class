@@ -1,5 +1,0 @@
-Compiled from "SignatureParser.java"
-public class jdk.internal.jimage.decompressor.SignatureParser {
-  public static java.lang.String reconstruct(java.lang.String, java.util.List<java.lang.String>);
-  public static jdk.internal.jimage.decompressor.SignatureParser$ParseResult parseSignatureDescriptor(java.lang.String);
-}

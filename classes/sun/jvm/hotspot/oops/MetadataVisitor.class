@@ -1,7 +1,0 @@
-Compiled from "MetadataVisitor.java"
-public interface sun.jvm.hotspot.oops.MetadataVisitor extends sun.jvm.hotspot.oops.FieldVisitor {
-  public abstract void prologue();
-  public abstract void epilogue();
-  public abstract void setObj(sun.jvm.hotspot.oops.Metadata);
-  public abstract sun.jvm.hotspot.oops.Metadata getObj();
-}

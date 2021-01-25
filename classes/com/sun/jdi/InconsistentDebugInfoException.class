@@ -1,5 +1,0 @@
-Compiled from "InconsistentDebugInfoException.java"
-public class com.sun.jdi.InconsistentDebugInfoException extends java.lang.RuntimeException {
-  public com.sun.jdi.InconsistentDebugInfoException();
-  public com.sun.jdi.InconsistentDebugInfoException(java.lang.String);
-}

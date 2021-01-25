@@ -1,4 +1,0 @@
-Compiled from "PrincipalComparator.java"
-public interface com.sun.security.auth.PrincipalComparator {
-  public abstract boolean implies(javax.security.auth.Subject);
-}

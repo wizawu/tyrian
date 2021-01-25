@@ -1,6 +1,0 @@
-Compiled from "CramMD5Client.java"
-final class com.sun.security.sasl.CramMD5Client extends com.sun.security.sasl.CramMD5Base implements javax.security.sasl.SaslClient {
-  com.sun.security.sasl.CramMD5Client(java.lang.String, byte[]) throws javax.security.sasl.SaslException;
-  public boolean hasInitialResponse();
-  public byte[] evaluateChallenge(byte[]) throws javax.security.sasl.SaslException;
-}

@@ -1,6 +1,0 @@
-Compiled from "DayTimeDurationDV.java"
-class com.sun.org.apache.xerces.internal.impl.dv.xs.DayTimeDurationDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.DurationDV {
-  com.sun.org.apache.xerces.internal.impl.dv.xs.DayTimeDurationDV();
-  public java.lang.Object getActualValue(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
-  protected javax.xml.datatype.Duration getDuration(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
-}

@@ -1,6 +1,0 @@
-Compiled from "ChaCha20ParameterSpec.java"
-public final class javax.crypto.spec.ChaCha20ParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-  public javax.crypto.spec.ChaCha20ParameterSpec(byte[], int);
-  public byte[] getNonce();
-  public int getCounter();
-}

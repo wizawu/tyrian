@@ -1,7 +1,0 @@
-Compiled from "MetalProgressBarUI.java"
-public class javax.swing.plaf.metal.MetalProgressBarUI extends javax.swing.plaf.basic.BasicProgressBarUI {
-  public javax.swing.plaf.metal.MetalProgressBarUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  public void paintDeterminate(java.awt.Graphics, javax.swing.JComponent);
-  public void paintIndeterminate(java.awt.Graphics, javax.swing.JComponent);
-}

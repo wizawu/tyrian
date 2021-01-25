@@ -1,4 +1,0 @@
-Compiled from "TableCellEditor.java"
-public interface javax.swing.table.TableCellEditor extends javax.swing.CellEditor {
-  public abstract java.awt.Component getTableCellEditorComponent(javax.swing.JTable, java.lang.Object, boolean, int, int);
-}

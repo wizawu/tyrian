@@ -1,5 +1,0 @@
-Compiled from "SPIResolutionException.java"
-public class jdk.jshell.spi.SPIResolutionException extends java.lang.RuntimeException {
-  public jdk.jshell.spi.SPIResolutionException(int);
-  public int id();
-}

@@ -1,6 +1,0 @@
-Compiled from "NamingEnumeration.java"
-public interface javax.naming.NamingEnumeration<T> extends java.util.Enumeration<T> {
-  public abstract T next() throws javax.naming.NamingException;
-  public abstract boolean hasMore() throws javax.naming.NamingException;
-  public abstract void close() throws javax.naming.NamingException;
-}

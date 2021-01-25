@@ -1,5 +1,0 @@
-Compiled from "InputMethodListener.java"
-public interface java.awt.event.InputMethodListener extends java.util.EventListener {
-  public abstract void inputMethodTextChanged(java.awt.event.InputMethodEvent);
-  public abstract void caretPositionChanged(java.awt.event.InputMethodEvent);
-}

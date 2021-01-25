@@ -1,6 +1,0 @@
-Compiled from "LookupswitchPair.java"
-public class sun.jvm.hotspot.interpreter.LookupswitchPair extends sun.jvm.hotspot.interpreter.Bytecode {
-  sun.jvm.hotspot.interpreter.LookupswitchPair(sun.jvm.hotspot.oops.Method, int);
-  public int match();
-  public int offset();
-}

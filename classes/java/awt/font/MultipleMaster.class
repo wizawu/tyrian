@@ -1,9 +1,0 @@
-Compiled from "MultipleMaster.java"
-public interface java.awt.font.MultipleMaster {
-  public abstract int getNumDesignAxes();
-  public abstract float[] getDesignAxisRanges();
-  public abstract float[] getDesignAxisDefaults();
-  public abstract java.lang.String[] getDesignAxisNames();
-  public abstract java.awt.Font deriveMMFont(float[]);
-  public abstract java.awt.Font deriveMMFont(float[], float, float, float, float);
-}

@@ -1,6 +1,0 @@
-Compiled from "Operation.java"
-public class java.rmi.server.Operation {
-  public java.rmi.server.Operation(java.lang.String);
-  public java.lang.String getOperation();
-  public java.lang.String toString();
-}

@@ -1,5 +1,0 @@
-Compiled from "ProvidesTree.java"
-public interface com.sun.source.doctree.ProvidesTree extends com.sun.source.doctree.BlockTagTree {
-  public abstract com.sun.source.doctree.ReferenceTree getServiceType();
-  public abstract java.util.List<? extends com.sun.source.doctree.DocTree> getDescription();
-}

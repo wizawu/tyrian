@@ -1,8 +1,0 @@
-Compiled from "LinuxAsynchronousChannelProvider.java"
-public class sun.nio.ch.LinuxAsynchronousChannelProvider extends java.nio.channels.spi.AsynchronousChannelProvider {
-  public sun.nio.ch.LinuxAsynchronousChannelProvider();
-  public java.nio.channels.AsynchronousChannelGroup openAsynchronousChannelGroup(int, java.util.concurrent.ThreadFactory) throws java.io.IOException;
-  public java.nio.channels.AsynchronousChannelGroup openAsynchronousChannelGroup(java.util.concurrent.ExecutorService, int) throws java.io.IOException;
-  public java.nio.channels.AsynchronousServerSocketChannel openAsynchronousServerSocketChannel(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException;
-  public java.nio.channels.AsynchronousSocketChannel openAsynchronousSocketChannel(java.nio.channels.AsynchronousChannelGroup) throws java.io.IOException;
-}

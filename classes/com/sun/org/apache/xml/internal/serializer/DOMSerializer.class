@@ -1,4 +1,0 @@
-Compiled from "DOMSerializer.java"
-public interface com.sun.org.apache.xml.internal.serializer.DOMSerializer {
-  public abstract void serialize(org.w3c.dom.Node) throws java.io.IOException;
-}

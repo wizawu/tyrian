@@ -1,7 +1,0 @@
-Compiled from "ModuleInfoWriter.java"
-public final class jdk.internal.module.ModuleInfoWriter {
-  public static void write(java.lang.module.ModuleDescriptor, jdk.internal.module.ModuleTarget, java.io.OutputStream) throws java.io.IOException;
-  public static void write(java.lang.module.ModuleDescriptor, java.io.OutputStream) throws java.io.IOException;
-  public static java.nio.ByteBuffer toByteBuffer(java.lang.module.ModuleDescriptor);
-  static {};
-}

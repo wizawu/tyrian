@@ -1,4 +1,0 @@
-Compiled from "OffsetTableContigSpace.java"
-public class sun.jvm.hotspot.gc.shared.OffsetTableContigSpace extends sun.jvm.hotspot.gc.shared.ContiguousSpace {
-  public sun.jvm.hotspot.gc.shared.OffsetTableContigSpace(sun.jvm.hotspot.debugger.Address);
-}

@@ -1,5 +1,0 @@
-Compiled from "FormatData_en_ZA.java"
-public class sun.text.resources.ext.FormatData_en_ZA extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_en_ZA();
-  protected final java.lang.Object[][] getContents();
-}

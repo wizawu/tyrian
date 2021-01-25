@@ -1,8 +1,0 @@
-Compiled from "ArrayType.java"
-public final class sun.tools.java.ArrayType extends sun.tools.java.Type {
-  sun.tools.java.Type elemType;
-  sun.tools.java.ArrayType(java.lang.String, sun.tools.java.Type);
-  public sun.tools.java.Type getElementType();
-  public int getArrayDimension();
-  public java.lang.String typeString(java.lang.String, boolean, boolean);
-}

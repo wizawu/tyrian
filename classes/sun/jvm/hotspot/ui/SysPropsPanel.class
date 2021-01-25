@@ -1,4 +1,0 @@
-Compiled from "SysPropsPanel.java"
-public class sun.jvm.hotspot.ui.SysPropsPanel extends javax.swing.JPanel {
-  public sun.jvm.hotspot.ui.SysPropsPanel();
-}

@@ -1,7 +1,0 @@
-Compiled from "CellTypeStateList.java"
-public class sun.jvm.hotspot.oops.CellTypeStateList {
-  public sun.jvm.hotspot.oops.CellTypeStateList(int);
-  public int size();
-  public sun.jvm.hotspot.oops.CellTypeState get(int);
-  public sun.jvm.hotspot.oops.CellTypeStateList subList(int, int);
-}

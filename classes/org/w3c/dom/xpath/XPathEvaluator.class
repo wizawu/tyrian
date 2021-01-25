@@ -1,6 +1,0 @@
-Compiled from "XPathEvaluator.java"
-public interface org.w3c.dom.xpath.XPathEvaluator {
-  public abstract org.w3c.dom.xpath.XPathExpression createExpression(java.lang.String, org.w3c.dom.xpath.XPathNSResolver) throws org.w3c.dom.xpath.XPathException, org.w3c.dom.DOMException;
-  public abstract org.w3c.dom.xpath.XPathNSResolver createNSResolver(org.w3c.dom.Node);
-  public abstract java.lang.Object evaluate(java.lang.String, org.w3c.dom.Node, org.w3c.dom.xpath.XPathNSResolver, short, java.lang.Object) throws org.w3c.dom.xpath.XPathException, org.w3c.dom.DOMException;
-}

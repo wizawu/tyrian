@@ -1,7 +1,0 @@
-Compiled from "MetalPopupMenuSeparatorUI.java"
-public class javax.swing.plaf.metal.MetalPopupMenuSeparatorUI extends javax.swing.plaf.metal.MetalSeparatorUI {
-  public javax.swing.plaf.metal.MetalPopupMenuSeparatorUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  public void paint(java.awt.Graphics, javax.swing.JComponent);
-  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
-}

@@ -1,7 +1,0 @@
-Compiled from "JceSecurityManager.java"
-final class javax.crypto.JceSecurityManager extends java.lang.SecurityManager {
-  static final javax.crypto.JceSecurityManager INSTANCE;
-  javax.crypto.CryptoPermission getCryptoPermission(java.lang.String);
-  boolean isCallerTrusted(java.security.Provider);
-  static {};
-}

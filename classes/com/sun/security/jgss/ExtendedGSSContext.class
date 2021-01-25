@@ -1,6 +1,0 @@
-Compiled from "ExtendedGSSContext.java"
-public interface com.sun.security.jgss.ExtendedGSSContext extends org.ietf.jgss.GSSContext {
-  public abstract java.lang.Object inquireSecContext(com.sun.security.jgss.InquireType) throws org.ietf.jgss.GSSException;
-  public abstract void requestDelegPolicy(boolean) throws org.ietf.jgss.GSSException;
-  public abstract boolean getDelegPolicyState();
-}

@@ -1,9 +1,0 @@
-Compiled from "SealedArrayFilter.java"
-class jdk.nashorn.internal.runtime.arrays.SealedArrayFilter extends jdk.nashorn.internal.runtime.arrays.ArrayFilter {
-  jdk.nashorn.internal.runtime.arrays.SealedArrayFilter(jdk.nashorn.internal.runtime.arrays.ArrayData);
-  public jdk.nashorn.internal.runtime.arrays.ArrayData copy();
-  public jdk.nashorn.internal.runtime.arrays.ArrayData slice(long, long);
-  public boolean canDelete(int, boolean);
-  public boolean canDelete(long, boolean);
-  public jdk.nashorn.internal.runtime.PropertyDescriptor getDescriptor(jdk.nashorn.internal.objects.Global, int);
-}

@@ -1,7 +1,0 @@
-final class jdk.internal.module.SystemModulesMap {
-  jdk.internal.module.SystemModulesMap();
-  static jdk.internal.module.SystemModules allSystemModules();
-  static jdk.internal.module.SystemModules defaultSystemModules();
-  static java.lang.String[] moduleNames();
-  static java.lang.String[] classNames();
-}

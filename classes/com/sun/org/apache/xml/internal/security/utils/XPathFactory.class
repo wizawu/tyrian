@@ -1,8 +1,0 @@
-Compiled from "XPathFactory.java"
-public abstract class com.sun.org.apache.xml.internal.security.utils.XPathFactory {
-  public com.sun.org.apache.xml.internal.security.utils.XPathFactory();
-  protected static synchronized boolean isXalanInstalled();
-  public static com.sun.org.apache.xml.internal.security.utils.XPathFactory newInstance();
-  public abstract com.sun.org.apache.xml.internal.security.utils.XPathAPI newXPathAPI();
-  static {};
-}

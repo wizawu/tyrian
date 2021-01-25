@@ -1,9 +1,0 @@
-Compiled from "MBeanPermission.java"
-public class javax.management.MBeanPermission extends java.security.Permission {
-  public javax.management.MBeanPermission(java.lang.String, java.lang.String);
-  public javax.management.MBeanPermission(java.lang.String, java.lang.String, javax.management.ObjectName, java.lang.String);
-  public java.lang.String getActions();
-  public int hashCode();
-  public boolean implies(java.security.Permission);
-  public boolean equals(java.lang.Object);
-}

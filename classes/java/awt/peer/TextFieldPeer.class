@@ -1,6 +1,0 @@
-Compiled from "TextFieldPeer.java"
-public interface java.awt.peer.TextFieldPeer extends java.awt.peer.TextComponentPeer {
-  public abstract void setEchoChar(char);
-  public abstract java.awt.Dimension getPreferredSize(int);
-  public abstract java.awt.Dimension getMinimumSize(int);
-}

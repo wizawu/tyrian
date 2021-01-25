@@ -1,4 +1,0 @@
-Compiled from "RawCharacterHandler.java"
-public interface com.sun.org.apache.xml.internal.utils.RawCharacterHandler {
-  public abstract void charactersRaw(char[], int, int) throws javax.xml.transform.TransformerException;
-}

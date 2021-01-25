@@ -1,8 +1,0 @@
-Compiled from "SynthRadioButtonMenuItemUI.java"
-public class javax.swing.plaf.synth.SynthRadioButtonMenuItemUI extends javax.swing.plaf.synth.SynthMenuItemUI {
-  public javax.swing.plaf.synth.SynthRadioButtonMenuItemUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  protected java.lang.String getPropertyPrefix();
-  void paintBackground(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, javax.swing.JComponent);
-  public void paintBorder(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
-}

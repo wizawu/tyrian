@@ -1,6 +1,0 @@
-Compiled from "AssociationChangeNotification.java"
-public abstract class com.sun.nio.sctp.AssociationChangeNotification implements com.sun.nio.sctp.Notification {
-  protected com.sun.nio.sctp.AssociationChangeNotification();
-  public abstract com.sun.nio.sctp.Association association();
-  public abstract com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent event();
-}

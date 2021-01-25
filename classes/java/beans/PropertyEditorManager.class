@@ -1,8 +1,0 @@
-Compiled from "PropertyEditorManager.java"
-public class java.beans.PropertyEditorManager {
-  public java.beans.PropertyEditorManager();
-  public static void registerEditor(java.lang.Class<?>, java.lang.Class<?>);
-  public static java.beans.PropertyEditor findEditor(java.lang.Class<?>);
-  public static java.lang.String[] getEditorSearchPath();
-  public static void setEditorSearchPath(java.lang.String[]);
-}

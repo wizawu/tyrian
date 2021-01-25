@@ -1,4 +1,0 @@
-Compiled from "Terminable.java"
-public interface com.sun.tools.sjavac.server.Terminable {
-  public abstract void shutdown(java.lang.String);
-}

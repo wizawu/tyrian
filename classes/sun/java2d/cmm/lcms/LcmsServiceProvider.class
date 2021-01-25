@@ -1,5 +1,0 @@
-Compiled from "LcmsServiceProvider.java"
-public final class sun.java2d.cmm.lcms.LcmsServiceProvider extends sun.java2d.cmm.CMMServiceProvider {
-  public sun.java2d.cmm.lcms.LcmsServiceProvider();
-  protected sun.java2d.cmm.PCMM getModule();
-}

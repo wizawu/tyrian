@@ -1,6 +1,0 @@
-Compiled from "CIntegerType.java"
-public interface sun.jvm.hotspot.types.CIntegerType extends sun.jvm.hotspot.types.Type {
-  public abstract boolean isUnsigned();
-  public abstract long maxValue();
-  public abstract long minValue();
-}

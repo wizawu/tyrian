@@ -1,6 +1,0 @@
-Compiled from "PipeImpl.java"
-class sun.nio.ch.PipeImpl extends java.nio.channels.Pipe {
-  sun.nio.ch.PipeImpl(java.nio.channels.spi.SelectorProvider) throws java.io.IOException;
-  public java.nio.channels.Pipe$SourceChannel source();
-  public java.nio.channels.Pipe$SinkChannel sink();
-}

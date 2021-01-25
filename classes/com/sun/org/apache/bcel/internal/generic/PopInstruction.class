@@ -1,3 +1,0 @@
-Compiled from "PopInstruction.java"
-public interface com.sun.org.apache.bcel.internal.generic.PopInstruction extends com.sun.org.apache.bcel.internal.generic.StackConsumer {
-}

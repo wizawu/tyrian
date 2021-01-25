@@ -1,6 +1,0 @@
-Compiled from "ReentrantContext.java"
-public class sun.java2d.ReentrantContext {
-  byte usage;
-  java.lang.ref.Reference<? extends sun.java2d.ReentrantContext> reference;
-  public sun.java2d.ReentrantContext();
-}

@@ -1,5 +1,0 @@
-Compiled from "MethodAccessorImpl.java"
-abstract class jdk.internal.reflect.MethodAccessorImpl extends jdk.internal.reflect.MagicAccessorImpl implements jdk.internal.reflect.MethodAccessor {
-  jdk.internal.reflect.MethodAccessorImpl();
-  public abstract java.lang.Object invoke(java.lang.Object, java.lang.Object[]) throws java.lang.IllegalArgumentException, java.lang.reflect.InvocationTargetException;
-}

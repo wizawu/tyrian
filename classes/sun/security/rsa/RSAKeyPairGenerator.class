@@ -1,7 +1,0 @@
-Compiled from "RSAKeyPairGenerator.java"
-public abstract class sun.security.rsa.RSAKeyPairGenerator extends java.security.KeyPairGeneratorSpi {
-  sun.security.rsa.RSAKeyPairGenerator(sun.security.rsa.RSAUtil$KeyType, int);
-  public void initialize(int, java.security.SecureRandom);
-  public void initialize(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
-  public java.security.KeyPair generateKeyPair();
-}

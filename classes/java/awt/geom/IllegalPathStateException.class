@@ -1,5 +1,0 @@
-Compiled from "IllegalPathStateException.java"
-public class java.awt.geom.IllegalPathStateException extends java.lang.RuntimeException {
-  public java.awt.geom.IllegalPathStateException();
-  public java.awt.geom.IllegalPathStateException(java.lang.String);
-}

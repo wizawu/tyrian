@@ -1,4 +1,0 @@
-Compiled from "SourceLoader.java"
-public interface com.sun.org.apache.xalan.internal.xsltc.compiler.SourceLoader {
-  public abstract org.xml.sax.InputSource loadSource(java.lang.String, java.lang.String, com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC);
-}

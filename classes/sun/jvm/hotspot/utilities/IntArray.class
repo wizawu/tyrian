@@ -1,8 +1,0 @@
-Compiled from "IntArray.java"
-public class sun.jvm.hotspot.utilities.IntArray extends sun.jvm.hotspot.utilities.GenericArray {
-  protected static sun.jvm.hotspot.types.Type elemType;
-  public sun.jvm.hotspot.utilities.IntArray(sun.jvm.hotspot.debugger.Address);
-  public int at(int);
-  public sun.jvm.hotspot.types.Type getElemType();
-  static {};
-}

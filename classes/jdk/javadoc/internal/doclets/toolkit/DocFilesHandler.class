@@ -1,4 +1,0 @@
-Compiled from "DocFilesHandler.java"
-public interface jdk.javadoc.internal.doclets.toolkit.DocFilesHandler {
-  public abstract void copyDocFiles() throws jdk.javadoc.internal.doclets.toolkit.DocletException;
-}

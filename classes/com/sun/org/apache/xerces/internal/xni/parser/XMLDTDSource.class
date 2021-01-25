@@ -1,5 +1,0 @@
-Compiled from "XMLDTDSource.java"
-public interface com.sun.org.apache.xerces.internal.xni.parser.XMLDTDSource {
-  public abstract void setDTDHandler(com.sun.org.apache.xerces.internal.xni.XMLDTDHandler);
-  public abstract com.sun.org.apache.xerces.internal.xni.XMLDTDHandler getDTDHandler();
-}

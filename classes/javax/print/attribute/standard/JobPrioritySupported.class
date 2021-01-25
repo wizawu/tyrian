@@ -1,7 +1,0 @@
-Compiled from "JobPrioritySupported.java"
-public final class javax.print.attribute.standard.JobPrioritySupported extends javax.print.attribute.IntegerSyntax implements javax.print.attribute.SupportedValuesAttribute {
-  public javax.print.attribute.standard.JobPrioritySupported(int);
-  public boolean equals(java.lang.Object);
-  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
-  public final java.lang.String getName();
-}

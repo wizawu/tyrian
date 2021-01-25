@@ -1,7 +1,0 @@
-Compiled from "XSObject.java"
-public interface com.sun.org.apache.xerces.internal.xs.XSObject {
-  public abstract short getType();
-  public abstract java.lang.String getName();
-  public abstract java.lang.String getNamespace();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSNamespaceItem getNamespaceItem();
-}

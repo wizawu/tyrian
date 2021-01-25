@@ -1,5 +1,0 @@
-Compiled from "XMLEntityHandler.java"
-public interface com.sun.org.apache.xerces.internal.impl.XMLEntityHandler {
-  public abstract void startEntity(java.lang.String, com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier, java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws com.sun.org.apache.xerces.internal.xni.XNIException;
-  public abstract void endEntity(java.lang.String, com.sun.org.apache.xerces.internal.xni.Augmentations) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
-}

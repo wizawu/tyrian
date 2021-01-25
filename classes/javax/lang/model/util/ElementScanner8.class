@@ -1,5 +1,0 @@
-Compiled from "ElementScanner8.java"
-public class javax.lang.model.util.ElementScanner8<R, P> extends javax.lang.model.util.ElementScanner7<R, P> {
-  protected javax.lang.model.util.ElementScanner8();
-  protected javax.lang.model.util.ElementScanner8(R);
-}

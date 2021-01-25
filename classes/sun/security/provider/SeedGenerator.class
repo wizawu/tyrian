@@ -1,8 +1,0 @@
-Compiled from "SeedGenerator.java"
-abstract class sun.security.provider.SeedGenerator {
-  sun.security.provider.SeedGenerator();
-  public static void generateSeed(byte[]);
-  abstract void getSeedBytes(byte[]);
-  static byte[] getSystemEntropy();
-  static {};
-}

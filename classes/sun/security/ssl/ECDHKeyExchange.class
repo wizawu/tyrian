@@ -1,8 +1,0 @@
-Compiled from "ECDHKeyExchange.java"
-final class sun.security.ssl.ECDHKeyExchange {
-  static final sun.security.ssl.SSLPossessionGenerator poGenerator;
-  static final sun.security.ssl.SSLKeyAgreementGenerator ecdheKAGenerator;
-  static final sun.security.ssl.SSLKeyAgreementGenerator ecdhKAGenerator;
-  sun.security.ssl.ECDHKeyExchange();
-  static {};
-}

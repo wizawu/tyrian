@@ -1,5 +1,0 @@
-Compiled from "Sjavac.java"
-public interface com.sun.tools.sjavac.server.Sjavac {
-  public abstract com.sun.tools.javac.main.Main$Result compile(java.lang.String[]);
-  public abstract void shutdown();
-}

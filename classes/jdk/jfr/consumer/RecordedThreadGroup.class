@@ -1,6 +1,0 @@
-Compiled from "RecordedThreadGroup.java"
-public final class jdk.jfr.consumer.RecordedThreadGroup extends jdk.jfr.consumer.RecordedObject {
-  static jdk.jfr.consumer.ObjectFactory<jdk.jfr.consumer.RecordedThreadGroup> createFactory(jdk.jfr.internal.Type, jdk.jfr.consumer.TimeConverter);
-  public java.lang.String getName();
-  public jdk.jfr.consumer.RecordedThreadGroup getParent();
-}

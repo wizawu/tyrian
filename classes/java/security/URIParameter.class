@@ -1,5 +1,0 @@
-Compiled from "URIParameter.java"
-public class java.security.URIParameter implements java.security.Policy$Parameters,javax.security.auth.login.Configuration$Parameters {
-  public java.security.URIParameter(java.net.URI);
-  public java.net.URI getURI();
-}

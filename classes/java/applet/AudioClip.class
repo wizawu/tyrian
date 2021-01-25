@@ -1,6 +1,0 @@
-Compiled from "AudioClip.java"
-public interface java.applet.AudioClip {
-  public abstract void play();
-  public abstract void loop();
-  public abstract void stop();
-}

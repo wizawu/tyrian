@@ -1,8 +1,0 @@
-Compiled from "WatchKey.java"
-public interface java.nio.file.WatchKey {
-  public abstract boolean isValid();
-  public abstract java.util.List<java.nio.file.WatchEvent<?>> pollEvents();
-  public abstract boolean reset();
-  public abstract void cancel();
-  public abstract java.nio.file.Watchable watchable();
-}

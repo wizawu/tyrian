@@ -1,8 +1,0 @@
-Compiled from "MethodInfo.java"
-public class sun.management.MethodInfo implements java.io.Serializable {
-  sun.management.MethodInfo(java.lang.String, long, int);
-  public java.lang.String getName();
-  public long getType();
-  public int getCompileSize();
-  public java.lang.String toString();
-}

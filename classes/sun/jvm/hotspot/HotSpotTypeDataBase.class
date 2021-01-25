@@ -1,9 +1,0 @@
-Compiled from "HotSpotTypeDataBase.java"
-public class sun.jvm.hotspot.HotSpotTypeDataBase extends sun.jvm.hotspot.types.basic.BasicTypeDataBase {
-  public sun.jvm.hotspot.HotSpotTypeDataBase(sun.jvm.hotspot.debugger.MachineDescription, sun.jvm.hotspot.types.basic.VtblAccess, sun.jvm.hotspot.debugger.Debugger, java.lang.String[]) throws sun.jvm.hotspot.debugger.NoSuchSymbolException;
-  public sun.jvm.hotspot.types.Type lookupType(java.lang.String, boolean);
-  public void createType(java.lang.String, java.lang.String, boolean, boolean, boolean, long);
-  public void createField(sun.jvm.hotspot.types.basic.BasicType, java.lang.String, sun.jvm.hotspot.types.Type, boolean, long, sun.jvm.hotspot.debugger.Address);
-  sun.jvm.hotspot.types.Field internalCreateField(sun.jvm.hotspot.types.basic.BasicType, java.lang.String, sun.jvm.hotspot.types.Type, boolean, long, sun.jvm.hotspot.debugger.Address);
-  static {};
-}

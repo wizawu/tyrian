@@ -1,5 +1,0 @@
-Compiled from "AccelTypedVolatileImage.java"
-public class sun.java2d.pipe.hw.AccelTypedVolatileImage extends sun.awt.image.SunVolatileImage {
-  public sun.java2d.pipe.hw.AccelTypedVolatileImage(java.awt.GraphicsConfiguration, int, int, int, int);
-  public java.awt.Graphics2D createGraphics();
-}

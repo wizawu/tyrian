@@ -1,3 +1,0 @@
-Compiled from "NullType.java"
-public interface javax.lang.model.type.NullType extends javax.lang.model.type.ReferenceType {
-}

@@ -1,8 +1,0 @@
-Compiled from "CollatorUtilities.java"
-public class sun.text.CollatorUtilities {
-  static sun.text.normalizer.NormalizerBase$Mode[] legacyModeMap;
-  public sun.text.CollatorUtilities();
-  public static int toLegacyMode(sun.text.normalizer.NormalizerBase$Mode);
-  public static sun.text.normalizer.NormalizerBase$Mode toNormalizerMode(int);
-  static {};
-}

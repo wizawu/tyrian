@@ -1,4 +1,0 @@
-Compiled from "StripFilter.java"
-public interface com.sun.org.apache.xalan.internal.xsltc.StripFilter {
-  public abstract boolean stripSpace(com.sun.org.apache.xalan.internal.xsltc.DOM, int, int);
-}

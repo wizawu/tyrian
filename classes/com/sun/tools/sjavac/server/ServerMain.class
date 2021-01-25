@@ -1,6 +1,0 @@
-Compiled from "ServerMain.java"
-public class com.sun.tools.sjavac.server.ServerMain {
-  public com.sun.tools.sjavac.server.ServerMain();
-  public static int run(java.lang.String[]);
-  public static com.sun.tools.sjavac.server.log.LazyInitFileLog getErrorLog();
-}

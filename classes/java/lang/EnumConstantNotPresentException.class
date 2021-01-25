@@ -1,6 +1,0 @@
-Compiled from "EnumConstantNotPresentException.java"
-public class java.lang.EnumConstantNotPresentException extends java.lang.RuntimeException {
-  public java.lang.EnumConstantNotPresentException(java.lang.Class<? extends java.lang.Enum>, java.lang.String);
-  public java.lang.Class<? extends java.lang.Enum> enumType();
-  public java.lang.String constantName();
-}

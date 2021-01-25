@@ -1,6 +1,0 @@
-Compiled from "NTSidPrimaryGroupPrincipal.java"
-public class com.sun.security.auth.NTSidPrimaryGroupPrincipal extends com.sun.security.auth.NTSid {
-  public com.sun.security.auth.NTSidPrimaryGroupPrincipal(java.lang.String);
-  public java.lang.String toString();
-  public boolean equals(java.lang.Object);
-}

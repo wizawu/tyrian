@@ -1,6 +1,0 @@
-Compiled from "EditPadProvider.java"
-public class jdk.editpad.EditPadProvider implements jdk.internal.editor.spi.BuildInEditorProvider {
-  public jdk.editpad.EditPadProvider();
-  public int rank();
-  public void edit(java.lang.String, java.lang.String, java.util.function.Consumer<java.lang.String>, java.util.function.Consumer<java.lang.String>);
-}

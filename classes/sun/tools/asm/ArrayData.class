@@ -1,6 +1,0 @@
-Compiled from "ArrayData.java"
-public final class sun.tools.asm.ArrayData {
-  sun.tools.java.Type type;
-  int nargs;
-  public sun.tools.asm.ArrayData(sun.tools.java.Type, int);
-}

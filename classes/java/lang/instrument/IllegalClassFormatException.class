@@ -1,5 +1,0 @@
-Compiled from "IllegalClassFormatException.java"
-public class java.lang.instrument.IllegalClassFormatException extends java.lang.Exception {
-  public java.lang.instrument.IllegalClassFormatException();
-  public java.lang.instrument.IllegalClassFormatException(java.lang.String);
-}

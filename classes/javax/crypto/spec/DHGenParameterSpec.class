@@ -1,6 +1,0 @@
-Compiled from "DHGenParameterSpec.java"
-public class javax.crypto.spec.DHGenParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-  public javax.crypto.spec.DHGenParameterSpec(int, int);
-  public int getPrimeSize();
-  public int getExponentSize();
-}

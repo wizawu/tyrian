@@ -1,6 +1,0 @@
-Compiled from "Canonicalizer20010315OmitComments.java"
-public class com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315OmitComments extends com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315 {
-  public com.sun.org.apache.xml.internal.security.c14n.implementations.Canonicalizer20010315OmitComments();
-  public final java.lang.String engineGetURI();
-  public final boolean engineGetIncludeComments();
-}

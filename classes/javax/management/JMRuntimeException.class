@@ -1,6 +1,0 @@
-Compiled from "JMRuntimeException.java"
-public class javax.management.JMRuntimeException extends java.lang.RuntimeException {
-  public javax.management.JMRuntimeException();
-  public javax.management.JMRuntimeException(java.lang.String);
-  javax.management.JMRuntimeException(java.lang.String, java.lang.Throwable);
-}

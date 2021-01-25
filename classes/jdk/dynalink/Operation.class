@@ -1,6 +1,0 @@
-Compiled from "Operation.java"
-public interface jdk.dynalink.Operation {
-  public default jdk.dynalink.NamespaceOperation withNamespace(jdk.dynalink.Namespace);
-  public default jdk.dynalink.NamespaceOperation withNamespaces(jdk.dynalink.Namespace...);
-  public default jdk.dynalink.NamedOperation named(java.lang.Object);
-}

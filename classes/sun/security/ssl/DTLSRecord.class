@@ -1,9 +1,0 @@
-Compiled from "DTLSRecord.java"
-interface sun.security.ssl.DTLSRecord extends sun.security.ssl.Record {
-  public static final int headerSize;
-  public static final int handshakeHeaderSize;
-  public static final int headerPlusMaxIVSize;
-  public static final int maxPlaintextPlusSize;
-  public static final int maxRecordSize;
-  public static final int minCertPlaintextSize;
-}

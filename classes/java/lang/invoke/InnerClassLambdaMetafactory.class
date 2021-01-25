@@ -1,9 +1,0 @@
-Compiled from "InnerClassLambdaMetafactory.java"
-final class java.lang.invoke.InnerClassLambdaMetafactory extends java.lang.invoke.AbstractValidatingLambdaMetafactory {
-  public java.lang.invoke.InnerClassLambdaMetafactory(java.lang.invoke.MethodHandles$Lookup, java.lang.invoke.MethodType, java.lang.String, java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, java.lang.invoke.MethodType, boolean, java.lang.Class<?>[], java.lang.invoke.MethodType[]) throws java.lang.invoke.LambdaConversionException;
-  java.lang.invoke.CallSite buildCallSite() throws java.lang.invoke.LambdaConversionException;
-  static int getParameterSize(java.lang.Class<?>);
-  static int getLoadOpcode(java.lang.Class<?>);
-  static int getReturnOpcode(java.lang.Class<?>);
-  static {};
-}

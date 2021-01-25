@@ -1,9 +1,0 @@
-Compiled from "MethodHandleProxies.java"
-public class java.lang.invoke.MethodHandleProxies {
-  static final boolean $assertionsDisabled;
-  public static <T> T asInterfaceInstance(java.lang.Class<T>, java.lang.invoke.MethodHandle);
-  public static boolean isWrapperInstance(java.lang.Object);
-  public static java.lang.invoke.MethodHandle wrapperInstanceTarget(java.lang.Object);
-  public static java.lang.Class<?> wrapperInstanceType(java.lang.Object);
-  static {};
-}

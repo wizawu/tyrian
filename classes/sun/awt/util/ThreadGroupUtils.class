@@ -1,4 +1,0 @@
-Compiled from "ThreadGroupUtils.java"
-public final class sun.awt.util.ThreadGroupUtils {
-  public static java.lang.ThreadGroup getRootThreadGroup();
-}

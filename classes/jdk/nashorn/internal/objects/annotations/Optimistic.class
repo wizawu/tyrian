@@ -1,3 +1,0 @@
-Compiled from "Optimistic.java"
-public interface jdk.nashorn.internal.objects.annotations.Optimistic extends java.lang.annotation.Annotation {
-}

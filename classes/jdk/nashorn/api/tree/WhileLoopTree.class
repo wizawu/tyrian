@@ -1,5 +1,0 @@
-Compiled from "WhileLoopTree.java"
-public interface jdk.nashorn.api.tree.WhileLoopTree extends jdk.nashorn.api.tree.ConditionalLoopTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getCondition();
-  public abstract jdk.nashorn.api.tree.StatementTree getStatement();
-}

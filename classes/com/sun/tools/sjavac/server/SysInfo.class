@@ -1,7 +1,0 @@
-Compiled from "SysInfo.java"
-public class com.sun.tools.sjavac.server.SysInfo implements java.io.Serializable {
-  static final long serialVersionUID;
-  public int numCores;
-  public long maxMemory;
-  public com.sun.tools.sjavac.server.SysInfo(int, long);
-}

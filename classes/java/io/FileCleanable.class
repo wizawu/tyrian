@@ -1,7 +1,0 @@
-Compiled from "FileCleanable.java"
-final class java.io.FileCleanable extends jdk.internal.ref.PhantomCleanable<java.io.FileDescriptor> {
-  static void register(java.io.FileDescriptor);
-  static void unregister(java.io.FileDescriptor);
-  protected void performCleanup();
-  static {};
-}

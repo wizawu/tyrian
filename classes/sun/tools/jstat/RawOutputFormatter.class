@@ -1,6 +1,0 @@
-Compiled from "RawOutputFormatter.java"
-public class sun.tools.jstat.RawOutputFormatter implements sun.tools.jstat.OutputFormatter {
-  public sun.tools.jstat.RawOutputFormatter(java.util.List<sun.jvmstat.monitor.Monitor>, boolean);
-  public java.lang.String getHeader() throws sun.jvmstat.monitor.MonitorException;
-  public java.lang.String getRow() throws sun.jvmstat.monitor.MonitorException;
-}

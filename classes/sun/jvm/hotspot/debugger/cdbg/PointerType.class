@@ -1,4 +1,0 @@
-Compiled from "PointerType.java"
-public interface sun.jvm.hotspot.debugger.cdbg.PointerType extends sun.jvm.hotspot.debugger.cdbg.Type {
-  public abstract sun.jvm.hotspot.debugger.cdbg.Type getTargetType();
-}

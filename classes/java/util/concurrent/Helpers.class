@@ -1,6 +1,0 @@
-Compiled from "Helpers.java"
-class java.util.concurrent.Helpers {
-  static java.lang.String collectionToString(java.util.Collection<?>);
-  static java.lang.String toString(java.lang.Object[], int, int);
-  static java.lang.String mapEntryToString(java.lang.Object, java.lang.Object);
-}

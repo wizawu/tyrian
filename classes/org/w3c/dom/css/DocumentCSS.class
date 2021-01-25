@@ -1,4 +1,0 @@
-Compiled from "DocumentCSS.java"
-public interface org.w3c.dom.css.DocumentCSS extends org.w3c.dom.stylesheets.DocumentStyle {
-  public abstract org.w3c.dom.css.CSSStyleDeclaration getOverrideStyle(org.w3c.dom.Element, java.lang.String);
-}

@@ -1,6 +1,0 @@
-Compiled from "VirtualMachineManagerService.java"
-public interface com.sun.tools.jdi.VirtualMachineManagerService extends com.sun.jdi.VirtualMachineManager {
-  public abstract void setDefaultConnector(com.sun.jdi.connect.LaunchingConnector);
-  public abstract void addConnector(com.sun.jdi.connect.Connector);
-  public abstract void removeConnector(com.sun.jdi.connect.Connector);
-}

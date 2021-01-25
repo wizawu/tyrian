@@ -1,5 +1,0 @@
-Compiled from "ShapeDrawPipe.java"
-public interface sun.java2d.pipe.ShapeDrawPipe {
-  public abstract void draw(sun.java2d.SunGraphics2D, java.awt.Shape);
-  public abstract void fill(sun.java2d.SunGraphics2D, java.awt.Shape);
-}

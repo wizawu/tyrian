@@ -1,5 +1,0 @@
-Compiled from "InvalidRequestStateException.java"
-public class com.sun.jdi.request.InvalidRequestStateException extends java.lang.RuntimeException {
-  public com.sun.jdi.request.InvalidRequestStateException();
-  public com.sun.jdi.request.InvalidRequestStateException(java.lang.String);
-}

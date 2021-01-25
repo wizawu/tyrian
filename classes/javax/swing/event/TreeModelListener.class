@@ -1,7 +1,0 @@
-Compiled from "TreeModelListener.java"
-public interface javax.swing.event.TreeModelListener extends java.util.EventListener {
-  public abstract void treeNodesChanged(javax.swing.event.TreeModelEvent);
-  public abstract void treeNodesInserted(javax.swing.event.TreeModelEvent);
-  public abstract void treeNodesRemoved(javax.swing.event.TreeModelEvent);
-  public abstract void treeStructureChanged(javax.swing.event.TreeModelEvent);
-}

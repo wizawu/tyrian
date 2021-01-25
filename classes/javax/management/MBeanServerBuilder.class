@@ -1,6 +1,0 @@
-Compiled from "MBeanServerBuilder.java"
-public class javax.management.MBeanServerBuilder {
-  public javax.management.MBeanServerBuilder();
-  public javax.management.MBeanServerDelegate newMBeanServerDelegate();
-  public javax.management.MBeanServer newMBeanServer(java.lang.String, javax.management.MBeanServer, javax.management.MBeanServerDelegate);
-}

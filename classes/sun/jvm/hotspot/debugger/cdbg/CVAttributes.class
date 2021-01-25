@@ -1,5 +1,0 @@
-Compiled from "CVAttributes.java"
-public interface sun.jvm.hotspot.debugger.cdbg.CVAttributes {
-  public static final int CONST;
-  public static final int VOLATILE;
-}

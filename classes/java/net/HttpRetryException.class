@@ -1,8 +1,0 @@
-Compiled from "HttpRetryException.java"
-public class java.net.HttpRetryException extends java.io.IOException {
-  public java.net.HttpRetryException(java.lang.String, int);
-  public java.net.HttpRetryException(java.lang.String, int, java.lang.String);
-  public int responseCode();
-  public java.lang.String getReason();
-  public java.lang.String getLocation();
-}

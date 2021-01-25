@@ -1,4 +1,0 @@
-Compiled from "LinkStyle.java"
-public interface org.w3c.dom.stylesheets.LinkStyle {
-  public abstract org.w3c.dom.stylesheets.StyleSheet getSheet();
-}

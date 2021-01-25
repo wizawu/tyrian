@@ -1,7 +1,0 @@
-Compiled from "CheckContext.java"
-public class sun.tools.tree.CheckContext extends sun.tools.tree.Context {
-  public sun.tools.tree.Vset vsBreak;
-  public sun.tools.tree.Vset vsContinue;
-  public sun.tools.tree.Vset vsTryExit;
-  sun.tools.tree.CheckContext(sun.tools.tree.Context, sun.tools.tree.Statement);
-}

@@ -1,7 +1,0 @@
-Compiled from "JIMethodInliningAdapter.java"
-final class jdk.jfr.internal.instrument.JIMethodInliningAdapter extends jdk.internal.org.objectweb.asm.commons.RemappingMethodAdapter {
-  public jdk.jfr.internal.instrument.JIMethodInliningAdapter(jdk.internal.org.objectweb.asm.commons.LocalVariablesSorter, jdk.internal.org.objectweb.asm.Label, int, java.lang.String, jdk.internal.org.objectweb.asm.commons.Remapper);
-  public void visitInsn(int);
-  public void visitMaxs(int, int);
-  protected int newLocalMapping(jdk.internal.org.objectweb.asm.Type);
-}

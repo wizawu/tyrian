@@ -1,6 +1,0 @@
-Compiled from "MonitoredHostRmiService.java"
-public final class sun.jvmstat.perfdata.monitor.protocol.rmi.MonitoredHostRmiService implements sun.jvmstat.monitor.MonitoredHostService {
-  public sun.jvmstat.perfdata.monitor.protocol.rmi.MonitoredHostRmiService();
-  public sun.jvmstat.monitor.MonitoredHost getMonitoredHost(sun.jvmstat.monitor.HostIdentifier) throws sun.jvmstat.monitor.MonitorException;
-  public java.lang.String getScheme();
-}

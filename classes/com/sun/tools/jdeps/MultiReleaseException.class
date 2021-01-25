@@ -1,6 +1,0 @@
-Compiled from "MultiReleaseException.java"
-class com.sun.tools.jdeps.MultiReleaseException extends java.lang.RuntimeException {
-  public com.sun.tools.jdeps.MultiReleaseException(java.lang.String, java.lang.Object...);
-  public java.lang.String getKey();
-  public java.lang.Object[] getParams();
-}

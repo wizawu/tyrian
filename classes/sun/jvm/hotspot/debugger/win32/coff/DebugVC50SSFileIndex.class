@@ -1,9 +1,0 @@
-Compiled from "DebugVC50SSFileIndex.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSFileIndex extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
-  public abstract short getNumModules();
-  public abstract short getNumReferences();
-  public abstract short[] getModStart();
-  public abstract short[] getRefCount();
-  public abstract int[] getNameRef();
-  public abstract java.lang.String[] getNames();
-}

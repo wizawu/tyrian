@@ -1,7 +1,0 @@
-Compiled from "X11GB2312.java"
-public class sun.font.X11GB2312 extends java.nio.charset.Charset {
-  public sun.font.X11GB2312();
-  public java.nio.charset.CharsetEncoder newEncoder();
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public boolean contains(java.nio.charset.Charset);
-}

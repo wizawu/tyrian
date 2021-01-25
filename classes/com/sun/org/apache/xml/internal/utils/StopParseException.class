@@ -1,5 +1,0 @@
-Compiled from "StopParseException.java"
-public class com.sun.org.apache.xml.internal.utils.StopParseException extends org.xml.sax.SAXException {
-  static final long serialVersionUID;
-  com.sun.org.apache.xml.internal.utils.StopParseException();
-}

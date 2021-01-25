@@ -1,5 +1,0 @@
-Compiled from "ComboBoxModel.java"
-public interface javax.swing.ComboBoxModel<E> extends javax.swing.ListModel<E> {
-  public abstract void setSelectedItem(java.lang.Object);
-  public abstract java.lang.Object getSelectedItem();
-}

@@ -1,6 +1,0 @@
-Compiled from "ClassGenException.java"
-public class com.sun.org.apache.bcel.internal.generic.ClassGenException extends java.lang.RuntimeException {
-  public com.sun.org.apache.bcel.internal.generic.ClassGenException();
-  public com.sun.org.apache.bcel.internal.generic.ClassGenException(java.lang.String);
-  public com.sun.org.apache.bcel.internal.generic.ClassGenException(java.lang.String, java.lang.Throwable);
-}

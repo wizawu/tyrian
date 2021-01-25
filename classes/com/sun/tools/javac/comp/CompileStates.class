@@ -1,9 +1,0 @@
-Compiled from "CompileStates.java"
-public class com.sun.tools.javac.comp.CompileStates extends java.util.HashMap<com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>, com.sun.tools.javac.comp.CompileStates$CompileState> {
-  protected static final com.sun.tools.javac.util.Context$Key<com.sun.tools.javac.comp.CompileStates> compileStatesKey;
-  protected com.sun.tools.javac.util.Context context;
-  public static com.sun.tools.javac.comp.CompileStates instance(com.sun.tools.javac.util.Context);
-  public com.sun.tools.javac.comp.CompileStates(com.sun.tools.javac.util.Context);
-  public boolean isDone(com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>, com.sun.tools.javac.comp.CompileStates$CompileState);
-  static {};
-}

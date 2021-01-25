@@ -1,7 +1,0 @@
-Compiled from "Crypt.java"
-class com.sun.security.auth.module.Crypt {
-  public com.sun.security.auth.module.Crypt();
-  public synchronized byte[] crypt(byte[], byte[]);
-  public static void main(java.lang.String[]);
-  static {};
-}

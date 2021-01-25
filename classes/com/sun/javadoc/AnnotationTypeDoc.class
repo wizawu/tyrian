@@ -1,4 +1,0 @@
-Compiled from "AnnotationTypeDoc.java"
-public interface com.sun.javadoc.AnnotationTypeDoc extends com.sun.javadoc.ClassDoc {
-  public abstract com.sun.javadoc.AnnotationTypeElementDoc[] elements();
-}

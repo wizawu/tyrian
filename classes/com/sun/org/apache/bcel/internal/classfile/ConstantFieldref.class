@@ -1,7 +1,0 @@
-Compiled from "ConstantFieldref.java"
-public final class com.sun.org.apache.bcel.internal.classfile.ConstantFieldref extends com.sun.org.apache.bcel.internal.classfile.ConstantCP {
-  public com.sun.org.apache.bcel.internal.classfile.ConstantFieldref(com.sun.org.apache.bcel.internal.classfile.ConstantFieldref);
-  com.sun.org.apache.bcel.internal.classfile.ConstantFieldref(java.io.DataInput) throws java.io.IOException;
-  public com.sun.org.apache.bcel.internal.classfile.ConstantFieldref(int, int);
-  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
-}

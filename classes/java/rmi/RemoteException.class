@@ -1,9 +1,0 @@
-Compiled from "RemoteException.java"
-public class java.rmi.RemoteException extends java.io.IOException {
-  public java.lang.Throwable detail;
-  public java.rmi.RemoteException();
-  public java.rmi.RemoteException(java.lang.String);
-  public java.rmi.RemoteException(java.lang.String, java.lang.Throwable);
-  public java.lang.String getMessage();
-  public java.lang.Throwable getCause();
-}

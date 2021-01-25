@@ -1,4 +1,0 @@
-Compiled from "InternalRuntimeError.java"
-public class com.sun.org.apache.xalan.internal.xsltc.runtime.InternalRuntimeError extends java.lang.Error {
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.InternalRuntimeError(java.lang.String);
-}

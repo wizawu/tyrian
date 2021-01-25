@@ -1,5 +1,0 @@
-Compiled from "BindException.java"
-public class java.net.BindException extends java.net.SocketException {
-  public java.net.BindException(java.lang.String);
-  public java.net.BindException();
-}

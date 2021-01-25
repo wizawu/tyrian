@@ -1,6 +1,0 @@
-Compiled from "UnknownFormatConversionException.java"
-public class java.util.UnknownFormatConversionException extends java.util.IllegalFormatException {
-  public java.util.UnknownFormatConversionException(java.lang.String);
-  public java.lang.String getConversion();
-  public java.lang.String getMessage();
-}

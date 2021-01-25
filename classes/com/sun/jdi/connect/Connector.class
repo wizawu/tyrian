@@ -1,7 +1,0 @@
-Compiled from "Connector.java"
-public interface com.sun.jdi.connect.Connector {
-  public abstract java.lang.String name();
-  public abstract java.lang.String description();
-  public abstract com.sun.jdi.connect.Transport transport();
-  public abstract java.util.Map<java.lang.String, com.sun.jdi.connect.Connector$Argument> defaultArguments();
-}

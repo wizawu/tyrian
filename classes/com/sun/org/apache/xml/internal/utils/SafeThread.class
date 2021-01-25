@@ -1,9 +1,0 @@
-Compiled from "SafeThread.java"
-public class com.sun.org.apache.xml.internal.utils.SafeThread extends java.lang.Thread {
-  public com.sun.org.apache.xml.internal.utils.SafeThread(java.lang.Runnable);
-  public com.sun.org.apache.xml.internal.utils.SafeThread(java.lang.Runnable, java.lang.String);
-  public com.sun.org.apache.xml.internal.utils.SafeThread(java.lang.ThreadGroup, java.lang.Runnable, java.lang.String);
-  public final void run();
-  public final void eraseThreadLocals();
-  static {};
-}

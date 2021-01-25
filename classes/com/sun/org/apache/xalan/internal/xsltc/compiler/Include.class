@@ -1,8 +1,0 @@
-Compiled from "Include.java"
-final class com.sun.org.apache.xalan.internal.xsltc.compiler.Include extends com.sun.org.apache.xalan.internal.xsltc.compiler.TopLevelElement {
-  com.sun.org.apache.xalan.internal.xsltc.compiler.Include();
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet getIncludedStylesheet();
-  public void parseContents(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
-  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
-}

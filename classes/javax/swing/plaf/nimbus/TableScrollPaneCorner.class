@@ -1,5 +1,0 @@
-Compiled from "TableScrollPaneCorner.java"
-class javax.swing.plaf.nimbus.TableScrollPaneCorner extends javax.swing.JComponent implements javax.swing.plaf.UIResource {
-  javax.swing.plaf.nimbus.TableScrollPaneCorner();
-  protected void paintComponent(java.awt.Graphics);
-}

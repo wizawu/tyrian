@@ -1,9 +1,0 @@
-Compiled from "CompilerThread.java"
-public class sun.jvm.hotspot.runtime.CompilerThread extends sun.jvm.hotspot.runtime.JavaThread {
-  public synchronized sun.jvm.hotspot.ci.ciEnv env();
-  public sun.jvm.hotspot.runtime.CompilerThread(sun.jvm.hotspot.debugger.Address);
-  public boolean isJavaThread();
-  public boolean isHiddenFromExternalView();
-  public boolean isCompilerThread();
-  static {};
-}

@@ -1,7 +1,0 @@
-Compiled from "IntPredicate.java"
-public interface java.util.function.IntPredicate {
-  public abstract boolean test(int);
-  public default java.util.function.IntPredicate and(java.util.function.IntPredicate);
-  public default java.util.function.IntPredicate negate();
-  public default java.util.function.IntPredicate or(java.util.function.IntPredicate);
-}

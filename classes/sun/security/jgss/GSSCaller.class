@@ -1,9 +1,0 @@
-Compiled from "GSSCaller.java"
-public class sun.security.jgss.GSSCaller {
-  public static final sun.security.jgss.GSSCaller CALLER_UNKNOWN;
-  public static final sun.security.jgss.GSSCaller CALLER_INITIATE;
-  public static final sun.security.jgss.GSSCaller CALLER_ACCEPT;
-  sun.security.jgss.GSSCaller(java.lang.String);
-  public java.lang.String toString();
-  static {};
-}

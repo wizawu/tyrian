@@ -1,8 +1,0 @@
-Compiled from "ModuleRequireNode.java"
-public class jdk.internal.org.objectweb.asm.tree.ModuleRequireNode {
-  public java.lang.String module;
-  public int access;
-  public java.lang.String version;
-  public jdk.internal.org.objectweb.asm.tree.ModuleRequireNode(java.lang.String, int, java.lang.String);
-  public void accept(jdk.internal.org.objectweb.asm.ModuleVisitor);
-}

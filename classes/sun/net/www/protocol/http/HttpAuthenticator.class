@@ -1,5 +1,0 @@
-Compiled from "HttpAuthenticator.java"
-public interface sun.net.www.protocol.http.HttpAuthenticator {
-  public abstract boolean schemeSupported(java.lang.String);
-  public abstract java.lang.String authString(java.net.URL, java.lang.String, java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "AbstractSubscription.java"
-abstract class jdk.internal.net.http.AbstractSubscription implements java.util.concurrent.Flow$Subscription {
-  jdk.internal.net.http.AbstractSubscription();
-  protected jdk.internal.net.http.common.Demand demand();
-}

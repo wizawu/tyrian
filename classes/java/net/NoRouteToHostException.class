@@ -1,5 +1,0 @@
-Compiled from "NoRouteToHostException.java"
-public class java.net.NoRouteToHostException extends java.net.SocketException {
-  public java.net.NoRouteToHostException(java.lang.String);
-  public java.net.NoRouteToHostException();
-}

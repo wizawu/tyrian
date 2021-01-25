@@ -1,8 +1,0 @@
-Compiled from "RMIHelper.java"
-public class sun.jvm.hotspot.RMIHelper {
-  public sun.jvm.hotspot.RMIHelper();
-  public static void rebind(java.lang.String, java.rmi.Remote) throws sun.jvm.hotspot.debugger.DebuggerException;
-  public static void unbind(java.lang.String) throws sun.jvm.hotspot.debugger.DebuggerException;
-  public static java.rmi.Remote lookup(java.lang.String) throws sun.jvm.hotspot.debugger.DebuggerException;
-  static {};
-}

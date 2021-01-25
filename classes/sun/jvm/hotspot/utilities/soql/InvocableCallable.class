@@ -1,5 +1,0 @@
-Compiled from "InvocableCallable.java"
-public class sun.jvm.hotspot.utilities.soql.InvocableCallable implements sun.jvm.hotspot.utilities.soql.Callable {
-  public sun.jvm.hotspot.utilities.soql.InvocableCallable(java.lang.Object, java.lang.String, javax.script.Invocable);
-  public java.lang.Object call(java.lang.Object[]) throws javax.script.ScriptException;
-}

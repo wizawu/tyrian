@@ -1,4 +1,0 @@
-Compiled from "PrintServiceAttributeListener.java"
-public interface javax.print.event.PrintServiceAttributeListener {
-  public abstract void attributeUpdate(javax.print.event.PrintServiceAttributeEvent);
-}

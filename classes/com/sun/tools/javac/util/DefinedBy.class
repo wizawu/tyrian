@@ -1,4 +1,0 @@
-Compiled from "DefinedBy.java"
-public interface com.sun.tools.javac.util.DefinedBy extends java.lang.annotation.Annotation {
-  public abstract com.sun.tools.javac.util.DefinedBy$Api value();
-}

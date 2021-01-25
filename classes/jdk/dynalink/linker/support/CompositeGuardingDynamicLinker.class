@@ -1,5 +1,0 @@
-Compiled from "CompositeGuardingDynamicLinker.java"
-public class jdk.dynalink.linker.support.CompositeGuardingDynamicLinker implements jdk.dynalink.linker.GuardingDynamicLinker {
-  public jdk.dynalink.linker.support.CompositeGuardingDynamicLinker(java.lang.Iterable<? extends jdk.dynalink.linker.GuardingDynamicLinker>);
-  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
-}

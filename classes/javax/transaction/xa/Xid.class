@@ -1,8 +1,0 @@
-Compiled from "Xid.java"
-public interface javax.transaction.xa.Xid {
-  public static final int MAXGTRIDSIZE;
-  public static final int MAXBQUALSIZE;
-  public abstract int getFormatId();
-  public abstract byte[] getGlobalTransactionId();
-  public abstract byte[] getBranchQualifier();
-}

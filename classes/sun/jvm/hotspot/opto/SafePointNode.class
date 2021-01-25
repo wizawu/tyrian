@@ -1,7 +1,0 @@
-Compiled from "SafePointNode.java"
-public class sun.jvm.hotspot.opto.SafePointNode extends sun.jvm.hotspot.opto.MultiNode {
-  public sun.jvm.hotspot.opto.SafePointNode(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.opto.JVMState jvms();
-  public void dumpSpec(java.io.PrintStream);
-  static {};
-}

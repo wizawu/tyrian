@@ -1,4 +1,0 @@
-Compiled from "UnknownInlineTagTree.java"
-public interface com.sun.source.doctree.UnknownInlineTagTree extends com.sun.source.doctree.InlineTagTree {
-  public abstract java.util.List<? extends com.sun.source.doctree.DocTree> getContent();
-}

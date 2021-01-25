@@ -1,9 +1,0 @@
-Compiled from "MotifIconFactory.java"
-public class com.sun.java.swing.plaf.motif.MotifIconFactory implements java.io.Serializable {
-  public com.sun.java.swing.plaf.motif.MotifIconFactory();
-  public static javax.swing.Icon getMenuItemCheckIcon();
-  public static javax.swing.Icon getMenuItemArrowIcon();
-  public static javax.swing.Icon getMenuArrowIcon();
-  public static javax.swing.Icon getCheckBoxIcon();
-  public static javax.swing.Icon getRadioButtonIcon();
-}

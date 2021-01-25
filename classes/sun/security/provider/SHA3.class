@@ -1,9 +1,0 @@
-Compiled from "SHA3.java"
-abstract class sun.security.provider.SHA3 extends sun.security.provider.DigestBase {
-  sun.security.provider.SHA3(java.lang.String, int);
-  void implCompress(byte[], int);
-  void implDigest(byte[], int);
-  void implReset();
-  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
-  static {};
-}

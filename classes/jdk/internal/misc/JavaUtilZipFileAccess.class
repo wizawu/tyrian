@@ -1,9 +1,0 @@
-Compiled from "JavaUtilZipFileAccess.java"
-public interface jdk.internal.misc.JavaUtilZipFileAccess {
-  public abstract boolean startsWithLocHeader(java.util.zip.ZipFile);
-  public abstract java.lang.String[] getMetaInfEntryNames(java.util.zip.ZipFile);
-  public abstract java.util.jar.JarEntry getEntry(java.util.zip.ZipFile, java.lang.String, java.util.function.Function<java.lang.String, java.util.jar.JarEntry>);
-  public abstract java.util.Enumeration<java.util.jar.JarEntry> entries(java.util.zip.ZipFile, java.util.function.Function<java.lang.String, java.util.jar.JarEntry>);
-  public abstract java.util.stream.Stream<java.util.jar.JarEntry> stream(java.util.zip.ZipFile, java.util.function.Function<java.lang.String, java.util.jar.JarEntry>);
-  public abstract java.util.stream.Stream<java.lang.String> entryNameStream(java.util.zip.ZipFile);
-}

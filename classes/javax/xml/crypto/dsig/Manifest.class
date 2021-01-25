@@ -1,6 +1,0 @@
-Compiled from "Manifest.java"
-public interface javax.xml.crypto.dsig.Manifest extends javax.xml.crypto.XMLStructure {
-  public static final java.lang.String TYPE;
-  public abstract java.lang.String getId();
-  public abstract java.util.List<javax.xml.crypto.dsig.Reference> getReferences();
-}

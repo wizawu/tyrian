@@ -1,7 +1,0 @@
-Compiled from "WatchService.java"
-public interface java.nio.file.WatchService extends java.io.Closeable {
-  public abstract void close() throws java.io.IOException;
-  public abstract java.nio.file.WatchKey poll();
-  public abstract java.nio.file.WatchKey poll(long, java.util.concurrent.TimeUnit) throws java.lang.InterruptedException;
-  public abstract java.nio.file.WatchKey take() throws java.lang.InterruptedException;
-}

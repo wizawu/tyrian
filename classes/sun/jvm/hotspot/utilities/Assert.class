@@ -1,7 +1,0 @@
-Compiled from "Assert.java"
-public class sun.jvm.hotspot.utilities.Assert {
-  public static boolean ASSERTS_ENABLED;
-  public sun.jvm.hotspot.utilities.Assert();
-  public static void that(boolean, java.lang.String);
-  static {};
-}

@@ -1,6 +1,0 @@
-Compiled from "AccessControlContextFactory.java"
-public final class jdk.nashorn.internal.runtime.AccessControlContextFactory {
-  public static java.security.AccessControlContext createAccessControlContext();
-  public static java.security.AccessControlContext createAccessControlContext(java.security.Permission...);
-  public static java.security.AccessControlContext createAccessControlContext(java.lang.String...);
-}

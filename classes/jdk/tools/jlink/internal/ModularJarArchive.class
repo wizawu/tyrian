@@ -1,7 +1,0 @@
-Compiled from "ModularJarArchive.java"
-public class jdk.tools.jlink.internal.ModularJarArchive extends jdk.tools.jlink.internal.JarArchive {
-  public jdk.tools.jlink.internal.ModularJarArchive(java.lang.String, java.nio.file.Path, java.lang.Runtime$Version);
-  jdk.tools.jlink.internal.Archive$Entry$EntryType toEntryType(java.lang.String);
-  jdk.tools.jlink.internal.Archive$Entry toEntry(java.util.zip.ZipEntry);
-  java.lang.String getFileName(java.lang.String);
-}

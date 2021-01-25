@@ -1,5 +1,0 @@
-Compiled from "DropTargetPeer.java"
-public interface java.awt.dnd.peer.DropTargetPeer {
-  public abstract void addDropTarget(java.awt.dnd.DropTarget);
-  public abstract void removeDropTarget(java.awt.dnd.DropTarget);
-}

@@ -1,6 +1,0 @@
-Compiled from "RemoteStub.java"
-public abstract class java.rmi.server.RemoteStub extends java.rmi.server.RemoteObject {
-  protected java.rmi.server.RemoteStub();
-  protected java.rmi.server.RemoteStub(java.rmi.server.RemoteRef);
-  protected static void setRef(java.rmi.server.RemoteStub, java.rmi.server.RemoteRef);
-}

@@ -1,6 +1,0 @@
-Compiled from "BytecodeWithCPIndex.java"
-public abstract class sun.jvm.hotspot.interpreter.BytecodeWithCPIndex extends sun.jvm.hotspot.interpreter.Bytecode {
-  sun.jvm.hotspot.interpreter.BytecodeWithCPIndex(sun.jvm.hotspot.oops.Method, int);
-  public int index();
-  protected int indexForFieldOrMethod();
-}

@@ -1,7 +1,0 @@
-Compiled from "LocalRMIServerSocketFactory.java"
-public final class sun.management.jmxremote.LocalRMIServerSocketFactory implements java.rmi.server.RMIServerSocketFactory {
-  public sun.management.jmxremote.LocalRMIServerSocketFactory();
-  public java.net.ServerSocket createServerSocket(int) throws java.io.IOException;
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-}

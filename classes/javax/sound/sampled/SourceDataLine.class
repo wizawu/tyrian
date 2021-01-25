@@ -1,6 +1,0 @@
-Compiled from "SourceDataLine.java"
-public interface javax.sound.sampled.SourceDataLine extends javax.sound.sampled.DataLine {
-  public abstract void open(javax.sound.sampled.AudioFormat, int) throws javax.sound.sampled.LineUnavailableException;
-  public abstract void open(javax.sound.sampled.AudioFormat) throws javax.sound.sampled.LineUnavailableException;
-  public abstract int write(byte[], int, int);
-}

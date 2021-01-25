@@ -1,9 +1,0 @@
-Compiled from "JavaAdapterBytecodeGenerator.java"
-final class jdk.nashorn.internal.runtime.linker.JavaAdapterBytecodeGenerator {
-  static final java.lang.String SUPER_PREFIX;
-  static final boolean $assertionsDisabled;
-  jdk.nashorn.internal.runtime.linker.JavaAdapterBytecodeGenerator(java.lang.Class<?>, java.util.List<java.lang.Class<?>>, java.lang.ClassLoader, boolean) throws jdk.nashorn.internal.runtime.linker.AdaptationException;
-  jdk.nashorn.internal.runtime.linker.JavaAdapterClassLoader createAdapterClassLoader();
-  boolean isAutoConvertibleFromFunction();
-  static {};
-}

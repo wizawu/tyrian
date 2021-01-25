@@ -1,9 +1,0 @@
-Compiled from "NullExpression.java"
-public class sun.tools.tree.NullExpression extends sun.tools.tree.ConstantExpression {
-  public sun.tools.tree.NullExpression(long);
-  public boolean equals(int);
-  public boolean isNull();
-  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
-  public void print(java.io.PrintStream);
-  public boolean isConstant();
-}

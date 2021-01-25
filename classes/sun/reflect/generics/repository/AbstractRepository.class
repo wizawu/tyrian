@@ -1,7 +1,0 @@
-Compiled from "AbstractRepository.java"
-public abstract class sun.reflect.generics.repository.AbstractRepository<T extends sun.reflect.generics.tree.Tree> {
-  protected T getTree();
-  protected sun.reflect.generics.visitor.Reifier getReifier();
-  protected sun.reflect.generics.repository.AbstractRepository(java.lang.String, sun.reflect.generics.factory.GenericsFactory);
-  protected abstract T parse(java.lang.String);
-}

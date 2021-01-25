@@ -1,7 +1,0 @@
-Compiled from "HTMLPane.java"
-public class sun.tools.jconsole.HTMLPane extends javax.swing.JEditorPane {
-  public sun.tools.jconsole.HTMLPane();
-  public synchronized void setHasSelection(boolean);
-  public synchronized boolean getHasSelection();
-  public void setText(java.lang.String);
-}

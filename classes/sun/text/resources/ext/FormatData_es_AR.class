@@ -1,5 +1,0 @@
-Compiled from "FormatData_es_AR.java"
-public class sun.text.resources.ext.FormatData_es_AR extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_es_AR();
-  protected final java.lang.Object[][] getContents();
-}

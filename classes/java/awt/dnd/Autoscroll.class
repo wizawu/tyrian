@@ -1,5 +1,0 @@
-Compiled from "Autoscroll.java"
-public interface java.awt.dnd.Autoscroll {
-  public abstract java.awt.Insets getAutoscrollInsets();
-  public abstract void autoscroll(java.awt.Point);
-}

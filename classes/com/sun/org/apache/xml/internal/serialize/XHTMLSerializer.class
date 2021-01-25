@@ -1,8 +1,0 @@
-Compiled from "XHTMLSerializer.java"
-public class com.sun.org.apache.xml.internal.serialize.XHTMLSerializer extends com.sun.org.apache.xml.internal.serialize.HTMLSerializer {
-  public com.sun.org.apache.xml.internal.serialize.XHTMLSerializer();
-  public com.sun.org.apache.xml.internal.serialize.XHTMLSerializer(com.sun.org.apache.xml.internal.serialize.OutputFormat);
-  public com.sun.org.apache.xml.internal.serialize.XHTMLSerializer(java.io.Writer, com.sun.org.apache.xml.internal.serialize.OutputFormat);
-  public com.sun.org.apache.xml.internal.serialize.XHTMLSerializer(java.io.OutputStream, com.sun.org.apache.xml.internal.serialize.OutputFormat);
-  public void setOutputFormat(com.sun.org.apache.xml.internal.serialize.OutputFormat);
-}

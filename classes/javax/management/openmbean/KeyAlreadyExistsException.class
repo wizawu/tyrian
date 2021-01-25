@@ -1,5 +1,0 @@
-Compiled from "KeyAlreadyExistsException.java"
-public class javax.management.openmbean.KeyAlreadyExistsException extends java.lang.IllegalArgumentException {
-  public javax.management.openmbean.KeyAlreadyExistsException();
-  public javax.management.openmbean.KeyAlreadyExistsException(java.lang.String);
-}

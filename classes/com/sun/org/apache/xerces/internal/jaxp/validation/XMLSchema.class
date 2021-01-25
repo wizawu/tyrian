@@ -1,7 +1,0 @@
-Compiled from "XMLSchema.java"
-final class com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchema extends com.sun.org.apache.xerces.internal.jaxp.validation.AbstractXMLSchema {
-  public com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchema(com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
-  public com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchema(com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool, boolean);
-  public com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool getGrammarPool();
-  public boolean isFullyComposed();
-}

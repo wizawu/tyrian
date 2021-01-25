@@ -1,8 +1,0 @@
-Compiled from "TrayIconPeer.java"
-public interface java.awt.peer.TrayIconPeer {
-  public abstract void dispose();
-  public abstract void setToolTip(java.lang.String);
-  public abstract void updateImage();
-  public abstract void displayMessage(java.lang.String, java.lang.String, java.lang.String);
-  public abstract void showPopupMenu(int, int);
-}

@@ -1,9 +1,0 @@
-Compiled from "TryTreeImpl.java"
-final class jdk.nashorn.api.tree.TryTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.TryTree {
-  jdk.nashorn.api.tree.TryTreeImpl(jdk.nashorn.internal.ir.TryNode, jdk.nashorn.api.tree.BlockTree, java.util.List<? extends jdk.nashorn.api.tree.CatchTree>, jdk.nashorn.api.tree.BlockTree);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.BlockTree getBlock();
-  public java.util.List<? extends jdk.nashorn.api.tree.CatchTree> getCatches();
-  public jdk.nashorn.api.tree.BlockTree getFinallyBlock();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

@@ -1,7 +1,0 @@
-Compiled from "Ref.java"
-public interface java.sql.Ref {
-  public abstract java.lang.String getBaseTypeName() throws java.sql.SQLException;
-  public abstract java.lang.Object getObject(java.util.Map<java.lang.String, java.lang.Class<?>>) throws java.sql.SQLException;
-  public abstract java.lang.Object getObject() throws java.sql.SQLException;
-  public abstract void setObject(java.lang.Object) throws java.sql.SQLException;
-}

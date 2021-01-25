@@ -1,6 +1,0 @@
-Compiled from "OuterImportSnippetWrap.java"
-class jdk.jshell.OuterImportSnippetWrap extends jdk.jshell.OuterWrap {
-  jdk.jshell.OuterImportSnippetWrap(jdk.jshell.Wrap, jdk.jshell.Snippet);
-  jdk.jshell.Diag wrapDiag(javax.tools.Diagnostic<? extends javax.tools.JavaFileObject>);
-  public java.lang.String toString();
-}

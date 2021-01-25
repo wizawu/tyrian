@@ -1,8 +1,0 @@
-Compiled from "LDAPCertStore.java"
-public final class sun.security.provider.certpath.ldap.LDAPCertStore extends java.security.cert.CertStoreSpi {
-  public sun.security.provider.certpath.ldap.LDAPCertStore(java.security.cert.CertStoreParameters) throws java.security.InvalidAlgorithmParameterException;
-  static synchronized sun.security.provider.certpath.ldap.LDAPCertStoreImpl getInstance(java.security.cert.LDAPCertStoreParameters) throws java.security.NoSuchAlgorithmException, java.security.InvalidAlgorithmParameterException;
-  public synchronized java.util.Collection<java.security.cert.X509Certificate> engineGetCertificates(java.security.cert.CertSelector) throws java.security.cert.CertStoreException;
-  public synchronized java.util.Collection<java.security.cert.X509CRL> engineGetCRLs(java.security.cert.CRLSelector) throws java.security.cert.CertStoreException;
-  static {};
-}

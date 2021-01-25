@@ -1,6 +1,0 @@
-Compiled from "ClassDefinition.java"
-public final class java.lang.instrument.ClassDefinition {
-  public java.lang.instrument.ClassDefinition(java.lang.Class<?>, byte[]);
-  public java.lang.Class<?> getDefinitionClass();
-  public byte[] getDefinitionClassFile();
-}

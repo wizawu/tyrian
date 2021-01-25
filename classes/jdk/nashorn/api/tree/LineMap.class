@@ -1,5 +1,0 @@
-Compiled from "LineMap.java"
-public interface jdk.nashorn.api.tree.LineMap {
-  public abstract long getLineNumber(long);
-  public abstract long getColumnNumber(long);
-}

@@ -1,7 +1,0 @@
-Compiled from "ImageBufferCache.java"
-class jdk.internal.jimage.ImageBufferCache {
-  jdk.internal.jimage.ImageBufferCache();
-  static java.nio.ByteBuffer getBuffer(long);
-  static void releaseBuffer(java.nio.ByteBuffer);
-  static {};
-}

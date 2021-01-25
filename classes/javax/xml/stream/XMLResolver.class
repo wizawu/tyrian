@@ -1,4 +1,0 @@
-Compiled from "XMLResolver.java"
-public interface javax.xml.stream.XMLResolver {
-  public abstract java.lang.Object resolveEntity(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws javax.xml.stream.XMLStreamException;
-}

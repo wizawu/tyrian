@@ -1,5 +1,0 @@
-Compiled from "ManagementPermission.java"
-public final class java.lang.management.ManagementPermission extends java.security.BasicPermission {
-  public java.lang.management.ManagementPermission(java.lang.String);
-  public java.lang.management.ManagementPermission(java.lang.String, java.lang.String) throws java.lang.IllegalArgumentException;
-}

@@ -1,5 +1,0 @@
-Compiled from "DTDHandler.java"
-public interface org.xml.sax.DTDHandler {
-  public abstract void notationDecl(java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
-  public abstract void unparsedEntityDecl(java.lang.String, java.lang.String, java.lang.String, java.lang.String) throws org.xml.sax.SAXException;
-}

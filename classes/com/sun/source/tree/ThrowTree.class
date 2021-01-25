@@ -1,4 +1,0 @@
-Compiled from "ThrowTree.java"
-public interface com.sun.source.tree.ThrowTree extends com.sun.source.tree.StatementTree {
-  public abstract com.sun.source.tree.ExpressionTree getExpression();
-}

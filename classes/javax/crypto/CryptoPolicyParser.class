@@ -1,6 +1,0 @@
-Compiled from "CryptoPolicyParser.java"
-final class javax.crypto.CryptoPolicyParser {
-  javax.crypto.CryptoPolicyParser();
-  void read(java.io.Reader) throws javax.crypto.CryptoPolicyParser$ParsingException, java.io.IOException;
-  javax.crypto.CryptoPermission[] getPermissions();
-}

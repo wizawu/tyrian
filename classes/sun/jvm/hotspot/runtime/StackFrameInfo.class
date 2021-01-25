@@ -1,8 +1,0 @@
-Compiled from "StackFrameInfo.java"
-public class sun.jvm.hotspot.runtime.StackFrameInfo {
-  int bci;
-  sun.jvm.hotspot.oops.Oop classHolder;
-  public sun.jvm.hotspot.runtime.StackFrameInfo(sun.jvm.hotspot.runtime.JavaVFrame);
-  public sun.jvm.hotspot.oops.Method getMethod();
-  public int getBCI();
-}

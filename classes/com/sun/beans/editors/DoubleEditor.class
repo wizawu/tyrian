@@ -1,5 +1,0 @@
-Compiled from "DoubleEditor.java"
-public class com.sun.beans.editors.DoubleEditor extends com.sun.beans.editors.NumberEditor {
-  public com.sun.beans.editors.DoubleEditor();
-  public void setAsText(java.lang.String) throws java.lang.IllegalArgumentException;
-}

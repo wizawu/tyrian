@@ -1,7 +1,0 @@
-Compiled from "FileImageOutputStreamSpi.java"
-public class com.sun.imageio.spi.FileImageOutputStreamSpi extends javax.imageio.spi.ImageOutputStreamSpi {
-  public com.sun.imageio.spi.FileImageOutputStreamSpi();
-  public java.lang.String getDescription(java.util.Locale);
-  public javax.imageio.stream.ImageOutputStream createOutputStreamInstance(java.lang.Object, boolean, java.io.File);
-  static {};
-}

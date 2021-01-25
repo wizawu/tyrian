@@ -1,4 +1,0 @@
-Compiled from "MouseWheelListener.java"
-public interface java.awt.event.MouseWheelListener extends java.util.EventListener {
-  public abstract void mouseWheelMoved(java.awt.event.MouseWheelEvent);
-}

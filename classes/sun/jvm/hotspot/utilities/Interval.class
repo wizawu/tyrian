@@ -1,9 +1,0 @@
-Compiled from "Interval.java"
-public class sun.jvm.hotspot.utilities.Interval {
-  public sun.jvm.hotspot.utilities.Interval(java.lang.Object, java.lang.Object);
-  public java.lang.Object getLowEndpoint();
-  public java.lang.Object getHighEndpoint();
-  public boolean overlaps(sun.jvm.hotspot.utilities.Interval, java.util.Comparator);
-  public boolean overlaps(java.lang.Object, java.lang.Object, java.util.Comparator);
-  public java.lang.String toString();
-}

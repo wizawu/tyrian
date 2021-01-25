@@ -1,5 +1,0 @@
-Compiled from "NoSuchPaddingException.java"
-public class javax.crypto.NoSuchPaddingException extends java.security.GeneralSecurityException {
-  public javax.crypto.NoSuchPaddingException();
-  public javax.crypto.NoSuchPaddingException(java.lang.String);
-}

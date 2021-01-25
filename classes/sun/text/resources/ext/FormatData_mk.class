@@ -1,5 +1,0 @@
-Compiled from "FormatData_mk.java"
-public class sun.text.resources.ext.FormatData_mk extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_mk();
-  protected final java.lang.Object[][] getContents();
-}

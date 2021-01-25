@@ -1,4 +1,0 @@
-Compiled from "ExceptionThrower.java"
-public interface com.sun.org.apache.bcel.internal.generic.ExceptionThrower {
-  public abstract java.lang.Class<?>[] getExceptions();
-}

@@ -1,6 +1,0 @@
-Compiled from "UnknownElementException.java"
-public class javax.lang.model.element.UnknownElementException extends javax.lang.model.UnknownEntityException {
-  public javax.lang.model.element.UnknownElementException(javax.lang.model.element.Element, java.lang.Object);
-  public javax.lang.model.element.Element getUnknownElement();
-  public java.lang.Object getArgument();
-}

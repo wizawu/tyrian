@@ -1,7 +1,0 @@
-Compiled from "DOMXSLTTransform.java"
-public final class org.jcp.xml.dsig.internal.dom.DOMXSLTTransform extends org.jcp.xml.dsig.internal.dom.ApacheTransform {
-  public org.jcp.xml.dsig.internal.dom.DOMXSLTTransform();
-  public void init(javax.xml.crypto.dsig.spec.TransformParameterSpec) throws java.security.InvalidAlgorithmParameterException;
-  public void init(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws java.security.InvalidAlgorithmParameterException;
-  public void marshalParams(javax.xml.crypto.XMLStructure, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.MarshalException;
-}

@@ -1,6 +1,0 @@
-Compiled from "ByteVectorFactory.java"
-class jdk.internal.reflect.ByteVectorFactory {
-  jdk.internal.reflect.ByteVectorFactory();
-  static jdk.internal.reflect.ByteVector create();
-  static jdk.internal.reflect.ByteVector create(int);
-}

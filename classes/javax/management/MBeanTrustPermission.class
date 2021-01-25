@@ -1,5 +1,0 @@
-Compiled from "MBeanTrustPermission.java"
-public class javax.management.MBeanTrustPermission extends java.security.BasicPermission {
-  public javax.management.MBeanTrustPermission(java.lang.String);
-  public javax.management.MBeanTrustPermission(java.lang.String, java.lang.String);
-}

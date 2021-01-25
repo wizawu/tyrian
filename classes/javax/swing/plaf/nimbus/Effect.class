@@ -1,8 +1,0 @@
-Compiled from "Effect.java"
-abstract class javax.swing.plaf.nimbus.Effect {
-  javax.swing.plaf.nimbus.Effect();
-  abstract javax.swing.plaf.nimbus.Effect$EffectType getEffectType();
-  abstract float getOpacity();
-  abstract java.awt.image.BufferedImage applyEffect(java.awt.image.BufferedImage, java.awt.image.BufferedImage, int, int);
-  protected static javax.swing.plaf.nimbus.Effect$ArrayCache getArrayCache();
-}

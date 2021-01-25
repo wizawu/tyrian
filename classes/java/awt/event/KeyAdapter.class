@@ -1,7 +1,0 @@
-Compiled from "KeyAdapter.java"
-public abstract class java.awt.event.KeyAdapter implements java.awt.event.KeyListener {
-  public java.awt.event.KeyAdapter();
-  public void keyTyped(java.awt.event.KeyEvent);
-  public void keyPressed(java.awt.event.KeyEvent);
-  public void keyReleased(java.awt.event.KeyEvent);
-}

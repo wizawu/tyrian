@@ -1,8 +1,0 @@
-Compiled from "Handler.java"
-public class sun.net.www.protocol.ftp.Handler extends java.net.URLStreamHandler {
-  public sun.net.www.protocol.ftp.Handler();
-  protected int getDefaultPort();
-  protected boolean equals(java.net.URL, java.net.URL);
-  protected java.net.URLConnection openConnection(java.net.URL) throws java.io.IOException;
-  protected java.net.URLConnection openConnection(java.net.URL, java.net.Proxy) throws java.io.IOException;
-}

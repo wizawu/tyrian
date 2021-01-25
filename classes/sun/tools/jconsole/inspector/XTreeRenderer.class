@@ -1,5 +1,0 @@
-Compiled from "XTreeRenderer.java"
-public class sun.tools.jconsole.inspector.XTreeRenderer extends javax.swing.tree.DefaultTreeCellRenderer {
-  public sun.tools.jconsole.inspector.XTreeRenderer();
-  public java.awt.Component getTreeCellRendererComponent(javax.swing.JTree, java.lang.Object, boolean, boolean, boolean, int, boolean);
-}

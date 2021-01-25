@@ -1,5 +1,0 @@
-Compiled from "TransportFactoryImpl.java"
-public class jdk.internal.net.http.websocket.TransportFactoryImpl implements jdk.internal.net.http.websocket.TransportFactory {
-  public jdk.internal.net.http.websocket.TransportFactoryImpl(jdk.internal.net.http.websocket.RawChannel);
-  public jdk.internal.net.http.websocket.Transport createTransport(jdk.internal.net.http.websocket.MessageQueue, jdk.internal.net.http.websocket.MessageStreamConsumer);
-}

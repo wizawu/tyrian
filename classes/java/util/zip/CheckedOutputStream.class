@@ -1,7 +1,0 @@
-Compiled from "CheckedOutputStream.java"
-public class java.util.zip.CheckedOutputStream extends java.io.FilterOutputStream {
-  public java.util.zip.CheckedOutputStream(java.io.OutputStream, java.util.zip.Checksum);
-  public void write(int) throws java.io.IOException;
-  public void write(byte[], int, int) throws java.io.IOException;
-  public java.util.zip.Checksum getChecksum();
-}

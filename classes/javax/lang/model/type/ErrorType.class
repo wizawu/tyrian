@@ -1,3 +1,0 @@
-Compiled from "ErrorType.java"
-public interface javax.lang.model.type.ErrorType extends javax.lang.model.type.DeclaredType {
-}

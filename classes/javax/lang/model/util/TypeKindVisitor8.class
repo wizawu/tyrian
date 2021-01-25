@@ -1,6 +1,0 @@
-Compiled from "TypeKindVisitor8.java"
-public class javax.lang.model.util.TypeKindVisitor8<R, P> extends javax.lang.model.util.TypeKindVisitor7<R, P> {
-  protected javax.lang.model.util.TypeKindVisitor8();
-  protected javax.lang.model.util.TypeKindVisitor8(R);
-  public R visitIntersection(javax.lang.model.type.IntersectionType, P);
-}

@@ -1,5 +1,0 @@
-Compiled from "JavaNetSocketAccess.java"
-public interface jdk.internal.misc.JavaNetSocketAccess {
-  public abstract java.net.ServerSocket newServerSocket(java.net.SocketImpl);
-  public abstract java.net.SocketImpl newSocketImpl(java.lang.Class<? extends java.net.SocketImpl>);
-}

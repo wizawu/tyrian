@@ -1,5 +1,0 @@
-Compiled from "BreakIteratorResources.java"
-public class sun.text.resources.BreakIteratorResources extends sun.util.resources.BreakIteratorResourceBundle {
-  public sun.text.resources.BreakIteratorResources();
-  protected java.util.ResourceBundle getBreakIteratorInfo();
-}

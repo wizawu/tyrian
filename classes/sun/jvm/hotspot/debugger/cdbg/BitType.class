@@ -1,5 +1,0 @@
-Compiled from "BitType.java"
-public interface sun.jvm.hotspot.debugger.cdbg.BitType extends sun.jvm.hotspot.debugger.cdbg.IntType {
-  public abstract int getSizeInBits();
-  public abstract int getOffset();
-}

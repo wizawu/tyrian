@@ -1,4 +1,0 @@
-Compiled from "ConstantPushInstruction.java"
-public interface com.sun.org.apache.bcel.internal.generic.ConstantPushInstruction extends com.sun.org.apache.bcel.internal.generic.PushInstruction,com.sun.org.apache.bcel.internal.generic.TypedInstruction {
-  public abstract java.lang.Number getValue();
-}

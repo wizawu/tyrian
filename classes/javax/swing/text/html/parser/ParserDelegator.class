@@ -1,9 +1,0 @@
-Compiled from "ParserDelegator.java"
-public class javax.swing.text.html.parser.ParserDelegator extends javax.swing.text.html.HTMLEditorKit$Parser implements java.io.Serializable {
-  protected static void setDefaultDTD();
-  protected static javax.swing.text.html.parser.DTD createDTD(javax.swing.text.html.parser.DTD, java.lang.String);
-  public javax.swing.text.html.parser.ParserDelegator();
-  public void parse(java.io.Reader, javax.swing.text.html.HTMLEditorKit$ParserCallback, boolean) throws java.io.IOException;
-  static java.io.InputStream getResourceAsStream(java.lang.String);
-  static {};
-}

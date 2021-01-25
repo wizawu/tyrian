@@ -1,8 +1,0 @@
-Compiled from "SoftShortMessage.java"
-public final class com.sun.media.sound.SoftShortMessage extends javax.sound.midi.ShortMessage {
-  int channel;
-  public com.sun.media.sound.SoftShortMessage();
-  public int getChannel();
-  public void setMessage(int, int, int, int) throws javax.sound.midi.InvalidMidiDataException;
-  public java.lang.Object clone();
-}

@@ -1,6 +1,0 @@
-Compiled from "JarOutputStream.java"
-public class java.util.jar.JarOutputStream extends java.util.zip.ZipOutputStream {
-  public java.util.jar.JarOutputStream(java.io.OutputStream, java.util.jar.Manifest) throws java.io.IOException;
-  public java.util.jar.JarOutputStream(java.io.OutputStream) throws java.io.IOException;
-  public void putNextEntry(java.util.zip.ZipEntry) throws java.io.IOException;
-}

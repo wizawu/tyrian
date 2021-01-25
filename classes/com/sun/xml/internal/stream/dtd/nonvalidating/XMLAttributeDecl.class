@@ -1,9 +1,0 @@
-Compiled from "XMLAttributeDecl.java"
-public class com.sun.xml.internal.stream.dtd.nonvalidating.XMLAttributeDecl {
-  public final com.sun.org.apache.xerces.internal.xni.QName name;
-  public final com.sun.xml.internal.stream.dtd.nonvalidating.XMLSimpleType simpleType;
-  public boolean optional;
-  public com.sun.xml.internal.stream.dtd.nonvalidating.XMLAttributeDecl();
-  public void setValues(com.sun.org.apache.xerces.internal.xni.QName, com.sun.xml.internal.stream.dtd.nonvalidating.XMLSimpleType, boolean);
-  public void clear();
-}

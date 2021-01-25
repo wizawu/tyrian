@@ -1,5 +1,0 @@
-Compiled from "BindingWithControls.java"
-class com.sun.jndi.ldap.BindingWithControls extends javax.naming.Binding implements javax.naming.ldap.HasControls {
-  public com.sun.jndi.ldap.BindingWithControls(java.lang.String, java.lang.Object, javax.naming.ldap.Control[]);
-  public javax.naming.ldap.Control[] getControls() throws javax.naming.NamingException;
-}

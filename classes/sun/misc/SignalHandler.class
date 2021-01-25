@@ -1,7 +1,0 @@
-Compiled from "SignalHandler.java"
-public interface sun.misc.SignalHandler {
-  public static final sun.misc.SignalHandler SIG_DFL;
-  public static final sun.misc.SignalHandler SIG_IGN;
-  public abstract void handle(sun.misc.Signal);
-  static {};
-}

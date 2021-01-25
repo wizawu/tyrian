@@ -1,5 +1,0 @@
-Compiled from "NotContextException.java"
-public class javax.naming.NotContextException extends javax.naming.NamingException {
-  public javax.naming.NotContextException(java.lang.String);
-  public javax.naming.NotContextException();
-}

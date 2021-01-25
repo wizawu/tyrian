@@ -1,5 +1,0 @@
-Compiled from "XSGrammar.java"
-public interface com.sun.org.apache.xerces.internal.xni.grammars.XSGrammar extends com.sun.org.apache.xerces.internal.xni.grammars.Grammar {
-  public abstract com.sun.org.apache.xerces.internal.xs.XSModel toXSModel();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSModel toXSModel(com.sun.org.apache.xerces.internal.xni.grammars.XSGrammar[]);
-}

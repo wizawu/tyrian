@@ -1,9 +1,0 @@
-Compiled from "CompiledICHolder.java"
-public class sun.jvm.hotspot.oops.CompiledICHolder extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.oops.CompiledICHolder(sun.jvm.hotspot.debugger.Address);
-  public boolean isCompiledICHolder();
-  public sun.jvm.hotspot.oops.Metadata getHolderMetadata();
-  public sun.jvm.hotspot.oops.Klass getHolderKlass();
-  public void printValueOn(java.io.PrintStream);
-  static {};
-}

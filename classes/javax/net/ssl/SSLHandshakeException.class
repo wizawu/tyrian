@@ -1,4 +1,0 @@
-Compiled from "SSLHandshakeException.java"
-public class javax.net.ssl.SSLHandshakeException extends javax.net.ssl.SSLException {
-  public javax.net.ssl.SSLHandshakeException(java.lang.String);
-}

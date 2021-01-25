@@ -1,7 +1,0 @@
-Compiled from "PixelInterleavedSampleModel.java"
-public class java.awt.image.PixelInterleavedSampleModel extends java.awt.image.ComponentSampleModel {
-  public java.awt.image.PixelInterleavedSampleModel(int, int, int, int, int, int[]);
-  public java.awt.image.SampleModel createCompatibleSampleModel(int, int);
-  public java.awt.image.SampleModel createSubsetSampleModel(int[]);
-  public int hashCode();
-}

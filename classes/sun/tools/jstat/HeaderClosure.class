@@ -1,6 +1,0 @@
-Compiled from "HeaderClosure.java"
-public class sun.tools.jstat.HeaderClosure implements sun.tools.jstat.Closure {
-  public sun.tools.jstat.HeaderClosure();
-  public void visit(java.lang.Object, boolean) throws sun.jvmstat.monitor.MonitorException;
-  public java.lang.String getHeader();
-}

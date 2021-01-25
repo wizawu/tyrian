@@ -1,7 +1,0 @@
-Compiled from "Property.java"
-public interface jdk.nashorn.internal.objects.annotations.Property extends java.lang.annotation.Annotation {
-  public abstract java.lang.String name();
-  public abstract int attributes();
-  public abstract java.lang.String clazz();
-  public abstract jdk.nashorn.internal.objects.annotations.Where where();
-}

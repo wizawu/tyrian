@@ -1,6 +1,0 @@
-Compiled from "PlainProxyConnection.java"
-class jdk.internal.net.http.PlainProxyConnection extends jdk.internal.net.http.PlainHttpConnection {
-  jdk.internal.net.http.PlainProxyConnection(java.net.InetSocketAddress, jdk.internal.net.http.HttpClientImpl);
-  jdk.internal.net.http.ConnectionPool$CacheKey cacheKey();
-  public boolean isProxied();
-}

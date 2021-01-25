@@ -1,6 +1,0 @@
-Compiled from "MenuBarPeer.java"
-public interface java.awt.peer.MenuBarPeer extends java.awt.peer.MenuComponentPeer {
-  public abstract void addMenu(java.awt.Menu);
-  public abstract void delMenu(int);
-  public abstract void addHelpMenu(java.awt.Menu);
-}

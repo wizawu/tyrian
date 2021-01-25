@@ -1,9 +1,0 @@
-Compiled from "ICC_ProfileGray.java"
-public class java.awt.color.ICC_ProfileGray extends java.awt.color.ICC_Profile {
-  static final long serialVersionUID;
-  java.awt.color.ICC_ProfileGray(sun.java2d.cmm.Profile);
-  java.awt.color.ICC_ProfileGray(sun.java2d.cmm.ProfileDeferralInfo);
-  public float[] getMediaWhitePoint();
-  public float getGamma();
-  public short[] getTRC();
-}

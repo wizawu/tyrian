@@ -1,5 +1,0 @@
-Compiled from "PrintRequestAttributeSet.java"
-public interface javax.print.attribute.PrintRequestAttributeSet extends javax.print.attribute.AttributeSet {
-  public abstract boolean add(javax.print.attribute.Attribute);
-  public abstract boolean addAll(javax.print.attribute.AttributeSet);
-}

@@ -1,7 +1,0 @@
-Compiled from "HashtableBucket.java"
-public class sun.jvm.hotspot.utilities.HashtableBucket extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.utilities.BasicHashtableEntry getEntry(java.lang.Class);
-  public sun.jvm.hotspot.utilities.BasicHashtableEntry entry();
-  public sun.jvm.hotspot.utilities.HashtableBucket(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

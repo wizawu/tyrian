@@ -1,8 +1,0 @@
-Compiled from "RSAUtil.java"
-public class sun.security.rsa.RSAUtil {
-  public sun.security.rsa.RSAUtil();
-  public static void checkParamsAgainstType(sun.security.rsa.RSAUtil$KeyType, java.security.spec.AlgorithmParameterSpec) throws java.security.ProviderException;
-  public static sun.security.x509.AlgorithmId createAlgorithmId(sun.security.rsa.RSAUtil$KeyType, java.security.spec.AlgorithmParameterSpec) throws java.security.ProviderException;
-  public static java.security.spec.AlgorithmParameterSpec getParamSpec(sun.security.x509.AlgorithmId) throws java.security.ProviderException;
-  public static java.security.spec.AlgorithmParameterSpec getParamSpec(java.security.AlgorithmParameters) throws java.security.ProviderException;
-}

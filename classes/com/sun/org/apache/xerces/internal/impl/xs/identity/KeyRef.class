@@ -1,7 +1,0 @@
-Compiled from "KeyRef.java"
-public class com.sun.org.apache.xerces.internal.impl.xs.identity.KeyRef extends com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint {
-  protected com.sun.org.apache.xerces.internal.impl.xs.identity.UniqueOrKey fKey;
-  public com.sun.org.apache.xerces.internal.impl.xs.identity.KeyRef(java.lang.String, java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.impl.xs.identity.UniqueOrKey);
-  public com.sun.org.apache.xerces.internal.impl.xs.identity.UniqueOrKey getKey();
-  public com.sun.org.apache.xerces.internal.xs.XSIDCDefinition getRefKey();
-}

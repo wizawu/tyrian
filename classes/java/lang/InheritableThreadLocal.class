@@ -1,7 +1,0 @@
-Compiled from "InheritableThreadLocal.java"
-public class java.lang.InheritableThreadLocal<T> extends java.lang.ThreadLocal<T> {
-  public java.lang.InheritableThreadLocal();
-  protected T childValue(T);
-  java.lang.ThreadLocal$ThreadLocalMap getMap(java.lang.Thread);
-  void createMap(java.lang.Thread, T);
-}

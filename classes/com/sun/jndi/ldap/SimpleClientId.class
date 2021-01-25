@@ -1,7 +1,0 @@
-Compiled from "SimpleClientId.java"
-class com.sun.jndi.ldap.SimpleClientId extends com.sun.jndi.ldap.ClientId {
-  com.sun.jndi.ldap.SimpleClientId(int, java.lang.String, int, java.lang.String, javax.naming.ldap.Control[], java.io.OutputStream, java.lang.String, java.lang.String, java.lang.Object);
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  public java.lang.String toString();
-}

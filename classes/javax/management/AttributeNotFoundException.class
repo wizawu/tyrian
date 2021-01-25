@@ -1,5 +1,0 @@
-Compiled from "AttributeNotFoundException.java"
-public class javax.management.AttributeNotFoundException extends javax.management.OperationsException {
-  public javax.management.AttributeNotFoundException();
-  public javax.management.AttributeNotFoundException(java.lang.String);
-}

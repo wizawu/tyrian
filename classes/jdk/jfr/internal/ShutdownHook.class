@@ -1,6 +1,0 @@
-Compiled from "ShutdownHook.java"
-final class jdk.jfr.internal.ShutdownHook implements java.lang.Runnable {
-  java.lang.Object tlabDummyObject;
-  jdk.jfr.internal.ShutdownHook(jdk.jfr.internal.PlatformRecorder);
-  public void run();
-}

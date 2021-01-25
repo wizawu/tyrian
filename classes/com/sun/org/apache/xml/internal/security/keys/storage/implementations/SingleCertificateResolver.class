@@ -1,5 +1,0 @@
-Compiled from "SingleCertificateResolver.java"
-public class com.sun.org.apache.xml.internal.security.keys.storage.implementations.SingleCertificateResolver extends com.sun.org.apache.xml.internal.security.keys.storage.StorageResolverSpi {
-  public com.sun.org.apache.xml.internal.security.keys.storage.implementations.SingleCertificateResolver(java.security.cert.X509Certificate);
-  public java.util.Iterator<java.security.cert.Certificate> getIterator();
-}

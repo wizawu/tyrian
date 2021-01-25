@@ -1,4 +1,0 @@
-Compiled from "DocumentRange.java"
-public interface org.w3c.dom.ranges.DocumentRange {
-  public abstract org.w3c.dom.ranges.Range createRange();
-}

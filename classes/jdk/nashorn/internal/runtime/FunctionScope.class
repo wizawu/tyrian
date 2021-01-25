@@ -1,7 +1,0 @@
-Compiled from "FunctionScope.java"
-public class jdk.nashorn.internal.runtime.FunctionScope extends jdk.nashorn.internal.runtime.Scope {
-  public final jdk.nashorn.internal.runtime.ScriptObject arguments;
-  public jdk.nashorn.internal.runtime.FunctionScope(jdk.nashorn.internal.runtime.PropertyMap, jdk.nashorn.internal.runtime.ScriptObject, jdk.nashorn.internal.runtime.ScriptObject);
-  public jdk.nashorn.internal.runtime.FunctionScope(jdk.nashorn.internal.runtime.PropertyMap, jdk.nashorn.internal.runtime.ScriptObject);
-  public jdk.nashorn.internal.runtime.FunctionScope(jdk.nashorn.internal.runtime.PropertyMap, long[], java.lang.Object[]);
-}

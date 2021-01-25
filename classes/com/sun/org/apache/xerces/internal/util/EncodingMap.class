@@ -1,9 +1,0 @@
-Compiled from "EncodingMap.java"
-public class com.sun.org.apache.xerces.internal.util.EncodingMap {
-  protected static final java.util.Map<java.lang.String, java.lang.String> fIANA2JavaMap;
-  protected static final java.util.Map<java.lang.String, java.lang.String> fJava2IANAMap;
-  public com.sun.org.apache.xerces.internal.util.EncodingMap();
-  public static java.lang.String getIANA2JavaMapping(java.lang.String);
-  public static java.lang.String getJava2IANAMapping(java.lang.String);
-  static {};
-}

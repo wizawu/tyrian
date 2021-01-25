@@ -1,8 +1,0 @@
-Compiled from "NameSignatureInstruction.java"
-public abstract class com.sun.org.apache.bcel.internal.generic.NameSignatureInstruction extends com.sun.org.apache.bcel.internal.generic.CPInstruction {
-  public com.sun.org.apache.bcel.internal.generic.NameSignatureInstruction();
-  public com.sun.org.apache.bcel.internal.generic.NameSignatureInstruction(short, int);
-  public com.sun.org.apache.bcel.internal.classfile.ConstantNameAndType getNameAndType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-  public java.lang.String getSignature(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-  public java.lang.String getName(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-}

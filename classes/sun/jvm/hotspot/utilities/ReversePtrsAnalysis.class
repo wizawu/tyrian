@@ -1,6 +1,0 @@
-Compiled from "ReversePtrsAnalysis.java"
-public class sun.jvm.hotspot.utilities.ReversePtrsAnalysis {
-  public sun.jvm.hotspot.utilities.ReversePtrsAnalysis();
-  public void setHeapProgressThunk(sun.jvm.hotspot.utilities.HeapProgressThunk);
-  public void run();
-}

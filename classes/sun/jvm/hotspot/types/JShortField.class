@@ -1,5 +1,0 @@
-Compiled from "JShortField.java"
-public interface sun.jvm.hotspot.types.JShortField extends sun.jvm.hotspot.types.Field {
-  public abstract short getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-  public abstract short getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-}

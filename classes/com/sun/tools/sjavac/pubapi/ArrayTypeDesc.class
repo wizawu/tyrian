@@ -1,7 +1,0 @@
-Compiled from "ArrayTypeDesc.java"
-public class com.sun.tools.sjavac.pubapi.ArrayTypeDesc extends com.sun.tools.sjavac.pubapi.TypeDesc implements java.io.Serializable {
-  com.sun.tools.sjavac.pubapi.TypeDesc compTypeDesc;
-  public com.sun.tools.sjavac.pubapi.ArrayTypeDesc(com.sun.tools.sjavac.pubapi.TypeDesc);
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-}

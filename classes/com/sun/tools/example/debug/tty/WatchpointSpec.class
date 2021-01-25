@@ -1,8 +1,0 @@
-Compiled from "WatchpointSpec.java"
-abstract class com.sun.tools.example.debug.tty.WatchpointSpec extends com.sun.tools.example.debug.tty.EventRequestSpec {
-  final java.lang.String fieldId;
-  com.sun.tools.example.debug.tty.WatchpointSpec(com.sun.tools.example.debug.tty.ReferenceTypeSpec, java.lang.String) throws com.sun.tools.example.debug.tty.MalformedMemberNameException;
-  public int hashCode();
-  public boolean equals(java.lang.Object);
-  java.lang.String errorMessageFor(java.lang.Exception);
-}

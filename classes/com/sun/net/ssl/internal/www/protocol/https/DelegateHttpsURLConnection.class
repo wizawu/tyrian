@@ -1,9 +1,0 @@
-Compiled from "DelegateHttpsURLConnection.java"
-public class com.sun.net.ssl.internal.www.protocol.https.DelegateHttpsURLConnection extends sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection {
-  public com.sun.net.ssl.HttpsURLConnection httpsURLConnection;
-  com.sun.net.ssl.internal.www.protocol.https.DelegateHttpsURLConnection(java.net.URL, sun.net.www.protocol.http.Handler, com.sun.net.ssl.HttpsURLConnection) throws java.io.IOException;
-  com.sun.net.ssl.internal.www.protocol.https.DelegateHttpsURLConnection(java.net.URL, java.net.Proxy, sun.net.www.protocol.http.Handler, com.sun.net.ssl.HttpsURLConnection) throws java.io.IOException;
-  protected javax.net.ssl.SSLSocketFactory getSSLSocketFactory();
-  protected javax.net.ssl.HostnameVerifier getHostnameVerifier();
-  protected void dispose() throws java.lang.Throwable;
-}

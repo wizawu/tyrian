@@ -1,8 +1,0 @@
-Compiled from "VersionHelper.java"
-public class com.sun.tools.jdeps.VersionHelper {
-  static final boolean $assertionsDisabled;
-  public com.sun.tools.jdeps.VersionHelper();
-  public static java.lang.String get(java.lang.String);
-  public static void add(java.util.jar.JarFile, java.util.jar.JarEntry, com.sun.tools.classfile.ClassFile) throws com.sun.tools.classfile.ConstantPoolException;
-  static {};
-}

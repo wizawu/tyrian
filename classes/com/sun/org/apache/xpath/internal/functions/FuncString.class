@@ -1,6 +1,0 @@
-Compiled from "FuncString.java"
-public class com.sun.org.apache.xpath.internal.functions.FuncString extends com.sun.org.apache.xpath.internal.functions.FunctionDef1Arg {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.functions.FuncString();
-  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-}

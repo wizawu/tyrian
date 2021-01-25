@@ -1,4 +1,0 @@
-Compiled from "XPathNSResolver.java"
-public interface org.w3c.dom.xpath.XPathNSResolver {
-  public abstract java.lang.String lookupNamespaceURI(java.lang.String);
-}

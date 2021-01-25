@@ -1,9 +1,0 @@
-Compiled from "HotSpotDiagnostic.java"
-public class com.sun.management.internal.HotSpotDiagnostic implements com.sun.management.HotSpotDiagnosticMXBean {
-  public com.sun.management.internal.HotSpotDiagnostic();
-  public void dumpHeap(java.lang.String, boolean) throws java.io.IOException;
-  public java.util.List<com.sun.management.VMOption> getDiagnosticOptions();
-  public com.sun.management.VMOption getVMOption(java.lang.String);
-  public void setVMOption(java.lang.String, java.lang.String);
-  public javax.management.ObjectName getObjectName();
-}

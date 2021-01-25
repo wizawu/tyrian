@@ -1,4 +1,0 @@
-Compiled from "UnsupportedFlavorException.java"
-public class java.awt.datatransfer.UnsupportedFlavorException extends java.lang.Exception {
-  public java.awt.datatransfer.UnsupportedFlavorException(java.awt.datatransfer.DataFlavor);
-}

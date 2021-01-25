@@ -1,6 +1,0 @@
-Compiled from "CharElementHandler.java"
-final class com.sun.beans.decoder.CharElementHandler extends com.sun.beans.decoder.StringElementHandler {
-  com.sun.beans.decoder.CharElementHandler();
-  public void addAttribute(java.lang.String, java.lang.String);
-  public java.lang.Object getValue(java.lang.String);
-}

@@ -1,7 +1,0 @@
-Compiled from "XPathFilterParameterSpec.java"
-public final class javax.xml.crypto.dsig.spec.XPathFilterParameterSpec implements javax.xml.crypto.dsig.spec.TransformParameterSpec {
-  public javax.xml.crypto.dsig.spec.XPathFilterParameterSpec(java.lang.String);
-  public javax.xml.crypto.dsig.spec.XPathFilterParameterSpec(java.lang.String, java.util.Map<java.lang.String, java.lang.String>);
-  public java.lang.String getXPath();
-  public java.util.Map<java.lang.String, java.lang.String> getNamespaceMap();
-}

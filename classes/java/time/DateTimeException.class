@@ -1,5 +1,0 @@
-Compiled from "DateTimeException.java"
-public class java.time.DateTimeException extends java.lang.RuntimeException {
-  public java.time.DateTimeException(java.lang.String);
-  public java.time.DateTimeException(java.lang.String, java.lang.Throwable);
-}

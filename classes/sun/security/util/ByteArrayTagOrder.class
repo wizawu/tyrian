@@ -1,6 +1,0 @@
-Compiled from "ByteArrayTagOrder.java"
-public class sun.security.util.ByteArrayTagOrder implements java.util.Comparator<byte[]> {
-  public sun.security.util.ByteArrayTagOrder();
-  public final int compare(byte[], byte[]);
-  public int compare(java.lang.Object, java.lang.Object);
-}

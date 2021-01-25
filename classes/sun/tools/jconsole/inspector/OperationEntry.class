@@ -1,7 +1,0 @@
-Compiled from "OperationEntry.java"
-public class sun.tools.jconsole.inspector.OperationEntry extends javax.swing.JPanel {
-  public sun.tools.jconsole.inspector.OperationEntry(javax.management.MBeanOperationInfo, boolean, javax.swing.JButton, sun.tools.jconsole.inspector.XOperations);
-  public java.lang.String[] getSignature();
-  public java.lang.Object[] getParameters() throws java.lang.Exception;
-  public java.lang.String getReturnType();
-}

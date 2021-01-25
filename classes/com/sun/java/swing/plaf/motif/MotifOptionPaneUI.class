@@ -1,9 +1,0 @@
-Compiled from "MotifOptionPaneUI.java"
-public class com.sun.java.swing.plaf.motif.MotifOptionPaneUI extends javax.swing.plaf.basic.BasicOptionPaneUI {
-  public com.sun.java.swing.plaf.motif.MotifOptionPaneUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  protected java.awt.Container createButtonArea();
-  public java.awt.Dimension getMinimumOptionPaneSize();
-  protected java.awt.Container createSeparator();
-  protected void addIcon(java.awt.Container);
-}

@@ -1,5 +1,0 @@
-Compiled from "TimeLimitExceededException.java"
-public class javax.naming.TimeLimitExceededException extends javax.naming.LimitExceededException {
-  public javax.naming.TimeLimitExceededException();
-  public javax.naming.TimeLimitExceededException(java.lang.String);
-}

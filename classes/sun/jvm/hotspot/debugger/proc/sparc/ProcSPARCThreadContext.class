@@ -1,6 +1,0 @@
-Compiled from "ProcSPARCThreadContext.java"
-public class sun.jvm.hotspot.debugger.proc.sparc.ProcSPARCThreadContext extends sun.jvm.hotspot.debugger.sparc.SPARCThreadContext {
-  public sun.jvm.hotspot.debugger.proc.sparc.ProcSPARCThreadContext(sun.jvm.hotspot.debugger.proc.ProcDebugger);
-  public void setRegisterAsAddress(int, sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.Address getRegisterAsAddress(int);
-}

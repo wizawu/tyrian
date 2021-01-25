@@ -1,5 +1,0 @@
-Compiled from "HTMLHtmlElement.java"
-public interface org.w3c.dom.html.HTMLHtmlElement extends org.w3c.dom.html.HTMLElement {
-  public abstract java.lang.String getVersion();
-  public abstract void setVersion(java.lang.String);
-}

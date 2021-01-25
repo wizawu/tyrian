@@ -1,9 +1,0 @@
-Compiled from "EventSetInfo.java"
-public final class com.sun.beans.introspect.EventSetInfo {
-  public java.lang.Class<?> getListenerType();
-  public java.lang.reflect.Method getAddMethod();
-  public java.lang.reflect.Method getRemoveMethod();
-  public java.lang.reflect.Method getGetMethod();
-  public boolean isUnicast();
-  public static java.util.Map<java.lang.String, com.sun.beans.introspect.EventSetInfo> get(java.lang.Class<?>);
-}

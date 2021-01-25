@@ -1,5 +1,0 @@
-Compiled from "NodeList.java"
-public interface org.w3c.dom.NodeList {
-  public abstract org.w3c.dom.Node item(int);
-  public abstract int getLength();
-}

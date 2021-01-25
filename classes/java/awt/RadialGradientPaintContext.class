@@ -1,6 +1,0 @@
-Compiled from "RadialGradientPaintContext.java"
-final class java.awt.RadialGradientPaintContext extends java.awt.MultipleGradientPaintContext {
-  java.awt.RadialGradientPaintContext(java.awt.RadialGradientPaint, java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints, float, float, float, float, float, float[], java.awt.Color[], java.awt.MultipleGradientPaint$CycleMethod, java.awt.MultipleGradientPaint$ColorSpaceType);
-  protected void fillRaster(int[], int, int, int, int, int, int);
-  static {};
-}

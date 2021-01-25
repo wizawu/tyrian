@@ -1,9 +1,0 @@
-Compiled from "BasicGlobalSym.java"
-public class sun.jvm.hotspot.debugger.cdbg.basic.BasicGlobalSym extends sun.jvm.hotspot.debugger.cdbg.basic.BasicSym implements sun.jvm.hotspot.debugger.cdbg.GlobalSym {
-  public sun.jvm.hotspot.debugger.cdbg.basic.BasicGlobalSym(java.lang.String, sun.jvm.hotspot.debugger.cdbg.Type, sun.jvm.hotspot.debugger.Address, boolean);
-  public sun.jvm.hotspot.debugger.cdbg.GlobalSym asGlobal();
-  public sun.jvm.hotspot.debugger.cdbg.Type getType();
-  public sun.jvm.hotspot.debugger.Address getAddress();
-  public boolean isModuleLocal();
-  public void resolve(sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
-}

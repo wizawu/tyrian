@@ -1,8 +1,0 @@
-Compiled from "XSParticle.java"
-public interface com.sun.org.apache.xerces.internal.xs.XSParticle extends com.sun.org.apache.xerces.internal.xs.XSObject {
-  public abstract int getMinOccurs();
-  public abstract int getMaxOccurs();
-  public abstract boolean getMaxOccursUnbounded();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSTerm getTerm();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
-}

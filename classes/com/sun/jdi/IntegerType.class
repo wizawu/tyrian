@@ -1,3 +1,0 @@
-Compiled from "IntegerType.java"
-public interface com.sun.jdi.IntegerType extends com.sun.jdi.PrimitiveType {
-}

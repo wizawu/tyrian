@@ -1,6 +1,0 @@
-Compiled from "PrimeNumberSequenceGenerator.java"
-final class com.sun.org.apache.xerces.internal.util.PrimeNumberSequenceGenerator {
-  com.sun.org.apache.xerces.internal.util.PrimeNumberSequenceGenerator();
-  static void generateSequence(int[]);
-  static {};
-}

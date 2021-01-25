@@ -1,5 +1,0 @@
-Compiled from "IllegalOptionSpecificationException.java"
-class jdk.internal.joptsimple.IllegalOptionSpecificationException extends jdk.internal.joptsimple.OptionException {
-  jdk.internal.joptsimple.IllegalOptionSpecificationException(java.lang.String);
-  java.lang.Object[] messageArguments();
-}

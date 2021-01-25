@@ -1,4 +1,0 @@
-Compiled from "Observer.java"
-public interface java.util.Observer {
-  public abstract void update(java.util.Observable, java.lang.Object);
-}

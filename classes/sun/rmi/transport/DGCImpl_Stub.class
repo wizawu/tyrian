@@ -1,8 +1,0 @@
-Compiled from "DGCImpl_Stub.java"
-public final class sun.rmi.transport.DGCImpl_Stub extends java.rmi.server.RemoteStub implements java.rmi.dgc.DGC {
-  public sun.rmi.transport.DGCImpl_Stub();
-  public sun.rmi.transport.DGCImpl_Stub(java.rmi.server.RemoteRef);
-  public void clean(java.rmi.server.ObjID[], long, java.rmi.dgc.VMID, boolean) throws java.rmi.RemoteException;
-  public java.rmi.dgc.Lease dirty(java.rmi.server.ObjID[], long, java.rmi.dgc.Lease) throws java.rmi.RemoteException;
-  static {};
-}

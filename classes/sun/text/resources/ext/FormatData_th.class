@@ -1,5 +1,0 @@
-Compiled from "FormatData_th.java"
-public class sun.text.resources.ext.FormatData_th extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_th();
-  protected final java.lang.Object[][] getContents();
-}

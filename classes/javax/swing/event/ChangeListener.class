@@ -1,4 +1,0 @@
-Compiled from "ChangeListener.java"
-public interface javax.swing.event.ChangeListener extends java.util.EventListener {
-  public abstract void stateChanged(javax.swing.event.ChangeEvent);
-}

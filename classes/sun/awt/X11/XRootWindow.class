@@ -1,7 +1,0 @@
-Compiled from "XRootWindow.java"
-class sun.awt.X11.XRootWindow extends sun.awt.X11.XBaseWindow {
-  static sun.awt.X11.XRootWindow getInstance();
-  public void postInit(sun.awt.X11.XCreateWindowParams);
-  protected java.lang.String getWMName();
-  protected java.lang.String[] getWMClass();
-}

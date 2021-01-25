@@ -1,5 +1,0 @@
-Compiled from "DOMErrorHandlerImpl.java"
-final class com.sun.org.apache.xml.internal.serializer.dom3.DOMErrorHandlerImpl implements org.w3c.dom.DOMErrorHandler {
-  com.sun.org.apache.xml.internal.serializer.dom3.DOMErrorHandlerImpl();
-  public boolean handleError(org.w3c.dom.DOMError);
-}

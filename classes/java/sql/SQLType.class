@@ -1,6 +1,0 @@
-Compiled from "SQLType.java"
-public interface java.sql.SQLType {
-  public abstract java.lang.String getName();
-  public abstract java.lang.String getVendor();
-  public abstract java.lang.Integer getVendorTypeNumber();
-}

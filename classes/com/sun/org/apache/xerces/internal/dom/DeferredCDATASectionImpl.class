@@ -1,8 +1,0 @@
-Compiled from "DeferredCDATASectionImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.DeferredCDATASectionImpl extends com.sun.org.apache.xerces.internal.dom.CDATASectionImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
-  static final long serialVersionUID;
-  protected transient int fNodeIndex;
-  com.sun.org.apache.xerces.internal.dom.DeferredCDATASectionImpl(com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl, int);
-  public int getNodeIndex();
-  protected void synchronizeData();
-}

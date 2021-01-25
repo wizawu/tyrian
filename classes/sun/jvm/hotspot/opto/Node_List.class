@@ -1,6 +1,0 @@
-Compiled from "Node_List.java"
-public class sun.jvm.hotspot.opto.Node_List extends sun.jvm.hotspot.opto.Node_Array {
-  public sun.jvm.hotspot.opto.Node_List(sun.jvm.hotspot.debugger.Address);
-  public int size();
-  static {};
-}

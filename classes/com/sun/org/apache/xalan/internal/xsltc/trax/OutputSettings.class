@@ -1,5 +1,0 @@
-Compiled from "OutputSettings.java"
-public final class com.sun.org.apache.xalan.internal.xsltc.trax.OutputSettings {
-  public com.sun.org.apache.xalan.internal.xsltc.trax.OutputSettings();
-  public java.util.Properties getProperties();
-}

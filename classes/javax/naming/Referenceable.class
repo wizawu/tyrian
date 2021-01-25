@@ -1,4 +1,0 @@
-Compiled from "Referenceable.java"
-public interface javax.naming.Referenceable {
-  public abstract javax.naming.Reference getReference() throws javax.naming.NamingException;
-}

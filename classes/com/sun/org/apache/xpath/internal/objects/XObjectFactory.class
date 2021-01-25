@@ -1,6 +1,0 @@
-Compiled from "XObjectFactory.java"
-public class com.sun.org.apache.xpath.internal.objects.XObjectFactory {
-  public com.sun.org.apache.xpath.internal.objects.XObjectFactory();
-  public static com.sun.org.apache.xpath.internal.objects.XObject create(java.lang.Object);
-  public static com.sun.org.apache.xpath.internal.objects.XObject create(java.lang.Object, com.sun.org.apache.xpath.internal.XPathContext);
-}

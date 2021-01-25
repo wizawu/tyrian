@@ -1,7 +1,0 @@
-Compiled from "LoaderDelegate.java"
-public interface jdk.jshell.execution.LoaderDelegate {
-  public abstract void load(jdk.jshell.spi.ExecutionControl$ClassBytecodes[]) throws jdk.jshell.spi.ExecutionControl$ClassInstallException, jdk.jshell.spi.ExecutionControl$NotImplementedException, jdk.jshell.spi.ExecutionControl$EngineTerminationException;
-  public abstract void classesRedefined(jdk.jshell.spi.ExecutionControl$ClassBytecodes[]);
-  public abstract void addToClasspath(java.lang.String) throws jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
-  public abstract java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
-}

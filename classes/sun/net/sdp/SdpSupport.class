@@ -1,6 +1,0 @@
-Compiled from "SdpSupport.java"
-public final class sun.net.sdp.SdpSupport {
-  public static java.io.FileDescriptor createSocket() throws java.io.IOException;
-  public static void convertSocket(java.io.FileDescriptor) throws java.io.IOException;
-  static {};
-}

@@ -1,3 +1,0 @@
-Compiled from "DebuggerTree.java"
-public interface jdk.nashorn.api.tree.DebuggerTree extends jdk.nashorn.api.tree.StatementTree {
-}

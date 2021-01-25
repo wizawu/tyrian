@@ -1,4 +1,0 @@
-Compiled from "LocaleNamesBundle.java"
-public abstract class sun.util.resources.LocaleNamesBundle extends sun.util.resources.OpenListResourceBundle {
-  protected sun.util.resources.LocaleNamesBundle();
-}

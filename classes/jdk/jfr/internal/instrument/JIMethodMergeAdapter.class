@@ -1,7 +1,0 @@
-Compiled from "JIMethodMergeAdapter.java"
-final class jdk.jfr.internal.instrument.JIMethodMergeAdapter extends jdk.internal.org.objectweb.asm.ClassVisitor {
-  public jdk.jfr.internal.instrument.JIMethodMergeAdapter(jdk.internal.org.objectweb.asm.ClassVisitor, jdk.internal.org.objectweb.asm.tree.ClassNode, java.util.List<java.lang.reflect.Method>, jdk.jfr.internal.instrument.JITypeMapping[]);
-  public void visit(int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
-  public jdk.internal.org.objectweb.asm.MethodVisitor visitMethod(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
-  public void visitEnd();
-}

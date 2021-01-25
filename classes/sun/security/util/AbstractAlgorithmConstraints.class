@@ -1,7 +1,0 @@
-Compiled from "AbstractAlgorithmConstraints.java"
-public abstract class sun.security.util.AbstractAlgorithmConstraints implements java.security.AlgorithmConstraints {
-  protected final sun.security.util.AlgorithmDecomposer decomposer;
-  protected sun.security.util.AbstractAlgorithmConstraints(sun.security.util.AlgorithmDecomposer);
-  static java.util.List<java.lang.String> getAlgorithms(java.lang.String);
-  static boolean checkAlgorithm(java.util.List<java.lang.String>, java.lang.String, sun.security.util.AlgorithmDecomposer);
-}

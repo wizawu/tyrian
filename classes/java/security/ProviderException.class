@@ -1,7 +1,0 @@
-Compiled from "ProviderException.java"
-public class java.security.ProviderException extends java.lang.RuntimeException {
-  public java.security.ProviderException();
-  public java.security.ProviderException(java.lang.String);
-  public java.security.ProviderException(java.lang.String, java.lang.Throwable);
-  public java.security.ProviderException(java.lang.Throwable);
-}

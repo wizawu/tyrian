@@ -1,8 +1,0 @@
-Compiled from "SslRMIClientSocketFactory.java"
-public class javax.rmi.ssl.SslRMIClientSocketFactory implements java.rmi.server.RMIClientSocketFactory,java.io.Serializable {
-  public javax.rmi.ssl.SslRMIClientSocketFactory();
-  public java.net.Socket createSocket(java.lang.String, int) throws java.io.IOException;
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  static {};
-}

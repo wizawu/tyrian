@@ -1,4 +1,0 @@
-Compiled from "AsynchronousChannel.java"
-public interface java.nio.channels.AsynchronousChannel extends java.nio.channels.Channel {
-  public abstract void close() throws java.io.IOException;
-}

@@ -1,7 +1,0 @@
-Compiled from "SizeUpdateWriter.java"
-final class jdk.internal.net.http.hpack.SizeUpdateWriter implements jdk.internal.net.http.hpack.BinaryRepresentationWriter {
-  jdk.internal.net.http.hpack.SizeUpdateWriter();
-  jdk.internal.net.http.hpack.SizeUpdateWriter maxHeaderTableSize(int);
-  public boolean write(jdk.internal.net.http.hpack.HeaderTable, java.nio.ByteBuffer);
-  public jdk.internal.net.http.hpack.BinaryRepresentationWriter reset();
-}

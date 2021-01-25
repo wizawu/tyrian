@@ -1,4 +1,0 @@
-Compiled from "BackgroundLookupListener.java"
-public interface sun.print.BackgroundLookupListener {
-  public abstract void notifyServices(javax.print.PrintService[]);
-}

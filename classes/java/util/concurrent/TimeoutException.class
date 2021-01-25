@@ -1,5 +1,0 @@
-Compiled from "TimeoutException.java"
-public class java.util.concurrent.TimeoutException extends java.lang.Exception {
-  public java.util.concurrent.TimeoutException();
-  public java.util.concurrent.TimeoutException(java.lang.String);
-}

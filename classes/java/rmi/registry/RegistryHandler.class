@@ -1,5 +1,0 @@
-Compiled from "RegistryHandler.java"
-public interface java.rmi.registry.RegistryHandler {
-  public abstract java.rmi.registry.Registry registryStub(java.lang.String, int) throws java.rmi.RemoteException, java.rmi.UnknownHostException;
-  public abstract java.rmi.registry.Registry registryImpl(int) throws java.rmi.RemoteException;
-}

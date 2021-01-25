@@ -1,6 +1,0 @@
-Compiled from "DebugVC50Subsection.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
-  public abstract short getSubsectionType();
-  public abstract short getSubsectionModuleIndex();
-  public abstract int getSubsectionSize();
-}

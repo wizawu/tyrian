@@ -1,5 +1,0 @@
-Compiled from "FileAttribute.java"
-public interface java.nio.file.attribute.FileAttribute<T> {
-  public abstract java.lang.String name();
-  public abstract T value();
-}

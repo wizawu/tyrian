@@ -1,5 +1,0 @@
-Compiled from "LinkOutput.java"
-public interface jdk.javadoc.internal.doclets.toolkit.util.links.LinkOutput {
-  public abstract void append(java.lang.Object);
-  public abstract void insert(int, java.lang.Object);
-}

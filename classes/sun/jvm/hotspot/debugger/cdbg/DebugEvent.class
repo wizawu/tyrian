@@ -1,9 +1,0 @@
-Compiled from "DebugEvent.java"
-public interface sun.jvm.hotspot.debugger.cdbg.DebugEvent {
-  public abstract sun.jvm.hotspot.debugger.cdbg.DebugEvent$Type getType();
-  public abstract sun.jvm.hotspot.debugger.ThreadProxy getThread();
-  public abstract sun.jvm.hotspot.debugger.Address getPC();
-  public abstract boolean getWasWrite();
-  public abstract sun.jvm.hotspot.debugger.Address getAddress();
-  public abstract java.lang.String getUnknownEventDetail();
-}

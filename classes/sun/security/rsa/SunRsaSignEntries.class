@@ -1,5 +1,0 @@
-Compiled from "SunRsaSignEntries.java"
-public final class sun.security.rsa.SunRsaSignEntries {
-  public sun.security.rsa.SunRsaSignEntries(java.security.Provider);
-  public java.util.Iterator<java.security.Provider$Service> iterator();
-}

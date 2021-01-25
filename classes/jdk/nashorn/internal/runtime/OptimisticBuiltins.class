@@ -1,5 +1,0 @@
-Compiled from "OptimisticBuiltins.java"
-public interface jdk.nashorn.internal.runtime.OptimisticBuiltins {
-  public abstract jdk.nashorn.internal.objects.annotations.SpecializedFunction$LinkLogic getLinkLogic(java.lang.Class<? extends jdk.nashorn.internal.objects.annotations.SpecializedFunction$LinkLogic>);
-  public abstract boolean hasPerInstanceAssumptions();
-}

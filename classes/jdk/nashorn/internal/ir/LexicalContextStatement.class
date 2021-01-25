@@ -1,6 +1,0 @@
-Compiled from "LexicalContextStatement.java"
-abstract class jdk.nashorn.internal.ir.LexicalContextStatement extends jdk.nashorn.internal.ir.Statement implements jdk.nashorn.internal.ir.LexicalContextNode {
-  protected jdk.nashorn.internal.ir.LexicalContextStatement(int, long, int);
-  protected jdk.nashorn.internal.ir.LexicalContextStatement(jdk.nashorn.internal.ir.LexicalContextStatement);
-  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
-}

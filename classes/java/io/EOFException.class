@@ -1,5 +1,0 @@
-Compiled from "EOFException.java"
-public class java.io.EOFException extends java.io.IOException {
-  public java.io.EOFException();
-  public java.io.EOFException(java.lang.String);
-}

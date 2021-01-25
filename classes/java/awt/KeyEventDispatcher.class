@@ -1,4 +1,0 @@
-Compiled from "KeyEventDispatcher.java"
-public interface java.awt.KeyEventDispatcher {
-  public abstract boolean dispatchKeyEvent(java.awt.event.KeyEvent);
-}

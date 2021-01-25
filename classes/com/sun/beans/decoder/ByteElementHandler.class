@@ -1,5 +1,0 @@
-Compiled from "ByteElementHandler.java"
-final class com.sun.beans.decoder.ByteElementHandler extends com.sun.beans.decoder.StringElementHandler {
-  com.sun.beans.decoder.ByteElementHandler();
-  public java.lang.Object getValue(java.lang.String);
-}

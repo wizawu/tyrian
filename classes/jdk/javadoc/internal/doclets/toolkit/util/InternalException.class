@@ -1,4 +1,0 @@
-Compiled from "InternalException.java"
-public class jdk.javadoc.internal.doclets.toolkit.util.InternalException extends jdk.javadoc.internal.doclets.toolkit.DocletException {
-  public jdk.javadoc.internal.doclets.toolkit.util.InternalException(java.lang.String, java.lang.Throwable);
-}

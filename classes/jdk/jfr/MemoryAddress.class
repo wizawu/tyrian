@@ -1,3 +1,0 @@
-Compiled from "MemoryAddress.java"
-public interface jdk.jfr.MemoryAddress extends java.lang.annotation.Annotation {
-}

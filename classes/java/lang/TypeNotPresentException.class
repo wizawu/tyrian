@@ -1,5 +1,0 @@
-Compiled from "TypeNotPresentException.java"
-public class java.lang.TypeNotPresentException extends java.lang.RuntimeException {
-  public java.lang.TypeNotPresentException(java.lang.String, java.lang.Throwable);
-  public java.lang.String typeName();
-}

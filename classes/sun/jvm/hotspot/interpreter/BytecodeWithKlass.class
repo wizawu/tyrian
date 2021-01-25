@@ -1,7 +1,0 @@
-Compiled from "BytecodeWithKlass.java"
-public class sun.jvm.hotspot.interpreter.BytecodeWithKlass extends sun.jvm.hotspot.interpreter.BytecodeWithCPIndex {
-  sun.jvm.hotspot.interpreter.BytecodeWithKlass(sun.jvm.hotspot.oops.Method, int);
-  protected sun.jvm.hotspot.oops.Klass getKlass();
-  public sun.jvm.hotspot.oops.Symbol getClassName();
-  public java.lang.String toString();
-}

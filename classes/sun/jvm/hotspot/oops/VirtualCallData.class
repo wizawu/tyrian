@@ -1,8 +1,0 @@
-Compiled from "VirtualCallData.java"
-public class sun.jvm.hotspot.oops.VirtualCallData<K, M> extends sun.jvm.hotspot.oops.ReceiverTypeData<K, M> {
-  public sun.jvm.hotspot.oops.VirtualCallData(sun.jvm.hotspot.oops.MethodDataInterface<K, M>, sun.jvm.hotspot.oops.DataLayout);
-  static int staticCellCount();
-  public int cellCount();
-  static int virtualCallDataSize();
-  public void printDataOn(java.io.PrintStream);
-}

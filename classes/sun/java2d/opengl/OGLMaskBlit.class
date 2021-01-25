@@ -1,5 +1,0 @@
-Compiled from "OGLMaskBlit.java"
-class sun.java2d.opengl.OGLMaskBlit extends sun.java2d.pipe.BufferedMaskBlit {
-  static void register();
-  protected void validateContext(sun.java2d.SurfaceData, java.awt.Composite, sun.java2d.pipe.Region);
-}

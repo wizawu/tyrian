@@ -1,6 +1,0 @@
-Compiled from "RequiredArgumentOptionSpec.java"
-class jdk.internal.joptsimple.RequiredArgumentOptionSpec<V> extends jdk.internal.joptsimple.ArgumentAcceptingOptionSpec<V> {
-  jdk.internal.joptsimple.RequiredArgumentOptionSpec(java.lang.String);
-  jdk.internal.joptsimple.RequiredArgumentOptionSpec(java.util.List<java.lang.String>, java.lang.String);
-  protected void detectOptionArgument(jdk.internal.joptsimple.OptionParser, jdk.internal.joptsimple.ArgumentList, jdk.internal.joptsimple.OptionSet);
-}

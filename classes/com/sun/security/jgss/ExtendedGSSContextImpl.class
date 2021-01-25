@@ -1,5 +1,0 @@
-Compiled from "ExtendedGSSContextImpl.java"
-class com.sun.security.jgss.ExtendedGSSContextImpl extends sun.security.jgss.GSSContextImpl implements com.sun.security.jgss.ExtendedGSSContext {
-  public com.sun.security.jgss.ExtendedGSSContextImpl(sun.security.jgss.GSSContextImpl);
-  public java.lang.Object inquireSecContext(com.sun.security.jgss.InquireType) throws org.ietf.jgss.GSSException;
-}

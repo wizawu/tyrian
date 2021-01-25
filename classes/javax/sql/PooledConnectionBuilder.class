@@ -1,8 +1,0 @@
-Compiled from "PooledConnectionBuilder.java"
-public interface javax.sql.PooledConnectionBuilder {
-  public abstract javax.sql.PooledConnectionBuilder user(java.lang.String);
-  public abstract javax.sql.PooledConnectionBuilder password(java.lang.String);
-  public abstract javax.sql.PooledConnectionBuilder shardingKey(java.sql.ShardingKey);
-  public abstract javax.sql.PooledConnectionBuilder superShardingKey(java.sql.ShardingKey);
-  public abstract javax.sql.PooledConnection build() throws java.sql.SQLException;
-}

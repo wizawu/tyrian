@@ -1,8 +1,0 @@
-Compiled from "XMap.java"
-class sun.font.XMap {
-  char[] convertedGlyphs;
-  static final int SINGLE_BYTE;
-  static final int DOUBLE_BYTE;
-  static synchronized sun.font.XMap getXMapper(java.lang.String);
-  static {};
-}

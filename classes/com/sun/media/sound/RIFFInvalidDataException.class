@@ -1,5 +1,0 @@
-Compiled from "RIFFInvalidDataException.java"
-public final class com.sun.media.sound.RIFFInvalidDataException extends com.sun.media.sound.InvalidDataException {
-  public com.sun.media.sound.RIFFInvalidDataException();
-  public com.sun.media.sound.RIFFInvalidDataException(java.lang.String);
-}

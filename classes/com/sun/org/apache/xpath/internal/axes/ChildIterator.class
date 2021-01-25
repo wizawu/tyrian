@@ -1,8 +1,0 @@
-Compiled from "ChildIterator.java"
-public class com.sun.org.apache.xpath.internal.axes.ChildIterator extends com.sun.org.apache.xpath.internal.axes.LocPathIterator {
-  static final long serialVersionUID;
-  com.sun.org.apache.xpath.internal.axes.ChildIterator(com.sun.org.apache.xpath.internal.compiler.Compiler, int, int) throws javax.xml.transform.TransformerException;
-  public int asNode(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-  public int nextNode();
-  public int getAxis();
-}

@@ -1,8 +1,0 @@
-Compiled from "PlatformSupportImpl.java"
-public class sun.jvmstat.PlatformSupportImpl extends sun.jvmstat.PlatformSupport {
-  public sun.jvmstat.PlatformSupportImpl();
-  public java.util.List<java.lang.String> getTemporaryDirectories(int);
-  public int getLocalVmId(java.io.File) throws java.lang.NumberFormatException;
-  public int getNamespaceVmId(int);
-  static {};
-}

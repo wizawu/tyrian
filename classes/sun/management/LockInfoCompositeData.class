@@ -1,9 +1,0 @@
-Compiled from "LockInfoCompositeData.java"
-public class sun.management.LockInfoCompositeData extends sun.management.LazyCompositeData {
-  public java.lang.management.LockInfo getLockInfo();
-  public static javax.management.openmbean.CompositeData toCompositeData(java.lang.management.LockInfo);
-  protected javax.management.openmbean.CompositeData getCompositeData();
-  static javax.management.openmbean.CompositeType compositeType();
-  public static java.lang.management.LockInfo toLockInfo(javax.management.openmbean.CompositeData);
-  static {};
-}

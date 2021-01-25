@@ -1,6 +1,0 @@
-Compiled from "ProviderNotFoundException.java"
-public class java.nio.file.ProviderNotFoundException extends java.lang.RuntimeException {
-  static final long serialVersionUID;
-  public java.nio.file.ProviderNotFoundException();
-  public java.nio.file.ProviderNotFoundException(java.lang.String);
-}

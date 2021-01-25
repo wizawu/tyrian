@@ -1,5 +1,0 @@
-Compiled from "FormatData_sk_SK.java"
-public class sun.text.resources.ext.FormatData_sk_SK extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_sk_SK();
-  protected final java.lang.Object[][] getContents();
-}

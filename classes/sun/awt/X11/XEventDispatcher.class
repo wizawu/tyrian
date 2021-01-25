@@ -1,4 +1,0 @@
-Compiled from "XEventDispatcher.java"
-public interface sun.awt.X11.XEventDispatcher {
-  public abstract void dispatchEvent(sun.awt.X11.XEvent);
-}

@@ -1,5 +1,0 @@
-Compiled from "LabeledStatementTree.java"
-public interface jdk.nashorn.api.tree.LabeledStatementTree extends jdk.nashorn.api.tree.StatementTree {
-  public abstract java.lang.String getLabel();
-  public abstract jdk.nashorn.api.tree.StatementTree getStatement();
-}

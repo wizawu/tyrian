@@ -1,8 +1,0 @@
-Compiled from "CookiePolicy.java"
-public interface java.net.CookiePolicy {
-  public static final java.net.CookiePolicy ACCEPT_ALL;
-  public static final java.net.CookiePolicy ACCEPT_NONE;
-  public static final java.net.CookiePolicy ACCEPT_ORIGINAL_SERVER;
-  public abstract boolean shouldAccept(java.net.URI, java.net.HttpCookie);
-  static {};
-}

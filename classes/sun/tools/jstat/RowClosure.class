@@ -1,6 +1,0 @@
-Compiled from "RowClosure.java"
-public class sun.tools.jstat.RowClosure implements sun.tools.jstat.Closure {
-  public sun.tools.jstat.RowClosure(sun.jvmstat.monitor.MonitoredVm);
-  public void visit(java.lang.Object, boolean) throws sun.jvmstat.monitor.MonitorException;
-  public java.lang.String getRow();
-}

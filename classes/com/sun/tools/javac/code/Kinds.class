@@ -1,6 +1,0 @@
-Compiled from "Kinds.java"
-public class com.sun.tools.javac.code.Kinds {
-  public static com.sun.tools.javac.code.Kinds$KindName kindName(com.sun.source.tree.MemberReferenceTree$ReferenceMode);
-  public static com.sun.tools.javac.code.Kinds$KindName kindName(com.sun.tools.javac.code.Symbol);
-  public static com.sun.tools.javac.code.Kinds$KindName typeKindName(com.sun.tools.javac.code.Type);
-}

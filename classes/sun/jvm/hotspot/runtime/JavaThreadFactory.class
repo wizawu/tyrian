@@ -1,4 +1,0 @@
-Compiled from "JavaThreadFactory.java"
-public interface sun.jvm.hotspot.runtime.JavaThreadFactory {
-  public abstract sun.jvm.hotspot.runtime.JavaThread createJavaThreadWrapper(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.types.TypeDataBase);
-}

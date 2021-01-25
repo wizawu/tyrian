@@ -1,6 +1,0 @@
-Compiled from "ModuleHelper.java"
-public class com.sun.tools.javac.util.ModuleHelper {
-  public com.sun.tools.javac.util.ModuleHelper();
-  public static void addExports(java.lang.Module, java.lang.Module);
-  static {};
-}

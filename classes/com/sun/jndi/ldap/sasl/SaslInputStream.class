@@ -1,8 +1,0 @@
-Compiled from "SaslInputStream.java"
-public class com.sun.jndi.ldap.sasl.SaslInputStream extends java.io.InputStream {
-  com.sun.jndi.ldap.sasl.SaslInputStream(javax.security.sasl.SaslClient, java.io.InputStream) throws javax.security.sasl.SaslException;
-  public int read() throws java.io.IOException;
-  public int read(byte[], int, int) throws java.io.IOException;
-  public int available() throws java.io.IOException;
-  public void close() throws java.io.IOException;
-}

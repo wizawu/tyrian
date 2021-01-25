@@ -1,7 +1,0 @@
-Compiled from "Main.java"
-public class jdk.javadoc.internal.tool.Main {
-  public static void main(java.lang.String...);
-  public static int execute(java.lang.String...);
-  public static int execute(java.lang.String[], java.io.PrintWriter);
-  public static int execute(java.lang.String[], java.io.PrintWriter, java.io.PrintWriter);
-}

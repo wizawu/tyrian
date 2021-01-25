@@ -1,5 +1,0 @@
-Compiled from "JavaNetInetAddressAccess.java"
-public interface jdk.internal.misc.JavaNetInetAddressAccess {
-  public abstract java.lang.String getOriginalHostName(java.net.InetAddress);
-  public abstract java.net.InetAddress getByName(java.lang.String, java.net.InetAddress) throws java.net.UnknownHostException;
-}

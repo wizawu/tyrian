@@ -1,5 +1,0 @@
-Compiled from "ModuleReference.java"
-public interface com.sun.jdi.ModuleReference extends com.sun.jdi.ObjectReference {
-  public abstract java.lang.String name();
-  public abstract com.sun.jdi.ClassLoaderReference classLoader();
-}

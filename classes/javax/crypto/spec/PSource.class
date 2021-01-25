@@ -1,5 +1,0 @@
-Compiled from "PSource.java"
-public class javax.crypto.spec.PSource {
-  protected javax.crypto.spec.PSource(java.lang.String);
-  public java.lang.String getAlgorithm();
-}

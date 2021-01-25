@@ -1,8 +1,0 @@
-Compiled from "StringStack.java"
-public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.StringStack extends java.util.Stack<java.lang.String> {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.StringStack();
-  public java.lang.String peekString();
-  public java.lang.String popString();
-  public java.lang.String pushString(java.lang.String);
-}

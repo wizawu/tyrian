@@ -1,6 +1,0 @@
-Compiled from "NotLinkException.java"
-public class java.nio.file.NotLinkException extends java.nio.file.FileSystemException {
-  static final long serialVersionUID;
-  public java.nio.file.NotLinkException(java.lang.String);
-  public java.nio.file.NotLinkException(java.lang.String, java.lang.String, java.lang.String);
-}

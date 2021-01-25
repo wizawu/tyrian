@@ -1,5 +1,0 @@
-Compiled from "TransportTimeoutException.java"
-public class com.sun.jdi.connect.TransportTimeoutException extends java.io.IOException {
-  public com.sun.jdi.connect.TransportTimeoutException();
-  public com.sun.jdi.connect.TransportTimeoutException(java.lang.String);
-}

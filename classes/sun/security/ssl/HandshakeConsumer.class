@@ -1,4 +1,0 @@
-Compiled from "HandshakeConsumer.java"
-interface sun.security.ssl.HandshakeConsumer {
-  public abstract void consume(sun.security.ssl.ConnectionContext, sun.security.ssl.SSLHandshake$HandshakeMessage) throws java.io.IOException;
-}

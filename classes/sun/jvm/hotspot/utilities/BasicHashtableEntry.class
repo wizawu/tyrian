@@ -1,8 +1,0 @@
-Compiled from "BasicHashtableEntry.java"
-public class sun.jvm.hotspot.utilities.BasicHashtableEntry extends sun.jvm.hotspot.runtime.VMObject {
-  public long hash();
-  public boolean isShared();
-  public sun.jvm.hotspot.utilities.BasicHashtableEntry next();
-  public sun.jvm.hotspot.utilities.BasicHashtableEntry(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

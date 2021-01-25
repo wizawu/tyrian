@@ -1,6 +1,0 @@
-Compiled from "TypeVariable.java"
-public interface javax.lang.model.type.TypeVariable extends javax.lang.model.type.ReferenceType {
-  public abstract javax.lang.model.element.Element asElement();
-  public abstract javax.lang.model.type.TypeMirror getUpperBound();
-  public abstract javax.lang.model.type.TypeMirror getLowerBound();
-}

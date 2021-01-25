@@ -1,3 +1,0 @@
-Compiled from "BaseType.java"
-public interface sun.reflect.generics.tree.BaseType extends sun.reflect.generics.tree.TypeSignature {
-}

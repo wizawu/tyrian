@@ -1,7 +1,0 @@
-Compiled from "Driver.java"
-class com.sun.java.util.jar.pack.Driver {
-  static final boolean $assertionsDisabled;
-  com.sun.java.util.jar.pack.Driver();
-  public static void main(java.lang.String[]) throws java.io.IOException;
-  static {};
-}

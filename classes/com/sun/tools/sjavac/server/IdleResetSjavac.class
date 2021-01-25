@@ -1,6 +1,0 @@
-Compiled from "IdleResetSjavac.java"
-public class com.sun.tools.sjavac.server.IdleResetSjavac implements com.sun.tools.sjavac.server.Sjavac {
-  public com.sun.tools.sjavac.server.IdleResetSjavac(com.sun.tools.sjavac.server.Sjavac, com.sun.tools.sjavac.server.Terminable, long);
-  public com.sun.tools.javac.main.Main$Result compile(java.lang.String[]);
-  public void shutdown();
-}

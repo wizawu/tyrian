@@ -1,9 +1,0 @@
-Compiled from "Platform.java"
-final class com.sun.media.sound.Platform {
-  static void initialize();
-  static boolean isBigEndian();
-  static boolean isMidiIOEnabled();
-  static boolean isPortsEnabled();
-  static boolean isDirectAudioEnabled();
-  static {};
-}

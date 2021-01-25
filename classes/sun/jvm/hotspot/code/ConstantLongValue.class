@@ -1,9 +1,0 @@
-Compiled from "ConstantLongValue.java"
-public class sun.jvm.hotspot.code.ConstantLongValue extends sun.jvm.hotspot.code.ScopeValue {
-  public sun.jvm.hotspot.code.ConstantLongValue(long);
-  public boolean isConstantLong();
-  public long getValue();
-  sun.jvm.hotspot.code.ConstantLongValue(sun.jvm.hotspot.code.DebugInfoReadStream);
-  public void print();
-  public void printOn(java.io.PrintStream);
-}

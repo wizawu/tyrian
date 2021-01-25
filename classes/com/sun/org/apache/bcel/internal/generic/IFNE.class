@@ -1,7 +1,0 @@
-Compiled from "IFNE.java"
-public class com.sun.org.apache.bcel.internal.generic.IFNE extends com.sun.org.apache.bcel.internal.generic.IfInstruction {
-  com.sun.org.apache.bcel.internal.generic.IFNE();
-  public com.sun.org.apache.bcel.internal.generic.IFNE(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
-  public com.sun.org.apache.bcel.internal.generic.IfInstruction negate();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

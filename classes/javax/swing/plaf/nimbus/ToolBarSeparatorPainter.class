@@ -1,6 +1,0 @@
-Compiled from "ToolBarSeparatorPainter.java"
-final class javax.swing.plaf.nimbus.ToolBarSeparatorPainter extends javax.swing.plaf.nimbus.AbstractRegionPainter {
-  javax.swing.plaf.nimbus.ToolBarSeparatorPainter();
-  protected javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext getPaintContext();
-  protected void doPaint(java.awt.Graphics2D, javax.swing.JComponent, int, int, java.lang.Object[]);
-}

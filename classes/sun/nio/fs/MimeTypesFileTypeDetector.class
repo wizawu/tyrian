@@ -1,5 +1,0 @@
-Compiled from "MimeTypesFileTypeDetector.java"
-class sun.nio.fs.MimeTypesFileTypeDetector extends sun.nio.fs.AbstractFileTypeDetector {
-  public sun.nio.fs.MimeTypesFileTypeDetector(java.nio.file.Path);
-  protected java.lang.String implProbeContentType(java.nio.file.Path);
-}

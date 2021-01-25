@@ -1,4 +1,0 @@
-Compiled from "UndoableEditListener.java"
-public interface javax.swing.event.UndoableEditListener extends java.util.EventListener {
-  public abstract void undoableEditHappened(javax.swing.event.UndoableEditEvent);
-}

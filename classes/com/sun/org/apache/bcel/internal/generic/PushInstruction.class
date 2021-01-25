@@ -1,3 +1,0 @@
-Compiled from "PushInstruction.java"
-public interface com.sun.org.apache.bcel.internal.generic.PushInstruction extends com.sun.org.apache.bcel.internal.generic.StackProducer {
-}

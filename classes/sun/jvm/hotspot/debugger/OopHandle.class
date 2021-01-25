@@ -1,3 +1,0 @@
-Compiled from "OopHandle.java"
-public interface sun.jvm.hotspot.debugger.OopHandle extends sun.jvm.hotspot.debugger.Address {
-}

@@ -1,7 +1,0 @@
-Compiled from "ArrayPrefixHelpers.java"
-class java.util.ArrayPrefixHelpers {
-  static final int CUMULATE;
-  static final int SUMMED;
-  static final int FINISHED;
-  static final int MIN_PARTITION;
-}

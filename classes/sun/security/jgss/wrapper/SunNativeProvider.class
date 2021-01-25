@@ -1,8 +1,0 @@
-Compiled from "SunNativeProvider.java"
-public final class sun.security.jgss.wrapper.SunNativeProvider extends java.security.Provider {
-  static final java.security.Provider INSTANCE;
-  static boolean DEBUG;
-  static void debug(java.lang.String);
-  public sun.security.jgss.wrapper.SunNativeProvider();
-  static {};
-}

@@ -1,5 +1,0 @@
-Compiled from "JavaTimeSupplementary_zh_HK.java"
-public class sun.text.resources.ext.JavaTimeSupplementary_zh_HK extends sun.util.resources.OpenListResourceBundle {
-  public sun.text.resources.ext.JavaTimeSupplementary_zh_HK();
-  protected final java.lang.Object[][] getContents();
-}

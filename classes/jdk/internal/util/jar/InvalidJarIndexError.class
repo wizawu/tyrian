@@ -1,6 +1,0 @@
-Compiled from "InvalidJarIndexError.java"
-public class jdk.internal.util.jar.InvalidJarIndexError extends java.lang.Error {
-  static final long serialVersionUID;
-  public jdk.internal.util.jar.InvalidJarIndexError();
-  public jdk.internal.util.jar.InvalidJarIndexError(java.lang.String);
-}

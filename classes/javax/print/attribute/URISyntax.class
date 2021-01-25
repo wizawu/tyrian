@@ -1,8 +1,0 @@
-Compiled from "URISyntax.java"
-public abstract class javax.print.attribute.URISyntax implements java.io.Serializable,java.lang.Cloneable {
-  protected javax.print.attribute.URISyntax(java.net.URI);
-  public java.net.URI getURI();
-  public int hashCode();
-  public boolean equals(java.lang.Object);
-  public java.lang.String toString();
-}

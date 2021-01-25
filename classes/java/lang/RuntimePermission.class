@@ -1,5 +1,0 @@
-Compiled from "RuntimePermission.java"
-public final class java.lang.RuntimePermission extends java.security.BasicPermission {
-  public java.lang.RuntimePermission(java.lang.String);
-  public java.lang.RuntimePermission(java.lang.String, java.lang.String);
-}

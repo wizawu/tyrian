@@ -1,6 +1,0 @@
-Compiled from "XAWTLookAndFeel.java"
-class sun.awt.X11.XAWTLookAndFeel extends com.sun.java.swing.plaf.motif.MotifLookAndFeel {
-  sun.awt.X11.XAWTLookAndFeel();
-  protected void initSystemColorDefaults(javax.swing.UIDefaults);
-  protected void initComponentDefaults(javax.swing.UIDefaults);
-}

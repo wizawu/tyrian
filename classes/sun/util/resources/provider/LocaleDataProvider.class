@@ -1,6 +1,0 @@
-Compiled from "LocaleDataProvider.java"
-public class sun.util.resources.provider.LocaleDataProvider extends sun.util.resources.LocaleData$CommonResourceBundleProvider {
-  public sun.util.resources.provider.LocaleDataProvider();
-  public java.util.ResourceBundle getBundle(java.lang.String, java.util.Locale);
-  static java.util.ResourceBundle loadResourceBundle(java.lang.String);
-}

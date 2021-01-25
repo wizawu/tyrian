@@ -1,7 +1,0 @@
-Compiled from "MethodHandlesAdapterBlob.java"
-public class sun.jvm.hotspot.code.MethodHandlesAdapterBlob extends sun.jvm.hotspot.code.AdapterBlob {
-  public sun.jvm.hotspot.code.MethodHandlesAdapterBlob(sun.jvm.hotspot.debugger.Address);
-  public boolean isMethodHandlesAdapterBlob();
-  public java.lang.String getName();
-  static {};
-}

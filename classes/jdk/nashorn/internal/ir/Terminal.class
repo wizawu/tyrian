@@ -1,4 +1,0 @@
-Compiled from "Terminal.java"
-public interface jdk.nashorn.internal.ir.Terminal {
-  public abstract boolean isTerminal();
-}

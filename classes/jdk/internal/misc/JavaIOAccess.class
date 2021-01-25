@@ -1,5 +1,0 @@
-Compiled from "JavaIOAccess.java"
-public interface jdk.internal.misc.JavaIOAccess {
-  public abstract java.io.Console console();
-  public abstract java.nio.charset.Charset charset();
-}

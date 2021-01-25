@@ -1,7 +1,0 @@
-Compiled from "ThreadControllerWrapper.java"
-public class com.sun.org.apache.xml.internal.utils.ThreadControllerWrapper {
-  public com.sun.org.apache.xml.internal.utils.ThreadControllerWrapper();
-  public static java.lang.Thread runThread(java.lang.Runnable, int);
-  public static void waitThread(java.lang.Thread, java.lang.Runnable) throws java.lang.InterruptedException;
-  static {};
-}

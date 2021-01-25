@@ -1,9 +1,0 @@
-Compiled from "SSLSocketInputRecord.java"
-final class sun.security.ssl.SSLSocketInputRecord extends sun.security.ssl.InputRecord implements sun.security.ssl.SSLRecord {
-  sun.security.ssl.SSLSocketInputRecord(sun.security.ssl.HandshakeHash);
-  int bytesInCompletePacket() throws java.io.IOException;
-  sun.security.ssl.Plaintext[] decode(java.nio.ByteBuffer[], int, int) throws java.io.IOException, javax.crypto.BadPaddingException;
-  void setReceiverStream(java.io.InputStream);
-  void setDeliverStream(java.io.OutputStream);
-  void deplete(boolean) throws java.io.IOException;
-}

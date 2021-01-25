@@ -1,4 +1,0 @@
-Compiled from "UnknownEntityException.java"
-public class javax.lang.model.UnknownEntityException extends java.lang.RuntimeException {
-  protected javax.lang.model.UnknownEntityException(java.lang.String);
-}

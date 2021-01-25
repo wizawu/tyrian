@@ -1,8 +1,0 @@
-Compiled from "RemoteVmImpl.java"
-public class sun.tools.jstatd.RemoteVmImpl implements sun.jvmstat.monitor.remote.RemoteVm {
-  sun.tools.jstatd.RemoteVmImpl(sun.jvmstat.monitor.BufferedMonitoredVm);
-  public byte[] getBytes();
-  public int getCapacity();
-  public void detach();
-  public int getLocalVmId();
-}

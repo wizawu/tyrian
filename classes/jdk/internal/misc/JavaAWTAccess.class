@@ -1,4 +1,0 @@
-Compiled from "JavaAWTAccess.java"
-public interface jdk.internal.misc.JavaAWTAccess {
-  public abstract java.lang.Object getAppletContext();
-}

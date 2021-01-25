@@ -1,6 +1,0 @@
-Compiled from "XMLPullParserConfiguration.java"
-public interface com.sun.org.apache.xerces.internal.xni.parser.XMLPullParserConfiguration extends com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration {
-  public abstract void setInputSource(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource) throws com.sun.org.apache.xerces.internal.xni.parser.XMLConfigurationException, java.io.IOException;
-  public abstract boolean parse(boolean) throws com.sun.org.apache.xerces.internal.xni.XNIException, java.io.IOException;
-  public abstract void cleanup();
-}

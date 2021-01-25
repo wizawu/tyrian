@@ -1,6 +1,0 @@
-Compiled from "Gt.java"
-public class com.sun.org.apache.xpath.internal.operations.Gt extends com.sun.org.apache.xpath.internal.operations.Operation {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.operations.Gt();
-  public com.sun.org.apache.xpath.internal.objects.XObject operate(com.sun.org.apache.xpath.internal.objects.XObject, com.sun.org.apache.xpath.internal.objects.XObject) throws javax.xml.transform.TransformerException;
-}

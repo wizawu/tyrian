@@ -1,5 +1,0 @@
-Compiled from "ContextNotEmptyException.java"
-public class javax.naming.ContextNotEmptyException extends javax.naming.NamingException {
-  public javax.naming.ContextNotEmptyException(java.lang.String);
-  public javax.naming.ContextNotEmptyException();
-}

@@ -1,5 +1,0 @@
-Compiled from "ModelChannelMixer.java"
-public interface com.sun.media.sound.ModelChannelMixer extends javax.sound.midi.MidiChannel {
-  public abstract boolean process(float[][], int, int);
-  public abstract void stop();
-}

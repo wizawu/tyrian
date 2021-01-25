@@ -1,5 +1,0 @@
-Compiled from "VisibleMemberCache.java"
-public class jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberCache {
-  public jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberCache(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration);
-  public jdk.javadoc.internal.doclets.toolkit.util.VisibleMemberTable getVisibleMemberTable(javax.lang.model.element.TypeElement);
-}

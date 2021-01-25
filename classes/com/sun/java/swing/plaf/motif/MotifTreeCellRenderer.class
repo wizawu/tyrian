@@ -1,8 +1,0 @@
-Compiled from "MotifTreeCellRenderer.java"
-public class com.sun.java.swing.plaf.motif.MotifTreeCellRenderer extends javax.swing.tree.DefaultTreeCellRenderer {
-  static final int LEAF_SIZE;
-  static final javax.swing.Icon LEAF_ICON;
-  public com.sun.java.swing.plaf.motif.MotifTreeCellRenderer();
-  public static javax.swing.Icon loadLeafIcon();
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "XRVolatileSurfaceManager.java"
-public class sun.java2d.xr.XRVolatileSurfaceManager extends sun.awt.image.VolatileSurfaceManager {
-  public sun.java2d.xr.XRVolatileSurfaceManager(sun.awt.image.SunVolatileImage, java.lang.Object);
-  protected boolean isAccelerationEnabled();
-  protected sun.java2d.SurfaceData initAcceleratedSurface();
-  protected boolean isConfigValid(java.awt.GraphicsConfiguration);
-  public java.awt.ImageCapabilities getCapabilities(java.awt.GraphicsConfiguration);
-}

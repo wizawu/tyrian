@@ -1,7 +1,0 @@
-Compiled from "ResolutionException.java"
-public class java.lang.module.ResolutionException extends java.lang.RuntimeException {
-  public java.lang.module.ResolutionException();
-  public java.lang.module.ResolutionException(java.lang.String);
-  public java.lang.module.ResolutionException(java.lang.Throwable);
-  public java.lang.module.ResolutionException(java.lang.String, java.lang.Throwable);
-}

@@ -1,8 +1,0 @@
-Compiled from "ThrowableTracer.java"
-public final class jdk.jfr.internal.instrument.ThrowableTracer {
-  public jdk.jfr.internal.instrument.ThrowableTracer();
-  public static void traceError(java.lang.Error, java.lang.String);
-  public static void traceThrowable(java.lang.Throwable, java.lang.String);
-  public static long numThrowables();
-  static {};
-}

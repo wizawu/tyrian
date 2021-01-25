@@ -1,6 +1,0 @@
-Compiled from "MulticastChannel.java"
-public interface java.nio.channels.MulticastChannel extends java.nio.channels.NetworkChannel {
-  public abstract void close() throws java.io.IOException;
-  public abstract java.nio.channels.MembershipKey join(java.net.InetAddress, java.net.NetworkInterface) throws java.io.IOException;
-  public abstract java.nio.channels.MembershipKey join(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress) throws java.io.IOException;
-}

@@ -1,5 +1,0 @@
-Compiled from "CallDynamicJavaNode.java"
-public class sun.jvm.hotspot.opto.CallDynamicJavaNode extends sun.jvm.hotspot.opto.CallJavaNode {
-  public sun.jvm.hotspot.opto.CallDynamicJavaNode(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

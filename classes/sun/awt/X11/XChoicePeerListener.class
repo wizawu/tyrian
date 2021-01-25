@@ -1,5 +1,0 @@
-Compiled from "XChoicePeerListener.java"
-interface sun.awt.X11.XChoicePeerListener {
-  public abstract void unfurledChoiceOpening(sun.awt.X11.ListHelper);
-  public abstract void unfurledChoiceClosing();
-}

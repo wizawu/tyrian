@@ -1,6 +1,0 @@
-Compiled from "PortFileMonitor.java"
-public class com.sun.tools.sjavac.server.PortFileMonitor {
-  public com.sun.tools.sjavac.server.PortFileMonitor(com.sun.tools.sjavac.server.PortFile, com.sun.tools.sjavac.server.SjavacServer);
-  public void start();
-  public void shutdown();
-}

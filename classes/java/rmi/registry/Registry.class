@@ -1,9 +1,0 @@
-Compiled from "Registry.java"
-public interface java.rmi.registry.Registry extends java.rmi.Remote {
-  public static final int REGISTRY_PORT;
-  public abstract java.rmi.Remote lookup(java.lang.String) throws java.rmi.RemoteException, java.rmi.NotBoundException, java.rmi.AccessException;
-  public abstract void bind(java.lang.String, java.rmi.Remote) throws java.rmi.RemoteException, java.rmi.AlreadyBoundException, java.rmi.AccessException;
-  public abstract void unbind(java.lang.String) throws java.rmi.RemoteException, java.rmi.NotBoundException, java.rmi.AccessException;
-  public abstract void rebind(java.lang.String, java.rmi.Remote) throws java.rmi.RemoteException, java.rmi.AccessException;
-  public abstract java.lang.String[] list() throws java.rmi.RemoteException, java.rmi.AccessException;
-}

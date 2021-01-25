@@ -1,7 +1,0 @@
-Compiled from "OptionFinder.java"
-public class sun.tools.jstat.OptionFinder {
-  java.util.List<java.net.URL> optionsSources;
-  public sun.tools.jstat.OptionFinder(java.util.List<java.net.URL>);
-  public sun.tools.jstat.OptionFormat getOptionFormat(java.lang.String, boolean);
-  protected sun.tools.jstat.OptionFormat getOptionFormat(java.lang.String, java.util.List<java.net.URL>);
-}

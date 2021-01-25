@@ -1,6 +1,0 @@
-Compiled from "TIFFStreamMetadataFormatResources.java"
-public class com.sun.imageio.plugins.tiff.TIFFStreamMetadataFormatResources extends java.util.ListResourceBundle {
-  public com.sun.imageio.plugins.tiff.TIFFStreamMetadataFormatResources();
-  public java.lang.Object[][] getContents();
-  static {};
-}

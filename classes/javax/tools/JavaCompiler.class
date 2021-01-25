@@ -1,5 +1,0 @@
-Compiled from "JavaCompiler.java"
-public interface javax.tools.JavaCompiler extends javax.tools.Tool,javax.tools.OptionChecker {
-  public abstract javax.tools.JavaCompiler$CompilationTask getTask(java.io.Writer, javax.tools.JavaFileManager, javax.tools.DiagnosticListener<? super javax.tools.JavaFileObject>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<? extends javax.tools.JavaFileObject>);
-  public abstract javax.tools.StandardJavaFileManager getStandardFileManager(javax.tools.DiagnosticListener<? super javax.tools.JavaFileObject>, java.util.Locale, java.nio.charset.Charset);
-}

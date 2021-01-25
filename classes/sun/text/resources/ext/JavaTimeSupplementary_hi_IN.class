@@ -1,5 +1,0 @@
-Compiled from "JavaTimeSupplementary_hi_IN.java"
-public class sun.text.resources.ext.JavaTimeSupplementary_hi_IN extends sun.util.resources.OpenListResourceBundle {
-  public sun.text.resources.ext.JavaTimeSupplementary_hi_IN();
-  protected final java.lang.Object[][] getContents();
-}

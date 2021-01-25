@@ -1,6 +1,0 @@
-Compiled from "FileSystemNotFoundException.java"
-public class java.nio.file.FileSystemNotFoundException extends java.lang.RuntimeException {
-  static final long serialVersionUID;
-  public java.nio.file.FileSystemNotFoundException();
-  public java.nio.file.FileSystemNotFoundException(java.lang.String);
-}

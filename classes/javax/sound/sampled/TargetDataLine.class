@@ -1,6 +1,0 @@
-Compiled from "TargetDataLine.java"
-public interface javax.sound.sampled.TargetDataLine extends javax.sound.sampled.DataLine {
-  public abstract void open(javax.sound.sampled.AudioFormat, int) throws javax.sound.sampled.LineUnavailableException;
-  public abstract void open(javax.sound.sampled.AudioFormat) throws javax.sound.sampled.LineUnavailableException;
-  public abstract int read(byte[], int, int);
-}

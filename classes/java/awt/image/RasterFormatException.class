@@ -1,4 +1,0 @@
-Compiled from "RasterFormatException.java"
-public class java.awt.image.RasterFormatException extends java.lang.RuntimeException {
-  public java.awt.image.RasterFormatException(java.lang.String);
-}

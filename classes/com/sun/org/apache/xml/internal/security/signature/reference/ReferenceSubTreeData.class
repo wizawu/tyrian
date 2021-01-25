@@ -1,7 +1,0 @@
-Compiled from "ReferenceSubTreeData.java"
-public class com.sun.org.apache.xml.internal.security.signature.reference.ReferenceSubTreeData implements com.sun.org.apache.xml.internal.security.signature.reference.ReferenceNodeSetData {
-  public com.sun.org.apache.xml.internal.security.signature.reference.ReferenceSubTreeData(org.w3c.dom.Node, boolean);
-  public java.util.Iterator<org.w3c.dom.Node> iterator();
-  public org.w3c.dom.Node getRoot();
-  public boolean excludeComments();
-}

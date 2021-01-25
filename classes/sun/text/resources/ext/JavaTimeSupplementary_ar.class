@@ -1,5 +1,0 @@
-Compiled from "JavaTimeSupplementary_ar.java"
-public class sun.text.resources.ext.JavaTimeSupplementary_ar extends sun.util.resources.OpenListResourceBundle {
-  public sun.text.resources.ext.JavaTimeSupplementary_ar();
-  protected final java.lang.Object[][] getContents();
-}

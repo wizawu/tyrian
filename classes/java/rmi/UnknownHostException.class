@@ -1,5 +1,0 @@
-Compiled from "UnknownHostException.java"
-public class java.rmi.UnknownHostException extends java.rmi.RemoteException {
-  public java.rmi.UnknownHostException(java.lang.String);
-  public java.rmi.UnknownHostException(java.lang.String, java.lang.Exception);
-}

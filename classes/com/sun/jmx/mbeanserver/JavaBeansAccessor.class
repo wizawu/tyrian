@@ -1,8 +1,0 @@
-Compiled from "JavaBeansAccessor.java"
-class com.sun.jmx.mbeanserver.JavaBeansAccessor {
-  com.sun.jmx.mbeanserver.JavaBeansAccessor();
-  static boolean isAvailable();
-  static java.lang.reflect.Method getReadMethod(java.lang.Class<?>, java.lang.String) throws java.lang.Exception;
-  static java.lang.String[] getConstructorPropertiesValue(java.lang.reflect.Constructor<?>);
-  static {};
-}

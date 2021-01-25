@@ -1,5 +1,0 @@
-Compiled from "FormatData_hu_HU.java"
-public class sun.text.resources.ext.FormatData_hu_HU extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_hu_HU();
-  protected final java.lang.Object[][] getContents();
-}

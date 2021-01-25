@@ -1,5 +1,0 @@
-Compiled from "HTMLHeadElement.java"
-public interface org.w3c.dom.html.HTMLHeadElement extends org.w3c.dom.html.HTMLElement {
-  public abstract java.lang.String getProfile();
-  public abstract void setProfile(java.lang.String);
-}

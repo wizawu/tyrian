@@ -1,4 +1,0 @@
-Compiled from "TelnetProtocolException.java"
-public class sun.net.TelnetProtocolException extends java.io.IOException {
-  public sun.net.TelnetProtocolException(java.lang.String);
-}

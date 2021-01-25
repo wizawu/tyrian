@@ -1,5 +1,0 @@
-Compiled from "AssertionFailure.java"
-public class sun.jvm.hotspot.utilities.AssertionFailure extends java.lang.RuntimeException {
-  public sun.jvm.hotspot.utilities.AssertionFailure();
-  public sun.jvm.hotspot.utilities.AssertionFailure(java.lang.String);
-}

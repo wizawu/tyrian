@@ -1,8 +1,0 @@
-Compiled from "ChangeCipherSpec.java"
-final class sun.security.ssl.ChangeCipherSpec {
-  static final sun.security.ssl.SSLConsumer t10Consumer;
-  static final sun.security.ssl.HandshakeProducer t10Producer;
-  static final sun.security.ssl.SSLConsumer t13Consumer;
-  sun.security.ssl.ChangeCipherSpec();
-  static {};
-}

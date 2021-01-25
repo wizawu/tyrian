@@ -1,9 +1,0 @@
-Compiled from "ConstructorRepository.java"
-public class sun.reflect.generics.repository.ConstructorRepository extends sun.reflect.generics.repository.GenericDeclRepository<sun.reflect.generics.tree.MethodTypeSignature> {
-  protected sun.reflect.generics.repository.ConstructorRepository(java.lang.String, sun.reflect.generics.factory.GenericsFactory);
-  protected sun.reflect.generics.tree.MethodTypeSignature parse(java.lang.String);
-  public static sun.reflect.generics.repository.ConstructorRepository make(java.lang.String, sun.reflect.generics.factory.GenericsFactory);
-  public java.lang.reflect.Type[] getParameterTypes();
-  public java.lang.reflect.Type[] getExceptionTypes();
-  protected sun.reflect.generics.tree.Tree parse(java.lang.String);
-}

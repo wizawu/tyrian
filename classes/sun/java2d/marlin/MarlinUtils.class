@@ -1,7 +1,0 @@
-Compiled from "MarlinUtils.java"
-public final class sun.java2d.marlin.MarlinUtils {
-  public static void logInfo(java.lang.String);
-  public static void logException(java.lang.String, java.lang.Throwable);
-  public static java.lang.ThreadGroup getRootThreadGroup();
-  static {};
-}

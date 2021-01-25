@@ -1,8 +1,0 @@
-Compiled from "SecurityConfiguration.java"
-public class com.sun.org.apache.xerces.internal.parsers.SecurityConfiguration extends com.sun.org.apache.xerces.internal.parsers.XIncludeAwareParserConfiguration {
-  protected static final java.lang.String SECURITY_MANAGER_PROPERTY;
-  public com.sun.org.apache.xerces.internal.parsers.SecurityConfiguration();
-  public com.sun.org.apache.xerces.internal.parsers.SecurityConfiguration(com.sun.org.apache.xerces.internal.util.SymbolTable);
-  public com.sun.org.apache.xerces.internal.parsers.SecurityConfiguration(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
-  public com.sun.org.apache.xerces.internal.parsers.SecurityConfiguration(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool, com.sun.org.apache.xerces.internal.xni.parser.XMLComponentManager);
-}

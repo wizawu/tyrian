@@ -1,8 +1,0 @@
-Compiled from "StringPool.java"
-public final class jdk.jfr.internal.StringPool {
-  static final int MIN_LIMIT;
-  static final int MAX_LIMIT;
-  public jdk.jfr.internal.StringPool();
-  public static long addString(java.lang.String);
-  static {};
-}

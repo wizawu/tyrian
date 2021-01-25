@@ -1,6 +1,0 @@
-Compiled from "InternalDialog.java"
-public class sun.tools.jconsole.InternalDialog extends javax.swing.JInternalFrame {
-  protected javax.swing.JLabel statusBar;
-  public sun.tools.jconsole.InternalDialog(sun.tools.jconsole.JConsole, java.lang.String, boolean);
-  public void setLocationRelativeTo(java.awt.Component);
-}

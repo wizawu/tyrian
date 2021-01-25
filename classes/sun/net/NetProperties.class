@@ -1,7 +1,0 @@
-Compiled from "NetProperties.java"
-public class sun.net.NetProperties {
-  public static java.lang.String get(java.lang.String);
-  public static java.lang.Integer getInteger(java.lang.String, int);
-  public static java.lang.Boolean getBoolean(java.lang.String);
-  static {};
-}

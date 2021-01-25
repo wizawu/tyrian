@@ -1,6 +1,0 @@
-Compiled from "PhaseCFG.java"
-public class sun.jvm.hotspot.opto.PhaseCFG extends sun.jvm.hotspot.opto.Phase {
-  public sun.jvm.hotspot.opto.PhaseCFG(sun.jvm.hotspot.debugger.Address);
-  public void dump(java.io.PrintStream);
-  static {};
-}

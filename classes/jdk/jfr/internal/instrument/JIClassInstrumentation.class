@@ -1,5 +1,0 @@
-Compiled from "JIClassInstrumentation.java"
-final class jdk.jfr.internal.instrument.JIClassInstrumentation {
-  jdk.jfr.internal.instrument.JIClassInstrumentation(java.lang.Class<?>, java.lang.Class<?>, byte[]) throws java.lang.ClassNotFoundException, java.io.IOException;
-  public byte[] getNewBytes();
-}

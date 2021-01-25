@@ -1,9 +1,0 @@
-Compiled from "Attributes2.java"
-public interface org.xml.sax.ext.Attributes2 extends org.xml.sax.Attributes {
-  public abstract boolean isDeclared(int);
-  public abstract boolean isDeclared(java.lang.String);
-  public abstract boolean isDeclared(java.lang.String, java.lang.String);
-  public abstract boolean isSpecified(int);
-  public abstract boolean isSpecified(java.lang.String, java.lang.String);
-  public abstract boolean isSpecified(java.lang.String);
-}

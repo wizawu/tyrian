@@ -1,7 +1,0 @@
-Compiled from "TypeAnnotationWriter.java"
-public class com.sun.tools.javap.TypeAnnotationWriter extends com.sun.tools.javap.InstructionDetailWriter {
-  static com.sun.tools.javap.TypeAnnotationWriter instance(com.sun.tools.javap.Context);
-  protected com.sun.tools.javap.TypeAnnotationWriter(com.sun.tools.javap.Context);
-  public void reset(com.sun.tools.classfile.Code_attribute);
-  void writeDetails(com.sun.tools.classfile.Instruction);
-}

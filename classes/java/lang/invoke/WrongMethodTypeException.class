@@ -1,7 +1,0 @@
-Compiled from "WrongMethodTypeException.java"
-public class java.lang.invoke.WrongMethodTypeException extends java.lang.RuntimeException {
-  public java.lang.invoke.WrongMethodTypeException();
-  public java.lang.invoke.WrongMethodTypeException(java.lang.String);
-  java.lang.invoke.WrongMethodTypeException(java.lang.String, java.lang.Throwable);
-  java.lang.invoke.WrongMethodTypeException(java.lang.Throwable);
-}

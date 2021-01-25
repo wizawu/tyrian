@@ -1,4 +1,0 @@
-Compiled from "SuppressWarnings.java"
-public interface java.lang.SuppressWarnings extends java.lang.annotation.Annotation {
-  public abstract java.lang.String[] value();
-}

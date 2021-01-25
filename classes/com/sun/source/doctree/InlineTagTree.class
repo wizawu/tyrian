@@ -1,4 +1,0 @@
-Compiled from "InlineTagTree.java"
-public interface com.sun.source.doctree.InlineTagTree extends com.sun.source.doctree.DocTree {
-  public abstract java.lang.String getTagName();
-}

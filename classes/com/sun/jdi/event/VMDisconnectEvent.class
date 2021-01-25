@@ -1,3 +1,0 @@
-Compiled from "VMDisconnectEvent.java"
-public interface com.sun.jdi.event.VMDisconnectEvent extends com.sun.jdi.event.Event {
-}

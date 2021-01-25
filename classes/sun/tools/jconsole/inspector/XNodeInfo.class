@@ -1,9 +1,0 @@
-Compiled from "XNodeInfo.java"
-public class sun.tools.jconsole.inspector.XNodeInfo {
-  public sun.tools.jconsole.inspector.XNodeInfo(sun.tools.jconsole.inspector.XNodeInfo$Type, java.lang.Object, java.lang.String, java.lang.String);
-  public sun.tools.jconsole.inspector.XNodeInfo$Type getType();
-  public java.lang.Object getData();
-  public java.lang.String getLabel();
-  public java.lang.String getToolTipText();
-  public java.lang.String toString();
-}

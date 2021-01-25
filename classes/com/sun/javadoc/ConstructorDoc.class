@@ -1,3 +1,0 @@
-Compiled from "ConstructorDoc.java"
-public interface com.sun.javadoc.ConstructorDoc extends com.sun.javadoc.ExecutableMemberDoc {
-}

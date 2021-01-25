@@ -1,5 +1,0 @@
-Compiled from "SystemSleepListener.java"
-public interface java.awt.desktop.SystemSleepListener extends java.awt.desktop.SystemEventListener {
-  public abstract void systemAboutToSleep(java.awt.desktop.SystemSleepEvent);
-  public abstract void systemAwoke(java.awt.desktop.SystemSleepEvent);
-}

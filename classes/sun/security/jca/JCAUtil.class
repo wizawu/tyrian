@@ -1,5 +1,0 @@
-Compiled from "JCAUtil.java"
-public final class sun.security.jca.JCAUtil {
-  public static int getTempArraySize(int);
-  public static java.security.SecureRandom getSecureRandom();
-}

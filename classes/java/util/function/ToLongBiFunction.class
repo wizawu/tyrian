@@ -1,4 +1,0 @@
-Compiled from "ToLongBiFunction.java"
-public interface java.util.function.ToLongBiFunction<T, U> {
-  public abstract long applyAsLong(T, U);
-}

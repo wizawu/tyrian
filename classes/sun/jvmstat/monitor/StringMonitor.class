@@ -1,4 +1,0 @@
-Compiled from "StringMonitor.java"
-public interface sun.jvmstat.monitor.StringMonitor extends sun.jvmstat.monitor.Monitor {
-  public abstract java.lang.String stringValue();
-}

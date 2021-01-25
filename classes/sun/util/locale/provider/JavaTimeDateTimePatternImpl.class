@@ -1,8 +1,0 @@
-Compiled from "JavaTimeDateTimePatternImpl.java"
-public class sun.util.locale.provider.JavaTimeDateTimePatternImpl extends sun.text.spi.JavaTimeDateTimePatternProvider implements sun.util.locale.provider.AvailableLanguageTags {
-  public sun.util.locale.provider.JavaTimeDateTimePatternImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
-  public java.util.Locale[] getAvailableLocales();
-  public boolean isSupportedLocale(java.util.Locale);
-  public java.lang.String getJavaTimeDateTimePattern(int, int, java.lang.String, java.util.Locale);
-  public java.util.Set<java.lang.String> getAvailableLanguageTags();
-}

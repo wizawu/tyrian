@@ -1,7 +1,0 @@
-Compiled from "GeneralSecurityException.java"
-public class java.security.GeneralSecurityException extends java.lang.Exception {
-  public java.security.GeneralSecurityException();
-  public java.security.GeneralSecurityException(java.lang.String);
-  public java.security.GeneralSecurityException(java.lang.String, java.lang.Throwable);
-  public java.security.GeneralSecurityException(java.lang.Throwable);
-}

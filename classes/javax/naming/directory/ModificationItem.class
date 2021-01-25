@@ -1,7 +1,0 @@
-Compiled from "ModificationItem.java"
-public class javax.naming.directory.ModificationItem implements java.io.Serializable {
-  public javax.naming.directory.ModificationItem(int, javax.naming.directory.Attribute);
-  public int getModificationOp();
-  public javax.naming.directory.Attribute getAttribute();
-  public java.lang.String toString();
-}

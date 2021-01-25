@@ -1,7 +1,0 @@
-Compiled from "AccessibleTextSequence.java"
-public class javax.accessibility.AccessibleTextSequence {
-  public int startIndex;
-  public int endIndex;
-  public java.lang.String text;
-  public javax.accessibility.AccessibleTextSequence(int, int, java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "XMBeanOperations.java"
-public class sun.tools.jconsole.inspector.XMBeanOperations extends sun.tools.jconsole.inspector.XOperations {
-  public sun.tools.jconsole.inspector.XMBeanOperations(sun.tools.jconsole.MBeansTab);
-  protected javax.management.MBeanOperationInfo[] updateOperations(javax.management.MBeanOperationInfo[]);
-}

@@ -1,6 +1,0 @@
-Compiled from "LayoutPath.java"
-public abstract class java.awt.font.LayoutPath {
-  public java.awt.font.LayoutPath();
-  public abstract boolean pointToPath(java.awt.geom.Point2D, java.awt.geom.Point2D);
-  public abstract void pathToPoint(java.awt.geom.Point2D, boolean, java.awt.geom.Point2D);
-}

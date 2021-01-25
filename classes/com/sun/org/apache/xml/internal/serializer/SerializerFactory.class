@@ -1,4 +1,0 @@
-Compiled from "SerializerFactory.java"
-public final class com.sun.org.apache.xml.internal.serializer.SerializerFactory {
-  public static com.sun.org.apache.xml.internal.serializer.Serializer getSerializer(java.util.Properties);
-}

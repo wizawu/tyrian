@@ -1,9 +1,0 @@
-Compiled from "CommonDataSource.java"
-public interface javax.sql.CommonDataSource {
-  public abstract java.io.PrintWriter getLogWriter() throws java.sql.SQLException;
-  public abstract void setLogWriter(java.io.PrintWriter) throws java.sql.SQLException;
-  public abstract void setLoginTimeout(int) throws java.sql.SQLException;
-  public abstract int getLoginTimeout() throws java.sql.SQLException;
-  public abstract java.util.logging.Logger getParentLogger() throws java.sql.SQLFeatureNotSupportedException;
-  public default java.sql.ShardingKeyBuilder createShardingKeyBuilder() throws java.sql.SQLException;
-}

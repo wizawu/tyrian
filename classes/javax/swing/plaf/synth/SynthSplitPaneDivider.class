@@ -1,9 +1,0 @@
-Compiled from "SynthSplitPaneDivider.java"
-class javax.swing.plaf.synth.SynthSplitPaneDivider extends javax.swing.plaf.basic.BasicSplitPaneDivider {
-  public javax.swing.plaf.synth.SynthSplitPaneDivider(javax.swing.plaf.basic.BasicSplitPaneUI);
-  protected void setMouseOver(boolean);
-  public void propertyChange(java.beans.PropertyChangeEvent);
-  public void paint(java.awt.Graphics);
-  protected javax.swing.JButton createLeftOneTouchButton();
-  protected javax.swing.JButton createRightOneTouchButton();
-}

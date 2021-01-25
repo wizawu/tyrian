@@ -1,4 +1,0 @@
-Compiled from "Label.java"
-public interface jdk.jfr.Label extends java.lang.annotation.Annotation {
-  public abstract java.lang.String value();
-}

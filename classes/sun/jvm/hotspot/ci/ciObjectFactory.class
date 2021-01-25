@@ -1,9 +1,0 @@
-Compiled from "ciObjectFactory.java"
-public class sun.jvm.hotspot.ci.ciObjectFactory extends sun.jvm.hotspot.runtime.VMObject {
-  public static sun.jvm.hotspot.ci.ciObject get(sun.jvm.hotspot.debugger.Address);
-  public static sun.jvm.hotspot.ci.ciMetadata getMetadata(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.utilities.GrowableArray<sun.jvm.hotspot.ci.ciMetadata> objects();
-  public sun.jvm.hotspot.utilities.GrowableArray<sun.jvm.hotspot.ci.ciSymbol> symbols();
-  public sun.jvm.hotspot.ci.ciObjectFactory(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

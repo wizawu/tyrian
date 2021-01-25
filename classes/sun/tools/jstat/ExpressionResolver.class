@@ -1,6 +1,0 @@
-Compiled from "ExpressionResolver.java"
-public class sun.tools.jstat.ExpressionResolver implements sun.tools.jstat.ExpressionEvaluator {
-  sun.tools.jstat.ExpressionResolver(sun.jvmstat.monitor.MonitoredVm);
-  public java.lang.Object evaluate(sun.tools.jstat.Expression) throws sun.jvmstat.monitor.MonitorException;
-  static {};
-}

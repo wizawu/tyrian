@@ -1,4 +1,0 @@
-Compiled from "BeanContextServicesListener.java"
-public interface java.beans.beancontext.BeanContextServicesListener extends java.beans.beancontext.BeanContextServiceRevokedListener {
-  public abstract void serviceAvailable(java.beans.beancontext.BeanContextServiceAvailableEvent);
-}

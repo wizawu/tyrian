@@ -1,4 +1,0 @@
-Compiled from "DoubleFunction.java"
-public interface java.util.function.DoubleFunction<R> {
-  public abstract R apply(double);
-}

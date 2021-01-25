@@ -1,9 +1,0 @@
-Compiled from "DSAPrivateKey.java"
-public final class sun.security.provider.DSAPrivateKey extends sun.security.pkcs.PKCS8Key implements java.security.interfaces.DSAPrivateKey,java.io.Serializable {
-  public sun.security.provider.DSAPrivateKey();
-  public sun.security.provider.DSAPrivateKey(java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger) throws java.security.InvalidKeyException;
-  public sun.security.provider.DSAPrivateKey(byte[]) throws java.security.InvalidKeyException;
-  public java.security.interfaces.DSAParams getParams();
-  public java.math.BigInteger getX();
-  protected void parseKeyBits() throws java.security.InvalidKeyException;
-}

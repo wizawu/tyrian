@@ -1,6 +1,0 @@
-Compiled from "AnnotationDesc.java"
-public interface com.sun.javadoc.AnnotationDesc {
-  public abstract com.sun.javadoc.AnnotationTypeDoc annotationType();
-  public abstract com.sun.javadoc.AnnotationDesc$ElementValuePair[] elementValues();
-  public abstract boolean isSynthesized();
-}

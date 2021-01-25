@@ -1,9 +1,0 @@
-Compiled from "PropertyTree.java"
-public interface jdk.nashorn.api.tree.PropertyTree extends jdk.nashorn.api.tree.Tree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getKey();
-  public abstract jdk.nashorn.api.tree.ExpressionTree getValue();
-  public abstract jdk.nashorn.api.tree.FunctionExpressionTree getGetter();
-  public abstract jdk.nashorn.api.tree.FunctionExpressionTree getSetter();
-  public abstract boolean isStatic();
-  public abstract boolean isComputed();
-}

@@ -1,9 +1,0 @@
-Compiled from "WriterOutputBuffer.java"
-class com.sun.org.apache.xalan.internal.xsltc.runtime.output.WriterOutputBuffer implements com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer {
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.output.WriterOutputBuffer(java.io.Writer);
-  public java.lang.String close();
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer append(java.lang.String);
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer append(char[], int, int);
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.output.OutputBuffer append(char);
-  static {};
-}

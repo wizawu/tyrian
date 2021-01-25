@@ -1,6 +1,0 @@
-Compiled from "UnmappableCharacterException.java"
-public class java.nio.charset.UnmappableCharacterException extends java.nio.charset.CharacterCodingException {
-  public java.nio.charset.UnmappableCharacterException(int);
-  public int getInputLength();
-  public java.lang.String getMessage();
-}

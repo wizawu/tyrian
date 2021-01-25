@@ -1,5 +1,0 @@
-Compiled from "NoSuchFieldError.java"
-public class java.lang.NoSuchFieldError extends java.lang.IncompatibleClassChangeError {
-  public java.lang.NoSuchFieldError();
-  public java.lang.NoSuchFieldError(java.lang.String);
-}

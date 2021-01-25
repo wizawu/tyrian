@@ -1,5 +1,0 @@
-Compiled from "Loggable.java"
-public interface jdk.nashorn.internal.runtime.logging.Loggable {
-  public abstract jdk.nashorn.internal.runtime.logging.DebugLogger initLogger(jdk.nashorn.internal.runtime.Context);
-  public abstract jdk.nashorn.internal.runtime.logging.DebugLogger getLogger();
-}

@@ -1,8 +1,0 @@
-Compiled from "HttpServerProvider.java"
-public abstract class com.sun.net.httpserver.spi.HttpServerProvider {
-  public abstract com.sun.net.httpserver.HttpServer createHttpServer(java.net.InetSocketAddress, int) throws java.io.IOException;
-  public abstract com.sun.net.httpserver.HttpsServer createHttpsServer(java.net.InetSocketAddress, int) throws java.io.IOException;
-  protected com.sun.net.httpserver.spi.HttpServerProvider();
-  public static com.sun.net.httpserver.spi.HttpServerProvider provider();
-  static {};
-}

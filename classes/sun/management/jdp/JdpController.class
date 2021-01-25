@@ -1,6 +1,0 @@
-Compiled from "JdpController.java"
-public final class sun.management.jdp.JdpController {
-  public static synchronized void startDiscoveryService(java.net.InetAddress, int, java.lang.String, java.lang.String) throws java.io.IOException, sun.management.jdp.JdpException;
-  public static synchronized void stopDiscoveryService();
-  static {};
-}

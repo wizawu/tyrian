@@ -1,5 +1,0 @@
-Compiled from "Handler.java"
-public class sun.net.www.protocol.jmod.Handler extends java.net.URLStreamHandler {
-  public sun.net.www.protocol.jmod.Handler();
-  protected java.net.URLConnection openConnection(java.net.URL) throws java.io.IOException;
-}

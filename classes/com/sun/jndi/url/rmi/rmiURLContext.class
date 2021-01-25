@@ -1,5 +1,0 @@
-Compiled from "rmiURLContext.java"
-public class com.sun.jndi.url.rmi.rmiURLContext extends com.sun.jndi.toolkit.url.GenericURLContext {
-  public com.sun.jndi.url.rmi.rmiURLContext(java.util.Hashtable<?, ?>);
-  protected javax.naming.spi.ResolveResult getRootURLContext(java.lang.String, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
-}

@@ -1,4 +1,0 @@
-Compiled from "ThreadListener.java"
-interface com.sun.tools.jdi.ThreadListener extends java.util.EventListener {
-  public abstract boolean threadResumable(com.sun.tools.jdi.ThreadAction);
-}

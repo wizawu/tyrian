@@ -1,5 +1,0 @@
-Compiled from "ParameterDescriptor.java"
-public class java.beans.ParameterDescriptor extends java.beans.FeatureDescriptor {
-  public java.beans.ParameterDescriptor();
-  java.beans.ParameterDescriptor(java.beans.ParameterDescriptor);
-}

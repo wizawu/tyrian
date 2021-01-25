@@ -1,3 +1,0 @@
-Compiled from "NoType.java"
-public interface javax.lang.model.type.NoType extends javax.lang.model.type.TypeMirror {
-}

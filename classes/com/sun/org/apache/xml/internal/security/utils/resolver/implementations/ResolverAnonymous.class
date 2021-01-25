@@ -1,9 +1,0 @@
-Compiled from "ResolverAnonymous.java"
-public class com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverAnonymous extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
-  public boolean engineIsThreadSafe();
-  public com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverAnonymous(java.lang.String) throws java.io.FileNotFoundException, java.io.IOException;
-  public com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverAnonymous(java.io.InputStream);
-  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput engineResolveURI(com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext);
-  public boolean engineCanResolveURI(com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext);
-  public java.lang.String[] engineGetPropertyKeys();
-}

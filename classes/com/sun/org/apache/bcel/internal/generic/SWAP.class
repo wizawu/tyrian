@@ -1,5 +1,0 @@
-Compiled from "SWAP.java"
-public class com.sun.org.apache.bcel.internal.generic.SWAP extends com.sun.org.apache.bcel.internal.generic.StackInstruction implements com.sun.org.apache.bcel.internal.generic.StackConsumer,com.sun.org.apache.bcel.internal.generic.StackProducer {
-  public com.sun.org.apache.bcel.internal.generic.SWAP();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

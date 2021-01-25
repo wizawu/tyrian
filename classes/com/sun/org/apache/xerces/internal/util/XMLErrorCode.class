@@ -1,7 +1,0 @@
-Compiled from "XMLErrorCode.java"
-final class com.sun.org.apache.xerces.internal.util.XMLErrorCode {
-  public com.sun.org.apache.xerces.internal.util.XMLErrorCode(java.lang.String, java.lang.String);
-  public void setValues(java.lang.String, java.lang.String);
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-}

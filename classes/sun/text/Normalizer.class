@@ -1,7 +1,0 @@
-Compiled from "Normalizer.java"
-public final class sun.text.Normalizer {
-  public static final int UNICODE_3_2;
-  public static java.lang.String normalize(java.lang.CharSequence, java.text.Normalizer$Form, int);
-  public static boolean isNormalized(java.lang.CharSequence, java.text.Normalizer$Form, int);
-  public static final int getCombiningClass(int);
-}

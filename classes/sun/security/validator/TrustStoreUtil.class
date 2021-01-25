@@ -1,4 +1,0 @@
-Compiled from "TrustStoreUtil.java"
-public final class sun.security.validator.TrustStoreUtil {
-  public static java.util.Set<java.security.cert.X509Certificate> getTrustedCerts(java.security.KeyStore);
-}

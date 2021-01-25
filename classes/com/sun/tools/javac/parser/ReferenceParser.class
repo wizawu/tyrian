@@ -1,5 +1,0 @@
-Compiled from "ReferenceParser.java"
-public class com.sun.tools.javac.parser.ReferenceParser {
-  public com.sun.tools.javac.parser.ReferenceParser(com.sun.tools.javac.parser.ParserFactory);
-  public com.sun.tools.javac.parser.ReferenceParser$Reference parse(java.lang.String) throws com.sun.tools.javac.parser.ReferenceParser$ParseException;
-}

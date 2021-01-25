@@ -1,5 +1,0 @@
-Compiled from "LSHR.java"
-public class com.sun.org.apache.bcel.internal.generic.LSHR extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
-  public com.sun.org.apache.bcel.internal.generic.LSHR();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

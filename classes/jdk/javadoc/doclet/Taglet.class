@@ -1,8 +1,0 @@
-Compiled from "Taglet.java"
-public interface jdk.javadoc.doclet.Taglet {
-  public abstract java.util.Set<jdk.javadoc.doclet.Taglet$Location> getAllowedLocations();
-  public abstract boolean isInlineTag();
-  public abstract java.lang.String getName();
-  public default void init(jdk.javadoc.doclet.DocletEnvironment, jdk.javadoc.doclet.Doclet);
-  public abstract java.lang.String toString(java.util.List<? extends com.sun.source.doctree.DocTree>, javax.lang.model.element.Element);
-}

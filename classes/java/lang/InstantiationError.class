@@ -1,5 +1,0 @@
-Compiled from "InstantiationError.java"
-public class java.lang.InstantiationError extends java.lang.IncompatibleClassChangeError {
-  public java.lang.InstantiationError();
-  public java.lang.InstantiationError(java.lang.String);
-}

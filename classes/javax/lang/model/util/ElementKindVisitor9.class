@@ -1,6 +1,0 @@
-Compiled from "ElementKindVisitor9.java"
-public class javax.lang.model.util.ElementKindVisitor9<R, P> extends javax.lang.model.util.ElementKindVisitor8<R, P> {
-  protected javax.lang.model.util.ElementKindVisitor9();
-  protected javax.lang.model.util.ElementKindVisitor9(R);
-  public R visitModule(javax.lang.model.element.ModuleElement, P);
-}

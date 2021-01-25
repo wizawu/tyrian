@@ -1,6 +1,0 @@
-Compiled from "VetoableChangeListenerProxy.java"
-public class java.beans.VetoableChangeListenerProxy extends java.util.EventListenerProxy<java.beans.VetoableChangeListener> implements java.beans.VetoableChangeListener {
-  public java.beans.VetoableChangeListenerProxy(java.lang.String, java.beans.VetoableChangeListener);
-  public void vetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException;
-  public java.lang.String getPropertyName();
-}

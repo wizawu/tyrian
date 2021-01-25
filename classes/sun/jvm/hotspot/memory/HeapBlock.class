@@ -1,8 +1,0 @@
-Compiled from "HeapBlock.java"
-public class sun.jvm.hotspot.memory.HeapBlock extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.memory.HeapBlock(sun.jvm.hotspot.debugger.Address);
-  public long getLength();
-  public boolean isFree();
-  public sun.jvm.hotspot.debugger.Address getAllocatedSpace();
-  static {};
-}

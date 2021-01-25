@@ -1,5 +1,0 @@
-Compiled from "BufferedMonitoredVm.java"
-public interface sun.jvmstat.monitor.BufferedMonitoredVm extends sun.jvmstat.monitor.MonitoredVm {
-  public abstract byte[] getBytes();
-  public abstract int getCapacity();
-}

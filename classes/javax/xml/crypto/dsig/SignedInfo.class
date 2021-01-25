@@ -1,8 +1,0 @@
-Compiled from "SignedInfo.java"
-public interface javax.xml.crypto.dsig.SignedInfo extends javax.xml.crypto.XMLStructure {
-  public abstract javax.xml.crypto.dsig.CanonicalizationMethod getCanonicalizationMethod();
-  public abstract javax.xml.crypto.dsig.SignatureMethod getSignatureMethod();
-  public abstract java.util.List<javax.xml.crypto.dsig.Reference> getReferences();
-  public abstract java.lang.String getId();
-  public abstract java.io.InputStream getCanonicalizedData();
-}

@@ -1,6 +1,0 @@
-Compiled from "InterruptedIOException.java"
-public class java.io.InterruptedIOException extends java.io.IOException {
-  public int bytesTransferred;
-  public java.io.InterruptedIOException();
-  public java.io.InterruptedIOException(java.lang.String);
-}

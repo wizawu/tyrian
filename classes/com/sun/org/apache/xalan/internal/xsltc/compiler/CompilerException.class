@@ -1,8 +1,0 @@
-Compiled from "CompilerException.java"
-public final class com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException extends java.lang.Exception {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException();
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException(java.lang.Exception);
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.CompilerException(java.lang.String);
-  public java.lang.String getMessage();
-}

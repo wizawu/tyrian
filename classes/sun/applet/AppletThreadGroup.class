@@ -1,5 +1,0 @@
-Compiled from "AppletThreadGroup.java"
-public class sun.applet.AppletThreadGroup extends java.lang.ThreadGroup {
-  public sun.applet.AppletThreadGroup(java.lang.String);
-  public sun.applet.AppletThreadGroup(java.lang.ThreadGroup, java.lang.String);
-}

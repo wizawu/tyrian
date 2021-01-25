@@ -1,9 +1,0 @@
-Compiled from "EntityDeclaration.java"
-public interface javax.xml.stream.events.EntityDeclaration extends javax.xml.stream.events.XMLEvent {
-  public abstract java.lang.String getPublicId();
-  public abstract java.lang.String getSystemId();
-  public abstract java.lang.String getName();
-  public abstract java.lang.String getNotationName();
-  public abstract java.lang.String getReplacementText();
-  public abstract java.lang.String getBaseURI();
-}

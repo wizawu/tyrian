@@ -1,7 +1,0 @@
-Compiled from "WrappedRuntimeException.java"
-public class com.sun.org.apache.xml.internal.utils.WrappedRuntimeException extends java.lang.RuntimeException {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xml.internal.utils.WrappedRuntimeException(java.lang.Exception);
-  public com.sun.org.apache.xml.internal.utils.WrappedRuntimeException(java.lang.String, java.lang.Exception);
-  public java.lang.Exception getException();
-}

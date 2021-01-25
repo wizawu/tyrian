@@ -1,7 +1,0 @@
-Compiled from "Constants.java"
-public class com.sun.tools.javac.util.Constants {
-  public com.sun.tools.javac.util.Constants();
-  public static java.lang.Object decode(java.lang.Object, com.sun.tools.javac.code.Type);
-  public static java.lang.String format(java.lang.Object, com.sun.tools.javac.code.Type);
-  public static java.lang.String format(java.lang.Object);
-}

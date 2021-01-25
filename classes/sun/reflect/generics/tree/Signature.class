@@ -1,4 +1,0 @@
-Compiled from "Signature.java"
-public interface sun.reflect.generics.tree.Signature extends sun.reflect.generics.tree.Tree {
-  public abstract sun.reflect.generics.tree.FormalTypeParameter[] getFormalTypeParameters();
-}

@@ -1,6 +1,0 @@
-Compiled from "Schema.java"
-public abstract class javax.xml.validation.Schema {
-  protected javax.xml.validation.Schema();
-  public abstract javax.xml.validation.Validator newValidator();
-  public abstract javax.xml.validation.ValidatorHandler newValidatorHandler();
-}

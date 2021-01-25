@@ -1,9 +1,0 @@
-Compiled from "Track.java"
-public class javax.sound.midi.Track {
-  javax.sound.midi.Track();
-  public boolean add(javax.sound.midi.MidiEvent);
-  public boolean remove(javax.sound.midi.MidiEvent);
-  public javax.sound.midi.MidiEvent get(int) throws java.lang.ArrayIndexOutOfBoundsException;
-  public int size();
-  public long ticks();
-}

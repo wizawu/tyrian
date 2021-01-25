@@ -1,6 +1,0 @@
-Compiled from "ClassNotLoadedException.java"
-public class com.sun.jdi.ClassNotLoadedException extends java.lang.Exception {
-  public com.sun.jdi.ClassNotLoadedException(java.lang.String);
-  public com.sun.jdi.ClassNotLoadedException(java.lang.String, java.lang.String);
-  public java.lang.String className();
-}

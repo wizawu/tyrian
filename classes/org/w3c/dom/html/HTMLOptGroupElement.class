@@ -1,7 +1,0 @@
-Compiled from "HTMLOptGroupElement.java"
-public interface org.w3c.dom.html.HTMLOptGroupElement extends org.w3c.dom.html.HTMLElement {
-  public abstract boolean getDisabled();
-  public abstract void setDisabled(boolean);
-  public abstract java.lang.String getLabel();
-  public abstract void setLabel(java.lang.String);
-}

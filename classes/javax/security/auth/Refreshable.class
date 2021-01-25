@@ -1,5 +1,0 @@
-Compiled from "Refreshable.java"
-public interface javax.security.auth.Refreshable {
-  public abstract boolean isCurrent();
-  public abstract void refresh() throws javax.security.auth.RefreshFailedException;
-}

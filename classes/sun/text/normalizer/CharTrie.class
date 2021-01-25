@@ -1,8 +1,0 @@
-Compiled from "CharTrie.java"
-public class sun.text.normalizer.CharTrie extends sun.text.normalizer.Trie {
-  public sun.text.normalizer.CharTrie(java.io.InputStream, sun.text.normalizer.Trie$DataManipulate) throws java.io.IOException;
-  public final char getCodePointValue(int);
-  public final char getLeadValue(char);
-  protected final void unserialize(java.io.InputStream) throws java.io.IOException;
-  protected final int getSurrogateOffset(char, char);
-}

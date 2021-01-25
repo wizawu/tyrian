@@ -1,6 +1,0 @@
-Compiled from "BasicJBooleanField.java"
-public class sun.jvm.hotspot.types.basic.BasicJBooleanField extends sun.jvm.hotspot.types.basic.BasicField implements sun.jvm.hotspot.types.JBooleanField {
-  public sun.jvm.hotspot.types.basic.BasicJBooleanField(sun.jvm.hotspot.types.basic.BasicTypeDataBase, sun.jvm.hotspot.types.Type, java.lang.String, sun.jvm.hotspot.types.Type, boolean, long, sun.jvm.hotspot.debugger.Address);
-  public boolean getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-  public boolean getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-}

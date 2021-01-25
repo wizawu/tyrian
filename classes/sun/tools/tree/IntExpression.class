@@ -1,7 +1,0 @@
-Compiled from "IntExpression.java"
-public class sun.tools.tree.IntExpression extends sun.tools.tree.IntegerExpression {
-  public sun.tools.tree.IntExpression(long, int);
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  public void print(java.io.PrintStream);
-}

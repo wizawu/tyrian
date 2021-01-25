@@ -1,7 +1,0 @@
-Compiled from "SunCertPathBuilder.java"
-public final class sun.security.provider.certpath.SunCertPathBuilder extends java.security.cert.CertPathBuilderSpi {
-  public sun.security.provider.certpath.SunCertPathBuilder() throws java.security.cert.CertPathBuilderException;
-  public java.security.cert.CertPathChecker engineGetRevocationChecker();
-  public java.security.cert.CertPathBuilderResult engineBuild(java.security.cert.CertPathParameters) throws java.security.cert.CertPathBuilderException, java.security.InvalidAlgorithmParameterException;
-  static {};
-}

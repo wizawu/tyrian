@@ -1,9 +1,0 @@
-Compiled from "X86CurrentFrameGuess.java"
-public class sun.jvm.hotspot.runtime.x86.X86CurrentFrameGuess {
-  public sun.jvm.hotspot.runtime.x86.X86CurrentFrameGuess(sun.jvm.hotspot.debugger.x86.X86ThreadContext, sun.jvm.hotspot.runtime.JavaThread);
-  public boolean run(long);
-  public sun.jvm.hotspot.debugger.Address getSP();
-  public sun.jvm.hotspot.debugger.Address getFP();
-  public sun.jvm.hotspot.debugger.Address getPC();
-  static {};
-}

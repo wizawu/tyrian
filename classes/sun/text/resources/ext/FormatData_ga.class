@@ -1,5 +1,0 @@
-Compiled from "FormatData_ga.java"
-public class sun.text.resources.ext.FormatData_ga extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_ga();
-  protected final java.lang.Object[][] getContents();
-}

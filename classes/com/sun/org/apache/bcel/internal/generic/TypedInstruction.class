@@ -1,4 +1,0 @@
-Compiled from "TypedInstruction.java"
-public interface com.sun.org.apache.bcel.internal.generic.TypedInstruction {
-  public abstract com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-}

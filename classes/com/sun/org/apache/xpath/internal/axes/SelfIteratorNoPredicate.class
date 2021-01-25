@@ -1,9 +1,0 @@
-Compiled from "SelfIteratorNoPredicate.java"
-public class com.sun.org.apache.xpath.internal.axes.SelfIteratorNoPredicate extends com.sun.org.apache.xpath.internal.axes.LocPathIterator {
-  static final long serialVersionUID;
-  com.sun.org.apache.xpath.internal.axes.SelfIteratorNoPredicate(com.sun.org.apache.xpath.internal.compiler.Compiler, int, int) throws javax.xml.transform.TransformerException;
-  public com.sun.org.apache.xpath.internal.axes.SelfIteratorNoPredicate() throws javax.xml.transform.TransformerException;
-  public int nextNode();
-  public int asNode(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-  public int getLastPos(com.sun.org.apache.xpath.internal.XPathContext);
-}

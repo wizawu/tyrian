@@ -1,9 +1,0 @@
-Compiled from "StripDebugPlugin.java"
-public final class jdk.tools.jlink.internal.plugins.StripDebugPlugin implements jdk.tools.jlink.plugin.Plugin {
-  public static final java.lang.String NAME;
-  public jdk.tools.jlink.internal.plugins.StripDebugPlugin();
-  jdk.tools.jlink.internal.plugins.StripDebugPlugin(java.util.function.Predicate<java.lang.String>);
-  public java.lang.String getName();
-  public java.lang.String getDescription();
-  public jdk.tools.jlink.plugin.ResourcePool transform(jdk.tools.jlink.plugin.ResourcePool, jdk.tools.jlink.plugin.ResourcePoolBuilder);
-}

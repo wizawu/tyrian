@@ -1,7 +1,0 @@
-Compiled from "ExpressionStatementTreeImpl.java"
-final class jdk.nashorn.api.tree.ExpressionStatementTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.ExpressionStatementTree {
-  jdk.nashorn.api.tree.ExpressionStatementTreeImpl(jdk.nashorn.internal.ir.ExpressionStatement, jdk.nashorn.api.tree.ExpressionTree);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

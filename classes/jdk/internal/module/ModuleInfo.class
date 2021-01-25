@@ -1,8 +1,0 @@
-Compiled from "ModuleInfo.java"
-public final class jdk.internal.module.ModuleInfo {
-  static final boolean $assertionsDisabled;
-  public static jdk.internal.module.ModuleInfo$Attributes read(java.io.InputStream, java.util.function.Supplier<java.util.Set<java.lang.String>>) throws java.io.IOException;
-  public static jdk.internal.module.ModuleInfo$Attributes read(java.nio.ByteBuffer, java.util.function.Supplier<java.util.Set<java.lang.String>>);
-  public static jdk.internal.module.ModuleInfo$Attributes readIgnoringHashes(java.nio.ByteBuffer, java.util.function.Supplier<java.util.Set<java.lang.String>>);
-  static {};
-}

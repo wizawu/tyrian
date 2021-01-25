@@ -1,6 +1,0 @@
-Compiled from "ServerRef.java"
-public interface java.rmi.server.ServerRef extends java.rmi.server.RemoteRef {
-  public static final long serialVersionUID;
-  public abstract java.rmi.server.RemoteStub exportObject(java.rmi.Remote, java.lang.Object) throws java.rmi.RemoteException;
-  public abstract java.lang.String getClientHost() throws java.rmi.server.ServerNotActiveException;
-}

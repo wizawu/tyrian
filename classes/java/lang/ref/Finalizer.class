@@ -1,7 +1,0 @@
-Compiled from "Finalizer.java"
-final class java.lang.ref.Finalizer extends java.lang.ref.FinalReference<java.lang.Object> {
-  static java.lang.ref.ReferenceQueue<java.lang.Object> getQueue();
-  static void register(java.lang.Object);
-  static void runFinalization();
-  static {};
-}

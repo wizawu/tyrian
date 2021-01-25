@@ -1,6 +1,0 @@
-Compiled from "FuncSubstringBefore.java"
-public class com.sun.org.apache.xpath.internal.functions.FuncSubstringBefore extends com.sun.org.apache.xpath.internal.functions.Function2Args {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.functions.FuncSubstringBefore();
-  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-}

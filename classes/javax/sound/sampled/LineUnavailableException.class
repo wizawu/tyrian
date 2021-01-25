@@ -1,5 +1,0 @@
-Compiled from "LineUnavailableException.java"
-public class javax.sound.sampled.LineUnavailableException extends java.lang.Exception {
-  public javax.sound.sampled.LineUnavailableException();
-  public javax.sound.sampled.LineUnavailableException(java.lang.String);
-}

@@ -1,6 +1,0 @@
-Compiled from "SynthComboPopup.java"
-class javax.swing.plaf.synth.SynthComboPopup extends javax.swing.plaf.basic.BasicComboPopup {
-  public javax.swing.plaf.synth.SynthComboPopup(javax.swing.JComboBox<java.lang.Object>);
-  protected void configureList();
-  protected java.awt.Rectangle computePopupBounds(int, int, int, int);
-}

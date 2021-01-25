@@ -1,7 +1,0 @@
-Compiled from "MirroredTypesException.java"
-public class javax.lang.model.type.MirroredTypesException extends java.lang.RuntimeException {
-  transient java.util.List<? extends javax.lang.model.type.TypeMirror> types;
-  javax.lang.model.type.MirroredTypesException(java.lang.String, javax.lang.model.type.TypeMirror);
-  public javax.lang.model.type.MirroredTypesException(java.util.List<? extends javax.lang.model.type.TypeMirror>);
-  public java.util.List<? extends javax.lang.model.type.TypeMirror> getTypeMirrors();
-}

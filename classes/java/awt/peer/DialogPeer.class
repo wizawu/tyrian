@@ -1,6 +1,0 @@
-Compiled from "DialogPeer.java"
-public interface java.awt.peer.DialogPeer extends java.awt.peer.WindowPeer {
-  public abstract void setTitle(java.lang.String);
-  public abstract void setResizable(boolean);
-  public abstract void blockWindows(java.util.List<java.awt.Window>);
-}

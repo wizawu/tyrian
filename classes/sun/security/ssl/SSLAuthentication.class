@@ -1,3 +1,0 @@
-Compiled from "SSLAuthentication.java"
-interface sun.security.ssl.SSLAuthentication extends sun.security.ssl.SSLPossessionGenerator,sun.security.ssl.SSLHandshakeBinding {
-}

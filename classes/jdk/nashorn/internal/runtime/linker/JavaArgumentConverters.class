@@ -1,7 +1,0 @@
-Compiled from "JavaArgumentConverters.java"
-final class jdk.nashorn.internal.runtime.linker.JavaArgumentConverters {
-  static java.lang.invoke.MethodHandle getConverter(java.lang.Class<?>);
-  static char toCharPrimitive(java.lang.Object);
-  static java.lang.String toString(java.lang.Object);
-  static {};
-}

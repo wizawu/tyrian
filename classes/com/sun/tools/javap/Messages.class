@@ -1,5 +1,0 @@
-Compiled from "Messages.java"
-public interface com.sun.tools.javap.Messages {
-  public abstract java.lang.String getMessage(java.lang.String, java.lang.Object...);
-  public abstract java.lang.String getMessage(java.util.Locale, java.lang.String, java.lang.Object...);
-}

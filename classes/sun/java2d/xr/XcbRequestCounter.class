@@ -1,8 +1,0 @@
-Compiled from "XcbRequestCounter.java"
-public class sun.java2d.xr.XcbRequestCounter {
-  long value;
-  public sun.java2d.xr.XcbRequestCounter(long);
-  public void setValue(long);
-  public long getValue();
-  public void add(long);
-}

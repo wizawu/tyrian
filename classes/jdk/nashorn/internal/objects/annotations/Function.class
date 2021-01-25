@@ -1,7 +1,0 @@
-Compiled from "Function.java"
-public interface jdk.nashorn.internal.objects.annotations.Function extends java.lang.annotation.Annotation {
-  public abstract java.lang.String name();
-  public abstract int attributes();
-  public abstract int arity();
-  public abstract jdk.nashorn.internal.objects.annotations.Where where();
-}

@@ -1,4 +1,0 @@
-Compiled from "LongMonitor.java"
-public interface sun.jvmstat.monitor.LongMonitor extends sun.jvmstat.monitor.Monitor {
-  public abstract long longValue();
-}

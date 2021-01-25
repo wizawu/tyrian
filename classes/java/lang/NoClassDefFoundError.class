@@ -1,5 +1,0 @@
-Compiled from "NoClassDefFoundError.java"
-public class java.lang.NoClassDefFoundError extends java.lang.LinkageError {
-  public java.lang.NoClassDefFoundError();
-  public java.lang.NoClassDefFoundError(java.lang.String);
-}

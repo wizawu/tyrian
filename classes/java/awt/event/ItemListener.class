@@ -1,4 +1,0 @@
-Compiled from "ItemListener.java"
-public interface java.awt.event.ItemListener extends java.util.EventListener {
-  public abstract void itemStateChanged(java.awt.event.ItemEvent);
-}

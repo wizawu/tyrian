@@ -1,7 +1,0 @@
-Compiled from "XDropTargetEventProcessor.java"
-final class sun.awt.X11.XDropTargetEventProcessor {
-  static void reset();
-  static void activate();
-  static boolean processEvent(sun.awt.X11.XEvent);
-  static {};
-}

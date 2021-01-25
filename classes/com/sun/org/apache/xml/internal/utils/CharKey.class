@@ -1,8 +1,0 @@
-Compiled from "CharKey.java"
-public class com.sun.org.apache.xml.internal.utils.CharKey {
-  public com.sun.org.apache.xml.internal.utils.CharKey(char);
-  public com.sun.org.apache.xml.internal.utils.CharKey();
-  public final void setChar(char);
-  public final int hashCode();
-  public final boolean equals(java.lang.Object);
-}

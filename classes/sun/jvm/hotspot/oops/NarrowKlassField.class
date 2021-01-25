@@ -1,6 +1,0 @@
-Compiled from "NarrowKlassField.java"
-public class sun.jvm.hotspot.oops.NarrowKlassField extends sun.jvm.hotspot.oops.MetadataField {
-  public sun.jvm.hotspot.oops.NarrowKlassField(sun.jvm.hotspot.types.AddressField, long);
-  public sun.jvm.hotspot.oops.Metadata getValue(sun.jvm.hotspot.debugger.Address);
-  public void setValue(sun.jvm.hotspot.oops.Oop, long) throws sun.jvm.hotspot.oops.MutationException;
-}

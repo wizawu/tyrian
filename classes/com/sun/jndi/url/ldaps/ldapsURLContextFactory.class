@@ -1,4 +1,0 @@
-Compiled from "ldapsURLContextFactory.java"
-public final class com.sun.jndi.url.ldaps.ldapsURLContextFactory extends com.sun.jndi.url.ldap.ldapURLContextFactory {
-  public com.sun.jndi.url.ldaps.ldapsURLContextFactory();
-}

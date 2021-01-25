@@ -1,4 +1,0 @@
-Compiled from "XMLDTDDescription.java"
-public interface com.sun.org.apache.xerces.internal.xni.grammars.XMLDTDDescription extends com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarDescription {
-  public abstract java.lang.String getRootName();
-}

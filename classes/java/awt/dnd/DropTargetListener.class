@@ -1,8 +1,0 @@
-Compiled from "DropTargetListener.java"
-public interface java.awt.dnd.DropTargetListener extends java.util.EventListener {
-  public abstract void dragEnter(java.awt.dnd.DropTargetDragEvent);
-  public abstract void dragOver(java.awt.dnd.DropTargetDragEvent);
-  public abstract void dropActionChanged(java.awt.dnd.DropTargetDragEvent);
-  public abstract void dragExit(java.awt.dnd.DropTargetEvent);
-  public abstract void drop(java.awt.dnd.DropTargetDropEvent);
-}

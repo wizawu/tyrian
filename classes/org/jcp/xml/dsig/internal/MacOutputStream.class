@@ -1,6 +1,0 @@
-Compiled from "MacOutputStream.java"
-public class org.jcp.xml.dsig.internal.MacOutputStream extends java.io.ByteArrayOutputStream {
-  public org.jcp.xml.dsig.internal.MacOutputStream(javax.crypto.Mac);
-  public void write(int);
-  public void write(byte[], int, int);
-}

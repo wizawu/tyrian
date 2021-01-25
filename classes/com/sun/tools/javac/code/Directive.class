@@ -1,4 +1,0 @@
-Compiled from "Directive.java"
-public abstract class com.sun.tools.javac.code.Directive implements javax.lang.model.element.ModuleElement$Directive {
-  public com.sun.tools.javac.code.Directive();
-}

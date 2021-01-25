@@ -1,8 +1,0 @@
-Compiled from "NamedPackage.java"
-class java.lang.NamedPackage {
-  java.lang.NamedPackage(java.lang.String, java.lang.Module);
-  java.lang.String packageName();
-  java.lang.Module module();
-  java.net.URI location();
-  static java.lang.Package toPackage(java.lang.String, java.lang.Module);
-}

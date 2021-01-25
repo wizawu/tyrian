@@ -1,6 +1,0 @@
-Compiled from "ResourceDecompressorFactory.java"
-public abstract class jdk.internal.jimage.decompressor.ResourceDecompressorFactory {
-  protected jdk.internal.jimage.decompressor.ResourceDecompressorFactory(java.lang.String);
-  public java.lang.String getName();
-  public abstract jdk.internal.jimage.decompressor.ResourceDecompressor newDecompressor(java.util.Properties) throws java.io.IOException;
-}

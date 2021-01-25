@@ -1,9 +1,0 @@
-Compiled from "BlowfishCrypt.java"
-final class com.sun.crypto.provider.BlowfishCrypt extends com.sun.crypto.provider.SymmetricCipher implements com.sun.crypto.provider.BlowfishConstants {
-  com.sun.crypto.provider.BlowfishCrypt();
-  int getBlockSize();
-  void init(boolean, java.lang.String, byte[]) throws java.security.InvalidKeyException;
-  void encryptBlock(byte[], int, byte[], int);
-  void decryptBlock(byte[], int, byte[], int);
-  static {};
-}

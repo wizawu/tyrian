@@ -1,5 +1,0 @@
-Compiled from "ArrayStoreException.java"
-public class java.lang.ArrayStoreException extends java.lang.RuntimeException {
-  public java.lang.ArrayStoreException();
-  public java.lang.ArrayStoreException(java.lang.String);
-}

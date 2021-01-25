@@ -1,7 +1,0 @@
-Compiled from "KeyManagerFactoryImpl.java"
-abstract class sun.security.ssl.KeyManagerFactoryImpl extends javax.net.ssl.KeyManagerFactorySpi {
-  javax.net.ssl.X509ExtendedKeyManager keyManager;
-  boolean isInitialized;
-  sun.security.ssl.KeyManagerFactoryImpl();
-  protected javax.net.ssl.KeyManager[] engineGetKeyManagers();
-}

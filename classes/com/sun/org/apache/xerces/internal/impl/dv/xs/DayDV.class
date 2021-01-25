@@ -1,8 +1,0 @@
-Compiled from "DayDV.java"
-public class com.sun.org.apache.xerces.internal.impl.dv.xs.DayDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV {
-  public com.sun.org.apache.xerces.internal.impl.dv.xs.DayDV();
-  public java.lang.Object getActualValue(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
-  protected com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData parse(java.lang.String) throws com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDateTimeException;
-  protected java.lang.String dateToString(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
-  protected javax.xml.datatype.XMLGregorianCalendar getXMLGregorianCalendar(com.sun.org.apache.xerces.internal.impl.dv.xs.AbstractDateTimeDV$DateTimeData);
-}

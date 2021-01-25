@@ -1,4 +1,0 @@
-Compiled from "DescriptorKey.java"
-public interface javax.management.DescriptorKey extends java.lang.annotation.Annotation {
-  public abstract java.lang.String value();
-}

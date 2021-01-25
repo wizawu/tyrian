@@ -1,4 +1,0 @@
-Compiled from "MessageDigestSpi2.java"
-public interface sun.security.util.MessageDigestSpi2 {
-  public abstract void engineUpdate(javax.crypto.SecretKey) throws java.security.InvalidKeyException;
-}

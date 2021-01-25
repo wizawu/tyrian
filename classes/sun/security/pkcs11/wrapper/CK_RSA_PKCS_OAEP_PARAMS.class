@@ -1,9 +1,0 @@
-Compiled from "CK_RSA_PKCS_OAEP_PARAMS.java"
-public class sun.security.pkcs11.wrapper.CK_RSA_PKCS_OAEP_PARAMS {
-  public long hashAlg;
-  public long mgf;
-  public long source;
-  public byte[] pSourceData;
-  public sun.security.pkcs11.wrapper.CK_RSA_PKCS_OAEP_PARAMS();
-  public java.lang.String toString();
-}

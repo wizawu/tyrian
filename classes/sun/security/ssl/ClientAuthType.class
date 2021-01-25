@@ -1,9 +1,0 @@
-Compiled from "ClientAuthType.java"
-final class sun.security.ssl.ClientAuthType extends java.lang.Enum<sun.security.ssl.ClientAuthType> {
-  public static final sun.security.ssl.ClientAuthType CLIENT_AUTH_NONE;
-  public static final sun.security.ssl.ClientAuthType CLIENT_AUTH_REQUESTED;
-  public static final sun.security.ssl.ClientAuthType CLIENT_AUTH_REQUIRED;
-  public static sun.security.ssl.ClientAuthType[] values();
-  public static sun.security.ssl.ClientAuthType valueOf(java.lang.String);
-  static {};
-}

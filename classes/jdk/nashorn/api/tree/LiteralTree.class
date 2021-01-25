@@ -1,4 +1,0 @@
-Compiled from "LiteralTree.java"
-public interface jdk.nashorn.api.tree.LiteralTree extends jdk.nashorn.api.tree.ExpressionTree {
-  public abstract java.lang.Object getValue();
-}

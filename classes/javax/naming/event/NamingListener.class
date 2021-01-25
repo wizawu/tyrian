@@ -1,4 +1,0 @@
-Compiled from "NamingListener.java"
-public interface javax.naming.event.NamingListener extends java.util.EventListener {
-  public abstract void namingExceptionThrown(javax.naming.event.NamingExceptionEvent);
-}

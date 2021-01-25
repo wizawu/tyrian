@@ -1,7 +1,0 @@
-Compiled from "IconUIResource.java"
-public class javax.swing.plaf.IconUIResource implements javax.swing.Icon,javax.swing.plaf.UIResource,java.io.Serializable {
-  public javax.swing.plaf.IconUIResource(javax.swing.Icon);
-  public void paintIcon(java.awt.Component, java.awt.Graphics, int, int);
-  public int getIconWidth();
-  public int getIconHeight();
-}

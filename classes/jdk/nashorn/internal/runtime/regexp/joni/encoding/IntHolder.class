@@ -1,5 +1,0 @@
-Compiled from "IntHolder.java"
-public class jdk.nashorn.internal.runtime.regexp.joni.encoding.IntHolder {
-  public int value;
-  public jdk.nashorn.internal.runtime.regexp.joni.encoding.IntHolder();
-}

@@ -1,5 +1,0 @@
-Compiled from "JStack.java"
-public class sun.tools.jstack.JStack {
-  public sun.tools.jstack.JStack();
-  public static void main(java.lang.String[]) throws java.lang.Exception;
-}

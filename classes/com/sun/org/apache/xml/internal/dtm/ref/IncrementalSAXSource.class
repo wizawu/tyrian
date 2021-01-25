@@ -1,8 +1,0 @@
-Compiled from "IncrementalSAXSource.java"
-public interface com.sun.org.apache.xml.internal.dtm.ref.IncrementalSAXSource {
-  public abstract void setContentHandler(org.xml.sax.ContentHandler);
-  public abstract void setLexicalHandler(org.xml.sax.ext.LexicalHandler);
-  public abstract void setDTDHandler(org.xml.sax.DTDHandler);
-  public abstract java.lang.Object deliverMoreNodes(boolean);
-  public abstract void startParse(org.xml.sax.InputSource) throws org.xml.sax.SAXException;
-}

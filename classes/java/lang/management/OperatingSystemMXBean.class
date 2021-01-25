@@ -1,8 +1,0 @@
-Compiled from "OperatingSystemMXBean.java"
-public interface java.lang.management.OperatingSystemMXBean extends java.lang.management.PlatformManagedObject {
-  public abstract java.lang.String getName();
-  public abstract java.lang.String getArch();
-  public abstract java.lang.String getVersion();
-  public abstract int getAvailableProcessors();
-  public abstract double getSystemLoadAverage();
-}

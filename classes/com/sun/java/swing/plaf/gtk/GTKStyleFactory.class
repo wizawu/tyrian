@@ -1,6 +1,0 @@
-Compiled from "GTKStyleFactory.java"
-class com.sun.java.swing.plaf.gtk.GTKStyleFactory extends javax.swing.plaf.synth.SynthStyleFactory {
-  com.sun.java.swing.plaf.gtk.GTKStyleFactory();
-  public synchronized javax.swing.plaf.synth.SynthStyle getStyle(javax.swing.JComponent, javax.swing.plaf.synth.Region);
-  void initStyles(java.awt.Font);
-}

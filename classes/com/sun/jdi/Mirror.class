@@ -1,5 +1,0 @@
-Compiled from "Mirror.java"
-public interface com.sun.jdi.Mirror {
-  public abstract com.sun.jdi.VirtualMachine virtualMachine();
-  public abstract java.lang.String toString();
-}

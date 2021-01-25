@@ -1,7 +1,0 @@
-Compiled from "AnnotationInvocationHandler.java"
-class sun.reflect.annotation.AnnotationInvocationHandler implements java.lang.reflect.InvocationHandler,java.io.Serializable {
-  static final boolean $assertionsDisabled;
-  sun.reflect.annotation.AnnotationInvocationHandler(java.lang.Class<? extends java.lang.annotation.Annotation>, java.util.Map<java.lang.String, java.lang.Object>);
-  public java.lang.Object invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]);
-  static {};
-}

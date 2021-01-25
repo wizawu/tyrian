@@ -1,7 +1,0 @@
-Compiled from "PrefixResolver.java"
-public interface com.sun.org.apache.xml.internal.utils.PrefixResolver {
-  public abstract java.lang.String getNamespaceForPrefix(java.lang.String);
-  public abstract java.lang.String getNamespaceForPrefix(java.lang.String, org.w3c.dom.Node);
-  public abstract java.lang.String getBaseIdentifier();
-  public abstract boolean handlesNullPrefixes();
-}

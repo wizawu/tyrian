@@ -1,4 +1,0 @@
-Compiled from "Groupable.java"
-interface sun.nio.ch.Groupable {
-  public abstract sun.nio.ch.AsynchronousChannelGroupImpl group();
-}

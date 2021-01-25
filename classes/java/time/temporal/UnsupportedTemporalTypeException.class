@@ -1,5 +1,0 @@
-Compiled from "UnsupportedTemporalTypeException.java"
-public class java.time.temporal.UnsupportedTemporalTypeException extends java.time.DateTimeException {
-  public java.time.temporal.UnsupportedTemporalTypeException(java.lang.String);
-  public java.time.temporal.UnsupportedTemporalTypeException(java.lang.String, java.lang.Throwable);
-}

@@ -1,5 +1,0 @@
-Compiled from "WindbgThreadFactory.java"
-public interface sun.jvm.hotspot.debugger.windbg.WindbgThreadFactory {
-  public abstract sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(sun.jvm.hotspot.debugger.Address);
-  public abstract sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(long);
-}

@@ -1,4 +1,0 @@
-Compiled from "LastOwnerException.java"
-public class java.security.acl.LastOwnerException extends java.lang.Exception {
-  public java.security.acl.LastOwnerException();
-}

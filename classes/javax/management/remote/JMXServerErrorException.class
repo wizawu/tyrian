@@ -1,5 +1,0 @@
-Compiled from "JMXServerErrorException.java"
-public class javax.management.remote.JMXServerErrorException extends java.io.IOException {
-  public javax.management.remote.JMXServerErrorException(java.lang.String, java.lang.Error);
-  public java.lang.Throwable getCause();
-}

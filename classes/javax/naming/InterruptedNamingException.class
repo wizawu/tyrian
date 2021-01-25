@@ -1,5 +1,0 @@
-Compiled from "InterruptedNamingException.java"
-public class javax.naming.InterruptedNamingException extends javax.naming.NamingException {
-  public javax.naming.InterruptedNamingException(java.lang.String);
-  public javax.naming.InterruptedNamingException();
-}

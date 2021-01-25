@@ -1,5 +1,0 @@
-Compiled from "NativeLibLoader.java"
-class java.awt.event.NativeLibLoader {
-  java.awt.event.NativeLibLoader();
-  static void loadLibraries();
-}

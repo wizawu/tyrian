@@ -1,8 +1,0 @@
-Compiled from "SerialFieldTag.java"
-public interface com.sun.javadoc.SerialFieldTag extends com.sun.javadoc.Tag, java.lang.Comparable<java.lang.Object> {
-  public abstract java.lang.String fieldName();
-  public abstract java.lang.String fieldType();
-  public abstract com.sun.javadoc.ClassDoc fieldTypeDoc();
-  public abstract java.lang.String description();
-  public abstract int compareTo(java.lang.Object);
-}

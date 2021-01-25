@@ -1,7 +1,0 @@
-Compiled from "ExtendedCopyOption.java"
-public final class com.sun.nio.file.ExtendedCopyOption extends java.lang.Enum<com.sun.nio.file.ExtendedCopyOption> implements java.nio.file.CopyOption {
-  public static final com.sun.nio.file.ExtendedCopyOption INTERRUPTIBLE;
-  public static com.sun.nio.file.ExtendedCopyOption[] values();
-  public static com.sun.nio.file.ExtendedCopyOption valueOf(java.lang.String);
-  static {};
-}

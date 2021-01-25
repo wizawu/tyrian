@@ -1,9 +1,0 @@
-Compiled from "XSheet.java"
-public class sun.tools.jconsole.inspector.XSheet extends javax.swing.JPanel implements java.awt.event.ActionListener,javax.management.NotificationListener {
-  public sun.tools.jconsole.inspector.XSheet(sun.tools.jconsole.MBeansTab);
-  public void dispose();
-  public boolean isMBeanNode(javax.swing.tree.DefaultMutableTreeNode);
-  public synchronized void displayNode(javax.swing.tree.DefaultMutableTreeNode);
-  public void handleNotification(javax.management.Notification, java.lang.Object);
-  public void actionPerformed(java.awt.event.ActionEvent);
-}

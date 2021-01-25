@@ -1,7 +1,0 @@
-Compiled from "FileKey.java"
-public class sun.nio.ch.FileKey {
-  public static sun.nio.ch.FileKey create(java.io.FileDescriptor) throws java.io.IOException;
-  public int hashCode();
-  public boolean equals(java.lang.Object);
-  static {};
-}

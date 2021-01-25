@@ -1,5 +1,0 @@
-Compiled from "Resolver.java"
-public interface javax.naming.spi.Resolver {
-  public abstract javax.naming.spi.ResolveResult resolveToClass(javax.naming.Name, java.lang.Class<? extends javax.naming.Context>) throws javax.naming.NamingException;
-  public abstract javax.naming.spi.ResolveResult resolveToClass(java.lang.String, java.lang.Class<? extends javax.naming.Context>) throws javax.naming.NamingException;
-}

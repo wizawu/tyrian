@@ -1,5 +1,0 @@
-Compiled from "ClassCastException.java"
-public class java.lang.ClassCastException extends java.lang.RuntimeException {
-  public java.lang.ClassCastException();
-  public java.lang.ClassCastException(java.lang.String);
-}

@@ -1,4 +1,0 @@
-Compiled from "BackBufferCapsProvider.java"
-public interface sun.java2d.BackBufferCapsProvider {
-  public abstract java.awt.BufferCapabilities getBackBufferCaps();
-}

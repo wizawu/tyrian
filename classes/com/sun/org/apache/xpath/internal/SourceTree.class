@@ -1,6 +1,0 @@
-Compiled from "SourceTree.java"
-public class com.sun.org.apache.xpath.internal.SourceTree {
-  public java.lang.String m_url;
-  public int m_root;
-  public com.sun.org.apache.xpath.internal.SourceTree(int, java.lang.String);
-}

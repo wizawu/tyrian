@@ -1,8 +1,0 @@
-Compiled from "ResolverFragment.java"
-public class com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverFragment extends com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverSpi {
-  public com.sun.org.apache.xml.internal.security.utils.resolver.implementations.ResolverFragment();
-  public boolean engineIsThreadSafe();
-  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput engineResolveURI(com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext) throws com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverException;
-  public boolean engineCanResolveURI(com.sun.org.apache.xml.internal.security.utils.resolver.ResourceResolverContext);
-  static {};
-}

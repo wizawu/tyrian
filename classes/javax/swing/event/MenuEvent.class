@@ -1,4 +1,0 @@
-Compiled from "MenuEvent.java"
-public class javax.swing.event.MenuEvent extends java.util.EventObject {
-  public javax.swing.event.MenuEvent(java.lang.Object);
-}

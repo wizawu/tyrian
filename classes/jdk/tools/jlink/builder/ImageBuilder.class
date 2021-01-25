@@ -1,7 +1,0 @@
-Compiled from "ImageBuilder.java"
-public interface jdk.tools.jlink.builder.ImageBuilder {
-  public default void storeFiles(jdk.tools.jlink.plugin.ResourcePool, java.util.Properties);
-  public default void storeFiles(jdk.tools.jlink.plugin.ResourcePool);
-  public abstract java.io.DataOutputStream getJImageOutputStream();
-  public abstract jdk.tools.jlink.internal.ExecutableImage getExecutableImage();
-}

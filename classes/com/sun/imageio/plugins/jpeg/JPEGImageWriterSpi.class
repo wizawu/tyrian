@@ -1,9 +1,0 @@
-Compiled from "JPEGImageWriterSpi.java"
-public class com.sun.imageio.plugins.jpeg.JPEGImageWriterSpi extends javax.imageio.spi.ImageWriterSpi {
-  public com.sun.imageio.plugins.jpeg.JPEGImageWriterSpi();
-  public java.lang.String getDescription(java.util.Locale);
-  public boolean isFormatLossless();
-  public boolean canEncodeImage(javax.imageio.ImageTypeSpecifier);
-  public javax.imageio.ImageWriter createWriterInstance(java.lang.Object) throws javax.imageio.IIOException;
-  static {};
-}

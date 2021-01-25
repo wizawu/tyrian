@@ -1,6 +1,0 @@
-Compiled from "LocaleSyntaxException.java"
-public class sun.util.locale.LocaleSyntaxException extends java.lang.Exception {
-  public sun.util.locale.LocaleSyntaxException(java.lang.String);
-  public sun.util.locale.LocaleSyntaxException(java.lang.String, int);
-  public int getErrorIndex();
-}

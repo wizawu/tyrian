@@ -1,7 +1,0 @@
-Compiled from "LinkOption.java"
-public final class java.nio.file.LinkOption extends java.lang.Enum<java.nio.file.LinkOption> implements java.nio.file.OpenOption, java.nio.file.CopyOption {
-  public static final java.nio.file.LinkOption NOFOLLOW_LINKS;
-  public static java.nio.file.LinkOption[] values();
-  public static java.nio.file.LinkOption valueOf(java.lang.String);
-  static {};
-}

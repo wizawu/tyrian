@@ -1,4 +1,0 @@
-Compiled from "PortFileInaccessibleException.java"
-public class com.sun.tools.sjavac.client.PortFileInaccessibleException extends java.io.IOException {
-  public com.sun.tools.sjavac.client.PortFileInaccessibleException(java.lang.Throwable);
-}

@@ -1,4 +1,0 @@
-Compiled from "ViewFactory.java"
-public interface javax.swing.text.ViewFactory {
-  public abstract javax.swing.text.View create(javax.swing.text.Element);
-}

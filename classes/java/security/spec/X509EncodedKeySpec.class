@@ -1,7 +1,0 @@
-Compiled from "X509EncodedKeySpec.java"
-public class java.security.spec.X509EncodedKeySpec extends java.security.spec.EncodedKeySpec {
-  public java.security.spec.X509EncodedKeySpec(byte[]);
-  public java.security.spec.X509EncodedKeySpec(byte[], java.lang.String);
-  public byte[] getEncoded();
-  public final java.lang.String getFormat();
-}

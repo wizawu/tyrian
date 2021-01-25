@@ -1,6 +1,0 @@
-Compiled from "CPPExpressions.java"
-public class sun.jvm.hotspot.utilities.CPPExpressions {
-  public sun.jvm.hotspot.utilities.CPPExpressions();
-  public static sun.jvm.hotspot.utilities.CPPExpressions$CastExpr parseCast(java.lang.String);
-  public static sun.jvm.hotspot.utilities.CPPExpressions$StaticFieldExpr parseStaticField(java.lang.String);
-}

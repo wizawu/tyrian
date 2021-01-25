@@ -1,8 +1,0 @@
-Compiled from "ChainedCallSite.java"
-public class jdk.dynalink.support.ChainedCallSite extends jdk.dynalink.support.AbstractRelinkableCallSite {
-  public jdk.dynalink.support.ChainedCallSite(jdk.dynalink.CallSiteDescriptor);
-  protected int getMaxChainLength();
-  public void relink(jdk.dynalink.linker.GuardedInvocation, java.lang.invoke.MethodHandle);
-  public void resetAndRelink(jdk.dynalink.linker.GuardedInvocation, java.lang.invoke.MethodHandle);
-  static {};
-}

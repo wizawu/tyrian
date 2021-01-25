@@ -1,6 +1,0 @@
-Compiled from "COFFFileParser.java"
-public class sun.jvm.hotspot.debugger.win32.coff.COFFFileParser {
-  public static sun.jvm.hotspot.debugger.win32.coff.COFFFileParser getParser();
-  public sun.jvm.hotspot.debugger.win32.coff.COFFFile parse(java.lang.String) throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
-  public sun.jvm.hotspot.debugger.win32.coff.COFFFile parse(sun.jvm.hotspot.debugger.DataSource) throws sun.jvm.hotspot.debugger.win32.coff.COFFException;
-}

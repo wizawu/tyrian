@@ -1,6 +1,0 @@
-Compiled from "XCustomCursor.java"
-public class sun.awt.X11.XCustomCursor extends sun.awt.X11CustomCursor {
-  public sun.awt.X11.XCustomCursor(java.awt.Image, java.awt.Point, java.lang.String) throws java.lang.IndexOutOfBoundsException;
-  static java.awt.Dimension getBestCursorSize(int, int);
-  protected void createCursor(byte[], byte[], int, int, int, int, int, int);
-}

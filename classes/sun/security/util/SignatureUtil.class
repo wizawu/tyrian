@@ -1,9 +1,0 @@
-Compiled from "SignatureUtil.java"
-public class sun.security.util.SignatureUtil {
-  public sun.security.util.SignatureUtil();
-  public static java.security.spec.AlgorithmParameterSpec getParamSpec(java.lang.String, java.security.AlgorithmParameters) throws java.security.ProviderException;
-  public static java.security.spec.AlgorithmParameterSpec getParamSpec(java.lang.String, byte[]) throws java.security.ProviderException;
-  public static void initVerifyWithParam(java.security.Signature, java.security.PublicKey, java.security.spec.AlgorithmParameterSpec) throws java.security.ProviderException, java.security.InvalidAlgorithmParameterException, java.security.InvalidKeyException;
-  public static void initVerifyWithParam(java.security.Signature, java.security.cert.Certificate, java.security.spec.AlgorithmParameterSpec) throws java.security.ProviderException, java.security.InvalidAlgorithmParameterException, java.security.InvalidKeyException;
-  public static void initSignWithParam(java.security.Signature, java.security.PrivateKey, java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.ProviderException, java.security.InvalidAlgorithmParameterException, java.security.InvalidKeyException;
-}

@@ -1,8 +1,0 @@
-Compiled from "KeyGeneratorSpi.java"
-public abstract class javax.crypto.KeyGeneratorSpi {
-  public javax.crypto.KeyGeneratorSpi();
-  protected abstract void engineInit(java.security.SecureRandom);
-  protected abstract void engineInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
-  protected abstract void engineInit(int, java.security.SecureRandom);
-  protected abstract javax.crypto.SecretKey engineGenerateKey();
-}

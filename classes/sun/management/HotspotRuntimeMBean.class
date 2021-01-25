@@ -1,7 +1,0 @@
-Compiled from "HotspotRuntimeMBean.java"
-public interface sun.management.HotspotRuntimeMBean {
-  public abstract long getSafepointCount();
-  public abstract long getTotalSafepointTime();
-  public abstract long getSafepointSyncTime();
-  public abstract java.util.List<sun.management.counter.Counter> getInternalRuntimeCounters();
-}

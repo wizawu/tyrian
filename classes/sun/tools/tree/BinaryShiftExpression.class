@@ -1,6 +1,0 @@
-Compiled from "BinaryShiftExpression.java"
-public class sun.tools.tree.BinaryShiftExpression extends sun.tools.tree.BinaryExpression {
-  public sun.tools.tree.BinaryShiftExpression(int, long, sun.tools.tree.Expression, sun.tools.tree.Expression);
-  sun.tools.tree.Expression eval();
-  void selectType(sun.tools.java.Environment, sun.tools.tree.Context, int);
-}

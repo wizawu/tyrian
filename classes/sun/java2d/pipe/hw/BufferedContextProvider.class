@@ -1,4 +1,0 @@
-Compiled from "BufferedContextProvider.java"
-public interface sun.java2d.pipe.hw.BufferedContextProvider {
-  public abstract sun.java2d.pipe.BufferedContext getContext();
-}

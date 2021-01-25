@@ -1,7 +1,0 @@
-Compiled from "DOMImplementationListImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.DOMImplementationListImpl implements org.w3c.dom.DOMImplementationList {
-  public com.sun.org.apache.xerces.internal.dom.DOMImplementationListImpl();
-  public com.sun.org.apache.xerces.internal.dom.DOMImplementationListImpl(java.util.List<org.w3c.dom.DOMImplementation>);
-  public org.w3c.dom.DOMImplementation item(int);
-  public int getLength();
-}

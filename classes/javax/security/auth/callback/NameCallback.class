@@ -1,9 +1,0 @@
-Compiled from "NameCallback.java"
-public class javax.security.auth.callback.NameCallback implements javax.security.auth.callback.Callback,java.io.Serializable {
-  public javax.security.auth.callback.NameCallback(java.lang.String);
-  public javax.security.auth.callback.NameCallback(java.lang.String, java.lang.String);
-  public java.lang.String getPrompt();
-  public java.lang.String getDefaultName();
-  public void setName(java.lang.String);
-  public java.lang.String getName();
-}

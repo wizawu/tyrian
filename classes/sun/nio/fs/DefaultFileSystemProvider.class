@@ -1,6 +1,0 @@
-Compiled from "DefaultFileSystemProvider.java"
-public class sun.nio.fs.DefaultFileSystemProvider {
-  public static sun.nio.fs.LinuxFileSystemProvider instance();
-  public static java.nio.file.FileSystem theFileSystem();
-  static {};
-}

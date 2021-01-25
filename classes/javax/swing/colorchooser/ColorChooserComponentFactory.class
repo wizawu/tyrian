@@ -1,5 +1,0 @@
-Compiled from "ColorChooserComponentFactory.java"
-public class javax.swing.colorchooser.ColorChooserComponentFactory {
-  public static javax.swing.colorchooser.AbstractColorChooserPanel[] getDefaultChooserPanels();
-  public static javax.swing.JComponent getPreviewPanel();
-}

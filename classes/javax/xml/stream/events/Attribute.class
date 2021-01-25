@@ -1,7 +1,0 @@
-Compiled from "Attribute.java"
-public interface javax.xml.stream.events.Attribute extends javax.xml.stream.events.XMLEvent {
-  public abstract javax.xml.namespace.QName getName();
-  public abstract java.lang.String getValue();
-  public abstract java.lang.String getDTDType();
-  public abstract boolean isSpecified();
-}

@@ -1,5 +1,0 @@
-Compiled from "ArrayType.java"
-public interface sun.jvm.hotspot.debugger.cdbg.ArrayType extends sun.jvm.hotspot.debugger.cdbg.Type {
-  public abstract sun.jvm.hotspot.debugger.cdbg.Type getElementType();
-  public abstract int getLength();
-}

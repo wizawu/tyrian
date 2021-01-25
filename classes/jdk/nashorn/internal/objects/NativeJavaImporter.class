@@ -1,8 +1,0 @@
-Compiled from "NativeJavaImporter.java"
-public final class jdk.nashorn.internal.objects.NativeJavaImporter extends jdk.nashorn.internal.runtime.ScriptObject {
-  public java.lang.String getClassName();
-  public static jdk.nashorn.internal.objects.NativeJavaImporter constructor(boolean, java.lang.Object, java.lang.Object...);
-  protected jdk.nashorn.internal.runtime.FindProperty findProperty(java.lang.Object, boolean, boolean, jdk.nashorn.internal.runtime.ScriptObject);
-  public static {};
-  public static void $clinit$();
-}

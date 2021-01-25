@@ -1,7 +1,0 @@
-Compiled from "CopyFile.java"
-public class com.sun.tools.sjavac.CopyFile implements com.sun.tools.sjavac.Transformer {
-  public com.sun.tools.sjavac.CopyFile();
-  public void setExtra(java.lang.String);
-  public void setExtra(com.sun.tools.sjavac.options.Options);
-  public boolean transform(com.sun.tools.sjavac.comp.CompilationService, java.util.Map<java.lang.String, java.util.Set<java.net.URI>>, java.util.Set<java.net.URI>, java.util.Map<java.lang.String, java.util.Set<java.lang.String>>, java.net.URI, java.util.Map<java.lang.String, java.util.Set<java.net.URI>>, java.util.Map<java.lang.String, java.util.Map<java.lang.String, java.util.Set<java.lang.String>>>, java.util.Map<java.lang.String, java.util.Map<java.lang.String, java.util.Set<java.lang.String>>>, java.util.Map<java.lang.String, com.sun.tools.sjavac.pubapi.PubApi>, java.util.Map<java.lang.String, com.sun.tools.sjavac.pubapi.PubApi>, int, boolean, int);
-}

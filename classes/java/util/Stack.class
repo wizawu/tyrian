@@ -1,9 +1,0 @@
-Compiled from "Stack.java"
-public class java.util.Stack<E> extends java.util.Vector<E> {
-  public java.util.Stack();
-  public E push(E);
-  public synchronized E pop();
-  public synchronized E peek();
-  public boolean empty();
-  public synchronized int search(java.lang.Object);
-}

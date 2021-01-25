@@ -1,9 +1,0 @@
-Compiled from "Parser.java"
-public class sun.tools.jstat.Parser {
-  public sun.tools.jstat.Parser(java.lang.String) throws java.io.FileNotFoundException;
-  public sun.tools.jstat.Parser(java.io.Reader);
-  public sun.tools.jstat.OptionFormat parse(java.lang.String) throws sun.tools.jstat.ParserException, java.io.IOException;
-  public java.util.Set<sun.tools.jstat.OptionFormat> parseOptions() throws sun.tools.jstat.ParserException, java.io.IOException;
-  sun.tools.jstat.OptionFormat getOptionFormat();
-  static {};
-}

@@ -1,6 +1,0 @@
-Compiled from "OutputPropertyUtils.java"
-public final class com.sun.org.apache.xml.internal.serializer.OutputPropertyUtils {
-  public com.sun.org.apache.xml.internal.serializer.OutputPropertyUtils();
-  public static boolean getBooleanProperty(java.lang.String, java.util.Properties);
-  public static int getIntProperty(java.lang.String, java.util.Properties);
-}

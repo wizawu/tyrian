@@ -1,4 +1,0 @@
-Compiled from "Callable.java"
-public interface sun.jvm.hotspot.utilities.soql.Callable {
-  public abstract java.lang.Object call(java.lang.Object[]) throws javax.script.ScriptException;
-}

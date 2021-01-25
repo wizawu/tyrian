@@ -1,7 +1,0 @@
-Compiled from "MBeanException.java"
-public class javax.management.MBeanException extends javax.management.JMException {
-  public javax.management.MBeanException(java.lang.Exception);
-  public javax.management.MBeanException(java.lang.Exception, java.lang.String);
-  public java.lang.Exception getTargetException();
-  public java.lang.Throwable getCause();
-}

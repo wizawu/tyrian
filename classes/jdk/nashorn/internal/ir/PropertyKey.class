@@ -1,4 +1,0 @@
-Compiled from "PropertyKey.java"
-public interface jdk.nashorn.internal.ir.PropertyKey {
-  public abstract java.lang.String getPropertyName();
-}

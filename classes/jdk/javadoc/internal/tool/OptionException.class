@@ -1,8 +1,0 @@
-Compiled from "OptionException.java"
-class jdk.javadoc.internal.tool.OptionException extends java.lang.Exception {
-  public final jdk.javadoc.internal.tool.Main$Result result;
-  public final java.lang.String message;
-  public final java.lang.Runnable m;
-  public jdk.javadoc.internal.tool.OptionException(jdk.javadoc.internal.tool.Main$Result, java.lang.Runnable, java.lang.String);
-  public jdk.javadoc.internal.tool.OptionException(jdk.javadoc.internal.tool.Main$Result, java.lang.Runnable);
-}

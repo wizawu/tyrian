@@ -1,4 +1,0 @@
-Compiled from "SSLStringizer.java"
-interface sun.security.ssl.SSLStringizer {
-  public abstract java.lang.String toString(java.nio.ByteBuffer);
-}

@@ -1,5 +1,0 @@
-Compiled from "SSLSessionBindingListener.java"
-public interface javax.net.ssl.SSLSessionBindingListener extends java.util.EventListener {
-  public abstract void valueBound(javax.net.ssl.SSLSessionBindingEvent);
-  public abstract void valueUnbound(javax.net.ssl.SSLSessionBindingEvent);
-}

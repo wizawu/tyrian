@@ -1,5 +1,0 @@
-Compiled from "XSDAbstractIDConstraintTraverser.java"
-class com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractIDConstraintTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
-  public com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractIDConstraintTraverser(com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker);
-  boolean traverseIdentityConstraint(com.sun.org.apache.xerces.internal.impl.xs.identity.IdentityConstraint, org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, java.lang.Object[]);
-}

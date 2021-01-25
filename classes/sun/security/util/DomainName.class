@@ -1,5 +1,0 @@
-Compiled from "DomainName.java"
-class sun.security.util.DomainName {
-  public static sun.security.util.RegisteredDomain registeredDomain(java.lang.String);
-  static {};
-}

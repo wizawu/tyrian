@@ -1,4 +1,0 @@
-Compiled from "UsesTree.java"
-public interface com.sun.source.tree.UsesTree extends com.sun.source.tree.DirectiveTree {
-  public abstract com.sun.source.tree.ExpressionTree getServiceName();
-}

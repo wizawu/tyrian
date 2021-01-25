@@ -1,7 +1,0 @@
-Compiled from "CMSCollector.java"
-public class sun.jvm.hotspot.gc.cms.CMSCollector extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.gc.cms.CMSCollector(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.gc.cms.CMSBitMap markBitMap();
-  public long blockSizeUsingPrintezisBits(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

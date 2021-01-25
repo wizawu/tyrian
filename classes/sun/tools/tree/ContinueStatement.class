@@ -1,9 +1,0 @@
-Compiled from "ContinueStatement.java"
-public class sun.tools.tree.ContinueStatement extends sun.tools.tree.Statement {
-  sun.tools.java.Identifier lbl;
-  public sun.tools.tree.ContinueStatement(long, sun.tools.java.Identifier);
-  sun.tools.tree.Vset check(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
-  public int costInline(int, sun.tools.java.Environment, sun.tools.tree.Context);
-  public void code(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
-  public void print(java.io.PrintStream, int);
-}

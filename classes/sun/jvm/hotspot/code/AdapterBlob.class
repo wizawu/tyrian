@@ -1,7 +1,0 @@
-Compiled from "AdapterBlob.java"
-public class sun.jvm.hotspot.code.AdapterBlob extends sun.jvm.hotspot.code.RuntimeBlob {
-  public sun.jvm.hotspot.code.AdapterBlob(sun.jvm.hotspot.debugger.Address);
-  public boolean isAdapterBlob();
-  public java.lang.String getName();
-  static {};
-}

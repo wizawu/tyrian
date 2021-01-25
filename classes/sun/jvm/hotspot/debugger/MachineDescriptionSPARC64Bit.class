@@ -1,7 +1,0 @@
-Compiled from "MachineDescriptionSPARC64Bit.java"
-public class sun.jvm.hotspot.debugger.MachineDescriptionSPARC64Bit extends sun.jvm.hotspot.debugger.MachineDescriptionTwosComplement implements sun.jvm.hotspot.debugger.MachineDescription {
-  public sun.jvm.hotspot.debugger.MachineDescriptionSPARC64Bit();
-  public long getAddressSize();
-  public boolean isBigEndian();
-  public boolean isLP64();
-}

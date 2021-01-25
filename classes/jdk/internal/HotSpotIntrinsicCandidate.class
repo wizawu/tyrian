@@ -1,3 +1,0 @@
-Compiled from "HotSpotIntrinsicCandidate.java"
-public interface jdk.internal.HotSpotIntrinsicCandidate extends java.lang.annotation.Annotation {
-}

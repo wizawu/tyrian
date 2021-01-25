@@ -1,6 +1,0 @@
-Compiled from "AcceptSecContextToken.java"
-class sun.security.jgss.krb5.AcceptSecContextToken extends sun.security.jgss.krb5.InitialToken {
-  public sun.security.jgss.krb5.AcceptSecContextToken(sun.security.jgss.krb5.Krb5Context, sun.security.krb5.KrbApReq) throws sun.security.krb5.KrbException, java.io.IOException, org.ietf.jgss.GSSException;
-  public sun.security.jgss.krb5.AcceptSecContextToken(sun.security.jgss.krb5.Krb5Context, sun.security.krb5.Credentials, sun.security.krb5.KrbApReq, java.io.InputStream) throws java.io.IOException, org.ietf.jgss.GSSException, sun.security.krb5.KrbException;
-  public final byte[] encode() throws java.io.IOException;
-}

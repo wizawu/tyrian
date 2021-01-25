@@ -1,5 +1,0 @@
-Compiled from "DCmdStop.java"
-final class jdk.jfr.internal.dcmd.DCmdStop extends jdk.jfr.internal.dcmd.AbstractDCmd {
-  jdk.jfr.internal.dcmd.DCmdStop();
-  public java.lang.String execute(java.lang.String, java.lang.String) throws jdk.jfr.internal.dcmd.DCmdException;
-}

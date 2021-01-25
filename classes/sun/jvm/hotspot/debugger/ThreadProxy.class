@@ -1,6 +1,0 @@
-Compiled from "ThreadProxy.java"
-public interface sun.jvm.hotspot.debugger.ThreadProxy {
-  public abstract sun.jvm.hotspot.debugger.ThreadContext getContext() throws java.lang.IllegalThreadStateException;
-  public abstract boolean canSetContext() throws sun.jvm.hotspot.debugger.DebuggerException;
-  public abstract void setContext(sun.jvm.hotspot.debugger.ThreadContext) throws java.lang.IllegalThreadStateException, sun.jvm.hotspot.debugger.DebuggerException;
-}

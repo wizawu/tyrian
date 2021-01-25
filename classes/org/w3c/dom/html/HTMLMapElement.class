@@ -1,6 +1,0 @@
-Compiled from "HTMLMapElement.java"
-public interface org.w3c.dom.html.HTMLMapElement extends org.w3c.dom.html.HTMLElement {
-  public abstract org.w3c.dom.html.HTMLCollection getAreas();
-  public abstract java.lang.String getName();
-  public abstract void setName(java.lang.String);
-}

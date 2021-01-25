@@ -1,8 +1,0 @@
-Compiled from "SoundbankResource.java"
-public abstract class javax.sound.midi.SoundbankResource {
-  protected javax.sound.midi.SoundbankResource(javax.sound.midi.Soundbank, java.lang.String, java.lang.Class<?>);
-  public javax.sound.midi.Soundbank getSoundbank();
-  public java.lang.String getName();
-  public java.lang.Class<?> getDataClass();
-  public abstract java.lang.Object getData();
-}

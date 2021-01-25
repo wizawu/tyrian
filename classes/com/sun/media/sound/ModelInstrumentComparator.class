@@ -1,6 +1,0 @@
-Compiled from "ModelInstrumentComparator.java"
-public final class com.sun.media.sound.ModelInstrumentComparator implements java.util.Comparator<javax.sound.midi.Instrument> {
-  public com.sun.media.sound.ModelInstrumentComparator();
-  public int compare(javax.sound.midi.Instrument, javax.sound.midi.Instrument);
-  public int compare(java.lang.Object, java.lang.Object);
-}

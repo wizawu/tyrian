@@ -1,7 +1,0 @@
-Compiled from "Reflection.java"
-public final class jdk.internal.joptsimple.internal.Reflection {
-  public static <V> jdk.internal.joptsimple.ValueConverter<V> findConverter(java.lang.Class<V>);
-  public static <T> T instantiate(java.lang.reflect.Constructor<T>, java.lang.Object...);
-  public static java.lang.Object invoke(java.lang.reflect.Method, java.lang.Object...);
-  public static <V> V convertWith(jdk.internal.joptsimple.ValueConverter<V>, java.lang.String);
-}

@@ -1,6 +1,0 @@
-Compiled from "Handler.java"
-public class sun.net.www.protocol.mailto.Handler extends java.net.URLStreamHandler {
-  public sun.net.www.protocol.mailto.Handler();
-  public synchronized java.net.URLConnection openConnection(java.net.URL);
-  public void parseURL(java.net.URL, java.lang.String, int, int);
-}

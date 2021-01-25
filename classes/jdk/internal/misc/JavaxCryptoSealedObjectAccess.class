@@ -1,4 +1,0 @@
-Compiled from "JavaxCryptoSealedObjectAccess.java"
-public interface jdk.internal.misc.JavaxCryptoSealedObjectAccess {
-  public abstract java.io.ObjectInputStream getExtObjectInputStream(javax.crypto.SealedObject, javax.crypto.Cipher) throws javax.crypto.BadPaddingException, javax.crypto.IllegalBlockSizeException, java.io.IOException;
-}

@@ -1,5 +1,0 @@
-Compiled from "AnnotatedType.java"
-public interface java.lang.reflect.AnnotatedType extends java.lang.reflect.AnnotatedElement {
-  public default java.lang.reflect.AnnotatedType getAnnotatedOwnerType();
-  public abstract java.lang.reflect.Type getType();
-}

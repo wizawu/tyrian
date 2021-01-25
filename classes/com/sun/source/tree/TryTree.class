@@ -1,7 +1,0 @@
-Compiled from "TryTree.java"
-public interface com.sun.source.tree.TryTree extends com.sun.source.tree.StatementTree {
-  public abstract com.sun.source.tree.BlockTree getBlock();
-  public abstract java.util.List<? extends com.sun.source.tree.CatchTree> getCatches();
-  public abstract com.sun.source.tree.BlockTree getFinallyBlock();
-  public abstract java.util.List<? extends com.sun.source.tree.Tree> getResources();
-}

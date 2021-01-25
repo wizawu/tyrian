@@ -1,4 +1,0 @@
-Compiled from "HTMLFieldSetElement.java"
-public interface org.w3c.dom.html.HTMLFieldSetElement extends org.w3c.dom.html.HTMLElement {
-  public abstract org.w3c.dom.html.HTMLFormElement getForm();
-}

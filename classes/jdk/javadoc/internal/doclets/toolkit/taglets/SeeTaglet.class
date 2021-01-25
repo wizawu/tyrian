@@ -1,6 +1,0 @@
-Compiled from "SeeTaglet.java"
-public class jdk.javadoc.internal.doclets.toolkit.taglets.SeeTaglet extends jdk.javadoc.internal.doclets.toolkit.taglets.BaseTaglet implements jdk.javadoc.internal.doclets.toolkit.taglets.InheritableTaglet {
-  public jdk.javadoc.internal.doclets.toolkit.taglets.SeeTaglet();
-  public void inherit(jdk.javadoc.internal.doclets.toolkit.util.DocFinder$Input, jdk.javadoc.internal.doclets.toolkit.util.DocFinder$Output);
-  public jdk.javadoc.internal.doclets.toolkit.Content getTagletOutput(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
-}

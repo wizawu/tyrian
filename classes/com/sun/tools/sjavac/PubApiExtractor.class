@@ -1,9 +1,0 @@
-Compiled from "PubApiExtractor.java"
-public class com.sun.tools.sjavac.PubApiExtractor {
-  final com.sun.tools.javac.util.Context context;
-  final javax.tools.JavaCompiler$CompilationTask task;
-  final com.sun.tools.sjavac.comp.SmartFileManager fileManager;
-  public com.sun.tools.sjavac.PubApiExtractor(com.sun.tools.sjavac.options.Options);
-  public com.sun.tools.sjavac.pubapi.PubApi getPubApi(java.lang.String);
-  public void close() throws java.io.IOException;
-}

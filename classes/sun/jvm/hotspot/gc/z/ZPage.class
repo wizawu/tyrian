@@ -1,9 +1,0 @@
-Compiled from "ZPage.java"
-public class sun.jvm.hotspot.gc.z.ZPage extends sun.jvm.hotspot.runtime.VMObject {
-  static final boolean $assertionsDisabled;
-  public sun.jvm.hotspot.gc.z.ZPage(sun.jvm.hotspot.debugger.Address);
-  sun.jvm.hotspot.debugger.Address forward_object(sun.jvm.hotspot.debugger.Address);
-  sun.jvm.hotspot.debugger.Address relocate_object(sun.jvm.hotspot.debugger.Address);
-  long object_alignment_shift();
-  static {};
-}

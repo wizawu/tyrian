@@ -1,5 +1,0 @@
-Compiled from "MouseInfoPeer.java"
-public interface java.awt.peer.MouseInfoPeer {
-  public abstract int fillPointWithCoords(java.awt.Point);
-  public abstract boolean isWindowUnderMouse(java.awt.Window);
-}

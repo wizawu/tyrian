@@ -1,9 +1,0 @@
-Compiled from "IntInsnNode.java"
-public class jdk.internal.org.objectweb.asm.tree.IntInsnNode extends jdk.internal.org.objectweb.asm.tree.AbstractInsnNode {
-  public int operand;
-  public jdk.internal.org.objectweb.asm.tree.IntInsnNode(int, int);
-  public void setOpcode(int);
-  public int getType();
-  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
-  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode clone(java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
-}

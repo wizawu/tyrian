@@ -1,7 +1,0 @@
-Compiled from "TIFFDeflater.java"
-public class com.sun.imageio.plugins.tiff.TIFFDeflater extends com.sun.imageio.plugins.tiff.TIFFCompressor {
-  java.util.zip.Deflater deflater;
-  int predictor;
-  public com.sun.imageio.plugins.tiff.TIFFDeflater(java.lang.String, int, javax.imageio.ImageWriteParam, int);
-  public int encode(byte[], int, int, int, int[], int) throws java.io.IOException;
-}

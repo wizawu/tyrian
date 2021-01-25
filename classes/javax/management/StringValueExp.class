@@ -1,9 +1,0 @@
-Compiled from "StringValueExp.java"
-public class javax.management.StringValueExp implements javax.management.ValueExp {
-  public javax.management.StringValueExp();
-  public javax.management.StringValueExp(java.lang.String);
-  public java.lang.String getValue();
-  public java.lang.String toString();
-  public void setMBeanServer(javax.management.MBeanServer);
-  public javax.management.ValueExp apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
-}

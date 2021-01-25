@@ -1,5 +1,0 @@
-Compiled from "FormatData_ko.java"
-public class sun.text.resources.ext.FormatData_ko extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_ko();
-  protected final java.lang.Object[][] getContents();
-}

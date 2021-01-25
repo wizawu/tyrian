@@ -1,4 +1,0 @@
-Compiled from "AbstractJDKEvent.java"
-abstract class jdk.jfr.events.AbstractJDKEvent extends jdk.jfr.Event {
-  jdk.jfr.events.AbstractJDKEvent();
-}

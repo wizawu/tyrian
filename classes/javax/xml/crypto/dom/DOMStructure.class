@@ -1,6 +1,0 @@
-Compiled from "DOMStructure.java"
-public class javax.xml.crypto.dom.DOMStructure implements javax.xml.crypto.XMLStructure {
-  public javax.xml.crypto.dom.DOMStructure(org.w3c.dom.Node);
-  public org.w3c.dom.Node getNode();
-  public boolean isFeatureSupported(java.lang.String);
-}

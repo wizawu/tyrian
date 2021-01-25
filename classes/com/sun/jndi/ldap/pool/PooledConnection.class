@@ -1,4 +1,0 @@
-Compiled from "PooledConnection.java"
-public interface com.sun.jndi.ldap.pool.PooledConnection {
-  public abstract void closeConnection();
-}

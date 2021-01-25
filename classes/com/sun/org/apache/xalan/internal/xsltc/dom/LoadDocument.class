@@ -1,6 +1,0 @@
-Compiled from "LoadDocument.java"
-public final class com.sun.org.apache.xalan.internal.xsltc.dom.LoadDocument {
-  public com.sun.org.apache.xalan.internal.xsltc.dom.LoadDocument();
-  public static com.sun.org.apache.xml.internal.dtm.DTMAxisIterator documentF(java.lang.Object, com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, java.lang.String, com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet, com.sun.org.apache.xalan.internal.xsltc.DOM) throws com.sun.org.apache.xalan.internal.xsltc.TransletException;
-  public static com.sun.org.apache.xml.internal.dtm.DTMAxisIterator documentF(java.lang.Object, java.lang.String, com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet, com.sun.org.apache.xalan.internal.xsltc.DOM) throws com.sun.org.apache.xalan.internal.xsltc.TransletException;
-}

@@ -1,5 +1,0 @@
-Compiled from "I18NImpl.java"
-public class com.sun.imageio.plugins.common.I18NImpl {
-  public com.sun.imageio.plugins.common.I18NImpl();
-  protected static final java.lang.String getString(java.lang.String, java.lang.String, java.lang.String);
-}

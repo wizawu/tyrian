@@ -1,3 +1,0 @@
-Compiled from "BreakpointEvent.java"
-public interface com.sun.jdi.event.BreakpointEvent extends com.sun.jdi.event.LocatableEvent {
-}

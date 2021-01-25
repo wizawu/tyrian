@@ -1,7 +1,0 @@
-Compiled from "ClassPrepareRequest.java"
-public interface com.sun.jdi.request.ClassPrepareRequest extends com.sun.jdi.request.EventRequest {
-  public abstract void addClassFilter(com.sun.jdi.ReferenceType);
-  public abstract void addClassFilter(java.lang.String);
-  public abstract void addClassExclusionFilter(java.lang.String);
-  public abstract void addSourceNameFilter(java.lang.String);
-}

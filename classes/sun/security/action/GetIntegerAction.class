@@ -1,9 +1,0 @@
-Compiled from "GetIntegerAction.java"
-public class sun.security.action.GetIntegerAction implements java.security.PrivilegedAction<java.lang.Integer> {
-  public sun.security.action.GetIntegerAction(java.lang.String);
-  public sun.security.action.GetIntegerAction(java.lang.String, int);
-  public java.lang.Integer run();
-  public static java.lang.Integer privilegedGetProperty(java.lang.String);
-  public static java.lang.Integer privilegedGetProperty(java.lang.String, int);
-  public java.lang.Object run();
-}

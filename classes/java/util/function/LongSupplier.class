@@ -1,4 +1,0 @@
-Compiled from "LongSupplier.java"
-public interface java.util.function.LongSupplier {
-  public abstract long getAsLong();
-}

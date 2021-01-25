@@ -1,6 +1,0 @@
-Compiled from "ProcImageClassLoader.java"
-public class sun.jvm.hotspot.utilities.ProcImageClassLoader extends java.lang.ClassLoader {
-  public sun.jvm.hotspot.utilities.ProcImageClassLoader(java.lang.ClassLoader);
-  public sun.jvm.hotspot.utilities.ProcImageClassLoader();
-  protected java.lang.Class findClass(java.lang.String) throws java.lang.ClassNotFoundException;
-}

@@ -1,7 +1,0 @@
-Compiled from "URLCanonicalizer.java"
-public class sun.net.URLCanonicalizer {
-  public sun.net.URLCanonicalizer();
-  public java.lang.String canonicalize(java.lang.String);
-  public boolean hasProtocolName(java.lang.String);
-  protected boolean isSimpleHostName(java.lang.String);
-}

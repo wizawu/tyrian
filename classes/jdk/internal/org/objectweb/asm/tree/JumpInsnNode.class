@@ -1,9 +1,0 @@
-Compiled from "JumpInsnNode.java"
-public class jdk.internal.org.objectweb.asm.tree.JumpInsnNode extends jdk.internal.org.objectweb.asm.tree.AbstractInsnNode {
-  public jdk.internal.org.objectweb.asm.tree.LabelNode label;
-  public jdk.internal.org.objectweb.asm.tree.JumpInsnNode(int, jdk.internal.org.objectweb.asm.tree.LabelNode);
-  public void setOpcode(int);
-  public int getType();
-  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
-  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode clone(java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
-}

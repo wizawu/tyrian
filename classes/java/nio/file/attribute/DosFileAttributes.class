@@ -1,7 +1,0 @@
-Compiled from "DosFileAttributes.java"
-public interface java.nio.file.attribute.DosFileAttributes extends java.nio.file.attribute.BasicFileAttributes {
-  public abstract boolean isReadOnly();
-  public abstract boolean isHidden();
-  public abstract boolean isArchive();
-  public abstract boolean isSystem();
-}

@@ -1,4 +1,0 @@
-Compiled from "XSElementDeclHelper.java"
-public interface com.sun.org.apache.xerces.internal.impl.xs.XSElementDeclHelper {
-  public abstract com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl getGlobalElementDecl(com.sun.org.apache.xerces.internal.xni.QName);
-}

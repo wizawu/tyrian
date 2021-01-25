@@ -1,5 +1,0 @@
-Compiled from "InvalidDatatypeFacetException.java"
-public class com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeFacetException extends com.sun.org.apache.xerces.internal.impl.dv.DatatypeException {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeFacetException(java.lang.String, java.lang.Object[]);
-}

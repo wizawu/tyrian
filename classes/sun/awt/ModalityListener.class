@@ -1,5 +1,0 @@
-Compiled from "ModalityListener.java"
-public interface sun.awt.ModalityListener {
-  public abstract void modalityPushed(sun.awt.ModalityEvent);
-  public abstract void modalityPopped(sun.awt.ModalityEvent);
-}

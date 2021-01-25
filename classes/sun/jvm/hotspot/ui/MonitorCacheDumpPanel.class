@@ -1,5 +1,0 @@
-Compiled from "MonitorCacheDumpPanel.java"
-public class sun.jvm.hotspot.ui.MonitorCacheDumpPanel extends javax.swing.JPanel {
-  public sun.jvm.hotspot.ui.MonitorCacheDumpPanel();
-  static {};
-}

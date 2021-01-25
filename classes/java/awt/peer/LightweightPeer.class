@@ -1,3 +1,0 @@
-Compiled from "LightweightPeer.java"
-public interface java.awt.peer.LightweightPeer extends java.awt.peer.ComponentPeer {
-}

@@ -1,7 +1,0 @@
-Compiled from "JavaAdapterClassLoader.java"
-final class jdk.nashorn.internal.runtime.linker.JavaAdapterClassLoader {
-  static final boolean $assertionsDisabled;
-  jdk.nashorn.internal.runtime.linker.JavaAdapterClassLoader(java.lang.String, byte[]);
-  jdk.dynalink.beans.StaticClass generateClass(java.lang.ClassLoader, java.security.ProtectionDomain);
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "JvmtiExport.java"
-public class sun.jvm.hotspot.prims.JvmtiExport {
-  public sun.jvm.hotspot.prims.JvmtiExport();
-  public static boolean canAccessLocalVariables();
-  public static boolean canHotswapOrPostBreakpoint();
-  public static boolean canPostOnExceptions();
-  static {};
-}

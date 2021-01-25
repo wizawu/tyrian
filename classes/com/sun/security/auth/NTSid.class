@@ -1,8 +1,0 @@
-Compiled from "NTSid.java"
-public class com.sun.security.auth.NTSid implements java.security.Principal,java.io.Serializable {
-  public com.sun.security.auth.NTSid(java.lang.String);
-  public java.lang.String getName();
-  public java.lang.String toString();
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-}

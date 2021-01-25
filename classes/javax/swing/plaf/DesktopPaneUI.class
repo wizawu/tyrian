@@ -1,4 +1,0 @@
-Compiled from "DesktopPaneUI.java"
-public abstract class javax.swing.plaf.DesktopPaneUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.DesktopPaneUI();
-}

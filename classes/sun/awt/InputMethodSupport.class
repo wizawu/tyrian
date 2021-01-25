@@ -1,7 +1,0 @@
-Compiled from "InputMethodSupport.java"
-public interface sun.awt.InputMethodSupport {
-  public abstract java.awt.im.spi.InputMethodDescriptor getInputMethodAdapterDescriptor() throws java.awt.AWTException;
-  public abstract java.awt.Window createInputMethodWindow(java.lang.String, sun.awt.im.InputContext);
-  public abstract boolean enableInputMethodsForTextComponent();
-  public abstract java.util.Locale getDefaultKeyboardLocale();
-}

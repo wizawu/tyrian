@@ -1,4 +1,0 @@
-Compiled from "URIResolver.java"
-public interface javax.xml.transform.URIResolver {
-  public abstract javax.xml.transform.Source resolve(java.lang.String, java.lang.String) throws javax.xml.transform.TransformerException;
-}

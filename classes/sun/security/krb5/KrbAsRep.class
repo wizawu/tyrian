@@ -1,9 +1,0 @@
-Compiled from "KrbAsRep.java"
-class sun.security.krb5.KrbAsRep extends sun.security.krb5.KrbKdcRep {
-  sun.security.krb5.KrbAsRep(byte[]) throws sun.security.krb5.KrbException, sun.security.krb5.Asn1Exception, java.io.IOException;
-  sun.security.krb5.internal.PAData[] getPA();
-  void decryptUsingKeyTab(javax.security.auth.kerberos.KeyTab, sun.security.krb5.KrbAsReq, sun.security.krb5.PrincipalName) throws sun.security.krb5.KrbException, sun.security.krb5.Asn1Exception, java.io.IOException;
-  void decryptUsingPassword(char[], sun.security.krb5.KrbAsReq, sun.security.krb5.PrincipalName) throws sun.security.krb5.KrbException, sun.security.krb5.Asn1Exception, java.io.IOException;
-  sun.security.krb5.Credentials getCreds();
-  sun.security.krb5.internal.ccache.Credentials getCCreds();
-}

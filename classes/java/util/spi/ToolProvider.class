@@ -1,7 +1,0 @@
-Compiled from "ToolProvider.java"
-public interface java.util.spi.ToolProvider {
-  public abstract java.lang.String name();
-  public abstract int run(java.io.PrintWriter, java.io.PrintWriter, java.lang.String...);
-  public default int run(java.io.PrintStream, java.io.PrintStream, java.lang.String...);
-  public static java.util.Optional<java.util.spi.ToolProvider> findFirst(java.lang.String);
-}

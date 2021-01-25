@@ -1,8 +1,0 @@
-Compiled from "Doclet.java"
-public interface jdk.javadoc.doclet.Doclet {
-  public abstract void init(java.util.Locale, jdk.javadoc.doclet.Reporter);
-  public abstract java.lang.String getName();
-  public abstract java.util.Set<? extends jdk.javadoc.doclet.Doclet$Option> getSupportedOptions();
-  public abstract javax.lang.model.SourceVersion getSupportedSourceVersion();
-  public abstract boolean run(jdk.javadoc.doclet.DocletEnvironment);
-}

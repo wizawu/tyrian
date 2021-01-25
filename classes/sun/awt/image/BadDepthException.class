@@ -1,4 +1,0 @@
-Compiled from "BadDepthException.java"
-public class sun.awt.image.BadDepthException extends java.lang.Exception {
-  public sun.awt.image.BadDepthException();
-}

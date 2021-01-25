@@ -1,3 +1,0 @@
-Compiled from "PanelPeer.java"
-public interface java.awt.peer.PanelPeer extends java.awt.peer.ContainerPeer {
-}

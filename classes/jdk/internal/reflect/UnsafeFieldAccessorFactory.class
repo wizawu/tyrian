@@ -1,5 +1,0 @@
-Compiled from "UnsafeFieldAccessorFactory.java"
-class jdk.internal.reflect.UnsafeFieldAccessorFactory {
-  jdk.internal.reflect.UnsafeFieldAccessorFactory();
-  static jdk.internal.reflect.FieldAccessor newFieldAccessor(java.lang.reflect.Field, boolean);
-}

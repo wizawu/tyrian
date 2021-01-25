@@ -1,4 +1,0 @@
-Compiled from "NamedFieldIdentifier.java"
-public interface sun.jvm.hotspot.debugger.cdbg.NamedFieldIdentifier extends sun.jvm.hotspot.debugger.cdbg.FieldIdentifier {
-  public abstract java.lang.String getName();
-}

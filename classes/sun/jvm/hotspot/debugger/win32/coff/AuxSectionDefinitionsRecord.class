@@ -1,9 +1,0 @@
-Compiled from "AuxSectionDefinitionsRecord.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.AuxSectionDefinitionsRecord extends sun.jvm.hotspot.debugger.win32.coff.AuxSymbolRecord {
-  public abstract int getLength();
-  public abstract short getNumberOfRelocations();
-  public abstract short getNumberOfLineNumbers();
-  public abstract int getCheckSum();
-  public abstract short getNumber();
-  public abstract byte getSelection();
-}

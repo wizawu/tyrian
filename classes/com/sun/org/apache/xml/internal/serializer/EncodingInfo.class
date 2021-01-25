@@ -1,8 +1,0 @@
-Compiled from "EncodingInfo.java"
-public final class com.sun.org.apache.xml.internal.serializer.EncodingInfo {
-  final java.lang.String name;
-  final java.lang.String javaName;
-  public boolean isInEncoding(char);
-  public boolean isInEncoding(char, char);
-  public com.sun.org.apache.xml.internal.serializer.EncodingInfo(java.lang.String, java.lang.String);
-}

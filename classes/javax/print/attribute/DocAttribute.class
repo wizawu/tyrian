@@ -1,3 +1,0 @@
-Compiled from "DocAttribute.java"
-public interface javax.print.attribute.DocAttribute extends javax.print.attribute.Attribute {
-}

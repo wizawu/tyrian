@@ -1,7 +1,0 @@
-Compiled from "AssertsEnabled.java"
-public final class jdk.nashorn.internal.AssertsEnabled {
-  static final boolean $assertionsDisabled;
-  public jdk.nashorn.internal.AssertsEnabled();
-  public static boolean assertsEnabled();
-  static {};
-}

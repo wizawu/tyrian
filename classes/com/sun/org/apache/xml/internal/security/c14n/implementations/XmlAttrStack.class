@@ -1,8 +1,0 @@
-Compiled from "XmlAttrStack.java"
-class com.sun.org.apache.xml.internal.security.c14n.implementations.XmlAttrStack {
-  public com.sun.org.apache.xml.internal.security.c14n.implementations.XmlAttrStack(boolean);
-  void push(int);
-  void addXmlnsAttr(org.w3c.dom.Attr);
-  void getXmlnsAttr(java.util.Collection<org.w3c.dom.Attr>);
-  static {};
-}

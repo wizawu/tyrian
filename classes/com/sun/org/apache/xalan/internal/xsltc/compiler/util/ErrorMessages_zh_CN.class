@@ -1,5 +1,0 @@
-Compiled from "ErrorMessages_zh_CN.java"
-public class com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMessages_zh_CN extends java.util.ListResourceBundle {
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.ErrorMessages_zh_CN();
-  public java.lang.Object[][] getContents();
-}

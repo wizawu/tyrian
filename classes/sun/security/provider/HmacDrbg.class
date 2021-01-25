@@ -1,7 +1,0 @@
-Compiled from "HmacDrbg.java"
-public class sun.security.provider.HmacDrbg extends sun.security.provider.AbstractHashDrbg {
-  public sun.security.provider.HmacDrbg(java.security.SecureRandomParameters);
-  protected void initEngine();
-  protected final synchronized void hashReseedInternal(java.util.List<byte[]>);
-  public synchronized void generateAlgorithm(byte[], byte[]);
-}

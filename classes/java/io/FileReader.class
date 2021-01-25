@@ -1,8 +1,0 @@
-Compiled from "FileReader.java"
-public class java.io.FileReader extends java.io.InputStreamReader {
-  public java.io.FileReader(java.lang.String) throws java.io.FileNotFoundException;
-  public java.io.FileReader(java.io.File) throws java.io.FileNotFoundException;
-  public java.io.FileReader(java.io.FileDescriptor);
-  public java.io.FileReader(java.lang.String, java.nio.charset.Charset) throws java.io.IOException;
-  public java.io.FileReader(java.io.File, java.nio.charset.Charset) throws java.io.IOException;
-}

@@ -1,4 +1,0 @@
-Compiled from "NotificationEmitter.java"
-public interface javax.management.NotificationEmitter extends javax.management.NotificationBroadcaster {
-  public abstract void removeNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) throws javax.management.ListenerNotFoundException;
-}

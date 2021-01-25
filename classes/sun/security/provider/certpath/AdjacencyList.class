@@ -1,6 +1,0 @@
-Compiled from "AdjacencyList.java"
-public class sun.security.provider.certpath.AdjacencyList {
-  public sun.security.provider.certpath.AdjacencyList(java.util.List<java.util.List<sun.security.provider.certpath.Vertex>>);
-  public java.util.Iterator<sun.security.provider.certpath.BuildStep> iterator();
-  public java.lang.String toString();
-}

@@ -1,9 +1,0 @@
-Compiled from "SimpleDoc.java"
-public final class javax.print.SimpleDoc implements javax.print.Doc {
-  public javax.print.SimpleDoc(java.lang.Object, javax.print.DocFlavor, javax.print.attribute.DocAttributeSet);
-  public javax.print.DocFlavor getDocFlavor();
-  public javax.print.attribute.DocAttributeSet getAttributes();
-  public java.lang.Object getPrintData() throws java.io.IOException;
-  public java.io.Reader getReaderForText() throws java.io.IOException;
-  public java.io.InputStream getStreamForBytes() throws java.io.IOException;
-}

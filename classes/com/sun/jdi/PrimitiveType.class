@@ -1,3 +1,0 @@
-Compiled from "PrimitiveType.java"
-public interface com.sun.jdi.PrimitiveType extends com.sun.jdi.Type {
-}

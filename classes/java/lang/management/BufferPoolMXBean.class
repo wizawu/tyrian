@@ -1,7 +1,0 @@
-Compiled from "BufferPoolMXBean.java"
-public interface java.lang.management.BufferPoolMXBean extends java.lang.management.PlatformManagedObject {
-  public abstract java.lang.String getName();
-  public abstract long getCount();
-  public abstract long getTotalCapacity();
-  public abstract long getMemoryUsed();
-}

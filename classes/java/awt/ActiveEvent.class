@@ -1,4 +1,0 @@
-Compiled from "ActiveEvent.java"
-public interface java.awt.ActiveEvent {
-  public abstract void dispatch();
-}

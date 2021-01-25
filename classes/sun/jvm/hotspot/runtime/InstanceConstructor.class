@@ -1,6 +1,0 @@
-Compiled from "InstanceConstructor.java"
-public abstract class sun.jvm.hotspot.runtime.InstanceConstructor<T> {
-  public sun.jvm.hotspot.runtime.InstanceConstructor();
-  public abstract T instantiateWrapperFor(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.types.WrongTypeException;
-  protected sun.jvm.hotspot.types.WrongTypeException newWrongTypeException(sun.jvm.hotspot.debugger.Address);
-}

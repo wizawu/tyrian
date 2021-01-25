@@ -1,5 +1,0 @@
-Compiled from "XInputMethodDescriptor.java"
-class sun.awt.X11.XInputMethodDescriptor extends sun.awt.X11InputMethodDescriptor {
-  sun.awt.X11.XInputMethodDescriptor();
-  public java.awt.im.spi.InputMethod createInputMethod() throws java.lang.Exception;
-}

@@ -1,5 +1,0 @@
-Compiled from "JShellException.java"
-public class jdk.jshell.JShellException extends java.lang.Exception {
-  jdk.jshell.JShellException(java.lang.String);
-  jdk.jshell.JShellException(java.lang.String, java.lang.Throwable);
-}

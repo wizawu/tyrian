@@ -1,8 +1,0 @@
-Compiled from "XStateProtocol.java"
-public interface sun.awt.X11.XStateProtocol {
-  public abstract boolean supportsState(int);
-  public abstract void setState(sun.awt.X11.XWindowPeer, int);
-  public abstract int getState(sun.awt.X11.XWindowPeer);
-  public abstract boolean isStateChange(sun.awt.X11.XPropertyEvent);
-  public abstract void unshadeKludge(sun.awt.X11.XWindowPeer);
-}

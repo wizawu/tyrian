@@ -1,5 +1,0 @@
-Compiled from "InvalidRoleInfoException.java"
-public class javax.management.relation.InvalidRoleInfoException extends javax.management.relation.RelationException {
-  public javax.management.relation.InvalidRoleInfoException();
-  public javax.management.relation.InvalidRoleInfoException(java.lang.String);
-}

@@ -1,9 +1,0 @@
-Compiled from "ProfileDeferralMgr.java"
-public class sun.java2d.cmm.ProfileDeferralMgr {
-  public static boolean deferring;
-  public sun.java2d.cmm.ProfileDeferralMgr();
-  public static void registerDeferral(sun.java2d.cmm.ProfileActivator);
-  public static void unregisterDeferral(sun.java2d.cmm.ProfileActivator);
-  public static void activateProfiles();
-  static {};
-}

@@ -1,6 +1,0 @@
-Compiled from "FunctionType.java"
-public interface sun.jvm.hotspot.debugger.cdbg.FunctionType extends sun.jvm.hotspot.debugger.cdbg.Type {
-  public abstract sun.jvm.hotspot.debugger.cdbg.Type getReturnType();
-  public abstract int getNumArguments();
-  public abstract sun.jvm.hotspot.debugger.cdbg.Type getArgumentType(int);
-}

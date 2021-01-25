@@ -1,4 +1,0 @@
-Compiled from "JMXAddressable.java"
-public interface javax.management.remote.JMXAddressable {
-  public abstract javax.management.remote.JMXServiceURL getAddress();
-}

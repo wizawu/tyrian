@@ -1,5 +1,0 @@
-Compiled from "XPathExpressionException.java"
-public class javax.xml.xpath.XPathExpressionException extends javax.xml.xpath.XPathException {
-  public javax.xml.xpath.XPathExpressionException(java.lang.String);
-  public javax.xml.xpath.XPathExpressionException(java.lang.Throwable);
-}

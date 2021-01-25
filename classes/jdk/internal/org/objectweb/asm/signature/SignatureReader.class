@@ -1,6 +1,0 @@
-Compiled from "SignatureReader.java"
-public class jdk.internal.org.objectweb.asm.signature.SignatureReader {
-  public jdk.internal.org.objectweb.asm.signature.SignatureReader(java.lang.String);
-  public void accept(jdk.internal.org.objectweb.asm.signature.SignatureVisitor);
-  public void acceptType(jdk.internal.org.objectweb.asm.signature.SignatureVisitor);
-}

@@ -1,5 +1,0 @@
-Compiled from "SubRegionShowable.java"
-public interface sun.awt.SubRegionShowable {
-  public abstract void show(int, int, int, int);
-  public abstract boolean showIfNotLost(int, int, int, int);
-}

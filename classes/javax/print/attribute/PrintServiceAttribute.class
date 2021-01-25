@@ -1,3 +1,0 @@
-Compiled from "PrintServiceAttribute.java"
-public interface javax.print.attribute.PrintServiceAttribute extends javax.print.attribute.Attribute {
-}

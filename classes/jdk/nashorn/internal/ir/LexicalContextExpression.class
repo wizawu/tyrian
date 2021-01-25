@@ -1,7 +1,0 @@
-Compiled from "LexicalContextExpression.java"
-abstract class jdk.nashorn.internal.ir.LexicalContextExpression extends jdk.nashorn.internal.ir.Expression implements jdk.nashorn.internal.ir.LexicalContextNode {
-  jdk.nashorn.internal.ir.LexicalContextExpression(jdk.nashorn.internal.ir.LexicalContextExpression);
-  jdk.nashorn.internal.ir.LexicalContextExpression(long, int, int);
-  jdk.nashorn.internal.ir.LexicalContextExpression(long, int);
-  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
-}

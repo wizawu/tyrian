@@ -1,7 +1,0 @@
-Compiled from "RSAServerKeyExchange.java"
-final class sun.security.ssl.RSAServerKeyExchange {
-  static final sun.security.ssl.SSLConsumer rsaHandshakeConsumer;
-  static final sun.security.ssl.HandshakeProducer rsaHandshakeProducer;
-  sun.security.ssl.RSAServerKeyExchange();
-  static {};
-}

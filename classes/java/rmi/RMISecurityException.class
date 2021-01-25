@@ -1,5 +1,0 @@
-Compiled from "RMISecurityException.java"
-public class java.rmi.RMISecurityException extends java.lang.SecurityException {
-  public java.rmi.RMISecurityException(java.lang.String);
-  public java.rmi.RMISecurityException(java.lang.String, java.lang.String);
-}

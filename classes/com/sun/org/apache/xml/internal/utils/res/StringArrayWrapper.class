@@ -1,6 +1,0 @@
-Compiled from "StringArrayWrapper.java"
-public class com.sun.org.apache.xml.internal.utils.res.StringArrayWrapper {
-  public com.sun.org.apache.xml.internal.utils.res.StringArrayWrapper(java.lang.String[]);
-  public java.lang.String getString(int);
-  public int getLength();
-}

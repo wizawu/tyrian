@@ -1,6 +1,0 @@
-Compiled from "FunctionSym.java"
-public interface sun.jvm.hotspot.debugger.cdbg.FunctionSym extends sun.jvm.hotspot.debugger.cdbg.BlockSym {
-  public abstract sun.jvm.hotspot.debugger.cdbg.Type getType();
-  public abstract boolean isModuleLocal();
-  public abstract java.lang.String toString();
-}

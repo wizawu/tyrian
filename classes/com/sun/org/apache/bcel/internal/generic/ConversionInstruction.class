@@ -1,6 +1,0 @@
-Compiled from "ConversionInstruction.java"
-public abstract class com.sun.org.apache.bcel.internal.generic.ConversionInstruction extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.TypedInstruction,com.sun.org.apache.bcel.internal.generic.StackProducer,com.sun.org.apache.bcel.internal.generic.StackConsumer {
-  com.sun.org.apache.bcel.internal.generic.ConversionInstruction();
-  protected com.sun.org.apache.bcel.internal.generic.ConversionInstruction(short);
-  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-}

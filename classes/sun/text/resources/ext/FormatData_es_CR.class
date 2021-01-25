@@ -1,5 +1,0 @@
-Compiled from "FormatData_es_CR.java"
-public class sun.text.resources.ext.FormatData_es_CR extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_es_CR();
-  protected final java.lang.Object[][] getContents();
-}

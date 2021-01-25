@@ -1,8 +1,0 @@
-Compiled from "BootstrapMethodInvoker.java"
-final class java.lang.invoke.BootstrapMethodInvoker {
-  static final boolean $assertionsDisabled;
-  java.lang.invoke.BootstrapMethodInvoker();
-  static <T> T invoke(java.lang.Class<T>, java.lang.invoke.MethodHandle, java.lang.String, java.lang.Object, java.lang.Object, java.lang.Class<?>);
-  static java.lang.invoke.MethodHandle pushMePullYou(java.lang.invoke.MethodHandle, boolean);
-  static {};
-}

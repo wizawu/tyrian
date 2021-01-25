@@ -1,4 +1,0 @@
-Compiled from "ApplicationProxy.java"
-public final class sun.net.ApplicationProxy extends java.net.Proxy {
-  public static sun.net.ApplicationProxy create(java.net.Proxy);
-}

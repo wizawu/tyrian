@@ -1,5 +1,0 @@
-Compiled from "InetAddressContainer.java"
-class java.net.InetAddressContainer {
-  java.net.InetAddress addr;
-  java.net.InetAddressContainer();
-}

@@ -1,6 +1,0 @@
-Compiled from "TIFFLSBDecompressor.java"
-public class com.sun.imageio.plugins.tiff.TIFFLSBDecompressor extends com.sun.imageio.plugins.tiff.TIFFDecompressor {
-  public com.sun.imageio.plugins.tiff.TIFFLSBDecompressor();
-  public void decodeRaw(byte[], int, int, int) throws java.io.IOException;
-  static {};
-}

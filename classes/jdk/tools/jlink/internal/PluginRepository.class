@@ -1,9 +1,0 @@
-Compiled from "PluginRepository.java"
-public final class jdk.tools.jlink.internal.PluginRepository {
-  public static jdk.tools.jlink.plugin.Plugin getPlugin(java.lang.String, java.lang.ModuleLayer);
-  public static jdk.tools.jlink.plugin.Plugin newPlugin(java.util.Map<java.lang.String, java.lang.String>, java.lang.String, java.lang.ModuleLayer);
-  public static synchronized void registerPlugin(jdk.tools.jlink.plugin.Plugin);
-  public static synchronized void unregisterPlugin(java.lang.String);
-  public static java.util.List<jdk.tools.jlink.plugin.Plugin> getPlugins(java.lang.ModuleLayer);
-  static {};
-}

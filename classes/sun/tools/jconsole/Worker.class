@@ -1,9 +1,0 @@
-Compiled from "Worker.java"
-public class sun.tools.jconsole.Worker extends java.lang.Thread {
-  java.util.ArrayList<java.lang.Runnable> jobs;
-  public sun.tools.jconsole.Worker(java.lang.String);
-  public void run();
-  public void stopWorker();
-  public void add(java.lang.Runnable);
-  public boolean queueFull();
-}

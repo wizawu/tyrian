@@ -1,5 +1,0 @@
-Compiled from "LNEG.java"
-public class com.sun.org.apache.bcel.internal.generic.LNEG extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
-  public com.sun.org.apache.bcel.internal.generic.LNEG();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

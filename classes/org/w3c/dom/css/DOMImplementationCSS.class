@@ -1,4 +1,0 @@
-Compiled from "DOMImplementationCSS.java"
-public interface org.w3c.dom.css.DOMImplementationCSS extends org.w3c.dom.DOMImplementation {
-  public abstract org.w3c.dom.css.CSSStyleSheet createCSSStyleSheet(java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
-}

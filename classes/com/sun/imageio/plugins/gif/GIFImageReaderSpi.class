@@ -1,8 +1,0 @@
-Compiled from "GIFImageReaderSpi.java"
-public class com.sun.imageio.plugins.gif.GIFImageReaderSpi extends javax.imageio.spi.ImageReaderSpi {
-  public com.sun.imageio.plugins.gif.GIFImageReaderSpi();
-  public java.lang.String getDescription(java.util.Locale);
-  public boolean canDecodeInput(java.lang.Object) throws java.io.IOException;
-  public javax.imageio.ImageReader createReaderInstance(java.lang.Object);
-  static {};
-}

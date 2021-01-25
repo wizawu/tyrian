@@ -1,5 +1,0 @@
-Compiled from "SynchronizedTree.java"
-public interface com.sun.source.tree.SynchronizedTree extends com.sun.source.tree.StatementTree {
-  public abstract com.sun.source.tree.ExpressionTree getExpression();
-  public abstract com.sun.source.tree.BlockTree getBlock();
-}

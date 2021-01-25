@@ -1,8 +1,0 @@
-Compiled from "NameGenerator.java"
-class java.beans.NameGenerator {
-  public java.beans.NameGenerator();
-  public void clear();
-  public static java.lang.String unqualifiedClassName(java.lang.Class);
-  public static java.lang.String capitalize(java.lang.String);
-  public java.lang.String instanceName(java.lang.Object);
-}

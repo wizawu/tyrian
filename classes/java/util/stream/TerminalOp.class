@@ -1,7 +1,0 @@
-Compiled from "TerminalOp.java"
-interface java.util.stream.TerminalOp<E_IN, R> {
-  public default java.util.stream.StreamShape inputShape();
-  public default int getOpFlags();
-  public default <P_IN> R evaluateParallel(java.util.stream.PipelineHelper<E_IN>, java.util.Spliterator<P_IN>);
-  public abstract <P_IN> R evaluateSequential(java.util.stream.PipelineHelper<E_IN>, java.util.Spliterator<P_IN>);
-}

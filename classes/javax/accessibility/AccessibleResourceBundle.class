@@ -1,5 +1,0 @@
-Compiled from "AccessibleResourceBundle.java"
-public class javax.accessibility.AccessibleResourceBundle extends java.util.ListResourceBundle {
-  public javax.accessibility.AccessibleResourceBundle();
-  public java.lang.Object[][] getContents();
-}

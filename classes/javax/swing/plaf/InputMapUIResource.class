@@ -1,4 +1,0 @@
-Compiled from "InputMapUIResource.java"
-public class javax.swing.plaf.InputMapUIResource extends javax.swing.InputMap implements javax.swing.plaf.UIResource {
-  public javax.swing.plaf.InputMapUIResource();
-}

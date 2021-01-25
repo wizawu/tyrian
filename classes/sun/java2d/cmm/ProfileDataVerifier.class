@@ -1,5 +1,0 @@
-Compiled from "ProfileDataVerifier.java"
-public class sun.java2d.cmm.ProfileDataVerifier {
-  public sun.java2d.cmm.ProfileDataVerifier();
-  public static void verify(byte[]);
-}

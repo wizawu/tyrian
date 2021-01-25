@@ -1,4 +1,0 @@
-Compiled from "GlyphDisposedListener.java"
-public interface sun.font.GlyphDisposedListener {
-  public abstract void glyphDisposed(java.util.ArrayList<java.lang.Long>);
-}

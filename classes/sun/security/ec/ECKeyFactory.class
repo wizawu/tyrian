@@ -1,9 +1,0 @@
-Compiled from "ECKeyFactory.java"
-public final class sun.security.ec.ECKeyFactory extends java.security.KeyFactorySpi {
-  public sun.security.ec.ECKeyFactory();
-  public static java.security.interfaces.ECKey toECKey(java.security.Key) throws java.security.InvalidKeyException;
-  protected java.security.Key engineTranslateKey(java.security.Key) throws java.security.InvalidKeyException;
-  protected java.security.PublicKey engineGeneratePublic(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
-  protected java.security.PrivateKey engineGeneratePrivate(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
-  protected <T extends java.security.spec.KeySpec> T engineGetKeySpec(java.security.Key, java.lang.Class<T>) throws java.security.spec.InvalidKeySpecException;
-}

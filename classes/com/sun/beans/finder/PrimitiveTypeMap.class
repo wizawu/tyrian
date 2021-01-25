@@ -1,5 +1,0 @@
-Compiled from "PrimitiveTypeMap.java"
-final class com.sun.beans.finder.PrimitiveTypeMap {
-  static java.lang.Class<?> getType(java.lang.String);
-  static {};
-}

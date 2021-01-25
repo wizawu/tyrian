@@ -1,5 +1,0 @@
-Compiled from "NullPointerException.java"
-public class java.lang.NullPointerException extends java.lang.RuntimeException {
-  public java.lang.NullPointerException();
-  public java.lang.NullPointerException(java.lang.String);
-}

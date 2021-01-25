@@ -1,6 +1,0 @@
-Compiled from "MissingFormatArgumentException.java"
-public class java.util.MissingFormatArgumentException extends java.util.IllegalFormatException {
-  public java.util.MissingFormatArgumentException(java.lang.String);
-  public java.lang.String getFormatSpecifier();
-  public java.lang.String getMessage();
-}

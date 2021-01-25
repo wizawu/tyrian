@@ -1,8 +1,0 @@
-Compiled from "MultiplexingOutputStream.java"
-class jdk.jshell.execution.MultiplexingOutputStream extends java.io.OutputStream {
-  jdk.jshell.execution.MultiplexingOutputStream(java.lang.String, java.io.OutputStream);
-  public void write(int) throws java.io.IOException;
-  public void write(byte[], int, int) throws java.io.IOException;
-  public void flush() throws java.io.IOException;
-  public void close() throws java.io.IOException;
-}

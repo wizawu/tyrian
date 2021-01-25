@@ -1,4 +1,0 @@
-Compiled from "ActivationInstantiator.java"
-public interface java.rmi.activation.ActivationInstantiator extends java.rmi.Remote {
-  public abstract java.rmi.MarshalledObject<? extends java.rmi.Remote> newInstance(java.rmi.activation.ActivationID, java.rmi.activation.ActivationDesc) throws java.rmi.activation.ActivationException, java.rmi.RemoteException;
-}

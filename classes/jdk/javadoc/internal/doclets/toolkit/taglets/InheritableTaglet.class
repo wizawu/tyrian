@@ -1,4 +1,0 @@
-Compiled from "InheritableTaglet.java"
-public interface jdk.javadoc.internal.doclets.toolkit.taglets.InheritableTaglet extends jdk.javadoc.internal.doclets.toolkit.taglets.Taglet {
-  public abstract void inherit(jdk.javadoc.internal.doclets.toolkit.util.DocFinder$Input, jdk.javadoc.internal.doclets.toolkit.util.DocFinder$Output);
-}

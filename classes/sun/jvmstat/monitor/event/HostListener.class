@@ -1,5 +1,0 @@
-Compiled from "HostListener.java"
-public interface sun.jvmstat.monitor.event.HostListener extends java.util.EventListener {
-  public abstract void vmStatusChanged(sun.jvmstat.monitor.event.VmStatusChangeEvent);
-  public abstract void disconnected(sun.jvmstat.monitor.event.HostEvent);
-}

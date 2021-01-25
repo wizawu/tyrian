@@ -1,4 +1,0 @@
-Compiled from "NewTree.java"
-public interface jdk.nashorn.api.tree.NewTree extends jdk.nashorn.api.tree.ExpressionTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getConstructorExpression();
-}

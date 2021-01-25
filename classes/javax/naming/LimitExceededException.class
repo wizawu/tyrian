@@ -1,5 +1,0 @@
-Compiled from "LimitExceededException.java"
-public class javax.naming.LimitExceededException extends javax.naming.NamingException {
-  public javax.naming.LimitExceededException();
-  public javax.naming.LimitExceededException(java.lang.String);
-}

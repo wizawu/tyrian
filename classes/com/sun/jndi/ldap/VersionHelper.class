@@ -1,8 +1,0 @@
-Compiled from "VersionHelper.java"
-public final class com.sun.jndi.ldap.VersionHelper {
-  static com.sun.jndi.ldap.VersionHelper getVersionHelper();
-  java.lang.ClassLoader getURLClassLoader(java.lang.String[]) throws java.net.MalformedURLException;
-  java.lang.Class<?> loadClass(java.lang.String) throws java.lang.ClassNotFoundException;
-  java.lang.Thread createThread(java.lang.Runnable);
-  static {};
-}

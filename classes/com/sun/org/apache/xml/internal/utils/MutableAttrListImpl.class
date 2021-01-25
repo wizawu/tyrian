@@ -1,9 +1,0 @@
-Compiled from "MutableAttrListImpl.java"
-public class com.sun.org.apache.xml.internal.utils.MutableAttrListImpl extends org.xml.sax.helpers.AttributesImpl implements java.io.Serializable {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xml.internal.utils.MutableAttrListImpl();
-  public com.sun.org.apache.xml.internal.utils.MutableAttrListImpl(org.xml.sax.Attributes);
-  public void addAttribute(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
-  public void addAttributes(org.xml.sax.Attributes);
-  public boolean contains(java.lang.String);
-}

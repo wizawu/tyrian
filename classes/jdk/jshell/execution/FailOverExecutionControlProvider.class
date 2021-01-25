@@ -1,7 +1,0 @@
-Compiled from "FailOverExecutionControlProvider.java"
-public class jdk.jshell.execution.FailOverExecutionControlProvider implements jdk.jshell.spi.ExecutionControlProvider {
-  public jdk.jshell.execution.FailOverExecutionControlProvider();
-  public java.lang.String name();
-  public java.util.Map<java.lang.String, java.lang.String> defaultParameters();
-  public jdk.jshell.spi.ExecutionControl generate(jdk.jshell.spi.ExecutionEnv, java.util.Map<java.lang.String, java.lang.String>) throws java.lang.Throwable;
-}

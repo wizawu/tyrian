@@ -1,8 +1,0 @@
-Compiled from "ModifiableClassLoaderRepository.java"
-public interface com.sun.jmx.mbeanserver.ModifiableClassLoaderRepository extends javax.management.loading.ClassLoaderRepository {
-  public abstract void addClassLoader(java.lang.ClassLoader);
-  public abstract void removeClassLoader(java.lang.ClassLoader);
-  public abstract void addClassLoader(javax.management.ObjectName, java.lang.ClassLoader);
-  public abstract void removeClassLoader(javax.management.ObjectName);
-  public abstract java.lang.ClassLoader getClassLoader(javax.management.ObjectName);
-}

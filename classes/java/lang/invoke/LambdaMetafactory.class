@@ -1,9 +1,0 @@
-Compiled from "LambdaMetafactory.java"
-public final class java.lang.invoke.LambdaMetafactory {
-  public static final int FLAG_SERIALIZABLE;
-  public static final int FLAG_MARKERS;
-  public static final int FLAG_BRIDGES;
-  public static java.lang.invoke.CallSite metafactory(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.invoke.MethodType, java.lang.invoke.MethodType, java.lang.invoke.MethodHandle, java.lang.invoke.MethodType) throws java.lang.invoke.LambdaConversionException;
-  public static java.lang.invoke.CallSite altMetafactory(java.lang.invoke.MethodHandles$Lookup, java.lang.String, java.lang.invoke.MethodType, java.lang.Object...) throws java.lang.invoke.LambdaConversionException;
-  static {};
-}

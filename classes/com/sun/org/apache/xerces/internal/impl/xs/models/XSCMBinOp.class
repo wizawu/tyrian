@@ -1,9 +1,0 @@
-Compiled from "XSCMBinOp.java"
-public class com.sun.org.apache.xerces.internal.impl.xs.models.XSCMBinOp extends com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode {
-  public com.sun.org.apache.xerces.internal.impl.xs.models.XSCMBinOp(int, com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode, com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode);
-  final com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode getLeft();
-  final com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode getRight();
-  public boolean isNullable();
-  protected void calcFirstPos(com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet);
-  protected void calcLastPos(com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet);
-}

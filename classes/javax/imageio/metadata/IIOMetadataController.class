@@ -1,4 +1,0 @@
-Compiled from "IIOMetadataController.java"
-public interface javax.imageio.metadata.IIOMetadataController {
-  public abstract boolean activate(javax.imageio.metadata.IIOMetadata);
-}

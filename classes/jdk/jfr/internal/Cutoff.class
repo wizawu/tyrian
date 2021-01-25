@@ -1,6 +1,0 @@
-Compiled from "Cutoff.java"
-public interface jdk.jfr.internal.Cutoff extends java.lang.annotation.Annotation {
-  public static final java.lang.String NAME;
-  public static final java.lang.String INIFITY;
-  public abstract java.lang.String value();
-}

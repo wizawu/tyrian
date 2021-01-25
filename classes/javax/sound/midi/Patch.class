@@ -1,6 +1,0 @@
-Compiled from "Patch.java"
-public class javax.sound.midi.Patch {
-  public javax.sound.midi.Patch(int, int);
-  public int getBank();
-  public int getProgram();
-}

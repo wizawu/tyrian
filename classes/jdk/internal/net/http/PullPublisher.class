@@ -1,8 +1,0 @@
-Compiled from "PullPublisher.java"
-class jdk.internal.net.http.PullPublisher<T> implements java.util.concurrent.Flow$Publisher<T> {
-  static final boolean $assertionsDisabled;
-  jdk.internal.net.http.PullPublisher(java.lang.Iterable<T>, java.lang.Throwable);
-  jdk.internal.net.http.PullPublisher(java.lang.Iterable<T>);
-  public void subscribe(java.util.concurrent.Flow$Subscriber<? super T>);
-  static {};
-}

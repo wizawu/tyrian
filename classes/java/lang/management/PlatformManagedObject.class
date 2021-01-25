@@ -1,4 +1,0 @@
-Compiled from "PlatformManagedObject.java"
-public interface java.lang.management.PlatformManagedObject {
-  public abstract javax.management.ObjectName getObjectName();
-}

@@ -1,9 +1,0 @@
-Compiled from "AlgorithmDecomposer.java"
-public class sun.security.util.AlgorithmDecomposer {
-  public sun.security.util.AlgorithmDecomposer();
-  public java.util.Set<java.lang.String> decompose(java.lang.String);
-  public static java.util.Collection<java.lang.String> getAliases(java.lang.String);
-  public static java.util.Set<java.lang.String> decomposeOneHash(java.lang.String);
-  public static java.lang.String hashName(java.lang.String);
-  static {};
-}

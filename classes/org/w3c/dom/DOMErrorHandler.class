@@ -1,4 +1,0 @@
-Compiled from "DOMErrorHandler.java"
-public interface org.w3c.dom.DOMErrorHandler {
-  public abstract boolean handleError(org.w3c.dom.DOMError);
-}

@@ -1,8 +1,0 @@
-Compiled from "MBeanServerInterceptor.java"
-public interface com.sun.jmx.interceptor.MBeanServerInterceptor extends javax.management.MBeanServer {
-  public abstract java.lang.Object instantiate(java.lang.String) throws javax.management.ReflectionException, javax.management.MBeanException;
-  public abstract java.lang.Object instantiate(java.lang.String, javax.management.ObjectName) throws javax.management.ReflectionException, javax.management.MBeanException, javax.management.InstanceNotFoundException;
-  public abstract java.lang.Object instantiate(java.lang.String, java.lang.Object[], java.lang.String[]) throws javax.management.ReflectionException, javax.management.MBeanException;
-  public abstract java.lang.Object instantiate(java.lang.String, javax.management.ObjectName, java.lang.Object[], java.lang.String[]) throws javax.management.ReflectionException, javax.management.MBeanException, javax.management.InstanceNotFoundException;
-  public abstract javax.management.loading.ClassLoaderRepository getClassLoaderRepository();
-}

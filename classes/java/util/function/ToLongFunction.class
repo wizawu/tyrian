@@ -1,4 +1,0 @@
-Compiled from "ToLongFunction.java"
-public interface java.util.function.ToLongFunction<T> {
-  public abstract long applyAsLong(T);
-}

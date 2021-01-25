@@ -1,5 +1,0 @@
-Compiled from "WrappedSAXException.java"
-public class com.sun.org.apache.xerces.internal.jaxp.validation.WrappedSAXException extends java.lang.RuntimeException {
-  public final org.xml.sax.SAXException exception;
-  com.sun.org.apache.xerces.internal.jaxp.validation.WrappedSAXException(org.xml.sax.SAXException);
-}

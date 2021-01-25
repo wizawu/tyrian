@@ -1,6 +1,0 @@
-Compiled from "RemoteHost.java"
-public interface sun.jvmstat.monitor.remote.RemoteHost extends java.rmi.Remote {
-  public abstract sun.jvmstat.monitor.remote.RemoteVm attachVm(int, java.lang.String) throws java.rmi.RemoteException, sun.jvmstat.monitor.MonitorException;
-  public abstract void detachVm(sun.jvmstat.monitor.remote.RemoteVm) throws java.rmi.RemoteException, sun.jvmstat.monitor.MonitorException;
-  public abstract int[] activeVms() throws java.rmi.RemoteException, sun.jvmstat.monitor.MonitorException;
-}

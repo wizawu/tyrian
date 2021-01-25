@@ -1,4 +1,0 @@
-Compiled from "QuitEvent.java"
-public final class java.awt.desktop.QuitEvent extends java.awt.desktop.AppEvent {
-  public java.awt.desktop.QuitEvent();
-}

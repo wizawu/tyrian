@@ -1,9 +1,0 @@
-Compiled from "RegExpFactory.java"
-public class jdk.nashorn.internal.runtime.regexp.RegExpFactory {
-  public jdk.nashorn.internal.runtime.regexp.RegExpFactory();
-  public jdk.nashorn.internal.runtime.regexp.RegExp compile(java.lang.String, java.lang.String) throws jdk.nashorn.internal.runtime.ParserException;
-  public static jdk.nashorn.internal.runtime.regexp.RegExp create(java.lang.String, java.lang.String);
-  public static void validate(java.lang.String, java.lang.String) throws jdk.nashorn.internal.runtime.ParserException;
-  public static boolean usesJavaUtilRegex();
-  static {};
-}

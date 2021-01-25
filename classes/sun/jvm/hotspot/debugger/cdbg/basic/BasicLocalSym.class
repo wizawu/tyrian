@@ -1,8 +1,0 @@
-Compiled from "BasicLocalSym.java"
-public class sun.jvm.hotspot.debugger.cdbg.basic.BasicLocalSym extends sun.jvm.hotspot.debugger.cdbg.basic.BasicSym implements sun.jvm.hotspot.debugger.cdbg.LocalSym {
-  public sun.jvm.hotspot.debugger.cdbg.basic.BasicLocalSym(java.lang.String, sun.jvm.hotspot.debugger.cdbg.Type, long);
-  public sun.jvm.hotspot.debugger.cdbg.LocalSym asLocal();
-  public sun.jvm.hotspot.debugger.cdbg.Type getType();
-  public long getFrameOffset();
-  public void resolve(sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
-}

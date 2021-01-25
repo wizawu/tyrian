@@ -1,5 +1,0 @@
-Compiled from "RangeExceptionImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.RangeExceptionImpl extends org.w3c.dom.ranges.RangeException {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xerces.internal.dom.RangeExceptionImpl(short, java.lang.String);
-}

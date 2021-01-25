@@ -1,4 +1,0 @@
-Compiled from "MemoryViewer.java"
-public class sun.jvm.hotspot.ui.MemoryViewer extends javax.swing.JPanel {
-  public sun.jvm.hotspot.ui.MemoryViewer(sun.jvm.hotspot.debugger.Debugger, boolean);
-}

@@ -1,5 +1,0 @@
-Compiled from "ReplResolve.java"
-class jdk.jshell.ReplResolve extends com.sun.tools.javac.comp.Resolve {
-  jdk.jshell.ReplResolve(com.sun.tools.javac.util.Context);
-  public static boolean isStatic(com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>);
-}

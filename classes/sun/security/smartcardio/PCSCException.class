@@ -1,5 +1,0 @@
-Compiled from "PCSCException.java"
-final class sun.security.smartcardio.PCSCException extends java.lang.Exception {
-  final int code;
-  sun.security.smartcardio.PCSCException(int);
-}

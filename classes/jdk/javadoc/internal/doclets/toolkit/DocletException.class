@@ -1,5 +1,0 @@
-Compiled from "DocletException.java"
-public class jdk.javadoc.internal.doclets.toolkit.DocletException extends java.lang.Exception {
-  protected jdk.javadoc.internal.doclets.toolkit.DocletException(java.lang.String);
-  protected jdk.javadoc.internal.doclets.toolkit.DocletException(java.lang.String, java.lang.Throwable);
-}

@@ -1,6 +1,0 @@
-Compiled from "GTKGraphicsUtils.java"
-class com.sun.java.swing.plaf.gtk.GTKGraphicsUtils extends javax.swing.plaf.synth.SynthGraphicsUtils {
-  com.sun.java.swing.plaf.gtk.GTKGraphicsUtils();
-  public void paintText(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, java.lang.String, int, int, int);
-  public void paintText(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, java.lang.String, java.awt.Rectangle, int);
-}

@@ -1,7 +1,0 @@
-Compiled from "ASTWriter.java"
-public final class jdk.nashorn.internal.ir.debug.ASTWriter {
-  public jdk.nashorn.internal.ir.debug.ASTWriter(jdk.nashorn.internal.ir.Node);
-  public java.lang.String toString();
-  public jdk.nashorn.internal.ir.Node[] toArray();
-  static {};
-}

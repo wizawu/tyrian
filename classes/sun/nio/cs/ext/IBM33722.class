@@ -1,8 +1,0 @@
-Compiled from "IBM33722.java"
-public class sun.nio.cs.ext.IBM33722 extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-  public sun.nio.cs.ext.IBM33722();
-  public java.lang.String historicalName();
-  public boolean contains(java.nio.charset.Charset);
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public java.nio.charset.CharsetEncoder newEncoder();
-}

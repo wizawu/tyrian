@@ -1,8 +1,0 @@
-Compiled from "Principal.java"
-public interface java.security.Principal {
-  public abstract boolean equals(java.lang.Object);
-  public abstract java.lang.String toString();
-  public abstract int hashCode();
-  public abstract java.lang.String getName();
-  public default boolean implies(javax.security.auth.Subject);
-}

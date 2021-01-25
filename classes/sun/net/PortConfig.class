@@ -1,8 +1,0 @@
-Compiled from "PortConfig.java"
-public final class sun.net.PortConfig {
-  static native int getLower0();
-  static native int getUpper0();
-  public static int getLower();
-  public static int getUpper();
-  static {};
-}

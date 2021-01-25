@@ -1,7 +1,0 @@
-Compiled from "IllegalFormatConversionException.java"
-public class java.util.IllegalFormatConversionException extends java.util.IllegalFormatException {
-  public java.util.IllegalFormatConversionException(char, java.lang.Class<?>);
-  public char getConversion();
-  public java.lang.Class<?> getArgumentClass();
-  public java.lang.String getMessage();
-}

@@ -1,3 +1,0 @@
-Compiled from "Relational.java"
-public interface jdk.jfr.Relational extends java.lang.annotation.Annotation {
-}

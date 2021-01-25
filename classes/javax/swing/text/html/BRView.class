@@ -1,5 +1,0 @@
-Compiled from "BRView.java"
-class javax.swing.text.html.BRView extends javax.swing.text.html.InlineView {
-  public javax.swing.text.html.BRView(javax.swing.text.Element);
-  public int getBreakWeight(int, float, float);
-}

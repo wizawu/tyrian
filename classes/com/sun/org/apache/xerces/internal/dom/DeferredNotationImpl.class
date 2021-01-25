@@ -1,8 +1,0 @@
-Compiled from "DeferredNotationImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.DeferredNotationImpl extends com.sun.org.apache.xerces.internal.dom.NotationImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
-  static final long serialVersionUID;
-  protected transient int fNodeIndex;
-  com.sun.org.apache.xerces.internal.dom.DeferredNotationImpl(com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl, int);
-  public int getNodeIndex();
-  protected void synchronizeData();
-}

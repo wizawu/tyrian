@@ -1,4 +1,0 @@
-Compiled from "ApplicationLaunchException.java"
-public class sun.net.www.ApplicationLaunchException extends java.lang.Exception {
-  public sun.net.www.ApplicationLaunchException(java.lang.String);
-}

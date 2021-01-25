@@ -1,8 +1,0 @@
-Compiled from "DefaultTableCellHeaderRenderer.java"
-public class sun.swing.table.DefaultTableCellHeaderRenderer extends javax.swing.table.DefaultTableCellRenderer implements javax.swing.plaf.UIResource {
-  public sun.swing.table.DefaultTableCellHeaderRenderer();
-  public void setHorizontalTextPosition(int);
-  public java.awt.Component getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int);
-  public static javax.swing.SortOrder getColumnSortOrder(javax.swing.JTable, int);
-  public void paintComponent(java.awt.Graphics);
-}

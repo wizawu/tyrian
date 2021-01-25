@@ -1,4 +1,0 @@
-Compiled from "TableHeaderUI.java"
-public abstract class javax.swing.plaf.TableHeaderUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.TableHeaderUI();
-}

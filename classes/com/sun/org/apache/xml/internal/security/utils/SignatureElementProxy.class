@@ -1,7 +1,0 @@
-Compiled from "SignatureElementProxy.java"
-public abstract class com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy extends com.sun.org.apache.xml.internal.security.utils.ElementProxy {
-  protected com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy();
-  public com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy(org.w3c.dom.Document);
-  public com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-  public java.lang.String getBaseNamespace();
-}

@@ -1,9 +1,0 @@
-Compiled from "CenterLayout.java"
-class javax.swing.colorchooser.CenterLayout implements java.awt.LayoutManager,java.io.Serializable {
-  javax.swing.colorchooser.CenterLayout();
-  public void addLayoutComponent(java.lang.String, java.awt.Component);
-  public void removeLayoutComponent(java.awt.Component);
-  public java.awt.Dimension preferredLayoutSize(java.awt.Container);
-  public java.awt.Dimension minimumLayoutSize(java.awt.Container);
-  public void layoutContainer(java.awt.Container);
-}

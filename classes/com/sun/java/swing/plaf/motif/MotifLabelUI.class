@@ -1,6 +1,0 @@
-Compiled from "MotifLabelUI.java"
-public class com.sun.java.swing.plaf.motif.MotifLabelUI extends javax.swing.plaf.basic.BasicLabelUI {
-  public com.sun.java.swing.plaf.motif.MotifLabelUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "AudioFileSoundbankReader.java"
-public final class com.sun.media.sound.AudioFileSoundbankReader extends javax.sound.midi.spi.SoundbankReader {
-  public com.sun.media.sound.AudioFileSoundbankReader();
-  public javax.sound.midi.Soundbank getSoundbank(java.net.URL) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
-  public javax.sound.midi.Soundbank getSoundbank(java.io.InputStream) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
-  public javax.sound.midi.Soundbank getSoundbank(javax.sound.sampled.AudioInputStream) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
-  public javax.sound.midi.Soundbank getSoundbank(java.io.File) throws javax.sound.midi.InvalidMidiDataException, java.io.IOException;
-}

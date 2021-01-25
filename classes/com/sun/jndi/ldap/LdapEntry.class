@@ -1,8 +1,0 @@
-Compiled from "LdapEntry.java"
-final class com.sun.jndi.ldap.LdapEntry {
-  java.lang.String DN;
-  javax.naming.directory.Attributes attributes;
-  java.util.Vector<javax.naming.ldap.Control> respCtls;
-  com.sun.jndi.ldap.LdapEntry(java.lang.String, javax.naming.directory.Attributes);
-  com.sun.jndi.ldap.LdapEntry(java.lang.String, javax.naming.directory.Attributes, java.util.Vector<javax.naming.ldap.Control>);
-}

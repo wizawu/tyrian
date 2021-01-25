@@ -1,5 +1,0 @@
-Compiled from "X509IssuerSerial.java"
-public interface javax.xml.crypto.dsig.keyinfo.X509IssuerSerial extends javax.xml.crypto.XMLStructure {
-  public abstract java.lang.String getIssuerName();
-  public abstract java.math.BigInteger getSerialNumber();
-}

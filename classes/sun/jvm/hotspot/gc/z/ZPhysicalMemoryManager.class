@@ -1,7 +1,0 @@
-Compiled from "ZPhysicalMemoryManager.java"
-public class sun.jvm.hotspot.gc.z.ZPhysicalMemoryManager extends sun.jvm.hotspot.runtime.VMObject {
-  public long capacity();
-  public long maxCapacity();
-  public sun.jvm.hotspot.gc.z.ZPhysicalMemoryManager(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

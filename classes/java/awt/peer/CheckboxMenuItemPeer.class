@@ -1,4 +1,0 @@
-Compiled from "CheckboxMenuItemPeer.java"
-public interface java.awt.peer.CheckboxMenuItemPeer extends java.awt.peer.MenuItemPeer {
-  public abstract void setState(boolean);
-}

@@ -1,5 +1,0 @@
-Compiled from "Normalizer.java"
-public final class java.text.Normalizer {
-  public static java.lang.String normalize(java.lang.CharSequence, java.text.Normalizer$Form);
-  public static boolean isNormalized(java.lang.CharSequence, java.text.Normalizer$Form);
-}

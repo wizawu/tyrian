@@ -1,6 +1,0 @@
-Compiled from "UnknownDirectiveException.java"
-public class javax.lang.model.element.UnknownDirectiveException extends javax.lang.model.UnknownEntityException {
-  public javax.lang.model.element.UnknownDirectiveException(javax.lang.model.element.ModuleElement$Directive, java.lang.Object);
-  public javax.lang.model.element.ModuleElement$Directive getUnknownDirective();
-  public java.lang.Object getArgument();
-}

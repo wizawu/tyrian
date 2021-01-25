@@ -1,5 +1,0 @@
-Compiled from "CollatorFactory.java"
-public interface com.sun.org.apache.xalan.internal.xsltc.CollatorFactory {
-  public abstract java.text.Collator getCollator(java.lang.String, java.lang.String);
-  public abstract java.text.Collator getCollator(java.util.Locale);
-}

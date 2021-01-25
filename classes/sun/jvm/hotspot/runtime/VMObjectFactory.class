@@ -1,5 +1,0 @@
-Compiled from "VMObjectFactory.java"
-public class sun.jvm.hotspot.runtime.VMObjectFactory {
-  public sun.jvm.hotspot.runtime.VMObjectFactory();
-  public static java.lang.Object newObject(java.lang.Class, sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.runtime.ConstructionException;
-}

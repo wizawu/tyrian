@@ -1,6 +1,0 @@
-Compiled from "JMXPluggableAuthenticator.java"
-public final class com.sun.jmx.remote.security.JMXPluggableAuthenticator implements javax.management.remote.JMXAuthenticator {
-  public com.sun.jmx.remote.security.JMXPluggableAuthenticator(java.util.Map<?, ?>);
-  public javax.security.auth.Subject authenticate(java.lang.Object);
-  static {};
-}

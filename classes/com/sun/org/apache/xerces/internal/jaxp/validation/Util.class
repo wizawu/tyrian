@@ -1,7 +1,0 @@
-Compiled from "Util.java"
-final class com.sun.org.apache.xerces.internal.jaxp.validation.Util {
-  com.sun.org.apache.xerces.internal.jaxp.validation.Util();
-  public static final com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource toXMLInputSource(javax.xml.transform.stream.StreamSource);
-  public static org.xml.sax.SAXException toSAXException(com.sun.org.apache.xerces.internal.xni.XNIException);
-  public static org.xml.sax.SAXParseException toSAXParseException(com.sun.org.apache.xerces.internal.xni.parser.XMLParseException);
-}

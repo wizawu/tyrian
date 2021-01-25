@@ -1,9 +1,0 @@
-Compiled from "HTMLFontElement.java"
-public interface org.w3c.dom.html.HTMLFontElement extends org.w3c.dom.html.HTMLElement {
-  public abstract java.lang.String getColor();
-  public abstract void setColor(java.lang.String);
-  public abstract java.lang.String getFace();
-  public abstract void setFace(java.lang.String);
-  public abstract java.lang.String getSize();
-  public abstract void setSize(java.lang.String);
-}

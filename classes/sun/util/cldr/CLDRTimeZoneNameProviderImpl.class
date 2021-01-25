@@ -1,6 +1,0 @@
-Compiled from "CLDRTimeZoneNameProviderImpl.java"
-public class sun.util.cldr.CLDRTimeZoneNameProviderImpl extends sun.util.locale.provider.TimeZoneNameProviderImpl {
-  public sun.util.cldr.CLDRTimeZoneNameProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
-  protected java.lang.String[] getDisplayNameArray(java.lang.String, java.util.Locale);
-  protected java.lang.String[][] getZoneStrings(java.util.Locale);
-}

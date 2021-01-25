@@ -1,7 +1,0 @@
-Compiled from "SurfaceManagerFactory.java"
-public abstract class sun.java2d.SurfaceManagerFactory {
-  public sun.java2d.SurfaceManagerFactory();
-  public static synchronized sun.java2d.SurfaceManagerFactory getInstance();
-  public static synchronized void setInstance(sun.java2d.SurfaceManagerFactory);
-  public abstract sun.awt.image.VolatileSurfaceManager createVolatileManager(sun.awt.image.SunVolatileImage, java.lang.Object);
-}

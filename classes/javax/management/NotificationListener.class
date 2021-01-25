@@ -1,4 +1,0 @@
-Compiled from "NotificationListener.java"
-public interface javax.management.NotificationListener extends java.util.EventListener {
-  public abstract void handleNotification(javax.management.Notification, java.lang.Object);
-}

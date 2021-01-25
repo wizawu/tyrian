@@ -1,7 +1,0 @@
-Compiled from "JobMessageFromOperator.java"
-public final class javax.print.attribute.standard.JobMessageFromOperator extends javax.print.attribute.TextSyntax implements javax.print.attribute.PrintJobAttribute {
-  public javax.print.attribute.standard.JobMessageFromOperator(java.lang.String, java.util.Locale);
-  public boolean equals(java.lang.Object);
-  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
-  public final java.lang.String getName();
-}

@@ -1,9 +1,0 @@
-Compiled from "ClassLoaderStats.java"
-public class sun.jvm.hotspot.tools.ClassLoaderStats extends sun.jvm.hotspot.tools.Tool {
-  boolean verbose;
-  public sun.jvm.hotspot.tools.ClassLoaderStats();
-  public sun.jvm.hotspot.tools.ClassLoaderStats(sun.jvm.hotspot.debugger.JVMDebugger);
-  public java.lang.String getName();
-  public static void main(java.lang.String[]);
-  public void run();
-}

@@ -1,5 +1,0 @@
-Compiled from "AccessDeniedException.java"
-public class java.nio.file.AccessDeniedException extends java.nio.file.FileSystemException {
-  public java.nio.file.AccessDeniedException(java.lang.String);
-  public java.nio.file.AccessDeniedException(java.lang.String, java.lang.String, java.lang.String);
-}

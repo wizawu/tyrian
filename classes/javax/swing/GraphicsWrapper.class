@@ -1,9 +1,0 @@
-Compiled from "GraphicsWrapper.java"
-interface javax.swing.GraphicsWrapper {
-  public abstract java.awt.Graphics subGraphics();
-  public abstract boolean isClipIntersecting(java.awt.Rectangle);
-  public abstract int getClipX();
-  public abstract int getClipY();
-  public abstract int getClipWidth();
-  public abstract int getClipHeight();
-}

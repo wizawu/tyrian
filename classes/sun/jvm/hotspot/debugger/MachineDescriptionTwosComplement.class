@@ -1,8 +1,0 @@
-Compiled from "MachineDescriptionTwosComplement.java"
-public abstract class sun.jvm.hotspot.debugger.MachineDescriptionTwosComplement {
-  public sun.jvm.hotspot.debugger.MachineDescriptionTwosComplement();
-  public long cIntegerTypeMaxValue(long, boolean);
-  public long cIntegerTypeMinValue(long, boolean);
-  public boolean isLP64();
-  static {};
-}

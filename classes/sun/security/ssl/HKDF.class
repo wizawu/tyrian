@@ -1,7 +1,0 @@
-Compiled from "HKDF.java"
-final class sun.security.ssl.HKDF {
-  sun.security.ssl.HKDF(java.lang.String) throws java.security.NoSuchAlgorithmException;
-  javax.crypto.SecretKey extract(javax.crypto.SecretKey, javax.crypto.SecretKey, java.lang.String) throws java.security.InvalidKeyException;
-  javax.crypto.SecretKey extract(byte[], javax.crypto.SecretKey, java.lang.String) throws java.security.InvalidKeyException;
-  javax.crypto.SecretKey expand(javax.crypto.SecretKey, byte[], int, java.lang.String) throws java.security.InvalidKeyException;
-}

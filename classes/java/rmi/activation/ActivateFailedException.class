@@ -1,5 +1,0 @@
-Compiled from "ActivateFailedException.java"
-public class java.rmi.activation.ActivateFailedException extends java.rmi.RemoteException {
-  public java.rmi.activation.ActivateFailedException(java.lang.String);
-  public java.rmi.activation.ActivateFailedException(java.lang.String, java.lang.Exception);
-}

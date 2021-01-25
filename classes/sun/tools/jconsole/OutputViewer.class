@@ -1,6 +1,0 @@
-Compiled from "OutputViewer.java"
-public class sun.tools.jconsole.OutputViewer {
-  public sun.tools.jconsole.OutputViewer();
-  public static void init();
-  static {};
-}

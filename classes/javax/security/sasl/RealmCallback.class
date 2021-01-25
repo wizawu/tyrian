@@ -1,5 +1,0 @@
-Compiled from "RealmCallback.java"
-public class javax.security.sasl.RealmCallback extends javax.security.auth.callback.TextInputCallback {
-  public javax.security.sasl.RealmCallback(java.lang.String);
-  public javax.security.sasl.RealmCallback(java.lang.String, java.lang.String);
-}

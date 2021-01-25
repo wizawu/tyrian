@@ -1,7 +1,0 @@
-Compiled from "CDATASectionImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.CDATASectionImpl extends com.sun.org.apache.xerces.internal.dom.TextImpl implements org.w3c.dom.CDATASection {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xerces.internal.dom.CDATASectionImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String);
-  public short getNodeType();
-  public java.lang.String getNodeName();
-}

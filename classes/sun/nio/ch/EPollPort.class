@@ -1,8 +1,0 @@
-Compiled from "EPollPort.java"
-final class sun.nio.ch.EPollPort extends sun.nio.ch.Port {
-  sun.nio.ch.EPollPort(java.nio.channels.spi.AsynchronousChannelProvider, sun.nio.ch.ThreadPool) throws java.io.IOException;
-  sun.nio.ch.EPollPort start();
-  void executeOnHandlerTask(java.lang.Runnable);
-  void shutdownHandlerTasks();
-  void startPoll(int, int);
-}

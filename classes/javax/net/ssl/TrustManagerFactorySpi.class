@@ -1,7 +1,0 @@
-Compiled from "TrustManagerFactorySpi.java"
-public abstract class javax.net.ssl.TrustManagerFactorySpi {
-  public javax.net.ssl.TrustManagerFactorySpi();
-  protected abstract void engineInit(java.security.KeyStore) throws java.security.KeyStoreException;
-  protected abstract void engineInit(javax.net.ssl.ManagerFactoryParameters) throws java.security.InvalidAlgorithmParameterException;
-  protected abstract javax.net.ssl.TrustManager[] engineGetTrustManagers();
-}

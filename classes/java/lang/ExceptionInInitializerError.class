@@ -1,8 +1,0 @@
-Compiled from "ExceptionInInitializerError.java"
-public class java.lang.ExceptionInInitializerError extends java.lang.LinkageError {
-  public java.lang.ExceptionInInitializerError();
-  public java.lang.ExceptionInInitializerError(java.lang.Throwable);
-  public java.lang.ExceptionInInitializerError(java.lang.String);
-  public java.lang.Throwable getException();
-  public java.lang.Throwable getCause();
-}

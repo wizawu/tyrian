@@ -1,5 +1,0 @@
-Compiled from "D2L.java"
-public class com.sun.org.apache.bcel.internal.generic.D2L extends com.sun.org.apache.bcel.internal.generic.ConversionInstruction {
-  public com.sun.org.apache.bcel.internal.generic.D2L();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

@@ -1,7 +1,0 @@
-Compiled from "Tree.java"
-public interface jdk.nashorn.api.tree.Tree {
-  public abstract long getStartPosition();
-  public abstract long getEndPosition();
-  public abstract jdk.nashorn.api.tree.Tree$Kind getKind();
-  public abstract <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

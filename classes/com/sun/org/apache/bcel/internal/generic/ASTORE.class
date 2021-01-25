@@ -1,6 +1,0 @@
-Compiled from "ASTORE.java"
-public class com.sun.org.apache.bcel.internal.generic.ASTORE extends com.sun.org.apache.bcel.internal.generic.StoreInstruction {
-  com.sun.org.apache.bcel.internal.generic.ASTORE();
-  public com.sun.org.apache.bcel.internal.generic.ASTORE(int);
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

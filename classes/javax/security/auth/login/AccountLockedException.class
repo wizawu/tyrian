@@ -1,5 +1,0 @@
-Compiled from "AccountLockedException.java"
-public class javax.security.auth.login.AccountLockedException extends javax.security.auth.login.AccountException {
-  public javax.security.auth.login.AccountLockedException();
-  public javax.security.auth.login.AccountLockedException(java.lang.String);
-}

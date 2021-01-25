@@ -1,5 +1,0 @@
-Compiled from "JPEGImageReaderResources.java"
-public class com.sun.imageio.plugins.jpeg.JPEGImageReaderResources extends java.util.ListResourceBundle {
-  public com.sun.imageio.plugins.jpeg.JPEGImageReaderResources();
-  protected java.lang.Object[][] getContents();
-}

@@ -1,8 +1,0 @@
-Compiled from "CanonicalizationMethod.java"
-public interface javax.xml.crypto.dsig.CanonicalizationMethod extends javax.xml.crypto.dsig.Transform {
-  public static final java.lang.String INCLUSIVE;
-  public static final java.lang.String INCLUSIVE_WITH_COMMENTS;
-  public static final java.lang.String EXCLUSIVE;
-  public static final java.lang.String EXCLUSIVE_WITH_COMMENTS;
-  public abstract java.security.spec.AlgorithmParameterSpec getParameterSpec();
-}

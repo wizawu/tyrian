@@ -1,4 +1,0 @@
-Compiled from "GuardedInvocationTransformer.java"
-public interface jdk.dynalink.linker.GuardedInvocationTransformer {
-  public abstract jdk.dynalink.linker.GuardedInvocation filter(jdk.dynalink.linker.GuardedInvocation, jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices);
-}

@@ -1,6 +1,0 @@
-Compiled from "HttpTimestamper.java"
-public class sun.security.timestamp.HttpTimestamper implements sun.security.timestamp.Timestamper {
-  public sun.security.timestamp.HttpTimestamper(java.net.URI);
-  public sun.security.timestamp.TSResponse generateTimestamp(sun.security.timestamp.TSRequest) throws java.io.IOException;
-  static {};
-}

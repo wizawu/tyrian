@@ -1,6 +1,0 @@
-Compiled from "JSONFunctions.java"
-public final class jdk.nashorn.internal.runtime.JSONFunctions {
-  public static java.lang.String quote(java.lang.String);
-  public static java.lang.Object parse(java.lang.Object, java.lang.Object);
-  static {};
-}

@@ -1,4 +1,0 @@
-Compiled from "ThreadStartEvent.java"
-public interface com.sun.jdi.event.ThreadStartEvent extends com.sun.jdi.event.Event {
-  public abstract com.sun.jdi.ThreadReference thread();
-}

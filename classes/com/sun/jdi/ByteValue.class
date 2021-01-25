@@ -1,6 +1,0 @@
-Compiled from "ByteValue.java"
-public interface com.sun.jdi.ByteValue extends com.sun.jdi.PrimitiveValue, java.lang.Comparable<com.sun.jdi.ByteValue> {
-  public abstract byte value();
-  public abstract boolean equals(java.lang.Object);
-  public abstract int hashCode();
-}

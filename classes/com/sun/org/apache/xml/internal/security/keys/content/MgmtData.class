@@ -1,7 +1,0 @@
-Compiled from "MgmtData.java"
-public class com.sun.org.apache.xml.internal.security.keys.content.MgmtData extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.KeyInfoContent {
-  public com.sun.org.apache.xml.internal.security.keys.content.MgmtData(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-  public com.sun.org.apache.xml.internal.security.keys.content.MgmtData(org.w3c.dom.Document, java.lang.String);
-  public java.lang.String getMgmtData();
-  public java.lang.String getBaseLocalName();
-}

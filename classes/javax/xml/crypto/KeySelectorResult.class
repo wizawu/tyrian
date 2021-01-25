@@ -1,4 +1,0 @@
-Compiled from "KeySelectorResult.java"
-public interface javax.xml.crypto.KeySelectorResult {
-  public abstract java.security.Key getKey();
-}

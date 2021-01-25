@@ -1,6 +1,0 @@
-Compiled from "Predicate.java"
-public interface javax.sql.rowset.Predicate {
-  public abstract boolean evaluate(javax.sql.RowSet);
-  public abstract boolean evaluate(java.lang.Object, int) throws java.sql.SQLException;
-  public abstract boolean evaluate(java.lang.Object, java.lang.String) throws java.sql.SQLException;
-}

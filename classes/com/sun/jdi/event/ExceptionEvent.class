@@ -1,5 +1,0 @@
-Compiled from "ExceptionEvent.java"
-public interface com.sun.jdi.event.ExceptionEvent extends com.sun.jdi.event.LocatableEvent {
-  public abstract com.sun.jdi.ObjectReference exception();
-  public abstract com.sun.jdi.Location catchLocation();
-}

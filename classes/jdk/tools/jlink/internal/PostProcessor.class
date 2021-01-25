@@ -1,4 +1,0 @@
-Compiled from "PostProcessor.java"
-public interface jdk.tools.jlink.internal.PostProcessor {
-  public abstract java.util.List<java.lang.String> process(jdk.tools.jlink.internal.ExecutableImage);
-}

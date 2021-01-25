@@ -1,8 +1,0 @@
-Compiled from "CollatorProviderImpl.java"
-public class sun.util.locale.provider.CollatorProviderImpl extends java.text.spi.CollatorProvider implements sun.util.locale.provider.AvailableLanguageTags {
-  public sun.util.locale.provider.CollatorProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
-  public java.util.Locale[] getAvailableLocales();
-  public boolean isSupportedLocale(java.util.Locale);
-  public java.text.Collator getInstance(java.util.Locale);
-  public java.util.Set<java.lang.String> getAvailableLanguageTags();
-}

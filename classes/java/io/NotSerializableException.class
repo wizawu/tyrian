@@ -1,5 +1,0 @@
-Compiled from "NotSerializableException.java"
-public class java.io.NotSerializableException extends java.io.ObjectStreamException {
-  public java.io.NotSerializableException(java.lang.String);
-  public java.io.NotSerializableException();
-}

@@ -1,4 +1,0 @@
-Compiled from "ObjectInputFilter.java"
-public interface java.io.ObjectInputFilter {
-  public abstract java.io.ObjectInputFilter$Status checkInput(java.io.ObjectInputFilter$FilterInfo);
-}

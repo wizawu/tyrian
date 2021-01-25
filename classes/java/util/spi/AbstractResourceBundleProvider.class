@@ -1,8 +1,0 @@
-Compiled from "AbstractResourceBundleProvider.java"
-public abstract class java.util.spi.AbstractResourceBundleProvider implements java.util.spi.ResourceBundleProvider {
-  protected java.util.spi.AbstractResourceBundleProvider();
-  protected java.util.spi.AbstractResourceBundleProvider(java.lang.String...);
-  protected java.lang.String toBundleName(java.lang.String, java.util.Locale);
-  public java.util.ResourceBundle getBundle(java.lang.String, java.util.Locale);
-  static {};
-}

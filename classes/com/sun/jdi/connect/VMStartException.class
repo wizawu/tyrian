@@ -1,7 +1,0 @@
-Compiled from "VMStartException.java"
-public class com.sun.jdi.connect.VMStartException extends java.lang.Exception {
-  java.lang.Process process;
-  public com.sun.jdi.connect.VMStartException(java.lang.Process);
-  public com.sun.jdi.connect.VMStartException(java.lang.String, java.lang.Process);
-  public java.lang.Process process();
-}

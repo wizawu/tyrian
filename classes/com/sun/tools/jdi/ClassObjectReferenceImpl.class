@@ -1,7 +1,0 @@
-Compiled from "ClassObjectReferenceImpl.java"
-public class com.sun.tools.jdi.ClassObjectReferenceImpl extends com.sun.tools.jdi.ObjectReferenceImpl implements com.sun.jdi.ClassObjectReference {
-  com.sun.tools.jdi.ClassObjectReferenceImpl(com.sun.jdi.VirtualMachine, long);
-  public com.sun.jdi.ReferenceType reflectedType();
-  byte typeValueKey();
-  public java.lang.String toString();
-}

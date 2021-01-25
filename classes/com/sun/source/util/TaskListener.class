@@ -1,5 +1,0 @@
-Compiled from "TaskListener.java"
-public interface com.sun.source.util.TaskListener {
-  public default void started(com.sun.source.util.TaskEvent);
-  public default void finished(com.sun.source.util.TaskEvent);
-}

@@ -1,6 +1,0 @@
-Compiled from "SimpleElementVisitor9.java"
-public class javax.lang.model.util.SimpleElementVisitor9<R, P> extends javax.lang.model.util.SimpleElementVisitor8<R, P> {
-  protected javax.lang.model.util.SimpleElementVisitor9();
-  protected javax.lang.model.util.SimpleElementVisitor9(R);
-  public R visitModule(javax.lang.model.element.ModuleElement, P);
-}

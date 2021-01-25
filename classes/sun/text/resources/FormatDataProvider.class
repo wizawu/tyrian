@@ -1,3 +1,0 @@
-Compiled from "FormatDataProvider.java"
-public interface sun.text.resources.FormatDataProvider extends java.util.spi.ResourceBundleProvider {
-}

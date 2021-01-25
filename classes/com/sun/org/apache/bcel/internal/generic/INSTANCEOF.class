@@ -1,8 +1,0 @@
-Compiled from "INSTANCEOF.java"
-public class com.sun.org.apache.bcel.internal.generic.INSTANCEOF extends com.sun.org.apache.bcel.internal.generic.CPInstruction implements com.sun.org.apache.bcel.internal.generic.LoadClass,com.sun.org.apache.bcel.internal.generic.ExceptionThrower,com.sun.org.apache.bcel.internal.generic.StackProducer,com.sun.org.apache.bcel.internal.generic.StackConsumer {
-  com.sun.org.apache.bcel.internal.generic.INSTANCEOF();
-  public com.sun.org.apache.bcel.internal.generic.INSTANCEOF(int);
-  public java.lang.Class<?>[] getExceptions();
-  public com.sun.org.apache.bcel.internal.generic.ObjectType getLoadClassType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

@@ -1,5 +1,0 @@
-Compiled from "FormatData_en_SG.java"
-public class sun.text.resources.ext.FormatData_en_SG extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_en_SG();
-  protected final java.lang.Object[][] getContents();
-}

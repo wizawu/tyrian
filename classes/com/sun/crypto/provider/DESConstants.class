@@ -1,4 +1,0 @@
-Compiled from "DESConstants.java"
-interface com.sun.crypto.provider.DESConstants {
-  public static final int DES_BLOCK_SIZE;
-}

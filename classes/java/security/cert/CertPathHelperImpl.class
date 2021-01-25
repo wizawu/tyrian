@@ -1,6 +1,0 @@
-Compiled from "CertPathHelperImpl.java"
-class java.security.cert.CertPathHelperImpl extends sun.security.provider.certpath.CertPathHelper {
-  static synchronized void initialize();
-  protected void implSetPathToNames(java.security.cert.X509CertSelector, java.util.Set<sun.security.x509.GeneralNameInterface>);
-  protected void implSetDateAndTime(java.security.cert.X509CRLSelector, java.util.Date, long);
-}

@@ -1,5 +1,0 @@
-Compiled from "BinaryTree.java"
-public interface jdk.nashorn.api.tree.BinaryTree extends jdk.nashorn.api.tree.ExpressionTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getLeftOperand();
-  public abstract jdk.nashorn.api.tree.ExpressionTree getRightOperand();
-}

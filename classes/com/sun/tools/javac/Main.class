@@ -1,7 +1,0 @@
-Compiled from "Main.java"
-public class com.sun.tools.javac.Main {
-  public com.sun.tools.javac.Main();
-  public static void main(java.lang.String[]) throws java.lang.Exception;
-  public static int compile(java.lang.String[]);
-  public static int compile(java.lang.String[], java.io.PrintWriter);
-}

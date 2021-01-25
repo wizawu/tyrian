@@ -1,5 +1,0 @@
-Compiled from "AttributeInUseException.java"
-public class javax.naming.directory.AttributeInUseException extends javax.naming.NamingException {
-  public javax.naming.directory.AttributeInUseException(java.lang.String);
-  public javax.naming.directory.AttributeInUseException();
-}

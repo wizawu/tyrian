@@ -1,5 +1,0 @@
-Compiled from "FlavorMap.java"
-public interface java.awt.datatransfer.FlavorMap {
-  public abstract java.util.Map<java.awt.datatransfer.DataFlavor, java.lang.String> getNativesForFlavors(java.awt.datatransfer.DataFlavor[]);
-  public abstract java.util.Map<java.lang.String, java.awt.datatransfer.DataFlavor> getFlavorsForNatives(java.lang.String[]);
-}

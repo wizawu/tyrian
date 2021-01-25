@@ -1,8 +1,0 @@
-Compiled from "SunMinMaxPage.java"
-public final class sun.print.SunMinMaxPage implements javax.print.attribute.PrintRequestAttribute {
-  public sun.print.SunMinMaxPage(int, int);
-  public java.lang.Class<? extends javax.print.attribute.PrintRequestAttribute> getCategory();
-  public int getMin();
-  public int getMax();
-  public java.lang.String getName();
-}

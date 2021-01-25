@@ -1,6 +1,0 @@
-Compiled from "ShortEditor.java"
-public class com.sun.beans.editors.ShortEditor extends com.sun.beans.editors.NumberEditor {
-  public com.sun.beans.editors.ShortEditor();
-  public java.lang.String getJavaInitializationString();
-  public void setAsText(java.lang.String) throws java.lang.IllegalArgumentException;
-}

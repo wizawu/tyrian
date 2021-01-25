@@ -1,6 +1,0 @@
-Compiled from "IllegalAccessMaps.java"
-public class jdk.internal.module.IllegalAccessMaps {
-  public java.util.Map<java.lang.String, java.util.Set<java.lang.String>> concealedPackagesToOpen();
-  public java.util.Map<java.lang.String, java.util.Set<java.lang.String>> exportedPackagesToOpen();
-  public static jdk.internal.module.IllegalAccessMaps generate(java.lang.module.ModuleFinder);
-}

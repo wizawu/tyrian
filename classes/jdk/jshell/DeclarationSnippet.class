@@ -1,8 +1,0 @@
-Compiled from "DeclarationSnippet.java"
-public abstract class jdk.jshell.DeclarationSnippet extends jdk.jshell.PersistentSnippet {
-  jdk.jshell.DeclarationSnippet(jdk.jshell.Key$DeclarationKey, java.lang.String, jdk.jshell.Wrap, java.lang.String, jdk.jshell.Snippet$SubKind, jdk.jshell.Wrap, java.util.Collection<java.lang.String>, java.util.Collection<java.lang.String>, jdk.jshell.DiagList);
-  jdk.jshell.Wrap corralled();
-  java.util.Collection<java.lang.String> declareReferences();
-  java.util.Collection<java.lang.String> bodyReferences();
-  java.lang.String importLine(jdk.jshell.JShell);
-}

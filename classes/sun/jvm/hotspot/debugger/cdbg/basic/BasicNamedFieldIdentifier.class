@@ -1,7 +1,0 @@
-Compiled from "BasicNamedFieldIdentifier.java"
-public class sun.jvm.hotspot.debugger.cdbg.basic.BasicNamedFieldIdentifier implements sun.jvm.hotspot.debugger.cdbg.NamedFieldIdentifier {
-  public sun.jvm.hotspot.debugger.cdbg.basic.BasicNamedFieldIdentifier(sun.jvm.hotspot.debugger.cdbg.Field);
-  public java.lang.String getName();
-  public sun.jvm.hotspot.debugger.cdbg.Type getType();
-  public java.lang.String toString();
-}

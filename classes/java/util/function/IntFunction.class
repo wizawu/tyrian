@@ -1,4 +1,0 @@
-Compiled from "IntFunction.java"
-public interface java.util.function.IntFunction<R> {
-  public abstract R apply(int);
-}

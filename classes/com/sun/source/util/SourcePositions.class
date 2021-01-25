@@ -1,5 +1,0 @@
-Compiled from "SourcePositions.java"
-public interface com.sun.source.util.SourcePositions {
-  public abstract long getStartPosition(com.sun.source.tree.CompilationUnitTree, com.sun.source.tree.Tree);
-  public abstract long getEndPosition(com.sun.source.tree.CompilationUnitTree, com.sun.source.tree.Tree);
-}

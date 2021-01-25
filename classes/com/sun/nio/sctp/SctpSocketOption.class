@@ -1,3 +1,0 @@
-Compiled from "SctpSocketOption.java"
-public interface com.sun.nio.sctp.SctpSocketOption<T> extends java.net.SocketOption<T> {
-}

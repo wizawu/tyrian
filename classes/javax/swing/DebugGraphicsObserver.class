@@ -1,8 +1,0 @@
-Compiled from "DebugGraphicsObserver.java"
-class javax.swing.DebugGraphicsObserver implements java.awt.image.ImageObserver {
-  int lastInfo;
-  javax.swing.DebugGraphicsObserver();
-  synchronized boolean allBitsPresent();
-  synchronized boolean imageHasProblem();
-  public synchronized boolean imageUpdate(java.awt.Image, int, int, int, int, int);
-}

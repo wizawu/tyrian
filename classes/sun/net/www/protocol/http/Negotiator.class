@@ -1,7 +1,0 @@
-Compiled from "Negotiator.java"
-public abstract class sun.net.www.protocol.http.Negotiator {
-  public sun.net.www.protocol.http.Negotiator();
-  static sun.net.www.protocol.http.Negotiator getNegotiator(sun.net.www.protocol.http.HttpCallerInfo);
-  public abstract byte[] firstToken() throws java.io.IOException;
-  public abstract byte[] nextToken(byte[]) throws java.io.IOException;
-}

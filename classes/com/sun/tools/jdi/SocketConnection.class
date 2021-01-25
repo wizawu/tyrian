@@ -1,8 +1,0 @@
-Compiled from "SocketConnection.java"
-class com.sun.tools.jdi.SocketConnection extends com.sun.jdi.connect.spi.Connection {
-  com.sun.tools.jdi.SocketConnection(java.net.Socket) throws java.io.IOException;
-  public void close() throws java.io.IOException;
-  public boolean isOpen();
-  public byte[] readPacket() throws java.io.IOException;
-  public void writePacket(byte[]) throws java.io.IOException;
-}

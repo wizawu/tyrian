@@ -1,7 +1,0 @@
-Compiled from "SubjectDomainCombiner.java"
-public class javax.security.auth.SubjectDomainCombiner implements java.security.DomainCombiner {
-  public javax.security.auth.SubjectDomainCombiner(javax.security.auth.Subject);
-  public javax.security.auth.Subject getSubject();
-  public java.security.ProtectionDomain[] combine(java.security.ProtectionDomain[], java.security.ProtectionDomain[]);
-  static {};
-}

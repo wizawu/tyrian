@@ -1,5 +1,0 @@
-Compiled from "NMTOKENDatatypeValidator.java"
-public class com.sun.org.apache.xerces.internal.impl.dv.dtd.NMTOKENDatatypeValidator implements com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator {
-  public com.sun.org.apache.xerces.internal.impl.dv.dtd.NMTOKENDatatypeValidator();
-  public void validate(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
-}

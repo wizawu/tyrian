@@ -1,8 +1,0 @@
-Compiled from "TextJustifier.java"
-class java.awt.font.TextJustifier {
-  static boolean DEBUG;
-  public static final int MAX_PRIORITY;
-  java.awt.font.TextJustifier(java.awt.font.GlyphJustificationInfo[], int, int);
-  public float[] justify(float);
-  static {};
-}

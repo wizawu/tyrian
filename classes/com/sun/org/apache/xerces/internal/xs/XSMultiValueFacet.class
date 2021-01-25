@@ -1,7 +1,0 @@
-Compiled from "XSMultiValueFacet.java"
-public interface com.sun.org.apache.xerces.internal.xs.XSMultiValueFacet extends com.sun.org.apache.xerces.internal.xs.XSObject {
-  public abstract short getFacetKind();
-  public abstract com.sun.org.apache.xerces.internal.xs.StringList getLexicalFacetValues();
-  public abstract com.sun.org.apache.xerces.internal.xs.datatypes.ObjectList getEnumerationValues();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
-}

@@ -1,5 +1,0 @@
-Compiled from "FormatData_el_GR.java"
-public class sun.text.resources.ext.FormatData_el_GR extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_el_GR();
-  protected final java.lang.Object[][] getContents();
-}

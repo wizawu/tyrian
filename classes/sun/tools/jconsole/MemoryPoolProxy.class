@@ -1,8 +1,0 @@
-Compiled from "MemoryPoolProxy.java"
-public class sun.tools.jconsole.MemoryPoolProxy {
-  static final boolean $assertionsDisabled;
-  public sun.tools.jconsole.MemoryPoolProxy(sun.tools.jconsole.ProxyClient, javax.management.ObjectName) throws java.io.IOException;
-  public boolean isCollectedMemoryPool();
-  public sun.tools.jconsole.MemoryPoolStat getStat() throws java.io.IOException;
-  static {};
-}

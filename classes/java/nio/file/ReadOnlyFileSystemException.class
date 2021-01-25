@@ -1,5 +1,0 @@
-Compiled from "ReadOnlyFileSystemException.java"
-public class java.nio.file.ReadOnlyFileSystemException extends java.lang.UnsupportedOperationException {
-  static final long serialVersionUID;
-  public java.nio.file.ReadOnlyFileSystemException();
-}

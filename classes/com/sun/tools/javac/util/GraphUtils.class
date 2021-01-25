@@ -1,6 +1,0 @@
-Compiled from "GraphUtils.java"
-public class com.sun.tools.javac.util.GraphUtils {
-  public com.sun.tools.javac.util.GraphUtils();
-  public static <D, N extends com.sun.tools.javac.util.GraphUtils$TarjanNode<D, N>> com.sun.tools.javac.util.List<? extends com.sun.tools.javac.util.List<? extends N>> tarjan(java.lang.Iterable<? extends N>);
-  public static <D, N extends com.sun.tools.javac.util.GraphUtils$DottableNode<D, N>> java.lang.String toDot(java.util.Collection<? extends N>, java.lang.String, java.lang.String);
-}

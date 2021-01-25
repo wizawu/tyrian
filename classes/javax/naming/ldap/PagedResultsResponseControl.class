@@ -1,7 +1,0 @@
-Compiled from "PagedResultsResponseControl.java"
-public final class javax.naming.ldap.PagedResultsResponseControl extends javax.naming.ldap.BasicControl {
-  public static final java.lang.String OID;
-  public javax.naming.ldap.PagedResultsResponseControl(java.lang.String, boolean, byte[]) throws java.io.IOException;
-  public int getResultSize();
-  public byte[] getCookie();
-}

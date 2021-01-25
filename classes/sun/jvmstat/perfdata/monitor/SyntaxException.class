@@ -1,6 +1,0 @@
-Compiled from "SyntaxException.java"
-public class sun.jvmstat.perfdata.monitor.SyntaxException extends java.lang.Exception {
-  int lineno;
-  public sun.jvmstat.perfdata.monitor.SyntaxException(int);
-  public java.lang.String getMessage();
-}

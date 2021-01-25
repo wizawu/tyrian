@@ -1,7 +1,0 @@
-Compiled from "SortControl.java"
-public final class javax.naming.ldap.SortControl extends javax.naming.ldap.BasicControl {
-  public static final java.lang.String OID;
-  public javax.naming.ldap.SortControl(java.lang.String, boolean) throws java.io.IOException;
-  public javax.naming.ldap.SortControl(java.lang.String[], boolean) throws java.io.IOException;
-  public javax.naming.ldap.SortControl(javax.naming.ldap.SortKey[], boolean) throws java.io.IOException;
-}

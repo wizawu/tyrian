@@ -1,5 +1,0 @@
-Compiled from "FormatData_sv_SE.java"
-public class sun.text.resources.ext.FormatData_sv_SE extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_sv_SE();
-  protected final java.lang.Object[][] getContents();
-}

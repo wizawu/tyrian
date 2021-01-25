@@ -1,5 +1,0 @@
-Compiled from "KrbPriv.java"
-class sun.security.krb5.KrbPriv extends sun.security.krb5.KrbAppMessage {
-  public byte[] getMessage() throws sun.security.krb5.KrbException;
-  public byte[] getData();
-}

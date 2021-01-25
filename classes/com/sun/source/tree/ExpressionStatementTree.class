@@ -1,4 +1,0 @@
-Compiled from "ExpressionStatementTree.java"
-public interface com.sun.source.tree.ExpressionStatementTree extends com.sun.source.tree.StatementTree {
-  public abstract com.sun.source.tree.ExpressionTree getExpression();
-}

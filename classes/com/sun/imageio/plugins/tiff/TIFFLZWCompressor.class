@@ -1,6 +1,0 @@
-Compiled from "TIFFLZWCompressor.java"
-public class com.sun.imageio.plugins.tiff.TIFFLZWCompressor extends com.sun.imageio.plugins.tiff.TIFFCompressor {
-  public com.sun.imageio.plugins.tiff.TIFFLZWCompressor(int);
-  public void setStream(javax.imageio.stream.ImageOutputStream);
-  public int encode(byte[], int, int, int, int[], int) throws java.io.IOException;
-}

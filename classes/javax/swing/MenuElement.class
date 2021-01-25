@@ -1,8 +1,0 @@
-Compiled from "MenuElement.java"
-public interface javax.swing.MenuElement {
-  public abstract void processMouseEvent(java.awt.event.MouseEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager);
-  public abstract void processKeyEvent(java.awt.event.KeyEvent, javax.swing.MenuElement[], javax.swing.MenuSelectionManager);
-  public abstract void menuSelectionChanged(boolean);
-  public abstract javax.swing.MenuElement[] getSubElements();
-  public abstract java.awt.Component getComponent();
-}

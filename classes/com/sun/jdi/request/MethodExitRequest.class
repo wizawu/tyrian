@@ -1,8 +1,0 @@
-Compiled from "MethodExitRequest.java"
-public interface com.sun.jdi.request.MethodExitRequest extends com.sun.jdi.request.EventRequest {
-  public abstract void addThreadFilter(com.sun.jdi.ThreadReference);
-  public abstract void addClassFilter(com.sun.jdi.ReferenceType);
-  public abstract void addClassFilter(java.lang.String);
-  public abstract void addClassExclusionFilter(java.lang.String);
-  public abstract void addInstanceFilter(com.sun.jdi.ObjectReference);
-}

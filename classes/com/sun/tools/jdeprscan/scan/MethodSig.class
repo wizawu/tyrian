@@ -1,9 +1,0 @@
-Compiled from "MethodSig.java"
-public class com.sun.tools.jdeprscan.scan.MethodSig {
-  final java.util.List<java.lang.String> parameters;
-  final java.lang.String returnType;
-  public static com.sun.tools.jdeprscan.scan.MethodSig fromDesc(java.lang.String);
-  public java.lang.String getReturnType();
-  public java.util.List<java.lang.String> getParameters();
-  public java.lang.String toString();
-}

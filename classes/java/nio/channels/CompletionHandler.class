@@ -1,5 +1,0 @@
-Compiled from "CompletionHandler.java"
-public interface java.nio.channels.CompletionHandler<V, A> {
-  public abstract void completed(V, A);
-  public abstract void failed(java.lang.Throwable, A);
-}

@@ -1,5 +1,0 @@
-Compiled from "MachNode.java"
-public class sun.jvm.hotspot.opto.MachNode extends sun.jvm.hotspot.opto.Node {
-  public sun.jvm.hotspot.opto.MachNode(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

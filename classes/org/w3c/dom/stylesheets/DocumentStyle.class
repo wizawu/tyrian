@@ -1,4 +1,0 @@
-Compiled from "DocumentStyle.java"
-public interface org.w3c.dom.stylesheets.DocumentStyle {
-  public abstract org.w3c.dom.stylesheets.StyleSheetList getStyleSheets();
-}

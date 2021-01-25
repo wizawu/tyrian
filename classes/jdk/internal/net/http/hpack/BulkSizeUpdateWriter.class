@@ -1,8 +1,0 @@
-Compiled from "BulkSizeUpdateWriter.java"
-final class jdk.internal.net.http.hpack.BulkSizeUpdateWriter implements jdk.internal.net.http.hpack.BinaryRepresentationWriter {
-  jdk.internal.net.http.hpack.BulkSizeUpdateWriter();
-  jdk.internal.net.http.hpack.BulkSizeUpdateWriter maxHeaderTableSizes(java.lang.Iterable<java.lang.Integer>);
-  public boolean write(jdk.internal.net.http.hpack.HeaderTable, java.nio.ByteBuffer);
-  public jdk.internal.net.http.hpack.BulkSizeUpdateWriter reset();
-  public jdk.internal.net.http.hpack.BinaryRepresentationWriter reset();
-}

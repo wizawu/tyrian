@@ -1,9 +1,0 @@
-Compiled from "Serializer.java"
-public interface com.sun.org.apache.xml.internal.serialize.Serializer {
-  public abstract void setOutputByteStream(java.io.OutputStream);
-  public abstract void setOutputCharStream(java.io.Writer);
-  public abstract void setOutputFormat(com.sun.org.apache.xml.internal.serialize.OutputFormat);
-  public abstract org.xml.sax.DocumentHandler asDocumentHandler() throws java.io.IOException;
-  public abstract org.xml.sax.ContentHandler asContentHandler() throws java.io.IOException;
-  public abstract com.sun.org.apache.xml.internal.serialize.DOMSerializer asDOMSerializer() throws java.io.IOException;
-}

@@ -1,5 +1,0 @@
-Compiled from "WindbgCDebugInfoBuilder.java"
-class sun.jvm.hotspot.debugger.windbg.WindbgCDebugInfoBuilder implements sun.jvm.hotspot.debugger.win32.coff.DebugVC50SubsectionTypes,sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeLeafIndices,sun.jvm.hotspot.debugger.win32.coff.DebugVC50TypeEnums,sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolTypes,sun.jvm.hotspot.debugger.win32.coff.DebugVC50MemberAttributes,sun.jvm.hotspot.debugger.cdbg.CVAttributes,sun.jvm.hotspot.debugger.cdbg.AccessControl {
-  sun.jvm.hotspot.debugger.windbg.WindbgCDebugInfoBuilder(sun.jvm.hotspot.debugger.windbg.WindbgDebugger);
-  sun.jvm.hotspot.debugger.cdbg.CDebugInfoDataBase buildDataBase(java.lang.String, sun.jvm.hotspot.debugger.Address);
-}

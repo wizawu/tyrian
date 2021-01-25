@@ -1,7 +1,0 @@
-Compiled from "ExecutableImage.java"
-public interface jdk.tools.jlink.internal.ExecutableImage {
-  public abstract java.nio.file.Path getHome();
-  public abstract java.util.Set<java.lang.String> getModules();
-  public abstract java.util.List<java.lang.String> getExecutionArgs();
-  public abstract void storeLaunchArgs(java.util.List<java.lang.String>);
-}

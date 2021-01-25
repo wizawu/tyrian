@@ -1,4 +1,0 @@
-Compiled from "AbstractElementVisitor8.java"
-public abstract class javax.lang.model.util.AbstractElementVisitor8<R, P> extends javax.lang.model.util.AbstractElementVisitor7<R, P> {
-  protected javax.lang.model.util.AbstractElementVisitor8();
-}

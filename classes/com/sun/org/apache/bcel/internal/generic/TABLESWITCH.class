@@ -1,8 +1,0 @@
-Compiled from "TABLESWITCH.java"
-public class com.sun.org.apache.bcel.internal.generic.TABLESWITCH extends com.sun.org.apache.bcel.internal.generic.Select {
-  com.sun.org.apache.bcel.internal.generic.TABLESWITCH();
-  public com.sun.org.apache.bcel.internal.generic.TABLESWITCH(int[], com.sun.org.apache.bcel.internal.generic.InstructionHandle[], com.sun.org.apache.bcel.internal.generic.InstructionHandle);
-  public void dump(java.io.DataOutputStream) throws java.io.IOException;
-  protected void initFromFile(com.sun.org.apache.bcel.internal.util.ByteSequence, boolean) throws java.io.IOException;
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

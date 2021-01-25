@@ -1,6 +1,0 @@
-Compiled from "ErrorListener.java"
-public interface javax.xml.transform.ErrorListener {
-  public abstract void warning(javax.xml.transform.TransformerException) throws javax.xml.transform.TransformerException;
-  public abstract void error(javax.xml.transform.TransformerException) throws javax.xml.transform.TransformerException;
-  public abstract void fatalError(javax.xml.transform.TransformerException) throws javax.xml.transform.TransformerException;
-}

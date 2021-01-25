@@ -1,7 +1,0 @@
-Compiled from "ActiveSettingEvent.java"
-public final class jdk.jfr.events.ActiveSettingEvent extends jdk.jfr.events.AbstractJDKEvent {
-  public long id;
-  public java.lang.String name;
-  public java.lang.String value;
-  public jdk.jfr.events.ActiveSettingEvent();
-}

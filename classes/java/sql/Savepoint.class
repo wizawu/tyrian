@@ -1,5 +1,0 @@
-Compiled from "Savepoint.java"
-public interface java.sql.Savepoint {
-  public abstract int getSavepointId() throws java.sql.SQLException;
-  public abstract java.lang.String getSavepointName() throws java.sql.SQLException;
-}

@@ -1,8 +1,0 @@
-Compiled from "FontManagerForSGE.java"
-public interface sun.font.FontManagerForSGE extends sun.font.FontManager {
-  public abstract java.awt.Font[] getCreatedFonts();
-  public abstract java.util.TreeMap<java.lang.String, java.lang.String> getCreatedFontFamilyNames();
-  public abstract java.awt.Font[] getAllInstalledFonts();
-  public abstract java.lang.String[] getInstalledFontFamilyNames(java.util.Locale);
-  public abstract void useAlternateFontforJALocales();
-}

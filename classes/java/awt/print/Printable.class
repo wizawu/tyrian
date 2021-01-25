@@ -1,6 +1,0 @@
-Compiled from "Printable.java"
-public interface java.awt.print.Printable {
-  public static final int PAGE_EXISTS;
-  public static final int NO_SUCH_PAGE;
-  public abstract int print(java.awt.Graphics, java.awt.print.PageFormat, int) throws java.awt.print.PrinterException;
-}

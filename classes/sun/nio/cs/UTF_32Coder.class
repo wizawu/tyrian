@@ -1,9 +1,0 @@
-Compiled from "UTF_32Coder.java"
-class sun.nio.cs.UTF_32Coder {
-  protected static final int BOM_BIG;
-  protected static final int BOM_LITTLE;
-  protected static final int NONE;
-  protected static final int BIG;
-  protected static final int LITTLE;
-  sun.nio.cs.UTF_32Coder();
-}

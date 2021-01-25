@@ -1,6 +1,0 @@
-Compiled from "ApacheNodeSetData.java"
-public class org.jcp.xml.dsig.internal.dom.ApacheNodeSetData implements org.jcp.xml.dsig.internal.dom.ApacheData, javax.xml.crypto.NodeSetData<org.w3c.dom.Node> {
-  public org.jcp.xml.dsig.internal.dom.ApacheNodeSetData(com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput);
-  public java.util.Iterator<org.w3c.dom.Node> iterator();
-  public com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput getXMLSignatureInput();
-}

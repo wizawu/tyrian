@@ -1,8 +1,0 @@
-Compiled from "JPEGImageReaderSpi.java"
-public class com.sun.imageio.plugins.jpeg.JPEGImageReaderSpi extends javax.imageio.spi.ImageReaderSpi {
-  public com.sun.imageio.plugins.jpeg.JPEGImageReaderSpi();
-  public java.lang.String getDescription(java.util.Locale);
-  public boolean canDecodeInput(java.lang.Object) throws java.io.IOException;
-  public javax.imageio.ImageReader createReaderInstance(java.lang.Object) throws javax.imageio.IIOException;
-  static {};
-}

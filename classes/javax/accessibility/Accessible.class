@@ -1,4 +1,0 @@
-Compiled from "Accessible.java"
-public interface javax.accessibility.Accessible {
-  public abstract javax.accessibility.AccessibleContext getAccessibleContext();
-}

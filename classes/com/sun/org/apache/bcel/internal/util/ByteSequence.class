@@ -1,6 +1,0 @@
-Compiled from "ByteSequence.java"
-public final class com.sun.org.apache.bcel.internal.util.ByteSequence extends java.io.DataInputStream {
-  public com.sun.org.apache.bcel.internal.util.ByteSequence(byte[]);
-  public final int getIndex();
-  final void unreadByte();
-}

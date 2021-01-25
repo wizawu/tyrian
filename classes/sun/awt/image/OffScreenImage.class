@@ -1,8 +1,0 @@
-Compiled from "OffScreenImage.java"
-public class sun.awt.image.OffScreenImage extends java.awt.image.BufferedImage {
-  protected java.awt.Component c;
-  public sun.awt.image.OffScreenImage(java.awt.Component, java.awt.image.ColorModel, java.awt.image.WritableRaster, boolean);
-  public java.awt.Graphics getGraphics();
-  public java.awt.Graphics2D createGraphics();
-  public java.awt.image.ImageProducer getSource();
-}

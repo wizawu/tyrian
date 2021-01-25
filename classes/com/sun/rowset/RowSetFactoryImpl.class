@@ -1,9 +1,0 @@
-Compiled from "RowSetFactoryImpl.java"
-public final class com.sun.rowset.RowSetFactoryImpl implements javax.sql.rowset.RowSetFactory {
-  public com.sun.rowset.RowSetFactoryImpl();
-  public javax.sql.rowset.CachedRowSet createCachedRowSet() throws java.sql.SQLException;
-  public javax.sql.rowset.FilteredRowSet createFilteredRowSet() throws java.sql.SQLException;
-  public javax.sql.rowset.JdbcRowSet createJdbcRowSet() throws java.sql.SQLException;
-  public javax.sql.rowset.JoinRowSet createJoinRowSet() throws java.sql.SQLException;
-  public javax.sql.rowset.WebRowSet createWebRowSet() throws java.sql.SQLException;
-}

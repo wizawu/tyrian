@@ -1,9 +1,0 @@
-Compiled from "MemoryType.java"
-public final class java.lang.management.MemoryType extends java.lang.Enum<java.lang.management.MemoryType> {
-  public static final java.lang.management.MemoryType HEAP;
-  public static final java.lang.management.MemoryType NON_HEAP;
-  public static java.lang.management.MemoryType[] values();
-  public static java.lang.management.MemoryType valueOf(java.lang.String);
-  public java.lang.String toString();
-  static {};
-}

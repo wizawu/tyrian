@@ -1,6 +1,0 @@
-Compiled from "DFAContentModel.java"
-public class com.sun.org.apache.xerces.internal.impl.dtd.models.DFAContentModel implements com.sun.org.apache.xerces.internal.impl.dtd.models.ContentModelValidator {
-  public com.sun.org.apache.xerces.internal.impl.dtd.models.DFAContentModel(com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode, int, boolean);
-  public int validate(com.sun.org.apache.xerces.internal.xni.QName[], int, int);
-  static {};
-}

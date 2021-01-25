@@ -1,7 +1,0 @@
-Compiled from "PrintException.java"
-public class javax.print.PrintException extends java.lang.Exception {
-  public javax.print.PrintException();
-  public javax.print.PrintException(java.lang.String);
-  public javax.print.PrintException(java.lang.Exception);
-  public javax.print.PrintException(java.lang.String, java.lang.Exception);
-}

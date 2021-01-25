@@ -1,5 +1,0 @@
-Compiled from "aiff.java"
-public class sun.awt.www.content.audio.aiff extends java.net.ContentHandler {
-  public sun.awt.www.content.audio.aiff();
-  public java.lang.Object getContent(java.net.URLConnection) throws java.io.IOException;
-}

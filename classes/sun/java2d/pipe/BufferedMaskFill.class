@@ -1,8 +1,0 @@
-Compiled from "BufferedMaskFill.java"
-public abstract class sun.java2d.pipe.BufferedMaskFill extends sun.java2d.loops.MaskFill {
-  protected final sun.java2d.pipe.RenderQueue rq;
-  protected sun.java2d.pipe.BufferedMaskFill(sun.java2d.pipe.RenderQueue, sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
-  public void MaskFill(sun.java2d.SunGraphics2D, sun.java2d.SurfaceData, java.awt.Composite, int, int, int, int, byte[], int, int);
-  protected abstract void maskFill(int, int, int, int, int, int, int, byte[]);
-  protected abstract void validateContext(sun.java2d.SunGraphics2D, java.awt.Composite, int);
-}

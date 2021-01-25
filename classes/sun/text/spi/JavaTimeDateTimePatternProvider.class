@@ -1,5 +1,0 @@
-Compiled from "JavaTimeDateTimePatternProvider.java"
-public abstract class sun.text.spi.JavaTimeDateTimePatternProvider extends java.util.spi.LocaleServiceProvider {
-  protected sun.text.spi.JavaTimeDateTimePatternProvider();
-  public abstract java.lang.String getJavaTimeDateTimePattern(int, int, java.lang.String, java.util.Locale);
-}

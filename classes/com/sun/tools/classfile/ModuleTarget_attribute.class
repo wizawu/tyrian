@@ -1,7 +1,0 @@
-Compiled from "ModuleTarget_attribute.java"
-public class com.sun.tools.classfile.ModuleTarget_attribute extends com.sun.tools.classfile.Attribute {
-  public final int target_platform_index;
-  com.sun.tools.classfile.ModuleTarget_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException;
-  public com.sun.tools.classfile.ModuleTarget_attribute(int, int);
-  public <R, D> R accept(com.sun.tools.classfile.Attribute$Visitor<R, D>, D);
-}

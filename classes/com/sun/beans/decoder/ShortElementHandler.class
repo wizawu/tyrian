@@ -1,5 +1,0 @@
-Compiled from "ShortElementHandler.java"
-final class com.sun.beans.decoder.ShortElementHandler extends com.sun.beans.decoder.StringElementHandler {
-  com.sun.beans.decoder.ShortElementHandler();
-  public java.lang.Object getValue(java.lang.String);
-}

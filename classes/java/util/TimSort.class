@@ -1,6 +1,0 @@
-Compiled from "TimSort.java"
-class java.util.TimSort<T> {
-  static final boolean $assertionsDisabled;
-  static <T> void sort(T[], int, int, java.util.Comparator<? super T>, T[], int, int);
-  static {};
-}

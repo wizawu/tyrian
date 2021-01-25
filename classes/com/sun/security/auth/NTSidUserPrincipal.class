@@ -1,6 +1,0 @@
-Compiled from "NTSidUserPrincipal.java"
-public class com.sun.security.auth.NTSidUserPrincipal extends com.sun.security.auth.NTSid {
-  public com.sun.security.auth.NTSidUserPrincipal(java.lang.String);
-  public java.lang.String toString();
-  public boolean equals(java.lang.Object);
-}

@@ -1,9 +1,0 @@
-Compiled from "GcInfoBuilder.java"
-public class com.sun.management.internal.GcInfoBuilder {
-  com.sun.management.internal.GcInfoBuilder(java.lang.management.GarbageCollectorMXBean, java.lang.String[]);
-  com.sun.management.GcInfo getLastGcInfo();
-  public java.lang.String[] getPoolNames();
-  int getGcExtItemCount();
-  synchronized javax.management.openmbean.CompositeType getGcInfoCompositeType();
-  synchronized java.lang.String[] getItemNames();
-}

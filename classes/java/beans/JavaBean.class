@@ -1,6 +1,0 @@
-Compiled from "JavaBean.java"
-public interface java.beans.JavaBean extends java.lang.annotation.Annotation {
-  public abstract java.lang.String description();
-  public abstract java.lang.String defaultProperty();
-  public abstract java.lang.String defaultEventSet();
-}

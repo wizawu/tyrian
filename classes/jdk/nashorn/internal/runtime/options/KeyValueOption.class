@@ -1,8 +1,0 @@
-Compiled from "KeyValueOption.java"
-public class jdk.nashorn.internal.runtime.options.KeyValueOption extends jdk.nashorn.internal.runtime.options.Option<java.lang.String> {
-  protected java.util.Map<java.lang.String, java.lang.String> map;
-  jdk.nashorn.internal.runtime.options.KeyValueOption(java.lang.String);
-  java.util.Map<java.lang.String, java.lang.String> getValues();
-  public boolean hasValue(java.lang.String);
-  java.lang.String getValue(java.lang.String);
-}

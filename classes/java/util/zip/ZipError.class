@@ -1,4 +1,0 @@
-Compiled from "ZipError.java"
-public class java.util.zip.ZipError extends java.lang.InternalError {
-  public java.util.zip.ZipError(java.lang.String);
-}

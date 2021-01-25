@@ -1,8 +1,0 @@
-Compiled from "JavadocClassFinder.java"
-public class jdk.javadoc.internal.tool.JavadocClassFinder extends com.sun.tools.javac.code.ClassFinder {
-  public static jdk.javadoc.internal.tool.JavadocClassFinder instance(com.sun.tools.javac.util.Context);
-  public static void preRegister(com.sun.tools.javac.util.Context);
-  public jdk.javadoc.internal.tool.JavadocClassFinder(com.sun.tools.javac.util.Context);
-  protected java.util.EnumSet<javax.tools.JavaFileObject$Kind> getPackageFileKinds();
-  protected void extraFileActions(com.sun.tools.javac.code.Symbol$PackageSymbol, javax.tools.JavaFileObject);
-}

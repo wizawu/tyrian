@@ -1,6 +1,0 @@
-Compiled from "VoidDescriptor.java"
-public class sun.reflect.generics.tree.VoidDescriptor implements sun.reflect.generics.tree.ReturnType {
-  public static sun.reflect.generics.tree.VoidDescriptor make();
-  public void accept(sun.reflect.generics.visitor.TypeTreeVisitor<?>);
-  static {};
-}

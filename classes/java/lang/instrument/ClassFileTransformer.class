@@ -1,5 +1,0 @@
-Compiled from "ClassFileTransformer.java"
-public interface java.lang.instrument.ClassFileTransformer {
-  public default byte[] transform(java.lang.ClassLoader, java.lang.String, java.lang.Class<?>, java.security.ProtectionDomain, byte[]) throws java.lang.instrument.IllegalClassFormatException;
-  public default byte[] transform(java.lang.Module, java.lang.ClassLoader, java.lang.String, java.lang.Class<?>, java.security.ProtectionDomain, byte[]) throws java.lang.instrument.IllegalClassFormatException;
-}

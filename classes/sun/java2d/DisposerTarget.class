@@ -1,4 +1,0 @@
-Compiled from "DisposerTarget.java"
-public interface sun.java2d.DisposerTarget {
-  public abstract java.lang.Object getDisposerReferent();
-}

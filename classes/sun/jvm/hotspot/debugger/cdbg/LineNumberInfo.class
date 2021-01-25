@@ -1,7 +1,0 @@
-Compiled from "LineNumberInfo.java"
-public interface sun.jvm.hotspot.debugger.cdbg.LineNumberInfo {
-  public abstract java.lang.String getSourceFileName();
-  public abstract int getLineNumber();
-  public abstract sun.jvm.hotspot.debugger.Address getStartPC();
-  public abstract sun.jvm.hotspot.debugger.Address getEndPC();
-}

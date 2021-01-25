@@ -1,5 +1,0 @@
-Compiled from "SearchResultWithControls.java"
-class com.sun.jndi.ldap.SearchResultWithControls extends javax.naming.directory.SearchResult implements javax.naming.ldap.HasControls {
-  public com.sun.jndi.ldap.SearchResultWithControls(java.lang.String, java.lang.Object, javax.naming.directory.Attributes, boolean, javax.naming.ldap.Control[]);
-  public javax.naming.ldap.Control[] getControls() throws javax.naming.NamingException;
-}

@@ -1,8 +1,0 @@
-Compiled from "Parameter.java"
-public class com.sun.org.apache.xalan.internal.xsltc.runtime.Parameter {
-  public java.lang.String _name;
-  public java.lang.Object _value;
-  public boolean _isDefault;
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.Parameter(java.lang.String, java.lang.Object);
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.Parameter(java.lang.String, java.lang.Object, boolean);
-}

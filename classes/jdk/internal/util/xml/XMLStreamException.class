@@ -1,9 +1,0 @@
-Compiled from "XMLStreamException.java"
-public class jdk.internal.util.xml.XMLStreamException extends java.lang.Exception {
-  protected java.lang.Throwable nested;
-  public jdk.internal.util.xml.XMLStreamException();
-  public jdk.internal.util.xml.XMLStreamException(java.lang.String);
-  public jdk.internal.util.xml.XMLStreamException(java.lang.Throwable);
-  public jdk.internal.util.xml.XMLStreamException(java.lang.String, java.lang.Throwable);
-  public java.lang.Throwable getNestedException();
-}

@@ -1,6 +1,0 @@
-Compiled from "KeyCache.java"
-final class sun.security.pkcs11.KeyCache {
-  sun.security.pkcs11.KeyCache();
-  synchronized sun.security.pkcs11.P11Key get(java.security.Key);
-  synchronized void put(java.security.Key, sun.security.pkcs11.P11Key);
-}

@@ -1,9 +1,0 @@
-Compiled from "AbstractTypeVisitor6.java"
-public abstract class javax.lang.model.util.AbstractTypeVisitor6<R, P> implements javax.lang.model.type.TypeVisitor<R, P> {
-  protected javax.lang.model.util.AbstractTypeVisitor6();
-  public final R visit(javax.lang.model.type.TypeMirror, P);
-  public final R visit(javax.lang.model.type.TypeMirror);
-  public R visitUnion(javax.lang.model.type.UnionType, P);
-  public R visitIntersection(javax.lang.model.type.IntersectionType, P);
-  public R visitUnknown(javax.lang.model.type.TypeMirror, P);
-}

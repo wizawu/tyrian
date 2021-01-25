@@ -1,9 +1,0 @@
-Compiled from "NaiveHuffman.java"
-public final class jdk.internal.net.http.hpack.NaiveHuffman {
-  public static final jdk.internal.net.http.hpack.NaiveHuffman INSTANCE;
-  static final boolean $assertionsDisabled;
-  public int lengthOf(java.lang.CharSequence);
-  public int lengthOf(java.lang.CharSequence, int, int);
-  jdk.internal.net.http.hpack.NaiveHuffman$Node getRoot();
-  static {};
-}

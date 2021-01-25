@@ -1,8 +1,0 @@
-Compiled from "KeyboardFocusManagerPeer.java"
-public interface java.awt.peer.KeyboardFocusManagerPeer {
-  public abstract void setCurrentFocusedWindow(java.awt.Window);
-  public abstract java.awt.Window getCurrentFocusedWindow();
-  public abstract void setCurrentFocusOwner(java.awt.Component);
-  public abstract java.awt.Component getCurrentFocusOwner();
-  public abstract void clearGlobalFocusOwner(java.awt.Window);
-}

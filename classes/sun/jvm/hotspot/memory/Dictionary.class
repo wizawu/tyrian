@@ -1,8 +1,0 @@
-Compiled from "Dictionary.java"
-public class sun.jvm.hotspot.memory.Dictionary extends sun.jvm.hotspot.utilities.Hashtable {
-  public sun.jvm.hotspot.memory.Dictionary(sun.jvm.hotspot.debugger.Address);
-  protected java.lang.Class getHashtableEntryClass();
-  public void allEntriesDo(sun.jvm.hotspot.classfile.ClassLoaderDataGraph$ClassAndLoaderVisitor, sun.jvm.hotspot.oops.Oop);
-  public boolean contains(sun.jvm.hotspot.oops.Klass);
-  static {};
-}

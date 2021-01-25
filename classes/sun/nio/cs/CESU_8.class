@@ -1,7 +1,0 @@
-Compiled from "CESU_8.java"
-class sun.nio.cs.CESU_8 extends sun.nio.cs.Unicode {
-  public sun.nio.cs.CESU_8();
-  public java.lang.String historicalName();
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public java.nio.charset.CharsetEncoder newEncoder();
-}

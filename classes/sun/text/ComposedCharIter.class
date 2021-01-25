@@ -1,8 +1,0 @@
-Compiled from "ComposedCharIter.java"
-public final class sun.text.ComposedCharIter {
-  public static final int DONE;
-  public sun.text.ComposedCharIter();
-  public int next();
-  public java.lang.String decomposition();
-  static {};
-}

@@ -1,5 +1,0 @@
-Compiled from "ZBarrier.java"
-class sun.jvm.hotspot.gc.z.ZBarrier {
-  sun.jvm.hotspot.gc.z.ZBarrier();
-  static sun.jvm.hotspot.debugger.Address weak_barrier(sun.jvm.hotspot.debugger.Address);
-}

@@ -1,6 +1,0 @@
-Compiled from "ListTranslator.java"
-public class com.sun.java.accessibility.util.internal.ListTranslator extends com.sun.java.accessibility.util.Translator {
-  public com.sun.java.accessibility.util.internal.ListTranslator();
-  public javax.accessibility.AccessibleStateSet getAccessibleStateSet();
-  public javax.accessibility.AccessibleRole getAccessibleRole();
-}

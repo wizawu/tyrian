@@ -1,9 +1,0 @@
-Compiled from "SerialCallbackContext.java"
-final class java.io.SerialCallbackContext {
-  public java.io.SerialCallbackContext(java.lang.Object, java.io.ObjectStreamClass);
-  public java.lang.Object getObj() throws java.io.NotActiveException;
-  public java.io.ObjectStreamClass getDesc();
-  public void check() throws java.io.NotActiveException;
-  public void checkAndSetUsed() throws java.io.NotActiveException;
-  public void setUsed();
-}

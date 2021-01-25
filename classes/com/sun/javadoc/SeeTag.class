@@ -1,9 +1,0 @@
-Compiled from "SeeTag.java"
-public interface com.sun.javadoc.SeeTag extends com.sun.javadoc.Tag {
-  public abstract java.lang.String label();
-  public abstract com.sun.javadoc.PackageDoc referencedPackage();
-  public abstract java.lang.String referencedClassName();
-  public abstract com.sun.javadoc.ClassDoc referencedClass();
-  public abstract java.lang.String referencedMemberName();
-  public abstract com.sun.javadoc.MemberDoc referencedMember();
-}

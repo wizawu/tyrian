@@ -1,4 +1,0 @@
-Compiled from "XDropTargetProtocolListener.java"
-interface sun.awt.X11.XDropTargetProtocolListener {
-  public abstract void handleDropTargetNotification(sun.awt.X11.XWindow, int, int, int, int, long[], long, int);
-}

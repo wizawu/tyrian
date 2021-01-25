@@ -1,5 +1,0 @@
-Compiled from "JVMDebugger.java"
-public interface sun.jvm.hotspot.debugger.JVMDebugger extends sun.jvm.hotspot.debugger.Debugger {
-  public abstract void configureJavaPrimitiveTypeSizes(long, long, long, long, long, long, long, long);
-  public abstract void putHeapConst(long, long, long, int, long, int);
-}

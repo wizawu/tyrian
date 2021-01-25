@@ -1,8 +1,0 @@
-Compiled from "LCONST.java"
-public class com.sun.org.apache.bcel.internal.generic.LCONST extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.ConstantPushInstruction {
-  com.sun.org.apache.bcel.internal.generic.LCONST();
-  public com.sun.org.apache.bcel.internal.generic.LCONST(long);
-  public java.lang.Number getValue();
-  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

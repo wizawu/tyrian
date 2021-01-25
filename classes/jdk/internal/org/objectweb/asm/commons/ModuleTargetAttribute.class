@@ -1,8 +1,0 @@
-Compiled from "ModuleTargetAttribute.java"
-public final class jdk.internal.org.objectweb.asm.commons.ModuleTargetAttribute extends jdk.internal.org.objectweb.asm.Attribute {
-  public java.lang.String platform;
-  public jdk.internal.org.objectweb.asm.commons.ModuleTargetAttribute(java.lang.String);
-  public jdk.internal.org.objectweb.asm.commons.ModuleTargetAttribute();
-  protected jdk.internal.org.objectweb.asm.Attribute read(jdk.internal.org.objectweb.asm.ClassReader, int, int, char[], int, jdk.internal.org.objectweb.asm.Label[]);
-  protected jdk.internal.org.objectweb.asm.ByteVector write(jdk.internal.org.objectweb.asm.ClassWriter, byte[], int, int, int);
-}

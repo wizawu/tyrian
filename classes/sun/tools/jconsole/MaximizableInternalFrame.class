@@ -1,7 +1,0 @@
-Compiled from "MaximizableInternalFrame.java"
-public class sun.tools.jconsole.MaximizableInternalFrame extends javax.swing.JInternalFrame {
-  public sun.tools.jconsole.MaximizableInternalFrame(java.lang.String, boolean, boolean, boolean, boolean);
-  public void updateUI();
-  public void setTitle(java.lang.String);
-  static {};
-}

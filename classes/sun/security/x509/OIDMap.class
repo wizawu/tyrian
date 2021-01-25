@@ -1,9 +1,0 @@
-Compiled from "OIDMap.java"
-public class sun.security.x509.OIDMap {
-  public static void addAttribute(java.lang.String, java.lang.String, java.lang.Class<?>) throws java.security.cert.CertificateException;
-  public static java.lang.String getName(sun.security.util.ObjectIdentifier);
-  public static sun.security.util.ObjectIdentifier getOID(java.lang.String);
-  public static java.lang.Class<?> getClass(java.lang.String) throws java.security.cert.CertificateException;
-  public static java.lang.Class<?> getClass(sun.security.util.ObjectIdentifier) throws java.security.cert.CertificateException;
-  static {};
-}

@@ -1,9 +1,0 @@
-Compiled from "IntField.java"
-public class sun.jvm.hotspot.oops.IntField extends sun.jvm.hotspot.oops.Field {
-  public sun.jvm.hotspot.oops.IntField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
-  public sun.jvm.hotspot.oops.IntField(sun.jvm.hotspot.types.JIntField, long);
-  public sun.jvm.hotspot.oops.IntField(sun.jvm.hotspot.oops.InstanceKlass, int);
-  public int getValue(sun.jvm.hotspot.oops.Oop);
-  public int getValue(sun.jvm.hotspot.runtime.VMObject);
-  public void setValue(sun.jvm.hotspot.oops.Oop, int) throws sun.jvm.hotspot.oops.MutationException;
-}

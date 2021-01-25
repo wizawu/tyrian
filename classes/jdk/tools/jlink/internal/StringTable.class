@@ -1,5 +1,0 @@
-Compiled from "StringTable.java"
-public interface jdk.tools.jlink.internal.StringTable {
-  public abstract int addString(java.lang.String);
-  public abstract java.lang.String getString(int);
-}

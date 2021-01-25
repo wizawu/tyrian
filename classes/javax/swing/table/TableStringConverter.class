@@ -1,5 +1,0 @@
-Compiled from "TableStringConverter.java"
-public abstract class javax.swing.table.TableStringConverter {
-  public javax.swing.table.TableStringConverter();
-  public abstract java.lang.String toString(javax.swing.table.TableModel, int, int);
-}

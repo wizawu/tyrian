@@ -1,7 +1,0 @@
-Compiled from "ConstructionException.java"
-public class sun.jvm.hotspot.runtime.ConstructionException extends java.lang.RuntimeException {
-  public sun.jvm.hotspot.runtime.ConstructionException();
-  public sun.jvm.hotspot.runtime.ConstructionException(java.lang.String);
-  public sun.jvm.hotspot.runtime.ConstructionException(java.lang.Throwable);
-  public sun.jvm.hotspot.runtime.ConstructionException(java.lang.String, java.lang.Throwable);
-}

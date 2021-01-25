@@ -1,8 +1,0 @@
-Compiled from "Accessible.java"
-public interface com.sun.jdi.Accessible {
-  public abstract int modifiers();
-  public abstract boolean isPrivate();
-  public abstract boolean isPackagePrivate();
-  public abstract boolean isProtected();
-  public abstract boolean isPublic();
-}

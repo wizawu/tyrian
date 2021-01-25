@@ -1,5 +1,0 @@
-Compiled from "ToplevelStateListener.java"
-public interface sun.awt.X11.ToplevelStateListener {
-  public abstract void stateChangedICCCM(int, int);
-  public abstract void stateChangedJava(int, int);
-}

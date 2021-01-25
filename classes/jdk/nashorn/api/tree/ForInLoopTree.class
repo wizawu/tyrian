@@ -1,7 +1,0 @@
-Compiled from "ForInLoopTree.java"
-public interface jdk.nashorn.api.tree.ForInLoopTree extends jdk.nashorn.api.tree.LoopTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getVariable();
-  public abstract jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public abstract jdk.nashorn.api.tree.StatementTree getStatement();
-  public abstract boolean isForEach();
-}

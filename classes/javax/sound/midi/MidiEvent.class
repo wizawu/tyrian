@@ -1,7 +1,0 @@
-Compiled from "MidiEvent.java"
-public class javax.sound.midi.MidiEvent {
-  public javax.sound.midi.MidiEvent(javax.sound.midi.MidiMessage, long);
-  public javax.sound.midi.MidiMessage getMessage();
-  public void setTick(long);
-  public long getTick();
-}

@@ -1,6 +1,0 @@
-Compiled from "XResources_zh_CN.java"
-public class com.sun.org.apache.xml.internal.utils.res.XResources_zh_CN extends com.sun.org.apache.xml.internal.utils.res.XResourceBundle {
-  public com.sun.org.apache.xml.internal.utils.res.XResources_zh_CN();
-  public java.lang.Object[][] getContents();
-  static {};
-}

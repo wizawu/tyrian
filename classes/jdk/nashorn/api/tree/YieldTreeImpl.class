@@ -1,8 +1,0 @@
-Compiled from "YieldTreeImpl.java"
-final class jdk.nashorn.api.tree.YieldTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.YieldTree {
-  jdk.nashorn.api.tree.YieldTreeImpl(jdk.nashorn.internal.ir.Expression, jdk.nashorn.api.tree.ExpressionTree);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public boolean isStar();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

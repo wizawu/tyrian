@@ -1,4 +1,0 @@
-Compiled from "URLJarFileCallBack.java"
-public interface sun.net.www.protocol.jar.URLJarFileCallBack {
-  public abstract java.util.jar.JarFile retrieve(java.net.URL) throws java.io.IOException;
-}

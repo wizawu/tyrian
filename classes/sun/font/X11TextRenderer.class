@@ -1,8 +1,0 @@
-Compiled from "X11TextRenderer.java"
-public class sun.font.X11TextRenderer extends sun.java2d.pipe.GlyphListPipe {
-  public sun.font.X11TextRenderer();
-  public void drawGlyphVector(sun.java2d.SunGraphics2D, java.awt.font.GlyphVector, float, float);
-  native void doDrawGlyphList(long, long, sun.java2d.pipe.Region, sun.font.GlyphList);
-  protected void drawGlyphList(sun.java2d.SunGraphics2D, sun.font.GlyphList);
-  public sun.font.X11TextRenderer traceWrap();
-}

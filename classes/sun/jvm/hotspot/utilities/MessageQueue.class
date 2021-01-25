@@ -1,6 +1,0 @@
-Compiled from "MessageQueue.java"
-public interface sun.jvm.hotspot.utilities.MessageQueue {
-  public abstract java.lang.Object readMessage();
-  public abstract java.lang.Object readMessageWithTimeout(long);
-  public abstract void writeMessage(java.lang.Object);
-}

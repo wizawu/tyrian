@@ -1,5 +1,0 @@
-Compiled from "ConstructorUtil.java"
-public final class sun.reflect.misc.ConstructorUtil {
-  public static java.lang.reflect.Constructor<?> getConstructor(java.lang.Class<?>, java.lang.Class<?>[]) throws java.lang.NoSuchMethodException;
-  public static java.lang.reflect.Constructor<?>[] getConstructors(java.lang.Class<?>);
-}

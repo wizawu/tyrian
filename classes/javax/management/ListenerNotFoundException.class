@@ -1,5 +1,0 @@
-Compiled from "ListenerNotFoundException.java"
-public class javax.management.ListenerNotFoundException extends javax.management.OperationsException {
-  public javax.management.ListenerNotFoundException();
-  public javax.management.ListenerNotFoundException(java.lang.String);
-}

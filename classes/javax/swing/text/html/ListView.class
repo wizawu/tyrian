@@ -1,8 +1,0 @@
-Compiled from "ListView.java"
-public class javax.swing.text.html.ListView extends javax.swing.text.html.BlockView {
-  public javax.swing.text.html.ListView(javax.swing.text.Element);
-  public float getAlignment(int);
-  public void paint(java.awt.Graphics, java.awt.Shape);
-  protected void paintChild(java.awt.Graphics, java.awt.Rectangle, int);
-  protected void setPropertiesFromAttributes();
-}

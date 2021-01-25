@@ -1,9 +1,0 @@
-Compiled from "PrefixResolverDefault.java"
-public class com.sun.org.apache.xml.internal.utils.PrefixResolverDefault implements com.sun.org.apache.xml.internal.utils.PrefixResolver {
-  org.w3c.dom.Node m_context;
-  public com.sun.org.apache.xml.internal.utils.PrefixResolverDefault(org.w3c.dom.Node);
-  public java.lang.String getNamespaceForPrefix(java.lang.String);
-  public java.lang.String getNamespaceForPrefix(java.lang.String, org.w3c.dom.Node);
-  public java.lang.String getBaseIdentifier();
-  public boolean handlesNullPrefixes();
-}

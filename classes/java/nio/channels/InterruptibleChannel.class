@@ -1,4 +1,0 @@
-Compiled from "InterruptibleChannel.java"
-public interface java.nio.channels.InterruptibleChannel extends java.nio.channels.Channel {
-  public abstract void close() throws java.io.IOException;
-}

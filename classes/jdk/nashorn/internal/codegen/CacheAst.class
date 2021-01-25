@@ -1,8 +1,0 @@
-Compiled from "CacheAst.java"
-class jdk.nashorn.internal.codegen.CacheAst extends jdk.nashorn.internal.ir.visitor.SimpleNodeVisitor {
-  static final boolean $assertionsDisabled;
-  jdk.nashorn.internal.codegen.CacheAst(jdk.nashorn.internal.codegen.Compiler);
-  public boolean enterFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
-  public jdk.nashorn.internal.ir.Node leaveFunctionNode(jdk.nashorn.internal.ir.FunctionNode);
-  static {};
-}

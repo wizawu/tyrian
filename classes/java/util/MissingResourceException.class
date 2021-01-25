@@ -1,7 +1,0 @@
-Compiled from "MissingResourceException.java"
-public class java.util.MissingResourceException extends java.lang.RuntimeException {
-  public java.util.MissingResourceException(java.lang.String, java.lang.String, java.lang.String);
-  java.util.MissingResourceException(java.lang.String, java.lang.String, java.lang.String, java.lang.Throwable);
-  public java.lang.String getClassName();
-  public java.lang.String getKey();
-}

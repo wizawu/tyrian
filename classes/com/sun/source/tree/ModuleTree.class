@@ -1,7 +1,0 @@
-Compiled from "ModuleTree.java"
-public interface com.sun.source.tree.ModuleTree extends com.sun.source.tree.Tree {
-  public abstract java.util.List<? extends com.sun.source.tree.AnnotationTree> getAnnotations();
-  public abstract com.sun.source.tree.ModuleTree$ModuleKind getModuleType();
-  public abstract com.sun.source.tree.ExpressionTree getName();
-  public abstract java.util.List<? extends com.sun.source.tree.DirectiveTree> getDirectives();
-}

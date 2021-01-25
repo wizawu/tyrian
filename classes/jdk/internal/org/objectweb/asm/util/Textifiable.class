@@ -1,4 +1,0 @@
-Compiled from "Textifiable.java"
-public interface jdk.internal.org.objectweb.asm.util.Textifiable {
-  public abstract void textify(java.lang.StringBuffer, java.util.Map<jdk.internal.org.objectweb.asm.Label, java.lang.String>);
-}

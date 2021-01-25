@@ -1,6 +1,0 @@
-Compiled from "TimerNotification.java"
-public class javax.management.timer.TimerNotification extends javax.management.Notification {
-  public javax.management.timer.TimerNotification(java.lang.String, java.lang.Object, long, long, java.lang.String, java.lang.Integer);
-  public java.lang.Integer getNotificationID();
-  java.lang.Object cloneTimerNotification();
-}

@@ -1,9 +1,0 @@
-Compiled from "TransitedEncoding.java"
-public class sun.security.krb5.internal.TransitedEncoding {
-  public int trType;
-  public byte[] contents;
-  public sun.security.krb5.internal.TransitedEncoding(int, byte[]);
-  public sun.security.krb5.internal.TransitedEncoding(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, java.io.IOException;
-  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
-  public static sun.security.krb5.internal.TransitedEncoding parse(sun.security.util.DerInputStream, byte, boolean) throws sun.security.krb5.Asn1Exception, java.io.IOException;
-}

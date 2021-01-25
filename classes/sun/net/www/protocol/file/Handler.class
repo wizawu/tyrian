@@ -1,9 +1,0 @@
-Compiled from "Handler.java"
-public class sun.net.www.protocol.file.Handler extends java.net.URLStreamHandler {
-  public sun.net.www.protocol.file.Handler();
-  protected void parseURL(java.net.URL, java.lang.String, int, int);
-  public synchronized java.net.URLConnection openConnection(java.net.URL) throws java.io.IOException;
-  public synchronized java.net.URLConnection openConnection(java.net.URL, java.net.Proxy) throws java.io.IOException;
-  protected java.net.URLConnection createFileURLConnection(java.net.URL, java.io.File);
-  protected boolean hostsEqual(java.net.URL, java.net.URL);
-}

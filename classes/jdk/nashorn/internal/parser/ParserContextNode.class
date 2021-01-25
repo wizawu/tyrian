@@ -1,9 +1,0 @@
-Compiled from "ParserContextNode.java"
-interface jdk.nashorn.internal.parser.ParserContextNode {
-  public abstract int getFlags();
-  public abstract int setFlag(int);
-  public abstract java.util.List<jdk.nashorn.internal.ir.Statement> getStatements();
-  public abstract void setStatements(java.util.List<jdk.nashorn.internal.ir.Statement>);
-  public abstract void appendStatement(jdk.nashorn.internal.ir.Statement);
-  public abstract void prependStatement(jdk.nashorn.internal.ir.Statement);
-}

@@ -1,4 +1,0 @@
-Compiled from "RMISecurityManager.java"
-public class java.rmi.RMISecurityManager extends java.lang.SecurityManager {
-  public java.rmi.RMISecurityManager();
-}

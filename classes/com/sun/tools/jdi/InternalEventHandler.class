@@ -1,7 +1,0 @@
-Compiled from "InternalEventHandler.java"
-public class com.sun.tools.jdi.InternalEventHandler implements java.lang.Runnable {
-  com.sun.tools.jdi.EventQueueImpl queue;
-  com.sun.tools.jdi.VirtualMachineImpl vm;
-  com.sun.tools.jdi.InternalEventHandler(com.sun.tools.jdi.VirtualMachineImpl, com.sun.tools.jdi.EventQueueImpl);
-  public void run();
-}

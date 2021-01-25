@@ -1,7 +1,0 @@
-Compiled from "ReferenceTypeSpec.java"
-interface com.sun.tools.example.debug.tty.ReferenceTypeSpec {
-  public abstract boolean matches(com.sun.jdi.ReferenceType);
-  public abstract com.sun.jdi.request.ClassPrepareRequest createPrepareRequest();
-  public abstract int hashCode();
-  public abstract boolean equals(java.lang.Object);
-}

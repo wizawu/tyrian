@@ -1,4 +1,0 @@
-Compiled from "PlainTextInputStream.java"
-public class sun.net.www.content.text.PlainTextInputStream extends java.io.FilterInputStream {
-  sun.net.www.content.text.PlainTextInputStream(java.io.InputStream);
-}

@@ -1,4 +1,0 @@
-Compiled from "SupportedAnnotationTypes.java"
-public interface javax.annotation.processing.SupportedAnnotationTypes extends java.lang.annotation.Annotation {
-  public abstract java.lang.String[] value();
-}

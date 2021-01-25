@@ -1,8 +1,0 @@
-Compiled from "CookieHandler.java"
-public abstract class java.net.CookieHandler {
-  public java.net.CookieHandler();
-  public static synchronized java.net.CookieHandler getDefault();
-  public static synchronized void setDefault(java.net.CookieHandler);
-  public abstract java.util.Map<java.lang.String, java.util.List<java.lang.String>> get(java.net.URI, java.util.Map<java.lang.String, java.util.List<java.lang.String>>) throws java.io.IOException;
-  public abstract void put(java.net.URI, java.util.Map<java.lang.String, java.util.List<java.lang.String>>) throws java.io.IOException;
-}

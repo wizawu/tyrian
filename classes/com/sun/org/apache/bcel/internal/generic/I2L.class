@@ -1,5 +1,0 @@
-Compiled from "I2L.java"
-public class com.sun.org.apache.bcel.internal.generic.I2L extends com.sun.org.apache.bcel.internal.generic.ConversionInstruction {
-  public com.sun.org.apache.bcel.internal.generic.I2L();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

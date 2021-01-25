@@ -1,9 +1,0 @@
-Compiled from "EventHandlerCreator.java"
-final class jdk.jfr.internal.EventHandlerCreator {
-  public jdk.jfr.internal.EventHandlerCreator(long, java.util.List<jdk.jfr.internal.EventInstrumentation$SettingInfo>, java.util.List<jdk.jfr.internal.EventInstrumentation$FieldInfo>);
-  public static java.lang.String makeEventHandlerName(long);
-  public jdk.jfr.internal.EventHandlerCreator(long, java.util.List<jdk.jfr.internal.EventInstrumentation$SettingInfo>, jdk.jfr.EventType, java.lang.Class<? extends jdk.internal.event.Event>);
-  public java.lang.Class<? extends jdk.jfr.internal.handlers.EventHandler> makeEventHandlerClass();
-  public static jdk.jfr.internal.handlers.EventHandler instantiateEventHandler(java.lang.Class<? extends jdk.jfr.internal.handlers.EventHandler>, boolean, jdk.jfr.EventType, jdk.jfr.internal.EventControl) throws java.lang.Error;
-  static {};
-}

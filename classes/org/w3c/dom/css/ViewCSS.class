@@ -1,4 +1,0 @@
-Compiled from "ViewCSS.java"
-public interface org.w3c.dom.css.ViewCSS extends org.w3c.dom.views.AbstractView {
-  public abstract org.w3c.dom.css.CSSStyleDeclaration getComputedStyle(org.w3c.dom.Element, java.lang.String);
-}

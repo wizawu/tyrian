@@ -1,5 +1,0 @@
-Compiled from "VtblAccess.java"
-public interface sun.jvm.hotspot.types.basic.VtblAccess {
-  public abstract sun.jvm.hotspot.debugger.Address getVtblForType(sun.jvm.hotspot.types.Type);
-  public abstract void clearCaches();
-}

@@ -1,8 +1,0 @@
-Compiled from "HotspotThread.java"
-class sun.management.HotspotThread implements sun.management.HotspotThreadMBean {
-  sun.management.HotspotThread(sun.management.VMManagement);
-  public native int getInternalThreadCount();
-  public java.util.Map<java.lang.String, java.lang.Long> getInternalThreadCpuTimes();
-  public native int getInternalThreadTimes0(java.lang.String[], long[]);
-  public java.util.List<sun.management.counter.Counter> getInternalThreadingCounters();
-}

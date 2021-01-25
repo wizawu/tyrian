@@ -1,6 +1,0 @@
-Compiled from "DebuggerTreeImpl.java"
-final class jdk.nashorn.api.tree.DebuggerTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.DebuggerTree {
-  jdk.nashorn.api.tree.DebuggerTreeImpl(jdk.nashorn.internal.ir.DebuggerNode);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

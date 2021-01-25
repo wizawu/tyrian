@@ -1,9 +1,0 @@
-Compiled from "WaveFloatFileWriter.java"
-public final class com.sun.media.sound.WaveFloatFileWriter extends javax.sound.sampled.spi.AudioFileWriter {
-  public com.sun.media.sound.WaveFloatFileWriter();
-  public javax.sound.sampled.AudioFileFormat$Type[] getAudioFileTypes();
-  public javax.sound.sampled.AudioFileFormat$Type[] getAudioFileTypes(javax.sound.sampled.AudioInputStream);
-  public void write(javax.sound.sampled.AudioInputStream, com.sun.media.sound.RIFFWriter) throws java.io.IOException;
-  public int write(javax.sound.sampled.AudioInputStream, javax.sound.sampled.AudioFileFormat$Type, java.io.OutputStream) throws java.io.IOException;
-  public int write(javax.sound.sampled.AudioInputStream, javax.sound.sampled.AudioFileFormat$Type, java.io.File) throws java.io.IOException;
-}

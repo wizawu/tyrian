@@ -1,7 +1,0 @@
-Compiled from "MotifPopupMenuSeparatorUI.java"
-public class com.sun.java.swing.plaf.motif.MotifPopupMenuSeparatorUI extends com.sun.java.swing.plaf.motif.MotifSeparatorUI {
-  public com.sun.java.swing.plaf.motif.MotifPopupMenuSeparatorUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  public void paint(java.awt.Graphics, javax.swing.JComponent);
-  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
-}

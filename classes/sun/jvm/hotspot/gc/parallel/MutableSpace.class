@@ -1,9 +1,0 @@
-Compiled from "MutableSpace.java"
-public class sun.jvm.hotspot.gc.parallel.MutableSpace extends sun.jvm.hotspot.gc.parallel.ImmutableSpace {
-  public sun.jvm.hotspot.gc.parallel.MutableSpace(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.Address top();
-  public long used();
-  public java.util.List getLiveRegions();
-  public void printOn(java.io.PrintStream);
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "PropertyResourceBundleCharset.java"
-public class sun.util.PropertyResourceBundleCharset extends java.nio.charset.Charset {
-  public sun.util.PropertyResourceBundleCharset(boolean);
-  public sun.util.PropertyResourceBundleCharset(java.lang.String, java.lang.String[]);
-  public boolean contains(java.nio.charset.Charset);
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public java.nio.charset.CharsetEncoder newEncoder();
-}

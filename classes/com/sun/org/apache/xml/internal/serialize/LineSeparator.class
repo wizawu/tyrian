@@ -1,8 +1,0 @@
-Compiled from "LineSeparator.java"
-public final class com.sun.org.apache.xml.internal.serialize.LineSeparator {
-  public static final java.lang.String Unix;
-  public static final java.lang.String Windows;
-  public static final java.lang.String Macintosh;
-  public static final java.lang.String Web;
-  public com.sun.org.apache.xml.internal.serialize.LineSeparator();
-}

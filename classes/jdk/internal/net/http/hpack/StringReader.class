@@ -1,7 +1,0 @@
-Compiled from "StringReader.java"
-final class jdk.internal.net.http.hpack.StringReader {
-  jdk.internal.net.http.hpack.StringReader();
-  boolean read(java.nio.ByteBuffer, java.lang.Appendable) throws java.io.IOException;
-  boolean isHuffmanEncoded();
-  void reset();
-}

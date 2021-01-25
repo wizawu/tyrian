@@ -1,3 +1,0 @@
-Compiled from "FieldTypeSignature.java"
-public interface sun.reflect.generics.tree.FieldTypeSignature extends sun.reflect.generics.tree.BaseType,sun.reflect.generics.tree.TypeSignature,sun.reflect.generics.tree.TypeArgument {
-}

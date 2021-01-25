@@ -1,9 +1,0 @@
-Compiled from "BooleanControl.java"
-public abstract class javax.sound.sampled.BooleanControl extends javax.sound.sampled.Control {
-  protected javax.sound.sampled.BooleanControl(javax.sound.sampled.BooleanControl$Type, boolean, java.lang.String, java.lang.String);
-  protected javax.sound.sampled.BooleanControl(javax.sound.sampled.BooleanControl$Type, boolean);
-  public void setValue(boolean);
-  public boolean getValue();
-  public java.lang.String getStateLabel(boolean);
-  public java.lang.String toString();
-}

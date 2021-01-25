@@ -1,7 +1,0 @@
-Compiled from "SAGetopt.java"
-public class sun.jvm.hotspot.SAGetopt {
-  public sun.jvm.hotspot.SAGetopt(java.lang.String[]);
-  public java.lang.String getOptarg();
-  public int getOptind();
-  public java.lang.String next(java.lang.String, java.lang.String[]);
-}

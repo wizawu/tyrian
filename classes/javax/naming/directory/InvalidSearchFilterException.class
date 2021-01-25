@@ -1,5 +1,0 @@
-Compiled from "InvalidSearchFilterException.java"
-public class javax.naming.directory.InvalidSearchFilterException extends javax.naming.NamingException {
-  public javax.naming.directory.InvalidSearchFilterException();
-  public javax.naming.directory.InvalidSearchFilterException(java.lang.String);
-}

@@ -1,4 +1,0 @@
-Compiled from "PathMatcher.java"
-public interface java.nio.file.PathMatcher {
-  public abstract boolean matches(java.nio.file.Path);
-}

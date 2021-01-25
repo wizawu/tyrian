@@ -1,5 +1,0 @@
-Compiled from "JavaSuperAdapter.java"
-class jdk.nashorn.internal.runtime.linker.JavaSuperAdapter {
-  jdk.nashorn.internal.runtime.linker.JavaSuperAdapter(java.lang.Object);
-  public java.lang.Object getAdapter();
-}

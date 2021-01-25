@@ -1,8 +1,0 @@
-Compiled from "JSRInlinerAdapter.java"
-public class jdk.internal.org.objectweb.asm.commons.JSRInlinerAdapter extends jdk.internal.org.objectweb.asm.tree.MethodNode implements jdk.internal.org.objectweb.asm.Opcodes {
-  final java.util.BitSet dualCitizens;
-  public jdk.internal.org.objectweb.asm.commons.JSRInlinerAdapter(jdk.internal.org.objectweb.asm.MethodVisitor, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
-  protected jdk.internal.org.objectweb.asm.commons.JSRInlinerAdapter(int, jdk.internal.org.objectweb.asm.MethodVisitor, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
-  public void visitJumpInsn(int, jdk.internal.org.objectweb.asm.Label);
-  public void visitEnd();
-}

@@ -1,4 +1,0 @@
-Compiled from "URLStreamHandlerFactory.java"
-public interface java.net.URLStreamHandlerFactory {
-  public abstract java.net.URLStreamHandler createURLStreamHandler(java.lang.String);
-}

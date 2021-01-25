@@ -1,5 +1,0 @@
-Compiled from "XErrorHandler.java"
-public abstract class sun.awt.X11.XErrorHandler {
-  public sun.awt.X11.XErrorHandler();
-  public abstract int handleError(long, sun.awt.X11.XErrorEvent);
-}

@@ -1,6 +1,0 @@
-Compiled from "CSSParser.java"
-class javax.swing.text.html.CSSParser {
-  javax.swing.text.html.CSSParser();
-  void parse(java.io.Reader, javax.swing.text.html.CSSParser$CSSParserCallback, boolean) throws java.io.IOException;
-  static {};
-}

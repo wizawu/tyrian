@@ -1,7 +1,0 @@
-Compiled from "BytecodeDisassembler.java"
-public class sun.jvm.hotspot.interpreter.BytecodeDisassembler {
-  public sun.jvm.hotspot.interpreter.BytecodeDisassembler(sun.jvm.hotspot.oops.Method);
-  public sun.jvm.hotspot.oops.Method getMethod();
-  public void decode(sun.jvm.hotspot.interpreter.BytecodeVisitor);
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "EnumControl.java"
-public abstract class javax.sound.sampled.EnumControl extends javax.sound.sampled.Control {
-  protected javax.sound.sampled.EnumControl(javax.sound.sampled.EnumControl$Type, java.lang.Object[], java.lang.Object);
-  public void setValue(java.lang.Object);
-  public java.lang.Object getValue();
-  public java.lang.Object[] getValues();
-  public java.lang.String toString();
-}

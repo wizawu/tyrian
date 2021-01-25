@@ -1,5 +1,0 @@
-Compiled from "XSQName.java"
-public interface com.sun.org.apache.xerces.internal.xs.datatypes.XSQName {
-  public abstract com.sun.org.apache.xerces.internal.xni.QName getXNIQName();
-  public abstract javax.xml.namespace.QName getJAXPQName();
-}

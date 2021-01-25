@@ -1,7 +1,0 @@
-Compiled from "XPATHMessages.java"
-public class com.sun.org.apache.xpath.internal.res.XPATHMessages extends com.sun.org.apache.xml.internal.res.XMLMessages {
-  public com.sun.org.apache.xpath.internal.res.XPATHMessages();
-  public static final java.lang.String createXPATHMessage(java.lang.String, java.lang.Object[]);
-  public static final java.lang.String createXPATHWarning(java.lang.String, java.lang.Object[]);
-  static {};
-}

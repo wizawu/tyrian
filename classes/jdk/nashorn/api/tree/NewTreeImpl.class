@@ -1,9 +1,0 @@
-Compiled from "NewTreeImpl.java"
-final class jdk.nashorn.api.tree.NewTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.NewTree {
-  static final boolean $assertionsDisabled;
-  jdk.nashorn.api.tree.NewTreeImpl(jdk.nashorn.internal.ir.UnaryNode, jdk.nashorn.api.tree.ExpressionTree);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.ExpressionTree getConstructorExpression();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-  static {};
-}

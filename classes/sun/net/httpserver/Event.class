@@ -1,5 +1,0 @@
-Compiled from "Event.java"
-class sun.net.httpserver.Event {
-  sun.net.httpserver.ExchangeImpl exchange;
-  protected sun.net.httpserver.Event(sun.net.httpserver.ExchangeImpl);
-}

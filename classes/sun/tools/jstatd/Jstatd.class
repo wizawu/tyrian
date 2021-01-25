@@ -1,7 +1,0 @@
-Compiled from "Jstatd.java"
-public class sun.tools.jstatd.Jstatd {
-  public sun.tools.jstatd.Jstatd();
-  static void bind(java.lang.String, sun.jvmstat.monitor.remote.RemoteHost) throws java.rmi.RemoteException, java.net.MalformedURLException, java.lang.Exception;
-  public static void main(java.lang.String[]);
-  static {};
-}

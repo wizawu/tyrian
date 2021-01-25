@@ -1,8 +1,0 @@
-Compiled from "ResourcePoolEntryFactory.java"
-public final class jdk.tools.jlink.internal.ResourcePoolEntryFactory {
-  public static jdk.tools.jlink.plugin.ResourcePoolEntry create(java.lang.String, jdk.tools.jlink.plugin.ResourcePoolEntry$Type, byte[]);
-  public static jdk.tools.jlink.plugin.ResourcePoolEntry create(java.lang.String, jdk.tools.jlink.plugin.ResourcePoolEntry$Type, java.nio.file.Path);
-  public static jdk.tools.jlink.plugin.ResourcePoolEntry create(jdk.tools.jlink.plugin.ResourcePoolEntry, byte[]);
-  public static jdk.tools.jlink.plugin.ResourcePoolEntry create(jdk.tools.jlink.plugin.ResourcePoolEntry, java.nio.file.Path);
-  public static jdk.tools.jlink.plugin.ResourcePoolEntry createSymbolicLink(java.lang.String, jdk.tools.jlink.plugin.ResourcePoolEntry$Type, jdk.tools.jlink.plugin.ResourcePoolEntry);
-}

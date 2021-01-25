@@ -1,8 +1,0 @@
-Compiled from "AuxWeakExternalRecord.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.AuxWeakExternalRecord extends sun.jvm.hotspot.debugger.win32.coff.AuxSymbolRecord {
-  public static final int IMAGE_WEAK_EXTERN_SEARCH_NOLIBRARY;
-  public static final int IMAGE_WEAK_EXTERN_SEARCH_LIBRARY;
-  public static final int IMAGE_WEAK_EXTERN_SEARCH_ALIAS;
-  public abstract int getTagIndex();
-  public abstract int getCharacteristics();
-}

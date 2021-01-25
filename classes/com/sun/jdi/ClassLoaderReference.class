@@ -1,5 +1,0 @@
-Compiled from "ClassLoaderReference.java"
-public interface com.sun.jdi.ClassLoaderReference extends com.sun.jdi.ObjectReference {
-  public abstract java.util.List<com.sun.jdi.ReferenceType> definedClasses();
-  public abstract java.util.List<com.sun.jdi.ReferenceType> visibleClasses();
-}

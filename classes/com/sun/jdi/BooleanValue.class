@@ -1,6 +1,0 @@
-Compiled from "BooleanValue.java"
-public interface com.sun.jdi.BooleanValue extends com.sun.jdi.PrimitiveValue {
-  public abstract boolean value();
-  public abstract boolean equals(java.lang.Object);
-  public abstract int hashCode();
-}

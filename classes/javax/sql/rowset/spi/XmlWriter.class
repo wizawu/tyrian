@@ -1,4 +1,0 @@
-Compiled from "XmlWriter.java"
-public interface javax.sql.rowset.spi.XmlWriter extends javax.sql.RowSetWriter {
-  public abstract void writeXML(javax.sql.rowset.WebRowSet, java.io.Writer) throws java.sql.SQLException;
-}

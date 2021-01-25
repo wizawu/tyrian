@@ -1,7 +1,0 @@
-Compiled from "Endpoint.java"
-public interface sun.rmi.transport.Endpoint {
-  public abstract sun.rmi.transport.Channel getChannel();
-  public abstract void exportObject(sun.rmi.transport.Target) throws java.rmi.RemoteException;
-  public abstract sun.rmi.transport.Transport getInboundTransport();
-  public abstract sun.rmi.transport.Transport getOutboundTransport();
-}

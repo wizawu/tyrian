@@ -1,9 +1,0 @@
-Compiled from "ArrayQueue.java"
-public class com.sun.jmx.remote.internal.ArrayQueue<T> extends java.util.AbstractList<T> {
-  public com.sun.jmx.remote.internal.ArrayQueue(int);
-  public void resize(int);
-  public boolean add(T);
-  public T remove(int);
-  public T get(int);
-  public int size();
-}

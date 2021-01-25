@@ -1,4 +1,0 @@
-Compiled from "DefaultAsynchronousChannelProvider.java"
-public class sun.nio.ch.DefaultAsynchronousChannelProvider {
-  public static java.nio.channels.spi.AsynchronousChannelProvider create();
-}

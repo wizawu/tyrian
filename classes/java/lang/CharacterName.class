@@ -1,6 +1,0 @@
-Compiled from "CharacterName.java"
-class java.lang.CharacterName {
-  public static java.lang.CharacterName getInstance();
-  public java.lang.String getName(int);
-  public int getCodePoint(java.lang.String);
-}

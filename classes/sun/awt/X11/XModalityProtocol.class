@@ -1,5 +1,0 @@
-Compiled from "XModalityProtocol.java"
-public interface sun.awt.X11.XModalityProtocol {
-  public abstract boolean setModal(sun.awt.X11.XDialogPeer, boolean);
-  public abstract boolean isBlocked(sun.awt.X11.XDialogPeer, sun.awt.X11.XWindowPeer);
-}

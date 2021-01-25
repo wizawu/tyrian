@@ -1,8 +1,0 @@
-Compiled from "LivenessPathElement.java"
-public class sun.jvm.hotspot.utilities.LivenessPathElement {
-  sun.jvm.hotspot.utilities.LivenessPathElement(sun.jvm.hotspot.oops.Oop, sun.jvm.hotspot.oops.FieldIdentifier);
-  public boolean isRoot();
-  public boolean isTerminal();
-  public sun.jvm.hotspot.oops.Oop getObj();
-  public sun.jvm.hotspot.oops.FieldIdentifier getField();
-}

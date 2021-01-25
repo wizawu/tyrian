@@ -1,5 +1,0 @@
-Compiled from "AlternativeLongOptionSpec.java"
-class jdk.internal.joptsimple.AlternativeLongOptionSpec extends jdk.internal.joptsimple.ArgumentAcceptingOptionSpec<java.lang.String> {
-  jdk.internal.joptsimple.AlternativeLongOptionSpec();
-  protected void detectOptionArgument(jdk.internal.joptsimple.OptionParser, jdk.internal.joptsimple.ArgumentList, jdk.internal.joptsimple.OptionSet);
-}

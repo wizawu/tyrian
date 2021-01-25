@@ -1,3 +1,0 @@
-Compiled from "ReturnType.java"
-public interface sun.reflect.generics.tree.ReturnType extends sun.reflect.generics.tree.TypeTree {
-}

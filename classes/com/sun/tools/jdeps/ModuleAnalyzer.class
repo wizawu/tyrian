@@ -1,7 +1,0 @@
-Compiled from "ModuleAnalyzer.java"
-public class com.sun.tools.jdeps.ModuleAnalyzer {
-  public com.sun.tools.jdeps.ModuleAnalyzer(com.sun.tools.jdeps.JdepsConfiguration, java.io.PrintWriter, java.util.Set<java.lang.String>);
-  public boolean run() throws java.io.IOException;
-  public java.lang.module.ModuleDescriptor[] descriptors(java.lang.String);
-  public java.util.Map<java.lang.String, java.util.Set<java.lang.String>> unusedQualifiedExports(java.lang.String);
-}

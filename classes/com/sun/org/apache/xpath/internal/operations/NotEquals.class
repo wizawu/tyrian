@@ -1,6 +1,0 @@
-Compiled from "NotEquals.java"
-public class com.sun.org.apache.xpath.internal.operations.NotEquals extends com.sun.org.apache.xpath.internal.operations.Operation {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.operations.NotEquals();
-  public com.sun.org.apache.xpath.internal.objects.XObject operate(com.sun.org.apache.xpath.internal.objects.XObject, com.sun.org.apache.xpath.internal.objects.XObject) throws javax.xml.transform.TransformerException;
-}

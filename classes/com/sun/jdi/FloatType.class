@@ -1,3 +1,0 @@
-Compiled from "FloatType.java"
-public interface com.sun.jdi.FloatType extends com.sun.jdi.PrimitiveType {
-}

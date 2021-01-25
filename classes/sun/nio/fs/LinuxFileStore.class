@@ -1,8 +1,0 @@
-Compiled from "LinuxFileStore.java"
-class sun.nio.fs.LinuxFileStore extends sun.nio.fs.UnixFileStore {
-  sun.nio.fs.LinuxFileStore(sun.nio.fs.UnixPath) throws java.io.IOException;
-  sun.nio.fs.LinuxFileStore(sun.nio.fs.UnixFileSystem, sun.nio.fs.UnixMountEntry) throws java.io.IOException;
-  sun.nio.fs.UnixMountEntry findMountEntry() throws java.io.IOException;
-  public boolean supportsFileAttributeView(java.lang.Class<? extends java.nio.file.attribute.FileAttributeView>);
-  public boolean supportsFileAttributeView(java.lang.String);
-}

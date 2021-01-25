@@ -1,8 +1,0 @@
-Compiled from "UnixFileModeAttribute.java"
-class sun.nio.fs.UnixFileModeAttribute {
-  static final int ALL_PERMISSIONS;
-  static final int ALL_READWRITE;
-  static final int TEMPFILE_PERMISSIONS;
-  static int toUnixMode(java.util.Set<java.nio.file.attribute.PosixFilePermission>);
-  static int toUnixMode(int, java.nio.file.attribute.FileAttribute<?>...);
-}

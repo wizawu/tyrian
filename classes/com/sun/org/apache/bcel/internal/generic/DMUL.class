@@ -1,5 +1,0 @@
-Compiled from "DMUL.java"
-public class com.sun.org.apache.bcel.internal.generic.DMUL extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
-  public com.sun.org.apache.bcel.internal.generic.DMUL();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

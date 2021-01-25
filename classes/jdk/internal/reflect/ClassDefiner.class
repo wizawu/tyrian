@@ -1,7 +1,0 @@
-Compiled from "ClassDefiner.java"
-class jdk.internal.reflect.ClassDefiner {
-  static final jdk.internal.misc.Unsafe unsafe;
-  jdk.internal.reflect.ClassDefiner();
-  static java.lang.Class<?> defineClass(java.lang.String, byte[], int, int, java.lang.ClassLoader);
-  static {};
-}

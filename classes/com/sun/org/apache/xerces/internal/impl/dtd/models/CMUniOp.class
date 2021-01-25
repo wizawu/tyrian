@@ -1,8 +1,0 @@
-Compiled from "CMUniOp.java"
-public class com.sun.org.apache.xerces.internal.impl.dtd.models.CMUniOp extends com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode {
-  public com.sun.org.apache.xerces.internal.impl.dtd.models.CMUniOp(int, com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode);
-  final com.sun.org.apache.xerces.internal.impl.dtd.models.CMNode getChild();
-  public boolean isNullable();
-  protected void calcFirstPos(com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet);
-  protected void calcLastPos(com.sun.org.apache.xerces.internal.impl.dtd.models.CMStateSet);
-}

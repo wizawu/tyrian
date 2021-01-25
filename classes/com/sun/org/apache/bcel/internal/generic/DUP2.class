@@ -1,5 +1,0 @@
-Compiled from "DUP2.java"
-public class com.sun.org.apache.bcel.internal.generic.DUP2 extends com.sun.org.apache.bcel.internal.generic.StackInstruction implements com.sun.org.apache.bcel.internal.generic.PushInstruction {
-  public com.sun.org.apache.bcel.internal.generic.DUP2();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

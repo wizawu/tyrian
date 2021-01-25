@@ -1,7 +1,0 @@
-Compiled from "UTF8AccumulatingDecoder.java"
-final class jdk.internal.net.http.websocket.UTF8AccumulatingDecoder {
-  static final boolean $assertionsDisabled;
-  jdk.internal.net.http.websocket.UTF8AccumulatingDecoder();
-  java.nio.CharBuffer decode(java.nio.ByteBuffer, boolean) throws java.nio.charset.CharacterCodingException;
-  static {};
-}

@@ -1,9 +1,0 @@
-Compiled from "TransformSpi.java"
-public abstract class com.sun.org.apache.xml.internal.security.transforms.TransformSpi {
-  protected boolean secureValidation;
-  public com.sun.org.apache.xml.internal.security.transforms.TransformSpi();
-  protected com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput enginePerformTransform(com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, java.io.OutputStream, com.sun.org.apache.xml.internal.security.transforms.Transform) throws java.io.IOException, com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException, com.sun.org.apache.xml.internal.security.transforms.TransformationException, javax.xml.parsers.ParserConfigurationException, org.xml.sax.SAXException;
-  protected com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput enginePerformTransform(com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput, com.sun.org.apache.xml.internal.security.transforms.Transform) throws java.io.IOException, com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException, com.sun.org.apache.xml.internal.security.transforms.TransformationException, javax.xml.parsers.ParserConfigurationException, org.xml.sax.SAXException;
-  protected com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput enginePerformTransform(com.sun.org.apache.xml.internal.security.signature.XMLSignatureInput) throws java.io.IOException, com.sun.org.apache.xml.internal.security.c14n.CanonicalizationException, com.sun.org.apache.xml.internal.security.c14n.InvalidCanonicalizerException, com.sun.org.apache.xml.internal.security.transforms.TransformationException, javax.xml.parsers.ParserConfigurationException, org.xml.sax.SAXException;
-  protected abstract java.lang.String engineGetURI();
-}

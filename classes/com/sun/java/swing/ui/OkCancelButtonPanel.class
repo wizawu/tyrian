@@ -1,6 +1,0 @@
-Compiled from "OkCancelButtonPanel.java"
-public class com.sun.java.swing.ui.OkCancelButtonPanel extends javax.swing.JPanel {
-  public static final java.lang.String OK_COMMAND;
-  public static final java.lang.String CANCEL_COMMAND;
-  public com.sun.java.swing.ui.OkCancelButtonPanel(java.awt.event.ActionListener);
-}

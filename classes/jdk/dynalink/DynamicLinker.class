@@ -1,8 +1,0 @@
-Compiled from "DynamicLinker.java"
-public final class jdk.dynalink.DynamicLinker {
-  jdk.dynalink.DynamicLinker(jdk.dynalink.linker.LinkerServices, jdk.dynalink.linker.GuardedInvocationTransformer, boolean, int);
-  public <T extends jdk.dynalink.RelinkableCallSite> T link(T);
-  public jdk.dynalink.linker.LinkerServices getLinkerServices();
-  public static java.lang.StackTraceElement getLinkedCallSiteLocation();
-  static {};
-}

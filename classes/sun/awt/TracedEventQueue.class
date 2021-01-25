@@ -1,8 +1,0 @@
-Compiled from "TracedEventQueue.java"
-public class sun.awt.TracedEventQueue extends java.awt.EventQueue {
-  static boolean trace;
-  static int[] suppressedIDs;
-  public sun.awt.TracedEventQueue();
-  public void postEvent(java.awt.AWTEvent);
-  static {};
-}

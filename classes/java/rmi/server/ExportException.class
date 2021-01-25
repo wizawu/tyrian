@@ -1,5 +1,0 @@
-Compiled from "ExportException.java"
-public class java.rmi.server.ExportException extends java.rmi.RemoteException {
-  public java.rmi.server.ExportException(java.lang.String);
-  public java.rmi.server.ExportException(java.lang.String, java.lang.Exception);
-}

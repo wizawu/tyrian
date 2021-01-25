@@ -1,6 +1,0 @@
-Compiled from "TIFFColorConverter.java"
-public abstract class com.sun.imageio.plugins.tiff.TIFFColorConverter {
-  public com.sun.imageio.plugins.tiff.TIFFColorConverter();
-  public abstract void fromRGB(float, float, float, float[]);
-  public abstract void toRGB(float, float, float, float[]);
-}

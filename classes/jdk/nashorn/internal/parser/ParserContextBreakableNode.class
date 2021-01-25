@@ -1,4 +1,0 @@
-Compiled from "ParserContextBreakableNode.java"
-interface jdk.nashorn.internal.parser.ParserContextBreakableNode extends jdk.nashorn.internal.parser.ParserContextNode {
-  public abstract boolean isBreakableWithoutLabel();
-}

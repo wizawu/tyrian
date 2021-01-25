@@ -1,6 +1,0 @@
-Compiled from "Resources_ja.java"
-public class sun.security.util.Resources_ja extends java.util.ListResourceBundle {
-  public sun.security.util.Resources_ja();
-  public java.lang.Object[][] getContents();
-  static {};
-}

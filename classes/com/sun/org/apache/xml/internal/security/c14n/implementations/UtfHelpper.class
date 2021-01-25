@@ -1,9 +1,0 @@
-Compiled from "UtfHelpper.java"
-public final class com.sun.org.apache.xml.internal.security.c14n.implementations.UtfHelpper {
-  public static void writeByte(java.lang.String, java.io.OutputStream, java.util.Map<java.lang.String, byte[]>) throws java.io.IOException;
-  public static void writeCodePointToUtf8(int, java.io.OutputStream) throws java.io.IOException;
-  public static void writeCharToUtf8(char, java.io.OutputStream) throws java.io.IOException;
-  public static void writeStringToUtf8(java.lang.String, java.io.OutputStream) throws java.io.IOException;
-  public static byte[] getStringInUtf8(java.lang.String);
-  static {};
-}

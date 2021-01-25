@@ -1,6 +1,0 @@
-Compiled from "ManageReferralControl.java"
-public final class javax.naming.ldap.ManageReferralControl extends javax.naming.ldap.BasicControl {
-  public static final java.lang.String OID;
-  public javax.naming.ldap.ManageReferralControl();
-  public javax.naming.ldap.ManageReferralControl(boolean);
-}

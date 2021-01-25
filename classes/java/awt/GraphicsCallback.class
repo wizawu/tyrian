@@ -1,4 +1,0 @@
-Compiled from "GraphicsCallback.java"
-abstract class java.awt.GraphicsCallback extends sun.awt.SunGraphicsCallback {
-  java.awt.GraphicsCallback();
-}

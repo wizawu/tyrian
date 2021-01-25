@@ -1,8 +1,0 @@
-Compiled from "JImageTask.java"
-class jdk.tools.jimage.JImageTask {
-  jdk.tools.jimage.JImageTask();
-  void setLog(java.io.PrintWriter);
-  int run(java.lang.String[]);
-  void verify(jdk.internal.jimage.BasicImageReader, java.lang.String, jdk.internal.jimage.ImageLocation);
-  static {};
-}

@@ -1,6 +1,0 @@
-Compiled from "ShortValue.java"
-public interface com.sun.jdi.ShortValue extends com.sun.jdi.PrimitiveValue, java.lang.Comparable<com.sun.jdi.ShortValue> {
-  public abstract short value();
-  public abstract boolean equals(java.lang.Object);
-  public abstract int hashCode();
-}

@@ -1,9 +1,0 @@
-Compiled from "TemplateManager.java"
-final class sun.security.pkcs11.TemplateManager {
-  static final java.lang.String O_ANY;
-  static final java.lang.String O_IMPORT;
-  static final java.lang.String O_GENERATE;
-  sun.security.pkcs11.TemplateManager();
-  void addTemplate(java.lang.String, long, long, sun.security.pkcs11.wrapper.CK_ATTRIBUTE[]);
-  sun.security.pkcs11.wrapper.CK_ATTRIBUTE[] getAttributes(java.lang.String, long, long, sun.security.pkcs11.wrapper.CK_ATTRIBUTE[]);
-}

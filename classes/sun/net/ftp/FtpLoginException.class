@@ -1,4 +1,0 @@
-Compiled from "FtpLoginException.java"
-public class sun.net.ftp.FtpLoginException extends java.io.IOException {
-  public sun.net.ftp.FtpLoginException(java.lang.String);
-}

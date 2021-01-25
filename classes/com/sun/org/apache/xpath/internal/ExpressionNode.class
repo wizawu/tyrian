@@ -1,8 +1,0 @@
-Compiled from "ExpressionNode.java"
-public interface com.sun.org.apache.xpath.internal.ExpressionNode extends javax.xml.transform.SourceLocator {
-  public abstract void exprSetParent(com.sun.org.apache.xpath.internal.ExpressionNode);
-  public abstract com.sun.org.apache.xpath.internal.ExpressionNode exprGetParent();
-  public abstract void exprAddChild(com.sun.org.apache.xpath.internal.ExpressionNode, int);
-  public abstract com.sun.org.apache.xpath.internal.ExpressionNode exprGetChild(int);
-  public abstract int exprGetNumChildren();
-}

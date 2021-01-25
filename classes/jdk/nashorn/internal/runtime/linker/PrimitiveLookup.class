@@ -1,7 +1,0 @@
-Compiled from "PrimitiveLookup.java"
-public final class jdk.nashorn.internal.runtime.linker.PrimitiveLookup {
-  static final boolean $assertionsDisabled;
-  public static jdk.dynalink.linker.GuardedInvocation lookupPrimitive(jdk.dynalink.linker.LinkRequest, java.lang.Class<?>, jdk.nashorn.internal.runtime.ScriptObject, java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
-  public static jdk.dynalink.linker.GuardedInvocation lookupPrimitive(jdk.dynalink.linker.LinkRequest, java.lang.invoke.MethodHandle, jdk.nashorn.internal.runtime.ScriptObject, java.lang.invoke.MethodHandle, java.lang.invoke.MethodHandle);
-  static {};
-}

@@ -1,3 +1,0 @@
-Compiled from "FileStoreAttributeView.java"
-public interface java.nio.file.attribute.FileStoreAttributeView extends java.nio.file.attribute.AttributeView {
-}

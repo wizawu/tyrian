@@ -1,5 +1,0 @@
-Compiled from "CurrencyNames_zh_SG.java"
-public final class sun.util.resources.ext.CurrencyNames_zh_SG extends sun.util.resources.OpenListResourceBundle {
-  public sun.util.resources.ext.CurrencyNames_zh_SG();
-  protected java.lang.Object[][] getContents();
-}

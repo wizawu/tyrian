@@ -1,7 +1,0 @@
-Compiled from "XCheckboxMenuItemPeer.java"
-final class sun.awt.X11.XCheckboxMenuItemPeer extends sun.awt.X11.XMenuItemPeer implements java.awt.peer.CheckboxMenuItemPeer {
-  sun.awt.X11.XCheckboxMenuItemPeer(java.awt.CheckboxMenuItem);
-  public void setState(boolean);
-  boolean getTargetState();
-  void action(long, int);
-}

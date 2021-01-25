@@ -1,9 +1,0 @@
-Compiled from "StartElement.java"
-public interface javax.xml.stream.events.StartElement extends javax.xml.stream.events.XMLEvent {
-  public abstract javax.xml.namespace.QName getName();
-  public abstract java.util.Iterator<javax.xml.stream.events.Attribute> getAttributes();
-  public abstract java.util.Iterator<javax.xml.stream.events.Namespace> getNamespaces();
-  public abstract javax.xml.stream.events.Attribute getAttributeByName(javax.xml.namespace.QName);
-  public abstract javax.xml.namespace.NamespaceContext getNamespaceContext();
-  public abstract java.lang.String getNamespaceURI(java.lang.String);
-}

@@ -1,8 +1,0 @@
-Compiled from "ScrollPaneWheelScroller.java"
-public abstract class sun.awt.ScrollPaneWheelScroller {
-  public static void handleWheelScrolling(java.awt.ScrollPane, java.awt.event.MouseWheelEvent);
-  public static java.awt.Adjustable getAdjustableToScroll(java.awt.ScrollPane);
-  public static int getIncrementFromAdjustable(java.awt.Adjustable, java.awt.event.MouseWheelEvent);
-  public static void scrollAdjustable(java.awt.Adjustable, int);
-  static {};
-}

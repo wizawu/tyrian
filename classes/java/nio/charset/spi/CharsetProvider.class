@@ -1,6 +1,0 @@
-Compiled from "CharsetProvider.java"
-public abstract class java.nio.charset.spi.CharsetProvider {
-  protected java.nio.charset.spi.CharsetProvider();
-  public abstract java.util.Iterator<java.nio.charset.Charset> charsets();
-  public abstract java.nio.charset.Charset charsetForName(java.lang.String);
-}

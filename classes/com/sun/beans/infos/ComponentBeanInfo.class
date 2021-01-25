@@ -1,6 +1,0 @@
-Compiled from "ComponentBeanInfo.java"
-public class com.sun.beans.infos.ComponentBeanInfo extends java.beans.SimpleBeanInfo {
-  public com.sun.beans.infos.ComponentBeanInfo();
-  public java.beans.PropertyDescriptor[] getPropertyDescriptors();
-  static {};
-}

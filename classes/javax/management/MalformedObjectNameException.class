@@ -1,5 +1,0 @@
-Compiled from "MalformedObjectNameException.java"
-public class javax.management.MalformedObjectNameException extends javax.management.OperationsException {
-  public javax.management.MalformedObjectNameException();
-  public javax.management.MalformedObjectNameException(java.lang.String);
-}

@@ -1,4 +1,0 @@
-Compiled from "FileNameMap.java"
-public interface java.net.FileNameMap {
-  public abstract java.lang.String getContentTypeFor(java.lang.String);
-}

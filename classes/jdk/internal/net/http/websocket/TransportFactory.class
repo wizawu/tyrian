@@ -1,4 +1,0 @@
-Compiled from "TransportFactory.java"
-public interface jdk.internal.net.http.websocket.TransportFactory {
-  public abstract jdk.internal.net.http.websocket.Transport createTransport(jdk.internal.net.http.websocket.MessageQueue, jdk.internal.net.http.websocket.MessageStreamConsumer);
-}

@@ -1,5 +1,0 @@
-Compiled from "MethodRepository.java"
-public class sun.reflect.generics.repository.MethodRepository extends sun.reflect.generics.repository.ConstructorRepository {
-  public static sun.reflect.generics.repository.MethodRepository make(java.lang.String, sun.reflect.generics.factory.GenericsFactory);
-  public java.lang.reflect.Type getReturnType();
-}

@@ -1,5 +1,0 @@
-Compiled from "PortUnreachableException.java"
-public class java.net.PortUnreachableException extends java.net.SocketException {
-  public java.net.PortUnreachableException(java.lang.String);
-  public java.net.PortUnreachableException();
-}

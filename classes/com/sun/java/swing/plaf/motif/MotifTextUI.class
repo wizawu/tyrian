@@ -1,7 +1,0 @@
-Compiled from "MotifTextUI.java"
-public class com.sun.java.swing.plaf.motif.MotifTextUI {
-  static final javax.swing.text.JTextComponent$KeyBinding[] defaultBindings;
-  public com.sun.java.swing.plaf.motif.MotifTextUI();
-  public static javax.swing.text.Caret createCaret();
-  static {};
-}

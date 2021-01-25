@@ -1,5 +1,0 @@
-Compiled from "DocTree.java"
-public interface com.sun.source.doctree.DocTree {
-  public abstract com.sun.source.doctree.DocTree$Kind getKind();
-  public abstract <R, D> R accept(com.sun.source.doctree.DocTreeVisitor<R, D>, D);
-}

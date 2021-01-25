@@ -1,5 +1,0 @@
-Compiled from "ConnectionEventListener.java"
-public interface javax.sql.ConnectionEventListener extends java.util.EventListener {
-  public abstract void connectionClosed(javax.sql.ConnectionEvent);
-  public abstract void connectionErrorOccurred(javax.sql.ConnectionEvent);
-}

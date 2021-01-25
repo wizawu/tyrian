@@ -1,8 +1,0 @@
-Compiled from "LazyLoggers.java"
-public final class jdk.internal.logger.LazyLoggers {
-  static final java.lang.RuntimePermission LOGGERFINDER_PERMISSION;
-  static java.lang.System$Logger getLoggerFromFinder(java.lang.String, java.lang.Module);
-  public static final java.lang.System$Logger getLogger(java.lang.String, java.lang.Module);
-  public static final java.lang.System$Logger getLazyLogger(java.lang.String, java.lang.Module);
-  static {};
-}

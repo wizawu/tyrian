@@ -1,9 +1,0 @@
-Compiled from "Subroutine.java"
-class jdk.internal.org.objectweb.asm.tree.analysis.Subroutine {
-  jdk.internal.org.objectweb.asm.tree.LabelNode start;
-  boolean[] access;
-  java.util.List<jdk.internal.org.objectweb.asm.tree.JumpInsnNode> callers;
-  jdk.internal.org.objectweb.asm.tree.analysis.Subroutine(jdk.internal.org.objectweb.asm.tree.LabelNode, int, jdk.internal.org.objectweb.asm.tree.JumpInsnNode);
-  public jdk.internal.org.objectweb.asm.tree.analysis.Subroutine copy();
-  public boolean merge(jdk.internal.org.objectweb.asm.tree.analysis.Subroutine) throws jdk.internal.org.objectweb.asm.tree.analysis.AnalyzerException;
-}

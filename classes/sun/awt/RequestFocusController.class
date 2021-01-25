@@ -1,4 +1,0 @@
-Compiled from "RequestFocusController.java"
-public interface sun.awt.RequestFocusController {
-  public abstract boolean acceptRequestFocus(java.awt.Component, java.awt.Component, boolean, boolean, java.awt.event.FocusEvent$Cause);
-}

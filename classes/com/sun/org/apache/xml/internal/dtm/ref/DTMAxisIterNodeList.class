@@ -1,7 +1,0 @@
-Compiled from "DTMAxisIterNodeList.java"
-public class com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIterNodeList extends com.sun.org.apache.xml.internal.dtm.ref.DTMNodeListBase {
-  public com.sun.org.apache.xml.internal.dtm.ref.DTMAxisIterNodeList(com.sun.org.apache.xml.internal.dtm.DTM, com.sun.org.apache.xml.internal.dtm.DTMAxisIterator);
-  public com.sun.org.apache.xml.internal.dtm.DTMAxisIterator getDTMAxisIterator();
-  public org.w3c.dom.Node item(int);
-  public int getLength();
-}

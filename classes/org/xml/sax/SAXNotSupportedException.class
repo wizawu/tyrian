@@ -1,6 +1,0 @@
-Compiled from "SAXNotSupportedException.java"
-public class org.xml.sax.SAXNotSupportedException extends org.xml.sax.SAXException {
-  static final long serialVersionUID;
-  public org.xml.sax.SAXNotSupportedException();
-  public org.xml.sax.SAXNotSupportedException(java.lang.String);
-}

@@ -1,4 +1,0 @@
-Compiled from "TenuredSpace.java"
-public class sun.jvm.hotspot.gc.shared.TenuredSpace extends sun.jvm.hotspot.gc.shared.OffsetTableContigSpace {
-  public sun.jvm.hotspot.gc.shared.TenuredSpace(sun.jvm.hotspot.debugger.Address);
-}

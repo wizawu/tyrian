@@ -1,5 +1,0 @@
-Compiled from "DateFormatSymbolsProvider.java"
-public abstract class java.text.spi.DateFormatSymbolsProvider extends java.util.spi.LocaleServiceProvider {
-  protected java.text.spi.DateFormatSymbolsProvider();
-  public abstract java.text.DateFormatSymbols getInstance(java.util.Locale);
-}

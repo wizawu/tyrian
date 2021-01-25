@@ -1,6 +1,0 @@
-Compiled from "X509ExtendedKeyManager.java"
-public abstract class javax.net.ssl.X509ExtendedKeyManager implements javax.net.ssl.X509KeyManager {
-  protected javax.net.ssl.X509ExtendedKeyManager();
-  public java.lang.String chooseEngineClientAlias(java.lang.String[], java.security.Principal[], javax.net.ssl.SSLEngine);
-  public java.lang.String chooseEngineServerAlias(java.lang.String, java.security.Principal[], javax.net.ssl.SSLEngine);
-}

@@ -1,4 +1,0 @@
-Compiled from "Length.java"
-public interface sun.security.util.Length {
-  public abstract int length();
-}

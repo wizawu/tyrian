@@ -1,4 +1,0 @@
-Compiled from "WindowStateListener.java"
-public interface java.awt.event.WindowStateListener extends java.util.EventListener {
-  public abstract void windowStateChanged(java.awt.event.WindowEvent);
-}

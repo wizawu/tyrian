@@ -1,4 +1,0 @@
-Compiled from "JMXConnectorProvider.java"
-public interface javax.management.remote.JMXConnectorProvider {
-  public abstract javax.management.remote.JMXConnector newJMXConnector(javax.management.remote.JMXServiceURL, java.util.Map<java.lang.String, ?>) throws java.io.IOException;
-}

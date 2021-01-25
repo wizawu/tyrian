@@ -1,6 +1,0 @@
-Compiled from "MethodElementHandler.java"
-final class com.sun.beans.decoder.MethodElementHandler extends com.sun.beans.decoder.NewElementHandler {
-  com.sun.beans.decoder.MethodElementHandler();
-  public void addAttribute(java.lang.String, java.lang.String);
-  protected com.sun.beans.decoder.ValueObject getValueObject(java.lang.Class<?>, java.lang.Object[]) throws java.lang.Exception;
-}

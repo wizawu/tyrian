@@ -1,7 +1,0 @@
-Compiled from "StringCounterSnapshot.java"
-class sun.management.counter.perf.StringCounterSnapshot extends sun.management.counter.AbstractCounter implements sun.management.counter.StringCounter {
-  java.lang.String value;
-  sun.management.counter.perf.StringCounterSnapshot(java.lang.String, sun.management.counter.Units, sun.management.counter.Variability, int, java.lang.String);
-  public java.lang.Object getValue();
-  public java.lang.String stringValue();
-}

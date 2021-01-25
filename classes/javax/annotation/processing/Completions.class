@@ -1,5 +1,0 @@
-Compiled from "Completions.java"
-public class javax.annotation.processing.Completions {
-  public static javax.annotation.processing.Completion of(java.lang.String, java.lang.String);
-  public static javax.annotation.processing.Completion of(java.lang.String);
-}

@@ -1,6 +1,0 @@
-Compiled from "AccessControlException.java"
-public class java.security.AccessControlException extends java.lang.SecurityException {
-  public java.security.AccessControlException(java.lang.String);
-  public java.security.AccessControlException(java.lang.String, java.security.Permission);
-  public java.security.Permission getPermission();
-}

@@ -1,5 +1,0 @@
-Compiled from "InstructionTargeter.java"
-public interface com.sun.org.apache.bcel.internal.generic.InstructionTargeter {
-  public abstract boolean containsTarget(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
-  public abstract void updateTarget(com.sun.org.apache.bcel.internal.generic.InstructionHandle, com.sun.org.apache.bcel.internal.generic.InstructionHandle) throws com.sun.org.apache.bcel.internal.generic.ClassGenException;
-}

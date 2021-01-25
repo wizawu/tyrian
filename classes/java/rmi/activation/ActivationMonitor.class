@@ -1,6 +1,0 @@
-Compiled from "ActivationMonitor.java"
-public interface java.rmi.activation.ActivationMonitor extends java.rmi.Remote {
-  public abstract void inactiveObject(java.rmi.activation.ActivationID) throws java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;
-  public abstract void activeObject(java.rmi.activation.ActivationID, java.rmi.MarshalledObject<? extends java.rmi.Remote>) throws java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;
-  public abstract void inactiveGroup(java.rmi.activation.ActivationGroupID, long) throws java.rmi.activation.UnknownGroupException, java.rmi.RemoteException;
-}

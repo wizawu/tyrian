@@ -1,5 +1,0 @@
-Compiled from "Inspector.java"
-public class sun.jvm.hotspot.ui.Inspector extends sun.jvm.hotspot.ui.SAPanel {
-  public sun.jvm.hotspot.ui.Inspector();
-  public sun.jvm.hotspot.ui.Inspector(sun.jvm.hotspot.ui.tree.SimpleTreeNode);
-}

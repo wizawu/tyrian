@@ -1,6 +1,0 @@
-Compiled from "BufImgVolatileSurfaceManager.java"
-public class sun.awt.image.BufImgVolatileSurfaceManager extends sun.awt.image.VolatileSurfaceManager {
-  public sun.awt.image.BufImgVolatileSurfaceManager(sun.awt.image.SunVolatileImage, java.lang.Object);
-  protected boolean isAccelerationEnabled();
-  protected sun.java2d.SurfaceData initAcceleratedSurface();
-}

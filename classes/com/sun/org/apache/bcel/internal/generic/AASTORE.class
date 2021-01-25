@@ -1,5 +1,0 @@
-Compiled from "AASTORE.java"
-public class com.sun.org.apache.bcel.internal.generic.AASTORE extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackConsumer {
-  public com.sun.org.apache.bcel.internal.generic.AASTORE();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

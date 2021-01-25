@@ -1,8 +1,0 @@
-Compiled from "FileSystems.java"
-public final class java.nio.file.FileSystems {
-  public static java.nio.file.FileSystem getDefault();
-  public static java.nio.file.FileSystem getFileSystem(java.net.URI);
-  public static java.nio.file.FileSystem newFileSystem(java.net.URI, java.util.Map<java.lang.String, ?>) throws java.io.IOException;
-  public static java.nio.file.FileSystem newFileSystem(java.net.URI, java.util.Map<java.lang.String, ?>, java.lang.ClassLoader) throws java.io.IOException;
-  public static java.nio.file.FileSystem newFileSystem(java.nio.file.Path, java.lang.ClassLoader) throws java.io.IOException;
-}

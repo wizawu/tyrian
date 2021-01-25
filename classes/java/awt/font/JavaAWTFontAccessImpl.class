@@ -1,8 +1,0 @@
-Compiled from "JavaAWTFontAccessImpl.java"
-class java.awt.font.JavaAWTFontAccessImpl implements jdk.internal.misc.JavaAWTFontAccess {
-  static final boolean $assertionsDisabled;
-  java.awt.font.JavaAWTFontAccessImpl();
-  public java.lang.Object getTextAttributeConstant(java.lang.String);
-  public void shape(java.lang.Object, char[], int, int);
-  static {};
-}

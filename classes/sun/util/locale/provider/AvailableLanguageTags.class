@@ -1,4 +1,0 @@
-Compiled from "AvailableLanguageTags.java"
-public interface sun.util.locale.provider.AvailableLanguageTags {
-  public abstract java.util.Set<java.lang.String> getAvailableLanguageTags();
-}

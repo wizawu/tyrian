@@ -1,7 +1,0 @@
-Compiled from "XPathContainer.java"
-public class com.sun.org.apache.xml.internal.security.transforms.params.XPathContainer extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.transforms.TransformParam {
-  public com.sun.org.apache.xml.internal.security.transforms.params.XPathContainer(org.w3c.dom.Document);
-  public void setXPath(java.lang.String);
-  public java.lang.String getXPath();
-  public java.lang.String getBaseLocalName();
-}

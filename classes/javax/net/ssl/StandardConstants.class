@@ -1,4 +1,0 @@
-Compiled from "StandardConstants.java"
-public final class javax.net.ssl.StandardConstants {
-  public static final int SNI_HOST_NAME;
-}

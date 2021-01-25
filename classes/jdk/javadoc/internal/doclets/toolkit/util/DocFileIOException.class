@@ -1,6 +1,0 @@
-Compiled from "DocFileIOException.java"
-public class jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException extends jdk.javadoc.internal.doclets.toolkit.DocletException {
-  public final jdk.javadoc.internal.doclets.toolkit.util.DocFile fileName;
-  public final jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException$Mode mode;
-  public jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException(jdk.javadoc.internal.doclets.toolkit.util.DocFile, jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException$Mode, java.io.IOException);
-}

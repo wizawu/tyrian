@@ -1,9 +1,0 @@
-Compiled from "FuncLast.java"
-public class com.sun.org.apache.xpath.internal.functions.FuncLast extends com.sun.org.apache.xpath.internal.functions.Function {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.functions.FuncLast();
-  public void postCompileStep(com.sun.org.apache.xpath.internal.compiler.Compiler);
-  public int getCountOfContextNodeList(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-  public void fixupVariables(java.util.List<com.sun.org.apache.xml.internal.utils.QName>, int);
-}

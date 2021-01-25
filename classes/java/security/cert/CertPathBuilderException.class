@@ -1,7 +1,0 @@
-Compiled from "CertPathBuilderException.java"
-public class java.security.cert.CertPathBuilderException extends java.security.GeneralSecurityException {
-  public java.security.cert.CertPathBuilderException();
-  public java.security.cert.CertPathBuilderException(java.lang.String);
-  public java.security.cert.CertPathBuilderException(java.lang.Throwable);
-  public java.security.cert.CertPathBuilderException(java.lang.String, java.lang.Throwable);
-}

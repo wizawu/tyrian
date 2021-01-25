@@ -1,9 +1,0 @@
-Compiled from "Bindings.java"
-public interface javax.script.Bindings extends java.util.Map<java.lang.String, java.lang.Object> {
-  public abstract java.lang.Object put(java.lang.String, java.lang.Object);
-  public abstract void putAll(java.util.Map<? extends java.lang.String, ? extends java.lang.Object>);
-  public abstract boolean containsKey(java.lang.Object);
-  public abstract java.lang.Object get(java.lang.Object);
-  public abstract java.lang.Object remove(java.lang.Object);
-  public default java.lang.Object put(java.lang.Object, java.lang.Object);
-}

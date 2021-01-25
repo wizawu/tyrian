@@ -1,6 +1,0 @@
-Compiled from "LocalSym.java"
-public interface sun.jvm.hotspot.debugger.cdbg.LocalSym extends sun.jvm.hotspot.debugger.cdbg.Sym {
-  public abstract java.lang.String getName();
-  public abstract sun.jvm.hotspot.debugger.cdbg.Type getType();
-  public abstract long getFrameOffset();
-}

@@ -1,9 +1,0 @@
-Compiled from "SchemaDVFactoryImpl.java"
-public class com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDVFactoryImpl extends com.sun.org.apache.xerces.internal.impl.dv.xs.BaseSchemaDVFactory {
-  static final com.sun.org.apache.xerces.internal.util.SymbolHash fBuiltInTypes;
-  public com.sun.org.apache.xerces.internal.impl.dv.xs.SchemaDVFactoryImpl();
-  static void createBuiltInTypes();
-  public com.sun.org.apache.xerces.internal.impl.dv.XSSimpleType getBuiltInType(java.lang.String);
-  public com.sun.org.apache.xerces.internal.util.SymbolHash getBuiltInTypes();
-  static {};
-}

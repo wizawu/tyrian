@@ -1,8 +1,0 @@
-Compiled from "CompiledScript.java"
-public abstract class javax.script.CompiledScript {
-  public javax.script.CompiledScript();
-  public abstract java.lang.Object eval(javax.script.ScriptContext) throws javax.script.ScriptException;
-  public java.lang.Object eval(javax.script.Bindings) throws javax.script.ScriptException;
-  public java.lang.Object eval() throws javax.script.ScriptException;
-  public abstract javax.script.ScriptEngine getEngine();
-}

@@ -1,8 +1,0 @@
-Compiled from "MatchingUtils.java"
-public class com.sun.tools.javac.util.MatchingUtils {
-  public com.sun.tools.javac.util.MatchingUtils();
-  public static boolean isValidImportString(java.lang.String);
-  public static java.lang.String validImportStringToPatternString(java.lang.String);
-  public static java.util.regex.Pattern validImportStringToPattern(java.lang.String);
-  static {};
-}

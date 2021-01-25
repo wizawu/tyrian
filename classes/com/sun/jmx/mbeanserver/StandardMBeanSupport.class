@@ -1,9 +1,0 @@
-Compiled from "StandardMBeanSupport.java"
-public class com.sun.jmx.mbeanserver.StandardMBeanSupport extends com.sun.jmx.mbeanserver.MBeanSupport<java.lang.reflect.Method> {
-  public <T> com.sun.jmx.mbeanserver.StandardMBeanSupport(T, java.lang.Class<T>) throws javax.management.NotCompliantMBeanException;
-  com.sun.jmx.mbeanserver.MBeanIntrospector<java.lang.reflect.Method> getMBeanIntrospector();
-  java.lang.Object getCookie();
-  public void register(javax.management.MBeanServer, javax.management.ObjectName);
-  public void unregister();
-  public javax.management.MBeanInfo getMBeanInfo();
-}

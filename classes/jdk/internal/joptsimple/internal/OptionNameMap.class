@@ -1,9 +1,0 @@
-Compiled from "OptionNameMap.java"
-public interface jdk.internal.joptsimple.internal.OptionNameMap<V> {
-  public abstract boolean contains(java.lang.String);
-  public abstract V get(java.lang.String);
-  public abstract void put(java.lang.String, V);
-  public abstract void putAll(java.lang.Iterable<java.lang.String>, V);
-  public abstract void remove(java.lang.String);
-  public abstract java.util.Map<java.lang.String, V> toJavaUtilMap();
-}

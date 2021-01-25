@@ -1,5 +1,0 @@
-Compiled from "FunctionDocumentation.java"
-final class jdk.nashorn.internal.runtime.FunctionDocumentation {
-  static java.lang.String getDoc(java.lang.String);
-  static {};
-}

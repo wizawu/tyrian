@@ -1,6 +1,0 @@
-Compiled from "NumberType.java"
-public abstract class com.sun.org.apache.xalan.internal.xsltc.compiler.util.NumberType extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type {
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.NumberType();
-  public boolean isNumber();
-  public boolean isSimple();
-}

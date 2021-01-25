@@ -1,7 +1,0 @@
-Compiled from "ExifParentTIFFTagSet.java"
-public final class javax.imageio.plugins.tiff.ExifParentTIFFTagSet extends javax.imageio.plugins.tiff.TIFFTagSet {
-  public static final int TAG_EXIF_IFD_POINTER;
-  public static final int TAG_GPS_INFO_IFD_POINTER;
-  public static synchronized javax.imageio.plugins.tiff.ExifParentTIFFTagSet getInstance();
-  static {};
-}

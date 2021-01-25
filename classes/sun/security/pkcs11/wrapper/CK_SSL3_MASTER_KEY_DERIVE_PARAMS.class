@@ -1,7 +1,0 @@
-Compiled from "CK_SSL3_MASTER_KEY_DERIVE_PARAMS.java"
-public class sun.security.pkcs11.wrapper.CK_SSL3_MASTER_KEY_DERIVE_PARAMS {
-  public sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA RandomInfo;
-  public sun.security.pkcs11.wrapper.CK_VERSION pVersion;
-  public sun.security.pkcs11.wrapper.CK_SSL3_MASTER_KEY_DERIVE_PARAMS(sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA, sun.security.pkcs11.wrapper.CK_VERSION);
-  public java.lang.String toString();
-}

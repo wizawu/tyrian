@@ -1,4 +1,0 @@
-Compiled from "DHKey.java"
-public interface javax.crypto.interfaces.DHKey {
-  public abstract javax.crypto.spec.DHParameterSpec getParams();
-}

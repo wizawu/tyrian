@@ -1,5 +1,0 @@
-Compiled from "TimeZoneNames_en_GB.java"
-public final class sun.util.resources.ext.TimeZoneNames_en_GB extends sun.util.resources.TimeZoneNamesBundle {
-  public sun.util.resources.ext.TimeZoneNames_en_GB();
-  protected final java.lang.Object[][] getContents();
-}

@@ -1,5 +1,0 @@
-Compiled from "ServiceUnavailableException.java"
-public class javax.naming.ServiceUnavailableException extends javax.naming.NamingException {
-  public javax.naming.ServiceUnavailableException(java.lang.String);
-  public javax.naming.ServiceUnavailableException();
-}

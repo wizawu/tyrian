@@ -1,6 +1,0 @@
-Compiled from "ComparableTimSort.java"
-class java.util.ComparableTimSort {
-  static final boolean $assertionsDisabled;
-  static void sort(java.lang.Object[], int, int, java.lang.Object[], int, int);
-  static {};
-}

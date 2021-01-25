@@ -1,5 +1,0 @@
-Compiled from "JByteField.java"
-public interface sun.jvm.hotspot.types.JByteField extends sun.jvm.hotspot.types.Field {
-  public abstract byte getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-  public abstract byte getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-}

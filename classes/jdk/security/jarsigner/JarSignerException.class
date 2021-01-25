@@ -1,4 +1,0 @@
-Compiled from "JarSignerException.java"
-public class jdk.security.jarsigner.JarSignerException extends java.lang.RuntimeException {
-  public jdk.security.jarsigner.JarSignerException(java.lang.String, java.lang.Throwable);
-}

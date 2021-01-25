@@ -1,4 +1,0 @@
-Compiled from "XPathFunctionResolver.java"
-public interface javax.xml.xpath.XPathFunctionResolver {
-  public abstract javax.xml.xpath.XPathFunction resolveFunction(javax.xml.namespace.QName, int);
-}

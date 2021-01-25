@@ -1,7 +1,0 @@
-Compiled from "ExtensionsProvider.java"
-public interface com.sun.org.apache.xpath.internal.ExtensionsProvider {
-  public abstract boolean functionAvailable(java.lang.String, java.lang.String) throws javax.xml.transform.TransformerException;
-  public abstract boolean elementAvailable(java.lang.String, java.lang.String) throws javax.xml.transform.TransformerException;
-  public abstract java.lang.Object extFunction(java.lang.String, java.lang.String, java.util.List<com.sun.org.apache.xpath.internal.objects.XObject>, java.lang.Object) throws javax.xml.transform.TransformerException;
-  public abstract java.lang.Object extFunction(com.sun.org.apache.xpath.internal.functions.FuncExtFunction, java.util.List<com.sun.org.apache.xpath.internal.objects.XObject>) throws javax.xml.transform.TransformerException;
-}

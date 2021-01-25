@@ -1,5 +1,0 @@
-Compiled from "ConnectIOException.java"
-public class java.rmi.ConnectIOException extends java.rmi.RemoteException {
-  public java.rmi.ConnectIOException(java.lang.String);
-  public java.rmi.ConnectIOException(java.lang.String, java.lang.Exception);
-}

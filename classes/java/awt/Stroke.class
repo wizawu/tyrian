@@ -1,4 +1,0 @@
-Compiled from "Stroke.java"
-public interface java.awt.Stroke {
-  public abstract java.awt.Shape createStrokedShape(java.awt.Shape);
-}

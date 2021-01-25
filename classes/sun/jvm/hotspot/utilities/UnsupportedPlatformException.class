@@ -1,5 +1,0 @@
-Compiled from "UnsupportedPlatformException.java"
-public class sun.jvm.hotspot.utilities.UnsupportedPlatformException extends java.lang.RuntimeException {
-  public sun.jvm.hotspot.utilities.UnsupportedPlatformException();
-  public sun.jvm.hotspot.utilities.UnsupportedPlatformException(java.lang.String);
-}

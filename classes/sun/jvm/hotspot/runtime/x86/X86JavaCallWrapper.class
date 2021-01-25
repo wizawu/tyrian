@@ -1,6 +1,0 @@
-Compiled from "X86JavaCallWrapper.java"
-public class sun.jvm.hotspot.runtime.x86.X86JavaCallWrapper extends sun.jvm.hotspot.runtime.JavaCallWrapper {
-  public sun.jvm.hotspot.runtime.x86.X86JavaCallWrapper(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.Address getLastJavaFP();
-  static {};
-}

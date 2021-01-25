@@ -1,6 +1,0 @@
-Compiled from "XMLDocumentScanner.java"
-public interface com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentScanner extends com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource {
-  public abstract void setInputSource(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource) throws java.io.IOException;
-  public abstract boolean scanDocument(boolean) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
-  public abstract int next() throws com.sun.org.apache.xerces.internal.xni.XNIException, java.io.IOException;
-}

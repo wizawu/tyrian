@@ -1,6 +1,0 @@
-Compiled from "CompilationService.java"
-public class com.sun.tools.sjavac.comp.CompilationService {
-  public com.sun.tools.sjavac.comp.CompilationService();
-  public com.sun.tools.sjavac.server.SysInfo getSysInfo();
-  public com.sun.tools.sjavac.server.CompilationSubResult compile(java.lang.String, java.lang.String, java.lang.String[], java.util.List<java.io.File>, java.util.Set<java.net.URI>, java.util.Set<java.net.URI>);
-}

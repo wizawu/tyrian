@@ -1,9 +1,0 @@
-Compiled from "DelegationPermission.java"
-public final class javax.security.auth.kerberos.DelegationPermission extends java.security.BasicPermission implements java.io.Serializable {
-  public javax.security.auth.kerberos.DelegationPermission(java.lang.String);
-  public javax.security.auth.kerberos.DelegationPermission(java.lang.String, java.lang.String);
-  public boolean implies(java.security.Permission);
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  public java.security.PermissionCollection newPermissionCollection();
-}

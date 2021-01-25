@@ -1,3 +1,0 @@
-Compiled from "Reference.java"
-public interface jdk.nashorn.internal.ir.annotations.Reference extends java.lang.annotation.Annotation {
-}

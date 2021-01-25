@@ -1,7 +1,0 @@
-Compiled from "PGPData.java"
-public interface javax.xml.crypto.dsig.keyinfo.PGPData extends javax.xml.crypto.XMLStructure {
-  public static final java.lang.String TYPE;
-  public abstract byte[] getKeyId();
-  public abstract byte[] getKeyPacket();
-  public abstract java.util.List<javax.xml.crypto.XMLStructure> getExternalElements();
-}

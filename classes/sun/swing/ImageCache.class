@@ -1,8 +1,0 @@
-Compiled from "ImageCache.java"
-public class sun.swing.ImageCache {
-  public sun.swing.ImageCache(int);
-  void setMaxCount(int);
-  public void flush();
-  public java.awt.Image getImage(java.lang.Object, java.awt.GraphicsConfiguration, int, int, java.lang.Object[]);
-  public void setImage(java.lang.Object, java.awt.GraphicsConfiguration, int, int, java.lang.Object[], java.awt.Image);
-}

@@ -1,4 +1,0 @@
-Compiled from "RejectedExecutionHandler.java"
-public interface java.util.concurrent.RejectedExecutionHandler {
-  public abstract void rejectedExecution(java.lang.Runnable, java.util.concurrent.ThreadPoolExecutor);
-}

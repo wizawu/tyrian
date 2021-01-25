@@ -1,7 +1,0 @@
-Compiled from "ComboBoxUI.java"
-public abstract class javax.swing.plaf.ComboBoxUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.ComboBoxUI();
-  public abstract void setPopupVisible(javax.swing.JComboBox<?>, boolean);
-  public abstract boolean isPopupVisible(javax.swing.JComboBox<?>);
-  public abstract boolean isFocusTraversable(javax.swing.JComboBox<?>);
-}

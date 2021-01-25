@@ -1,7 +1,0 @@
-Compiled from "JulianFields.java"
-public final class java.time.temporal.JulianFields {
-  public static final java.time.temporal.TemporalField JULIAN_DAY;
-  public static final java.time.temporal.TemporalField MODIFIED_JULIAN_DAY;
-  public static final java.time.temporal.TemporalField RATA_DIE;
-  static {};
-}

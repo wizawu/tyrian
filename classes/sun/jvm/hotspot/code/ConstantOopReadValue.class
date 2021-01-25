@@ -1,8 +1,0 @@
-Compiled from "ConstantOopReadValue.java"
-public class sun.jvm.hotspot.code.ConstantOopReadValue extends sun.jvm.hotspot.code.ScopeValue {
-  public sun.jvm.hotspot.code.ConstantOopReadValue(sun.jvm.hotspot.code.DebugInfoReadStream);
-  public boolean isConstantOop();
-  public sun.jvm.hotspot.debugger.OopHandle getValue();
-  public void print();
-  public void printOn(java.io.PrintStream);
-}

@@ -1,4 +1,0 @@
-Compiled from "Event.java"
-public interface com.sun.jdi.event.Event extends com.sun.jdi.Mirror {
-  public abstract com.sun.jdi.request.EventRequest request();
-}

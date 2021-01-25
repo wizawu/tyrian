@@ -1,5 +1,0 @@
-Compiled from "Instrument.java"
-public abstract class javax.sound.midi.Instrument extends javax.sound.midi.SoundbankResource {
-  protected javax.sound.midi.Instrument(javax.sound.midi.Soundbank, javax.sound.midi.Patch, java.lang.String, java.lang.Class<?>);
-  public javax.sound.midi.Patch getPatch();
-}

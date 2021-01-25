@@ -1,3 +1,0 @@
-Compiled from "Port.java"
-public interface javax.sound.sampled.Port extends javax.sound.sampled.Line {
-}

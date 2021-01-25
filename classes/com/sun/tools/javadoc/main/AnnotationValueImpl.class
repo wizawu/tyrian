@@ -1,6 +1,0 @@
-Compiled from "AnnotationValueImpl.java"
-public class com.sun.tools.javadoc.main.AnnotationValueImpl implements com.sun.javadoc.AnnotationValue {
-  com.sun.tools.javadoc.main.AnnotationValueImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Attribute);
-  public java.lang.Object value();
-  public java.lang.String toString();
-}

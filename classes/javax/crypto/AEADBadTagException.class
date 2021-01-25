@@ -1,5 +1,0 @@
-Compiled from "AEADBadTagException.java"
-public class javax.crypto.AEADBadTagException extends javax.crypto.BadPaddingException {
-  public javax.crypto.AEADBadTagException();
-  public javax.crypto.AEADBadTagException(java.lang.String);
-}

@@ -1,8 +1,0 @@
-Compiled from "ReferenceOctetStreamData.java"
-public class com.sun.org.apache.xml.internal.security.signature.reference.ReferenceOctetStreamData implements com.sun.org.apache.xml.internal.security.signature.reference.ReferenceData {
-  public com.sun.org.apache.xml.internal.security.signature.reference.ReferenceOctetStreamData(java.io.InputStream);
-  public com.sun.org.apache.xml.internal.security.signature.reference.ReferenceOctetStreamData(java.io.InputStream, java.lang.String, java.lang.String);
-  public java.io.InputStream getOctetStream();
-  public java.lang.String getURI();
-  public java.lang.String getMimeType();
-}

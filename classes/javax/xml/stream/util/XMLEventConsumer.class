@@ -1,4 +1,0 @@
-Compiled from "XMLEventConsumer.java"
-public interface javax.xml.stream.util.XMLEventConsumer {
-  public abstract void add(javax.xml.stream.events.XMLEvent) throws javax.xml.stream.XMLStreamException;
-}

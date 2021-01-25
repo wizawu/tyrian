@@ -1,8 +1,0 @@
-Compiled from "UnixFileAttributeViews.java"
-class sun.nio.fs.UnixFileAttributeViews {
-  sun.nio.fs.UnixFileAttributeViews();
-  static sun.nio.fs.UnixFileAttributeViews$Basic createBasicView(sun.nio.fs.UnixPath, boolean);
-  static sun.nio.fs.UnixFileAttributeViews$Posix createPosixView(sun.nio.fs.UnixPath, boolean);
-  static sun.nio.fs.UnixFileAttributeViews$Unix createUnixView(sun.nio.fs.UnixPath, boolean);
-  static sun.nio.fs.FileOwnerAttributeViewImpl createOwnerView(sun.nio.fs.UnixPath, boolean);
-}

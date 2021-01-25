@@ -1,4 +1,0 @@
-Compiled from "IntersectionTypeTree.java"
-public interface com.sun.source.tree.IntersectionTypeTree extends com.sun.source.tree.Tree {
-  public abstract java.util.List<? extends com.sun.source.tree.Tree> getBounds();
-}

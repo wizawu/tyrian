@@ -1,6 +1,0 @@
-Compiled from "RemoteSPARCThread.java"
-public class sun.jvm.hotspot.debugger.remote.sparc.RemoteSPARCThread extends sun.jvm.hotspot.debugger.remote.RemoteThread {
-  public sun.jvm.hotspot.debugger.remote.sparc.RemoteSPARCThread(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient, sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.remote.sparc.RemoteSPARCThread(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient, long);
-  public sun.jvm.hotspot.debugger.ThreadContext getContext() throws java.lang.IllegalThreadStateException;
-}

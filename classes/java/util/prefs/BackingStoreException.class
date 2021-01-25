@@ -1,5 +1,0 @@
-Compiled from "BackingStoreException.java"
-public class java.util.prefs.BackingStoreException extends java.lang.Exception {
-  public java.util.prefs.BackingStoreException(java.lang.String);
-  public java.util.prefs.BackingStoreException(java.lang.Throwable);
-}

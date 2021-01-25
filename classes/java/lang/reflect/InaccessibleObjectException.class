@@ -1,5 +1,0 @@
-Compiled from "InaccessibleObjectException.java"
-public class java.lang.reflect.InaccessibleObjectException extends java.lang.RuntimeException {
-  public java.lang.reflect.InaccessibleObjectException();
-  public java.lang.reflect.InaccessibleObjectException(java.lang.String);
-}

@@ -1,7 +1,0 @@
-Compiled from "CommentImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.CommentImpl extends com.sun.org.apache.xerces.internal.dom.CharacterDataImpl implements org.w3c.dom.CharacterData,org.w3c.dom.Comment {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xerces.internal.dom.CommentImpl(com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl, java.lang.String);
-  public short getNodeType();
-  public java.lang.String getNodeName();
-}

@@ -1,4 +1,0 @@
-Compiled from "MetaEventListener.java"
-public interface javax.sound.midi.MetaEventListener extends java.util.EventListener {
-  public abstract void meta(javax.sound.midi.MetaMessage);
-}

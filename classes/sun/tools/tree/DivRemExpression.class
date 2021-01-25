@@ -1,5 +1,0 @@
-Compiled from "DivRemExpression.java"
-public abstract class sun.tools.tree.DivRemExpression extends sun.tools.tree.BinaryArithmeticExpression {
-  public sun.tools.tree.DivRemExpression(int, long, sun.tools.tree.Expression, sun.tools.tree.Expression);
-  public sun.tools.tree.Expression inline(sun.tools.java.Environment, sun.tools.tree.Context);
-}

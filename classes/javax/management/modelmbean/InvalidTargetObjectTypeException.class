@@ -1,8 +1,0 @@
-Compiled from "InvalidTargetObjectTypeException.java"
-public class javax.management.modelmbean.InvalidTargetObjectTypeException extends java.lang.Exception {
-  java.lang.Exception exception;
-  public javax.management.modelmbean.InvalidTargetObjectTypeException();
-  public javax.management.modelmbean.InvalidTargetObjectTypeException(java.lang.String);
-  public javax.management.modelmbean.InvalidTargetObjectTypeException(java.lang.Exception, java.lang.String);
-  static {};
-}

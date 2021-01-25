@@ -1,9 +1,0 @@
-Compiled from "FactoryFinder.java"
-class javax.xml.transform.FactoryFinder {
-  static volatile boolean firstTime;
-  static final boolean $assertionsDisabled;
-  javax.xml.transform.FactoryFinder();
-  static <T> T newInstance(java.lang.Class<T>, java.lang.String, java.lang.ClassLoader, boolean) throws javax.xml.transform.TransformerFactoryConfigurationError;
-  static <T> T find(java.lang.Class<T>, java.lang.String) throws javax.xml.transform.TransformerFactoryConfigurationError;
-  static {};
-}

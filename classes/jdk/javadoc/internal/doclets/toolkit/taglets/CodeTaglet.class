@@ -1,5 +1,0 @@
-Compiled from "CodeTaglet.java"
-public class jdk.javadoc.internal.doclets.toolkit.taglets.CodeTaglet extends jdk.javadoc.internal.doclets.toolkit.taglets.BaseTaglet {
-  jdk.javadoc.internal.doclets.toolkit.taglets.CodeTaglet();
-  public jdk.javadoc.internal.doclets.toolkit.Content getTagletOutput(javax.lang.model.element.Element, com.sun.source.doctree.DocTree, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
-}

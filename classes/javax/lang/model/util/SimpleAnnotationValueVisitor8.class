@@ -1,5 +1,0 @@
-Compiled from "SimpleAnnotationValueVisitor8.java"
-public class javax.lang.model.util.SimpleAnnotationValueVisitor8<R, P> extends javax.lang.model.util.SimpleAnnotationValueVisitor7<R, P> {
-  protected javax.lang.model.util.SimpleAnnotationValueVisitor8();
-  protected javax.lang.model.util.SimpleAnnotationValueVisitor8(R);
-}

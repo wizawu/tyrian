@@ -1,8 +1,0 @@
-Compiled from "WeakObjectPool.java"
-public abstract class com.sun.org.apache.xml.internal.security.utils.WeakObjectPool<T, E extends java.lang.Throwable> {
-  protected com.sun.org.apache.xml.internal.security.utils.WeakObjectPool();
-  protected abstract T createObject() throws E;
-  public T getObject() throws E;
-  public boolean repool(T);
-  static {};
-}

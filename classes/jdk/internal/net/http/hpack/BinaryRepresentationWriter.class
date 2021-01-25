@@ -1,5 +1,0 @@
-Compiled from "BinaryRepresentationWriter.java"
-interface jdk.internal.net.http.hpack.BinaryRepresentationWriter {
-  public abstract boolean write(jdk.internal.net.http.hpack.HeaderTable, java.nio.ByteBuffer);
-  public abstract jdk.internal.net.http.hpack.BinaryRepresentationWriter reset();
-}

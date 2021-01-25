@@ -1,9 +1,0 @@
-Compiled from "Main.java"
-public final class jdk.nashorn.tools.jjs.Main extends jdk.nashorn.tools.Shell {
-  static final boolean DEBUG;
-  public static void main(java.lang.String[]);
-  public static int main(java.io.InputStream, java.io.OutputStream, java.io.OutputStream, java.lang.String[]) throws java.io.IOException;
-  protected int readEvalPrint(jdk.nashorn.internal.runtime.Context, jdk.nashorn.internal.objects.Global);
-  static java.lang.String getMessage(java.lang.String);
-  static {};
-}

@@ -1,7 +1,0 @@
-Compiled from "SoftAbstractResampler.java"
-public abstract class com.sun.media.sound.SoftAbstractResampler implements com.sun.media.sound.SoftResampler {
-  public com.sun.media.sound.SoftAbstractResampler();
-  public abstract int getPadding();
-  public abstract void interpolate(float[], float[], float, float[], float, float[], int[], int);
-  public final com.sun.media.sound.SoftResamplerStreamer openStreamer();
-}

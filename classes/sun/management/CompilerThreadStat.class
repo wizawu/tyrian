@@ -1,9 +1,0 @@
-Compiled from "CompilerThreadStat.java"
-public class sun.management.CompilerThreadStat implements java.io.Serializable {
-  sun.management.CompilerThreadStat(java.lang.String, long, long, sun.management.MethodInfo);
-  public java.lang.String getName();
-  public long getCompileTaskCount();
-  public long getCompileTime();
-  public sun.management.MethodInfo getLastCompiledMethodInfo();
-  public java.lang.String toString();
-}

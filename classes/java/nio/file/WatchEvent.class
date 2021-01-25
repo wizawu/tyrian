@@ -1,6 +1,0 @@
-Compiled from "WatchEvent.java"
-public interface java.nio.file.WatchEvent<T> {
-  public abstract java.nio.file.WatchEvent$Kind<T> kind();
-  public abstract int count();
-  public abstract T context();
-}

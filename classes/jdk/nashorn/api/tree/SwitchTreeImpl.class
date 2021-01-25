@@ -1,8 +1,0 @@
-Compiled from "SwitchTreeImpl.java"
-final class jdk.nashorn.api.tree.SwitchTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.SwitchTree {
-  jdk.nashorn.api.tree.SwitchTreeImpl(jdk.nashorn.internal.ir.SwitchNode, jdk.nashorn.api.tree.ExpressionTree, java.util.List<? extends jdk.nashorn.api.tree.CaseTree>);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public java.util.List<? extends jdk.nashorn.api.tree.CaseTree> getCases();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

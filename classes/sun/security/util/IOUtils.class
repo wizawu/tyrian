@@ -1,5 +1,0 @@
-Compiled from "IOUtils.java"
-public class sun.security.util.IOUtils {
-  public sun.security.util.IOUtils();
-  public static byte[] readExactlyNBytes(java.io.InputStream, int) throws java.io.IOException;
-}

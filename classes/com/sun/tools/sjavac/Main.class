@@ -1,6 +1,0 @@
-Compiled from "Main.java"
-public class com.sun.tools.sjavac.Main {
-  public com.sun.tools.sjavac.Main();
-  public static void main(java.lang.String...);
-  public static int go(java.lang.String[]);
-}

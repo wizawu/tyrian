@@ -1,6 +1,0 @@
-Compiled from "AgentLoadException.java"
-public class com.sun.tools.attach.AgentLoadException extends java.lang.Exception {
-  static final long serialVersionUID;
-  public com.sun.tools.attach.AgentLoadException();
-  public com.sun.tools.attach.AgentLoadException(java.lang.String);
-}

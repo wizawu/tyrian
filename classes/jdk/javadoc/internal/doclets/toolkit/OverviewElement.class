@@ -1,7 +1,0 @@
-Compiled from "OverviewElement.java"
-public class jdk.javadoc.internal.doclets.toolkit.OverviewElement implements jdk.javadoc.internal.doclets.toolkit.DocletElement {
-  public jdk.javadoc.internal.doclets.toolkit.OverviewElement(javax.lang.model.element.PackageElement, javax.tools.FileObject);
-  public javax.lang.model.element.PackageElement getPackageElement();
-  public javax.tools.FileObject getFileObject();
-  public jdk.javadoc.internal.doclets.toolkit.DocletElement$Kind getSubKind();
-}

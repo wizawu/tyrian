@@ -1,5 +1,0 @@
-Compiled from "Destroyable.java"
-public interface javax.security.auth.Destroyable {
-  public default void destroy() throws javax.security.auth.DestroyFailedException;
-  public default boolean isDestroyed();
-}

@@ -1,5 +1,0 @@
-Compiled from "DSAPublicKey.java"
-public interface java.security.interfaces.DSAPublicKey extends java.security.interfaces.DSAKey,java.security.PublicKey {
-  public static final long serialVersionUID;
-  public abstract java.math.BigInteger getY();
-}

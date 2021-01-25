@@ -1,9 +1,0 @@
-Compiled from "MalformedByteSequenceException.java"
-public class com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException extends java.io.CharConversionException {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xerces.internal.impl.io.MalformedByteSequenceException(com.sun.org.apache.xerces.internal.util.MessageFormatter, java.util.Locale, java.lang.String, java.lang.String, java.lang.Object[]);
-  public java.lang.String getDomain();
-  public java.lang.String getKey();
-  public java.lang.Object[] getArguments();
-  public java.lang.String getMessage();
-}

@@ -1,9 +1,0 @@
-Compiled from "ArrayExpression.java"
-public class sun.tools.tree.ArrayExpression extends sun.tools.tree.NaryExpression {
-  public sun.tools.tree.ArrayExpression(long, sun.tools.tree.Expression[]);
-  public sun.tools.tree.Vset checkValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
-  public sun.tools.tree.Vset checkInitializer(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, sun.tools.java.Type, java.util.Hashtable<java.lang.Object, java.lang.Object>);
-  public sun.tools.tree.Expression inline(sun.tools.java.Environment, sun.tools.tree.Context);
-  public sun.tools.tree.Expression inlineValue(sun.tools.java.Environment, sun.tools.tree.Context);
-  public void codeValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
-}

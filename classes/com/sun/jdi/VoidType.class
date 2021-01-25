@@ -1,3 +1,0 @@
-Compiled from "VoidType.java"
-public interface com.sun.jdi.VoidType extends com.sun.jdi.Type {
-}

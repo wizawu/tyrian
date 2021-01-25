@@ -1,6 +1,0 @@
-Compiled from "ObjPtr.java"
-public final class jdk.nashorn.internal.runtime.regexp.joni.encoding.ObjPtr<T> {
-  public T p;
-  public jdk.nashorn.internal.runtime.regexp.joni.encoding.ObjPtr();
-  public jdk.nashorn.internal.runtime.regexp.joni.encoding.ObjPtr(T);
-}

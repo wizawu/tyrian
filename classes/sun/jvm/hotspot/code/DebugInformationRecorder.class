@@ -1,6 +1,0 @@
-Compiled from "DebugInformationRecorder.java"
-public class sun.jvm.hotspot.code.DebugInformationRecorder {
-  public static final int SERIALIZED_NULL;
-  public static final int SYNCHRONIZATION_ENTRY_BCI;
-  public sun.jvm.hotspot.code.DebugInformationRecorder();
-}

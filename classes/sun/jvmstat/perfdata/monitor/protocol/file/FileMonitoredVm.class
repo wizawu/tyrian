@@ -1,6 +1,0 @@
-Compiled from "FileMonitoredVm.java"
-public class sun.jvmstat.perfdata.monitor.protocol.file.FileMonitoredVm extends sun.jvmstat.perfdata.monitor.AbstractMonitoredVm {
-  public sun.jvmstat.perfdata.monitor.protocol.file.FileMonitoredVm(sun.jvmstat.monitor.VmIdentifier, int) throws sun.jvmstat.monitor.MonitorException;
-  public void addVmListener(sun.jvmstat.monitor.event.VmListener);
-  public void removeVmListener(sun.jvmstat.monitor.event.VmListener);
-}

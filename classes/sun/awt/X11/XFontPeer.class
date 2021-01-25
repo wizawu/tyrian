@@ -1,6 +1,0 @@
-Compiled from "XFontPeer.java"
-public class sun.awt.X11.XFontPeer extends sun.awt.PlatformFont {
-  public sun.awt.X11.XFontPeer(java.lang.String, int);
-  protected char getMissingGlyphCharacter();
-  static {};
-}

@@ -1,7 +1,0 @@
-Compiled from "WriteAbortedException.java"
-public class java.io.WriteAbortedException extends java.io.ObjectStreamException {
-  public java.lang.Exception detail;
-  public java.io.WriteAbortedException(java.lang.String, java.lang.Exception);
-  public java.lang.String getMessage();
-  public java.lang.Throwable getCause();
-}

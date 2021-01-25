@@ -1,7 +1,0 @@
-Compiled from "NodeCounterGenerator.java"
-public final class com.sun.org.apache.xalan.internal.xsltc.compiler.util.NodeCounterGenerator extends com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator {
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.NodeCounterGenerator(java.lang.String, java.lang.String, java.lang.String, int, java.lang.String[], com.sun.org.apache.xalan.internal.xsltc.compiler.Stylesheet);
-  public void setTransletIndex(int);
-  public com.sun.org.apache.bcel.internal.generic.Instruction loadTranslet();
-  public boolean isExternal();
-}

@@ -1,4 +1,0 @@
-Compiled from "InternalError.java"
-public class com.sun.org.apache.xalan.internal.xsltc.compiler.util.InternalError extends java.lang.Error {
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.InternalError(java.lang.String);
-}

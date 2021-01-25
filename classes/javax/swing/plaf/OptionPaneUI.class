@@ -1,6 +1,0 @@
-Compiled from "OptionPaneUI.java"
-public abstract class javax.swing.plaf.OptionPaneUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.OptionPaneUI();
-  public abstract void selectInitialValue(javax.swing.JOptionPane);
-  public abstract boolean containsCustomComponents(javax.swing.JOptionPane);
-}

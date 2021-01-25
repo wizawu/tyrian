@@ -1,9 +1,0 @@
-Compiled from "StandardDoclet.java"
-public class jdk.javadoc.doclet.StandardDoclet implements jdk.javadoc.doclet.Doclet {
-  public jdk.javadoc.doclet.StandardDoclet();
-  public void init(java.util.Locale, jdk.javadoc.doclet.Reporter);
-  public java.lang.String getName();
-  public java.util.Set<jdk.javadoc.doclet.Doclet$Option> getSupportedOptions();
-  public javax.lang.model.SourceVersion getSupportedSourceVersion();
-  public boolean run(jdk.javadoc.doclet.DocletEnvironment);
-}

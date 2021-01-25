@@ -1,8 +1,0 @@
-Compiled from "LCMSProfile.java"
-final class sun.java2d.cmm.lcms.LCMSProfile extends sun.java2d.cmm.Profile {
-  sun.java2d.cmm.lcms.LCMSProfile(long, java.lang.Object);
-  long getLcmsPtr();
-  sun.java2d.cmm.lcms.LCMSProfile$TagData getTag(int);
-  void clearTagCache();
-  static long access$000(sun.java2d.cmm.lcms.LCMSProfile);
-}

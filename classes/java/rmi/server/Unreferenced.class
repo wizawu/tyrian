@@ -1,4 +1,0 @@
-Compiled from "Unreferenced.java"
-public interface java.rmi.server.Unreferenced {
-  public abstract void unreferenced();
-}

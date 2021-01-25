@@ -1,7 +1,0 @@
-Compiled from "Node_Array.java"
-public class sun.jvm.hotspot.opto.Node_Array extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.opto.Node_Array(sun.jvm.hotspot.debugger.Address);
-  public int Size();
-  public sun.jvm.hotspot.opto.Node at(int);
-  static {};
-}

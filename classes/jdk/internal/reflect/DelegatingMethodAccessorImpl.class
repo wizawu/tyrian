@@ -1,6 +1,0 @@
-Compiled from "DelegatingMethodAccessorImpl.java"
-class jdk.internal.reflect.DelegatingMethodAccessorImpl extends jdk.internal.reflect.MethodAccessorImpl {
-  jdk.internal.reflect.DelegatingMethodAccessorImpl(jdk.internal.reflect.MethodAccessorImpl);
-  public java.lang.Object invoke(java.lang.Object, java.lang.Object[]) throws java.lang.IllegalArgumentException, java.lang.reflect.InvocationTargetException;
-  void setDelegate(jdk.internal.reflect.MethodAccessorImpl);
-}

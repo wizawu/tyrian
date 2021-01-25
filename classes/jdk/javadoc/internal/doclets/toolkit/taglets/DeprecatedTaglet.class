@@ -1,5 +1,0 @@
-Compiled from "DeprecatedTaglet.java"
-public class jdk.javadoc.internal.doclets.toolkit.taglets.DeprecatedTaglet extends jdk.javadoc.internal.doclets.toolkit.taglets.BaseTaglet {
-  public jdk.javadoc.internal.doclets.toolkit.taglets.DeprecatedTaglet();
-  public jdk.javadoc.internal.doclets.toolkit.Content getTagletOutput(javax.lang.model.element.Element, jdk.javadoc.internal.doclets.toolkit.taglets.TagletWriter);
-}

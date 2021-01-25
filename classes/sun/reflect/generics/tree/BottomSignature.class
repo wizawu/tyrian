@@ -1,6 +1,0 @@
-Compiled from "BottomSignature.java"
-public class sun.reflect.generics.tree.BottomSignature implements sun.reflect.generics.tree.FieldTypeSignature {
-  public static sun.reflect.generics.tree.BottomSignature make();
-  public void accept(sun.reflect.generics.visitor.TypeTreeVisitor<?>);
-  static {};
-}

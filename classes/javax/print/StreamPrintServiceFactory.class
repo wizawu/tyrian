@@ -1,8 +1,0 @@
-Compiled from "StreamPrintServiceFactory.java"
-public abstract class javax.print.StreamPrintServiceFactory {
-  public javax.print.StreamPrintServiceFactory();
-  public static javax.print.StreamPrintServiceFactory[] lookupStreamPrintServiceFactories(javax.print.DocFlavor, java.lang.String);
-  public abstract java.lang.String getOutputFormat();
-  public abstract javax.print.DocFlavor[] getSupportedDocFlavors();
-  public abstract javax.print.StreamPrintService getPrintService(java.io.OutputStream);
-}

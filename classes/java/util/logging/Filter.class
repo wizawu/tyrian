@@ -1,4 +1,0 @@
-Compiled from "Filter.java"
-public interface java.util.logging.Filter {
-  public abstract boolean isLoggable(java.util.logging.LogRecord);
-}

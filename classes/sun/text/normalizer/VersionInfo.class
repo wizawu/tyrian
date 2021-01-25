@@ -1,7 +1,0 @@
-Compiled from "VersionInfo.java"
-public final class sun.text.normalizer.VersionInfo {
-  public static sun.text.normalizer.VersionInfo getInstance(java.lang.String);
-  public static sun.text.normalizer.VersionInfo getInstance(int, int, int, int);
-  public int compareTo(sun.text.normalizer.VersionInfo);
-  static {};
-}

@@ -1,7 +1,0 @@
-Compiled from "MatchOps.java"
-final class java.util.stream.MatchOps {
-  public static <T> java.util.stream.TerminalOp<T, java.lang.Boolean> makeRef(java.util.function.Predicate<? super T>, java.util.stream.MatchOps$MatchKind);
-  public static java.util.stream.TerminalOp<java.lang.Integer, java.lang.Boolean> makeInt(java.util.function.IntPredicate, java.util.stream.MatchOps$MatchKind);
-  public static java.util.stream.TerminalOp<java.lang.Long, java.lang.Boolean> makeLong(java.util.function.LongPredicate, java.util.stream.MatchOps$MatchKind);
-  public static java.util.stream.TerminalOp<java.lang.Double, java.lang.Boolean> makeDouble(java.util.function.DoublePredicate, java.util.stream.MatchOps$MatchKind);
-}

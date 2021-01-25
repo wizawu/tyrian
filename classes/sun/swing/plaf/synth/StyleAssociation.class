@@ -1,9 +1,0 @@
-Compiled from "StyleAssociation.java"
-public class sun.swing.plaf.synth.StyleAssociation {
-  public static sun.swing.plaf.synth.StyleAssociation createStyleAssociation(java.lang.String, javax.swing.plaf.synth.SynthStyle) throws java.util.regex.PatternSyntaxException;
-  public static sun.swing.plaf.synth.StyleAssociation createStyleAssociation(java.lang.String, javax.swing.plaf.synth.SynthStyle, int) throws java.util.regex.PatternSyntaxException;
-  public int getID();
-  public synchronized boolean matches(java.lang.CharSequence);
-  public java.lang.String getText();
-  public javax.swing.plaf.synth.SynthStyle getStyle();
-}

@@ -1,7 +1,0 @@
-Compiled from "PKCS11RuntimeException.java"
-public class sun.security.pkcs11.wrapper.PKCS11RuntimeException extends java.lang.RuntimeException {
-  public sun.security.pkcs11.wrapper.PKCS11RuntimeException();
-  public sun.security.pkcs11.wrapper.PKCS11RuntimeException(java.lang.String);
-  public sun.security.pkcs11.wrapper.PKCS11RuntimeException(java.lang.Exception);
-  public sun.security.pkcs11.wrapper.PKCS11RuntimeException(java.lang.String, java.lang.Exception);
-}

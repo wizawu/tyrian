@@ -1,8 +1,0 @@
-Compiled from "SeqNumber.java"
-public interface sun.security.krb5.internal.SeqNumber {
-  public abstract void randInit();
-  public abstract void init(int);
-  public abstract int current();
-  public abstract int next();
-  public abstract int step();
-}

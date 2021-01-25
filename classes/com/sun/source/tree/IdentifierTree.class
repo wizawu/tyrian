@@ -1,4 +1,0 @@
-Compiled from "IdentifierTree.java"
-public interface com.sun.source.tree.IdentifierTree extends com.sun.source.tree.ExpressionTree {
-  public abstract javax.lang.model.element.Name getName();
-}

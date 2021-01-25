@@ -1,8 +1,0 @@
-Compiled from "PKCS11Exception.java"
-public class sun.security.pkcs11.wrapper.PKCS11Exception extends java.lang.Exception {
-  protected long errorCode_;
-  public sun.security.pkcs11.wrapper.PKCS11Exception(long);
-  public java.lang.String getMessage();
-  public long getErrorCode();
-  static {};
-}

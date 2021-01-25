@@ -1,9 +1,0 @@
-Compiled from "MotifPopupMenuUI.java"
-public class com.sun.java.swing.plaf.motif.MotifPopupMenuUI extends javax.swing.plaf.basic.BasicPopupMenuUI {
-  public com.sun.java.swing.plaf.motif.MotifPopupMenuUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  public java.awt.Dimension getPreferredSize(javax.swing.JComponent);
-  protected javax.swing.event.ChangeListener createChangeListener(javax.swing.JPopupMenu);
-  public boolean isPopupTrigger(java.awt.event.MouseEvent);
-  static {};
-}

@@ -1,4 +1,0 @@
-Compiled from "ContinueTree.java"
-public interface com.sun.source.tree.ContinueTree extends com.sun.source.tree.StatementTree {
-  public abstract javax.lang.model.element.Name getLabel();
-}

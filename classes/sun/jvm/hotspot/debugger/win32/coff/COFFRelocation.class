@@ -1,6 +1,0 @@
-Compiled from "COFFRelocation.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.COFFRelocation {
-  public abstract int getVirtualAddress();
-  public abstract int getSymbolTableIndex();
-  public abstract short getType();
-}

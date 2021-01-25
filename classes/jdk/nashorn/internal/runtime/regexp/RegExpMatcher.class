@@ -1,5 +1,0 @@
-Compiled from "RegExpMatcher.java"
-public interface jdk.nashorn.internal.runtime.regexp.RegExpMatcher extends java.util.regex.MatchResult {
-  public abstract boolean search(int);
-  public abstract java.lang.String getInput();
-}

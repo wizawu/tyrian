@@ -1,6 +1,0 @@
-Compiled from "PositionCall.java"
-final class com.sun.org.apache.xalan.internal.xsltc.compiler.PositionCall extends com.sun.org.apache.xalan.internal.xsltc.compiler.FunctionCall {
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.PositionCall(com.sun.org.apache.xalan.internal.xsltc.compiler.QName);
-  public boolean hasPositionCall();
-  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
-}

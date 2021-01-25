@@ -1,8 +1,0 @@
-Compiled from "SecureLookupSupplier.java"
-public class jdk.dynalink.SecureLookupSupplier {
-  public static final java.lang.String GET_LOOKUP_PERMISSION_NAME;
-  public jdk.dynalink.SecureLookupSupplier(java.lang.invoke.MethodHandles$Lookup);
-  public final java.lang.invoke.MethodHandles$Lookup getLookup();
-  protected final java.lang.invoke.MethodHandles$Lookup getLookupPrivileged();
-  static {};
-}

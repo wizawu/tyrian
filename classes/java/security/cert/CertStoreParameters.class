@@ -1,4 +1,0 @@
-Compiled from "CertStoreParameters.java"
-public interface java.security.cert.CertStoreParameters extends java.lang.Cloneable {
-  public abstract java.lang.Object clone();
-}

@@ -1,4 +1,0 @@
-Compiled from "XSFloat.java"
-public interface com.sun.org.apache.xerces.internal.xs.datatypes.XSFloat {
-  public abstract float getValue();
-}

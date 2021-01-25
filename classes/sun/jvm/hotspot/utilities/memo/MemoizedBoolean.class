@@ -1,6 +1,0 @@
-Compiled from "MemoizedBoolean.java"
-public abstract class sun.jvm.hotspot.utilities.memo.MemoizedBoolean {
-  public sun.jvm.hotspot.utilities.memo.MemoizedBoolean();
-  protected abstract boolean computeValue();
-  public boolean getValue();
-}

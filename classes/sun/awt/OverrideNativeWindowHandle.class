@@ -1,4 +1,0 @@
-Compiled from "OverrideNativeWindowHandle.java"
-public interface sun.awt.OverrideNativeWindowHandle {
-  public abstract void overrideWindowHandle(long);
-}

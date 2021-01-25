@@ -1,9 +1,0 @@
-Compiled from "StackFrameStream.java"
-public class sun.jvm.hotspot.runtime.StackFrameStream {
-  public sun.jvm.hotspot.runtime.StackFrameStream(sun.jvm.hotspot.runtime.JavaThread);
-  public sun.jvm.hotspot.runtime.StackFrameStream(sun.jvm.hotspot.runtime.JavaThread, boolean);
-  public boolean isDone();
-  public void next();
-  public sun.jvm.hotspot.runtime.Frame getCurrent();
-  public sun.jvm.hotspot.runtime.RegisterMap getRegisterMap();
-}

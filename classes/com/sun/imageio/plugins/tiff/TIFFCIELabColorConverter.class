@@ -1,7 +1,0 @@
-Compiled from "TIFFCIELabColorConverter.java"
-public class com.sun.imageio.plugins.tiff.TIFFCIELabColorConverter extends com.sun.imageio.plugins.tiff.TIFFColorConverter {
-  public com.sun.imageio.plugins.tiff.TIFFCIELabColorConverter();
-  public void fromRGB(float, float, float, float[]);
-  public void toRGB(float, float, float, float[]);
-  static {};
-}

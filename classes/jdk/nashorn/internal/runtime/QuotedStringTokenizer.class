@@ -1,8 +1,0 @@
-Compiled from "QuotedStringTokenizer.java"
-public final class jdk.nashorn.internal.runtime.QuotedStringTokenizer {
-  public jdk.nashorn.internal.runtime.QuotedStringTokenizer(java.lang.String);
-  public jdk.nashorn.internal.runtime.QuotedStringTokenizer(java.lang.String, java.lang.String);
-  public int countTokens();
-  public boolean hasMoreTokens();
-  public java.lang.String nextToken();
-}

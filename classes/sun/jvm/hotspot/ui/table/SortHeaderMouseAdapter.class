@@ -1,5 +1,0 @@
-Compiled from "SortHeaderMouseAdapter.java"
-public class sun.jvm.hotspot.ui.table.SortHeaderMouseAdapter extends java.awt.event.MouseAdapter {
-  public sun.jvm.hotspot.ui.table.SortHeaderMouseAdapter(javax.swing.JTable, sun.jvm.hotspot.ui.table.SortableTableModel);
-  public void mouseClicked(java.awt.event.MouseEvent);
-}

@@ -1,6 +1,0 @@
-Compiled from "CheckRestrictedPackage.java"
-class jdk.dynalink.beans.CheckRestrictedPackage {
-  jdk.dynalink.beans.CheckRestrictedPackage();
-  static boolean isRestrictedClass(java.lang.Class<?>);
-  static {};
-}

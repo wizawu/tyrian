@@ -1,5 +1,0 @@
-Compiled from "BadStringOperationException.java"
-public class javax.management.BadStringOperationException extends java.lang.Exception {
-  public javax.management.BadStringOperationException(java.lang.String);
-  public java.lang.String toString();
-}

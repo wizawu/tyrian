@@ -1,6 +1,0 @@
-Compiled from "HostLocaleProviderAdapter.java"
-public class sun.util.locale.provider.HostLocaleProviderAdapter extends sun.util.locale.provider.AuxLocaleProviderAdapter {
-  public sun.util.locale.provider.HostLocaleProviderAdapter();
-  public sun.util.locale.provider.LocaleProviderAdapter$Type getAdapterType();
-  protected <P extends java.util.spi.LocaleServiceProvider> P findInstalledProvider(java.lang.Class<P>);
-}

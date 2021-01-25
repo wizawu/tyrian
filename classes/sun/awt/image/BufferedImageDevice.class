@@ -1,9 +1,0 @@
-Compiled from "BufferedImageDevice.java"
-public class sun.awt.image.BufferedImageDevice extends java.awt.GraphicsDevice {
-  java.awt.GraphicsConfiguration gc;
-  public sun.awt.image.BufferedImageDevice(sun.awt.image.BufferedImageGraphicsConfig);
-  public int getType();
-  public java.lang.String getIDstring();
-  public java.awt.GraphicsConfiguration[] getConfigurations();
-  public java.awt.GraphicsConfiguration getDefaultConfiguration();
-}

@@ -1,7 +1,0 @@
-Compiled from "Transparency.java"
-public interface java.awt.Transparency {
-  public static final int OPAQUE;
-  public static final int BITMASK;
-  public static final int TRANSLUCENT;
-  public abstract int getTransparency();
-}

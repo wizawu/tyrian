@@ -1,5 +1,0 @@
-Compiled from "Pem.java"
-public class sun.security.util.Pem {
-  public sun.security.util.Pem();
-  public static byte[] decode(java.lang.String) throws java.io.IOException;
-}

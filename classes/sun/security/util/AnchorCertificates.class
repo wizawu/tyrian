@@ -1,5 +1,0 @@
-Compiled from "AnchorCertificates.java"
-public class sun.security.util.AnchorCertificates {
-  public static boolean contains(java.security.cert.X509Certificate);
-  static {};
-}

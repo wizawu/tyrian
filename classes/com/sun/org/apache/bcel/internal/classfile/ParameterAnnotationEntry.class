@@ -1,8 +1,0 @@
-Compiled from "ParameterAnnotationEntry.java"
-public class com.sun.org.apache.bcel.internal.classfile.ParameterAnnotationEntry implements com.sun.org.apache.bcel.internal.classfile.Node {
-  com.sun.org.apache.bcel.internal.classfile.ParameterAnnotationEntry(java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
-  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
-  public com.sun.org.apache.bcel.internal.classfile.AnnotationEntry[] getAnnotationEntries();
-  public void dump(java.io.DataOutputStream) throws java.io.IOException;
-  public static com.sun.org.apache.bcel.internal.classfile.ParameterAnnotationEntry[] createParameterAnnotationEntries(com.sun.org.apache.bcel.internal.classfile.Attribute[]);
-}

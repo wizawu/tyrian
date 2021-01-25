@@ -1,5 +1,0 @@
-Compiled from "LabelPeer.java"
-public interface java.awt.peer.LabelPeer extends java.awt.peer.ComponentPeer {
-  public abstract void setText(java.lang.String);
-  public abstract void setAlignment(int);
-}

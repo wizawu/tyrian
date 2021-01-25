@@ -1,7 +1,0 @@
-Compiled from "TextAreaDocument.java"
-class javax.swing.text.html.TextAreaDocument extends javax.swing.text.PlainDocument {
-  java.lang.String initialText;
-  javax.swing.text.html.TextAreaDocument();
-  void reset();
-  void storeInitialText();
-}

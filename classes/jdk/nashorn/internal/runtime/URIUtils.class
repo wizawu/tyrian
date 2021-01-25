@@ -1,7 +1,0 @@
-Compiled from "URIUtils.java"
-public final class jdk.nashorn.internal.runtime.URIUtils {
-  static java.lang.String encodeURI(java.lang.Object, java.lang.String);
-  static java.lang.String encodeURIComponent(java.lang.Object, java.lang.String);
-  static java.lang.String decodeURI(java.lang.Object, java.lang.String);
-  static java.lang.String decodeURIComponent(java.lang.Object, java.lang.String);
-}

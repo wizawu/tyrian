@@ -1,6 +1,0 @@
-Compiled from "DOMStructure.java"
-public abstract class org.jcp.xml.dsig.internal.dom.DOMStructure implements javax.xml.crypto.XMLStructure {
-  public org.jcp.xml.dsig.internal.dom.DOMStructure();
-  public final boolean isFeatureSupported(java.lang.String);
-  public abstract void marshal(org.w3c.dom.Node, java.lang.String, javax.xml.crypto.dom.DOMCryptoContext) throws javax.xml.crypto.MarshalException;
-}

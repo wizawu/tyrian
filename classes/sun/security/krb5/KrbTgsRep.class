@@ -1,7 +1,0 @@
-Compiled from "KrbTgsRep.java"
-public class sun.security.krb5.KrbTgsRep extends sun.security.krb5.KrbKdcRep {
-  sun.security.krb5.KrbTgsRep(byte[], sun.security.krb5.KrbTgsReq) throws sun.security.krb5.KrbException, java.io.IOException;
-  public sun.security.krb5.Credentials getCreds();
-  sun.security.krb5.internal.ccache.Credentials setCredentials();
-  static {};
-}

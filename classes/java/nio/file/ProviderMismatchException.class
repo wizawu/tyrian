@@ -1,6 +1,0 @@
-Compiled from "ProviderMismatchException.java"
-public class java.nio.file.ProviderMismatchException extends java.lang.IllegalArgumentException {
-  static final long serialVersionUID;
-  public java.nio.file.ProviderMismatchException();
-  public java.nio.file.ProviderMismatchException(java.lang.String);
-}

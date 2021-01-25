@@ -1,8 +1,0 @@
-Compiled from "CalendarDataProviderImpl.java"
-public class sun.util.locale.provider.CalendarDataProviderImpl extends java.util.spi.CalendarDataProvider implements sun.util.locale.provider.AvailableLanguageTags {
-  public sun.util.locale.provider.CalendarDataProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
-  public int getFirstDayOfWeek(java.util.Locale);
-  public int getMinimalDaysInFirstWeek(java.util.Locale);
-  public java.util.Locale[] getAvailableLocales();
-  public java.util.Set<java.lang.String> getAvailableLanguageTags();
-}

@@ -1,5 +1,0 @@
-Compiled from "VMMismatchException.java"
-public class com.sun.jdi.VMMismatchException extends java.lang.RuntimeException {
-  public com.sun.jdi.VMMismatchException();
-  public com.sun.jdi.VMMismatchException(java.lang.String);
-}

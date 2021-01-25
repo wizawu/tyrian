@@ -1,5 +1,0 @@
-Compiled from "DebugServer.java"
-public class sun.jvm.hotspot.DebugServer {
-  public sun.jvm.hotspot.DebugServer();
-  public static void main(java.lang.String[]);
-}

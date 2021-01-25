@@ -1,6 +1,0 @@
-Compiled from "ActionUtilities.java"
-class com.sun.java.swing.action.ActionUtilities {
-  public static final java.lang.String IMAGE_DIR;
-  com.sun.java.swing.action.ActionUtilities();
-  public javax.swing.ImageIcon getIcon(java.lang.String);
-}

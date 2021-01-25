@@ -1,8 +1,0 @@
-Compiled from "HmacSHA1KeyGenerator.java"
-public final class com.sun.crypto.provider.HmacSHA1KeyGenerator extends javax.crypto.KeyGeneratorSpi {
-  public com.sun.crypto.provider.HmacSHA1KeyGenerator();
-  protected void engineInit(java.security.SecureRandom);
-  protected void engineInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
-  protected void engineInit(int, java.security.SecureRandom);
-  protected javax.crypto.SecretKey engineGenerateKey();
-}

@@ -1,6 +1,0 @@
-Compiled from "MalformedInputException.java"
-public class java.nio.charset.MalformedInputException extends java.nio.charset.CharacterCodingException {
-  public java.nio.charset.MalformedInputException(int);
-  public int getInputLength();
-  public java.lang.String getMessage();
-}

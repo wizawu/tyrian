@@ -1,5 +1,0 @@
-Compiled from "ObjectStreamException.java"
-public abstract class java.io.ObjectStreamException extends java.io.IOException {
-  protected java.io.ObjectStreamException(java.lang.String);
-  protected java.io.ObjectStreamException();
-}

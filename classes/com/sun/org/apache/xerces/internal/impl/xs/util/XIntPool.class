@@ -1,6 +1,0 @@
-Compiled from "XIntPool.java"
-public final class com.sun.org.apache.xerces.internal.impl.xs.util.XIntPool {
-  public com.sun.org.apache.xerces.internal.impl.xs.util.XIntPool();
-  public final com.sun.org.apache.xerces.internal.impl.xs.util.XInt getXInt(int);
-  static {};
-}

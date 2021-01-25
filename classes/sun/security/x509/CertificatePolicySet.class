@@ -1,8 +1,0 @@
-Compiled from "CertificatePolicySet.java"
-public class sun.security.x509.CertificatePolicySet {
-  public sun.security.x509.CertificatePolicySet(java.util.Vector<sun.security.x509.CertificatePolicyId>);
-  public sun.security.x509.CertificatePolicySet(sun.security.util.DerInputStream) throws java.io.IOException;
-  public java.lang.String toString();
-  public void encode(sun.security.util.DerOutputStream) throws java.io.IOException;
-  public java.util.List<sun.security.x509.CertificatePolicyId> getCertPolicyIds();
-}

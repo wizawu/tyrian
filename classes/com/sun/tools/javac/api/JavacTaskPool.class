@@ -1,7 +1,0 @@
-Compiled from "JavacTaskPool.java"
-public class com.sun.tools.javac.api.JavacTaskPool {
-  public com.sun.tools.javac.api.JavacTaskPool(int);
-  public <Z> Z getTask(java.io.Writer, javax.tools.JavaFileManager, javax.tools.DiagnosticListener<? super javax.tools.JavaFileObject>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<java.lang.String>, java.lang.Iterable<? extends javax.tools.JavaFileObject>, com.sun.tools.javac.api.JavacTaskPool$Worker<Z>);
-  public void printStatistics(java.io.PrintStream);
-  static {};
-}

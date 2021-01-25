@@ -1,7 +1,0 @@
-Compiled from "DirectoryManager.java"
-public class javax.naming.spi.DirectoryManager extends javax.naming.spi.NamingManager {
-  javax.naming.spi.DirectoryManager();
-  public static javax.naming.directory.DirContext getContinuationDirContext(javax.naming.CannotProceedException) throws javax.naming.NamingException;
-  public static java.lang.Object getObjectInstance(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>, javax.naming.directory.Attributes) throws java.lang.Exception;
-  public static javax.naming.spi.DirStateFactory$Result getStateToBind(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>, javax.naming.directory.Attributes) throws javax.naming.NamingException;
-}

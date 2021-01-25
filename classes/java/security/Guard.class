@@ -1,4 +1,0 @@
-Compiled from "Guard.java"
-public interface java.security.Guard {
-  public abstract void checkGuard(java.lang.Object) throws java.lang.SecurityException;
-}

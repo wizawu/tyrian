@@ -1,4 +1,0 @@
-Compiled from "SerializerMessages_en.java"
-public final class com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages_en extends com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages {
-  public com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages_en();
-}

@@ -1,4 +1,0 @@
-Compiled from "WindowIDProvider.java"
-public interface sun.awt.WindowIDProvider {
-  public abstract long getWindow();
-}

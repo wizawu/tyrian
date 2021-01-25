@@ -1,9 +1,0 @@
-Compiled from "WindbgOopHandle.java"
-class sun.jvm.hotspot.debugger.windbg.WindbgOopHandle extends sun.jvm.hotspot.debugger.windbg.WindbgAddress implements sun.jvm.hotspot.debugger.OopHandle {
-  sun.jvm.hotspot.debugger.windbg.WindbgOopHandle(sun.jvm.hotspot.debugger.windbg.WindbgDebugger, long);
-  public boolean equals(java.lang.Object);
-  public sun.jvm.hotspot.debugger.Address addOffsetTo(long) throws java.lang.UnsupportedOperationException;
-  public sun.jvm.hotspot.debugger.Address andWithMask(long) throws java.lang.UnsupportedOperationException;
-  public sun.jvm.hotspot.debugger.Address orWithMask(long) throws java.lang.UnsupportedOperationException;
-  public sun.jvm.hotspot.debugger.Address xorWithMask(long) throws java.lang.UnsupportedOperationException;
-}

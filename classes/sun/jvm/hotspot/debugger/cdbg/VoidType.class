@@ -1,3 +1,0 @@
-Compiled from "VoidType.java"
-public interface sun.jvm.hotspot.debugger.cdbg.VoidType extends sun.jvm.hotspot.debugger.cdbg.Type {
-}

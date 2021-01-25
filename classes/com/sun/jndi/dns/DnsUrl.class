@@ -1,6 +1,0 @@
-Compiled from "DnsUrl.java"
-public class com.sun.jndi.dns.DnsUrl extends com.sun.jndi.toolkit.url.Uri {
-  public static com.sun.jndi.dns.DnsUrl[] fromList(java.lang.String) throws java.net.MalformedURLException;
-  public com.sun.jndi.dns.DnsUrl(java.lang.String) throws java.net.MalformedURLException;
-  public java.lang.String getDomain();
-}

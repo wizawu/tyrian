@@ -1,4 +1,0 @@
-Compiled from "RowSorterListener.java"
-public interface javax.swing.event.RowSorterListener extends java.util.EventListener {
-  public abstract void sorterChanged(javax.swing.event.RowSorterEvent);
-}

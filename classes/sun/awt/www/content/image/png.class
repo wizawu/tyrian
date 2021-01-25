@@ -1,6 +1,0 @@
-Compiled from "png.java"
-public class sun.awt.www.content.image.png extends java.net.ContentHandler {
-  public sun.awt.www.content.image.png();
-  public java.lang.Object getContent(java.net.URLConnection) throws java.io.IOException;
-  public java.lang.Object getContent(java.net.URLConnection, java.lang.Class[]) throws java.io.IOException;
-}

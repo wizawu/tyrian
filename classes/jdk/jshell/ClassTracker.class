@@ -1,8 +1,0 @@
-Compiled from "ClassTracker.java"
-class jdk.jshell.ClassTracker {
-  jdk.jshell.ClassTracker();
-  void markLoaded(jdk.jshell.spi.ExecutionControl$ClassBytecodes[]);
-  void markLoaded(jdk.jshell.spi.ExecutionControl$ClassBytecodes[], boolean[]);
-  void setCurrentBytes(java.lang.String, byte[]);
-  jdk.jshell.ClassTracker$ClassInfo get(java.lang.String);
-}

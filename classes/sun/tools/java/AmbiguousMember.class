@@ -1,6 +1,0 @@
-Compiled from "AmbiguousMember.java"
-public class sun.tools.java.AmbiguousMember extends java.lang.Exception {
-  public sun.tools.java.MemberDefinition field1;
-  public sun.tools.java.MemberDefinition field2;
-  public sun.tools.java.AmbiguousMember(sun.tools.java.MemberDefinition, sun.tools.java.MemberDefinition);
-}

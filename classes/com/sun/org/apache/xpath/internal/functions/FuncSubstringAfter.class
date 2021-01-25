@@ -1,6 +1,0 @@
-Compiled from "FuncSubstringAfter.java"
-public class com.sun.org.apache.xpath.internal.functions.FuncSubstringAfter extends com.sun.org.apache.xpath.internal.functions.Function2Args {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.functions.FuncSubstringAfter();
-  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-}

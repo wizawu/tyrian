@@ -1,5 +1,0 @@
-Compiled from "SocketException.java"
-public class java.net.SocketException extends java.io.IOException {
-  public java.net.SocketException(java.lang.String);
-  public java.net.SocketException();
-}

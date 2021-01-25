@@ -1,7 +1,0 @@
-Compiled from "RuntimeMBeanException.java"
-public class javax.management.RuntimeMBeanException extends javax.management.JMRuntimeException {
-  public javax.management.RuntimeMBeanException(java.lang.RuntimeException);
-  public javax.management.RuntimeMBeanException(java.lang.RuntimeException, java.lang.String);
-  public java.lang.RuntimeException getTargetException();
-  public java.lang.Throwable getCause();
-}

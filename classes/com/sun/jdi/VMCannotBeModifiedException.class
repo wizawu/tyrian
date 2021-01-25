@@ -1,5 +1,0 @@
-Compiled from "VMCannotBeModifiedException.java"
-public class com.sun.jdi.VMCannotBeModifiedException extends java.lang.UnsupportedOperationException {
-  public com.sun.jdi.VMCannotBeModifiedException();
-  public com.sun.jdi.VMCannotBeModifiedException(java.lang.String);
-}

@@ -1,6 +1,0 @@
-Compiled from "DeleteOnExitHook.java"
-class java.io.DeleteOnExitHook {
-  static synchronized void add(java.lang.String);
-  static void runHooks();
-  static {};
-}

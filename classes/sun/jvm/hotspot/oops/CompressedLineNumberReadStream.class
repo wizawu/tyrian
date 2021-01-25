@@ -1,8 +1,0 @@
-Compiled from "CompressedLineNumberReadStream.java"
-public class sun.jvm.hotspot.oops.CompressedLineNumberReadStream extends sun.jvm.hotspot.code.CompressedReadStream {
-  public sun.jvm.hotspot.oops.CompressedLineNumberReadStream(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.oops.CompressedLineNumberReadStream(sun.jvm.hotspot.debugger.Address, int);
-  public boolean readPair();
-  public int bci();
-  public int line();
-}

@@ -1,5 +1,0 @@
-Compiled from "RegisterableService.java"
-public interface javax.imageio.spi.RegisterableService {
-  public abstract void onRegistration(javax.imageio.spi.ServiceRegistry, java.lang.Class<?>);
-  public abstract void onDeregistration(javax.imageio.spi.ServiceRegistry, java.lang.Class<?>);
-}

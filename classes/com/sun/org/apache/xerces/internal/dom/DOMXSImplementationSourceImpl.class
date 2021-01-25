@@ -1,6 +1,0 @@
-Compiled from "DOMXSImplementationSourceImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.DOMXSImplementationSourceImpl extends com.sun.org.apache.xerces.internal.dom.DOMImplementationSourceImpl {
-  public com.sun.org.apache.xerces.internal.dom.DOMXSImplementationSourceImpl();
-  public org.w3c.dom.DOMImplementation getDOMImplementation(java.lang.String);
-  public org.w3c.dom.DOMImplementationList getDOMImplementationList(java.lang.String);
-}

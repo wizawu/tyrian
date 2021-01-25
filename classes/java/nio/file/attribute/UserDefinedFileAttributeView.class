@@ -1,9 +1,0 @@
-Compiled from "UserDefinedFileAttributeView.java"
-public interface java.nio.file.attribute.UserDefinedFileAttributeView extends java.nio.file.attribute.FileAttributeView {
-  public abstract java.lang.String name();
-  public abstract java.util.List<java.lang.String> list() throws java.io.IOException;
-  public abstract int size(java.lang.String) throws java.io.IOException;
-  public abstract int read(java.lang.String, java.nio.ByteBuffer) throws java.io.IOException;
-  public abstract int write(java.lang.String, java.nio.ByteBuffer) throws java.io.IOException;
-  public abstract void delete(java.lang.String) throws java.io.IOException;
-}

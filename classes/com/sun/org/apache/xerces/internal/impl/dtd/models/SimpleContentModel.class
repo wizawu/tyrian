@@ -1,7 +1,0 @@
-Compiled from "SimpleContentModel.java"
-public class com.sun.org.apache.xerces.internal.impl.dtd.models.SimpleContentModel implements com.sun.org.apache.xerces.internal.impl.dtd.models.ContentModelValidator {
-  public static final short CHOICE;
-  public static final short SEQUENCE;
-  public com.sun.org.apache.xerces.internal.impl.dtd.models.SimpleContentModel(short, com.sun.org.apache.xerces.internal.xni.QName, com.sun.org.apache.xerces.internal.xni.QName);
-  public int validate(com.sun.org.apache.xerces.internal.xni.QName[], int, int);
-}

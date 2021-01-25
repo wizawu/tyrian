@@ -1,6 +1,0 @@
-Compiled from "DLLCharacteristics.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DLLCharacteristics {
-  public static final short IMAGE_DLLCHARACTERISTICS_NO_BIND;
-  public static final short IMAGE_DLLCHARACTERISTICS_WDM_DRIVER;
-  public static final short IMAGE_DLLCHARACTERISTICS_TERMINAL_SERVER_AWARE;
-}

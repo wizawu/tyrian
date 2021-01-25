@@ -1,8 +1,0 @@
-Compiled from "XML11DTDDVFactoryImpl.java"
-public class com.sun.org.apache.xerces.internal.impl.dv.dtd.XML11DTDDVFactoryImpl extends com.sun.org.apache.xerces.internal.impl.dv.dtd.DTDDVFactoryImpl {
-  static java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator> XML11BUILTINTYPES;
-  public com.sun.org.apache.xerces.internal.impl.dv.dtd.XML11DTDDVFactoryImpl();
-  public com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator getBuiltInDV(java.lang.String);
-  public java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator> getBuiltInTypes();
-  static {};
-}

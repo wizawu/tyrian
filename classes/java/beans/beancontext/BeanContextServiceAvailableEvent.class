@@ -1,8 +1,0 @@
-Compiled from "BeanContextServiceAvailableEvent.java"
-public class java.beans.beancontext.BeanContextServiceAvailableEvent extends java.beans.beancontext.BeanContextEvent {
-  protected java.lang.Class<?> serviceClass;
-  public java.beans.beancontext.BeanContextServiceAvailableEvent(java.beans.beancontext.BeanContextServices, java.lang.Class<?>);
-  public java.beans.beancontext.BeanContextServices getSourceAsBeanContextServices();
-  public java.lang.Class<?> getServiceClass();
-  public java.util.Iterator<?> getCurrentServiceSelectors();
-}

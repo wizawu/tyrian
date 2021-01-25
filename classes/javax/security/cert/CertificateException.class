@@ -1,5 +1,0 @@
-Compiled from "CertificateException.java"
-public class javax.security.cert.CertificateException extends java.lang.Exception {
-  public javax.security.cert.CertificateException();
-  public javax.security.cert.CertificateException(java.lang.String);
-}

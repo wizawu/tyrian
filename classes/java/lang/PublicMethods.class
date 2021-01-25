@@ -1,6 +1,0 @@
-Compiled from "PublicMethods.java"
-final class java.lang.PublicMethods {
-  java.lang.PublicMethods();
-  void merge(java.lang.reflect.Method);
-  java.lang.reflect.Method[] toArray();
-}

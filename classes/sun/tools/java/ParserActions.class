@@ -1,9 +1,0 @@
-Compiled from "ParserActions.java"
-public interface sun.tools.java.ParserActions {
-  public abstract void packageDeclaration(long, sun.tools.java.IdentifierToken);
-  public abstract void importClass(long, sun.tools.java.IdentifierToken);
-  public abstract void importPackage(long, sun.tools.java.IdentifierToken);
-  public abstract sun.tools.java.ClassDefinition beginClass(long, java.lang.String, int, sun.tools.java.IdentifierToken, sun.tools.java.IdentifierToken, sun.tools.java.IdentifierToken[]);
-  public abstract void endClass(long, sun.tools.java.ClassDefinition);
-  public abstract void defineField(long, sun.tools.java.ClassDefinition, java.lang.String, int, sun.tools.java.Type, sun.tools.java.IdentifierToken, sun.tools.java.IdentifierToken[], sun.tools.java.IdentifierToken[], sun.tools.tree.Node);
-}

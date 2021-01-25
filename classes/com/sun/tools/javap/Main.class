@@ -1,6 +1,0 @@
-Compiled from "Main.java"
-public class com.sun.tools.javap.Main {
-  public com.sun.tools.javap.Main();
-  public static void main(java.lang.String[]);
-  public static int run(java.lang.String[], java.io.PrintWriter);
-}

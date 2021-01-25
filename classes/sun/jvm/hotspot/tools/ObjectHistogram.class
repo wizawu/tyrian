@@ -1,9 +1,0 @@
-Compiled from "ObjectHistogram.java"
-public class sun.jvm.hotspot.tools.ObjectHistogram extends sun.jvm.hotspot.tools.Tool {
-  public sun.jvm.hotspot.tools.ObjectHistogram();
-  public sun.jvm.hotspot.tools.ObjectHistogram(sun.jvm.hotspot.debugger.JVMDebugger);
-  public java.lang.String getName();
-  public void run();
-  public void run(java.io.PrintStream, java.io.PrintStream);
-  public static void main(java.lang.String[]);
-}

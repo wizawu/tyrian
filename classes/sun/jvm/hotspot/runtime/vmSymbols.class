@@ -1,6 +1,0 @@
-Compiled from "vmSymbols.java"
-public class sun.jvm.hotspot.runtime.vmSymbols {
-  public sun.jvm.hotspot.runtime.vmSymbols();
-  public static sun.jvm.hotspot.oops.Symbol symbolAt(int);
-  static {};
-}

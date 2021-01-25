@@ -1,8 +1,0 @@
-Compiled from "BasicVoidType.java"
-public class sun.jvm.hotspot.debugger.cdbg.basic.BasicVoidType extends sun.jvm.hotspot.debugger.cdbg.basic.BasicType implements sun.jvm.hotspot.debugger.cdbg.VoidType {
-  public sun.jvm.hotspot.debugger.cdbg.basic.BasicVoidType();
-  public sun.jvm.hotspot.debugger.cdbg.VoidType asVoid();
-  public void iterateObject(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.cdbg.ObjectVisitor, sun.jvm.hotspot.debugger.cdbg.FieldIdentifier);
-  protected sun.jvm.hotspot.debugger.cdbg.Type createCVVariant(int);
-  public void visit(sun.jvm.hotspot.debugger.cdbg.TypeVisitor);
-}

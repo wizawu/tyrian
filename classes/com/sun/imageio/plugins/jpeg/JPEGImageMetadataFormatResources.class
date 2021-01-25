@@ -1,7 +1,0 @@
-Compiled from "JPEGImageMetadataFormatResources.java"
-public class com.sun.imageio.plugins.jpeg.JPEGImageMetadataFormatResources extends com.sun.imageio.plugins.jpeg.JPEGMetadataFormatResources {
-  static final java.lang.Object[][] imageContents;
-  public com.sun.imageio.plugins.jpeg.JPEGImageMetadataFormatResources();
-  protected java.lang.Object[][] getContents();
-  static {};
-}

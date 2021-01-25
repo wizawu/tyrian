@@ -1,9 +1,0 @@
-Compiled from "Decoder.java"
-public final class jdk.internal.net.http.hpack.Decoder {
-  static final boolean $assertionsDisabled;
-  public jdk.internal.net.http.hpack.Decoder(int);
-  public void setMaxCapacity(int);
-  public void decode(java.nio.ByteBuffer, boolean, jdk.internal.net.http.hpack.DecodingCallback) throws java.io.IOException;
-  jdk.internal.net.http.hpack.SimpleHeaderTable getTable();
-  static {};
-}

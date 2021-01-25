@@ -1,3 +1,0 @@
-Compiled from "PrintJobAttribute.java"
-public interface javax.print.attribute.PrintJobAttribute extends javax.print.attribute.Attribute {
-}

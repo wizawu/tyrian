@@ -1,4 +1,0 @@
-Compiled from "KeyPattern.java"
-final class com.sun.org.apache.xalan.internal.xsltc.compiler.KeyPattern extends com.sun.org.apache.xalan.internal.xsltc.compiler.IdKeyPattern {
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.KeyPattern(java.lang.String, java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "SupplementaryLocaleDataProvider.java"
-public class sun.util.resources.provider.SupplementaryLocaleDataProvider extends sun.util.resources.LocaleData$SupplementaryResourceBundleProvider {
-  public sun.util.resources.provider.SupplementaryLocaleDataProvider();
-  public java.util.ResourceBundle getBundle(java.lang.String, java.util.Locale);
-}

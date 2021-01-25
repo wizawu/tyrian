@@ -1,7 +1,0 @@
-Compiled from "HistoryComboBox.java"
-public class sun.jvm.hotspot.ui.HistoryComboBox extends javax.swing.JComboBox {
-  static final int HISTORY_LENGTH;
-  public sun.jvm.hotspot.ui.HistoryComboBox();
-  public java.lang.String getText();
-  public void setText(java.lang.String);
-}

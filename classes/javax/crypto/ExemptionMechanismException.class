@@ -1,5 +1,0 @@
-Compiled from "ExemptionMechanismException.java"
-public class javax.crypto.ExemptionMechanismException extends java.security.GeneralSecurityException {
-  public javax.crypto.ExemptionMechanismException();
-  public javax.crypto.ExemptionMechanismException(java.lang.String);
-}

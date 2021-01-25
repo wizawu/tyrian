@@ -1,4 +1,0 @@
-Compiled from "MethodHandleTransformer.java"
-public interface jdk.dynalink.linker.MethodHandleTransformer {
-  public abstract java.lang.invoke.MethodHandle transform(java.lang.invoke.MethodHandle);
-}

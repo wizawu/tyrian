@@ -1,7 +1,0 @@
-Compiled from "XSNotationDeclaration.java"
-public interface com.sun.org.apache.xerces.internal.xs.XSNotationDeclaration extends com.sun.org.apache.xerces.internal.xs.XSObject {
-  public abstract java.lang.String getSystemId();
-  public abstract java.lang.String getPublicId();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSAnnotation getAnnotation();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
-}

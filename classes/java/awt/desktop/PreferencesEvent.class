@@ -1,4 +1,0 @@
-Compiled from "PreferencesEvent.java"
-public final class java.awt.desktop.PreferencesEvent extends java.awt.desktop.AppEvent {
-  public java.awt.desktop.PreferencesEvent();
-}

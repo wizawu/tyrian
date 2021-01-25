@@ -1,6 +1,0 @@
-Compiled from "DoubleValue.java"
-public interface com.sun.jdi.DoubleValue extends com.sun.jdi.PrimitiveValue, java.lang.Comparable<com.sun.jdi.DoubleValue> {
-  public abstract double value();
-  public abstract boolean equals(java.lang.Object);
-  public abstract int hashCode();
-}

@@ -1,7 +1,0 @@
-Compiled from "State.java"
-interface sun.security.provider.certpath.State extends java.lang.Cloneable {
-  public abstract void updateState(java.security.cert.X509Certificate) throws java.security.cert.CertificateException, java.io.IOException, java.security.cert.CertPathValidatorException;
-  public abstract java.lang.Object clone();
-  public abstract boolean isInitial();
-  public abstract boolean keyParamsNeeded();
-}

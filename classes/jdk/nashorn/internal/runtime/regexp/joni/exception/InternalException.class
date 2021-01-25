@@ -1,4 +1,0 @@
-Compiled from "InternalException.java"
-public class jdk.nashorn.internal.runtime.regexp.joni.exception.InternalException extends jdk.nashorn.internal.runtime.regexp.joni.exception.JOniException {
-  public jdk.nashorn.internal.runtime.regexp.joni.exception.InternalException(java.lang.String);
-}

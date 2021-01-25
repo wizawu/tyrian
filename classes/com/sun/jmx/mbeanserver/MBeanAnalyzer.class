@@ -1,6 +1,0 @@
-Compiled from "MBeanAnalyzer.java"
-class com.sun.jmx.mbeanserver.MBeanAnalyzer<M> {
-  void visit(com.sun.jmx.mbeanserver.MBeanAnalyzer$MBeanVisitor<M>);
-  static <M> com.sun.jmx.mbeanserver.MBeanAnalyzer<M> analyzer(java.lang.Class<?>, com.sun.jmx.mbeanserver.MBeanIntrospector<M>) throws javax.management.NotCompliantMBeanException;
-  static java.util.List<java.lang.reflect.Method> eliminateCovariantMethods(java.util.List<java.lang.reflect.Method>);
-}

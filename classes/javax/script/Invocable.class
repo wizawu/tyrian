@@ -1,7 +1,0 @@
-Compiled from "Invocable.java"
-public interface javax.script.Invocable {
-  public abstract java.lang.Object invokeMethod(java.lang.Object, java.lang.String, java.lang.Object...) throws javax.script.ScriptException, java.lang.NoSuchMethodException;
-  public abstract java.lang.Object invokeFunction(java.lang.String, java.lang.Object...) throws javax.script.ScriptException, java.lang.NoSuchMethodException;
-  public abstract <T> T getInterface(java.lang.Class<T>);
-  public abstract <T> T getInterface(java.lang.Object, java.lang.Class<T>);
-}

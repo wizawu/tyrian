@@ -1,8 +1,0 @@
-Compiled from "SignedObject.java"
-public final class java.security.SignedObject implements java.io.Serializable {
-  public java.security.SignedObject(java.io.Serializable, java.security.PrivateKey, java.security.Signature) throws java.io.IOException, java.security.InvalidKeyException, java.security.SignatureException;
-  public java.lang.Object getObject() throws java.io.IOException, java.lang.ClassNotFoundException;
-  public byte[] getSignature();
-  public java.lang.String getAlgorithm();
-  public boolean verify(java.security.PublicKey, java.security.Signature) throws java.security.InvalidKeyException, java.security.SignatureException;
-}

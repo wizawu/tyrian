@@ -1,5 +1,0 @@
-Compiled from "MessageHandler.java"
-public class com.sun.org.apache.xalan.internal.xsltc.runtime.MessageHandler {
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.MessageHandler();
-  public void displayMessage(java.lang.String);
-}

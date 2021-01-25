@@ -1,4 +1,0 @@
-Compiled from "Painter.java"
-public interface javax.swing.Painter<T> {
-  public abstract void paint(java.awt.Graphics2D, T, int, int);
-}

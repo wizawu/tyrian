@@ -1,6 +1,0 @@
-Compiled from "Monitor.java"
-public final class sun.java2d.marlin.stats.Monitor extends sun.java2d.marlin.stats.StatLong {
-  public sun.java2d.marlin.stats.Monitor(java.lang.String);
-  public void start();
-  public void stop();
-}

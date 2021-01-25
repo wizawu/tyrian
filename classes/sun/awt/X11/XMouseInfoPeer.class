@@ -1,8 +1,0 @@
-Compiled from "XMouseInfoPeer.java"
-public final class sun.awt.X11.XMouseInfoPeer implements java.awt.peer.MouseInfoPeer {
-  static final boolean $assertionsDisabled;
-  sun.awt.X11.XMouseInfoPeer();
-  public int fillPointWithCoords(java.awt.Point);
-  public boolean isWindowUnderMouse(java.awt.Window);
-  static {};
-}

@@ -1,9 +1,0 @@
-Compiled from "InetAddressImpl.java"
-interface java.net.InetAddressImpl {
-  public abstract java.lang.String getLocalHostName() throws java.net.UnknownHostException;
-  public abstract java.net.InetAddress[] lookupAllHostAddr(java.lang.String) throws java.net.UnknownHostException;
-  public abstract java.lang.String getHostByAddr(byte[]) throws java.net.UnknownHostException;
-  public abstract java.net.InetAddress anyLocalAddress();
-  public abstract java.net.InetAddress loopbackAddress();
-  public abstract boolean isReachable(java.net.InetAddress, int, java.net.NetworkInterface, int) throws java.io.IOException;
-}

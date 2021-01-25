@@ -1,7 +1,0 @@
-Compiled from "CSSMediaRule.java"
-public interface org.w3c.dom.css.CSSMediaRule extends org.w3c.dom.css.CSSRule {
-  public abstract org.w3c.dom.stylesheets.MediaList getMedia();
-  public abstract org.w3c.dom.css.CSSRuleList getCssRules();
-  public abstract int insertRule(java.lang.String, int) throws org.w3c.dom.DOMException;
-  public abstract void deleteRule(int) throws org.w3c.dom.DOMException;
-}

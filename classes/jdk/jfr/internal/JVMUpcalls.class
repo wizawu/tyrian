@@ -1,7 +1,0 @@
-Compiled from "JVMUpcalls.java"
-final class jdk.jfr.internal.JVMUpcalls {
-  jdk.jfr.internal.JVMUpcalls();
-  static byte[] onRetransform(long, boolean, java.lang.Class<?>, byte[]) throws java.lang.Throwable;
-  static byte[] bytesForEagerInstrumentation(long, boolean, java.lang.Class<?>, byte[]) throws java.lang.Throwable;
-  static java.lang.Thread createRecorderThread(java.lang.ThreadGroup, java.lang.ClassLoader);
-}

@@ -1,4 +1,0 @@
-Compiled from "PrimitiveIterator.java"
-public interface java.util.PrimitiveIterator<T, T_CONS> extends java.util.Iterator<T> {
-  public abstract void forEachRemaining(T_CONS);
-}

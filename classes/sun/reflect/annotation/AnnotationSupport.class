@@ -1,7 +1,0 @@
-Compiled from "AnnotationSupport.java"
-public final class sun.reflect.annotation.AnnotationSupport {
-  public sun.reflect.annotation.AnnotationSupport();
-  public static <A extends java.lang.annotation.Annotation> A[] getDirectlyAndIndirectlyPresent(java.util.Map<java.lang.Class<? extends java.lang.annotation.Annotation>, java.lang.annotation.Annotation>, java.lang.Class<A>);
-  public static <A extends java.lang.annotation.Annotation> A[] getAssociatedAnnotations(java.util.Map<java.lang.Class<? extends java.lang.annotation.Annotation>, java.lang.annotation.Annotation>, java.lang.Class<?>, java.lang.Class<A>);
-  static {};
-}

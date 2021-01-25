@@ -1,9 +1,0 @@
-Compiled from "CookieStore.java"
-public interface java.net.CookieStore {
-  public abstract void add(java.net.URI, java.net.HttpCookie);
-  public abstract java.util.List<java.net.HttpCookie> get(java.net.URI);
-  public abstract java.util.List<java.net.HttpCookie> getCookies();
-  public abstract java.util.List<java.net.URI> getURIs();
-  public abstract boolean remove(java.net.URI, java.net.HttpCookie);
-  public abstract boolean removeAll();
-}

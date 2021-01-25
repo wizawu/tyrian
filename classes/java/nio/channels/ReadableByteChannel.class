@@ -1,4 +1,0 @@
-Compiled from "ReadableByteChannel.java"
-public interface java.nio.channels.ReadableByteChannel extends java.nio.channels.Channel {
-  public abstract int read(java.nio.ByteBuffer) throws java.io.IOException;
-}

@@ -1,4 +1,0 @@
-Compiled from "Locatable.java"
-public interface com.sun.jdi.Locatable {
-  public abstract com.sun.jdi.Location location();
-}

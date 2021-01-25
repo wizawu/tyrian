@@ -1,8 +1,0 @@
-Compiled from "InetAddressConverter.java"
-public class jdk.internal.joptsimple.util.InetAddressConverter implements jdk.internal.joptsimple.ValueConverter<java.net.InetAddress> {
-  public jdk.internal.joptsimple.util.InetAddressConverter();
-  public java.net.InetAddress convert(java.lang.String);
-  public java.lang.Class<java.net.InetAddress> valueType();
-  public java.lang.String valuePattern();
-  public java.lang.Object convert(java.lang.String);
-}

@@ -1,6 +1,0 @@
-Compiled from "FuncUnparsedEntityURI.java"
-public class com.sun.org.apache.xpath.internal.functions.FuncUnparsedEntityURI extends com.sun.org.apache.xpath.internal.functions.FunctionOneArg {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.functions.FuncUnparsedEntityURI();
-  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-}

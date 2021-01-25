@@ -1,7 +1,0 @@
-Compiled from "ProxyClassesDumper.java"
-final class java.lang.invoke.ProxyClassesDumper {
-  public static java.lang.invoke.ProxyClassesDumper getInstance(java.lang.String);
-  public static java.lang.String encodeForFilename(java.lang.String);
-  public void dumpClass(java.lang.String, byte[]);
-  static {};
-}

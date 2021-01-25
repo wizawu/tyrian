@@ -1,6 +1,0 @@
-Compiled from "XSMessageFormatter.java"
-public class com.sun.org.apache.xerces.internal.impl.xs.XSMessageFormatter implements com.sun.org.apache.xerces.internal.util.MessageFormatter {
-  public static final java.lang.String SCHEMA_DOMAIN;
-  public com.sun.org.apache.xerces.internal.impl.xs.XSMessageFormatter();
-  public java.lang.String formatMessage(java.util.Locale, java.lang.String, java.lang.Object[]) throws java.util.MissingResourceException;
-}

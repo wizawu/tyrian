@@ -1,9 +1,0 @@
-Compiled from "APOptions.java"
-public class sun.security.krb5.internal.APOptions extends sun.security.krb5.internal.util.KerberosFlags {
-  public sun.security.krb5.internal.APOptions();
-  public sun.security.krb5.internal.APOptions(int) throws sun.security.krb5.Asn1Exception;
-  public sun.security.krb5.internal.APOptions(int, byte[]) throws sun.security.krb5.Asn1Exception;
-  public sun.security.krb5.internal.APOptions(boolean[]) throws sun.security.krb5.Asn1Exception;
-  public sun.security.krb5.internal.APOptions(sun.security.util.DerValue) throws java.io.IOException, sun.security.krb5.Asn1Exception;
-  public static sun.security.krb5.internal.APOptions parse(sun.security.util.DerInputStream, byte, boolean) throws sun.security.krb5.Asn1Exception, java.io.IOException;
-}

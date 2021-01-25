@@ -1,9 +1,0 @@
-Compiled from "CK_DATE.java"
-public class sun.security.pkcs11.wrapper.CK_DATE implements java.lang.Cloneable {
-  public char[] year;
-  public char[] month;
-  public char[] day;
-  public sun.security.pkcs11.wrapper.CK_DATE(char[], char[], char[]);
-  public java.lang.Object clone();
-  public java.lang.String toString();
-}

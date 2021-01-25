@@ -1,3 +1,0 @@
-Compiled from "DigestMethodParameterSpec.java"
-public interface javax.xml.crypto.dsig.spec.DigestMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
-}

@@ -1,7 +1,0 @@
-Compiled from "InvalidKeyException.java"
-public class java.security.InvalidKeyException extends java.security.KeyException {
-  public java.security.InvalidKeyException();
-  public java.security.InvalidKeyException(java.lang.String);
-  public java.security.InvalidKeyException(java.lang.String, java.lang.Throwable);
-  public java.security.InvalidKeyException(java.lang.Throwable);
-}

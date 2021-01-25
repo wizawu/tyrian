@@ -1,5 +1,0 @@
-Compiled from "ShardingKeyBuilder.java"
-public interface java.sql.ShardingKeyBuilder {
-  public abstract java.sql.ShardingKeyBuilder subkey(java.lang.Object, java.sql.SQLType);
-  public abstract java.sql.ShardingKey build() throws java.sql.SQLException;
-}

@@ -1,6 +1,0 @@
-Compiled from "ClassTypeSignature.java"
-public class sun.reflect.generics.tree.ClassTypeSignature implements sun.reflect.generics.tree.FieldTypeSignature {
-  public static sun.reflect.generics.tree.ClassTypeSignature make(java.util.List<sun.reflect.generics.tree.SimpleClassTypeSignature>);
-  public java.util.List<sun.reflect.generics.tree.SimpleClassTypeSignature> getPath();
-  public void accept(sun.reflect.generics.visitor.TypeTreeVisitor<?>);
-}

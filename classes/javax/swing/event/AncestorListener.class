@@ -1,6 +1,0 @@
-Compiled from "AncestorListener.java"
-public interface javax.swing.event.AncestorListener extends java.util.EventListener {
-  public abstract void ancestorAdded(javax.swing.event.AncestorEvent);
-  public abstract void ancestorRemoved(javax.swing.event.AncestorEvent);
-  public abstract void ancestorMoved(javax.swing.event.AncestorEvent);
-}

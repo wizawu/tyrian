@@ -1,8 +1,0 @@
-Compiled from "PolicyQualifierInfo.java"
-public class java.security.cert.PolicyQualifierInfo {
-  public java.security.cert.PolicyQualifierInfo(byte[]) throws java.io.IOException;
-  public final java.lang.String getPolicyQualifierId();
-  public final byte[] getEncoded();
-  public final byte[] getPolicyQualifier();
-  public java.lang.String toString();
-}

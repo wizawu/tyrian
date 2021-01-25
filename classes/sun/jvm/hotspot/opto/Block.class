@@ -1,9 +1,0 @@
-Compiled from "Block.java"
-public class sun.jvm.hotspot.opto.Block extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.opto.Block(sun.jvm.hotspot.debugger.Address);
-  public int preOrder();
-  public double freq();
-  public sun.jvm.hotspot.opto.Node_List nodes();
-  public void dump(java.io.PrintStream);
-  static {};
-}

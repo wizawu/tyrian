@@ -1,4 +1,0 @@
-Compiled from "DerEncoder.java"
-public interface sun.security.util.DerEncoder {
-  public abstract void derEncode(java.io.OutputStream) throws java.io.IOException;
-}

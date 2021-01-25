@@ -1,4 +1,0 @@
-Compiled from "UnknownGroupException.java"
-public class java.rmi.activation.UnknownGroupException extends java.rmi.activation.ActivationException {
-  public java.rmi.activation.UnknownGroupException(java.lang.String);
-}

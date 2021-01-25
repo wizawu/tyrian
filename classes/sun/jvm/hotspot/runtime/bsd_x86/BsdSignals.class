@@ -1,6 +1,0 @@
-Compiled from "BsdSignals.java"
-public class sun.jvm.hotspot.runtime.bsd_x86.BsdSignals {
-  public sun.jvm.hotspot.runtime.bsd_x86.BsdSignals();
-  public static java.lang.String getSignalName(int);
-  static {};
-}

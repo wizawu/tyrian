@@ -1,5 +1,0 @@
-Compiled from "ClassFormatError.java"
-public class java.lang.ClassFormatError extends java.lang.LinkageError {
-  public java.lang.ClassFormatError();
-  public java.lang.ClassFormatError(java.lang.String);
-}

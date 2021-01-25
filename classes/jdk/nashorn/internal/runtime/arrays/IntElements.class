@@ -1,3 +1,0 @@
-Compiled from "IntElements.java"
-public interface jdk.nashorn.internal.runtime.arrays.IntElements extends jdk.nashorn.internal.runtime.arrays.IntOrLongElements {
-}

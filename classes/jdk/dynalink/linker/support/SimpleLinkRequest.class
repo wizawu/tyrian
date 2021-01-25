@@ -1,9 +1,0 @@
-Compiled from "SimpleLinkRequest.java"
-public class jdk.dynalink.linker.support.SimpleLinkRequest implements jdk.dynalink.linker.LinkRequest {
-  public jdk.dynalink.linker.support.SimpleLinkRequest(jdk.dynalink.CallSiteDescriptor, boolean, java.lang.Object...);
-  public java.lang.Object[] getArguments();
-  public java.lang.Object getReceiver();
-  public jdk.dynalink.CallSiteDescriptor getCallSiteDescriptor();
-  public boolean isCallSiteUnstable();
-  public jdk.dynalink.linker.LinkRequest replaceArguments(jdk.dynalink.CallSiteDescriptor, java.lang.Object...);
-}

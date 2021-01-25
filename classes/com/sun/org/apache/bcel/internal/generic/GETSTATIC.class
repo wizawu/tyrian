@@ -1,8 +1,0 @@
-Compiled from "GETSTATIC.java"
-public class com.sun.org.apache.bcel.internal.generic.GETSTATIC extends com.sun.org.apache.bcel.internal.generic.FieldInstruction implements com.sun.org.apache.bcel.internal.generic.PushInstruction,com.sun.org.apache.bcel.internal.generic.ExceptionThrower {
-  com.sun.org.apache.bcel.internal.generic.GETSTATIC();
-  public com.sun.org.apache.bcel.internal.generic.GETSTATIC(int);
-  public int produceStack(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-  public java.lang.Class<?>[] getExceptions();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

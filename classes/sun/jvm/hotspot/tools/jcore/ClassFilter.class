@@ -1,4 +1,0 @@
-Compiled from "ClassFilter.java"
-public interface sun.jvm.hotspot.tools.jcore.ClassFilter {
-  public abstract boolean canInclude(sun.jvm.hotspot.oops.InstanceKlass);
-}

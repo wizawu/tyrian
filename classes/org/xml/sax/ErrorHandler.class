@@ -1,6 +1,0 @@
-Compiled from "ErrorHandler.java"
-public interface org.xml.sax.ErrorHandler {
-  public abstract void warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
-  public abstract void error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
-  public abstract void fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
-}

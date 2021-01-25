@@ -1,6 +1,0 @@
-Compiled from "FatalError.java"
-public class com.sun.tools.javac.util.FatalError extends java.lang.Error {
-  public com.sun.tools.javac.util.FatalError(com.sun.tools.javac.util.JCDiagnostic);
-  public com.sun.tools.javac.util.FatalError(com.sun.tools.javac.util.JCDiagnostic, java.lang.Throwable);
-  public com.sun.tools.javac.util.FatalError(java.lang.String);
-}

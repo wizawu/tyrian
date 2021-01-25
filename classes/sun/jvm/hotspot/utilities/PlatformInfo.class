@@ -1,8 +1,0 @@
-Compiled from "PlatformInfo.java"
-public class sun.jvm.hotspot.utilities.PlatformInfo {
-  public sun.jvm.hotspot.utilities.PlatformInfo();
-  public static java.lang.String getOS() throws sun.jvm.hotspot.utilities.UnsupportedPlatformException;
-  public static boolean knownCPU(java.lang.String);
-  public static java.lang.String getCPU() throws sun.jvm.hotspot.utilities.UnsupportedPlatformException;
-  public static void main(java.lang.String[]);
-}

@@ -1,6 +1,0 @@
-Compiled from "AttachPermission.java"
-public final class com.sun.tools.attach.AttachPermission extends java.security.BasicPermission {
-  static final long serialVersionUID;
-  public com.sun.tools.attach.AttachPermission(java.lang.String);
-  public com.sun.tools.attach.AttachPermission(java.lang.String, java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "AdaptationException.java"
-final class jdk.nashorn.internal.runtime.linker.AdaptationException extends java.lang.Exception {
-  jdk.nashorn.internal.runtime.linker.AdaptationException(jdk.nashorn.internal.runtime.linker.AdaptationResult$Outcome, java.lang.String);
-  jdk.nashorn.internal.runtime.linker.AdaptationResult getAdaptationResult();
-}

@@ -1,7 +1,0 @@
-Compiled from "Annotation.java"
-public interface java.lang.annotation.Annotation {
-  public abstract boolean equals(java.lang.Object);
-  public abstract int hashCode();
-  public abstract java.lang.String toString();
-  public abstract java.lang.Class<? extends java.lang.annotation.Annotation> annotationType();
-}

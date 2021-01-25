@@ -1,4 +1,0 @@
-Compiled from "IgnorePaintEvent.java"
-public class sun.awt.event.IgnorePaintEvent extends java.awt.event.PaintEvent {
-  public sun.awt.event.IgnorePaintEvent(java.awt.Component, int, java.awt.Rectangle);
-}

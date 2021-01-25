@@ -1,3 +1,0 @@
-Compiled from "DocRootTree.java"
-public interface com.sun.source.doctree.DocRootTree extends com.sun.source.doctree.InlineTagTree {
-}

@@ -1,4 +1,0 @@
-Compiled from "AuxFileRecord.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.AuxFileRecord extends sun.jvm.hotspot.debugger.win32.coff.AuxSymbolRecord {
-  public abstract java.lang.String getName();
-}

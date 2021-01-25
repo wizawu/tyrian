@@ -1,5 +1,0 @@
-Compiled from "HmacSHA1.java"
-public final class com.sun.crypto.provider.HmacSHA1 extends com.sun.crypto.provider.HmacCore {
-  public com.sun.crypto.provider.HmacSHA1() throws java.security.NoSuchAlgorithmException;
-  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
-}

@@ -1,8 +1,0 @@
-Compiled from "HTMLLegendElement.java"
-public interface org.w3c.dom.html.HTMLLegendElement extends org.w3c.dom.html.HTMLElement {
-  public abstract org.w3c.dom.html.HTMLFormElement getForm();
-  public abstract java.lang.String getAccessKey();
-  public abstract void setAccessKey(java.lang.String);
-  public abstract java.lang.String getAlign();
-  public abstract void setAlign(java.lang.String);
-}

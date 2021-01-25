@@ -1,8 +1,0 @@
-Compiled from "DocumentPropertiesUI.java"
-public abstract class sun.print.DocumentPropertiesUI {
-  public static final int DOCUMENTPROPERTIES_ROLE;
-  public static final java.lang.String DOCPROPERTIESCLASSNAME;
-  public sun.print.DocumentPropertiesUI();
-  public abstract javax.print.attribute.PrintRequestAttributeSet showDocumentProperties(java.awt.print.PrinterJob, java.awt.Window, javax.print.PrintService, javax.print.attribute.PrintRequestAttributeSet);
-  static {};
-}

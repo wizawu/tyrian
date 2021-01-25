@@ -1,9 +1,0 @@
-Compiled from "JavaAdapterFactory.java"
-public final class jdk.nashorn.internal.runtime.linker.JavaAdapterFactory {
-  static final boolean $assertionsDisabled;
-  public jdk.nashorn.internal.runtime.linker.JavaAdapterFactory();
-  public static jdk.dynalink.beans.StaticClass getAdapterClassFor(java.lang.Class<?>[], jdk.nashorn.internal.runtime.ScriptObject, java.lang.invoke.MethodHandles$Lookup);
-  public static java.lang.invoke.MethodHandle getConstructor(java.lang.Class<?>, java.lang.Class<?>, java.lang.invoke.MethodHandles$Lookup) throws java.lang.Exception;
-  static boolean isAutoConvertibleFromFunction(java.lang.Class<?>);
-  static {};
-}

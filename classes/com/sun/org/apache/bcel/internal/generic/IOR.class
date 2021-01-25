@@ -1,5 +1,0 @@
-Compiled from "IOR.java"
-public class com.sun.org.apache.bcel.internal.generic.IOR extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
-  public com.sun.org.apache.bcel.internal.generic.IOR();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

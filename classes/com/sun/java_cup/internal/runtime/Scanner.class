@@ -1,4 +1,0 @@
-Compiled from "Scanner.java"
-public interface com.sun.java_cup.internal.runtime.Scanner {
-  public abstract com.sun.java_cup.internal.runtime.Symbol next_token() throws java.lang.Exception;
-}

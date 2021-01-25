@@ -1,7 +1,0 @@
-Compiled from "DefaultHeapVisitor.java"
-public class sun.jvm.hotspot.oops.DefaultHeapVisitor implements sun.jvm.hotspot.oops.HeapVisitor {
-  public sun.jvm.hotspot.oops.DefaultHeapVisitor();
-  public void prologue(long);
-  public boolean doObj(sun.jvm.hotspot.oops.Oop);
-  public void epilogue();
-}

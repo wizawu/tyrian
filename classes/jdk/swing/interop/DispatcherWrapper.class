@@ -1,8 +1,0 @@
-Compiled from "DispatcherWrapper.java"
-public abstract class jdk.swing.interop.DispatcherWrapper {
-  public jdk.swing.interop.DispatcherWrapper();
-  public abstract boolean isDispatchThread();
-  public abstract void scheduleDispatch(java.lang.Runnable);
-  public abstract java.awt.SecondaryLoop createSecondaryLoop();
-  public static void setFwDispatcher(java.awt.EventQueue, jdk.swing.interop.DispatcherWrapper);
-}

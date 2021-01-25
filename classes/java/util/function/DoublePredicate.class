@@ -1,7 +1,0 @@
-Compiled from "DoublePredicate.java"
-public interface java.util.function.DoublePredicate {
-  public abstract boolean test(double);
-  public default java.util.function.DoublePredicate and(java.util.function.DoublePredicate);
-  public default java.util.function.DoublePredicate negate();
-  public default java.util.function.DoublePredicate or(java.util.function.DoublePredicate);
-}

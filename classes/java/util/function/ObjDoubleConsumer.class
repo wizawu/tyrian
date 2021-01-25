@@ -1,4 +1,0 @@
-Compiled from "ObjDoubleConsumer.java"
-public interface java.util.function.ObjDoubleConsumer<T> {
-  public abstract void accept(T, double);
-}

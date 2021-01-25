@@ -1,3 +1,0 @@
-Compiled from "UserPrincipal.java"
-public interface java.nio.file.attribute.UserPrincipal extends java.security.Principal {
-}

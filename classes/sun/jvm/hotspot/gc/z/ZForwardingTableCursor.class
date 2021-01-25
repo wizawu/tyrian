@@ -1,5 +1,0 @@
-Compiled from "ZForwardingTableCursor.java"
-class sun.jvm.hotspot.gc.z.ZForwardingTableCursor {
-  long _value;
-  sun.jvm.hotspot.gc.z.ZForwardingTableCursor();
-}

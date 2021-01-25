@@ -1,4 +1,0 @@
-Compiled from "FlavorEvent.java"
-public class java.awt.datatransfer.FlavorEvent extends java.util.EventObject {
-  public java.awt.datatransfer.FlavorEvent(java.awt.datatransfer.Clipboard);
-}

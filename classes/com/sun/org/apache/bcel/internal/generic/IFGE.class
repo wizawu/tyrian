@@ -1,7 +1,0 @@
-Compiled from "IFGE.java"
-public class com.sun.org.apache.bcel.internal.generic.IFGE extends com.sun.org.apache.bcel.internal.generic.IfInstruction {
-  com.sun.org.apache.bcel.internal.generic.IFGE();
-  public com.sun.org.apache.bcel.internal.generic.IFGE(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
-  public com.sun.org.apache.bcel.internal.generic.IfInstruction negate();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

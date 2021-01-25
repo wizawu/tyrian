@@ -1,7 +1,0 @@
-Compiled from "CipherTextStealing.java"
-final class com.sun.crypto.provider.CipherTextStealing extends com.sun.crypto.provider.CipherBlockChaining {
-  com.sun.crypto.provider.CipherTextStealing(com.sun.crypto.provider.SymmetricCipher);
-  java.lang.String getFeedback();
-  int encryptFinal(byte[], int, int, byte[], int) throws javax.crypto.IllegalBlockSizeException;
-  int decryptFinal(byte[], int, int, byte[], int) throws javax.crypto.IllegalBlockSizeException;
-}

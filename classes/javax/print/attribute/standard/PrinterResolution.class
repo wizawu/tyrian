@@ -1,7 +1,0 @@
-Compiled from "PrinterResolution.java"
-public final class javax.print.attribute.standard.PrinterResolution extends javax.print.attribute.ResolutionSyntax implements javax.print.attribute.DocAttribute,javax.print.attribute.PrintRequestAttribute,javax.print.attribute.PrintJobAttribute {
-  public javax.print.attribute.standard.PrinterResolution(int, int, int);
-  public boolean equals(java.lang.Object);
-  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
-  public final java.lang.String getName();
-}

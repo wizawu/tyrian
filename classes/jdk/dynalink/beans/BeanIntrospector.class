@@ -1,6 +1,0 @@
-Compiled from "BeanIntrospector.java"
-class jdk.dynalink.beans.BeanIntrospector extends jdk.dynalink.beans.FacetIntrospector {
-  jdk.dynalink.beans.BeanIntrospector(java.lang.Class<?>);
-  java.util.Map<java.lang.String, java.lang.invoke.MethodHandle> getInnerClassGetters();
-  java.lang.invoke.MethodHandle editMethodHandle(java.lang.invoke.MethodHandle);
-}

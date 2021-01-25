@@ -1,6 +1,0 @@
-Compiled from "JmxMBeanServerBuilder.java"
-public class com.sun.jmx.mbeanserver.JmxMBeanServerBuilder extends javax.management.MBeanServerBuilder {
-  public com.sun.jmx.mbeanserver.JmxMBeanServerBuilder();
-  public javax.management.MBeanServerDelegate newMBeanServerDelegate();
-  public javax.management.MBeanServer newMBeanServer(java.lang.String, javax.management.MBeanServer, javax.management.MBeanServerDelegate);
-}

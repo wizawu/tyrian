@@ -1,6 +1,0 @@
-Compiled from "StackInstruction.java"
-public abstract class com.sun.org.apache.bcel.internal.generic.StackInstruction extends com.sun.org.apache.bcel.internal.generic.Instruction {
-  com.sun.org.apache.bcel.internal.generic.StackInstruction();
-  protected com.sun.org.apache.bcel.internal.generic.StackInstruction(short);
-  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-}

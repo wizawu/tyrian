@@ -1,8 +1,0 @@
-Compiled from "StaticClassIntrospector.java"
-class jdk.dynalink.beans.StaticClassIntrospector extends jdk.dynalink.beans.FacetIntrospector {
-  jdk.dynalink.beans.StaticClassIntrospector(java.lang.Class<?>);
-  java.util.Map<java.lang.String, java.lang.invoke.MethodHandle> getInnerClassGetters();
-  java.lang.invoke.MethodHandle editMethodHandle(java.lang.invoke.MethodHandle);
-  static java.lang.invoke.MethodHandle editStaticMethodHandle(java.lang.invoke.MethodHandle);
-  static java.lang.invoke.MethodHandle editConstructorMethodHandle(java.lang.invoke.MethodHandle);
-}

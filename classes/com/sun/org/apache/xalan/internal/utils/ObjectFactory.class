@@ -1,7 +1,0 @@
-Compiled from "ObjectFactory.java"
-public class com.sun.org.apache.xalan.internal.utils.ObjectFactory {
-  public com.sun.org.apache.xalan.internal.utils.ObjectFactory();
-  public static java.lang.ClassLoader findClassLoader();
-  public static java.lang.Object newInstance(java.lang.String, boolean) throws com.sun.org.apache.xalan.internal.utils.ConfigurationError;
-  public static java.lang.Class<?> findProviderClass(java.lang.String, boolean) throws java.lang.ClassNotFoundException, com.sun.org.apache.xalan.internal.utils.ConfigurationError;
-}

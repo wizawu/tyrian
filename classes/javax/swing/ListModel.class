@@ -1,7 +1,0 @@
-Compiled from "ListModel.java"
-public interface javax.swing.ListModel<E> {
-  public abstract int getSize();
-  public abstract E getElementAt(int);
-  public abstract void addListDataListener(javax.swing.event.ListDataListener);
-  public abstract void removeListDataListener(javax.swing.event.ListDataListener);
-}

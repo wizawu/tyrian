@@ -1,5 +1,0 @@
-Compiled from "Columns.java"
-class jdk.internal.joptsimple.internal.Columns {
-  jdk.internal.joptsimple.internal.Columns(int, int);
-  java.util.List<jdk.internal.joptsimple.internal.Row> fit(jdk.internal.joptsimple.internal.Row);
-}

@@ -1,8 +1,0 @@
-Compiled from "CK_ECDH1_DERIVE_PARAMS.java"
-public class sun.security.pkcs11.wrapper.CK_ECDH1_DERIVE_PARAMS {
-  public long kdf;
-  public byte[] pSharedData;
-  public byte[] pPublicData;
-  public sun.security.pkcs11.wrapper.CK_ECDH1_DERIVE_PARAMS(long, byte[], byte[]);
-  public java.lang.String toString();
-}

@@ -1,5 +1,0 @@
-Compiled from "WithTree.java"
-public interface jdk.nashorn.api.tree.WithTree extends jdk.nashorn.api.tree.StatementTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getScope();
-  public abstract jdk.nashorn.api.tree.StatementTree getStatement();
-}

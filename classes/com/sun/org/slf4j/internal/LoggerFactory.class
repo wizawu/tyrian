@@ -1,5 +1,0 @@
-Compiled from "LoggerFactory.java"
-public class com.sun.org.slf4j.internal.LoggerFactory {
-  public com.sun.org.slf4j.internal.LoggerFactory();
-  public static com.sun.org.slf4j.internal.Logger getLogger(java.lang.Class<?>);
-}

@@ -1,8 +1,0 @@
-Compiled from "FailWebSocketException.java"
-final class jdk.internal.net.http.websocket.FailWebSocketException extends java.lang.RuntimeException {
-  jdk.internal.net.http.websocket.FailWebSocketException(java.lang.String);
-  jdk.internal.net.http.websocket.FailWebSocketException(java.lang.String, int);
-  int getStatusCode();
-  public jdk.internal.net.http.websocket.FailWebSocketException initCause(java.lang.Throwable);
-  public java.lang.Throwable initCause(java.lang.Throwable);
-}

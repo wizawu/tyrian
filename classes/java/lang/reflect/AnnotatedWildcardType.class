@@ -1,6 +1,0 @@
-Compiled from "AnnotatedWildcardType.java"
-public interface java.lang.reflect.AnnotatedWildcardType extends java.lang.reflect.AnnotatedType {
-  public abstract java.lang.reflect.AnnotatedType[] getAnnotatedLowerBounds();
-  public abstract java.lang.reflect.AnnotatedType[] getAnnotatedUpperBounds();
-  public abstract java.lang.reflect.AnnotatedType getAnnotatedOwnerType();
-}

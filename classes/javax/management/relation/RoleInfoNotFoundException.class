@@ -1,5 +1,0 @@
-Compiled from "RoleInfoNotFoundException.java"
-public class javax.management.relation.RoleInfoNotFoundException extends javax.management.relation.RelationException {
-  public javax.management.relation.RoleInfoNotFoundException();
-  public javax.management.relation.RoleInfoNotFoundException(java.lang.String);
-}

@@ -1,4 +1,0 @@
-Compiled from "FileSystemLoopException.java"
-public class java.nio.file.FileSystemLoopException extends java.nio.file.FileSystemException {
-  public java.nio.file.FileSystemLoopException(java.lang.String);
-}

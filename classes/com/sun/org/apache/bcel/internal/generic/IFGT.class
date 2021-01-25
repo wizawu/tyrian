@@ -1,7 +1,0 @@
-Compiled from "IFGT.java"
-public class com.sun.org.apache.bcel.internal.generic.IFGT extends com.sun.org.apache.bcel.internal.generic.IfInstruction {
-  com.sun.org.apache.bcel.internal.generic.IFGT();
-  public com.sun.org.apache.bcel.internal.generic.IFGT(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
-  public com.sun.org.apache.bcel.internal.generic.IfInstruction negate();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

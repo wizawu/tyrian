@@ -1,5 +1,0 @@
-Compiled from "Font2DHandle.java"
-public final class sun.font.Font2DHandle {
-  public sun.font.Font2D font2D;
-  public sun.font.Font2DHandle(sun.font.Font2D);
-}

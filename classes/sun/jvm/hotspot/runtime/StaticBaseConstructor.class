@@ -1,6 +1,0 @@
-Compiled from "StaticBaseConstructor.java"
-public class sun.jvm.hotspot.runtime.StaticBaseConstructor<T> extends sun.jvm.hotspot.runtime.InstanceConstructor {
-  public sun.jvm.hotspot.runtime.StaticBaseConstructor(java.lang.Class<T>);
-  public sun.jvm.hotspot.runtime.VMObject instantiateWrapperFor(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.types.WrongTypeException;
-  public java.lang.Object instantiateWrapperFor(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.types.WrongTypeException;
-}

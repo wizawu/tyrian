@@ -1,9 +1,0 @@
-Compiled from "PackerImpl.java"
-public class com.sun.java.util.jar.pack.PackerImpl extends com.sun.java.util.jar.pack.TLGlobals implements java.util.jar.Pack200$Packer {
-  static final boolean $assertionsDisabled;
-  public com.sun.java.util.jar.pack.PackerImpl();
-  public java.util.SortedMap<java.lang.String, java.lang.String> properties();
-  public synchronized void pack(java.util.jar.JarFile, java.io.OutputStream) throws java.io.IOException;
-  public synchronized void pack(java.util.jar.JarInputStream, java.io.OutputStream) throws java.io.IOException;
-  static {};
-}

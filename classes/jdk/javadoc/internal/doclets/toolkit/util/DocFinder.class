@@ -1,5 +1,0 @@
-Compiled from "DocFinder.java"
-public class jdk.javadoc.internal.doclets.toolkit.util.DocFinder {
-  public jdk.javadoc.internal.doclets.toolkit.util.DocFinder();
-  public static jdk.javadoc.internal.doclets.toolkit.util.DocFinder$Output search(jdk.javadoc.internal.doclets.toolkit.BaseConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocFinder$Input);
-}

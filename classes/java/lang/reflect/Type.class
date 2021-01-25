@@ -1,4 +1,0 @@
-Compiled from "Type.java"
-public interface java.lang.reflect.Type {
-  public default java.lang.String getTypeName();
-}

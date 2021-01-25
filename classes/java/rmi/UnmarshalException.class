@@ -1,5 +1,0 @@
-Compiled from "UnmarshalException.java"
-public class java.rmi.UnmarshalException extends java.rmi.RemoteException {
-  public java.rmi.UnmarshalException(java.lang.String);
-  public java.rmi.UnmarshalException(java.lang.String, java.lang.Exception);
-}

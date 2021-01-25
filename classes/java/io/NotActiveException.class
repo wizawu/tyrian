@@ -1,5 +1,0 @@
-Compiled from "NotActiveException.java"
-public class java.io.NotActiveException extends java.io.ObjectStreamException {
-  public java.io.NotActiveException(java.lang.String);
-  public java.io.NotActiveException();
-}

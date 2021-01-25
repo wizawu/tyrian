@@ -1,9 +1,0 @@
-Compiled from "NotificationFilterSupport.java"
-public class javax.management.NotificationFilterSupport implements javax.management.NotificationFilter {
-  public javax.management.NotificationFilterSupport();
-  public synchronized boolean isNotificationEnabled(javax.management.Notification);
-  public synchronized void enableType(java.lang.String) throws java.lang.IllegalArgumentException;
-  public synchronized void disableType(java.lang.String);
-  public synchronized void disableAllTypes();
-  public synchronized java.util.Vector<java.lang.String> getEnabledTypes();
-}

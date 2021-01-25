@@ -1,5 +1,0 @@
-Compiled from "GenericDeclRepository.java"
-public abstract class sun.reflect.generics.repository.GenericDeclRepository<S extends sun.reflect.generics.tree.Signature> extends sun.reflect.generics.repository.AbstractRepository<S> {
-  protected sun.reflect.generics.repository.GenericDeclRepository(java.lang.String, sun.reflect.generics.factory.GenericsFactory);
-  public java.lang.reflect.TypeVariable<?>[] getTypeParameters();
-}

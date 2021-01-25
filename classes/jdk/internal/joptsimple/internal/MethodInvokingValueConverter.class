@@ -1,7 +1,0 @@
-Compiled from "MethodInvokingValueConverter.java"
-class jdk.internal.joptsimple.internal.MethodInvokingValueConverter<V> implements jdk.internal.joptsimple.ValueConverter<V> {
-  jdk.internal.joptsimple.internal.MethodInvokingValueConverter(java.lang.reflect.Method, java.lang.Class<V>);
-  public V convert(java.lang.String);
-  public java.lang.Class<V> valueType();
-  public java.lang.String valuePattern();
-}

@@ -1,9 +1,0 @@
-Compiled from "AccessorElementHandler.java"
-abstract class com.sun.beans.decoder.AccessorElementHandler extends com.sun.beans.decoder.ElementHandler {
-  com.sun.beans.decoder.AccessorElementHandler();
-  public void addAttribute(java.lang.String, java.lang.String);
-  protected final void addArgument(java.lang.Object);
-  protected final com.sun.beans.decoder.ValueObject getValueObject();
-  protected abstract java.lang.Object getValue(java.lang.String);
-  protected abstract void setValue(java.lang.String, java.lang.Object);
-}

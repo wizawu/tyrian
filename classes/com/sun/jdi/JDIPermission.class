@@ -1,5 +1,0 @@
-Compiled from "JDIPermission.java"
-public final class com.sun.jdi.JDIPermission extends java.security.BasicPermission {
-  public com.sun.jdi.JDIPermission(java.lang.String);
-  public com.sun.jdi.JDIPermission(java.lang.String, java.lang.String) throws java.lang.IllegalArgumentException;
-}

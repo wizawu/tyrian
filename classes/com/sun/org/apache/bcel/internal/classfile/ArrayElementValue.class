@@ -1,9 +1,0 @@
-Compiled from "ArrayElementValue.java"
-public class com.sun.org.apache.bcel.internal.classfile.ArrayElementValue extends com.sun.org.apache.bcel.internal.classfile.ElementValue {
-  public java.lang.String toString();
-  public com.sun.org.apache.bcel.internal.classfile.ArrayElementValue(int, com.sun.org.apache.bcel.internal.classfile.ElementValue[], com.sun.org.apache.bcel.internal.classfile.ConstantPool);
-  public void dump(java.io.DataOutputStream) throws java.io.IOException;
-  public java.lang.String stringifyValue();
-  public com.sun.org.apache.bcel.internal.classfile.ElementValue[] getElementValuesArray();
-  public int getElementValuesArraySize();
-}

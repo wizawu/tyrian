@@ -1,8 +1,0 @@
-Compiled from "AreaAveragingScaleFilter.java"
-public class java.awt.image.AreaAveragingScaleFilter extends java.awt.image.ReplicateScaleFilter {
-  public java.awt.image.AreaAveragingScaleFilter(int, int);
-  public void setHints(int);
-  public void setPixels(int, int, int, int, java.awt.image.ColorModel, byte[], int, int);
-  public void setPixels(int, int, int, int, java.awt.image.ColorModel, int[], int, int);
-  static {};
-}

@@ -1,4 +1,0 @@
-Compiled from "InvalidApplicationException.java"
-public class javax.management.InvalidApplicationException extends java.lang.Exception {
-  public javax.management.InvalidApplicationException(java.lang.Object);
-}

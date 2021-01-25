@@ -1,7 +1,0 @@
-Compiled from "StringType.java"
-public interface jdk.nashorn.internal.runtime.regexp.joni.constants.StringType {
-  public static final int NSTR_RAW;
-  public static final int NSTR_AMBIG;
-  public static final int NSTR_DONT_GET_OPT_INFO;
-  public static final int NSTR_SHARED;
-}

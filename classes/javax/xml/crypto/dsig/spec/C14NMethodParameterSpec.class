@@ -1,3 +1,0 @@
-Compiled from "C14NMethodParameterSpec.java"
-public interface javax.xml.crypto.dsig.spec.C14NMethodParameterSpec extends javax.xml.crypto.dsig.spec.TransformParameterSpec {
-}

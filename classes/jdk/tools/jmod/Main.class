@@ -1,6 +1,0 @@
-Compiled from "Main.java"
-public class jdk.tools.jmod.Main {
-  public jdk.tools.jmod.Main();
-  public static void main(java.lang.String...) throws java.lang.Exception;
-  public static int run(java.io.PrintWriter, java.io.PrintWriter, java.lang.String...);
-}

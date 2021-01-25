@@ -1,7 +1,0 @@
-Compiled from "ColorUIResource.java"
-public class javax.swing.plaf.ColorUIResource extends java.awt.Color implements javax.swing.plaf.UIResource {
-  public javax.swing.plaf.ColorUIResource(int, int, int);
-  public javax.swing.plaf.ColorUIResource(int);
-  public javax.swing.plaf.ColorUIResource(float, float, float);
-  public javax.swing.plaf.ColorUIResource(java.awt.Color);
-}

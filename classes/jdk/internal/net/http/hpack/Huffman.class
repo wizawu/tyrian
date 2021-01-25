@@ -1,4 +1,0 @@
-Compiled from "Huffman.java"
-public final class jdk.internal.net.http.hpack.Huffman {
-  public jdk.internal.net.http.hpack.Huffman();
-}

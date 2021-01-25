@@ -1,7 +1,0 @@
-Compiled from "HTMLFrameSetElement.java"
-public interface org.w3c.dom.html.HTMLFrameSetElement extends org.w3c.dom.html.HTMLElement {
-  public abstract java.lang.String getCols();
-  public abstract void setCols(java.lang.String);
-  public abstract java.lang.String getRows();
-  public abstract void setRows(java.lang.String);
-}

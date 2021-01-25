@@ -1,9 +1,0 @@
-Compiled from "XPlottingViewer.java"
-public class sun.tools.jconsole.inspector.XPlottingViewer extends sun.tools.jconsole.PlotterPanel implements java.awt.event.ActionListener {
-  static void dispose(sun.tools.jconsole.MBeansTab);
-  public static boolean isViewableValue(java.lang.Object);
-  public static java.awt.Component loadPlotting(sun.tools.jconsole.inspector.XMBean, java.lang.String, java.lang.Object, javax.swing.JTable, sun.tools.jconsole.MBeansTab);
-  public void actionPerformed(java.awt.event.ActionEvent);
-  public sun.tools.jconsole.Plotter createPlotter(sun.tools.jconsole.inspector.XMBean, java.lang.String, java.lang.String, javax.swing.JTable);
-  static {};
-}

@@ -1,4 +1,0 @@
-Compiled from "MXBean.java"
-public interface javax.management.MXBean extends java.lang.annotation.Annotation {
-  public abstract boolean value();
-}

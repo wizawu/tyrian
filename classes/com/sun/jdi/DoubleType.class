@@ -1,3 +1,0 @@
-Compiled from "DoubleType.java"
-public interface com.sun.jdi.DoubleType extends com.sun.jdi.PrimitiveType {
-}

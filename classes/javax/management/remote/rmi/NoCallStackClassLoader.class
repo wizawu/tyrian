@@ -1,7 +1,0 @@
-Compiled from "NoCallStackClassLoader.java"
-class javax.management.remote.rmi.NoCallStackClassLoader extends java.lang.ClassLoader {
-  public javax.management.remote.rmi.NoCallStackClassLoader(java.lang.String, byte[], java.lang.String[], java.lang.ClassLoader, java.security.ProtectionDomain);
-  public javax.management.remote.rmi.NoCallStackClassLoader(java.lang.String[], byte[][], java.lang.String[], java.lang.ClassLoader, java.security.ProtectionDomain);
-  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
-  public static byte[] stringToBytes(java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "SolidTextRenderer.java"
-public class sun.java2d.pipe.SolidTextRenderer extends sun.java2d.pipe.GlyphListLoopPipe implements sun.java2d.pipe.LoopBasedPipe {
-  public sun.java2d.pipe.SolidTextRenderer();
-  protected void drawGlyphList(sun.java2d.SunGraphics2D, sun.font.GlyphList);
-}

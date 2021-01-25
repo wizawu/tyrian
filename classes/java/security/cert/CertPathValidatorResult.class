@@ -1,4 +1,0 @@
-Compiled from "CertPathValidatorResult.java"
-public interface java.security.cert.CertPathValidatorResult extends java.lang.Cloneable {
-  public abstract java.lang.Object clone();
-}

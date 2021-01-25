@@ -1,5 +1,0 @@
-Compiled from "x_wav.java"
-public class sun.awt.www.content.audio.x_wav extends java.net.ContentHandler {
-  public sun.awt.www.content.audio.x_wav();
-  public java.lang.Object getContent(java.net.URLConnection) throws java.io.IOException;
-}

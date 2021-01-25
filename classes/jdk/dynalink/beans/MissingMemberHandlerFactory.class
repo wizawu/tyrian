@@ -1,4 +1,0 @@
-Compiled from "MissingMemberHandlerFactory.java"
-public interface jdk.dynalink.beans.MissingMemberHandlerFactory {
-  public abstract java.lang.invoke.MethodHandle createMissingMemberHandler(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
-}

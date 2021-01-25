@@ -1,3 +1,0 @@
-Compiled from "DebugVC50SSOffsetMap16.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSOffsetMap16 extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
-}

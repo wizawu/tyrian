@@ -1,9 +1,0 @@
-Compiled from "LocationValue.java"
-public class sun.jvm.hotspot.code.LocationValue extends sun.jvm.hotspot.code.ScopeValue {
-  public sun.jvm.hotspot.code.LocationValue(sun.jvm.hotspot.code.Location);
-  public boolean isLocation();
-  public sun.jvm.hotspot.code.Location getLocation();
-  sun.jvm.hotspot.code.LocationValue(sun.jvm.hotspot.code.DebugInfoReadStream);
-  public void print();
-  public void printOn(java.io.PrintStream);
-}

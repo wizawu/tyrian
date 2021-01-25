@@ -1,7 +1,0 @@
-Compiled from "UnixUriUtils.java"
-class sun.nio.fs.UnixUriUtils {
-  static final boolean $assertionsDisabled;
-  static java.nio.file.Path fromUri(sun.nio.fs.UnixFileSystem, java.net.URI);
-  static java.net.URI toUri(sun.nio.fs.UnixPath);
-  static {};
-}

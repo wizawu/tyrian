@@ -1,6 +1,0 @@
-Compiled from "WriteFinishedEvent.java"
-class sun.net.httpserver.WriteFinishedEvent extends sun.net.httpserver.Event {
-  static final boolean $assertionsDisabled;
-  sun.net.httpserver.WriteFinishedEvent(sun.net.httpserver.ExchangeImpl);
-  static {};
-}

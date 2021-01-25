@@ -1,6 +1,0 @@
-Compiled from "ciSymbol.java"
-public class sun.jvm.hotspot.ci.ciSymbol extends sun.jvm.hotspot.ci.ciMetadata {
-  public java.lang.String asUtf88();
-  public sun.jvm.hotspot.ci.ciSymbol(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

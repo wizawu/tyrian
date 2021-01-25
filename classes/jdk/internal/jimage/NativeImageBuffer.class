@@ -1,6 +1,0 @@
-Compiled from "NativeImageBuffer.java"
-class jdk.internal.jimage.NativeImageBuffer {
-  jdk.internal.jimage.NativeImageBuffer();
-  static native java.nio.ByteBuffer getNativeMap(java.lang.String);
-  static {};
-}

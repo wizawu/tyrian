@@ -1,5 +1,0 @@
-Compiled from "GotoInstruction.java"
-public abstract class com.sun.org.apache.bcel.internal.generic.GotoInstruction extends com.sun.org.apache.bcel.internal.generic.BranchInstruction implements com.sun.org.apache.bcel.internal.generic.UnconditionalBranch {
-  com.sun.org.apache.bcel.internal.generic.GotoInstruction(short, com.sun.org.apache.bcel.internal.generic.InstructionHandle);
-  com.sun.org.apache.bcel.internal.generic.GotoInstruction();
-}

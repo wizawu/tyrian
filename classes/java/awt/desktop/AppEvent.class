@@ -1,4 +1,0 @@
-Compiled from "AppEvent.java"
-public class java.awt.desktop.AppEvent extends java.util.EventObject {
-  java.awt.desktop.AppEvent();
-}

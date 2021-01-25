@@ -1,9 +1,0 @@
-Compiled from "MapCreator.java"
-public class jdk.nashorn.internal.codegen.MapCreator<T> {
-  static final boolean $assertionsDisabled;
-  jdk.nashorn.internal.codegen.MapCreator(java.lang.Class<? extends jdk.nashorn.internal.runtime.ScriptObject>, java.util.List<jdk.nashorn.internal.codegen.MapTuple<T>>);
-  jdk.nashorn.internal.runtime.PropertyMap makeFieldMap(boolean, boolean, int, int, boolean);
-  jdk.nashorn.internal.runtime.PropertyMap makeSpillMap(boolean, boolean);
-  static int getPropertyFlags(jdk.nashorn.internal.ir.Symbol, boolean, boolean, boolean);
-  static {};
-}

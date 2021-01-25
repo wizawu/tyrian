@@ -1,3 +1,0 @@
-Compiled from "DebugVC50SSOffsetMap32.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSOffsetMap32 extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
-}

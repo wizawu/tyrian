@@ -1,3 +1,0 @@
-Compiled from "XMLValidateContext.java"
-public interface javax.xml.crypto.dsig.XMLValidateContext extends javax.xml.crypto.XMLCryptoContext {
-}

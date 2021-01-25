@@ -1,6 +1,0 @@
-Compiled from "ProcSPARCThreadFactory.java"
-public class sun.jvm.hotspot.debugger.proc.sparc.ProcSPARCThreadFactory implements sun.jvm.hotspot.debugger.proc.ProcThreadFactory {
-  public sun.jvm.hotspot.debugger.proc.sparc.ProcSPARCThreadFactory(sun.jvm.hotspot.debugger.proc.ProcDebugger);
-  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(long);
-}

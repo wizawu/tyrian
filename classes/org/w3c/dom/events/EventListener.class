@@ -1,4 +1,0 @@
-Compiled from "EventListener.java"
-public interface org.w3c.dom.events.EventListener {
-  public abstract void handleEvent(org.w3c.dom.events.Event);
-}

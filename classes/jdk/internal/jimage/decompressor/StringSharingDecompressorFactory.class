@@ -1,6 +1,0 @@
-Compiled from "StringSharingDecompressorFactory.java"
-public class jdk.internal.jimage.decompressor.StringSharingDecompressorFactory extends jdk.internal.jimage.decompressor.ResourceDecompressorFactory {
-  public static final java.lang.String NAME;
-  public jdk.internal.jimage.decompressor.StringSharingDecompressorFactory();
-  public jdk.internal.jimage.decompressor.ResourceDecompressor newDecompressor(java.util.Properties) throws java.io.IOException;
-}

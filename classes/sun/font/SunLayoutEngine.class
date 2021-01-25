@@ -1,9 +1,0 @@
-Compiled from "SunLayoutEngine.java"
-public final class sun.font.SunLayoutEngine implements sun.font.GlyphLayout$LayoutEngine,sun.font.GlyphLayout$LayoutEngineFactory {
-  static java.util.WeakHashMap<sun.font.Font2D, java.lang.Boolean> aatInfo;
-  public static sun.font.GlyphLayout$LayoutEngineFactory instance();
-  public sun.font.GlyphLayout$LayoutEngine getEngine(sun.font.Font2D, int, int);
-  public sun.font.GlyphLayout$LayoutEngine getEngine(sun.font.GlyphLayout$LayoutEngineKey);
-  public void layout(sun.font.FontStrikeDesc, float[], float, int, int, sun.font.TextRecord, int, java.awt.geom.Point2D$Float, sun.font.GlyphLayout$GVData);
-  static {};
-}

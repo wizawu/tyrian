@@ -1,6 +1,0 @@
-Compiled from "SQLData.java"
-public interface java.sql.SQLData {
-  public abstract java.lang.String getSQLTypeName() throws java.sql.SQLException;
-  public abstract void readSQL(java.sql.SQLInput, java.lang.String) throws java.sql.SQLException;
-  public abstract void writeSQL(java.sql.SQLOutput) throws java.sql.SQLException;
-}

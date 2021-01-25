@@ -1,5 +1,0 @@
-Compiled from "JSJavaTypeArray.java"
-public class sun.jvm.hotspot.utilities.soql.JSJavaTypeArray extends sun.jvm.hotspot.utilities.soql.JSJavaArray {
-  public sun.jvm.hotspot.utilities.soql.JSJavaTypeArray(sun.jvm.hotspot.oops.TypeArray, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
-  public final sun.jvm.hotspot.oops.TypeArray getTypeArray();
-}

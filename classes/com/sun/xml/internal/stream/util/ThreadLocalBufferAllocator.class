@@ -1,6 +1,0 @@
-Compiled from "ThreadLocalBufferAllocator.java"
-public class com.sun.xml.internal.stream.util.ThreadLocalBufferAllocator {
-  public com.sun.xml.internal.stream.util.ThreadLocalBufferAllocator();
-  public static com.sun.xml.internal.stream.util.BufferAllocator getBufferAllocator();
-  static {};
-}

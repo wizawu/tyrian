@@ -1,5 +1,0 @@
-Compiled from "RelationServiceNotRegisteredException.java"
-public class javax.management.relation.RelationServiceNotRegisteredException extends javax.management.relation.RelationException {
-  public javax.management.relation.RelationServiceNotRegisteredException();
-  public javax.management.relation.RelationServiceNotRegisteredException(java.lang.String);
-}

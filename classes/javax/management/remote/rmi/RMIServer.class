@@ -1,5 +1,0 @@
-Compiled from "RMIServer.java"
-public interface javax.management.remote.rmi.RMIServer extends java.rmi.Remote {
-  public abstract java.lang.String getVersion() throws java.rmi.RemoteException;
-  public abstract javax.management.remote.rmi.RMIConnection newClient(java.lang.Object) throws java.io.IOException;
-}

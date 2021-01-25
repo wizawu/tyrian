@@ -1,5 +1,0 @@
-Compiled from "NewInstance.java"
-class org.xml.sax.helpers.NewInstance {
-  org.xml.sax.helpers.NewInstance();
-  static <T> T newInstance(java.lang.Class<T>, java.lang.ClassLoader, java.lang.String) throws java.lang.ClassNotFoundException, java.lang.IllegalAccessException, java.lang.InstantiationException;
-}

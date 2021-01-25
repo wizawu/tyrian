@@ -1,5 +1,0 @@
-Compiled from "IllegalBlockSizeException.java"
-public class javax.crypto.IllegalBlockSizeException extends java.security.GeneralSecurityException {
-  public javax.crypto.IllegalBlockSizeException();
-  public javax.crypto.IllegalBlockSizeException(java.lang.String);
-}

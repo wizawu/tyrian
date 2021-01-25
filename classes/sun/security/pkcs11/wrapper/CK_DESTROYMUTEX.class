@@ -1,4 +1,0 @@
-Compiled from "CK_DESTROYMUTEX.java"
-public interface sun.security.pkcs11.wrapper.CK_DESTROYMUTEX {
-  public abstract void CK_DESTROYMUTEX(java.lang.Object) throws sun.security.pkcs11.wrapper.PKCS11Exception;
-}

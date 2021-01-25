@@ -1,9 +1,0 @@
-Compiled from "StrokeBorder.java"
-public class javax.swing.border.StrokeBorder extends javax.swing.border.AbstractBorder {
-  public javax.swing.border.StrokeBorder(java.awt.BasicStroke);
-  public javax.swing.border.StrokeBorder(java.awt.BasicStroke, java.awt.Paint);
-  public void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
-  public java.awt.Insets getBorderInsets(java.awt.Component, java.awt.Insets);
-  public java.awt.BasicStroke getStroke();
-  public java.awt.Paint getPaint();
-}

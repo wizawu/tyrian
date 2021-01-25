@@ -1,6 +1,0 @@
-Compiled from "FactoryEnumeration.java"
-public final class com.sun.naming.internal.FactoryEnumeration {
-  com.sun.naming.internal.FactoryEnumeration(java.util.List<com.sun.naming.internal.NamedWeakReference<java.lang.Object>>, java.lang.ClassLoader);
-  public java.lang.Object next() throws javax.naming.NamingException;
-  public boolean hasMore();
-}

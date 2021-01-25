@@ -1,7 +1,0 @@
-Compiled from "ElementPSVI.java"
-public interface com.sun.org.apache.xerces.internal.xs.ElementPSVI extends com.sun.org.apache.xerces.internal.xs.ItemPSVI {
-  public abstract com.sun.org.apache.xerces.internal.xs.XSElementDeclaration getElementDeclaration();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSNotationDeclaration getNotation();
-  public abstract boolean getNil();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSModel getSchemaInformation();
-}

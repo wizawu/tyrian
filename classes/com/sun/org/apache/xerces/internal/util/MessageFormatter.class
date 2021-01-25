@@ -1,4 +1,0 @@
-Compiled from "MessageFormatter.java"
-public interface com.sun.org.apache.xerces.internal.util.MessageFormatter {
-  public abstract java.lang.String formatMessage(java.util.Locale, java.lang.String, java.lang.Object[]) throws java.util.MissingResourceException;
-}

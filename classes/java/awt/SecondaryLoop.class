@@ -1,5 +1,0 @@
-Compiled from "SecondaryLoop.java"
-public interface java.awt.SecondaryLoop {
-  public abstract boolean enter();
-  public abstract boolean exit();
-}

@@ -1,5 +1,0 @@
-Compiled from "SecurityPermission.java"
-public final class java.security.SecurityPermission extends java.security.BasicPermission {
-  public java.security.SecurityPermission(java.lang.String);
-  public java.security.SecurityPermission(java.lang.String, java.lang.String);
-}

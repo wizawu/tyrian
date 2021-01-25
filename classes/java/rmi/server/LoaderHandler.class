@@ -1,7 +1,0 @@
-Compiled from "LoaderHandler.java"
-public interface java.rmi.server.LoaderHandler {
-  public static final java.lang.String packagePrefix;
-  public abstract java.lang.Class<?> loadClass(java.lang.String) throws java.net.MalformedURLException, java.lang.ClassNotFoundException;
-  public abstract java.lang.Class<?> loadClass(java.net.URL, java.lang.String) throws java.net.MalformedURLException, java.lang.ClassNotFoundException;
-  public abstract java.lang.Object getSecurityContext(java.lang.ClassLoader);
-}

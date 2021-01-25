@@ -1,9 +1,0 @@
-Compiled from "LocalVariableTableWriter.java"
-public class com.sun.tools.javap.LocalVariableTableWriter extends com.sun.tools.javap.InstructionDetailWriter {
-  static com.sun.tools.javap.LocalVariableTableWriter instance(com.sun.tools.javap.Context);
-  protected com.sun.tools.javap.LocalVariableTableWriter(com.sun.tools.javap.Context);
-  public void reset(com.sun.tools.classfile.Code_attribute);
-  public void writeDetails(com.sun.tools.classfile.Instruction);
-  public void flush();
-  public void writeLocalVariables(int, com.sun.tools.javap.LocalVariableTableWriter$NoteKind);
-}

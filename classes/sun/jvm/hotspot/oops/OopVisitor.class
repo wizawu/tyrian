@@ -1,7 +1,0 @@
-Compiled from "OopVisitor.java"
-public interface sun.jvm.hotspot.oops.OopVisitor extends sun.jvm.hotspot.oops.FieldVisitor {
-  public abstract void prologue();
-  public abstract void epilogue();
-  public abstract void setObj(sun.jvm.hotspot.oops.Oop);
-  public abstract sun.jvm.hotspot.oops.Oop getObj();
-}

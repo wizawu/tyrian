@@ -1,7 +1,0 @@
-Compiled from "ClassFinder.java"
-public final class com.sun.beans.finder.ClassFinder {
-  public static java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
-  public static java.lang.Class<?> findClass(java.lang.String, java.lang.ClassLoader) throws java.lang.ClassNotFoundException;
-  public static java.lang.Class<?> resolveClass(java.lang.String) throws java.lang.ClassNotFoundException;
-  public static java.lang.Class<?> resolveClass(java.lang.String, java.lang.ClassLoader) throws java.lang.ClassNotFoundException;
-}

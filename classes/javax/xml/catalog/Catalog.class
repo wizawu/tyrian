@@ -1,7 +1,0 @@
-Compiled from "Catalog.java"
-public interface javax.xml.catalog.Catalog {
-  public abstract java.lang.String matchSystem(java.lang.String);
-  public abstract java.lang.String matchPublic(java.lang.String);
-  public abstract java.lang.String matchURI(java.lang.String);
-  public abstract java.util.stream.Stream<javax.xml.catalog.Catalog> catalogs();
-}

@@ -1,5 +1,0 @@
-Compiled from "IllegalThreadStateException.java"
-public class java.lang.IllegalThreadStateException extends java.lang.IllegalArgumentException {
-  public java.lang.IllegalThreadStateException();
-  public java.lang.IllegalThreadStateException(java.lang.String);
-}

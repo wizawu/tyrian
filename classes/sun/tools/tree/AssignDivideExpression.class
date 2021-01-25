@@ -1,5 +1,0 @@
-Compiled from "AssignDivideExpression.java"
-public class sun.tools.tree.AssignDivideExpression extends sun.tools.tree.AssignOpExpression {
-  public sun.tools.tree.AssignDivideExpression(long, sun.tools.tree.Expression, sun.tools.tree.Expression);
-  void codeOperation(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.asm.Assembler);
-}

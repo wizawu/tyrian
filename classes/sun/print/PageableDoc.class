@@ -1,9 +1,0 @@
-Compiled from "PageableDoc.java"
-public class sun.print.PageableDoc implements javax.print.Doc {
-  public sun.print.PageableDoc(java.awt.print.Pageable);
-  public javax.print.DocFlavor getDocFlavor();
-  public javax.print.attribute.DocAttributeSet getAttributes();
-  public java.lang.Object getPrintData() throws java.io.IOException;
-  public java.io.Reader getReaderForText() throws java.io.UnsupportedEncodingException, java.io.IOException;
-  public java.io.InputStream getStreamForBytes() throws java.io.IOException;
-}

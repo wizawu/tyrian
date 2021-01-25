@@ -1,5 +1,0 @@
-Compiled from "AccountExpiredException.java"
-public class javax.security.auth.login.AccountExpiredException extends javax.security.auth.login.AccountException {
-  public javax.security.auth.login.AccountExpiredException();
-  public javax.security.auth.login.AccountExpiredException(java.lang.String);
-}

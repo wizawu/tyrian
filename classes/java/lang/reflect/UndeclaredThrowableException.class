@@ -1,8 +1,0 @@
-Compiled from "UndeclaredThrowableException.java"
-public class java.lang.reflect.UndeclaredThrowableException extends java.lang.RuntimeException {
-  static final long serialVersionUID;
-  public java.lang.reflect.UndeclaredThrowableException(java.lang.Throwable);
-  public java.lang.reflect.UndeclaredThrowableException(java.lang.Throwable, java.lang.String);
-  public java.lang.Throwable getUndeclaredThrowable();
-  public java.lang.Throwable getCause();
-}

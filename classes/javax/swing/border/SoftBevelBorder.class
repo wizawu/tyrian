@@ -1,9 +1,0 @@
-Compiled from "SoftBevelBorder.java"
-public class javax.swing.border.SoftBevelBorder extends javax.swing.border.BevelBorder {
-  public javax.swing.border.SoftBevelBorder(int);
-  public javax.swing.border.SoftBevelBorder(int, java.awt.Color, java.awt.Color);
-  public javax.swing.border.SoftBevelBorder(int, java.awt.Color, java.awt.Color, java.awt.Color, java.awt.Color);
-  public void paintBorder(java.awt.Component, java.awt.Graphics, int, int, int, int);
-  public java.awt.Insets getBorderInsets(java.awt.Component, java.awt.Insets);
-  public boolean isBorderOpaque();
-}

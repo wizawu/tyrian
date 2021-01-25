@@ -1,6 +1,0 @@
-Compiled from "ExsltCommon.java"
-public class com.sun.org.apache.xalan.internal.lib.ExsltCommon {
-  public com.sun.org.apache.xalan.internal.lib.ExsltCommon();
-  public static java.lang.String objectType(java.lang.Object);
-  public static com.sun.org.apache.xpath.internal.NodeSet nodeSet(com.sun.org.apache.xalan.internal.extensions.ExpressionContext, java.lang.Object);
-}

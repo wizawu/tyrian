@@ -1,8 +1,0 @@
-Compiled from "CharsetString.java"
-public class sun.awt.CharsetString {
-  public char[] charsetChars;
-  public int offset;
-  public int length;
-  public sun.awt.FontDescriptor fontDescriptor;
-  public sun.awt.CharsetString(char[], int, int, sun.awt.FontDescriptor);
-}

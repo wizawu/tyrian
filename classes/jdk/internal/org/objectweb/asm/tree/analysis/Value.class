@@ -1,4 +1,0 @@
-Compiled from "Value.java"
-public interface jdk.internal.org.objectweb.asm.tree.analysis.Value {
-  public abstract int getSize();
-}

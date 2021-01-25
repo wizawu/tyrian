@@ -1,6 +1,0 @@
-Compiled from "HttpsConfigurator.java"
-public class com.sun.net.httpserver.HttpsConfigurator {
-  public com.sun.net.httpserver.HttpsConfigurator(javax.net.ssl.SSLContext);
-  public javax.net.ssl.SSLContext getSSLContext();
-  public void configure(com.sun.net.httpserver.HttpsParameters);
-}

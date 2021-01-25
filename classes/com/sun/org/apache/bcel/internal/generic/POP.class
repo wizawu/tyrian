@@ -1,5 +1,0 @@
-Compiled from "POP.java"
-public class com.sun.org.apache.bcel.internal.generic.POP extends com.sun.org.apache.bcel.internal.generic.StackInstruction implements com.sun.org.apache.bcel.internal.generic.PopInstruction {
-  public com.sun.org.apache.bcel.internal.generic.POP();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

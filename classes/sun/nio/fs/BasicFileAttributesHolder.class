@@ -1,5 +1,0 @@
-Compiled from "BasicFileAttributesHolder.java"
-public interface sun.nio.fs.BasicFileAttributesHolder {
-  public abstract java.nio.file.attribute.BasicFileAttributes get();
-  public abstract void invalidate();
-}

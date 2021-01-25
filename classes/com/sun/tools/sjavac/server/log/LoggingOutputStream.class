@@ -1,6 +1,0 @@
-Compiled from "LoggingOutputStream.java"
-public class com.sun.tools.sjavac.server.log.LoggingOutputStream extends java.io.FilterOutputStream {
-  public com.sun.tools.sjavac.server.log.LoggingOutputStream(java.io.OutputStream, com.sun.tools.sjavac.Log$Level, java.lang.String);
-  public void write(int) throws java.io.IOException;
-  static {};
-}

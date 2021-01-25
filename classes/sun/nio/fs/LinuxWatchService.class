@@ -1,7 +1,0 @@
-Compiled from "LinuxWatchService.java"
-class sun.nio.fs.LinuxWatchService extends sun.nio.fs.AbstractWatchService {
-  sun.nio.fs.LinuxWatchService(sun.nio.fs.UnixFileSystem) throws java.io.IOException;
-  java.nio.file.WatchKey register(java.nio.file.Path, java.nio.file.WatchEvent$Kind<?>[], java.nio.file.WatchEvent$Modifier...) throws java.io.IOException;
-  void implClose() throws java.io.IOException;
-  static {};
-}

@@ -1,4 +1,0 @@
-Compiled from "ObjLongConsumer.java"
-public interface java.util.function.ObjLongConsumer<T> {
-  public abstract void accept(T, long);
-}

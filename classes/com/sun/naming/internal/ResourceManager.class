@@ -1,8 +1,0 @@
-Compiled from "ResourceManager.java"
-public final class com.sun.naming.internal.ResourceManager {
-  public static java.util.Hashtable<?, ?> getInitialEnvironment(java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
-  public static java.lang.String getProperty(java.lang.String, java.util.Hashtable<?, ?>, javax.naming.Context, boolean) throws javax.naming.NamingException;
-  public static com.sun.naming.internal.FactoryEnumeration getFactories(java.lang.String, java.util.Hashtable<?, ?>, javax.naming.Context) throws javax.naming.NamingException;
-  public static java.lang.Object getFactory(java.lang.String, java.util.Hashtable<?, ?>, javax.naming.Context, java.lang.String, java.lang.String) throws javax.naming.NamingException;
-  static {};
-}

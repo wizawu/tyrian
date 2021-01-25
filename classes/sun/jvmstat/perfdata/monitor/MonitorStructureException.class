@@ -1,5 +1,0 @@
-Compiled from "MonitorStructureException.java"
-public class sun.jvmstat.perfdata.monitor.MonitorStructureException extends sun.jvmstat.monitor.MonitorException {
-  public sun.jvmstat.perfdata.monitor.MonitorStructureException();
-  public sun.jvmstat.perfdata.monitor.MonitorStructureException(java.lang.String);
-}

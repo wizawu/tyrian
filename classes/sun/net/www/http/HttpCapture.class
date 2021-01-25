@@ -1,7 +1,0 @@
-Compiled from "HttpCapture.java"
-public class sun.net.www.http.HttpCapture {
-  public synchronized void sent(int) throws java.io.IOException;
-  public synchronized void received(int) throws java.io.IOException;
-  public synchronized void flush() throws java.io.IOException;
-  public static sun.net.www.http.HttpCapture getCapture(java.net.URL);
-}

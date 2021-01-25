@@ -1,6 +1,0 @@
-Compiled from "ModelPatch.java"
-public final class com.sun.media.sound.ModelPatch extends javax.sound.midi.Patch {
-  public com.sun.media.sound.ModelPatch(int, int);
-  public com.sun.media.sound.ModelPatch(int, int, boolean);
-  public boolean isPercussion();
-}

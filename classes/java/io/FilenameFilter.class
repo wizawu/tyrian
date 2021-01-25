@@ -1,4 +1,0 @@
-Compiled from "FilenameFilter.java"
-public interface java.io.FilenameFilter {
-  public abstract boolean accept(java.io.File, java.lang.String);
-}

@@ -1,7 +1,0 @@
-Compiled from "AttributeValue.java"
-abstract class java.awt.AttributeValue {
-  protected java.awt.AttributeValue(int, java.lang.String[]);
-  public int hashCode();
-  public java.lang.String toString();
-  static {};
-}

@@ -1,7 +1,0 @@
-Compiled from "DocFileElement.java"
-public class jdk.javadoc.internal.doclets.toolkit.DocFileElement implements jdk.javadoc.internal.doclets.toolkit.DocletElement {
-  public jdk.javadoc.internal.doclets.toolkit.DocFileElement(javax.lang.model.element.Element, javax.tools.FileObject);
-  public javax.lang.model.element.PackageElement getPackageElement();
-  public javax.tools.FileObject getFileObject();
-  public jdk.javadoc.internal.doclets.toolkit.DocletElement$Kind getSubKind();
-}

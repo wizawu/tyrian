@@ -1,6 +1,0 @@
-Compiled from "XPathNodes.java"
-public interface javax.xml.xpath.XPathNodes extends java.lang.Iterable<org.w3c.dom.Node> {
-  public abstract java.util.Iterator<org.w3c.dom.Node> iterator();
-  public abstract int size();
-  public abstract org.w3c.dom.Node get(int) throws javax.xml.xpath.XPathException;
-}

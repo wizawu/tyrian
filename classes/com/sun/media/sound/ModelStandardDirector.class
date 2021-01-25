@@ -1,7 +1,0 @@
-Compiled from "ModelStandardDirector.java"
-public final class com.sun.media.sound.ModelStandardDirector implements com.sun.media.sound.ModelDirector {
-  public com.sun.media.sound.ModelStandardDirector(com.sun.media.sound.ModelPerformer[], com.sun.media.sound.ModelDirectedPlayer);
-  public void close();
-  public void noteOff(int, int);
-  public void noteOn(int, int);
-}

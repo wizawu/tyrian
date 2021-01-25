@@ -1,5 +1,0 @@
-Compiled from "JavaBeansAccess.java"
-public interface jdk.internal.misc.JavaBeansAccess {
-  public abstract java.lang.reflect.Method getReadMethod(java.lang.Class<?>, java.lang.String) throws java.lang.Exception;
-  public abstract java.lang.String[] getConstructorPropertiesValue(java.lang.reflect.Constructor<?>);
-}

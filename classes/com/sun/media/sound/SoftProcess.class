@@ -1,7 +1,0 @@
-Compiled from "SoftProcess.java"
-public interface com.sun.media.sound.SoftProcess extends com.sun.media.sound.SoftControl {
-  public abstract void init(com.sun.media.sound.SoftSynthesizer);
-  public abstract double[] get(int, java.lang.String);
-  public abstract void processControlLogic();
-  public abstract void reset();
-}

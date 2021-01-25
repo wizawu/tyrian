@@ -1,8 +1,0 @@
-Compiled from "DragSourceDropEvent.java"
-public class java.awt.dnd.DragSourceDropEvent extends java.awt.dnd.DragSourceEvent {
-  public java.awt.dnd.DragSourceDropEvent(java.awt.dnd.DragSourceContext, int, boolean);
-  public java.awt.dnd.DragSourceDropEvent(java.awt.dnd.DragSourceContext, int, boolean, int, int);
-  public java.awt.dnd.DragSourceDropEvent(java.awt.dnd.DragSourceContext);
-  public boolean getDropSuccess();
-  public int getDropAction();
-}

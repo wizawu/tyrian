@@ -1,4 +1,0 @@
-Compiled from "ByteBuffered.java"
-public interface sun.nio.ByteBuffered {
-  public abstract java.nio.ByteBuffer getByteBuffer() throws java.io.IOException;
-}

@@ -1,6 +1,0 @@
-Compiled from "Tripwire.java"
-final class java.util.Tripwire {
-  static final boolean ENABLED;
-  static void trip(java.lang.Class<?>, java.lang.String);
-  static {};
-}

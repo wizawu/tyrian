@@ -1,5 +1,0 @@
-Compiled from "PersistentSnippet.java"
-public abstract class jdk.jshell.PersistentSnippet extends jdk.jshell.Snippet {
-  jdk.jshell.PersistentSnippet(jdk.jshell.Key, java.lang.String, jdk.jshell.Wrap, java.lang.String, jdk.jshell.Snippet$SubKind, jdk.jshell.DiagList);
-  public java.lang.String name();
-}

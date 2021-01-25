@@ -1,5 +1,0 @@
-Compiled from "IndexRedirectWriter.java"
-public class jdk.javadoc.internal.doclets.formats.html.IndexRedirectWriter extends jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter {
-  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
-  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath, jdk.javadoc.internal.doclets.toolkit.util.DocPath) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
-}

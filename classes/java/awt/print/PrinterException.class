@@ -1,5 +1,0 @@
-Compiled from "PrinterException.java"
-public class java.awt.print.PrinterException extends java.lang.Exception {
-  public java.awt.print.PrinterException();
-  public java.awt.print.PrinterException(java.lang.String);
-}

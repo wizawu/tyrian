@@ -1,4 +1,0 @@
-Compiled from "Graphics2Delegate.java"
-public interface sun.awt.Graphics2Delegate {
-  public abstract void setBackground(java.awt.Color);
-}

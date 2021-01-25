@@ -1,5 +1,0 @@
-Compiled from "InvalidTypeException.java"
-public class com.sun.jdi.InvalidTypeException extends java.lang.Exception {
-  public com.sun.jdi.InvalidTypeException();
-  public com.sun.jdi.InvalidTypeException(java.lang.String);
-}

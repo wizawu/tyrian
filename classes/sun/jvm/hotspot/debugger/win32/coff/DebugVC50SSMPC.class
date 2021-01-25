@@ -1,3 +1,0 @@
-Compiled from "DebugVC50SSMPC.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSMPC extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
-}

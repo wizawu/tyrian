@@ -1,9 +1,0 @@
-Compiled from "ReadOnlyIterator.java"
-public class com.sun.xml.internal.stream.util.ReadOnlyIterator<T> implements java.util.Iterator<T> {
-  java.util.Iterator<T> iterator;
-  public com.sun.xml.internal.stream.util.ReadOnlyIterator();
-  public com.sun.xml.internal.stream.util.ReadOnlyIterator(java.util.Iterator<T>);
-  public boolean hasNext();
-  public T next();
-  public void remove();
-}

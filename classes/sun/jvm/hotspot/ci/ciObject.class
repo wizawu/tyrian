@@ -1,8 +1,0 @@
-Compiled from "ciObject.java"
-public class sun.jvm.hotspot.ci.ciObject extends sun.jvm.hotspot.ci.ciBaseObject {
-  public sun.jvm.hotspot.oops.Oop getOop();
-  public sun.jvm.hotspot.ci.ciObject(sun.jvm.hotspot.debugger.Address);
-  public void printOn(java.io.PrintStream);
-  public java.lang.String toString();
-  static {};
-}

@@ -1,9 +1,0 @@
-Compiled from "PackageTreeWriter.java"
-public class jdk.javadoc.internal.doclets.formats.html.PackageTreeWriter extends jdk.javadoc.internal.doclets.formats.html.AbstractTreeWriter {
-  protected javax.lang.model.element.PackageElement packageElement;
-  public jdk.javadoc.internal.doclets.formats.html.PackageTreeWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath, javax.lang.model.element.PackageElement);
-  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, javax.lang.model.element.PackageElement, boolean) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
-  protected void generatePackageTreeFile() throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
-  protected jdk.javadoc.internal.doclets.formats.html.markup.HtmlTree getPackageTreeHeader();
-  protected void addLinkToMainTree(jdk.javadoc.internal.doclets.toolkit.Content);
-}

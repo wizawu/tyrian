@@ -1,6 +1,0 @@
-Compiled from "SunEC.java"
-public final class sun.security.ec.SunEC extends java.security.Provider {
-  public sun.security.ec.SunEC();
-  void putEntries(boolean);
-  static {};
-}

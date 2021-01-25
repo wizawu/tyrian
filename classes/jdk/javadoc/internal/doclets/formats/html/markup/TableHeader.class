@@ -1,9 +1,0 @@
-Compiled from "TableHeader.java"
-public class jdk.javadoc.internal.doclets.formats.html.markup.TableHeader {
-  public jdk.javadoc.internal.doclets.formats.html.markup.TableHeader(jdk.javadoc.internal.doclets.formats.html.Contents, java.lang.String...);
-  public jdk.javadoc.internal.doclets.formats.html.markup.TableHeader(jdk.javadoc.internal.doclets.toolkit.Content...);
-  public jdk.javadoc.internal.doclets.formats.html.markup.TableHeader(java.util.List<jdk.javadoc.internal.doclets.toolkit.Content>);
-  public jdk.javadoc.internal.doclets.formats.html.markup.TableHeader styles(jdk.javadoc.internal.doclets.formats.html.markup.HtmlStyle...);
-  public jdk.javadoc.internal.doclets.formats.html.markup.TableHeader styles(java.util.List<jdk.javadoc.internal.doclets.formats.html.markup.HtmlStyle>);
-  public jdk.javadoc.internal.doclets.toolkit.Content toContent();
-}

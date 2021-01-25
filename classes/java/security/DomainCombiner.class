@@ -1,4 +1,0 @@
-Compiled from "DomainCombiner.java"
-public interface java.security.DomainCombiner {
-  public abstract java.security.ProtectionDomain[] combine(java.security.ProtectionDomain[], java.security.ProtectionDomain[]);
-}

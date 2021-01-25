@@ -1,7 +1,0 @@
-Compiled from "P11SecureRandom.java"
-final class sun.security.pkcs11.P11SecureRandom extends java.security.SecureRandomSpi {
-  sun.security.pkcs11.P11SecureRandom(sun.security.pkcs11.Token);
-  protected synchronized void engineSetSeed(byte[]);
-  protected void engineNextBytes(byte[]);
-  protected byte[] engineGenerateSeed(int);
-}

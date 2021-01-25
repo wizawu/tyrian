@@ -1,4 +1,0 @@
-Compiled from "AutoCloseable.java"
-public interface java.lang.AutoCloseable {
-  public abstract void close() throws java.lang.Exception;
-}

@@ -1,6 +1,0 @@
-Compiled from "AuthResources_zh_CN.java"
-public class sun.security.util.AuthResources_zh_CN extends java.util.ListResourceBundle {
-  public sun.security.util.AuthResources_zh_CN();
-  public java.lang.Object[][] getContents();
-  static {};
-}

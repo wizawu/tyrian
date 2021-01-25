@@ -1,6 +1,0 @@
-Compiled from "StubRoutines.java"
-public class sun.jvm.hotspot.runtime.StubRoutines {
-  public sun.jvm.hotspot.runtime.StubRoutines();
-  public boolean returnsToCallStub(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

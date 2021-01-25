@@ -1,4 +1,0 @@
-Compiled from "ChangeEvent.java"
-public class javax.swing.event.ChangeEvent extends java.util.EventObject {
-  public javax.swing.event.ChangeEvent(java.lang.Object);
-}

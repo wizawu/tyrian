@@ -1,9 +1,0 @@
-Compiled from "StructureLoader.java"
-final class jdk.nashorn.internal.runtime.StructureLoader extends jdk.nashorn.internal.runtime.NashornLoader {
-  jdk.nashorn.internal.runtime.StructureLoader(java.lang.ClassLoader);
-  static boolean isSingleFieldStructure(java.lang.String);
-  static boolean isStructureClass(java.lang.String);
-  java.lang.Module getModule();
-  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
-  static {};
-}

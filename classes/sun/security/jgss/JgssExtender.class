@@ -1,9 +1,0 @@
-Compiled from "JgssExtender.java"
-public class sun.security.jgss.JgssExtender {
-  public sun.security.jgss.JgssExtender();
-  public static sun.security.jgss.JgssExtender getExtender();
-  protected static void setExtender(sun.security.jgss.JgssExtender);
-  public org.ietf.jgss.GSSCredential wrap(org.ietf.jgss.GSSCredential);
-  public org.ietf.jgss.GSSContext wrap(org.ietf.jgss.GSSContext);
-  static {};
-}

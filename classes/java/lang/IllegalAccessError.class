@@ -1,5 +1,0 @@
-Compiled from "IllegalAccessError.java"
-public class java.lang.IllegalAccessError extends java.lang.IncompatibleClassChangeError {
-  public java.lang.IllegalAccessError();
-  public java.lang.IllegalAccessError(java.lang.String);
-}

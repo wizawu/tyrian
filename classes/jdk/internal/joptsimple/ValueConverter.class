@@ -1,6 +1,0 @@
-Compiled from "ValueConverter.java"
-public interface jdk.internal.joptsimple.ValueConverter<V> {
-  public abstract V convert(java.lang.String);
-  public abstract java.lang.Class<? extends V> valueType();
-  public abstract java.lang.String valuePattern();
-}

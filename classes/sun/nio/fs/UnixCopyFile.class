@@ -1,8 +1,0 @@
-Compiled from "UnixCopyFile.java"
-class sun.nio.fs.UnixCopyFile {
-  static void ensureEmptyDir(sun.nio.fs.UnixPath) throws java.io.IOException;
-  static void move(sun.nio.fs.UnixPath, sun.nio.fs.UnixPath, java.nio.file.CopyOption...) throws java.io.IOException;
-  static void copy(sun.nio.fs.UnixPath, sun.nio.fs.UnixPath, java.nio.file.CopyOption...) throws java.io.IOException;
-  static native void transfer(int, int, long) throws sun.nio.fs.UnixException;
-  static {};
-}

@@ -1,9 +1,0 @@
-Compiled from "DebugVC50SSSymbolBase.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSSymbolBase extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
-  public abstract short getSymHashIndex();
-  public abstract short getAddrHashIndex();
-  public abstract int getSymTabSize();
-  public abstract int getSymHashSize();
-  public abstract int getAddrHashSize();
-  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugVC50SymbolIterator getSymbolIterator();
-}

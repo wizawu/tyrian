@@ -1,5 +1,0 @@
-Compiled from "ParallelogramPipe.java"
-public interface sun.java2d.pipe.ParallelogramPipe {
-  public abstract void fillParallelogram(sun.java2d.SunGraphics2D, double, double, double, double, double, double, double, double, double, double);
-  public abstract void drawParallelogram(sun.java2d.SunGraphics2D, double, double, double, double, double, double, double, double, double, double, double, double);
-}

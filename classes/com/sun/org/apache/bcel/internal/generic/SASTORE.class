@@ -1,5 +1,0 @@
-Compiled from "SASTORE.java"
-public class com.sun.org.apache.bcel.internal.generic.SASTORE extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackConsumer {
-  public com.sun.org.apache.bcel.internal.generic.SASTORE();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

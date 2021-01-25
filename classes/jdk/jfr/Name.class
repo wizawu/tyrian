@@ -1,4 +1,0 @@
-Compiled from "Name.java"
-public interface jdk.jfr.Name extends java.lang.annotation.Annotation {
-  public abstract java.lang.String value();
-}

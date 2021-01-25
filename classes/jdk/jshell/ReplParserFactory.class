@@ -1,7 +1,0 @@
-Compiled from "ReplParserFactory.java"
-class jdk.jshell.ReplParserFactory extends com.sun.tools.javac.parser.ParserFactory {
-  public static void preRegister(com.sun.tools.javac.util.Context, boolean);
-  protected jdk.jshell.ReplParserFactory(com.sun.tools.javac.util.Context, boolean);
-  public com.sun.tools.javac.parser.JavacParser newParser(java.lang.CharSequence, boolean, boolean, boolean);
-  public com.sun.tools.javac.parser.JavacParser newParser(java.lang.CharSequence, boolean, boolean, boolean, boolean);
-}

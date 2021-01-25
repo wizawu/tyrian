@@ -1,5 +1,0 @@
-Compiled from "DebugDirectory.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugDirectory {
-  public abstract int getNumEntries();
-  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugDirectoryEntry getEntry(int);
-}

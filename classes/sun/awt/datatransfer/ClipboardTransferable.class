@@ -1,7 +1,0 @@
-Compiled from "ClipboardTransferable.java"
-public class sun.awt.datatransfer.ClipboardTransferable implements java.awt.datatransfer.Transferable {
-  public sun.awt.datatransfer.ClipboardTransferable(sun.awt.datatransfer.SunClipboard);
-  public java.awt.datatransfer.DataFlavor[] getTransferDataFlavors();
-  public boolean isDataFlavorSupported(java.awt.datatransfer.DataFlavor);
-  public java.lang.Object getTransferData(java.awt.datatransfer.DataFlavor) throws java.awt.datatransfer.UnsupportedFlavorException, java.io.IOException;
-}

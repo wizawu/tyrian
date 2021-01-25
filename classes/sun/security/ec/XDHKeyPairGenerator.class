@@ -1,8 +1,0 @@
-Compiled from "XDHKeyPairGenerator.java"
-public class sun.security.ec.XDHKeyPairGenerator extends java.security.KeyPairGeneratorSpi {
-  sun.security.ec.XDHKeyPairGenerator();
-  public void initialize(int, java.security.SecureRandom);
-  public void initialize(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
-  public java.security.KeyPair generateKeyPair();
-  static {};
-}

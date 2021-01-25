@@ -1,5 +1,0 @@
-Compiled from "SynthStyleFactory.java"
-public abstract class javax.swing.plaf.synth.SynthStyleFactory {
-  public javax.swing.plaf.synth.SynthStyleFactory();
-  public abstract javax.swing.plaf.synth.SynthStyle getStyle(javax.swing.JComponent, javax.swing.plaf.synth.Region);
-}

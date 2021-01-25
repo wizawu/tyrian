@@ -1,6 +1,0 @@
-Compiled from "X11PMBlitLoops.java"
-public class sun.java2d.x11.X11PMBlitLoops extends sun.java2d.loops.Blit {
-  public static void register();
-  public sun.java2d.x11.X11PMBlitLoops(sun.java2d.loops.SurfaceType, sun.java2d.loops.SurfaceType, boolean);
-  public void Blit(sun.java2d.SurfaceData, sun.java2d.SurfaceData, java.awt.Composite, sun.java2d.pipe.Region, int, int, int, int, int, int);
-}

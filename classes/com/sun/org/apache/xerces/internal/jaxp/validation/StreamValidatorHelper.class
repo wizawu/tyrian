@@ -1,5 +1,0 @@
-Compiled from "StreamValidatorHelper.java"
-final class com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper implements com.sun.org.apache.xerces.internal.jaxp.validation.ValidatorHelper {
-  public com.sun.org.apache.xerces.internal.jaxp.validation.StreamValidatorHelper(com.sun.org.apache.xerces.internal.jaxp.validation.XMLSchemaValidatorComponentManager);
-  public void validate(javax.xml.transform.Source, javax.xml.transform.Result) throws org.xml.sax.SAXException, java.io.IOException;
-}

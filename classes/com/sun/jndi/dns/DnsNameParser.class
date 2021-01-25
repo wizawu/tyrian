@@ -1,7 +1,0 @@
-Compiled from "DnsNameParser.java"
-class com.sun.jndi.dns.DnsNameParser implements javax.naming.NameParser {
-  com.sun.jndi.dns.DnsNameParser();
-  public javax.naming.Name parse(java.lang.String) throws javax.naming.NamingException;
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-}

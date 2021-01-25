@@ -1,9 +1,0 @@
-Compiled from "CustomMediaTray.java"
-class sun.print.CustomMediaTray extends javax.print.attribute.standard.MediaTray {
-  public sun.print.CustomMediaTray(java.lang.String, java.lang.String);
-  public java.lang.String getChoiceName();
-  public javax.print.attribute.standard.Media[] getSuperEnumTable();
-  protected java.lang.String[] getStringTable();
-  protected javax.print.attribute.EnumSyntax[] getEnumValueTable();
-  static {};
-}

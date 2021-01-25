@@ -1,4 +1,0 @@
-Compiled from "AttributeView.java"
-public interface java.nio.file.attribute.AttributeView {
-  public abstract java.lang.String name();
-}

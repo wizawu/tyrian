@@ -1,4 +1,0 @@
-Compiled from "FontSubstitution.java"
-public interface sun.font.FontSubstitution {
-  public abstract sun.font.CompositeFont getCompositeFont2D();
-}

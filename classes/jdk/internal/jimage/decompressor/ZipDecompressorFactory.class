@@ -1,6 +1,0 @@
-Compiled from "ZipDecompressorFactory.java"
-public final class jdk.internal.jimage.decompressor.ZipDecompressorFactory extends jdk.internal.jimage.decompressor.ResourceDecompressorFactory {
-  public static final java.lang.String NAME;
-  public jdk.internal.jimage.decompressor.ZipDecompressorFactory();
-  public jdk.internal.jimage.decompressor.ResourceDecompressor newDecompressor(java.util.Properties) throws java.io.IOException;
-}

@@ -1,4 +1,0 @@
-Compiled from "ErroneousTree.java"
-public interface com.sun.source.doctree.ErroneousTree extends com.sun.source.doctree.TextTree {
-  public abstract javax.tools.Diagnostic<javax.tools.JavaFileObject> getDiagnostic();
-}

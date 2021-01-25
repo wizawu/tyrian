@@ -1,6 +1,0 @@
-Compiled from "ClassLoaderRepository.java"
-public interface javax.management.loading.ClassLoaderRepository {
-  public abstract java.lang.Class<?> loadClass(java.lang.String) throws java.lang.ClassNotFoundException;
-  public abstract java.lang.Class<?> loadClassWithout(java.lang.ClassLoader, java.lang.String) throws java.lang.ClassNotFoundException;
-  public abstract java.lang.Class<?> loadClassBefore(java.lang.ClassLoader, java.lang.String) throws java.lang.ClassNotFoundException;
-}

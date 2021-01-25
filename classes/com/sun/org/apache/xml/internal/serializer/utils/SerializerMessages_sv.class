@@ -1,5 +1,0 @@
-Compiled from "SerializerMessages_sv.java"
-public class com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages_sv extends java.util.ListResourceBundle {
-  public com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages_sv();
-  public java.lang.Object[][] getContents();
-}

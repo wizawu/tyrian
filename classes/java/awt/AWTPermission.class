@@ -1,5 +1,0 @@
-Compiled from "AWTPermission.java"
-public final class java.awt.AWTPermission extends java.security.BasicPermission {
-  public java.awt.AWTPermission(java.lang.String);
-  public java.awt.AWTPermission(java.lang.String, java.lang.String);
-}

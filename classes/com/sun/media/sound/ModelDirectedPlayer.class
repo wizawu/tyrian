@@ -1,4 +1,0 @@
-Compiled from "ModelDirectedPlayer.java"
-public interface com.sun.media.sound.ModelDirectedPlayer {
-  public abstract void play(int, com.sun.media.sound.ModelConnectionBlock[]);
-}

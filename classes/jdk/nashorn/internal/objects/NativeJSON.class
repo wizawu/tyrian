@@ -1,8 +1,0 @@
-Compiled from "NativeJSON.java"
-public final class jdk.nashorn.internal.objects.NativeJSON extends jdk.nashorn.internal.runtime.ScriptObject {
-  static final boolean $assertionsDisabled;
-  public static java.lang.Object parse(java.lang.Object, java.lang.Object, java.lang.Object);
-  public static java.lang.Object stringify(java.lang.Object, java.lang.Object, java.lang.Object, java.lang.Object);
-  static {};
-  public static void $clinit$();
-}

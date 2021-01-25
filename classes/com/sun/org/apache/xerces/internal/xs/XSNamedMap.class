@@ -1,6 +1,0 @@
-Compiled from "XSNamedMap.java"
-public interface com.sun.org.apache.xerces.internal.xs.XSNamedMap extends java.util.Map<javax.xml.namespace.QName, com.sun.org.apache.xerces.internal.xs.XSObject> {
-  public abstract int getLength();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSObject item(int);
-  public abstract com.sun.org.apache.xerces.internal.xs.XSObject itemByName(java.lang.String, java.lang.String);
-}

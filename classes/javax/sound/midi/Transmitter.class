@@ -1,6 +1,0 @@
-Compiled from "Transmitter.java"
-public interface javax.sound.midi.Transmitter extends java.lang.AutoCloseable {
-  public abstract void setReceiver(javax.sound.midi.Receiver);
-  public abstract javax.sound.midi.Receiver getReceiver();
-  public abstract void close();
-}

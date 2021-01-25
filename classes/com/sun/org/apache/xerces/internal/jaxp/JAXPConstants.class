@@ -1,6 +1,0 @@
-Compiled from "JAXPConstants.java"
-public interface com.sun.org.apache.xerces.internal.jaxp.JAXPConstants {
-  public static final java.lang.String JAXP_SCHEMA_LANGUAGE;
-  public static final java.lang.String W3C_XML_SCHEMA;
-  public static final java.lang.String JAXP_SCHEMA_SOURCE;
-}

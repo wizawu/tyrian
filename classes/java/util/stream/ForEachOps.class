@@ -1,7 +1,0 @@
-Compiled from "ForEachOps.java"
-final class java.util.stream.ForEachOps {
-  public static <T> java.util.stream.TerminalOp<T, java.lang.Void> makeRef(java.util.function.Consumer<? super T>, boolean);
-  public static java.util.stream.TerminalOp<java.lang.Integer, java.lang.Void> makeInt(java.util.function.IntConsumer, boolean);
-  public static java.util.stream.TerminalOp<java.lang.Long, java.lang.Void> makeLong(java.util.function.LongConsumer, boolean);
-  public static java.util.stream.TerminalOp<java.lang.Double, java.lang.Void> makeDouble(java.util.function.DoubleConsumer, boolean);
-}

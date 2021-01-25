@@ -1,4 +1,0 @@
-Compiled from "EntropySource.java"
-public interface sun.security.provider.EntropySource {
-  public abstract byte[] getEntropy(int, int, int, boolean);
-}

@@ -1,5 +1,0 @@
-Compiled from "AuthPermission.java"
-public final class javax.security.auth.AuthPermission extends java.security.BasicPermission {
-  public javax.security.auth.AuthPermission(java.lang.String);
-  public javax.security.auth.AuthPermission(java.lang.String, java.lang.String);
-}

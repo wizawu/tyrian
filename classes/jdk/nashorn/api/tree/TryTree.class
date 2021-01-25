@@ -1,6 +1,0 @@
-Compiled from "TryTree.java"
-public interface jdk.nashorn.api.tree.TryTree extends jdk.nashorn.api.tree.StatementTree {
-  public abstract jdk.nashorn.api.tree.BlockTree getBlock();
-  public abstract java.util.List<? extends jdk.nashorn.api.tree.CatchTree> getCatches();
-  public abstract jdk.nashorn.api.tree.BlockTree getFinallyBlock();
-}

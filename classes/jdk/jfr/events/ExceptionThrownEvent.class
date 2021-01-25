@@ -1,6 +1,0 @@
-Compiled from "ExceptionThrownEvent.java"
-public final class jdk.jfr.events.ExceptionThrownEvent extends jdk.jfr.events.AbstractJDKEvent {
-  public java.lang.String message;
-  public java.lang.Class<?> thrownClass;
-  public jdk.jfr.events.ExceptionThrownEvent();
-}

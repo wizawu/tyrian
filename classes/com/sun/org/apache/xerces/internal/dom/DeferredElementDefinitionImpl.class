@@ -1,9 +1,0 @@
-Compiled from "DeferredElementDefinitionImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.DeferredElementDefinitionImpl extends com.sun.org.apache.xerces.internal.dom.ElementDefinitionImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
-  static final long serialVersionUID;
-  protected transient int fNodeIndex;
-  com.sun.org.apache.xerces.internal.dom.DeferredElementDefinitionImpl(com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl, int);
-  public int getNodeIndex();
-  protected void synchronizeData();
-  protected void synchronizeChildren();
-}

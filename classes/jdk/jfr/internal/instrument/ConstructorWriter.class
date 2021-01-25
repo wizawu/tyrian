@@ -1,6 +1,0 @@
-Compiled from "ConstructorWriter.java"
-final class jdk.jfr.internal.instrument.ConstructorWriter extends jdk.internal.org.objectweb.asm.MethodVisitor {
-  jdk.jfr.internal.instrument.ConstructorWriter(java.lang.Class<?>, boolean);
-  public void visitInsn(int);
-  public void setMethodVisitor(jdk.internal.org.objectweb.asm.MethodVisitor);
-}

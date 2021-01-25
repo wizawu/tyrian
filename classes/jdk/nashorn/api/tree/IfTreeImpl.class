@@ -1,9 +1,0 @@
-Compiled from "IfTreeImpl.java"
-final class jdk.nashorn.api.tree.IfTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.IfTree {
-  jdk.nashorn.api.tree.IfTreeImpl(jdk.nashorn.internal.ir.IfNode, jdk.nashorn.api.tree.ExpressionTree, jdk.nashorn.api.tree.StatementTree, jdk.nashorn.api.tree.StatementTree);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.ExpressionTree getCondition();
-  public jdk.nashorn.api.tree.StatementTree getThenStatement();
-  public jdk.nashorn.api.tree.StatementTree getElseStatement();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

@@ -1,5 +1,0 @@
-Compiled from "DataDirectory.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DataDirectory {
-  public abstract int getRVA();
-  public abstract int getSize();
-}

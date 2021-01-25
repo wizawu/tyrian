@@ -1,6 +1,0 @@
-Compiled from "SSLException.java"
-public class javax.net.ssl.SSLException extends java.io.IOException {
-  public javax.net.ssl.SSLException(java.lang.String);
-  public javax.net.ssl.SSLException(java.lang.String, java.lang.Throwable);
-  public javax.net.ssl.SSLException(java.lang.Throwable);
-}

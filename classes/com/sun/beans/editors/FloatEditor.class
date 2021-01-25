@@ -1,6 +1,0 @@
-Compiled from "FloatEditor.java"
-public class com.sun.beans.editors.FloatEditor extends com.sun.beans.editors.NumberEditor {
-  public com.sun.beans.editors.FloatEditor();
-  public java.lang.String getJavaInitializationString();
-  public void setAsText(java.lang.String) throws java.lang.IllegalArgumentException;
-}

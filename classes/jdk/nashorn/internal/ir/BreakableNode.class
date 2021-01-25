@@ -1,6 +1,0 @@
-Compiled from "BreakableNode.java"
-public interface jdk.nashorn.internal.ir.BreakableNode extends jdk.nashorn.internal.ir.LexicalContextNode,jdk.nashorn.internal.ir.JoinPredecessor,jdk.nashorn.internal.ir.Labels {
-  public abstract jdk.nashorn.internal.ir.Node ensureUniqueLabels(jdk.nashorn.internal.ir.LexicalContext);
-  public abstract boolean isBreakableWithoutLabel();
-  public abstract jdk.nashorn.internal.codegen.Label getBreakLabel();
-}

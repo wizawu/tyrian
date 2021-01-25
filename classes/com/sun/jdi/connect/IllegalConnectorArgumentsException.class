@@ -1,7 +1,0 @@
-Compiled from "IllegalConnectorArgumentsException.java"
-public class com.sun.jdi.connect.IllegalConnectorArgumentsException extends java.lang.Exception {
-  java.util.List<java.lang.String> names;
-  public com.sun.jdi.connect.IllegalConnectorArgumentsException(java.lang.String, java.lang.String);
-  public com.sun.jdi.connect.IllegalConnectorArgumentsException(java.lang.String, java.util.List<java.lang.String>);
-  public java.util.List<java.lang.String> argumentNames();
-}

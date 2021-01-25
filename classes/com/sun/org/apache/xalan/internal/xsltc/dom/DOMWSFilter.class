@@ -1,5 +1,0 @@
-Compiled from "DOMWSFilter.java"
-public class com.sun.org.apache.xalan.internal.xsltc.dom.DOMWSFilter implements com.sun.org.apache.xml.internal.dtm.DTMWSFilter {
-  public com.sun.org.apache.xalan.internal.xsltc.dom.DOMWSFilter(com.sun.org.apache.xalan.internal.xsltc.runtime.AbstractTranslet);
-  public short getShouldStripSpace(int, com.sun.org.apache.xml.internal.dtm.DTM);
-}

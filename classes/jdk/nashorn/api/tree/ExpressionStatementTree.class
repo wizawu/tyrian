@@ -1,4 +1,0 @@
-Compiled from "ExpressionStatementTree.java"
-public interface jdk.nashorn.api.tree.ExpressionStatementTree extends jdk.nashorn.api.tree.StatementTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getExpression();
-}

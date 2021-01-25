@@ -1,9 +1,0 @@
-Compiled from "BasicViewportUI.java"
-public class javax.swing.plaf.basic.BasicViewportUI extends javax.swing.plaf.ViewportUI {
-  public javax.swing.plaf.basic.BasicViewportUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  public void installUI(javax.swing.JComponent);
-  public void uninstallUI(javax.swing.JComponent);
-  protected void installDefaults(javax.swing.JComponent);
-  protected void uninstallDefaults(javax.swing.JComponent);
-}

@@ -1,8 +1,0 @@
-Compiled from "ExpressionSnippet.java"
-public class jdk.jshell.ExpressionSnippet extends jdk.jshell.Snippet {
-  jdk.jshell.ExpressionSnippet(jdk.jshell.Key$ExpressionKey, java.lang.String, jdk.jshell.Wrap, java.lang.String, jdk.jshell.Snippet$SubKind);
-  public java.lang.String name();
-  public java.lang.String typeName();
-  jdk.jshell.Key$ExpressionKey key();
-  jdk.jshell.Key key();
-}

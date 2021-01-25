@@ -1,7 +1,0 @@
-Compiled from "SF2LayerRegion.java"
-public final class com.sun.media.sound.SF2LayerRegion extends com.sun.media.sound.SF2Region {
-  com.sun.media.sound.SF2Sample sample;
-  public com.sun.media.sound.SF2LayerRegion();
-  public com.sun.media.sound.SF2Sample getSample();
-  public void setSample(com.sun.media.sound.SF2Sample);
-}

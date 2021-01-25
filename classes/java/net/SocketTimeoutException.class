@@ -1,5 +1,0 @@
-Compiled from "SocketTimeoutException.java"
-public class java.net.SocketTimeoutException extends java.io.InterruptedIOException {
-  public java.net.SocketTimeoutException(java.lang.String);
-  public java.net.SocketTimeoutException();
-}

@@ -1,5 +1,0 @@
-Compiled from "LSInputList.java"
-public interface com.sun.org.apache.xerces.internal.xs.LSInputList extends java.util.List<org.w3c.dom.ls.LSInput> {
-  public abstract int getLength();
-  public abstract org.w3c.dom.ls.LSInput item(int);
-}

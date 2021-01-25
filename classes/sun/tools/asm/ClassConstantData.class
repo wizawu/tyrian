@@ -1,9 +1,0 @@
-Compiled from "ClassConstantData.java"
-final class sun.tools.asm.ClassConstantData extends sun.tools.asm.ConstantPoolData {
-  java.lang.String name;
-  sun.tools.asm.ClassConstantData(sun.tools.asm.ConstantPool, sun.tools.java.ClassDeclaration);
-  sun.tools.asm.ClassConstantData(sun.tools.asm.ConstantPool, sun.tools.java.Type);
-  void write(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
-  int order();
-  public java.lang.String toString();
-}

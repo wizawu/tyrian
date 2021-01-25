@@ -1,8 +1,0 @@
-Compiled from "VMRegImpl.java"
-public class sun.jvm.hotspot.code.VMRegImpl {
-  public sun.jvm.hotspot.code.VMRegImpl();
-  public static sun.jvm.hotspot.runtime.VMReg getStack0();
-  public static java.lang.String getRegisterName(int);
-  public static int getStackSlotSize();
-  static {};
-}

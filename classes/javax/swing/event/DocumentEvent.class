@@ -1,8 +1,0 @@
-Compiled from "DocumentEvent.java"
-public interface javax.swing.event.DocumentEvent {
-  public abstract int getOffset();
-  public abstract int getLength();
-  public abstract javax.swing.text.Document getDocument();
-  public abstract javax.swing.event.DocumentEvent$EventType getType();
-  public abstract javax.swing.event.DocumentEvent$ElementChange getChange(javax.swing.text.Element);
-}

@@ -1,6 +1,0 @@
-Compiled from "Main.java"
-public class jdk.tools.jimage.Main {
-  public jdk.tools.jimage.Main();
-  public static void main(java.lang.String[]) throws java.lang.Exception;
-  public static int run(java.lang.String[], java.io.PrintWriter);
-}

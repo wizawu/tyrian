@@ -1,6 +1,0 @@
-Compiled from "NashornStaticClassLinker.java"
-final class jdk.nashorn.internal.runtime.linker.NashornStaticClassLinker implements jdk.dynalink.linker.TypeBasedGuardingDynamicLinker {
-  jdk.nashorn.internal.runtime.linker.NashornStaticClassLinker(jdk.dynalink.beans.BeansLinker);
-  public boolean canLinkType(java.lang.Class<?>);
-  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
-}

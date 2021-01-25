@@ -1,7 +1,0 @@
-Compiled from "GC.java"
-class sun.rmi.transport.GC {
-  public static native long maxObjectInspectionAge();
-  public static sun.rmi.transport.GC$LatencyRequest requestLatency(long);
-  public static long currentLatencyTarget();
-  static {};
-}

@@ -1,6 +1,0 @@
-Compiled from "KeyListener.java"
-public interface java.awt.event.KeyListener extends java.util.EventListener {
-  public abstract void keyTyped(java.awt.event.KeyEvent);
-  public abstract void keyPressed(java.awt.event.KeyEvent);
-  public abstract void keyReleased(java.awt.event.KeyEvent);
-}

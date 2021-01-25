@@ -1,4 +1,0 @@
-Compiled from "JavaObjectInputFilterAccess.java"
-public interface jdk.internal.misc.JavaObjectInputFilterAccess {
-  public abstract java.io.ObjectInputFilter createFilter2(java.lang.String);
-}

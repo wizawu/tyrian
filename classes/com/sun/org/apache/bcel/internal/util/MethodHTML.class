@@ -1,4 +1,0 @@
-Compiled from "MethodHTML.java"
-final class com.sun.org.apache.bcel.internal.util.MethodHTML {
-  com.sun.org.apache.bcel.internal.util.MethodHTML(java.lang.String, java.lang.String, com.sun.org.apache.bcel.internal.classfile.Method[], com.sun.org.apache.bcel.internal.classfile.Field[], com.sun.org.apache.bcel.internal.util.ConstantHTML, com.sun.org.apache.bcel.internal.util.AttributeHTML) throws java.io.IOException;
-}

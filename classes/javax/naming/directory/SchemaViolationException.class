@@ -1,5 +1,0 @@
-Compiled from "SchemaViolationException.java"
-public class javax.naming.directory.SchemaViolationException extends javax.naming.NamingException {
-  public javax.naming.directory.SchemaViolationException();
-  public javax.naming.directory.SchemaViolationException(java.lang.String);
-}

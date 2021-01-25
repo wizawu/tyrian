@@ -1,6 +1,0 @@
-Compiled from "WarnCallback.java"
-public interface jdk.nashorn.internal.runtime.regexp.joni.WarnCallback {
-  public static final jdk.nashorn.internal.runtime.regexp.joni.WarnCallback DEFAULT;
-  public abstract void warn(java.lang.String);
-  static {};
-}

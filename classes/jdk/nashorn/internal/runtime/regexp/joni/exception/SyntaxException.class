@@ -1,4 +1,0 @@
-Compiled from "SyntaxException.java"
-public class jdk.nashorn.internal.runtime.regexp.joni.exception.SyntaxException extends jdk.nashorn.internal.runtime.regexp.joni.exception.JOniException {
-  public jdk.nashorn.internal.runtime.regexp.joni.exception.SyntaxException(java.lang.String);
-}

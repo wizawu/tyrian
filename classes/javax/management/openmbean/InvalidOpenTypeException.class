@@ -1,5 +1,0 @@
-Compiled from "InvalidOpenTypeException.java"
-public class javax.management.openmbean.InvalidOpenTypeException extends java.lang.IllegalArgumentException {
-  public javax.management.openmbean.InvalidOpenTypeException();
-  public javax.management.openmbean.InvalidOpenTypeException(java.lang.String);
-}

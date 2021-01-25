@@ -1,6 +1,0 @@
-Compiled from "FSTORE.java"
-public class com.sun.org.apache.bcel.internal.generic.FSTORE extends com.sun.org.apache.bcel.internal.generic.StoreInstruction {
-  com.sun.org.apache.bcel.internal.generic.FSTORE();
-  public com.sun.org.apache.bcel.internal.generic.FSTORE(int);
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

@@ -1,7 +1,0 @@
-Compiled from "EntityDV.java"
-public class com.sun.org.apache.xerces.internal.impl.dv.xs.EntityDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
-  public com.sun.org.apache.xerces.internal.impl.dv.xs.EntityDV();
-  public short getAllowedFacets();
-  public java.lang.Object getActualValue(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
-  public void checkExtraRules(java.lang.Object, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
-}

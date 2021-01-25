@@ -1,9 +1,0 @@
-Compiled from "FloatField.java"
-public class sun.jvm.hotspot.oops.FloatField extends sun.jvm.hotspot.oops.Field {
-  public sun.jvm.hotspot.oops.FloatField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
-  public sun.jvm.hotspot.oops.FloatField(sun.jvm.hotspot.types.JFloatField, long);
-  public sun.jvm.hotspot.oops.FloatField(sun.jvm.hotspot.oops.InstanceKlass, int);
-  public float getValue(sun.jvm.hotspot.oops.Oop);
-  public float getValue(sun.jvm.hotspot.runtime.VMObject);
-  public void setValue(sun.jvm.hotspot.oops.Oop, float) throws sun.jvm.hotspot.oops.MutationException;
-}

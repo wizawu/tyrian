@@ -1,9 +1,0 @@
-Compiled from "Exception.java"
-public class java.lang.Exception extends java.lang.Throwable {
-  static final long serialVersionUID;
-  public java.lang.Exception();
-  public java.lang.Exception(java.lang.String);
-  public java.lang.Exception(java.lang.String, java.lang.Throwable);
-  public java.lang.Exception(java.lang.Throwable);
-  protected java.lang.Exception(java.lang.String, java.lang.Throwable, boolean, boolean);
-}

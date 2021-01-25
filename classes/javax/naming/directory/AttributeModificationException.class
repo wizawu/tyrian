@@ -1,8 +1,0 @@
-Compiled from "AttributeModificationException.java"
-public class javax.naming.directory.AttributeModificationException extends javax.naming.NamingException {
-  public javax.naming.directory.AttributeModificationException(java.lang.String);
-  public javax.naming.directory.AttributeModificationException();
-  public void setUnexecutedModifications(javax.naming.directory.ModificationItem[]);
-  public javax.naming.directory.ModificationItem[] getUnexecutedModifications();
-  public java.lang.String toString();
-}

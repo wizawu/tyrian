@@ -1,9 +1,0 @@
-Compiled from "XSDAttributeTraverser.java"
-class com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
-  public com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAttributeTraverser(com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker);
-  protected com.sun.org.apache.xerces.internal.impl.xs.XSAttributeUseImpl traverseLocal(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar, com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl);
-  protected com.sun.org.apache.xerces.internal.impl.xs.XSAttributeDecl traverseGlobal(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
-  com.sun.org.apache.xerces.internal.impl.xs.XSAttributeDecl traverseNamedAttr(org.w3c.dom.Element, java.lang.Object[], com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar, boolean, com.sun.org.apache.xerces.internal.impl.xs.XSComplexTypeDecl);
-  void checkDefaultValid(com.sun.org.apache.xerces.internal.impl.xs.XSAttributeDecl) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
-  void checkDefaultValid(com.sun.org.apache.xerces.internal.impl.xs.XSAttributeUseImpl) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
-}

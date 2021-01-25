@@ -1,8 +1,0 @@
-Compiled from "JavaCallWrapper.java"
-public class sun.jvm.hotspot.runtime.JavaCallWrapper extends sun.jvm.hotspot.runtime.VMObject {
-  protected static sun.jvm.hotspot.types.AddressField anchorField;
-  public sun.jvm.hotspot.runtime.JavaCallWrapper(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.Address getLastJavaSP();
-  public sun.jvm.hotspot.debugger.Address getLastJavaPC();
-  static {};
-}

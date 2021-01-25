@@ -1,5 +1,0 @@
-Compiled from "SerializerMessages_zh_TW.java"
-public class com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages_zh_TW extends java.util.ListResourceBundle {
-  public com.sun.org.apache.xml.internal.serializer.utils.SerializerMessages_zh_TW();
-  public java.lang.Object[][] getContents();
-}

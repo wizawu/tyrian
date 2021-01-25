@@ -1,7 +1,0 @@
-Compiled from "LoggingMXBean.java"
-public interface java.util.logging.LoggingMXBean {
-  public abstract java.util.List<java.lang.String> getLoggerNames();
-  public abstract java.lang.String getLoggerLevel(java.lang.String);
-  public abstract void setLoggerLevel(java.lang.String, java.lang.String);
-  public abstract java.lang.String getParentLoggerName(java.lang.String);
-}

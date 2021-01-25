@@ -1,4 +1,0 @@
-Compiled from "Paint.java"
-public interface java.awt.Paint extends java.awt.Transparency {
-  public abstract java.awt.PaintContext createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints);
-}

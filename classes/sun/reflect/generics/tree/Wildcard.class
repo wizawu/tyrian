@@ -1,8 +1,0 @@
-Compiled from "Wildcard.java"
-public class sun.reflect.generics.tree.Wildcard implements sun.reflect.generics.tree.TypeArgument {
-  public static sun.reflect.generics.tree.Wildcard make(sun.reflect.generics.tree.FieldTypeSignature[], sun.reflect.generics.tree.FieldTypeSignature[]);
-  public sun.reflect.generics.tree.FieldTypeSignature[] getUpperBounds();
-  public sun.reflect.generics.tree.FieldTypeSignature[] getLowerBounds();
-  public void accept(sun.reflect.generics.visitor.TypeTreeVisitor<?>);
-  static {};
-}

@@ -1,4 +1,0 @@
-Compiled from "LoopTree.java"
-public interface jdk.nashorn.api.tree.LoopTree extends jdk.nashorn.api.tree.StatementTree {
-  public abstract jdk.nashorn.api.tree.StatementTree getStatement();
-}

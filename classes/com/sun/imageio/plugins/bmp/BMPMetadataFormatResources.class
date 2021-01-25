@@ -1,5 +1,0 @@
-Compiled from "BMPMetadataFormatResources.java"
-public class com.sun.imageio.plugins.bmp.BMPMetadataFormatResources extends java.util.ListResourceBundle {
-  public com.sun.imageio.plugins.bmp.BMPMetadataFormatResources();
-  protected java.lang.Object[][] getContents();
-}

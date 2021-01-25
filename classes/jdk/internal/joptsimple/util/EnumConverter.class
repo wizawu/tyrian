@@ -1,9 +1,0 @@
-Compiled from "EnumConverter.java"
-public abstract class jdk.internal.joptsimple.util.EnumConverter<E extends java.lang.Enum<E>> implements jdk.internal.joptsimple.ValueConverter<E> {
-  protected jdk.internal.joptsimple.util.EnumConverter(java.lang.Class<E>);
-  public E convert(java.lang.String);
-  public java.lang.Class<E> valueType();
-  public void setDelimiters(java.lang.String);
-  public java.lang.String valuePattern();
-  public java.lang.Object convert(java.lang.String);
-}

@@ -1,4 +1,0 @@
-Compiled from "QuitHandler.java"
-public interface java.awt.desktop.QuitHandler {
-  public abstract void handleQuitRequestWith(java.awt.desktop.QuitEvent, java.awt.desktop.QuitResponse);
-}

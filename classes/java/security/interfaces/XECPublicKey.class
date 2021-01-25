@@ -1,4 +1,0 @@
-Compiled from "XECPublicKey.java"
-public interface java.security.interfaces.XECPublicKey extends java.security.interfaces.XECKey,java.security.PublicKey {
-  public abstract java.math.BigInteger getU();
-}

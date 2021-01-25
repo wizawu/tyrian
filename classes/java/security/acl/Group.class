@@ -1,7 +1,0 @@
-Compiled from "Group.java"
-public interface java.security.acl.Group extends java.security.Principal {
-  public abstract boolean addMember(java.security.Principal);
-  public abstract boolean removeMember(java.security.Principal);
-  public abstract boolean isMember(java.security.Principal);
-  public abstract java.util.Enumeration<? extends java.security.Principal> members();
-}

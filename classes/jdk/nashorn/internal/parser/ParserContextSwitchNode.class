@@ -1,5 +1,0 @@
-Compiled from "ParserContextSwitchNode.java"
-class jdk.nashorn.internal.parser.ParserContextSwitchNode extends jdk.nashorn.internal.parser.ParserContextBaseNode implements jdk.nashorn.internal.parser.ParserContextBreakableNode {
-  jdk.nashorn.internal.parser.ParserContextSwitchNode();
-  public boolean isBreakableWithoutLabel();
-}

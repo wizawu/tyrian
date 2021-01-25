@@ -1,4 +1,0 @@
-Compiled from "Closure.java"
-interface sun.tools.jstat.Closure {
-  public abstract void visit(java.lang.Object, boolean) throws sun.jvmstat.monitor.MonitorException;
-}

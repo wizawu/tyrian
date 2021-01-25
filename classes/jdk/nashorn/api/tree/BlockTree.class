@@ -1,4 +1,0 @@
-Compiled from "BlockTree.java"
-public interface jdk.nashorn.api.tree.BlockTree extends jdk.nashorn.api.tree.StatementTree {
-  public abstract java.util.List<? extends jdk.nashorn.api.tree.StatementTree> getStatements();
-}

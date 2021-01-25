@@ -1,5 +1,0 @@
-Compiled from "CK_AES_CTR_PARAMS.java"
-public class sun.security.pkcs11.wrapper.CK_AES_CTR_PARAMS {
-  public sun.security.pkcs11.wrapper.CK_AES_CTR_PARAMS(byte[]);
-  public java.lang.String toString();
-}

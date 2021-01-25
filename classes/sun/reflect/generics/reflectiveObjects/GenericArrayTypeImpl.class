@@ -1,8 +1,0 @@
-Compiled from "GenericArrayTypeImpl.java"
-public class sun.reflect.generics.reflectiveObjects.GenericArrayTypeImpl implements java.lang.reflect.GenericArrayType {
-  public static sun.reflect.generics.reflectiveObjects.GenericArrayTypeImpl make(java.lang.reflect.Type);
-  public java.lang.reflect.Type getGenericComponentType();
-  public java.lang.String toString();
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-}

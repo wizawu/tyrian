@@ -1,7 +1,0 @@
-Compiled from "SimpleInputMethodWindow.java"
-public class sun.awt.im.SimpleInputMethodWindow extends java.awt.Frame implements sun.awt.im.InputMethodWindow {
-  sun.awt.im.InputContext inputContext;
-  public sun.awt.im.SimpleInputMethodWindow(java.lang.String, sun.awt.im.InputContext);
-  public void setInputContext(sun.awt.im.InputContext);
-  public java.awt.im.InputContext getInputContext();
-}

@@ -1,4 +1,0 @@
-Compiled from "JIInstrumentationTarget.java"
-interface jdk.jfr.internal.instrument.JIInstrumentationTarget extends java.lang.annotation.Annotation {
-  public abstract java.lang.String value();
-}

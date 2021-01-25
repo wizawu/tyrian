@@ -1,6 +1,0 @@
-Compiled from "SoftProvider.java"
-public final class com.sun.media.sound.SoftProvider extends javax.sound.midi.spi.MidiDeviceProvider {
-  public com.sun.media.sound.SoftProvider();
-  public javax.sound.midi.MidiDevice$Info[] getDeviceInfo();
-  public javax.sound.midi.MidiDevice getDevice(javax.sound.midi.MidiDevice$Info);
-}

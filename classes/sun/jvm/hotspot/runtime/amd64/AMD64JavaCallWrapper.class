@@ -1,6 +1,0 @@
-Compiled from "AMD64JavaCallWrapper.java"
-public class sun.jvm.hotspot.runtime.amd64.AMD64JavaCallWrapper extends sun.jvm.hotspot.runtime.JavaCallWrapper {
-  public sun.jvm.hotspot.runtime.amd64.AMD64JavaCallWrapper(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.Address getLastJavaFP();
-  static {};
-}

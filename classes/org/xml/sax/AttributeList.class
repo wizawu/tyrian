@@ -1,9 +1,0 @@
-Compiled from "AttributeList.java"
-public interface org.xml.sax.AttributeList {
-  public abstract int getLength();
-  public abstract java.lang.String getName(int);
-  public abstract java.lang.String getType(int);
-  public abstract java.lang.String getValue(int);
-  public abstract java.lang.String getType(java.lang.String);
-  public abstract java.lang.String getValue(java.lang.String);
-}

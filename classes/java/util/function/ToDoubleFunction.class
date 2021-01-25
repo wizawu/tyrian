@@ -1,4 +1,0 @@
-Compiled from "ToDoubleFunction.java"
-public interface java.util.function.ToDoubleFunction<T> {
-  public abstract double applyAsDouble(T);
-}

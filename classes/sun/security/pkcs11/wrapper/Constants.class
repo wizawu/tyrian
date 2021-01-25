@@ -1,7 +1,0 @@
-Compiled from "Constants.java"
-public class sun.security.pkcs11.wrapper.Constants {
-  public static final java.lang.String NEWLINE;
-  public static final java.lang.String INDENT;
-  public sun.security.pkcs11.wrapper.Constants();
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "SPARCRegisterType.java"
-public class sun.jvm.hotspot.asm.sparc.SPARCRegisterType {
-  public static final sun.jvm.hotspot.asm.sparc.SPARCRegisterType GLOBAL;
-  public static final sun.jvm.hotspot.asm.sparc.SPARCRegisterType OUT;
-  public static final sun.jvm.hotspot.asm.sparc.SPARCRegisterType IN;
-  public static final sun.jvm.hotspot.asm.sparc.SPARCRegisterType LOCAL;
-  static {};
-}

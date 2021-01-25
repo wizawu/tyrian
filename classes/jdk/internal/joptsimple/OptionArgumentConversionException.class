@@ -1,5 +1,0 @@
-Compiled from "OptionArgumentConversionException.java"
-class jdk.internal.joptsimple.OptionArgumentConversionException extends jdk.internal.joptsimple.OptionException {
-  jdk.internal.joptsimple.OptionArgumentConversionException(jdk.internal.joptsimple.OptionSpec<?>, java.lang.String, java.lang.Throwable);
-  java.lang.Object[] messageArguments();
-}

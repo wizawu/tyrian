@@ -1,5 +1,0 @@
-Compiled from "PrintJobFlavorException.java"
-class sun.print.PrintJobFlavorException extends javax.print.PrintException implements javax.print.FlavorException {
-  sun.print.PrintJobFlavorException(java.lang.String, javax.print.DocFlavor);
-  public javax.print.DocFlavor[] getUnsupportedFlavors();
-}

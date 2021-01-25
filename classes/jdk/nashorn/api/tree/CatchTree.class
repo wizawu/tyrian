@@ -1,6 +1,0 @@
-Compiled from "CatchTree.java"
-public interface jdk.nashorn.api.tree.CatchTree extends jdk.nashorn.api.tree.Tree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getParameter();
-  public abstract jdk.nashorn.api.tree.BlockTree getBlock();
-  public abstract jdk.nashorn.api.tree.ExpressionTree getCondition();
-}

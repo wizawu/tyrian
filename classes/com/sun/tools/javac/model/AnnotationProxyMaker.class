@@ -1,4 +1,0 @@
-Compiled from "AnnotationProxyMaker.java"
-public class com.sun.tools.javac.model.AnnotationProxyMaker {
-  public static <A extends java.lang.annotation.Annotation> A generateAnnotation(com.sun.tools.javac.code.Attribute$Compound, java.lang.Class<A>);
-}

@@ -1,5 +1,0 @@
-Compiled from "ClassNotFound.java"
-public class sun.tools.java.ClassNotFound extends java.lang.Exception {
-  public sun.tools.java.Identifier name;
-  public sun.tools.java.ClassNotFound(sun.tools.java.Identifier);
-}

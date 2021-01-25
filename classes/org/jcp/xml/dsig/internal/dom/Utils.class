@@ -1,8 +1,0 @@
-Compiled from "Utils.java"
-public final class org.jcp.xml.dsig.internal.dom.Utils {
-  public static byte[] readBytesFromStream(java.io.InputStream) throws java.io.IOException;
-  static java.util.Set<org.w3c.dom.Node> toNodeSet(java.util.Iterator<?>);
-  public static java.lang.String parseIdFromSameDocumentURI(java.lang.String);
-  public static boolean sameDocumentURI(java.lang.String);
-  static boolean secureValidation(javax.xml.crypto.XMLCryptoContext);
-}

@@ -1,7 +1,0 @@
-Compiled from "RangeException.java"
-public class org.w3c.dom.ranges.RangeException extends java.lang.RuntimeException {
-  public short code;
-  public static final short BAD_BOUNDARYPOINTS_ERR;
-  public static final short INVALID_NODE_TYPE_ERR;
-  public org.w3c.dom.ranges.RangeException(short, java.lang.String);
-}

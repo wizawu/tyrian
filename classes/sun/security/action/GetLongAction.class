@@ -1,7 +1,0 @@
-Compiled from "GetLongAction.java"
-public class sun.security.action.GetLongAction implements java.security.PrivilegedAction<java.lang.Long> {
-  public sun.security.action.GetLongAction(java.lang.String);
-  public sun.security.action.GetLongAction(java.lang.String, long);
-  public java.lang.Long run();
-  public java.lang.Object run();
-}

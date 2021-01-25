@@ -1,3 +1,0 @@
-Compiled from "BooleanType.java"
-public interface com.sun.jdi.BooleanType extends com.sun.jdi.PrimitiveType {
-}

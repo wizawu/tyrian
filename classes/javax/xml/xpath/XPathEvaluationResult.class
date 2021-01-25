@@ -1,5 +1,0 @@
-Compiled from "XPathEvaluationResult.java"
-public interface javax.xml.xpath.XPathEvaluationResult<T> {
-  public abstract javax.xml.xpath.XPathEvaluationResult$XPathResultType type();
-  public abstract T value();
-}

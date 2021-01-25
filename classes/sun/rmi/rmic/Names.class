@@ -1,7 +1,0 @@
-Compiled from "Names.java"
-public class sun.rmi.rmic.Names {
-  public sun.rmi.rmic.Names();
-  public static final sun.tools.java.Identifier stubFor(sun.tools.java.Identifier);
-  public static final sun.tools.java.Identifier skeletonFor(sun.tools.java.Identifier);
-  public static final sun.tools.java.Identifier mangleClass(sun.tools.java.Identifier);
-}

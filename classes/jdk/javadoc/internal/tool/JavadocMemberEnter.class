@@ -1,9 +1,0 @@
-Compiled from "JavadocMemberEnter.java"
-public class jdk.javadoc.internal.tool.JavadocMemberEnter extends com.sun.tools.javac.comp.MemberEnter {
-  final jdk.javadoc.internal.tool.ToolEnvironment toolEnv;
-  public static jdk.javadoc.internal.tool.JavadocMemberEnter instance0(com.sun.tools.javac.util.Context);
-  public static void preRegister(com.sun.tools.javac.util.Context);
-  protected jdk.javadoc.internal.tool.JavadocMemberEnter(com.sun.tools.javac.util.Context);
-  public void visitMethodDef(com.sun.tools.javac.tree.JCTree$JCMethodDecl);
-  public void visitVarDef(com.sun.tools.javac.tree.JCTree$JCVariableDecl);
-}

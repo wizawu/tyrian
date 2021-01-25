@@ -1,5 +1,0 @@
-Compiled from "ProblemException.java"
-public class com.sun.tools.sjavac.ProblemException extends java.lang.Exception {
-  static final long serialVersionUID;
-  public com.sun.tools.sjavac.ProblemException(java.lang.String);
-}

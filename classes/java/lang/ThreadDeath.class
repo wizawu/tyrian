@@ -1,4 +1,0 @@
-Compiled from "ThreadDeath.java"
-public class java.lang.ThreadDeath extends java.lang.Error {
-  public java.lang.ThreadDeath();
-}

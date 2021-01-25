@@ -1,8 +1,0 @@
-Compiled from "X509IssuerSerialResolver.java"
-public class com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509IssuerSerialResolver extends com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi {
-  public com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.X509IssuerSerialResolver();
-  public java.security.PublicKey engineLookupAndResolvePublicKey(org.w3c.dom.Element, java.lang.String, com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver) throws com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
-  public java.security.cert.X509Certificate engineLookupResolveX509Certificate(org.w3c.dom.Element, java.lang.String, com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver) throws com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverException;
-  public javax.crypto.SecretKey engineLookupAndResolveSecretKey(org.w3c.dom.Element, java.lang.String, com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver);
-  static {};
-}

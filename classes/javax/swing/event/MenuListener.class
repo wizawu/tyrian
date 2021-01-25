@@ -1,6 +1,0 @@
-Compiled from "MenuListener.java"
-public interface javax.swing.event.MenuListener extends java.util.EventListener {
-  public abstract void menuSelected(javax.swing.event.MenuEvent);
-  public abstract void menuDeselected(javax.swing.event.MenuEvent);
-  public abstract void menuCanceled(javax.swing.event.MenuEvent);
-}

@@ -1,7 +1,0 @@
-Compiled from "DHParameterGenerator.java"
-public final class com.sun.crypto.provider.DHParameterGenerator extends java.security.AlgorithmParameterGeneratorSpi {
-  public com.sun.crypto.provider.DHParameterGenerator();
-  protected void engineInit(int, java.security.SecureRandom);
-  protected void engineInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
-  protected java.security.AlgorithmParameters engineGenerateParameters();
-}

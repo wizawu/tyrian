@@ -1,5 +1,0 @@
-Compiled from "SecurityWarning.java"
-public final class com.sun.awt.SecurityWarning {
-  public static java.awt.Dimension getSize(java.awt.Window);
-  public static void setPosition(java.awt.Window, java.awt.geom.Point2D, float, float);
-}

@@ -1,5 +1,0 @@
-Compiled from "ReadWriteLock.java"
-public interface java.util.concurrent.locks.ReadWriteLock {
-  public abstract java.util.concurrent.locks.Lock readLock();
-  public abstract java.util.concurrent.locks.Lock writeLock();
-}

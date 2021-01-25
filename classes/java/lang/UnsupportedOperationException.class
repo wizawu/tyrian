@@ -1,8 +1,0 @@
-Compiled from "UnsupportedOperationException.java"
-public class java.lang.UnsupportedOperationException extends java.lang.RuntimeException {
-  static final long serialVersionUID;
-  public java.lang.UnsupportedOperationException();
-  public java.lang.UnsupportedOperationException(java.lang.String);
-  public java.lang.UnsupportedOperationException(java.lang.String, java.lang.Throwable);
-  public java.lang.UnsupportedOperationException(java.lang.Throwable);
-}

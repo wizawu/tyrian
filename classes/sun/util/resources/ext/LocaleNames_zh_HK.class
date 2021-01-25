@@ -1,5 +1,0 @@
-Compiled from "LocaleNames_zh_HK.java"
-public final class sun.util.resources.ext.LocaleNames_zh_HK extends sun.util.resources.OpenListResourceBundle {
-  public sun.util.resources.ext.LocaleNames_zh_HK();
-  protected java.lang.Object[][] getContents();
-}

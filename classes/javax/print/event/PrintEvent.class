@@ -1,5 +1,0 @@
-Compiled from "PrintEvent.java"
-public class javax.print.event.PrintEvent extends java.util.EventObject {
-  public javax.print.event.PrintEvent(java.lang.Object);
-  public java.lang.String toString();
-}

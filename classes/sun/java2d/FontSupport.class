@@ -1,4 +1,0 @@
-Compiled from "FontSupport.java"
-public interface sun.java2d.FontSupport {
-  public abstract sun.awt.FontConfiguration getFontConfiguration();
-}

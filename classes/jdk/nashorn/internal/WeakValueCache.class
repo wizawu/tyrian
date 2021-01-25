@@ -1,6 +1,0 @@
-Compiled from "WeakValueCache.java"
-public final class jdk.nashorn.internal.WeakValueCache<K, V> {
-  public jdk.nashorn.internal.WeakValueCache();
-  public V get(K);
-  public V getOrCreate(K, java.util.function.Function<? super K, ? extends V>);
-}

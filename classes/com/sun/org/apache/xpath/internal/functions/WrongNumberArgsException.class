@@ -1,5 +1,0 @@
-Compiled from "WrongNumberArgsException.java"
-public class com.sun.org.apache.xpath.internal.functions.WrongNumberArgsException extends java.lang.Exception {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.functions.WrongNumberArgsException(java.lang.String);
-}

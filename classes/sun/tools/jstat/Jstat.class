@@ -1,8 +1,0 @@
-Compiled from "Jstat.java"
-public class sun.tools.jstat.Jstat {
-  public sun.tools.jstat.Jstat();
-  public static void main(java.lang.String[]);
-  static void logNames() throws sun.jvmstat.monitor.MonitorException;
-  static void logSnapShot() throws sun.jvmstat.monitor.MonitorException;
-  static void logSamples() throws sun.jvmstat.monitor.MonitorException;
-}

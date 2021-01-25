@@ -1,7 +1,0 @@
-Compiled from "ContextMatchStepPattern.java"
-public class com.sun.org.apache.xpath.internal.patterns.ContextMatchStepPattern extends com.sun.org.apache.xpath.internal.patterns.StepPattern {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.patterns.ContextMatchStepPattern(int, int);
-  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-  public com.sun.org.apache.xpath.internal.objects.XObject executeRelativePathPattern(com.sun.org.apache.xpath.internal.XPathContext, com.sun.org.apache.xpath.internal.patterns.StepPattern) throws javax.xml.transform.TransformerException;
-}

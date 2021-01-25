@@ -1,8 +1,0 @@
-Compiled from "TemporalAccessor.java"
-public interface java.time.temporal.TemporalAccessor {
-  public abstract boolean isSupported(java.time.temporal.TemporalField);
-  public default java.time.temporal.ValueRange range(java.time.temporal.TemporalField);
-  public default int get(java.time.temporal.TemporalField);
-  public abstract long getLong(java.time.temporal.TemporalField);
-  public default <R> R query(java.time.temporal.TemporalQuery<R>);
-}

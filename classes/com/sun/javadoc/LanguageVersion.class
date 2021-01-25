@@ -1,8 +1,0 @@
-Compiled from "LanguageVersion.java"
-public final class com.sun.javadoc.LanguageVersion extends java.lang.Enum<com.sun.javadoc.LanguageVersion> {
-  public static final com.sun.javadoc.LanguageVersion JAVA_1_1;
-  public static final com.sun.javadoc.LanguageVersion JAVA_1_5;
-  public static com.sun.javadoc.LanguageVersion[] values();
-  public static com.sun.javadoc.LanguageVersion valueOf(java.lang.String);
-  static {};
-}

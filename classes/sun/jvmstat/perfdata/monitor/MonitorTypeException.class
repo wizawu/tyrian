@@ -1,5 +1,0 @@
-Compiled from "MonitorTypeException.java"
-public class sun.jvmstat.perfdata.monitor.MonitorTypeException extends sun.jvmstat.monitor.MonitorException {
-  public sun.jvmstat.perfdata.monitor.MonitorTypeException();
-  public sun.jvmstat.perfdata.monitor.MonitorTypeException(java.lang.String);
-}

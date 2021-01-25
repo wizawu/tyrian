@@ -1,9 +1,0 @@
-Compiled from "BasicLineNumberMapping.java"
-public class sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberMapping {
-  public sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberMapping();
-  public void addLineNumberInfo(sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberInfo);
-  public void sort();
-  public void recomputeEndPCs();
-  public sun.jvm.hotspot.debugger.cdbg.basic.BasicLineNumberInfo lineNumberForPC(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.DebuggerException;
-  public void iterate(sun.jvm.hotspot.debugger.cdbg.LineNumberVisitor);
-}

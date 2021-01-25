@@ -1,7 +1,0 @@
-Compiled from "CallNode.java"
-public class sun.jvm.hotspot.opto.CallNode extends sun.jvm.hotspot.opto.SafePointNode {
-  public sun.jvm.hotspot.debugger.Address entryPoint();
-  public sun.jvm.hotspot.opto.CallNode(sun.jvm.hotspot.debugger.Address);
-  public void dumpSpec(java.io.PrintStream);
-  static {};
-}

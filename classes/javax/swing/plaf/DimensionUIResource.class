@@ -1,4 +1,0 @@
-Compiled from "DimensionUIResource.java"
-public class javax.swing.plaf.DimensionUIResource extends java.awt.Dimension implements javax.swing.plaf.UIResource {
-  public javax.swing.plaf.DimensionUIResource(int, int);
-}

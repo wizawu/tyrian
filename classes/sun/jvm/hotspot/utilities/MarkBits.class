@@ -1,7 +1,0 @@
-Compiled from "MarkBits.java"
-public class sun.jvm.hotspot.utilities.MarkBits {
-  public sun.jvm.hotspot.utilities.MarkBits(sun.jvm.hotspot.gc.shared.CollectedHeap);
-  public void clear();
-  public boolean mark(sun.jvm.hotspot.oops.Oop);
-  public void clear(sun.jvm.hotspot.oops.Oop);
-}

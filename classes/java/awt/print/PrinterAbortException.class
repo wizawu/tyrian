@@ -1,5 +1,0 @@
-Compiled from "PrinterAbortException.java"
-public class java.awt.print.PrinterAbortException extends java.awt.print.PrinterException {
-  public java.awt.print.PrinterAbortException();
-  public java.awt.print.PrinterAbortException(java.lang.String);
-}

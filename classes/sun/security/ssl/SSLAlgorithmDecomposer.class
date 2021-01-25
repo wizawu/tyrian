@@ -1,6 +1,0 @@
-Compiled from "SSLAlgorithmDecomposer.java"
-class sun.security.ssl.SSLAlgorithmDecomposer extends sun.security.util.AlgorithmDecomposer {
-  sun.security.ssl.SSLAlgorithmDecomposer(boolean);
-  sun.security.ssl.SSLAlgorithmDecomposer();
-  public java.util.Set<java.lang.String> decompose(java.lang.String);
-}

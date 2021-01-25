@@ -1,7 +1,0 @@
-Compiled from "GraphicsPrimitiveProxy.java"
-public class sun.java2d.loops.GraphicsPrimitiveProxy extends sun.java2d.loops.GraphicsPrimitive {
-  public sun.java2d.loops.GraphicsPrimitiveProxy(java.lang.Class<?>, java.lang.String, java.lang.String, int, sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
-  public sun.java2d.loops.GraphicsPrimitive makePrimitive(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType, sun.java2d.loops.SurfaceType);
-  sun.java2d.loops.GraphicsPrimitive instantiate();
-  public sun.java2d.loops.GraphicsPrimitive traceWrap();
-}

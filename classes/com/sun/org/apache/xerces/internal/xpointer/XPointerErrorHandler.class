@@ -1,9 +1,0 @@
-Compiled from "XPointerErrorHandler.java"
-final class com.sun.org.apache.xerces.internal.xpointer.XPointerErrorHandler implements com.sun.org.apache.xerces.internal.xni.parser.XMLErrorHandler {
-  protected java.io.PrintWriter fOut;
-  public com.sun.org.apache.xerces.internal.xpointer.XPointerErrorHandler();
-  public com.sun.org.apache.xerces.internal.xpointer.XPointerErrorHandler(java.io.PrintWriter);
-  public void warning(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException) throws com.sun.org.apache.xerces.internal.xni.XNIException;
-  public void error(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException) throws com.sun.org.apache.xerces.internal.xni.XNIException;
-  public void fatalError(java.lang.String, java.lang.String, com.sun.org.apache.xerces.internal.xni.parser.XMLParseException) throws com.sun.org.apache.xerces.internal.xni.XNIException;
-}

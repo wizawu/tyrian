@@ -1,7 +1,0 @@
-Compiled from "ThrowsTag.java"
-public interface com.sun.javadoc.ThrowsTag extends com.sun.javadoc.Tag {
-  public abstract java.lang.String exceptionName();
-  public abstract java.lang.String exceptionComment();
-  public abstract com.sun.javadoc.ClassDoc exception();
-  public abstract com.sun.javadoc.Type exceptionType();
-}

@@ -1,9 +1,0 @@
-Compiled from "SJIS_0213.java"
-public class sun.nio.cs.ext.SJIS_0213 extends java.nio.charset.Charset {
-  static sun.nio.cs.CharsetMapping mapping;
-  public sun.nio.cs.ext.SJIS_0213();
-  public boolean contains(java.nio.charset.Charset);
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public java.nio.charset.CharsetEncoder newEncoder();
-  static {};
-}

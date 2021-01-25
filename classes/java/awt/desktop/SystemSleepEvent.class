@@ -1,4 +1,0 @@
-Compiled from "SystemSleepEvent.java"
-public final class java.awt.desktop.SystemSleepEvent extends java.awt.desktop.AppEvent {
-  public java.awt.desktop.SystemSleepEvent();
-}

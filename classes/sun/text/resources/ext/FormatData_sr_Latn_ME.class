@@ -1,5 +1,0 @@
-Compiled from "FormatData_sr_Latn_ME.java"
-public class sun.text.resources.ext.FormatData_sr_Latn_ME extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_sr_Latn_ME();
-  protected final java.lang.Object[][] getContents();
-}

@@ -1,4 +1,0 @@
-Compiled from "AppForegroundEvent.java"
-public final class java.awt.desktop.AppForegroundEvent extends java.awt.desktop.AppEvent {
-  public java.awt.desktop.AppForegroundEvent();
-}

@@ -1,7 +1,0 @@
-Compiled from "PluginException.java"
-public final class jdk.tools.jlink.plugin.PluginException extends java.lang.RuntimeException {
-  public jdk.tools.jlink.plugin.PluginException();
-  public jdk.tools.jlink.plugin.PluginException(java.lang.Throwable);
-  public jdk.tools.jlink.plugin.PluginException(java.lang.String);
-  public jdk.tools.jlink.plugin.PluginException(java.lang.String, java.lang.Throwable);
-}

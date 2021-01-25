@@ -1,5 +1,0 @@
-Compiled from "DoWhileLoopTree.java"
-public interface jdk.nashorn.api.tree.DoWhileLoopTree extends jdk.nashorn.api.tree.ConditionalLoopTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getCondition();
-  public abstract jdk.nashorn.api.tree.StatementTree getStatement();
-}

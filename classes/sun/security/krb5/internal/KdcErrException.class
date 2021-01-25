@@ -1,5 +1,0 @@
-Compiled from "KdcErrException.java"
-public class sun.security.krb5.internal.KdcErrException extends sun.security.krb5.KrbException {
-  public sun.security.krb5.internal.KdcErrException(int);
-  public sun.security.krb5.internal.KdcErrException(int, java.lang.String);
-}

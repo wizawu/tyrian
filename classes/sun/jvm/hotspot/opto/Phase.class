@@ -1,5 +1,0 @@
-Compiled from "Phase.java"
-public class sun.jvm.hotspot.opto.Phase extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.opto.Phase(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

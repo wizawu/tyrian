@@ -1,7 +1,0 @@
-Compiled from "ObjectSynchronizer.java"
-public class sun.jvm.hotspot.runtime.ObjectSynchronizer {
-  public sun.jvm.hotspot.runtime.ObjectSynchronizer();
-  public long identityHashValueFor(sun.jvm.hotspot.oops.Oop);
-  public static java.util.Iterator objectMonitorIterator();
-  static {};
-}

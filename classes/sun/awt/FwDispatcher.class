@@ -1,6 +1,0 @@
-Compiled from "FwDispatcher.java"
-public interface sun.awt.FwDispatcher {
-  public abstract boolean isDispatchThread();
-  public abstract void scheduleDispatch(java.lang.Runnable);
-  public abstract java.awt.SecondaryLoop createSecondaryLoop();
-}

@@ -1,5 +1,0 @@
-Compiled from "DumpBytecode.java"
-public final class jdk.nashorn.internal.codegen.DumpBytecode {
-  public jdk.nashorn.internal.codegen.DumpBytecode();
-  public static void dumpBytecode(jdk.nashorn.internal.runtime.ScriptEnvironment, jdk.nashorn.internal.runtime.logging.DebugLogger, byte[], java.lang.String);
-}

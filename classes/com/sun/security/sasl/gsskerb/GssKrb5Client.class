@@ -1,7 +1,0 @@
-Compiled from "GssKrb5Client.java"
-final class com.sun.security.sasl.gsskerb.GssKrb5Client extends com.sun.security.sasl.gsskerb.GssKrb5Base implements javax.security.sasl.SaslClient {
-  com.sun.security.sasl.gsskerb.GssKrb5Client(java.lang.String, java.lang.String, java.lang.String, java.util.Map<java.lang.String, ?>, javax.security.auth.callback.CallbackHandler) throws javax.security.sasl.SaslException;
-  public boolean hasInitialResponse();
-  public byte[] evaluateChallenge(byte[]) throws javax.security.sasl.SaslException;
-  static {};
-}

@@ -1,5 +1,0 @@
-Compiled from "NOTATIONDatatypeValidator.java"
-public class com.sun.org.apache.xerces.internal.impl.dv.dtd.NOTATIONDatatypeValidator implements com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator {
-  public com.sun.org.apache.xerces.internal.impl.dv.dtd.NOTATIONDatatypeValidator();
-  public void validate(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
-}

@@ -1,9 +1,0 @@
-Compiled from "NativeThreadSet.java"
-class sun.nio.ch.NativeThreadSet {
-  static final boolean $assertionsDisabled;
-  sun.nio.ch.NativeThreadSet(int);
-  int add();
-  void remove(int);
-  synchronized void signalAndWait();
-  static {};
-}

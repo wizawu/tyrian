@@ -1,7 +1,0 @@
-Compiled from "ClassType.java"
-public final class sun.tools.java.ClassType extends sun.tools.java.Type {
-  sun.tools.java.Identifier className;
-  sun.tools.java.ClassType(java.lang.String, sun.tools.java.Identifier);
-  public sun.tools.java.Identifier getClassName();
-  public java.lang.String typeString(java.lang.String, boolean, boolean);
-}

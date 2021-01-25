@@ -1,7 +1,0 @@
-Compiled from "ListUI.java"
-public abstract class javax.swing.plaf.ListUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.ListUI();
-  public abstract int locationToIndex(javax.swing.JList<?>, java.awt.Point);
-  public abstract java.awt.Point indexToLocation(javax.swing.JList<?>, int);
-  public abstract java.awt.Rectangle getCellBounds(javax.swing.JList<?>, int, int);
-}

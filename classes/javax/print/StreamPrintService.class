@@ -1,8 +1,0 @@
-Compiled from "StreamPrintService.java"
-public abstract class javax.print.StreamPrintService implements javax.print.PrintService {
-  protected javax.print.StreamPrintService(java.io.OutputStream);
-  public java.io.OutputStream getOutputStream();
-  public abstract java.lang.String getOutputFormat();
-  public void dispose();
-  public boolean isDisposed();
-}

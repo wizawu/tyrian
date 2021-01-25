@@ -1,6 +1,0 @@
-Compiled from "SharedObject.java"
-class sun.jvm.hotspot.debugger.bsd.SharedObject extends sun.jvm.hotspot.debugger.posix.DSO {
-  sun.jvm.hotspot.debugger.bsd.SharedObject(sun.jvm.hotspot.debugger.bsd.BsdDebugger, java.lang.String, long, sun.jvm.hotspot.debugger.Address);
-  protected sun.jvm.hotspot.debugger.Address newAddress(long);
-  protected long getAddressValue(sun.jvm.hotspot.debugger.Address);
-}

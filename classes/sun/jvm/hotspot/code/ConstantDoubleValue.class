@@ -1,9 +1,0 @@
-Compiled from "ConstantDoubleValue.java"
-public class sun.jvm.hotspot.code.ConstantDoubleValue extends sun.jvm.hotspot.code.ScopeValue {
-  public sun.jvm.hotspot.code.ConstantDoubleValue(double);
-  public boolean isConstantDouble();
-  public double getValue();
-  sun.jvm.hotspot.code.ConstantDoubleValue(sun.jvm.hotspot.code.DebugInfoReadStream);
-  public void print();
-  public void printOn(java.io.PrintStream);
-}

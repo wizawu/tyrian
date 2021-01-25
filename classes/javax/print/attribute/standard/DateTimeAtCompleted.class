@@ -1,7 +1,0 @@
-Compiled from "DateTimeAtCompleted.java"
-public final class javax.print.attribute.standard.DateTimeAtCompleted extends javax.print.attribute.DateTimeSyntax implements javax.print.attribute.PrintJobAttribute {
-  public javax.print.attribute.standard.DateTimeAtCompleted(java.util.Date);
-  public boolean equals(java.lang.Object);
-  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
-  public final java.lang.String getName();
-}

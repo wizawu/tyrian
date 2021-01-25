@@ -1,4 +1,0 @@
-Compiled from "NameParser.java"
-public interface javax.naming.NameParser {
-  public abstract javax.naming.Name parse(java.lang.String) throws javax.naming.NamingException;
-}

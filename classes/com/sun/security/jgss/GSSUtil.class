@@ -1,5 +1,0 @@
-Compiled from "GSSUtil.java"
-public class com.sun.security.jgss.GSSUtil {
-  public com.sun.security.jgss.GSSUtil();
-  public static javax.security.auth.Subject createSubject(org.ietf.jgss.GSSName, org.ietf.jgss.GSSCredential);
-}

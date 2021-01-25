@@ -1,6 +1,0 @@
-Compiled from "URLUtil.java"
-public class sun.net.util.URLUtil {
-  public sun.net.util.URLUtil();
-  public static java.lang.String urlNoFragString(java.net.URL);
-  public static java.security.Permission getConnectPermission(java.net.URL) throws java.io.IOException;
-}

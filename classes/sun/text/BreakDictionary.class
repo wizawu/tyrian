@@ -1,8 +1,0 @@
-Compiled from "BreakDictionary.java"
-class sun.text.BreakDictionary {
-  static final boolean $assertionsDisabled;
-  sun.text.BreakDictionary(java.lang.String, byte[]);
-  public final short getNextStateFromCharacter(int, int);
-  public final short getNextState(int, int);
-  static {};
-}

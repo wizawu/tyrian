@@ -1,9 +1,0 @@
-Compiled from "JRTIndex.java"
-public class com.sun.tools.javac.file.JRTIndex {
-  public static synchronized com.sun.tools.javac.file.JRTIndex getSharedInstance();
-  public static com.sun.tools.javac.file.JRTIndex instance(com.sun.tools.javac.util.Context);
-  public static boolean isAvailable();
-  public com.sun.tools.javac.file.JRTIndex$CtSym getCtSym(java.lang.CharSequence) throws java.io.IOException;
-  synchronized com.sun.tools.javac.file.JRTIndex$Entry getEntry(com.sun.tools.javac.file.RelativePath$RelativeDirectory) throws java.io.IOException;
-  public boolean isInJRT(javax.tools.FileObject);
-}

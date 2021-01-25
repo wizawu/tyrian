@@ -1,5 +1,0 @@
-Compiled from "Version.java"
-public final class jdk.nashorn.internal.runtime.Version {
-  public static java.lang.String version();
-  public static java.lang.String fullVersion();
-}

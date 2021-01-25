@@ -1,9 +1,0 @@
-Compiled from "TryData.java"
-public final class sun.tools.asm.TryData {
-  java.util.Vector<sun.tools.asm.CatchData> catches;
-  sun.tools.asm.Label endLabel;
-  public sun.tools.asm.TryData();
-  public sun.tools.asm.CatchData add(java.lang.Object);
-  public sun.tools.asm.CatchData getCatch(int);
-  public sun.tools.asm.Label getEndLabel();
-}

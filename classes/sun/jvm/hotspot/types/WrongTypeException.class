@@ -1,5 +1,0 @@
-Compiled from "WrongTypeException.java"
-public class sun.jvm.hotspot.types.WrongTypeException extends java.lang.RuntimeException {
-  public sun.jvm.hotspot.types.WrongTypeException();
-  public sun.jvm.hotspot.types.WrongTypeException(java.lang.String);
-}

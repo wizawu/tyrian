@@ -1,3 +1,0 @@
-Compiled from "StepEvent.java"
-public interface com.sun.jdi.event.StepEvent extends com.sun.jdi.event.LocatableEvent {
-}

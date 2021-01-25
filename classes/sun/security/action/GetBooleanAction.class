@@ -1,6 +1,0 @@
-Compiled from "GetBooleanAction.java"
-public class sun.security.action.GetBooleanAction implements java.security.PrivilegedAction<java.lang.Boolean> {
-  public sun.security.action.GetBooleanAction(java.lang.String);
-  public java.lang.Boolean run();
-  public java.lang.Object run();
-}

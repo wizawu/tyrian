@@ -1,5 +1,0 @@
-Compiled from "XMLGrammarParser.java"
-public abstract class com.sun.org.apache.xerces.internal.parsers.XMLGrammarParser extends com.sun.org.apache.xerces.internal.parsers.XMLParser {
-  protected com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory fDatatypeValidatorFactory;
-  protected com.sun.org.apache.xerces.internal.parsers.XMLGrammarParser(com.sun.org.apache.xerces.internal.util.SymbolTable);
-}

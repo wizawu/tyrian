@@ -1,8 +1,0 @@
-Compiled from "UnixPrincipal.java"
-public class com.sun.security.auth.UnixPrincipal implements java.security.Principal,java.io.Serializable {
-  public com.sun.security.auth.UnixPrincipal(java.lang.String);
-  public java.lang.String getName();
-  public java.lang.String toString();
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-}

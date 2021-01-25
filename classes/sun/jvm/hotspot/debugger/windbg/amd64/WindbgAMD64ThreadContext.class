@@ -1,6 +1,0 @@
-Compiled from "WindbgAMD64ThreadContext.java"
-class sun.jvm.hotspot.debugger.windbg.amd64.WindbgAMD64ThreadContext extends sun.jvm.hotspot.debugger.amd64.AMD64ThreadContext {
-  public sun.jvm.hotspot.debugger.windbg.amd64.WindbgAMD64ThreadContext(sun.jvm.hotspot.debugger.windbg.WindbgDebugger);
-  public void setRegisterAsAddress(int, sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.Address getRegisterAsAddress(int);
-}

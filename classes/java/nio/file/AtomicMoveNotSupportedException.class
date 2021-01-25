@@ -1,5 +1,0 @@
-Compiled from "AtomicMoveNotSupportedException.java"
-public class java.nio.file.AtomicMoveNotSupportedException extends java.nio.file.FileSystemException {
-  static final long serialVersionUID;
-  public java.nio.file.AtomicMoveNotSupportedException(java.lang.String, java.lang.String, java.lang.String);
-}

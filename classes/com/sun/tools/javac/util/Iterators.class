@@ -1,7 +1,0 @@
-Compiled from "Iterators.java"
-public class com.sun.tools.javac.util.Iterators {
-  public com.sun.tools.javac.util.Iterators();
-  public static <I, O> java.util.Iterator<O> createCompoundIterator(java.lang.Iterable<I>, java.util.function.Function<I, java.util.Iterator<O>>);
-  public static <E> java.util.Iterator<E> createFilterIterator(java.util.Iterator<E>, java.util.function.Predicate<E>);
-  static {};
-}

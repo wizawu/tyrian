@@ -1,8 +1,0 @@
-Compiled from "PixelFillPipe.java"
-public interface sun.java2d.pipe.PixelFillPipe {
-  public abstract void fillRect(sun.java2d.SunGraphics2D, int, int, int, int);
-  public abstract void fillRoundRect(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
-  public abstract void fillOval(sun.java2d.SunGraphics2D, int, int, int, int);
-  public abstract void fillArc(sun.java2d.SunGraphics2D, int, int, int, int, int, int);
-  public abstract void fillPolygon(sun.java2d.SunGraphics2D, int[], int[], int);
-}

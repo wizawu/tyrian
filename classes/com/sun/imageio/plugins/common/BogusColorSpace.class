@@ -1,8 +1,0 @@
-Compiled from "BogusColorSpace.java"
-public class com.sun.imageio.plugins.common.BogusColorSpace extends java.awt.color.ColorSpace {
-  public com.sun.imageio.plugins.common.BogusColorSpace(int);
-  public float[] toRGB(float[]);
-  public float[] fromRGB(float[]);
-  public float[] toCIEXYZ(float[]);
-  public float[] fromCIEXYZ(float[]);
-}

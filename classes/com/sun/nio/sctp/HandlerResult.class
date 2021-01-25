@@ -1,8 +1,0 @@
-Compiled from "HandlerResult.java"
-public final class com.sun.nio.sctp.HandlerResult extends java.lang.Enum<com.sun.nio.sctp.HandlerResult> {
-  public static final com.sun.nio.sctp.HandlerResult CONTINUE;
-  public static final com.sun.nio.sctp.HandlerResult RETURN;
-  public static com.sun.nio.sctp.HandlerResult[] values();
-  public static com.sun.nio.sctp.HandlerResult valueOf(java.lang.String);
-  static {};
-}

@@ -1,5 +1,0 @@
-Compiled from "MotifButtonListener.java"
-public class com.sun.java.swing.plaf.motif.MotifButtonListener extends javax.swing.plaf.basic.BasicButtonListener {
-  public com.sun.java.swing.plaf.motif.MotifButtonListener(javax.swing.AbstractButton);
-  protected void checkOpacity(javax.swing.AbstractButton);
-}

@@ -1,9 +1,0 @@
-Compiled from "BasicFunctionSym.java"
-public class sun.jvm.hotspot.debugger.cdbg.basic.BasicFunctionSym extends sun.jvm.hotspot.debugger.cdbg.basic.BasicBlockSym implements sun.jvm.hotspot.debugger.cdbg.FunctionSym {
-  public sun.jvm.hotspot.debugger.cdbg.basic.BasicFunctionSym(sun.jvm.hotspot.debugger.cdbg.BlockSym, long, sun.jvm.hotspot.debugger.Address, java.lang.String, sun.jvm.hotspot.debugger.cdbg.Type, boolean);
-  public sun.jvm.hotspot.debugger.cdbg.FunctionSym asFunction();
-  public sun.jvm.hotspot.debugger.cdbg.Type getType();
-  public boolean isModuleLocal();
-  public void resolve(sun.jvm.hotspot.debugger.cdbg.basic.BasicCDebugInfoDataBase, sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener);
-  public java.lang.String toString();
-}

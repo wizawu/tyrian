@@ -1,7 +1,0 @@
-Compiled from "EventObject.java"
-public class java.util.EventObject implements java.io.Serializable {
-  protected transient java.lang.Object source;
-  public java.util.EventObject(java.lang.Object);
-  public java.lang.Object getSource();
-  public java.lang.String toString();
-}

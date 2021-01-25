@@ -1,3 +1,0 @@
-Compiled from "AccessWatchpointRequest.java"
-public interface com.sun.jdi.request.AccessWatchpointRequest extends com.sun.jdi.request.WatchpointRequest {
-}

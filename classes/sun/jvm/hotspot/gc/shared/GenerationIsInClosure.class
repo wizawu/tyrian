@@ -1,6 +1,0 @@
-Compiled from "GenerationIsInClosure.java"
-class sun.jvm.hotspot.gc.shared.GenerationIsInClosure implements sun.jvm.hotspot.gc.shared.SpaceClosure {
-  sun.jvm.hotspot.gc.shared.GenerationIsInClosure(sun.jvm.hotspot.debugger.Address);
-  public void doSpace(sun.jvm.hotspot.gc.shared.Space);
-  sun.jvm.hotspot.gc.shared.Space space();
-}

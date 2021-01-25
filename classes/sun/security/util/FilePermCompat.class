@@ -1,9 +1,0 @@
-Compiled from "FilePermCompat.java"
-public class sun.security.util.FilePermCompat {
-  public static final boolean nb;
-  public static final boolean compat;
-  public sun.security.util.FilePermCompat();
-  public static java.security.Permission newPermPlusAltPath(java.security.Permission);
-  public static java.security.Permission newPermUsingAltPath(java.security.Permission);
-  static {};
-}

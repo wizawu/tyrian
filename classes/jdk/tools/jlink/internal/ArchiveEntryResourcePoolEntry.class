@@ -1,6 +1,0 @@
-Compiled from "ArchiveEntryResourcePoolEntry.java"
-final class jdk.tools.jlink.internal.ArchiveEntryResourcePoolEntry extends jdk.tools.jlink.internal.AbstractResourcePoolEntry {
-  jdk.tools.jlink.internal.ArchiveEntryResourcePoolEntry(java.lang.String, java.lang.String, jdk.tools.jlink.internal.Archive$Entry);
-  public java.io.InputStream content();
-  public long contentLength();
-}

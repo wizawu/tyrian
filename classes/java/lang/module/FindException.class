@@ -1,7 +1,0 @@
-Compiled from "FindException.java"
-public class java.lang.module.FindException extends java.lang.RuntimeException {
-  public java.lang.module.FindException();
-  public java.lang.module.FindException(java.lang.String);
-  public java.lang.module.FindException(java.lang.Throwable);
-  public java.lang.module.FindException(java.lang.String, java.lang.Throwable);
-}

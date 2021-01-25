@@ -1,8 +1,0 @@
-Compiled from "UserPrincipal.java"
-public final class com.sun.security.auth.UserPrincipal implements java.security.Principal,java.io.Serializable {
-  public com.sun.security.auth.UserPrincipal(java.lang.String);
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  public java.lang.String getName();
-  public java.lang.String toString();
-}

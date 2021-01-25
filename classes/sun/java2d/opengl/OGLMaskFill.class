@@ -1,7 +1,0 @@
-Compiled from "OGLMaskFill.java"
-class sun.java2d.opengl.OGLMaskFill extends sun.java2d.pipe.BufferedMaskFill {
-  static void register();
-  protected sun.java2d.opengl.OGLMaskFill(sun.java2d.loops.SurfaceType, sun.java2d.loops.CompositeType);
-  protected native void maskFill(int, int, int, int, int, int, int, byte[]);
-  protected void validateContext(sun.java2d.SunGraphics2D, java.awt.Composite, int);
-}

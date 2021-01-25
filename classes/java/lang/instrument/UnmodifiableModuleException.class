@@ -1,5 +1,0 @@
-Compiled from "UnmodifiableModuleException.java"
-public class java.lang.instrument.UnmodifiableModuleException extends java.lang.RuntimeException {
-  public java.lang.instrument.UnmodifiableModuleException();
-  public java.lang.instrument.UnmodifiableModuleException(java.lang.String);
-}

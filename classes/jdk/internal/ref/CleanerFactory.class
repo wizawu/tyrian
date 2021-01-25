@@ -1,6 +1,0 @@
-Compiled from "CleanerFactory.java"
-public final class jdk.internal.ref.CleanerFactory {
-  public jdk.internal.ref.CleanerFactory();
-  public static java.lang.ref.Cleaner cleaner();
-  static {};
-}

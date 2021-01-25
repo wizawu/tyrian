@@ -1,6 +1,0 @@
-Compiled from "DSTORE.java"
-public class com.sun.org.apache.bcel.internal.generic.DSTORE extends com.sun.org.apache.bcel.internal.generic.StoreInstruction {
-  com.sun.org.apache.bcel.internal.generic.DSTORE();
-  public com.sun.org.apache.bcel.internal.generic.DSTORE(int);
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

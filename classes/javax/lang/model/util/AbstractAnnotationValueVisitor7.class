@@ -1,4 +1,0 @@
-Compiled from "AbstractAnnotationValueVisitor7.java"
-public abstract class javax.lang.model.util.AbstractAnnotationValueVisitor7<R, P> extends javax.lang.model.util.AbstractAnnotationValueVisitor6<R, P> {
-  protected javax.lang.model.util.AbstractAnnotationValueVisitor7();
-}

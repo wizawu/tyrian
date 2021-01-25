@@ -1,5 +1,0 @@
-Compiled from "CaseTree.java"
-public interface jdk.nashorn.api.tree.CaseTree extends jdk.nashorn.api.tree.Tree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public abstract java.util.List<? extends jdk.nashorn.api.tree.StatementTree> getStatements();
-}

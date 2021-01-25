@@ -1,4 +1,0 @@
-Compiled from "NoninvertibleTransformException.java"
-public class java.awt.geom.NoninvertibleTransformException extends java.lang.Exception {
-  public java.awt.geom.NoninvertibleTransformException(java.lang.String);
-}

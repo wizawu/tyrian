@@ -1,4 +1,0 @@
-Compiled from "ServerRuntimeException.java"
-public class java.rmi.ServerRuntimeException extends java.rmi.RemoteException {
-  public java.rmi.ServerRuntimeException(java.lang.String, java.lang.Exception);
-}

@@ -1,6 +1,0 @@
-Compiled from "DontCareFieldPosition.java"
-class java.text.DontCareFieldPosition extends java.text.FieldPosition {
-  static final java.text.FieldPosition INSTANCE;
-  java.text.Format$FieldDelegate getFieldDelegate();
-  static {};
-}

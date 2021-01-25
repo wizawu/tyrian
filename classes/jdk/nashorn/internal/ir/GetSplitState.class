@@ -1,8 +1,0 @@
-Compiled from "GetSplitState.java"
-public final class jdk.nashorn.internal.ir.GetSplitState extends jdk.nashorn.internal.ir.Expression {
-  public static final jdk.nashorn.internal.ir.GetSplitState INSTANCE;
-  public jdk.nashorn.internal.codegen.types.Type getType();
-  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
-  public void toString(java.lang.StringBuilder, boolean);
-  static {};
-}

@@ -1,6 +1,0 @@
-Compiled from "IfTree.java"
-public interface jdk.nashorn.api.tree.IfTree extends jdk.nashorn.api.tree.StatementTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getCondition();
-  public abstract jdk.nashorn.api.tree.StatementTree getThenStatement();
-  public abstract jdk.nashorn.api.tree.StatementTree getElseStatement();
-}

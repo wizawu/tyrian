@@ -1,7 +1,0 @@
-Compiled from "DESedeKeyFactory.java"
-public final class com.sun.crypto.provider.DESedeKeyFactory extends javax.crypto.SecretKeyFactorySpi {
-  public com.sun.crypto.provider.DESedeKeyFactory();
-  protected javax.crypto.SecretKey engineGenerateSecret(java.security.spec.KeySpec) throws java.security.spec.InvalidKeySpecException;
-  protected java.security.spec.KeySpec engineGetKeySpec(javax.crypto.SecretKey, java.lang.Class<?>) throws java.security.spec.InvalidKeySpecException;
-  protected javax.crypto.SecretKey engineTranslateKey(javax.crypto.SecretKey) throws java.security.InvalidKeyException;
-}

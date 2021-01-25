@@ -1,5 +1,0 @@
-Compiled from "FormatData_zh.java"
-public class sun.text.resources.ext.FormatData_zh extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_zh();
-  protected final java.lang.Object[][] getContents();
-}

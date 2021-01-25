@@ -1,6 +1,0 @@
-Compiled from "OpenURIEvent.java"
-public final class java.awt.desktop.OpenURIEvent extends java.awt.desktop.AppEvent {
-  final java.net.URI uri;
-  public java.awt.desktop.OpenURIEvent(java.net.URI);
-  public java.net.URI getURI();
-}

@@ -1,4 +1,0 @@
-Compiled from "TypeBasedGuardingDynamicLinker.java"
-public interface jdk.dynalink.linker.TypeBasedGuardingDynamicLinker extends jdk.dynalink.linker.GuardingDynamicLinker {
-  public abstract boolean canLinkType(java.lang.Class<?>);
-}

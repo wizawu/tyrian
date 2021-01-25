@@ -1,5 +1,0 @@
-Compiled from "UserSessionListener.java"
-public interface java.awt.desktop.UserSessionListener extends java.awt.desktop.SystemEventListener {
-  public abstract void userSessionDeactivated(java.awt.desktop.UserSessionEvent);
-  public abstract void userSessionActivated(java.awt.desktop.UserSessionEvent);
-}

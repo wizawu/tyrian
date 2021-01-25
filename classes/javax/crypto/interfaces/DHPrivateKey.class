@@ -1,5 +1,0 @@
-Compiled from "DHPrivateKey.java"
-public interface javax.crypto.interfaces.DHPrivateKey extends javax.crypto.interfaces.DHKey,java.security.PrivateKey {
-  public static final long serialVersionUID;
-  public abstract java.math.BigInteger getX();
-}

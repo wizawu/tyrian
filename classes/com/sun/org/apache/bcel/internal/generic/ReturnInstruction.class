@@ -1,8 +1,0 @@
-Compiled from "ReturnInstruction.java"
-public abstract class com.sun.org.apache.bcel.internal.generic.ReturnInstruction extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.ExceptionThrower,com.sun.org.apache.bcel.internal.generic.TypedInstruction,com.sun.org.apache.bcel.internal.generic.StackConsumer {
-  com.sun.org.apache.bcel.internal.generic.ReturnInstruction();
-  protected com.sun.org.apache.bcel.internal.generic.ReturnInstruction(short);
-  public com.sun.org.apache.bcel.internal.generic.Type getType();
-  public java.lang.Class<?>[] getExceptions();
-  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-}

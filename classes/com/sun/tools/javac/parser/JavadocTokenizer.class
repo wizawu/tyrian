@@ -1,7 +1,0 @@
-Compiled from "JavadocTokenizer.java"
-public class com.sun.tools.javac.parser.JavadocTokenizer extends com.sun.tools.javac.parser.JavaTokenizer {
-  protected com.sun.tools.javac.parser.JavadocTokenizer(com.sun.tools.javac.parser.ScannerFactory, java.nio.CharBuffer);
-  protected com.sun.tools.javac.parser.JavadocTokenizer(com.sun.tools.javac.parser.ScannerFactory, char[], int);
-  protected com.sun.tools.javac.parser.Tokens$Comment processComment(int, int, com.sun.tools.javac.parser.Tokens$Comment$CommentStyle);
-  public com.sun.tools.javac.util.Position$LineMap getLineMap();
-}

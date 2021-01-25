@@ -1,9 +1,0 @@
-Compiled from "LinkRef.java"
-public class javax.naming.LinkRef extends javax.naming.Reference {
-  static final java.lang.String linkClassName;
-  static final java.lang.String linkAddrType;
-  public javax.naming.LinkRef(javax.naming.Name);
-  public javax.naming.LinkRef(java.lang.String);
-  public java.lang.String getLinkName() throws javax.naming.NamingException;
-  static {};
-}

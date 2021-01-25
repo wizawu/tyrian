@@ -1,4 +1,0 @@
-Compiled from "SAGetoptException.java"
-public class sun.jvm.hotspot.SAGetoptException extends java.lang.IllegalArgumentException {
-  public sun.jvm.hotspot.SAGetoptException(java.lang.String);
-}

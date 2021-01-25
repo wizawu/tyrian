@@ -1,9 +1,0 @@
-Compiled from "SettingsManager.java"
-final class jdk.jfr.internal.SettingsManager {
-  jdk.jfr.internal.SettingsManager();
-  void setSettings(java.util.List<java.util.Map<java.lang.String, java.lang.String>>);
-  public void updateRetransform(java.util.List<java.lang.Class<? extends jdk.internal.event.Event>>);
-  void setEventControl(jdk.jfr.internal.EventControl);
-  public java.lang.String toString();
-  boolean isEnabled(java.lang.String);
-}

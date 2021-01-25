@@ -1,8 +1,0 @@
-Compiled from "CRTable.java"
-public class com.sun.tools.javac.jvm.CRTable implements com.sun.tools.javac.jvm.CRTFlags {
-  com.sun.tools.javac.tree.JCTree$JCMethodDecl methodTree;
-  public com.sun.tools.javac.jvm.CRTable(com.sun.tools.javac.tree.JCTree$JCMethodDecl, com.sun.tools.javac.tree.EndPosTable);
-  public void put(java.lang.Object, int, int, int);
-  public int writeCRT(com.sun.tools.javac.util.ByteBuffer, com.sun.tools.javac.util.Position$LineMap, com.sun.tools.javac.util.Log);
-  public int length();
-}

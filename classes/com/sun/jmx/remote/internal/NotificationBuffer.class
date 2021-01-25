@@ -1,5 +1,0 @@
-Compiled from "NotificationBuffer.java"
-public interface com.sun.jmx.remote.internal.NotificationBuffer {
-  public abstract javax.management.remote.NotificationResult fetchNotifications(com.sun.jmx.remote.internal.NotificationBufferFilter, long, long, int) throws java.lang.InterruptedException;
-  public abstract void dispose();
-}

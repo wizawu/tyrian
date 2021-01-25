@@ -1,6 +1,0 @@
-Compiled from "FileSystemPreferencesFactory.java"
-class java.util.prefs.FileSystemPreferencesFactory implements java.util.prefs.PreferencesFactory {
-  java.util.prefs.FileSystemPreferencesFactory();
-  public java.util.prefs.Preferences userRoot();
-  public java.util.prefs.Preferences systemRoot();
-}

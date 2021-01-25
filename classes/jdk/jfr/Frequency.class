@@ -1,3 +1,0 @@
-Compiled from "Frequency.java"
-public interface jdk.jfr.Frequency extends java.lang.annotation.Annotation {
-}

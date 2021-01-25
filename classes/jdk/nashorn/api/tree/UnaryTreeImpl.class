@@ -1,7 +1,0 @@
-Compiled from "UnaryTreeImpl.java"
-class jdk.nashorn.api.tree.UnaryTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.UnaryTree {
-  jdk.nashorn.api.tree.UnaryTreeImpl(jdk.nashorn.internal.ir.UnaryNode, jdk.nashorn.api.tree.ExpressionTree);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

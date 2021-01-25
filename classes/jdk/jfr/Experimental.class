@@ -1,3 +1,0 @@
-Compiled from "Experimental.java"
-public interface jdk.jfr.Experimental extends java.lang.annotation.Annotation {
-}

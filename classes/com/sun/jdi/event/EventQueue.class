@@ -1,5 +1,0 @@
-Compiled from "EventQueue.java"
-public interface com.sun.jdi.event.EventQueue extends com.sun.jdi.Mirror {
-  public abstract com.sun.jdi.event.EventSet remove() throws java.lang.InterruptedException;
-  public abstract com.sun.jdi.event.EventSet remove(long) throws java.lang.InterruptedException;
-}

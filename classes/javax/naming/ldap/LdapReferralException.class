@@ -1,8 +1,0 @@
-Compiled from "LdapReferralException.java"
-public abstract class javax.naming.ldap.LdapReferralException extends javax.naming.ReferralException {
-  protected javax.naming.ldap.LdapReferralException(java.lang.String);
-  protected javax.naming.ldap.LdapReferralException();
-  public abstract javax.naming.Context getReferralContext() throws javax.naming.NamingException;
-  public abstract javax.naming.Context getReferralContext(java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
-  public abstract javax.naming.Context getReferralContext(java.util.Hashtable<?, ?>, javax.naming.ldap.Control[]) throws javax.naming.NamingException;
-}

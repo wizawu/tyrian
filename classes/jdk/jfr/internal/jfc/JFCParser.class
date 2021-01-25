@@ -1,7 +1,0 @@
-Compiled from "JFCParser.java"
-final class jdk.jfr.internal.jfc.JFCParser {
-  static final java.lang.String FILE_EXTENSION;
-  jdk.jfr.internal.jfc.JFCParser();
-  public static jdk.jfr.Configuration createConfiguration(java.lang.String, java.io.Reader) throws java.io.IOException, java.text.ParseException;
-  public static jdk.jfr.Configuration createConfiguration(java.lang.String, java.lang.String) throws java.io.IOException, java.text.ParseException;
-}

@@ -1,6 +1,0 @@
-Compiled from "AbstractRelinkableCallSite.java"
-public abstract class jdk.dynalink.support.AbstractRelinkableCallSite extends java.lang.invoke.MutableCallSite implements jdk.dynalink.RelinkableCallSite {
-  protected jdk.dynalink.support.AbstractRelinkableCallSite(jdk.dynalink.CallSiteDescriptor);
-  public jdk.dynalink.CallSiteDescriptor getDescriptor();
-  public void initialize(java.lang.invoke.MethodHandle);
-}

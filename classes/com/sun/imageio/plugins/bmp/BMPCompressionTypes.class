@@ -1,8 +1,0 @@
-Compiled from "BMPCompressionTypes.java"
-public class com.sun.imageio.plugins.bmp.BMPCompressionTypes {
-  public com.sun.imageio.plugins.bmp.BMPCompressionTypes();
-  static int getType(java.lang.String);
-  static java.lang.String getName(int);
-  public static java.lang.String[] getCompressionTypes();
-  static {};
-}

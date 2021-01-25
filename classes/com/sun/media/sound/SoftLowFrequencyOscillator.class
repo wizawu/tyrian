@@ -1,8 +1,0 @@
-Compiled from "SoftLowFrequencyOscillator.java"
-public final class com.sun.media.sound.SoftLowFrequencyOscillator implements com.sun.media.sound.SoftProcess {
-  public com.sun.media.sound.SoftLowFrequencyOscillator();
-  public void reset();
-  public void init(com.sun.media.sound.SoftSynthesizer);
-  public void processControlLogic();
-  public double[] get(int, java.lang.String);
-}

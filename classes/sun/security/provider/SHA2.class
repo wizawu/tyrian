@@ -1,9 +1,0 @@
-Compiled from "SHA2.java"
-abstract class sun.security.provider.SHA2 extends sun.security.provider.DigestBase {
-  sun.security.provider.SHA2(java.lang.String, int, int[]);
-  void implReset();
-  void implDigest(byte[], int);
-  void implCompress(byte[], int);
-  public java.lang.Object clone() throws java.lang.CloneNotSupportedException;
-  static {};
-}

@@ -1,4 +1,0 @@
-Compiled from "AbortException.java"
-public class com.sun.org.apache.xerces.internal.dom.AbortException extends java.lang.RuntimeException {
-  public com.sun.org.apache.xerces.internal.dom.AbortException();
-}

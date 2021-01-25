@@ -1,9 +1,0 @@
-Compiled from "GlyphListPipe.java"
-public abstract class sun.java2d.pipe.GlyphListPipe implements sun.java2d.pipe.TextPipe {
-  public sun.java2d.pipe.GlyphListPipe();
-  public void drawString(sun.java2d.SunGraphics2D, java.lang.String, double, double);
-  public void drawChars(sun.java2d.SunGraphics2D, char[], int, int, int, int);
-  public void drawGlyphVector(sun.java2d.SunGraphics2D, java.awt.font.GlyphVector, float, float);
-  protected abstract void drawGlyphList(sun.java2d.SunGraphics2D, sun.font.GlyphList);
-  protected void drawGlyphList(sun.java2d.SunGraphics2D, sun.font.GlyphList, int);
-}

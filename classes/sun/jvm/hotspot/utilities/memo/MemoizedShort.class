@@ -1,6 +1,0 @@
-Compiled from "MemoizedShort.java"
-public abstract class sun.jvm.hotspot.utilities.memo.MemoizedShort {
-  public sun.jvm.hotspot.utilities.memo.MemoizedShort();
-  protected abstract short computeValue();
-  public short getValue();
-}

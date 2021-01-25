@@ -1,6 +1,0 @@
-Compiled from "XMLEventAllocator.java"
-public interface javax.xml.stream.util.XMLEventAllocator {
-  public abstract javax.xml.stream.util.XMLEventAllocator newInstance();
-  public abstract javax.xml.stream.events.XMLEvent allocate(javax.xml.stream.XMLStreamReader) throws javax.xml.stream.XMLStreamException;
-  public abstract void allocate(javax.xml.stream.XMLStreamReader, javax.xml.stream.util.XMLEventConsumer) throws javax.xml.stream.XMLStreamException;
-}

@@ -1,7 +1,0 @@
-Compiled from "ImageCapabilities.java"
-public class java.awt.ImageCapabilities implements java.lang.Cloneable {
-  public java.awt.ImageCapabilities(boolean);
-  public boolean isAccelerated();
-  public boolean isTrueVolatile();
-  public java.lang.Object clone();
-}

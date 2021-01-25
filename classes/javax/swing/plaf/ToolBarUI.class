@@ -1,4 +1,0 @@
-Compiled from "ToolBarUI.java"
-public abstract class javax.swing.plaf.ToolBarUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.ToolBarUI();
-}

@@ -1,6 +1,0 @@
-Compiled from "POSIXSignals.java"
-public class sun.jvm.hotspot.runtime.posix.POSIXSignals {
-  public sun.jvm.hotspot.runtime.posix.POSIXSignals();
-  public static java.lang.String getSignalName(int);
-  static {};
-}

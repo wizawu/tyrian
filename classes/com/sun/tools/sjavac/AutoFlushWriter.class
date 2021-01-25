@@ -1,7 +1,0 @@
-Compiled from "AutoFlushWriter.java"
-public class com.sun.tools.sjavac.AutoFlushWriter extends java.io.FilterWriter {
-  public com.sun.tools.sjavac.AutoFlushWriter(java.io.Writer);
-  public void write(int) throws java.io.IOException;
-  public void write(java.lang.String, int, int) throws java.io.IOException;
-  public void write(char[], int, int) throws java.io.IOException;
-}

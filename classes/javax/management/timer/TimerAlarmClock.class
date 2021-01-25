@@ -1,9 +1,0 @@
-Compiled from "TimerAlarmClock.java"
-class javax.management.timer.TimerAlarmClock extends java.util.TimerTask {
-  javax.management.timer.Timer listener;
-  long timeout;
-  java.util.Date next;
-  public javax.management.timer.TimerAlarmClock(javax.management.timer.Timer, long);
-  public javax.management.timer.TimerAlarmClock(javax.management.timer.Timer, java.util.Date);
-  public void run();
-}

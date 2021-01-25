@@ -1,6 +1,0 @@
-Compiled from "XSCMRepeatingLeaf.java"
-public final class com.sun.org.apache.xerces.internal.impl.xs.models.XSCMRepeatingLeaf extends com.sun.org.apache.xerces.internal.impl.xs.models.XSCMLeaf {
-  public com.sun.org.apache.xerces.internal.impl.xs.models.XSCMRepeatingLeaf(int, java.lang.Object, int, int, int, int);
-  final int getMinOccurs();
-  final int getMaxOccurs();
-}

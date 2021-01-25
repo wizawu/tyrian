@@ -1,5 +1,0 @@
-Compiled from "InvalidKeyException.java"
-public class javax.management.openmbean.InvalidKeyException extends java.lang.IllegalArgumentException {
-  public javax.management.openmbean.InvalidKeyException();
-  public javax.management.openmbean.InvalidKeyException(java.lang.String);
-}

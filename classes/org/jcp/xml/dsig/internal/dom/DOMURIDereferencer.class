@@ -1,6 +1,0 @@
-Compiled from "DOMURIDereferencer.java"
-public final class org.jcp.xml.dsig.internal.dom.DOMURIDereferencer implements javax.xml.crypto.URIDereferencer {
-  static final javax.xml.crypto.URIDereferencer INSTANCE;
-  public javax.xml.crypto.Data dereference(javax.xml.crypto.URIReference, javax.xml.crypto.XMLCryptoContext) throws javax.xml.crypto.URIReferenceException;
-  static {};
-}

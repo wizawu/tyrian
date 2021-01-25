@@ -1,6 +1,0 @@
-Compiled from "DeserializationChecker.java"
-public interface sun.rmi.server.DeserializationChecker {
-  public abstract void check(java.lang.reflect.Method, java.io.ObjectStreamClass, int, int);
-  public abstract void checkProxyClass(java.lang.reflect.Method, java.lang.String[], int, int);
-  public default void end(int);
-}

@@ -1,6 +1,0 @@
-Compiled from "PrimitiveWrapperMap.java"
-public final class com.sun.beans.finder.PrimitiveWrapperMap {
-  static void replacePrimitivesWithWrappers(java.lang.Class<?>[]);
-  public static java.lang.Class<?> getType(java.lang.String);
-  static {};
-}

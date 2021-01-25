@@ -1,4 +1,0 @@
-Compiled from "ColorChooserUI.java"
-public abstract class javax.swing.plaf.ColorChooserUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.ColorChooserUI();
-}

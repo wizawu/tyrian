@@ -1,8 +1,0 @@
-Compiled from "ScriptLoader.java"
-final class jdk.nashorn.internal.runtime.ScriptLoader extends jdk.nashorn.internal.runtime.NashornLoader {
-  jdk.nashorn.internal.runtime.Context getContext();
-  jdk.nashorn.internal.runtime.ScriptLoader(jdk.nashorn.internal.runtime.Context);
-  protected java.lang.Class<?> loadClass(java.lang.String, boolean) throws java.lang.ClassNotFoundException;
-  protected java.lang.Class<?> findClass(java.lang.String) throws java.lang.ClassNotFoundException;
-  synchronized java.lang.Class<?> installClass(java.lang.String, byte[], java.security.CodeSource);
-}

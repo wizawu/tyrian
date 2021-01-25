@@ -1,5 +1,0 @@
-Compiled from "ClassLinker.java"
-class jdk.dynalink.beans.ClassLinker extends jdk.dynalink.beans.BeanLinker {
-  jdk.dynalink.beans.ClassLinker();
-  static {};
-}

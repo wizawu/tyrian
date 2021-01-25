@@ -1,5 +1,0 @@
-Compiled from "BsdThreadContextFactory.java"
-class sun.jvm.hotspot.debugger.bsd.BsdThreadContextFactory {
-  sun.jvm.hotspot.debugger.bsd.BsdThreadContextFactory();
-  static sun.jvm.hotspot.debugger.ThreadContext createThreadContext(sun.jvm.hotspot.debugger.bsd.BsdDebugger);
-}

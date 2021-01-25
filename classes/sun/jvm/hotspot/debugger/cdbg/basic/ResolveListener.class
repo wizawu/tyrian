@@ -1,7 +1,0 @@
-Compiled from "ResolveListener.java"
-public interface sun.jvm.hotspot.debugger.cdbg.basic.ResolveListener {
-  public abstract void resolveFailed(sun.jvm.hotspot.debugger.cdbg.Type, sun.jvm.hotspot.debugger.cdbg.basic.LazyType, java.lang.String);
-  public abstract void resolveFailed(sun.jvm.hotspot.debugger.cdbg.Type, java.lang.String);
-  public abstract void resolveFailed(sun.jvm.hotspot.debugger.cdbg.Sym, sun.jvm.hotspot.debugger.cdbg.basic.LazyType, java.lang.String);
-  public abstract void resolveFailed(sun.jvm.hotspot.debugger.cdbg.Sym, sun.jvm.hotspot.debugger.cdbg.basic.LazyBlockSym, java.lang.String);
-}

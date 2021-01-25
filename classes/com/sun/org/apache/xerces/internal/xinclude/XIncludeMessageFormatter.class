@@ -1,6 +1,0 @@
-Compiled from "XIncludeMessageFormatter.java"
-public class com.sun.org.apache.xerces.internal.xinclude.XIncludeMessageFormatter implements com.sun.org.apache.xerces.internal.util.MessageFormatter {
-  public static final java.lang.String XINCLUDE_DOMAIN;
-  public com.sun.org.apache.xerces.internal.xinclude.XIncludeMessageFormatter();
-  public java.lang.String formatMessage(java.util.Locale, java.lang.String, java.lang.Object[]) throws java.util.MissingResourceException;
-}

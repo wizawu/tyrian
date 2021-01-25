@@ -1,5 +1,0 @@
-Compiled from "IIOException.java"
-public class javax.imageio.IIOException extends java.io.IOException {
-  public javax.imageio.IIOException(java.lang.String);
-  public javax.imageio.IIOException(java.lang.String, java.lang.Throwable);
-}

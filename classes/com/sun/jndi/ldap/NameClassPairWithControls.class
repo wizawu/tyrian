@@ -1,5 +1,0 @@
-Compiled from "NameClassPairWithControls.java"
-class com.sun.jndi.ldap.NameClassPairWithControls extends javax.naming.NameClassPair implements javax.naming.ldap.HasControls {
-  public com.sun.jndi.ldap.NameClassPairWithControls(java.lang.String, java.lang.String, javax.naming.ldap.Control[]);
-  public javax.naming.ldap.Control[] getControls() throws javax.naming.NamingException;
-}

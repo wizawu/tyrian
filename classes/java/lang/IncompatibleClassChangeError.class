@@ -1,5 +1,0 @@
-Compiled from "IncompatibleClassChangeError.java"
-public class java.lang.IncompatibleClassChangeError extends java.lang.LinkageError {
-  public java.lang.IncompatibleClassChangeError();
-  public java.lang.IncompatibleClassChangeError(java.lang.String);
-}

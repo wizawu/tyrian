@@ -1,7 +1,0 @@
-Compiled from "ModuleReferenceImpl.java"
-class com.sun.tools.jdi.ModuleReferenceImpl extends com.sun.tools.jdi.ObjectReferenceImpl implements com.sun.jdi.ModuleReference {
-  protected com.sun.tools.jdi.ModuleReferenceImpl(com.sun.jdi.VirtualMachine, long);
-  protected java.lang.String description();
-  public synchronized java.lang.String name();
-  public synchronized com.sun.jdi.ClassLoaderReference classLoader();
-}

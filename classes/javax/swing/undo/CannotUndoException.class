@@ -1,4 +1,0 @@
-Compiled from "CannotUndoException.java"
-public class javax.swing.undo.CannotUndoException extends java.lang.RuntimeException {
-  public javax.swing.undo.CannotUndoException();
-}

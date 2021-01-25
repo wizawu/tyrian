@@ -1,8 +1,0 @@
-Compiled from "GIFImageWriterSpi.java"
-public class com.sun.imageio.plugins.gif.GIFImageWriterSpi extends javax.imageio.spi.ImageWriterSpi {
-  public com.sun.imageio.plugins.gif.GIFImageWriterSpi();
-  public boolean canEncodeImage(javax.imageio.ImageTypeSpecifier);
-  public java.lang.String getDescription(java.util.Locale);
-  public javax.imageio.ImageWriter createWriterInstance(java.lang.Object);
-  static {};
-}

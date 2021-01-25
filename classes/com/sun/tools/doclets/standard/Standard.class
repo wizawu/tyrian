@@ -1,6 +1,0 @@
-Compiled from "Standard.java"
-public class com.sun.tools.doclets.standard.Standard {
-  public com.sun.tools.doclets.standard.Standard();
-  public static boolean start(com.sun.javadoc.RootDoc);
-  public static int optionLength(java.lang.String);
-}

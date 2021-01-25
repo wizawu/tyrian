@@ -1,5 +1,0 @@
-Compiled from "IntConsumer.java"
-public interface java.util.function.IntConsumer {
-  public abstract void accept(int);
-  public default java.util.function.IntConsumer andThen(java.util.function.IntConsumer);
-}

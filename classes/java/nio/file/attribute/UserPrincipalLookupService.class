@@ -1,6 +1,0 @@
-Compiled from "UserPrincipalLookupService.java"
-public abstract class java.nio.file.attribute.UserPrincipalLookupService {
-  protected java.nio.file.attribute.UserPrincipalLookupService();
-  public abstract java.nio.file.attribute.UserPrincipal lookupPrincipalByName(java.lang.String) throws java.io.IOException;
-  public abstract java.nio.file.attribute.GroupPrincipal lookupPrincipalByGroupName(java.lang.String) throws java.io.IOException;
-}

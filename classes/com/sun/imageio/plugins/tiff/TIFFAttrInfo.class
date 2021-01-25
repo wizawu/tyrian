@@ -1,9 +1,0 @@
-Compiled from "TIFFAttrInfo.java"
-public class com.sun.imageio.plugins.tiff.TIFFAttrInfo {
-  int valueType;
-  int dataType;
-  boolean isRequired;
-  int listMinLength;
-  int listMaxLength;
-  public com.sun.imageio.plugins.tiff.TIFFAttrInfo();
-}

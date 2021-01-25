@@ -1,8 +1,0 @@
-Compiled from "INVOKEVIRTUAL.java"
-public class com.sun.org.apache.bcel.internal.generic.INVOKEVIRTUAL extends com.sun.org.apache.bcel.internal.generic.InvokeInstruction {
-  com.sun.org.apache.bcel.internal.generic.INVOKEVIRTUAL();
-  public com.sun.org.apache.bcel.internal.generic.INVOKEVIRTUAL(int);
-  public void dump(java.io.DataOutputStream) throws java.io.IOException;
-  public java.lang.Class<?>[] getExceptions();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

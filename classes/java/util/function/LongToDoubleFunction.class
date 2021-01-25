@@ -1,4 +1,0 @@
-Compiled from "LongToDoubleFunction.java"
-public interface java.util.function.LongToDoubleFunction {
-  public abstract double applyAsDouble(long);
-}

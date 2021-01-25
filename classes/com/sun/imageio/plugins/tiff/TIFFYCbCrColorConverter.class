@@ -1,6 +1,0 @@
-Compiled from "TIFFYCbCrColorConverter.java"
-public class com.sun.imageio.plugins.tiff.TIFFYCbCrColorConverter extends com.sun.imageio.plugins.tiff.TIFFColorConverter {
-  public com.sun.imageio.plugins.tiff.TIFFYCbCrColorConverter(com.sun.imageio.plugins.tiff.TIFFImageMetadata);
-  public void fromRGB(float, float, float, float[]);
-  public void toRGB(float, float, float, float[]);
-}

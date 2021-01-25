@@ -1,9 +1,0 @@
-Compiled from "AnnotationTypeDocImpl.java"
-public class com.sun.tools.javadoc.main.AnnotationTypeDocImpl extends com.sun.tools.javadoc.main.ClassDocImpl implements com.sun.javadoc.AnnotationTypeDoc {
-  public com.sun.tools.javadoc.main.AnnotationTypeDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$ClassSymbol);
-  public com.sun.tools.javadoc.main.AnnotationTypeDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$ClassSymbol, com.sun.source.util.TreePath);
-  public boolean isAnnotationType();
-  public boolean isInterface();
-  public com.sun.javadoc.MethodDoc[] methods(boolean);
-  public com.sun.javadoc.AnnotationTypeElementDoc[] elements();
-}

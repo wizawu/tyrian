@@ -1,6 +1,0 @@
-Compiled from "MemoizedLong.java"
-public abstract class sun.jvm.hotspot.utilities.memo.MemoizedLong {
-  public sun.jvm.hotspot.utilities.memo.MemoizedLong();
-  protected abstract long computeValue();
-  public long getValue();
-}

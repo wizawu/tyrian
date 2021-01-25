@@ -1,5 +1,0 @@
-Compiled from "ThreadAccess.java"
-public interface sun.jvm.hotspot.debugger.ThreadAccess {
-  public abstract sun.jvm.hotspot.debugger.ThreadProxy getThreadForIdentifierAddress(sun.jvm.hotspot.debugger.Address);
-  public abstract sun.jvm.hotspot.debugger.ThreadProxy getThreadForThreadId(long);
-}

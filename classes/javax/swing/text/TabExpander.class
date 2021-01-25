@@ -1,4 +1,0 @@
-Compiled from "TabExpander.java"
-public interface javax.swing.text.TabExpander {
-  public abstract float nextTabStop(float, int);
-}

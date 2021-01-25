@@ -1,6 +1,0 @@
-Compiled from "DeadlockDetector.java"
-public class sun.jvm.hotspot.runtime.DeadlockDetector {
-  public sun.jvm.hotspot.runtime.DeadlockDetector();
-  public static void print(java.io.PrintStream);
-  public static void print(java.io.PrintStream, boolean);
-}

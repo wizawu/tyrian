@@ -1,7 +1,0 @@
-Compiled from "ClosestSymbol.java"
-public class sun.jvm.hotspot.debugger.cdbg.ClosestSymbol {
-  public sun.jvm.hotspot.debugger.cdbg.ClosestSymbol(java.lang.String, long);
-  public java.lang.String getName();
-  public long getOffset();
-  public java.lang.String offsetAsHex();
-}

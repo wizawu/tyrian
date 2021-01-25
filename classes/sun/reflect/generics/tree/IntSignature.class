@@ -1,6 +1,0 @@
-Compiled from "IntSignature.java"
-public class sun.reflect.generics.tree.IntSignature implements sun.reflect.generics.tree.BaseType {
-  public static sun.reflect.generics.tree.IntSignature make();
-  public void accept(sun.reflect.generics.visitor.TypeTreeVisitor<?>);
-  static {};
-}

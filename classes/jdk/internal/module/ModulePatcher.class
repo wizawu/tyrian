@@ -1,8 +1,0 @@
-Compiled from "ModulePatcher.java"
-public final class jdk.internal.module.ModulePatcher {
-  public jdk.internal.module.ModulePatcher(java.util.Map<java.lang.String, java.util.List<java.lang.String>>);
-  public java.lang.module.ModuleReference patchIfNeeded(java.lang.module.ModuleReference);
-  public boolean hasPatches();
-  java.util.Set<java.lang.String> patchedModules();
-  static {};
-}

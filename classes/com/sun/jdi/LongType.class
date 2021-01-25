@@ -1,3 +1,0 @@
-Compiled from "LongType.java"
-public interface com.sun.jdi.LongType extends com.sun.jdi.PrimitiveType {
-}

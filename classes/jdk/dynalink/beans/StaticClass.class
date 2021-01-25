@@ -1,8 +1,0 @@
-Compiled from "StaticClass.java"
-public final class jdk.dynalink.beans.StaticClass implements java.io.Serializable {
-  jdk.dynalink.beans.StaticClass(java.lang.Class<?>);
-  public static jdk.dynalink.beans.StaticClass forClass(java.lang.Class<?>);
-  public java.lang.Class<?> getRepresentedClass();
-  public java.lang.String toString();
-  static {};
-}

@@ -1,3 +1,0 @@
-Compiled from "DiagnosticCommandMBean.java"
-public interface com.sun.management.DiagnosticCommandMBean extends javax.management.DynamicMBean {
-}

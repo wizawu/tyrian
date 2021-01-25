@@ -1,6 +1,0 @@
-Compiled from "NotificationAccessController.java"
-public interface com.sun.jmx.remote.security.NotificationAccessController {
-  public abstract void addNotificationListener(java.lang.String, javax.management.ObjectName, javax.security.auth.Subject) throws java.lang.SecurityException;
-  public abstract void removeNotificationListener(java.lang.String, javax.management.ObjectName, javax.security.auth.Subject) throws java.lang.SecurityException;
-  public abstract void fetchNotification(java.lang.String, javax.management.ObjectName, javax.management.Notification, javax.security.auth.Subject) throws java.lang.SecurityException;
-}

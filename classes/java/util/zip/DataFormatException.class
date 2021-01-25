@@ -1,5 +1,0 @@
-Compiled from "DataFormatException.java"
-public class java.util.zip.DataFormatException extends java.lang.Exception {
-  public java.util.zip.DataFormatException();
-  public java.util.zip.DataFormatException(java.lang.String);
-}

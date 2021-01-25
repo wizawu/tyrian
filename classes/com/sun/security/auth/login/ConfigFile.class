@@ -1,7 +1,0 @@
-Compiled from "ConfigFile.java"
-public class com.sun.security.auth.login.ConfigFile extends javax.security.auth.login.Configuration {
-  public com.sun.security.auth.login.ConfigFile();
-  public com.sun.security.auth.login.ConfigFile(java.net.URI);
-  public javax.security.auth.login.AppConfigurationEntry[] getAppConfigurationEntry(java.lang.String);
-  public void refresh();
-}

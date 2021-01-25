@@ -1,5 +1,0 @@
-Compiled from "PlatformProvider.java"
-public interface com.sun.tools.javac.platform.PlatformProvider {
-  public abstract java.lang.Iterable<java.lang.String> getSupportedPlatformNames();
-  public abstract com.sun.tools.javac.platform.PlatformDescription getPlatform(java.lang.String, java.lang.String) throws com.sun.tools.javac.platform.PlatformProvider$PlatformNotSupported;
-}

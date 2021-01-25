@@ -1,5 +1,0 @@
-Compiled from "LongArrayCounter.java"
-public interface sun.management.counter.LongArrayCounter extends sun.management.counter.Counter {
-  public abstract long[] longArrayValue();
-  public abstract long longAt(int);
-}

@@ -1,6 +1,0 @@
-Compiled from "SubjectComber.java"
-class sun.security.jgss.krb5.SubjectComber {
-  static <T> T find(javax.security.auth.Subject, java.lang.String, java.lang.String, java.lang.Class<T>);
-  static <T> java.util.List<T> findMany(javax.security.auth.Subject, java.lang.String, java.lang.String, java.lang.Class<T>);
-  static {};
-}

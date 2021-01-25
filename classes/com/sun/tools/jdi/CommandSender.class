@@ -1,4 +1,0 @@
-Compiled from "CommandSender.java"
-interface com.sun.tools.jdi.CommandSender {
-  public abstract com.sun.tools.jdi.PacketStream send();
-}

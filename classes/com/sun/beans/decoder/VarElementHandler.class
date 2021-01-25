@@ -1,6 +1,0 @@
-Compiled from "VarElementHandler.java"
-final class com.sun.beans.decoder.VarElementHandler extends com.sun.beans.decoder.ElementHandler {
-  com.sun.beans.decoder.VarElementHandler();
-  public void addAttribute(java.lang.String, java.lang.String);
-  protected com.sun.beans.decoder.ValueObject getValueObject();
-}

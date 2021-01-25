@@ -1,6 +1,0 @@
-Compiled from "TIFFJPEGCompressor.java"
-public class com.sun.imageio.plugins.tiff.TIFFJPEGCompressor extends com.sun.imageio.plugins.tiff.TIFFBaseJPEGCompressor {
-  static final int CHROMA_SUBSAMPLING;
-  public com.sun.imageio.plugins.tiff.TIFFJPEGCompressor(javax.imageio.ImageWriteParam);
-  public void setMetadata(javax.imageio.metadata.IIOMetadata);
-}

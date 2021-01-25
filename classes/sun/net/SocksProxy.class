@@ -1,5 +1,0 @@
-Compiled from "SocksProxy.java"
-public final class sun.net.SocksProxy extends java.net.Proxy {
-  public static sun.net.SocksProxy create(java.net.SocketAddress, int);
-  public int protocolVersion();
-}

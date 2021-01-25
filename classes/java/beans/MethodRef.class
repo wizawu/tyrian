@@ -1,7 +1,0 @@
-Compiled from "MethodRef.java"
-final class java.beans.MethodRef {
-  java.beans.MethodRef();
-  void set(java.lang.reflect.Method);
-  boolean isSet();
-  java.lang.reflect.Method get();
-}

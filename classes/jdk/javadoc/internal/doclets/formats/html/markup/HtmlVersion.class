@@ -1,9 +1,0 @@
-Compiled from "HtmlVersion.java"
-public final class jdk.javadoc.internal.doclets.formats.html.markup.HtmlVersion extends java.lang.Enum<jdk.javadoc.internal.doclets.formats.html.markup.HtmlVersion> {
-  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlVersion HTML4;
-  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlVersion HTML5;
-  public static final jdk.javadoc.internal.doclets.formats.html.markup.HtmlVersion ALL;
-  public static jdk.javadoc.internal.doclets.formats.html.markup.HtmlVersion[] values();
-  public static jdk.javadoc.internal.doclets.formats.html.markup.HtmlVersion valueOf(java.lang.String);
-  static {};
-}

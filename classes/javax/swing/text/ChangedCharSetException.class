@@ -1,8 +1,0 @@
-Compiled from "ChangedCharSetException.java"
-public class javax.swing.text.ChangedCharSetException extends java.io.IOException {
-  java.lang.String charSetSpec;
-  boolean charSetKey;
-  public javax.swing.text.ChangedCharSetException(java.lang.String, boolean);
-  public java.lang.String getCharSetSpec();
-  public boolean keyEqualsCharSet();
-}

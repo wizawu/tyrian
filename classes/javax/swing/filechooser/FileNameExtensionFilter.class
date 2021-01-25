@@ -1,8 +1,0 @@
-Compiled from "FileNameExtensionFilter.java"
-public final class javax.swing.filechooser.FileNameExtensionFilter extends javax.swing.filechooser.FileFilter {
-  public javax.swing.filechooser.FileNameExtensionFilter(java.lang.String, java.lang.String...);
-  public boolean accept(java.io.File);
-  public java.lang.String getDescription();
-  public java.lang.String[] getExtensions();
-  public java.lang.String toString();
-}

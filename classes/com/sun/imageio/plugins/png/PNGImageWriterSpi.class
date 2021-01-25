@@ -1,8 +1,0 @@
-Compiled from "PNGImageWriterSpi.java"
-public class com.sun.imageio.plugins.png.PNGImageWriterSpi extends javax.imageio.spi.ImageWriterSpi {
-  public com.sun.imageio.plugins.png.PNGImageWriterSpi();
-  public boolean canEncodeImage(javax.imageio.ImageTypeSpecifier);
-  public java.lang.String getDescription(java.util.Locale);
-  public javax.imageio.ImageWriter createWriterInstance(java.lang.Object);
-  static {};
-}

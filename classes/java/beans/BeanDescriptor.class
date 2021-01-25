@@ -1,9 +1,0 @@
-Compiled from "BeanDescriptor.java"
-public class java.beans.BeanDescriptor extends java.beans.FeatureDescriptor {
-  public java.beans.BeanDescriptor(java.lang.Class<?>);
-  public java.beans.BeanDescriptor(java.lang.Class<?>, java.lang.Class<?>);
-  public java.lang.Class<?> getBeanClass();
-  public java.lang.Class<?> getCustomizerClass();
-  java.beans.BeanDescriptor(java.beans.BeanDescriptor);
-  void appendTo(java.lang.StringBuilder);
-}

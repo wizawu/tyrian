@@ -1,5 +1,0 @@
-Compiled from "IntegerEnum.java"
-public class sun.jvm.hotspot.utilities.IntegerEnum {
-  protected sun.jvm.hotspot.utilities.IntegerEnum(int);
-  public int getValue();
-}

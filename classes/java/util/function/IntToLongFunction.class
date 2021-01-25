@@ -1,4 +1,0 @@
-Compiled from "IntToLongFunction.java"
-public interface java.util.function.IntToLongFunction {
-  public abstract long applyAsLong(int);
-}

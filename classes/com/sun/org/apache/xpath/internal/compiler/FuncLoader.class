@@ -1,6 +1,0 @@
-Compiled from "FuncLoader.java"
-public class com.sun.org.apache.xpath.internal.compiler.FuncLoader {
-  public java.lang.String getName();
-  public com.sun.org.apache.xpath.internal.compiler.FuncLoader(java.lang.String, int);
-  com.sun.org.apache.xpath.internal.functions.Function getFunction() throws javax.xml.transform.TransformerException;
-}

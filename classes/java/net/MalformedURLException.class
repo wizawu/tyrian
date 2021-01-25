@@ -1,5 +1,0 @@
-Compiled from "MalformedURLException.java"
-public class java.net.MalformedURLException extends java.io.IOException {
-  public java.net.MalformedURLException();
-  public java.net.MalformedURLException(java.lang.String);
-}

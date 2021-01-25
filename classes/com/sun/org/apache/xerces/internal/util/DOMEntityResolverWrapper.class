@@ -1,9 +1,0 @@
-Compiled from "DOMEntityResolverWrapper.java"
-public class com.sun.org.apache.xerces.internal.util.DOMEntityResolverWrapper implements com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver {
-  protected org.w3c.dom.ls.LSResourceResolver fEntityResolver;
-  public com.sun.org.apache.xerces.internal.util.DOMEntityResolverWrapper();
-  public com.sun.org.apache.xerces.internal.util.DOMEntityResolverWrapper(org.w3c.dom.ls.LSResourceResolver);
-  public void setEntityResolver(org.w3c.dom.ls.LSResourceResolver);
-  public org.w3c.dom.ls.LSResourceResolver getEntityResolver();
-  public com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource resolveEntity(com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier) throws com.sun.org.apache.xerces.internal.xni.XNIException, java.io.IOException;
-}

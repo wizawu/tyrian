@@ -1,5 +1,0 @@
-Compiled from "JDKFontLookup.java"
-public final class sun.font.lookup.JDKFontLookup {
-  public sun.font.lookup.JDKFontLookup();
-  public static final java.lang.String getJDKFontDir();
-}

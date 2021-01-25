@@ -1,5 +1,0 @@
-Compiled from "AssociationImpl.java"
-public class sun.nio.ch.sctp.AssociationImpl extends com.sun.nio.sctp.Association {
-  public sun.nio.ch.sctp.AssociationImpl(int, int, int);
-  public java.lang.String toString();
-}

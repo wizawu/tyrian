@@ -1,5 +1,0 @@
-Compiled from "FormatData_et_EE.java"
-public class sun.text.resources.ext.FormatData_et_EE extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_et_EE();
-  protected final java.lang.Object[][] getContents();
-}

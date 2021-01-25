@@ -1,3 +1,0 @@
-Compiled from "LocaleNamesProvider.java"
-public interface sun.util.resources.cldr.LocaleNamesProvider extends java.util.spi.ResourceBundleProvider {
-}

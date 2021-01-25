@@ -1,6 +1,0 @@
-Compiled from "HashtableEntry.java"
-public class sun.jvm.hotspot.utilities.HashtableEntry extends sun.jvm.hotspot.utilities.BasicHashtableEntry {
-  public sun.jvm.hotspot.debugger.Address literalValue();
-  public sun.jvm.hotspot.utilities.HashtableEntry(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

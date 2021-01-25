@@ -1,9 +1,0 @@
-Compiled from "RemoteServer.java"
-public abstract class java.rmi.server.RemoteServer extends java.rmi.server.RemoteObject {
-  protected java.rmi.server.RemoteServer();
-  protected java.rmi.server.RemoteServer(java.rmi.server.RemoteRef);
-  public static java.lang.String getClientHost() throws java.rmi.server.ServerNotActiveException;
-  public static void setLog(java.io.OutputStream);
-  public static java.io.PrintStream getLog();
-  static {};
-}

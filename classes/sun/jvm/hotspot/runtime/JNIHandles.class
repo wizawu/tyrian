@@ -1,7 +1,0 @@
-Compiled from "JNIHandles.java"
-public class sun.jvm.hotspot.runtime.JNIHandles {
-  public sun.jvm.hotspot.runtime.JNIHandles();
-  public sun.jvm.hotspot.gc.shared.OopStorage globalHandles();
-  public sun.jvm.hotspot.gc.shared.OopStorage weakGlobalHandles();
-  static {};
-}

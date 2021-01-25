@@ -1,9 +1,0 @@
-Compiled from "PSVIDOMImplementationImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.PSVIDOMImplementationImpl extends com.sun.org.apache.xerces.internal.dom.DOMImplementationImpl {
-  static final com.sun.org.apache.xerces.internal.dom.PSVIDOMImplementationImpl singleton;
-  public com.sun.org.apache.xerces.internal.dom.PSVIDOMImplementationImpl();
-  public static org.w3c.dom.DOMImplementation getDOMImplementation();
-  public boolean hasFeature(java.lang.String, java.lang.String);
-  protected com.sun.org.apache.xerces.internal.dom.CoreDocumentImpl createDocument(org.w3c.dom.DocumentType);
-  static {};
-}

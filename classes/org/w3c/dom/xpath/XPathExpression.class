@@ -1,4 +1,0 @@
-Compiled from "XPathExpression.java"
-public interface org.w3c.dom.xpath.XPathExpression {
-  public abstract java.lang.Object evaluate(org.w3c.dom.Node, short, java.lang.Object) throws org.w3c.dom.xpath.XPathException, org.w3c.dom.DOMException;
-}

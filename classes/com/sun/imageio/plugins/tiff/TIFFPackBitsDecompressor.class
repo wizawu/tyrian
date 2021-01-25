@@ -1,6 +1,0 @@
-Compiled from "TIFFPackBitsDecompressor.java"
-public class com.sun.imageio.plugins.tiff.TIFFPackBitsDecompressor extends com.sun.imageio.plugins.tiff.TIFFDecompressor {
-  public com.sun.imageio.plugins.tiff.TIFFPackBitsDecompressor();
-  public int decode(byte[], int, byte[], int) throws java.io.IOException;
-  public void decodeRaw(byte[], int, int, int) throws java.io.IOException;
-}

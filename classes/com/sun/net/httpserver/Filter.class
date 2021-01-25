@@ -1,6 +1,0 @@
-Compiled from "Filter.java"
-public abstract class com.sun.net.httpserver.Filter {
-  protected com.sun.net.httpserver.Filter();
-  public abstract void doFilter(com.sun.net.httpserver.HttpExchange, com.sun.net.httpserver.Filter$Chain) throws java.io.IOException;
-  public abstract java.lang.String description();
-}

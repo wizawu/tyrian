@@ -1,5 +1,0 @@
-Compiled from "UnexpectedException.java"
-public class java.rmi.UnexpectedException extends java.rmi.RemoteException {
-  public java.rmi.UnexpectedException(java.lang.String);
-  public java.rmi.UnexpectedException(java.lang.String, java.lang.Exception);
-}

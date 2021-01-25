@@ -1,8 +1,0 @@
-Compiled from "MetadataField.java"
-public class sun.jvm.hotspot.oops.MetadataField extends sun.jvm.hotspot.oops.Field {
-  public sun.jvm.hotspot.oops.MetadataField(sun.jvm.hotspot.types.AddressField, long);
-  public sun.jvm.hotspot.oops.Metadata getValue(sun.jvm.hotspot.oops.Oop);
-  public sun.jvm.hotspot.oops.Metadata getValue(sun.jvm.hotspot.runtime.VMObject);
-  public sun.jvm.hotspot.oops.Metadata getValue(sun.jvm.hotspot.debugger.Address);
-  public void setValue(sun.jvm.hotspot.oops.Oop, long) throws sun.jvm.hotspot.oops.MutationException;
-}

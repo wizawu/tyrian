@@ -1,8 +1,0 @@
-Compiled from "UTF_16BE.java"
-public class sun.nio.cs.UTF_16BE extends sun.nio.cs.Unicode {
-  public sun.nio.cs.UTF_16BE();
-  public java.lang.String historicalName();
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public java.nio.charset.CharsetEncoder newEncoder();
-  public boolean contains(java.nio.charset.Charset);
-}

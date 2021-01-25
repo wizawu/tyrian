@@ -1,8 +1,0 @@
-Compiled from "Ciphertext.java"
-final class sun.security.ssl.Ciphertext {
-  final byte contentType;
-  final byte handshakeType;
-  final long recordSN;
-  javax.net.ssl.SSLEngineResult$HandshakeStatus handshakeStatus;
-  sun.security.ssl.Ciphertext(byte, byte, long);
-}

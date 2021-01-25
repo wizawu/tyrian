@@ -1,7 +1,0 @@
-Compiled from "RemoteVm.java"
-public interface sun.jvmstat.monitor.remote.RemoteVm extends java.rmi.Remote {
-  public abstract byte[] getBytes() throws java.rmi.RemoteException;
-  public abstract int getCapacity() throws java.rmi.RemoteException;
-  public abstract int getLocalVmId() throws java.rmi.RemoteException;
-  public abstract void detach() throws java.rmi.RemoteException;
-}

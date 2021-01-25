@@ -1,5 +1,0 @@
-Compiled from "ciInstance.java"
-public class sun.jvm.hotspot.ci.ciInstance extends sun.jvm.hotspot.ci.ciObject {
-  public sun.jvm.hotspot.ci.ciInstance(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

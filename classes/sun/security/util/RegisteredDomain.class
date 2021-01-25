@@ -1,7 +1,0 @@
-Compiled from "RegisteredDomain.java"
-public interface sun.security.util.RegisteredDomain {
-  public abstract java.lang.String name();
-  public abstract sun.security.util.RegisteredDomain$Type type();
-  public abstract java.lang.String publicSuffix();
-  public static java.util.Optional<sun.security.util.RegisteredDomain> from(java.lang.String);
-}

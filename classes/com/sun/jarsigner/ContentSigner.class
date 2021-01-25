@@ -1,5 +1,0 @@
-Compiled from "ContentSigner.java"
-public abstract class com.sun.jarsigner.ContentSigner {
-  public com.sun.jarsigner.ContentSigner();
-  public abstract byte[] generateSignedData(com.sun.jarsigner.ContentSignerParameters, boolean, boolean) throws java.security.NoSuchAlgorithmException, java.security.cert.CertificateException, java.io.IOException;
-}

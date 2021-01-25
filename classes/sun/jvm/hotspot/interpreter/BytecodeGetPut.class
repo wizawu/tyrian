@@ -1,9 +1,0 @@
-Compiled from "BytecodeGetPut.java"
-public abstract class sun.jvm.hotspot.interpreter.BytecodeGetPut extends sun.jvm.hotspot.interpreter.BytecodeWithCPIndex {
-  sun.jvm.hotspot.interpreter.BytecodeGetPut(sun.jvm.hotspot.oops.Method, int);
-  public sun.jvm.hotspot.oops.Symbol name();
-  public sun.jvm.hotspot.oops.Symbol signature();
-  public sun.jvm.hotspot.oops.Field getField();
-  public java.lang.String toString();
-  public abstract boolean isStatic();
-}

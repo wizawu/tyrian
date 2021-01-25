@@ -1,5 +1,0 @@
-Compiled from "NameNotFoundException.java"
-public class javax.naming.NameNotFoundException extends javax.naming.NamingException {
-  public javax.naming.NameNotFoundException(java.lang.String);
-  public javax.naming.NameNotFoundException();
-}

@@ -1,5 +1,0 @@
-Compiled from "SSLPermission.java"
-public final class javax.net.ssl.SSLPermission extends java.security.BasicPermission {
-  public javax.net.ssl.SSLPermission(java.lang.String);
-  public javax.net.ssl.SSLPermission(java.lang.String, java.lang.String);
-}

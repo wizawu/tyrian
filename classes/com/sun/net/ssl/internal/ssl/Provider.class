@@ -1,8 +1,0 @@
-Compiled from "Provider.java"
-public final class com.sun.net.ssl.internal.ssl.Provider extends sun.security.ssl.SunJSSE {
-  public com.sun.net.ssl.internal.ssl.Provider();
-  public com.sun.net.ssl.internal.ssl.Provider(java.security.Provider);
-  public com.sun.net.ssl.internal.ssl.Provider(java.lang.String);
-  public static synchronized boolean isFIPS();
-  public static synchronized void install();
-}

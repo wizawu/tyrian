@@ -1,5 +1,0 @@
-Compiled from "ECPrivateKey.java"
-public interface java.security.interfaces.ECPrivateKey extends java.security.PrivateKey,java.security.interfaces.ECKey {
-  public static final long serialVersionUID;
-  public abstract java.math.BigInteger getS();
-}

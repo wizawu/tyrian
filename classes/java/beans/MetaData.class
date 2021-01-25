@@ -1,7 +1,0 @@
-Compiled from "MetaData.java"
-class java.beans.MetaData {
-  java.beans.MetaData();
-  public static synchronized java.beans.PersistenceDelegate getPersistenceDelegate(java.lang.Class);
-  static java.lang.Object getPrivateFieldValue(java.lang.Object, java.lang.String);
-  static {};
-}

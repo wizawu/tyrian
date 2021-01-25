@@ -1,5 +1,0 @@
-Compiled from "IllegalAccessException.java"
-public class java.lang.IllegalAccessException extends java.lang.ReflectiveOperationException {
-  public java.lang.IllegalAccessException();
-  public java.lang.IllegalAccessException(java.lang.String);
-}

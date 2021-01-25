@@ -1,4 +1,0 @@
-Compiled from "IndexableFieldIdentifier.java"
-public interface sun.jvm.hotspot.debugger.cdbg.IndexableFieldIdentifier extends sun.jvm.hotspot.debugger.cdbg.FieldIdentifier {
-  public abstract int getIndex();
-}

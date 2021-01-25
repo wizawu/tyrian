@@ -1,9 +1,0 @@
-Compiled from "AnnotationTypeElementDocImpl.java"
-public class com.sun.tools.javadoc.main.AnnotationTypeElementDocImpl extends com.sun.tools.javadoc.main.MethodDocImpl implements com.sun.javadoc.AnnotationTypeElementDoc {
-  public com.sun.tools.javadoc.main.AnnotationTypeElementDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$MethodSymbol);
-  public com.sun.tools.javadoc.main.AnnotationTypeElementDocImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Symbol$MethodSymbol, com.sun.source.util.TreePath);
-  public boolean isAnnotationTypeElement();
-  public boolean isMethod();
-  public boolean isAbstract();
-  public com.sun.javadoc.AnnotationValue defaultValue();
-}

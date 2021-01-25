@@ -1,4 +1,0 @@
-Compiled from "InstructionListObserver.java"
-public interface com.sun.org.apache.bcel.internal.generic.InstructionListObserver {
-  public abstract void notify(com.sun.org.apache.bcel.internal.generic.InstructionList);
-}

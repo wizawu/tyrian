@@ -1,6 +1,0 @@
-Compiled from "WeakClassHashMap.java"
-public abstract class sun.rmi.server.WeakClassHashMap<V> {
-  protected sun.rmi.server.WeakClassHashMap();
-  public V get(java.lang.Class<?>);
-  protected abstract V computeValue(java.lang.Class<?>);
-}

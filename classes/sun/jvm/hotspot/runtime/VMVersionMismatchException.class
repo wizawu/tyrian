@@ -1,7 +1,0 @@
-Compiled from "VMVersionMismatchException.java"
-public class sun.jvm.hotspot.runtime.VMVersionMismatchException extends java.lang.RuntimeException {
-  public sun.jvm.hotspot.runtime.VMVersionMismatchException(java.lang.String, java.lang.String);
-  public java.lang.String getMessage();
-  public java.lang.String getSupportedVersions();
-  public java.lang.String getTargetVersion();
-}

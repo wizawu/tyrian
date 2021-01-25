@@ -1,5 +1,0 @@
-Compiled from "RemoteThreadFactory.java"
-public interface sun.jvm.hotspot.debugger.remote.RemoteThreadFactory {
-  public abstract sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(sun.jvm.hotspot.debugger.Address);
-  public abstract sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(long);
-}

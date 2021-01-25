@@ -1,9 +1,0 @@
-Compiled from "AbstractNotificationHandler.java"
-public class com.sun.nio.sctp.AbstractNotificationHandler<T> implements com.sun.nio.sctp.NotificationHandler<T> {
-  protected com.sun.nio.sctp.AbstractNotificationHandler();
-  public com.sun.nio.sctp.HandlerResult handleNotification(com.sun.nio.sctp.Notification, T);
-  public com.sun.nio.sctp.HandlerResult handleNotification(com.sun.nio.sctp.AssociationChangeNotification, T);
-  public com.sun.nio.sctp.HandlerResult handleNotification(com.sun.nio.sctp.PeerAddressChangeNotification, T);
-  public com.sun.nio.sctp.HandlerResult handleNotification(com.sun.nio.sctp.SendFailedNotification, T);
-  public com.sun.nio.sctp.HandlerResult handleNotification(com.sun.nio.sctp.ShutdownNotification, T);
-}

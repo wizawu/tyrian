@@ -1,8 +1,0 @@
-Compiled from "FileSystemImpl.java"
-public class jdk.internal.agent.FileSystemImpl extends jdk.internal.agent.FileSystem {
-  public jdk.internal.agent.FileSystemImpl();
-  public boolean supportsFileSecurity(java.io.File) throws java.io.IOException;
-  public boolean isAccessUserOnly(java.io.File) throws java.io.IOException;
-  static native boolean isAccessUserOnly0(java.lang.String) throws java.io.IOException;
-  static {};
-}

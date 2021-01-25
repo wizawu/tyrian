@@ -1,4 +1,0 @@
-Compiled from "DirectoryStream.java"
-public interface java.nio.file.DirectoryStream<T> extends java.io.Closeable, java.lang.Iterable<T> {
-  public abstract java.util.Iterator<T> iterator();
-}

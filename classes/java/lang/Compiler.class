@@ -1,8 +1,0 @@
-Compiled from "Compiler.java"
-public final class java.lang.Compiler {
-  public static boolean compileClass(java.lang.Class<?>);
-  public static boolean compileClasses(java.lang.String);
-  public static java.lang.Object command(java.lang.Object);
-  public static void enable();
-  public static void disable();
-}

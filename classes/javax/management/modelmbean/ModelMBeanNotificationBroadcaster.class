@@ -1,9 +1,0 @@
-Compiled from "ModelMBeanNotificationBroadcaster.java"
-public interface javax.management.modelmbean.ModelMBeanNotificationBroadcaster extends javax.management.NotificationBroadcaster {
-  public abstract void sendNotification(javax.management.Notification) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
-  public abstract void sendNotification(java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
-  public abstract void sendAttributeChangeNotification(javax.management.AttributeChangeNotification) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
-  public abstract void sendAttributeChangeNotification(javax.management.Attribute, javax.management.Attribute) throws javax.management.MBeanException, javax.management.RuntimeOperationsException;
-  public abstract void addAttributeChangeNotificationListener(javax.management.NotificationListener, java.lang.String, java.lang.Object) throws javax.management.MBeanException, javax.management.RuntimeOperationsException, java.lang.IllegalArgumentException;
-  public abstract void removeAttributeChangeNotificationListener(javax.management.NotificationListener, java.lang.String) throws javax.management.MBeanException, javax.management.RuntimeOperationsException, javax.management.ListenerNotFoundException;
-}

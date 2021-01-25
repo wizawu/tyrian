@@ -1,5 +1,0 @@
-Compiled from "OrderClassLoaders.java"
-public class com.sun.jmx.remote.util.OrderClassLoaders extends java.lang.ClassLoader {
-  public com.sun.jmx.remote.util.OrderClassLoaders(java.lang.ClassLoader, java.lang.ClassLoader);
-  protected java.lang.Class<?> loadClass(java.lang.String, boolean) throws java.lang.ClassNotFoundException;
-}

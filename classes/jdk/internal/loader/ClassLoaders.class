@@ -1,7 +1,0 @@
-Compiled from "ClassLoaders.java"
-public class jdk.internal.loader.ClassLoaders {
-  static jdk.internal.loader.BuiltinClassLoader bootLoader();
-  public static java.lang.ClassLoader platformClassLoader();
-  public static java.lang.ClassLoader appClassLoader();
-  static {};
-}

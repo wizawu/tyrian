@@ -1,8 +1,0 @@
-Compiled from "CurrencyNameProviderImpl.java"
-public class sun.util.locale.provider.CurrencyNameProviderImpl extends java.util.spi.CurrencyNameProvider implements sun.util.locale.provider.AvailableLanguageTags {
-  public sun.util.locale.provider.CurrencyNameProviderImpl(sun.util.locale.provider.LocaleProviderAdapter$Type, java.util.Set<java.lang.String>);
-  public java.util.Set<java.lang.String> getAvailableLanguageTags();
-  public java.util.Locale[] getAvailableLocales();
-  public java.lang.String getSymbol(java.lang.String, java.util.Locale);
-  public java.lang.String getDisplayName(java.lang.String, java.util.Locale);
-}

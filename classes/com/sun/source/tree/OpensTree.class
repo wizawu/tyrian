@@ -1,5 +1,0 @@
-Compiled from "OpensTree.java"
-public interface com.sun.source.tree.OpensTree extends com.sun.source.tree.DirectiveTree {
-  public abstract com.sun.source.tree.ExpressionTree getPackageName();
-  public abstract java.util.List<? extends com.sun.source.tree.ExpressionTree> getModuleNames();
-}

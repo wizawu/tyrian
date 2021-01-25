@@ -1,9 +1,0 @@
-Compiled from "RuntimeException.java"
-public class java.lang.RuntimeException extends java.lang.Exception {
-  static final long serialVersionUID;
-  public java.lang.RuntimeException();
-  public java.lang.RuntimeException(java.lang.String);
-  public java.lang.RuntimeException(java.lang.String, java.lang.Throwable);
-  public java.lang.RuntimeException(java.lang.Throwable);
-  protected java.lang.RuntimeException(java.lang.String, java.lang.Throwable, boolean, boolean);
-}

@@ -1,4 +1,0 @@
-Compiled from "ConstantObject.java"
-public interface com.sun.org.apache.bcel.internal.classfile.ConstantObject {
-  public abstract java.lang.Object getConstantValue(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
-}

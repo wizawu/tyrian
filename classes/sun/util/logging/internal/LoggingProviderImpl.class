@@ -1,9 +1,0 @@
-Compiled from "LoggingProviderImpl.java"
-public final class sun.util.logging.internal.LoggingProviderImpl extends jdk.internal.logger.DefaultLoggerFinder {
-  static final java.lang.RuntimePermission LOGGERFINDER_PERMISSION;
-  public sun.util.logging.internal.LoggingProviderImpl();
-  protected java.lang.System$Logger demandLoggerFor(java.lang.String, java.lang.Module);
-  public static sun.util.logging.internal.LoggingProviderImpl$LogManagerAccess getLogManagerAccess();
-  public static void setLogManagerAccess(sun.util.logging.internal.LoggingProviderImpl$LogManagerAccess);
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "XMLDTDScanner.java"
-public interface com.sun.org.apache.xerces.internal.xni.parser.XMLDTDScanner extends com.sun.org.apache.xerces.internal.xni.parser.XMLDTDSource,com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource {
-  public abstract void setInputSource(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource) throws java.io.IOException;
-  public abstract boolean scanDTDInternalSubset(boolean, boolean, boolean) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
-  public abstract boolean scanDTDExternalSubset(boolean) throws java.io.IOException, com.sun.org.apache.xerces.internal.xni.XNIException;
-  public abstract boolean skipDTD(boolean) throws java.io.IOException;
-  public abstract void setLimitAnalyzer(com.sun.org.apache.xerces.internal.utils.XMLLimitAnalyzer);
-}

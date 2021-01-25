@@ -1,6 +1,0 @@
-Compiled from "StringUTF16.java"
-class sun.nio.cs.StringUTF16 {
-  sun.nio.cs.StringUTF16();
-  public static char getChar(byte[], int);
-  static {};
-}

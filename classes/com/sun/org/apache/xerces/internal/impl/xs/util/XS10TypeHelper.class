@@ -1,4 +1,0 @@
-Compiled from "XS10TypeHelper.java"
-public class com.sun.org.apache.xerces.internal.impl.xs.util.XS10TypeHelper {
-  public static java.lang.String getSchemaTypeName(com.sun.org.apache.xerces.internal.xs.XSTypeDefinition);
-}

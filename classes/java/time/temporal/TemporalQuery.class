@@ -1,4 +1,0 @@
-Compiled from "TemporalQuery.java"
-public interface java.time.temporal.TemporalQuery<R> {
-  public abstract R queryFrom(java.time.temporal.TemporalAccessor);
-}

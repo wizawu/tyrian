@@ -1,4 +1,0 @@
-Compiled from "EventFilter.java"
-interface java.awt.EventFilter {
-  public abstract java.awt.EventFilter$FilterAction acceptEvent(java.awt.AWTEvent);
-}

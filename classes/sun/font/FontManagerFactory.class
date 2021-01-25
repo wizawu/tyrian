@@ -1,6 +1,0 @@
-Compiled from "FontManagerFactory.java"
-public final class sun.font.FontManagerFactory {
-  public sun.font.FontManagerFactory();
-  public static synchronized sun.font.FontManager getInstance();
-  static {};
-}

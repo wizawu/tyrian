@@ -1,4 +1,0 @@
-Compiled from "ToIntFunction.java"
-public interface java.util.function.ToIntFunction<T> {
-  public abstract int applyAsInt(T);
-}

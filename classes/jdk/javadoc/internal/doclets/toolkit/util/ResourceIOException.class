@@ -1,5 +1,0 @@
-Compiled from "ResourceIOException.java"
-public class jdk.javadoc.internal.doclets.toolkit.util.ResourceIOException extends jdk.javadoc.internal.doclets.toolkit.DocletException {
-  public final jdk.javadoc.internal.doclets.toolkit.util.DocPath resource;
-  public jdk.javadoc.internal.doclets.toolkit.util.ResourceIOException(jdk.javadoc.internal.doclets.toolkit.util.DocPath, java.io.IOException);
-}

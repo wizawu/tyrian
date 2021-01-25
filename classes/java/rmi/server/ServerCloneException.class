@@ -1,8 +1,0 @@
-Compiled from "ServerCloneException.java"
-public class java.rmi.server.ServerCloneException extends java.lang.CloneNotSupportedException {
-  public java.lang.Exception detail;
-  public java.rmi.server.ServerCloneException(java.lang.String);
-  public java.rmi.server.ServerCloneException(java.lang.String, java.lang.Exception);
-  public java.lang.String getMessage();
-  public java.lang.Throwable getCause();
-}

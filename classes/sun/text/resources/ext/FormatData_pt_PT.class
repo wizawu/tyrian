@@ -1,5 +1,0 @@
-Compiled from "FormatData_pt_PT.java"
-public class sun.text.resources.ext.FormatData_pt_PT extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_pt_PT();
-  protected final java.lang.Object[][] getContents();
-}

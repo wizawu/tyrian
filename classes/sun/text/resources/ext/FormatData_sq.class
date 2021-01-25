@@ -1,5 +1,0 @@
-Compiled from "FormatData_sq.java"
-public class sun.text.resources.ext.FormatData_sq extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_sq();
-  protected final java.lang.Object[][] getContents();
-}

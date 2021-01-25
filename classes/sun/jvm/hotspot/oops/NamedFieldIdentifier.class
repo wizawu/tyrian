@@ -1,8 +1,0 @@
-Compiled from "NamedFieldIdentifier.java"
-public class sun.jvm.hotspot.oops.NamedFieldIdentifier extends sun.jvm.hotspot.oops.FieldIdentifier {
-  public sun.jvm.hotspot.oops.NamedFieldIdentifier(java.lang.String);
-  public java.lang.String getName();
-  public void printOn(java.io.PrintStream);
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-}

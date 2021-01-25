@@ -1,9 +1,0 @@
-Compiled from "OpeningHandshake.java"
-public class jdk.internal.net.http.websocket.OpeningHandshake {
-  static final boolean $assertionsDisabled;
-  public jdk.internal.net.http.websocket.OpeningHandshake(jdk.internal.net.http.websocket.BuilderImpl);
-  static java.net.URI createRequestURI(java.net.URI);
-  public java.util.concurrent.CompletableFuture<jdk.internal.net.http.websocket.OpeningHandshake$Result> send();
-  static void checkPermissions(jdk.internal.net.http.websocket.BuilderImpl, java.net.Proxy);
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "ClassNotFoundException.java"
-public class java.lang.ClassNotFoundException extends java.lang.ReflectiveOperationException {
-  public java.lang.ClassNotFoundException();
-  public java.lang.ClassNotFoundException(java.lang.String);
-  public java.lang.ClassNotFoundException(java.lang.String, java.lang.Throwable);
-  public java.lang.Throwable getException();
-  public java.lang.Throwable getCause();
-}

@@ -1,9 +1,0 @@
-Compiled from "JSJavaThread.java"
-public class sun.jvm.hotspot.utilities.soql.JSJavaThread extends sun.jvm.hotspot.utilities.soql.JSJavaInstance {
-  public sun.jvm.hotspot.utilities.soql.JSJavaThread(sun.jvm.hotspot.oops.Instance, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
-  public sun.jvm.hotspot.utilities.soql.JSJavaThread(sun.jvm.hotspot.runtime.JavaThread, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
-  public java.lang.String toString();
-  protected java.lang.Object getFieldValue(java.lang.String);
-  protected java.lang.String[] getFieldNames();
-  protected boolean hasField(java.lang.String);
-}

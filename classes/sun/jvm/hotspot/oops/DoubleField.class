@@ -1,9 +1,0 @@
-Compiled from "DoubleField.java"
-public class sun.jvm.hotspot.oops.DoubleField extends sun.jvm.hotspot.oops.Field {
-  public sun.jvm.hotspot.oops.DoubleField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
-  public sun.jvm.hotspot.oops.DoubleField(sun.jvm.hotspot.types.JDoubleField, long);
-  public sun.jvm.hotspot.oops.DoubleField(sun.jvm.hotspot.oops.InstanceKlass, int);
-  public double getValue(sun.jvm.hotspot.oops.Oop);
-  public double getValue(sun.jvm.hotspot.runtime.VMObject);
-  public void setValue(sun.jvm.hotspot.oops.Oop, double) throws sun.jvm.hotspot.oops.MutationException;
-}

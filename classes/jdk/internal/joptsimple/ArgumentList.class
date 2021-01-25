@@ -1,8 +1,0 @@
-Compiled from "ArgumentList.java"
-class jdk.internal.joptsimple.ArgumentList {
-  jdk.internal.joptsimple.ArgumentList(java.lang.String...);
-  boolean hasMore();
-  java.lang.String next();
-  java.lang.String peek();
-  void treatNextAsLongOption();
-}

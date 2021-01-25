@@ -1,8 +1,0 @@
-Compiled from "BytecodeArrayOps.java"
-interface jdk.nashorn.internal.codegen.types.BytecodeArrayOps {
-  public abstract jdk.nashorn.internal.codegen.types.Type aload(jdk.internal.org.objectweb.asm.MethodVisitor);
-  public abstract void astore(jdk.internal.org.objectweb.asm.MethodVisitor);
-  public abstract jdk.nashorn.internal.codegen.types.Type arraylength(jdk.internal.org.objectweb.asm.MethodVisitor);
-  public abstract jdk.nashorn.internal.codegen.types.Type newarray(jdk.internal.org.objectweb.asm.MethodVisitor);
-  public abstract jdk.nashorn.internal.codegen.types.Type newarray(jdk.internal.org.objectweb.asm.MethodVisitor, int);
-}

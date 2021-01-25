@@ -1,5 +1,0 @@
-Compiled from "LinuxThreadContextFactory.java"
-class sun.jvm.hotspot.debugger.linux.LinuxThreadContextFactory {
-  sun.jvm.hotspot.debugger.linux.LinuxThreadContextFactory();
-  static sun.jvm.hotspot.debugger.ThreadContext createThreadContext(sun.jvm.hotspot.debugger.linux.LinuxDebugger);
-}

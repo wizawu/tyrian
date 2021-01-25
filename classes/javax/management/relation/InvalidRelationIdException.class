@@ -1,5 +1,0 @@
-Compiled from "InvalidRelationIdException.java"
-public class javax.management.relation.InvalidRelationIdException extends javax.management.relation.RelationException {
-  public javax.management.relation.InvalidRelationIdException();
-  public javax.management.relation.InvalidRelationIdException(java.lang.String);
-}

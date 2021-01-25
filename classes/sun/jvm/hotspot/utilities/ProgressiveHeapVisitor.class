@@ -1,8 +1,0 @@
-Compiled from "ProgressiveHeapVisitor.java"
-public class sun.jvm.hotspot.utilities.ProgressiveHeapVisitor implements sun.jvm.hotspot.oops.HeapVisitor {
-  public sun.jvm.hotspot.utilities.ProgressiveHeapVisitor(sun.jvm.hotspot.oops.HeapVisitor, sun.jvm.hotspot.utilities.HeapProgressThunk);
-  public void prologue(long);
-  public boolean doObj(sun.jvm.hotspot.oops.Oop);
-  public void epilogue();
-  static {};
-}

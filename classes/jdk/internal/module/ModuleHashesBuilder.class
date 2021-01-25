@@ -1,5 +1,0 @@
-Compiled from "ModuleHashesBuilder.java"
-public class jdk.internal.module.ModuleHashesBuilder {
-  public jdk.internal.module.ModuleHashesBuilder(java.lang.module.Configuration, java.util.Set<java.lang.String>);
-  public java.util.Map<java.lang.String, jdk.internal.module.ModuleHashes> computeHashes(java.util.Set<java.lang.String>);
-}

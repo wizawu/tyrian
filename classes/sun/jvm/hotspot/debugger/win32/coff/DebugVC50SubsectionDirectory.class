@@ -1,7 +1,0 @@
-Compiled from "DebugVC50SubsectionDirectory.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SubsectionDirectory {
-  public abstract short getHeaderLength();
-  public abstract short getEntryLength();
-  public abstract int getNumEntries();
-  public abstract sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection getSubsection(int);
-}

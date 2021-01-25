@@ -1,3 +1,0 @@
-Compiled from "XSTerm.java"
-public interface com.sun.org.apache.xerces.internal.xs.XSTerm extends com.sun.org.apache.xerces.internal.xs.XSObject {
-}

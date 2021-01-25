@@ -1,5 +1,0 @@
-Compiled from "CertificateParsingException.java"
-public class javax.security.cert.CertificateParsingException extends javax.security.cert.CertificateException {
-  public javax.security.cert.CertificateParsingException();
-  public javax.security.cert.CertificateParsingException(java.lang.String);
-}

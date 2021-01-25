@@ -1,7 +1,0 @@
-Compiled from "SSLContextSpi.java"
-public abstract class com.sun.net.ssl.SSLContextSpi {
-  public com.sun.net.ssl.SSLContextSpi();
-  protected abstract void engineInit(com.sun.net.ssl.KeyManager[], com.sun.net.ssl.TrustManager[], java.security.SecureRandom) throws java.security.KeyManagementException;
-  protected abstract javax.net.ssl.SSLSocketFactory engineGetSocketFactory();
-  protected abstract javax.net.ssl.SSLServerSocketFactory engineGetServerSocketFactory();
-}

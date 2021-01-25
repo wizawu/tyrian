@@ -1,3 +1,0 @@
-Compiled from "SSLKeyAgreement.java"
-interface sun.security.ssl.SSLKeyAgreement extends sun.security.ssl.SSLPossessionGenerator,sun.security.ssl.SSLKeyAgreementGenerator,sun.security.ssl.SSLHandshakeBinding {
-}

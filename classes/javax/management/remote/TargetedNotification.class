@@ -1,7 +1,0 @@
-Compiled from "TargetedNotification.java"
-public class javax.management.remote.TargetedNotification implements java.io.Serializable {
-  public javax.management.remote.TargetedNotification(javax.management.Notification, java.lang.Integer);
-  public javax.management.Notification getNotification();
-  public java.lang.Integer getListenerID();
-  public java.lang.String toString();
-}

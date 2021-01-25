@@ -1,5 +1,0 @@
-Compiled from "DOMBase64Transform.java"
-public final class org.jcp.xml.dsig.internal.dom.DOMBase64Transform extends org.jcp.xml.dsig.internal.dom.ApacheTransform {
-  public org.jcp.xml.dsig.internal.dom.DOMBase64Transform();
-  public void init(javax.xml.crypto.dsig.spec.TransformParameterSpec) throws java.security.InvalidAlgorithmParameterException;
-}

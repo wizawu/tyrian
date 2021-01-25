@@ -1,9 +1,0 @@
-Compiled from "SchemaDOMImplementation.java"
-final class com.sun.org.apache.xerces.internal.impl.xs.opti.SchemaDOMImplementation implements org.w3c.dom.DOMImplementation {
-  public static org.w3c.dom.DOMImplementation getDOMImplementation();
-  public org.w3c.dom.Document createDocument(java.lang.String, java.lang.String, org.w3c.dom.DocumentType) throws org.w3c.dom.DOMException;
-  public org.w3c.dom.DocumentType createDocumentType(java.lang.String, java.lang.String, java.lang.String) throws org.w3c.dom.DOMException;
-  public java.lang.Object getFeature(java.lang.String, java.lang.String);
-  public boolean hasFeature(java.lang.String, java.lang.String);
-  static {};
-}

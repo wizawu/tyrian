@@ -1,5 +1,0 @@
-Compiled from "NumberEditor.java"
-public abstract class com.sun.beans.editors.NumberEditor extends java.beans.PropertyEditorSupport {
-  public com.sun.beans.editors.NumberEditor();
-  public java.lang.String getJavaInitializationString();
-}

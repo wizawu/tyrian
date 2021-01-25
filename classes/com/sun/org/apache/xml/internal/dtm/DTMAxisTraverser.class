@@ -1,8 +1,0 @@
-Compiled from "DTMAxisTraverser.java"
-public abstract class com.sun.org.apache.xml.internal.dtm.DTMAxisTraverser {
-  public com.sun.org.apache.xml.internal.dtm.DTMAxisTraverser();
-  public int first(int);
-  public int first(int, int);
-  public abstract int next(int, int);
-  public abstract int next(int, int, int);
-}

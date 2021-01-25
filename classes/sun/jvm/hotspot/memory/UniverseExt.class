@@ -1,5 +1,0 @@
-Compiled from "UniverseExt.java"
-public class sun.jvm.hotspot.memory.UniverseExt {
-  public sun.jvm.hotspot.memory.UniverseExt();
-  public static void initialize(sun.jvm.hotspot.runtime.VirtualConstructor);
-}

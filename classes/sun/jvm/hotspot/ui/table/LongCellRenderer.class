@@ -1,5 +1,0 @@
-Compiled from "LongCellRenderer.java"
-public class sun.jvm.hotspot.ui.table.LongCellRenderer extends javax.swing.table.DefaultTableCellRenderer {
-  public sun.jvm.hotspot.ui.table.LongCellRenderer();
-  public java.awt.Component getTableCellRendererComponent(javax.swing.JTable, java.lang.Object, boolean, boolean, int, int);
-}

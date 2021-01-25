@@ -1,9 +1,0 @@
-Compiled from "SerialDatalink.java"
-public class javax.sql.rowset.serial.SerialDatalink implements java.io.Serializable,java.lang.Cloneable {
-  static final long serialVersionUID;
-  public javax.sql.rowset.serial.SerialDatalink(java.net.URL) throws javax.sql.rowset.serial.SerialException;
-  public java.net.URL getDatalink() throws javax.sql.rowset.serial.SerialException;
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  public java.lang.Object clone();
-}

@@ -1,5 +1,0 @@
-Compiled from "Watchable.java"
-public interface java.nio.file.Watchable {
-  public abstract java.nio.file.WatchKey register(java.nio.file.WatchService, java.nio.file.WatchEvent$Kind<?>[], java.nio.file.WatchEvent$Modifier...) throws java.io.IOException;
-  public abstract java.nio.file.WatchKey register(java.nio.file.WatchService, java.nio.file.WatchEvent$Kind<?>...) throws java.io.IOException;
-}

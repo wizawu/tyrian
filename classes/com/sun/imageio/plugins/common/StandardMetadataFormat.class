@@ -1,5 +1,0 @@
-Compiled from "StandardMetadataFormat.java"
-public class com.sun.imageio.plugins.common.StandardMetadataFormat extends javax.imageio.metadata.IIOMetadataFormatImpl {
-  public com.sun.imageio.plugins.common.StandardMetadataFormat();
-  public boolean canNodeAppear(java.lang.String, javax.imageio.ImageTypeSpecifier);
-}

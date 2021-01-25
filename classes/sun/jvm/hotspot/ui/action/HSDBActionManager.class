@@ -1,6 +1,0 @@
-Compiled from "HSDBActionManager.java"
-public class sun.jvm.hotspot.ui.action.HSDBActionManager extends com.sun.java.swing.action.ActionManager {
-  public sun.jvm.hotspot.ui.action.HSDBActionManager();
-  public static com.sun.java.swing.action.ActionManager getInstance();
-  protected void addActions();
-}

@@ -1,7 +1,0 @@
-Compiled from "XMLX509CRL.java"
-public class com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509CRL extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509DataContent {
-  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509CRL(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-  public com.sun.org.apache.xml.internal.security.keys.content.x509.XMLX509CRL(org.w3c.dom.Document, byte[]);
-  public byte[] getCRLBytes() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-  public java.lang.String getBaseLocalName();
-}

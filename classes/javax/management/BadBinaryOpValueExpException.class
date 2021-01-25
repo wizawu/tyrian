@@ -1,6 +1,0 @@
-Compiled from "BadBinaryOpValueExpException.java"
-public class javax.management.BadBinaryOpValueExpException extends java.lang.Exception {
-  public javax.management.BadBinaryOpValueExpException(javax.management.ValueExp);
-  public javax.management.ValueExp getExp();
-  public java.lang.String toString();
-}

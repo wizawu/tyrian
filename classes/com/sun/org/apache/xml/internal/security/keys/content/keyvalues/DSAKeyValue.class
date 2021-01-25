@@ -1,8 +1,0 @@
-Compiled from "DSAKeyValue.java"
-public class com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue extends com.sun.org.apache.xml.internal.security.utils.SignatureElementProxy implements com.sun.org.apache.xml.internal.security.keys.content.keyvalues.KeyValueContent {
-  public com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue(org.w3c.dom.Element, java.lang.String) throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-  public com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue(org.w3c.dom.Document, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger, java.math.BigInteger);
-  public com.sun.org.apache.xml.internal.security.keys.content.keyvalues.DSAKeyValue(org.w3c.dom.Document, java.security.Key) throws java.lang.IllegalArgumentException;
-  public java.security.PublicKey getPublicKey() throws com.sun.org.apache.xml.internal.security.exceptions.XMLSecurityException;
-  public java.lang.String getBaseLocalName();
-}

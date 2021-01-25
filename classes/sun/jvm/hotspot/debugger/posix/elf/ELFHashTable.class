@@ -1,4 +1,0 @@
-Compiled from "ELFHashTable.java"
-public interface sun.jvm.hotspot.debugger.posix.elf.ELFHashTable {
-  public abstract sun.jvm.hotspot.debugger.posix.elf.ELFSymbol getSymbol(java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "WindowsKeybindings.java"
-public class sun.swing.plaf.WindowsKeybindings {
-  public sun.swing.plaf.WindowsKeybindings();
-  public static void installKeybindings(javax.swing.UIDefaults);
-}

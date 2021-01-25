@@ -1,6 +1,0 @@
-Compiled from "AttrCompare.java"
-public class com.sun.org.apache.xml.internal.security.c14n.helper.AttrCompare implements java.util.Comparator<org.w3c.dom.Attr>, java.io.Serializable {
-  public com.sun.org.apache.xml.internal.security.c14n.helper.AttrCompare();
-  public int compare(org.w3c.dom.Attr, org.w3c.dom.Attr);
-  public int compare(java.lang.Object, java.lang.Object);
-}

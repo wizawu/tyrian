@@ -1,7 +1,0 @@
-Compiled from "HTMLLIElement.java"
-public interface org.w3c.dom.html.HTMLLIElement extends org.w3c.dom.html.HTMLElement {
-  public abstract java.lang.String getType();
-  public abstract void setType(java.lang.String);
-  public abstract int getValue();
-  public abstract void setValue(int);
-}

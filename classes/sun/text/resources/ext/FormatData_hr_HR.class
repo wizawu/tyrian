@@ -1,5 +1,0 @@
-Compiled from "FormatData_hr_HR.java"
-public class sun.text.resources.ext.FormatData_hr_HR extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_hr_HR();
-  protected final java.lang.Object[][] getContents();
-}

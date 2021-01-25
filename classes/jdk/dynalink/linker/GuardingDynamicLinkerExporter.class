@@ -1,6 +1,0 @@
-Compiled from "GuardingDynamicLinkerExporter.java"
-public abstract class jdk.dynalink.linker.GuardingDynamicLinkerExporter implements java.util.function.Supplier<java.util.List<jdk.dynalink.linker.GuardingDynamicLinker>> {
-  public static final java.lang.String AUTOLOAD_PERMISSION_NAME;
-  protected jdk.dynalink.linker.GuardingDynamicLinkerExporter();
-  static {};
-}

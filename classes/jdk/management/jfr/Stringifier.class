@@ -1,6 +1,0 @@
-Compiled from "Stringifier.java"
-final class jdk.management.jfr.Stringifier {
-  jdk.management.jfr.Stringifier();
-  public void add(java.lang.String, java.lang.Object);
-  public java.lang.String toString();
-}

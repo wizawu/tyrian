@@ -1,4 +1,0 @@
-Compiled from "ObjIntConsumer.java"
-public interface java.util.function.ObjIntConsumer<T> {
-  public abstract void accept(T, int);
-}

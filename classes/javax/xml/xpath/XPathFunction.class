@@ -1,4 +1,0 @@
-Compiled from "XPathFunction.java"
-public interface javax.xml.xpath.XPathFunction {
-  public abstract java.lang.Object evaluate(java.util.List<?>) throws javax.xml.xpath.XPathFunctionException;
-}

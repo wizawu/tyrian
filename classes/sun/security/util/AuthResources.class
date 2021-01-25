@@ -1,6 +1,0 @@
-Compiled from "AuthResources.java"
-public class sun.security.util.AuthResources extends java.util.ListResourceBundle {
-  public sun.security.util.AuthResources();
-  public java.lang.Object[][] getContents();
-  static {};
-}

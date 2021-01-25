@@ -1,3 +1,0 @@
-Compiled from "DocumentFragment.java"
-public interface org.w3c.dom.DocumentFragment extends org.w3c.dom.Node {
-}

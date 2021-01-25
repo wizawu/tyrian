@@ -1,5 +1,0 @@
-Compiled from "FormatData_in_ID.java"
-public class sun.text.resources.ext.FormatData_in_ID extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_in_ID();
-  protected final java.lang.Object[][] getContents();
-}

@@ -1,8 +1,0 @@
-Compiled from "LivenessPathList.java"
-public class sun.jvm.hotspot.utilities.LivenessPathList {
-  public sun.jvm.hotspot.utilities.LivenessPathList();
-  public int size();
-  public sun.jvm.hotspot.utilities.LivenessPath get(int);
-  void add(sun.jvm.hotspot.utilities.LivenessPath);
-  void remove(sun.jvm.hotspot.utilities.LivenessPath);
-}

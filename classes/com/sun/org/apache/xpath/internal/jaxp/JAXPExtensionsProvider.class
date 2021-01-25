@@ -1,9 +1,0 @@
-Compiled from "JAXPExtensionsProvider.java"
-public class com.sun.org.apache.xpath.internal.jaxp.JAXPExtensionsProvider implements com.sun.org.apache.xpath.internal.ExtensionsProvider {
-  public com.sun.org.apache.xpath.internal.jaxp.JAXPExtensionsProvider(javax.xml.xpath.XPathFunctionResolver);
-  public com.sun.org.apache.xpath.internal.jaxp.JAXPExtensionsProvider(javax.xml.xpath.XPathFunctionResolver, boolean, jdk.xml.internal.JdkXmlFeatures);
-  public boolean functionAvailable(java.lang.String, java.lang.String) throws javax.xml.transform.TransformerException;
-  public boolean elementAvailable(java.lang.String, java.lang.String) throws javax.xml.transform.TransformerException;
-  public java.lang.Object extFunction(java.lang.String, java.lang.String, java.util.List<com.sun.org.apache.xpath.internal.objects.XObject>, java.lang.Object) throws javax.xml.transform.TransformerException;
-  public java.lang.Object extFunction(com.sun.org.apache.xpath.internal.functions.FuncExtFunction, java.util.List<com.sun.org.apache.xpath.internal.objects.XObject>) throws javax.xml.transform.TransformerException;
-}

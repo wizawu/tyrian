@@ -1,6 +1,0 @@
-Compiled from "RemoteX86ThreadFactory.java"
-public class sun.jvm.hotspot.debugger.remote.x86.RemoteX86ThreadFactory implements sun.jvm.hotspot.debugger.remote.RemoteThreadFactory {
-  public sun.jvm.hotspot.debugger.remote.x86.RemoteX86ThreadFactory(sun.jvm.hotspot.debugger.remote.RemoteDebuggerClient);
-  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.ThreadProxy createThreadWrapper(long);
-}

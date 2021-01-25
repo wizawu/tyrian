@@ -1,6 +1,0 @@
-Compiled from "FlightRecorderMXBeanProvider.java"
-public final class jdk.management.jfr.internal.FlightRecorderMXBeanProvider extends sun.management.spi.PlatformMBeanProvider {
-  public jdk.management.jfr.internal.FlightRecorderMXBeanProvider();
-  public static void setFlightRecorderMXBeanFactory(java.util.concurrent.Callable<jdk.management.jfr.FlightRecorderMXBean>);
-  public java.util.List<sun.management.spi.PlatformMBeanProvider$PlatformComponent<?>> getPlatformComponentList();
-}

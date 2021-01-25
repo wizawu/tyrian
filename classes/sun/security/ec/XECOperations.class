@@ -1,9 +1,0 @@
-Compiled from "XECOperations.java"
-public class sun.security.ec.XECOperations {
-  public sun.security.ec.XECOperations(sun.security.ec.XECParameters);
-  public sun.security.ec.XECParameters getParameters();
-  public byte[] generatePrivate(java.security.SecureRandom);
-  public java.math.BigInteger computePublic(byte[]);
-  public byte[] encodedPointMultiply(byte[], java.math.BigInteger);
-  public byte[] encodedPointMultiply(byte[], byte[]);
-}

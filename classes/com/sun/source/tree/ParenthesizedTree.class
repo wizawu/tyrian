@@ -1,4 +1,0 @@
-Compiled from "ParenthesizedTree.java"
-public interface com.sun.source.tree.ParenthesizedTree extends com.sun.source.tree.ExpressionTree {
-  public abstract com.sun.source.tree.ExpressionTree getExpression();
-}

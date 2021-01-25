@@ -1,5 +1,0 @@
-Compiled from "SerialHeap.java"
-public class sun.jvm.hotspot.gc.serial.SerialHeap extends sun.jvm.hotspot.gc.shared.GenCollectedHeap {
-  public sun.jvm.hotspot.gc.serial.SerialHeap(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.gc.shared.CollectedHeapName kind();
-}

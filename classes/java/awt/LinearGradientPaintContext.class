@@ -1,5 +1,0 @@
-Compiled from "LinearGradientPaintContext.java"
-final class java.awt.LinearGradientPaintContext extends java.awt.MultipleGradientPaintContext {
-  java.awt.LinearGradientPaintContext(java.awt.LinearGradientPaint, java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints, java.awt.geom.Point2D, java.awt.geom.Point2D, float[], java.awt.Color[], java.awt.MultipleGradientPaint$CycleMethod, java.awt.MultipleGradientPaint$ColorSpaceType);
-  protected void fillRaster(int[], int, int, int, int, int, int);
-}

@@ -1,9 +1,0 @@
-Compiled from "LockInfo.java"
-public class java.lang.management.LockInfo {
-  public java.lang.management.LockInfo(java.lang.String, int);
-  java.lang.management.LockInfo(java.lang.Object);
-  public java.lang.String getClassName();
-  public int getIdentityHashCode();
-  public static java.lang.management.LockInfo from(javax.management.openmbean.CompositeData);
-  public java.lang.String toString();
-}

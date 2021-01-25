@@ -1,8 +1,0 @@
-Compiled from "TypeInfoProvider.java"
-public abstract class javax.xml.validation.TypeInfoProvider {
-  protected javax.xml.validation.TypeInfoProvider();
-  public abstract org.w3c.dom.TypeInfo getElementTypeInfo();
-  public abstract org.w3c.dom.TypeInfo getAttributeTypeInfo(int);
-  public abstract boolean isIdAttribute(int);
-  public abstract boolean isSpecified(int);
-}

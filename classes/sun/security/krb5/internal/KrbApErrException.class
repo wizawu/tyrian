@@ -1,5 +1,0 @@
-Compiled from "KrbApErrException.java"
-public class sun.security.krb5.internal.KrbApErrException extends sun.security.krb5.KrbException {
-  public sun.security.krb5.internal.KrbApErrException(int);
-  public sun.security.krb5.internal.KrbApErrException(int, java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "TextCallbackHandler.java"
-public class com.sun.security.auth.callback.TextCallbackHandler implements javax.security.auth.callback.CallbackHandler {
-  public com.sun.security.auth.callback.TextCallbackHandler();
-  public void handle(javax.security.auth.callback.Callback[]) throws java.io.IOException, javax.security.auth.callback.UnsupportedCallbackException;
-}

@@ -1,4 +1,0 @@
-Compiled from "PreferencesHandler.java"
-public interface java.awt.desktop.PreferencesHandler {
-  public abstract void handlePreferences(java.awt.desktop.PreferencesEvent);
-}

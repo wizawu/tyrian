@@ -1,5 +1,0 @@
-Compiled from "SimpleTypeVisitor9.java"
-public class javax.lang.model.util.SimpleTypeVisitor9<R, P> extends javax.lang.model.util.SimpleTypeVisitor8<R, P> {
-  protected javax.lang.model.util.SimpleTypeVisitor9();
-  protected javax.lang.model.util.SimpleTypeVisitor9(R);
-}

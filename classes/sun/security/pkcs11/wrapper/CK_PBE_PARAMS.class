@@ -1,9 +1,0 @@
-Compiled from "CK_PBE_PARAMS.java"
-public class sun.security.pkcs11.wrapper.CK_PBE_PARAMS {
-  public char[] pInitVector;
-  public char[] pPassword;
-  public char[] pSalt;
-  public long ulIteration;
-  public sun.security.pkcs11.wrapper.CK_PBE_PARAMS();
-  public java.lang.String toString();
-}

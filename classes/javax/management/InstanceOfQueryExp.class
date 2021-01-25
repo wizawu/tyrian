@@ -1,7 +1,0 @@
-Compiled from "InstanceOfQueryExp.java"
-class javax.management.InstanceOfQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-  public javax.management.InstanceOfQueryExp(javax.management.StringValueExp);
-  public javax.management.StringValueExp getClassNameValue();
-  public boolean apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
-  public java.lang.String toString();
-}

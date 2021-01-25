@@ -1,8 +1,0 @@
-Compiled from "NamedCurve.java"
-public final class sun.security.util.NamedCurve extends java.security.spec.ECParameterSpec {
-  sun.security.util.NamedCurve(java.lang.String, java.lang.String, java.security.spec.EllipticCurve, java.security.spec.ECPoint, java.math.BigInteger, int);
-  public java.lang.String getName();
-  public byte[] getEncoded();
-  public java.lang.String getObjectId();
-  public java.lang.String toString();
-}

@@ -1,9 +1,0 @@
-Compiled from "DocFilesHandlerImpl.java"
-public class jdk.javadoc.internal.doclets.formats.html.DocFilesHandlerImpl implements jdk.javadoc.internal.doclets.toolkit.DocFilesHandler {
-  public final javax.lang.model.element.Element element;
-  public final javax.tools.JavaFileManager$Location location;
-  public final jdk.javadoc.internal.doclets.toolkit.util.DocPath source;
-  public final jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration configuration;
-  public jdk.javadoc.internal.doclets.formats.html.DocFilesHandlerImpl(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, javax.lang.model.element.Element);
-  public void copyDocFiles() throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
-}

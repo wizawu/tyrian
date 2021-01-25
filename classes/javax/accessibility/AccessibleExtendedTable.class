@@ -1,6 +1,0 @@
-Compiled from "AccessibleExtendedTable.java"
-public interface javax.accessibility.AccessibleExtendedTable extends javax.accessibility.AccessibleTable {
-  public abstract int getAccessibleRow(int);
-  public abstract int getAccessibleColumn(int);
-  public abstract int getAccessibleIndex(int, int);
-}

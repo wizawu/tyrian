@@ -1,6 +1,0 @@
-Compiled from "BasicJCharField.java"
-public class sun.jvm.hotspot.types.basic.BasicJCharField extends sun.jvm.hotspot.types.basic.BasicField implements sun.jvm.hotspot.types.JCharField {
-  public sun.jvm.hotspot.types.basic.BasicJCharField(sun.jvm.hotspot.types.basic.BasicTypeDataBase, sun.jvm.hotspot.types.Type, java.lang.String, sun.jvm.hotspot.types.Type, boolean, long, sun.jvm.hotspot.debugger.Address);
-  public char getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-  public char getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-}

@@ -1,9 +1,0 @@
-Compiled from "NashornPrimitiveLinker.java"
-final class jdk.nashorn.internal.runtime.linker.NashornPrimitiveLinker implements jdk.dynalink.linker.TypeBasedGuardingDynamicLinker,jdk.dynalink.linker.GuardingTypeConverterFactory,jdk.dynalink.linker.ConversionComparator {
-  jdk.nashorn.internal.runtime.linker.NashornPrimitiveLinker();
-  public boolean canLinkType(java.lang.Class<?>);
-  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
-  public jdk.dynalink.linker.GuardedInvocation convertToType(java.lang.Class<?>, java.lang.Class<?>, java.util.function.Supplier<java.lang.invoke.MethodHandles$Lookup>);
-  public jdk.dynalink.linker.ConversionComparator$Comparison compareConversion(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>);
-  static {};
-}

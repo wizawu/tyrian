@@ -1,6 +1,0 @@
-Compiled from "LinearAllocBlock.java"
-public class sun.jvm.hotspot.gc.cms.LinearAllocBlock extends sun.jvm.hotspot.runtime.VMObject {
-  public long word_size();
-  public sun.jvm.hotspot.gc.cms.LinearAllocBlock(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

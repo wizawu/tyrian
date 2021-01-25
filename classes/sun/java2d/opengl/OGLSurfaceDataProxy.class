@@ -1,9 +1,0 @@
-Compiled from "OGLSurfaceDataProxy.java"
-public class sun.java2d.opengl.OGLSurfaceDataProxy extends sun.java2d.SurfaceDataProxy {
-  sun.java2d.opengl.OGLGraphicsConfig oglgc;
-  int transparency;
-  public static sun.java2d.SurfaceDataProxy createProxy(sun.java2d.SurfaceData, sun.java2d.opengl.OGLGraphicsConfig);
-  public sun.java2d.opengl.OGLSurfaceDataProxy(sun.java2d.opengl.OGLGraphicsConfig, int);
-  public sun.java2d.SurfaceData validateSurfaceData(sun.java2d.SurfaceData, sun.java2d.SurfaceData, int, int);
-  public boolean isSupportedOperation(sun.java2d.SurfaceData, int, sun.java2d.loops.CompositeType, java.awt.Color);
-}

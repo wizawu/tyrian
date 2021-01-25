@@ -1,8 +1,0 @@
-Compiled from "ValueImpl.java"
-abstract class com.sun.tools.jdi.ValueImpl extends com.sun.tools.jdi.MirrorImpl implements com.sun.jdi.Value {
-  com.sun.tools.jdi.ValueImpl(com.sun.jdi.VirtualMachine);
-  static com.sun.tools.jdi.ValueImpl prepareForAssignment(com.sun.jdi.Value, com.sun.tools.jdi.ValueContainer) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
-  static byte typeValueKey(com.sun.jdi.Value);
-  abstract com.sun.tools.jdi.ValueImpl prepareForAssignmentTo(com.sun.tools.jdi.ValueContainer) throws com.sun.jdi.InvalidTypeException, com.sun.jdi.ClassNotLoadedException;
-  abstract byte typeValueKey();
-}

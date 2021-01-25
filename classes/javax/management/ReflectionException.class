@@ -1,7 +1,0 @@
-Compiled from "ReflectionException.java"
-public class javax.management.ReflectionException extends javax.management.JMException {
-  public javax.management.ReflectionException(java.lang.Exception);
-  public javax.management.ReflectionException(java.lang.Exception, java.lang.String);
-  public java.lang.Exception getTargetException();
-  public java.lang.Throwable getCause();
-}

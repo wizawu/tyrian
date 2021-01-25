@@ -1,5 +1,0 @@
-Compiled from "AttributeException.java"
-public interface javax.print.AttributeException {
-  public abstract java.lang.Class<?>[] getUnsupportedAttributes();
-  public abstract javax.print.attribute.Attribute[] getUnsupportedValues();
-}

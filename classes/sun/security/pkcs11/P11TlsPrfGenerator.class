@@ -1,9 +1,0 @@
-Compiled from "P11TlsPrfGenerator.java"
-final class sun.security.pkcs11.P11TlsPrfGenerator extends javax.crypto.KeyGeneratorSpi {
-  sun.security.pkcs11.P11TlsPrfGenerator(sun.security.pkcs11.Token, java.lang.String, long) throws sun.security.pkcs11.wrapper.PKCS11Exception;
-  protected void engineInit(java.security.SecureRandom);
-  protected void engineInit(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
-  protected void engineInit(int, java.security.SecureRandom);
-  protected javax.crypto.SecretKey engineGenerateKey();
-  static {};
-}

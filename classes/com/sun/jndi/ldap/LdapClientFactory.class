@@ -1,6 +1,0 @@
-Compiled from "LdapClientFactory.java"
-final class com.sun.jndi.ldap.LdapClientFactory implements com.sun.jndi.ldap.pool.PooledConnectionFactory {
-  com.sun.jndi.ldap.LdapClientFactory(java.lang.String, int, java.lang.String, int, int, java.io.OutputStream);
-  public com.sun.jndi.ldap.pool.PooledConnection createPooledConnection(com.sun.jndi.ldap.pool.PoolCallback) throws javax.naming.NamingException;
-  public java.lang.String toString();
-}

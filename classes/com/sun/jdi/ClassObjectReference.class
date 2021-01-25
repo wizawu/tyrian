@@ -1,4 +1,0 @@
-Compiled from "ClassObjectReference.java"
-public interface com.sun.jdi.ClassObjectReference extends com.sun.jdi.ObjectReference {
-  public abstract com.sun.jdi.ReferenceType reflectedType();
-}

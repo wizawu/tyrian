@@ -1,3 +1,0 @@
-Compiled from "CSSUnknownRule.java"
-public interface org.w3c.dom.css.CSSUnknownRule extends org.w3c.dom.css.CSSRule {
-}

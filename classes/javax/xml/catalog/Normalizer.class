@@ -1,8 +1,0 @@
-Compiled from "Normalizer.java"
-class javax.xml.catalog.Normalizer {
-  javax.xml.catalog.Normalizer();
-  static java.lang.String normalizePublicId(java.lang.String);
-  static java.lang.String encodeURN(java.lang.String);
-  static java.lang.String decodeURN(java.lang.String);
-  static java.lang.String normalizeURI(java.lang.String);
-}

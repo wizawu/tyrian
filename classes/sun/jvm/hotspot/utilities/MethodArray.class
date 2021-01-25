@@ -1,8 +1,0 @@
-Compiled from "MethodArray.java"
-public class sun.jvm.hotspot.utilities.MethodArray extends sun.jvm.hotspot.utilities.GenericArray {
-  protected static sun.jvm.hotspot.types.Type elemType;
-  public sun.jvm.hotspot.utilities.MethodArray(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.oops.Method at(int);
-  public sun.jvm.hotspot.types.Type getElemType();
-  static {};
-}

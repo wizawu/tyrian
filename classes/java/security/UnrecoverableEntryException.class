@@ -1,5 +1,0 @@
-Compiled from "UnrecoverableEntryException.java"
-public class java.security.UnrecoverableEntryException extends java.security.GeneralSecurityException {
-  public java.security.UnrecoverableEntryException();
-  public java.security.UnrecoverableEntryException(java.lang.String);
-}

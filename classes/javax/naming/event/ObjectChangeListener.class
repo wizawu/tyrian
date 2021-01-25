@@ -1,4 +1,0 @@
-Compiled from "ObjectChangeListener.java"
-public interface javax.naming.event.ObjectChangeListener extends javax.naming.event.NamingListener {
-  public abstract void objectChanged(javax.naming.event.NamingEvent);
-}

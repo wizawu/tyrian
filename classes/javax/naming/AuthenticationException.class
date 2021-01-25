@@ -1,5 +1,0 @@
-Compiled from "AuthenticationException.java"
-public class javax.naming.AuthenticationException extends javax.naming.NamingSecurityException {
-  public javax.naming.AuthenticationException(java.lang.String);
-  public javax.naming.AuthenticationException();
-}

@@ -1,5 +1,0 @@
-Compiled from "UnknownHostException.java"
-public class java.net.UnknownHostException extends java.io.IOException {
-  public java.net.UnknownHostException(java.lang.String);
-  public java.net.UnknownHostException();
-}

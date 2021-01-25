@@ -1,6 +1,0 @@
-Compiled from "MetalTextFieldUI.java"
-public class javax.swing.plaf.metal.MetalTextFieldUI extends javax.swing.plaf.basic.BasicTextFieldUI {
-  public javax.swing.plaf.metal.MetalTextFieldUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  public void propertyChange(java.beans.PropertyChangeEvent);
-}

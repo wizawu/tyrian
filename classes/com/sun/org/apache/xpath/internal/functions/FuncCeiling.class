@@ -1,6 +1,0 @@
-Compiled from "FuncCeiling.java"
-public class com.sun.org.apache.xpath.internal.functions.FuncCeiling extends com.sun.org.apache.xpath.internal.functions.FunctionOneArg {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.functions.FuncCeiling();
-  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-}

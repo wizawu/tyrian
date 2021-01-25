@@ -1,4 +1,0 @@
-Compiled from "LineNumberVisitor.java"
-public interface sun.jvm.hotspot.debugger.cdbg.LineNumberVisitor {
-  public abstract void doLineNumber(sun.jvm.hotspot.debugger.cdbg.LineNumberInfo);
-}

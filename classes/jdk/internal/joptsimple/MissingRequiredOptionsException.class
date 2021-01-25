@@ -1,5 +1,0 @@
-Compiled from "MissingRequiredOptionsException.java"
-class jdk.internal.joptsimple.MissingRequiredOptionsException extends jdk.internal.joptsimple.OptionException {
-  protected jdk.internal.joptsimple.MissingRequiredOptionsException(java.util.List<? extends jdk.internal.joptsimple.OptionSpec<?>>);
-  java.lang.Object[] messageArguments();
-}

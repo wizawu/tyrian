@@ -1,5 +1,0 @@
-Compiled from "ClassScope.java"
-public class sun.reflect.generics.scope.ClassScope extends sun.reflect.generics.scope.AbstractScope<java.lang.Class<?>> implements sun.reflect.generics.scope.Scope {
-  protected sun.reflect.generics.scope.Scope computeEnclosingScope();
-  public static sun.reflect.generics.scope.ClassScope make(java.lang.Class<?>);
-}

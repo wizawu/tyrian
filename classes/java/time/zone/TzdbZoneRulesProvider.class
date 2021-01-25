@@ -1,8 +1,0 @@
-Compiled from "TzdbZoneRulesProvider.java"
-final class java.time.zone.TzdbZoneRulesProvider extends java.time.zone.ZoneRulesProvider {
-  public java.time.zone.TzdbZoneRulesProvider();
-  protected java.util.Set<java.lang.String> provideZoneIds();
-  protected java.time.zone.ZoneRules provideRules(java.lang.String, boolean);
-  protected java.util.NavigableMap<java.lang.String, java.time.zone.ZoneRules> provideVersions(java.lang.String);
-  public java.lang.String toString();
-}

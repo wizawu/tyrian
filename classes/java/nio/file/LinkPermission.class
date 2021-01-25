@@ -1,6 +1,0 @@
-Compiled from "LinkPermission.java"
-public final class java.nio.file.LinkPermission extends java.security.BasicPermission {
-  static final long serialVersionUID;
-  public java.nio.file.LinkPermission(java.lang.String);
-  public java.nio.file.LinkPermission(java.lang.String, java.lang.String);
-}

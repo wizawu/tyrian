@@ -1,4 +1,0 @@
-Compiled from "Executor.java"
-public interface java.util.concurrent.Executor {
-  public abstract void execute(java.lang.Runnable);
-}

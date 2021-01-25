@@ -1,8 +1,0 @@
-Compiled from "NumberFormatException.java"
-public class java.lang.NumberFormatException extends java.lang.IllegalArgumentException {
-  static final long serialVersionUID;
-  public java.lang.NumberFormatException();
-  public java.lang.NumberFormatException(java.lang.String);
-  static java.lang.NumberFormatException forInputString(java.lang.String);
-  static java.lang.NumberFormatException forCharSequence(java.lang.CharSequence, int, int, int);
-}

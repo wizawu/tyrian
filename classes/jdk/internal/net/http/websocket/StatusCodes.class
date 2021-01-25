@@ -1,9 +1,0 @@
-Compiled from "StatusCodes.java"
-final class jdk.internal.net.http.websocket.StatusCodes {
-  static final int PROTOCOL_ERROR;
-  static final int NO_STATUS_CODE;
-  static final int CLOSED_ABNORMALLY;
-  static final int NOT_CONSISTENT;
-  static boolean isLegalToSendFromClient(int);
-  static boolean isLegalToReceiveFromServer(int);
-}

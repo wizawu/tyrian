@@ -1,7 +1,0 @@
-Compiled from "XMLDocumentParser.java"
-public class com.sun.org.apache.xerces.internal.parsers.XMLDocumentParser extends com.sun.org.apache.xerces.internal.parsers.AbstractXMLDocumentParser {
-  public com.sun.org.apache.xerces.internal.parsers.XMLDocumentParser();
-  public com.sun.org.apache.xerces.internal.parsers.XMLDocumentParser(com.sun.org.apache.xerces.internal.xni.parser.XMLParserConfiguration);
-  public com.sun.org.apache.xerces.internal.parsers.XMLDocumentParser(com.sun.org.apache.xerces.internal.util.SymbolTable);
-  public com.sun.org.apache.xerces.internal.parsers.XMLDocumentParser(com.sun.org.apache.xerces.internal.util.SymbolTable, com.sun.org.apache.xerces.internal.xni.grammars.XMLGrammarPool);
-}

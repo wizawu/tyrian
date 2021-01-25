@@ -1,6 +1,0 @@
-Compiled from "LinuxSPARCThreadContext.java"
-public class sun.jvm.hotspot.debugger.linux.sparc.LinuxSPARCThreadContext extends sun.jvm.hotspot.debugger.sparc.SPARCThreadContext {
-  public sun.jvm.hotspot.debugger.linux.sparc.LinuxSPARCThreadContext(sun.jvm.hotspot.debugger.linux.LinuxDebugger);
-  public void setRegisterAsAddress(int, sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.Address getRegisterAsAddress(int);
-}

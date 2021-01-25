@@ -1,9 +1,0 @@
-Compiled from "InQueryExp.java"
-class javax.management.InQueryExp extends javax.management.QueryEval implements javax.management.QueryExp {
-  public javax.management.InQueryExp();
-  public javax.management.InQueryExp(javax.management.ValueExp, javax.management.ValueExp[]);
-  public javax.management.ValueExp getCheckedValue();
-  public javax.management.ValueExp[] getExplicitValues();
-  public boolean apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
-  public java.lang.String toString();
-}

@@ -1,4 +1,0 @@
-Compiled from "CardGeneration.java"
-public abstract class sun.jvm.hotspot.gc.shared.CardGeneration extends sun.jvm.hotspot.gc.shared.Generation {
-  public sun.jvm.hotspot.gc.shared.CardGeneration(sun.jvm.hotspot.debugger.Address);
-}

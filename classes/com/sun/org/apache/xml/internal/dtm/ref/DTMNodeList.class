@@ -1,7 +1,0 @@
-Compiled from "DTMNodeList.java"
-public class com.sun.org.apache.xml.internal.dtm.ref.DTMNodeList extends com.sun.org.apache.xml.internal.dtm.ref.DTMNodeListBase {
-  public com.sun.org.apache.xml.internal.dtm.ref.DTMNodeList(com.sun.org.apache.xml.internal.dtm.DTMIterator);
-  public com.sun.org.apache.xml.internal.dtm.DTMIterator getDTMIterator();
-  public org.w3c.dom.Node item(int);
-  public int getLength();
-}

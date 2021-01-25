@@ -1,9 +1,0 @@
-Compiled from "JMXConnectionNotification.java"
-public class javax.management.remote.JMXConnectionNotification extends javax.management.Notification {
-  public static final java.lang.String OPENED;
-  public static final java.lang.String CLOSED;
-  public static final java.lang.String FAILED;
-  public static final java.lang.String NOTIFS_LOST;
-  public javax.management.remote.JMXConnectionNotification(java.lang.String, java.lang.Object, java.lang.String, long, java.lang.String, java.lang.Object);
-  public java.lang.String getConnectionId();
-}

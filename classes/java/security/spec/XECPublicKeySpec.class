@@ -1,6 +1,0 @@
-Compiled from "XECPublicKeySpec.java"
-public class java.security.spec.XECPublicKeySpec implements java.security.spec.KeySpec {
-  public java.security.spec.XECPublicKeySpec(java.security.spec.AlgorithmParameterSpec, java.math.BigInteger);
-  public java.security.spec.AlgorithmParameterSpec getParams();
-  public java.math.BigInteger getU();
-}

@@ -1,9 +1,0 @@
-Compiled from "ContinuousCompletionProvider.java"
-class jdk.internal.jshell.tool.ContinuousCompletionProvider implements jdk.internal.jshell.tool.JShellTool$CompletionProvider {
-  static final java.util.function.BiPredicate<java.lang.String, java.lang.String> STARTSWITH_MATCHER;
-  static final java.util.function.BiPredicate<java.lang.String, java.lang.String> PERFECT_MATCHER;
-  jdk.internal.jshell.tool.ContinuousCompletionProvider(java.util.Map<java.lang.String, jdk.internal.jshell.tool.JShellTool$CompletionProvider>, java.util.function.BiPredicate<java.lang.String, java.lang.String>);
-  jdk.internal.jshell.tool.ContinuousCompletionProvider(java.util.function.Supplier<java.util.Map<java.lang.String, jdk.internal.jshell.tool.JShellTool$CompletionProvider>>, java.util.function.BiPredicate<java.lang.String, java.lang.String>);
-  public java.util.List<jdk.jshell.SourceCodeAnalysis$Suggestion> completionSuggestions(java.lang.String, int, int[]);
-  static {};
-}

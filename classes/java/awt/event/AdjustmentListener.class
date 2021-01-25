@@ -1,4 +1,0 @@
-Compiled from "AdjustmentListener.java"
-public interface java.awt.event.AdjustmentListener extends java.util.EventListener {
-  public abstract void adjustmentValueChanged(java.awt.event.AdjustmentEvent);
-}

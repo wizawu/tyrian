@@ -1,7 +1,0 @@
-Compiled from "TransletException.java"
-public final class com.sun.org.apache.xalan.internal.xsltc.TransletException extends org.xml.sax.SAXException {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xalan.internal.xsltc.TransletException();
-  public com.sun.org.apache.xalan.internal.xsltc.TransletException(java.lang.Exception);
-  public com.sun.org.apache.xalan.internal.xsltc.TransletException(java.lang.String);
-}

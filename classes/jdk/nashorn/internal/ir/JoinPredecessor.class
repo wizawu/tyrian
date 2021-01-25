@@ -1,5 +1,0 @@
-Compiled from "JoinPredecessor.java"
-public interface jdk.nashorn.internal.ir.JoinPredecessor {
-  public abstract jdk.nashorn.internal.ir.JoinPredecessor setLocalVariableConversion(jdk.nashorn.internal.ir.LexicalContext, jdk.nashorn.internal.ir.LocalVariableConversion);
-  public abstract jdk.nashorn.internal.ir.LocalVariableConversion getLocalVariableConversion();
-}

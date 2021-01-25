@@ -1,4 +1,0 @@
-Compiled from "Notification.java"
-public interface com.sun.nio.sctp.Notification {
-  public abstract com.sun.nio.sctp.Association association();
-}

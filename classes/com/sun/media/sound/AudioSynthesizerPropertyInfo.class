@@ -1,9 +1,0 @@
-Compiled from "AudioSynthesizerPropertyInfo.java"
-public final class com.sun.media.sound.AudioSynthesizerPropertyInfo {
-  public java.lang.String name;
-  public java.lang.String description;
-  public java.lang.Object value;
-  public java.lang.Class<?> valueClass;
-  public java.lang.Object[] choices;
-  public com.sun.media.sound.AudioSynthesizerPropertyInfo(java.lang.String, java.lang.Object);
-}

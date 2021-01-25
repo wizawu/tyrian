@@ -1,4 +1,0 @@
-Compiled from "NotificationHandler.java"
-public interface com.sun.nio.sctp.NotificationHandler<T> {
-  public abstract com.sun.nio.sctp.HandlerResult handleNotification(com.sun.nio.sctp.Notification, T);
-}

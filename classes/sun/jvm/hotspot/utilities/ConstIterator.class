@@ -1,7 +1,0 @@
-Compiled from "ConstIterator.java"
-public class sun.jvm.hotspot.utilities.ConstIterator implements java.util.Iterator {
-  public sun.jvm.hotspot.utilities.ConstIterator(java.util.Iterator);
-  public boolean hasNext();
-  public java.lang.Object next();
-  public void remove();
-}

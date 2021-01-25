@@ -1,8 +1,0 @@
-Compiled from "FileMapInfo.java"
-public class sun.jvm.hotspot.memory.FileMapInfo {
-  public sun.jvm.hotspot.memory.FileMapInfo();
-  public sun.jvm.hotspot.memory.FileMapInfo$FileMapHeader getHeader();
-  public boolean inCopiedVtableSpace(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.types.Type getTypeForVptrAddress(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

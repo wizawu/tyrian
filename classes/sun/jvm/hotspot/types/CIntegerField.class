@@ -1,6 +1,0 @@
-Compiled from "CIntegerField.java"
-public interface sun.jvm.hotspot.types.CIntegerField extends sun.jvm.hotspot.types.Field {
-  public abstract boolean isUnsigned();
-  public abstract long getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-  public abstract long getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-}

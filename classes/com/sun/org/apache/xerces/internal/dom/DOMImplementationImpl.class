@@ -1,9 +1,0 @@
-Compiled from "DOMImplementationImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.DOMImplementationImpl extends com.sun.org.apache.xerces.internal.dom.CoreDOMImplementationImpl implements org.w3c.dom.DOMImplementation {
-  static com.sun.org.apache.xerces.internal.dom.DOMImplementationImpl singleton;
-  public com.sun.org.apache.xerces.internal.dom.DOMImplementationImpl();
-  public static org.w3c.dom.DOMImplementation getDOMImplementation();
-  public boolean hasFeature(java.lang.String, java.lang.String);
-  public org.w3c.dom.Document createDocument(java.lang.String, java.lang.String, org.w3c.dom.DocumentType) throws org.w3c.dom.DOMException;
-  static {};
-}

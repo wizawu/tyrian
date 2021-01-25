@@ -1,7 +1,0 @@
-Compiled from "SocketCleanable.java"
-final class java.net.SocketCleanable extends jdk.internal.ref.PhantomCleanable<java.io.FileDescriptor> {
-  static void register(java.io.FileDescriptor);
-  static void unregister(java.io.FileDescriptor);
-  protected void performCleanup();
-  static {};
-}

@@ -1,9 +1,0 @@
-Compiled from "RuntimeEvent.java"
-public class jdk.nashorn.internal.runtime.events.RuntimeEvent<T> {
-  public static final int RUNTIME_EVENT_QUEUE_SIZE;
-  public jdk.nashorn.internal.runtime.events.RuntimeEvent(java.util.logging.Level, T);
-  public final T getValue();
-  public java.lang.String toString();
-  public final java.lang.Class<?> getValueClass();
-  static {};
-}

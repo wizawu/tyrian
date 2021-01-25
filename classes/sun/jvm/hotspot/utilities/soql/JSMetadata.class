@@ -1,9 +1,0 @@
-Compiled from "JSMetadata.java"
-public abstract class sun.jvm.hotspot.utilities.soql.JSMetadata extends sun.jvm.hotspot.utilities.soql.DefaultScriptObject {
-  protected final sun.jvm.hotspot.utilities.soql.JSJavaFactory factory;
-  public sun.jvm.hotspot.utilities.soql.JSMetadata(sun.jvm.hotspot.oops.Metadata, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
-  public final sun.jvm.hotspot.oops.Metadata getMetadata();
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  public java.lang.String toString();
-}

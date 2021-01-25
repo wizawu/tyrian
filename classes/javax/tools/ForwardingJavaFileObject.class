@@ -1,8 +1,0 @@
-Compiled from "ForwardingJavaFileObject.java"
-public class javax.tools.ForwardingJavaFileObject<F extends javax.tools.JavaFileObject> extends javax.tools.ForwardingFileObject<F> implements javax.tools.JavaFileObject {
-  protected javax.tools.ForwardingJavaFileObject(F);
-  public javax.tools.JavaFileObject$Kind getKind();
-  public boolean isNameCompatible(java.lang.String, javax.tools.JavaFileObject$Kind);
-  public javax.lang.model.element.NestingKind getNestingKind();
-  public javax.lang.model.element.Modifier getAccessLevel();
-}

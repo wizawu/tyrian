@@ -1,8 +1,0 @@
-Compiled from "BasicComboBoxRenderer.java"
-public class javax.swing.plaf.basic.BasicComboBoxRenderer extends javax.swing.JLabel implements javax.swing.ListCellRenderer<java.lang.Object>, java.io.Serializable {
-  protected static javax.swing.border.Border noFocusBorder;
-  public javax.swing.plaf.basic.BasicComboBoxRenderer();
-  public java.awt.Dimension getPreferredSize();
-  public java.awt.Component getListCellRendererComponent(javax.swing.JList<?>, java.lang.Object, int, boolean, boolean);
-  static {};
-}

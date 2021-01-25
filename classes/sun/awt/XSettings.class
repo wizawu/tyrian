@@ -1,5 +1,0 @@
-Compiled from "XSettings.java"
-public class sun.awt.XSettings {
-  public sun.awt.XSettings();
-  public java.util.Map<java.lang.String, java.lang.Object> update(byte[]);
-}

@@ -1,9 +1,0 @@
-Compiled from "TreeTableModel.java"
-public interface sun.jvm.hotspot.ui.treetable.TreeTableModel extends javax.swing.tree.TreeModel {
-  public abstract int getColumnCount();
-  public abstract java.lang.String getColumnName(int);
-  public abstract java.lang.Class getColumnClass(int);
-  public abstract java.lang.Object getValueAt(java.lang.Object, int);
-  public abstract boolean isCellEditable(java.lang.Object, int);
-  public abstract void setValueAt(java.lang.Object, java.lang.Object, int);
-}

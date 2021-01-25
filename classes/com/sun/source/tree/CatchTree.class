@@ -1,5 +1,0 @@
-Compiled from "CatchTree.java"
-public interface com.sun.source.tree.CatchTree extends com.sun.source.tree.Tree {
-  public abstract com.sun.source.tree.VariableTree getParameter();
-  public abstract com.sun.source.tree.BlockTree getBlock();
-}

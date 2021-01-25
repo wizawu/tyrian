@@ -1,9 +1,0 @@
-Compiled from "ImmutableOopMapPair.java"
-public class sun.jvm.hotspot.compiler.ImmutableOopMapPair {
-  public sun.jvm.hotspot.compiler.ImmutableOopMapPair(sun.jvm.hotspot.debugger.Address);
-  public static long classSize();
-  public int getPC();
-  public int getOffset();
-  public java.lang.String toString();
-  static {};
-}

@@ -1,7 +1,0 @@
-Compiled from "DefaultCallbackHandler.java"
-final class com.sun.jndi.ldap.sasl.DefaultCallbackHandler implements javax.security.auth.callback.CallbackHandler {
-  com.sun.jndi.ldap.sasl.DefaultCallbackHandler(java.lang.String, java.lang.Object, java.lang.String) throws java.io.IOException;
-  public void handle(javax.security.auth.callback.Callback[]) throws java.io.IOException, javax.security.auth.callback.UnsupportedCallbackException;
-  void clearPassword();
-  protected void finalize() throws java.lang.Throwable;
-}

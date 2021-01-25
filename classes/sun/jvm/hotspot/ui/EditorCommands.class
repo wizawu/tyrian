@@ -1,5 +1,0 @@
-Compiled from "EditorCommands.java"
-public interface sun.jvm.hotspot.ui.EditorCommands {
-  public abstract void windowClosed(sun.jvm.hotspot.ui.Editor);
-  public abstract void toggleBreakpointAtLine(sun.jvm.hotspot.ui.Editor, int);
-}

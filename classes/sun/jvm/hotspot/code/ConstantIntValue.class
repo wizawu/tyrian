@@ -1,9 +1,0 @@
-Compiled from "ConstantIntValue.java"
-public class sun.jvm.hotspot.code.ConstantIntValue extends sun.jvm.hotspot.code.ScopeValue {
-  public sun.jvm.hotspot.code.ConstantIntValue(int);
-  public boolean isConstantInt();
-  public int getValue();
-  sun.jvm.hotspot.code.ConstantIntValue(sun.jvm.hotspot.code.DebugInfoReadStream);
-  public void print();
-  public void printOn(java.io.PrintStream);
-}

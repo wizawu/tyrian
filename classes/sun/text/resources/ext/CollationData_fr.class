@@ -1,5 +1,0 @@
-Compiled from "CollationData_fr.java"
-public class sun.text.resources.ext.CollationData_fr extends java.util.ListResourceBundle {
-  public sun.text.resources.ext.CollationData_fr();
-  protected final java.lang.Object[][] getContents();
-}

@@ -1,4 +1,0 @@
-Compiled from "SpinnerUI.java"
-public abstract class javax.swing.plaf.SpinnerUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.SpinnerUI();
-}

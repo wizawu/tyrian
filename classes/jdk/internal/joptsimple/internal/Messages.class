@@ -1,4 +1,0 @@
-Compiled from "Messages.java"
-public class jdk.internal.joptsimple.internal.Messages {
-  public static java.lang.String message(java.util.Locale, java.lang.String, java.lang.Class<?>, java.lang.String, java.lang.Object...);
-}

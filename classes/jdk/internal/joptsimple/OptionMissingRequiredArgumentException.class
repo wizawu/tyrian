@@ -1,5 +1,0 @@
-Compiled from "OptionMissingRequiredArgumentException.java"
-class jdk.internal.joptsimple.OptionMissingRequiredArgumentException extends jdk.internal.joptsimple.OptionException {
-  jdk.internal.joptsimple.OptionMissingRequiredArgumentException(jdk.internal.joptsimple.OptionSpec<?>);
-  java.lang.Object[] messageArguments();
-}

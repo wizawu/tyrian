@@ -1,6 +1,0 @@
-Compiled from "ImportEntryTree.java"
-public interface jdk.nashorn.api.tree.ImportEntryTree extends jdk.nashorn.api.tree.Tree {
-  public abstract jdk.nashorn.api.tree.IdentifierTree getModuleRequest();
-  public abstract jdk.nashorn.api.tree.IdentifierTree getImportName();
-  public abstract jdk.nashorn.api.tree.IdentifierTree getLocalName();
-}

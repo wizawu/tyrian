@@ -1,5 +1,0 @@
-Compiled from "XMLDTDContentModelSource.java"
-public interface com.sun.org.apache.xerces.internal.xni.parser.XMLDTDContentModelSource {
-  public abstract void setDTDContentModelHandler(com.sun.org.apache.xerces.internal.xni.XMLDTDContentModelHandler);
-  public abstract com.sun.org.apache.xerces.internal.xni.XMLDTDContentModelHandler getDTDContentModelHandler();
-}

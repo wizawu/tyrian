@@ -1,4 +1,0 @@
-Compiled from "CertPathParameters.java"
-public interface java.security.cert.CertPathParameters extends java.lang.Cloneable {
-  public abstract java.lang.Object clone();
-}

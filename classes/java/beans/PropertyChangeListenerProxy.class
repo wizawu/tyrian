@@ -1,6 +1,0 @@
-Compiled from "PropertyChangeListenerProxy.java"
-public class java.beans.PropertyChangeListenerProxy extends java.util.EventListenerProxy<java.beans.PropertyChangeListener> implements java.beans.PropertyChangeListener {
-  public java.beans.PropertyChangeListenerProxy(java.lang.String, java.beans.PropertyChangeListener);
-  public void propertyChange(java.beans.PropertyChangeEvent);
-  public java.lang.String getPropertyName();
-}

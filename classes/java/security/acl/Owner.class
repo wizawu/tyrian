@@ -1,6 +1,0 @@
-Compiled from "Owner.java"
-public interface java.security.acl.Owner {
-  public abstract boolean addOwner(java.security.Principal, java.security.Principal) throws java.security.acl.NotOwnerException;
-  public abstract boolean deleteOwner(java.security.Principal, java.security.Principal) throws java.security.acl.NotOwnerException, java.security.acl.LastOwnerException;
-  public abstract boolean isOwner(java.security.Principal);
-}

@@ -1,7 +1,0 @@
-Compiled from "DHClientKeyExchange.java"
-final class sun.security.ssl.DHClientKeyExchange {
-  static final sun.security.ssl.DHClientKeyExchange$DHClientKeyExchangeConsumer dhHandshakeConsumer;
-  static final sun.security.ssl.DHClientKeyExchange$DHClientKeyExchangeProducer dhHandshakeProducer;
-  sun.security.ssl.DHClientKeyExchange();
-  static {};
-}

@@ -1,7 +1,0 @@
-Compiled from "EventDirContext.java"
-public interface javax.naming.event.EventDirContext extends javax.naming.event.EventContext,javax.naming.directory.DirContext {
-  public abstract void addNamingListener(javax.naming.Name, java.lang.String, javax.naming.directory.SearchControls, javax.naming.event.NamingListener) throws javax.naming.NamingException;
-  public abstract void addNamingListener(java.lang.String, java.lang.String, javax.naming.directory.SearchControls, javax.naming.event.NamingListener) throws javax.naming.NamingException;
-  public abstract void addNamingListener(javax.naming.Name, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls, javax.naming.event.NamingListener) throws javax.naming.NamingException;
-  public abstract void addNamingListener(java.lang.String, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls, javax.naming.event.NamingListener) throws javax.naming.NamingException;
-}

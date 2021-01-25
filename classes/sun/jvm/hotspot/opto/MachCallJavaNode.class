@@ -1,7 +1,0 @@
-Compiled from "MachCallJavaNode.java"
-public class sun.jvm.hotspot.opto.MachCallJavaNode extends sun.jvm.hotspot.opto.MachCallNode {
-  public sun.jvm.hotspot.ci.ciMethod method();
-  public sun.jvm.hotspot.opto.MachCallJavaNode(sun.jvm.hotspot.debugger.Address);
-  public void dumpSpec(java.io.PrintStream);
-  static {};
-}

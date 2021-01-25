@@ -1,7 +1,0 @@
-Compiled from "X11Johab.java"
-public class sun.font.X11Johab extends java.nio.charset.Charset {
-  public sun.font.X11Johab();
-  public java.nio.charset.CharsetEncoder newEncoder();
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public boolean contains(java.nio.charset.Charset);
-}

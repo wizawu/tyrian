@@ -1,6 +1,0 @@
-Compiled from "Customizer.java"
-public interface java.beans.Customizer {
-  public abstract void setObject(java.lang.Object);
-  public abstract void addPropertyChangeListener(java.beans.PropertyChangeListener);
-  public abstract void removePropertyChangeListener(java.beans.PropertyChangeListener);
-}

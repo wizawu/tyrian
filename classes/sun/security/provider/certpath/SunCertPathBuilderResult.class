@@ -1,6 +1,0 @@
-Compiled from "SunCertPathBuilderResult.java"
-public class sun.security.provider.certpath.SunCertPathBuilderResult extends java.security.cert.PKIXCertPathBuilderResult {
-  sun.security.provider.certpath.SunCertPathBuilderResult(java.security.cert.CertPath, java.security.cert.TrustAnchor, java.security.cert.PolicyNode, java.security.PublicKey, sun.security.provider.certpath.AdjacencyList);
-  public sun.security.provider.certpath.AdjacencyList getAdjacencyList();
-  static {};
-}

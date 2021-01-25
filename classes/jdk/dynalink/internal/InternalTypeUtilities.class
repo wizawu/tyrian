@@ -1,6 +1,0 @@
-Compiled from "InternalTypeUtilities.java"
-public class jdk.dynalink.internal.InternalTypeUtilities {
-  public static boolean areAssignable(java.lang.Class<?>, java.lang.Class<?>);
-  public static boolean canReferenceDirectly(java.lang.ClassLoader, java.lang.ClassLoader);
-  public static java.lang.Class<?> getCommonLosslessConversionType(java.lang.Class<?>, java.lang.Class<?>);
-}

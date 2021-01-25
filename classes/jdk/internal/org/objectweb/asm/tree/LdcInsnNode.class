@@ -1,8 +1,0 @@
-Compiled from "LdcInsnNode.java"
-public class jdk.internal.org.objectweb.asm.tree.LdcInsnNode extends jdk.internal.org.objectweb.asm.tree.AbstractInsnNode {
-  public java.lang.Object cst;
-  public jdk.internal.org.objectweb.asm.tree.LdcInsnNode(java.lang.Object);
-  public int getType();
-  public void accept(jdk.internal.org.objectweb.asm.MethodVisitor);
-  public jdk.internal.org.objectweb.asm.tree.AbstractInsnNode clone(java.util.Map<jdk.internal.org.objectweb.asm.tree.LabelNode, jdk.internal.org.objectweb.asm.tree.LabelNode>);
-}

@@ -1,4 +1,0 @@
-Compiled from "SSLPossession.java"
-interface sun.security.ssl.SSLPossession {
-  public default byte[] encode();
-}

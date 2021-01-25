@@ -1,6 +1,0 @@
-Compiled from "DropTargetEvent.java"
-public class java.awt.dnd.DropTargetEvent extends java.util.EventObject {
-  protected java.awt.dnd.DropTargetContext context;
-  public java.awt.dnd.DropTargetEvent(java.awt.dnd.DropTargetContext);
-  public java.awt.dnd.DropTargetContext getDropTargetContext();
-}

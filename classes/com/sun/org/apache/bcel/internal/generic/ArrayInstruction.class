@@ -1,7 +1,0 @@
-Compiled from "ArrayInstruction.java"
-public abstract class com.sun.org.apache.bcel.internal.generic.ArrayInstruction extends com.sun.org.apache.bcel.internal.generic.Instruction implements com.sun.org.apache.bcel.internal.generic.ExceptionThrower,com.sun.org.apache.bcel.internal.generic.TypedInstruction {
-  com.sun.org.apache.bcel.internal.generic.ArrayInstruction();
-  protected com.sun.org.apache.bcel.internal.generic.ArrayInstruction(short);
-  public java.lang.Class<?>[] getExceptions();
-  public com.sun.org.apache.bcel.internal.generic.Type getType(com.sun.org.apache.bcel.internal.generic.ConstantPoolGen);
-}

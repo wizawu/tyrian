@@ -1,3 +1,0 @@
-Compiled from "EmptyStatementTree.java"
-public interface jdk.nashorn.api.tree.EmptyStatementTree extends jdk.nashorn.api.tree.StatementTree {
-}

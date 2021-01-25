@@ -1,5 +1,0 @@
-Compiled from "CloseableDisposerRecord.java"
-public class com.sun.imageio.stream.CloseableDisposerRecord implements sun.java2d.DisposerRecord {
-  public com.sun.imageio.stream.CloseableDisposerRecord(java.io.Closeable);
-  public synchronized void dispose();
-}

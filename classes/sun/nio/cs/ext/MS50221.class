@@ -1,7 +1,0 @@
-Compiled from "MS50221.java"
-public class sun.nio.cs.ext.MS50221 extends sun.nio.cs.ext.MS50220 {
-  public sun.nio.cs.ext.MS50221();
-  public java.lang.String historicalName();
-  public boolean contains(java.nio.charset.Charset);
-  protected boolean doSBKANA();
-}

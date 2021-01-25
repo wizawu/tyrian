@@ -1,6 +1,0 @@
-Compiled from "Reporter.java"
-public interface jdk.javadoc.doclet.Reporter {
-  public abstract void print(javax.tools.Diagnostic$Kind, java.lang.String);
-  public abstract void print(javax.tools.Diagnostic$Kind, com.sun.source.util.DocTreePath, java.lang.String);
-  public abstract void print(javax.tools.Diagnostic$Kind, javax.lang.model.element.Element, java.lang.String);
-}

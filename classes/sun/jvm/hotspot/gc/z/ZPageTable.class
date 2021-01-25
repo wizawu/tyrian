@@ -1,7 +1,0 @@
-Compiled from "ZPageTable.java"
-public class sun.jvm.hotspot.gc.z.ZPageTable extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.gc.z.ZPageTable(sun.jvm.hotspot.debugger.Address);
-  sun.jvm.hotspot.gc.z.ZPage get(sun.jvm.hotspot.debugger.Address);
-  boolean is_relocating(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

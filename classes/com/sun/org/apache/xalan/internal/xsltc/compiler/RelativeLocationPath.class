@@ -1,6 +1,0 @@
-Compiled from "RelativeLocationPath.java"
-abstract class com.sun.org.apache.xalan.internal.xsltc.compiler.RelativeLocationPath extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
-  com.sun.org.apache.xalan.internal.xsltc.compiler.RelativeLocationPath();
-  public abstract int getAxis();
-  public abstract void setAxis(int);
-}

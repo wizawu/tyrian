@@ -1,5 +1,0 @@
-Compiled from "FindInHeapPanel.java"
-public class sun.jvm.hotspot.ui.FindInHeapPanel extends javax.swing.JPanel {
-  static final double minUpdateFraction;
-  public sun.jvm.hotspot.ui.FindInHeapPanel();
-}

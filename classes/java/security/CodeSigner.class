@@ -1,9 +1,0 @@
-Compiled from "CodeSigner.java"
-public final class java.security.CodeSigner implements java.io.Serializable {
-  public java.security.CodeSigner(java.security.cert.CertPath, java.security.Timestamp);
-  public java.security.cert.CertPath getSignerCertPath();
-  public java.security.Timestamp getTimestamp();
-  public int hashCode();
-  public boolean equals(java.lang.Object);
-  public java.lang.String toString();
-}

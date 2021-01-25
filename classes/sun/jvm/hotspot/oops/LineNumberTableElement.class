@@ -1,6 +1,0 @@
-Compiled from "LineNumberTableElement.java"
-public class sun.jvm.hotspot.oops.LineNumberTableElement {
-  public sun.jvm.hotspot.oops.LineNumberTableElement(int, int);
-  public int getStartBCI();
-  public int getLineNumber();
-}

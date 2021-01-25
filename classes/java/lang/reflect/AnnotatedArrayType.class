@@ -1,5 +1,0 @@
-Compiled from "AnnotatedArrayType.java"
-public interface java.lang.reflect.AnnotatedArrayType extends java.lang.reflect.AnnotatedType {
-  public abstract java.lang.reflect.AnnotatedType getAnnotatedGenericComponentType();
-  public abstract java.lang.reflect.AnnotatedType getAnnotatedOwnerType();
-}

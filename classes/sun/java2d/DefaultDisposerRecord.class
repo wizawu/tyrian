@@ -1,8 +1,0 @@
-Compiled from "DefaultDisposerRecord.java"
-public class sun.java2d.DefaultDisposerRecord implements sun.java2d.DisposerRecord {
-  public sun.java2d.DefaultDisposerRecord(long, long);
-  public void dispose();
-  public long getDataPointer();
-  public long getDisposerMethodPointer();
-  public static native void invokeNativeDispose(long, long);
-}

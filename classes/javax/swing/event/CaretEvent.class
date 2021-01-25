@@ -1,6 +1,0 @@
-Compiled from "CaretEvent.java"
-public abstract class javax.swing.event.CaretEvent extends java.util.EventObject {
-  public javax.swing.event.CaretEvent(java.lang.Object);
-  public abstract int getDot();
-  public abstract int getMark();
-}

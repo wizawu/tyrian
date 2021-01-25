@@ -1,8 +1,0 @@
-Compiled from "AbstractElementVisitor6.java"
-public abstract class javax.lang.model.util.AbstractElementVisitor6<R, P> implements javax.lang.model.element.ElementVisitor<R, P> {
-  protected javax.lang.model.util.AbstractElementVisitor6();
-  public final R visit(javax.lang.model.element.Element, P);
-  public final R visit(javax.lang.model.element.Element);
-  public R visitUnknown(javax.lang.model.element.Element, P);
-  public R visitModule(javax.lang.model.element.ModuleElement, P);
-}

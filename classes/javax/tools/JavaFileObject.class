@@ -1,7 +1,0 @@
-Compiled from "JavaFileObject.java"
-public interface javax.tools.JavaFileObject extends javax.tools.FileObject {
-  public abstract javax.tools.JavaFileObject$Kind getKind();
-  public abstract boolean isNameCompatible(java.lang.String, javax.tools.JavaFileObject$Kind);
-  public abstract javax.lang.model.element.NestingKind getNestingKind();
-  public abstract javax.lang.model.element.Modifier getAccessLevel();
-}

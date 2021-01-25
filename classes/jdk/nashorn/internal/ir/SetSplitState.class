@@ -1,7 +1,0 @@
-Compiled from "SetSplitState.java"
-public final class jdk.nashorn.internal.ir.SetSplitState extends jdk.nashorn.internal.ir.Statement {
-  public jdk.nashorn.internal.ir.SetSplitState(int, int);
-  public int getState();
-  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
-  public void toString(java.lang.StringBuilder, boolean);
-}

@@ -1,5 +1,0 @@
-Compiled from "WrongParserException.java"
-public class com.sun.org.apache.xml.internal.utils.WrongParserException extends java.lang.RuntimeException {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xml.internal.utils.WrongParserException(java.lang.String);
-}

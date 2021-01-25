@@ -1,9 +1,0 @@
-Compiled from "WindowUpdateFrame.java"
-public class jdk.internal.net.http.frame.WindowUpdateFrame extends jdk.internal.net.http.frame.Http2Frame {
-  public static final int TYPE;
-  public jdk.internal.net.http.frame.WindowUpdateFrame(int, int);
-  public int type();
-  int length();
-  public java.lang.String toString();
-  public int getUpdate();
-}

@@ -1,8 +1,0 @@
-Compiled from "MembershipRegistry.java"
-class sun.nio.ch.MembershipRegistry {
-  sun.nio.ch.MembershipRegistry();
-  java.nio.channels.MembershipKey checkMembership(java.net.InetAddress, java.net.NetworkInterface, java.net.InetAddress);
-  void add(sun.nio.ch.MembershipKeyImpl);
-  void remove(sun.nio.ch.MembershipKeyImpl);
-  void invalidateAll();
-}

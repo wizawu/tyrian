@@ -1,9 +1,0 @@
-Compiled from "NativeStrikeDisposer.java"
-class sun.font.NativeStrikeDisposer extends sun.font.FontStrikeDisposer {
-  long pNativeScalerContext;
-  public sun.font.NativeStrikeDisposer(sun.font.Font2D, sun.font.FontStrikeDesc, long, int[]);
-  public sun.font.NativeStrikeDisposer(sun.font.Font2D, sun.font.FontStrikeDesc, long, long[]);
-  public sun.font.NativeStrikeDisposer(sun.font.Font2D, sun.font.FontStrikeDesc, long);
-  public sun.font.NativeStrikeDisposer(sun.font.Font2D, sun.font.FontStrikeDesc);
-  public synchronized void dispose();
-}

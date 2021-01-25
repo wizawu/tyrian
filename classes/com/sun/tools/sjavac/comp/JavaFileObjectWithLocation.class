@@ -1,9 +1,0 @@
-Compiled from "JavaFileObjectWithLocation.java"
-public class com.sun.tools.sjavac.comp.JavaFileObjectWithLocation<F extends javax.tools.JavaFileObject> extends javax.tools.ForwardingJavaFileObject<F> {
-  public com.sun.tools.sjavac.comp.JavaFileObjectWithLocation(F, javax.tools.JavaFileManager$Location);
-  public javax.tools.JavaFileManager$Location getLocation();
-  public F getDelegate();
-  public java.lang.String toString();
-  public int hashCode();
-  public boolean equals(java.lang.Object);
-}

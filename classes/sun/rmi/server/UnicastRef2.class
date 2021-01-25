@@ -1,8 +1,0 @@
-Compiled from "UnicastRef2.java"
-public class sun.rmi.server.UnicastRef2 extends sun.rmi.server.UnicastRef {
-  public sun.rmi.server.UnicastRef2();
-  public sun.rmi.server.UnicastRef2(sun.rmi.transport.LiveRef);
-  public java.lang.String getRefClass(java.io.ObjectOutput);
-  public void writeExternal(java.io.ObjectOutput) throws java.io.IOException;
-  public void readExternal(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
-}

@@ -1,5 +1,0 @@
-Compiled from "ErrorMessages_cs.java"
-public class com.sun.org.apache.xalan.internal.xsltc.runtime.ErrorMessages_cs extends java.util.ListResourceBundle {
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.ErrorMessages_cs();
-  public java.lang.Object[][] getContents();
-}

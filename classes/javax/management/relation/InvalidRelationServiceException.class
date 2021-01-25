@@ -1,5 +1,0 @@
-Compiled from "InvalidRelationServiceException.java"
-public class javax.management.relation.InvalidRelationServiceException extends javax.management.relation.RelationException {
-  public javax.management.relation.InvalidRelationServiceException();
-  public javax.management.relation.InvalidRelationServiceException(java.lang.String);
-}

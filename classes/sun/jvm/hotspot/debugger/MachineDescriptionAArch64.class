@@ -1,7 +1,0 @@
-Compiled from "MachineDescriptionAArch64.java"
-public class sun.jvm.hotspot.debugger.MachineDescriptionAArch64 extends sun.jvm.hotspot.debugger.MachineDescriptionTwosComplement implements sun.jvm.hotspot.debugger.MachineDescription {
-  public sun.jvm.hotspot.debugger.MachineDescriptionAArch64();
-  public long getAddressSize();
-  public boolean isLP64();
-  public boolean isBigEndian();
-}

@@ -1,9 +1,0 @@
-Compiled from "NativePRNG.java"
-public final class sun.security.provider.NativePRNG extends java.security.SecureRandomSpi {
-  static boolean isAvailable();
-  public sun.security.provider.NativePRNG();
-  protected void engineSetSeed(byte[]);
-  protected void engineNextBytes(byte[]);
-  protected byte[] engineGenerateSeed(int);
-  static {};
-}

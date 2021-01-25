@@ -1,4 +1,0 @@
-Compiled from "ScrollBarUI.java"
-public abstract class javax.swing.plaf.ScrollBarUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.ScrollBarUI();
-}

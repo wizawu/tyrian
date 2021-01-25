@@ -1,3 +1,0 @@
-Compiled from "InjectedProfile.java"
-interface java.lang.invoke.InjectedProfile extends java.lang.annotation.Annotation {
-}

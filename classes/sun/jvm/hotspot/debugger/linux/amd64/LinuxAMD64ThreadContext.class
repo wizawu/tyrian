@@ -1,6 +1,0 @@
-Compiled from "LinuxAMD64ThreadContext.java"
-public class sun.jvm.hotspot.debugger.linux.amd64.LinuxAMD64ThreadContext extends sun.jvm.hotspot.debugger.amd64.AMD64ThreadContext {
-  public sun.jvm.hotspot.debugger.linux.amd64.LinuxAMD64ThreadContext(sun.jvm.hotspot.debugger.linux.LinuxDebugger);
-  public void setRegisterAsAddress(int, sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.Address getRegisterAsAddress(int);
-}

@@ -1,7 +1,0 @@
-Compiled from "TextAreaPeer.java"
-public interface java.awt.peer.TextAreaPeer extends java.awt.peer.TextComponentPeer {
-  public abstract void insert(java.lang.String, int);
-  public abstract void replaceRange(java.lang.String, int, int);
-  public abstract java.awt.Dimension getPreferredSize(int, int);
-  public abstract java.awt.Dimension getMinimumSize(int, int);
-}

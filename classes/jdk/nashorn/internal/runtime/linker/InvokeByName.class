@@ -1,8 +1,0 @@
-Compiled from "InvokeByName.java"
-public final class jdk.nashorn.internal.runtime.linker.InvokeByName {
-  public jdk.nashorn.internal.runtime.linker.InvokeByName(java.lang.String, java.lang.Class<?>);
-  public jdk.nashorn.internal.runtime.linker.InvokeByName(java.lang.String, java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>...);
-  public java.lang.String getName();
-  public java.lang.invoke.MethodHandle getGetter();
-  public java.lang.invoke.MethodHandle getInvoker();
-}

@@ -1,7 +1,0 @@
-Compiled from "ExecutionException.java"
-public class java.util.concurrent.ExecutionException extends java.lang.Exception {
-  protected java.util.concurrent.ExecutionException();
-  protected java.util.concurrent.ExecutionException(java.lang.String);
-  public java.util.concurrent.ExecutionException(java.lang.String, java.lang.Throwable);
-  public java.util.concurrent.ExecutionException(java.lang.Throwable);
-}

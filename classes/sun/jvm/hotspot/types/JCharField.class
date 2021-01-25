@@ -1,5 +1,0 @@
-Compiled from "JCharField.java"
-public interface sun.jvm.hotspot.types.JCharField extends sun.jvm.hotspot.types.Field {
-  public abstract char getValue(sun.jvm.hotspot.debugger.Address) throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-  public abstract char getValue() throws sun.jvm.hotspot.debugger.UnmappedAddressException, sun.jvm.hotspot.debugger.UnalignedAddressException, sun.jvm.hotspot.types.WrongTypeException;
-}

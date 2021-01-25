@@ -1,7 +1,0 @@
-Compiled from "IF_ICMPGT.java"
-public class com.sun.org.apache.bcel.internal.generic.IF_ICMPGT extends com.sun.org.apache.bcel.internal.generic.IfInstruction {
-  com.sun.org.apache.bcel.internal.generic.IF_ICMPGT();
-  public com.sun.org.apache.bcel.internal.generic.IF_ICMPGT(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
-  public com.sun.org.apache.bcel.internal.generic.IfInstruction negate();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

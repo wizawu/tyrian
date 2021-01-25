@@ -1,6 +1,0 @@
-Compiled from "StringList.java"
-public interface com.sun.org.apache.xerces.internal.xs.StringList extends java.util.List<java.lang.String> {
-  public abstract int getLength();
-  public abstract boolean contains(java.lang.String);
-  public abstract java.lang.String item(int);
-}

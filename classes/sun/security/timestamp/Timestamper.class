@@ -1,4 +1,0 @@
-Compiled from "Timestamper.java"
-public interface sun.security.timestamp.Timestamper {
-  public abstract sun.security.timestamp.TSResponse generateTimestamp(sun.security.timestamp.TSRequest) throws java.io.IOException;
-}

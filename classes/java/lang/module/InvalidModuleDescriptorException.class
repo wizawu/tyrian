@@ -1,5 +1,0 @@
-Compiled from "InvalidModuleDescriptorException.java"
-public class java.lang.module.InvalidModuleDescriptorException extends java.lang.RuntimeException {
-  public java.lang.module.InvalidModuleDescriptorException();
-  public java.lang.module.InvalidModuleDescriptorException(java.lang.String);
-}

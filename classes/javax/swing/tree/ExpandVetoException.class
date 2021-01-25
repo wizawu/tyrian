@@ -1,6 +1,0 @@
-Compiled from "ExpandVetoException.java"
-public class javax.swing.tree.ExpandVetoException extends java.lang.Exception {
-  protected javax.swing.event.TreeExpansionEvent event;
-  public javax.swing.tree.ExpandVetoException(javax.swing.event.TreeExpansionEvent);
-  public javax.swing.tree.ExpandVetoException(javax.swing.event.TreeExpansionEvent, java.lang.String);
-}

@@ -1,7 +1,0 @@
-Compiled from "LocaleDataMetaInfo.java"
-public interface sun.util.locale.provider.LocaleDataMetaInfo {
-  public abstract sun.util.locale.provider.LocaleProviderAdapter$Type getType();
-  public abstract java.lang.String availableLanguageTags(java.lang.String);
-  public default java.util.Map<java.lang.String, java.lang.String> tzCanonicalIDs();
-  public default java.util.Map<java.lang.String, java.lang.String> getLanguageAliasMap();
-}

@@ -1,5 +1,0 @@
-Compiled from "JDKXPathFactory.java"
-public class com.sun.org.apache.xml.internal.security.utils.JDKXPathFactory extends com.sun.org.apache.xml.internal.security.utils.XPathFactory {
-  public com.sun.org.apache.xml.internal.security.utils.JDKXPathFactory();
-  public com.sun.org.apache.xml.internal.security.utils.XPathAPI newXPathAPI();
-}

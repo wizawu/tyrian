@@ -1,6 +1,0 @@
-Compiled from "ClassFormatException.java"
-public class com.sun.org.apache.bcel.internal.classfile.ClassFormatException extends java.lang.RuntimeException {
-  public com.sun.org.apache.bcel.internal.classfile.ClassFormatException();
-  public com.sun.org.apache.bcel.internal.classfile.ClassFormatException(java.lang.String);
-  public com.sun.org.apache.bcel.internal.classfile.ClassFormatException(java.lang.String, java.lang.Throwable);
-}

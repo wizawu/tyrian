@@ -1,5 +1,0 @@
-Compiled from "dnsURLContext.java"
-public class com.sun.jndi.url.dns.dnsURLContext extends com.sun.jndi.toolkit.url.GenericURLDirContext {
-  public com.sun.jndi.url.dns.dnsURLContext(java.util.Hashtable<?, ?>);
-  protected javax.naming.spi.ResolveResult getRootURLContext(java.lang.String, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
-}

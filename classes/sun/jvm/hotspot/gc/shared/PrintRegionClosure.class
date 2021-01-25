@@ -1,5 +1,0 @@
-Compiled from "PrintRegionClosure.java"
-public class sun.jvm.hotspot.gc.shared.PrintRegionClosure implements sun.jvm.hotspot.gc.shared.SpaceClosure {
-  public sun.jvm.hotspot.gc.shared.PrintRegionClosure(java.io.PrintStream);
-  public void doSpace(sun.jvm.hotspot.gc.shared.Space);
-}

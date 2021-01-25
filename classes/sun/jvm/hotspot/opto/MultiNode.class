@@ -1,5 +1,0 @@
-Compiled from "MultiNode.java"
-public class sun.jvm.hotspot.opto.MultiNode extends sun.jvm.hotspot.opto.Node {
-  public sun.jvm.hotspot.opto.MultiNode(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "Formatter.java"
-public abstract class java.util.logging.Formatter {
-  protected java.util.logging.Formatter();
-  public abstract java.lang.String format(java.util.logging.LogRecord);
-  public java.lang.String getHead(java.util.logging.Handler);
-  public java.lang.String getTail(java.util.logging.Handler);
-  public java.lang.String formatMessage(java.util.logging.LogRecord);
-}

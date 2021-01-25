@@ -1,7 +1,0 @@
-Compiled from "PredefinedDHParameterSpecs.java"
-final class sun.security.ssl.PredefinedDHParameterSpecs {
-  static final java.util.Map<java.lang.Integer, javax.crypto.spec.DHParameterSpec> definedParams;
-  static final java.util.Map<java.lang.Integer, javax.crypto.spec.DHParameterSpec> ffdheParams;
-  sun.security.ssl.PredefinedDHParameterSpecs();
-  static {};
-}

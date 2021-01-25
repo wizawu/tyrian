@@ -1,8 +1,0 @@
-Compiled from "InternalException.java"
-public class com.sun.jdi.InternalException extends java.lang.RuntimeException {
-  public com.sun.jdi.InternalException();
-  public com.sun.jdi.InternalException(java.lang.String);
-  public com.sun.jdi.InternalException(int);
-  public com.sun.jdi.InternalException(java.lang.String, int);
-  public int errorCode();
-}

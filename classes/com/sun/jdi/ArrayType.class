@@ -1,7 +1,0 @@
-Compiled from "ArrayType.java"
-public interface com.sun.jdi.ArrayType extends com.sun.jdi.ReferenceType {
-  public abstract com.sun.jdi.ArrayReference newInstance(int);
-  public abstract java.lang.String componentSignature();
-  public abstract java.lang.String componentTypeName();
-  public abstract com.sun.jdi.Type componentType() throws com.sun.jdi.ClassNotLoadedException;
-}

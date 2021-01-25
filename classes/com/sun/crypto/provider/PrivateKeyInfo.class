@@ -1,6 +1,0 @@
-Compiled from "PrivateKeyInfo.java"
-final class com.sun.crypto.provider.PrivateKeyInfo {
-  com.sun.crypto.provider.PrivateKeyInfo(byte[]) throws java.io.IOException;
-  sun.security.x509.AlgorithmId getAlgorithm();
-  static {};
-}

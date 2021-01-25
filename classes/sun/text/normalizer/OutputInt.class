@@ -1,5 +1,0 @@
-Compiled from "OutputInt.java"
-class sun.text.normalizer.OutputInt {
-  public int value;
-  sun.text.normalizer.OutputInt();
-}

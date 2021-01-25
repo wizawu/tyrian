@@ -1,5 +1,0 @@
-Compiled from "NoSuchMethodException.java"
-public class java.lang.NoSuchMethodException extends java.lang.ReflectiveOperationException {
-  public java.lang.NoSuchMethodException();
-  public java.lang.NoSuchMethodException(java.lang.String);
-}

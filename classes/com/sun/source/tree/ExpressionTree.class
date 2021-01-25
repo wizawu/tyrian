@@ -1,3 +1,0 @@
-Compiled from "ExpressionTree.java"
-public interface com.sun.source.tree.ExpressionTree extends com.sun.source.tree.Tree {
-}

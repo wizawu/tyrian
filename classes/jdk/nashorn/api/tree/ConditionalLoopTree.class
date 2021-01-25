@@ -1,4 +1,0 @@
-Compiled from "ConditionalLoopTree.java"
-public interface jdk.nashorn.api.tree.ConditionalLoopTree extends jdk.nashorn.api.tree.LoopTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getCondition();
-}

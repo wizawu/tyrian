@@ -1,4 +1,0 @@
-Compiled from "HierarchyListener.java"
-public interface java.awt.event.HierarchyListener extends java.util.EventListener {
-  public abstract void hierarchyChanged(java.awt.event.HierarchyEvent);
-}

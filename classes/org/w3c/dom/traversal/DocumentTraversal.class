@@ -1,5 +1,0 @@
-Compiled from "DocumentTraversal.java"
-public interface org.w3c.dom.traversal.DocumentTraversal {
-  public abstract org.w3c.dom.traversal.NodeIterator createNodeIterator(org.w3c.dom.Node, int, org.w3c.dom.traversal.NodeFilter, boolean) throws org.w3c.dom.DOMException;
-  public abstract org.w3c.dom.traversal.TreeWalker createTreeWalker(org.w3c.dom.Node, int, org.w3c.dom.traversal.NodeFilter, boolean) throws org.w3c.dom.DOMException;
-}

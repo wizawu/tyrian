@@ -1,7 +1,0 @@
-Compiled from "AccessControl.java"
-public interface sun.jvm.hotspot.debugger.cdbg.AccessControl {
-  public static final int NO_PROTECTION;
-  public static final int PRIVATE;
-  public static final int PROTECTED;
-  public static final int PUBLIC;
-}

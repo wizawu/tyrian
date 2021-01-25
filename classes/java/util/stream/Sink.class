@@ -1,9 +1,0 @@
-Compiled from "Sink.java"
-interface java.util.stream.Sink<T> extends java.util.function.Consumer<T> {
-  public default void begin(long);
-  public default void end();
-  public default boolean cancellationRequested();
-  public default void accept(int);
-  public default void accept(long);
-  public default void accept(double);
-}

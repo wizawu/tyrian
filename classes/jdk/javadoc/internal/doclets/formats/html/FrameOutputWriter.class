@@ -1,9 +1,0 @@
-Compiled from "FrameOutputWriter.java"
-public class jdk.javadoc.internal.doclets.formats.html.FrameOutputWriter extends jdk.javadoc.internal.doclets.formats.html.HtmlDocletWriter {
-  int noOfPackages;
-  public jdk.javadoc.internal.doclets.formats.html.FrameOutputWriter(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration, jdk.javadoc.internal.doclets.toolkit.util.DocPath);
-  public static void generate(jdk.javadoc.internal.doclets.formats.html.HtmlConfiguration) throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
-  protected void generateFrameFile() throws jdk.javadoc.internal.doclets.toolkit.util.DocFileIOException;
-  protected jdk.javadoc.internal.doclets.toolkit.Content getFrameDetails();
-  protected jdk.javadoc.internal.doclets.formats.html.markup.Script getFramesScript();
-}

@@ -1,5 +1,0 @@
-Compiled from "InvalidParameterSpecException.java"
-public class java.security.spec.InvalidParameterSpecException extends java.security.GeneralSecurityException {
-  public java.security.spec.InvalidParameterSpecException();
-  public java.security.spec.InvalidParameterSpecException(java.lang.String);
-}

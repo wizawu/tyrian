@@ -1,8 +1,0 @@
-Compiled from "JConsoleContext.java"
-public interface com.sun.tools.jconsole.JConsoleContext {
-  public static final java.lang.String CONNECTION_STATE_PROPERTY;
-  public abstract javax.management.MBeanServerConnection getMBeanServerConnection();
-  public abstract com.sun.tools.jconsole.JConsoleContext$ConnectionState getConnectionState();
-  public abstract void addPropertyChangeListener(java.beans.PropertyChangeListener);
-  public abstract void removePropertyChangeListener(java.beans.PropertyChangeListener);
-}

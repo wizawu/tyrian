@@ -1,7 +1,0 @@
-Compiled from "SecureRandom.java"
-public final class sun.security.provider.SecureRandom extends java.security.SecureRandomSpi implements java.io.Serializable {
-  public sun.security.provider.SecureRandom();
-  public byte[] engineGenerateSeed(int);
-  public synchronized void engineSetSeed(byte[]);
-  public synchronized void engineNextBytes(byte[]);
-}

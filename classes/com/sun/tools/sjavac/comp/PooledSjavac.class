@@ -1,8 +1,0 @@
-Compiled from "PooledSjavac.java"
-public class com.sun.tools.sjavac.comp.PooledSjavac implements com.sun.tools.sjavac.server.Sjavac {
-  final com.sun.tools.sjavac.server.Sjavac delegate;
-  final java.util.concurrent.ExecutorService pool;
-  public com.sun.tools.sjavac.comp.PooledSjavac(com.sun.tools.sjavac.server.Sjavac, int);
-  public com.sun.tools.javac.main.Main$Result compile(java.lang.String[]);
-  public void shutdown();
-}

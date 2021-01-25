@@ -1,7 +1,0 @@
-Compiled from "OGLPaints.java"
-abstract class sun.java2d.opengl.OGLPaints {
-  sun.java2d.opengl.OGLPaints();
-  static boolean isValid(sun.java2d.SunGraphics2D);
-  abstract boolean isPaintValid(sun.java2d.SunGraphics2D);
-  static {};
-}

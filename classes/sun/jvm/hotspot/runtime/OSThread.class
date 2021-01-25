@@ -1,8 +1,0 @@
-Compiled from "OSThread.java"
-public class sun.jvm.hotspot.runtime.OSThread extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.runtime.OSThread(sun.jvm.hotspot.debugger.Address);
-  public boolean interrupted();
-  public int threadId();
-  public sun.jvm.hotspot.runtime.ThreadState getThreadState();
-  static {};
-}

@@ -1,5 +1,0 @@
-Compiled from "PNGMetadataFormatResources.java"
-public class com.sun.imageio.plugins.png.PNGMetadataFormatResources extends java.util.ListResourceBundle {
-  public com.sun.imageio.plugins.png.PNGMetadataFormatResources();
-  protected java.lang.Object[][] getContents();
-}

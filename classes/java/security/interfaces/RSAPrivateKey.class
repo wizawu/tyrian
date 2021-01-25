@@ -1,5 +1,0 @@
-Compiled from "RSAPrivateKey.java"
-public interface java.security.interfaces.RSAPrivateKey extends java.security.PrivateKey,java.security.interfaces.RSAKey {
-  public static final long serialVersionUID;
-  public abstract java.math.BigInteger getPrivateExponent();
-}

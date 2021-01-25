@@ -1,5 +1,0 @@
-Compiled from "Externalizable.java"
-public interface java.io.Externalizable extends java.io.Serializable {
-  public abstract void writeExternal(java.io.ObjectOutput) throws java.io.IOException;
-  public abstract void readExternal(java.io.ObjectInput) throws java.io.IOException, java.lang.ClassNotFoundException;
-}

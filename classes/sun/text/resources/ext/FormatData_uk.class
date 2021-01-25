@@ -1,5 +1,0 @@
-Compiled from "FormatData_uk.java"
-public class sun.text.resources.ext.FormatData_uk extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_uk();
-  protected final java.lang.Object[][] getContents();
-}

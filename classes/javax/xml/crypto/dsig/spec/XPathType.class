@@ -1,8 +1,0 @@
-Compiled from "XPathType.java"
-public class javax.xml.crypto.dsig.spec.XPathType {
-  public javax.xml.crypto.dsig.spec.XPathType(java.lang.String, javax.xml.crypto.dsig.spec.XPathType$Filter);
-  public javax.xml.crypto.dsig.spec.XPathType(java.lang.String, javax.xml.crypto.dsig.spec.XPathType$Filter, java.util.Map<java.lang.String, java.lang.String>);
-  public java.lang.String getExpression();
-  public javax.xml.crypto.dsig.spec.XPathType$Filter getFilter();
-  public java.util.Map<java.lang.String, java.lang.String> getNamespaceMap();
-}

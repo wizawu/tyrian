@@ -1,6 +1,0 @@
-Compiled from "BufferBlob.java"
-public class sun.jvm.hotspot.code.BufferBlob extends sun.jvm.hotspot.code.RuntimeBlob {
-  public sun.jvm.hotspot.code.BufferBlob(sun.jvm.hotspot.debugger.Address);
-  public boolean isBufferBlob();
-  static {};
-}

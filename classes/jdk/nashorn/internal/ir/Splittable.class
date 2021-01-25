@@ -1,4 +1,0 @@
-Compiled from "Splittable.java"
-public interface jdk.nashorn.internal.ir.Splittable {
-  public abstract java.util.List<jdk.nashorn.internal.ir.Splittable$SplitRange> getSplitRanges();
-}

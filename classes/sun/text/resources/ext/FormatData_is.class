@@ -1,5 +1,0 @@
-Compiled from "FormatData_is.java"
-public class sun.text.resources.ext.FormatData_is extends sun.util.resources.ParallelListResourceBundle {
-  public sun.text.resources.ext.FormatData_is();
-  protected final java.lang.Object[][] getContents();
-}

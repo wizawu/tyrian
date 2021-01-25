@@ -1,8 +1,0 @@
-Compiled from "SourceMapper.java"
-class com.sun.tools.example.debug.tty.SourceMapper {
-  com.sun.tools.example.debug.tty.SourceMapper(java.util.List<java.lang.String>);
-  com.sun.tools.example.debug.tty.SourceMapper(java.lang.String);
-  java.lang.String getSourcePath();
-  java.io.File sourceFile(com.sun.jdi.Location);
-  java.io.BufferedReader sourceReader(com.sun.jdi.Location);
-}

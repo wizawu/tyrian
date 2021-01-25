@@ -1,6 +1,0 @@
-Compiled from "UrlUtil.java"
-public final class com.sun.jndi.toolkit.url.UrlUtil {
-  public static final java.lang.String decode(java.lang.String) throws java.net.MalformedURLException;
-  public static final java.lang.String decode(java.lang.String, java.lang.String) throws java.net.MalformedURLException, java.io.UnsupportedEncodingException;
-  public static final java.lang.String encode(java.lang.String, java.lang.String) throws java.io.UnsupportedEncodingException;
-}

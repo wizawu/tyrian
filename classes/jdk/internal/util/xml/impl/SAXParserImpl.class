@@ -1,9 +1,0 @@
-Compiled from "SAXParserImpl.java"
-public class jdk.internal.util.xml.impl.SAXParserImpl extends jdk.internal.util.xml.SAXParser {
-  public jdk.internal.util.xml.impl.SAXParserImpl();
-  public jdk.internal.org.xml.sax.XMLReader getXMLReader() throws jdk.internal.org.xml.sax.SAXException;
-  public boolean isNamespaceAware();
-  public boolean isValidating();
-  public void parse(java.io.InputStream, jdk.internal.org.xml.sax.helpers.DefaultHandler) throws jdk.internal.org.xml.sax.SAXException, java.io.IOException;
-  public void parse(jdk.internal.org.xml.sax.InputSource, jdk.internal.org.xml.sax.helpers.DefaultHandler) throws jdk.internal.org.xml.sax.SAXException, java.io.IOException;
-}

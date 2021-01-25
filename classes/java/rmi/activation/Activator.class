@@ -1,4 +1,0 @@
-Compiled from "Activator.java"
-public interface java.rmi.activation.Activator extends java.rmi.Remote {
-  public abstract java.rmi.MarshalledObject<? extends java.rmi.Remote> activate(java.rmi.activation.ActivationID, boolean) throws java.rmi.activation.ActivationException, java.rmi.activation.UnknownObjectException, java.rmi.RemoteException;
-}

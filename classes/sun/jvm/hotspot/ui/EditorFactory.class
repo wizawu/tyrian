@@ -1,5 +1,0 @@
-Compiled from "EditorFactory.java"
-public interface sun.jvm.hotspot.ui.EditorFactory {
-  public abstract sun.jvm.hotspot.ui.Editor openFile(java.lang.String, sun.jvm.hotspot.ui.EditorCommands);
-  public abstract sun.jvm.hotspot.ui.Editor getCurrentEditor();
-}

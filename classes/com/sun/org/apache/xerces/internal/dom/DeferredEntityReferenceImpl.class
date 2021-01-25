@@ -1,9 +1,0 @@
-Compiled from "DeferredEntityReferenceImpl.java"
-public class com.sun.org.apache.xerces.internal.dom.DeferredEntityReferenceImpl extends com.sun.org.apache.xerces.internal.dom.EntityReferenceImpl implements com.sun.org.apache.xerces.internal.dom.DeferredNode {
-  static final long serialVersionUID;
-  protected transient int fNodeIndex;
-  com.sun.org.apache.xerces.internal.dom.DeferredEntityReferenceImpl(com.sun.org.apache.xerces.internal.dom.DeferredDocumentImpl, int);
-  public int getNodeIndex();
-  protected void synchronizeData();
-  protected void synchronizeChildren();
-}

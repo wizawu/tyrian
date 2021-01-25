@@ -1,7 +1,0 @@
-Compiled from "IntExpr.java"
-final class com.sun.org.apache.xalan.internal.xsltc.compiler.IntExpr extends com.sun.org.apache.xalan.internal.xsltc.compiler.Expression {
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.IntExpr(int);
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
-  public java.lang.String toString();
-  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
-}

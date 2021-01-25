@@ -1,8 +1,0 @@
-Compiled from "LocalVariableTable.java"
-final class sun.tools.asm.LocalVariableTable {
-  sun.tools.asm.LocalVariable[] locals;
-  int len;
-  sun.tools.asm.LocalVariableTable();
-  void define(sun.tools.java.MemberDefinition, int, int, int);
-  void write(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
-}

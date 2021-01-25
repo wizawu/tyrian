@@ -1,7 +1,0 @@
-Compiled from "ProxyGenerator.java"
-class java.lang.reflect.ProxyGenerator {
-  static final boolean $assertionsDisabled;
-  static byte[] generateProxyClass(java.lang.String, java.lang.Class<?>[]);
-  static byte[] generateProxyClass(java.lang.String, java.lang.Class<?>[], int);
-  static {};
-}

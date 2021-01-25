@@ -1,4 +1,0 @@
-Compiled from "DesktopIconUI.java"
-public abstract class javax.swing.plaf.DesktopIconUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.DesktopIconUI();
-}

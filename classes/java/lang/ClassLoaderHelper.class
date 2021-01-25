@@ -1,5 +1,0 @@
-Compiled from "ClassLoaderHelper.java"
-class java.lang.ClassLoaderHelper {
-  static final boolean allowsQuotedPathElements;
-  static java.io.File mapAlternativeName(java.io.File);
-}

@@ -1,5 +1,0 @@
-Compiled from "CollationData_zh_TW.java"
-public class sun.text.resources.ext.CollationData_zh_TW extends java.util.ListResourceBundle {
-  public sun.text.resources.ext.CollationData_zh_TW();
-  protected final java.lang.Object[][] getContents();
-}

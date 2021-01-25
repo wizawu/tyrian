@@ -1,9 +1,0 @@
-Compiled from "AttributesImplSerializer.java"
-public final class com.sun.org.apache.xml.internal.serializer.AttributesImplSerializer extends org.xml.sax.helpers.AttributesImpl {
-  public com.sun.org.apache.xml.internal.serializer.AttributesImplSerializer();
-  public final int getIndex(java.lang.String);
-  public final void addAttribute(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String);
-  public final void clear();
-  public final void setAttributes(org.xml.sax.Attributes);
-  public final int getIndex(java.lang.String, java.lang.String);
-}

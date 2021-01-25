@@ -1,4 +1,0 @@
-Compiled from "ArrayTypeTree.java"
-public interface com.sun.source.tree.ArrayTypeTree extends com.sun.source.tree.Tree {
-  public abstract com.sun.source.tree.Tree getType();
-}

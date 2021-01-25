@@ -1,4 +1,0 @@
-Compiled from "MethodTypeConversionStrategy.java"
-public interface jdk.dynalink.linker.MethodTypeConversionStrategy {
-  public abstract java.lang.invoke.MethodHandle asType(java.lang.invoke.MethodHandle, java.lang.invoke.MethodType);
-}

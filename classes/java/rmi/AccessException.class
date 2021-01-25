@@ -1,5 +1,0 @@
-Compiled from "AccessException.java"
-public class java.rmi.AccessException extends java.rmi.RemoteException {
-  public java.rmi.AccessException(java.lang.String);
-  public java.rmi.AccessException(java.lang.String, java.lang.Exception);
-}

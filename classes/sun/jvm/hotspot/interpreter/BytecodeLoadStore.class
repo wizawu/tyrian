@@ -1,5 +1,0 @@
-Compiled from "BytecodeLoadStore.java"
-public abstract class sun.jvm.hotspot.interpreter.BytecodeLoadStore extends sun.jvm.hotspot.interpreter.BytecodeWideable {
-  sun.jvm.hotspot.interpreter.BytecodeLoadStore(sun.jvm.hotspot.oops.Method, int);
-  public java.lang.String toString();
-}

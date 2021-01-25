@@ -1,8 +1,0 @@
-Compiled from "OctetStreamData.java"
-public class javax.xml.crypto.OctetStreamData implements javax.xml.crypto.Data {
-  public javax.xml.crypto.OctetStreamData(java.io.InputStream);
-  public javax.xml.crypto.OctetStreamData(java.io.InputStream, java.lang.String, java.lang.String);
-  public java.io.InputStream getOctetStream();
-  public java.lang.String getURI();
-  public java.lang.String getMimeType();
-}

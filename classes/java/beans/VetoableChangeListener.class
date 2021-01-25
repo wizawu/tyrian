@@ -1,4 +1,0 @@
-Compiled from "VetoableChangeListener.java"
-public interface java.beans.VetoableChangeListener extends java.util.EventListener {
-  public abstract void vetoableChange(java.beans.PropertyChangeEvent) throws java.beans.PropertyVetoException;
-}

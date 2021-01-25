@@ -1,3 +1,0 @@
-Compiled from "MouseInputListener.java"
-public interface javax.swing.event.MouseInputListener extends java.awt.event.MouseListener,java.awt.event.MouseMotionListener {
-}

@@ -1,5 +1,0 @@
-Compiled from "SubjectDelegationPermission.java"
-public final class javax.management.remote.SubjectDelegationPermission extends java.security.BasicPermission {
-  public javax.management.remote.SubjectDelegationPermission(java.lang.String);
-  public javax.management.remote.SubjectDelegationPermission(java.lang.String, java.lang.String);
-}

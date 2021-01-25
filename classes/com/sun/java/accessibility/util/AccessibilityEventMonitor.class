@@ -1,8 +1,0 @@
-Compiled from "AccessibilityEventMonitor.java"
-public class com.sun.java.accessibility.util.AccessibilityEventMonitor {
-  protected static final com.sun.java.accessibility.util.AccessibilityListenerList listenerList;
-  public com.sun.java.accessibility.util.AccessibilityEventMonitor();
-  public static void addPropertyChangeListener(java.beans.PropertyChangeListener);
-  public static void removePropertyChangeListener(java.beans.PropertyChangeListener);
-  static {};
-}

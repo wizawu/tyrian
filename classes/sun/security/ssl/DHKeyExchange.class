@@ -1,8 +1,0 @@
-Compiled from "DHKeyExchange.java"
-final class sun.security.ssl.DHKeyExchange {
-  static final sun.security.ssl.SSLPossessionGenerator poGenerator;
-  static final sun.security.ssl.SSLPossessionGenerator poExportableGenerator;
-  static final sun.security.ssl.SSLKeyAgreementGenerator kaGenerator;
-  sun.security.ssl.DHKeyExchange();
-  static {};
-}

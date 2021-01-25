@@ -1,4 +1,0 @@
-Compiled from "ProgressBarUI.java"
-public abstract class javax.swing.plaf.ProgressBarUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.ProgressBarUI();
-}

@@ -1,5 +1,0 @@
-Compiled from "InvalidStreamException.java"
-public class com.sun.nio.sctp.InvalidStreamException extends java.lang.IllegalArgumentException {
-  public com.sun.nio.sctp.InvalidStreamException();
-  public com.sun.nio.sctp.InvalidStreamException(java.lang.String);
-}

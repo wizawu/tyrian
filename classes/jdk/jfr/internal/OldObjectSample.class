@@ -1,8 +1,0 @@
-Compiled from "OldObjectSample.java"
-public final class jdk.jfr.internal.OldObjectSample {
-  public jdk.jfr.internal.OldObjectSample();
-  public static void emit(jdk.jfr.internal.PlatformRecording);
-  public static void emit(java.util.List<jdk.jfr.internal.PlatformRecording>, java.lang.Boolean);
-  public static void updateSettingPathToGcRoots(java.util.Map<java.lang.String, java.lang.String>, java.lang.Boolean);
-  public static java.util.Map<java.lang.String, java.lang.String> createSettingsForSnapshot(jdk.jfr.internal.PlatformRecording, java.lang.Boolean);
-}

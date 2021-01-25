@@ -1,5 +1,0 @@
-Compiled from "SocketAddress.java"
-public abstract class java.net.SocketAddress implements java.io.Serializable {
-  static final long serialVersionUID;
-  public java.net.SocketAddress();
-}

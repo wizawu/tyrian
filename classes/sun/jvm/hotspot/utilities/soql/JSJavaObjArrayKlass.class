@@ -1,7 +1,0 @@
-Compiled from "JSJavaObjArrayKlass.java"
-public class sun.jvm.hotspot.utilities.soql.JSJavaObjArrayKlass extends sun.jvm.hotspot.utilities.soql.JSJavaArrayKlass {
-  public sun.jvm.hotspot.utilities.soql.JSJavaObjArrayKlass(sun.jvm.hotspot.oops.ObjArrayKlass, sun.jvm.hotspot.utilities.soql.JSJavaFactory);
-  public sun.jvm.hotspot.oops.ObjArrayKlass getObjArrayKlass();
-  public java.lang.String getName();
-  public java.lang.Object getFieldValue(int, sun.jvm.hotspot.oops.Array);
-}

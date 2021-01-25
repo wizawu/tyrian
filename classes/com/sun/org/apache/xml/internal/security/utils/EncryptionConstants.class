@@ -1,4 +1,0 @@
-Compiled from "EncryptionConstants.java"
-public final class com.sun.org.apache.xml.internal.security.utils.EncryptionConstants {
-  public static final java.lang.String EncryptionSpecNS;
-}

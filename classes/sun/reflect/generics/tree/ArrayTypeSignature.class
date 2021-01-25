@@ -1,6 +1,0 @@
-Compiled from "ArrayTypeSignature.java"
-public class sun.reflect.generics.tree.ArrayTypeSignature implements sun.reflect.generics.tree.FieldTypeSignature {
-  public static sun.reflect.generics.tree.ArrayTypeSignature make(sun.reflect.generics.tree.TypeSignature);
-  public sun.reflect.generics.tree.TypeSignature getComponentType();
-  public void accept(sun.reflect.generics.visitor.TypeTreeVisitor<?>);
-}

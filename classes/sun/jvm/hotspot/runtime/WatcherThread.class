@@ -1,5 +1,0 @@
-Compiled from "WatcherThread.java"
-public class sun.jvm.hotspot.runtime.WatcherThread extends sun.jvm.hotspot.runtime.Thread {
-  public sun.jvm.hotspot.runtime.WatcherThread(sun.jvm.hotspot.debugger.Address);
-  public boolean isWatcherThread();
-}

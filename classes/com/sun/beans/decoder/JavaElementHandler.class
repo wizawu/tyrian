@@ -1,8 +1,0 @@
-Compiled from "JavaElementHandler.java"
-final class com.sun.beans.decoder.JavaElementHandler extends com.sun.beans.decoder.ElementHandler {
-  com.sun.beans.decoder.JavaElementHandler();
-  public void addAttribute(java.lang.String, java.lang.String);
-  protected void addArgument(java.lang.Object);
-  protected boolean isArgument();
-  protected com.sun.beans.decoder.ValueObject getValueObject();
-}

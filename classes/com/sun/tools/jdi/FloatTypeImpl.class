@@ -1,7 +1,0 @@
-Compiled from "FloatTypeImpl.java"
-public class com.sun.tools.jdi.FloatTypeImpl extends com.sun.tools.jdi.PrimitiveTypeImpl implements com.sun.jdi.FloatType {
-  com.sun.tools.jdi.FloatTypeImpl(com.sun.jdi.VirtualMachine);
-  public java.lang.String signature();
-  com.sun.jdi.PrimitiveValue convert(com.sun.jdi.PrimitiveValue) throws com.sun.jdi.InvalidTypeException;
-  public java.lang.String toString();
-}

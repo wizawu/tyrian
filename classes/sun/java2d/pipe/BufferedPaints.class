@@ -1,8 +1,0 @@
-Compiled from "BufferedPaints.java"
-public class sun.java2d.pipe.BufferedPaints {
-  public static final int MULTI_MAX_FRACTIONS;
-  public sun.java2d.pipe.BufferedPaints();
-  static void setPaint(sun.java2d.pipe.RenderQueue, sun.java2d.SunGraphics2D, java.awt.Paint, int);
-  static void resetPaint(sun.java2d.pipe.RenderQueue);
-  public static int convertSRGBtoLinearRGB(int);
-}

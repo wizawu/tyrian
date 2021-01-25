@@ -1,5 +1,0 @@
-Compiled from "FieldUtil.java"
-public final class sun.reflect.misc.FieldUtil {
-  public static java.lang.reflect.Field getField(java.lang.Class<?>, java.lang.String) throws java.lang.NoSuchFieldException;
-  public static java.lang.reflect.Field[] getFields(java.lang.Class<?>);
-}

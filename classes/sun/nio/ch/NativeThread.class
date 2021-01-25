@@ -1,7 +1,0 @@
-Compiled from "NativeThread.java"
-public class sun.nio.ch.NativeThread {
-  public sun.nio.ch.NativeThread();
-  public static native long current();
-  public static native void signal(long);
-  static {};
-}

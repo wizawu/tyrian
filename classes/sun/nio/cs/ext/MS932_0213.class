@@ -1,7 +1,0 @@
-Compiled from "MS932_0213.java"
-public class sun.nio.cs.ext.MS932_0213 extends java.nio.charset.Charset {
-  public sun.nio.cs.ext.MS932_0213();
-  public boolean contains(java.nio.charset.Charset);
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public java.nio.charset.CharsetEncoder newEncoder();
-}

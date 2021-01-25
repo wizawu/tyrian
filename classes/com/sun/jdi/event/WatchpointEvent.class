@@ -1,6 +1,0 @@
-Compiled from "WatchpointEvent.java"
-public interface com.sun.jdi.event.WatchpointEvent extends com.sun.jdi.event.LocatableEvent {
-  public abstract com.sun.jdi.Field field();
-  public abstract com.sun.jdi.ObjectReference object();
-  public abstract com.sun.jdi.Value valueCurrent();
-}

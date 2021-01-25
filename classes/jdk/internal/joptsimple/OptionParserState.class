@@ -1,7 +1,0 @@
-Compiled from "OptionParserState.java"
-abstract class jdk.internal.joptsimple.OptionParserState {
-  jdk.internal.joptsimple.OptionParserState();
-  static jdk.internal.joptsimple.OptionParserState noMoreOptions();
-  static jdk.internal.joptsimple.OptionParserState moreOptions(boolean);
-  protected abstract void handleArgument(jdk.internal.joptsimple.OptionParser, jdk.internal.joptsimple.ArgumentList, jdk.internal.joptsimple.OptionSet);
-}

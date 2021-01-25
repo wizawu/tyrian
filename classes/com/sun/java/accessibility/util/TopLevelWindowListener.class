@@ -1,5 +1,0 @@
-Compiled from "TopLevelWindowListener.java"
-public interface com.sun.java.accessibility.util.TopLevelWindowListener extends java.util.EventListener {
-  public abstract void topLevelWindowCreated(java.awt.Window);
-  public abstract void topLevelWindowDestroyed(java.awt.Window);
-}

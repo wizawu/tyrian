@@ -1,9 +1,0 @@
-Compiled from "ByteLookupTable.java"
-public class java.awt.image.ByteLookupTable extends java.awt.image.LookupTable {
-  byte[][] data;
-  public java.awt.image.ByteLookupTable(int, byte[][]);
-  public java.awt.image.ByteLookupTable(int, byte[]);
-  public final byte[][] getTable();
-  public int[] lookupPixel(int[], int[]);
-  public byte[] lookupPixel(byte[], byte[]);
-}

@@ -1,5 +1,0 @@
-Compiled from "PerfDataBuffer.java"
-public class sun.jvmstat.perfdata.monitor.protocol.local.PerfDataBuffer extends sun.jvmstat.perfdata.monitor.AbstractPerfDataBuffer {
-  public sun.jvmstat.perfdata.monitor.protocol.local.PerfDataBuffer(sun.jvmstat.monitor.VmIdentifier) throws sun.jvmstat.monitor.MonitorException;
-  static {};
-}

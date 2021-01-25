@@ -1,6 +1,0 @@
-Compiled from "OptionComboBoxModel.java"
-class javax.swing.text.html.OptionComboBoxModel<E> extends javax.swing.DefaultComboBoxModel<E> implements java.io.Serializable {
-  javax.swing.text.html.OptionComboBoxModel();
-  public void setInitialSelection(javax.swing.text.html.Option);
-  public javax.swing.text.html.Option getInitialSelection();
-}

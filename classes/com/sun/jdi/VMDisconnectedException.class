@@ -1,5 +1,0 @@
-Compiled from "VMDisconnectedException.java"
-public class com.sun.jdi.VMDisconnectedException extends java.lang.RuntimeException {
-  public com.sun.jdi.VMDisconnectedException();
-  public com.sun.jdi.VMDisconnectedException(java.lang.String);
-}

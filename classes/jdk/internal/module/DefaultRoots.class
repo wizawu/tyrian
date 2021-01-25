@@ -1,5 +1,0 @@
-Compiled from "DefaultRoots.java"
-public final class jdk.internal.module.DefaultRoots {
-  static java.util.Set<java.lang.String> compute(java.lang.module.ModuleFinder, java.lang.module.ModuleFinder);
-  public static java.util.Set<java.lang.String> compute(java.lang.module.ModuleFinder);
-}

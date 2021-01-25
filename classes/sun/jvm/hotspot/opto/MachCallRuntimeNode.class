@@ -1,7 +1,0 @@
-Compiled from "MachCallRuntimeNode.java"
-public class sun.jvm.hotspot.opto.MachCallRuntimeNode extends sun.jvm.hotspot.opto.MachCallJavaNode {
-  public java.lang.String name();
-  public sun.jvm.hotspot.opto.MachCallRuntimeNode(sun.jvm.hotspot.debugger.Address);
-  public void dumpSpec(java.io.PrintStream);
-  static {};
-}

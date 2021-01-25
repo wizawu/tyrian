@@ -1,7 +1,0 @@
-Compiled from "RecordedClassLoader.java"
-public final class jdk.jfr.consumer.RecordedClassLoader extends jdk.jfr.consumer.RecordedObject {
-  static jdk.jfr.consumer.ObjectFactory<jdk.jfr.consumer.RecordedClassLoader> createFactory(jdk.jfr.internal.Type, jdk.jfr.consumer.TimeConverter);
-  public jdk.jfr.consumer.RecordedClass getType();
-  public java.lang.String getName();
-  public long getId();
-}

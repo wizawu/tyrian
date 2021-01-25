@@ -1,9 +1,0 @@
-Compiled from "SpinnerModel.java"
-public interface javax.swing.SpinnerModel {
-  public abstract java.lang.Object getValue();
-  public abstract void setValue(java.lang.Object);
-  public abstract java.lang.Object getNextValue();
-  public abstract java.lang.Object getPreviousValue();
-  public abstract void addChangeListener(javax.swing.event.ChangeListener);
-  public abstract void removeChangeListener(javax.swing.event.ChangeListener);
-}

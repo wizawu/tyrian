@@ -1,6 +1,0 @@
-Compiled from "ProcAMD64ThreadContext.java"
-public class sun.jvm.hotspot.debugger.proc.amd64.ProcAMD64ThreadContext extends sun.jvm.hotspot.debugger.amd64.AMD64ThreadContext {
-  public sun.jvm.hotspot.debugger.proc.amd64.ProcAMD64ThreadContext(sun.jvm.hotspot.debugger.proc.ProcDebugger);
-  public void setRegisterAsAddress(int, sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.Address getRegisterAsAddress(int);
-}

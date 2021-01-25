@@ -1,6 +1,0 @@
-Compiled from "AccessibleHTML.java"
-class javax.swing.text.html.AccessibleHTML implements javax.accessibility.Accessible {
-  public javax.swing.text.html.AccessibleHTML(javax.swing.JEditorPane);
-  javax.swing.text.html.AccessibleHTML$ElementInfo createElementInfo(javax.swing.text.Element, javax.swing.text.html.AccessibleHTML$ElementInfo);
-  public javax.accessibility.AccessibleContext getAccessibleContext();
-}

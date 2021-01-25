@@ -1,8 +1,0 @@
-Compiled from "Trie.java"
-public class com.sun.org.apache.xml.internal.utils.Trie {
-  public static final int ALPHA_SIZE;
-  com.sun.org.apache.xml.internal.utils.Trie$Node m_Root;
-  public com.sun.org.apache.xml.internal.utils.Trie();
-  public java.lang.Object put(java.lang.String, java.lang.Object);
-  public java.lang.Object get(java.lang.String);
-}

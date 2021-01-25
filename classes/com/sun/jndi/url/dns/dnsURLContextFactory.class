@@ -1,5 +1,0 @@
-Compiled from "dnsURLContextFactory.java"
-public class com.sun.jndi.url.dns.dnsURLContextFactory implements javax.naming.spi.ObjectFactory {
-  public com.sun.jndi.url.dns.dnsURLContextFactory();
-  public java.lang.Object getObjectInstance(java.lang.Object, javax.naming.Name, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
-}

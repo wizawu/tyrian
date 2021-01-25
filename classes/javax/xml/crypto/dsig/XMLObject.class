@@ -1,8 +1,0 @@
-Compiled from "XMLObject.java"
-public interface javax.xml.crypto.dsig.XMLObject extends javax.xml.crypto.XMLStructure {
-  public static final java.lang.String TYPE;
-  public abstract java.util.List<javax.xml.crypto.XMLStructure> getContent();
-  public abstract java.lang.String getId();
-  public abstract java.lang.String getMimeType();
-  public abstract java.lang.String getEncoding();
-}

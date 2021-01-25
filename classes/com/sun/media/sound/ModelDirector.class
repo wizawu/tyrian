@@ -1,6 +1,0 @@
-Compiled from "ModelDirector.java"
-public interface com.sun.media.sound.ModelDirector {
-  public abstract void noteOn(int, int);
-  public abstract void noteOff(int, int);
-  public abstract void close();
-}

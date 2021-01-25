@@ -1,5 +1,0 @@
-Compiled from "ciArrayKlass.java"
-public class sun.jvm.hotspot.ci.ciArrayKlass extends sun.jvm.hotspot.ci.ciKlass {
-  public sun.jvm.hotspot.ci.ciArrayKlass(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

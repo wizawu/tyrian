@@ -1,9 +1,0 @@
-Compiled from "MessageHandler.java"
-public interface jdk.internal.jshell.tool.MessageHandler {
-  public abstract void fluff(java.lang.String, java.lang.Object...);
-  public abstract void fluffmsg(java.lang.String, java.lang.Object...);
-  public abstract void hard(java.lang.String, java.lang.Object...);
-  public abstract void hardmsg(java.lang.String, java.lang.Object...);
-  public abstract void errormsg(java.lang.String, java.lang.Object...);
-  public abstract boolean showFluff();
-}

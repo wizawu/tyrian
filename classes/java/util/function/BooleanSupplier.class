@@ -1,4 +1,0 @@
-Compiled from "BooleanSupplier.java"
-public interface java.util.function.BooleanSupplier {
-  public abstract boolean getAsBoolean();
-}

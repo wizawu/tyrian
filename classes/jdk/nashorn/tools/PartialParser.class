@@ -1,4 +1,0 @@
-Compiled from "PartialParser.java"
-public interface jdk.nashorn.tools.PartialParser {
-  public abstract int getLastExpressionStart(jdk.nashorn.internal.runtime.Context, java.lang.String);
-}

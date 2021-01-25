@@ -1,7 +1,0 @@
-Compiled from "ReadResult.java"
-public class sun.jvm.hotspot.debugger.ReadResult implements java.io.Serializable {
-  public sun.jvm.hotspot.debugger.ReadResult(byte[]);
-  public sun.jvm.hotspot.debugger.ReadResult(long);
-  public byte[] getData();
-  public long getFailureAddress();
-}

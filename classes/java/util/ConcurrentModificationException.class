@@ -1,7 +1,0 @@
-Compiled from "ConcurrentModificationException.java"
-public class java.util.ConcurrentModificationException extends java.lang.RuntimeException {
-  public java.util.ConcurrentModificationException();
-  public java.util.ConcurrentModificationException(java.lang.String);
-  public java.util.ConcurrentModificationException(java.lang.Throwable);
-  public java.util.ConcurrentModificationException(java.lang.String, java.lang.Throwable);
-}

@@ -1,3 +1,0 @@
-Compiled from "PrimitiveType.java"
-public interface javax.lang.model.type.PrimitiveType extends javax.lang.model.type.TypeMirror {
-}

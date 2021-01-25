@@ -1,8 +1,0 @@
-Compiled from "AnnotationDescImpl.java"
-public class com.sun.tools.javadoc.main.AnnotationDescImpl implements com.sun.javadoc.AnnotationDesc {
-  com.sun.tools.javadoc.main.AnnotationDescImpl(com.sun.tools.javadoc.main.DocEnv, com.sun.tools.javac.code.Attribute$Compound);
-  public com.sun.javadoc.AnnotationTypeDoc annotationType();
-  public com.sun.javadoc.AnnotationDesc$ElementValuePair[] elementValues();
-  public boolean isSynthesized();
-  public java.lang.String toString();
-}

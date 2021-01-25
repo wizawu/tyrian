@@ -1,7 +1,0 @@
-Compiled from "DirectAudioDeviceProvider.java"
-public final class com.sun.media.sound.DirectAudioDeviceProvider extends javax.sound.sampled.spi.MixerProvider {
-  public com.sun.media.sound.DirectAudioDeviceProvider();
-  public javax.sound.sampled.Mixer$Info[] getMixerInfo();
-  public javax.sound.sampled.Mixer getMixer(javax.sound.sampled.Mixer$Info);
-  static {};
-}

@@ -1,6 +1,0 @@
-Compiled from "CSSPageRule.java"
-public interface org.w3c.dom.css.CSSPageRule extends org.w3c.dom.css.CSSRule {
-  public abstract java.lang.String getSelectorText();
-  public abstract void setSelectorText(java.lang.String) throws org.w3c.dom.DOMException;
-  public abstract org.w3c.dom.css.CSSStyleDeclaration getStyle();
-}

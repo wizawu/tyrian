@@ -1,5 +1,0 @@
-Compiled from "HTMLTitleElement.java"
-public interface org.w3c.dom.html.HTMLTitleElement extends org.w3c.dom.html.HTMLElement {
-  public abstract java.lang.String getText();
-  public abstract void setText(java.lang.String);
-}

@@ -1,4 +1,0 @@
-Compiled from "Container.java"
-public class jdk.internal.platform.Container {
-  public static jdk.internal.platform.Metrics metrics();
-}

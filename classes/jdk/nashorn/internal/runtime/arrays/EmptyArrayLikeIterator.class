@@ -1,7 +1,0 @@
-Compiled from "EmptyArrayLikeIterator.java"
-final class jdk.nashorn.internal.runtime.arrays.EmptyArrayLikeIterator extends jdk.nashorn.internal.runtime.arrays.ArrayLikeIterator<java.lang.Object> {
-  jdk.nashorn.internal.runtime.arrays.EmptyArrayLikeIterator();
-  public boolean hasNext();
-  public java.lang.Object next();
-  public long getLength();
-}

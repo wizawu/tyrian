@@ -1,6 +1,0 @@
-Compiled from "NodeChangeEvent.java"
-public class java.util.prefs.NodeChangeEvent extends java.util.EventObject {
-  public java.util.prefs.NodeChangeEvent(java.util.prefs.Preferences, java.util.prefs.Preferences);
-  public java.util.prefs.Preferences getParent();
-  public java.util.prefs.Preferences getChild();
-}

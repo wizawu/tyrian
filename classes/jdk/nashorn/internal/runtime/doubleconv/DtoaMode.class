@@ -1,9 +1,0 @@
-Compiled from "DtoaMode.java"
-public final class jdk.nashorn.internal.runtime.doubleconv.DtoaMode extends java.lang.Enum<jdk.nashorn.internal.runtime.doubleconv.DtoaMode> {
-  public static final jdk.nashorn.internal.runtime.doubleconv.DtoaMode SHORTEST;
-  public static final jdk.nashorn.internal.runtime.doubleconv.DtoaMode FIXED;
-  public static final jdk.nashorn.internal.runtime.doubleconv.DtoaMode PRECISION;
-  public static jdk.nashorn.internal.runtime.doubleconv.DtoaMode[] values();
-  public static jdk.nashorn.internal.runtime.doubleconv.DtoaMode valueOf(java.lang.String);
-  static {};
-}

@@ -1,7 +1,0 @@
-Compiled from "SALauncherLoader.java"
-public class sun.jvm.hotspot.SALauncherLoader extends java.net.URLClassLoader {
-  public java.lang.String findLibrary(java.lang.String);
-  public sun.jvm.hotspot.SALauncherLoader(java.lang.ClassLoader);
-  public synchronized java.lang.Class loadClass(java.lang.String, boolean) throws java.lang.ClassNotFoundException;
-  protected java.security.PermissionCollection getPermissions(java.security.CodeSource);
-}

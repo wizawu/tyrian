@@ -1,4 +1,0 @@
-Compiled from "LongCounter.java"
-public interface sun.management.counter.LongCounter extends sun.management.counter.Counter {
-  public abstract long longValue();
-}

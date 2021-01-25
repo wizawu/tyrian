@@ -1,4 +1,0 @@
-Compiled from "ConversionComparator.java"
-public interface jdk.dynalink.linker.ConversionComparator {
-  public abstract jdk.dynalink.linker.ConversionComparator$Comparison compareConversion(java.lang.Class<?>, java.lang.Class<?>, java.lang.Class<?>);
-}

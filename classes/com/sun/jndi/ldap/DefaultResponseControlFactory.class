@@ -1,5 +1,0 @@
-Compiled from "DefaultResponseControlFactory.java"
-public class com.sun.jndi.ldap.DefaultResponseControlFactory extends javax.naming.ldap.ControlFactory {
-  public com.sun.jndi.ldap.DefaultResponseControlFactory();
-  public javax.naming.ldap.Control getControlInstance(javax.naming.ldap.Control) throws javax.naming.NamingException;
-}

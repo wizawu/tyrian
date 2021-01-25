@@ -1,8 +1,0 @@
-Compiled from "CaseTreeImpl.java"
-final class jdk.nashorn.api.tree.CaseTreeImpl extends jdk.nashorn.api.tree.TreeImpl implements jdk.nashorn.api.tree.CaseTree {
-  public jdk.nashorn.api.tree.CaseTreeImpl(jdk.nashorn.internal.ir.CaseNode, jdk.nashorn.api.tree.ExpressionTree, java.util.List<? extends jdk.nashorn.api.tree.StatementTree>);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public java.util.List<? extends jdk.nashorn.api.tree.StatementTree> getStatements();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

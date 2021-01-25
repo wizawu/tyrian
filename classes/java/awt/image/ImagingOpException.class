@@ -1,4 +1,0 @@
-Compiled from "ImagingOpException.java"
-public class java.awt.image.ImagingOpException extends java.lang.RuntimeException {
-  public java.awt.image.ImagingOpException(java.lang.String);
-}

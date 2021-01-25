@@ -1,6 +1,0 @@
-Compiled from "SimpleElementVisitor7.java"
-public class javax.lang.model.util.SimpleElementVisitor7<R, P> extends javax.lang.model.util.SimpleElementVisitor6<R, P> {
-  protected javax.lang.model.util.SimpleElementVisitor7();
-  protected javax.lang.model.util.SimpleElementVisitor7(R);
-  public R visitVariable(javax.lang.model.element.VariableElement, P);
-}

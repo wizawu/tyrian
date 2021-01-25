@@ -1,6 +1,0 @@
-Compiled from "ILOAD.java"
-public class com.sun.org.apache.bcel.internal.generic.ILOAD extends com.sun.org.apache.bcel.internal.generic.LoadInstruction {
-  com.sun.org.apache.bcel.internal.generic.ILOAD();
-  public com.sun.org.apache.bcel.internal.generic.ILOAD(int);
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

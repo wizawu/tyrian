@@ -1,5 +1,0 @@
-Compiled from "DynamicFileAttributeView.java"
-interface sun.nio.fs.DynamicFileAttributeView {
-  public abstract void setAttribute(java.lang.String, java.lang.Object) throws java.io.IOException;
-  public abstract java.util.Map<java.lang.String, java.lang.Object> readAttributes(java.lang.String[]) throws java.io.IOException;
-}

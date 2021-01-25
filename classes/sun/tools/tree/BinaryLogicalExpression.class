@@ -1,7 +1,0 @@
-Compiled from "BinaryLogicalExpression.java"
-public abstract class sun.tools.tree.BinaryLogicalExpression extends sun.tools.tree.BinaryExpression {
-  public sun.tools.tree.BinaryLogicalExpression(int, long, sun.tools.tree.Expression, sun.tools.tree.Expression);
-  public sun.tools.tree.Vset checkValue(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>);
-  public abstract void checkCondition(sun.tools.java.Environment, sun.tools.tree.Context, sun.tools.tree.Vset, java.util.Hashtable<java.lang.Object, java.lang.Object>, sun.tools.tree.ConditionVars);
-  public sun.tools.tree.Expression inline(sun.tools.java.Environment, sun.tools.tree.Context);
-}

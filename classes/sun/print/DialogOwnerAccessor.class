@@ -1,9 +1,0 @@
-Compiled from "DialogOwnerAccessor.java"
-public abstract class sun.print.DialogOwnerAccessor {
-  public static sun.print.DialogOwnerAccessor accessor;
-  public sun.print.DialogOwnerAccessor();
-  public abstract long getOwnerID(javax.print.attribute.standard.DialogOwner);
-  public static void setAccessor(sun.print.DialogOwnerAccessor);
-  public static long getID(javax.print.attribute.standard.DialogOwner);
-  static {};
-}

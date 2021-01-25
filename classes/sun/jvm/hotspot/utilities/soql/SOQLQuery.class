@@ -1,9 +1,0 @@
-Compiled from "SOQLQuery.java"
-class sun.jvm.hotspot.utilities.soql.SOQLQuery {
-  java.lang.String selectExpr;
-  boolean isInstanceOf;
-  java.lang.String className;
-  java.lang.String identifier;
-  java.lang.String whereExpr;
-  sun.jvm.hotspot.utilities.soql.SOQLQuery(java.lang.String, boolean, java.lang.String, java.lang.String, java.lang.String);
-}

@@ -1,6 +1,0 @@
-Compiled from "JavadocFormatter.java"
-public class jdk.internal.shellsupport.doc.JavadocFormatter {
-  public jdk.internal.shellsupport.doc.JavadocFormatter(int, boolean);
-  public java.lang.String formatJavadoc(java.lang.String, java.lang.String);
-  static {};
-}

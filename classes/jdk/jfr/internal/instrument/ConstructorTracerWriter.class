@@ -1,5 +1,0 @@
-Compiled from "ConstructorTracerWriter.java"
-final class jdk.jfr.internal.instrument.ConstructorTracerWriter extends jdk.internal.org.objectweb.asm.ClassVisitor {
-  static byte[] generateBytes(java.lang.Class<?>, byte[]) throws java.io.IOException;
-  public jdk.internal.org.objectweb.asm.MethodVisitor visitMethod(int, java.lang.String, java.lang.String, java.lang.String, java.lang.String[]);
-}

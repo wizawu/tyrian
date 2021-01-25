@@ -1,8 +1,0 @@
-Compiled from "ModelOscillatorStream.java"
-public interface com.sun.media.sound.ModelOscillatorStream {
-  public abstract void setPitch(float);
-  public abstract void noteOn(javax.sound.midi.MidiChannel, javax.sound.midi.VoiceStatus, int, int);
-  public abstract void noteOff(int);
-  public abstract int read(float[][], int, int) throws java.io.IOException;
-  public abstract void close() throws java.io.IOException;
-}

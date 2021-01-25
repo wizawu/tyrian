@@ -1,8 +1,0 @@
-Compiled from "LinkOutputImpl.java"
-public class jdk.javadoc.internal.doclets.formats.html.LinkOutputImpl implements jdk.javadoc.internal.doclets.toolkit.util.links.LinkOutput {
-  public java.lang.StringBuilder output;
-  public jdk.javadoc.internal.doclets.formats.html.LinkOutputImpl();
-  public void append(java.lang.Object);
-  public void insert(int, java.lang.Object);
-  public java.lang.String toString();
-}

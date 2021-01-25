@@ -1,8 +1,0 @@
-Compiled from "SealedObjectForKeyProtector.java"
-final class com.sun.crypto.provider.SealedObjectForKeyProtector extends javax.crypto.SealedObject {
-  static final long serialVersionUID;
-  com.sun.crypto.provider.SealedObjectForKeyProtector(java.io.Serializable, javax.crypto.Cipher) throws java.io.IOException, javax.crypto.IllegalBlockSizeException;
-  com.sun.crypto.provider.SealedObjectForKeyProtector(javax.crypto.SealedObject);
-  java.security.AlgorithmParameters getParameters();
-  final java.security.Key getKey(javax.crypto.Cipher, int) throws java.io.IOException, java.lang.ClassNotFoundException, javax.crypto.IllegalBlockSizeException, javax.crypto.BadPaddingException;
-}

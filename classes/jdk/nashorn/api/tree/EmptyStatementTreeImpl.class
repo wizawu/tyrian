@@ -1,6 +1,0 @@
-Compiled from "EmptyStatementTreeImpl.java"
-final class jdk.nashorn.api.tree.EmptyStatementTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.EmptyStatementTree {
-  jdk.nashorn.api.tree.EmptyStatementTreeImpl(jdk.nashorn.internal.ir.EmptyNode);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

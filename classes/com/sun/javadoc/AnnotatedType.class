@@ -1,5 +1,0 @@
-Compiled from "AnnotatedType.java"
-public interface com.sun.javadoc.AnnotatedType extends com.sun.javadoc.Type {
-  public abstract com.sun.javadoc.AnnotationDesc[] annotations();
-  public abstract com.sun.javadoc.Type underlyingType();
-}

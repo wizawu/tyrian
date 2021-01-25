@@ -1,4 +1,0 @@
-Compiled from "ThreadDeathRequest.java"
-public interface com.sun.jdi.request.ThreadDeathRequest extends com.sun.jdi.request.EventRequest {
-  public abstract void addThreadFilter(com.sun.jdi.ThreadReference);
-}

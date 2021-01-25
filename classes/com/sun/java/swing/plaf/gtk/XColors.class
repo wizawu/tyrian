@@ -1,6 +1,0 @@
-Compiled from "XColors.java"
-class com.sun.java.swing.plaf.gtk.XColors {
-  com.sun.java.swing.plaf.gtk.XColors();
-  static java.awt.Color lookupColor(java.lang.String);
-  static {};
-}

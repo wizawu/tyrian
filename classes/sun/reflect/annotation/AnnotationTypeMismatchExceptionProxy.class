@@ -1,7 +1,0 @@
-Compiled from "AnnotationTypeMismatchExceptionProxy.java"
-class sun.reflect.annotation.AnnotationTypeMismatchExceptionProxy extends sun.reflect.annotation.ExceptionProxy {
-  sun.reflect.annotation.AnnotationTypeMismatchExceptionProxy(java.lang.String);
-  sun.reflect.annotation.AnnotationTypeMismatchExceptionProxy setMember(java.lang.reflect.Method);
-  protected java.lang.RuntimeException generateException();
-  public java.lang.String toString();
-}

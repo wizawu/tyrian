@@ -1,4 +1,0 @@
-Compiled from "AWTEventListener.java"
-public interface java.awt.event.AWTEventListener extends java.util.EventListener {
-  public abstract void eventDispatched(java.awt.AWTEvent);
-}

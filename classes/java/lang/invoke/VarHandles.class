@@ -1,8 +1,0 @@
-Compiled from "VarHandles.java"
-final class java.lang.invoke.VarHandles {
-  java.lang.invoke.VarHandles();
-  static java.lang.invoke.VarHandle makeFieldHandle(java.lang.invoke.MemberName, java.lang.Class<?>, java.lang.Class<?>, boolean);
-  static java.lang.invoke.VarHandle makeArrayElementHandle(java.lang.Class<?>);
-  static java.lang.invoke.VarHandle byteArrayViewHandle(java.lang.Class<?>, boolean);
-  static java.lang.invoke.VarHandle makeByteBufferViewHandle(java.lang.Class<?>, boolean);
-}

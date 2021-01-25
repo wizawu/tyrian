@@ -1,5 +1,0 @@
-Compiled from "I18N.java"
-public final class com.sun.imageio.plugins.common.I18N extends com.sun.imageio.plugins.common.I18NImpl {
-  public com.sun.imageio.plugins.common.I18N();
-  public static java.lang.String getString(java.lang.String);
-}

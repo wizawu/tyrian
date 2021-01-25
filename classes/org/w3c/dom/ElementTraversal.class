@@ -1,8 +1,0 @@
-Compiled from "ElementTraversal.java"
-public interface org.w3c.dom.ElementTraversal {
-  public abstract org.w3c.dom.Element getFirstElementChild();
-  public abstract org.w3c.dom.Element getLastElementChild();
-  public abstract org.w3c.dom.Element getPreviousElementSibling();
-  public abstract org.w3c.dom.Element getNextElementSibling();
-  public abstract int getChildElementCount();
-}

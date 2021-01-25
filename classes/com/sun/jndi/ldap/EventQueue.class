@@ -1,7 +1,0 @@
-Compiled from "EventQueue.java"
-final class com.sun.jndi.ldap.EventQueue implements java.lang.Runnable {
-  com.sun.jndi.ldap.EventQueue();
-  synchronized void enqueue(java.util.EventObject, java.util.Vector<javax.naming.event.NamingListener>);
-  public void run();
-  void stop();
-}

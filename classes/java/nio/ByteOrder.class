@@ -1,8 +1,0 @@
-Compiled from "ByteOrder.java"
-public final class java.nio.ByteOrder {
-  public static final java.nio.ByteOrder BIG_ENDIAN;
-  public static final java.nio.ByteOrder LITTLE_ENDIAN;
-  public static java.nio.ByteOrder nativeOrder();
-  public java.lang.String toString();
-  static {};
-}

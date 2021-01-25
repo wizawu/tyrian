@@ -1,6 +1,0 @@
-Compiled from "CSSImportRule.java"
-public interface org.w3c.dom.css.CSSImportRule extends org.w3c.dom.css.CSSRule {
-  public abstract java.lang.String getHref();
-  public abstract org.w3c.dom.stylesheets.MediaList getMedia();
-  public abstract org.w3c.dom.css.CSSStyleSheet getStyleSheet();
-}

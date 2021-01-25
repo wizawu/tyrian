@@ -1,5 +1,0 @@
-Compiled from "AppHiddenListener.java"
-public interface java.awt.desktop.AppHiddenListener extends java.awt.desktop.SystemEventListener {
-  public abstract void appHidden(java.awt.desktop.AppHiddenEvent);
-  public abstract void appUnhidden(java.awt.desktop.AppHiddenEvent);
-}

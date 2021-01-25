@@ -1,9 +1,0 @@
-Compiled from "NodeListCache.java"
-class com.sun.org.apache.xerces.internal.dom.NodeListCache implements java.io.Serializable {
-  int fLength;
-  int fChildIndex;
-  com.sun.org.apache.xerces.internal.dom.ChildNode fChild;
-  com.sun.org.apache.xerces.internal.dom.ParentNode fOwner;
-  com.sun.org.apache.xerces.internal.dom.NodeListCache next;
-  com.sun.org.apache.xerces.internal.dom.NodeListCache(com.sun.org.apache.xerces.internal.dom.ParentNode);
-}

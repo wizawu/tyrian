@@ -1,6 +1,0 @@
-Compiled from "VmListener.java"
-public interface sun.jvmstat.monitor.event.VmListener extends java.util.EventListener {
-  public abstract void monitorStatusChanged(sun.jvmstat.monitor.event.MonitorStatusChangeEvent);
-  public abstract void monitorsUpdated(sun.jvmstat.monitor.event.VmEvent);
-  public abstract void disconnected(sun.jvmstat.monitor.event.VmEvent);
-}

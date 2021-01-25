@@ -1,9 +1,0 @@
-Compiled from "LongField.java"
-public class sun.jvm.hotspot.oops.LongField extends sun.jvm.hotspot.oops.Field {
-  public sun.jvm.hotspot.oops.LongField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
-  public sun.jvm.hotspot.oops.LongField(sun.jvm.hotspot.types.JLongField, long);
-  public sun.jvm.hotspot.oops.LongField(sun.jvm.hotspot.oops.InstanceKlass, int);
-  public long getValue(sun.jvm.hotspot.oops.Oop);
-  public long getValue(sun.jvm.hotspot.runtime.VMObject);
-  public void setValue(sun.jvm.hotspot.oops.Oop, long);
-}

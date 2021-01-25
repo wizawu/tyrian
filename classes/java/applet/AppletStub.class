@@ -1,9 +1,0 @@
-Compiled from "AppletStub.java"
-public interface java.applet.AppletStub {
-  public abstract boolean isActive();
-  public abstract java.net.URL getDocumentBase();
-  public abstract java.net.URL getCodeBase();
-  public abstract java.lang.String getParameter(java.lang.String);
-  public abstract java.applet.AppletContext getAppletContext();
-  public abstract void appletResize(int, int);
-}

@@ -1,7 +1,0 @@
-Compiled from "ThrowTreeImpl.java"
-final class jdk.nashorn.api.tree.ThrowTreeImpl extends jdk.nashorn.api.tree.StatementTreeImpl implements jdk.nashorn.api.tree.ThrowTree {
-  jdk.nashorn.api.tree.ThrowTreeImpl(jdk.nashorn.internal.ir.ThrowNode, jdk.nashorn.api.tree.ExpressionTree);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

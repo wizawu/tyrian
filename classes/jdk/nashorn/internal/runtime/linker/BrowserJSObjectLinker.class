@@ -1,9 +1,0 @@
-Compiled from "BrowserJSObjectLinker.java"
-final class jdk.nashorn.internal.runtime.linker.BrowserJSObjectLinker implements jdk.dynalink.linker.TypeBasedGuardingDynamicLinker {
-  static final boolean $assertionsDisabled;
-  jdk.nashorn.internal.runtime.linker.BrowserJSObjectLinker(jdk.nashorn.internal.runtime.linker.NashornBeansLinker);
-  public boolean canLinkType(java.lang.Class<?>);
-  static boolean canLinkTypeStatic(java.lang.Class<?>);
-  public jdk.dynalink.linker.GuardedInvocation getGuardedInvocation(jdk.dynalink.linker.LinkRequest, jdk.dynalink.linker.LinkerServices) throws java.lang.Exception;
-  static {};
-}

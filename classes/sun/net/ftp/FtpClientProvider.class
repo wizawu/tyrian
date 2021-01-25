@@ -1,7 +1,0 @@
-Compiled from "FtpClientProvider.java"
-public abstract class sun.net.ftp.FtpClientProvider {
-  public abstract sun.net.ftp.FtpClient createFtpClient();
-  protected sun.net.ftp.FtpClientProvider();
-  public static sun.net.ftp.FtpClientProvider provider();
-  static {};
-}

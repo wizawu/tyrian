@@ -1,8 +1,0 @@
-Compiled from "QualifiedAttributeValueExp.java"
-class javax.management.QualifiedAttributeValueExp extends javax.management.AttributeValueExp {
-  public javax.management.QualifiedAttributeValueExp();
-  public javax.management.QualifiedAttributeValueExp(java.lang.String, java.lang.String);
-  public java.lang.String getAttrClassName();
-  public javax.management.ValueExp apply(javax.management.ObjectName) throws javax.management.BadStringOperationException, javax.management.BadBinaryOpValueExpException, javax.management.BadAttributeValueExpException, javax.management.InvalidApplicationException;
-  public java.lang.String toString();
-}

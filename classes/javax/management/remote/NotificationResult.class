@@ -1,8 +1,0 @@
-Compiled from "NotificationResult.java"
-public class javax.management.remote.NotificationResult implements java.io.Serializable {
-  public javax.management.remote.NotificationResult(long, long, javax.management.remote.TargetedNotification[]);
-  public long getEarliestSequenceNumber();
-  public long getNextSequenceNumber();
-  public javax.management.remote.TargetedNotification[] getTargetedNotifications();
-  public java.lang.String toString();
-}

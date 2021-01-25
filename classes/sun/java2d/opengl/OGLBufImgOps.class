@@ -1,5 +1,0 @@
-Compiled from "OGLBufImgOps.java"
-class sun.java2d.opengl.OGLBufImgOps extends sun.java2d.pipe.BufferedBufImgOps {
-  sun.java2d.opengl.OGLBufImgOps();
-  static boolean renderImageWithOp(sun.java2d.SunGraphics2D, java.awt.image.BufferedImage, java.awt.image.BufferedImageOp, int, int);
-}

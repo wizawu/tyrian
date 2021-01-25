@@ -1,8 +1,0 @@
-Compiled from "MidiDeviceReceiverEnvelope.java"
-public final class com.sun.media.sound.MidiDeviceReceiverEnvelope implements javax.sound.midi.MidiDeviceReceiver {
-  public com.sun.media.sound.MidiDeviceReceiverEnvelope(javax.sound.midi.MidiDevice, javax.sound.midi.Receiver);
-  public void close();
-  public void send(javax.sound.midi.MidiMessage, long);
-  public javax.sound.midi.MidiDevice getMidiDevice();
-  public javax.sound.midi.Receiver getReceiver();
-}

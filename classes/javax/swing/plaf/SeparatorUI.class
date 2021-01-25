@@ -1,4 +1,0 @@
-Compiled from "SeparatorUI.java"
-public abstract class javax.swing.plaf.SeparatorUI extends javax.swing.plaf.ComponentUI {
-  public javax.swing.plaf.SeparatorUI();
-}

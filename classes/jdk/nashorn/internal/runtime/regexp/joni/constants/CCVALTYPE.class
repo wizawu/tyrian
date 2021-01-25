@@ -1,9 +1,0 @@
-Compiled from "CCVALTYPE.java"
-public final class jdk.nashorn.internal.runtime.regexp.joni.constants.CCVALTYPE extends java.lang.Enum<jdk.nashorn.internal.runtime.regexp.joni.constants.CCVALTYPE> {
-  public static final jdk.nashorn.internal.runtime.regexp.joni.constants.CCVALTYPE SB;
-  public static final jdk.nashorn.internal.runtime.regexp.joni.constants.CCVALTYPE CODE_POINT;
-  public static final jdk.nashorn.internal.runtime.regexp.joni.constants.CCVALTYPE CLASS;
-  public static jdk.nashorn.internal.runtime.regexp.joni.constants.CCVALTYPE[] values();
-  public static jdk.nashorn.internal.runtime.regexp.joni.constants.CCVALTYPE valueOf(java.lang.String);
-  static {};
-}

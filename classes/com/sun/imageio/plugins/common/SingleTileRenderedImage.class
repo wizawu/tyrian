@@ -1,6 +1,0 @@
-Compiled from "SingleTileRenderedImage.java"
-public class com.sun.imageio.plugins.common.SingleTileRenderedImage extends com.sun.imageio.plugins.common.SimpleRenderedImage {
-  java.awt.image.Raster ras;
-  public com.sun.imageio.plugins.common.SingleTileRenderedImage(java.awt.image.Raster, java.awt.image.ColorModel);
-  public java.awt.image.Raster getTile(int, int);
-}

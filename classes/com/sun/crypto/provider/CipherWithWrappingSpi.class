@@ -1,6 +1,0 @@
-Compiled from "CipherWithWrappingSpi.java"
-public abstract class com.sun.crypto.provider.CipherWithWrappingSpi extends javax.crypto.CipherSpi {
-  public com.sun.crypto.provider.CipherWithWrappingSpi();
-  protected final byte[] engineWrap(java.security.Key) throws javax.crypto.IllegalBlockSizeException, java.security.InvalidKeyException;
-  protected final java.security.Key engineUnwrap(byte[], java.lang.String, int) throws java.security.InvalidKeyException, java.security.NoSuchAlgorithmException;
-}

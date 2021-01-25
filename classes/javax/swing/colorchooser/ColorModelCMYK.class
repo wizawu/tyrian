@@ -1,6 +1,0 @@
-Compiled from "ColorModelCMYK.java"
-final class javax.swing.colorchooser.ColorModelCMYK extends javax.swing.colorchooser.ColorModel {
-  javax.swing.colorchooser.ColorModelCMYK();
-  void setColor(int, float[]);
-  int getColor(float[]);
-}

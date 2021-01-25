@@ -1,7 +1,0 @@
-Compiled from "DocumentCache.java"
-public final class com.sun.org.apache.xalan.internal.xsltc.dom.DocumentCache implements com.sun.org.apache.xalan.internal.xsltc.DOMCache {
-  public com.sun.org.apache.xalan.internal.xsltc.dom.DocumentCache(int) throws org.xml.sax.SAXException;
-  public com.sun.org.apache.xalan.internal.xsltc.dom.DocumentCache(int, com.sun.org.apache.xalan.internal.xsltc.dom.XSLTCDTMManager) throws org.xml.sax.SAXException;
-  public com.sun.org.apache.xalan.internal.xsltc.DOM retrieveDocument(java.lang.String, java.lang.String, com.sun.org.apache.xalan.internal.xsltc.Translet);
-  public void getStatistics(java.io.PrintWriter);
-}

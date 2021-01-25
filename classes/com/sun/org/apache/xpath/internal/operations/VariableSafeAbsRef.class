@@ -1,6 +1,0 @@
-Compiled from "VariableSafeAbsRef.java"
-public class com.sun.org.apache.xpath.internal.operations.VariableSafeAbsRef extends com.sun.org.apache.xpath.internal.operations.Variable {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.operations.VariableSafeAbsRef();
-  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext, boolean) throws javax.xml.transform.TransformerException;
-}

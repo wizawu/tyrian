@@ -1,7 +1,0 @@
-Compiled from "CSSStyleSheet.java"
-public interface org.w3c.dom.css.CSSStyleSheet extends org.w3c.dom.stylesheets.StyleSheet {
-  public abstract org.w3c.dom.css.CSSRule getOwnerRule();
-  public abstract org.w3c.dom.css.CSSRuleList getCssRules();
-  public abstract int insertRule(java.lang.String, int) throws org.w3c.dom.DOMException;
-  public abstract void deleteRule(int) throws org.w3c.dom.DOMException;
-}

@@ -1,8 +1,0 @@
-Compiled from "AuthenticatorKeys.java"
-public final class sun.net.www.protocol.http.AuthenticatorKeys {
-  public static final java.lang.String DEFAULT;
-  public static java.lang.String computeKey(java.net.Authenticator);
-  public static java.lang.String getKey(java.net.Authenticator);
-  public static void setAuthenticatorKeyAccess(sun.net.www.protocol.http.AuthenticatorKeys$AuthenticatorKeyAccess);
-  static {};
-}

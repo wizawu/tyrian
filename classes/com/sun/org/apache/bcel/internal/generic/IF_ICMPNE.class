@@ -1,7 +1,0 @@
-Compiled from "IF_ICMPNE.java"
-public class com.sun.org.apache.bcel.internal.generic.IF_ICMPNE extends com.sun.org.apache.bcel.internal.generic.IfInstruction {
-  com.sun.org.apache.bcel.internal.generic.IF_ICMPNE();
-  public com.sun.org.apache.bcel.internal.generic.IF_ICMPNE(com.sun.org.apache.bcel.internal.generic.InstructionHandle);
-  public com.sun.org.apache.bcel.internal.generic.IfInstruction negate();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

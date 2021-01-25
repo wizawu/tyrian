@@ -1,6 +1,0 @@
-Compiled from "Main.java"
-public class com.sun.tools.jdeps.Main {
-  public com.sun.tools.jdeps.Main();
-  public static void main(java.lang.String...) throws java.lang.Exception;
-  public static int run(java.lang.String[], java.io.PrintWriter);
-}

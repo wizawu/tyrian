@@ -1,5 +1,0 @@
-Compiled from "CloneNotSupportedException.java"
-public class java.lang.CloneNotSupportedException extends java.lang.Exception {
-  public java.lang.CloneNotSupportedException();
-  public java.lang.CloneNotSupportedException(java.lang.String);
-}

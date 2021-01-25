@@ -1,7 +1,0 @@
-Compiled from "InstanceMirrorKlass.java"
-public class sun.jvm.hotspot.oops.InstanceMirrorKlass extends sun.jvm.hotspot.oops.InstanceKlass {
-  public sun.jvm.hotspot.oops.InstanceMirrorKlass(sun.jvm.hotspot.debugger.Address);
-  public long getObjectSize(sun.jvm.hotspot.oops.Oop);
-  public void iterateNonStaticFields(sun.jvm.hotspot.oops.OopVisitor, sun.jvm.hotspot.oops.Oop);
-  static {};
-}

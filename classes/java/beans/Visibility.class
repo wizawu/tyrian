@@ -1,7 +1,0 @@
-Compiled from "Visibility.java"
-public interface java.beans.Visibility {
-  public abstract boolean needsGui();
-  public abstract void dontUseGui();
-  public abstract void okToUseGui();
-  public abstract boolean avoidingGui();
-}

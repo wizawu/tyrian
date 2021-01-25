@@ -1,6 +1,0 @@
-Compiled from "CodeCacheVisitor.java"
-public interface sun.jvm.hotspot.code.CodeCacheVisitor {
-  public abstract void prologue(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
-  public abstract void visit(sun.jvm.hotspot.code.CodeBlob);
-  public abstract void epilogue();
-}

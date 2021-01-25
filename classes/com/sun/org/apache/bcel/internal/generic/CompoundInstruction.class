@@ -1,4 +1,0 @@
-Compiled from "CompoundInstruction.java"
-public interface com.sun.org.apache.bcel.internal.generic.CompoundInstruction {
-  public abstract com.sun.org.apache.bcel.internal.generic.InstructionList getInstructionList();
-}

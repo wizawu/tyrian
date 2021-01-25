@@ -1,5 +1,0 @@
-Compiled from "Tree.java"
-public interface com.sun.source.tree.Tree {
-  public abstract com.sun.source.tree.Tree$Kind getKind();
-  public abstract <R, D> R accept(com.sun.source.tree.TreeVisitor<R, D>, D);
-}

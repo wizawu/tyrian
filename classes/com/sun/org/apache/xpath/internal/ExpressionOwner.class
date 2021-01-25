@@ -1,5 +1,0 @@
-Compiled from "ExpressionOwner.java"
-public interface com.sun.org.apache.xpath.internal.ExpressionOwner {
-  public abstract com.sun.org.apache.xpath.internal.Expression getExpression();
-  public abstract void setExpression(com.sun.org.apache.xpath.internal.Expression);
-}

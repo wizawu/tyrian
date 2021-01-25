@@ -1,4 +1,0 @@
-Compiled from "XMLStreamWriterBase.java"
-public interface com.sun.xml.internal.stream.writers.XMLStreamWriterBase extends javax.xml.stream.XMLStreamWriter {
-  public abstract void writeStartDocument(java.lang.String, java.lang.String, boolean, boolean) throws javax.xml.stream.XMLStreamException;
-}

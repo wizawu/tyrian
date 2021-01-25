@@ -1,8 +1,0 @@
-Compiled from "JMXSubjectDomainCombiner.java"
-public class com.sun.jmx.remote.security.JMXSubjectDomainCombiner extends javax.security.auth.SubjectDomainCombiner {
-  public com.sun.jmx.remote.security.JMXSubjectDomainCombiner(javax.security.auth.Subject);
-  public java.security.ProtectionDomain[] combine(java.security.ProtectionDomain[], java.security.ProtectionDomain[]);
-  public static java.security.AccessControlContext getContext(javax.security.auth.Subject);
-  public static java.security.AccessControlContext getDomainCombinerContext(javax.security.auth.Subject);
-  static {};
-}

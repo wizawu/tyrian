@@ -1,8 +1,0 @@
-Compiled from "MonitorStatusChangeEvent.java"
-public class sun.jvmstat.monitor.event.MonitorStatusChangeEvent extends sun.jvmstat.monitor.event.VmEvent {
-  protected java.util.List<sun.jvmstat.monitor.Monitor> inserted;
-  protected java.util.List<sun.jvmstat.monitor.Monitor> removed;
-  public sun.jvmstat.monitor.event.MonitorStatusChangeEvent(sun.jvmstat.monitor.MonitoredVm, java.util.List<sun.jvmstat.monitor.Monitor>, java.util.List<sun.jvmstat.monitor.Monitor>);
-  public java.util.List<sun.jvmstat.monitor.Monitor> getInserted();
-  public java.util.List<sun.jvmstat.monitor.Monitor> getRemoved();
-}

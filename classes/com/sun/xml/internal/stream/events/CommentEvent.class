@@ -1,9 +1,0 @@
-Compiled from "CommentEvent.java"
-public class com.sun.xml.internal.stream.events.CommentEvent extends com.sun.xml.internal.stream.events.DummyEvent implements javax.xml.stream.events.Comment {
-  public com.sun.xml.internal.stream.events.CommentEvent();
-  public com.sun.xml.internal.stream.events.CommentEvent(java.lang.String);
-  protected void init();
-  public java.lang.String toString();
-  public java.lang.String getText();
-  protected void writeAsEncodedUnicodeEx(java.io.Writer) throws java.io.IOException;
-}

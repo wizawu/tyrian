@@ -1,7 +1,0 @@
-Compiled from "BasicCheckBoxUI.java"
-public class javax.swing.plaf.basic.BasicCheckBoxUI extends javax.swing.plaf.basic.BasicRadioButtonUI {
-  public javax.swing.plaf.basic.BasicCheckBoxUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-  public java.lang.String getPropertyPrefix();
-  static {};
-}

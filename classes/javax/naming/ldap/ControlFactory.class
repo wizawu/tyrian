@@ -1,6 +1,0 @@
-Compiled from "ControlFactory.java"
-public abstract class javax.naming.ldap.ControlFactory {
-  protected javax.naming.ldap.ControlFactory();
-  public abstract javax.naming.ldap.Control getControlInstance(javax.naming.ldap.Control) throws javax.naming.NamingException;
-  public static javax.naming.ldap.Control getControlInstance(javax.naming.ldap.Control, javax.naming.Context, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
-}

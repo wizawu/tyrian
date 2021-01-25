@@ -1,5 +1,0 @@
-Compiled from "DoubleElementHandler.java"
-final class com.sun.beans.decoder.DoubleElementHandler extends com.sun.beans.decoder.StringElementHandler {
-  com.sun.beans.decoder.DoubleElementHandler();
-  public java.lang.Object getValue(java.lang.String);
-}

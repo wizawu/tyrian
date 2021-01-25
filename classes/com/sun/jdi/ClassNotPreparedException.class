@@ -1,5 +1,0 @@
-Compiled from "ClassNotPreparedException.java"
-public class com.sun.jdi.ClassNotPreparedException extends java.lang.RuntimeException {
-  public com.sun.jdi.ClassNotPreparedException();
-  public com.sun.jdi.ClassNotPreparedException(java.lang.String);
-}

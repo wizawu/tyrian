@@ -1,7 +1,0 @@
-Compiled from "ApplicationShutdownHooks.java"
-class java.lang.ApplicationShutdownHooks {
-  static synchronized void add(java.lang.Thread);
-  static synchronized boolean remove(java.lang.Thread);
-  static void runHooks();
-  static {};
-}

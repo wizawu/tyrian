@@ -1,9 +1,0 @@
-Compiled from "XSDAbstractParticleTraverser.java"
-abstract class com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractParticleTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractTraverser {
-  com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractParticleTraverser$ParticleArray fPArray;
-  com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractParticleTraverser(com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker);
-  com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl traverseAll(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar, int, com.sun.org.apache.xerces.internal.xs.XSObject);
-  com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl traverseSequence(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar, int, com.sun.org.apache.xerces.internal.xs.XSObject);
-  com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl traverseChoice(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar, int, com.sun.org.apache.xerces.internal.xs.XSObject);
-  protected boolean hasAllContent(com.sun.org.apache.xerces.internal.impl.xs.XSParticleDecl);
-}

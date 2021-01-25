@@ -1,5 +1,0 @@
-Compiled from "StringUIClientPropertyKey.java"
-public class sun.swing.StringUIClientPropertyKey implements javax.swing.UIClientPropertyKey {
-  public sun.swing.StringUIClientPropertyKey(java.lang.String);
-  public java.lang.String toString();
-}

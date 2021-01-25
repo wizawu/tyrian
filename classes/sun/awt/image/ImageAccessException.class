@@ -1,4 +1,0 @@
-Compiled from "ImageAccessException.java"
-public class sun.awt.image.ImageAccessException extends java.lang.Exception {
-  public sun.awt.image.ImageAccessException(java.lang.String);
-}

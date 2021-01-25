@@ -1,5 +1,0 @@
-Compiled from "JavaTimeSupplementary_no.java"
-public class sun.text.resources.ext.JavaTimeSupplementary_no extends sun.util.resources.OpenListResourceBundle {
-  public sun.text.resources.ext.JavaTimeSupplementary_no();
-  protected final java.lang.Object[][] getContents();
-}

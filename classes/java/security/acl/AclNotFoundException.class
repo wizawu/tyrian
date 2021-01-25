@@ -1,4 +1,0 @@
-Compiled from "AclNotFoundException.java"
-public class java.security.acl.AclNotFoundException extends java.lang.Exception {
-  public java.security.acl.AclNotFoundException();
-}

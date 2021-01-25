@@ -1,3 +1,0 @@
-Compiled from "DoubleType.java"
-public interface sun.jvm.hotspot.debugger.cdbg.DoubleType extends sun.jvm.hotspot.debugger.cdbg.Type {
-}

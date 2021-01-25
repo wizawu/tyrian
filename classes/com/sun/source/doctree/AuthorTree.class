@@ -1,4 +1,0 @@
-Compiled from "AuthorTree.java"
-public interface com.sun.source.doctree.AuthorTree extends com.sun.source.doctree.BlockTagTree {
-  public abstract java.util.List<? extends com.sun.source.doctree.DocTree> getName();
-}

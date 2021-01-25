@@ -1,6 +1,0 @@
-Compiled from "SafepointBlob.java"
-public class sun.jvm.hotspot.code.SafepointBlob extends sun.jvm.hotspot.code.SingletonBlob {
-  public sun.jvm.hotspot.code.SafepointBlob(sun.jvm.hotspot.debugger.Address);
-  public boolean isSafepointStub();
-  static {};
-}

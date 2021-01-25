@@ -1,9 +1,0 @@
-Compiled from "SocketAttachingConnector.java"
-public class com.sun.tools.jdi.SocketAttachingConnector extends com.sun.tools.jdi.GenericAttachingConnector {
-  static final java.lang.String ARG_PORT;
-  static final java.lang.String ARG_HOST;
-  public com.sun.tools.jdi.SocketAttachingConnector();
-  public com.sun.jdi.VirtualMachine attach(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
-  public java.lang.String name();
-  public java.lang.String description();
-}

@@ -1,5 +1,0 @@
-Compiled from "XalanXPathFactory.java"
-public class com.sun.org.apache.xml.internal.security.utils.XalanXPathFactory extends com.sun.org.apache.xml.internal.security.utils.XPathFactory {
-  public com.sun.org.apache.xml.internal.security.utils.XalanXPathFactory();
-  public com.sun.org.apache.xml.internal.security.utils.XPathAPI newXPathAPI();
-}

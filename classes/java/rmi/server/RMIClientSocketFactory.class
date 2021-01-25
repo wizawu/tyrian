@@ -1,4 +1,0 @@
-Compiled from "RMIClientSocketFactory.java"
-public interface java.rmi.server.RMIClientSocketFactory {
-  public abstract java.net.Socket createSocket(java.lang.String, int) throws java.io.IOException;
-}

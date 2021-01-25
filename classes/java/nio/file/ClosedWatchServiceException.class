@@ -1,5 +1,0 @@
-Compiled from "ClosedWatchServiceException.java"
-public class java.nio.file.ClosedWatchServiceException extends java.lang.IllegalStateException {
-  static final long serialVersionUID;
-  public java.nio.file.ClosedWatchServiceException();
-}

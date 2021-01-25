@@ -1,4 +1,0 @@
-Compiled from "DisposerRecord.java"
-public interface sun.java2d.DisposerRecord {
-  public abstract void dispose();
-}

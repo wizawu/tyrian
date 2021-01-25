@@ -1,5 +1,0 @@
-Compiled from "SocketInputStreamInstrumentor.java"
-final class jdk.jfr.internal.instrument.SocketInputStreamInstrumentor {
-  int read(byte[], int, int, int) throws java.io.IOException;
-  void silenceFindBugsUnwrittenField(java.net.InetAddress);
-}

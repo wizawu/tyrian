@@ -1,6 +1,0 @@
-Compiled from "RuntimeInvisibleAnnotations.java"
-public class com.sun.org.apache.bcel.internal.classfile.RuntimeInvisibleAnnotations extends com.sun.org.apache.bcel.internal.classfile.Annotations {
-  public com.sun.org.apache.bcel.internal.classfile.RuntimeInvisibleAnnotations(int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
-  public com.sun.org.apache.bcel.internal.classfile.Attribute copy(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
-  public final void dump(java.io.DataOutputStream) throws java.io.IOException;
-}

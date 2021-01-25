@@ -1,5 +1,0 @@
-Compiled from "DSUB.java"
-public class com.sun.org.apache.bcel.internal.generic.DSUB extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
-  public com.sun.org.apache.bcel.internal.generic.DSUB();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

@@ -1,8 +1,0 @@
-Compiled from "ConnectionBuilder.java"
-public interface java.sql.ConnectionBuilder {
-  public abstract java.sql.ConnectionBuilder user(java.lang.String);
-  public abstract java.sql.ConnectionBuilder password(java.lang.String);
-  public abstract java.sql.ConnectionBuilder shardingKey(java.sql.ShardingKey);
-  public abstract java.sql.ConnectionBuilder superShardingKey(java.sql.ShardingKey);
-  public abstract java.sql.Connection build() throws java.sql.SQLException;
-}

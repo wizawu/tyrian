@@ -1,5 +1,0 @@
-Compiled from "FilteredStepIterator.java"
-public final class com.sun.org.apache.xalan.internal.xsltc.dom.FilteredStepIterator extends com.sun.org.apache.xalan.internal.xsltc.dom.StepIterator {
-  public com.sun.org.apache.xalan.internal.xsltc.dom.FilteredStepIterator(com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, com.sun.org.apache.xml.internal.dtm.DTMAxisIterator, com.sun.org.apache.xalan.internal.xsltc.dom.Filter);
-  public int next();
-}

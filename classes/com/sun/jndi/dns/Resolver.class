@@ -1,9 +1,0 @@
-Compiled from "Resolver.java"
-class com.sun.jndi.dns.Resolver {
-  com.sun.jndi.dns.Resolver(java.lang.String[], int, int) throws javax.naming.NamingException;
-  public void close();
-  com.sun.jndi.dns.ResourceRecords query(com.sun.jndi.dns.DnsName, int, int, boolean, boolean) throws javax.naming.NamingException;
-  com.sun.jndi.dns.ResourceRecords queryZone(com.sun.jndi.dns.DnsName, int, boolean) throws javax.naming.NamingException;
-  com.sun.jndi.dns.DnsName findZoneName(com.sun.jndi.dns.DnsName, int, boolean) throws javax.naming.NamingException;
-  com.sun.jndi.dns.ResourceRecord findSoa(com.sun.jndi.dns.DnsName, int, boolean) throws javax.naming.NamingException;
-}

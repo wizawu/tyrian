@@ -1,6 +1,0 @@
-Compiled from "PrivateMLet.java"
-public class javax.management.loading.PrivateMLet extends javax.management.loading.MLet implements javax.management.loading.PrivateClassLoader {
-  public javax.management.loading.PrivateMLet(java.net.URL[], boolean);
-  public javax.management.loading.PrivateMLet(java.net.URL[], java.lang.ClassLoader, boolean);
-  public javax.management.loading.PrivateMLet(java.net.URL[], java.lang.ClassLoader, java.net.URLStreamHandlerFactory, boolean);
-}

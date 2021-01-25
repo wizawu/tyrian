@@ -1,8 +1,0 @@
-Compiled from "DraconianErrorHandler.java"
-public class com.sun.org.apache.xerces.internal.util.DraconianErrorHandler implements org.xml.sax.ErrorHandler {
-  public static final org.xml.sax.ErrorHandler theInstance;
-  public void error(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
-  public void fatalError(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
-  public void warning(org.xml.sax.SAXParseException) throws org.xml.sax.SAXException;
-  static {};
-}

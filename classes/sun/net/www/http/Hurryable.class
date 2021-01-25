@@ -1,4 +1,0 @@
-Compiled from "Hurryable.java"
-public interface sun.net.www.http.Hurryable {
-  public abstract boolean hurry();
-}

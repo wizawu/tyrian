@@ -1,8 +1,0 @@
-Compiled from "ObjectElementHandler.java"
-class com.sun.beans.decoder.ObjectElementHandler extends com.sun.beans.decoder.NewElementHandler {
-  com.sun.beans.decoder.ObjectElementHandler();
-  public final void addAttribute(java.lang.String, java.lang.String);
-  public final void startElement();
-  protected boolean isArgument();
-  protected final com.sun.beans.decoder.ValueObject getValueObject(java.lang.Class<?>, java.lang.Object[]) throws java.lang.Exception;
-}

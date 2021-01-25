@@ -1,8 +1,0 @@
-Compiled from "XErrorHandlerUtil.java"
-public final class sun.awt.X11.XErrorHandlerUtil {
-  static volatile sun.awt.X11.XErrorEvent saved_error;
-  public static void WITH_XERROR_HANDLER(sun.awt.X11.XErrorHandler);
-  public static void RESTORE_XERROR_HANDLER();
-  public static int SAVED_XERROR_HANDLER(long, sun.awt.X11.XErrorEvent);
-  static {};
-}

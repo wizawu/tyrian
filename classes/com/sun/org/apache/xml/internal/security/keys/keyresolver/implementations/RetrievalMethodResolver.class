@@ -1,8 +1,0 @@
-Compiled from "RetrievalMethodResolver.java"
-public class com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.RetrievalMethodResolver extends com.sun.org.apache.xml.internal.security.keys.keyresolver.KeyResolverSpi {
-  public com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.RetrievalMethodResolver();
-  public java.security.PublicKey engineLookupAndResolvePublicKey(org.w3c.dom.Element, java.lang.String, com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver);
-  public java.security.cert.X509Certificate engineLookupResolveX509Certificate(org.w3c.dom.Element, java.lang.String, com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver);
-  public javax.crypto.SecretKey engineLookupAndResolveSecretKey(org.w3c.dom.Element, java.lang.String, com.sun.org.apache.xml.internal.security.keys.storage.StorageResolver);
-  static {};
-}

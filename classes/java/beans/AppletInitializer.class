@@ -1,5 +1,0 @@
-Compiled from "AppletInitializer.java"
-public interface java.beans.AppletInitializer {
-  public abstract void initialize(java.applet.Applet, java.beans.beancontext.BeanContext);
-  public abstract void activate(java.applet.Applet);
-}

@@ -1,4 +1,0 @@
-Compiled from "EmptyStackException.java"
-public class java.util.EmptyStackException extends java.lang.RuntimeException {
-  public java.util.EmptyStackException();
-}

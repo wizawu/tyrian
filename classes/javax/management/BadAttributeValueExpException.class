@@ -1,5 +1,0 @@
-Compiled from "BadAttributeValueExpException.java"
-public class javax.management.BadAttributeValueExpException extends java.lang.Exception {
-  public javax.management.BadAttributeValueExpException(java.lang.Object);
-  public java.lang.String toString();
-}

@@ -1,7 +1,0 @@
-Compiled from "DirSearch.java"
-public class com.sun.jndi.toolkit.dir.DirSearch {
-  public com.sun.jndi.toolkit.dir.DirSearch();
-  public static javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> search(javax.naming.directory.DirContext, javax.naming.directory.Attributes, java.lang.String[]) throws javax.naming.NamingException;
-  public static javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> search(javax.naming.directory.DirContext, java.lang.String, javax.naming.directory.SearchControls) throws javax.naming.NamingException;
-  public static javax.naming.NamingEnumeration<javax.naming.directory.SearchResult> search(javax.naming.directory.DirContext, java.lang.String, java.lang.Object[], javax.naming.directory.SearchControls) throws javax.naming.NamingException;
-}

@@ -1,9 +1,0 @@
-Compiled from "ResolverConfiguration.java"
-public abstract class sun.net.dns.ResolverConfiguration {
-  protected sun.net.dns.ResolverConfiguration();
-  public static sun.net.dns.ResolverConfiguration open();
-  public abstract java.util.List<java.lang.String> searchlist();
-  public abstract java.util.List<java.lang.String> nameservers();
-  public abstract sun.net.dns.ResolverConfiguration$Options options();
-  static {};
-}

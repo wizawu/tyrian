@@ -1,9 +1,0 @@
-Compiled from "FormattedFloatingDecimal.java"
-public class jdk.internal.math.FormattedFloatingDecimal {
-  static final boolean $assertionsDisabled;
-  public static jdk.internal.math.FormattedFloatingDecimal valueOf(double, int, jdk.internal.math.FormattedFloatingDecimal$Form);
-  public int getExponentRounded();
-  public char[] getMantissa();
-  public char[] getExponent();
-  static {};
-}

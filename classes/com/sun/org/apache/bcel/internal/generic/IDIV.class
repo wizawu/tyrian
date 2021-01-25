@@ -1,6 +1,0 @@
-Compiled from "IDIV.java"
-public class com.sun.org.apache.bcel.internal.generic.IDIV extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction implements com.sun.org.apache.bcel.internal.generic.ExceptionThrower {
-  public com.sun.org.apache.bcel.internal.generic.IDIV();
-  public java.lang.Class<?>[] getExceptions();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

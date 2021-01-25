@@ -1,5 +1,0 @@
-Compiled from "CSSRuleList.java"
-public interface org.w3c.dom.css.CSSRuleList {
-  public abstract int getLength();
-  public abstract org.w3c.dom.css.CSSRule item(int);
-}

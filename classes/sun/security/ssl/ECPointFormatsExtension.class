@@ -1,9 +1,0 @@
-Compiled from "ECPointFormatsExtension.java"
-final class sun.security.ssl.ECPointFormatsExtension {
-  static final sun.security.ssl.HandshakeProducer chNetworkProducer;
-  static final sun.security.ssl.SSLExtension$ExtensionConsumer chOnLoadConsumer;
-  static final sun.security.ssl.SSLExtension$ExtensionConsumer shOnLoadConsumer;
-  static final sun.security.ssl.SSLStringizer epfStringizer;
-  sun.security.ssl.ECPointFormatsExtension();
-  static {};
-}

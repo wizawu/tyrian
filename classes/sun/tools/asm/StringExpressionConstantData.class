@@ -1,8 +1,0 @@
-Compiled from "StringExpressionConstantData.java"
-final class sun.tools.asm.StringExpressionConstantData extends sun.tools.asm.ConstantPoolData {
-  sun.tools.tree.StringExpression str;
-  sun.tools.asm.StringExpressionConstantData(sun.tools.asm.ConstantPool, sun.tools.tree.StringExpression);
-  void write(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
-  int order();
-  public java.lang.String toString();
-}

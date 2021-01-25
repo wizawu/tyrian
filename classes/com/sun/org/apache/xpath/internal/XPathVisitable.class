@@ -1,4 +1,0 @@
-Compiled from "XPathVisitable.java"
-public interface com.sun.org.apache.xpath.internal.XPathVisitable {
-  public abstract void callVisitors(com.sun.org.apache.xpath.internal.ExpressionOwner, com.sun.org.apache.xpath.internal.XPathVisitor);
-}

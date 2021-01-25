@@ -1,5 +1,0 @@
-Compiled from "IllegalComponentStateException.java"
-public class java.awt.IllegalComponentStateException extends java.lang.IllegalStateException {
-  public java.awt.IllegalComponentStateException();
-  public java.awt.IllegalComponentStateException(java.lang.String);
-}

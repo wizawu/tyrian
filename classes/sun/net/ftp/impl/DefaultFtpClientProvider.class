@@ -1,5 +1,0 @@
-Compiled from "DefaultFtpClientProvider.java"
-public class sun.net.ftp.impl.DefaultFtpClientProvider extends sun.net.ftp.FtpClientProvider {
-  public sun.net.ftp.impl.DefaultFtpClientProvider();
-  public sun.net.ftp.FtpClient createFtpClient();
-}

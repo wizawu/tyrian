@@ -1,5 +1,0 @@
-Compiled from "SALOAD.java"
-public class com.sun.org.apache.bcel.internal.generic.SALOAD extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
-  public com.sun.org.apache.bcel.internal.generic.SALOAD();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

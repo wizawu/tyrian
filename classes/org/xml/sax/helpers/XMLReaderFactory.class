@@ -1,5 +1,0 @@
-Compiled from "XMLReaderFactory.java"
-public final class org.xml.sax.helpers.XMLReaderFactory {
-  public static org.xml.sax.XMLReader createXMLReader() throws org.xml.sax.SAXException;
-  public static org.xml.sax.XMLReader createXMLReader(java.lang.String) throws org.xml.sax.SAXException;
-}

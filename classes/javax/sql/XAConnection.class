@@ -1,4 +1,0 @@
-Compiled from "XAConnection.java"
-public interface javax.sql.XAConnection extends javax.sql.PooledConnection {
-  public abstract javax.transaction.xa.XAResource getXAResource() throws java.sql.SQLException;
-}

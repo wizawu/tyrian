@@ -1,5 +1,0 @@
-Compiled from "MarshalException.java"
-public class java.rmi.MarshalException extends java.rmi.RemoteException {
-  public java.rmi.MarshalException(java.lang.String);
-  public java.rmi.MarshalException(java.lang.String, java.lang.Exception);
-}

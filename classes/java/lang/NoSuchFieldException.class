@@ -1,5 +1,0 @@
-Compiled from "NoSuchFieldException.java"
-public class java.lang.NoSuchFieldException extends java.lang.ReflectiveOperationException {
-  public java.lang.NoSuchFieldException();
-  public java.lang.NoSuchFieldException(java.lang.String);
-}

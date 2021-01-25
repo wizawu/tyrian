@@ -1,9 +1,0 @@
-Compiled from "AttributeChangeNotification.java"
-public class javax.management.AttributeChangeNotification extends javax.management.Notification {
-  public static final java.lang.String ATTRIBUTE_CHANGE;
-  public javax.management.AttributeChangeNotification(java.lang.Object, long, long, java.lang.String, java.lang.String, java.lang.String, java.lang.Object, java.lang.Object);
-  public java.lang.String getAttributeName();
-  public java.lang.String getAttributeType();
-  public java.lang.Object getOldValue();
-  public java.lang.Object getNewValue();
-}

@@ -1,7 +1,0 @@
-Compiled from "ThreadLocalCoders.java"
-public class sun.nio.cs.ThreadLocalCoders {
-  public sun.nio.cs.ThreadLocalCoders();
-  public static java.nio.charset.CharsetDecoder decoderFor(java.lang.Object);
-  public static java.nio.charset.CharsetEncoder encoderFor(java.lang.Object);
-  static {};
-}

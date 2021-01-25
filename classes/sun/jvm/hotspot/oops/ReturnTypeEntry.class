@@ -1,9 +1,0 @@
-Compiled from "ReturnTypeEntry.java"
-public class sun.jvm.hotspot.oops.ReturnTypeEntry<K, M> extends sun.jvm.hotspot.oops.TypeEntries<K, M> {
-  static final int cellCount;
-  sun.jvm.hotspot.oops.ReturnTypeEntry(sun.jvm.hotspot.oops.MethodDataInterface<K, M>, sun.jvm.hotspot.oops.ProfileData, int);
-  K type();
-  static int staticCellCount();
-  int typeIndex();
-  void printDataOn(java.io.PrintStream);
-}

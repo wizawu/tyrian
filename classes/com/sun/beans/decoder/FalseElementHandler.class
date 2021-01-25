@@ -1,5 +1,0 @@
-Compiled from "FalseElementHandler.java"
-final class com.sun.beans.decoder.FalseElementHandler extends com.sun.beans.decoder.NullElementHandler {
-  com.sun.beans.decoder.FalseElementHandler();
-  public java.lang.Object getValue();
-}

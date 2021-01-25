@@ -1,8 +1,0 @@
-Compiled from "INVOKESPECIAL.java"
-public class com.sun.org.apache.bcel.internal.generic.INVOKESPECIAL extends com.sun.org.apache.bcel.internal.generic.InvokeInstruction {
-  com.sun.org.apache.bcel.internal.generic.INVOKESPECIAL();
-  public com.sun.org.apache.bcel.internal.generic.INVOKESPECIAL(int);
-  public void dump(java.io.DataOutputStream) throws java.io.IOException;
-  public java.lang.Class<?>[] getExceptions();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

@@ -1,4 +1,0 @@
-Compiled from "ProfileDataException.java"
-public class java.awt.color.ProfileDataException extends java.lang.RuntimeException {
-  public java.awt.color.ProfileDataException(java.lang.String);
-}

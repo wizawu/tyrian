@@ -1,5 +1,0 @@
-Compiled from "JavaTimeSupplementary_hr.java"
-public class sun.text.resources.ext.JavaTimeSupplementary_hr extends sun.util.resources.OpenListResourceBundle {
-  public sun.text.resources.ext.JavaTimeSupplementary_hr();
-  protected final java.lang.Object[][] getContents();
-}

@@ -1,6 +1,0 @@
-Compiled from "ScrollbarPeer.java"
-public interface java.awt.peer.ScrollbarPeer extends java.awt.peer.ComponentPeer {
-  public abstract void setValues(int, int, int, int);
-  public abstract void setLineIncrement(int);
-  public abstract void setPageIncrement(int);
-}

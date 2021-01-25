@@ -1,5 +1,0 @@
-Compiled from "UnavailableOptionException.java"
-class jdk.internal.joptsimple.UnavailableOptionException extends jdk.internal.joptsimple.OptionException {
-  jdk.internal.joptsimple.UnavailableOptionException(java.util.List<? extends jdk.internal.joptsimple.OptionSpec<?>>);
-  java.lang.Object[] messageArguments();
-}

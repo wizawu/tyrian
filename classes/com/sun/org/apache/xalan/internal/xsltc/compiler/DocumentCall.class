@@ -1,6 +1,0 @@
-Compiled from "DocumentCall.java"
-final class com.sun.org.apache.xalan.internal.xsltc.compiler.DocumentCall extends com.sun.org.apache.xalan.internal.xsltc.compiler.FunctionCall {
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.DocumentCall(com.sun.org.apache.xalan.internal.xsltc.compiler.QName, java.util.List<com.sun.org.apache.xalan.internal.xsltc.compiler.Expression>);
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
-  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
-}

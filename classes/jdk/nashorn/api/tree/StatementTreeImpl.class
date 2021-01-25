@@ -1,5 +1,0 @@
-Compiled from "StatementTreeImpl.java"
-abstract class jdk.nashorn.api.tree.StatementTreeImpl extends jdk.nashorn.api.tree.TreeImpl implements jdk.nashorn.api.tree.StatementTree {
-  jdk.nashorn.api.tree.StatementTreeImpl(jdk.nashorn.internal.ir.Statement);
-  jdk.nashorn.api.tree.StatementTreeImpl(jdk.nashorn.internal.ir.Block);
-}

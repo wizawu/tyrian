@@ -1,9 +1,0 @@
-Compiled from "TransferableProxy.java"
-public class sun.awt.datatransfer.TransferableProxy implements java.awt.datatransfer.Transferable {
-  protected final java.awt.datatransfer.Transferable transferable;
-  protected final boolean isLocal;
-  public sun.awt.datatransfer.TransferableProxy(java.awt.datatransfer.Transferable, boolean);
-  public java.awt.datatransfer.DataFlavor[] getTransferDataFlavors();
-  public boolean isDataFlavorSupported(java.awt.datatransfer.DataFlavor);
-  public java.lang.Object getTransferData(java.awt.datatransfer.DataFlavor) throws java.awt.datatransfer.UnsupportedFlavorException, java.io.IOException;
-}

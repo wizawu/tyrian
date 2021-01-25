@@ -1,4 +1,0 @@
-Compiled from "MidiDeviceTransmitter.java"
-public interface javax.sound.midi.MidiDeviceTransmitter extends javax.sound.midi.Transmitter {
-  public abstract javax.sound.midi.MidiDevice getMidiDevice();
-}

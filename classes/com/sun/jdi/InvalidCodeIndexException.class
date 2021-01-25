@@ -1,5 +1,0 @@
-Compiled from "InvalidCodeIndexException.java"
-public class com.sun.jdi.InvalidCodeIndexException extends java.lang.RuntimeException {
-  public com.sun.jdi.InvalidCodeIndexException();
-  public com.sun.jdi.InvalidCodeIndexException(java.lang.String);
-}

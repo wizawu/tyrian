@@ -1,9 +1,0 @@
-Compiled from "ETypeInfo.java"
-public class sun.security.krb5.internal.ETypeInfo {
-  public sun.security.krb5.internal.ETypeInfo(int, java.lang.String);
-  public java.lang.Object clone();
-  public sun.security.krb5.internal.ETypeInfo(sun.security.util.DerValue) throws sun.security.krb5.Asn1Exception, java.io.IOException;
-  public byte[] asn1Encode() throws sun.security.krb5.Asn1Exception, java.io.IOException;
-  public int getEType();
-  public java.lang.String getSalt();
-}

@@ -1,5 +1,0 @@
-Compiled from "Abort.java"
-public class com.sun.tools.javac.util.Abort extends java.lang.Error {
-  public com.sun.tools.javac.util.Abort(java.lang.Throwable);
-  public com.sun.tools.javac.util.Abort();
-}

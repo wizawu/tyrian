@@ -1,8 +1,0 @@
-Compiled from "OuterWrapMap.java"
-class jdk.jshell.OuterWrapMap {
-  jdk.jshell.OuterWrapMap(jdk.jshell.JShell);
-  jdk.jshell.OuterSnippetsClassWrap getOuter(java.lang.String);
-  jdk.jshell.OuterWrap wrapInClass(java.util.Set<jdk.jshell.Key>, java.util.Collection<jdk.jshell.Snippet>, java.util.List<jdk.jshell.Snippet>, java.util.List<jdk.jshell.Wrap>);
-  jdk.jshell.OuterWrap wrapInTrialClass(jdk.jshell.Wrap);
-  jdk.jshell.OuterWrap wrapImport(jdk.jshell.Wrap, jdk.jshell.Snippet);
-}

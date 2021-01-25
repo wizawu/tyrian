@@ -1,8 +1,0 @@
-Compiled from "JavadocTodo.java"
-public class jdk.javadoc.internal.tool.JavadocTodo extends com.sun.tools.javac.comp.Todo {
-  public static void preRegister(com.sun.tools.javac.util.Context);
-  protected jdk.javadoc.internal.tool.JavadocTodo(com.sun.tools.javac.util.Context);
-  public void append(com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>);
-  public boolean offer(com.sun.tools.javac.comp.Env<com.sun.tools.javac.comp.AttrContext>);
-  public boolean offer(java.lang.Object);
-}

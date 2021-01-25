@@ -1,5 +1,0 @@
-Compiled from "DatatypeMessageFormatter.java"
-public class com.sun.org.apache.xerces.internal.util.DatatypeMessageFormatter {
-  public com.sun.org.apache.xerces.internal.util.DatatypeMessageFormatter();
-  public static java.lang.String formatMessage(java.util.Locale, java.lang.String, java.lang.Object[]) throws java.util.MissingResourceException;
-}

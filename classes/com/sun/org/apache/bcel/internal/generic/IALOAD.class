@@ -1,5 +1,0 @@
-Compiled from "IALOAD.java"
-public class com.sun.org.apache.bcel.internal.generic.IALOAD extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
-  public com.sun.org.apache.bcel.internal.generic.IALOAD();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

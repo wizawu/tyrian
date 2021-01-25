@@ -1,7 +1,0 @@
-Compiled from "FuncNormalizeSpace.java"
-public class com.sun.org.apache.xpath.internal.functions.FuncNormalizeSpace extends com.sun.org.apache.xpath.internal.functions.FunctionDef1Arg {
-  static final long serialVersionUID;
-  public com.sun.org.apache.xpath.internal.functions.FuncNormalizeSpace();
-  public com.sun.org.apache.xpath.internal.objects.XObject execute(com.sun.org.apache.xpath.internal.XPathContext) throws javax.xml.transform.TransformerException;
-  public void executeCharsToContentHandler(com.sun.org.apache.xpath.internal.XPathContext, org.xml.sax.ContentHandler) throws javax.xml.transform.TransformerException, org.xml.sax.SAXException;
-}

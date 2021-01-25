@@ -1,4 +1,0 @@
-Compiled from "ArrayType.java"
-public interface javax.lang.model.type.ArrayType extends javax.lang.model.type.ReferenceType {
-  public abstract javax.lang.model.type.TypeMirror getComponentType();
-}

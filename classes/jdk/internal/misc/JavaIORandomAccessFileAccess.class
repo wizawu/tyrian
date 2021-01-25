@@ -1,4 +1,0 @@
-Compiled from "JavaIORandomAccessFileAccess.java"
-public interface jdk.internal.misc.JavaIORandomAccessFileAccess {
-  public abstract java.io.RandomAccessFile openAndDelete(java.io.File, java.lang.String) throws java.io.IOException;
-}

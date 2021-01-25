@@ -1,9 +1,0 @@
-Compiled from "KrbCred.java"
-public class sun.security.krb5.KrbCred {
-  public sun.security.krb5.KrbCred(sun.security.krb5.Credentials, sun.security.krb5.Credentials, sun.security.krb5.EncryptionKey) throws sun.security.krb5.KrbException, java.io.IOException;
-  sun.security.krb5.internal.KRBCred createMessage(sun.security.krb5.Credentials, sun.security.krb5.EncryptionKey) throws sun.security.krb5.KrbException, java.io.IOException;
-  public sun.security.krb5.KrbCred(byte[], sun.security.krb5.EncryptionKey) throws sun.security.krb5.KrbException, java.io.IOException;
-  public sun.security.krb5.Credentials[] getDelegatedCreds();
-  public byte[] getMessage();
-  static {};
-}

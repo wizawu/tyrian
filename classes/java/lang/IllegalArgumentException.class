@@ -1,7 +1,0 @@
-Compiled from "IllegalArgumentException.java"
-public class java.lang.IllegalArgumentException extends java.lang.RuntimeException {
-  public java.lang.IllegalArgumentException();
-  public java.lang.IllegalArgumentException(java.lang.String);
-  public java.lang.IllegalArgumentException(java.lang.String, java.lang.Throwable);
-  public java.lang.IllegalArgumentException(java.lang.Throwable);
-}

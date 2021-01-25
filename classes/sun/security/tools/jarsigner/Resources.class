@@ -1,6 +1,0 @@
-Compiled from "Resources.java"
-public class sun.security.tools.jarsigner.Resources extends java.util.ListResourceBundle {
-  public sun.security.tools.jarsigner.Resources();
-  public java.lang.Object[][] getContents();
-  static {};
-}

@@ -1,8 +1,0 @@
-Compiled from "BackRefNode.java"
-public final class jdk.nashorn.internal.runtime.regexp.joni.ast.BackRefNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.StateNode {
-  public final int backRef;
-  public jdk.nashorn.internal.runtime.regexp.joni.ast.BackRefNode(int, jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment);
-  public int getType();
-  public java.lang.String getName();
-  public java.lang.String toString(int);
-}

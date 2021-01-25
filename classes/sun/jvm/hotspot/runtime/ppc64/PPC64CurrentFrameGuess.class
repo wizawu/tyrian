@@ -1,9 +1,0 @@
-Compiled from "PPC64CurrentFrameGuess.java"
-public class sun.jvm.hotspot.runtime.ppc64.PPC64CurrentFrameGuess {
-  public sun.jvm.hotspot.runtime.ppc64.PPC64CurrentFrameGuess(sun.jvm.hotspot.debugger.ppc64.PPC64ThreadContext, sun.jvm.hotspot.runtime.JavaThread);
-  public boolean run(long);
-  public sun.jvm.hotspot.debugger.Address getSP();
-  public sun.jvm.hotspot.debugger.Address getFP();
-  public sun.jvm.hotspot.debugger.Address getPC();
-  static {};
-}

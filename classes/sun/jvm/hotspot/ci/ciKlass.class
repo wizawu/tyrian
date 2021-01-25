@@ -1,7 +1,0 @@
-Compiled from "ciKlass.java"
-public class sun.jvm.hotspot.ci.ciKlass extends sun.jvm.hotspot.ci.ciType {
-  public java.lang.String name();
-  public sun.jvm.hotspot.ci.ciKlass(sun.jvm.hotspot.debugger.Address);
-  public void printValueOn(java.io.PrintStream);
-  static {};
-}

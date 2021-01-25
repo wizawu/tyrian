@@ -1,7 +1,0 @@
-Compiled from "ErrorMessage.java"
-final class sun.tools.javac.ErrorMessage {
-  long where;
-  java.lang.String message;
-  sun.tools.javac.ErrorMessage next;
-  sun.tools.javac.ErrorMessage(long, java.lang.String);
-}

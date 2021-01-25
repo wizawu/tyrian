@@ -1,3 +1,0 @@
-Compiled from "XMLDocumentFilter.java"
-public interface com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentFilter extends com.sun.org.apache.xerces.internal.xni.XMLDocumentHandler,com.sun.org.apache.xerces.internal.xni.parser.XMLDocumentSource {
-}

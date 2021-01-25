@@ -1,8 +1,0 @@
-Compiled from "UnixFileStoreAttributes.java"
-class sun.nio.fs.UnixFileStoreAttributes {
-  static sun.nio.fs.UnixFileStoreAttributes get(sun.nio.fs.UnixPath) throws sun.nio.fs.UnixException;
-  long blockSize();
-  long totalBlocks();
-  long freeBlocks();
-  long availableBlocks();
-}

@@ -1,6 +1,0 @@
-Compiled from "SSLHandshakeBinding.java"
-interface sun.security.ssl.SSLHandshakeBinding {
-  public default sun.security.ssl.SSLHandshake[] getRelatedHandshakers(sun.security.ssl.HandshakeContext);
-  public default java.util.Map$Entry<java.lang.Byte, sun.security.ssl.HandshakeProducer>[] getHandshakeProducers(sun.security.ssl.HandshakeContext);
-  public default java.util.Map$Entry<java.lang.Byte, sun.security.ssl.SSLConsumer>[] getHandshakeConsumers(sun.security.ssl.HandshakeContext);
-}

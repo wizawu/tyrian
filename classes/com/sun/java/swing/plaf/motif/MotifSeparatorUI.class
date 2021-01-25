@@ -1,5 +1,0 @@
-Compiled from "MotifSeparatorUI.java"
-public class com.sun.java.swing.plaf.motif.MotifSeparatorUI extends javax.swing.plaf.basic.BasicSeparatorUI {
-  public com.sun.java.swing.plaf.motif.MotifSeparatorUI();
-  public static javax.swing.plaf.ComponentUI createUI(javax.swing.JComponent);
-}

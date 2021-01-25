@@ -1,5 +1,0 @@
-Compiled from "XSLTTransformParameterSpec.java"
-public final class javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec implements javax.xml.crypto.dsig.spec.TransformParameterSpec {
-  public javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec(javax.xml.crypto.XMLStructure);
-  public javax.xml.crypto.XMLStructure getStylesheet();
-}

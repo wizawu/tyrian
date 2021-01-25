@@ -1,9 +1,0 @@
-Compiled from "ShortField.java"
-public class sun.jvm.hotspot.oops.ShortField extends sun.jvm.hotspot.oops.Field {
-  public sun.jvm.hotspot.oops.ShortField(sun.jvm.hotspot.oops.FieldIdentifier, long, boolean);
-  public sun.jvm.hotspot.oops.ShortField(sun.jvm.hotspot.types.JShortField, long);
-  public sun.jvm.hotspot.oops.ShortField(sun.jvm.hotspot.oops.InstanceKlass, int);
-  public short getValue(sun.jvm.hotspot.oops.Oop);
-  public short getValue(sun.jvm.hotspot.runtime.VMObject);
-  public void setValue(sun.jvm.hotspot.oops.Oop, short) throws sun.jvm.hotspot.oops.MutationException;
-}

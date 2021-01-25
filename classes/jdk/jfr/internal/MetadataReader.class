@@ -1,5 +1,0 @@
-Compiled from "MetadataReader.java"
-final class jdk.jfr.internal.MetadataReader {
-  public jdk.jfr.internal.MetadataReader(java.io.DataInput) throws java.io.IOException;
-  public jdk.jfr.internal.MetadataDescriptor getDescriptor();
-}

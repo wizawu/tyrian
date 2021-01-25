@@ -1,3 +1,0 @@
-Compiled from "EntityReference.java"
-public interface org.w3c.dom.EntityReference extends org.w3c.dom.Node {
-}

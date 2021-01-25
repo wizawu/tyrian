@@ -1,6 +1,0 @@
-Compiled from "AscendingMonitorComparator.java"
-class sun.tools.jstat.AscendingMonitorComparator implements java.util.Comparator<sun.jvmstat.monitor.Monitor> {
-  sun.tools.jstat.AscendingMonitorComparator();
-  public int compare(sun.jvmstat.monitor.Monitor, sun.jvmstat.monitor.Monitor);
-  public int compare(java.lang.Object, java.lang.Object);
-}

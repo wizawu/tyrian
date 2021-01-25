@@ -1,6 +1,0 @@
-Compiled from "ZipDirectoryStream.java"
-class jdk.nio.zipfs.ZipDirectoryStream implements java.nio.file.DirectoryStream<java.nio.file.Path> {
-  jdk.nio.zipfs.ZipDirectoryStream(jdk.nio.zipfs.ZipPath, java.nio.file.DirectoryStream$Filter<? super java.nio.file.Path>) throws java.io.IOException;
-  public synchronized java.util.Iterator<java.nio.file.Path> iterator();
-  public synchronized void close() throws java.io.IOException;
-}

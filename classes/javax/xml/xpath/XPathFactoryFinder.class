@@ -1,8 +1,0 @@
-Compiled from "XPathFactoryFinder.java"
-class javax.xml.xpath.XPathFactoryFinder {
-  static final boolean $assertionsDisabled;
-  public javax.xml.xpath.XPathFactoryFinder(java.lang.ClassLoader);
-  public javax.xml.xpath.XPathFactory newFactory(java.lang.String) throws javax.xml.xpath.XPathFactoryConfigurationException;
-  javax.xml.xpath.XPathFactory createInstance(java.lang.String) throws javax.xml.xpath.XPathFactoryConfigurationException;
-  static {};
-}

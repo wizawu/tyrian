@@ -1,9 +1,0 @@
-Compiled from "OpenMBeanConstructorInfo.java"
-public interface javax.management.openmbean.OpenMBeanConstructorInfo {
-  public abstract java.lang.String getDescription();
-  public abstract java.lang.String getName();
-  public abstract javax.management.MBeanParameterInfo[] getSignature();
-  public abstract boolean equals(java.lang.Object);
-  public abstract int hashCode();
-  public abstract java.lang.String toString();
-}

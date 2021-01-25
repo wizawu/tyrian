@@ -1,6 +1,0 @@
-Compiled from "XResources_de.java"
-public class com.sun.org.apache.xml.internal.utils.res.XResources_de extends com.sun.org.apache.xml.internal.utils.res.XResourceBundle {
-  public com.sun.org.apache.xml.internal.utils.res.XResources_de();
-  public java.lang.Object[][] getContents();
-  static {};
-}

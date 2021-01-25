@@ -1,7 +1,0 @@
-Compiled from "OptionSpecTokenizer.java"
-class jdk.internal.joptsimple.OptionSpecTokenizer {
-  jdk.internal.joptsimple.OptionSpecTokenizer(java.lang.String);
-  boolean hasMore();
-  jdk.internal.joptsimple.AbstractOptionSpec<?> next();
-  void configure(jdk.internal.joptsimple.OptionParser);
-}

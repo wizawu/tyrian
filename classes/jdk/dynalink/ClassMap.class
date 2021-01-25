@@ -1,8 +1,0 @@
-Compiled from "ClassMap.java"
-abstract class jdk.dynalink.ClassMap<T> {
-  static final boolean $assertionsDisabled;
-  jdk.dynalink.ClassMap(java.lang.ClassLoader);
-  abstract T computeValue(java.lang.Class<?>);
-  T get(java.lang.Class<?>);
-  static {};
-}

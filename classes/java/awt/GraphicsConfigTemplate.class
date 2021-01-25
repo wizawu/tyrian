@@ -1,9 +1,0 @@
-Compiled from "GraphicsConfigTemplate.java"
-public abstract class java.awt.GraphicsConfigTemplate implements java.io.Serializable {
-  public static final int REQUIRED;
-  public static final int PREFERRED;
-  public static final int UNNECESSARY;
-  public java.awt.GraphicsConfigTemplate();
-  public abstract java.awt.GraphicsConfiguration getBestConfiguration(java.awt.GraphicsConfiguration[]);
-  public abstract boolean isGraphicsConfigSupported(java.awt.GraphicsConfiguration);
-}

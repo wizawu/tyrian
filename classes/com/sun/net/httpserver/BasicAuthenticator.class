@@ -1,8 +1,0 @@
-Compiled from "BasicAuthenticator.java"
-public abstract class com.sun.net.httpserver.BasicAuthenticator extends com.sun.net.httpserver.Authenticator {
-  protected java.lang.String realm;
-  public com.sun.net.httpserver.BasicAuthenticator(java.lang.String);
-  public java.lang.String getRealm();
-  public com.sun.net.httpserver.Authenticator$Result authenticate(com.sun.net.httpserver.HttpExchange);
-  public abstract boolean checkCredentials(java.lang.String, java.lang.String);
-}

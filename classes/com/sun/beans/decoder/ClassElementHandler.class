@@ -1,5 +1,0 @@
-Compiled from "ClassElementHandler.java"
-final class com.sun.beans.decoder.ClassElementHandler extends com.sun.beans.decoder.StringElementHandler {
-  com.sun.beans.decoder.ClassElementHandler();
-  public java.lang.Object getValue(java.lang.String);
-}

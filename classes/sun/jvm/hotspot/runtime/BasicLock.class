@@ -1,6 +1,0 @@
-Compiled from "BasicLock.java"
-public class sun.jvm.hotspot.runtime.BasicLock extends sun.jvm.hotspot.runtime.VMObject {
-  public sun.jvm.hotspot.runtime.BasicLock(sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.oops.Mark displacedHeader();
-  static {};
-}

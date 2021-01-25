@@ -1,7 +1,0 @@
-Compiled from "GCTR.java"
-final class com.sun.crypto.provider.GCTR extends com.sun.crypto.provider.CounterMode {
-  com.sun.crypto.provider.GCTR(com.sun.crypto.provider.SymmetricCipher, byte[]);
-  java.lang.String getFeedback();
-  int update(byte[], int, int, byte[], int);
-  int doFinal(byte[], int, int, byte[], int) throws javax.crypto.IllegalBlockSizeException;
-}

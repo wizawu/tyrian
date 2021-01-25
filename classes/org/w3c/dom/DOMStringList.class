@@ -1,6 +1,0 @@
-Compiled from "DOMStringList.java"
-public interface org.w3c.dom.DOMStringList {
-  public abstract java.lang.String item(int);
-  public abstract int getLength();
-  public abstract boolean contains(java.lang.String);
-}

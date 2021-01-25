@@ -1,5 +1,0 @@
-Compiled from "FMUL.java"
-public class com.sun.org.apache.bcel.internal.generic.FMUL extends com.sun.org.apache.bcel.internal.generic.ArithmeticInstruction {
-  public com.sun.org.apache.bcel.internal.generic.FMUL();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

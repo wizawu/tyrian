@@ -1,7 +1,0 @@
-Compiled from "DGCImpl_Skel.java"
-public final class sun.rmi.transport.DGCImpl_Skel implements java.rmi.server.Skeleton {
-  public sun.rmi.transport.DGCImpl_Skel();
-  public java.rmi.server.Operation[] getOperations();
-  public void dispatch(java.rmi.Remote, java.rmi.server.RemoteCall, int, long) throws java.lang.Exception;
-  static {};
-}

@@ -1,6 +1,0 @@
-Compiled from "ProcessorVersion.java"
-public class com.sun.org.apache.xalan.internal.xsltc.ProcessorVersion {
-  public com.sun.org.apache.xalan.internal.xsltc.ProcessorVersion();
-  public static void main(java.lang.String[]);
-  static {};
-}

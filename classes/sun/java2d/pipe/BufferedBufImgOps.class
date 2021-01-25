@@ -1,9 +1,0 @@
-Compiled from "BufferedBufImgOps.java"
-public class sun.java2d.pipe.BufferedBufImgOps {
-  public sun.java2d.pipe.BufferedBufImgOps();
-  public static void enableBufImgOp(sun.java2d.pipe.RenderQueue, sun.java2d.SurfaceData, java.awt.image.BufferedImage, java.awt.image.BufferedImageOp);
-  public static void disableBufImgOp(sun.java2d.pipe.RenderQueue, java.awt.image.BufferedImageOp);
-  public static boolean isConvolveOpValid(java.awt.image.ConvolveOp);
-  public static boolean isRescaleOpValid(java.awt.image.RescaleOp, java.awt.image.BufferedImage);
-  public static boolean isLookupOpValid(java.awt.image.LookupOp, java.awt.image.BufferedImage);
-}

@@ -1,9 +1,0 @@
-Compiled from "AttributeChangeNotificationFilter.java"
-public class javax.management.AttributeChangeNotificationFilter implements javax.management.NotificationFilter {
-  public javax.management.AttributeChangeNotificationFilter();
-  public synchronized boolean isNotificationEnabled(javax.management.Notification);
-  public synchronized void enableAttribute(java.lang.String) throws java.lang.IllegalArgumentException;
-  public synchronized void disableAttribute(java.lang.String);
-  public synchronized void disableAllAttributes();
-  public synchronized java.util.Vector<java.lang.String> getEnabledAttributes();
-}

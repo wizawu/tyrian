@@ -1,5 +1,0 @@
-Compiled from "DCmdCheck.java"
-final class jdk.jfr.internal.dcmd.DCmdCheck extends jdk.jfr.internal.dcmd.AbstractDCmd {
-  jdk.jfr.internal.dcmd.DCmdCheck();
-  public java.lang.String execute(java.lang.String, java.lang.Boolean) throws jdk.jfr.internal.dcmd.DCmdException;
-}

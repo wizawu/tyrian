@@ -1,5 +1,0 @@
-Compiled from "RSAKey.java"
-public interface java.security.interfaces.RSAKey {
-  public abstract java.math.BigInteger getModulus();
-  public default java.security.spec.AlgorithmParameterSpec getParams();
-}

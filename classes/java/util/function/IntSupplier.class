@@ -1,4 +1,0 @@
-Compiled from "IntSupplier.java"
-public interface java.util.function.IntSupplier {
-  public abstract int getAsInt();
-}

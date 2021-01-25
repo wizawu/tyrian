@@ -1,5 +1,0 @@
-Compiled from "RETURN.java"
-public class com.sun.org.apache.bcel.internal.generic.RETURN extends com.sun.org.apache.bcel.internal.generic.ReturnInstruction {
-  public com.sun.org.apache.bcel.internal.generic.RETURN();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

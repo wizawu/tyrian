@@ -1,6 +1,0 @@
-Compiled from "AlgorithmConstraints.java"
-public interface java.security.AlgorithmConstraints {
-  public abstract boolean permits(java.util.Set<java.security.CryptoPrimitive>, java.lang.String, java.security.AlgorithmParameters);
-  public abstract boolean permits(java.util.Set<java.security.CryptoPrimitive>, java.security.Key);
-  public abstract boolean permits(java.util.Set<java.security.CryptoPrimitive>, java.lang.String, java.security.Key, java.security.AlgorithmParameters);
-}

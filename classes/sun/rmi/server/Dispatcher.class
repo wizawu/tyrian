@@ -1,4 +1,0 @@
-Compiled from "Dispatcher.java"
-public interface sun.rmi.server.Dispatcher {
-  public abstract void dispatch(java.rmi.Remote, java.rmi.server.RemoteCall) throws java.io.IOException;
-}

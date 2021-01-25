@@ -1,3 +1,0 @@
-Compiled from "GroupPrincipal.java"
-public interface java.nio.file.attribute.GroupPrincipal extends java.nio.file.attribute.UserPrincipal {
-}

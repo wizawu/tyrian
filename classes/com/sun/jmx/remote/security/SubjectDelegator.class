@@ -1,6 +1,0 @@
-Compiled from "SubjectDelegator.java"
-public class com.sun.jmx.remote.security.SubjectDelegator {
-  public com.sun.jmx.remote.security.SubjectDelegator();
-  public java.security.AccessControlContext delegatedContext(java.security.AccessControlContext, javax.security.auth.Subject, boolean) throws java.lang.SecurityException;
-  public static synchronized boolean checkRemoveCallerContext(javax.security.auth.Subject);
-}

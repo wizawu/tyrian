@@ -1,6 +1,0 @@
-Compiled from "ZOop.java"
-class sun.jvm.hotspot.gc.z.ZOop {
-  sun.jvm.hotspot.gc.z.ZOop();
-  static sun.jvm.hotspot.debugger.Address to_address(long);
-  static sun.jvm.hotspot.debugger.Address to_address(sun.jvm.hotspot.debugger.OopHandle);
-}

@@ -1,7 +1,0 @@
-Compiled from "CommandLine.java"
-public class com.sun.tools.javac.main.CommandLine {
-  public com.sun.tools.javac.main.CommandLine();
-  public static java.lang.String[] parse(java.lang.String[]) throws java.io.IOException;
-  public static java.util.List<java.lang.String> parse(java.lang.String, java.util.List<java.lang.String>) throws java.io.IOException, com.sun.tools.javac.main.CommandLine$UnmatchedQuote;
-  public static java.lang.String[] parse(java.lang.String, java.lang.String[]) throws java.io.IOException, com.sun.tools.javac.main.CommandLine$UnmatchedQuote;
-}

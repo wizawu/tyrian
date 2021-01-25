@@ -1,6 +1,0 @@
-Compiled from "OopMapVisitor.java"
-public interface sun.jvm.hotspot.compiler.OopMapVisitor {
-  public abstract void visitOopLocation(sun.jvm.hotspot.debugger.Address);
-  public abstract void visitDerivedOopLocation(sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
-  public abstract void visitNarrowOopLocation(sun.jvm.hotspot.debugger.Address);
-}

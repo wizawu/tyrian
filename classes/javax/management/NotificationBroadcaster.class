@@ -1,6 +1,0 @@
-Compiled from "NotificationBroadcaster.java"
-public interface javax.management.NotificationBroadcaster {
-  public abstract void addNotificationListener(javax.management.NotificationListener, javax.management.NotificationFilter, java.lang.Object) throws java.lang.IllegalArgumentException;
-  public abstract void removeNotificationListener(javax.management.NotificationListener) throws javax.management.ListenerNotFoundException;
-  public abstract javax.management.MBeanNotificationInfo[] getNotificationInfo();
-}

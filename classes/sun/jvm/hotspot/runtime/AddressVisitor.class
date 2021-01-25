@@ -1,5 +1,0 @@
-Compiled from "AddressVisitor.java"
-public interface sun.jvm.hotspot.runtime.AddressVisitor {
-  public abstract void visitAddress(sun.jvm.hotspot.debugger.Address);
-  public abstract void visitCompOopAddress(sun.jvm.hotspot.debugger.Address);
-}

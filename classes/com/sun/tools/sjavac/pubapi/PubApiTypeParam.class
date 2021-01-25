@@ -1,8 +1,0 @@
-Compiled from "PubApiTypeParam.java"
-public class com.sun.tools.sjavac.pubapi.PubApiTypeParam implements java.io.Serializable {
-  public com.sun.tools.sjavac.pubapi.PubApiTypeParam(java.lang.String, java.util.List<com.sun.tools.sjavac.pubapi.TypeDesc>);
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  public java.lang.String asString();
-  public java.lang.String toString();
-}

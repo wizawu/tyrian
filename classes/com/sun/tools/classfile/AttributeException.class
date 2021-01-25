@@ -1,5 +1,0 @@
-Compiled from "AttributeException.java"
-public class com.sun.tools.classfile.AttributeException extends java.lang.Exception {
-  com.sun.tools.classfile.AttributeException();
-  com.sun.tools.classfile.AttributeException(java.lang.String);
-}

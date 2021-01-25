@@ -1,9 +1,0 @@
-Compiled from "X509KeyManager.java"
-public interface com.sun.net.ssl.X509KeyManager extends com.sun.net.ssl.KeyManager {
-  public abstract java.lang.String[] getClientAliases(java.lang.String, java.security.Principal[]);
-  public abstract java.lang.String chooseClientAlias(java.lang.String, java.security.Principal[]);
-  public abstract java.lang.String[] getServerAliases(java.lang.String, java.security.Principal[]);
-  public abstract java.lang.String chooseServerAlias(java.lang.String, java.security.Principal[]);
-  public abstract java.security.cert.X509Certificate[] getCertificateChain(java.lang.String);
-  public abstract java.security.PrivateKey getPrivateKey(java.lang.String);
-}

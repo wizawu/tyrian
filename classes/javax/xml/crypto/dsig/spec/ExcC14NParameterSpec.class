@@ -1,7 +1,0 @@
-Compiled from "ExcC14NParameterSpec.java"
-public final class javax.xml.crypto.dsig.spec.ExcC14NParameterSpec implements javax.xml.crypto.dsig.spec.C14NMethodParameterSpec {
-  public static final java.lang.String DEFAULT;
-  public javax.xml.crypto.dsig.spec.ExcC14NParameterSpec();
-  public javax.xml.crypto.dsig.spec.ExcC14NParameterSpec(java.util.List<java.lang.String>);
-  public java.util.List<java.lang.String> getPrefixList();
-}

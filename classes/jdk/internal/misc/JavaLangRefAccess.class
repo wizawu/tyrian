@@ -1,5 +1,0 @@
-Compiled from "JavaLangRefAccess.java"
-public interface jdk.internal.misc.JavaLangRefAccess {
-  public abstract boolean waitForReferenceProcessing() throws java.lang.InterruptedException;
-  public abstract void runFinalization();
-}

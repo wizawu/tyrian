@@ -1,6 +1,0 @@
-Compiled from "DebugGraphicsFilter.java"
-class javax.swing.DebugGraphicsFilter extends java.awt.image.RGBImageFilter {
-  java.awt.Color color;
-  javax.swing.DebugGraphicsFilter(java.awt.Color);
-  public int filterRGB(int, int, int);
-}

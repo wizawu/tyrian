@@ -1,5 +1,0 @@
-Compiled from "XArrayDataViewer.java"
-class sun.tools.jconsole.inspector.XArrayDataViewer {
-  public static boolean isViewableValue(java.lang.Object);
-  public static java.awt.Component loadArray(java.lang.Object);
-}

@@ -1,5 +1,0 @@
-Compiled from "XSDKeyrefTraverser.java"
-class com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDKeyrefTraverser extends com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDAbstractIDConstraintTraverser {
-  public com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDKeyrefTraverser(com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDHandler, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSAttributeChecker);
-  void traverse(org.w3c.dom.Element, com.sun.org.apache.xerces.internal.impl.xs.XSElementDecl, com.sun.org.apache.xerces.internal.impl.xs.traversers.XSDocumentInfo, com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar);
-}

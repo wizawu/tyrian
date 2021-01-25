@@ -1,8 +1,0 @@
-Compiled from "ConstantPoolData.java"
-abstract class sun.tools.asm.ConstantPoolData implements sun.tools.java.RuntimeConstants {
-  int index;
-  sun.tools.asm.ConstantPoolData();
-  abstract void write(sun.tools.java.Environment, java.io.DataOutputStream, sun.tools.asm.ConstantPool) throws java.io.IOException;
-  int order();
-  int width();
-}

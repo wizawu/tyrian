@@ -1,5 +1,0 @@
-Compiled from "XPathFactoryConfigurationException.java"
-public class javax.xml.xpath.XPathFactoryConfigurationException extends javax.xml.xpath.XPathException {
-  public javax.xml.xpath.XPathFactoryConfigurationException(java.lang.String);
-  public javax.xml.xpath.XPathFactoryConfigurationException(java.lang.Throwable);
-}

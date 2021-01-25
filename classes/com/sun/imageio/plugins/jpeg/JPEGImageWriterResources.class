@@ -1,5 +1,0 @@
-Compiled from "JPEGImageWriterResources.java"
-public class com.sun.imageio.plugins.jpeg.JPEGImageWriterResources extends java.util.ListResourceBundle {
-  public com.sun.imageio.plugins.jpeg.JPEGImageWriterResources();
-  protected java.lang.Object[][] getContents();
-}

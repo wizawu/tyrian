@@ -1,6 +1,0 @@
-Compiled from "AttachNotSupportedException.java"
-public class com.sun.tools.attach.AttachNotSupportedException extends java.lang.Exception {
-  static final long serialVersionUID;
-  public com.sun.tools.attach.AttachNotSupportedException();
-  public com.sun.tools.attach.AttachNotSupportedException(java.lang.String);
-}

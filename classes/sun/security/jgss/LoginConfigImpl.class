@@ -1,7 +1,0 @@
-Compiled from "LoginConfigImpl.java"
-public class sun.security.jgss.LoginConfigImpl extends javax.security.auth.login.Configuration {
-  public static final boolean HTTP_USE_GLOBAL_CREDS;
-  public sun.security.jgss.LoginConfigImpl(sun.security.jgss.GSSCaller, org.ietf.jgss.Oid);
-  public javax.security.auth.login.AppConfigurationEntry[] getAppConfigurationEntry(java.lang.String);
-  static {};
-}

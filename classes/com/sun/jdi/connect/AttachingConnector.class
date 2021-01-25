@@ -1,4 +1,0 @@
-Compiled from "AttachingConnector.java"
-public interface com.sun.jdi.connect.AttachingConnector extends com.sun.jdi.connect.Connector {
-  public abstract com.sun.jdi.VirtualMachine attach(java.util.Map<java.lang.String, ? extends com.sun.jdi.connect.Connector$Argument>) throws java.io.IOException, com.sun.jdi.connect.IllegalConnectorArgumentsException;
-}

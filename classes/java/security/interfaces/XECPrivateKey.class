@@ -1,4 +1,0 @@
-Compiled from "XECPrivateKey.java"
-public interface java.security.interfaces.XECPrivateKey extends java.security.interfaces.XECKey,java.security.PrivateKey {
-  public abstract java.util.Optional<byte[]> getScalar();
-}

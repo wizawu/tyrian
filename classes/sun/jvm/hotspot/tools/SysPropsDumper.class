@@ -1,7 +1,0 @@
-Compiled from "SysPropsDumper.java"
-public class sun.jvm.hotspot.tools.SysPropsDumper extends sun.jvm.hotspot.tools.Tool {
-  public sun.jvm.hotspot.tools.SysPropsDumper();
-  public sun.jvm.hotspot.tools.SysPropsDumper(sun.jvm.hotspot.debugger.JVMDebugger);
-  public void run();
-  public static void main(java.lang.String[]);
-}

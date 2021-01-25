@@ -1,3 +1,0 @@
-Compiled from "ReferenceType.java"
-public interface javax.lang.model.type.ReferenceType extends javax.lang.model.type.TypeMirror {
-}

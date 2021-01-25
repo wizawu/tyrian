@@ -1,7 +1,0 @@
-Compiled from "LSException.java"
-public class org.w3c.dom.ls.LSException extends java.lang.RuntimeException {
-  public short code;
-  public static final short PARSE_ERR;
-  public static final short SERIALIZE_ERR;
-  public org.w3c.dom.ls.LSException(short, java.lang.String);
-}

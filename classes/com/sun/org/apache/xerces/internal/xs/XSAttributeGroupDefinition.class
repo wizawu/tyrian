@@ -1,7 +1,0 @@
-Compiled from "XSAttributeGroupDefinition.java"
-public interface com.sun.org.apache.xerces.internal.xs.XSAttributeGroupDefinition extends com.sun.org.apache.xerces.internal.xs.XSObject {
-  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAttributeUses();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSWildcard getAttributeWildcard();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSAnnotation getAnnotation();
-  public abstract com.sun.org.apache.xerces.internal.xs.XSObjectList getAnnotations();
-}

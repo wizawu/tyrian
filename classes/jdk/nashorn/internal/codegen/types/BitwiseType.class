@@ -1,4 +1,0 @@
-Compiled from "BitwiseType.java"
-public abstract class jdk.nashorn.internal.codegen.types.BitwiseType extends jdk.nashorn.internal.codegen.types.NumericType implements jdk.nashorn.internal.codegen.types.BytecodeBitwiseOps {
-  protected jdk.nashorn.internal.codegen.types.BitwiseType(java.lang.String, java.lang.Class<?>, int, int);
-}

@@ -1,7 +1,0 @@
-Compiled from "DebugVC50SrcModLineNumberMap.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SrcModLineNumberMap {
-  public abstract int getSegment();
-  public abstract int getNumSourceLinePairs();
-  public abstract int getCodeOffset(int);
-  public abstract int getLineNumber(int);
-}

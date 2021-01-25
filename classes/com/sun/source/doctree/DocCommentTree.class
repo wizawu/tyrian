@@ -1,9 +1,0 @@
-Compiled from "DocCommentTree.java"
-public interface com.sun.source.doctree.DocCommentTree extends com.sun.source.doctree.DocTree {
-  public abstract java.util.List<? extends com.sun.source.doctree.DocTree> getFirstSentence();
-  public default java.util.List<? extends com.sun.source.doctree.DocTree> getFullBody();
-  public abstract java.util.List<? extends com.sun.source.doctree.DocTree> getBody();
-  public abstract java.util.List<? extends com.sun.source.doctree.DocTree> getBlockTags();
-  public default java.util.List<? extends com.sun.source.doctree.DocTree> getPreamble();
-  public default java.util.List<? extends com.sun.source.doctree.DocTree> getPostamble();
-}

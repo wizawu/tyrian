@@ -1,8 +1,0 @@
-Compiled from "ListSelectionEvent.java"
-public class javax.swing.event.ListSelectionEvent extends java.util.EventObject {
-  public javax.swing.event.ListSelectionEvent(java.lang.Object, int, int, boolean);
-  public int getFirstIndex();
-  public int getLastIndex();
-  public boolean getValueIsAdjusting();
-  public java.lang.String toString();
-}

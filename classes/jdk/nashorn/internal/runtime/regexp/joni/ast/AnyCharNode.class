@@ -1,7 +1,0 @@
-Compiled from "AnyCharNode.java"
-public final class jdk.nashorn.internal.runtime.regexp.joni.ast.AnyCharNode extends jdk.nashorn.internal.runtime.regexp.joni.ast.Node {
-  public jdk.nashorn.internal.runtime.regexp.joni.ast.AnyCharNode();
-  public int getType();
-  public java.lang.String getName();
-  public java.lang.String toString(int);
-}

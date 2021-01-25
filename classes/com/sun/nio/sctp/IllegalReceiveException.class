@@ -1,5 +1,0 @@
-Compiled from "IllegalReceiveException.java"
-public class com.sun.nio.sctp.IllegalReceiveException extends java.lang.IllegalStateException {
-  public com.sun.nio.sctp.IllegalReceiveException();
-  public com.sun.nio.sctp.IllegalReceiveException(java.lang.String);
-}

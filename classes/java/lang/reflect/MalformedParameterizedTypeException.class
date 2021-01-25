@@ -1,5 +1,0 @@
-Compiled from "MalformedParameterizedTypeException.java"
-public class java.lang.reflect.MalformedParameterizedTypeException extends java.lang.RuntimeException {
-  public java.lang.reflect.MalformedParameterizedTypeException();
-  public java.lang.reflect.MalformedParameterizedTypeException(java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "TrueElementHandler.java"
-final class com.sun.beans.decoder.TrueElementHandler extends com.sun.beans.decoder.NullElementHandler {
-  com.sun.beans.decoder.TrueElementHandler();
-  public java.lang.Object getValue();
-}

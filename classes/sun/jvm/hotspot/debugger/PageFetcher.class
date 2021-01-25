@@ -1,4 +1,0 @@
-Compiled from "PageFetcher.java"
-public interface sun.jvm.hotspot.debugger.PageFetcher {
-  public abstract sun.jvm.hotspot.debugger.Page fetchPage(long, long);
-}

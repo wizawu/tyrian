@@ -1,5 +1,0 @@
-Compiled from "CompilationException.java"
-public class jdk.nashorn.internal.codegen.CompilationException extends java.lang.RuntimeException {
-  jdk.nashorn.internal.codegen.CompilationException(java.lang.String);
-  jdk.nashorn.internal.codegen.CompilationException(java.lang.Exception);
-}

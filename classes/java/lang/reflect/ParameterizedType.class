@@ -1,6 +1,0 @@
-Compiled from "ParameterizedType.java"
-public interface java.lang.reflect.ParameterizedType extends java.lang.reflect.Type {
-  public abstract java.lang.reflect.Type[] getActualTypeArguments();
-  public abstract java.lang.reflect.Type getRawType();
-  public abstract java.lang.reflect.Type getOwnerType();
-}

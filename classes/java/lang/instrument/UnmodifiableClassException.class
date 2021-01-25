@@ -1,5 +1,0 @@
-Compiled from "UnmodifiableClassException.java"
-public class java.lang.instrument.UnmodifiableClassException extends java.lang.Exception {
-  public java.lang.instrument.UnmodifiableClassException();
-  public java.lang.instrument.UnmodifiableClassException(java.lang.String);
-}

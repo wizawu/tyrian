@@ -1,9 +1,0 @@
-Compiled from "Variable.java"
-final class com.sun.org.apache.xalan.internal.xsltc.compiler.Variable extends com.sun.org.apache.xalan.internal.xsltc.compiler.VariableBase {
-  com.sun.org.apache.xalan.internal.xsltc.compiler.Variable();
-  public int getIndex();
-  public void parseContents(com.sun.org.apache.xalan.internal.xsltc.compiler.Parser);
-  public com.sun.org.apache.xalan.internal.xsltc.compiler.util.Type typeCheck(com.sun.org.apache.xalan.internal.xsltc.compiler.SymbolTable) throws com.sun.org.apache.xalan.internal.xsltc.compiler.util.TypeCheckError;
-  public void initialize(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
-  public void translate(com.sun.org.apache.xalan.internal.xsltc.compiler.util.ClassGenerator, com.sun.org.apache.xalan.internal.xsltc.compiler.util.MethodGenerator);
-}

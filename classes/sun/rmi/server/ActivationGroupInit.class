@@ -1,5 +1,0 @@
-Compiled from "ActivationGroupInit.java"
-public abstract class sun.rmi.server.ActivationGroupInit {
-  public sun.rmi.server.ActivationGroupInit();
-  public static void main(java.lang.String[]);
-}

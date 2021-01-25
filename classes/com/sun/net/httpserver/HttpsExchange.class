@@ -1,5 +1,0 @@
-Compiled from "HttpsExchange.java"
-public abstract class com.sun.net.httpserver.HttpsExchange extends com.sun.net.httpserver.HttpExchange {
-  protected com.sun.net.httpserver.HttpsExchange();
-  public abstract javax.net.ssl.SSLSession getSSLSession();
-}

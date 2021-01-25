@@ -1,7 +1,0 @@
-Compiled from "JobMediaSheetsCompleted.java"
-public final class javax.print.attribute.standard.JobMediaSheetsCompleted extends javax.print.attribute.IntegerSyntax implements javax.print.attribute.PrintJobAttribute {
-  public javax.print.attribute.standard.JobMediaSheetsCompleted(int);
-  public boolean equals(java.lang.Object);
-  public final java.lang.Class<? extends javax.print.attribute.Attribute> getCategory();
-  public final java.lang.String getName();
-}

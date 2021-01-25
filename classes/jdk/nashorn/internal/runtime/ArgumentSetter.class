@@ -1,8 +1,0 @@
-Compiled from "ArgumentSetter.java"
-public final class jdk.nashorn.internal.runtime.ArgumentSetter {
-  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call SET_ARGUMENT;
-  public static final jdk.nashorn.internal.codegen.CompilerConstants$Call SET_ARRAY_ELEMENT;
-  public static void setArgument(java.lang.Object, jdk.nashorn.internal.runtime.ScriptObject, int);
-  public static void setArrayElement(java.lang.Object, java.lang.Object[], int);
-  static {};
-}

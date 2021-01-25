@@ -1,5 +1,0 @@
-Compiled from "AbstractMethodError.java"
-public class java.lang.AbstractMethodError extends java.lang.IncompatibleClassChangeError {
-  public java.lang.AbstractMethodError();
-  public java.lang.AbstractMethodError(java.lang.String);
-}

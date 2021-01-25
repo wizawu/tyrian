@@ -1,6 +1,0 @@
-Compiled from "MotifMenuMouseMotionListener.java"
-class com.sun.java.swing.plaf.motif.MotifMenuMouseMotionListener implements java.awt.event.MouseMotionListener {
-  com.sun.java.swing.plaf.motif.MotifMenuMouseMotionListener();
-  public void mouseDragged(java.awt.event.MouseEvent);
-  public void mouseMoved(java.awt.event.MouseEvent);
-}

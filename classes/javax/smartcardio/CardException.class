@@ -1,6 +1,0 @@
-Compiled from "CardException.java"
-public class javax.smartcardio.CardException extends java.lang.Exception {
-  public javax.smartcardio.CardException(java.lang.String);
-  public javax.smartcardio.CardException(java.lang.Throwable);
-  public javax.smartcardio.CardException(java.lang.String, java.lang.Throwable);
-}

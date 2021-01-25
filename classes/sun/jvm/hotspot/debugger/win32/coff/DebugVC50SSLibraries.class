@@ -1,3 +1,0 @@
-Compiled from "DebugVC50SSLibraries.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSLibraries extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
-}

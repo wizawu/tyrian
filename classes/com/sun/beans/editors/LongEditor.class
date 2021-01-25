@@ -1,6 +1,0 @@
-Compiled from "LongEditor.java"
-public class com.sun.beans.editors.LongEditor extends com.sun.beans.editors.NumberEditor {
-  public com.sun.beans.editors.LongEditor();
-  public java.lang.String getJavaInitializationString();
-  public void setAsText(java.lang.String) throws java.lang.IllegalArgumentException;
-}

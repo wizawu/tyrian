@@ -1,8 +1,0 @@
-Compiled from "NestMembers_attribute.java"
-public class com.sun.tools.classfile.NestMembers_attribute extends com.sun.tools.classfile.Attribute {
-  public final int[] members_indexes;
-  com.sun.tools.classfile.NestMembers_attribute(com.sun.tools.classfile.ClassReader, int, int) throws java.io.IOException;
-  public com.sun.tools.classfile.NestMembers_attribute(int, int[]);
-  public com.sun.tools.classfile.ConstantPool$CONSTANT_Class_info[] getChildren(com.sun.tools.classfile.ConstantPool) throws com.sun.tools.classfile.ConstantPoolException;
-  public <R, D> R accept(com.sun.tools.classfile.Attribute$Visitor<R, D>, D);
-}

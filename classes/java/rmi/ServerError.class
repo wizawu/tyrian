@@ -1,4 +1,0 @@
-Compiled from "ServerError.java"
-public class java.rmi.ServerError extends java.rmi.RemoteException {
-  public java.rmi.ServerError(java.lang.String, java.lang.Error);
-}

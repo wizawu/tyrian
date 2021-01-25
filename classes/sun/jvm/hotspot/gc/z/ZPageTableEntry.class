@@ -1,7 +1,0 @@
-Compiled from "ZPageTableEntry.java"
-class sun.jvm.hotspot.gc.z.ZPageTableEntry {
-  sun.jvm.hotspot.debugger.Address entry;
-  sun.jvm.hotspot.gc.z.ZPageTableEntry(sun.jvm.hotspot.debugger.Address);
-  sun.jvm.hotspot.gc.z.ZPage page();
-  boolean relocating();
-}

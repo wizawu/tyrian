@@ -1,6 +1,0 @@
-Compiled from "IncompleteAnnotationException.java"
-public class java.lang.annotation.IncompleteAnnotationException extends java.lang.RuntimeException {
-  public java.lang.annotation.IncompleteAnnotationException(java.lang.Class<? extends java.lang.annotation.Annotation>, java.lang.String);
-  public java.lang.Class<? extends java.lang.annotation.Annotation> annotationType();
-  public java.lang.String elementName();
-}

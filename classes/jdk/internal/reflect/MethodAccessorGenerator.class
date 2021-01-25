@@ -1,7 +1,0 @@
-Compiled from "MethodAccessorGenerator.java"
-class jdk.internal.reflect.MethodAccessorGenerator extends jdk.internal.reflect.AccessorGenerator {
-  jdk.internal.reflect.MethodAccessorGenerator();
-  public jdk.internal.reflect.MethodAccessor generateMethod(java.lang.Class<?>, java.lang.String, java.lang.Class<?>[], java.lang.Class<?>, java.lang.Class<?>[], int);
-  public jdk.internal.reflect.ConstructorAccessor generateConstructor(java.lang.Class<?>, java.lang.Class<?>[], java.lang.Class<?>[], int);
-  public jdk.internal.reflect.SerializationConstructorAccessorImpl generateSerializationConstructor(java.lang.Class<?>, java.lang.Class<?>[], java.lang.Class<?>[], int, java.lang.Class<?>);
-}

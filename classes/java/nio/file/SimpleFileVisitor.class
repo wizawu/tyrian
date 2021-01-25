@@ -1,8 +1,0 @@
-Compiled from "SimpleFileVisitor.java"
-public class java.nio.file.SimpleFileVisitor<T> implements java.nio.file.FileVisitor<T> {
-  protected java.nio.file.SimpleFileVisitor();
-  public java.nio.file.FileVisitResult preVisitDirectory(T, java.nio.file.attribute.BasicFileAttributes) throws java.io.IOException;
-  public java.nio.file.FileVisitResult visitFile(T, java.nio.file.attribute.BasicFileAttributes) throws java.io.IOException;
-  public java.nio.file.FileVisitResult visitFileFailed(T, java.io.IOException) throws java.io.IOException;
-  public java.nio.file.FileVisitResult postVisitDirectory(T, java.io.IOException) throws java.io.IOException;
-}

@@ -1,3 +1,0 @@
-Compiled from "TypeArgument.java"
-public interface sun.reflect.generics.tree.TypeArgument extends sun.reflect.generics.tree.TypeTree {
-}

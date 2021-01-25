@@ -1,4 +1,0 @@
-Compiled from "ContentHandlerFactory.java"
-public interface java.net.ContentHandlerFactory {
-  public abstract java.net.ContentHandler createContentHandler(java.lang.String);
-}

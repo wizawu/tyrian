@@ -1,4 +1,0 @@
-Compiled from "HyperlinkListener.java"
-public interface javax.swing.event.HyperlinkListener extends java.util.EventListener {
-  public abstract void hyperlinkUpdate(javax.swing.event.HyperlinkEvent);
-}

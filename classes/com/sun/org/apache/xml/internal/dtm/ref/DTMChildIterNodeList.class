@@ -1,6 +1,0 @@
-Compiled from "DTMChildIterNodeList.java"
-public class com.sun.org.apache.xml.internal.dtm.ref.DTMChildIterNodeList extends com.sun.org.apache.xml.internal.dtm.ref.DTMNodeListBase {
-  public com.sun.org.apache.xml.internal.dtm.ref.DTMChildIterNodeList(com.sun.org.apache.xml.internal.dtm.DTM, int);
-  public org.w3c.dom.Node item(int);
-  public int getLength();
-}

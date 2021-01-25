@@ -1,9 +1,0 @@
-Compiled from "ClassTree.java"
-public interface com.sun.source.tree.ClassTree extends com.sun.source.tree.StatementTree {
-  public abstract com.sun.source.tree.ModifiersTree getModifiers();
-  public abstract javax.lang.model.element.Name getSimpleName();
-  public abstract java.util.List<? extends com.sun.source.tree.TypeParameterTree> getTypeParameters();
-  public abstract com.sun.source.tree.Tree getExtendsClause();
-  public abstract java.util.List<? extends com.sun.source.tree.Tree> getImplementsClause();
-  public abstract java.util.List<? extends com.sun.source.tree.Tree> getMembers();
-}

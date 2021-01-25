@@ -1,9 +1,0 @@
-Compiled from "MethodParameters.java"
-public class com.sun.org.apache.bcel.internal.classfile.MethodParameters extends com.sun.org.apache.bcel.internal.classfile.Attribute {
-  com.sun.org.apache.bcel.internal.classfile.MethodParameters(int, int, java.io.DataInput, com.sun.org.apache.bcel.internal.classfile.ConstantPool) throws java.io.IOException;
-  public com.sun.org.apache.bcel.internal.classfile.MethodParameter[] getParameters();
-  public void setParameters(com.sun.org.apache.bcel.internal.classfile.MethodParameter[]);
-  public void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
-  public com.sun.org.apache.bcel.internal.classfile.Attribute copy(com.sun.org.apache.bcel.internal.classfile.ConstantPool);
-  public void dump(java.io.DataOutputStream) throws java.io.IOException;
-}

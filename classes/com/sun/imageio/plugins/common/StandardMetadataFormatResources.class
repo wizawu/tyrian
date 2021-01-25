@@ -1,5 +1,0 @@
-Compiled from "StandardMetadataFormatResources.java"
-public class com.sun.imageio.plugins.common.StandardMetadataFormatResources extends java.util.ListResourceBundle {
-  public com.sun.imageio.plugins.common.StandardMetadataFormatResources();
-  protected java.lang.Object[][] getContents();
-}

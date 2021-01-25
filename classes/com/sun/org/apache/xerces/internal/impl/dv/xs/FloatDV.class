@@ -1,8 +1,0 @@
-Compiled from "FloatDV.java"
-public class com.sun.org.apache.xerces.internal.impl.dv.xs.FloatDV extends com.sun.org.apache.xerces.internal.impl.dv.xs.TypeValidator {
-  public com.sun.org.apache.xerces.internal.impl.dv.xs.FloatDV();
-  public short getAllowedFacets();
-  public java.lang.Object getActualValue(java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.ValidationContext) throws com.sun.org.apache.xerces.internal.impl.dv.InvalidDatatypeValueException;
-  public int compare(java.lang.Object, java.lang.Object);
-  public boolean isIdentical(java.lang.Object, java.lang.Object);
-}

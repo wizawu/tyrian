@@ -1,8 +1,0 @@
-Compiled from "JdiDefaultExecutionControl.java"
-public class jdk.jshell.execution.JdiDefaultExecutionControl extends jdk.jshell.execution.JdiExecutionControl {
-  static jdk.jshell.spi.ExecutionControl create(jdk.jshell.spi.ExecutionEnv, java.lang.String, boolean, java.lang.String, int) throws java.io.IOException;
-  public java.lang.String invoke(java.lang.String, java.lang.String) throws jdk.jshell.spi.ExecutionControl$RunException, jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
-  public void stop() throws jdk.jshell.spi.ExecutionControl$EngineTerminationException, jdk.jshell.spi.ExecutionControl$InternalException;
-  public void close();
-  protected synchronized com.sun.jdi.VirtualMachine vm() throws jdk.jshell.spi.ExecutionControl$EngineTerminationException;
-}

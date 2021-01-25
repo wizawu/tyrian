@@ -1,8 +1,0 @@
-Compiled from "FileURLMapper.java"
-public class jdk.internal.loader.FileURLMapper {
-  java.net.URL url;
-  java.lang.String path;
-  public jdk.internal.loader.FileURLMapper(java.net.URL);
-  public java.lang.String getPath();
-  public boolean exists();
-}

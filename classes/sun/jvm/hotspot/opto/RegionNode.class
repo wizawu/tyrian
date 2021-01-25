@@ -1,5 +1,0 @@
-Compiled from "RegionNode.java"
-public class sun.jvm.hotspot.opto.RegionNode extends sun.jvm.hotspot.opto.Node {
-  public sun.jvm.hotspot.opto.RegionNode(sun.jvm.hotspot.debugger.Address);
-  static {};
-}

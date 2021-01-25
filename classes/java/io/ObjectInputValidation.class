@@ -1,4 +1,0 @@
-Compiled from "ObjectInputValidation.java"
-public interface java.io.ObjectInputValidation {
-  public abstract void validateObject() throws java.io.InvalidObjectException;
-}

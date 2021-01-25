@@ -1,9 +1,0 @@
-Compiled from "CallerSensitiveDynamicMethod.java"
-class jdk.dynalink.beans.CallerSensitiveDynamicMethod extends jdk.dynalink.beans.SingleDynamicMethod {
-  jdk.dynalink.beans.CallerSensitiveDynamicMethod(java.lang.reflect.AccessibleObject);
-  java.lang.invoke.MethodType getMethodType();
-  boolean isVarArgs();
-  java.lang.invoke.MethodHandle getTarget(jdk.dynalink.CallSiteDescriptor);
-  boolean isConstructor();
-  static {};
-}

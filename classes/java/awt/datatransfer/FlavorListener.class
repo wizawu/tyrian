@@ -1,4 +1,0 @@
-Compiled from "FlavorListener.java"
-public interface java.awt.datatransfer.FlavorListener extends java.util.EventListener {
-  public abstract void flavorsChanged(java.awt.datatransfer.FlavorEvent);
-}

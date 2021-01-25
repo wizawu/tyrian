@@ -1,8 +1,0 @@
-Compiled from "Util.java"
-public final class com.sun.org.apache.xalan.internal.xsltc.trax.Util {
-  public com.sun.org.apache.xalan.internal.xsltc.trax.Util();
-  public static java.lang.String baseName(java.lang.String);
-  public static java.lang.String noExtName(java.lang.String);
-  public static java.lang.String toJavaName(java.lang.String);
-  public static org.xml.sax.InputSource getInputSource(com.sun.org.apache.xalan.internal.xsltc.compiler.XSLTC, javax.xml.transform.Source) throws javax.xml.transform.TransformerConfigurationException;
-}

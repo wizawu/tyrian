@@ -1,5 +1,0 @@
-Compiled from "XInclude11TextReader.java"
-public class com.sun.org.apache.xerces.internal.xinclude.XInclude11TextReader extends com.sun.org.apache.xerces.internal.xinclude.XIncludeTextReader {
-  public com.sun.org.apache.xerces.internal.xinclude.XInclude11TextReader(com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource, com.sun.org.apache.xerces.internal.xinclude.XIncludeHandler, int) throws java.io.IOException;
-  protected boolean isValid(int);
-}

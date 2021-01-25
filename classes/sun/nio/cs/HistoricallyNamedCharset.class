@@ -1,4 +1,0 @@
-Compiled from "HistoricallyNamedCharset.java"
-public interface sun.nio.cs.HistoricallyNamedCharset {
-  public abstract java.lang.String historicalName();
-}

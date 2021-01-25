@@ -1,3 +1,0 @@
-Compiled from "VMDeathRequest.java"
-public interface com.sun.jdi.request.VMDeathRequest extends com.sun.jdi.request.EventRequest {
-}

@@ -1,9 +1,0 @@
-Compiled from "CompositeDataInvocationHandler.java"
-public class javax.management.openmbean.CompositeDataInvocationHandler implements java.lang.reflect.InvocationHandler {
-  static final boolean $assertionsDisabled;
-  public javax.management.openmbean.CompositeDataInvocationHandler(javax.management.openmbean.CompositeData);
-  javax.management.openmbean.CompositeDataInvocationHandler(javax.management.openmbean.CompositeData, com.sun.jmx.mbeanserver.MXBeanLookup);
-  public javax.management.openmbean.CompositeData getCompositeData();
-  public java.lang.Object invoke(java.lang.Object, java.lang.reflect.Method, java.lang.Object[]) throws java.lang.Throwable;
-  static {};
-}

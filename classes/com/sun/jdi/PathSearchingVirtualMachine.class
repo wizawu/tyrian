@@ -1,6 +1,0 @@
-Compiled from "PathSearchingVirtualMachine.java"
-public interface com.sun.jdi.PathSearchingVirtualMachine extends com.sun.jdi.VirtualMachine {
-  public abstract java.util.List<java.lang.String> classPath();
-  public abstract java.util.List<java.lang.String> bootClassPath();
-  public abstract java.lang.String baseDirectory();
-}

@@ -1,4 +1,0 @@
-Compiled from "SF2GlobalRegion.java"
-public final class com.sun.media.sound.SF2GlobalRegion extends com.sun.media.sound.SF2Region {
-  public com.sun.media.sound.SF2GlobalRegion();
-}

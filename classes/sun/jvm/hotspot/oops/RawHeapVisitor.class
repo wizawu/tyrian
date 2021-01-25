@@ -1,5 +1,0 @@
-Compiled from "RawHeapVisitor.java"
-public interface sun.jvm.hotspot.oops.RawHeapVisitor extends sun.jvm.hotspot.runtime.AddressVisitor {
-  public abstract void prologue(long);
-  public abstract void epilogue();
-}

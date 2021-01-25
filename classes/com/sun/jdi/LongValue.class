@@ -1,6 +1,0 @@
-Compiled from "LongValue.java"
-public interface com.sun.jdi.LongValue extends com.sun.jdi.PrimitiveValue, java.lang.Comparable<com.sun.jdi.LongValue> {
-  public abstract long value();
-  public abstract boolean equals(java.lang.Object);
-  public abstract int hashCode();
-}

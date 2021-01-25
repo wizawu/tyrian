@@ -1,7 +1,0 @@
-Compiled from "LongUnaryOperator.java"
-public interface java.util.function.LongUnaryOperator {
-  public abstract long applyAsLong(long);
-  public default java.util.function.LongUnaryOperator compose(java.util.function.LongUnaryOperator);
-  public default java.util.function.LongUnaryOperator andThen(java.util.function.LongUnaryOperator);
-  public static java.util.function.LongUnaryOperator identity();
-}

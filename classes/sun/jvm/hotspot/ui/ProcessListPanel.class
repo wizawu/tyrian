@@ -1,9 +1,0 @@
-Compiled from "ProcessListPanel.java"
-public class sun.jvm.hotspot.ui.ProcessListPanel extends javax.swing.JPanel {
-  public sun.jvm.hotspot.ui.ProcessListPanel(sun.jvm.hotspot.debugger.Debugger);
-  public void setAutoUpdateInterval(int);
-  public void start();
-  public void stop();
-  public synchronized void update();
-  public synchronized sun.jvm.hotspot.debugger.ProcessInfo getSelectedProcess();
-}

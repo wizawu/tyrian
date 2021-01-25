@@ -1,8 +1,0 @@
-Compiled from "EnumConstantNotPresentExceptionProxy.java"
-public class sun.reflect.annotation.EnumConstantNotPresentExceptionProxy extends sun.reflect.annotation.ExceptionProxy {
-  final java.lang.Class<? extends java.lang.Enum<?>> enumType;
-  final java.lang.String constName;
-  public sun.reflect.annotation.EnumConstantNotPresentExceptionProxy(java.lang.Class<? extends java.lang.Enum<?>>, java.lang.String);
-  protected java.lang.RuntimeException generateException();
-  public java.lang.String toString();
-}

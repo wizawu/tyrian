@@ -1,7 +1,0 @@
-Compiled from "FlagDumper.java"
-public class sun.jvm.hotspot.tools.FlagDumper extends sun.jvm.hotspot.tools.Tool {
-  public sun.jvm.hotspot.tools.FlagDumper();
-  public sun.jvm.hotspot.tools.FlagDumper(sun.jvm.hotspot.debugger.JVMDebugger);
-  public void run();
-  public static void main(java.lang.String[]);
-}

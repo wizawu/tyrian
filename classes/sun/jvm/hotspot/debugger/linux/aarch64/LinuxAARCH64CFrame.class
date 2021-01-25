@@ -1,8 +1,0 @@
-Compiled from "LinuxAARCH64CFrame.java"
-public final class sun.jvm.hotspot.debugger.linux.aarch64.LinuxAARCH64CFrame extends sun.jvm.hotspot.debugger.cdbg.basic.BasicCFrame {
-  public sun.jvm.hotspot.debugger.linux.aarch64.LinuxAARCH64CFrame(sun.jvm.hotspot.debugger.linux.LinuxDebugger, sun.jvm.hotspot.debugger.Address, sun.jvm.hotspot.debugger.Address);
-  public sun.jvm.hotspot.debugger.cdbg.ClosestSymbol closestSymbolToPC();
-  public sun.jvm.hotspot.debugger.Address pc();
-  public sun.jvm.hotspot.debugger.Address localVariableBase();
-  public sun.jvm.hotspot.debugger.cdbg.CFrame sender(sun.jvm.hotspot.debugger.ThreadProxy);
-}

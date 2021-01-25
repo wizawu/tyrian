@@ -1,7 +1,0 @@
-Compiled from "Parser.java"
-public interface com.sun.tools.javac.parser.Parser {
-  public abstract com.sun.tools.javac.tree.JCTree$JCCompilationUnit parseCompilationUnit();
-  public abstract com.sun.tools.javac.tree.JCTree$JCExpression parseExpression();
-  public abstract com.sun.tools.javac.tree.JCTree$JCStatement parseStatement();
-  public abstract com.sun.tools.javac.tree.JCTree$JCExpression parseType();
-}

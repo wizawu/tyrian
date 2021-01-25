@@ -1,9 +1,0 @@
-Compiled from "OptimisticTypesPersistence.java"
-public final class jdk.nashorn.internal.codegen.OptimisticTypesPersistence {
-  public jdk.nashorn.internal.codegen.OptimisticTypesPersistence();
-  public static java.lang.Object getLocationDescriptor(jdk.nashorn.internal.runtime.Source, int, jdk.nashorn.internal.codegen.types.Type[]);
-  public static void store(java.lang.Object, java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type>);
-  public static java.util.Map<java.lang.Integer, jdk.nashorn.internal.codegen.types.Type> load(java.lang.Object);
-  public static java.lang.String getVersionDirName() throws java.lang.Exception;
-  static {};
-}

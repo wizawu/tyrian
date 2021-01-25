@@ -1,8 +1,0 @@
-Compiled from "MemberSelectTreeImpl.java"
-final class jdk.nashorn.api.tree.MemberSelectTreeImpl extends jdk.nashorn.api.tree.ExpressionTreeImpl implements jdk.nashorn.api.tree.MemberSelectTree {
-  jdk.nashorn.api.tree.MemberSelectTreeImpl(jdk.nashorn.internal.ir.AccessNode, jdk.nashorn.api.tree.ExpressionTree);
-  public jdk.nashorn.api.tree.Tree$Kind getKind();
-  public jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public java.lang.String getIdentifier();
-  public <R, D> R accept(jdk.nashorn.api.tree.TreeVisitor<R, D>, D);
-}

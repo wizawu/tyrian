@@ -1,5 +1,0 @@
-Compiled from "MenuItemCheckIconFactory.java"
-public interface sun.swing.MenuItemCheckIconFactory {
-  public abstract javax.swing.Icon getIcon(javax.swing.JMenuItem);
-  public abstract boolean isCompatible(java.lang.Object, java.lang.String);
-}

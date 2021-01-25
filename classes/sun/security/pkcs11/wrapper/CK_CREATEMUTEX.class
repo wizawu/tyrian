@@ -1,4 +1,0 @@
-Compiled from "CK_CREATEMUTEX.java"
-public interface sun.security.pkcs11.wrapper.CK_CREATEMUTEX {
-  public abstract java.lang.Object CK_CREATEMUTEX() throws sun.security.pkcs11.wrapper.PKCS11Exception;
-}

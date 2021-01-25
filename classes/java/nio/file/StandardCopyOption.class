@@ -1,9 +1,0 @@
-Compiled from "StandardCopyOption.java"
-public final class java.nio.file.StandardCopyOption extends java.lang.Enum<java.nio.file.StandardCopyOption> implements java.nio.file.CopyOption {
-  public static final java.nio.file.StandardCopyOption REPLACE_EXISTING;
-  public static final java.nio.file.StandardCopyOption COPY_ATTRIBUTES;
-  public static final java.nio.file.StandardCopyOption ATOMIC_MOVE;
-  public static java.nio.file.StandardCopyOption[] values();
-  public static java.nio.file.StandardCopyOption valueOf(java.lang.String);
-  static {};
-}

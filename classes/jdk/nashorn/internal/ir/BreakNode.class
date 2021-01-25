@@ -1,9 +1,0 @@
-Compiled from "BreakNode.java"
-public final class jdk.nashorn.internal.ir.BreakNode extends jdk.nashorn.internal.ir.JumpStatement {
-  public jdk.nashorn.internal.ir.BreakNode(int, long, int, java.lang.String);
-  public jdk.nashorn.internal.ir.Node accept(jdk.nashorn.internal.ir.visitor.NodeVisitor<? extends jdk.nashorn.internal.ir.LexicalContext>);
-  jdk.nashorn.internal.ir.JumpStatement createNewJumpStatement(jdk.nashorn.internal.ir.LocalVariableConversion);
-  java.lang.String getStatementName();
-  public jdk.nashorn.internal.ir.BreakableNode getTarget(jdk.nashorn.internal.ir.LexicalContext);
-  jdk.nashorn.internal.codegen.Label getTargetLabel(jdk.nashorn.internal.ir.BreakableNode);
-}

@@ -1,8 +1,0 @@
-Compiled from "ApplyCaseFoldArg.java"
-public final class jdk.nashorn.internal.runtime.regexp.joni.ApplyCaseFoldArg {
-  final jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment env;
-  final jdk.nashorn.internal.runtime.regexp.joni.ast.CClassNode cc;
-  jdk.nashorn.internal.runtime.regexp.joni.ast.ConsAltNode altRoot;
-  jdk.nashorn.internal.runtime.regexp.joni.ast.ConsAltNode tail;
-  public jdk.nashorn.internal.runtime.regexp.joni.ApplyCaseFoldArg(jdk.nashorn.internal.runtime.regexp.joni.ScanEnvironment, jdk.nashorn.internal.runtime.regexp.joni.ast.CClassNode);
-}

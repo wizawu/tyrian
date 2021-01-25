@@ -1,5 +1,0 @@
-Compiled from "LongElementHandler.java"
-final class com.sun.beans.decoder.LongElementHandler extends com.sun.beans.decoder.StringElementHandler {
-  com.sun.beans.decoder.LongElementHandler();
-  public java.lang.Object getValue(java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "JAXPVariableStack.java"
-public class com.sun.org.apache.xpath.internal.jaxp.JAXPVariableStack extends com.sun.org.apache.xpath.internal.VariableStack {
-  public com.sun.org.apache.xpath.internal.jaxp.JAXPVariableStack(javax.xml.xpath.XPathVariableResolver);
-  public com.sun.org.apache.xpath.internal.objects.XObject getVariableOrParam(com.sun.org.apache.xpath.internal.XPathContext, com.sun.org.apache.xml.internal.utils.QName) throws javax.xml.transform.TransformerException, java.lang.IllegalArgumentException;
-}

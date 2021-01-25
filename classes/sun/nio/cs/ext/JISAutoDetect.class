@@ -1,9 +1,0 @@
-Compiled from "JISAutoDetect.java"
-public class sun.nio.cs.ext.JISAutoDetect extends java.nio.charset.Charset implements sun.nio.cs.HistoricallyNamedCharset {
-  public sun.nio.cs.ext.JISAutoDetect();
-  public boolean contains(java.nio.charset.Charset);
-  public boolean canEncode();
-  public java.nio.charset.CharsetDecoder newDecoder();
-  public java.lang.String historicalName();
-  public java.nio.charset.CharsetEncoder newEncoder();
-}

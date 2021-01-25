@@ -1,7 +1,0 @@
-Compiled from "JdiExecutionControl.java"
-public abstract class jdk.jshell.execution.JdiExecutionControl extends jdk.jshell.execution.StreamingExecutionControl implements jdk.jshell.spi.ExecutionControl {
-  protected jdk.jshell.execution.JdiExecutionControl(java.io.ObjectOutput, java.io.ObjectInput);
-  protected abstract com.sun.jdi.VirtualMachine vm() throws jdk.jshell.spi.ExecutionControl$EngineTerminationException;
-  public void redefine(jdk.jshell.spi.ExecutionControl$ClassBytecodes[]) throws jdk.jshell.spi.ExecutionControl$ClassInstallException, jdk.jshell.spi.ExecutionControl$EngineTerminationException;
-  protected com.sun.jdi.ReferenceType referenceType(com.sun.jdi.VirtualMachine, java.lang.String);
-}

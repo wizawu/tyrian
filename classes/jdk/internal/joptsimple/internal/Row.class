@@ -1,8 +1,0 @@
-Compiled from "Row.java"
-class jdk.internal.joptsimple.internal.Row {
-  final java.lang.String option;
-  final java.lang.String description;
-  jdk.internal.joptsimple.internal.Row(java.lang.String, java.lang.String);
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-}

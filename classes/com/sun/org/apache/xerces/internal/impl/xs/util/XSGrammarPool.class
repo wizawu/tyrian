@@ -1,7 +1,0 @@
-Compiled from "XSGrammarPool.java"
-public class com.sun.org.apache.xerces.internal.impl.xs.util.XSGrammarPool extends com.sun.org.apache.xerces.internal.util.XMLGrammarPoolImpl {
-  public com.sun.org.apache.xerces.internal.impl.xs.util.XSGrammarPool();
-  public com.sun.org.apache.xerces.internal.xs.XSModel toXSModel();
-  public com.sun.org.apache.xerces.internal.xs.XSModel toXSModel(short);
-  protected com.sun.org.apache.xerces.internal.xs.XSModel toXSModel(com.sun.org.apache.xerces.internal.impl.xs.SchemaGrammar[], short);
-}

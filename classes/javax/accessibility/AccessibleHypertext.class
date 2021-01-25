@@ -1,6 +1,0 @@
-Compiled from "AccessibleHypertext.java"
-public interface javax.accessibility.AccessibleHypertext extends javax.accessibility.AccessibleText {
-  public abstract int getLinkCount();
-  public abstract javax.accessibility.AccessibleHyperlink getLink(int);
-  public abstract int getLinkIndex(int);
-}

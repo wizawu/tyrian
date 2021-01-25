@@ -1,5 +1,0 @@
-Compiled from "BALOAD.java"
-public class com.sun.org.apache.bcel.internal.generic.BALOAD extends com.sun.org.apache.bcel.internal.generic.ArrayInstruction implements com.sun.org.apache.bcel.internal.generic.StackProducer {
-  public com.sun.org.apache.bcel.internal.generic.BALOAD();
-  public void accept(com.sun.org.apache.bcel.internal.generic.Visitor);
-}

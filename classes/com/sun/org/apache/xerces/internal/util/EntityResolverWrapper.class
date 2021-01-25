@@ -1,9 +1,0 @@
-Compiled from "EntityResolverWrapper.java"
-public class com.sun.org.apache.xerces.internal.util.EntityResolverWrapper implements com.sun.org.apache.xerces.internal.xni.parser.XMLEntityResolver {
-  protected org.xml.sax.EntityResolver fEntityResolver;
-  public com.sun.org.apache.xerces.internal.util.EntityResolverWrapper();
-  public com.sun.org.apache.xerces.internal.util.EntityResolverWrapper(org.xml.sax.EntityResolver);
-  public void setEntityResolver(org.xml.sax.EntityResolver);
-  public org.xml.sax.EntityResolver getEntityResolver();
-  public com.sun.org.apache.xerces.internal.xni.parser.XMLInputSource resolveEntity(com.sun.org.apache.xerces.internal.xni.XMLResourceIdentifier) throws com.sun.org.apache.xerces.internal.xni.XNIException, java.io.IOException;
-}

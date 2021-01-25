@@ -1,4 +1,0 @@
-Compiled from "HttpConnectTimeoutException.java"
-public class java.net.http.HttpConnectTimeoutException extends java.net.http.HttpTimeoutException {
-  public java.net.http.HttpConnectTimeoutException(java.lang.String);
-}

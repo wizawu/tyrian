@@ -1,8 +1,0 @@
-Compiled from "SunJmxMBeanServer.java"
-public interface com.sun.jmx.mbeanserver.SunJmxMBeanServer extends javax.management.MBeanServer {
-  public abstract com.sun.jmx.mbeanserver.MBeanInstantiator getMBeanInstantiator();
-  public abstract boolean interceptorsEnabled();
-  public abstract javax.management.MBeanServer getMBeanServerInterceptor();
-  public abstract void setMBeanServerInterceptor(javax.management.MBeanServer);
-  public abstract javax.management.MBeanServerDelegate getMBeanServerDelegate();
-}

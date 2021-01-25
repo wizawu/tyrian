@@ -1,8 +1,0 @@
-Compiled from "LazyInitFileLog.java"
-public class com.sun.tools.sjavac.server.log.LazyInitFileLog extends com.sun.tools.sjavac.Log {
-  java.lang.String baseFilename;
-  java.nio.file.Path destination;
-  public com.sun.tools.sjavac.server.log.LazyInitFileLog(java.lang.String);
-  protected void printLogMsg(com.sun.tools.sjavac.Log$Level, java.lang.String);
-  public java.nio.file.Path getLogDestination();
-}

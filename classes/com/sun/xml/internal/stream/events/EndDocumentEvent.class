@@ -1,7 +1,0 @@
-Compiled from "EndDocumentEvent.java"
-public class com.sun.xml.internal.stream.events.EndDocumentEvent extends com.sun.xml.internal.stream.events.DummyEvent implements javax.xml.stream.events.EndDocument {
-  public com.sun.xml.internal.stream.events.EndDocumentEvent();
-  protected void init();
-  public java.lang.String toString();
-  protected void writeAsEncodedUnicodeEx(java.io.Writer) throws java.io.IOException;
-}

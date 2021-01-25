@@ -1,4 +1,0 @@
-Compiled from "MethodAccessor.java"
-public interface jdk.internal.reflect.MethodAccessor {
-  public abstract java.lang.Object invoke(java.lang.Object, java.lang.Object[]) throws java.lang.IllegalArgumentException, java.lang.reflect.InvocationTargetException;
-}

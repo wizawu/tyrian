@@ -1,4 +1,0 @@
-Compiled from "Channels.java"
-public final class jdk.nio.Channels {
-  public static java.nio.channels.SelectableChannel readWriteSelectableChannel(java.io.FileDescriptor, jdk.nio.Channels$SelectableChannelCloser);
-}

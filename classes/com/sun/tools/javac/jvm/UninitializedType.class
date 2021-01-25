@@ -1,9 +1,0 @@
-Compiled from "UninitializedType.java"
-class com.sun.tools.javac.jvm.UninitializedType extends com.sun.tools.javac.code.Type$DelegatedType {
-  public final int offset;
-  public static com.sun.tools.javac.jvm.UninitializedType uninitializedThis(com.sun.tools.javac.code.Type);
-  public static com.sun.tools.javac.jvm.UninitializedType uninitializedObject(com.sun.tools.javac.code.Type, int);
-  public com.sun.tools.javac.jvm.UninitializedType cloneWithMetadata(com.sun.tools.javac.code.TypeMetadata);
-  com.sun.tools.javac.code.Type initializedType();
-  public com.sun.tools.javac.code.Type cloneWithMetadata(com.sun.tools.javac.code.TypeMetadata);
-}

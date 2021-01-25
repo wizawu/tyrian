@@ -1,4 +1,0 @@
-Compiled from "LongBinaryOperator.java"
-public interface java.util.function.LongBinaryOperator {
-  public abstract long applyAsLong(long, long);
-}

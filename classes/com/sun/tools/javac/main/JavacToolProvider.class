@@ -1,6 +1,0 @@
-Compiled from "JavacToolProvider.java"
-public class com.sun.tools.javac.main.JavacToolProvider implements java.util.spi.ToolProvider {
-  public com.sun.tools.javac.main.JavacToolProvider();
-  public java.lang.String name();
-  public int run(java.io.PrintWriter, java.io.PrintWriter, java.lang.String...);
-}

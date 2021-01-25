@@ -1,9 +1,0 @@
-Compiled from "JDKPlatformProvider.java"
-public class com.sun.tools.javac.platform.JDKPlatformProvider implements com.sun.tools.javac.platform.PlatformProvider {
-  public static final java.util.Comparator<java.lang.String> NUMERICAL_COMPARATOR;
-  public com.sun.tools.javac.platform.JDKPlatformProvider();
-  public java.lang.Iterable<java.lang.String> getSupportedPlatformNames();
-  public com.sun.tools.javac.platform.PlatformDescription getPlatform(java.lang.String, java.lang.String);
-  static java.nio.file.Path findCtSym();
-  static {};
-}

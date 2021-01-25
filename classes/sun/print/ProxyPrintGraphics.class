@@ -1,9 +1,0 @@
-Compiled from "ProxyPrintGraphics.java"
-public class sun.print.ProxyPrintGraphics extends sun.print.ProxyGraphics implements java.awt.PrintGraphics {
-  public sun.print.ProxyPrintGraphics(java.awt.Graphics, java.awt.PrintJob);
-  public java.awt.PrintJob getPrintJob();
-  public java.awt.Graphics create();
-  public java.awt.Graphics create(int, int, int, int);
-  public java.awt.Graphics getGraphics();
-  public void dispose();
-}

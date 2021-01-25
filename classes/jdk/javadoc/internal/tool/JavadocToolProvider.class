@@ -1,6 +1,0 @@
-Compiled from "JavadocToolProvider.java"
-public class jdk.javadoc.internal.tool.JavadocToolProvider implements java.util.spi.ToolProvider {
-  public jdk.javadoc.internal.tool.JavadocToolProvider();
-  public java.lang.String name();
-  public int run(java.io.PrintWriter, java.io.PrintWriter, java.lang.String...);
-}

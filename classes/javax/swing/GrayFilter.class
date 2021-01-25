@@ -1,6 +1,0 @@
-Compiled from "GrayFilter.java"
-public class javax.swing.GrayFilter extends java.awt.image.RGBImageFilter {
-  public static java.awt.Image createDisabledImage(java.awt.Image);
-  public javax.swing.GrayFilter(boolean, int);
-  public int filterRGB(int, int, int);
-}

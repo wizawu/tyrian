@@ -1,5 +1,0 @@
-Compiled from "AppForegroundListener.java"
-public interface java.awt.desktop.AppForegroundListener extends java.awt.desktop.SystemEventListener {
-  public abstract void appRaisedToForeground(java.awt.desktop.AppForegroundEvent);
-  public abstract void appMovedToBackground(java.awt.desktop.AppForegroundEvent);
-}

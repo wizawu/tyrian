@@ -1,8 +1,0 @@
-Compiled from "DTDDVFactory.java"
-public abstract class com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory {
-  public static final com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory getInstance() throws com.sun.org.apache.xerces.internal.impl.dv.DVFactoryException;
-  public static final com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory getInstance(java.lang.String) throws com.sun.org.apache.xerces.internal.impl.dv.DVFactoryException;
-  protected com.sun.org.apache.xerces.internal.impl.dv.DTDDVFactory();
-  public abstract com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator getBuiltInDV(java.lang.String);
-  public abstract java.util.Map<java.lang.String, com.sun.org.apache.xerces.internal.impl.dv.DatatypeValidator> getBuiltInTypes();
-}

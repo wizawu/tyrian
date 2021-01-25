@@ -1,5 +1,0 @@
-Compiled from "ScreenSleepListener.java"
-public interface java.awt.desktop.ScreenSleepListener extends java.awt.desktop.SystemEventListener {
-  public abstract void screenAboutToSleep(java.awt.desktop.ScreenSleepEvent);
-  public abstract void screenAwoke(java.awt.desktop.ScreenSleepEvent);
-}

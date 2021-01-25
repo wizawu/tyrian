@@ -1,4 +1,0 @@
-Compiled from "NullCipher.java"
-public class javax.crypto.NullCipher extends javax.crypto.Cipher {
-  public javax.crypto.NullCipher();
-}

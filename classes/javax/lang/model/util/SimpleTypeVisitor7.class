@@ -1,6 +1,0 @@
-Compiled from "SimpleTypeVisitor7.java"
-public class javax.lang.model.util.SimpleTypeVisitor7<R, P> extends javax.lang.model.util.SimpleTypeVisitor6<R, P> {
-  protected javax.lang.model.util.SimpleTypeVisitor7();
-  protected javax.lang.model.util.SimpleTypeVisitor7(R);
-  public R visitUnion(javax.lang.model.type.UnionType, P);
-}

@@ -1,4 +1,0 @@
-Compiled from "XMLOutputSource.java"
-public class com.sun.xml.internal.stream.writers.XMLOutputSource {
-  public com.sun.xml.internal.stream.writers.XMLOutputSource();
-}

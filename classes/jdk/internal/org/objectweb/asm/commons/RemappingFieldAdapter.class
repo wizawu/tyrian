@@ -1,7 +1,0 @@
-Compiled from "RemappingFieldAdapter.java"
-public class jdk.internal.org.objectweb.asm.commons.RemappingFieldAdapter extends jdk.internal.org.objectweb.asm.FieldVisitor {
-  public jdk.internal.org.objectweb.asm.commons.RemappingFieldAdapter(jdk.internal.org.objectweb.asm.FieldVisitor, jdk.internal.org.objectweb.asm.commons.Remapper);
-  protected jdk.internal.org.objectweb.asm.commons.RemappingFieldAdapter(int, jdk.internal.org.objectweb.asm.FieldVisitor, jdk.internal.org.objectweb.asm.commons.Remapper);
-  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitAnnotation(java.lang.String, boolean);
-  public jdk.internal.org.objectweb.asm.AnnotationVisitor visitTypeAnnotation(int, jdk.internal.org.objectweb.asm.TypePath, java.lang.String, boolean);
-}

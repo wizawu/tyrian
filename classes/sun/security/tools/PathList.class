@@ -1,6 +1,0 @@
-Compiled from "PathList.java"
-public class sun.security.tools.PathList {
-  public sun.security.tools.PathList();
-  public static java.lang.String appendPath(java.lang.String, java.lang.String);
-  public static java.net.URL[] pathToURLs(java.lang.String);
-}

@@ -1,5 +1,0 @@
-Compiled from "ConstructorFinder.java"
-public final class com.sun.beans.finder.ConstructorFinder extends com.sun.beans.finder.AbstractFinder<java.lang.reflect.Constructor<?>> {
-  public static java.lang.reflect.Constructor<?> findConstructor(java.lang.Class<?>, java.lang.Class<?>...) throws java.lang.NoSuchMethodException;
-  static {};
-}

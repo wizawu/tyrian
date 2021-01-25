@@ -1,8 +1,0 @@
-Compiled from "SchemaNamespaceSupport.java"
-public class com.sun.org.apache.xerces.internal.impl.xs.SchemaNamespaceSupport extends com.sun.org.apache.xerces.internal.util.NamespaceSupport {
-  public com.sun.org.apache.xerces.internal.impl.xs.SchemaNamespaceSupport();
-  public com.sun.org.apache.xerces.internal.impl.xs.SchemaNamespaceSupport(com.sun.org.apache.xerces.internal.impl.xs.SchemaNamespaceSupport);
-  public void setEffectiveContext(java.lang.String[]);
-  public java.lang.String[] getEffectiveLocalContext();
-  public void makeGlobal();
-}

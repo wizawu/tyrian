@@ -1,4 +1,0 @@
-Compiled from "Asn1Exception.java"
-public class sun.security.krb5.Asn1Exception extends sun.security.krb5.KrbException {
-  public sun.security.krb5.Asn1Exception(int);
-}

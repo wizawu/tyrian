@@ -1,6 +1,0 @@
-Compiled from "MethodCallable.java"
-public class sun.jvm.hotspot.utilities.soql.MethodCallable implements sun.jvm.hotspot.utilities.soql.Callable {
-  public sun.jvm.hotspot.utilities.soql.MethodCallable(java.lang.Object, java.lang.reflect.Method, boolean);
-  public sun.jvm.hotspot.utilities.soql.MethodCallable(java.lang.Object, java.lang.reflect.Method);
-  public java.lang.Object call(java.lang.Object[]) throws javax.script.ScriptException;
-}

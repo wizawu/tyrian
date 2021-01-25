@@ -1,6 +1,0 @@
-Compiled from "SunProvider.java"
-public final class sun.security.jgss.SunProvider extends java.security.Provider {
-  public sun.security.jgss.SunProvider();
-  static void access$000(sun.security.jgss.SunProvider, java.security.Provider$Service);
-  static void access$100(sun.security.jgss.SunProvider, java.security.Provider$Service);
-}

@@ -1,4 +1,0 @@
-Compiled from "JOniException.java"
-public class jdk.nashorn.internal.runtime.regexp.joni.exception.JOniException extends java.lang.RuntimeException {
-  public jdk.nashorn.internal.runtime.regexp.joni.exception.JOniException(java.lang.String);
-}

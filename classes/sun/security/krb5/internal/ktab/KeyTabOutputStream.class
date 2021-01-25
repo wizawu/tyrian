@@ -1,7 +1,0 @@
-Compiled from "KeyTabOutputStream.java"
-public class sun.security.krb5.internal.ktab.KeyTabOutputStream extends sun.security.krb5.internal.util.KrbDataOutputStream implements sun.security.krb5.internal.ktab.KeyTabConstants {
-  public int version;
-  public sun.security.krb5.internal.ktab.KeyTabOutputStream(java.io.OutputStream);
-  public void writeVersion(int) throws java.io.IOException;
-  public void writeEntry(sun.security.krb5.internal.ktab.KeyTabEntry) throws java.io.IOException;
-}

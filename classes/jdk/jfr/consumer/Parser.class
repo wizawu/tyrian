@@ -1,5 +1,0 @@
-Compiled from "Parser.java"
-abstract class jdk.jfr.consumer.Parser {
-  jdk.jfr.consumer.Parser();
-  abstract java.lang.Object parse(jdk.jfr.internal.consumer.RecordingInput) throws java.io.IOException;
-}

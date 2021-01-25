@@ -1,7 +1,0 @@
-Compiled from "AccessibleIcon.java"
-public interface javax.accessibility.AccessibleIcon {
-  public abstract java.lang.String getAccessibleIconDescription();
-  public abstract void setAccessibleIconDescription(java.lang.String);
-  public abstract int getAccessibleIconWidth();
-  public abstract int getAccessibleIconHeight();
-}

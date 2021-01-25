@@ -1,6 +1,0 @@
-Compiled from "COFFFile.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.COFFFile {
-  public abstract sun.jvm.hotspot.debugger.win32.coff.COFFHeader getHeader();
-  public abstract boolean isImage();
-  public abstract void close();
-}

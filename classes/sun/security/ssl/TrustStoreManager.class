@@ -1,6 +1,0 @@
-Compiled from "TrustStoreManager.java"
-final class sun.security.ssl.TrustStoreManager {
-  public static java.util.Set<java.security.cert.X509Certificate> getTrustedCerts() throws java.lang.Exception;
-  public static java.security.KeyStore getTrustedKeyStore() throws java.lang.Exception;
-  static {};
-}

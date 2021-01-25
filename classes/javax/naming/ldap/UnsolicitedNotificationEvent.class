@@ -1,6 +1,0 @@
-Compiled from "UnsolicitedNotificationEvent.java"
-public class javax.naming.ldap.UnsolicitedNotificationEvent extends java.util.EventObject {
-  public javax.naming.ldap.UnsolicitedNotificationEvent(java.lang.Object, javax.naming.ldap.UnsolicitedNotification);
-  public javax.naming.ldap.UnsolicitedNotification getNotification();
-  public void dispatch(javax.naming.ldap.UnsolicitedNotificationListener);
-}

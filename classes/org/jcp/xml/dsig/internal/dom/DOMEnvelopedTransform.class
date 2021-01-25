@@ -1,5 +1,0 @@
-Compiled from "DOMEnvelopedTransform.java"
-public final class org.jcp.xml.dsig.internal.dom.DOMEnvelopedTransform extends org.jcp.xml.dsig.internal.dom.ApacheTransform {
-  public org.jcp.xml.dsig.internal.dom.DOMEnvelopedTransform();
-  public void init(javax.xml.crypto.dsig.spec.TransformParameterSpec) throws java.security.InvalidAlgorithmParameterException;
-}

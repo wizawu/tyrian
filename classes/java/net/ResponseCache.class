@@ -1,8 +1,0 @@
-Compiled from "ResponseCache.java"
-public abstract class java.net.ResponseCache {
-  public java.net.ResponseCache();
-  public static synchronized java.net.ResponseCache getDefault();
-  public static synchronized void setDefault(java.net.ResponseCache);
-  public abstract java.net.CacheResponse get(java.net.URI, java.lang.String, java.util.Map<java.lang.String, java.util.List<java.lang.String>>) throws java.io.IOException;
-  public abstract java.net.CacheRequest put(java.net.URI, java.net.URLConnection) throws java.io.IOException;
-}

@@ -1,5 +1,0 @@
-Compiled from "Type.java"
-public interface com.sun.jdi.Type extends com.sun.jdi.Mirror {
-  public abstract java.lang.String signature();
-  public abstract java.lang.String name();
-}

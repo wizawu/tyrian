@@ -1,7 +1,0 @@
-Compiled from "TIFFPackBitsUtil.java"
-public class com.sun.imageio.plugins.tiff.TIFFPackBitsUtil {
-  byte[] dstData;
-  int dstIndex;
-  public com.sun.imageio.plugins.tiff.TIFFPackBitsUtil();
-  public byte[] decode(byte[]) throws java.io.IOException;
-}

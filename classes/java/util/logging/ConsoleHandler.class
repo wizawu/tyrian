@@ -1,6 +1,0 @@
-Compiled from "ConsoleHandler.java"
-public class java.util.logging.ConsoleHandler extends java.util.logging.StreamHandler {
-  public java.util.logging.ConsoleHandler();
-  public void publish(java.util.logging.LogRecord);
-  public void close();
-}

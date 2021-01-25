@@ -1,4 +1,0 @@
-Compiled from "ObjectFactoryBuilder.java"
-public interface javax.naming.spi.ObjectFactoryBuilder {
-  public abstract javax.naming.spi.ObjectFactory createObjectFactory(java.lang.Object, java.util.Hashtable<?, ?>) throws javax.naming.NamingException;
-}

@@ -1,4 +1,0 @@
-Compiled from "NotificationFilter.java"
-public interface javax.management.NotificationFilter extends java.io.Serializable {
-  public abstract boolean isNotificationEnabled(javax.management.Notification);
-}

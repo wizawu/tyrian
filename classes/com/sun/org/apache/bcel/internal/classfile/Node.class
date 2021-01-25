@@ -1,4 +1,0 @@
-Compiled from "Node.java"
-public interface com.sun.org.apache.bcel.internal.classfile.Node {
-  public abstract void accept(com.sun.org.apache.bcel.internal.classfile.Visitor);
-}

@@ -1,4 +1,0 @@
-Compiled from "DOMLocator.java"
-public interface javax.xml.transform.dom.DOMLocator extends javax.xml.transform.SourceLocator {
-  public abstract org.w3c.dom.Node getOriginatingNode();
-}

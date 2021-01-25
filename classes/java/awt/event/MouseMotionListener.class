@@ -1,5 +1,0 @@
-Compiled from "MouseMotionListener.java"
-public interface java.awt.event.MouseMotionListener extends java.util.EventListener {
-  public abstract void mouseDragged(java.awt.event.MouseEvent);
-  public abstract void mouseMoved(java.awt.event.MouseEvent);
-}

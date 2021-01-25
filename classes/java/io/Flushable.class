@@ -1,4 +1,0 @@
-Compiled from "Flushable.java"
-public interface java.io.Flushable {
-  public abstract void flush() throws java.io.IOException;
-}

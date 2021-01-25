@@ -1,3 +1,0 @@
-Compiled from "DebugVC50SSPublicSym.java"
-public interface sun.jvm.hotspot.debugger.win32.coff.DebugVC50SSPublicSym extends sun.jvm.hotspot.debugger.win32.coff.DebugVC50Subsection {
-}

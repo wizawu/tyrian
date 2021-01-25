@@ -1,8 +1,0 @@
-Compiled from "ZForwardingTableEntry.java"
-class sun.jvm.hotspot.gc.z.ZForwardingTableEntry {
-  sun.jvm.hotspot.gc.z.ZForwardingTableEntry(sun.jvm.hotspot.debugger.Address);
-  boolean is_empty();
-  sun.jvm.hotspot.debugger.Address to_offset();
-  long from_index();
-  public java.lang.String toString();
-}

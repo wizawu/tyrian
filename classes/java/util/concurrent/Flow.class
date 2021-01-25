@@ -1,5 +1,0 @@
-Compiled from "Flow.java"
-public final class java.util.concurrent.Flow {
-  static final int DEFAULT_BUFFER_SIZE;
-  public static int defaultBufferSize();
-}

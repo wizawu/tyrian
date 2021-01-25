@@ -1,8 +1,0 @@
-Compiled from "ExecutableType.java"
-public interface javax.lang.model.type.ExecutableType extends javax.lang.model.type.TypeMirror {
-  public abstract java.util.List<? extends javax.lang.model.type.TypeVariable> getTypeVariables();
-  public abstract javax.lang.model.type.TypeMirror getReturnType();
-  public abstract java.util.List<? extends javax.lang.model.type.TypeMirror> getParameterTypes();
-  public abstract javax.lang.model.type.TypeMirror getReceiverType();
-  public abstract java.util.List<? extends javax.lang.model.type.TypeMirror> getThrownTypes();
-}

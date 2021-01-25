@@ -1,8 +1,0 @@
-Compiled from "DateTimeSyntax.java"
-public abstract class javax.print.attribute.DateTimeSyntax implements java.io.Serializable,java.lang.Cloneable {
-  protected javax.print.attribute.DateTimeSyntax(java.util.Date);
-  public java.util.Date getValue();
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  public java.lang.String toString();
-}

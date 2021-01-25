@@ -1,5 +1,0 @@
-Compiled from "LoggingOption.java"
-public class jdk.nashorn.internal.runtime.options.LoggingOption extends jdk.nashorn.internal.runtime.options.KeyValueOption {
-  jdk.nashorn.internal.runtime.options.LoggingOption(java.lang.String);
-  public java.util.Map<java.lang.String, jdk.nashorn.internal.runtime.options.LoggingOption$LoggerInfo> getLoggers();
-}

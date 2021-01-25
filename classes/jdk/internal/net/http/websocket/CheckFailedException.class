@@ -1,4 +1,0 @@
-Compiled from "CheckFailedException.java"
-final class jdk.internal.net.http.websocket.CheckFailedException extends java.lang.RuntimeException {
-  jdk.internal.net.http.websocket.CheckFailedException(java.lang.String);
-}

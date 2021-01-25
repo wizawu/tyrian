@@ -1,5 +1,0 @@
-Compiled from "OperationNotSupportedException.java"
-public class javax.naming.OperationNotSupportedException extends javax.naming.NamingException {
-  public javax.naming.OperationNotSupportedException();
-  public javax.naming.OperationNotSupportedException(java.lang.String);
-}

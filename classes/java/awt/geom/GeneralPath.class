@@ -1,8 +1,0 @@
-Compiled from "GeneralPath.java"
-public final class java.awt.geom.GeneralPath extends java.awt.geom.Path2D$Float {
-  public java.awt.geom.GeneralPath();
-  public java.awt.geom.GeneralPath(int);
-  public java.awt.geom.GeneralPath(int, int);
-  public java.awt.geom.GeneralPath(java.awt.Shape);
-  java.awt.geom.GeneralPath(int, byte[], int, float[], int);
-}

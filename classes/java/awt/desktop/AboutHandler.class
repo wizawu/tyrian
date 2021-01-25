@@ -1,4 +1,0 @@
-Compiled from "AboutHandler.java"
-public interface java.awt.desktop.AboutHandler {
-  public abstract void handleAbout(java.awt.desktop.AboutEvent);
-}

@@ -1,9 +1,0 @@
-Compiled from "Locator2Impl.java"
-public class org.xml.sax.ext.Locator2Impl extends org.xml.sax.helpers.LocatorImpl implements org.xml.sax.ext.Locator2 {
-  public org.xml.sax.ext.Locator2Impl();
-  public org.xml.sax.ext.Locator2Impl(org.xml.sax.Locator);
-  public java.lang.String getXMLVersion();
-  public java.lang.String getEncoding();
-  public void setXMLVersion(java.lang.String);
-  public void setEncoding(java.lang.String);
-}

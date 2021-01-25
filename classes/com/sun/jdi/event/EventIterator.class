@@ -1,4 +1,0 @@
-Compiled from "EventIterator.java"
-public interface com.sun.jdi.event.EventIterator extends java.util.Iterator<com.sun.jdi.event.Event> {
-  public abstract com.sun.jdi.event.Event nextEvent();
-}

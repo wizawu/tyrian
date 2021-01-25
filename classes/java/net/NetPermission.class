@@ -1,5 +1,0 @@
-Compiled from "NetPermission.java"
-public final class java.net.NetPermission extends java.security.BasicPermission {
-  public java.net.NetPermission(java.lang.String);
-  public java.net.NetPermission(java.lang.String, java.lang.String);
-}

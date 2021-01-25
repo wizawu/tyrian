@@ -1,5 +1,0 @@
-Compiled from "NativeMethodException.java"
-public class com.sun.jdi.NativeMethodException extends java.lang.RuntimeException {
-  public com.sun.jdi.NativeMethodException();
-  public com.sun.jdi.NativeMethodException(java.lang.String);
-}

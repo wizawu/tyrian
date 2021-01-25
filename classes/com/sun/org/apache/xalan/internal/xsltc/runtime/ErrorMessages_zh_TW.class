@@ -1,5 +1,0 @@
-Compiled from "ErrorMessages_zh_TW.java"
-public class com.sun.org.apache.xalan.internal.xsltc.runtime.ErrorMessages_zh_TW extends java.util.ListResourceBundle {
-  public com.sun.org.apache.xalan.internal.xsltc.runtime.ErrorMessages_zh_TW();
-  public java.lang.Object[][] getContents();
-}

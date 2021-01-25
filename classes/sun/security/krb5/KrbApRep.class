@@ -1,8 +1,0 @@
-Compiled from "KrbApRep.java"
-public class sun.security.krb5.KrbApRep {
-  public sun.security.krb5.KrbApRep(sun.security.krb5.KrbApReq, boolean, sun.security.krb5.EncryptionKey) throws sun.security.krb5.KrbException, java.io.IOException;
-  public sun.security.krb5.KrbApRep(byte[], sun.security.krb5.Credentials, sun.security.krb5.KrbApReq) throws sun.security.krb5.KrbException, java.io.IOException;
-  public sun.security.krb5.EncryptionKey getSubKey();
-  public java.lang.Integer getSeqNumber();
-  public byte[] getMessage();
-}

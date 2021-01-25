@@ -1,8 +1,0 @@
-Compiled from "Preconditions.java"
-public class jdk.internal.util.Preconditions {
-  public jdk.internal.util.Preconditions();
-  public static <X extends java.lang.RuntimeException> java.util.function.BiFunction<java.lang.String, java.util.List<java.lang.Integer>, X> outOfBoundsExceptionFormatter(java.util.function.Function<java.lang.String, X>);
-  public static <X extends java.lang.RuntimeException> int checkIndex(int, int, java.util.function.BiFunction<java.lang.String, java.util.List<java.lang.Integer>, X>);
-  public static <X extends java.lang.RuntimeException> int checkFromToIndex(int, int, int, java.util.function.BiFunction<java.lang.String, java.util.List<java.lang.Integer>, X>);
-  public static <X extends java.lang.RuntimeException> int checkFromIndexSize(int, int, int, java.util.function.BiFunction<java.lang.String, java.util.List<java.lang.Integer>, X>);
-}

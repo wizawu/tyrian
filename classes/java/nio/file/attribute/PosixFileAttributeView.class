@@ -1,8 +1,0 @@
-Compiled from "PosixFileAttributeView.java"
-public interface java.nio.file.attribute.PosixFileAttributeView extends java.nio.file.attribute.BasicFileAttributeView,java.nio.file.attribute.FileOwnerAttributeView {
-  public abstract java.lang.String name();
-  public abstract java.nio.file.attribute.PosixFileAttributes readAttributes() throws java.io.IOException;
-  public abstract void setPermissions(java.util.Set<java.nio.file.attribute.PosixFilePermission>) throws java.io.IOException;
-  public abstract void setGroup(java.nio.file.attribute.GroupPrincipal) throws java.io.IOException;
-  public default java.nio.file.attribute.BasicFileAttributes readAttributes() throws java.io.IOException;
-}

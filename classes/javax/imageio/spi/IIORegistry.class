@@ -1,6 +1,0 @@
-Compiled from "IIORegistry.java"
-public final class javax.imageio.spi.IIORegistry extends javax.imageio.spi.ServiceRegistry {
-  public static javax.imageio.spi.IIORegistry getDefaultInstance();
-  public void registerApplicationClasspathSpis();
-  static {};
-}

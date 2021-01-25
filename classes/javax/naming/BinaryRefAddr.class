@@ -1,9 +1,0 @@
-Compiled from "BinaryRefAddr.java"
-public class javax.naming.BinaryRefAddr extends javax.naming.RefAddr {
-  public javax.naming.BinaryRefAddr(java.lang.String, byte[]);
-  public javax.naming.BinaryRefAddr(java.lang.String, byte[], int, int);
-  public java.lang.Object getContent();
-  public boolean equals(java.lang.Object);
-  public int hashCode();
-  public java.lang.String toString();
-}

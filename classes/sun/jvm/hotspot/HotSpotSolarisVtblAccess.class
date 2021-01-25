@@ -1,5 +1,0 @@
-Compiled from "HotSpotSolarisVtblAccess.java"
-public class sun.jvm.hotspot.HotSpotSolarisVtblAccess extends sun.jvm.hotspot.types.basic.BasicVtblAccess {
-  public sun.jvm.hotspot.HotSpotSolarisVtblAccess(sun.jvm.hotspot.debugger.SymbolLookup, java.lang.String[]);
-  protected java.lang.String vtblSymbolForType(sun.jvm.hotspot.types.Type);
-}

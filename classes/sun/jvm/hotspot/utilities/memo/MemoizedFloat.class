@@ -1,6 +1,0 @@
-Compiled from "MemoizedFloat.java"
-public abstract class sun.jvm.hotspot.utilities.memo.MemoizedFloat {
-  public sun.jvm.hotspot.utilities.memo.MemoizedFloat();
-  protected abstract float computeValue();
-  public float getValue();
-}

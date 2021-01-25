@@ -1,7 +1,0 @@
-Compiled from "ForLoopTree.java"
-public interface jdk.nashorn.api.tree.ForLoopTree extends jdk.nashorn.api.tree.ConditionalLoopTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getInitializer();
-  public abstract jdk.nashorn.api.tree.ExpressionTree getCondition();
-  public abstract jdk.nashorn.api.tree.ExpressionTree getUpdate();
-  public abstract jdk.nashorn.api.tree.StatementTree getStatement();
-}

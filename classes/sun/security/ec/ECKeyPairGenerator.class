@@ -1,7 +1,0 @@
-Compiled from "ECKeyPairGenerator.java"
-public final class sun.security.ec.ECKeyPairGenerator extends java.security.KeyPairGeneratorSpi {
-  public sun.security.ec.ECKeyPairGenerator();
-  public void initialize(int, java.security.SecureRandom);
-  public void initialize(java.security.spec.AlgorithmParameterSpec, java.security.SecureRandom) throws java.security.InvalidAlgorithmParameterException;
-  public java.security.KeyPair generateKeyPair();
-}

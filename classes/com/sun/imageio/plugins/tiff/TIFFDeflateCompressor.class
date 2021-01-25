@@ -1,4 +1,0 @@
-Compiled from "TIFFDeflateCompressor.java"
-public class com.sun.imageio.plugins.tiff.TIFFDeflateCompressor extends com.sun.imageio.plugins.tiff.TIFFDeflater {
-  public com.sun.imageio.plugins.tiff.TIFFDeflateCompressor(javax.imageio.ImageWriteParam, int);
-}

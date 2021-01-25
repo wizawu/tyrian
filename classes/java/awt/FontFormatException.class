@@ -1,4 +1,0 @@
-Compiled from "FontFormatException.java"
-public class java.awt.FontFormatException extends java.lang.Exception {
-  public java.awt.FontFormatException(java.lang.String);
-}

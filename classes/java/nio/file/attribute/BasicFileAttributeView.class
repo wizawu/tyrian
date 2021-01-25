@@ -1,6 +1,0 @@
-Compiled from "BasicFileAttributeView.java"
-public interface java.nio.file.attribute.BasicFileAttributeView extends java.nio.file.attribute.FileAttributeView {
-  public abstract java.lang.String name();
-  public abstract java.nio.file.attribute.BasicFileAttributes readAttributes() throws java.io.IOException;
-  public abstract void setTimes(java.nio.file.attribute.FileTime, java.nio.file.attribute.FileTime, java.nio.file.attribute.FileTime) throws java.io.IOException;
-}

@@ -1,6 +1,0 @@
-Compiled from "DropShadowEffect.java"
-class javax.swing.plaf.nimbus.DropShadowEffect extends javax.swing.plaf.nimbus.ShadowEffect {
-  javax.swing.plaf.nimbus.DropShadowEffect();
-  javax.swing.plaf.nimbus.Effect$EffectType getEffectType();
-  java.awt.image.BufferedImage applyEffect(java.awt.image.BufferedImage, java.awt.image.BufferedImage, int, int);
-}

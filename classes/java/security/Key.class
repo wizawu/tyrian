@@ -1,7 +1,0 @@
-Compiled from "Key.java"
-public interface java.security.Key extends java.io.Serializable {
-  public static final long serialVersionUID;
-  public abstract java.lang.String getAlgorithm();
-  public abstract java.lang.String getFormat();
-  public abstract byte[] getEncoded();
-}

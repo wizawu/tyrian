@@ -1,8 +1,0 @@
-Compiled from "ContinuationFrame.java"
-public class jdk.internal.net.http.frame.ContinuationFrame extends jdk.internal.net.http.frame.HeaderFrame {
-  public static final int TYPE;
-  public jdk.internal.net.http.frame.ContinuationFrame(int, int, java.util.List<java.nio.ByteBuffer>);
-  public jdk.internal.net.http.frame.ContinuationFrame(int, java.nio.ByteBuffer);
-  public int type();
-  int length();
-}

@@ -1,4 +1,0 @@
-Compiled from "TextListener.java"
-public interface java.awt.event.TextListener extends java.util.EventListener {
-  public abstract void textValueChanged(java.awt.event.TextEvent);
-}

@@ -1,5 +1,0 @@
-Compiled from "InstanceOfTree.java"
-public interface jdk.nashorn.api.tree.InstanceOfTree extends jdk.nashorn.api.tree.ExpressionTree {
-  public abstract jdk.nashorn.api.tree.ExpressionTree getExpression();
-  public abstract jdk.nashorn.api.tree.Tree getType();
-}

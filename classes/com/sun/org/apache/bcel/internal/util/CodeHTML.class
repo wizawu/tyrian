@@ -1,5 +1,0 @@
-Compiled from "CodeHTML.java"
-final class com.sun.org.apache.bcel.internal.util.CodeHTML {
-  com.sun.org.apache.bcel.internal.util.CodeHTML(java.lang.String, java.lang.String, com.sun.org.apache.bcel.internal.classfile.Method[], com.sun.org.apache.bcel.internal.classfile.ConstantPool, com.sun.org.apache.bcel.internal.util.ConstantHTML) throws java.io.IOException;
-  static {};
-}

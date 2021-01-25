@@ -1,5 +1,0 @@
-Compiled from "Completion.java"
-public interface javax.annotation.processing.Completion {
-  public abstract java.lang.String getValue();
-  public abstract java.lang.String getMessage();
-}

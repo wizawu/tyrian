@@ -1,8 +1,0 @@
-Compiled from "PerfLongCounter.java"
-public class sun.management.counter.perf.PerfLongCounter extends sun.management.counter.AbstractCounter implements sun.management.counter.LongCounter {
-  java.nio.LongBuffer lb;
-  sun.management.counter.perf.PerfLongCounter(java.lang.String, sun.management.counter.Units, sun.management.counter.Variability, int, java.nio.LongBuffer);
-  public java.lang.Object getValue();
-  public long longValue();
-  protected java.lang.Object writeReplace() throws java.io.ObjectStreamException;
-}

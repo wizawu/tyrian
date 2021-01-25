@@ -1,8 +1,0 @@
-Compiled from "DSAGenParameterSpec.java"
-public final class java.security.spec.DSAGenParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-  public java.security.spec.DSAGenParameterSpec(int, int);
-  public java.security.spec.DSAGenParameterSpec(int, int, int);
-  public int getPrimePLength();
-  public int getSubprimeQLength();
-  public int getSeedLength();
-}

@@ -1,8 +1,0 @@
-Compiled from "TimeZoneNamesBundle.java"
-public abstract class sun.util.resources.TimeZoneNamesBundle extends sun.util.resources.OpenListResourceBundle {
-  public sun.util.resources.TimeZoneNamesBundle();
-  public java.lang.Object handleGetObject(java.lang.String);
-  protected <K, V> java.util.Map<K, V> createMap(int);
-  protected <E> java.util.Set<E> createSet();
-  protected abstract java.lang.Object[][] getContents();
-}

@@ -1,6 +1,0 @@
-Compiled from "MenuPeer.java"
-public interface java.awt.peer.MenuPeer extends java.awt.peer.MenuItemPeer {
-  public abstract void addSeparator();
-  public abstract void addItem(java.awt.MenuItem);
-  public abstract void delItem(int);
-}

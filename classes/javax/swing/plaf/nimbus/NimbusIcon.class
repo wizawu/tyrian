@@ -1,8 +1,0 @@
-Compiled from "NimbusIcon.java"
-class javax.swing.plaf.nimbus.NimbusIcon implements javax.swing.plaf.synth.SynthIcon {
-  javax.swing.plaf.nimbus.NimbusIcon(java.lang.String, java.lang.String, int, int);
-  public void paintIcon(javax.swing.plaf.synth.SynthContext, java.awt.Graphics, int, int, int, int);
-  public void paintIcon(java.awt.Component, java.awt.Graphics, int, int);
-  public int getIconWidth(javax.swing.plaf.synth.SynthContext);
-  public int getIconHeight(javax.swing.plaf.synth.SynthContext);
-}

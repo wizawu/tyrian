@@ -6,8 +6,8 @@
   "bin": "bin/tyrian",
   "scripts": {
     "antlr": "cd misc/g4 && antlr4 -Dlanguage=JavaScript -visitor -o $INIT_CWD/src/javap Javap.g4",
-    "build": "tsc -p . -d --outDir dist",
-    "watch": "tsc -p . -d --outDir dist -w",
+    "build": "tsc -d --outDir dist -p .",
+    "watch": "tsc -d --outDir dist -p . -w",
     "test": "mocha tests/*.test.js",
     "lint": "eslint --ext .ts --fix src"
   },

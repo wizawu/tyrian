@@ -3,6 +3,7 @@ import path from "path"
 import { program } from "commander"
 
 import commands from "./commands"
+import { code as ErrorCode } from "./errors"
 
 const { name, version } = JSON.parse(fs.readFileSync(
   path.resolve(__dirname, "..", "package.json"),
@@ -12,8 +13,10 @@ const { name, version } = JSON.parse(fs.readFileSync(
 program.name(name).version(version)
 
 program.command("env")
-  .action((command) => {
-    commands.env()
+  .action(() => {
+    if (!commands.env()) {
+      process.exit(ErrorCode.BROKEN_ENV)
+    }
   })
 
 program.command("install")

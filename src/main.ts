@@ -20,8 +20,9 @@ program.command("env")
   })
 
 program.command("install")
+  .option("-D", "do not generate typescript definitions for lib/*.jar")
   .action((command) => {
-    commands.install()
+    commands.install(!command.D)
   })
 
 program.command("build")

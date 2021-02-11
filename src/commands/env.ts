@@ -11,14 +11,14 @@ export default function (): boolean {
 }
 
 function check(command: string, args: string[]): boolean {
-  let { status, stdout, stderr } = spawnSync(command, args)
+  const { status, stdout, stderr } = spawnSync(command, args)
   if (status === 0) {
     console.log(chalk.green(`[${command}]`))
-    console.log(stdout.toString().trim() + "\n")
+    console.log(stdout.toString().replace(/\n+/g, "\n").trim() + "\n")
     return true
   } else {
     console.log(chalk.red(`[${command}]`))
-    let message = stderr?.toString().trim() || stdout?.toString().trim()
+    const message = stderr?.toString().trim() || stdout?.toString().trim()
     if (message) {
       console.log(message + "\n")
     } else {

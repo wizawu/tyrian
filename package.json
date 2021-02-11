@@ -1,6 +1,6 @@
 {
   "name": "tyrian",
-  "version": "9.0.0-beta1",
+  "version": "9.0.0a1",
   "repository": "github:wizawu/tyrian",
   "license": "MIT",
   "bin": "bin/tyrian",
@@ -9,7 +9,7 @@
     "build": "tsc -d --outDir dist -p .",
     "watch": "tsc -d --outDir dist -p . -w",
     "test": "mocha tests/*.test.js",
-    "lint": "eslint --ext .ts --fix src"
+    "lint": "eslint --ext .ts --ignore-pattern '/src/javap/*' --fix src"
   },
   "dependencies": {
     "antlr4": "^4.9.0",

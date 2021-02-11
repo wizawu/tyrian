@@ -21,18 +21,19 @@ program.command("env")
 
 program.command("install")
   .option("-D", "do not generate typescript definitions for lib/*.jar")
-  .action((command) => {
+  .action(command => {
     commands.install(!command.D)
   })
 
 program.command("build")
-  .action((command) => {
+  .action(command => {
     commands.build()
   })
 
-program.command("run")
-  .action((command) => {
-    commands.run()
+program.command("run <output> [arguments...]")
+  .option("-w --watch", "watch changes and re-run")
+  .action((output, args, { watch }) => {
+    commands.run(output, args, !!watch)
   })
 
 program.parse(process.argv)

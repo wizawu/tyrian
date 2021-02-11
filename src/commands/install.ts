@@ -1,5 +1,6 @@
 import fs from "fs"
 import path from "path"
+import redent from "redent"
 import { spawnSync } from "child_process"
 
 import * as parser from "../parser"
@@ -19,7 +20,7 @@ export default function (tsDefinition: boolean) {
     parser.parse(
       [path.join(process.cwd(), "lib")],
       {}, // TODO
-      [], //TODO
+      [], // TODO
     )
   }
 }
@@ -41,7 +42,7 @@ function gradleInstall() {
   if (child.status) process.exit(child.status)
 }
 
-const gradleTemplate = (deps: string[]) => `
+const gradleTemplate = (deps: string[]) => redent(`
   apply plugin: "java"
 
   repositories {
@@ -57,4 +58,4 @@ const gradleTemplate = (deps: string[]) => `
   dependencies {
     ${deps.join("\n    ")}
   }
-`.replace(/\n  /g, "\n")
+`, 0).trimStart()

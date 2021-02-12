@@ -1,15 +1,21 @@
 import fs from "fs"
 import path from "path"
 import redent from "redent"
+import zip from "jszip"
 import { spawnSync } from "child_process"
 
 import * as parser from "../parser"
+import * as utils from "../utils"
 
-export default function (tsDefinition: boolean) {
+export default async function (tsDefinition: boolean) {
   if (!fs.existsSync("package.json")) {
     fs.writeFileSync("package.json", JSON.stringify({
       dependencies: {},
-      mvnDependencies: {}
+      mvnDependencies: {},
+      runtime: {
+        graaljs: "/graalvm/languages/js/bin/node",
+        nashorn: "/openjdk/bin/jjs",
+      }
     }, null, 2))
   }
 
@@ -17,12 +23,29 @@ export default function (tsDefinition: boolean) {
   gradleInstall()
 
   if (tsDefinition) {
+    const jars = utils.listFilesByExt("lib", ".jar")
+    const interfaces = path.join(__dirname, "..", "..", "misc", "jdk", "interfaces.json")
     parser.parse(
-      [path.join(process.cwd(), "lib")],
-      {}, // TODO
-      [], // TODO
+      jars,
+      JSON.parse(fs.readFileSync(interfaces, "utf-8")),
+      await listClassesInJAR(jars),
+      path.join(process.cwd(), "lib", "@types")
     )
   }
+}
+
+async function listClassesInJAR(jars: string[]) {
+  const classes: any = {}
+  for (const jar of jars) {
+    const data = fs.readFileSync(jar)
+    const files = (await zip.loadAsync(data)).files
+    Object.keys(files).forEach(it => {
+      if (it.endsWith(".class")) {
+        classes[utils.qualifiedName(it)] = true
+      }
+    })
+  }
+  return Object.keys(classes)
 }
 
 function npmInstall() {

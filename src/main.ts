@@ -22,16 +22,16 @@ program.command("env")
 
 program.command("install")
   .description("install dependencies of current project")
-  .option("-D", "do not generate typescript definitions for lib/*.jar", false)
+  .option("-D", "do not generate .d.ts for Java libraries", false)
   .action(command => {
     commands.install(!command.D)
   })
 
 program.command("build <entries...>")
   .description("compile one or more typescript entries")
-  .option("-d", "generate output in specific directory", process.cwd())
+  .option("-c", "generate output in specific directory", process.cwd())
   .option("-w --watch", "watch changes and re-build", false)
-  .action((entries, { watch, d: outDir }) => {
+  .action((entries, { watch, c: outDir }) => {
     commands.build(entries, outDir, watch)
   })
 

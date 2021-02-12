@@ -1,30 +1,23 @@
 import chalk from "chalk"
 import fs from "fs"
-import path from "path"
 import redent from "redent"
 import { spawn } from "child_process"
 
+import * as utils from "../utils"
 import { code as ErrorCode } from "../errors"
 
 type Runtime = "graaljs" | "nashorn"
 
 export default function (output: string, args: string[], watch: boolean) {
   const [type, runner] = checkRuntime()
-
-  const classPath: string[] = []
-  if (fs.existsSync("lib") && fs.lstatSync("lib").isDirectory()) {
-    fs.readdirSync("lib").forEach(it => {
-      if (it.endsWith(".jar")) classPath.push(path.join("lib", it))
-    })
-  }
-
+  const classPaths = utils.listFilesByExt("lib", ".jar")
   const run = () => {
     let finalArgs: string[] = []
     if (type === "nashorn") {
       finalArgs = [
         "-scripting",
         "--language=es6",
-        "-cp", classPath.join(":"),
+        "-cp", ":" + classPaths.join(":"),
         output,
         "--", ...args
       ]
@@ -33,7 +26,7 @@ export default function (output: string, args: string[], watch: boolean) {
         "--jvm",
         "--experimental-options",
         "--js.nashorn-compat=true",
-        "--vm.cp=" + classPath.join(":"),
+        "--vm.cp=:" + classPaths.join(":"),
         output,
         ...args
       ]

@@ -1,7 +1,10 @@
 import chalk from "chalk"
 import fs from "fs"
+import { spawnSync, SpawnSyncReturns } from "child_process"
 
-import { runCommand } from "./utils"
+function runCommand(command: string, args: string[]): SpawnSyncReturns<Buffer> {
+  return spawnSync(command, args, { stdio: "pipe" })
+}
 
 /**
  * Show classes and members

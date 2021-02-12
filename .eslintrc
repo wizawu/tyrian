@@ -18,6 +18,12 @@
     "no-multiple-empty-lines": "error",
     "no-trailing-spaces": "error",
     "no-unexpected-multiline": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "args": "none"
+      }
+    ],
     "quotes": [
       "error",
       "double"

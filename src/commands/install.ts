@@ -28,13 +28,13 @@ export default async function (tsDefinition: boolean) {
     parser.parse(
       jars,
       JSON.parse(fs.readFileSync(interfaces, "utf-8")),
-      await listClassesInJAR(jars),
+      await listLibClasses(jars),
       path.join(process.cwd(), "lib", "@types")
     )
   }
 }
 
-async function listClassesInJAR(jars: string[]) {
+async function listLibClasses(jars: string[]) {
   const classes: any = {}
   for (const jar of jars) {
     const data = fs.readFileSync(jar)

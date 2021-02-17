@@ -8,7 +8,12 @@ import { code as ErrorCode } from "../errors"
 
 type Runtime = "graaljs" | "nashorn"
 
-export default function (output: string, args: string[], watch: boolean) {
+interface Options {
+  inspect?: string
+  watch: boolean
+}
+
+export default function (output: string, args: string[], { inspect, watch }: Options) {
   const [type, runner] = checkRuntime()
   const classPaths = utils.listFilesByExt("lib", ".jar")
   const run = () => {
@@ -26,10 +31,10 @@ export default function (output: string, args: string[], watch: boolean) {
         "--jvm",
         "--experimental-options",
         "--js.nashorn-compat=true",
-        "--vm.cp=:" + classPaths.join(":"),
-        output,
-        ...args
+        "--vm.cp=:" + classPaths.join(":")
       ]
+      if (inspect) finalArgs.push("--inspect=" + inspect)
+      finalArgs.push(output, ...args)
     }
     const child = spawn(runner, finalArgs)
     child.on("exit", code => process.exit(code || 0))

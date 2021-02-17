@@ -37,9 +37,10 @@ program.command("build <entries...>")
 
 program.command("run <output> [arguments...]")
   .description("execute one of the build output")
+  .option("--inspect <host:port>", "activate inspector on host:port")
   .option("-w --watch", "watch changes and re-run", false)
-  .action((output, args, { watch }) => {
-    commands.run(output, args, watch)
+  .action((output, args, { inspect, watch }) => {
+    commands.run(output, args, { inspect, watch })
   })
 
 program.parse(process.argv)

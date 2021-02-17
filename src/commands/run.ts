@@ -13,7 +13,7 @@ interface Options {
   watch: boolean
 }
 
-export default function (output: string, args: string[], { inspect, watch }: Options) {
+export default function (output: string, args: string[], { inspect, watch }: Options): void {
   const [type, runner] = checkRuntime()
   const classPaths = utils.listFilesByExt("lib", ".jar")
   const run = () => {

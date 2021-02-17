@@ -40,7 +40,11 @@ program.command("run <output> [arguments...]")
   .option("--inspect <host:port>", "activate inspector on host:port")
   .option("-w --watch", "watch changes and re-run", false)
   .action((output, args, { inspect, watch }) => {
-    commands.run(output, args, { inspect, watch })
+    if (inspect && /.*:\d{1,5}/.test(inspect) === false) {
+      process.exit(ErrorCode.INVALID_OPTION)
+    } else {
+      commands.run(output, args, { inspect, watch })
+    }
   })
 
 program.parse(process.argv)

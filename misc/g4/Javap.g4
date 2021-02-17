@@ -3,7 +3,7 @@ grammar Javap;
 // https://github.com/antlr/antlr4/blob/master/tool-testsuite/test/org/antlr/v4/test/tool/Java.g4
 
 compilationUnit
-    : (sourceDeclaration | classOrInterface)* EOF
+    : (sourceDeclaration | classOrInterface)* EOF?
     ;
 
 sourceDeclaration

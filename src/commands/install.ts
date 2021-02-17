@@ -7,7 +7,7 @@ import { spawnSync } from "child_process"
 import * as parser from "../parser"
 import * as utils from "../utils"
 
-export default async function (tsDefinition: boolean) {
+export default async function (tsDefinition: boolean): Promise<void> {
   if (!fs.existsSync("package.json")) {
     fs.writeFileSync("package.json", JSON.stringify({
       dependencies: {},
@@ -35,7 +35,7 @@ export default async function (tsDefinition: boolean) {
 }
 
 async function listLibClasses(jars: string[]) {
-  const classes: any = {}
+  const classes: {[_: string]: boolean} = {}
   for (const jar of jars) {
     const data = fs.readFileSync(jar)
     const files = (await zip.loadAsync(data)).files

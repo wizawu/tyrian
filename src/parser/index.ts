@@ -10,9 +10,9 @@ interface Counter {
   [_: string]: number
 }
 
-export function parse( classPaths: string[], interfaceCount: Counter, classList: string[], typeRoot?: string): boolean {
+export function parse(classPaths: string[], interfaceCount: Counter, classList: string[], typeRoot?: string): boolean {
   const buffer: string[] = []
-  for (let i = 0; i < classPaths.length; i += PARSE_CHUNK) {
+  for (let i = 0; i < classList.length; i += PARSE_CHUNK) {
     const output = javap.disassemble(classPaths, classList.slice(i, i + PARSE_CHUNK))
     if (output === null) {
       return false

@@ -1,10 +1,10 @@
-const childProcess = require("child_process")
 const fs = require("fs")
 const htmlParser = require("node-html-parser")
 const https = require("https")
 const path = require("path")
 
-const parser = require("../../dist/parser/index.js")
+const javap = require("../../dist/parser/javap")
+const parser = require("../../dist/parser/index")
 
 https.get("https://docs.oracle.com/en/java/javase/11/docs/api/allclasses.html", res => {
   let html = []
@@ -17,8 +17,7 @@ https.get("https://docs.oracle.com/en/java/javase/11/docs/api/allclasses.html", 
     })
     classes.sort()
     for (let i = 0; i < classes.length; i += 500) {
-      let proc = childProcess.spawnSync("javap", classes.slice(i, i + 500))
-      if (proc.status) console.error(proc.stderr.toString())
+      javap.disassemble([], classes.slice(i, i+ 500))
     }
     fs.writeFileSync(
       path.join(__dirname, "allclasses.json"),

@@ -1,0 +1,54 @@
+export var JavapLexer: typeof JavapLexer;
+declare function JavapLexer(input: any): this;
+declare class JavapLexer {
+    constructor(input: any);
+    _interp: any;
+    constructor: typeof JavapLexer;
+    get atn(): any;
+    channelNames: string[];
+    modeNames: string[];
+    literalNames: (string | null)[];
+    symbolicNames: (string | null)[];
+    ruleNames: string[];
+    grammarFileName: string;
+}
+declare namespace JavapLexer {
+    const EOF: number;
+    const T__0: number;
+    const T__1: number;
+    const T__2: number;
+    const T__3: number;
+    const T__4: number;
+    const T__5: number;
+    const T__6: number;
+    const T__7: number;
+    const T__8: number;
+    const T__9: number;
+    const T__10: number;
+    const T__11: number;
+    const T__12: number;
+    const T__13: number;
+    const T__14: number;
+    const T__15: number;
+    const T__16: number;
+    const T__17: number;
+    const T__18: number;
+    const T__19: number;
+    const T__20: number;
+    const T__21: number;
+    const T__22: number;
+    const T__23: number;
+    const T__24: number;
+    const T__25: number;
+    const T__26: number;
+    const T__27: number;
+    const T__28: number;
+    const T__29: number;
+    const T__30: number;
+    const T__31: number;
+    const T__32: number;
+    const T__33: number;
+    const Identifier: number;
+    const WS: number;
+}
+export {};

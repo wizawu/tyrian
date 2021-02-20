@@ -1,3 +1,2 @@
-/// <reference types="node" />
-import { SpawnSyncReturns } from "child_process";
-export declare function runCommand(command: string, args: string[]): SpawnSyncReturns<Buffer>;
+export declare function listFilesByExt(dirname: string, ext: string): string[];
+export declare function qualifiedName(javaClass: string): string;

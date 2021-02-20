@@ -4,6 +4,7 @@
     "esModuleInterop": true,
     "module": "commonjs",
     "noImplicitAny": false,
+    "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "es5"

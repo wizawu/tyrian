@@ -1,15 +1,15 @@
 {
   "name": "tyrian",
-  "version": "9.0.0a1",
+  "version": "9.0.0-beta.1",
   "repository": "github:wizawu/tyrian",
   "license": "MIT",
   "bin": "bin/tyrian",
   "scripts": {
-    "antlr": "cd misc/g4 && antlr4 -Dlanguage=JavaScript -visitor -o $INIT_CWD/src/grammar Javap.g4",
+    "antlr": "cd src/grammar && antlr4 -Dlanguage=JavaScript -visitor Javap.g4",
     "build": "tsc -d --outDir dist -p .",
     "watch": "tsc -d --outDir dist -p . -w",
     "test": "mocha tests/*.test.js",
-    "lint": "eslint --ext .ts --ignore-pattern '/src/javap/*' --fix src"
+    "lint": "eslint --ext .ts --ignore-pattern '/src/grammar/*' --fix src"
   },
   "dependencies": {
     "antlr4": "^4.9.0",

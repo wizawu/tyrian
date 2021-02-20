@@ -6,6 +6,7 @@ import { spawnSync } from "child_process"
 
 import * as parser from "../parser"
 import * as utils from "../utils"
+import interfaces from "../jdk/interfaces.json"
 
 export default async function (tsDefinition: boolean): Promise<void> {
   if (!fs.existsSync("package.json")) {
@@ -24,10 +25,9 @@ export default async function (tsDefinition: boolean): Promise<void> {
 
   if (tsDefinition) {
     const jars = utils.listFilesByExt("lib", ".jar")
-    const interfaces = path.join(__dirname, "..", "..", "misc", "jdk", "interfaces.json")
     parser.parse(
       jars,
-      JSON.parse(fs.readFileSync(interfaces, "utf-8")),
+      interfaces,
       await listLibClasses(jars),
       path.join(process.cwd(), "lib", "@types")
     )

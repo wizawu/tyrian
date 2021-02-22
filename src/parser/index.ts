@@ -6,11 +6,7 @@ import { javap } from "../utils"
 
 const PARSE_CHUNK = 500
 
-interface Counter {
-  [_: string]: number
-}
-
-export function parse(classPaths: string[], interfaceCount: Counter, classList: string[], typeRoot?: string): boolean {
+export function parse(classPaths: string[], counter: InterfaceCounter, classList: string[], typeRoot?: string): boolean {
   const buffer: string[] = []
   for (let i = 0; i < classList.length; i += PARSE_CHUNK) {
     const output = javap(classPaths, classList.slice(i, i + PARSE_CHUNK))
@@ -22,22 +18,30 @@ export function parse(classPaths: string[], interfaceCount: Counter, classList: 
   }
 
   const input = buffer.join("\n")
-  const lexer: antlr.Lexer = new JavapLexer(new antlr.InputStream(input)) as any
-  const tokens = new antlr.CommonTokenStream(lexer)
+  const lexer = new JavapLexer(new antlr.InputStream(input))
+  const tokens = new antlr.CommonTokenStream(lexer as unknown as antlr.Lexer)
   const parser = new JavapParser(tokens)
 
-  const context = parser.compilationUnit()
+  const context: CompilationUnitContext = parser.compilationUnit()
   const interfaces = context.classOrInterface()
     .map(it => it.interfaceDeclaration()).filter(it => it)
   interfaces.forEach(it => {
-    const className = it.type()[0].packageName().getText() + "." + it.type()[0].Identifier().getText()
+    const className = qualifiedName(it.type()[0])
     const count = it.interfaceBody().interfaceMember()
       .map(it => it.methodDeclaration()).filter(it => it).length
-    interfaceCount[className] = count
+    if (it.type().length === 1) {
+      counter[className] = [count]
+    } else {
+      counter[className] = [count, qualifiedName(it.type()[1])]
+    }
   })
 
   if (typeRoot) {
   }
 
   return true
+}
+
+function qualifiedName(type: TypeContext) {
+  return type.packageName().getText() + "." + type.Identifier().getText()
 }

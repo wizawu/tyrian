@@ -27,7 +27,7 @@ export default async function (tsDefinition: boolean): Promise<void> {
     const jars = utils.listFilesByExt("lib", ".jar")
     parser.parse(
       jars,
-      interfaces,
+      interfaces as unknown as InterfaceCounter,
       await listLibClasses(jars),
       path.join(process.cwd(), "lib", "@types")
     )

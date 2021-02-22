@@ -17,7 +17,7 @@ https.get("https://docs.oracle.com/en/java/javase/11/docs/api/allclasses.html", 
     })
     classes.sort()
     for (let i = 0; i < classes.length; i += 500) {
-      javap([], classes.slice(i, i+ 500))
+      javap([], classes.slice(i, i + 500))
     }
     fs.writeFileSync(
       path.join(__dirname, "allclasses.json"),
@@ -25,7 +25,7 @@ https.get("https://docs.oracle.com/en/java/javase/11/docs/api/allclasses.html", 
     )
 
     let interfaceCount = {}
-    parser.parse([], interfaceCount, classes)
+    parser.parse([], interfaceCount, classes, path.join(__dirname, "..", "..", "@types", "jdk"))
     fs.writeFileSync(
       path.join(__dirname, "interfaces.json"),
       JSON.stringify(interfaceCount, null, 2)

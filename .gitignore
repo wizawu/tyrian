@@ -1,3 +1,4 @@
+*.jar
 *.log
 *.swp
 .antlr/

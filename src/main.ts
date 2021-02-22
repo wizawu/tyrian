@@ -37,14 +37,10 @@ program.command("build <entries...>")
 
 program.command("run <output> [arguments...]")
   .description("execute one of the build output")
-  .option("--inspect <host:port>", "activate inspector on host:port")
+  .option("-d --debug", "enable debugger (only with graaljs runtime)", false)
   .option("-w --watch", "watch changes and re-run", false)
-  .action((output, args, { inspect, watch }) => {
-    if (inspect && /.*:\d{1,5}/.test(inspect) === false) {
-      process.exit(ErrorCode.INVALID_OPTION)
-    } else {
-      commands.run(output, args, { inspect, watch })
-    }
+  .action((output, args, { debug, watch }) => {
+    commands.run(output, args, { debug, watch })
   })
 
 program.parse(process.argv)

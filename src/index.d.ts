@@ -131,6 +131,6 @@ declare interface Identifier {
     getText(): string
 }
 
-declare interface InterfaceCounter {
+declare interface InterfaceStat {
   [_: string]: [number, string?]
 }

@@ -1,3 +1,4 @@
 .gradle/
 build.gradle
+lib/@types/
 package-lock.json

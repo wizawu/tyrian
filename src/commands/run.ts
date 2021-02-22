@@ -9,32 +9,34 @@ import { code as ErrorCode } from "../errors"
 type Runtime = "graaljs" | "nashorn"
 
 interface Options {
-  inspect?: string
+  debug: boolean
   watch: boolean
 }
 
-export default function (output: string, args: string[], { inspect, watch }: Options): void {
+export default function (output: string, args: string[], { debug, watch }: Options): void {
   const [type, runner] = checkRuntime()
   const classPaths = utils.listFilesByExt("lib", ".jar")
   const run = () => {
-    let finalArgs: string[] = []
+    const finalArgs: string[] = []
     if (type === "nashorn") {
-      finalArgs = [
+      finalArgs.push(
         "-scripting",
         "--language=es6",
         "-cp", ":" + classPaths.join(":"),
         output,
-        "--", ...args
-      ]
+        "--",
+        ...args
+      )
     } else if (type === "graaljs") {
-      finalArgs = [
+      if (debug) finalArgs.push("inspect")
+      finalArgs.push(
         "--jvm",
         "--experimental-options",
         "--js.nashorn-compat=true",
-        "--vm.cp=:" + classPaths.join(":")
-      ]
-      if (inspect) finalArgs.push("--inspect=" + inspect)
-      finalArgs.push(output, ...args)
+        "--vm.cp=:" + classPaths.join(":"),
+        output,
+        ...args
+      )
     }
     const child = spawn(runner, finalArgs)
     child.on("exit", code => process.exit(code || 0))

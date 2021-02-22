@@ -1,8 +1,8 @@
 import antlr from "antlr4"
 
-import * as javap from "./javap"
 import { JavapLexer } from "../grammar/JavapLexer"
 import { JavapParser } from "../grammar/JavapParser"
+import { javap } from "../utils"
 
 const PARSE_CHUNK = 500
 
@@ -13,7 +13,7 @@ interface Counter {
 export function parse(classPaths: string[], interfaceCount: Counter, classList: string[], typeRoot?: string): boolean {
   const buffer: string[] = []
   for (let i = 0; i < classList.length; i += PARSE_CHUNK) {
-    const output = javap.disassemble(classPaths, classList.slice(i, i + PARSE_CHUNK))
+    const output = javap(classPaths, classList.slice(i, i + PARSE_CHUNK))
     if (output === null) {
       return false
     } else {

@@ -7,6 +7,10 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "array-bracket-spacing": [
+      "error",
+      "never"
+    ],
     "indent": [
       "error",
       2,

@@ -8,7 +8,7 @@
     "antlr": "cd src/grammar && antlr4 -Dlanguage=JavaScript -visitor Javap.g4",
     "build": "tsc -d --outDir dist -p .",
     "watch": "tsc -d --outDir dist -p . -w",
-    "test": "mocha tests/*.test.js",
+    "test": "mocha -V",
     "lint": "eslint --ext .ts --ignore-pattern '/src/grammar/*' --fix src"
   },
   "dependencies": {

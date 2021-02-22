@@ -5,7 +5,6 @@ export default function (): boolean {
   return [
     check("node", ["-v"]),
     check("npm", ["-v"]),
-    check("java", ["--version"]),
     check("gradle", ["-v"]),
   ].every(it => it)
 }

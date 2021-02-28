@@ -24,14 +24,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parse = void 0;
 var antlr4_1 = __importDefault(require("antlr4"));
-var javap = __importStar(require("./javap"));
+var definition = __importStar(require("./definition"));
 var JavapLexer_1 = require("../grammar/JavapLexer");
 var JavapParser_1 = require("../grammar/JavapParser");
+var utils_1 = require("../utils");
+var common_1 = require("./common");
 var PARSE_CHUNK = 500;
-function parse(classPaths, interfaceCount, classList, typeRoot) {
+function parse(classPaths, counter, classList, typeRoot) {
     var buffer = [];
     for (var i = 0; i < classList.length; i += PARSE_CHUNK) {
-        var output = javap.disassemble(classPaths, classList.slice(i, i + PARSE_CHUNK));
+        var output = utils_1.javap(classPaths, classList.slice(i, i + PARSE_CHUNK));
         if (output === null) {
             return false;
         }
@@ -46,14 +48,23 @@ function parse(classPaths, interfaceCount, classList, typeRoot) {
     var context = parser.compilationUnit();
     var interfaces = context.classOrInterface()
         .map(function (it) { return it.interfaceDeclaration(); }).filter(function (it) { return it; });
-    interfaces.forEach(function (it) {
-        var className = it.type()[0].packageName().getText() + "." + it.type()[0].Identifier().getText();
+    for (var _i = 0, interfaces_1 = interfaces; _i < interfaces_1.length; _i++) {
+        var it = interfaces_1[_i];
+        var className = common_1.qualifiedName(it.type(0));
         var count = it.interfaceBody().interfaceMember()
-            .map(function (it) { return it.methodDeclaration(); }).filter(function (it) { return it; }).length;
-        interfaceCount[className] = count;
-    });
-    if (typeRoot) {
+            .filter(function (it) { return it.methodDeclaration(); }).length;
+        if (it.type().length === 1) {
+            counter[className] = [count];
+        }
+        else {
+            counter[className] = [count, common_1.qualifiedName(it.type(1))];
+        }
     }
-    return true;
+    if (typeRoot) {
+        return definition.generate(context, counter, typeRoot);
+    }
+    else {
+        return true;
+    }
 }
 exports.parse = parse;

@@ -1,141 +1,141 @@
 declare interface CompilationUnitContext {
-    sourceDeclaration(i: number): SourceDeclarationContext
-    sourceDeclaration(): SourceDeclarationContext[]
-    classOrInterface(i: number): ClassOrInterfaceContext
-    classOrInterface(): ClassOrInterfaceContext[]
+  sourceDeclaration(i: number): SourceDeclarationContext
+  sourceDeclaration(): SourceDeclarationContext[]
+  classOrInterface(i: number): ClassOrInterfaceContext
+  classOrInterface(): ClassOrInterfaceContext[]
 }
 
 declare interface SourceDeclarationContext {
-    getText(): string
+  getText(): string
 }
 
 declare interface ClassOrInterfaceContext {
-    classDeclaration(): ClassDeclarationContext
-    interfaceDeclaration(): InterfaceDeclarationContext
+  classDeclaration(): ClassDeclarationContext
+  interfaceDeclaration(): InterfaceDeclarationContext
 }
 
 declare interface ClassDeclarationContext {
-    classModifier(i: number): ClassModifierContext
-    classModifier(): ClassModifierContext[]
-    type(i: number): TypeContext
-    type(): TypeContext[]
-    typeList(): TypeListContext
-    classBody(): ClassBodyContext
+  classModifier(i: number): ClassModifierContext
+  classModifier(): ClassModifierContext[]
+  type(i: number): TypeContext
+  type(): TypeContext[]
+  typeList(): TypeListContext
+  classBody(): ClassBodyContext
 }
 
 declare interface InterfaceDeclarationContext {
-    interfaceModifier(i: number): InterfaceModifierContext
-    interfaceModifier(): InterfaceModifierContext[]
-    type(i: number): TypeContext
-    type(): TypeContext[]
-    interfaceBody(): InterfaceBodyContext
+  interfaceModifier(i: number): InterfaceModifierContext
+  interfaceModifier(): InterfaceModifierContext[]
+  type(i: number): TypeContext
+  type(): TypeContext[]
+  interfaceBody(): InterfaceBodyContext
 }
 
 declare interface ClassModifierContext {
-    getText(): string
+  getText(): string
 }
 
 declare interface InterfaceModifierContext {
-    getText(): string
+  getText(): string
 }
 
 declare interface TypeListContext {
-    type(i: number): TypeContext
-    type(): TypeContext[]
+  type(i: number): TypeContext
+  type(): TypeContext[]
 }
 
 declare interface TypeContext {
-    packageName(): PackageNameContext
-    Identifier(): Identifier
-    typeArguments(): TypeArgumentsContext
+  packageName(): PackageNameContext
+  Identifier(): Identifier
+  typeArguments(): TypeArgumentsContext
 }
 
 declare interface PackageNameContext {
-    Identifier(i: number): Identifier
-    Identifier(): Identifier[]
-    getText(): string
+  Identifier(i: number): Identifier
+  Identifier(): Identifier[]
+  getText(): string
 }
 
 declare interface TypeArgumentsContext {
-    typeArgument(i: number): TypeArgumentContext
-    typeArgument(): TypeArgumentContext[]
-    getText(): string
+  typeArgument(i: number): TypeArgumentContext
+  typeArgument(): TypeArgumentContext[]
+  getText(): string
 }
 
 declare interface TypeArgumentContext {
-    Identifier(): Identifier
-    type(): TypeContext
-    getText(): string
-    getChild(i: number): Child
+  Identifier(): Identifier
+  type(): TypeContext
+  getText(): string
+  getChild(i: number): Child
 }
 
 declare interface ClassBodyContext {
-    classMember(i: number): ClassMemberContext
-    classMember(): ClassMemberContext[]
+  classMember(i: number): ClassMemberContext
+  classMember(): ClassMemberContext[]
 }
 
 declare interface InterfaceBodyContext {
-    interfaceMember(i: number): InterfaceMemberContext
-    interfaceMember(): InterfaceMemberContext[]
+  interfaceMember(i: number): InterfaceMemberContext
+  interfaceMember(): InterfaceMemberContext[]
 }
 
 declare interface ModifierContext {
-    getText(): string
+  getText(): string
 }
 
 declare interface ClassMemberContext {
-    constructorDeclaration(): ConstructorDeclarationContext
-    fieldDeclaration(): FieldDeclarationContext
-    methodDeclaration(): MethodDeclarationContext
+  constructorDeclaration(): ConstructorDeclarationContext
+  fieldDeclaration(): FieldDeclarationContext
+  methodDeclaration(): MethodDeclarationContext
 }
 
 declare interface InterfaceMemberContext {
-    methodDeclaration(): MethodDeclarationContext
+  methodDeclaration(): MethodDeclarationContext
 }
 
 declare interface ConstructorDeclarationContext {
-    modifier(i: number): ModifierContext
-    modifier(): ModifierContext[]
-    type(): TypeContext
-    methodArguments(): MethodArgumentsContext
+  modifier(i: number): ModifierContext
+  modifier(): ModifierContext[]
+  type(): TypeContext
+  methodArguments(): MethodArgumentsContext
 }
 
 declare interface FieldDeclarationContext {
-    modifier(i: number): ModifierContext
-    modifier(): ModifierContext[]
-    type(): TypeContext
-    Identifier(): Identifier
+  modifier(i: number): ModifierContext
+  modifier(): ModifierContext[]
+  type(): TypeContext
+  Identifier(): Identifier
 }
 
 declare interface MethodDeclarationContext {
-    modifier(i: number): ModifierContext
-    modifier(): ModifierContext[]
-    typeArguments(): TypeArgumentsContext
-    type(): TypeContext
-    Identifier(): Identifier
-    methodArguments(): MethodArgumentsContext
-    throwsException(): ThrowsExceptionContext
+  modifier(i: number): ModifierContext
+  modifier(): ModifierContext[]
+  typeArguments(): TypeArgumentsContext
+  type(): TypeContext
+  Identifier(): Identifier
+  methodArguments(): MethodArgumentsContext
+  throwsException(): ThrowsExceptionContext
 }
 
 declare interface ThrowsExceptionContext {
-    typeList(): TypeListContext
+  typeList(): TypeListContext
 }
 
 declare interface VarargsContext {
-    type(): TypeContext
+  type(): TypeContext
 }
 
 declare interface MethodArgumentsContext {
-    typeList(): TypeListContext
-    varargs(): VarargsContext
+  typeList(): TypeListContext
+  varargs(): VarargsContext
 }
 
 declare interface Identifier {
-    getText(): string
+  getText(): string
 }
 
 declare interface Child {
-    getText(): string
+  getText(): string
 }
 
 declare interface InterfaceStat {

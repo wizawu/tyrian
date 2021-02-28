@@ -33,7 +33,7 @@ export function generate(context: CompilationUnitContext, counter: InterfaceStat
         } else if (member.fieldDeclaration()) {
           frontBuffer.push("  " + declareField(member.fieldDeclaration()))
         } else if (member.methodDeclaration()) {
-          frontBuffer.push("  " + declareMethod(member.methodDeclaration()))
+          frontBuffer.push("  " + declareMethod(member.methodDeclaration(), true))
         }
       }
     } else if (c.interfaceDeclaration()) {
@@ -84,9 +84,11 @@ function declareField(field: FieldDeclarationContext): string {
   return result
 }
 
-function declareMethod(method: MethodDeclarationContext): string {
+function declareMethod(method: MethodDeclarationContext, isClass = false): string {
   let result = ""
-  method.modifier()?.forEach(it => result += memberModifier(it.getText()) + " ")
+  if (isClass) {
+    method.modifier()?.forEach(it => result += memberModifier(it.getText()) + " ")
+  }
   result += method.Identifier().getText()
   result += typeArgumentsToString(method.typeArguments())
   result += "(" + methodArgumentsToString(method.methodArguments()) + ")"
@@ -147,10 +149,10 @@ function declareNamespaces(type: TypeContext): [string, string] {
   const result: [string, string] = ["", ""]
   for (const id of type.packageName().Identifier()) {
     const ns = safeNamespace(id.getText())
-    result[0] += `declare namespace ${ns} {\n`
+    result[0] += `namespace ${ns} {\n`
     result[1] += "}\n"
   }
-  return result
+  return result[0] ? ["declare " + result[0], result[1]] : result
 }
 
 function isLambda(counter: InterfaceStat, type: TypeContext): boolean {

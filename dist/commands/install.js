@@ -87,8 +87,7 @@ function default_1(tsDefinition) {
                     if (!tsDefinition) return [3 /*break*/, 2];
                     jars = utils.listFilesByExt("lib", ".jar");
                     _b = (_a = parser).parse;
-                    _c = [jars,
-                        interfaces_json_1.default];
+                    _c = [jars, interfaces_json_1.default];
                     return [4 /*yield*/, listLibClasses(jars)];
                 case 1:
                     _b.apply(_a, _c.concat([_d.sent(), path_1.default.join(process.cwd(), "lib", "@types")]));

@@ -36,30 +36,26 @@ var child_process_1 = require("child_process");
 var utils = __importStar(require("../utils"));
 var errors_1 = require("../errors");
 function default_1(output, args, _a) {
-    var inspect = _a.inspect, watch = _a.watch;
+    var debug = _a.debug, watch = _a.watch;
     var _b = checkRuntime(), type = _b[0], runner = _b[1];
     var classPaths = utils.listFilesByExt("lib", ".jar");
     var run = function () {
         var finalArgs = [];
         if (type === "nashorn") {
-            finalArgs = __spreadArrays([
-                "-scripting",
+            finalArgs.push.apply(finalArgs, __spreadArrays(["-scripting",
                 "--language=es6",
                 "-cp", ":" + classPaths.join(":"),
                 output,
-                "--"
-            ], args);
+                "--"], args));
         }
         else if (type === "graaljs") {
-            finalArgs = [
-                "--jvm",
+            if (debug)
+                finalArgs.push("inspect");
+            finalArgs.push.apply(finalArgs, __spreadArrays(["--jvm",
                 "--experimental-options",
                 "--js.nashorn-compat=true",
-                "--vm.cp=:" + classPaths.join(":")
-            ];
-            if (inspect)
-                finalArgs.push("--inspect=" + inspect);
-            finalArgs.push.apply(finalArgs, __spreadArrays([output], args));
+                "--vm.cp=:" + classPaths.join(":"),
+                output], args));
         }
         var child = child_process_1.spawn(runner, finalArgs);
         child.on("exit", function (code) { return process.exit(code || 0); });

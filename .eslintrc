@@ -7,6 +7,19 @@
     "@typescript-eslint"
   ],
   "rules": {
+    "@typescript-eslint/adjacent-overload-signatures": 0,
+    "@typescript-eslint/indent": [
+      "error",
+      2
+    ],
+    "@typescript-eslint/no-empty-interface": 0,
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "args": "none",
+        "varsIgnorePattern": "T"
+      }
+    ],
     "array-bracket-spacing": [
       "error",
       "never"
@@ -25,7 +38,8 @@
     "no-unused-vars": [
       "error",
       {
-        "args": "none"
+        "args": "none",
+        "varsIgnorePattern": "T"
       }
     ],
     "quotes": [

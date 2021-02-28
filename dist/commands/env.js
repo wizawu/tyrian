@@ -9,7 +9,6 @@ function default_1() {
     return [
         check("node", ["-v"]),
         check("npm", ["-v"]),
-        check("java", ["--version"]),
         check("gradle", ["-v"]),
     ].every(function (it) { return it; });
 }

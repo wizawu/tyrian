@@ -1,4 +1,4 @@
-export const alias = {
+export const TypeAlias = {
   "boolean": ["boolean", "java.lang.Boolean"],
   "byte": ["number", "java.lang.Byte"],
   "char": ["string", "java.lang.Character"],
@@ -20,6 +20,17 @@ export const alias = {
   "java.lang.String": ["java.lang.String", "string"],
 }
 
-export function qualifiedName(type: TypeContext) {
-  return type.packageName().getText() + "." + type.Identifier().getText()
+// Append $ to namespace if it is a typescript keyword
+export function safeNamespace(namespace: string): string {
+  const invalid = ["debugger", "enum", "export", "function", "in", "is"]
+  return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$")
+}
+
+export function qualifiedName(type: TypeContext, safe: boolean = false) {
+  if (safe) {
+    let packages = type.packageName().Identifier().map(it => safeNamespace(it.getText()))
+    return [...packages, type.Identifier().getText()].join(".")
+  } else {
+    return type.packageName().getText() + "." + type.Identifier().getText()
+  }
 }

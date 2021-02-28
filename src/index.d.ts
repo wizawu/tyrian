@@ -59,11 +59,14 @@ declare interface PackageNameContext {
 declare interface TypeArgumentsContext {
     typeArgument(i: number): TypeArgumentContext
     typeArgument(): TypeArgumentContext[]
+    getText(): string
 }
 
 declare interface TypeArgumentContext {
     Identifier(): Identifier
     type(): TypeContext
+    getText(): string
+    getChild(i: number): Child
 }
 
 declare interface ClassBodyContext {
@@ -128,6 +131,10 @@ declare interface MethodArgumentsContext {
 }
 
 declare interface Identifier {
+    getText(): string
+}
+
+declare interface Child {
     getText(): string
 }
 

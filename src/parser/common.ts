@@ -20,17 +20,27 @@ export const TypeAlias = {
   "java.lang.String": ["java.lang.String", "string"],
 }
 
+export function memberModifier(modifier: string): string {
+  if (modifier === "abstract") return modifier
+  if (modifier === "final") return "readonly"
+  if (modifier === "private") return modifier
+  if (modifier === "protected") return modifier
+  if (modifier === "public") return modifier
+  if (modifier === "static") return modifier
+  return ""
+}
+
 // Append $ to namespace if it is a typescript keyword
 export function safeNamespace(namespace: string): string {
   const invalid = ["debugger", "enum", "export", "function", "in", "is"]
   return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$")
 }
 
-export function qualifiedName(type: TypeContext, safe: boolean = false) {
+export function qualifiedName(type: TypeContext, safe = false): string {
   if (safe) {
-    let packages = type.packageName().Identifier().map(it => safeNamespace(it.getText()))
+    const packages = type.packageName()?.Identifier().map(it => safeNamespace(it.getText())) || []
     return [...packages, type.Identifier().getText()].join(".")
   } else {
-    return type.packageName().getText() + "." + type.Identifier().getText()
+    return (type.packageName()?.getText().concat(".") || "") + type.Identifier().getText()
   }
 }

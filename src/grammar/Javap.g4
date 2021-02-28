@@ -43,7 +43,7 @@ interfaceModifier
     ;
 
 typeList
-    : type (',' type)*
+    : type ((','|', ') type)*
     ;
 
 type
@@ -55,12 +55,12 @@ packageName
     ;
 
 typeArguments
-    : '<' typeArgument (',' typeArgument)* '>'
-    | '[' ']'
+    : '[' ']'
+    | '<' typeArgument ((','|', ') typeArgument)* '>'
     ;
 
 typeArgument
-    : Identifier
+    : type
     | Identifier 'extends' type
     | '?' 'extends' type
     | '?' 'super' type
@@ -105,7 +105,7 @@ interfaceMember
     ;
 
 constructorDeclaration
-    : modifier* type '(' methodArguments ')' ';'
+    : modifier* type '(' methodArguments ')' throwsException? ';'
     ;
 
 fieldDeclaration
@@ -126,7 +126,7 @@ varargs
 
 methodArguments
     : typeList?
-    | typeList ',' varargs
+    | typeList (','|', ') varargs
     | varargs
     ;
 

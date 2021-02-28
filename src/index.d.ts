@@ -48,6 +48,7 @@ declare interface TypeContext {
   packageName(): PackageNameContext
   Identifier(): Identifier
   typeArguments(): TypeArgumentsContext
+  getText(): string
 }
 
 declare interface PackageNameContext {

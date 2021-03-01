@@ -29,10 +29,10 @@ program.command("install")
 
 program.command("build <entries...>")
   .description("compile one or more typescript entries")
-  .option("-c", "generate output in specific directory", process.cwd())
+  .option("-c <path>", "generate output in specific directory", ".")
   .option("-w --watch", "watch changes and re-build", false)
-  .action((entries, { watch, c: outDir }) => {
-    commands.build(entries, outDir, watch)
+  .action((entries, { watch, c }) => {
+    commands.build(entries, c, watch)
   })
 
 program.command("run <output> [arguments...]")

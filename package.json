@@ -18,7 +18,9 @@
     "commander": "^6.2.0",
     "jszip": "^3.6.0",
     "redent": "^3.0.0",
-    "typescript": "^4.0.5"
+    "ts-loader": "^8.0.17",
+    "typescript": "^4.0.5",
+    "webpack": "^5.24.2"
   },
   "devDependencies": {
     "@types/antlr4": "^4.7.2",

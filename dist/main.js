@@ -25,11 +25,11 @@ commander_1.program.command("install")
 });
 commander_1.program.command("build <entries...>")
     .description("compile one or more typescript entries")
-    .option("-c", "generate output in specific directory", process.cwd())
+    .option("-c <path>", "generate output in specific directory", ".")
     .option("-w --watch", "watch changes and re-build", false)
     .action(function (entries, _a) {
-    var watch = _a.watch, outDir = _a.c;
-    commands_1.default.build(entries, outDir, watch);
+    var watch = _a.watch, c = _a.c;
+    commands_1.default.build(entries, c, watch);
 });
 commander_1.program.command("run <output> [arguments...]")
     .description("execute one of the build output")

@@ -150,13 +150,19 @@ function typeArgumentsToString(typeArgs) {
     }
 }
 function typeArgumentToString(typeArg) {
-    if (typeArg.Identifier() && typeArg.type()) {
-        return typeArg.Identifier().getText() + " extends " + typeToString(typeArg.type());
+    var _a, _b;
+    if (((_a = typeArg.getChild(1)) === null || _a === void 0 ? void 0 : _a.getText()) === "extends") {
+        if (typeArg.Identifier()) {
+            return typeArg.Identifier().getText() + " extends " + typeToString(typeArg.type());
+        }
+        else {
+            return typeToString(typeArg.type());
+        }
     }
-    else if (typeArg.Identifier()) {
-        return typeArg.Identifier().getText();
+    else if (((_b = typeArg.getChild(1)) === null || _b === void 0 ? void 0 : _b.getText()) === "super") {
+        return "unknown";
     }
-    else if (typeArg.getChild(1).getText() === "extends") {
+    else if (typeArg.type()) {
         return typeToString(typeArg.type());
     }
     else {

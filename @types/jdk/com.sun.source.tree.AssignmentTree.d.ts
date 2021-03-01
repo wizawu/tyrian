@@ -1,0 +1,15 @@
+declare namespace com {
+  namespace sun {
+    namespace source {
+      namespace tree {
+
+        interface AssignmentTree extends com.sun.source.tree.ExpressionTree {
+
+          getVariable(): com.sun.source.tree.ExpressionTree
+          getExpression(): com.sun.source.tree.ExpressionTree
+        }
+
+      }
+    }
+  }
+}

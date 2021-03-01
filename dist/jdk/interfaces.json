@@ -32,6 +32,10 @@
         0,
         "com.sun.javadoc.ExecutableMemberDoc"
     ],
+    "com.sun.javadoc.Doc": [
+        24,
+        "java.lang.Comparable"
+    ],
     "com.sun.javadoc.DocErrorReporter": [
         6
     ],
@@ -98,6 +102,10 @@
     "com.sun.jdi.Accessible": [
         5
     ],
+    "com.sun.jdi.ArrayReference": [
+        7,
+        "com.sun.jdi.ObjectReference"
+    ],
     "com.sun.jdi.ArrayType": [
         4,
         "com.sun.jdi.ReferenceType"
@@ -117,6 +125,10 @@
     "com.sun.jdi.CharType": [
         0,
         "com.sun.jdi.PrimitiveType"
+    ],
+    "com.sun.jdi.ClassLoaderReference": [
+        2,
+        "com.sun.jdi.ObjectReference"
     ],
     "com.sun.jdi.ClassObjectReference": [
         1,
@@ -152,6 +164,10 @@
         3,
         "com.sun.jdi.Mirror"
     ],
+    "com.sun.jdi.PathSearchingVirtualMachine": [
+        3,
+        "com.sun.jdi.VirtualMachine"
+    ],
     "com.sun.jdi.PrimitiveType": [
         0,
         "com.sun.jdi.Type"
@@ -168,6 +184,10 @@
         1,
         "com.sun.jdi.ObjectReference"
     ],
+    "com.sun.jdi.ThreadGroupReference": [
+        6,
+        "com.sun.jdi.ObjectReference"
+    ],
     "com.sun.jdi.Type": [
         2,
         "com.sun.jdi.Mirror"
@@ -176,6 +196,9 @@
         1,
         "com.sun.jdi.Mirror"
     ],
+    "com.sun.jdi.VirtualMachineManager": [
+        10
+    ],
     "com.sun.jdi.VoidType": [
         0,
         "com.sun.jdi.Type"
@@ -183,6 +206,13 @@
     "com.sun.jdi.VoidValue": [
         2,
         "com.sun.jdi.Value"
+    ],
+    "com.sun.jdi.connect.AttachingConnector": [
+        1,
+        "com.sun.jdi.connect.Connector"
+    ],
+    "com.sun.jdi.connect.Connector": [
+        4
     ],
     "com.sun.jdi.connect.Connector$Argument": [
         7,
@@ -196,9 +226,21 @@
         7,
         "com.sun.jdi.connect.Connector$Argument"
     ],
+    "com.sun.jdi.connect.Connector$SelectedArgument": [
+        2,
+        "com.sun.jdi.connect.Connector$Argument"
+    ],
     "com.sun.jdi.connect.Connector$StringArgument": [
         1,
         "com.sun.jdi.connect.Connector$Argument"
+    ],
+    "com.sun.jdi.connect.LaunchingConnector": [
+        1,
+        "com.sun.jdi.connect.Connector"
+    ],
+    "com.sun.jdi.connect.ListeningConnector": [
+        4,
+        "com.sun.jdi.connect.Connector"
     ],
     "com.sun.jdi.connect.Transport": [
         1
@@ -222,6 +264,10 @@
     "com.sun.jdi.event.Event": [
         1,
         "com.sun.jdi.Mirror"
+    ],
+    "com.sun.jdi.event.EventIterator": [
+        1,
+        "java.util.Iterator"
     ],
     "com.sun.jdi.event.EventQueue": [
         2,
@@ -299,6 +345,10 @@
         2,
         "com.sun.jdi.request.EventRequest"
     ],
+    "com.sun.jdi.request.EventRequestManager": [
+        35,
+        "com.sun.jdi.Mirror"
+    ],
     "com.sun.jdi.request.ExceptionRequest": [
         8,
         "com.sun.jdi.request.EventRequest"
@@ -354,6 +404,10 @@
     "com.sun.management.GarbageCollectorMXBean": [
         1,
         "java.lang.management.GarbageCollectorMXBean"
+    ],
+    "com.sun.management.HotSpotDiagnosticMXBean": [
+        4,
+        "java.lang.management.PlatformManagedObject"
     ],
     "com.sun.management.OperatingSystemMXBean": [
         8,
@@ -425,6 +479,10 @@
     "com.sun.source.doctree.EntityTree": [
         1,
         "com.sun.source.doctree.DocTree"
+    ],
+    "com.sun.source.doctree.ErroneousTree": [
+        1,
+        "com.sun.source.doctree.TextTree"
     ],
     "com.sun.source.doctree.HiddenTree": [
         1,
@@ -677,6 +735,10 @@
         9,
         "com.sun.source.tree.Tree"
     ],
+    "com.sun.source.tree.ModifiersTree": [
+        2,
+        "com.sun.source.tree.Tree"
+    ],
     "com.sun.source.tree.ModuleTree": [
         4,
         "com.sun.source.tree.Tree"
@@ -792,6 +854,9 @@
     "com.sun.source.util.SourcePositions": [
         2
     ],
+    "java.applet.AppletContext": [
+        10
+    ],
     "java.applet.AppletStub": [
         6
     ],
@@ -851,6 +916,13 @@
     "java.awt.datatransfer.FlavorListener": [
         1,
         "java.util.EventListener"
+    ],
+    "java.awt.datatransfer.FlavorMap": [
+        2
+    ],
+    "java.awt.datatransfer.FlavorTable": [
+        2,
+        "java.awt.datatransfer.FlavorMap"
     ],
     "java.awt.datatransfer.Transferable": [
         3
@@ -1017,8 +1089,14 @@
     "java.awt.image.ImageProducer": [
         5
     ],
+    "java.awt.image.MultiResolutionImage": [
+        2
+    ],
     "java.awt.image.RasterOp": [
         5
+    ],
+    "java.awt.image.RenderedImage": [
+        21
     ],
     "java.awt.image.TileObserver": [
         1
@@ -1160,6 +1238,9 @@
         0,
         "java.lang.annotation.Annotation"
     ],
+    "java.lang.ProcessHandle$Info": [
+        6
+    ],
     "java.lang.Readable": [
         1
     ],
@@ -1236,8 +1317,15 @@
         5,
         "java.lang.management.PlatformManagedObject"
     ],
+    "java.lang.management.PlatformLoggingMXBean": [
+        4,
+        "java.lang.management.PlatformManagedObject"
+    ],
     "java.lang.management.PlatformManagedObject": [
         1
+    ],
+    "java.lang.module.ModuleFinder": [
+        5
     ],
     "java.lang.ref.Cleaner$Cleanable": [
         1
@@ -1276,6 +1364,9 @@
     "java.net.ContentHandlerFactory": [
         1
     ],
+    "java.net.CookieStore": [
+        6
+    ],
     "java.net.DatagramSocketImplFactory": [
         1
     ],
@@ -1294,14 +1385,35 @@
     "java.net.URLStreamHandlerFactory": [
         1
     ],
+    "java.net.http.HttpRequest$BodyPublisher": [
+        1,
+        "java.util.concurrent.Flow$Publisher"
+    ],
     "java.net.http.HttpRequest$Builder": [
         14
+    ],
+    "java.net.http.HttpResponse": [
+        8
     ],
     "java.net.http.HttpResponse$BodyHandler": [
         1
     ],
+    "java.net.http.HttpResponse$BodySubscriber": [
+        1,
+        "java.util.concurrent.Flow$Subscriber"
+    ],
+    "java.net.http.HttpResponse$PushPromiseHandler": [
+        2
+    ],
     "java.net.http.HttpResponse$ResponseInfo": [
         3
+    ],
+    "java.net.http.WebSocket$Builder": [
+        4
+    ],
+    "java.nio.channels.AsynchronousByteChannel": [
+        4,
+        "java.nio.channels.AsynchronousChannel"
     ],
     "java.nio.channels.AsynchronousChannel": [
         1,
@@ -1370,6 +1482,10 @@
         4,
         "java.io.Closeable"
     ],
+    "java.nio.file.attribute.AclFileAttributeView": [
+        3,
+        "java.nio.file.attribute.FileOwnerAttributeView"
+    ],
     "java.nio.file.attribute.AttributeView": [
         1
     ],
@@ -1402,6 +1518,14 @@
     "java.nio.file.attribute.GroupPrincipal": [
         0,
         "java.nio.file.attribute.UserPrincipal"
+    ],
+    "java.nio.file.attribute.PosixFileAttributes": [
+        3,
+        "java.nio.file.attribute.BasicFileAttributes"
+    ],
+    "java.nio.file.attribute.UserDefinedFileAttributeView": [
+        6,
+        "java.nio.file.attribute.FileAttributeView"
     ],
     "java.nio.file.attribute.UserPrincipal": [
         0,
@@ -1447,6 +1571,9 @@
     "java.rmi.server.Unreferenced": [
         1
     ],
+    "java.security.AlgorithmConstraints": [
+        3
+    ],
     "java.security.Certificate": [
         7
     ],
@@ -1476,6 +1603,14 @@
     ],
     "java.security.SecureRandomParameters": [
         0
+    ],
+    "java.security.acl.Acl": [
+        8,
+        "java.security.acl.Owner"
+    ],
+    "java.security.acl.AclEntry": [
+        10,
+        "java.lang.Cloneable"
     ],
     "java.security.acl.Group": [
         4,
@@ -1519,6 +1654,12 @@
         "java.lang.Cloneable"
     ],
     "java.security.cert.Extension": [
+        4
+    ],
+    "java.security.cert.PolicyNode": [
+        7
+    ],
+    "java.security.cert.X509Extension": [
         4
     ],
     "java.security.interfaces.DSAKey": [
@@ -1585,8 +1726,15 @@
     "java.sql.ShardingKeyBuilder": [
         2
     ],
+    "java.text.AttributedCharacterIterator": [
+        9,
+        "java.text.CharacterIterator"
+    ],
     "java.time.temporal.TemporalAdjuster": [
         1
+    ],
+    "java.time.temporal.TemporalAmount": [
+        4
     ],
     "java.time.temporal.TemporalQuery": [
         1
@@ -1604,6 +1752,9 @@
     "java.util.ListIterator": [
         9,
         "java.util.Iterator"
+    ],
+    "java.util.Map$Entry": [
+        9
     ],
     "java.util.NavigableMap": [
         21,
@@ -1631,6 +1782,10 @@
         2,
         "java.util.function.Supplier"
     ],
+    "java.util.SortedMap": [
+        9,
+        "java.util.Map"
+    ],
     "java.util.concurrent.BlockingQueue": [
         11,
         "java.util.Queue"
@@ -1643,6 +1798,10 @@
     ],
     "java.util.concurrent.CompletionService": [
         5
+    ],
+    "java.util.concurrent.Delayed": [
+        1,
+        "java.lang.Comparable"
     ],
     "java.util.concurrent.Executor": [
         1
@@ -1773,6 +1932,9 @@
     "java.util.logging.Filter": [
         1
     ],
+    "java.util.logging.LoggingMXBean": [
+        4
+    ],
     "java.util.prefs.NodeChangeListener": [
         2,
         "java.util.EventListener"
@@ -1796,6 +1958,9 @@
     "java.util.stream.BaseStream": [
         8,
         "java.lang.AutoCloseable"
+    ],
+    "java.util.stream.Collector": [
+        7
     ],
     "javax.accessibility.Accessible": [
         1
@@ -1849,6 +2014,12 @@
     ],
     "javax.annotation.processing.Messager": [
         4
+    ],
+    "javax.annotation.processing.ProcessingEnvironment": [
+        7
+    ],
+    "javax.annotation.processing.Processor": [
+        6
     ],
     "javax.annotation.processing.SupportedAnnotationTypes": [
         1,
@@ -1905,6 +2076,10 @@
     ],
     "javax.lang.model.element.AnnotationValue": [
         3
+    ],
+    "javax.lang.model.element.Element": [
+        11,
+        "javax.lang.model.AnnotatedConstruct"
     ],
     "javax.lang.model.element.ModuleElement$Directive": [
         2
@@ -2025,6 +2200,9 @@
     "javax.management.MBeanRegistration": [
         4
     ],
+    "javax.management.MBeanServerConnection": [
+        25
+    ],
     "javax.management.MBeanServerDelegateMBean": [
         7
     ],
@@ -2057,6 +2235,9 @@
     "javax.management.ValueExp": [
         2,
         "java.io.Serializable"
+    ],
+    "javax.management.loading.MLetMBean": [
+        10
     ],
     "javax.management.loading.PrivateClassLoader": [
         0
@@ -2096,9 +2277,19 @@
     "javax.management.openmbean.OpenMBeanInfo": [
         9
     ],
+    "javax.management.relation.Relation": [
+        12
+    ],
+    "javax.management.relation.RelationServiceMBean": [
+        34
+    ],
     "javax.management.relation.RelationSupportMBean": [
         2,
         "javax.management.relation.Relation"
+    ],
+    "javax.management.relation.RelationType": [
+        3,
+        "java.io.Serializable"
     ],
     "javax.management.remote.JMXAddressable": [
         1
@@ -2113,6 +2304,9 @@
     "javax.management.remote.rmi.RMIServer": [
         2,
         "java.rmi.Remote"
+    ],
+    "javax.management.timer.TimerMBean": [
+        23
     ],
     "javax.naming.NameParser": [
         1
@@ -2173,6 +2367,9 @@
     "javax.net.ssl.SSLSessionBindingListener": [
         2,
         "java.util.EventListener"
+    ],
+    "javax.net.ssl.SSLSessionContext": [
+        6
     ],
     "javax.net.ssl.TrustManager": [
         0
@@ -2264,6 +2461,9 @@
     "javax.script.Invocable": [
         4
     ],
+    "javax.script.ScriptEngineFactory": [
+        12
+    ],
     "javax.security.auth.Refreshable": [
         2
     ],
@@ -2292,6 +2492,10 @@
     ],
     "javax.sound.midi.MidiChannel": [
         26
+    ],
+    "javax.sound.midi.MidiDevice": [
+        11,
+        "java.lang.AutoCloseable"
     ],
     "javax.sound.midi.MidiDeviceReceiver": [
         1,
@@ -2569,6 +2773,9 @@
     "javax.swing.plaf.UIResource": [
         0
     ],
+    "javax.swing.plaf.basic.ComboPopup": [
+        8
+    ],
     "javax.swing.plaf.synth.SynthUI": [
         2,
         "javax.swing.plaf.synth.SynthConstants"
@@ -2579,6 +2786,9 @@
     ],
     "javax.swing.table.TableCellRenderer": [
         1
+    ],
+    "javax.swing.table.TableColumnModel": [
+        19
     ],
     "javax.swing.text.AbstractDocument$Content": [
         6
@@ -2672,6 +2882,9 @@
     "javax.tools.StandardJavaFileManager$PathFactory": [
         1
     ],
+    "javax.xml.catalog.Catalog": [
+        4
+    ],
     "javax.xml.crypto.AlgorithmMethod": [
         2
     ],
@@ -2697,6 +2910,14 @@
         1,
         "javax.xml.crypto.URIReference"
     ],
+    "javax.xml.crypto.dsig.SignatureProperty": [
+        3,
+        "javax.xml.crypto.XMLStructure"
+    ],
+    "javax.xml.crypto.dsig.SignedInfo": [
+        5,
+        "javax.xml.crypto.XMLStructure"
+    ],
     "javax.xml.crypto.dsig.XMLSignContext": [
         0,
         "javax.xml.crypto.XMLCryptoContext"
@@ -2708,6 +2929,10 @@
     "javax.xml.crypto.dsig.XMLValidateContext": [
         0,
         "javax.xml.crypto.XMLCryptoContext"
+    ],
+    "javax.xml.crypto.dsig.keyinfo.KeyInfo": [
+        3,
+        "javax.xml.crypto.XMLStructure"
     ],
     "javax.xml.crypto.dsig.keyinfo.KeyName": [
         1,
@@ -2733,6 +2958,9 @@
         0,
         "java.security.spec.AlgorithmParameterSpec"
     ],
+    "javax.xml.namespace.NamespaceContext": [
+        3
+    ],
     "javax.xml.stream.EventFilter": [
         1
     ],
@@ -2741,6 +2969,10 @@
     ],
     "javax.xml.stream.StreamFilter": [
         1
+    ],
+    "javax.xml.stream.XMLEventReader": [
+        7,
+        "java.util.Iterator"
     ],
     "javax.xml.stream.XMLEventWriter": [
         9,
@@ -2771,8 +3003,16 @@
         1,
         "javax.xml.stream.events.XMLEvent"
     ],
+    "javax.xml.stream.events.DTD": [
+        4,
+        "javax.xml.stream.events.XMLEvent"
+    ],
     "javax.xml.stream.events.EndDocument": [
         0,
+        "javax.xml.stream.events.XMLEvent"
+    ],
+    "javax.xml.stream.events.EndElement": [
+        2,
         "javax.xml.stream.events.XMLEvent"
     ],
     "javax.xml.stream.events.EntityDeclaration": [
@@ -2796,6 +3036,10 @@
         "javax.xml.stream.events.XMLEvent"
     ],
     "javax.xml.stream.events.StartDocument": [
+        6,
+        "javax.xml.stream.events.XMLEvent"
+    ],
+    "javax.xml.stream.events.StartElement": [
         6,
         "javax.xml.stream.events.XMLEvent"
     ],
@@ -2835,6 +3079,10 @@
     "javax.xml.xpath.XPathFunctionResolver": [
         1
     ],
+    "javax.xml.xpath.XPathNodes": [
+        3,
+        "java.lang.Iterable"
+    ],
     "javax.xml.xpath.XPathVariableResolver": [
         1
     ],
@@ -2864,6 +3112,9 @@
     ],
     "jdk.javadoc.doclet.Doclet": [
         5
+    ],
+    "jdk.javadoc.doclet.Doclet$Option": [
+        6
     ],
     "jdk.javadoc.doclet.DocletEnvironment": [
         11
@@ -2950,6 +3201,13 @@
     ],
     "jdk.jshell.SourceCodeAnalysis$Suggestion": [
         2
+    ],
+    "jdk.jshell.spi.ExecutionControl": [
+        10,
+        "java.lang.AutoCloseable"
+    ],
+    "jdk.jshell.spi.ExecutionEnv": [
+        5
     ],
     "jdk.nashorn.api.scripting.ClassFilter": [
         1

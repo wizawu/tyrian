@@ -1,0 +1,13 @@
+declare namespace java {
+  namespace io {
+
+    class InvalidClassException extends java.io.ObjectStreamException {
+
+      public classname: java.lang.String
+      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String, arg1: java.lang.String)
+      public getMessage(): java.lang.String
+    }
+
+  }
+}

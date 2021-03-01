@@ -1,6 +1,6 @@
 interface Options {
-    debug: boolean;
+    inspectBrk: boolean;
     watch: boolean;
 }
-export default function (output: string, args: string[], { debug, watch }: Options): void;
+export default function (output: string, args: string[], { inspectBrk, watch }: Options): void;
 export {};

@@ -32,6 +32,7 @@ function getCompiler(entries: string[], outDir: string) {
   }
 
   return webpack({
+    devtool: false,
     mode: "development",
     context: context,
     entry: entry,

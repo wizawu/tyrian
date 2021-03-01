@@ -37,6 +37,7 @@ function getCompiler(entries, outDir) {
         entry[out] = path_1.default.format({ dir: ".", name: path_1.default.relative("", src) });
     }
     return webpack_1.default({
+        devtool: false,
         mode: "development",
         context: context,
         entry: entry,

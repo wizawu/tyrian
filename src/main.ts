@@ -37,10 +37,10 @@ program.command("build <entries...>")
 
 program.command("run <output> [arguments...]")
   .description("execute one of the build output")
-  .option("-d --debug", "enable debugger (only with graaljs runtime)", false)
+  .option("--inspect-brk [port]", "activate inspector on port (only with graaljs runtime)")
   .option("-w --watch", "watch changes and re-run", false)
-  .action((output, args, { debug, watch }) => {
-    commands.run(output, args, { debug, watch })
+  .action((output, args, { inspectBrk, watch }) => {
+    commands.run(output, args, { inspectBrk, watch })
   })
 
 program.parse(process.argv)

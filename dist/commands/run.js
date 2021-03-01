@@ -36,7 +36,7 @@ var child_process_1 = require("child_process");
 var utils = __importStar(require("../utils"));
 var errors_1 = require("../errors");
 function default_1(output, args, _a) {
-    var debug = _a.debug, watch = _a.watch;
+    var inspectBrk = _a.inspectBrk, watch = _a.watch;
     var _b = checkRuntime(), type = _b[0], runner = _b[1];
     var classPaths = utils.listFilesByExt("lib", ".jar");
     var run = function () {
@@ -49,8 +49,8 @@ function default_1(output, args, _a) {
                 "--"], args));
         }
         else if (type === "graaljs") {
-            if (debug)
-                finalArgs.push("inspect");
+            if (inspectBrk)
+                finalArgs.push("--inspect-brk=" + inspectBrk);
             finalArgs.push.apply(finalArgs, __spreadArrays(["--jvm",
                 "--experimental-options",
                 "--js.nashorn-compat=true",

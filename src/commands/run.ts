@@ -9,11 +9,11 @@ import { code as ErrorCode } from "../errors"
 type Runtime = "graaljs" | "nashorn"
 
 interface Options {
-  debug: boolean
+  inspectBrk: boolean
   watch: boolean
 }
 
-export default function (output: string, args: string[], { debug, watch }: Options): void {
+export default function (output: string, args: string[], { inspectBrk, watch }: Options): void {
   const [type, runner] = checkRuntime()
   const classPaths = utils.listFilesByExt("lib", ".jar")
   const run = () => {
@@ -28,7 +28,7 @@ export default function (output: string, args: string[], { debug, watch }: Optio
         ...args
       )
     } else if (type === "graaljs") {
-      if (debug) finalArgs.push("inspect")
+      if (inspectBrk) finalArgs.push("--inspect-brk=" + inspectBrk)
       finalArgs.push(
         "--jvm",
         "--experimental-options",

@@ -24,7 +24,7 @@ export function generate(context: CompilationUnitContext, counter: InterfaceStat
       endBuffer.push(nsDeclaration[1])
       // class header
       const modifier = classModifier.some(it => it.getText() === "abstract") ? "abstract " : ""
-      frontBuffer.push(modifier + "class " + header(type, extend, implement?.type()) + " {\n")
+      frontBuffer.push(modifier + "class " + header(type, extend, implement?.type()) + " {")
       endBuffer.push("}\n")
       // generate members
       for (const member of classBody.classMember()) {
@@ -45,8 +45,24 @@ export function generate(context: CompilationUnitContext, counter: InterfaceStat
       const nsDeclaration = declareNamespaces(type)
       frontBuffer.push(nsDeclaration[0])
       endBuffer.push(nsDeclaration[1])
+      // generate lambda
+      if (isLambda(counter, type)) {
+        if (interfaceBody.interfaceMember(0)) {
+          const method = interfaceBody.interfaceMember(0).methodDeclaration()
+          frontBuffer.push(
+            "function " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
+            "(" + methodArgumentsToString(method.methodArguments()) + ")" +
+            ": " + typeToString(method.type()) + "\n"
+          )
+        } else {
+          frontBuffer.push(
+            "type " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
+            " = " + extend.Identifier().getText() + "$$Lambda" + typeArgumentsToString(extend.typeArguments()) + "\n"
+          )
+        }
+      }
       // interface header
-      frontBuffer.push("interface " + header(type, extend) + " {\n")
+      frontBuffer.push("interface " + header(type, extend) + " {")
       endBuffer.push("}\n")
       // generate members
       for (const member of interfaceBody.interfaceMember()) {
@@ -54,7 +70,6 @@ export function generate(context: CompilationUnitContext, counter: InterfaceStat
           frontBuffer.push("  " + declareMethod(member.methodDeclaration()))
         }
       }
-      // TODO generate lambda
     } else {
       console.error("Cannot find class or interface declaration")
       continue

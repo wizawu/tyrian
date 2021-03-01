@@ -36,7 +36,7 @@ function generate(context, counter, typeRoot) {
             endBuffer.push(nsDeclaration[1]);
             // class header
             var modifier = classModifier.some(function (it) { return it.getText() === "abstract"; }) ? "abstract " : "";
-            frontBuffer.push(modifier + "class " + header(type, extend, implement === null || implement === void 0 ? void 0 : implement.type()) + " {\n");
+            frontBuffer.push(modifier + "class " + header(type, extend, implement === null || implement === void 0 ? void 0 : implement.type()) + " {");
             endBuffer.push("}\n");
             // generate members
             for (var _b = 0, _c = classBody.classMember(); _b < _c.length; _b++) {
@@ -61,8 +61,21 @@ function generate(context, counter, typeRoot) {
             var nsDeclaration = declareNamespaces(type);
             frontBuffer.push(nsDeclaration[0]);
             endBuffer.push(nsDeclaration[1]);
+            // generate lambda
+            if (isLambda(counter, type)) {
+                if (interfaceBody.interfaceMember(0)) {
+                    var method = interfaceBody.interfaceMember(0).methodDeclaration();
+                    frontBuffer.push("function " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
+                        "(" + methodArgumentsToString(method.methodArguments()) + ")" +
+                        ": " + typeToString(method.type()) + "\n");
+                }
+                else {
+                    frontBuffer.push("type " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
+                        " = " + extend.Identifier().getText() + "$$Lambda" + typeArgumentsToString(extend.typeArguments()) + "\n");
+                }
+            }
             // interface header
-            frontBuffer.push("interface " + header(type, extend) + " {\n");
+            frontBuffer.push("interface " + header(type, extend) + " {");
             endBuffer.push("}\n");
             // generate members
             for (var _d = 0, _e = interfaceBody.interfaceMember(); _d < _e.length; _d++) {
@@ -71,7 +84,6 @@ function generate(context, counter, typeRoot) {
                     frontBuffer.push("  " + declareMethod(member.methodDeclaration()));
                 }
             }
-            // TODO generate lambda
         }
         else {
             console.error("Cannot find class or interface declaration");

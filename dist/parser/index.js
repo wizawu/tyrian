@@ -41,7 +41,7 @@ function parse(classPaths, counter, classList, typeRoot) {
             buffer.push(output);
         }
     }
-    var input = buffer.join("\n");
+    var input = buffer.join("\n"); // && require("fs").readFileSync("test.class", "utf-8")
     var lexer = new JavapLexer_1.JavapLexer(new antlr4_1.default.InputStream(input));
     var tokens = new antlr4_1.default.CommonTokenStream(lexer);
     var parser = new JavapParser_1.JavapParser(tokens);
@@ -50,14 +50,14 @@ function parse(classPaths, counter, classList, typeRoot) {
         .map(function (it) { return it.interfaceDeclaration(); }).filter(function (it) { return it; });
     for (var _i = 0, interfaces_1 = interfaces; _i < interfaces_1.length; _i++) {
         var it = interfaces_1[_i];
-        var className = common_1.qualifiedName(it.type(0));
+        var className = common_1.qualifiedName(it.type());
         var count = it.interfaceBody().interfaceMember()
             .filter(function (it) { return it.methodDeclaration(); }).length;
-        if (it.type().length === 1) {
-            counter[className] = [count];
+        if (it.typeList()) {
+            counter[className] = [count, it.typeList().type().map(function (it) { return common_1.qualifiedName(it); })];
         }
         else {
-            counter[className] = [count, common_1.qualifiedName(it.type(1))];
+            counter[className] = [count];
         }
     }
     if (typeRoot) {

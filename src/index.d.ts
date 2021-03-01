@@ -26,8 +26,8 @@ declare interface ClassDeclarationContext {
 declare interface InterfaceDeclarationContext {
   interfaceModifier(i: number): InterfaceModifierContext
   interfaceModifier(): InterfaceModifierContext[]
-  type(i: number): TypeContext
-  type(): TypeContext[]
+  type(): TypeContext
+  typeList(): TypeListContext
   interfaceBody(): InterfaceBodyContext
 }
 
@@ -91,6 +91,7 @@ declare interface ClassMemberContext {
 }
 
 declare interface InterfaceMemberContext {
+  fieldDeclaration(): FieldDeclarationContext
   methodDeclaration(): MethodDeclarationContext
 }
 
@@ -99,6 +100,7 @@ declare interface ConstructorDeclarationContext {
   modifier(): ModifierContext[]
   type(): TypeContext
   methodArguments(): MethodArgumentsContext
+  throwsException(): ThrowsExceptionContext
 }
 
 declare interface FieldDeclarationContext {
@@ -140,5 +142,5 @@ declare interface Child {
 }
 
 declare interface InterfaceStat {
-  [_: string]: [number, string?]
+  [_: string]: [number, ...string]
 }

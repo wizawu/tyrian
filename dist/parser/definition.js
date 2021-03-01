@@ -16,9 +16,9 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var common_1 = require("./common");
 function generate(context, counter, typeRoot) {
+    var _a;
     fs_1.default.mkdirSync(typeRoot, { recursive: true });
-    for (var _i = 0, _a = context.classOrInterface(); _i < _a.length; _i++) {
-        var c = _a[_i];
+    var _loop_1 = function (c) {
         var filename = "";
         var frontBuffer = [];
         var endBuffer = [];
@@ -36,11 +36,11 @@ function generate(context, counter, typeRoot) {
             endBuffer.push(nsDeclaration[1]);
             // class header
             var modifier = classModifier.some(function (it) { return it.getText() === "abstract"; }) ? "abstract " : "";
-            frontBuffer.push(modifier + "class " + header(type, extend, implement === null || implement === void 0 ? void 0 : implement.type()) + " {");
+            frontBuffer.push(modifier + "class " + header(type, extend && [extend], implement === null || implement === void 0 ? void 0 : implement.type()) + " {");
             endBuffer.push("}\n");
             // generate members
-            for (var _b = 0, _c = classBody.classMember(); _b < _c.length; _b++) {
-                var member = _c[_b];
+            for (var _i = 0, _a = classBody.classMember(); _i < _a.length; _i++) {
+                var member = _a[_i];
                 if (member.constructorDeclaration()) {
                     frontBuffer.push("  " + declareConstructor(member.constructorDeclaration()));
                 }
@@ -53,47 +53,56 @@ function generate(context, counter, typeRoot) {
             }
         }
         else if (c.interfaceDeclaration()) {
-            var type = c.interfaceDeclaration().type(0);
-            var extend = c.interfaceDeclaration().type(1);
+            var type_1 = c.interfaceDeclaration().type();
+            var extend = c.interfaceDeclaration().typeList();
             var interfaceBody = c.interfaceDeclaration().interfaceBody();
-            filename = common_1.qualifiedName(type) + ".d.ts";
+            filename = common_1.qualifiedName(type_1) + ".d.ts";
             // declare namespaces
-            var nsDeclaration = declareNamespaces(type);
+            var nsDeclaration = declareNamespaces(type_1);
             frontBuffer.push(nsDeclaration[0]);
             endBuffer.push(nsDeclaration[1]);
-            // generate lambda
-            if (isLambda(counter, type)) {
-                if (interfaceBody.interfaceMember(0)) {
-                    var method = interfaceBody.interfaceMember(0).methodDeclaration();
-                    frontBuffer.push("function " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
+            // generate lambda type
+            if (isLambda(counter, type_1)) {
+                if ((_a = interfaceBody.interfaceMember()) === null || _a === void 0 ? void 0 : _a.some(function (it) { return it.methodDeclaration(); })) {
+                    var method = interfaceBody.interfaceMember().filter(function (it) { return it.methodDeclaration(); })[0].methodDeclaration();
+                    frontBuffer.push("function " + type_1.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type_1.typeArguments()) +
                         "(" + methodArgumentsToString(method.methodArguments()) + ")" +
                         ": " + typeToString(method.type()) + "\n");
                 }
                 else {
-                    frontBuffer.push("type " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
-                        " = " + extend.Identifier().getText() + "$$Lambda" + typeArgumentsToString(extend.typeArguments()) + "\n");
+                    extend.type().filter(function (it) { return isLambda(counter, it); }).forEach(function (it) {
+                        frontBuffer.push("type " + type_1.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type_1.typeArguments()) +
+                            " = " + common_1.qualifiedName(it, true) + "$$Lambda" + typeArgumentsToString(it.typeArguments()) + "\n");
+                    });
                 }
             }
             // interface header
-            frontBuffer.push("interface " + header(type, extend) + " {");
+            frontBuffer.push("interface " + header(type_1, extend === null || extend === void 0 ? void 0 : extend.type()) + " {");
             endBuffer.push("}\n");
             // generate members
-            for (var _d = 0, _e = interfaceBody.interfaceMember(); _d < _e.length; _d++) {
-                var member = _e[_d];
-                if (member.methodDeclaration()) {
+            for (var _b = 0, _c = interfaceBody.interfaceMember(); _b < _c.length; _b++) {
+                var member = _c[_b];
+                if (member.fieldDeclaration()) {
+                    frontBuffer.push("  " + declareField(member.fieldDeclaration()));
+                }
+                else if (member.methodDeclaration()) {
                     frontBuffer.push("  " + declareMethod(member.methodDeclaration()));
                 }
             }
         }
         else {
             console.error("Cannot find class or interface declaration");
-            continue;
+            return "continue";
         }
         if (filename) {
             var content = __spreadArrays(frontBuffer, endBuffer.reverse()).join("\n");
             fs_1.default.writeFileSync(path_1.default.join(typeRoot, filename), content + lambdaBuffer);
             console.debug(chalk_1.default.green("Generated " + filename));
         }
+    };
+    for (var _i = 0, _b = context.classOrInterface(); _i < _b.length; _i++) {
+        var c = _b[_i];
+        _loop_1(c);
     }
     return true;
 }
@@ -141,8 +150,8 @@ function methodArgumentsToString(methodArgs) {
 }
 function header(type, extend, implement) {
     var result = type.Identifier().getText() + typeArgumentsToString(type.typeArguments());
-    if (extend) {
-        result += " extends " + typeToString(extend);
+    if (extend && extend.length) {
+        result += " extends " + extend.map(function (it) { return typeToString(it); }).join(", ");
     }
     if (implement && implement.length) {
         result += " implements " + implement.map(function (it) { return typeToString(it); }).join(", ");
@@ -196,14 +205,15 @@ function declareNamespaces(type) {
 }
 function isLambda(counter, type) {
     var count = 0;
-    var current = counter[common_1.qualifiedName(type)];
-    while (current) {
-        count += current[0];
-        if (current[1]) {
-            current = counter[current[1]];
-        }
-        else {
-            break;
+    var queue = [common_1.qualifiedName(type)];
+    for (var i = 0; i < queue.length; i++) {
+        var current = queue[i];
+        if (counter[current]) {
+            count += counter[current][0];
+            counter[current].slice(1).forEach(function (it) {
+                if (queue.indexOf(it) < 0)
+                    queue.push(it);
+            });
         }
     }
     return count === 1;

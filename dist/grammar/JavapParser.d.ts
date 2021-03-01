@@ -174,9 +174,10 @@ declare class InterfaceDeclarationContext {
     parser: any;
     ruleIndex: number;
     constructor: typeof InterfaceDeclarationContext;
-    type(i: any): any;
+    type(): any;
     interfaceBody(): any;
     interfaceModifier(i: any): any;
+    typeList(): any;
     enterRule(listener: any): void;
     exitRule(listener: any): void;
     accept(visitor: any): any;
@@ -310,6 +311,7 @@ declare class InterfaceMemberContext {
     parser: any;
     ruleIndex: number;
     constructor: typeof InterfaceMemberContext;
+    fieldDeclaration(): any;
     methodDeclaration(): any;
     enterRule(listener: any): void;
     exitRule(listener: any): void;

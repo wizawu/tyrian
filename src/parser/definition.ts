@@ -24,7 +24,7 @@ export function generate(context: CompilationUnitContext, counter: InterfaceStat
       endBuffer.push(nsDeclaration[1])
       // class header
       const modifier = classModifier.some(it => it.getText() === "abstract") ? "abstract " : ""
-      frontBuffer.push(modifier + "class " + header(type, extend, implement?.type()) + " {")
+      frontBuffer.push(modifier + "class " + header(type, extend && [extend], implement?.type()) + " {")
       endBuffer.push("}\n")
       // generate members
       for (const member of classBody.classMember()) {
@@ -37,36 +37,40 @@ export function generate(context: CompilationUnitContext, counter: InterfaceStat
         }
       }
     } else if (c.interfaceDeclaration()) {
-      const type = c.interfaceDeclaration().type(0)
-      const extend = c.interfaceDeclaration().type(1)
+      const type = c.interfaceDeclaration().type()
+      const extend = c.interfaceDeclaration().typeList()
       const interfaceBody = c.interfaceDeclaration().interfaceBody()
       filename = qualifiedName(type) + ".d.ts"
       // declare namespaces
       const nsDeclaration = declareNamespaces(type)
       frontBuffer.push(nsDeclaration[0])
       endBuffer.push(nsDeclaration[1])
-      // generate lambda
+      // generate lambda type
       if (isLambda(counter, type)) {
-        if (interfaceBody.interfaceMember(0)) {
-          const method = interfaceBody.interfaceMember(0).methodDeclaration()
+        if (interfaceBody.interfaceMember()?.some(it => it.methodDeclaration())) {
+          const method = interfaceBody.interfaceMember().filter(it => it.methodDeclaration())[0].methodDeclaration()
           frontBuffer.push(
             "function " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
             "(" + methodArgumentsToString(method.methodArguments()) + ")" +
             ": " + typeToString(method.type()) + "\n"
           )
         } else {
-          frontBuffer.push(
-            "type " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
-            " = " + extend.Identifier().getText() + "$$Lambda" + typeArgumentsToString(extend.typeArguments()) + "\n"
-          )
+          extend.type().filter(it => isLambda(counter, it)).forEach(it => {
+            frontBuffer.push(
+              "type " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
+              " = " + qualifiedName(it, true) + "$$Lambda" + typeArgumentsToString(it.typeArguments()) + "\n"
+            )
+          })
         }
       }
       // interface header
-      frontBuffer.push("interface " + header(type, extend) + " {")
+      frontBuffer.push("interface " + header(type, extend?.type()) + " {")
       endBuffer.push("}\n")
       // generate members
       for (const member of interfaceBody.interfaceMember()) {
-        if (member.methodDeclaration()) {
+        if (member.fieldDeclaration()) {
+          frontBuffer.push("  " + declareField(member.fieldDeclaration()))
+        } else if (member.methodDeclaration()) {
           frontBuffer.push("  " + declareMethod(member.methodDeclaration()))
         }
       }
@@ -122,10 +126,10 @@ function methodArgumentsToString(methodArgs: MethodArgumentsContext): string {
   return result.join(", ")
 }
 
-function header(type: TypeContext, extend?: TypeContext, implement?: TypeContext[]): string {
+function header(type: TypeContext, extend?: TypeContext[], implement?: TypeContext[]): string {
   let result = type.Identifier().getText() + typeArgumentsToString(type.typeArguments())
-  if (extend) {
-    result += " extends " + typeToString(extend)
+  if (extend && extend.length) {
+    result += " extends " + extend.map(it => typeToString(it)).join(", ")
   }
   if (implement && implement.length) {
     result += " implements " + implement.map(it => typeToString(it)).join(", ")
@@ -176,13 +180,14 @@ function declareNamespaces(type: TypeContext): [string, string] {
 
 function isLambda(counter: InterfaceStat, type: TypeContext): boolean {
   let count = 0
-  let current = counter[qualifiedName(type)]
-  while (current) {
-    count += current[0]
-    if (current[1]) {
-      current = counter[current[1]]
-    } else {
-      break
+  const queue = [qualifiedName(type)]
+  for (let i = 0; i < queue.length; i++) {
+    const current = queue[i]
+    if (counter[current]) {
+      count += counter[current][0]
+      counter[current].slice(1).forEach(it => {
+        if (queue.indexOf(it) < 0) queue.push(it)
+      })
     }
   }
   return count === 1

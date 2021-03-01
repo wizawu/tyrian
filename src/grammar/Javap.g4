@@ -7,7 +7,7 @@ compilationUnit
     ;
 
 sourceDeclaration
-    : 'Compiled' 'from' '"' .*? '"'
+    : 'Compiled from' '"' .*? '"'
     ;
 
 classOrInterface
@@ -24,7 +24,7 @@ classDeclaration
 
 interfaceDeclaration
     : interfaceModifier* 'interface' type
-      ('extends' type)?
+      ('extends' typeList)?
       interfaceBody
     ;
 
@@ -64,6 +64,7 @@ typeArgument
     | Identifier 'extends' type
     | '?' 'extends' type
     | '?' 'super' type
+    | '?'
     ;
 
 Identifier
@@ -79,12 +80,13 @@ interfaceBody
     ;
 
 modifier
-    : 'public'
-    | 'private'
-    | 'protected'
-    | 'abstract'
+    : 'abstract'
+    | 'default'
     | 'final'
     | 'native'
+    | 'private'
+    | 'protected'
+    | 'public'
     | 'static'
     | 'strictfp'
     | 'synchronized'
@@ -100,7 +102,8 @@ classMember
     ;
 
 interfaceMember
-    : methodDeclaration
+    : fieldDeclaration
+    | methodDeclaration
     | 'static' '{}' ';'
     ;
 

@@ -19,7 +19,7 @@ export function parse(classPaths: string[], counter: InterfaceStat, classList: s
     }
   }
 
-  const input = buffer.join("\n")
+  const input = buffer.join("\n") // && require("fs").readFileSync("test.class", "utf-8")
   const lexer = new JavapLexer(new antlr.InputStream(input))
   const tokens = new antlr.CommonTokenStream(lexer as unknown as antlr.Lexer)
   const parser = new JavapParser(tokens)
@@ -28,13 +28,13 @@ export function parse(classPaths: string[], counter: InterfaceStat, classList: s
   const interfaces = context.classOrInterface()
     .map(it => it.interfaceDeclaration()).filter(it => it)
   for (const it of interfaces) {
-    const className = qualifiedName(it.type(0))
+    const className = qualifiedName(it.type())
     const count = it.interfaceBody().interfaceMember()
       .filter(it => it.methodDeclaration()).length
-    if (it.type().length === 1) {
-      counter[className] = [count]
+    if (it.typeList()) {
+      counter[className] = [count, it.typeList().type().map(it => qualifiedName(it))]
     } else {
-      counter[className] = [count, qualifiedName(it.type(1))]
+      counter[className] = [count]
     }
   }
 

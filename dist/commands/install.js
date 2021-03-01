@@ -54,6 +54,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
+var __spreadArrays = (this && this.__spreadArrays) || function () {
+    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
+    for (var r = Array(s), k = 0, i = 0; i < il; i++)
+        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
+            r[k] = a[j];
+    return r;
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -62,6 +69,7 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var redent_1 = __importDefault(require("redent"));
 var jszip_1 = __importDefault(require("jszip"));
+var glob_1 = require("glob");
 var child_process_1 = require("child_process");
 var parser = __importStar(require("../parser"));
 var utils = __importStar(require("../utils"));
@@ -135,9 +143,15 @@ function npmInstall() {
 }
 function gradleInstall() {
     fs_1.default.mkdirSync(path_1.default.join("lib", "@types"), { recursive: true });
-    var mvnDependencies = JSON.parse(fs_1.default.readFileSync("package.json", "utf-8")).mvnDependencies;
-    // TODO: Add mvnDependencies from other tyrian packages
-    var deps = Object.keys(mvnDependencies || {}).map(function (it) {
+    var mvnDependencies = {};
+    __spreadArrays(["package.json"], new glob_1.GlobSync(path_1.default.join("node_modules", "**", "package.json")).found).forEach(function (it) {
+        var pkg = JSON.parse(fs_1.default.readFileSync(it, "utf-8"));
+        Object.keys(pkg.mvnDependencies || {}).forEach(function (k) {
+            if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))
+                mvnDependencies[k] = pkg.mvnDependencies[k];
+        });
+    });
+    var deps = Object.keys(mvnDependencies).map(function (it) {
         return "compile \"" + it + ":" + mvnDependencies[it] + "\"";
     });
     fs_1.default.writeFileSync("build.gradle", gradleTemplate(deps));

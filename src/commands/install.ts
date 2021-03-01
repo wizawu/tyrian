@@ -2,6 +2,7 @@ import fs from "fs"
 import path from "path"
 import redent from "redent"
 import zip from "jszip"
+import { GlobSync } from "glob"
 import { spawnSync } from "child_process"
 
 import * as parser from "../parser"
@@ -55,9 +56,16 @@ function npmInstall() {
 
 function gradleInstall() {
   fs.mkdirSync(path.join("lib", "@types"), { recursive: true })
-  const { mvnDependencies } = JSON.parse(fs.readFileSync("package.json", "utf-8"))
-  // TODO: Add mvnDependencies from other tyrian packages
-  const deps = Object.keys(mvnDependencies || {}).map(it =>
+  const mvnDependencies: {[_:string]: string} = {}
+  // find all mvnDependencies from node_modules
+  ;["package.json", ...new GlobSync(path.join("node_modules", "**", "package.json")).found].forEach(it => {
+    const pkg = JSON.parse(fs.readFileSync(it as string, "utf-8"))
+    Object.keys(pkg.mvnDependencies || {}).forEach(k => {
+      if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))
+        mvnDependencies[k] = pkg.mvnDependencies[k]
+    })
+  })
+  const deps = Object.keys(mvnDependencies).map(it =>
     `compile "${it}:${mvnDependencies[it]}"`
   )
   fs.writeFileSync("build.gradle", gradleTemplate(deps))

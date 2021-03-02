@@ -43,13 +43,13 @@ function generate(context, ifs, typeRoot) {
             for (var _i = 0, _a = classBody.classMember(); _i < _a.length; _i++) {
                 var member = _a[_i];
                 if (member.constructorDeclaration()) {
-                    frontBuffer.push("  " + declareConstructor(member.constructorDeclaration()));
+                    frontBuffer.push("  " + declareConstructor(member.constructorDeclaration(), ifs));
                 }
                 else if (member.fieldDeclaration()) {
                     frontBuffer.push("  " + declareField(member.fieldDeclaration()));
                 }
                 else if (member.methodDeclaration()) {
-                    frontBuffer.push("  " + declareMethod(member.methodDeclaration(), true));
+                    frontBuffer.push("  " + declareMethod(member.methodDeclaration(), ifs, true));
                 }
             }
         }
@@ -67,7 +67,7 @@ function generate(context, ifs, typeRoot) {
                 if ((_a = interfaceBody.interfaceMember()) === null || _a === void 0 ? void 0 : _a.some(function (it) { return it.methodDeclaration(); })) {
                     var method = interfaceBody.interfaceMember().filter(function (it) { return it.methodDeclaration(); })[0].methodDeclaration();
                     frontBuffer.push("interface " + type_1.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type_1.typeArguments()) +
-                        " {\n(" + methodArgumentsToString(method.methodArguments()) + ")" +
+                        " {\n(" + methodArgumentsToString(method.methodArguments(), ifs) + ")" +
                         ": " + typeToString(method.type()) + "\n}\n");
                 }
                 else {
@@ -87,7 +87,7 @@ function generate(context, ifs, typeRoot) {
                     frontBuffer.push("  " + declareField(member.fieldDeclaration()));
                 }
                 else if (member.methodDeclaration()) {
-                    frontBuffer.push("  " + declareMethod(member.methodDeclaration()));
+                    frontBuffer.push("  " + declareMethod(member.methodDeclaration(), ifs));
                 }
             }
         }
@@ -108,12 +108,12 @@ function generate(context, ifs, typeRoot) {
     return true;
 }
 exports.generate = generate;
-function declareConstructor(constructor) {
+function declareConstructor(constructor, ifs) {
     var _a;
     var result = "";
     (_a = constructor.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += common_1.memberModifier(it.getText()) + " "; });
     result += "constructor";
-    result += "(" + methodArgumentsToString(constructor.methodArguments()) + ")";
+    result += "(" + methodArgumentsToString(constructor.methodArguments(), ifs) + ")";
     return result;
 }
 function declareField(field) {
@@ -124,7 +124,7 @@ function declareField(field) {
     result += ": " + typeToString(field.type());
     return result;
 }
-function declareMethod(method, isClass) {
+function declareMethod(method, ifs, isClass) {
     var _a;
     if (isClass === void 0) { isClass = false; }
     var result = "";
@@ -133,19 +133,22 @@ function declareMethod(method, isClass) {
     }
     result += method.Identifier().getText();
     result += typeArgumentsToString(method.typeArguments());
-    result += "(" + methodArgumentsToString(method.methodArguments()) + ")";
+    result += "(" + methodArgumentsToString(method.methodArguments(), ifs) + ")";
     result += ": " + typeToString(method.type(), true);
     return result;
 }
-function methodArgumentsToString(methodArgs) {
+function methodArgumentsToString(methodArgs, ifs) {
     var _a;
+    var argTypes = function (type) { return common_1.isLambda(ifs, type) ?
+        [common_1.qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments()), typeToString(type)] :
+        common_1.typeAlias(typeToString(type)); };
     var result = [];
     for (var _i = 0, _b = (((_a = methodArgs.typeList()) === null || _a === void 0 ? void 0 : _a.type()) || []); _i < _b.length; _i++) {
         var type = _b[_i];
-        result.push("arg" + result.length + ": " + typeToString(type));
+        result.push("arg" + result.length + ": " + argTypes(type).join(" | "));
     }
     if (methodArgs.varargs()) {
-        result.push("...arg" + result.length + ": " + typeToString(methodArgs.varargs().type()) + "[]");
+        result.push("...vargs: (" + argTypes(methodArgs.varargs().type()).join(" | ") + ")[]");
     }
     return result.join(", ");
 }

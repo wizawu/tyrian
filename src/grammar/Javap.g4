@@ -47,7 +47,11 @@ typeList
     ;
 
 type
-    : (packageName '.')? Identifier typeArguments?
+    : (packageName '.')? Identifier typeArguments? subType?
+    ;
+
+subType
+    : '.' Identifier typeArguments?
     ;
 
 packageName
@@ -55,8 +59,8 @@ packageName
     ;
 
 typeArguments
-    : '[' ']'
-    | '<' typeArgument ((','|', ') typeArgument)* '>'
+    : arrayBrackets+
+    | '<' typeArgument ((','|', ') typeArgument)* '>' arrayBrackets*
     ;
 
 typeArgument
@@ -108,7 +112,7 @@ interfaceMember
     ;
 
 constructorDeclaration
-    : modifier* type '(' methodArguments ')' throwsException? ';'
+    : modifier* typeArguments? type '(' methodArguments ')' throwsException? ';'
     ;
 
 fieldDeclaration
@@ -131,6 +135,10 @@ methodArguments
     : typeList?
     | typeList (','|', ') varargs
     | varargs
+    ;
+
+arrayBrackets
+    : '[]'
     ;
 
 WS

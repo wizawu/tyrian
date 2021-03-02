@@ -48,6 +48,13 @@ declare interface TypeContext {
   packageName(): PackageNameContext
   Identifier(): Identifier
   typeArguments(): TypeArgumentsContext
+  subType(): SubTypeContext
+  getText(): string
+}
+
+declare interface SubTypeContext {
+  Identifier(): Identifier
+  typeArguments(): TypeArgumentsContext
   getText(): string
 }
 
@@ -58,6 +65,8 @@ declare interface PackageNameContext {
 }
 
 declare interface TypeArgumentsContext {
+  arrayBrackets(i: number): ArrayBracketsContext
+  arrayBrackets(): ArrayBracketsContext[]
   typeArgument(i: number): TypeArgumentContext
   typeArgument(): TypeArgumentContext[]
   getText(): string
@@ -98,6 +107,7 @@ declare interface InterfaceMemberContext {
 declare interface ConstructorDeclarationContext {
   modifier(i: number): ModifierContext
   modifier(): ModifierContext[]
+  typeArguments(): TypeArgumentsContext
   type(): TypeContext
   methodArguments(): MethodArgumentsContext
   throwsException(): ThrowsExceptionContext
@@ -134,6 +144,10 @@ declare interface MethodArgumentsContext {
 }
 
 declare interface Identifier {
+  getText(): string
+}
+
+declare interface ArrayBracketsContext {
   getText(): string
 }
 

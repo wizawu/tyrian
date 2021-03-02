@@ -48,7 +48,6 @@ declare namespace JavapLexer {
     const T__31: number;
     const T__32: number;
     const T__33: number;
-    const T__34: number;
     const Identifier: number;
     const WS: number;
 }

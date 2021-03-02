@@ -4,6 +4,8 @@ import path from "path"
 
 import { qualifiedName, safeNamespace, memberModifier } from "./common"
 
+const LambdaSuffix = "$$lambda"
+
 export function generate(context: CompilationUnitContext, counter: InterfaceStat, typeRoot: string): boolean {
   fs.mkdirSync(typeRoot, { recursive: true })
   for (const c of context.classOrInterface()) {
@@ -50,15 +52,15 @@ export function generate(context: CompilationUnitContext, counter: InterfaceStat
         if (interfaceBody.interfaceMember()?.some(it => it.methodDeclaration())) {
           const method = interfaceBody.interfaceMember().filter(it => it.methodDeclaration())[0].methodDeclaration()
           frontBuffer.push(
-            "function " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
-            "(" + methodArgumentsToString(method.methodArguments()) + ")" +
-            ": " + typeToString(method.type()) + "\n"
+            "interface " + type.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type.typeArguments()) +
+            " {\n(" + methodArgumentsToString(method.methodArguments()) + ")" +
+            ": " + typeToString(method.type()) + "\n}\n"
           )
         } else {
           extend.type().filter(it => isLambda(counter, it)).forEach(it => {
             frontBuffer.push(
-              "type " + type.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type.typeArguments()) +
-              " = " + qualifiedName(it, true) + "$$Lambda" + typeArgumentsToString(it.typeArguments()) + "\n"
+              "type " + type.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type.typeArguments()) +
+              " = " + qualifiedName(it, true) + LambdaSuffix + typeArgumentsToString(it.typeArguments()) + "\n"
             )
           })
         }
@@ -97,7 +99,7 @@ function declareConstructor(constructor: ConstructorDeclarationContext): string 
 
 function declareField(field: FieldDeclarationContext): string {
   let result = ""
-  field.modifier()?.forEach(it => result += memberModifier(it.getText()) + " ")
+  field.modifier()?.forEach(it => result += memberModifier(it.getText(), true) + " ")
   result += field.Identifier().getText()
   result += ": " + typeToString(field.type())
   return result
@@ -142,7 +144,7 @@ function typeArgumentsToString(typeArgs: TypeArgumentsContext): string {
     return ""
   } else if (typeArgs.typeArgument().length) {
     const args = typeArgs.typeArgument().map(it => typeArgumentToString(it))
-    return "<" + args.join(",") + ">"
+    return "<" + args.join(",") + ">" + (typeArgs.arrayBrackets()?.map(it => it.getText()).join("") || "")
   } else {
     return typeArgs.getText()
   }
@@ -165,7 +167,7 @@ function typeArgumentToString(typeArg: TypeArgumentContext): string {
 }
 
 function typeToString(type: TypeContext): string {
-  return qualifiedName(type, true) + typeArgumentsToString(type.typeArguments())
+  return type.subType() ? "unknown" : qualifiedName(type, true) + typeArgumentsToString(type.typeArguments())
 }
 
 function declareNamespaces(type: TypeContext): [string, string] {

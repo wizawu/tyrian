@@ -15,6 +15,7 @@ var chalk_1 = __importDefault(require("chalk"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var common_1 = require("./common");
+var LambdaSuffix = "$$lambda";
 function generate(context, counter, typeRoot) {
     var _a;
     fs_1.default.mkdirSync(typeRoot, { recursive: true });
@@ -65,14 +66,14 @@ function generate(context, counter, typeRoot) {
             if (isLambda(counter, type_1)) {
                 if ((_a = interfaceBody.interfaceMember()) === null || _a === void 0 ? void 0 : _a.some(function (it) { return it.methodDeclaration(); })) {
                     var method = interfaceBody.interfaceMember().filter(function (it) { return it.methodDeclaration(); })[0].methodDeclaration();
-                    frontBuffer.push("function " + type_1.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type_1.typeArguments()) +
-                        "(" + methodArgumentsToString(method.methodArguments()) + ")" +
-                        ": " + typeToString(method.type()) + "\n");
+                    frontBuffer.push("interface " + type_1.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type_1.typeArguments()) +
+                        " {\n(" + methodArgumentsToString(method.methodArguments()) + ")" +
+                        ": " + typeToString(method.type()) + "\n}\n");
                 }
                 else {
                     extend.type().filter(function (it) { return isLambda(counter, it); }).forEach(function (it) {
-                        frontBuffer.push("type " + type_1.Identifier().getText() + "$$Lambda" + typeArgumentsToString(type_1.typeArguments()) +
-                            " = " + common_1.qualifiedName(it, true) + "$$Lambda" + typeArgumentsToString(it.typeArguments()) + "\n");
+                        frontBuffer.push("type " + type_1.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type_1.typeArguments()) +
+                            " = " + common_1.qualifiedName(it, true) + LambdaSuffix + typeArgumentsToString(it.typeArguments()) + "\n");
                     });
                 }
             }
@@ -118,7 +119,7 @@ function declareConstructor(constructor) {
 function declareField(field) {
     var _a;
     var result = "";
-    (_a = field.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += common_1.memberModifier(it.getText()) + " "; });
+    (_a = field.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += common_1.memberModifier(it.getText(), true) + " "; });
     result += field.Identifier().getText();
     result += ": " + typeToString(field.type());
     return result;
@@ -159,12 +160,13 @@ function header(type, extend, implement) {
     return result;
 }
 function typeArgumentsToString(typeArgs) {
+    var _a;
     if (!typeArgs) {
         return "";
     }
     else if (typeArgs.typeArgument().length) {
         var args = typeArgs.typeArgument().map(function (it) { return typeArgumentToString(it); });
-        return "<" + args.join(",") + ">";
+        return "<" + args.join(",") + ">" + (((_a = typeArgs.arrayBrackets()) === null || _a === void 0 ? void 0 : _a.map(function (it) { return it.getText(); }).join("")) || "");
     }
     else {
         return typeArgs.getText();
@@ -191,7 +193,7 @@ function typeArgumentToString(typeArg) {
     }
 }
 function typeToString(type) {
-    return common_1.qualifiedName(type, true) + typeArgumentsToString(type.typeArguments());
+    return type.subType() ? "unknown" : common_1.qualifiedName(type, true) + typeArgumentsToString(type.typeArguments());
 }
 function declareNamespaces(type) {
     var result = ["", ""];

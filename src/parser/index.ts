@@ -19,7 +19,7 @@ export function parse(classPaths: string[], counter: InterfaceStat, classList: s
     }
   }
 
-  const input = buffer.join("\n") // && require("fs").readFileSync("test.class", "utf-8")
+  const input = buffer.join("\n")
   const lexer = new JavapLexer(new antlr.InputStream(input))
   const tokens = new antlr.CommonTokenStream(lexer as unknown as antlr.Lexer)
   const parser = new JavapParser(tokens)

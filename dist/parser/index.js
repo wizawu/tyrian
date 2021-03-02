@@ -41,7 +41,7 @@ function parse(classPaths, counter, classList, typeRoot) {
             buffer.push(output);
         }
     }
-    var input = buffer.join("\n"); // && require("fs").readFileSync("test.class", "utf-8")
+    var input = buffer.join("\n");
     var lexer = new JavapLexer_1.JavapLexer(new antlr4_1.default.InputStream(input));
     var tokens = new antlr4_1.default.CommonTokenStream(lexer);
     var parser = new JavapParser_1.JavapParser(tokens);

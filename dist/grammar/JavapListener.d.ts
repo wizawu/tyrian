@@ -20,6 +20,8 @@ declare class JavapListener {
     exitTypeList(ctx: any): void;
     enterType(ctx: any): void;
     exitType(ctx: any): void;
+    enterSubType(ctx: any): void;
+    exitSubType(ctx: any): void;
     enterPackageName(ctx: any): void;
     exitPackageName(ctx: any): void;
     enterTypeArguments(ctx: any): void;
@@ -48,5 +50,7 @@ declare class JavapListener {
     exitVarargs(ctx: any): void;
     enterMethodArguments(ctx: any): void;
     exitMethodArguments(ctx: any): void;
+    enterArrayBrackets(ctx: any): void;
+    exitArrayBrackets(ctx: any): void;
 }
 export {};

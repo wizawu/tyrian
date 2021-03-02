@@ -28,10 +28,11 @@ exports.TypeAlias = {
     "java.lang.Short": ["number", "java.lang.Short"],
     "java.lang.String": ["java.lang.String", "string"],
 };
-function memberModifier(modifier) {
+function memberModifier(modifier, isField) {
+    if (isField === void 0) { isField = false; }
     if (modifier === "abstract")
         return modifier;
-    if (modifier === "final")
+    if (modifier === "final" && isField)
         return "readonly";
     if (modifier === "private")
         return modifier;

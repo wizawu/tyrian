@@ -114,6 +114,13 @@
             "com.sun.javadoc.Doc"
         ]
     ],
+    "com.sun.javadoc.RootDoc": [
+        6,
+        [
+            "com.sun.javadoc.Doc",
+            "com.sun.javadoc.DocErrorReporter"
+        ]
+    ],
     "com.sun.javadoc.SeeTag": [
         6,
         [
@@ -2216,6 +2223,12 @@
             "java.lang.reflect.Type"
         ]
     ],
+    "java.lang.reflect.GenericDeclaration": [
+        1,
+        [
+            "java.lang.reflect.AnnotatedElement"
+        ]
+    ],
     "java.lang.reflect.InvocationHandler": [
         1
     ],
@@ -2408,6 +2421,14 @@
     "java.nio.file.OpenOption": [
         0
     ],
+    "java.nio.file.Path": [
+        32,
+        [
+            "java.lang.Comparable",
+            "java.lang.Iterable",
+            "java.nio.file.Watchable"
+        ]
+    ],
     "java.nio.file.PathMatcher": [
         1
     ],
@@ -2434,6 +2455,9 @@
         [
             "java.io.Closeable"
         ]
+    ],
+    "java.nio.file.Watchable": [
+        2
     ],
     "java.nio.file.attribute.AclFileAttributeView": [
         3,
@@ -4322,6 +4346,9 @@
             "javax.net.ssl.TrustManager"
         ]
     ],
+    "javax.print.AttributeException": [
+        2
+    ],
     "javax.print.CancelablePrintJob": [
         1,
         [
@@ -4351,6 +4378,9 @@
         [
             "javax.print.PrintService"
         ]
+    ],
+    "javax.print.PrintService": [
+        17
     ],
     "javax.print.URIException": [
         2

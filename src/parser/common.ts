@@ -20,9 +20,9 @@ export const TypeAlias = {
   "java.lang.String": ["java.lang.String", "string"],
 }
 
-export function memberModifier(modifier: string): string {
+export function memberModifier(modifier: string, isField = false): string {
   if (modifier === "abstract") return modifier
-  if (modifier === "final") return "readonly"
+  if (modifier === "final" && isField) return "readonly"
   if (modifier === "private") return modifier
   if (modifier === "protected") return modifier
   if (modifier === "public") return modifier

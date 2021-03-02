@@ -66,6 +66,12 @@ JavapVisitor.prototype.visitType = function(ctx) {
 };
 
 
+// Visit a parse tree produced by JavapParser#subType.
+JavapVisitor.prototype.visitSubType = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
 // Visit a parse tree produced by JavapParser#packageName.
 JavapVisitor.prototype.visitPackageName = function(ctx) {
   return this.visitChildren(ctx);
@@ -146,6 +152,12 @@ JavapVisitor.prototype.visitVarargs = function(ctx) {
 
 // Visit a parse tree produced by JavapParser#methodArguments.
 JavapVisitor.prototype.visitMethodArguments = function(ctx) {
+  return this.visitChildren(ctx);
+};
+
+
+// Visit a parse tree produced by JavapParser#arrayBrackets.
+JavapVisitor.prototype.visitArrayBrackets = function(ctx) {
   return this.visitChildren(ctx);
 };
 

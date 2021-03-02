@@ -63,6 +63,12 @@ JavapListener.prototype.enterType = function (ctx) {
 // Exit a parse tree produced by JavapParser#type.
 JavapListener.prototype.exitType = function (ctx) {
 };
+// Enter a parse tree produced by JavapParser#subType.
+JavapListener.prototype.enterSubType = function (ctx) {
+};
+// Exit a parse tree produced by JavapParser#subType.
+JavapListener.prototype.exitSubType = function (ctx) {
+};
 // Enter a parse tree produced by JavapParser#packageName.
 JavapListener.prototype.enterPackageName = function (ctx) {
 };
@@ -146,5 +152,11 @@ JavapListener.prototype.enterMethodArguments = function (ctx) {
 };
 // Exit a parse tree produced by JavapParser#methodArguments.
 JavapListener.prototype.exitMethodArguments = function (ctx) {
+};
+// Enter a parse tree produced by JavapParser#arrayBrackets.
+JavapListener.prototype.enterArrayBrackets = function (ctx) {
+};
+// Exit a parse tree produced by JavapParser#arrayBrackets.
+JavapListener.prototype.exitArrayBrackets = function (ctx) {
 };
 exports.JavapListener = JavapListener;

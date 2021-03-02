@@ -11,6 +11,7 @@ declare class JavapVisitor {
     visitInterfaceModifier(ctx: any): any;
     visitTypeList(ctx: any): any;
     visitType(ctx: any): any;
+    visitSubType(ctx: any): any;
     visitPackageName(ctx: any): any;
     visitTypeArguments(ctx: any): any;
     visitTypeArgument(ctx: any): any;
@@ -25,5 +26,6 @@ declare class JavapVisitor {
     visitThrowsException(ctx: any): any;
     visitVarargs(ctx: any): any;
     visitMethodArguments(ctx: any): any;
+    visitArrayBrackets(ctx: any): any;
 }
 export {};

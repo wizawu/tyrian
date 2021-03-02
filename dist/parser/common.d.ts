@@ -18,6 +18,6 @@ export declare const TypeAlias: {
     "java.lang.Short": string[];
     "java.lang.String": string[];
 };
-export declare function memberModifier(modifier: string): string;
+export declare function memberModifier(modifier: string, isField?: boolean): string;
 export declare function safeNamespace(namespace: string): string;
 export declare function qualifiedName(type: TypeContext, safe?: boolean): string;

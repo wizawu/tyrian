@@ -18,6 +18,7 @@ declare class JavapParser {
     interfaceModifier(): InterfaceModifierContext;
     typeList(): TypeListContext;
     type(): TypeContext;
+    subType(): SubTypeContext;
     packageName(): PackageNameContext;
     typeArguments(): TypeArgumentsContext;
     typeArgument(): TypeArgumentContext;
@@ -32,6 +33,7 @@ declare class JavapParser {
     throwsException(): ThrowsExceptionContext;
     varargs(): VarargsContext;
     methodArguments(): MethodArgumentsContext;
+    arrayBrackets(): ArrayBracketsContext;
 }
 declare namespace JavapParser {
     export const EOF: number;
@@ -69,7 +71,6 @@ declare namespace JavapParser {
     export const T__31: number;
     export const T__32: number;
     export const T__33: number;
-    export const T__34: number;
     export const Identifier: number;
     export const WS: number;
     export const RULE_compilationUnit: number;
@@ -81,6 +82,7 @@ declare namespace JavapParser {
     export const RULE_interfaceModifier: number;
     export const RULE_typeList: number;
     export const RULE_type: number;
+    export const RULE_subType: number;
     export const RULE_packageName: number;
     export const RULE_typeArguments: number;
     export const RULE_typeArgument: number;
@@ -95,6 +97,7 @@ declare namespace JavapParser {
     export const RULE_throwsException: number;
     export const RULE_varargs: number;
     export const RULE_methodArguments: number;
+    export const RULE_arrayBrackets: number;
     export { CompilationUnitContext };
     export { SourceDeclarationContext };
     export { ClassOrInterfaceContext };
@@ -104,6 +107,7 @@ declare namespace JavapParser {
     export { InterfaceModifierContext };
     export { TypeListContext };
     export { TypeContext };
+    export { SubTypeContext };
     export { PackageNameContext };
     export { TypeArgumentsContext };
     export { TypeArgumentContext };
@@ -118,6 +122,7 @@ declare namespace JavapParser {
     export { ThrowsExceptionContext };
     export { VarargsContext };
     export { MethodArgumentsContext };
+    export { ArrayBracketsContext };
 }
 declare function CompilationUnitContext(parser: any, parent: any, invokingState: any): this;
 declare class CompilationUnitContext {
@@ -222,6 +227,19 @@ declare class TypeContext {
     Identifier(): any;
     packageName(): any;
     typeArguments(): any;
+    subType(): any;
+    enterRule(listener: any): void;
+    exitRule(listener: any): void;
+    accept(visitor: any): any;
+}
+declare function SubTypeContext(parser: any, parent: any, invokingState: any): this;
+declare class SubTypeContext {
+    constructor(parser: any, parent: any, invokingState: any);
+    parser: any;
+    ruleIndex: number;
+    constructor: typeof SubTypeContext;
+    Identifier(): any;
+    typeArguments(): any;
     enterRule(listener: any): void;
     exitRule(listener: any): void;
     accept(visitor: any): any;
@@ -243,6 +261,7 @@ declare class TypeArgumentsContext {
     parser: any;
     ruleIndex: number;
     constructor: typeof TypeArgumentsContext;
+    arrayBrackets(i: any): any;
     typeArgument(i: any): any;
     enterRule(listener: any): void;
     exitRule(listener: any): void;
@@ -326,6 +345,7 @@ declare class ConstructorDeclarationContext {
     type(): any;
     methodArguments(): any;
     modifier(i: any): any;
+    typeArguments(): any;
     throwsException(): any;
     enterRule(listener: any): void;
     exitRule(listener: any): void;
@@ -390,6 +410,16 @@ declare class MethodArgumentsContext {
     constructor: typeof MethodArgumentsContext;
     typeList(): any;
     varargs(): any;
+    enterRule(listener: any): void;
+    exitRule(listener: any): void;
+    accept(visitor: any): any;
+}
+declare function ArrayBracketsContext(parser: any, parent: any, invokingState: any): this;
+declare class ArrayBracketsContext {
+    constructor(parser: any, parent: any, invokingState: any);
+    parser: any;
+    ruleIndex: number;
+    constructor: typeof ArrayBracketsContext;
     enterRule(listener: any): void;
     exitRule(listener: any): void;
     accept(visitor: any): any;

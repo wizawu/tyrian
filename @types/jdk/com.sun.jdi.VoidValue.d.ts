@@ -3,8 +3,8 @@ declare namespace com {
     namespace jdi {
 
       interface VoidValue extends com.sun.jdi.Value {
-        equals(arg0: java.lang.Object): boolean
-        hashCode(): int
+        equals(arg0: java.lang.Object | any): boolean
+        hashCode(): number
       }
 
     }

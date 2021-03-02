@@ -8,7 +8,7 @@ declare namespace java {
       public static readonly INDETERMINATE: java.awt.Taskbar$State
       public static readonly ERROR: java.awt.Taskbar$State
       public static values(): java.awt.Taskbar$State[]
-      public static valueOf(arg0: java.lang.String): java.awt.Taskbar$State
+      public static valueOf(arg0: java.lang.String | string): java.awt.Taskbar$State
     }
 
   }

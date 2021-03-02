@@ -9,8 +9,8 @@ declare namespace javax {
       public setSelectedPath(arg0: javax.swing.MenuElement[]): void
       public getSelectedPath(): javax.swing.MenuElement[]
       public clearSelectedPath(): void
-      public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+      public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public processMouseEvent(arg0: java.awt.event.MouseEvent): void

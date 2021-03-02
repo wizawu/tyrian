@@ -11,8 +11,8 @@ declare namespace javax {
       public static readonly MAIN_UIROLE: int
       public static readonly RESERVED_UIROLE: int
       public constructor()
-      public abstract getUI(arg0: int, arg1: java.lang.String): java.lang.Object
-      public abstract getUIClassNamesForRole(arg0: int): java.lang.String[]
+      public abstract getUI(arg0: number | java.lang.Integer, arg1: java.lang.String | string): java.lang.Object
+      public abstract getUIClassNamesForRole(arg0: number | java.lang.Integer): java.lang.String[]
     }
 
   }

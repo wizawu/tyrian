@@ -34,18 +34,18 @@ declare namespace java {
         public static readonly CS_CIEXYZ: int
         public static readonly CS_PYCC: int
         public static readonly CS_GRAY: int
-        protected constructor(arg0: int, arg1: int)
-        public static getInstance(arg0: int): java.awt.color.ColorSpace
+        protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        public static getInstance(arg0: number | java.lang.Integer): java.awt.color.ColorSpace
         public isCS_sRGB(): boolean
-        public abstract toRGB(arg0: float[]): float[]
-        public abstract fromRGB(arg0: float[]): float[]
-        public abstract toCIEXYZ(arg0: float[]): float[]
-        public abstract fromCIEXYZ(arg0: float[]): float[]
-        public getType(): int
-        public getNumComponents(): int
-        public getName(arg0: int): java.lang.String
-        public getMinValue(arg0: int): float
-        public getMaxValue(arg0: int): float
+        public abstract toRGB(arg0: float[]): number[]
+        public abstract fromRGB(arg0: float[]): number[]
+        public abstract toCIEXYZ(arg0: float[]): number[]
+        public abstract fromCIEXYZ(arg0: float[]): number[]
+        public getType(): number
+        public getNumComponents(): number
+        public getName(arg0: number | java.lang.Integer): java.lang.String
+        public getMinValue(arg0: number | java.lang.Integer): number
+        public getMaxValue(arg0: number | java.lang.Integer): number
         static isCS_CIEXYZ(arg0: java.awt.color.ColorSpace): boolean
       }
 

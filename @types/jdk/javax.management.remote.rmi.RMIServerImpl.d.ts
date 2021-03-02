@@ -13,9 +13,9 @@ declare namespace javax {
           public setMBeanServer(arg0: javax.management.MBeanServer): void
           public getMBeanServer(): javax.management.MBeanServer
           public getVersion(): java.lang.String
-          public newClient(arg0: java.lang.Object): javax.management.remote.rmi.RMIConnection
-          doNewClient(arg0: java.lang.Object): javax.management.remote.rmi.RMIConnection
-          protected abstract makeClient(arg0: java.lang.String, arg1: javax.security.auth.Subject): javax.management.remote.rmi.RMIConnection
+          public newClient(arg0: java.lang.Object | any): javax.management.remote.rmi.RMIConnection
+          doNewClient(arg0: java.lang.Object | any): javax.management.remote.rmi.RMIConnection
+          protected abstract makeClient(arg0: java.lang.String | string, arg1: javax.security.auth.Subject): javax.management.remote.rmi.RMIConnection
           protected abstract closeClient(arg0: javax.management.remote.rmi.RMIConnection): void
           protected abstract getProtocol(): java.lang.String
           protected clientClosed(arg0: javax.management.remote.rmi.RMIConnection): void

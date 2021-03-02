@@ -4,7 +4,7 @@ declare namespace java {
 
       class SimpleFormatter extends java.util.logging.Formatter {
         public constructor()
-        static getLoggingProperty(arg0: java.lang.String): java.lang.String
+        static getLoggingProperty(arg0: java.lang.String | string): java.lang.String
         public format(arg0: java.util.logging.LogRecord): java.lang.String
       }
 

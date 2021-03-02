@@ -29,11 +29,11 @@ declare namespace javax {
       isDragging: boolean
       danger: boolean
       public constructor()
-      public constructor(arg0: java.lang.String)
-      public constructor(arg0: java.lang.String, arg1: boolean)
-      public constructor(arg0: java.lang.String, arg1: boolean, arg2: boolean)
-      public constructor(arg0: java.lang.String, arg1: boolean, arg2: boolean, arg3: boolean)
-      public constructor(arg0: java.lang.String, arg1: boolean, arg2: boolean, arg3: boolean, arg4: boolean)
+      public constructor(arg0: java.lang.String | string)
+      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
+      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean)
+      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean)
+      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean)
       protected createRootPane(): javax.swing.JRootPane
       public getUI(): javax.swing.plaf.InternalFrameUI
       public setUI(arg0: javax.swing.plaf.InternalFrameUI): void
@@ -41,8 +41,8 @@ declare namespace javax {
       updateUIWhenHidden(): void
       public getUIClassID(): java.lang.String
       protected isRootPaneCheckingEnabled(): boolean
-      protected setRootPaneCheckingEnabled(arg0: boolean): void
-      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
+      protected setRootPaneCheckingEnabled(arg0: boolean | java.lang.Boolean): void
+      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       public remove(arg0: java.awt.Component): void
       public setLayout(arg0: java.awt.LayoutManager): void
       public getMenuBar(): javax.swing.JMenuBar
@@ -57,23 +57,23 @@ declare namespace javax {
       public setGlassPane(arg0: java.awt.Component): void
       public getRootPane(): javax.swing.JRootPane
       protected setRootPane(arg0: javax.swing.JRootPane): void
-      public setClosable(arg0: boolean): void
+      public setClosable(arg0: boolean | java.lang.Boolean): void
       public isClosable(): boolean
       public isClosed(): boolean
-      public setClosed(arg0: boolean): void
-      public setResizable(arg0: boolean): void
+      public setClosed(arg0: boolean | java.lang.Boolean): void
+      public setResizable(arg0: boolean | java.lang.Boolean): void
       public isResizable(): boolean
-      public setIconifiable(arg0: boolean): void
+      public setIconifiable(arg0: boolean | java.lang.Boolean): void
       public isIconifiable(): boolean
       public isIcon(): boolean
-      public setIcon(arg0: boolean): void
-      public setMaximizable(arg0: boolean): void
+      public setIcon(arg0: boolean | java.lang.Boolean): void
+      public setMaximizable(arg0: boolean | java.lang.Boolean): void
       public isMaximizable(): boolean
       public isMaximum(): boolean
-      public setMaximum(arg0: boolean): void
+      public setMaximum(arg0: boolean | java.lang.Boolean): void
       public getTitle(): java.lang.String
-      public setTitle(arg0: java.lang.String): void
-      public setSelected(arg0: boolean): void
+      public setTitle(arg0: java.lang.String | string): void
+      public setSelected(arg0: boolean | java.lang.Boolean): void
       public isSelected(): boolean
       public setFrameIcon(arg0: javax.swing.Icon): void
       public getFrameIcon(): javax.swing.Icon
@@ -81,9 +81,9 @@ declare namespace javax {
       public moveToBack(): void
       public getLastCursor(): java.awt.Cursor
       public setCursor(arg0: java.awt.Cursor): void
-      public setLayer(arg0: java.lang.Integer): void
-      public setLayer(arg0: int): void
-      public getLayer(): int
+      public setLayer(arg0: number | java.lang.Integer): void
+      public setLayer(arg0: number | java.lang.Integer): void
+      public getLayer(): number
       public getDesktopPane(): javax.swing.JDesktopPane
       public setDesktopIcon(arg0: javax.swing.JInternalFrame$JDesktopIcon): void
       public getDesktopIcon(): javax.swing.JInternalFrame$JDesktopIcon
@@ -92,21 +92,21 @@ declare namespace javax {
       public getFocusOwner(): java.awt.Component
       public getMostRecentFocusOwner(): java.awt.Component
       public restoreSubcomponentFocus(): void
-      public reshape(arg0: int, arg1: int, arg2: int, arg3: int): void
+      public reshape(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       public addInternalFrameListener(arg0: javax.swing.event.InternalFrameListener): void
       public removeInternalFrameListener(arg0: javax.swing.event.InternalFrameListener): void
       public getInternalFrameListeners(): javax.swing.event.InternalFrameListener[]
-      protected fireInternalFrameEvent(arg0: int): void
+      protected fireInternalFrameEvent(arg0: number | java.lang.Integer): void
       public doDefaultCloseAction(): void
-      public setDefaultCloseOperation(arg0: int): void
-      public getDefaultCloseOperation(): int
+      public setDefaultCloseOperation(arg0: number | java.lang.Integer): void
+      public getDefaultCloseOperation(): number
       public pack(): void
       public show(): void
       public hide(): void
       public dispose(): void
       public toFront(): void
       public toBack(): void
-      public setFocusCycleRoot(arg0: boolean): void
+      public setFocusCycleRoot(arg0: boolean | java.lang.Boolean): void
       public isFocusCycleRoot(): boolean
       public getFocusCycleRootAncestor(): java.awt.Container
       public getWarningString(): java.lang.String

@@ -6,23 +6,23 @@ declare namespace java {
       state: boolean
       group: java.awt.CheckboxGroup
       itemListener: java.awt.event.ItemListener
-      setStateInternal(arg0: boolean): void
+      setStateInternal(arg0: boolean | java.lang.Boolean): void
       public constructor()
-      public constructor(arg0: java.lang.String)
-      public constructor(arg0: java.lang.String, arg1: boolean)
-      public constructor(arg0: java.lang.String, arg1: boolean, arg2: java.awt.CheckboxGroup)
-      public constructor(arg0: java.lang.String, arg1: java.awt.CheckboxGroup, arg2: boolean)
+      public constructor(arg0: java.lang.String | string)
+      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
+      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: java.awt.CheckboxGroup)
+      public constructor(arg0: java.lang.String | string, arg1: java.awt.CheckboxGroup, arg2: boolean | java.lang.Boolean)
       constructComponentName(): java.lang.String
       public addNotify(): void
       public getLabel(): java.lang.String
-      public setLabel(arg0: java.lang.String): void
+      public setLabel(arg0: java.lang.String | string): void
       public getState(): boolean
-      public setState(arg0: boolean): void
+      public setState(arg0: boolean | java.lang.Boolean): void
       public getSelectedObjects(): java.lang.Object[]
       public getCheckboxGroup(): java.awt.CheckboxGroup
       public setCheckboxGroup(arg0: java.awt.CheckboxGroup): void
-      public addItemListener(arg0: java.awt.event.ItemListener): void
-      public removeItemListener(arg0: java.awt.event.ItemListener): void
+      public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda): void
+      public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda): void
       public getItemListeners(): java.awt.event.ItemListener[]
       public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
       eventEnabled(arg0: java.awt.AWTEvent): boolean

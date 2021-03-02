@@ -3,13 +3,13 @@ declare namespace com {
     namespace jdi {
 
       interface ArrayReference extends com.sun.jdi.ObjectReference {
-        length(): int
-        getValue(arg0: int): com.sun.jdi.Value
+        length(): number
+        getValue(arg0: number | java.lang.Integer): com.sun.jdi.Value
         getValues(): java.util.List<com.sun.jdi.Value>
-        getValues(arg0: int, arg1: int): java.util.List<com.sun.jdi.Value>
-        setValue(arg0: int, arg1: com.sun.jdi.Value): void
+        getValues(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.List<com.sun.jdi.Value>
+        setValue(arg0: number | java.lang.Integer, arg1: com.sun.jdi.Value): void
         setValues(arg0: java.util.List<com.sun.jdi.Value>): void
-        setValues(arg0: int, arg1: java.util.List<com.sun.jdi.Value>, arg2: int, arg3: int): void
+        setValues(arg0: number | java.lang.Integer, arg1: java.util.List<com.sun.jdi.Value>, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       }
 
     }

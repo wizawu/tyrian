@@ -3,7 +3,7 @@ declare namespace javax {
     namespace plaf {
 
       class InsetsUIResource extends java.awt.Insets implements javax.swing.plaf.UIResource {
-        public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
       }
 
     }

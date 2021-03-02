@@ -8,10 +8,10 @@ declare namespace javax {
       public constructor()
       public static setSharedInstance(arg0: javax.swing.PopupFactory): void
       public static getSharedInstance(): javax.swing.PopupFactory
-      setPopupType(arg0: int): void
-      getPopupType(): int
-      public getPopup(arg0: java.awt.Component, arg1: java.awt.Component, arg2: int, arg3: int): javax.swing.Popup
-      protected getPopup(arg0: java.awt.Component, arg1: java.awt.Component, arg2: int, arg3: int, arg4: boolean): javax.swing.Popup
+      setPopupType(arg0: number | java.lang.Integer): void
+      getPopupType(): number
+      public getPopup(arg0: java.awt.Component, arg1: java.awt.Component, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): javax.swing.Popup
+      protected getPopup(arg0: java.awt.Component, arg1: java.awt.Component, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean): javax.swing.Popup
     }
 
   }

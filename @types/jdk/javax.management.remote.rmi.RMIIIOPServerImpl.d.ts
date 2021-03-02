@@ -8,10 +8,10 @@ declare namespace javax {
           protected export(): void
           protected getProtocol(): java.lang.String
           public toStub(): java.rmi.Remote
-          protected makeClient(arg0: java.lang.String, arg1: javax.security.auth.Subject): javax.management.remote.rmi.RMIConnection
+          protected makeClient(arg0: java.lang.String | string, arg1: javax.security.auth.Subject): javax.management.remote.rmi.RMIConnection
           protected closeClient(arg0: javax.management.remote.rmi.RMIConnection): void
           protected closeServer(): void
-          doNewClient(arg0: java.lang.Object): javax.management.remote.rmi.RMIConnection
+          doNewClient(arg0: java.lang.Object | any): javax.management.remote.rmi.RMIConnection
         }
 
       }

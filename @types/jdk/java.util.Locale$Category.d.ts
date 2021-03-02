@@ -10,7 +10,7 @@ declare namespace java {
       readonly variantKey: java.lang.String
       readonly extensionsKey: java.lang.String
       public static values(): java.util.Locale$Category[]
-      public static valueOf(arg0: java.lang.String): java.util.Locale$Category
+      public static valueOf(arg0: java.lang.String | string): java.util.Locale$Category
     }
 
   }

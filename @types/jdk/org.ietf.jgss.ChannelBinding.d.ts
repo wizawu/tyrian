@@ -7,9 +7,9 @@ declare namespace org {
         public constructor(arg0: byte[])
         public getInitiatorAddress(): java.net.InetAddress
         public getAcceptorAddress(): java.net.InetAddress
-        public getApplicationData(): byte[]
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public getApplicationData(): number[]
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
       }
 
     }

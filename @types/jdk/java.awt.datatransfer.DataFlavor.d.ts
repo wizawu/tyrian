@@ -15,12 +15,12 @@ declare namespace java {
         public static allHtmlFlavor: java.awt.datatransfer.DataFlavor
         atom: int
         mimeType: java.awt.datatransfer.MimeType
-        protected static tryToLoadClass(arg0: java.lang.String, arg1: java.lang.ClassLoader): java.lang.Class<unknown>
+        protected static tryToLoadClass(arg0: java.lang.String | string, arg1: java.lang.ClassLoader): java.lang.Class<unknown>
         public constructor()
-        public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String)
-        public constructor(arg0: java.lang.String, arg1: java.lang.String)
-        public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.ClassLoader)
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string)
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.ClassLoader)
+        public constructor(arg0: java.lang.String | string)
         public toString(): java.lang.String
         public static getTextPlainUnicodeFlavor(): java.awt.datatransfer.DataFlavor
         public static selectBestTextFlavor(arg0: java.awt.datatransfer.DataFlavor[]): java.awt.datatransfer.DataFlavor
@@ -30,14 +30,14 @@ declare namespace java {
         public getHumanPresentableName(): java.lang.String
         public getPrimaryType(): java.lang.String
         public getSubType(): java.lang.String
-        public getParameter(arg0: java.lang.String): java.lang.String
-        public setHumanPresentableName(arg0: java.lang.String): void
-        public equals(arg0: java.lang.Object): boolean
+        public getParameter(arg0: java.lang.String | string): java.lang.String
+        public setHumanPresentableName(arg0: java.lang.String | string): void
+        public equals(arg0: java.lang.Object | any): boolean
         public equals(arg0: java.awt.datatransfer.DataFlavor): boolean
-        public equals(arg0: java.lang.String): boolean
-        public hashCode(): int
+        public equals(arg0: java.lang.String | string): boolean
+        public hashCode(): number
         public match(arg0: java.awt.datatransfer.DataFlavor): boolean
-        public isMimeTypeEqual(arg0: java.lang.String): boolean
+        public isMimeTypeEqual(arg0: java.lang.String | string): boolean
         public isMimeTypeEqual(arg0: java.awt.datatransfer.DataFlavor): boolean
         public isMimeTypeSerializedObject(): boolean
         public getDefaultRepresentationClass(): java.lang.Class<unknown>
@@ -55,8 +55,8 @@ declare namespace java {
         public writeExternal(arg0: java.io.ObjectOutput): void
         public readExternal(arg0: java.io.ObjectInput): void
         public clone(): java.lang.Object
-        protected normalizeMimeTypeParameter(arg0: java.lang.String, arg1: java.lang.String): java.lang.String
-        protected normalizeMimeType(arg0: java.lang.String): java.lang.String
+        protected normalizeMimeTypeParameter(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
+        protected normalizeMimeType(arg0: java.lang.String | string): java.lang.String
       }
 
     }

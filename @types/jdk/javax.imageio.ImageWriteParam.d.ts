@@ -28,32 +28,32 @@ declare namespace javax {
       public getLocale(): java.util.Locale
       public canWriteTiles(): boolean
       public canOffsetTiles(): boolean
-      public setTilingMode(arg0: int): void
-      public getTilingMode(): int
+      public setTilingMode(arg0: number | java.lang.Integer): void
+      public getTilingMode(): number
       public getPreferredTileSizes(): java.awt.Dimension[]
-      public setTiling(arg0: int, arg1: int, arg2: int, arg3: int): void
+      public setTiling(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       public unsetTiling(): void
-      public getTileWidth(): int
-      public getTileHeight(): int
-      public getTileGridXOffset(): int
-      public getTileGridYOffset(): int
+      public getTileWidth(): number
+      public getTileHeight(): number
+      public getTileGridXOffset(): number
+      public getTileGridYOffset(): number
       public canWriteProgressive(): boolean
-      public setProgressiveMode(arg0: int): void
-      public getProgressiveMode(): int
+      public setProgressiveMode(arg0: number | java.lang.Integer): void
+      public getProgressiveMode(): number
       public canWriteCompressed(): boolean
-      public setCompressionMode(arg0: int): void
-      public getCompressionMode(): int
+      public setCompressionMode(arg0: number | java.lang.Integer): void
+      public getCompressionMode(): number
       public getCompressionTypes(): java.lang.String[]
-      public setCompressionType(arg0: java.lang.String): void
+      public setCompressionType(arg0: java.lang.String | string): void
       public getCompressionType(): java.lang.String
       public unsetCompression(): void
       public getLocalizedCompressionTypeName(): java.lang.String
       public isCompressionLossless(): boolean
-      public setCompressionQuality(arg0: float): void
-      public getCompressionQuality(): float
-      public getBitRate(arg0: float): float
+      public setCompressionQuality(arg0: number | java.lang.Float): void
+      public getCompressionQuality(): number
+      public getBitRate(arg0: number | java.lang.Float): number
       public getCompressionQualityDescriptions(): java.lang.String[]
-      public getCompressionQualityValues(): float[]
+      public getCompressionQualityValues(): number[]
     }
 
   }

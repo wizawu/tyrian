@@ -4,13 +4,13 @@ declare namespace com {
 
       interface PrimitiveValue extends com.sun.jdi.Value {
         booleanValue(): boolean
-        byteValue(): byte
-        charValue(): char
-        shortValue(): short
-        intValue(): int
-        longValue(): long
-        floatValue(): float
-        doubleValue(): double
+        byteValue(): number
+        charValue(): string
+        shortValue(): number
+        intValue(): number
+        longValue(): number
+        floatValue(): number
+        doubleValue(): number
       }
 
     }

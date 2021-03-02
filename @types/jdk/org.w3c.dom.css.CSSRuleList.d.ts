@@ -4,8 +4,8 @@ declare namespace org {
       namespace css {
 
         interface CSSRuleList {
-          getLength(): int
-          item(arg0: int): org.w3c.dom.css.CSSRule
+          getLength(): number
+          item(arg0: number | java.lang.Integer): org.w3c.dom.css.CSSRule
         }
 
       }

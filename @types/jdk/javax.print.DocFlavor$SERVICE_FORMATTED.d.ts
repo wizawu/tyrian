@@ -5,7 +5,7 @@ declare namespace javax {
       public static readonly RENDERABLE_IMAGE: javax.print.DocFlavor$SERVICE_FORMATTED
       public static readonly PRINTABLE: javax.print.DocFlavor$SERVICE_FORMATTED
       public static readonly PAGEABLE: javax.print.DocFlavor$SERVICE_FORMATTED
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
     }
 
   }

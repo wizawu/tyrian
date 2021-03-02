@@ -9,9 +9,9 @@ declare namespace org {
           getByteStream(): java.io.OutputStream
           setByteStream(arg0: java.io.OutputStream): void
           getSystemId(): java.lang.String
-          setSystemId(arg0: java.lang.String): void
+          setSystemId(arg0: java.lang.String | string): void
           getEncoding(): java.lang.String
-          setEncoding(arg0: java.lang.String): void
+          setEncoding(arg0: java.lang.String | string): void
         }
 
       }

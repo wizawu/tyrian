@@ -3,7 +3,7 @@ declare namespace java {
 
     class NetworkInterface {
       constructor()
-      constructor(arg0: java.lang.String, arg1: int, arg2: java.net.InetAddress[])
+      constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.net.InetAddress[])
       public getName(): java.lang.String
       public getInetAddresses(): java.util.Enumeration<java.net.InetAddress>
       public inetAddresses(): java.util.stream.Stream<java.net.InetAddress>
@@ -11,10 +11,10 @@ declare namespace java {
       public getSubInterfaces(): java.util.Enumeration<java.net.NetworkInterface>
       public subInterfaces(): java.util.stream.Stream<java.net.NetworkInterface>
       public getParent(): java.net.NetworkInterface
-      public getIndex(): int
+      public getIndex(): number
       public getDisplayName(): java.lang.String
-      public static getByName(arg0: java.lang.String): java.net.NetworkInterface
-      public static getByIndex(arg0: int): java.net.NetworkInterface
+      public static getByName(arg0: java.lang.String | string): java.net.NetworkInterface
+      public static getByIndex(arg0: number | java.lang.Integer): java.net.NetworkInterface
       public static getByInetAddress(arg0: java.net.InetAddress): java.net.NetworkInterface
       public static getNetworkInterfaces(): java.util.Enumeration<java.net.NetworkInterface>
       public static networkInterfaces(): java.util.stream.Stream<java.net.NetworkInterface>
@@ -22,11 +22,11 @@ declare namespace java {
       public isLoopback(): boolean
       public isPointToPoint(): boolean
       public supportsMulticast(): boolean
-      public getHardwareAddress(): byte[]
-      public getMTU(): int
+      public getHardwareAddress(): number[]
+      public getMTU(): number
       public isVirtual(): boolean
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
       public toString(): java.lang.String
       static getDefault(): java.net.NetworkInterface
     }

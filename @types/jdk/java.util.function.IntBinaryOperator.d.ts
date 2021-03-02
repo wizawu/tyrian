@@ -3,11 +3,11 @@ declare namespace java {
     namespace function$ {
 
       interface IntBinaryOperator$$lambda {
-        (arg0: int, arg1: int): int
+        (arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): int
       }
 
       interface IntBinaryOperator {
-        applyAsInt(arg0: int, arg1: int): int
+        applyAsInt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
       }
 
     }

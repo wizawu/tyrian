@@ -24,16 +24,16 @@ declare namespace javax {
       protected oneTouchExpandable: boolean
       protected lastDividerLocation: int
       public constructor()
-      public constructor(arg0: int)
-      public constructor(arg0: int, arg1: boolean)
-      public constructor(arg0: int, arg1: java.awt.Component, arg2: java.awt.Component)
-      public constructor(arg0: int, arg1: boolean, arg2: java.awt.Component, arg3: java.awt.Component)
+      public constructor(arg0: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean)
+      public constructor(arg0: number | java.lang.Integer, arg1: java.awt.Component, arg2: java.awt.Component)
+      public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean, arg2: java.awt.Component, arg3: java.awt.Component)
       public setUI(arg0: javax.swing.plaf.SplitPaneUI): void
       public getUI(): javax.swing.plaf.SplitPaneUI
       public updateUI(): void
       public getUIClassID(): java.lang.String
-      public setDividerSize(arg0: int): void
-      public getDividerSize(): int
+      public setDividerSize(arg0: number | java.lang.Integer): void
+      public getDividerSize(): number
       public setLeftComponent(arg0: java.awt.Component): void
       public getLeftComponent(): java.awt.Component
       public setTopComponent(arg0: java.awt.Component): void
@@ -42,29 +42,29 @@ declare namespace javax {
       public getRightComponent(): java.awt.Component
       public setBottomComponent(arg0: java.awt.Component): void
       public getBottomComponent(): java.awt.Component
-      public setOneTouchExpandable(arg0: boolean): void
+      public setOneTouchExpandable(arg0: boolean | java.lang.Boolean): void
       public isOneTouchExpandable(): boolean
-      public setLastDividerLocation(arg0: int): void
-      public getLastDividerLocation(): int
-      public setOrientation(arg0: int): void
-      public getOrientation(): int
-      public setContinuousLayout(arg0: boolean): void
+      public setLastDividerLocation(arg0: number | java.lang.Integer): void
+      public getLastDividerLocation(): number
+      public setOrientation(arg0: number | java.lang.Integer): void
+      public getOrientation(): number
+      public setContinuousLayout(arg0: boolean | java.lang.Boolean): void
       public isContinuousLayout(): boolean
-      public setResizeWeight(arg0: double): void
-      public getResizeWeight(): double
+      public setResizeWeight(arg0: number | java.lang.Double): void
+      public getResizeWeight(): number
       public resetToPreferredSizes(): void
-      public setDividerLocation(arg0: double): void
-      public setDividerLocation(arg0: int): void
-      public getDividerLocation(): int
-      public getMinimumDividerLocation(): int
-      public getMaximumDividerLocation(): int
+      public setDividerLocation(arg0: number | java.lang.Double): void
+      public setDividerLocation(arg0: number | java.lang.Integer): void
+      public getDividerLocation(): number
+      public getMinimumDividerLocation(): number
+      public getMaximumDividerLocation(): number
       public remove(arg0: java.awt.Component): void
-      public remove(arg0: int): void
+      public remove(arg0: number | java.lang.Integer): void
       public removeAll(): void
       public isValidateRoot(): boolean
-      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
+      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       protected paintChildren(arg0: java.awt.Graphics): void
-      setUIProperty(arg0: java.lang.String, arg1: java.lang.Object): void
+      setUIProperty(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI

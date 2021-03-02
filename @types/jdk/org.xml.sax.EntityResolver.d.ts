@@ -3,11 +3,11 @@ declare namespace org {
     namespace sax {
 
       interface EntityResolver$$lambda {
-        (arg0: java.lang.String, arg1: java.lang.String): org.xml.sax.InputSource
+        (arg0: java.lang.String | string, arg1: java.lang.String | string): org.xml.sax.InputSource
       }
 
       interface EntityResolver {
-        resolveEntity(arg0: java.lang.String, arg1: java.lang.String): org.xml.sax.InputSource
+        resolveEntity(arg0: java.lang.String | string, arg1: java.lang.String | string): org.xml.sax.InputSource
       }
 
     }

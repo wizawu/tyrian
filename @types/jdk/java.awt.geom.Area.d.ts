@@ -20,14 +20,14 @@ declare namespace java {
         public equals(arg0: java.awt.geom.Area): boolean
         public transform(arg0: java.awt.geom.AffineTransform): void
         public createTransformedArea(arg0: java.awt.geom.AffineTransform): java.awt.geom.Area
-        public contains(arg0: double, arg1: double): boolean
+        public contains(arg0: number | java.lang.Double, arg1: number | java.lang.Double): boolean
         public contains(arg0: java.awt.geom.Point2D): boolean
-        public contains(arg0: double, arg1: double, arg2: double, arg3: double): boolean
+        public contains(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): boolean
         public contains(arg0: java.awt.geom.Rectangle2D): boolean
-        public intersects(arg0: double, arg1: double, arg2: double, arg3: double): boolean
+        public intersects(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): boolean
         public intersects(arg0: java.awt.geom.Rectangle2D): boolean
         public getPathIterator(arg0: java.awt.geom.AffineTransform): java.awt.geom.PathIterator
-        public getPathIterator(arg0: java.awt.geom.AffineTransform, arg1: double): java.awt.geom.PathIterator
+        public getPathIterator(arg0: java.awt.geom.AffineTransform, arg1: number | java.lang.Double): java.awt.geom.PathIterator
       }
 
     }

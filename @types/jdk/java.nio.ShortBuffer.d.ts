@@ -5,29 +5,29 @@ declare namespace java {
       readonly hb: short[]
       readonly offset: int
       isReadOnly: boolean
-      constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: short[], arg5: int)
-      constructor(arg0: int, arg1: int, arg2: int, arg3: int)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: short[], arg5: number | java.lang.Integer)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
       base(): java.lang.Object
-      public static allocate(arg0: int): java.nio.ShortBuffer
-      public static wrap(arg0: short[], arg1: int, arg2: int): java.nio.ShortBuffer
+      public static allocate(arg0: number | java.lang.Integer): java.nio.ShortBuffer
+      public static wrap(arg0: short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ShortBuffer
       public static wrap(arg0: short[]): java.nio.ShortBuffer
       public abstract slice(): java.nio.ShortBuffer
       public abstract duplicate(): java.nio.ShortBuffer
       public abstract asReadOnlyBuffer(): java.nio.ShortBuffer
-      public abstract get(): short
-      public abstract put(arg0: short): java.nio.ShortBuffer
-      public abstract get(arg0: int): short
-      public abstract put(arg0: int, arg1: short): java.nio.ShortBuffer
-      public get(arg0: short[], arg1: int, arg2: int): java.nio.ShortBuffer
+      public abstract get(): number
+      public abstract put(arg0: number | java.lang.Short): java.nio.ShortBuffer
+      public abstract get(arg0: number | java.lang.Integer): number
+      public abstract put(arg0: number | java.lang.Integer, arg1: number | java.lang.Short): java.nio.ShortBuffer
+      public get(arg0: short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ShortBuffer
       public get(arg0: short[]): java.nio.ShortBuffer
       public put(arg0: java.nio.ShortBuffer): java.nio.ShortBuffer
-      public put(arg0: short[], arg1: int, arg2: int): java.nio.ShortBuffer
+      public put(arg0: short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ShortBuffer
       public put(arg0: short[]): java.nio.ShortBuffer
       public hasArray(): boolean
-      public array(): short[]
-      public arrayOffset(): int
-      public position(arg0: int): java.nio.ShortBuffer
-      public limit(arg0: int): java.nio.ShortBuffer
+      public array(): number[]
+      public arrayOffset(): number
+      public position(arg0: number | java.lang.Integer): java.nio.ShortBuffer
+      public limit(arg0: number | java.lang.Integer): java.nio.ShortBuffer
       public mark(): java.nio.ShortBuffer
       public reset(): java.nio.ShortBuffer
       public clear(): java.nio.ShortBuffer
@@ -36,10 +36,10 @@ declare namespace java {
       public abstract compact(): java.nio.ShortBuffer
       public abstract isDirect(): boolean
       public toString(): java.lang.String
-      public hashCode(): int
-      public equals(arg0: java.lang.Object): boolean
-      public compareTo(arg0: java.nio.ShortBuffer): int
-      public mismatch(arg0: java.nio.ShortBuffer): int
+      public hashCode(): number
+      public equals(arg0: java.lang.Object | any): boolean
+      public compareTo(arg0: java.nio.ShortBuffer): number
+      public mismatch(arg0: java.nio.ShortBuffer): number
       public abstract order(): java.nio.ByteOrder
       public duplicate(): java.nio.Buffer
       public slice(): java.nio.Buffer
@@ -49,9 +49,9 @@ declare namespace java {
       public clear(): java.nio.Buffer
       public reset(): java.nio.Buffer
       public mark(): java.nio.Buffer
-      public limit(arg0: int): java.nio.Buffer
-      public position(arg0: int): java.nio.Buffer
-      public compareTo(arg0: java.lang.Object): int
+      public limit(arg0: number | java.lang.Integer): java.nio.Buffer
+      public position(arg0: number | java.lang.Integer): java.nio.Buffer
+      public compareTo(arg0: java.lang.Object | any): number
     }
 
   }

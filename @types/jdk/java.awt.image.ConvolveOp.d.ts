@@ -8,9 +8,9 @@ declare namespace java {
         hints: java.awt.RenderingHints
         public static readonly EDGE_ZERO_FILL: int
         public static readonly EDGE_NO_OP: int
-        public constructor(arg0: java.awt.image.Kernel, arg1: int, arg2: java.awt.RenderingHints)
+        public constructor(arg0: java.awt.image.Kernel, arg1: number | java.lang.Integer, arg2: java.awt.RenderingHints)
         public constructor(arg0: java.awt.image.Kernel)
-        public getEdgeCondition(): int
+        public getEdgeCondition(): number
         public getKernel(): java.awt.image.Kernel
         public filter(arg0: java.awt.image.BufferedImage, arg1: java.awt.image.BufferedImage): java.awt.image.BufferedImage
         public filter(arg0: java.awt.image.Raster, arg1: java.awt.image.WritableRaster): java.awt.image.WritableRaster

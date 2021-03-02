@@ -6,16 +6,16 @@ declare namespace java {
       public static readonly SCROLLBARS_ALWAYS: int
       public static readonly SCROLLBARS_NEVER: int
       public constructor()
-      public constructor(arg0: int)
+      public constructor(arg0: number | java.lang.Integer)
       constructComponentName(): java.lang.String
-      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
-      public getScrollbarDisplayPolicy(): int
+      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
+      public getScrollbarDisplayPolicy(): number
       public getViewportSize(): java.awt.Dimension
-      public getHScrollbarHeight(): int
-      public getVScrollbarWidth(): int
+      public getHScrollbarHeight(): number
+      public getVScrollbarWidth(): number
       public getVAdjustable(): java.awt.Adjustable
       public getHAdjustable(): java.awt.Adjustable
-      public setScrollPosition(arg0: int, arg1: int): void
+      public setScrollPosition(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public setScrollPosition(arg0: java.awt.Point): void
       public getScrollPosition(): java.awt.Point
       public setLayout(arg0: java.awt.LayoutManager): void
@@ -27,8 +27,8 @@ declare namespace java {
       public paramString(): java.lang.String
       autoProcessMouseWheel(arg0: java.awt.event.MouseWheelEvent): void
       protected processMouseWheelEvent(arg0: java.awt.event.MouseWheelEvent): void
-      protected eventTypeEnabled(arg0: int): boolean
-      public setWheelScrollingEnabled(arg0: boolean): void
+      protected eventTypeEnabled(arg0: number | java.lang.Integer): boolean
+      public setWheelScrollingEnabled(arg0: boolean | java.lang.Boolean): void
       public isWheelScrollingEnabled(): boolean
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }

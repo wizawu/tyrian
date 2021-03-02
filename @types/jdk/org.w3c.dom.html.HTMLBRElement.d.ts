@@ -5,7 +5,7 @@ declare namespace org {
 
         interface HTMLBRElement extends org.w3c.dom.html.HTMLElement {
           getClear(): java.lang.String
-          setClear(arg0: java.lang.String): void
+          setClear(arg0: java.lang.String | string): void
         }
 
       }

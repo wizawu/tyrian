@@ -3,8 +3,8 @@ declare namespace javax {
     namespace text {
 
       class BadLocationException extends java.lang.Exception {
-        public constructor(arg0: java.lang.String, arg1: int)
-        public offsetRequested(): int
+        public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
+        public offsetRequested(): number
       }
 
     }

@@ -13,18 +13,18 @@ declare namespace javax {
             public next: javax.swing.text.html.parser.AttributeList
             static attributeTypes: java.util.Hashtable<java.lang.Object,java.lang.Object>
             constructor()
-            public constructor(arg0: java.lang.String)
-            public constructor(arg0: java.lang.String, arg1: int, arg2: int, arg3: java.lang.String, arg4: java.util.Vector<unknown>, arg5: javax.swing.text.html.parser.AttributeList)
+            public constructor(arg0: java.lang.String | string)
+            public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.lang.String | string, arg4: java.util.Vector<unknown>, arg5: javax.swing.text.html.parser.AttributeList)
             public getName(): java.lang.String
-            public getType(): int
-            public getModifier(): int
+            public getType(): number
+            public getModifier(): number
             public getValues(): java.util.Enumeration<unknown>
             public getValue(): java.lang.String
             public getNext(): javax.swing.text.html.parser.AttributeList
             public toString(): java.lang.String
-            static defineAttributeType(arg0: java.lang.String, arg1: int): void
-            public static name2type(arg0: java.lang.String): int
-            public static type2name(arg0: int): java.lang.String
+            static defineAttributeType(arg0: java.lang.String | string, arg1: number | java.lang.Integer): void
+            public static name2type(arg0: java.lang.String | string): number
+            public static type2name(arg0: number | java.lang.Integer): java.lang.String
           }
 
         }

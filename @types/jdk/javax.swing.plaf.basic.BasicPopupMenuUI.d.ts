@@ -24,8 +24,8 @@ declare namespace javax {
           static getLastPopup(): javax.swing.JPopupMenu
           static getPopups(): java.util.List<javax.swing.JPopupMenu>
           public isPopupTrigger(arg0: java.awt.event.MouseEvent): boolean
-          static findEnabledChild(arg0: javax.swing.MenuElement[], arg1: int, arg2: boolean): javax.swing.MenuElement
-          static findEnabledChild(arg0: javax.swing.MenuElement[], arg1: javax.swing.MenuElement, arg2: boolean): javax.swing.MenuElement
+          static findEnabledChild(arg0: javax.swing.MenuElement[], arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): javax.swing.MenuElement
+          static findEnabledChild(arg0: javax.swing.MenuElement[], arg1: javax.swing.MenuElement, arg2: boolean | java.lang.Boolean): javax.swing.MenuElement
         }
 
       }

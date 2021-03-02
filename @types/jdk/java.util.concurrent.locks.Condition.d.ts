@@ -6,8 +6,8 @@ declare namespace java {
         interface Condition {
           await(): void
           awaitUninterruptibly(): void
-          awaitNanos(arg0: long): long
-          await(arg0: long, arg1: java.util.concurrent.TimeUnit): boolean
+          awaitNanos(arg0: number | java.lang.Long): number
+          await(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): boolean
           awaitUntil(arg0: java.util.Date): boolean
           signal(): void
           signalAll(): void

@@ -6,9 +6,9 @@ declare namespace java {
         static readonly serialVersionUID: long
         constructor(arg0: sun.java2d.cmm.Profile)
         constructor(arg0: sun.java2d.cmm.ProfileDeferralInfo)
-        public getMediaWhitePoint(): float[]
-        public getGamma(): float
-        public getTRC(): short[]
+        public getMediaWhitePoint(): number[]
+        public getGamma(): number
+        public getTRC(): number[]
       }
 
     }

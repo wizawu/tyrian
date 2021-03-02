@@ -3,14 +3,14 @@ declare namespace java {
     namespace spec {
 
       class EllipticCurve {
-        public constructor(arg0: java.security.spec.ECField, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
-        public constructor(arg0: java.security.spec.ECField, arg1: java.math.BigInteger, arg2: java.math.BigInteger, arg3: byte[])
+        public constructor(arg0: java.security.spec.ECField | java.security.spec.ECField$$lambda, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
+        public constructor(arg0: java.security.spec.ECField | java.security.spec.ECField$$lambda, arg1: java.math.BigInteger, arg2: java.math.BigInteger, arg3: byte[])
         public getField(): java.security.spec.ECField
         public getA(): java.math.BigInteger
         public getB(): java.math.BigInteger
-        public getSeed(): byte[]
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public getSeed(): number[]
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
       }
 
     }

@@ -4,7 +4,7 @@ declare namespace java {
 
       class JarException extends java.util.zip.ZipException {
         public constructor()
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

@@ -7,31 +7,31 @@ declare namespace java {
       public static readonly TYPE: java.lang.Class<java.lang.Byte>
       public static readonly SIZE: int
       public static readonly BYTES: int
-      public static toString(arg0: byte): java.lang.String
-      public static valueOf(arg0: byte): java.lang.Byte
-      public static parseByte(arg0: java.lang.String, arg1: int): byte
-      public static parseByte(arg0: java.lang.String): byte
-      public static valueOf(arg0: java.lang.String, arg1: int): java.lang.Byte
-      public static valueOf(arg0: java.lang.String): java.lang.Byte
-      public static decode(arg0: java.lang.String): java.lang.Byte
-      public constructor(arg0: byte)
-      public constructor(arg0: java.lang.String)
-      public byteValue(): byte
-      public shortValue(): short
-      public intValue(): int
-      public longValue(): long
-      public floatValue(): float
-      public doubleValue(): double
+      public static toString(arg0: number | java.lang.Byte): java.lang.String
+      public static valueOf(arg0: number | java.lang.Byte): number
+      public static parseByte(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
+      public static parseByte(arg0: java.lang.String | string): number
+      public static valueOf(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
+      public static valueOf(arg0: java.lang.String | string): number
+      public static decode(arg0: java.lang.String | string): number
+      public constructor(arg0: number | java.lang.Byte)
+      public constructor(arg0: java.lang.String | string)
+      public byteValue(): number
+      public shortValue(): number
+      public intValue(): number
+      public longValue(): number
+      public floatValue(): number
+      public doubleValue(): number
       public toString(): java.lang.String
-      public hashCode(): int
-      public static hashCode(arg0: byte): int
-      public equals(arg0: java.lang.Object): boolean
-      public compareTo(arg0: java.lang.Byte): int
-      public static compare(arg0: byte, arg1: byte): int
-      public static compareUnsigned(arg0: byte, arg1: byte): int
-      public static toUnsignedInt(arg0: byte): int
-      public static toUnsignedLong(arg0: byte): long
-      public compareTo(arg0: java.lang.Object): int
+      public hashCode(): number
+      public static hashCode(arg0: number | java.lang.Byte): number
+      public equals(arg0: java.lang.Object | any): boolean
+      public compareTo(arg0: number | java.lang.Byte): number
+      public static compare(arg0: number | java.lang.Byte, arg1: number | java.lang.Byte): number
+      public static compareUnsigned(arg0: number | java.lang.Byte, arg1: number | java.lang.Byte): number
+      public static toUnsignedInt(arg0: number | java.lang.Byte): number
+      public static toUnsignedLong(arg0: number | java.lang.Byte): number
+      public compareTo(arg0: java.lang.Object | any): number
     }
 
   }

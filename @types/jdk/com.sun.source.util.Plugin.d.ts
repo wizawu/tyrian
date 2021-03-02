@@ -5,7 +5,7 @@ declare namespace com {
 
         interface Plugin {
           getName(): java.lang.String
-          init(arg0: com.sun.source.util.JavacTask, ...arg1: java.lang.String[]): void
+          init(arg0: com.sun.source.util.JavacTask, ...vargs: (java.lang.String | string)[]): void
         }
 
       }

@@ -4,7 +4,7 @@ declare namespace javax {
 
       class DatatypeConstants$Field {
         public toString(): java.lang.String
-        public getId(): int
+        public getId(): number
       }
 
     }

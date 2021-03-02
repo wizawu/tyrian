@@ -6,9 +6,9 @@ declare namespace java {
         protected crc: java.util.zip.CRC32
         protected eos: boolean
         public static readonly GZIP_MAGIC: int
-        public constructor(arg0: java.io.InputStream, arg1: int)
+        public constructor(arg0: java.io.InputStream, arg1: number | java.lang.Integer)
         public constructor(arg0: java.io.InputStream)
-        public read(arg0: byte[], arg1: int, arg2: int): int
+        public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
         public close(): void
       }
 

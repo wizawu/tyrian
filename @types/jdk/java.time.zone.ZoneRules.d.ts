@@ -21,8 +21,8 @@ declare namespace java {
         public previousTransition(arg0: java.time.Instant): java.time.zone.ZoneOffsetTransition
         public getTransitions(): java.util.List<java.time.zone.ZoneOffsetTransition>
         public getTransitionRules(): java.util.List<java.time.zone.ZoneOffsetTransitionRule>
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
         public toString(): java.lang.String
       }
 

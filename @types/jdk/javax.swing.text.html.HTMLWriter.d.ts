@@ -5,7 +5,7 @@ declare namespace javax {
 
         class HTMLWriter extends javax.swing.text.AbstractWriter {
           public constructor(arg0: java.io.Writer, arg1: javax.swing.text.html.HTMLDocument)
-          public constructor(arg0: java.io.Writer, arg1: javax.swing.text.html.HTMLDocument, arg2: int, arg3: int)
+          public constructor(arg0: java.io.Writer, arg1: javax.swing.text.html.HTMLDocument, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
           public write(): void
           protected writeAttributes(arg0: javax.swing.text.AttributeSet): void
           protected emptyTag(arg0: javax.swing.text.Element): void
@@ -17,7 +17,7 @@ declare namespace javax {
           protected writeOption(arg0: javax.swing.text.html.Option): void
           protected endTag(arg0: javax.swing.text.Element): void
           protected comment(arg0: javax.swing.text.Element): void
-          writeComment(arg0: java.lang.String): void
+          writeComment(arg0: java.lang.String | string): void
           writeAdditionalComments(): void
           protected synthesizedElement(arg0: javax.swing.text.Element): boolean
           protected matchNameAttribute(arg0: javax.swing.text.AttributeSet, arg1: javax.swing.text.html.HTML$Tag): boolean
@@ -25,12 +25,12 @@ declare namespace javax {
           protected closeOutUnwantedEmbeddedTags(arg0: javax.swing.text.AttributeSet): void
           writeMaps(arg0: java.util.Enumeration<unknown>): void
           writeStyles(arg0: javax.swing.text.html.StyleSheet): void
-          writeStyle(arg0: java.lang.String, arg1: javax.swing.text.Style, arg2: boolean): boolean
+          writeStyle(arg0: java.lang.String | string, arg1: javax.swing.text.Style, arg2: boolean | java.lang.Boolean): boolean
           writeStyleStartTag(): void
           writeStyleEndTag(): void
           convertToHTML(arg0: javax.swing.text.AttributeSet, arg1: javax.swing.text.MutableAttributeSet): javax.swing.text.AttributeSet
           protected writeLineSeparator(): void
-          protected output(arg0: char[], arg1: int, arg2: int): void
+          protected output(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         }
 
       }

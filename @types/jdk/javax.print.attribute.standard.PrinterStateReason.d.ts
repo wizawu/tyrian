@@ -37,7 +37,7 @@ declare namespace javax {
           public static readonly DEVELOPER_LOW: javax.print.attribute.standard.PrinterStateReason
           public static readonly DEVELOPER_EMPTY: javax.print.attribute.standard.PrinterStateReason
           public static readonly INTERPRETER_RESOURCE_UNAVAILABLE: javax.print.attribute.standard.PrinterStateReason
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>

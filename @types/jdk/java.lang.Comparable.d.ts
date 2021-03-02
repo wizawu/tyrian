@@ -6,7 +6,7 @@ declare namespace java {
     }
 
     interface Comparable<T> {
-      compareTo(arg0: T): int
+      compareTo(arg0: T): number
     }
 
   }

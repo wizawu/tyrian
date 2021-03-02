@@ -5,14 +5,14 @@ declare namespace java {
       class Paper implements java.lang.Cloneable {
         public constructor()
         public clone(): java.lang.Object
-        public getHeight(): double
-        public setSize(arg0: double, arg1: double): void
-        public getWidth(): double
-        public setImageableArea(arg0: double, arg1: double, arg2: double, arg3: double): void
-        public getImageableX(): double
-        public getImageableY(): double
-        public getImageableWidth(): double
-        public getImageableHeight(): double
+        public getHeight(): number
+        public setSize(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
+        public getWidth(): number
+        public setImageableArea(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): void
+        public getImageableX(): number
+        public getImageableY(): number
+        public getImageableWidth(): number
+        public getImageableHeight(): number
       }
 
     }

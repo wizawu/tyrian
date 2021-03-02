@@ -5,8 +5,8 @@ declare namespace javax {
       interface SourceLocator {
         getPublicId(): java.lang.String
         getSystemId(): java.lang.String
-        getLineNumber(): int
-        getColumnNumber(): int
+        getLineNumber(): number
+        getColumnNumber(): number
       }
 
     }

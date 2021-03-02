@@ -20,9 +20,9 @@ declare namespace jdk {
       public static create(): jdk.jshell.JShell
       public static builder(): jdk.jshell.JShell$Builder
       public sourceCodeAnalysis(): jdk.jshell.SourceCodeAnalysis
-      public eval(arg0: java.lang.String): java.util.List<jdk.jshell.SnippetEvent>
+      public eval(arg0: java.lang.String | string): java.util.List<jdk.jshell.SnippetEvent>
       public drop(arg0: jdk.jshell.Snippet): java.util.List<jdk.jshell.SnippetEvent>
-      public addToClasspath(arg0: java.lang.String): void
+      public addToClasspath(arg0: java.lang.String | string): void
       public stop(): void
       public close(): void
       public snippets(): java.util.stream.Stream<jdk.jshell.Snippet>
@@ -38,12 +38,12 @@ declare namespace jdk {
       public onShutdown(arg0: java.util.function$.Consumer<jdk.jshell.JShell>): jdk.jshell.JShell$Subscription
       public unsubscribe(arg0: jdk.jshell.JShell$Subscription): void
       executionControl(): jdk.jshell.spi.ExecutionControl
-      debug(arg0: int, arg1: java.lang.String, ...arg2: java.lang.Object[]): void
-      debug(arg0: java.lang.Throwable, arg1: java.lang.String): void
-      nextKeyIndex(): int
+      debug(arg0: number | java.lang.Integer, arg1: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): void
+      debug(arg0: java.lang.Throwable, arg1: java.lang.String | string): void
+      nextKeyIndex(): number
       closeDown(): void
       checkIfAlive(): void
-      messageFormat(arg0: java.lang.String, ...arg1: java.lang.Object[]): java.lang.String
+      messageFormat(arg0: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.lang.String
     }
 
   }

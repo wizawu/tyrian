@@ -13,9 +13,9 @@ declare namespace javax {
       protected lowerRight: java.awt.Component
       protected upperLeft: java.awt.Component
       protected upperRight: java.awt.Component
-      public constructor(arg0: java.awt.Component, arg1: int, arg2: int)
+      public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
       public constructor(arg0: java.awt.Component)
-      public constructor(arg0: int, arg1: int)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
       public constructor()
       public getUI(): javax.swing.plaf.ScrollPaneUI
       public setUI(arg0: javax.swing.plaf.ScrollPaneUI): void
@@ -23,10 +23,10 @@ declare namespace javax {
       public getUIClassID(): java.lang.String
       public setLayout(arg0: java.awt.LayoutManager): void
       public isValidateRoot(): boolean
-      public getVerticalScrollBarPolicy(): int
-      public setVerticalScrollBarPolicy(arg0: int): void
-      public getHorizontalScrollBarPolicy(): int
-      public setHorizontalScrollBarPolicy(arg0: int): void
+      public getVerticalScrollBarPolicy(): number
+      public setVerticalScrollBarPolicy(arg0: number | java.lang.Integer): void
+      public getHorizontalScrollBarPolicy(): number
+      public setHorizontalScrollBarPolicy(arg0: number | java.lang.Integer): void
       public getViewportBorder(): javax.swing.border.Border
       public setViewportBorder(arg0: javax.swing.border.Border): void
       public getViewportBorderBounds(): java.awt.Rectangle
@@ -46,11 +46,11 @@ declare namespace javax {
       public getColumnHeader(): javax.swing.JViewport
       public setColumnHeader(arg0: javax.swing.JViewport): void
       public setColumnHeaderView(arg0: java.awt.Component): void
-      public getCorner(arg0: java.lang.String): java.awt.Component
-      public setCorner(arg0: java.lang.String, arg1: java.awt.Component): void
+      public getCorner(arg0: java.lang.String | string): java.awt.Component
+      public setCorner(arg0: java.lang.String | string, arg1: java.awt.Component): void
       public setComponentOrientation(arg0: java.awt.ComponentOrientation): void
       public isWheelScrollingEnabled(): boolean
-      public setWheelScrollingEnabled(arg0: boolean): void
+      public setWheelScrollingEnabled(arg0: boolean | java.lang.Boolean): void
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI

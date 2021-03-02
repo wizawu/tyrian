@@ -7,8 +7,8 @@ declare namespace com {
         specifiedPackages(): com.sun.javadoc.PackageDoc[]
         specifiedClasses(): com.sun.javadoc.ClassDoc[]
         classes(): com.sun.javadoc.ClassDoc[]
-        packageNamed(arg0: java.lang.String): com.sun.javadoc.PackageDoc
-        classNamed(arg0: java.lang.String): com.sun.javadoc.ClassDoc
+        packageNamed(arg0: java.lang.String | string): com.sun.javadoc.PackageDoc
+        classNamed(arg0: java.lang.String | string): com.sun.javadoc.ClassDoc
       }
 
     }

@@ -126,37 +126,37 @@ declare namespace java {
         constructor(arg0: sun.java2d.cmm.ProfileDeferralInfo)
         protected finalize(): void
         public static getInstance(arg0: byte[]): java.awt.color.ICC_Profile
-        public static getInstance(arg0: int): java.awt.color.ICC_Profile
-        public static getInstance(arg0: java.lang.String): java.awt.color.ICC_Profile
+        public static getInstance(arg0: number | java.lang.Integer): java.awt.color.ICC_Profile
+        public static getInstance(arg0: java.lang.String | string): java.awt.color.ICC_Profile
         public static getInstance(arg0: java.io.InputStream): java.awt.color.ICC_Profile
-        static getProfileDataFromStream(arg0: java.io.InputStream): byte[]
+        static getProfileDataFromStream(arg0: java.io.InputStream): number[]
         static getDeferredInstance(arg0: sun.java2d.cmm.ProfileDeferralInfo): java.awt.color.ICC_Profile
         activateDeferredProfile(): void
-        public getMajorVersion(): int
-        public getMinorVersion(): int
-        public getProfileClass(): int
-        public getColorSpaceType(): int
-        static getColorSpaceType(arg0: sun.java2d.cmm.Profile): int
-        public getPCSType(): int
-        static getPCSType(arg0: sun.java2d.cmm.Profile): int
-        public write(arg0: java.lang.String): void
+        public getMajorVersion(): number
+        public getMinorVersion(): number
+        public getProfileClass(): number
+        public getColorSpaceType(): number
+        static getColorSpaceType(arg0: sun.java2d.cmm.Profile): number
+        public getPCSType(): number
+        static getPCSType(arg0: sun.java2d.cmm.Profile): number
+        public write(arg0: java.lang.String | string): void
         public write(arg0: java.io.OutputStream): void
-        public getData(): byte[]
-        public getData(arg0: int): byte[]
-        static getData(arg0: sun.java2d.cmm.Profile, arg1: int): byte[]
-        public setData(arg0: int, arg1: byte[]): void
-        setRenderingIntent(arg0: int): void
-        getRenderingIntent(): int
-        public getNumComponents(): int
-        getMediaWhitePoint(): float[]
-        getXYZTag(arg0: int): float[]
-        getGamma(arg0: int): float
-        getTRC(arg0: int): short[]
-        static iccCStoJCS(arg0: int): int
-        static intFromBigEndian(arg0: byte[], arg1: int): int
-        static intToBigEndian(arg0: int, arg1: byte[], arg2: int): void
-        static shortFromBigEndian(arg0: byte[], arg1: int): short
-        static shortToBigEndian(arg0: short, arg1: byte[], arg2: int): void
+        public getData(): number[]
+        public getData(arg0: number | java.lang.Integer): number[]
+        static getData(arg0: sun.java2d.cmm.Profile, arg1: number | java.lang.Integer): number[]
+        public setData(arg0: number | java.lang.Integer, arg1: byte[]): void
+        setRenderingIntent(arg0: number | java.lang.Integer): void
+        getRenderingIntent(): number
+        public getNumComponents(): number
+        getMediaWhitePoint(): number[]
+        getXYZTag(arg0: number | java.lang.Integer): number[]
+        getGamma(arg0: number | java.lang.Integer): number
+        getTRC(arg0: number | java.lang.Integer): number[]
+        static iccCStoJCS(arg0: number | java.lang.Integer): number
+        static intFromBigEndian(arg0: byte[], arg1: number | java.lang.Integer): number
+        static intToBigEndian(arg0: number | java.lang.Integer, arg1: byte[], arg2: number | java.lang.Integer): void
+        static shortFromBigEndian(arg0: byte[], arg1: number | java.lang.Integer): number
+        static shortToBigEndian(arg0: number | java.lang.Short, arg1: byte[], arg2: number | java.lang.Integer): void
         protected readResolve(): java.lang.Object
       }
 

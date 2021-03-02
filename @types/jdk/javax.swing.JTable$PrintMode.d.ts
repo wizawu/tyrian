@@ -5,7 +5,7 @@ declare namespace javax {
       public static readonly NORMAL: javax.swing.JTable$PrintMode
       public static readonly FIT_WIDTH: javax.swing.JTable$PrintMode
       public static values(): javax.swing.JTable$PrintMode[]
-      public static valueOf(arg0: java.lang.String): javax.swing.JTable$PrintMode
+      public static valueOf(arg0: java.lang.String | string): javax.swing.JTable$PrintMode
     }
 
   }

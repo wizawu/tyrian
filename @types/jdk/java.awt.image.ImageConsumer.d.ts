@@ -12,13 +12,13 @@ declare namespace java {
         public static readonly SINGLEFRAMEDONE: int
         public static readonly STATICIMAGEDONE: int
         public static readonly IMAGEABORTED: int
-        setDimensions(arg0: int, arg1: int): void
+        setDimensions(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
         setProperties(arg0: java.util.Hashtable<unknown,unknown>): void
         setColorModel(arg0: java.awt.image.ColorModel): void
-        setHints(arg0: int): void
-        setPixels(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.image.ColorModel, arg5: byte[], arg6: int, arg7: int): void
-        setPixels(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.image.ColorModel, arg5: int[], arg6: int, arg7: int): void
-        imageComplete(arg0: int): void
+        setHints(arg0: number | java.lang.Integer): void
+        setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: byte[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
+        setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: int[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
+        imageComplete(arg0: number | java.lang.Integer): void
       }
 
     }

@@ -5,25 +5,25 @@ declare namespace javax {
       interface TimerMBean {
         start(): void
         stop(): void
-        addNotification(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.util.Date, arg4: long, arg5: long, arg6: boolean): java.lang.Integer
-        addNotification(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.util.Date, arg4: long, arg5: long): java.lang.Integer
-        addNotification(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.util.Date, arg4: long): java.lang.Integer
-        addNotification(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.util.Date): java.lang.Integer
-        removeNotification(arg0: java.lang.Integer): void
-        removeNotifications(arg0: java.lang.String): void
+        addNotification(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any, arg3: java.util.Date, arg4: number | java.lang.Long, arg5: number | java.lang.Long, arg6: boolean | java.lang.Boolean): number
+        addNotification(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any, arg3: java.util.Date, arg4: number | java.lang.Long, arg5: number | java.lang.Long): number
+        addNotification(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any, arg3: java.util.Date, arg4: number | java.lang.Long): number
+        addNotification(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any, arg3: java.util.Date): number
+        removeNotification(arg0: number | java.lang.Integer): void
+        removeNotifications(arg0: java.lang.String | string): void
         removeAllNotifications(): void
-        getNbNotifications(): int
+        getNbNotifications(): number
         getAllNotificationIDs(): java.util.Vector<java.lang.Integer>
-        getNotificationIDs(arg0: java.lang.String): java.util.Vector<java.lang.Integer>
-        getNotificationType(arg0: java.lang.Integer): java.lang.String
-        getNotificationMessage(arg0: java.lang.Integer): java.lang.String
-        getNotificationUserData(arg0: java.lang.Integer): java.lang.Object
-        getDate(arg0: java.lang.Integer): java.util.Date
-        getPeriod(arg0: java.lang.Integer): java.lang.Long
-        getNbOccurences(arg0: java.lang.Integer): java.lang.Long
-        getFixedRate(arg0: java.lang.Integer): java.lang.Boolean
+        getNotificationIDs(arg0: java.lang.String | string): java.util.Vector<java.lang.Integer>
+        getNotificationType(arg0: number | java.lang.Integer): java.lang.String
+        getNotificationMessage(arg0: number | java.lang.Integer): java.lang.String
+        getNotificationUserData(arg0: number | java.lang.Integer): java.lang.Object
+        getDate(arg0: number | java.lang.Integer): java.util.Date
+        getPeriod(arg0: number | java.lang.Integer): number
+        getNbOccurences(arg0: number | java.lang.Integer): number
+        getFixedRate(arg0: number | java.lang.Integer): boolean
         getSendPastNotifications(): boolean
-        setSendPastNotifications(arg0: boolean): void
+        setSendPastNotifications(arg0: boolean | java.lang.Boolean): void
         isActive(): boolean
         isEmpty(): boolean
       }

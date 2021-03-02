@@ -4,10 +4,10 @@ declare namespace com {
       namespace tree {
 
         interface LineMap {
-          getStartPosition(arg0: long): long
-          getPosition(arg0: long, arg1: long): long
-          getLineNumber(arg0: long): long
-          getColumnNumber(arg0: long): long
+          getStartPosition(arg0: number | java.lang.Long): number
+          getPosition(arg0: number | java.lang.Long, arg1: number | java.lang.Long): number
+          getLineNumber(arg0: number | java.lang.Long): number
+          getColumnNumber(arg0: number | java.lang.Long): number
         }
 
       }

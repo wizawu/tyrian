@@ -6,9 +6,9 @@ declare namespace org {
         interface HTMLLabelElement extends org.w3c.dom.html.HTMLElement {
           getForm(): org.w3c.dom.html.HTMLFormElement
           getAccessKey(): java.lang.String
-          setAccessKey(arg0: java.lang.String): void
+          setAccessKey(arg0: java.lang.String | string): void
           getHtmlFor(): java.lang.String
-          setHtmlFor(arg0: java.lang.String): void
+          setHtmlFor(arg0: java.lang.String | string): void
         }
 
       }

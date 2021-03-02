@@ -11,7 +11,7 @@ declare namespace com {
           public static readonly ADDR_MADE_PRIMARY: com.sun.nio.sctp.PeerAddressChangeNotification$AddressChangeEvent
           public static readonly ADDR_CONFIRMED: com.sun.nio.sctp.PeerAddressChangeNotification$AddressChangeEvent
           public static values(): com.sun.nio.sctp.PeerAddressChangeNotification$AddressChangeEvent[]
-          public static valueOf(arg0: java.lang.String): com.sun.nio.sctp.PeerAddressChangeNotification$AddressChangeEvent
+          public static valueOf(arg0: java.lang.String | string): com.sun.nio.sctp.PeerAddressChangeNotification$AddressChangeEvent
         }
 
       }

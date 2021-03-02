@@ -5,9 +5,9 @@ declare namespace org {
 
         interface HTMLLIElement extends org.w3c.dom.html.HTMLElement {
           getType(): java.lang.String
-          setType(arg0: java.lang.String): void
-          getValue(): int
-          setValue(arg0: int): void
+          setType(arg0: java.lang.String | string): void
+          getValue(): number
+          setValue(arg0: number | java.lang.Integer): void
         }
 
       }

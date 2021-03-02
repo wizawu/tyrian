@@ -6,7 +6,7 @@ declare namespace java {
         attr: java.util.jar.Attributes
         certs: java.security.cert.Certificate[]
         signers: java.security.CodeSigner[]
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
         public constructor(arg0: java.util.zip.ZipEntry)
         public constructor(arg0: java.util.jar.JarEntry)
         public getAttributes(): java.util.jar.Attributes

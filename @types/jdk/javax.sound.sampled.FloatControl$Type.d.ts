@@ -12,7 +12,7 @@ declare namespace javax {
         public static readonly PAN: javax.sound.sampled.FloatControl$Type
         public static readonly BALANCE: javax.sound.sampled.FloatControl$Type
         public static readonly SAMPLE_RATE: javax.sound.sampled.FloatControl$Type
-        protected constructor(arg0: java.lang.String)
+        protected constructor(arg0: java.lang.String | string)
       }
 
     }

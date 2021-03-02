@@ -11,15 +11,15 @@ declare namespace javax {
         protected divisionType: float
         protected resolution: int
         protected tracks: java.util.Vector<javax.sound.midi.Track>
-        public constructor(arg0: float, arg1: int)
-        public constructor(arg0: float, arg1: int, arg2: int)
-        public getDivisionType(): float
-        public getResolution(): int
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public getDivisionType(): number
+        public getResolution(): number
         public createTrack(): javax.sound.midi.Track
         public deleteTrack(arg0: javax.sound.midi.Track): boolean
         public getTracks(): javax.sound.midi.Track[]
-        public getMicrosecondLength(): long
-        public getTickLength(): long
+        public getMicrosecondLength(): number
+        public getTickLength(): number
         public getPatchList(): javax.sound.midi.Patch[]
       }
 

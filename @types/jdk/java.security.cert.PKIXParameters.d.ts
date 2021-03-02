@@ -12,15 +12,15 @@ declare namespace java {
         public setCertStores(arg0: java.util.List<java.security.cert.CertStore>): void
         public addCertStore(arg0: java.security.cert.CertStore): void
         public getCertStores(): java.util.List<java.security.cert.CertStore>
-        public setRevocationEnabled(arg0: boolean): void
+        public setRevocationEnabled(arg0: boolean | java.lang.Boolean): void
         public isRevocationEnabled(): boolean
-        public setExplicitPolicyRequired(arg0: boolean): void
+        public setExplicitPolicyRequired(arg0: boolean | java.lang.Boolean): void
         public isExplicitPolicyRequired(): boolean
-        public setPolicyMappingInhibited(arg0: boolean): void
+        public setPolicyMappingInhibited(arg0: boolean | java.lang.Boolean): void
         public isPolicyMappingInhibited(): boolean
-        public setAnyPolicyInhibited(arg0: boolean): void
+        public setAnyPolicyInhibited(arg0: boolean | java.lang.Boolean): void
         public isAnyPolicyInhibited(): boolean
-        public setPolicyQualifiersRejected(arg0: boolean): void
+        public setPolicyQualifiersRejected(arg0: boolean | java.lang.Boolean): void
         public getPolicyQualifiersRejected(): boolean
         public getDate(): java.util.Date
         public setDate(arg0: java.util.Date): void
@@ -28,7 +28,7 @@ declare namespace java {
         public getCertPathCheckers(): java.util.List<java.security.cert.PKIXCertPathChecker>
         public addCertPathChecker(arg0: java.security.cert.PKIXCertPathChecker): void
         public getSigProvider(): java.lang.String
-        public setSigProvider(arg0: java.lang.String): void
+        public setSigProvider(arg0: java.lang.String | string): void
         public getTargetCertConstraints(): java.security.cert.CertSelector
         public setTargetCertConstraints(arg0: java.security.cert.CertSelector): void
         public clone(): java.lang.Object

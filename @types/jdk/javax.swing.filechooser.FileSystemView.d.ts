@@ -9,12 +9,12 @@ declare namespace javax {
         public static getFileSystemView(): javax.swing.filechooser.FileSystemView
         public constructor()
         public isRoot(arg0: java.io.File): boolean
-        public isTraversable(arg0: java.io.File): java.lang.Boolean
+        public isTraversable(arg0: java.io.File): boolean
         public getSystemDisplayName(arg0: java.io.File): java.lang.String
         public getSystemTypeDescription(arg0: java.io.File): java.lang.String
         public getSystemIcon(arg0: java.io.File): javax.swing.Icon
         public isParent(arg0: java.io.File, arg1: java.io.File): boolean
-        public getChild(arg0: java.io.File, arg1: java.lang.String): java.io.File
+        public getChild(arg0: java.io.File, arg1: java.lang.String | string): java.io.File
         public isFileSystem(arg0: java.io.File): boolean
         public abstract createNewFolder(arg0: java.io.File): java.io.File
         public isHiddenFile(arg0: java.io.File): boolean
@@ -25,9 +25,9 @@ declare namespace javax {
         public getRoots(): java.io.File[]
         public getHomeDirectory(): java.io.File
         public getDefaultDirectory(): java.io.File
-        public createFileObject(arg0: java.io.File, arg1: java.lang.String): java.io.File
-        public createFileObject(arg0: java.lang.String): java.io.File
-        public getFiles(arg0: java.io.File, arg1: boolean): java.io.File[]
+        public createFileObject(arg0: java.io.File, arg1: java.lang.String | string): java.io.File
+        public createFileObject(arg0: java.lang.String | string): java.io.File
+        public getFiles(arg0: java.io.File, arg1: boolean | java.lang.Boolean): java.io.File[]
         public getParentDirectory(arg0: java.io.File): java.io.File
         public getChooserComboBoxFiles(): java.io.File[]
         public isLink(arg0: java.io.File): boolean

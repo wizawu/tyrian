@@ -8,41 +8,41 @@ declare namespace java {
       public static getAvailableLocales(): java.util.Locale[]
       public static getInstance(): java.text.DecimalFormatSymbols
       public static getInstance(arg0: java.util.Locale): java.text.DecimalFormatSymbols
-      public getZeroDigit(): char
-      public setZeroDigit(arg0: char): void
-      public getGroupingSeparator(): char
-      public setGroupingSeparator(arg0: char): void
-      public getDecimalSeparator(): char
-      public setDecimalSeparator(arg0: char): void
-      public getPerMill(): char
-      public setPerMill(arg0: char): void
-      public getPercent(): char
-      public setPercent(arg0: char): void
-      public getDigit(): char
-      public setDigit(arg0: char): void
-      public getPatternSeparator(): char
-      public setPatternSeparator(arg0: char): void
+      public getZeroDigit(): string
+      public setZeroDigit(arg0: string | java.lang.Character): void
+      public getGroupingSeparator(): string
+      public setGroupingSeparator(arg0: string | java.lang.Character): void
+      public getDecimalSeparator(): string
+      public setDecimalSeparator(arg0: string | java.lang.Character): void
+      public getPerMill(): string
+      public setPerMill(arg0: string | java.lang.Character): void
+      public getPercent(): string
+      public setPercent(arg0: string | java.lang.Character): void
+      public getDigit(): string
+      public setDigit(arg0: string | java.lang.Character): void
+      public getPatternSeparator(): string
+      public setPatternSeparator(arg0: string | java.lang.Character): void
       public getInfinity(): java.lang.String
-      public setInfinity(arg0: java.lang.String): void
+      public setInfinity(arg0: java.lang.String | string): void
       public getNaN(): java.lang.String
-      public setNaN(arg0: java.lang.String): void
-      public getMinusSign(): char
-      public setMinusSign(arg0: char): void
+      public setNaN(arg0: java.lang.String | string): void
+      public getMinusSign(): string
+      public setMinusSign(arg0: string | java.lang.Character): void
       public getCurrencySymbol(): java.lang.String
-      public setCurrencySymbol(arg0: java.lang.String): void
+      public setCurrencySymbol(arg0: java.lang.String | string): void
       public getInternationalCurrencySymbol(): java.lang.String
-      public setInternationalCurrencySymbol(arg0: java.lang.String): void
+      public setInternationalCurrencySymbol(arg0: java.lang.String | string): void
       public getCurrency(): java.util.Currency
       public setCurrency(arg0: java.util.Currency): void
-      public getMonetaryDecimalSeparator(): char
-      public setMonetaryDecimalSeparator(arg0: char): void
-      getExponentialSymbol(): char
+      public getMonetaryDecimalSeparator(): string
+      public setMonetaryDecimalSeparator(arg0: string | java.lang.Character): void
+      getExponentialSymbol(): string
       public getExponentSeparator(): java.lang.String
-      setExponentialSymbol(arg0: char): void
-      public setExponentSeparator(arg0: java.lang.String): void
+      setExponentialSymbol(arg0: string | java.lang.Character): void
+      public setExponentSeparator(arg0: java.lang.String | string): void
       public clone(): java.lang.Object
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
     }
 
   }

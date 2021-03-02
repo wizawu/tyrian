@@ -7,7 +7,7 @@ declare namespace com {
           public static readonly OPEN: com.sun.source.tree.ModuleTree$ModuleKind
           public static readonly STRONG: com.sun.source.tree.ModuleTree$ModuleKind
           public static values(): com.sun.source.tree.ModuleTree$ModuleKind[]
-          public static valueOf(arg0: java.lang.String): com.sun.source.tree.ModuleTree$ModuleKind
+          public static valueOf(arg0: java.lang.String | string): com.sun.source.tree.ModuleTree$ModuleKind
         }
 
       }

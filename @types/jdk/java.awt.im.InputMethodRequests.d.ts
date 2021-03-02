@@ -4,10 +4,10 @@ declare namespace java {
 
       interface InputMethodRequests {
         getTextLocation(arg0: java.awt.font.TextHitInfo): java.awt.Rectangle
-        getLocationOffset(arg0: int, arg1: int): java.awt.font.TextHitInfo
-        getInsertPositionOffset(): int
-        getCommittedText(arg0: int, arg1: int, arg2: java.text.AttributedCharacterIterator$Attribute[]): java.text.AttributedCharacterIterator
-        getCommittedTextLength(): int
+        getLocationOffset(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.font.TextHitInfo
+        getInsertPositionOffset(): number
+        getCommittedText(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.text.AttributedCharacterIterator$Attribute[]): java.text.AttributedCharacterIterator
+        getCommittedTextLength(): number
         cancelLatestCommittedText(arg0: java.text.AttributedCharacterIterator$Attribute[]): java.text.AttributedCharacterIterator
         getSelectedText(arg0: java.text.AttributedCharacterIterator$Attribute[]): java.text.AttributedCharacterIterator
       }

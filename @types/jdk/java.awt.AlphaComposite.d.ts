@@ -28,15 +28,15 @@ declare namespace java {
       public static readonly Xor: java.awt.AlphaComposite
       extraAlpha: float
       rule: int
-      public static getInstance(arg0: int): java.awt.AlphaComposite
-      public static getInstance(arg0: int, arg1: float): java.awt.AlphaComposite
+      public static getInstance(arg0: number | java.lang.Integer): java.awt.AlphaComposite
+      public static getInstance(arg0: number | java.lang.Integer, arg1: number | java.lang.Float): java.awt.AlphaComposite
       public createContext(arg0: java.awt.image.ColorModel, arg1: java.awt.image.ColorModel, arg2: java.awt.RenderingHints): java.awt.CompositeContext
-      public getAlpha(): float
-      public getRule(): int
-      public derive(arg0: int): java.awt.AlphaComposite
-      public derive(arg0: float): java.awt.AlphaComposite
-      public hashCode(): int
-      public equals(arg0: java.lang.Object): boolean
+      public getAlpha(): number
+      public getRule(): number
+      public derive(arg0: number | java.lang.Integer): java.awt.AlphaComposite
+      public derive(arg0: number | java.lang.Float): java.awt.AlphaComposite
+      public hashCode(): number
+      public equals(arg0: java.lang.Object | any): boolean
     }
 
   }

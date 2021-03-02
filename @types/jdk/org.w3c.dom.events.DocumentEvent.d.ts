@@ -4,11 +4,11 @@ declare namespace org {
       namespace events {
 
         interface DocumentEvent$$lambda {
-          (arg0: java.lang.String): org.w3c.dom.events.Event
+          (arg0: java.lang.String | string): org.w3c.dom.events.Event
         }
 
         interface DocumentEvent {
-          createEvent(arg0: java.lang.String): org.w3c.dom.events.Event
+          createEvent(arg0: java.lang.String | string): org.w3c.dom.events.Event
         }
 
       }

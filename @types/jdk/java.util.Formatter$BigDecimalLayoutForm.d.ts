@@ -5,7 +5,7 @@ declare namespace java {
       public static readonly SCIENTIFIC: java.util.Formatter$BigDecimalLayoutForm
       public static readonly DECIMAL_FLOAT: java.util.Formatter$BigDecimalLayoutForm
       public static values(): java.util.Formatter$BigDecimalLayoutForm[]
-      public static valueOf(arg0: java.lang.String): java.util.Formatter$BigDecimalLayoutForm
+      public static valueOf(arg0: java.lang.String | string): java.util.Formatter$BigDecimalLayoutForm
     }
 
   }

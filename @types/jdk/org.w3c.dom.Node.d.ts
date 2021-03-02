@@ -23,8 +23,8 @@ declare namespace org {
         public static readonly DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: short
         getNodeName(): java.lang.String
         getNodeValue(): java.lang.String
-        setNodeValue(arg0: java.lang.String): void
-        getNodeType(): short
+        setNodeValue(arg0: java.lang.String | string): void
+        getNodeType(): number
         getParentNode(): org.w3c.dom.Node
         getChildNodes(): org.w3c.dom.NodeList
         getFirstChild(): org.w3c.dom.Node
@@ -38,26 +38,26 @@ declare namespace org {
         removeChild(arg0: org.w3c.dom.Node): org.w3c.dom.Node
         appendChild(arg0: org.w3c.dom.Node): org.w3c.dom.Node
         hasChildNodes(): boolean
-        cloneNode(arg0: boolean): org.w3c.dom.Node
+        cloneNode(arg0: boolean | java.lang.Boolean): org.w3c.dom.Node
         normalize(): void
-        isSupported(arg0: java.lang.String, arg1: java.lang.String): boolean
+        isSupported(arg0: java.lang.String | string, arg1: java.lang.String | string): boolean
         getNamespaceURI(): java.lang.String
         getPrefix(): java.lang.String
-        setPrefix(arg0: java.lang.String): void
+        setPrefix(arg0: java.lang.String | string): void
         getLocalName(): java.lang.String
         hasAttributes(): boolean
         getBaseURI(): java.lang.String
-        compareDocumentPosition(arg0: org.w3c.dom.Node): short
+        compareDocumentPosition(arg0: org.w3c.dom.Node): number
         getTextContent(): java.lang.String
-        setTextContent(arg0: java.lang.String): void
+        setTextContent(arg0: java.lang.String | string): void
         isSameNode(arg0: org.w3c.dom.Node): boolean
-        lookupPrefix(arg0: java.lang.String): java.lang.String
-        isDefaultNamespace(arg0: java.lang.String): boolean
-        lookupNamespaceURI(arg0: java.lang.String): java.lang.String
+        lookupPrefix(arg0: java.lang.String | string): java.lang.String
+        isDefaultNamespace(arg0: java.lang.String | string): boolean
+        lookupNamespaceURI(arg0: java.lang.String | string): java.lang.String
         isEqualNode(arg0: org.w3c.dom.Node): boolean
-        getFeature(arg0: java.lang.String, arg1: java.lang.String): java.lang.Object
-        setUserData(arg0: java.lang.String, arg1: java.lang.Object, arg2: org.w3c.dom.UserDataHandler): java.lang.Object
-        getUserData(arg0: java.lang.String): java.lang.Object
+        getFeature(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.Object
+        setUserData(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: org.w3c.dom.UserDataHandler | org.w3c.dom.UserDataHandler$$lambda): java.lang.Object
+        getUserData(arg0: java.lang.String | string): java.lang.Object
       }
 
     }

@@ -5,19 +5,19 @@ declare namespace jdk {
       class RecordingInfo {
         constructor(arg0: jdk.jfr.Recording)
         public getName(): java.lang.String
-        public getId(): long
+        public getId(): number
         public getDumpOnExit(): boolean
-        public getMaxAge(): long
-        public getMaxSize(): long
+        public getMaxAge(): number
+        public getMaxSize(): number
         public getState(): java.lang.String
-        public getStartTime(): long
-        public getStopTime(): long
+        public getStartTime(): number
+        public getStopTime(): number
         public getSettings(): java.util.Map<java.lang.String,java.lang.String>
         public getDestination(): java.lang.String
         public toString(): java.lang.String
-        public getSize(): long
+        public getSize(): number
         public isToDisk(): boolean
-        public getDuration(): long
+        public getDuration(): number
         public static from(arg0: javax.management.openmbean.CompositeData): jdk.management.jfr.RecordingInfo
       }
 

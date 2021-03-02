@@ -7,7 +7,7 @@ declare namespace java {
       }
 
       interface ECField {
-        getFieldSize(): int
+        getFieldSize(): number
       }
 
     }

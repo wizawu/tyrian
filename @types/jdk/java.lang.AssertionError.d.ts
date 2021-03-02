@@ -3,14 +3,14 @@ declare namespace java {
 
     class AssertionError extends java.lang.Error {
       public constructor()
-      public constructor(arg0: java.lang.Object)
-      public constructor(arg0: boolean)
-      public constructor(arg0: char)
-      public constructor(arg0: int)
-      public constructor(arg0: long)
-      public constructor(arg0: float)
-      public constructor(arg0: double)
-      public constructor(arg0: java.lang.String, arg1: java.lang.Throwable)
+      public constructor(arg0: java.lang.Object | any)
+      public constructor(arg0: boolean | java.lang.Boolean)
+      public constructor(arg0: string | java.lang.Character)
+      public constructor(arg0: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Long)
+      public constructor(arg0: number | java.lang.Float)
+      public constructor(arg0: number | java.lang.Double)
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
     }
 
   }

@@ -145,9 +145,9 @@ declare namespace java {
       public static readonly ZANABAZAR_SQUARE: java.lang.Character$UnicodeScript
       public static readonly UNKNOWN: java.lang.Character$UnicodeScript
       public static values(): java.lang.Character$UnicodeScript[]
-      public static valueOf(arg0: java.lang.String): java.lang.Character$UnicodeScript
-      public static of(arg0: int): java.lang.Character$UnicodeScript
-      public static forName(arg0: java.lang.String): java.lang.Character$UnicodeScript
+      public static valueOf(arg0: java.lang.String | string): java.lang.Character$UnicodeScript
+      public static of(arg0: number | java.lang.Integer): java.lang.Character$UnicodeScript
+      public static forName(arg0: java.lang.String | string): java.lang.Character$UnicodeScript
     }
 
   }

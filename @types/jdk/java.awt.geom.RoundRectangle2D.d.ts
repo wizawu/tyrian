@@ -4,17 +4,17 @@ declare namespace java {
 
       abstract class RoundRectangle2D extends java.awt.geom.RectangularShape {
         protected constructor()
-        public abstract getArcWidth(): double
-        public abstract getArcHeight(): double
-        public abstract setRoundRect(arg0: double, arg1: double, arg2: double, arg3: double, arg4: double, arg5: double): void
+        public abstract getArcWidth(): number
+        public abstract getArcHeight(): number
+        public abstract setRoundRect(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double): void
         public setRoundRect(arg0: java.awt.geom.RoundRectangle2D): void
-        public setFrame(arg0: double, arg1: double, arg2: double, arg3: double): void
-        public contains(arg0: double, arg1: double): boolean
-        public intersects(arg0: double, arg1: double, arg2: double, arg3: double): boolean
-        public contains(arg0: double, arg1: double, arg2: double, arg3: double): boolean
+        public setFrame(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): void
+        public contains(arg0: number | java.lang.Double, arg1: number | java.lang.Double): boolean
+        public intersects(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): boolean
+        public contains(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): boolean
         public getPathIterator(arg0: java.awt.geom.AffineTransform): java.awt.geom.PathIterator
-        public hashCode(): int
-        public equals(arg0: java.lang.Object): boolean
+        public hashCode(): number
+        public equals(arg0: java.lang.Object | any): boolean
       }
 
     }

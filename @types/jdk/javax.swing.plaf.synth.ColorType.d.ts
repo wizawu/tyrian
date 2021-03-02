@@ -10,8 +10,8 @@ declare namespace javax {
           public static readonly TEXT_BACKGROUND: javax.swing.plaf.synth.ColorType
           public static readonly FOCUS: javax.swing.plaf.synth.ColorType
           public static readonly MAX_COUNT: int
-          protected constructor(arg0: java.lang.String)
-          public getID(): int
+          protected constructor(arg0: java.lang.String | string)
+          public getID(): number
           public toString(): java.lang.String
         }
 

@@ -5,27 +5,27 @@ declare namespace java {
       public static readonly columnNoNulls: int
       public static readonly columnNullable: int
       public static readonly columnNullableUnknown: int
-      getColumnCount(): int
-      isAutoIncrement(arg0: int): boolean
-      isCaseSensitive(arg0: int): boolean
-      isSearchable(arg0: int): boolean
-      isCurrency(arg0: int): boolean
-      isNullable(arg0: int): int
-      isSigned(arg0: int): boolean
-      getColumnDisplaySize(arg0: int): int
-      getColumnLabel(arg0: int): java.lang.String
-      getColumnName(arg0: int): java.lang.String
-      getSchemaName(arg0: int): java.lang.String
-      getPrecision(arg0: int): int
-      getScale(arg0: int): int
-      getTableName(arg0: int): java.lang.String
-      getCatalogName(arg0: int): java.lang.String
-      getColumnType(arg0: int): int
-      getColumnTypeName(arg0: int): java.lang.String
-      isReadOnly(arg0: int): boolean
-      isWritable(arg0: int): boolean
-      isDefinitelyWritable(arg0: int): boolean
-      getColumnClassName(arg0: int): java.lang.String
+      getColumnCount(): number
+      isAutoIncrement(arg0: number | java.lang.Integer): boolean
+      isCaseSensitive(arg0: number | java.lang.Integer): boolean
+      isSearchable(arg0: number | java.lang.Integer): boolean
+      isCurrency(arg0: number | java.lang.Integer): boolean
+      isNullable(arg0: number | java.lang.Integer): number
+      isSigned(arg0: number | java.lang.Integer): boolean
+      getColumnDisplaySize(arg0: number | java.lang.Integer): number
+      getColumnLabel(arg0: number | java.lang.Integer): java.lang.String
+      getColumnName(arg0: number | java.lang.Integer): java.lang.String
+      getSchemaName(arg0: number | java.lang.Integer): java.lang.String
+      getPrecision(arg0: number | java.lang.Integer): number
+      getScale(arg0: number | java.lang.Integer): number
+      getTableName(arg0: number | java.lang.Integer): java.lang.String
+      getCatalogName(arg0: number | java.lang.Integer): java.lang.String
+      getColumnType(arg0: number | java.lang.Integer): number
+      getColumnTypeName(arg0: number | java.lang.Integer): java.lang.String
+      isReadOnly(arg0: number | java.lang.Integer): boolean
+      isWritable(arg0: number | java.lang.Integer): boolean
+      isDefinitelyWritable(arg0: number | java.lang.Integer): boolean
+      getColumnClassName(arg0: number | java.lang.Integer): java.lang.String
     }
 
   }

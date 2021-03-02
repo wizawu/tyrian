@@ -5,7 +5,7 @@ declare namespace org {
 
         interface HTMLDirectoryElement extends org.w3c.dom.html.HTMLElement {
           getCompact(): boolean
-          setCompact(arg0: boolean): void
+          setCompact(arg0: boolean | java.lang.Boolean): void
         }
 
       }

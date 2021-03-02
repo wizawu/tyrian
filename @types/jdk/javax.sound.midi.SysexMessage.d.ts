@@ -6,12 +6,12 @@ declare namespace javax {
         public static readonly SYSTEM_EXCLUSIVE: int
         public static readonly SPECIAL_SYSTEM_EXCLUSIVE: int
         public constructor()
-        public constructor(arg0: byte[], arg1: int)
-        public constructor(arg0: int, arg1: byte[], arg2: int)
+        public constructor(arg0: byte[], arg1: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: byte[], arg2: number | java.lang.Integer)
         protected constructor(arg0: byte[])
-        public setMessage(arg0: byte[], arg1: int): void
-        public setMessage(arg0: int, arg1: byte[], arg2: int): void
-        public getData(): byte[]
+        public setMessage(arg0: byte[], arg1: number | java.lang.Integer): void
+        public setMessage(arg0: number | java.lang.Integer, arg1: byte[], arg2: number | java.lang.Integer): void
+        public getData(): number[]
         public clone(): java.lang.Object
       }
 

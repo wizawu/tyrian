@@ -3,8 +3,8 @@ declare namespace java {
     namespace stream {
 
       interface DoubleStream$Builder extends java.util.function$.DoubleConsumer {
-        accept(arg0: double): void
-        add(arg0: double): java.util.stream.DoubleStream$Builder
+        accept(arg0: number | java.lang.Double): void
+        add(arg0: number | java.lang.Double): java.util.stream.DoubleStream$Builder
         build(): java.util.stream.DoubleStream
       }
 

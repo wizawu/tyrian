@@ -13,8 +13,8 @@ declare namespace javax {
         public static synchronizedView(arg0: javax.print.attribute.PrintRequestAttributeSet): javax.print.attribute.PrintRequestAttributeSet
         public static synchronizedView(arg0: javax.print.attribute.PrintJobAttributeSet): javax.print.attribute.PrintJobAttributeSet
         public static synchronizedView(arg0: javax.print.attribute.PrintServiceAttributeSet): javax.print.attribute.PrintServiceAttributeSet
-        public static verifyAttributeCategory(arg0: java.lang.Object, arg1: java.lang.Class<unknown>): java.lang.Class<unknown>
-        public static verifyAttributeValue(arg0: java.lang.Object, arg1: java.lang.Class<unknown>): javax.print.attribute.Attribute
+        public static verifyAttributeCategory(arg0: java.lang.Object | any, arg1: java.lang.Class<unknown>): java.lang.Class<unknown>
+        public static verifyAttributeValue(arg0: java.lang.Object | any, arg1: java.lang.Class<unknown>): javax.print.attribute.Attribute
         public static verifyCategoryForValue(arg0: java.lang.Class<unknown>, arg1: javax.print.attribute.Attribute): void
       }
 

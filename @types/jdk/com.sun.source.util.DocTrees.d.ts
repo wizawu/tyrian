@@ -11,7 +11,7 @@ declare namespace com {
           public abstract getDocCommentTree(arg0: com.sun.source.util.TreePath): com.sun.source.doctree.DocCommentTree
           public abstract getDocCommentTree(arg0: javax.lang.model.element.Element): com.sun.source.doctree.DocCommentTree
           public abstract getDocCommentTree(arg0: javax.tools.FileObject): com.sun.source.doctree.DocCommentTree
-          public abstract getDocCommentTree(arg0: javax.lang.model.element.Element, arg1: java.lang.String): com.sun.source.doctree.DocCommentTree
+          public abstract getDocCommentTree(arg0: javax.lang.model.element.Element, arg1: java.lang.String | string): com.sun.source.doctree.DocCommentTree
           public abstract getDocTreePath(arg0: javax.tools.FileObject, arg1: javax.lang.model.element.PackageElement): com.sun.source.util.DocTreePath
           public abstract getElement(arg0: com.sun.source.util.DocTreePath): javax.lang.model.element.Element
           public abstract getFirstSentence(arg0: java.util.List<com.sun.source.doctree.DocTree>): java.util.List<com.sun.source.doctree.DocTree>

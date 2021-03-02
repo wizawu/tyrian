@@ -4,7 +4,7 @@ declare namespace javax {
 
       interface ExtendedResponse extends java.io.Serializable {
         getID(): java.lang.String
-        getEncodedValue(): byte[]
+        getEncodedValue(): number[]
       }
 
     }

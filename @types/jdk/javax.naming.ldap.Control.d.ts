@@ -7,7 +7,7 @@ declare namespace javax {
         public static readonly NONCRITICAL: boolean
         getID(): java.lang.String
         isCritical(): boolean
-        getEncodedValue(): byte[]
+        getEncodedValue(): number[]
       }
 
     }

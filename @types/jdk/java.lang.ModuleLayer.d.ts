@@ -12,8 +12,8 @@ declare namespace java {
       public parents(): java.util.List<java.lang.ModuleLayer>
       layers(): java.util.stream.Stream<java.lang.ModuleLayer>
       public modules(): java.util.Set<java.lang.Module>
-      public findModule(arg0: java.lang.String): java.util.Optional<java.lang.Module>
-      public findLoader(arg0: java.lang.String): java.lang.ClassLoader
+      public findModule(arg0: java.lang.String | string): java.util.Optional<java.lang.Module>
+      public findLoader(arg0: java.lang.String | string): java.lang.ClassLoader
       public toString(): java.lang.String
       public static empty(): java.lang.ModuleLayer
       public static boot(): java.lang.ModuleLayer

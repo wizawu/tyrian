@@ -3,11 +3,11 @@ declare namespace java {
     namespace function$ {
 
       interface ObjDoubleConsumer$$lambda<T> {
-        (arg0: T, arg1: double): void
+        (arg0: T, arg1: number | java.lang.Double): void
       }
 
       interface ObjDoubleConsumer<T> {
-        accept(arg0: T, arg1: double): void
+        accept(arg0: T, arg1: number | java.lang.Double): void
       }
 
     }

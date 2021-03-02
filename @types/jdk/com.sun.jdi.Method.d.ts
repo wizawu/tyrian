@@ -17,17 +17,17 @@ declare namespace com {
         isStaticInitializer(): boolean
         isObsolete(): boolean
         allLineLocations(): java.util.List<com.sun.jdi.Location>
-        allLineLocations(arg0: java.lang.String, arg1: java.lang.String): java.util.List<com.sun.jdi.Location>
-        locationsOfLine(arg0: int): java.util.List<com.sun.jdi.Location>
-        locationsOfLine(arg0: java.lang.String, arg1: java.lang.String, arg2: int): java.util.List<com.sun.jdi.Location>
-        locationOfCodeIndex(arg0: long): com.sun.jdi.Location
+        allLineLocations(arg0: java.lang.String | string, arg1: java.lang.String | string): java.util.List<com.sun.jdi.Location>
+        locationsOfLine(arg0: number | java.lang.Integer): java.util.List<com.sun.jdi.Location>
+        locationsOfLine(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: number | java.lang.Integer): java.util.List<com.sun.jdi.Location>
+        locationOfCodeIndex(arg0: number | java.lang.Long): com.sun.jdi.Location
         variables(): java.util.List<com.sun.jdi.LocalVariable>
-        variablesByName(arg0: java.lang.String): java.util.List<com.sun.jdi.LocalVariable>
+        variablesByName(arg0: java.lang.String | string): java.util.List<com.sun.jdi.LocalVariable>
         arguments(): java.util.List<com.sun.jdi.LocalVariable>
-        bytecodes(): byte[]
+        bytecodes(): number[]
         location(): com.sun.jdi.Location
-        equals(arg0: java.lang.Object): boolean
-        hashCode(): int
+        equals(arg0: java.lang.Object | any): boolean
+        hashCode(): number
       }
 
     }

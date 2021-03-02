@@ -20,7 +20,7 @@ declare namespace jdk {
       public static readonly STATEMENT_SUBKIND: jdk.jshell.Snippet$SubKind
       public static readonly UNKNOWN_SUBKIND: jdk.jshell.Snippet$SubKind
       public static values(): jdk.jshell.Snippet$SubKind[]
-      public static valueOf(arg0: java.lang.String): jdk.jshell.Snippet$SubKind
+      public static valueOf(arg0: java.lang.String | string): jdk.jshell.Snippet$SubKind
       public isExecutable(): boolean
       public hasValue(): boolean
       public kind(): jdk.jshell.Snippet$Kind

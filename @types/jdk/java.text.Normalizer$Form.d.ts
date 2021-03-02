@@ -7,7 +7,7 @@ declare namespace java {
       public static readonly NFKD: java.text.Normalizer$Form
       public static readonly NFKC: java.text.Normalizer$Form
       public static values(): java.text.Normalizer$Form[]
-      public static valueOf(arg0: java.lang.String): java.text.Normalizer$Form
+      public static valueOf(arg0: java.lang.String | string): java.text.Normalizer$Form
     }
 
   }

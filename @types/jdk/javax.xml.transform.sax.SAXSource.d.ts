@@ -12,7 +12,7 @@ declare namespace javax {
           public getXMLReader(): org.xml.sax.XMLReader
           public setInputSource(arg0: org.xml.sax.InputSource): void
           public getInputSource(): org.xml.sax.InputSource
-          public setSystemId(arg0: java.lang.String): void
+          public setSystemId(arg0: java.lang.String | string): void
           public getSystemId(): java.lang.String
           public static sourceToInputSource(arg0: javax.xml.transform.Source): org.xml.sax.InputSource
           public isEmpty(): boolean

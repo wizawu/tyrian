@@ -10,12 +10,12 @@ declare namespace java {
         public abstract provider(): java.nio.channels.spi.SelectorProvider
         public abstract keys(): java.util.Set<java.nio.channels.SelectionKey>
         public abstract selectedKeys(): java.util.Set<java.nio.channels.SelectionKey>
-        public abstract selectNow(): int
-        public abstract select(arg0: long): int
-        public abstract select(): int
-        public select(arg0: java.util.function$.Consumer<java.nio.channels.SelectionKey>, arg1: long): int
-        public select(arg0: java.util.function$.Consumer<java.nio.channels.SelectionKey>): int
-        public selectNow(arg0: java.util.function$.Consumer<java.nio.channels.SelectionKey>): int
+        public abstract selectNow(): number
+        public abstract select(arg0: number | java.lang.Long): number
+        public abstract select(): number
+        public select(arg0: java.util.function$.Consumer<java.nio.channels.SelectionKey>, arg1: number | java.lang.Long): number
+        public select(arg0: java.util.function$.Consumer<java.nio.channels.SelectionKey>): number
+        public selectNow(arg0: java.util.function$.Consumer<java.nio.channels.SelectionKey>): number
         public abstract wakeup(): java.nio.channels.Selector
         public abstract close(): void
       }

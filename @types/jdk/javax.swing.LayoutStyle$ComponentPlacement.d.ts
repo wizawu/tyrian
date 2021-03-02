@@ -6,7 +6,7 @@ declare namespace javax {
       public static readonly UNRELATED: javax.swing.LayoutStyle$ComponentPlacement
       public static readonly INDENT: javax.swing.LayoutStyle$ComponentPlacement
       public static values(): javax.swing.LayoutStyle$ComponentPlacement[]
-      public static valueOf(arg0: java.lang.String): javax.swing.LayoutStyle$ComponentPlacement
+      public static valueOf(arg0: java.lang.String | string): javax.swing.LayoutStyle$ComponentPlacement
     }
 
   }

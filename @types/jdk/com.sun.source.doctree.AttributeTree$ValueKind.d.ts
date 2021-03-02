@@ -9,7 +9,7 @@ declare namespace com {
           public static readonly SINGLE: com.sun.source.doctree.AttributeTree$ValueKind
           public static readonly DOUBLE: com.sun.source.doctree.AttributeTree$ValueKind
           public static values(): com.sun.source.doctree.AttributeTree$ValueKind[]
-          public static valueOf(arg0: java.lang.String): com.sun.source.doctree.AttributeTree$ValueKind
+          public static valueOf(arg0: java.lang.String | string): com.sun.source.doctree.AttributeTree$ValueKind
         }
 
       }

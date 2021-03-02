@@ -60,11 +60,11 @@ declare namespace java {
       public getZoneStrings(): java.lang.String[][]
       public setZoneStrings(arg0: java.lang.String[][]): void
       public getLocalPatternChars(): java.lang.String
-      public setLocalPatternChars(arg0: java.lang.String): void
+      public setLocalPatternChars(arg0: java.lang.String | string): void
       public clone(): java.lang.Object
-      public hashCode(): int
-      public equals(arg0: java.lang.Object): boolean
-      getZoneIndex(arg0: java.lang.String): int
+      public hashCode(): number
+      public equals(arg0: java.lang.Object | any): boolean
+      getZoneIndex(arg0: java.lang.String | string): number
       getZoneStringsWrapper(): java.lang.String[][]
     }
 

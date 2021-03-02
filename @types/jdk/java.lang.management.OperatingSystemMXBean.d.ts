@@ -6,8 +6,8 @@ declare namespace java {
         getName(): java.lang.String
         getArch(): java.lang.String
         getVersion(): java.lang.String
-        getAvailableProcessors(): int
-        getSystemLoadAverage(): double
+        getAvailableProcessors(): number
+        getSystemLoadAverage(): number
       }
 
     }

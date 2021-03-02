@@ -3,13 +3,13 @@ declare namespace java {
     namespace print {
 
       interface Printable$$lambda {
-        (arg0: java.awt.Graphics, arg1: java.awt.print.PageFormat, arg2: int): int
+        (arg0: java.awt.Graphics, arg1: java.awt.print.PageFormat, arg2: number | java.lang.Integer): int
       }
 
       interface Printable {
         public static readonly PAGE_EXISTS: int
         public static readonly NO_SUCH_PAGE: int
-        print(arg0: java.awt.Graphics, arg1: java.awt.print.PageFormat, arg2: int): int
+        print(arg0: java.awt.Graphics, arg1: java.awt.print.PageFormat, arg2: number | java.lang.Integer): number
       }
 
     }

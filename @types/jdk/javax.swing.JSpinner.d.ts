@@ -12,10 +12,10 @@ declare namespace javax {
       public setModel(arg0: javax.swing.SpinnerModel): void
       public getModel(): javax.swing.SpinnerModel
       public getValue(): java.lang.Object
-      public setValue(arg0: java.lang.Object): void
+      public setValue(arg0: java.lang.Object | any): void
       public getNextValue(): java.lang.Object
-      public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+      public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public getPreviousValue(): java.lang.Object

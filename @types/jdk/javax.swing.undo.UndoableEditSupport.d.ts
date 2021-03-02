@@ -8,13 +8,13 @@ declare namespace javax {
         protected listeners: java.util.Vector<javax.swing.event.UndoableEditListener>
         protected realSource: java.lang.Object
         public constructor()
-        public constructor(arg0: java.lang.Object)
-        public addUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
-        public removeUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
+        public constructor(arg0: java.lang.Object | any)
+        public addUndoableEditListener(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$lambda): void
+        public removeUndoableEditListener(arg0: javax.swing.event.UndoableEditListener | javax.swing.event.UndoableEditListener$$lambda): void
         public getUndoableEditListeners(): javax.swing.event.UndoableEditListener[]
         protected _postEdit(arg0: javax.swing.undo.UndoableEdit): void
         public postEdit(arg0: javax.swing.undo.UndoableEdit): void
-        public getUpdateLevel(): int
+        public getUpdateLevel(): number
         public beginUpdate(): void
         protected createCompoundEdit(): javax.swing.undo.CompoundEdit
         public endUpdate(): void

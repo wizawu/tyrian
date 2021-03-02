@@ -7,7 +7,7 @@ declare namespace java {
         static class$java$rmi$activation$ActivationID: java.lang.Class
         static class$java$rmi$activation$ActivationDesc: java.lang.Class
         public constructor(arg0: java.rmi.server.RemoteRef)
-        static class$(arg0: java.lang.String): java.lang.Class
+        static class$(arg0: java.lang.String | string): java.lang.Class
         public newInstance(arg0: java.rmi.activation.ActivationID, arg1: java.rmi.activation.ActivationDesc): java.rmi.MarshalledObject
       }
 

@@ -5,7 +5,7 @@ declare namespace java {
       class ClassDefinition {
         public constructor(arg0: java.lang.Class<unknown>, arg1: byte[])
         public getDefinitionClass(): java.lang.Class<unknown>
-        public getDefinitionClassFile(): byte[]
+        public getDefinitionClassFile(): number[]
       }
 
     }

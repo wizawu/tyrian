@@ -18,12 +18,12 @@ declare namespace javax {
         public containsKey(arg0: java.lang.Class<unknown>): boolean
         public containsValue(arg0: javax.print.attribute.Attribute): boolean
         public addAll(arg0: javax.print.attribute.AttributeSet): boolean
-        public size(): int
+        public size(): number
         public toArray(): javax.print.attribute.Attribute[]
         public clear(): void
         public isEmpty(): boolean
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
       }
 
     }

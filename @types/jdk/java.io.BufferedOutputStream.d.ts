@@ -5,9 +5,9 @@ declare namespace java {
       protected buf: byte[]
       protected count: int
       public constructor(arg0: java.io.OutputStream)
-      public constructor(arg0: java.io.OutputStream, arg1: int)
-      public write(arg0: int): void
-      public write(arg0: byte[], arg1: int, arg2: int): void
+      public constructor(arg0: java.io.OutputStream, arg1: number | java.lang.Integer)
+      public write(arg0: number | java.lang.Integer): void
+      public write(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public flush(): void
     }
 

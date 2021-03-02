@@ -3,10 +3,10 @@ declare namespace com {
     namespace management {
 
       interface HotSpotDiagnosticMXBean extends java.lang.management.PlatformManagedObject {
-        dumpHeap(arg0: java.lang.String, arg1: boolean): void
+        dumpHeap(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): void
         getDiagnosticOptions(): java.util.List<com.sun.management.VMOption>
-        getVMOption(arg0: java.lang.String): com.sun.management.VMOption
-        setVMOption(arg0: java.lang.String, arg1: java.lang.String): void
+        getVMOption(arg0: java.lang.String | string): com.sun.management.VMOption
+        setVMOption(arg0: java.lang.String | string, arg1: java.lang.String | string): void
       }
 
     }

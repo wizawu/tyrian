@@ -3,14 +3,14 @@ declare namespace java {
 
     class DoubleSummaryStatistics implements java.util.function$.DoubleConsumer {
       public constructor()
-      public constructor(arg0: long, arg1: double, arg2: double, arg3: double)
-      public accept(arg0: double): void
+      public constructor(arg0: number | java.lang.Long, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double)
+      public accept(arg0: number | java.lang.Double): void
       public combine(arg0: java.util.DoubleSummaryStatistics): void
-      public getCount(): long
-      public getSum(): double
-      public getMin(): double
-      public getMax(): double
-      public getAverage(): double
+      public getCount(): number
+      public getSum(): number
+      public getMin(): number
+      public getMax(): number
+      public getAverage(): number
       public toString(): java.lang.String
     }
 

@@ -6,7 +6,7 @@ declare namespace java {
         start: int
         count: int
         public constructor()
-        public constructor(arg0: java.util.logging.Handler, arg1: int, arg2: java.util.logging.Level)
+        public constructor(arg0: java.util.logging.Handler, arg1: number | java.lang.Integer, arg2: java.util.logging.Level)
         public publish(arg0: java.util.logging.LogRecord): void
         public push(): void
         public flush(): void

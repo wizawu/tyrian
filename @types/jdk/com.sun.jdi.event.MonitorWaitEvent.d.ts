@@ -6,7 +6,7 @@ declare namespace com {
         interface MonitorWaitEvent extends com.sun.jdi.event.LocatableEvent {
           thread(): com.sun.jdi.ThreadReference
           monitor(): com.sun.jdi.ObjectReference
-          timeout(): long
+          timeout(): number
         }
 
       }

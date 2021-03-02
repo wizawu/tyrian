@@ -3,11 +3,11 @@ declare namespace java {
     namespace concurrent {
 
       class CountDownLatch {
-        public constructor(arg0: int)
+        public constructor(arg0: number | java.lang.Integer)
         public await(): void
-        public await(arg0: long, arg1: java.util.concurrent.TimeUnit): boolean
+        public await(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): boolean
         public countDown(): void
-        public getCount(): long
+        public getCount(): number
         public toString(): java.lang.String
       }
 

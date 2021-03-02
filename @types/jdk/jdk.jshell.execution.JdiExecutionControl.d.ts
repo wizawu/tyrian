@@ -6,7 +6,7 @@ declare namespace jdk {
         protected constructor(arg0: java.io.ObjectOutput, arg1: java.io.ObjectInput)
         protected abstract vm(): com.sun.jdi.VirtualMachine
         public redefine(arg0: jdk.jshell.spi.ExecutionControl$ClassBytecodes[]): void
-        protected referenceType(arg0: com.sun.jdi.VirtualMachine, arg1: java.lang.String): com.sun.jdi.ReferenceType
+        protected referenceType(arg0: com.sun.jdi.VirtualMachine, arg1: java.lang.String | string): com.sun.jdi.ReferenceType
       }
 
     }

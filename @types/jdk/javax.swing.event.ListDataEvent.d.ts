@@ -6,10 +6,10 @@ declare namespace javax {
         public static readonly CONTENTS_CHANGED: int
         public static readonly INTERVAL_ADDED: int
         public static readonly INTERVAL_REMOVED: int
-        public getType(): int
-        public getIndex0(): int
-        public getIndex1(): int
-        public constructor(arg0: java.lang.Object, arg1: int, arg2: int, arg3: int)
+        public getType(): number
+        public getIndex0(): number
+        public getIndex1(): number
+        public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
         public toString(): java.lang.String
       }
 

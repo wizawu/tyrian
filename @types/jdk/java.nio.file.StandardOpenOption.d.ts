@@ -14,7 +14,7 @@ declare namespace java {
         public static readonly SYNC: java.nio.file.StandardOpenOption
         public static readonly DSYNC: java.nio.file.StandardOpenOption
         public static values(): java.nio.file.StandardOpenOption[]
-        public static valueOf(arg0: java.lang.String): java.nio.file.StandardOpenOption
+        public static valueOf(arg0: java.lang.String | string): java.nio.file.StandardOpenOption
       }
 
     }

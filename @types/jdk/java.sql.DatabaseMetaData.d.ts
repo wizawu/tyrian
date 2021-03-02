@@ -76,8 +76,8 @@ declare namespace java {
       getDatabaseProductVersion(): java.lang.String
       getDriverName(): java.lang.String
       getDriverVersion(): java.lang.String
-      getDriverMajorVersion(): int
-      getDriverMinorVersion(): int
+      getDriverMajorVersion(): number
+      getDriverMinorVersion(): number
       usesLocalFiles(): boolean
       usesLocalFilePerTable(): boolean
       supportsMixedCaseIdentifiers(): boolean
@@ -101,7 +101,7 @@ declare namespace java {
       supportsColumnAliasing(): boolean
       nullPlusNonNullIsNull(): boolean
       supportsConvert(): boolean
-      supportsConvert(arg0: int, arg1: int): boolean
+      supportsConvert(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
       supportsTableCorrelationNames(): boolean
       supportsDifferentTableCorrelationNames(): boolean
       supportsExpressionsInOrderBy(): boolean
@@ -153,91 +153,91 @@ declare namespace java {
       supportsOpenCursorsAcrossRollback(): boolean
       supportsOpenStatementsAcrossCommit(): boolean
       supportsOpenStatementsAcrossRollback(): boolean
-      getMaxBinaryLiteralLength(): int
-      getMaxCharLiteralLength(): int
-      getMaxColumnNameLength(): int
-      getMaxColumnsInGroupBy(): int
-      getMaxColumnsInIndex(): int
-      getMaxColumnsInOrderBy(): int
-      getMaxColumnsInSelect(): int
-      getMaxColumnsInTable(): int
-      getMaxConnections(): int
-      getMaxCursorNameLength(): int
-      getMaxIndexLength(): int
-      getMaxSchemaNameLength(): int
-      getMaxProcedureNameLength(): int
-      getMaxCatalogNameLength(): int
-      getMaxRowSize(): int
+      getMaxBinaryLiteralLength(): number
+      getMaxCharLiteralLength(): number
+      getMaxColumnNameLength(): number
+      getMaxColumnsInGroupBy(): number
+      getMaxColumnsInIndex(): number
+      getMaxColumnsInOrderBy(): number
+      getMaxColumnsInSelect(): number
+      getMaxColumnsInTable(): number
+      getMaxConnections(): number
+      getMaxCursorNameLength(): number
+      getMaxIndexLength(): number
+      getMaxSchemaNameLength(): number
+      getMaxProcedureNameLength(): number
+      getMaxCatalogNameLength(): number
+      getMaxRowSize(): number
       doesMaxRowSizeIncludeBlobs(): boolean
-      getMaxStatementLength(): int
-      getMaxStatements(): int
-      getMaxTableNameLength(): int
-      getMaxTablesInSelect(): int
-      getMaxUserNameLength(): int
-      getDefaultTransactionIsolation(): int
+      getMaxStatementLength(): number
+      getMaxStatements(): number
+      getMaxTableNameLength(): number
+      getMaxTablesInSelect(): number
+      getMaxUserNameLength(): number
+      getDefaultTransactionIsolation(): number
       supportsTransactions(): boolean
-      supportsTransactionIsolationLevel(arg0: int): boolean
+      supportsTransactionIsolationLevel(arg0: number | java.lang.Integer): boolean
       supportsDataDefinitionAndDataManipulationTransactions(): boolean
       supportsDataManipulationTransactionsOnly(): boolean
       dataDefinitionCausesTransactionCommit(): boolean
       dataDefinitionIgnoredInTransactions(): boolean
-      getProcedures(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.sql.ResultSet
-      getProcedureColumns(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): java.sql.ResultSet
-      getTables(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String[]): java.sql.ResultSet
+      getProcedures(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
+      getProcedureColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
+      getTables(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String[]): java.sql.ResultSet
       getSchemas(): java.sql.ResultSet
       getCatalogs(): java.sql.ResultSet
       getTableTypes(): java.sql.ResultSet
-      getColumns(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): java.sql.ResultSet
-      getColumnPrivileges(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): java.sql.ResultSet
-      getTablePrivileges(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.sql.ResultSet
-      getBestRowIdentifier(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: int, arg4: boolean): java.sql.ResultSet
-      getVersionColumns(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.sql.ResultSet
-      getPrimaryKeys(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.sql.ResultSet
-      getImportedKeys(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.sql.ResultSet
-      getExportedKeys(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.sql.ResultSet
-      getCrossReference(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String, arg5: java.lang.String): java.sql.ResultSet
+      getColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
+      getColumnPrivileges(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
+      getTablePrivileges(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
+      getBestRowIdentifier(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean): java.sql.ResultSet
+      getVersionColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
+      getPrimaryKeys(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
+      getImportedKeys(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
+      getExportedKeys(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
+      getCrossReference(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.String | string): java.sql.ResultSet
       getTypeInfo(): java.sql.ResultSet
-      getIndexInfo(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean, arg4: boolean): java.sql.ResultSet
-      supportsResultSetType(arg0: int): boolean
-      supportsResultSetConcurrency(arg0: int, arg1: int): boolean
-      ownUpdatesAreVisible(arg0: int): boolean
-      ownDeletesAreVisible(arg0: int): boolean
-      ownInsertsAreVisible(arg0: int): boolean
-      othersUpdatesAreVisible(arg0: int): boolean
-      othersDeletesAreVisible(arg0: int): boolean
-      othersInsertsAreVisible(arg0: int): boolean
-      updatesAreDetected(arg0: int): boolean
-      deletesAreDetected(arg0: int): boolean
-      insertsAreDetected(arg0: int): boolean
+      getIndexInfo(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean): java.sql.ResultSet
+      supportsResultSetType(arg0: number | java.lang.Integer): boolean
+      supportsResultSetConcurrency(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
+      ownUpdatesAreVisible(arg0: number | java.lang.Integer): boolean
+      ownDeletesAreVisible(arg0: number | java.lang.Integer): boolean
+      ownInsertsAreVisible(arg0: number | java.lang.Integer): boolean
+      othersUpdatesAreVisible(arg0: number | java.lang.Integer): boolean
+      othersDeletesAreVisible(arg0: number | java.lang.Integer): boolean
+      othersInsertsAreVisible(arg0: number | java.lang.Integer): boolean
+      updatesAreDetected(arg0: number | java.lang.Integer): boolean
+      deletesAreDetected(arg0: number | java.lang.Integer): boolean
+      insertsAreDetected(arg0: number | java.lang.Integer): boolean
       supportsBatchUpdates(): boolean
-      getUDTs(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: int[]): java.sql.ResultSet
+      getUDTs(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: int[]): java.sql.ResultSet
       getConnection(): java.sql.Connection
       supportsSavepoints(): boolean
       supportsNamedParameters(): boolean
       supportsMultipleOpenResults(): boolean
       supportsGetGeneratedKeys(): boolean
-      getSuperTypes(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.sql.ResultSet
-      getSuperTables(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.sql.ResultSet
-      getAttributes(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): java.sql.ResultSet
-      supportsResultSetHoldability(arg0: int): boolean
-      getResultSetHoldability(): int
-      getDatabaseMajorVersion(): int
-      getDatabaseMinorVersion(): int
-      getJDBCMajorVersion(): int
-      getJDBCMinorVersion(): int
-      getSQLStateType(): int
+      getSuperTypes(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
+      getSuperTables(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
+      getAttributes(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
+      supportsResultSetHoldability(arg0: number | java.lang.Integer): boolean
+      getResultSetHoldability(): number
+      getDatabaseMajorVersion(): number
+      getDatabaseMinorVersion(): number
+      getJDBCMajorVersion(): number
+      getJDBCMinorVersion(): number
+      getSQLStateType(): number
       locatorsUpdateCopy(): boolean
       supportsStatementPooling(): boolean
       getRowIdLifetime(): java.sql.RowIdLifetime
-      getSchemas(arg0: java.lang.String, arg1: java.lang.String): java.sql.ResultSet
+      getSchemas(arg0: java.lang.String | string, arg1: java.lang.String | string): java.sql.ResultSet
       supportsStoredFunctionsUsingCallSyntax(): boolean
       autoCommitFailureClosesAllResultSets(): boolean
       getClientInfoProperties(): java.sql.ResultSet
-      getFunctions(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.sql.ResultSet
-      getFunctionColumns(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): java.sql.ResultSet
-      getPseudoColumns(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): java.sql.ResultSet
+      getFunctions(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
+      getFunctionColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
+      getPseudoColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
       generatedKeyAlwaysReturned(): boolean
-      getMaxLogicalLobSize(): long
+      getMaxLogicalLobSize(): number
       supportsRefCursors(): boolean
       supportsSharding(): boolean
     }

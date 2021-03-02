@@ -24,8 +24,8 @@ declare namespace javax {
         markLTR: boolean
         handler: javax.swing.text.DefaultCaret$Handler
         public constructor()
-        public setUpdatePolicy(arg0: int): void
-        public getUpdatePolicy(): int
+        public setUpdatePolicy(arg0: number | java.lang.Integer): void
+        public getUpdatePolicy(): number
         protected getComponent(): javax.swing.text.JTextComponent
         protected repaint(): void
         protected damage(arg0: java.awt.Rectangle): void
@@ -46,39 +46,39 @@ declare namespace javax {
         public paint(arg0: java.awt.Graphics): void
         public install(arg0: javax.swing.text.JTextComponent): void
         public deinstall(arg0: javax.swing.text.JTextComponent): void
-        public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-        public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+        public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+        public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
         public getChangeListeners(): javax.swing.event.ChangeListener[]
         protected fireStateChanged(): void
         public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
-        public setSelectionVisible(arg0: boolean): void
+        public setSelectionVisible(arg0: boolean | java.lang.Boolean): void
         public isSelectionVisible(): boolean
         public isActive(): boolean
         public isVisible(): boolean
-        public setVisible(arg0: boolean): void
-        public setBlinkRate(arg0: int): void
-        public getBlinkRate(): int
-        public getDot(): int
-        public getMark(): int
-        public setDot(arg0: int): void
-        public moveDot(arg0: int): void
-        public moveDot(arg0: int, arg1: javax.swing.text.Position$Bias): void
-        handleMoveDot(arg0: int, arg1: javax.swing.text.Position$Bias): void
-        public setDot(arg0: int, arg1: javax.swing.text.Position$Bias): void
-        handleSetDot(arg0: int, arg1: javax.swing.text.Position$Bias): void
+        public setVisible(arg0: boolean | java.lang.Boolean): void
+        public setBlinkRate(arg0: number | java.lang.Integer): void
+        public getBlinkRate(): number
+        public getDot(): number
+        public getMark(): number
+        public setDot(arg0: number | java.lang.Integer): void
+        public moveDot(arg0: number | java.lang.Integer): void
+        public moveDot(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias): void
+        handleMoveDot(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias): void
+        public setDot(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias): void
+        handleSetDot(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias): void
         public getDotBias(): javax.swing.text.Position$Bias
         public getMarkBias(): javax.swing.text.Position$Bias
         isDotLeftToRight(): boolean
         isMarkLeftToRight(): boolean
-        isPositionLTR(arg0: int, arg1: javax.swing.text.Position$Bias): boolean
-        guessBiasForOffset(arg0: int, arg1: javax.swing.text.Position$Bias, arg2: boolean): javax.swing.text.Position$Bias
-        changeCaretPosition(arg0: int, arg1: javax.swing.text.Position$Bias): void
+        isPositionLTR(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias): boolean
+        guessBiasForOffset(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias, arg2: boolean | java.lang.Boolean): javax.swing.text.Position$Bias
+        changeCaretPosition(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias): void
         repaintNewCaret(): void
         public setMagicCaretPosition(arg0: java.awt.Point): void
         public getMagicCaretPosition(): java.awt.Point
-        public equals(arg0: java.lang.Object): boolean
+        public equals(arg0: java.lang.Object | any): boolean
         public toString(): java.lang.String
-        getCaretWidth(arg0: int): int
+        getCaretWidth(arg0: number | java.lang.Integer): number
       }
 
     }

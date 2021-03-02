@@ -76,17 +76,17 @@ declare namespace java {
       public clickCount: int
       public arg: java.lang.Object
       public evt: java.awt.Event
-      public constructor(arg0: java.lang.Object, arg1: long, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: java.lang.Object)
-      public constructor(arg0: java.lang.Object, arg1: long, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int)
-      public constructor(arg0: java.lang.Object, arg1: int, arg2: java.lang.Object)
-      public translate(arg0: int, arg1: int): void
+      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Long, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: java.lang.Object | any)
+      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Long, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer)
+      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: java.lang.Object | any)
+      public translate(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public shiftDown(): boolean
       public controlDown(): boolean
       public metaDown(): boolean
       consume(): void
       isConsumed(): boolean
-      static getOldEventKey(arg0: java.awt.event.KeyEvent): int
-      getKeyEventChar(): char
+      static getOldEventKey(arg0: java.awt.event.KeyEvent): number
+      getKeyEventChar(): string
       protected paramString(): java.lang.String
       public toString(): java.lang.String
     }

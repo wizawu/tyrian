@@ -10,16 +10,16 @@ declare namespace java {
         public arcwidth: float
         public archeight: float
         public constructor()
-        public constructor(arg0: float, arg1: float, arg2: float, arg3: float, arg4: float, arg5: float)
-        public getX(): double
-        public getY(): double
-        public getWidth(): double
-        public getHeight(): double
-        public getArcWidth(): double
-        public getArcHeight(): double
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float, arg4: number | java.lang.Float, arg5: number | java.lang.Float)
+        public getX(): number
+        public getY(): number
+        public getWidth(): number
+        public getHeight(): number
+        public getArcWidth(): number
+        public getArcHeight(): number
         public isEmpty(): boolean
-        public setRoundRect(arg0: float, arg1: float, arg2: float, arg3: float, arg4: float, arg5: float): void
-        public setRoundRect(arg0: double, arg1: double, arg2: double, arg3: double, arg4: double, arg5: double): void
+        public setRoundRect(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float, arg4: number | java.lang.Float, arg5: number | java.lang.Float): void
+        public setRoundRect(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double): void
         public setRoundRect(arg0: java.awt.geom.RoundRectangle2D): void
         public getBounds2D(): java.awt.geom.Rectangle2D
       }

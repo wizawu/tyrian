@@ -6,7 +6,7 @@ declare namespace java {
         protected constructor()
         public abstract checkValidity(): void
         public abstract checkValidity(arg0: java.util.Date): void
-        public abstract getVersion(): int
+        public abstract getVersion(): number
         public abstract getSerialNumber(): java.math.BigInteger
         public abstract getIssuerDN(): java.security.Principal
         public getIssuerX500Principal(): javax.security.auth.x500.X500Principal
@@ -14,16 +14,16 @@ declare namespace java {
         public getSubjectX500Principal(): javax.security.auth.x500.X500Principal
         public abstract getNotBefore(): java.util.Date
         public abstract getNotAfter(): java.util.Date
-        public abstract getTBSCertificate(): byte[]
-        public abstract getSignature(): byte[]
+        public abstract getTBSCertificate(): number[]
+        public abstract getSignature(): number[]
         public abstract getSigAlgName(): java.lang.String
         public abstract getSigAlgOID(): java.lang.String
-        public abstract getSigAlgParams(): byte[]
+        public abstract getSigAlgParams(): number[]
         public abstract getIssuerUniqueID(): boolean[]
         public abstract getSubjectUniqueID(): boolean[]
         public abstract getKeyUsage(): boolean[]
         public getExtendedKeyUsage(): java.util.List<java.lang.String>
-        public abstract getBasicConstraints(): int
+        public abstract getBasicConstraints(): number
         public getSubjectAlternativeNames(): java.util.Collection<java.util.List<unknown>>
         public getIssuerAlternativeNames(): java.util.Collection<java.util.List<unknown>>
         public verify(arg0: java.security.PublicKey, arg1: java.security.Provider): void

@@ -3,12 +3,12 @@ declare namespace java {
 
     abstract class MessageDigestSpi {
       public constructor()
-      protected engineGetDigestLength(): int
-      protected abstract engineUpdate(arg0: byte): void
-      protected abstract engineUpdate(arg0: byte[], arg1: int, arg2: int): void
+      protected engineGetDigestLength(): number
+      protected abstract engineUpdate(arg0: number | java.lang.Byte): void
+      protected abstract engineUpdate(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       protected engineUpdate(arg0: java.nio.ByteBuffer): void
-      protected abstract engineDigest(): byte[]
-      protected engineDigest(arg0: byte[], arg1: int, arg2: int): int
+      protected abstract engineDigest(): number[]
+      protected engineDigest(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       protected abstract engineReset(): void
       public clone(): java.lang.Object
     }

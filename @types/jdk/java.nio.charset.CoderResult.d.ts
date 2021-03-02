@@ -12,9 +12,9 @@ declare namespace java {
         public isError(): boolean
         public isMalformed(): boolean
         public isUnmappable(): boolean
-        public length(): int
-        public static malformedForLength(arg0: int): java.nio.charset.CoderResult
-        public static unmappableForLength(arg0: int): java.nio.charset.CoderResult
+        public length(): number
+        public static malformedForLength(arg0: number | java.lang.Integer): java.nio.charset.CoderResult
+        public static unmappableForLength(arg0: number | java.lang.Integer): java.nio.charset.CoderResult
         public throwException(): void
       }
 

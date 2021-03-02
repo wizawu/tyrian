@@ -4,7 +4,7 @@ declare namespace com {
       namespace event {
 
         interface EventSet extends com.sun.jdi.Mirror, java.util.Set<com.sun.jdi.event.Event> {
-          suspendPolicy(): int
+          suspendPolicy(): number
           eventIterator(): com.sun.jdi.event.EventIterator
           resume(): void
         }

@@ -8,12 +8,12 @@ declare namespace java {
           public lock(): void
           public lockInterruptibly(): void
           public tryLock(): boolean
-          public tryLock(arg0: long, arg1: java.util.concurrent.TimeUnit): boolean
+          public tryLock(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): boolean
           public unlock(): void
           public newCondition(): java.util.concurrent.locks.Condition
           public toString(): java.lang.String
           public isHeldByCurrentThread(): boolean
-          public getHoldCount(): int
+          public getHoldCount(): number
         }
 
       }

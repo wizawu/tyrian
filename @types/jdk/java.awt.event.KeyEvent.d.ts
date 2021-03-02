@@ -206,21 +206,21 @@ declare namespace java {
         keyCode: int
         keyChar: char
         keyLocation: int
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: long, arg3: int, arg4: int, arg5: char, arg6: int)
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: long, arg3: int, arg4: int, arg5: char)
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: long, arg3: int, arg4: int)
-        public getKeyCode(): int
-        public setKeyCode(arg0: int): void
-        public getKeyChar(): char
-        public setKeyChar(arg0: char): void
-        public setModifiers(arg0: int): void
-        public getKeyLocation(): int
-        public static getKeyText(arg0: int): java.lang.String
-        public static getKeyModifiersText(arg0: int): java.lang.String
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: string | java.lang.Character, arg6: number | java.lang.Integer)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: string | java.lang.Character)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+        public getKeyCode(): number
+        public setKeyCode(arg0: number | java.lang.Integer): void
+        public getKeyChar(): string
+        public setKeyChar(arg0: string | java.lang.Character): void
+        public setModifiers(arg0: number | java.lang.Integer): void
+        public getKeyLocation(): number
+        public static getKeyText(arg0: number | java.lang.Integer): java.lang.String
+        public static getKeyModifiersText(arg0: number | java.lang.Integer): java.lang.String
         public isActionKey(): boolean
         public paramString(): java.lang.String
-        public getExtendedKeyCode(): int
-        public static getExtendedKeyCodeForChar(arg0: int): int
+        public getExtendedKeyCode(): number
+        public static getExtendedKeyCodeForChar(arg0: number | java.lang.Integer): number
       }
 
     }

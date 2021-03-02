@@ -41,8 +41,8 @@ declare namespace java {
         public static readonly SINHALA: java.awt.font.NumericShaper$Range
         public static readonly MYANMAR_TAI_LAING: java.awt.font.NumericShaper$Range
         public static values(): java.awt.font.NumericShaper$Range[]
-        public static valueOf(arg0: java.lang.String): java.awt.font.NumericShaper$Range
-        getNumericBase(): char
+        public static valueOf(arg0: java.lang.String | string): java.awt.font.NumericShaper$Range
+        getNumericBase(): string
       }
 
     }

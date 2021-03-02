@@ -8,7 +8,7 @@ declare namespace javax {
           public static readonly SEPARATE_DOCUMENTS_UNCOLLATED_COPIES: javax.print.attribute.standard.MultipleDocumentHandling
           public static readonly SEPARATE_DOCUMENTS_COLLATED_COPIES: javax.print.attribute.standard.MultipleDocumentHandling
           public static readonly SINGLE_DOCUMENT_NEW_SHEET: javax.print.attribute.standard.MultipleDocumentHandling
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>

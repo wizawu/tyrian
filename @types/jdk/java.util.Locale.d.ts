@@ -28,11 +28,11 @@ declare namespace java {
       public static readonly UNICODE_LOCALE_EXTENSION: char
       static readonly serialVersionUID: long
       static readonly $assertionsDisabled: boolean
-      public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String)
-      public constructor(arg0: java.lang.String, arg1: java.lang.String)
-      public constructor(arg0: java.lang.String)
-      static getInstance(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): java.util.Locale
-      static getInstance(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: sun.util.locale.LocaleExtensions): java.util.Locale
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+      public constructor(arg0: java.lang.String | string)
+      static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.util.Locale
+      static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: sun.util.locale.LocaleExtensions): java.util.Locale
       static getInstance(arg0: sun.util.locale.BaseLocale, arg1: sun.util.locale.LocaleExtensions): java.util.Locale
       public static getDefault(): java.util.Locale
       public static getDefault(arg0: java.util.Locale$Category): java.util.Locale
@@ -48,16 +48,16 @@ declare namespace java {
       public getVariant(): java.lang.String
       public hasExtensions(): boolean
       public stripExtensions(): java.util.Locale
-      public getExtension(arg0: char): java.lang.String
+      public getExtension(arg0: string | java.lang.Character): java.lang.String
       public getExtensionKeys(): java.util.Set<java.lang.Character>
       public getUnicodeLocaleAttributes(): java.util.Set<java.lang.String>
-      public getUnicodeLocaleType(arg0: java.lang.String): java.lang.String
+      public getUnicodeLocaleType(arg0: java.lang.String | string): java.lang.String
       public getUnicodeLocaleKeys(): java.util.Set<java.lang.String>
       getBaseLocale(): sun.util.locale.BaseLocale
       getLocaleExtensions(): sun.util.locale.LocaleExtensions
       public toString(): java.lang.String
       public toLanguageTag(): java.lang.String
-      public static forLanguageTag(arg0: java.lang.String): java.util.Locale
+      public static forLanguageTag(arg0: java.lang.String | string): java.util.Locale
       public getISO3Language(): java.lang.String
       public getISO3Country(): java.lang.String
       public getDisplayLanguage(): java.lang.String
@@ -71,8 +71,8 @@ declare namespace java {
       public getDisplayName(): java.lang.String
       public getDisplayName(arg0: java.util.Locale): java.lang.String
       public clone(): java.lang.Object
-      public hashCode(): int
-      public equals(arg0: java.lang.Object): boolean
+      public hashCode(): number
+      public equals(arg0: java.lang.Object | any): boolean
       public static filter(arg0: java.util.List<java.util.Locale$LanguageRange>, arg1: java.util.Collection<java.util.Locale>, arg2: java.util.Locale$FilteringMode): java.util.List<java.util.Locale>
       public static filter(arg0: java.util.List<java.util.Locale$LanguageRange>, arg1: java.util.Collection<java.util.Locale>): java.util.List<java.util.Locale>
       public static filterTags(arg0: java.util.List<java.util.Locale$LanguageRange>, arg1: java.util.Collection<java.lang.String>, arg2: java.util.Locale$FilteringMode): java.util.List<java.lang.String>

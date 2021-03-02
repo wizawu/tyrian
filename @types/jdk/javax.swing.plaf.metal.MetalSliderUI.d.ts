@@ -22,15 +22,15 @@ declare namespace javax {
           public paintTrack(arg0: java.awt.Graphics): void
           public paintFocus(arg0: java.awt.Graphics): void
           protected getThumbSize(): java.awt.Dimension
-          public getTickLength(): int
-          protected getTrackWidth(): int
-          protected getTrackLength(): int
-          protected getThumbOverhang(): int
-          protected scrollDueToClickInTrack(arg0: int): void
-          protected paintMinorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: int): void
-          protected paintMajorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: int): void
-          protected paintMinorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: int): void
-          protected paintMajorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: int): void
+          public getTickLength(): number
+          protected getTrackWidth(): number
+          protected getTrackLength(): number
+          protected getThumbOverhang(): number
+          protected scrollDueToClickInTrack(arg0: number | java.lang.Integer): void
+          protected paintMinorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
+          protected paintMajorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
+          protected paintMinorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
+          protected paintMajorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
         }
 
       }

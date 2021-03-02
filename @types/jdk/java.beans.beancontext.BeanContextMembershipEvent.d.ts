@@ -6,8 +6,8 @@ declare namespace java {
         protected children: java.util.Collection
         public constructor(arg0: java.beans.beancontext.BeanContext, arg1: java.util.Collection)
         public constructor(arg0: java.beans.beancontext.BeanContext, arg1: java.lang.Object[])
-        public size(): int
-        public contains(arg0: java.lang.Object): boolean
+        public size(): number
+        public contains(arg0: java.lang.Object | any): boolean
         public toArray(): java.lang.Object[]
         public iterator(): java.util.Iterator
       }

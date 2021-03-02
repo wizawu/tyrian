@@ -3,11 +3,11 @@ declare namespace javax {
     namespace tree {
 
       interface TreeCellRenderer$$lambda {
-        (arg0: javax.swing.JTree, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int, arg6: boolean): java.awt.Component
+        (arg0: javax.swing.JTree, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean, arg5: number | java.lang.Integer, arg6: boolean | java.lang.Boolean): java.awt.Component
       }
 
       interface TreeCellRenderer {
-        getTreeCellRendererComponent(arg0: javax.swing.JTree, arg1: java.lang.Object, arg2: boolean, arg3: boolean, arg4: boolean, arg5: int, arg6: boolean): java.awt.Component
+        getTreeCellRendererComponent(arg0: javax.swing.JTree, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean, arg5: number | java.lang.Integer, arg6: boolean | java.lang.Boolean): java.awt.Component
       }
 
     }

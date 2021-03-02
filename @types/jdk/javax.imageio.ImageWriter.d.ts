@@ -11,7 +11,7 @@ declare namespace javax {
       protected progressListeners: java.util.List<javax.imageio.event.IIOWriteProgressListener>
       protected constructor(arg0: javax.imageio.spi.ImageWriterSpi)
       public getOriginatingProvider(): javax.imageio.spi.ImageWriterSpi
-      public setOutput(arg0: java.lang.Object): void
+      public setOutput(arg0: java.lang.Object | any): void
       public getOutput(): java.lang.Object
       public getAvailableLocales(): java.util.Locale[]
       public setLocale(arg0: java.util.Locale): void
@@ -21,7 +21,7 @@ declare namespace javax {
       public abstract getDefaultImageMetadata(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
       public abstract convertStreamMetadata(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
       public abstract convertImageMetadata(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageTypeSpecifier, arg2: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
-      public getNumThumbnailsSupported(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam, arg2: javax.imageio.metadata.IIOMetadata, arg3: javax.imageio.metadata.IIOMetadata): int
+      public getNumThumbnailsSupported(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam, arg2: javax.imageio.metadata.IIOMetadata, arg3: javax.imageio.metadata.IIOMetadata): number
       public getPreferredThumbnailSizes(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam, arg2: javax.imageio.metadata.IIOMetadata, arg3: javax.imageio.metadata.IIOMetadata): java.awt.Dimension[]
       public canWriteRasters(): boolean
       public abstract write(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.IIOImage, arg2: javax.imageio.ImageWriteParam): void
@@ -33,41 +33,41 @@ declare namespace javax {
       public endWriteSequence(): void
       public canReplaceStreamMetadata(): boolean
       public replaceStreamMetadata(arg0: javax.imageio.metadata.IIOMetadata): void
-      public canReplaceImageMetadata(arg0: int): boolean
-      public replaceImageMetadata(arg0: int, arg1: javax.imageio.metadata.IIOMetadata): void
-      public canInsertImage(arg0: int): boolean
-      public writeInsert(arg0: int, arg1: javax.imageio.IIOImage, arg2: javax.imageio.ImageWriteParam): void
-      public canRemoveImage(arg0: int): boolean
-      public removeImage(arg0: int): void
+      public canReplaceImageMetadata(arg0: number | java.lang.Integer): boolean
+      public replaceImageMetadata(arg0: number | java.lang.Integer, arg1: javax.imageio.metadata.IIOMetadata): void
+      public canInsertImage(arg0: number | java.lang.Integer): boolean
+      public writeInsert(arg0: number | java.lang.Integer, arg1: javax.imageio.IIOImage, arg2: javax.imageio.ImageWriteParam): void
+      public canRemoveImage(arg0: number | java.lang.Integer): boolean
+      public removeImage(arg0: number | java.lang.Integer): void
       public canWriteEmpty(): boolean
-      public prepareWriteEmpty(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageTypeSpecifier, arg2: int, arg3: int, arg4: javax.imageio.metadata.IIOMetadata, arg5: java.util.List<java.awt.image.BufferedImage>, arg6: javax.imageio.ImageWriteParam): void
+      public prepareWriteEmpty(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageTypeSpecifier, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: javax.imageio.metadata.IIOMetadata, arg5: java.util.List<java.awt.image.BufferedImage>, arg6: javax.imageio.ImageWriteParam): void
       public endWriteEmpty(): void
-      public canInsertEmpty(arg0: int): boolean
-      public prepareInsertEmpty(arg0: int, arg1: javax.imageio.ImageTypeSpecifier, arg2: int, arg3: int, arg4: javax.imageio.metadata.IIOMetadata, arg5: java.util.List<java.awt.image.BufferedImage>, arg6: javax.imageio.ImageWriteParam): void
+      public canInsertEmpty(arg0: number | java.lang.Integer): boolean
+      public prepareInsertEmpty(arg0: number | java.lang.Integer, arg1: javax.imageio.ImageTypeSpecifier, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: javax.imageio.metadata.IIOMetadata, arg5: java.util.List<java.awt.image.BufferedImage>, arg6: javax.imageio.ImageWriteParam): void
       public endInsertEmpty(): void
-      public canReplacePixels(arg0: int): boolean
-      public prepareReplacePixels(arg0: int, arg1: java.awt.Rectangle): void
+      public canReplacePixels(arg0: number | java.lang.Integer): boolean
+      public prepareReplacePixels(arg0: number | java.lang.Integer, arg1: java.awt.Rectangle): void
       public replacePixels(arg0: java.awt.image.RenderedImage, arg1: javax.imageio.ImageWriteParam): void
       public replacePixels(arg0: java.awt.image.Raster, arg1: javax.imageio.ImageWriteParam): void
       public endReplacePixels(): void
       public abort(): void
       protected abortRequested(): boolean
       protected clearAbortRequest(): void
-      public addIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener): void
-      public removeIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener): void
+      public addIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener | javax.imageio.event.IIOWriteWarningListener$$lambda): void
+      public removeIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener | javax.imageio.event.IIOWriteWarningListener$$lambda): void
       public removeAllIIOWriteWarningListeners(): void
       public addIIOWriteProgressListener(arg0: javax.imageio.event.IIOWriteProgressListener): void
       public removeIIOWriteProgressListener(arg0: javax.imageio.event.IIOWriteProgressListener): void
       public removeAllIIOWriteProgressListeners(): void
-      protected processImageStarted(arg0: int): void
-      protected processImageProgress(arg0: float): void
+      protected processImageStarted(arg0: number | java.lang.Integer): void
+      protected processImageProgress(arg0: number | java.lang.Float): void
       protected processImageComplete(): void
-      protected processThumbnailStarted(arg0: int, arg1: int): void
-      protected processThumbnailProgress(arg0: float): void
+      protected processThumbnailStarted(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      protected processThumbnailProgress(arg0: number | java.lang.Float): void
       protected processThumbnailComplete(): void
       protected processWriteAborted(): void
-      protected processWarningOccurred(arg0: int, arg1: java.lang.String): void
-      protected processWarningOccurred(arg0: int, arg1: java.lang.String, arg2: java.lang.String): void
+      protected processWarningOccurred(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
+      protected processWarningOccurred(arg0: number | java.lang.Integer, arg1: java.lang.String | string, arg2: java.lang.String | string): void
       public reset(): void
       public dispose(): void
     }

@@ -5,7 +5,7 @@ declare namespace org {
 
         interface HTMLHeadElement extends org.w3c.dom.html.HTMLElement {
           getProfile(): java.lang.String
-          setProfile(arg0: java.lang.String): void
+          setProfile(arg0: java.lang.String | string): void
         }
 
       }

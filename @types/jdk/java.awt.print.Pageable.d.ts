@@ -4,9 +4,9 @@ declare namespace java {
 
       interface Pageable {
         public static readonly UNKNOWN_NUMBER_OF_PAGES: int
-        getNumberOfPages(): int
-        getPageFormat(arg0: int): java.awt.print.PageFormat
-        getPrintable(arg0: int): java.awt.print.Printable
+        getNumberOfPages(): number
+        getPageFormat(arg0: number | java.lang.Integer): java.awt.print.PageFormat
+        getPrintable(arg0: number | java.lang.Integer): java.awt.print.Printable
       }
 
     }

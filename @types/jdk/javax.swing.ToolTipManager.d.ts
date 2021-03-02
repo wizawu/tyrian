@@ -16,16 +16,16 @@ declare namespace javax {
       protected lightWeightPopupEnabled: boolean
       protected heavyWeightPopupEnabled: boolean
       constructor()
-      public setEnabled(arg0: boolean): void
+      public setEnabled(arg0: boolean | java.lang.Boolean): void
       public isEnabled(): boolean
-      public setLightWeightPopupEnabled(arg0: boolean): void
+      public setLightWeightPopupEnabled(arg0: boolean | java.lang.Boolean): void
       public isLightWeightPopupEnabled(): boolean
-      public setInitialDelay(arg0: int): void
-      public getInitialDelay(): int
-      public setDismissDelay(arg0: int): void
-      public getDismissDelay(): int
-      public setReshowDelay(arg0: int): void
-      public getReshowDelay(): int
+      public setInitialDelay(arg0: number | java.lang.Integer): void
+      public getInitialDelay(): number
+      public setDismissDelay(arg0: number | java.lang.Integer): void
+      public getDismissDelay(): number
+      public setReshowDelay(arg0: number | java.lang.Integer): void
+      public getReshowDelay(): number
       showTipWindow(): void
       hideTipWindow(): void
       public static sharedInstance(): javax.swing.ToolTipManager

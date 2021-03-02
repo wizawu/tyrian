@@ -7,7 +7,7 @@ declare namespace java {
       }
 
       interface IntSupplier {
-        getAsInt(): int
+        getAsInt(): number
       }
 
     }

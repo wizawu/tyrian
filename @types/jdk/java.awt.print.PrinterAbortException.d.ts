@@ -4,7 +4,7 @@ declare namespace java {
 
       class PrinterAbortException extends java.awt.print.PrinterException {
         public constructor()
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

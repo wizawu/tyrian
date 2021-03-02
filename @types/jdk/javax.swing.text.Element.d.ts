@@ -7,11 +7,11 @@ declare namespace javax {
         getParentElement(): javax.swing.text.Element
         getName(): java.lang.String
         getAttributes(): javax.swing.text.AttributeSet
-        getStartOffset(): int
-        getEndOffset(): int
-        getElementIndex(arg0: int): int
-        getElementCount(): int
-        getElement(arg0: int): javax.swing.text.Element
+        getStartOffset(): number
+        getEndOffset(): number
+        getElementIndex(arg0: number | java.lang.Integer): number
+        getElementCount(): number
+        getElement(arg0: number | java.lang.Integer): javax.swing.text.Element
         isLeaf(): boolean
       }
 

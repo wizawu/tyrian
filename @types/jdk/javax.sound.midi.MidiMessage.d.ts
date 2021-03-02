@@ -6,10 +6,10 @@ declare namespace javax {
         protected data: byte[]
         protected length: int
         protected constructor(arg0: byte[])
-        protected setMessage(arg0: byte[], arg1: int): void
-        public getMessage(): byte[]
-        public getStatus(): int
-        public getLength(): int
+        protected setMessage(arg0: byte[], arg1: number | java.lang.Integer): void
+        public getMessage(): number[]
+        public getStatus(): number
+        public getLength(): number
         public abstract clone(): java.lang.Object
       }
 

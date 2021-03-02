@@ -30,46 +30,46 @@ declare namespace java {
         public usePattern(arg0: java.util.regex.Pattern): java.util.regex.Matcher
         public reset(): java.util.regex.Matcher
         public reset(arg0: java.lang.CharSequence): java.util.regex.Matcher
-        public start(): int
-        public start(arg0: int): int
-        public start(arg0: java.lang.String): int
-        public end(): int
-        public end(arg0: int): int
-        public end(arg0: java.lang.String): int
+        public start(): number
+        public start(arg0: number | java.lang.Integer): number
+        public start(arg0: java.lang.String | string): number
+        public end(): number
+        public end(arg0: number | java.lang.Integer): number
+        public end(arg0: java.lang.String | string): number
         public group(): java.lang.String
-        public group(arg0: int): java.lang.String
-        public group(arg0: java.lang.String): java.lang.String
-        public groupCount(): int
+        public group(arg0: number | java.lang.Integer): java.lang.String
+        public group(arg0: java.lang.String | string): java.lang.String
+        public groupCount(): number
         public matches(): boolean
         public find(): boolean
-        public find(arg0: int): boolean
+        public find(arg0: number | java.lang.Integer): boolean
         public lookingAt(): boolean
-        public static quoteReplacement(arg0: java.lang.String): java.lang.String
-        public appendReplacement(arg0: java.lang.StringBuffer, arg1: java.lang.String): java.util.regex.Matcher
-        public appendReplacement(arg0: java.lang.StringBuilder, arg1: java.lang.String): java.util.regex.Matcher
+        public static quoteReplacement(arg0: java.lang.String | string): java.lang.String
+        public appendReplacement(arg0: java.lang.StringBuffer, arg1: java.lang.String | string): java.util.regex.Matcher
+        public appendReplacement(arg0: java.lang.StringBuilder, arg1: java.lang.String | string): java.util.regex.Matcher
         public appendTail(arg0: java.lang.StringBuffer): java.lang.StringBuffer
         public appendTail(arg0: java.lang.StringBuilder): java.lang.StringBuilder
-        public replaceAll(arg0: java.lang.String): java.lang.String
+        public replaceAll(arg0: java.lang.String | string): java.lang.String
         public replaceAll(arg0: java.util.function$.Function<java.util.regex.MatchResult,java.lang.String>): java.lang.String
         public results(): java.util.stream.Stream<java.util.regex.MatchResult>
-        public replaceFirst(arg0: java.lang.String): java.lang.String
+        public replaceFirst(arg0: java.lang.String | string): java.lang.String
         public replaceFirst(arg0: java.util.function$.Function<java.util.regex.MatchResult,java.lang.String>): java.lang.String
-        public region(arg0: int, arg1: int): java.util.regex.Matcher
-        public regionStart(): int
-        public regionEnd(): int
+        public region(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.regex.Matcher
+        public regionStart(): number
+        public regionEnd(): number
         public hasTransparentBounds(): boolean
-        public useTransparentBounds(arg0: boolean): java.util.regex.Matcher
+        public useTransparentBounds(arg0: boolean | java.lang.Boolean): java.util.regex.Matcher
         public hasAnchoringBounds(): boolean
-        public useAnchoringBounds(arg0: boolean): java.util.regex.Matcher
+        public useAnchoringBounds(arg0: boolean | java.lang.Boolean): java.util.regex.Matcher
         public toString(): java.lang.String
         public hitEnd(): boolean
         public requireEnd(): boolean
-        search(arg0: int): boolean
-        match(arg0: int, arg1: int): boolean
-        getTextLength(): int
-        getSubSequence(arg0: int, arg1: int): java.lang.CharSequence
-        charAt(arg0: int): char
-        getMatchedGroupIndex(arg0: java.lang.String): int
+        search(arg0: number | java.lang.Integer): boolean
+        match(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
+        getTextLength(): number
+        getSubSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.CharSequence
+        charAt(arg0: number | java.lang.Integer): string
+        getMatchedGroupIndex(arg0: java.lang.String | string): number
       }
 
     }

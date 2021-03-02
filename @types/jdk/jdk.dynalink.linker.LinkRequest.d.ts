@@ -7,7 +7,7 @@ declare namespace jdk {
         getArguments(): java.lang.Object[]
         getReceiver(): java.lang.Object
         isCallSiteUnstable(): boolean
-        replaceArguments(arg0: jdk.dynalink.CallSiteDescriptor, ...arg1: java.lang.Object[]): jdk.dynalink.linker.LinkRequest
+        replaceArguments(arg0: jdk.dynalink.CallSiteDescriptor, ...vargs: (java.lang.Object | any)[]): jdk.dynalink.linker.LinkRequest
       }
 
     }

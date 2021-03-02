@@ -10,8 +10,8 @@ declare namespace java {
       dumpMarkers(): void
       clearMarkers(): void
       public processKeyEvent(arg0: java.awt.Component, arg1: java.awt.event.KeyEvent): void
-      protected enqueueKeyEvents(arg0: long, arg1: java.awt.Component): void
-      protected dequeueKeyEvents(arg0: long, arg1: java.awt.Component): void
+      protected enqueueKeyEvents(arg0: number | java.lang.Long, arg1: java.awt.Component): void
+      protected dequeueKeyEvents(arg0: number | java.lang.Long, arg1: java.awt.Component): void
       protected discardKeyEvents(arg0: java.awt.Component): void
       public focusPreviousComponent(arg0: java.awt.Component): void
       public focusNextComponent(arg0: java.awt.Component): void

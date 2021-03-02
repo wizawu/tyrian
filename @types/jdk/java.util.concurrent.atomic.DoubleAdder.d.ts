@@ -5,15 +5,15 @@ declare namespace java {
 
         class DoubleAdder extends java.util.concurrent.atomic.Striped64 implements java.io.Serializable {
           public constructor()
-          public add(arg0: double): void
-          public sum(): double
+          public add(arg0: number | java.lang.Double): void
+          public sum(): number
           public reset(): void
-          public sumThenReset(): double
+          public sumThenReset(): number
           public toString(): java.lang.String
-          public doubleValue(): double
-          public longValue(): long
-          public intValue(): int
-          public floatValue(): float
+          public doubleValue(): number
+          public longValue(): number
+          public intValue(): number
+          public floatValue(): number
         }
 
       }

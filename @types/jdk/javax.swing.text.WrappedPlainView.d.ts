@@ -14,29 +14,29 @@ declare namespace javax {
         unselected: java.awt.Color
         selected: java.awt.Color
         public constructor(arg0: javax.swing.text.Element)
-        public constructor(arg0: javax.swing.text.Element, arg1: boolean)
-        protected getTabSize(): int
-        protected drawLine(arg0: int, arg1: int, arg2: java.awt.Graphics, arg3: int, arg4: int): void
-        protected drawLine(arg0: int, arg1: int, arg2: java.awt.Graphics2D, arg3: float, arg4: float): void
-        protected drawUnselectedText(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int): int
-        protected drawUnselectedText(arg0: java.awt.Graphics2D, arg1: float, arg2: float, arg3: int, arg4: int): float
-        protected drawSelectedText(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int): int
-        protected drawSelectedText(arg0: java.awt.Graphics2D, arg1: float, arg2: float, arg3: int, arg4: int): float
+        public constructor(arg0: javax.swing.text.Element, arg1: boolean | java.lang.Boolean)
+        protected getTabSize(): number
+        protected drawLine(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.awt.Graphics, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        protected drawLine(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.awt.Graphics2D, arg3: number | java.lang.Float, arg4: number | java.lang.Float): void
+        protected drawUnselectedText(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
+        protected drawUnselectedText(arg0: java.awt.Graphics2D, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
+        protected drawSelectedText(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
+        protected drawSelectedText(arg0: java.awt.Graphics2D, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
         protected getLineBuffer(): javax.swing.text.Segment
-        protected calculateBreakPosition(arg0: int, arg1: int): int
-        protected loadChildren(arg0: javax.swing.text.ViewFactory): void
+        protected calculateBreakPosition(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+        protected loadChildren(arg0: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$lambda): void
         updateChildren(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape): void
-        loadText(arg0: javax.swing.text.Segment, arg1: int, arg2: int): void
+        loadText(arg0: javax.swing.text.Segment, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         updateMetrics(): void
-        public nextTabStop(arg0: float, arg1: int): float
+        public nextTabStop(arg0: number | java.lang.Float, arg1: number | java.lang.Integer): number
         public paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void
-        public setSize(arg0: float, arg1: float): void
-        public getPreferredSpan(arg0: int): float
-        public getMinimumSpan(arg0: int): float
-        public getMaximumSpan(arg0: int): float
-        public insertUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory): void
-        public removeUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory): void
-        public changedUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory): void
+        public setSize(arg0: number | java.lang.Float, arg1: number | java.lang.Float): void
+        public getPreferredSpan(arg0: number | java.lang.Integer): number
+        public getMinimumSpan(arg0: number | java.lang.Integer): number
+        public getMaximumSpan(arg0: number | java.lang.Integer): number
+        public insertUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$lambda): void
+        public removeUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$lambda): void
+        public changedUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$lambda): void
       }
 
     }

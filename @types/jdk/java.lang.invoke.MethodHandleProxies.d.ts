@@ -5,9 +5,9 @@ declare namespace java {
       class MethodHandleProxies {
         static readonly $assertionsDisabled: boolean
         public static asInterfaceInstance<T>(arg0: java.lang.Class<T>, arg1: java.lang.invoke.MethodHandle): T
-        public static isWrapperInstance(arg0: java.lang.Object): boolean
-        public static wrapperInstanceTarget(arg0: java.lang.Object): java.lang.invoke.MethodHandle
-        public static wrapperInstanceType(arg0: java.lang.Object): java.lang.Class<unknown>
+        public static isWrapperInstance(arg0: java.lang.Object | any): boolean
+        public static wrapperInstanceTarget(arg0: java.lang.Object | any): java.lang.invoke.MethodHandle
+        public static wrapperInstanceType(arg0: java.lang.Object | any): java.lang.Class<unknown>
       }
 
     }

@@ -3,11 +3,11 @@ declare namespace java {
     namespace spi {
 
       interface ResourceBundleControlProvider$$lambda {
-        (arg0: java.lang.String): java.util.ResourceBundle$Control
+        (arg0: java.lang.String | string): java.util.ResourceBundle$Control
       }
 
       interface ResourceBundleControlProvider {
-        getControl(arg0: java.lang.String): java.util.ResourceBundle$Control
+        getControl(arg0: java.lang.String | string): java.util.ResourceBundle$Control
       }
 
     }

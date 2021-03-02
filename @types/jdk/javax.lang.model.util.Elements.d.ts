@@ -26,8 +26,8 @@ declare namespace javax {
           getAllAnnotationMirrors(arg0: javax.lang.model.element.Element): java.util.List<javax.lang.model.element.AnnotationMirror>
           hides(arg0: javax.lang.model.element.Element, arg1: javax.lang.model.element.Element): boolean
           overrides(arg0: javax.lang.model.element.ExecutableElement, arg1: javax.lang.model.element.ExecutableElement, arg2: javax.lang.model.element.TypeElement): boolean
-          getConstantExpression(arg0: java.lang.Object): java.lang.String
-          printElements(arg0: java.io.Writer, ...arg1: javax.lang.model.element.Element[]): void
+          getConstantExpression(arg0: java.lang.Object | any): java.lang.String
+          printElements(arg0: java.io.Writer, ...vargs: (javax.lang.model.element.Element)[]): void
           getName(arg0: java.lang.CharSequence): javax.lang.model.element.Name
           isFunctionalInterface(arg0: javax.lang.model.element.TypeElement): boolean
         }

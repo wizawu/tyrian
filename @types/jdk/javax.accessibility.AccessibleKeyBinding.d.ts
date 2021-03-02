@@ -2,8 +2,8 @@ declare namespace javax {
   namespace accessibility {
 
     interface AccessibleKeyBinding {
-      getAccessibleKeyBindingCount(): int
-      getAccessibleKeyBinding(arg0: int): java.lang.Object
+      getAccessibleKeyBindingCount(): number
+      getAccessibleKeyBinding(arg0: number | java.lang.Integer): java.lang.Object
     }
 
   }

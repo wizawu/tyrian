@@ -3,7 +3,7 @@ declare namespace javax {
 
     class NoInitialContextException extends javax.naming.NamingException {
       public constructor()
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
     }
 
   }

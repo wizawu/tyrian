@@ -2,9 +2,9 @@ declare namespace javax {
   namespace accessibility {
 
     interface AccessibleHypertext extends javax.accessibility.AccessibleText {
-      getLinkCount(): int
-      getLink(arg0: int): javax.accessibility.AccessibleHyperlink
-      getLinkIndex(arg0: int): int
+      getLinkCount(): number
+      getLink(arg0: number | java.lang.Integer): javax.accessibility.AccessibleHyperlink
+      getLinkIndex(arg0: number | java.lang.Integer): number
     }
 
   }

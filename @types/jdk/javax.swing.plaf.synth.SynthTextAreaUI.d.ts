@@ -12,7 +12,7 @@ declare namespace javax {
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
           protected paintBackground(arg0: java.awt.Graphics): void
-          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
+          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
           protected propertyChange(arg0: java.beans.PropertyChangeEvent): void
           static access$000(arg0: javax.swing.plaf.synth.SynthTextAreaUI): javax.swing.text.JTextComponent
           static access$100(arg0: javax.swing.plaf.synth.SynthTextAreaUI): javax.swing.text.JTextComponent

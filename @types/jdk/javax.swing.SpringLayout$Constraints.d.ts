@@ -14,8 +14,8 @@ declare namespace javax {
       public getWidth(): javax.swing.Spring
       public setHeight(arg0: javax.swing.Spring): void
       public getHeight(): javax.swing.Spring
-      public setConstraint(arg0: java.lang.String, arg1: javax.swing.Spring): void
-      public getConstraint(arg0: java.lang.String): javax.swing.Spring
+      public setConstraint(arg0: java.lang.String | string, arg1: javax.swing.Spring): void
+      public getConstraint(arg0: java.lang.String | string): javax.swing.Spring
       reset(): void
     }
 

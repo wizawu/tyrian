@@ -20,8 +20,8 @@ declare namespace javax {
           getNoType(arg0: javax.lang.model.type.TypeKind): javax.lang.model.type.NoType
           getArrayType(arg0: javax.lang.model.type.TypeMirror): javax.lang.model.type.ArrayType
           getWildcardType(arg0: javax.lang.model.type.TypeMirror, arg1: javax.lang.model.type.TypeMirror): javax.lang.model.type.WildcardType
-          getDeclaredType(arg0: javax.lang.model.element.TypeElement, ...arg1: javax.lang.model.type.TypeMirror[]): javax.lang.model.type.DeclaredType
-          getDeclaredType(arg0: javax.lang.model.type.DeclaredType, arg1: javax.lang.model.element.TypeElement, ...arg2: javax.lang.model.type.TypeMirror[]): javax.lang.model.type.DeclaredType
+          getDeclaredType(arg0: javax.lang.model.element.TypeElement, ...vargs: (javax.lang.model.type.TypeMirror)[]): javax.lang.model.type.DeclaredType
+          getDeclaredType(arg0: javax.lang.model.type.DeclaredType, arg1: javax.lang.model.element.TypeElement, ...vargs: (javax.lang.model.type.TypeMirror)[]): javax.lang.model.type.DeclaredType
           asMemberOf(arg0: javax.lang.model.type.DeclaredType, arg1: javax.lang.model.element.Element): javax.lang.model.type.TypeMirror
         }
 

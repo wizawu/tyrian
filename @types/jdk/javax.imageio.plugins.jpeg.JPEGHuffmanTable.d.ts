@@ -9,8 +9,8 @@ declare namespace javax {
           public static readonly StdACLuminance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
           public static readonly StdACChrominance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
           public constructor(arg0: short[], arg1: short[])
-          public getLengths(): short[]
-          public getValues(): short[]
+          public getLengths(): number[]
+          public getValues(): number[]
           public toString(): java.lang.String
         }
 

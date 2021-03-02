@@ -7,8 +7,8 @@ declare namespace com {
           public static readonly CONNECTION_STATE_PROPERTY: java.lang.String
           getMBeanServerConnection(): javax.management.MBeanServerConnection
           getConnectionState(): com.sun.tools.jconsole.JConsoleContext$ConnectionState
-          addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-          removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+          addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+          removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
         }
 
       }

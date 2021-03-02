@@ -3,18 +3,18 @@ declare namespace javax {
 
     class SizeSequence {
       public constructor()
-      public constructor(arg0: int)
-      public constructor(arg0: int, arg1: int)
+      public constructor(arg0: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
       public constructor(arg0: int[])
-      setSizes(arg0: int, arg1: int): void
+      setSizes(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public setSizes(arg0: int[]): void
-      public getSizes(): int[]
-      public getPosition(arg0: int): int
-      public getIndex(arg0: int): int
-      public getSize(arg0: int): int
-      public setSize(arg0: int, arg1: int): void
-      public insertEntries(arg0: int, arg1: int, arg2: int): void
-      public removeEntries(arg0: int, arg1: int): void
+      public getSizes(): number[]
+      public getPosition(arg0: number | java.lang.Integer): number
+      public getIndex(arg0: number | java.lang.Integer): number
+      public getSize(arg0: number | java.lang.Integer): number
+      public setSize(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public insertEntries(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public removeEntries(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
     }
 
   }

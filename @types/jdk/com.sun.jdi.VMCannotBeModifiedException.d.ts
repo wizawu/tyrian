@@ -4,7 +4,7 @@ declare namespace com {
 
       class VMCannotBeModifiedException extends java.lang.UnsupportedOperationException {
         public constructor()
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

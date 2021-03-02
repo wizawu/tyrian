@@ -11,23 +11,23 @@ declare namespace javax {
         public getProtocols(): java.lang.String[]
         public setProtocols(arg0: java.lang.String[]): void
         public getWantClientAuth(): boolean
-        public setWantClientAuth(arg0: boolean): void
+        public setWantClientAuth(arg0: boolean | java.lang.Boolean): void
         public getNeedClientAuth(): boolean
-        public setNeedClientAuth(arg0: boolean): void
+        public setNeedClientAuth(arg0: boolean | java.lang.Boolean): void
         public getAlgorithmConstraints(): java.security.AlgorithmConstraints
         public setAlgorithmConstraints(arg0: java.security.AlgorithmConstraints): void
         public getEndpointIdentificationAlgorithm(): java.lang.String
-        public setEndpointIdentificationAlgorithm(arg0: java.lang.String): void
+        public setEndpointIdentificationAlgorithm(arg0: java.lang.String | string): void
         public setServerNames(arg0: java.util.List<javax.net.ssl.SNIServerName>): void
         public getServerNames(): java.util.List<javax.net.ssl.SNIServerName>
         public setSNIMatchers(arg0: java.util.Collection<javax.net.ssl.SNIMatcher>): void
         public getSNIMatchers(): java.util.Collection<javax.net.ssl.SNIMatcher>
-        public setUseCipherSuitesOrder(arg0: boolean): void
+        public setUseCipherSuitesOrder(arg0: boolean | java.lang.Boolean): void
         public getUseCipherSuitesOrder(): boolean
-        public setEnableRetransmissions(arg0: boolean): void
+        public setEnableRetransmissions(arg0: boolean | java.lang.Boolean): void
         public getEnableRetransmissions(): boolean
-        public setMaximumPacketSize(arg0: int): void
-        public getMaximumPacketSize(): int
+        public setMaximumPacketSize(arg0: number | java.lang.Integer): void
+        public getMaximumPacketSize(): number
         public getApplicationProtocols(): java.lang.String[]
         public setApplicationProtocols(arg0: java.lang.String[]): void
       }

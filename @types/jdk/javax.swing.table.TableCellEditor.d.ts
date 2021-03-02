@@ -3,7 +3,7 @@ declare namespace javax {
     namespace table {
 
       interface TableCellEditor extends javax.swing.CellEditor {
-        getTableCellEditorComponent(arg0: javax.swing.JTable, arg1: java.lang.Object, arg2: boolean, arg3: int, arg4: int): java.awt.Component
+        getTableCellEditorComponent(arg0: javax.swing.JTable, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): java.awt.Component
       }
 
     }

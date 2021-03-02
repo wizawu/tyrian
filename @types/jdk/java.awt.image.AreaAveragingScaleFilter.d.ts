@@ -3,10 +3,10 @@ declare namespace java {
     namespace image {
 
       class AreaAveragingScaleFilter extends java.awt.image.ReplicateScaleFilter {
-        public constructor(arg0: int, arg1: int)
-        public setHints(arg0: int): void
-        public setPixels(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.image.ColorModel, arg5: byte[], arg6: int, arg7: int): void
-        public setPixels(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.image.ColorModel, arg5: int[], arg6: int, arg7: int): void
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        public setHints(arg0: number | java.lang.Integer): void
+        public setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: byte[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
+        public setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: int[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
       }
 
     }

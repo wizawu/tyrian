@@ -14,7 +14,7 @@ declare namespace javax {
           protected installDefaults(): void
           protected installListeners(): void
           protected installKeyboardActions(): void
-          getInputMap(arg0: int): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           public uninstallUI(arg0: javax.swing.JComponent): void
           protected uninstallDefaults(): void
           protected uninstallListeners(): void

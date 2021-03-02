@@ -12,13 +12,13 @@ declare namespace javax {
           static readonly Focused: javax.swing.plaf.nimbus.State<javax.swing.JComponent>
           static readonly Selected: javax.swing.plaf.nimbus.State<javax.swing.JComponent>
           static readonly Default: javax.swing.plaf.nimbus.State<javax.swing.JComponent>
-          protected constructor(arg0: java.lang.String)
+          protected constructor(arg0: java.lang.String | string)
           public toString(): java.lang.String
-          isInState(arg0: T, arg1: int): boolean
+          isInState(arg0: T, arg1: number | java.lang.Integer): boolean
           protected abstract isInState(arg0: T): boolean
           getName(): java.lang.String
-          static isStandardStateName(arg0: java.lang.String): boolean
-          static getStandardState(arg0: java.lang.String): javax.swing.plaf.nimbus.State$StandardState
+          static isStandardStateName(arg0: java.lang.String | string): boolean
+          static getStandardState(arg0: java.lang.String | string): javax.swing.plaf.nimbus.State$StandardState
         }
 
       }

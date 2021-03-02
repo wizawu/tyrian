@@ -18,12 +18,12 @@ declare namespace javax {
           public constructor(arg0: javax.swing.plaf.basic.BasicSplitPaneUI)
           public setBasicSplitPaneUI(arg0: javax.swing.plaf.basic.BasicSplitPaneUI): void
           public getBasicSplitPaneUI(): javax.swing.plaf.basic.BasicSplitPaneUI
-          public setDividerSize(arg0: int): void
-          public getDividerSize(): int
+          public setDividerSize(arg0: number | java.lang.Integer): void
+          public getDividerSize(): number
           public setBorder(arg0: javax.swing.border.Border): void
           public getBorder(): javax.swing.border.Border
           public getInsets(): java.awt.Insets
-          protected setMouseOver(arg0: boolean): void
+          protected setMouseOver(arg0: boolean | java.lang.Boolean): void
           public isMouseOver(): boolean
           public getPreferredSize(): java.awt.Dimension
           public getMinimumSize(): java.awt.Dimension
@@ -33,8 +33,8 @@ declare namespace javax {
           protected createLeftOneTouchButton(): javax.swing.JButton
           protected createRightOneTouchButton(): javax.swing.JButton
           protected prepareForDragging(): void
-          protected dragDividerTo(arg0: int): void
-          protected finishDraggingTo(arg0: int): void
+          protected dragDividerTo(arg0: number | java.lang.Integer): void
+          protected finishDraggingTo(arg0: number | java.lang.Integer): void
         }
 
       }

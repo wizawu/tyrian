@@ -10,7 +10,7 @@ declare namespace jdk {
         getGuardedInvocation(arg0: jdk.dynalink.linker.LinkRequest): jdk.dynalink.linker.GuardedInvocation
         compareConversion(arg0: java.lang.Class<unknown>, arg1: java.lang.Class<unknown>, arg2: java.lang.Class<unknown>): jdk.dynalink.linker.ConversionComparator$Comparison
         filterInternalObjects(arg0: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle
-        getWithLookup<T>(arg0: java.util.function$.Supplier<T>, arg1: jdk.dynalink.SecureLookupSupplier): T
+        getWithLookup<T>(arg0: java.util.function$.Supplier<T> | java.util.function$.Supplier$$lambda<T>, arg1: jdk.dynalink.SecureLookupSupplier): T
       }
 
     }

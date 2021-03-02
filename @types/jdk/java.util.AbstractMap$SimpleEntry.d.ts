@@ -7,8 +7,8 @@ declare namespace java {
       public getKey(): K
       public getValue(): V
       public setValue(arg0: V): V
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
       public toString(): java.lang.String
     }
 

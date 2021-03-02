@@ -6,7 +6,7 @@ declare namespace com {
         class AttachNotSupportedException extends java.lang.Exception {
           static readonly serialVersionUID: long
           public constructor()
-          public constructor(arg0: java.lang.String)
+          public constructor(arg0: java.lang.String | string)
         }
 
       }

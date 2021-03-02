@@ -8,7 +8,7 @@ declare namespace java {
       public static readonly ROWID_VALID_TRANSACTION: java.sql.RowIdLifetime
       public static readonly ROWID_VALID_FOREVER: java.sql.RowIdLifetime
       public static values(): java.sql.RowIdLifetime[]
-      public static valueOf(arg0: java.lang.String): java.sql.RowIdLifetime
+      public static valueOf(arg0: java.lang.String | string): java.sql.RowIdLifetime
     }
 
   }

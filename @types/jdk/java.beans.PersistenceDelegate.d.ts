@@ -3,10 +3,10 @@ declare namespace java {
 
     abstract class PersistenceDelegate {
       public constructor()
-      public writeObject(arg0: java.lang.Object, arg1: java.beans.Encoder): void
-      protected mutatesTo(arg0: java.lang.Object, arg1: java.lang.Object): boolean
-      protected abstract instantiate(arg0: java.lang.Object, arg1: java.beans.Encoder): java.beans.Expression
-      protected initialize(arg0: java.lang.Class<unknown>, arg1: java.lang.Object, arg2: java.lang.Object, arg3: java.beans.Encoder): void
+      public writeObject(arg0: java.lang.Object | any, arg1: java.beans.Encoder): void
+      protected mutatesTo(arg0: java.lang.Object | any, arg1: java.lang.Object | any): boolean
+      protected abstract instantiate(arg0: java.lang.Object | any, arg1: java.beans.Encoder): java.beans.Expression
+      protected initialize(arg0: java.lang.Class<unknown>, arg1: java.lang.Object | any, arg2: java.lang.Object | any, arg3: java.beans.Encoder): void
     }
 
   }

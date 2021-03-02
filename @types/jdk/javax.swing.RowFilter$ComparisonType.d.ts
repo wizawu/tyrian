@@ -7,7 +7,7 @@ declare namespace javax {
       public static readonly EQUAL: javax.swing.RowFilter$ComparisonType
       public static readonly NOT_EQUAL: javax.swing.RowFilter$ComparisonType
       public static values(): javax.swing.RowFilter$ComparisonType[]
-      public static valueOf(arg0: java.lang.String): javax.swing.RowFilter$ComparisonType
+      public static valueOf(arg0: java.lang.String | string): javax.swing.RowFilter$ComparisonType
     }
 
   }

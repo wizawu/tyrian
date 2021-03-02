@@ -8,7 +8,7 @@ declare namespace javax {
           public static readonly NA_LETTER_TRANSPARENT: javax.print.attribute.standard.MediaName
           public static readonly ISO_A4_WHITE: javax.print.attribute.standard.MediaName
           public static readonly ISO_A4_TRANSPARENT: javax.print.attribute.standard.MediaName
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
         }

@@ -3,7 +3,7 @@ declare namespace java {
     namespace image {
 
       class RasterFormatException extends java.lang.RuntimeException {
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

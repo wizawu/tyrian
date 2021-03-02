@@ -57,7 +57,7 @@ declare namespace java {
       centerPadding: int
       centerOffset: int
       public constructor()
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: double, arg5: double, arg6: int, arg7: int, arg8: java.awt.Insets, arg9: int, arg10: int)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Double, arg5: number | java.lang.Double, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: java.awt.Insets, arg9: number | java.lang.Integer, arg10: number | java.lang.Integer)
       public clone(): java.lang.Object
       isVerticallyResizable(): boolean
     }

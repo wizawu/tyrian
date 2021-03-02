@@ -25,8 +25,8 @@ declare namespace javax {
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
           protected installComponents(): void
           protected installListeners(): void
-          getInputMap(arg0: int): javax.swing.InputMap
-          createInputMap(arg0: int): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
+          createInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           protected uninstallDefaults(): void
           protected uninstallComponents(): void
           protected uninstallListeners(): void
@@ -47,9 +47,9 @@ declare namespace javax {
           protected createBorderListener(arg0: javax.swing.JInternalFrame): javax.swing.event.MouseInputAdapter
           protected createInternalFrameListener(): void
           protected isKeyBindingRegistered(): boolean
-          protected setKeyBindingRegistered(arg0: boolean): void
+          protected setKeyBindingRegistered(arg0: boolean | java.lang.Boolean): void
           public isKeyBindingActive(): boolean
-          protected setKeyBindingActive(arg0: boolean): void
+          protected setKeyBindingActive(arg0: boolean | java.lang.Boolean): void
           protected setupMenuOpenKey(): void
           protected setupMenuCloseKey(): void
           public getNorthPane(): javax.swing.JComponent

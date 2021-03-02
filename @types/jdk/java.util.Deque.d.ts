@@ -14,8 +14,8 @@ declare namespace java {
       getLast(): E
       peekFirst(): E
       peekLast(): E
-      removeFirstOccurrence(arg0: java.lang.Object): boolean
-      removeLastOccurrence(arg0: java.lang.Object): boolean
+      removeFirstOccurrence(arg0: java.lang.Object | any): boolean
+      removeLastOccurrence(arg0: java.lang.Object | any): boolean
       add(arg0: E): boolean
       offer(arg0: E): boolean
       remove(): E
@@ -25,9 +25,9 @@ declare namespace java {
       addAll(arg0: java.util.Collection<E>): boolean
       push(arg0: E): void
       pop(): E
-      remove(arg0: java.lang.Object): boolean
-      contains(arg0: java.lang.Object): boolean
-      size(): int
+      remove(arg0: java.lang.Object | any): boolean
+      contains(arg0: java.lang.Object | any): boolean
+      size(): number
       iterator(): java.util.Iterator<E>
       descendingIterator(): java.util.Iterator<E>
     }

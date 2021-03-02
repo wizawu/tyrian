@@ -10,17 +10,17 @@ declare namespace javax {
         public static readonly JoinNextDirection: short
         public static readonly OriginateDirection: short
         public static readonly JoinFractureDirection: short
-        public constructor(arg0: javax.swing.text.AttributeSet, arg1: short)
-        public constructor(arg0: javax.swing.text.AttributeSet, arg1: short, arg2: int)
-        public constructor(arg0: javax.swing.text.AttributeSet, arg1: short, arg2: char[], arg3: int, arg4: int)
-        public setType(arg0: short): void
-        public getType(): short
-        public setDirection(arg0: short): void
-        public getDirection(): short
+        public constructor(arg0: javax.swing.text.AttributeSet, arg1: number | java.lang.Short)
+        public constructor(arg0: javax.swing.text.AttributeSet, arg1: number | java.lang.Short, arg2: number | java.lang.Integer)
+        public constructor(arg0: javax.swing.text.AttributeSet, arg1: number | java.lang.Short, arg2: char[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+        public setType(arg0: number | java.lang.Short): void
+        public getType(): number
+        public setDirection(arg0: number | java.lang.Short): void
+        public getDirection(): number
         public getAttributes(): javax.swing.text.AttributeSet
-        public getArray(): char[]
-        public getOffset(): int
-        public getLength(): int
+        public getArray(): string[]
+        public getOffset(): number
+        public getLength(): number
         public toString(): java.lang.String
       }
 

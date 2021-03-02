@@ -7,14 +7,14 @@ declare namespace javax {
           public static readonly FEATURE: java.lang.String
           public constructor()
           public constructor(arg0: org.w3c.dom.Node)
-          public constructor(arg0: org.w3c.dom.Node, arg1: java.lang.String)
+          public constructor(arg0: org.w3c.dom.Node, arg1: java.lang.String | string)
           public constructor(arg0: org.w3c.dom.Node, arg1: org.w3c.dom.Node)
-          public constructor(arg0: org.w3c.dom.Node, arg1: org.w3c.dom.Node, arg2: java.lang.String)
+          public constructor(arg0: org.w3c.dom.Node, arg1: org.w3c.dom.Node, arg2: java.lang.String | string)
           public setNode(arg0: org.w3c.dom.Node): void
           public getNode(): org.w3c.dom.Node
           public setNextSibling(arg0: org.w3c.dom.Node): void
           public getNextSibling(): org.w3c.dom.Node
-          public setSystemId(arg0: java.lang.String): void
+          public setSystemId(arg0: java.lang.String | string): void
           public getSystemId(): java.lang.String
         }
 

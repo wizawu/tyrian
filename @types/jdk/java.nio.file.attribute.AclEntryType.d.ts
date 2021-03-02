@@ -9,7 +9,7 @@ declare namespace java {
           public static readonly AUDIT: java.nio.file.attribute.AclEntryType
           public static readonly ALARM: java.nio.file.attribute.AclEntryType
           public static values(): java.nio.file.attribute.AclEntryType[]
-          public static valueOf(arg0: java.lang.String): java.nio.file.attribute.AclEntryType
+          public static valueOf(arg0: java.lang.String | string): java.nio.file.attribute.AclEntryType
         }
 
       }

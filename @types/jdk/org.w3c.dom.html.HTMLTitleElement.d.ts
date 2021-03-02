@@ -5,7 +5,7 @@ declare namespace org {
 
         interface HTMLTitleElement extends org.w3c.dom.html.HTMLElement {
           getText(): java.lang.String
-          setText(arg0: java.lang.String): void
+          setText(arg0: java.lang.String | string): void
         }
 
       }

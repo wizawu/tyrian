@@ -9,8 +9,8 @@ declare namespace com {
         listeningConnectors(): java.util.List<com.sun.jdi.connect.ListeningConnector>
         allConnectors(): java.util.List<com.sun.jdi.connect.Connector>
         connectedVirtualMachines(): java.util.List<com.sun.jdi.VirtualMachine>
-        majorInterfaceVersion(): int
-        minorInterfaceVersion(): int
+        majorInterfaceVersion(): number
+        minorInterfaceVersion(): number
         createVirtualMachine(arg0: com.sun.jdi.connect.spi.Connection, arg1: java.lang.Process): com.sun.jdi.VirtualMachine
         createVirtualMachine(arg0: com.sun.jdi.connect.spi.Connection): com.sun.jdi.VirtualMachine
       }

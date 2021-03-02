@@ -4,8 +4,8 @@ declare namespace com {
 
       interface SourcePosition {
         file(): java.io.File
-        line(): int
-        column(): int
+        line(): number
+        column(): number
         toString(): java.lang.String
       }
 

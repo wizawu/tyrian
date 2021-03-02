@@ -16,7 +16,7 @@ declare namespace javax {
       public setUI(arg0: javax.swing.plaf.ViewportUI): void
       public updateUI(): void
       public getUIClassID(): java.lang.String
-      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
+      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       public remove(arg0: java.awt.Component): void
       public scrollRectToVisible(arg0: java.awt.Rectangle): void
       public setBorder(arg0: javax.swing.border.Border): void
@@ -25,11 +25,11 @@ declare namespace javax {
       public isOptimizedDrawingEnabled(): boolean
       protected isPaintingOrigin(): boolean
       public paint(arg0: java.awt.Graphics): void
-      public reshape(arg0: int, arg1: int, arg2: int, arg3: int): void
-      public setScrollMode(arg0: int): void
-      public getScrollMode(): int
+      public reshape(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public setScrollMode(arg0: number | java.lang.Integer): void
+      public getScrollMode(): number
       public isBackingStoreEnabled(): boolean
-      public setBackingStoreEnabled(arg0: boolean): void
+      public setBackingStoreEnabled(arg0: boolean | java.lang.Boolean): void
       public getView(): java.awt.Component
       public setView(arg0: java.awt.Component): void
       public getViewSize(): java.awt.Dimension
@@ -37,20 +37,20 @@ declare namespace javax {
       public getViewPosition(): java.awt.Point
       public setViewPosition(arg0: java.awt.Point): void
       public getViewRect(): java.awt.Rectangle
-      protected computeBlit(arg0: int, arg1: int, arg2: java.awt.Point, arg3: java.awt.Point, arg4: java.awt.Dimension, arg5: java.awt.Rectangle): boolean
+      protected computeBlit(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.awt.Point, arg3: java.awt.Point, arg4: java.awt.Dimension, arg5: java.awt.Rectangle): boolean
       public getExtentSize(): java.awt.Dimension
       public toViewCoordinates(arg0: java.awt.Dimension): java.awt.Dimension
       public toViewCoordinates(arg0: java.awt.Point): java.awt.Point
       public setExtentSize(arg0: java.awt.Dimension): void
       protected createViewListener(): javax.swing.JViewport$ViewListener
       protected createLayoutManager(): java.awt.LayoutManager
-      public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+      public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
-      public repaint(arg0: long, arg1: int, arg2: int, arg3: int, arg4: int): void
+      public repaint(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
       protected paramString(): java.lang.String
-      protected firePropertyChange(arg0: java.lang.String, arg1: java.lang.Object, arg2: java.lang.Object): void
+      protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }

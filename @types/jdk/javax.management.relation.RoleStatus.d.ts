@@ -11,7 +11,7 @@ declare namespace javax {
         public static readonly REF_MBEAN_OF_INCORRECT_CLASS: int
         public static readonly REF_MBEAN_NOT_REGISTERED: int
         public constructor()
-        public static isRoleStatus(arg0: int): boolean
+        public static isRoleStatus(arg0: number | java.lang.Integer): boolean
       }
 
     }

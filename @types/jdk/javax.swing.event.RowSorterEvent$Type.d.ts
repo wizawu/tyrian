@@ -6,7 +6,7 @@ declare namespace javax {
         public static readonly SORT_ORDER_CHANGED: javax.swing.event.RowSorterEvent$Type
         public static readonly SORTED: javax.swing.event.RowSorterEvent$Type
         public static values(): javax.swing.event.RowSorterEvent$Type[]
-        public static valueOf(arg0: java.lang.String): javax.swing.event.RowSorterEvent$Type
+        public static valueOf(arg0: java.lang.String | string): javax.swing.event.RowSorterEvent$Type
       }
 
     }

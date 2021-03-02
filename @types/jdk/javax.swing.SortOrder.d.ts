@@ -6,7 +6,7 @@ declare namespace javax {
       public static readonly DESCENDING: javax.swing.SortOrder
       public static readonly UNSORTED: javax.swing.SortOrder
       public static values(): javax.swing.SortOrder[]
-      public static valueOf(arg0: java.lang.String): javax.swing.SortOrder
+      public static valueOf(arg0: java.lang.String | string): javax.swing.SortOrder
     }
 
   }

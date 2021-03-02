@@ -8,8 +8,8 @@ declare namespace com {
         isTransient(): boolean
         isVolatile(): boolean
         isEnumConstant(): boolean
-        equals(arg0: java.lang.Object): boolean
-        hashCode(): int
+        equals(arg0: java.lang.Object | any): boolean
+        hashCode(): number
       }
 
     }

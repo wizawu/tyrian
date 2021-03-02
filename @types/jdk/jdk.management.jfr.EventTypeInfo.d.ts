@@ -6,7 +6,7 @@ declare namespace jdk {
         constructor(arg0: jdk.jfr.EventType)
         public getLabel(): java.lang.String
         public getCategoryNames(): java.util.List<java.lang.String>
-        public getId(): long
+        public getId(): number
         public getName(): java.lang.String
         public getDescription(): java.lang.String
         public getSettingDescriptors(): java.util.List<jdk.management.jfr.SettingDescriptorInfo>

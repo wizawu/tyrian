@@ -11,11 +11,11 @@ declare namespace java {
         intPixels: int[]
         public constructor(arg0: java.awt.image.BufferedImageOp)
         public getBufferedImageOp(): java.awt.image.BufferedImageOp
-        public setDimensions(arg0: int, arg1: int): void
+        public setDimensions(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
         public setColorModel(arg0: java.awt.image.ColorModel): void
-        public setPixels(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.image.ColorModel, arg5: byte[], arg6: int, arg7: int): void
-        public setPixels(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.image.ColorModel, arg5: int[], arg6: int, arg7: int): void
-        public imageComplete(arg0: int): void
+        public setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: byte[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
+        public setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: int[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
+        public imageComplete(arg0: number | java.lang.Integer): void
       }
 
     }

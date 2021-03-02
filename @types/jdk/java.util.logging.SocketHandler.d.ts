@@ -4,7 +4,7 @@ declare namespace java {
 
       class SocketHandler extends java.util.logging.StreamHandler {
         public constructor()
-        public constructor(arg0: java.lang.String, arg1: int)
+        public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
         public close(): void
         public publish(arg0: java.util.logging.LogRecord): void
       }

@@ -12,16 +12,16 @@ declare namespace java {
         public abstract selector(): java.nio.channels.Selector
         public abstract isValid(): boolean
         public abstract cancel(): void
-        public abstract interestOps(): int
-        public abstract interestOps(arg0: int): java.nio.channels.SelectionKey
-        public interestOpsOr(arg0: int): int
-        public interestOpsAnd(arg0: int): int
-        public abstract readyOps(): int
+        public abstract interestOps(): number
+        public abstract interestOps(arg0: number | java.lang.Integer): java.nio.channels.SelectionKey
+        public interestOpsOr(arg0: number | java.lang.Integer): number
+        public interestOpsAnd(arg0: number | java.lang.Integer): number
+        public abstract readyOps(): number
         public isReadable(): boolean
         public isWritable(): boolean
         public isConnectable(): boolean
         public isAcceptable(): boolean
-        public attach(arg0: java.lang.Object): java.lang.Object
+        public attach(arg0: java.lang.Object | any): java.lang.Object
         public attachment(): java.lang.Object
       }
 

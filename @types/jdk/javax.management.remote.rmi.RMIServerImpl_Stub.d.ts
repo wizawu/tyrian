@@ -7,9 +7,9 @@ declare namespace javax {
           static class$javax$management$remote$rmi$RMIServer: java.lang.Class
           static class$java$lang$Object: java.lang.Class
           public constructor(arg0: java.rmi.server.RemoteRef)
-          static class$(arg0: java.lang.String): java.lang.Class
+          static class$(arg0: java.lang.String | string): java.lang.Class
           public getVersion(): java.lang.String
-          public newClient(arg0: java.lang.Object): javax.management.remote.rmi.RMIConnection
+          public newClient(arg0: java.lang.Object | any): javax.management.remote.rmi.RMIConnection
         }
 
       }

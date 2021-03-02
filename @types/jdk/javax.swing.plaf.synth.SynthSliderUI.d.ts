@@ -11,24 +11,24 @@ declare namespace javax {
           protected installListeners(arg0: javax.swing.JSlider): void
           protected uninstallListeners(arg0: javax.swing.JSlider): void
           protected createTrackListener(arg0: javax.swing.JSlider): javax.swing.plaf.basic.BasicSliderUI$TrackListener
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           protected calculateGeometry(): void
           protected layout(): void
           protected calculateThumbLocation(): void
-          public setThumbLocation(arg0: int, arg1: int): void
-          protected xPositionForValue(arg0: int): int
-          protected yPositionForValue(arg0: int, arg1: int, arg2: int): int
-          public valueForYPosition(arg0: int): int
-          public valueForXPosition(arg0: int): int
+          public setThumbLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+          protected xPositionForValue(arg0: number | java.lang.Integer): number
+          protected yPositionForValue(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public valueForYPosition(arg0: number | java.lang.Integer): number
+          public valueForXPosition(arg0: number | java.lang.Integer): number
           protected getThumbSize(): java.awt.Dimension
           protected recalculateIfInsetsChanged(): void
           public getContext(arg0: javax.swing.JComponent): javax.swing.plaf.synth.SynthContext
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
-          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
+          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
           protected paintThumb(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: java.awt.Rectangle): void
           protected paintTrack(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: java.awt.Rectangle): void
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void
@@ -43,7 +43,7 @@ declare namespace javax {
           static access$800(arg0: javax.swing.plaf.synth.SynthSliderUI): java.awt.Rectangle
           static access$900(arg0: javax.swing.plaf.synth.SynthSliderUI): javax.swing.JSlider
           static access$1000(arg0: javax.swing.plaf.synth.SynthSliderUI): javax.swing.JSlider
-          static access$1100(arg0: javax.swing.plaf.synth.SynthSliderUI, arg1: int): int
+          static access$1100(arg0: javax.swing.plaf.synth.SynthSliderUI, arg1: number | java.lang.Integer): number
           static access$1200(arg0: javax.swing.plaf.synth.SynthSliderUI): boolean
           static access$1300(arg0: javax.swing.plaf.synth.SynthSliderUI): java.awt.Rectangle
           static access$1400(arg0: javax.swing.plaf.synth.SynthSliderUI): javax.swing.JSlider

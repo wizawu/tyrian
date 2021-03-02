@@ -9,21 +9,21 @@ declare namespace org {
           public static readonly END_TO_END: short
           public static readonly END_TO_START: short
           getStartContainer(): org.w3c.dom.Node
-          getStartOffset(): int
+          getStartOffset(): number
           getEndContainer(): org.w3c.dom.Node
-          getEndOffset(): int
+          getEndOffset(): number
           getCollapsed(): boolean
           getCommonAncestorContainer(): org.w3c.dom.Node
-          setStart(arg0: org.w3c.dom.Node, arg1: int): void
-          setEnd(arg0: org.w3c.dom.Node, arg1: int): void
+          setStart(arg0: org.w3c.dom.Node, arg1: number | java.lang.Integer): void
+          setEnd(arg0: org.w3c.dom.Node, arg1: number | java.lang.Integer): void
           setStartBefore(arg0: org.w3c.dom.Node): void
           setStartAfter(arg0: org.w3c.dom.Node): void
           setEndBefore(arg0: org.w3c.dom.Node): void
           setEndAfter(arg0: org.w3c.dom.Node): void
-          collapse(arg0: boolean): void
+          collapse(arg0: boolean | java.lang.Boolean): void
           selectNode(arg0: org.w3c.dom.Node): void
           selectNodeContents(arg0: org.w3c.dom.Node): void
-          compareBoundaryPoints(arg0: short, arg1: org.w3c.dom.ranges.Range): short
+          compareBoundaryPoints(arg0: number | java.lang.Short, arg1: org.w3c.dom.ranges.Range): number
           deleteContents(): void
           extractContents(): org.w3c.dom.DocumentFragment
           cloneContents(): org.w3c.dom.DocumentFragment

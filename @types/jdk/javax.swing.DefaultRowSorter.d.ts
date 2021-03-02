@@ -6,31 +6,31 @@ declare namespace javax {
       protected setModelWrapper(arg0: javax.swing.DefaultRowSorter$ModelWrapper<M,I>): void
       protected getModelWrapper(): javax.swing.DefaultRowSorter$ModelWrapper<M,I>
       public getModel(): M
-      public setSortable(arg0: int, arg1: boolean): void
-      public isSortable(arg0: int): boolean
+      public setSortable(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
+      public isSortable(arg0: number | java.lang.Integer): boolean
       public setSortKeys(arg0: java.util.List<javax.swing.RowSorter$SortKey>): void
       public getSortKeys(): java.util.List<javax.swing.RowSorter$SortKey>
-      public setMaxSortKeys(arg0: int): void
-      public getMaxSortKeys(): int
-      public setSortsOnUpdates(arg0: boolean): void
+      public setMaxSortKeys(arg0: number | java.lang.Integer): void
+      public getMaxSortKeys(): number
+      public setSortsOnUpdates(arg0: boolean | java.lang.Boolean): void
       public getSortsOnUpdates(): boolean
       public setRowFilter(arg0: javax.swing.RowFilter<unknown,unknown>): void
       public getRowFilter(): javax.swing.RowFilter<unknown,unknown>
-      public toggleSortOrder(arg0: int): void
-      public convertRowIndexToView(arg0: int): int
-      public convertRowIndexToModel(arg0: int): int
+      public toggleSortOrder(arg0: number | java.lang.Integer): void
+      public convertRowIndexToView(arg0: number | java.lang.Integer): number
+      public convertRowIndexToModel(arg0: number | java.lang.Integer): number
       public sort(): void
-      protected useToString(arg0: int): boolean
-      public setComparator(arg0: int, arg1: java.util.Comparator<unknown>): void
-      public getComparator(arg0: int): java.util.Comparator<unknown>
-      public getViewRowCount(): int
-      public getModelRowCount(): int
+      protected useToString(arg0: number | java.lang.Integer): boolean
+      public setComparator(arg0: number | java.lang.Integer, arg1: java.util.Comparator<unknown>): void
+      public getComparator(arg0: number | java.lang.Integer): java.util.Comparator<unknown>
+      public getViewRowCount(): number
+      public getModelRowCount(): number
       public modelStructureChanged(): void
       public allRowsChanged(): void
-      public rowsInserted(arg0: int, arg1: int): void
-      public rowsDeleted(arg0: int, arg1: int): void
-      public rowsUpdated(arg0: int, arg1: int): void
-      public rowsUpdated(arg0: int, arg1: int, arg2: int): void
+      public rowsInserted(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public rowsDeleted(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public rowsUpdated(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public rowsUpdated(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
     }
 
   }

@@ -33,7 +33,7 @@ declare namespace javax {
           public static readonly JOB_COMPLETED_WITH_ERRORS: javax.print.attribute.standard.JobStateReason
           public static readonly JOB_RESTARTABLE: javax.print.attribute.standard.JobStateReason
           public static readonly QUEUED_IN_DEVICE: javax.print.attribute.standard.JobStateReason
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>

@@ -4,11 +4,11 @@ declare namespace jdk {
       namespace scripting {
 
         interface ClassFilter$$lambda {
-          (arg0: java.lang.String): boolean
+          (arg0: java.lang.String | string): boolean
         }
 
         interface ClassFilter {
-          exposeToScripts(arg0: java.lang.String): boolean
+          exposeToScripts(arg0: java.lang.String | string): boolean
         }
 
       }

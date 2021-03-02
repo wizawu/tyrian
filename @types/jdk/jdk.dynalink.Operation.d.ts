@@ -3,8 +3,8 @@ declare namespace jdk {
 
     interface Operation {
       withNamespace(arg0: jdk.dynalink.Namespace): jdk.dynalink.NamespaceOperation
-      withNamespaces(...arg0: jdk.dynalink.Namespace[]): jdk.dynalink.NamespaceOperation
-      named(arg0: java.lang.Object): jdk.dynalink.NamedOperation
+      withNamespaces(...vargs: (jdk.dynalink.Namespace)[]): jdk.dynalink.NamespaceOperation
+      named(arg0: java.lang.Object | any): jdk.dynalink.NamedOperation
     }
 
   }

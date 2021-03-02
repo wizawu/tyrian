@@ -13,17 +13,17 @@ declare namespace com {
         name(): java.lang.String
         suspend(): void
         resume(): void
-        suspendCount(): int
+        suspendCount(): number
         stop(arg0: com.sun.jdi.ObjectReference): void
         interrupt(): void
-        status(): int
+        status(): number
         isSuspended(): boolean
         isAtBreakpoint(): boolean
         threadGroup(): com.sun.jdi.ThreadGroupReference
-        frameCount(): int
+        frameCount(): number
         frames(): java.util.List<com.sun.jdi.StackFrame>
-        frame(arg0: int): com.sun.jdi.StackFrame
-        frames(arg0: int, arg1: int): java.util.List<com.sun.jdi.StackFrame>
+        frame(arg0: number | java.lang.Integer): com.sun.jdi.StackFrame
+        frames(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.List<com.sun.jdi.StackFrame>
         ownedMonitors(): java.util.List<com.sun.jdi.ObjectReference>
         ownedMonitorsAndFrames(): java.util.List<com.sun.jdi.MonitorInfo>
         currentContendedMonitor(): com.sun.jdi.ObjectReference

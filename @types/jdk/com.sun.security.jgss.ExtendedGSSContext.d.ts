@@ -5,7 +5,7 @@ declare namespace com {
 
         interface ExtendedGSSContext extends org.ietf.jgss.GSSContext {
           inquireSecContext(arg0: com.sun.security.jgss.InquireType): java.lang.Object
-          requestDelegPolicy(arg0: boolean): void
+          requestDelegPolicy(arg0: boolean | java.lang.Boolean): void
           getDelegPolicyState(): boolean
         }
 

@@ -8,7 +8,7 @@ declare namespace java {
         public static readonly NO_FALLBACK: java.security.cert.PKIXRevocationChecker$Option
         public static readonly SOFT_FAIL: java.security.cert.PKIXRevocationChecker$Option
         public static values(): java.security.cert.PKIXRevocationChecker$Option[]
-        public static valueOf(arg0: java.lang.String): java.security.cert.PKIXRevocationChecker$Option
+        public static valueOf(arg0: java.lang.String | string): java.security.cert.PKIXRevocationChecker$Option
       }
 
     }

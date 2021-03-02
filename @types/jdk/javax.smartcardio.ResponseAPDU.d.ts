@@ -3,15 +3,15 @@ declare namespace javax {
 
     class ResponseAPDU implements java.io.Serializable {
       public constructor(arg0: byte[])
-      public getNr(): int
-      public getData(): byte[]
-      public getSW1(): int
-      public getSW2(): int
-      public getSW(): int
-      public getBytes(): byte[]
+      public getNr(): number
+      public getData(): number[]
+      public getSW1(): number
+      public getSW2(): number
+      public getSW(): number
+      public getBytes(): number[]
       public toString(): java.lang.String
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
     }
 
   }

@@ -11,7 +11,7 @@ declare namespace javax {
       public static readonly ON_OR_INSERT_ROWS: javax.swing.DropMode
       public static readonly ON_OR_INSERT_COLS: javax.swing.DropMode
       public static values(): javax.swing.DropMode[]
-      public static valueOf(arg0: java.lang.String): javax.swing.DropMode
+      public static valueOf(arg0: java.lang.String | string): javax.swing.DropMode
     }
 
   }

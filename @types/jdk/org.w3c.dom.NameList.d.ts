@@ -3,11 +3,11 @@ declare namespace org {
     namespace dom {
 
       interface NameList {
-        getName(arg0: int): java.lang.String
-        getNamespaceURI(arg0: int): java.lang.String
-        getLength(): int
-        contains(arg0: java.lang.String): boolean
-        containsNS(arg0: java.lang.String, arg1: java.lang.String): boolean
+        getName(arg0: number | java.lang.Integer): java.lang.String
+        getNamespaceURI(arg0: number | java.lang.Integer): java.lang.String
+        getLength(): number
+        contains(arg0: java.lang.String | string): boolean
+        containsNS(arg0: java.lang.String | string, arg1: java.lang.String | string): boolean
       }
 
     }

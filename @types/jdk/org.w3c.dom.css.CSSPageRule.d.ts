@@ -5,7 +5,7 @@ declare namespace org {
 
         interface CSSPageRule extends org.w3c.dom.css.CSSRule {
           getSelectorText(): java.lang.String
-          setSelectorText(arg0: java.lang.String): void
+          setSelectorText(arg0: java.lang.String | string): void
           getStyle(): org.w3c.dom.css.CSSStyleDeclaration
         }
 

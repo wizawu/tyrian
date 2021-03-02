@@ -19,36 +19,36 @@ declare namespace javax {
         protected isResizable: boolean
         protected resizedPostingDisableCount: int
         public constructor()
-        public constructor(arg0: int)
-        public constructor(arg0: int, arg1: int)
-        public constructor(arg0: int, arg1: int, arg2: javax.swing.table.TableCellRenderer, arg3: javax.swing.table.TableCellEditor)
-        public setModelIndex(arg0: int): void
-        public getModelIndex(): int
-        public setIdentifier(arg0: java.lang.Object): void
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda, arg3: javax.swing.table.TableCellEditor)
+        public setModelIndex(arg0: number | java.lang.Integer): void
+        public getModelIndex(): number
+        public setIdentifier(arg0: java.lang.Object | any): void
         public getIdentifier(): java.lang.Object
-        public setHeaderValue(arg0: java.lang.Object): void
+        public setHeaderValue(arg0: java.lang.Object | any): void
         public getHeaderValue(): java.lang.Object
-        public setHeaderRenderer(arg0: javax.swing.table.TableCellRenderer): void
+        public setHeaderRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda): void
         public getHeaderRenderer(): javax.swing.table.TableCellRenderer
-        public setCellRenderer(arg0: javax.swing.table.TableCellRenderer): void
+        public setCellRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda): void
         public getCellRenderer(): javax.swing.table.TableCellRenderer
         public setCellEditor(arg0: javax.swing.table.TableCellEditor): void
         public getCellEditor(): javax.swing.table.TableCellEditor
-        public setWidth(arg0: int): void
-        public getWidth(): int
-        public setPreferredWidth(arg0: int): void
-        public getPreferredWidth(): int
-        public setMinWidth(arg0: int): void
-        public getMinWidth(): int
-        public setMaxWidth(arg0: int): void
-        public getMaxWidth(): int
-        public setResizable(arg0: boolean): void
+        public setWidth(arg0: number | java.lang.Integer): void
+        public getWidth(): number
+        public setPreferredWidth(arg0: number | java.lang.Integer): void
+        public getPreferredWidth(): number
+        public setMinWidth(arg0: number | java.lang.Integer): void
+        public getMinWidth(): number
+        public setMaxWidth(arg0: number | java.lang.Integer): void
+        public getMaxWidth(): number
+        public setResizable(arg0: boolean | java.lang.Boolean): void
         public getResizable(): boolean
         public sizeWidthToFit(): void
         public disableResizedPosting(): void
         public enableResizedPosting(): void
-        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
         public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
         protected createDefaultHeaderRenderer(): javax.swing.table.TableCellRenderer
       }

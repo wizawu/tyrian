@@ -10,13 +10,13 @@ declare namespace org {
           getType(): java.lang.String
           getTarget(): org.w3c.dom.events.EventTarget
           getCurrentTarget(): org.w3c.dom.events.EventTarget
-          getEventPhase(): short
+          getEventPhase(): number
           getBubbles(): boolean
           getCancelable(): boolean
-          getTimeStamp(): long
+          getTimeStamp(): number
           stopPropagation(): void
           preventDefault(): void
-          initEvent(arg0: java.lang.String, arg1: boolean, arg2: boolean): void
+          initEvent(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
         }
 
       }

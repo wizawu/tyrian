@@ -4,19 +4,19 @@ declare namespace java {
     abstract class InputStream implements java.io.Closeable {
       public constructor()
       public static nullInputStream(): java.io.InputStream
-      public abstract read(): int
-      public read(arg0: byte[]): int
-      public read(arg0: byte[], arg1: int, arg2: int): int
-      public readAllBytes(): byte[]
-      public readNBytes(arg0: int): byte[]
-      public readNBytes(arg0: byte[], arg1: int, arg2: int): int
-      public skip(arg0: long): long
-      public available(): int
+      public abstract read(): number
+      public read(arg0: byte[]): number
+      public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public readAllBytes(): number[]
+      public readNBytes(arg0: number | java.lang.Integer): number[]
+      public readNBytes(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public skip(arg0: number | java.lang.Long): number
+      public available(): number
       public close(): void
-      public mark(arg0: int): void
+      public mark(arg0: number | java.lang.Integer): void
       public reset(): void
       public markSupported(): boolean
-      public transferTo(arg0: java.io.OutputStream): long
+      public transferTo(arg0: java.io.OutputStream): number
     }
 
   }

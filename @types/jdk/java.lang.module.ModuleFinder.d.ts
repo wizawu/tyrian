@@ -3,11 +3,11 @@ declare namespace java {
     namespace module {
 
       interface ModuleFinder {
-        find(arg0: java.lang.String): java.util.Optional<java.lang.module.ModuleReference>
+        find(arg0: java.lang.String | string): java.util.Optional<java.lang.module.ModuleReference>
         findAll(): java.util.Set<java.lang.module.ModuleReference>
         ofSystem(): java.lang.module.ModuleFinder
-        of(...arg0: java.nio.file.Path[]): java.lang.module.ModuleFinder
-        compose(...arg0: java.lang.module.ModuleFinder[]): java.lang.module.ModuleFinder
+        of(...vargs: (java.nio.file.Path)[]): java.lang.module.ModuleFinder
+        compose(...vargs: (java.lang.module.ModuleFinder)[]): java.lang.module.ModuleFinder
       }
 
     }

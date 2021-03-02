@@ -8,7 +8,7 @@ declare namespace java {
         public static readonly SKIP_SUBTREE: java.nio.file.FileVisitResult
         public static readonly SKIP_SIBLINGS: java.nio.file.FileVisitResult
         public static values(): java.nio.file.FileVisitResult[]
-        public static valueOf(arg0: java.lang.String): java.nio.file.FileVisitResult
+        public static valueOf(arg0: java.lang.String | string): java.nio.file.FileVisitResult
       }
 
     }

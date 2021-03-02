@@ -7,8 +7,8 @@ declare namespace java {
       public type(): java.net.Proxy$Type
       public address(): java.net.SocketAddress
       public toString(): java.lang.String
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
     }
 
   }

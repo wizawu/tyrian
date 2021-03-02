@@ -40,7 +40,7 @@ declare namespace javax {
           public installComponents(arg0: javax.swing.JFileChooser): void
           public uninstallComponents(arg0: javax.swing.JFileChooser): void
           protected installListeners(arg0: javax.swing.JFileChooser): void
-          getInputMap(arg0: int): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           getActionMap(): javax.swing.ActionMap
           createActionMap(): javax.swing.ActionMap
           protected uninstallListeners(arg0: javax.swing.JFileChooser): void
@@ -55,8 +55,8 @@ declare namespace javax {
           public createPropertyChangeListener(arg0: javax.swing.JFileChooser): java.beans.PropertyChangeListener
           public getFileName(): java.lang.String
           public getDirectoryName(): java.lang.String
-          public setFileName(arg0: java.lang.String): void
-          public setDirectoryName(arg0: java.lang.String): void
+          public setFileName(arg0: java.lang.String | string): void
+          public setDirectoryName(arg0: java.lang.String | string): void
           public rescanCurrentDirectory(arg0: javax.swing.JFileChooser): void
           public ensureFileIsVisible(arg0: javax.swing.JFileChooser, arg1: java.io.File): void
           public getFileChooser(): javax.swing.JFileChooser
@@ -68,13 +68,13 @@ declare namespace javax {
           protected createDoubleClickListener(arg0: javax.swing.JFileChooser, arg1: javax.swing.JList<unknown>): java.awt.event.MouseListener
           public createListSelectionListener(arg0: javax.swing.JFileChooser): javax.swing.event.ListSelectionListener
           protected isDirectorySelected(): boolean
-          protected setDirectorySelected(arg0: boolean): void
+          protected setDirectorySelected(arg0: boolean | java.lang.Boolean): void
           protected getDirectory(): java.io.File
           protected setDirectory(arg0: java.io.File): void
           public getAcceptAllFileFilter(arg0: javax.swing.JFileChooser): javax.swing.filechooser.FileFilter
           public getFileView(arg0: javax.swing.JFileChooser): javax.swing.filechooser.FileView
           public getDialogTitle(arg0: javax.swing.JFileChooser): java.lang.String
-          public getApproveButtonMnemonic(arg0: javax.swing.JFileChooser): int
+          public getApproveButtonMnemonic(arg0: javax.swing.JFileChooser): number
           public getApproveButtonText(arg0: javax.swing.JFileChooser): java.lang.String
           public getNewFolderAction(): javax.swing.Action
           public getGoHomeAction(): javax.swing.Action

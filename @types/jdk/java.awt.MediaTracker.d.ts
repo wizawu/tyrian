@@ -10,25 +10,25 @@ declare namespace java {
       public static readonly COMPLETE: int
       static readonly DONE: int
       public constructor(arg0: java.awt.Component)
-      public addImage(arg0: java.awt.Image, arg1: int): void
-      public addImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int): void
+      public addImage(arg0: java.awt.Image, arg1: number | java.lang.Integer): void
+      public addImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       public checkAll(): boolean
-      public checkAll(arg0: boolean): boolean
+      public checkAll(arg0: boolean | java.lang.Boolean): boolean
       public isErrorAny(): boolean
       public getErrorsAny(): java.lang.Object[]
       public waitForAll(): void
-      public waitForAll(arg0: long): boolean
-      public statusAll(arg0: boolean): int
-      public checkID(arg0: int): boolean
-      public checkID(arg0: int, arg1: boolean): boolean
-      public isErrorID(arg0: int): boolean
-      public getErrorsID(arg0: int): java.lang.Object[]
-      public waitForID(arg0: int): void
-      public waitForID(arg0: int, arg1: long): boolean
-      public statusID(arg0: int, arg1: boolean): int
+      public waitForAll(arg0: number | java.lang.Long): boolean
+      public statusAll(arg0: boolean | java.lang.Boolean): number
+      public checkID(arg0: number | java.lang.Integer): boolean
+      public checkID(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): boolean
+      public isErrorID(arg0: number | java.lang.Integer): boolean
+      public getErrorsID(arg0: number | java.lang.Integer): java.lang.Object[]
+      public waitForID(arg0: number | java.lang.Integer): void
+      public waitForID(arg0: number | java.lang.Integer, arg1: number | java.lang.Long): boolean
+      public statusID(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): number
       public removeImage(arg0: java.awt.Image): void
-      public removeImage(arg0: java.awt.Image, arg1: int): void
-      public removeImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int): void
+      public removeImage(arg0: java.awt.Image, arg1: number | java.lang.Integer): void
+      public removeImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       setDone(): void
     }
 

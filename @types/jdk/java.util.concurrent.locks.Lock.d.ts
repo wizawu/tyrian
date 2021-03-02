@@ -7,7 +7,7 @@ declare namespace java {
           lock(): void
           lockInterruptibly(): void
           tryLock(): boolean
-          tryLock(arg0: long, arg1: java.util.concurrent.TimeUnit): boolean
+          tryLock(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): boolean
           unlock(): void
           newCondition(): java.util.concurrent.locks.Condition
         }

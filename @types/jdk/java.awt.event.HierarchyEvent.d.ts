@@ -14,12 +14,12 @@ declare namespace java {
         changed: java.awt.Component
         changedParent: java.awt.Container
         changeFlags: long
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: java.awt.Component, arg3: java.awt.Container)
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: java.awt.Component, arg3: java.awt.Container, arg4: long)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: java.awt.Component, arg3: java.awt.Container)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: java.awt.Component, arg3: java.awt.Container, arg4: number | java.lang.Long)
         public getComponent(): java.awt.Component
         public getChanged(): java.awt.Component
         public getChangedParent(): java.awt.Container
-        public getChangeFlags(): long
+        public getChangeFlags(): number
         public paramString(): java.lang.String
       }
 

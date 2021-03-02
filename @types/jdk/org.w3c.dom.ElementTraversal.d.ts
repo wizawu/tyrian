@@ -7,7 +7,7 @@ declare namespace org {
         getLastElementChild(): org.w3c.dom.Element
         getPreviousElementSibling(): org.w3c.dom.Element
         getNextElementSibling(): org.w3c.dom.Element
-        getChildElementCount(): int
+        getChildElementCount(): number
       }
 
     }

@@ -5,25 +5,25 @@ declare namespace org {
 
         interface HTMLSelectElement extends org.w3c.dom.html.HTMLElement {
           getType(): java.lang.String
-          getSelectedIndex(): int
-          setSelectedIndex(arg0: int): void
+          getSelectedIndex(): number
+          setSelectedIndex(arg0: number | java.lang.Integer): void
           getValue(): java.lang.String
-          setValue(arg0: java.lang.String): void
-          getLength(): int
+          setValue(arg0: java.lang.String | string): void
+          getLength(): number
           getForm(): org.w3c.dom.html.HTMLFormElement
           getOptions(): org.w3c.dom.html.HTMLCollection
           getDisabled(): boolean
-          setDisabled(arg0: boolean): void
+          setDisabled(arg0: boolean | java.lang.Boolean): void
           getMultiple(): boolean
-          setMultiple(arg0: boolean): void
+          setMultiple(arg0: boolean | java.lang.Boolean): void
           getName(): java.lang.String
-          setName(arg0: java.lang.String): void
-          getSize(): int
-          setSize(arg0: int): void
-          getTabIndex(): int
-          setTabIndex(arg0: int): void
+          setName(arg0: java.lang.String | string): void
+          getSize(): number
+          setSize(arg0: number | java.lang.Integer): void
+          getTabIndex(): number
+          setTabIndex(arg0: number | java.lang.Integer): void
           add(arg0: org.w3c.dom.html.HTMLElement, arg1: org.w3c.dom.html.HTMLElement): void
-          remove(arg0: int): void
+          remove(arg0: number | java.lang.Integer): void
           blur(): void
           focus(): void
         }

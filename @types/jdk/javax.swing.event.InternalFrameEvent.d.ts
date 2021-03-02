@@ -12,7 +12,7 @@ declare namespace javax {
         public static readonly INTERNAL_FRAME_DEICONIFIED: int
         public static readonly INTERNAL_FRAME_ACTIVATED: int
         public static readonly INTERNAL_FRAME_DEACTIVATED: int
-        public constructor(arg0: javax.swing.JInternalFrame, arg1: int)
+        public constructor(arg0: javax.swing.JInternalFrame, arg1: number | java.lang.Integer)
         public paramString(): java.lang.String
         public getInternalFrame(): javax.swing.JInternalFrame
       }

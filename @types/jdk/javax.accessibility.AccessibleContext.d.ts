@@ -29,19 +29,19 @@ declare namespace javax {
       protected accessibleDescription: java.lang.String
       public constructor()
       public getAccessibleName(): java.lang.String
-      public setAccessibleName(arg0: java.lang.String): void
+      public setAccessibleName(arg0: java.lang.String | string): void
       public getAccessibleDescription(): java.lang.String
-      public setAccessibleDescription(arg0: java.lang.String): void
+      public setAccessibleDescription(arg0: java.lang.String | string): void
       public abstract getAccessibleRole(): javax.accessibility.AccessibleRole
       public abstract getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
       public getAccessibleParent(): javax.accessibility.Accessible
-      public setAccessibleParent(arg0: javax.accessibility.Accessible): void
-      public abstract getAccessibleIndexInParent(): int
-      public abstract getAccessibleChildrenCount(): int
-      public abstract getAccessibleChild(arg0: int): javax.accessibility.Accessible
+      public setAccessibleParent(arg0: javax.accessibility.Accessible | javax.accessibility.Accessible$$lambda): void
+      public abstract getAccessibleIndexInParent(): number
+      public abstract getAccessibleChildrenCount(): number
+      public abstract getAccessibleChild(arg0: number | java.lang.Integer): javax.accessibility.Accessible
       public abstract getLocale(): java.util.Locale
-      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-      public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
       public getAccessibleAction(): javax.accessibility.AccessibleAction
       public getAccessibleComponent(): javax.accessibility.AccessibleComponent
       public getAccessibleSelection(): javax.accessibility.AccessibleSelection
@@ -51,7 +51,7 @@ declare namespace javax {
       public getAccessibleIcon(): javax.accessibility.AccessibleIcon[]
       public getAccessibleRelationSet(): javax.accessibility.AccessibleRelationSet
       public getAccessibleTable(): javax.accessibility.AccessibleTable
-      public firePropertyChange(arg0: java.lang.String, arg1: java.lang.Object, arg2: java.lang.Object): void
+      public firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
     }
 
   }

@@ -6,9 +6,9 @@ declare namespace java {
         public static readonly BCE: java.time.chrono.IsoEra
         public static readonly CE: java.time.chrono.IsoEra
         public static values(): java.time.chrono.IsoEra[]
-        public static valueOf(arg0: java.lang.String): java.time.chrono.IsoEra
-        public static of(arg0: int): java.time.chrono.IsoEra
-        public getValue(): int
+        public static valueOf(arg0: java.lang.String | string): java.time.chrono.IsoEra
+        public static of(arg0: number | java.lang.Integer): java.time.chrono.IsoEra
+        public getValue(): number
       }
 
     }

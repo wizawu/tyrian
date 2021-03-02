@@ -11,10 +11,10 @@ declare namespace java {
       public getImplementationVendor(): java.lang.String
       public isSealed(): boolean
       public isSealed(arg0: java.net.URL): boolean
-      public isCompatibleWith(arg0: java.lang.String): boolean
-      public static getPackage(arg0: java.lang.String): java.lang.Package
+      public isCompatibleWith(arg0: java.lang.String | string): boolean
+      public static getPackage(arg0: java.lang.String | string): java.lang.Package
       public static getPackages(): java.lang.Package[]
-      public hashCode(): int
+      public hashCode(): number
       public toString(): java.lang.String
       public getAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
       public isAnnotationPresent(arg0: java.lang.Class<java.lang.annotation.Annotation>): boolean
@@ -23,8 +23,8 @@ declare namespace java {
       public getDeclaredAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
       public getDeclaredAnnotationsByType<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A[]
       public getDeclaredAnnotations(): java.lang.annotation.Annotation[]
-      constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String, arg5: java.lang.String, arg6: java.lang.String, arg7: java.net.URL, arg8: java.lang.ClassLoader)
-      constructor(arg0: java.lang.String, arg1: java.lang.Module)
+      constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.String | string, arg6: java.lang.String | string, arg7: java.net.URL, arg8: java.lang.ClassLoader)
+      constructor(arg0: java.lang.String | string, arg1: java.lang.Module)
     }
 
   }

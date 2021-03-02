@@ -10,9 +10,9 @@ declare namespace java {
       public static readonly ERROR: java.lang.System$Logger$Level
       public static readonly OFF: java.lang.System$Logger$Level
       public static values(): java.lang.System$Logger$Level[]
-      public static valueOf(arg0: java.lang.String): java.lang.System$Logger$Level
+      public static valueOf(arg0: java.lang.String | string): java.lang.System$Logger$Level
       public getName(): java.lang.String
-      public getSeverity(): int
+      public getSeverity(): number
     }
 
   }

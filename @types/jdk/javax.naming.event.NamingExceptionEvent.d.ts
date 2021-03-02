@@ -6,7 +6,7 @@ declare namespace javax {
         public constructor(arg0: javax.naming.event.EventContext, arg1: javax.naming.NamingException)
         public getException(): javax.naming.NamingException
         public getEventContext(): javax.naming.event.EventContext
-        public dispatch(arg0: javax.naming.event.NamingListener): void
+        public dispatch(arg0: javax.naming.event.NamingListener | javax.naming.event.NamingListener$$lambda): void
       }
 
     }

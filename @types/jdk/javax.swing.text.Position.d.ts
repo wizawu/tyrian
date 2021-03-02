@@ -7,7 +7,7 @@ declare namespace javax {
       }
 
       interface Position {
-        getOffset(): int
+        getOffset(): number
       }
 
     }

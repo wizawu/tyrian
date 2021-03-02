@@ -11,7 +11,7 @@ declare namespace com {
         public static readonly TRACE_OBJREFS: int
         public static readonly TRACE_ALL: int
         allModules(): java.util.List<com.sun.jdi.ModuleReference>
-        classesByName(arg0: java.lang.String): java.util.List<com.sun.jdi.ReferenceType>
+        classesByName(arg0: java.lang.String | string): java.util.List<com.sun.jdi.ReferenceType>
         allClasses(): java.util.List<com.sun.jdi.ReferenceType>
         redefineClasses(arg0: java.util.Map<com.sun.jdi.ReferenceType,byte[]>): void
         allThreads(): java.util.List<com.sun.jdi.ThreadReference>
@@ -20,19 +20,19 @@ declare namespace com {
         topLevelThreadGroups(): java.util.List<com.sun.jdi.ThreadGroupReference>
         eventQueue(): com.sun.jdi.event.EventQueue
         eventRequestManager(): com.sun.jdi.request.EventRequestManager
-        mirrorOf(arg0: boolean): com.sun.jdi.BooleanValue
-        mirrorOf(arg0: byte): com.sun.jdi.ByteValue
-        mirrorOf(arg0: char): com.sun.jdi.CharValue
-        mirrorOf(arg0: short): com.sun.jdi.ShortValue
-        mirrorOf(arg0: int): com.sun.jdi.IntegerValue
-        mirrorOf(arg0: long): com.sun.jdi.LongValue
-        mirrorOf(arg0: float): com.sun.jdi.FloatValue
-        mirrorOf(arg0: double): com.sun.jdi.DoubleValue
-        mirrorOf(arg0: java.lang.String): com.sun.jdi.StringReference
+        mirrorOf(arg0: boolean | java.lang.Boolean): com.sun.jdi.BooleanValue
+        mirrorOf(arg0: number | java.lang.Byte): com.sun.jdi.ByteValue
+        mirrorOf(arg0: string | java.lang.Character): com.sun.jdi.CharValue
+        mirrorOf(arg0: number | java.lang.Short): com.sun.jdi.ShortValue
+        mirrorOf(arg0: number | java.lang.Integer): com.sun.jdi.IntegerValue
+        mirrorOf(arg0: number | java.lang.Long): com.sun.jdi.LongValue
+        mirrorOf(arg0: number | java.lang.Float): com.sun.jdi.FloatValue
+        mirrorOf(arg0: number | java.lang.Double): com.sun.jdi.DoubleValue
+        mirrorOf(arg0: java.lang.String | string): com.sun.jdi.StringReference
         mirrorOfVoid(): com.sun.jdi.VoidValue
         process(): java.lang.Process
         dispose(): void
-        exit(arg0: int): void
+        exit(arg0: number | java.lang.Integer): void
         canWatchFieldModification(): boolean
         canWatchFieldAccess(): boolean
         canGetBytecodes(): boolean
@@ -57,13 +57,13 @@ declare namespace com {
         canGetClassFileVersion(): boolean
         canGetConstantPool(): boolean
         canGetModuleInfo(): boolean
-        setDefaultStratum(arg0: java.lang.String): void
+        setDefaultStratum(arg0: java.lang.String | string): void
         getDefaultStratum(): java.lang.String
-        instanceCounts(arg0: java.util.List<com.sun.jdi.ReferenceType>): long[]
+        instanceCounts(arg0: java.util.List<com.sun.jdi.ReferenceType>): number[]
         description(): java.lang.String
         version(): java.lang.String
         name(): java.lang.String
-        setDebugTraceMode(arg0: int): void
+        setDebugTraceMode(arg0: number | java.lang.Integer): void
       }
 
     }

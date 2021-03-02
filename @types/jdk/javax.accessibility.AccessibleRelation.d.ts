@@ -26,12 +26,12 @@ declare namespace javax {
       public static readonly EMBEDS_PROPERTY: java.lang.String
       public static readonly EMBEDDED_BY_PROPERTY: java.lang.String
       public static readonly CHILD_NODE_OF_PROPERTY: java.lang.String
-      public constructor(arg0: java.lang.String)
-      public constructor(arg0: java.lang.String, arg1: java.lang.Object)
-      public constructor(arg0: java.lang.String, arg1: java.lang.Object[])
+      public constructor(arg0: java.lang.String | string)
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.Object | any)
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.Object[])
       public getKey(): java.lang.String
       public getTarget(): java.lang.Object[]
-      public setTarget(arg0: java.lang.Object): void
+      public setTarget(arg0: java.lang.Object | any): void
       public setTarget(arg0: java.lang.Object[]): void
     }
 

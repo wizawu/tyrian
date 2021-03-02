@@ -7,7 +7,7 @@ declare namespace java {
         public static readonly ALWAYS: java.net.http.HttpClient$Redirect
         public static readonly NORMAL: java.net.http.HttpClient$Redirect
         public static values(): java.net.http.HttpClient$Redirect[]
-        public static valueOf(arg0: java.lang.String): java.net.http.HttpClient$Redirect
+        public static valueOf(arg0: java.lang.String | string): java.net.http.HttpClient$Redirect
       }
 
     }

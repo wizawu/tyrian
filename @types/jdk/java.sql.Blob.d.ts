@@ -2,17 +2,17 @@ declare namespace java {
   namespace sql {
 
     interface Blob {
-      length(): long
-      getBytes(arg0: long, arg1: int): byte[]
+      length(): number
+      getBytes(arg0: number | java.lang.Long, arg1: number | java.lang.Integer): number[]
       getBinaryStream(): java.io.InputStream
-      position(arg0: byte[], arg1: long): long
-      position(arg0: java.sql.Blob, arg1: long): long
-      setBytes(arg0: long, arg1: byte[]): int
-      setBytes(arg0: long, arg1: byte[], arg2: int, arg3: int): int
-      setBinaryStream(arg0: long): java.io.OutputStream
-      truncate(arg0: long): void
+      position(arg0: byte[], arg1: number | java.lang.Long): number
+      position(arg0: java.sql.Blob, arg1: number | java.lang.Long): number
+      setBytes(arg0: number | java.lang.Long, arg1: byte[]): number
+      setBytes(arg0: number | java.lang.Long, arg1: byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+      setBinaryStream(arg0: number | java.lang.Long): java.io.OutputStream
+      truncate(arg0: number | java.lang.Long): void
       free(): void
-      getBinaryStream(arg0: long, arg1: long): java.io.InputStream
+      getBinaryStream(arg0: number | java.lang.Long, arg1: number | java.lang.Long): java.io.InputStream
     }
 
   }

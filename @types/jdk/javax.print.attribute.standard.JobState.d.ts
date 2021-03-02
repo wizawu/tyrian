@@ -12,7 +12,7 @@ declare namespace javax {
           public static readonly CANCELED: javax.print.attribute.standard.JobState
           public static readonly ABORTED: javax.print.attribute.standard.JobState
           public static readonly COMPLETED: javax.print.attribute.standard.JobState
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>

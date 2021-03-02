@@ -35,99 +35,99 @@ declare namespace javax {
       public static readonly EXPANDS_SELECTED_PATHS_PROPERTY: java.lang.String
       static readonly $assertionsDisabled: boolean
       protected static getDefaultTreeModel(): javax.swing.tree.TreeModel
-      protected static createTreeModel(arg0: java.lang.Object): javax.swing.tree.TreeModel
+      protected static createTreeModel(arg0: java.lang.Object | any): javax.swing.tree.TreeModel
       public constructor()
       public constructor(arg0: java.lang.Object[])
       public constructor(arg0: java.util.Vector<unknown>)
       public constructor(arg0: java.util.Hashtable<unknown,unknown>)
       public constructor(arg0: javax.swing.tree.TreeNode)
-      public constructor(arg0: javax.swing.tree.TreeNode, arg1: boolean)
+      public constructor(arg0: javax.swing.tree.TreeNode, arg1: boolean | java.lang.Boolean)
       public constructor(arg0: javax.swing.tree.TreeModel)
       public getUI(): javax.swing.plaf.TreeUI
       public setUI(arg0: javax.swing.plaf.TreeUI): void
       public updateUI(): void
       public getUIClassID(): java.lang.String
       public getCellRenderer(): javax.swing.tree.TreeCellRenderer
-      public setCellRenderer(arg0: javax.swing.tree.TreeCellRenderer): void
-      public setEditable(arg0: boolean): void
+      public setCellRenderer(arg0: javax.swing.tree.TreeCellRenderer | javax.swing.tree.TreeCellRenderer$$lambda): void
+      public setEditable(arg0: boolean | java.lang.Boolean): void
       public isEditable(): boolean
       public setCellEditor(arg0: javax.swing.tree.TreeCellEditor): void
       public getCellEditor(): javax.swing.tree.TreeCellEditor
       public getModel(): javax.swing.tree.TreeModel
       public setModel(arg0: javax.swing.tree.TreeModel): void
       public isRootVisible(): boolean
-      public setRootVisible(arg0: boolean): void
-      public setShowsRootHandles(arg0: boolean): void
+      public setRootVisible(arg0: boolean | java.lang.Boolean): void
+      public setShowsRootHandles(arg0: boolean | java.lang.Boolean): void
       public getShowsRootHandles(): boolean
-      public setRowHeight(arg0: int): void
-      public getRowHeight(): int
+      public setRowHeight(arg0: number | java.lang.Integer): void
+      public getRowHeight(): number
       public isFixedRowHeight(): boolean
-      public setLargeModel(arg0: boolean): void
+      public setLargeModel(arg0: boolean | java.lang.Boolean): void
       public isLargeModel(): boolean
-      public setInvokesStopCellEditing(arg0: boolean): void
+      public setInvokesStopCellEditing(arg0: boolean | java.lang.Boolean): void
       public getInvokesStopCellEditing(): boolean
-      public setScrollsOnExpand(arg0: boolean): void
+      public setScrollsOnExpand(arg0: boolean | java.lang.Boolean): void
       public getScrollsOnExpand(): boolean
-      public setToggleClickCount(arg0: int): void
-      public getToggleClickCount(): int
-      public setExpandsSelectedPaths(arg0: boolean): void
+      public setToggleClickCount(arg0: number | java.lang.Integer): void
+      public getToggleClickCount(): number
+      public setExpandsSelectedPaths(arg0: boolean | java.lang.Boolean): void
       public getExpandsSelectedPaths(): boolean
-      public setDragEnabled(arg0: boolean): void
+      public setDragEnabled(arg0: boolean | java.lang.Boolean): void
       public getDragEnabled(): boolean
       public setDropMode(arg0: javax.swing.DropMode): void
       public getDropMode(): javax.swing.DropMode
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.JTree$DropLocation
-      setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object, arg2: boolean): java.lang.Object
+      setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean): java.lang.Object
       dndDone(): void
       public getDropLocation(): javax.swing.JTree$DropLocation
       public isPathEditable(arg0: javax.swing.tree.TreePath): boolean
       public getToolTipText(arg0: java.awt.event.MouseEvent): java.lang.String
-      public convertValueToText(arg0: java.lang.Object, arg1: boolean, arg2: boolean, arg3: boolean, arg4: int, arg5: boolean): java.lang.String
-      public getRowCount(): int
+      public convertValueToText(arg0: java.lang.Object | any, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: number | java.lang.Integer, arg5: boolean | java.lang.Boolean): java.lang.String
+      public getRowCount(): number
       public setSelectionPath(arg0: javax.swing.tree.TreePath): void
       public setSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
       public setLeadSelectionPath(arg0: javax.swing.tree.TreePath): void
       public setAnchorSelectionPath(arg0: javax.swing.tree.TreePath): void
-      public setSelectionRow(arg0: int): void
+      public setSelectionRow(arg0: number | java.lang.Integer): void
       public setSelectionRows(arg0: int[]): void
       public addSelectionPath(arg0: javax.swing.tree.TreePath): void
       public addSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
-      public addSelectionRow(arg0: int): void
+      public addSelectionRow(arg0: number | java.lang.Integer): void
       public addSelectionRows(arg0: int[]): void
       public getLastSelectedPathComponent(): java.lang.Object
       public getLeadSelectionPath(): javax.swing.tree.TreePath
       public getAnchorSelectionPath(): javax.swing.tree.TreePath
       public getSelectionPath(): javax.swing.tree.TreePath
       public getSelectionPaths(): javax.swing.tree.TreePath[]
-      public getSelectionRows(): int[]
-      public getSelectionCount(): int
-      public getMinSelectionRow(): int
-      public getMaxSelectionRow(): int
-      public getLeadSelectionRow(): int
+      public getSelectionRows(): number[]
+      public getSelectionCount(): number
+      public getMinSelectionRow(): number
+      public getMaxSelectionRow(): number
+      public getLeadSelectionRow(): number
       public isPathSelected(arg0: javax.swing.tree.TreePath): boolean
-      public isRowSelected(arg0: int): boolean
+      public isRowSelected(arg0: number | java.lang.Integer): boolean
       public getExpandedDescendants(arg0: javax.swing.tree.TreePath): java.util.Enumeration<javax.swing.tree.TreePath>
       public hasBeenExpanded(arg0: javax.swing.tree.TreePath): boolean
       public isExpanded(arg0: javax.swing.tree.TreePath): boolean
-      public isExpanded(arg0: int): boolean
+      public isExpanded(arg0: number | java.lang.Integer): boolean
       public isCollapsed(arg0: javax.swing.tree.TreePath): boolean
-      public isCollapsed(arg0: int): boolean
+      public isCollapsed(arg0: number | java.lang.Integer): boolean
       public makeVisible(arg0: javax.swing.tree.TreePath): void
       public isVisible(arg0: javax.swing.tree.TreePath): boolean
       public getPathBounds(arg0: javax.swing.tree.TreePath): java.awt.Rectangle
-      public getRowBounds(arg0: int): java.awt.Rectangle
+      public getRowBounds(arg0: number | java.lang.Integer): java.awt.Rectangle
       public scrollPathToVisible(arg0: javax.swing.tree.TreePath): void
-      public scrollRowToVisible(arg0: int): void
-      public getPathForRow(arg0: int): javax.swing.tree.TreePath
-      public getRowForPath(arg0: javax.swing.tree.TreePath): int
+      public scrollRowToVisible(arg0: number | java.lang.Integer): void
+      public getPathForRow(arg0: number | java.lang.Integer): javax.swing.tree.TreePath
+      public getRowForPath(arg0: javax.swing.tree.TreePath): number
       public expandPath(arg0: javax.swing.tree.TreePath): void
-      public expandRow(arg0: int): void
+      public expandRow(arg0: number | java.lang.Integer): void
       public collapsePath(arg0: javax.swing.tree.TreePath): void
-      public collapseRow(arg0: int): void
-      public getPathForLocation(arg0: int, arg1: int): javax.swing.tree.TreePath
-      public getRowForLocation(arg0: int, arg1: int): int
-      public getClosestPathForLocation(arg0: int, arg1: int): javax.swing.tree.TreePath
-      public getClosestRowForLocation(arg0: int, arg1: int): int
+      public collapseRow(arg0: number | java.lang.Integer): void
+      public getPathForLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.tree.TreePath
+      public getRowForLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+      public getClosestPathForLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.tree.TreePath
+      public getClosestRowForLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
       public isEditing(): boolean
       public stopEditing(): boolean
       public cancelEditing(): void
@@ -135,13 +135,13 @@ declare namespace javax {
       public getEditingPath(): javax.swing.tree.TreePath
       public setSelectionModel(arg0: javax.swing.tree.TreeSelectionModel): void
       public getSelectionModel(): javax.swing.tree.TreeSelectionModel
-      protected getPathBetweenRows(arg0: int, arg1: int): javax.swing.tree.TreePath[]
-      public setSelectionInterval(arg0: int, arg1: int): void
-      public addSelectionInterval(arg0: int, arg1: int): void
-      public removeSelectionInterval(arg0: int, arg1: int): void
+      protected getPathBetweenRows(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.tree.TreePath[]
+      public setSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public addSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public removeSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public removeSelectionPath(arg0: javax.swing.tree.TreePath): void
       public removeSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
-      public removeSelectionRow(arg0: int): void
+      public removeSelectionRow(arg0: number | java.lang.Integer): void
       public removeSelectionRows(arg0: int[]): void
       public clearSelection(): void
       public isSelectionEmpty(): boolean
@@ -155,27 +155,27 @@ declare namespace javax {
       public fireTreeCollapsed(arg0: javax.swing.tree.TreePath): void
       public fireTreeWillExpand(arg0: javax.swing.tree.TreePath): void
       public fireTreeWillCollapse(arg0: javax.swing.tree.TreePath): void
-      public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
-      public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
+      public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
+      public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
       public getTreeSelectionListeners(): javax.swing.event.TreeSelectionListener[]
       protected fireValueChanged(arg0: javax.swing.event.TreeSelectionEvent): void
       public treeDidChange(): void
-      public setVisibleRowCount(arg0: int): void
-      public getVisibleRowCount(): int
-      public getNextMatch(arg0: java.lang.String, arg1: int, arg2: javax.swing.text.Position$Bias): javax.swing.tree.TreePath
+      public setVisibleRowCount(arg0: number | java.lang.Integer): void
+      public getVisibleRowCount(): number
+      public getNextMatch(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: javax.swing.text.Position$Bias): javax.swing.tree.TreePath
       public getPreferredScrollableViewportSize(): java.awt.Dimension
-      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: int, arg2: int): int
-      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: int, arg2: int): int
+      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public getScrollableTracksViewportWidth(): boolean
       public getScrollableTracksViewportHeight(): boolean
-      protected setExpandedState(arg0: javax.swing.tree.TreePath, arg1: boolean): void
+      protected setExpandedState(arg0: javax.swing.tree.TreePath, arg1: boolean | java.lang.Boolean): void
       protected getDescendantToggledPaths(arg0: javax.swing.tree.TreePath): java.util.Enumeration<javax.swing.tree.TreePath>
       protected removeDescendantToggledPaths(arg0: java.util.Enumeration<javax.swing.tree.TreePath>): void
       protected clearToggledPaths(): void
       protected createTreeModelListener(): javax.swing.event.TreeModelListener
-      protected removeDescendantSelectedPaths(arg0: javax.swing.tree.TreePath, arg1: boolean): boolean
+      protected removeDescendantSelectedPaths(arg0: javax.swing.tree.TreePath, arg1: boolean | java.lang.Boolean): boolean
       removeDescendantSelectedPaths(arg0: javax.swing.event.TreeModelEvent): void
-      setUIProperty(arg0: java.lang.String, arg1: java.lang.Object): void
+      setUIProperty(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.TransferHandler$DropLocation

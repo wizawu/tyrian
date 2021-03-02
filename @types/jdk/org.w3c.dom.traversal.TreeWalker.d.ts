@@ -5,7 +5,7 @@ declare namespace org {
 
         interface TreeWalker {
           getRoot(): org.w3c.dom.Node
-          getWhatToShow(): int
+          getWhatToShow(): number
           getFilter(): org.w3c.dom.traversal.NodeFilter
           getExpandEntityReferences(): boolean
           getCurrentNode(): org.w3c.dom.Node

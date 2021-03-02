@@ -10,8 +10,8 @@ declare namespace com {
         genericSignature(): java.lang.String
         isVisible(arg0: com.sun.jdi.StackFrame): boolean
         isArgument(): boolean
-        equals(arg0: java.lang.Object): boolean
-        hashCode(): int
+        equals(arg0: java.lang.Object | any): boolean
+        hashCode(): number
       }
 
     }

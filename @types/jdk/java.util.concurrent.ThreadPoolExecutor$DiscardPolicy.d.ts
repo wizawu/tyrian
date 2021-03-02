@@ -4,7 +4,7 @@ declare namespace java {
 
       class ThreadPoolExecutor$DiscardPolicy implements java.util.concurrent.RejectedExecutionHandler {
         public constructor()
-        public rejectedExecution(arg0: java.lang.Runnable, arg1: java.util.concurrent.ThreadPoolExecutor): void
+        public rejectedExecution(arg0: java.lang.Runnable | java.lang.Runnable$$lambda, arg1: java.util.concurrent.ThreadPoolExecutor): void
       }
 
     }

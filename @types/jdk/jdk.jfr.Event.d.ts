@@ -8,7 +8,7 @@ declare namespace jdk {
       public commit(): void
       public isEnabled(): boolean
       public shouldCommit(): boolean
-      public set(arg0: int, arg1: java.lang.Object): void
+      public set(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): void
     }
 
   }

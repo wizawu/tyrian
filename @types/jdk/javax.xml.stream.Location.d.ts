@@ -3,9 +3,9 @@ declare namespace javax {
     namespace stream {
 
       interface Location {
-        getLineNumber(): int
-        getColumnNumber(): int
-        getCharacterOffset(): int
+        getLineNumber(): number
+        getColumnNumber(): number
+        getCharacterOffset(): number
         getPublicId(): java.lang.String
         getSystemId(): java.lang.String
       }

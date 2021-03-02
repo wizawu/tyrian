@@ -30,10 +30,10 @@ declare namespace org {
           public static readonly CSS_COUNTER: short
           public static readonly CSS_RECT: short
           public static readonly CSS_RGBCOLOR: short
-          getPrimitiveType(): short
-          setFloatValue(arg0: short, arg1: float): void
-          getFloatValue(arg0: short): float
-          setStringValue(arg0: short, arg1: java.lang.String): void
+          getPrimitiveType(): number
+          setFloatValue(arg0: number | java.lang.Short, arg1: number | java.lang.Float): void
+          getFloatValue(arg0: number | java.lang.Short): number
+          setStringValue(arg0: number | java.lang.Short, arg1: java.lang.String | string): void
           getStringValue(): java.lang.String
           getCounterValue(): org.w3c.dom.css.Counter
           getRectValue(): org.w3c.dom.css.Rect

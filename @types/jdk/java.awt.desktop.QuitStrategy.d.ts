@@ -6,7 +6,7 @@ declare namespace java {
         public static readonly NORMAL_EXIT: java.awt.desktop.QuitStrategy
         public static readonly CLOSE_ALL_WINDOWS: java.awt.desktop.QuitStrategy
         public static values(): java.awt.desktop.QuitStrategy[]
-        public static valueOf(arg0: java.lang.String): java.awt.desktop.QuitStrategy
+        public static valueOf(arg0: java.lang.String | string): java.awt.desktop.QuitStrategy
       }
 
     }

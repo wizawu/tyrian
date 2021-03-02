@@ -42,11 +42,11 @@ declare namespace java {
       public static readonly TIME_WITH_TIMEZONE: java.sql.JDBCType
       public static readonly TIMESTAMP_WITH_TIMEZONE: java.sql.JDBCType
       public static values(): java.sql.JDBCType[]
-      public static valueOf(arg0: java.lang.String): java.sql.JDBCType
+      public static valueOf(arg0: java.lang.String | string): java.sql.JDBCType
       public getName(): java.lang.String
       public getVendor(): java.lang.String
-      public getVendorTypeNumber(): java.lang.Integer
-      public static valueOf(arg0: int): java.sql.JDBCType
+      public getVendorTypeNumber(): number
+      public static valueOf(arg0: number | java.lang.Integer): java.sql.JDBCType
     }
 
   }

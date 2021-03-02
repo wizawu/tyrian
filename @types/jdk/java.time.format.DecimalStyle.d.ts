@@ -7,18 +7,18 @@ declare namespace java {
         public static getAvailableLocales(): java.util.Set<java.util.Locale>
         public static ofDefaultLocale(): java.time.format.DecimalStyle
         public static of(arg0: java.util.Locale): java.time.format.DecimalStyle
-        public getZeroDigit(): char
-        public withZeroDigit(arg0: char): java.time.format.DecimalStyle
-        public getPositiveSign(): char
-        public withPositiveSign(arg0: char): java.time.format.DecimalStyle
-        public getNegativeSign(): char
-        public withNegativeSign(arg0: char): java.time.format.DecimalStyle
-        public getDecimalSeparator(): char
-        public withDecimalSeparator(arg0: char): java.time.format.DecimalStyle
-        convertToDigit(arg0: char): int
-        convertNumberToI18N(arg0: java.lang.String): java.lang.String
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public getZeroDigit(): string
+        public withZeroDigit(arg0: string | java.lang.Character): java.time.format.DecimalStyle
+        public getPositiveSign(): string
+        public withPositiveSign(arg0: string | java.lang.Character): java.time.format.DecimalStyle
+        public getNegativeSign(): string
+        public withNegativeSign(arg0: string | java.lang.Character): java.time.format.DecimalStyle
+        public getDecimalSeparator(): string
+        public withDecimalSeparator(arg0: string | java.lang.Character): java.time.format.DecimalStyle
+        convertToDigit(arg0: string | java.lang.Character): number
+        convertNumberToI18N(arg0: java.lang.String | string): java.lang.String
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
         public toString(): java.lang.String
       }
 

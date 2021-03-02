@@ -3,7 +3,7 @@ declare namespace jdk {
     namespace spi {
 
       class ExecutionControl$NotImplementedException extends jdk.jshell.spi.ExecutionControl$InternalException {
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

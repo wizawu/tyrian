@@ -7,7 +7,7 @@ declare namespace com {
           public static readonly EXPRESSION: com.sun.source.tree.LambdaExpressionTree$BodyKind
           public static readonly STATEMENT: com.sun.source.tree.LambdaExpressionTree$BodyKind
           public static values(): com.sun.source.tree.LambdaExpressionTree$BodyKind[]
-          public static valueOf(arg0: java.lang.String): com.sun.source.tree.LambdaExpressionTree$BodyKind
+          public static valueOf(arg0: java.lang.String | string): com.sun.source.tree.LambdaExpressionTree$BodyKind
         }
 
       }

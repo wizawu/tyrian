@@ -7,12 +7,12 @@ declare namespace java {
         public static readonly DEFLATED: int
         public constructor(arg0: java.io.OutputStream)
         public constructor(arg0: java.io.OutputStream, arg1: java.nio.charset.Charset)
-        public setComment(arg0: java.lang.String): void
-        public setMethod(arg0: int): void
-        public setLevel(arg0: int): void
+        public setComment(arg0: java.lang.String | string): void
+        public setMethod(arg0: number | java.lang.Integer): void
+        public setLevel(arg0: number | java.lang.Integer): void
         public putNextEntry(arg0: java.util.zip.ZipEntry): void
         public closeEntry(): void
-        public write(arg0: byte[], arg1: int, arg2: int): void
+        public write(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         public finish(): void
         public close(): void
       }

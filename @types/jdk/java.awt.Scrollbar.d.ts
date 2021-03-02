@@ -14,34 +14,34 @@ declare namespace java {
       isAdjusting: boolean
       adjustmentListener: java.awt.event.AdjustmentListener
       public constructor()
-      public constructor(arg0: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int)
+      public constructor(arg0: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
       constructComponentName(): java.lang.String
       public addNotify(): void
-      public getOrientation(): int
-      public setOrientation(arg0: int): void
-      public getValue(): int
-      public setValue(arg0: int): void
-      public getMinimum(): int
-      public setMinimum(arg0: int): void
-      public getMaximum(): int
-      public setMaximum(arg0: int): void
-      public getVisibleAmount(): int
-      public getVisible(): int
-      public setVisibleAmount(arg0: int): void
-      public setUnitIncrement(arg0: int): void
-      public setLineIncrement(arg0: int): void
-      public getUnitIncrement(): int
-      public getLineIncrement(): int
-      public setBlockIncrement(arg0: int): void
-      public setPageIncrement(arg0: int): void
-      public getBlockIncrement(): int
-      public getPageIncrement(): int
-      public setValues(arg0: int, arg1: int, arg2: int, arg3: int): void
+      public getOrientation(): number
+      public setOrientation(arg0: number | java.lang.Integer): void
+      public getValue(): number
+      public setValue(arg0: number | java.lang.Integer): void
+      public getMinimum(): number
+      public setMinimum(arg0: number | java.lang.Integer): void
+      public getMaximum(): number
+      public setMaximum(arg0: number | java.lang.Integer): void
+      public getVisibleAmount(): number
+      public getVisible(): number
+      public setVisibleAmount(arg0: number | java.lang.Integer): void
+      public setUnitIncrement(arg0: number | java.lang.Integer): void
+      public setLineIncrement(arg0: number | java.lang.Integer): void
+      public getUnitIncrement(): number
+      public getLineIncrement(): number
+      public setBlockIncrement(arg0: number | java.lang.Integer): void
+      public setPageIncrement(arg0: number | java.lang.Integer): void
+      public getBlockIncrement(): number
+      public getPageIncrement(): number
+      public setValues(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       public getValueIsAdjusting(): boolean
-      public setValueIsAdjusting(arg0: boolean): void
-      public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
-      public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
+      public setValueIsAdjusting(arg0: boolean | java.lang.Boolean): void
+      public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
+      public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
       public getAdjustmentListeners(): java.awt.event.AdjustmentListener[]
       public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
       eventEnabled(arg0: java.awt.AWTEvent): boolean

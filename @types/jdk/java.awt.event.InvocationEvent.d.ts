@@ -9,14 +9,14 @@ declare namespace java {
         protected runnable: java.lang.Runnable
         protected notifier: java.lang.Object
         protected catchExceptions: boolean
-        public constructor(arg0: java.lang.Object, arg1: java.lang.Runnable)
-        public constructor(arg0: java.lang.Object, arg1: java.lang.Runnable, arg2: java.lang.Object, arg3: boolean)
-        public constructor(arg0: java.lang.Object, arg1: java.lang.Runnable, arg2: java.lang.Runnable, arg3: boolean)
-        protected constructor(arg0: java.lang.Object, arg1: int, arg2: java.lang.Runnable, arg3: java.lang.Object, arg4: boolean)
+        public constructor(arg0: java.lang.Object | any, arg1: java.lang.Runnable | java.lang.Runnable$$lambda)
+        public constructor(arg0: java.lang.Object | any, arg1: java.lang.Runnable | java.lang.Runnable$$lambda, arg2: java.lang.Object | any, arg3: boolean | java.lang.Boolean)
+        public constructor(arg0: java.lang.Object | any, arg1: java.lang.Runnable | java.lang.Runnable$$lambda, arg2: java.lang.Runnable | java.lang.Runnable$$lambda, arg3: boolean | java.lang.Boolean)
+        protected constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: java.lang.Runnable | java.lang.Runnable$$lambda, arg3: java.lang.Object | any, arg4: boolean | java.lang.Boolean)
         public dispatch(): void
         public getException(): java.lang.Exception
         public getThrowable(): java.lang.Throwable
-        public getWhen(): long
+        public getWhen(): number
         public isDispatched(): boolean
         public paramString(): java.lang.String
       }

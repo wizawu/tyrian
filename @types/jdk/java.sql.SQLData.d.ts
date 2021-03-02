@@ -3,7 +3,7 @@ declare namespace java {
 
     interface SQLData {
       getSQLTypeName(): java.lang.String
-      readSQL(arg0: java.sql.SQLInput, arg1: java.lang.String): void
+      readSQL(arg0: java.sql.SQLInput, arg1: java.lang.String | string): void
       writeSQL(arg0: java.sql.SQLOutput): void
     }
 

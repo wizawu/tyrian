@@ -22,26 +22,26 @@ declare namespace java {
       public isMCLinkLocal(): boolean
       public isMCSiteLocal(): boolean
       public isMCOrgLocal(): boolean
-      public isReachable(arg0: int): boolean
-      public isReachable(arg0: java.net.NetworkInterface, arg1: int, arg2: int): boolean
+      public isReachable(arg0: number | java.lang.Integer): boolean
+      public isReachable(arg0: java.net.NetworkInterface, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
       public getHostName(): java.lang.String
-      getHostName(arg0: boolean): java.lang.String
+      getHostName(arg0: boolean | java.lang.Boolean): java.lang.String
       public getCanonicalHostName(): java.lang.String
-      public getAddress(): byte[]
+      public getAddress(): number[]
       public getHostAddress(): java.lang.String
-      public hashCode(): int
-      public equals(arg0: java.lang.Object): boolean
+      public hashCode(): number
+      public equals(arg0: java.lang.Object | any): boolean
       public toString(): java.lang.String
-      public static getByAddress(arg0: java.lang.String, arg1: byte[]): java.net.InetAddress
-      public static getByName(arg0: java.lang.String): java.net.InetAddress
-      public static getAllByName(arg0: java.lang.String): java.net.InetAddress[]
+      public static getByAddress(arg0: java.lang.String | string, arg1: byte[]): java.net.InetAddress
+      public static getByName(arg0: java.lang.String | string): java.net.InetAddress
+      public static getAllByName(arg0: java.lang.String | string): java.net.InetAddress[]
       public static getLoopbackAddress(): java.net.InetAddress
-      static getAllByName0(arg0: java.lang.String, arg1: boolean): java.net.InetAddress[]
-      static getAddressesFromNameService(arg0: java.lang.String, arg1: java.net.InetAddress): java.net.InetAddress[]
+      static getAllByName0(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): java.net.InetAddress[]
+      static getAddressesFromNameService(arg0: java.lang.String | string, arg1: java.net.InetAddress): java.net.InetAddress[]
       public static getByAddress(arg0: byte[]): java.net.InetAddress
       public static getLocalHost(): java.net.InetAddress
       static anyLocalAddress(): java.net.InetAddress
-      static loadImpl(arg0: java.lang.String): java.net.InetAddressImpl
+      static loadImpl(arg0: java.lang.String | string): java.net.InetAddressImpl
     }
 
   }

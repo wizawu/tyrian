@@ -15,30 +15,30 @@ declare namespace java {
         public static readonly SYNC_FLUSH: int
         public static readonly FULL_FLUSH: int
         static readonly $assertionsDisabled: boolean
-        public constructor(arg0: int, arg1: boolean)
-        public constructor(arg0: int)
+        public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean)
+        public constructor(arg0: number | java.lang.Integer)
         public constructor()
-        public setInput(arg0: byte[], arg1: int, arg2: int): void
+        public setInput(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         public setInput(arg0: byte[]): void
         public setInput(arg0: java.nio.ByteBuffer): void
-        public setDictionary(arg0: byte[], arg1: int, arg2: int): void
+        public setDictionary(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         public setDictionary(arg0: byte[]): void
         public setDictionary(arg0: java.nio.ByteBuffer): void
-        public setStrategy(arg0: int): void
-        public setLevel(arg0: int): void
+        public setStrategy(arg0: number | java.lang.Integer): void
+        public setLevel(arg0: number | java.lang.Integer): void
         public needsInput(): boolean
         public finish(): void
         public finished(): boolean
-        public deflate(arg0: byte[], arg1: int, arg2: int): int
-        public deflate(arg0: byte[]): int
-        public deflate(arg0: java.nio.ByteBuffer): int
-        public deflate(arg0: byte[], arg1: int, arg2: int, arg3: int): int
-        public deflate(arg0: java.nio.ByteBuffer, arg1: int): int
-        public getAdler(): int
-        public getTotalIn(): int
-        public getBytesRead(): long
-        public getTotalOut(): int
-        public getBytesWritten(): long
+        public deflate(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+        public deflate(arg0: byte[]): number
+        public deflate(arg0: java.nio.ByteBuffer): number
+        public deflate(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+        public deflate(arg0: java.nio.ByteBuffer, arg1: number | java.lang.Integer): number
+        public getAdler(): number
+        public getTotalIn(): number
+        public getBytesRead(): number
+        public getTotalOut(): number
+        public getBytesWritten(): number
         public reset(): void
         public end(): void
         protected finalize(): void

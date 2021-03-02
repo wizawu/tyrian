@@ -3,7 +3,7 @@ declare namespace javax {
 
     class MBeanRegistrationException extends javax.management.MBeanException {
       public constructor(arg0: java.lang.Exception)
-      public constructor(arg0: java.lang.Exception, arg1: java.lang.String)
+      public constructor(arg0: java.lang.Exception, arg1: java.lang.String | string)
     }
 
   }

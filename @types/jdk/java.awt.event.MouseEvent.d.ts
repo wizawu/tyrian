@@ -23,20 +23,20 @@ declare namespace java {
         button: int
         popupTrigger: boolean
         public getLocationOnScreen(): java.awt.Point
-        public getXOnScreen(): int
-        public getYOnScreen(): int
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: long, arg3: int, arg4: int, arg5: int, arg6: int, arg7: boolean, arg8: int)
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: long, arg3: int, arg4: int, arg5: int, arg6: int, arg7: boolean)
-        public getModifiersEx(): int
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: long, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: boolean, arg10: int)
-        public getX(): int
-        public getY(): int
+        public getXOnScreen(): number
+        public getYOnScreen(): number
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: boolean | java.lang.Boolean, arg8: number | java.lang.Integer)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: boolean | java.lang.Boolean)
+        public getModifiersEx(): number
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: number | java.lang.Integer, arg9: boolean | java.lang.Boolean, arg10: number | java.lang.Integer)
+        public getX(): number
+        public getY(): number
         public getPoint(): java.awt.Point
-        public translatePoint(arg0: int, arg1: int): void
-        public getClickCount(): int
-        public getButton(): int
+        public translatePoint(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        public getClickCount(): number
+        public getButton(): number
         public isPopupTrigger(): boolean
-        public static getMouseModifiersText(arg0: int): java.lang.String
+        public static getMouseModifiersText(arg0: number | java.lang.Integer): java.lang.String
         public paramString(): java.lang.String
       }
 

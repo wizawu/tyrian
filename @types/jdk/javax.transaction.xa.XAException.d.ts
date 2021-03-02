@@ -30,8 +30,8 @@ declare namespace javax {
         public static readonly XAER_DUPID: int
         public static readonly XAER_OUTSIDE: int
         public constructor()
-        public constructor(arg0: java.lang.String)
-        public constructor(arg0: int)
+        public constructor(arg0: java.lang.String | string)
+        public constructor(arg0: number | java.lang.Integer)
       }
 
     }

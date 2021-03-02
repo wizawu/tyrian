@@ -10,7 +10,7 @@ declare namespace com {
           public static readonly SHUTDOWN: com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent
           public static readonly CANT_START: com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent
           public static values(): com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent[]
-          public static valueOf(arg0: java.lang.String): com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent
+          public static valueOf(arg0: java.lang.String | string): com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent
         }
 
       }

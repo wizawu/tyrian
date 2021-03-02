@@ -8,8 +8,8 @@ declare namespace org {
           public constructor(arg0: org.xml.sax.Locator)
           public getXMLVersion(): java.lang.String
           public getEncoding(): java.lang.String
-          public setXMLVersion(arg0: java.lang.String): void
-          public setEncoding(arg0: java.lang.String): void
+          public setXMLVersion(arg0: java.lang.String | string): void
+          public setEncoding(arg0: java.lang.String | string): void
         }
 
       }

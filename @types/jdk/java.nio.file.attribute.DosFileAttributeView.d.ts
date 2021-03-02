@@ -6,10 +6,10 @@ declare namespace java {
         interface DosFileAttributeView extends java.nio.file.attribute.BasicFileAttributeView {
           name(): java.lang.String
           readAttributes(): java.nio.file.attribute.DosFileAttributes
-          setReadOnly(arg0: boolean): void
-          setHidden(arg0: boolean): void
-          setSystem(arg0: boolean): void
-          setArchive(arg0: boolean): void
+          setReadOnly(arg0: boolean | java.lang.Boolean): void
+          setHidden(arg0: boolean | java.lang.Boolean): void
+          setSystem(arg0: boolean | java.lang.Boolean): void
+          setArchive(arg0: boolean | java.lang.Boolean): void
           readAttributes(): java.nio.file.attribute.BasicFileAttributes
         }
 

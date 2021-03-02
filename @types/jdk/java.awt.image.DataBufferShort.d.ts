@@ -5,19 +5,19 @@ declare namespace java {
       class DataBufferShort extends java.awt.image.DataBuffer {
         data: short[]
         bankdata: short[][]
-        public constructor(arg0: int)
-        public constructor(arg0: int, arg1: int)
-        public constructor(arg0: short[], arg1: int)
-        public constructor(arg0: short[], arg1: int, arg2: int)
-        public constructor(arg0: short[][], arg1: int)
-        public constructor(arg0: short[][], arg1: int, arg2: int[])
-        public getData(): short[]
-        public getData(arg0: int): short[]
-        public getBankData(): short[][]
-        public getElem(arg0: int): int
-        public getElem(arg0: int, arg1: int): int
-        public setElem(arg0: int, arg1: int): void
-        public setElem(arg0: int, arg1: int, arg2: int): void
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        public constructor(arg0: short[], arg1: number | java.lang.Integer)
+        public constructor(arg0: short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(arg0: short[][], arg1: number | java.lang.Integer)
+        public constructor(arg0: short[][], arg1: number | java.lang.Integer, arg2: int[])
+        public getData(): number[]
+        public getData(arg0: number | java.lang.Integer): number[]
+        public getBankData(): number[][]
+        public getElem(arg0: number | java.lang.Integer): number
+        public getElem(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+        public setElem(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        public setElem(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       }
 
     }

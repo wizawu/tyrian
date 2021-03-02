@@ -7,8 +7,8 @@ declare namespace javax {
         public constructor(arg0: java.text.DateFormat)
         public setFormat(arg0: java.text.DateFormat): void
         getSupportsIncrement(): boolean
-        getAdjustField(arg0: int, arg1: java.util.Map<unknown,unknown>): java.lang.Object
-        adjustValue(arg0: java.lang.Object, arg1: java.util.Map<unknown,unknown>, arg2: java.lang.Object, arg3: int): java.lang.Object
+        getAdjustField(arg0: number | java.lang.Integer, arg1: java.util.Map<unknown,unknown>): java.lang.Object
+        adjustValue(arg0: java.lang.Object | any, arg1: java.util.Map<unknown,unknown>, arg2: java.lang.Object | any, arg3: number | java.lang.Integer): java.lang.Object
       }
 
     }

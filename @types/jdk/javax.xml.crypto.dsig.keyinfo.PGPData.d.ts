@@ -6,8 +6,8 @@ declare namespace javax {
 
           interface PGPData extends javax.xml.crypto.XMLStructure {
             public static readonly TYPE: java.lang.String
-            getKeyId(): byte[]
-            getKeyPacket(): byte[]
+            getKeyId(): number[]
+            getKeyPacket(): number[]
             getExternalElements(): java.util.List<javax.xml.crypto.XMLStructure>
           }
 

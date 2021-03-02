@@ -4,16 +4,16 @@ declare namespace java {
     abstract class ObjectInputStream$GetField {
       public constructor()
       public abstract getObjectStreamClass(): java.io.ObjectStreamClass
-      public abstract defaulted(arg0: java.lang.String): boolean
-      public abstract get(arg0: java.lang.String, arg1: boolean): boolean
-      public abstract get(arg0: java.lang.String, arg1: byte): byte
-      public abstract get(arg0: java.lang.String, arg1: char): char
-      public abstract get(arg0: java.lang.String, arg1: short): short
-      public abstract get(arg0: java.lang.String, arg1: int): int
-      public abstract get(arg0: java.lang.String, arg1: long): long
-      public abstract get(arg0: java.lang.String, arg1: float): float
-      public abstract get(arg0: java.lang.String, arg1: double): double
-      public abstract get(arg0: java.lang.String, arg1: java.lang.Object): java.lang.Object
+      public abstract defaulted(arg0: java.lang.String | string): boolean
+      public abstract get(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): boolean
+      public abstract get(arg0: java.lang.String | string, arg1: number | java.lang.Byte): number
+      public abstract get(arg0: java.lang.String | string, arg1: string | java.lang.Character): string
+      public abstract get(arg0: java.lang.String | string, arg1: number | java.lang.Short): number
+      public abstract get(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
+      public abstract get(arg0: java.lang.String | string, arg1: number | java.lang.Long): number
+      public abstract get(arg0: java.lang.String | string, arg1: number | java.lang.Float): number
+      public abstract get(arg0: java.lang.String | string, arg1: number | java.lang.Double): number
+      public abstract get(arg0: java.lang.String | string, arg1: java.lang.Object | any): java.lang.Object
     }
 
   }

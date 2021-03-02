@@ -5,7 +5,7 @@ declare namespace java {
       public static readonly FILE: java.awt.JobAttributes$DestinationType
       public static readonly PRINTER: java.awt.JobAttributes$DestinationType
       public toString(): java.lang.String
-      public hashCode(): int
+      public hashCode(): number
     }
 
   }

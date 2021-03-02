@@ -3,13 +3,13 @@ declare namespace java {
     namespace reflect {
 
       class Parameter implements java.lang.reflect.AnnotatedElement {
-        constructor(arg0: java.lang.String, arg1: int, arg2: java.lang.reflect.Executable, arg3: int)
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.lang.reflect.Executable, arg3: number | java.lang.Integer)
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
         public isNamePresent(): boolean
         public toString(): java.lang.String
         public getDeclaringExecutable(): java.lang.reflect.Executable
-        public getModifiers(): int
+        public getModifiers(): number
         public getName(): java.lang.String
         getRealName(): java.lang.String
         public getParameterizedType(): java.lang.reflect.Type

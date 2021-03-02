@@ -9,7 +9,7 @@ declare namespace org {
         public static readonly DERIVATION_LIST: int
         getTypeName(): java.lang.String
         getTypeNamespace(): java.lang.String
-        isDerivedFrom(arg0: java.lang.String, arg1: java.lang.String, arg2: int): boolean
+        isDerivedFrom(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: number | java.lang.Integer): boolean
       }
 
     }

@@ -4,10 +4,10 @@ declare namespace jdk {
     class EventType {
       constructor(arg0: jdk.jfr.internal.PlatformEventType)
       public getFields(): java.util.List<jdk.jfr.ValueDescriptor>
-      public getField(arg0: java.lang.String): jdk.jfr.ValueDescriptor
+      public getField(arg0: java.lang.String | string): jdk.jfr.ValueDescriptor
       public getName(): java.lang.String
       public getLabel(): java.lang.String
-      public getId(): long
+      public getId(): number
       public getAnnotationElements(): java.util.List<jdk.jfr.AnnotationElement>
       public isEnabled(): boolean
       public getDescription(): java.lang.String

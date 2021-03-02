@@ -7,21 +7,21 @@ declare namespace javax {
           static readonly serialVersionUID: long
           public constructor(arg0: char[])
           public constructor(arg0: java.sql.Clob)
-          public length(): long
+          public length(): number
           public getCharacterStream(): java.io.Reader
           public getAsciiStream(): java.io.InputStream
-          public getSubString(arg0: long, arg1: int): java.lang.String
-          public position(arg0: java.lang.String, arg1: long): long
-          public position(arg0: java.sql.Clob, arg1: long): long
-          public setString(arg0: long, arg1: java.lang.String): int
-          public setString(arg0: long, arg1: java.lang.String, arg2: int, arg3: int): int
-          public setAsciiStream(arg0: long): java.io.OutputStream
-          public setCharacterStream(arg0: long): java.io.Writer
-          public truncate(arg0: long): void
-          public getCharacterStream(arg0: long, arg1: long): java.io.Reader
+          public getSubString(arg0: number | java.lang.Long, arg1: number | java.lang.Integer): java.lang.String
+          public position(arg0: java.lang.String | string, arg1: number | java.lang.Long): number
+          public position(arg0: java.sql.Clob, arg1: number | java.lang.Long): number
+          public setString(arg0: number | java.lang.Long, arg1: java.lang.String | string): number
+          public setString(arg0: number | java.lang.Long, arg1: java.lang.String | string, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+          public setAsciiStream(arg0: number | java.lang.Long): java.io.OutputStream
+          public setCharacterStream(arg0: number | java.lang.Long): java.io.Writer
+          public truncate(arg0: number | java.lang.Long): void
+          public getCharacterStream(arg0: number | java.lang.Long, arg1: number | java.lang.Long): java.io.Reader
           public free(): void
-          public equals(arg0: java.lang.Object): boolean
-          public hashCode(): int
+          public equals(arg0: java.lang.Object | any): boolean
+          public hashCode(): number
           public clone(): java.lang.Object
         }
 

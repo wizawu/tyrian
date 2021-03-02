@@ -19,10 +19,10 @@ declare namespace javax {
           public abstract getProviderID(): java.lang.String
           public abstract getRowSetReader(): javax.sql.RowSetReader
           public abstract getRowSetWriter(): javax.sql.RowSetWriter
-          public abstract getProviderGrade(): int
-          public abstract setDataSourceLock(arg0: int): void
-          public abstract getDataSourceLock(): int
-          public abstract supportsUpdatableView(): int
+          public abstract getProviderGrade(): number
+          public abstract setDataSourceLock(arg0: number | java.lang.Integer): void
+          public abstract getDataSourceLock(): number
+          public abstract supportsUpdatableView(): number
           public abstract getVersion(): java.lang.String
           public abstract getVendor(): java.lang.String
         }

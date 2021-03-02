@@ -7,9 +7,9 @@ declare namespace javax {
       public static readonly DECREMENT: java.lang.String
       public static readonly CLICK: java.lang.String
       public static readonly TOGGLE_POPUP: java.lang.String
-      getAccessibleActionCount(): int
-      getAccessibleActionDescription(arg0: int): java.lang.String
-      doAccessibleAction(arg0: int): boolean
+      getAccessibleActionCount(): number
+      getAccessibleActionDescription(arg0: number | java.lang.Integer): java.lang.String
+      doAccessibleAction(arg0: number | java.lang.Integer): boolean
     }
 
   }

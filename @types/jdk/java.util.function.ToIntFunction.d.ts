@@ -7,7 +7,7 @@ declare namespace java {
       }
 
       interface ToIntFunction<T> {
-        applyAsInt(arg0: T): int
+        applyAsInt(arg0: T): number
       }
 
     }

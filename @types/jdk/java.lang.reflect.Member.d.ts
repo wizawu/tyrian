@@ -7,7 +7,7 @@ declare namespace java {
         public static readonly DECLARED: int
         getDeclaringClass(): java.lang.Class<unknown>
         getName(): java.lang.String
-        getModifiers(): int
+        getModifiers(): number
         isSynthetic(): boolean
       }
 

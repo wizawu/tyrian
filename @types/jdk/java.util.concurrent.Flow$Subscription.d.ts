@@ -3,7 +3,7 @@ declare namespace java {
     namespace concurrent {
 
       interface Flow$Subscription {
-        request(arg0: long): void
+        request(arg0: number | java.lang.Long): void
         cancel(): void
       }
 

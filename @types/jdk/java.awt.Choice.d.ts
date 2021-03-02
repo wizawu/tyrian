@@ -8,23 +8,23 @@ declare namespace java {
       public constructor()
       constructComponentName(): java.lang.String
       public addNotify(): void
-      public getItemCount(): int
-      public countItems(): int
-      public getItem(arg0: int): java.lang.String
-      getItemImpl(arg0: int): java.lang.String
-      public add(arg0: java.lang.String): void
-      public addItem(arg0: java.lang.String): void
-      public insert(arg0: java.lang.String, arg1: int): void
-      public remove(arg0: java.lang.String): void
-      public remove(arg0: int): void
+      public getItemCount(): number
+      public countItems(): number
+      public getItem(arg0: number | java.lang.Integer): java.lang.String
+      getItemImpl(arg0: number | java.lang.Integer): java.lang.String
+      public add(arg0: java.lang.String | string): void
+      public addItem(arg0: java.lang.String | string): void
+      public insert(arg0: java.lang.String | string, arg1: number | java.lang.Integer): void
+      public remove(arg0: java.lang.String | string): void
+      public remove(arg0: number | java.lang.Integer): void
       public removeAll(): void
       public getSelectedItem(): java.lang.String
       public getSelectedObjects(): java.lang.Object[]
-      public getSelectedIndex(): int
-      public select(arg0: int): void
-      public select(arg0: java.lang.String): void
-      public addItemListener(arg0: java.awt.event.ItemListener): void
-      public removeItemListener(arg0: java.awt.event.ItemListener): void
+      public getSelectedIndex(): number
+      public select(arg0: number | java.lang.Integer): void
+      public select(arg0: java.lang.String | string): void
+      public addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda): void
+      public removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda): void
       public getItemListeners(): java.awt.event.ItemListener[]
       public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
       eventEnabled(arg0: java.awt.AWTEvent): boolean

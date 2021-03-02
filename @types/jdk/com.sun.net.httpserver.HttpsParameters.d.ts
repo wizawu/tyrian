@@ -13,9 +13,9 @@ declare namespace com {
           public getProtocols(): java.lang.String[]
           public setProtocols(arg0: java.lang.String[]): void
           public getWantClientAuth(): boolean
-          public setWantClientAuth(arg0: boolean): void
+          public setWantClientAuth(arg0: boolean | java.lang.Boolean): void
           public getNeedClientAuth(): boolean
-          public setNeedClientAuth(arg0: boolean): void
+          public setNeedClientAuth(arg0: boolean | java.lang.Boolean): void
         }
 
       }

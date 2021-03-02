@@ -10,12 +10,12 @@ declare namespace javax {
         isRunning(): boolean
         isActive(): boolean
         getFormat(): javax.sound.sampled.AudioFormat
-        getBufferSize(): int
-        available(): int
-        getFramePosition(): int
-        getLongFramePosition(): long
-        getMicrosecondPosition(): long
-        getLevel(): float
+        getBufferSize(): number
+        available(): number
+        getFramePosition(): number
+        getLongFramePosition(): number
+        getMicrosecondPosition(): number
+        getLevel(): number
       }
 
     }

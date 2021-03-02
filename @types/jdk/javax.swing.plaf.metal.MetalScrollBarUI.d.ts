@@ -16,12 +16,12 @@ declare namespace javax {
           protected createPropertyChangeListener(): java.beans.PropertyChangeListener
           protected configureScrollBarColors(): void
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          protected createDecreaseButton(arg0: int): javax.swing.JButton
-          protected createIncreaseButton(arg0: int): javax.swing.JButton
+          protected createDecreaseButton(arg0: number | java.lang.Integer): javax.swing.JButton
+          protected createIncreaseButton(arg0: number | java.lang.Integer): javax.swing.JButton
           protected paintTrack(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
           protected paintThumb(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
           protected getMinimumThumbSize(): java.awt.Dimension
-          protected setThumbBounds(arg0: int, arg1: int, arg2: int, arg3: int): void
+          protected setThumbBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
         }
 
       }

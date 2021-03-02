@@ -7,7 +7,7 @@ declare namespace jdk {
         public getType(): jdk.jfr.consumer.RecordedClass
         public getName(): java.lang.String
         public getDescriptor(): java.lang.String
-        public getModifiers(): int
+        public getModifiers(): number
         public isHidden(): boolean
       }
 

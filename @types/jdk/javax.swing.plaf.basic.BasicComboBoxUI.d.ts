@@ -53,30 +53,30 @@ declare namespace javax {
           public unconfigureArrowButton(): void
           protected createArrowButton(): javax.swing.JButton
           public isPopupVisible(arg0: javax.swing.JComboBox<unknown>): boolean
-          public setPopupVisible(arg0: javax.swing.JComboBox<unknown>, arg1: boolean): void
+          public setPopupVisible(arg0: javax.swing.JComboBox<unknown>, arg1: boolean | java.lang.Boolean): void
           public isFocusTraversable(arg0: javax.swing.JComboBox<unknown>): boolean
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
-          public getAccessibleChildrenCount(arg0: javax.swing.JComponent): int
-          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: int): javax.accessibility.Accessible
-          protected isNavigationKey(arg0: int): boolean
+          public getAccessibleChildrenCount(arg0: javax.swing.JComponent): number
+          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer): javax.accessibility.Accessible
+          protected isNavigationKey(arg0: number | java.lang.Integer): boolean
           protected selectNextPossibleValue(): void
           protected selectPreviousPossibleValue(): void
           protected toggleOpenClose(): void
           protected rectangleForCurrentValue(): java.awt.Rectangle
           protected getInsets(): java.awt.Insets
-          public paintCurrentValue(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean): void
-          public paintCurrentValueBackground(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean): void
+          public paintCurrentValue(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean | java.lang.Boolean): void
+          public paintCurrentValueBackground(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean | java.lang.Boolean): void
           repaintCurrentValue(): void
           protected getDefaultSize(): java.awt.Dimension
           protected getDisplaySize(): java.awt.Dimension
           protected getSizeForComponent(arg0: java.awt.Component): java.awt.Dimension
           protected installKeyboardActions(): void
-          getInputMap(arg0: int): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           isTableCellEditor(): boolean
           protected uninstallKeyboardActions(): void
         }

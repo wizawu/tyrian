@@ -3,11 +3,11 @@ declare namespace org {
     namespace sax {
 
       interface XMLReader {
-        getFeature(arg0: java.lang.String): boolean
-        setFeature(arg0: java.lang.String, arg1: boolean): void
-        getProperty(arg0: java.lang.String): java.lang.Object
-        setProperty(arg0: java.lang.String, arg1: java.lang.Object): void
-        setEntityResolver(arg0: org.xml.sax.EntityResolver): void
+        getFeature(arg0: java.lang.String | string): boolean
+        setFeature(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): void
+        getProperty(arg0: java.lang.String | string): java.lang.Object
+        setProperty(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
+        setEntityResolver(arg0: org.xml.sax.EntityResolver | org.xml.sax.EntityResolver$$lambda): void
         getEntityResolver(): org.xml.sax.EntityResolver
         setDTDHandler(arg0: org.xml.sax.DTDHandler): void
         getDTDHandler(): org.xml.sax.DTDHandler
@@ -16,7 +16,7 @@ declare namespace org {
         setErrorHandler(arg0: org.xml.sax.ErrorHandler): void
         getErrorHandler(): org.xml.sax.ErrorHandler
         parse(arg0: org.xml.sax.InputSource): void
-        parse(arg0: java.lang.String): void
+        parse(arg0: java.lang.String | string): void
       }
 
     }

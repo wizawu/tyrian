@@ -9,17 +9,17 @@ declare namespace java {
       protected abstract engineInitSign(arg0: java.security.PrivateKey): void
       protected engineInitSign(arg0: java.security.PrivateKey, arg1: java.security.SecureRandom): void
       engineInitSign(arg0: java.security.PrivateKey, arg1: java.security.spec.AlgorithmParameterSpec, arg2: java.security.SecureRandom): void
-      protected abstract engineUpdate(arg0: byte): void
-      protected abstract engineUpdate(arg0: byte[], arg1: int, arg2: int): void
+      protected abstract engineUpdate(arg0: number | java.lang.Byte): void
+      protected abstract engineUpdate(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       protected engineUpdate(arg0: java.nio.ByteBuffer): void
-      protected abstract engineSign(): byte[]
-      protected engineSign(arg0: byte[], arg1: int, arg2: int): int
+      protected abstract engineSign(): number[]
+      protected engineSign(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       protected abstract engineVerify(arg0: byte[]): boolean
-      protected engineVerify(arg0: byte[], arg1: int, arg2: int): boolean
-      protected abstract engineSetParameter(arg0: java.lang.String, arg1: java.lang.Object): void
+      protected engineVerify(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
+      protected abstract engineSetParameter(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
       protected engineSetParameter(arg0: java.security.spec.AlgorithmParameterSpec): void
       protected engineGetParameters(): java.security.AlgorithmParameters
-      protected abstract engineGetParameter(arg0: java.lang.String): java.lang.Object
+      protected abstract engineGetParameter(arg0: java.lang.String | string): java.lang.Object
       public clone(): java.lang.Object
     }
 

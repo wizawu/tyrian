@@ -4,7 +4,7 @@ declare namespace javax {
 
       class MonitorSettingException extends javax.management.JMRuntimeException {
         public constructor()
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

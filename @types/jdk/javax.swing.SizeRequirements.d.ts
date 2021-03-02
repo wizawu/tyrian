@@ -7,15 +7,15 @@ declare namespace javax {
       public maximum: int
       public alignment: float
       public constructor()
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: float)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Float)
       public toString(): java.lang.String
       public static getTiledSizeRequirements(arg0: javax.swing.SizeRequirements[]): javax.swing.SizeRequirements
       public static getAlignedSizeRequirements(arg0: javax.swing.SizeRequirements[]): javax.swing.SizeRequirements
-      public static calculateTiledPositions(arg0: int, arg1: javax.swing.SizeRequirements, arg2: javax.swing.SizeRequirements[], arg3: int[], arg4: int[]): void
-      public static calculateTiledPositions(arg0: int, arg1: javax.swing.SizeRequirements, arg2: javax.swing.SizeRequirements[], arg3: int[], arg4: int[], arg5: boolean): void
-      public static calculateAlignedPositions(arg0: int, arg1: javax.swing.SizeRequirements, arg2: javax.swing.SizeRequirements[], arg3: int[], arg4: int[]): void
-      public static calculateAlignedPositions(arg0: int, arg1: javax.swing.SizeRequirements, arg2: javax.swing.SizeRequirements[], arg3: int[], arg4: int[], arg5: boolean): void
-      public static adjustSizes(arg0: int, arg1: javax.swing.SizeRequirements[]): int[]
+      public static calculateTiledPositions(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements, arg2: javax.swing.SizeRequirements[], arg3: int[], arg4: int[]): void
+      public static calculateTiledPositions(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements, arg2: javax.swing.SizeRequirements[], arg3: int[], arg4: int[], arg5: boolean | java.lang.Boolean): void
+      public static calculateAlignedPositions(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements, arg2: javax.swing.SizeRequirements[], arg3: int[], arg4: int[]): void
+      public static calculateAlignedPositions(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements, arg2: javax.swing.SizeRequirements[], arg3: int[], arg4: int[], arg5: boolean | java.lang.Boolean): void
+      public static adjustSizes(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements[]): number[]
     }
 
   }

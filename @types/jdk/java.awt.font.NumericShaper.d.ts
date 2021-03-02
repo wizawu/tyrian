@@ -23,20 +23,20 @@ declare namespace java {
         public static readonly KHMER: int
         public static readonly MONGOLIAN: int
         public static readonly ALL_RANGES: int
-        public static getShaper(arg0: int): java.awt.font.NumericShaper
+        public static getShaper(arg0: number | java.lang.Integer): java.awt.font.NumericShaper
         public static getShaper(arg0: java.awt.font.NumericShaper$Range): java.awt.font.NumericShaper
-        public static getContextualShaper(arg0: int): java.awt.font.NumericShaper
+        public static getContextualShaper(arg0: number | java.lang.Integer): java.awt.font.NumericShaper
         public static getContextualShaper(arg0: java.util.Set<java.awt.font.NumericShaper$Range>): java.awt.font.NumericShaper
-        public static getContextualShaper(arg0: int, arg1: int): java.awt.font.NumericShaper
+        public static getContextualShaper(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.font.NumericShaper
         public static getContextualShaper(arg0: java.util.Set<java.awt.font.NumericShaper$Range>, arg1: java.awt.font.NumericShaper$Range): java.awt.font.NumericShaper
-        public shape(arg0: char[], arg1: int, arg2: int): void
-        public shape(arg0: char[], arg1: int, arg2: int, arg3: int): void
-        public shape(arg0: char[], arg1: int, arg2: int, arg3: java.awt.font.NumericShaper$Range): void
+        public shape(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        public shape(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+        public shape(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.NumericShaper$Range): void
         public isContextual(): boolean
-        public getRanges(): int
+        public getRanges(): number
         public getRangeSet(): java.util.Set<java.awt.font.NumericShaper$Range>
-        public hashCode(): int
-        public equals(arg0: java.lang.Object): boolean
+        public hashCode(): number
+        public equals(arg0: java.lang.Object | any): boolean
         public toString(): java.lang.String
       }
 

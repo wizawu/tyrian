@@ -3,9 +3,9 @@ declare namespace javax {
     namespace plaf {
 
       class ColorUIResource extends java.awt.Color implements javax.swing.plaf.UIResource {
-        public constructor(arg0: int, arg1: int, arg2: int)
-        public constructor(arg0: int)
-        public constructor(arg0: float, arg1: float, arg2: float)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float)
         public constructor(arg0: java.awt.Color)
       }
 

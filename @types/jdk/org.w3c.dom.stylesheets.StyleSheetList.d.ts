@@ -4,8 +4,8 @@ declare namespace org {
       namespace stylesheets {
 
         interface StyleSheetList {
-          getLength(): int
-          item(arg0: int): org.w3c.dom.stylesheets.StyleSheet
+          getLength(): number
+          item(arg0: number | java.lang.Integer): org.w3c.dom.stylesheets.StyleSheet
         }
 
       }

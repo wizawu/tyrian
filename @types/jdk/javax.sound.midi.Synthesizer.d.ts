@@ -3,8 +3,8 @@ declare namespace javax {
     namespace midi {
 
       interface Synthesizer extends javax.sound.midi.MidiDevice {
-        getMaxPolyphony(): int
-        getLatency(): long
+        getMaxPolyphony(): number
+        getLatency(): number
         getChannels(): javax.sound.midi.MidiChannel[]
         getVoiceStatus(): javax.sound.midi.VoiceStatus[]
         isSoundbankSupported(arg0: javax.sound.midi.Soundbank): boolean

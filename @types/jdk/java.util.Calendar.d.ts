@@ -92,67 +92,67 @@ declare namespace java {
       protected abstract computeFields(): void
       public getTime(): java.util.Date
       public setTime(arg0: java.util.Date): void
-      public getTimeInMillis(): long
-      public setTimeInMillis(arg0: long): void
-      public get(arg0: int): int
-      protected internalGet(arg0: int): int
-      internalSet(arg0: int, arg1: int): void
-      public set(arg0: int, arg1: int): void
-      public set(arg0: int, arg1: int, arg2: int): void
-      public set(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int): void
-      public set(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): void
+      public getTimeInMillis(): number
+      public setTimeInMillis(arg0: number | java.lang.Long): void
+      public get(arg0: number | java.lang.Integer): number
+      protected internalGet(arg0: number | java.lang.Integer): number
+      internalSet(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
       public clear(): void
-      public clear(arg0: int): void
-      public isSet(arg0: int): boolean
-      public getDisplayName(arg0: int, arg1: int, arg2: java.util.Locale): java.lang.String
-      public getDisplayNames(arg0: int, arg1: int, arg2: java.util.Locale): java.util.Map<java.lang.String,java.lang.Integer>
-      checkDisplayNameParams(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.util.Locale, arg5: int): boolean
+      public clear(arg0: number | java.lang.Integer): void
+      public isSet(arg0: number | java.lang.Integer): boolean
+      public getDisplayName(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.util.Locale): java.lang.String
+      public getDisplayNames(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.util.Locale): java.util.Map<java.lang.String,java.lang.Integer>
+      checkDisplayNameParams(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.util.Locale, arg5: number | java.lang.Integer): boolean
       protected complete(): void
-      isExternallySet(arg0: int): boolean
-      getSetStateFields(): int
-      setFieldsComputed(arg0: int): void
-      setFieldsNormalized(arg0: int): void
+      isExternallySet(arg0: number | java.lang.Integer): boolean
+      getSetStateFields(): number
+      setFieldsComputed(arg0: number | java.lang.Integer): void
+      setFieldsNormalized(arg0: number | java.lang.Integer): void
       isPartiallyNormalized(): boolean
       isFullyNormalized(): boolean
       setUnnormalized(): void
-      static isFieldSet(arg0: int, arg1: int): boolean
-      selectFields(): int
-      getBaseStyle(arg0: int): int
+      static isFieldSet(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
+      selectFields(): number
+      getBaseStyle(arg0: number | java.lang.Integer): number
       public static getAvailableCalendarTypes(): java.util.Set<java.lang.String>
       public getCalendarType(): java.lang.String
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
-      public before(arg0: java.lang.Object): boolean
-      public after(arg0: java.lang.Object): boolean
-      public compareTo(arg0: java.util.Calendar): int
-      public abstract add(arg0: int, arg1: int): void
-      public abstract roll(arg0: int, arg1: boolean): void
-      public roll(arg0: int, arg1: int): void
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
+      public before(arg0: java.lang.Object | any): boolean
+      public after(arg0: java.lang.Object | any): boolean
+      public compareTo(arg0: java.util.Calendar): number
+      public abstract add(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public abstract roll(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
+      public roll(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public setTimeZone(arg0: java.util.TimeZone): void
       public getTimeZone(): java.util.TimeZone
       getZone(): java.util.TimeZone
-      setZoneShared(arg0: boolean): void
-      public setLenient(arg0: boolean): void
+      setZoneShared(arg0: boolean | java.lang.Boolean): void
+      public setLenient(arg0: boolean | java.lang.Boolean): void
       public isLenient(): boolean
-      public setFirstDayOfWeek(arg0: int): void
-      public getFirstDayOfWeek(): int
-      public setMinimalDaysInFirstWeek(arg0: int): void
-      public getMinimalDaysInFirstWeek(): int
+      public setFirstDayOfWeek(arg0: number | java.lang.Integer): void
+      public getFirstDayOfWeek(): number
+      public setMinimalDaysInFirstWeek(arg0: number | java.lang.Integer): void
+      public getMinimalDaysInFirstWeek(): number
       public isWeekDateSupported(): boolean
-      public getWeekYear(): int
-      public setWeekDate(arg0: int, arg1: int, arg2: int): void
-      public getWeeksInWeekYear(): int
-      public abstract getMinimum(arg0: int): int
-      public abstract getMaximum(arg0: int): int
-      public abstract getGreatestMinimum(arg0: int): int
-      public abstract getLeastMaximum(arg0: int): int
-      public getActualMinimum(arg0: int): int
-      public getActualMaximum(arg0: int): int
+      public getWeekYear(): number
+      public setWeekDate(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public getWeeksInWeekYear(): number
+      public abstract getMinimum(arg0: number | java.lang.Integer): number
+      public abstract getMaximum(arg0: number | java.lang.Integer): number
+      public abstract getGreatestMinimum(arg0: number | java.lang.Integer): number
+      public abstract getLeastMaximum(arg0: number | java.lang.Integer): number
+      public getActualMinimum(arg0: number | java.lang.Integer): number
+      public getActualMaximum(arg0: number | java.lang.Integer): number
       public clone(): java.lang.Object
-      static getFieldName(arg0: int): java.lang.String
+      static getFieldName(arg0: number | java.lang.Integer): java.lang.String
       public toString(): java.lang.String
       public toInstant(): java.time.Instant
-      public compareTo(arg0: java.lang.Object): int
+      public compareTo(arg0: java.lang.Object | any): number
     }
 
   }

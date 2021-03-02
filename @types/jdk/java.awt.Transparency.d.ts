@@ -9,7 +9,7 @@ declare namespace java {
       public static readonly OPAQUE: int
       public static readonly BITMASK: int
       public static readonly TRANSLUCENT: int
-      getTransparency(): int
+      getTransparency(): number
     }
 
   }

@@ -5,8 +5,8 @@ declare namespace javax {
 
         class MetalIconFactory$TreeLeafIcon extends javax.swing.plaf.metal.MetalIconFactory$FileIcon16 {
           public constructor()
-          public getShift(): int
-          public getAdditionalHeight(): int
+          public getShift(): number
+          public getAdditionalHeight(): number
         }
 
       }

@@ -7,8 +7,8 @@ declare namespace javax {
         public constructor(arg0: javax.swing.RowSorter<unknown>, arg1: javax.swing.event.RowSorterEvent$Type, arg2: int[])
         public getSource(): javax.swing.RowSorter<unknown>
         public getType(): javax.swing.event.RowSorterEvent$Type
-        public convertPreviousRowIndexToModel(arg0: int): int
-        public getPreviousRowCount(): int
+        public convertPreviousRowIndexToModel(arg0: number | java.lang.Integer): number
+        public getPreviousRowCount(): number
         public getSource(): java.lang.Object
       }
 

@@ -6,7 +6,7 @@ declare namespace java {
       public static readonly UTILITY: java.awt.Window$Type
       public static readonly POPUP: java.awt.Window$Type
       public static values(): java.awt.Window$Type[]
-      public static valueOf(arg0: java.lang.String): java.awt.Window$Type
+      public static valueOf(arg0: java.lang.String | string): java.awt.Window$Type
     }
 
   }

@@ -9,7 +9,7 @@ declare namespace javax {
           public static readonly LOCAL: javax.lang.model.element.NestingKind
           public static readonly ANONYMOUS: javax.lang.model.element.NestingKind
           public static values(): javax.lang.model.element.NestingKind[]
-          public static valueOf(arg0: java.lang.String): javax.lang.model.element.NestingKind
+          public static valueOf(arg0: java.lang.String | string): javax.lang.model.element.NestingKind
           public isNested(): boolean
         }
 

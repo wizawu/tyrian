@@ -13,7 +13,7 @@ declare namespace java {
       constructComponentName(): java.lang.String
       getComponentFactory(): sun.awt.ComponentFactory
       public getName(): java.lang.String
-      public setName(arg0: java.lang.String): void
+      public setName(arg0: java.lang.String | string): void
       public getParent(): java.awt.MenuContainer
       getParent_NoClientCode(): java.awt.MenuContainer
       public getFont(): java.awt.Font
@@ -29,8 +29,8 @@ declare namespace java {
       public toString(): java.lang.String
       protected getTreeLock(): java.lang.Object
       public getAccessibleContext(): javax.accessibility.AccessibleContext
-      getAccessibleIndexInParent(): int
-      getAccessibleChildIndex(arg0: java.awt.MenuComponent): int
+      getAccessibleIndexInParent(): number
+      getAccessibleChildIndex(arg0: java.awt.MenuComponent): number
       getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
     }
 

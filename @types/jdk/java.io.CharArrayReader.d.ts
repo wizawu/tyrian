@@ -7,13 +7,13 @@ declare namespace java {
       protected markedPos: int
       protected count: int
       public constructor(arg0: char[])
-      public constructor(arg0: char[], arg1: int, arg2: int)
-      public read(): int
-      public read(arg0: char[], arg1: int, arg2: int): int
-      public skip(arg0: long): long
+      public constructor(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public read(): number
+      public read(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public skip(arg0: number | java.lang.Long): number
       public ready(): boolean
       public markSupported(): boolean
-      public mark(arg0: int): void
+      public mark(arg0: number | java.lang.Integer): void
       public reset(): void
       public close(): void
     }

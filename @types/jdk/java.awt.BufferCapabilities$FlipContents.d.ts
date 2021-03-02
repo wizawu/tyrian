@@ -7,7 +7,7 @@ declare namespace java {
       public static readonly PRIOR: java.awt.BufferCapabilities$FlipContents
       public static readonly COPIED: java.awt.BufferCapabilities$FlipContents
       public toString(): java.lang.String
-      public hashCode(): int
+      public hashCode(): number
     }
 
   }

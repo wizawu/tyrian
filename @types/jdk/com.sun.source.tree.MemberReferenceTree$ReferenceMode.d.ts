@@ -7,7 +7,7 @@ declare namespace com {
           public static readonly INVOKE: com.sun.source.tree.MemberReferenceTree$ReferenceMode
           public static readonly NEW: com.sun.source.tree.MemberReferenceTree$ReferenceMode
           public static values(): com.sun.source.tree.MemberReferenceTree$ReferenceMode[]
-          public static valueOf(arg0: java.lang.String): com.sun.source.tree.MemberReferenceTree$ReferenceMode
+          public static valueOf(arg0: java.lang.String | string): com.sun.source.tree.MemberReferenceTree$ReferenceMode
         }
 
       }

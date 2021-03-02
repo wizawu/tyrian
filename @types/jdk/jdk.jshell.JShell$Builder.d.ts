@@ -17,11 +17,11 @@ declare namespace jdk {
       public in(arg0: java.io.InputStream): jdk.jshell.JShell$Builder
       public out(arg0: java.io.PrintStream): jdk.jshell.JShell$Builder
       public err(arg0: java.io.PrintStream): jdk.jshell.JShell$Builder
-      public tempVariableNameGenerator(arg0: java.util.function$.Supplier<java.lang.String>): jdk.jshell.JShell$Builder
+      public tempVariableNameGenerator(arg0: java.util.function$.Supplier<java.lang.String> | java.util.function$.Supplier$$lambda<java.lang.String>): jdk.jshell.JShell$Builder
       public idGenerator(arg0: java.util.function$.BiFunction<jdk.jshell.Snippet,java.lang.Integer,java.lang.String>): jdk.jshell.JShell$Builder
-      public remoteVMOptions(...arg0: java.lang.String[]): jdk.jshell.JShell$Builder
-      public compilerOptions(...arg0: java.lang.String[]): jdk.jshell.JShell$Builder
-      public executionEngine(arg0: java.lang.String): jdk.jshell.JShell$Builder
+      public remoteVMOptions(...vargs: (java.lang.String | string)[]): jdk.jshell.JShell$Builder
+      public compilerOptions(...vargs: (java.lang.String | string)[]): jdk.jshell.JShell$Builder
+      public executionEngine(arg0: java.lang.String | string): jdk.jshell.JShell$Builder
       public executionEngine(arg0: jdk.jshell.spi.ExecutionControlProvider, arg1: java.util.Map<java.lang.String,java.lang.String>): jdk.jshell.JShell$Builder
       public fileManager(arg0: java.util.function$.Function<javax.tools.StandardJavaFileManager,javax.tools.StandardJavaFileManager>): jdk.jshell.JShell$Builder
       public build(): jdk.jshell.JShell

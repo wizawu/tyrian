@@ -6,7 +6,7 @@ declare namespace org {
         public static readonly SEVERITY_WARNING: short
         public static readonly SEVERITY_ERROR: short
         public static readonly SEVERITY_FATAL_ERROR: short
-        getSeverity(): short
+        getSeverity(): number
         getMessage(): java.lang.String
         getType(): java.lang.String
         getRelatedException(): java.lang.Object

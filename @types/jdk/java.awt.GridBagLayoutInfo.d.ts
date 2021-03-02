@@ -14,9 +14,9 @@ declare namespace java {
       baselineType: short[]
       maxAscent: int[]
       maxDescent: int[]
-      constructor(arg0: int, arg1: int)
-      hasConstantDescent(arg0: int): boolean
-      hasBaseline(arg0: int): boolean
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+      hasConstantDescent(arg0: number | java.lang.Integer): boolean
+      hasBaseline(arg0: number | java.lang.Integer): boolean
     }
 
   }

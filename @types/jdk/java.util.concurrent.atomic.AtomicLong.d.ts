@@ -5,42 +5,42 @@ declare namespace java {
 
         class AtomicLong extends java.lang.Number implements java.io.Serializable {
           static readonly VM_SUPPORTS_LONG_CAS: boolean
-          public constructor(arg0: long)
+          public constructor(arg0: number | java.lang.Long)
           public constructor()
-          public get(): long
-          public set(arg0: long): void
-          public lazySet(arg0: long): void
-          public getAndSet(arg0: long): long
-          public compareAndSet(arg0: long, arg1: long): boolean
-          public weakCompareAndSet(arg0: long, arg1: long): boolean
-          public weakCompareAndSetPlain(arg0: long, arg1: long): boolean
-          public getAndIncrement(): long
-          public getAndDecrement(): long
-          public getAndAdd(arg0: long): long
-          public incrementAndGet(): long
-          public decrementAndGet(): long
-          public addAndGet(arg0: long): long
-          public getAndUpdate(arg0: java.util.function$.LongUnaryOperator): long
-          public updateAndGet(arg0: java.util.function$.LongUnaryOperator): long
-          public getAndAccumulate(arg0: long, arg1: java.util.function$.LongBinaryOperator): long
-          public accumulateAndGet(arg0: long, arg1: java.util.function$.LongBinaryOperator): long
+          public get(): number
+          public set(arg0: number | java.lang.Long): void
+          public lazySet(arg0: number | java.lang.Long): void
+          public getAndSet(arg0: number | java.lang.Long): number
+          public compareAndSet(arg0: number | java.lang.Long, arg1: number | java.lang.Long): boolean
+          public weakCompareAndSet(arg0: number | java.lang.Long, arg1: number | java.lang.Long): boolean
+          public weakCompareAndSetPlain(arg0: number | java.lang.Long, arg1: number | java.lang.Long): boolean
+          public getAndIncrement(): number
+          public getAndDecrement(): number
+          public getAndAdd(arg0: number | java.lang.Long): number
+          public incrementAndGet(): number
+          public decrementAndGet(): number
+          public addAndGet(arg0: number | java.lang.Long): number
+          public getAndUpdate(arg0: java.util.function$.LongUnaryOperator): number
+          public updateAndGet(arg0: java.util.function$.LongUnaryOperator): number
+          public getAndAccumulate(arg0: number | java.lang.Long, arg1: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda): number
+          public accumulateAndGet(arg0: number | java.lang.Long, arg1: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda): number
           public toString(): java.lang.String
-          public intValue(): int
-          public longValue(): long
-          public floatValue(): float
-          public doubleValue(): double
-          public getPlain(): long
-          public setPlain(arg0: long): void
-          public getOpaque(): long
-          public setOpaque(arg0: long): void
-          public getAcquire(): long
-          public setRelease(arg0: long): void
-          public compareAndExchange(arg0: long, arg1: long): long
-          public compareAndExchangeAcquire(arg0: long, arg1: long): long
-          public compareAndExchangeRelease(arg0: long, arg1: long): long
-          public weakCompareAndSetVolatile(arg0: long, arg1: long): boolean
-          public weakCompareAndSetAcquire(arg0: long, arg1: long): boolean
-          public weakCompareAndSetRelease(arg0: long, arg1: long): boolean
+          public intValue(): number
+          public longValue(): number
+          public floatValue(): number
+          public doubleValue(): number
+          public getPlain(): number
+          public setPlain(arg0: number | java.lang.Long): void
+          public getOpaque(): number
+          public setOpaque(arg0: number | java.lang.Long): void
+          public getAcquire(): number
+          public setRelease(arg0: number | java.lang.Long): void
+          public compareAndExchange(arg0: number | java.lang.Long, arg1: number | java.lang.Long): number
+          public compareAndExchangeAcquire(arg0: number | java.lang.Long, arg1: number | java.lang.Long): number
+          public compareAndExchangeRelease(arg0: number | java.lang.Long, arg1: number | java.lang.Long): number
+          public weakCompareAndSetVolatile(arg0: number | java.lang.Long, arg1: number | java.lang.Long): boolean
+          public weakCompareAndSetAcquire(arg0: number | java.lang.Long, arg1: number | java.lang.Long): boolean
+          public weakCompareAndSetRelease(arg0: number | java.lang.Long, arg1: number | java.lang.Long): boolean
         }
 
       }

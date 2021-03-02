@@ -8,14 +8,14 @@ declare namespace java {
         public width: float
         public height: float
         public constructor()
-        public constructor(arg0: float, arg1: float, arg2: float, arg3: float)
-        public getX(): double
-        public getY(): double
-        public getWidth(): double
-        public getHeight(): double
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float)
+        public getX(): number
+        public getY(): number
+        public getWidth(): number
+        public getHeight(): number
         public isEmpty(): boolean
-        public setFrame(arg0: float, arg1: float, arg2: float, arg3: float): void
-        public setFrame(arg0: double, arg1: double, arg2: double, arg3: double): void
+        public setFrame(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float): void
+        public setFrame(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): void
         public getBounds2D(): java.awt.geom.Rectangle2D
       }
 

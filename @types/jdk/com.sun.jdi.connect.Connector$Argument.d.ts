@@ -8,8 +8,8 @@ declare namespace com {
           label(): java.lang.String
           description(): java.lang.String
           value(): java.lang.String
-          setValue(arg0: java.lang.String): void
-          isValid(arg0: java.lang.String): boolean
+          setValue(arg0: java.lang.String | string): void
+          isValid(arg0: java.lang.String | string): boolean
           mustSpecify(): boolean
         }
 

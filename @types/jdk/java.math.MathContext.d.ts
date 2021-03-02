@@ -8,13 +8,13 @@ declare namespace java {
       public static readonly DECIMAL128: java.math.MathContext
       readonly precision: int
       readonly roundingMode: java.math.RoundingMode
-      public constructor(arg0: int)
-      public constructor(arg0: int, arg1: java.math.RoundingMode)
-      public constructor(arg0: java.lang.String)
-      public getPrecision(): int
+      public constructor(arg0: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: java.math.RoundingMode)
+      public constructor(arg0: java.lang.String | string)
+      public getPrecision(): number
       public getRoundingMode(): java.math.RoundingMode
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
       public toString(): java.lang.String
     }
 

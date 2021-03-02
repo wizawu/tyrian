@@ -9,7 +9,7 @@ declare namespace javax {
           protected getPropertyPrefix(): java.lang.String
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paintIcon(arg0: java.awt.Graphics, arg1: javax.swing.AbstractButton, arg2: java.awt.Rectangle): void
-          protected getTextShiftOffset(): int
+          protected getTextShiftOffset(): number
         }
 
       }

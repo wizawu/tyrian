@@ -36,64 +36,64 @@ declare namespace java {
         readonly saturate: java.util.function$.Predicate<unknown>
         ctl: long
         static readonly QA: java.lang.invoke.VarHandle
-        static contextWithPermissions(...arg0: java.security.Permission[]): java.security.AccessControlContext
+        static contextWithPermissions(...vargs: (java.security.Permission)[]): java.security.AccessControlContext
         registerWorker(arg0: java.util.concurrent.ForkJoinWorkerThread): java.util.concurrent.ForkJoinPool$WorkQueue
         deregisterWorker(arg0: java.util.concurrent.ForkJoinWorkerThread, arg1: java.lang.Throwable): void
         signalWork(): void
         runWorker(arg0: java.util.concurrent.ForkJoinPool$WorkQueue): void
-        awaitJoin(arg0: java.util.concurrent.ForkJoinPool$WorkQueue, arg1: java.util.concurrent.ForkJoinTask<unknown>, arg2: long): int
+        awaitJoin(arg0: java.util.concurrent.ForkJoinPool$WorkQueue, arg1: java.util.concurrent.ForkJoinTask<unknown>, arg2: number | java.lang.Long): number
         helpQuiescePool(arg0: java.util.concurrent.ForkJoinPool$WorkQueue): void
         nextTaskFor(arg0: java.util.concurrent.ForkJoinPool$WorkQueue): java.util.concurrent.ForkJoinTask<unknown>
         externalPush(arg0: java.util.concurrent.ForkJoinTask<unknown>): void
         static commonSubmitterQueue(): java.util.concurrent.ForkJoinPool$WorkQueue
         tryExternalUnpush(arg0: java.util.concurrent.ForkJoinTask<unknown>): boolean
-        externalHelpComplete(arg0: java.util.concurrent.CountedCompleter<unknown>, arg1: int): int
-        helpComplete(arg0: java.util.concurrent.ForkJoinPool$WorkQueue, arg1: java.util.concurrent.CountedCompleter<unknown>, arg2: int): int
-        static getSurplusQueuedTaskCount(): int
+        externalHelpComplete(arg0: java.util.concurrent.CountedCompleter<unknown>, arg1: number | java.lang.Integer): number
+        helpComplete(arg0: java.util.concurrent.ForkJoinPool$WorkQueue, arg1: java.util.concurrent.CountedCompleter<unknown>, arg2: number | java.lang.Integer): number
+        static getSurplusQueuedTaskCount(): number
         public constructor()
-        public constructor(arg0: int)
-        public constructor(arg0: int, arg1: java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory, arg2: java.lang.Thread$UncaughtExceptionHandler, arg3: boolean)
-        public constructor(arg0: int, arg1: java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory, arg2: java.lang.Thread$UncaughtExceptionHandler, arg3: boolean, arg4: int, arg5: int, arg6: int, arg7: java.util.function$.Predicate<unknown>, arg8: long, arg9: java.util.concurrent.TimeUnit)
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory | java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory$$lambda, arg2: java.lang.Thread$UncaughtExceptionHandler | java.lang.Thread$UncaughtExceptionHandler$$lambda, arg3: boolean | java.lang.Boolean)
+        public constructor(arg0: number | java.lang.Integer, arg1: java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory | java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory$$lambda, arg2: java.lang.Thread$UncaughtExceptionHandler | java.lang.Thread$UncaughtExceptionHandler$$lambda, arg3: boolean | java.lang.Boolean, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: java.util.function$.Predicate<unknown>, arg8: number | java.lang.Long, arg9: java.util.concurrent.TimeUnit)
         public static commonPool(): java.util.concurrent.ForkJoinPool
         public invoke<T>(arg0: java.util.concurrent.ForkJoinTask<T>): T
         public execute(arg0: java.util.concurrent.ForkJoinTask<unknown>): void
-        public execute(arg0: java.lang.Runnable): void
+        public execute(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): void
         public submit<T>(arg0: java.util.concurrent.ForkJoinTask<T>): java.util.concurrent.ForkJoinTask<T>
-        public submit<T>(arg0: java.util.concurrent.Callable<T>): java.util.concurrent.ForkJoinTask<T>
-        public submit<T>(arg0: java.lang.Runnable, arg1: T): java.util.concurrent.ForkJoinTask<T>
-        public submit(arg0: java.lang.Runnable): java.util.concurrent.ForkJoinTask<unknown>
+        public submit<T>(arg0: java.util.concurrent.Callable<T> | java.util.concurrent.Callable$$lambda<T>): java.util.concurrent.ForkJoinTask<T>
+        public submit<T>(arg0: java.lang.Runnable | java.lang.Runnable$$lambda, arg1: T): java.util.concurrent.ForkJoinTask<T>
+        public submit(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): java.util.concurrent.ForkJoinTask<unknown>
         public invokeAll<T>(arg0: java.util.Collection<java.util.concurrent.Callable<T>>): java.util.List<java.util.concurrent.Future<T>>
         public getFactory(): java.util.concurrent.ForkJoinPool$ForkJoinWorkerThreadFactory
         public getUncaughtExceptionHandler(): java.lang.Thread$UncaughtExceptionHandler
-        public getParallelism(): int
-        public static getCommonPoolParallelism(): int
-        public getPoolSize(): int
+        public getParallelism(): number
+        public static getCommonPoolParallelism(): number
+        public getPoolSize(): number
         public getAsyncMode(): boolean
-        public getRunningThreadCount(): int
-        public getActiveThreadCount(): int
+        public getRunningThreadCount(): number
+        public getActiveThreadCount(): number
         public isQuiescent(): boolean
-        public getStealCount(): long
-        public getQueuedTaskCount(): long
-        public getQueuedSubmissionCount(): int
+        public getStealCount(): number
+        public getQueuedTaskCount(): number
+        public getQueuedSubmissionCount(): number
         public hasQueuedSubmissions(): boolean
         protected pollSubmission(): java.util.concurrent.ForkJoinTask<unknown>
-        protected drainTasksTo(arg0: java.util.Collection<unknown>): int
+        protected drainTasksTo(arg0: java.util.Collection<unknown>): number
         public toString(): java.lang.String
         public shutdown(): void
         public shutdownNow(): java.util.List<java.lang.Runnable>
         public isTerminated(): boolean
         public isTerminating(): boolean
         public isShutdown(): boolean
-        public awaitTermination(arg0: long, arg1: java.util.concurrent.TimeUnit): boolean
-        public awaitQuiescence(arg0: long, arg1: java.util.concurrent.TimeUnit): boolean
+        public awaitTermination(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): boolean
+        public awaitQuiescence(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): boolean
         static quiesceCommonPool(): void
         public static managedBlock(arg0: java.util.concurrent.ForkJoinPool$ManagedBlocker): void
-        static helpAsyncBlocker(arg0: java.util.concurrent.Executor, arg1: java.util.concurrent.ForkJoinPool$ManagedBlocker): void
-        protected newTaskFor<T>(arg0: java.lang.Runnable, arg1: T): java.util.concurrent.RunnableFuture<T>
-        protected newTaskFor<T>(arg0: java.util.concurrent.Callable<T>): java.util.concurrent.RunnableFuture<T>
-        public submit(arg0: java.util.concurrent.Callable): java.util.concurrent.Future
-        public submit(arg0: java.lang.Runnable, arg1: java.lang.Object): java.util.concurrent.Future
-        public submit(arg0: java.lang.Runnable): java.util.concurrent.Future
+        static helpAsyncBlocker(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda, arg1: java.util.concurrent.ForkJoinPool$ManagedBlocker): void
+        protected newTaskFor<T>(arg0: java.lang.Runnable | java.lang.Runnable$$lambda, arg1: T): java.util.concurrent.RunnableFuture<T>
+        protected newTaskFor<T>(arg0: java.util.concurrent.Callable<T> | java.util.concurrent.Callable$$lambda<T>): java.util.concurrent.RunnableFuture<T>
+        public submit(arg0: java.util.concurrent.Callable | java.util.concurrent.Callable$$lambda): java.util.concurrent.Future
+        public submit(arg0: java.lang.Runnable | java.lang.Runnable$$lambda, arg1: java.lang.Object | any): java.util.concurrent.Future
+        public submit(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): java.util.concurrent.Future
       }
 
     }

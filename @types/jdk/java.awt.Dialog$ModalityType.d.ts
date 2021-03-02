@@ -7,7 +7,7 @@ declare namespace java {
       public static readonly APPLICATION_MODAL: java.awt.Dialog$ModalityType
       public static readonly TOOLKIT_MODAL: java.awt.Dialog$ModalityType
       public static values(): java.awt.Dialog$ModalityType[]
-      public static valueOf(arg0: java.lang.String): java.awt.Dialog$ModalityType
+      public static valueOf(arg0: java.lang.String | string): java.awt.Dialog$ModalityType
     }
 
   }

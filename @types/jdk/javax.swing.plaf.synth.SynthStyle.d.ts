@@ -13,14 +13,14 @@ declare namespace javax {
           public getInsets(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Insets): java.awt.Insets
           public getPainter(arg0: javax.swing.plaf.synth.SynthContext): javax.swing.plaf.synth.SynthPainter
           public isOpaque(arg0: javax.swing.plaf.synth.SynthContext): boolean
-          public get(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object): java.lang.Object
+          public get(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object | any): java.lang.Object
           installDefaults(arg0: javax.swing.plaf.synth.SynthContext, arg1: javax.swing.plaf.synth.SynthUI): void
           public installDefaults(arg0: javax.swing.plaf.synth.SynthContext): void
           public uninstallDefaults(arg0: javax.swing.plaf.synth.SynthContext): void
-          public getInt(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object, arg2: int): int
-          public getBoolean(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object, arg2: boolean): boolean
-          public getIcon(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object): javax.swing.Icon
-          public getString(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object, arg2: java.lang.String): java.lang.String
+          public getInt(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): number
+          public getBoolean(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean): boolean
+          public getIcon(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object | any): javax.swing.Icon
+          public getString(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object | any, arg2: java.lang.String | string): java.lang.String
         }
 
       }

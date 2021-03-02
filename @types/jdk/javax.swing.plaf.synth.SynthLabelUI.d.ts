@@ -10,11 +10,11 @@ declare namespace javax {
           updateStyle(arg0: javax.swing.JLabel): void
           protected uninstallDefaults(arg0: javax.swing.JLabel): void
           public getContext(arg0: javax.swing.JComponent): javax.swing.plaf.synth.SynthContext
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
-          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
+          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension

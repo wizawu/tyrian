@@ -4,11 +4,11 @@ declare namespace javax {
     abstract class DefaultRowSorter$ModelWrapper<M,I> {
       protected constructor()
       public abstract getModel(): M
-      public abstract getColumnCount(): int
-      public abstract getRowCount(): int
-      public abstract getValueAt(arg0: int, arg1: int): java.lang.Object
-      public getStringValueAt(arg0: int, arg1: int): java.lang.String
-      public abstract getIdentifier(arg0: int): I
+      public abstract getColumnCount(): number
+      public abstract getRowCount(): number
+      public abstract getValueAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.Object
+      public getStringValueAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
+      public abstract getIdentifier(arg0: number | java.lang.Integer): I
     }
 
   }

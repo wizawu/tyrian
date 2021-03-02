@@ -3,11 +3,11 @@ declare namespace javax {
     namespace xpath {
 
       interface XPathFunctionResolver$$lambda {
-        (arg0: javax.xml.namespace.QName, arg1: int): javax.xml.xpath.XPathFunction
+        (arg0: javax.xml.namespace.QName, arg1: number | java.lang.Integer): javax.xml.xpath.XPathFunction
       }
 
       interface XPathFunctionResolver {
-        resolveFunction(arg0: javax.xml.namespace.QName, arg1: int): javax.xml.xpath.XPathFunction
+        resolveFunction(arg0: javax.xml.namespace.QName, arg1: number | java.lang.Integer): javax.xml.xpath.XPathFunction
       }
 
     }

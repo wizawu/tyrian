@@ -17,15 +17,15 @@ declare namespace com {
         typeParameters(): com.sun.javadoc.TypeVariable[]
         typeParamTags(): com.sun.javadoc.ParamTag[]
         fields(): com.sun.javadoc.FieldDoc[]
-        fields(arg0: boolean): com.sun.javadoc.FieldDoc[]
+        fields(arg0: boolean | java.lang.Boolean): com.sun.javadoc.FieldDoc[]
         enumConstants(): com.sun.javadoc.FieldDoc[]
         methods(): com.sun.javadoc.MethodDoc[]
-        methods(arg0: boolean): com.sun.javadoc.MethodDoc[]
+        methods(arg0: boolean | java.lang.Boolean): com.sun.javadoc.MethodDoc[]
         constructors(): com.sun.javadoc.ConstructorDoc[]
-        constructors(arg0: boolean): com.sun.javadoc.ConstructorDoc[]
+        constructors(arg0: boolean | java.lang.Boolean): com.sun.javadoc.ConstructorDoc[]
         innerClasses(): com.sun.javadoc.ClassDoc[]
-        innerClasses(arg0: boolean): com.sun.javadoc.ClassDoc[]
-        findClass(arg0: java.lang.String): com.sun.javadoc.ClassDoc
+        innerClasses(arg0: boolean | java.lang.Boolean): com.sun.javadoc.ClassDoc[]
+        findClass(arg0: java.lang.String | string): com.sun.javadoc.ClassDoc
         importedClasses(): com.sun.javadoc.ClassDoc[]
         importedPackages(): com.sun.javadoc.PackageDoc[]
       }

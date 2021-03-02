@@ -3,7 +3,7 @@ declare namespace java {
     namespace acl {
 
       interface Permission {
-        equals(arg0: java.lang.Object): boolean
+        equals(arg0: java.lang.Object | any): boolean
         toString(): java.lang.String
       }
 

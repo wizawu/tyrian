@@ -7,7 +7,7 @@ declare namespace java {
       }
 
       interface ToDoubleFunction<T> {
-        applyAsDouble(arg0: T): double
+        applyAsDouble(arg0: T): number
       }
 
     }

@@ -5,11 +5,11 @@ declare namespace java {
       protected buffer: java.lang.String
       protected pos: int
       protected count: int
-      public constructor(arg0: java.lang.String)
-      public read(): int
-      public read(arg0: byte[], arg1: int, arg2: int): int
-      public skip(arg0: long): long
-      public available(): int
+      public constructor(arg0: java.lang.String | string)
+      public read(): number
+      public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public skip(arg0: number | java.lang.Long): number
+      public available(): number
       public reset(): void
     }
 

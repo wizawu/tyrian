@@ -4,7 +4,7 @@ declare namespace com {
 
       interface MonitorInfo extends com.sun.jdi.Mirror {
         monitor(): com.sun.jdi.ObjectReference
-        stackDepth(): int
+        stackDepth(): number
         thread(): com.sun.jdi.ThreadReference
       }
 

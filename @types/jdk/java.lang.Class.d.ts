@@ -5,11 +5,11 @@ declare namespace java {
       classValueMap: java.lang.ClassValue$ClassValueMap
       public toString(): java.lang.String
       public toGenericString(): java.lang.String
-      public static forName(arg0: java.lang.String): java.lang.Class<unknown>
-      public static forName(arg0: java.lang.String, arg1: boolean, arg2: java.lang.ClassLoader): java.lang.Class<unknown>
-      public static forName(arg0: java.lang.Module, arg1: java.lang.String): java.lang.Class<unknown>
+      public static forName(arg0: java.lang.String | string): java.lang.Class<unknown>
+      public static forName(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: java.lang.ClassLoader): java.lang.Class<unknown>
+      public static forName(arg0: java.lang.Module, arg1: java.lang.String | string): java.lang.Class<unknown>
       public newInstance(): T
-      public isInstance(arg0: java.lang.Object): boolean
+      public isInstance(arg0: java.lang.Object | any): boolean
       public isAssignableFrom(arg0: java.lang.Class<unknown>): boolean
       public isInterface(): boolean
       public isArray(): boolean
@@ -28,7 +28,7 @@ declare namespace java {
       public getInterfaces(): java.lang.Class<unknown>[]
       public getGenericInterfaces(): java.lang.reflect.Type[]
       public getComponentType(): java.lang.Class<unknown>
-      public getModifiers(): int
+      public getModifiers(): number
       public getSigners(): java.lang.Object[]
       setSigners(arg0: java.lang.Object[]): void
       public getEnclosingMethod(): java.lang.reflect.Method
@@ -45,31 +45,31 @@ declare namespace java {
       public getFields(): java.lang.reflect.Field[]
       public getMethods(): java.lang.reflect.Method[]
       public getConstructors(): java.lang.reflect.Constructor<unknown>[]
-      public getField(arg0: java.lang.String): java.lang.reflect.Field
-      public getMethod(arg0: java.lang.String, ...arg1: java.lang.Class<unknown>[]): java.lang.reflect.Method
-      public getConstructor(...arg0: java.lang.Class<unknown>[]): java.lang.reflect.Constructor<T>
+      public getField(arg0: java.lang.String | string): java.lang.reflect.Field
+      public getMethod(arg0: java.lang.String | string, ...vargs: (java.lang.Class<unknown>)[]): java.lang.reflect.Method
+      public getConstructor(...vargs: (java.lang.Class<unknown>)[]): java.lang.reflect.Constructor<T>
       public getDeclaredClasses(): java.lang.Class<unknown>[]
       public getDeclaredFields(): java.lang.reflect.Field[]
       public getDeclaredMethods(): java.lang.reflect.Method[]
       public getDeclaredConstructors(): java.lang.reflect.Constructor<unknown>[]
-      public getDeclaredField(arg0: java.lang.String): java.lang.reflect.Field
-      public getDeclaredMethod(arg0: java.lang.String, ...arg1: java.lang.Class<unknown>[]): java.lang.reflect.Method
-      getDeclaredPublicMethods(arg0: java.lang.String, ...arg1: java.lang.Class<unknown>[]): java.util.List<java.lang.reflect.Method>
-      public getDeclaredConstructor(...arg0: java.lang.Class<unknown>[]): java.lang.reflect.Constructor<T>
-      public getResourceAsStream(arg0: java.lang.String): java.io.InputStream
-      public getResource(arg0: java.lang.String): java.net.URL
+      public getDeclaredField(arg0: java.lang.String | string): java.lang.reflect.Field
+      public getDeclaredMethod(arg0: java.lang.String | string, ...vargs: (java.lang.Class<unknown>)[]): java.lang.reflect.Method
+      getDeclaredPublicMethods(arg0: java.lang.String | string, ...vargs: (java.lang.Class<unknown>)[]): java.util.List<java.lang.reflect.Method>
+      public getDeclaredConstructor(...vargs: (java.lang.Class<unknown>)[]): java.lang.reflect.Constructor<T>
+      public getResourceAsStream(arg0: java.lang.String | string): java.io.InputStream
+      public getResource(arg0: java.lang.String | string): java.net.URL
       public getProtectionDomain(): java.security.ProtectionDomain
-      static getPrimitiveClass(arg0: java.lang.String): java.lang.Class<unknown>
-      getRawAnnotations(): byte[]
-      getRawTypeAnnotations(): byte[]
-      static getExecutableTypeAnnotationBytes(arg0: java.lang.reflect.Executable): byte[]
+      static getPrimitiveClass(arg0: java.lang.String | string): java.lang.Class<unknown>
+      getRawAnnotations(): number[]
+      getRawTypeAnnotations(): number[]
+      static getExecutableTypeAnnotationBytes(arg0: java.lang.reflect.Executable): number[]
       getConstantPool(): jdk.internal.reflect.ConstantPool
       public desiredAssertionStatus(): boolean
       public isEnum(): boolean
       public getEnumConstants(): T[]
       getEnumConstantsShared(): T[]
       enumConstantDirectory(): java.util.Map<java.lang.String,T>
-      public cast(arg0: java.lang.Object): T
+      public cast(arg0: java.lang.Object | any): T
       public asSubclass<U>(arg0: java.lang.Class<U>): java.lang.Class<U>
       public getAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
       public isAnnotationPresent(arg0: java.lang.Class<java.lang.annotation.Annotation>): boolean

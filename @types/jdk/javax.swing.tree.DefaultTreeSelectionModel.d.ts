@@ -14,10 +14,10 @@ declare namespace javax {
         protected leadIndex: int
         protected leadRow: int
         public constructor()
-        public setRowMapper(arg0: javax.swing.tree.RowMapper): void
+        public setRowMapper(arg0: javax.swing.tree.RowMapper | javax.swing.tree.RowMapper$$lambda): void
         public getRowMapper(): javax.swing.tree.RowMapper
-        public setSelectionMode(arg0: int): void
-        public getSelectionMode(): int
+        public setSelectionMode(arg0: number | java.lang.Integer): void
+        public getSelectionMode(): number
         public setSelectionPath(arg0: javax.swing.tree.TreePath): void
         public setSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
         public addSelectionPath(arg0: javax.swing.tree.TreePath): void
@@ -26,24 +26,24 @@ declare namespace javax {
         public removeSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
         public getSelectionPath(): javax.swing.tree.TreePath
         public getSelectionPaths(): javax.swing.tree.TreePath[]
-        public getSelectionCount(): int
+        public getSelectionCount(): number
         public isPathSelected(arg0: javax.swing.tree.TreePath): boolean
         public isSelectionEmpty(): boolean
         public clearSelection(): void
-        public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
-        public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
+        public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
+        public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
         public getTreeSelectionListeners(): javax.swing.event.TreeSelectionListener[]
         protected fireValueChanged(arg0: javax.swing.event.TreeSelectionEvent): void
         public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
-        public getSelectionRows(): int[]
-        public getMinSelectionRow(): int
-        public getMaxSelectionRow(): int
-        public isRowSelected(arg0: int): boolean
+        public getSelectionRows(): number[]
+        public getMinSelectionRow(): number
+        public getMaxSelectionRow(): number
+        public isRowSelected(arg0: number | java.lang.Integer): boolean
         public resetRowSelection(): void
-        public getLeadSelectionRow(): int
+        public getLeadSelectionRow(): number
         public getLeadSelectionPath(): javax.swing.tree.TreePath
-        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
         public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
         protected insureRowContinuity(): void
         protected arePathsContiguous(arg0: javax.swing.tree.TreePath[]): boolean

@@ -5,16 +5,16 @@ declare namespace javax {
       public static readonly CHARACTER: int
       public static readonly WORD: int
       public static readonly SENTENCE: int
-      getIndexAtPoint(arg0: java.awt.Point): int
-      getCharacterBounds(arg0: int): java.awt.Rectangle
-      getCharCount(): int
-      getCaretPosition(): int
-      getAtIndex(arg0: int, arg1: int): java.lang.String
-      getAfterIndex(arg0: int, arg1: int): java.lang.String
-      getBeforeIndex(arg0: int, arg1: int): java.lang.String
-      getCharacterAttribute(arg0: int): javax.swing.text.AttributeSet
-      getSelectionStart(): int
-      getSelectionEnd(): int
+      getIndexAtPoint(arg0: java.awt.Point): number
+      getCharacterBounds(arg0: number | java.lang.Integer): java.awt.Rectangle
+      getCharCount(): number
+      getCaretPosition(): number
+      getAtIndex(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
+      getAfterIndex(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
+      getBeforeIndex(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
+      getCharacterAttribute(arg0: number | java.lang.Integer): javax.swing.text.AttributeSet
+      getSelectionStart(): number
+      getSelectionEnd(): number
       getSelectedText(): java.lang.String
     }
 

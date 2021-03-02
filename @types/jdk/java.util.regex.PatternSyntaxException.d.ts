@@ -3,8 +3,8 @@ declare namespace java {
     namespace regex {
 
       class PatternSyntaxException extends java.lang.IllegalArgumentException {
-        public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: int)
-        public getIndex(): int
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: number | java.lang.Integer)
+        public getIndex(): number
         public getDescription(): java.lang.String
         public getPattern(): java.lang.String
         public getMessage(): java.lang.String

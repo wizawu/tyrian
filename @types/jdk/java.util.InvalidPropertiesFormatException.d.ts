@@ -3,7 +3,7 @@ declare namespace java {
 
     class InvalidPropertiesFormatException extends java.io.IOException {
       public constructor(arg0: java.lang.Throwable)
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
     }
 
   }

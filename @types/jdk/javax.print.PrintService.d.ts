@@ -4,8 +4,8 @@ declare namespace javax {
     interface PrintService {
       getName(): java.lang.String
       createPrintJob(): javax.print.DocPrintJob
-      addPrintServiceAttributeListener(arg0: javax.print.event.PrintServiceAttributeListener): void
-      removePrintServiceAttributeListener(arg0: javax.print.event.PrintServiceAttributeListener): void
+      addPrintServiceAttributeListener(arg0: javax.print.event.PrintServiceAttributeListener | javax.print.event.PrintServiceAttributeListener$$lambda): void
+      removePrintServiceAttributeListener(arg0: javax.print.event.PrintServiceAttributeListener | javax.print.event.PrintServiceAttributeListener$$lambda): void
       getAttributes(): javax.print.attribute.PrintServiceAttributeSet
       getAttribute<T extends javax.print.attribute.PrintServiceAttribute>(arg0: java.lang.Class<T>): T
       getSupportedDocFlavors(): javax.print.DocFlavor[]
@@ -17,8 +17,8 @@ declare namespace javax {
       isAttributeValueSupported(arg0: javax.print.attribute.Attribute, arg1: javax.print.DocFlavor, arg2: javax.print.attribute.AttributeSet): boolean
       getUnsupportedAttributes(arg0: javax.print.DocFlavor, arg1: javax.print.attribute.AttributeSet): javax.print.attribute.AttributeSet
       getServiceUIFactory(): javax.print.ServiceUIFactory
-      equals(arg0: java.lang.Object): boolean
-      hashCode(): int
+      equals(arg0: java.lang.Object | any): boolean
+      hashCode(): number
     }
 
   }

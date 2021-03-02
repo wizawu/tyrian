@@ -7,7 +7,7 @@ declare namespace com {
         fieldType(): java.lang.String
         fieldTypeDoc(): com.sun.javadoc.ClassDoc
         description(): java.lang.String
-        compareTo(arg0: java.lang.Object): int
+        compareTo(arg0: java.lang.Object | any): number
       }
 
     }

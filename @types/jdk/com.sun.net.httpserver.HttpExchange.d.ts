@@ -13,13 +13,13 @@ declare namespace com {
           public abstract close(): void
           public abstract getRequestBody(): java.io.InputStream
           public abstract getResponseBody(): java.io.OutputStream
-          public abstract sendResponseHeaders(arg0: int, arg1: long): void
+          public abstract sendResponseHeaders(arg0: number | java.lang.Integer, arg1: number | java.lang.Long): void
           public abstract getRemoteAddress(): java.net.InetSocketAddress
-          public abstract getResponseCode(): int
+          public abstract getResponseCode(): number
           public abstract getLocalAddress(): java.net.InetSocketAddress
           public abstract getProtocol(): java.lang.String
-          public abstract getAttribute(arg0: java.lang.String): java.lang.Object
-          public abstract setAttribute(arg0: java.lang.String, arg1: java.lang.Object): void
+          public abstract getAttribute(arg0: java.lang.String | string): java.lang.Object
+          public abstract setAttribute(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
           public abstract setStreams(arg0: java.io.InputStream, arg1: java.io.OutputStream): void
           public abstract getPrincipal(): com.sun.net.httpserver.HttpPrincipal
         }

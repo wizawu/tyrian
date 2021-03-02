@@ -6,7 +6,7 @@ declare namespace org {
         interface StyleSheet {
           getType(): java.lang.String
           getDisabled(): boolean
-          setDisabled(arg0: boolean): void
+          setDisabled(arg0: boolean | java.lang.Boolean): void
           getOwnerNode(): org.w3c.dom.Node
           getParentStyleSheet(): org.w3c.dom.stylesheets.StyleSheet
           getHref(): java.lang.String

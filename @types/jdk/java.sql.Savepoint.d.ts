@@ -2,7 +2,7 @@ declare namespace java {
   namespace sql {
 
     interface Savepoint {
-      getSavepointId(): int
+      getSavepointId(): number
       getSavepointName(): java.lang.String
     }
 

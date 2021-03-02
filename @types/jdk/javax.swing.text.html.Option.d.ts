@@ -5,11 +5,11 @@ declare namespace javax {
 
         class Option implements java.io.Serializable {
           public constructor(arg0: javax.swing.text.AttributeSet)
-          public setLabel(arg0: java.lang.String): void
+          public setLabel(arg0: java.lang.String | string): void
           public getLabel(): java.lang.String
           public getAttributes(): javax.swing.text.AttributeSet
           public toString(): java.lang.String
-          protected setSelection(arg0: boolean): void
+          protected setSelection(arg0: boolean | java.lang.Boolean): void
           public isSelected(): boolean
           public getValue(): java.lang.String
         }

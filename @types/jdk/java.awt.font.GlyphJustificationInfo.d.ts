@@ -16,7 +16,7 @@ declare namespace java {
         public readonly shrinkAbsorb: boolean
         public readonly shrinkLeftLimit: float
         public readonly shrinkRightLimit: float
-        public constructor(arg0: float, arg1: boolean, arg2: int, arg3: float, arg4: float, arg5: boolean, arg6: int, arg7: float, arg8: float)
+        public constructor(arg0: number | java.lang.Float, arg1: boolean | java.lang.Boolean, arg2: number | java.lang.Integer, arg3: number | java.lang.Float, arg4: number | java.lang.Float, arg5: boolean | java.lang.Boolean, arg6: number | java.lang.Integer, arg7: number | java.lang.Float, arg8: number | java.lang.Float)
       }
 
     }

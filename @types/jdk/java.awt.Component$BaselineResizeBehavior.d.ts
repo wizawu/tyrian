@@ -7,7 +7,7 @@ declare namespace java {
       public static readonly CENTER_OFFSET: java.awt.Component$BaselineResizeBehavior
       public static readonly OTHER: java.awt.Component$BaselineResizeBehavior
       public static values(): java.awt.Component$BaselineResizeBehavior[]
-      public static valueOf(arg0: java.lang.String): java.awt.Component$BaselineResizeBehavior
+      public static valueOf(arg0: java.lang.String | string): java.awt.Component$BaselineResizeBehavior
     }
 
   }

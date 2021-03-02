@@ -10,7 +10,7 @@ declare namespace javax {
         public static readonly NEED_UNWRAP: javax.net.ssl.SSLEngineResult$HandshakeStatus
         public static readonly NEED_UNWRAP_AGAIN: javax.net.ssl.SSLEngineResult$HandshakeStatus
         public static values(): javax.net.ssl.SSLEngineResult$HandshakeStatus[]
-        public static valueOf(arg0: java.lang.String): javax.net.ssl.SSLEngineResult$HandshakeStatus
+        public static valueOf(arg0: java.lang.String | string): javax.net.ssl.SSLEngineResult$HandshakeStatus
       }
 
     }

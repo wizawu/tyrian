@@ -7,8 +7,8 @@ declare namespace javax {
           getTransforms(): java.util.List<javax.xml.crypto.dsig.Transform>
           getDigestMethod(): javax.xml.crypto.dsig.DigestMethod
           getId(): java.lang.String
-          getDigestValue(): byte[]
-          getCalculatedDigestValue(): byte[]
+          getDigestValue(): number[]
+          getCalculatedDigestValue(): number[]
           validate(arg0: javax.xml.crypto.dsig.XMLValidateContext): boolean
           getDereferencedData(): javax.xml.crypto.Data
           getDigestInputStream(): java.io.InputStream

@@ -12,7 +12,7 @@ declare namespace com {
           public static readonly ANNOTATION_PROCESSING_ROUND: com.sun.source.util.TaskEvent$Kind
           public static readonly COMPILATION: com.sun.source.util.TaskEvent$Kind
           public static values(): com.sun.source.util.TaskEvent$Kind[]
-          public static valueOf(arg0: java.lang.String): com.sun.source.util.TaskEvent$Kind
+          public static valueOf(arg0: java.lang.String | string): com.sun.source.util.TaskEvent$Kind
         }
 
       }

@@ -5,23 +5,23 @@ declare namespace org {
 
         interface HTMLLinkElement extends org.w3c.dom.html.HTMLElement {
           getDisabled(): boolean
-          setDisabled(arg0: boolean): void
+          setDisabled(arg0: boolean | java.lang.Boolean): void
           getCharset(): java.lang.String
-          setCharset(arg0: java.lang.String): void
+          setCharset(arg0: java.lang.String | string): void
           getHref(): java.lang.String
-          setHref(arg0: java.lang.String): void
+          setHref(arg0: java.lang.String | string): void
           getHreflang(): java.lang.String
-          setHreflang(arg0: java.lang.String): void
+          setHreflang(arg0: java.lang.String | string): void
           getMedia(): java.lang.String
-          setMedia(arg0: java.lang.String): void
+          setMedia(arg0: java.lang.String | string): void
           getRel(): java.lang.String
-          setRel(arg0: java.lang.String): void
+          setRel(arg0: java.lang.String | string): void
           getRev(): java.lang.String
-          setRev(arg0: java.lang.String): void
+          setRev(arg0: java.lang.String | string): void
           getTarget(): java.lang.String
-          setTarget(arg0: java.lang.String): void
+          setTarget(arg0: java.lang.String | string): void
           getType(): java.lang.String
-          setType(arg0: java.lang.String): void
+          setType(arg0: java.lang.String | string): void
         }
 
       }

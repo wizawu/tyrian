@@ -11,7 +11,7 @@ declare namespace com {
           public static readonly KRB5_GET_AUTHTIME: com.sun.security.jgss.InquireType
           public static readonly KRB5_GET_KRB_CRED: com.sun.security.jgss.InquireType
           public static values(): com.sun.security.jgss.InquireType[]
-          public static valueOf(arg0: java.lang.String): com.sun.security.jgss.InquireType
+          public static valueOf(arg0: java.lang.String | string): com.sun.security.jgss.InquireType
         }
 
       }

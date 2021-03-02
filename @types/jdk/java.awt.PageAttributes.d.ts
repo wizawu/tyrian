@@ -14,20 +14,20 @@ declare namespace java {
       public setMediaToDefault(): void
       public getOrientationRequested(): java.awt.PageAttributes$OrientationRequestedType
       public setOrientationRequested(arg0: java.awt.PageAttributes$OrientationRequestedType): void
-      public setOrientationRequested(arg0: int): void
+      public setOrientationRequested(arg0: number | java.lang.Integer): void
       public setOrientationRequestedToDefault(): void
       public getOrigin(): java.awt.PageAttributes$OriginType
       public setOrigin(arg0: java.awt.PageAttributes$OriginType): void
       public getPrintQuality(): java.awt.PageAttributes$PrintQualityType
       public setPrintQuality(arg0: java.awt.PageAttributes$PrintQualityType): void
-      public setPrintQuality(arg0: int): void
+      public setPrintQuality(arg0: number | java.lang.Integer): void
       public setPrintQualityToDefault(): void
-      public getPrinterResolution(): int[]
+      public getPrinterResolution(): number[]
       public setPrinterResolution(arg0: int[]): void
-      public setPrinterResolution(arg0: int): void
+      public setPrinterResolution(arg0: number | java.lang.Integer): void
       public setPrinterResolutionToDefault(): void
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
       public toString(): java.lang.String
     }
 

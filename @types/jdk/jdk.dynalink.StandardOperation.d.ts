@@ -8,7 +8,7 @@ declare namespace jdk {
       public static readonly CALL: jdk.dynalink.StandardOperation
       public static readonly NEW: jdk.dynalink.StandardOperation
       public static values(): jdk.dynalink.StandardOperation[]
-      public static valueOf(arg0: java.lang.String): jdk.dynalink.StandardOperation
+      public static valueOf(arg0: java.lang.String | string): jdk.dynalink.StandardOperation
     }
 
   }

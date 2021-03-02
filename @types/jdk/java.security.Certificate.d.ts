@@ -8,7 +8,7 @@ declare namespace java {
       encode(arg0: java.io.OutputStream): void
       decode(arg0: java.io.InputStream): void
       getFormat(): java.lang.String
-      toString(arg0: boolean): java.lang.String
+      toString(arg0: boolean | java.lang.Boolean): java.lang.String
     }
 
   }

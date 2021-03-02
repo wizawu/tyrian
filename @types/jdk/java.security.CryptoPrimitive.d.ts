@@ -13,7 +13,7 @@ declare namespace java {
       public static readonly KEY_ENCAPSULATION: java.security.CryptoPrimitive
       public static readonly KEY_AGREEMENT: java.security.CryptoPrimitive
       public static values(): java.security.CryptoPrimitive[]
-      public static valueOf(arg0: java.lang.String): java.security.CryptoPrimitive
+      public static valueOf(arg0: java.lang.String | string): java.security.CryptoPrimitive
     }
 
   }

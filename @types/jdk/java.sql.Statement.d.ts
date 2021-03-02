@@ -9,60 +9,60 @@ declare namespace java {
       public static readonly EXECUTE_FAILED: int
       public static readonly RETURN_GENERATED_KEYS: int
       public static readonly NO_GENERATED_KEYS: int
-      executeQuery(arg0: java.lang.String): java.sql.ResultSet
-      executeUpdate(arg0: java.lang.String): int
+      executeQuery(arg0: java.lang.String | string): java.sql.ResultSet
+      executeUpdate(arg0: java.lang.String | string): number
       close(): void
-      getMaxFieldSize(): int
-      setMaxFieldSize(arg0: int): void
-      getMaxRows(): int
-      setMaxRows(arg0: int): void
-      setEscapeProcessing(arg0: boolean): void
-      getQueryTimeout(): int
-      setQueryTimeout(arg0: int): void
+      getMaxFieldSize(): number
+      setMaxFieldSize(arg0: number | java.lang.Integer): void
+      getMaxRows(): number
+      setMaxRows(arg0: number | java.lang.Integer): void
+      setEscapeProcessing(arg0: boolean | java.lang.Boolean): void
+      getQueryTimeout(): number
+      setQueryTimeout(arg0: number | java.lang.Integer): void
       cancel(): void
       getWarnings(): java.sql.SQLWarning
       clearWarnings(): void
-      setCursorName(arg0: java.lang.String): void
-      execute(arg0: java.lang.String): boolean
+      setCursorName(arg0: java.lang.String | string): void
+      execute(arg0: java.lang.String | string): boolean
       getResultSet(): java.sql.ResultSet
-      getUpdateCount(): int
+      getUpdateCount(): number
       getMoreResults(): boolean
-      setFetchDirection(arg0: int): void
-      getFetchDirection(): int
-      setFetchSize(arg0: int): void
-      getFetchSize(): int
-      getResultSetConcurrency(): int
-      getResultSetType(): int
-      addBatch(arg0: java.lang.String): void
+      setFetchDirection(arg0: number | java.lang.Integer): void
+      getFetchDirection(): number
+      setFetchSize(arg0: number | java.lang.Integer): void
+      getFetchSize(): number
+      getResultSetConcurrency(): number
+      getResultSetType(): number
+      addBatch(arg0: java.lang.String | string): void
       clearBatch(): void
-      executeBatch(): int[]
+      executeBatch(): number[]
       getConnection(): java.sql.Connection
-      getMoreResults(arg0: int): boolean
+      getMoreResults(arg0: number | java.lang.Integer): boolean
       getGeneratedKeys(): java.sql.ResultSet
-      executeUpdate(arg0: java.lang.String, arg1: int): int
-      executeUpdate(arg0: java.lang.String, arg1: int[]): int
-      executeUpdate(arg0: java.lang.String, arg1: java.lang.String[]): int
-      execute(arg0: java.lang.String, arg1: int): boolean
-      execute(arg0: java.lang.String, arg1: int[]): boolean
-      execute(arg0: java.lang.String, arg1: java.lang.String[]): boolean
-      getResultSetHoldability(): int
+      executeUpdate(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
+      executeUpdate(arg0: java.lang.String | string, arg1: int[]): number
+      executeUpdate(arg0: java.lang.String | string, arg1: java.lang.String[]): number
+      execute(arg0: java.lang.String | string, arg1: number | java.lang.Integer): boolean
+      execute(arg0: java.lang.String | string, arg1: int[]): boolean
+      execute(arg0: java.lang.String | string, arg1: java.lang.String[]): boolean
+      getResultSetHoldability(): number
       isClosed(): boolean
-      setPoolable(arg0: boolean): void
+      setPoolable(arg0: boolean | java.lang.Boolean): void
       isPoolable(): boolean
       closeOnCompletion(): void
       isCloseOnCompletion(): boolean
-      getLargeUpdateCount(): long
-      setLargeMaxRows(arg0: long): void
-      getLargeMaxRows(): long
-      executeLargeBatch(): long[]
-      executeLargeUpdate(arg0: java.lang.String): long
-      executeLargeUpdate(arg0: java.lang.String, arg1: int): long
-      executeLargeUpdate(arg0: java.lang.String, arg1: int[]): long
-      executeLargeUpdate(arg0: java.lang.String, arg1: java.lang.String[]): long
-      enquoteLiteral(arg0: java.lang.String): java.lang.String
-      enquoteIdentifier(arg0: java.lang.String, arg1: boolean): java.lang.String
-      isSimpleIdentifier(arg0: java.lang.String): boolean
-      enquoteNCharLiteral(arg0: java.lang.String): java.lang.String
+      getLargeUpdateCount(): number
+      setLargeMaxRows(arg0: number | java.lang.Long): void
+      getLargeMaxRows(): number
+      executeLargeBatch(): number[]
+      executeLargeUpdate(arg0: java.lang.String | string): number
+      executeLargeUpdate(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
+      executeLargeUpdate(arg0: java.lang.String | string, arg1: int[]): number
+      executeLargeUpdate(arg0: java.lang.String | string, arg1: java.lang.String[]): number
+      enquoteLiteral(arg0: java.lang.String | string): java.lang.String
+      enquoteIdentifier(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): java.lang.String
+      isSimpleIdentifier(arg0: java.lang.String | string): boolean
+      enquoteNCharLiteral(arg0: java.lang.String | string): java.lang.String
     }
 
   }

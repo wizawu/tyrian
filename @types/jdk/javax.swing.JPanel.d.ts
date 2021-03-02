@@ -2,9 +2,9 @@ declare namespace javax {
   namespace swing {
 
     class JPanel extends javax.swing.JComponent implements javax.accessibility.Accessible {
-      public constructor(arg0: java.awt.LayoutManager, arg1: boolean)
+      public constructor(arg0: java.awt.LayoutManager, arg1: boolean | java.lang.Boolean)
       public constructor(arg0: java.awt.LayoutManager)
-      public constructor(arg0: boolean)
+      public constructor(arg0: boolean | java.lang.Boolean)
       public constructor()
       public updateUI(): void
       public getUI(): javax.swing.plaf.PanelUI

@@ -10,15 +10,15 @@ declare namespace java {
         resetPeakUsage(): void
         isValid(): boolean
         getMemoryManagerNames(): java.lang.String[]
-        getUsageThreshold(): long
-        setUsageThreshold(arg0: long): void
+        getUsageThreshold(): number
+        setUsageThreshold(arg0: number | java.lang.Long): void
         isUsageThresholdExceeded(): boolean
-        getUsageThresholdCount(): long
+        getUsageThresholdCount(): number
         isUsageThresholdSupported(): boolean
-        getCollectionUsageThreshold(): long
-        setCollectionUsageThreshold(arg0: long): void
+        getCollectionUsageThreshold(): number
+        setCollectionUsageThreshold(arg0: number | java.lang.Long): void
         isCollectionUsageThresholdExceeded(): boolean
-        getCollectionUsageThresholdCount(): long
+        getCollectionUsageThresholdCount(): number
         getCollectionUsage(): java.lang.management.MemoryUsage
         isCollectionUsageThresholdSupported(): boolean
       }

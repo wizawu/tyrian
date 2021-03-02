@@ -10,7 +10,7 @@ declare namespace jdk {
           public static readonly NOTE: jdk.nashorn.api.tree.Diagnostic$Kind
           public static readonly OTHER: jdk.nashorn.api.tree.Diagnostic$Kind
           public static values(): jdk.nashorn.api.tree.Diagnostic$Kind[]
-          public static valueOf(arg0: java.lang.String): jdk.nashorn.api.tree.Diagnostic$Kind
+          public static valueOf(arg0: java.lang.String | string): jdk.nashorn.api.tree.Diagnostic$Kind
         }
 
       }

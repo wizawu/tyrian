@@ -4,7 +4,7 @@ declare namespace jdk {
 
       class ChainedCallSite extends jdk.dynalink.support.AbstractRelinkableCallSite {
         public constructor(arg0: jdk.dynalink.CallSiteDescriptor)
-        protected getMaxChainLength(): int
+        protected getMaxChainLength(): number
         public relink(arg0: jdk.dynalink.linker.GuardedInvocation, arg1: java.lang.invoke.MethodHandle): void
         public resetAndRelink(arg0: jdk.dynalink.linker.GuardedInvocation, arg1: java.lang.invoke.MethodHandle): void
       }

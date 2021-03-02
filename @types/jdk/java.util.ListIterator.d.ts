@@ -6,8 +6,8 @@ declare namespace java {
       next(): E
       hasPrevious(): boolean
       previous(): E
-      nextIndex(): int
-      previousIndex(): int
+      nextIndex(): number
+      previousIndex(): number
       remove(): void
       set(arg0: E): void
       add(arg0: E): void

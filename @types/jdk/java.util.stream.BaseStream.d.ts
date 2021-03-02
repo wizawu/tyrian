@@ -9,7 +9,7 @@ declare namespace java {
         sequential(): S
         parallel(): S
         unordered(): S
-        onClose(arg0: java.lang.Runnable): S
+        onClose(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): S
         close(): void
       }
 

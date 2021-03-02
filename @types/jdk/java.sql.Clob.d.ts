@@ -2,19 +2,19 @@ declare namespace java {
   namespace sql {
 
     interface Clob {
-      length(): long
-      getSubString(arg0: long, arg1: int): java.lang.String
+      length(): number
+      getSubString(arg0: number | java.lang.Long, arg1: number | java.lang.Integer): java.lang.String
       getCharacterStream(): java.io.Reader
       getAsciiStream(): java.io.InputStream
-      position(arg0: java.lang.String, arg1: long): long
-      position(arg0: java.sql.Clob, arg1: long): long
-      setString(arg0: long, arg1: java.lang.String): int
-      setString(arg0: long, arg1: java.lang.String, arg2: int, arg3: int): int
-      setAsciiStream(arg0: long): java.io.OutputStream
-      setCharacterStream(arg0: long): java.io.Writer
-      truncate(arg0: long): void
+      position(arg0: java.lang.String | string, arg1: number | java.lang.Long): number
+      position(arg0: java.sql.Clob, arg1: number | java.lang.Long): number
+      setString(arg0: number | java.lang.Long, arg1: java.lang.String | string): number
+      setString(arg0: number | java.lang.Long, arg1: java.lang.String | string, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+      setAsciiStream(arg0: number | java.lang.Long): java.io.OutputStream
+      setCharacterStream(arg0: number | java.lang.Long): java.io.Writer
+      truncate(arg0: number | java.lang.Long): void
       free(): void
-      getCharacterStream(arg0: long, arg1: long): java.io.Reader
+      getCharacterStream(arg0: number | java.lang.Long, arg1: number | java.lang.Long): java.io.Reader
     }
 
   }

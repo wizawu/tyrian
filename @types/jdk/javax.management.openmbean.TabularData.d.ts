@@ -5,7 +5,7 @@ declare namespace javax {
       interface TabularData {
         getTabularType(): javax.management.openmbean.TabularType
         calculateIndex(arg0: javax.management.openmbean.CompositeData): java.lang.Object[]
-        size(): int
+        size(): number
         isEmpty(): boolean
         containsKey(arg0: java.lang.Object[]): boolean
         containsValue(arg0: javax.management.openmbean.CompositeData): boolean
@@ -16,8 +16,8 @@ declare namespace javax {
         clear(): void
         keySet(): java.util.Set<unknown>
         values(): java.util.Collection<unknown>
-        equals(arg0: java.lang.Object): boolean
-        hashCode(): int
+        equals(arg0: java.lang.Object | any): boolean
+        hashCode(): number
         toString(): java.lang.String
       }
 

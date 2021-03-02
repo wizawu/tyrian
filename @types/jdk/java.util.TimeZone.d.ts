@@ -9,25 +9,25 @@ declare namespace java {
       static readonly GMT_ID: java.lang.String
       static readonly $assertionsDisabled: boolean
       public constructor()
-      public abstract getOffset(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): int
-      public getOffset(arg0: long): int
-      getOffsets(arg0: long, arg1: int[]): int
-      public abstract setRawOffset(arg0: int): void
-      public abstract getRawOffset(): int
+      public abstract getOffset(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): number
+      public getOffset(arg0: number | java.lang.Long): number
+      getOffsets(arg0: number | java.lang.Long, arg1: int[]): number
+      public abstract setRawOffset(arg0: number | java.lang.Integer): void
+      public abstract getRawOffset(): number
       public getID(): java.lang.String
-      public setID(arg0: java.lang.String): void
+      public setID(arg0: java.lang.String | string): void
       public getDisplayName(): java.lang.String
       public getDisplayName(arg0: java.util.Locale): java.lang.String
-      public getDisplayName(arg0: boolean, arg1: int): java.lang.String
-      public getDisplayName(arg0: boolean, arg1: int, arg2: java.util.Locale): java.lang.String
-      public getDSTSavings(): int
+      public getDisplayName(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer): java.lang.String
+      public getDisplayName(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer, arg2: java.util.Locale): java.lang.String
+      public getDSTSavings(): number
       public abstract useDaylightTime(): boolean
       public observesDaylightTime(): boolean
       public abstract inDaylightTime(arg0: java.util.Date): boolean
-      public static getTimeZone(arg0: java.lang.String): java.util.TimeZone
+      public static getTimeZone(arg0: java.lang.String | string): java.util.TimeZone
       public static getTimeZone(arg0: java.time.ZoneId): java.util.TimeZone
       public toZoneId(): java.time.ZoneId
-      public static getAvailableIDs(arg0: int): java.lang.String[]
+      public static getAvailableIDs(arg0: number | java.lang.Integer): java.lang.String[]
       public static getAvailableIDs(): java.lang.String[]
       public static getDefault(): java.util.TimeZone
       static getDefaultRef(): java.util.TimeZone

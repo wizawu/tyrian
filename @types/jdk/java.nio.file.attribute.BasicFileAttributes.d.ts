@@ -11,7 +11,7 @@ declare namespace java {
           isDirectory(): boolean
           isSymbolicLink(): boolean
           isOther(): boolean
-          size(): long
+          size(): number
           fileKey(): java.lang.Object
         }
 

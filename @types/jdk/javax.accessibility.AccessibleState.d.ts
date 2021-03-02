@@ -31,7 +31,7 @@ declare namespace javax {
       public static readonly MANAGES_DESCENDANTS: javax.accessibility.AccessibleState
       public static readonly INDETERMINATE: javax.accessibility.AccessibleState
       public static readonly TRUNCATED: javax.accessibility.AccessibleState
-      protected constructor(arg0: java.lang.String)
+      protected constructor(arg0: java.lang.String | string)
     }
 
   }

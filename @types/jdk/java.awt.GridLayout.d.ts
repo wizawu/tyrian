@@ -7,17 +7,17 @@ declare namespace java {
       rows: int
       cols: int
       public constructor()
-      public constructor(arg0: int, arg1: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
-      public getRows(): int
-      public setRows(arg0: int): void
-      public getColumns(): int
-      public setColumns(arg0: int): void
-      public getHgap(): int
-      public setHgap(arg0: int): void
-      public getVgap(): int
-      public setVgap(arg0: int): void
-      public addLayoutComponent(arg0: java.lang.String, arg1: java.awt.Component): void
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      public getRows(): number
+      public setRows(arg0: number | java.lang.Integer): void
+      public getColumns(): number
+      public setColumns(arg0: number | java.lang.Integer): void
+      public getHgap(): number
+      public setHgap(arg0: number | java.lang.Integer): void
+      public getVgap(): number
+      public setVgap(arg0: number | java.lang.Integer): void
+      public addLayoutComponent(arg0: java.lang.String | string, arg1: java.awt.Component): void
       public removeLayoutComponent(arg0: java.awt.Component): void
       public preferredLayoutSize(arg0: java.awt.Container): java.awt.Dimension
       public minimumLayoutSize(arg0: java.awt.Container): java.awt.Dimension

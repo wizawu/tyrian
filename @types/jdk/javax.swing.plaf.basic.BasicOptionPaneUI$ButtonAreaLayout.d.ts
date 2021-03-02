@@ -7,15 +7,15 @@ declare namespace javax {
           protected syncAllWidths: boolean
           protected padding: int
           protected centersChildren: boolean
-          public constructor(arg0: boolean, arg1: int)
-          constructor(arg0: boolean, arg1: int, arg2: int, arg3: boolean)
-          public setSyncAllWidths(arg0: boolean): void
+          public constructor(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer)
+          constructor(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean)
+          public setSyncAllWidths(arg0: boolean | java.lang.Boolean): void
           public getSyncAllWidths(): boolean
-          public setPadding(arg0: int): void
-          public getPadding(): int
-          public setCentersChildren(arg0: boolean): void
+          public setPadding(arg0: number | java.lang.Integer): void
+          public getPadding(): number
+          public setCentersChildren(arg0: boolean | java.lang.Boolean): void
           public getCentersChildren(): boolean
-          public addLayoutComponent(arg0: java.lang.String, arg1: java.awt.Component): void
+          public addLayoutComponent(arg0: java.lang.String | string, arg1: java.awt.Component): void
           public layoutContainer(arg0: java.awt.Container): void
           public minimumLayoutSize(arg0: java.awt.Container): java.awt.Dimension
           public preferredLayoutSize(arg0: java.awt.Container): java.awt.Dimension

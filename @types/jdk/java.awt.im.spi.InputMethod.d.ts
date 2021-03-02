@@ -8,13 +8,13 @@ declare namespace java {
           setLocale(arg0: java.util.Locale): boolean
           getLocale(): java.util.Locale
           setCharacterSubsets(arg0: java.lang.Character$Subset[]): void
-          setCompositionEnabled(arg0: boolean): void
+          setCompositionEnabled(arg0: boolean | java.lang.Boolean): void
           isCompositionEnabled(): boolean
           reconvert(): void
           dispatchEvent(arg0: java.awt.AWTEvent): void
           notifyClientWindowChange(arg0: java.awt.Rectangle): void
           activate(): void
-          deactivate(arg0: boolean): void
+          deactivate(arg0: boolean | java.lang.Boolean): void
           hideWindows(): void
           removeNotify(): void
           endComposition(): void

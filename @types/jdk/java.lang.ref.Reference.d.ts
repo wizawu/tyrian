@@ -12,7 +12,7 @@ declare namespace java {
         protected clone(): java.lang.Object
         constructor(arg0: T)
         constructor(arg0: T, arg1: java.lang.ref.ReferenceQueue<unknown>)
-        public static reachabilityFence(arg0: java.lang.Object): void
+        public static reachabilityFence(arg0: java.lang.Object | any): void
       }
 
     }

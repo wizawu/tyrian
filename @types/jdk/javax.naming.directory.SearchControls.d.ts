@@ -7,18 +7,18 @@ declare namespace javax {
         public static readonly ONELEVEL_SCOPE: int
         public static readonly SUBTREE_SCOPE: int
         public constructor()
-        public constructor(arg0: int, arg1: long, arg2: int, arg3: java.lang.String[], arg4: boolean, arg5: boolean)
-        public getSearchScope(): int
-        public getTimeLimit(): int
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Long, arg2: number | java.lang.Integer, arg3: java.lang.String[], arg4: boolean | java.lang.Boolean, arg5: boolean | java.lang.Boolean)
+        public getSearchScope(): number
+        public getTimeLimit(): number
         public getDerefLinkFlag(): boolean
         public getReturningObjFlag(): boolean
-        public getCountLimit(): long
+        public getCountLimit(): number
         public getReturningAttributes(): java.lang.String[]
-        public setSearchScope(arg0: int): void
-        public setTimeLimit(arg0: int): void
-        public setDerefLinkFlag(arg0: boolean): void
-        public setReturningObjFlag(arg0: boolean): void
-        public setCountLimit(arg0: long): void
+        public setSearchScope(arg0: number | java.lang.Integer): void
+        public setTimeLimit(arg0: number | java.lang.Integer): void
+        public setDerefLinkFlag(arg0: boolean | java.lang.Boolean): void
+        public setReturningObjFlag(arg0: boolean | java.lang.Boolean): void
+        public setCountLimit(arg0: number | java.lang.Long): void
         public setReturningAttributes(arg0: java.lang.String[]): void
       }
 

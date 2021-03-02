@@ -24,8 +24,8 @@ declare namespace javax {
           protected installKeyboardActions(): void
           protected registerKeyboardActions(): void
           protected unregisterKeyboardActions(): void
-          getInputMap(arg0: int): javax.swing.InputMap
-          createInputMap(arg0: int): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
+          createInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
           protected uninstallKeyboardActions(): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void

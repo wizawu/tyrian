@@ -6,10 +6,10 @@ declare namespace java {
         numComponents: int
         offset: int
         numEntries: int
-        protected constructor(arg0: int, arg1: int)
-        public getNumComponents(): int
-        public getOffset(): int
-        public abstract lookupPixel(arg0: int[], arg1: int[]): int[]
+        protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        public getNumComponents(): number
+        public getOffset(): number
+        public abstract lookupPixel(arg0: int[], arg1: int[]): number[]
       }
 
     }

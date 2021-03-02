@@ -49,7 +49,7 @@ declare namespace javax {
           protected showSystemMenu(): void
           public paintComponent(arg0: java.awt.Graphics): void
           protected paintTitleBackground(arg0: java.awt.Graphics): void
-          protected getTitle(arg0: java.lang.String, arg1: java.awt.FontMetrics, arg2: int): java.lang.String
+          protected getTitle(arg0: java.lang.String | string, arg1: java.awt.FontMetrics, arg2: number | java.lang.Integer): java.lang.String
           protected postClosingEvent(arg0: javax.swing.JInternalFrame): void
           protected enableActions(): void
           protected createPropertyChangeListener(): java.beans.PropertyChangeListener

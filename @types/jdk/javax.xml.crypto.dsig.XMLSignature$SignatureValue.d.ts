@@ -5,7 +5,7 @@ declare namespace javax {
 
         interface XMLSignature$SignatureValue extends javax.xml.crypto.XMLStructure {
           getId(): java.lang.String
-          getValue(): byte[]
+          getValue(): number[]
           validate(arg0: javax.xml.crypto.dsig.XMLValidateContext): boolean
         }
 

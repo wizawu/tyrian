@@ -15,8 +15,8 @@ declare namespace org {
           getAsync(): boolean
           getBusy(): boolean
           parse(arg0: org.w3c.dom.ls.LSInput): org.w3c.dom.Document
-          parseURI(arg0: java.lang.String): org.w3c.dom.Document
-          parseWithContext(arg0: org.w3c.dom.ls.LSInput, arg1: org.w3c.dom.Node, arg2: short): org.w3c.dom.Node
+          parseURI(arg0: java.lang.String | string): org.w3c.dom.Document
+          parseWithContext(arg0: org.w3c.dom.ls.LSInput, arg1: org.w3c.dom.Node, arg2: number | java.lang.Short): org.w3c.dom.Node
           abort(): void
         }
 

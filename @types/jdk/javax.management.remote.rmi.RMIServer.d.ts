@@ -5,7 +5,7 @@ declare namespace javax {
 
         interface RMIServer extends java.rmi.Remote {
           getVersion(): java.lang.String
-          newClient(arg0: java.lang.Object): javax.management.remote.rmi.RMIConnection
+          newClient(arg0: java.lang.Object | any): javax.management.remote.rmi.RMIConnection
         }
 
       }

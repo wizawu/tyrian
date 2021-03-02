@@ -14,7 +14,7 @@ declare namespace java {
           public static readonly OTHERS_WRITE: java.nio.file.attribute.PosixFilePermission
           public static readonly OTHERS_EXECUTE: java.nio.file.attribute.PosixFilePermission
           public static values(): java.nio.file.attribute.PosixFilePermission[]
-          public static valueOf(arg0: java.lang.String): java.nio.file.attribute.PosixFilePermission
+          public static valueOf(arg0: java.lang.String | string): java.nio.file.attribute.PosixFilePermission
         }
 
       }

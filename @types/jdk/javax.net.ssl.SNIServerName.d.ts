@@ -3,11 +3,11 @@ declare namespace javax {
     namespace ssl {
 
       abstract class SNIServerName {
-        protected constructor(arg0: int, arg1: byte[])
-        public getType(): int
-        public getEncoded(): byte[]
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        protected constructor(arg0: number | java.lang.Integer, arg1: byte[])
+        public getType(): number
+        public getEncoded(): number[]
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
         public toString(): java.lang.String
       }
 

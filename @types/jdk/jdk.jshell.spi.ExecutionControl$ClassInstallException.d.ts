@@ -3,7 +3,7 @@ declare namespace jdk {
     namespace spi {
 
       class ExecutionControl$ClassInstallException extends jdk.jshell.spi.ExecutionControl$ExecutionControlException {
-        public constructor(arg0: java.lang.String, arg1: boolean[])
+        public constructor(arg0: java.lang.String | string, arg1: boolean[])
         public installed(): boolean[]
       }
 

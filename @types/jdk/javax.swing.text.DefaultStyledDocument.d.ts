@@ -10,20 +10,20 @@ declare namespace javax {
         public constructor()
         public getDefaultRootElement(): javax.swing.text.Element
         protected create(arg0: javax.swing.text.DefaultStyledDocument$ElementSpec[]): void
-        protected insert(arg0: int, arg1: javax.swing.text.DefaultStyledDocument$ElementSpec[]): void
+        protected insert(arg0: number | java.lang.Integer, arg1: javax.swing.text.DefaultStyledDocument$ElementSpec[]): void
         public removeElement(arg0: javax.swing.text.Element): void
-        public addStyle(arg0: java.lang.String, arg1: javax.swing.text.Style): javax.swing.text.Style
-        public removeStyle(arg0: java.lang.String): void
-        public getStyle(arg0: java.lang.String): javax.swing.text.Style
+        public addStyle(arg0: java.lang.String | string, arg1: javax.swing.text.Style): javax.swing.text.Style
+        public removeStyle(arg0: java.lang.String | string): void
+        public getStyle(arg0: java.lang.String | string): javax.swing.text.Style
         public getStyleNames(): java.util.Enumeration<unknown>
-        public setLogicalStyle(arg0: int, arg1: javax.swing.text.Style): void
-        public getLogicalStyle(arg0: int): javax.swing.text.Style
-        public setCharacterAttributes(arg0: int, arg1: int, arg2: javax.swing.text.AttributeSet, arg3: boolean): void
-        public setParagraphAttributes(arg0: int, arg1: int, arg2: javax.swing.text.AttributeSet, arg3: boolean): void
-        public getParagraphElement(arg0: int): javax.swing.text.Element
-        public getCharacterElement(arg0: int): javax.swing.text.Element
+        public setLogicalStyle(arg0: number | java.lang.Integer, arg1: javax.swing.text.Style): void
+        public getLogicalStyle(arg0: number | java.lang.Integer): javax.swing.text.Style
+        public setCharacterAttributes(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: javax.swing.text.AttributeSet, arg3: boolean | java.lang.Boolean): void
+        public setParagraphAttributes(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: javax.swing.text.AttributeSet, arg3: boolean | java.lang.Boolean): void
+        public getParagraphElement(arg0: number | java.lang.Integer): javax.swing.text.Element
+        public getCharacterElement(arg0: number | java.lang.Integer): javax.swing.text.Element
         protected insertUpdate(arg0: javax.swing.text.AbstractDocument$DefaultDocumentEvent, arg1: javax.swing.text.AttributeSet): void
-        createSpecsForInsertAfterNewline(arg0: javax.swing.text.Element, arg1: javax.swing.text.Element, arg2: javax.swing.text.AttributeSet, arg3: java.util.Vector<javax.swing.text.DefaultStyledDocument$ElementSpec>, arg4: int, arg5: int): short
+        createSpecsForInsertAfterNewline(arg0: javax.swing.text.Element, arg1: javax.swing.text.Element, arg2: javax.swing.text.AttributeSet, arg3: java.util.Vector<javax.swing.text.DefaultStyledDocument$ElementSpec>, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): number
         protected removeUpdate(arg0: javax.swing.text.AbstractDocument$DefaultDocumentEvent): void
         protected createDefaultRoot(): javax.swing.text.AbstractDocument$AbstractElement
         public getForeground(arg0: javax.swing.text.AttributeSet): java.awt.Color

@@ -33,12 +33,12 @@ declare namespace java {
         public pop(): E
         public element(): E
         public push(arg0: E): void
-        public removeFirstOccurrence(arg0: java.lang.Object): boolean
-        public removeLastOccurrence(arg0: java.lang.Object): boolean
-        public contains(arg0: java.lang.Object): boolean
+        public removeFirstOccurrence(arg0: java.lang.Object | any): boolean
+        public removeLastOccurrence(arg0: java.lang.Object | any): boolean
+        public contains(arg0: java.lang.Object | any): boolean
         public isEmpty(): boolean
-        public size(): int
-        public remove(arg0: java.lang.Object): boolean
+        public size(): number
+        public remove(arg0: java.lang.Object | any): boolean
         public addAll(arg0: java.util.Collection<E>): boolean
         public clear(): void
         public toString(): java.lang.String

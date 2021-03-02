@@ -3,11 +3,11 @@ declare namespace java {
     namespace server {
 
       interface RMIClientSocketFactory$$lambda {
-        (arg0: java.lang.String, arg1: int): java.net.Socket
+        (arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.net.Socket
       }
 
       interface RMIClientSocketFactory {
-        createSocket(arg0: java.lang.String, arg1: int): java.net.Socket
+        createSocket(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.net.Socket
       }
 
     }

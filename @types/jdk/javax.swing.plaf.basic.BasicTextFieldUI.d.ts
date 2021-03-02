@@ -8,7 +8,7 @@ declare namespace javax {
           public constructor()
           protected getPropertyPrefix(): java.lang.String
           public create(arg0: javax.swing.text.Element): javax.swing.text.View
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
         }
 

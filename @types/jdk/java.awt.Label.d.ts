@@ -8,14 +8,14 @@ declare namespace java {
       text: java.lang.String
       alignment: int
       public constructor()
-      public constructor(arg0: java.lang.String)
-      public constructor(arg0: java.lang.String, arg1: int)
+      public constructor(arg0: java.lang.String | string)
+      public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
       constructComponentName(): java.lang.String
       public addNotify(): void
-      public getAlignment(): int
-      public setAlignment(arg0: int): void
+      public getAlignment(): number
+      public setAlignment(arg0: number | java.lang.Integer): void
       public getText(): java.lang.String
-      public setText(arg0: java.lang.String): void
+      public setText(arg0: java.lang.String | string): void
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }

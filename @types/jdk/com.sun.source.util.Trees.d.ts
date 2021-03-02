@@ -7,7 +7,7 @@ declare namespace com {
           public constructor()
           public static instance(arg0: javax.tools.JavaCompiler$CompilationTask): com.sun.source.util.Trees
           public static instance(arg0: javax.annotation.processing.ProcessingEnvironment): com.sun.source.util.Trees
-          static getJavacTrees(arg0: java.lang.Class<unknown>, arg1: java.lang.Object): com.sun.source.util.Trees
+          static getJavacTrees(arg0: java.lang.Class<unknown>, arg1: java.lang.Object | any): com.sun.source.util.Trees
           public abstract getSourcePositions(): com.sun.source.util.SourcePositions
           public abstract getTree(arg0: javax.lang.model.element.Element): com.sun.source.tree.Tree
           public abstract getTree(arg0: javax.lang.model.element.TypeElement): com.sun.source.tree.ClassTree

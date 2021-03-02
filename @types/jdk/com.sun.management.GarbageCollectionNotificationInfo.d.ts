@@ -4,7 +4,7 @@ declare namespace com {
 
       class GarbageCollectionNotificationInfo implements javax.management.openmbean.CompositeDataView {
         public static readonly GARBAGE_COLLECTION_NOTIFICATION: java.lang.String
-        public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: com.sun.management.GcInfo)
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: com.sun.management.GcInfo)
         constructor(arg0: javax.management.openmbean.CompositeData)
         public getGcName(): java.lang.String
         public getGcAction(): java.lang.String

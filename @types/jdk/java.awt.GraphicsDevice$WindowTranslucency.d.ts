@@ -6,7 +6,7 @@ declare namespace java {
       public static readonly TRANSLUCENT: java.awt.GraphicsDevice$WindowTranslucency
       public static readonly PERPIXEL_TRANSLUCENT: java.awt.GraphicsDevice$WindowTranslucency
       public static values(): java.awt.GraphicsDevice$WindowTranslucency[]
-      public static valueOf(arg0: java.lang.String): java.awt.GraphicsDevice$WindowTranslucency
+      public static valueOf(arg0: java.lang.String | string): java.awt.GraphicsDevice$WindowTranslucency
     }
 
   }

@@ -9,8 +9,8 @@ declare namespace org {
           public static readonly CSS_VALUE_LIST: short
           public static readonly CSS_CUSTOM: short
           getCssText(): java.lang.String
-          setCssText(arg0: java.lang.String): void
-          getCssValueType(): short
+          setCssText(arg0: java.lang.String | string): void
+          getCssValueType(): number
         }
 
       }

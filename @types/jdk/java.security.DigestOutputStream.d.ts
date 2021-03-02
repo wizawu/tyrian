@@ -6,9 +6,9 @@ declare namespace java {
       public constructor(arg0: java.io.OutputStream, arg1: java.security.MessageDigest)
       public getMessageDigest(): java.security.MessageDigest
       public setMessageDigest(arg0: java.security.MessageDigest): void
-      public write(arg0: int): void
-      public write(arg0: byte[], arg1: int, arg2: int): void
-      public on(arg0: boolean): void
+      public write(arg0: number | java.lang.Integer): void
+      public write(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public on(arg0: boolean | java.lang.Boolean): void
       public toString(): java.lang.String
     }
 

@@ -3,15 +3,15 @@ declare namespace java {
 
     interface CharacterIterator extends java.lang.Cloneable {
       public static readonly DONE: char
-      first(): char
-      last(): char
-      current(): char
-      next(): char
-      previous(): char
-      setIndex(arg0: int): char
-      getBeginIndex(): int
-      getEndIndex(): int
-      getIndex(): int
+      first(): string
+      last(): string
+      current(): string
+      next(): string
+      previous(): string
+      setIndex(arg0: number | java.lang.Integer): string
+      getBeginIndex(): number
+      getEndIndex(): number
+      getIndex(): number
       clone(): java.lang.Object
     }
 

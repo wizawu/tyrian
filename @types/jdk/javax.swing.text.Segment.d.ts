@@ -7,22 +7,22 @@ declare namespace javax {
         public offset: int
         public count: int
         public constructor()
-        public constructor(arg0: char[], arg1: int, arg2: int)
-        public setPartialReturn(arg0: boolean): void
+        public constructor(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public setPartialReturn(arg0: boolean | java.lang.Boolean): void
         public isPartialReturn(): boolean
         public toString(): java.lang.String
-        public first(): char
-        public last(): char
-        public current(): char
-        public next(): char
-        public previous(): char
-        public setIndex(arg0: int): char
-        public getBeginIndex(): int
-        public getEndIndex(): int
-        public getIndex(): int
-        public charAt(arg0: int): char
-        public length(): int
-        public subSequence(arg0: int, arg1: int): java.lang.CharSequence
+        public first(): string
+        public last(): string
+        public current(): string
+        public next(): string
+        public previous(): string
+        public setIndex(arg0: number | java.lang.Integer): string
+        public getBeginIndex(): number
+        public getEndIndex(): number
+        public getIndex(): number
+        public charAt(arg0: number | java.lang.Integer): string
+        public length(): number
+        public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.CharSequence
         public clone(): java.lang.Object
       }
 

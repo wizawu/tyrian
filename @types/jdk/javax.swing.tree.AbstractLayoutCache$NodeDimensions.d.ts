@@ -4,7 +4,7 @@ declare namespace javax {
 
       abstract class AbstractLayoutCache$NodeDimensions {
         public constructor()
-        public abstract getNodeDimensions(arg0: java.lang.Object, arg1: int, arg2: int, arg3: boolean, arg4: java.awt.Rectangle): java.awt.Rectangle
+        public abstract getNodeDimensions(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean, arg4: java.awt.Rectangle): java.awt.Rectangle
       }
 
     }

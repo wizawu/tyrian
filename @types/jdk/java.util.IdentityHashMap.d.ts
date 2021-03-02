@@ -6,21 +6,21 @@ declare namespace java {
       size: int
       modCount: int
       static readonly NULL_KEY: java.lang.Object
-      static unmaskNull(arg0: java.lang.Object): java.lang.Object
+      static unmaskNull(arg0: java.lang.Object | any): java.lang.Object
       public constructor()
-      public constructor(arg0: int)
+      public constructor(arg0: number | java.lang.Integer)
       public constructor(arg0: java.util.Map<K,V>)
-      public size(): int
+      public size(): number
       public isEmpty(): boolean
-      public get(arg0: java.lang.Object): V
-      public containsKey(arg0: java.lang.Object): boolean
-      public containsValue(arg0: java.lang.Object): boolean
+      public get(arg0: java.lang.Object | any): V
+      public containsKey(arg0: java.lang.Object | any): boolean
+      public containsValue(arg0: java.lang.Object | any): boolean
       public put(arg0: K, arg1: V): V
       public putAll(arg0: java.util.Map<K,V>): void
-      public remove(arg0: java.lang.Object): V
+      public remove(arg0: java.lang.Object | any): V
       public clear(): void
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
       public clone(): java.lang.Object
       public keySet(): java.util.Set<K>
       public values(): java.util.Collection<V>

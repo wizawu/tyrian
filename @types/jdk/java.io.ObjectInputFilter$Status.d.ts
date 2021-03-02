@@ -6,7 +6,7 @@ declare namespace java {
       public static readonly ALLOWED: java.io.ObjectInputFilter$Status
       public static readonly REJECTED: java.io.ObjectInputFilter$Status
       public static values(): java.io.ObjectInputFilter$Status[]
-      public static valueOf(arg0: java.lang.String): java.io.ObjectInputFilter$Status
+      public static valueOf(arg0: java.lang.String | string): java.io.ObjectInputFilter$Status
     }
 
   }

@@ -3,7 +3,7 @@ declare namespace javax {
 
     class AttributeValueExp implements javax.management.ValueExp {
       public constructor()
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
       public getAttributeName(): java.lang.String
       public apply(arg0: javax.management.ObjectName): javax.management.ValueExp
       public toString(): java.lang.String

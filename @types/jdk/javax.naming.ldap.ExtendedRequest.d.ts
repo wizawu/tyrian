@@ -4,8 +4,8 @@ declare namespace javax {
 
       interface ExtendedRequest extends java.io.Serializable {
         getID(): java.lang.String
-        getEncodedValue(): byte[]
-        createExtendedResponse(arg0: java.lang.String, arg1: byte[], arg2: int, arg3: int): javax.naming.ldap.ExtendedResponse
+        getEncodedValue(): number[]
+        createExtendedResponse(arg0: java.lang.String | string, arg1: byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): javax.naming.ldap.ExtendedResponse
       }
 
     }

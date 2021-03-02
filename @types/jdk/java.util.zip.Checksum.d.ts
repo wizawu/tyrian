@@ -3,11 +3,11 @@ declare namespace java {
     namespace zip {
 
       interface Checksum {
-        update(arg0: int): void
+        update(arg0: number | java.lang.Integer): void
         update(arg0: byte[]): void
-        update(arg0: byte[], arg1: int, arg2: int): void
+        update(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         update(arg0: java.nio.ByteBuffer): void
-        getValue(): long
+        getValue(): number
         reset(): void
       }
 

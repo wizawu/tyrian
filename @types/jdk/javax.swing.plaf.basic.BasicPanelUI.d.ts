@@ -10,7 +10,7 @@ declare namespace javax {
           public uninstallUI(arg0: javax.swing.JComponent): void
           protected installDefaults(arg0: javax.swing.JPanel): void
           protected uninstallDefaults(arg0: javax.swing.JPanel): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
         }
 

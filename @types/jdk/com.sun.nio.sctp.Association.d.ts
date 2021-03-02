@@ -4,10 +4,10 @@ declare namespace com {
       namespace sctp {
 
         class Association {
-          protected constructor(arg0: int, arg1: int, arg2: int)
-          public associationID(): int
-          public maxInboundStreams(): int
-          public maxOutboundStreams(): int
+          protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+          public associationID(): number
+          public maxInboundStreams(): number
+          public maxOutboundStreams(): number
         }
 
       }

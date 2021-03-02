@@ -2,20 +2,20 @@ declare namespace java {
   namespace io {
 
     interface DataOutput {
-      write(arg0: int): void
+      write(arg0: number | java.lang.Integer): void
       write(arg0: byte[]): void
-      write(arg0: byte[], arg1: int, arg2: int): void
-      writeBoolean(arg0: boolean): void
-      writeByte(arg0: int): void
-      writeShort(arg0: int): void
-      writeChar(arg0: int): void
-      writeInt(arg0: int): void
-      writeLong(arg0: long): void
-      writeFloat(arg0: float): void
-      writeDouble(arg0: double): void
-      writeBytes(arg0: java.lang.String): void
-      writeChars(arg0: java.lang.String): void
-      writeUTF(arg0: java.lang.String): void
+      write(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      writeBoolean(arg0: boolean | java.lang.Boolean): void
+      writeByte(arg0: number | java.lang.Integer): void
+      writeShort(arg0: number | java.lang.Integer): void
+      writeChar(arg0: number | java.lang.Integer): void
+      writeInt(arg0: number | java.lang.Integer): void
+      writeLong(arg0: number | java.lang.Long): void
+      writeFloat(arg0: number | java.lang.Float): void
+      writeDouble(arg0: number | java.lang.Double): void
+      writeBytes(arg0: java.lang.String | string): void
+      writeChars(arg0: java.lang.String | string): void
+      writeUTF(arg0: java.lang.String | string): void
     }
 
   }

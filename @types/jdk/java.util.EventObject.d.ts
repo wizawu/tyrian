@@ -3,7 +3,7 @@ declare namespace java {
 
     class EventObject implements java.io.Serializable {
       protected source: java.lang.Object
-      public constructor(arg0: java.lang.Object)
+      public constructor(arg0: java.lang.Object | any)
       public getSource(): java.lang.Object
       public toString(): java.lang.String
     }

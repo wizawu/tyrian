@@ -20,13 +20,13 @@ declare namespace java {
         public startDrag(arg0: java.awt.dnd.DragGestureEvent, arg1: java.awt.Cursor, arg2: java.awt.datatransfer.Transferable, arg3: java.awt.dnd.DragSourceListener): void
         protected createDragSourceContext(arg0: java.awt.dnd.DragGestureEvent, arg1: java.awt.Cursor, arg2: java.awt.Image, arg3: java.awt.Point, arg4: java.awt.datatransfer.Transferable, arg5: java.awt.dnd.DragSourceListener): java.awt.dnd.DragSourceContext
         public getFlavorMap(): java.awt.datatransfer.FlavorMap
-        public createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.Component, arg2: int, arg3: java.awt.dnd.DragGestureListener): T
-        public createDefaultDragGestureRecognizer(arg0: java.awt.Component, arg1: int, arg2: java.awt.dnd.DragGestureListener): java.awt.dnd.DragGestureRecognizer
+        public createDragGestureRecognizer<T extends java.awt.dnd.DragGestureRecognizer>(arg0: java.lang.Class<T>, arg1: java.awt.Component, arg2: number | java.lang.Integer, arg3: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$lambda): T
+        public createDefaultDragGestureRecognizer(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$lambda): java.awt.dnd.DragGestureRecognizer
         public addDragSourceListener(arg0: java.awt.dnd.DragSourceListener): void
         public removeDragSourceListener(arg0: java.awt.dnd.DragSourceListener): void
         public getDragSourceListeners(): java.awt.dnd.DragSourceListener[]
-        public addDragSourceMotionListener(arg0: java.awt.dnd.DragSourceMotionListener): void
-        public removeDragSourceMotionListener(arg0: java.awt.dnd.DragSourceMotionListener): void
+        public addDragSourceMotionListener(arg0: java.awt.dnd.DragSourceMotionListener | java.awt.dnd.DragSourceMotionListener$$lambda): void
+        public removeDragSourceMotionListener(arg0: java.awt.dnd.DragSourceMotionListener | java.awt.dnd.DragSourceMotionListener$$lambda): void
         public getDragSourceMotionListeners(): java.awt.dnd.DragSourceMotionListener[]
         public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
         processDragEnter(arg0: java.awt.dnd.DragSourceDragEvent): void
@@ -35,7 +35,7 @@ declare namespace java {
         processDragExit(arg0: java.awt.dnd.DragSourceEvent): void
         processDragDropEnd(arg0: java.awt.dnd.DragSourceDropEvent): void
         processDragMouseMoved(arg0: java.awt.dnd.DragSourceDragEvent): void
-        public static getDragThreshold(): int
+        public static getDragThreshold(): number
       }
 
     }

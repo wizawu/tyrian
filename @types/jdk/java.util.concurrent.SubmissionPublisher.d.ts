@@ -13,26 +13,26 @@ declare namespace java {
         readonly executor: java.util.concurrent.Executor
         readonly onNextHandler: java.util.function$.BiConsumer<unknown,unknown>
         readonly maxBufferCapacity: int
-        static roundCapacity(arg0: int): int
-        public constructor(arg0: java.util.concurrent.Executor, arg1: int, arg2: java.util.function$.BiConsumer<unknown,unknown>)
-        public constructor(arg0: java.util.concurrent.Executor, arg1: int)
+        static roundCapacity(arg0: number | java.lang.Integer): number
+        public constructor(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda, arg1: number | java.lang.Integer, arg2: java.util.function$.BiConsumer<unknown,unknown>)
+        public constructor(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda, arg1: number | java.lang.Integer)
         public constructor()
         public subscribe(arg0: java.util.concurrent.Flow$Subscriber<unknown>): void
-        public submit(arg0: T): int
-        public offer(arg0: T, arg1: java.util.function$.BiPredicate<java.util.concurrent.Flow$Subscriber<unknown>,unknown>): int
-        public offer(arg0: T, arg1: long, arg2: java.util.concurrent.TimeUnit, arg3: java.util.function$.BiPredicate<java.util.concurrent.Flow$Subscriber<unknown>,unknown>): int
+        public submit(arg0: T): number
+        public offer(arg0: T, arg1: java.util.function$.BiPredicate<java.util.concurrent.Flow$Subscriber<unknown>,unknown>): number
+        public offer(arg0: T, arg1: number | java.lang.Long, arg2: java.util.concurrent.TimeUnit, arg3: java.util.function$.BiPredicate<java.util.concurrent.Flow$Subscriber<unknown>,unknown>): number
         public close(): void
         public closeExceptionally(arg0: java.lang.Throwable): void
         public isClosed(): boolean
         public getClosedException(): java.lang.Throwable
         public hasSubscribers(): boolean
-        public getNumberOfSubscribers(): int
+        public getNumberOfSubscribers(): number
         public getExecutor(): java.util.concurrent.Executor
-        public getMaxBufferCapacity(): int
+        public getMaxBufferCapacity(): number
         public getSubscribers(): java.util.List<java.util.concurrent.Flow$Subscriber<unknown>>
         public isSubscribed(arg0: java.util.concurrent.Flow$Subscriber<unknown>): boolean
-        public estimateMinimumDemand(): long
-        public estimateMaximumLag(): int
+        public estimateMinimumDemand(): number
+        public estimateMaximumLag(): number
         public consume(arg0: java.util.function$.Consumer<unknown>): java.util.concurrent.CompletableFuture<java.lang.Void>
       }
 

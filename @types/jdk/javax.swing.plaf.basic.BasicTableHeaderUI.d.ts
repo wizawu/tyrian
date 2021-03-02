@@ -19,11 +19,11 @@ declare namespace javax {
           protected uninstallListeners(): void
           protected uninstallKeyboardActions(): void
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
-          protected getRolloverColumn(): int
-          protected rolloverColumnUpdated(arg0: int, arg1: int): void
-          selectColumn(arg0: int): void
-          selectColumn(arg0: int, arg1: boolean): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          protected getRolloverColumn(): number
+          protected rolloverColumnUpdated(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+          selectColumn(arg0: number | java.lang.Integer): void
+          selectColumn(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension

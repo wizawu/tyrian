@@ -3,7 +3,7 @@ declare namespace com {
     namespace management {
 
       class VMOption {
-        public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: boolean, arg3: com.sun.management.VMOption$Origin)
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean, arg3: com.sun.management.VMOption$Origin)
         public getName(): java.lang.String
         public getValue(): java.lang.String
         public getOrigin(): com.sun.management.VMOption$Origin

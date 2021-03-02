@@ -13,7 +13,7 @@ declare namespace java {
       public static readonly USER_ATTENTION: java.awt.Taskbar$Feature
       public static readonly USER_ATTENTION_WINDOW: java.awt.Taskbar$Feature
       public static values(): java.awt.Taskbar$Feature[]
-      public static valueOf(arg0: java.lang.String): java.awt.Taskbar$Feature
+      public static valueOf(arg0: java.lang.String | string): java.awt.Taskbar$Feature
     }
 
   }

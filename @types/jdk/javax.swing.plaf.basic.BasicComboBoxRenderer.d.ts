@@ -7,7 +7,7 @@ declare namespace javax {
           protected static noFocusBorder: javax.swing.border.Border
           public constructor()
           public getPreferredSize(): java.awt.Dimension
-          public getListCellRendererComponent(arg0: javax.swing.JList<unknown>, arg1: java.lang.Object, arg2: int, arg3: boolean, arg4: boolean): java.awt.Component
+          public getListCellRendererComponent(arg0: javax.swing.JList<unknown>, arg1: java.lang.Object | any, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean): java.awt.Component
         }
 
       }

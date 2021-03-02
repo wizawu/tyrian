@@ -5,7 +5,7 @@ declare namespace javax {
       interface Result {
         public static readonly PI_DISABLE_OUTPUT_ESCAPING: java.lang.String
         public static readonly PI_ENABLE_OUTPUT_ESCAPING: java.lang.String
-        setSystemId(arg0: java.lang.String): void
+        setSystemId(arg0: java.lang.String | string): void
         getSystemId(): java.lang.String
       }
 

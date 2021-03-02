@@ -3,9 +3,9 @@ declare namespace org {
     namespace dom {
 
       interface DOMStringList {
-        item(arg0: int): java.lang.String
-        getLength(): int
-        contains(arg0: java.lang.String): boolean
+        item(arg0: number | java.lang.Integer): java.lang.String
+        getLength(): number
+        contains(arg0: java.lang.String | string): boolean
       }
 
     }

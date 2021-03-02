@@ -6,8 +6,8 @@ declare namespace jdk {
       wrapped(): java.lang.String
       fullClassName(): java.lang.String
       kind(): jdk.jshell.Snippet$Kind
-      sourceToWrappedPosition(arg0: int): int
-      wrappedToSourcePosition(arg0: int): int
+      sourceToWrappedPosition(arg0: number | java.lang.Integer): number
+      wrappedToSourcePosition(arg0: number | java.lang.Integer): number
     }
 
   }

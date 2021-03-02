@@ -9,8 +9,8 @@ declare namespace java {
         public static readonly TYPE_BICUBIC: int
         interpolationType: int
         public constructor(arg0: java.awt.geom.AffineTransform, arg1: java.awt.RenderingHints)
-        public constructor(arg0: java.awt.geom.AffineTransform, arg1: int)
-        public getInterpolationType(): int
+        public constructor(arg0: java.awt.geom.AffineTransform, arg1: number | java.lang.Integer)
+        public getInterpolationType(): number
         public filter(arg0: java.awt.image.BufferedImage, arg1: java.awt.image.BufferedImage): java.awt.image.BufferedImage
         public filter(arg0: java.awt.image.Raster, arg1: java.awt.image.WritableRaster): java.awt.image.WritableRaster
         public getBounds2D(arg0: java.awt.image.BufferedImage): java.awt.geom.Rectangle2D

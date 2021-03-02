@@ -4,7 +4,7 @@ declare namespace javax {
 
       class DestroyFailedException extends java.lang.Exception {
         public constructor()
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

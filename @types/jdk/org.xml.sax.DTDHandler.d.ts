@@ -3,8 +3,8 @@ declare namespace org {
     namespace sax {
 
       interface DTDHandler {
-        notationDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
-        unparsedEntityDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): void
+        notationDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+        unparsedEntityDecl(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): void
       }
 
     }

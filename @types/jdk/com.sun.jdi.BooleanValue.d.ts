@@ -4,8 +4,8 @@ declare namespace com {
 
       interface BooleanValue extends com.sun.jdi.PrimitiveValue {
         value(): boolean
-        equals(arg0: java.lang.Object): boolean
-        hashCode(): int
+        equals(arg0: java.lang.Object | any): boolean
+        hashCode(): number
       }
 
     }

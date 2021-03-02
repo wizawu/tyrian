@@ -3,7 +3,7 @@ declare namespace com {
     namespace javadoc {
 
       interface PackageDoc extends com.sun.javadoc.Doc {
-        allClasses(arg0: boolean): com.sun.javadoc.ClassDoc[]
+        allClasses(arg0: boolean | java.lang.Boolean): com.sun.javadoc.ClassDoc[]
         allClasses(): com.sun.javadoc.ClassDoc[]
         ordinaryClasses(): com.sun.javadoc.ClassDoc[]
         exceptions(): com.sun.javadoc.ClassDoc[]
@@ -12,7 +12,7 @@ declare namespace com {
         interfaces(): com.sun.javadoc.ClassDoc[]
         annotationTypes(): com.sun.javadoc.AnnotationTypeDoc[]
         annotations(): com.sun.javadoc.AnnotationDesc[]
-        findClass(arg0: java.lang.String): com.sun.javadoc.ClassDoc
+        findClass(arg0: java.lang.String | string): com.sun.javadoc.ClassDoc
       }
 
     }

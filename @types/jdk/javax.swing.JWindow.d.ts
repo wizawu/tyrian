@@ -16,8 +16,8 @@ declare namespace javax {
       public setTransferHandler(arg0: javax.swing.TransferHandler): void
       public getTransferHandler(): javax.swing.TransferHandler
       public update(arg0: java.awt.Graphics): void
-      protected setRootPaneCheckingEnabled(arg0: boolean): void
-      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
+      protected setRootPaneCheckingEnabled(arg0: boolean | java.lang.Boolean): void
+      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       public remove(arg0: java.awt.Component): void
       public setLayout(arg0: java.awt.LayoutManager): void
       public getRootPane(): javax.swing.JRootPane
@@ -29,7 +29,7 @@ declare namespace javax {
       public getGlassPane(): java.awt.Component
       public setGlassPane(arg0: java.awt.Component): void
       public getGraphics(): java.awt.Graphics
-      public repaint(arg0: long, arg1: int, arg2: int, arg3: int, arg4: int): void
+      public repaint(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }

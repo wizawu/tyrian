@@ -10,13 +10,13 @@ declare namespace java {
           removeKey(arg0: java.nio.channels.SelectionKey): void
           public isRegistered(): boolean
           public keyFor(arg0: java.nio.channels.Selector): java.nio.channels.SelectionKey
-          public register(arg0: java.nio.channels.Selector, arg1: int, arg2: java.lang.Object): java.nio.channels.SelectionKey
+          public register(arg0: java.nio.channels.Selector, arg1: number | java.lang.Integer, arg2: java.lang.Object | any): java.nio.channels.SelectionKey
           protected implCloseChannel(): void
           protected abstract implCloseSelectableChannel(): void
           public isBlocking(): boolean
           public blockingLock(): java.lang.Object
-          public configureBlocking(arg0: boolean): java.nio.channels.SelectableChannel
-          protected abstract implConfigureBlocking(arg0: boolean): void
+          public configureBlocking(arg0: boolean | java.lang.Boolean): java.nio.channels.SelectableChannel
+          protected abstract implConfigureBlocking(arg0: boolean | java.lang.Boolean): void
         }
 
       }

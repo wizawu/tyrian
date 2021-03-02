@@ -12,17 +12,17 @@ declare namespace java {
       hgap: int
       vgap: int
       public constructor()
-      public constructor(arg0: int)
-      public constructor(arg0: int, arg1: int, arg2: int)
-      public getAlignment(): int
-      public setAlignment(arg0: int): void
-      public getHgap(): int
-      public setHgap(arg0: int): void
-      public getVgap(): int
-      public setVgap(arg0: int): void
-      public setAlignOnBaseline(arg0: boolean): void
+      public constructor(arg0: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public getAlignment(): number
+      public setAlignment(arg0: number | java.lang.Integer): void
+      public getHgap(): number
+      public setHgap(arg0: number | java.lang.Integer): void
+      public getVgap(): number
+      public setVgap(arg0: number | java.lang.Integer): void
+      public setAlignOnBaseline(arg0: boolean | java.lang.Boolean): void
       public getAlignOnBaseline(): boolean
-      public addLayoutComponent(arg0: java.lang.String, arg1: java.awt.Component): void
+      public addLayoutComponent(arg0: java.lang.String | string, arg1: java.awt.Component): void
       public removeLayoutComponent(arg0: java.awt.Component): void
       public preferredLayoutSize(arg0: java.awt.Container): java.awt.Dimension
       public minimumLayoutSize(arg0: java.awt.Container): java.awt.Dimension

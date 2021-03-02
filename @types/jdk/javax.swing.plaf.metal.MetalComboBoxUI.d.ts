@@ -7,9 +7,9 @@ declare namespace javax {
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
-          public paintCurrentValue(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean): void
-          public paintCurrentValueBackground(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public paintCurrentValue(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean | java.lang.Boolean): void
+          public paintCurrentValueBackground(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean | java.lang.Boolean): void
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           protected createEditor(): javax.swing.ComboBoxEditor
           protected createPopup(): javax.swing.plaf.basic.ComboPopup
           protected createArrowButton(): javax.swing.JButton

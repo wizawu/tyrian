@@ -6,7 +6,7 @@ declare namespace com {
         containingClass(): com.sun.javadoc.ClassDoc
         containingPackage(): com.sun.javadoc.PackageDoc
         qualifiedName(): java.lang.String
-        modifierSpecifier(): int
+        modifierSpecifier(): number
         modifiers(): java.lang.String
         annotations(): com.sun.javadoc.AnnotationDesc[]
         isPublic(): boolean

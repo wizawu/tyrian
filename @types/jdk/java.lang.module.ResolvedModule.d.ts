@@ -9,8 +9,8 @@ declare namespace java {
         descriptor(): java.lang.module.ModuleDescriptor
         public name(): java.lang.String
         public reads(): java.util.Set<java.lang.module.ResolvedModule>
-        public hashCode(): int
-        public equals(arg0: java.lang.Object): boolean
+        public hashCode(): number
+        public equals(arg0: java.lang.Object | any): boolean
         public toString(): java.lang.String
       }
 

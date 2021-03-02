@@ -4,9 +4,9 @@ declare namespace com {
       namespace connect {
 
         interface Connector$BooleanArgument extends com.sun.jdi.connect.Connector$Argument {
-          setValue(arg0: boolean): void
-          isValid(arg0: java.lang.String): boolean
-          stringValueOf(arg0: boolean): java.lang.String
+          setValue(arg0: boolean | java.lang.Boolean): void
+          isValid(arg0: java.lang.String | string): boolean
+          stringValueOf(arg0: boolean | java.lang.Boolean): java.lang.String
           booleanValue(): boolean
         }
 

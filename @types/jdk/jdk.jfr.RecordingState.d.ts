@@ -8,7 +8,7 @@ declare namespace jdk {
       public static readonly STOPPED: jdk.jfr.RecordingState
       public static readonly CLOSED: jdk.jfr.RecordingState
       public static values(): jdk.jfr.RecordingState[]
-      public static valueOf(arg0: java.lang.String): jdk.jfr.RecordingState
+      public static valueOf(arg0: java.lang.String | string): jdk.jfr.RecordingState
     }
 
   }

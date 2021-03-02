@@ -4,9 +4,9 @@ declare namespace java {
     class ProcessBuilder {
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: java.util.List<java.lang.String>)
-      public constructor(...arg0: java.lang.String[])
+      public constructor(...vargs: (java.lang.String | string)[])
       public command(arg0: java.util.List<java.lang.String>): java.lang.ProcessBuilder
-      public command(...arg0: java.lang.String[]): java.lang.ProcessBuilder
+      public command(...vargs: (java.lang.String | string)[]): java.lang.ProcessBuilder
       public command(): java.util.List<java.lang.String>
       public environment(): java.util.Map<java.lang.String,java.lang.String>
       environment(arg0: java.lang.String[]): java.lang.ProcessBuilder
@@ -23,7 +23,7 @@ declare namespace java {
       public redirectError(): java.lang.ProcessBuilder$Redirect
       public inheritIO(): java.lang.ProcessBuilder
       public redirectErrorStream(): boolean
-      public redirectErrorStream(arg0: boolean): java.lang.ProcessBuilder
+      public redirectErrorStream(arg0: boolean | java.lang.Boolean): java.lang.ProcessBuilder
       public start(): java.lang.Process
       public static startPipeline(arg0: java.util.List<java.lang.ProcessBuilder>): java.util.List<java.lang.Process>
     }

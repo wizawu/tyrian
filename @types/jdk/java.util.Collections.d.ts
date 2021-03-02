@@ -7,22 +7,22 @@ declare namespace java {
       public static readonly EMPTY_MAP: java.util.Map
       public static sort<T extends java.lang.Comparable<unknown>>(arg0: java.util.List<T>): void
       public static sort<T>(arg0: java.util.List<T>, arg1: java.util.Comparator<unknown>): void
-      public static binarySearch<T>(arg0: java.util.List<java.lang.Comparable<unknown>>, arg1: T): int
-      public static binarySearch<T>(arg0: java.util.List<T>, arg1: T, arg2: java.util.Comparator<unknown>): int
+      public static binarySearch<T>(arg0: java.util.List<java.lang.Comparable<unknown>>, arg1: T): number
+      public static binarySearch<T>(arg0: java.util.List<T>, arg1: T, arg2: java.util.Comparator<unknown>): number
       public static reverse(arg0: java.util.List<unknown>): void
       public static shuffle(arg0: java.util.List<unknown>): void
       public static shuffle(arg0: java.util.List<unknown>, arg1: java.util.Random): void
-      public static swap(arg0: java.util.List<unknown>, arg1: int, arg2: int): void
+      public static swap(arg0: java.util.List<unknown>, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public static fill<T>(arg0: java.util.List<unknown>, arg1: T): void
       public static copy<T>(arg0: java.util.List<unknown>, arg1: java.util.List<T>): void
       public static min<T extends java.lang.Comparable<unknown>>(arg0: java.util.Collection<T>): T
       public static min<T>(arg0: java.util.Collection<T>, arg1: java.util.Comparator<unknown>): T
       public static max<T extends java.lang.Comparable<unknown>>(arg0: java.util.Collection<T>): T
       public static max<T>(arg0: java.util.Collection<T>, arg1: java.util.Comparator<unknown>): T
-      public static rotate(arg0: java.util.List<unknown>, arg1: int): void
+      public static rotate(arg0: java.util.List<unknown>, arg1: number | java.lang.Integer): void
       public static replaceAll<T>(arg0: java.util.List<T>, arg1: T, arg2: T): boolean
-      public static indexOfSubList(arg0: java.util.List<unknown>, arg1: java.util.List<unknown>): int
-      public static lastIndexOfSubList(arg0: java.util.List<unknown>, arg1: java.util.List<unknown>): int
+      public static indexOfSubList(arg0: java.util.List<unknown>, arg1: java.util.List<unknown>): number
+      public static lastIndexOfSubList(arg0: java.util.List<unknown>, arg1: java.util.List<unknown>): number
       public static unmodifiableCollection<T>(arg0: java.util.Collection<T>): java.util.Collection<T>
       public static unmodifiableSet<T>(arg0: java.util.Set<T>): java.util.Set<T>
       public static unmodifiableSortedSet<T>(arg0: java.util.SortedSet<T>): java.util.SortedSet<T>
@@ -32,13 +32,13 @@ declare namespace java {
       public static unmodifiableSortedMap<K,V>(arg0: java.util.SortedMap<K,V>): java.util.SortedMap<K,V>
       public static unmodifiableNavigableMap<K,V>(arg0: java.util.NavigableMap<K,V>): java.util.NavigableMap<K,V>
       public static synchronizedCollection<T>(arg0: java.util.Collection<T>): java.util.Collection<T>
-      static synchronizedCollection<T>(arg0: java.util.Collection<T>, arg1: java.lang.Object): java.util.Collection<T>
+      static synchronizedCollection<T>(arg0: java.util.Collection<T>, arg1: java.lang.Object | any): java.util.Collection<T>
       public static synchronizedSet<T>(arg0: java.util.Set<T>): java.util.Set<T>
-      static synchronizedSet<T>(arg0: java.util.Set<T>, arg1: java.lang.Object): java.util.Set<T>
+      static synchronizedSet<T>(arg0: java.util.Set<T>, arg1: java.lang.Object | any): java.util.Set<T>
       public static synchronizedSortedSet<T>(arg0: java.util.SortedSet<T>): java.util.SortedSet<T>
       public static synchronizedNavigableSet<T>(arg0: java.util.NavigableSet<T>): java.util.NavigableSet<T>
       public static synchronizedList<T>(arg0: java.util.List<T>): java.util.List<T>
-      static synchronizedList<T>(arg0: java.util.List<T>, arg1: java.lang.Object): java.util.List<T>
+      static synchronizedList<T>(arg0: java.util.List<T>, arg1: java.lang.Object | any): java.util.List<T>
       public static synchronizedMap<K,V>(arg0: java.util.Map<K,V>): java.util.Map<K,V>
       public static synchronizedSortedMap<K,V>(arg0: java.util.SortedMap<K,V>): java.util.SortedMap<K,V>
       public static synchronizedNavigableMap<K,V>(arg0: java.util.NavigableMap<K,V>): java.util.NavigableMap<K,V>
@@ -67,15 +67,15 @@ declare namespace java {
       static singletonSpliterator<T>(arg0: T): java.util.Spliterator<T>
       public static singletonList<T>(arg0: T): java.util.List<T>
       public static singletonMap<K,V>(arg0: K, arg1: V): java.util.Map<K,V>
-      public static nCopies<T>(arg0: int, arg1: T): java.util.List<T>
+      public static nCopies<T>(arg0: number | java.lang.Integer, arg1: T): java.util.List<T>
       public static reverseOrder<T>(): java.util.Comparator<T>
       public static reverseOrder<T>(arg0: java.util.Comparator<T>): java.util.Comparator<T>
       public static enumeration<T>(arg0: java.util.Collection<T>): java.util.Enumeration<T>
       public static list<T>(arg0: java.util.Enumeration<T>): java.util.ArrayList<T>
-      static eq(arg0: java.lang.Object, arg1: java.lang.Object): boolean
-      public static frequency(arg0: java.util.Collection<unknown>, arg1: java.lang.Object): int
+      static eq(arg0: java.lang.Object | any, arg1: java.lang.Object | any): boolean
+      public static frequency(arg0: java.util.Collection<unknown>, arg1: java.lang.Object | any): number
       public static disjoint(arg0: java.util.Collection<unknown>, arg1: java.util.Collection<unknown>): boolean
-      public static addAll<T>(arg0: java.util.Collection<unknown>, ...arg1: T[]): boolean
+      public static addAll<T>(arg0: java.util.Collection<unknown>, ...vargs: (T)[]): boolean
       public static newSetFromMap<E>(arg0: java.util.Map<E,java.lang.Boolean>): java.util.Set<E>
       public static asLifoQueue<T>(arg0: java.util.Deque<T>): java.util.Queue<T>
     }

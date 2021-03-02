@@ -3,11 +3,11 @@ declare namespace java {
     namespace management {
 
       interface ClassLoadingMXBean extends java.lang.management.PlatformManagedObject {
-        getTotalLoadedClassCount(): long
-        getLoadedClassCount(): int
-        getUnloadedClassCount(): long
+        getTotalLoadedClassCount(): number
+        getLoadedClassCount(): number
+        getUnloadedClassCount(): number
         isVerbose(): boolean
-        setVerbose(arg0: boolean): void
+        setVerbose(arg0: boolean | java.lang.Boolean): void
       }
 
     }

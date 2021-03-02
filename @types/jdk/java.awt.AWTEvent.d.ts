@@ -29,9 +29,9 @@ declare namespace java {
       public static readonly RESERVED_ID_MAX: int
       getAccessControlContext(): java.security.AccessControlContext
       public constructor(arg0: java.awt.Event)
-      public constructor(arg0: java.lang.Object, arg1: int)
-      public setSource(arg0: java.lang.Object): void
-      public getID(): int
+      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer)
+      public setSource(arg0: java.lang.Object | any): void
+      public getID(): number
       public toString(): java.lang.String
       public paramString(): java.lang.String
       protected consume(): void

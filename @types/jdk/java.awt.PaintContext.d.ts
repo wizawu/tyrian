@@ -4,7 +4,7 @@ declare namespace java {
     interface PaintContext {
       dispose(): void
       getColorModel(): java.awt.image.ColorModel
-      getRaster(arg0: int, arg1: int, arg2: int, arg3: int): java.awt.image.Raster
+      getRaster(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.awt.image.Raster
     }
 
   }

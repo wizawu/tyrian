@@ -7,7 +7,7 @@ declare namespace java {
       }
 
       interface LongSupplier {
-        getAsLong(): long
+        getAsLong(): number
       }
 
     }

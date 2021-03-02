@@ -22,8 +22,8 @@ declare namespace javax {
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
-          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
-          public paintCurrentValue(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean): void
+          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
+          public paintCurrentValue(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean | java.lang.Boolean): void
           protected getDefaultSize(): java.awt.Dimension
           static access$000(arg0: javax.swing.plaf.synth.SynthComboBoxUI): javax.swing.JComboBox
           static access$100(arg0: javax.swing.plaf.synth.SynthComboBoxUI): javax.swing.JComboBox

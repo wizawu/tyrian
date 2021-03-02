@@ -18,16 +18,16 @@ declare namespace java {
         levels: int[]
         levelIndex: int
         done: boolean
-        public constructor(arg0: java.awt.geom.PathIterator, arg1: double)
-        public constructor(arg0: java.awt.geom.PathIterator, arg1: double, arg2: int)
-        public getFlatness(): double
-        public getRecursionLimit(): int
-        public getWindingRule(): int
+        public constructor(arg0: java.awt.geom.PathIterator, arg1: number | java.lang.Double)
+        public constructor(arg0: java.awt.geom.PathIterator, arg1: number | java.lang.Double, arg2: number | java.lang.Integer)
+        public getFlatness(): number
+        public getRecursionLimit(): number
+        public getWindingRule(): number
         public isDone(): boolean
-        ensureHoldCapacity(arg0: int): void
+        ensureHoldCapacity(arg0: number | java.lang.Integer): void
         public next(): void
-        public currentSegment(arg0: float[]): int
-        public currentSegment(arg0: double[]): int
+        public currentSegment(arg0: float[]): number
+        public currentSegment(arg0: double[]): number
       }
 
     }

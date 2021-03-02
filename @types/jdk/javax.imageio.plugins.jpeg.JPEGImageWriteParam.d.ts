@@ -8,14 +8,14 @@ declare namespace javax {
           public unsetCompression(): void
           public isCompressionLossless(): boolean
           public getCompressionQualityDescriptions(): java.lang.String[]
-          public getCompressionQualityValues(): float[]
+          public getCompressionQualityValues(): number[]
           public areTablesSet(): boolean
           public setEncodeTables(arg0: javax.imageio.plugins.jpeg.JPEGQTable[], arg1: javax.imageio.plugins.jpeg.JPEGHuffmanTable[], arg2: javax.imageio.plugins.jpeg.JPEGHuffmanTable[]): void
           public unsetEncodeTables(): void
           public getQTables(): javax.imageio.plugins.jpeg.JPEGQTable[]
           public getDCHuffmanTables(): javax.imageio.plugins.jpeg.JPEGHuffmanTable[]
           public getACHuffmanTables(): javax.imageio.plugins.jpeg.JPEGHuffmanTable[]
-          public setOptimizeHuffmanTables(arg0: boolean): void
+          public setOptimizeHuffmanTables(arg0: boolean | java.lang.Boolean): void
           public getOptimizeHuffmanTables(): boolean
         }
 

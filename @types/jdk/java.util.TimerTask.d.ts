@@ -13,7 +13,7 @@ declare namespace java {
       protected constructor()
       public abstract run(): void
       public cancel(): boolean
-      public scheduledExecutionTime(): long
+      public scheduledExecutionTime(): number
     }
 
   }

@@ -6,15 +6,15 @@ declare namespace java {
       actionCommand: java.lang.String
       actionListener: java.awt.event.ActionListener
       public constructor()
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
       constructComponentName(): java.lang.String
       public addNotify(): void
       public getLabel(): java.lang.String
-      public setLabel(arg0: java.lang.String): void
-      public setActionCommand(arg0: java.lang.String): void
+      public setLabel(arg0: java.lang.String | string): void
+      public setActionCommand(arg0: java.lang.String | string): void
       public getActionCommand(): java.lang.String
-      public addActionListener(arg0: java.awt.event.ActionListener): void
-      public removeActionListener(arg0: java.awt.event.ActionListener): void
+      public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
+      public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
       public getActionListeners(): java.awt.event.ActionListener[]
       public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
       eventEnabled(arg0: java.awt.AWTEvent): boolean

@@ -12,21 +12,21 @@ declare namespace java {
         public x2: float
         public y2: float
         public constructor()
-        public constructor(arg0: float, arg1: float, arg2: float, arg3: float, arg4: float, arg5: float, arg6: float, arg7: float)
-        public getX1(): double
-        public getY1(): double
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float, arg4: number | java.lang.Float, arg5: number | java.lang.Float, arg6: number | java.lang.Float, arg7: number | java.lang.Float)
+        public getX1(): number
+        public getY1(): number
         public getP1(): java.awt.geom.Point2D
-        public getCtrlX1(): double
-        public getCtrlY1(): double
+        public getCtrlX1(): number
+        public getCtrlY1(): number
         public getCtrlP1(): java.awt.geom.Point2D
-        public getCtrlX2(): double
-        public getCtrlY2(): double
+        public getCtrlX2(): number
+        public getCtrlY2(): number
         public getCtrlP2(): java.awt.geom.Point2D
-        public getX2(): double
-        public getY2(): double
+        public getX2(): number
+        public getY2(): number
         public getP2(): java.awt.geom.Point2D
-        public setCurve(arg0: double, arg1: double, arg2: double, arg3: double, arg4: double, arg5: double, arg6: double, arg7: double): void
-        public setCurve(arg0: float, arg1: float, arg2: float, arg3: float, arg4: float, arg5: float, arg6: float, arg7: float): void
+        public setCurve(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double, arg6: number | java.lang.Double, arg7: number | java.lang.Double): void
+        public setCurve(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float, arg4: number | java.lang.Float, arg5: number | java.lang.Float, arg6: number | java.lang.Float, arg7: number | java.lang.Float): void
         public getBounds2D(): java.awt.geom.Rectangle2D
       }
 

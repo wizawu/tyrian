@@ -113,7 +113,7 @@ declare namespace com {
           public static readonly USES: com.sun.source.tree.Tree$Kind
           public static readonly OTHER: com.sun.source.tree.Tree$Kind
           public static values(): com.sun.source.tree.Tree$Kind[]
-          public static valueOf(arg0: java.lang.String): com.sun.source.tree.Tree$Kind
+          public static valueOf(arg0: java.lang.String | string): com.sun.source.tree.Tree$Kind
           public asInterface(): java.lang.Class<com.sun.source.tree.Tree>
         }
 

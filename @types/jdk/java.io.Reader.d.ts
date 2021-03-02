@@ -5,18 +5,18 @@ declare namespace java {
       protected lock: java.lang.Object
       public static nullReader(): java.io.Reader
       protected constructor()
-      protected constructor(arg0: java.lang.Object)
-      public read(arg0: java.nio.CharBuffer): int
-      public read(): int
-      public read(arg0: char[]): int
-      public abstract read(arg0: char[], arg1: int, arg2: int): int
-      public skip(arg0: long): long
+      protected constructor(arg0: java.lang.Object | any)
+      public read(arg0: java.nio.CharBuffer): number
+      public read(): number
+      public read(arg0: char[]): number
+      public abstract read(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public skip(arg0: number | java.lang.Long): number
       public ready(): boolean
       public markSupported(): boolean
-      public mark(arg0: int): void
+      public mark(arg0: number | java.lang.Integer): void
       public reset(): void
       public abstract close(): void
-      public transferTo(arg0: java.io.Writer): long
+      public transferTo(arg0: java.io.Writer): number
     }
 
   }

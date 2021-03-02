@@ -8,10 +8,10 @@ declare namespace com {
         getTimestampingAuthorityCertificate(): java.security.cert.X509Certificate
         getTSAPolicyID(): java.lang.String
         getTSADigestAlg(): java.lang.String
-        getSignature(): byte[]
+        getSignature(): number[]
         getSignatureAlgorithm(): java.lang.String
         getSignerCertificateChain(): java.security.cert.X509Certificate[]
-        getContent(): byte[]
+        getContent(): number[]
         getSource(): java.util.zip.ZipFile
       }
 

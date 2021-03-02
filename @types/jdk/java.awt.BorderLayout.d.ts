@@ -27,22 +27,22 @@ declare namespace java {
       public static readonly LINE_START: java.lang.String
       public static readonly LINE_END: java.lang.String
       public constructor()
-      public constructor(arg0: int, arg1: int)
-      public getHgap(): int
-      public setHgap(arg0: int): void
-      public getVgap(): int
-      public setVgap(arg0: int): void
-      public addLayoutComponent(arg0: java.awt.Component, arg1: java.lang.Object): void
-      public addLayoutComponent(arg0: java.lang.String, arg1: java.awt.Component): void
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+      public getHgap(): number
+      public setHgap(arg0: number | java.lang.Integer): void
+      public getVgap(): number
+      public setVgap(arg0: number | java.lang.Integer): void
+      public addLayoutComponent(arg0: java.awt.Component, arg1: java.lang.Object | any): void
+      public addLayoutComponent(arg0: java.lang.String | string, arg1: java.awt.Component): void
       public removeLayoutComponent(arg0: java.awt.Component): void
-      public getLayoutComponent(arg0: java.lang.Object): java.awt.Component
-      public getLayoutComponent(arg0: java.awt.Container, arg1: java.lang.Object): java.awt.Component
+      public getLayoutComponent(arg0: java.lang.Object | any): java.awt.Component
+      public getLayoutComponent(arg0: java.awt.Container, arg1: java.lang.Object | any): java.awt.Component
       public getConstraints(arg0: java.awt.Component): java.lang.Object
       public minimumLayoutSize(arg0: java.awt.Container): java.awt.Dimension
       public preferredLayoutSize(arg0: java.awt.Container): java.awt.Dimension
       public maximumLayoutSize(arg0: java.awt.Container): java.awt.Dimension
-      public getLayoutAlignmentX(arg0: java.awt.Container): float
-      public getLayoutAlignmentY(arg0: java.awt.Container): float
+      public getLayoutAlignmentX(arg0: java.awt.Container): number
+      public getLayoutAlignmentY(arg0: java.awt.Container): number
       public invalidateLayout(arg0: java.awt.Container): void
       public layoutContainer(arg0: java.awt.Container): void
       public toString(): java.lang.String

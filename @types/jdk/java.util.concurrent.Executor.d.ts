@@ -3,11 +3,11 @@ declare namespace java {
     namespace concurrent {
 
       interface Executor$$lambda {
-        (arg0: java.lang.Runnable): void
+        (arg0: java.lang.Runnable | java.lang.Runnable$$lambda): void
       }
 
       interface Executor {
-        execute(arg0: java.lang.Runnable): void
+        execute(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): void
       }
 
     }

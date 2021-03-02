@@ -11,8 +11,8 @@ declare namespace org {
           getPrevValue(): java.lang.String
           getNewValue(): java.lang.String
           getAttrName(): java.lang.String
-          getAttrChange(): short
-          initMutationEvent(arg0: java.lang.String, arg1: boolean, arg2: boolean, arg3: org.w3c.dom.Node, arg4: java.lang.String, arg5: java.lang.String, arg6: java.lang.String, arg7: short): void
+          getAttrChange(): number
+          initMutationEvent(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean, arg3: org.w3c.dom.Node, arg4: java.lang.String | string, arg5: java.lang.String | string, arg6: java.lang.String | string, arg7: number | java.lang.Short): void
         }
 
       }

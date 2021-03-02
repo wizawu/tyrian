@@ -7,9 +7,9 @@ declare namespace java {
       getDeclaringClass(): java.lang.Class<unknown>
       getMethodType(): java.lang.invoke.MethodType
       getDescriptor(): java.lang.String
-      getByteCodeIndex(): int
+      getByteCodeIndex(): number
       getFileName(): java.lang.String
-      getLineNumber(): int
+      getLineNumber(): number
       isNativeMethod(): boolean
       toStackTraceElement(): java.lang.StackTraceElement
     }

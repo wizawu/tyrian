@@ -5,29 +5,29 @@ declare namespace java {
       readonly hb: int[]
       readonly offset: int
       isReadOnly: boolean
-      constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int[], arg5: int)
-      constructor(arg0: int, arg1: int, arg2: int, arg3: int)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: int[], arg5: number | java.lang.Integer)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
       base(): java.lang.Object
-      public static allocate(arg0: int): java.nio.IntBuffer
-      public static wrap(arg0: int[], arg1: int, arg2: int): java.nio.IntBuffer
+      public static allocate(arg0: number | java.lang.Integer): java.nio.IntBuffer
+      public static wrap(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.IntBuffer
       public static wrap(arg0: int[]): java.nio.IntBuffer
       public abstract slice(): java.nio.IntBuffer
       public abstract duplicate(): java.nio.IntBuffer
       public abstract asReadOnlyBuffer(): java.nio.IntBuffer
-      public abstract get(): int
-      public abstract put(arg0: int): java.nio.IntBuffer
-      public abstract get(arg0: int): int
-      public abstract put(arg0: int, arg1: int): java.nio.IntBuffer
-      public get(arg0: int[], arg1: int, arg2: int): java.nio.IntBuffer
+      public abstract get(): number
+      public abstract put(arg0: number | java.lang.Integer): java.nio.IntBuffer
+      public abstract get(arg0: number | java.lang.Integer): number
+      public abstract put(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.nio.IntBuffer
+      public get(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.IntBuffer
       public get(arg0: int[]): java.nio.IntBuffer
       public put(arg0: java.nio.IntBuffer): java.nio.IntBuffer
-      public put(arg0: int[], arg1: int, arg2: int): java.nio.IntBuffer
+      public put(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.IntBuffer
       public put(arg0: int[]): java.nio.IntBuffer
       public hasArray(): boolean
-      public array(): int[]
-      public arrayOffset(): int
-      public position(arg0: int): java.nio.IntBuffer
-      public limit(arg0: int): java.nio.IntBuffer
+      public array(): number[]
+      public arrayOffset(): number
+      public position(arg0: number | java.lang.Integer): java.nio.IntBuffer
+      public limit(arg0: number | java.lang.Integer): java.nio.IntBuffer
       public mark(): java.nio.IntBuffer
       public reset(): java.nio.IntBuffer
       public clear(): java.nio.IntBuffer
@@ -36,10 +36,10 @@ declare namespace java {
       public abstract compact(): java.nio.IntBuffer
       public abstract isDirect(): boolean
       public toString(): java.lang.String
-      public hashCode(): int
-      public equals(arg0: java.lang.Object): boolean
-      public compareTo(arg0: java.nio.IntBuffer): int
-      public mismatch(arg0: java.nio.IntBuffer): int
+      public hashCode(): number
+      public equals(arg0: java.lang.Object | any): boolean
+      public compareTo(arg0: java.nio.IntBuffer): number
+      public mismatch(arg0: java.nio.IntBuffer): number
       public abstract order(): java.nio.ByteOrder
       public duplicate(): java.nio.Buffer
       public slice(): java.nio.Buffer
@@ -49,9 +49,9 @@ declare namespace java {
       public clear(): java.nio.Buffer
       public reset(): java.nio.Buffer
       public mark(): java.nio.Buffer
-      public limit(arg0: int): java.nio.Buffer
-      public position(arg0: int): java.nio.Buffer
-      public compareTo(arg0: java.lang.Object): int
+      public limit(arg0: number | java.lang.Integer): java.nio.Buffer
+      public position(arg0: number | java.lang.Integer): java.nio.Buffer
+      public compareTo(arg0: java.lang.Object | any): number
     }
 
   }

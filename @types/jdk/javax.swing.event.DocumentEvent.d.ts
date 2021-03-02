@@ -3,8 +3,8 @@ declare namespace javax {
     namespace event {
 
       interface DocumentEvent {
-        getOffset(): int
-        getLength(): int
+        getOffset(): number
+        getLength(): number
         getDocument(): javax.swing.text.Document
         getType(): javax.swing.event.DocumentEvent$EventType
         getChange(arg0: javax.swing.text.Element): javax.swing.event.DocumentEvent$ElementChange

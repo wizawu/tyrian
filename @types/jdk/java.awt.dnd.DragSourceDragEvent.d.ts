@@ -3,13 +3,13 @@ declare namespace java {
     namespace dnd {
 
       class DragSourceDragEvent extends java.awt.dnd.DragSourceEvent {
-        public constructor(arg0: java.awt.dnd.DragSourceContext, arg1: int, arg2: int, arg3: int)
-        public constructor(arg0: java.awt.dnd.DragSourceContext, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int)
-        public getTargetActions(): int
-        public getGestureModifiers(): int
-        public getGestureModifiersEx(): int
-        public getUserAction(): int
-        public getDropAction(): int
+        public constructor(arg0: java.awt.dnd.DragSourceContext, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        public constructor(arg0: java.awt.dnd.DragSourceContext, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer)
+        public getTargetActions(): number
+        public getGestureModifiers(): number
+        public getGestureModifiersEx(): number
+        public getUserAction(): number
+        public getDropAction(): number
       }
 
     }

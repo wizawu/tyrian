@@ -7,7 +7,7 @@ declare namespace java {
       }
 
       interface DoubleSupplier {
-        getAsDouble(): double
+        getAsDouble(): number
       }
 
     }

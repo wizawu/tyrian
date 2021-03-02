@@ -8,7 +8,7 @@ declare namespace javax {
         peek(): javax.xml.stream.events.XMLEvent
         getElementText(): java.lang.String
         nextTag(): javax.xml.stream.events.XMLEvent
-        getProperty(arg0: java.lang.String): java.lang.Object
+        getProperty(arg0: java.lang.String | string): java.lang.Object
         close(): void
       }
 

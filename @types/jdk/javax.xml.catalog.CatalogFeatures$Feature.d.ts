@@ -8,8 +8,8 @@ declare namespace javax {
         public static readonly DEFER: javax.xml.catalog.CatalogFeatures$Feature
         public static readonly RESOLVE: javax.xml.catalog.CatalogFeatures$Feature
         public static values(): javax.xml.catalog.CatalogFeatures$Feature[]
-        public static valueOf(arg0: java.lang.String): javax.xml.catalog.CatalogFeatures$Feature
-        equalsPropertyName(arg0: java.lang.String): boolean
+        public static valueOf(arg0: java.lang.String | string): javax.xml.catalog.CatalogFeatures$Feature
+        equalsPropertyName(arg0: java.lang.String | string): boolean
         public getPropertyName(): java.lang.String
         public defaultValue(): java.lang.String
         getValue(): java.lang.String

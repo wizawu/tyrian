@@ -3,15 +3,15 @@ declare namespace javax {
     namespace ssl {
 
       interface SSLSession {
-        getId(): byte[]
+        getId(): number[]
         getSessionContext(): javax.net.ssl.SSLSessionContext
-        getCreationTime(): long
-        getLastAccessedTime(): long
+        getCreationTime(): number
+        getLastAccessedTime(): number
         invalidate(): void
         isValid(): boolean
-        putValue(arg0: java.lang.String, arg1: java.lang.Object): void
-        getValue(arg0: java.lang.String): java.lang.Object
-        removeValue(arg0: java.lang.String): void
+        putValue(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
+        getValue(arg0: java.lang.String | string): java.lang.Object
+        removeValue(arg0: java.lang.String | string): void
         getValueNames(): java.lang.String[]
         getPeerCertificates(): java.security.cert.Certificate[]
         getLocalCertificates(): java.security.cert.Certificate[]
@@ -21,9 +21,9 @@ declare namespace javax {
         getCipherSuite(): java.lang.String
         getProtocol(): java.lang.String
         getPeerHost(): java.lang.String
-        getPeerPort(): int
-        getPacketBufferSize(): int
-        getApplicationBufferSize(): int
+        getPeerPort(): number
+        getPacketBufferSize(): number
+        getApplicationBufferSize(): number
       }
 
     }

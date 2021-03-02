@@ -11,7 +11,7 @@ declare namespace jdk {
         public static readonly METHOD: jdk.javadoc.doclet.Taglet$Location
         public static readonly FIELD: jdk.javadoc.doclet.Taglet$Location
         public static values(): jdk.javadoc.doclet.Taglet$Location[]
-        public static valueOf(arg0: java.lang.String): jdk.javadoc.doclet.Taglet$Location
+        public static valueOf(arg0: java.lang.String | string): jdk.javadoc.doclet.Taglet$Location
       }
 
     }

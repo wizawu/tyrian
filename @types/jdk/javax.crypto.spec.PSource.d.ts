@@ -3,7 +3,7 @@ declare namespace javax {
     namespace spec {
 
       class PSource {
-        protected constructor(arg0: java.lang.String)
+        protected constructor(arg0: java.lang.String | string)
         public getAlgorithm(): java.lang.String
       }
 

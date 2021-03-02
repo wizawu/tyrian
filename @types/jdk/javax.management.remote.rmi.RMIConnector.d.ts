@@ -13,9 +13,9 @@ declare namespace javax {
           public getConnectionId(): java.lang.String
           public getMBeanServerConnection(): javax.management.MBeanServerConnection
           public getMBeanServerConnection(arg0: javax.security.auth.Subject): javax.management.MBeanServerConnection
-          public addConnectionNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-          public removeConnectionNotificationListener(arg0: javax.management.NotificationListener): void
-          public removeConnectionNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+          public addConnectionNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$lambda, arg2: java.lang.Object | any): void
+          public removeConnectionNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda): void
+          public removeConnectionNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$lambda, arg2: java.lang.Object | any): void
           public close(): void
           static getAttributesNames(arg0: javax.management.AttributeList): java.lang.String
         }

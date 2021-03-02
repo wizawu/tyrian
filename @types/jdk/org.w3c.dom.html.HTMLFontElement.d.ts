@@ -5,11 +5,11 @@ declare namespace org {
 
         interface HTMLFontElement extends org.w3c.dom.html.HTMLElement {
           getColor(): java.lang.String
-          setColor(arg0: java.lang.String): void
+          setColor(arg0: java.lang.String | string): void
           getFace(): java.lang.String
-          setFace(arg0: java.lang.String): void
+          setFace(arg0: java.lang.String | string): void
           getSize(): java.lang.String
-          setSize(arg0: java.lang.String): void
+          setSize(arg0: java.lang.String | string): void
         }
 
       }

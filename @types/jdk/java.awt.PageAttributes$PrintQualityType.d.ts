@@ -6,7 +6,7 @@ declare namespace java {
       public static readonly NORMAL: java.awt.PageAttributes$PrintQualityType
       public static readonly DRAFT: java.awt.PageAttributes$PrintQualityType
       public toString(): java.lang.String
-      public hashCode(): int
+      public hashCode(): number
     }
 
   }

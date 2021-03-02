@@ -15,12 +15,12 @@ declare namespace java {
       gradient: java.lang.ref.SoftReference<int[]>
       fastGradientArraySize: int
       constructor(arg0: float[], arg1: java.awt.Color[], arg2: java.awt.MultipleGradientPaint$CycleMethod, arg3: java.awt.MultipleGradientPaint$ColorSpaceType, arg4: java.awt.geom.AffineTransform)
-      public getFractions(): float[]
+      public getFractions(): number[]
       public getColors(): java.awt.Color[]
       public getCycleMethod(): java.awt.MultipleGradientPaint$CycleMethod
       public getColorSpace(): java.awt.MultipleGradientPaint$ColorSpaceType
       public getTransform(): java.awt.geom.AffineTransform
-      public getTransparency(): int
+      public getTransparency(): number
     }
 
   }

@@ -77,7 +77,7 @@ declare namespace javax {
           public static readonly NA_10X15_ENVELOPE: javax.print.attribute.standard.MediaSizeName
           public static readonly NA_5X7: javax.print.attribute.standard.MediaSizeName
           public static readonly NA_8X10: javax.print.attribute.standard.MediaSizeName
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
         }

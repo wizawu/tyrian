@@ -6,31 +6,31 @@ declare namespace java {
         abstract class AbstractQueuedSynchronizer extends java.util.concurrent.locks.AbstractOwnableSynchronizer implements java.io.Serializable {
           static readonly SPIN_FOR_TIMEOUT_THRESHOLD: long
           protected constructor()
-          protected getState(): int
-          protected setState(arg0: int): void
-          protected compareAndSetState(arg0: int, arg1: int): boolean
+          protected getState(): number
+          protected setState(arg0: number | java.lang.Integer): void
+          protected compareAndSetState(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
           static selfInterrupt(): void
-          acquireQueued(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node, arg1: int): boolean
-          protected tryAcquire(arg0: int): boolean
-          protected tryRelease(arg0: int): boolean
-          protected tryAcquireShared(arg0: int): int
-          protected tryReleaseShared(arg0: int): boolean
+          acquireQueued(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node, arg1: number | java.lang.Integer): boolean
+          protected tryAcquire(arg0: number | java.lang.Integer): boolean
+          protected tryRelease(arg0: number | java.lang.Integer): boolean
+          protected tryAcquireShared(arg0: number | java.lang.Integer): number
+          protected tryReleaseShared(arg0: number | java.lang.Integer): boolean
           protected isHeldExclusively(): boolean
-          public acquire(arg0: int): void
-          public acquireInterruptibly(arg0: int): void
-          public tryAcquireNanos(arg0: int, arg1: long): boolean
-          public release(arg0: int): boolean
-          public acquireShared(arg0: int): void
-          public acquireSharedInterruptibly(arg0: int): void
-          public tryAcquireSharedNanos(arg0: int, arg1: long): boolean
-          public releaseShared(arg0: int): boolean
+          public acquire(arg0: number | java.lang.Integer): void
+          public acquireInterruptibly(arg0: number | java.lang.Integer): void
+          public tryAcquireNanos(arg0: number | java.lang.Integer, arg1: number | java.lang.Long): boolean
+          public release(arg0: number | java.lang.Integer): boolean
+          public acquireShared(arg0: number | java.lang.Integer): void
+          public acquireSharedInterruptibly(arg0: number | java.lang.Integer): void
+          public tryAcquireSharedNanos(arg0: number | java.lang.Integer, arg1: number | java.lang.Long): boolean
+          public releaseShared(arg0: number | java.lang.Integer): boolean
           public hasQueuedThreads(): boolean
           public hasContended(): boolean
           public getFirstQueuedThread(): java.lang.Thread
           public isQueued(arg0: java.lang.Thread): boolean
           apparentlyFirstQueuedIsExclusive(): boolean
           public hasQueuedPredecessors(): boolean
-          public getQueueLength(): int
+          public getQueueLength(): number
           public getQueuedThreads(): java.util.Collection<java.lang.Thread>
           public getExclusiveQueuedThreads(): java.util.Collection<java.lang.Thread>
           public getSharedQueuedThreads(): java.util.Collection<java.lang.Thread>
@@ -38,10 +38,10 @@ declare namespace java {
           isOnSyncQueue(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node): boolean
           transferForSignal(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node): boolean
           transferAfterCancelledWait(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node): boolean
-          fullyRelease(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node): int
+          fullyRelease(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node): number
           public owns(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject): boolean
           public hasWaiters(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject): boolean
-          public getWaitQueueLength(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject): int
+          public getWaitQueueLength(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject): number
           public getWaitingThreads(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject): java.util.Collection<java.lang.Thread>
         }
 

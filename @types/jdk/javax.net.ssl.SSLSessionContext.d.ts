@@ -5,10 +5,10 @@ declare namespace javax {
       interface SSLSessionContext {
         getSession(arg0: byte[]): javax.net.ssl.SSLSession
         getIds(): java.util.Enumeration<byte[]>
-        setSessionTimeout(arg0: int): void
-        getSessionTimeout(): int
-        setSessionCacheSize(arg0: int): void
-        getSessionCacheSize(): int
+        setSessionTimeout(arg0: number | java.lang.Integer): void
+        getSessionTimeout(): number
+        setSessionCacheSize(arg0: number | java.lang.Integer): void
+        getSessionCacheSize(): number
       }
 
     }

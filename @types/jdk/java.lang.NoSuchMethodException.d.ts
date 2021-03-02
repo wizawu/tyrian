@@ -3,7 +3,7 @@ declare namespace java {
 
     class NoSuchMethodException extends java.lang.ReflectiveOperationException {
       public constructor()
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
     }
 
   }

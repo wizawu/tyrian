@@ -10,8 +10,8 @@ declare namespace javax {
           public getSQLTypeName(): java.lang.String
           public getAttributes(): java.lang.Object[]
           public getAttributes(arg0: java.util.Map<java.lang.String,java.lang.Class<unknown>>): java.lang.Object[]
-          public equals(arg0: java.lang.Object): boolean
-          public hashCode(): int
+          public equals(arg0: java.lang.Object | any): boolean
+          public hashCode(): number
           public clone(): java.lang.Object
         }
 

@@ -12,7 +12,7 @@ declare namespace javax {
         readonly qnameType: javax.xml.namespace.QName
         readonly clsType: java.lang.Class<unknown>
         public static values(): javax.xml.xpath.XPathEvaluationResult$XPathResultType[]
-        public static valueOf(arg0: java.lang.String): javax.xml.xpath.XPathEvaluationResult$XPathResultType
+        public static valueOf(arg0: java.lang.String | string): javax.xml.xpath.XPathEvaluationResult$XPathResultType
         public static getQNameType(arg0: java.lang.Class<unknown>): javax.xml.namespace.QName
       }
 

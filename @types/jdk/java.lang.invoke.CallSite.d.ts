@@ -17,7 +17,7 @@ declare namespace java {
         setTargetNormal(arg0: java.lang.invoke.MethodHandle): void
         getTargetVolatile(): java.lang.invoke.MethodHandle
         setTargetVolatile(arg0: java.lang.invoke.MethodHandle): void
-        static makeSite(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.String, arg2: java.lang.invoke.MethodType, arg3: java.lang.Object, arg4: java.lang.Class<unknown>): java.lang.invoke.CallSite
+        static makeSite(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.String | string, arg2: java.lang.invoke.MethodType, arg3: java.lang.Object | any, arg4: java.lang.Class<unknown>): java.lang.invoke.CallSite
       }
 
     }

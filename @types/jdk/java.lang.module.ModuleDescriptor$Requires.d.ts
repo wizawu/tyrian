@@ -8,11 +8,11 @@ declare namespace java {
         public name(): java.lang.String
         public compiledVersion(): java.util.Optional<java.lang.module.ModuleDescriptor$Version>
         public rawCompiledVersion(): java.util.Optional<java.lang.String>
-        public compareTo(arg0: java.lang.module.ModuleDescriptor$Requires): int
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public compareTo(arg0: java.lang.module.ModuleDescriptor$Requires): number
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
         public toString(): java.lang.String
-        public compareTo(arg0: java.lang.Object): int
+        public compareTo(arg0: java.lang.Object | any): number
       }
 
     }

@@ -7,10 +7,10 @@ declare namespace javax {
           protected uis: java.util.Vector<javax.swing.plaf.ComponentUI>
           public constructor()
           public getUIs(): javax.swing.plaf.ComponentUI[]
-          public locationToIndex(arg0: javax.swing.JList<unknown>, arg1: java.awt.Point): int
-          public indexToLocation(arg0: javax.swing.JList<unknown>, arg1: int): java.awt.Point
-          public getCellBounds(arg0: javax.swing.JList<unknown>, arg1: int, arg2: int): java.awt.Rectangle
-          public contains(arg0: javax.swing.JComponent, arg1: int, arg2: int): boolean
+          public locationToIndex(arg0: javax.swing.JList<unknown>, arg1: java.awt.Point): number
+          public indexToLocation(arg0: javax.swing.JList<unknown>, arg1: number | java.lang.Integer): java.awt.Point
+          public getCellBounds(arg0: javax.swing.JList<unknown>, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.awt.Rectangle
+          public contains(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public installUI(arg0: javax.swing.JComponent): void
@@ -19,8 +19,8 @@ declare namespace javax {
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          public getAccessibleChildrenCount(arg0: javax.swing.JComponent): int
-          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: int): javax.accessibility.Accessible
+          public getAccessibleChildrenCount(arg0: javax.swing.JComponent): number
+          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer): javax.accessibility.Accessible
         }
 
       }

@@ -8,7 +8,7 @@ declare namespace java {
       public toString(): java.lang.String
       public add(arg0: java.lang.CharSequence): java.util.StringJoiner
       public merge(arg0: java.util.StringJoiner): java.util.StringJoiner
-      public length(): int
+      public length(): number
     }
 
   }

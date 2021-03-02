@@ -8,7 +8,7 @@ declare namespace javax {
           public static readonly FIXED_SIZES: javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext$CacheMode
           public static readonly NINE_SQUARE_SCALE: javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext$CacheMode
           public static values(): javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext$CacheMode[]
-          public static valueOf(arg0: java.lang.String): javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext$CacheMode
+          public static valueOf(arg0: java.lang.String | string): javax.swing.plaf.nimbus.AbstractRegionPainter$PaintContext$CacheMode
         }
 
       }

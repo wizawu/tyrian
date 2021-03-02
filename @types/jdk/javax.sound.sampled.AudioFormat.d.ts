@@ -10,18 +10,18 @@ declare namespace javax {
         protected frameSize: int
         protected frameRate: float
         protected bigEndian: boolean
-        public constructor(arg0: javax.sound.sampled.AudioFormat$Encoding, arg1: float, arg2: int, arg3: int, arg4: int, arg5: float, arg6: boolean)
-        public constructor(arg0: javax.sound.sampled.AudioFormat$Encoding, arg1: float, arg2: int, arg3: int, arg4: int, arg5: float, arg6: boolean, arg7: java.util.Map<java.lang.String,java.lang.Object>)
-        public constructor(arg0: float, arg1: int, arg2: int, arg3: boolean, arg4: boolean)
+        public constructor(arg0: javax.sound.sampled.AudioFormat$Encoding, arg1: number | java.lang.Float, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Float, arg6: boolean | java.lang.Boolean)
+        public constructor(arg0: javax.sound.sampled.AudioFormat$Encoding, arg1: number | java.lang.Float, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Float, arg6: boolean | java.lang.Boolean, arg7: java.util.Map<java.lang.String,java.lang.Object>)
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean)
         public getEncoding(): javax.sound.sampled.AudioFormat$Encoding
-        public getSampleRate(): float
-        public getSampleSizeInBits(): int
-        public getChannels(): int
-        public getFrameSize(): int
-        public getFrameRate(): float
+        public getSampleRate(): number
+        public getSampleSizeInBits(): number
+        public getChannels(): number
+        public getFrameSize(): number
+        public getFrameRate(): number
         public isBigEndian(): boolean
         public properties(): java.util.Map<java.lang.String,java.lang.Object>
-        public getProperty(arg0: java.lang.String): java.lang.Object
+        public getProperty(arg0: java.lang.String | string): java.lang.Object
         public matches(arg0: javax.sound.sampled.AudioFormat): boolean
         public toString(): java.lang.String
       }

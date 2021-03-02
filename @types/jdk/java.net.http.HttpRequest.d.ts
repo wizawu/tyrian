@@ -13,8 +13,8 @@ declare namespace java {
         public abstract uri(): java.net.URI
         public abstract version(): java.util.Optional<java.net.http.HttpClient$Version>
         public abstract headers(): java.net.http.HttpHeaders
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
       }
 
     }

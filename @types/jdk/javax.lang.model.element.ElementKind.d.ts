@@ -23,7 +23,7 @@ declare namespace javax {
           public static readonly RESOURCE_VARIABLE: javax.lang.model.element.ElementKind
           public static readonly MODULE: javax.lang.model.element.ElementKind
           public static values(): javax.lang.model.element.ElementKind[]
-          public static valueOf(arg0: java.lang.String): javax.lang.model.element.ElementKind
+          public static valueOf(arg0: java.lang.String | string): javax.lang.model.element.ElementKind
           public isClass(): boolean
           public isInterface(): boolean
           public isField(): boolean

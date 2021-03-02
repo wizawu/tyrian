@@ -18,12 +18,12 @@ declare namespace java {
         public static readonly STORED: int
         public static readonly DEFLATED: int
         static readonly DOSTIME_BEFORE_1980: long
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
         public constructor(arg0: java.util.zip.ZipEntry)
         constructor()
         public getName(): java.lang.String
-        public setTime(arg0: long): void
-        public getTime(): long
+        public setTime(arg0: number | java.lang.Long): void
+        public getTime(): number
         public setTimeLocal(arg0: java.time.LocalDateTime): void
         public getTimeLocal(): java.time.LocalDateTime
         public setLastModifiedTime(arg0: java.nio.file.attribute.FileTime): java.util.zip.ZipEntry
@@ -32,22 +32,22 @@ declare namespace java {
         public getLastAccessTime(): java.nio.file.attribute.FileTime
         public setCreationTime(arg0: java.nio.file.attribute.FileTime): java.util.zip.ZipEntry
         public getCreationTime(): java.nio.file.attribute.FileTime
-        public setSize(arg0: long): void
-        public getSize(): long
-        public getCompressedSize(): long
-        public setCompressedSize(arg0: long): void
-        public setCrc(arg0: long): void
-        public getCrc(): long
-        public setMethod(arg0: int): void
-        public getMethod(): int
+        public setSize(arg0: number | java.lang.Long): void
+        public getSize(): number
+        public getCompressedSize(): number
+        public setCompressedSize(arg0: number | java.lang.Long): void
+        public setCrc(arg0: number | java.lang.Long): void
+        public getCrc(): number
+        public setMethod(arg0: number | java.lang.Integer): void
+        public getMethod(): number
         public setExtra(arg0: byte[]): void
-        setExtra0(arg0: byte[], arg1: boolean, arg2: boolean): void
-        public getExtra(): byte[]
-        public setComment(arg0: java.lang.String): void
+        setExtra0(arg0: byte[], arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
+        public getExtra(): number[]
+        public setComment(arg0: java.lang.String | string): void
         public getComment(): java.lang.String
         public isDirectory(): boolean
         public toString(): java.lang.String
-        public hashCode(): int
+        public hashCode(): number
         public clone(): java.lang.Object
       }
 

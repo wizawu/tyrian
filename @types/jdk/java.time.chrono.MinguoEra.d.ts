@@ -6,9 +6,9 @@ declare namespace java {
         public static readonly BEFORE_ROC: java.time.chrono.MinguoEra
         public static readonly ROC: java.time.chrono.MinguoEra
         public static values(): java.time.chrono.MinguoEra[]
-        public static valueOf(arg0: java.lang.String): java.time.chrono.MinguoEra
-        public static of(arg0: int): java.time.chrono.MinguoEra
-        public getValue(): int
+        public static valueOf(arg0: java.lang.String | string): java.time.chrono.MinguoEra
+        public static of(arg0: number | java.lang.Integer): java.time.chrono.MinguoEra
+        public getValue(): number
         public getDisplayName(arg0: java.time.format.TextStyle, arg1: java.util.Locale): java.lang.String
       }
 

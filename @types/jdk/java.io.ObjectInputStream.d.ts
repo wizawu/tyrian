@@ -9,34 +9,34 @@ declare namespace java {
       public readUnshared(): java.lang.Object
       public defaultReadObject(): void
       public readFields(): java.io.ObjectInputStream$GetField
-      public registerValidation(arg0: java.io.ObjectInputValidation, arg1: int): void
+      public registerValidation(arg0: java.io.ObjectInputValidation | java.io.ObjectInputValidation$$lambda, arg1: number | java.lang.Integer): void
       protected resolveClass(arg0: java.io.ObjectStreamClass): java.lang.Class<unknown>
       protected resolveProxyClass(arg0: java.lang.String[]): java.lang.Class<unknown>
-      protected resolveObject(arg0: java.lang.Object): java.lang.Object
-      protected enableResolveObject(arg0: boolean): boolean
+      protected resolveObject(arg0: java.lang.Object | any): java.lang.Object
+      protected enableResolveObject(arg0: boolean | java.lang.Boolean): boolean
       protected readStreamHeader(): void
       protected readClassDescriptor(): java.io.ObjectStreamClass
-      public read(): int
-      public read(arg0: byte[], arg1: int, arg2: int): int
-      public available(): int
+      public read(): number
+      public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public available(): number
       public close(): void
       public readBoolean(): boolean
-      public readByte(): byte
-      public readUnsignedByte(): int
-      public readChar(): char
-      public readShort(): short
-      public readUnsignedShort(): int
-      public readInt(): int
-      public readLong(): long
-      public readFloat(): float
-      public readDouble(): double
+      public readByte(): number
+      public readUnsignedByte(): number
+      public readChar(): string
+      public readShort(): number
+      public readUnsignedShort(): number
+      public readInt(): number
+      public readLong(): number
+      public readFloat(): number
+      public readDouble(): number
       public readFully(arg0: byte[]): void
-      public readFully(arg0: byte[], arg1: int, arg2: int): void
-      public skipBytes(arg0: int): int
+      public readFully(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public skipBytes(arg0: number | java.lang.Integer): number
       public readLine(): java.lang.String
       public readUTF(): java.lang.String
       public getObjectInputFilter(): java.io.ObjectInputFilter
-      public setObjectInputFilter(arg0: java.io.ObjectInputFilter): void
+      public setObjectInputFilter(arg0: java.io.ObjectInputFilter | java.io.ObjectInputFilter$$lambda): void
       readTypeString(): java.lang.String
     }
 

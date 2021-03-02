@@ -9,7 +9,7 @@ declare namespace java {
         public constructor()
         enqueue(arg0: java.lang.ref.Reference<T>): boolean
         public poll(): java.lang.ref.Reference<T>
-        public remove(arg0: long): java.lang.ref.Reference<T>
+        public remove(arg0: number | java.lang.Long): java.lang.ref.Reference<T>
         public remove(): java.lang.ref.Reference<T>
         forEach(arg0: java.util.function$.Consumer<unknown>): void
       }

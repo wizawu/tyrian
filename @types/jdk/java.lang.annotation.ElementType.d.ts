@@ -15,7 +15,7 @@ declare namespace java {
         public static readonly TYPE_USE: java.lang.annotation.ElementType
         public static readonly MODULE: java.lang.annotation.ElementType
         public static values(): java.lang.annotation.ElementType[]
-        public static valueOf(arg0: java.lang.String): java.lang.annotation.ElementType
+        public static valueOf(arg0: java.lang.String | string): java.lang.annotation.ElementType
       }
 
     }

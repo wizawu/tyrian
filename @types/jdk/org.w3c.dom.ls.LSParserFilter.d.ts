@@ -8,9 +8,9 @@ declare namespace org {
           public static readonly FILTER_REJECT: short
           public static readonly FILTER_SKIP: short
           public static readonly FILTER_INTERRUPT: short
-          startElement(arg0: org.w3c.dom.Element): short
-          acceptNode(arg0: org.w3c.dom.Node): short
-          getWhatToShow(): int
+          startElement(arg0: org.w3c.dom.Element): number
+          acceptNode(arg0: org.w3c.dom.Node): number
+          getWhatToShow(): number
         }
 
       }

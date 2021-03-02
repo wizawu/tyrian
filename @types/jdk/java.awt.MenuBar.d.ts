@@ -9,19 +9,19 @@ declare namespace java {
       public getHelpMenu(): java.awt.Menu
       public setHelpMenu(arg0: java.awt.Menu): void
       public add(arg0: java.awt.Menu): java.awt.Menu
-      public remove(arg0: int): void
+      public remove(arg0: number | java.lang.Integer): void
       public remove(arg0: java.awt.MenuComponent): void
-      public getMenuCount(): int
-      public countMenus(): int
-      getMenuCountImpl(): int
-      public getMenu(arg0: int): java.awt.Menu
-      getMenuImpl(arg0: int): java.awt.Menu
+      public getMenuCount(): number
+      public countMenus(): number
+      getMenuCountImpl(): number
+      public getMenu(arg0: number | java.lang.Integer): java.awt.Menu
+      getMenuImpl(arg0: number | java.lang.Integer): java.awt.Menu
       public shortcuts(): java.util.Enumeration<java.awt.MenuShortcut>
       public getShortcutMenuItem(arg0: java.awt.MenuShortcut): java.awt.MenuItem
       handleShortcut(arg0: java.awt.event.KeyEvent): boolean
       public deleteShortcut(arg0: java.awt.MenuShortcut): void
       public getAccessibleContext(): javax.accessibility.AccessibleContext
-      getAccessibleChildIndex(arg0: java.awt.MenuComponent): int
+      getAccessibleChildIndex(arg0: java.awt.MenuComponent): number
     }
 
   }

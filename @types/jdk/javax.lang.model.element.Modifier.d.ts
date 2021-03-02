@@ -17,7 +17,7 @@ declare namespace javax {
           public static readonly NATIVE: javax.lang.model.element.Modifier
           public static readonly STRICTFP: javax.lang.model.element.Modifier
           public static values(): javax.lang.model.element.Modifier[]
-          public static valueOf(arg0: java.lang.String): javax.lang.model.element.Modifier
+          public static valueOf(arg0: java.lang.String | string): javax.lang.model.element.Modifier
           public toString(): java.lang.String
         }
 

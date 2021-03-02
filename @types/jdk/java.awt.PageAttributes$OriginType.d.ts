@@ -5,7 +5,7 @@ declare namespace java {
       public static readonly PHYSICAL: java.awt.PageAttributes$OriginType
       public static readonly PRINTABLE: java.awt.PageAttributes$OriginType
       public toString(): java.lang.String
-      public hashCode(): int
+      public hashCode(): number
     }
 
   }

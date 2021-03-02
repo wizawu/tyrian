@@ -6,7 +6,7 @@ declare namespace java {
         hasUnsupportedCriticalExtension(): boolean
         getCriticalExtensionOIDs(): java.util.Set<java.lang.String>
         getNonCriticalExtensionOIDs(): java.util.Set<java.lang.String>
-        getExtensionValue(arg0: java.lang.String): byte[]
+        getExtensionValue(arg0: java.lang.String | string): number[]
       }
 
     }

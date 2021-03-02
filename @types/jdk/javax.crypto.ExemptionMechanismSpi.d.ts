@@ -3,12 +3,12 @@ declare namespace javax {
 
     abstract class ExemptionMechanismSpi {
       public constructor()
-      protected abstract engineGetOutputSize(arg0: int): int
+      protected abstract engineGetOutputSize(arg0: number | java.lang.Integer): number
       protected abstract engineInit(arg0: java.security.Key): void
       protected abstract engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
       protected abstract engineInit(arg0: java.security.Key, arg1: java.security.AlgorithmParameters): void
-      protected abstract engineGenExemptionBlob(): byte[]
-      protected abstract engineGenExemptionBlob(arg0: byte[], arg1: int): int
+      protected abstract engineGenExemptionBlob(): number[]
+      protected abstract engineGenExemptionBlob(arg0: byte[], arg1: number | java.lang.Integer): number
     }
 
   }

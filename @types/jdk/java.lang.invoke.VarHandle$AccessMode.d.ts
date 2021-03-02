@@ -38,10 +38,10 @@ declare namespace java {
         readonly methodName: java.lang.String
         readonly at: java.lang.invoke.VarHandle$AccessType
         public static values(): java.lang.invoke.VarHandle$AccessMode[]
-        public static valueOf(arg0: java.lang.String): java.lang.invoke.VarHandle$AccessMode
+        public static valueOf(arg0: java.lang.String | string): java.lang.invoke.VarHandle$AccessMode
         public methodName(): java.lang.String
-        public static valueFromMethodName(arg0: java.lang.String): java.lang.invoke.VarHandle$AccessMode
-        static getMemberName(arg0: int, arg1: java.lang.invoke.VarForm): java.lang.invoke.MemberName
+        public static valueFromMethodName(arg0: java.lang.String | string): java.lang.invoke.VarHandle$AccessMode
+        static getMemberName(arg0: number | java.lang.Integer, arg1: java.lang.invoke.VarForm): java.lang.invoke.MemberName
       }
 
     }

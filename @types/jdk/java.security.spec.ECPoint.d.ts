@@ -7,8 +7,8 @@ declare namespace java {
         public constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger)
         public getAffineX(): java.math.BigInteger
         public getAffineY(): java.math.BigInteger
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
       }
 
     }

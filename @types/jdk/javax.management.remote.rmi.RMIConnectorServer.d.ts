@@ -20,10 +20,10 @@ declare namespace javax {
           public getAddress(): javax.management.remote.JMXServiceURL
           public getAttributes(): java.util.Map<java.lang.String,unknown>
           public setMBeanServerForwarder(arg0: javax.management.remote.MBeanServerForwarder): void
-          protected connectionOpened(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object): void
-          protected connectionClosed(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object): void
-          protected connectionFailed(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object): void
-          bind(arg0: java.lang.String, arg1: java.util.Hashtable<unknown,unknown>, arg2: javax.management.remote.rmi.RMIServer, arg3: boolean): void
+          protected connectionOpened(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any): void
+          protected connectionClosed(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any): void
+          protected connectionFailed(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any): void
+          bind(arg0: java.lang.String | string, arg1: java.util.Hashtable<unknown,unknown>, arg2: javax.management.remote.rmi.RMIServer, arg3: boolean | java.lang.Boolean): void
           newServer(): javax.management.remote.rmi.RMIServerImpl
           static encodeStub(arg0: javax.management.remote.rmi.RMIServer, arg1: java.util.Map<java.lang.String,unknown>): java.lang.String
           static encodeJRMPStub(arg0: javax.management.remote.rmi.RMIServer, arg1: java.util.Map<java.lang.String,unknown>): java.lang.String

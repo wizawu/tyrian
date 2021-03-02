@@ -4,7 +4,7 @@ declare namespace javax {
 
       class CertificateExpiredException extends javax.security.cert.CertificateException {
         public constructor()
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

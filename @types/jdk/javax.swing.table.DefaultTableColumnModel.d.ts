@@ -13,21 +13,21 @@ declare namespace javax {
         public constructor()
         public addColumn(arg0: javax.swing.table.TableColumn): void
         public removeColumn(arg0: javax.swing.table.TableColumn): void
-        public moveColumn(arg0: int, arg1: int): void
-        public setColumnMargin(arg0: int): void
-        public getColumnCount(): int
+        public moveColumn(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        public setColumnMargin(arg0: number | java.lang.Integer): void
+        public getColumnCount(): number
         public getColumns(): java.util.Enumeration<javax.swing.table.TableColumn>
-        public getColumnIndex(arg0: java.lang.Object): int
-        public getColumn(arg0: int): javax.swing.table.TableColumn
-        public getColumnMargin(): int
-        public getColumnIndexAtX(arg0: int): int
-        public getTotalColumnWidth(): int
+        public getColumnIndex(arg0: java.lang.Object | any): number
+        public getColumn(arg0: number | java.lang.Integer): javax.swing.table.TableColumn
+        public getColumnMargin(): number
+        public getColumnIndexAtX(arg0: number | java.lang.Integer): number
+        public getTotalColumnWidth(): number
         public setSelectionModel(arg0: javax.swing.ListSelectionModel): void
         public getSelectionModel(): javax.swing.ListSelectionModel
-        public setColumnSelectionAllowed(arg0: boolean): void
+        public setColumnSelectionAllowed(arg0: boolean | java.lang.Boolean): void
         public getColumnSelectionAllowed(): boolean
-        public getSelectedColumns(): int[]
-        public getSelectedColumnCount(): int
+        public getSelectedColumns(): number[]
+        public getSelectedColumnCount(): number
         public addColumnModelListener(arg0: javax.swing.event.TableColumnModelListener): void
         public removeColumnModelListener(arg0: javax.swing.event.TableColumnModelListener): void
         public getColumnModelListeners(): javax.swing.event.TableColumnModelListener[]

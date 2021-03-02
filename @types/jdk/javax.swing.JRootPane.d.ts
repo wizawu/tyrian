@@ -18,9 +18,9 @@ declare namespace javax {
       protected defaultButton: javax.swing.JButton
       useTrueDoubleBuffering: boolean
       public constructor()
-      public setDoubleBuffered(arg0: boolean): void
-      public getWindowDecorationStyle(): int
-      public setWindowDecorationStyle(arg0: int): void
+      public setDoubleBuffered(arg0: boolean | java.lang.Boolean): void
+      public getWindowDecorationStyle(): number
+      public setWindowDecorationStyle(arg0: number | java.lang.Integer): void
       public getUI(): javax.swing.plaf.RootPaneUI
       public setUI(arg0: javax.swing.plaf.RootPaneUI): void
       public updateUI(): void
@@ -45,10 +45,10 @@ declare namespace javax {
       public removeNotify(): void
       public setDefaultButton(arg0: javax.swing.JButton): void
       public getDefaultButton(): javax.swing.JButton
-      setUseTrueDoubleBuffering(arg0: boolean): void
+      setUseTrueDoubleBuffering(arg0: boolean | java.lang.Boolean): void
       getUseTrueDoubleBuffering(): boolean
       disableTrueDoubleBuffering(): void
-      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
+      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI

@@ -6,7 +6,7 @@ declare namespace java {
       public static readonly TWO_SIDED_LONG_EDGE: java.awt.JobAttributes$SidesType
       public static readonly TWO_SIDED_SHORT_EDGE: java.awt.JobAttributes$SidesType
       public toString(): java.lang.String
-      public hashCode(): int
+      public hashCode(): number
     }
 
   }

@@ -28,29 +28,29 @@ declare namespace java {
         static readonly accept: java.util.regex.Pattern$Node
         static readonly lastAccept: java.util.regex.Pattern$Node
         static readonly $assertionsDisabled: boolean
-        public static compile(arg0: java.lang.String): java.util.regex.Pattern
-        public static compile(arg0: java.lang.String, arg1: int): java.util.regex.Pattern
+        public static compile(arg0: java.lang.String | string): java.util.regex.Pattern
+        public static compile(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.util.regex.Pattern
         public pattern(): java.lang.String
         public toString(): java.lang.String
         public matcher(arg0: java.lang.CharSequence): java.util.regex.Matcher
-        public flags(): int
-        public static matches(arg0: java.lang.String, arg1: java.lang.CharSequence): boolean
-        public split(arg0: java.lang.CharSequence, arg1: int): java.lang.String[]
+        public flags(): number
+        public static matches(arg0: java.lang.String | string, arg1: java.lang.CharSequence): boolean
+        public split(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer): java.lang.String[]
         public split(arg0: java.lang.CharSequence): java.lang.String[]
-        public static quote(arg0: java.lang.String): java.lang.String
+        public static quote(arg0: java.lang.String | string): java.lang.String
         namedGroups(): java.util.Map<java.lang.String,java.lang.Integer>
         static VertWS(): java.util.regex.Pattern$BmpCharPredicate
         static HorizWS(): java.util.regex.Pattern$BmpCharPredicate
         static ALL(): java.util.regex.Pattern$CharPredicate
         static DOT(): java.util.regex.Pattern$CharPredicate
         static UNIXDOT(): java.util.regex.Pattern$CharPredicate
-        static SingleS(arg0: int): java.util.regex.Pattern$CharPredicate
-        static Single(arg0: int): java.util.regex.Pattern$BmpCharPredicate
-        static SingleI(arg0: int, arg1: int): java.util.regex.Pattern$BmpCharPredicate
-        static SingleU(arg0: int): java.util.regex.Pattern$CharPredicate
-        static Range(arg0: int, arg1: int): java.util.regex.Pattern$CharPredicate
-        static CIRange(arg0: int, arg1: int): java.util.regex.Pattern$CharPredicate
-        static CIRangeU(arg0: int, arg1: int): java.util.regex.Pattern$CharPredicate
+        static SingleS(arg0: number | java.lang.Integer): java.util.regex.Pattern$CharPredicate
+        static Single(arg0: number | java.lang.Integer): java.util.regex.Pattern$BmpCharPredicate
+        static SingleI(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.regex.Pattern$BmpCharPredicate
+        static SingleU(arg0: number | java.lang.Integer): java.util.regex.Pattern$CharPredicate
+        static Range(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.regex.Pattern$CharPredicate
+        static CIRange(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.regex.Pattern$CharPredicate
+        static CIRangeU(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.regex.Pattern$CharPredicate
         public asPredicate(): java.util.function$.Predicate<java.lang.String>
         public asMatchPredicate(): java.util.function$.Predicate<java.lang.String>
         public splitAsStream(arg0: java.lang.CharSequence): java.util.stream.Stream<java.lang.String>

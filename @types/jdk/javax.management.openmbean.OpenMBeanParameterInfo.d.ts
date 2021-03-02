@@ -14,9 +14,9 @@ declare namespace javax {
         hasLegalValues(): boolean
         hasMinValue(): boolean
         hasMaxValue(): boolean
-        isValue(arg0: java.lang.Object): boolean
-        equals(arg0: java.lang.Object): boolean
-        hashCode(): int
+        isValue(arg0: java.lang.Object | any): boolean
+        equals(arg0: java.lang.Object | any): boolean
+        hashCode(): number
         toString(): java.lang.String
       }
 

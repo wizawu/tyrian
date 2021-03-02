@@ -6,23 +6,23 @@ declare namespace java {
       public constructor()
       public constructor(arg0: byte[])
       protected constructor(arg0: java.security.SecureRandomSpi, arg1: java.security.Provider)
-      public static getInstance(arg0: java.lang.String): java.security.SecureRandom
-      public static getInstance(arg0: java.lang.String, arg1: java.lang.String): java.security.SecureRandom
-      public static getInstance(arg0: java.lang.String, arg1: java.security.Provider): java.security.SecureRandom
-      public static getInstance(arg0: java.lang.String, arg1: java.security.SecureRandomParameters): java.security.SecureRandom
-      public static getInstance(arg0: java.lang.String, arg1: java.security.SecureRandomParameters, arg2: java.lang.String): java.security.SecureRandom
-      public static getInstance(arg0: java.lang.String, arg1: java.security.SecureRandomParameters, arg2: java.security.Provider): java.security.SecureRandom
+      public static getInstance(arg0: java.lang.String | string): java.security.SecureRandom
+      public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string): java.security.SecureRandom
+      public static getInstance(arg0: java.lang.String | string, arg1: java.security.Provider): java.security.SecureRandom
+      public static getInstance(arg0: java.lang.String | string, arg1: java.security.SecureRandomParameters): java.security.SecureRandom
+      public static getInstance(arg0: java.lang.String | string, arg1: java.security.SecureRandomParameters, arg2: java.lang.String | string): java.security.SecureRandom
+      public static getInstance(arg0: java.lang.String | string, arg1: java.security.SecureRandomParameters, arg2: java.security.Provider): java.security.SecureRandom
       public getProvider(): java.security.Provider
       public getAlgorithm(): java.lang.String
       public toString(): java.lang.String
       public getParameters(): java.security.SecureRandomParameters
       public setSeed(arg0: byte[]): void
-      public setSeed(arg0: long): void
+      public setSeed(arg0: number | java.lang.Long): void
       public nextBytes(arg0: byte[]): void
       public nextBytes(arg0: byte[], arg1: java.security.SecureRandomParameters): void
-      protected next(arg0: int): int
-      public static getSeed(arg0: int): byte[]
-      public generateSeed(arg0: int): byte[]
+      protected next(arg0: number | java.lang.Integer): number
+      public static getSeed(arg0: number | java.lang.Integer): number[]
+      public generateSeed(arg0: number | java.lang.Integer): number[]
       public static getInstanceStrong(): java.security.SecureRandom
       public reseed(): void
       public reseed(arg0: java.security.SecureRandomParameters): void

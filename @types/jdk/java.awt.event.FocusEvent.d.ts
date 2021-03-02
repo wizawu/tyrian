@@ -9,10 +9,10 @@ declare namespace java {
         public static readonly FOCUS_LOST: int
         temporary: boolean
         opposite: java.awt.Component
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: boolean, arg3: java.awt.Component)
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: boolean, arg3: java.awt.Component, arg4: java.awt.event.FocusEvent$Cause)
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: boolean)
-        public constructor(arg0: java.awt.Component, arg1: int)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean, arg3: java.awt.Component)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean, arg3: java.awt.Component, arg4: java.awt.event.FocusEvent$Cause)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer)
         public isTemporary(): boolean
         public getOppositeComponent(): java.awt.Component
         public paramString(): java.lang.String

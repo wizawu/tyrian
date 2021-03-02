@@ -15,7 +15,7 @@ declare namespace java {
         public static readonly PRIVILEGE_WITHDRAWN: java.security.cert.CRLReason
         public static readonly AA_COMPROMISE: java.security.cert.CRLReason
         public static values(): java.security.cert.CRLReason[]
-        public static valueOf(arg0: java.lang.String): java.security.cert.CRLReason
+        public static valueOf(arg0: java.lang.String | string): java.security.cert.CRLReason
       }
 
     }

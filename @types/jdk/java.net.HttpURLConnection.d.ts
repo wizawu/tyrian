@@ -46,21 +46,21 @@ declare namespace java {
       public static readonly HTTP_GATEWAY_TIMEOUT: int
       public static readonly HTTP_VERSION: int
       public setAuthenticator(arg0: java.net.Authenticator): void
-      public getHeaderFieldKey(arg0: int): java.lang.String
-      public setFixedLengthStreamingMode(arg0: int): void
-      public setFixedLengthStreamingMode(arg0: long): void
-      public setChunkedStreamingMode(arg0: int): void
-      public getHeaderField(arg0: int): java.lang.String
+      public getHeaderFieldKey(arg0: number | java.lang.Integer): java.lang.String
+      public setFixedLengthStreamingMode(arg0: number | java.lang.Integer): void
+      public setFixedLengthStreamingMode(arg0: number | java.lang.Long): void
+      public setChunkedStreamingMode(arg0: number | java.lang.Integer): void
+      public getHeaderField(arg0: number | java.lang.Integer): java.lang.String
       protected constructor(arg0: java.net.URL)
-      public static setFollowRedirects(arg0: boolean): void
+      public static setFollowRedirects(arg0: boolean | java.lang.Boolean): void
       public static getFollowRedirects(): boolean
-      public setInstanceFollowRedirects(arg0: boolean): void
+      public setInstanceFollowRedirects(arg0: boolean | java.lang.Boolean): void
       public getInstanceFollowRedirects(): boolean
-      public setRequestMethod(arg0: java.lang.String): void
+      public setRequestMethod(arg0: java.lang.String | string): void
       public getRequestMethod(): java.lang.String
-      public getResponseCode(): int
+      public getResponseCode(): number
       public getResponseMessage(): java.lang.String
-      public getHeaderFieldDate(arg0: java.lang.String, arg1: long): long
+      public getHeaderFieldDate(arg0: java.lang.String | string, arg1: number | java.lang.Long): number
       public abstract disconnect(): void
       public abstract usingProxy(): boolean
       public getPermission(): java.security.Permission

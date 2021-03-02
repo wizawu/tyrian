@@ -3,11 +3,11 @@ declare namespace javax {
     namespace event {
 
       interface IIOReadWarningListener$$lambda {
-        (arg0: javax.imageio.ImageReader, arg1: java.lang.String): void
+        (arg0: javax.imageio.ImageReader, arg1: java.lang.String | string): void
       }
 
       interface IIOReadWarningListener extends java.util.EventListener {
-        warningOccurred(arg0: javax.imageio.ImageReader, arg1: java.lang.String): void
+        warningOccurred(arg0: javax.imageio.ImageReader, arg1: java.lang.String | string): void
       }
 
     }

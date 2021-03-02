@@ -8,12 +8,12 @@ declare namespace org {
           public constructor(arg0: org.xml.sax.Locator)
           public getPublicId(): java.lang.String
           public getSystemId(): java.lang.String
-          public getLineNumber(): int
-          public getColumnNumber(): int
-          public setPublicId(arg0: java.lang.String): void
-          public setSystemId(arg0: java.lang.String): void
-          public setLineNumber(arg0: int): void
-          public setColumnNumber(arg0: int): void
+          public getLineNumber(): number
+          public getColumnNumber(): number
+          public setPublicId(arg0: java.lang.String | string): void
+          public setSystemId(arg0: java.lang.String | string): void
+          public setLineNumber(arg0: number | java.lang.Integer): void
+          public setColumnNumber(arg0: number | java.lang.Integer): void
         }
 
       }

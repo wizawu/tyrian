@@ -3,7 +3,7 @@ declare namespace java {
     namespace http {
 
       interface HttpResponse<T> {
-        statusCode(): int
+        statusCode(): number
         request(): java.net.http.HttpRequest
         previousResponse(): java.util.Optional<java.net.http.HttpResponse<T>>
         headers(): java.net.http.HttpHeaders

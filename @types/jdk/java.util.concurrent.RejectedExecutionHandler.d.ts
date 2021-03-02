@@ -3,11 +3,11 @@ declare namespace java {
     namespace concurrent {
 
       interface RejectedExecutionHandler$$lambda {
-        (arg0: java.lang.Runnable, arg1: java.util.concurrent.ThreadPoolExecutor): void
+        (arg0: java.lang.Runnable | java.lang.Runnable$$lambda, arg1: java.util.concurrent.ThreadPoolExecutor): void
       }
 
       interface RejectedExecutionHandler {
-        rejectedExecution(arg0: java.lang.Runnable, arg1: java.util.concurrent.ThreadPoolExecutor): void
+        rejectedExecution(arg0: java.lang.Runnable | java.lang.Runnable$$lambda, arg1: java.util.concurrent.ThreadPoolExecutor): void
       }
 
     }

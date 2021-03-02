@@ -9,10 +9,10 @@ declare namespace javax {
           static readonly PostDataProperty: java.lang.String
           public constructor(arg0: javax.swing.text.Element)
           protected createComponent(): java.awt.Component
-          public getMaximumSpan(arg0: int): float
+          public getMaximumSpan(arg0: number | java.lang.Integer): number
           public actionPerformed(arg0: java.awt.event.ActionEvent): void
-          protected submitData(arg0: java.lang.String): void
-          protected imageSubmit(arg0: java.lang.String): void
+          protected submitData(arg0: java.lang.String | string): void
+          protected imageSubmit(arg0: java.lang.String | string): void
           isLastTextOrPasswordField(): boolean
           resetForm(): void
         }

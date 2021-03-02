@@ -6,7 +6,7 @@ declare namespace java {
       public static readonly RANGE: java.awt.JobAttributes$DefaultSelectionType
       public static readonly SELECTION: java.awt.JobAttributes$DefaultSelectionType
       public toString(): java.lang.String
-      public hashCode(): int
+      public hashCode(): number
     }
 
   }

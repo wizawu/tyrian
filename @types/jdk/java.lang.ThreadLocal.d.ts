@@ -3,7 +3,7 @@ declare namespace java {
 
     class ThreadLocal<T> {
       protected initialValue(): T
-      public static withInitial<S>(arg0: java.util.function$.Supplier<S>): java.lang.ThreadLocal<S>
+      public static withInitial<S>(arg0: java.util.function$.Supplier<S> | java.util.function$.Supplier$$lambda<S>): java.lang.ThreadLocal<S>
       public constructor()
       public get(): T
       isPresent(): boolean

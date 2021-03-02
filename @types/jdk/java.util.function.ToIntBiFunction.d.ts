@@ -7,7 +7,7 @@ declare namespace java {
       }
 
       interface ToIntBiFunction<T,U> {
-        applyAsInt(arg0: T, arg1: U): int
+        applyAsInt(arg0: T, arg1: U): number
       }
 
     }

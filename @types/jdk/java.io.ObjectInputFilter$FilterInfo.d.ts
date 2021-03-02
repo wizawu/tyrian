@@ -3,10 +3,10 @@ declare namespace java {
 
     interface ObjectInputFilter$FilterInfo {
       serialClass(): java.lang.Class<unknown>
-      arrayLength(): long
-      depth(): long
-      references(): long
-      streamBytes(): long
+      arrayLength(): number
+      depth(): number
+      references(): number
+      streamBytes(): number
     }
 
   }

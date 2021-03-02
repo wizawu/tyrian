@@ -13,40 +13,40 @@ declare namespace javax {
         startRecording(): void
         stopRecording(): void
         isRecording(): boolean
-        recordEnable(arg0: javax.sound.midi.Track, arg1: int): void
+        recordEnable(arg0: javax.sound.midi.Track, arg1: number | java.lang.Integer): void
         recordDisable(arg0: javax.sound.midi.Track): void
-        getTempoInBPM(): float
-        setTempoInBPM(arg0: float): void
-        getTempoInMPQ(): float
-        setTempoInMPQ(arg0: float): void
-        setTempoFactor(arg0: float): void
-        getTempoFactor(): float
-        getTickLength(): long
-        getTickPosition(): long
-        setTickPosition(arg0: long): void
-        getMicrosecondLength(): long
-        getMicrosecondPosition(): long
-        setMicrosecondPosition(arg0: long): void
+        getTempoInBPM(): number
+        setTempoInBPM(arg0: number | java.lang.Float): void
+        getTempoInMPQ(): number
+        setTempoInMPQ(arg0: number | java.lang.Float): void
+        setTempoFactor(arg0: number | java.lang.Float): void
+        getTempoFactor(): number
+        getTickLength(): number
+        getTickPosition(): number
+        setTickPosition(arg0: number | java.lang.Long): void
+        getMicrosecondLength(): number
+        getMicrosecondPosition(): number
+        setMicrosecondPosition(arg0: number | java.lang.Long): void
         setMasterSyncMode(arg0: javax.sound.midi.Sequencer$SyncMode): void
         getMasterSyncMode(): javax.sound.midi.Sequencer$SyncMode
         getMasterSyncModes(): javax.sound.midi.Sequencer$SyncMode[]
         setSlaveSyncMode(arg0: javax.sound.midi.Sequencer$SyncMode): void
         getSlaveSyncMode(): javax.sound.midi.Sequencer$SyncMode
         getSlaveSyncModes(): javax.sound.midi.Sequencer$SyncMode[]
-        setTrackMute(arg0: int, arg1: boolean): void
-        getTrackMute(arg0: int): boolean
-        setTrackSolo(arg0: int, arg1: boolean): void
-        getTrackSolo(arg0: int): boolean
-        addMetaEventListener(arg0: javax.sound.midi.MetaEventListener): boolean
-        removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener): void
-        addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener, arg1: int[]): int[]
-        removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener, arg1: int[]): int[]
-        setLoopStartPoint(arg0: long): void
-        getLoopStartPoint(): long
-        setLoopEndPoint(arg0: long): void
-        getLoopEndPoint(): long
-        setLoopCount(arg0: int): void
-        getLoopCount(): int
+        setTrackMute(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
+        getTrackMute(arg0: number | java.lang.Integer): boolean
+        setTrackSolo(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
+        getTrackSolo(arg0: number | java.lang.Integer): boolean
+        addMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$lambda): boolean
+        removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$lambda): void
+        addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda, arg1: int[]): number[]
+        removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda, arg1: int[]): number[]
+        setLoopStartPoint(arg0: number | java.lang.Long): void
+        getLoopStartPoint(): number
+        setLoopEndPoint(arg0: number | java.lang.Long): void
+        getLoopEndPoint(): number
+        setLoopCount(arg0: number | java.lang.Integer): void
+        getLoopCount(): number
       }
 
     }

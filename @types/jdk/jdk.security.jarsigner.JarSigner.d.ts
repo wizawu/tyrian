@@ -8,7 +8,7 @@ declare namespace jdk {
         public getSignatureAlgorithm(): java.lang.String
         public getTsa(): java.net.URI
         public getSignerName(): java.lang.String
-        public getProperty(arg0: java.lang.String): java.lang.String
+        public getProperty(arg0: java.lang.String | string): java.lang.String
       }
 
     }

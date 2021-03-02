@@ -3,7 +3,7 @@ declare namespace java {
 
     class DrbgParameters$Reseed implements java.security.SecureRandomParameters {
       public getPredictionResistance(): boolean
-      public getAdditionalInput(): byte[]
+      public getAdditionalInput(): number[]
     }
 
   }

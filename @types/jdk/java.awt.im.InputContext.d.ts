@@ -8,7 +8,7 @@ declare namespace java {
         public selectInputMethod(arg0: java.util.Locale): boolean
         public getLocale(): java.util.Locale
         public setCharacterSubsets(arg0: java.lang.Character$Subset[]): void
-        public setCompositionEnabled(arg0: boolean): void
+        public setCompositionEnabled(arg0: boolean | java.lang.Boolean): void
         public isCompositionEnabled(): boolean
         public reconvert(): void
         public dispatchEvent(arg0: java.awt.AWTEvent): void

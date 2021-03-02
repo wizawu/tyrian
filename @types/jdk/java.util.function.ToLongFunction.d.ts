@@ -7,7 +7,7 @@ declare namespace java {
       }
 
       interface ToLongFunction<T> {
-        applyAsLong(arg0: T): long
+        applyAsLong(arg0: T): number
       }
 
     }

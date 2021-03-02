@@ -12,7 +12,7 @@ declare namespace com {
         public static readonly ATTACH_ON_DEMAND: com.sun.management.VMOption$Origin
         public static readonly OTHER: com.sun.management.VMOption$Origin
         public static values(): com.sun.management.VMOption$Origin[]
-        public static valueOf(arg0: java.lang.String): com.sun.management.VMOption$Origin
+        public static valueOf(arg0: java.lang.String | string): com.sun.management.VMOption$Origin
       }
 
     }

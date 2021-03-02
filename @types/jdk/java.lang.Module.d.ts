@@ -16,22 +16,22 @@ declare namespace java {
       implAddReads(arg0: java.lang.Module): void
       implAddReadsAllUnnamed(): void
       implAddReadsNoSync(arg0: java.lang.Module): void
-      public isExported(arg0: java.lang.String, arg1: java.lang.Module): boolean
-      public isOpen(arg0: java.lang.String, arg1: java.lang.Module): boolean
-      public isExported(arg0: java.lang.String): boolean
-      public isOpen(arg0: java.lang.String): boolean
-      isReflectivelyExported(arg0: java.lang.String, arg1: java.lang.Module): boolean
-      isReflectivelyOpened(arg0: java.lang.String, arg1: java.lang.Module): boolean
-      public addExports(arg0: java.lang.String, arg1: java.lang.Module): java.lang.Module
-      public addOpens(arg0: java.lang.String, arg1: java.lang.Module): java.lang.Module
-      implAddExports(arg0: java.lang.String): void
-      implAddExports(arg0: java.lang.String, arg1: java.lang.Module): void
-      implAddExportsToAllUnnamed(arg0: java.lang.String): void
-      implAddExportsNoSync(arg0: java.lang.String): void
-      implAddExportsNoSync(arg0: java.lang.String, arg1: java.lang.Module): void
-      implAddOpens(arg0: java.lang.String): void
-      implAddOpens(arg0: java.lang.String, arg1: java.lang.Module): void
-      implAddOpensToAllUnnamed(arg0: java.lang.String): void
+      public isExported(arg0: java.lang.String | string, arg1: java.lang.Module): boolean
+      public isOpen(arg0: java.lang.String | string, arg1: java.lang.Module): boolean
+      public isExported(arg0: java.lang.String | string): boolean
+      public isOpen(arg0: java.lang.String | string): boolean
+      isReflectivelyExported(arg0: java.lang.String | string, arg1: java.lang.Module): boolean
+      isReflectivelyOpened(arg0: java.lang.String | string, arg1: java.lang.Module): boolean
+      public addExports(arg0: java.lang.String | string, arg1: java.lang.Module): java.lang.Module
+      public addOpens(arg0: java.lang.String | string, arg1: java.lang.Module): java.lang.Module
+      implAddExports(arg0: java.lang.String | string): void
+      implAddExports(arg0: java.lang.String | string, arg1: java.lang.Module): void
+      implAddExportsToAllUnnamed(arg0: java.lang.String | string): void
+      implAddExportsNoSync(arg0: java.lang.String | string): void
+      implAddExportsNoSync(arg0: java.lang.String | string, arg1: java.lang.Module): void
+      implAddOpens(arg0: java.lang.String | string): void
+      implAddOpens(arg0: java.lang.String | string, arg1: java.lang.Module): void
+      implAddOpensToAllUnnamed(arg0: java.lang.String | string): void
       implAddOpensToAllUnnamed(arg0: java.util.Iterator<java.lang.String>): void
       public addUses(arg0: java.lang.Class<unknown>): java.lang.Module
       implAddUses(arg0: java.lang.Class<unknown>): void
@@ -41,7 +41,7 @@ declare namespace java {
       public getAnnotation<T extends java.lang.annotation.Annotation>(arg0: java.lang.Class<T>): T
       public getAnnotations(): java.lang.annotation.Annotation[]
       public getDeclaredAnnotations(): java.lang.annotation.Annotation[]
-      public getResourceAsStream(arg0: java.lang.String): java.io.InputStream
+      public getResourceAsStream(arg0: java.lang.String | string): java.io.InputStream
       public toString(): java.lang.String
     }
 

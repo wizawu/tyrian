@@ -17,8 +17,8 @@ declare namespace java {
       public static readonly SO_RCVBUF: int
       public static readonly SO_KEEPALIVE: int
       public static readonly SO_OOBINLINE: int
-      setOption(arg0: int, arg1: java.lang.Object): void
-      getOption(arg0: int): java.lang.Object
+      setOption(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): void
+      getOption(arg0: number | java.lang.Integer): java.lang.Object
     }
 
   }

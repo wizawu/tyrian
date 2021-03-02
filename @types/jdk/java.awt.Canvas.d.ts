@@ -10,8 +10,8 @@ declare namespace java {
       public paint(arg0: java.awt.Graphics): void
       public update(arg0: java.awt.Graphics): void
       postsOldMouseEvents(): boolean
-      public createBufferStrategy(arg0: int): void
-      public createBufferStrategy(arg0: int, arg1: java.awt.BufferCapabilities): void
+      public createBufferStrategy(arg0: number | java.lang.Integer): void
+      public createBufferStrategy(arg0: number | java.lang.Integer, arg1: java.awt.BufferCapabilities): void
       public getBufferStrategy(): java.awt.image.BufferStrategy
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }

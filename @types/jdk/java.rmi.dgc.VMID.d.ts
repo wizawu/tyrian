@@ -5,8 +5,8 @@ declare namespace java {
       class VMID implements java.io.Serializable {
         public constructor()
         public static isUnique(): boolean
-        public hashCode(): int
-        public equals(arg0: java.lang.Object): boolean
+        public hashCode(): number
+        public equals(arg0: java.lang.Object | any): boolean
         public toString(): java.lang.String
       }
 

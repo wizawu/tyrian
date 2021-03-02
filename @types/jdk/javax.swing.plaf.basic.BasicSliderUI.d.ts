@@ -45,10 +45,10 @@ declare namespace javax {
           protected installListeners(arg0: javax.swing.JSlider): void
           protected uninstallListeners(arg0: javax.swing.JSlider): void
           protected installKeyboardActions(arg0: javax.swing.JSlider): void
-          getInputMap(arg0: int, arg1: javax.swing.JSlider): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer, arg1: javax.swing.JSlider): javax.swing.InputMap
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
           protected uninstallKeyboardActions(arg0: javax.swing.JSlider): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           protected labelsHaveSameBaselines(): boolean
           public getPreferredHorizontalSize(): java.awt.Dimension
@@ -65,19 +65,19 @@ declare namespace javax {
           protected calculateThumbLocation(): void
           protected calculateTrackBuffer(): void
           protected calculateTrackRect(): void
-          protected getTickLength(): int
+          protected getTickLength(): number
           protected calculateTickRect(): void
           protected calculateLabelRect(): void
           protected getThumbSize(): java.awt.Dimension
-          protected getWidthOfWidestLabel(): int
-          protected getHeightOfTallestLabel(): int
-          protected getWidthOfHighValueLabel(): int
-          protected getWidthOfLowValueLabel(): int
-          protected getHeightOfHighValueLabel(): int
-          protected getHeightOfLowValueLabel(): int
+          protected getWidthOfWidestLabel(): number
+          protected getHeightOfTallestLabel(): number
+          protected getWidthOfHighValueLabel(): number
+          protected getWidthOfLowValueLabel(): number
+          protected getHeightOfHighValueLabel(): number
+          protected getHeightOfLowValueLabel(): number
           protected drawInverted(): boolean
-          protected getHighestValue(): java.lang.Integer
-          protected getLowestValue(): java.lang.Integer
+          protected getHighestValue(): number
+          protected getLowestValue(): number
           protected getLowestValueLabel(): java.awt.Component
           protected getHighestValueLabel(): java.awt.Component
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
@@ -86,23 +86,23 @@ declare namespace javax {
           public paintFocus(arg0: java.awt.Graphics): void
           public paintTrack(arg0: java.awt.Graphics): void
           public paintTicks(arg0: java.awt.Graphics): void
-          protected paintMinorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: int): void
-          protected paintMajorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: int): void
-          protected paintMinorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: int): void
-          protected paintMajorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: int): void
+          protected paintMinorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
+          protected paintMajorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
+          protected paintMinorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
+          protected paintMajorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
           public paintLabels(arg0: java.awt.Graphics): void
-          protected paintHorizontalLabel(arg0: java.awt.Graphics, arg1: int, arg2: java.awt.Component): void
-          protected paintVerticalLabel(arg0: java.awt.Graphics, arg1: int, arg2: java.awt.Component): void
+          protected paintHorizontalLabel(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: java.awt.Component): void
+          protected paintVerticalLabel(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: java.awt.Component): void
           public paintThumb(arg0: java.awt.Graphics): void
-          public setThumbLocation(arg0: int, arg1: int): void
-          public scrollByBlock(arg0: int): void
-          public scrollByUnit(arg0: int): void
-          protected scrollDueToClickInTrack(arg0: int): void
-          protected xPositionForValue(arg0: int): int
-          protected yPositionForValue(arg0: int): int
-          protected yPositionForValue(arg0: int, arg1: int, arg2: int): int
-          public valueForYPosition(arg0: int): int
-          public valueForXPosition(arg0: int): int
+          public setThumbLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+          public scrollByBlock(arg0: number | java.lang.Integer): void
+          public scrollByUnit(arg0: number | java.lang.Integer): void
+          protected scrollDueToClickInTrack(arg0: number | java.lang.Integer): void
+          protected xPositionForValue(arg0: number | java.lang.Integer): number
+          protected yPositionForValue(arg0: number | java.lang.Integer): number
+          protected yPositionForValue(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public valueForYPosition(arg0: number | java.lang.Integer): number
+          public valueForXPosition(arg0: number | java.lang.Integer): number
         }
 
       }

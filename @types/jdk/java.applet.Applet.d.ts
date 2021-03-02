@@ -8,22 +8,22 @@ declare namespace java {
       public isActive(): boolean
       public getDocumentBase(): java.net.URL
       public getCodeBase(): java.net.URL
-      public getParameter(arg0: java.lang.String): java.lang.String
+      public getParameter(arg0: java.lang.String | string): java.lang.String
       public getAppletContext(): java.applet.AppletContext
-      public resize(arg0: int, arg1: int): void
+      public resize(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public resize(arg0: java.awt.Dimension): void
       public isValidateRoot(): boolean
-      public showStatus(arg0: java.lang.String): void
+      public showStatus(arg0: java.lang.String | string): void
       public getImage(arg0: java.net.URL): java.awt.Image
-      public getImage(arg0: java.net.URL, arg1: java.lang.String): java.awt.Image
+      public getImage(arg0: java.net.URL, arg1: java.lang.String | string): java.awt.Image
       public static newAudioClip(arg0: java.net.URL): java.applet.AudioClip
       public getAudioClip(arg0: java.net.URL): java.applet.AudioClip
-      public getAudioClip(arg0: java.net.URL, arg1: java.lang.String): java.applet.AudioClip
+      public getAudioClip(arg0: java.net.URL, arg1: java.lang.String | string): java.applet.AudioClip
       public getAppletInfo(): java.lang.String
       public getLocale(): java.util.Locale
       public getParameterInfo(): java.lang.String[][]
       public play(arg0: java.net.URL): void
-      public play(arg0: java.net.URL, arg1: java.lang.String): void
+      public play(arg0: java.net.URL, arg1: java.lang.String | string): void
       public init(): void
       public start(): void
       public stop(): void

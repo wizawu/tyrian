@@ -5,7 +5,7 @@ declare namespace java {
       public static readonly COLOR: java.awt.PageAttributes$ColorType
       public static readonly MONOCHROME: java.awt.PageAttributes$ColorType
       public toString(): java.lang.String
-      public hashCode(): int
+      public hashCode(): number
     }
 
   }

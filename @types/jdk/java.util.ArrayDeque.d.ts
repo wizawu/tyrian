@@ -6,14 +6,14 @@ declare namespace java {
       head: int
       tail: int
       public constructor()
-      public constructor(arg0: int)
+      public constructor(arg0: number | java.lang.Integer)
       public constructor(arg0: java.util.Collection<E>)
-      static inc(arg0: int, arg1: int): int
-      static dec(arg0: int, arg1: int): int
-      static inc(arg0: int, arg1: int, arg2: int): int
-      static sub(arg0: int, arg1: int, arg2: int): int
-      static elementAt<E>(arg0: java.lang.Object[], arg1: int): E
-      static nonNullElementAt<E>(arg0: java.lang.Object[], arg1: int): E
+      static inc(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+      static dec(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+      static inc(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      static sub(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      static elementAt<E>(arg0: java.lang.Object[], arg1: number | java.lang.Integer): E
+      static nonNullElementAt<E>(arg0: java.lang.Object[], arg1: number | java.lang.Integer): E
       public addFirst(arg0: E): void
       public addLast(arg0: E): void
       public addAll(arg0: java.util.Collection<E>): boolean
@@ -27,8 +27,8 @@ declare namespace java {
       public getLast(): E
       public peekFirst(): E
       public peekLast(): E
-      public removeFirstOccurrence(arg0: java.lang.Object): boolean
-      public removeLastOccurrence(arg0: java.lang.Object): boolean
+      public removeFirstOccurrence(arg0: java.lang.Object | any): boolean
+      public removeLastOccurrence(arg0: java.lang.Object | any): boolean
       public add(arg0: E): boolean
       public offer(arg0: E): boolean
       public remove(): E
@@ -37,8 +37,8 @@ declare namespace java {
       public peek(): E
       public push(arg0: E): void
       public pop(): E
-      delete(arg0: int): boolean
-      public size(): int
+      delete(arg0: number | java.lang.Integer): boolean
+      public size(): number
       public isEmpty(): boolean
       public iterator(): java.util.Iterator<E>
       public descendingIterator(): java.util.Iterator<E>
@@ -47,8 +47,8 @@ declare namespace java {
       public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
       public removeAll(arg0: java.util.Collection<unknown>): boolean
       public retainAll(arg0: java.util.Collection<unknown>): boolean
-      public contains(arg0: java.lang.Object): boolean
-      public remove(arg0: java.lang.Object): boolean
+      public contains(arg0: java.lang.Object | any): boolean
+      public remove(arg0: java.lang.Object | any): boolean
       public clear(): void
       public toArray(): java.lang.Object[]
       public toArray<T>(arg0: T[]): T[]

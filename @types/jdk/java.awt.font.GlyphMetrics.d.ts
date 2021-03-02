@@ -8,15 +8,15 @@ declare namespace java {
         public static readonly COMBINING: byte
         public static readonly COMPONENT: byte
         public static readonly WHITESPACE: byte
-        public constructor(arg0: float, arg1: java.awt.geom.Rectangle2D, arg2: byte)
-        public constructor(arg0: boolean, arg1: float, arg2: float, arg3: java.awt.geom.Rectangle2D, arg4: byte)
-        public getAdvance(): float
-        public getAdvanceX(): float
-        public getAdvanceY(): float
+        public constructor(arg0: number | java.lang.Float, arg1: java.awt.geom.Rectangle2D, arg2: number | java.lang.Byte)
+        public constructor(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: java.awt.geom.Rectangle2D, arg4: number | java.lang.Byte)
+        public getAdvance(): number
+        public getAdvanceX(): number
+        public getAdvanceY(): number
         public getBounds2D(): java.awt.geom.Rectangle2D
-        public getLSB(): float
-        public getRSB(): float
-        public getType(): int
+        public getLSB(): number
+        public getRSB(): number
+        public getType(): number
         public isStandard(): boolean
         public isLigature(): boolean
         public isCombining(): boolean

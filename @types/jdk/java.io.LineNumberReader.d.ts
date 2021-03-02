@@ -3,14 +3,14 @@ declare namespace java {
 
     class LineNumberReader extends java.io.BufferedReader {
       public constructor(arg0: java.io.Reader)
-      public constructor(arg0: java.io.Reader, arg1: int)
-      public setLineNumber(arg0: int): void
-      public getLineNumber(): int
-      public read(): int
-      public read(arg0: char[], arg1: int, arg2: int): int
+      public constructor(arg0: java.io.Reader, arg1: number | java.lang.Integer)
+      public setLineNumber(arg0: number | java.lang.Integer): void
+      public getLineNumber(): number
+      public read(): number
+      public read(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public readLine(): java.lang.String
-      public skip(arg0: long): long
-      public mark(arg0: int): void
+      public skip(arg0: number | java.lang.Long): number
+      public mark(arg0: number | java.lang.Integer): void
       public reset(): void
     }
 

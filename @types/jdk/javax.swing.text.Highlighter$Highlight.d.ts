@@ -3,8 +3,8 @@ declare namespace javax {
     namespace text {
 
       interface Highlighter$Highlight {
-        getStartOffset(): int
-        getEndOffset(): int
+        getStartOffset(): number
+        getEndOffset(): number
         getPainter(): javax.swing.text.Highlighter$HighlightPainter
       }
 

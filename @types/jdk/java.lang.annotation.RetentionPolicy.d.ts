@@ -7,7 +7,7 @@ declare namespace java {
         public static readonly CLASS: java.lang.annotation.RetentionPolicy
         public static readonly RUNTIME: java.lang.annotation.RetentionPolicy
         public static values(): java.lang.annotation.RetentionPolicy[]
-        public static valueOf(arg0: java.lang.String): java.lang.annotation.RetentionPolicy
+        public static valueOf(arg0: java.lang.String | string): java.lang.annotation.RetentionPolicy
       }
 
     }

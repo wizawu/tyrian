@@ -6,9 +6,9 @@ declare namespace com {
         class AgentInitializationException extends java.lang.Exception {
           static readonly serialVersionUID: long
           public constructor()
-          public constructor(arg0: java.lang.String)
-          public constructor(arg0: java.lang.String, arg1: int)
-          public returnValue(): int
+          public constructor(arg0: java.lang.String | string)
+          public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
+          public returnValue(): number
         }
 
       }

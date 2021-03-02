@@ -10,11 +10,11 @@ declare namespace java {
         public static readonly SEG_QUADTO: int
         public static readonly SEG_CUBICTO: int
         public static readonly SEG_CLOSE: int
-        getWindingRule(): int
+        getWindingRule(): number
         isDone(): boolean
         next(): void
-        currentSegment(arg0: float[]): int
-        currentSegment(arg0: double[]): int
+        currentSegment(arg0: float[]): number
+        currentSegment(arg0: double[]): number
       }
 
     }

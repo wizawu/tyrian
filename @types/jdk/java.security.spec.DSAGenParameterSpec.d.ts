@@ -3,11 +3,11 @@ declare namespace java {
     namespace spec {
 
       class DSAGenParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-        public constructor(arg0: int, arg1: int)
-        public constructor(arg0: int, arg1: int, arg2: int)
-        public getPrimePLength(): int
-        public getSubprimeQLength(): int
-        public getSeedLength(): int
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public getPrimePLength(): number
+        public getSubprimeQLength(): number
+        public getSeedLength(): number
       }
 
     }

@@ -5,7 +5,7 @@ declare namespace javax {
 
         class AccountNotFoundException extends javax.security.auth.login.AccountException {
           public constructor()
-          public constructor(arg0: java.lang.String)
+          public constructor(arg0: java.lang.String | string)
         }
 
       }

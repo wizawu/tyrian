@@ -3,9 +3,9 @@ declare namespace com {
     namespace jdi {
 
       interface CharValue extends com.sun.jdi.PrimitiveValue, java.lang.Comparable<com.sun.jdi.CharValue> {
-        value(): char
-        equals(arg0: java.lang.Object): boolean
-        hashCode(): int
+        value(): string
+        equals(arg0: java.lang.Object | any): boolean
+        hashCode(): number
       }
 
     }

@@ -10,12 +10,12 @@ declare namespace javax {
         getTargetLineInfo(arg0: javax.sound.sampled.Line$Info): javax.sound.sampled.Line$Info[]
         isLineSupported(arg0: javax.sound.sampled.Line$Info): boolean
         getLine(arg0: javax.sound.sampled.Line$Info): javax.sound.sampled.Line
-        getMaxLines(arg0: javax.sound.sampled.Line$Info): int
+        getMaxLines(arg0: javax.sound.sampled.Line$Info): number
         getSourceLines(): javax.sound.sampled.Line[]
         getTargetLines(): javax.sound.sampled.Line[]
-        synchronize(arg0: javax.sound.sampled.Line[], arg1: boolean): void
+        synchronize(arg0: javax.sound.sampled.Line[], arg1: boolean | java.lang.Boolean): void
         unsynchronize(arg0: javax.sound.sampled.Line[]): void
-        isSynchronizationSupported(arg0: javax.sound.sampled.Line[], arg1: boolean): boolean
+        isSynchronizationSupported(arg0: javax.sound.sampled.Line[], arg1: boolean | java.lang.Boolean): boolean
       }
 
     }

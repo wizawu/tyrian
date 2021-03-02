@@ -6,7 +6,7 @@ declare namespace javax {
       protected resolvedObj: java.lang.Object
       protected remainingName: javax.naming.Name
       protected rootException: java.lang.Throwable
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
       public constructor()
       public getResolvedName(): javax.naming.Name
       public getRemainingName(): javax.naming.Name
@@ -14,15 +14,15 @@ declare namespace javax {
       public getExplanation(): java.lang.String
       public setResolvedName(arg0: javax.naming.Name): void
       public setRemainingName(arg0: javax.naming.Name): void
-      public setResolvedObj(arg0: java.lang.Object): void
-      public appendRemainingComponent(arg0: java.lang.String): void
+      public setResolvedObj(arg0: java.lang.Object | any): void
+      public appendRemainingComponent(arg0: java.lang.String | string): void
       public appendRemainingName(arg0: javax.naming.Name): void
       public getRootCause(): java.lang.Throwable
       public setRootCause(arg0: java.lang.Throwable): void
       public getCause(): java.lang.Throwable
       public initCause(arg0: java.lang.Throwable): java.lang.Throwable
       public toString(): java.lang.String
-      public toString(arg0: boolean): java.lang.String
+      public toString(arg0: boolean | java.lang.Boolean): java.lang.String
     }
 
   }

@@ -9,8 +9,8 @@ declare namespace jdk {
       protected changeMethodTypeInternal(arg0: java.lang.invoke.MethodType): jdk.dynalink.CallSiteDescriptor
       public changeOperation(arg0: jdk.dynalink.Operation): jdk.dynalink.CallSiteDescriptor
       protected changeOperationInternal(arg0: jdk.dynalink.Operation): jdk.dynalink.CallSiteDescriptor
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
       public toString(): java.lang.String
     }
 

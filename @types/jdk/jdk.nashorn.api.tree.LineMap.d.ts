@@ -4,8 +4,8 @@ declare namespace jdk {
       namespace tree {
 
         interface LineMap {
-          getLineNumber(arg0: long): long
-          getColumnNumber(arg0: long): long
+          getLineNumber(arg0: number | java.lang.Long): number
+          getColumnNumber(arg0: number | java.lang.Long): number
         }
 
       }

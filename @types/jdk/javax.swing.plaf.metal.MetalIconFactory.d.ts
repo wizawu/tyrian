@@ -12,11 +12,11 @@ declare namespace javax {
           public static getFileChooserListViewIcon(): javax.swing.Icon
           public static getFileChooserNewFolderIcon(): javax.swing.Icon
           public static getFileChooserUpFolderIcon(): javax.swing.Icon
-          public static getInternalFrameAltMaximizeIcon(arg0: int): javax.swing.Icon
-          public static getInternalFrameCloseIcon(arg0: int): javax.swing.Icon
+          public static getInternalFrameAltMaximizeIcon(arg0: number | java.lang.Integer): javax.swing.Icon
+          public static getInternalFrameCloseIcon(arg0: number | java.lang.Integer): javax.swing.Icon
           public static getInternalFrameDefaultMenuIcon(): javax.swing.Icon
-          public static getInternalFrameMaximizeIcon(arg0: int): javax.swing.Icon
-          public static getInternalFrameMinimizeIcon(arg0: int): javax.swing.Icon
+          public static getInternalFrameMaximizeIcon(arg0: number | java.lang.Integer): javax.swing.Icon
+          public static getInternalFrameMinimizeIcon(arg0: number | java.lang.Integer): javax.swing.Icon
           public static getRadioButtonIcon(): javax.swing.Icon
           public static getCheckBoxIcon(): javax.swing.Icon
           public static getTreeComputerIcon(): javax.swing.Icon
@@ -24,7 +24,7 @@ declare namespace javax {
           public static getTreeFolderIcon(): javax.swing.Icon
           public static getTreeHardDriveIcon(): javax.swing.Icon
           public static getTreeLeafIcon(): javax.swing.Icon
-          public static getTreeControlIcon(arg0: boolean): javax.swing.Icon
+          public static getTreeControlIcon(arg0: boolean | java.lang.Boolean): javax.swing.Icon
           public static getMenuArrowIcon(): javax.swing.Icon
           public static getMenuItemCheckIcon(): javax.swing.Icon
           public static getMenuItemArrowIcon(): javax.swing.Icon

@@ -7,16 +7,16 @@ declare namespace java {
       protected mark: int
       protected count: int
       public constructor(arg0: byte[])
-      public constructor(arg0: byte[], arg1: int, arg2: int)
-      public read(): int
-      public read(arg0: byte[], arg1: int, arg2: int): int
-      public readAllBytes(): byte[]
-      public readNBytes(arg0: byte[], arg1: int, arg2: int): int
-      public transferTo(arg0: java.io.OutputStream): long
-      public skip(arg0: long): long
-      public available(): int
+      public constructor(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public read(): number
+      public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public readAllBytes(): number[]
+      public readNBytes(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public transferTo(arg0: java.io.OutputStream): number
+      public skip(arg0: number | java.lang.Long): number
+      public available(): number
       public markSupported(): boolean
-      public mark(arg0: int): void
+      public mark(arg0: number | java.lang.Integer): void
       public reset(): void
       public close(): void
     }

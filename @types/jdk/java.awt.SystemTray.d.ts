@@ -8,9 +8,9 @@ declare namespace java {
       public remove(arg0: java.awt.TrayIcon): void
       public getTrayIcons(): java.awt.TrayIcon[]
       public getTrayIconSize(): java.awt.Dimension
-      public addPropertyChangeListener(arg0: java.lang.String, arg1: java.beans.PropertyChangeListener): void
-      public removePropertyChangeListener(arg0: java.lang.String, arg1: java.beans.PropertyChangeListener): void
-      public getPropertyChangeListeners(arg0: java.lang.String): java.beans.PropertyChangeListener[]
+      public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public getPropertyChangeListeners(arg0: java.lang.String | string): java.beans.PropertyChangeListener[]
       addNotify(): void
       static checkSystemTrayAllowed(): void
     }

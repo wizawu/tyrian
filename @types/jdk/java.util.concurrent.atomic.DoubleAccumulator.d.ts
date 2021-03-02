@@ -4,16 +4,16 @@ declare namespace java {
       namespace atomic {
 
         class DoubleAccumulator extends java.util.concurrent.atomic.Striped64 implements java.io.Serializable {
-          public constructor(arg0: java.util.function$.DoubleBinaryOperator, arg1: double)
-          public accumulate(arg0: double): void
-          public get(): double
+          public constructor(arg0: java.util.function$.DoubleBinaryOperator | java.util.function$.DoubleBinaryOperator$$lambda, arg1: number | java.lang.Double)
+          public accumulate(arg0: number | java.lang.Double): void
+          public get(): number
           public reset(): void
-          public getThenReset(): double
+          public getThenReset(): number
           public toString(): java.lang.String
-          public doubleValue(): double
-          public longValue(): long
-          public intValue(): int
-          public floatValue(): float
+          public doubleValue(): number
+          public longValue(): number
+          public intValue(): number
+          public floatValue(): number
         }
 
       }

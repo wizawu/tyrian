@@ -23,27 +23,27 @@ declare namespace java {
         static readonly MANDATED: int
         static readonly ACCESS_MODIFIERS: int
         public constructor()
-        public static isPublic(arg0: int): boolean
-        public static isPrivate(arg0: int): boolean
-        public static isProtected(arg0: int): boolean
-        public static isStatic(arg0: int): boolean
-        public static isFinal(arg0: int): boolean
-        public static isSynchronized(arg0: int): boolean
-        public static isVolatile(arg0: int): boolean
-        public static isTransient(arg0: int): boolean
-        public static isNative(arg0: int): boolean
-        public static isInterface(arg0: int): boolean
-        public static isAbstract(arg0: int): boolean
-        public static isStrict(arg0: int): boolean
-        public static toString(arg0: int): java.lang.String
-        static isSynthetic(arg0: int): boolean
-        static isMandated(arg0: int): boolean
-        public static classModifiers(): int
-        public static interfaceModifiers(): int
-        public static constructorModifiers(): int
-        public static methodModifiers(): int
-        public static fieldModifiers(): int
-        public static parameterModifiers(): int
+        public static isPublic(arg0: number | java.lang.Integer): boolean
+        public static isPrivate(arg0: number | java.lang.Integer): boolean
+        public static isProtected(arg0: number | java.lang.Integer): boolean
+        public static isStatic(arg0: number | java.lang.Integer): boolean
+        public static isFinal(arg0: number | java.lang.Integer): boolean
+        public static isSynchronized(arg0: number | java.lang.Integer): boolean
+        public static isVolatile(arg0: number | java.lang.Integer): boolean
+        public static isTransient(arg0: number | java.lang.Integer): boolean
+        public static isNative(arg0: number | java.lang.Integer): boolean
+        public static isInterface(arg0: number | java.lang.Integer): boolean
+        public static isAbstract(arg0: number | java.lang.Integer): boolean
+        public static isStrict(arg0: number | java.lang.Integer): boolean
+        public static toString(arg0: number | java.lang.Integer): java.lang.String
+        static isSynthetic(arg0: number | java.lang.Integer): boolean
+        static isMandated(arg0: number | java.lang.Integer): boolean
+        public static classModifiers(): number
+        public static interfaceModifiers(): number
+        public static constructorModifiers(): number
+        public static methodModifiers(): number
+        public static fieldModifiers(): number
+        public static parameterModifiers(): number
       }
 
     }

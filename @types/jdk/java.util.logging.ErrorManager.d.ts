@@ -10,7 +10,7 @@ declare namespace java {
         public static readonly OPEN_FAILURE: int
         public static readonly FORMAT_FAILURE: int
         public constructor()
-        public error(arg0: java.lang.String, arg1: java.lang.Exception, arg2: int): void
+        public error(arg0: java.lang.String | string, arg1: java.lang.Exception, arg2: number | java.lang.Integer): void
       }
 
     }

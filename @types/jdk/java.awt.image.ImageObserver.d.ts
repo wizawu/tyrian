@@ -3,7 +3,7 @@ declare namespace java {
     namespace image {
 
       interface ImageObserver$$lambda {
-        (arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): boolean
+        (arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): boolean
       }
 
       interface ImageObserver {
@@ -15,7 +15,7 @@ declare namespace java {
         public static readonly ALLBITS: int
         public static readonly ERROR: int
         public static readonly ABORT: int
-        imageUpdate(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): boolean
+        imageUpdate(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): boolean
       }
 
     }

@@ -27,7 +27,7 @@ declare namespace java {
       public static readonly BROWSE_FILE_DIR: java.awt.Desktop$Action
       public static readonly MOVE_TO_TRASH: java.awt.Desktop$Action
       public static values(): java.awt.Desktop$Action[]
-      public static valueOf(arg0: java.lang.String): java.awt.Desktop$Action
+      public static valueOf(arg0: java.lang.String | string): java.awt.Desktop$Action
     }
 
   }

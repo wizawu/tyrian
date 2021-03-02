@@ -9,12 +9,12 @@ declare namespace javax {
           public getAttributes(): javax.swing.text.AttributeSet
           protected setPropertiesFromAttributes(): void
           protected getStyleSheet(): javax.swing.text.html.StyleSheet
-          protected calculateMinorAxisRequirements(arg0: int, arg1: javax.swing.SizeRequirements): javax.swing.SizeRequirements
+          protected calculateMinorAxisRequirements(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements): javax.swing.SizeRequirements
           public isVisible(): boolean
           public paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void
-          public getPreferredSpan(arg0: int): float
-          public getMinimumSpan(arg0: int): float
-          public getMaximumSpan(arg0: int): float
+          public getPreferredSpan(arg0: number | java.lang.Integer): number
+          public getMinimumSpan(arg0: number | java.lang.Integer): number
+          public getMaximumSpan(arg0: number | java.lang.Integer): number
         }
 
       }

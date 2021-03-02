@@ -7,7 +7,7 @@ declare namespace javax {
       public static readonly CENTER: javax.swing.GroupLayout$Alignment
       public static readonly BASELINE: javax.swing.GroupLayout$Alignment
       public static values(): javax.swing.GroupLayout$Alignment[]
-      public static valueOf(arg0: java.lang.String): javax.swing.GroupLayout$Alignment
+      public static valueOf(arg0: java.lang.String | string): javax.swing.GroupLayout$Alignment
     }
 
   }

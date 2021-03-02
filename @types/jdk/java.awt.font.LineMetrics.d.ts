@@ -4,17 +4,17 @@ declare namespace java {
 
       abstract class LineMetrics {
         public constructor()
-        public abstract getNumChars(): int
-        public abstract getAscent(): float
-        public abstract getDescent(): float
-        public abstract getLeading(): float
-        public abstract getHeight(): float
-        public abstract getBaselineIndex(): int
-        public abstract getBaselineOffsets(): float[]
-        public abstract getStrikethroughOffset(): float
-        public abstract getStrikethroughThickness(): float
-        public abstract getUnderlineOffset(): float
-        public abstract getUnderlineThickness(): float
+        public abstract getNumChars(): number
+        public abstract getAscent(): number
+        public abstract getDescent(): number
+        public abstract getLeading(): number
+        public abstract getHeight(): number
+        public abstract getBaselineIndex(): number
+        public abstract getBaselineOffsets(): number[]
+        public abstract getStrikethroughOffset(): number
+        public abstract getStrikethroughThickness(): number
+        public abstract getUnderlineOffset(): number
+        public abstract getUnderlineThickness(): number
       }
 
     }

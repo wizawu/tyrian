@@ -15,24 +15,24 @@ declare namespace javax {
       public setLayout(arg0: java.awt.LayoutManager): void
       public setBorder(arg0: javax.swing.border.Border): void
       public getBorder(): javax.swing.border.Border
-      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
+      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       public remove(arg0: java.awt.Component): void
       public removeAll(): void
       protected isPaintingOrigin(): boolean
-      public paintImmediately(arg0: int, arg1: int, arg2: int, arg3: int): void
-      public imageUpdate(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): boolean
+      public paintImmediately(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public imageUpdate(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): boolean
       public paint(arg0: java.awt.Graphics): void
       protected paintComponent(arg0: java.awt.Graphics): void
       public isOptimizedDrawingEnabled(): boolean
       public propertyChange(arg0: java.beans.PropertyChangeEvent): void
-      public setLayerEventMask(arg0: long): void
-      public getLayerEventMask(): long
+      public setLayerEventMask(arg0: number | java.lang.Long): void
+      public getLayerEventMask(): number
       public updateUI(): void
       public getPreferredScrollableViewportSize(): java.awt.Dimension
-      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: int, arg2: int): int
+      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public getScrollableTracksViewportHeight(): boolean
       public getScrollableTracksViewportWidth(): boolean
-      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: int, arg2: int): int
+      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public addNotify(): void
       public removeNotify(): void
       public doLayout(): void

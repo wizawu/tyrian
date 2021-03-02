@@ -17,30 +17,30 @@ declare namespace javax {
           protected startAnimationTimer(): void
           protected stopAnimationTimer(): void
           protected uninstallListeners(): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           protected getPreferredInnerHorizontal(): java.awt.Dimension
           protected getPreferredInnerVertical(): java.awt.Dimension
           protected getSelectionForeground(): java.awt.Color
           protected getSelectionBackground(): java.awt.Color
-          protected getCellLength(): int
-          protected setCellLength(arg0: int): void
-          protected getCellSpacing(): int
-          protected setCellSpacing(arg0: int): void
-          protected getAmountFull(arg0: java.awt.Insets, arg1: int, arg2: int): int
+          protected getCellLength(): number
+          protected setCellLength(arg0: number | java.lang.Integer): void
+          protected getCellSpacing(): number
+          protected setCellSpacing(arg0: number | java.lang.Integer): void
+          protected getAmountFull(arg0: java.awt.Insets, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected getBox(arg0: java.awt.Rectangle): java.awt.Rectangle
-          protected getBoxLength(arg0: int, arg1: int): int
+          protected getBoxLength(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
           protected paintIndeterminate(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paintDeterminate(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
-          protected paintString(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: java.awt.Insets): void
-          protected getStringPlacement(arg0: java.awt.Graphics, arg1: java.lang.String, arg2: int, arg3: int, arg4: int, arg5: int): java.awt.Point
+          protected paintString(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: java.awt.Insets): void
+          protected getStringPlacement(arg0: java.awt.Graphics, arg1: java.lang.String | string, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): java.awt.Point
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          protected getAnimationIndex(): int
-          protected getFrameCount(): int
-          protected setAnimationIndex(arg0: int): void
+          protected getAnimationIndex(): number
+          protected getFrameCount(): number
+          protected setAnimationIndex(arg0: number | java.lang.Integer): void
           protected incrementAnimationIndex(): void
         }
 

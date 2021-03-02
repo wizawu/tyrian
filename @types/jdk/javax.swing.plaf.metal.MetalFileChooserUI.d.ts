@@ -29,10 +29,10 @@ declare namespace javax {
           public ensureFileIsVisible(arg0: javax.swing.JFileChooser, arg1: java.io.File): void
           public rescanCurrentDirectory(arg0: javax.swing.JFileChooser): void
           public getFileName(): java.lang.String
-          public setFileName(arg0: java.lang.String): void
-          protected setDirectorySelected(arg0: boolean): void
+          public setFileName(arg0: java.lang.String | string): void
+          protected setDirectorySelected(arg0: boolean | java.lang.Boolean): void
           public getDirectoryName(): java.lang.String
-          public setDirectoryName(arg0: java.lang.String): void
+          public setDirectoryName(arg0: java.lang.String | string): void
           protected createDirectoryComboBoxModel(arg0: javax.swing.JFileChooser): javax.swing.plaf.metal.MetalFileChooserUI$DirectoryComboBoxModel
           protected createFilterComboBoxRenderer(): javax.swing.plaf.metal.MetalFileChooserUI$FilterComboBoxRenderer
           protected createFilterComboBoxModel(): javax.swing.plaf.metal.MetalFileChooserUI$FilterComboBoxModel

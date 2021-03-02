@@ -41,19 +41,19 @@ declare namespace javax {
           protected createMenuKeyListener(arg0: javax.swing.JComponent): javax.swing.event.MenuKeyListener
           protected createPropertyChangeListener(arg0: javax.swing.JComponent): java.beans.PropertyChangeListener
           getHandler(): javax.swing.plaf.basic.BasicMenuItemUI$Handler
-          createInputMap(arg0: int): javax.swing.InputMap
+          createInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           updateAcceleratorBinding(): void
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          protected getPreferredMenuItemSize(arg0: javax.swing.JComponent, arg1: javax.swing.Icon, arg2: javax.swing.Icon, arg3: int): java.awt.Dimension
+          protected getPreferredMenuItemSize(arg0: javax.swing.JComponent, arg1: javax.swing.Icon, arg2: javax.swing.Icon, arg3: number | java.lang.Integer): java.awt.Dimension
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
-          protected paintMenuItem(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: javax.swing.Icon, arg3: javax.swing.Icon, arg4: java.awt.Color, arg5: java.awt.Color, arg6: int): void
+          protected paintMenuItem(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: javax.swing.Icon, arg3: javax.swing.Icon, arg4: java.awt.Color, arg5: java.awt.Color, arg6: number | java.lang.Integer): void
           protected paintBackground(arg0: java.awt.Graphics, arg1: javax.swing.JMenuItem, arg2: java.awt.Color): void
-          protected paintText(arg0: java.awt.Graphics, arg1: javax.swing.JMenuItem, arg2: java.awt.Rectangle, arg3: java.lang.String): void
+          protected paintText(arg0: java.awt.Graphics, arg1: javax.swing.JMenuItem, arg2: java.awt.Rectangle, arg3: java.lang.String | string): void
           public getPath(): javax.swing.MenuElement[]
-          printMenuElementArray(arg0: javax.swing.MenuElement[], arg1: boolean): void
+          printMenuElementArray(arg0: javax.swing.MenuElement[], arg1: boolean | java.lang.Boolean): void
           doNotCloseOnMouseClick(): boolean
           protected doClick(arg0: javax.swing.MenuSelectionManager): void
         }

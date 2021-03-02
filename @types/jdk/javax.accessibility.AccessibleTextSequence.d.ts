@@ -5,7 +5,7 @@ declare namespace javax {
       public startIndex: int
       public endIndex: int
       public text: java.lang.String
-      public constructor(arg0: int, arg1: int, arg2: java.lang.String)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.lang.String | string)
     }
 
   }

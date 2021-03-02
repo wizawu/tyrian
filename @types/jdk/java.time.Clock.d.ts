@@ -14,10 +14,10 @@ declare namespace java {
       protected constructor()
       public abstract getZone(): java.time.ZoneId
       public abstract withZone(arg0: java.time.ZoneId): java.time.Clock
-      public millis(): long
+      public millis(): number
       public abstract instant(): java.time.Instant
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
     }
 
   }

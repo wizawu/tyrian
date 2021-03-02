@@ -8,7 +8,7 @@ declare namespace javax {
         protected abstract engineGetSocketFactory(): javax.net.ssl.SSLSocketFactory
         protected abstract engineGetServerSocketFactory(): javax.net.ssl.SSLServerSocketFactory
         protected abstract engineCreateSSLEngine(): javax.net.ssl.SSLEngine
-        protected abstract engineCreateSSLEngine(arg0: java.lang.String, arg1: int): javax.net.ssl.SSLEngine
+        protected abstract engineCreateSSLEngine(arg0: java.lang.String | string, arg1: number | java.lang.Integer): javax.net.ssl.SSLEngine
         protected abstract engineGetServerSessionContext(): javax.net.ssl.SSLSessionContext
         protected abstract engineGetClientSessionContext(): javax.net.ssl.SSLSessionContext
         protected engineGetDefaultSSLParameters(): javax.net.ssl.SSLParameters

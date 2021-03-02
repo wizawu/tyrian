@@ -5,9 +5,9 @@ declare namespace javax {
       interface Xid {
         public static readonly MAXGTRIDSIZE: int
         public static readonly MAXBQUALSIZE: int
-        getFormatId(): int
-        getGlobalTransactionId(): byte[]
-        getBranchQualifier(): byte[]
+        getFormatId(): number
+        getGlobalTransactionId(): number[]
+        getBranchQualifier(): number[]
       }
 
     }

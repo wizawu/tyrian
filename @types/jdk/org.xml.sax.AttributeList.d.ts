@@ -3,12 +3,12 @@ declare namespace org {
     namespace sax {
 
       interface AttributeList {
-        getLength(): int
-        getName(arg0: int): java.lang.String
-        getType(arg0: int): java.lang.String
-        getValue(arg0: int): java.lang.String
-        getType(arg0: java.lang.String): java.lang.String
-        getValue(arg0: java.lang.String): java.lang.String
+        getLength(): number
+        getName(arg0: number | java.lang.Integer): java.lang.String
+        getType(arg0: number | java.lang.Integer): java.lang.String
+        getValue(arg0: number | java.lang.Integer): java.lang.String
+        getType(arg0: java.lang.String | string): java.lang.String
+        getValue(arg0: java.lang.String | string): java.lang.String
       }
 
     }

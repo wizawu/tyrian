@@ -8,8 +8,8 @@ declare namespace java {
       public constructor()
       public valid(): boolean
       public sync(): void
-      set(arg0: int): void
-      setHandle(arg0: long): void
+      set(arg0: number | java.lang.Integer): void
+      setHandle(arg0: number | java.lang.Long): void
       registerCleanup(arg0: jdk.internal.ref.PhantomCleanable<java.io.FileDescriptor>): void
       unregisterCleanup(): void
       close(): void

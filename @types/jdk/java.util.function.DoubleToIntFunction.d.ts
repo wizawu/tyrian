@@ -3,11 +3,11 @@ declare namespace java {
     namespace function$ {
 
       interface DoubleToIntFunction$$lambda {
-        (arg0: double): int
+        (arg0: number | java.lang.Double): int
       }
 
       interface DoubleToIntFunction {
-        applyAsInt(arg0: double): int
+        applyAsInt(arg0: number | java.lang.Double): number
       }
 
     }

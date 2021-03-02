@@ -15,7 +15,7 @@ declare namespace java {
         public static readonly ACTIVATION: java.awt.event.FocusEvent$Cause
         public static readonly CLEAR_GLOBAL_FOCUS_OWNER: java.awt.event.FocusEvent$Cause
         public static values(): java.awt.event.FocusEvent$Cause[]
-        public static valueOf(arg0: java.lang.String): java.awt.event.FocusEvent$Cause
+        public static valueOf(arg0: java.lang.String | string): java.awt.event.FocusEvent$Cause
       }
 
     }

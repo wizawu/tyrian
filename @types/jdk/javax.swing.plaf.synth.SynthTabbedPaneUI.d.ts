@@ -11,22 +11,22 @@ declare namespace javax {
           protected uninstallListeners(): void
           protected uninstallDefaults(): void
           public getContext(arg0: javax.swing.JComponent): javax.swing.plaf.synth.SynthContext
-          protected createScrollButton(arg0: int): javax.swing.JButton
+          protected createScrollButton(arg0: number | java.lang.Integer): javax.swing.JButton
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void
           protected createMouseListener(): java.awt.event.MouseListener
-          protected getTabLabelShiftX(arg0: int, arg1: int, arg2: boolean): int
-          protected getTabLabelShiftY(arg0: int, arg1: int, arg2: boolean): int
+          protected getTabLabelShiftX(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): number
+          protected getTabLabelShiftY(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): number
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
-          protected getBaseline(arg0: int): int
-          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
+          protected getBaseline(arg0: number | java.lang.Integer): number
+          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
-          protected paintTabArea(arg0: java.awt.Graphics, arg1: int, arg2: int): void
-          protected setRolloverTab(arg0: int): void
-          protected calculateMaxTabHeight(arg0: int): int
-          protected calculateTabWidth(arg0: int, arg1: int, arg2: java.awt.FontMetrics): int
-          protected calculateMaxTabWidth(arg0: int): int
-          protected getTabInsets(arg0: int, arg1: int): java.awt.Insets
+          protected paintTabArea(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+          protected setRolloverTab(arg0: number | java.lang.Integer): void
+          protected calculateMaxTabHeight(arg0: number | java.lang.Integer): number
+          protected calculateTabWidth(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.awt.FontMetrics): number
+          protected calculateMaxTabWidth(arg0: number | java.lang.Integer): number
+          protected getTabInsets(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.Insets
           protected getFontMetrics(): java.awt.FontMetrics
           protected createLayoutManager(): java.awt.LayoutManager
           static access$000(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): javax.swing.JTabbedPane
@@ -37,10 +37,10 @@ declare namespace javax {
           static access$500(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): javax.swing.JTabbedPane
           static access$600(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): javax.swing.JTabbedPane
           static access$700(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): javax.swing.JTabbedPane
-          static access$800(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): int
-          static access$900(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): int[]
-          static access$1000(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): int[]
-          static access$1100(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): int
+          static access$800(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): number
+          static access$900(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): number[]
+          static access$1000(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): number[]
+          static access$1100(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): number
           static access$1200(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): javax.swing.JTabbedPane
           static access$1300(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): java.awt.Rectangle[]
           static access$1400(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): java.awt.Rectangle[]

@@ -8,8 +8,8 @@ declare namespace java {
         public constructor(arg0: java.awt.geom.AffineTransform)
         public getTransform(): java.awt.geom.AffineTransform
         public isIdentity(): boolean
-        public hashCode(): int
-        public equals(arg0: java.lang.Object): boolean
+        public hashCode(): number
+        public equals(arg0: java.lang.Object | any): boolean
       }
 
     }

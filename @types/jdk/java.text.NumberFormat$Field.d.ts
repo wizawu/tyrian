@@ -13,7 +13,7 @@ declare namespace java {
       public static readonly PERMILLE: java.text.NumberFormat$Field
       public static readonly CURRENCY: java.text.NumberFormat$Field
       public static readonly EXPONENT_SIGN: java.text.NumberFormat$Field
-      protected constructor(arg0: java.lang.String)
+      protected constructor(arg0: java.lang.String | string)
       protected readResolve(): java.lang.Object
     }
 

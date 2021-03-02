@@ -10,7 +10,7 @@ declare namespace java {
         public static readonly SHA512: java.security.spec.MGF1ParameterSpec
         public static readonly SHA512_224: java.security.spec.MGF1ParameterSpec
         public static readonly SHA512_256: java.security.spec.MGF1ParameterSpec
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
         public getDigestAlgorithm(): java.lang.String
       }
 

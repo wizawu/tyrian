@@ -4,11 +4,11 @@ declare namespace com {
       namespace auth {
 
         class NTNumericCredential {
-          public constructor(arg0: long)
-          public getToken(): long
+          public constructor(arg0: number | java.lang.Long)
+          public getToken(): number
           public toString(): java.lang.String
-          public equals(arg0: java.lang.Object): boolean
-          public hashCode(): int
+          public equals(arg0: java.lang.Object | any): boolean
+          public hashCode(): number
         }
 
       }

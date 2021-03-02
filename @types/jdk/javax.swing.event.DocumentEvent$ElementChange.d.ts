@@ -4,7 +4,7 @@ declare namespace javax {
 
       interface DocumentEvent$ElementChange {
         getElement(): javax.swing.text.Element
-        getIndex(): int
+        getIndex(): number
         getChildrenRemoved(): javax.swing.text.Element[]
         getChildrenAdded(): javax.swing.text.Element[]
       }

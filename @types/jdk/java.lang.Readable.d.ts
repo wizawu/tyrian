@@ -6,7 +6,7 @@ declare namespace java {
     }
 
     interface Readable {
-      read(arg0: java.nio.CharBuffer): int
+      read(arg0: java.nio.CharBuffer): number
     }
 
   }

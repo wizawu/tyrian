@@ -9,10 +9,10 @@ declare namespace java {
         public static readonly BLUECOMPONENT: int
         constructor(arg0: sun.java2d.cmm.Profile)
         constructor(arg0: sun.java2d.cmm.ProfileDeferralInfo)
-        public getMediaWhitePoint(): float[]
-        public getMatrix(): float[][]
-        public getGamma(arg0: int): float
-        public getTRC(arg0: int): short[]
+        public getMediaWhitePoint(): number[]
+        public getMatrix(): number[][]
+        public getGamma(arg0: number | java.lang.Integer): number
+        public getTRC(arg0: number | java.lang.Integer): number[]
       }
 
     }

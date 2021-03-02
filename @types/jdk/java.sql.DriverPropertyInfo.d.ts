@@ -7,7 +7,7 @@ declare namespace java {
       public required: boolean
       public value: java.lang.String
       public choices: java.lang.String[]
-      public constructor(arg0: java.lang.String, arg1: java.lang.String)
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
     }
 
   }

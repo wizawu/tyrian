@@ -4,7 +4,7 @@ declare namespace java {
 
       interface WatchEvent<T> {
         kind(): java.nio.file.WatchEvent$Kind<T>
-        count(): int
+        count(): number
         context(): T
       }
 

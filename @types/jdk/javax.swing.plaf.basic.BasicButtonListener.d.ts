@@ -10,7 +10,7 @@ declare namespace javax {
           protected checkOpacity(arg0: javax.swing.AbstractButton): void
           public installKeyboardActions(arg0: javax.swing.JComponent): void
           public uninstallKeyboardActions(arg0: javax.swing.JComponent): void
-          getInputMap(arg0: int, arg1: javax.swing.JComponent): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer, arg1: javax.swing.JComponent): javax.swing.InputMap
           updateMnemonicBinding(arg0: javax.swing.AbstractButton): void
           public stateChanged(arg0: javax.swing.event.ChangeEvent): void
           public focusGained(arg0: java.awt.event.FocusEvent): void

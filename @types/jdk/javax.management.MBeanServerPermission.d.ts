@@ -3,15 +3,15 @@ declare namespace javax {
 
     class MBeanServerPermission extends java.security.BasicPermission {
       mask: int
-      public constructor(arg0: java.lang.String)
-      public constructor(arg0: java.lang.String, arg1: java.lang.String)
-      constructor(arg0: int)
-      static simplifyMask(arg0: int): int
-      static impliedMask(arg0: int): int
-      static getCanonicalName(arg0: int): java.lang.String
-      public hashCode(): int
+      public constructor(arg0: java.lang.String | string)
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
+      constructor(arg0: number | java.lang.Integer)
+      static simplifyMask(arg0: number | java.lang.Integer): number
+      static impliedMask(arg0: number | java.lang.Integer): number
+      static getCanonicalName(arg0: number | java.lang.Integer): java.lang.String
+      public hashCode(): number
       public implies(arg0: java.security.Permission): boolean
-      public equals(arg0: java.lang.Object): boolean
+      public equals(arg0: java.lang.Object | any): boolean
       public newPermissionCollection(): java.security.PermissionCollection
     }
 

@@ -5,8 +5,8 @@ declare namespace org {
       interface Locator {
         getPublicId(): java.lang.String
         getSystemId(): java.lang.String
-        getLineNumber(): int
-        getColumnNumber(): int
+        getLineNumber(): number
+        getColumnNumber(): number
       }
 
     }

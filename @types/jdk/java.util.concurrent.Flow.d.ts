@@ -4,7 +4,7 @@ declare namespace java {
 
       class Flow {
         static readonly DEFAULT_BUFFER_SIZE: int
-        public static defaultBufferSize(): int
+        public static defaultBufferSize(): number
       }
 
     }

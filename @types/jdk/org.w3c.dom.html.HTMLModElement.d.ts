@@ -5,9 +5,9 @@ declare namespace org {
 
         interface HTMLModElement extends org.w3c.dom.html.HTMLElement {
           getCite(): java.lang.String
-          setCite(arg0: java.lang.String): void
+          setCite(arg0: java.lang.String | string): void
           getDateTime(): java.lang.String
-          setDateTime(arg0: java.lang.String): void
+          setDateTime(arg0: java.lang.String | string): void
         }
 
       }

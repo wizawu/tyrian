@@ -11,7 +11,7 @@ declare namespace java {
         public getDragSource(): java.awt.dnd.DragSource
         public getComponent(): java.awt.Component
         public getTrigger(): java.awt.dnd.DragGestureEvent
-        public getSourceActions(): int
+        public getSourceActions(): number
         public setCursor(arg0: java.awt.Cursor): void
         public getCursor(): java.awt.Cursor
         public addDragSourceListener(arg0: java.awt.dnd.DragSourceListener): void
@@ -24,7 +24,7 @@ declare namespace java {
         public dragDropEnd(arg0: java.awt.dnd.DragSourceDropEvent): void
         public dragMouseMoved(arg0: java.awt.dnd.DragSourceDragEvent): void
         public getTransferable(): java.awt.datatransfer.Transferable
-        protected updateCurrentCursor(arg0: int, arg1: int, arg2: int): void
+        protected updateCurrentCursor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       }
 
     }

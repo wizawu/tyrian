@@ -6,8 +6,8 @@ declare namespace javax {
         isReadable(): boolean
         isWritable(): boolean
         isIs(): boolean
-        equals(arg0: java.lang.Object): boolean
-        hashCode(): int
+        equals(arg0: java.lang.Object | any): boolean
+        hashCode(): number
         toString(): java.lang.String
       }
 

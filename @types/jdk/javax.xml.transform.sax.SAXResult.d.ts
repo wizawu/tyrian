@@ -11,7 +11,7 @@ declare namespace javax {
           public getHandler(): org.xml.sax.ContentHandler
           public setLexicalHandler(arg0: org.xml.sax.ext.LexicalHandler): void
           public getLexicalHandler(): org.xml.sax.ext.LexicalHandler
-          public setSystemId(arg0: java.lang.String): void
+          public setSystemId(arg0: java.lang.String | string): void
           public getSystemId(): java.lang.String
         }
 

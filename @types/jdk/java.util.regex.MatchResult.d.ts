@@ -3,13 +3,13 @@ declare namespace java {
     namespace regex {
 
       interface MatchResult {
-        start(): int
-        start(arg0: int): int
-        end(): int
-        end(arg0: int): int
+        start(): number
+        start(arg0: number | java.lang.Integer): number
+        end(): number
+        end(arg0: number | java.lang.Integer): number
         group(): java.lang.String
-        group(arg0: int): java.lang.String
-        groupCount(): int
+        group(arg0: number | java.lang.Integer): java.lang.String
+        groupCount(): number
       }
 
     }

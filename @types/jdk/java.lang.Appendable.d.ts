@@ -3,8 +3,8 @@ declare namespace java {
 
     interface Appendable {
       append(arg0: java.lang.CharSequence): java.lang.Appendable
-      append(arg0: java.lang.CharSequence, arg1: int, arg2: int): java.lang.Appendable
-      append(arg0: char): java.lang.Appendable
+      append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.Appendable
+      append(arg0: string | java.lang.Character): java.lang.Appendable
     }
 
   }

@@ -8,13 +8,13 @@ declare namespace javax {
         protected constructor()
         public static newDefaultInstance(): javax.xml.xpath.XPathFactory
         public static newInstance(): javax.xml.xpath.XPathFactory
-        public static newInstance(arg0: java.lang.String): javax.xml.xpath.XPathFactory
-        public static newInstance(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.ClassLoader): javax.xml.xpath.XPathFactory
-        public abstract isObjectModelSupported(arg0: java.lang.String): boolean
-        public abstract setFeature(arg0: java.lang.String, arg1: boolean): void
-        public abstract getFeature(arg0: java.lang.String): boolean
-        public abstract setXPathVariableResolver(arg0: javax.xml.xpath.XPathVariableResolver): void
-        public abstract setXPathFunctionResolver(arg0: javax.xml.xpath.XPathFunctionResolver): void
+        public static newInstance(arg0: java.lang.String | string): javax.xml.xpath.XPathFactory
+        public static newInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.ClassLoader): javax.xml.xpath.XPathFactory
+        public abstract isObjectModelSupported(arg0: java.lang.String | string): boolean
+        public abstract setFeature(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): void
+        public abstract getFeature(arg0: java.lang.String | string): boolean
+        public abstract setXPathVariableResolver(arg0: javax.xml.xpath.XPathVariableResolver | javax.xml.xpath.XPathVariableResolver$$lambda): void
+        public abstract setXPathFunctionResolver(arg0: javax.xml.xpath.XPathFunctionResolver | javax.xml.xpath.XPathFunctionResolver$$lambda): void
         public abstract newXPath(): javax.xml.xpath.XPath
       }
 

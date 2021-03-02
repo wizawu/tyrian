@@ -8,12 +8,12 @@ declare namespace javax {
       public setSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
       public addSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
       public removeSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
-      public setSelectionMode(arg0: int): void
-      public setRowMapper(arg0: javax.swing.tree.RowMapper): void
-      public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
-      public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener): void
-      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-      public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+      public setSelectionMode(arg0: number | java.lang.Integer): void
+      public setRowMapper(arg0: javax.swing.tree.RowMapper | javax.swing.tree.RowMapper$$lambda): void
+      public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
+      public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
+      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
     }
 
   }

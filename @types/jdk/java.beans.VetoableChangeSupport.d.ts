@@ -3,18 +3,18 @@ declare namespace java {
 
     class VetoableChangeSupport implements java.io.Serializable {
       static readonly serialVersionUID: long
-      public constructor(arg0: java.lang.Object)
-      public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
-      public removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void
+      public constructor(arg0: java.lang.Object | any)
+      public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda): void
+      public removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda): void
       public getVetoableChangeListeners(): java.beans.VetoableChangeListener[]
-      public addVetoableChangeListener(arg0: java.lang.String, arg1: java.beans.VetoableChangeListener): void
-      public removeVetoableChangeListener(arg0: java.lang.String, arg1: java.beans.VetoableChangeListener): void
-      public getVetoableChangeListeners(arg0: java.lang.String): java.beans.VetoableChangeListener[]
-      public fireVetoableChange(arg0: java.lang.String, arg1: java.lang.Object, arg2: java.lang.Object): void
-      public fireVetoableChange(arg0: java.lang.String, arg1: int, arg2: int): void
-      public fireVetoableChange(arg0: java.lang.String, arg1: boolean, arg2: boolean): void
+      public addVetoableChangeListener(arg0: java.lang.String | string, arg1: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda): void
+      public removeVetoableChangeListener(arg0: java.lang.String | string, arg1: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda): void
+      public getVetoableChangeListeners(arg0: java.lang.String | string): java.beans.VetoableChangeListener[]
+      public fireVetoableChange(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
+      public fireVetoableChange(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public fireVetoableChange(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
       public fireVetoableChange(arg0: java.beans.PropertyChangeEvent): void
-      public hasListeners(arg0: java.lang.String): boolean
+      public hasListeners(arg0: java.lang.String | string): boolean
     }
 
   }

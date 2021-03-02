@@ -20,9 +20,9 @@ declare namespace java {
       public static readonly HOUR1: java.text.DateFormat$Field
       public static readonly HOUR0: java.text.DateFormat$Field
       public static readonly TIME_ZONE: java.text.DateFormat$Field
-      public static ofCalendarField(arg0: int): java.text.DateFormat$Field
-      protected constructor(arg0: java.lang.String, arg1: int)
-      public getCalendarField(): int
+      public static ofCalendarField(arg0: number | java.lang.Integer): java.text.DateFormat$Field
+      protected constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
+      public getCalendarField(): number
       protected readResolve(): java.lang.Object
     }
 

@@ -9,12 +9,12 @@ declare namespace java {
         public static readonly SELECTED_RAW_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
         public static readonly UNSELECTED_CONVERTED_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
         public static readonly SELECTED_CONVERTED_TEXT_HIGHLIGHT: java.awt.im.InputMethodHighlight
-        public constructor(arg0: boolean, arg1: int)
-        public constructor(arg0: boolean, arg1: int, arg2: int)
-        public constructor(arg0: boolean, arg1: int, arg2: int, arg3: java.util.Map<java.awt.font.TextAttribute,unknown>)
+        public constructor(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer)
+        public constructor(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.util.Map<java.awt.font.TextAttribute,unknown>)
         public isSelected(): boolean
-        public getState(): int
-        public getVariation(): int
+        public getState(): number
+        public getVariation(): number
         public getStyle(): java.util.Map<java.awt.font.TextAttribute,unknown>
       }
 

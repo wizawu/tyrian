@@ -15,18 +15,18 @@ declare namespace javax {
       protected constructor()
       public setSourceRegion(arg0: java.awt.Rectangle): void
       public getSourceRegion(): java.awt.Rectangle
-      public setSourceSubsampling(arg0: int, arg1: int, arg2: int, arg3: int): void
-      public getSourceXSubsampling(): int
-      public getSourceYSubsampling(): int
-      public getSubsamplingXOffset(): int
-      public getSubsamplingYOffset(): int
+      public setSourceSubsampling(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public getSourceXSubsampling(): number
+      public getSourceYSubsampling(): number
+      public getSubsamplingXOffset(): number
+      public getSubsamplingYOffset(): number
       public setSourceBands(arg0: int[]): void
-      public getSourceBands(): int[]
+      public getSourceBands(): number[]
       public setDestinationType(arg0: javax.imageio.ImageTypeSpecifier): void
       public getDestinationType(): javax.imageio.ImageTypeSpecifier
       public setDestinationOffset(arg0: java.awt.Point): void
       public getDestinationOffset(): java.awt.Point
-      public setController(arg0: javax.imageio.IIOParamController): void
+      public setController(arg0: javax.imageio.IIOParamController | javax.imageio.IIOParamController$$lambda): void
       public getController(): javax.imageio.IIOParamController
       public getDefaultController(): javax.imageio.IIOParamController
       public hasController(): boolean

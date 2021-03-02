@@ -10,7 +10,7 @@ declare namespace javax {
       public getFirstComponent(arg0: java.awt.Container): java.awt.Component
       public getLastComponent(arg0: java.awt.Container): java.awt.Component
       public getDefaultComponent(arg0: java.awt.Container): java.awt.Component
-      public setImplicitDownCycleTraversal(arg0: boolean): void
+      public setImplicitDownCycleTraversal(arg0: boolean | java.lang.Boolean): void
       public getImplicitDownCycleTraversal(): boolean
       protected setComparator(arg0: java.util.Comparator<unknown>): void
       protected getComparator(): java.util.Comparator<unknown>

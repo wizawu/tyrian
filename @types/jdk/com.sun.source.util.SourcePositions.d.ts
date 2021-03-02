@@ -4,8 +4,8 @@ declare namespace com {
       namespace util {
 
         interface SourcePositions {
-          getStartPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.tree.Tree): long
-          getEndPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.tree.Tree): long
+          getStartPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.tree.Tree): number
+          getEndPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.tree.Tree): number
         }
 
       }

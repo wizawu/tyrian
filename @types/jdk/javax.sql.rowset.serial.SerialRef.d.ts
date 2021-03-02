@@ -9,9 +9,9 @@ declare namespace javax {
           public getBaseTypeName(): java.lang.String
           public getObject(arg0: java.util.Map<java.lang.String,java.lang.Class<unknown>>): java.lang.Object
           public getObject(): java.lang.Object
-          public setObject(arg0: java.lang.Object): void
-          public equals(arg0: java.lang.Object): boolean
-          public hashCode(): int
+          public setObject(arg0: java.lang.Object | any): void
+          public equals(arg0: java.lang.Object | any): boolean
+          public hashCode(): number
           public clone(): java.lang.Object
         }
 

@@ -11,9 +11,9 @@ declare namespace com {
             protected groups: long[]
             public constructor()
             public getUsername(): java.lang.String
-            public getUid(): long
-            public getGid(): long
-            public getGroups(): long[]
+            public getUid(): number
+            public getGid(): number
+            public getGroups(): number[]
           }
 
         }

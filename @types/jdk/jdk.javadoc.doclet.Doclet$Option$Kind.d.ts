@@ -7,7 +7,7 @@ declare namespace jdk {
         public static readonly STANDARD: jdk.javadoc.doclet.Doclet$Option$Kind
         public static readonly OTHER: jdk.javadoc.doclet.Doclet$Option$Kind
         public static values(): jdk.javadoc.doclet.Doclet$Option$Kind[]
-        public static valueOf(arg0: java.lang.String): jdk.javadoc.doclet.Doclet$Option$Kind
+        public static valueOf(arg0: java.lang.String | string): jdk.javadoc.doclet.Doclet$Option$Kind
       }
 
     }

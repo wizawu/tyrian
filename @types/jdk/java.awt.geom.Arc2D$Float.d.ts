@@ -10,20 +10,20 @@ declare namespace java {
         public start: float
         public extent: float
         public constructor()
-        public constructor(arg0: int)
-        public constructor(arg0: float, arg1: float, arg2: float, arg3: float, arg4: float, arg5: float, arg6: int)
-        public constructor(arg0: java.awt.geom.Rectangle2D, arg1: float, arg2: float, arg3: int)
-        public getX(): double
-        public getY(): double
-        public getWidth(): double
-        public getHeight(): double
-        public getAngleStart(): double
-        public getAngleExtent(): double
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float, arg4: number | java.lang.Float, arg5: number | java.lang.Float, arg6: number | java.lang.Integer)
+        public constructor(arg0: java.awt.geom.Rectangle2D, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Integer)
+        public getX(): number
+        public getY(): number
+        public getWidth(): number
+        public getHeight(): number
+        public getAngleStart(): number
+        public getAngleExtent(): number
         public isEmpty(): boolean
-        public setArc(arg0: double, arg1: double, arg2: double, arg3: double, arg4: double, arg5: double, arg6: int): void
-        public setAngleStart(arg0: double): void
-        public setAngleExtent(arg0: double): void
-        protected makeBounds(arg0: double, arg1: double, arg2: double, arg3: double): java.awt.geom.Rectangle2D
+        public setArc(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double, arg6: number | java.lang.Integer): void
+        public setAngleStart(arg0: number | java.lang.Double): void
+        public setAngleExtent(arg0: number | java.lang.Double): void
+        protected makeBounds(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): java.awt.geom.Rectangle2D
       }
 
     }

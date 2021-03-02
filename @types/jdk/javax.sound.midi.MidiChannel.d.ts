@@ -3,31 +3,31 @@ declare namespace javax {
     namespace midi {
 
       interface MidiChannel {
-        noteOn(arg0: int, arg1: int): void
-        noteOff(arg0: int, arg1: int): void
-        noteOff(arg0: int): void
-        setPolyPressure(arg0: int, arg1: int): void
-        getPolyPressure(arg0: int): int
-        setChannelPressure(arg0: int): void
-        getChannelPressure(): int
-        controlChange(arg0: int, arg1: int): void
-        getController(arg0: int): int
-        programChange(arg0: int): void
-        programChange(arg0: int, arg1: int): void
-        getProgram(): int
-        setPitchBend(arg0: int): void
-        getPitchBend(): int
+        noteOn(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        noteOff(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        noteOff(arg0: number | java.lang.Integer): void
+        setPolyPressure(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        getPolyPressure(arg0: number | java.lang.Integer): number
+        setChannelPressure(arg0: number | java.lang.Integer): void
+        getChannelPressure(): number
+        controlChange(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        getController(arg0: number | java.lang.Integer): number
+        programChange(arg0: number | java.lang.Integer): void
+        programChange(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        getProgram(): number
+        setPitchBend(arg0: number | java.lang.Integer): void
+        getPitchBend(): number
         resetAllControllers(): void
         allNotesOff(): void
         allSoundOff(): void
-        localControl(arg0: boolean): boolean
-        setMono(arg0: boolean): void
+        localControl(arg0: boolean | java.lang.Boolean): boolean
+        setMono(arg0: boolean | java.lang.Boolean): void
         getMono(): boolean
-        setOmni(arg0: boolean): void
+        setOmni(arg0: boolean | java.lang.Boolean): void
         getOmni(): boolean
-        setMute(arg0: boolean): void
+        setMute(arg0: boolean | java.lang.Boolean): void
         getMute(): boolean
-        setSolo(arg0: boolean): void
+        setSolo(arg0: boolean | java.lang.Boolean): void
         getSolo(): boolean
       }
 

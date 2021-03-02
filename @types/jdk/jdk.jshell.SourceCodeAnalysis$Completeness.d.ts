@@ -9,7 +9,7 @@ declare namespace jdk {
       public static readonly EMPTY: jdk.jshell.SourceCodeAnalysis$Completeness
       public static readonly UNKNOWN: jdk.jshell.SourceCodeAnalysis$Completeness
       public static values(): jdk.jshell.SourceCodeAnalysis$Completeness[]
-      public static valueOf(arg0: java.lang.String): jdk.jshell.SourceCodeAnalysis$Completeness
+      public static valueOf(arg0: java.lang.String | string): jdk.jshell.SourceCodeAnalysis$Completeness
       public isComplete(): boolean
     }
 

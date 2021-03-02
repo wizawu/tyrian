@@ -8,7 +8,7 @@ declare namespace java {
         public static readonly REMOTE: java.awt.desktop.UserSessionEvent$Reason
         public static readonly LOCK: java.awt.desktop.UserSessionEvent$Reason
         public static values(): java.awt.desktop.UserSessionEvent$Reason[]
-        public static valueOf(arg0: java.lang.String): java.awt.desktop.UserSessionEvent$Reason
+        public static valueOf(arg0: java.lang.String | string): java.awt.desktop.UserSessionEvent$Reason
       }
 
     }

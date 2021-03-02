@@ -4,7 +4,7 @@ declare namespace java {
     interface SQLType {
       getName(): java.lang.String
       getVendor(): java.lang.String
-      getVendorTypeNumber(): java.lang.Integer
+      getVendorTypeNumber(): number
     }
 
   }

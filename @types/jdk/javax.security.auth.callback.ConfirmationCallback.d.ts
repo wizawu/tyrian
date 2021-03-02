@@ -15,17 +15,17 @@ declare namespace javax {
           public static readonly INFORMATION: int
           public static readonly WARNING: int
           public static readonly ERROR: int
-          public constructor(arg0: int, arg1: int, arg2: int)
-          public constructor(arg0: int, arg1: java.lang.String[], arg2: int)
-          public constructor(arg0: java.lang.String, arg1: int, arg2: int, arg3: int)
-          public constructor(arg0: java.lang.String, arg1: int, arg2: java.lang.String[], arg3: int)
+          public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+          public constructor(arg0: number | java.lang.Integer, arg1: java.lang.String[], arg2: number | java.lang.Integer)
+          public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+          public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.lang.String[], arg3: number | java.lang.Integer)
           public getPrompt(): java.lang.String
-          public getMessageType(): int
-          public getOptionType(): int
+          public getMessageType(): number
+          public getOptionType(): number
           public getOptions(): java.lang.String[]
-          public getDefaultOption(): int
-          public setSelectedIndex(arg0: int): void
-          public getSelectedIndex(): int
+          public getDefaultOption(): number
+          public setSelectedIndex(arg0: number | java.lang.Integer): void
+          public getSelectedIndex(): number
         }
 
       }

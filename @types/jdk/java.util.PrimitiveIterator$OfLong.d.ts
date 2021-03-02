@@ -2,11 +2,11 @@ declare namespace java {
   namespace util {
 
     interface PrimitiveIterator$OfLong extends java.util.PrimitiveIterator<java.lang.Long,java.util.function$.LongConsumer> {
-      nextLong(): long
+      nextLong(): number
       forEachRemaining(arg0: java.util.function$.LongConsumer): void
-      next(): java.lang.Long
+      next(): number
       forEachRemaining(arg0: java.util.function$.Consumer<unknown>): void
-      forEachRemaining(arg0: java.lang.Object): void
+      forEachRemaining(arg0: java.lang.Object | any): void
       next(): java.lang.Object
     }
 

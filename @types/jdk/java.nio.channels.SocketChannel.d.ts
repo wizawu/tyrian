@@ -7,7 +7,7 @@ declare namespace java {
         protected constructor(arg0: java.nio.channels.spi.SelectorProvider)
         public static open(): java.nio.channels.SocketChannel
         public static open(arg0: java.net.SocketAddress): java.nio.channels.SocketChannel
-        public validOps(): int
+        public validOps(): number
         public abstract bind(arg0: java.net.SocketAddress): java.nio.channels.SocketChannel
         public abstract setOption<T>(arg0: java.net.SocketOption<T>, arg1: T): java.nio.channels.SocketChannel
         public abstract shutdownInput(): java.nio.channels.SocketChannel
@@ -18,14 +18,14 @@ declare namespace java {
         public abstract connect(arg0: java.net.SocketAddress): boolean
         public abstract finishConnect(): boolean
         public abstract getRemoteAddress(): java.net.SocketAddress
-        public abstract read(arg0: java.nio.ByteBuffer): int
-        public abstract read(arg0: java.nio.ByteBuffer[], arg1: int, arg2: int): long
-        public read(arg0: java.nio.ByteBuffer[]): long
-        public abstract write(arg0: java.nio.ByteBuffer): int
-        public abstract write(arg0: java.nio.ByteBuffer[], arg1: int, arg2: int): long
-        public write(arg0: java.nio.ByteBuffer[]): long
+        public abstract read(arg0: java.nio.ByteBuffer): number
+        public abstract read(arg0: java.nio.ByteBuffer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+        public read(arg0: java.nio.ByteBuffer[]): number
+        public abstract write(arg0: java.nio.ByteBuffer): number
+        public abstract write(arg0: java.nio.ByteBuffer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+        public write(arg0: java.nio.ByteBuffer[]): number
         public abstract getLocalAddress(): java.net.SocketAddress
-        public setOption(arg0: java.net.SocketOption, arg1: java.lang.Object): java.nio.channels.NetworkChannel
+        public setOption(arg0: java.net.SocketOption, arg1: java.lang.Object | any): java.nio.channels.NetworkChannel
         public bind(arg0: java.net.SocketAddress): java.nio.channels.NetworkChannel
       }
 

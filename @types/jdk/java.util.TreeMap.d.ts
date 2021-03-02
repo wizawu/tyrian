@@ -6,22 +6,22 @@ declare namespace java {
       public constructor(arg0: java.util.Comparator<unknown>)
       public constructor(arg0: java.util.Map<K,V>)
       public constructor(arg0: java.util.SortedMap<K,V>)
-      public size(): int
-      public containsKey(arg0: java.lang.Object): boolean
-      public containsValue(arg0: java.lang.Object): boolean
-      public get(arg0: java.lang.Object): V
+      public size(): number
+      public containsKey(arg0: java.lang.Object | any): boolean
+      public containsValue(arg0: java.lang.Object | any): boolean
+      public get(arg0: java.lang.Object | any): V
       public comparator(): java.util.Comparator<unknown>
       public firstKey(): K
       public lastKey(): K
       public putAll(arg0: java.util.Map<K,V>): void
-      getEntry(arg0: java.lang.Object): java.util.TreeMap$Entry<K,V>
-      getEntryUsingComparator(arg0: java.lang.Object): java.util.TreeMap$Entry<K,V>
+      getEntry(arg0: java.lang.Object | any): java.util.TreeMap$Entry<K,V>
+      getEntryUsingComparator(arg0: java.lang.Object | any): java.util.TreeMap$Entry<K,V>
       getCeilingEntry(arg0: K): java.util.TreeMap$Entry<K,V>
       getFloorEntry(arg0: K): java.util.TreeMap$Entry<K,V>
       getHigherEntry(arg0: K): java.util.TreeMap$Entry<K,V>
       getLowerEntry(arg0: K): java.util.TreeMap$Entry<K,V>
       public put(arg0: K, arg1: V): V
-      public remove(arg0: java.lang.Object): V
+      public remove(arg0: java.lang.Object | any): V
       public clear(): void
       public clone(): java.lang.Object
       public firstEntry(): java.util.Map$Entry<K,V>
@@ -42,9 +42,9 @@ declare namespace java {
       public values(): java.util.Collection<V>
       public entrySet(): java.util.Set<java.util.Map$Entry<K,V>>
       public descendingMap(): java.util.NavigableMap<K,V>
-      public subMap(arg0: K, arg1: boolean, arg2: K, arg3: boolean): java.util.NavigableMap<K,V>
-      public headMap(arg0: K, arg1: boolean): java.util.NavigableMap<K,V>
-      public tailMap(arg0: K, arg1: boolean): java.util.NavigableMap<K,V>
+      public subMap(arg0: K, arg1: boolean | java.lang.Boolean, arg2: K, arg3: boolean | java.lang.Boolean): java.util.NavigableMap<K,V>
+      public headMap(arg0: K, arg1: boolean | java.lang.Boolean): java.util.NavigableMap<K,V>
+      public tailMap(arg0: K, arg1: boolean | java.lang.Boolean): java.util.NavigableMap<K,V>
       public subMap(arg0: K, arg1: K): java.util.SortedMap<K,V>
       public headMap(arg0: K): java.util.SortedMap<K,V>
       public tailMap(arg0: K): java.util.SortedMap<K,V>
@@ -54,8 +54,8 @@ declare namespace java {
       public replaceAll(arg0: java.util.function$.BiFunction<unknown,unknown,V>): void
       keyIterator(): java.util.Iterator<K>
       descendingKeyIterator(): java.util.Iterator<K>
-      compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-      static valEquals(arg0: java.lang.Object, arg1: java.lang.Object): boolean
+      compare(arg0: java.lang.Object | any, arg1: java.lang.Object | any): number
+      static valEquals(arg0: java.lang.Object | any, arg1: java.lang.Object | any): boolean
       static exportEntry<K,V>(arg0: java.util.TreeMap$Entry<K,V>): java.util.Map$Entry<K,V>
       static keyOrNull<K,V>(arg0: java.util.TreeMap$Entry<K,V>): K
       static key<K>(arg0: java.util.TreeMap$Entry<K,unknown>): K
@@ -63,7 +63,7 @@ declare namespace java {
       getLastEntry(): java.util.TreeMap$Entry<K,V>
       static successor<K,V>(arg0: java.util.TreeMap$Entry<K,V>): java.util.TreeMap$Entry<K,V>
       static predecessor<K,V>(arg0: java.util.TreeMap$Entry<K,V>): java.util.TreeMap$Entry<K,V>
-      readTreeSet(arg0: int, arg1: java.io.ObjectInputStream, arg2: V): void
+      readTreeSet(arg0: number | java.lang.Integer, arg1: java.io.ObjectInputStream, arg2: V): void
       addAllForTreeSet(arg0: java.util.SortedSet<K>, arg1: V): void
       static keySpliteratorFor<K>(arg0: java.util.NavigableMap<K,unknown>): java.util.Spliterator<K>
       keySpliterator(): java.util.Spliterator<K>

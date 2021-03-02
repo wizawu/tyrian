@@ -4,8 +4,8 @@ declare namespace java {
 
       abstract class CalendarDataProvider extends java.util.spi.LocaleServiceProvider {
         protected constructor()
-        public abstract getFirstDayOfWeek(arg0: java.util.Locale): int
-        public abstract getMinimalDaysInFirstWeek(arg0: java.util.Locale): int
+        public abstract getFirstDayOfWeek(arg0: java.util.Locale): number
+        public abstract getMinimalDaysInFirstWeek(arg0: java.util.Locale): number
       }
 
     }

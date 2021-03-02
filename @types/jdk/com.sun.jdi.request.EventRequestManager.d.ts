@@ -8,14 +8,14 @@ declare namespace com {
           createClassUnloadRequest(): com.sun.jdi.request.ClassUnloadRequest
           createThreadStartRequest(): com.sun.jdi.request.ThreadStartRequest
           createThreadDeathRequest(): com.sun.jdi.request.ThreadDeathRequest
-          createExceptionRequest(arg0: com.sun.jdi.ReferenceType, arg1: boolean, arg2: boolean): com.sun.jdi.request.ExceptionRequest
+          createExceptionRequest(arg0: com.sun.jdi.ReferenceType, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): com.sun.jdi.request.ExceptionRequest
           createMethodEntryRequest(): com.sun.jdi.request.MethodEntryRequest
           createMethodExitRequest(): com.sun.jdi.request.MethodExitRequest
           createMonitorContendedEnterRequest(): com.sun.jdi.request.MonitorContendedEnterRequest
           createMonitorContendedEnteredRequest(): com.sun.jdi.request.MonitorContendedEnteredRequest
           createMonitorWaitRequest(): com.sun.jdi.request.MonitorWaitRequest
           createMonitorWaitedRequest(): com.sun.jdi.request.MonitorWaitedRequest
-          createStepRequest(arg0: com.sun.jdi.ThreadReference, arg1: int, arg2: int): com.sun.jdi.request.StepRequest
+          createStepRequest(arg0: com.sun.jdi.ThreadReference, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): com.sun.jdi.request.StepRequest
           createBreakpointRequest(arg0: com.sun.jdi.Location): com.sun.jdi.request.BreakpointRequest
           createAccessWatchpointRequest(arg0: com.sun.jdi.Field): com.sun.jdi.request.AccessWatchpointRequest
           createModificationWatchpointRequest(arg0: com.sun.jdi.Field): com.sun.jdi.request.ModificationWatchpointRequest

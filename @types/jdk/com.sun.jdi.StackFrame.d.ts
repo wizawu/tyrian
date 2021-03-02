@@ -7,7 +7,7 @@ declare namespace com {
         thread(): com.sun.jdi.ThreadReference
         thisObject(): com.sun.jdi.ObjectReference
         visibleVariables(): java.util.List<com.sun.jdi.LocalVariable>
-        visibleVariableByName(arg0: java.lang.String): com.sun.jdi.LocalVariable
+        visibleVariableByName(arg0: java.lang.String | string): com.sun.jdi.LocalVariable
         getValue(arg0: com.sun.jdi.LocalVariable): com.sun.jdi.Value
         getValues(arg0: java.util.List<com.sun.jdi.LocalVariable>): java.util.Map<com.sun.jdi.LocalVariable,com.sun.jdi.Value>
         setValue(arg0: com.sun.jdi.LocalVariable, arg1: com.sun.jdi.Value): void

@@ -5,7 +5,7 @@ declare namespace java {
       public static readonly serialVersionUID: long
       getAlgorithm(): java.lang.String
       getFormat(): java.lang.String
-      getEncoded(): byte[]
+      getEncoded(): number[]
     }
 
   }

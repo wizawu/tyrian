@@ -4,7 +4,7 @@ declare namespace java {
     class MouseInfo {
       static readonly $assertionsDisabled: boolean
       public static getPointerInfo(): java.awt.PointerInfo
-      public static getNumberOfButtons(): int
+      public static getNumberOfButtons(): number
     }
 
   }

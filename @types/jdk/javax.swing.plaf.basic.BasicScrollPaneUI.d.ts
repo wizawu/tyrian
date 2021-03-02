@@ -17,14 +17,14 @@ declare namespace javax {
           protected installDefaults(arg0: javax.swing.JScrollPane): void
           protected installListeners(arg0: javax.swing.JScrollPane): void
           protected installKeyboardActions(arg0: javax.swing.JScrollPane): void
-          getInputMap(arg0: int): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           public installUI(arg0: javax.swing.JComponent): void
           protected uninstallDefaults(arg0: javax.swing.JScrollPane): void
           protected uninstallListeners(arg0: javax.swing.JComponent): void
           protected uninstallKeyboardActions(arg0: javax.swing.JScrollPane): void
           public uninstallUI(arg0: javax.swing.JComponent): void
           protected syncScrollPaneWithViewport(): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           protected createViewportChangeListener(): javax.swing.event.ChangeListener
           protected createHSBChangeListener(): javax.swing.event.ChangeListener

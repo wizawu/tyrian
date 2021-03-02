@@ -7,7 +7,7 @@ declare namespace java {
         last: java.util.concurrent.LinkedBlockingDeque$Node<E>
         readonly lock: java.util.concurrent.locks.ReentrantLock
         public constructor()
-        public constructor(arg0: int)
+        public constructor(arg0: number | java.lang.Integer)
         public constructor(arg0: java.util.Collection<E>)
         unlink(arg0: java.util.concurrent.LinkedBlockingDeque$Node<E>): void
         public addFirst(arg0: E): void
@@ -16,40 +16,40 @@ declare namespace java {
         public offerLast(arg0: E): boolean
         public putFirst(arg0: E): void
         public putLast(arg0: E): void
-        public offerFirst(arg0: E, arg1: long, arg2: java.util.concurrent.TimeUnit): boolean
-        public offerLast(arg0: E, arg1: long, arg2: java.util.concurrent.TimeUnit): boolean
+        public offerFirst(arg0: E, arg1: number | java.lang.Long, arg2: java.util.concurrent.TimeUnit): boolean
+        public offerLast(arg0: E, arg1: number | java.lang.Long, arg2: java.util.concurrent.TimeUnit): boolean
         public removeFirst(): E
         public removeLast(): E
         public pollFirst(): E
         public pollLast(): E
         public takeFirst(): E
         public takeLast(): E
-        public pollFirst(arg0: long, arg1: java.util.concurrent.TimeUnit): E
-        public pollLast(arg0: long, arg1: java.util.concurrent.TimeUnit): E
+        public pollFirst(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): E
+        public pollLast(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): E
         public getFirst(): E
         public getLast(): E
         public peekFirst(): E
         public peekLast(): E
-        public removeFirstOccurrence(arg0: java.lang.Object): boolean
-        public removeLastOccurrence(arg0: java.lang.Object): boolean
+        public removeFirstOccurrence(arg0: java.lang.Object | any): boolean
+        public removeLastOccurrence(arg0: java.lang.Object | any): boolean
         public add(arg0: E): boolean
         public offer(arg0: E): boolean
         public put(arg0: E): void
-        public offer(arg0: E, arg1: long, arg2: java.util.concurrent.TimeUnit): boolean
+        public offer(arg0: E, arg1: number | java.lang.Long, arg2: java.util.concurrent.TimeUnit): boolean
         public remove(): E
         public poll(): E
         public take(): E
-        public poll(arg0: long, arg1: java.util.concurrent.TimeUnit): E
+        public poll(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): E
         public element(): E
         public peek(): E
-        public remainingCapacity(): int
-        public drainTo(arg0: java.util.Collection<unknown>): int
-        public drainTo(arg0: java.util.Collection<unknown>, arg1: int): int
+        public remainingCapacity(): number
+        public drainTo(arg0: java.util.Collection<unknown>): number
+        public drainTo(arg0: java.util.Collection<unknown>, arg1: number | java.lang.Integer): number
         public push(arg0: E): void
         public pop(): E
-        public remove(arg0: java.lang.Object): boolean
-        public size(): int
-        public contains(arg0: java.lang.Object): boolean
+        public remove(arg0: java.lang.Object | any): boolean
+        public size(): number
+        public contains(arg0: java.lang.Object | any): boolean
         public addAll(arg0: java.util.Collection<E>): boolean
         public toArray(): java.lang.Object[]
         public toArray<T>(arg0: T[]): T[]

@@ -10,31 +10,31 @@ declare namespace javax {
         public static readonly ONE_WEEK: long
         public constructor()
         public preRegister(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName
-        public postRegister(arg0: java.lang.Boolean): void
+        public postRegister(arg0: boolean | java.lang.Boolean): void
         public preDeregister(): void
         public postDeregister(): void
         public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
         public start(): void
         public stop(): void
-        public addNotification(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.util.Date, arg4: long, arg5: long, arg6: boolean): java.lang.Integer
-        public addNotification(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.util.Date, arg4: long, arg5: long): java.lang.Integer
-        public addNotification(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.util.Date, arg4: long): java.lang.Integer
-        public addNotification(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.util.Date): java.lang.Integer
-        public removeNotification(arg0: java.lang.Integer): void
-        public removeNotifications(arg0: java.lang.String): void
+        public addNotification(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any, arg3: java.util.Date, arg4: number | java.lang.Long, arg5: number | java.lang.Long, arg6: boolean | java.lang.Boolean): number
+        public addNotification(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any, arg3: java.util.Date, arg4: number | java.lang.Long, arg5: number | java.lang.Long): number
+        public addNotification(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any, arg3: java.util.Date, arg4: number | java.lang.Long): number
+        public addNotification(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any, arg3: java.util.Date): number
+        public removeNotification(arg0: number | java.lang.Integer): void
+        public removeNotifications(arg0: java.lang.String | string): void
         public removeAllNotifications(): void
-        public getNbNotifications(): int
+        public getNbNotifications(): number
         public getAllNotificationIDs(): java.util.Vector<java.lang.Integer>
-        public getNotificationIDs(arg0: java.lang.String): java.util.Vector<java.lang.Integer>
-        public getNotificationType(arg0: java.lang.Integer): java.lang.String
-        public getNotificationMessage(arg0: java.lang.Integer): java.lang.String
-        public getNotificationUserData(arg0: java.lang.Integer): java.lang.Object
-        public getDate(arg0: java.lang.Integer): java.util.Date
-        public getPeriod(arg0: java.lang.Integer): java.lang.Long
-        public getNbOccurences(arg0: java.lang.Integer): java.lang.Long
-        public getFixedRate(arg0: java.lang.Integer): java.lang.Boolean
+        public getNotificationIDs(arg0: java.lang.String | string): java.util.Vector<java.lang.Integer>
+        public getNotificationType(arg0: number | java.lang.Integer): java.lang.String
+        public getNotificationMessage(arg0: number | java.lang.Integer): java.lang.String
+        public getNotificationUserData(arg0: number | java.lang.Integer): java.lang.Object
+        public getDate(arg0: number | java.lang.Integer): java.util.Date
+        public getPeriod(arg0: number | java.lang.Integer): number
+        public getNbOccurences(arg0: number | java.lang.Integer): number
+        public getFixedRate(arg0: number | java.lang.Integer): boolean
         public getSendPastNotifications(): boolean
-        public setSendPastNotifications(arg0: boolean): void
+        public setSendPastNotifications(arg0: boolean | java.lang.Boolean): void
         public isActive(): boolean
         public isEmpty(): boolean
         notifyAlarmClock(arg0: javax.management.timer.TimerAlarmClockNotification): void

@@ -3,9 +3,9 @@ declare namespace javax {
     namespace midi {
 
       class Patch {
-        public constructor(arg0: int, arg1: int)
-        public getBank(): int
-        public getProgram(): int
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        public getBank(): number
+        public getProgram(): number
       }
 
     }

@@ -5,12 +5,12 @@ declare namespace java {
       class FileHandler extends java.util.logging.StreamHandler {
         static readonly $assertionsDisabled: boolean
         public constructor()
-        public constructor(arg0: java.lang.String)
-        public constructor(arg0: java.lang.String, arg1: boolean)
-        public constructor(arg0: java.lang.String, arg1: int, arg2: int)
-        public constructor(arg0: java.lang.String, arg1: int, arg2: int, arg3: boolean)
-        public constructor(arg0: java.lang.String, arg1: long, arg2: int, arg3: boolean)
-        static generate(arg0: java.lang.String, arg1: int, arg2: int, arg3: int): java.io.File
+        public constructor(arg0: java.lang.String | string)
+        public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
+        public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean)
+        public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Long, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean)
+        static generate(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.io.File
         public publish(arg0: java.util.logging.LogRecord): void
         public close(): void
       }

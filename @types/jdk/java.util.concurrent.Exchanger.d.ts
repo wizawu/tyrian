@@ -6,7 +6,7 @@ declare namespace java {
         static readonly FULL: int
         public constructor()
         public exchange(arg0: V): V
-        public exchange(arg0: V, arg1: long, arg2: java.util.concurrent.TimeUnit): V
+        public exchange(arg0: V, arg1: number | java.lang.Long, arg2: java.util.concurrent.TimeUnit): V
       }
 
     }

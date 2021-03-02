@@ -12,9 +12,9 @@ declare namespace javax {
       public getImplementationVersion(): java.lang.String
       public getImplementationVendor(): java.lang.String
       public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
-      public addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-      public removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-      public removeNotificationListener(arg0: javax.management.NotificationListener): void
+      public addNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$lambda, arg2: java.lang.Object | any): void
+      public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$lambda, arg2: java.lang.Object | any): void
+      public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda): void
       public sendNotification(arg0: javax.management.Notification): void
     }
 

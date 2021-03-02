@@ -5,9 +5,9 @@ declare namespace org {
 
         interface HTMLBaseElement extends org.w3c.dom.html.HTMLElement {
           getHref(): java.lang.String
-          setHref(arg0: java.lang.String): void
+          setHref(arg0: java.lang.String | string): void
           getTarget(): java.lang.String
-          setTarget(arg0: java.lang.String): void
+          setTarget(arg0: java.lang.String | string): void
         }
 
       }

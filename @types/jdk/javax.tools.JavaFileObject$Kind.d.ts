@@ -8,7 +8,7 @@ declare namespace javax {
       public static readonly OTHER: javax.tools.JavaFileObject$Kind
       public readonly extension: java.lang.String
       public static values(): javax.tools.JavaFileObject$Kind[]
-      public static valueOf(arg0: java.lang.String): javax.tools.JavaFileObject$Kind
+      public static valueOf(arg0: java.lang.String | string): javax.tools.JavaFileObject$Kind
     }
 
   }

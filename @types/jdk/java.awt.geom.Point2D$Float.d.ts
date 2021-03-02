@@ -6,11 +6,11 @@ declare namespace java {
         public x: float
         public y: float
         public constructor()
-        public constructor(arg0: float, arg1: float)
-        public getX(): double
-        public getY(): double
-        public setLocation(arg0: double, arg1: double): void
-        public setLocation(arg0: float, arg1: float): void
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Float)
+        public getX(): number
+        public getY(): number
+        public setLocation(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
+        public setLocation(arg0: number | java.lang.Float, arg1: number | java.lang.Float): void
         public toString(): java.lang.String
       }
 

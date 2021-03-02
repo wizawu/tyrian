@@ -10,12 +10,12 @@ declare namespace javax {
           public addTagSet(arg0: javax.imageio.plugins.tiff.TIFFTagSet): void
           public removeTagSet(arg0: javax.imageio.plugins.tiff.TIFFTagSet): void
           public getParentTag(): javax.imageio.plugins.tiff.TIFFTag
-          public getTag(arg0: int): javax.imageio.plugins.tiff.TIFFTag
-          public getNumTIFFFields(): int
-          public containsTIFFField(arg0: int): boolean
+          public getTag(arg0: number | java.lang.Integer): javax.imageio.plugins.tiff.TIFFTag
+          public getNumTIFFFields(): number
+          public containsTIFFField(arg0: number | java.lang.Integer): boolean
           public addTIFFField(arg0: javax.imageio.plugins.tiff.TIFFField): void
-          public getTIFFField(arg0: int): javax.imageio.plugins.tiff.TIFFField
-          public removeTIFFField(arg0: int): void
+          public getTIFFField(arg0: number | java.lang.Integer): javax.imageio.plugins.tiff.TIFFField
+          public removeTIFFField(arg0: number | java.lang.Integer): void
           public getTIFFFields(): javax.imageio.plugins.tiff.TIFFField[]
           public removeTIFFFields(): void
           public getAsMetadata(): javax.imageio.metadata.IIOMetadata

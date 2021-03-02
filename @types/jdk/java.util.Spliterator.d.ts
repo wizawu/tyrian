@@ -13,10 +13,10 @@ declare namespace java {
       tryAdvance(arg0: java.util.function$.Consumer<unknown>): boolean
       forEachRemaining(arg0: java.util.function$.Consumer<unknown>): void
       trySplit(): java.util.Spliterator<T>
-      estimateSize(): long
-      getExactSizeIfKnown(): long
-      characteristics(): int
-      hasCharacteristics(arg0: int): boolean
+      estimateSize(): number
+      getExactSizeIfKnown(): number
+      characteristics(): number
+      hasCharacteristics(arg0: number | java.lang.Integer): boolean
       getComparator(): java.util.Comparator<unknown>
     }
 

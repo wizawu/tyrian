@@ -9,15 +9,15 @@ declare namespace java {
       public static readonly parameterModeIn: int
       public static readonly parameterModeInOut: int
       public static readonly parameterModeOut: int
-      getParameterCount(): int
-      isNullable(arg0: int): int
-      isSigned(arg0: int): boolean
-      getPrecision(arg0: int): int
-      getScale(arg0: int): int
-      getParameterType(arg0: int): int
-      getParameterTypeName(arg0: int): java.lang.String
-      getParameterClassName(arg0: int): java.lang.String
-      getParameterMode(arg0: int): int
+      getParameterCount(): number
+      isNullable(arg0: number | java.lang.Integer): number
+      isSigned(arg0: number | java.lang.Integer): boolean
+      getPrecision(arg0: number | java.lang.Integer): number
+      getScale(arg0: number | java.lang.Integer): number
+      getParameterType(arg0: number | java.lang.Integer): number
+      getParameterTypeName(arg0: number | java.lang.Integer): java.lang.String
+      getParameterClassName(arg0: number | java.lang.Integer): java.lang.String
+      getParameterMode(arg0: number | java.lang.Integer): number
     }
 
   }

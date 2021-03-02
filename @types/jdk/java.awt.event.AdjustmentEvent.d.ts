@@ -15,11 +15,11 @@ declare namespace java {
         value: int
         adjustmentType: int
         isAdjusting: boolean
-        public constructor(arg0: java.awt.Adjustable, arg1: int, arg2: int, arg3: int)
-        public constructor(arg0: java.awt.Adjustable, arg1: int, arg2: int, arg3: int, arg4: boolean)
+        public constructor(arg0: java.awt.Adjustable, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        public constructor(arg0: java.awt.Adjustable, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean)
         public getAdjustable(): java.awt.Adjustable
-        public getValue(): int
-        public getAdjustmentType(): int
+        public getValue(): number
+        public getAdjustmentType(): number
         public getValueIsAdjusting(): boolean
         public paramString(): java.lang.String
       }

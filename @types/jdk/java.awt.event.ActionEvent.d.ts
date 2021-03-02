@@ -13,12 +13,12 @@ declare namespace java {
         actionCommand: java.lang.String
         when: long
         modifiers: int
-        public constructor(arg0: java.lang.Object, arg1: int, arg2: java.lang.String)
-        public constructor(arg0: java.lang.Object, arg1: int, arg2: java.lang.String, arg3: int)
-        public constructor(arg0: java.lang.Object, arg1: int, arg2: java.lang.String, arg3: long, arg4: int)
+        public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: java.lang.String | string)
+        public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: java.lang.String | string, arg3: number | java.lang.Integer)
+        public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: java.lang.String | string, arg3: number | java.lang.Long, arg4: number | java.lang.Integer)
         public getActionCommand(): java.lang.String
-        public getWhen(): long
-        public getModifiers(): int
+        public getWhen(): number
+        public getModifiers(): number
         public paramString(): java.lang.String
       }
 

@@ -9,7 +9,7 @@ declare namespace java {
         constructor(arg0: java.util.concurrent.ForkJoinPool, arg1: java.lang.ClassLoader)
         constructor(arg0: java.util.concurrent.ForkJoinPool, arg1: java.lang.ClassLoader, arg2: java.lang.ThreadGroup, arg3: java.security.AccessControlContext)
         public getPool(): java.util.concurrent.ForkJoinPool
-        public getPoolIndex(): int
+        public getPoolIndex(): number
         protected onStart(): void
         protected onTermination(arg0: java.lang.Throwable): void
         public run(): void

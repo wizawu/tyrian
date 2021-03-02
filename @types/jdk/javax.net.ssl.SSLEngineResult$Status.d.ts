@@ -8,7 +8,7 @@ declare namespace javax {
         public static readonly OK: javax.net.ssl.SSLEngineResult$Status
         public static readonly CLOSED: javax.net.ssl.SSLEngineResult$Status
         public static values(): javax.net.ssl.SSLEngineResult$Status[]
-        public static valueOf(arg0: java.lang.String): javax.net.ssl.SSLEngineResult$Status
+        public static valueOf(arg0: java.lang.String | string): javax.net.ssl.SSLEngineResult$Status
       }
 
     }

@@ -14,16 +14,16 @@ declare namespace javax {
         public static readonly TMSUSPEND: int
         public static readonly XA_RDONLY: int
         public static readonly XA_OK: int
-        commit(arg0: javax.transaction.xa.Xid, arg1: boolean): void
-        end(arg0: javax.transaction.xa.Xid, arg1: int): void
+        commit(arg0: javax.transaction.xa.Xid, arg1: boolean | java.lang.Boolean): void
+        end(arg0: javax.transaction.xa.Xid, arg1: number | java.lang.Integer): void
         forget(arg0: javax.transaction.xa.Xid): void
-        getTransactionTimeout(): int
+        getTransactionTimeout(): number
         isSameRM(arg0: javax.transaction.xa.XAResource): boolean
-        prepare(arg0: javax.transaction.xa.Xid): int
-        recover(arg0: int): javax.transaction.xa.Xid[]
+        prepare(arg0: javax.transaction.xa.Xid): number
+        recover(arg0: number | java.lang.Integer): javax.transaction.xa.Xid[]
         rollback(arg0: javax.transaction.xa.Xid): void
-        setTransactionTimeout(arg0: int): boolean
-        start(arg0: javax.transaction.xa.Xid, arg1: int): void
+        setTransactionTimeout(arg0: number | java.lang.Integer): boolean
+        start(arg0: javax.transaction.xa.Xid, arg1: number | java.lang.Integer): void
       }
 
     }

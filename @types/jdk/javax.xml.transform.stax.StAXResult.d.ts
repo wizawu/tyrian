@@ -9,7 +9,7 @@ declare namespace javax {
           public constructor(arg0: javax.xml.stream.XMLStreamWriter)
           public getXMLEventWriter(): javax.xml.stream.XMLEventWriter
           public getXMLStreamWriter(): javax.xml.stream.XMLStreamWriter
-          public setSystemId(arg0: java.lang.String): void
+          public setSystemId(arg0: java.lang.String | string): void
           public getSystemId(): java.lang.String
         }
 

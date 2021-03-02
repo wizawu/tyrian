@@ -6,22 +6,22 @@ declare namespace java {
       tail: java.util.LinkedHashMap$Entry<K,V>
       readonly accessOrder: boolean
       reinitialize(): void
-      newNode(arg0: int, arg1: K, arg2: V, arg3: java.util.HashMap$Node<K,V>): java.util.HashMap$Node<K,V>
+      newNode(arg0: number | java.lang.Integer, arg1: K, arg2: V, arg3: java.util.HashMap$Node<K,V>): java.util.HashMap$Node<K,V>
       replacementNode(arg0: java.util.HashMap$Node<K,V>, arg1: java.util.HashMap$Node<K,V>): java.util.HashMap$Node<K,V>
-      newTreeNode(arg0: int, arg1: K, arg2: V, arg3: java.util.HashMap$Node<K,V>): java.util.HashMap$TreeNode<K,V>
+      newTreeNode(arg0: number | java.lang.Integer, arg1: K, arg2: V, arg3: java.util.HashMap$Node<K,V>): java.util.HashMap$TreeNode<K,V>
       replacementTreeNode(arg0: java.util.HashMap$Node<K,V>, arg1: java.util.HashMap$Node<K,V>): java.util.HashMap$TreeNode<K,V>
       afterNodeRemoval(arg0: java.util.HashMap$Node<K,V>): void
-      afterNodeInsertion(arg0: boolean): void
+      afterNodeInsertion(arg0: boolean | java.lang.Boolean): void
       afterNodeAccess(arg0: java.util.HashMap$Node<K,V>): void
       internalWriteEntries(arg0: java.io.ObjectOutputStream): void
-      public constructor(arg0: int, arg1: float)
-      public constructor(arg0: int)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Float)
+      public constructor(arg0: number | java.lang.Integer)
       public constructor()
       public constructor(arg0: java.util.Map<K,V>)
-      public constructor(arg0: int, arg1: float, arg2: boolean)
-      public containsValue(arg0: java.lang.Object): boolean
-      public get(arg0: java.lang.Object): V
-      public getOrDefault(arg0: java.lang.Object, arg1: V): V
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Float, arg2: boolean | java.lang.Boolean)
+      public containsValue(arg0: java.lang.Object | any): boolean
+      public get(arg0: java.lang.Object | any): V
+      public getOrDefault(arg0: java.lang.Object | any, arg1: V): V
       public clear(): void
       protected removeEldestEntry(arg0: java.util.Map$Entry<K,V>): boolean
       public keySet(): java.util.Set<K>

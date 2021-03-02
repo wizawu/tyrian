@@ -6,7 +6,7 @@ declare namespace java {
       public static readonly SHOW_REFLECT_FRAMES: java.lang.StackWalker$Option
       public static readonly SHOW_HIDDEN_FRAMES: java.lang.StackWalker$Option
       public static values(): java.lang.StackWalker$Option[]
-      public static valueOf(arg0: java.lang.String): java.lang.StackWalker$Option
+      public static valueOf(arg0: java.lang.String | string): java.lang.StackWalker$Option
     }
 
   }

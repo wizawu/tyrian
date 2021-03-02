@@ -18,9 +18,9 @@ declare namespace javax {
         public static readonly BIGINTEGER: javax.management.openmbean.SimpleType<java.math.BigInteger>
         public static readonly DATE: javax.management.openmbean.SimpleType<java.util.Date>
         public static readonly OBJECTNAME: javax.management.openmbean.SimpleType<javax.management.ObjectName>
-        public isValue(arg0: java.lang.Object): boolean
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public isValue(arg0: java.lang.Object | any): boolean
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
         public toString(): java.lang.String
         public readResolve(): java.lang.Object
       }

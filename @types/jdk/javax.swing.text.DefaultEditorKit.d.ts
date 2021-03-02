@@ -64,11 +64,11 @@ declare namespace javax {
         public getActions(): javax.swing.Action[]
         public createCaret(): javax.swing.text.Caret
         public createDefaultDocument(): javax.swing.text.Document
-        public read(arg0: java.io.InputStream, arg1: javax.swing.text.Document, arg2: int): void
-        public write(arg0: java.io.OutputStream, arg1: javax.swing.text.Document, arg2: int, arg3: int): void
+        public read(arg0: java.io.InputStream, arg1: javax.swing.text.Document, arg2: number | java.lang.Integer): void
+        public write(arg0: java.io.OutputStream, arg1: javax.swing.text.Document, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
         getInputAttributes(): javax.swing.text.MutableAttributeSet
-        public read(arg0: java.io.Reader, arg1: javax.swing.text.Document, arg2: int): void
-        public write(arg0: java.io.Writer, arg1: javax.swing.text.Document, arg2: int, arg3: int): void
+        public read(arg0: java.io.Reader, arg1: javax.swing.text.Document, arg2: number | java.lang.Integer): void
+        public write(arg0: java.io.Writer, arg1: javax.swing.text.Document, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       }
 
     }

@@ -7,8 +7,8 @@ declare namespace javax {
           public static readonly INFORMATION: int
           public static readonly WARNING: int
           public static readonly ERROR: int
-          public constructor(arg0: int, arg1: java.lang.String)
-          public getMessageType(): int
+          public constructor(arg0: number | java.lang.Integer, arg1: java.lang.String | string)
+          public getMessageType(): number
           public getMessage(): java.lang.String
         }
 

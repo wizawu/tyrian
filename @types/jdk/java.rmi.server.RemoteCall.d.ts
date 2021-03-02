@@ -7,7 +7,7 @@ declare namespace java {
         releaseOutputStream(): void
         getInputStream(): java.io.ObjectInput
         releaseInputStream(): void
-        getResultStream(arg0: boolean): java.io.ObjectOutput
+        getResultStream(arg0: boolean | java.lang.Boolean): java.io.ObjectOutput
         executeCall(): void
         done(): void
       }

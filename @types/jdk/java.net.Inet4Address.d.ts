@@ -4,8 +4,8 @@ declare namespace java {
     class Inet4Address extends java.net.InetAddress {
       static readonly INADDRSZ: int
       constructor()
-      constructor(arg0: java.lang.String, arg1: byte[])
-      constructor(arg0: java.lang.String, arg1: int)
+      constructor(arg0: java.lang.String | string, arg1: byte[])
+      constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
       public isMulticastAddress(): boolean
       public isAnyLocalAddress(): boolean
       public isLoopbackAddress(): boolean
@@ -16,10 +16,10 @@ declare namespace java {
       public isMCLinkLocal(): boolean
       public isMCSiteLocal(): boolean
       public isMCOrgLocal(): boolean
-      public getAddress(): byte[]
+      public getAddress(): number[]
       public getHostAddress(): java.lang.String
-      public hashCode(): int
-      public equals(arg0: java.lang.Object): boolean
+      public hashCode(): number
+      public equals(arg0: java.lang.Object | any): boolean
       static numericToTextFormat(arg0: byte[]): java.lang.String
     }
 

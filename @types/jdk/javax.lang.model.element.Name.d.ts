@@ -4,8 +4,8 @@ declare namespace javax {
       namespace element {
 
         interface Name extends java.lang.CharSequence {
-          equals(arg0: java.lang.Object): boolean
-          hashCode(): int
+          equals(arg0: java.lang.Object | any): boolean
+          hashCode(): number
           contentEquals(arg0: java.lang.CharSequence): boolean
         }
 

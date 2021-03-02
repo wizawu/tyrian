@@ -63,7 +63,7 @@ declare namespace java {
         public static readonly TRACKING: java.awt.font.TextAttribute
         public static readonly TRACKING_TIGHT: java.lang.Float
         public static readonly TRACKING_LOOSE: java.lang.Float
-        protected constructor(arg0: java.lang.String)
+        protected constructor(arg0: java.lang.String | string)
         protected readResolve(): java.lang.Object
       }
 

@@ -12,9 +12,9 @@ declare namespace javax {
         getObservedObject(): javax.management.ObjectName
         setObservedObject(arg0: javax.management.ObjectName): void
         getObservedAttribute(): java.lang.String
-        setObservedAttribute(arg0: java.lang.String): void
-        getGranularityPeriod(): long
-        setGranularityPeriod(arg0: long): void
+        setObservedAttribute(arg0: java.lang.String | string): void
+        getGranularityPeriod(): number
+        setGranularityPeriod(arg0: number | java.lang.Long): void
         isActive(): boolean
       }
 

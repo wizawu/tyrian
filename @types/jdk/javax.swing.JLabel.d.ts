@@ -4,10 +4,10 @@ declare namespace javax {
     class JLabel extends javax.swing.JComponent implements javax.swing.SwingConstants, javax.accessibility.Accessible {
       protected labelFor: java.awt.Component
       static readonly LABELED_BY_PROPERTY: java.lang.String
-      public constructor(arg0: java.lang.String, arg1: javax.swing.Icon, arg2: int)
-      public constructor(arg0: java.lang.String, arg1: int)
-      public constructor(arg0: java.lang.String)
-      public constructor(arg0: javax.swing.Icon, arg1: int)
+      public constructor(arg0: java.lang.String | string, arg1: javax.swing.Icon, arg2: number | java.lang.Integer)
+      public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
+      public constructor(arg0: java.lang.String | string)
+      public constructor(arg0: javax.swing.Icon, arg1: number | java.lang.Integer)
       public constructor(arg0: javax.swing.Icon)
       public constructor()
       public getUI(): javax.swing.plaf.LabelUI
@@ -15,29 +15,29 @@ declare namespace javax {
       public updateUI(): void
       public getUIClassID(): java.lang.String
       public getText(): java.lang.String
-      public setText(arg0: java.lang.String): void
+      public setText(arg0: java.lang.String | string): void
       public getIcon(): javax.swing.Icon
       public setIcon(arg0: javax.swing.Icon): void
       public getDisabledIcon(): javax.swing.Icon
       public setDisabledIcon(arg0: javax.swing.Icon): void
-      public setDisplayedMnemonic(arg0: int): void
-      public setDisplayedMnemonic(arg0: char): void
-      public getDisplayedMnemonic(): int
-      public setDisplayedMnemonicIndex(arg0: int): void
-      public getDisplayedMnemonicIndex(): int
-      protected checkHorizontalKey(arg0: int, arg1: java.lang.String): int
-      protected checkVerticalKey(arg0: int, arg1: java.lang.String): int
-      public getIconTextGap(): int
-      public setIconTextGap(arg0: int): void
-      public getVerticalAlignment(): int
-      public setVerticalAlignment(arg0: int): void
-      public getHorizontalAlignment(): int
-      public setHorizontalAlignment(arg0: int): void
-      public getVerticalTextPosition(): int
-      public setVerticalTextPosition(arg0: int): void
-      public getHorizontalTextPosition(): int
-      public setHorizontalTextPosition(arg0: int): void
-      public imageUpdate(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): boolean
+      public setDisplayedMnemonic(arg0: number | java.lang.Integer): void
+      public setDisplayedMnemonic(arg0: string | java.lang.Character): void
+      public getDisplayedMnemonic(): number
+      public setDisplayedMnemonicIndex(arg0: number | java.lang.Integer): void
+      public getDisplayedMnemonicIndex(): number
+      protected checkHorizontalKey(arg0: number | java.lang.Integer, arg1: java.lang.String | string): number
+      protected checkVerticalKey(arg0: number | java.lang.Integer, arg1: java.lang.String | string): number
+      public getIconTextGap(): number
+      public setIconTextGap(arg0: number | java.lang.Integer): void
+      public getVerticalAlignment(): number
+      public setVerticalAlignment(arg0: number | java.lang.Integer): void
+      public getHorizontalAlignment(): number
+      public setHorizontalAlignment(arg0: number | java.lang.Integer): void
+      public getVerticalTextPosition(): number
+      public setVerticalTextPosition(arg0: number | java.lang.Integer): void
+      public getHorizontalTextPosition(): number
+      public setHorizontalTextPosition(arg0: number | java.lang.Integer): void
+      public imageUpdate(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): boolean
       protected paramString(): java.lang.String
       public getLabelFor(): java.awt.Component
       public setLabelFor(arg0: java.awt.Component): void

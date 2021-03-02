@@ -16,9 +16,9 @@ declare namespace java {
         public peek(): E
         first(): java.util.concurrent.ConcurrentLinkedQueue$Node<E>
         public isEmpty(): boolean
-        public size(): int
-        public contains(arg0: java.lang.Object): boolean
-        public remove(arg0: java.lang.Object): boolean
+        public size(): number
+        public contains(arg0: java.lang.Object | any): boolean
+        public remove(arg0: java.lang.Object | any): boolean
         public addAll(arg0: java.util.Collection<E>): boolean
         public toString(): java.lang.String
         public toArray(): java.lang.Object[]

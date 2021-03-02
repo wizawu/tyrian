@@ -4,8 +4,8 @@ declare namespace javax {
 
       class IIOInvalidTreeException extends javax.imageio.IIOException {
         protected offendingNode: org.w3c.dom.Node
-        public constructor(arg0: java.lang.String, arg1: org.w3c.dom.Node)
-        public constructor(arg0: java.lang.String, arg1: java.lang.Throwable, arg2: org.w3c.dom.Node)
+        public constructor(arg0: java.lang.String | string, arg1: org.w3c.dom.Node)
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable, arg2: org.w3c.dom.Node)
         public getOffendingNode(): org.w3c.dom.Node
       }
 

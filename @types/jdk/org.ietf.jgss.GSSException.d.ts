@@ -25,14 +25,14 @@ declare namespace org {
         public static readonly OLD_TOKEN: int
         public static readonly UNSEQ_TOKEN: int
         public static readonly GAP_TOKEN: int
-        public constructor(arg0: int)
-        constructor(arg0: int, arg1: java.lang.String)
-        public constructor(arg0: int, arg1: int, arg2: java.lang.String)
-        public getMajor(): int
-        public getMinor(): int
+        public constructor(arg0: number | java.lang.Integer)
+        constructor(arg0: number | java.lang.Integer, arg1: java.lang.String | string)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.lang.String | string)
+        public getMajor(): number
+        public getMinor(): number
         public getMajorString(): java.lang.String
         public getMinorString(): java.lang.String
-        public setMinor(arg0: int, arg1: java.lang.String): void
+        public setMinor(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
         public toString(): java.lang.String
         public getMessage(): java.lang.String
       }

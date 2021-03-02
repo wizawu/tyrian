@@ -3,7 +3,7 @@ declare namespace javax {
 
     class RuntimeOperationsException extends javax.management.JMRuntimeException {
       public constructor(arg0: java.lang.RuntimeException)
-      public constructor(arg0: java.lang.RuntimeException, arg1: java.lang.String)
+      public constructor(arg0: java.lang.RuntimeException, arg1: java.lang.String | string)
       public getTargetException(): java.lang.RuntimeException
       public getCause(): java.lang.Throwable
     }

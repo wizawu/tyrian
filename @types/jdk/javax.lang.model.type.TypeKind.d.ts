@@ -27,7 +27,7 @@ declare namespace javax {
           public static readonly INTERSECTION: javax.lang.model.type.TypeKind
           public static readonly MODULE: javax.lang.model.type.TypeKind
           public static values(): javax.lang.model.type.TypeKind[]
-          public static valueOf(arg0: java.lang.String): javax.lang.model.type.TypeKind
+          public static valueOf(arg0: java.lang.String | string): javax.lang.model.type.TypeKind
           public isPrimitive(): boolean
         }
 

@@ -9,7 +9,7 @@ declare namespace java {
         public static readonly COMPONENT_RESIZED: int
         public static readonly COMPONENT_SHOWN: int
         public static readonly COMPONENT_HIDDEN: int
-        public constructor(arg0: java.awt.Component, arg1: int)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer)
         public getComponent(): java.awt.Component
         public paramString(): java.lang.String
       }

@@ -15,7 +15,7 @@ declare namespace javax {
           public close(): void
           public getElementText(): java.lang.String
           public nextTag(): javax.xml.stream.events.XMLEvent
-          public getProperty(arg0: java.lang.String): java.lang.Object
+          public getProperty(arg0: java.lang.String | string): java.lang.Object
           public remove(): void
         }
 

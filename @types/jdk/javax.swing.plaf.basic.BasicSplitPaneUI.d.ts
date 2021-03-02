@@ -36,7 +36,7 @@ declare namespace javax {
           protected installDefaults(): void
           protected installListeners(): void
           protected installKeyboardActions(): void
-          getInputMap(arg0: int): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           public uninstallUI(arg0: javax.swing.JComponent): void
           protected uninstallDefaults(): void
           protected uninstallListeners(): void
@@ -48,25 +48,25 @@ declare namespace javax {
           protected createKeyboardHomeListener(): java.awt.event.ActionListener
           protected createKeyboardEndListener(): java.awt.event.ActionListener
           protected createKeyboardResizeToggleListener(): java.awt.event.ActionListener
-          public getOrientation(): int
-          public setOrientation(arg0: int): void
+          public getOrientation(): number
+          public setOrientation(arg0: number | java.lang.Integer): void
           public isContinuousLayout(): boolean
-          public setContinuousLayout(arg0: boolean): void
-          public getLastDragLocation(): int
-          public setLastDragLocation(arg0: int): void
-          getKeyboardMoveIncrement(): int
+          public setContinuousLayout(arg0: boolean | java.lang.Boolean): void
+          public getLastDragLocation(): number
+          public setLastDragLocation(arg0: number | java.lang.Integer): void
+          getKeyboardMoveIncrement(): number
           public getDivider(): javax.swing.plaf.basic.BasicSplitPaneDivider
           protected createDefaultNonContinuousLayoutDivider(): java.awt.Component
           protected setNonContinuousLayoutDivider(arg0: java.awt.Component): void
-          protected setNonContinuousLayoutDivider(arg0: java.awt.Component, arg1: boolean): void
+          protected setNonContinuousLayoutDivider(arg0: java.awt.Component, arg1: boolean | java.lang.Boolean): void
           public getNonContinuousLayoutDivider(): java.awt.Component
           public getSplitPane(): javax.swing.JSplitPane
           public createDefaultDivider(): javax.swing.plaf.basic.BasicSplitPaneDivider
           public resetToPreferredSizes(arg0: javax.swing.JSplitPane): void
-          public setDividerLocation(arg0: javax.swing.JSplitPane, arg1: int): void
-          public getDividerLocation(arg0: javax.swing.JSplitPane): int
-          public getMinimumDividerLocation(arg0: javax.swing.JSplitPane): int
-          public getMaximumDividerLocation(arg0: javax.swing.JSplitPane): int
+          public setDividerLocation(arg0: javax.swing.JSplitPane, arg1: number | java.lang.Integer): void
+          public getDividerLocation(arg0: javax.swing.JSplitPane): number
+          public getMinimumDividerLocation(arg0: javax.swing.JSplitPane): number
+          public getMaximumDividerLocation(arg0: javax.swing.JSplitPane): number
           public finishedPaintingChildren(arg0: javax.swing.JSplitPane, arg1: java.awt.Graphics): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
@@ -74,11 +74,11 @@ declare namespace javax {
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getInsets(arg0: javax.swing.JComponent): java.awt.Insets
           protected resetLayoutManager(): void
-          setKeepHidden(arg0: boolean): void
+          setKeepHidden(arg0: boolean | java.lang.Boolean): void
           protected startDragging(): void
-          protected dragDividerTo(arg0: int): void
-          protected finishDraggingTo(arg0: int): void
-          protected getDividerBorderSize(): int
+          protected dragDividerTo(arg0: number | java.lang.Integer): void
+          protected finishDraggingTo(arg0: number | java.lang.Integer): void
+          protected getDividerBorderSize(): number
         }
 
       }

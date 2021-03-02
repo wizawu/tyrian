@@ -33,14 +33,14 @@ declare namespace com {
             public static removeMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
             public static addWindowListener(arg0: java.awt.event.WindowListener): void
             public static removeWindowListener(arg0: java.awt.event.WindowListener): void
-            public static addActionListener(arg0: java.awt.event.ActionListener): void
-            public static removeActionListener(arg0: java.awt.event.ActionListener): void
-            public static addAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
-            public static removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener): void
-            public static addItemListener(arg0: java.awt.event.ItemListener): void
-            public static removeItemListener(arg0: java.awt.event.ItemListener): void
-            public static addTextListener(arg0: java.awt.event.TextListener): void
-            public static removeTextListener(arg0: java.awt.event.TextListener): void
+            public static addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
+            public static removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
+            public static addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
+            public static removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
+            public static addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda): void
+            public static removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda): void
+            public static addTextListener(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$lambda): void
+            public static removeTextListener(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$lambda): void
           }
 
         }

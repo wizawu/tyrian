@@ -4,10 +4,10 @@ declare namespace com {
 
       class InternalException extends java.lang.RuntimeException {
         public constructor()
-        public constructor(arg0: java.lang.String)
-        public constructor(arg0: int)
-        public constructor(arg0: java.lang.String, arg1: int)
-        public errorCode(): int
+        public constructor(arg0: java.lang.String | string)
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
+        public errorCode(): number
       }
 
     }

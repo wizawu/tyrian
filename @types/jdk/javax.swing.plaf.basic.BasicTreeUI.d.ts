@@ -36,37 +36,37 @@ declare namespace javax {
           public constructor()
           protected getHashColor(): java.awt.Color
           protected setHashColor(arg0: java.awt.Color): void
-          public setLeftChildIndent(arg0: int): void
-          public getLeftChildIndent(): int
-          public setRightChildIndent(arg0: int): void
-          public getRightChildIndent(): int
+          public setLeftChildIndent(arg0: number | java.lang.Integer): void
+          public getLeftChildIndent(): number
+          public setRightChildIndent(arg0: number | java.lang.Integer): void
+          public getRightChildIndent(): number
           public setExpandedIcon(arg0: javax.swing.Icon): void
           public getExpandedIcon(): javax.swing.Icon
           public setCollapsedIcon(arg0: javax.swing.Icon): void
           public getCollapsedIcon(): javax.swing.Icon
-          protected setLargeModel(arg0: boolean): void
+          protected setLargeModel(arg0: boolean | java.lang.Boolean): void
           protected isLargeModel(): boolean
-          protected setRowHeight(arg0: int): void
-          protected getRowHeight(): int
-          protected setCellRenderer(arg0: javax.swing.tree.TreeCellRenderer): void
+          protected setRowHeight(arg0: number | java.lang.Integer): void
+          protected getRowHeight(): number
+          protected setCellRenderer(arg0: javax.swing.tree.TreeCellRenderer | javax.swing.tree.TreeCellRenderer$$lambda): void
           protected getCellRenderer(): javax.swing.tree.TreeCellRenderer
           protected setModel(arg0: javax.swing.tree.TreeModel): void
           protected getModel(): javax.swing.tree.TreeModel
-          protected setRootVisible(arg0: boolean): void
+          protected setRootVisible(arg0: boolean | java.lang.Boolean): void
           protected isRootVisible(): boolean
-          protected setShowsRootHandles(arg0: boolean): void
+          protected setShowsRootHandles(arg0: boolean | java.lang.Boolean): void
           protected getShowsRootHandles(): boolean
           protected setCellEditor(arg0: javax.swing.tree.TreeCellEditor): void
           protected getCellEditor(): javax.swing.tree.TreeCellEditor
-          protected setEditable(arg0: boolean): void
+          protected setEditable(arg0: boolean | java.lang.Boolean): void
           protected isEditable(): boolean
           protected setSelectionModel(arg0: javax.swing.tree.TreeSelectionModel): void
           protected getSelectionModel(): javax.swing.tree.TreeSelectionModel
           public getPathBounds(arg0: javax.swing.JTree, arg1: javax.swing.tree.TreePath): java.awt.Rectangle
-          public getPathForRow(arg0: javax.swing.JTree, arg1: int): javax.swing.tree.TreePath
-          public getRowForPath(arg0: javax.swing.JTree, arg1: javax.swing.tree.TreePath): int
-          public getRowCount(arg0: javax.swing.JTree): int
-          public getClosestPathForLocation(arg0: javax.swing.JTree, arg1: int, arg2: int): javax.swing.tree.TreePath
+          public getPathForRow(arg0: javax.swing.JTree, arg1: number | java.lang.Integer): javax.swing.tree.TreePath
+          public getRowForPath(arg0: javax.swing.JTree, arg1: javax.swing.tree.TreePath): number
+          public getRowCount(arg0: javax.swing.JTree): number
+          public getClosestPathForLocation(arg0: javax.swing.JTree, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): javax.swing.tree.TreePath
           public isEditing(arg0: javax.swing.JTree): boolean
           public stopEditing(arg0: javax.swing.JTree): boolean
           public cancelEditing(arg0: javax.swing.JTree): void
@@ -78,7 +78,7 @@ declare namespace javax {
           protected installDefaults(): void
           protected installListeners(): void
           protected installKeyboardActions(): void
-          getInputMap(arg0: int): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           protected installComponents(): void
           protected createNodeDimensions(): javax.swing.tree.AbstractLayoutCache$NodeDimensions
           protected createPropertyChangeListener(): java.beans.PropertyChangeListener
@@ -102,25 +102,25 @@ declare namespace javax {
           protected uninstallListeners(): void
           protected uninstallKeyboardActions(): void
           protected uninstallComponents(): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected isDropLine(arg0: javax.swing.JTree$DropLocation): boolean
           protected paintDropLine(arg0: java.awt.Graphics): void
           protected getDropLineRect(arg0: javax.swing.JTree$DropLocation): java.awt.Rectangle
-          protected paintHorizontalPartOfLeg(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: int, arg6: boolean, arg7: boolean, arg8: boolean): void
+          protected paintHorizontalPartOfLeg(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: number | java.lang.Integer, arg6: boolean | java.lang.Boolean, arg7: boolean | java.lang.Boolean, arg8: boolean | java.lang.Boolean): void
           protected paintVerticalPartOfLeg(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: javax.swing.tree.TreePath): void
-          protected paintExpandControl(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: int, arg6: boolean, arg7: boolean, arg8: boolean): void
-          protected paintRow(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: int, arg6: boolean, arg7: boolean, arg8: boolean): void
-          protected shouldPaintExpandControl(arg0: javax.swing.tree.TreePath, arg1: int, arg2: boolean, arg3: boolean, arg4: boolean): boolean
-          protected paintVerticalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: int, arg3: int, arg4: int): void
-          protected paintHorizontalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: int, arg3: int, arg4: int): void
-          protected getVerticalLegBuffer(): int
-          protected getHorizontalLegBuffer(): int
-          protected drawCentered(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: javax.swing.Icon, arg3: int, arg4: int): void
-          protected drawDashedHorizontalLine(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int): void
-          protected drawDashedVerticalLine(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int): void
-          protected getRowX(arg0: int, arg1: int): int
+          protected paintExpandControl(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: number | java.lang.Integer, arg6: boolean | java.lang.Boolean, arg7: boolean | java.lang.Boolean, arg8: boolean | java.lang.Boolean): void
+          protected paintRow(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: number | java.lang.Integer, arg6: boolean | java.lang.Boolean, arg7: boolean | java.lang.Boolean, arg8: boolean | java.lang.Boolean): void
+          protected shouldPaintExpandControl(arg0: javax.swing.tree.TreePath, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean): boolean
+          protected paintVerticalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+          protected paintHorizontalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+          protected getVerticalLegBuffer(): number
+          protected getHorizontalLegBuffer(): number
+          protected drawCentered(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: javax.swing.Icon, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+          protected drawDashedHorizontalLine(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+          protected drawDashedVerticalLine(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+          protected getRowX(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
           protected updateLayoutCacheExpandedNodes(): void
           protected updateExpandedDescendants(arg0: javax.swing.tree.TreePath): void
           protected getLastChildPath(arg0: javax.swing.tree.TreePath): javax.swing.tree.TreePath
@@ -132,27 +132,27 @@ declare namespace javax {
           protected updateCachedPreferredSize(): void
           protected pathWasExpanded(arg0: javax.swing.tree.TreePath): void
           protected pathWasCollapsed(arg0: javax.swing.tree.TreePath): void
-          protected ensureRowsAreVisible(arg0: int, arg1: int): void
+          protected ensureRowsAreVisible(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
           public setPreferredMinSize(arg0: java.awt.Dimension): void
           public getPreferredMinSize(): java.awt.Dimension
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          public getPreferredSize(arg0: javax.swing.JComponent, arg1: boolean): java.awt.Dimension
+          public getPreferredSize(arg0: javax.swing.JComponent, arg1: boolean | java.lang.Boolean): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           protected completeEditing(): void
-          protected completeEditing(arg0: boolean, arg1: boolean, arg2: boolean): void
+          protected completeEditing(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
           protected startEditing(arg0: javax.swing.tree.TreePath, arg1: java.awt.event.MouseEvent): boolean
-          protected checkForClickInExpandControl(arg0: javax.swing.tree.TreePath, arg1: int, arg2: int): void
-          protected isLocationInExpandControl(arg0: javax.swing.tree.TreePath, arg1: int, arg2: int): boolean
-          protected handleExpandControlClick(arg0: javax.swing.tree.TreePath, arg1: int, arg2: int): void
+          protected checkForClickInExpandControl(arg0: javax.swing.tree.TreePath, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+          protected isLocationInExpandControl(arg0: javax.swing.tree.TreePath, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
+          protected handleExpandControlClick(arg0: javax.swing.tree.TreePath, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
           protected toggleExpandState(arg0: javax.swing.tree.TreePath): void
           protected isToggleSelectionEvent(arg0: java.awt.event.MouseEvent): boolean
           protected isMultiSelectEvent(arg0: java.awt.event.MouseEvent): boolean
           protected isToggleEvent(arg0: java.awt.event.MouseEvent): boolean
           protected selectPathForEvent(arg0: javax.swing.tree.TreePath, arg1: java.awt.event.MouseEvent): void
-          protected isLeaf(arg0: int): boolean
+          protected isLeaf(arg0: number | java.lang.Integer): boolean
           protected updateLeadSelectionRow(): void
-          protected getLeadSelectionRow(): int
+          protected getLeadSelectionRow(): number
         }
 
       }

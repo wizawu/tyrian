@@ -4,13 +4,13 @@ declare namespace javax {
     interface ScriptContext {
       public static readonly ENGINE_SCOPE: int
       public static readonly GLOBAL_SCOPE: int
-      setBindings(arg0: javax.script.Bindings, arg1: int): void
-      getBindings(arg0: int): javax.script.Bindings
-      setAttribute(arg0: java.lang.String, arg1: java.lang.Object, arg2: int): void
-      getAttribute(arg0: java.lang.String, arg1: int): java.lang.Object
-      removeAttribute(arg0: java.lang.String, arg1: int): java.lang.Object
-      getAttribute(arg0: java.lang.String): java.lang.Object
-      getAttributesScope(arg0: java.lang.String): int
+      setBindings(arg0: javax.script.Bindings, arg1: number | java.lang.Integer): void
+      getBindings(arg0: number | java.lang.Integer): javax.script.Bindings
+      setAttribute(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
+      getAttribute(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.lang.Object
+      removeAttribute(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.lang.Object
+      getAttribute(arg0: java.lang.String | string): java.lang.Object
+      getAttributesScope(arg0: java.lang.String | string): number
       getWriter(): java.io.Writer
       getErrorWriter(): java.io.Writer
       setWriter(arg0: java.io.Writer): void

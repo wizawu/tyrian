@@ -7,7 +7,7 @@ declare namespace java {
       }
 
       interface ToLongBiFunction<T,U> {
-        applyAsLong(arg0: T, arg1: U): long
+        applyAsLong(arg0: T, arg1: U): number
       }
 
     }

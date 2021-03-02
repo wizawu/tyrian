@@ -4,8 +4,8 @@ declare namespace com {
       namespace httpserver {
 
         class Authenticator$Failure extends com.sun.net.httpserver.Authenticator$Result {
-          public constructor(arg0: int)
-          public getResponseCode(): int
+          public constructor(arg0: number | java.lang.Integer)
+          public getResponseCode(): number
         }
 
       }

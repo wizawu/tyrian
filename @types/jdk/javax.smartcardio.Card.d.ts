@@ -9,8 +9,8 @@ declare namespace javax {
       public abstract openLogicalChannel(): javax.smartcardio.CardChannel
       public abstract beginExclusive(): void
       public abstract endExclusive(): void
-      public abstract transmitControlCommand(arg0: int, arg1: byte[]): byte[]
-      public abstract disconnect(arg0: boolean): void
+      public abstract transmitControlCommand(arg0: number | java.lang.Integer, arg1: byte[]): number[]
+      public abstract disconnect(arg0: boolean | java.lang.Boolean): void
     }
 
   }

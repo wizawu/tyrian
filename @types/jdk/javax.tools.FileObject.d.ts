@@ -6,10 +6,10 @@ declare namespace javax {
       getName(): java.lang.String
       openInputStream(): java.io.InputStream
       openOutputStream(): java.io.OutputStream
-      openReader(arg0: boolean): java.io.Reader
-      getCharContent(arg0: boolean): java.lang.CharSequence
+      openReader(arg0: boolean | java.lang.Boolean): java.io.Reader
+      getCharContent(arg0: boolean | java.lang.Boolean): java.lang.CharSequence
       openWriter(): java.io.Writer
-      getLastModified(): long
+      getLastModified(): number
       delete(): boolean
     }
 

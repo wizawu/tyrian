@@ -4,14 +4,14 @@ declare namespace com {
       namespace auth {
 
         class UnixNumericGroupPrincipal implements java.security.Principal, java.io.Serializable {
-          public constructor(arg0: java.lang.String, arg1: boolean)
-          public constructor(arg0: long, arg1: boolean)
+          public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
+          public constructor(arg0: number | java.lang.Long, arg1: boolean | java.lang.Boolean)
           public getName(): java.lang.String
-          public longValue(): long
+          public longValue(): number
           public isPrimaryGroup(): boolean
           public toString(): java.lang.String
-          public equals(arg0: java.lang.Object): boolean
-          public hashCode(): int
+          public equals(arg0: java.lang.Object | any): boolean
+          public hashCode(): number
         }
 
       }

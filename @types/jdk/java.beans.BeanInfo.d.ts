@@ -8,12 +8,12 @@ declare namespace java {
       public static readonly ICON_MONO_32x32: int
       getBeanDescriptor(): java.beans.BeanDescriptor
       getEventSetDescriptors(): java.beans.EventSetDescriptor[]
-      getDefaultEventIndex(): int
+      getDefaultEventIndex(): number
       getPropertyDescriptors(): java.beans.PropertyDescriptor[]
-      getDefaultPropertyIndex(): int
+      getDefaultPropertyIndex(): number
       getMethodDescriptors(): java.beans.MethodDescriptor[]
       getAdditionalBeanInfo(): java.beans.BeanInfo[]
-      getIcon(arg0: int): java.awt.Image
+      getIcon(arg0: number | java.lang.Integer): java.awt.Image
     }
 
   }

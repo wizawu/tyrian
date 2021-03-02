@@ -7,7 +7,7 @@ declare namespace javax {
         public static readonly CLOSED: java.lang.String
         public static readonly FAILED: java.lang.String
         public static readonly NOTIFS_LOST: java.lang.String
-        public constructor(arg0: java.lang.String, arg1: java.lang.Object, arg2: java.lang.String, arg3: long, arg4: java.lang.String, arg5: java.lang.Object)
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Long, arg4: java.lang.String | string, arg5: java.lang.Object | any)
         public getConnectionId(): java.lang.String
       }
 

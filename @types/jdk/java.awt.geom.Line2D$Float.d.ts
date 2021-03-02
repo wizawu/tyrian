@@ -8,16 +8,16 @@ declare namespace java {
         public x2: float
         public y2: float
         public constructor()
-        public constructor(arg0: float, arg1: float, arg2: float, arg3: float)
+        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float)
         public constructor(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D)
-        public getX1(): double
-        public getY1(): double
+        public getX1(): number
+        public getY1(): number
         public getP1(): java.awt.geom.Point2D
-        public getX2(): double
-        public getY2(): double
+        public getX2(): number
+        public getY2(): number
         public getP2(): java.awt.geom.Point2D
-        public setLine(arg0: double, arg1: double, arg2: double, arg3: double): void
-        public setLine(arg0: float, arg1: float, arg2: float, arg3: float): void
+        public setLine(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): void
+        public setLine(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float): void
         public getBounds2D(): java.awt.geom.Rectangle2D
       }
 

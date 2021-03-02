@@ -3,11 +3,11 @@ declare namespace java {
 
     interface ObjectInput extends java.io.DataInput, java.lang.AutoCloseable {
       readObject(): java.lang.Object
-      read(): int
-      read(arg0: byte[]): int
-      read(arg0: byte[], arg1: int, arg2: int): int
-      skip(arg0: long): long
-      available(): int
+      read(): number
+      read(arg0: byte[]): number
+      read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      skip(arg0: number | java.lang.Long): number
+      available(): number
       close(): void
     }
 

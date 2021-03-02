@@ -9,10 +9,10 @@ declare namespace javax {
       getNames(): java.util.List<java.lang.String>
       getLanguageName(): java.lang.String
       getLanguageVersion(): java.lang.String
-      getParameter(arg0: java.lang.String): java.lang.Object
-      getMethodCallSyntax(arg0: java.lang.String, arg1: java.lang.String, ...arg2: java.lang.String[]): java.lang.String
-      getOutputStatement(arg0: java.lang.String): java.lang.String
-      getProgram(...arg0: java.lang.String[]): java.lang.String
+      getParameter(arg0: java.lang.String | string): java.lang.Object
+      getMethodCallSyntax(arg0: java.lang.String | string, arg1: java.lang.String | string, ...vargs: (java.lang.String | string)[]): java.lang.String
+      getOutputStatement(arg0: java.lang.String | string): java.lang.String
+      getProgram(...vargs: (java.lang.String | string)[]): java.lang.String
       getScriptEngine(): javax.script.ScriptEngine
     }
 

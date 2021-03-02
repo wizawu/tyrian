@@ -44,7 +44,7 @@ declare namespace com {
           public static readonly OTHER: com.sun.source.doctree.DocTree$Kind
           public readonly tagName: java.lang.String
           public static values(): com.sun.source.doctree.DocTree$Kind[]
-          public static valueOf(arg0: java.lang.String): com.sun.source.doctree.DocTree$Kind
+          public static valueOf(arg0: java.lang.String | string): com.sun.source.doctree.DocTree$Kind
         }
 
       }

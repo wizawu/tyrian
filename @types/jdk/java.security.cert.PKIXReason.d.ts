@@ -12,7 +12,7 @@ declare namespace java {
         public static readonly PATH_TOO_LONG: java.security.cert.PKIXReason
         public static readonly INVALID_NAME: java.security.cert.PKIXReason
         public static values(): java.security.cert.PKIXReason[]
-        public static valueOf(arg0: java.lang.String): java.security.cert.PKIXReason
+        public static valueOf(arg0: java.lang.String | string): java.security.cert.PKIXReason
       }
 
     }

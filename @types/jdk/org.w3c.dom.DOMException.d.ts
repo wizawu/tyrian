@@ -22,7 +22,7 @@ declare namespace org {
         public static readonly VALIDATION_ERR: short
         public static readonly TYPE_MISMATCH_ERR: short
         static readonly serialVersionUID: long
-        public constructor(arg0: short, arg1: java.lang.String)
+        public constructor(arg0: number | java.lang.Short, arg1: java.lang.String | string)
       }
 
     }

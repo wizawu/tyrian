@@ -22,19 +22,19 @@ declare namespace javax {
         public static readonly CHANNEL_PRESSURE: int
         public static readonly PITCH_BEND: int
         public constructor()
-        public constructor(arg0: int)
-        public constructor(arg0: int, arg1: int, arg2: int)
-        public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
         protected constructor(arg0: byte[])
-        public setMessage(arg0: int): void
-        public setMessage(arg0: int, arg1: int, arg2: int): void
-        public setMessage(arg0: int, arg1: int, arg2: int, arg3: int): void
-        public getChannel(): int
-        public getCommand(): int
-        public getData1(): int
-        public getData2(): int
+        public setMessage(arg0: number | java.lang.Integer): void
+        public setMessage(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        public setMessage(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+        public getChannel(): number
+        public getCommand(): number
+        public getData1(): number
+        public getData2(): number
         public clone(): java.lang.Object
-        protected getDataLength(arg0: int): int
+        protected getDataLength(arg0: number | java.lang.Integer): number
       }
 
     }

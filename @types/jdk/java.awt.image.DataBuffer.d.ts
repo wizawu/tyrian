@@ -16,33 +16,33 @@ declare namespace java {
         protected size: int
         protected offsets: int[]
         theTrackable: sun.java2d.StateTrackableDelegate
-        public static getDataTypeSize(arg0: int): int
-        protected constructor(arg0: int, arg1: int)
-        constructor(arg0: sun.java2d.StateTrackable$State, arg1: int, arg2: int)
-        protected constructor(arg0: int, arg1: int, arg2: int)
-        constructor(arg0: sun.java2d.StateTrackable$State, arg1: int, arg2: int, arg3: int)
-        protected constructor(arg0: int, arg1: int, arg2: int, arg3: int)
-        constructor(arg0: sun.java2d.StateTrackable$State, arg1: int, arg2: int, arg3: int, arg4: int)
-        protected constructor(arg0: int, arg1: int, arg2: int, arg3: int[])
-        constructor(arg0: sun.java2d.StateTrackable$State, arg1: int, arg2: int, arg3: int, arg4: int[])
-        public getDataType(): int
-        public getSize(): int
-        public getOffset(): int
-        public getOffsets(): int[]
-        public getNumBanks(): int
-        public getElem(arg0: int): int
-        public abstract getElem(arg0: int, arg1: int): int
-        public setElem(arg0: int, arg1: int): void
-        public abstract setElem(arg0: int, arg1: int, arg2: int): void
-        public getElemFloat(arg0: int): float
-        public getElemFloat(arg0: int, arg1: int): float
-        public setElemFloat(arg0: int, arg1: float): void
-        public setElemFloat(arg0: int, arg1: int, arg2: float): void
-        public getElemDouble(arg0: int): double
-        public getElemDouble(arg0: int, arg1: int): double
-        public setElemDouble(arg0: int, arg1: double): void
-        public setElemDouble(arg0: int, arg1: int, arg2: double): void
-        static toIntArray(arg0: java.lang.Object): int[]
+        public static getDataTypeSize(arg0: number | java.lang.Integer): number
+        protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        constructor(arg0: sun.java2d.StateTrackable$State, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        constructor(arg0: sun.java2d.StateTrackable$State, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        constructor(arg0: sun.java2d.StateTrackable$State, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+        protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: int[])
+        constructor(arg0: sun.java2d.StateTrackable$State, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: int[])
+        public getDataType(): number
+        public getSize(): number
+        public getOffset(): number
+        public getOffsets(): number[]
+        public getNumBanks(): number
+        public getElem(arg0: number | java.lang.Integer): number
+        public abstract getElem(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+        public setElem(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        public abstract setElem(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        public getElemFloat(arg0: number | java.lang.Integer): number
+        public getElemFloat(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+        public setElemFloat(arg0: number | java.lang.Integer, arg1: number | java.lang.Float): void
+        public setElemFloat(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Float): void
+        public getElemDouble(arg0: number | java.lang.Integer): number
+        public getElemDouble(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+        public setElemDouble(arg0: number | java.lang.Integer, arg1: number | java.lang.Double): void
+        public setElemDouble(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Double): void
+        static toIntArray(arg0: java.lang.Object | any): number[]
       }
 
     }

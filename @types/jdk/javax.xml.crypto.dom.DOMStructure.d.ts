@@ -6,7 +6,7 @@ declare namespace javax {
         class DOMStructure implements javax.xml.crypto.XMLStructure {
           public constructor(arg0: org.w3c.dom.Node)
           public getNode(): org.w3c.dom.Node
-          public isFeatureSupported(arg0: java.lang.String): boolean
+          public isFeatureSupported(arg0: java.lang.String | string): boolean
         }
 
       }

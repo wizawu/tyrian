@@ -22,7 +22,7 @@ declare namespace java {
           public static readonly ADD_FILE: java.nio.file.attribute.AclEntryPermission
           public static readonly ADD_SUBDIRECTORY: java.nio.file.attribute.AclEntryPermission
           public static values(): java.nio.file.attribute.AclEntryPermission[]
-          public static valueOf(arg0: java.lang.String): java.nio.file.attribute.AclEntryPermission
+          public static valueOf(arg0: java.lang.String | string): java.nio.file.attribute.AclEntryPermission
         }
 
       }

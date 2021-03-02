@@ -9,7 +9,7 @@ declare namespace java {
           protected abstract implCloseChannel(): void
           public isOpen(): boolean
           protected begin(): void
-          protected end(arg0: boolean): void
+          protected end(arg0: boolean | java.lang.Boolean): void
           static blockedOn(arg0: sun.nio.ch.Interruptible): void
         }
 

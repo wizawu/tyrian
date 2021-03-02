@@ -3,15 +3,15 @@ declare namespace java {
     namespace spec {
 
       class ECFieldF2m implements java.security.spec.ECField {
-        public constructor(arg0: int)
-        public constructor(arg0: int, arg1: java.math.BigInteger)
-        public constructor(arg0: int, arg1: int[])
-        public getFieldSize(): int
-        public getM(): int
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: java.math.BigInteger)
+        public constructor(arg0: number | java.lang.Integer, arg1: int[])
+        public getFieldSize(): number
+        public getM(): number
         public getReductionPolynomial(): java.math.BigInteger
-        public getMidTermsOfReductionPolynomial(): int[]
-        public equals(arg0: java.lang.Object): boolean
-        public hashCode(): int
+        public getMidTermsOfReductionPolynomial(): number[]
+        public equals(arg0: java.lang.Object | any): boolean
+        public hashCode(): number
       }
 
     }

@@ -5,19 +5,19 @@ declare namespace org {
 
         interface HTMLFormElement extends org.w3c.dom.html.HTMLElement {
           getElements(): org.w3c.dom.html.HTMLCollection
-          getLength(): int
+          getLength(): number
           getName(): java.lang.String
-          setName(arg0: java.lang.String): void
+          setName(arg0: java.lang.String | string): void
           getAcceptCharset(): java.lang.String
-          setAcceptCharset(arg0: java.lang.String): void
+          setAcceptCharset(arg0: java.lang.String | string): void
           getAction(): java.lang.String
-          setAction(arg0: java.lang.String): void
+          setAction(arg0: java.lang.String | string): void
           getEnctype(): java.lang.String
-          setEnctype(arg0: java.lang.String): void
+          setEnctype(arg0: java.lang.String | string): void
           getMethod(): java.lang.String
-          setMethod(arg0: java.lang.String): void
+          setMethod(arg0: java.lang.String | string): void
           getTarget(): java.lang.String
-          setTarget(arg0: java.lang.String): void
+          setTarget(arg0: java.lang.String | string): void
           submit(): void
           reset(): void
         }

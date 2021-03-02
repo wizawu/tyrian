@@ -7,12 +7,12 @@ declare namespace java {
         layoutCharCount: int
         public constructor(arg0: java.text.AttributedCharacterIterator, arg1: java.awt.font.FontRenderContext)
         protected clone(): java.lang.Object
-        public getLineBreakIndex(arg0: int, arg1: float): int
-        public getAdvanceBetween(arg0: int, arg1: int): float
-        public getLayout(arg0: int, arg1: int): java.awt.font.TextLayout
-        public insertChar(arg0: java.text.AttributedCharacterIterator, arg1: int): void
-        public deleteChar(arg0: java.text.AttributedCharacterIterator, arg1: int): void
-        getChars(): char[]
+        public getLineBreakIndex(arg0: number | java.lang.Integer, arg1: number | java.lang.Float): number
+        public getAdvanceBetween(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+        public getLayout(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.font.TextLayout
+        public insertChar(arg0: java.text.AttributedCharacterIterator, arg1: number | java.lang.Integer): void
+        public deleteChar(arg0: java.text.AttributedCharacterIterator, arg1: number | java.lang.Integer): void
+        getChars(): string[]
       }
 
     }

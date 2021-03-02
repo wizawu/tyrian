@@ -3,8 +3,8 @@ declare namespace java {
     namespace management {
 
       interface GarbageCollectorMXBean extends java.lang.management.MemoryManagerMXBean {
-        getCollectionCount(): long
-        getCollectionTime(): long
+        getCollectionCount(): number
+        getCollectionTime(): number
       }
 
     }

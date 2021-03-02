@@ -7,27 +7,27 @@ declare namespace com {
           class Translator extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible, javax.accessibility.AccessibleComponent {
             protected source: java.lang.Object
             protected static getTranslatorClass(arg0: java.lang.Class<unknown>): java.lang.Class<unknown>
-            public static getAccessible(arg0: java.lang.Object): javax.accessibility.Accessible
+            public static getAccessible(arg0: java.lang.Object | any): javax.accessibility.Accessible
             public constructor()
-            public constructor(arg0: java.lang.Object)
+            public constructor(arg0: java.lang.Object | any)
             public getSource(): java.lang.Object
-            public setSource(arg0: java.lang.Object): void
-            public equals(arg0: java.lang.Object): boolean
-            public hashCode(): int
+            public setSource(arg0: java.lang.Object | any): void
+            public equals(arg0: java.lang.Object | any): boolean
+            public hashCode(): number
             public getAccessibleContext(): javax.accessibility.AccessibleContext
             public getAccessibleName(): java.lang.String
-            public setAccessibleName(arg0: java.lang.String): void
+            public setAccessibleName(arg0: java.lang.String | string): void
             public getAccessibleDescription(): java.lang.String
-            public setAccessibleDescription(arg0: java.lang.String): void
+            public setAccessibleDescription(arg0: java.lang.String | string): void
             public getAccessibleRole(): javax.accessibility.AccessibleRole
             public getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
             public getAccessibleParent(): javax.accessibility.Accessible
-            public getAccessibleIndexInParent(): int
-            public getAccessibleChildrenCount(): int
-            public getAccessibleChild(arg0: int): javax.accessibility.Accessible
+            public getAccessibleIndexInParent(): number
+            public getAccessibleChildrenCount(): number
+            public getAccessibleChild(arg0: number | java.lang.Integer): javax.accessibility.Accessible
             public getLocale(): java.util.Locale
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
             public getBackground(): java.awt.Color
             public setBackground(arg0: java.awt.Color): void
             public getForeground(): java.awt.Color
@@ -38,9 +38,9 @@ declare namespace com {
             public setFont(arg0: java.awt.Font): void
             public getFontMetrics(arg0: java.awt.Font): java.awt.FontMetrics
             public isEnabled(): boolean
-            public setEnabled(arg0: boolean): void
+            public setEnabled(arg0: boolean | java.lang.Boolean): void
             public isVisible(): boolean
-            public setVisible(arg0: boolean): void
+            public setVisible(arg0: boolean | java.lang.Boolean): void
             public isShowing(): boolean
             public contains(arg0: java.awt.Point): boolean
             public getLocationOnScreen(): java.awt.Point

@@ -5,9 +5,9 @@ declare namespace javax {
       abstract class TypeInfoProvider {
         protected constructor()
         public abstract getElementTypeInfo(): org.w3c.dom.TypeInfo
-        public abstract getAttributeTypeInfo(arg0: int): org.w3c.dom.TypeInfo
-        public abstract isIdAttribute(arg0: int): boolean
-        public abstract isSpecified(arg0: int): boolean
+        public abstract getAttributeTypeInfo(arg0: number | java.lang.Integer): org.w3c.dom.TypeInfo
+        public abstract isIdAttribute(arg0: number | java.lang.Integer): boolean
+        public abstract isSpecified(arg0: number | java.lang.Integer): boolean
       }
 
     }

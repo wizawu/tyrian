@@ -14,7 +14,7 @@ declare namespace java {
         public static empty(): java.lang.module.Configuration
         public parents(): java.util.List<java.lang.module.Configuration>
         public modules(): java.util.Set<java.lang.module.ResolvedModule>
-        public findModule(arg0: java.lang.String): java.util.Optional<java.lang.module.ResolvedModule>
+        public findModule(arg0: java.lang.String | string): java.util.Optional<java.lang.module.ResolvedModule>
         descriptors(): java.util.Set<java.lang.module.ModuleDescriptor>
         reads(arg0: java.lang.module.ResolvedModule): java.util.Set<java.lang.module.ResolvedModule>
         configurations(): java.util.stream.Stream<java.lang.module.Configuration>

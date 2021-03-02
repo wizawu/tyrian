@@ -5,7 +5,7 @@ declare namespace javax {
 
         interface TemplatesHandler extends org.xml.sax.ContentHandler {
           getTemplates(): javax.xml.transform.Templates
-          setSystemId(arg0: java.lang.String): void
+          setSystemId(arg0: java.lang.String | string): void
           getSystemId(): java.lang.String
         }
 

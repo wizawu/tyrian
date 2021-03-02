@@ -3,8 +3,8 @@ declare namespace javax {
 
     class DefaultLoaderRepository {
       public constructor()
-      public static loadClass(arg0: java.lang.String): java.lang.Class<unknown>
-      public static loadClassWithout(arg0: java.lang.ClassLoader, arg1: java.lang.String): java.lang.Class<unknown>
+      public static loadClass(arg0: java.lang.String | string): java.lang.Class<unknown>
+      public static loadClassWithout(arg0: java.lang.ClassLoader, arg1: java.lang.String | string): java.lang.Class<unknown>
     }
 
   }

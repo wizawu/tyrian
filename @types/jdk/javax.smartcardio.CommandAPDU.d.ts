@@ -3,25 +3,25 @@ declare namespace javax {
 
     class CommandAPDU implements java.io.Serializable {
       public constructor(arg0: byte[])
-      public constructor(arg0: byte[], arg1: int, arg2: int)
+      public constructor(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
       public constructor(arg0: java.nio.ByteBuffer)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: byte[])
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: byte[], arg5: int, arg6: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: byte[], arg5: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: byte[], arg5: int, arg6: int, arg7: int)
-      public getCLA(): int
-      public getINS(): int
-      public getP1(): int
-      public getP2(): int
-      public getNc(): int
-      public getData(): byte[]
-      public getNe(): int
-      public getBytes(): byte[]
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: byte[])
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: byte[], arg5: number | java.lang.Integer, arg6: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: byte[], arg5: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: byte[], arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer)
+      public getCLA(): number
+      public getINS(): number
+      public getP1(): number
+      public getP2(): number
+      public getNc(): number
+      public getData(): number[]
+      public getNe(): number
+      public getBytes(): number[]
       public toString(): java.lang.String
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
     }
 
   }

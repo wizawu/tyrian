@@ -51,22 +51,22 @@ declare namespace java {
       public static readonly VALUE_RESOLUTION_VARIANT_SIZE_FIT: java.lang.Object
       public static readonly VALUE_RESOLUTION_VARIANT_DPI_FIT: java.lang.Object
       public constructor(arg0: java.util.Map<java.awt.RenderingHints$Key,unknown>)
-      public constructor(arg0: java.awt.RenderingHints$Key, arg1: java.lang.Object)
-      public size(): int
+      public constructor(arg0: java.awt.RenderingHints$Key, arg1: java.lang.Object | any)
+      public size(): number
       public isEmpty(): boolean
-      public containsKey(arg0: java.lang.Object): boolean
-      public containsValue(arg0: java.lang.Object): boolean
-      public get(arg0: java.lang.Object): java.lang.Object
-      public put(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object
+      public containsKey(arg0: java.lang.Object | any): boolean
+      public containsValue(arg0: java.lang.Object | any): boolean
+      public get(arg0: java.lang.Object | any): java.lang.Object
+      public put(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
       public add(arg0: java.awt.RenderingHints): void
       public clear(): void
-      public remove(arg0: java.lang.Object): java.lang.Object
+      public remove(arg0: java.lang.Object | any): java.lang.Object
       public putAll(arg0: java.util.Map<unknown,unknown>): void
       public keySet(): java.util.Set<java.lang.Object>
       public values(): java.util.Collection<java.lang.Object>
       public entrySet(): java.util.Set<java.util.Map$Entry<java.lang.Object,java.lang.Object>>
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
       public clone(): java.lang.Object
       public toString(): java.lang.String
     }

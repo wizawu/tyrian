@@ -4,8 +4,8 @@ declare namespace org {
       namespace ext {
 
         interface EntityResolver2 extends org.xml.sax.EntityResolver {
-          getExternalSubset(arg0: java.lang.String, arg1: java.lang.String): org.xml.sax.InputSource
-          resolveEntity(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String): org.xml.sax.InputSource
+          getExternalSubset(arg0: java.lang.String | string, arg1: java.lang.String | string): org.xml.sax.InputSource
+          resolveEntity(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): org.xml.sax.InputSource
         }
 
       }

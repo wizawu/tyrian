@@ -13,21 +13,21 @@ declare namespace javax {
         undoDelete(): void
         undoInsert(): void
         undoUpdate(): void
-        columnUpdated(arg0: int): boolean
-        columnUpdated(arg0: java.lang.String): boolean
+        columnUpdated(arg0: number | java.lang.Integer): boolean
+        columnUpdated(arg0: java.lang.String | string): boolean
         toCollection(): java.util.Collection<unknown>
-        toCollection(arg0: int): java.util.Collection<unknown>
-        toCollection(arg0: java.lang.String): java.util.Collection<unknown>
+        toCollection(arg0: number | java.lang.Integer): java.util.Collection<unknown>
+        toCollection(arg0: java.lang.String | string): java.util.Collection<unknown>
         getSyncProvider(): javax.sql.rowset.spi.SyncProvider
-        setSyncProvider(arg0: java.lang.String): void
-        size(): int
+        setSyncProvider(arg0: java.lang.String | string): void
+        size(): number
         setMetaData(arg0: javax.sql.RowSetMetaData): void
         getOriginal(): java.sql.ResultSet
         getOriginalRow(): java.sql.ResultSet
         setOriginalRow(): void
         getTableName(): java.lang.String
-        setTableName(arg0: java.lang.String): void
-        getKeyColumns(): int[]
+        setTableName(arg0: java.lang.String | string): void
+        getKeyColumns(): number[]
         setKeyColumns(arg0: int[]): void
         createShared(): javax.sql.RowSet
         createCopy(): javax.sql.rowset.CachedRowSet
@@ -35,14 +35,14 @@ declare namespace javax {
         createCopyNoConstraints(): javax.sql.rowset.CachedRowSet
         getRowSetWarnings(): javax.sql.rowset.RowSetWarning
         getShowDeleted(): boolean
-        setShowDeleted(arg0: boolean): void
+        setShowDeleted(arg0: boolean | java.lang.Boolean): void
         commit(): void
         rollback(): void
         rollback(arg0: java.sql.Savepoint): void
-        rowSetPopulated(arg0: javax.sql.RowSetEvent, arg1: int): void
-        populate(arg0: java.sql.ResultSet, arg1: int): void
-        setPageSize(arg0: int): void
-        getPageSize(): int
+        rowSetPopulated(arg0: javax.sql.RowSetEvent, arg1: number | java.lang.Integer): void
+        populate(arg0: java.sql.ResultSet, arg1: number | java.lang.Integer): void
+        setPageSize(arg0: number | java.lang.Integer): void
+        getPageSize(): number
         nextPage(): boolean
         previousPage(): boolean
       }

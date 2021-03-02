@@ -3,7 +3,7 @@ declare namespace java {
 
     interface DesignMode {
       public static readonly PROPERTYNAME: java.lang.String
-      setDesignTime(arg0: boolean): void
+      setDesignTime(arg0: boolean | java.lang.Boolean): void
       isDesignTime(): boolean
     }
 

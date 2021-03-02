@@ -6,11 +6,11 @@ declare namespace javax {
         protected id: java.lang.String
         protected criticality: boolean
         protected value: byte[]
-        public constructor(arg0: java.lang.String)
-        public constructor(arg0: java.lang.String, arg1: boolean, arg2: byte[])
+        public constructor(arg0: java.lang.String | string)
+        public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: byte[])
         public getID(): java.lang.String
         public isCritical(): boolean
-        public getEncodedValue(): byte[]
+        public getEncodedValue(): number[]
       }
 
     }

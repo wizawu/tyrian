@@ -14,15 +14,15 @@ declare namespace org {
           public static readonly ORDERED_NODE_SNAPSHOT_TYPE: short
           public static readonly ANY_UNORDERED_NODE_TYPE: short
           public static readonly FIRST_ORDERED_NODE_TYPE: short
-          getResultType(): short
-          getNumberValue(): double
+          getResultType(): number
+          getNumberValue(): number
           getStringValue(): java.lang.String
           getBooleanValue(): boolean
           getSingleNodeValue(): org.w3c.dom.Node
           getInvalidIteratorState(): boolean
-          getSnapshotLength(): int
+          getSnapshotLength(): number
           iterateNext(): org.w3c.dom.Node
-          snapshotItem(arg0: int): org.w3c.dom.Node
+          snapshotItem(arg0: number | java.lang.Integer): org.w3c.dom.Node
         }
 
       }

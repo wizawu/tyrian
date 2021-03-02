@@ -4,14 +4,14 @@ declare namespace java {
       namespace atomic {
 
         class AtomicStampedReference<V> {
-          public constructor(arg0: V, arg1: int)
+          public constructor(arg0: V, arg1: number | java.lang.Integer)
           public getReference(): V
-          public getStamp(): int
+          public getStamp(): number
           public get(arg0: int[]): V
-          public weakCompareAndSet(arg0: V, arg1: V, arg2: int, arg3: int): boolean
-          public compareAndSet(arg0: V, arg1: V, arg2: int, arg3: int): boolean
-          public set(arg0: V, arg1: int): void
-          public attemptStamp(arg0: V, arg1: int): boolean
+          public weakCompareAndSet(arg0: V, arg1: V, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): boolean
+          public compareAndSet(arg0: V, arg1: V, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): boolean
+          public set(arg0: V, arg1: number | java.lang.Integer): void
+          public attemptStamp(arg0: V, arg1: number | java.lang.Integer): boolean
         }
 
       }

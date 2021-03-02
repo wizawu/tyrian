@@ -3,11 +3,11 @@ declare namespace javax {
     namespace remote {
 
       interface JMXAuthenticator$$lambda {
-        (arg0: java.lang.Object): javax.security.auth.Subject
+        (arg0: java.lang.Object | any): javax.security.auth.Subject
       }
 
       interface JMXAuthenticator {
-        authenticate(arg0: java.lang.Object): javax.security.auth.Subject
+        authenticate(arg0: java.lang.Object | any): javax.security.auth.Subject
       }
 
     }

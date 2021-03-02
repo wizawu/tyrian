@@ -87,8 +87,8 @@ declare namespace javax {
           public static readonly COMMENT: javax.swing.text.html.HTML$Tag
           static readonly allTags: javax.swing.text.html.HTML$Tag[]
           public constructor()
-          protected constructor(arg0: java.lang.String)
-          protected constructor(arg0: java.lang.String, arg1: boolean, arg2: boolean)
+          protected constructor(arg0: java.lang.String | string)
+          protected constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean)
           public isBlock(): boolean
           public breaksFlow(): boolean
           public isPreformatted(): boolean

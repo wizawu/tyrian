@@ -18,33 +18,33 @@ declare namespace java {
       public constructor(arg0: java.util.TimeZone)
       public constructor(arg0: java.util.Locale)
       public constructor(arg0: java.util.TimeZone, arg1: java.util.Locale)
-      public constructor(arg0: int, arg1: int, arg2: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int)
-      constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int)
-      constructor(arg0: java.util.TimeZone, arg1: java.util.Locale, arg2: boolean)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer)
+      constructor(arg0: java.util.TimeZone, arg1: java.util.Locale, arg2: boolean | java.lang.Boolean)
       public setGregorianChange(arg0: java.util.Date): void
       public getGregorianChange(): java.util.Date
-      public isLeapYear(arg0: int): boolean
+      public isLeapYear(arg0: number | java.lang.Integer): boolean
       public getCalendarType(): java.lang.String
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
-      public add(arg0: int, arg1: int): void
-      public roll(arg0: int, arg1: boolean): void
-      public roll(arg0: int, arg1: int): void
-      public getMinimum(arg0: int): int
-      public getMaximum(arg0: int): int
-      public getGreatestMinimum(arg0: int): int
-      public getLeastMaximum(arg0: int): int
-      public getActualMinimum(arg0: int): int
-      public getActualMaximum(arg0: int): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
+      public add(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public roll(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
+      public roll(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public getMinimum(arg0: number | java.lang.Integer): number
+      public getMaximum(arg0: number | java.lang.Integer): number
+      public getGreatestMinimum(arg0: number | java.lang.Integer): number
+      public getLeastMaximum(arg0: number | java.lang.Integer): number
+      public getActualMinimum(arg0: number | java.lang.Integer): number
+      public getActualMaximum(arg0: number | java.lang.Integer): number
       public clone(): java.lang.Object
       public getTimeZone(): java.util.TimeZone
       public setTimeZone(arg0: java.util.TimeZone): void
       public isWeekDateSupported(): boolean
-      public getWeekYear(): int
-      public setWeekDate(arg0: int, arg1: int, arg2: int): void
-      public getWeeksInWeekYear(): int
+      public getWeekYear(): number
+      public setWeekDate(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public getWeeksInWeekYear(): number
       protected computeFields(): void
       protected computeTime(): void
       public toZonedDateTime(): java.time.ZonedDateTime

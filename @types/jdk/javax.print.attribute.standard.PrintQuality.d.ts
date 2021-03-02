@@ -7,10 +7,10 @@ declare namespace javax {
           public static readonly DRAFT: javax.print.attribute.standard.PrintQuality
           public static readonly NORMAL: javax.print.attribute.standard.PrintQuality
           public static readonly HIGH: javax.print.attribute.standard.PrintQuality
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
-          protected getOffset(): int
+          protected getOffset(): number
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }

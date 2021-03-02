@@ -5,7 +5,7 @@ declare namespace javax {
       class ChangedCharSetException extends java.io.IOException {
         charSetSpec: java.lang.String
         charSetKey: boolean
-        public constructor(arg0: java.lang.String, arg1: boolean)
+        public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
         public getCharSetSpec(): java.lang.String
         public keyEqualsCharSet(): boolean
       }

@@ -11,8 +11,8 @@ declare namespace jdk {
       public static readonly IN_PROGRESS: jdk.net.SocketFlow$Status
       public static readonly OTHER: jdk.net.SocketFlow$Status
       public static values(): jdk.net.SocketFlow$Status[]
-      public static valueOf(arg0: java.lang.String): jdk.net.SocketFlow$Status
-      static from(arg0: int): jdk.net.SocketFlow$Status
+      public static valueOf(arg0: java.lang.String | string): jdk.net.SocketFlow$Status
+      static from(arg0: number | java.lang.Integer): jdk.net.SocketFlow$Status
     }
 
   }

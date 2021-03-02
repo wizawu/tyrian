@@ -3,7 +3,7 @@ declare namespace java {
     namespace http {
 
       class HttpConnectTimeoutException extends java.net.http.HttpTimeoutException {
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

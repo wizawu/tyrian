@@ -5,9 +5,9 @@ declare namespace jdk {
       public static readonly NOPOS: long
       constructor()
       public abstract isError(): boolean
-      public abstract getPosition(): long
-      public abstract getStartPosition(): long
-      public abstract getEndPosition(): long
+      public abstract getPosition(): number
+      public abstract getStartPosition(): number
+      public abstract getEndPosition(): number
       public abstract getCode(): java.lang.String
       public abstract getMessage(arg0: java.util.Locale): java.lang.String
       snippetOrNull(): jdk.jshell.Snippet

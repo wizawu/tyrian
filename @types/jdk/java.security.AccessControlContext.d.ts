@@ -4,10 +4,10 @@ declare namespace java {
     class AccessControlContext {
       static getDebug(): sun.security.util.Debug
       public constructor(arg0: java.security.ProtectionDomain[])
-      public constructor(arg0: java.security.AccessControlContext, arg1: java.security.DomainCombiner)
-      constructor(arg0: java.security.AccessControlContext, arg1: java.security.DomainCombiner, arg2: boolean)
-      constructor(arg0: java.security.ProtectionDomain, arg1: java.security.DomainCombiner, arg2: java.security.AccessControlContext, arg3: java.security.AccessControlContext, arg4: java.security.Permission[])
-      constructor(arg0: java.security.ProtectionDomain[], arg1: boolean)
+      public constructor(arg0: java.security.AccessControlContext, arg1: java.security.DomainCombiner | java.security.DomainCombiner$$lambda)
+      constructor(arg0: java.security.AccessControlContext, arg1: java.security.DomainCombiner | java.security.DomainCombiner$$lambda, arg2: boolean | java.lang.Boolean)
+      constructor(arg0: java.security.ProtectionDomain, arg1: java.security.DomainCombiner | java.security.DomainCombiner$$lambda, arg2: java.security.AccessControlContext, arg3: java.security.AccessControlContext, arg4: java.security.Permission[])
+      constructor(arg0: java.security.ProtectionDomain[], arg1: boolean | java.lang.Boolean)
       constructor(arg0: java.security.ProtectionDomain[], arg1: java.security.AccessControlContext)
       getContext(): java.security.ProtectionDomain[]
       isPrivileged(): boolean
@@ -17,8 +17,8 @@ declare namespace java {
       isAuthorized(): boolean
       public checkPermission(arg0: java.security.Permission): void
       optimize(): java.security.AccessControlContext
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
     }
 
   }

@@ -17,17 +17,17 @@ declare namespace javax {
       public activateFrame(arg0: javax.swing.JInternalFrame): void
       public deactivateFrame(arg0: javax.swing.JInternalFrame): void
       public beginDraggingFrame(arg0: javax.swing.JComponent): void
-      public dragFrame(arg0: javax.swing.JComponent, arg1: int, arg2: int): void
+      public dragFrame(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public endDraggingFrame(arg0: javax.swing.JComponent): void
-      public beginResizingFrame(arg0: javax.swing.JComponent, arg1: int): void
-      public resizeFrame(arg0: javax.swing.JComponent, arg1: int, arg2: int, arg3: int, arg4: int): void
+      public beginResizingFrame(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer): void
+      public resizeFrame(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
       public endResizingFrame(arg0: javax.swing.JComponent): void
-      public setBoundsForFrame(arg0: javax.swing.JComponent, arg1: int, arg2: int, arg3: int, arg4: int): void
+      public setBoundsForFrame(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
       protected removeIconFor(arg0: javax.swing.JInternalFrame): void
       protected getBoundsForIconOf(arg0: javax.swing.JInternalFrame): java.awt.Rectangle
       protected setPreviousBounds(arg0: javax.swing.JInternalFrame, arg1: java.awt.Rectangle): void
       protected getPreviousBounds(arg0: javax.swing.JInternalFrame): java.awt.Rectangle
-      protected setWasIcon(arg0: javax.swing.JInternalFrame, arg1: java.lang.Boolean): void
+      protected setWasIcon(arg0: javax.swing.JInternalFrame, arg1: boolean | java.lang.Boolean): void
       protected wasIcon(arg0: javax.swing.JInternalFrame): boolean
       getDesktopPane(arg0: javax.swing.JComponent): javax.swing.JDesktopPane
     }

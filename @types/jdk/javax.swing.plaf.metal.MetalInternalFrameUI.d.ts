@@ -15,7 +15,7 @@ declare namespace javax {
           protected uninstallKeyboardActions(): void
           protected uninstallComponents(): void
           protected createNorthPane(arg0: javax.swing.JInternalFrame): javax.swing.JComponent
-          public setPalette(arg0: boolean): void
+          public setPalette(arg0: boolean | java.lang.Boolean): void
           protected createBorderListener(arg0: javax.swing.JInternalFrame): javax.swing.event.MouseInputAdapter
           static access$000(arg0: javax.swing.plaf.metal.MetalInternalFrameUI): javax.swing.JInternalFrame
           static access$100(arg0: javax.swing.plaf.metal.MetalInternalFrameUI): javax.swing.plaf.basic.BasicInternalFrameTitlePane

@@ -8,7 +8,7 @@ declare namespace java {
         public getRawResult(): java.lang.Void
         protected setRawResult(arg0: java.lang.Void): void
         protected exec(): boolean
-        protected setRawResult(arg0: java.lang.Object): void
+        protected setRawResult(arg0: java.lang.Object | any): void
         public getRawResult(): java.lang.Object
       }
 

@@ -7,28 +7,28 @@ declare namespace javax {
         public constructor()
         public constructor(arg0: javax.management.modelmbean.ModelMBeanInfo)
         public setModelMBeanInfo(arg0: javax.management.modelmbean.ModelMBeanInfo): void
-        public setManagedResource(arg0: java.lang.Object, arg1: java.lang.String): void
+        public setManagedResource(arg0: java.lang.Object | any, arg1: java.lang.String | string): void
         public load(): void
         public store(): void
         public getMBeanInfo(): javax.management.MBeanInfo
-        public invoke(arg0: java.lang.String, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
-        public getAttribute(arg0: java.lang.String): java.lang.Object
+        public invoke(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
+        public getAttribute(arg0: java.lang.String | string): java.lang.Object
         public getAttributes(arg0: java.lang.String[]): javax.management.AttributeList
         public setAttribute(arg0: javax.management.Attribute): void
         public setAttributes(arg0: javax.management.AttributeList): javax.management.AttributeList
-        public addNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
-        public removeNotificationListener(arg0: javax.management.NotificationListener): void
-        public removeNotificationListener(arg0: javax.management.NotificationListener, arg1: javax.management.NotificationFilter, arg2: java.lang.Object): void
+        public addNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$lambda, arg2: java.lang.Object | any): void
+        public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda): void
+        public removeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$lambda, arg2: java.lang.Object | any): void
         public sendNotification(arg0: javax.management.Notification): void
-        public sendNotification(arg0: java.lang.String): void
+        public sendNotification(arg0: java.lang.String | string): void
         public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
-        public addAttributeChangeNotificationListener(arg0: javax.management.NotificationListener, arg1: java.lang.String, arg2: java.lang.Object): void
-        public removeAttributeChangeNotificationListener(arg0: javax.management.NotificationListener, arg1: java.lang.String): void
+        public addAttributeChangeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda, arg1: java.lang.String | string, arg2: java.lang.Object | any): void
+        public removeAttributeChangeNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda, arg1: java.lang.String | string): void
         public sendAttributeChangeNotification(arg0: javax.management.AttributeChangeNotification): void
         public sendAttributeChangeNotification(arg0: javax.management.Attribute, arg1: javax.management.Attribute): void
         protected getClassLoaderRepository(): javax.management.loading.ClassLoaderRepository
         public preRegister(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName
-        public postRegister(arg0: java.lang.Boolean): void
+        public postRegister(arg0: boolean | java.lang.Boolean): void
         public preDeregister(): void
         public postDeregister(): void
       }

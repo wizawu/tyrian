@@ -74,103 +74,103 @@ declare namespace java {
       public static readonly SIZE: int
       public static readonly BYTES: int
       static readonly $assertionsDisabled: boolean
-      public constructor(arg0: char)
-      public static valueOf(arg0: char): java.lang.Character
-      public charValue(): char
-      public hashCode(): int
-      public static hashCode(arg0: char): int
-      public equals(arg0: java.lang.Object): boolean
+      public constructor(arg0: string | java.lang.Character)
+      public static valueOf(arg0: string | java.lang.Character): string
+      public charValue(): string
+      public hashCode(): number
+      public static hashCode(arg0: string | java.lang.Character): number
+      public equals(arg0: java.lang.Object | any): boolean
       public toString(): java.lang.String
-      public static toString(arg0: char): java.lang.String
-      public static toString(arg0: int): java.lang.String
-      public static isValidCodePoint(arg0: int): boolean
-      public static isBmpCodePoint(arg0: int): boolean
-      public static isSupplementaryCodePoint(arg0: int): boolean
-      public static isHighSurrogate(arg0: char): boolean
-      public static isLowSurrogate(arg0: char): boolean
-      public static isSurrogate(arg0: char): boolean
-      public static isSurrogatePair(arg0: char, arg1: char): boolean
-      public static charCount(arg0: int): int
-      public static toCodePoint(arg0: char, arg1: char): int
-      public static codePointAt(arg0: java.lang.CharSequence, arg1: int): int
-      public static codePointAt(arg0: char[], arg1: int): int
-      public static codePointAt(arg0: char[], arg1: int, arg2: int): int
-      static codePointAtImpl(arg0: char[], arg1: int, arg2: int): int
-      public static codePointBefore(arg0: java.lang.CharSequence, arg1: int): int
-      public static codePointBefore(arg0: char[], arg1: int): int
-      public static codePointBefore(arg0: char[], arg1: int, arg2: int): int
-      static codePointBeforeImpl(arg0: char[], arg1: int, arg2: int): int
-      public static highSurrogate(arg0: int): char
-      public static lowSurrogate(arg0: int): char
-      public static toChars(arg0: int, arg1: char[], arg2: int): int
-      public static toChars(arg0: int): char[]
-      static toSurrogates(arg0: int, arg1: char[], arg2: int): void
-      public static codePointCount(arg0: java.lang.CharSequence, arg1: int, arg2: int): int
-      public static codePointCount(arg0: char[], arg1: int, arg2: int): int
-      static codePointCountImpl(arg0: char[], arg1: int, arg2: int): int
-      public static offsetByCodePoints(arg0: java.lang.CharSequence, arg1: int, arg2: int): int
-      public static offsetByCodePoints(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: int): int
-      static offsetByCodePointsImpl(arg0: char[], arg1: int, arg2: int, arg3: int, arg4: int): int
-      public static isLowerCase(arg0: char): boolean
-      public static isLowerCase(arg0: int): boolean
-      public static isUpperCase(arg0: char): boolean
-      public static isUpperCase(arg0: int): boolean
-      public static isTitleCase(arg0: char): boolean
-      public static isTitleCase(arg0: int): boolean
-      public static isDigit(arg0: char): boolean
-      public static isDigit(arg0: int): boolean
-      public static isDefined(arg0: char): boolean
-      public static isDefined(arg0: int): boolean
-      public static isLetter(arg0: char): boolean
-      public static isLetter(arg0: int): boolean
-      public static isLetterOrDigit(arg0: char): boolean
-      public static isLetterOrDigit(arg0: int): boolean
-      public static isJavaLetter(arg0: char): boolean
-      public static isJavaLetterOrDigit(arg0: char): boolean
-      public static isAlphabetic(arg0: int): boolean
-      public static isIdeographic(arg0: int): boolean
-      public static isJavaIdentifierStart(arg0: char): boolean
-      public static isJavaIdentifierStart(arg0: int): boolean
-      public static isJavaIdentifierPart(arg0: char): boolean
-      public static isJavaIdentifierPart(arg0: int): boolean
-      public static isUnicodeIdentifierStart(arg0: char): boolean
-      public static isUnicodeIdentifierStart(arg0: int): boolean
-      public static isUnicodeIdentifierPart(arg0: char): boolean
-      public static isUnicodeIdentifierPart(arg0: int): boolean
-      public static isIdentifierIgnorable(arg0: char): boolean
-      public static isIdentifierIgnorable(arg0: int): boolean
-      public static toLowerCase(arg0: char): char
-      public static toLowerCase(arg0: int): int
-      public static toUpperCase(arg0: char): char
-      public static toUpperCase(arg0: int): int
-      public static toTitleCase(arg0: char): char
-      public static toTitleCase(arg0: int): int
-      public static digit(arg0: char, arg1: int): int
-      public static digit(arg0: int, arg1: int): int
-      public static getNumericValue(arg0: char): int
-      public static getNumericValue(arg0: int): int
-      public static isSpace(arg0: char): boolean
-      public static isSpaceChar(arg0: char): boolean
-      public static isSpaceChar(arg0: int): boolean
-      public static isWhitespace(arg0: char): boolean
-      public static isWhitespace(arg0: int): boolean
-      public static isISOControl(arg0: char): boolean
-      public static isISOControl(arg0: int): boolean
-      public static getType(arg0: char): int
-      public static getType(arg0: int): int
-      public static forDigit(arg0: int, arg1: int): char
-      public static getDirectionality(arg0: char): byte
-      public static getDirectionality(arg0: int): byte
-      public static isMirrored(arg0: char): boolean
-      public static isMirrored(arg0: int): boolean
-      public compareTo(arg0: java.lang.Character): int
-      public static compare(arg0: char, arg1: char): int
-      static toUpperCaseEx(arg0: int): int
-      static toUpperCaseCharArray(arg0: int): char[]
-      public static reverseBytes(arg0: char): char
-      public static getName(arg0: int): java.lang.String
-      public static codePointOf(arg0: java.lang.String): int
-      public compareTo(arg0: java.lang.Object): int
+      public static toString(arg0: string | java.lang.Character): java.lang.String
+      public static toString(arg0: number | java.lang.Integer): java.lang.String
+      public static isValidCodePoint(arg0: number | java.lang.Integer): boolean
+      public static isBmpCodePoint(arg0: number | java.lang.Integer): boolean
+      public static isSupplementaryCodePoint(arg0: number | java.lang.Integer): boolean
+      public static isHighSurrogate(arg0: string | java.lang.Character): boolean
+      public static isLowSurrogate(arg0: string | java.lang.Character): boolean
+      public static isSurrogate(arg0: string | java.lang.Character): boolean
+      public static isSurrogatePair(arg0: string | java.lang.Character, arg1: string | java.lang.Character): boolean
+      public static charCount(arg0: number | java.lang.Integer): number
+      public static toCodePoint(arg0: string | java.lang.Character, arg1: string | java.lang.Character): number
+      public static codePointAt(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer): number
+      public static codePointAt(arg0: char[], arg1: number | java.lang.Integer): number
+      public static codePointAt(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      static codePointAtImpl(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public static codePointBefore(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer): number
+      public static codePointBefore(arg0: char[], arg1: number | java.lang.Integer): number
+      public static codePointBefore(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      static codePointBeforeImpl(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public static highSurrogate(arg0: number | java.lang.Integer): string
+      public static lowSurrogate(arg0: number | java.lang.Integer): string
+      public static toChars(arg0: number | java.lang.Integer, arg1: char[], arg2: number | java.lang.Integer): number
+      public static toChars(arg0: number | java.lang.Integer): string[]
+      static toSurrogates(arg0: number | java.lang.Integer, arg1: char[], arg2: number | java.lang.Integer): void
+      public static codePointCount(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public static codePointCount(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      static codePointCountImpl(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public static offsetByCodePoints(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public static offsetByCodePoints(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
+      static offsetByCodePointsImpl(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
+      public static isLowerCase(arg0: string | java.lang.Character): boolean
+      public static isLowerCase(arg0: number | java.lang.Integer): boolean
+      public static isUpperCase(arg0: string | java.lang.Character): boolean
+      public static isUpperCase(arg0: number | java.lang.Integer): boolean
+      public static isTitleCase(arg0: string | java.lang.Character): boolean
+      public static isTitleCase(arg0: number | java.lang.Integer): boolean
+      public static isDigit(arg0: string | java.lang.Character): boolean
+      public static isDigit(arg0: number | java.lang.Integer): boolean
+      public static isDefined(arg0: string | java.lang.Character): boolean
+      public static isDefined(arg0: number | java.lang.Integer): boolean
+      public static isLetter(arg0: string | java.lang.Character): boolean
+      public static isLetter(arg0: number | java.lang.Integer): boolean
+      public static isLetterOrDigit(arg0: string | java.lang.Character): boolean
+      public static isLetterOrDigit(arg0: number | java.lang.Integer): boolean
+      public static isJavaLetter(arg0: string | java.lang.Character): boolean
+      public static isJavaLetterOrDigit(arg0: string | java.lang.Character): boolean
+      public static isAlphabetic(arg0: number | java.lang.Integer): boolean
+      public static isIdeographic(arg0: number | java.lang.Integer): boolean
+      public static isJavaIdentifierStart(arg0: string | java.lang.Character): boolean
+      public static isJavaIdentifierStart(arg0: number | java.lang.Integer): boolean
+      public static isJavaIdentifierPart(arg0: string | java.lang.Character): boolean
+      public static isJavaIdentifierPart(arg0: number | java.lang.Integer): boolean
+      public static isUnicodeIdentifierStart(arg0: string | java.lang.Character): boolean
+      public static isUnicodeIdentifierStart(arg0: number | java.lang.Integer): boolean
+      public static isUnicodeIdentifierPart(arg0: string | java.lang.Character): boolean
+      public static isUnicodeIdentifierPart(arg0: number | java.lang.Integer): boolean
+      public static isIdentifierIgnorable(arg0: string | java.lang.Character): boolean
+      public static isIdentifierIgnorable(arg0: number | java.lang.Integer): boolean
+      public static toLowerCase(arg0: string | java.lang.Character): string
+      public static toLowerCase(arg0: number | java.lang.Integer): number
+      public static toUpperCase(arg0: string | java.lang.Character): string
+      public static toUpperCase(arg0: number | java.lang.Integer): number
+      public static toTitleCase(arg0: string | java.lang.Character): string
+      public static toTitleCase(arg0: number | java.lang.Integer): number
+      public static digit(arg0: string | java.lang.Character, arg1: number | java.lang.Integer): number
+      public static digit(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+      public static getNumericValue(arg0: string | java.lang.Character): number
+      public static getNumericValue(arg0: number | java.lang.Integer): number
+      public static isSpace(arg0: string | java.lang.Character): boolean
+      public static isSpaceChar(arg0: string | java.lang.Character): boolean
+      public static isSpaceChar(arg0: number | java.lang.Integer): boolean
+      public static isWhitespace(arg0: string | java.lang.Character): boolean
+      public static isWhitespace(arg0: number | java.lang.Integer): boolean
+      public static isISOControl(arg0: string | java.lang.Character): boolean
+      public static isISOControl(arg0: number | java.lang.Integer): boolean
+      public static getType(arg0: string | java.lang.Character): number
+      public static getType(arg0: number | java.lang.Integer): number
+      public static forDigit(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): string
+      public static getDirectionality(arg0: string | java.lang.Character): number
+      public static getDirectionality(arg0: number | java.lang.Integer): number
+      public static isMirrored(arg0: string | java.lang.Character): boolean
+      public static isMirrored(arg0: number | java.lang.Integer): boolean
+      public compareTo(arg0: string | java.lang.Character): number
+      public static compare(arg0: string | java.lang.Character, arg1: string | java.lang.Character): number
+      static toUpperCaseEx(arg0: number | java.lang.Integer): number
+      static toUpperCaseCharArray(arg0: number | java.lang.Integer): string[]
+      public static reverseBytes(arg0: string | java.lang.Character): string
+      public static getName(arg0: number | java.lang.Integer): java.lang.String
+      public static codePointOf(arg0: java.lang.String | string): number
+      public compareTo(arg0: java.lang.Object | any): number
     }
 
   }

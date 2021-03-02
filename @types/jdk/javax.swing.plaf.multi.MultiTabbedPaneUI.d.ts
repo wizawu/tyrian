@@ -7,10 +7,10 @@ declare namespace javax {
           protected uis: java.util.Vector<javax.swing.plaf.ComponentUI>
           public constructor()
           public getUIs(): javax.swing.plaf.ComponentUI[]
-          public tabForCoordinate(arg0: javax.swing.JTabbedPane, arg1: int, arg2: int): int
-          public getTabBounds(arg0: javax.swing.JTabbedPane, arg1: int): java.awt.Rectangle
-          public getTabRunCount(arg0: javax.swing.JTabbedPane): int
-          public contains(arg0: javax.swing.JComponent, arg1: int, arg2: int): boolean
+          public tabForCoordinate(arg0: javax.swing.JTabbedPane, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public getTabBounds(arg0: javax.swing.JTabbedPane, arg1: number | java.lang.Integer): java.awt.Rectangle
+          public getTabRunCount(arg0: javax.swing.JTabbedPane): number
+          public contains(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public installUI(arg0: javax.swing.JComponent): void
@@ -19,8 +19,8 @@ declare namespace javax {
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          public getAccessibleChildrenCount(arg0: javax.swing.JComponent): int
-          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: int): javax.accessibility.Accessible
+          public getAccessibleChildrenCount(arg0: javax.swing.JComponent): number
+          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer): javax.accessibility.Accessible
         }
 
       }

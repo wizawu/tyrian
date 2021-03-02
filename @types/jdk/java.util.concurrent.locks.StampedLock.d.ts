@@ -8,31 +8,31 @@ declare namespace java {
           writeLockView: java.util.concurrent.locks.StampedLock$WriteLockView
           readWriteLockView: java.util.concurrent.locks.StampedLock$ReadWriteLockView
           public constructor()
-          public writeLock(): long
-          public tryWriteLock(): long
-          public tryWriteLock(arg0: long, arg1: java.util.concurrent.TimeUnit): long
-          public writeLockInterruptibly(): long
-          public readLock(): long
-          public tryReadLock(): long
-          public tryReadLock(arg0: long, arg1: java.util.concurrent.TimeUnit): long
-          public readLockInterruptibly(): long
-          public tryOptimisticRead(): long
-          public validate(arg0: long): boolean
-          public unlockWrite(arg0: long): void
-          public unlockRead(arg0: long): void
-          public unlock(arg0: long): void
-          public tryConvertToWriteLock(arg0: long): long
-          public tryConvertToReadLock(arg0: long): long
-          public tryConvertToOptimisticRead(arg0: long): long
+          public writeLock(): number
+          public tryWriteLock(): number
+          public tryWriteLock(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): number
+          public writeLockInterruptibly(): number
+          public readLock(): number
+          public tryReadLock(): number
+          public tryReadLock(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): number
+          public readLockInterruptibly(): number
+          public tryOptimisticRead(): number
+          public validate(arg0: number | java.lang.Long): boolean
+          public unlockWrite(arg0: number | java.lang.Long): void
+          public unlockRead(arg0: number | java.lang.Long): void
+          public unlock(arg0: number | java.lang.Long): void
+          public tryConvertToWriteLock(arg0: number | java.lang.Long): number
+          public tryConvertToReadLock(arg0: number | java.lang.Long): number
+          public tryConvertToOptimisticRead(arg0: number | java.lang.Long): number
           public tryUnlockWrite(): boolean
           public tryUnlockRead(): boolean
           public isWriteLocked(): boolean
           public isReadLocked(): boolean
-          public static isWriteLockStamp(arg0: long): boolean
-          public static isReadLockStamp(arg0: long): boolean
-          public static isLockStamp(arg0: long): boolean
-          public static isOptimisticReadStamp(arg0: long): boolean
-          public getReadLockCount(): int
+          public static isWriteLockStamp(arg0: number | java.lang.Long): boolean
+          public static isReadLockStamp(arg0: number | java.lang.Long): boolean
+          public static isLockStamp(arg0: number | java.lang.Long): boolean
+          public static isOptimisticReadStamp(arg0: number | java.lang.Long): boolean
+          public getReadLockCount(): number
           public toString(): java.lang.String
           public asReadLock(): java.util.concurrent.locks.Lock
           public asWriteLock(): java.util.concurrent.locks.Lock

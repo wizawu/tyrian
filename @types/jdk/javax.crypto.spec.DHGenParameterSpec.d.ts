@@ -3,9 +3,9 @@ declare namespace javax {
     namespace spec {
 
       class DHGenParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-        public constructor(arg0: int, arg1: int)
-        public getPrimeSize(): int
-        public getExponentSize(): int
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        public getPrimeSize(): number
+        public getExponentSize(): number
       }
 
     }

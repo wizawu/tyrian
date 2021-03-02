@@ -12,9 +12,9 @@ declare namespace javax {
       setFont(arg0: java.awt.Font): void
       getFontMetrics(arg0: java.awt.Font): java.awt.FontMetrics
       isEnabled(): boolean
-      setEnabled(arg0: boolean): void
+      setEnabled(arg0: boolean | java.lang.Boolean): void
       isVisible(): boolean
-      setVisible(arg0: boolean): void
+      setVisible(arg0: boolean | java.lang.Boolean): void
       isShowing(): boolean
       contains(arg0: java.awt.Point): boolean
       getLocationOnScreen(): java.awt.Point

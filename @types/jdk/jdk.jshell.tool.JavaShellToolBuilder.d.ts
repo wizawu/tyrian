@@ -13,9 +13,9 @@ declare namespace jdk {
         persistence(arg0: java.util.Map<java.lang.String,java.lang.String>): jdk.jshell.tool.JavaShellToolBuilder
         env(arg0: java.util.Map<java.lang.String,java.lang.String>): jdk.jshell.tool.JavaShellToolBuilder
         locale(arg0: java.util.Locale): jdk.jshell.tool.JavaShellToolBuilder
-        promptCapture(arg0: boolean): jdk.jshell.tool.JavaShellToolBuilder
-        run(...arg0: java.lang.String[]): void
-        start(...arg0: java.lang.String[]): int
+        promptCapture(arg0: boolean | java.lang.Boolean): jdk.jshell.tool.JavaShellToolBuilder
+        run(...vargs: (java.lang.String | string)[]): void
+        start(...vargs: (java.lang.String | string)[]): number
       }
 
     }

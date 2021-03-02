@@ -10,7 +10,7 @@ declare namespace jdk {
       public static readonly STATEMENT: jdk.jshell.Snippet$Kind
       public static readonly ERRONEOUS: jdk.jshell.Snippet$Kind
       public static values(): jdk.jshell.Snippet$Kind[]
-      public static valueOf(arg0: java.lang.String): jdk.jshell.Snippet$Kind
+      public static valueOf(arg0: java.lang.String | string): jdk.jshell.Snippet$Kind
       public isPersistent(): boolean
     }
 

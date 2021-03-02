@@ -9,14 +9,14 @@ declare namespace javax {
             public type: int
             public data: char[]
             static entityTypes: java.util.Hashtable<java.lang.String,java.lang.Integer>
-            public constructor(arg0: java.lang.String, arg1: int, arg2: char[])
+            public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: char[])
             public getName(): java.lang.String
-            public getType(): int
+            public getType(): number
             public isParameter(): boolean
             public isGeneral(): boolean
-            public getData(): char[]
+            public getData(): string[]
             public getString(): java.lang.String
-            public static name2type(arg0: java.lang.String): int
+            public static name2type(arg0: java.lang.String | string): number
           }
 
         }

@@ -4,16 +4,16 @@ declare namespace java {
       namespace atomic {
 
         class LongAccumulator extends java.util.concurrent.atomic.Striped64 implements java.io.Serializable {
-          public constructor(arg0: java.util.function$.LongBinaryOperator, arg1: long)
-          public accumulate(arg0: long): void
-          public get(): long
+          public constructor(arg0: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda, arg1: number | java.lang.Long)
+          public accumulate(arg0: number | java.lang.Long): void
+          public get(): number
           public reset(): void
-          public getThenReset(): long
+          public getThenReset(): number
           public toString(): java.lang.String
-          public longValue(): long
-          public intValue(): int
-          public floatValue(): float
-          public doubleValue(): double
+          public longValue(): number
+          public intValue(): number
+          public floatValue(): number
+          public doubleValue(): number
         }
 
       }

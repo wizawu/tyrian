@@ -15,18 +15,18 @@ declare namespace javax {
           protected uninstallDefaults(): void
           protected uninstallListeners(): void
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
-          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
+          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
-          protected paintHorizontalPartOfLeg(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: int, arg6: boolean, arg7: boolean, arg8: boolean): void
-          protected paintHorizontalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: int, arg3: int, arg4: int): void
+          protected paintHorizontalPartOfLeg(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: number | java.lang.Integer, arg6: boolean | java.lang.Boolean, arg7: boolean | java.lang.Boolean, arg8: boolean | java.lang.Boolean): void
+          protected paintHorizontalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
           protected paintVerticalPartOfLeg(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: javax.swing.tree.TreePath): void
-          protected paintVerticalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: int, arg3: int, arg4: int): void
-          protected paintExpandControl(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: int, arg6: boolean, arg7: boolean, arg8: boolean): void
-          protected drawCentered(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: javax.swing.Icon, arg3: int, arg4: int): void
+          protected paintVerticalLine(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+          protected paintExpandControl(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: java.awt.Insets, arg3: java.awt.Rectangle, arg4: javax.swing.tree.TreePath, arg5: number | java.lang.Integer, arg6: boolean | java.lang.Boolean, arg7: boolean | java.lang.Boolean, arg8: boolean | java.lang.Boolean): void
+          protected drawCentered(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: javax.swing.Icon, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void
           protected paintDropLine(arg0: java.awt.Graphics): void
-          protected getRowX(arg0: int, arg1: int): int
+          protected getRowX(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
           static access$000(arg0: javax.swing.plaf.synth.SynthTreeUI): javax.swing.JTree
           static access$100(arg0: javax.swing.plaf.synth.SynthTreeUI): javax.swing.JTree
           static access$200(arg0: javax.swing.plaf.synth.SynthTreeUI): javax.swing.Icon

@@ -10,8 +10,8 @@ declare namespace java {
           public principal(): java.nio.file.attribute.UserPrincipal
           public permissions(): java.util.Set<java.nio.file.attribute.AclEntryPermission>
           public flags(): java.util.Set<java.nio.file.attribute.AclEntryFlag>
-          public equals(arg0: java.lang.Object): boolean
-          public hashCode(): int
+          public equals(arg0: java.lang.Object | any): boolean
+          public hashCode(): number
           public toString(): java.lang.String
         }
 

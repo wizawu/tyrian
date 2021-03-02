@@ -15,19 +15,19 @@ declare namespace javax {
         public constructor(arg0: javax.swing.table.TableColumnModel)
         public setTable(arg0: javax.swing.JTable): void
         public getTable(): javax.swing.JTable
-        public setReorderingAllowed(arg0: boolean): void
+        public setReorderingAllowed(arg0: boolean | java.lang.Boolean): void
         public getReorderingAllowed(): boolean
-        public setResizingAllowed(arg0: boolean): void
+        public setResizingAllowed(arg0: boolean | java.lang.Boolean): void
         public getResizingAllowed(): boolean
         public getDraggedColumn(): javax.swing.table.TableColumn
-        public getDraggedDistance(): int
+        public getDraggedDistance(): number
         public getResizingColumn(): javax.swing.table.TableColumn
-        public setUpdateTableInRealTime(arg0: boolean): void
+        public setUpdateTableInRealTime(arg0: boolean | java.lang.Boolean): void
         public getUpdateTableInRealTime(): boolean
-        public setDefaultRenderer(arg0: javax.swing.table.TableCellRenderer): void
+        public setDefaultRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda): void
         public getDefaultRenderer(): javax.swing.table.TableCellRenderer
-        public columnAtPoint(arg0: java.awt.Point): int
-        public getHeaderRect(arg0: int): java.awt.Rectangle
+        public columnAtPoint(arg0: java.awt.Point): number
+        public getHeaderRect(arg0: number | java.lang.Integer): java.awt.Rectangle
         public getToolTipText(arg0: java.awt.event.MouseEvent): java.lang.String
         public getPreferredSize(): java.awt.Dimension
         public getUI(): javax.swing.plaf.TableHeaderUI
@@ -46,7 +46,7 @@ declare namespace javax {
         protected initializeLocalVars(): void
         public resizeAndRepaint(): void
         public setDraggedColumn(arg0: javax.swing.table.TableColumn): void
-        public setDraggedDistance(arg0: int): void
+        public setDraggedDistance(arg0: number | java.lang.Integer): void
         public setResizingColumn(arg0: javax.swing.table.TableColumn): void
         protected paramString(): java.lang.String
         public getAccessibleContext(): javax.accessibility.AccessibleContext

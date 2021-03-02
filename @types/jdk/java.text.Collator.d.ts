@@ -14,18 +14,18 @@ declare namespace java {
       static readonly GREATER: int
       public static getInstance(): java.text.Collator
       public static getInstance(arg0: java.util.Locale): java.text.Collator
-      public abstract compare(arg0: java.lang.String, arg1: java.lang.String): int
-      public compare(arg0: java.lang.Object, arg1: java.lang.Object): int
-      public abstract getCollationKey(arg0: java.lang.String): java.text.CollationKey
-      public equals(arg0: java.lang.String, arg1: java.lang.String): boolean
-      public getStrength(): int
-      public setStrength(arg0: int): void
-      public getDecomposition(): int
-      public setDecomposition(arg0: int): void
+      public abstract compare(arg0: java.lang.String | string, arg1: java.lang.String | string): number
+      public compare(arg0: java.lang.Object | any, arg1: java.lang.Object | any): number
+      public abstract getCollationKey(arg0: java.lang.String | string): java.text.CollationKey
+      public equals(arg0: java.lang.String | string, arg1: java.lang.String | string): boolean
+      public getStrength(): number
+      public setStrength(arg0: number | java.lang.Integer): void
+      public getDecomposition(): number
+      public setDecomposition(arg0: number | java.lang.Integer): void
       public static getAvailableLocales(): java.util.Locale[]
       public clone(): java.lang.Object
-      public equals(arg0: java.lang.Object): boolean
-      public abstract hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public abstract hashCode(): number
       protected constructor()
     }
 

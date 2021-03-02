@@ -6,7 +6,7 @@ declare namespace javax {
       public static readonly DOCLET_PATH: javax.tools.DocumentationTool$Location
       public static readonly TAGLET_PATH: javax.tools.DocumentationTool$Location
       public static values(): javax.tools.DocumentationTool$Location[]
-      public static valueOf(arg0: java.lang.String): javax.tools.DocumentationTool$Location
+      public static valueOf(arg0: java.lang.String | string): javax.tools.DocumentationTool$Location
       public getName(): java.lang.String
       public isOutputLocation(): boolean
     }

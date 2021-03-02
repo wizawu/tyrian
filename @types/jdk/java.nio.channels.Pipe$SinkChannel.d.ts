@@ -4,7 +4,7 @@ declare namespace java {
 
       abstract class Pipe$SinkChannel extends java.nio.channels.spi.AbstractSelectableChannel implements java.nio.channels.WritableByteChannel, java.nio.channels.GatheringByteChannel {
         protected constructor(arg0: java.nio.channels.spi.SelectorProvider)
-        public validOps(): int
+        public validOps(): number
       }
 
     }

@@ -3,11 +3,11 @@ declare namespace javax {
     namespace crypto {
 
       interface XMLStructure$$lambda {
-        (arg0: java.lang.String): boolean
+        (arg0: java.lang.String | string): boolean
       }
 
       interface XMLStructure {
-        isFeatureSupported(arg0: java.lang.String): boolean
+        isFeatureSupported(arg0: java.lang.String | string): boolean
       }
 
     }

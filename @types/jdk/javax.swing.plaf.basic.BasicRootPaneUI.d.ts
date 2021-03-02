@@ -16,8 +16,8 @@ declare namespace javax {
           protected uninstallComponents(arg0: javax.swing.JRootPane): void
           protected uninstallListeners(arg0: javax.swing.JRootPane): void
           protected uninstallKeyboardActions(arg0: javax.swing.JRootPane): void
-          getInputMap(arg0: int, arg1: javax.swing.JComponent): javax.swing.InputMap
-          createInputMap(arg0: int, arg1: javax.swing.JComponent): javax.swing.ComponentInputMap
+          getInputMap(arg0: number | java.lang.Integer, arg1: javax.swing.JComponent): javax.swing.InputMap
+          createInputMap(arg0: number | java.lang.Integer, arg1: javax.swing.JComponent): javax.swing.ComponentInputMap
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
           updateDefaultButtonBindings(arg0: javax.swing.JRootPane): void
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void

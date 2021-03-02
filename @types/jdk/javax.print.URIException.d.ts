@@ -6,7 +6,7 @@ declare namespace javax {
       public static readonly URISchemeNotSupported: int
       public static readonly URIOtherProblem: int
       getUnsupportedURI(): java.net.URI
-      getReason(): int
+      getReason(): number
     }
 
   }

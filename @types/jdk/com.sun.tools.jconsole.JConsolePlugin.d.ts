@@ -10,8 +10,8 @@ declare namespace com {
           public abstract getTabs(): java.util.Map<java.lang.String,javax.swing.JPanel>
           public abstract newSwingWorker(): javax.swing.SwingWorker<unknown,unknown>
           public dispose(): void
-          public addContextPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
-          public removeContextPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void
+          public addContextPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+          public removeContextPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
         }
 
       }

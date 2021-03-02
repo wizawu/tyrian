@@ -5,26 +5,26 @@ declare namespace java {
       class Phaser {
         static readonly SPINS_PER_ARRIVAL: int
         public constructor()
-        public constructor(arg0: int)
+        public constructor(arg0: number | java.lang.Integer)
         public constructor(arg0: java.util.concurrent.Phaser)
-        public constructor(arg0: java.util.concurrent.Phaser, arg1: int)
-        public register(): int
-        public bulkRegister(arg0: int): int
-        public arrive(): int
-        public arriveAndDeregister(): int
-        public arriveAndAwaitAdvance(): int
-        public awaitAdvance(arg0: int): int
-        public awaitAdvanceInterruptibly(arg0: int): int
-        public awaitAdvanceInterruptibly(arg0: int, arg1: long, arg2: java.util.concurrent.TimeUnit): int
+        public constructor(arg0: java.util.concurrent.Phaser, arg1: number | java.lang.Integer)
+        public register(): number
+        public bulkRegister(arg0: number | java.lang.Integer): number
+        public arrive(): number
+        public arriveAndDeregister(): number
+        public arriveAndAwaitAdvance(): number
+        public awaitAdvance(arg0: number | java.lang.Integer): number
+        public awaitAdvanceInterruptibly(arg0: number | java.lang.Integer): number
+        public awaitAdvanceInterruptibly(arg0: number | java.lang.Integer, arg1: number | java.lang.Long, arg2: java.util.concurrent.TimeUnit): number
         public forceTermination(): void
-        public getPhase(): int
-        public getRegisteredParties(): int
-        public getArrivedParties(): int
-        public getUnarrivedParties(): int
+        public getPhase(): number
+        public getRegisteredParties(): number
+        public getArrivedParties(): number
+        public getUnarrivedParties(): number
         public getParent(): java.util.concurrent.Phaser
         public getRoot(): java.util.concurrent.Phaser
         public isTerminated(): boolean
-        protected onAdvance(arg0: int, arg1: int): boolean
+        protected onAdvance(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
         public toString(): java.lang.String
       }
 

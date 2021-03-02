@@ -51,33 +51,33 @@ declare namespace javax {
           protected createModelListener(): javax.swing.plaf.basic.BasicScrollBarUI$ModelListener
           protected createScrollListener(): javax.swing.plaf.basic.BasicScrollBarUI$ScrollListener
           protected createPropertyChangeListener(): java.beans.PropertyChangeListener
-          protected setThumbRollover(arg0: boolean): void
+          protected setThumbRollover(arg0: boolean | java.lang.Boolean): void
           public isThumbRollover(): boolean
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          protected createDecreaseButton(arg0: int): javax.swing.JButton
-          protected createIncreaseButton(arg0: int): javax.swing.JButton
+          protected createDecreaseButton(arg0: number | java.lang.Integer): javax.swing.JButton
+          protected createIncreaseButton(arg0: number | java.lang.Integer): javax.swing.JButton
           protected paintDecreaseHighlight(arg0: java.awt.Graphics): void
           protected paintIncreaseHighlight(arg0: java.awt.Graphics): void
           protected paintTrack(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
           protected paintThumb(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
           protected getMinimumThumbSize(): java.awt.Dimension
           protected getMaximumThumbSize(): java.awt.Dimension
-          public addLayoutComponent(arg0: java.lang.String, arg1: java.awt.Component): void
+          public addLayoutComponent(arg0: java.lang.String | string, arg1: java.awt.Component): void
           public removeLayoutComponent(arg0: java.awt.Component): void
           public preferredLayoutSize(arg0: java.awt.Container): java.awt.Dimension
           public minimumLayoutSize(arg0: java.awt.Container): java.awt.Dimension
           protected layoutVScrollbar(arg0: javax.swing.JScrollBar): void
           protected layoutHScrollbar(arg0: javax.swing.JScrollBar): void
           public layoutContainer(arg0: java.awt.Container): void
-          protected setThumbBounds(arg0: int, arg1: int, arg2: int, arg3: int): void
+          protected setThumbBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
           protected getThumbBounds(): java.awt.Rectangle
           protected getTrackBounds(): java.awt.Rectangle
-          static scrollByBlock(arg0: javax.swing.JScrollBar, arg1: int): void
-          protected scrollByBlock(arg0: int): void
-          static scrollByUnits(arg0: javax.swing.JScrollBar, arg1: int, arg2: int, arg3: boolean): void
-          protected scrollByUnit(arg0: int): void
+          static scrollByBlock(arg0: javax.swing.JScrollBar, arg1: number | java.lang.Integer): void
+          protected scrollByBlock(arg0: number | java.lang.Integer): void
+          static scrollByUnits(arg0: javax.swing.JScrollBar, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean): void
+          protected scrollByUnit(arg0: number | java.lang.Integer): void
           public getSupportsAbsolutePositioning(): boolean
         }
 

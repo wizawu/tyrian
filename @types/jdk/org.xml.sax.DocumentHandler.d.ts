@@ -6,11 +6,11 @@ declare namespace org {
         setDocumentLocator(arg0: org.xml.sax.Locator): void
         startDocument(): void
         endDocument(): void
-        startElement(arg0: java.lang.String, arg1: org.xml.sax.AttributeList): void
-        endElement(arg0: java.lang.String): void
-        characters(arg0: char[], arg1: int, arg2: int): void
-        ignorableWhitespace(arg0: char[], arg1: int, arg2: int): void
-        processingInstruction(arg0: java.lang.String, arg1: java.lang.String): void
+        startElement(arg0: java.lang.String | string, arg1: org.xml.sax.AttributeList): void
+        endElement(arg0: java.lang.String | string): void
+        characters(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        ignorableWhitespace(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        processingInstruction(arg0: java.lang.String | string, arg1: java.lang.String | string): void
       }
 
     }

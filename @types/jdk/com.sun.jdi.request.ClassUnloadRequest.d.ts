@@ -4,8 +4,8 @@ declare namespace com {
       namespace request {
 
         interface ClassUnloadRequest extends com.sun.jdi.request.EventRequest {
-          addClassFilter(arg0: java.lang.String): void
-          addClassExclusionFilter(arg0: java.lang.String): void
+          addClassFilter(arg0: java.lang.String | string): void
+          addClassExclusionFilter(arg0: java.lang.String | string): void
         }
 
       }

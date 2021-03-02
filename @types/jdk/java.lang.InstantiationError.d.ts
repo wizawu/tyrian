@@ -3,7 +3,7 @@ declare namespace java {
 
     class InstantiationError extends java.lang.IncompatibleClassChangeError {
       public constructor()
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
     }
 
   }

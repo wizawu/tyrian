@@ -4,14 +4,14 @@ declare namespace java {
     interface SQLInput {
       readString(): java.lang.String
       readBoolean(): boolean
-      readByte(): byte
-      readShort(): short
-      readInt(): int
-      readLong(): long
-      readFloat(): float
-      readDouble(): double
+      readByte(): number
+      readShort(): number
+      readInt(): number
+      readLong(): number
+      readFloat(): number
+      readDouble(): number
       readBigDecimal(): java.math.BigDecimal
-      readBytes(): byte[]
+      readBytes(): number[]
       readDate(): java.sql.Date
       readTime(): java.sql.Time
       readTimestamp(): java.sql.Timestamp

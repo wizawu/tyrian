@@ -15,8 +15,8 @@ declare namespace javax {
           getEncryptionKeys(arg0: sun.security.krb5.PrincipalName): sun.security.krb5.EncryptionKey[]
           public exists(): boolean
           public toString(): java.lang.String
-          public hashCode(): int
-          public equals(arg0: java.lang.Object): boolean
+          public hashCode(): number
+          public equals(arg0: java.lang.Object | any): boolean
           public getPrincipal(): javax.security.auth.kerberos.KerberosPrincipal
           public isBound(): boolean
         }

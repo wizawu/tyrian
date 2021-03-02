@@ -6,7 +6,7 @@ declare namespace org {
         getName(): java.lang.String
         getSpecified(): boolean
         getValue(): java.lang.String
-        setValue(arg0: java.lang.String): void
+        setValue(arg0: java.lang.String | string): void
         getOwnerElement(): org.w3c.dom.Element
         getSchemaTypeInfo(): org.w3c.dom.TypeInfo
         isId(): boolean

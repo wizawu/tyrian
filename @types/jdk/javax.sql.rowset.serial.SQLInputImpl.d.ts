@@ -7,14 +7,14 @@ declare namespace javax {
           public constructor(arg0: java.lang.Object[], arg1: java.util.Map<java.lang.String,java.lang.Class<unknown>>)
           public readString(): java.lang.String
           public readBoolean(): boolean
-          public readByte(): byte
-          public readShort(): short
-          public readInt(): int
-          public readLong(): long
-          public readFloat(): float
-          public readDouble(): double
+          public readByte(): number
+          public readShort(): number
+          public readInt(): number
+          public readLong(): number
+          public readFloat(): number
+          public readDouble(): number
           public readBigDecimal(): java.math.BigDecimal
-          public readBytes(): byte[]
+          public readBytes(): number[]
           public readDate(): java.sql.Date
           public readTime(): java.sql.Time
           public readTimestamp(): java.sql.Timestamp

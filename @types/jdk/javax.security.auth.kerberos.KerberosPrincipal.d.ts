@@ -11,13 +11,13 @@ declare namespace javax {
           public static readonly KRB_NT_SRV_XHST: int
           public static readonly KRB_NT_UID: int
           static readonly KRB_NT_ENTERPRISE: int
-          public constructor(arg0: java.lang.String)
-          public constructor(arg0: java.lang.String, arg1: int)
+          public constructor(arg0: java.lang.String | string)
+          public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
           public getRealm(): java.lang.String
-          public hashCode(): int
-          public equals(arg0: java.lang.Object): boolean
+          public hashCode(): number
+          public equals(arg0: java.lang.Object | any): boolean
           public getName(): java.lang.String
-          public getNameType(): int
+          public getNameType(): number
           public toString(): java.lang.String
         }
 

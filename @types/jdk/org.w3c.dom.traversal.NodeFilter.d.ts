@@ -24,7 +24,7 @@ declare namespace org {
           public static readonly SHOW_DOCUMENT_TYPE: int
           public static readonly SHOW_DOCUMENT_FRAGMENT: int
           public static readonly SHOW_NOTATION: int
-          acceptNode(arg0: org.w3c.dom.Node): short
+          acceptNode(arg0: org.w3c.dom.Node): number
         }
 
       }

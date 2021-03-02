@@ -150,7 +150,7 @@ declare namespace java {
       public static readonly MONARCH: java.awt.PageAttributes$MediaType
       public static readonly PERSONAL: java.awt.PageAttributes$MediaType
       public toString(): java.lang.String
-      public hashCode(): int
+      public hashCode(): number
     }
 
   }

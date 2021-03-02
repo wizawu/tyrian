@@ -9,7 +9,7 @@ declare namespace javax {
           public constructor(arg0: javax.xml.stream.XMLStreamReader)
           public getXMLEventReader(): javax.xml.stream.XMLEventReader
           public getXMLStreamReader(): javax.xml.stream.XMLStreamReader
-          public setSystemId(arg0: java.lang.String): void
+          public setSystemId(arg0: java.lang.String | string): void
           public getSystemId(): java.lang.String
           public isEmpty(): boolean
         }

@@ -9,8 +9,8 @@ declare namespace javax {
         public constructor(arg0: java.awt.Color)
         public getSelectedColor(): java.awt.Color
         public setSelectedColor(arg0: java.awt.Color): void
-        public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-        public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+        public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+        public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
         public getChangeListeners(): javax.swing.event.ChangeListener[]
         protected fireStateChanged(): void
       }

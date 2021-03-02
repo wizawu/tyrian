@@ -283,9 +283,9 @@ declare namespace java {
       public static readonly SOYOMBO: java.lang.Character$UnicodeBlock
       public static readonly BHAIKSUKI: java.lang.Character$UnicodeBlock
       public static readonly CJK_UNIFIED_IDEOGRAPHS_EXTENSION_F: java.lang.Character$UnicodeBlock
-      public static of(arg0: char): java.lang.Character$UnicodeBlock
-      public static of(arg0: int): java.lang.Character$UnicodeBlock
-      public static forName(arg0: java.lang.String): java.lang.Character$UnicodeBlock
+      public static of(arg0: string | java.lang.Character): java.lang.Character$UnicodeBlock
+      public static of(arg0: number | java.lang.Integer): java.lang.Character$UnicodeBlock
+      public static forName(arg0: java.lang.String | string): java.lang.Character$UnicodeBlock
     }
 
   }

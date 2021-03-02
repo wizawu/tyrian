@@ -7,14 +7,14 @@ declare namespace javax {
           protected static labelUI: javax.swing.plaf.basic.BasicLabelUI
           public constructor()
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
-          protected layoutCL(arg0: javax.swing.JLabel, arg1: java.awt.FontMetrics, arg2: java.lang.String, arg3: javax.swing.Icon, arg4: java.awt.Rectangle, arg5: java.awt.Rectangle, arg6: java.awt.Rectangle): java.lang.String
-          protected paintEnabledText(arg0: javax.swing.JLabel, arg1: java.awt.Graphics, arg2: java.lang.String, arg3: int, arg4: int): void
-          protected paintDisabledText(arg0: javax.swing.JLabel, arg1: java.awt.Graphics, arg2: java.lang.String, arg3: int, arg4: int): void
+          protected layoutCL(arg0: javax.swing.JLabel, arg1: java.awt.FontMetrics, arg2: java.lang.String | string, arg3: javax.swing.Icon, arg4: java.awt.Rectangle, arg5: java.awt.Rectangle, arg6: java.awt.Rectangle): java.lang.String
+          protected paintEnabledText(arg0: javax.swing.JLabel, arg1: java.awt.Graphics, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+          protected paintDisabledText(arg0: javax.swing.JLabel, arg1: java.awt.Graphics, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          public getBaseline(arg0: javax.swing.JComponent, arg1: int, arg2: int): int
+          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           public installUI(arg0: javax.swing.JComponent): void
           public uninstallUI(arg0: javax.swing.JComponent): void

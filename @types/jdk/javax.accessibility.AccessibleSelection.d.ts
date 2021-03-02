@@ -2,11 +2,11 @@ declare namespace javax {
   namespace accessibility {
 
     interface AccessibleSelection {
-      getAccessibleSelectionCount(): int
-      getAccessibleSelection(arg0: int): javax.accessibility.Accessible
-      isAccessibleChildSelected(arg0: int): boolean
-      addAccessibleSelection(arg0: int): void
-      removeAccessibleSelection(arg0: int): void
+      getAccessibleSelectionCount(): number
+      getAccessibleSelection(arg0: number | java.lang.Integer): javax.accessibility.Accessible
+      isAccessibleChildSelected(arg0: number | java.lang.Integer): boolean
+      addAccessibleSelection(arg0: number | java.lang.Integer): void
+      removeAccessibleSelection(arg0: number | java.lang.Integer): void
       clearAccessibleSelection(): void
       selectAllAccessibleSelection(): void
     }

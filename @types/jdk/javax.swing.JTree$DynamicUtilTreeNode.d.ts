@@ -5,12 +5,12 @@ declare namespace javax {
       protected hasChildren: boolean
       protected childValue: java.lang.Object
       protected loadedChildren: boolean
-      public static createChildren(arg0: javax.swing.tree.DefaultMutableTreeNode, arg1: java.lang.Object): void
-      public constructor(arg0: java.lang.Object, arg1: java.lang.Object)
+      public static createChildren(arg0: javax.swing.tree.DefaultMutableTreeNode, arg1: java.lang.Object | any): void
+      public constructor(arg0: java.lang.Object | any, arg1: java.lang.Object | any)
       public isLeaf(): boolean
-      public getChildCount(): int
+      public getChildCount(): number
       protected loadChildren(): void
-      public getChildAt(arg0: int): javax.swing.tree.TreeNode
+      public getChildAt(arg0: number | java.lang.Integer): javax.swing.tree.TreeNode
       public children(): java.util.Enumeration<javax.swing.tree.TreeNode>
     }
 

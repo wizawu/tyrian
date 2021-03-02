@@ -4,11 +4,11 @@ declare namespace javax {
 
       interface TreeModel {
         getRoot(): java.lang.Object
-        getChild(arg0: java.lang.Object, arg1: int): java.lang.Object
-        getChildCount(arg0: java.lang.Object): int
-        isLeaf(arg0: java.lang.Object): boolean
-        valueForPathChanged(arg0: javax.swing.tree.TreePath, arg1: java.lang.Object): void
-        getIndexOfChild(arg0: java.lang.Object, arg1: java.lang.Object): int
+        getChild(arg0: java.lang.Object | any, arg1: number | java.lang.Integer): java.lang.Object
+        getChildCount(arg0: java.lang.Object | any): number
+        isLeaf(arg0: java.lang.Object | any): boolean
+        valueForPathChanged(arg0: javax.swing.tree.TreePath, arg1: java.lang.Object | any): void
+        getIndexOfChild(arg0: java.lang.Object | any, arg1: java.lang.Object | any): number
         addTreeModelListener(arg0: javax.swing.event.TreeModelListener): void
         removeTreeModelListener(arg0: javax.swing.event.TreeModelListener): void
       }

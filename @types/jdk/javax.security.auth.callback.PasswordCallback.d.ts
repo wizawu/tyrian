@@ -4,11 +4,11 @@ declare namespace javax {
       namespace callback {
 
         class PasswordCallback implements javax.security.auth.callback.Callback, java.io.Serializable {
-          public constructor(arg0: java.lang.String, arg1: boolean)
+          public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
           public getPrompt(): java.lang.String
           public isEchoOn(): boolean
           public setPassword(arg0: char[]): void
-          public getPassword(): char[]
+          public getPassword(): string[]
           public clearPassword(): void
         }
 

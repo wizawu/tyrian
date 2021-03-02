@@ -4,7 +4,7 @@ declare namespace javax {
 
       class InvalidSearchControlsException extends javax.naming.NamingException {
         public constructor()
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
       }
 
     }

@@ -7,7 +7,7 @@ declare namespace java {
       public pop(): E
       public peek(): E
       public empty(): boolean
-      public search(arg0: java.lang.Object): int
+      public search(arg0: java.lang.Object | any): number
     }
 
   }

@@ -10,9 +10,9 @@ declare namespace javax {
       public clearSelection(): void
       public getElements(): java.util.Enumeration<javax.swing.AbstractButton>
       public getSelection(): javax.swing.ButtonModel
-      public setSelected(arg0: javax.swing.ButtonModel, arg1: boolean): void
+      public setSelected(arg0: javax.swing.ButtonModel, arg1: boolean | java.lang.Boolean): void
       public isSelected(arg0: javax.swing.ButtonModel): boolean
-      public getButtonCount(): int
+      public getButtonCount(): number
     }
 
   }

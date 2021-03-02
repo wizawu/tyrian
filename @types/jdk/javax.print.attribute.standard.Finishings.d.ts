@@ -22,10 +22,10 @@ declare namespace javax {
           public static readonly STAPLE_DUAL_TOP: javax.print.attribute.standard.Finishings
           public static readonly STAPLE_DUAL_RIGHT: javax.print.attribute.standard.Finishings
           public static readonly STAPLE_DUAL_BOTTOM: javax.print.attribute.standard.Finishings
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
-          protected getOffset(): int
+          protected getOffset(): number
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }

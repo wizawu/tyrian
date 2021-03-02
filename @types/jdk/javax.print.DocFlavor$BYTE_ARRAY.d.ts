@@ -21,7 +21,7 @@ declare namespace javax {
       public static readonly JPEG: javax.print.DocFlavor$BYTE_ARRAY
       public static readonly PNG: javax.print.DocFlavor$BYTE_ARRAY
       public static readonly AUTOSENSE: javax.print.DocFlavor$BYTE_ARRAY
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
     }
 
   }

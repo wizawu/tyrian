@@ -6,7 +6,7 @@ declare namespace jdk {
       readonly fullkey: java.lang.String
       readonly isStatic: boolean
       readonly isStar: boolean
-      constructor(arg0: jdk.jshell.Key$ImportKey, arg1: java.lang.String, arg2: jdk.jshell.Wrap, arg3: java.lang.String, arg4: java.lang.String, arg5: jdk.jshell.Snippet$SubKind, arg6: java.lang.String, arg7: boolean, arg8: boolean)
+      constructor(arg0: jdk.jshell.Key$ImportKey, arg1: java.lang.String | string, arg2: jdk.jshell.Wrap, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: jdk.jshell.Snippet$SubKind, arg6: java.lang.String | string, arg7: boolean | java.lang.Boolean, arg8: boolean | java.lang.Boolean)
       public name(): java.lang.String
       public fullname(): java.lang.String
       public isStatic(): boolean

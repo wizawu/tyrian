@@ -7,30 +7,30 @@ declare namespace java {
       public static readonly UTC_TIME: int
       static readonly serialVersionUID: long
       static readonly currentSerialVersion: int
-      public constructor(arg0: int, arg1: java.lang.String)
-      public constructor(arg0: int, arg1: java.lang.String, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: int)
-      public constructor(arg0: int, arg1: java.lang.String, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: int, arg10: int)
-      public constructor(arg0: int, arg1: java.lang.String, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: int, arg10: int, arg11: int, arg12: int)
-      public setStartYear(arg0: int): void
-      public setStartRule(arg0: int, arg1: int, arg2: int, arg3: int): void
-      public setStartRule(arg0: int, arg1: int, arg2: int): void
-      public setStartRule(arg0: int, arg1: int, arg2: int, arg3: int, arg4: boolean): void
-      public setEndRule(arg0: int, arg1: int, arg2: int, arg3: int): void
-      public setEndRule(arg0: int, arg1: int, arg2: int): void
-      public setEndRule(arg0: int, arg1: int, arg2: int, arg3: int, arg4: boolean): void
-      public getOffset(arg0: long): int
-      getOffsets(arg0: long, arg1: int[]): int
-      public getOffset(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): int
-      public getRawOffset(): int
-      public setRawOffset(arg0: int): void
-      public setDSTSavings(arg0: int): void
-      public getDSTSavings(): int
+      public constructor(arg0: number | java.lang.Integer, arg1: java.lang.String | string)
+      public constructor(arg0: number | java.lang.Integer, arg1: java.lang.String | string, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: number | java.lang.Integer, arg9: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: java.lang.String | string, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: number | java.lang.Integer, arg9: number | java.lang.Integer, arg10: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: java.lang.String | string, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: number | java.lang.Integer, arg9: number | java.lang.Integer, arg10: number | java.lang.Integer, arg11: number | java.lang.Integer, arg12: number | java.lang.Integer)
+      public setStartYear(arg0: number | java.lang.Integer): void
+      public setStartRule(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public setStartRule(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public setStartRule(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean): void
+      public setEndRule(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public setEndRule(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public setEndRule(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean): void
+      public getOffset(arg0: number | java.lang.Long): number
+      getOffsets(arg0: number | java.lang.Long, arg1: int[]): number
+      public getOffset(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): number
+      public getRawOffset(): number
+      public setRawOffset(arg0: number | java.lang.Integer): void
+      public setDSTSavings(arg0: number | java.lang.Integer): void
+      public getDSTSavings(): number
       public useDaylightTime(): boolean
       public observesDaylightTime(): boolean
       public inDaylightTime(arg0: java.util.Date): boolean
       public clone(): java.lang.Object
-      public hashCode(): int
-      public equals(arg0: java.lang.Object): boolean
+      public hashCode(): number
+      public equals(arg0: java.lang.Object | any): boolean
       public hasSameRules(arg0: java.util.TimeZone): boolean
       public toString(): java.lang.String
     }

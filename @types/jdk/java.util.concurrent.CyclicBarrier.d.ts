@@ -3,14 +3,14 @@ declare namespace java {
     namespace concurrent {
 
       class CyclicBarrier {
-        public constructor(arg0: int, arg1: java.lang.Runnable)
-        public constructor(arg0: int)
-        public getParties(): int
-        public await(): int
-        public await(arg0: long, arg1: java.util.concurrent.TimeUnit): int
+        public constructor(arg0: number | java.lang.Integer, arg1: java.lang.Runnable | java.lang.Runnable$$lambda)
+        public constructor(arg0: number | java.lang.Integer)
+        public getParties(): number
+        public await(): number
+        public await(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): number
         public isBroken(): boolean
         public reset(): void
-        public getNumberWaiting(): int
+        public getNumberWaiting(): number
       }
 
     }

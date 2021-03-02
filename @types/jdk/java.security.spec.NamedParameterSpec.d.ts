@@ -5,7 +5,7 @@ declare namespace java {
       class NamedParameterSpec implements java.security.spec.AlgorithmParameterSpec {
         public static readonly X25519: java.security.spec.NamedParameterSpec
         public static readonly X448: java.security.spec.NamedParameterSpec
-        public constructor(arg0: java.lang.String)
+        public constructor(arg0: java.lang.String | string)
         public getName(): java.lang.String
       }
 

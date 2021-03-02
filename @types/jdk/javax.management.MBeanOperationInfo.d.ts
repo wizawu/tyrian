@@ -9,16 +9,16 @@ declare namespace javax {
       public static readonly ACTION_INFO: int
       public static readonly UNKNOWN: int
       static readonly $assertionsDisabled: boolean
-      public constructor(arg0: java.lang.String, arg1: java.lang.reflect.Method)
-      public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: javax.management.MBeanParameterInfo[], arg3: java.lang.String, arg4: int)
-      public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: javax.management.MBeanParameterInfo[], arg3: java.lang.String, arg4: int, arg5: javax.management.Descriptor)
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.reflect.Method)
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[], arg3: java.lang.String | string, arg4: number | java.lang.Integer)
+      public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: javax.management.MBeanParameterInfo[], arg3: java.lang.String | string, arg4: number | java.lang.Integer, arg5: javax.management.Descriptor)
       public clone(): java.lang.Object
       public getReturnType(): java.lang.String
       public getSignature(): javax.management.MBeanParameterInfo[]
-      public getImpact(): int
+      public getImpact(): number
       public toString(): java.lang.String
-      public equals(arg0: java.lang.Object): boolean
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      public hashCode(): number
       static parameters(arg0: java.lang.Class<unknown>[], arg1: java.lang.annotation.Annotation[][]): javax.management.MBeanParameterInfo[]
     }
 

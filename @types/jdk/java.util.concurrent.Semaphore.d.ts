@@ -3,24 +3,24 @@ declare namespace java {
     namespace concurrent {
 
       class Semaphore implements java.io.Serializable {
-        public constructor(arg0: int)
-        public constructor(arg0: int, arg1: boolean)
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean)
         public acquire(): void
         public acquireUninterruptibly(): void
         public tryAcquire(): boolean
-        public tryAcquire(arg0: long, arg1: java.util.concurrent.TimeUnit): boolean
+        public tryAcquire(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): boolean
         public release(): void
-        public acquire(arg0: int): void
-        public acquireUninterruptibly(arg0: int): void
-        public tryAcquire(arg0: int): boolean
-        public tryAcquire(arg0: int, arg1: long, arg2: java.util.concurrent.TimeUnit): boolean
-        public release(arg0: int): void
-        public availablePermits(): int
-        public drainPermits(): int
-        protected reducePermits(arg0: int): void
+        public acquire(arg0: number | java.lang.Integer): void
+        public acquireUninterruptibly(arg0: number | java.lang.Integer): void
+        public tryAcquire(arg0: number | java.lang.Integer): boolean
+        public tryAcquire(arg0: number | java.lang.Integer, arg1: number | java.lang.Long, arg2: java.util.concurrent.TimeUnit): boolean
+        public release(arg0: number | java.lang.Integer): void
+        public availablePermits(): number
+        public drainPermits(): number
+        protected reducePermits(arg0: number | java.lang.Integer): void
         public isFair(): boolean
         public hasQueuedThreads(): boolean
-        public getQueueLength(): int
+        public getQueueLength(): number
         protected getQueuedThreads(): java.util.Collection<java.lang.Thread>
         public toString(): java.lang.String
       }

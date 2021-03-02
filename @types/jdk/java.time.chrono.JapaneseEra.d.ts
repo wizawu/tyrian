@@ -10,14 +10,14 @@ declare namespace java {
         public static readonly SHOWA: java.time.chrono.JapaneseEra
         public static readonly HEISEI: java.time.chrono.JapaneseEra
         getPrivateEra(): sun.util.calendar.Era
-        public static of(arg0: int): java.time.chrono.JapaneseEra
-        public static valueOf(arg0: java.lang.String): java.time.chrono.JapaneseEra
+        public static of(arg0: number | java.lang.Integer): java.time.chrono.JapaneseEra
+        public static valueOf(arg0: java.lang.String | string): java.time.chrono.JapaneseEra
         public static values(): java.time.chrono.JapaneseEra[]
         public getDisplayName(arg0: java.time.format.TextStyle, arg1: java.util.Locale): java.lang.String
         static from(arg0: java.time.LocalDate): java.time.chrono.JapaneseEra
         static toJapaneseEra(arg0: sun.util.calendar.Era): java.time.chrono.JapaneseEra
         static privateEraFrom(arg0: java.time.LocalDate): sun.util.calendar.Era
-        public getValue(): int
+        public getValue(): number
         public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange
         getAbbreviation(): java.lang.String
         getName(): java.lang.String

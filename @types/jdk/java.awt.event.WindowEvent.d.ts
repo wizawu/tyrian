@@ -18,14 +18,14 @@ declare namespace java {
         opposite: java.awt.Window
         oldState: int
         newState: int
-        public constructor(arg0: java.awt.Window, arg1: int, arg2: java.awt.Window, arg3: int, arg4: int)
-        public constructor(arg0: java.awt.Window, arg1: int, arg2: java.awt.Window)
-        public constructor(arg0: java.awt.Window, arg1: int, arg2: int, arg3: int)
-        public constructor(arg0: java.awt.Window, arg1: int)
+        public constructor(arg0: java.awt.Window, arg1: number | java.lang.Integer, arg2: java.awt.Window, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+        public constructor(arg0: java.awt.Window, arg1: number | java.lang.Integer, arg2: java.awt.Window)
+        public constructor(arg0: java.awt.Window, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        public constructor(arg0: java.awt.Window, arg1: number | java.lang.Integer)
         public getWindow(): java.awt.Window
         public getOppositeWindow(): java.awt.Window
-        public getOldState(): int
-        public getNewState(): int
+        public getOldState(): number
+        public getNewState(): number
         public paramString(): java.lang.String
       }
 

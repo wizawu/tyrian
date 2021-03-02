@@ -22,12 +22,12 @@ declare namespace java {
       public static readonly CUSTOM_CURSOR: int
       disposer: java.awt.Cursor$CursorDisposer
       protected name: java.lang.String
-      public static getPredefinedCursor(arg0: int): java.awt.Cursor
-      public static getSystemCustomCursor(arg0: java.lang.String): java.awt.Cursor
+      public static getPredefinedCursor(arg0: number | java.lang.Integer): java.awt.Cursor
+      public static getSystemCustomCursor(arg0: java.lang.String | string): java.awt.Cursor
       public static getDefaultCursor(): java.awt.Cursor
-      public constructor(arg0: int)
-      protected constructor(arg0: java.lang.String)
-      public getType(): int
+      public constructor(arg0: number | java.lang.Integer)
+      protected constructor(arg0: java.lang.String | string)
+      public getType(): number
       public getName(): java.lang.String
       public toString(): java.lang.String
     }

@@ -57,7 +57,7 @@ declare namespace javax {
           protected installComboBoxModelListeners(arg0: javax.swing.ComboBoxModel<unknown>): void
           protected installKeyboardActions(): void
           public isFocusTraversable(): boolean
-          protected startAutoScrolling(arg0: int): void
+          protected startAutoScrolling(arg0: number | java.lang.Integer): void
           protected stopAutoScrolling(): void
           protected autoScrollUp(): void
           protected autoScrollDown(): void
@@ -65,9 +65,9 @@ declare namespace javax {
           protected delegateFocus(arg0: java.awt.event.MouseEvent): void
           protected togglePopup(): void
           protected convertMouseEvent(arg0: java.awt.event.MouseEvent): java.awt.event.MouseEvent
-          protected getPopupHeightForRowCount(arg0: int): int
-          protected computePopupBounds(arg0: int, arg1: int, arg2: int, arg3: int): java.awt.Rectangle
-          protected updateListBoxSelectionForEvent(arg0: java.awt.event.MouseEvent, arg1: boolean): void
+          protected getPopupHeightForRowCount(arg0: number | java.lang.Integer): number
+          protected computePopupBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.awt.Rectangle
+          protected updateListBoxSelectionForEvent(arg0: java.awt.event.MouseEvent, arg1: boolean | java.lang.Boolean): void
         }
 
       }

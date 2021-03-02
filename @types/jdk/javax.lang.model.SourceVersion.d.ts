@@ -16,7 +16,7 @@ declare namespace javax {
         public static readonly RELEASE_10: javax.lang.model.SourceVersion
         public static readonly RELEASE_11: javax.lang.model.SourceVersion
         public static values(): javax.lang.model.SourceVersion[]
-        public static valueOf(arg0: java.lang.String): javax.lang.model.SourceVersion
+        public static valueOf(arg0: java.lang.String | string): javax.lang.model.SourceVersion
         public static latest(): javax.lang.model.SourceVersion
         public static latestSupported(): javax.lang.model.SourceVersion
         public static isIdentifier(arg0: java.lang.CharSequence): boolean

@@ -2,14 +2,14 @@ declare namespace java {
   namespace sql {
 
     interface SQLOutput {
-      writeString(arg0: java.lang.String): void
-      writeBoolean(arg0: boolean): void
-      writeByte(arg0: byte): void
-      writeShort(arg0: short): void
-      writeInt(arg0: int): void
-      writeLong(arg0: long): void
-      writeFloat(arg0: float): void
-      writeDouble(arg0: double): void
+      writeString(arg0: java.lang.String | string): void
+      writeBoolean(arg0: boolean | java.lang.Boolean): void
+      writeByte(arg0: number | java.lang.Byte): void
+      writeShort(arg0: number | java.lang.Short): void
+      writeInt(arg0: number | java.lang.Integer): void
+      writeLong(arg0: number | java.lang.Long): void
+      writeFloat(arg0: number | java.lang.Float): void
+      writeDouble(arg0: number | java.lang.Double): void
       writeBigDecimal(arg0: java.math.BigDecimal): void
       writeBytes(arg0: byte[]): void
       writeDate(arg0: java.sql.Date): void
@@ -25,11 +25,11 @@ declare namespace java {
       writeStruct(arg0: java.sql.Struct): void
       writeArray(arg0: java.sql.Array): void
       writeURL(arg0: java.net.URL): void
-      writeNString(arg0: java.lang.String): void
+      writeNString(arg0: java.lang.String | string): void
       writeNClob(arg0: java.sql.NClob): void
       writeRowId(arg0: java.sql.RowId): void
       writeSQLXML(arg0: java.sql.SQLXML): void
-      writeObject(arg0: java.lang.Object, arg1: java.sql.SQLType): void
+      writeObject(arg0: java.lang.Object | any, arg1: java.sql.SQLType): void
     }
 
   }

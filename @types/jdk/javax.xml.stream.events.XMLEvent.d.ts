@@ -4,7 +4,7 @@ declare namespace javax {
       namespace events {
 
         interface XMLEvent extends javax.xml.stream.XMLStreamConstants {
-          getEventType(): int
+          getEventType(): number
           getLocation(): javax.xml.stream.Location
           isStartElement(): boolean
           isAttribute(): boolean

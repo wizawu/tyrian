@@ -63,7 +63,7 @@ declare namespace javax {
           public static readonly VIEWPORT: javax.swing.plaf.synth.Region
           static getRegion(arg0: javax.swing.JComponent): javax.swing.plaf.synth.Region
           static registerUIs(arg0: javax.swing.UIDefaults): void
-          protected constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: boolean)
+          protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean)
           public isSubregion(): boolean
           public getName(): java.lang.String
           getLowerCaseName(): java.lang.String

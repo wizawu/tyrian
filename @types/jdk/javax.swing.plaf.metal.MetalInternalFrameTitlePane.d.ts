@@ -24,7 +24,7 @@ declare namespace javax {
           protected createLayout(): java.awt.LayoutManager
           public paintPalette(arg0: java.awt.Graphics): void
           public paintComponent(arg0: java.awt.Graphics): void
-          public setPalette(arg0: boolean): void
+          public setPalette(arg0: boolean | java.lang.Boolean): void
           static access$000(arg0: javax.swing.plaf.metal.MetalInternalFrameTitlePane): javax.swing.JButton
           static access$100(arg0: javax.swing.plaf.metal.MetalInternalFrameTitlePane): javax.swing.JButton
           static access$200(arg0: javax.swing.plaf.metal.MetalInternalFrameTitlePane): javax.swing.JButton

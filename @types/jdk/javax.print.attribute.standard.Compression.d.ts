@@ -8,7 +8,7 @@ declare namespace javax {
           public static readonly DEFLATE: javax.print.attribute.standard.Compression
           public static readonly GZIP: javax.print.attribute.standard.Compression
           public static readonly COMPRESS: javax.print.attribute.standard.Compression
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>

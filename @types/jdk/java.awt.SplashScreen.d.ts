@@ -3,7 +3,7 @@ declare namespace java {
 
     class SplashScreen {
       static readonly $assertionsDisabled: boolean
-      constructor(arg0: long)
+      constructor(arg0: number | java.lang.Long)
       public static getSplashScreen(): java.awt.SplashScreen
       public setImageURL(arg0: java.net.URL): void
       public getImageURL(): java.net.URL

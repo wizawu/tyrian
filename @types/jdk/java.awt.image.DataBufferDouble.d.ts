@@ -5,27 +5,27 @@ declare namespace java {
       class DataBufferDouble extends java.awt.image.DataBuffer {
         bankdata: double[][]
         data: double[]
-        public constructor(arg0: int)
-        public constructor(arg0: int, arg1: int)
-        public constructor(arg0: double[], arg1: int)
-        public constructor(arg0: double[], arg1: int, arg2: int)
-        public constructor(arg0: double[][], arg1: int)
-        public constructor(arg0: double[][], arg1: int, arg2: int[])
-        public getData(): double[]
-        public getData(arg0: int): double[]
-        public getBankData(): double[][]
-        public getElem(arg0: int): int
-        public getElem(arg0: int, arg1: int): int
-        public setElem(arg0: int, arg1: int): void
-        public setElem(arg0: int, arg1: int, arg2: int): void
-        public getElemFloat(arg0: int): float
-        public getElemFloat(arg0: int, arg1: int): float
-        public setElemFloat(arg0: int, arg1: float): void
-        public setElemFloat(arg0: int, arg1: int, arg2: float): void
-        public getElemDouble(arg0: int): double
-        public getElemDouble(arg0: int, arg1: int): double
-        public setElemDouble(arg0: int, arg1: double): void
-        public setElemDouble(arg0: int, arg1: int, arg2: double): void
+        public constructor(arg0: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
+        public constructor(arg0: double[], arg1: number | java.lang.Integer)
+        public constructor(arg0: double[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(arg0: double[][], arg1: number | java.lang.Integer)
+        public constructor(arg0: double[][], arg1: number | java.lang.Integer, arg2: int[])
+        public getData(): number[]
+        public getData(arg0: number | java.lang.Integer): number[]
+        public getBankData(): number[][]
+        public getElem(arg0: number | java.lang.Integer): number
+        public getElem(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+        public setElem(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+        public setElem(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        public getElemFloat(arg0: number | java.lang.Integer): number
+        public getElemFloat(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+        public setElemFloat(arg0: number | java.lang.Integer, arg1: number | java.lang.Float): void
+        public setElemFloat(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Float): void
+        public getElemDouble(arg0: number | java.lang.Integer): number
+        public getElemDouble(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
+        public setElemDouble(arg0: number | java.lang.Integer, arg1: number | java.lang.Double): void
+        public setElemDouble(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Double): void
       }
 
     }

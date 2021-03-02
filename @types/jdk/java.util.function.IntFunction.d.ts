@@ -3,11 +3,11 @@ declare namespace java {
     namespace function$ {
 
       interface IntFunction$$lambda<R> {
-        (arg0: int): R
+        (arg0: number | java.lang.Integer): R
       }
 
       interface IntFunction<R> {
-        apply(arg0: int): R
+        apply(arg0: number | java.lang.Integer): R
       }
 
     }

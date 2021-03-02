@@ -3,15 +3,15 @@ declare namespace javax {
     namespace modelmbean {
 
       interface ModelMBeanInfo {
-        getDescriptors(arg0: java.lang.String): javax.management.Descriptor[]
+        getDescriptors(arg0: java.lang.String | string): javax.management.Descriptor[]
         setDescriptors(arg0: javax.management.Descriptor[]): void
-        getDescriptor(arg0: java.lang.String, arg1: java.lang.String): javax.management.Descriptor
-        setDescriptor(arg0: javax.management.Descriptor, arg1: java.lang.String): void
+        getDescriptor(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.management.Descriptor
+        setDescriptor(arg0: javax.management.Descriptor, arg1: java.lang.String | string): void
         getMBeanDescriptor(): javax.management.Descriptor
         setMBeanDescriptor(arg0: javax.management.Descriptor): void
-        getAttribute(arg0: java.lang.String): javax.management.modelmbean.ModelMBeanAttributeInfo
-        getOperation(arg0: java.lang.String): javax.management.modelmbean.ModelMBeanOperationInfo
-        getNotification(arg0: java.lang.String): javax.management.modelmbean.ModelMBeanNotificationInfo
+        getAttribute(arg0: java.lang.String | string): javax.management.modelmbean.ModelMBeanAttributeInfo
+        getOperation(arg0: java.lang.String | string): javax.management.modelmbean.ModelMBeanOperationInfo
+        getNotification(arg0: java.lang.String | string): javax.management.modelmbean.ModelMBeanNotificationInfo
         clone(): java.lang.Object
         getAttributes(): javax.management.MBeanAttributeInfo[]
         getClassName(): java.lang.String

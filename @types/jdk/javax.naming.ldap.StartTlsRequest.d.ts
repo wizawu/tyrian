@@ -6,8 +6,8 @@ declare namespace javax {
         public static readonly OID: java.lang.String
         public constructor()
         public getID(): java.lang.String
-        public getEncodedValue(): byte[]
-        public createExtendedResponse(arg0: java.lang.String, arg1: byte[], arg2: int, arg3: int): javax.naming.ldap.ExtendedResponse
+        public getEncodedValue(): number[]
+        public createExtendedResponse(arg0: java.lang.String | string, arg1: byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): javax.naming.ldap.ExtendedResponse
       }
 
     }

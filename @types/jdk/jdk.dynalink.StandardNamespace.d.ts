@@ -6,7 +6,7 @@ declare namespace jdk {
       public static readonly ELEMENT: jdk.dynalink.StandardNamespace
       public static readonly METHOD: jdk.dynalink.StandardNamespace
       public static values(): jdk.dynalink.StandardNamespace[]
-      public static valueOf(arg0: java.lang.String): jdk.dynalink.StandardNamespace
+      public static valueOf(arg0: java.lang.String | string): jdk.dynalink.StandardNamespace
       public static findFirst(arg0: jdk.dynalink.Operation): jdk.dynalink.StandardNamespace
     }
 

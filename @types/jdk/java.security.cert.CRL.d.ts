@@ -3,7 +3,7 @@ declare namespace java {
     namespace cert {
 
       abstract class CRL {
-        protected constructor(arg0: java.lang.String)
+        protected constructor(arg0: java.lang.String | string)
         public getType(): java.lang.String
         public abstract toString(): java.lang.String
         public abstract isRevoked(arg0: java.security.cert.Certificate): boolean

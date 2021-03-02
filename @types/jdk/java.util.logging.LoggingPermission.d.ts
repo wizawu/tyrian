@@ -3,7 +3,7 @@ declare namespace java {
     namespace logging {
 
       class LoggingPermission extends java.security.BasicPermission {
-        public constructor(arg0: java.lang.String, arg1: java.lang.String)
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
       }
 
     }

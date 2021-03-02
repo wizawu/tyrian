@@ -34,19 +34,19 @@ declare namespace java {
         public static readonly INSTANT_SECONDS: java.time.temporal.ChronoField
         public static readonly OFFSET_SECONDS: java.time.temporal.ChronoField
         public static values(): java.time.temporal.ChronoField[]
-        public static valueOf(arg0: java.lang.String): java.time.temporal.ChronoField
+        public static valueOf(arg0: java.lang.String | string): java.time.temporal.ChronoField
         public getDisplayName(arg0: java.util.Locale): java.lang.String
         public getBaseUnit(): java.time.temporal.TemporalUnit
         public getRangeUnit(): java.time.temporal.TemporalUnit
         public range(): java.time.temporal.ValueRange
         public isDateBased(): boolean
         public isTimeBased(): boolean
-        public checkValidValue(arg0: long): long
-        public checkValidIntValue(arg0: long): int
+        public checkValidValue(arg0: number | java.lang.Long): number
+        public checkValidIntValue(arg0: number | java.lang.Long): number
         public isSupportedBy(arg0: java.time.temporal.TemporalAccessor): boolean
         public rangeRefinedBy(arg0: java.time.temporal.TemporalAccessor): java.time.temporal.ValueRange
-        public getFrom(arg0: java.time.temporal.TemporalAccessor): long
-        public adjustInto<R extends java.time.temporal.Temporal>(arg0: R, arg1: long): R
+        public getFrom(arg0: java.time.temporal.TemporalAccessor): number
+        public adjustInto<R extends java.time.temporal.Temporal>(arg0: R, arg1: number | java.lang.Long): R
         public toString(): java.lang.String
       }
 

@@ -3,7 +3,7 @@ declare namespace java {
     namespace management {
 
       interface RuntimeMXBean extends java.lang.management.PlatformManagedObject {
-        getPid(): long
+        getPid(): number
         getName(): java.lang.String
         getVmName(): java.lang.String
         getVmVendor(): java.lang.String
@@ -17,8 +17,8 @@ declare namespace java {
         isBootClassPathSupported(): boolean
         getBootClassPath(): java.lang.String
         getInputArguments(): java.util.List<java.lang.String>
-        getUptime(): long
-        getStartTime(): long
+        getUptime(): number
+        getStartTime(): number
         getSystemProperties(): java.util.Map<java.lang.String,java.lang.String>
       }
 

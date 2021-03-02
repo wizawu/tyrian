@@ -7,11 +7,11 @@ declare namespace javax {
           protected isLight: boolean
           imageCacher: javax.swing.plaf.metal.MetalIconFactory$ImageCacher
           cachedOrientation: boolean
-          public constructor(arg0: boolean)
-          public paintIcon(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: int, arg3: int): void
-          public paintMe(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: int, arg3: int): void
-          public getIconWidth(): int
-          public getIconHeight(): int
+          public constructor(arg0: boolean | java.lang.Boolean)
+          public paintIcon(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+          public paintMe(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+          public getIconWidth(): number
+          public getIconHeight(): number
         }
 
       }

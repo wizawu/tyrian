@@ -5,7 +5,7 @@ declare namespace java {
       interface Extension {
         getId(): java.lang.String
         isCritical(): boolean
-        getValue(): byte[]
+        getValue(): number[]
         encode(arg0: java.io.OutputStream): void
       }
 

@@ -10,7 +10,7 @@ declare namespace jdk {
       public static readonly REJECTED: jdk.jshell.Snippet$Status
       public static readonly NONEXISTENT: jdk.jshell.Snippet$Status
       public static values(): jdk.jshell.Snippet$Status[]
-      public static valueOf(arg0: java.lang.String): jdk.jshell.Snippet$Status
+      public static valueOf(arg0: java.lang.String | string): jdk.jshell.Snippet$Status
       public isActive(): boolean
       public isDefined(): boolean
     }

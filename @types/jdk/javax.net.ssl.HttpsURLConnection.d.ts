@@ -10,9 +10,9 @@ declare namespace javax {
         public abstract getServerCertificates(): java.security.cert.Certificate[]
         public getPeerPrincipal(): java.security.Principal
         public getLocalPrincipal(): java.security.Principal
-        public static setDefaultHostnameVerifier(arg0: javax.net.ssl.HostnameVerifier): void
+        public static setDefaultHostnameVerifier(arg0: javax.net.ssl.HostnameVerifier | javax.net.ssl.HostnameVerifier$$lambda): void
         public static getDefaultHostnameVerifier(): javax.net.ssl.HostnameVerifier
-        public setHostnameVerifier(arg0: javax.net.ssl.HostnameVerifier): void
+        public setHostnameVerifier(arg0: javax.net.ssl.HostnameVerifier | javax.net.ssl.HostnameVerifier$$lambda): void
         public getHostnameVerifier(): javax.net.ssl.HostnameVerifier
         public static setDefaultSSLSocketFactory(arg0: javax.net.ssl.SSLSocketFactory): void
         public static getDefaultSSLSocketFactory(): javax.net.ssl.SSLSocketFactory

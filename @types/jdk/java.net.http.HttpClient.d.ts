@@ -15,9 +15,9 @@ declare namespace java {
         public abstract authenticator(): java.util.Optional<java.net.Authenticator>
         public abstract version(): java.net.http.HttpClient$Version
         public abstract executor(): java.util.Optional<java.util.concurrent.Executor>
-        public abstract send<T>(arg0: java.net.http.HttpRequest, arg1: java.net.http.HttpResponse$BodyHandler<T>): java.net.http.HttpResponse<T>
-        public abstract sendAsync<T>(arg0: java.net.http.HttpRequest, arg1: java.net.http.HttpResponse$BodyHandler<T>): java.util.concurrent.CompletableFuture<java.net.http.HttpResponse<T>>
-        public abstract sendAsync<T>(arg0: java.net.http.HttpRequest, arg1: java.net.http.HttpResponse$BodyHandler<T>, arg2: java.net.http.HttpResponse$PushPromiseHandler<T>): java.util.concurrent.CompletableFuture<java.net.http.HttpResponse<T>>
+        public abstract send<T>(arg0: java.net.http.HttpRequest, arg1: java.net.http.HttpResponse$BodyHandler<T> | java.net.http.HttpResponse$BodyHandler$$lambda<T>): java.net.http.HttpResponse<T>
+        public abstract sendAsync<T>(arg0: java.net.http.HttpRequest, arg1: java.net.http.HttpResponse$BodyHandler<T> | java.net.http.HttpResponse$BodyHandler$$lambda<T>): java.util.concurrent.CompletableFuture<java.net.http.HttpResponse<T>>
+        public abstract sendAsync<T>(arg0: java.net.http.HttpRequest, arg1: java.net.http.HttpResponse$BodyHandler<T> | java.net.http.HttpResponse$BodyHandler$$lambda<T>, arg2: java.net.http.HttpResponse$PushPromiseHandler<T>): java.util.concurrent.CompletableFuture<java.net.http.HttpResponse<T>>
         public newWebSocketBuilder(): java.net.http.WebSocket$Builder
       }
 

@@ -9,8 +9,8 @@ declare namespace javax {
         public static readonly RIGHT_OUTER_JOIN: int
         public static readonly FULL_JOIN: int
         addRowSet(arg0: javax.sql.rowset.Joinable): void
-        addRowSet(arg0: javax.sql.RowSet, arg1: int): void
-        addRowSet(arg0: javax.sql.RowSet, arg1: java.lang.String): void
+        addRowSet(arg0: javax.sql.RowSet, arg1: number | java.lang.Integer): void
+        addRowSet(arg0: javax.sql.RowSet, arg1: java.lang.String | string): void
         addRowSet(arg0: javax.sql.RowSet[], arg1: int[]): void
         addRowSet(arg0: javax.sql.RowSet[], arg1: java.lang.String[]): void
         getRowSets(): java.util.Collection<unknown>
@@ -21,9 +21,9 @@ declare namespace javax {
         supportsLeftOuterJoin(): boolean
         supportsRightOuterJoin(): boolean
         supportsFullJoin(): boolean
-        setJoinType(arg0: int): void
+        setJoinType(arg0: number | java.lang.Integer): void
         getWhereClause(): java.lang.String
-        getJoinType(): int
+        getJoinType(): number
       }
 
     }

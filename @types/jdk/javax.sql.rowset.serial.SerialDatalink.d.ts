@@ -7,8 +7,8 @@ declare namespace javax {
           static readonly serialVersionUID: long
           public constructor(arg0: java.net.URL)
           public getDatalink(): java.net.URL
-          public equals(arg0: java.lang.Object): boolean
-          public hashCode(): int
+          public equals(arg0: java.lang.Object | any): boolean
+          public hashCode(): number
           public clone(): java.lang.Object
         }
 

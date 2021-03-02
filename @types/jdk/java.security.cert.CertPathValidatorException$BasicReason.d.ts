@@ -11,7 +11,7 @@ declare namespace java {
         public static readonly INVALID_SIGNATURE: java.security.cert.CertPathValidatorException$BasicReason
         public static readonly ALGORITHM_CONSTRAINED: java.security.cert.CertPathValidatorException$BasicReason
         public static values(): java.security.cert.CertPathValidatorException$BasicReason[]
-        public static valueOf(arg0: java.lang.String): java.security.cert.CertPathValidatorException$BasicReason
+        public static valueOf(arg0: java.lang.String | string): java.security.cert.CertPathValidatorException$BasicReason
       }
 
     }

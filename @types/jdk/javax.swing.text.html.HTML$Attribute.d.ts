@@ -86,7 +86,7 @@ declare namespace javax {
           public static readonly COMMENT: javax.swing.text.html.HTML$Attribute
           static readonly MEDIA: javax.swing.text.html.HTML$Attribute
           static readonly allAttributes: javax.swing.text.html.HTML$Attribute[]
-          constructor(arg0: java.lang.String)
+          constructor(arg0: java.lang.String | string)
           public toString(): java.lang.String
         }
 

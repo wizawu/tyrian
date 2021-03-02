@@ -5,11 +5,11 @@ declare namespace org {
 
         interface MediaList {
           getMediaText(): java.lang.String
-          setMediaText(arg0: java.lang.String): void
-          getLength(): int
-          item(arg0: int): java.lang.String
-          deleteMedium(arg0: java.lang.String): void
-          appendMedium(arg0: java.lang.String): void
+          setMediaText(arg0: java.lang.String | string): void
+          getLength(): number
+          item(arg0: number | java.lang.Integer): java.lang.String
+          deleteMedium(arg0: java.lang.String | string): void
+          appendMedium(arg0: java.lang.String | string): void
         }
 
       }

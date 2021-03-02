@@ -10,7 +10,7 @@ declare namespace javax {
           public static readonly USES: javax.lang.model.element.ModuleElement$DirectiveKind
           public static readonly PROVIDES: javax.lang.model.element.ModuleElement$DirectiveKind
           public static values(): javax.lang.model.element.ModuleElement$DirectiveKind[]
-          public static valueOf(arg0: java.lang.String): javax.lang.model.element.ModuleElement$DirectiveKind
+          public static valueOf(arg0: java.lang.String | string): javax.lang.model.element.ModuleElement$DirectiveKind
         }
 
       }

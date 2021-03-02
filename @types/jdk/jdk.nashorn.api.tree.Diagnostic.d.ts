@@ -6,10 +6,10 @@ declare namespace jdk {
         interface Diagnostic {
           public static readonly NOPOS: long
           getKind(): jdk.nashorn.api.tree.Diagnostic$Kind
-          getPosition(): long
+          getPosition(): number
           getFileName(): java.lang.String
-          getLineNumber(): long
-          getColumnNumber(): long
+          getLineNumber(): number
+          getColumnNumber(): number
           getCode(): java.lang.String
           getMessage(): java.lang.String
         }

@@ -4,9 +4,9 @@ declare namespace com {
       namespace auth {
 
         class NTSidGroupPrincipal extends com.sun.security.auth.NTSid {
-          public constructor(arg0: java.lang.String)
+          public constructor(arg0: java.lang.String | string)
           public toString(): java.lang.String
-          public equals(arg0: java.lang.Object): boolean
+          public equals(arg0: java.lang.Object | any): boolean
         }
 
       }

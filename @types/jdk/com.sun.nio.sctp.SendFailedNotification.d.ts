@@ -8,8 +8,8 @@ declare namespace com {
           public abstract association(): com.sun.nio.sctp.Association
           public abstract address(): java.net.SocketAddress
           public abstract buffer(): java.nio.ByteBuffer
-          public abstract errorCode(): int
-          public abstract streamNumber(): int
+          public abstract errorCode(): number
+          public abstract streamNumber(): number
         }
 
       }

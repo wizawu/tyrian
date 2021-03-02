@@ -9,14 +9,14 @@ declare namespace java {
         scrollAmount: int
         wheelRotation: int
         preciseWheelRotation: double
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: long, arg3: int, arg4: int, arg5: int, arg6: int, arg7: boolean, arg8: int, arg9: int, arg10: int)
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: long, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: boolean, arg10: int, arg11: int, arg12: int)
-        public constructor(arg0: java.awt.Component, arg1: int, arg2: long, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: boolean, arg10: int, arg11: int, arg12: int, arg13: double)
-        public getScrollType(): int
-        public getScrollAmount(): int
-        public getWheelRotation(): int
-        public getPreciseWheelRotation(): double
-        public getUnitsToScroll(): int
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: boolean | java.lang.Boolean, arg8: number | java.lang.Integer, arg9: number | java.lang.Integer, arg10: number | java.lang.Integer)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: number | java.lang.Integer, arg9: boolean | java.lang.Boolean, arg10: number | java.lang.Integer, arg11: number | java.lang.Integer, arg12: number | java.lang.Integer)
+        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: number | java.lang.Integer, arg9: boolean | java.lang.Boolean, arg10: number | java.lang.Integer, arg11: number | java.lang.Integer, arg12: number | java.lang.Integer, arg13: number | java.lang.Double)
+        public getScrollType(): number
+        public getScrollAmount(): number
+        public getWheelRotation(): number
+        public getPreciseWheelRotation(): number
+        public getUnitsToScroll(): number
         public paramString(): java.lang.String
       }
 

@@ -9,7 +9,7 @@ declare namespace javax {
           public getUIs(): javax.swing.plaf.ComponentUI[]
           public selectInitialValue(arg0: javax.swing.JOptionPane): void
           public containsCustomComponents(arg0: javax.swing.JOptionPane): boolean
-          public contains(arg0: javax.swing.JComponent, arg1: int, arg2: int): boolean
+          public contains(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public installUI(arg0: javax.swing.JComponent): void
@@ -18,8 +18,8 @@ declare namespace javax {
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          public getAccessibleChildrenCount(arg0: javax.swing.JComponent): int
-          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: int): javax.accessibility.Accessible
+          public getAccessibleChildrenCount(arg0: javax.swing.JComponent): number
+          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer): javax.accessibility.Accessible
         }
 
       }

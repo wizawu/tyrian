@@ -31,17 +31,17 @@ declare namespace javax {
           protected installListeners(): void
           protected uninstallListeners(): void
           protected installKeyboardActions(): void
-          getInputMap(arg0: int): javax.swing.InputMap
+          getInputMap(arg0: number | java.lang.Integer): javax.swing.InputMap
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
           protected uninstallKeyboardActions(): void
-          protected navigateFocusedComp(arg0: int): void
+          protected navigateFocusedComp(arg0: number | java.lang.Integer): void
           protected createRolloverBorder(): javax.swing.border.Border
           protected createNonRolloverBorder(): javax.swing.border.Border
           protected createFloatingFrame(arg0: javax.swing.JToolBar): javax.swing.JFrame
           protected createFloatingWindow(arg0: javax.swing.JToolBar): javax.swing.RootPaneContainer
           protected createDragWindow(arg0: javax.swing.JToolBar): javax.swing.plaf.basic.BasicToolBarUI$DragWindow
           public isRolloverBorders(): boolean
-          public setRolloverBorders(arg0: boolean): void
+          public setRolloverBorders(arg0: boolean | java.lang.Boolean): void
           protected installRolloverBorders(arg0: javax.swing.JComponent): void
           protected installNonRolloverBorders(arg0: javax.swing.JComponent): void
           protected installNormalBorders(arg0: javax.swing.JComponent): void
@@ -50,10 +50,10 @@ declare namespace javax {
           protected setBorderToNonRollover(arg0: java.awt.Component): void
           protected getNonRolloverBorder(arg0: javax.swing.AbstractButton): javax.swing.border.Border
           protected setBorderToNormal(arg0: java.awt.Component): void
-          public setFloatingLocation(arg0: int, arg1: int): void
+          public setFloatingLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
           public isFloating(): boolean
-          public setFloating(arg0: boolean, arg1: java.awt.Point): void
-          public setOrientation(arg0: int): void
+          public setFloating(arg0: boolean | java.lang.Boolean, arg1: java.awt.Point): void
+          public setOrientation(arg0: number | java.lang.Integer): void
           public getDockingColor(): java.awt.Color
           public setDockingColor(arg0: java.awt.Color): void
           public getFloatingColor(): java.awt.Color

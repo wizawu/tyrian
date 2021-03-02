@@ -7,9 +7,9 @@ declare namespace javax {
         open(): void
         close(): void
         isOpen(): boolean
-        getMicrosecondPosition(): long
-        getMaxReceivers(): int
-        getMaxTransmitters(): int
+        getMicrosecondPosition(): number
+        getMaxReceivers(): number
+        getMaxTransmitters(): number
         getReceiver(): javax.sound.midi.Receiver
         getReceivers(): java.util.List<javax.sound.midi.Receiver>
         getTransmitter(): javax.sound.midi.Transmitter

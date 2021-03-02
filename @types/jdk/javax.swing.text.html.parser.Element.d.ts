@@ -17,20 +17,20 @@ declare namespace javax {
             public data: java.lang.Object
             static contentTypes: java.util.Hashtable<java.lang.String,java.lang.Integer>
             constructor()
-            constructor(arg0: java.lang.String, arg1: int)
-            static getMaxIndex(): int
+            constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
+            static getMaxIndex(): number
             public getName(): java.lang.String
             public omitStart(): boolean
             public omitEnd(): boolean
-            public getType(): int
+            public getType(): number
             public getContent(): javax.swing.text.html.parser.ContentModel
             public getAttributes(): javax.swing.text.html.parser.AttributeList
-            public getIndex(): int
+            public getIndex(): number
             public isEmpty(): boolean
             public toString(): java.lang.String
-            public getAttribute(arg0: java.lang.String): javax.swing.text.html.parser.AttributeList
-            public getAttributeByValue(arg0: java.lang.String): javax.swing.text.html.parser.AttributeList
-            public static name2type(arg0: java.lang.String): int
+            public getAttribute(arg0: java.lang.String | string): javax.swing.text.html.parser.AttributeList
+            public getAttributeByValue(arg0: java.lang.String | string): javax.swing.text.html.parser.AttributeList
+            public static name2type(arg0: java.lang.String | string): number
           }
 
         }

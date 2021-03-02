@@ -5,11 +5,11 @@ declare namespace org {
 
         interface HTMLStyleElement extends org.w3c.dom.html.HTMLElement {
           getDisabled(): boolean
-          setDisabled(arg0: boolean): void
+          setDisabled(arg0: boolean | java.lang.Boolean): void
           getMedia(): java.lang.String
-          setMedia(arg0: java.lang.String): void
+          setMedia(arg0: java.lang.String | string): void
           getType(): java.lang.String
-          setType(arg0: java.lang.String): void
+          setType(arg0: java.lang.String | string): void
         }
 
       }

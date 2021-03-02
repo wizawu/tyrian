@@ -13,8 +13,8 @@ declare namespace javax {
       public hasRaster(): boolean
       public getRaster(): java.awt.image.Raster
       public setRaster(arg0: java.awt.image.Raster): void
-      public getNumThumbnails(): int
-      public getThumbnail(arg0: int): java.awt.image.BufferedImage
+      public getNumThumbnails(): number
+      public getThumbnail(arg0: number | java.lang.Integer): java.awt.image.BufferedImage
       public getThumbnails(): java.util.List<java.awt.image.BufferedImage>
       public setThumbnails(arg0: java.util.List<java.awt.image.BufferedImage>): void
       public getMetadata(): javax.imageio.metadata.IIOMetadata

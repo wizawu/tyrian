@@ -3,35 +3,35 @@ declare namespace java {
 
     abstract class Graphics2D extends java.awt.Graphics {
       protected constructor()
-      public draw3DRect(arg0: int, arg1: int, arg2: int, arg3: int, arg4: boolean): void
-      public fill3DRect(arg0: int, arg1: int, arg2: int, arg3: int, arg4: boolean): void
+      public draw3DRect(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean): void
+      public fill3DRect(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean): void
       public abstract draw(arg0: java.awt.Shape): void
-      public abstract drawImage(arg0: java.awt.Image, arg1: java.awt.geom.AffineTransform, arg2: java.awt.image.ImageObserver): boolean
-      public abstract drawImage(arg0: java.awt.image.BufferedImage, arg1: java.awt.image.BufferedImageOp, arg2: int, arg3: int): void
+      public abstract drawImage(arg0: java.awt.Image, arg1: java.awt.geom.AffineTransform, arg2: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): boolean
+      public abstract drawImage(arg0: java.awt.image.BufferedImage, arg1: java.awt.image.BufferedImageOp, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       public abstract drawRenderedImage(arg0: java.awt.image.RenderedImage, arg1: java.awt.geom.AffineTransform): void
       public abstract drawRenderableImage(arg0: java.awt.image.renderable.RenderableImage, arg1: java.awt.geom.AffineTransform): void
-      public abstract drawString(arg0: java.lang.String, arg1: int, arg2: int): void
-      public abstract drawString(arg0: java.lang.String, arg1: float, arg2: float): void
-      public abstract drawString(arg0: java.text.AttributedCharacterIterator, arg1: int, arg2: int): void
-      public abstract drawString(arg0: java.text.AttributedCharacterIterator, arg1: float, arg2: float): void
-      public abstract drawGlyphVector(arg0: java.awt.font.GlyphVector, arg1: float, arg2: float): void
+      public abstract drawString(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public abstract drawString(arg0: java.lang.String | string, arg1: number | java.lang.Float, arg2: number | java.lang.Float): void
+      public abstract drawString(arg0: java.text.AttributedCharacterIterator, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public abstract drawString(arg0: java.text.AttributedCharacterIterator, arg1: number | java.lang.Float, arg2: number | java.lang.Float): void
+      public abstract drawGlyphVector(arg0: java.awt.font.GlyphVector, arg1: number | java.lang.Float, arg2: number | java.lang.Float): void
       public abstract fill(arg0: java.awt.Shape): void
-      public abstract hit(arg0: java.awt.Rectangle, arg1: java.awt.Shape, arg2: boolean): boolean
+      public abstract hit(arg0: java.awt.Rectangle, arg1: java.awt.Shape, arg2: boolean | java.lang.Boolean): boolean
       public abstract getDeviceConfiguration(): java.awt.GraphicsConfiguration
-      public abstract setComposite(arg0: java.awt.Composite): void
+      public abstract setComposite(arg0: java.awt.Composite | java.awt.Composite$$lambda): void
       public abstract setPaint(arg0: java.awt.Paint): void
-      public abstract setStroke(arg0: java.awt.Stroke): void
-      public abstract setRenderingHint(arg0: java.awt.RenderingHints$Key, arg1: java.lang.Object): void
+      public abstract setStroke(arg0: java.awt.Stroke | java.awt.Stroke$$lambda): void
+      public abstract setRenderingHint(arg0: java.awt.RenderingHints$Key, arg1: java.lang.Object | any): void
       public abstract getRenderingHint(arg0: java.awt.RenderingHints$Key): java.lang.Object
       public abstract setRenderingHints(arg0: java.util.Map<unknown,unknown>): void
       public abstract addRenderingHints(arg0: java.util.Map<unknown,unknown>): void
       public abstract getRenderingHints(): java.awt.RenderingHints
-      public abstract translate(arg0: int, arg1: int): void
-      public abstract translate(arg0: double, arg1: double): void
-      public abstract rotate(arg0: double): void
-      public abstract rotate(arg0: double, arg1: double, arg2: double): void
-      public abstract scale(arg0: double, arg1: double): void
-      public abstract shear(arg0: double, arg1: double): void
+      public abstract translate(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public abstract translate(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
+      public abstract rotate(arg0: number | java.lang.Double): void
+      public abstract rotate(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double): void
+      public abstract scale(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
+      public abstract shear(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
       public abstract transform(arg0: java.awt.geom.AffineTransform): void
       public abstract setTransform(arg0: java.awt.geom.AffineTransform): void
       public abstract getTransform(): java.awt.geom.AffineTransform

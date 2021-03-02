@@ -5,7 +5,7 @@ declare namespace org {
 
         interface CSSCharsetRule extends org.w3c.dom.css.CSSRule {
           getEncoding(): java.lang.String
-          setEncoding(arg0: java.lang.String): void
+          setEncoding(arg0: java.lang.String | string): void
         }
 
       }

@@ -7,7 +7,7 @@ declare namespace org {
           public code: short
           public static readonly INVALID_EXPRESSION_ERR: short
           public static readonly TYPE_ERR: short
-          public constructor(arg0: short, arg1: java.lang.String)
+          public constructor(arg0: number | java.lang.Short, arg1: java.lang.String | string)
         }
 
       }

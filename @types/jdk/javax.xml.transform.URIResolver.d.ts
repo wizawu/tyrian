@@ -3,11 +3,11 @@ declare namespace javax {
     namespace transform {
 
       interface URIResolver$$lambda {
-        (arg0: java.lang.String, arg1: java.lang.String): javax.xml.transform.Source
+        (arg0: java.lang.String | string, arg1: java.lang.String | string): javax.xml.transform.Source
       }
 
       interface URIResolver {
-        resolve(arg0: java.lang.String, arg1: java.lang.String): javax.xml.transform.Source
+        resolve(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.xml.transform.Source
       }
 
     }

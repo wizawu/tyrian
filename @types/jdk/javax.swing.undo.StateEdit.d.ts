@@ -9,8 +9,8 @@ declare namespace javax {
         protected postState: java.util.Hashtable<java.lang.Object,java.lang.Object>
         protected undoRedoName: java.lang.String
         public constructor(arg0: javax.swing.undo.StateEditable)
-        public constructor(arg0: javax.swing.undo.StateEditable, arg1: java.lang.String)
-        protected init(arg0: javax.swing.undo.StateEditable, arg1: java.lang.String): void
+        public constructor(arg0: javax.swing.undo.StateEditable, arg1: java.lang.String | string)
+        protected init(arg0: javax.swing.undo.StateEditable, arg1: java.lang.String | string): void
         public end(): void
         public undo(): void
         public redo(): void

@@ -54,13 +54,13 @@ declare namespace java {
         public static readonly TAG_OPBD: int
         public static readonly TAG_PROP: int
         public static readonly TAG_TRAK: int
-        getVersion(): int
-        getFontTable(arg0: int): byte[]
-        getFontTable(arg0: java.lang.String): byte[]
-        getFontTable(arg0: int, arg1: int, arg2: int): byte[]
-        getFontTable(arg0: java.lang.String, arg1: int, arg2: int): byte[]
-        getFontTableSize(arg0: int): int
-        getFontTableSize(arg0: java.lang.String): int
+        getVersion(): number
+        getFontTable(arg0: number | java.lang.Integer): number[]
+        getFontTable(arg0: java.lang.String | string): number[]
+        getFontTable(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
+        getFontTable(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
+        getFontTableSize(arg0: number | java.lang.Integer): number
+        getFontTableSize(arg0: java.lang.String | string): number
       }
 
     }

@@ -3,42 +3,42 @@ declare namespace java {
 
     class Date implements java.io.Serializable, java.lang.Cloneable, java.lang.Comparable<java.util.Date> {
       public constructor()
-      public constructor(arg0: long)
-      public constructor(arg0: int, arg1: int, arg2: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int)
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int)
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: number | java.lang.Long)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer)
+      public constructor(arg0: java.lang.String | string)
       public clone(): java.lang.Object
-      public static UTC(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): long
-      public static parse(arg0: java.lang.String): long
-      public getYear(): int
-      public setYear(arg0: int): void
-      public getMonth(): int
-      public setMonth(arg0: int): void
-      public getDate(): int
-      public setDate(arg0: int): void
-      public getDay(): int
-      public getHours(): int
-      public setHours(arg0: int): void
-      public getMinutes(): int
-      public setMinutes(arg0: int): void
-      public getSeconds(): int
-      public setSeconds(arg0: int): void
-      public getTime(): long
-      public setTime(arg0: long): void
+      public static UTC(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): number
+      public static parse(arg0: java.lang.String | string): number
+      public getYear(): number
+      public setYear(arg0: number | java.lang.Integer): void
+      public getMonth(): number
+      public setMonth(arg0: number | java.lang.Integer): void
+      public getDate(): number
+      public setDate(arg0: number | java.lang.Integer): void
+      public getDay(): number
+      public getHours(): number
+      public setHours(arg0: number | java.lang.Integer): void
+      public getMinutes(): number
+      public setMinutes(arg0: number | java.lang.Integer): void
+      public getSeconds(): number
+      public setSeconds(arg0: number | java.lang.Integer): void
+      public getTime(): number
+      public setTime(arg0: number | java.lang.Long): void
       public before(arg0: java.util.Date): boolean
       public after(arg0: java.util.Date): boolean
-      public equals(arg0: java.lang.Object): boolean
-      static getMillisOf(arg0: java.util.Date): long
-      public compareTo(arg0: java.util.Date): int
-      public hashCode(): int
+      public equals(arg0: java.lang.Object | any): boolean
+      static getMillisOf(arg0: java.util.Date): number
+      public compareTo(arg0: java.util.Date): number
+      public hashCode(): number
       public toString(): java.lang.String
       public toLocaleString(): java.lang.String
       public toGMTString(): java.lang.String
-      public getTimezoneOffset(): int
+      public getTimezoneOffset(): number
       public static from(arg0: java.time.Instant): java.util.Date
       public toInstant(): java.time.Instant
-      public compareTo(arg0: java.lang.Object): int
+      public compareTo(arg0: java.lang.Object | any): number
     }
 
   }

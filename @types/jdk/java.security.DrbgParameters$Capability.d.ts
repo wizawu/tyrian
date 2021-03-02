@@ -6,7 +6,7 @@ declare namespace java {
       public static readonly RESEED_ONLY: java.security.DrbgParameters$Capability
       public static readonly NONE: java.security.DrbgParameters$Capability
       public static values(): java.security.DrbgParameters$Capability[]
-      public static valueOf(arg0: java.lang.String): java.security.DrbgParameters$Capability
+      public static valueOf(arg0: java.lang.String | string): java.security.DrbgParameters$Capability
       public toString(): java.lang.String
       public supportsReseeding(): boolean
       public supportsPredictionResistance(): boolean

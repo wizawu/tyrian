@@ -16,25 +16,25 @@ declare namespace javax {
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
-          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
+          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
           protected paintTrack(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: java.awt.Rectangle): void
           protected paintThumb(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: java.awt.Rectangle): void
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           protected getMinimumThumbSize(): java.awt.Dimension
-          protected createDecreaseButton(arg0: int): javax.swing.JButton
-          protected createIncreaseButton(arg0: int): javax.swing.JButton
-          protected setThumbRollover(arg0: boolean): void
+          protected createDecreaseButton(arg0: number | java.lang.Integer): javax.swing.JButton
+          protected createIncreaseButton(arg0: number | java.lang.Integer): javax.swing.JButton
+          protected setThumbRollover(arg0: boolean | java.lang.Boolean): void
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void
-          static access$000(arg0: javax.swing.plaf.synth.SynthScrollBarUI): int
+          static access$000(arg0: javax.swing.plaf.synth.SynthScrollBarUI): number
           static access$100(arg0: javax.swing.plaf.synth.SynthScrollBarUI): javax.swing.JScrollBar
-          static access$200(arg0: javax.swing.plaf.synth.SynthScrollBarUI): int
-          static access$300(arg0: javax.swing.plaf.synth.SynthScrollBarUI): int
-          static access$400(arg0: javax.swing.plaf.synth.SynthScrollBarUI): int
+          static access$200(arg0: javax.swing.plaf.synth.SynthScrollBarUI): number
+          static access$300(arg0: javax.swing.plaf.synth.SynthScrollBarUI): number
+          static access$400(arg0: javax.swing.plaf.synth.SynthScrollBarUI): number
           static access$500(arg0: javax.swing.plaf.synth.SynthScrollBarUI): javax.swing.JScrollBar
-          static access$600(arg0: javax.swing.plaf.synth.SynthScrollBarUI): int
-          static access$700(arg0: javax.swing.plaf.synth.SynthScrollBarUI): int
-          static access$800(arg0: javax.swing.plaf.synth.SynthScrollBarUI): int
-          static access$900(arg0: javax.swing.plaf.synth.SynthScrollBarUI): int
+          static access$600(arg0: javax.swing.plaf.synth.SynthScrollBarUI): number
+          static access$700(arg0: javax.swing.plaf.synth.SynthScrollBarUI): number
+          static access$800(arg0: javax.swing.plaf.synth.SynthScrollBarUI): number
+          static access$900(arg0: javax.swing.plaf.synth.SynthScrollBarUI): number
         }
 
       }

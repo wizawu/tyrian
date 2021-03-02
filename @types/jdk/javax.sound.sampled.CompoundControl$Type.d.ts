@@ -3,7 +3,7 @@ declare namespace javax {
     namespace sampled {
 
       class CompoundControl$Type extends javax.sound.sampled.Control$Type {
-        protected constructor(arg0: java.lang.String)
+        protected constructor(arg0: java.lang.String | string)
       }
 
     }

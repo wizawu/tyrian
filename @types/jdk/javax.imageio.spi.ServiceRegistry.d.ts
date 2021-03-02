@@ -8,13 +8,13 @@ declare namespace javax {
         public static lookupProviders<T>(arg0: java.lang.Class<T>): java.util.Iterator<T>
         public getCategories(): java.util.Iterator<java.lang.Class<unknown>>
         public registerServiceProvider<T>(arg0: T, arg1: java.lang.Class<T>): boolean
-        public registerServiceProvider(arg0: java.lang.Object): void
+        public registerServiceProvider(arg0: java.lang.Object | any): void
         public registerServiceProviders(arg0: java.util.Iterator<unknown>): void
         public deregisterServiceProvider<T>(arg0: T, arg1: java.lang.Class<T>): boolean
-        public deregisterServiceProvider(arg0: java.lang.Object): void
-        public contains(arg0: java.lang.Object): boolean
-        public getServiceProviders<T>(arg0: java.lang.Class<T>, arg1: boolean): java.util.Iterator<T>
-        public getServiceProviders<T>(arg0: java.lang.Class<T>, arg1: javax.imageio.spi.ServiceRegistry$Filter, arg2: boolean): java.util.Iterator<T>
+        public deregisterServiceProvider(arg0: java.lang.Object | any): void
+        public contains(arg0: java.lang.Object | any): boolean
+        public getServiceProviders<T>(arg0: java.lang.Class<T>, arg1: boolean | java.lang.Boolean): java.util.Iterator<T>
+        public getServiceProviders<T>(arg0: java.lang.Class<T>, arg1: javax.imageio.spi.ServiceRegistry$Filter | javax.imageio.spi.ServiceRegistry$Filter$$lambda, arg2: boolean | java.lang.Boolean): java.util.Iterator<T>
         public getServiceProviderByClass<T>(arg0: java.lang.Class<T>): T
         public setOrdering<T>(arg0: java.lang.Class<T>, arg1: T, arg2: T): boolean
         public unsetOrdering<T>(arg0: java.lang.Class<T>, arg1: T, arg2: T): boolean

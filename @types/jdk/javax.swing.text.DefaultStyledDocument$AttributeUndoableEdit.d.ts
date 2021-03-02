@@ -7,7 +7,7 @@ declare namespace javax {
         protected copy: javax.swing.text.AttributeSet
         protected isReplacing: boolean
         protected element: javax.swing.text.Element
-        public constructor(arg0: javax.swing.text.Element, arg1: javax.swing.text.AttributeSet, arg2: boolean)
+        public constructor(arg0: javax.swing.text.Element, arg1: javax.swing.text.AttributeSet, arg2: boolean | java.lang.Boolean)
         public redo(): void
         public undo(): void
       }

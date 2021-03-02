@@ -3,7 +3,7 @@ declare namespace java {
     namespace http {
 
       interface HttpRequest$BodyPublisher extends java.util.concurrent.Flow$Publisher<java.nio.ByteBuffer> {
-        contentLength(): long
+        contentLength(): number
       }
 
     }

@@ -5,7 +5,7 @@ declare namespace java {
       class InvocationTargetException extends java.lang.ReflectiveOperationException {
         protected constructor()
         public constructor(arg0: java.lang.Throwable)
-        public constructor(arg0: java.lang.Throwable, arg1: java.lang.String)
+        public constructor(arg0: java.lang.Throwable, arg1: java.lang.String | string)
         public getTargetException(): java.lang.Throwable
         public getCause(): java.lang.Throwable
       }

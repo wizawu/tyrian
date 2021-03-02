@@ -16,8 +16,8 @@ declare namespace javax {
       public static readonly MODULE_PATH: javax.tools.StandardLocation
       public static readonly PATCH_MODULE_PATH: javax.tools.StandardLocation
       public static values(): javax.tools.StandardLocation[]
-      public static valueOf(arg0: java.lang.String): javax.tools.StandardLocation
-      public static locationFor(arg0: java.lang.String): javax.tools.JavaFileManager$Location
+      public static valueOf(arg0: java.lang.String | string): javax.tools.StandardLocation
+      public static locationFor(arg0: java.lang.String | string): javax.tools.JavaFileManager$Location
       public getName(): java.lang.String
       public isOutputLocation(): boolean
       public isModuleOrientedLocation(): boolean

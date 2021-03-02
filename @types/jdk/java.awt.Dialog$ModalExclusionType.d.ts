@@ -6,7 +6,7 @@ declare namespace java {
       public static readonly APPLICATION_EXCLUDE: java.awt.Dialog$ModalExclusionType
       public static readonly TOOLKIT_EXCLUDE: java.awt.Dialog$ModalExclusionType
       public static values(): java.awt.Dialog$ModalExclusionType[]
-      public static valueOf(arg0: java.lang.String): java.awt.Dialog$ModalExclusionType
+      public static valueOf(arg0: java.lang.String | string): java.awt.Dialog$ModalExclusionType
     }
 
   }

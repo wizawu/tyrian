@@ -10,12 +10,12 @@ declare namespace java {
         public static readonly NARROW: java.time.format.TextStyle
         public static readonly NARROW_STANDALONE: java.time.format.TextStyle
         public static values(): java.time.format.TextStyle[]
-        public static valueOf(arg0: java.lang.String): java.time.format.TextStyle
+        public static valueOf(arg0: java.lang.String | string): java.time.format.TextStyle
         public isStandalone(): boolean
         public asStandalone(): java.time.format.TextStyle
         public asNormal(): java.time.format.TextStyle
-        toCalendarStyle(): int
-        zoneNameStyleIndex(): int
+        toCalendarStyle(): number
+        zoneNameStyleIndex(): number
       }
 
     }

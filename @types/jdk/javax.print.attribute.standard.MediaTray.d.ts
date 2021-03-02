@@ -12,7 +12,7 @@ declare namespace javax {
           public static readonly LARGE_CAPACITY: javax.print.attribute.standard.MediaTray
           public static readonly MAIN: javax.print.attribute.standard.MediaTray
           public static readonly SIDE: javax.print.attribute.standard.MediaTray
-          protected constructor(arg0: int)
+          protected constructor(arg0: number | java.lang.Integer)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
         }

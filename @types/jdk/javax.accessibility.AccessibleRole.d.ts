@@ -65,7 +65,7 @@ declare namespace javax {
       public static readonly RULER: javax.accessibility.AccessibleRole
       public static readonly EDITBAR: javax.accessibility.AccessibleRole
       public static readonly PROGRESS_MONITOR: javax.accessibility.AccessibleRole
-      protected constructor(arg0: java.lang.String)
+      protected constructor(arg0: java.lang.String | string)
     }
 
   }

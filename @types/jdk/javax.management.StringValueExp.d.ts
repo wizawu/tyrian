@@ -3,7 +3,7 @@ declare namespace javax {
 
     class StringValueExp implements javax.management.ValueExp {
       public constructor()
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
       public getValue(): java.lang.String
       public toString(): java.lang.String
       public setMBeanServer(arg0: javax.management.MBeanServer): void

@@ -10,8 +10,8 @@ declare namespace javax {
         getControls(): javax.sound.sampled.Control[]
         isControlSupported(arg0: javax.sound.sampled.Control$Type): boolean
         getControl(arg0: javax.sound.sampled.Control$Type): javax.sound.sampled.Control
-        addLineListener(arg0: javax.sound.sampled.LineListener): void
-        removeLineListener(arg0: javax.sound.sampled.LineListener): void
+        addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$lambda): void
+        removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$lambda): void
       }
 
     }

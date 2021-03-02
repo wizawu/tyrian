@@ -8,7 +8,7 @@ declare namespace javax {
       public getUI(): javax.swing.plaf.ToolTipUI
       public updateUI(): void
       public getUIClassID(): java.lang.String
-      public setTipText(arg0: java.lang.String): void
+      public setTipText(arg0: java.lang.String | string): void
       public getTipText(): java.lang.String
       public setComponent(arg0: javax.swing.JComponent): void
       public getComponent(): javax.swing.JComponent

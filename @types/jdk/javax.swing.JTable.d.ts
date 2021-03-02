@@ -34,113 +34,113 @@ declare namespace javax {
       public constructor(arg0: javax.swing.table.TableModel)
       public constructor(arg0: javax.swing.table.TableModel, arg1: javax.swing.table.TableColumnModel)
       public constructor(arg0: javax.swing.table.TableModel, arg1: javax.swing.table.TableColumnModel, arg2: javax.swing.ListSelectionModel)
-      public constructor(arg0: int, arg1: int)
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
       public constructor(arg0: java.util.Vector<java.util.Vector>, arg1: java.util.Vector<unknown>)
       public constructor(arg0: java.lang.Object[][], arg1: java.lang.Object[])
       public addNotify(): void
       protected configureEnclosingScrollPane(): void
       public removeNotify(): void
       protected unconfigureEnclosingScrollPane(): void
-      setUIProperty(arg0: java.lang.String, arg1: java.lang.Object): void
+      setUIProperty(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
       public static createScrollPaneForTable(arg0: javax.swing.JTable): javax.swing.JScrollPane
       public setTableHeader(arg0: javax.swing.table.JTableHeader): void
       public getTableHeader(): javax.swing.table.JTableHeader
-      public setRowHeight(arg0: int): void
-      public getRowHeight(): int
-      public setRowHeight(arg0: int, arg1: int): void
-      public getRowHeight(arg0: int): int
-      public setRowMargin(arg0: int): void
-      public getRowMargin(): int
+      public setRowHeight(arg0: number | java.lang.Integer): void
+      public getRowHeight(): number
+      public setRowHeight(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public getRowHeight(arg0: number | java.lang.Integer): number
+      public setRowMargin(arg0: number | java.lang.Integer): void
+      public getRowMargin(): number
       public setIntercellSpacing(arg0: java.awt.Dimension): void
       public getIntercellSpacing(): java.awt.Dimension
       public setGridColor(arg0: java.awt.Color): void
       public getGridColor(): java.awt.Color
-      public setShowGrid(arg0: boolean): void
-      public setShowHorizontalLines(arg0: boolean): void
-      public setShowVerticalLines(arg0: boolean): void
+      public setShowGrid(arg0: boolean | java.lang.Boolean): void
+      public setShowHorizontalLines(arg0: boolean | java.lang.Boolean): void
+      public setShowVerticalLines(arg0: boolean | java.lang.Boolean): void
       public getShowHorizontalLines(): boolean
       public getShowVerticalLines(): boolean
-      public setAutoResizeMode(arg0: int): void
-      public getAutoResizeMode(): int
-      public setAutoCreateColumnsFromModel(arg0: boolean): void
+      public setAutoResizeMode(arg0: number | java.lang.Integer): void
+      public getAutoResizeMode(): number
+      public setAutoCreateColumnsFromModel(arg0: boolean | java.lang.Boolean): void
       public getAutoCreateColumnsFromModel(): boolean
       public createDefaultColumnsFromModel(): void
-      public setDefaultRenderer(arg0: java.lang.Class<unknown>, arg1: javax.swing.table.TableCellRenderer): void
+      public setDefaultRenderer(arg0: java.lang.Class<unknown>, arg1: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda): void
       public getDefaultRenderer(arg0: java.lang.Class<unknown>): javax.swing.table.TableCellRenderer
       public setDefaultEditor(arg0: java.lang.Class<unknown>, arg1: javax.swing.table.TableCellEditor): void
       public getDefaultEditor(arg0: java.lang.Class<unknown>): javax.swing.table.TableCellEditor
-      public setDragEnabled(arg0: boolean): void
+      public setDragEnabled(arg0: boolean | java.lang.Boolean): void
       public getDragEnabled(): boolean
       public setDropMode(arg0: javax.swing.DropMode): void
       public getDropMode(): javax.swing.DropMode
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.JTable$DropLocation
-      setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object, arg2: boolean): java.lang.Object
+      setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean): java.lang.Object
       public getDropLocation(): javax.swing.JTable$DropLocation
-      public setAutoCreateRowSorter(arg0: boolean): void
+      public setAutoCreateRowSorter(arg0: boolean | java.lang.Boolean): void
       public getAutoCreateRowSorter(): boolean
-      public setUpdateSelectionOnSort(arg0: boolean): void
+      public setUpdateSelectionOnSort(arg0: boolean | java.lang.Boolean): void
       public getUpdateSelectionOnSort(): boolean
       public setRowSorter(arg0: javax.swing.RowSorter<javax.swing.table.TableModel>): void
       public getRowSorter(): javax.swing.RowSorter<javax.swing.table.TableModel>
-      public setSelectionMode(arg0: int): void
-      public setRowSelectionAllowed(arg0: boolean): void
+      public setSelectionMode(arg0: number | java.lang.Integer): void
+      public setRowSelectionAllowed(arg0: boolean | java.lang.Boolean): void
       public getRowSelectionAllowed(): boolean
-      public setColumnSelectionAllowed(arg0: boolean): void
+      public setColumnSelectionAllowed(arg0: boolean | java.lang.Boolean): void
       public getColumnSelectionAllowed(): boolean
-      public setCellSelectionEnabled(arg0: boolean): void
+      public setCellSelectionEnabled(arg0: boolean | java.lang.Boolean): void
       public getCellSelectionEnabled(): boolean
       public selectAll(): void
       public clearSelection(): void
-      public setRowSelectionInterval(arg0: int, arg1: int): void
-      public setColumnSelectionInterval(arg0: int, arg1: int): void
-      public addRowSelectionInterval(arg0: int, arg1: int): void
-      public addColumnSelectionInterval(arg0: int, arg1: int): void
-      public removeRowSelectionInterval(arg0: int, arg1: int): void
-      public removeColumnSelectionInterval(arg0: int, arg1: int): void
-      public getSelectedRow(): int
-      public getSelectedColumn(): int
-      public getSelectedRows(): int[]
-      public getSelectedColumns(): int[]
-      public getSelectedRowCount(): int
-      public getSelectedColumnCount(): int
-      public isRowSelected(arg0: int): boolean
-      public isColumnSelected(arg0: int): boolean
-      public isCellSelected(arg0: int, arg1: int): boolean
-      public changeSelection(arg0: int, arg1: int, arg2: boolean, arg3: boolean): void
+      public setRowSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public setColumnSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public addRowSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public addColumnSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public removeRowSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public removeColumnSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public getSelectedRow(): number
+      public getSelectedColumn(): number
+      public getSelectedRows(): number[]
+      public getSelectedColumns(): number[]
+      public getSelectedRowCount(): number
+      public getSelectedColumnCount(): number
+      public isRowSelected(arg0: number | java.lang.Integer): boolean
+      public isColumnSelected(arg0: number | java.lang.Integer): boolean
+      public isCellSelected(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
+      public changeSelection(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean): void
       public getSelectionForeground(): java.awt.Color
       public setSelectionForeground(arg0: java.awt.Color): void
       public getSelectionBackground(): java.awt.Color
       public setSelectionBackground(arg0: java.awt.Color): void
-      public getColumn(arg0: java.lang.Object): javax.swing.table.TableColumn
-      public convertColumnIndexToModel(arg0: int): int
-      public convertColumnIndexToView(arg0: int): int
-      public convertRowIndexToView(arg0: int): int
-      public convertRowIndexToModel(arg0: int): int
-      public getRowCount(): int
-      public getColumnCount(): int
-      public getColumnName(arg0: int): java.lang.String
-      public getColumnClass(arg0: int): java.lang.Class<unknown>
-      public getValueAt(arg0: int, arg1: int): java.lang.Object
-      public setValueAt(arg0: java.lang.Object, arg1: int, arg2: int): void
-      public isCellEditable(arg0: int, arg1: int): boolean
+      public getColumn(arg0: java.lang.Object | any): javax.swing.table.TableColumn
+      public convertColumnIndexToModel(arg0: number | java.lang.Integer): number
+      public convertColumnIndexToView(arg0: number | java.lang.Integer): number
+      public convertRowIndexToView(arg0: number | java.lang.Integer): number
+      public convertRowIndexToModel(arg0: number | java.lang.Integer): number
+      public getRowCount(): number
+      public getColumnCount(): number
+      public getColumnName(arg0: number | java.lang.Integer): java.lang.String
+      public getColumnClass(arg0: number | java.lang.Integer): java.lang.Class<unknown>
+      public getValueAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.Object
+      public setValueAt(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public isCellEditable(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
       public addColumn(arg0: javax.swing.table.TableColumn): void
       public removeColumn(arg0: javax.swing.table.TableColumn): void
-      public moveColumn(arg0: int, arg1: int): void
-      public columnAtPoint(arg0: java.awt.Point): int
-      public rowAtPoint(arg0: java.awt.Point): int
-      public getCellRect(arg0: int, arg1: int, arg2: boolean): java.awt.Rectangle
+      public moveColumn(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
+      public columnAtPoint(arg0: java.awt.Point): number
+      public rowAtPoint(arg0: java.awt.Point): number
+      public getCellRect(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): java.awt.Rectangle
       public doLayout(): void
-      public sizeColumnsToFit(arg0: boolean): void
-      public sizeColumnsToFit(arg0: int): void
+      public sizeColumnsToFit(arg0: boolean | java.lang.Boolean): void
+      public sizeColumnsToFit(arg0: number | java.lang.Integer): void
       public getToolTipText(arg0: java.awt.event.MouseEvent): java.lang.String
-      public setSurrendersFocusOnKeystroke(arg0: boolean): void
+      public setSurrendersFocusOnKeystroke(arg0: boolean | java.lang.Boolean): void
       public getSurrendersFocusOnKeystroke(): boolean
-      public editCellAt(arg0: int, arg1: int): boolean
-      public editCellAt(arg0: int, arg1: int, arg2: java.util.EventObject): boolean
+      public editCellAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
+      public editCellAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.util.EventObject): boolean
       public isEditing(): boolean
       public getEditorComponent(): java.awt.Component
-      public getEditingColumn(): int
-      public getEditingRow(): int
+      public getEditingColumn(): number
+      public getEditingRow(): number
       public getUI(): javax.swing.plaf.TableUI
       public setUI(arg0: javax.swing.plaf.TableUI): void
       public updateUI(): void
@@ -163,13 +163,13 @@ declare namespace javax {
       public editingCanceled(arg0: javax.swing.event.ChangeEvent): void
       public setPreferredScrollableViewportSize(arg0: java.awt.Dimension): void
       public getPreferredScrollableViewportSize(): java.awt.Dimension
-      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: int, arg2: int): int
-      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: int, arg2: int): int
+      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public getScrollableTracksViewportWidth(): boolean
       public getScrollableTracksViewportHeight(): boolean
-      public setFillsViewportHeight(arg0: boolean): void
+      public setFillsViewportHeight(arg0: boolean | java.lang.Boolean): void
       public getFillsViewportHeight(): boolean
-      protected processKeyBinding(arg0: javax.swing.KeyStroke, arg1: java.awt.event.KeyEvent, arg2: int, arg3: boolean): boolean
+      protected processKeyBinding(arg0: javax.swing.KeyStroke, arg1: java.awt.event.KeyEvent, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean): boolean
       protected createDefaultRenderers(): void
       protected createDefaultEditors(): void
       protected initializeLocalVars(): void
@@ -180,20 +180,20 @@ declare namespace javax {
       protected resizeAndRepaint(): void
       public getCellEditor(): javax.swing.table.TableCellEditor
       public setCellEditor(arg0: javax.swing.table.TableCellEditor): void
-      public setEditingColumn(arg0: int): void
-      public setEditingRow(arg0: int): void
-      public getCellRenderer(arg0: int, arg1: int): javax.swing.table.TableCellRenderer
-      public prepareRenderer(arg0: javax.swing.table.TableCellRenderer, arg1: int, arg2: int): java.awt.Component
-      public getCellEditor(arg0: int, arg1: int): javax.swing.table.TableCellEditor
-      public prepareEditor(arg0: javax.swing.table.TableCellEditor, arg1: int, arg2: int): java.awt.Component
+      public setEditingColumn(arg0: number | java.lang.Integer): void
+      public setEditingRow(arg0: number | java.lang.Integer): void
+      public getCellRenderer(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.table.TableCellRenderer
+      public prepareRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.awt.Component
+      public getCellEditor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.table.TableCellEditor
+      public prepareEditor(arg0: javax.swing.table.TableCellEditor, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.awt.Component
       public removeEditor(): void
       compWriteObjectNotify(): void
       protected paramString(): java.lang.String
       public print(): boolean
       public print(arg0: javax.swing.JTable$PrintMode): boolean
       public print(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat): boolean
-      public print(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat, arg3: boolean, arg4: javax.print.attribute.PrintRequestAttributeSet, arg5: boolean): boolean
-      public print(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat, arg3: boolean, arg4: javax.print.attribute.PrintRequestAttributeSet, arg5: boolean, arg6: javax.print.PrintService): boolean
+      public print(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat, arg3: boolean | java.lang.Boolean, arg4: javax.print.attribute.PrintRequestAttributeSet, arg5: boolean | java.lang.Boolean): boolean
+      public print(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat, arg3: boolean | java.lang.Boolean, arg4: javax.print.attribute.PrintRequestAttributeSet, arg5: boolean | java.lang.Boolean, arg6: javax.print.PrintService): boolean
       public getPrintable(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat): java.awt.print.Printable
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.TransferHandler$DropLocation

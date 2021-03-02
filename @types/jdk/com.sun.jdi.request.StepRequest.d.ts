@@ -10,11 +10,11 @@ declare namespace com {
           public static readonly STEP_MIN: int
           public static readonly STEP_LINE: int
           thread(): com.sun.jdi.ThreadReference
-          size(): int
-          depth(): int
+          size(): number
+          depth(): number
           addClassFilter(arg0: com.sun.jdi.ReferenceType): void
-          addClassFilter(arg0: java.lang.String): void
-          addClassExclusionFilter(arg0: java.lang.String): void
+          addClassFilter(arg0: java.lang.String | string): void
+          addClassExclusionFilter(arg0: java.lang.String | string): void
           addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
         }
 

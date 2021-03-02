@@ -5,20 +5,20 @@ declare namespace javax {
       protected changeEvent: javax.swing.event.ChangeEvent
       protected listenerList: javax.swing.event.EventListenerList
       public constructor()
-      public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
-      public getValue(): int
-      public getExtent(): int
-      public getMinimum(): int
-      public getMaximum(): int
-      public setValue(arg0: int): void
-      public setExtent(arg0: int): void
-      public setMinimum(arg0: int): void
-      public setMaximum(arg0: int): void
-      public setValueIsAdjusting(arg0: boolean): void
+      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      public getValue(): number
+      public getExtent(): number
+      public getMinimum(): number
+      public getMaximum(): number
+      public setValue(arg0: number | java.lang.Integer): void
+      public setExtent(arg0: number | java.lang.Integer): void
+      public setMinimum(arg0: number | java.lang.Integer): void
+      public setMaximum(arg0: number | java.lang.Integer): void
+      public setValueIsAdjusting(arg0: boolean | java.lang.Boolean): void
       public getValueIsAdjusting(): boolean
-      public setRangeProperties(arg0: int, arg1: int, arg2: int, arg3: int, arg4: boolean): void
-      public addChangeListener(arg0: javax.swing.event.ChangeListener): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener): void
+      public setRangeProperties(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean): void
+      public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public toString(): java.lang.String

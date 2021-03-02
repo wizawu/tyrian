@@ -21,7 +21,7 @@ declare namespace javax {
       public static readonly JPEG: javax.print.DocFlavor$INPUT_STREAM
       public static readonly PNG: javax.print.DocFlavor$INPUT_STREAM
       public static readonly AUTOSENSE: javax.print.DocFlavor$INPUT_STREAM
-      public constructor(arg0: java.lang.String)
+      public constructor(arg0: java.lang.String | string)
     }
 
   }

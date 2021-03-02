@@ -3,11 +3,11 @@ declare namespace java {
     namespace image {
 
       interface TileObserver$$lambda {
-        (arg0: java.awt.image.WritableRenderedImage, arg1: int, arg2: int, arg3: boolean): void
+        (arg0: java.awt.image.WritableRenderedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean): void
       }
 
       interface TileObserver {
-        tileUpdate(arg0: java.awt.image.WritableRenderedImage, arg1: int, arg2: int, arg3: boolean): void
+        tileUpdate(arg0: java.awt.image.WritableRenderedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean): void
       }
 
     }

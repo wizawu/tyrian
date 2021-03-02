@@ -5,25 +5,25 @@ declare namespace java {
       protected buf: char[]
       protected count: int
       public constructor()
-      public constructor(arg0: int)
-      public write(arg0: int): void
-      public write(arg0: char[], arg1: int, arg2: int): void
-      public write(arg0: java.lang.String, arg1: int, arg2: int): void
+      public constructor(arg0: number | java.lang.Integer)
+      public write(arg0: number | java.lang.Integer): void
+      public write(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public write(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public writeTo(arg0: java.io.Writer): void
       public append(arg0: java.lang.CharSequence): java.io.CharArrayWriter
-      public append(arg0: java.lang.CharSequence, arg1: int, arg2: int): java.io.CharArrayWriter
-      public append(arg0: char): java.io.CharArrayWriter
+      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.io.CharArrayWriter
+      public append(arg0: string | java.lang.Character): java.io.CharArrayWriter
       public reset(): void
-      public toCharArray(): char[]
-      public size(): int
+      public toCharArray(): string[]
+      public size(): number
       public toString(): java.lang.String
       public flush(): void
       public close(): void
-      public append(arg0: char): java.io.Writer
-      public append(arg0: java.lang.CharSequence, arg1: int, arg2: int): java.io.Writer
+      public append(arg0: string | java.lang.Character): java.io.Writer
+      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.io.Writer
       public append(arg0: java.lang.CharSequence): java.io.Writer
-      public append(arg0: char): java.lang.Appendable
-      public append(arg0: java.lang.CharSequence, arg1: int, arg2: int): java.lang.Appendable
+      public append(arg0: string | java.lang.Character): java.lang.Appendable
+      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.Appendable
       public append(arg0: java.lang.CharSequence): java.lang.Appendable
     }
 

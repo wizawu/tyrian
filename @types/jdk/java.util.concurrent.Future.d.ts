@@ -3,11 +3,11 @@ declare namespace java {
     namespace concurrent {
 
       interface Future<V> {
-        cancel(arg0: boolean): boolean
+        cancel(arg0: boolean | java.lang.Boolean): boolean
         isCancelled(): boolean
         isDone(): boolean
         get(): V
-        get(arg0: long, arg1: java.util.concurrent.TimeUnit): V
+        get(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): V
       }
 
     }

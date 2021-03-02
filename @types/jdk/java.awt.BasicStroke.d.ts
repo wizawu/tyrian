@@ -14,20 +14,20 @@ declare namespace java {
       miterlimit: float
       dash: float[]
       dash_phase: float
-      public constructor(arg0: float, arg1: int, arg2: int, arg3: float, arg4: float[], arg5: float)
-      public constructor(arg0: float, arg1: int, arg2: int, arg3: float)
-      public constructor(arg0: float, arg1: int, arg2: int)
-      public constructor(arg0: float)
+      public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Float, arg4: float[], arg5: number | java.lang.Float)
+      public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Float)
+      public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Float)
       public constructor()
       public createStrokedShape(arg0: java.awt.Shape): java.awt.Shape
-      public getLineWidth(): float
-      public getEndCap(): int
-      public getLineJoin(): int
-      public getMiterLimit(): float
-      public getDashArray(): float[]
-      public getDashPhase(): float
-      public hashCode(): int
-      public equals(arg0: java.lang.Object): boolean
+      public getLineWidth(): number
+      public getEndCap(): number
+      public getLineJoin(): number
+      public getMiterLimit(): number
+      public getDashArray(): number[]
+      public getDashPhase(): number
+      public hashCode(): number
+      public equals(arg0: java.lang.Object | any): boolean
     }
 
   }

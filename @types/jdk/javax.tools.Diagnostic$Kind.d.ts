@@ -8,7 +8,7 @@ declare namespace javax {
       public static readonly NOTE: javax.tools.Diagnostic$Kind
       public static readonly OTHER: javax.tools.Diagnostic$Kind
       public static values(): javax.tools.Diagnostic$Kind[]
-      public static valueOf(arg0: java.lang.String): javax.tools.Diagnostic$Kind
+      public static valueOf(arg0: java.lang.String | string): javax.tools.Diagnostic$Kind
     }
 
   }

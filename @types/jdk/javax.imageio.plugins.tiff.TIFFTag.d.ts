@@ -20,21 +20,21 @@ declare namespace javax {
           public static readonly MIN_DATATYPE: int
           public static readonly MAX_DATATYPE: int
           public static readonly UNKNOWN_TAG_NAME: java.lang.String
-          public constructor(arg0: java.lang.String, arg1: int, arg2: int, arg3: int)
-          public constructor(arg0: java.lang.String, arg1: int, arg2: javax.imageio.plugins.tiff.TIFFTagSet)
-          public constructor(arg0: java.lang.String, arg1: int, arg2: int)
-          public static getSizeOfType(arg0: int): int
+          public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+          public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: javax.imageio.plugins.tiff.TIFFTagSet)
+          public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+          public static getSizeOfType(arg0: number | java.lang.Integer): number
           public getName(): java.lang.String
-          public getNumber(): int
-          public getDataTypes(): int
-          public getCount(): int
-          public isDataTypeOK(arg0: int): boolean
+          public getNumber(): number
+          public getDataTypes(): number
+          public getCount(): number
+          public isDataTypeOK(arg0: number | java.lang.Integer): boolean
           public getTagSet(): javax.imageio.plugins.tiff.TIFFTagSet
           public isIFDPointer(): boolean
           public hasValueNames(): boolean
-          protected addValueName(arg0: int, arg1: java.lang.String): void
-          public getValueName(arg0: int): java.lang.String
-          public getNamedValues(): int[]
+          protected addValueName(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
+          public getValueName(arg0: number | java.lang.Integer): java.lang.String
+          public getNamedValues(): number[]
         }
 
       }

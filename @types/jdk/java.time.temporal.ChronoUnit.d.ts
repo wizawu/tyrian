@@ -20,14 +20,14 @@ declare namespace java {
         public static readonly ERAS: java.time.temporal.ChronoUnit
         public static readonly FOREVER: java.time.temporal.ChronoUnit
         public static values(): java.time.temporal.ChronoUnit[]
-        public static valueOf(arg0: java.lang.String): java.time.temporal.ChronoUnit
+        public static valueOf(arg0: java.lang.String | string): java.time.temporal.ChronoUnit
         public getDuration(): java.time.Duration
         public isDurationEstimated(): boolean
         public isDateBased(): boolean
         public isTimeBased(): boolean
         public isSupportedBy(arg0: java.time.temporal.Temporal): boolean
-        public addTo<R extends java.time.temporal.Temporal>(arg0: R, arg1: long): R
-        public between(arg0: java.time.temporal.Temporal, arg1: java.time.temporal.Temporal): long
+        public addTo<R extends java.time.temporal.Temporal>(arg0: R, arg1: number | java.lang.Long): R
+        public between(arg0: java.time.temporal.Temporal, arg1: java.time.temporal.Temporal): number
         public toString(): java.lang.String
       }
 

@@ -32,7 +32,7 @@ export function parse(classPaths: string[], counter: InterfaceStat, classList: s
     const count = it.interfaceBody().interfaceMember()
       .filter(it => it.methodDeclaration()).length
     if (it.typeList()) {
-      counter[className] = [count, it.typeList().type().map(it => qualifiedName(it))]
+      counter[className] = [count, ...it.typeList().type().map(it => qualifiedName(it))]
     } else {
       counter[className] = [count]
     }

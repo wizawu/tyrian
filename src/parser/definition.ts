@@ -6,7 +6,7 @@ import { qualifiedName, safeNamespace, memberModifier } from "./common"
 
 const LambdaSuffix = "$$lambda"
 
-export function generate(context: CompilationUnitContext, counter: InterfaceStat, typeRoot: string): boolean {
+export function generate(context: CompilationUnitContext, ifs: InterfaceStat, typeRoot: string): boolean {
   fs.mkdirSync(typeRoot, { recursive: true })
   for (const c of context.classOrInterface()) {
     let filename = ""
@@ -48,7 +48,7 @@ export function generate(context: CompilationUnitContext, counter: InterfaceStat
       frontBuffer.push(nsDeclaration[0])
       endBuffer.push(nsDeclaration[1])
       // generate lambda type
-      if (isLambda(counter, type)) {
+      if (isLambda(ifs, type)) {
         if (interfaceBody.interfaceMember()?.some(it => it.methodDeclaration())) {
           const method = interfaceBody.interfaceMember().filter(it => it.methodDeclaration())[0].methodDeclaration()
           frontBuffer.push(
@@ -57,7 +57,7 @@ export function generate(context: CompilationUnitContext, counter: InterfaceStat
             ": " + typeToString(method.type()) + "\n}\n"
           )
         } else {
-          extend.type().filter(it => isLambda(counter, it)).forEach(it => {
+          extend.type().filter(it => isLambda(ifs, it)).forEach(it => {
             frontBuffer.push(
               "type " + type.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type.typeArguments()) +
               " = " + qualifiedName(it, true) + LambdaSuffix + typeArgumentsToString(it.typeArguments()) + "\n"
@@ -180,14 +180,14 @@ function declareNamespaces(type: TypeContext): [string, string] {
   return result[0] ? ["declare " + result[0], result[1]] : result
 }
 
-function isLambda(counter: InterfaceStat, type: TypeContext): boolean {
+function isLambda(stat: InterfaceStat, type: TypeContext): boolean {
   let count = 0
   const queue = [qualifiedName(type)]
   for (let i = 0; i < queue.length; i++) {
     const current = queue[i]
-    if (counter[current]) {
-      count += counter[current][0]
-      counter[current].slice(1).forEach(it => {
+    if (stat[current]) {
+      count += stat[current][0]
+      stat[current].slice(1).forEach(it => {
         if (queue.indexOf(it) < 0) queue.push(it)
       })
     }

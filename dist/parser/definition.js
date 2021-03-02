@@ -16,7 +16,7 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var common_1 = require("./common");
 var LambdaSuffix = "$$lambda";
-function generate(context, counter, typeRoot) {
+function generate(context, ifs, typeRoot) {
     var _a;
     fs_1.default.mkdirSync(typeRoot, { recursive: true });
     var _loop_1 = function (c) {
@@ -63,7 +63,7 @@ function generate(context, counter, typeRoot) {
             frontBuffer.push(nsDeclaration[0]);
             endBuffer.push(nsDeclaration[1]);
             // generate lambda type
-            if (isLambda(counter, type_1)) {
+            if (isLambda(ifs, type_1)) {
                 if ((_a = interfaceBody.interfaceMember()) === null || _a === void 0 ? void 0 : _a.some(function (it) { return it.methodDeclaration(); })) {
                     var method = interfaceBody.interfaceMember().filter(function (it) { return it.methodDeclaration(); })[0].methodDeclaration();
                     frontBuffer.push("interface " + type_1.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type_1.typeArguments()) +
@@ -71,7 +71,7 @@ function generate(context, counter, typeRoot) {
                         ": " + typeToString(method.type()) + "\n}\n");
                 }
                 else {
-                    extend.type().filter(function (it) { return isLambda(counter, it); }).forEach(function (it) {
+                    extend.type().filter(function (it) { return isLambda(ifs, it); }).forEach(function (it) {
                         frontBuffer.push("type " + type_1.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type_1.typeArguments()) +
                             " = " + common_1.qualifiedName(it, true) + LambdaSuffix + typeArgumentsToString(it.typeArguments()) + "\n");
                     });
@@ -205,14 +205,14 @@ function declareNamespaces(type) {
     }
     return result[0] ? ["declare " + result[0], result[1]] : result;
 }
-function isLambda(counter, type) {
+function isLambda(stat, type) {
     var count = 0;
     var queue = [common_1.qualifiedName(type)];
     for (var i = 0; i < queue.length; i++) {
         var current = queue[i];
-        if (counter[current]) {
-            count += counter[current][0];
-            counter[current].slice(1).forEach(function (it) {
+        if (stat[current]) {
+            count += stat[current][0];
+            stat[current].slice(1).forEach(function (it) {
                 if (queue.indexOf(it) < 0)
                     queue.push(it);
             });

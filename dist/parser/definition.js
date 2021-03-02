@@ -19,6 +19,7 @@ var LambdaSuffix = "$$lambda";
 function generate(context, ifs, typeRoot) {
     var _a;
     fs_1.default.mkdirSync(typeRoot, { recursive: true });
+    var references = [];
     var _loop_1 = function (c) {
         var filename = "";
         var frontBuffer = [];
@@ -99,12 +100,14 @@ function generate(context, ifs, typeRoot) {
             var content = __spreadArrays(frontBuffer, endBuffer.reverse()).join("\n");
             fs_1.default.writeFileSync(path_1.default.join(typeRoot, filename), content + lambdaBuffer);
             console.debug(chalk_1.default.green("Generated " + filename));
+            references.push(filename);
         }
     };
     for (var _i = 0, _b = context.classOrInterface(); _i < _b.length; _i++) {
         var c = _b[_i];
         _loop_1(c);
     }
+    fs_1.default.writeFileSync(path_1.default.join(typeRoot, "index.d.ts"), references.map(function (it) { return "/// <reference path=\"" + it + "\" />"; }).sort().join("\n"));
     return true;
 }
 exports.generate = generate;
@@ -140,7 +143,7 @@ function declareMethod(method, ifs, isClass) {
 function methodArgumentsToString(methodArgs, ifs) {
     var _a;
     var argTypes = function (type) { return common_1.isLambda(ifs, type) ?
-        [common_1.qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments()), typeToString(type)] :
+        [typeToString(type), common_1.qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())] :
         common_1.typeAlias(typeToString(type)); };
     var result = [];
     for (var _i = 0, _b = (((_a = methodArgs.typeList()) === null || _a === void 0 ? void 0 : _a.type()) || []); _i < _b.length; _i++) {

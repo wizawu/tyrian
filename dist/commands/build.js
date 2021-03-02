@@ -59,7 +59,15 @@ function getCompiler(entries, outDir) {
                     test: /\.tsx?$/,
                     use: [{
                             loader: "ts-loader",
-                            options: { transpileOnly: false },
+                            options: {
+                                transpileOnly: false,
+                                compilerOptions: {
+                                    typeRoots: [
+                                        path_1.default.join(__dirname, "..", "..", "@types"),
+                                        path_1.default.join(process.cwd(), "lib"),
+                                    ]
+                                }
+                            },
                         }]
                 }]
         },

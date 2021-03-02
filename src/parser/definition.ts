@@ -8,6 +8,7 @@ const LambdaSuffix = "$$lambda"
 
 export function generate(context: CompilationUnitContext, ifs: InterfaceStat, typeRoot: string): boolean {
   fs.mkdirSync(typeRoot, { recursive: true })
+  const references: string[] = []
   for (const c of context.classOrInterface()) {
     let filename = ""
     const frontBuffer: string[] = []
@@ -84,8 +85,13 @@ export function generate(context: CompilationUnitContext, ifs: InterfaceStat, ty
       const content = [...frontBuffer, ...endBuffer.reverse()].join("\n")
       fs.writeFileSync(path.join(typeRoot, filename), content + lambdaBuffer)
       console.debug(chalk.green("Generated " + filename))
+      references.push(filename)
     }
   }
+  fs.writeFileSync(
+    path.join(typeRoot, "index.d.ts"),
+    references.map(it => `/// <reference path="${it}" />`).sort().join("\n")
+  )
   return true
 }
 
@@ -119,7 +125,7 @@ function declareMethod(method: MethodDeclarationContext, ifs: InterfaceStat, isC
 
 function methodArgumentsToString(methodArgs: MethodArgumentsContext, ifs: InterfaceStat): string {
   const argTypes = (type: TypeContext) => isLambda(ifs, type) ?
-    [qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments()), typeToString(type)] :
+    [typeToString(type), qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())] :
     typeAlias(typeToString(type))
 
   const result: string[] = []

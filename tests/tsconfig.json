@@ -1,7 +1,0 @@
-{
-  "compilerOptions": {
-    "typeRoots": [
-      "lib/@types"
-    ]
-  }
-}

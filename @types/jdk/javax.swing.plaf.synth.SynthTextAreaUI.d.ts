@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthTextAreaUI extends javax.swing.plaf.basic.BasicTextAreaUI implements javax.swing.plaf.synth.SynthUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installDefaults(): void

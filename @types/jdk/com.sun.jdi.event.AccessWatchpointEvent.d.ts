@@ -4,7 +4,6 @@ declare namespace com {
       namespace event {
 
         interface AccessWatchpointEvent extends com.sun.jdi.event.WatchpointEvent {
-
         }
 
       }

@@ -4,7 +4,6 @@ declare namespace com {
       namespace request {
 
         interface ThreadDeathRequest extends com.sun.jdi.request.EventRequest {
-
           addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
         }
 

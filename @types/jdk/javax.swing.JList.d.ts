@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JList<E> extends javax.swing.JComponent implements javax.swing.Scrollable, javax.accessibility.Accessible {
-
       public static readonly VERTICAL: int
       public static readonly VERTICAL_WRAP: int
       public static readonly HORIZONTAL_WRAP: int
@@ -36,11 +35,11 @@ declare namespace javax {
       public ensureIndexIsVisible(arg0: int): void
       public setDragEnabled(arg0: boolean): void
       public getDragEnabled(): boolean
-      public readonly setDropMode(arg0: javax.swing.DropMode): void
-      public readonly getDropMode(): javax.swing.DropMode
+      public setDropMode(arg0: javax.swing.DropMode): void
+      public getDropMode(): javax.swing.DropMode
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.JList$DropLocation
       setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object, arg2: boolean): java.lang.Object
-      public readonly getDropLocation(): javax.swing.JList$DropLocation
+      public getDropLocation(): javax.swing.JList$DropLocation
       public getNextMatch(arg0: java.lang.String, arg1: int, arg2: javax.swing.text.Position$Bias): int
       public getToolTipText(arg0: java.awt.event.MouseEvent): java.lang.String
       public locationToIndex(arg0: java.awt.Point): int

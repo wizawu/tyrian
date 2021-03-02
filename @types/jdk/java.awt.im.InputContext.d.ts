@@ -3,7 +3,6 @@ declare namespace java {
     namespace im {
 
       class InputContext {
-
         protected constructor()
         public static getInstance(): java.awt.im.InputContext
         public selectInputMethod(arg0: java.util.Locale): boolean

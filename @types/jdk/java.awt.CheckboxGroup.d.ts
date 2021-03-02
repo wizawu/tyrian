@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class CheckboxGroup implements java.io.Serializable {
-
       selectedCheckbox: java.awt.Checkbox
       public constructor()
       public getSelectedCheckbox(): java.awt.Checkbox

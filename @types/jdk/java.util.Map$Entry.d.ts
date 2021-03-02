@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     interface Map$Entry<K,V> {
-
       getKey(): K
       getValue(): V
       setValue(arg0: V): V

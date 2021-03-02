@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class Phaser {
-
         static readonly SPINS_PER_ARRIVAL: int
         public constructor()
         public constructor(arg0: int)
@@ -18,7 +17,7 @@ declare namespace java {
         public awaitAdvanceInterruptibly(arg0: int): int
         public awaitAdvanceInterruptibly(arg0: int, arg1: long, arg2: java.util.concurrent.TimeUnit): int
         public forceTermination(): void
-        public readonly getPhase(): int
+        public getPhase(): int
         public getRegisteredParties(): int
         public getArrivedParties(): int
         public getUnarrivedParties(): int

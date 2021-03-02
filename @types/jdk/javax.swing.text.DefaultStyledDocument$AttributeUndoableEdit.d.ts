@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class DefaultStyledDocument$AttributeUndoableEdit extends javax.swing.undo.AbstractUndoableEdit {
-
         protected newAttributes: javax.swing.text.AttributeSet
         protected copy: javax.swing.text.AttributeSet
         protected isReplacing: boolean

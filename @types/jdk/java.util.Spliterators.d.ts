@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Spliterators {
-
       public static emptySpliterator<T>(): java.util.Spliterator<T>
       public static emptyIntSpliterator(): java.util.Spliterator$OfInt
       public static emptyLongSpliterator(): java.util.Spliterator$OfLong

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JLayeredPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
-
       public static readonly DEFAULT_LAYER: java.lang.Integer
       public static readonly PALETTE_LAYER: java.lang.Integer
       public static readonly MODAL_LAYER: java.lang.Integer

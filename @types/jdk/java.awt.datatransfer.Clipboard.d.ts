@@ -3,7 +3,6 @@ declare namespace java {
     namespace datatransfer {
 
       class Clipboard {
-
         name: java.lang.String
         protected owner: java.awt.datatransfer.ClipboardOwner
         protected contents: java.awt.datatransfer.Transferable

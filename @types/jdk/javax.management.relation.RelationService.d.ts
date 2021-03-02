@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       class RelationService extends javax.management.NotificationBroadcasterSupport implements javax.management.relation.RelationServiceMBean, javax.management.MBeanRegistration, javax.management.NotificationListener {
-
         public constructor(arg0: boolean)
         public isActive(): void
         public preRegister(arg0: javax.management.MBeanServer, arg1: javax.management.ObjectName): javax.management.ObjectName

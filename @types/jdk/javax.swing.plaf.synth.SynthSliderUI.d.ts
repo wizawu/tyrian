@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthSliderUI extends javax.swing.plaf.basic.BasicSliderUI implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI {
-
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected constructor(arg0: javax.swing.JSlider)
           protected installDefaults(arg0: javax.swing.JSlider): void

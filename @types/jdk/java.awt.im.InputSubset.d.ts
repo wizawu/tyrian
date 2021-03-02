@@ -3,7 +3,6 @@ declare namespace java {
     namespace im {
 
       class InputSubset extends java.lang.Character$Subset {
-
         public static readonly LATIN: java.awt.im.InputSubset
         public static readonly LATIN_DIGITS: java.awt.im.InputSubset
         public static readonly TRADITIONAL_HANZI: java.awt.im.InputSubset

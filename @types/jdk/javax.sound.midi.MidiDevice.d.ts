@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       interface MidiDevice extends java.lang.AutoCloseable {
-
         getDeviceInfo(): javax.sound.midi.MidiDevice$Info
         open(): void
         close(): void

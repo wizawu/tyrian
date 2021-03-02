@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface ContinueTree extends com.sun.source.tree.StatementTree {
-
           getLabel(): javax.lang.model.element.Name
         }
 

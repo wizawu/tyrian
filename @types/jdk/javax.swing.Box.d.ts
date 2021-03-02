@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class Box extends javax.swing.JComponent implements javax.accessibility.Accessible {
-
       public constructor(arg0: int)
       public static createHorizontalBox(): javax.swing.Box
       public static createVerticalBox(): javax.swing.Box

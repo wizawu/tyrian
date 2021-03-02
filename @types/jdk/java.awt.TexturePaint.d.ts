@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class TexturePaint implements java.awt.Paint {
-
       bufImg: java.awt.image.BufferedImage
       tx: double
       ty: double

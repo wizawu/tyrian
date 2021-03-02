@@ -3,7 +3,6 @@ declare namespace java {
     namespace desktop {
 
       class ScreenSleepEvent extends java.awt.desktop.AppEvent {
-
         public constructor()
       }
 

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class MBeanServerFactory {
-
       public static releaseMBeanServer(arg0: javax.management.MBeanServer): void
       public static createMBeanServer(): javax.management.MBeanServer
       public static createMBeanServer(arg0: java.lang.String): javax.management.MBeanServer

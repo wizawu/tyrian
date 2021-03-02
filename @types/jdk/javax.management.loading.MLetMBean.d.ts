@@ -3,7 +3,6 @@ declare namespace javax {
     namespace loading {
 
       interface MLetMBean {
-
         getMBeansFromURL(arg0: java.lang.String): java.util.Set<java.lang.Object>
         getMBeansFromURL(arg0: java.net.URL): java.util.Set<java.lang.Object>
         addURL(arg0: java.net.URL): void

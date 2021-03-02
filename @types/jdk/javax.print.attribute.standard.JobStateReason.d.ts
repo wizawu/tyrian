@@ -4,7 +4,6 @@ declare namespace javax {
       namespace standard {
 
         class JobStateReason extends javax.print.attribute.EnumSyntax implements javax.print.attribute.Attribute {
-
           public static readonly JOB_INCOMING: javax.print.attribute.standard.JobStateReason
           public static readonly JOB_DATA_INSUFFICIENT: javax.print.attribute.standard.JobStateReason
           public static readonly DOCUMENT_ACCESS_ERROR: javax.print.attribute.standard.JobStateReason
@@ -37,8 +36,8 @@ declare namespace javax {
           protected constructor(arg0: int)
           protected getStringTable(): java.lang.String[]
           protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
-          public readonly getCategory(): java.lang.Class<javax.print.attribute.Attribute>
-          public readonly getName(): java.lang.String
+          public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
+          public getName(): java.lang.String
         }
 
       }

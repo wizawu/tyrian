@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       abstract class SSLSocket extends java.net.Socket {
-
         protected constructor()
         protected constructor(arg0: java.lang.String, arg1: int)
         protected constructor(arg0: java.net.InetAddress, arg1: int)

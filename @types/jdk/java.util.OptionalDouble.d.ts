@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class OptionalDouble {
-
       public static empty(): java.util.OptionalDouble
       public static of(arg0: double): java.util.OptionalDouble
       public getAsDouble(): double

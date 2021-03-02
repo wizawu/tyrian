@@ -3,7 +3,6 @@ declare namespace javax {
     namespace modelmbean {
 
       class ModelMBeanAttributeInfo extends javax.management.MBeanAttributeInfo implements javax.management.DescriptorAccess {
-
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.reflect.Method, arg3: java.lang.reflect.Method)
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.reflect.Method, arg3: java.lang.reflect.Method, arg4: javax.management.Descriptor)
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: boolean, arg4: boolean, arg5: boolean)

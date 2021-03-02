@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class InterfaceAddress {
-
       constructor()
       public getAddress(): java.net.InetAddress
       public getBroadcast(): java.net.InetAddress

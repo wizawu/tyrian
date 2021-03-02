@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalBorders {
-
           static NO_BUTTON_ROLLOVER: java.lang.Object
           public constructor()
           public static getButtonBorder(): javax.swing.border.Border

@@ -4,7 +4,6 @@ declare namespace com {
       namespace util {
 
         interface DocSourcePositions extends com.sun.source.util.SourcePositions {
-
           getStartPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.doctree.DocCommentTree, arg2: com.sun.source.doctree.DocTree): long
           getEndPosition(arg0: com.sun.source.tree.CompilationUnitTree, arg1: com.sun.source.doctree.DocCommentTree, arg2: com.sun.source.doctree.DocTree): long
         }

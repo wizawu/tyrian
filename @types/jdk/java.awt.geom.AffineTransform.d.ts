@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       class AffineTransform implements java.lang.Cloneable, java.io.Serializable {
-
         public static readonly TYPE_IDENTITY: int
         public static readonly TYPE_TRANSLATION: int
         public static readonly TYPE_UNIFORM_SCALE: int

@@ -2,8 +2,11 @@ declare namespace java {
   namespace util {
     namespace function$ {
 
-      interface Supplier<T> {
+      interface Supplier$$lambda<T> {
+        (): T
+      }
 
+      interface Supplier<T> {
         get(): T
       }
 

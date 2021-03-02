@@ -4,7 +4,6 @@ declare namespace javax {
       namespace bmp {
 
         class BMPImageWriteParam extends javax.imageio.ImageWriteParam {
-
           public constructor(arg0: java.util.Locale)
           public constructor()
           public setTopDown(arg0: boolean): void

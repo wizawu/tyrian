@@ -2,12 +2,11 @@ declare namespace java {
   namespace util {
 
     class IdentityHashMap<K,V> extends java.util.AbstractMap<K,V> implements java.util.Map<K,V>, java.io.Serializable, java.lang.Cloneable {
-
       table: java.lang.Object[]
       size: int
       modCount: int
       static readonly NULL_KEY: java.lang.Object
-      static readonly unmaskNull(arg0: java.lang.Object): java.lang.Object
+      static unmaskNull(arg0: java.lang.Object): java.lang.Object
       public constructor()
       public constructor(arg0: int)
       public constructor(arg0: java.util.Map<K,V>)

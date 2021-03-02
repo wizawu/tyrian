@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class ComponentEvent extends java.awt.AWTEvent {
-
         public static readonly COMPONENT_FIRST: int
         public static readonly COMPONENT_LAST: int
         public static readonly COMPONENT_MOVED: int

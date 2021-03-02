@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     class SimpleDateFormat extends java.text.DateFormat {
-
       static readonly serialVersionUID: long
       static readonly currentSerialVersion: int
       useDateFormatSymbols: boolean

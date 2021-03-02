@@ -3,14 +3,13 @@ declare namespace javax {
     namespace stream {
 
       abstract class ImageInputStreamImpl implements javax.imageio.stream.ImageInputStream {
-
         byteBuf: byte[]
         protected byteOrder: java.nio.ByteOrder
         protected streamPos: long
         protected bitOffset: int
         protected flushedPos: long
         public constructor()
-        protected readonly checkClosed(): void
+        protected checkClosed(): void
         public setByteOrder(arg0: java.nio.ByteOrder): void
         public getByteOrder(): java.nio.ByteOrder
         public abstract read(): int

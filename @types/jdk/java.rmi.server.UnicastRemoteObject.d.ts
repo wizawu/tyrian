@@ -3,7 +3,6 @@ declare namespace java {
     namespace server {
 
       class UnicastRemoteObject extends java.rmi.server.RemoteServer {
-
         protected constructor()
         protected constructor(arg0: int)
         protected constructor(arg0: int, arg1: java.rmi.server.RMIClientSocketFactory, arg2: java.rmi.server.RMIServerSocketFactory)

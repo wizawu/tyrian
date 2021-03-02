@@ -4,7 +4,6 @@ declare namespace javax {
       namespace element {
 
         interface VariableElement extends javax.lang.model.element.Element {
-
           getConstantValue(): java.lang.Object
           getSimpleName(): javax.lang.model.element.Name
           getEnclosingElement(): javax.lang.model.element.Element

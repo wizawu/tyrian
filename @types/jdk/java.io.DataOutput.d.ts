@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     interface DataOutput {
-
       write(arg0: int): void
       write(arg0: byte[]): void
       write(arg0: byte[], arg1: int, arg2: int): void

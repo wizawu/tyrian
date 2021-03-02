@@ -3,7 +3,6 @@ declare namespace java {
     namespace annotation {
 
       interface Documented extends java.lang.annotation.Annotation {
-
       }
 
     }

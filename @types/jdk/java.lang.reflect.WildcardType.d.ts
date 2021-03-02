@@ -3,7 +3,6 @@ declare namespace java {
     namespace reflect {
 
       interface WildcardType extends java.lang.reflect.Type {
-
         getUpperBounds(): java.lang.reflect.Type[]
         getLowerBounds(): java.lang.reflect.Type[]
       }

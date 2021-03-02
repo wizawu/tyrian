@@ -3,7 +3,6 @@ declare namespace java {
     namespace print {
 
       class Paper implements java.lang.Cloneable {
-
         public constructor()
         public clone(): java.lang.Object
         public getHeight(): double

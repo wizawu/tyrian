@@ -5,7 +5,6 @@ declare namespace javax {
         namespace parser {
 
           class TagElement {
-
             elem: javax.swing.text.html.parser.Element
             htmlTag: javax.swing.text.html.HTML$Tag
             insertedByErrorRecovery: boolean

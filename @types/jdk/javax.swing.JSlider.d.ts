@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JSlider extends javax.swing.JComponent implements javax.swing.SwingConstants, javax.accessibility.Accessible {
-
       protected sliderModel: javax.swing.BoundedRangeModel
       protected majorTickSpacing: int
       protected minorTickSpacing: int

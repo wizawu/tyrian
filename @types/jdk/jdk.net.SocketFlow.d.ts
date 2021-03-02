@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace net {
 
     class SocketFlow {
-
       public static readonly UNSET: int
       public static readonly NORMAL_PRIORITY: int
       public static readonly HIGH_PRIORITY: int

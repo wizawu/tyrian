@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       interface MouseMotionListener extends java.util.EventListener {
-
         mouseDragged(arg0: java.awt.event.MouseEvent): void
         mouseMoved(arg0: java.awt.event.MouseEvent): void
       }

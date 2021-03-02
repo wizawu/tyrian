@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     abstract class ProxySelector {
-
       public constructor()
       public static getDefault(): java.net.ProxySelector
       public static setDefault(arg0: java.net.ProxySelector): void

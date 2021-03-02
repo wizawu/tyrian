@@ -3,7 +3,6 @@ declare namespace java {
     namespace chrono {
 
       class ThaiBuddhistEra extends java.lang.Enum<java.time.chrono.ThaiBuddhistEra> implements java.time.chrono.Era {
-
         public static readonly BEFORE_BE: java.time.chrono.ThaiBuddhistEra
         public static readonly BE: java.time.chrono.ThaiBuddhistEra
         public static values(): java.time.chrono.ThaiBuddhistEra[]

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     class AccessibleRole extends javax.accessibility.AccessibleBundle {
-
       public static readonly ALERT: javax.accessibility.AccessibleRole
       public static readonly COLUMN_HEADER: javax.accessibility.AccessibleRole
       public static readonly CANVAS: javax.accessibility.AccessibleRole

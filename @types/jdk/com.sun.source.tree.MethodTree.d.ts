@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface MethodTree extends com.sun.source.tree.Tree {
-
           getModifiers(): com.sun.source.tree.ModifiersTree
           getName(): javax.lang.model.element.Name
           getReturnType(): com.sun.source.tree.Tree

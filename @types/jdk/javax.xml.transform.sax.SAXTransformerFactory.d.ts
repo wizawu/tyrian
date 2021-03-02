@@ -4,7 +4,6 @@ declare namespace javax {
       namespace sax {
 
         abstract class SAXTransformerFactory extends javax.xml.transform.TransformerFactory {
-
           public static readonly FEATURE: java.lang.String
           public static readonly FEATURE_XMLFILTER: java.lang.String
           protected constructor()

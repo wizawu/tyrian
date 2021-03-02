@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         class MemberReferenceTree$ReferenceMode extends java.lang.Enum<com.sun.source.tree.MemberReferenceTree$ReferenceMode> {
-
           public static readonly INVOKE: com.sun.source.tree.MemberReferenceTree$ReferenceMode
           public static readonly NEW: com.sun.source.tree.MemberReferenceTree$ReferenceMode
           public static values(): com.sun.source.tree.MemberReferenceTree$ReferenceMode[]

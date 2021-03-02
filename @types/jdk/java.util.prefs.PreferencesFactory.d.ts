@@ -3,7 +3,6 @@ declare namespace java {
     namespace prefs {
 
       interface PreferencesFactory {
-
         systemRoot(): java.util.prefs.Preferences
         userRoot(): java.util.prefs.Preferences
       }

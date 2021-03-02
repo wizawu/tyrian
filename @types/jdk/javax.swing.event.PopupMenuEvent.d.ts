@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class PopupMenuEvent extends java.util.EventObject {
-
         public constructor(arg0: java.lang.Object)
       }
 

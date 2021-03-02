@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class HyperlinkEvent extends java.util.EventObject {
-
         public constructor(arg0: java.lang.Object, arg1: javax.swing.event.HyperlinkEvent$EventType, arg2: java.net.URL)
         public constructor(arg0: java.lang.Object, arg1: javax.swing.event.HyperlinkEvent$EventType, arg2: java.net.URL, arg3: java.lang.String)
         public constructor(arg0: java.lang.Object, arg1: javax.swing.event.HyperlinkEvent$EventType, arg2: java.net.URL, arg3: java.lang.String, arg4: javax.swing.text.Element)

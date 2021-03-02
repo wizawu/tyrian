@@ -4,7 +4,6 @@ declare namespace javax {
       namespace tiff {
 
         class TIFFTag {
-
           public static readonly TIFF_BYTE: int
           public static readonly TIFF_ASCII: int
           public static readonly TIFF_SHORT: int

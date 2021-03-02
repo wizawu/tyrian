@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface AnnotationValue {
-
         value(): java.lang.Object
         toString(): java.lang.String
       }

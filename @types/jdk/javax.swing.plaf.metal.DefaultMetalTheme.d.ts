@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class DefaultMetalTheme extends javax.swing.plaf.metal.MetalTheme {
-
           static getDefaultFontName(arg0: int): java.lang.String
           static getDefaultFontSize(arg0: int): int
           static getDefaultFontStyle(arg0: int): int

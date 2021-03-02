@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthScrollBarUI extends javax.swing.plaf.basic.BasicScrollBarUI implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installDefaults(): void

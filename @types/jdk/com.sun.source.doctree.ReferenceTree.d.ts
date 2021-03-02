@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         interface ReferenceTree extends com.sun.source.doctree.DocTree {
-
           getSignature(): java.lang.String
         }
 

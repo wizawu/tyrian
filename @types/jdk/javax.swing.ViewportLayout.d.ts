@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class ViewportLayout implements java.awt.LayoutManager, java.io.Serializable {
-
       static SHARED_INSTANCE: javax.swing.ViewportLayout
       public constructor()
       public addLayoutComponent(arg0: java.lang.String, arg1: java.awt.Component): void

@@ -3,7 +3,6 @@ declare namespace com {
     namespace management {
 
       interface UnixOperatingSystemMXBean extends com.sun.management.OperatingSystemMXBean {
-
         getOpenFileDescriptorCount(): long
         getMaxFileDescriptorCount(): long
       }

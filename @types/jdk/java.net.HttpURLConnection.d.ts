@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     abstract class HttpURLConnection extends java.net.URLConnection {
-
       protected method: java.lang.String
       protected chunkLength: int
       protected fixedContentLength: int

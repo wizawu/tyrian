@@ -4,7 +4,6 @@ declare namespace org {
       namespace ls {
 
         interface LSInput {
-
           getCharacterStream(): java.io.Reader
           setCharacterStream(arg0: java.io.Reader): void
           getByteStream(): java.io.InputStream

@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         interface VersionTree extends com.sun.source.doctree.BlockTagTree {
-
           getBody(): java.util.List<com.sun.source.doctree.DocTree>
         }
 

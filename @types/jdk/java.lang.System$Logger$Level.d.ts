@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class System$Logger$Level extends java.lang.Enum<java.lang.System$Logger$Level> {
-
       public static readonly ALL: java.lang.System$Logger$Level
       public static readonly TRACE: java.lang.System$Logger$Level
       public static readonly DEBUG: java.lang.System$Logger$Level
@@ -12,8 +11,8 @@ declare namespace java {
       public static readonly OFF: java.lang.System$Logger$Level
       public static values(): java.lang.System$Logger$Level[]
       public static valueOf(arg0: java.lang.String): java.lang.System$Logger$Level
-      public readonly getName(): java.lang.String
-      public readonly getSeverity(): int
+      public getName(): java.lang.String
+      public getSeverity(): int
     }
 
   }

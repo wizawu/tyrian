@@ -3,7 +3,6 @@ declare namespace java {
     namespace module {
 
       class ModuleDescriptor$Exports implements java.lang.Comparable<java.lang.module.ModuleDescriptor$Exports> {
-
         public modifiers(): java.util.Set<java.lang.module.ModuleDescriptor$Exports$Modifier>
         public isQualified(): boolean
         public source(): java.lang.String

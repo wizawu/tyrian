@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     abstract class Graphics {
-
       protected constructor()
       public abstract create(): java.awt.Graphics
       public create(arg0: int, arg1: int, arg2: int, arg3: int): java.awt.Graphics

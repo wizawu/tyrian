@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       abstract class InputEvent extends java.awt.event.ComponentEvent {
-
         public static readonly SHIFT_MASK: int
         public static readonly CTRL_MASK: int
         public static readonly META_MASK: int

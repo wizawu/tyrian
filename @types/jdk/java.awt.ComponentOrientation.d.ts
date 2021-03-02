@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class ComponentOrientation implements java.io.Serializable {
-
       public static readonly LEFT_TO_RIGHT: java.awt.ComponentOrientation
       public static readonly RIGHT_TO_LEFT: java.awt.ComponentOrientation
       public static readonly UNKNOWN: java.awt.ComponentOrientation

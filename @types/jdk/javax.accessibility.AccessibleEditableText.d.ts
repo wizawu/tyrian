@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     interface AccessibleEditableText extends javax.accessibility.AccessibleText {
-
       setTextContents(arg0: java.lang.String): void
       insertTextAtIndex(arg0: int, arg1: java.lang.String): void
       getTextRange(arg0: int, arg1: int): java.lang.String

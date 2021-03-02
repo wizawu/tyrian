@@ -3,7 +3,6 @@ declare namespace java {
     namespace reflect {
 
       interface AnnotatedArrayType extends java.lang.reflect.AnnotatedType {
-
         getAnnotatedGenericComponentType(): java.lang.reflect.AnnotatedType
         getAnnotatedOwnerType(): java.lang.reflect.AnnotatedType
       }

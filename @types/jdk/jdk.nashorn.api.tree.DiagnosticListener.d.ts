@@ -3,8 +3,11 @@ declare namespace jdk {
     namespace api {
       namespace tree {
 
-        interface DiagnosticListener {
+        interface DiagnosticListener$$lambda {
+          (arg0: jdk.nashorn.api.tree.Diagnostic): void
+        }
 
+        interface DiagnosticListener {
           report(arg0: jdk.nashorn.api.tree.Diagnostic): void
         }
 

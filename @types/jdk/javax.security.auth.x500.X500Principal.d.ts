@@ -4,7 +4,6 @@ declare namespace javax {
       namespace x500 {
 
         class X500Principal implements java.security.Principal, java.io.Serializable {
-
           public static readonly RFC1779: java.lang.String
           public static readonly RFC2253: java.lang.String
           public static readonly CANONICAL: java.lang.String

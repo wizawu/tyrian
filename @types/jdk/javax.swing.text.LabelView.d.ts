@@ -3,9 +3,8 @@ declare namespace javax {
     namespace text {
 
       class LabelView extends javax.swing.text.GlyphView implements javax.swing.text.TabableView {
-
         public constructor(arg0: javax.swing.text.Element)
-        readonly sync(): void
+        sync(): void
         protected setUnderline(arg0: boolean): void
         protected setStrikeThrough(arg0: boolean): void
         protected setSuperscript(arg0: boolean): void

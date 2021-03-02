@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Currency implements java.io.Serializable {
-
       static formatVersion: int
       static dataVersion: int
       static mainTable: int[]

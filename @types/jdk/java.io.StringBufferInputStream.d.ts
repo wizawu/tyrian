@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class StringBufferInputStream extends java.io.InputStream {
-
       protected buffer: java.lang.String
       protected pos: int
       protected count: int

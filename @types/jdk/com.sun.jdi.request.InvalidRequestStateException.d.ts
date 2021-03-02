@@ -4,7 +4,6 @@ declare namespace com {
       namespace request {
 
         class InvalidRequestStateException extends java.lang.RuntimeException {
-
           public constructor()
           public constructor(arg0: java.lang.String)
         }

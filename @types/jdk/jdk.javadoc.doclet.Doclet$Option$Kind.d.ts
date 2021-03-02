@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace doclet {
 
       class Doclet$Option$Kind extends java.lang.Enum<jdk.javadoc.doclet.Doclet$Option$Kind> {
-
         public static readonly EXTENDED: jdk.javadoc.doclet.Doclet$Option$Kind
         public static readonly STANDARD: jdk.javadoc.doclet.Doclet$Option$Kind
         public static readonly OTHER: jdk.javadoc.doclet.Doclet$Option$Kind

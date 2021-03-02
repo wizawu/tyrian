@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace doclet {
 
       interface Doclet {
-
         init(arg0: java.util.Locale, arg1: jdk.javadoc.doclet.Reporter): void
         getName(): java.lang.String
         getSupportedOptions(): java.util.Set<jdk.javadoc.doclet.Doclet$Option>

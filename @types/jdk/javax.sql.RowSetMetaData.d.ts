@@ -2,7 +2,6 @@ declare namespace javax {
   namespace sql {
 
     interface RowSetMetaData extends java.sql.ResultSetMetaData {
-
       setColumnCount(arg0: int): void
       setAutoIncrement(arg0: int, arg1: boolean): void
       setCaseSensitive(arg0: int, arg1: boolean): void

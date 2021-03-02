@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class ClientInfoStatus extends java.lang.Enum<java.sql.ClientInfoStatus> {
-
       public static readonly REASON_UNKNOWN: java.sql.ClientInfoStatus
       public static readonly REASON_UNKNOWN_PROPERTY: java.sql.ClientInfoStatus
       public static readonly REASON_VALUE_INVALID: java.sql.ClientInfoStatus

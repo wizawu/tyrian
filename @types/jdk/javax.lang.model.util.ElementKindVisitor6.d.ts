@@ -4,7 +4,6 @@ declare namespace javax {
       namespace util {
 
         class ElementKindVisitor6<R,P> extends javax.lang.model.util.SimpleElementVisitor6<R,P> {
-
           static readonly $assertionsDisabled: boolean
           protected constructor()
           protected constructor(arg0: R)

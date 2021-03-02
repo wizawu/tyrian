@@ -3,7 +3,6 @@ declare namespace javax {
     namespace border {
 
       class TitledBorder extends javax.swing.border.AbstractBorder {
-
         protected title: java.lang.String
         protected border: javax.swing.border.Border
         protected titlePosition: int

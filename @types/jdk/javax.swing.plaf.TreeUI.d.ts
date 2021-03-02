@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       abstract class TreeUI extends javax.swing.plaf.ComponentUI {
-
         public constructor()
         public abstract getPathBounds(arg0: javax.swing.JTree, arg1: javax.swing.tree.TreePath): java.awt.Rectangle
         public abstract getPathForRow(arg0: javax.swing.JTree, arg1: int): javax.swing.tree.TreePath

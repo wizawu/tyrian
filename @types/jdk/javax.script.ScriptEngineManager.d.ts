@@ -2,7 +2,6 @@ declare namespace javax {
   namespace script {
 
     class ScriptEngineManager {
-
       public constructor()
       public constructor(arg0: java.lang.ClassLoader)
       public setBindings(arg0: javax.script.Bindings): void

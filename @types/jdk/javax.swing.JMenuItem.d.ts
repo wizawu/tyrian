@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JMenuItem extends javax.swing.AbstractButton implements javax.accessibility.Accessible, javax.swing.MenuElement {
-
       public constructor()
       public constructor(arg0: javax.swing.Icon)
       public constructor(arg0: java.lang.String)

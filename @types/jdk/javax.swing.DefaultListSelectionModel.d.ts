@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class DefaultListSelectionModel implements javax.swing.ListSelectionModel, java.lang.Cloneable, java.io.Serializable {
-
       protected listenerList: javax.swing.event.EventListenerList
       protected leadAnchorNotificationEnabled: boolean
       public constructor()

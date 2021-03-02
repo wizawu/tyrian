@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Objects {
-
       public static equals(arg0: java.lang.Object, arg1: java.lang.Object): boolean
       public static deepEquals(arg0: java.lang.Object, arg1: java.lang.Object): boolean
       public static hashCode(arg0: java.lang.Object): int

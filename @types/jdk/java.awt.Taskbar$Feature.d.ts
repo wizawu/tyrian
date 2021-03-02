@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Taskbar$Feature extends java.lang.Enum<java.awt.Taskbar$Feature> {
-
       public static readonly ICON_BADGE_TEXT: java.awt.Taskbar$Feature
       public static readonly ICON_BADGE_NUMBER: java.awt.Taskbar$Feature
       public static readonly ICON_BADGE_IMAGE_WINDOW: java.awt.Taskbar$Feature

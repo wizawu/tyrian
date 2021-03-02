@@ -4,7 +4,6 @@ declare namespace java {
       namespace spi {
 
         abstract class AsynchronousChannelProvider {
-
           protected constructor()
           public static provider(): java.nio.channels.spi.AsynchronousChannelProvider
           public abstract openAsynchronousChannelGroup(arg0: int, arg1: java.util.concurrent.ThreadFactory): java.nio.channels.AsynchronousChannelGroup

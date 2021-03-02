@@ -3,7 +3,6 @@ declare namespace java {
     namespace server {
 
       abstract class RemoteObject implements java.rmi.Remote, java.io.Serializable {
-
         protected ref: java.rmi.server.RemoteRef
         protected constructor()
         protected constructor(arg0: java.rmi.server.RemoteRef)

@@ -4,7 +4,6 @@ declare namespace com {
       namespace sctp {
 
         class AbstractNotificationHandler<T> implements com.sun.nio.sctp.NotificationHandler<T> {
-
           protected constructor()
           public handleNotification(arg0: com.sun.nio.sctp.Notification, arg1: T): com.sun.nio.sctp.HandlerResult
           public handleNotification(arg0: com.sun.nio.sctp.AssociationChangeNotification, arg1: T): com.sun.nio.sctp.HandlerResult

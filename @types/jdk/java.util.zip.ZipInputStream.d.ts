@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class ZipInputStream extends java.util.zip.InflaterInputStream implements java.util.zip.ZipConstants {
-
         public constructor(arg0: java.io.InputStream)
         public constructor(arg0: java.io.InputStream, arg1: java.nio.charset.Charset)
         public getNextEntry(): java.util.zip.ZipEntry

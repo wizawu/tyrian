@@ -4,13 +4,12 @@ declare namespace com {
       namespace util {
 
         class SimpleTreeVisitor<R,P> implements com.sun.source.tree.TreeVisitor<R,P> {
-
           protected readonly DEFAULT_VALUE: R
           protected constructor()
           protected constructor(arg0: R)
           protected defaultAction(arg0: com.sun.source.tree.Tree, arg1: P): R
-          public readonly visit(arg0: com.sun.source.tree.Tree, arg1: P): R
-          public readonly visit(arg0: java.lang.Iterable<com.sun.source.tree.Tree>, arg1: P): R
+          public visit(arg0: com.sun.source.tree.Tree, arg1: P): R
+          public visit(arg0: java.lang.Iterable<com.sun.source.tree.Tree>, arg1: P): R
           public visitCompilationUnit(arg0: com.sun.source.tree.CompilationUnitTree, arg1: P): R
           public visitPackage(arg0: com.sun.source.tree.PackageTree, arg1: P): R
           public visitImport(arg0: com.sun.source.tree.ImportTree, arg1: P): R

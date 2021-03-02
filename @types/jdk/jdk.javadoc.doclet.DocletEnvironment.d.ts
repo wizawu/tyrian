@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace doclet {
 
       interface DocletEnvironment {
-
         getSpecifiedElements(): java.util.Set<javax.lang.model.element.Element>
         getIncludedElements(): java.util.Set<javax.lang.model.element.Element>
         getDocTrees(): com.sun.source.util.DocTrees

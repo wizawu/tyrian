@@ -3,7 +3,6 @@ declare namespace javax {
     namespace attribute {
 
       interface PrintRequestAttribute extends javax.print.attribute.Attribute {
-
       }
 
     }

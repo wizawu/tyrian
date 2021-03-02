@@ -2,14 +2,13 @@ declare namespace java {
   namespace net {
 
     class Proxy {
-
       public static readonly NO_PROXY: java.net.Proxy
       public constructor(arg0: java.net.Proxy$Type, arg1: java.net.SocketAddress)
       public type(): java.net.Proxy$Type
       public address(): java.net.SocketAddress
       public toString(): java.lang.String
-      public readonly equals(arg0: java.lang.Object): boolean
-      public readonly hashCode(): int
+      public equals(arg0: java.lang.Object): boolean
+      public hashCode(): int
     }
 
   }

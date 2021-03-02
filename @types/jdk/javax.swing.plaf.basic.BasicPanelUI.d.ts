@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicPanelUI extends javax.swing.plaf.PanelUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public installUI(arg0: javax.swing.JComponent): void

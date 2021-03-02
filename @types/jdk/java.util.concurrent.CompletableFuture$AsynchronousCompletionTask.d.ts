@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       interface CompletableFuture$AsynchronousCompletionTask {
-
       }
 
     }

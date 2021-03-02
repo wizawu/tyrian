@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       class AsynchronousCloseException extends java.nio.channels.ClosedChannelException {
-
         public constructor()
       }
 

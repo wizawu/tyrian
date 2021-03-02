@@ -3,7 +3,6 @@ declare namespace javax {
     namespace directory {
 
       class BasicAttributes implements javax.naming.directory.Attributes {
-
         attrs: java.util.Hashtable<java.lang.String,javax.naming.directory.Attribute>
         public constructor()
         public constructor(arg0: boolean)

@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface ElementTraversal {
-
         getFirstElementChild(): org.w3c.dom.Element
         getLastElementChild(): org.w3c.dom.Element
         getPreviousElementSibling(): org.w3c.dom.Element

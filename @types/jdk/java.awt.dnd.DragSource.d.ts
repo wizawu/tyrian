@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       class DragSource implements java.io.Serializable {
-
         public static readonly DefaultCopyDrop: java.awt.Cursor
         public static readonly DefaultMoveDrop: java.awt.Cursor
         public static readonly DefaultLinkDrop: java.awt.Cursor

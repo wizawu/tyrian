@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalTabbedPaneUI extends javax.swing.plaf.basic.BasicTabbedPaneUI {
-
           protected minTabWidth: int
           protected tabAreaBackground: java.awt.Color
           protected selectColor: java.awt.Color

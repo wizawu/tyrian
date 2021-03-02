@@ -4,7 +4,6 @@ declare namespace java {
       namespace locks {
 
         interface Lock {
-
           lock(): void
           lockInterruptibly(): void
           tryLock(): boolean

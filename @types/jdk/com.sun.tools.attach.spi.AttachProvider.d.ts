@@ -5,7 +5,6 @@ declare namespace com {
         namespace spi {
 
           abstract class AttachProvider {
-
             protected constructor()
             public abstract name(): java.lang.String
             public abstract type(): java.lang.String

@@ -3,7 +3,6 @@ declare namespace java {
     namespace spec {
 
       class ECFieldF2m implements java.security.spec.ECField {
-
         public constructor(arg0: int)
         public constructor(arg0: int, arg1: java.math.BigInteger)
         public constructor(arg0: int, arg1: int[])

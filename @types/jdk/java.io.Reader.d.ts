@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     abstract class Reader implements java.lang.Readable, java.io.Closeable {
-
       protected lock: java.lang.Object
       public static nullReader(): java.io.Reader
       protected constructor()

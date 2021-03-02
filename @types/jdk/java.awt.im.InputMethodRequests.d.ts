@@ -3,7 +3,6 @@ declare namespace java {
     namespace im {
 
       interface InputMethodRequests {
-
         getTextLocation(arg0: java.awt.font.TextHitInfo): java.awt.Rectangle
         getLocationOffset(arg0: int, arg1: int): java.awt.font.TextHitInfo
         getInsertPositionOffset(): int

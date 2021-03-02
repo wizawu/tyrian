@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class Semaphore implements java.io.Serializable {
-
         public constructor(arg0: int)
         public constructor(arg0: int, arg1: boolean)
         public acquire(): void
@@ -20,8 +19,8 @@ declare namespace java {
         public drainPermits(): int
         protected reducePermits(arg0: int): void
         public isFair(): boolean
-        public readonly hasQueuedThreads(): boolean
-        public readonly getQueueLength(): int
+        public hasQueuedThreads(): boolean
+        public getQueueLength(): int
         protected getQueuedThreads(): java.util.Collection<java.lang.Thread>
         public toString(): java.lang.String
       }

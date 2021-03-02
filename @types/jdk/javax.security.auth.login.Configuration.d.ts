@@ -4,7 +4,6 @@ declare namespace javax {
       namespace login {
 
         abstract class Configuration {
-
           protected constructor()
           public static getConfiguration(): javax.security.auth.login.Configuration
           public static setConfiguration(arg0: javax.security.auth.login.Configuration): void

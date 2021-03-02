@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       interface Delayed extends java.lang.Comparable<java.util.concurrent.Delayed> {
-
         getDelay(arg0: java.util.concurrent.TimeUnit): long
       }
 

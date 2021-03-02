@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class ForkJoinWorkerThread extends java.lang.Thread {
-
         readonly pool: java.util.concurrent.ForkJoinPool
         readonly workQueue: java.util.concurrent.ForkJoinPool$WorkQueue
         protected constructor(arg0: java.util.concurrent.ForkJoinPool)

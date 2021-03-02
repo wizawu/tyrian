@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class PageAttributes implements java.lang.Cloneable {
-
       public constructor()
       public constructor(arg0: java.awt.PageAttributes)
       public constructor(arg0: java.awt.PageAttributes$ColorType, arg1: java.awt.PageAttributes$MediaType, arg2: java.awt.PageAttributes$OrientationRequestedType, arg3: java.awt.PageAttributes$OriginType, arg4: java.awt.PageAttributes$PrintQualityType, arg5: int[])

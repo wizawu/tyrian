@@ -4,7 +4,6 @@ declare namespace org {
       namespace helpers {
 
         class LocatorImpl implements org.xml.sax.Locator {
-
           public constructor()
           public constructor(arg0: org.xml.sax.Locator)
           public getPublicId(): java.lang.String

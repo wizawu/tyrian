@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class BatchUpdateException extends java.sql.SQLException {
-
       public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: int, arg3: int[])
       public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: int[])
       public constructor(arg0: java.lang.String, arg1: int[])

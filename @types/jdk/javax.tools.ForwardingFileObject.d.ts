@@ -2,7 +2,6 @@ declare namespace javax {
   namespace tools {
 
     class ForwardingFileObject<F extends javax.tools.FileObject> implements javax.tools.FileObject {
-
       protected readonly fileObject: F
       protected constructor(arg0: F)
       public toUri(): java.net.URI

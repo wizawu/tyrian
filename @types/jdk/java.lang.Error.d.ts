@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Error extends java.lang.Throwable {
-
       static readonly serialVersionUID: long
       public constructor()
       public constructor(arg0: java.lang.String)

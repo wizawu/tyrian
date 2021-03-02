@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class SplashScreen {
-
       static readonly $assertionsDisabled: boolean
       constructor(arg0: long)
       public static getSplashScreen(): java.awt.SplashScreen

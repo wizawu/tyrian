@@ -4,7 +4,6 @@ declare namespace org {
       namespace css {
 
         interface CSS2Properties {
-
           getAzimuth(): java.lang.String
           setAzimuth(arg0: java.lang.String): void
           getBackground(): java.lang.String

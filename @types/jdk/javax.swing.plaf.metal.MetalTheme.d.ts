@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         abstract class MetalTheme {
-
           static readonly CONTROL_TEXT_FONT: int
           static readonly SYSTEM_TEXT_FONT: int
           static readonly USER_TEXT_FONT: int

@@ -1,8 +1,11 @@
 declare namespace java {
   namespace net {
 
-    interface DatagramSocketImplFactory {
+    interface DatagramSocketImplFactory$$lambda {
+      (): java.net.DatagramSocketImpl
+    }
 
+    interface DatagramSocketImplFactory {
       createDatagramSocketImpl(): java.net.DatagramSocketImpl
     }
 

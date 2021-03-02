@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       abstract class Selector implements java.io.Closeable {
-
         static readonly $assertionsDisabled: boolean
         protected constructor()
         public static open(): java.nio.channels.Selector

@@ -2,7 +2,6 @@ declare namespace java {
   namespace applet {
 
     interface AppletStub {
-
       isActive(): boolean
       getDocumentBase(): java.net.URL
       getCodeBase(): java.net.URL

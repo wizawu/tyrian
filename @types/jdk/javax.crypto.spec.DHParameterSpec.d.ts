@@ -3,7 +3,6 @@ declare namespace javax {
     namespace spec {
 
       class DHParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-
         public constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger)
         public constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: int)
         public getP(): java.math.BigInteger

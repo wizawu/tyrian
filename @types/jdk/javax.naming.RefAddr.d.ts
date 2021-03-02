@@ -2,7 +2,6 @@ declare namespace javax {
   namespace naming {
 
     abstract class RefAddr implements java.io.Serializable {
-
       protected addrType: java.lang.String
       protected constructor(arg0: java.lang.String)
       public getType(): java.lang.String

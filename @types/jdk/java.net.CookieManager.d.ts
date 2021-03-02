@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class CookieManager extends java.net.CookieHandler {
-
       public constructor()
       public constructor(arg0: java.net.CookieStore, arg1: java.net.CookiePolicy)
       public setCookiePolicy(arg0: java.net.CookiePolicy): void

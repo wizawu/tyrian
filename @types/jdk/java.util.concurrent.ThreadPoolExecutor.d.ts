@@ -3,11 +3,10 @@ declare namespace java {
     namespace concurrent {
 
       class ThreadPoolExecutor extends java.util.concurrent.AbstractExecutorService {
-
-        readonly tryTerminate(): void
-        readonly reject(arg0: java.lang.Runnable): void
+        tryTerminate(): void
+        reject(arg0: java.lang.Runnable): void
         onShutdown(): void
-        readonly runWorker(arg0: java.util.concurrent.ThreadPoolExecutor$Worker): void
+        runWorker(arg0: java.util.concurrent.ThreadPoolExecutor$Worker): void
         public constructor(arg0: int, arg1: int, arg2: long, arg3: java.util.concurrent.TimeUnit, arg4: java.util.concurrent.BlockingQueue<java.lang.Runnable>)
         public constructor(arg0: int, arg1: int, arg2: long, arg3: java.util.concurrent.TimeUnit, arg4: java.util.concurrent.BlockingQueue<java.lang.Runnable>, arg5: java.util.concurrent.ThreadFactory)
         public constructor(arg0: int, arg1: int, arg2: long, arg3: java.util.concurrent.TimeUnit, arg4: java.util.concurrent.BlockingQueue<java.lang.Runnable>, arg5: java.util.concurrent.RejectedExecutionHandler)

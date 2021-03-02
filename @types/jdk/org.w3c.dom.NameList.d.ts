@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface NameList {
-
         getName(arg0: int): java.lang.String
         getNamespaceURI(arg0: int): java.lang.String
         getLength(): int

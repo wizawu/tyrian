@@ -4,7 +4,6 @@ declare namespace org {
       namespace ext {
 
         class Attributes2Impl extends org.xml.sax.helpers.AttributesImpl implements org.xml.sax.ext.Attributes2 {
-
           public constructor()
           public constructor(arg0: org.xml.sax.Attributes)
           public isDeclared(arg0: int): boolean

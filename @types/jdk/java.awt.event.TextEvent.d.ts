@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class TextEvent extends java.awt.AWTEvent {
-
         public static readonly TEXT_FIRST: int
         public static readonly TEXT_LAST: int
         public static readonly TEXT_VALUE_CHANGED: int

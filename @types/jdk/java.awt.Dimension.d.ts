@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Dimension extends java.awt.geom.Dimension2D implements java.io.Serializable {
-
       public width: int
       public height: int
       public constructor()

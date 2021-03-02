@@ -3,7 +3,6 @@ declare namespace java {
     namespace module {
 
       class Configuration {
-
         static readonly $assertionsDisabled: boolean
         targetPlatform(): java.lang.String
         constructor(arg0: java.lang.module.ModuleFinder, arg1: java.util.Map<java.lang.String,java.util.Set<java.lang.String>>)

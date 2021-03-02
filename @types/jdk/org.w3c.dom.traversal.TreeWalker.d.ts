@@ -4,7 +4,6 @@ declare namespace org {
       namespace traversal {
 
         interface TreeWalker {
-
           getRoot(): org.w3c.dom.Node
           getWhatToShow(): int
           getFilter(): org.w3c.dom.traversal.NodeFilter

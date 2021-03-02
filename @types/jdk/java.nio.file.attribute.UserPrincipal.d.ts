@@ -4,7 +4,6 @@ declare namespace java {
       namespace attribute {
 
         interface UserPrincipal extends java.security.Principal {
-
         }
 
       }

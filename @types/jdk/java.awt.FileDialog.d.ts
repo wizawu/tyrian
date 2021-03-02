@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class FileDialog extends java.awt.Dialog {
-
       public static readonly LOAD: int
       public static readonly SAVE: int
       mode: int

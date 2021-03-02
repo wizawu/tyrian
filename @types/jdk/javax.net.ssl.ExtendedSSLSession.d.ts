@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       abstract class ExtendedSSLSession implements javax.net.ssl.SSLSession {
-
         public constructor()
         public abstract getLocalSupportedSignatureAlgorithms(): java.lang.String[]
         public abstract getPeerSupportedSignatureAlgorithms(): java.lang.String[]

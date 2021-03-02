@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     class Security {
-
       public static getAlgorithmProperty(arg0: java.lang.String, arg1: java.lang.String): java.lang.String
       public static insertProviderAt(arg0: java.security.Provider, arg1: int): int
       public static addProvider(arg0: java.security.Provider): int

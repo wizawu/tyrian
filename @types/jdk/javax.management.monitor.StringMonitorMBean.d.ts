@@ -3,7 +3,6 @@ declare namespace javax {
     namespace monitor {
 
       interface StringMonitorMBean extends javax.management.monitor.MonitorMBean {
-
         getDerivedGauge(): java.lang.String
         getDerivedGaugeTimeStamp(): long
         getDerivedGauge(arg0: javax.management.ObjectName): java.lang.String

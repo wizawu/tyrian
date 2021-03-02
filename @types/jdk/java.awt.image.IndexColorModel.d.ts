@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class IndexColorModel extends java.awt.image.ColorModel {
-
         public constructor(arg0: int, arg1: int, arg2: byte[], arg3: byte[], arg4: byte[])
         public constructor(arg0: int, arg1: int, arg2: byte[], arg3: byte[], arg4: byte[], arg5: int)
         public constructor(arg0: int, arg1: int, arg2: byte[], arg3: byte[], arg4: byte[], arg5: byte[])
@@ -13,18 +12,18 @@ declare namespace java {
         public constructor(arg0: int, arg1: int, arg2: int[], arg3: int, arg4: int, arg5: java.math.BigInteger)
         public getTransparency(): int
         public getComponentSize(): int[]
-        public readonly getMapSize(): int
-        public readonly getTransparentPixel(): int
-        public readonly getReds(arg0: byte[]): void
-        public readonly getGreens(arg0: byte[]): void
-        public readonly getBlues(arg0: byte[]): void
-        public readonly getAlphas(arg0: byte[]): void
-        public readonly getRGBs(arg0: int[]): void
-        public readonly getRed(arg0: int): int
-        public readonly getGreen(arg0: int): int
-        public readonly getBlue(arg0: int): int
-        public readonly getAlpha(arg0: int): int
-        public readonly getRGB(arg0: int): int
+        public getMapSize(): int
+        public getTransparentPixel(): int
+        public getReds(arg0: byte[]): void
+        public getGreens(arg0: byte[]): void
+        public getBlues(arg0: byte[]): void
+        public getAlphas(arg0: byte[]): void
+        public getRGBs(arg0: int[]): void
+        public getRed(arg0: int): int
+        public getGreen(arg0: int): int
+        public getBlue(arg0: int): int
+        public getAlpha(arg0: int): int
+        public getRGB(arg0: int): int
         public getDataElements(arg0: int, arg1: java.lang.Object): java.lang.Object
         public getComponents(arg0: int, arg1: int[], arg2: int): int[]
         public getComponents(arg0: java.lang.Object, arg1: int[], arg2: int): int[]

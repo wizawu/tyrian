@@ -2,7 +2,6 @@ declare namespace javax {
   namespace crypto {
 
     class EncryptedPrivateKeyInfo {
-
       public constructor(arg0: byte[])
       public constructor(arg0: java.lang.String, arg1: byte[])
       public constructor(arg0: java.security.AlgorithmParameters, arg1: byte[])

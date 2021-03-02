@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     class AccessibleRelationSet {
-
       protected relations: java.util.Vector<javax.accessibility.AccessibleRelation>
       public constructor()
       public constructor(arg0: javax.accessibility.AccessibleRelation[])

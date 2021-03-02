@@ -2,7 +2,6 @@ declare namespace java {
   namespace rmi {
 
     class RemoteException extends java.io.IOException {
-
       public detail: java.lang.Throwable
       public constructor()
       public constructor(arg0: java.lang.String)

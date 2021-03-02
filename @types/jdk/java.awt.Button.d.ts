@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Button extends java.awt.Component implements javax.accessibility.Accessible {
-
       label: java.lang.String
       actionCommand: java.lang.String
       actionListener: java.awt.event.ActionListener

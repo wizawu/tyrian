@@ -4,7 +4,6 @@ declare namespace java {
       namespace spi {
 
         interface InputMethod {
-
           setInputMethodContext(arg0: java.awt.im.spi.InputMethodContext): void
           setLocale(arg0: java.util.Locale): boolean
           getLocale(): java.util.Locale

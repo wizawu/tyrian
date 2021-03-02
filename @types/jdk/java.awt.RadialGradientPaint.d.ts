@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class RadialGradientPaint extends java.awt.MultipleGradientPaint {
-
       public constructor(arg0: float, arg1: float, arg2: float, arg3: float[], arg4: java.awt.Color[])
       public constructor(arg0: java.awt.geom.Point2D, arg1: float, arg2: float[], arg3: java.awt.Color[])
       public constructor(arg0: float, arg1: float, arg2: float, arg3: float[], arg4: java.awt.Color[], arg5: java.awt.MultipleGradientPaint$CycleMethod)

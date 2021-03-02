@@ -4,7 +4,6 @@ declare namespace com {
       namespace httpserver {
 
         abstract class Authenticator$Result {
-
           public constructor()
         }
 

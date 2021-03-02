@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalFileChooserUI extends javax.swing.plaf.basic.BasicFileChooserUI {
-
           static readonly space: int
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public constructor(arg0: javax.swing.JFileChooser)

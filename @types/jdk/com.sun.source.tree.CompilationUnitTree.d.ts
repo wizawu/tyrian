@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface CompilationUnitTree extends com.sun.source.tree.Tree {
-
           getPackageAnnotations(): java.util.List<com.sun.source.tree.AnnotationTree>
           getPackageName(): com.sun.source.tree.ExpressionTree
           getPackage(): com.sun.source.tree.PackageTree

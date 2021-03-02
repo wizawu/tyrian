@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class NamingEvent extends java.util.EventObject {
-
         public static readonly OBJECT_ADDED: int
         public static readonly OBJECT_REMOVED: int
         public static readonly OBJECT_RENAMED: int

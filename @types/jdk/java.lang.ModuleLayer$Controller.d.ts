@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class ModuleLayer$Controller {
-
       constructor(arg0: java.lang.ModuleLayer)
       public layer(): java.lang.ModuleLayer
       public addReads(arg0: java.lang.Module, arg1: java.lang.Module): java.lang.ModuleLayer$Controller

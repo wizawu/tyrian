@@ -3,7 +3,6 @@ declare namespace java {
     namespace beancontext {
 
       class BeanContextChildSupport implements java.beans.beancontext.BeanContextChild, java.beans.beancontext.BeanContextServicesListener, java.io.Serializable {
-
         static readonly serialVersionUID: long
         public beanContextChildPeer: java.beans.beancontext.BeanContextChild
         protected pcSupport: java.beans.PropertyChangeSupport

@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jshell {
 
     class ImportSnippet extends jdk.jshell.PersistentSnippet {
-
       readonly fullname: java.lang.String
       readonly fullkey: java.lang.String
       readonly isStatic: boolean

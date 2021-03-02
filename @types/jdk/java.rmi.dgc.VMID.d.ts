@@ -3,7 +3,6 @@ declare namespace java {
     namespace dgc {
 
       class VMID implements java.io.Serializable {
-
         public constructor()
         public static isUnique(): boolean
         public hashCode(): int

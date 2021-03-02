@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       interface StyledDocument extends javax.swing.text.Document {
-
         addStyle(arg0: java.lang.String, arg1: javax.swing.text.Style): javax.swing.text.Style
         removeStyle(arg0: java.lang.String): void
         getStyle(arg0: java.lang.String): javax.swing.text.Style

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalIconFactory$TreeControlIcon implements javax.swing.Icon, java.io.Serializable {
-
           protected isLight: boolean
           imageCacher: javax.swing.plaf.metal.MetalIconFactory$ImageCacher
           cachedOrientation: boolean

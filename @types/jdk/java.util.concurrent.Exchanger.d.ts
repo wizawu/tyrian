@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class Exchanger<V> {
-
         static readonly FULL: int
         public constructor()
         public exchange(arg0: V): V

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class HTMLEditorKit extends javax.swing.text.StyledEditorKit implements javax.accessibility.Accessible {
-
           public static readonly DEFAULT_CSS: java.lang.String
           input: javax.swing.text.MutableAttributeSet
           public static readonly BOLD_ACTION: java.lang.String

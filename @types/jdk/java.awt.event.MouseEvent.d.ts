@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class MouseEvent extends java.awt.event.InputEvent {
-
         public static readonly MOUSE_FIRST: int
         public static readonly MOUSE_LAST: int
         public static readonly MOUSE_CLICKED: int

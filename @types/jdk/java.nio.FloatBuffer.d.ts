@@ -2,7 +2,6 @@ declare namespace java {
   namespace nio {
 
     abstract class FloatBuffer extends java.nio.Buffer implements java.lang.Comparable<java.nio.FloatBuffer> {
-
       readonly hb: float[]
       readonly offset: int
       isReadOnly: boolean
@@ -23,17 +22,17 @@ declare namespace java {
       public get(arg0: float[]): java.nio.FloatBuffer
       public put(arg0: java.nio.FloatBuffer): java.nio.FloatBuffer
       public put(arg0: float[], arg1: int, arg2: int): java.nio.FloatBuffer
-      public readonly put(arg0: float[]): java.nio.FloatBuffer
-      public readonly hasArray(): boolean
-      public readonly array(): float[]
-      public readonly arrayOffset(): int
-      public readonly position(arg0: int): java.nio.FloatBuffer
-      public readonly limit(arg0: int): java.nio.FloatBuffer
-      public readonly mark(): java.nio.FloatBuffer
-      public readonly reset(): java.nio.FloatBuffer
-      public readonly clear(): java.nio.FloatBuffer
-      public readonly flip(): java.nio.FloatBuffer
-      public readonly rewind(): java.nio.FloatBuffer
+      public put(arg0: float[]): java.nio.FloatBuffer
+      public hasArray(): boolean
+      public array(): float[]
+      public arrayOffset(): int
+      public position(arg0: int): java.nio.FloatBuffer
+      public limit(arg0: int): java.nio.FloatBuffer
+      public mark(): java.nio.FloatBuffer
+      public reset(): java.nio.FloatBuffer
+      public clear(): java.nio.FloatBuffer
+      public flip(): java.nio.FloatBuffer
+      public rewind(): java.nio.FloatBuffer
       public abstract compact(): java.nio.FloatBuffer
       public abstract isDirect(): boolean
       public toString(): java.lang.String

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace element {
 
         class ModuleElement$DirectiveKind extends java.lang.Enum<javax.lang.model.element.ModuleElement$DirectiveKind> {
-
           public static readonly REQUIRES: javax.lang.model.element.ModuleElement$DirectiveKind
           public static readonly EXPORTS: javax.lang.model.element.ModuleElement$DirectiveKind
           public static readonly OPENS: javax.lang.model.element.ModuleElement$DirectiveKind

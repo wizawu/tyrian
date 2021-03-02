@@ -4,7 +4,6 @@ declare namespace javax {
       namespace kerberos {
 
         class KerberosCredMessage implements javax.security.auth.Destroyable {
-
           public constructor(arg0: javax.security.auth.kerberos.KerberosPrincipal, arg1: javax.security.auth.kerberos.KerberosPrincipal, arg2: byte[])
           public getEncoded(): byte[]
           public getSender(): javax.security.auth.kerberos.KerberosPrincipal

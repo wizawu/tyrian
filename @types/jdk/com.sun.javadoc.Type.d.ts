@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface Type {
-
         typeName(): java.lang.String
         qualifiedTypeName(): java.lang.String
         simpleTypeName(): java.lang.String

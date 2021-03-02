@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     abstract class TimerTask implements java.lang.Runnable {
-
       readonly lock: java.lang.Object
       state: int
       static readonly VIRGIN: int

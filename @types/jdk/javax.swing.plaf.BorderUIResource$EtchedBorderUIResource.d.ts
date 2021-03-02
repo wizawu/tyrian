@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       class BorderUIResource$EtchedBorderUIResource extends javax.swing.border.EtchedBorder implements javax.swing.plaf.UIResource {
-
         public constructor()
         public constructor(arg0: int)
         public constructor(arg0: java.awt.Color, arg1: java.awt.Color)

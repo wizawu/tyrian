@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class InvocationEvent extends java.awt.AWTEvent implements java.awt.ActiveEvent {
-
         public static readonly INVOCATION_FIRST: int
         public static readonly INVOCATION_DEFAULT: int
         public static readonly INVOCATION_LAST: int

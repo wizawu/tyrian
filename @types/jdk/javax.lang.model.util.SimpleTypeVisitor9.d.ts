@@ -4,7 +4,6 @@ declare namespace javax {
       namespace util {
 
         class SimpleTypeVisitor9<R,P> extends javax.lang.model.util.SimpleTypeVisitor8<R,P> {
-
           protected constructor()
           protected constructor(arg0: R)
         }

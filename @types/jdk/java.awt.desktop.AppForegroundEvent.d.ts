@@ -3,7 +3,6 @@ declare namespace java {
     namespace desktop {
 
       class AppForegroundEvent extends java.awt.desktop.AppEvent {
-
         public constructor()
       }
 

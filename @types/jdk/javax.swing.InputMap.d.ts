@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class InputMap implements java.io.Serializable {
-
       public constructor()
       public setParent(arg0: javax.swing.InputMap): void
       public getParent(): javax.swing.InputMap

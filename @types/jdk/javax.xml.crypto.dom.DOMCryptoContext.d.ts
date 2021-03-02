@@ -4,7 +4,6 @@ declare namespace javax {
       namespace dom {
 
         class DOMCryptoContext implements javax.xml.crypto.XMLCryptoContext {
-
           protected constructor()
           public getNamespacePrefix(arg0: java.lang.String, arg1: java.lang.String): java.lang.String
           public putNamespacePrefix(arg0: java.lang.String, arg1: java.lang.String): java.lang.String

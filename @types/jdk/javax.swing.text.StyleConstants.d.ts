@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class StyleConstants {
-
         public static readonly ComponentElementName: java.lang.String
         public static readonly IconElementName: java.lang.String
         public static readonly NameAttribute: java.lang.Object

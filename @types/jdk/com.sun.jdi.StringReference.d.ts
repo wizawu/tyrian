@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface StringReference extends com.sun.jdi.ObjectReference {
-
         value(): java.lang.String
       }
 

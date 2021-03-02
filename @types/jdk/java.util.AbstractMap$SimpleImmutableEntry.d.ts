@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class AbstractMap$SimpleImmutableEntry<K,V> implements java.util.Map$Entry<K,V>, java.io.Serializable {
-
       public constructor(arg0: K, arg1: V)
       public constructor(arg0: java.util.Map$Entry<K,V>)
       public getKey(): K

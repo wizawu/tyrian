@@ -4,7 +4,6 @@ declare namespace com {
       namespace auth {
 
         class NTNumericCredential {
-
           public constructor(arg0: long)
           public getToken(): long
           public toString(): java.lang.String

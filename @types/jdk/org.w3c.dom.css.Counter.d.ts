@@ -4,7 +4,6 @@ declare namespace org {
       namespace css {
 
         interface Counter {
-
           getIdentifier(): java.lang.String
           getListStyle(): java.lang.String
           getSeparator(): java.lang.String

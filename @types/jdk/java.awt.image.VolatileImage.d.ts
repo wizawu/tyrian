@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       abstract class VolatileImage extends java.awt.Image implements java.awt.Transparency {
-
         public static readonly IMAGE_OK: int
         public static readonly IMAGE_RESTORED: int
         public static readonly IMAGE_INCOMPATIBLE: int

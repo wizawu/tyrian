@@ -4,7 +4,6 @@ declare namespace javax {
       namespace standard {
 
         class MediaSize$ISO {
-
           public static readonly A0: javax.print.attribute.standard.MediaSize
           public static readonly A1: javax.print.attribute.standard.MediaSize
           public static readonly A2: javax.print.attribute.standard.MediaSize

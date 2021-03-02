@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface CompoundAssignmentTree extends jdk.nashorn.api.tree.ExpressionTree {
-
           getVariable(): jdk.nashorn.api.tree.ExpressionTree
           getExpression(): jdk.nashorn.api.tree.ExpressionTree
         }

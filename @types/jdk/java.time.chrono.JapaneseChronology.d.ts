@@ -3,7 +3,6 @@ declare namespace java {
     namespace chrono {
 
       class JapaneseChronology extends java.time.chrono.AbstractChronology implements java.io.Serializable {
-
         static readonly JCAL: sun.util.calendar.LocalGregorianCalendar
         static readonly LOCALE: java.util.Locale
         public static readonly INSTANCE: java.time.chrono.JapaneseChronology

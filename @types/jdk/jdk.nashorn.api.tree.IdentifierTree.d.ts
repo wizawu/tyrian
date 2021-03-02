@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface IdentifierTree extends jdk.nashorn.api.tree.ExpressionTree {
-
           getName(): java.lang.String
           isRestParameter(): boolean
           isSuper(): boolean

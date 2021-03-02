@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       class PKIXRevocationChecker$Option extends java.lang.Enum<java.security.cert.PKIXRevocationChecker$Option> {
-
         public static readonly ONLY_END_ENTITY: java.security.cert.PKIXRevocationChecker$Option
         public static readonly PREFER_CRLS: java.security.cert.PKIXRevocationChecker$Option
         public static readonly NO_FALLBACK: java.security.cert.PKIXRevocationChecker$Option

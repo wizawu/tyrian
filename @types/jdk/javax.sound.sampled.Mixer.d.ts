@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       interface Mixer extends javax.sound.sampled.Line {
-
         getMixerInfo(): javax.sound.sampled.Mixer$Info
         getSourceLineInfo(): javax.sound.sampled.Line$Info[]
         getTargetLineInfo(): javax.sound.sampled.Line$Info[]

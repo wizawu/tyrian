@@ -3,7 +3,6 @@ declare namespace java {
     namespace desktop {
 
       interface SystemEventListener extends java.util.EventListener {
-
       }
 
     }

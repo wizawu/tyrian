@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class MultiPixelPackedSampleModel extends java.awt.image.SampleModel {
-
         pixelBitStride: int
         bitMask: int
         pixelsPerDataElement: int

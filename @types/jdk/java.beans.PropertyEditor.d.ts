@@ -2,7 +2,6 @@ declare namespace java {
   namespace beans {
 
     interface PropertyEditor {
-
       setValue(arg0: java.lang.Object): void
       getValue(): java.lang.Object
       isPaintable(): boolean

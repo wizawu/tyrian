@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class OutputStreamWriter extends java.io.Writer {
-
       public constructor(arg0: java.io.OutputStream, arg1: java.lang.String)
       public constructor(arg0: java.io.OutputStream)
       public constructor(arg0: java.io.OutputStream, arg1: java.nio.charset.Charset)

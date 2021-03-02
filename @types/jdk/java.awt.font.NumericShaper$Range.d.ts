@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class NumericShaper$Range extends java.lang.Enum<java.awt.font.NumericShaper$Range> {
-
         public static readonly EUROPEAN: java.awt.font.NumericShaper$Range
         public static readonly ARABIC: java.awt.font.NumericShaper$Range
         public static readonly EASTERN_ARABIC: java.awt.font.NumericShaper$Range

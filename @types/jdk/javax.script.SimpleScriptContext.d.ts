@@ -2,7 +2,6 @@ declare namespace javax {
   namespace script {
 
     class SimpleScriptContext implements javax.script.ScriptContext {
-
       protected writer: java.io.Writer
       protected errorWriter: java.io.Writer
       protected reader: java.io.Reader

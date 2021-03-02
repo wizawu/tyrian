@@ -1,8 +1,11 @@
 declare namespace java {
   namespace lang {
 
-    interface AutoCloseable {
+    interface AutoCloseable$$lambda {
+      (): void
+    }
 
+    interface AutoCloseable {
       close(): void
     }
 

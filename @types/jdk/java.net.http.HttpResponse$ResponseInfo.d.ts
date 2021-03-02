@@ -3,7 +3,6 @@ declare namespace java {
     namespace http {
 
       interface HttpResponse$ResponseInfo {
-
         statusCode(): int
         headers(): java.net.http.HttpHeaders
         version(): java.net.http.HttpClient$Version

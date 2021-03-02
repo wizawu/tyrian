@@ -3,7 +3,6 @@ declare namespace javax {
     namespace model {
 
       class SourceVersion extends java.lang.Enum<javax.lang.model.SourceVersion> {
-
         public static readonly RELEASE_0: javax.lang.model.SourceVersion
         public static readonly RELEASE_1: javax.lang.model.SourceVersion
         public static readonly RELEASE_2: javax.lang.model.SourceVersion

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class ProgressMonitor implements javax.accessibility.Accessible {
-
       protected accessibleContext: javax.accessibility.AccessibleContext
       public constructor(arg0: java.awt.Component, arg1: java.lang.Object, arg2: java.lang.String, arg3: int, arg4: int)
       public setProgress(arg0: int): void

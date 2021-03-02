@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       class SNIHostName extends javax.net.ssl.SNIServerName {
-
         public constructor(arg0: java.lang.String)
         public constructor(arg0: byte[])
         public getAsciiName(): java.lang.String

@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface LoopTree extends jdk.nashorn.api.tree.StatementTree {
-
           getStatement(): jdk.nashorn.api.tree.StatementTree
         }
 

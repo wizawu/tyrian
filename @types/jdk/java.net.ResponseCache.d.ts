@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     abstract class ResponseCache {
-
       public constructor()
       public static getDefault(): java.net.ResponseCache
       public static setDefault(arg0: java.net.ResponseCache): void

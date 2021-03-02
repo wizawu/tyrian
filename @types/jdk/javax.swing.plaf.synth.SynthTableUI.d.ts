@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthTableUI extends javax.swing.plaf.basic.BasicTableUI implements javax.swing.plaf.synth.SynthUI, java.beans.PropertyChangeListener {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installDefaults(): void

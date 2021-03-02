@@ -5,7 +5,6 @@ declare namespace com {
         namespace module {
 
           class NTSystem {
-
             public constructor()
             constructor(arg0: boolean)
             public getName(): java.lang.String

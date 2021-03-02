@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       abstract class ComponentUI {
-
         public constructor()
         public installUI(arg0: javax.swing.JComponent): void
         public uninstallUI(arg0: javax.swing.JComponent): void

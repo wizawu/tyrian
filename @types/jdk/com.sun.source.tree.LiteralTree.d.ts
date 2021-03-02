@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface LiteralTree extends com.sun.source.tree.ExpressionTree {
-
           getValue(): java.lang.Object
         }
 

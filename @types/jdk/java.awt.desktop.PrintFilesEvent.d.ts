@@ -3,7 +3,6 @@ declare namespace java {
     namespace desktop {
 
       class PrintFilesEvent extends java.awt.desktop.FilesEvent {
-
         public constructor(arg0: java.util.List<java.io.File>)
       }
 

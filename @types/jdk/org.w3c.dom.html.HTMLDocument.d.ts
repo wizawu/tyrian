@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLDocument extends org.w3c.dom.Document {
-
           getTitle(): java.lang.String
           setTitle(arg0: java.lang.String): void
           getReferrer(): java.lang.String

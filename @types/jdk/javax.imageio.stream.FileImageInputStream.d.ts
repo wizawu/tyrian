@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       class FileImageInputStream extends javax.imageio.stream.ImageInputStreamImpl {
-
         public constructor(arg0: java.io.File)
         public constructor(arg0: java.io.RandomAccessFile)
         public read(): int

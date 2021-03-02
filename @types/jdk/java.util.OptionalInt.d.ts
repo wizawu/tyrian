@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class OptionalInt {
-
       public static empty(): java.util.OptionalInt
       public static of(arg0: int): java.util.OptionalInt
       public getAsInt(): int

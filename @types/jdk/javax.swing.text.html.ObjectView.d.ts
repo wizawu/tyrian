@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class ObjectView extends javax.swing.text.ComponentView {
-
           public constructor(arg0: javax.swing.text.Element)
           protected createComponent(): java.awt.Component
           getUnloadableRepresentation(): java.awt.Component

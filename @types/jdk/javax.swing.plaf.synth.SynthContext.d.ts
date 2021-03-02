@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthContext {
-
           static getContext(arg0: javax.swing.JComponent, arg1: javax.swing.plaf.synth.SynthStyle, arg2: int): javax.swing.plaf.synth.SynthContext
           static getContext(arg0: javax.swing.JComponent, arg1: javax.swing.plaf.synth.Region, arg2: javax.swing.plaf.synth.SynthStyle, arg3: int): javax.swing.plaf.synth.SynthContext
           public constructor(arg0: javax.swing.JComponent, arg1: javax.swing.plaf.synth.Region, arg2: javax.swing.plaf.synth.SynthStyle, arg3: int)

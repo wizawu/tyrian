@@ -3,7 +3,6 @@ declare namespace javax {
     namespace modelmbean {
 
       interface ModelMBeanNotificationBroadcaster extends javax.management.NotificationBroadcaster {
-
         sendNotification(arg0: javax.management.Notification): void
         sendNotification(arg0: java.lang.String): void
         sendAttributeChangeNotification(arg0: javax.management.AttributeChangeNotification): void

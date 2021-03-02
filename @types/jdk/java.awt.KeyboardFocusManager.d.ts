@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     abstract class KeyboardFocusManager implements java.awt.KeyEventDispatcher, java.awt.KeyEventPostProcessor {
-
       peer: java.awt.peer.KeyboardFocusManagerPeer
       public static readonly FORWARD_TRAVERSAL_KEYS: int
       public static readonly BACKWARD_TRAVERSAL_KEYS: int
@@ -17,8 +16,8 @@ declare namespace java {
       public static getCurrentKeyboardFocusManager(): java.awt.KeyboardFocusManager
       static getCurrentKeyboardFocusManager(arg0: sun.awt.AppContext): java.awt.KeyboardFocusManager
       public static setCurrentKeyboardFocusManager(arg0: java.awt.KeyboardFocusManager): void
-      readonly setCurrentSequencedEvent(arg0: java.awt.SequencedEvent): void
-      readonly getCurrentSequencedEvent(): java.awt.SequencedEvent
+      setCurrentSequencedEvent(arg0: java.awt.SequencedEvent): void
+      getCurrentSequencedEvent(): java.awt.SequencedEvent
       static initFocusTraversalKeysSet(arg0: java.lang.String, arg1: java.util.Set<java.awt.AWTKeyStroke>): java.util.Set<java.awt.AWTKeyStroke>
       public constructor()
       public getFocusOwner(): java.awt.Component
@@ -72,7 +71,7 @@ declare namespace java {
       static clearMostRecentFocusOwner(arg0: java.awt.Component): void
       static getMostRecentFocusOwner(arg0: java.awt.Window): java.awt.Component
       public abstract dispatchEvent(arg0: java.awt.AWTEvent): boolean
-      public readonly redispatchEvent(arg0: java.awt.Component, arg1: java.awt.AWTEvent): void
+      public redispatchEvent(arg0: java.awt.Component, arg1: java.awt.AWTEvent): void
       public abstract dispatchKeyEvent(arg0: java.awt.event.KeyEvent): boolean
       public abstract postProcessKeyEvent(arg0: java.awt.event.KeyEvent): boolean
       public abstract processKeyEvent(arg0: java.awt.Component, arg1: java.awt.event.KeyEvent): void
@@ -83,10 +82,10 @@ declare namespace java {
       public abstract focusPreviousComponent(arg0: java.awt.Component): void
       public abstract upFocusCycle(arg0: java.awt.Component): void
       public abstract downFocusCycle(arg0: java.awt.Container): void
-      public readonly focusNextComponent(): void
-      public readonly focusPreviousComponent(): void
-      public readonly upFocusCycle(): void
-      public readonly downFocusCycle(): void
+      public focusNextComponent(): void
+      public focusPreviousComponent(): void
+      public upFocusCycle(): void
+      public downFocusCycle(): void
       dumpRequests(): void
       static processSynchronousLightweightTransfer(arg0: java.awt.Component, arg1: java.awt.Component, arg2: boolean, arg3: boolean, arg4: long): boolean
       static shouldNativelyFocusHeavyweight(arg0: java.awt.Component, arg1: java.awt.Component, arg2: boolean, arg3: boolean, arg4: long, arg5: java.awt.event.FocusEvent$Cause): int

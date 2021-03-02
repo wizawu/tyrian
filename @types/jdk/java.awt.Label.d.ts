@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Label extends java.awt.Component implements javax.accessibility.Accessible {
-
       public static readonly LEFT: int
       public static readonly CENTER: int
       public static readonly RIGHT: int

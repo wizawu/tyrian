@@ -3,7 +3,6 @@ declare namespace java {
     namespace management {
 
       interface ClassLoadingMXBean extends java.lang.management.PlatformManagedObject {
-
         getTotalLoadedClassCount(): long
         getLoadedClassCount(): int
         getUnloadedClassCount(): long

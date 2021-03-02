@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicColorChooserUI extends javax.swing.plaf.ColorChooserUI {
-
           protected chooser: javax.swing.JColorChooser
           tabbedPane: javax.swing.JTabbedPane
           singlePanel: javax.swing.JPanel

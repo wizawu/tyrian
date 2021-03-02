@@ -4,7 +4,6 @@ declare namespace javax {
       namespace stream {
 
         class StreamResult implements javax.xml.transform.Result {
-
           public static readonly FEATURE: java.lang.String
           public constructor()
           public constructor(arg0: java.io.OutputStream)

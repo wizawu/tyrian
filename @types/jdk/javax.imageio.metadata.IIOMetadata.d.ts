@@ -3,7 +3,6 @@ declare namespace javax {
     namespace metadata {
 
       abstract class IIOMetadata {
-
         protected standardFormatSupported: boolean
         protected nativeMetadataFormatName: java.lang.String
         protected nativeMetadataFormatClassName: java.lang.String
@@ -29,7 +28,7 @@ declare namespace javax {
         protected getStandardTextNode(): javax.imageio.metadata.IIOMetadataNode
         protected getStandardTileNode(): javax.imageio.metadata.IIOMetadataNode
         protected getStandardTransparencyNode(): javax.imageio.metadata.IIOMetadataNode
-        protected readonly getStandardTree(): javax.imageio.metadata.IIOMetadataNode
+        protected getStandardTree(): javax.imageio.metadata.IIOMetadataNode
         public setFromTree(arg0: java.lang.String, arg1: org.w3c.dom.Node): void
         public abstract reset(): void
         public setController(arg0: javax.imageio.metadata.IIOMetadataController): void

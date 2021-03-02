@@ -3,7 +3,6 @@ declare namespace javax {
     namespace datatype {
 
       class DatatypeConstants$Field {
-
         public toString(): java.lang.String
         public getId(): int
       }

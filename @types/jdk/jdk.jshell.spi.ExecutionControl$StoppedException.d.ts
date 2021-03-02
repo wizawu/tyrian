@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace spi {
 
       class ExecutionControl$StoppedException extends jdk.jshell.spi.ExecutionControl$RunException {
-
         public constructor()
       }
 

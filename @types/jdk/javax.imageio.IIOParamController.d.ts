@@ -1,8 +1,11 @@
 declare namespace javax {
   namespace imageio {
 
-    interface IIOParamController {
+    interface IIOParamController$$lambda {
+      (arg0: javax.imageio.IIOParam): boolean
+    }
 
+    interface IIOParamController {
       activate(arg0: javax.imageio.IIOParam): boolean
     }
 

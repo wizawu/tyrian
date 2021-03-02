@@ -3,7 +3,6 @@ declare namespace javax {
     namespace validation {
 
       abstract class SchemaFactory {
-
         protected constructor()
         public static newDefaultInstance(): javax.xml.validation.SchemaFactory
         public static newInstance(arg0: java.lang.String): javax.xml.validation.SchemaFactory

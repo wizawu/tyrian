@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class ToolTipManager extends java.awt.event.MouseAdapter implements java.awt.event.MouseMotionListener {
-
       enterTimer: javax.swing.Timer
       exitTimer: javax.swing.Timer
       insideTimer: javax.swing.Timer

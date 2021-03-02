@@ -4,7 +4,6 @@ declare namespace javax {
       namespace type {
 
         class TypeKind extends java.lang.Enum<javax.lang.model.type.TypeKind> {
-
           public static readonly BOOLEAN: javax.lang.model.type.TypeKind
           public static readonly BYTE: javax.lang.model.type.TypeKind
           public static readonly SHORT: javax.lang.model.type.TypeKind

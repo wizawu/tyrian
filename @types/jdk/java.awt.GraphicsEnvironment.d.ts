@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     abstract class GraphicsEnvironment {
-
       protected constructor()
       public static getLocalGraphicsEnvironment(): java.awt.GraphicsEnvironment
       public static isHeadless(): boolean

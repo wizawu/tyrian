@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLSelectElement extends org.w3c.dom.html.HTMLElement {
-
           getType(): java.lang.String
           getSelectedIndex(): int
           setSelectedIndex(arg0: int): void

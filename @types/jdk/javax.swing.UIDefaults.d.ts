@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class UIDefaults extends java.util.Hashtable<java.lang.Object,java.lang.Object> {
-
       public constructor()
       public constructor(arg0: int, arg1: float)
       public constructor(arg0: java.lang.Object[])

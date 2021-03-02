@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthGraphicsUtils {
-
           public constructor()
           public drawLine(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object, arg2: java.awt.Graphics, arg3: int, arg4: int, arg5: int, arg6: int): void
           public drawLine(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.lang.Object, arg2: java.awt.Graphics, arg3: int, arg4: int, arg5: int, arg6: int, arg7: java.lang.Object): void

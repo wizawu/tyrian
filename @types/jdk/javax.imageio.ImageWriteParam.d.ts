@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
 
     class ImageWriteParam extends javax.imageio.IIOParam {
-
       public static readonly MODE_DISABLED: int
       public static readonly MODE_DEFAULT: int
       public static readonly MODE_EXPLICIT: int

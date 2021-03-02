@@ -3,7 +3,6 @@ declare namespace com {
     namespace management {
 
       interface DiagnosticCommandMBean extends javax.management.DynamicMBean {
-
       }
 
     }

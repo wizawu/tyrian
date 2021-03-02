@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
 
     class XMLConstants {
-
       public static readonly NULL_NS_URI: java.lang.String
       public static readonly DEFAULT_NS_PREFIX: java.lang.String
       public static readonly XML_NS_URI: java.lang.String

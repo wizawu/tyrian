@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     abstract class URLStreamHandler {
-
       public constructor()
       protected abstract openConnection(arg0: java.net.URL): java.net.URLConnection
       protected openConnection(arg0: java.net.URL, arg1: java.net.Proxy): java.net.URLConnection

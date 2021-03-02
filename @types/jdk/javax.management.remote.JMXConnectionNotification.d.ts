@@ -3,7 +3,6 @@ declare namespace javax {
     namespace remote {
 
       class JMXConnectionNotification extends javax.management.Notification {
-
         public static readonly OPENED: java.lang.String
         public static readonly CLOSED: java.lang.String
         public static readonly FAILED: java.lang.String

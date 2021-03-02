@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JScrollBar extends javax.swing.JComponent implements java.awt.Adjustable, javax.accessibility.Accessible {
-
       protected model: javax.swing.BoundedRangeModel
       protected orientation: int
       protected unitIncrement: int

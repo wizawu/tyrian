@@ -3,7 +3,6 @@ declare namespace java {
     namespace file {
 
       abstract class FileSystem implements java.io.Closeable {
-
         protected constructor()
         public abstract provider(): java.nio.file.spi.FileSystemProvider
         public abstract close(): void

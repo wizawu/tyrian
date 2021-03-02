@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class FileOutputStream extends java.io.OutputStream {
-
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: boolean)
       public constructor(arg0: java.io.File)
@@ -12,7 +11,7 @@ declare namespace java {
       public write(arg0: byte[]): void
       public write(arg0: byte[], arg1: int, arg2: int): void
       public close(): void
-      public readonly getFD(): java.io.FileDescriptor
+      public getFD(): java.io.FileDescriptor
       public getChannel(): java.nio.channels.FileChannel
       protected finalize(): void
     }

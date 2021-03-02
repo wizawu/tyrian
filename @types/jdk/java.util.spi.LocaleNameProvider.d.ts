@@ -3,7 +3,6 @@ declare namespace java {
     namespace spi {
 
       abstract class LocaleNameProvider extends java.util.spi.LocaleServiceProvider {
-
         protected constructor()
         public abstract getDisplayLanguage(arg0: java.lang.String, arg1: java.util.Locale): java.lang.String
         public getDisplayScript(arg0: java.lang.String, arg1: java.util.Locale): java.lang.String

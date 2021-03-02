@@ -4,7 +4,6 @@ declare namespace org {
       namespace helpers {
 
         class XMLFilterImpl implements org.xml.sax.XMLFilter, org.xml.sax.EntityResolver, org.xml.sax.DTDHandler, org.xml.sax.ContentHandler, org.xml.sax.ErrorHandler {
-
           public constructor()
           public constructor(arg0: org.xml.sax.XMLReader)
           public setParent(arg0: org.xml.sax.XMLReader): void

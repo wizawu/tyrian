@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     interface Blob {
-
       length(): long
       getBytes(arg0: long, arg1: int): byte[]
       getBinaryStream(): java.io.InputStream

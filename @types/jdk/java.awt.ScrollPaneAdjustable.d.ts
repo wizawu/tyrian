@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class ScrollPaneAdjustable implements java.awt.Adjustable, java.io.Serializable {
-
       constructor(arg0: java.awt.ScrollPane, arg1: java.awt.event.AdjustmentListener, arg2: int)
       setSpan(arg0: int, arg1: int, arg2: int): void
       public getOrientation(): int

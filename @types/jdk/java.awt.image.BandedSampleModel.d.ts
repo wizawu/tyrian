@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class BandedSampleModel extends java.awt.image.ComponentSampleModel {
-
         public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
         public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int[], arg5: int[])
         public createCompatibleSampleModel(arg0: int, arg1: int): java.awt.image.SampleModel

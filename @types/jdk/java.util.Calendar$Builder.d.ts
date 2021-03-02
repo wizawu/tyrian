@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Calendar$Builder {
-
       public constructor()
       public setInstant(arg0: long): java.util.Calendar$Builder
       public setInstant(arg0: java.util.Date): java.util.Calendar$Builder

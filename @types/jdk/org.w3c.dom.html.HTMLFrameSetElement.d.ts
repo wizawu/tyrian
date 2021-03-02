@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLFrameSetElement extends org.w3c.dom.html.HTMLElement {
-
           getCols(): java.lang.String
           setCols(arg0: java.lang.String): void
           getRows(): java.lang.String

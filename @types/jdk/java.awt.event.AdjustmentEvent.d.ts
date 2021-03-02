@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class AdjustmentEvent extends java.awt.AWTEvent {
-
         public static readonly ADJUSTMENT_FIRST: int
         public static readonly ADJUSTMENT_LAST: int
         public static readonly ADJUSTMENT_VALUE_CHANGED: int

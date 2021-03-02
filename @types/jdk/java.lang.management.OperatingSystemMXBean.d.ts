@@ -3,7 +3,6 @@ declare namespace java {
     namespace management {
 
       interface OperatingSystemMXBean extends java.lang.management.PlatformManagedObject {
-
         getName(): java.lang.String
         getArch(): java.lang.String
         getVersion(): java.lang.String

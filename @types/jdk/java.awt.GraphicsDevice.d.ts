@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     abstract class GraphicsDevice {
-
       public static readonly TYPE_RASTER_SCREEN: int
       public static readonly TYPE_PRINTER: int
       public static readonly TYPE_IMAGE_BUFFER: int

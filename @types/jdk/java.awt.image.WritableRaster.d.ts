@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class WritableRaster extends java.awt.image.Raster {
-
         protected constructor(arg0: java.awt.image.SampleModel, arg1: java.awt.Point)
         protected constructor(arg0: java.awt.image.SampleModel, arg1: java.awt.image.DataBuffer, arg2: java.awt.Point)
         protected constructor(arg0: java.awt.image.SampleModel, arg1: java.awt.image.DataBuffer, arg2: java.awt.Rectangle, arg3: java.awt.Point, arg4: java.awt.image.WritableRaster)

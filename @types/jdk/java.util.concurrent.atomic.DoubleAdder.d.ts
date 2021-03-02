@@ -4,7 +4,6 @@ declare namespace java {
       namespace atomic {
 
         class DoubleAdder extends java.util.concurrent.atomic.Striped64 implements java.io.Serializable {
-
           public constructor()
           public add(arg0: double): void
           public sum(): double

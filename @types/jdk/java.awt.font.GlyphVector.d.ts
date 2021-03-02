@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       abstract class GlyphVector implements java.lang.Cloneable {
-
         public static readonly FLAG_HAS_TRANSFORMS: int
         public static readonly FLAG_HAS_POSITION_ADJUSTMENTS: int
         public static readonly FLAG_RUN_RTL: int

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       interface IIOWriteProgressListener extends java.util.EventListener {
-
         imageStarted(arg0: javax.imageio.ImageWriter, arg1: int): void
         imageProgress(arg0: javax.imageio.ImageWriter, arg1: float): void
         imageComplete(arg0: javax.imageio.ImageWriter): void

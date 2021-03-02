@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     interface SQLXML {
-
       free(): void
       getBinaryStream(): java.io.InputStream
       setBinaryStream(): java.io.OutputStream

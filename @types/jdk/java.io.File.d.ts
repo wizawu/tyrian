@@ -2,13 +2,12 @@ declare namespace java {
   namespace io {
 
     class File implements java.io.Serializable, java.lang.Comparable<java.io.File> {
-
       public static readonly separatorChar: char
       public static readonly separator: java.lang.String
       public static readonly pathSeparatorChar: char
       public static readonly pathSeparator: java.lang.String
       static readonly $assertionsDisabled: boolean
-      readonly isInvalid(): boolean
+      isInvalid(): boolean
       getPrefixLength(): int
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: java.lang.String)

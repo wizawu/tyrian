@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     abstract class KeyStoreSpi {
-
       public constructor()
       public abstract engineGetKey(arg0: java.lang.String, arg1: char[]): java.security.Key
       public abstract engineGetCertificateChain(arg0: java.lang.String): java.security.cert.Certificate[]

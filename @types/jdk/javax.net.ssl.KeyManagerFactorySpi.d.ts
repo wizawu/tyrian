@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       abstract class KeyManagerFactorySpi {
-
         public constructor()
         protected abstract engineInit(arg0: java.security.KeyStore, arg1: char[]): void
         protected abstract engineInit(arg0: javax.net.ssl.ManagerFactoryParameters): void

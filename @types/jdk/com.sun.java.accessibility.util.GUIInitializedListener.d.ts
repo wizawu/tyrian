@@ -4,8 +4,11 @@ declare namespace com {
       namespace accessibility {
         namespace util {
 
-          interface GUIInitializedListener extends java.util.EventListener {
+          interface GUIInitializedListener$$lambda {
+            (): void
+          }
 
+          interface GUIInitializedListener extends java.util.EventListener {
             guiInitialized(): void
           }
 

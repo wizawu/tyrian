@@ -3,7 +3,6 @@ declare namespace java {
     namespace registry {
 
       class LocateRegistry {
-
         public static getRegistry(): java.rmi.registry.Registry
         public static getRegistry(arg0: int): java.rmi.registry.Registry
         public static getRegistry(arg0: java.lang.String): java.rmi.registry.Registry

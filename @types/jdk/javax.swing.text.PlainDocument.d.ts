@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class PlainDocument extends javax.swing.text.AbstractDocument {
-
         public static readonly tabSizeAttribute: java.lang.String
         public static readonly lineLimitAttribute: java.lang.String
         public constructor()

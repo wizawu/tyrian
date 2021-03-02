@@ -4,7 +4,6 @@ declare namespace org {
       namespace helpers {
 
         class NamespaceSupport {
-
           public static readonly XMLNS: java.lang.String
           public static readonly NSDECL: java.lang.String
           public constructor()

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthTreeUI extends javax.swing.plaf.basic.BasicTreeUI implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public getExpandedIcon(): javax.swing.Icon

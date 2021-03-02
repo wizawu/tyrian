@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace dynalink {
 
     class NamespaceOperation implements jdk.dynalink.Operation {
-
       public constructor(arg0: jdk.dynalink.Operation, ...arg1: jdk.dynalink.Namespace[])
       public getBaseOperation(): jdk.dynalink.Operation
       public getNamespaces(): jdk.dynalink.Namespace[]

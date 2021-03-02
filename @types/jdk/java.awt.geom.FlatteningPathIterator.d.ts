@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       class FlatteningPathIterator implements java.awt.geom.PathIterator {
-
         static readonly GROW_SIZE: int
         src: java.awt.geom.PathIterator
         squareflat: double

@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLTableCellElement extends org.w3c.dom.html.HTMLElement {
-
           getCellIndex(): int
           getAbbr(): java.lang.String
           setAbbr(arg0: java.lang.String): void

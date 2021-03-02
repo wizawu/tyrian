@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     class StringCharacterIterator implements java.text.CharacterIterator {
-
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: int)
       public constructor(arg0: java.lang.String, arg1: int, arg2: int, arg3: int)

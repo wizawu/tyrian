@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLElement extends org.w3c.dom.Element {
-
           getId(): java.lang.String
           setId(arg0: java.lang.String): void
           getTitle(): java.lang.String

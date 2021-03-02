@@ -2,7 +2,6 @@ declare namespace javax {
   namespace print {
 
     abstract class ServiceUIFactory {
-
       public static readonly JCOMPONENT_UI: java.lang.String
       public static readonly PANEL_UI: java.lang.String
       public static readonly DIALOG_UI: java.lang.String

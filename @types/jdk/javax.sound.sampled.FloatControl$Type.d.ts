@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       class FloatControl$Type extends javax.sound.sampled.Control$Type {
-
         public static readonly MASTER_GAIN: javax.sound.sampled.FloatControl$Type
         public static readonly AUX_SEND: javax.sound.sampled.FloatControl$Type
         public static readonly AUX_RETURN: javax.sound.sampled.FloatControl$Type

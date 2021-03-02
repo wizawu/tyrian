@@ -4,7 +4,6 @@ declare namespace org {
       namespace css {
 
         interface DocumentCSS extends org.w3c.dom.stylesheets.DocumentStyle {
-
           getOverrideStyle(arg0: org.w3c.dom.Element, arg1: java.lang.String): org.w3c.dom.css.CSSStyleDeclaration
         }
 

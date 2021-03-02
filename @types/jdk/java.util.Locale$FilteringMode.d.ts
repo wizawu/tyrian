@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Locale$FilteringMode extends java.lang.Enum<java.util.Locale$FilteringMode> {
-
       public static readonly AUTOSELECT_FILTERING: java.util.Locale$FilteringMode
       public static readonly EXTENDED_FILTERING: java.util.Locale$FilteringMode
       public static readonly IGNORE_EXTENDED_RANGES: java.util.Locale$FilteringMode

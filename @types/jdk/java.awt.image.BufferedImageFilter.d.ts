@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class BufferedImageFilter extends java.awt.image.ImageFilter implements java.lang.Cloneable {
-
         bufferedImageOp: java.awt.image.BufferedImageOp
         model: java.awt.image.ColorModel
         width: int

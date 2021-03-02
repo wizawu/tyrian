@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       interface MidiChannel {
-
         noteOn(arg0: int, arg1: int): void
         noteOff(arg0: int, arg1: int): void
         noteOff(arg0: int): void

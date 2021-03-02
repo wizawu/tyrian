@@ -4,7 +4,6 @@ declare namespace java {
       namespace atomic {
 
         class AtomicMarkableReference<V> {
-
           public constructor(arg0: V, arg1: boolean)
           public getReference(): V
           public isMarked(): boolean

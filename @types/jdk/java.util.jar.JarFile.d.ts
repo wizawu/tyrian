@@ -3,7 +3,6 @@ declare namespace java {
     namespace jar {
 
       class JarFile extends java.util.zip.ZipFile {
-
         public static readonly MANIFEST_NAME: java.lang.String
         public static baseVersion(): java.lang.Runtime$Version
         public static runtimeVersion(): java.lang.Runtime$Version
@@ -13,8 +12,8 @@ declare namespace java {
         public constructor(arg0: java.io.File, arg1: boolean)
         public constructor(arg0: java.io.File, arg1: boolean, arg2: int)
         public constructor(arg0: java.io.File, arg1: boolean, arg2: int, arg3: java.lang.Runtime$Version)
-        public readonly getVersion(): java.lang.Runtime$Version
-        public readonly isMultiRelease(): boolean
+        public getVersion(): java.lang.Runtime$Version
+        public isMultiRelease(): boolean
         public getManifest(): java.util.jar.Manifest
         public getJarEntry(arg0: java.lang.String): java.util.jar.JarEntry
         public getEntry(arg0: java.lang.String): java.util.zip.ZipEntry

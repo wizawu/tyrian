@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       interface AbstractDocument$Content {
-
         createPosition(arg0: int): javax.swing.text.Position
         length(): int
         insertString(arg0: int, arg1: java.lang.String): javax.swing.undo.UndoableEdit

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class PropertyPermission extends java.security.BasicPermission {
-
       public constructor(arg0: java.lang.String, arg1: java.lang.String)
       constructor(arg0: java.lang.String, arg1: int)
       public implies(arg0: java.security.Permission): boolean

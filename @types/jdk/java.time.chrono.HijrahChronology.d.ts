@@ -3,7 +3,6 @@ declare namespace java {
     namespace chrono {
 
       class HijrahChronology extends java.time.chrono.AbstractChronology implements java.io.Serializable {
-
         public static readonly INSTANCE: java.time.chrono.HijrahChronology
         public getId(): java.lang.String
         public getCalendarType(): java.lang.String

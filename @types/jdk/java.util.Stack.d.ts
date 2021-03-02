@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Stack<E> extends java.util.Vector<E> {
-
       public constructor()
       public push(arg0: E): E
       public pop(): E

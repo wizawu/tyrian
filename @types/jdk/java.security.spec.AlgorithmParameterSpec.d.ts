@@ -3,7 +3,6 @@ declare namespace java {
     namespace spec {
 
       interface AlgorithmParameterSpec {
-
       }
 
     }

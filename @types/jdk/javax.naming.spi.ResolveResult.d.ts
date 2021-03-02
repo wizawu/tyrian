@@ -3,7 +3,6 @@ declare namespace javax {
     namespace spi {
 
       class ResolveResult implements java.io.Serializable {
-
         protected resolvedObj: java.lang.Object
         protected remainingName: javax.naming.Name
         protected constructor()

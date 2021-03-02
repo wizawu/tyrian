@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JFileChooser extends javax.swing.JComponent implements javax.accessibility.Accessible {
-
       public static readonly OPEN_DIALOG: int
       public static readonly SAVE_DIALOG: int
       public static readonly CUSTOM_DIALOG: int

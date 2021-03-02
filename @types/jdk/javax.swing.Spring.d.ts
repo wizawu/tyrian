@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class Spring {
-
       public static readonly UNSET: int
       protected constructor()
       public abstract getMinimumValue(): int

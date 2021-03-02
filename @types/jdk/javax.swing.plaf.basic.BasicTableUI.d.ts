@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicTableUI extends javax.swing.plaf.TableUI {
-
           protected table: javax.swing.JTable
           protected rendererPane: javax.swing.CellRendererPane
           protected keyListener: java.awt.event.KeyListener

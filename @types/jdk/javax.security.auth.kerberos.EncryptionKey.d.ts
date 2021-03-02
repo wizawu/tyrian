@@ -4,7 +4,6 @@ declare namespace javax {
       namespace kerberos {
 
         class EncryptionKey implements javax.crypto.SecretKey {
-
           public constructor(arg0: byte[], arg1: int)
           public getKeyType(): int
           public getAlgorithm(): java.lang.String

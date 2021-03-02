@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         class SimpleTreeVisitorES5_1<R,P> implements jdk.nashorn.api.tree.TreeVisitor<R,P> {
-
           public constructor()
           public visitAssignment(arg0: jdk.nashorn.api.tree.AssignmentTree, arg1: P): R
           public visitCompoundAssignment(arg0: jdk.nashorn.api.tree.CompoundAssignmentTree, arg1: P): R

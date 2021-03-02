@@ -3,7 +3,6 @@ declare namespace javax {
     namespace directory {
 
       class SearchControls implements java.io.Serializable {
-
         public static readonly OBJECT_SCOPE: int
         public static readonly ONELEVEL_SCOPE: int
         public static readonly SUBTREE_SCOPE: int

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class DebugGraphics extends java.awt.Graphics {
-
       graphics: java.awt.Graphics
       buffer: java.awt.Image
       debugOptions: int
@@ -67,7 +66,7 @@ declare namespace javax {
       public drawImage(arg0: java.awt.Image, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int, arg7: int, arg8: int, arg9: java.awt.Color, arg10: java.awt.image.ImageObserver): boolean
       static loadImage(arg0: java.awt.Image): void
       public copyArea(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): void
-      readonly sleep(arg0: int): void
+      sleep(arg0: int): void
       public dispose(): void
       public isDrawingBuffer(): boolean
       toShortString(): java.lang.String

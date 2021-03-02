@@ -3,14 +3,13 @@ declare namespace java {
     namespace logging {
 
       class Logger {
-
         static readonly SYSTEM_LOGGER_RB_NAME: java.lang.String
         public static readonly GLOBAL_LOGGER_NAME: java.lang.String
         public static readonly global: java.util.logging.Logger
-        public static readonly getGlobal(): java.util.logging.Logger
+        public static getGlobal(): java.util.logging.Logger
         protected constructor(arg0: java.lang.String, arg1: java.lang.String)
         constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Module, arg3: java.util.logging.LogManager, arg4: boolean)
-        readonly mergeWithSystemLogger(arg0: java.util.logging.Logger): void
+        mergeWithSystemLogger(arg0: java.util.logging.Logger): void
         setLogManager(arg0: java.util.logging.LogManager): void
         public static getLogger(arg0: java.lang.String): java.util.logging.Logger
         public static getLogger(arg0: java.lang.String, arg1: java.lang.String): java.util.logging.Logger
@@ -63,7 +62,7 @@ declare namespace java {
         public finer(arg0: java.util.function$.Supplier<java.lang.String>): void
         public finest(arg0: java.util.function$.Supplier<java.lang.String>): void
         public setLevel(arg0: java.util.logging.Level): void
-        readonly isLevelInitialized(): boolean
+        isLevelInitialized(): boolean
         public getLevel(): java.util.logging.Level
         public isLoggable(arg0: java.util.logging.Level): boolean
         public getName(): java.lang.String
@@ -76,7 +75,7 @@ declare namespace java {
         public setResourceBundle(arg0: java.util.ResourceBundle): void
         public getParent(): java.util.logging.Logger
         public setParent(arg0: java.util.logging.Logger): void
-        readonly removeChildLogger(arg0: java.util.logging.LogManager$LoggerWeakRef): void
+        removeChildLogger(arg0: java.util.logging.LogManager$LoggerWeakRef): void
       }
 
     }

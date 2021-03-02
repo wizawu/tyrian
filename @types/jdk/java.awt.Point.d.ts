@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Point extends java.awt.geom.Point2D implements java.io.Serializable {
-
       public x: int
       public y: int
       public constructor()

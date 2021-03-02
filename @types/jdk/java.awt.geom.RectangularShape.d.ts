@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       abstract class RectangularShape implements java.awt.Shape, java.lang.Cloneable {
-
         protected constructor()
         public abstract getX(): double
         public abstract getY(): double

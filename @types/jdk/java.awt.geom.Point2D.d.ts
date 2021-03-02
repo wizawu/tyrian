@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       abstract class Point2D implements java.lang.Cloneable {
-
         protected constructor()
         public abstract getX(): double
         public abstract getY(): double

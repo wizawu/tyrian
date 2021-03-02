@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class Raster {
-
         protected sampleModel: java.awt.image.SampleModel
         protected dataBuffer: java.awt.image.DataBuffer
         protected minX: int
@@ -32,8 +31,8 @@ declare namespace java {
         protected constructor(arg0: java.awt.image.SampleModel, arg1: java.awt.image.DataBuffer, arg2: java.awt.Point)
         protected constructor(arg0: java.awt.image.SampleModel, arg1: java.awt.image.DataBuffer, arg2: java.awt.Rectangle, arg3: java.awt.Point, arg4: java.awt.image.Raster)
         public getParent(): java.awt.image.Raster
-        public readonly getSampleModelTranslateX(): int
-        public readonly getSampleModelTranslateY(): int
+        public getSampleModelTranslateX(): int
+        public getSampleModelTranslateY(): int
         public createCompatibleWritableRaster(): java.awt.image.WritableRaster
         public createCompatibleWritableRaster(arg0: int, arg1: int): java.awt.image.WritableRaster
         public createCompatibleWritableRaster(arg0: java.awt.Rectangle): java.awt.image.WritableRaster
@@ -41,13 +40,13 @@ declare namespace java {
         public createTranslatedChild(arg0: int, arg1: int): java.awt.image.Raster
         public createChild(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int, arg6: int[]): java.awt.image.Raster
         public getBounds(): java.awt.Rectangle
-        public readonly getMinX(): int
-        public readonly getMinY(): int
-        public readonly getWidth(): int
-        public readonly getHeight(): int
-        public readonly getNumBands(): int
-        public readonly getNumDataElements(): int
-        public readonly getTransferType(): int
+        public getMinX(): int
+        public getMinY(): int
+        public getWidth(): int
+        public getHeight(): int
+        public getNumBands(): int
+        public getNumDataElements(): int
+        public getTransferType(): int
         public getDataBuffer(): java.awt.image.DataBuffer
         public getSampleModel(): java.awt.image.SampleModel
         public getDataElements(arg0: int, arg1: int, arg2: java.lang.Object): java.lang.Object

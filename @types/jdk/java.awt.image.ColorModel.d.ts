@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       abstract class ColorModel implements java.awt.Transparency {
-
         protected pixel_bits: int
         nBits: int[]
         transparency: int
@@ -28,9 +27,9 @@ declare namespace java {
         public static getRGBdefault(): java.awt.image.ColorModel
         public constructor(arg0: int)
         protected constructor(arg0: int, arg1: int[], arg2: java.awt.color.ColorSpace, arg3: boolean, arg4: boolean, arg5: int, arg6: int)
-        public readonly hasAlpha(): boolean
-        public readonly isAlphaPremultiplied(): boolean
-        public readonly getTransferType(): int
+        public hasAlpha(): boolean
+        public isAlphaPremultiplied(): boolean
+        public getTransferType(): int
         public getPixelSize(): int
         public getComponentSize(arg0: int): int
         public getComponentSize(): int[]
@@ -59,7 +58,7 @@ declare namespace java {
         public getNormalizedComponents(arg0: java.lang.Object, arg1: float[], arg2: int): float[]
         public equals(arg0: java.lang.Object): boolean
         public hashCode(): int
-        public readonly getColorSpace(): java.awt.color.ColorSpace
+        public getColorSpace(): java.awt.color.ColorSpace
         public coerceData(arg0: java.awt.image.WritableRaster, arg1: boolean): java.awt.image.ColorModel
         public isCompatibleRaster(arg0: java.awt.image.Raster): boolean
         public createCompatibleWritableRaster(arg0: int, arg1: int): java.awt.image.WritableRaster

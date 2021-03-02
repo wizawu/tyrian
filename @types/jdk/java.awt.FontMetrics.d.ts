@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     abstract class FontMetrics implements java.io.Serializable {
-
       protected font: java.awt.Font
       protected constructor(arg0: java.awt.Font)
       public getFont(): java.awt.Font

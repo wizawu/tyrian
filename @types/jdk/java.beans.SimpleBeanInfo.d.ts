@@ -2,7 +2,6 @@ declare namespace java {
   namespace beans {
 
     class SimpleBeanInfo implements java.beans.BeanInfo {
-
       public constructor()
       public getBeanDescriptor(): java.beans.BeanDescriptor
       public getPropertyDescriptors(): java.beans.PropertyDescriptor[]

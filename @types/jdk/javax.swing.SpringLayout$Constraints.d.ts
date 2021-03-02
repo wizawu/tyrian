@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class SpringLayout$Constraints {
-
       public constructor()
       public constructor(arg0: javax.swing.Spring, arg1: javax.swing.Spring)
       public constructor(arg0: javax.swing.Spring, arg1: javax.swing.Spring, arg2: javax.swing.Spring, arg3: javax.swing.Spring)

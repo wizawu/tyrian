@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       interface ObjectChangeListener extends javax.naming.event.NamingListener {
-
         objectChanged(arg0: javax.naming.event.NamingEvent): void
       }
 

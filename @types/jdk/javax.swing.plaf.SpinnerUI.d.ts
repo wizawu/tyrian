@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       abstract class SpinnerUI extends javax.swing.plaf.ComponentUI {
-
         public constructor()
       }
 

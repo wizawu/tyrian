@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface ForLoopTree extends jdk.nashorn.api.tree.ConditionalLoopTree {
-
           getInitializer(): jdk.nashorn.api.tree.ExpressionTree
           getCondition(): jdk.nashorn.api.tree.ExpressionTree
           getUpdate(): jdk.nashorn.api.tree.ExpressionTree

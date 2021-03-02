@@ -3,7 +3,6 @@ declare namespace java {
     namespace management {
 
       interface MemoryMXBean extends java.lang.management.PlatformManagedObject {
-
         getObjectPendingFinalizationCount(): int
         getHeapMemoryUsage(): java.lang.management.MemoryUsage
         getNonHeapMemoryUsage(): java.lang.management.MemoryUsage

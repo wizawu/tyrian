@@ -4,7 +4,6 @@ declare namespace javax {
       namespace sax {
 
         class SAXSource implements javax.xml.transform.Source {
-
           public static readonly FEATURE: java.lang.String
           public constructor()
           public constructor(arg0: org.xml.sax.XMLReader, arg1: org.xml.sax.InputSource)

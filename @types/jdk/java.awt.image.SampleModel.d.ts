@@ -3,17 +3,16 @@ declare namespace java {
     namespace image {
 
       abstract class SampleModel {
-
         protected width: int
         protected height: int
         protected numBands: int
         protected dataType: int
         public constructor(arg0: int, arg1: int, arg2: int, arg3: int)
-        public readonly getWidth(): int
-        public readonly getHeight(): int
-        public readonly getNumBands(): int
+        public getWidth(): int
+        public getHeight(): int
+        public getNumBands(): int
         public abstract getNumDataElements(): int
-        public readonly getDataType(): int
+        public getDataType(): int
         public getTransferType(): int
         public getPixel(arg0: int, arg1: int, arg2: int[], arg3: java.awt.image.DataBuffer): int[]
         public abstract getDataElements(arg0: int, arg1: int, arg2: java.lang.Object, arg3: java.awt.image.DataBuffer): java.lang.Object

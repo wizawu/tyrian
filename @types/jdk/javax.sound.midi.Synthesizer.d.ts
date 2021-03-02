@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       interface Synthesizer extends javax.sound.midi.MidiDevice {
-
         getMaxPolyphony(): int
         getLatency(): long
         getChannels(): javax.sound.midi.MidiChannel[]

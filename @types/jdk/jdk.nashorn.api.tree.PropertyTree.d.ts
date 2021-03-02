@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface PropertyTree extends jdk.nashorn.api.tree.Tree {
-
           getKey(): jdk.nashorn.api.tree.ExpressionTree
           getValue(): jdk.nashorn.api.tree.ExpressionTree
           getGetter(): jdk.nashorn.api.tree.FunctionExpressionTree

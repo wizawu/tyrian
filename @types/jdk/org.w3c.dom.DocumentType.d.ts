@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface DocumentType extends org.w3c.dom.Node {
-
         getName(): java.lang.String
         getEntities(): org.w3c.dom.NamedNodeMap
         getNotations(): org.w3c.dom.NamedNodeMap

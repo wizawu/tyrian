@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       interface Caret {
-
         install(arg0: javax.swing.text.JTextComponent): void
         deinstall(arg0: javax.swing.text.JTextComponent): void
         paint(arg0: java.awt.Graphics): void

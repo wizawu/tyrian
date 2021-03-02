@@ -3,7 +3,6 @@ declare namespace javax {
     namespace border {
 
       class MatteBorder extends javax.swing.border.EmptyBorder {
-
         protected color: java.awt.Color
         protected tileIcon: javax.swing.Icon
         public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.awt.Color)

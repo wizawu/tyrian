@@ -3,7 +3,6 @@ declare namespace javax {
     namespace parsers {
 
       abstract class SAXParser {
-
         protected constructor()
         public reset(): void
         public parse(arg0: java.io.InputStream, arg1: org.xml.sax.HandlerBase): void

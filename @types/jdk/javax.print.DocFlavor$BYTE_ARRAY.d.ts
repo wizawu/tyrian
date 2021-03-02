@@ -2,7 +2,6 @@ declare namespace javax {
   namespace print {
 
     class DocFlavor$BYTE_ARRAY extends javax.print.DocFlavor {
-
       public static readonly TEXT_PLAIN_HOST: javax.print.DocFlavor$BYTE_ARRAY
       public static readonly TEXT_PLAIN_UTF_8: javax.print.DocFlavor$BYTE_ARRAY
       public static readonly TEXT_PLAIN_UTF_16: javax.print.DocFlavor$BYTE_ARRAY

@@ -5,7 +5,6 @@ declare namespace javax {
         namespace parser {
 
           class ContentModel implements java.io.Serializable {
-
             public type: int
             public content: java.lang.Object
             public next: javax.swing.text.html.parser.ContentModel

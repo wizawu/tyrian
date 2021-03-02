@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class ComponentInputMap extends javax.swing.InputMap {
-
       public constructor(arg0: javax.swing.JComponent)
       public setParent(arg0: javax.swing.InputMap): void
       public getComponent(): javax.swing.JComponent

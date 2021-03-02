@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class LayoutQueue {
-
         public constructor()
         public static getDefaultQueue(): javax.swing.text.LayoutQueue
         public static setDefaultQueue(arg0: javax.swing.text.LayoutQueue): void

@@ -5,7 +5,6 @@ declare namespace javax {
         namespace parser {
 
           class Parser implements javax.swing.text.html.parser.DTDConstants {
-
             protected dtd: javax.swing.text.html.parser.DTD
             protected strict: boolean
             public constructor(arg0: javax.swing.text.html.parser.DTD)

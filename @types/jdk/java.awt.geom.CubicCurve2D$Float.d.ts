@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       class CubicCurve2D$Float extends java.awt.geom.CubicCurve2D implements java.io.Serializable {
-
         public x1: float
         public y1: float
         public ctrlx1: float

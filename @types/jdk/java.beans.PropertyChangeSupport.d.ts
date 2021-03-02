@@ -2,7 +2,6 @@ declare namespace java {
   namespace beans {
 
     class PropertyChangeSupport implements java.io.Serializable {
-
       static readonly serialVersionUID: long
       public constructor(arg0: java.lang.Object)
       public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void

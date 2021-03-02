@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       abstract class TrustManagerFactorySpi {
-
         public constructor()
         protected abstract engineInit(arg0: java.security.KeyStore): void
         protected abstract engineInit(arg0: javax.net.ssl.ManagerFactoryParameters): void

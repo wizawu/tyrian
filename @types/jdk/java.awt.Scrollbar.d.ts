@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Scrollbar extends java.awt.Component implements java.awt.Adjustable, javax.accessibility.Accessible {
-
       public static readonly HORIZONTAL: int
       public static readonly VERTICAL: int
       value: int

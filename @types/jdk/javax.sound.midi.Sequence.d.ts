@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       class Sequence {
-
         public static readonly PPQ: float
         public static readonly SMPTE_24: float
         public static readonly SMPTE_25: float

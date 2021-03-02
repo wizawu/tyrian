@@ -4,7 +4,6 @@ declare namespace java {
       namespace atomic {
 
         class LongAccumulator extends java.util.concurrent.atomic.Striped64 implements java.io.Serializable {
-
           public constructor(arg0: java.util.function$.LongBinaryOperator, arg1: long)
           public accumulate(arg0: long): void
           public get(): long

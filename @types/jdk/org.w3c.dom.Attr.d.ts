@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface Attr extends org.w3c.dom.Node {
-
         getName(): java.lang.String
         getSpecified(): boolean
         getValue(): java.lang.String

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class CSS implements java.io.Serializable {
-
           static baseFontSizeIndex: int
           public constructor()
           setBaseFontSize(arg0: int): void
@@ -22,11 +21,11 @@ declare namespace javax {
           getLength(arg0: javax.swing.text.AttributeSet, arg1: javax.swing.text.html.CSS$Attribute, arg2: javax.swing.text.html.StyleSheet): float
           translateHTMLToCSS(arg0: javax.swing.text.AttributeSet): javax.swing.text.AttributeSet
           public static getAllAttributeKeys(): javax.swing.text.html.CSS$Attribute[]
-          public static readonly getAttribute(arg0: java.lang.String): javax.swing.text.html.CSS$Attribute
-          static readonly getValue(arg0: java.lang.String): javax.swing.text.html.CSS$Value
+          public static getAttribute(arg0: java.lang.String): javax.swing.text.html.CSS$Attribute
+          static getValue(arg0: java.lang.String): javax.swing.text.html.CSS$Value
           static getURL(arg0: java.net.URL, arg1: java.lang.String): java.net.URL
           static colorToHex(arg0: java.awt.Color): java.lang.String
-          static readonly hexToColor(arg0: java.lang.String): java.awt.Color
+          static hexToColor(arg0: java.lang.String): java.awt.Color
           static stringToColor(arg0: java.lang.String): java.awt.Color
           static getIndexOfSize(arg0: float, arg1: int[]): int
           static getIndexOfSize(arg0: float, arg1: javax.swing.text.html.StyleSheet): int

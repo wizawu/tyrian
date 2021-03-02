@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class PrintWriter extends java.io.Writer {
-
       protected out: java.io.Writer
       public constructor(arg0: java.io.Writer)
       public constructor(arg0: java.io.Writer, arg1: boolean)

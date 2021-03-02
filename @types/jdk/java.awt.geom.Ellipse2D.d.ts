@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       abstract class Ellipse2D extends java.awt.geom.RectangularShape {
-
         protected constructor()
         public contains(arg0: double, arg1: double): boolean
         public intersects(arg0: double, arg1: double, arg2: double, arg3: double): boolean

@@ -3,7 +3,6 @@ declare namespace java {
     namespace server {
 
       class ObjID implements java.io.Serializable {
-
         public static readonly REGISTRY_ID: int
         public static readonly ACTIVATOR_ID: int
         public static readonly DGC_ID: int

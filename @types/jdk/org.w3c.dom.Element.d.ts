@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface Element extends org.w3c.dom.Node {
-
         getTagName(): java.lang.String
         getAttribute(arg0: java.lang.String): java.lang.String
         setAttribute(arg0: java.lang.String, arg1: java.lang.String): void

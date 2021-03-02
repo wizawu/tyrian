@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       interface InternalFrameListener extends java.util.EventListener {
-
         internalFrameOpened(arg0: javax.swing.event.InternalFrameEvent): void
         internalFrameClosing(arg0: javax.swing.event.InternalFrameEvent): void
         internalFrameClosed(arg0: javax.swing.event.InternalFrameEvent): void

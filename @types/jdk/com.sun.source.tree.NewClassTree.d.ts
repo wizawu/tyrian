@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface NewClassTree extends com.sun.source.tree.ExpressionTree {
-
           getEnclosingExpression(): com.sun.source.tree.ExpressionTree
           getTypeArguments(): java.util.List<com.sun.source.tree.Tree>
           getIdentifier(): com.sun.source.tree.ExpressionTree

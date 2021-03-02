@@ -3,7 +3,6 @@ declare namespace java {
     namespace file {
 
       class SimpleFileVisitor<T> implements java.nio.file.FileVisitor<T> {
-
         protected constructor()
         public preVisitDirectory(arg0: T, arg1: java.nio.file.attribute.BasicFileAttributes): java.nio.file.FileVisitResult
         public visitFile(arg0: T, arg1: java.nio.file.attribute.BasicFileAttributes): java.nio.file.FileVisitResult

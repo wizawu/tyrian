@@ -3,20 +3,19 @@ declare namespace java {
     namespace concurrent {
 
       class ConcurrentSkipListMap<K,V> extends java.util.AbstractMap<K,V> implements java.util.concurrent.ConcurrentNavigableMap<K,V>, java.lang.Cloneable, java.io.Serializable {
-
         readonly comparator: java.util.Comparator<unknown>
         static cpr(arg0: java.util.Comparator, arg1: java.lang.Object, arg2: java.lang.Object): int
-        readonly baseHead(): java.util.concurrent.ConcurrentSkipListMap$Node<K,V>
+        baseHead(): java.util.concurrent.ConcurrentSkipListMap$Node<K,V>
         static unlinkNode<K,V>(arg0: java.util.concurrent.ConcurrentSkipListMap$Node<K,V>, arg1: java.util.concurrent.ConcurrentSkipListMap$Node<K,V>): void
-        readonly getAdderCount(): long
+        getAdderCount(): long
         static addIndices<K,V>(arg0: java.util.concurrent.ConcurrentSkipListMap$Index<K,V>, arg1: int, arg2: java.util.concurrent.ConcurrentSkipListMap$Index<K,V>, arg3: java.util.Comparator<unknown>): boolean
-        readonly doRemove(arg0: java.lang.Object, arg1: java.lang.Object): V
-        readonly findFirst(): java.util.concurrent.ConcurrentSkipListMap$Node<K,V>
-        readonly findFirstEntry(): java.util.AbstractMap$SimpleImmutableEntry<K,V>
-        readonly findLast(): java.util.concurrent.ConcurrentSkipListMap$Node<K,V>
-        readonly findLastEntry(): java.util.AbstractMap$SimpleImmutableEntry<K,V>
-        readonly findNear(arg0: K, arg1: int, arg2: java.util.Comparator<unknown>): java.util.concurrent.ConcurrentSkipListMap$Node<K,V>
-        readonly findNearEntry(arg0: K, arg1: int, arg2: java.util.Comparator<unknown>): java.util.AbstractMap$SimpleImmutableEntry<K,V>
+        doRemove(arg0: java.lang.Object, arg1: java.lang.Object): V
+        findFirst(): java.util.concurrent.ConcurrentSkipListMap$Node<K,V>
+        findFirstEntry(): java.util.AbstractMap$SimpleImmutableEntry<K,V>
+        findLast(): java.util.concurrent.ConcurrentSkipListMap$Node<K,V>
+        findLastEntry(): java.util.AbstractMap$SimpleImmutableEntry<K,V>
+        findNear(arg0: K, arg1: int, arg2: java.util.Comparator<unknown>): java.util.concurrent.ConcurrentSkipListMap$Node<K,V>
+        findNearEntry(arg0: K, arg1: int, arg2: java.util.Comparator<unknown>): java.util.AbstractMap$SimpleImmutableEntry<K,V>
         public constructor()
         public constructor(arg0: java.util.Comparator<unknown>)
         public constructor(arg0: java.util.Map<K,V>)
@@ -67,14 +66,14 @@ declare namespace java {
         public lastEntry(): java.util.Map$Entry<K,V>
         public pollFirstEntry(): java.util.Map$Entry<K,V>
         public pollLastEntry(): java.util.Map$Entry<K,V>
-        static readonly toList<E>(arg0: java.util.Collection<E>): java.util.List<E>
+        static toList<E>(arg0: java.util.Collection<E>): java.util.List<E>
         public forEach(arg0: java.util.function$.BiConsumer<unknown,unknown>): void
         public replaceAll(arg0: java.util.function$.BiFunction<unknown,unknown,V>): void
         removeEntryIf(arg0: java.util.function$.Predicate<unknown>): boolean
         removeValueIf(arg0: java.util.function$.Predicate<unknown>): boolean
-        readonly keySpliterator(): java.util.concurrent.ConcurrentSkipListMap$KeySpliterator<K,V>
-        readonly valueSpliterator(): java.util.concurrent.ConcurrentSkipListMap$ValueSpliterator<K,V>
-        readonly entrySpliterator(): java.util.concurrent.ConcurrentSkipListMap$EntrySpliterator<K,V>
+        keySpliterator(): java.util.concurrent.ConcurrentSkipListMap$KeySpliterator<K,V>
+        valueSpliterator(): java.util.concurrent.ConcurrentSkipListMap$ValueSpliterator<K,V>
+        entrySpliterator(): java.util.concurrent.ConcurrentSkipListMap$EntrySpliterator<K,V>
         public clone(): java.lang.Object
         public keySet(): java.util.Set
         public tailMap(arg0: java.lang.Object): java.util.SortedMap

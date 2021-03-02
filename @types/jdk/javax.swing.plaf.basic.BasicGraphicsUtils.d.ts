@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicGraphicsUtils {
-
           public constructor()
           public static drawEtchedRect(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int, arg5: java.awt.Color, arg6: java.awt.Color, arg7: java.awt.Color, arg8: java.awt.Color): void
           public static getEtchedInsets(): java.awt.Insets

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JProgressBar extends javax.swing.JComponent implements javax.swing.SwingConstants, javax.accessibility.Accessible {
-
       protected orientation: int
       protected paintBorder: boolean
       protected model: javax.swing.BoundedRangeModel

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         abstract class HTMLEditorKit$Parser {
-
           public constructor()
           public abstract parse(arg0: java.io.Reader, arg1: javax.swing.text.html.HTMLEditorKit$ParserCallback, arg2: boolean): void
         }

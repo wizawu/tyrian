@@ -3,7 +3,6 @@ declare namespace javax {
     namespace tree {
 
       class DefaultMutableTreeNode implements java.lang.Cloneable, javax.swing.tree.MutableTreeNode, java.io.Serializable {
-
         public static readonly EMPTY_ENUMERATION: java.util.Enumeration<javax.swing.tree.TreeNode>
         protected parent: javax.swing.tree.MutableTreeNode
         protected children: java.util.Vector<javax.swing.tree.TreeNode>

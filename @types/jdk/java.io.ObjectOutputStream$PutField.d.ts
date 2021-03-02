@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     abstract class ObjectOutputStream$PutField {
-
       public constructor()
       public abstract put(arg0: java.lang.String, arg1: boolean): void
       public abstract put(arg0: java.lang.String, arg1: byte): void

@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       class Point2D$Double extends java.awt.geom.Point2D implements java.io.Serializable {
-
         public x: double
         public y: double
         public constructor()

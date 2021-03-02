@@ -3,7 +3,6 @@ declare namespace javax {
     namespace openmbean {
 
       interface OpenMBeanAttributeInfo extends javax.management.openmbean.OpenMBeanParameterInfo {
-
         isReadable(): boolean
         isWritable(): boolean
         isIs(): boolean

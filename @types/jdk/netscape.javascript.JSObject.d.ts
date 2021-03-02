@@ -2,7 +2,6 @@ declare namespace netscape {
   namespace javascript {
 
     abstract class JSObject {
-
       protected constructor()
       public abstract call(arg0: java.lang.String, ...arg1: java.lang.Object[]): java.lang.Object
       public abstract eval(arg0: java.lang.String): java.lang.Object

@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jshell {
 
     class JShell$Builder {
-
       in: java.io.InputStream
       out: java.io.PrintStream
       err: java.io.PrintStream

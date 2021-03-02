@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace spi {
 
       interface ExecutionControl extends java.lang.AutoCloseable {
-
         load(arg0: jdk.jshell.spi.ExecutionControl$ClassBytecodes[]): void
         redefine(arg0: jdk.jshell.spi.ExecutionControl$ClassBytecodes[]): void
         invoke(arg0: java.lang.String, arg1: java.lang.String): java.lang.String

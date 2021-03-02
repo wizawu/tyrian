@@ -3,7 +3,6 @@ declare namespace java {
     namespace logging {
 
       abstract class Handler {
-
         protected constructor()
         constructor(arg0: java.util.logging.Level, arg1: java.util.logging.Formatter, arg2: java.util.logging.Formatter)
         public abstract publish(arg0: java.util.logging.LogRecord): void

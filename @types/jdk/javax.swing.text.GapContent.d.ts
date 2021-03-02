@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class GapContent extends javax.swing.text.GapVector implements javax.swing.text.AbstractDocument$Content, java.io.Serializable {
-
         static readonly GROWTH_SIZE: int
         public constructor()
         public constructor(arg0: int)
@@ -21,10 +20,10 @@ declare namespace javax {
         protected resetMarksAtZero(): void
         protected shiftGapStartDown(arg0: int): void
         protected shiftGapEndUp(arg0: int): void
-        readonly compare(arg0: javax.swing.text.GapContent$MarkData, arg1: javax.swing.text.GapContent$MarkData): int
-        readonly findMarkAdjustIndex(arg0: int): int
-        readonly findSortIndex(arg0: javax.swing.text.GapContent$MarkData): int
-        readonly removeUnusedMarks(): void
+        compare(arg0: javax.swing.text.GapContent$MarkData, arg1: javax.swing.text.GapContent$MarkData): int
+        findMarkAdjustIndex(arg0: int): int
+        findSortIndex(arg0: javax.swing.text.GapContent$MarkData): int
+        removeUnusedMarks(): void
         protected getPositionsInRange(arg0: java.util.Vector, arg1: int, arg2: int): java.util.Vector
         protected updateUndoPositions(arg0: java.util.Vector, arg1: int, arg2: int): void
       }

@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     class DateFormat$Field extends java.text.Format$Field {
-
       public static readonly ERA: java.text.DateFormat$Field
       public static readonly YEAR: java.text.DateFormat$Field
       public static readonly MONTH: java.text.DateFormat$Field

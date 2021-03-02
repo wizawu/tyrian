@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class View implements javax.swing.SwingConstants {
-
         public static readonly BadBreakWeight: int
         public static readonly GoodBreakWeight: int
         public static readonly ExcellentBreakWeight: int

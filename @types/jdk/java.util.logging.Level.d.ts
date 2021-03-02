@@ -3,7 +3,6 @@ declare namespace java {
     namespace logging {
 
       class Level implements java.io.Serializable {
-
         public static readonly OFF: java.util.logging.Level
         public static readonly SEVERE: java.util.logging.Level
         public static readonly WARNING: java.util.logging.Level
@@ -18,12 +17,12 @@ declare namespace java {
         public getResourceBundleName(): java.lang.String
         public getName(): java.lang.String
         public getLocalizedName(): java.lang.String
-        readonly getLevelName(): java.lang.String
-        readonly getCachedLocalizedLevelName(): java.lang.String
-        readonly getLocalizedLevelName(): java.lang.String
+        getLevelName(): java.lang.String
+        getCachedLocalizedLevelName(): java.lang.String
+        getLocalizedLevelName(): java.lang.String
         static findLevel(arg0: java.lang.String): java.util.logging.Level
-        public readonly toString(): java.lang.String
-        public readonly intValue(): int
+        public toString(): java.lang.String
+        public intValue(): int
         public static parse(arg0: java.lang.String): java.util.logging.Level
         public equals(arg0: java.lang.Object): boolean
         public hashCode(): int

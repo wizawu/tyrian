@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class SocketPermission extends java.security.Permission implements java.io.Serializable {
-
       public constructor(arg0: java.lang.String, arg1: java.lang.String)
       constructor(arg0: java.lang.String, arg1: int)
       getCanonName(): void

@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jfr {
 
     class RecordingState extends java.lang.Enum<jdk.jfr.RecordingState> {
-
       public static readonly NEW: jdk.jfr.RecordingState
       public static readonly DELAYED: jdk.jfr.RecordingState
       public static readonly RUNNING: jdk.jfr.RecordingState

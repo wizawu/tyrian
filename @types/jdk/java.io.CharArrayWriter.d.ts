@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class CharArrayWriter extends java.io.Writer {
-
       protected buf: char[]
       protected count: int
       public constructor()

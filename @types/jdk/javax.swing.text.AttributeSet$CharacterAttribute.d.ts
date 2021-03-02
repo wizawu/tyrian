@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       interface AttributeSet$CharacterAttribute {
-
       }
 
     }

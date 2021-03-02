@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       class InterruptedByTimeoutException extends java.io.IOException {
-
         public constructor()
       }
 

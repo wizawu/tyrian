@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     interface DataInput {
-
       readFully(arg0: byte[]): void
       readFully(arg0: byte[], arg1: int, arg2: int): void
       skipBytes(arg0: int): int

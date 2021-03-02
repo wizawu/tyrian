@@ -2,7 +2,6 @@ declare namespace javax {
   namespace crypto {
 
     abstract class MacSpi {
-
       public constructor()
       protected abstract engineGetMacLength(): int
       protected abstract engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void

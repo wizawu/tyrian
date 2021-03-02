@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       interface Line extends java.lang.AutoCloseable {
-
         getLineInfo(): javax.sound.sampled.Line$Info
         open(): void
         close(): void

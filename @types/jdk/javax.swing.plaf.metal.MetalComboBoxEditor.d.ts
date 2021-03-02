@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalComboBoxEditor extends javax.swing.plaf.basic.BasicComboBoxEditor {
-
           protected static editorBorderInsets: java.awt.Insets
           public constructor()
         }

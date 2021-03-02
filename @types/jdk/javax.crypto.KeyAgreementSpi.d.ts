@@ -2,7 +2,6 @@ declare namespace javax {
   namespace crypto {
 
     abstract class KeyAgreementSpi {
-
       public constructor()
       protected abstract engineInit(arg0: java.security.Key, arg1: java.security.SecureRandom): void
       protected abstract engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec, arg2: java.security.SecureRandom): void

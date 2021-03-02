@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       class MetaMessage extends javax.sound.midi.MidiMessage {
-
         public static readonly META: int
         public constructor()
         public constructor(arg0: int, arg1: byte[], arg2: int)

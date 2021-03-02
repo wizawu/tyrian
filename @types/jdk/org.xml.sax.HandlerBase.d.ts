@@ -3,7 +3,6 @@ declare namespace org {
     namespace sax {
 
       class HandlerBase implements org.xml.sax.EntityResolver, org.xml.sax.DTDHandler, org.xml.sax.DocumentHandler, org.xml.sax.ErrorHandler {
-
         public constructor()
         public resolveEntity(arg0: java.lang.String, arg1: java.lang.String): org.xml.sax.InputSource
         public notationDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void

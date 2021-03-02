@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class AbstractAction implements javax.swing.Action, java.lang.Cloneable, java.io.Serializable {
-
       protected enabled: boolean
       protected changeSupport: javax.swing.event.SwingPropertyChangeSupport
       static shouldReconfigure(arg0: java.beans.PropertyChangeEvent): boolean

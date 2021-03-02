@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     class AccessibleTextSequence {
-
       public startIndex: int
       public endIndex: int
       public text: java.lang.String

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       class ActionMapUIResource extends javax.swing.ActionMap implements javax.swing.plaf.UIResource {
-
         public constructor()
       }
 

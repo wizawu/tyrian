@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class NumericShaper implements java.io.Serializable {
-
         public static readonly EUROPEAN: int
         public static readonly ARABIC: int
         public static readonly EASTERN_ARABIC: int

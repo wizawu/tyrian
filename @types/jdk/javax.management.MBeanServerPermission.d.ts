@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class MBeanServerPermission extends java.security.BasicPermission {
-
       mask: int
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: java.lang.String)

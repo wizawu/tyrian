@@ -3,7 +3,6 @@ declare namespace java {
     namespace spi {
 
       abstract class NumberFormatProvider extends java.util.spi.LocaleServiceProvider {
-
         protected constructor()
         public abstract getCurrencyInstance(arg0: java.util.Locale): java.text.NumberFormat
         public abstract getIntegerInstance(arg0: java.util.Locale): java.text.NumberFormat

@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLFormElement extends org.w3c.dom.html.HTMLElement {
-
           getElements(): org.w3c.dom.html.HTMLCollection
           getLength(): int
           getName(): java.lang.String

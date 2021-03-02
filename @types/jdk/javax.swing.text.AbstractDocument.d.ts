@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class AbstractDocument implements javax.swing.text.Document, java.io.Serializable {
-
         protected listenerList: javax.swing.event.EventListenerList
         protected static readonly BAD_LOCATION: java.lang.String
         public static readonly ParagraphElementName: java.lang.String
@@ -35,8 +34,8 @@ declare namespace javax {
         public addUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
         public removeUndoableEditListener(arg0: javax.swing.event.UndoableEditListener): void
         public getUndoableEditListeners(): javax.swing.event.UndoableEditListener[]
-        public readonly getProperty(arg0: java.lang.Object): java.lang.Object
-        public readonly putProperty(arg0: java.lang.Object, arg1: java.lang.Object): void
+        public getProperty(arg0: java.lang.Object): java.lang.Object
+        public putProperty(arg0: java.lang.Object, arg1: java.lang.Object): void
         public remove(arg0: int, arg1: int): void
         handleRemove(arg0: int, arg1: int): void
         public replace(arg0: int, arg1: int, arg2: java.lang.String, arg3: javax.swing.text.AttributeSet): void
@@ -44,27 +43,27 @@ declare namespace javax {
         public getText(arg0: int, arg1: int): java.lang.String
         public getText(arg0: int, arg1: int, arg2: javax.swing.text.Segment): void
         public createPosition(arg0: int): javax.swing.text.Position
-        public readonly getStartPosition(): javax.swing.text.Position
-        public readonly getEndPosition(): javax.swing.text.Position
+        public getStartPosition(): javax.swing.text.Position
+        public getEndPosition(): javax.swing.text.Position
         public getRootElements(): javax.swing.text.Element[]
         public abstract getDefaultRootElement(): javax.swing.text.Element
         public getBidiRootElement(): javax.swing.text.Element
         static isLeftToRight(arg0: javax.swing.text.Document, arg1: int, arg2: int): boolean
         public abstract getParagraphElement(arg0: int): javax.swing.text.Element
-        protected readonly getAttributeContext(): javax.swing.text.AbstractDocument$AttributeContext
+        protected getAttributeContext(): javax.swing.text.AbstractDocument$AttributeContext
         protected insertUpdate(arg0: javax.swing.text.AbstractDocument$DefaultDocumentEvent, arg1: javax.swing.text.AttributeSet): void
         protected removeUpdate(arg0: javax.swing.text.AbstractDocument$DefaultDocumentEvent): void
         protected postRemoveUpdate(arg0: javax.swing.text.AbstractDocument$DefaultDocumentEvent): void
         updateBidi(arg0: javax.swing.text.AbstractDocument$DefaultDocumentEvent): void
         public dump(arg0: java.io.PrintStream): void
-        protected readonly getContent(): javax.swing.text.AbstractDocument$Content
+        protected getContent(): javax.swing.text.AbstractDocument$Content
         protected createLeafElement(arg0: javax.swing.text.Element, arg1: javax.swing.text.AttributeSet, arg2: int, arg3: int): javax.swing.text.Element
         protected createBranchElement(arg0: javax.swing.text.Element, arg1: javax.swing.text.AttributeSet): javax.swing.text.Element
-        protected readonly getCurrentWriter(): java.lang.Thread
-        protected readonly writeLock(): void
-        protected readonly writeUnlock(): void
-        public readonly readLock(): void
-        public readonly readUnlock(): void
+        protected getCurrentWriter(): java.lang.Thread
+        protected writeLock(): void
+        protected writeUnlock(): void
+        public readLock(): void
+        public readUnlock(): void
       }
 
     }

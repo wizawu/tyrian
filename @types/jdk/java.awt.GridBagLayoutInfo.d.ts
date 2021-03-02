@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class GridBagLayoutInfo implements java.io.Serializable {
-
       width: int
       height: int
       startx: int

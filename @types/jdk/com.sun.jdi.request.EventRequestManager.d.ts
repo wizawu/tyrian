@@ -4,7 +4,6 @@ declare namespace com {
       namespace request {
 
         interface EventRequestManager extends com.sun.jdi.Mirror {
-
           createClassPrepareRequest(): com.sun.jdi.request.ClassPrepareRequest
           createClassUnloadRequest(): com.sun.jdi.request.ClassUnloadRequest
           createThreadStartRequest(): com.sun.jdi.request.ThreadStartRequest

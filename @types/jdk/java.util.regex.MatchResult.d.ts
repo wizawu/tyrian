@@ -3,7 +3,6 @@ declare namespace java {
     namespace regex {
 
       interface MatchResult {
-
         start(): int
         start(arg0: int): int
         end(): int

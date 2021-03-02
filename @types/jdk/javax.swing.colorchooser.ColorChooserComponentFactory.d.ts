@@ -3,7 +3,6 @@ declare namespace javax {
     namespace colorchooser {
 
       class ColorChooserComponentFactory {
-
         public static getDefaultChooserPanels(): javax.swing.colorchooser.AbstractColorChooserPanel[]
         public static getPreviewPanel(): javax.swing.JComponent
       }

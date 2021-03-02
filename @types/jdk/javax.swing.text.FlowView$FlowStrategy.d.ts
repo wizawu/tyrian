@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class FlowView$FlowStrategy {
-
         damageStart: javax.swing.text.Position
         viewBuffer: java.util.Vector<javax.swing.text.View>
         static readonly $assertionsDisabled: boolean

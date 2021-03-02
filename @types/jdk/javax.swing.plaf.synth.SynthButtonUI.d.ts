@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthButtonUI extends javax.swing.plaf.basic.BasicButtonUI implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installDefaults(arg0: javax.swing.AbstractButton): void

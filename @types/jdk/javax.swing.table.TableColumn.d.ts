@@ -3,7 +3,6 @@ declare namespace javax {
     namespace table {
 
       class TableColumn implements java.io.Serializable {
-
         public static readonly COLUMN_WIDTH_PROPERTY: java.lang.String
         public static readonly HEADER_VALUE_PROPERTY: java.lang.String
         public static readonly HEADER_RENDERER_PROPERTY: java.lang.String

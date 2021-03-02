@@ -4,7 +4,6 @@ declare namespace javax {
       namespace type {
 
         interface ArrayType extends javax.lang.model.type.ReferenceType {
-
           getComponentType(): javax.lang.model.type.TypeMirror
         }
 

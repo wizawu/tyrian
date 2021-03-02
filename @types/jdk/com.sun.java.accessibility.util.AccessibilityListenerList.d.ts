@@ -5,7 +5,6 @@ declare namespace com {
         namespace util {
 
           class AccessibilityListenerList {
-
             protected listenerList: java.lang.Object[]
             public constructor()
             public getListenerList(): java.lang.Object[]

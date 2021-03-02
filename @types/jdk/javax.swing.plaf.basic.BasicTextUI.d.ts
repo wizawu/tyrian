@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         abstract class BasicTextUI extends javax.swing.plaf.TextUI implements javax.swing.text.ViewFactory {
-
           editor: javax.swing.text.JTextComponent
           painted: boolean
           rootView: javax.swing.plaf.basic.BasicTextUI$RootView
@@ -29,14 +28,14 @@ declare namespace javax {
           createActionMap(): javax.swing.ActionMap
           protected uninstallKeyboardActions(): void
           protected paintBackground(arg0: java.awt.Graphics): void
-          protected readonly getComponent(): javax.swing.text.JTextComponent
+          protected getComponent(): javax.swing.text.JTextComponent
           protected modelChanged(): void
-          protected readonly setView(arg0: javax.swing.text.View): void
+          protected setView(arg0: javax.swing.text.View): void
           protected paintSafely(arg0: java.awt.Graphics): void
           public installUI(arg0: javax.swing.JComponent): void
           public uninstallUI(arg0: javax.swing.JComponent): void
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
-          public readonly paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
+          public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension

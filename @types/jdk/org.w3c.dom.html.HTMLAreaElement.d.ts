@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLAreaElement extends org.w3c.dom.html.HTMLElement {
-
           getAccessKey(): java.lang.String
           setAccessKey(arg0: java.lang.String): void
           getAlt(): java.lang.String

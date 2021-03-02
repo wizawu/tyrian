@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
 
     class ImageIO {
-
       public static scanForPlugins(): void
       public static setUseCache(arg0: boolean): void
       public static getUseCache(): boolean

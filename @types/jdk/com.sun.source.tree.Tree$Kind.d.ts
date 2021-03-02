@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         class Tree$Kind extends java.lang.Enum<com.sun.source.tree.Tree$Kind> {
-
           public static readonly ANNOTATED_TYPE: com.sun.source.tree.Tree$Kind
           public static readonly ANNOTATION: com.sun.source.tree.Tree$Kind
           public static readonly TYPE_ANNOTATION: com.sun.source.tree.Tree$Kind

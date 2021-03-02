@@ -3,7 +3,6 @@ declare namespace java {
     namespace jar {
 
       class Attributes$Name {
-
         public static readonly MANIFEST_VERSION: java.util.jar.Attributes$Name
         public static readonly SIGNATURE_VERSION: java.util.jar.Attributes$Name
         public static readonly CONTENT_TYPE: java.util.jar.Attributes$Name
@@ -22,7 +21,7 @@ declare namespace java {
         public static readonly SPECIFICATION_VERSION: java.util.jar.Attributes$Name
         public static readonly SPECIFICATION_VENDOR: java.util.jar.Attributes$Name
         public static readonly MULTI_RELEASE: java.util.jar.Attributes$Name
-        static readonly of(arg0: java.lang.String): java.util.jar.Attributes$Name
+        static of(arg0: java.lang.String): java.util.jar.Attributes$Name
         public constructor(arg0: java.lang.String)
         public equals(arg0: java.lang.Object): boolean
         public hashCode(): int

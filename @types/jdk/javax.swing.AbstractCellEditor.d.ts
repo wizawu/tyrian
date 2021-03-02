@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class AbstractCellEditor implements javax.swing.CellEditor, java.io.Serializable {
-
       protected listenerList: javax.swing.event.EventListenerList
       protected changeEvent: javax.swing.event.ChangeEvent
       public constructor()

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace jpeg {
 
         class JPEGHuffmanTable {
-
           public static readonly StdDCLuminance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
           public static readonly StdDCChrominance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
           public static readonly StdACLuminance: javax.imageio.plugins.jpeg.JPEGHuffmanTable

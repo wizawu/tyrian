@@ -4,7 +4,6 @@ declare namespace java {
       namespace atomic {
 
         class AtomicStampedReference<V> {
-
           public constructor(arg0: V, arg1: int)
           public getReference(): V
           public getStamp(): int

@@ -3,7 +3,6 @@ declare namespace java {
     namespace server {
 
       class UID implements java.io.Serializable {
-
         public constructor()
         public constructor(arg0: short)
         public hashCode(): int

@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       class LDAPCertStoreParameters implements java.security.cert.CertStoreParameters {
-
         public constructor(arg0: java.lang.String, arg1: int)
         public constructor(arg0: java.lang.String)
         public constructor()

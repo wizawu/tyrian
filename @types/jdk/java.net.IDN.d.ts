@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class IDN {
-
       public static readonly ALLOW_UNASSIGNED: int
       public static readonly USE_STD3_ASCII_RULES: int
       static readonly $assertionsDisabled: boolean

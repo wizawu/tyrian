@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicSliderUI extends javax.swing.plaf.SliderUI {
-
           public static readonly POSITIVE_SCROLL: int
           public static readonly NEGATIVE_SCROLL: int
           public static readonly MIN_SCROLL: int

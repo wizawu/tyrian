@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface ArrayType extends com.sun.jdi.ReferenceType {
-
         newInstance(arg0: int): com.sun.jdi.ArrayReference
         componentSignature(): java.lang.String
         componentTypeName(): java.lang.String

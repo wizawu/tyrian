@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JSplitPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
-
       public static readonly VERTICAL_SPLIT: int
       public static readonly HORIZONTAL_SPLIT: int
       public static readonly LEFT: java.lang.String

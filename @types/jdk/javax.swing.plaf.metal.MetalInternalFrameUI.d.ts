@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalInternalFrameUI extends javax.swing.plaf.basic.BasicInternalFrameUI {
-
           protected static IS_PALETTE: java.lang.String
           public constructor(arg0: javax.swing.JInternalFrame)
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI

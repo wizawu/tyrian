@@ -4,7 +4,6 @@ declare namespace java {
       namespace attribute {
 
         interface BasicFileAttributes {
-
           lastModifiedTime(): java.nio.file.attribute.FileTime
           lastAccessTime(): java.nio.file.attribute.FileTime
           creationTime(): java.nio.file.attribute.FileTime

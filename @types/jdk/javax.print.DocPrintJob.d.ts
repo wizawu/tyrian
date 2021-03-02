@@ -2,7 +2,6 @@ declare namespace javax {
   namespace print {
 
     interface DocPrintJob {
-
       getPrintService(): javax.print.PrintService
       getAttributes(): javax.print.attribute.PrintJobAttributeSet
       addPrintJobListener(arg0: javax.print.event.PrintJobListener): void

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class BlockView extends javax.swing.text.BoxView {
-
           public constructor(arg0: javax.swing.text.Element, arg1: int)
           public setParent(arg0: javax.swing.text.View): void
           protected calculateMajorAxisRequirements(arg0: int, arg1: javax.swing.SizeRequirements): javax.swing.SizeRequirements

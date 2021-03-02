@@ -4,7 +4,6 @@ declare namespace javax {
       namespace callback {
 
         class TextInputCallback implements javax.security.auth.callback.Callback, java.io.Serializable {
-
           public constructor(arg0: java.lang.String)
           public constructor(arg0: java.lang.String, arg1: java.lang.String)
           public getPrompt(): java.lang.String

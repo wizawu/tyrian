@@ -2,7 +2,6 @@ declare namespace javax {
   namespace tools {
 
     class JavaFileObject$Kind extends java.lang.Enum<javax.tools.JavaFileObject$Kind> {
-
       public static readonly SOURCE: javax.tools.JavaFileObject$Kind
       public static readonly CLASS: javax.tools.JavaFileObject$Kind
       public static readonly HTML: javax.tools.JavaFileObject$Kind

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace naming {
 
     class NamingException extends java.lang.Exception {
-
       protected resolvedName: javax.naming.Name
       protected resolvedObj: java.lang.Object
       protected remainingName: javax.naming.Name

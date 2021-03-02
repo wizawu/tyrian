@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class SizeRequirements implements java.io.Serializable {
-
       public minimum: int
       public preferred: int
       public maximum: int

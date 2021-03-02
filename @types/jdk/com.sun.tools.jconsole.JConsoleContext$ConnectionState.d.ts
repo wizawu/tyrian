@@ -4,7 +4,6 @@ declare namespace com {
       namespace jconsole {
 
         class JConsoleContext$ConnectionState extends java.lang.Enum<com.sun.tools.jconsole.JConsoleContext$ConnectionState> {
-
           public static readonly CONNECTED: com.sun.tools.jconsole.JConsoleContext$ConnectionState
           public static readonly DISCONNECTED: com.sun.tools.jconsole.JConsoleContext$ConnectionState
           public static readonly CONNECTING: com.sun.tools.jconsole.JConsoleContext$ConnectionState

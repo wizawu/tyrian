@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class BoxView extends javax.swing.text.CompositeView {
-
         majorAxis: int
         majorSpan: int
         minorSpan: int

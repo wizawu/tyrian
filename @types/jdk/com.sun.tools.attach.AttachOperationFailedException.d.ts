@@ -4,7 +4,6 @@ declare namespace com {
       namespace attach {
 
         class AttachOperationFailedException extends java.io.IOException {
-
           public constructor(arg0: java.lang.String)
         }
 

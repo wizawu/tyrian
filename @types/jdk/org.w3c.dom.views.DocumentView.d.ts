@@ -3,8 +3,11 @@ declare namespace org {
     namespace dom {
       namespace views {
 
-        interface DocumentView {
+        interface DocumentView$$lambda {
+          (): org.w3c.dom.views.AbstractView
+        }
 
+        interface DocumentView {
           getDefaultView(): org.w3c.dom.views.AbstractView
         }
 

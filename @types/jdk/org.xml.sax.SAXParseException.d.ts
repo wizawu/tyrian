@@ -3,7 +3,6 @@ declare namespace org {
     namespace sax {
 
       class SAXParseException extends org.xml.sax.SAXException {
-
         static readonly serialVersionUID: long
         public constructor(arg0: java.lang.String, arg1: org.xml.sax.Locator)
         public constructor(arg0: java.lang.String, arg1: org.xml.sax.Locator, arg2: java.lang.Exception)

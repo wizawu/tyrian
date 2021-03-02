@@ -3,7 +3,6 @@ declare namespace java {
     namespace http {
 
       interface WebSocket$Builder {
-
         header(arg0: java.lang.String, arg1: java.lang.String): java.net.http.WebSocket$Builder
         connectTimeout(arg0: java.time.Duration): java.net.http.WebSocket$Builder
         subprotocols(arg0: java.lang.String, ...arg1: java.lang.String[]): java.net.http.WebSocket$Builder

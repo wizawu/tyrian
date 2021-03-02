@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class CardLayout implements java.awt.LayoutManager2, java.io.Serializable {
-
       vector: java.util.Vector<java.awt.CardLayout$Card>
       currentCard: int
       hgap: int

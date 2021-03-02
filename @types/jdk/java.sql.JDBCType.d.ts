@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class JDBCType extends java.lang.Enum<java.sql.JDBCType> implements java.sql.SQLType {
-
       public static readonly BIT: java.sql.JDBCType
       public static readonly TINYINT: java.sql.JDBCType
       public static readonly SMALLINT: java.sql.JDBCType

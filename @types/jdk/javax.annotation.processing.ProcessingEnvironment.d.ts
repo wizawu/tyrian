@@ -3,7 +3,6 @@ declare namespace javax {
     namespace processing {
 
       interface ProcessingEnvironment {
-
         getOptions(): java.util.Map<java.lang.String,java.lang.String>
         getMessager(): javax.annotation.processing.Messager
         getFiler(): javax.annotation.processing.Filer

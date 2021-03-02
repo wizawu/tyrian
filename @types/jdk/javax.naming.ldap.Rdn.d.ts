@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ldap {
 
       class Rdn implements java.io.Serializable, java.lang.Comparable<java.lang.Object> {
-
         public constructor(arg0: javax.naming.directory.Attributes)
         public constructor(arg0: java.lang.String)
         public constructor(arg0: javax.naming.ldap.Rdn)

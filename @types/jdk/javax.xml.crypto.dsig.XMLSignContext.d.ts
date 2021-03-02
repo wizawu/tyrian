@@ -4,7 +4,6 @@ declare namespace javax {
       namespace dsig {
 
         interface XMLSignContext extends javax.xml.crypto.XMLCryptoContext {
-
         }
 
       }

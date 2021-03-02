@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class InternalFrameEvent extends java.awt.AWTEvent {
-
         public static readonly INTERNAL_FRAME_FIRST: int
         public static readonly INTERNAL_FRAME_LAST: int
         public static readonly INTERNAL_FRAME_OPENED: int

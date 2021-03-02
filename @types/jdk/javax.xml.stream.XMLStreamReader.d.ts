@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       interface XMLStreamReader extends javax.xml.stream.XMLStreamConstants {
-
         getProperty(arg0: java.lang.String): java.lang.Object
         next(): int
         require(arg0: int, arg1: java.lang.String, arg2: java.lang.String): void

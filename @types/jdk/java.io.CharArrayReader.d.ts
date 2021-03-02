@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class CharArrayReader extends java.io.Reader {
-
       protected buf: char[]
       protected pos: int
       protected markedPos: int

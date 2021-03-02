@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class BufferedInputStream extends java.io.FilterInputStream {
-
       protected buf: byte[]
       protected count: int
       protected pos: int

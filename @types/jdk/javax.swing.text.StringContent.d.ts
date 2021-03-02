@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class StringContent implements javax.swing.text.AbstractDocument$Content, java.io.Serializable {
-
         marks: java.util.Vector<javax.swing.text.StringContent$PosRec>
         public constructor()
         public constructor(arg0: int)

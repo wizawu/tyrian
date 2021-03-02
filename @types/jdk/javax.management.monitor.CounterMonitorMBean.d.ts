@@ -3,7 +3,6 @@ declare namespace javax {
     namespace monitor {
 
       interface CounterMonitorMBean extends javax.management.monitor.MonitorMBean {
-
         getDerivedGauge(): java.lang.Number
         getDerivedGaugeTimeStamp(): long
         getThreshold(): java.lang.Number

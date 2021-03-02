@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       class RoleStatus {
-
         public static readonly NO_ROLE_WITH_NAME: int
         public static readonly ROLE_NOT_READABLE: int
         public static readonly ROLE_NOT_WRITABLE: int

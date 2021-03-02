@@ -3,7 +3,6 @@ declare namespace org {
     namespace sax {
 
       interface Parser {
-
         setLocale(arg0: java.util.Locale): void
         setEntityResolver(arg0: org.xml.sax.EntityResolver): void
         setDTDHandler(arg0: org.xml.sax.DTDHandler): void

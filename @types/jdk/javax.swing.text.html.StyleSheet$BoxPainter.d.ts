@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class StyleSheet$BoxPainter implements java.io.Serializable {
-
           topMargin: float
           bottomMargin: float
           leftMargin: float

@@ -2,7 +2,6 @@ declare namespace java {
   namespace nio {
 
     abstract class ByteBuffer extends java.nio.Buffer implements java.lang.Comparable<java.nio.ByteBuffer> {
-
       readonly hb: byte[]
       readonly offset: int
       isReadOnly: boolean
@@ -26,10 +25,10 @@ declare namespace java {
       public get(arg0: byte[]): java.nio.ByteBuffer
       public put(arg0: java.nio.ByteBuffer): java.nio.ByteBuffer
       public put(arg0: byte[], arg1: int, arg2: int): java.nio.ByteBuffer
-      public readonly put(arg0: byte[]): java.nio.ByteBuffer
-      public readonly hasArray(): boolean
-      public readonly array(): byte[]
-      public readonly arrayOffset(): int
+      public put(arg0: byte[]): java.nio.ByteBuffer
+      public hasArray(): boolean
+      public array(): byte[]
+      public arrayOffset(): int
       public position(arg0: int): java.nio.ByteBuffer
       public limit(arg0: int): java.nio.ByteBuffer
       public mark(): java.nio.ByteBuffer
@@ -44,10 +43,10 @@ declare namespace java {
       public equals(arg0: java.lang.Object): boolean
       public compareTo(arg0: java.nio.ByteBuffer): int
       public mismatch(arg0: java.nio.ByteBuffer): int
-      public readonly order(): java.nio.ByteOrder
-      public readonly order(arg0: java.nio.ByteOrder): java.nio.ByteBuffer
-      public readonly alignmentOffset(arg0: int, arg1: int): int
-      public readonly alignedSlice(arg0: int): java.nio.ByteBuffer
+      public order(): java.nio.ByteOrder
+      public order(arg0: java.nio.ByteOrder): java.nio.ByteBuffer
+      public alignmentOffset(arg0: int, arg1: int): int
+      public alignedSlice(arg0: int): java.nio.ByteBuffer
       abstract slice(arg0: int, arg1: int): java.nio.ByteBuffer
       public abstract getChar(): char
       public abstract putChar(arg0: char): java.nio.ByteBuffer

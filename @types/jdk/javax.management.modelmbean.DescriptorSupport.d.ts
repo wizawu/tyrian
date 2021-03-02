@@ -3,7 +3,6 @@ declare namespace javax {
     namespace modelmbean {
 
       class DescriptorSupport implements javax.management.Descriptor {
-
         public constructor()
         public constructor(arg0: int)
         public constructor(arg0: javax.management.modelmbean.DescriptorSupport)

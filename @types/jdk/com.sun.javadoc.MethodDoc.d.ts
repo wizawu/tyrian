@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface MethodDoc extends com.sun.javadoc.ExecutableMemberDoc {
-
         isAbstract(): boolean
         isDefault(): boolean
         returnType(): com.sun.javadoc.Type

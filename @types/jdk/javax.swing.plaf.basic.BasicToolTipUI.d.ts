@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicToolTipUI extends javax.swing.plaf.ToolTipUI {
-
           static sharedInstance: javax.swing.plaf.basic.BasicToolTipUI
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public constructor()

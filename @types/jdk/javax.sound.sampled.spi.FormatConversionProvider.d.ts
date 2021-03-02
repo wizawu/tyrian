@@ -4,7 +4,6 @@ declare namespace javax {
       namespace spi {
 
         abstract class FormatConversionProvider {
-
           public constructor()
           public abstract getSourceEncodings(): javax.sound.sampled.AudioFormat$Encoding[]
           public abstract getTargetEncodings(): javax.sound.sampled.AudioFormat$Encoding[]

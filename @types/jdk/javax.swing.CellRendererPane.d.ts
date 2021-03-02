@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class CellRendererPane extends java.awt.Container implements javax.accessibility.Accessible {
-
       protected accessibleContext: javax.accessibility.AccessibleContext
       public constructor()
       public invalidate(): void

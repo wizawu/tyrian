@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface TreeVisitor<R,P> {
-
           visitAssignment(arg0: jdk.nashorn.api.tree.AssignmentTree, arg1: P): R
           visitCompoundAssignment(arg0: jdk.nashorn.api.tree.CompoundAssignmentTree, arg1: P): R
           visitBinary(arg0: jdk.nashorn.api.tree.BinaryTree, arg1: P): R

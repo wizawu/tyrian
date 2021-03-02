@@ -4,7 +4,6 @@ declare namespace com {
       namespace jgss {
 
         class GSSUtil {
-
           public constructor()
           public static createSubject(arg0: org.ietf.jgss.GSSName, arg1: org.ietf.jgss.GSSCredential): javax.security.auth.Subject
         }

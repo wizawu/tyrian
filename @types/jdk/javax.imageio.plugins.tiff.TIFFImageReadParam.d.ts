@@ -4,7 +4,6 @@ declare namespace javax {
       namespace tiff {
 
         class TIFFImageReadParam extends javax.imageio.ImageReadParam {
-
           public constructor()
           public addAllowedTagSet(arg0: javax.imageio.plugins.tiff.TIFFTagSet): void
           public removeAllowedTagSet(arg0: javax.imageio.plugins.tiff.TIFFTagSet): void

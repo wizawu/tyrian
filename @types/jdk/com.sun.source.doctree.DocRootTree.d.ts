@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         interface DocRootTree extends com.sun.source.doctree.InlineTagTree {
-
         }
 
       }

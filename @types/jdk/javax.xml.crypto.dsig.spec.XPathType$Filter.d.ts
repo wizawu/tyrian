@@ -5,7 +5,6 @@ declare namespace javax {
         namespace spec {
 
           class XPathType$Filter {
-
             public static readonly INTERSECT: javax.xml.crypto.dsig.spec.XPathType$Filter
             public static readonly SUBTRACT: javax.xml.crypto.dsig.spec.XPathType$Filter
             public static readonly UNION: javax.xml.crypto.dsig.spec.XPathType$Filter

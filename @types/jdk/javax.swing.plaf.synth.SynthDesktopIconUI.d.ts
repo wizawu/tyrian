@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthDesktopIconUI extends javax.swing.plaf.basic.BasicDesktopIconUI implements javax.swing.plaf.synth.SynthUI, java.beans.PropertyChangeListener {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installComponents(): void

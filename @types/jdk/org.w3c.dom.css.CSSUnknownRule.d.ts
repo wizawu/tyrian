@@ -4,7 +4,6 @@ declare namespace org {
       namespace css {
 
         interface CSSUnknownRule extends org.w3c.dom.css.CSSRule {
-
         }
 
       }

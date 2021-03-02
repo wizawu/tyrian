@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       class HandshakeCompletedEvent extends java.util.EventObject {
-
         public constructor(arg0: javax.net.ssl.SSLSocket, arg1: javax.net.ssl.SSLSession)
         public getSession(): javax.net.ssl.SSLSession
         public getCipherSuite(): java.lang.String

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace monitor {
 
       interface MonitorMBean {
-
         start(): void
         stop(): void
         addObservedObject(arg0: javax.management.ObjectName): void

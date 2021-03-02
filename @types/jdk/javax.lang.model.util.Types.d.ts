@@ -4,7 +4,6 @@ declare namespace javax {
       namespace util {
 
         interface Types {
-
           asElement(arg0: javax.lang.model.type.TypeMirror): javax.lang.model.element.Element
           isSameType(arg0: javax.lang.model.type.TypeMirror, arg1: javax.lang.model.type.TypeMirror): boolean
           isSubtype(arg0: javax.lang.model.type.TypeMirror, arg1: javax.lang.model.type.TypeMirror): boolean

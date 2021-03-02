@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       interface Future<V> {
-
         cancel(arg0: boolean): boolean
         isCancelled(): boolean
         isDone(): boolean

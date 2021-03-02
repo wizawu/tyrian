@@ -4,7 +4,6 @@ declare namespace javax {
       namespace events {
 
         interface Comment extends javax.xml.stream.events.XMLEvent {
-
           getText(): java.lang.String
         }
 

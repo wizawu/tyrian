@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     abstract class CookieHandler {
-
       public constructor()
       public static getDefault(): java.net.CookieHandler
       public static setDefault(arg0: java.net.CookieHandler): void

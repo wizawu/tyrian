@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface ParamTag extends com.sun.javadoc.Tag {
-
         parameterName(): java.lang.String
         parameterComment(): java.lang.String
         isTypeParameter(): boolean

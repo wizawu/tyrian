@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class StrictMath {
-
       public static readonly E: double
       public static readonly PI: double
       static readonly $assertionsDisabled: boolean

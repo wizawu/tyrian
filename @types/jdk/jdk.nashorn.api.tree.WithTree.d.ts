@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface WithTree extends jdk.nashorn.api.tree.StatementTree {
-
           getScope(): jdk.nashorn.api.tree.ExpressionTree
           getStatement(): jdk.nashorn.api.tree.StatementTree
         }

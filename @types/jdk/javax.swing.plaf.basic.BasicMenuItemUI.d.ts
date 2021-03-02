@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicMenuItemUI extends javax.swing.plaf.MenuItemUI {
-
           protected menuItem: javax.swing.JMenuItem
           protected selectionBackground: java.awt.Color
           protected selectionForeground: java.awt.Color

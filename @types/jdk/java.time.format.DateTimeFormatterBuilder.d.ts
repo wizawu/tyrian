@@ -3,7 +3,6 @@ declare namespace java {
     namespace format {
 
       class DateTimeFormatterBuilder {
-
         static readonly LENGTH_SORT: java.util.Comparator<java.lang.String>
         public static getLocalizedDateTimePattern(arg0: java.time.format.FormatStyle, arg1: java.time.format.FormatStyle, arg2: java.time.chrono.Chronology, arg3: java.util.Locale): java.lang.String
         public constructor()

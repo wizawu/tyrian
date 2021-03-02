@@ -3,7 +3,6 @@ declare namespace java {
     namespace invoke {
 
       class SwitchPoint {
-
         public constructor()
         public hasBeenInvalidated(): boolean
         public guardWithTest(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle

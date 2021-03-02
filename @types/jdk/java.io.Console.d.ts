@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class Console implements java.io.Flushable {
-
       static readonly $assertionsDisabled: boolean
       public writer(): java.io.PrintWriter
       public reader(): java.io.Reader

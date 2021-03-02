@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class Segment implements java.lang.Cloneable, java.text.CharacterIterator, java.lang.CharSequence {
-
         public array: char[]
         public offset: int
         public count: int

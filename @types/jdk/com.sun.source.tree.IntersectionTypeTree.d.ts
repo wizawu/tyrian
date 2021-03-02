@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface IntersectionTypeTree extends com.sun.source.tree.Tree {
-
           getBounds(): java.util.List<com.sun.source.tree.Tree>
         }
 

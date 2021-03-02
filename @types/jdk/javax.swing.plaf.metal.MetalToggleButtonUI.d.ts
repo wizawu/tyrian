@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalToggleButtonUI extends javax.swing.plaf.basic.BasicToggleButtonUI {
-
           protected focusColor: java.awt.Color
           protected selectColor: java.awt.Color
           protected disabledTextColor: java.awt.Color

@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       class DOMException extends java.lang.RuntimeException {
-
         public code: short
         public static readonly INDEX_SIZE_ERR: short
         public static readonly DOMSTRING_SIZE_ERR: short

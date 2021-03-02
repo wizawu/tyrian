@@ -4,7 +4,6 @@ declare namespace javax {
       namespace element {
 
         interface Element extends javax.lang.model.AnnotatedConstruct {
-
           asType(): javax.lang.model.type.TypeMirror
           getKind(): javax.lang.model.element.ElementKind
           getModifiers(): java.util.Set<javax.lang.model.element.Modifier>

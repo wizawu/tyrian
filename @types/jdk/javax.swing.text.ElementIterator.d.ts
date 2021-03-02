@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class ElementIterator implements java.lang.Cloneable {
-
         public constructor(arg0: javax.swing.text.Document)
         public constructor(arg0: javax.swing.text.Element)
         public clone(): java.lang.Object

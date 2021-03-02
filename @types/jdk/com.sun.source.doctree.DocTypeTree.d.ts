@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         interface DocTypeTree extends com.sun.source.doctree.DocTree {
-
           getText(): java.lang.String
         }
 

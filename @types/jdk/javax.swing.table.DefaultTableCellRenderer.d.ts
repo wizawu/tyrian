@@ -3,7 +3,6 @@ declare namespace javax {
     namespace table {
 
       class DefaultTableCellRenderer extends javax.swing.JLabel implements javax.swing.table.TableCellRenderer, java.io.Serializable {
-
         protected static noFocusBorder: javax.swing.border.Border
         public constructor()
         public setForeground(arg0: java.awt.Color): void

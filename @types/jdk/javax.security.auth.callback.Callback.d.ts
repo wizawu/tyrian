@@ -4,7 +4,6 @@ declare namespace javax {
       namespace callback {
 
         interface Callback {
-
         }
 
       }

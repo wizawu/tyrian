@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface WildcardTree extends com.sun.source.tree.Tree {
-
           getBound(): com.sun.source.tree.Tree
         }
 

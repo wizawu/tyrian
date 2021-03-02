@@ -3,7 +3,6 @@ declare namespace java {
     namespace temporal {
 
       class ValueRange implements java.io.Serializable {
-
         public static of(arg0: long, arg1: long): java.time.temporal.ValueRange
         public static of(arg0: long, arg1: long, arg2: long): java.time.temporal.ValueRange
         public static of(arg0: long, arg1: long, arg2: long, arg3: long): java.time.temporal.ValueRange

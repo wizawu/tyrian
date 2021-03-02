@@ -4,7 +4,6 @@ declare namespace javax {
       namespace util {
 
         class ElementFilter {
-
           public static fieldsIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.VariableElement>
           public static fieldsIn(arg0: java.util.Set<javax.lang.model.element.Element>): java.util.Set<javax.lang.model.element.VariableElement>
           public static constructorsIn(arg0: java.lang.Iterable<javax.lang.model.element.Element>): java.util.List<javax.lang.model.element.ExecutableElement>

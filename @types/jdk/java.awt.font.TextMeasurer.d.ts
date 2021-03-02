@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class TextMeasurer implements java.lang.Cloneable {
-
         layoutCount: int
         layoutCharCount: int
         public constructor(arg0: java.text.AttributedCharacterIterator, arg1: java.awt.font.FontRenderContext)

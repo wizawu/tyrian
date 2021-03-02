@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class TableView extends javax.swing.text.BoxView {
-
         columnSpans: int[]
         columnOffsets: int[]
         totalColumnRequirements: javax.swing.SizeRequirements

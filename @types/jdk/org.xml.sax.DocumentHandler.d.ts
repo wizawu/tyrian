@@ -3,7 +3,6 @@ declare namespace org {
     namespace sax {
 
       interface DocumentHandler {
-
         setDocumentLocator(arg0: org.xml.sax.Locator): void
         startDocument(): void
         endDocument(): void

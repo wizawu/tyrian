@@ -3,7 +3,6 @@ declare namespace javax {
     namespace datatype {
 
       abstract class XMLGregorianCalendar implements java.lang.Cloneable {
-
         public constructor()
         public abstract clear(): void
         public abstract reset(): void

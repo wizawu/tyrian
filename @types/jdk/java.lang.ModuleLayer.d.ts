@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class ModuleLayer {
-
       public defineModulesWithOneLoader(arg0: java.lang.module.Configuration, arg1: java.lang.ClassLoader): java.lang.ModuleLayer
       public defineModulesWithManyLoaders(arg0: java.lang.module.Configuration, arg1: java.lang.ClassLoader): java.lang.ModuleLayer
       public defineModules(arg0: java.lang.module.Configuration, arg1: java.util.function$.Function<java.lang.String,java.lang.ClassLoader>): java.lang.ModuleLayer

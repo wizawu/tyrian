@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface FunctionCallTree extends jdk.nashorn.api.tree.ExpressionTree {
-
           getFunctionSelect(): jdk.nashorn.api.tree.ExpressionTree
           getArguments(): java.util.List<jdk.nashorn.api.tree.ExpressionTree>
         }

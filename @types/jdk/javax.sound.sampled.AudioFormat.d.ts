@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       class AudioFormat {
-
         protected encoding: javax.sound.sampled.AudioFormat$Encoding
         protected sampleRate: float
         protected sampleSizeInBits: int

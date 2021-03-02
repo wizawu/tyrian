@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Locale$Builder {
-
       public constructor()
       public setLocale(arg0: java.util.Locale): java.util.Locale$Builder
       public setLanguageTag(arg0: java.lang.String): java.util.Locale$Builder

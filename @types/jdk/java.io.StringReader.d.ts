@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class StringReader extends java.io.Reader {
-
       public constructor(arg0: java.lang.String)
       public read(): int
       public read(arg0: char[], arg1: int, arg2: int): int

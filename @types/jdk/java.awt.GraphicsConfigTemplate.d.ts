@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     abstract class GraphicsConfigTemplate implements java.io.Serializable {
-
       public static readonly REQUIRED: int
       public static readonly PREFERRED: int
       public static readonly UNNECESSARY: int

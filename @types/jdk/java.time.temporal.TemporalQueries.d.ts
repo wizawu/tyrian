@@ -3,7 +3,6 @@ declare namespace java {
     namespace temporal {
 
       class TemporalQueries {
-
         static readonly ZONE_ID: java.time.temporal.TemporalQuery<java.time.ZoneId>
         static readonly CHRONO: java.time.temporal.TemporalQuery<java.time.chrono.Chronology>
         static readonly PRECISION: java.time.temporal.TemporalQuery<java.time.temporal.TemporalUnit>

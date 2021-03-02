@@ -4,7 +4,6 @@ declare namespace javax {
       namespace login {
 
         class CredentialException extends javax.security.auth.login.LoginException {
-
           public constructor()
           public constructor(arg0: java.lang.String)
         }

@@ -4,7 +4,6 @@ declare namespace com {
       namespace util {
 
         abstract class JavacTask implements javax.tools.JavaCompiler$CompilationTask {
-
           public constructor()
           public static instance(arg0: javax.annotation.processing.ProcessingEnvironment): com.sun.source.util.JavacTask
           public abstract parse(): java.lang.Iterable<com.sun.source.tree.CompilationUnitTree>

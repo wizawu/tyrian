@@ -4,7 +4,6 @@ declare namespace javax {
       namespace spi {
 
         class SyncFactory {
-
           public static readonly ROWSET_SYNC_PROVIDER: java.lang.String
           public static readonly ROWSET_SYNC_VENDOR: java.lang.String
           public static readonly ROWSET_SYNC_PROVIDER_VERSION: java.lang.String

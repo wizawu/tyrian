@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       interface Port extends javax.sound.sampled.Line {
-
       }
 
     }

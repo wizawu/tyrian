@@ -3,7 +3,6 @@ declare namespace java {
     namespace format {
 
       class ResolverStyle extends java.lang.Enum<java.time.format.ResolverStyle> {
-
         public static readonly STRICT: java.time.format.ResolverStyle
         public static readonly SMART: java.time.format.ResolverStyle
         public static readonly LENIENT: java.time.format.ResolverStyle

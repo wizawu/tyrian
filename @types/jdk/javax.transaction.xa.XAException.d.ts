@@ -3,7 +3,6 @@ declare namespace javax {
     namespace xa {
 
       class XAException extends java.lang.Exception {
-
         public errorCode: int
         public static readonly XA_RBBASE: int
         public static readonly XA_RBROLLBACK: int

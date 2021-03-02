@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jshell {
 
     class JShell implements java.lang.AutoCloseable {
-
       readonly maps: jdk.jshell.SnippetMaps
       readonly keyMap: jdk.jshell.KeyMap
       readonly outerMap: jdk.jshell.OuterWrapMap

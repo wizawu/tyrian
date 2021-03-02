@@ -4,7 +4,6 @@ declare namespace javax {
       namespace type {
 
         interface ExecutableType extends javax.lang.model.type.TypeMirror {
-
           getTypeVariables(): java.util.List<javax.lang.model.type.TypeVariable>
           getReturnType(): javax.lang.model.type.TypeMirror
           getParameterTypes(): java.util.List<javax.lang.model.type.TypeMirror>

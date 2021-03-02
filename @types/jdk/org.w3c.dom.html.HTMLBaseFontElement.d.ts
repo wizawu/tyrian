@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLBaseFontElement extends org.w3c.dom.html.HTMLElement {
-
           getColor(): java.lang.String
           setColor(arg0: java.lang.String): void
           getFace(): java.lang.String

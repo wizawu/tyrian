@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       abstract class HttpsURLConnection extends java.net.HttpURLConnection {
-
         protected hostnameVerifier: javax.net.ssl.HostnameVerifier
         protected constructor(arg0: java.net.URL)
         public abstract getCipherSuite(): java.lang.String

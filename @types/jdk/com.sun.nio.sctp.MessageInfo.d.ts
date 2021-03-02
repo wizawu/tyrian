@@ -4,7 +4,6 @@ declare namespace com {
       namespace sctp {
 
         abstract class MessageInfo {
-
           protected constructor()
           public static createOutgoing(arg0: java.net.SocketAddress, arg1: int): com.sun.nio.sctp.MessageInfo
           public static createOutgoing(arg0: com.sun.nio.sctp.Association, arg1: java.net.SocketAddress, arg2: int): com.sun.nio.sctp.MessageInfo

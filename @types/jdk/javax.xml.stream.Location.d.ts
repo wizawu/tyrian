@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       interface Location {
-
         getLineNumber(): int
         getColumnNumber(): int
         getCharacterOffset(): int

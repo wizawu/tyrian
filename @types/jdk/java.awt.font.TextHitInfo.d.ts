@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class TextHitInfo {
-
         public getCharIndex(): int
         public isLeadingEdge(): boolean
         public getInsertionIndex(): int

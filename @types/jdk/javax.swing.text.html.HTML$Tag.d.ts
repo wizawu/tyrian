@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class HTML$Tag {
-
           blockTag: boolean
           breakTag: boolean
           name: java.lang.String

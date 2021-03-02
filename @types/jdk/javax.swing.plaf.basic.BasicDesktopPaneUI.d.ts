@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicDesktopPaneUI extends javax.swing.plaf.DesktopPaneUI {
-
           protected desktop: javax.swing.JDesktopPane
           protected desktopManager: javax.swing.DesktopManager
           protected minimizeKey: javax.swing.KeyStroke

@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       abstract class PKIXCertPathChecker implements java.security.cert.CertPathChecker, java.lang.Cloneable {
-
         protected constructor()
         public abstract init(arg0: boolean): void
         public abstract isForwardCheckingSupported(): boolean

@@ -3,7 +3,6 @@ declare namespace java {
     namespace print {
 
       class Book implements java.awt.print.Pageable {
-
         public constructor()
         public getNumberOfPages(): int
         public getPageFormat(arg0: int): java.awt.print.PageFormat

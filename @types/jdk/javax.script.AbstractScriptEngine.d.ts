@@ -2,7 +2,6 @@ declare namespace javax {
   namespace script {
 
     abstract class AbstractScriptEngine implements javax.script.ScriptEngine {
-
       protected context: javax.script.ScriptContext
       public constructor()
       public constructor(arg0: javax.script.Bindings)

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class SimpleTimeZone extends java.util.TimeZone {
-
       public static readonly WALL_TIME: int
       public static readonly STANDARD_TIME: int
       public static readonly UTC_TIME: int

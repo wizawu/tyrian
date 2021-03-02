@@ -3,7 +3,6 @@ declare namespace javax {
     namespace remote {
 
       class JMXPrincipal implements java.security.Principal, java.io.Serializable {
-
         public constructor(arg0: java.lang.String)
         public getName(): java.lang.String
         public toString(): java.lang.String

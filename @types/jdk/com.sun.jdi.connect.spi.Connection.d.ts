@@ -5,7 +5,6 @@ declare namespace com {
         namespace spi {
 
           abstract class Connection {
-
             public constructor()
             public abstract readPacket(): byte[]
             public abstract writePacket(arg0: byte[]): void

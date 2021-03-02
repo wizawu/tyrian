@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class FontRenderContext {
-
         protected constructor()
         public constructor(arg0: java.awt.geom.AffineTransform, arg1: boolean, arg2: boolean)
         public constructor(arg0: java.awt.geom.AffineTransform, arg1: java.lang.Object, arg2: java.lang.Object)

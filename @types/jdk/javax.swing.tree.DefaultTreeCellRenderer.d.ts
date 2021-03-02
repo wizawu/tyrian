@@ -3,7 +3,6 @@ declare namespace javax {
     namespace tree {
 
       class DefaultTreeCellRenderer extends javax.swing.JLabel implements javax.swing.tree.TreeCellRenderer {
-
         protected selected: boolean
         protected hasFocus: boolean
         protected closedIcon: javax.swing.Icon

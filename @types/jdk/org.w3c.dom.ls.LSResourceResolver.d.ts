@@ -3,8 +3,11 @@ declare namespace org {
     namespace dom {
       namespace ls {
 
-        interface LSResourceResolver {
+        interface LSResourceResolver$$lambda {
+          (arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): org.w3c.dom.ls.LSInput
+        }
 
+        interface LSResourceResolver {
           resolveResource(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String): org.w3c.dom.ls.LSInput
         }
 

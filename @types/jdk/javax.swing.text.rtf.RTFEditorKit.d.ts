@@ -4,7 +4,6 @@ declare namespace javax {
       namespace rtf {
 
         class RTFEditorKit extends javax.swing.text.StyledEditorKit {
-
           public constructor()
           public getContentType(): java.lang.String
           public read(arg0: java.io.InputStream, arg1: javax.swing.text.Document, arg2: int): void

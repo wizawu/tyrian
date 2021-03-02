@@ -3,8 +3,11 @@ declare namespace org {
     namespace dom {
       namespace stylesheets {
 
-        interface DocumentStyle {
+        interface DocumentStyle$$lambda {
+          (): org.w3c.dom.stylesheets.StyleSheetList
+        }
 
+        interface DocumentStyle {
           getStyleSheets(): org.w3c.dom.stylesheets.StyleSheetList
         }
 

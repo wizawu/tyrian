@@ -5,7 +5,6 @@ declare namespace com {
         namespace spi {
 
           abstract class TransportService$Capabilities {
-
             public constructor()
             public abstract supportsMultipleConnections(): boolean
             public abstract supportsAttachTimeout(): boolean

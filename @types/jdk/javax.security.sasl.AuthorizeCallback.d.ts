@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sasl {
 
       class AuthorizeCallback implements javax.security.auth.callback.Callback, java.io.Serializable {
-
         public constructor(arg0: java.lang.String, arg1: java.lang.String)
         public getAuthenticationID(): java.lang.String
         public getAuthorizationID(): java.lang.String

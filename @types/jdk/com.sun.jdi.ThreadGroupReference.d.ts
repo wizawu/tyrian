@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface ThreadGroupReference extends com.sun.jdi.ObjectReference {
-
         name(): java.lang.String
         parent(): com.sun.jdi.ThreadGroupReference
         suspend(): void

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Base64$Decoder {
-
       static readonly RFC4648: java.util.Base64$Decoder
       static readonly RFC4648_URLSAFE: java.util.Base64$Decoder
       static readonly RFC2045: java.util.Base64$Decoder

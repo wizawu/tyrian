@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jshell {
 
     abstract class Snippet {
-
       static readonly UNASSOCIATED_ID: java.lang.String
       readonly unitName: java.lang.String
       constructor(arg0: jdk.jshell.Key, arg1: java.lang.String, arg2: jdk.jshell.Wrap, arg3: java.lang.String, arg4: jdk.jshell.Snippet$SubKind, arg5: jdk.jshell.DiagList)
@@ -21,7 +20,7 @@ declare namespace jdk {
       bodyReferences(): java.util.Collection<java.lang.String>
       importLine(arg0: jdk.jshell.JShell): java.lang.String
       setId(arg0: java.lang.String): void
-      readonly setSequenceNumber(arg0: int): void
+      setSequenceNumber(arg0: int): void
       setOuterWrap(arg0: jdk.jshell.OuterWrap): void
       setCompilationStatus(arg0: jdk.jshell.Snippet$Status, arg1: java.util.List<java.lang.String>, arg2: jdk.jshell.DiagList): void
       setDiagnostics(arg0: jdk.jshell.DiagList): void

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     interface NavigableMap<K,V> extends java.util.SortedMap<K,V> {
-
       lowerEntry(arg0: K): java.util.Map$Entry<K,V>
       lowerKey(arg0: K): K
       floorEntry(arg0: K): java.util.Map$Entry<K,V>

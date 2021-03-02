@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class CancellationException extends java.lang.IllegalStateException {
-
         public constructor()
         public constructor(arg0: java.lang.String)
       }

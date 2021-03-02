@@ -3,7 +3,6 @@ declare namespace javax {
     namespace parsers {
 
       abstract class DocumentBuilderFactory {
-
         protected constructor()
         public static newDefaultInstance(): javax.xml.parsers.DocumentBuilderFactory
         public static newInstance(): javax.xml.parsers.DocumentBuilderFactory

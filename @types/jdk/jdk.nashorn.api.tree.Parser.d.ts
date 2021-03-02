@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface Parser {
-
           parse(arg0: java.io.File, arg1: jdk.nashorn.api.tree.DiagnosticListener): jdk.nashorn.api.tree.CompilationUnitTree
           parse(arg0: java.nio.file.Path, arg1: jdk.nashorn.api.tree.DiagnosticListener): jdk.nashorn.api.tree.CompilationUnitTree
           parse(arg0: java.net.URL, arg1: jdk.nashorn.api.tree.DiagnosticListener): jdk.nashorn.api.tree.CompilationUnitTree

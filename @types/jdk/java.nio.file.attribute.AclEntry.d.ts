@@ -4,7 +4,6 @@ declare namespace java {
       namespace attribute {
 
         class AclEntry {
-
           public static newBuilder(): java.nio.file.attribute.AclEntry$Builder
           public static newBuilder(arg0: java.nio.file.attribute.AclEntry): java.nio.file.attribute.AclEntry$Builder
           public type(): java.nio.file.attribute.AclEntryType

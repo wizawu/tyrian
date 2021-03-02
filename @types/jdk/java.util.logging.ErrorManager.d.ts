@@ -3,7 +3,6 @@ declare namespace java {
     namespace logging {
 
       class ErrorManager {
-
         public static readonly GENERIC_FAILURE: int
         public static readonly WRITE_FAILURE: int
         public static readonly FLUSH_FAILURE: int

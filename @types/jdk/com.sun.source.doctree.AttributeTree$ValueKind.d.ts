@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         class AttributeTree$ValueKind extends java.lang.Enum<com.sun.source.doctree.AttributeTree$ValueKind> {
-
           public static readonly EMPTY: com.sun.source.doctree.AttributeTree$ValueKind
           public static readonly UNQUOTED: com.sun.source.doctree.AttributeTree$ValueKind
           public static readonly SINGLE: com.sun.source.doctree.AttributeTree$ValueKind

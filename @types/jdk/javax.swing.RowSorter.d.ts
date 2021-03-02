@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class RowSorter<M> {
-
       public constructor()
       public abstract getModel(): M
       public abstract toggleSortOrder(arg0: int): void

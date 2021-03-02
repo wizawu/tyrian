@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     abstract class Number implements java.io.Serializable {
-
       public constructor()
       public abstract intValue(): int
       public abstract longValue(): long

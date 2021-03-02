@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     abstract class GraphicsConfiguration {
-
       static readonly $assertionsDisabled: boolean
       protected constructor()
       public abstract getDevice(): java.awt.GraphicsDevice

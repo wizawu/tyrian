@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class TableModelEvent extends java.util.EventObject {
-
         public static readonly INSERT: int
         public static readonly UPDATE: int
         public static readonly DELETE: int

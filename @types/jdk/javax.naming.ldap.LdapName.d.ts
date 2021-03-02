@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ldap {
 
       class LdapName implements javax.naming.Name {
-
         public constructor(arg0: java.lang.String)
         public constructor(arg0: java.util.List<javax.naming.ldap.Rdn>)
         public size(): int

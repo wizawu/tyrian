@@ -4,7 +4,6 @@ declare namespace com {
       namespace util {
 
         class TaskEvent {
-
           public constructor(arg0: com.sun.source.util.TaskEvent$Kind)
           public constructor(arg0: com.sun.source.util.TaskEvent$Kind, arg1: javax.tools.JavaFileObject)
           public constructor(arg0: com.sun.source.util.TaskEvent$Kind, arg1: com.sun.source.tree.CompilationUnitTree)

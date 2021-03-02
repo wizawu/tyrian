@@ -3,7 +3,6 @@ declare namespace javax {
     namespace colorchooser {
 
       abstract class AbstractColorChooserPanel extends javax.swing.JPanel {
-
         public static readonly TRANSPARENCY_ENABLED_PROPERTY: java.lang.String
         public constructor()
         public abstract updateChooser(): void

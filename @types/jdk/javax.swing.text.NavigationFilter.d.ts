@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class NavigationFilter {
-
         public constructor()
         public setDot(arg0: javax.swing.text.NavigationFilter$FilterBypass, arg1: int, arg2: javax.swing.text.Position$Bias): void
         public moveDot(arg0: javax.swing.text.NavigationFilter$FilterBypass, arg1: int, arg2: javax.swing.text.Position$Bias): void

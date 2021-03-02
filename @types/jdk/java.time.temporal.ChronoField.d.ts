@@ -3,7 +3,6 @@ declare namespace java {
     namespace temporal {
 
       class ChronoField extends java.lang.Enum<java.time.temporal.ChronoField> implements java.time.temporal.TemporalField {
-
         public static readonly NANO_OF_SECOND: java.time.temporal.ChronoField
         public static readonly NANO_OF_DAY: java.time.temporal.ChronoField
         public static readonly MICRO_OF_SECOND: java.time.temporal.ChronoField

@@ -4,7 +4,6 @@ declare namespace org {
       namespace ext {
 
         class Locator2Impl extends org.xml.sax.helpers.LocatorImpl implements org.xml.sax.ext.Locator2 {
-
           public constructor()
           public constructor(arg0: org.xml.sax.Locator)
           public getXMLVersion(): java.lang.String

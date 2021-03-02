@@ -3,7 +3,6 @@ declare namespace javax {
     namespace crypto {
 
       interface XMLCryptoContext {
-
         getBaseURI(): java.lang.String
         setBaseURI(arg0: java.lang.String): void
         getKeySelector(): javax.xml.crypto.KeySelector

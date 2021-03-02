@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Window extends java.awt.Container implements javax.accessibility.Accessible {
-
       warningString: java.lang.String
       icons: java.util.List<java.awt.Image>
       static systemSyncLWRequests: boolean
@@ -41,31 +40,31 @@ declare namespace java {
       public setLocation(arg0: java.awt.Point): void
       public reshape(arg0: int, arg1: int, arg2: int, arg3: int): void
       setClientSize(arg0: int, arg1: int): void
-      readonly closeSplashScreen(): void
+      closeSplashScreen(): void
       public setVisible(arg0: boolean): void
       public show(): void
       static updateChildFocusableWindowState(arg0: java.awt.Window): void
       postWindowEvent(arg0: int): void
       public hide(): void
-      readonly clearMostRecentFocusOwnerOnHide(): void
+      clearMostRecentFocusOwnerOnHide(): void
       public dispose(): void
       disposeImpl(): void
       doDispose(): void
       adjustListeningChildrenOnParent(arg0: long, arg1: int): void
       adjustDescendantsOnParent(arg0: int): void
       public toFront(): void
-      readonly toFront_NoClientCode(): void
+      toFront_NoClientCode(): void
       public toBack(): void
-      readonly toBack_NoClientCode(): void
+      toBack_NoClientCode(): void
       public getToolkit(): java.awt.Toolkit
-      public readonly getWarningString(): java.lang.String
+      public getWarningString(): java.lang.String
       public getLocale(): java.util.Locale
       public getInputContext(): java.awt.im.InputContext
       public setCursor(arg0: java.awt.Cursor): void
       public getOwner(): java.awt.Window
-      readonly getOwner_NoClientCode(): java.awt.Window
+      getOwner_NoClientCode(): java.awt.Window
       public getOwnedWindows(): java.awt.Window[]
-      readonly getOwnedWindows_NoClientCode(): java.awt.Window[]
+      getOwnedWindows_NoClientCode(): java.awt.Window[]
       isModalBlocked(): boolean
       setModalBlocked(arg0: java.awt.Dialog, arg1: boolean, arg2: boolean): void
       getModalBlocker(): java.awt.Dialog
@@ -95,18 +94,18 @@ declare namespace java {
       protected processWindowStateEvent(arg0: java.awt.event.WindowEvent): void
       preProcessKeyEvent(arg0: java.awt.event.KeyEvent): void
       postProcessKeyEvent(arg0: java.awt.event.KeyEvent): void
-      public readonly setAlwaysOnTop(arg0: boolean): void
+      public setAlwaysOnTop(arg0: boolean): void
       public isAlwaysOnTopSupported(): boolean
-      public readonly isAlwaysOnTop(): boolean
+      public isAlwaysOnTop(): boolean
       public getFocusOwner(): java.awt.Component
       public getMostRecentFocusOwner(): java.awt.Component
       public isActive(): boolean
       public isFocused(): boolean
       public getFocusTraversalKeys(arg0: int): java.util.Set<java.awt.AWTKeyStroke>
-      public readonly setFocusCycleRoot(arg0: boolean): void
-      public readonly isFocusCycleRoot(): boolean
-      public readonly getFocusCycleRootAncestor(): java.awt.Container
-      public readonly isFocusableWindow(): boolean
+      public setFocusCycleRoot(arg0: boolean): void
+      public isFocusCycleRoot(): boolean
+      public getFocusCycleRootAncestor(): java.awt.Container
+      public isFocusableWindow(): boolean
       public getFocusableWindowState(): boolean
       public setFocusableWindowState(arg0: boolean): void
       public setAutoRequestFocus(arg0: boolean): void
@@ -149,11 +148,11 @@ declare namespace java {
       public setBackground(arg0: java.awt.Color): void
       public isOpaque(): boolean
       public paint(arg0: java.awt.Graphics): void
-      readonly getContainer(): java.awt.Container
-      readonly applyCompoundShape(arg0: sun.java2d.pipe.Region): void
-      readonly applyCurrentShape(): void
-      readonly mixOnReshaping(): void
-      readonly getLocationOnWindow(): java.awt.Point
+      getContainer(): java.awt.Container
+      applyCompoundShape(arg0: sun.java2d.pipe.Region): void
+      applyCurrentShape(): void
+      mixOnReshaping(): void
+      getLocationOnWindow(): java.awt.Point
       updateZOrder(): void
     }
 

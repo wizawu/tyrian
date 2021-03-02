@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class FocusEvent extends java.awt.event.ComponentEvent {
-
         public static readonly FOCUS_FIRST: int
         public static readonly FOCUS_LAST: int
         public static readonly FOCUS_GAINED: int
@@ -17,7 +16,7 @@ declare namespace java {
         public isTemporary(): boolean
         public getOppositeComponent(): java.awt.Component
         public paramString(): java.lang.String
-        public readonly getCause(): java.awt.event.FocusEvent$Cause
+        public getCause(): java.awt.event.FocusEvent$Cause
         readResolve(): java.lang.Object
       }
 

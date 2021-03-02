@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class BufferedReader extends java.io.Reader {
-
       public constructor(arg0: java.io.Reader, arg1: int)
       public constructor(arg0: java.io.Reader)
       public read(): int

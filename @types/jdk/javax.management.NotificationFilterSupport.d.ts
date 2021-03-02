@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class NotificationFilterSupport implements javax.management.NotificationFilter {
-
       public constructor()
       public isNotificationEnabled(arg0: javax.management.Notification): boolean
       public enableType(arg0: java.lang.String): void

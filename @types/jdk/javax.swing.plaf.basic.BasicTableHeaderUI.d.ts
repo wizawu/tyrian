@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicTableHeaderUI extends javax.swing.plaf.TableHeaderUI {
-
           protected header: javax.swing.table.JTableHeader
           protected rendererPane: javax.swing.CellRendererPane
           protected mouseInputListener: javax.swing.event.MouseInputListener

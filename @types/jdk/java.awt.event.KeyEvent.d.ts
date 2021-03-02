@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class KeyEvent extends java.awt.event.InputEvent {
-
         public static readonly KEY_FIRST: int
         public static readonly KEY_LAST: int
         public static readonly KEY_TYPED: int

@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       abstract class MouseDragGestureRecognizer extends java.awt.dnd.DragGestureRecognizer implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener {
-
         protected constructor(arg0: java.awt.dnd.DragSource, arg1: java.awt.Component, arg2: int, arg3: java.awt.dnd.DragGestureListener)
         protected constructor(arg0: java.awt.dnd.DragSource, arg1: java.awt.Component, arg2: int)
         protected constructor(arg0: java.awt.dnd.DragSource, arg1: java.awt.Component)

@@ -3,7 +3,6 @@ declare namespace java {
     namespace acl {
 
       class LastOwnerException extends java.lang.Exception {
-
         public constructor()
       }
 

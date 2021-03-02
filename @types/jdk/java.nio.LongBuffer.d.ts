@@ -2,7 +2,6 @@ declare namespace java {
   namespace nio {
 
     abstract class LongBuffer extends java.nio.Buffer implements java.lang.Comparable<java.nio.LongBuffer> {
-
       readonly hb: long[]
       readonly offset: int
       isReadOnly: boolean
@@ -23,17 +22,17 @@ declare namespace java {
       public get(arg0: long[]): java.nio.LongBuffer
       public put(arg0: java.nio.LongBuffer): java.nio.LongBuffer
       public put(arg0: long[], arg1: int, arg2: int): java.nio.LongBuffer
-      public readonly put(arg0: long[]): java.nio.LongBuffer
-      public readonly hasArray(): boolean
-      public readonly array(): long[]
-      public readonly arrayOffset(): int
-      public readonly position(arg0: int): java.nio.LongBuffer
-      public readonly limit(arg0: int): java.nio.LongBuffer
-      public readonly mark(): java.nio.LongBuffer
-      public readonly reset(): java.nio.LongBuffer
-      public readonly clear(): java.nio.LongBuffer
-      public readonly flip(): java.nio.LongBuffer
-      public readonly rewind(): java.nio.LongBuffer
+      public put(arg0: long[]): java.nio.LongBuffer
+      public hasArray(): boolean
+      public array(): long[]
+      public arrayOffset(): int
+      public position(arg0: int): java.nio.LongBuffer
+      public limit(arg0: int): java.nio.LongBuffer
+      public mark(): java.nio.LongBuffer
+      public reset(): java.nio.LongBuffer
+      public clear(): java.nio.LongBuffer
+      public flip(): java.nio.LongBuffer
+      public rewind(): java.nio.LongBuffer
       public abstract compact(): java.nio.LongBuffer
       public abstract isDirect(): boolean
       public toString(): java.lang.String

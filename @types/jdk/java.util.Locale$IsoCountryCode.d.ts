@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     abstract class Locale$IsoCountryCode extends java.lang.Enum<java.util.Locale$IsoCountryCode> {
-
       public static readonly PART1_ALPHA2: java.util.Locale$IsoCountryCode
       public static readonly PART1_ALPHA3: java.util.Locale$IsoCountryCode
       public static readonly PART3: java.util.Locale$IsoCountryCode

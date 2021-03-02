@@ -4,7 +4,6 @@ declare namespace com {
       namespace request {
 
         interface VMDeathRequest extends com.sun.jdi.request.EventRequest {
-
         }
 
       }

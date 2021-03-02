@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       interface IIOReadProgressListener extends java.util.EventListener {
-
         sequenceStarted(arg0: javax.imageio.ImageReader, arg1: int): void
         sequenceComplete(arg0: javax.imageio.ImageReader): void
         imageStarted(arg0: javax.imageio.ImageReader, arg1: int): void

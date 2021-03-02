@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       abstract class WindowAdapter implements java.awt.event.WindowListener, java.awt.event.WindowStateListener, java.awt.event.WindowFocusListener {
-
         public constructor()
         public windowOpened(arg0: java.awt.event.WindowEvent): void
         public windowClosing(arg0: java.awt.event.WindowEvent): void

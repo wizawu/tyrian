@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalScrollPaneUI extends javax.swing.plaf.basic.BasicScrollPaneUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public installUI(arg0: javax.swing.JComponent): void

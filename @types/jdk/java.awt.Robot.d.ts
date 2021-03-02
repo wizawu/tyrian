@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Robot {
-
       public constructor()
       public constructor(arg0: java.awt.GraphicsDevice)
       public mouseMove(arg0: int, arg1: int): void

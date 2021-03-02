@@ -3,7 +3,6 @@ declare namespace java {
     namespace management {
 
       class MemoryType extends java.lang.Enum<java.lang.management.MemoryType> {
-
         public static readonly HEAP: java.lang.management.MemoryType
         public static readonly NON_HEAP: java.lang.management.MemoryType
         public static values(): java.lang.management.MemoryType[]

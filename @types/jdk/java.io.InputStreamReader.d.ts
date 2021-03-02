@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class InputStreamReader extends java.io.Reader {
-
       public constructor(arg0: java.io.InputStream)
       public constructor(arg0: java.io.InputStream, arg1: java.lang.String)
       public constructor(arg0: java.io.InputStream, arg1: java.nio.charset.Charset)

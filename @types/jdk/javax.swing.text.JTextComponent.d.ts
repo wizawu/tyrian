@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class JTextComponent extends javax.swing.JComponent implements javax.swing.Scrollable, javax.accessibility.Accessible {
-
         public static readonly FOCUS_ACCELERATOR_KEY: java.lang.String
         public static readonly DEFAULT_KEYMAP: java.lang.String
         public constructor()
@@ -29,11 +28,11 @@ declare namespace javax {
         public setKeymap(arg0: javax.swing.text.Keymap): void
         public setDragEnabled(arg0: boolean): void
         public getDragEnabled(): boolean
-        public readonly setDropMode(arg0: javax.swing.DropMode): void
-        public readonly getDropMode(): javax.swing.DropMode
+        public setDropMode(arg0: javax.swing.DropMode): void
+        public getDropMode(): javax.swing.DropMode
         dropLocationForPoint(arg0: java.awt.Point): javax.swing.text.JTextComponent$DropLocation
         setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object, arg2: boolean): java.lang.Object
-        public readonly getDropLocation(): javax.swing.text.JTextComponent$DropLocation
+        public getDropLocation(): javax.swing.text.JTextComponent$DropLocation
         updateInputMap(arg0: javax.swing.text.Keymap, arg1: javax.swing.text.Keymap): void
         public getKeymap(): javax.swing.text.Keymap
         public static addKeymap(arg0: java.lang.String, arg1: javax.swing.text.Keymap): javax.swing.text.Keymap
@@ -88,7 +87,7 @@ declare namespace javax {
         public getPrintable(arg0: java.text.MessageFormat, arg1: java.text.MessageFormat): java.awt.print.Printable
         public getAccessibleContext(): javax.accessibility.AccessibleContext
         protected paramString(): java.lang.String
-        static readonly getFocusedComponent(): javax.swing.text.JTextComponent
+        static getFocusedComponent(): javax.swing.text.JTextComponent
         protected processInputMethodEvent(arg0: java.awt.event.InputMethodEvent): void
         public getInputMethodRequests(): java.awt.im.InputMethodRequests
         public addInputMethodListener(arg0: java.awt.event.InputMethodListener): void

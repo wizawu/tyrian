@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       class FactoryConfigurationError extends java.lang.Error {
-
         nested: java.lang.Exception
         public constructor()
         public constructor(arg0: java.lang.Exception)

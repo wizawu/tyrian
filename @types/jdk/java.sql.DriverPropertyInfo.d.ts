@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class DriverPropertyInfo {
-
       public name: java.lang.String
       public description: java.lang.String
       public required: boolean

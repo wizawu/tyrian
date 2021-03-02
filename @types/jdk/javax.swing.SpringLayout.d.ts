@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class SpringLayout implements java.awt.LayoutManager2 {
-
       public static readonly NORTH: java.lang.String
       public static readonly SOUTH: java.lang.String
       public static readonly EAST: java.lang.String

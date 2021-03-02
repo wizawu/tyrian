@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JTree$DynamicUtilTreeNode extends javax.swing.tree.DefaultMutableTreeNode {
-
       protected hasChildren: boolean
       protected childValue: java.lang.Object
       protected loadedChildren: boolean

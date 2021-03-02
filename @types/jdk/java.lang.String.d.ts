@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class String implements java.io.Serializable, java.lang.Comparable<java.lang.String>, java.lang.CharSequence {
-
       static readonly COMPACT_STRINGS: boolean
       public static readonly CASE_INSENSITIVE_ORDER: java.util.Comparator<java.lang.String>
       static readonly LATIN1: byte

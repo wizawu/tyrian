@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLTableElement extends org.w3c.dom.html.HTMLElement {
-
           getCaption(): org.w3c.dom.html.HTMLTableCaptionElement
           setCaption(arg0: org.w3c.dom.html.HTMLTableCaptionElement): void
           getTHead(): org.w3c.dom.html.HTMLTableSectionElement

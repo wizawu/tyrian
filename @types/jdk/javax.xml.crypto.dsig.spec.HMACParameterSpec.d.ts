@@ -5,7 +5,6 @@ declare namespace javax {
         namespace spec {
 
           class HMACParameterSpec implements javax.xml.crypto.dsig.spec.SignatureMethodParameterSpec {
-
             public constructor(arg0: int)
             public getOutputLength(): int
           }

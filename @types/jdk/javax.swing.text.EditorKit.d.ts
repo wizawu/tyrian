@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class EditorKit implements java.lang.Cloneable, java.io.Serializable {
-
         public constructor()
         public clone(): java.lang.Object
         public install(arg0: javax.swing.JEditorPane): void

@@ -3,7 +3,6 @@ declare namespace org {
     namespace jgss {
 
       class MessageProp {
-
         public constructor(arg0: boolean)
         public constructor(arg0: int, arg1: boolean)
         public getQOP(): int

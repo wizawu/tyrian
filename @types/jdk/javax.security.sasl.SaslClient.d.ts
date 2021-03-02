@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sasl {
 
       interface SaslClient {
-
         getMechanismName(): java.lang.String
         hasInitialResponse(): boolean
         evaluateChallenge(arg0: byte[]): byte[]

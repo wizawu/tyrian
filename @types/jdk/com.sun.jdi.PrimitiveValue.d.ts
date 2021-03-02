@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface PrimitiveValue extends com.sun.jdi.Value {
-
         booleanValue(): boolean
         byteValue(): byte
         charValue(): char

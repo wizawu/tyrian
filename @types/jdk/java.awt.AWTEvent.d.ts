@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     abstract class AWTEvent extends java.util.EventObject {
-
       protected id: int
       protected consumed: boolean
       focusManagerIsDispatching: boolean
@@ -28,7 +27,7 @@ declare namespace java {
       public static readonly WINDOW_STATE_EVENT_MASK: long
       public static readonly WINDOW_FOCUS_EVENT_MASK: long
       public static readonly RESERVED_ID_MAX: int
-      readonly getAccessControlContext(): java.security.AccessControlContext
+      getAccessControlContext(): java.security.AccessControlContext
       public constructor(arg0: java.awt.Event)
       public constructor(arg0: java.lang.Object, arg1: int)
       public setSource(arg0: java.lang.Object): void

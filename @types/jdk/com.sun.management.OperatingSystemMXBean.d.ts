@@ -3,7 +3,6 @@ declare namespace com {
     namespace management {
 
       interface OperatingSystemMXBean extends java.lang.management.OperatingSystemMXBean {
-
         getCommittedVirtualMemorySize(): long
         getTotalSwapSpaceSize(): long
         getFreeSwapSpaceSize(): long

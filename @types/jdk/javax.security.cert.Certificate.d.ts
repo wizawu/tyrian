@@ -3,7 +3,6 @@ declare namespace javax {
     namespace cert {
 
       abstract class Certificate {
-
         public constructor()
         public equals(arg0: java.lang.Object): boolean
         public hashCode(): int

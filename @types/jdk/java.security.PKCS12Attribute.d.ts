@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     class PKCS12Attribute implements java.security.KeyStore$Entry$Attribute {
-
       public constructor(arg0: java.lang.String, arg1: java.lang.String)
       public constructor(arg0: byte[])
       public getName(): java.lang.String

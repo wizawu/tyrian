@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     class ParsePosition {
-
       index: int
       errorIndex: int
       public getIndex(): int

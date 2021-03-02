@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Long extends java.lang.Number implements java.lang.Comparable<java.lang.Long> {
-
       public static readonly MIN_VALUE: long
       public static readonly MAX_VALUE: long
       public static readonly TYPE: java.lang.Class<java.lang.Long>

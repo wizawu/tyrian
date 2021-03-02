@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class HttpCookie implements java.lang.Cloneable {
-
       static readonly assignors: java.util.Map<java.lang.String,java.net.HttpCookie$CookieAttributeAssignor>
       static readonly GMT: java.util.TimeZone
       public constructor(arg0: java.lang.String, arg1: java.lang.String)

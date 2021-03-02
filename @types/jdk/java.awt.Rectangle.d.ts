@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Rectangle extends java.awt.geom.Rectangle2D implements java.awt.Shape, java.io.Serializable {
-
       public x: int
       public y: int
       public width: int

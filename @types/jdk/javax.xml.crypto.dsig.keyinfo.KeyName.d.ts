@@ -5,7 +5,6 @@ declare namespace javax {
         namespace keyinfo {
 
           interface KeyName extends javax.xml.crypto.XMLStructure {
-
             getName(): java.lang.String
           }
 

@@ -3,7 +3,6 @@ declare namespace java {
     namespace jar {
 
       class Manifest implements java.lang.Cloneable {
-
         public constructor()
         public constructor(arg0: java.io.InputStream)
         constructor(arg0: java.util.jar.JarVerifier, arg1: java.io.InputStream)

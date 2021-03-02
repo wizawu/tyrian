@@ -4,7 +4,6 @@ declare namespace java {
       namespace locks {
 
         class LockSupport {
-
           public static unpark(arg0: java.lang.Thread): void
           public static park(arg0: java.lang.Object): void
           public static parkNanos(arg0: java.lang.Object, arg1: long): void
@@ -13,8 +12,8 @@ declare namespace java {
           public static park(): void
           public static parkNanos(arg0: long): void
           public static parkUntil(arg0: long): void
-          static readonly nextSecondarySeed(): int
-          static readonly getThreadId(arg0: java.lang.Thread): long
+          static nextSecondarySeed(): int
+          static getThreadId(arg0: java.lang.Thread): long
         }
 
       }

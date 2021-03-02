@@ -3,7 +3,6 @@ declare namespace javax {
     namespace directory {
 
       class SearchResult extends javax.naming.Binding {
-
         public constructor(arg0: java.lang.String, arg1: java.lang.Object, arg2: javax.naming.directory.Attributes)
         public constructor(arg0: java.lang.String, arg1: java.lang.Object, arg2: javax.naming.directory.Attributes, arg3: boolean)
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: javax.naming.directory.Attributes)

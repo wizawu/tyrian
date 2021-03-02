@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       interface DocumentEvent$ElementChange {
-
         getElement(): javax.swing.text.Element
         getIndex(): int
         getChildrenRemoved(): javax.swing.text.Element[]

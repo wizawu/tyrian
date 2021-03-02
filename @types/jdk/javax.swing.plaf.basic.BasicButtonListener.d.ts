@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicButtonListener implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.FocusListener, javax.swing.event.ChangeListener, java.beans.PropertyChangeListener {
-
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
           public constructor(arg0: javax.swing.AbstractButton)
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void

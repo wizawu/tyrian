@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Formatter implements java.io.Closeable, java.io.Flushable {
-
       public constructor()
       public constructor(arg0: java.lang.Appendable)
       public constructor(arg0: java.util.Locale)

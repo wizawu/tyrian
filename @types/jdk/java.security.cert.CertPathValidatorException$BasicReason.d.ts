@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       class CertPathValidatorException$BasicReason extends java.lang.Enum<java.security.cert.CertPathValidatorException$BasicReason> implements java.security.cert.CertPathValidatorException$Reason {
-
         public static readonly UNSPECIFIED: java.security.cert.CertPathValidatorException$BasicReason
         public static readonly EXPIRED: java.security.cert.CertPathValidatorException$BasicReason
         public static readonly NOT_YET_VALID: java.security.cert.CertPathValidatorException$BasicReason

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace filechooser {
 
       abstract class FileView {
-
         public constructor()
         public getName(arg0: java.io.File): java.lang.String
         public getDescription(arg0: java.io.File): java.lang.String

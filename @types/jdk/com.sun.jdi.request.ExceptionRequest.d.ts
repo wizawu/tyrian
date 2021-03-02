@@ -4,7 +4,6 @@ declare namespace com {
       namespace request {
 
         interface ExceptionRequest extends com.sun.jdi.request.EventRequest {
-
           exception(): com.sun.jdi.ReferenceType
           notifyCaught(): boolean
           notifyUncaught(): boolean

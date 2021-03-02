@@ -3,7 +3,6 @@ declare namespace javax {
     namespace tree {
 
       class FixedHeightLayoutCache extends javax.swing.tree.AbstractLayoutCache {
-
         public constructor()
         public setModel(arg0: javax.swing.tree.TreeModel): void
         public setRootVisible(arg0: boolean): void

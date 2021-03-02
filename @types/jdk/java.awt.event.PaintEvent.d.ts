@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class PaintEvent extends java.awt.event.ComponentEvent {
-
         public static readonly PAINT_FIRST: int
         public static readonly PAINT_LAST: int
         public static readonly PAINT: int

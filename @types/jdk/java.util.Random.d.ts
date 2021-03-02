@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Random implements java.io.Serializable {
-
       static readonly serialVersionUID: long
       static readonly BadBound: java.lang.String
       static readonly BadRange: java.lang.String
@@ -12,9 +11,9 @@ declare namespace java {
       public setSeed(arg0: long): void
       protected next(arg0: int): int
       public nextBytes(arg0: byte[]): void
-      readonly internalNextLong(arg0: long, arg1: long): long
-      readonly internalNextInt(arg0: int, arg1: int): int
-      readonly internalNextDouble(arg0: double, arg1: double): double
+      internalNextLong(arg0: long, arg1: long): long
+      internalNextInt(arg0: int, arg1: int): int
+      internalNextDouble(arg0: double, arg1: double): double
       public nextInt(): int
       public nextInt(arg0: int): int
       public nextLong(): long

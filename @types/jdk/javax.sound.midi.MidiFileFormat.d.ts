@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       class MidiFileFormat {
-
         public static readonly UNKNOWN_LENGTH: int
         protected type: int
         protected divisionType: float

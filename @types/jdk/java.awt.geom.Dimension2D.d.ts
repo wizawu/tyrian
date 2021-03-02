@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       abstract class Dimension2D implements java.lang.Cloneable {
-
         protected constructor()
         public abstract getWidth(): double
         public abstract getHeight(): double

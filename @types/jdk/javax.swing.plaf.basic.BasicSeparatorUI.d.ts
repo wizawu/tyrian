@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicSeparatorUI extends javax.swing.plaf.SeparatorUI {
-
           protected shadow: java.awt.Color
           protected highlight: java.awt.Color
           public constructor()

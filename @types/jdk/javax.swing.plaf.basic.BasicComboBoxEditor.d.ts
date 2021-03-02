@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicComboBoxEditor implements javax.swing.ComboBoxEditor, java.awt.event.FocusListener {
-
           protected editor: javax.swing.JTextField
           public constructor()
           public getEditorComponent(): java.awt.Component

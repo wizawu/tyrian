@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       interface PrintJobListener {
-
         printDataTransferCompleted(arg0: javax.print.event.PrintJobEvent): void
         printJobCompleted(arg0: javax.print.event.PrintJobEvent): void
         printJobFailed(arg0: javax.print.event.PrintJobEvent): void

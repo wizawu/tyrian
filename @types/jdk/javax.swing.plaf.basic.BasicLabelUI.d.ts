@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicLabelUI extends javax.swing.plaf.LabelUI implements java.beans.PropertyChangeListener {
-
           protected static labelUI: javax.swing.plaf.basic.BasicLabelUI
           public constructor()
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void

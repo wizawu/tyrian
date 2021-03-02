@@ -4,7 +4,6 @@ declare namespace javax {
       namespace kerberos {
 
         class ServicePermission extends java.security.Permission implements java.io.Serializable {
-
           public constructor(arg0: java.lang.String, arg1: java.lang.String)
           constructor(arg0: java.lang.String, arg1: int)
           public implies(arg0: java.security.Permission): boolean

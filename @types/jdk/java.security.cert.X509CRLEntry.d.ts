@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       abstract class X509CRLEntry implements java.security.cert.X509Extension {
-
         public constructor()
         public equals(arg0: java.lang.Object): boolean
         public hashCode(): int

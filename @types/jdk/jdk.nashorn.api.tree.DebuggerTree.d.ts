@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface DebuggerTree extends jdk.nashorn.api.tree.StatementTree {
-
         }
 
       }

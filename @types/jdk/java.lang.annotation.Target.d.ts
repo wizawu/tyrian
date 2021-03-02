@@ -3,7 +3,6 @@ declare namespace java {
     namespace annotation {
 
       interface Target extends java.lang.annotation.Annotation {
-
         value(): java.lang.annotation.ElementType[]
       }
 

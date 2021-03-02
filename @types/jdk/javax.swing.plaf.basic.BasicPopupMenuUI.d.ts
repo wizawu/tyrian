@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicPopupMenuUI extends javax.swing.plaf.PopupMenuUI {
-
           static readonly MOUSE_GRABBER_KEY: java.lang.StringBuilder
           static readonly MENU_KEYBOARD_HELPER_KEY: java.lang.StringBuilder
           protected popupMenu: javax.swing.JPopupMenu

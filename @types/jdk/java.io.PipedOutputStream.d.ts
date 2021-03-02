@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class PipedOutputStream extends java.io.OutputStream {
-
       public constructor(arg0: java.io.PipedInputStream)
       public constructor()
       public connect(arg0: java.io.PipedInputStream): void

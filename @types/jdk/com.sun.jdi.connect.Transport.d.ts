@@ -3,8 +3,11 @@ declare namespace com {
     namespace jdi {
       namespace connect {
 
-        interface Transport {
+        interface Transport$$lambda {
+          (): java.lang.String
+        }
 
+        interface Transport {
           name(): java.lang.String
         }
 

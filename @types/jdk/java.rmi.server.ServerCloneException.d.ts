@@ -3,7 +3,6 @@ declare namespace java {
     namespace server {
 
       class ServerCloneException extends java.lang.CloneNotSupportedException {
-
         public detail: java.lang.Exception
         public constructor(arg0: java.lang.String)
         public constructor(arg0: java.lang.String, arg1: java.lang.Exception)

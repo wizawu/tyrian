@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class MenuSelectionManager {
-
       protected changeEvent: javax.swing.event.ChangeEvent
       protected listenerList: javax.swing.event.EventListenerList
       public constructor()

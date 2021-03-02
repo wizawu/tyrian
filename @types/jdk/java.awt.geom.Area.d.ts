@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       class Area implements java.awt.Shape, java.lang.Cloneable {
-
         public constructor()
         public constructor(arg0: java.awt.Shape)
         public add(arg0: java.awt.geom.Area): void

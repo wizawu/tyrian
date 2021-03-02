@@ -3,7 +3,6 @@ declare namespace javax {
     namespace attribute {
 
       abstract class URISyntax implements java.io.Serializable, java.lang.Cloneable {
-
         protected constructor(arg0: java.net.URI)
         public getURI(): java.net.URI
         public hashCode(): int

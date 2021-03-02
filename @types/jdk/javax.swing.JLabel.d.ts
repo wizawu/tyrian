@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JLabel extends javax.swing.JComponent implements javax.swing.SwingConstants, javax.accessibility.Accessible {
-
       protected labelFor: java.awt.Component
       static readonly LABELED_BY_PROPERTY: java.lang.String
       public constructor(arg0: java.lang.String, arg1: javax.swing.Icon, arg2: int)

@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface ClassObjectReference extends com.sun.jdi.ObjectReference {
-
         reflectedType(): com.sun.jdi.ReferenceType
       }
 

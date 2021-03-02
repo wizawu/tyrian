@@ -3,7 +3,6 @@ declare namespace javax {
     namespace modelmbean {
 
       class ModelMBeanInfoSupport extends javax.management.MBeanInfo implements javax.management.modelmbean.ModelMBeanInfo {
-
         public constructor(arg0: javax.management.modelmbean.ModelMBeanInfo)
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: javax.management.modelmbean.ModelMBeanAttributeInfo[], arg3: javax.management.modelmbean.ModelMBeanConstructorInfo[], arg4: javax.management.modelmbean.ModelMBeanOperationInfo[], arg5: javax.management.modelmbean.ModelMBeanNotificationInfo[])
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: javax.management.modelmbean.ModelMBeanAttributeInfo[], arg3: javax.management.modelmbean.ModelMBeanConstructorInfo[], arg4: javax.management.modelmbean.ModelMBeanOperationInfo[], arg5: javax.management.modelmbean.ModelMBeanNotificationInfo[], arg6: javax.management.Descriptor)

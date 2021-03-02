@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       class AudioFileFormat {
-
         protected constructor(arg0: javax.sound.sampled.AudioFileFormat$Type, arg1: int, arg2: javax.sound.sampled.AudioFormat, arg3: int)
         public constructor(arg0: javax.sound.sampled.AudioFileFormat$Type, arg1: javax.sound.sampled.AudioFormat, arg2: int)
         public constructor(arg0: javax.sound.sampled.AudioFileFormat$Type, arg1: javax.sound.sampled.AudioFormat, arg2: int, arg3: java.util.Map<java.lang.String,java.lang.Object>)

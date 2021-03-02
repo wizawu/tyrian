@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace dynalink {
 
     class StandardNamespace extends java.lang.Enum<jdk.dynalink.StandardNamespace> implements jdk.dynalink.Namespace {
-
       public static readonly PROPERTY: jdk.dynalink.StandardNamespace
       public static readonly ELEMENT: jdk.dynalink.StandardNamespace
       public static readonly METHOD: jdk.dynalink.StandardNamespace

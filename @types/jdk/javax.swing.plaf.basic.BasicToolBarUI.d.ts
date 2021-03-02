@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicToolBarUI extends javax.swing.plaf.ToolBarUI implements javax.swing.SwingConstants {
-
           protected toolBar: javax.swing.JToolBar
           protected dragWindow: javax.swing.plaf.basic.BasicToolBarUI$DragWindow
           protected focusedCompIndex: int

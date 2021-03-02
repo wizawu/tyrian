@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class DatagramPacket {
-
       buf: byte[]
       offset: int
       length: int

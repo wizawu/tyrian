@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class SizeSequence {
-
       public constructor()
       public constructor(arg0: int)
       public constructor(arg0: int, arg1: int)

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       interface XMLEventWriter extends javax.xml.stream.util.XMLEventConsumer {
-
         flush(): void
         close(): void
         add(arg0: javax.xml.stream.events.XMLEvent): void

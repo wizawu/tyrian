@@ -3,7 +3,6 @@ declare namespace javax {
     namespace parsers {
 
       abstract class DocumentBuilder {
-
         protected constructor()
         public reset(): void
         public parse(arg0: java.io.InputStream): org.w3c.dom.Document

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicOptionPaneUI$ButtonAreaLayout implements java.awt.LayoutManager {
-
           protected syncAllWidths: boolean
           protected padding: int
           protected centersChildren: boolean

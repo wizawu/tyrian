@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class AWTEventMulticaster implements java.awt.event.ComponentListener, java.awt.event.ContainerListener, java.awt.event.FocusListener, java.awt.event.KeyListener, java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.WindowListener, java.awt.event.WindowFocusListener, java.awt.event.WindowStateListener, java.awt.event.ActionListener, java.awt.event.ItemListener, java.awt.event.AdjustmentListener, java.awt.event.TextListener, java.awt.event.InputMethodListener, java.awt.event.HierarchyListener, java.awt.event.HierarchyBoundsListener, java.awt.event.MouseWheelListener {
-
       protected readonly a: java.util.EventListener
       protected readonly b: java.util.EventListener
       protected constructor(arg0: java.util.EventListener, arg1: java.util.EventListener)

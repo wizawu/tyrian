@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       abstract class Arc2D extends java.awt.geom.RectangularShape {
-
         public static readonly OPEN: int
         public static readonly CHORD: int
         public static readonly PIE: int

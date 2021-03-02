@@ -3,7 +3,6 @@ declare namespace javax {
     namespace tree {
 
       class DefaultTreeCellEditor implements java.awt.event.ActionListener, javax.swing.tree.TreeCellEditor, javax.swing.event.TreeSelectionListener {
-
         protected realEditor: javax.swing.tree.TreeCellEditor
         protected renderer: javax.swing.tree.DefaultTreeCellRenderer
         protected editingContainer: java.awt.Container

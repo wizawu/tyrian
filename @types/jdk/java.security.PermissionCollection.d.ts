@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     abstract class PermissionCollection implements java.io.Serializable {
-
       public constructor()
       public abstract add(arg0: java.security.Permission): void
       public abstract implies(arg0: java.security.Permission): boolean

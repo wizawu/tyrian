@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class AsyncBoxView extends javax.swing.text.View {
-
         axis: int
         stats: java.util.List<javax.swing.text.AsyncBoxView$ChildState>
         majorSpan: float

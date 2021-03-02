@@ -3,8 +3,11 @@ declare namespace org {
     namespace dom {
       namespace xpath {
 
-        interface XPathNSResolver {
+        interface XPathNSResolver$$lambda {
+          (arg0: java.lang.String): java.lang.String
+        }
 
+        interface XPathNSResolver {
           lookupNamespaceURI(arg0: java.lang.String): java.lang.String
         }
 

@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface EmptyStatementTree extends jdk.nashorn.api.tree.StatementTree {
-
         }
 
       }

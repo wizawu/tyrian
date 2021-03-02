@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface ByteType extends com.sun.jdi.PrimitiveType {
-
       }
 
     }

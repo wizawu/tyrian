@@ -4,7 +4,6 @@ declare namespace com {
       namespace request {
 
         interface MonitorWaitRequest extends com.sun.jdi.request.EventRequest {
-
           addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
           addClassFilter(arg0: com.sun.jdi.ReferenceType): void
           addClassFilter(arg0: java.lang.String): void

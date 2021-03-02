@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JTree$EmptySelectionModel extends javax.swing.tree.DefaultTreeSelectionModel {
-
       protected static readonly sharedInstance: javax.swing.JTree$EmptySelectionModel
       protected constructor()
       public static sharedInstance(): javax.swing.JTree$EmptySelectionModel

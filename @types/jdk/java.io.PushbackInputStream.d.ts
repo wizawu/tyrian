@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class PushbackInputStream extends java.io.FilterInputStream {
-
       protected buf: byte[]
       protected pos: int
       public constructor(arg0: java.io.InputStream, arg1: int)

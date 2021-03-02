@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Container extends java.awt.Component {
-
       layoutMgr: java.awt.LayoutManager
       containerListener: java.awt.event.ContainerListener
       listeningChildren: int
@@ -19,7 +18,7 @@ declare namespace java {
       public countComponents(): int
       public getComponent(arg0: int): java.awt.Component
       public getComponents(): java.awt.Component[]
-      readonly getComponents_NoClientCode(): java.awt.Component[]
+      getComponents_NoClientCode(): java.awt.Component[]
       getComponentsSync(): java.awt.Component[]
       public getInsets(): java.awt.Insets
       public insets(): java.awt.Insets
@@ -27,15 +26,15 @@ declare namespace java {
       public add(arg0: java.lang.String, arg1: java.awt.Component): java.awt.Component
       public add(arg0: java.awt.Component, arg1: int): java.awt.Component
       canContainFocusOwner(arg0: java.awt.Component): boolean
-      readonly hasHeavyweightDescendants(): boolean
-      readonly hasLightweightDescendants(): boolean
+      hasHeavyweightDescendants(): boolean
+      hasLightweightDescendants(): boolean
       getHeavyweightContainer(): java.awt.Container
       public setComponentZOrder(arg0: java.awt.Component, arg1: int): void
       public getComponentZOrder(arg0: java.awt.Component): int
       public add(arg0: java.awt.Component, arg1: java.lang.Object): void
       public add(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
       protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
-      readonly updateChildGraphicsData(arg0: java.awt.GraphicsConfiguration): boolean
+      updateChildGraphicsData(arg0: java.awt.GraphicsConfiguration): boolean
       checkGD(arg0: java.lang.String): void
       public remove(arg0: int): void
       public remove(arg0: java.awt.Component): void
@@ -45,8 +44,8 @@ declare namespace java {
       adjustDescendants(arg0: int): void
       adjustDescendantsOnParent(arg0: int): void
       countHierarchyMembers(): int
-      readonly createHierarchyEvents(arg0: int, arg1: java.awt.Component, arg2: java.awt.Container, arg3: long, arg4: boolean): int
-      readonly createChildHierarchyEvents(arg0: int, arg1: long, arg2: boolean): void
+      createHierarchyEvents(arg0: int, arg1: java.awt.Component, arg2: java.awt.Container, arg3: long, arg4: boolean): int
+      createChildHierarchyEvents(arg0: int, arg1: long, arg2: boolean): void
       public getLayout(): java.awt.LayoutManager
       public setLayout(arg0: java.awt.LayoutManager): void
       public doLayout(): void
@@ -55,7 +54,7 @@ declare namespace java {
       invalidateParent(): void
       public invalidate(): void
       public validate(): void
-      readonly validateUnconditionally(): void
+      validateUnconditionally(): void
       protected validateTree(): void
       invalidateTree(): void
       public setFont(arg0: java.awt.Font): void
@@ -94,8 +93,8 @@ declare namespace java {
       public getMousePosition(arg0: boolean): java.awt.Point
       isSameOrAncestorOf(arg0: java.awt.Component, arg1: boolean): boolean
       public findComponentAt(arg0: int, arg1: int): java.awt.Component
-      readonly findComponentAt(arg0: int, arg1: int, arg2: boolean): java.awt.Component
-      readonly findComponentAtImpl(arg0: int, arg1: int, arg2: boolean): java.awt.Component
+      findComponentAt(arg0: int, arg1: int, arg2: boolean): java.awt.Component
+      findComponentAtImpl(arg0: int, arg1: int, arg2: boolean): java.awt.Component
       public findComponentAt(arg0: java.awt.Point): java.awt.Component
       public addNotify(): void
       public removeNotify(): void
@@ -107,17 +106,17 @@ declare namespace java {
       public getFocusTraversalKeys(arg0: int): java.util.Set<java.awt.AWTKeyStroke>
       public areFocusTraversalKeysSet(arg0: int): boolean
       public isFocusCycleRoot(arg0: java.awt.Container): boolean
-      readonly containsFocus(): boolean
+      containsFocus(): boolean
       clearMostRecentFocusOwnerOnHide(): void
       clearCurrentFocusCycleRootOnHide(): void
-      readonly getTraversalRoot(): java.awt.Container
+      getTraversalRoot(): java.awt.Container
       public setFocusTraversalPolicy(arg0: java.awt.FocusTraversalPolicy): void
       public getFocusTraversalPolicy(): java.awt.FocusTraversalPolicy
       public isFocusTraversalPolicySet(): boolean
       public setFocusCycleRoot(arg0: boolean): void
       public isFocusCycleRoot(): boolean
-      public readonly setFocusTraversalPolicyProvider(arg0: boolean): void
-      public readonly isFocusTraversalPolicyProvider(): boolean
+      public setFocusTraversalPolicyProvider(arg0: boolean): void
+      public isFocusTraversalPolicyProvider(): boolean
       public transferFocusDownCycle(): void
       preProcessKeyEvent(arg0: java.awt.event.KeyEvent): void
       postProcessKeyEvent(arg0: java.awt.event.KeyEvent): void
@@ -128,16 +127,16 @@ declare namespace java {
       getAccessibleAt(arg0: java.awt.Point): javax.accessibility.Accessible
       getAccessibleChildrenCount(): int
       getAccessibleChild(arg0: int): javax.accessibility.Accessible
-      readonly increaseComponentCount(arg0: java.awt.Component): void
-      readonly decreaseComponentCount(arg0: java.awt.Component): void
-      readonly getOpaqueShape(): sun.java2d.pipe.Region
-      readonly recursiveSubtractAndApplyShape(arg0: sun.java2d.pipe.Region): void
-      readonly recursiveSubtractAndApplyShape(arg0: sun.java2d.pipe.Region, arg1: int): void
-      readonly recursiveSubtractAndApplyShape(arg0: sun.java2d.pipe.Region, arg1: int, arg2: int): void
-      readonly recursiveApplyCurrentShape(): void
-      readonly recursiveApplyCurrentShape(arg0: int): void
-      readonly recursiveApplyCurrentShape(arg0: int, arg1: int): void
-      readonly isRecursivelyVisibleUpToHeavyweightContainer(): boolean
+      increaseComponentCount(arg0: java.awt.Component): void
+      decreaseComponentCount(arg0: java.awt.Component): void
+      getOpaqueShape(): sun.java2d.pipe.Region
+      recursiveSubtractAndApplyShape(arg0: sun.java2d.pipe.Region): void
+      recursiveSubtractAndApplyShape(arg0: sun.java2d.pipe.Region, arg1: int): void
+      recursiveSubtractAndApplyShape(arg0: sun.java2d.pipe.Region, arg1: int, arg2: int): void
+      recursiveApplyCurrentShape(): void
+      recursiveApplyCurrentShape(arg0: int): void
+      recursiveApplyCurrentShape(arg0: int, arg1: int): void
+      isRecursivelyVisibleUpToHeavyweightContainer(): boolean
       mixOnShowing(): void
       mixOnHiding(arg0: boolean): void
       mixOnReshaping(): void

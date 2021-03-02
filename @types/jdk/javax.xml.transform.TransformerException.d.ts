@@ -3,7 +3,6 @@ declare namespace javax {
     namespace transform {
 
       class TransformerException extends java.lang.Exception {
-
         locator: javax.xml.transform.SourceLocator
         containedException: java.lang.Throwable
         public getLocator(): javax.xml.transform.SourceLocator

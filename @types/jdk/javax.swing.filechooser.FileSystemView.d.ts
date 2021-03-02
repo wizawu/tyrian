@@ -3,7 +3,6 @@ declare namespace javax {
     namespace filechooser {
 
       abstract class FileSystemView {
-
         static windowsFileSystemView: javax.swing.filechooser.FileSystemView
         static unixFileSystemView: javax.swing.filechooser.FileSystemView
         static genericFileSystemView: javax.swing.filechooser.FileSystemView

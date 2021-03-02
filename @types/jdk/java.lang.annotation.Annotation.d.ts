@@ -3,7 +3,6 @@ declare namespace java {
     namespace annotation {
 
       interface Annotation {
-
         equals(arg0: java.lang.Object): boolean
         hashCode(): int
         toString(): java.lang.String

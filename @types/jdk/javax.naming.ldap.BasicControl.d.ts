@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ldap {
 
       class BasicControl implements javax.naming.ldap.Control {
-
         protected id: java.lang.String
         protected criticality: boolean
         protected value: byte[]

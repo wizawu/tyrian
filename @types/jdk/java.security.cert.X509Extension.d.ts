@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       interface X509Extension {
-
         hasUnsupportedCriticalExtension(): boolean
         getCriticalExtensionOIDs(): java.util.Set<java.lang.String>
         getNonCriticalExtensionOIDs(): java.util.Set<java.lang.String>

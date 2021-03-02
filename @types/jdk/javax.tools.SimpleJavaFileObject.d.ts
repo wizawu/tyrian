@@ -2,7 +2,6 @@ declare namespace javax {
   namespace tools {
 
     class SimpleJavaFileObject implements javax.tools.JavaFileObject {
-
       protected readonly uri: java.net.URI
       protected readonly kind: javax.tools.JavaFileObject$Kind
       protected constructor(arg0: java.net.URI, arg1: javax.tools.JavaFileObject$Kind)

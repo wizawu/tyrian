@@ -3,7 +3,6 @@ declare namespace javax {
     namespace transform {
 
       class TransformerConfigurationException extends javax.xml.transform.TransformerException {
-
         public constructor()
         public constructor(arg0: java.lang.String)
         public constructor(arg0: java.lang.Throwable)

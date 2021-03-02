@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     abstract class AbstractMap<K,V> implements java.util.Map<K,V> {
-
       keySet: java.util.Set<K>
       values: java.util.Collection<V>
       protected constructor()

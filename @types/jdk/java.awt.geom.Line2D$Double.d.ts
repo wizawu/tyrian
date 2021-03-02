@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       class Line2D$Double extends java.awt.geom.Line2D implements java.io.Serializable {
-
         public x1: double
         public y1: double
         public x2: double

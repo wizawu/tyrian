@@ -3,7 +3,6 @@ declare namespace org {
     namespace jgss {
 
       class GSSException extends java.lang.Exception {
-
         public static readonly BAD_BINDINGS: int
         public static readonly BAD_MECH: int
         public static readonly BAD_NAME: int

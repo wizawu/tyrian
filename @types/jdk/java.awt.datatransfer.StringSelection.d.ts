@@ -3,7 +3,6 @@ declare namespace java {
     namespace datatransfer {
 
       class StringSelection implements java.awt.datatransfer.Transferable, java.awt.datatransfer.ClipboardOwner {
-
         public constructor(arg0: java.lang.String)
         public getTransferDataFlavors(): java.awt.datatransfer.DataFlavor[]
         public isDataFlavorSupported(arg0: java.awt.datatransfer.DataFlavor): boolean

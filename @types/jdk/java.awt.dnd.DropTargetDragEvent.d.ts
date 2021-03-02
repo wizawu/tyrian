@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       class DropTargetDragEvent extends java.awt.dnd.DropTargetEvent {
-
         public constructor(arg0: java.awt.dnd.DropTargetContext, arg1: java.awt.Point, arg2: int, arg3: int)
         public getLocation(): java.awt.Point
         public getCurrentDataFlavors(): java.awt.datatransfer.DataFlavor[]

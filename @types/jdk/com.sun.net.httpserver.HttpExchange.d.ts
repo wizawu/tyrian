@@ -4,7 +4,6 @@ declare namespace com {
       namespace httpserver {
 
         abstract class HttpExchange {
-
           protected constructor()
           public abstract getRequestHeaders(): com.sun.net.httpserver.Headers
           public abstract getResponseHeaders(): com.sun.net.httpserver.Headers

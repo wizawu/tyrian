@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     abstract class FilterReader extends java.io.Reader {
-
       protected in: java.io.Reader
       protected constructor(arg0: java.io.Reader)
       public read(): int

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       class IIOByteBuffer {
-
         public constructor(arg0: byte[], arg1: int, arg2: int)
         public getData(): byte[]
         public setData(arg0: byte[]): void

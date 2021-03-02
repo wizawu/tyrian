@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JTabbedPane extends javax.swing.JComponent implements java.io.Serializable, javax.accessibility.Accessible, javax.swing.SwingConstants {
-
       public static readonly WRAP_TAB_LAYOUT: int
       public static readonly SCROLL_TAB_LAYOUT: int
       protected tabPlacement: int

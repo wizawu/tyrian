@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class ConcurrentHashMap$KeySetView<K,V> extends java.util.concurrent.ConcurrentHashMap$CollectionView<K,V,K> implements java.util.Set<K>, java.io.Serializable {
-
         constructor(arg0: java.util.concurrent.ConcurrentHashMap<K,V>, arg1: V)
         public getMappedValue(): V
         public contains(arg0: java.lang.Object): boolean

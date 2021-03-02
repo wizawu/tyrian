@@ -3,7 +3,6 @@ declare namespace javax {
     namespace tree {
 
       interface TreeNode {
-
         getChildAt(arg0: int): javax.swing.tree.TreeNode
         getChildCount(): int
         getParent(): javax.swing.tree.TreeNode

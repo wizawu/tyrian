@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       abstract class RGBImageFilter extends java.awt.image.ImageFilter {
-
         protected origmodel: java.awt.image.ColorModel
         protected newmodel: java.awt.image.ColorModel
         protected canFilterIndexColorModel: boolean

@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Canvas extends java.awt.Component implements javax.accessibility.Accessible {
-
       public constructor()
       public constructor(arg0: java.awt.GraphicsConfiguration)
       setGraphicsConfiguration(arg0: java.awt.GraphicsConfiguration): void

@@ -3,7 +3,6 @@ declare namespace java {
     namespace desktop {
 
       class UserSessionEvent$Reason extends java.lang.Enum<java.awt.desktop.UserSessionEvent$Reason> {
-
         public static readonly UNSPECIFIED: java.awt.desktop.UserSessionEvent$Reason
         public static readonly CONSOLE: java.awt.desktop.UserSessionEvent$Reason
         public static readonly REMOTE: java.awt.desktop.UserSessionEvent$Reason

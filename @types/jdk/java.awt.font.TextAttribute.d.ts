@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class TextAttribute extends java.text.AttributedCharacterIterator$Attribute {
-
         static readonly serialVersionUID: long
         public static readonly FAMILY: java.awt.font.TextAttribute
         public static readonly WEIGHT: java.awt.font.TextAttribute

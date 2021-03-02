@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface LambdaExpressionTree extends com.sun.source.tree.ExpressionTree {
-
           getParameters(): java.util.List<com.sun.source.tree.VariableTree>
           getBody(): com.sun.source.tree.Tree
           getBodyKind(): com.sun.source.tree.LambdaExpressionTree$BodyKind

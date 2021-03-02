@@ -5,7 +5,6 @@ declare namespace com {
         namespace util {
 
           class AccessibilityEventMonitor {
-
             protected static readonly listenerList: com.sun.java.accessibility.util.AccessibilityListenerList
             public constructor()
             public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener): void

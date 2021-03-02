@@ -4,7 +4,6 @@ declare namespace java {
       namespace spi {
 
         interface InputMethodDescriptor {
-
           getAvailableLocales(): java.util.Locale[]
           hasDynamicLocaleList(): boolean
           getInputMethodDisplayName(arg0: java.util.Locale, arg1: java.util.Locale): java.lang.String

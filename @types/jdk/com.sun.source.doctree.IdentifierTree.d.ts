@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         interface IdentifierTree extends com.sun.source.doctree.DocTree {
-
           getName(): javax.lang.model.element.Name
         }
 

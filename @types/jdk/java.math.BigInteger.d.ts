@@ -2,7 +2,6 @@ declare namespace java {
   namespace math {
 
     class BigInteger extends java.lang.Number implements java.lang.Comparable<java.math.BigInteger> {
-
       readonly signum: int
       readonly mag: int[]
       static readonly LONG_MASK: long
@@ -68,8 +67,8 @@ declare namespace java {
       public bitCount(): int
       public isProbablePrime(arg0: int): boolean
       public compareTo(arg0: java.math.BigInteger): int
-      readonly compareMagnitude(arg0: java.math.BigInteger): int
-      readonly compareMagnitude(arg0: long): int
+      compareMagnitude(arg0: java.math.BigInteger): int
+      compareMagnitude(arg0: long): int
       public equals(arg0: java.lang.Object): boolean
       public min(arg0: java.math.BigInteger): java.math.BigInteger
       public max(arg0: java.math.BigInteger): java.math.BigInteger

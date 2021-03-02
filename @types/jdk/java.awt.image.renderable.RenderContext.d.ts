@@ -4,7 +4,6 @@ declare namespace java {
       namespace renderable {
 
         class RenderContext implements java.lang.Cloneable {
-
           hints: java.awt.RenderingHints
           usr2dev: java.awt.geom.AffineTransform
           aoi: java.awt.Shape

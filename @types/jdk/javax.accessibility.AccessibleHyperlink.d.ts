@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     abstract class AccessibleHyperlink implements javax.accessibility.AccessibleAction {
-
       public constructor()
       public abstract isValid(): boolean
       public abstract getAccessibleActionCount(): int

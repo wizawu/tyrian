@@ -3,7 +3,6 @@ declare namespace javax {
     namespace table {
 
       class JTableHeader extends javax.swing.JComponent implements javax.swing.event.TableColumnModelListener, javax.accessibility.Accessible {
-
         protected table: javax.swing.JTable
         protected columnModel: javax.swing.table.TableColumnModel
         protected reorderingAllowed: boolean

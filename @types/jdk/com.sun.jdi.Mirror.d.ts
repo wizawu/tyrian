@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface Mirror {
-
         virtualMachine(): com.sun.jdi.VirtualMachine
         toString(): java.lang.String
       }

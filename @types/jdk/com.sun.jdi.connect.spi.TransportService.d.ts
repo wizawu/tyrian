@@ -5,7 +5,6 @@ declare namespace com {
         namespace spi {
 
           abstract class TransportService {
-
             public constructor()
             public abstract name(): java.lang.String
             public abstract description(): java.lang.String

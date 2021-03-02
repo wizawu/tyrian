@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalScrollBarUI extends javax.swing.plaf.basic.BasicScrollBarUI {
-
           protected increaseButton: javax.swing.plaf.metal.MetalScrollButton
           protected decreaseButton: javax.swing.plaf.metal.MetalScrollButton
           protected scrollBarWidth: int

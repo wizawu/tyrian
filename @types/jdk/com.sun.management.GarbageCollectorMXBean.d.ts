@@ -3,7 +3,6 @@ declare namespace com {
     namespace management {
 
       interface GarbageCollectorMXBean extends java.lang.management.GarbageCollectorMXBean {
-
         getLastGcInfo(): com.sun.management.GcInfo
       }
 

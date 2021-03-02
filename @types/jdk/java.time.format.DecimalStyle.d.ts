@@ -3,7 +3,6 @@ declare namespace java {
     namespace format {
 
       class DecimalStyle {
-
         public static readonly STANDARD: java.time.format.DecimalStyle
         public static getAvailableLocales(): java.util.Set<java.util.Locale>
         public static ofDefaultLocale(): java.time.format.DecimalStyle

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         abstract class HTMLEditorKit$HTMLTextAction extends javax.swing.text.StyledEditorKit$StyledTextAction {
-
           public constructor(arg0: java.lang.String)
           protected getHTMLDocument(arg0: javax.swing.JEditorPane): javax.swing.text.html.HTMLDocument
           protected getHTMLEditorKit(arg0: javax.swing.JEditorPane): javax.swing.text.html.HTMLEditorKit

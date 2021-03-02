@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface NamedNodeMap {
-
         getNamedItem(arg0: java.lang.String): org.w3c.dom.Node
         setNamedItem(arg0: org.w3c.dom.Node): org.w3c.dom.Node
         removeNamedItem(arg0: java.lang.String): org.w3c.dom.Node

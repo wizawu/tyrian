@@ -4,7 +4,6 @@ declare namespace com {
       namespace connect {
 
         class VMStartException extends java.lang.Exception {
-
           process: java.lang.Process
           public constructor(arg0: java.lang.Process)
           public constructor(arg0: java.lang.String, arg1: java.lang.Process)

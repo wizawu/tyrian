@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jfr {
 
     class Recording implements java.io.Closeable {
-
       public constructor(arg0: java.util.Map<java.lang.String,java.lang.String>)
       public constructor()
       public constructor(arg0: jdk.jfr.Configuration)

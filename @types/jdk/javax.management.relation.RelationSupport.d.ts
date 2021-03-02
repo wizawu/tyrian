@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       class RelationSupport implements javax.management.relation.RelationSupportMBean, javax.management.MBeanRegistration {
-
         public constructor(arg0: java.lang.String, arg1: javax.management.ObjectName, arg2: java.lang.String, arg3: javax.management.relation.RoleList)
         public constructor(arg0: java.lang.String, arg1: javax.management.ObjectName, arg2: javax.management.MBeanServer, arg3: java.lang.String, arg4: javax.management.relation.RoleList)
         public getRole(arg0: java.lang.String): java.util.List<javax.management.ObjectName>

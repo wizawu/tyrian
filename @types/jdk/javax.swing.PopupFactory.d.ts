@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class PopupFactory {
-
       static readonly LIGHT_WEIGHT_POPUP: int
       static readonly MEDIUM_WEIGHT_POPUP: int
       static readonly HEAVY_WEIGHT_POPUP: int

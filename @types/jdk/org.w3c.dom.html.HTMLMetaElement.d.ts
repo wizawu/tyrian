@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLMetaElement extends org.w3c.dom.html.HTMLElement {
-
           getContent(): java.lang.String
           setContent(arg0: java.lang.String): void
           getHttpEquiv(): java.lang.String

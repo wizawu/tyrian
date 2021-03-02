@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       class VoiceStatus {
-
         public active: boolean
         public channel: int
         public bank: int

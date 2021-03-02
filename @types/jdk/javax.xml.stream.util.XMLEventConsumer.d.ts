@@ -3,8 +3,11 @@ declare namespace javax {
     namespace stream {
       namespace util {
 
-        interface XMLEventConsumer {
+        interface XMLEventConsumer$$lambda {
+          (arg0: javax.xml.stream.events.XMLEvent): void
+        }
 
+        interface XMLEventConsumer {
           add(arg0: javax.xml.stream.events.XMLEvent): void
         }
 

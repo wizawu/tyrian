@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface VirtualMachineManager {
-
         defaultConnector(): com.sun.jdi.connect.LaunchingConnector
         launchingConnectors(): java.util.List<com.sun.jdi.connect.LaunchingConnector>
         attachingConnectors(): java.util.List<com.sun.jdi.connect.AttachingConnector>

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class UIManager implements java.io.Serializable {
-
       public constructor()
       public static getInstalledLookAndFeels(): javax.swing.UIManager$LookAndFeelInfo[]
       public static setInstalledLookAndFeels(arg0: javax.swing.UIManager$LookAndFeelInfo[]): void

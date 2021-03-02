@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     abstract class AccessibleBundle {
-
       protected key: java.lang.String
       public constructor()
       protected toDisplayString(arg0: java.lang.String, arg1: java.util.Locale): java.lang.String

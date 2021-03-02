@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class ListDataEvent extends java.util.EventObject {
-
         public static readonly CONTENTS_CHANGED: int
         public static readonly INTERVAL_ADDED: int
         public static readonly INTERVAL_REMOVED: int

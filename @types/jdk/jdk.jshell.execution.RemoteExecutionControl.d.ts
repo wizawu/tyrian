@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace execution {
 
       class RemoteExecutionControl extends jdk.jshell.execution.DirectExecutionControl implements jdk.jshell.spi.ExecutionControl {
-
         public static main(arg0: java.lang.String[]): void
         public constructor(arg0: jdk.jshell.execution.LoaderDelegate)
         public constructor()

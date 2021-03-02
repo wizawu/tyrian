@@ -3,7 +3,6 @@ declare namespace javax {
     namespace modelmbean {
 
       interface ModelMBeanInfo {
-
         getDescriptors(arg0: java.lang.String): javax.management.Descriptor[]
         setDescriptors(arg0: javax.management.Descriptor[]): void
         getDescriptor(arg0: java.lang.String, arg1: java.lang.String): javax.management.Descriptor

@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       interface InterruptibleChannel extends java.nio.channels.Channel {
-
         close(): void
       }
 

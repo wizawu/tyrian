@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface DocumentFragment extends org.w3c.dom.Node {
-
       }
 
     }

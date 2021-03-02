@@ -3,7 +3,6 @@ declare namespace org {
     namespace sax {
 
       interface XMLReader {
-
         getFeature(arg0: java.lang.String): boolean
         setFeature(arg0: java.lang.String, arg1: boolean): void
         getProperty(arg0: java.lang.String): java.lang.Object

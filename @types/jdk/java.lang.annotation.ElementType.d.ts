@@ -3,7 +3,6 @@ declare namespace java {
     namespace annotation {
 
       class ElementType extends java.lang.Enum<java.lang.annotation.ElementType> {
-
         public static readonly TYPE: java.lang.annotation.ElementType
         public static readonly FIELD: java.lang.annotation.ElementType
         public static readonly METHOD: java.lang.annotation.ElementType

@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class PipedReader extends java.io.Reader {
-
       closedByWriter: boolean
       closedByReader: boolean
       connected: boolean

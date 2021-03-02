@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class ZipFile implements java.util.zip.ZipConstants, java.io.Closeable {
-
         public static readonly OPEN_READ: int
         public static readonly OPEN_DELETE: int
         public constructor(arg0: java.lang.String)

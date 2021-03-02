@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ldap {
 
       abstract class StartTlsResponse implements javax.naming.ldap.ExtendedResponse {
-
         public static readonly OID: java.lang.String
         protected constructor()
         public getID(): java.lang.String

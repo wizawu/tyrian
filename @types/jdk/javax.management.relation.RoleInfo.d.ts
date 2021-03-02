@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       class RoleInfo implements java.io.Serializable {
-
         public static readonly ROLE_CARDINALITY_INFINITY: int
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: boolean, arg3: boolean, arg4: int, arg5: int, arg6: java.lang.String)
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: boolean, arg3: boolean)

@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Checkbox extends java.awt.Component implements java.awt.ItemSelectable, javax.accessibility.Accessible {
-
       label: java.lang.String
       state: boolean
       group: java.awt.CheckboxGroup

@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface Comment extends org.w3c.dom.CharacterData {
-
       }
 
     }

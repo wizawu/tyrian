@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class HTMLEditorKit$ParserCallback {
-
           public static readonly IMPLIED: java.lang.Object
           public constructor()
           public flush(): void

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthProgressBarUI extends javax.swing.plaf.basic.BasicProgressBarUI implements javax.swing.plaf.synth.SynthUI, java.beans.PropertyChangeListener {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installListeners(): void

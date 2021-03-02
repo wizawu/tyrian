@@ -4,7 +4,6 @@ declare namespace javax {
       namespace multi {
 
         class MultiDesktopIconUI extends javax.swing.plaf.DesktopIconUI {
-
           protected uis: java.util.Vector<javax.swing.plaf.ComponentUI>
           public constructor()
           public getUIs(): javax.swing.plaf.ComponentUI[]

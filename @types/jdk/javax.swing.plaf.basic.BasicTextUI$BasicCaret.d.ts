@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicTextUI$BasicCaret extends javax.swing.text.DefaultCaret implements javax.swing.plaf.UIResource {
-
           public constructor()
         }
 

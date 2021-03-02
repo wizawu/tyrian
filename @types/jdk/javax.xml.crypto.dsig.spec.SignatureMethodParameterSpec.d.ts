@@ -5,7 +5,6 @@ declare namespace javax {
         namespace spec {
 
           interface SignatureMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
-
           }
 
         }

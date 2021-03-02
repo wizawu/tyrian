@@ -4,7 +4,6 @@ declare namespace javax {
       namespace spi {
 
         abstract class SyncProvider {
-
           public static readonly GRADE_NONE: int
           public static readonly GRADE_CHECK_MODIFIED_AT_COMMIT: int
           public static readonly GRADE_CHECK_ALL_AT_COMMIT: int

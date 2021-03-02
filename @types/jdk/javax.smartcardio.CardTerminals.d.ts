@@ -2,7 +2,6 @@ declare namespace javax {
   namespace smartcardio {
 
     abstract class CardTerminals {
-
       protected constructor()
       public list(): java.util.List<javax.smartcardio.CardTerminal>
       public abstract list(arg0: javax.smartcardio.CardTerminals$State): java.util.List<javax.smartcardio.CardTerminal>

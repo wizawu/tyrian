@@ -4,7 +4,6 @@ declare namespace javax {
       namespace multi {
 
         class MultiLookAndFeel extends javax.swing.LookAndFeel {
-
           public constructor()
           public getName(): java.lang.String
           public getID(): java.lang.String

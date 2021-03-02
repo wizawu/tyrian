@@ -3,7 +3,6 @@ declare namespace javax {
     namespace xpath {
 
       abstract class XPathFactory {
-
         public static readonly DEFAULT_PROPERTY_NAME: java.lang.String
         public static readonly DEFAULT_OBJECT_MODEL_URI: java.lang.String
         protected constructor()

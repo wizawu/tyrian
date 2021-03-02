@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     class RuleBasedCollator extends java.text.Collator {
-
       static readonly CHARINDEX: int
       static readonly EXPANDCHARINDEX: int
       static readonly CONTRACTCHARINDEX: int

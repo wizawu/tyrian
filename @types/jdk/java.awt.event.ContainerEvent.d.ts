@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class ContainerEvent extends java.awt.event.ComponentEvent {
-
         public static readonly CONTAINER_FIRST: int
         public static readonly CONTAINER_LAST: int
         public static readonly COMPONENT_ADDED: int

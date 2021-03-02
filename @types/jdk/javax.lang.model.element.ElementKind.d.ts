@@ -4,7 +4,6 @@ declare namespace javax {
       namespace element {
 
         class ElementKind extends java.lang.Enum<javax.lang.model.element.ElementKind> {
-
           public static readonly PACKAGE: javax.lang.model.element.ElementKind
           public static readonly ENUM: javax.lang.model.element.ElementKind
           public static readonly CLASS: javax.lang.model.element.ElementKind

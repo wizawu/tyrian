@@ -3,7 +3,6 @@ declare namespace java {
     namespace http {
 
       abstract class HttpRequest {
-
         protected constructor()
         public static newBuilder(arg0: java.net.URI): java.net.http.HttpRequest$Builder
         public static newBuilder(): java.net.http.HttpRequest$Builder
@@ -14,8 +13,8 @@ declare namespace java {
         public abstract uri(): java.net.URI
         public abstract version(): java.util.Optional<java.net.http.HttpClient$Version>
         public abstract headers(): java.net.http.HttpHeaders
-        public readonly equals(arg0: java.lang.Object): boolean
-        public readonly hashCode(): int
+        public equals(arg0: java.lang.Object): boolean
+        public hashCode(): int
       }
 
     }

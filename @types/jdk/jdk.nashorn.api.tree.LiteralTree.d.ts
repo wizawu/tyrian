@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface LiteralTree extends jdk.nashorn.api.tree.ExpressionTree {
-
           getValue(): java.lang.Object
         }
 

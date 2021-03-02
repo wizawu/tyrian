@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       class XMLStreamException extends java.lang.Exception {
-
         protected nested: java.lang.Throwable
         protected location: javax.xml.stream.Location
         public constructor()

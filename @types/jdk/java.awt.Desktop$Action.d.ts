@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Desktop$Action extends java.lang.Enum<java.awt.Desktop$Action> {
-
       public static readonly OPEN: java.awt.Desktop$Action
       public static readonly EDIT: java.awt.Desktop$Action
       public static readonly PRINT: java.awt.Desktop$Action

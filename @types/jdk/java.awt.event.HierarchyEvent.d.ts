@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class HierarchyEvent extends java.awt.AWTEvent {
-
         public static readonly HIERARCHY_FIRST: int
         public static readonly HIERARCHY_CHANGED: int
         public static readonly ANCESTOR_MOVED: int

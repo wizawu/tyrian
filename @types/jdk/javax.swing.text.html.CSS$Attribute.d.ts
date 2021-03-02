@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class CSS$Attribute {
-
           public static readonly BACKGROUND: javax.swing.text.html.CSS$Attribute
           public static readonly BACKGROUND_ATTACHMENT: javax.swing.text.html.CSS$Attribute
           public static readonly BACKGROUND_COLOR: javax.swing.text.html.CSS$Attribute

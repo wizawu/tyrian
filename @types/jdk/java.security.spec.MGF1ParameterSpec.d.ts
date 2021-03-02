@@ -3,7 +3,6 @@ declare namespace java {
     namespace spec {
 
       class MGF1ParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-
         public static readonly SHA1: java.security.spec.MGF1ParameterSpec
         public static readonly SHA224: java.security.spec.MGF1ParameterSpec
         public static readonly SHA256: java.security.spec.MGF1ParameterSpec

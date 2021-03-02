@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class HashSet<E> extends java.util.AbstractSet<E> implements java.util.Set<E>, java.lang.Cloneable, java.io.Serializable {
-
       static readonly serialVersionUID: long
       public constructor()
       public constructor(arg0: java.util.Collection<E>)

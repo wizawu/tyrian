@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JTextPane extends javax.swing.JEditorPane {
-
       public constructor()
       public constructor(arg0: javax.swing.text.StyledDocument)
       public getUIClassID(): java.lang.String
@@ -22,9 +21,9 @@ declare namespace javax {
       public getParagraphAttributes(): javax.swing.text.AttributeSet
       public setParagraphAttributes(arg0: javax.swing.text.AttributeSet, arg1: boolean): void
       public getInputAttributes(): javax.swing.text.MutableAttributeSet
-      protected readonly getStyledEditorKit(): javax.swing.text.StyledEditorKit
+      protected getStyledEditorKit(): javax.swing.text.StyledEditorKit
       protected createDefaultEditorKit(): javax.swing.text.EditorKit
-      public readonly setEditorKit(arg0: javax.swing.text.EditorKit): void
+      public setEditorKit(arg0: javax.swing.text.EditorKit): void
       protected paramString(): java.lang.String
     }
 

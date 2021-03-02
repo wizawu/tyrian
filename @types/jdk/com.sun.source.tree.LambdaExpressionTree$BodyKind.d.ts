@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         class LambdaExpressionTree$BodyKind extends java.lang.Enum<com.sun.source.tree.LambdaExpressionTree$BodyKind> {
-
           public static readonly EXPRESSION: com.sun.source.tree.LambdaExpressionTree$BodyKind
           public static readonly STATEMENT: com.sun.source.tree.LambdaExpressionTree$BodyKind
           public static values(): com.sun.source.tree.LambdaExpressionTree$BodyKind[]

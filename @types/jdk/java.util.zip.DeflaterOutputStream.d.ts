@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class DeflaterOutputStream extends java.io.FilterOutputStream {
-
         protected def: java.util.zip.Deflater
         protected buf: byte[]
         usesDefaultDeflater: boolean

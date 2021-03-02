@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class NetworkInterface {
-
       constructor()
       constructor(arg0: java.lang.String, arg1: int, arg2: java.net.InetAddress[])
       public getName(): java.lang.String

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class Option implements java.io.Serializable {
-
           public constructor(arg0: javax.swing.text.AttributeSet)
           public setLabel(arg0: java.lang.String): void
           public getLabel(): java.lang.String

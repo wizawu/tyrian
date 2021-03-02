@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace execution {
 
       class JdiExecutionControlProvider implements jdk.jshell.spi.ExecutionControlProvider {
-
         public static readonly PARAM_REMOTE_AGENT: java.lang.String
         public static readonly PARAM_TIMEOUT: java.lang.String
         public static readonly PARAM_HOST_NAME: java.lang.String

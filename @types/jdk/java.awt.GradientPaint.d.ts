@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class GradientPaint implements java.awt.Paint {
-
       p1: java.awt.geom.Point2D$Float
       p2: java.awt.geom.Point2D$Float
       color1: java.awt.Color

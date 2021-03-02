@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class DefaultStyledDocument$ElementSpec {
-
         public static readonly StartTagType: short
         public static readonly EndTagType: short
         public static readonly ContentType: short

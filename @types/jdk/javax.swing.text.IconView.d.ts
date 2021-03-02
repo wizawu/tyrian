@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class IconView extends javax.swing.text.View {
-
         public constructor(arg0: javax.swing.text.Element)
         public paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void
         public getPreferredSpan(arg0: int): float

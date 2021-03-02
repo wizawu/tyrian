@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JRootPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
-
       public static readonly NONE: int
       public static readonly FRAME: int
       public static readonly PLAIN_DIALOG: int
@@ -46,9 +45,9 @@ declare namespace javax {
       public removeNotify(): void
       public setDefaultButton(arg0: javax.swing.JButton): void
       public getDefaultButton(): javax.swing.JButton
-      readonly setUseTrueDoubleBuffering(arg0: boolean): void
-      readonly getUseTrueDoubleBuffering(): boolean
-      readonly disableTrueDoubleBuffering(): void
+      setUseTrueDoubleBuffering(arg0: boolean): void
+      getUseTrueDoubleBuffering(): boolean
+      disableTrueDoubleBuffering(): void
       protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext

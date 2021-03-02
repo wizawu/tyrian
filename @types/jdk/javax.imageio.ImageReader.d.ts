@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
 
     abstract class ImageReader {
-
       protected originatingProvider: javax.imageio.spi.ImageReaderSpi
       protected input: java.lang.Object
       protected seekForwardOnly: boolean

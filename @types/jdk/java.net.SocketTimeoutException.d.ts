@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class SocketTimeoutException extends java.io.InterruptedIOException {
-
       public constructor(arg0: java.lang.String)
       public constructor()
     }

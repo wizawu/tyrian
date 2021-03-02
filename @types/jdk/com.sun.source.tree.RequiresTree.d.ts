@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface RequiresTree extends com.sun.source.tree.DirectiveTree {
-
           isStatic(): boolean
           isTransitive(): boolean
           getModuleName(): com.sun.source.tree.ExpressionTree

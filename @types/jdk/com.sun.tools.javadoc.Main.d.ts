@@ -4,7 +4,6 @@ declare namespace com {
       namespace javadoc {
 
         class Main {
-
           public static main(...arg0: java.lang.String[]): void
           public static execute(...arg0: java.lang.String[]): int
           public static execute(arg0: java.lang.ClassLoader, ...arg1: java.lang.String[]): int

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace processing {
 
       interface Completion {
-
         getValue(): java.lang.String
         getMessage(): java.lang.String
       }

@@ -3,7 +3,6 @@ declare namespace java {
     namespace beancontext {
 
       interface BeanContextServiceProviderBeanInfo extends java.beans.BeanInfo {
-
         getServicesBeanInfo(): java.beans.BeanInfo[]
       }
 

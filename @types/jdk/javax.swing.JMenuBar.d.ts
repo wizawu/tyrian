@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JMenuBar extends javax.swing.JComponent implements javax.accessibility.Accessible, javax.swing.MenuElement {
-
       public constructor()
       public getUI(): javax.swing.plaf.MenuBarUI
       public setUI(arg0: javax.swing.plaf.MenuBarUI): void

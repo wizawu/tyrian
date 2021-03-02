@@ -4,7 +4,6 @@ declare namespace com {
       namespace auth {
 
         class UnixNumericUserPrincipal implements java.security.Principal, java.io.Serializable {
-
           public constructor(arg0: java.lang.String)
           public constructor(arg0: long)
           public getName(): java.lang.String

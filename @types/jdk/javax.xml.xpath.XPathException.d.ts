@@ -3,7 +3,6 @@ declare namespace javax {
     namespace xpath {
 
       class XPathException extends java.lang.Exception {
-
         public constructor(arg0: java.lang.String)
         public constructor(arg0: java.lang.Throwable)
         public getCause(): java.lang.Throwable

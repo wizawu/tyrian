@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Insets implements java.lang.Cloneable, java.io.Serializable {
-
       public top: int
       public left: int
       public bottom: int

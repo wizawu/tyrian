@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     abstract class InputStream implements java.io.Closeable {
-
       public constructor()
       public static nullInputStream(): java.io.InputStream
       public abstract read(): int

@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface SwitchTree extends com.sun.source.tree.StatementTree {
-
           getExpression(): com.sun.source.tree.ExpressionTree
           getCases(): java.util.List<com.sun.source.tree.CaseTree>
         }

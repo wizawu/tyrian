@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface AnnotationDesc$ElementValuePair {
-
         element(): com.sun.javadoc.AnnotationTypeElementDoc
         value(): com.sun.javadoc.AnnotationValue
       }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     interface BoundedRangeModel {
-
       getMinimum(): int
       setMinimum(arg0: int): void
       getMaximum(): int

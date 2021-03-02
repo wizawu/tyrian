@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class Query {
-
       public static readonly GT: int
       public static readonly LT: int
       public static readonly GE: int

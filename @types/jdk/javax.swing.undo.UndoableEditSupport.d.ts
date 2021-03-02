@@ -3,7 +3,6 @@ declare namespace javax {
     namespace undo {
 
       class UndoableEditSupport {
-
         protected updateLevel: int
         protected compoundEdit: javax.swing.undo.CompoundEdit
         protected listeners: java.util.Vector<javax.swing.event.UndoableEditListener>

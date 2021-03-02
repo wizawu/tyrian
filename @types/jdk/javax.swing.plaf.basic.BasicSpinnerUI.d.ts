@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicSpinnerUI extends javax.swing.plaf.SpinnerUI {
-
           protected spinner: javax.swing.JSpinner
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI

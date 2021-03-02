@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class PipedInputStream extends java.io.InputStream {
-
       closedByWriter: boolean
       closedByReader: boolean
       connected: boolean

@@ -4,14 +4,13 @@ declare namespace com {
       namespace attach {
 
         abstract class VirtualMachine {
-
           protected constructor(arg0: com.sun.tools.attach.spi.AttachProvider, arg1: java.lang.String)
           public static list(): java.util.List<com.sun.tools.attach.VirtualMachineDescriptor>
           public static attach(arg0: java.lang.String): com.sun.tools.attach.VirtualMachine
           public static attach(arg0: com.sun.tools.attach.VirtualMachineDescriptor): com.sun.tools.attach.VirtualMachine
           public abstract detach(): void
-          public readonly provider(): com.sun.tools.attach.spi.AttachProvider
-          public readonly id(): java.lang.String
+          public provider(): com.sun.tools.attach.spi.AttachProvider
+          public id(): java.lang.String
           public abstract loadAgentLibrary(arg0: java.lang.String, arg1: java.lang.String): void
           public loadAgentLibrary(arg0: java.lang.String): void
           public abstract loadAgentPath(arg0: java.lang.String, arg1: java.lang.String): void

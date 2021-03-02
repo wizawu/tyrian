@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class PopupMenu extends java.awt.Menu {
-
       static nameCounter: int
       isTrayIconPopup: boolean
       public constructor()

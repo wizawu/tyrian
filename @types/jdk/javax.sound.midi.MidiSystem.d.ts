@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       class MidiSystem {
-
         public static getMidiDeviceInfo(): javax.sound.midi.MidiDevice$Info[]
         public static getMidiDevice(arg0: javax.sound.midi.MidiDevice$Info): javax.sound.midi.MidiDevice
         public static getReceiver(): javax.sound.midi.Receiver

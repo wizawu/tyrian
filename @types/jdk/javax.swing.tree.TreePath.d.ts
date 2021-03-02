@@ -3,7 +3,6 @@ declare namespace javax {
     namespace tree {
 
       class TreePath implements java.io.Serializable {
-
         public constructor(arg0: java.lang.Object[])
         public constructor(arg0: java.lang.Object)
         protected constructor(arg0: javax.swing.tree.TreePath, arg1: java.lang.Object)

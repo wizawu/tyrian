@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       class DnDConstants {
-
         public static readonly ACTION_NONE: int
         public static readonly ACTION_COPY: int
         public static readonly ACTION_MOVE: int

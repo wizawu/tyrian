@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace support {
 
         class SimpleLinkRequest implements jdk.dynalink.linker.LinkRequest {
-
           public constructor(arg0: jdk.dynalink.CallSiteDescriptor, arg1: boolean, ...arg2: java.lang.Object[])
           public getArguments(): java.lang.Object[]
           public getReceiver(): java.lang.Object

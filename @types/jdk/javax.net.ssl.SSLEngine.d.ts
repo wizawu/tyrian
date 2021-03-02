@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       abstract class SSLEngine {
-
         protected constructor()
         protected constructor(arg0: java.lang.String, arg1: int)
         public getPeerHost(): java.lang.String

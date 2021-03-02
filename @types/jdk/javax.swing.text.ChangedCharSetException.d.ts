@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class ChangedCharSetException extends java.io.IOException {
-
         charSetSpec: java.lang.String
         charSetKey: boolean
         public constructor(arg0: java.lang.String, arg1: boolean)

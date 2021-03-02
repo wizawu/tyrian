@@ -3,7 +3,6 @@ declare namespace javax {
     namespace processing {
 
       interface Processor {
-
         getSupportedOptions(): java.util.Set<java.lang.String>
         getSupportedAnnotationTypes(): java.util.Set<java.lang.String>
         getSupportedSourceVersion(): javax.lang.model.SourceVersion

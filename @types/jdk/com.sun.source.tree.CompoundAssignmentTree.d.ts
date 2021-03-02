@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface CompoundAssignmentTree extends com.sun.source.tree.ExpressionTree {
-
           getVariable(): com.sun.source.tree.ExpressionTree
           getExpression(): com.sun.source.tree.ExpressionTree
         }

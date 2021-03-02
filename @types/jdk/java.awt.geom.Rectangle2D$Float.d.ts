@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       class Rectangle2D$Float extends java.awt.geom.Rectangle2D implements java.io.Serializable {
-
         public x: float
         public y: float
         public width: float

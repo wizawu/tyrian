@@ -4,7 +4,6 @@ declare namespace com {
       namespace connect {
 
         interface Connector$StringArgument extends com.sun.jdi.connect.Connector$Argument {
-
           isValid(arg0: java.lang.String): boolean
         }
 

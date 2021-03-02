@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class ComponentSampleModel extends java.awt.image.SampleModel {
-
         protected bandOffsets: int[]
         protected bankIndices: int[]
         protected numBands: int
@@ -18,13 +17,13 @@ declare namespace java {
         public createDataBuffer(): java.awt.image.DataBuffer
         public getOffset(arg0: int, arg1: int): int
         public getOffset(arg0: int, arg1: int, arg2: int): int
-        public readonly getSampleSize(): int[]
-        public readonly getSampleSize(arg0: int): int
-        public readonly getBankIndices(): int[]
-        public readonly getBandOffsets(): int[]
-        public readonly getScanlineStride(): int
-        public readonly getPixelStride(): int
-        public readonly getNumDataElements(): int
+        public getSampleSize(): int[]
+        public getSampleSize(arg0: int): int
+        public getBankIndices(): int[]
+        public getBandOffsets(): int[]
+        public getScanlineStride(): int
+        public getPixelStride(): int
+        public getNumDataElements(): int
         public getDataElements(arg0: int, arg1: int, arg2: java.lang.Object, arg3: java.awt.image.DataBuffer): java.lang.Object
         public getPixel(arg0: int, arg1: int, arg2: int[], arg3: java.awt.image.DataBuffer): int[]
         public getPixels(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int[], arg5: java.awt.image.DataBuffer): int[]

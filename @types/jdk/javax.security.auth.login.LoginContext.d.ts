@@ -4,7 +4,6 @@ declare namespace javax {
       namespace login {
 
         class LoginContext {
-
           public constructor(arg0: java.lang.String)
           public constructor(arg0: java.lang.String, arg1: javax.security.auth.Subject)
           public constructor(arg0: java.lang.String, arg1: javax.security.auth.callback.CallbackHandler)

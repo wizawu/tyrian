@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jshell {
 
     class Snippet$Kind extends java.lang.Enum<jdk.jshell.Snippet$Kind> {
-
       public static readonly IMPORT: jdk.jshell.Snippet$Kind
       public static readonly TYPE_DECL: jdk.jshell.Snippet$Kind
       public static readonly METHOD: jdk.jshell.Snippet$Kind

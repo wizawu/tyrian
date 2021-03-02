@@ -4,7 +4,6 @@ declare namespace javax {
       namespace dom {
 
         class DOMResult implements javax.xml.transform.Result {
-
           public static readonly FEATURE: java.lang.String
           public constructor()
           public constructor(arg0: org.w3c.dom.Node)

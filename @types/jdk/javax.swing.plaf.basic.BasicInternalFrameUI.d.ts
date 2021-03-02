@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicInternalFrameUI extends javax.swing.plaf.InternalFrameUI {
-
           protected frame: javax.swing.JInternalFrame
           protected borderListener: javax.swing.event.MouseInputAdapter
           protected propertyChangeListener: java.beans.PropertyChangeListener
@@ -47,10 +46,10 @@ declare namespace javax {
           protected createEastPane(arg0: javax.swing.JInternalFrame): javax.swing.JComponent
           protected createBorderListener(arg0: javax.swing.JInternalFrame): javax.swing.event.MouseInputAdapter
           protected createInternalFrameListener(): void
-          protected readonly isKeyBindingRegistered(): boolean
-          protected readonly setKeyBindingRegistered(arg0: boolean): void
-          public readonly isKeyBindingActive(): boolean
-          protected readonly setKeyBindingActive(arg0: boolean): void
+          protected isKeyBindingRegistered(): boolean
+          protected setKeyBindingRegistered(arg0: boolean): void
+          public isKeyBindingActive(): boolean
+          protected setKeyBindingActive(arg0: boolean): void
           protected setupMenuOpenKey(): void
           protected setupMenuCloseKey(): void
           public getNorthPane(): javax.swing.JComponent

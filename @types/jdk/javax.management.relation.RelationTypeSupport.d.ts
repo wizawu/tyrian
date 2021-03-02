@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       class RelationTypeSupport implements javax.management.relation.RelationType {
-
         public constructor(arg0: java.lang.String, arg1: javax.management.relation.RoleInfo[])
         protected constructor(arg0: java.lang.String)
         public getRelationTypeName(): java.lang.String

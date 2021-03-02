@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Throwable implements java.io.Serializable {
-
       static readonly $assertionsDisabled: boolean
       public constructor()
       public constructor(arg0: java.lang.String)
@@ -20,8 +19,8 @@ declare namespace java {
       public fillInStackTrace(): java.lang.Throwable
       public getStackTrace(): java.lang.StackTraceElement[]
       public setStackTrace(arg0: java.lang.StackTraceElement[]): void
-      public readonly addSuppressed(arg0: java.lang.Throwable): void
-      public readonly getSuppressed(): java.lang.Throwable[]
+      public addSuppressed(arg0: java.lang.Throwable): void
+      public getSuppressed(): java.lang.Throwable[]
     }
 
   }

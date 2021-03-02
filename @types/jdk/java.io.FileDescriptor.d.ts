@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class FileDescriptor {
-
       public static readonly in: java.io.FileDescriptor
       public static readonly out: java.io.FileDescriptor
       public static readonly err: java.io.FileDescriptor

@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class LineNumberReader extends java.io.BufferedReader {
-
       public constructor(arg0: java.io.Reader)
       public constructor(arg0: java.io.Reader, arg1: int)
       public setLineNumber(arg0: int): void

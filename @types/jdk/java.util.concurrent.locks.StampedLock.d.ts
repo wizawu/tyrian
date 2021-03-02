@@ -4,7 +4,6 @@ declare namespace java {
       namespace locks {
 
         class StampedLock implements java.io.Serializable {
-
           readLockView: java.util.concurrent.locks.StampedLock$ReadLockView
           writeLockView: java.util.concurrent.locks.StampedLock$WriteLockView
           readWriteLockView: java.util.concurrent.locks.StampedLock$ReadWriteLockView
@@ -38,8 +37,8 @@ declare namespace java {
           public asReadLock(): java.util.concurrent.locks.Lock
           public asWriteLock(): java.util.concurrent.locks.Lock
           public asReadWriteLock(): java.util.concurrent.locks.ReadWriteLock
-          readonly unstampedUnlockWrite(): void
-          readonly unstampedUnlockRead(): void
+          unstampedUnlockWrite(): void
+          unstampedUnlockRead(): void
         }
 
       }

@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class BufferedOutputStream extends java.io.FilterOutputStream {
-
       protected buf: byte[]
       protected count: int
       public constructor(arg0: java.io.OutputStream)

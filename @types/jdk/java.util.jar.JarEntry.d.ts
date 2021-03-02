@@ -3,7 +3,6 @@ declare namespace java {
     namespace jar {
 
       class JarEntry extends java.util.zip.ZipEntry {
-
         attr: java.util.jar.Attributes
         certs: java.security.cert.Certificate[]
         signers: java.security.CodeSigner[]

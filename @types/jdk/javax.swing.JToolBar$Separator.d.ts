@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JToolBar$Separator extends javax.swing.JSeparator {
-
       public constructor()
       public constructor(arg0: java.awt.Dimension)
       public getUIClassID(): java.lang.String

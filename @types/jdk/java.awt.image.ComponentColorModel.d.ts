@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class ComponentColorModel extends java.awt.image.ColorModel {
-
         public constructor(arg0: java.awt.color.ColorSpace, arg1: int[], arg2: boolean, arg3: boolean, arg4: int, arg5: int)
         public constructor(arg0: java.awt.color.ColorSpace, arg1: boolean, arg2: boolean, arg3: int, arg4: int)
         public getRed(arg0: int): int

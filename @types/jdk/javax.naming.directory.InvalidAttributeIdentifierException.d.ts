@@ -3,7 +3,6 @@ declare namespace javax {
     namespace directory {
 
       class InvalidAttributeIdentifierException extends javax.naming.NamingException {
-
         public constructor(arg0: java.lang.String)
         public constructor()
       }

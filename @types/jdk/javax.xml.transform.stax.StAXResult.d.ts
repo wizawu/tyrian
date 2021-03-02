@@ -4,7 +4,6 @@ declare namespace javax {
       namespace stax {
 
         class StAXResult implements javax.xml.transform.Result {
-
           public static readonly FEATURE: java.lang.String
           public constructor(arg0: javax.xml.stream.XMLEventWriter)
           public constructor(arg0: javax.xml.stream.XMLStreamWriter)

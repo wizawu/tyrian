@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class TabStop implements java.io.Serializable {
-
         public static readonly ALIGN_LEFT: int
         public static readonly ALIGN_RIGHT: int
         public static readonly ALIGN_CENTER: int

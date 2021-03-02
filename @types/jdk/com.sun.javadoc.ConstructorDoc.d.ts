@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface ConstructorDoc extends com.sun.javadoc.ExecutableMemberDoc {
-
       }
 
     }

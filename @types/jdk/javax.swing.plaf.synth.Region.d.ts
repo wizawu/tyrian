@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class Region {
-
           public static readonly ARROW_BUTTON: javax.swing.plaf.synth.Region
           public static readonly BUTTON: javax.swing.plaf.synth.Region
           public static readonly CHECK_BOX: javax.swing.plaf.synth.Region

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalSeparatorUI extends javax.swing.plaf.basic.BasicSeparatorUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installDefaults(arg0: javax.swing.JSeparator): void

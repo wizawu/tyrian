@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Menu extends java.awt.MenuItem implements java.awt.MenuContainer, javax.accessibility.Accessible {
-
       isHelpMenu: boolean
       public constructor()
       public constructor(arg0: java.lang.String)
@@ -13,9 +12,9 @@ declare namespace java {
       public isTearOff(): boolean
       public getItemCount(): int
       public countItems(): int
-      readonly countItemsImpl(): int
+      countItemsImpl(): int
       public getItem(arg0: int): java.awt.MenuItem
-      readonly getItemImpl(arg0: int): java.awt.MenuItem
+      getItemImpl(arg0: int): java.awt.MenuItem
       public add(arg0: java.awt.MenuItem): java.awt.MenuItem
       public add(arg0: java.lang.String): void
       public insert(arg0: java.awt.MenuItem, arg1: int): void

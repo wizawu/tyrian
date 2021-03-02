@@ -4,7 +4,6 @@ declare namespace com {
       namespace httpserver {
 
         abstract class BasicAuthenticator extends com.sun.net.httpserver.Authenticator {
-
           protected realm: java.lang.String
           public constructor(arg0: java.lang.String)
           public getRealm(): java.lang.String

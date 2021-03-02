@@ -4,7 +4,6 @@ declare namespace java {
       namespace attribute {
 
         interface GroupPrincipal extends java.nio.file.attribute.UserPrincipal {
-
         }
 
       }

@@ -3,11 +3,10 @@ declare namespace java {
     namespace spec {
 
       class RSAOtherPrimeInfo {
-
         public constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger, arg2: java.math.BigInteger)
-        public readonly getPrime(): java.math.BigInteger
-        public readonly getExponent(): java.math.BigInteger
-        public readonly getCrtCoefficient(): java.math.BigInteger
+        public getPrime(): java.math.BigInteger
+        public getExponent(): java.math.BigInteger
+        public getCrtCoefficient(): java.math.BigInteger
       }
 
     }

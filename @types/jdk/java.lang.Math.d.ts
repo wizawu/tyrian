@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Math {
-
       public static readonly E: double
       public static readonly PI: double
       static twoToTheDoubleScaleUp: double

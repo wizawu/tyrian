@@ -4,7 +4,6 @@ declare namespace javax {
       namespace util {
 
         class StreamReaderDelegate implements javax.xml.stream.XMLStreamReader {
-
           public constructor()
           public constructor(arg0: javax.xml.stream.XMLStreamReader)
           public setParent(arg0: javax.xml.stream.XMLStreamReader): void

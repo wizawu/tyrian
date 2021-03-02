@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class UUID implements java.io.Serializable, java.lang.Comparable<java.util.UUID> {
-
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: long, arg1: long)
       public static randomUUID(): java.util.UUID

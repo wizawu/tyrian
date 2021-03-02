@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     abstract class ObjectInputStream$GetField {
-
       public constructor()
       public abstract getObjectStreamClass(): java.io.ObjectStreamClass
       public abstract defaulted(arg0: java.lang.String): boolean

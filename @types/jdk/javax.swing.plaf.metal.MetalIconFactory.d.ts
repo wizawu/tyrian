@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalIconFactory implements java.io.Serializable {
-
           public static readonly DARK: boolean
           public static readonly LIGHT: boolean
           public constructor()

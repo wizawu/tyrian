@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JWindow extends java.awt.Window implements javax.accessibility.Accessible, javax.swing.RootPaneContainer, javax.swing.TransferHandler$HasGetTransferHandler {
-
       protected rootPane: javax.swing.JRootPane
       protected rootPaneCheckingEnabled: boolean
       protected accessibleContext: javax.accessibility.AccessibleContext

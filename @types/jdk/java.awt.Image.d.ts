@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     abstract class Image {
-
       protected accelerationPriority: float
       public static readonly UndefinedProperty: java.lang.Object
       public static readonly SCALE_DEFAULT: int

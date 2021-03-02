@@ -3,7 +3,6 @@ declare namespace java {
     namespace color {
 
       class ProfileDataException extends java.lang.RuntimeException {
-
         public constructor(arg0: java.lang.String)
       }
 

@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class SQLRecoverableException extends java.sql.SQLException {
-
       public constructor()
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: java.lang.String)

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace element {
 
         class Modifier extends java.lang.Enum<javax.lang.model.element.Modifier> {
-
           public static readonly PUBLIC: javax.lang.model.element.Modifier
           public static readonly PROTECTED: javax.lang.model.element.Modifier
           public static readonly PRIVATE: javax.lang.model.element.Modifier

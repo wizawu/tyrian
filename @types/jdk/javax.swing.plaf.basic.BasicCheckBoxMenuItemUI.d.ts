@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicCheckBoxMenuItemUI extends javax.swing.plaf.basic.BasicMenuItemUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected getPropertyPrefix(): java.lang.String

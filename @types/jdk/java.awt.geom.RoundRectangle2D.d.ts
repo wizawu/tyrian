@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       abstract class RoundRectangle2D extends java.awt.geom.RectangularShape {
-
         protected constructor()
         public abstract getArcWidth(): double
         public abstract getArcHeight(): double

@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class ThreadGroup implements java.lang.Thread$UncaughtExceptionHandler {
-
       name: java.lang.String
       maxPriority: int
       destroyed: boolean
@@ -14,26 +13,26 @@ declare namespace java {
       groups: java.lang.ThreadGroup[]
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.ThreadGroup, arg1: java.lang.String)
-      public readonly getName(): java.lang.String
-      public readonly getParent(): java.lang.ThreadGroup
-      public readonly getMaxPriority(): int
-      public readonly isDaemon(): boolean
+      public getName(): java.lang.String
+      public getParent(): java.lang.ThreadGroup
+      public getMaxPriority(): int
+      public isDaemon(): boolean
       public isDestroyed(): boolean
-      public readonly setDaemon(arg0: boolean): void
-      public readonly setMaxPriority(arg0: int): void
-      public readonly parentOf(arg0: java.lang.ThreadGroup): boolean
-      public readonly checkAccess(): void
+      public setDaemon(arg0: boolean): void
+      public setMaxPriority(arg0: int): void
+      public parentOf(arg0: java.lang.ThreadGroup): boolean
+      public checkAccess(): void
       public activeCount(): int
       public enumerate(arg0: java.lang.Thread[]): int
       public enumerate(arg0: java.lang.Thread[], arg1: boolean): int
       public activeGroupCount(): int
       public enumerate(arg0: java.lang.ThreadGroup[]): int
       public enumerate(arg0: java.lang.ThreadGroup[], arg1: boolean): int
-      public readonly stop(): void
-      public readonly interrupt(): void
-      public readonly suspend(): void
-      public readonly resume(): void
-      public readonly destroy(): void
+      public stop(): void
+      public interrupt(): void
+      public suspend(): void
+      public resume(): void
+      public destroy(): void
       addUnstarted(): void
       add(arg0: java.lang.Thread): void
       threadStartFailed(arg0: java.lang.Thread): void

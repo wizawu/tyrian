@@ -4,7 +4,6 @@ declare namespace javax {
       namespace type {
 
         interface NoType extends javax.lang.model.type.TypeMirror {
-
         }
 
       }

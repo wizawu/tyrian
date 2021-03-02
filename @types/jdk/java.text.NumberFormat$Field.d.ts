@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     class NumberFormat$Field extends java.text.Format$Field {
-
       public static readonly INTEGER: java.text.NumberFormat$Field
       public static readonly FRACTION: java.text.NumberFormat$Field
       public static readonly EXPONENT: java.text.NumberFormat$Field

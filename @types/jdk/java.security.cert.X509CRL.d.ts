@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       abstract class X509CRL extends java.security.cert.CRL implements java.security.cert.X509Extension {
-
         protected constructor()
         public equals(arg0: java.lang.Object): boolean
         public hashCode(): int

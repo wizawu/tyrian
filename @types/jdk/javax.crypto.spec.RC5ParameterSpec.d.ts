@@ -3,7 +3,6 @@ declare namespace javax {
     namespace spec {
 
       class RC5ParameterSpec implements java.security.spec.AlgorithmParameterSpec {
-
         public constructor(arg0: int, arg1: int, arg2: int)
         public constructor(arg0: int, arg1: int, arg2: int, arg3: byte[])
         public constructor(arg0: int, arg1: int, arg2: int, arg3: byte[], arg4: int)

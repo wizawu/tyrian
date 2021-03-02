@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       interface Relation {
-
         getRole(arg0: java.lang.String): java.util.List<javax.management.ObjectName>
         getRoles(arg0: java.lang.String[]): javax.management.relation.RoleResult
         getRoleCardinality(arg0: java.lang.String): java.lang.Integer

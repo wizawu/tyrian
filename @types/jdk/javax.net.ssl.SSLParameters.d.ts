@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       class SSLParameters {
-
         public constructor()
         public constructor(arg0: java.lang.String[])
         public constructor(arg0: java.lang.String[], arg1: java.lang.String[])
@@ -19,12 +18,12 @@ declare namespace javax {
         public setAlgorithmConstraints(arg0: java.security.AlgorithmConstraints): void
         public getEndpointIdentificationAlgorithm(): java.lang.String
         public setEndpointIdentificationAlgorithm(arg0: java.lang.String): void
-        public readonly setServerNames(arg0: java.util.List<javax.net.ssl.SNIServerName>): void
-        public readonly getServerNames(): java.util.List<javax.net.ssl.SNIServerName>
-        public readonly setSNIMatchers(arg0: java.util.Collection<javax.net.ssl.SNIMatcher>): void
-        public readonly getSNIMatchers(): java.util.Collection<javax.net.ssl.SNIMatcher>
-        public readonly setUseCipherSuitesOrder(arg0: boolean): void
-        public readonly getUseCipherSuitesOrder(): boolean
+        public setServerNames(arg0: java.util.List<javax.net.ssl.SNIServerName>): void
+        public getServerNames(): java.util.List<javax.net.ssl.SNIServerName>
+        public setSNIMatchers(arg0: java.util.Collection<javax.net.ssl.SNIMatcher>): void
+        public getSNIMatchers(): java.util.Collection<javax.net.ssl.SNIMatcher>
+        public setUseCipherSuitesOrder(arg0: boolean): void
+        public getUseCipherSuitesOrder(): boolean
         public setEnableRetransmissions(arg0: boolean): void
         public getEnableRetransmissions(): boolean
         public setMaximumPacketSize(arg0: int): void

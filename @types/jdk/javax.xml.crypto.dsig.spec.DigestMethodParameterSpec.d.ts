@@ -5,7 +5,6 @@ declare namespace javax {
         namespace spec {
 
           interface DigestMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
-
           }
 
         }

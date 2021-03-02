@@ -4,7 +4,6 @@ declare namespace com {
       namespace sctp {
 
         abstract class SendFailedNotification implements com.sun.nio.sctp.Notification {
-
           protected constructor()
           public abstract association(): com.sun.nio.sctp.Association
           public abstract address(): java.net.SocketAddress

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalToolTipUI extends javax.swing.plaf.basic.BasicToolTipUI {
-
           static sharedInstance: javax.swing.plaf.metal.MetalToolTipUI
           public static readonly padSpaceBetweenStrings: int
           public constructor()

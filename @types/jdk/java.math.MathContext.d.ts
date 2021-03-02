@@ -2,7 +2,6 @@ declare namespace java {
   namespace math {
 
     class MathContext implements java.io.Serializable {
-
       public static readonly UNLIMITED: java.math.MathContext
       public static readonly DECIMAL32: java.math.MathContext
       public static readonly DECIMAL64: java.math.MathContext

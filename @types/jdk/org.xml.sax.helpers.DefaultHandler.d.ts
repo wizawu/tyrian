@@ -4,7 +4,6 @@ declare namespace org {
       namespace helpers {
 
         class DefaultHandler implements org.xml.sax.EntityResolver, org.xml.sax.DTDHandler, org.xml.sax.ContentHandler, org.xml.sax.ErrorHandler {
-
           public constructor()
           public resolveEntity(arg0: java.lang.String, arg1: java.lang.String): org.xml.sax.InputSource
           public notationDecl(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void

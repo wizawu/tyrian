@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       interface SeekableByteChannel extends java.nio.channels.ByteChannel {
-
         read(arg0: java.nio.ByteBuffer): int
         write(arg0: java.nio.ByteBuffer): int
         position(): long

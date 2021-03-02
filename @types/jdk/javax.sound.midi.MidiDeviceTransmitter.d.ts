@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       interface MidiDeviceTransmitter extends javax.sound.midi.Transmitter {
-
         getMidiDevice(): javax.sound.midi.MidiDevice
       }
 

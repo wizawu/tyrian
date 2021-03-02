@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Arrays {
-
       static readonly $assertionsDisabled: boolean
       static rangeCheck(arg0: int, arg1: int, arg2: int): void
       public static sort(arg0: int[]): void

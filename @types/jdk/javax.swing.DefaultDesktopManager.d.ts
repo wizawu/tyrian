@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class DefaultDesktopManager implements javax.swing.DesktopManager, java.io.Serializable {
-
       static readonly HAS_BEEN_ICONIFIED_PROPERTY: java.lang.String
       static readonly DEFAULT_DRAG_MODE: int
       static readonly OUTLINE_DRAG_MODE: int

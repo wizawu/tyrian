@@ -4,7 +4,6 @@ declare namespace com {
       namespace httpserver {
 
         class Headers implements java.util.Map<java.lang.String,java.util.List<java.lang.String>> {
-
           map: java.util.HashMap<java.lang.String,java.util.List<java.lang.String>>
           public constructor()
           public size(): int

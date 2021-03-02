@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JToggleButton extends javax.swing.AbstractButton implements javax.accessibility.Accessible {
-
       public constructor()
       public constructor(arg0: javax.swing.Icon)
       public constructor(arg0: javax.swing.Icon, arg1: boolean)

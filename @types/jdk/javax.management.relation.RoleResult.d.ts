@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       class RoleResult implements java.io.Serializable {
-
         public constructor(arg0: javax.management.relation.RoleList, arg1: javax.management.relation.RoleUnresolvedList)
         public getRoles(): javax.management.relation.RoleList
         public getRolesUnresolved(): javax.management.relation.RoleUnresolvedList

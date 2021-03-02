@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class URI implements java.lang.Comparable<java.net.URI>, java.io.Serializable {
-
       static readonly serialVersionUID: long
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: java.lang.String)

@@ -3,7 +3,6 @@ declare namespace java {
     namespace spec {
 
       class ECFieldFp implements java.security.spec.ECField {
-
         public constructor(arg0: java.math.BigInteger)
         public getFieldSize(): int
         public getP(): java.math.BigInteger

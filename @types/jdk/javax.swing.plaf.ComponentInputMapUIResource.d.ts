@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       class ComponentInputMapUIResource extends javax.swing.ComponentInputMap implements javax.swing.plaf.UIResource {
-
         public constructor(arg0: javax.swing.JComponent)
       }
 

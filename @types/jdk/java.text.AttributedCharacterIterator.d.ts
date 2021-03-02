@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     interface AttributedCharacterIterator extends java.text.CharacterIterator {
-
       getRunStart(): int
       getRunStart(arg0: java.text.AttributedCharacterIterator$Attribute): int
       getRunStart(arg0: java.util.Set<java.text.AttributedCharacterIterator$Attribute>): int

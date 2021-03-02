@@ -3,7 +3,6 @@ declare namespace javax {
     namespace processing {
 
       abstract class AbstractProcessor implements javax.annotation.processing.Processor {
-
         protected processingEnv: javax.annotation.processing.ProcessingEnvironment
         static readonly $assertionsDisabled: boolean
         protected constructor()

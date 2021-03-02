@@ -3,7 +3,6 @@ declare namespace java {
     namespace file {
 
       abstract class FileStore {
-
         protected constructor()
         public abstract name(): java.lang.String
         public abstract type(): java.lang.String

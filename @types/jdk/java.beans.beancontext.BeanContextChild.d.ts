@@ -3,7 +3,6 @@ declare namespace java {
     namespace beancontext {
 
       interface BeanContextChild {
-
         setBeanContext(arg0: java.beans.beancontext.BeanContext): void
         getBeanContext(): java.beans.beancontext.BeanContext
         addPropertyChangeListener(arg0: java.lang.String, arg1: java.beans.PropertyChangeListener): void

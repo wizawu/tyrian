@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface Scope {
-
           getEnclosingScope(): com.sun.source.tree.Scope
           getEnclosingClass(): javax.lang.model.element.TypeElement
           getEnclosingMethod(): javax.lang.model.element.ExecutableElement

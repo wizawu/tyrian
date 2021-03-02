@@ -3,7 +3,6 @@ declare namespace javax {
     namespace tree {
 
       interface TreeModel {
-
         getRoot(): java.lang.Object
         getChild(arg0: java.lang.Object, arg1: int): java.lang.Object
         getChildCount(arg0: java.lang.Object): int

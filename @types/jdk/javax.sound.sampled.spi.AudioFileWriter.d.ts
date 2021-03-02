@@ -4,7 +4,6 @@ declare namespace javax {
       namespace spi {
 
         abstract class AudioFileWriter {
-
           public constructor()
           public abstract getAudioFileTypes(): javax.sound.sampled.AudioFileFormat$Type[]
           public isFileTypeSupported(arg0: javax.sound.sampled.AudioFileFormat$Type): boolean

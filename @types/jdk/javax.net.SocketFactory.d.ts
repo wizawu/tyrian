@@ -2,7 +2,6 @@ declare namespace javax {
   namespace net {
 
     abstract class SocketFactory {
-
       protected constructor()
       public static getDefault(): javax.net.SocketFactory
       public createSocket(): java.net.Socket

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       interface DataLine extends javax.sound.sampled.Line {
-
         drain(): void
         flush(): void
         start(): void

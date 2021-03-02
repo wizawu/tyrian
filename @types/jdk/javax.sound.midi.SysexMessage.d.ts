@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       class SysexMessage extends javax.sound.midi.MidiMessage {
-
         public static readonly SYSTEM_EXCLUSIVE: int
         public static readonly SPECIAL_SYSTEM_EXCLUSIVE: int
         public constructor()

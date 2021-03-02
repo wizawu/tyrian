@@ -4,7 +4,6 @@ declare namespace java {
       namespace renderable {
 
         class RenderableImageOp implements java.awt.image.renderable.RenderableImage {
-
           paramBlock: java.awt.image.renderable.ParameterBlock
           myCRIF: java.awt.image.renderable.ContextualRenderedImageFactory
           boundingBox: java.awt.geom.Rectangle2D

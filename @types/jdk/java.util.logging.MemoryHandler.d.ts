@@ -3,7 +3,6 @@ declare namespace java {
     namespace logging {
 
       class MemoryHandler extends java.util.logging.Handler {
-
         start: int
         count: int
         public constructor()

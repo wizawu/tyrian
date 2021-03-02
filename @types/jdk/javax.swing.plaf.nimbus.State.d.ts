@@ -4,7 +4,6 @@ declare namespace javax {
       namespace nimbus {
 
         abstract class State<T extends javax.swing.JComponent> {
-
           static readonly standardStates: java.util.Map<java.lang.String,javax.swing.plaf.nimbus.State$StandardState>
           static readonly Enabled: javax.swing.plaf.nimbus.State<javax.swing.JComponent>
           static readonly MouseOver: javax.swing.plaf.nimbus.State<javax.swing.JComponent>

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace spi {
 
         abstract class MidiFileWriter {
-
           public constructor()
           public abstract getMidiFileTypes(): int[]
           public abstract getMidiFileTypes(arg0: javax.sound.midi.Sequence): int[]

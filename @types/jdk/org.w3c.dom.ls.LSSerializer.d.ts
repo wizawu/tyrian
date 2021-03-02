@@ -4,7 +4,6 @@ declare namespace org {
       namespace ls {
 
         interface LSSerializer {
-
           getDomConfig(): org.w3c.dom.DOMConfiguration
           getNewLine(): java.lang.String
           setNewLine(arg0: java.lang.String): void

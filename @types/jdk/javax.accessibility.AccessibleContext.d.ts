@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     abstract class AccessibleContext {
-
       public static readonly ACCESSIBLE_NAME_PROPERTY: java.lang.String
       public static readonly ACCESSIBLE_DESCRIPTION_PROPERTY: java.lang.String
       public static readonly ACCESSIBLE_STATE_PROPERTY: java.lang.String

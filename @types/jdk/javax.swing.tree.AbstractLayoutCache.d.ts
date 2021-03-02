@@ -3,7 +3,6 @@ declare namespace javax {
     namespace tree {
 
       abstract class AbstractLayoutCache implements javax.swing.tree.RowMapper {
-
         protected nodeDimensions: javax.swing.tree.AbstractLayoutCache$NodeDimensions
         protected treeModel: javax.swing.tree.TreeModel
         protected treeSelectionModel: javax.swing.tree.TreeSelectionModel

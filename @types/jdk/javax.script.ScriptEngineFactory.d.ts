@@ -2,7 +2,6 @@ declare namespace javax {
   namespace script {
 
     interface ScriptEngineFactory {
-
       getEngineName(): java.lang.String
       getEngineVersion(): java.lang.String
       getExtensions(): java.util.List<java.lang.String>

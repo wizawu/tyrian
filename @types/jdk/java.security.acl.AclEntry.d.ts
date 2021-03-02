@@ -3,7 +3,6 @@ declare namespace java {
     namespace acl {
 
       interface AclEntry extends java.lang.Cloneable {
-
         setPrincipal(arg0: java.security.Principal): boolean
         getPrincipal(): java.security.Principal
         setNegativePermissions(): void

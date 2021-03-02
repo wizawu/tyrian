@@ -5,7 +5,6 @@ declare namespace com {
         namespace util {
 
           class EventID {
-
             public static readonly ACTION: int
             public static readonly ADJUSTMENT: int
             public static readonly COMPONENT: int

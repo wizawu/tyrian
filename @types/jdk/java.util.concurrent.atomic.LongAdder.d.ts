@@ -4,7 +4,6 @@ declare namespace java {
       namespace atomic {
 
         class LongAdder extends java.util.concurrent.atomic.Striped64 implements java.io.Serializable {
-
           public constructor()
           public add(arg0: long): void
           public increment(): void

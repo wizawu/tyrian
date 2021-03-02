@@ -3,7 +3,6 @@ declare namespace javax {
     namespace datatype {
 
       abstract class DatatypeFactory {
-
         public static readonly DATATYPEFACTORY_PROPERTY: java.lang.String
         public static readonly DATATYPEFACTORY_IMPLEMENTATION_CLASS: java.lang.String
         protected constructor()

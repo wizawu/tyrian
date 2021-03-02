@@ -4,7 +4,6 @@ declare namespace javax {
       namespace kerberos {
 
         class KerberosPrincipal implements java.security.Principal, java.io.Serializable {
-
           public static readonly KRB_NT_UNKNOWN: int
           public static readonly KRB_NT_PRINCIPAL: int
           public static readonly KRB_NT_SRV_INST: int

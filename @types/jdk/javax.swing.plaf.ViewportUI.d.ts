@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       abstract class ViewportUI extends javax.swing.plaf.ComponentUI {
-
         public constructor()
       }
 

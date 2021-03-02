@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     abstract class AbstractSequentialList<E> extends java.util.AbstractList<E> {
-
       protected constructor()
       public get(arg0: int): E
       public set(arg0: int, arg1: E): E

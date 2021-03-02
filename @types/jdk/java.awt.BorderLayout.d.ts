@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class BorderLayout implements java.awt.LayoutManager2, java.io.Serializable {
-
       hgap: int
       vgap: int
       north: java.awt.Component

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace tiff {
 
         class ExifGPSTagSet extends javax.imageio.plugins.tiff.TIFFTagSet {
-
           public static readonly TAG_GPS_VERSION_ID: int
           public static readonly GPS_VERSION_2_2: java.lang.String
           public static readonly TAG_GPS_LATITUDE_REF: int

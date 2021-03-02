@@ -4,7 +4,6 @@ declare namespace javax {
       namespace util {
 
         abstract class AbstractAnnotationValueVisitor9<R,P> extends javax.lang.model.util.AbstractAnnotationValueVisitor8<R,P> {
-
           protected constructor()
         }
 

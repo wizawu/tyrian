@@ -4,7 +4,6 @@ declare namespace java {
       namespace locks {
 
         interface ReadWriteLock {
-
           readLock(): java.util.concurrent.locks.Lock
           writeLock(): java.util.concurrent.locks.Lock
         }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JCheckBoxMenuItem extends javax.swing.JMenuItem implements javax.swing.SwingConstants, javax.accessibility.Accessible {
-
       public constructor()
       public constructor(arg0: javax.swing.Icon)
       public constructor(arg0: java.lang.String)

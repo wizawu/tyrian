@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class BorderFactory {
-
       static readonly sharedRaisedBevel: javax.swing.border.Border
       static readonly sharedLoweredBevel: javax.swing.border.Border
       static readonly sharedEtchedBorder: javax.swing.border.Border

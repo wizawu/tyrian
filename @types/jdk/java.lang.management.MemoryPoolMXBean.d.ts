@@ -3,7 +3,6 @@ declare namespace java {
     namespace management {
 
       interface MemoryPoolMXBean extends java.lang.management.PlatformManagedObject {
-
         getName(): java.lang.String
         getType(): java.lang.management.MemoryType
         getUsage(): java.lang.management.MemoryUsage

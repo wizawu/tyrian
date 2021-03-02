@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     abstract class Calendar implements java.io.Serializable, java.lang.Cloneable, java.lang.Comparable<java.util.Calendar> {
-
       public static readonly ERA: int
       public static readonly YEAR: int
       public static readonly MONTH: int
@@ -91,33 +90,33 @@ declare namespace java {
       public static getAvailableLocales(): java.util.Locale[]
       protected abstract computeTime(): void
       protected abstract computeFields(): void
-      public readonly getTime(): java.util.Date
-      public readonly setTime(arg0: java.util.Date): void
+      public getTime(): java.util.Date
+      public setTime(arg0: java.util.Date): void
       public getTimeInMillis(): long
       public setTimeInMillis(arg0: long): void
       public get(arg0: int): int
-      protected readonly internalGet(arg0: int): int
-      readonly internalSet(arg0: int, arg1: int): void
+      protected internalGet(arg0: int): int
+      internalSet(arg0: int, arg1: int): void
       public set(arg0: int, arg1: int): void
-      public readonly set(arg0: int, arg1: int, arg2: int): void
-      public readonly set(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int): void
-      public readonly set(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): void
-      public readonly clear(): void
-      public readonly clear(arg0: int): void
-      public readonly isSet(arg0: int): boolean
+      public set(arg0: int, arg1: int, arg2: int): void
+      public set(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int): void
+      public set(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int, arg5: int): void
+      public clear(): void
+      public clear(arg0: int): void
+      public isSet(arg0: int): boolean
       public getDisplayName(arg0: int, arg1: int, arg2: java.util.Locale): java.lang.String
       public getDisplayNames(arg0: int, arg1: int, arg2: java.util.Locale): java.util.Map<java.lang.String,java.lang.Integer>
       checkDisplayNameParams(arg0: int, arg1: int, arg2: int, arg3: int, arg4: java.util.Locale, arg5: int): boolean
       protected complete(): void
-      readonly isExternallySet(arg0: int): boolean
-      readonly getSetStateFields(): int
-      readonly setFieldsComputed(arg0: int): void
-      readonly setFieldsNormalized(arg0: int): void
-      readonly isPartiallyNormalized(): boolean
-      readonly isFullyNormalized(): boolean
-      readonly setUnnormalized(): void
+      isExternallySet(arg0: int): boolean
+      getSetStateFields(): int
+      setFieldsComputed(arg0: int): void
+      setFieldsNormalized(arg0: int): void
+      isPartiallyNormalized(): boolean
+      isFullyNormalized(): boolean
+      setUnnormalized(): void
       static isFieldSet(arg0: int, arg1: int): boolean
-      readonly selectFields(): int
+      selectFields(): int
       getBaseStyle(arg0: int): int
       public static getAvailableCalendarTypes(): java.util.Set<java.lang.String>
       public getCalendarType(): java.lang.String
@@ -152,7 +151,7 @@ declare namespace java {
       public clone(): java.lang.Object
       static getFieldName(arg0: int): java.lang.String
       public toString(): java.lang.String
-      public readonly toInstant(): java.time.Instant
+      public toInstant(): java.time.Instant
       public compareTo(arg0: java.lang.Object): int
     }
 

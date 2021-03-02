@@ -3,7 +3,6 @@ declare namespace java {
     namespace file {
 
       class FileVisitOption extends java.lang.Enum<java.nio.file.FileVisitOption> {
-
         public static readonly FOLLOW_LINKS: java.nio.file.FileVisitOption
         public static values(): java.nio.file.FileVisitOption[]
         public static valueOf(arg0: java.lang.String): java.nio.file.FileVisitOption

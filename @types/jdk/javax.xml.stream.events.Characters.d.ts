@@ -4,7 +4,6 @@ declare namespace javax {
       namespace events {
 
         interface Characters extends javax.xml.stream.events.XMLEvent {
-
           getData(): java.lang.String
           isWhiteSpace(): boolean
           isCData(): boolean

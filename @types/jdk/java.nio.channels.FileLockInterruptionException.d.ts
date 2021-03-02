@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       class FileLockInterruptionException extends java.io.IOException {
-
         public constructor()
       }
 

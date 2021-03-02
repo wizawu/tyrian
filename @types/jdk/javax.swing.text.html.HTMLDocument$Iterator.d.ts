@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         abstract class HTMLDocument$Iterator {
-
           public constructor()
           public abstract getAttributes(): javax.swing.text.AttributeSet
           public abstract getStartOffset(): int

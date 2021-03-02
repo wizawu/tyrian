@@ -3,7 +3,6 @@ declare namespace java {
     namespace ref {
 
       class ReferenceQueue<T> {
-
         static readonly NULL: java.lang.ref.ReferenceQueue<java.lang.Object>
         static readonly ENQUEUED: java.lang.ref.ReferenceQueue<java.lang.Object>
         static readonly $assertionsDisabled: boolean

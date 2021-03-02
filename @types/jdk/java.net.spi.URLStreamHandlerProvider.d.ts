@@ -3,7 +3,6 @@ declare namespace java {
     namespace spi {
 
       abstract class URLStreamHandlerProvider implements java.net.URLStreamHandlerFactory {
-
         protected constructor()
       }
 

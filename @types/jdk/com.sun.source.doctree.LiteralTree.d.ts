@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         interface LiteralTree extends com.sun.source.doctree.InlineTagTree {
-
           getBody(): com.sun.source.doctree.TextTree
         }
 

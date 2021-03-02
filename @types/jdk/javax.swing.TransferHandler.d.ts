@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class TransferHandler implements java.io.Serializable {
-
       public static readonly NONE: int
       public static readonly COPY: int
       public static readonly MOVE: int

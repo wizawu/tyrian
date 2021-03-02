@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface UnaryTree extends jdk.nashorn.api.tree.ExpressionTree {
-
           getExpression(): jdk.nashorn.api.tree.ExpressionTree
         }
 

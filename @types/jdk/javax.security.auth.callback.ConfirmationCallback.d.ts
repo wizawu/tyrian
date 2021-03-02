@@ -4,7 +4,6 @@ declare namespace javax {
       namespace callback {
 
         class ConfirmationCallback implements javax.security.auth.callback.Callback, java.io.Serializable {
-
           public static readonly UNSPECIFIED_OPTION: int
           public static readonly YES_NO_OPTION: int
           public static readonly YES_NO_CANCEL_OPTION: int

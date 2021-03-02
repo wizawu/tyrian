@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLLinkElement extends org.w3c.dom.html.HTMLElement {
-
           getDisabled(): boolean
           setDisabled(arg0: boolean): void
           getCharset(): java.lang.String

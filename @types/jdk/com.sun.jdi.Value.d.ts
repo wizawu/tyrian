@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface Value extends com.sun.jdi.Mirror {
-
         type(): com.sun.jdi.Type
       }
 

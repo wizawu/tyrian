@@ -4,7 +4,6 @@ declare namespace javax {
       namespace events {
 
         interface DTD extends javax.xml.stream.events.XMLEvent {
-
           getDocumentTypeDeclaration(): java.lang.String
           getProcessedDTD(): java.lang.Object
           getNotations(): java.util.List<javax.xml.stream.events.NotationDeclaration>

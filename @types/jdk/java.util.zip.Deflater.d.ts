@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class Deflater {
-
         public static readonly DEFLATED: int
         public static readonly NO_COMPRESSION: int
         public static readonly BEST_SPEED: int

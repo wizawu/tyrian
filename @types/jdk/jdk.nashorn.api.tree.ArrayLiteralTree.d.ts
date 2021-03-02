@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface ArrayLiteralTree extends jdk.nashorn.api.tree.ExpressionTree {
-
           getElements(): java.util.List<jdk.nashorn.api.tree.ExpressionTree>
         }
 

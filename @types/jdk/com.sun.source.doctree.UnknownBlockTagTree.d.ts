@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         interface UnknownBlockTagTree extends com.sun.source.doctree.BlockTagTree {
-
           getContent(): java.util.List<com.sun.source.doctree.DocTree>
         }
 

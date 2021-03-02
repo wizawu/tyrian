@@ -3,7 +3,6 @@ declare namespace javax {
     namespace tree {
 
       class DefaultTreeModel implements java.io.Serializable, javax.swing.tree.TreeModel {
-
         protected root: javax.swing.tree.TreeNode
         protected listenerList: javax.swing.event.EventListenerList
         protected asksAllowsChildren: boolean

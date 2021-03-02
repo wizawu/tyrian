@@ -2,9 +2,8 @@ declare namespace javax {
   namespace swing {
 
     class OverlayLayout implements java.awt.LayoutManager2, java.io.Serializable {
-
       public constructor(arg0: java.awt.Container)
-      public readonly getTarget(): java.awt.Container
+      public getTarget(): java.awt.Container
       public invalidateLayout(arg0: java.awt.Container): void
       public addLayoutComponent(arg0: java.lang.String, arg1: java.awt.Component): void
       public removeLayoutComponent(arg0: java.awt.Component): void

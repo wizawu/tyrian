@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class OptionalLong {
-
       public static empty(): java.util.OptionalLong
       public static of(arg0: long): java.util.OptionalLong
       public getAsLong(): long

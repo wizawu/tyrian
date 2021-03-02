@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class ListView extends javax.swing.text.html.BlockView {
-
           public constructor(arg0: javax.swing.text.Element)
           public getAlignment(arg0: int): float
           public paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void

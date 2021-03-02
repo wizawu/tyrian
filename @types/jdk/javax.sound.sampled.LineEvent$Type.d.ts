@@ -3,14 +3,13 @@ declare namespace javax {
     namespace sampled {
 
       class LineEvent$Type {
-
         public static readonly OPEN: javax.sound.sampled.LineEvent$Type
         public static readonly CLOSE: javax.sound.sampled.LineEvent$Type
         public static readonly START: javax.sound.sampled.LineEvent$Type
         public static readonly STOP: javax.sound.sampled.LineEvent$Type
         protected constructor(arg0: java.lang.String)
-        public readonly equals(arg0: java.lang.Object): boolean
-        public readonly hashCode(): int
+        public equals(arg0: java.lang.Object): boolean
+        public hashCode(): int
         public toString(): java.lang.String
       }
 

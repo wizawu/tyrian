@@ -3,7 +3,6 @@ declare namespace java {
     namespace stream {
 
       interface Collector<T,A,R> {
-
         supplier(): java.util.function$.Supplier<A>
         accumulator(): java.util.function$.BiConsumer<A,T>
         combiner(): java.util.function$.BinaryOperator<A>

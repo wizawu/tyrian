@@ -3,7 +3,6 @@ declare namespace java {
     namespace http {
 
       class HttpResponse$BodySubscribers {
-
         public static fromSubscriber(arg0: java.util.concurrent.Flow$Subscriber<unknown>): java.net.http.HttpResponse$BodySubscriber<java.lang.Void>
         public static fromSubscriber<S extends java.util.concurrent.Flow$Subscriber<unknown>,T>(arg0: S, arg1: java.util.function$.Function<unknown,T>): java.net.http.HttpResponse$BodySubscriber<T>
         public static fromLineSubscriber(arg0: java.util.concurrent.Flow$Subscriber<unknown>): java.net.http.HttpResponse$BodySubscriber<java.lang.Void>

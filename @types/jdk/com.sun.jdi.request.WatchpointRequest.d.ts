@@ -4,7 +4,6 @@ declare namespace com {
       namespace request {
 
         interface WatchpointRequest extends com.sun.jdi.request.EventRequest {
-
           field(): com.sun.jdi.Field
           addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
           addClassFilter(arg0: com.sun.jdi.ReferenceType): void

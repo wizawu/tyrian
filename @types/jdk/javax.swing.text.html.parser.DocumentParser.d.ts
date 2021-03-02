@@ -5,7 +5,6 @@ declare namespace javax {
         namespace parser {
 
           class DocumentParser extends javax.swing.text.html.parser.Parser {
-
             public constructor(arg0: javax.swing.text.html.parser.DTD)
             public parse(arg0: java.io.Reader, arg1: javax.swing.text.html.HTMLEditorKit$ParserCallback, arg2: boolean): void
             protected handleStartTag(arg0: javax.swing.text.html.parser.TagElement): void

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class BitSet implements java.lang.Cloneable, java.io.Serializable {
-
       static readonly $assertionsDisabled: boolean
       public constructor()
       public constructor(arg0: int)

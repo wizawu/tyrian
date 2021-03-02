@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       abstract class Pipe {
-
         protected constructor()
         public abstract source(): java.nio.channels.Pipe$SourceChannel
         public abstract sink(): java.nio.channels.Pipe$SinkChannel

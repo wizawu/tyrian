@@ -5,7 +5,6 @@ declare namespace com {
         namespace util {
 
           class EventQueueMonitor implements java.awt.event.AWTEventListener {
-
             static topLevelWindows: java.util.Vector<java.awt.Container>
             static topLevelWindowWithFocus: java.awt.Window
             static currentMousePosition: java.awt.Point

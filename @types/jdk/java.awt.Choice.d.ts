@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Choice extends java.awt.Component implements java.awt.ItemSelectable, javax.accessibility.Accessible {
-
       pItems: java.util.Vector<java.lang.String>
       selectedIndex: int
       itemListener: java.awt.event.ItemListener
@@ -12,7 +11,7 @@ declare namespace java {
       public getItemCount(): int
       public countItems(): int
       public getItem(arg0: int): java.lang.String
-      readonly getItemImpl(arg0: int): java.lang.String
+      getItemImpl(arg0: int): java.lang.String
       public add(arg0: java.lang.String): void
       public addItem(arg0: java.lang.String): void
       public insert(arg0: java.lang.String, arg1: int): void

@@ -3,7 +3,6 @@ declare namespace java {
     namespace activation {
 
       abstract class ActivationGroup extends java.rmi.server.UnicastRemoteObject implements java.rmi.activation.ActivationInstantiator {
-
         protected constructor(arg0: java.rmi.activation.ActivationGroupID)
         public inactiveObject(arg0: java.rmi.activation.ActivationID): boolean
         public abstract activeObject(arg0: java.rmi.activation.ActivationID, arg1: java.rmi.Remote): void

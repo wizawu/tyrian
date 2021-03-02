@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalScrollButton extends javax.swing.plaf.basic.BasicArrowButton {
-
           public constructor(arg0: int, arg1: int, arg2: boolean)
           public setFreeStanding(arg0: boolean): void
           public paint(arg0: java.awt.Graphics): void

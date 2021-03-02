@@ -3,7 +3,6 @@ declare namespace java {
     namespace chrono {
 
       class ThaiBuddhistChronology extends java.time.chrono.AbstractChronology implements java.io.Serializable {
-
         public static readonly INSTANCE: java.time.chrono.ThaiBuddhistChronology
         static readonly YEARS_DIFFERENCE: int
         public getId(): java.lang.String

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Locale$Category extends java.lang.Enum<java.util.Locale$Category> {
-
       public static readonly DISPLAY: java.util.Locale$Category
       public static readonly FORMAT: java.util.Locale$Category
       readonly languageKey: java.lang.String

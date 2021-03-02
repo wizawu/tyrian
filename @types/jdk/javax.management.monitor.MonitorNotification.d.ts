@@ -3,7 +3,6 @@ declare namespace javax {
     namespace monitor {
 
       class MonitorNotification extends javax.management.Notification {
-
         public static readonly OBSERVED_OBJECT_ERROR: java.lang.String
         public static readonly OBSERVED_ATTRIBUTE_ERROR: java.lang.String
         public static readonly OBSERVED_ATTRIBUTE_TYPE_ERROR: java.lang.String

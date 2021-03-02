@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Package extends java.lang.NamedPackage implements java.lang.reflect.AnnotatedElement {
-
       public getName(): java.lang.String
       public getSpecificationTitle(): java.lang.String
       public getSpecificationVersion(): java.lang.String

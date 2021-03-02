@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class MediaTracker implements java.io.Serializable {
-
       target: java.awt.Component
       head: java.awt.MediaEntry
       public static readonly LOADING: int

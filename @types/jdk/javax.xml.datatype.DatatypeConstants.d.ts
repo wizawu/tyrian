@@ -3,7 +3,6 @@ declare namespace javax {
     namespace datatype {
 
       class DatatypeConstants {
-
         public static readonly JANUARY: int
         public static readonly FEBRUARY: int
         public static readonly MARCH: int

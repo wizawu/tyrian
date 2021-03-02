@@ -4,7 +4,6 @@ declare namespace com {
       namespace util {
 
         class TaskEvent$Kind extends java.lang.Enum<com.sun.source.util.TaskEvent$Kind> {
-
           public static readonly PARSE: com.sun.source.util.TaskEvent$Kind
           public static readonly ENTER: com.sun.source.util.TaskEvent$Kind
           public static readonly ANALYZE: com.sun.source.util.TaskEvent$Kind

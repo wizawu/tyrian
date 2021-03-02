@@ -3,7 +3,6 @@ declare namespace java {
     namespace color {
 
       class ICC_Profile implements java.io.Serializable {
-
         public static readonly CLASS_INPUT: int
         public static readonly CLASS_DISPLAY: int
         public static readonly CLASS_OUTPUT: int

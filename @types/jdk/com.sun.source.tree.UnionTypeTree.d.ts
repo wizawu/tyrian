@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface UnionTypeTree extends com.sun.source.tree.Tree {
-
           getTypeAlternatives(): java.util.List<com.sun.source.tree.Tree>
         }
 

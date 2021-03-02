@@ -3,7 +3,6 @@ declare namespace java {
     namespace zone {
 
       class ZoneOffsetTransitionRule$TimeDefinition extends java.lang.Enum<java.time.zone.ZoneOffsetTransitionRule$TimeDefinition> {
-
         public static readonly UTC: java.time.zone.ZoneOffsetTransitionRule$TimeDefinition
         public static readonly WALL: java.time.zone.ZoneOffsetTransitionRule$TimeDefinition
         public static readonly STANDARD: java.time.zone.ZoneOffsetTransitionRule$TimeDefinition

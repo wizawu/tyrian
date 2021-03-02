@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Optional<T> {
-
       public static empty<T>(): java.util.Optional<T>
       public static of<T>(arg0: T): java.util.Optional<T>
       public static ofNullable<T>(arg0: T): java.util.Optional<T>

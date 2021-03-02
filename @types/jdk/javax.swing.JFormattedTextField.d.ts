@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JFormattedTextField extends javax.swing.JTextField {
-
       public static readonly COMMIT: int
       public static readonly COMMIT_OR_REVERT: int
       public static readonly REVERT: int

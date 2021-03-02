@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class TreeModelEvent extends java.util.EventObject {
-
         protected path: javax.swing.tree.TreePath
         protected childIndices: int[]
         protected children: java.lang.Object[]

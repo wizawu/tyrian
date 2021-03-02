@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class Notification extends java.util.EventObject {
-
       protected source: java.lang.Object
       public constructor(arg0: java.lang.String, arg1: java.lang.Object, arg2: long)
       public constructor(arg0: java.lang.String, arg1: java.lang.Object, arg2: long, arg3: java.lang.String)

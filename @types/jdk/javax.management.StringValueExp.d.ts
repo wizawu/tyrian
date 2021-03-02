@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class StringValueExp implements javax.management.ValueExp {
-
       public constructor()
       public constructor(arg0: java.lang.String)
       public getValue(): java.lang.String

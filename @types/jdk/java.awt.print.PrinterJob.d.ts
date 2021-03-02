@@ -3,7 +3,6 @@ declare namespace java {
     namespace print {
 
       abstract class PrinterJob {
-
         public static getPrinterJob(): java.awt.print.PrinterJob
         public static lookupPrintServices(): javax.print.PrintService[]
         public static lookupStreamPrintServices(arg0: java.lang.String): javax.print.StreamPrintServiceFactory[]

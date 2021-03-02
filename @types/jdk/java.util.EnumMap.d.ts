@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class EnumMap<K extends java.lang.Enum<K>,V> extends java.util.AbstractMap<K,V> implements java.io.Serializable, java.lang.Cloneable {
-
       public constructor(arg0: java.lang.Class<K>)
       public constructor(arg0: java.util.EnumMap<K,V>)
       public constructor(arg0: java.util.Map<K,V>)

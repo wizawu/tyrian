@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalLabelUI extends javax.swing.plaf.basic.BasicLabelUI {
-
           protected static metalLabelUI: javax.swing.plaf.metal.MetalLabelUI
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI

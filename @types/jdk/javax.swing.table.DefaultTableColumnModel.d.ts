@@ -3,7 +3,6 @@ declare namespace javax {
     namespace table {
 
       class DefaultTableColumnModel implements javax.swing.table.TableColumnModel, java.beans.PropertyChangeListener, javax.swing.event.ListSelectionListener, java.io.Serializable {
-
         protected tableColumns: java.util.Vector<javax.swing.table.TableColumn>
         protected selectionModel: javax.swing.ListSelectionModel
         protected columnMargin: int

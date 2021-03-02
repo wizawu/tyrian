@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class WindowEvent extends java.awt.event.ComponentEvent {
-
         public static readonly WINDOW_FIRST: int
         public static readonly WINDOW_OPENED: int
         public static readonly WINDOW_CLOSING: int

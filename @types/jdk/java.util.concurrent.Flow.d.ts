@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class Flow {
-
         static readonly DEFAULT_BUFFER_SIZE: int
         public static defaultBufferSize(): int
       }

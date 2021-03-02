@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class LayoutStyle {
-
       public static setInstance(arg0: javax.swing.LayoutStyle): void
       public static getInstance(): javax.swing.LayoutStyle
       public constructor()

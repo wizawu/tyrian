@@ -5,7 +5,6 @@ declare namespace com {
         namespace util {
 
           class SwingEventMonitor extends com.sun.java.accessibility.util.AWTEventMonitor {
-
             protected static readonly listenerList: javax.swing.event.EventListenerList
             public constructor()
             public static addAncestorListener(arg0: javax.swing.event.AncestorListener): void

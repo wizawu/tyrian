@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace scripting {
 
         class ScriptUtils {
-
           public static parse(arg0: java.lang.String, arg1: java.lang.String, arg2: boolean): java.lang.String
           public static format(arg0: java.lang.String, arg1: java.lang.Object[]): java.lang.String
           public static makeSynchronizedFunction(arg0: java.lang.Object, arg1: java.lang.Object): java.lang.Object

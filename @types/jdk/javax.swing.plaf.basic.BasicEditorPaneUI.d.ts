@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicEditorPaneUI extends javax.swing.plaf.basic.BasicTextUI {
-
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public constructor()
           protected getPropertyPrefix(): java.lang.String

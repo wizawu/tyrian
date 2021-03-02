@@ -4,7 +4,6 @@ declare namespace com {
       namespace sctp {
 
         class HandlerResult extends java.lang.Enum<com.sun.nio.sctp.HandlerResult> {
-
           public static readonly CONTINUE: com.sun.nio.sctp.HandlerResult
           public static readonly RETURN: com.sun.nio.sctp.HandlerResult
           public static values(): com.sun.nio.sctp.HandlerResult[]

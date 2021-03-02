@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicBorders$SplitPaneBorder implements javax.swing.border.Border, javax.swing.plaf.UIResource {
-
           protected highlight: java.awt.Color
           protected shadow: java.awt.Color
           public constructor(arg0: java.awt.Color, arg1: java.awt.Color)

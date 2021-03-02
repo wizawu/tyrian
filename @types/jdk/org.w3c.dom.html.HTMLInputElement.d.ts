@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLInputElement extends org.w3c.dom.html.HTMLElement {
-
           getDefaultValue(): java.lang.String
           setDefaultValue(arg0: java.lang.String): void
           getDefaultChecked(): boolean

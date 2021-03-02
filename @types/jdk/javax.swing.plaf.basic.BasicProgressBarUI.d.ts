@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicProgressBarUI extends javax.swing.plaf.ProgressBarUI {
-
           protected progressBar: javax.swing.JProgressBar
           protected changeListener: javax.swing.event.ChangeListener
           protected boxRect: java.awt.Rectangle
@@ -40,7 +39,7 @@ declare namespace javax {
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           protected getAnimationIndex(): int
-          protected readonly getFrameCount(): int
+          protected getFrameCount(): int
           protected setAnimationIndex(arg0: int): void
           protected incrementAnimationIndex(): void
         }

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicDirectoryModel extends javax.swing.AbstractListModel<java.lang.Object> implements java.beans.PropertyChangeListener {
-
           public constructor(arg0: javax.swing.JFileChooser)
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void
           public invalidateFileCache(): void

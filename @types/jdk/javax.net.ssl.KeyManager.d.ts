@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       interface KeyManager {
-
       }
 
     }

@@ -4,7 +4,6 @@ declare namespace java {
       namespace attribute {
 
         interface FileAttribute<T> {
-
           name(): java.lang.String
           value(): T
         }

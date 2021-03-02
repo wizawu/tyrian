@@ -3,7 +3,6 @@ declare namespace javax {
     namespace catalog {
 
       class CatalogFeatures {
-
         static readonly CATALOG_FILES: java.lang.String
         static readonly CATALOG_PREFER: java.lang.String
         static readonly CATALOG_DEFER: java.lang.String

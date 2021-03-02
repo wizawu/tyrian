@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         class Tree$Kind extends java.lang.Enum<jdk.nashorn.api.tree.Tree$Kind> {
-
           public static readonly ARRAY_ACCESS: jdk.nashorn.api.tree.Tree$Kind
           public static readonly ARRAY_LITERAL: jdk.nashorn.api.tree.Tree$Kind
           public static readonly ASSIGNMENT: jdk.nashorn.api.tree.Tree$Kind

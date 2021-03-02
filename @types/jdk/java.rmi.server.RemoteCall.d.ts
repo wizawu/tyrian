@@ -3,7 +3,6 @@ declare namespace java {
     namespace server {
 
       interface RemoteCall {
-
         getOutputStream(): java.io.ObjectOutput
         releaseOutputStream(): void
         getInputStream(): java.io.ObjectInput

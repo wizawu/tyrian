@@ -3,7 +3,6 @@ declare namespace javax {
     namespace xpath {
 
       class XPathConstants {
-
         public static readonly NUMBER: javax.xml.namespace.QName
         public static readonly STRING: javax.xml.namespace.QName
         public static readonly BOOLEAN: javax.xml.namespace.QName

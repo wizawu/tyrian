@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface TreeVisitor<R,P> {
-
           visitAnnotatedType(arg0: com.sun.source.tree.AnnotatedTypeTree, arg1: P): R
           visitAnnotation(arg0: com.sun.source.tree.AnnotationTree, arg1: P): R
           visitMethodInvocation(arg0: com.sun.source.tree.MethodInvocationTree, arg1: P): R

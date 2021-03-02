@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class ThreadLocal<T> {
-
       protected initialValue(): T
       public static withInitial<S>(arg0: java.util.function$.Supplier<S>): java.lang.ThreadLocal<S>
       public constructor()

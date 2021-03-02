@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace scripting {
 
         class URLReader extends java.io.Reader {
-
           public constructor(arg0: java.net.URL)
           public constructor(arg0: java.net.URL, arg1: java.lang.String)
           public constructor(arg0: java.net.URL, arg1: java.nio.charset.Charset)

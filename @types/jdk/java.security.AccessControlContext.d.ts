@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     class AccessControlContext {
-
       static getDebug(): sun.security.util.Debug
       public constructor(arg0: java.security.ProtectionDomain[])
       public constructor(arg0: java.security.AccessControlContext, arg1: java.security.DomainCombiner)

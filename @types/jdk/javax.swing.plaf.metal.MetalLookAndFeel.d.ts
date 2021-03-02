@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalLookAndFeel extends javax.swing.plaf.basic.BasicLookAndFeel {
-
           static queue: java.lang.ref.ReferenceQueue<javax.swing.LookAndFeel>
           public constructor()
           static isWindows(): boolean

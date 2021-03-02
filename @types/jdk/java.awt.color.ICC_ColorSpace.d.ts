@@ -3,7 +3,6 @@ declare namespace java {
     namespace color {
 
       class ICC_ColorSpace extends java.awt.color.ColorSpace {
-
         static readonly serialVersionUID: long
         public constructor(arg0: java.awt.color.ICC_Profile)
         public getProfile(): java.awt.color.ICC_Profile

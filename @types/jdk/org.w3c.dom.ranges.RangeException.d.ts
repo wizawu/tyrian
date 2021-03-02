@@ -4,7 +4,6 @@ declare namespace org {
       namespace ranges {
 
         class RangeException extends java.lang.RuntimeException {
-
           public code: short
           public static readonly BAD_BOUNDARYPOINTS_ERR: short
           public static readonly INVALID_NODE_TYPE_ERR: short

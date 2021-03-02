@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     interface Deque<E> extends java.util.Queue<E> {
-
       addFirst(arg0: E): void
       addLast(arg0: E): void
       offerFirst(arg0: E): boolean

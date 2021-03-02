@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       interface BlockingQueue<E> extends java.util.Queue<E> {
-
         add(arg0: E): boolean
         offer(arg0: E): boolean
         put(arg0: E): void

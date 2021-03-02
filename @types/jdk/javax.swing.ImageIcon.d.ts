@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class ImageIcon implements javax.swing.Icon, java.io.Serializable, javax.accessibility.Accessible {
-
       image: java.awt.Image
       loadStatus: int
       imageObserver: java.awt.image.ImageObserver

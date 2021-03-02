@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JTextArea extends javax.swing.text.JTextComponent {
-
       public constructor()
       public constructor(arg0: java.lang.String)
       public constructor(arg0: int, arg1: int)

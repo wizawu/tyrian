@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class DefaultTextUI extends javax.swing.plaf.basic.BasicTextUI {
-
         public constructor()
       }
 

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace datatype {
 
       abstract class Duration {
-
         public constructor()
         public getXMLSchemaType(): javax.xml.namespace.QName
         public abstract getSign(): int

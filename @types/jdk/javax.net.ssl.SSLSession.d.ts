@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       interface SSLSession {
-
         getId(): byte[]
         getSessionContext(): javax.net.ssl.SSLSessionContext
         getCreationTime(): long

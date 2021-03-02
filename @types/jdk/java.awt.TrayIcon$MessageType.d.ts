@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class TrayIcon$MessageType extends java.lang.Enum<java.awt.TrayIcon$MessageType> {
-
       public static readonly ERROR: java.awt.TrayIcon$MessageType
       public static readonly WARNING: java.awt.TrayIcon$MessageType
       public static readonly INFO: java.awt.TrayIcon$MessageType

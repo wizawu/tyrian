@@ -4,7 +4,6 @@ declare namespace com {
       namespace event {
 
         interface ModificationWatchpointEvent extends com.sun.jdi.event.WatchpointEvent {
-
           valueToBe(): com.sun.jdi.Value
         }
 

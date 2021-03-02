@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class SwingPropertyChangeSupport extends java.beans.PropertyChangeSupport {
-
         static readonly serialVersionUID: long
         public constructor(arg0: java.lang.Object)
         public constructor(arg0: java.lang.Object, arg1: boolean)

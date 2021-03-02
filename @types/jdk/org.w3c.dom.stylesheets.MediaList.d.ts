@@ -4,7 +4,6 @@ declare namespace org {
       namespace stylesheets {
 
         interface MediaList {
-
           getMediaText(): java.lang.String
           setMediaText(arg0: java.lang.String): void
           getLength(): int

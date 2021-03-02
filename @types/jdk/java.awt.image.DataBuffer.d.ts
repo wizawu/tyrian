@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       abstract class DataBuffer {
-
         public static readonly TYPE_BYTE: int
         public static readonly TYPE_USHORT: int
         public static readonly TYPE_SHORT: int

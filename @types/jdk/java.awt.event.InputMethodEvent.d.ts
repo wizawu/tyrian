@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class InputMethodEvent extends java.awt.AWTEvent {
-
         public static readonly INPUT_METHOD_FIRST: int
         public static readonly INPUT_METHOD_TEXT_CHANGED: int
         public static readonly CARET_POSITION_CHANGED: int

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace metadata {
 
       class IIOMetadataNode implements org.w3c.dom.Element, org.w3c.dom.NodeList {
-
         public constructor()
         public constructor(arg0: java.lang.String)
         public getNodeName(): java.lang.String

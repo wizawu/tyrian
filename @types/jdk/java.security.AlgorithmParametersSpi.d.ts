@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     abstract class AlgorithmParametersSpi {
-
       public constructor()
       protected abstract engineInit(arg0: java.security.spec.AlgorithmParameterSpec): void
       protected abstract engineInit(arg0: byte[]): void

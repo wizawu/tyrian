@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         interface ComboPopup {
-
           show(): void
           hide(): void
           isVisible(): boolean

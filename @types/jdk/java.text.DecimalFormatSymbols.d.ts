@@ -2,13 +2,12 @@ declare namespace java {
   namespace text {
 
     class DecimalFormatSymbols implements java.lang.Cloneable, java.io.Serializable {
-
       static readonly serialVersionUID: long
       public constructor()
       public constructor(arg0: java.util.Locale)
       public static getAvailableLocales(): java.util.Locale[]
-      public static readonly getInstance(): java.text.DecimalFormatSymbols
-      public static readonly getInstance(arg0: java.util.Locale): java.text.DecimalFormatSymbols
+      public static getInstance(): java.text.DecimalFormatSymbols
+      public static getInstance(arg0: java.util.Locale): java.text.DecimalFormatSymbols
       public getZeroDigit(): char
       public setZeroDigit(arg0: char): void
       public getGroupingSeparator(): char

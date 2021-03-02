@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       interface XMLStreamWriter {
-
         writeStartElement(arg0: java.lang.String): void
         writeStartElement(arg0: java.lang.String, arg1: java.lang.String): void
         writeStartElement(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void

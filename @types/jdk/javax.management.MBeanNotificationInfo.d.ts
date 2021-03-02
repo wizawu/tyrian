@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class MBeanNotificationInfo extends javax.management.MBeanFeatureInfo implements java.lang.Cloneable {
-
       static readonly serialVersionUID: long
       static readonly NO_NOTIFICATIONS: javax.management.MBeanNotificationInfo[]
       public constructor(arg0: java.lang.String[], arg1: java.lang.String, arg2: java.lang.String)

@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLParamElement extends org.w3c.dom.html.HTMLElement {
-
           getName(): java.lang.String
           setName(arg0: java.lang.String): void
           getType(): java.lang.String

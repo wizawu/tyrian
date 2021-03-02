@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface ModuleTree extends jdk.nashorn.api.tree.Tree {
-
           getImportEntries(): java.util.List<jdk.nashorn.api.tree.ImportEntryTree>
           getLocalExportEntries(): java.util.List<jdk.nashorn.api.tree.ExportEntryTree>
           getIndirectExportEntries(): java.util.List<jdk.nashorn.api.tree.ExportEntryTree>

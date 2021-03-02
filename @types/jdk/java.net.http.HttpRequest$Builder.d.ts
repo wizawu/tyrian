@@ -3,7 +3,6 @@ declare namespace java {
     namespace http {
 
       interface HttpRequest$Builder {
-
         uri(arg0: java.net.URI): java.net.http.HttpRequest$Builder
         expectContinue(arg0: boolean): java.net.http.HttpRequest$Builder
         version(arg0: java.net.http.HttpClient$Version): java.net.http.HttpRequest$Builder

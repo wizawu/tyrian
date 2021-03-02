@@ -3,7 +3,6 @@ declare namespace javax {
     namespace timer {
 
       interface TimerMBean {
-
         start(): void
         stop(): void
         addNotification(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.util.Date, arg4: long, arg5: long, arg6: boolean): java.lang.Integer

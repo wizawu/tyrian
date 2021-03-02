@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       class Track {
-
         constructor()
         public add(arg0: javax.sound.midi.MidiEvent): boolean
         public remove(arg0: javax.sound.midi.MidiEvent): boolean

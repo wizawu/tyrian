@@ -3,7 +3,6 @@ declare namespace java {
     namespace server {
 
       class LogStream extends java.io.PrintStream {
-
         public static readonly SILENT: int
         public static readonly BRIEF: int
         public static readonly VERBOSE: int

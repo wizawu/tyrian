@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface BlockTree extends jdk.nashorn.api.tree.StatementTree {
-
           getStatements(): java.util.List<jdk.nashorn.api.tree.StatementTree>
         }
 

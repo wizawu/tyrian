@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       abstract class MidiMessage implements java.lang.Cloneable {
-
         protected data: byte[]
         protected length: int
         protected constructor(arg0: byte[])

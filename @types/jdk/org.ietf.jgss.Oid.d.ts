@@ -3,7 +3,6 @@ declare namespace org {
     namespace jgss {
 
       class Oid {
-
         public constructor(arg0: java.lang.String)
         public constructor(arg0: java.io.InputStream)
         public constructor(arg0: byte[])

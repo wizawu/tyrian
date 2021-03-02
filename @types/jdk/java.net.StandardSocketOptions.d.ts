@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class StandardSocketOptions {
-
       public static readonly SO_BROADCAST: java.net.SocketOption<java.lang.Boolean>
       public static readonly SO_KEEPALIVE: java.net.SocketOption<java.lang.Boolean>
       public static readonly SO_SNDBUF: java.net.SocketOption<java.lang.Integer>

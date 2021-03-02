@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JEditorPane extends javax.swing.text.JTextComponent {
-
       static readonly PostDataProperty: java.lang.String
       public static readonly W3C_LENGTH_UNITS: java.lang.String
       public static readonly HONOR_DISPLAY_PROPERTIES: java.lang.String
@@ -25,8 +24,8 @@ declare namespace javax {
       public getUIClassID(): java.lang.String
       protected createDefaultEditorKit(): javax.swing.text.EditorKit
       public getEditorKit(): javax.swing.text.EditorKit
-      public readonly getContentType(): java.lang.String
-      public readonly setContentType(arg0: java.lang.String): void
+      public getContentType(): java.lang.String
+      public setContentType(arg0: java.lang.String): void
       public setEditorKit(arg0: javax.swing.text.EditorKit): void
       public getEditorKitForContentType(arg0: java.lang.String): javax.swing.text.EditorKit
       public setEditorKitForContentType(arg0: java.lang.String, arg1: javax.swing.text.EditorKit): void

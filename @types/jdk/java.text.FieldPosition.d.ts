@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     class FieldPosition {
-
       field: int
       endIndex: int
       beginIndex: int

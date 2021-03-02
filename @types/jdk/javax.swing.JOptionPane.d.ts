@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JOptionPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
-
       public static readonly UNINITIALIZED_VALUE: java.lang.Object
       public static readonly DEFAULT_OPTION: int
       public static readonly YES_NO_OPTION: int

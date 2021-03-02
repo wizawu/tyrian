@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class TransformAttribute implements java.io.Serializable {
-
         public static readonly IDENTITY: java.awt.font.TransformAttribute
         static readonly serialVersionUID: long
         public constructor(arg0: java.awt.geom.AffineTransform)

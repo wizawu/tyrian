@@ -4,7 +4,6 @@ declare namespace javax {
       namespace serial {
 
         class SerialDatalink implements java.io.Serializable, java.lang.Cloneable {
-
           static readonly serialVersionUID: long
           public constructor(arg0: java.net.URL)
           public getDatalink(): java.net.URL

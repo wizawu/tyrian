@@ -4,7 +4,6 @@ declare namespace java {
       namespace attribute {
 
         interface DosFileAttributes extends java.nio.file.attribute.BasicFileAttributes {
-
           isReadOnly(): boolean
           isHidden(): boolean
           isArchive(): boolean

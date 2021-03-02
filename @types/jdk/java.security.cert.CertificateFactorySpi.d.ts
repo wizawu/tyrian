@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       abstract class CertificateFactorySpi {
-
         public constructor()
         public abstract engineGenerateCertificate(arg0: java.io.InputStream): java.security.cert.Certificate
         public engineGenerateCertPath(arg0: java.io.InputStream): java.security.cert.CertPath

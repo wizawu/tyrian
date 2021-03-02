@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface ExecutableMemberDoc extends com.sun.javadoc.MemberDoc {
-
         thrownExceptions(): com.sun.javadoc.ClassDoc[]
         thrownExceptionTypes(): com.sun.javadoc.Type[]
         isNative(): boolean

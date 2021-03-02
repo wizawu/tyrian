@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalTreeUI extends javax.swing.plaf.basic.BasicTreeUI {
-
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public constructor()
           protected getHorizontalLegBuffer(): int

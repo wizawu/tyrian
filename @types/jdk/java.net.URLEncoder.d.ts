@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class URLEncoder {
-
       static dontNeedEncoding: java.util.BitSet
       static readonly caseDiff: int
       static dfltEncName: java.lang.String

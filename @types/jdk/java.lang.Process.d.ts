@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     abstract class Process {
-
       public constructor()
       public abstract getOutputStream(): java.io.OutputStream
       public abstract getInputStream(): java.io.InputStream

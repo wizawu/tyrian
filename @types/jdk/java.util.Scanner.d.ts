@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Scanner implements java.util.Iterator<java.lang.String>, java.io.Closeable {
-
       modCount: int
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: java.lang.Readable)

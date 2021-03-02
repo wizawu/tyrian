@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace jarsigner {
 
       class JarSigner {
-
         public sign(arg0: java.util.zip.ZipFile, arg1: java.io.OutputStream): void
         public getDigestAlgorithm(): java.lang.String
         public getSignatureAlgorithm(): java.lang.String

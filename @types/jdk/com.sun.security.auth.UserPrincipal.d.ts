@@ -4,7 +4,6 @@ declare namespace com {
       namespace auth {
 
         class UserPrincipal implements java.security.Principal, java.io.Serializable {
-
           public constructor(arg0: java.lang.String)
           public equals(arg0: java.lang.Object): boolean
           public hashCode(): int

@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class GridLayout implements java.awt.LayoutManager, java.io.Serializable {
-
       hgap: int
       vgap: int
       rows: int

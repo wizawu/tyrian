@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       class DropTarget implements java.awt.dnd.DropTargetListener, java.io.Serializable {
-
         actions: int
         active: boolean
         public constructor(arg0: java.awt.Component, arg1: int, arg2: java.awt.dnd.DropTargetListener, arg3: boolean, arg4: java.awt.datatransfer.FlavorMap)

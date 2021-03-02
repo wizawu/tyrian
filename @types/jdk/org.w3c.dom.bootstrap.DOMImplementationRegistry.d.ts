@@ -4,7 +4,6 @@ declare namespace org {
       namespace bootstrap {
 
         class DOMImplementationRegistry {
-
           public static readonly PROPERTY: java.lang.String
           public static newInstance(): org.w3c.dom.bootstrap.DOMImplementationRegistry
           public getDOMImplementation(arg0: java.lang.String): org.w3c.dom.DOMImplementation

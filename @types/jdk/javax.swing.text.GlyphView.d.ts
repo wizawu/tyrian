@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class GlyphView extends javax.swing.text.View implements javax.swing.text.TabableView, java.lang.Cloneable {
-
         offset: int
         length: int
         impliedCR: boolean
@@ -13,7 +12,7 @@ declare namespace javax {
         painter: javax.swing.text.GlyphView$GlyphPainter
         static defaultPainter: javax.swing.text.GlyphView$GlyphPainter
         public constructor(arg0: javax.swing.text.Element)
-        protected readonly clone(): java.lang.Object
+        protected clone(): java.lang.Object
         public getGlyphPainter(): javax.swing.text.GlyphView$GlyphPainter
         public setGlyphPainter(arg0: javax.swing.text.GlyphView$GlyphPainter): void
         public getText(arg0: int, arg1: int): javax.swing.text.Segment
@@ -31,7 +30,7 @@ declare namespace javax {
         public getStartOffset(): int
         public getEndOffset(): int
         public paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void
-        readonly paintTextUsingColor(arg0: java.awt.Graphics, arg1: java.awt.Shape, arg2: java.awt.Color, arg3: int, arg4: int): void
+        paintTextUsingColor(arg0: java.awt.Graphics, arg1: java.awt.Shape, arg2: java.awt.Color, arg3: int, arg4: int): void
         public getMinimumSpan(arg0: int): float
         public getPreferredSpan(arg0: int): float
         public getAlignment(arg0: int): float

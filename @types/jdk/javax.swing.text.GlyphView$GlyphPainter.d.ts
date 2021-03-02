@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class GlyphView$GlyphPainter {
-
         public constructor()
         public abstract getSpan(arg0: javax.swing.text.GlyphView, arg1: int, arg2: int, arg3: javax.swing.text.TabExpander, arg4: float): float
         public abstract getHeight(arg0: javax.swing.text.GlyphView): float

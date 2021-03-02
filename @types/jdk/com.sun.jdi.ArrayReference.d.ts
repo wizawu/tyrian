@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface ArrayReference extends com.sun.jdi.ObjectReference {
-
         length(): int
         getValue(arg0: int): com.sun.jdi.Value
         getValues(): java.util.List<com.sun.jdi.Value>

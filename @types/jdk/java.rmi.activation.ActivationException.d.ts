@@ -3,7 +3,6 @@ declare namespace java {
     namespace activation {
 
       class ActivationException extends java.lang.Exception {
-
         public detail: java.lang.Throwable
         public constructor()
         public constructor(arg0: java.lang.String)

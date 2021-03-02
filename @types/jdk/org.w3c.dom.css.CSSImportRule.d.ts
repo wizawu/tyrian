@@ -4,7 +4,6 @@ declare namespace org {
       namespace css {
 
         interface CSSImportRule extends org.w3c.dom.css.CSSRule {
-
           getHref(): java.lang.String
           getMedia(): org.w3c.dom.stylesheets.MediaList
           getStyleSheet(): org.w3c.dom.css.CSSStyleSheet

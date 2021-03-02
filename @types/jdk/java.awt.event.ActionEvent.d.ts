@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class ActionEvent extends java.awt.AWTEvent {
-
         public static readonly SHIFT_MASK: int
         public static readonly CTRL_MASK: int
         public static readonly META_MASK: int

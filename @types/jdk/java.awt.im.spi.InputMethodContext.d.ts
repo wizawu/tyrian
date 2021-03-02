@@ -4,7 +4,6 @@ declare namespace java {
       namespace spi {
 
         interface InputMethodContext extends java.awt.im.InputMethodRequests {
-
           dispatchInputMethodEvent(arg0: int, arg1: java.text.AttributedCharacterIterator, arg2: int, arg3: java.awt.font.TextHitInfo, arg4: java.awt.font.TextHitInfo): void
           createInputMethodWindow(arg0: java.lang.String, arg1: boolean): java.awt.Window
           createInputMethodJFrame(arg0: java.lang.String, arg1: boolean): javax.swing.JFrame

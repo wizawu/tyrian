@@ -3,7 +3,6 @@ declare namespace javax {
     namespace undo {
 
       class CompoundEdit extends javax.swing.undo.AbstractUndoableEdit {
-
         inProgress: boolean
         protected edits: java.util.Vector<javax.swing.undo.UndoableEdit>
         public constructor()

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace auth {
 
       interface Refreshable {
-
         isCurrent(): boolean
         refresh(): void
       }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class JComponent extends java.awt.Container implements java.io.Serializable, javax.swing.TransferHandler$HasGetTransferHandler {
-
       static DEBUG_GRAPHICS_LOADED: boolean
       protected ui: javax.swing.plaf.ComponentUI
       protected listenerList: javax.swing.event.EventListenerList
@@ -41,7 +40,7 @@ declare namespace javax {
       protected printChildren(arg0: java.awt.Graphics): void
       protected printBorder(arg0: java.awt.Graphics): void
       public isPaintingTile(): boolean
-      public readonly isPaintingForPrint(): boolean
+      public isPaintingForPrint(): boolean
       public isManagingFocus(): boolean
       public setNextFocusableComponent(arg0: java.awt.Component): void
       public getNextFocusableComponent(): java.awt.Component
@@ -84,13 +83,13 @@ declare namespace javax {
       public getConditionForKeyStroke(arg0: javax.swing.KeyStroke): int
       public getActionForKeyStroke(arg0: javax.swing.KeyStroke): java.awt.event.ActionListener
       public resetKeyboardActions(): void
-      public readonly setInputMap(arg0: int, arg1: javax.swing.InputMap): void
-      public readonly getInputMap(arg0: int): javax.swing.InputMap
-      public readonly getInputMap(): javax.swing.InputMap
-      public readonly setActionMap(arg0: javax.swing.ActionMap): void
-      public readonly getActionMap(): javax.swing.ActionMap
-      readonly getInputMap(arg0: int, arg1: boolean): javax.swing.InputMap
-      readonly getActionMap(arg0: boolean): javax.swing.ActionMap
+      public setInputMap(arg0: int, arg1: javax.swing.InputMap): void
+      public getInputMap(arg0: int): javax.swing.InputMap
+      public getInputMap(): javax.swing.InputMap
+      public setActionMap(arg0: javax.swing.ActionMap): void
+      public getActionMap(): javax.swing.ActionMap
+      getInputMap(arg0: int, arg1: boolean): javax.swing.InputMap
+      getActionMap(arg0: boolean): javax.swing.ActionMap
       public getBaseline(arg0: int, arg1: int): int
       public getBaselineResizeBehavior(): java.awt.Component$BaselineResizeBehavior
       public requestDefaultFocus(): boolean
@@ -127,8 +126,8 @@ declare namespace javax {
       getCreatedDoubleBuffer(): boolean
       public enable(): void
       public disable(): void
-      public readonly getClientProperty(arg0: java.lang.Object): java.lang.Object
-      public readonly putClientProperty(arg0: java.lang.Object, arg1: java.lang.Object): void
+      public getClientProperty(arg0: java.lang.Object): java.lang.Object
+      public putClientProperty(arg0: java.lang.Object, arg1: java.lang.Object): void
       clientPropertyChanged(arg0: java.lang.Object, arg1: java.lang.Object, arg2: java.lang.Object): void
       setUIProperty(arg0: java.lang.String, arg1: java.lang.Object): void
       public setFocusTraversalKeys(arg0: int, arg1: java.util.Set<java.awt.AWTKeyStroke>): void
@@ -144,7 +143,7 @@ declare namespace javax {
       public isOpaque(): boolean
       public setOpaque(arg0: boolean): void
       rectangleIsObscured(arg0: int, arg1: int, arg2: int, arg3: int): boolean
-      static readonly computeVisibleRect(arg0: java.awt.Component, arg1: java.awt.Rectangle): void
+      static computeVisibleRect(arg0: java.awt.Component, arg1: java.awt.Rectangle): void
       public computeVisibleRect(arg0: java.awt.Rectangle): void
       public getVisibleRect(): java.awt.Rectangle
       public firePropertyChange(arg0: java.lang.String, arg1: boolean, arg2: boolean): void

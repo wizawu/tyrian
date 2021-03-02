@@ -4,7 +4,6 @@ declare namespace com {
       namespace connect {
 
         class TransportTimeoutException extends java.io.IOException {
-
           public constructor()
           public constructor(arg0: java.lang.String)
         }

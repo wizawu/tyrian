@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class RowFilter<M,I> {
-
       public constructor()
       public static regexFilter<M,I>(arg0: java.lang.String, ...arg1: int[]): javax.swing.RowFilter<M,I>
       public static dateFilter<M,I>(arg0: javax.swing.RowFilter$ComparisonType, arg1: java.util.Date, ...arg2: int[]): javax.swing.RowFilter<M,I>

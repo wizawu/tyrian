@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       interface MultipleMaster {
-
         getNumDesignAxes(): int
         getDesignAxisRanges(): float[]
         getDesignAxisDefaults(): float[]

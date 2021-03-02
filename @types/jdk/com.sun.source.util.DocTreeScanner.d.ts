@@ -4,7 +4,6 @@ declare namespace com {
       namespace util {
 
         class DocTreeScanner<R,P> implements com.sun.source.doctree.DocTreeVisitor<R,P> {
-
           public constructor()
           public scan(arg0: com.sun.source.doctree.DocTree, arg1: P): R
           public scan(arg0: java.lang.Iterable<com.sun.source.doctree.DocTree>, arg1: P): R

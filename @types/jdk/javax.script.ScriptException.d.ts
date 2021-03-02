@@ -2,7 +2,6 @@ declare namespace javax {
   namespace script {
 
     class ScriptException extends java.lang.Exception {
-
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.Exception)
       public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: int)

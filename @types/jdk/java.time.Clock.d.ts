@@ -2,7 +2,6 @@ declare namespace java {
   namespace time {
 
     abstract class Clock {
-
       public static systemUTC(): java.time.Clock
       public static systemDefaultZone(): java.time.Clock
       public static system(arg0: java.time.ZoneId): java.time.Clock

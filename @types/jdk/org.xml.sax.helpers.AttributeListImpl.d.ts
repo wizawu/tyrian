@@ -4,7 +4,6 @@ declare namespace org {
       namespace helpers {
 
         class AttributeListImpl implements org.xml.sax.AttributeList {
-
           names: java.util.List<java.lang.String>
           types: java.util.List<java.lang.String>
           values: java.util.List<java.lang.String>

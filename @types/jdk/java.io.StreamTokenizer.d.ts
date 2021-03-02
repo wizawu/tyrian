@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class StreamTokenizer {
-
       public ttype: int
       public static readonly TT_EOF: int
       public static readonly TT_EOL: int

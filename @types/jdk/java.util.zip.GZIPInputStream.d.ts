@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class GZIPInputStream extends java.util.zip.InflaterInputStream {
-
         protected crc: java.util.zip.CRC32
         protected eos: boolean
         public static readonly GZIP_MAGIC: int

@@ -3,7 +3,6 @@ declare namespace org {
     namespace sax {
 
       interface Locator {
-
         getPublicId(): java.lang.String
         getSystemId(): java.lang.String
         getLineNumber(): int

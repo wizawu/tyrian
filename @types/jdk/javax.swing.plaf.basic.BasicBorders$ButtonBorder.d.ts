@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicBorders$ButtonBorder extends javax.swing.border.AbstractBorder implements javax.swing.plaf.UIResource {
-
           protected shadow: java.awt.Color
           protected darkShadow: java.awt.Color
           protected highlight: java.awt.Color

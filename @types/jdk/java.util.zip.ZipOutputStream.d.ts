@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class ZipOutputStream extends java.util.zip.DeflaterOutputStream implements java.util.zip.ZipConstants {
-
         public static readonly STORED: int
         public static readonly DEFLATED: int
         public constructor(arg0: java.io.OutputStream)

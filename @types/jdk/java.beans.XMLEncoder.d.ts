@@ -2,7 +2,6 @@ declare namespace java {
   namespace beans {
 
     class XMLEncoder extends java.beans.Encoder implements java.lang.AutoCloseable {
-
       public constructor(arg0: java.io.OutputStream)
       public constructor(arg0: java.io.OutputStream, arg1: java.lang.String, arg2: boolean, arg3: int)
       public setOwner(arg0: java.lang.Object): void

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class ParagraphView extends javax.swing.text.ParagraphView {
-
           public constructor(arg0: javax.swing.text.Element)
           public setParent(arg0: javax.swing.text.View): void
           public getAttributes(): javax.swing.text.AttributeSet

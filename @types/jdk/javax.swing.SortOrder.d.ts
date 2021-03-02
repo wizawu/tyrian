@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class SortOrder extends java.lang.Enum<javax.swing.SortOrder> {
-
       public static readonly ASCENDING: javax.swing.SortOrder
       public static readonly DESCENDING: javax.swing.SortOrder
       public static readonly UNSORTED: javax.swing.SortOrder

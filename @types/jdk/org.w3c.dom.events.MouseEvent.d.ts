@@ -4,7 +4,6 @@ declare namespace org {
       namespace events {
 
         interface MouseEvent extends org.w3c.dom.events.UIEvent {
-
           getScreenX(): int
           getScreenY(): int
           getClientX(): int

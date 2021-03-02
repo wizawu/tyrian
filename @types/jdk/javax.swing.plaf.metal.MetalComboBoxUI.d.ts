@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalComboBoxUI extends javax.swing.plaf.basic.BasicComboBoxUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void

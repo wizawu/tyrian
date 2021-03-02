@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace scripting {
 
         class NashornScriptEngineFactory implements javax.script.ScriptEngineFactory {
-
           public constructor()
           public getEngineName(): java.lang.String
           public getEngineVersion(): java.lang.String

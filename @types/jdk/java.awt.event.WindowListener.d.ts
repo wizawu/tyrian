@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       interface WindowListener extends java.util.EventListener {
-
         windowOpened(arg0: java.awt.event.WindowEvent): void
         windowClosing(arg0: java.awt.event.WindowEvent): void
         windowClosed(arg0: java.awt.event.WindowEvent): void

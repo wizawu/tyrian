@@ -3,7 +3,6 @@ declare namespace java {
     namespace print {
 
       class PageFormat implements java.lang.Cloneable {
-
         public static readonly LANDSCAPE: int
         public static readonly PORTRAIT: int
         public static readonly REVERSE_LANDSCAPE: int

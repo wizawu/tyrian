@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jshell {
 
     abstract class SourceCodeAnalysis {
-
       public abstract analyzeCompletion(arg0: java.lang.String): jdk.jshell.SourceCodeAnalysis$CompletionInfo
       public abstract completionSuggestions(arg0: java.lang.String, arg1: int, arg2: int[]): java.util.List<jdk.jshell.SourceCodeAnalysis$Suggestion>
       public abstract documentation(arg0: java.lang.String, arg1: int, arg2: boolean): java.util.List<jdk.jshell.SourceCodeAnalysis$Documentation>

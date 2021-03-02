@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class DriverManager {
-
       static readonly SET_LOG_PERMISSION: java.sql.SQLPermission
       static readonly DEREGISTER_DRIVER_PERMISSION: java.sql.SQLPermission
       public static getLogWriter(): java.io.PrintWriter

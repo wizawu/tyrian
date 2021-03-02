@@ -3,7 +3,6 @@ declare namespace javax {
     namespace loading {
 
       class MLetContent {
-
         public constructor(arg0: java.net.URL, arg1: java.util.Map<java.lang.String,java.lang.String>, arg2: java.util.List<java.lang.String>, arg3: java.util.List<java.lang.String>)
         public getAttributes(): java.util.Map<java.lang.String,java.lang.String>
         public getDocumentBase(): java.net.URL

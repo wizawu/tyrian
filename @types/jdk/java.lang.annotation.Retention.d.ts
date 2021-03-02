@@ -3,7 +3,6 @@ declare namespace java {
     namespace annotation {
 
       interface Retention extends java.lang.annotation.Annotation {
-
         value(): java.lang.annotation.RetentionPolicy
       }
 

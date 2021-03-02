@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class DefaultFormatterFactory extends javax.swing.JFormattedTextField$AbstractFormatterFactory implements java.io.Serializable {
-
         public constructor()
         public constructor(arg0: javax.swing.JFormattedTextField$AbstractFormatter)
         public constructor(arg0: javax.swing.JFormattedTextField$AbstractFormatter, arg1: javax.swing.JFormattedTextField$AbstractFormatter)

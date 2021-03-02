@@ -4,7 +4,6 @@ declare namespace javax {
       namespace serial {
 
         class SerialBlob implements java.sql.Blob, java.io.Serializable, java.lang.Cloneable {
-
           static readonly serialVersionUID: long
           public constructor(arg0: byte[])
           public constructor(arg0: java.sql.Blob)

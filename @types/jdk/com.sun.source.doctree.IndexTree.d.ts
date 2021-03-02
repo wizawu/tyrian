@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         interface IndexTree extends com.sun.source.doctree.InlineTagTree {
-
           getSearchTerm(): com.sun.source.doctree.DocTree
           getDescription(): java.util.List<com.sun.source.doctree.DocTree>
         }

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Timer {
-
       public constructor()
       public constructor(arg0: boolean)
       public constructor(arg0: java.lang.String)

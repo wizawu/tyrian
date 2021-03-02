@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class SQLException extends java.lang.Exception implements java.lang.Iterable<java.lang.Throwable> {
-
       public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: int)
       public constructor(arg0: java.lang.String, arg1: java.lang.String)
       public constructor(arg0: java.lang.String)

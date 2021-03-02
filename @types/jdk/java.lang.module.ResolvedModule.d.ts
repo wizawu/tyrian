@@ -3,7 +3,6 @@ declare namespace java {
     namespace module {
 
       class ResolvedModule {
-
         constructor(arg0: java.lang.module.Configuration, arg1: java.lang.module.ModuleReference)
         public configuration(): java.lang.module.Configuration
         public reference(): java.lang.module.ModuleReference

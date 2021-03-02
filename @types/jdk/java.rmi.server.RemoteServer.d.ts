@@ -3,7 +3,6 @@ declare namespace java {
     namespace server {
 
       abstract class RemoteServer extends java.rmi.server.RemoteObject {
-
         protected constructor()
         protected constructor(arg0: java.rmi.server.RemoteRef)
         public static getClientHost(): java.lang.String

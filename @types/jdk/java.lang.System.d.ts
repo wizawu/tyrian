@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class System {
-
       public static readonly in: java.io.InputStream
       public static readonly out: java.io.PrintStream
       public static readonly err: java.io.PrintStream

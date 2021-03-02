@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       class IllegalSelectorException extends java.lang.IllegalArgumentException {
-
         public constructor()
       }
 

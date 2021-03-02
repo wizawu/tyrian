@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface Entity extends org.w3c.dom.Node {
-
         getPublicId(): java.lang.String
         getSystemId(): java.lang.String
         getNotationName(): java.lang.String

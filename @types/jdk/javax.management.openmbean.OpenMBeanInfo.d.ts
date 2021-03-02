@@ -3,7 +3,6 @@ declare namespace javax {
     namespace openmbean {
 
       interface OpenMBeanInfo {
-
         getClassName(): java.lang.String
         getDescription(): java.lang.String
         getAttributes(): javax.management.MBeanAttributeInfo[]

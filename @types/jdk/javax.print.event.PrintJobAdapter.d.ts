@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       abstract class PrintJobAdapter implements javax.print.event.PrintJobListener {
-
         public constructor()
         public printDataTransferCompleted(arg0: javax.print.event.PrintJobEvent): void
         public printJobCompleted(arg0: javax.print.event.PrintJobEvent): void

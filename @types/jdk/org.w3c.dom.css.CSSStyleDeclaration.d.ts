@@ -4,7 +4,6 @@ declare namespace org {
       namespace css {
 
         interface CSSStyleDeclaration {
-
           getCssText(): java.lang.String
           setCssText(arg0: java.lang.String): void
           getPropertyValue(arg0: java.lang.String): java.lang.String

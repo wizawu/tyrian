@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface VoidType extends com.sun.jdi.Type {
-
       }
 
     }

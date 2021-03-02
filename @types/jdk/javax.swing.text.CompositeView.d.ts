@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class CompositeView extends javax.swing.text.View {
-
         public constructor(arg0: javax.swing.text.Element)
         protected loadChildren(arg0: javax.swing.text.ViewFactory): void
         public setParent(arg0: javax.swing.text.View): void

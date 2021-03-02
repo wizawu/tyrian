@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     class AccessibleStateSet {
-
       protected states: java.util.Vector<javax.accessibility.AccessibleState>
       public constructor()
       public constructor(arg0: javax.accessibility.AccessibleState[])

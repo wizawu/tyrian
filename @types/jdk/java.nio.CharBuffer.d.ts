@@ -2,7 +2,6 @@ declare namespace java {
   namespace nio {
 
     abstract class CharBuffer extends java.nio.Buffer implements java.lang.Comparable<java.nio.CharBuffer>, java.lang.Appendable, java.lang.CharSequence, java.lang.Readable {
-
       readonly hb: char[]
       readonly offset: int
       isReadOnly: boolean
@@ -27,19 +26,19 @@ declare namespace java {
       public get(arg0: char[]): java.nio.CharBuffer
       public put(arg0: java.nio.CharBuffer): java.nio.CharBuffer
       public put(arg0: char[], arg1: int, arg2: int): java.nio.CharBuffer
-      public readonly put(arg0: char[]): java.nio.CharBuffer
+      public put(arg0: char[]): java.nio.CharBuffer
       public put(arg0: java.lang.String, arg1: int, arg2: int): java.nio.CharBuffer
-      public readonly put(arg0: java.lang.String): java.nio.CharBuffer
-      public readonly hasArray(): boolean
-      public readonly array(): char[]
-      public readonly arrayOffset(): int
-      public readonly position(arg0: int): java.nio.CharBuffer
-      public readonly limit(arg0: int): java.nio.CharBuffer
-      public readonly mark(): java.nio.CharBuffer
-      public readonly reset(): java.nio.CharBuffer
-      public readonly clear(): java.nio.CharBuffer
-      public readonly flip(): java.nio.CharBuffer
-      public readonly rewind(): java.nio.CharBuffer
+      public put(arg0: java.lang.String): java.nio.CharBuffer
+      public hasArray(): boolean
+      public array(): char[]
+      public arrayOffset(): int
+      public position(arg0: int): java.nio.CharBuffer
+      public limit(arg0: int): java.nio.CharBuffer
+      public mark(): java.nio.CharBuffer
+      public reset(): java.nio.CharBuffer
+      public clear(): java.nio.CharBuffer
+      public flip(): java.nio.CharBuffer
+      public rewind(): java.nio.CharBuffer
       public abstract compact(): java.nio.CharBuffer
       public abstract isDirect(): boolean
       public hashCode(): int
@@ -48,8 +47,8 @@ declare namespace java {
       public mismatch(arg0: java.nio.CharBuffer): int
       public toString(): java.lang.String
       abstract toString(arg0: int, arg1: int): java.lang.String
-      public readonly length(): int
-      public readonly charAt(arg0: int): char
+      public length(): int
+      public charAt(arg0: int): char
       public abstract subSequence(arg0: int, arg1: int): java.nio.CharBuffer
       public append(arg0: java.lang.CharSequence): java.nio.CharBuffer
       public append(arg0: java.lang.CharSequence, arg1: int, arg2: int): java.nio.CharBuffer

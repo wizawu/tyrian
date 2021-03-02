@@ -3,7 +3,6 @@ declare namespace java {
     namespace annotation {
 
       class RetentionPolicy extends java.lang.Enum<java.lang.annotation.RetentionPolicy> {
-
         public static readonly SOURCE: java.lang.annotation.RetentionPolicy
         public static readonly CLASS: java.lang.annotation.RetentionPolicy
         public static readonly RUNTIME: java.lang.annotation.RetentionPolicy

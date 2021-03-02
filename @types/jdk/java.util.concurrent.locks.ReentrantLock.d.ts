@@ -4,7 +4,6 @@ declare namespace java {
       namespace locks {
 
         class ReentrantLock implements java.util.concurrent.locks.Lock, java.io.Serializable {
-
           public constructor()
           public constructor(arg0: boolean)
           public lock(): void
@@ -16,11 +15,11 @@ declare namespace java {
           public getHoldCount(): int
           public isHeldByCurrentThread(): boolean
           public isLocked(): boolean
-          public readonly isFair(): boolean
+          public isFair(): boolean
           protected getOwner(): java.lang.Thread
-          public readonly hasQueuedThreads(): boolean
-          public readonly hasQueuedThread(arg0: java.lang.Thread): boolean
-          public readonly getQueueLength(): int
+          public hasQueuedThreads(): boolean
+          public hasQueuedThread(arg0: java.lang.Thread): boolean
+          public getQueueLength(): int
           protected getQueuedThreads(): java.util.Collection<java.lang.Thread>
           public hasWaiters(arg0: java.util.concurrent.locks.Condition): boolean
           public getWaitQueueLength(arg0: java.util.concurrent.locks.Condition): int

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace undo {
 
       class CannotUndoException extends java.lang.RuntimeException {
-
         public constructor()
       }
 

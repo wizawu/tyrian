@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class RowFilter$Entry<M,I> {
-
       public constructor()
       public abstract getModel(): M
       public abstract getValueCount(): int

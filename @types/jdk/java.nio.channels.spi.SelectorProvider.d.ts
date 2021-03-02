@@ -4,7 +4,6 @@ declare namespace java {
       namespace spi {
 
         abstract class SelectorProvider {
-
           protected constructor()
           public static provider(): java.nio.channels.spi.SelectorProvider
           public abstract openDatagramChannel(): java.nio.channels.DatagramChannel

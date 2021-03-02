@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace doclet {
 
       interface Doclet$Option {
-
         getArgumentCount(): int
         getDescription(): java.lang.String
         getKind(): jdk.javadoc.doclet.Doclet$Option$Kind

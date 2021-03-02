@@ -4,7 +4,6 @@ declare namespace com {
       namespace sctp {
 
         class SctpStandardSocketOptions$InitMaxStreams {
-
           public static create(arg0: int, arg1: int): com.sun.nio.sctp.SctpStandardSocketOptions$InitMaxStreams
           public maxInStreams(): int
           public maxOutStreams(): int

@@ -4,7 +4,6 @@ declare namespace java {
       namespace locks {
 
         class ReentrantReadWriteLock$ReadLock implements java.util.concurrent.locks.Lock, java.io.Serializable {
-
           protected constructor(arg0: java.util.concurrent.locks.ReentrantReadWriteLock)
           public lock(): void
           public lockInterruptibly(): void

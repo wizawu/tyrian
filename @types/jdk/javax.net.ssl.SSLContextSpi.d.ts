@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       abstract class SSLContextSpi {
-
         public constructor()
         protected abstract engineInit(arg0: javax.net.ssl.KeyManager[], arg1: javax.net.ssl.TrustManager[], arg2: java.security.SecureRandom): void
         protected abstract engineGetSocketFactory(): javax.net.ssl.SSLSocketFactory

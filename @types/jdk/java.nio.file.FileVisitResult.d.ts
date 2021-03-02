@@ -3,7 +3,6 @@ declare namespace java {
     namespace file {
 
       class FileVisitResult extends java.lang.Enum<java.nio.file.FileVisitResult> {
-
         public static readonly CONTINUE: java.nio.file.FileVisitResult
         public static readonly TERMINATE: java.nio.file.FileVisitResult
         public static readonly SKIP_SUBTREE: java.nio.file.FileVisitResult

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       abstract class ImageOutputStreamImpl extends javax.imageio.stream.ImageInputStreamImpl implements javax.imageio.stream.ImageOutputStream {
-
         public constructor()
         public abstract write(arg0: int): void
         public write(arg0: byte[]): void
@@ -27,7 +26,7 @@ declare namespace javax {
         public writeDoubles(arg0: double[], arg1: int, arg2: int): void
         public writeBit(arg0: int): void
         public writeBits(arg0: long, arg1: int): void
-        protected readonly flushBits(): void
+        protected flushBits(): void
       }
 
     }

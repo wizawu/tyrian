@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       interface Extension {
-
         getId(): java.lang.String
         isCritical(): boolean
         getValue(): byte[]

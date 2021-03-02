@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface IdentifierTree extends com.sun.source.tree.ExpressionTree {
-
           getName(): javax.lang.model.element.Name
         }
 

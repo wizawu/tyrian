@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class ImageView extends javax.swing.text.View {
-
           public constructor(arg0: javax.swing.text.Element)
           public getAltText(): java.lang.String
           public getImageURL(): java.net.URL

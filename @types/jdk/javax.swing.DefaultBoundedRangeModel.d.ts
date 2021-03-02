@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class DefaultBoundedRangeModel implements javax.swing.BoundedRangeModel, java.io.Serializable {
-
       protected changeEvent: javax.swing.event.ChangeEvent
       protected listenerList: javax.swing.event.EventListenerList
       public constructor()

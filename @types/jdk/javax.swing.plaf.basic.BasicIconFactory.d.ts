@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicIconFactory implements java.io.Serializable {
-
           public constructor()
           public static getMenuItemCheckIcon(): javax.swing.Icon
           public static getMenuItemArrowIcon(): javax.swing.Icon

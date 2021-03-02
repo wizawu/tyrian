@@ -4,7 +4,6 @@ declare namespace javax {
       namespace util {
 
         class EventReaderDelegate implements javax.xml.stream.XMLEventReader {
-
           public constructor()
           public constructor(arg0: javax.xml.stream.XMLEventReader)
           public setParent(arg0: javax.xml.stream.XMLEventReader): void

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class DefaultButtonModel implements javax.swing.ButtonModel, java.io.Serializable {
-
       protected stateMask: int
       protected actionCommand: java.lang.String
       protected group: javax.swing.ButtonGroup

@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class StackTraceElement implements java.io.Serializable {
-
       public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: int)
       public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.lang.String, arg4: java.lang.String, arg5: java.lang.String, arg6: int)
       public getFileName(): java.lang.String

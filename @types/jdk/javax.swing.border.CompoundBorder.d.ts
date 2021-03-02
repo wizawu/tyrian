@@ -3,7 +3,6 @@ declare namespace javax {
     namespace border {
 
       class CompoundBorder extends javax.swing.border.AbstractBorder {
-
         protected outsideBorder: javax.swing.border.Border
         protected insideBorder: javax.swing.border.Border
         public constructor()

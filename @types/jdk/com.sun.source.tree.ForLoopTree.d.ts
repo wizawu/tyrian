@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface ForLoopTree extends com.sun.source.tree.StatementTree {
-
           getInitializer(): java.util.List<com.sun.source.tree.StatementTree>
           getCondition(): com.sun.source.tree.ExpressionTree
           getUpdate(): java.util.List<com.sun.source.tree.ExpressionStatementTree>

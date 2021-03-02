@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Float extends java.lang.Number implements java.lang.Comparable<java.lang.Float> {
-
       public static readonly POSITIVE_INFINITY: float
       public static readonly NEGATIVE_INFINITY: float
       public static readonly NaN: float

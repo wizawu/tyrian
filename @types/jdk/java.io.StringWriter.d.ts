@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class StringWriter extends java.io.Writer {
-
       public constructor()
       public constructor(arg0: int)
       public write(arg0: int): void

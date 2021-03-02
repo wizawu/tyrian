@@ -3,7 +3,6 @@ declare namespace org {
     namespace sax {
 
       interface Attributes {
-
         getLength(): int
         getURI(arg0: int): java.lang.String
         getLocalName(arg0: int): java.lang.String

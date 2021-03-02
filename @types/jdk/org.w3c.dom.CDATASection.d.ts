@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface CDATASection extends org.w3c.dom.Text {
-
       }
 
     }

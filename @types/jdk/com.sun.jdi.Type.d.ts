@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface Type extends com.sun.jdi.Mirror {
-
         signature(): java.lang.String
         name(): java.lang.String
       }

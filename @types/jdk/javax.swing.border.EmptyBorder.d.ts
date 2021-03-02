@@ -3,7 +3,6 @@ declare namespace javax {
     namespace border {
 
       class EmptyBorder extends javax.swing.border.AbstractBorder implements java.io.Serializable {
-
         protected left: int
         protected right: int
         protected top: int

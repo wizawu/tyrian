@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       class DropTargetContext implements java.io.Serializable {
-
         constructor(arg0: java.awt.dnd.DropTarget)
         public getDropTarget(): java.awt.dnd.DropTarget
         public getComponent(): java.awt.Component

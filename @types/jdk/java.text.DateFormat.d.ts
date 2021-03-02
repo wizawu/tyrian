@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     abstract class DateFormat extends java.text.Format {
-
       protected calendar: java.util.Calendar
       protected numberFormat: java.text.NumberFormat
       public static readonly ERA_FIELD: int
@@ -28,22 +27,22 @@ declare namespace java {
       public static readonly MEDIUM: int
       public static readonly SHORT: int
       public static readonly DEFAULT: int
-      public readonly format(arg0: java.lang.Object, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+      public format(arg0: java.lang.Object, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
       public abstract format(arg0: java.util.Date, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
-      public readonly format(arg0: java.util.Date): java.lang.String
+      public format(arg0: java.util.Date): java.lang.String
       public parse(arg0: java.lang.String): java.util.Date
       public abstract parse(arg0: java.lang.String, arg1: java.text.ParsePosition): java.util.Date
       public parseObject(arg0: java.lang.String, arg1: java.text.ParsePosition): java.lang.Object
-      public static readonly getTimeInstance(): java.text.DateFormat
-      public static readonly getTimeInstance(arg0: int): java.text.DateFormat
-      public static readonly getTimeInstance(arg0: int, arg1: java.util.Locale): java.text.DateFormat
-      public static readonly getDateInstance(): java.text.DateFormat
-      public static readonly getDateInstance(arg0: int): java.text.DateFormat
-      public static readonly getDateInstance(arg0: int, arg1: java.util.Locale): java.text.DateFormat
-      public static readonly getDateTimeInstance(): java.text.DateFormat
-      public static readonly getDateTimeInstance(arg0: int, arg1: int): java.text.DateFormat
-      public static readonly getDateTimeInstance(arg0: int, arg1: int, arg2: java.util.Locale): java.text.DateFormat
-      public static readonly getInstance(): java.text.DateFormat
+      public static getTimeInstance(): java.text.DateFormat
+      public static getTimeInstance(arg0: int): java.text.DateFormat
+      public static getTimeInstance(arg0: int, arg1: java.util.Locale): java.text.DateFormat
+      public static getDateInstance(): java.text.DateFormat
+      public static getDateInstance(arg0: int): java.text.DateFormat
+      public static getDateInstance(arg0: int, arg1: java.util.Locale): java.text.DateFormat
+      public static getDateTimeInstance(): java.text.DateFormat
+      public static getDateTimeInstance(arg0: int, arg1: int): java.text.DateFormat
+      public static getDateTimeInstance(arg0: int, arg1: int, arg2: java.util.Locale): java.text.DateFormat
+      public static getInstance(): java.text.DateFormat
       public static getAvailableLocales(): java.util.Locale[]
       public setCalendar(arg0: java.util.Calendar): void
       public getCalendar(): java.util.Calendar

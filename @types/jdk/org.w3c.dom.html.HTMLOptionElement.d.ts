@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLOptionElement extends org.w3c.dom.html.HTMLElement {
-
           getForm(): org.w3c.dom.html.HTMLFormElement
           getDefaultSelected(): boolean
           setDefaultSelected(arg0: boolean): void

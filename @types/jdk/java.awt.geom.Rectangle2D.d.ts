@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       abstract class Rectangle2D extends java.awt.geom.RectangularShape {
-
         public static readonly OUT_LEFT: int
         public static readonly OUT_TOP: int
         public static readonly OUT_RIGHT: int

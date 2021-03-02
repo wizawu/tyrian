@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       abstract class XMLInputFactory {
-
         public static readonly IS_NAMESPACE_AWARE: java.lang.String
         public static readonly IS_VALIDATING: java.lang.String
         public static readonly IS_COALESCING: java.lang.String

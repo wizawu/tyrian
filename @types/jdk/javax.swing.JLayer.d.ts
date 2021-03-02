@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JLayer<V extends java.awt.Component> extends javax.swing.JComponent implements javax.swing.Scrollable, java.beans.PropertyChangeListener, javax.accessibility.Accessible {
-
       public constructor()
       public constructor(arg0: V)
       public constructor(arg0: V, arg1: javax.swing.plaf.LayerUI<V>)

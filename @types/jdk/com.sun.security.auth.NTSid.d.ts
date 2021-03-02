@@ -4,7 +4,6 @@ declare namespace com {
       namespace auth {
 
         class NTSid implements java.security.Principal, java.io.Serializable {
-
           public constructor(arg0: java.lang.String)
           public getName(): java.lang.String
           public toString(): java.lang.String

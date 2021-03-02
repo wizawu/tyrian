@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class ZipEntry implements java.util.zip.ZipConstants, java.lang.Cloneable {
-
         name: java.lang.String
         xdostime: long
         mtime: java.nio.file.attribute.FileTime

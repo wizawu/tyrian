@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class SubmissionPublisher<T> implements java.util.concurrent.Flow$Publisher<T>, java.lang.AutoCloseable {
-
         static readonly BUFFER_CAPACITY_LIMIT: int
         static readonly INITIAL_CAPACITY: int
         clients: java.util.concurrent.SubmissionPublisher$BufferedSubscription<T>
@@ -14,7 +13,7 @@ declare namespace java {
         readonly executor: java.util.concurrent.Executor
         readonly onNextHandler: java.util.function$.BiConsumer<unknown,unknown>
         readonly maxBufferCapacity: int
-        static readonly roundCapacity(arg0: int): int
+        static roundCapacity(arg0: int): int
         public constructor(arg0: java.util.concurrent.Executor, arg1: int, arg2: java.util.function$.BiConsumer<unknown,unknown>)
         public constructor(arg0: java.util.concurrent.Executor, arg1: int)
         public constructor()

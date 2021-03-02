@@ -1,8 +1,11 @@
 declare namespace java {
   namespace sql {
 
-    interface DriverAction {
+    interface DriverAction$$lambda {
+      (): void
+    }
 
+    interface DriverAction {
       deregister(): void
     }
 

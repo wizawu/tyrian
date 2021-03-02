@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class StringBuffer extends java.lang.AbstractStringBuilder implements java.io.Serializable, java.lang.Comparable<java.lang.StringBuffer>, java.lang.CharSequence {
-
       static readonly serialVersionUID: long
       public constructor()
       public constructor(arg0: int)

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class MBeanServerInvocationHandler implements java.lang.reflect.InvocationHandler {
-
       public constructor(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName)
       public constructor(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: boolean)
       public getMBeanServerConnection(): javax.management.MBeanServerConnection

@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     interface Shape {
-
       getBounds(): java.awt.Rectangle
       getBounds2D(): java.awt.geom.Rectangle2D
       contains(arg0: double, arg1: double): boolean

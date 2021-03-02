@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class DefaultFocusManager extends javax.swing.FocusManager {
-
       readonly gluePolicy: java.awt.FocusTraversalPolicy
       public constructor()
       public getComponentAfter(arg0: java.awt.Container, arg1: java.awt.Component): java.awt.Component

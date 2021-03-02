@@ -3,7 +3,6 @@ declare namespace java {
     namespace http {
 
       class HttpRequest$BodyPublishers {
-
         public static fromPublisher(arg0: java.util.concurrent.Flow$Publisher<java.nio.ByteBuffer>): java.net.http.HttpRequest$BodyPublisher
         public static fromPublisher(arg0: java.util.concurrent.Flow$Publisher<java.nio.ByteBuffer>, arg1: long): java.net.http.HttpRequest$BodyPublisher
         public static ofString(arg0: java.lang.String): java.net.http.HttpRequest$BodyPublisher

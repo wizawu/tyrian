@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       abstract class SplitPaneUI extends javax.swing.plaf.ComponentUI {
-
         public constructor()
         public abstract resetToPreferredSizes(arg0: javax.swing.JSplitPane): void
         public abstract setDividerLocation(arg0: javax.swing.JSplitPane, arg1: int): void

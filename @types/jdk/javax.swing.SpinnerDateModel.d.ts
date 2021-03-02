@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class SpinnerDateModel extends javax.swing.AbstractSpinnerModel implements java.io.Serializable {
-
       public constructor(arg0: java.util.Date, arg1: java.lang.Comparable<java.util.Date>, arg2: java.lang.Comparable<java.util.Date>, arg3: int)
       public constructor()
       public setStart(arg0: java.lang.Comparable<java.util.Date>): void

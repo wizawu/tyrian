@@ -3,7 +3,6 @@ declare namespace java {
     namespace invoke {
 
       class VarHandle$AccessMode extends java.lang.Enum<java.lang.invoke.VarHandle$AccessMode> {
-
         public static readonly GET: java.lang.invoke.VarHandle$AccessMode
         public static readonly SET: java.lang.invoke.VarHandle$AccessMode
         public static readonly GET_VOLATILE: java.lang.invoke.VarHandle$AccessMode

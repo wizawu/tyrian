@@ -4,7 +4,6 @@ declare namespace java {
       namespace renderable {
 
         interface ContextualRenderedImageFactory extends java.awt.image.renderable.RenderedImageFactory {
-
           mapRenderContext(arg0: int, arg1: java.awt.image.renderable.RenderContext, arg2: java.awt.image.renderable.ParameterBlock, arg3: java.awt.image.renderable.RenderableImage): java.awt.image.renderable.RenderContext
           create(arg0: java.awt.image.renderable.RenderContext, arg1: java.awt.image.renderable.ParameterBlock): java.awt.image.RenderedImage
           getBounds2D(arg0: java.awt.image.renderable.ParameterBlock): java.awt.geom.Rectangle2D

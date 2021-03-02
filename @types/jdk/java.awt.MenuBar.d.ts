@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class MenuBar extends java.awt.MenuComponent implements java.awt.MenuContainer, javax.accessibility.Accessible {
-
       public constructor()
       constructComponentName(): java.lang.String
       public addNotify(): void
@@ -14,9 +13,9 @@ declare namespace java {
       public remove(arg0: java.awt.MenuComponent): void
       public getMenuCount(): int
       public countMenus(): int
-      readonly getMenuCountImpl(): int
+      getMenuCountImpl(): int
       public getMenu(arg0: int): java.awt.Menu
-      readonly getMenuImpl(arg0: int): java.awt.Menu
+      getMenuImpl(arg0: int): java.awt.Menu
       public shortcuts(): java.util.Enumeration<java.awt.MenuShortcut>
       public getShortcutMenuItem(arg0: java.awt.MenuShortcut): java.awt.MenuItem
       handleShortcut(arg0: java.awt.event.KeyEvent): boolean

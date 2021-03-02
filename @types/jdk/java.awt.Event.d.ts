@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Event implements java.io.Serializable {
-
       public static readonly SHIFT_MASK: int
       public static readonly CTRL_MASK: int
       public static readonly META_MASK: int

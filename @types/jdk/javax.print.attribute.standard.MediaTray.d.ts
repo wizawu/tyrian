@@ -4,7 +4,6 @@ declare namespace javax {
       namespace standard {
 
         class MediaTray extends javax.print.attribute.standard.Media implements javax.print.attribute.Attribute {
-
           public static readonly TOP: javax.print.attribute.standard.MediaTray
           public static readonly MIDDLE: javax.print.attribute.standard.MediaTray
           public static readonly BOTTOM: javax.print.attribute.standard.MediaTray

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class StyleConstants$ParagraphConstants extends javax.swing.text.StyleConstants implements javax.swing.text.AttributeSet$ParagraphAttribute {
-
       }
 
     }

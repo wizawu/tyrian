@@ -4,7 +4,6 @@ declare namespace com {
       namespace attach {
 
         class VirtualMachineDescriptor {
-
           public constructor(arg0: com.sun.tools.attach.spi.AttachProvider, arg1: java.lang.String, arg2: java.lang.String)
           public constructor(arg0: com.sun.tools.attach.spi.AttachProvider, arg1: java.lang.String)
           public provider(): com.sun.tools.attach.spi.AttachProvider

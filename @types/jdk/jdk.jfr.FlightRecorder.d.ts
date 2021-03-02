@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jfr {
 
     class FlightRecorder {
-
       public getRecordings(): java.util.List<jdk.jfr.Recording>
       public takeSnapshot(): jdk.jfr.Recording
       public static register(arg0: java.lang.Class<jdk.jfr.Event>): void

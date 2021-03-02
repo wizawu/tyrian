@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class TransferHandler$TransferSupport {
-
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: java.awt.Component, arg1: java.awt.datatransfer.Transferable)
       public isDrop(): boolean

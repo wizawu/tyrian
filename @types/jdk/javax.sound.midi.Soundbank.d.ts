@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       interface Soundbank {
-
         getName(): java.lang.String
         getVersion(): java.lang.String
         getVendor(): java.lang.String

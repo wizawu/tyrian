@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class HTML$Attribute {
-
           public static readonly SIZE: javax.swing.text.html.HTML$Attribute
           public static readonly COLOR: javax.swing.text.html.HTML$Attribute
           public static readonly CLEAR: javax.swing.text.html.HTML$Attribute

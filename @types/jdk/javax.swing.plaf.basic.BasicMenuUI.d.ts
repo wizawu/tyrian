@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicMenuUI extends javax.swing.plaf.basic.BasicMenuItemUI {
-
           protected changeListener: javax.swing.event.ChangeListener
           protected menuListener: javax.swing.event.MenuListener
           public constructor()

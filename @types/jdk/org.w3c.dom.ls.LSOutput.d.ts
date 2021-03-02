@@ -4,7 +4,6 @@ declare namespace org {
       namespace ls {
 
         interface LSOutput {
-
           getCharacterStream(): java.io.Writer
           setCharacterStream(arg0: java.io.Writer): void
           getByteStream(): java.io.OutputStream

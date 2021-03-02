@@ -4,7 +4,6 @@ declare namespace com {
       namespace sctp {
 
         class AssociationChangeNotification$AssocChangeEvent extends java.lang.Enum<com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent> {
-
           public static readonly COMM_UP: com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent
           public static readonly COMM_LOST: com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent
           public static readonly RESTART: com.sun.nio.sctp.AssociationChangeNotification$AssocChangeEvent

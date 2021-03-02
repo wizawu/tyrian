@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface ShortType extends com.sun.jdi.PrimitiveType {
-
       }
 
     }

@@ -4,13 +4,12 @@ declare namespace com {
       namespace util {
 
         class SimpleDocTreeVisitor<R,P> implements com.sun.source.doctree.DocTreeVisitor<R,P> {
-
           protected readonly DEFAULT_VALUE: R
           protected constructor()
           protected constructor(arg0: R)
           protected defaultAction(arg0: com.sun.source.doctree.DocTree, arg1: P): R
-          public readonly visit(arg0: com.sun.source.doctree.DocTree, arg1: P): R
-          public readonly visit(arg0: java.lang.Iterable<com.sun.source.doctree.DocTree>, arg1: P): R
+          public visit(arg0: com.sun.source.doctree.DocTree, arg1: P): R
+          public visit(arg0: java.lang.Iterable<com.sun.source.doctree.DocTree>, arg1: P): R
           public visitAttribute(arg0: com.sun.source.doctree.AttributeTree, arg1: P): R
           public visitAuthor(arg0: com.sun.source.doctree.AuthorTree, arg1: P): R
           public visitComment(arg0: com.sun.source.doctree.CommentTree, arg1: P): R

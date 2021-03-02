@@ -4,7 +4,6 @@ declare namespace javax {
       namespace serial {
 
         class SerialJavaObject implements java.io.Serializable, java.lang.Cloneable {
-
           static readonly serialVersionUID: long
           chain: java.util.Vector<javax.sql.rowset.RowSetWarning>
           public constructor(arg0: java.lang.Object)

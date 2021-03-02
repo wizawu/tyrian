@@ -3,7 +3,6 @@ declare namespace javax {
     namespace undo {
 
       class UndoManager extends javax.swing.undo.CompoundEdit implements javax.swing.event.UndoableEditListener {
-
         indexOfNextAdd: int
         limit: int
         public constructor()

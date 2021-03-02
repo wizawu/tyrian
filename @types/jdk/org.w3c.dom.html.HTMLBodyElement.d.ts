@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLBodyElement extends org.w3c.dom.html.HTMLElement {
-
           getALink(): java.lang.String
           setALink(arg0: java.lang.String): void
           getBackground(): java.lang.String

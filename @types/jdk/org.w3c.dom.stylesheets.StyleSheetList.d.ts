@@ -4,7 +4,6 @@ declare namespace org {
       namespace stylesheets {
 
         interface StyleSheetList {
-
           getLength(): int
           item(arg0: int): org.w3c.dom.stylesheets.StyleSheet
         }

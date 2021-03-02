@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class List extends java.awt.Component implements java.awt.ItemSelectable, javax.accessibility.Accessible {
-
       items: java.util.Vector<java.lang.String>
       rows: int
       multipleMode: boolean
@@ -20,7 +19,7 @@ declare namespace java {
       public getItemCount(): int
       public countItems(): int
       public getItem(arg0: int): java.lang.String
-      readonly getItemImpl(arg0: int): java.lang.String
+      getItemImpl(arg0: int): java.lang.String
       public getItems(): java.lang.String[]
       public add(arg0: java.lang.String): void
       public addItem(arg0: java.lang.String): void

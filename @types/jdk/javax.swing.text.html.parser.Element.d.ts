@@ -5,7 +5,6 @@ declare namespace javax {
         namespace parser {
 
           class Element implements javax.swing.text.html.parser.DTDConstants, java.io.Serializable {
-
             public index: int
             public name: java.lang.String
             public oStart: boolean

@@ -4,7 +4,6 @@ declare namespace com {
       namespace sctp {
 
         class SctpStandardSocketOptions {
-
           public static readonly SCTP_DISABLE_FRAGMENTS: com.sun.nio.sctp.SctpSocketOption<java.lang.Boolean>
           public static readonly SCTP_EXPLICIT_COMPLETE: com.sun.nio.sctp.SctpSocketOption<java.lang.Boolean>
           public static readonly SCTP_FRAGMENT_INTERLEAVE: com.sun.nio.sctp.SctpSocketOption<java.lang.Integer>

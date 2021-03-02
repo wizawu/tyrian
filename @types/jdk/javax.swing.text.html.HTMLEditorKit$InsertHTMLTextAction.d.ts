@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class HTMLEditorKit$InsertHTMLTextAction extends javax.swing.text.html.HTMLEditorKit$HTMLTextAction {
-
           protected html: java.lang.String
           protected parentTag: javax.swing.text.html.HTML$Tag
           protected addTag: javax.swing.text.html.HTML$Tag

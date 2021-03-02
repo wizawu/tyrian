@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class Time extends java.util.Date {
-
       static readonly serialVersionUID: long
       public constructor(arg0: int, arg1: int, arg2: int)
       public constructor(arg0: long)

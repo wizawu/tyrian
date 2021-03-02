@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class DelayQueue<E extends java.util.concurrent.Delayed> extends java.util.AbstractQueue<E> implements java.util.concurrent.BlockingQueue<E> {
-
         public constructor()
         public constructor(arg0: java.util.Collection<E>)
         public add(arg0: E): boolean

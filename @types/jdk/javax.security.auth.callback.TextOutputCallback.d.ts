@@ -4,7 +4,6 @@ declare namespace javax {
       namespace callback {
 
         class TextOutputCallback implements javax.security.auth.callback.Callback, java.io.Serializable {
-
           public static readonly INFORMATION: int
           public static readonly WARNING: int
           public static readonly ERROR: int

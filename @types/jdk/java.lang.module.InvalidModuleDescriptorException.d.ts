@@ -3,7 +3,6 @@ declare namespace java {
     namespace module {
 
       class InvalidModuleDescriptorException extends java.lang.RuntimeException {
-
         public constructor()
         public constructor(arg0: java.lang.String)
       }

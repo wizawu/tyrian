@@ -4,7 +4,6 @@ declare namespace javax {
       namespace callback {
 
         class ChoiceCallback implements javax.security.auth.callback.Callback, java.io.Serializable {
-
           public constructor(arg0: java.lang.String, arg1: java.lang.String[], arg2: int, arg3: boolean)
           public getPrompt(): java.lang.String
           public getChoices(): java.lang.String[]

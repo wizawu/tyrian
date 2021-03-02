@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jfr {
 
     class SettingDescriptor {
-
       constructor(arg0: jdk.jfr.internal.Type, arg1: java.lang.String, arg2: java.lang.String, arg3: java.util.List<jdk.jfr.AnnotationElement>)
       setAnnotations(arg0: java.util.List<jdk.jfr.AnnotationElement>): void
       public getName(): java.lang.String

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace smartcardio {
 
     abstract class CardChannel {
-
       protected constructor()
       public abstract getCard(): javax.smartcardio.Card
       public abstract getChannelNumber(): int

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       abstract class FloatControl extends javax.sound.sampled.Control {
-
         protected constructor(arg0: javax.sound.sampled.FloatControl$Type, arg1: float, arg2: float, arg3: float, arg4: int, arg5: float, arg6: java.lang.String, arg7: java.lang.String, arg8: java.lang.String, arg9: java.lang.String)
         protected constructor(arg0: javax.sound.sampled.FloatControl$Type, arg1: float, arg2: float, arg3: float, arg4: int, arg5: float, arg6: java.lang.String)
         public setValue(arg0: float): void

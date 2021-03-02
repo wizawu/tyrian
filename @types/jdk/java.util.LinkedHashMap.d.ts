@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class LinkedHashMap<K,V> extends java.util.HashMap<K,V> implements java.util.Map<K,V> {
-
       head: java.util.LinkedHashMap$Entry<K,V>
       tail: java.util.LinkedHashMap$Entry<K,V>
       readonly accessOrder: boolean

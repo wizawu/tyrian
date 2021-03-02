@@ -3,7 +3,6 @@ declare namespace java {
     namespace annotation {
 
       interface Repeatable extends java.lang.annotation.Annotation {
-
         value(): java.lang.Class<java.lang.annotation.Annotation>
       }
 

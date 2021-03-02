@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicDesktopIconUI extends javax.swing.plaf.DesktopIconUI {
-
           protected desktopIcon: javax.swing.JInternalFrame$JDesktopIcon
           protected frame: javax.swing.JInternalFrame
           protected iconPane: javax.swing.JComponent

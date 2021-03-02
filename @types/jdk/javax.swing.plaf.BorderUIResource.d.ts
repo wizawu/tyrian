@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       class BorderUIResource implements javax.swing.border.Border, javax.swing.plaf.UIResource, java.io.Serializable {
-
         static etched: javax.swing.border.Border
         static loweredBevel: javax.swing.border.Border
         static raisedBevel: javax.swing.border.Border

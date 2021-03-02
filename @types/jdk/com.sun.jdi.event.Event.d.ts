@@ -4,7 +4,6 @@ declare namespace com {
       namespace event {
 
         interface Event extends com.sun.jdi.Mirror {
-
           request(): com.sun.jdi.request.EventRequest
         }
 

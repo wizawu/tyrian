@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class GlyphMetrics {
-
         public static readonly STANDARD: byte
         public static readonly LIGATURE: byte
         public static readonly COMBINING: byte

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JSpinner extends javax.swing.JComponent implements javax.accessibility.Accessible {
-
       public constructor(arg0: javax.swing.SpinnerModel)
       public constructor()
       public getUI(): javax.swing.plaf.SpinnerUI

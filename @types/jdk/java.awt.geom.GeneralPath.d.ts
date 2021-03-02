@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       class GeneralPath extends java.awt.geom.Path2D$Float {
-
         public constructor()
         public constructor(arg0: int)
         public constructor(arg0: int, arg1: int)

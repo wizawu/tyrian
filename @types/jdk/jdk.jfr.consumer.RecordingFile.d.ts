@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace consumer {
 
       class RecordingFile implements java.io.Closeable {
-
         public constructor(arg0: java.nio.file.Path)
         public readEvent(): jdk.jfr.consumer.RecordedEvent
         public hasMoreEvents(): boolean

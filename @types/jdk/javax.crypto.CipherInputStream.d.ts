@@ -2,7 +2,6 @@ declare namespace javax {
   namespace crypto {
 
     class CipherInputStream extends java.io.FilterInputStream {
-
       public constructor(arg0: java.io.InputStream, arg1: javax.crypto.Cipher)
       protected constructor(arg0: java.io.InputStream)
       public read(): int

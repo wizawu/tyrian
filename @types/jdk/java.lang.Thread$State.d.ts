@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Thread$State extends java.lang.Enum<java.lang.Thread$State> {
-
       public static readonly NEW: java.lang.Thread$State
       public static readonly RUNNABLE: java.lang.Thread$State
       public static readonly BLOCKED: java.lang.Thread$State

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class AbstractListModel<E> implements javax.swing.ListModel<E>, java.io.Serializable {
-
       protected listenerList: javax.swing.event.EventListenerList
       public constructor()
       public addListDataListener(arg0: javax.swing.event.ListDataListener): void

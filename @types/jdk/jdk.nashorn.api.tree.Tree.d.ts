@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface Tree {
-
           getStartPosition(): long
           getEndPosition(): long
           getKind(): jdk.nashorn.api.tree.Tree$Kind

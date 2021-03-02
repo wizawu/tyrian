@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       abstract class LookupTable {
-
         numComponents: int
         offset: int
         numEntries: int

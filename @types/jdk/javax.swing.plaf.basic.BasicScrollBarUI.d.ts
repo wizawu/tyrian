@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicScrollBarUI extends javax.swing.plaf.ScrollBarUI implements java.awt.LayoutManager, javax.swing.SwingConstants {
-
           protected minimumThumbSize: java.awt.Dimension
           protected maximumThumbSize: java.awt.Dimension
           protected thumbHighlightColor: java.awt.Color

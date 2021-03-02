@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
 
     abstract class IIOParam {
-
       protected sourceRegion: java.awt.Rectangle
       protected sourceXSubsampling: int
       protected sourceYSubsampling: int

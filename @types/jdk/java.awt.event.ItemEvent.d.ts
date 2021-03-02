@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class ItemEvent extends java.awt.AWTEvent {
-
         public static readonly ITEM_FIRST: int
         public static readonly ITEM_LAST: int
         public static readonly ITEM_STATE_CHANGED: int

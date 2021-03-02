@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicScrollPaneUI extends javax.swing.plaf.ScrollPaneUI implements javax.swing.ScrollPaneConstants {
-
           protected scrollpane: javax.swing.JScrollPane
           protected vsbChangeListener: javax.swing.event.ChangeListener
           protected hsbChangeListener: javax.swing.event.ChangeListener

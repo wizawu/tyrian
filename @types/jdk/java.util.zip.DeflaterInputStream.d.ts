@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class DeflaterInputStream extends java.io.FilterInputStream {
-
         protected readonly def: java.util.zip.Deflater
         protected readonly buf: byte[]
         public constructor(arg0: java.io.InputStream)

@@ -4,7 +4,6 @@ declare namespace org {
       namespace helpers {
 
         class XMLReaderAdapter implements org.xml.sax.Parser, org.xml.sax.ContentHandler {
-
           xmlReader: org.xml.sax.XMLReader
           documentHandler: org.xml.sax.DocumentHandler
           qAtts: org.xml.sax.helpers.XMLReaderAdapter$AttributesAdapter

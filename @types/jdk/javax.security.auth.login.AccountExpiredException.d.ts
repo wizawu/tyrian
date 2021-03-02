@@ -4,7 +4,6 @@ declare namespace javax {
       namespace login {
 
         class AccountExpiredException extends javax.security.auth.login.AccountException {
-
           public constructor()
           public constructor(arg0: java.lang.String)
         }

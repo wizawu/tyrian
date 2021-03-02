@@ -4,7 +4,6 @@ declare namespace javax {
       namespace sax {
 
         class SAXResult implements javax.xml.transform.Result {
-
           public static readonly FEATURE: java.lang.String
           public constructor()
           public constructor(arg0: org.xml.sax.ContentHandler)

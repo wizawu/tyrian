@@ -4,7 +4,6 @@ declare namespace javax {
       namespace nimbus {
 
         class NimbusStyle extends javax.swing.plaf.synth.SynthStyle {
-
           public static readonly LARGE_KEY: java.lang.String
           public static readonly SMALL_KEY: java.lang.String
           public static readonly MINI_KEY: java.lang.String

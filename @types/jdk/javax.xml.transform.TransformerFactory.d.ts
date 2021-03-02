@@ -3,7 +3,6 @@ declare namespace javax {
     namespace transform {
 
       abstract class TransformerFactory {
-
         protected constructor()
         public static newDefaultInstance(): javax.xml.transform.TransformerFactory
         public static newInstance(): javax.xml.transform.TransformerFactory

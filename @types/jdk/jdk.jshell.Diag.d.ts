@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jshell {
 
     abstract class Diag {
-
       public static readonly NOPOS: long
       constructor()
       public abstract isError(): boolean

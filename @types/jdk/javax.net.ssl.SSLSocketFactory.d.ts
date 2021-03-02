@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       abstract class SSLSocketFactory extends javax.net.SocketFactory {
-
         static readonly DEBUG: boolean
         public constructor()
         public static getDefault(): javax.net.SocketFactory

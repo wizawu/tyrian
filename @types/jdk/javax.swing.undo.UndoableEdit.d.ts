@@ -3,7 +3,6 @@ declare namespace javax {
     namespace undo {
 
       interface UndoableEdit {
-
         undo(): void
         canUndo(): boolean
         redo(): void

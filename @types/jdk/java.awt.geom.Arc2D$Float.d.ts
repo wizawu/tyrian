@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       class Arc2D$Float extends java.awt.geom.Arc2D implements java.io.Serializable {
-
         public x: float
         public y: float
         public width: float

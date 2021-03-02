@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class GridBagConstraints implements java.lang.Cloneable, java.io.Serializable {
-
       public static readonly RELATIVE: int
       public static readonly REMAINDER: int
       public static readonly NONE: int

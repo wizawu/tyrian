@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       class UnresolvedAddressException extends java.lang.IllegalArgumentException {
-
         public constructor()
       }
 

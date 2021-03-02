@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace doclet {
 
       class StandardDoclet implements jdk.javadoc.doclet.Doclet {
-
         public constructor()
         public init(arg0: java.util.Locale, arg1: jdk.javadoc.doclet.Reporter): void
         public getName(): java.lang.String

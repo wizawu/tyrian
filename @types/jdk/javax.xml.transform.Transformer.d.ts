@@ -3,7 +3,6 @@ declare namespace javax {
     namespace transform {
 
       abstract class Transformer {
-
         protected constructor()
         public reset(): void
         public abstract transform(arg0: javax.xml.transform.Source, arg1: javax.xml.transform.Result): void

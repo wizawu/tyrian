@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLFrameElement extends org.w3c.dom.html.HTMLElement {
-
           getFrameBorder(): java.lang.String
           setFrameBorder(arg0: java.lang.String): void
           getLongDesc(): java.lang.String

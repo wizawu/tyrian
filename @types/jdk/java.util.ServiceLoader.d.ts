@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class ServiceLoader<S> implements java.lang.Iterable<S> {
-
       static readonly $assertionsDisabled: boolean
       public iterator(): java.util.Iterator<S>
       public stream(): java.util.stream.Stream<java.util.ServiceLoader$Provider<S>>

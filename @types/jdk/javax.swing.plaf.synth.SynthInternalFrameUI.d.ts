@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthInternalFrameUI extends javax.swing.plaf.basic.BasicInternalFrameUI implements javax.swing.plaf.synth.SynthUI, java.beans.PropertyChangeListener {
-
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected constructor(arg0: javax.swing.JInternalFrame)
           public installDefaults(): void

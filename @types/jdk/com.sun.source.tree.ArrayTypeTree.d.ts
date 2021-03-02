@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface ArrayTypeTree extends com.sun.source.tree.Tree {
-
           getType(): com.sun.source.tree.Tree
         }
 

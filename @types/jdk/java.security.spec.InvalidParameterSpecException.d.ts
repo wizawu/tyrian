@@ -3,7 +3,6 @@ declare namespace java {
     namespace spec {
 
       class InvalidParameterSpecException extends java.security.GeneralSecurityException {
-
         public constructor()
         public constructor(arg0: java.lang.String)
       }

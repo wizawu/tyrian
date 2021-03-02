@@ -4,7 +4,6 @@ declare namespace javax {
       namespace spi {
 
         abstract class MidiFileReader {
-
           public constructor()
           public abstract getMidiFileFormat(arg0: java.io.InputStream): javax.sound.midi.MidiFileFormat
           public abstract getMidiFileFormat(arg0: java.net.URL): javax.sound.midi.MidiFileFormat

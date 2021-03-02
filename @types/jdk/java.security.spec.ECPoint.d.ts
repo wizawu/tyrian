@@ -3,7 +3,6 @@ declare namespace java {
     namespace spec {
 
       class ECPoint {
-
         public static readonly POINT_INFINITY: java.security.spec.ECPoint
         public constructor(arg0: java.math.BigInteger, arg1: java.math.BigInteger)
         public getAffineX(): java.math.BigInteger

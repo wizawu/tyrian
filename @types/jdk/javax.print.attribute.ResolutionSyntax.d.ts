@@ -3,7 +3,6 @@ declare namespace javax {
     namespace attribute {
 
       abstract class ResolutionSyntax implements java.io.Serializable, java.lang.Cloneable {
-
         public static readonly DPI: int
         public static readonly DPCM: int
         public constructor(arg0: int, arg1: int, arg2: int)

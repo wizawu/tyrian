@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Polygon implements java.awt.Shape, java.io.Serializable {
-
       public npoints: int
       public xpoints: int[]
       public ypoints: int[]

@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     class CryptoPrimitive extends java.lang.Enum<java.security.CryptoPrimitive> {
-
       public static readonly MESSAGE_DIGEST: java.security.CryptoPrimitive
       public static readonly SECURE_RANDOM: java.security.CryptoPrimitive
       public static readonly BLOCK_CIPHER: java.security.CryptoPrimitive

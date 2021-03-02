@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class FormView extends javax.swing.text.ComponentView implements java.awt.event.ActionListener {
-
           public static readonly SUBMIT: java.lang.String
           public static readonly RESET: java.lang.String
           static readonly PostDataProperty: java.lang.String

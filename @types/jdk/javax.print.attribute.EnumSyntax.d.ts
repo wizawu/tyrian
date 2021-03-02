@@ -3,7 +3,6 @@ declare namespace javax {
     namespace attribute {
 
       abstract class EnumSyntax implements java.io.Serializable, java.lang.Cloneable {
-
         protected constructor(arg0: int)
         public getValue(): int
         public clone(): java.lang.Object

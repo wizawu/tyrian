@@ -2,7 +2,6 @@ declare namespace javax {
   namespace naming {
 
     class Reference implements java.lang.Cloneable, java.io.Serializable {
-
       protected className: java.lang.String
       protected addrs: java.util.Vector<javax.naming.RefAddr>
       protected classFactory: java.lang.String

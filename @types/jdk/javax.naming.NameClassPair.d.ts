@@ -2,7 +2,6 @@ declare namespace javax {
   namespace naming {
 
     class NameClassPair implements java.io.Serializable {
-
       public constructor(arg0: java.lang.String, arg1: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: boolean)
       public getClassName(): java.lang.String

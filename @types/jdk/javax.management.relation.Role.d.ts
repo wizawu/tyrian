@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       class Role implements java.io.Serializable {
-
         public constructor(arg0: java.lang.String, arg1: java.util.List<javax.management.ObjectName>)
         public getRoleName(): java.lang.String
         public getRoleValue(): java.util.List<javax.management.ObjectName>

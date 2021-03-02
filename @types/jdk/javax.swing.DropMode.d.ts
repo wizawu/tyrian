@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class DropMode extends java.lang.Enum<javax.swing.DropMode> {
-
       public static readonly USE_SELECTION: javax.swing.DropMode
       public static readonly ON: javax.swing.DropMode
       public static readonly INSERT: javax.swing.DropMode

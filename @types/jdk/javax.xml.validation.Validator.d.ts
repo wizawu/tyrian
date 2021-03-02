@@ -3,7 +3,6 @@ declare namespace javax {
     namespace validation {
 
       abstract class Validator {
-
         protected constructor()
         public abstract reset(): void
         public validate(arg0: javax.xml.transform.Source): void

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     abstract class Dictionary<K,V> {
-
       public constructor()
       public abstract size(): int
       public abstract isEmpty(): boolean

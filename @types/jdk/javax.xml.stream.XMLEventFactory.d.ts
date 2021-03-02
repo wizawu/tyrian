@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       abstract class XMLEventFactory {
-
         static readonly JAXPFACTORYID: java.lang.String
         static readonly DEFAULIMPL: java.lang.String
         protected constructor()

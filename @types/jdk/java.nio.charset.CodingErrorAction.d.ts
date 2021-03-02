@@ -3,7 +3,6 @@ declare namespace java {
     namespace charset {
 
       class CodingErrorAction {
-
         public static readonly IGNORE: java.nio.charset.CodingErrorAction
         public static readonly REPLACE: java.nio.charset.CodingErrorAction
         public static readonly REPORT: java.nio.charset.CodingErrorAction

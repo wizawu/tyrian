@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       abstract class BufferStrategy {
-
         public constructor()
         public abstract getCapabilities(): java.awt.BufferCapabilities
         public abstract getDrawGraphics(): java.awt.Graphics

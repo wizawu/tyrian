@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     interface AccessibleComponent {
-
       getBackground(): java.awt.Color
       setBackground(arg0: java.awt.Color): void
       getForeground(): java.awt.Color

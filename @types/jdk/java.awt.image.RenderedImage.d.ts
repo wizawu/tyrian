@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       interface RenderedImage {
-
         getSources(): java.util.Vector<java.awt.image.RenderedImage>
         getProperty(arg0: java.lang.String): java.lang.Object
         getPropertyNames(): java.lang.String[]

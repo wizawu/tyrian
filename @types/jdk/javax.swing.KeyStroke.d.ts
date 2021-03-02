@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class KeyStroke extends java.awt.AWTKeyStroke {
-
       public static getKeyStroke(arg0: char): javax.swing.KeyStroke
       public static getKeyStroke(arg0: char, arg1: boolean): javax.swing.KeyStroke
       public static getKeyStroke(arg0: java.lang.Character, arg1: int): javax.swing.KeyStroke

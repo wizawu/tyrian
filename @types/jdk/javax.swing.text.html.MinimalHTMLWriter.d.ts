@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class MinimalHTMLWriter extends javax.swing.text.AbstractWriter {
-
           startOffset: int
           endOffset: int
           public constructor(arg0: java.io.Writer, arg1: javax.swing.text.StyledDocument)

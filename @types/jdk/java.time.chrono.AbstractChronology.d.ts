@@ -3,7 +3,6 @@ declare namespace java {
     namespace chrono {
 
       abstract class AbstractChronology implements java.time.chrono.Chronology {
-
         static registerChrono(arg0: java.time.chrono.Chronology): java.time.chrono.Chronology
         static registerChrono(arg0: java.time.chrono.Chronology, arg1: java.lang.String): java.time.chrono.Chronology
         static ofLocale(arg0: java.util.Locale): java.time.chrono.Chronology

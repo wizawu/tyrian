@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class Inflater {
-
         static readonly $assertionsDisabled: boolean
         public constructor(arg0: boolean)
         public constructor()

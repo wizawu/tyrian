@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class AssertionError extends java.lang.Error {
-
       public constructor()
       public constructor(arg0: java.lang.Object)
       public constructor(arg0: boolean)

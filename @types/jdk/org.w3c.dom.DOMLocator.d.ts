@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface DOMLocator {
-
         getLineNumber(): int
         getColumnNumber(): int
         getByteOffset(): int

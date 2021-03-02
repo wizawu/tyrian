@@ -2,7 +2,6 @@ declare namespace javax {
   namespace smartcardio {
 
     abstract class Card {
-
       protected constructor()
       public abstract getATR(): javax.smartcardio.ATR
       public abstract getProtocol(): java.lang.String

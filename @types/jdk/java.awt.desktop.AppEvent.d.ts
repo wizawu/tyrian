@@ -3,7 +3,6 @@ declare namespace java {
     namespace desktop {
 
       class AppEvent extends java.util.EventObject {
-
         constructor()
       }
 

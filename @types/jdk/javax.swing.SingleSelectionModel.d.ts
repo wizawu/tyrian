@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     interface SingleSelectionModel {
-
       getSelectedIndex(): int
       setSelectedIndex(arg0: int): void
       clearSelection(): void

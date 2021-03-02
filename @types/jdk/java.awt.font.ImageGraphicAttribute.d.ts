@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class ImageGraphicAttribute extends java.awt.font.GraphicAttribute {
-
         public constructor(arg0: java.awt.Image, arg1: int)
         public constructor(arg0: java.awt.Image, arg1: int, arg2: float, arg3: float)
         public getAscent(): float

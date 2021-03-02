@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class AncestorEvent extends java.awt.AWTEvent {
-
         public static readonly ANCESTOR_ADDED: int
         public static readonly ANCESTOR_REMOVED: int
         public static readonly ANCESTOR_MOVED: int

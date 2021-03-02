@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       abstract class DragGestureRecognizer implements java.io.Serializable {
-
         protected dragSource: java.awt.dnd.DragSource
         protected component: java.awt.Component
         protected dragGestureListener: java.awt.dnd.DragGestureListener

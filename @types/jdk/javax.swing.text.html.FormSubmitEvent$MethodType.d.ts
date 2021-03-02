@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class FormSubmitEvent$MethodType extends java.lang.Enum<javax.swing.text.html.FormSubmitEvent$MethodType> {
-
           public static readonly GET: javax.swing.text.html.FormSubmitEvent$MethodType
           public static readonly POST: javax.swing.text.html.FormSubmitEvent$MethodType
           public static values(): javax.swing.text.html.FormSubmitEvent$MethodType[]

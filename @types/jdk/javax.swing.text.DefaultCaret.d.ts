@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class DefaultCaret extends java.awt.Rectangle implements javax.swing.text.Caret, java.awt.event.FocusListener, java.awt.event.MouseListener, java.awt.event.MouseMotionListener {
-
         public static readonly UPDATE_WHEN_ON_EDT: int
         public static readonly NEVER_UPDATE: int
         public static readonly ALWAYS_UPDATE: int
@@ -27,8 +26,8 @@ declare namespace javax {
         public constructor()
         public setUpdatePolicy(arg0: int): void
         public getUpdatePolicy(): int
-        protected readonly getComponent(): javax.swing.text.JTextComponent
-        protected readonly repaint(): void
+        protected getComponent(): javax.swing.text.JTextComponent
+        protected repaint(): void
         protected damage(arg0: java.awt.Rectangle): void
         protected adjustVisibility(arg0: java.awt.Rectangle): void
         protected getSelectionPainter(): javax.swing.text.Highlighter$HighlightPainter

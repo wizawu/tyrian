@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     interface MBeanServerConnection {
-
       createMBean(arg0: java.lang.String, arg1: javax.management.ObjectName): javax.management.ObjectInstance
       createMBean(arg0: java.lang.String, arg1: javax.management.ObjectName, arg2: javax.management.ObjectName): javax.management.ObjectInstance
       createMBean(arg0: java.lang.String, arg1: javax.management.ObjectName, arg2: java.lang.Object[], arg3: java.lang.String[]): javax.management.ObjectInstance

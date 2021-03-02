@@ -3,7 +3,6 @@ declare namespace javax {
     namespace modelmbean {
 
       class InvalidTargetObjectTypeException extends java.lang.Exception {
-
         exception: java.lang.Exception
         public constructor()
         public constructor(arg0: java.lang.String)

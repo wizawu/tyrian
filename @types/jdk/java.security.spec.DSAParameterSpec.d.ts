@@ -3,7 +3,6 @@ declare namespace java {
     namespace spec {
 
       class DSAParameterSpec implements java.security.spec.AlgorithmParameterSpec, java.security.interfaces.DSAParams {
-
         p: java.math.BigInteger
         q: java.math.BigInteger
         g: java.math.BigInteger

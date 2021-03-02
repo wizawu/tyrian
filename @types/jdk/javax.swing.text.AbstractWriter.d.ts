@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class AbstractWriter {
-
         protected static readonly NEWLINE: char
         protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Document)
         protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Document, arg2: int, arg3: int)

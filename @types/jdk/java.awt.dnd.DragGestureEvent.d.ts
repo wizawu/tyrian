@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       class DragGestureEvent extends java.util.EventObject {
-
         public constructor(arg0: java.awt.dnd.DragGestureRecognizer, arg1: int, arg2: java.awt.Point, arg3: java.util.List<java.awt.event.InputEvent>)
         public getSourceAsDragGestureRecognizer(): java.awt.dnd.DragGestureRecognizer
         public getComponent(): java.awt.Component

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace jpeg {
 
         class JPEGQTable {
-
           public static readonly K1Luminance: javax.imageio.plugins.jpeg.JPEGQTable
           public static readonly K1Div2Luminance: javax.imageio.plugins.jpeg.JPEGQTable
           public static readonly K2Chrominance: javax.imageio.plugins.jpeg.JPEGQTable

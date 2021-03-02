@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         class ModuleTree$ModuleKind extends java.lang.Enum<com.sun.source.tree.ModuleTree$ModuleKind> {
-
           public static readonly OPEN: com.sun.source.tree.ModuleTree$ModuleKind
           public static readonly STRONG: com.sun.source.tree.ModuleTree$ModuleKind
           public static values(): com.sun.source.tree.ModuleTree$ModuleKind[]

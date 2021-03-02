@@ -3,7 +3,6 @@ declare namespace java {
     namespace stream {
 
       class Collector$Characteristics extends java.lang.Enum<java.util.stream.Collector$Characteristics> {
-
         public static readonly CONCURRENT: java.util.stream.Collector$Characteristics
         public static readonly UNORDERED: java.util.stream.Collector$Characteristics
         public static readonly IDENTITY_FINISH: java.util.stream.Collector$Characteristics

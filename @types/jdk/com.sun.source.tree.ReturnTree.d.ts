@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface ReturnTree extends com.sun.source.tree.StatementTree {
-
           getExpression(): com.sun.source.tree.ExpressionTree
         }
 

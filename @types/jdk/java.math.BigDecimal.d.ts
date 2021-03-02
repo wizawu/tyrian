@@ -2,7 +2,6 @@ declare namespace java {
   namespace math {
 
     class BigDecimal extends java.lang.Number implements java.lang.Comparable<java.math.BigDecimal> {
-
       static readonly INFLATED: long
       public static readonly ZERO: java.math.BigDecimal
       public static readonly ONE: java.math.BigDecimal

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace remote {
 
       class JMXServiceURL implements java.io.Serializable {
-
         public constructor(arg0: java.lang.String)
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: int)
         public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: int, arg3: java.lang.String)

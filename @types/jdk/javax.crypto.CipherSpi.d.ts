@@ -2,7 +2,6 @@ declare namespace javax {
   namespace crypto {
 
     abstract class CipherSpi {
-
       public constructor()
       protected abstract engineSetMode(arg0: java.lang.String): void
       protected abstract engineSetPadding(arg0: java.lang.String): void

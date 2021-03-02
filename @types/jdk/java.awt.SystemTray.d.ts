@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class SystemTray {
-
       public static getSystemTray(): java.awt.SystemTray
       public static isSupported(): boolean
       public add(arg0: java.awt.TrayIcon): void

@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class MenuShortcut implements java.io.Serializable {
-
       key: int
       usesShift: boolean
       public constructor(arg0: int)

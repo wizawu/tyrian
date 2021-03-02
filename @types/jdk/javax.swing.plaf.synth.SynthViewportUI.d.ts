@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthViewportUI extends javax.swing.plaf.ViewportUI implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public installUI(arg0: javax.swing.JComponent): void

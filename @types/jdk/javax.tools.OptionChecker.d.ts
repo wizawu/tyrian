@@ -1,8 +1,11 @@
 declare namespace javax {
   namespace tools {
 
-    interface OptionChecker {
+    interface OptionChecker$$lambda {
+      (arg0: java.lang.String): int
+    }
 
+    interface OptionChecker {
       isSupportedOption(arg0: java.lang.String): int
     }
 

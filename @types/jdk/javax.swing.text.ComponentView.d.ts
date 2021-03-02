@@ -3,10 +3,9 @@ declare namespace javax {
     namespace text {
 
       class ComponentView extends javax.swing.text.View {
-
         public constructor(arg0: javax.swing.text.Element)
         protected createComponent(): java.awt.Component
-        public readonly getComponent(): java.awt.Component
+        public getComponent(): java.awt.Component
         public paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void
         public getPreferredSpan(arg0: int): float
         public getMinimumSpan(arg0: int): float

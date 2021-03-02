@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class NotificationBroadcasterSupport implements javax.management.NotificationEmitter {
-
       public constructor()
       public constructor(arg0: java.util.concurrent.Executor)
       public constructor(...arg0: javax.management.MBeanNotificationInfo[])

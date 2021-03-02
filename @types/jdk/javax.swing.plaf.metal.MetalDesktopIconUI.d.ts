@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalDesktopIconUI extends javax.swing.plaf.basic.BasicDesktopIconUI {
-
           button: javax.swing.JButton
           label: javax.swing.JLabel
           titleListener: javax.swing.plaf.metal.MetalDesktopIconUI$TitleListener

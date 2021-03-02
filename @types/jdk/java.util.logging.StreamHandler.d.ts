@@ -3,7 +3,6 @@ declare namespace java {
     namespace logging {
 
       class StreamHandler extends java.util.logging.Handler {
-
         public constructor()
         public constructor(arg0: java.io.OutputStream, arg1: java.util.logging.Formatter)
         constructor(arg0: java.util.logging.Level, arg1: java.util.logging.Formatter, arg2: java.util.logging.Formatter)
@@ -13,7 +12,7 @@ declare namespace java {
         public isLoggable(arg0: java.util.logging.LogRecord): boolean
         public flush(): void
         public close(): void
-        readonly setOutputStreamPrivileged(arg0: java.io.OutputStream): void
+        setOutputStreamPrivileged(arg0: java.io.OutputStream): void
       }
 
     }

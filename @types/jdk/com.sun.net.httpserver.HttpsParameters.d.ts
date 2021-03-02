@@ -4,7 +4,6 @@ declare namespace com {
       namespace httpserver {
 
         abstract class HttpsParameters {
-
           protected constructor()
           public abstract getHttpsConfigurator(): com.sun.net.httpserver.HttpsConfigurator
           public abstract getClientAddress(): java.net.InetSocketAddress

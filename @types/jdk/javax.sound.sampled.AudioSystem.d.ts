@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       class AudioSystem {
-
         public static readonly NOT_SPECIFIED: int
         public static getMixerInfo(): javax.sound.sampled.Mixer$Info[]
         public static getMixer(arg0: javax.sound.sampled.Mixer$Info): javax.sound.sampled.Mixer

@@ -4,7 +4,6 @@ declare namespace com {
       namespace httpserver {
 
         abstract class HttpContext {
-
           protected constructor()
           public abstract getHandler(): com.sun.net.httpserver.HttpHandler
           public abstract setHandler(arg0: com.sun.net.httpserver.HttpHandler): void

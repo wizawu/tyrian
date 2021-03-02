@@ -2,14 +2,13 @@ declare namespace java {
   namespace awt {
 
     class ScrollPane extends java.awt.Container implements javax.accessibility.Accessible {
-
       public static readonly SCROLLBARS_AS_NEEDED: int
       public static readonly SCROLLBARS_ALWAYS: int
       public static readonly SCROLLBARS_NEVER: int
       public constructor()
       public constructor(arg0: int)
       constructComponentName(): java.lang.String
-      protected readonly addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
+      protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
       public getScrollbarDisplayPolicy(): int
       public getViewportSize(): java.awt.Dimension
       public getHScrollbarHeight(): int
@@ -19,7 +18,7 @@ declare namespace java {
       public setScrollPosition(arg0: int, arg1: int): void
       public setScrollPosition(arg0: java.awt.Point): void
       public getScrollPosition(): java.awt.Point
-      public readonly setLayout(arg0: java.awt.LayoutManager): void
+      public setLayout(arg0: java.awt.LayoutManager): void
       public doLayout(): void
       calculateChildSize(): java.awt.Dimension
       public layout(): void

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class DefaultListModel<E> extends javax.swing.AbstractListModel<E> {
-
       public constructor()
       public getSize(): int
       public getElementAt(arg0: int): E

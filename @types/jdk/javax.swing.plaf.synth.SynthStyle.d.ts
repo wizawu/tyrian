@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         abstract class SynthStyle {
-
           public constructor()
           public getGraphicsUtils(arg0: javax.swing.plaf.synth.SynthContext): javax.swing.plaf.synth.SynthGraphicsUtils
           public getColor(arg0: javax.swing.plaf.synth.SynthContext, arg1: javax.swing.plaf.synth.ColorType): java.awt.Color

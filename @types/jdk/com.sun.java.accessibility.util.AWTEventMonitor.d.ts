@@ -5,7 +5,6 @@ declare namespace com {
         namespace util {
 
           class AWTEventMonitor {
-
             protected static componentWithFocus: java.awt.Component
             protected static componentListener: java.awt.event.ComponentListener
             protected static containerListener: java.awt.event.ContainerListener

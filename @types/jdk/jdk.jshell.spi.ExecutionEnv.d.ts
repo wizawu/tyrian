@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace spi {
 
       interface ExecutionEnv {
-
         userIn(): java.io.InputStream
         userOut(): java.io.PrintStream
         userErr(): java.io.PrintStream

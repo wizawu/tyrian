@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JViewport extends javax.swing.JComponent implements javax.accessibility.Accessible {
-
       static readonly EnableWindowBlit: java.lang.Object
       protected isViewSizeSet: boolean
       protected lastPaintPosition: java.awt.Point
@@ -20,9 +19,9 @@ declare namespace javax {
       protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object, arg2: int): void
       public remove(arg0: java.awt.Component): void
       public scrollRectToVisible(arg0: java.awt.Rectangle): void
-      public readonly setBorder(arg0: javax.swing.border.Border): void
-      public readonly getInsets(): java.awt.Insets
-      public readonly getInsets(arg0: java.awt.Insets): java.awt.Insets
+      public setBorder(arg0: javax.swing.border.Border): void
+      public getInsets(): java.awt.Insets
+      public getInsets(arg0: java.awt.Insets): java.awt.Insets
       public isOptimizedDrawingEnabled(): boolean
       protected isPaintingOrigin(): boolean
       public paint(arg0: java.awt.Graphics): void

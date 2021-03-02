@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class TabSet implements java.io.Serializable {
-
         public constructor(arg0: javax.swing.text.TabStop[])
         public getTabCount(): int
         public getTab(arg0: int): javax.swing.text.TabStop

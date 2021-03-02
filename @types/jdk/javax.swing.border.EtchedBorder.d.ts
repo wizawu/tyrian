@@ -3,7 +3,6 @@ declare namespace javax {
     namespace border {
 
       class EtchedBorder extends javax.swing.border.AbstractBorder {
-
         public static readonly RAISED: int
         public static readonly LOWERED: int
         protected etchType: int

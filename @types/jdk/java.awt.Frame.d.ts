@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Frame extends java.awt.Window implements java.awt.MenuContainer {
-
       public static readonly DEFAULT_CURSOR: int
       public static readonly CROSSHAIR_CURSOR: int
       public static readonly TEXT_CURSOR: int

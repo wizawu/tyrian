@@ -2,8 +2,11 @@ declare namespace java {
   namespace util {
     namespace concurrent {
 
-      interface Callable<V> {
+      interface Callable$$lambda<V> {
+        (): V
+      }
 
+      interface Callable<V> {
         call(): V
       }
 

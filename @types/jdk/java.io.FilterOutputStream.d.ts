@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class FilterOutputStream extends java.io.OutputStream {
-
       protected out: java.io.OutputStream
       public constructor(arg0: java.io.OutputStream)
       public write(arg0: int): void

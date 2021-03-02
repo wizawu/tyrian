@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       abstract class SSLServerSocketFactory extends javax.net.ServerSocketFactory {
-
         protected constructor()
         public static getDefault(): javax.net.ServerSocketFactory
         public abstract getDefaultCipherSuites(): java.lang.String[]

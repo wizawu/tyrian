@@ -3,7 +3,6 @@ declare namespace javax {
     namespace rowset {
 
       interface Joinable {
-
         setMatchColumn(arg0: int): void
         setMatchColumn(arg0: int[]): void
         setMatchColumn(arg0: java.lang.String): void

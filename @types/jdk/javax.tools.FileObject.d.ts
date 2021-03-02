@@ -2,7 +2,6 @@ declare namespace javax {
   namespace tools {
 
     interface FileObject {
-
       toUri(): java.net.URI
       getName(): java.lang.String
       openInputStream(): java.io.InputStream

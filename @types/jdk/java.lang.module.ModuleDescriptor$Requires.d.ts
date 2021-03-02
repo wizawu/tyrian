@@ -3,7 +3,6 @@ declare namespace java {
     namespace module {
 
       class ModuleDescriptor$Requires implements java.lang.Comparable<java.lang.module.ModuleDescriptor$Requires> {
-
         static readonly $assertionsDisabled: boolean
         public modifiers(): java.util.Set<java.lang.module.ModuleDescriptor$Requires$Modifier>
         public name(): java.lang.String

@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface MemberDoc extends com.sun.javadoc.ProgramElementDoc {
-
         isSynthetic(): boolean
       }
 

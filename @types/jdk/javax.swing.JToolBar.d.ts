@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JToolBar extends javax.swing.JComponent implements javax.swing.SwingConstants, javax.accessibility.Accessible {
-
       public constructor()
       public constructor(arg0: int)
       public constructor(arg0: java.lang.String)

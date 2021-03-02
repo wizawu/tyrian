@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JColorChooser extends javax.swing.JComponent implements javax.accessibility.Accessible {
-
       public static readonly SELECTION_MODEL_PROPERTY: java.lang.String
       public static readonly PREVIEW_PANEL_PROPERTY: java.lang.String
       public static readonly CHOOSER_PANELS_PROPERTY: java.lang.String

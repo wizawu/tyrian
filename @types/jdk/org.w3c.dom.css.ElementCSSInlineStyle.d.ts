@@ -3,8 +3,11 @@ declare namespace org {
     namespace dom {
       namespace css {
 
-        interface ElementCSSInlineStyle {
+        interface ElementCSSInlineStyle$$lambda {
+          (): org.w3c.dom.css.CSSStyleDeclaration
+        }
 
+        interface ElementCSSInlineStyle {
           getStyle(): org.w3c.dom.css.CSSStyleDeclaration
         }
 

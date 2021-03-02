@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface BinaryTree extends jdk.nashorn.api.tree.ExpressionTree {
-
           getLeftOperand(): jdk.nashorn.api.tree.ExpressionTree
           getRightOperand(): jdk.nashorn.api.tree.ExpressionTree
         }

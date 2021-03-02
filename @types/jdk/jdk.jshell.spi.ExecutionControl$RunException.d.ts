@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace spi {
 
       abstract class ExecutionControl$RunException extends jdk.jshell.spi.ExecutionControl$ExecutionControlException {
-
       }
 
     }

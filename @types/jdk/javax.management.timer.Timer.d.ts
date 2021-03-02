@@ -3,7 +3,6 @@ declare namespace javax {
     namespace timer {
 
       class Timer extends javax.management.NotificationBroadcasterSupport implements javax.management.timer.TimerMBean, javax.management.MBeanRegistration {
-
         public static readonly ONE_SECOND: long
         public static readonly ONE_MINUTE: long
         public static readonly ONE_HOUR: long

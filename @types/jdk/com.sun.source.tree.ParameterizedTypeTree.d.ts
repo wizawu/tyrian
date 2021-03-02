@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface ParameterizedTypeTree extends com.sun.source.tree.Tree {
-
           getType(): com.sun.source.tree.Tree
           getTypeArguments(): java.util.List<com.sun.source.tree.Tree>
         }

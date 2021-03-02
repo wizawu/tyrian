@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class LineNumberInputStream extends java.io.FilterInputStream {
-
       pushBack: int
       lineNumber: int
       markLineNumber: int

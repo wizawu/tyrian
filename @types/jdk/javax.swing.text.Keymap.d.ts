@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       interface Keymap {
-
         getName(): java.lang.String
         getDefaultAction(): javax.swing.Action
         setDefaultAction(arg0: javax.swing.Action): void

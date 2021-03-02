@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     class AccessibleState extends javax.accessibility.AccessibleBundle {
-
       public static readonly ACTIVE: javax.accessibility.AccessibleState
       public static readonly PRESSED: javax.accessibility.AccessibleState
       public static readonly ARMED: javax.accessibility.AccessibleState

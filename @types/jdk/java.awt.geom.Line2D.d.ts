@@ -3,7 +3,6 @@ declare namespace java {
     namespace geom {
 
       abstract class Line2D implements java.awt.Shape, java.lang.Cloneable {
-
         protected constructor()
         public abstract getX1(): double
         public abstract getY1(): double

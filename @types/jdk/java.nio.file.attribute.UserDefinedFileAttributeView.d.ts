@@ -4,7 +4,6 @@ declare namespace java {
       namespace attribute {
 
         interface UserDefinedFileAttributeView extends java.nio.file.attribute.FileAttributeView {
-
           name(): java.lang.String
           list(): java.util.List<java.lang.String>
           size(arg0: java.lang.String): int

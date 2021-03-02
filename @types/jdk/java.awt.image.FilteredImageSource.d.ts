@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class FilteredImageSource implements java.awt.image.ImageProducer {
-
         src: java.awt.image.ImageProducer
         filter: java.awt.image.ImageFilter
         public constructor(arg0: java.awt.image.ImageProducer, arg1: java.awt.image.ImageFilter)

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class TreeSet<E> extends java.util.AbstractSet<E> implements java.util.NavigableSet<E>, java.lang.Cloneable, java.io.Serializable {
-
       constructor(arg0: java.util.NavigableMap<E,java.lang.Object>)
       public constructor()
       public constructor(arg0: java.util.Comparator<unknown>)

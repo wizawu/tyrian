@@ -3,7 +3,6 @@ declare namespace java {
     namespace management {
 
       class ManagementFactory {
-
         public static readonly CLASS_LOADING_MXBEAN_NAME: java.lang.String
         public static readonly COMPILATION_MXBEAN_NAME: java.lang.String
         public static readonly MEMORY_MXBEAN_NAME: java.lang.String

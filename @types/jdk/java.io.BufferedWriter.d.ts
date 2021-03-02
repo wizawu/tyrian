@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class BufferedWriter extends java.io.Writer {
-
       public constructor(arg0: java.io.Writer)
       public constructor(arg0: java.io.Writer, arg1: int)
       flushBuffer(): void

@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace doclet {
 
       class Taglet$Location extends java.lang.Enum<jdk.javadoc.doclet.Taglet$Location> {
-
         public static readonly OVERVIEW: jdk.javadoc.doclet.Taglet$Location
         public static readonly MODULE: jdk.javadoc.doclet.Taglet$Location
         public static readonly PACKAGE: jdk.javadoc.doclet.Taglet$Location

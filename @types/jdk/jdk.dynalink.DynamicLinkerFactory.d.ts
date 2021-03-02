@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace dynalink {
 
     class DynamicLinkerFactory {
-
       public constructor()
       public setClassLoader(arg0: java.lang.ClassLoader): void
       public setPrioritizedLinkers(arg0: java.util.List<jdk.dynalink.linker.GuardingDynamicLinker>): void

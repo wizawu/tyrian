@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthTextPaneUI extends javax.swing.plaf.synth.SynthEditorPaneUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected getPropertyPrefix(): java.lang.String

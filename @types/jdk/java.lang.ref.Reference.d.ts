@@ -3,7 +3,6 @@ declare namespace java {
     namespace ref {
 
       abstract class Reference<T> {
-
         queue: java.lang.ref.ReferenceQueue<unknown>
         next: java.lang.ref.Reference
         public get(): T

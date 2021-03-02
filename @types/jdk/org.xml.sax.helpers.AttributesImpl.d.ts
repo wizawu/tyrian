@@ -4,7 +4,6 @@ declare namespace org {
       namespace helpers {
 
         class AttributesImpl implements org.xml.sax.Attributes {
-
           length: int
           data: java.lang.String[]
           public constructor()

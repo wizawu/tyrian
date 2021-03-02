@@ -2,7 +2,6 @@ declare namespace javax {
   namespace tools {
 
     class ForwardingJavaFileManager<M extends javax.tools.JavaFileManager> implements javax.tools.JavaFileManager {
-
       protected readonly fileManager: M
       protected constructor(arg0: M)
       public getClassLoader(arg0: javax.tools.JavaFileManager$Location): java.lang.ClassLoader

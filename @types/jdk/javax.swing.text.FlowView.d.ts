@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class FlowView extends javax.swing.text.BoxView {
-
         protected layoutSpan: int
         protected layoutPool: javax.swing.text.View
         protected strategy: javax.swing.text.FlowView$FlowStrategy

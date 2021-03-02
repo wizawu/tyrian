@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicRadioButtonUI extends javax.swing.plaf.basic.BasicToggleButtonUI {
-
           protected icon: javax.swing.Icon
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI

@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     abstract class SecureCacheResponse extends java.net.CacheResponse {
-
       public constructor()
       public abstract getCipherSuite(): java.lang.String
       public abstract getLocalCertificateChain(): java.util.List<java.security.cert.Certificate>

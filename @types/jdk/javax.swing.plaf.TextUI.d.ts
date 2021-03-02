@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       abstract class TextUI extends javax.swing.plaf.ComponentUI {
-
         public constructor()
         public abstract modelToView(arg0: javax.swing.text.JTextComponent, arg1: int): java.awt.Rectangle
         public abstract modelToView(arg0: javax.swing.text.JTextComponent, arg1: int, arg2: javax.swing.text.Position$Bias): java.awt.Rectangle

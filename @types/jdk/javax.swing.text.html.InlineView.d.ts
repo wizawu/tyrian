@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class InlineView extends javax.swing.text.LabelView {
-
           public constructor(arg0: javax.swing.text.Element)
           public insertUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory): void
           public removeUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory): void

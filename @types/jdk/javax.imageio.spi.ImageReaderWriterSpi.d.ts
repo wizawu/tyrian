@@ -3,7 +3,6 @@ declare namespace javax {
     namespace spi {
 
       abstract class ImageReaderWriterSpi extends javax.imageio.spi.IIOServiceProvider {
-
         protected names: java.lang.String[]
         protected suffixes: java.lang.String[]
         protected MIMETypes: java.lang.String[]

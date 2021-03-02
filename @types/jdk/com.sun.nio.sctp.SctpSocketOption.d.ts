@@ -4,7 +4,6 @@ declare namespace com {
       namespace sctp {
 
         interface SctpSocketOption<T> extends java.net.SocketOption<T> {
-
         }
 
       }

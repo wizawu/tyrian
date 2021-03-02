@@ -3,7 +3,6 @@ declare namespace java {
     namespace zone {
 
       abstract class ZoneRulesProvider {
-
         public static getAvailableZoneIds(): java.util.Set<java.lang.String>
         public static getRules(arg0: java.lang.String, arg1: boolean): java.time.zone.ZoneRules
         public static getVersions(arg0: java.lang.String): java.util.NavigableMap<java.lang.String,java.time.zone.ZoneRules>

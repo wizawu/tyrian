@@ -2,7 +2,6 @@ declare namespace java {
   namespace beans {
 
     class VetoableChangeSupport implements java.io.Serializable {
-
       static readonly serialVersionUID: long
       public constructor(arg0: java.lang.Object)
       public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener): void

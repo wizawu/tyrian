@@ -4,14 +4,13 @@ declare namespace javax {
       namespace dsig {
 
         abstract class XMLSignatureFactory {
-
           protected constructor()
           public static getInstance(arg0: java.lang.String): javax.xml.crypto.dsig.XMLSignatureFactory
           public static getInstance(arg0: java.lang.String, arg1: java.security.Provider): javax.xml.crypto.dsig.XMLSignatureFactory
           public static getInstance(arg0: java.lang.String, arg1: java.lang.String): javax.xml.crypto.dsig.XMLSignatureFactory
           public static getInstance(): javax.xml.crypto.dsig.XMLSignatureFactory
-          public readonly getMechanismType(): java.lang.String
-          public readonly getProvider(): java.security.Provider
+          public getMechanismType(): java.lang.String
+          public getProvider(): java.security.Provider
           public abstract newXMLSignature(arg0: javax.xml.crypto.dsig.SignedInfo, arg1: javax.xml.crypto.dsig.keyinfo.KeyInfo): javax.xml.crypto.dsig.XMLSignature
           public abstract newXMLSignature(arg0: javax.xml.crypto.dsig.SignedInfo, arg1: javax.xml.crypto.dsig.keyinfo.KeyInfo, arg2: java.util.List<javax.xml.crypto.dsig.XMLObject>, arg3: java.lang.String, arg4: java.lang.String): javax.xml.crypto.dsig.XMLSignature
           public abstract newReference(arg0: java.lang.String, arg1: javax.xml.crypto.dsig.DigestMethod): javax.xml.crypto.dsig.Reference
@@ -31,7 +30,7 @@ declare namespace javax {
           public abstract newTransform(arg0: java.lang.String, arg1: javax.xml.crypto.XMLStructure): javax.xml.crypto.dsig.Transform
           public abstract newCanonicalizationMethod(arg0: java.lang.String, arg1: javax.xml.crypto.dsig.spec.C14NMethodParameterSpec): javax.xml.crypto.dsig.CanonicalizationMethod
           public abstract newCanonicalizationMethod(arg0: java.lang.String, arg1: javax.xml.crypto.XMLStructure): javax.xml.crypto.dsig.CanonicalizationMethod
-          public readonly getKeyInfoFactory(): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
+          public getKeyInfoFactory(): javax.xml.crypto.dsig.keyinfo.KeyInfoFactory
           public abstract unmarshalXMLSignature(arg0: javax.xml.crypto.dsig.XMLValidateContext): javax.xml.crypto.dsig.XMLSignature
           public abstract unmarshalXMLSignature(arg0: javax.xml.crypto.XMLStructure): javax.xml.crypto.dsig.XMLSignature
           public abstract isFeatureSupported(arg0: java.lang.String): boolean

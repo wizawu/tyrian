@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthPopupMenuUI extends javax.swing.plaf.basic.BasicPopupMenuUI implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public installDefaults(): void

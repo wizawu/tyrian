@@ -3,7 +3,6 @@ declare namespace java {
     namespace charset {
 
       class CoderResult {
-
         public static readonly UNDERFLOW: java.nio.charset.CoderResult
         public static readonly OVERFLOW: java.nio.charset.CoderResult
         static readonly $assertionsDisabled: boolean

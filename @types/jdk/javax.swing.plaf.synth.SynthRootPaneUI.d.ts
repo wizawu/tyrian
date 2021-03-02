@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthRootPaneUI extends javax.swing.plaf.basic.BasicRootPaneUI implements javax.swing.plaf.synth.SynthUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installDefaults(arg0: javax.swing.JRootPane): void

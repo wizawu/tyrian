@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicTabbedPaneUI extends javax.swing.plaf.TabbedPaneUI implements javax.swing.SwingConstants {
-
           protected tabPane: javax.swing.JTabbedPane
           protected highlight: java.awt.Color
           protected lightHighlight: java.awt.Color

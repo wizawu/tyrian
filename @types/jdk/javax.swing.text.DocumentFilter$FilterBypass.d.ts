@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       abstract class DocumentFilter$FilterBypass {
-
         public constructor()
         public abstract getDocument(): javax.swing.text.Document
         public abstract remove(arg0: int, arg1: int): void

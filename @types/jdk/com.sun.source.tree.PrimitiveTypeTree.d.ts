@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface PrimitiveTypeTree extends com.sun.source.tree.Tree {
-
           getPrimitiveTypeKind(): javax.lang.model.type.TypeKind
         }
 

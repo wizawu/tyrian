@@ -3,7 +3,6 @@ declare namespace java {
     namespace stream {
 
       class StreamSupport {
-
         public static stream<T>(arg0: java.util.Spliterator<T>, arg1: boolean): java.util.stream.Stream<T>
         public static stream<T>(arg0: java.util.function$.Supplier<java.util.Spliterator<T>>, arg1: int, arg2: boolean): java.util.stream.Stream<T>
         public static intStream(arg0: java.util.Spliterator$OfInt, arg1: boolean): java.util.stream.IntStream

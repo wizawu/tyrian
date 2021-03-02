@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     interface ComboBoxEditor {
-
       getEditorComponent(): java.awt.Component
       setItem(arg0: java.lang.Object): void
       getItem(): java.lang.Object

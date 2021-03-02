@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class MenuItem extends java.awt.MenuComponent implements javax.accessibility.Accessible {
-
       label: java.lang.String
       eventMask: long
       public constructor()
@@ -24,11 +23,11 @@ declare namespace java {
       doMenuEvent(arg0: long, arg1: int): void
       handleShortcut(arg0: java.awt.event.KeyEvent): boolean
       getShortcutMenuItem(arg0: java.awt.MenuShortcut): java.awt.MenuItem
-      protected readonly enableEvents(arg0: long): void
-      protected readonly disableEvents(arg0: long): void
+      protected enableEvents(arg0: long): void
+      protected disableEvents(arg0: long): void
       public setActionCommand(arg0: java.lang.String): void
       public getActionCommand(): java.lang.String
-      readonly getActionCommandImpl(): java.lang.String
+      getActionCommandImpl(): java.lang.String
       public addActionListener(arg0: java.awt.event.ActionListener): void
       public removeActionListener(arg0: java.awt.event.ActionListener): void
       public getActionListeners(): java.awt.event.ActionListener[]

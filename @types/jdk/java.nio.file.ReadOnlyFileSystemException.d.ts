@@ -3,7 +3,6 @@ declare namespace java {
     namespace file {
 
       class ReadOnlyFileSystemException extends java.lang.UnsupportedOperationException {
-
         static readonly serialVersionUID: long
         public constructor()
       }

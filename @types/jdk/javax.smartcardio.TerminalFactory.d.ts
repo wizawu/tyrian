@@ -2,7 +2,6 @@ declare namespace javax {
   namespace smartcardio {
 
     class TerminalFactory {
-
       public static getDefaultType(): java.lang.String
       public static getDefault(): javax.smartcardio.TerminalFactory
       public static getInstance(arg0: java.lang.String, arg1: java.lang.Object): javax.smartcardio.TerminalFactory

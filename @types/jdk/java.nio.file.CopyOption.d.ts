@@ -3,7 +3,6 @@ declare namespace java {
     namespace file {
 
       interface CopyOption {
-
       }
 
     }

@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class FileWriter extends java.io.OutputStreamWriter {
-
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: boolean)
       public constructor(arg0: java.io.File)

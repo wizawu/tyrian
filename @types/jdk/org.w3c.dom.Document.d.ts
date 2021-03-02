@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface Document extends org.w3c.dom.Node {
-
         getDoctype(): org.w3c.dom.DocumentType
         getImplementation(): org.w3c.dom.DOMImplementation
         getDocumentElement(): org.w3c.dom.Element

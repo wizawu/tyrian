@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthToggleButtonUI extends javax.swing.plaf.synth.SynthButtonUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected getPropertyPrefix(): java.lang.String

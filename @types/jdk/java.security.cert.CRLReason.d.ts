@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       class CRLReason extends java.lang.Enum<java.security.cert.CRLReason> {
-
         public static readonly UNSPECIFIED: java.security.cert.CRLReason
         public static readonly KEY_COMPROMISE: java.security.cert.CRLReason
         public static readonly CA_COMPROMISE: java.security.cert.CRLReason

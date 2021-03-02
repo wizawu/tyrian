@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     abstract class TimeZone implements java.io.Serializable, java.lang.Cloneable {
-
       public static readonly SHORT: int
       public static readonly LONG: int
       static readonly serialVersionUID: long
@@ -17,9 +16,9 @@ declare namespace java {
       public abstract getRawOffset(): int
       public getID(): java.lang.String
       public setID(arg0: java.lang.String): void
-      public readonly getDisplayName(): java.lang.String
-      public readonly getDisplayName(arg0: java.util.Locale): java.lang.String
-      public readonly getDisplayName(arg0: boolean, arg1: int): java.lang.String
+      public getDisplayName(): java.lang.String
+      public getDisplayName(arg0: java.util.Locale): java.lang.String
+      public getDisplayName(arg0: boolean, arg1: int): java.lang.String
       public getDisplayName(arg0: boolean, arg1: int, arg2: java.util.Locale): java.lang.String
       public getDSTSavings(): int
       public abstract useDaylightTime(): boolean

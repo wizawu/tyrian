@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JPasswordField extends javax.swing.JTextField {
-
       public constructor()
       public constructor(arg0: java.lang.String)
       public constructor(arg0: int)

@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class CyclicBarrier {
-
         public constructor(arg0: int, arg1: java.lang.Runnable)
         public constructor(arg0: int)
         public getParties(): int

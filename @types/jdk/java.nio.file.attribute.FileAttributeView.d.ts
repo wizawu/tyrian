@@ -3,9 +3,10 @@ declare namespace java {
     namespace file {
       namespace attribute {
 
-        interface FileAttributeView extends java.nio.file.attribute.AttributeView {
+type FileAttributeView$$lambda = java.nio.file.attribute.AttributeView$$lambda
 
-        }
+interface FileAttributeView extends java.nio.file.attribute.AttributeView {
+}
 
       }
     }

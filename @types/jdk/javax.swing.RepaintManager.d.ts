@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class RepaintManager {
-
       static readonly HANDLE_TOP_LEVEL_PAINT: boolean
       doubleBufferingEnabled: boolean
       standardDoubleBuffer: javax.swing.RepaintManager$DoubleBufferInfo

@@ -4,7 +4,6 @@ declare namespace com {
       namespace jgss {
 
         class InquireSecContextPermission extends java.security.BasicPermission {
-
           public constructor(arg0: java.lang.String)
         }
 

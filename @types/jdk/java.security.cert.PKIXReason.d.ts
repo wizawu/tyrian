@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       class PKIXReason extends java.lang.Enum<java.security.cert.PKIXReason> implements java.security.cert.CertPathValidatorException$Reason {
-
         public static readonly NAME_CHAINING: java.security.cert.PKIXReason
         public static readonly INVALID_KEY_USAGE: java.security.cert.PKIXReason
         public static readonly INVALID_POLICY: java.security.cert.PKIXReason

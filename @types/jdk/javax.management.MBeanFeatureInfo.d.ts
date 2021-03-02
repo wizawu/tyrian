@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class MBeanFeatureInfo implements java.io.Serializable, javax.management.DescriptorRead {
-
       static readonly serialVersionUID: long
       protected name: java.lang.String
       protected description: java.lang.String

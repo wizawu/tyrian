@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     interface NavigableSet<E> extends java.util.SortedSet<E> {
-
       lower(arg0: E): E
       floor(arg0: E): E
       ceiling(arg0: E): E

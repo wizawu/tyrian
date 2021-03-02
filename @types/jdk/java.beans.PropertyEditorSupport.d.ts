@@ -2,7 +2,6 @@ declare namespace java {
   namespace beans {
 
     class PropertyEditorSupport implements java.beans.PropertyEditor {
-
       public constructor()
       public constructor(arg0: java.lang.Object)
       public getSource(): java.lang.Object

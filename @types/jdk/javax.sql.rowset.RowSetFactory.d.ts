@@ -3,7 +3,6 @@ declare namespace javax {
     namespace rowset {
 
       interface RowSetFactory {
-
         createCachedRowSet(): javax.sql.rowset.CachedRowSet
         createFilteredRowSet(): javax.sql.rowset.FilteredRowSet
         createJdbcRowSet(): javax.sql.rowset.JdbcRowSet

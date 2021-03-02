@@ -3,13 +3,12 @@ declare namespace java {
     namespace http {
 
       class HttpHeaders {
-
         public firstValue(arg0: java.lang.String): java.util.Optional<java.lang.String>
         public firstValueAsLong(arg0: java.lang.String): java.util.OptionalLong
         public allValues(arg0: java.lang.String): java.util.List<java.lang.String>
         public map(): java.util.Map<java.lang.String,java.util.List<java.lang.String>>
-        public readonly equals(arg0: java.lang.Object): boolean
-        public readonly hashCode(): int
+        public equals(arg0: java.lang.Object): boolean
+        public hashCode(): int
         public toString(): java.lang.String
         public static of(arg0: java.util.Map<java.lang.String,java.util.List<java.lang.String>>, arg1: java.util.function$.BiPredicate<java.lang.String,java.lang.String>): java.net.http.HttpHeaders
       }

@@ -3,7 +3,6 @@ declare namespace java {
     namespace logging {
 
       class LogRecord implements java.io.Serializable {
-
         public constructor(arg0: java.util.logging.Level, arg1: java.lang.String)
         public getLoggerName(): java.lang.String
         public setLoggerName(arg0: java.lang.String): void

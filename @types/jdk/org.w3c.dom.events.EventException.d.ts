@@ -4,7 +4,6 @@ declare namespace org {
       namespace events {
 
         class EventException extends java.lang.RuntimeException {
-
           public code: short
           public static readonly UNSPECIFIED_EVENT_TYPE_ERR: short
           public constructor(arg0: short, arg1: java.lang.String)

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace rowset {
 
       class RowSetWarning extends java.sql.SQLException {
-
         static readonly serialVersionUID: long
         public constructor(arg0: java.lang.String)
         public constructor()

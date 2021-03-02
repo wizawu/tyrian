@@ -2,11 +2,10 @@ declare namespace javax {
   namespace swing {
 
     class Timer implements java.io.Serializable {
-
       protected listenerList: javax.swing.event.EventListenerList
       delayedTimer: javax.swing.TimerQueue$DelayedTimer
       public constructor(arg0: int, arg1: java.awt.event.ActionListener)
-      readonly getAccessControlContext(): java.security.AccessControlContext
+      getAccessControlContext(): java.security.AccessControlContext
       public addActionListener(arg0: java.awt.event.ActionListener): void
       public removeActionListener(arg0: java.awt.event.ActionListener): void
       public getActionListeners(): java.awt.event.ActionListener[]

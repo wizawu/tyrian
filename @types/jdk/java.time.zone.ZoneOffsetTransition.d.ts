@@ -3,7 +3,6 @@ declare namespace java {
     namespace zone {
 
       class ZoneOffsetTransition implements java.lang.Comparable<java.time.zone.ZoneOffsetTransition>, java.io.Serializable {
-
         static readonly $assertionsDisabled: boolean
         public static of(arg0: java.time.LocalDateTime, arg1: java.time.ZoneOffset, arg2: java.time.ZoneOffset): java.time.zone.ZoneOffsetTransition
         constructor(arg0: java.time.LocalDateTime, arg1: java.time.ZoneOffset, arg2: java.time.ZoneOffset)

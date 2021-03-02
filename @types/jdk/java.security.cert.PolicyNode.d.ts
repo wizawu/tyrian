@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       interface PolicyNode {
-
         getParent(): java.security.cert.PolicyNode
         getChildren(): java.util.Iterator<java.security.cert.PolicyNode>
         getDepth(): int

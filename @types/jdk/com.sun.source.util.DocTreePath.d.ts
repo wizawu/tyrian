@@ -4,7 +4,6 @@ declare namespace com {
       namespace util {
 
         class DocTreePath implements java.lang.Iterable<com.sun.source.doctree.DocTree> {
-
           public static getPath(arg0: com.sun.source.util.TreePath, arg1: com.sun.source.doctree.DocCommentTree, arg2: com.sun.source.doctree.DocTree): com.sun.source.util.DocTreePath
           public static getPath(arg0: com.sun.source.util.DocTreePath, arg1: com.sun.source.doctree.DocTree): com.sun.source.util.DocTreePath
           public constructor(arg0: com.sun.source.util.TreePath, arg1: com.sun.source.doctree.DocCommentTree)

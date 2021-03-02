@@ -2,7 +2,6 @@ declare namespace java {
   namespace applet {
 
     interface AppletContext {
-
       getAudioClip(arg0: java.net.URL): java.applet.AudioClip
       getImage(arg0: java.net.URL): java.awt.Image
       getApplet(arg0: java.lang.String): java.applet.Applet

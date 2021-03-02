@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       abstract class LineMetrics {
-
         public constructor()
         public abstract getNumChars(): int
         public abstract getAscent(): float

@@ -4,7 +4,6 @@ declare namespace com {
       namespace event {
 
         interface MethodExitEvent extends com.sun.jdi.event.LocatableEvent {
-
           method(): com.sun.jdi.Method
           returnValue(): com.sun.jdi.Value
         }

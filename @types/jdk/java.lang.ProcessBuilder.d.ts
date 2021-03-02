@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class ProcessBuilder {
-
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: java.util.List<java.lang.String>)
       public constructor(...arg0: java.lang.String[])

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace jpeg {
 
         class JPEGImageWriteParam extends javax.imageio.ImageWriteParam {
-
           public constructor(arg0: java.util.Locale)
           public unsetCompression(): void
           public isCompressionLossless(): boolean

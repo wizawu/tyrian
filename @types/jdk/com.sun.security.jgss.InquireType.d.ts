@@ -4,7 +4,6 @@ declare namespace com {
       namespace jgss {
 
         class InquireType extends java.lang.Enum<com.sun.security.jgss.InquireType> {
-
           public static readonly KRB5_GET_SESSION_KEY: com.sun.security.jgss.InquireType
           public static readonly KRB5_GET_SESSION_KEY_EX: com.sun.security.jgss.InquireType
           public static readonly KRB5_GET_TKT_FLAGS: com.sun.security.jgss.InquireType

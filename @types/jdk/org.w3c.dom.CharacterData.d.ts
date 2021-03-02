@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface CharacterData extends org.w3c.dom.Node {
-
         getData(): java.lang.String
         setData(arg0: java.lang.String): void
         getLength(): int

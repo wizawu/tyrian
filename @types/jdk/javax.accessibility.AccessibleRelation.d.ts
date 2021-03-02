@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     class AccessibleRelation extends javax.accessibility.AccessibleBundle {
-
       public static readonly LABEL_FOR: java.lang.String
       public static readonly LABELED_BY: java.lang.String
       public static readonly MEMBER_OF: java.lang.String

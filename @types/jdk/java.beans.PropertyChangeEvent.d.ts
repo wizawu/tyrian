@@ -2,7 +2,6 @@ declare namespace java {
   namespace beans {
 
     class PropertyChangeEvent extends java.util.EventObject {
-
       public constructor(arg0: java.lang.Object, arg1: java.lang.String, arg2: java.lang.Object, arg3: java.lang.Object)
       public getPropertyName(): java.lang.String
       public getNewValue(): java.lang.Object

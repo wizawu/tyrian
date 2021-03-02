@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace jarsigner {
 
       class JarSigner$Builder {
-
         readonly privateKey: java.security.PrivateKey
         readonly certChain: java.security.cert.X509Certificate[]
         digestalg: java.lang.String[]

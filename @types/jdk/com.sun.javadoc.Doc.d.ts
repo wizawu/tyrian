@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface Doc extends java.lang.Comparable<java.lang.Object> {
-
         commentText(): java.lang.String
         tags(): com.sun.javadoc.Tag[]
         tags(arg0: java.lang.String): com.sun.javadoc.Tag[]

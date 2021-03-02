@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Observable {
-
       public constructor()
       public addObserver(arg0: java.util.Observer): void
       public deleteObserver(arg0: java.util.Observer): void

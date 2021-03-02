@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace linker {
 
       interface LinkRequest {
-
         getCallSiteDescriptor(): jdk.dynalink.CallSiteDescriptor
         getArguments(): java.lang.Object[]
         getReceiver(): java.lang.Object

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace multi {
 
         class MultiColorChooserUI extends javax.swing.plaf.ColorChooserUI {
-
           protected uis: java.util.Vector<javax.swing.plaf.ComponentUI>
           public constructor()
           public getUIs(): javax.swing.plaf.ComponentUI[]

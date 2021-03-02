@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       abstract class PKIXRevocationChecker extends java.security.cert.PKIXCertPathChecker {
-
         protected constructor()
         public setOcspResponder(arg0: java.net.URI): void
         public getOcspResponder(): java.net.URI

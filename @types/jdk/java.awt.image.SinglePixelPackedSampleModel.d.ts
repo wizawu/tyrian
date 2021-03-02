@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class SinglePixelPackedSampleModel extends java.awt.image.SampleModel {
-
         public constructor(arg0: int, arg1: int, arg2: int, arg3: int[])
         public constructor(arg0: int, arg1: int, arg2: int, arg3: int, arg4: int[])
         public getNumDataElements(): int

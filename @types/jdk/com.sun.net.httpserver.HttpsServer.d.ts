@@ -4,7 +4,6 @@ declare namespace com {
       namespace httpserver {
 
         abstract class HttpsServer extends com.sun.net.httpserver.HttpServer {
-
           protected constructor()
           public static create(): com.sun.net.httpserver.HttpsServer
           public static create(arg0: java.net.InetSocketAddress, arg1: int): com.sun.net.httpserver.HttpsServer

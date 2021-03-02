@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class ByteArrayOutputStream extends java.io.OutputStream {
-
       protected buf: byte[]
       protected count: int
       public constructor()

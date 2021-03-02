@@ -2,7 +2,6 @@ declare namespace javax {
   namespace script {
 
     class SimpleBindings implements javax.script.Bindings {
-
       public constructor(arg0: java.util.Map<java.lang.String,java.lang.Object>)
       public constructor()
       public put(arg0: java.lang.String, arg1: java.lang.Object): java.lang.Object

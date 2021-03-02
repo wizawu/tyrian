@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JComboBox<E> extends javax.swing.JComponent implements java.awt.ItemSelectable, javax.swing.event.ListDataListener, java.awt.event.ActionListener, javax.accessibility.Accessible {
-
       protected dataModel: javax.swing.ComboBoxModel<E>
       protected renderer: javax.swing.ListCellRenderer<unknown>
       protected editor: javax.swing.ComboBoxEditor

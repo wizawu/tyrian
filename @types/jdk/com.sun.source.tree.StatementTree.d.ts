@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface StatementTree extends com.sun.source.tree.Tree {
-
         }
 
       }

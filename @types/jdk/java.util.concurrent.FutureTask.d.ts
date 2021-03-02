@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class FutureTask<V> implements java.util.concurrent.RunnableFuture<V> {
-
         public constructor(arg0: java.util.concurrent.Callable<V>)
         public constructor(arg0: java.lang.Runnable, arg1: V)
         public isCancelled(): boolean

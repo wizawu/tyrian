@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class FocusEvent$Cause extends java.lang.Enum<java.awt.event.FocusEvent$Cause> {
-
         public static readonly UNKNOWN: java.awt.event.FocusEvent$Cause
         public static readonly MOUSE_EVENT: java.awt.event.FocusEvent$Cause
         public static readonly TRAVERSAL: java.awt.event.FocusEvent$Cause

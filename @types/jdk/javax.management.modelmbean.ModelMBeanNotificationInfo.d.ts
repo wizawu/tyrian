@@ -3,7 +3,6 @@ declare namespace javax {
     namespace modelmbean {
 
       class ModelMBeanNotificationInfo extends javax.management.MBeanNotificationInfo implements javax.management.DescriptorAccess {
-
         public constructor(arg0: java.lang.String[], arg1: java.lang.String, arg2: java.lang.String)
         public constructor(arg0: java.lang.String[], arg1: java.lang.String, arg2: java.lang.String, arg3: javax.management.Descriptor)
         public constructor(arg0: javax.management.modelmbean.ModelMBeanNotificationInfo)

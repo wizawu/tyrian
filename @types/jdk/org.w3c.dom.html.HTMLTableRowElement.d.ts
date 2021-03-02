@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLTableRowElement extends org.w3c.dom.html.HTMLElement {
-
           getRowIndex(): int
           getSectionRowIndex(): int
           getCells(): org.w3c.dom.html.HTMLCollection

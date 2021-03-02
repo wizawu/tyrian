@@ -3,7 +3,6 @@ declare namespace javax {
     namespace attribute {
 
       abstract class TextSyntax implements java.io.Serializable, java.lang.Cloneable {
-
         protected constructor(arg0: java.lang.String, arg1: java.util.Locale)
         public getValue(): java.lang.String
         public getLocale(): java.util.Locale

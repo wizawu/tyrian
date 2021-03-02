@@ -3,7 +3,6 @@ declare namespace javax {
     namespace attribute {
 
       interface SupportedValuesAttribute extends javax.print.attribute.Attribute {
-
       }
 
     }

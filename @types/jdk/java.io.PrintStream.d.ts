@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class PrintStream extends java.io.FilterOutputStream implements java.lang.Appendable, java.io.Closeable {
-
       public constructor(arg0: java.io.OutputStream)
       public constructor(arg0: java.io.OutputStream, arg1: boolean)
       public constructor(arg0: java.io.OutputStream, arg1: boolean, arg2: java.lang.String)

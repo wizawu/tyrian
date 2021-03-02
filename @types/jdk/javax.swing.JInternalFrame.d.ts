@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JInternalFrame extends javax.swing.JComponent implements javax.accessibility.Accessible, javax.swing.WindowConstants, javax.swing.RootPaneContainer {
-
       protected rootPane: javax.swing.JRootPane
       protected rootPaneCheckingEnabled: boolean
       protected closable: boolean
@@ -107,10 +106,10 @@ declare namespace javax {
       public dispose(): void
       public toFront(): void
       public toBack(): void
-      public readonly setFocusCycleRoot(arg0: boolean): void
-      public readonly isFocusCycleRoot(): boolean
-      public readonly getFocusCycleRootAncestor(): java.awt.Container
-      public readonly getWarningString(): java.lang.String
+      public setFocusCycleRoot(arg0: boolean): void
+      public isFocusCycleRoot(): boolean
+      public getFocusCycleRootAncestor(): java.awt.Container
+      public getWarningString(): java.lang.String
       compWriteObjectNotify(): void
       protected paramString(): java.lang.String
       protected paintComponent(arg0: java.awt.Graphics): void

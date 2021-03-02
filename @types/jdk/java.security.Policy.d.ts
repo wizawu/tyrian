@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     abstract class Policy {
-
       public static readonly UNSUPPORTED_EMPTY_COLLECTION: java.security.PermissionCollection
       public constructor()
       static isSet(): boolean

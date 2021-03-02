@@ -3,7 +3,6 @@ declare namespace javax {
     namespace border {
 
       class LineBorder extends javax.swing.border.AbstractBorder {
-
         protected thickness: int
         protected lineColor: java.awt.Color
         protected roundedCorners: boolean

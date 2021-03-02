@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     class DecimalFormat extends java.text.NumberFormat {
-
       static readonly currentSerialVersion: int
       static readonly DOUBLE_INTEGER_DIGITS: int
       static readonly DOUBLE_FRACTION_DIGITS: int
@@ -13,7 +12,7 @@ declare namespace java {
       public constructor()
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: java.text.DecimalFormatSymbols)
-      public readonly format(arg0: java.lang.Object, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+      public format(arg0: java.lang.Object, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
       public format(arg0: double, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
       public format(arg0: long, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
       public formatToCharacterIterator(arg0: java.lang.Object): java.text.AttributedCharacterIterator

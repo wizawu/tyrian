@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
 
     class ImageReadParam extends javax.imageio.IIOParam {
-
       protected canSetSourceRenderSize: boolean
       protected sourceRenderSize: java.awt.Dimension
       protected destination: java.awt.image.BufferedImage

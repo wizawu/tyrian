@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Taskbar {
-
       public isSupported(arg0: java.awt.Taskbar$Feature): boolean
       public static getTaskbar(): java.awt.Taskbar
       public static isTaskbarSupported(): boolean

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     abstract class AbstractButton extends javax.swing.JComponent implements java.awt.ItemSelectable, javax.swing.SwingConstants {
-
       public static readonly MODEL_CHANGED_PROPERTY: java.lang.String
       public static readonly TEXT_CHANGED_PROPERTY: java.lang.String
       public static readonly MNEMONIC_CHANGED_PROPERTY: java.lang.String

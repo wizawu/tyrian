@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         class Diagnostic$Kind extends java.lang.Enum<jdk.nashorn.api.tree.Diagnostic$Kind> {
-
           public static readonly ERROR: jdk.nashorn.api.tree.Diagnostic$Kind
           public static readonly WARNING: jdk.nashorn.api.tree.Diagnostic$Kind
           public static readonly MANDATORY_WARNING: jdk.nashorn.api.tree.Diagnostic$Kind

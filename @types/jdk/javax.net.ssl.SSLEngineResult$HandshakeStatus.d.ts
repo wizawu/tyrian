@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       class SSLEngineResult$HandshakeStatus extends java.lang.Enum<javax.net.ssl.SSLEngineResult$HandshakeStatus> {
-
         public static readonly NOT_HANDSHAKING: javax.net.ssl.SSLEngineResult$HandshakeStatus
         public static readonly FINISHED: javax.net.ssl.SSLEngineResult$HandshakeStatus
         public static readonly NEED_TASK: javax.net.ssl.SSLEngineResult$HandshakeStatus

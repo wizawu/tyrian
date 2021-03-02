@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     abstract class MessageDigestSpi {
-
       public constructor()
       protected engineGetDigestLength(): int
       protected abstract engineUpdate(arg0: byte): void

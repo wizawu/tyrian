@@ -3,7 +3,6 @@ declare namespace javax {
     namespace parsers {
 
       abstract class SAXParserFactory {
-
         protected constructor()
         public static newDefaultInstance(): javax.xml.parsers.SAXParserFactory
         public static newInstance(): javax.xml.parsers.SAXParserFactory

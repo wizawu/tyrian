@@ -4,7 +4,6 @@ declare namespace org {
       namespace ext {
 
         class DefaultHandler2 extends org.xml.sax.helpers.DefaultHandler implements org.xml.sax.ext.LexicalHandler, org.xml.sax.ext.DeclHandler, org.xml.sax.ext.EntityResolver2 {
-
           public constructor()
           public startCDATA(): void
           public endCDATA(): void

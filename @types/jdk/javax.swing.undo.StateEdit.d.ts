@@ -3,7 +3,6 @@ declare namespace javax {
     namespace undo {
 
       class StateEdit extends javax.swing.undo.AbstractUndoableEdit {
-
         protected static readonly RCSID: java.lang.String
         protected object: javax.swing.undo.StateEditable
         protected preState: java.util.Hashtable<java.lang.Object,java.lang.Object>

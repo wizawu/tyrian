@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       class IllegalChannelGroupException extends java.lang.IllegalArgumentException {
-
         public constructor()
       }
 

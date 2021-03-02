@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       interface AsynchronousChannel extends java.nio.channels.Channel {
-
         close(): void
       }
 

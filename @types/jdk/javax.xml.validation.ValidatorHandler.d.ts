@@ -3,7 +3,6 @@ declare namespace javax {
     namespace validation {
 
       abstract class ValidatorHandler implements org.xml.sax.ContentHandler {
-
         protected constructor()
         public abstract setContentHandler(arg0: org.xml.sax.ContentHandler): void
         public abstract getContentHandler(): org.xml.sax.ContentHandler

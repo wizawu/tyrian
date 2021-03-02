@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     class Bidi {
-
       public static readonly DIRECTION_LEFT_TO_RIGHT: int
       public static readonly DIRECTION_RIGHT_TO_LEFT: int
       public static readonly DIRECTION_DEFAULT_LEFT_TO_RIGHT: int

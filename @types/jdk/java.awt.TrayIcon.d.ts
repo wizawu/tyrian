@@ -2,11 +2,10 @@ declare namespace java {
   namespace awt {
 
     class TrayIcon {
-
       mouseListener: java.awt.event.MouseListener
       mouseMotionListener: java.awt.event.MouseMotionListener
       actionListener: java.awt.event.ActionListener
-      readonly getAccessControlContext(): java.security.AccessControlContext
+      getAccessControlContext(): java.security.AccessControlContext
       public constructor(arg0: java.awt.Image)
       public constructor(arg0: java.awt.Image, arg1: java.lang.String)
       public constructor(arg0: java.awt.Image, arg1: java.lang.String, arg2: java.awt.PopupMenu)

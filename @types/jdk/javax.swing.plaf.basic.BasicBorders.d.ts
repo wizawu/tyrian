@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicBorders {
-
           public constructor()
           public static getButtonBorder(): javax.swing.border.Border
           public static getRadioButtonBorder(): javax.swing.border.Border

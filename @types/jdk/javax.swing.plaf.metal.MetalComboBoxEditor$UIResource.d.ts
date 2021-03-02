@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalComboBoxEditor$UIResource extends javax.swing.plaf.metal.MetalComboBoxEditor implements javax.swing.plaf.UIResource {
-
           public constructor()
         }
 

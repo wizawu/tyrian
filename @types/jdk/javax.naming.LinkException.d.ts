@@ -2,7 +2,6 @@ declare namespace javax {
   namespace naming {
 
     class LinkException extends javax.naming.NamingException {
-
       protected linkResolvedName: javax.naming.Name
       protected linkResolvedObj: java.lang.Object
       protected linkRemainingName: javax.naming.Name

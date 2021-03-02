@@ -3,7 +3,6 @@ declare namespace javax {
     namespace catalog {
 
       class CatalogFeatures$Feature extends java.lang.Enum<javax.xml.catalog.CatalogFeatures$Feature> {
-
         public static readonly FILES: javax.xml.catalog.CatalogFeatures$Feature
         public static readonly PREFER: javax.xml.catalog.CatalogFeatures$Feature
         public static readonly DEFER: javax.xml.catalog.CatalogFeatures$Feature

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace transform {
 
       class OutputKeys {
-
         public static readonly METHOD: java.lang.String
         public static readonly VERSION: java.lang.String
         public static readonly ENCODING: java.lang.String

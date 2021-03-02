@@ -3,7 +3,6 @@ declare namespace java {
     namespace cert {
 
       interface CertPathValidatorException$Reason extends java.io.Serializable {
-
       }
 
     }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
 
     class IIOImage {
-
       protected image: java.awt.image.RenderedImage
       protected raster: java.awt.image.Raster
       protected thumbnails: java.util.List<java.awt.image.BufferedImage>

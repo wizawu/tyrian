@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class PasswordView extends javax.swing.text.FieldView {
-
         static ONE: char[]
         public constructor(arg0: javax.swing.text.Element)
         protected drawUnselectedText(arg0: java.awt.Graphics, arg1: int, arg2: int, arg3: int, arg4: int): int

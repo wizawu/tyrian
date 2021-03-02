@@ -4,40 +4,39 @@ declare namespace java {
       namespace atomic {
 
         class AtomicIntegerArray implements java.io.Serializable {
-
           public constructor(arg0: int)
           public constructor(arg0: int[])
-          public readonly length(): int
-          public readonly get(arg0: int): int
-          public readonly set(arg0: int, arg1: int): void
-          public readonly lazySet(arg0: int, arg1: int): void
-          public readonly getAndSet(arg0: int, arg1: int): int
-          public readonly compareAndSet(arg0: int, arg1: int, arg2: int): boolean
-          public readonly weakCompareAndSet(arg0: int, arg1: int, arg2: int): boolean
-          public readonly weakCompareAndSetPlain(arg0: int, arg1: int, arg2: int): boolean
-          public readonly getAndIncrement(arg0: int): int
-          public readonly getAndDecrement(arg0: int): int
-          public readonly getAndAdd(arg0: int, arg1: int): int
-          public readonly incrementAndGet(arg0: int): int
-          public readonly decrementAndGet(arg0: int): int
-          public readonly addAndGet(arg0: int, arg1: int): int
-          public readonly getAndUpdate(arg0: int, arg1: java.util.function$.IntUnaryOperator): int
-          public readonly updateAndGet(arg0: int, arg1: java.util.function$.IntUnaryOperator): int
-          public readonly getAndAccumulate(arg0: int, arg1: int, arg2: java.util.function$.IntBinaryOperator): int
-          public readonly accumulateAndGet(arg0: int, arg1: int, arg2: java.util.function$.IntBinaryOperator): int
+          public length(): int
+          public get(arg0: int): int
+          public set(arg0: int, arg1: int): void
+          public lazySet(arg0: int, arg1: int): void
+          public getAndSet(arg0: int, arg1: int): int
+          public compareAndSet(arg0: int, arg1: int, arg2: int): boolean
+          public weakCompareAndSet(arg0: int, arg1: int, arg2: int): boolean
+          public weakCompareAndSetPlain(arg0: int, arg1: int, arg2: int): boolean
+          public getAndIncrement(arg0: int): int
+          public getAndDecrement(arg0: int): int
+          public getAndAdd(arg0: int, arg1: int): int
+          public incrementAndGet(arg0: int): int
+          public decrementAndGet(arg0: int): int
+          public addAndGet(arg0: int, arg1: int): int
+          public getAndUpdate(arg0: int, arg1: java.util.function$.IntUnaryOperator): int
+          public updateAndGet(arg0: int, arg1: java.util.function$.IntUnaryOperator): int
+          public getAndAccumulate(arg0: int, arg1: int, arg2: java.util.function$.IntBinaryOperator): int
+          public accumulateAndGet(arg0: int, arg1: int, arg2: java.util.function$.IntBinaryOperator): int
           public toString(): java.lang.String
-          public readonly getPlain(arg0: int): int
-          public readonly setPlain(arg0: int, arg1: int): void
-          public readonly getOpaque(arg0: int): int
-          public readonly setOpaque(arg0: int, arg1: int): void
-          public readonly getAcquire(arg0: int): int
-          public readonly setRelease(arg0: int, arg1: int): void
-          public readonly compareAndExchange(arg0: int, arg1: int, arg2: int): int
-          public readonly compareAndExchangeAcquire(arg0: int, arg1: int, arg2: int): int
-          public readonly compareAndExchangeRelease(arg0: int, arg1: int, arg2: int): int
-          public readonly weakCompareAndSetVolatile(arg0: int, arg1: int, arg2: int): boolean
-          public readonly weakCompareAndSetAcquire(arg0: int, arg1: int, arg2: int): boolean
-          public readonly weakCompareAndSetRelease(arg0: int, arg1: int, arg2: int): boolean
+          public getPlain(arg0: int): int
+          public setPlain(arg0: int, arg1: int): void
+          public getOpaque(arg0: int): int
+          public setOpaque(arg0: int, arg1: int): void
+          public getAcquire(arg0: int): int
+          public setRelease(arg0: int, arg1: int): void
+          public compareAndExchange(arg0: int, arg1: int, arg2: int): int
+          public compareAndExchangeAcquire(arg0: int, arg1: int, arg2: int): int
+          public compareAndExchangeRelease(arg0: int, arg1: int, arg2: int): int
+          public weakCompareAndSetVolatile(arg0: int, arg1: int, arg2: int): boolean
+          public weakCompareAndSetAcquire(arg0: int, arg1: int, arg2: int): boolean
+          public weakCompareAndSetRelease(arg0: int, arg1: int, arg2: int): boolean
         }
 
       }

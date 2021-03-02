@@ -4,7 +4,6 @@ declare namespace javax {
       namespace type {
 
         interface TypeMirror extends javax.lang.model.AnnotatedConstruct {
-
           getKind(): javax.lang.model.type.TypeKind
           equals(arg0: java.lang.Object): boolean
           hashCode(): int

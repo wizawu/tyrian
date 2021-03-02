@@ -2,13 +2,12 @@ declare namespace java {
   namespace util {
 
     class SplittableRandom {
-
       static readonly BAD_BOUND: java.lang.String
       static readonly BAD_RANGE: java.lang.String
       static readonly BAD_SIZE: java.lang.String
-      readonly internalNextLong(arg0: long, arg1: long): long
-      readonly internalNextInt(arg0: int, arg1: int): int
-      readonly internalNextDouble(arg0: double, arg1: double): double
+      internalNextLong(arg0: long, arg1: long): long
+      internalNextInt(arg0: int, arg1: int): int
+      internalNextDouble(arg0: double, arg1: double): double
       public constructor(arg0: long)
       public constructor()
       public split(): java.util.SplittableRandom

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace spi {
 
         abstract class AudioFileReader {
-
           public constructor()
           public abstract getAudioFileFormat(arg0: java.io.InputStream): javax.sound.sampled.AudioFileFormat
           public abstract getAudioFileFormat(arg0: java.net.URL): javax.sound.sampled.AudioFileFormat

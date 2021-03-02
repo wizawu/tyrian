@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Taskbar$State extends java.lang.Enum<java.awt.Taskbar$State> {
-
       public static readonly OFF: java.awt.Taskbar$State
       public static readonly NORMAL: java.awt.Taskbar$State
       public static readonly PAUSED: java.awt.Taskbar$State

@@ -3,7 +3,6 @@ declare namespace java {
     namespace jar {
 
       class JarInputStream extends java.util.zip.ZipInputStream {
-
         public constructor(arg0: java.io.InputStream)
         public constructor(arg0: java.io.InputStream, arg1: boolean)
         public getManifest(): java.util.jar.Manifest

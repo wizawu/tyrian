@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class LayoutFocusTraversalPolicy extends javax.swing.SortingFocusTraversalPolicy implements java.io.Serializable {
-
       public constructor()
       constructor(arg0: java.util.Comparator<unknown>)
       public getComponentAfter(arg0: java.awt.Container, arg1: java.awt.Component): java.awt.Component

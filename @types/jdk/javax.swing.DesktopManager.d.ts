@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     interface DesktopManager {
-
       openFrame(arg0: javax.swing.JInternalFrame): void
       closeFrame(arg0: javax.swing.JInternalFrame): void
       maximizeFrame(arg0: javax.swing.JInternalFrame): void

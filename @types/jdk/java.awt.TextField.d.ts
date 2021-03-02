@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class TextField extends java.awt.TextComponent {
-
       columns: int
       echoChar: char
       actionListener: java.awt.event.ActionListener

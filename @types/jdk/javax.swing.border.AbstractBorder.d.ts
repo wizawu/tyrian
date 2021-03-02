@@ -3,7 +3,6 @@ declare namespace javax {
     namespace border {
 
       abstract class AbstractBorder implements javax.swing.border.Border, java.io.Serializable {
-
         public constructor()
         public paintBorder(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void
         public getBorderInsets(arg0: java.awt.Component): java.awt.Insets

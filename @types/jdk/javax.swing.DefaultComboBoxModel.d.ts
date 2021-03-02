@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class DefaultComboBoxModel<E> extends javax.swing.AbstractListModel<E> implements javax.swing.MutableComboBoxModel<E>, java.io.Serializable {
-
       objects: java.util.Vector<E>
       selectedObject: java.lang.Object
       public constructor()

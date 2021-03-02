@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       class MouseWheelEvent extends java.awt.event.MouseEvent {
-
         public static readonly WHEEL_UNIT_SCROLL: int
         public static readonly WHEEL_BLOCK_SCROLL: int
         scrollType: int

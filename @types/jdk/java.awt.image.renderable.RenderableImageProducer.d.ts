@@ -4,7 +4,6 @@ declare namespace java {
       namespace renderable {
 
         class RenderableImageProducer implements java.awt.image.ImageProducer, java.lang.Runnable {
-
           rdblImage: java.awt.image.renderable.RenderableImage
           rc: java.awt.image.renderable.RenderContext
           ics: java.util.Vector<java.awt.image.ImageConsumer>

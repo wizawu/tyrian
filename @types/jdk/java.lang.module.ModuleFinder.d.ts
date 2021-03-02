@@ -3,7 +3,6 @@ declare namespace java {
     namespace module {
 
       interface ModuleFinder {
-
         find(arg0: java.lang.String): java.util.Optional<java.lang.module.ModuleReference>
         findAll(): java.util.Set<java.lang.module.ModuleReference>
         ofSystem(): java.lang.module.ModuleFinder

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class HTMLDocument extends javax.swing.text.DefaultStyledDocument {
-
           static readonly TokenThreshold: java.lang.String
           public static readonly AdditionalComments: java.lang.String
           static readonly StyleType: java.lang.String

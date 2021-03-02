@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       abstract class ComponentAdapter implements java.awt.event.ComponentListener {
-
         public constructor()
         public componentResized(arg0: java.awt.event.ComponentEvent): void
         public componentMoved(arg0: java.awt.event.ComponentEvent): void

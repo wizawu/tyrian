@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       abstract class MenuItemUI extends javax.swing.plaf.ButtonUI {
-
         public constructor()
       }
 

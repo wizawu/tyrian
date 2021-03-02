@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class DefaultHighlighter extends javax.swing.text.LayeredHighlighter {
-
         public static readonly DefaultPainter: javax.swing.text.LayeredHighlighter$LayerPainter
         public constructor()
         public paint(arg0: java.awt.Graphics): void

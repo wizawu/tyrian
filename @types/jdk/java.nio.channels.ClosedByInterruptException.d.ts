@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       class ClosedByInterruptException extends java.nio.channels.AsynchronousCloseException {
-
         public constructor()
       }
 

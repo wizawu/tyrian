@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface DOMConfiguration {
-
         setParameter(arg0: java.lang.String, arg1: java.lang.Object): void
         getParameter(arg0: java.lang.String): java.lang.Object
         canSetParameter(arg0: java.lang.String, arg1: java.lang.Object): boolean

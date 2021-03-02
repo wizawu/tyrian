@@ -5,7 +5,6 @@ declare namespace com {
         namespace module {
 
           class UnixSystem {
-
             protected username: java.lang.String
             protected uid: long
             protected gid: long

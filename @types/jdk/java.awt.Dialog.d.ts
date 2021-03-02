@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Dialog extends java.awt.Window {
-
       resizable: boolean
       undecorated: boolean
       public static readonly DEFAULT_MODALITY_TYPE: java.awt.Dialog$ModalityType
@@ -30,7 +29,7 @@ declare namespace java {
       constructComponentName(): java.lang.String
       public addNotify(): void
       public isModal(): boolean
-      readonly isModal_NoClientCode(): boolean
+      isModal_NoClientCode(): boolean
       public setModal(arg0: boolean): void
       public getModalityType(): java.awt.Dialog$ModalityType
       public setModalityType(arg0: java.awt.Dialog$ModalityType): void
@@ -38,8 +37,8 @@ declare namespace java {
       public setTitle(arg0: java.lang.String): void
       public setVisible(arg0: boolean): void
       public show(): void
-      readonly modalityPushed(): void
-      readonly modalityPopped(): void
+      modalityPushed(): void
+      modalityPopped(): void
       public hide(): void
       doDispose(): void
       public toBack(): void

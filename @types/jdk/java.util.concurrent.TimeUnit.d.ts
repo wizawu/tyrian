@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class TimeUnit extends java.lang.Enum<java.util.concurrent.TimeUnit> {
-
         public static readonly NANOSECONDS: java.util.concurrent.TimeUnit
         public static readonly MICROSECONDS: java.util.concurrent.TimeUnit
         public static readonly MILLISECONDS: java.util.concurrent.TimeUnit

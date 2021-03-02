@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class FieldView extends javax.swing.text.PlainView {
-
         public constructor(arg0: javax.swing.text.Element)
         protected getFontMetrics(): java.awt.FontMetrics
         protected adjustAllocation(arg0: java.awt.Shape): java.awt.Shape

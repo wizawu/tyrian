@@ -4,7 +4,6 @@ declare namespace org {
       namespace helpers {
 
         class ParserAdapter implements org.xml.sax.XMLReader, org.xml.sax.DocumentHandler {
-
           locator: org.xml.sax.Locator
           entityResolver: org.xml.sax.EntityResolver
           dtdHandler: org.xml.sax.DTDHandler

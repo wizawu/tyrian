@@ -3,7 +3,6 @@ declare namespace java {
     namespace font {
 
       class GlyphJustificationInfo {
-
         public static readonly PRIORITY_KASHIDA: int
         public static readonly PRIORITY_WHITESPACE: int
         public static readonly PRIORITY_INTERCHAR: int

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       class LayerUI<V extends java.awt.Component> extends javax.swing.plaf.ComponentUI implements java.io.Serializable {
-
         public constructor()
         public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
         public eventDispatched(arg0: java.awt.AWTEvent, arg1: javax.swing.JLayer<V>): void

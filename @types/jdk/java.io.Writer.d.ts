@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     abstract class Writer implements java.lang.Appendable, java.io.Closeable, java.io.Flushable {
-
       protected lock: java.lang.Object
       public static nullWriter(): java.io.Writer
       protected constructor()

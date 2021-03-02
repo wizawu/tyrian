@@ -4,7 +4,6 @@ declare namespace javax {
       namespace events {
 
         interface EndDocument extends javax.xml.stream.events.XMLEvent {
-
         }
 
       }

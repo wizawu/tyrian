@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       class SSLKeyException extends javax.net.ssl.SSLException {
-
         public constructor(arg0: java.lang.String)
       }
 

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace smartcardio {
 
     class ResponseAPDU implements java.io.Serializable {
-
       public constructor(arg0: byte[])
       public getNr(): int
       public getData(): byte[]

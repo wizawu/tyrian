@@ -3,7 +3,6 @@ declare namespace java {
     namespace temporal {
 
       class JulianFields {
-
         public static readonly JULIAN_DAY: java.time.temporal.TemporalField
         public static readonly MODIFIED_JULIAN_DAY: java.time.temporal.TemporalField
         public static readonly RATA_DIE: java.time.temporal.TemporalField

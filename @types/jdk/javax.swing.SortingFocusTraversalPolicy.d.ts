@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class SortingFocusTraversalPolicy extends javax.swing.InternalFrameFocusTraversalPolicy {
-
       protected constructor()
       public constructor(arg0: java.util.Comparator<unknown>)
       getTopmostProvider(arg0: java.awt.Container, arg1: java.awt.Component): java.awt.Container

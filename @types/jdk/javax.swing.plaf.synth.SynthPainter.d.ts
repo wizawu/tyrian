@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         abstract class SynthPainter {
-
           static NULL_PAINTER: javax.swing.plaf.synth.SynthPainter
           public constructor()
           public paintArrowButtonBackground(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: int, arg3: int, arg4: int, arg5: int): void

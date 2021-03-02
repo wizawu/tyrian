@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JTextField extends javax.swing.text.JTextComponent implements javax.swing.SwingConstants {
-
       public static readonly notifyAction: java.lang.String
       public constructor()
       public constructor(arg0: java.lang.String)

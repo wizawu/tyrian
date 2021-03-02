@@ -3,7 +3,6 @@ declare namespace java {
     namespace module {
 
       class ModuleDescriptor implements java.lang.Comparable<java.lang.module.ModuleDescriptor> {
-
         static readonly $assertionsDisabled: boolean
         constructor(arg0: java.lang.String, arg1: java.lang.module.ModuleDescriptor$Version, arg2: java.util.Set<java.lang.module.ModuleDescriptor$Modifier>, arg3: java.util.Set<java.lang.module.ModuleDescriptor$Requires>, arg4: java.util.Set<java.lang.module.ModuleDescriptor$Exports>, arg5: java.util.Set<java.lang.module.ModuleDescriptor$Opens>, arg6: java.util.Set<java.lang.String>, arg7: java.util.Set<java.lang.module.ModuleDescriptor$Provides>, arg8: java.util.Set<java.lang.String>, arg9: java.lang.String, arg10: int, arg11: boolean)
         public name(): java.lang.String

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace plaf {
 
       class BorderUIResource$CompoundBorderUIResource extends javax.swing.border.CompoundBorder implements javax.swing.plaf.UIResource {
-
         public constructor(arg0: javax.swing.border.Border, arg1: javax.swing.border.Border)
       }
 

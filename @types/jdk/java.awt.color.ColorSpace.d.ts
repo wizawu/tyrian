@@ -3,7 +3,6 @@ declare namespace java {
     namespace color {
 
       abstract class ColorSpace implements java.io.Serializable {
-
         static readonly serialVersionUID: long
         public static readonly TYPE_XYZ: int
         public static readonly TYPE_Lab: int

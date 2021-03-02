@@ -3,7 +3,6 @@ declare namespace javax {
     namespace modelmbean {
 
       class RequiredModelMBean implements javax.management.modelmbean.ModelMBean, javax.management.MBeanRegistration, javax.management.NotificationEmitter {
-
         modelMBeanInfo: javax.management.modelmbean.ModelMBeanInfo
         public constructor()
         public constructor(arg0: javax.management.modelmbean.ModelMBeanInfo)

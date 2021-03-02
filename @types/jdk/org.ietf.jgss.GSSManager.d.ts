@@ -3,7 +3,6 @@ declare namespace org {
     namespace jgss {
 
       abstract class GSSManager {
-
         public constructor()
         public static getInstance(): org.ietf.jgss.GSSManager
         public abstract getMechs(): org.ietf.jgss.Oid[]

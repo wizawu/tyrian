@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class SystemColor extends java.awt.Color implements java.io.Serializable {
-
       public static readonly DESKTOP: int
       public static readonly ACTIVE_CAPTION: int
       public static readonly ACTIVE_CAPTION_TEXT: int

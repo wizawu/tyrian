@@ -5,7 +5,6 @@ declare namespace javax {
         namespace spec {
 
           interface TransformParameterSpec extends java.security.spec.AlgorithmParameterSpec {
-
           }
 
         }

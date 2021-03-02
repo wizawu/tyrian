@@ -3,7 +3,6 @@ declare namespace java {
     namespace desktop {
 
       interface QuitResponse {
-
         performQuit(): void
         cancelQuit(): void
       }

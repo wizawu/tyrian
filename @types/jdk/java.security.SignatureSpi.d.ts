@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     abstract class SignatureSpi {
-
       protected appRandom: java.security.SecureRandom
       public constructor()
       protected abstract engineInitVerify(arg0: java.security.PublicKey): void

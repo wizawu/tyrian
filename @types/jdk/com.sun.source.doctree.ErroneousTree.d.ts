@@ -4,7 +4,6 @@ declare namespace com {
       namespace doctree {
 
         interface ErroneousTree extends com.sun.source.doctree.TextTree {
-
           getDiagnostic(): javax.tools.Diagnostic<javax.tools.JavaFileObject>
         }
 

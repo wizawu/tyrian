@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class ZoneView extends javax.swing.text.BoxView {
-
         maxZoneSize: int
         maxZonesLoaded: int
         loadedZones: java.util.Vector<javax.swing.text.View>

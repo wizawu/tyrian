@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Character implements java.io.Serializable, java.lang.Comparable<java.lang.Character> {
-
       public static readonly MIN_RADIX: int
       public static readonly MAX_RADIX: int
       public static readonly MIN_VALUE: char

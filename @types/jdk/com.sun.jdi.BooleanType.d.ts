@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface BooleanType extends com.sun.jdi.PrimitiveType {
-
       }
 
     }

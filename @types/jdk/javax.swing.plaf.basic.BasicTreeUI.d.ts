@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicTreeUI extends javax.swing.plaf.TreeUI {
-
           protected collapsedIcon: javax.swing.Icon
           protected expandedIcon: javax.swing.Icon
           protected leftChildIndent: int

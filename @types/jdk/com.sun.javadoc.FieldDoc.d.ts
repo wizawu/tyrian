@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface FieldDoc extends com.sun.javadoc.MemberDoc {
-
         type(): com.sun.javadoc.Type
         isTransient(): boolean
         isVolatile(): boolean

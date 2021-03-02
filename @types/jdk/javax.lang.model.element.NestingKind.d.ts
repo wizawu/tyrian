@@ -4,7 +4,6 @@ declare namespace javax {
       namespace element {
 
         class NestingKind extends java.lang.Enum<javax.lang.model.element.NestingKind> {
-
           public static readonly TOP_LEVEL: javax.lang.model.element.NestingKind
           public static readonly MEMBER: javax.lang.model.element.NestingKind
           public static readonly LOCAL: javax.lang.model.element.NestingKind

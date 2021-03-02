@@ -3,7 +3,6 @@ declare namespace java {
     namespace format {
 
       class FormatStyle extends java.lang.Enum<java.time.format.FormatStyle> {
-
         public static readonly FULL: java.time.format.FormatStyle
         public static readonly LONG: java.time.format.FormatStyle
         public static readonly MEDIUM: java.time.format.FormatStyle

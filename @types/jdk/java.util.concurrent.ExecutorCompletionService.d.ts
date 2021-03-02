@@ -3,7 +3,6 @@ declare namespace java {
     namespace concurrent {
 
       class ExecutorCompletionService<V> implements java.util.concurrent.CompletionService<V> {
-
         public constructor(arg0: java.util.concurrent.Executor)
         public constructor(arg0: java.util.concurrent.Executor, arg1: java.util.concurrent.BlockingQueue<java.util.concurrent.Future<V>>)
         public submit(arg0: java.util.concurrent.Callable<V>): java.util.concurrent.Future<V>

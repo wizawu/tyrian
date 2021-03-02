@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Integer extends java.lang.Number implements java.lang.Comparable<java.lang.Integer> {
-
       public static readonly MIN_VALUE: int
       public static readonly MAX_VALUE: int
       public static readonly TYPE: java.lang.Class<java.lang.Integer>

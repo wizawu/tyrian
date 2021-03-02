@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class DefaultEditorKit extends javax.swing.text.EditorKit {
-
         public static readonly EndOfLineStringProperty: java.lang.String
         public static readonly insertContentAction: java.lang.String
         public static readonly insertBreakAction: java.lang.String

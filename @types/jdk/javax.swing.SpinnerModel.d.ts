@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     interface SpinnerModel {
-
       getValue(): java.lang.Object
       setValue(arg0: java.lang.Object): void
       getNextValue(): java.lang.Object

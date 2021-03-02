@@ -3,7 +3,6 @@ declare namespace org {
     namespace dom {
 
       interface DOMImplementationList {
-
         item(arg0: int): org.w3c.dom.DOMImplementation
         getLength(): int
       }

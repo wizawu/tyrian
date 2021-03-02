@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class StyledEditorKit extends javax.swing.text.DefaultEditorKit {
-
         currentRun: javax.swing.text.Element
         currentParagraph: javax.swing.text.Element
         inputAttributes: javax.swing.text.MutableAttributeSet

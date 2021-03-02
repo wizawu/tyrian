@@ -4,7 +4,6 @@ declare namespace jdk {
       namespace tree {
 
         interface BreakTree extends jdk.nashorn.api.tree.GotoTree {
-
           getLabel(): java.lang.String
         }
 

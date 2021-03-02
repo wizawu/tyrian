@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     interface AccessibleSelection {
-
       getAccessibleSelectionCount(): int
       getAccessibleSelection(arg0: int): javax.accessibility.Accessible
       isAccessibleChildSelected(arg0: int): boolean

@@ -3,7 +3,6 @@ declare namespace java {
     namespace temporal {
 
       class TemporalAdjusters {
-
         public static ofDateAdjuster(arg0: java.util.function$.UnaryOperator<java.time.LocalDate>): java.time.temporal.TemporalAdjuster
         public static firstDayOfMonth(): java.time.temporal.TemporalAdjuster
         public static lastDayOfMonth(): java.time.temporal.TemporalAdjuster

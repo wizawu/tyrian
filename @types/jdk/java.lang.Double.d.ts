@@ -2,7 +2,6 @@ declare namespace java {
   namespace lang {
 
     class Double extends java.lang.Number implements java.lang.Comparable<java.lang.Double> {
-
       public static readonly POSITIVE_INFINITY: double
       public static readonly NEGATIVE_INFINITY: double
       public static readonly NaN: double

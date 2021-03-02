@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class Inet6Address extends java.net.InetAddress {
-
       static readonly INADDRSZ: int
       constructor()
       constructor(arg0: java.lang.String, arg1: byte[], arg2: int)

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sasl {
 
       interface SaslServer {
-
         getMechanismName(): java.lang.String
         evaluateResponse(arg0: byte[]): byte[]
         isComplete(): boolean

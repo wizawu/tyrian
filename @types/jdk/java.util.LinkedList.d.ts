@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class LinkedList<E> extends java.util.AbstractSequentialList<E> implements java.util.List<E>, java.util.Deque<E>, java.lang.Cloneable, java.io.Serializable {
-
       size: int
       first: java.util.LinkedList$Node<E>
       last: java.util.LinkedList$Node<E>

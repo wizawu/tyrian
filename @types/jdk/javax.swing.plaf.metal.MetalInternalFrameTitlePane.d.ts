@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalInternalFrameTitlePane extends javax.swing.plaf.basic.BasicInternalFrameTitlePane {
-
           protected isPalette: boolean
           protected paletteCloseIcon: javax.swing.Icon
           protected paletteTitleHeight: int

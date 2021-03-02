@@ -4,7 +4,6 @@ declare namespace com {
       namespace util {
 
         abstract class DocTrees extends com.sun.source.util.Trees {
-
           public constructor()
           public static instance(arg0: javax.tools.JavaCompiler$CompilationTask): com.sun.source.util.DocTrees
           public static instance(arg0: javax.annotation.processing.ProcessingEnvironment): com.sun.source.util.DocTrees

@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     abstract class KeyStore$Builder {
-
       static readonly MAX_CALLBACK_TRIES: int
       protected constructor()
       public abstract getKeyStore(): java.security.KeyStore

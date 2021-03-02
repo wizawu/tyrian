@@ -2,7 +2,6 @@ declare namespace javax {
   namespace management {
 
     class MBeanServerDelegate implements javax.management.MBeanServerDelegateMBean, javax.management.NotificationEmitter {
-
       public static readonly DELEGATE_NAME: javax.management.ObjectName
       public constructor()
       public getMBeanServerId(): java.lang.String

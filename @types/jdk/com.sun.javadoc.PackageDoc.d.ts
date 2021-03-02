@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface PackageDoc extends com.sun.javadoc.Doc {
-
         allClasses(arg0: boolean): com.sun.javadoc.ClassDoc[]
         allClasses(): com.sun.javadoc.ClassDoc[]
         ordinaryClasses(): com.sun.javadoc.ClassDoc[]

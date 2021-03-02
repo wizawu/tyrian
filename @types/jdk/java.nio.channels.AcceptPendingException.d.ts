@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       class AcceptPendingException extends java.lang.IllegalStateException {
-
         public constructor()
       }
 

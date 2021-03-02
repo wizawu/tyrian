@@ -3,7 +3,6 @@ declare namespace java {
     namespace image {
 
       class ImagingOpException extends java.lang.RuntimeException {
-
         public constructor(arg0: java.lang.String)
       }
 

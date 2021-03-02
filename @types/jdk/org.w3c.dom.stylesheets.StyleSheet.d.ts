@@ -4,7 +4,6 @@ declare namespace org {
       namespace stylesheets {
 
         interface StyleSheet {
-
           getType(): java.lang.String
           getDisabled(): boolean
           setDisabled(arg0: boolean): void

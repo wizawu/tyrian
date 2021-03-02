@@ -4,7 +4,6 @@ declare namespace javax {
       namespace type {
 
         interface NullType extends javax.lang.model.type.ReferenceType {
-
         }
 
       }

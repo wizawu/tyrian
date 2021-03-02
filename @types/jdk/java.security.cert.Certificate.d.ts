@@ -3,9 +3,8 @@ declare namespace java {
     namespace cert {
 
       abstract class Certificate implements java.io.Serializable {
-
         protected constructor(arg0: java.lang.String)
-        public readonly getType(): java.lang.String
+        public getType(): java.lang.String
         public equals(arg0: java.lang.Object): boolean
         public hashCode(): int
         public abstract getEncoded(): byte[]

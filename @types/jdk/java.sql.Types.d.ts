@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class Types {
-
       public static readonly BIT: int
       public static readonly TINYINT: int
       public static readonly SMALLINT: int

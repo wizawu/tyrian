@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace execution {
 
       class LocalExecutionControlProvider implements jdk.jshell.spi.ExecutionControlProvider {
-
         public constructor()
         public name(): java.lang.String
         public defaultParameters(): java.util.Map<java.lang.String,java.lang.String>

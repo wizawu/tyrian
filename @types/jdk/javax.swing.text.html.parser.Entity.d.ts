@@ -5,7 +5,6 @@ declare namespace javax {
         namespace parser {
 
           class Entity implements javax.swing.text.html.parser.DTDConstants {
-
             public name: java.lang.String
             public type: int
             public data: char[]

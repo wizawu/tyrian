@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface Accessible {
-
         modifiers(): int
         isPrivate(): boolean
         isPackagePrivate(): boolean

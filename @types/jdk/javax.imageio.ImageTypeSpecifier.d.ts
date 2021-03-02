@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
 
     class ImageTypeSpecifier {
-
       protected colorModel: java.awt.image.ColorModel
       protected sampleModel: java.awt.image.SampleModel
       public constructor(arg0: java.awt.image.ColorModel, arg1: java.awt.image.SampleModel)

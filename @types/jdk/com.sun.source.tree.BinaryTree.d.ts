@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface BinaryTree extends com.sun.source.tree.ExpressionTree {
-
           getLeftOperand(): com.sun.source.tree.ExpressionTree
           getRightOperand(): com.sun.source.tree.ExpressionTree
         }

@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class CheckboxMenuItem extends java.awt.MenuItem implements java.awt.ItemSelectable, javax.accessibility.Accessible {
-
       public constructor()
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: boolean)

@@ -3,7 +3,6 @@ declare namespace jdk {
     namespace execution {
 
       class StreamingExecutionControl implements jdk.jshell.spi.ExecutionControl {
-
         public constructor(arg0: java.io.ObjectOutput, arg1: java.io.ObjectInput)
         public load(arg0: jdk.jshell.spi.ExecutionControl$ClassBytecodes[]): void
         public redefine(arg0: jdk.jshell.spi.ExecutionControl$ClassBytecodes[]): void

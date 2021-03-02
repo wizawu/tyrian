@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       class MaskFormatter extends javax.swing.text.DefaultFormatter {
-
         public constructor()
         public constructor(arg0: java.lang.String)
         public setMask(arg0: java.lang.String): void

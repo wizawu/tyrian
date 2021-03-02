@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     abstract class IdentityScope extends java.security.Identity {
-
       protected constructor()
       public constructor(arg0: java.lang.String)
       public constructor(arg0: java.lang.String, arg1: java.security.IdentityScope)

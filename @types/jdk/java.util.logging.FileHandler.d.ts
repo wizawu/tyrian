@@ -3,7 +3,6 @@ declare namespace java {
     namespace logging {
 
       class FileHandler extends java.util.logging.StreamHandler {
-
         static readonly $assertionsDisabled: boolean
         public constructor()
         public constructor(arg0: java.lang.String)

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace html {
 
         class HTMLEditorKit$LinkController extends java.awt.event.MouseAdapter implements java.awt.event.MouseMotionListener, java.io.Serializable {
-
           public constructor()
           public mouseClicked(arg0: java.awt.event.MouseEvent): void
           public mouseDragged(arg0: java.awt.event.MouseEvent): void

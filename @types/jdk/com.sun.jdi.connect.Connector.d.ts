@@ -4,7 +4,6 @@ declare namespace com {
       namespace connect {
 
         interface Connector {
-
           name(): java.lang.String
           description(): java.lang.String
           transport(): com.sun.jdi.connect.Transport

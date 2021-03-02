@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       interface IntegerType extends com.sun.jdi.PrimitiveType {
-
       }
 
     }

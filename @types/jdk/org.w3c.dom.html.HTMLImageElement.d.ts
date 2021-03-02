@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLImageElement extends org.w3c.dom.html.HTMLElement {
-
           getLowSrc(): java.lang.String
           setLowSrc(arg0: java.lang.String): void
           getName(): java.lang.String

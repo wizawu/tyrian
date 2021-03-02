@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLPreElement extends org.w3c.dom.html.HTMLElement {
-
           getWidth(): int
           setWidth(arg0: int): void
         }

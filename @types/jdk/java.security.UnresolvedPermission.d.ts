@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     class UnresolvedPermission extends java.security.Permission implements java.io.Serializable {
-
       public constructor(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String, arg3: java.security.cert.Certificate[])
       resolve(arg0: java.security.Permission, arg1: java.security.cert.Certificate[]): java.security.Permission
       public implies(arg0: java.security.Permission): boolean

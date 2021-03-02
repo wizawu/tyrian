@@ -3,7 +3,6 @@ declare namespace javax {
     namespace undo {
 
       class AbstractUndoableEdit implements javax.swing.undo.UndoableEdit, java.io.Serializable {
-
         protected static readonly UndoName: java.lang.String
         protected static readonly RedoName: java.lang.String
         hasBeenDone: boolean

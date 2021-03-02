@@ -3,7 +3,6 @@ declare namespace javax {
     namespace openmbean {
 
       class SimpleType<T> extends javax.management.openmbean.OpenType<T> {
-
         static readonly serialVersionUID: long
         public static readonly VOID: javax.management.openmbean.SimpleType<java.lang.Void>
         public static readonly BOOLEAN: javax.management.openmbean.SimpleType<java.lang.Boolean>

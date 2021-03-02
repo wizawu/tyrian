@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicInternalFrameTitlePane extends javax.swing.JComponent {
-
           protected menuBar: javax.swing.JMenuBar
           protected iconButton: javax.swing.JButton
           protected maxButton: javax.swing.JButton

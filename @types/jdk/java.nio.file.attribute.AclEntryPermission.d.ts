@@ -4,7 +4,6 @@ declare namespace java {
       namespace attribute {
 
         class AclEntryPermission extends java.lang.Enum<java.nio.file.attribute.AclEntryPermission> {
-
           public static readonly READ_DATA: java.nio.file.attribute.AclEntryPermission
           public static readonly WRITE_DATA: java.nio.file.attribute.AclEntryPermission
           public static readonly APPEND_DATA: java.nio.file.attribute.AclEntryPermission

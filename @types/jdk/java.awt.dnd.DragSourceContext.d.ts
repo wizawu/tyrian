@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       class DragSourceContext implements java.awt.dnd.DragSourceListener, java.awt.dnd.DragSourceMotionListener, java.io.Serializable {
-
         protected static readonly DEFAULT: int
         protected static readonly ENTER: int
         protected static readonly OVER: int

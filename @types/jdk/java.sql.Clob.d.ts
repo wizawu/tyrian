@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     interface Clob {
-
       length(): long
       getSubString(arg0: long, arg1: int): java.lang.String
       getCharacterStream(): java.io.Reader

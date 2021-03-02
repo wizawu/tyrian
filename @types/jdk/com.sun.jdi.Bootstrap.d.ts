@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
 
       class Bootstrap {
-
         public constructor()
         public static virtualMachineManager(): com.sun.jdi.VirtualMachineManager
       }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
 
     abstract class ImageWriter implements javax.imageio.ImageTranscoder {
-
       protected originatingProvider: javax.imageio.spi.ImageWriterSpi
       protected output: java.lang.Object
       protected availableLocales: java.util.Locale[]

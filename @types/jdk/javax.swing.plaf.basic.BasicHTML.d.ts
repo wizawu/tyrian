@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicHTML {
-
           public static readonly propertyKey: java.lang.String
           public static readonly documentBaseKey: java.lang.String
           public constructor()

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
 
       interface Element {
-
         getDocument(): javax.swing.text.Document
         getParentElement(): javax.swing.text.Element
         getName(): java.lang.String

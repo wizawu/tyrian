@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLFieldSetElement extends org.w3c.dom.html.HTMLElement {
-
           getForm(): org.w3c.dom.html.HTMLFormElement
         }
 

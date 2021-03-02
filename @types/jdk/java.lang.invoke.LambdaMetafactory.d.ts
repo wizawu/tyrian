@@ -3,7 +3,6 @@ declare namespace java {
     namespace invoke {
 
       class LambdaMetafactory {
-
         public static readonly FLAG_SERIALIZABLE: int
         public static readonly FLAG_MARKERS: int
         public static readonly FLAG_BRIDGES: int

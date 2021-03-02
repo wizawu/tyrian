@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     abstract class AbstractList<E> extends java.util.AbstractCollection<E> implements java.util.List<E> {
-
       protected modCount: int
       protected constructor()
       public add(arg0: E): boolean

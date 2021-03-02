@@ -4,7 +4,6 @@ declare namespace com {
       namespace attach {
 
         class AgentInitializationException extends java.lang.Exception {
-
           static readonly serialVersionUID: long
           public constructor()
           public constructor(arg0: java.lang.String)

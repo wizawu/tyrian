@@ -3,8 +3,11 @@ declare namespace jdk {
     namespace api {
       namespace scripting {
 
-        interface ClassFilter {
+        interface ClassFilter$$lambda {
+          (arg0: java.lang.String): boolean
+        }
 
+        interface ClassFilter {
           exposeToScripts(arg0: java.lang.String): boolean
         }
 

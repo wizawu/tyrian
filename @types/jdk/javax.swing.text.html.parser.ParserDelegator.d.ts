@@ -5,7 +5,6 @@ declare namespace javax {
         namespace parser {
 
           class ParserDelegator extends javax.swing.text.html.HTMLEditorKit$Parser implements java.io.Serializable {
-
             protected static setDefaultDTD(): void
             protected static createDTD(arg0: javax.swing.text.html.parser.DTD, arg1: java.lang.String): javax.swing.text.html.parser.DTD
             public constructor()

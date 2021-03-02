@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       interface Tag {
-
         name(): java.lang.String
         holder(): com.sun.javadoc.Doc
         kind(): java.lang.String

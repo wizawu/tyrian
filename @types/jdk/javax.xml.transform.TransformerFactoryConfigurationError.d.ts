@@ -3,7 +3,6 @@ declare namespace javax {
     namespace transform {
 
       class TransformerFactoryConfigurationError extends java.lang.Error {
-
         public constructor()
         public constructor(arg0: java.lang.String)
         public constructor(arg0: java.lang.Exception)

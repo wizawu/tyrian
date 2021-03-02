@@ -4,7 +4,6 @@ declare namespace javax {
       namespace synth {
 
         class SynthComboBoxUI extends javax.swing.plaf.basic.BasicComboBoxUI implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI {
-
           popupInsets: java.awt.Insets
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
 
     class Locale implements java.lang.Cloneable, java.io.Serializable {
-
       public static readonly ENGLISH: java.util.Locale
       public static readonly FRENCH: java.util.Locale
       public static readonly GERMAN: java.util.Locale
@@ -56,20 +55,20 @@ declare namespace java {
       public getUnicodeLocaleKeys(): java.util.Set<java.lang.String>
       getBaseLocale(): sun.util.locale.BaseLocale
       getLocaleExtensions(): sun.util.locale.LocaleExtensions
-      public readonly toString(): java.lang.String
+      public toString(): java.lang.String
       public toLanguageTag(): java.lang.String
       public static forLanguageTag(arg0: java.lang.String): java.util.Locale
       public getISO3Language(): java.lang.String
       public getISO3Country(): java.lang.String
-      public readonly getDisplayLanguage(): java.lang.String
+      public getDisplayLanguage(): java.lang.String
       public getDisplayLanguage(arg0: java.util.Locale): java.lang.String
       public getDisplayScript(): java.lang.String
       public getDisplayScript(arg0: java.util.Locale): java.lang.String
-      public readonly getDisplayCountry(): java.lang.String
+      public getDisplayCountry(): java.lang.String
       public getDisplayCountry(arg0: java.util.Locale): java.lang.String
-      public readonly getDisplayVariant(): java.lang.String
+      public getDisplayVariant(): java.lang.String
       public getDisplayVariant(arg0: java.util.Locale): java.lang.String
-      public readonly getDisplayName(): java.lang.String
+      public getDisplayName(): java.lang.String
       public getDisplayName(arg0: java.util.Locale): java.lang.String
       public clone(): java.lang.Object
       public hashCode(): int

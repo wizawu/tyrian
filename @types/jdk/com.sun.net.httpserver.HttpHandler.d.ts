@@ -3,8 +3,11 @@ declare namespace com {
     namespace net {
       namespace httpserver {
 
-        interface HttpHandler {
+        interface HttpHandler$$lambda {
+          (arg0: com.sun.net.httpserver.HttpExchange): void
+        }
 
+        interface HttpHandler {
           handle(arg0: com.sun.net.httpserver.HttpExchange): void
         }
 

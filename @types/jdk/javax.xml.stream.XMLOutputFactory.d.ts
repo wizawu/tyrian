@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       abstract class XMLOutputFactory {
-
         public static readonly IS_REPAIRING_NAMESPACES: java.lang.String
         static readonly DEFAULIMPL: java.lang.String
         protected constructor()

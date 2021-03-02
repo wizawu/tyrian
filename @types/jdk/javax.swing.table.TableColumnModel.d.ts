@@ -3,7 +3,6 @@ declare namespace javax {
     namespace table {
 
       interface TableColumnModel {
-
         addColumn(arg0: javax.swing.table.TableColumn): void
         removeColumn(arg0: javax.swing.table.TableColumn): void
         moveColumn(arg0: int, arg1: int): void

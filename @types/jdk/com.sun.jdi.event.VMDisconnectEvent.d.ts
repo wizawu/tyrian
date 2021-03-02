@@ -4,7 +4,6 @@ declare namespace com {
       namespace event {
 
         interface VMDisconnectEvent extends com.sun.jdi.event.Event {
-
         }
 
       }

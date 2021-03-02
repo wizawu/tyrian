@@ -5,7 +5,6 @@ declare namespace com {
         namespace spi {
 
           class ClosedConnectionException extends java.io.IOException {
-
             public constructor()
             public constructor(arg0: java.lang.String)
           }

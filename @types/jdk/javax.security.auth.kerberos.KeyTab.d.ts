@@ -4,7 +4,6 @@ declare namespace javax {
       namespace kerberos {
 
         class KeyTab {
-
           public static getInstance(arg0: java.io.File): javax.security.auth.kerberos.KeyTab
           public static getUnboundInstance(arg0: java.io.File): javax.security.auth.kerberos.KeyTab
           public static getInstance(arg0: javax.security.auth.kerberos.KerberosPrincipal, arg1: java.io.File): javax.security.auth.kerberos.KeyTab

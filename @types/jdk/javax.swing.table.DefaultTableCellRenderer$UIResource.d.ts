@@ -3,7 +3,6 @@ declare namespace javax {
     namespace table {
 
       class DefaultTableCellRenderer$UIResource extends javax.swing.table.DefaultTableCellRenderer implements javax.swing.plaf.UIResource {
-
         public constructor()
       }
 

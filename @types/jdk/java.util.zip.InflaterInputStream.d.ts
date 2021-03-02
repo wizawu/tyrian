@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class InflaterInputStream extends java.io.FilterInputStream {
-
         protected inf: java.util.zip.Inflater
         protected buf: byte[]
         protected len: int

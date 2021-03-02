@@ -4,7 +4,6 @@ declare namespace com {
       namespace request {
 
         interface ModificationWatchpointRequest extends com.sun.jdi.request.WatchpointRequest {
-
         }
 
       }

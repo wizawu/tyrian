@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class GroupLayout$Alignment extends java.lang.Enum<javax.swing.GroupLayout$Alignment> {
-
       public static readonly LEADING: javax.swing.GroupLayout$Alignment
       public static readonly TRAILING: javax.swing.GroupLayout$Alignment
       public static readonly CENTER: javax.swing.GroupLayout$Alignment

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace stream {
 
       class MemoryCacheImageOutputStream extends javax.imageio.stream.ImageOutputStreamImpl {
-
         public constructor(arg0: java.io.OutputStream)
         public read(): int
         public read(arg0: byte[], arg1: int, arg2: int): int

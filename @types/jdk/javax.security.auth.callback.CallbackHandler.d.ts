@@ -3,8 +3,11 @@ declare namespace javax {
     namespace auth {
       namespace callback {
 
-        interface CallbackHandler {
+        interface CallbackHandler$$lambda {
+          (arg0: javax.security.auth.callback.Callback[]): void
+        }
 
+        interface CallbackHandler {
           handle(arg0: javax.security.auth.callback.Callback[]): void
         }
 

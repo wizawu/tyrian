@@ -3,7 +3,6 @@ declare namespace java {
     namespace reflect {
 
       interface ParameterizedType extends java.lang.reflect.Type {
-
         getActualTypeArguments(): java.lang.reflect.Type[]
         getRawType(): java.lang.reflect.Type
         getOwnerType(): java.lang.reflect.Type

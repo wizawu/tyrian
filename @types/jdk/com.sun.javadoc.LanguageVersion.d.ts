@@ -3,7 +3,6 @@ declare namespace com {
     namespace javadoc {
 
       class LanguageVersion extends java.lang.Enum<com.sun.javadoc.LanguageVersion> {
-
         public static readonly JAVA_1_1: com.sun.javadoc.LanguageVersion
         public static readonly JAVA_1_5: com.sun.javadoc.LanguageVersion
         public static values(): com.sun.javadoc.LanguageVersion[]

@@ -4,7 +4,6 @@ declare namespace org {
       namespace html {
 
         interface HTMLTextAreaElement extends org.w3c.dom.html.HTMLElement {
-
           getDefaultValue(): java.lang.String
           setDefaultValue(arg0: java.lang.String): void
           getForm(): org.w3c.dom.html.HTMLFormElement

@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class TextArea extends java.awt.TextComponent {
-
       rows: int
       columns: int
       public static readonly SCROLLBARS_BOTH: int

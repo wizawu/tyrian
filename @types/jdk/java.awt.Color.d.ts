@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class Color implements java.awt.Paint, java.io.Serializable {
-
       public static readonly white: java.awt.Color
       public static readonly WHITE: java.awt.Color
       public static readonly lightGray: java.awt.Color

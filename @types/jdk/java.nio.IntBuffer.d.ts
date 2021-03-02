@@ -2,7 +2,6 @@ declare namespace java {
   namespace nio {
 
     abstract class IntBuffer extends java.nio.Buffer implements java.lang.Comparable<java.nio.IntBuffer> {
-
       readonly hb: int[]
       readonly offset: int
       isReadOnly: boolean
@@ -23,17 +22,17 @@ declare namespace java {
       public get(arg0: int[]): java.nio.IntBuffer
       public put(arg0: java.nio.IntBuffer): java.nio.IntBuffer
       public put(arg0: int[], arg1: int, arg2: int): java.nio.IntBuffer
-      public readonly put(arg0: int[]): java.nio.IntBuffer
-      public readonly hasArray(): boolean
-      public readonly array(): int[]
-      public readonly arrayOffset(): int
-      public readonly position(arg0: int): java.nio.IntBuffer
-      public readonly limit(arg0: int): java.nio.IntBuffer
-      public readonly mark(): java.nio.IntBuffer
-      public readonly reset(): java.nio.IntBuffer
-      public readonly clear(): java.nio.IntBuffer
-      public readonly flip(): java.nio.IntBuffer
-      public readonly rewind(): java.nio.IntBuffer
+      public put(arg0: int[]): java.nio.IntBuffer
+      public hasArray(): boolean
+      public array(): int[]
+      public arrayOffset(): int
+      public position(arg0: int): java.nio.IntBuffer
+      public limit(arg0: int): java.nio.IntBuffer
+      public mark(): java.nio.IntBuffer
+      public reset(): java.nio.IntBuffer
+      public clear(): java.nio.IntBuffer
+      public flip(): java.nio.IntBuffer
+      public rewind(): java.nio.IntBuffer
       public abstract compact(): java.nio.IntBuffer
       public abstract isDirect(): boolean
       public toString(): java.lang.String

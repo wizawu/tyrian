@@ -2,7 +2,6 @@ declare namespace javax {
   namespace crypto {
 
     abstract class ExemptionMechanismSpi {
-
       public constructor()
       protected abstract engineGetOutputSize(arg0: int): int
       protected abstract engineInit(arg0: java.security.Key): void

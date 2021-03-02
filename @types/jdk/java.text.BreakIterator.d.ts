@@ -2,7 +2,6 @@ declare namespace java {
   namespace text {
 
     abstract class BreakIterator implements java.lang.Cloneable {
-
       public static readonly DONE: int
       protected constructor()
       public clone(): java.lang.Object

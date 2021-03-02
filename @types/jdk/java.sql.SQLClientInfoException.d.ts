@@ -2,7 +2,6 @@ declare namespace java {
   namespace sql {
 
     class SQLClientInfoException extends java.sql.SQLException {
-
       public constructor()
       public constructor(arg0: java.util.Map<java.lang.String,java.sql.ClientInfoStatus>)
       public constructor(arg0: java.util.Map<java.lang.String,java.sql.ClientInfoStatus>, arg1: java.lang.Throwable)

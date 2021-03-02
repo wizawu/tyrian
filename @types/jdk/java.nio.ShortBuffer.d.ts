@@ -2,7 +2,6 @@ declare namespace java {
   namespace nio {
 
     abstract class ShortBuffer extends java.nio.Buffer implements java.lang.Comparable<java.nio.ShortBuffer> {
-
       readonly hb: short[]
       readonly offset: int
       isReadOnly: boolean
@@ -23,17 +22,17 @@ declare namespace java {
       public get(arg0: short[]): java.nio.ShortBuffer
       public put(arg0: java.nio.ShortBuffer): java.nio.ShortBuffer
       public put(arg0: short[], arg1: int, arg2: int): java.nio.ShortBuffer
-      public readonly put(arg0: short[]): java.nio.ShortBuffer
-      public readonly hasArray(): boolean
-      public readonly array(): short[]
-      public readonly arrayOffset(): int
-      public readonly position(arg0: int): java.nio.ShortBuffer
-      public readonly limit(arg0: int): java.nio.ShortBuffer
-      public readonly mark(): java.nio.ShortBuffer
-      public readonly reset(): java.nio.ShortBuffer
-      public readonly clear(): java.nio.ShortBuffer
-      public readonly flip(): java.nio.ShortBuffer
-      public readonly rewind(): java.nio.ShortBuffer
+      public put(arg0: short[]): java.nio.ShortBuffer
+      public hasArray(): boolean
+      public array(): short[]
+      public arrayOffset(): int
+      public position(arg0: int): java.nio.ShortBuffer
+      public limit(arg0: int): java.nio.ShortBuffer
+      public mark(): java.nio.ShortBuffer
+      public reset(): java.nio.ShortBuffer
+      public clear(): java.nio.ShortBuffer
+      public flip(): java.nio.ShortBuffer
+      public rewind(): java.nio.ShortBuffer
       public abstract compact(): java.nio.ShortBuffer
       public abstract isDirect(): boolean
       public toString(): java.lang.String

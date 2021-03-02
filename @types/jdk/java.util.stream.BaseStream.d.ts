@@ -3,7 +3,6 @@ declare namespace java {
     namespace stream {
 
       interface BaseStream<T,S extends java.util.stream.BaseStream<T,S>> extends java.lang.AutoCloseable {
-
         iterator(): java.util.Iterator<T>
         spliterator(): java.util.Spliterator<T>
         isParallel(): boolean

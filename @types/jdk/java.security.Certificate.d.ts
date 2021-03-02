@@ -2,7 +2,6 @@ declare namespace java {
   namespace security {
 
     interface Certificate {
-
       getGuarantor(): java.security.Principal
       getPrincipal(): java.security.Principal
       getPublicKey(): java.security.PublicKey

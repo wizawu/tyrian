@@ -3,7 +3,6 @@ declare namespace javax {
     namespace xpath {
 
       interface XPathEvaluationResult<T> {
-
         type(): javax.xml.xpath.XPathEvaluationResult$XPathResultType
         value(): T
       }

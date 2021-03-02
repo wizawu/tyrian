@@ -3,7 +3,6 @@ declare namespace java {
     namespace reflect {
 
       class Modifier {
-
         public static readonly PUBLIC: int
         public static readonly PRIVATE: int
         public static readonly PROTECTED: int

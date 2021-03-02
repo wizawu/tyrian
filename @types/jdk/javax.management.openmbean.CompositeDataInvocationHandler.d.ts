@@ -3,7 +3,6 @@ declare namespace javax {
     namespace openmbean {
 
       class CompositeDataInvocationHandler implements java.lang.reflect.InvocationHandler {
-
         static readonly $assertionsDisabled: boolean
         public constructor(arg0: javax.management.openmbean.CompositeData)
         constructor(arg0: javax.management.openmbean.CompositeData, arg1: com.sun.jmx.mbeanserver.MXBeanLookup)

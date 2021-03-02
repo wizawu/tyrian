@@ -3,7 +3,6 @@ declare namespace javax {
     namespace sampled {
 
       class AudioInputStream extends java.io.InputStream {
-
         protected format: javax.sound.sampled.AudioFormat
         protected frameLength: long
         protected frameSize: int

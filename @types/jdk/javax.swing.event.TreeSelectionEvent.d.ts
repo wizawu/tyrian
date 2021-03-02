@@ -3,7 +3,6 @@ declare namespace javax {
     namespace event {
 
       class TreeSelectionEvent extends java.util.EventObject {
-
         protected paths: javax.swing.tree.TreePath[]
         protected areNew: boolean[]
         protected oldLeadSelectionPath: javax.swing.tree.TreePath

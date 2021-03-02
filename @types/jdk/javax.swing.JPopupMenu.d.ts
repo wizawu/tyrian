@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class JPopupMenu extends javax.swing.JComponent implements javax.accessibility.Accessible, javax.swing.MenuElement {
-
       static popupPostionFixDisabled: boolean
       invoker: java.awt.Component
       popup: javax.swing.Popup

@@ -3,7 +3,6 @@ declare namespace java {
     namespace prefs {
 
       abstract class AbstractPreferences extends java.util.prefs.Preferences {
-
         static readonly CODE_POINT_U0000: int
         readonly parent: java.util.prefs.AbstractPreferences
         protected newNode: boolean
@@ -27,7 +26,7 @@ declare namespace java {
         public getByteArray(arg0: java.lang.String, arg1: byte[]): byte[]
         public keys(): java.lang.String[]
         public childrenNames(): java.lang.String[]
-        protected readonly cachedChildren(): java.util.prefs.AbstractPreferences[]
+        protected cachedChildren(): java.util.prefs.AbstractPreferences[]
         public parent(): java.util.prefs.Preferences
         public node(arg0: java.lang.String): java.util.prefs.Preferences
         public nodeExists(arg0: java.lang.String): boolean

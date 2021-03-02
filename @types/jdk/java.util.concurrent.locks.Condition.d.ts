@@ -4,7 +4,6 @@ declare namespace java {
       namespace locks {
 
         interface Condition {
-
           await(): void
           awaitUninterruptibly(): void
           awaitNanos(arg0: long): long

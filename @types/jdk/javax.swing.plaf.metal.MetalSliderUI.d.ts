@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class MetalSliderUI extends javax.swing.plaf.basic.BasicSliderUI {
-
           protected readonly TICK_BUFFER: int
           protected filledSlider: boolean
           protected static thumbColor: java.awt.Color

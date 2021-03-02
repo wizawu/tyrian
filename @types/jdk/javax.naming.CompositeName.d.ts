@@ -2,7 +2,6 @@ declare namespace javax {
   namespace naming {
 
     class CompositeName implements javax.naming.Name {
-
       protected constructor(arg0: java.util.Enumeration<java.lang.String>)
       public constructor(arg0: java.lang.String)
       public constructor()

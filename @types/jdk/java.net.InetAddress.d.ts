@@ -2,7 +2,6 @@ declare namespace java {
   namespace net {
 
     class InetAddress implements java.io.Serializable {
-
       static readonly PREFER_IPV4_VALUE: int
       static readonly PREFER_IPV6_VALUE: int
       static readonly PREFER_SYSTEM_VALUE: int

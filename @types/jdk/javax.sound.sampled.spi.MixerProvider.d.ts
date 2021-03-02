@@ -4,7 +4,6 @@ declare namespace javax {
       namespace spi {
 
         abstract class MixerProvider {
-
           public constructor()
           public isMixerSupported(arg0: javax.sound.sampled.Mixer$Info): boolean
           public abstract getMixerInfo(): javax.sound.sampled.Mixer$Info[]

@@ -3,7 +3,6 @@ declare namespace org {
     namespace sax {
 
       class InputSource {
-
         public constructor()
         public constructor(arg0: java.lang.String)
         public constructor(arg0: java.io.InputStream)

@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicViewportUI extends javax.swing.plaf.ViewportUI {
-
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public installUI(arg0: javax.swing.JComponent): void

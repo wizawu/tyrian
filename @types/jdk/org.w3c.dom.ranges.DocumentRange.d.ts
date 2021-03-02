@@ -3,8 +3,11 @@ declare namespace org {
     namespace dom {
       namespace ranges {
 
-        interface DocumentRange {
+        interface DocumentRange$$lambda {
+          (): org.w3c.dom.ranges.Range
+        }
 
+        interface DocumentRange {
           createRange(): org.w3c.dom.ranges.Range
         }
 

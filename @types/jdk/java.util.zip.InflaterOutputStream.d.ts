@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class InflaterOutputStream extends java.io.FilterOutputStream {
-
         protected readonly inf: java.util.zip.Inflater
         protected readonly buf: byte[]
         public constructor(arg0: java.io.OutputStream)

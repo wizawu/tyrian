@@ -2,7 +2,6 @@ declare namespace java {
   namespace io {
 
     class ByteArrayInputStream extends java.io.InputStream {
-
       protected buf: byte[]
       protected pos: int
       protected mark: int

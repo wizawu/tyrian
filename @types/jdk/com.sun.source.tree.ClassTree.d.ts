@@ -4,7 +4,6 @@ declare namespace com {
       namespace tree {
 
         interface ClassTree extends com.sun.source.tree.StatementTree {
-
           getModifiers(): com.sun.source.tree.ModifiersTree
           getSimpleName(): javax.lang.model.element.Name
           getTypeParameters(): java.util.List<com.sun.source.tree.TypeParameterTree>

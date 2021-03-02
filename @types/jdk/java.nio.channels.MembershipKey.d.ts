@@ -3,7 +3,6 @@ declare namespace java {
     namespace channels {
 
       abstract class MembershipKey {
-
         protected constructor()
         public abstract isValid(): boolean
         public abstract drop(): void

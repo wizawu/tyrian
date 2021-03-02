@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       abstract class DropTargetAdapter implements java.awt.dnd.DropTargetListener {
-
         public constructor()
         public dragEnter(arg0: java.awt.dnd.DropTargetDragEvent): void
         public dragOver(arg0: java.awt.dnd.DropTargetDragEvent): void

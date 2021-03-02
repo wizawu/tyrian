@@ -3,12 +3,11 @@ declare namespace java {
     namespace concurrent {
 
       abstract class RecursiveAction extends java.util.concurrent.ForkJoinTask<java.lang.Void> {
-
         public constructor()
         protected abstract compute(): void
-        public readonly getRawResult(): java.lang.Void
-        protected readonly setRawResult(arg0: java.lang.Void): void
-        protected readonly exec(): boolean
+        public getRawResult(): java.lang.Void
+        protected setRawResult(arg0: java.lang.Void): void
+        protected exec(): boolean
         protected setRawResult(arg0: java.lang.Object): void
         public getRawResult(): java.lang.Object
       }

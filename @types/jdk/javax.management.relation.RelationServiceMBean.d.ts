@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       interface RelationServiceMBean {
-
         isActive(): void
         getPurgeFlag(): boolean
         setPurgeFlag(arg0: boolean): void

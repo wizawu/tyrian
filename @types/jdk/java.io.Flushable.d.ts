@@ -1,8 +1,11 @@
 declare namespace java {
   namespace io {
 
-    interface Flushable {
+    interface Flushable$$lambda {
+      (): void
+    }
 
+    interface Flushable {
       flush(): void
     }
 

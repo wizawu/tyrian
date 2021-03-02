@@ -4,7 +4,6 @@ declare namespace java {
       namespace attribute {
 
         class AclEntry$Builder {
-
           static readonly $assertionsDisabled: boolean
           public build(): java.nio.file.attribute.AclEntry
           public setType(arg0: java.nio.file.attribute.AclEntryType): java.nio.file.attribute.AclEntry$Builder

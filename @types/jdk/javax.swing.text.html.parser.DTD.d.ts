@@ -5,7 +5,6 @@ declare namespace javax {
         namespace parser {
 
           class DTD implements javax.swing.text.html.parser.DTDConstants {
-
             public name: java.lang.String
             public elements: java.util.Vector<javax.swing.text.html.parser.Element>
             public elementHash: java.util.Hashtable<java.lang.String,javax.swing.text.html.parser.Element>

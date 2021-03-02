@@ -2,7 +2,6 @@ declare namespace javax {
   namespace accessibility {
 
     interface AccessibleTable {
-
       getAccessibleCaption(): javax.accessibility.Accessible
       setAccessibleCaption(arg0: javax.accessibility.Accessible): void
       getAccessibleSummary(): javax.accessibility.Accessible

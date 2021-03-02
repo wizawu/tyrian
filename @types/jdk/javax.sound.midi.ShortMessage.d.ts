@@ -3,7 +3,6 @@ declare namespace javax {
     namespace midi {
 
       class ShortMessage extends javax.sound.midi.MidiMessage {
-
         public static readonly MIDI_TIME_CODE: int
         public static readonly SONG_POSITION_POINTER: int
         public static readonly SONG_SELECT: int
@@ -35,7 +34,7 @@ declare namespace javax {
         public getData1(): int
         public getData2(): int
         public clone(): java.lang.Object
-        protected readonly getDataLength(arg0: int): int
+        protected getDataLength(arg0: int): int
       }
 
     }

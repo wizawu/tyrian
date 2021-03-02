@@ -4,7 +4,6 @@ declare namespace org {
       namespace ext {
 
         interface LexicalHandler {
-
           startDTD(arg0: java.lang.String, arg1: java.lang.String, arg2: java.lang.String): void
           endDTD(): void
           startEntity(arg0: java.lang.String): void

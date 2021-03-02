@@ -3,7 +3,6 @@ declare namespace javax {
     namespace relation {
 
       class RelationNotification extends javax.management.Notification {
-
         public static readonly RELATION_BASIC_CREATION: java.lang.String
         public static readonly RELATION_MBEAN_CREATION: java.lang.String
         public static readonly RELATION_BASIC_UPDATE: java.lang.String

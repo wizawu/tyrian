@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace jshell {
 
     class VarSnippet extends jdk.jshell.DeclarationSnippet {
-
       readonly typeName: java.lang.String
       readonly fullTypeName: java.lang.String
       readonly anonymousClasses: java.util.Set<java.lang.String>

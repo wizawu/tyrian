@@ -3,7 +3,6 @@ declare namespace java {
     namespace zip {
 
       class CRC32 implements java.util.zip.Checksum {
-
         static readonly $assertionsDisabled: boolean
         public constructor()
         public update(arg0: int): void

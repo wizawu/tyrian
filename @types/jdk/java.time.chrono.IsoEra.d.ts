@@ -3,7 +3,6 @@ declare namespace java {
     namespace chrono {
 
       class IsoEra extends java.lang.Enum<java.time.chrono.IsoEra> implements java.time.chrono.Era {
-
         public static readonly BCE: java.time.chrono.IsoEra
         public static readonly CE: java.time.chrono.IsoEra
         public static values(): java.time.chrono.IsoEra[]

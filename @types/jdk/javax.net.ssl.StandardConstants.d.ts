@@ -3,7 +3,6 @@ declare namespace javax {
     namespace ssl {
 
       class StandardConstants {
-
         public static readonly SNI_HOST_NAME: int
       }
 

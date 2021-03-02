@@ -3,7 +3,6 @@ declare namespace java {
     namespace temporal {
 
       class ChronoUnit extends java.lang.Enum<java.time.temporal.ChronoUnit> implements java.time.temporal.TemporalUnit {
-
         public static readonly NANOS: java.time.temporal.ChronoUnit
         public static readonly MICROS: java.time.temporal.ChronoUnit
         public static readonly MILLIS: java.time.temporal.ChronoUnit

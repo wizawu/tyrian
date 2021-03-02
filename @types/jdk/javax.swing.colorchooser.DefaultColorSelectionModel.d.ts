@@ -3,7 +3,6 @@ declare namespace javax {
     namespace colorchooser {
 
       class DefaultColorSelectionModel implements javax.swing.colorchooser.ColorSelectionModel, java.io.Serializable {
-
         protected changeEvent: javax.swing.event.ChangeEvent
         protected listenerList: javax.swing.event.EventListenerList
         public constructor()

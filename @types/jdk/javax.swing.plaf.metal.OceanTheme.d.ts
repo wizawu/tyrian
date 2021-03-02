@@ -4,7 +4,6 @@ declare namespace javax {
       namespace metal {
 
         class OceanTheme extends javax.swing.plaf.metal.DefaultMetalTheme {
-
           public constructor()
           public addCustomEntriesToTable(arg0: javax.swing.UIDefaults): void
           isSystemTheme(): boolean

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
 
     class ButtonGroup implements java.io.Serializable {
-
       protected buttons: java.util.Vector<javax.swing.AbstractButton>
       selection: javax.swing.ButtonModel
       public constructor()

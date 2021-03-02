@@ -3,7 +3,6 @@ declare namespace java {
     namespace event {
 
       interface ComponentListener extends java.util.EventListener {
-
         componentResized(arg0: java.awt.event.ComponentEvent): void
         componentMoved(arg0: java.awt.event.ComponentEvent): void
         componentShown(arg0: java.awt.event.ComponentEvent): void

@@ -3,7 +3,6 @@ declare namespace java {
     namespace format {
 
       class SignStyle extends java.lang.Enum<java.time.format.SignStyle> {
-
         public static readonly NORMAL: java.time.format.SignStyle
         public static readonly ALWAYS: java.time.format.SignStyle
         public static readonly NEVER: java.time.format.SignStyle

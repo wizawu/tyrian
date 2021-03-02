@@ -3,7 +3,6 @@ declare namespace java {
     namespace http {
 
       abstract class HttpClient {
-
         protected constructor()
         public static newHttpClient(): java.net.http.HttpClient
         public static newBuilder(): java.net.http.HttpClient$Builder

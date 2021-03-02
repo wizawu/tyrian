@@ -3,7 +3,6 @@ declare namespace java {
     namespace module {
 
       class ModuleDescriptor$Builder {
-
         readonly name: java.lang.String
         readonly strict: boolean
         readonly modifiers: java.util.Set<java.lang.module.ModuleDescriptor$Modifier>

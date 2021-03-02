@@ -4,7 +4,6 @@ declare namespace javax {
       namespace basic {
 
         class BasicButtonUI extends javax.swing.plaf.ButtonUI {
-
           protected defaultTextIconGap: int
           protected defaultTextShiftOffset: int
           public constructor()

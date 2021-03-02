@@ -3,7 +3,6 @@ declare namespace java {
     namespace regex {
 
       class Pattern implements java.io.Serializable {
-
         public static readonly UNIX_LINES: int
         public static readonly CASE_INSENSITIVE: int
         public static readonly COMMENTS: int

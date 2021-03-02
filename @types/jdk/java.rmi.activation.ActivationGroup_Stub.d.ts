@@ -3,7 +3,6 @@ declare namespace java {
     namespace activation {
 
       class ActivationGroup_Stub extends java.rmi.server.RemoteStub implements java.rmi.activation.ActivationInstantiator, java.rmi.Remote {
-
         static class$java$rmi$activation$ActivationInstantiator: java.lang.Class
         static class$java$rmi$activation$ActivationID: java.lang.Class
         static class$java$rmi$activation$ActivationDesc: java.lang.Class

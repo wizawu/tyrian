@@ -3,7 +3,6 @@ declare namespace java {
     namespace zone {
 
       class ZoneOffsetTransitionRule implements java.io.Serializable {
-
         static readonly $assertionsDisabled: boolean
         public static of(arg0: java.time.Month, arg1: int, arg2: java.time.DayOfWeek, arg3: java.time.LocalTime, arg4: boolean, arg5: java.time.zone.ZoneOffsetTransitionRule$TimeDefinition, arg6: java.time.ZoneOffset, arg7: java.time.ZoneOffset, arg8: java.time.ZoneOffset): java.time.zone.ZoneOffsetTransitionRule
         constructor(arg0: java.time.Month, arg1: int, arg2: java.time.DayOfWeek, arg3: java.time.LocalTime, arg4: boolean, arg5: java.time.zone.ZoneOffsetTransitionRule$TimeDefinition, arg6: java.time.ZoneOffset, arg7: java.time.ZoneOffset, arg8: java.time.ZoneOffset)

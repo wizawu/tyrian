@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
 
     class AlphaComposite implements java.awt.Composite {
-
       public static readonly CLEAR: int
       public static readonly SRC: int
       public static readonly DST: int

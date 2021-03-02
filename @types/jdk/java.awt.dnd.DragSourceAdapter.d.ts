@@ -3,7 +3,6 @@ declare namespace java {
     namespace dnd {
 
       abstract class DragSourceAdapter implements java.awt.dnd.DragSourceListener, java.awt.dnd.DragSourceMotionListener {
-
         public constructor()
         public dragEnter(arg0: java.awt.dnd.DragSourceDragEvent): void
         public dragOver(arg0: java.awt.dnd.DragSourceDragEvent): void

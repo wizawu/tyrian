@@ -2,7 +2,7 @@ import chalk from "chalk"
 import fs from "fs"
 import path from "path"
 
-import { qualifiedName, safeNamespace, memberModifier } from "./common"
+import { isLambda, qualifiedName, safeNamespace, memberModifier, typeAlias } from "./common"
 
 const LambdaSuffix = "$$lambda"
 
@@ -113,7 +113,7 @@ function declareMethod(method: MethodDeclarationContext, isClass = false): strin
   result += method.Identifier().getText()
   result += typeArgumentsToString(method.typeArguments())
   result += "(" + methodArgumentsToString(method.methodArguments()) + ")"
-  result += ": " + typeToString(method.type())
+  result += ": " + typeToString(method.type(), true)
   return result
 }
 
@@ -166,8 +166,14 @@ function typeArgumentToString(typeArg: TypeArgumentContext): string {
   }
 }
 
-function typeToString(type: TypeContext): string {
-  return type.subType() ? "unknown" : qualifiedName(type, true) + typeArgumentsToString(type.typeArguments())
+function typeToString(type: TypeContext, alias = false): string {
+  if (type.subType()) {
+    return "unknown"
+  } else if (alias) {
+    return typeAlias(qualifiedName(type, true))[0] + typeArgumentsToString(type.typeArguments())
+  } else {
+    return qualifiedName(type, true) + typeArgumentsToString(type.typeArguments())
+  }
 }
 
 function declareNamespaces(type: TypeContext): [string, string] {
@@ -178,19 +184,4 @@ function declareNamespaces(type: TypeContext): [string, string] {
     result[1] += "}\n"
   }
   return result[0] ? ["declare " + result[0], result[1]] : result
-}
-
-function isLambda(stat: InterfaceStat, type: TypeContext): boolean {
-  let count = 0
-  const queue = [qualifiedName(type)]
-  for (let i = 0; i < queue.length; i++) {
-    const current = queue[i]
-    if (stat[current]) {
-      count += stat[current][0]
-      stat[current].slice(1).forEach(it => {
-        if (queue.indexOf(it) < 0) queue.push(it)
-      })
-    }
-  }
-  return count === 1
 }

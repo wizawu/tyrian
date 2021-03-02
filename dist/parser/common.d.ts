@@ -1,23 +1,5 @@
-export declare const TypeAlias: {
-    boolean: string[];
-    byte: string[];
-    char: string[];
-    double: string[];
-    float: string[];
-    int: string[];
-    long: string[];
-    short: string[];
-    "java.lang.Boolean": string[];
-    "java.lang.Byte": string[];
-    "java.lang.Character": string[];
-    "java.lang.Double": string[];
-    "java.lang.Float": string[];
-    "java.lang.Integer": string[];
-    "java.lang.Long": string[];
-    "java.lang.Object": string[];
-    "java.lang.Short": string[];
-    "java.lang.String": string[];
-};
+export declare function typeAlias(type: string): string[];
 export declare function memberModifier(modifier: string, isField?: boolean): string;
 export declare function safeNamespace(namespace: string): string;
 export declare function qualifiedName(type: TypeContext, safe?: boolean): string;
+export declare function isLambda(stat: InterfaceStat, type: TypeContext): boolean;

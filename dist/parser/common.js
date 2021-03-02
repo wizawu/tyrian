@@ -7,27 +7,31 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
     return r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.qualifiedName = exports.safeNamespace = exports.memberModifier = exports.TypeAlias = void 0;
-exports.TypeAlias = {
-    "boolean": ["boolean", "java.lang.Boolean"],
-    "byte": ["number", "java.lang.Byte"],
-    "char": ["string", "java.lang.Character"],
-    "double": ["number", "java.lang.Double"],
-    "float": ["number", "java.lang.Float"],
-    "int": ["number", "java.lang.Integer"],
-    "long": ["number", "java.lang.Long"],
-    "short": ["number", "java.lang.Short"],
-    "java.lang.Boolean": ["boolean", "java.lang.Boolean"],
-    "java.lang.Byte": ["number", "java.lang.Byte"],
-    "java.lang.Character": ["string", "java.lang.Character"],
-    "java.lang.Double": ["number", "java.lang.Double"],
-    "java.lang.Float": ["number", "java.lang.Float"],
-    "java.lang.Integer": ["number", "java.lang.Integer"],
-    "java.lang.Long": ["number", "java.lang.Long"],
-    "java.lang.Object": ["java.lang.Object", "any"],
-    "java.lang.Short": ["number", "java.lang.Short"],
-    "java.lang.String": ["java.lang.String", "string"],
-};
+exports.isLambda = exports.qualifiedName = exports.safeNamespace = exports.memberModifier = exports.typeAlias = void 0;
+function typeAlias(type) {
+    switch (type) {
+        case "boolean": return ["boolean", "java.lang.Boolean"];
+        case "byte": return ["number", "java.lang.Byte"];
+        case "char": return ["string", "java.lang.Character"];
+        case "double": return ["number", "java.lang.Double"];
+        case "float": return ["number", "java.lang.Float"];
+        case "int": return ["number", "java.lang.Integer"];
+        case "long": return ["number", "java.lang.Long"];
+        case "short": return ["number", "java.lang.Short"];
+        case "java.lang.Boolean": return ["boolean", "java.lang.Boolean"];
+        case "java.lang.Byte": return ["number", "java.lang.Byte"];
+        case "java.lang.Character": return ["string", "java.lang.Character"];
+        case "java.lang.Double": return ["number", "java.lang.Double"];
+        case "java.lang.Float": return ["number", "java.lang.Float"];
+        case "java.lang.Integer": return ["number", "java.lang.Integer"];
+        case "java.lang.Long": return ["number", "java.lang.Long"];
+        case "java.lang.Object": return ["java.lang.Object", "any"];
+        case "java.lang.Short": return ["number", "java.lang.Short"];
+        case "java.lang.String": return ["java.lang.String", "string"];
+        default: return [type];
+    }
+}
+exports.typeAlias = typeAlias;
 function memberModifier(modifier, isField) {
     if (isField === void 0) { isField = false; }
     if (modifier === "abstract")
@@ -63,3 +67,19 @@ function qualifiedName(type, safe) {
     }
 }
 exports.qualifiedName = qualifiedName;
+function isLambda(stat, type) {
+    var count = 0;
+    var bfs = [qualifiedName(type)];
+    for (var i = 0; i < bfs.length; i++) {
+        var current = bfs[i];
+        if (stat[current]) {
+            count += stat[current][0];
+            stat[current].slice(1).forEach(function (it) {
+                if (bfs.indexOf(it) < 0)
+                    bfs.push(it);
+            });
+        }
+    }
+    return count === 1;
+}
+exports.isLambda = isLambda;

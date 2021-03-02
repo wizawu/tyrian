@@ -17,6 +17,9 @@ commander_1.program.command("env")
         process.exit(errors_1.code.BROKEN_ENV);
     }
 });
+commander_1.program.command("new")
+    .description("create package.json and tsconfig.json under current path")
+    .action(function () { return commands_1.default.init(); });
 commander_1.program.command("install")
     .description("install dependencies of current project")
     .option("-D", "do not generate .d.ts for Java libraries", false)

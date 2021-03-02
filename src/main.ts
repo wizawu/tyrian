@@ -20,6 +20,10 @@ program.command("env")
     }
   })
 
+program.command("new")
+  .description("create package.json and tsconfig.json under current path")
+  .action(() => commands.init())
+
 program.command("install")
   .description("install dependencies of current project")
   .option("-D", "do not generate .d.ts for Java libraries", false)

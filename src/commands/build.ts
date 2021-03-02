@@ -3,6 +3,13 @@ import webpack, { Stats } from "webpack"
 
 import { code as ErrorCode } from "../errors"
 
+export const compilerOptions = {
+  typeRoots: [
+    path.join(__dirname, "..", "..", "@types"),
+    path.join(process.cwd(), "lib"),
+  ]
+}
+
 export default function (entries: string[], outDir: string, watch: boolean): void {
   const compiler = getCompiler(entries, outDir)
   const printStats = (stats?: Stats) => console.log(stats?.toString({
@@ -56,12 +63,7 @@ function getCompiler(entries: string[], outDir: string) {
           loader: "ts-loader",
           options: {
             transpileOnly: false,
-            compilerOptions: {
-              typeRoots: [
-                path.join(__dirname, "..", "..", "@types"),
-                path.join(process.cwd(), "lib"),
-              ]
-            }
+            compilerOptions: compilerOptions,
           },
         }]
       }]

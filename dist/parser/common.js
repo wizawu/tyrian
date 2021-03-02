@@ -1,10 +1,8 @@
 "use strict";
-var __spreadArrays = (this && this.__spreadArrays) || function () {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
+var __spreadArray = (this && this.__spreadArray) || function (to, from) {
+    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+        to[j] = from[i];
+    return to;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isLambda = exports.qualifiedName = exports.safeNamespace = exports.memberModifier = exports.typeAlias = void 0;
@@ -60,7 +58,7 @@ function qualifiedName(type, safe) {
     if (safe === void 0) { safe = false; }
     if (safe) {
         var packages = ((_a = type.packageName()) === null || _a === void 0 ? void 0 : _a.Identifier().map(function (it) { return safeNamespace(it.getText()); })) || [];
-        return __spreadArrays(packages, [type.Identifier().getText()]).join(".");
+        return __spreadArray(__spreadArray([], packages), [type.Identifier().getText()]).join(".");
     }
     else {
         return (((_b = type.packageName()) === null || _b === void 0 ? void 0 : _b.getText().concat(".")) || "") + type.Identifier().getText();

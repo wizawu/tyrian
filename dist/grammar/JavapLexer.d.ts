@@ -1,6 +1,5 @@
-export var JavapLexer: typeof JavapLexer;
-declare function JavapLexer(input: any): this;
-declare class JavapLexer {
+export function JavapLexer(input: any): this;
+export class JavapLexer {
     constructor(input: any);
     _interp: any;
     constructor: typeof JavapLexer;
@@ -12,7 +11,7 @@ declare class JavapLexer {
     ruleNames: string[];
     grammarFileName: string;
 }
-declare namespace JavapLexer {
+export namespace JavapLexer {
     const EOF: number;
     const T__0: number;
     const T__1: number;
@@ -51,4 +50,3 @@ declare namespace JavapLexer {
     const Identifier: number;
     const WS: number;
 }
-export {};

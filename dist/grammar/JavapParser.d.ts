@@ -1,6 +1,5 @@
-export var JavapParser: typeof JavapParser;
-declare function JavapParser(input: any): this;
-declare class JavapParser {
+export function JavapParser(input: any): this;
+export class JavapParser {
     constructor(input: any);
     _interp: any;
     ruleNames: string[];
@@ -35,7 +34,7 @@ declare class JavapParser {
     methodArguments(): MethodArgumentsContext;
     arrayBrackets(): ArrayBracketsContext;
 }
-declare namespace JavapParser {
+export namespace JavapParser {
     export const EOF: number;
     export const T__0: number;
     export const T__1: number;

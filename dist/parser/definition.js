@@ -1,10 +1,8 @@
 "use strict";
-var __spreadArrays = (this && this.__spreadArrays) || function () {
-    for (var s = 0, i = 0, il = arguments.length; i < il; i++) s += arguments[i].length;
-    for (var r = Array(s), k = 0, i = 0; i < il; i++)
-        for (var a = arguments[i], j = 0, jl = a.length; j < jl; j++, k++)
-            r[k] = a[j];
-    return r;
+var __spreadArray = (this && this.__spreadArray) || function (to, from) {
+    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
+        to[j] = from[i];
+    return to;
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -41,8 +39,8 @@ function generate(context, ifs, typeRoot) {
             frontBuffer.push(modifier + "class " + header(type, extend && [extend], implement === null || implement === void 0 ? void 0 : implement.type()) + " {");
             endBuffer.push("}\n");
             // generate members
-            for (var _i = 0, _a = classBody.classMember(); _i < _a.length; _i++) {
-                var member = _a[_i];
+            for (var _c = 0, _d = classBody.classMember(); _c < _d.length; _c++) {
+                var member = _d[_c];
                 if (member.constructorDeclaration()) {
                     frontBuffer.push("  " + declareConstructor(member.constructorDeclaration(), ifs));
                 }
@@ -82,8 +80,8 @@ function generate(context, ifs, typeRoot) {
             frontBuffer.push("interface " + header(type_1, extend === null || extend === void 0 ? void 0 : extend.type()) + " {");
             endBuffer.push("}\n");
             // generate members
-            for (var _b = 0, _c = interfaceBody.interfaceMember(); _b < _c.length; _b++) {
-                var member = _c[_b];
+            for (var _e = 0, _f = interfaceBody.interfaceMember(); _e < _f.length; _e++) {
+                var member = _f[_e];
                 if (member.fieldDeclaration()) {
                     frontBuffer.push("  " + declareField(member.fieldDeclaration()));
                 }
@@ -97,7 +95,7 @@ function generate(context, ifs, typeRoot) {
             return "continue";
         }
         if (filename) {
-            var content = __spreadArrays(frontBuffer, endBuffer.reverse()).join("\n");
+            var content = __spreadArray(__spreadArray([], frontBuffer), endBuffer.reverse()).join("\n");
             fs_1.default.writeFileSync(path_1.default.join(typeRoot, filename), content + lambdaBuffer);
             console.debug(chalk_1.default.green("Generated " + filename));
             references.push(filename);

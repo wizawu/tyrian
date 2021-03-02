@@ -1,6 +1,5 @@
-export var JavapListener: typeof JavapListener;
-declare function JavapListener(): this;
-declare class JavapListener {
+export function JavapListener(): this;
+export class JavapListener {
     constructor: typeof JavapListener;
     enterCompilationUnit(ctx: any): void;
     exitCompilationUnit(ctx: any): void;
@@ -53,4 +52,3 @@ declare class JavapListener {
     enterArrayBrackets(ctx: any): void;
     exitArrayBrackets(ctx: any): void;
 }
-export {};

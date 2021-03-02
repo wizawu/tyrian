@@ -1,6 +1,5 @@
-export var JavapVisitor: typeof JavapVisitor;
-declare function JavapVisitor(): this;
-declare class JavapVisitor {
+export function JavapVisitor(): this;
+export class JavapVisitor {
     constructor: typeof JavapVisitor;
     visitCompilationUnit(ctx: any): any;
     visitSourceDeclaration(ctx: any): any;
@@ -28,4 +27,3 @@ declare class JavapVisitor {
     visitMethodArguments(ctx: any): any;
     visitArrayBrackets(ctx: any): any;
 }
-export {};

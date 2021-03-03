@@ -3,7 +3,6 @@ import path from "path"
 import { program } from "commander"
 
 import commands from "./commands"
-import { code as ErrorCode } from "./errors"
 
 const { name, version } = JSON.parse(fs.readFileSync(
   path.resolve(__dirname, "..", "package.json"),
@@ -12,16 +11,8 @@ const { name, version } = JSON.parse(fs.readFileSync(
 
 program.name(name).version(version)
 
-program.command("env")
-  .description("check all prerequisites of " + name)
-  .action(() => {
-    if (!commands.env()) {
-      process.exit(ErrorCode.BROKEN_ENV)
-    }
-  })
-
-program.command("new")
-  .description("create package.json and tsconfig.json under current path")
+program.command("init")
+  .description("initialize a new project in the current directory")
   .action(() => commands.init())
 
 program.command("install")

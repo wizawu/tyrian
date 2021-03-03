@@ -3,4 +3,5 @@ export const code = {
   UNKNOWN_RUNTIME: 2,
   INVALID_OPTION: 3,
   BUILD_ERROR: 4,
+  INIT_CONFLICT: 5,
 }

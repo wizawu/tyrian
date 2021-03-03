@@ -1,11 +1,11 @@
-dist: trusty
-language: node_js
-node_js:
-  - stable
+dist: bionic
+language: java
 jdk:
   - openjdk11
-before_script:
-  - jdk_switcher use openjdk11
+node_js:
+  - "14"
 script:
   - npm install
+  - npm run lint
+  - npm run build
   - npm run test

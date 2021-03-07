@@ -27,6 +27,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.checkRuntime = void 0;
 var chalk_1 = __importDefault(require("chalk"));
 var fs_1 = __importDefault(require("fs"));
 var redent_1 = __importDefault(require("redent"));
@@ -35,6 +36,10 @@ var utils = __importStar(require("../utils"));
 var errors_1 = require("../errors");
 function default_1(output, args, _a) {
     var inspectBrk = _a.inspectBrk, watch = _a.watch;
+    if (!fs_1.default.existsSync(output)) {
+        console.error(chalk_1.default.red("The file '" + output + "' does not exist."));
+        process.exit(errors_1.code.INVALID_ARGUMENT);
+    }
     var _b = checkRuntime(), type = _b[0], runner = _b[1];
     var classPaths = utils.listFilesByExt("lib", ".jar");
     var run = function () {
@@ -86,3 +91,4 @@ function checkRuntime() {
         process.exit(errors_1.code.UNKNOWN_RUNTIME);
     }
 }
+exports.checkRuntime = checkRuntime;

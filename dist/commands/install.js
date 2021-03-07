@@ -63,6 +63,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+var chalk_1 = __importDefault(require("chalk"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var redent_1 = __importDefault(require("redent"));
@@ -72,6 +73,7 @@ var child_process_1 = require("child_process");
 var parser = __importStar(require("../parser"));
 var utils = __importStar(require("../utils"));
 var interfaces_json_1 = __importDefault(require("../jdk/interfaces.json"));
+var errors_1 = require("../errors");
 function default_1(tsDefinition) {
     return __awaiter(this, void 0, void 0, function () {
         var jars, _a, _b, _c;
@@ -79,14 +81,8 @@ function default_1(tsDefinition) {
             switch (_d.label) {
                 case 0:
                     if (!fs_1.default.existsSync("package.json")) {
-                        fs_1.default.writeFileSync("package.json", JSON.stringify({
-                            dependencies: {},
-                            mvnDependencies: {},
-                            runtime: {
-                                graaljs: "/graalvm/languages/js/bin/node",
-                                nashorn: "/openjdk/bin/jjs",
-                            }
-                        }, null, 2));
+                        console.error(chalk_1.default.red("Cannot find package.json."));
+                        process.exit(errors_1.code.PROJECT_NOT_FOUND);
                     }
                     npmInstall();
                     gradleInstall();

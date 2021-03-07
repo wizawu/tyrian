@@ -31,7 +31,7 @@ exports.listFilesByExt = listFilesByExt;
 function javap(classPaths, classList) {
     var child = child_process_1.spawnSync(process.env.JAVAP || path_1.default.join(locateJavaBin(), "javap"), __spreadArray(["-package", "-cp", ":" + classPaths.join(":")], classList));
     if (child.status === 0) {
-        return child.stdout;
+        return child.stdout.toString();
     }
     else {
         console.error(child.stderr.toString());

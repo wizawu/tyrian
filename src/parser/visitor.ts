@@ -231,7 +231,7 @@ function memberModifier(modifier: string, isField = false): string {
 }
 
 // Append $ to namespace if it is a typescript keyword
-function safeNamespace(namespace: string): string {
+export function safeNamespace(namespace: string): string {
   const invalid = ["debugger", "enum", "export", "function", "in", "is"]
   return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$")
 }
@@ -245,7 +245,7 @@ export function qualifiedName(type: TypeContext, safe = false): string {
   }
 }
 
-function isLambda(stat: InterfaceStat, type: TypeContext): boolean {
+export function isLambda(stat: InterfaceStat, type: TypeContext): boolean {
   let count = 0
   const bfs = [qualifiedName(type)]
   for (let i = 0; i < bfs.length; i++) {

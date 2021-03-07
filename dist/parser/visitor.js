@@ -8,7 +8,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.qualifiedName = exports.generateTsDef = void 0;
+exports.isLambda = exports.qualifiedName = exports.safeNamespace = exports.generateTsDef = void 0;
 var chalk_1 = __importDefault(require("chalk"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
@@ -261,6 +261,7 @@ function safeNamespace(namespace) {
     var invalid = ["debugger", "enum", "export", "function", "in", "is"];
     return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$");
 }
+exports.safeNamespace = safeNamespace;
 function qualifiedName(type, safe) {
     var _a, _b;
     if (safe === void 0) { safe = false; }
@@ -288,3 +289,4 @@ function isLambda(stat, type) {
     }
     return count === 1;
 }
+exports.isLambda = isLambda;

@@ -122,7 +122,8 @@ function listLibClasses(jars) {
                     files = (_a.sent()).files;
                     Object.keys(files).forEach(function (it) {
                         if (it.endsWith(".class")) {
-                            classes[utils.qualifiedName(it)] = true;
+                            var key = it.replace(/(\$\d+)*\.class$/, "").replace(/\//g, ".");
+                            classes[key] = true;
                         }
                     });
                     _a.label = 3;

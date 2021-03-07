@@ -3,4 +3,5 @@ export declare const code: {
     UNKNOWN_RUNTIME: number;
     INVALID_OPTION: number;
     BUILD_ERROR: number;
+    INIT_CONFLICT: number;
 };

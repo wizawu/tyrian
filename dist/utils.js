@@ -8,7 +8,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.javap = exports.qualifiedName = exports.listFilesByExt = void 0;
+exports.javap = exports.listFilesByExt = void 0;
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var child_process_1 = require("child_process");
@@ -28,10 +28,6 @@ function listFilesByExt(dirname, ext) {
     }
 }
 exports.listFilesByExt = listFilesByExt;
-function qualifiedName(javaClass) {
-    return javaClass.replace(/(\$\d+)*\.class$/, "").replace(/\//g, ".");
-}
-exports.qualifiedName = qualifiedName;
 function javap(classPaths, classList) {
     var child = child_process_1.spawnSync(process.env.JAVAP || path_1.default.join(locateJavaBin(), "javap"), __spreadArray(["-package", "-cp", ":" + classPaths.join(":")], classList));
     if (child.status === 0) {

@@ -7,18 +7,10 @@ var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var commander_1 = require("commander");
 var commands_1 = __importDefault(require("./commands"));
-var errors_1 = require("./errors");
 var _a = JSON.parse(fs_1.default.readFileSync(path_1.default.resolve(__dirname, "..", "package.json"), "utf-8")), name = _a.name, version = _a.version;
 commander_1.program.name(name).version(version);
-commander_1.program.command("env")
-    .description("check all prerequisites of " + name)
-    .action(function () {
-    if (!commands_1.default.env()) {
-        process.exit(errors_1.code.BROKEN_ENV);
-    }
-});
-commander_1.program.command("new")
-    .description("create package.json and tsconfig.json under current path")
+commander_1.program.command("init")
+    .description("initialize a new project in the current directory")
     .action(function () { return commands_1.default.init(); });
 commander_1.program.command("install")
     .description("install dependencies of current project")

@@ -29,11 +29,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parse = void 0;
 var antlr4_1 = __importDefault(require("antlr4"));
-var definition = __importStar(require("./definition"));
-var JavapLexer_1 = require("../grammar/JavapLexer");
-var JavapParser_1 = require("../grammar/JavapParser");
+var visitor = __importStar(require("./visitor"));
+var JavapLexer_1 = require("./javap/JavapLexer");
+var JavapParser_1 = require("./javap/JavapParser");
 var utils_1 = require("../utils");
-var common_1 = require("./common");
 var PARSE_CHUNK = 500;
 function parse(classPaths, counter, classList, typeRoot) {
     var buffer = [];
@@ -55,18 +54,18 @@ function parse(classPaths, counter, classList, typeRoot) {
         .map(function (it) { return it.interfaceDeclaration(); }).filter(function (it) { return it; });
     for (var _i = 0, interfaces_1 = interfaces; _i < interfaces_1.length; _i++) {
         var it = interfaces_1[_i];
-        var className = common_1.qualifiedName(it.type());
+        var className = visitor.qualifiedName(it.type());
         var count = it.interfaceBody().interfaceMember()
             .filter(function (it) { return it.methodDeclaration(); }).length;
         if (it.typeList()) {
-            counter[className] = __spreadArray([count], it.typeList().type().map(function (it) { return common_1.qualifiedName(it); }));
+            counter[className] = __spreadArray([count], it.typeList().type().map(function (it) { return visitor.qualifiedName(it); }));
         }
         else {
             counter[className] = [count];
         }
     }
     if (typeRoot) {
-        return definition.generate(context, counter, typeRoot);
+        return visitor.generateTsDef(context, counter, typeRoot);
     }
     else {
         return true;

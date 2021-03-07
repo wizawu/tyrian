@@ -82,7 +82,7 @@ function default_1(tsDefinition) {
             switch (_d.label) {
                 case 0:
                     if (!fs_1.default.existsSync("package.json")) {
-                        console.error(chalk_1.default.red("Cannot find package.json."));
+                        console.error(chalk_1.default.red("'package.json' does not exist."));
                         process.exit(errors_1.code.PROJECT_NOT_FOUND);
                     }
                     npmInstall();

@@ -35,7 +35,7 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
   const entry = {}
   for (const src of entries) {
     const out = path.join(outDir, path.basename(src).replace(/(.ts|.tsx)$/, ".js"))
-    entry[out] = path.format({dir:".", name:path.relative("", src)})
+    entry[out] = path.format({ dir:".", name:path.relative("", src) })
   }
 
   return webpack({

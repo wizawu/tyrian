@@ -24,6 +24,7 @@
         "varsIgnorePattern": "T"
       }
     ],
+    "@typescript-eslint/no-var-requires": 0,
     "@typescript-eslint/triple-slash-reference": 0,
     "array-bracket-spacing": [
       "error",
@@ -46,6 +47,10 @@
         "args": "none",
         "varsIgnorePattern": "T"
       }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
     ],
     "quotes": [
       "error",

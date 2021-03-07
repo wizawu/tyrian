@@ -13,7 +13,7 @@ import { code as ErrorCode } from "../errors"
 
 export default async function (tsDefinition: boolean): Promise<void> {
   if (!fs.existsSync("package.json")) {
-    console.error(chalk.red("Cannot find package.json."))
+    console.error(chalk.red("'package.json' does not exist."))
     process.exit(ErrorCode.PROJECT_NOT_FOUND)
   }
 

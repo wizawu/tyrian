@@ -5,6 +5,7 @@ jdk:
 node_js:
   - "12"
 script:
+  - node -v
   - npm install
   - npm run lint
   - npm run build

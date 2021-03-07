@@ -23,7 +23,7 @@ describe("commands/install", () => {
       }
 
       task install(type: Copy) {
-        into "/home/wizawu/github/tyrian/test/lib"
+        into "${process.cwd()}/lib"
         from configurations.runtime
       }
 

@@ -10,11 +10,11 @@
     "watch": "tsc -d --outDir dist -p . -w",
     "types": "test $JAVAP && node src/jdk/allclasses.js",
     "test": "cd test && mocha unit/*.js unit/**/*.js",
-    "lint": "eslint --ext .ts --ignore-pattern '/src/parser/javap/*' --fix src",
+    "lint": "eslint --ignore-pattern '/src/parser/javap/*' --fix src test/unit",
     "lint:types": "eslint --ext .ts --fix @types"
   },
   "dependencies": {
-    "antlr4": "^4.9.0",
+    "antlr4": "^4.8.0",
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
     "jszip": "^3.6.0",

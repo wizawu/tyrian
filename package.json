@@ -5,11 +5,12 @@
   "license": "MIT",
   "bin": "bin/tyrian",
   "scripts": {
-    "antlr": "cd src/grammar && antlr4 -Dlanguage=JavaScript -visitor Javap.g4",
+    "antlr": "cd src/parser/javap && antlr4 -Dlanguage=JavaScript -visitor Javap.g4",
     "build": "tsc -d --outDir dist -p .",
     "watch": "tsc -d --outDir dist -p . -w",
+    "types": "test $JAVAP && node src/jdk/allclasses.js",
     "test": "mocha -V",
-    "lint": "eslint --ext .ts --ignore-pattern '/src/grammar/*' --fix src",
+    "lint": "eslint --ext .ts --ignore-pattern '/src/parser/javap/*' --fix src",
     "lint:types": "eslint --ext .ts --fix @types"
   },
   "dependencies": {

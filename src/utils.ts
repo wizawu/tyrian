@@ -16,10 +16,6 @@ export function listFilesByExt(dirname: string, ext: string): string[] {
   }
 }
 
-export function qualifiedName(javaClass: string): string {
-  return javaClass.replace(/(\$\d+)*\.class$/, "").replace(/\//g, ".")
-}
-
 export function javap(classPaths: string[], classList: string[]): string | null {
   const child = spawnSync(
     process.env.JAVAP || path.join(locateJavaBin(), "javap"),

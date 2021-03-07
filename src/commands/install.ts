@@ -42,7 +42,8 @@ async function listLibClasses(jars: string[]) {
     const files = (await zip.loadAsync(data)).files
     Object.keys(files).forEach(it => {
       if (it.endsWith(".class")) {
-        classes[utils.qualifiedName(it)] = true
+        const key = it.replace(/(\$\d+)*\.class$/, "").replace(/\//g, ".")
+        classes[key] = true
       }
     })
   }

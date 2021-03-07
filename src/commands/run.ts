@@ -1,7 +1,7 @@
 import chalk from "chalk"
 import fs from "fs"
 import redent from "redent"
-import { spawn } from "child_process"
+import { ChildProcessWithoutNullStreams, spawn } from "child_process"
 
 import * as utils from "../utils"
 import { code as ErrorCode } from "../errors"
@@ -21,7 +21,7 @@ export default function (output: string, args: string[], { inspectBrk, watch }: 
 
   const [type, runner] = checkRuntime()
   const classPaths = utils.listFilesByExt("lib", ".jar")
-  const run = () => {
+  const run = (): ChildProcessWithoutNullStreams => {
     const finalArgs: string[] = []
     if (type === "nashorn") {
       finalArgs.push(

@@ -63,6 +63,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.gradleTemplate = exports.listLibClasses = void 0;
 var chalk_1 = __importDefault(require("chalk"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
@@ -131,6 +132,7 @@ function listLibClasses(jars) {
         });
     });
 }
+exports.listLibClasses = listLibClasses;
 function npmInstall() {
     var child = child_process_1.spawnSync("npm", ["install"], { stdio: "inherit" });
     if (child.status)
@@ -139,6 +141,7 @@ function npmInstall() {
 function gradleInstall() {
     fs_1.default.mkdirSync(path_1.default.join("lib", "@types"), { recursive: true });
     var mvnDependencies = {};
+    // find all mvnDependencies from node_modules
     __spreadArray(["package.json"], new glob_1.GlobSync(path_1.default.join("node_modules", "**", "package.json")).found).forEach(function (it) {
         var pkg = JSON.parse(fs_1.default.readFileSync(it, "utf-8"));
         Object.keys(pkg.mvnDependencies || {}).forEach(function (k) {
@@ -146,12 +149,11 @@ function gradleInstall() {
                 mvnDependencies[k] = pkg.mvnDependencies[k];
         });
     });
-    var deps = Object.keys(mvnDependencies).map(function (it) {
-        return "compile \"" + it + ":" + mvnDependencies[it] + "\"";
-    });
-    fs_1.default.writeFileSync("build.gradle", gradleTemplate(deps));
+    var deps = Object.keys(mvnDependencies).map(function (it) { return it + ":" + mvnDependencies[it]; });
+    fs_1.default.writeFileSync("build.gradle", exports.gradleTemplate(deps));
     var child = child_process_1.spawnSync("gradle", ["--no-daemon", "install"], { stdio: "inherit" });
     if (child.status)
         process.exit(child.status);
 }
-var gradleTemplate = function (deps) { return redent_1.default("\n  apply plugin: \"java\"\n\n  repositories {\n    jcenter()\n    mavenCentral()\n  }\n\n  task install(type: Copy) {\n    into \"" + path_1.default.join(process.cwd(), "lib") + "\"\n    from configurations.runtime\n  }\n\n  dependencies {\n    " + deps.join("\n    ") + "\n  }\n", 0).trimStart(); };
+var gradleTemplate = function (deps) { return redent_1.default("\n  apply plugin: \"java\"\n\n  repositories {\n    jcenter()\n    mavenCentral()\n  }\n\n  task install(type: Copy) {\n    into \"" + path_1.default.join(process.cwd(), "lib") + "\"\n    from configurations.runtime\n  }\n\n  dependencies {\n    " + deps.map(function (it) { return "compile \"" + it + "\""; }).join("\n    ") + "\n  }\n", 0).trimStart(); };
+exports.gradleTemplate = gradleTemplate;

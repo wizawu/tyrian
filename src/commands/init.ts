@@ -48,7 +48,7 @@ export default function (): void {
   }
 }
 
-function createConfig(runtime: "graaljs" | "nashorn", root: string) {
+function createConfig(runtime: "graaljs" | "nashorn", root: string): void {
   fs.writeFileSync("package.json", JSON.stringify({
     dependencies: {},
     mvnDependencies: {},
@@ -65,7 +65,7 @@ function createConfig(runtime: "graaljs" | "nashorn", root: string) {
   }, null, 2))
 }
 
-function check(command: string, args: string[]): boolean {
+export function check(command: string, args: string[]): boolean {
   const { status, stdout, stderr } = spawnSync(command, args)
   if (status === 0) {
     console.log(chalk.green(`[${command}]`))

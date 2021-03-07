@@ -12,14 +12,14 @@ export const compilerOptions = {
 
 export default function (entries: string[], outDir: string, watch: boolean): void {
   const compiler = getCompiler(entries, outDir)
-  const printStats = (stats?: Stats) => console.log(stats?.toString({
+  const printStats = (stats?: Stats): void => console.log(stats?.toString({
     colors: true,
     chunks: false,
     entrypoints: true,
     modules: false,
   }))
   if (watch) {
-    compiler.watch({ poll: true }, (err, stats) => {
+    compiler.watch({ poll: true }, (err, stats): void => {
       printStats(stats)
     })
   } else {
@@ -30,7 +30,7 @@ export default function (entries: string[], outDir: string, watch: boolean): voi
   }
 }
 
-function getCompiler(entries: string[], outDir: string) {
+function getCompiler(entries: string[], outDir: string): webpack.Compiler {
   const context = process.cwd()
   const entry = {}
   for (const src of entries) {

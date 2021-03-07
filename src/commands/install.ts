@@ -31,8 +31,8 @@ export default async function (tsDefinition: boolean): Promise<void> {
   }
 }
 
-async function listLibClasses(jars: string[]) {
-  const classes: {[_: string]: boolean} = {}
+export async function listLibClasses(jars: string[]): Promise<string[]> {
+  const classes: { [_: string]: boolean } = {}
   for (const jar of jars) {
     const data = fs.readFileSync(jar)
     const files = (await zip.loadAsync(data)).files
@@ -46,31 +46,29 @@ async function listLibClasses(jars: string[]) {
   return Object.keys(classes)
 }
 
-function npmInstall() {
+function npmInstall(): void {
   const child = spawnSync("npm", ["install"], { stdio: "inherit" })
   if (child.status) process.exit(child.status)
 }
 
-function gradleInstall() {
+function gradleInstall(): void {
   fs.mkdirSync(path.join("lib", "@types"), { recursive: true })
-  const mvnDependencies: {[_:string]: string} = {}
+  const mvnDependencies: { [_: string]: string } = {};
   // find all mvnDependencies from node_modules
-  ;["package.json", ...new GlobSync(path.join("node_modules", "**", "package.json")).found].forEach(it => {
+  ["package.json", ...new GlobSync(path.join("node_modules", "**", "package.json")).found].forEach(it => {
     const pkg = JSON.parse(fs.readFileSync(it as string, "utf-8"))
     Object.keys(pkg.mvnDependencies || {}).forEach(k => {
       if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))
         mvnDependencies[k] = pkg.mvnDependencies[k]
     })
   })
-  const deps = Object.keys(mvnDependencies).map(it =>
-    `compile "${it}:${mvnDependencies[it]}"`
-  )
+  const deps = Object.keys(mvnDependencies).map(it => it + ":" + mvnDependencies[it])
   fs.writeFileSync("build.gradle", gradleTemplate(deps))
   const child = spawnSync("gradle", ["--no-daemon", "install"], { stdio: "inherit" })
   if (child.status) process.exit(child.status)
 }
 
-const gradleTemplate = (deps: string[]) => redent(`
+export const gradleTemplate = (deps: string[]): string => redent(`
   apply plugin: "java"
 
   repositories {
@@ -84,6 +82,6 @@ const gradleTemplate = (deps: string[]) => redent(`
   }
 
   dependencies {
-    ${deps.join("\n    ")}
+    ${deps.map(it => `compile "${it}"`).join("\n    ")}
   }
 `, 0).trimStart()

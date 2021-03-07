@@ -122,7 +122,7 @@ function declareMethod(method: MethodDeclarationContext, ifs: InterfaceStat, isC
 }
 
 function methodArgumentsToString(methodArgs: MethodArgumentsContext, ifs: InterfaceStat): string {
-  const argTypes = (type: TypeContext) => isLambda(ifs, type) ?
+  const argTypes = (type: TypeContext): string[] => isLambda(ifs, type) ?
     [typeToString(type), qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())] :
     typeAlias(typeToString(type))
 

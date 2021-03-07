@@ -22,7 +22,7 @@ export function javap(classPaths: string[], classList: string[]): string | null 
     ["-package", "-cp", ":" + classPaths.join(":"), ...classList]
   )
   if (child.status === 0) {
-    return child.stdout
+    return child.stdout.toString()
   } else {
     console.error(child.stderr.toString())
     return null

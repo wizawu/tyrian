@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "typeRoots": [
+      "/home/wizawu/github/tyrian/@types",
+      "/home/wizawu/github/tyrian/tests/lib"
+    ]
+  },
+  "include": [
+    "/home/wizawu/github/tyrian/@types/**/*.d.ts",
+    "**/*.ts"
+  ]
+}

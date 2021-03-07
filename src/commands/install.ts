@@ -1,3 +1,4 @@
+import chalk from "chalk"
 import fs from "fs"
 import path from "path"
 import redent from "redent"
@@ -8,17 +9,12 @@ import { spawnSync } from "child_process"
 import * as parser from "../parser"
 import * as utils from "../utils"
 import interfaces from "../jdk/interfaces.json"
+import { code as ErrorCode } from "../errors"
 
 export default async function (tsDefinition: boolean): Promise<void> {
   if (!fs.existsSync("package.json")) {
-    fs.writeFileSync("package.json", JSON.stringify({
-      dependencies: {},
-      mvnDependencies: {},
-      runtime: {
-        graaljs: "/graalvm/languages/js/bin/node",
-        nashorn: "/openjdk/bin/jjs",
-      }
-    }, null, 2))
+    console.error(chalk.red("Cannot find package.json."))
+    process.exit(ErrorCode.PROJECT_NOT_FOUND)
   }
 
   npmInstall()

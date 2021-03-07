@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "log4js": "6.3.0"
+    "chalk": "^4.1.0"
   },
   "mvnDependencies": {
     "com.google.code.gson:gson": "2.7",
@@ -8,8 +8,5 @@
   },
   "runtime": {
     "graaljs": "/home/wizawu/local/graalvm-ce-java11/languages/js/bin/node"
-  },
-  "devDependencies": {
-    "@types/log4js": "^2.3.5"
   }
 }

@@ -14,6 +14,11 @@ interface Options {
 }
 
 export default function (output: string, args: string[], { inspectBrk, watch }: Options): void {
+  if (!fs.existsSync(output)) {
+    console.error(chalk.red(`The file '${output}' does not exist.`))
+    process.exit(ErrorCode.INVALID_ARGUMENT)
+  }
+
   const [type, runner] = checkRuntime()
   const classPaths = utils.listFilesByExt("lib", ".jar")
   const run = () => {
@@ -56,7 +61,7 @@ export default function (output: string, args: string[], { inspectBrk, watch }: 
   }
 }
 
-function checkRuntime(): [Runtime, string] {
+export function checkRuntime(): [Runtime, string] {
   const { runtime } = JSON.parse(fs.readFileSync("package.json", "utf-8"))
   if (typeof runtime.graaljs === "string") {
     return ["graaljs", runtime.graaljs]

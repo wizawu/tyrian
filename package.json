@@ -9,7 +9,7 @@
     "build": "tsc -d --outDir dist -p .",
     "watch": "tsc -d --outDir dist -p . -w",
     "types": "test $JAVAP && node src/jdk/allclasses.js",
-    "test": "mocha -V",
+    "test": "cd test && mocha unit/*.js unit/**/*.js",
     "lint": "eslint --ext .ts --ignore-pattern '/src/parser/javap/*' --fix src",
     "lint:types": "eslint --ext .ts --fix @types"
   },

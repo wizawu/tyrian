@@ -16,10 +16,10 @@ declare namespace java {
       public static readonly ROUND_UNNECESSARY: int
       static readonly $assertionsDisabled: boolean
       constructor(arg0: java.math.BigInteger, arg1: number | java.lang.Long, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-      public constructor(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-      public constructor(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.math.MathContext)
-      public constructor(arg0: char[])
-      public constructor(arg0: char[], arg1: java.math.MathContext)
+      public constructor(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.math.MathContext)
+      public constructor(arg0: string[] | java.lang.Character[])
+      public constructor(arg0: string[] | java.lang.Character[], arg1: java.math.MathContext)
       public constructor(arg0: java.lang.String | string)
       public constructor(arg0: java.lang.String | string, arg1: java.math.MathContext)
       public constructor(arg0: number | java.lang.Double)

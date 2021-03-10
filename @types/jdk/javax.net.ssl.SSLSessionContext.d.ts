@@ -3,7 +3,7 @@ declare namespace javax {
     namespace ssl {
 
       interface SSLSessionContext {
-        getSession(arg0: byte[]): javax.net.ssl.SSLSession
+        getSession(arg0: number[] | java.lang.Byte[]): javax.net.ssl.SSLSession
         getIds(): java.util.Enumeration<byte[]>
         setSessionTimeout(arg0: number | java.lang.Integer): void
         getSessionTimeout(): number

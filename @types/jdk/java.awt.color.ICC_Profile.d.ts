@@ -125,7 +125,7 @@ declare namespace java {
         constructor(arg0: sun.java2d.cmm.Profile)
         constructor(arg0: sun.java2d.cmm.ProfileDeferralInfo)
         protected finalize(): void
-        public static getInstance(arg0: byte[]): java.awt.color.ICC_Profile
+        public static getInstance(arg0: number[] | java.lang.Byte[]): java.awt.color.ICC_Profile
         public static getInstance(arg0: number | java.lang.Integer): java.awt.color.ICC_Profile
         public static getInstance(arg0: java.lang.String | string): java.awt.color.ICC_Profile
         public static getInstance(arg0: java.io.InputStream): java.awt.color.ICC_Profile
@@ -144,7 +144,7 @@ declare namespace java {
         public getData(): number[]
         public getData(arg0: number | java.lang.Integer): number[]
         static getData(arg0: sun.java2d.cmm.Profile, arg1: number | java.lang.Integer): number[]
-        public setData(arg0: number | java.lang.Integer, arg1: byte[]): void
+        public setData(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[]): void
         setRenderingIntent(arg0: number | java.lang.Integer): void
         getRenderingIntent(): number
         public getNumComponents(): number
@@ -153,10 +153,10 @@ declare namespace java {
         getGamma(arg0: number | java.lang.Integer): number
         getTRC(arg0: number | java.lang.Integer): number[]
         static iccCStoJCS(arg0: number | java.lang.Integer): number
-        static intFromBigEndian(arg0: byte[], arg1: number | java.lang.Integer): number
-        static intToBigEndian(arg0: number | java.lang.Integer, arg1: byte[], arg2: number | java.lang.Integer): void
-        static shortFromBigEndian(arg0: byte[], arg1: number | java.lang.Integer): number
-        static shortToBigEndian(arg0: number | java.lang.Short, arg1: byte[], arg2: number | java.lang.Integer): void
+        static intFromBigEndian(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): number
+        static intToBigEndian(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer): void
+        static shortFromBigEndian(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): number
+        static shortToBigEndian(arg0: number | java.lang.Short, arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer): void
         protected readResolve(): java.lang.Object
       }
 

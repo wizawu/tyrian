@@ -28,7 +28,7 @@ declare namespace javax {
         getTableName(): java.lang.String
         setTableName(arg0: java.lang.String | string): void
         getKeyColumns(): number[]
-        setKeyColumns(arg0: int[]): void
+        setKeyColumns(arg0: number[] | java.lang.Integer[]): void
         createShared(): javax.sql.RowSet
         createCopy(): javax.sql.rowset.CachedRowSet
         createCopySchema(): javax.sql.rowset.CachedRowSet

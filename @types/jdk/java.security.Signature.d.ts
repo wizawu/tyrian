@@ -21,12 +21,12 @@ declare namespace java {
       public initSign(arg0: java.security.PrivateKey, arg1: java.security.SecureRandom): void
       initSign(arg0: java.security.PrivateKey, arg1: java.security.spec.AlgorithmParameterSpec, arg2: java.security.SecureRandom): void
       public sign(): number[]
-      public sign(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public verify(arg0: byte[]): boolean
-      public verify(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
+      public sign(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public verify(arg0: number[] | java.lang.Byte[]): boolean
+      public verify(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
       public update(arg0: number | java.lang.Byte): void
-      public update(arg0: byte[]): void
-      public update(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public update(arg0: number[] | java.lang.Byte[]): void
+      public update(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public update(arg0: java.nio.ByteBuffer): void
       public getAlgorithm(): java.lang.String
       public toString(): java.lang.String

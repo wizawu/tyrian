@@ -10,7 +10,7 @@ declare namespace javax {
           constructor(arg0: sun.security.x509.X500Name)
           public constructor(arg0: java.lang.String | string)
           public constructor(arg0: java.lang.String | string, arg1: java.util.Map<java.lang.String,java.lang.String>)
-          public constructor(arg0: byte[])
+          public constructor(arg0: number[] | java.lang.Byte[])
           public constructor(arg0: java.io.InputStream)
           public getName(): java.lang.String
           public getName(arg0: java.lang.String | string): java.lang.String

@@ -55,10 +55,10 @@ declare namespace javax {
         updateDeprecatedAlreadyNotified(): void
         updateAlreadyNotified(arg0: javax.management.monitor.Monitor$ObservedObject, arg1: number | java.lang.Integer): void
         isAlreadyNotified(arg0: javax.management.monitor.Monitor$ObservedObject, arg1: number | java.lang.Integer): boolean
-        setAlreadyNotified(arg0: javax.management.monitor.Monitor$ObservedObject, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: int[]): void
+        setAlreadyNotified(arg0: javax.management.monitor.Monitor$ObservedObject, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number[] | java.lang.Integer[]): void
         resetAlreadyNotified(arg0: javax.management.monitor.Monitor$ObservedObject, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-        resetAllAlreadyNotified(arg0: javax.management.monitor.Monitor$ObservedObject, arg1: number | java.lang.Integer, arg2: int[]): void
-        computeAlreadyNotifiedIndex(arg0: javax.management.monitor.Monitor$ObservedObject, arg1: number | java.lang.Integer, arg2: int[]): number
+        resetAllAlreadyNotified(arg0: javax.management.monitor.Monitor$ObservedObject, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[]): void
+        computeAlreadyNotifiedIndex(arg0: javax.management.monitor.Monitor$ObservedObject, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[]): number
       }
 
     }

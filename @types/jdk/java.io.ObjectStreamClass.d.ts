@@ -47,11 +47,11 @@ declare namespace java {
       getClassDataLayout(): java.io.ObjectStreamClass$ClassDataSlot[]
       getPrimDataSize(): number
       getNumObjFields(): number
-      getPrimFieldValues(arg0: java.lang.Object | any, arg1: byte[]): void
-      setPrimFieldValues(arg0: java.lang.Object | any, arg1: byte[]): void
-      getObjFieldValues(arg0: java.lang.Object | any, arg1: java.lang.Object[]): void
-      checkObjFieldValueTypes(arg0: java.lang.Object | any, arg1: java.lang.Object[]): void
-      setObjFieldValues(arg0: java.lang.Object | any, arg1: java.lang.Object[]): void
+      getPrimFieldValues(arg0: java.lang.Object | any, arg1: number[] | java.lang.Byte[]): void
+      setPrimFieldValues(arg0: java.lang.Object | any, arg1: number[] | java.lang.Byte[]): void
+      getObjFieldValues(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[]): void
+      checkObjFieldValueTypes(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[]): void
+      setObjFieldValues(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[]): void
       static processQueue(arg0: java.lang.ref.ReferenceQueue<java.lang.Class<unknown>>, arg1: java.util.concurrent.ConcurrentMap<java.lang.ref.WeakReference<java.lang.Class<unknown>>,unknown>): void
     }
 

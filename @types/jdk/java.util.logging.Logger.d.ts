@@ -24,18 +24,18 @@ declare namespace java {
         public log(arg0: java.util.logging.Level, arg1: java.lang.String | string): void
         public log(arg0: java.util.logging.Level, arg1: java.util.function$.Supplier<java.lang.String> | java.util.function$.Supplier$$lambda<java.lang.String>): void
         public log(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.Object | any): void
-        public log(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.Object[]): void
+        public log(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.Object[] | any[]): void
         public log(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.Throwable): void
         public log(arg0: java.util.logging.Level, arg1: java.lang.Throwable, arg2: java.util.function$.Supplier<java.lang.String> | java.util.function$.Supplier$$lambda<java.lang.String>): void
         public logp(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): void
         public logp(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.util.function$.Supplier<java.lang.String> | java.util.function$.Supplier$$lambda<java.lang.String>): void
         public logp(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.Object | any): void
-        public logp(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.Object[]): void
+        public logp(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.Object[] | any[]): void
         public logp(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.Throwable): void
         public logp(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.Throwable, arg4: java.util.function$.Supplier<java.lang.String> | java.util.function$.Supplier$$lambda<java.lang.String>): void
         public logrb(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string): void
         public logrb(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.Object | any): void
-        public logrb(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.Object[]): void
+        public logrb(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.Object[] | any[]): void
         public logrb(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.util.ResourceBundle, arg4: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): void
         public logrb(arg0: java.util.logging.Level, arg1: java.util.ResourceBundle, arg2: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): void
         public logrb(arg0: java.util.logging.Level, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.Throwable): void
@@ -43,7 +43,7 @@ declare namespace java {
         public logrb(arg0: java.util.logging.Level, arg1: java.util.ResourceBundle, arg2: java.lang.String | string, arg3: java.lang.Throwable): void
         public entering(arg0: java.lang.String | string, arg1: java.lang.String | string): void
         public entering(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any): void
-        public entering(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object[]): void
+        public entering(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object[] | any[]): void
         public exiting(arg0: java.lang.String | string, arg1: java.lang.String | string): void
         public exiting(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Object | any): void
         public throwing(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.Throwable): void

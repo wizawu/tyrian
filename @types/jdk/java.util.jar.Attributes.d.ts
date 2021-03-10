@@ -27,7 +27,7 @@ declare namespace java {
         public clone(): java.lang.Object
         write(arg0: java.io.DataOutputStream): void
         writeMain(arg0: java.io.DataOutputStream): void
-        read(arg0: java.util.jar.Manifest$FastInputStream, arg1: byte[]): void
+        read(arg0: java.util.jar.Manifest$FastInputStream, arg1: number[] | java.lang.Byte[]): void
       }
 
     }

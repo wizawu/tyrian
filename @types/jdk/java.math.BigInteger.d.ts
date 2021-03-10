@@ -13,19 +13,19 @@ declare namespace java {
       public static readonly TEN: java.math.BigInteger
       static bnExpModThreshTable: int[]
       static readonly $assertionsDisabled: boolean
-      public constructor(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-      public constructor(arg0: byte[])
-      public constructor(arg0: number | java.lang.Integer, arg1: byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: byte[])
+      public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(arg0: number[] | java.lang.Byte[])
+      public constructor(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      public constructor(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[])
       public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
-      constructor(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      constructor(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
       public constructor(arg0: java.lang.String | string)
       public constructor(arg0: number | java.lang.Integer, arg1: java.util.Random)
       public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.util.Random)
       public static probablePrime(arg0: number | java.lang.Integer, arg1: java.util.Random): java.math.BigInteger
       public nextProbablePrime(): java.math.BigInteger
       primeToCertainty(arg0: number | java.lang.Integer, arg1: java.util.Random): boolean
-      constructor(arg0: int[], arg1: number | java.lang.Integer)
+      constructor(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer)
       public static valueOf(arg0: number | java.lang.Long): java.math.BigInteger
       public add(arg0: java.math.BigInteger): java.math.BigInteger
       add(arg0: number | java.lang.Long): java.math.BigInteger
@@ -40,19 +40,19 @@ declare namespace java {
       public sqrtAndRemainder(): java.math.BigInteger[]
       public gcd(arg0: java.math.BigInteger): java.math.BigInteger
       static bitLengthForInt(arg0: number | java.lang.Integer): number
-      static primitiveRightShift(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-      static primitiveLeftShift(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      static primitiveRightShift(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      static primitiveLeftShift(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public abs(): java.math.BigInteger
       public negate(): java.math.BigInteger
       public signum(): number
       public mod(arg0: java.math.BigInteger): java.math.BigInteger
       public modPow(arg0: java.math.BigInteger, arg1: java.math.BigInteger): java.math.BigInteger
-      static mulAdd(arg0: int[], arg1: int[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
-      static addOne(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+      static mulAdd(arg0: number[] | java.lang.Integer[], arg1: number[] | java.lang.Integer[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
+      static addOne(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
       public modInverse(arg0: java.math.BigInteger): java.math.BigInteger
       public shiftLeft(arg0: number | java.lang.Integer): java.math.BigInteger
       public shiftRight(arg0: number | java.lang.Integer): java.math.BigInteger
-      javaIncrement(arg0: int[]): number[]
+      javaIncrement(arg0: number[] | java.lang.Integer[]): number[]
       public and(arg0: java.math.BigInteger): java.math.BigInteger
       public or(arg0: java.math.BigInteger): java.math.BigInteger
       public xor(arg0: java.math.BigInteger): java.math.BigInteger

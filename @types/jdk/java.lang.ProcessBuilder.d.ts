@@ -9,7 +9,7 @@ declare namespace java {
       public command(...vargs: (java.lang.String | string)[]): java.lang.ProcessBuilder
       public command(): java.util.List<java.lang.String>
       public environment(): java.util.Map<java.lang.String,java.lang.String>
-      environment(arg0: java.lang.String[]): java.lang.ProcessBuilder
+      environment(arg0: java.lang.String[] | string[]): java.lang.ProcessBuilder
       public directory(): java.io.File
       public directory(arg0: java.io.File): java.lang.ProcessBuilder
       public redirectInput(arg0: java.lang.ProcessBuilder$Redirect): java.lang.ProcessBuilder

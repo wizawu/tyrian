@@ -81,11 +81,11 @@ declare namespace javax {
       protected processThumbnailProgress(arg0: number | java.lang.Float): void
       protected processThumbnailComplete(): void
       protected processReadAborted(): void
-      protected processPassStarted(arg0: java.awt.image.BufferedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: int[]): void
-      protected processImageUpdate(arg0: java.awt.image.BufferedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: int[]): void
+      protected processPassStarted(arg0: java.awt.image.BufferedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: number[] | java.lang.Integer[]): void
+      protected processImageUpdate(arg0: java.awt.image.BufferedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number[] | java.lang.Integer[]): void
       protected processPassComplete(arg0: java.awt.image.BufferedImage): void
-      protected processThumbnailPassStarted(arg0: java.awt.image.BufferedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: int[]): void
-      protected processThumbnailUpdate(arg0: java.awt.image.BufferedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: int[]): void
+      protected processThumbnailPassStarted(arg0: java.awt.image.BufferedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: number[] | java.lang.Integer[]): void
+      protected processThumbnailUpdate(arg0: java.awt.image.BufferedImage, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number[] | java.lang.Integer[]): void
       protected processThumbnailPassComplete(arg0: java.awt.image.BufferedImage): void
       protected processWarningOccurred(arg0: java.lang.String | string): void
       protected processWarningOccurred(arg0: java.lang.String | string, arg1: java.lang.String | string): void

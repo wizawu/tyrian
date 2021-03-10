@@ -4,7 +4,7 @@ declare namespace javax {
       namespace standard {
 
         class PageRanges extends javax.print.attribute.SetOfIntegerSyntax implements javax.print.attribute.DocAttribute, javax.print.attribute.PrintRequestAttribute, javax.print.attribute.PrintJobAttribute {
-          public constructor(arg0: int[][])
+          public constructor(arg0: number[][] | java.lang.Integer[][])
           public constructor(arg0: java.lang.String | string)
           public constructor(arg0: number | java.lang.Integer)
           public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)

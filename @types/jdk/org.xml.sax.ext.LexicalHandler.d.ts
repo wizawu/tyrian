@@ -10,7 +10,7 @@ declare namespace org {
           endEntity(arg0: java.lang.String | string): void
           startCDATA(): void
           endCDATA(): void
-          comment(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+          comment(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         }
 
       }

@@ -40,7 +40,7 @@ declare namespace javax {
           protected burstStringInto(arg0: java.awt.Container, arg1: java.lang.String | string, arg2: number | java.lang.Integer): void
           protected createSeparator(): java.awt.Container
           protected createButtonArea(): java.awt.Container
-          protected addButtonComponents(arg0: java.awt.Container, arg1: java.lang.Object[], arg2: number | java.lang.Integer): void
+          protected addButtonComponents(arg0: java.awt.Container, arg1: java.lang.Object[] | any[], arg2: number | java.lang.Integer): void
           protected createButtonActionListener(arg0: number | java.lang.Integer): java.awt.event.ActionListener
           protected getButtons(): java.lang.Object[]
           protected getSizeButtonsToSameWidth(): boolean

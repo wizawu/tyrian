@@ -50,8 +50,8 @@ declare namespace javax {
       setBigDecimal(arg0: java.lang.String | string, arg1: java.math.BigDecimal): void
       setString(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
       setString(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-      setBytes(arg0: number | java.lang.Integer, arg1: byte[]): void
-      setBytes(arg0: java.lang.String | string, arg1: byte[]): void
+      setBytes(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[]): void
+      setBytes(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): void
       setDate(arg0: number | java.lang.Integer, arg1: java.sql.Date): void
       setTime(arg0: number | java.lang.Integer, arg1: java.sql.Time): void
       setTimestamp(arg0: number | java.lang.Integer, arg1: java.sql.Timestamp): void

@@ -27,8 +27,8 @@ declare namespace java {
         public static summingInt<T>(arg0: java.util.function$.ToIntFunction<unknown> | java.util.function$.ToIntFunction$$lambda<unknown>): java.util.stream.Collector<T,unknown,java.lang.Integer>
         public static summingLong<T>(arg0: java.util.function$.ToLongFunction<unknown> | java.util.function$.ToLongFunction$$lambda<unknown>): java.util.stream.Collector<T,unknown,java.lang.Long>
         public static summingDouble<T>(arg0: java.util.function$.ToDoubleFunction<unknown> | java.util.function$.ToDoubleFunction$$lambda<unknown>): java.util.stream.Collector<T,unknown,java.lang.Double>
-        static sumWithCompensation(arg0: double[], arg1: number | java.lang.Double): number[]
-        static computeFinalSum(arg0: double[]): number
+        static sumWithCompensation(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Double): number[]
+        static computeFinalSum(arg0: number[] | java.lang.Double[]): number
         public static averagingInt<T>(arg0: java.util.function$.ToIntFunction<unknown> | java.util.function$.ToIntFunction$$lambda<unknown>): java.util.stream.Collector<T,unknown,java.lang.Double>
         public static averagingLong<T>(arg0: java.util.function$.ToLongFunction<unknown> | java.util.function$.ToLongFunction$$lambda<unknown>): java.util.stream.Collector<T,unknown,java.lang.Double>
         public static averagingDouble<T>(arg0: java.util.function$.ToDoubleFunction<unknown> | java.util.function$.ToDoubleFunction$$lambda<unknown>): java.util.stream.Collector<T,unknown,java.lang.Double>

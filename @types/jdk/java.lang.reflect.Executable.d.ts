@@ -8,7 +8,7 @@ declare namespace java {
         abstract hasGenericInformation(): boolean
         abstract getGenericInfo(): sun.reflect.generics.repository.ConstructorRepository
         equalParamTypes(arg0: java.lang.Class<unknown>[], arg1: java.lang.Class<unknown>[]): boolean
-        parseParameterAnnotations(arg0: byte[]): java.lang.annotation.Annotation[][]
+        parseParameterAnnotations(arg0: number[] | java.lang.Byte[]): java.lang.annotation.Annotation[][]
         printModifiersIfNonzero(arg0: java.lang.StringBuilder, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): void
         sharedToString(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean, arg2: java.lang.Class<unknown>[], arg3: java.lang.Class<unknown>[]): java.lang.String
         abstract specificToStringHeader(arg0: java.lang.StringBuilder): void
@@ -34,7 +34,7 @@ declare namespace java {
         public isVarArgs(): boolean
         public isSynthetic(): boolean
         public abstract getParameterAnnotations(): java.lang.annotation.Annotation[][]
-        sharedGetParameterAnnotations(arg0: java.lang.Class<unknown>[], arg1: byte[]): java.lang.annotation.Annotation[][]
+        sharedGetParameterAnnotations(arg0: java.lang.Class<unknown>[], arg1: number[] | java.lang.Byte[]): java.lang.annotation.Annotation[][]
         abstract handleParameterNumberMismatch(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
         public getAnnotation<T extends java.lang.annotation.Annotation>(arg0: java.lang.Class<T>): T
         public getAnnotationsByType<T extends java.lang.annotation.Annotation>(arg0: java.lang.Class<T>): T[]

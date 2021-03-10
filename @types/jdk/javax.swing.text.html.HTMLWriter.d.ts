@@ -30,7 +30,7 @@ declare namespace javax {
           writeStyleEndTag(): void
           convertToHTML(arg0: javax.swing.text.AttributeSet, arg1: javax.swing.text.MutableAttributeSet): javax.swing.text.AttributeSet
           protected writeLineSeparator(): void
-          protected output(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+          protected output(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         }
 
       }

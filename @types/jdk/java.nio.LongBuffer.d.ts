@@ -5,12 +5,12 @@ declare namespace java {
       readonly hb: long[]
       readonly offset: int
       isReadOnly: boolean
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: long[], arg5: number | java.lang.Integer)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Long[], arg5: number | java.lang.Integer)
       constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
       base(): java.lang.Object
       public static allocate(arg0: number | java.lang.Integer): java.nio.LongBuffer
-      public static wrap(arg0: long[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.LongBuffer
-      public static wrap(arg0: long[]): java.nio.LongBuffer
+      public static wrap(arg0: number[] | java.lang.Long[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.LongBuffer
+      public static wrap(arg0: number[] | java.lang.Long[]): java.nio.LongBuffer
       public abstract slice(): java.nio.LongBuffer
       public abstract duplicate(): java.nio.LongBuffer
       public abstract asReadOnlyBuffer(): java.nio.LongBuffer
@@ -18,11 +18,11 @@ declare namespace java {
       public abstract put(arg0: number | java.lang.Long): java.nio.LongBuffer
       public abstract get(arg0: number | java.lang.Integer): number
       public abstract put(arg0: number | java.lang.Integer, arg1: number | java.lang.Long): java.nio.LongBuffer
-      public get(arg0: long[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.LongBuffer
-      public get(arg0: long[]): java.nio.LongBuffer
+      public get(arg0: number[] | java.lang.Long[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.LongBuffer
+      public get(arg0: number[] | java.lang.Long[]): java.nio.LongBuffer
       public put(arg0: java.nio.LongBuffer): java.nio.LongBuffer
-      public put(arg0: long[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.LongBuffer
-      public put(arg0: long[]): java.nio.LongBuffer
+      public put(arg0: number[] | java.lang.Long[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.LongBuffer
+      public put(arg0: number[] | java.lang.Long[]): java.nio.LongBuffer
       public hasArray(): boolean
       public array(): number[]
       public arrayOffset(): number

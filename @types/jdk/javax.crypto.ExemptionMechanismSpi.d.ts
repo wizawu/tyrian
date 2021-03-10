@@ -8,7 +8,7 @@ declare namespace javax {
       protected abstract engineInit(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
       protected abstract engineInit(arg0: java.security.Key, arg1: java.security.AlgorithmParameters): void
       protected abstract engineGenExemptionBlob(): number[]
-      protected abstract engineGenExemptionBlob(arg0: byte[], arg1: number | java.lang.Integer): number
+      protected abstract engineGenExemptionBlob(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): number
     }
 
   }

@@ -7,7 +7,7 @@ declare namespace java {
       public getAction(): java.lang.String
       public getEventPropertyName(): java.lang.String
       public getListenerMethodName(): java.lang.String
-      public invoke(arg0: java.lang.Object | any, arg1: java.lang.reflect.Method, arg2: java.lang.Object[]): java.lang.Object
+      public invoke(arg0: java.lang.Object | any, arg1: java.lang.reflect.Method, arg2: java.lang.Object[] | any[]): java.lang.Object
       public static create<T>(arg0: java.lang.Class<T>, arg1: java.lang.Object | any, arg2: java.lang.String | string): T
       public static create<T>(arg0: java.lang.Class<T>, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: java.lang.String | string): T
       public static create<T>(arg0: java.lang.Class<T>, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string): T

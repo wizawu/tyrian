@@ -6,14 +6,14 @@ declare namespace java {
       public static emptyIntSpliterator(): java.util.Spliterator$OfInt
       public static emptyLongSpliterator(): java.util.Spliterator$OfLong
       public static emptyDoubleSpliterator(): java.util.Spliterator$OfDouble
-      public static spliterator<T>(arg0: java.lang.Object[], arg1: number | java.lang.Integer): java.util.Spliterator<T>
-      public static spliterator<T>(arg0: java.lang.Object[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.util.Spliterator<T>
-      public static spliterator(arg0: int[], arg1: number | java.lang.Integer): java.util.Spliterator$OfInt
-      public static spliterator(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.util.Spliterator$OfInt
-      public static spliterator(arg0: long[], arg1: number | java.lang.Integer): java.util.Spliterator$OfLong
-      public static spliterator(arg0: long[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.util.Spliterator$OfLong
-      public static spliterator(arg0: double[], arg1: number | java.lang.Integer): java.util.Spliterator$OfDouble
-      public static spliterator(arg0: double[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.util.Spliterator$OfDouble
+      public static spliterator<T>(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer): java.util.Spliterator<T>
+      public static spliterator<T>(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.util.Spliterator<T>
+      public static spliterator(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer): java.util.Spliterator$OfInt
+      public static spliterator(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.util.Spliterator$OfInt
+      public static spliterator(arg0: number[] | java.lang.Long[], arg1: number | java.lang.Integer): java.util.Spliterator$OfLong
+      public static spliterator(arg0: number[] | java.lang.Long[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.util.Spliterator$OfLong
+      public static spliterator(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer): java.util.Spliterator$OfDouble
+      public static spliterator(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.util.Spliterator$OfDouble
       public static spliterator<T>(arg0: java.util.Collection<T>, arg1: number | java.lang.Integer): java.util.Spliterator<T>
       public static spliterator<T>(arg0: java.util.Iterator<T>, arg1: number | java.lang.Long, arg2: number | java.lang.Integer): java.util.Spliterator<T>
       public static spliteratorUnknownSize<T>(arg0: java.util.Iterator<T>, arg1: number | java.lang.Integer): java.util.Spliterator<T>

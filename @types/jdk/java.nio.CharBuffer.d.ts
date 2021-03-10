@@ -5,12 +5,12 @@ declare namespace java {
       readonly hb: char[]
       readonly offset: int
       isReadOnly: boolean
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: char[], arg5: number | java.lang.Integer)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: string[] | java.lang.Character[], arg5: number | java.lang.Integer)
       constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
       base(): java.lang.Object
       public static allocate(arg0: number | java.lang.Integer): java.nio.CharBuffer
-      public static wrap(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
-      public static wrap(arg0: char[]): java.nio.CharBuffer
+      public static wrap(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
+      public static wrap(arg0: string[] | java.lang.Character[]): java.nio.CharBuffer
       public read(arg0: java.nio.CharBuffer): number
       public static wrap(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
       public static wrap(arg0: java.lang.CharSequence): java.nio.CharBuffer
@@ -22,11 +22,11 @@ declare namespace java {
       public abstract get(arg0: number | java.lang.Integer): string
       abstract getUnchecked(arg0: number | java.lang.Integer): string
       public abstract put(arg0: number | java.lang.Integer, arg1: string | java.lang.Character): java.nio.CharBuffer
-      public get(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
-      public get(arg0: char[]): java.nio.CharBuffer
+      public get(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
+      public get(arg0: string[] | java.lang.Character[]): java.nio.CharBuffer
       public put(arg0: java.nio.CharBuffer): java.nio.CharBuffer
-      public put(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
-      public put(arg0: char[]): java.nio.CharBuffer
+      public put(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
+      public put(arg0: string[] | java.lang.Character[]): java.nio.CharBuffer
       public put(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
       public put(arg0: java.lang.String | string): java.nio.CharBuffer
       public hasArray(): boolean

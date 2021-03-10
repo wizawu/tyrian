@@ -6,7 +6,7 @@ declare namespace javax {
         public constructor(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: java.lang.String | string, arg3: javax.management.relation.RoleList)
         public constructor(arg0: java.lang.String | string, arg1: javax.management.ObjectName, arg2: javax.management.MBeanServer, arg3: java.lang.String | string, arg4: javax.management.relation.RoleList)
         public getRole(arg0: java.lang.String | string): java.util.List<javax.management.ObjectName>
-        public getRoles(arg0: java.lang.String[]): javax.management.relation.RoleResult
+        public getRoles(arg0: java.lang.String[] | string[]): javax.management.relation.RoleResult
         public getAllRoles(): javax.management.relation.RoleResult
         public retrieveAllRoles(): javax.management.relation.RoleList
         public getRoleCardinality(arg0: java.lang.String | string): number
@@ -24,7 +24,7 @@ declare namespace javax {
         public isInRelationService(): boolean
         public setRelationServiceManagementFlag(arg0: boolean | java.lang.Boolean): void
         getRoleInt(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: javax.management.relation.RelationService, arg3: boolean | java.lang.Boolean): java.lang.Object
-        getRolesInt(arg0: java.lang.String[], arg1: boolean | java.lang.Boolean, arg2: javax.management.relation.RelationService): javax.management.relation.RoleResult
+        getRolesInt(arg0: java.lang.String[] | string[], arg1: boolean | java.lang.Boolean, arg2: javax.management.relation.RelationService): javax.management.relation.RoleResult
         getAllRolesInt(arg0: boolean | java.lang.Boolean, arg1: javax.management.relation.RelationService): javax.management.relation.RoleResult
         setRoleInt(arg0: javax.management.relation.Role, arg1: boolean | java.lang.Boolean, arg2: javax.management.relation.RelationService, arg3: boolean | java.lang.Boolean): java.lang.Object
         setRolesInt(arg0: javax.management.relation.RoleList, arg1: boolean | java.lang.Boolean, arg2: javax.management.relation.RelationService): javax.management.relation.RoleResult

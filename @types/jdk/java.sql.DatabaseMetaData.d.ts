@@ -183,7 +183,7 @@ declare namespace java {
       dataDefinitionIgnoredInTransactions(): boolean
       getProcedures(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
       getProcedureColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
-      getTables(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String[]): java.sql.ResultSet
+      getTables(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String[] | string[]): java.sql.ResultSet
       getSchemas(): java.sql.ResultSet
       getCatalogs(): java.sql.ResultSet
       getTableTypes(): java.sql.ResultSet
@@ -210,7 +210,7 @@ declare namespace java {
       deletesAreDetected(arg0: number | java.lang.Integer): boolean
       insertsAreDetected(arg0: number | java.lang.Integer): boolean
       supportsBatchUpdates(): boolean
-      getUDTs(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: int[]): java.sql.ResultSet
+      getUDTs(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: number[] | java.lang.Integer[]): java.sql.ResultSet
       getConnection(): java.sql.Connection
       supportsSavepoints(): boolean
       supportsNamedParameters(): boolean

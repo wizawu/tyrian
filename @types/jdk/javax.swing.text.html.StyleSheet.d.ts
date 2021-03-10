@@ -44,7 +44,7 @@ declare namespace javax {
           public getPointSize(arg0: java.lang.String | string): number
           public stringToColor(arg0: java.lang.String | string): java.awt.Color
           getBackgroundImage(arg0: javax.swing.text.AttributeSet): javax.swing.ImageIcon
-          addRule(arg0: java.lang.String[], arg1: javax.swing.text.AttributeSet, arg2: boolean | java.lang.Boolean): void
+          addRule(arg0: java.lang.String[] | string[], arg1: javax.swing.text.AttributeSet, arg2: boolean | java.lang.Boolean): void
           getSimpleSelectors(arg0: java.lang.String | string): java.lang.String[]
           cleanSelectorString(arg0: java.lang.String | string): java.lang.String
           static getSpecificity(arg0: java.lang.String | string): number

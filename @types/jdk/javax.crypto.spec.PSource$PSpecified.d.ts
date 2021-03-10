@@ -4,7 +4,7 @@ declare namespace javax {
 
       class PSource$PSpecified extends javax.crypto.spec.PSource {
         public static readonly DEFAULT: javax.crypto.spec.PSource$PSpecified
-        public constructor(arg0: byte[])
+        public constructor(arg0: number[] | java.lang.Byte[])
         public getValue(): number[]
       }
 

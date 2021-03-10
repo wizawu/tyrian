@@ -7,7 +7,7 @@ declare namespace java {
         public constructor(arg0: java.lang.String | string, arg1: java.awt.Font, arg2: java.awt.font.FontRenderContext)
         public constructor(arg0: java.lang.String | string, arg1: java.util.Map<java.text.AttributedCharacterIterator$Attribute,unknown>, arg2: java.awt.font.FontRenderContext)
         public constructor(arg0: java.text.AttributedCharacterIterator, arg1: java.awt.font.FontRenderContext)
-        constructor(arg0: java.awt.font.TextLine, arg1: number | java.lang.Byte, arg2: float[], arg3: number | java.lang.Float)
+        constructor(arg0: java.awt.font.TextLine, arg1: number | java.lang.Byte, arg2: number[] | java.lang.Float[], arg3: number | java.lang.Float)
         protected clone(): java.lang.Object
         public getJustifiedLayout(arg0: number | java.lang.Float): java.awt.font.TextLayout
         protected handleJustify(arg0: number | java.lang.Float): void

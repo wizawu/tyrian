@@ -4,19 +4,19 @@ declare namespace java {
     class Inet6Address extends java.net.InetAddress {
       static readonly INADDRSZ: int
       constructor()
-      constructor(arg0: java.lang.String | string, arg1: byte[], arg2: number | java.lang.Integer)
-      constructor(arg0: java.lang.String | string, arg1: byte[])
-      constructor(arg0: java.lang.String | string, arg1: byte[], arg2: java.net.NetworkInterface)
-      constructor(arg0: java.lang.String | string, arg1: byte[], arg2: java.lang.String | string)
-      public static getByAddress(arg0: java.lang.String | string, arg1: byte[], arg2: java.net.NetworkInterface): java.net.Inet6Address
-      public static getByAddress(arg0: java.lang.String | string, arg1: byte[], arg2: number | java.lang.Integer): java.net.Inet6Address
+      constructor(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer)
+      constructor(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[])
+      constructor(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[], arg2: java.net.NetworkInterface)
+      constructor(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[], arg2: java.lang.String | string)
+      public static getByAddress(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[], arg2: java.net.NetworkInterface): java.net.Inet6Address
+      public static getByAddress(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer): java.net.Inet6Address
       public isMulticastAddress(): boolean
       public isAnyLocalAddress(): boolean
       public isLoopbackAddress(): boolean
       public isLinkLocalAddress(): boolean
-      static isLinkLocalAddress(arg0: byte[]): boolean
+      static isLinkLocalAddress(arg0: number[] | java.lang.Byte[]): boolean
       public isSiteLocalAddress(): boolean
-      static isSiteLocalAddress(arg0: byte[]): boolean
+      static isSiteLocalAddress(arg0: number[] | java.lang.Byte[]): boolean
       public isMCGlobal(): boolean
       public isMCNodeLocal(): boolean
       public isMCLinkLocal(): boolean
@@ -29,7 +29,7 @@ declare namespace java {
       public hashCode(): number
       public equals(arg0: java.lang.Object | any): boolean
       public isIPv4CompatibleAddress(): boolean
-      static numericToTextFormat(arg0: byte[]): java.lang.String
+      static numericToTextFormat(arg0: number[] | java.lang.Byte[]): java.lang.String
     }
 
   }

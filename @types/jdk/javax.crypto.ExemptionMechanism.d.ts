@@ -14,8 +14,8 @@ declare namespace javax {
       public init(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
       public init(arg0: java.security.Key, arg1: java.security.AlgorithmParameters): void
       public genExemptionBlob(): number[]
-      public genExemptionBlob(arg0: byte[]): number
-      public genExemptionBlob(arg0: byte[], arg1: number | java.lang.Integer): number
+      public genExemptionBlob(arg0: number[] | java.lang.Byte[]): number
+      public genExemptionBlob(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): number
     }
 
   }

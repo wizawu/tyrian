@@ -7,11 +7,11 @@ declare namespace java {
       public ypoints: int[]
       protected bounds: java.awt.Rectangle
       public constructor()
-      public constructor(arg0: int[], arg1: int[], arg2: number | java.lang.Integer)
+      public constructor(arg0: number[] | java.lang.Integer[], arg1: number[] | java.lang.Integer[], arg2: number | java.lang.Integer)
       public reset(): void
       public invalidate(): void
       public translate(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
-      calculateBounds(arg0: int[], arg1: int[], arg2: number | java.lang.Integer): void
+      calculateBounds(arg0: number[] | java.lang.Integer[], arg1: number[] | java.lang.Integer[], arg2: number | java.lang.Integer): void
       updateBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public addPoint(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public getBounds(): java.awt.Rectangle

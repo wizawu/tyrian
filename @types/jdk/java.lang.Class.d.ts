@@ -30,7 +30,7 @@ declare namespace java {
       public getComponentType(): java.lang.Class<unknown>
       public getModifiers(): number
       public getSigners(): java.lang.Object[]
-      setSigners(arg0: java.lang.Object[]): void
+      setSigners(arg0: java.lang.Object[] | any[]): void
       public getEnclosingMethod(): java.lang.reflect.Method
       public getEnclosingConstructor(): java.lang.reflect.Constructor<unknown>
       public getDeclaringClass(): java.lang.Class<unknown>

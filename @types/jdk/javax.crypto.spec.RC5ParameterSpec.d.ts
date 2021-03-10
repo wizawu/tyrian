@@ -4,8 +4,8 @@ declare namespace javax {
 
       class RC5ParameterSpec implements java.security.spec.AlgorithmParameterSpec {
         public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: byte[])
-        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: byte[], arg4: number | java.lang.Integer)
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number[] | java.lang.Byte[])
+        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number[] | java.lang.Byte[], arg4: number | java.lang.Integer)
         public getVersion(): number
         public getRounds(): number
         public getWordSize(): number

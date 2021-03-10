@@ -5,7 +5,7 @@ declare namespace java {
 
         class AtomicIntegerArray implements java.io.Serializable {
           public constructor(arg0: number | java.lang.Integer)
-          public constructor(arg0: int[])
+          public constructor(arg0: number[] | java.lang.Integer[])
           public length(): number
           public get(arg0: number | java.lang.Integer): number
           public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void

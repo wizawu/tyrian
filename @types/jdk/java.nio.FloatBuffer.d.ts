@@ -5,12 +5,12 @@ declare namespace java {
       readonly hb: float[]
       readonly offset: int
       isReadOnly: boolean
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: float[], arg5: number | java.lang.Integer)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Float[], arg5: number | java.lang.Integer)
       constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
       base(): java.lang.Object
       public static allocate(arg0: number | java.lang.Integer): java.nio.FloatBuffer
-      public static wrap(arg0: float[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.FloatBuffer
-      public static wrap(arg0: float[]): java.nio.FloatBuffer
+      public static wrap(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.FloatBuffer
+      public static wrap(arg0: number[] | java.lang.Float[]): java.nio.FloatBuffer
       public abstract slice(): java.nio.FloatBuffer
       public abstract duplicate(): java.nio.FloatBuffer
       public abstract asReadOnlyBuffer(): java.nio.FloatBuffer
@@ -18,11 +18,11 @@ declare namespace java {
       public abstract put(arg0: number | java.lang.Float): java.nio.FloatBuffer
       public abstract get(arg0: number | java.lang.Integer): number
       public abstract put(arg0: number | java.lang.Integer, arg1: number | java.lang.Float): java.nio.FloatBuffer
-      public get(arg0: float[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.FloatBuffer
-      public get(arg0: float[]): java.nio.FloatBuffer
+      public get(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.FloatBuffer
+      public get(arg0: number[] | java.lang.Float[]): java.nio.FloatBuffer
       public put(arg0: java.nio.FloatBuffer): java.nio.FloatBuffer
-      public put(arg0: float[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.FloatBuffer
-      public put(arg0: float[]): java.nio.FloatBuffer
+      public put(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.FloatBuffer
+      public put(arg0: number[] | java.lang.Float[]): java.nio.FloatBuffer
       public hasArray(): boolean
       public array(): number[]
       public arrayOffset(): number

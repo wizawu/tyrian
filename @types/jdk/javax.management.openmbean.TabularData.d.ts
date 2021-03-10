@@ -7,11 +7,11 @@ declare namespace javax {
         calculateIndex(arg0: javax.management.openmbean.CompositeData): java.lang.Object[]
         size(): number
         isEmpty(): boolean
-        containsKey(arg0: java.lang.Object[]): boolean
+        containsKey(arg0: java.lang.Object[] | any[]): boolean
         containsValue(arg0: javax.management.openmbean.CompositeData): boolean
-        get(arg0: java.lang.Object[]): javax.management.openmbean.CompositeData
+        get(arg0: java.lang.Object[] | any[]): javax.management.openmbean.CompositeData
         put(arg0: javax.management.openmbean.CompositeData): void
-        remove(arg0: java.lang.Object[]): javax.management.openmbean.CompositeData
+        remove(arg0: java.lang.Object[] | any[]): javax.management.openmbean.CompositeData
         putAll(arg0: javax.management.openmbean.CompositeData[]): void
         clear(): void
         keySet(): java.util.Set<unknown>

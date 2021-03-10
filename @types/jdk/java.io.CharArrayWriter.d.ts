@@ -7,7 +7,7 @@ declare namespace java {
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
       public write(arg0: number | java.lang.Integer): void
-      public write(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public write(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public write(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public writeTo(arg0: java.io.Writer): void
       public append(arg0: java.lang.CharSequence): java.io.CharArrayWriter

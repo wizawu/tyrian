@@ -2,7 +2,7 @@ declare namespace javax {
   namespace smartcardio {
 
     class ATR implements java.io.Serializable {
-      public constructor(arg0: byte[])
+      public constructor(arg0: number[] | java.lang.Byte[])
       public getBytes(): number[]
       public getHistoricalBytes(): number[]
       public toString(): java.lang.String

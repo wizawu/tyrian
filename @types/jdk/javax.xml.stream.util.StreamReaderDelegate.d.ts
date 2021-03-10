@@ -34,7 +34,7 @@ declare namespace javax {
           public getNamespaceURI(arg0: number | java.lang.Integer): java.lang.String
           public getEventType(): number
           public getText(): java.lang.String
-          public getTextCharacters(arg0: number | java.lang.Integer, arg1: char[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+          public getTextCharacters(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
           public getTextCharacters(): string[]
           public getTextStart(): number
           public getTextLength(): number

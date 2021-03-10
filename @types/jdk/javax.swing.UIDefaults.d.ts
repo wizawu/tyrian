@@ -4,11 +4,11 @@ declare namespace javax {
     class UIDefaults extends java.util.Hashtable<java.lang.Object,java.lang.Object> {
       public constructor()
       public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Float)
-      public constructor(arg0: java.lang.Object[])
+      public constructor(arg0: java.lang.Object[] | any[])
       public get(arg0: java.lang.Object | any): java.lang.Object
       public get(arg0: java.lang.Object | any, arg1: java.util.Locale): java.lang.Object
       public put(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
-      public putDefaults(arg0: java.lang.Object[]): void
+      public putDefaults(arg0: java.lang.Object[] | any[]): void
       public getFont(arg0: java.lang.Object | any): java.awt.Font
       public getFont(arg0: java.lang.Object | any, arg1: java.util.Locale): java.awt.Font
       public getColor(arg0: java.lang.Object | any): java.awt.Color

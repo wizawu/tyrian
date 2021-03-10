@@ -5,12 +5,12 @@ declare namespace java {
       readonly hb: short[]
       readonly offset: int
       isReadOnly: boolean
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: short[], arg5: number | java.lang.Integer)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Short[], arg5: number | java.lang.Integer)
       constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
       base(): java.lang.Object
       public static allocate(arg0: number | java.lang.Integer): java.nio.ShortBuffer
-      public static wrap(arg0: short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ShortBuffer
-      public static wrap(arg0: short[]): java.nio.ShortBuffer
+      public static wrap(arg0: number[] | java.lang.Short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ShortBuffer
+      public static wrap(arg0: number[] | java.lang.Short[]): java.nio.ShortBuffer
       public abstract slice(): java.nio.ShortBuffer
       public abstract duplicate(): java.nio.ShortBuffer
       public abstract asReadOnlyBuffer(): java.nio.ShortBuffer
@@ -18,11 +18,11 @@ declare namespace java {
       public abstract put(arg0: number | java.lang.Short): java.nio.ShortBuffer
       public abstract get(arg0: number | java.lang.Integer): number
       public abstract put(arg0: number | java.lang.Integer, arg1: number | java.lang.Short): java.nio.ShortBuffer
-      public get(arg0: short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ShortBuffer
-      public get(arg0: short[]): java.nio.ShortBuffer
+      public get(arg0: number[] | java.lang.Short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ShortBuffer
+      public get(arg0: number[] | java.lang.Short[]): java.nio.ShortBuffer
       public put(arg0: java.nio.ShortBuffer): java.nio.ShortBuffer
-      public put(arg0: short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ShortBuffer
-      public put(arg0: short[]): java.nio.ShortBuffer
+      public put(arg0: number[] | java.lang.Short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ShortBuffer
+      public put(arg0: number[] | java.lang.Short[]): java.nio.ShortBuffer
       public hasArray(): boolean
       public array(): number[]
       public arrayOffset(): number

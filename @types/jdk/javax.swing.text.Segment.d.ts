@@ -7,7 +7,7 @@ declare namespace javax {
         public offset: int
         public count: int
         public constructor()
-        public constructor(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
         public setPartialReturn(arg0: boolean | java.lang.Boolean): void
         public isPartialReturn(): boolean
         public toString(): java.lang.String

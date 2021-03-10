@@ -16,9 +16,9 @@ declare namespace javax {
           public static readonly WARNING: int
           public static readonly ERROR: int
           public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-          public constructor(arg0: number | java.lang.Integer, arg1: java.lang.String[], arg2: number | java.lang.Integer)
+          public constructor(arg0: number | java.lang.Integer, arg1: java.lang.String[] | string[], arg2: number | java.lang.Integer)
           public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-          public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.lang.String[], arg3: number | java.lang.Integer)
+          public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.lang.String[] | string[], arg3: number | java.lang.Integer)
           public getPrompt(): java.lang.String
           public getMessageType(): number
           public getOptionType(): number

@@ -11,9 +11,9 @@ declare namespace javax {
         public load(): void
         public store(): void
         public getMBeanInfo(): javax.management.MBeanInfo
-        public invoke(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
+        public invoke(arg0: java.lang.String | string, arg1: java.lang.Object[] | any[], arg2: java.lang.String[] | string[]): java.lang.Object
         public getAttribute(arg0: java.lang.String | string): java.lang.Object
-        public getAttributes(arg0: java.lang.String[]): javax.management.AttributeList
+        public getAttributes(arg0: java.lang.String[] | string[]): javax.management.AttributeList
         public setAttribute(arg0: javax.management.Attribute): void
         public setAttributes(arg0: javax.management.AttributeList): javax.management.AttributeList
         public addNotificationListener(arg0: javax.management.NotificationListener | javax.management.NotificationListener$$lambda, arg1: javax.management.NotificationFilter | javax.management.NotificationFilter$$lambda, arg2: java.lang.Object | any): void

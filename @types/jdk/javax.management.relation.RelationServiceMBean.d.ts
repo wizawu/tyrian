@@ -30,7 +30,7 @@ declare namespace javax {
         findAssociatedMBeans(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.String | string): java.util.Map<javax.management.ObjectName,java.util.List<java.lang.String>>
         findRelationsOfType(arg0: java.lang.String | string): java.util.List<java.lang.String>
         getRole(arg0: java.lang.String | string, arg1: java.lang.String | string): java.util.List<javax.management.ObjectName>
-        getRoles(arg0: java.lang.String | string, arg1: java.lang.String[]): javax.management.relation.RoleResult
+        getRoles(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): javax.management.relation.RoleResult
         getAllRoles(arg0: java.lang.String | string): javax.management.relation.RoleResult
         getRoleCardinality(arg0: java.lang.String | string, arg1: java.lang.String | string): number
         setRole(arg0: java.lang.String | string, arg1: javax.management.relation.Role): void

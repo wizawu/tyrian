@@ -7,7 +7,7 @@ declare namespace javax {
         protected areNew: boolean[]
         protected oldLeadSelectionPath: javax.swing.tree.TreePath
         protected newLeadSelectionPath: javax.swing.tree.TreePath
-        public constructor(arg0: java.lang.Object | any, arg1: javax.swing.tree.TreePath[], arg2: boolean[], arg3: javax.swing.tree.TreePath, arg4: javax.swing.tree.TreePath)
+        public constructor(arg0: java.lang.Object | any, arg1: javax.swing.tree.TreePath[], arg2: boolean[] | java.lang.Boolean[], arg3: javax.swing.tree.TreePath, arg4: javax.swing.tree.TreePath)
         public constructor(arg0: java.lang.Object | any, arg1: javax.swing.tree.TreePath, arg2: boolean | java.lang.Boolean, arg3: javax.swing.tree.TreePath, arg4: javax.swing.tree.TreePath)
         public getPaths(): javax.swing.tree.TreePath[]
         public getPath(): javax.swing.tree.TreePath

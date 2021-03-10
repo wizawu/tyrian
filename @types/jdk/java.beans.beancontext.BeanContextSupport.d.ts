@@ -22,7 +22,7 @@ declare namespace java {
         public containsKey(arg0: java.lang.Object | any): boolean
         public iterator(): java.util.Iterator<java.lang.Object>
         public toArray(): java.lang.Object[]
-        public toArray(arg0: java.lang.Object[]): java.lang.Object[]
+        public toArray(arg0: java.lang.Object[] | any[]): java.lang.Object[]
         protected createBCSChild(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.beans.beancontext.BeanContextSupport$BCSChild
         public add(arg0: java.lang.Object | any): boolean
         public remove(arg0: java.lang.Object | any): boolean

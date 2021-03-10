@@ -13,11 +13,11 @@ declare namespace java {
       public static toOctalString(arg0: number | java.lang.Long): java.lang.String
       public static toBinaryString(arg0: number | java.lang.Long): java.lang.String
       static toUnsignedString0(arg0: number | java.lang.Long, arg1: number | java.lang.Integer): java.lang.String
-      static formatUnsignedLong0(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: byte[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      static formatUnsignedLong0(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Byte[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
       static fastUUID(arg0: number | java.lang.Long, arg1: number | java.lang.Long): java.lang.String
       public static toString(arg0: number | java.lang.Long): java.lang.String
       public static toUnsignedString(arg0: number | java.lang.Long): java.lang.String
-      static getChars(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: byte[]): number
+      static getChars(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Byte[]): number
       static stringSize(arg0: number | java.lang.Long): number
       public static parseLong(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
       public static parseLong(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number

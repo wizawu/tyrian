@@ -3,7 +3,7 @@ declare namespace jdk {
 
     abstract class SourceCodeAnalysis {
       public abstract analyzeCompletion(arg0: java.lang.String | string): jdk.jshell.SourceCodeAnalysis$CompletionInfo
-      public abstract completionSuggestions(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: int[]): java.util.List<jdk.jshell.SourceCodeAnalysis$Suggestion>
+      public abstract completionSuggestions(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[]): java.util.List<jdk.jshell.SourceCodeAnalysis$Suggestion>
       public abstract documentation(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): java.util.List<jdk.jshell.SourceCodeAnalysis$Documentation>
       public abstract analyzeType(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.lang.String
       public abstract listQualifiedNames(arg0: java.lang.String | string, arg1: number | java.lang.Integer): jdk.jshell.SourceCodeAnalysis$QualifiedNames

@@ -5,8 +5,8 @@ declare namespace javax {
       abstract class MidiMessage implements java.lang.Cloneable {
         protected data: byte[]
         protected length: int
-        protected constructor(arg0: byte[])
-        protected setMessage(arg0: byte[], arg1: number | java.lang.Integer): void
+        protected constructor(arg0: number[] | java.lang.Byte[])
+        protected setMessage(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): void
         public getMessage(): number[]
         public getStatus(): number
         public getLength(): number

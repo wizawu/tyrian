@@ -7,7 +7,7 @@ declare namespace com {
           abstract class Connection {
             public constructor()
             public abstract readPacket(): number[]
-            public abstract writePacket(arg0: byte[]): void
+            public abstract writePacket(arg0: number[] | java.lang.Byte[]): void
             public abstract close(): void
             public abstract isOpen(): boolean
           }

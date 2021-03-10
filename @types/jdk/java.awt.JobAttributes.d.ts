@@ -4,7 +4,7 @@ declare namespace java {
     class JobAttributes implements java.lang.Cloneable {
       public constructor()
       public constructor(arg0: java.awt.JobAttributes)
-      public constructor(arg0: number | java.lang.Integer, arg1: java.awt.JobAttributes$DefaultSelectionType, arg2: java.awt.JobAttributes$DestinationType, arg3: java.awt.JobAttributes$DialogType, arg4: java.lang.String | string, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: java.awt.JobAttributes$MultipleDocumentHandlingType, arg8: int[][], arg9: java.lang.String | string, arg10: java.awt.JobAttributes$SidesType)
+      public constructor(arg0: number | java.lang.Integer, arg1: java.awt.JobAttributes$DefaultSelectionType, arg2: java.awt.JobAttributes$DestinationType, arg3: java.awt.JobAttributes$DialogType, arg4: java.lang.String | string, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: java.awt.JobAttributes$MultipleDocumentHandlingType, arg8: number[][] | java.lang.Integer[][], arg9: java.lang.String | string, arg10: java.awt.JobAttributes$SidesType)
       public clone(): java.lang.Object
       public set(arg0: java.awt.JobAttributes): void
       public getCopies(): number
@@ -28,7 +28,7 @@ declare namespace java {
       public setMultipleDocumentHandling(arg0: java.awt.JobAttributes$MultipleDocumentHandlingType): void
       public setMultipleDocumentHandlingToDefault(): void
       public getPageRanges(): number[][]
-      public setPageRanges(arg0: int[][]): void
+      public setPageRanges(arg0: number[][] | java.lang.Integer[][]): void
       public getPrinter(): java.lang.String
       public setPrinter(arg0: java.lang.String | string): void
       public getSides(): java.awt.JobAttributes$SidesType

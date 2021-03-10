@@ -7,10 +7,10 @@ declare namespace java {
         bankdata: byte[][]
         public constructor(arg0: number | java.lang.Integer)
         public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
-        public constructor(arg0: byte[], arg1: number | java.lang.Integer)
-        public constructor(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-        public constructor(arg0: byte[][], arg1: number | java.lang.Integer)
-        public constructor(arg0: byte[][], arg1: number | java.lang.Integer, arg2: int[])
+        public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer)
+        public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(arg0: number[][] | java.lang.Byte[][], arg1: number | java.lang.Integer)
+        public constructor(arg0: number[][] | java.lang.Byte[][], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[])
         public getData(): number[]
         public getData(arg0: number | java.lang.Integer): number[]
         public getBankData(): number[][]

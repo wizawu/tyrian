@@ -25,9 +25,9 @@ declare namespace java {
         public getRaster(): java.awt.image.WritableRaster
         public getAlphaRaster(): java.awt.image.WritableRaster
         public getRGB(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
-        public getRGB(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: int[], arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): number[]
+        public getRGB(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Integer[], arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): number[]
         public setRGB(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-        public setRGB(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: int[], arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): void
+        public setRGB(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Integer[], arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): void
         public getWidth(): number
         public getHeight(): number
         public getWidth(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): number

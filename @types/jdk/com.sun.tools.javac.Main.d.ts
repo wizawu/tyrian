@@ -5,9 +5,9 @@ declare namespace com {
 
         class Main {
           public constructor()
-          public static main(arg0: java.lang.String[]): void
-          public static compile(arg0: java.lang.String[]): number
-          public static compile(arg0: java.lang.String[], arg1: java.io.PrintWriter): number
+          public static main(arg0: java.lang.String[] | string[]): void
+          public static compile(arg0: java.lang.String[] | string[]): number
+          public static compile(arg0: java.lang.String[] | string[], arg1: java.io.PrintWriter): number
         }
 
       }

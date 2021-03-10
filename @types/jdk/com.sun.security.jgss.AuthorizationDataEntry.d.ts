@@ -4,7 +4,7 @@ declare namespace com {
       namespace jgss {
 
         class AuthorizationDataEntry {
-          public constructor(arg0: number | java.lang.Integer, arg1: byte[])
+          public constructor(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[])
           public getType(): number
           public getData(): number[]
           public toString(): java.lang.String

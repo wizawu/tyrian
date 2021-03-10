@@ -7,7 +7,7 @@ declare namespace javax {
         protected outputTypes: java.lang.Class<unknown>[]
         protected readerSpiNames: java.lang.String[]
         protected constructor()
-        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String[], arg3: java.lang.String[], arg4: java.lang.String[], arg5: java.lang.String | string, arg6: java.lang.Class<unknown>[], arg7: java.lang.String[], arg8: boolean | java.lang.Boolean, arg9: java.lang.String | string, arg10: java.lang.String | string, arg11: java.lang.String[], arg12: java.lang.String[], arg13: boolean | java.lang.Boolean, arg14: java.lang.String | string, arg15: java.lang.String | string, arg16: java.lang.String[], arg17: java.lang.String[])
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String[] | string[], arg3: java.lang.String[] | string[], arg4: java.lang.String[] | string[], arg5: java.lang.String | string, arg6: java.lang.Class<unknown>[], arg7: java.lang.String[] | string[], arg8: boolean | java.lang.Boolean, arg9: java.lang.String | string, arg10: java.lang.String | string, arg11: java.lang.String[] | string[], arg12: java.lang.String[] | string[], arg13: boolean | java.lang.Boolean, arg14: java.lang.String | string, arg15: java.lang.String | string, arg16: java.lang.String[] | string[], arg17: java.lang.String[] | string[])
         public isFormatLossless(): boolean
         public getOutputTypes(): java.lang.Class<unknown>[]
         public abstract canEncodeImage(arg0: javax.imageio.ImageTypeSpecifier): boolean

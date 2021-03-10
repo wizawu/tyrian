@@ -9,7 +9,7 @@ declare namespace java {
         protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
         public getNumComponents(): number
         public getOffset(): number
-        public abstract lookupPixel(arg0: int[], arg1: int[]): number[]
+        public abstract lookupPixel(arg0: number[] | java.lang.Integer[], arg1: number[] | java.lang.Integer[]): number[]
       }
 
     }

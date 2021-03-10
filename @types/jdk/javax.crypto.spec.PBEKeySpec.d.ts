@@ -3,9 +3,9 @@ declare namespace javax {
     namespace spec {
 
       class PBEKeySpec implements java.security.spec.KeySpec {
-        public constructor(arg0: char[])
-        public constructor(arg0: char[], arg1: byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-        public constructor(arg0: char[], arg1: byte[], arg2: number | java.lang.Integer)
+        public constructor(arg0: string[] | java.lang.Character[])
+        public constructor(arg0: string[] | java.lang.Character[], arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        public constructor(arg0: string[] | java.lang.Character[], arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer)
         public clearPassword(): void
         public getPassword(): string[]
         public getSalt(): number[]

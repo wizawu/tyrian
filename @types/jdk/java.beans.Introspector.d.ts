@@ -16,7 +16,7 @@ declare namespace java {
       public static getBeanInfo(arg0: java.lang.Class<unknown>, arg1: java.lang.Class<unknown>, arg2: number | java.lang.Integer): java.beans.BeanInfo
       public static decapitalize(arg0: java.lang.String | string): java.lang.String
       public static getBeanInfoSearchPath(): java.lang.String[]
-      public static setBeanInfoSearchPath(arg0: java.lang.String[]): void
+      public static setBeanInfoSearchPath(arg0: java.lang.String[] | string[]): void
       public static flushCaches(): void
       public static flushFromCaches(arg0: java.lang.Class<unknown>): void
       static findMethod(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: number | java.lang.Integer): java.lang.reflect.Method

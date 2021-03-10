@@ -26,8 +26,8 @@ declare namespace java {
         public isDone(): boolean
         ensureHoldCapacity(arg0: number | java.lang.Integer): void
         public next(): void
-        public currentSegment(arg0: float[]): number
-        public currentSegment(arg0: double[]): number
+        public currentSegment(arg0: number[] | java.lang.Float[]): number
+        public currentSegment(arg0: number[] | java.lang.Double[]): number
       }
 
     }

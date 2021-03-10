@@ -16,8 +16,8 @@ declare namespace javax {
       public constructor(arg0: java.net.URL)
       public constructor(arg0: java.awt.Image, arg1: java.lang.String | string)
       public constructor(arg0: java.awt.Image)
-      public constructor(arg0: byte[], arg1: java.lang.String | string)
-      public constructor(arg0: byte[])
+      public constructor(arg0: number[] | java.lang.Byte[], arg1: java.lang.String | string)
+      public constructor(arg0: number[] | java.lang.Byte[])
       public constructor()
       protected loadImage(arg0: java.awt.Image): void
       public getImageLoadStatus(): number

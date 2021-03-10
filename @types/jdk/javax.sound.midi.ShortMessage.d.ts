@@ -25,7 +25,7 @@ declare namespace javax {
         public constructor(arg0: number | java.lang.Integer)
         public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
         public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-        protected constructor(arg0: byte[])
+        protected constructor(arg0: number[] | java.lang.Byte[])
         public setMessage(arg0: number | java.lang.Integer): void
         public setMessage(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         public setMessage(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void

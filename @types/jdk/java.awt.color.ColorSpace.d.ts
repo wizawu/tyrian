@@ -37,10 +37,10 @@ declare namespace java {
         protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
         public static getInstance(arg0: number | java.lang.Integer): java.awt.color.ColorSpace
         public isCS_sRGB(): boolean
-        public abstract toRGB(arg0: float[]): number[]
-        public abstract fromRGB(arg0: float[]): number[]
-        public abstract toCIEXYZ(arg0: float[]): number[]
-        public abstract fromCIEXYZ(arg0: float[]): number[]
+        public abstract toRGB(arg0: number[] | java.lang.Float[]): number[]
+        public abstract fromRGB(arg0: number[] | java.lang.Float[]): number[]
+        public abstract toCIEXYZ(arg0: number[] | java.lang.Float[]): number[]
+        public abstract fromCIEXYZ(arg0: number[] | java.lang.Float[]): number[]
         public getType(): number
         public getNumComponents(): number
         public getName(arg0: number | java.lang.Integer): java.lang.String

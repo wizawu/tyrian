@@ -4,7 +4,7 @@ declare namespace java {
     class SecureRandom extends java.util.Random {
       static readonly serialVersionUID: long
       public constructor()
-      public constructor(arg0: byte[])
+      public constructor(arg0: number[] | java.lang.Byte[])
       protected constructor(arg0: java.security.SecureRandomSpi, arg1: java.security.Provider)
       public static getInstance(arg0: java.lang.String | string): java.security.SecureRandom
       public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string): java.security.SecureRandom
@@ -16,10 +16,10 @@ declare namespace java {
       public getAlgorithm(): java.lang.String
       public toString(): java.lang.String
       public getParameters(): java.security.SecureRandomParameters
-      public setSeed(arg0: byte[]): void
+      public setSeed(arg0: number[] | java.lang.Byte[]): void
       public setSeed(arg0: number | java.lang.Long): void
-      public nextBytes(arg0: byte[]): void
-      public nextBytes(arg0: byte[], arg1: java.security.SecureRandomParameters): void
+      public nextBytes(arg0: number[] | java.lang.Byte[]): void
+      public nextBytes(arg0: number[] | java.lang.Byte[], arg1: java.security.SecureRandomParameters): void
       protected next(arg0: number | java.lang.Integer): number
       public static getSeed(arg0: number | java.lang.Integer): number[]
       public generateSeed(arg0: number | java.lang.Integer): number[]

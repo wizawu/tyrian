@@ -30,8 +30,8 @@ declare namespace org {
           public endDocument(): void
           public startElement(arg0: java.lang.String | string, arg1: org.xml.sax.AttributeList): void
           public endElement(arg0: java.lang.String | string): void
-          public characters(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-          public ignorableWhitespace(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+          public characters(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+          public ignorableWhitespace(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
           public processingInstruction(arg0: java.lang.String | string, arg1: java.lang.String | string): void
           reportError(arg0: java.lang.String | string): void
         }

@@ -5,10 +5,10 @@ declare namespace java {
       public constructor(arg0: java.io.Reader, arg1: number | java.lang.Integer)
       public constructor(arg0: java.io.Reader)
       public read(): number
-      public read(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public unread(arg0: number | java.lang.Integer): void
-      public unread(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-      public unread(arg0: char[]): void
+      public unread(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public unread(arg0: string[] | java.lang.Character[]): void
       public ready(): boolean
       public mark(arg0: number | java.lang.Integer): void
       public reset(): void

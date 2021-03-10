@@ -14,7 +14,7 @@ declare namespace java {
       public setFormat(arg0: number | java.lang.Integer, arg1: java.text.Format): void
       public getFormatsByArgumentIndex(): java.text.Format[]
       public getFormats(): java.text.Format[]
-      public format(arg0: java.lang.Object[], arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+      public format(arg0: java.lang.Object[] | any[], arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
       public static format(arg0: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.lang.String
       public format(arg0: java.lang.Object | any, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
       public formatToCharacterIterator(arg0: java.lang.Object | any): java.text.AttributedCharacterIterator

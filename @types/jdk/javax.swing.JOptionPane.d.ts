@@ -44,7 +44,7 @@ declare namespace javax {
       public static showInputDialog(arg0: java.awt.Component, arg1: java.lang.Object | any): java.lang.String
       public static showInputDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.Object | any): java.lang.String
       public static showInputDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer): java.lang.String
-      public static showInputDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: javax.swing.Icon, arg5: java.lang.Object[], arg6: java.lang.Object | any): java.lang.Object
+      public static showInputDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: javax.swing.Icon, arg5: java.lang.Object[] | any[], arg6: java.lang.Object | any): java.lang.Object
       public static showMessageDialog(arg0: java.awt.Component, arg1: java.lang.Object | any): void
       public static showMessageDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer): void
       public static showMessageDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: javax.swing.Icon): void
@@ -52,7 +52,7 @@ declare namespace javax {
       public static showConfirmDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer): number
       public static showConfirmDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
       public static showConfirmDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: javax.swing.Icon): number
-      public static showOptionDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: javax.swing.Icon, arg6: java.lang.Object[], arg7: java.lang.Object | any): number
+      public static showOptionDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: javax.swing.Icon, arg6: java.lang.Object[] | any[], arg7: java.lang.Object | any): number
       public createDialog(arg0: java.awt.Component, arg1: java.lang.String | string): javax.swing.JDialog
       public createDialog(arg0: java.lang.String | string): javax.swing.JDialog
       public static showInternalMessageDialog(arg0: java.awt.Component, arg1: java.lang.Object | any): void
@@ -62,10 +62,10 @@ declare namespace javax {
       public static showInternalConfirmDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer): number
       public static showInternalConfirmDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
       public static showInternalConfirmDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: javax.swing.Icon): number
-      public static showInternalOptionDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: javax.swing.Icon, arg6: java.lang.Object[], arg7: java.lang.Object | any): number
+      public static showInternalOptionDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: javax.swing.Icon, arg6: java.lang.Object[] | any[], arg7: java.lang.Object | any): number
       public static showInternalInputDialog(arg0: java.awt.Component, arg1: java.lang.Object | any): java.lang.String
       public static showInternalInputDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer): java.lang.String
-      public static showInternalInputDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: javax.swing.Icon, arg5: java.lang.Object[], arg6: java.lang.Object | any): java.lang.Object
+      public static showInternalInputDialog(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: javax.swing.Icon, arg5: java.lang.Object[] | any[], arg6: java.lang.Object | any): java.lang.Object
       public createInternalFrame(arg0: java.awt.Component, arg1: java.lang.String | string): javax.swing.JInternalFrame
       public static getFrameForComponent(arg0: java.awt.Component): java.awt.Frame
       static getWindowForComponent(arg0: java.awt.Component): java.awt.Window
@@ -77,8 +77,8 @@ declare namespace javax {
       public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer)
       public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
       public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: javax.swing.Icon)
-      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: javax.swing.Icon, arg4: java.lang.Object[])
-      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: javax.swing.Icon, arg4: java.lang.Object[], arg5: java.lang.Object | any)
+      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: javax.swing.Icon, arg4: java.lang.Object[] | any[])
+      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: javax.swing.Icon, arg4: java.lang.Object[] | any[], arg5: java.lang.Object | any)
       public setUI(arg0: javax.swing.plaf.OptionPaneUI): void
       public getUI(): javax.swing.plaf.OptionPaneUI
       public updateUI(): void
@@ -89,7 +89,7 @@ declare namespace javax {
       public getIcon(): javax.swing.Icon
       public setValue(arg0: java.lang.Object | any): void
       public getValue(): java.lang.Object
-      public setOptions(arg0: java.lang.Object[]): void
+      public setOptions(arg0: java.lang.Object[] | any[]): void
       public getOptions(): java.lang.Object[]
       public setInitialValue(arg0: java.lang.Object | any): void
       public getInitialValue(): java.lang.Object
@@ -97,7 +97,7 @@ declare namespace javax {
       public getMessageType(): number
       public setOptionType(arg0: number | java.lang.Integer): void
       public getOptionType(): number
-      public setSelectionValues(arg0: java.lang.Object[]): void
+      public setSelectionValues(arg0: java.lang.Object[] | any[]): void
       public getSelectionValues(): java.lang.Object[]
       public setInitialSelectionValue(arg0: java.lang.Object | any): void
       public getInitialSelectionValue(): java.lang.Object

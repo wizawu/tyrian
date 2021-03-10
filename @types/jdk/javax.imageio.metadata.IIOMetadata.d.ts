@@ -11,7 +11,7 @@ declare namespace javax {
         protected defaultController: javax.imageio.metadata.IIOMetadataController
         protected controller: javax.imageio.metadata.IIOMetadataController
         protected constructor()
-        protected constructor(arg0: boolean | java.lang.Boolean, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String[], arg4: java.lang.String[])
+        protected constructor(arg0: boolean | java.lang.Boolean, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String[] | string[], arg4: java.lang.String[] | string[])
         public isStandardMetadataFormatSupported(): boolean
         public abstract isReadOnly(): boolean
         public getNativeMetadataFormatName(): java.lang.String

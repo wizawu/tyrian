@@ -3,7 +3,7 @@ declare namespace java {
     namespace reflect {
 
       class Field extends java.lang.reflect.AccessibleObject implements java.lang.reflect.Member {
-        constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.Class<unknown>, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: java.lang.String | string, arg6: byte[])
+        constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.Class<unknown>, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: java.lang.String | string, arg6: number[] | java.lang.Byte[])
         copy(): java.lang.reflect.Field
         public setAccessible(arg0: boolean | java.lang.Boolean): void
         checkCanSetAccessible(arg0: java.lang.Class<unknown>): void

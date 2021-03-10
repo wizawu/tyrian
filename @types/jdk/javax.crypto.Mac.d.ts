@@ -13,12 +13,12 @@ declare namespace javax {
       public init(arg0: java.security.Key): void
       public init(arg0: java.security.Key, arg1: java.security.spec.AlgorithmParameterSpec): void
       public update(arg0: number | java.lang.Byte): void
-      public update(arg0: byte[]): void
-      public update(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public update(arg0: number[] | java.lang.Byte[]): void
+      public update(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public update(arg0: java.nio.ByteBuffer): void
       public doFinal(): number[]
-      public doFinal(arg0: byte[], arg1: number | java.lang.Integer): void
-      public doFinal(arg0: byte[]): number[]
+      public doFinal(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): void
+      public doFinal(arg0: number[] | java.lang.Byte[]): number[]
       public reset(): void
       public clone(): java.lang.Object
     }

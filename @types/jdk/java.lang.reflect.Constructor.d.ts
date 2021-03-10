@@ -5,7 +5,7 @@ declare namespace java {
       class Constructor<T> extends java.lang.reflect.Executable {
         getGenericInfo(): sun.reflect.generics.repository.ConstructorRepository
         getRoot(): java.lang.reflect.Constructor<T>
-        constructor(arg0: java.lang.Class<T>, arg1: java.lang.Class<unknown>[], arg2: java.lang.Class<unknown>[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: java.lang.String | string, arg6: byte[], arg7: byte[])
+        constructor(arg0: java.lang.Class<T>, arg1: java.lang.Class<unknown>[], arg2: java.lang.Class<unknown>[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: java.lang.String | string, arg6: number[] | java.lang.Byte[], arg7: number[] | java.lang.Byte[])
         copy(): java.lang.reflect.Constructor<T>
         public setAccessible(arg0: boolean | java.lang.Boolean): void
         checkCanSetAccessible(arg0: java.lang.Class<unknown>): void

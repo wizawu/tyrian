@@ -5,9 +5,9 @@ declare namespace java {
       static readonly $assertionsDisabled: boolean
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
-      public static valueOf(arg0: long[]): java.util.BitSet
+      public static valueOf(arg0: number[] | java.lang.Long[]): java.util.BitSet
       public static valueOf(arg0: java.nio.LongBuffer): java.util.BitSet
-      public static valueOf(arg0: byte[]): java.util.BitSet
+      public static valueOf(arg0: number[] | java.lang.Byte[]): java.util.BitSet
       public static valueOf(arg0: java.nio.ByteBuffer): java.util.BitSet
       public toByteArray(): number[]
       public toLongArray(): number[]

@@ -12,7 +12,7 @@ declare namespace javax {
         public getString(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
         public getChars(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: javax.swing.text.Segment): void
         public createPosition(arg0: number | java.lang.Integer): javax.swing.text.Position
-        replace(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: char[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        replace(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: string[] | java.lang.Character[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
         resize(arg0: number | java.lang.Integer): void
         updateMarksForInsert(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
         updateMarksForRemove(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void

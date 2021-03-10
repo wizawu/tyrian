@@ -14,7 +14,7 @@ declare namespace com {
         public containsValue(arg0: java.lang.Object | any): boolean
         public equals(arg0: java.lang.Object | any): boolean
         public get(arg0: java.lang.String | string): java.lang.Object
-        public getAll(arg0: java.lang.String[]): java.lang.Object[]
+        public getAll(arg0: java.lang.String[] | string[]): java.lang.Object[]
         public getCompositeType(): javax.management.openmbean.CompositeType
         public hashCode(): number
         public toString(): java.lang.String

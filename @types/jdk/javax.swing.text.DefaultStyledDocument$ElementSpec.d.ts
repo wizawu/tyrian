@@ -12,7 +12,7 @@ declare namespace javax {
         public static readonly JoinFractureDirection: short
         public constructor(arg0: javax.swing.text.AttributeSet, arg1: number | java.lang.Short)
         public constructor(arg0: javax.swing.text.AttributeSet, arg1: number | java.lang.Short, arg2: number | java.lang.Integer)
-        public constructor(arg0: javax.swing.text.AttributeSet, arg1: number | java.lang.Short, arg2: char[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+        public constructor(arg0: javax.swing.text.AttributeSet, arg1: number | java.lang.Short, arg2: string[] | java.lang.Character[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
         public setType(arg0: number | java.lang.Short): void
         public getType(): number
         public setDirection(arg0: number | java.lang.Short): void

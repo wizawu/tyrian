@@ -14,9 +14,9 @@ declare namespace javax {
             protected makeTag(arg0: javax.swing.text.html.parser.Element): javax.swing.text.html.parser.TagElement
             protected getAttributes(): javax.swing.text.SimpleAttributeSet
             protected flushAttributes(): void
-            protected handleText(arg0: char[]): void
-            protected handleTitle(arg0: char[]): void
-            protected handleComment(arg0: char[]): void
+            protected handleText(arg0: string[] | java.lang.Character[]): void
+            protected handleTitle(arg0: string[] | java.lang.Character[]): void
+            protected handleComment(arg0: string[] | java.lang.Character[]): void
             protected handleEOFInComment(): void
             protected handleEmptyTag(arg0: javax.swing.text.html.parser.TagElement): void
             protected handleStartTag(arg0: javax.swing.text.html.parser.TagElement): void

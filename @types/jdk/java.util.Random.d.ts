@@ -10,7 +10,7 @@ declare namespace java {
       public constructor(arg0: number | java.lang.Long)
       public setSeed(arg0: number | java.lang.Long): void
       protected next(arg0: number | java.lang.Integer): number
-      public nextBytes(arg0: byte[]): void
+      public nextBytes(arg0: number[] | java.lang.Byte[]): void
       internalNextLong(arg0: number | java.lang.Long, arg1: number | java.lang.Long): number
       internalNextInt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
       internalNextDouble(arg0: number | java.lang.Double, arg1: number | java.lang.Double): number

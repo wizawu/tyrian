@@ -5,20 +5,20 @@ declare namespace org {
       interface GSSContext {
         public static readonly DEFAULT_LIFETIME: int
         public static readonly INDEFINITE_LIFETIME: int
-        initSecContext(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
+        initSecContext(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
         initSecContext(arg0: java.io.InputStream, arg1: java.io.OutputStream): number
-        acceptSecContext(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
+        acceptSecContext(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
         acceptSecContext(arg0: java.io.InputStream, arg1: java.io.OutputStream): void
         isEstablished(): boolean
         dispose(): void
         getWrapSizeLimit(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean, arg2: number | java.lang.Integer): number
-        wrap(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: org.ietf.jgss.MessageProp): number[]
+        wrap(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: org.ietf.jgss.MessageProp): number[]
         wrap(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: org.ietf.jgss.MessageProp): void
-        unwrap(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: org.ietf.jgss.MessageProp): number[]
+        unwrap(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: org.ietf.jgss.MessageProp): number[]
         unwrap(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: org.ietf.jgss.MessageProp): void
-        getMIC(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: org.ietf.jgss.MessageProp): number[]
+        getMIC(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: org.ietf.jgss.MessageProp): number[]
         getMIC(arg0: java.io.InputStream, arg1: java.io.OutputStream, arg2: org.ietf.jgss.MessageProp): void
-        verifyMIC(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: byte[], arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: org.ietf.jgss.MessageProp): void
+        verifyMIC(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number[] | java.lang.Byte[], arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: org.ietf.jgss.MessageProp): void
         verifyMIC(arg0: java.io.InputStream, arg1: java.io.InputStream, arg2: org.ietf.jgss.MessageProp): void
         export(): number[]
         requestMutualAuth(arg0: boolean | java.lang.Boolean): void

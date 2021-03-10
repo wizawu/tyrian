@@ -9,15 +9,15 @@ declare namespace javax {
         public getTabularType(): javax.management.openmbean.TabularType
         public calculateIndex(arg0: javax.management.openmbean.CompositeData): java.lang.Object[]
         public containsKey(arg0: java.lang.Object | any): boolean
-        public containsKey(arg0: java.lang.Object[]): boolean
+        public containsKey(arg0: java.lang.Object[] | any[]): boolean
         public containsValue(arg0: javax.management.openmbean.CompositeData): boolean
         public containsValue(arg0: java.lang.Object | any): boolean
         public get(arg0: java.lang.Object | any): java.lang.Object
-        public get(arg0: java.lang.Object[]): javax.management.openmbean.CompositeData
+        public get(arg0: java.lang.Object[] | any[]): javax.management.openmbean.CompositeData
         public put(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
         public put(arg0: javax.management.openmbean.CompositeData): void
         public remove(arg0: java.lang.Object | any): java.lang.Object
-        public remove(arg0: java.lang.Object[]): javax.management.openmbean.CompositeData
+        public remove(arg0: java.lang.Object[] | any[]): javax.management.openmbean.CompositeData
         public putAll(arg0: java.util.Map<unknown,unknown>): void
         public putAll(arg0: javax.management.openmbean.CompositeData[]): void
         public clear(): void

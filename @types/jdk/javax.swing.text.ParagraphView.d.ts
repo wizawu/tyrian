@@ -23,7 +23,7 @@ declare namespace javax {
         public nextTabStop(arg0: number | java.lang.Float, arg1: number | java.lang.Integer): number
         protected getTabSet(): javax.swing.text.TabSet
         protected getPartialSize(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
-        protected findOffsetToCharactersInString(arg0: char[], arg1: number | java.lang.Integer): number
+        protected findOffsetToCharactersInString(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer): number
         protected getTabBase(): number
         public paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void
         public getAlignment(arg0: number | java.lang.Integer): number

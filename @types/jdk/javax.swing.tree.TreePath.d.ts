@@ -3,10 +3,10 @@ declare namespace javax {
     namespace tree {
 
       class TreePath implements java.io.Serializable {
-        public constructor(arg0: java.lang.Object[])
+        public constructor(arg0: java.lang.Object[] | any[])
         public constructor(arg0: java.lang.Object | any)
         protected constructor(arg0: javax.swing.tree.TreePath, arg1: java.lang.Object | any)
-        protected constructor(arg0: java.lang.Object[], arg1: number | java.lang.Integer)
+        protected constructor(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer)
         protected constructor()
         public getPath(): java.lang.Object[]
         public getLastPathComponent(): java.lang.Object

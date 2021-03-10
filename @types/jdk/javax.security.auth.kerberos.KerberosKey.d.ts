@@ -4,8 +4,8 @@ declare namespace javax {
       namespace kerberos {
 
         class KerberosKey implements javax.crypto.SecretKey {
-          public constructor(arg0: javax.security.auth.kerberos.KerberosPrincipal, arg1: byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-          public constructor(arg0: javax.security.auth.kerberos.KerberosPrincipal, arg1: char[], arg2: java.lang.String | string)
+          public constructor(arg0: javax.security.auth.kerberos.KerberosPrincipal, arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+          public constructor(arg0: javax.security.auth.kerberos.KerberosPrincipal, arg1: string[] | java.lang.Character[], arg2: java.lang.String | string)
           public getPrincipal(): javax.security.auth.kerberos.KerberosPrincipal
           public getVersionNumber(): number
           public getKeyType(): number

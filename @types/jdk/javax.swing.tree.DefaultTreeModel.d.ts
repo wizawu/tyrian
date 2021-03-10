@@ -22,19 +22,19 @@ declare namespace javax {
         public removeNodeFromParent(arg0: javax.swing.tree.MutableTreeNode): void
         public nodeChanged(arg0: javax.swing.tree.TreeNode): void
         public reload(arg0: javax.swing.tree.TreeNode): void
-        public nodesWereInserted(arg0: javax.swing.tree.TreeNode, arg1: int[]): void
-        public nodesWereRemoved(arg0: javax.swing.tree.TreeNode, arg1: int[], arg2: java.lang.Object[]): void
-        public nodesChanged(arg0: javax.swing.tree.TreeNode, arg1: int[]): void
+        public nodesWereInserted(arg0: javax.swing.tree.TreeNode, arg1: number[] | java.lang.Integer[]): void
+        public nodesWereRemoved(arg0: javax.swing.tree.TreeNode, arg1: number[] | java.lang.Integer[], arg2: java.lang.Object[] | any[]): void
+        public nodesChanged(arg0: javax.swing.tree.TreeNode, arg1: number[] | java.lang.Integer[]): void
         public nodeStructureChanged(arg0: javax.swing.tree.TreeNode): void
         public getPathToRoot(arg0: javax.swing.tree.TreeNode): javax.swing.tree.TreeNode[]
         protected getPathToRoot(arg0: javax.swing.tree.TreeNode, arg1: number | java.lang.Integer): javax.swing.tree.TreeNode[]
         public addTreeModelListener(arg0: javax.swing.event.TreeModelListener): void
         public removeTreeModelListener(arg0: javax.swing.event.TreeModelListener): void
         public getTreeModelListeners(): javax.swing.event.TreeModelListener[]
-        protected fireTreeNodesChanged(arg0: java.lang.Object | any, arg1: java.lang.Object[], arg2: int[], arg3: java.lang.Object[]): void
-        protected fireTreeNodesInserted(arg0: java.lang.Object | any, arg1: java.lang.Object[], arg2: int[], arg3: java.lang.Object[]): void
-        protected fireTreeNodesRemoved(arg0: java.lang.Object | any, arg1: java.lang.Object[], arg2: int[], arg3: java.lang.Object[]): void
-        protected fireTreeStructureChanged(arg0: java.lang.Object | any, arg1: java.lang.Object[], arg2: int[], arg3: java.lang.Object[]): void
+        protected fireTreeNodesChanged(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[], arg2: number[] | java.lang.Integer[], arg3: java.lang.Object[] | any[]): void
+        protected fireTreeNodesInserted(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[], arg2: number[] | java.lang.Integer[], arg3: java.lang.Object[] | any[]): void
+        protected fireTreeNodesRemoved(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[], arg2: number[] | java.lang.Integer[], arg3: java.lang.Object[] | any[]): void
+        protected fireTreeStructureChanged(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[], arg2: number[] | java.lang.Integer[], arg3: java.lang.Object[] | any[]): void
         public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
       }
 

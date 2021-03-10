@@ -63,7 +63,7 @@ declare namespace javax {
         public setDouble(arg0: number | java.lang.Integer, arg1: number | java.lang.Double): void
         public setBigDecimal(arg0: number | java.lang.Integer, arg1: java.math.BigDecimal): void
         public setString(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
-        public setBytes(arg0: number | java.lang.Integer, arg1: byte[]): void
+        public setBytes(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[]): void
         public setDate(arg0: number | java.lang.Integer, arg1: java.sql.Date): void
         public setTime(arg0: number | java.lang.Integer, arg1: java.sql.Time): void
         public setTimestamp(arg0: number | java.lang.Integer, arg1: java.sql.Timestamp): void
@@ -97,7 +97,7 @@ declare namespace javax {
         public setDouble(arg0: java.lang.String | string, arg1: number | java.lang.Double): void
         public setBigDecimal(arg0: java.lang.String | string, arg1: java.math.BigDecimal): void
         public setString(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-        public setBytes(arg0: java.lang.String | string, arg1: byte[]): void
+        public setBytes(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): void
         public setTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
         public setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
         public setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void

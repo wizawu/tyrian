@@ -16,9 +16,9 @@ declare namespace javax {
             public abstract newKeyInfo(arg0: java.util.List<javax.xml.crypto.XMLStructure>, arg1: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyInfo
             public abstract newKeyName(arg0: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.KeyName
             public abstract newKeyValue(arg0: java.security.PublicKey): javax.xml.crypto.dsig.keyinfo.KeyValue
-            public abstract newPGPData(arg0: byte[]): javax.xml.crypto.dsig.keyinfo.PGPData
-            public abstract newPGPData(arg0: byte[], arg1: byte[], arg2: java.util.List<javax.xml.crypto.XMLStructure>): javax.xml.crypto.dsig.keyinfo.PGPData
-            public abstract newPGPData(arg0: byte[], arg1: java.util.List<javax.xml.crypto.XMLStructure>): javax.xml.crypto.dsig.keyinfo.PGPData
+            public abstract newPGPData(arg0: number[] | java.lang.Byte[]): javax.xml.crypto.dsig.keyinfo.PGPData
+            public abstract newPGPData(arg0: number[] | java.lang.Byte[], arg1: number[] | java.lang.Byte[], arg2: java.util.List<javax.xml.crypto.XMLStructure>): javax.xml.crypto.dsig.keyinfo.PGPData
+            public abstract newPGPData(arg0: number[] | java.lang.Byte[], arg1: java.util.List<javax.xml.crypto.XMLStructure>): javax.xml.crypto.dsig.keyinfo.PGPData
             public abstract newRetrievalMethod(arg0: java.lang.String | string): javax.xml.crypto.dsig.keyinfo.RetrievalMethod
             public abstract newRetrievalMethod(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.util.List<javax.xml.crypto.dsig.Transform>): javax.xml.crypto.dsig.keyinfo.RetrievalMethod
             public abstract newX509Data(arg0: java.util.List<unknown>): javax.xml.crypto.dsig.keyinfo.X509Data

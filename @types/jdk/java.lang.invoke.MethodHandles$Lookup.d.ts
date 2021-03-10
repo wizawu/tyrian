@@ -18,7 +18,7 @@ declare namespace java {
         constructor(arg0: java.lang.Class<unknown>)
         public in(arg0: java.lang.Class<unknown>): java.lang.invoke.MethodHandles$Lookup
         public dropLookupMode(arg0: number | java.lang.Integer): java.lang.invoke.MethodHandles$Lookup
-        public defineClass(arg0: byte[]): java.lang.Class<unknown>
+        public defineClass(arg0: number[] | java.lang.Byte[]): java.lang.Class<unknown>
         public toString(): java.lang.String
         public findStatic(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
         public findVirtual(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle

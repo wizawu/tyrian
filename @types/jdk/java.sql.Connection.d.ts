@@ -41,8 +41,8 @@ declare namespace java {
       prepareStatement(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.sql.PreparedStatement
       prepareCall(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.sql.CallableStatement
       prepareStatement(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.sql.PreparedStatement
-      prepareStatement(arg0: java.lang.String | string, arg1: int[]): java.sql.PreparedStatement
-      prepareStatement(arg0: java.lang.String | string, arg1: java.lang.String[]): java.sql.PreparedStatement
+      prepareStatement(arg0: java.lang.String | string, arg1: number[] | java.lang.Integer[]): java.sql.PreparedStatement
+      prepareStatement(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): java.sql.PreparedStatement
       createClob(): java.sql.Clob
       createBlob(): java.sql.Blob
       createNClob(): java.sql.NClob
@@ -52,8 +52,8 @@ declare namespace java {
       setClientInfo(arg0: java.util.Properties): void
       getClientInfo(arg0: java.lang.String | string): java.lang.String
       getClientInfo(): java.util.Properties
-      createArrayOf(arg0: java.lang.String | string, arg1: java.lang.Object[]): java.sql.Array
-      createStruct(arg0: java.lang.String | string, arg1: java.lang.Object[]): java.sql.Struct
+      createArrayOf(arg0: java.lang.String | string, arg1: java.lang.Object[] | any[]): java.sql.Array
+      createStruct(arg0: java.lang.String | string, arg1: java.lang.Object[] | any[]): java.sql.Struct
       setSchema(arg0: java.lang.String | string): void
       getSchema(): java.lang.String
       abort(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): void

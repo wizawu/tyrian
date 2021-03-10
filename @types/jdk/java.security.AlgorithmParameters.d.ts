@@ -9,8 +9,8 @@ declare namespace java {
       public static getInstance(arg0: java.lang.String | string, arg1: java.security.Provider): java.security.AlgorithmParameters
       public getProvider(): java.security.Provider
       public init(arg0: java.security.spec.AlgorithmParameterSpec): void
-      public init(arg0: byte[]): void
-      public init(arg0: byte[], arg1: java.lang.String | string): void
+      public init(arg0: number[] | java.lang.Byte[]): void
+      public init(arg0: number[] | java.lang.Byte[], arg1: java.lang.String | string): void
       public getParameterSpec<T extends java.security.spec.AlgorithmParameterSpec>(arg0: java.lang.Class<T>): T
       public getEncoded(): number[]
       public getEncoded(arg0: java.lang.String | string): number[]

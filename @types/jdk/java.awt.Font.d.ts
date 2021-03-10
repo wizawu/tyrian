@@ -27,7 +27,7 @@ declare namespace java {
       public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
       public constructor(arg0: java.util.Map<java.text.AttributedCharacterIterator$Attribute,unknown>)
       protected constructor(arg0: java.awt.Font)
-      public static textRequiresLayout(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
+      public static textRequiresLayout(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
       public static getFont(arg0: java.util.Map<java.text.AttributedCharacterIterator$Attribute,unknown>): java.awt.Font
       public static createFonts(arg0: java.io.InputStream): java.awt.Font[]
       public static createFonts(arg0: java.io.File): java.awt.Font[]
@@ -69,24 +69,24 @@ declare namespace java {
       public canDisplay(arg0: string | java.lang.Character): boolean
       public canDisplay(arg0: number | java.lang.Integer): boolean
       public canDisplayUpTo(arg0: java.lang.String | string): number
-      public canDisplayUpTo(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public canDisplayUpTo(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public canDisplayUpTo(arg0: java.text.CharacterIterator, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public getItalicAngle(): number
       public hasUniformLineMetrics(): boolean
       public getLineMetrics(arg0: java.lang.String | string, arg1: java.awt.font.FontRenderContext): java.awt.font.LineMetrics
       public getLineMetrics(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.FontRenderContext): java.awt.font.LineMetrics
-      public getLineMetrics(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.FontRenderContext): java.awt.font.LineMetrics
+      public getLineMetrics(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.FontRenderContext): java.awt.font.LineMetrics
       public getLineMetrics(arg0: java.text.CharacterIterator, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.FontRenderContext): java.awt.font.LineMetrics
       public getStringBounds(arg0: java.lang.String | string, arg1: java.awt.font.FontRenderContext): java.awt.geom.Rectangle2D
       public getStringBounds(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.FontRenderContext): java.awt.geom.Rectangle2D
-      public getStringBounds(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.FontRenderContext): java.awt.geom.Rectangle2D
+      public getStringBounds(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.FontRenderContext): java.awt.geom.Rectangle2D
       public getStringBounds(arg0: java.text.CharacterIterator, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.FontRenderContext): java.awt.geom.Rectangle2D
       public getMaxCharBounds(arg0: java.awt.font.FontRenderContext): java.awt.geom.Rectangle2D
       public createGlyphVector(arg0: java.awt.font.FontRenderContext, arg1: java.lang.String | string): java.awt.font.GlyphVector
-      public createGlyphVector(arg0: java.awt.font.FontRenderContext, arg1: char[]): java.awt.font.GlyphVector
+      public createGlyphVector(arg0: java.awt.font.FontRenderContext, arg1: string[] | java.lang.Character[]): java.awt.font.GlyphVector
       public createGlyphVector(arg0: java.awt.font.FontRenderContext, arg1: java.text.CharacterIterator): java.awt.font.GlyphVector
-      public createGlyphVector(arg0: java.awt.font.FontRenderContext, arg1: int[]): java.awt.font.GlyphVector
-      public layoutGlyphVector(arg0: java.awt.font.FontRenderContext, arg1: char[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): java.awt.font.GlyphVector
+      public createGlyphVector(arg0: java.awt.font.FontRenderContext, arg1: number[] | java.lang.Integer[]): java.awt.font.GlyphVector
+      public layoutGlyphVector(arg0: java.awt.font.FontRenderContext, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): java.awt.font.GlyphVector
     }
 
   }

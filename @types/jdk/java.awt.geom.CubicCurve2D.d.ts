@@ -17,21 +17,21 @@ declare namespace java {
         public abstract getY2(): number
         public abstract getP2(): java.awt.geom.Point2D
         public abstract setCurve(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double, arg6: number | java.lang.Double, arg7: number | java.lang.Double): void
-        public setCurve(arg0: double[], arg1: number | java.lang.Integer): void
+        public setCurve(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer): void
         public setCurve(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D, arg2: java.awt.geom.Point2D, arg3: java.awt.geom.Point2D): void
         public setCurve(arg0: java.awt.geom.Point2D[], arg1: number | java.lang.Integer): void
         public setCurve(arg0: java.awt.geom.CubicCurve2D): void
         public static getFlatnessSq(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double, arg6: number | java.lang.Double, arg7: number | java.lang.Double): number
         public static getFlatness(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double, arg6: number | java.lang.Double, arg7: number | java.lang.Double): number
-        public static getFlatnessSq(arg0: double[], arg1: number | java.lang.Integer): number
-        public static getFlatness(arg0: double[], arg1: number | java.lang.Integer): number
+        public static getFlatnessSq(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer): number
+        public static getFlatness(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer): number
         public getFlatnessSq(): number
         public getFlatness(): number
         public subdivide(arg0: java.awt.geom.CubicCurve2D, arg1: java.awt.geom.CubicCurve2D): void
         public static subdivide(arg0: java.awt.geom.CubicCurve2D, arg1: java.awt.geom.CubicCurve2D, arg2: java.awt.geom.CubicCurve2D): void
-        public static subdivide(arg0: double[], arg1: number | java.lang.Integer, arg2: double[], arg3: number | java.lang.Integer, arg4: double[], arg5: number | java.lang.Integer): void
-        public static solveCubic(arg0: double[]): number
-        public static solveCubic(arg0: double[], arg1: double[]): number
+        public static subdivide(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Double[], arg3: number | java.lang.Integer, arg4: number[] | java.lang.Double[], arg5: number | java.lang.Integer): void
+        public static solveCubic(arg0: number[] | java.lang.Double[]): number
+        public static solveCubic(arg0: number[] | java.lang.Double[], arg1: number[] | java.lang.Double[]): number
         public contains(arg0: number | java.lang.Double, arg1: number | java.lang.Double): boolean
         public contains(arg0: java.awt.geom.Point2D): boolean
         public intersects(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): boolean

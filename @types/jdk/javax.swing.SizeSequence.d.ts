@@ -5,9 +5,9 @@ declare namespace javax {
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
       public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
-      public constructor(arg0: int[])
+      public constructor(arg0: number[] | java.lang.Integer[])
       setSizes(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
-      public setSizes(arg0: int[]): void
+      public setSizes(arg0: number[] | java.lang.Integer[]): void
       public getSizes(): number[]
       public getPosition(arg0: number | java.lang.Integer): number
       public getIndex(arg0: number | java.lang.Integer): number

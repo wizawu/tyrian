@@ -5,7 +5,7 @@ declare namespace java {
       class CopyOnWriteArrayList<E> implements java.util.List<E>, java.util.RandomAccess, java.lang.Cloneable, java.io.Serializable {
         readonly lock: java.lang.Object
         getArray(): java.lang.Object[]
-        setArray(arg0: java.lang.Object[]): void
+        setArray(arg0: java.lang.Object[] | any[]): void
         public constructor()
         public constructor(arg0: java.util.Collection<E>)
         public constructor(arg0: E[])
@@ -19,7 +19,7 @@ declare namespace java {
         public clone(): java.lang.Object
         public toArray(): java.lang.Object[]
         public toArray<T>(arg0: T[]): T[]
-        static elementAt<E>(arg0: java.lang.Object[], arg1: number | java.lang.Integer): E
+        static elementAt<E>(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer): E
         static outOfBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
         public get(arg0: number | java.lang.Integer): E
         public set(arg0: number | java.lang.Integer, arg1: E): E

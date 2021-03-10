@@ -25,8 +25,8 @@ declare namespace java {
         public abstract getFloat(arg0: java.lang.String | string, arg1: number | java.lang.Float): number
         public abstract putDouble(arg0: java.lang.String | string, arg1: number | java.lang.Double): void
         public abstract getDouble(arg0: java.lang.String | string, arg1: number | java.lang.Double): number
-        public abstract putByteArray(arg0: java.lang.String | string, arg1: byte[]): void
-        public abstract getByteArray(arg0: java.lang.String | string, arg1: byte[]): number[]
+        public abstract putByteArray(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): void
+        public abstract getByteArray(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): number[]
         public abstract keys(): java.lang.String[]
         public abstract childrenNames(): java.lang.String[]
         public abstract parent(): java.util.prefs.Preferences

@@ -10,7 +10,7 @@ declare namespace javax {
         public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.net.ssl.KeyManagerFactory
         public static getInstance(arg0: java.lang.String | string, arg1: java.security.Provider): javax.net.ssl.KeyManagerFactory
         public getProvider(): java.security.Provider
-        public init(arg0: java.security.KeyStore, arg1: char[]): void
+        public init(arg0: java.security.KeyStore, arg1: string[] | java.lang.Character[]): void
         public init(arg0: javax.net.ssl.ManagerFactoryParameters): void
         public getKeyManagers(): javax.net.ssl.KeyManager[]
       }

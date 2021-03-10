@@ -31,12 +31,12 @@ declare namespace javax {
             elementExists(arg0: java.lang.String | string): boolean
             public getElement(arg0: java.lang.String | string): javax.swing.text.html.parser.Element
             public getElement(arg0: number | java.lang.Integer): javax.swing.text.html.parser.Element
-            public defineEntity(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: char[]): javax.swing.text.html.parser.Entity
+            public defineEntity(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: string[] | java.lang.Character[]): javax.swing.text.html.parser.Entity
             public defineElement(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: javax.swing.text.html.parser.ContentModel, arg5: java.util.BitSet, arg6: java.util.BitSet, arg7: javax.swing.text.html.parser.AttributeList): javax.swing.text.html.parser.Element
             public defineAttributes(arg0: java.lang.String | string, arg1: javax.swing.text.html.parser.AttributeList): void
             public defEntity(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): javax.swing.text.html.parser.Entity
             protected defEntity(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.lang.String | string): javax.swing.text.html.parser.Entity
-            protected defElement(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: javax.swing.text.html.parser.ContentModel, arg5: java.lang.String[], arg6: java.lang.String[], arg7: javax.swing.text.html.parser.AttributeList): javax.swing.text.html.parser.Element
+            protected defElement(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: javax.swing.text.html.parser.ContentModel, arg5: java.lang.String[] | string[], arg6: java.lang.String[] | string[], arg7: javax.swing.text.html.parser.AttributeList): javax.swing.text.html.parser.Element
             protected defAttributeList(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: javax.swing.text.html.parser.AttributeList): javax.swing.text.html.parser.AttributeList
             protected defContentModel(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: javax.swing.text.html.parser.ContentModel): javax.swing.text.html.parser.ContentModel
             public toString(): java.lang.String

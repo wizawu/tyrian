@@ -37,7 +37,7 @@ declare namespace javax {
       protected static getDefaultTreeModel(): javax.swing.tree.TreeModel
       protected static createTreeModel(arg0: java.lang.Object | any): javax.swing.tree.TreeModel
       public constructor()
-      public constructor(arg0: java.lang.Object[])
+      public constructor(arg0: java.lang.Object[] | any[])
       public constructor(arg0: java.util.Vector<unknown>)
       public constructor(arg0: java.util.Hashtable<unknown,unknown>)
       public constructor(arg0: javax.swing.tree.TreeNode)
@@ -89,11 +89,11 @@ declare namespace javax {
       public setLeadSelectionPath(arg0: javax.swing.tree.TreePath): void
       public setAnchorSelectionPath(arg0: javax.swing.tree.TreePath): void
       public setSelectionRow(arg0: number | java.lang.Integer): void
-      public setSelectionRows(arg0: int[]): void
+      public setSelectionRows(arg0: number[] | java.lang.Integer[]): void
       public addSelectionPath(arg0: javax.swing.tree.TreePath): void
       public addSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
       public addSelectionRow(arg0: number | java.lang.Integer): void
-      public addSelectionRows(arg0: int[]): void
+      public addSelectionRows(arg0: number[] | java.lang.Integer[]): void
       public getLastSelectedPathComponent(): java.lang.Object
       public getLeadSelectionPath(): javax.swing.tree.TreePath
       public getAnchorSelectionPath(): javax.swing.tree.TreePath
@@ -142,7 +142,7 @@ declare namespace javax {
       public removeSelectionPath(arg0: javax.swing.tree.TreePath): void
       public removeSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
       public removeSelectionRow(arg0: number | java.lang.Integer): void
-      public removeSelectionRows(arg0: int[]): void
+      public removeSelectionRows(arg0: number[] | java.lang.Integer[]): void
       public clearSelection(): void
       public isSelectionEmpty(): boolean
       public addTreeExpansionListener(arg0: javax.swing.event.TreeExpansionListener): void

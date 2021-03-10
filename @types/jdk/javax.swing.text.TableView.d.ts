@@ -24,8 +24,8 @@ declare namespace javax {
         public replace(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: javax.swing.text.View[]): void
         updateGrid(): void
         addFill(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
-        protected layoutColumns(arg0: number | java.lang.Integer, arg1: int[], arg2: int[], arg3: javax.swing.SizeRequirements[]): void
-        protected layoutMinorAxis(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: int[], arg3: int[]): void
+        protected layoutColumns(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Integer[], arg2: number[] | java.lang.Integer[], arg3: javax.swing.SizeRequirements[]): void
+        protected layoutMinorAxis(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[], arg3: number[] | java.lang.Integer[]): void
         protected calculateMinorAxisRequirements(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements): javax.swing.SizeRequirements
         calculateColumnRequirements(arg0: number | java.lang.Integer): void
         checkSingleColumnCell(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: javax.swing.text.View): void

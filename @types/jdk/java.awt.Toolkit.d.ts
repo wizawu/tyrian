@@ -6,7 +6,7 @@ declare namespace java {
       protected readonly desktopPropsSupport: java.beans.PropertyChangeSupport
       static readonly $assertionsDisabled: boolean
       public constructor()
-      protected loadSystemColors(arg0: int[]): void
+      protected loadSystemColors(arg0: number[] | java.lang.Integer[]): void
       public setDynamicLayout(arg0: boolean | java.lang.Boolean): void
       protected isDynamicLayoutSet(): boolean
       public isDynamicLayoutActive(): boolean
@@ -25,8 +25,8 @@ declare namespace java {
       public abstract prepareImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): boolean
       public abstract checkImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): number
       public abstract createImage(arg0: java.awt.image.ImageProducer): java.awt.Image
-      public createImage(arg0: byte[]): java.awt.Image
-      public abstract createImage(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.awt.Image
+      public createImage(arg0: number[] | java.lang.Byte[]): java.awt.Image
+      public abstract createImage(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.awt.Image
       public abstract getPrintJob(arg0: java.awt.Frame, arg1: java.lang.String | string, arg2: java.util.Properties): java.awt.PrintJob
       public getPrintJob(arg0: java.awt.Frame, arg1: java.lang.String | string, arg2: java.awt.JobAttributes, arg3: java.awt.PageAttributes): java.awt.PrintJob
       public abstract beep(): void

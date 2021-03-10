@@ -5,12 +5,12 @@ declare namespace java {
       readonly hb: int[]
       readonly offset: int
       isReadOnly: boolean
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: int[], arg5: number | java.lang.Integer)
+      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Integer[], arg5: number | java.lang.Integer)
       constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
       base(): java.lang.Object
       public static allocate(arg0: number | java.lang.Integer): java.nio.IntBuffer
-      public static wrap(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.IntBuffer
-      public static wrap(arg0: int[]): java.nio.IntBuffer
+      public static wrap(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.IntBuffer
+      public static wrap(arg0: number[] | java.lang.Integer[]): java.nio.IntBuffer
       public abstract slice(): java.nio.IntBuffer
       public abstract duplicate(): java.nio.IntBuffer
       public abstract asReadOnlyBuffer(): java.nio.IntBuffer
@@ -18,11 +18,11 @@ declare namespace java {
       public abstract put(arg0: number | java.lang.Integer): java.nio.IntBuffer
       public abstract get(arg0: number | java.lang.Integer): number
       public abstract put(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.nio.IntBuffer
-      public get(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.IntBuffer
-      public get(arg0: int[]): java.nio.IntBuffer
+      public get(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.IntBuffer
+      public get(arg0: number[] | java.lang.Integer[]): java.nio.IntBuffer
       public put(arg0: java.nio.IntBuffer): java.nio.IntBuffer
-      public put(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.IntBuffer
-      public put(arg0: int[]): java.nio.IntBuffer
+      public put(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.IntBuffer
+      public put(arg0: number[] | java.lang.Integer[]): java.nio.IntBuffer
       public hasArray(): boolean
       public array(): number[]
       public arrayOffset(): number

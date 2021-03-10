@@ -20,7 +20,7 @@ declare namespace javax {
       public getSourceYSubsampling(): number
       public getSubsamplingXOffset(): number
       public getSubsamplingYOffset(): number
-      public setSourceBands(arg0: int[]): void
+      public setSourceBands(arg0: number[] | java.lang.Integer[]): void
       public getSourceBands(): number[]
       public setDestinationType(arg0: javax.imageio.ImageTypeSpecifier): void
       public getDestinationType(): javax.imageio.ImageTypeSpecifier

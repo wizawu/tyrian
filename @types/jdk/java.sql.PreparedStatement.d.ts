@@ -14,7 +14,7 @@ declare namespace java {
       setDouble(arg0: number | java.lang.Integer, arg1: number | java.lang.Double): void
       setBigDecimal(arg0: number | java.lang.Integer, arg1: java.math.BigDecimal): void
       setString(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
-      setBytes(arg0: number | java.lang.Integer, arg1: byte[]): void
+      setBytes(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[]): void
       setDate(arg0: number | java.lang.Integer, arg1: java.sql.Date): void
       setTime(arg0: number | java.lang.Integer, arg1: java.sql.Time): void
       setTimestamp(arg0: number | java.lang.Integer, arg1: java.sql.Timestamp): void

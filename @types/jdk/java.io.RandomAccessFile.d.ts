@@ -7,14 +7,14 @@ declare namespace java {
       public getFD(): java.io.FileDescriptor
       public getChannel(): java.nio.channels.FileChannel
       public read(): number
-      public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public read(arg0: byte[]): number
-      public readFully(arg0: byte[]): void
-      public readFully(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public read(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(arg0: number[] | java.lang.Byte[]): number
+      public readFully(arg0: number[] | java.lang.Byte[]): void
+      public readFully(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public skipBytes(arg0: number | java.lang.Integer): number
       public write(arg0: number | java.lang.Integer): void
-      public write(arg0: byte[]): void
-      public write(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public write(arg0: number[] | java.lang.Byte[]): void
+      public write(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public getFilePointer(): number
       public seek(arg0: number | java.lang.Long): void
       public length(): number

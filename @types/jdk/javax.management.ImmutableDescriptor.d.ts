@@ -3,7 +3,7 @@ declare namespace javax {
 
     class ImmutableDescriptor implements javax.management.Descriptor {
       public static readonly EMPTY_DESCRIPTOR: javax.management.ImmutableDescriptor
-      public constructor(arg0: java.lang.String[], arg1: java.lang.Object[])
+      public constructor(arg0: java.lang.String[] | string[], arg1: java.lang.Object[] | any[])
       public constructor(...vargs: (java.lang.String | string)[])
       public constructor(arg0: java.util.Map<java.lang.String,unknown>)
       public static union(...vargs: (javax.management.Descriptor)[]): javax.management.ImmutableDescriptor
@@ -16,7 +16,7 @@ declare namespace javax {
       public toString(): java.lang.String
       public isValid(): boolean
       public clone(): javax.management.Descriptor
-      public setFields(arg0: java.lang.String[], arg1: java.lang.Object[]): void
+      public setFields(arg0: java.lang.String[] | string[], arg1: java.lang.Object[] | any[]): void
       public setField(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
       public removeField(arg0: java.lang.String | string): void
       static nonNullDescriptor(arg0: javax.management.Descriptor): javax.management.Descriptor

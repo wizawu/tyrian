@@ -12,7 +12,7 @@ declare namespace javax {
       public setDestinationType(arg0: javax.imageio.ImageTypeSpecifier): void
       public setDestination(arg0: java.awt.image.BufferedImage): void
       public getDestination(): java.awt.image.BufferedImage
-      public setDestinationBands(arg0: int[]): void
+      public setDestinationBands(arg0: number[] | java.lang.Integer[]): void
       public getDestinationBands(): number[]
       public canSetSourceRenderSize(): boolean
       public setSourceRenderSize(arg0: java.awt.Dimension): void

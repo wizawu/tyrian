@@ -5,7 +5,7 @@ declare namespace javax {
       interface CompositeData {
         getCompositeType(): javax.management.openmbean.CompositeType
         get(arg0: java.lang.String | string): java.lang.Object
-        getAll(arg0: java.lang.String[]): java.lang.Object[]
+        getAll(arg0: java.lang.String[] | string[]): java.lang.Object[]
         containsKey(arg0: java.lang.String | string): boolean
         containsValue(arg0: java.lang.Object | any): boolean
         values(): java.util.Collection<unknown>

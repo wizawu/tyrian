@@ -7,7 +7,7 @@ declare namespace javax {
           proxy: javax.security.auth.kerberos.KerberosTicket
           clientAlias: javax.security.auth.kerberos.KerberosPrincipal
           serverAlias: javax.security.auth.kerberos.KerberosPrincipal
-          public constructor(arg0: byte[], arg1: javax.security.auth.kerberos.KerberosPrincipal, arg2: javax.security.auth.kerberos.KerberosPrincipal, arg3: byte[], arg4: number | java.lang.Integer, arg5: boolean[], arg6: java.util.Date, arg7: java.util.Date, arg8: java.util.Date, arg9: java.util.Date, arg10: java.net.InetAddress[])
+          public constructor(arg0: number[] | java.lang.Byte[], arg1: javax.security.auth.kerberos.KerberosPrincipal, arg2: javax.security.auth.kerberos.KerberosPrincipal, arg3: number[] | java.lang.Byte[], arg4: number | java.lang.Integer, arg5: boolean[] | java.lang.Boolean[], arg6: java.util.Date, arg7: java.util.Date, arg8: java.util.Date, arg9: java.util.Date, arg10: java.net.InetAddress[])
           public getClient(): javax.security.auth.kerberos.KerberosPrincipal
           public getServer(): javax.security.auth.kerberos.KerberosPrincipal
           public getSessionKey(): javax.crypto.SecretKey

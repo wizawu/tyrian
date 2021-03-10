@@ -5,7 +5,7 @@ declare namespace java {
 
         class AtomicLongArray implements java.io.Serializable {
           public constructor(arg0: number | java.lang.Integer)
-          public constructor(arg0: long[])
+          public constructor(arg0: number[] | java.lang.Long[])
           public length(): number
           public get(arg0: number | java.lang.Integer): number
           public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Long): void

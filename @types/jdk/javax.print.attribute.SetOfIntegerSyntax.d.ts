@@ -4,7 +4,7 @@ declare namespace javax {
 
       abstract class SetOfIntegerSyntax implements java.io.Serializable, java.lang.Cloneable {
         protected constructor(arg0: java.lang.String | string)
-        protected constructor(arg0: int[][])
+        protected constructor(arg0: number[][] | java.lang.Integer[][])
         protected constructor(arg0: number | java.lang.Integer)
         protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
         public getMembers(): number[][]

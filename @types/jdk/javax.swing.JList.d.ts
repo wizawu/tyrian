@@ -72,7 +72,7 @@ declare namespace javax {
       public getValueIsAdjusting(): boolean
       public getSelectedIndices(): number[]
       public setSelectedIndex(arg0: number | java.lang.Integer): void
-      public setSelectedIndices(arg0: int[]): void
+      public setSelectedIndices(arg0: number[] | java.lang.Integer[]): void
       public getSelectedValues(): java.lang.Object[]
       public getSelectedValuesList(): java.util.List<E>
       public getSelectedIndex(): number

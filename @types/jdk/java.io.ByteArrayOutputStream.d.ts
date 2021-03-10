@@ -7,8 +7,8 @@ declare namespace java {
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
       public write(arg0: number | java.lang.Integer): void
-      public write(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-      public writeBytes(arg0: byte[]): void
+      public write(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public writeBytes(arg0: number[] | java.lang.Byte[]): void
       public writeTo(arg0: java.io.OutputStream): void
       public reset(): void
       public toByteArray(): number[]

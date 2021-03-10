@@ -4,7 +4,7 @@ declare namespace java {
     class Statement {
       static defaultExceptionListener: java.beans.ExceptionListener
       loader: java.lang.ClassLoader
-      public constructor(arg0: java.lang.Object | any, arg1: java.lang.String | string, arg2: java.lang.Object[])
+      public constructor(arg0: java.lang.Object | any, arg1: java.lang.String | string, arg2: java.lang.Object[] | any[])
       public getTarget(): java.lang.Object
       public getMethodName(): java.lang.String
       public getArguments(): java.lang.Object[]

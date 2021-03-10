@@ -27,9 +27,9 @@ declare namespace java {
         public constructor()
         public constructor(arg0: java.awt.geom.AffineTransform)
         public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float, arg4: number | java.lang.Float, arg5: number | java.lang.Float)
-        public constructor(arg0: float[])
+        public constructor(arg0: number[] | java.lang.Float[])
         public constructor(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double)
-        public constructor(arg0: double[])
+        public constructor(arg0: number[] | java.lang.Double[])
         public static getTranslateInstance(arg0: number | java.lang.Double, arg1: number | java.lang.Double): java.awt.geom.AffineTransform
         public static getRotateInstance(arg0: number | java.lang.Double): java.awt.geom.AffineTransform
         public static getRotateInstance(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double): java.awt.geom.AffineTransform
@@ -42,7 +42,7 @@ declare namespace java {
         public getType(): number
         public getDeterminant(): number
         updateState(): void
-        public getMatrix(arg0: double[]): void
+        public getMatrix(arg0: number[] | java.lang.Double[]): void
         public getScaleX(): number
         public getScaleY(): number
         public getShearX(): number
@@ -76,14 +76,14 @@ declare namespace java {
         public invert(): void
         public transform(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D): java.awt.geom.Point2D
         public transform(arg0: java.awt.geom.Point2D[], arg1: number | java.lang.Integer, arg2: java.awt.geom.Point2D[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-        public transform(arg0: float[], arg1: number | java.lang.Integer, arg2: float[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-        public transform(arg0: double[], arg1: number | java.lang.Integer, arg2: double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-        public transform(arg0: float[], arg1: number | java.lang.Integer, arg2: double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-        public transform(arg0: double[], arg1: number | java.lang.Integer, arg2: float[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        public transform(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Float[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        public transform(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        public transform(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        public transform(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Float[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
         public inverseTransform(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D): java.awt.geom.Point2D
-        public inverseTransform(arg0: double[], arg1: number | java.lang.Integer, arg2: double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        public inverseTransform(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
         public deltaTransform(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D): java.awt.geom.Point2D
-        public deltaTransform(arg0: double[], arg1: number | java.lang.Integer, arg2: double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        public deltaTransform(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
         public createTransformedShape(arg0: java.awt.Shape): java.awt.Shape
         public toString(): java.lang.String
         public isIdentity(): boolean

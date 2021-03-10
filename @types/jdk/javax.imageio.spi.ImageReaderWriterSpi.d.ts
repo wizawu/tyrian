@@ -17,7 +17,7 @@ declare namespace javax {
         protected nativeImageMetadataFormatClassName: java.lang.String
         protected extraImageMetadataFormatNames: java.lang.String[]
         protected extraImageMetadataFormatClassNames: java.lang.String[]
-        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String[], arg3: java.lang.String[], arg4: java.lang.String[], arg5: java.lang.String | string, arg6: boolean | java.lang.Boolean, arg7: java.lang.String | string, arg8: java.lang.String | string, arg9: java.lang.String[], arg10: java.lang.String[], arg11: boolean | java.lang.Boolean, arg12: java.lang.String | string, arg13: java.lang.String | string, arg14: java.lang.String[], arg15: java.lang.String[])
+        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String[] | string[], arg3: java.lang.String[] | string[], arg4: java.lang.String[] | string[], arg5: java.lang.String | string, arg6: boolean | java.lang.Boolean, arg7: java.lang.String | string, arg8: java.lang.String | string, arg9: java.lang.String[] | string[], arg10: java.lang.String[] | string[], arg11: boolean | java.lang.Boolean, arg12: java.lang.String | string, arg13: java.lang.String | string, arg14: java.lang.String[] | string[], arg15: java.lang.String[] | string[])
         public constructor()
         public getFormatNames(): java.lang.String[]
         public getFileSuffixes(): java.lang.String[]

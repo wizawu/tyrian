@@ -31,7 +31,7 @@ declare namespace javax {
         getEventType(): number
         getText(): java.lang.String
         getTextCharacters(): string[]
-        getTextCharacters(arg0: number | java.lang.Integer, arg1: char[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+        getTextCharacters(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
         getTextStart(): number
         getTextLength(): number
         getEncoding(): java.lang.String

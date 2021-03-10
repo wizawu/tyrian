@@ -3,7 +3,7 @@ declare namespace javax {
     namespace ssl {
 
       abstract class SNIServerName {
-        protected constructor(arg0: number | java.lang.Integer, arg1: byte[])
+        protected constructor(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[])
         public getType(): number
         public getEncoded(): number[]
         public equals(arg0: java.lang.Object | any): boolean

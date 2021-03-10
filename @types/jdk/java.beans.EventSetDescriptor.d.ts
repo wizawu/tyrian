@@ -3,8 +3,8 @@ declare namespace java {
 
     class EventSetDescriptor extends java.beans.FeatureDescriptor {
       public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.Class<unknown>, arg3: java.lang.String | string)
-      public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.Class<unknown>, arg3: java.lang.String[], arg4: java.lang.String | string, arg5: java.lang.String | string)
-      public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.Class<unknown>, arg3: java.lang.String[], arg4: java.lang.String | string, arg5: java.lang.String | string, arg6: java.lang.String | string)
+      public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.Class<unknown>, arg3: java.lang.String[] | string[], arg4: java.lang.String | string, arg5: java.lang.String | string)
+      public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.Class<unknown>, arg3: java.lang.String[] | string[], arg4: java.lang.String | string, arg5: java.lang.String | string, arg6: java.lang.String | string)
       public constructor(arg0: java.lang.String | string, arg1: java.lang.Class<unknown>, arg2: java.lang.reflect.Method[], arg3: java.lang.reflect.Method, arg4: java.lang.reflect.Method)
       public constructor(arg0: java.lang.String | string, arg1: java.lang.Class<unknown>, arg2: java.lang.reflect.Method[], arg3: java.lang.reflect.Method, arg4: java.lang.reflect.Method, arg5: java.lang.reflect.Method)
       constructor(arg0: java.lang.String | string, arg1: com.sun.beans.introspect.EventSetInfo, ...vargs: (java.lang.reflect.Method)[])

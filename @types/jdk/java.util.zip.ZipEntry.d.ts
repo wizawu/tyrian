@@ -40,8 +40,8 @@ declare namespace java {
         public getCrc(): number
         public setMethod(arg0: number | java.lang.Integer): void
         public getMethod(): number
-        public setExtra(arg0: byte[]): void
-        setExtra0(arg0: byte[], arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
+        public setExtra(arg0: number[] | java.lang.Byte[]): void
+        setExtra0(arg0: number[] | java.lang.Byte[], arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
         public getExtra(): number[]
         public setComment(arg0: java.lang.String | string): void
         public getComment(): java.lang.String

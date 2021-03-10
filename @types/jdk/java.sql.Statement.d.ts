@@ -40,11 +40,11 @@ declare namespace java {
       getMoreResults(arg0: number | java.lang.Integer): boolean
       getGeneratedKeys(): java.sql.ResultSet
       executeUpdate(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
-      executeUpdate(arg0: java.lang.String | string, arg1: int[]): number
-      executeUpdate(arg0: java.lang.String | string, arg1: java.lang.String[]): number
+      executeUpdate(arg0: java.lang.String | string, arg1: number[] | java.lang.Integer[]): number
+      executeUpdate(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): number
       execute(arg0: java.lang.String | string, arg1: number | java.lang.Integer): boolean
-      execute(arg0: java.lang.String | string, arg1: int[]): boolean
-      execute(arg0: java.lang.String | string, arg1: java.lang.String[]): boolean
+      execute(arg0: java.lang.String | string, arg1: number[] | java.lang.Integer[]): boolean
+      execute(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): boolean
       getResultSetHoldability(): number
       isClosed(): boolean
       setPoolable(arg0: boolean | java.lang.Boolean): void
@@ -57,8 +57,8 @@ declare namespace java {
       executeLargeBatch(): number[]
       executeLargeUpdate(arg0: java.lang.String | string): number
       executeLargeUpdate(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
-      executeLargeUpdate(arg0: java.lang.String | string, arg1: int[]): number
-      executeLargeUpdate(arg0: java.lang.String | string, arg1: java.lang.String[]): number
+      executeLargeUpdate(arg0: java.lang.String | string, arg1: number[] | java.lang.Integer[]): number
+      executeLargeUpdate(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): number
       enquoteLiteral(arg0: java.lang.String | string): java.lang.String
       enquoteIdentifier(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): java.lang.String
       isSimpleIdentifier(arg0: java.lang.String | string): boolean

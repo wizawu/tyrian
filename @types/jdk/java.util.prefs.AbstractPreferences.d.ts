@@ -22,8 +22,8 @@ declare namespace java {
         public getFloat(arg0: java.lang.String | string, arg1: number | java.lang.Float): number
         public putDouble(arg0: java.lang.String | string, arg1: number | java.lang.Double): void
         public getDouble(arg0: java.lang.String | string, arg1: number | java.lang.Double): number
-        public putByteArray(arg0: java.lang.String | string, arg1: byte[]): void
-        public getByteArray(arg0: java.lang.String | string, arg1: byte[]): number[]
+        public putByteArray(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): void
+        public getByteArray(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): number[]
         public keys(): java.lang.String[]
         public childrenNames(): java.lang.String[]
         protected cachedChildren(): java.util.prefs.AbstractPreferences[]

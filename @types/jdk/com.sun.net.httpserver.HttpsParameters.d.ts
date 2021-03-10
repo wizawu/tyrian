@@ -9,9 +9,9 @@ declare namespace com {
           public abstract getClientAddress(): java.net.InetSocketAddress
           public abstract setSSLParameters(arg0: javax.net.ssl.SSLParameters): void
           public getCipherSuites(): java.lang.String[]
-          public setCipherSuites(arg0: java.lang.String[]): void
+          public setCipherSuites(arg0: java.lang.String[] | string[]): void
           public getProtocols(): java.lang.String[]
-          public setProtocols(arg0: java.lang.String[]): void
+          public setProtocols(arg0: java.lang.String[] | string[]): void
           public getWantClientAuth(): boolean
           public setWantClientAuth(arg0: boolean | java.lang.Boolean): void
           public getNeedClientAuth(): boolean

@@ -4,12 +4,12 @@ declare namespace javax {
 
       class SSLParameters {
         public constructor()
-        public constructor(arg0: java.lang.String[])
-        public constructor(arg0: java.lang.String[], arg1: java.lang.String[])
+        public constructor(arg0: java.lang.String[] | string[])
+        public constructor(arg0: java.lang.String[] | string[], arg1: java.lang.String[] | string[])
         public getCipherSuites(): java.lang.String[]
-        public setCipherSuites(arg0: java.lang.String[]): void
+        public setCipherSuites(arg0: java.lang.String[] | string[]): void
         public getProtocols(): java.lang.String[]
-        public setProtocols(arg0: java.lang.String[]): void
+        public setProtocols(arg0: java.lang.String[] | string[]): void
         public getWantClientAuth(): boolean
         public setWantClientAuth(arg0: boolean | java.lang.Boolean): void
         public getNeedClientAuth(): boolean
@@ -29,7 +29,7 @@ declare namespace javax {
         public setMaximumPacketSize(arg0: number | java.lang.Integer): void
         public getMaximumPacketSize(): number
         public getApplicationProtocols(): java.lang.String[]
-        public setApplicationProtocols(arg0: java.lang.String[]): void
+        public setApplicationProtocols(arg0: java.lang.String[] | string[]): void
       }
 
     }

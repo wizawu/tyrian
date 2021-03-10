@@ -8,7 +8,7 @@ declare namespace javax {
       getFieldNames(): java.lang.String[]
       getFieldValues(...vargs: (java.lang.String | string)[]): java.lang.Object[]
       removeField(arg0: java.lang.String | string): void
-      setFields(arg0: java.lang.String[], arg1: java.lang.Object[]): void
+      setFields(arg0: java.lang.String[] | string[], arg1: java.lang.Object[] | any[]): void
       clone(): java.lang.Object
       isValid(): boolean
       equals(arg0: java.lang.Object | any): boolean

@@ -7,7 +7,7 @@ declare namespace javax {
         public constructor()
         public getID(): java.lang.String
         public getEncodedValue(): number[]
-        public createExtendedResponse(arg0: java.lang.String | string, arg1: byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): javax.naming.ldap.ExtendedResponse
+        public createExtendedResponse(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): javax.naming.ldap.ExtendedResponse
       }
 
     }

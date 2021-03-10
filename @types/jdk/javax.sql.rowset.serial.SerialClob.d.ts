@@ -5,7 +5,7 @@ declare namespace javax {
 
         class SerialClob implements java.sql.Clob, java.io.Serializable, java.lang.Cloneable {
           static readonly serialVersionUID: long
-          public constructor(arg0: char[])
+          public constructor(arg0: string[] | java.lang.Character[])
           public constructor(arg0: java.sql.Clob)
           public length(): number
           public getCharacterStream(): java.io.Reader

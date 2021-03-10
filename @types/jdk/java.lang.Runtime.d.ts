@@ -8,11 +8,11 @@ declare namespace java {
       public removeShutdownHook(arg0: java.lang.Thread): boolean
       public halt(arg0: number | java.lang.Integer): void
       public exec(arg0: java.lang.String | string): java.lang.Process
-      public exec(arg0: java.lang.String | string, arg1: java.lang.String[]): java.lang.Process
-      public exec(arg0: java.lang.String | string, arg1: java.lang.String[], arg2: java.io.File): java.lang.Process
-      public exec(arg0: java.lang.String[]): java.lang.Process
-      public exec(arg0: java.lang.String[], arg1: java.lang.String[]): java.lang.Process
-      public exec(arg0: java.lang.String[], arg1: java.lang.String[], arg2: java.io.File): java.lang.Process
+      public exec(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): java.lang.Process
+      public exec(arg0: java.lang.String | string, arg1: java.lang.String[] | string[], arg2: java.io.File): java.lang.Process
+      public exec(arg0: java.lang.String[] | string[]): java.lang.Process
+      public exec(arg0: java.lang.String[] | string[], arg1: java.lang.String[] | string[]): java.lang.Process
+      public exec(arg0: java.lang.String[] | string[], arg1: java.lang.String[] | string[], arg2: java.io.File): java.lang.Process
       public availableProcessors(): number
       public freeMemory(): number
       public totalMemory(): number

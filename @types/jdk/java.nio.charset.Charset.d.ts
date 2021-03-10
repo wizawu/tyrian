@@ -7,7 +7,7 @@ declare namespace java {
         public static forName(arg0: java.lang.String | string): java.nio.charset.Charset
         public static availableCharsets(): java.util.SortedMap<java.lang.String,java.nio.charset.Charset>
         public static defaultCharset(): java.nio.charset.Charset
-        protected constructor(arg0: java.lang.String | string, arg1: java.lang.String[])
+        protected constructor(arg0: java.lang.String | string, arg1: java.lang.String[] | string[])
         public name(): java.lang.String
         public aliases(): java.util.Set<java.lang.String>
         public displayName(): java.lang.String

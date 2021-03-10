@@ -3,7 +3,7 @@ declare namespace jdk {
     namespace consumer {
 
       class RecordedObject {
-        constructor(arg0: java.util.List<jdk.jfr.ValueDescriptor>, arg1: java.lang.Object[], arg2: jdk.jfr.consumer.TimeConverter)
+        constructor(arg0: java.util.List<jdk.jfr.ValueDescriptor>, arg1: java.lang.Object[] | any[], arg2: jdk.jfr.consumer.TimeConverter)
         getTyped<T>(arg0: java.lang.String | string, arg1: java.lang.Class<T>, arg2: T): T
         public hasField(arg0: java.lang.String | string): boolean
         public getValue<T>(arg0: java.lang.String | string): T

@@ -12,8 +12,8 @@ declare namespace java {
       static dec(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
       static inc(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       static sub(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      static elementAt<E>(arg0: java.lang.Object[], arg1: number | java.lang.Integer): E
-      static nonNullElementAt<E>(arg0: java.lang.Object[], arg1: number | java.lang.Integer): E
+      static elementAt<E>(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer): E
+      static nonNullElementAt<E>(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer): E
       public addFirst(arg0: E): void
       public addLast(arg0: E): void
       public addAll(arg0: java.util.Collection<E>): boolean

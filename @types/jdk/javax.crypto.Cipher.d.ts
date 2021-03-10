@@ -30,24 +30,24 @@ declare namespace javax {
       public init(arg0: number | java.lang.Integer, arg1: java.security.Key, arg2: java.security.AlgorithmParameters, arg3: java.security.SecureRandom): void
       public init(arg0: number | java.lang.Integer, arg1: java.security.cert.Certificate): void
       public init(arg0: number | java.lang.Integer, arg1: java.security.cert.Certificate, arg2: java.security.SecureRandom): void
-      public update(arg0: byte[]): number[]
-      public update(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
-      public update(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: byte[]): number
-      public update(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: byte[], arg4: number | java.lang.Integer): number
+      public update(arg0: number[] | java.lang.Byte[]): number[]
+      public update(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
+      public update(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number[] | java.lang.Byte[]): number
+      public update(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number[] | java.lang.Byte[], arg4: number | java.lang.Integer): number
       public update(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer): number
       public doFinal(): number[]
-      public doFinal(arg0: byte[], arg1: number | java.lang.Integer): number
-      public doFinal(arg0: byte[]): number[]
-      public doFinal(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
-      public doFinal(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: byte[]): number
-      public doFinal(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: byte[], arg4: number | java.lang.Integer): number
+      public doFinal(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): number
+      public doFinal(arg0: number[] | java.lang.Byte[]): number[]
+      public doFinal(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
+      public doFinal(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number[] | java.lang.Byte[]): number
+      public doFinal(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number[] | java.lang.Byte[], arg4: number | java.lang.Integer): number
       public doFinal(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer): number
       public wrap(arg0: java.security.Key): number[]
-      public unwrap(arg0: byte[], arg1: java.lang.String | string, arg2: number | java.lang.Integer): java.security.Key
+      public unwrap(arg0: number[] | java.lang.Byte[], arg1: java.lang.String | string, arg2: number | java.lang.Integer): java.security.Key
       public static getMaxAllowedKeyLength(arg0: java.lang.String | string): number
       public static getMaxAllowedParameterSpec(arg0: java.lang.String | string): java.security.spec.AlgorithmParameterSpec
-      public updateAAD(arg0: byte[]): void
-      public updateAAD(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public updateAAD(arg0: number[] | java.lang.Byte[]): void
+      public updateAAD(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public updateAAD(arg0: java.nio.ByteBuffer): void
     }
 

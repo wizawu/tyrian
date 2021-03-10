@@ -39,8 +39,8 @@ declare namespace javax {
         getTrackSolo(arg0: number | java.lang.Integer): boolean
         addMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$lambda): boolean
         removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$lambda): void
-        addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda, arg1: int[]): number[]
-        removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda, arg1: int[]): number[]
+        addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda, arg1: number[] | java.lang.Integer[]): number[]
+        removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda, arg1: number[] | java.lang.Integer[]): number[]
         setLoopStartPoint(arg0: number | java.lang.Long): void
         getLoopStartPoint(): number
         setLoopEndPoint(arg0: number | java.lang.Long): void

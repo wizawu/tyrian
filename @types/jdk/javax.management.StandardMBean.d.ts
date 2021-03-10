@@ -12,9 +12,9 @@ declare namespace javax {
       public getImplementationClass(): java.lang.Class<unknown>
       public getAttribute(arg0: java.lang.String | string): java.lang.Object
       public setAttribute(arg0: javax.management.Attribute): void
-      public getAttributes(arg0: java.lang.String[]): javax.management.AttributeList
+      public getAttributes(arg0: java.lang.String[] | string[]): javax.management.AttributeList
       public setAttributes(arg0: javax.management.AttributeList): javax.management.AttributeList
-      public invoke(arg0: java.lang.String | string, arg1: java.lang.Object[], arg2: java.lang.String[]): java.lang.Object
+      public invoke(arg0: java.lang.String | string, arg1: java.lang.Object[] | any[], arg2: java.lang.String[] | string[]): java.lang.Object
       public getMBeanInfo(): javax.management.MBeanInfo
       protected getClassName(arg0: javax.management.MBeanInfo): java.lang.String
       protected getDescription(arg0: javax.management.MBeanInfo): java.lang.String

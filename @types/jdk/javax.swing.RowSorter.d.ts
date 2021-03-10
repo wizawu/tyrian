@@ -20,7 +20,7 @@ declare namespace javax {
       public addRowSorterListener(arg0: javax.swing.event.RowSorterListener | javax.swing.event.RowSorterListener$$lambda): void
       public removeRowSorterListener(arg0: javax.swing.event.RowSorterListener | javax.swing.event.RowSorterListener$$lambda): void
       protected fireSortOrderChanged(): void
-      protected fireRowSorterChanged(arg0: int[]): void
+      protected fireRowSorterChanged(arg0: number[] | java.lang.Integer[]): void
       fireRowSorterChanged(arg0: javax.swing.event.RowSorterEvent): void
     }
 

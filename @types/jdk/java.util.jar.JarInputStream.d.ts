@@ -8,7 +8,7 @@ declare namespace java {
         public getManifest(): java.util.jar.Manifest
         public getNextEntry(): java.util.zip.ZipEntry
         public getNextJarEntry(): java.util.jar.JarEntry
-        public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+        public read(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
         protected createZipEntry(arg0: java.lang.String | string): java.util.zip.ZipEntry
       }
 

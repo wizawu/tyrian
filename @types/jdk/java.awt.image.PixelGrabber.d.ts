@@ -13,8 +13,8 @@ declare namespace java {
         intPixels: int[]
         dstOff: int
         dstScan: int
-        public constructor(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: int[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer)
-        public constructor(arg0: java.awt.image.ImageProducer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: int[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer)
+        public constructor(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number[] | java.lang.Integer[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer)
+        public constructor(arg0: java.awt.image.ImageProducer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number[] | java.lang.Integer[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer)
         public constructor(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: boolean | java.lang.Boolean)
         public startGrabbing(): void
         public abortGrabbing(): void
@@ -29,8 +29,8 @@ declare namespace java {
         public setHints(arg0: number | java.lang.Integer): void
         public setProperties(arg0: java.util.Hashtable<unknown,unknown>): void
         public setColorModel(arg0: java.awt.image.ColorModel): void
-        public setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: byte[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
-        public setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: int[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
+        public setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: number[] | java.lang.Byte[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
+        public setPixels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.awt.image.ColorModel, arg5: number[] | java.lang.Integer[], arg6: number | java.lang.Integer, arg7: number | java.lang.Integer): void
         public imageComplete(arg0: number | java.lang.Integer): void
         public status(): number
       }

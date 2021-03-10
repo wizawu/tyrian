@@ -32,15 +32,15 @@ declare namespace java {
       public abstract fillOval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       public abstract drawArc(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
       public abstract fillArc(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
-      public abstract drawPolyline(arg0: int[], arg1: int[], arg2: number | java.lang.Integer): void
-      public abstract drawPolygon(arg0: int[], arg1: int[], arg2: number | java.lang.Integer): void
+      public abstract drawPolyline(arg0: number[] | java.lang.Integer[], arg1: number[] | java.lang.Integer[], arg2: number | java.lang.Integer): void
+      public abstract drawPolygon(arg0: number[] | java.lang.Integer[], arg1: number[] | java.lang.Integer[], arg2: number | java.lang.Integer): void
       public drawPolygon(arg0: java.awt.Polygon): void
-      public abstract fillPolygon(arg0: int[], arg1: int[], arg2: number | java.lang.Integer): void
+      public abstract fillPolygon(arg0: number[] | java.lang.Integer[], arg1: number[] | java.lang.Integer[], arg2: number | java.lang.Integer): void
       public fillPolygon(arg0: java.awt.Polygon): void
       public abstract drawString(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public abstract drawString(arg0: java.text.AttributedCharacterIterator, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-      public drawChars(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-      public drawBytes(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      public drawChars(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      public drawBytes(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
       public abstract drawImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): boolean
       public abstract drawImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): boolean
       public abstract drawImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.Color, arg4: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): boolean

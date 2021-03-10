@@ -9,7 +9,7 @@ declare namespace java {
       public getEncoding(): java.lang.String
       flushBuffer(): void
       public write(arg0: number | java.lang.Integer): void
-      public write(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public write(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public write(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.io.Writer
       public append(arg0: java.lang.CharSequence): java.io.Writer

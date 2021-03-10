@@ -3,8 +3,8 @@ declare namespace java {
     namespace spec {
 
       abstract class EncodedKeySpec implements java.security.spec.KeySpec {
-        public constructor(arg0: byte[])
-        protected constructor(arg0: byte[], arg1: java.lang.String | string)
+        public constructor(arg0: number[] | java.lang.Byte[])
+        protected constructor(arg0: number[] | java.lang.Byte[], arg1: java.lang.String | string)
         public getAlgorithm(): java.lang.String
         public getEncoded(): number[]
         public abstract getFormat(): java.lang.String

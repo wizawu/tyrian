@@ -9,7 +9,7 @@ declare namespace java {
       nextStream(): void
       public available(): number
       public read(): number
-      public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public close(): void
     }
 

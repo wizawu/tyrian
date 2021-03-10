@@ -8,11 +8,11 @@ declare namespace javax {
         protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
         protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.net.InetAddress)
         public abstract getEnabledCipherSuites(): java.lang.String[]
-        public abstract setEnabledCipherSuites(arg0: java.lang.String[]): void
+        public abstract setEnabledCipherSuites(arg0: java.lang.String[] | string[]): void
         public abstract getSupportedCipherSuites(): java.lang.String[]
         public abstract getSupportedProtocols(): java.lang.String[]
         public abstract getEnabledProtocols(): java.lang.String[]
-        public abstract setEnabledProtocols(arg0: java.lang.String[]): void
+        public abstract setEnabledProtocols(arg0: java.lang.String[] | string[]): void
         public abstract setNeedClientAuth(arg0: boolean | java.lang.Boolean): void
         public abstract getNeedClientAuth(): boolean
         public abstract setWantClientAuth(arg0: boolean | java.lang.Boolean): void

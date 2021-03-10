@@ -6,7 +6,7 @@ declare namespace java {
       public constructor()
       public connect(arg0: java.io.PipedReader): void
       public write(arg0: number | java.lang.Integer): void
-      public write(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public write(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public flush(): void
       public close(): void
     }

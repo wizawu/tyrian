@@ -11,7 +11,7 @@ declare namespace java {
       public constructor(arg0: number | java.lang.Long)
       public constructor()
       public split(): java.util.SplittableRandom
-      public nextBytes(arg0: byte[]): void
+      public nextBytes(arg0: number[] | java.lang.Byte[]): void
       public nextInt(): number
       public nextInt(arg0: number | java.lang.Integer): number
       public nextInt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number

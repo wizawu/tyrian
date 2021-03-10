@@ -18,10 +18,10 @@ declare namespace java {
       public constructor(arg0: number | java.lang.Integer)
       public connect(arg0: java.io.PipedOutputStream): void
       protected receive(arg0: number | java.lang.Integer): void
-      receive(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      receive(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       receivedLast(): void
       public read(): number
-      public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public available(): number
       public close(): void
     }

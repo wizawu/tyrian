@@ -4,7 +4,7 @@ declare namespace javax {
       namespace serial {
 
         class SQLInputImpl implements java.sql.SQLInput {
-          public constructor(arg0: java.lang.Object[], arg1: java.util.Map<java.lang.String,java.lang.Class<unknown>>)
+          public constructor(arg0: java.lang.Object[] | any[], arg1: java.util.Map<java.lang.String,java.lang.Class<unknown>>)
           public readString(): java.lang.String
           public readBoolean(): boolean
           public readByte(): number

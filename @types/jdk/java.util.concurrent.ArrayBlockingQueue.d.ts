@@ -12,7 +12,7 @@ declare namespace java {
         static inc(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
         static dec(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
         itemAt(arg0: number | java.lang.Integer): E
-        static itemAt<E>(arg0: java.lang.Object[], arg1: number | java.lang.Integer): E
+        static itemAt<E>(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer): E
         removeAt(arg0: number | java.lang.Integer): void
         public constructor(arg0: number | java.lang.Integer)
         public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean)

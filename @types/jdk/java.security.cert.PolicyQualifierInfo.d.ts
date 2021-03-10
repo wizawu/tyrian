@@ -3,7 +3,7 @@ declare namespace java {
     namespace cert {
 
       class PolicyQualifierInfo {
-        public constructor(arg0: byte[])
+        public constructor(arg0: number[] | java.lang.Byte[])
         public getPolicyQualifierId(): java.lang.String
         public getEncoded(): number[]
         public getPolicyQualifier(): number[]

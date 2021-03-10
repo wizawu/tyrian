@@ -3,7 +3,7 @@ declare namespace javax {
 
     class SpinnerListModel extends javax.swing.AbstractSpinnerModel implements java.io.Serializable {
       public constructor(arg0: java.util.List<unknown>)
-      public constructor(arg0: java.lang.Object[])
+      public constructor(arg0: java.lang.Object[] | any[])
       public constructor()
       public getList(): java.util.List<unknown>
       public setList(arg0: java.util.List<unknown>): void

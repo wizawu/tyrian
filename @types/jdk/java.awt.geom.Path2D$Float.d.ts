@@ -17,7 +17,7 @@ declare namespace java {
         append(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         getPoint(arg0: number | java.lang.Integer): java.awt.geom.Point2D
         needRoom(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer): void
-        static expandCoords(arg0: float[], arg1: number | java.lang.Integer): number[]
+        static expandCoords(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer): number[]
         public moveTo(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public moveTo(arg0: number | java.lang.Float, arg1: number | java.lang.Float): void
         public lineTo(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void

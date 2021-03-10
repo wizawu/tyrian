@@ -3,8 +3,8 @@ declare namespace java {
 
     interface DataOutput {
       write(arg0: number | java.lang.Integer): void
-      write(arg0: byte[]): void
-      write(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      write(arg0: number[] | java.lang.Byte[]): void
+      write(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       writeBoolean(arg0: boolean | java.lang.Boolean): void
       writeByte(arg0: number | java.lang.Integer): void
       writeShort(arg0: number | java.lang.Integer): void

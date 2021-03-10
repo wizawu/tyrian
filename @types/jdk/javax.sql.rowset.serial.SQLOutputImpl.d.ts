@@ -14,7 +14,7 @@ declare namespace javax {
           public writeFloat(arg0: number | java.lang.Float): void
           public writeDouble(arg0: number | java.lang.Double): void
           public writeBigDecimal(arg0: java.math.BigDecimal): void
-          public writeBytes(arg0: byte[]): void
+          public writeBytes(arg0: number[] | java.lang.Byte[]): void
           public writeDate(arg0: java.sql.Date): void
           public writeTime(arg0: java.sql.Time): void
           public writeTimestamp(arg0: java.sql.Timestamp): void

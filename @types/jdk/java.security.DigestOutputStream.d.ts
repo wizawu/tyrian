@@ -7,7 +7,7 @@ declare namespace java {
       public getMessageDigest(): java.security.MessageDigest
       public setMessageDigest(arg0: java.security.MessageDigest): void
       public write(arg0: number | java.lang.Integer): void
-      public write(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public write(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public on(arg0: boolean | java.lang.Boolean): void
       public toString(): java.lang.String
     }

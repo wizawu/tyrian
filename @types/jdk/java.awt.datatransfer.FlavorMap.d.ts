@@ -4,7 +4,7 @@ declare namespace java {
 
       interface FlavorMap {
         getNativesForFlavors(arg0: java.awt.datatransfer.DataFlavor[]): java.util.Map<java.awt.datatransfer.DataFlavor,java.lang.String>
-        getFlavorsForNatives(arg0: java.lang.String[]): java.util.Map<java.lang.String,java.awt.datatransfer.DataFlavor>
+        getFlavorsForNatives(arg0: java.lang.String[] | string[]): java.util.Map<java.lang.String,java.awt.datatransfer.DataFlavor>
       }
 
     }

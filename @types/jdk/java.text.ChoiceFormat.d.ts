@@ -8,8 +8,8 @@ declare namespace java {
       public applyPattern(arg0: java.lang.String | string): void
       public toPattern(): java.lang.String
       public constructor(arg0: java.lang.String | string)
-      public constructor(arg0: double[], arg1: java.lang.String[])
-      public setChoices(arg0: double[], arg1: java.lang.String[]): void
+      public constructor(arg0: number[] | java.lang.Double[], arg1: java.lang.String[] | string[])
+      public setChoices(arg0: number[] | java.lang.Double[], arg1: java.lang.String[] | string[]): void
       public getLimits(): number[]
       public getFormats(): java.lang.Object[]
       public format(arg0: number | java.lang.Long, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer

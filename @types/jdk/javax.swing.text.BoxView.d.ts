@@ -24,7 +24,7 @@ declare namespace javax {
         protected isLayoutValid(arg0: number | java.lang.Integer): boolean
         protected paintChild(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
         public replace(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: javax.swing.text.View[]): void
-        updateLayoutArray(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
+        updateLayoutArray(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number[]
         protected forwardUpdate(arg0: javax.swing.event.DocumentEvent$ElementChange, arg1: javax.swing.event.DocumentEvent, arg2: java.awt.Shape, arg3: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$lambda): void
         public preferenceChanged(arg0: javax.swing.text.View, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
         public getResizeWeight(arg0: number | java.lang.Integer): number
@@ -48,12 +48,12 @@ declare namespace javax {
         protected layout(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
         public getWidth(): number
         public getHeight(): number
-        protected layoutMajorAxis(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: int[], arg3: int[]): void
-        protected layoutMinorAxis(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: int[], arg3: int[]): void
+        protected layoutMajorAxis(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[], arg3: number[] | java.lang.Integer[]): void
+        protected layoutMinorAxis(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[], arg3: number[] | java.lang.Integer[]): void
         protected calculateMajorAxisRequirements(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements): javax.swing.SizeRequirements
         protected calculateMinorAxisRequirements(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements): javax.swing.SizeRequirements
         checkRequests(arg0: number | java.lang.Integer): void
-        protected baselineLayout(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: int[], arg3: int[]): void
+        protected baselineLayout(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[], arg3: number[] | java.lang.Integer[]): void
         protected baselineRequirements(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements): javax.swing.SizeRequirements
         protected getOffset(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
         protected getSpan(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number

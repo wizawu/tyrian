@@ -7,7 +7,7 @@ declare namespace javax {
           public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
           public getPrompt(): java.lang.String
           public isEchoOn(): boolean
-          public setPassword(arg0: char[]): void
+          public setPassword(arg0: string[] | java.lang.Character[]): void
           public getPassword(): string[]
           public clearPassword(): void
         }

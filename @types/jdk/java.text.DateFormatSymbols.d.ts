@@ -46,19 +46,19 @@ declare namespace java {
       public static getInstance(arg0: java.util.Locale): java.text.DateFormatSymbols
       static getInstanceRef(arg0: java.util.Locale): java.text.DateFormatSymbols
       public getEras(): java.lang.String[]
-      public setEras(arg0: java.lang.String[]): void
+      public setEras(arg0: java.lang.String[] | string[]): void
       public getMonths(): java.lang.String[]
-      public setMonths(arg0: java.lang.String[]): void
+      public setMonths(arg0: java.lang.String[] | string[]): void
       public getShortMonths(): java.lang.String[]
-      public setShortMonths(arg0: java.lang.String[]): void
+      public setShortMonths(arg0: java.lang.String[] | string[]): void
       public getWeekdays(): java.lang.String[]
-      public setWeekdays(arg0: java.lang.String[]): void
+      public setWeekdays(arg0: java.lang.String[] | string[]): void
       public getShortWeekdays(): java.lang.String[]
-      public setShortWeekdays(arg0: java.lang.String[]): void
+      public setShortWeekdays(arg0: java.lang.String[] | string[]): void
       public getAmPmStrings(): java.lang.String[]
-      public setAmPmStrings(arg0: java.lang.String[]): void
+      public setAmPmStrings(arg0: java.lang.String[] | string[]): void
       public getZoneStrings(): java.lang.String[][]
-      public setZoneStrings(arg0: java.lang.String[][]): void
+      public setZoneStrings(arg0: java.lang.String[][] | string[][]): void
       public getLocalPatternChars(): java.lang.String
       public setLocalPatternChars(arg0: java.lang.String | string): void
       public clone(): java.lang.Object

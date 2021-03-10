@@ -20,8 +20,8 @@ declare namespace jdk {
           public getScriptEngine(arg0: java.lang.ClassLoader): javax.script.ScriptEngine
           public getScriptEngine(arg0: jdk.nashorn.api.scripting.ClassFilter | jdk.nashorn.api.scripting.ClassFilter$$lambda): javax.script.ScriptEngine
           public getScriptEngine(...vargs: (java.lang.String | string)[]): javax.script.ScriptEngine
-          public getScriptEngine(arg0: java.lang.String[], arg1: java.lang.ClassLoader): javax.script.ScriptEngine
-          public getScriptEngine(arg0: java.lang.String[], arg1: java.lang.ClassLoader, arg2: jdk.nashorn.api.scripting.ClassFilter | jdk.nashorn.api.scripting.ClassFilter$$lambda): javax.script.ScriptEngine
+          public getScriptEngine(arg0: java.lang.String[] | string[], arg1: java.lang.ClassLoader): javax.script.ScriptEngine
+          public getScriptEngine(arg0: java.lang.String[] | string[], arg1: java.lang.ClassLoader, arg2: jdk.nashorn.api.scripting.ClassFilter | jdk.nashorn.api.scripting.ClassFilter$$lambda): javax.script.ScriptEngine
         }
 
       }

@@ -19,7 +19,7 @@ declare namespace java {
       public setEndRule(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public setEndRule(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean): void
       public getOffset(arg0: number | java.lang.Long): number
-      getOffsets(arg0: number | java.lang.Long, arg1: int[]): number
+      getOffsets(arg0: number | java.lang.Long, arg1: number[] | java.lang.Integer[]): number
       public getOffset(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): number
       public getRawOffset(): number
       public setRawOffset(arg0: number | java.lang.Integer): void

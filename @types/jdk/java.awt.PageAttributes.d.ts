@@ -4,7 +4,7 @@ declare namespace java {
     class PageAttributes implements java.lang.Cloneable {
       public constructor()
       public constructor(arg0: java.awt.PageAttributes)
-      public constructor(arg0: java.awt.PageAttributes$ColorType, arg1: java.awt.PageAttributes$MediaType, arg2: java.awt.PageAttributes$OrientationRequestedType, arg3: java.awt.PageAttributes$OriginType, arg4: java.awt.PageAttributes$PrintQualityType, arg5: int[])
+      public constructor(arg0: java.awt.PageAttributes$ColorType, arg1: java.awt.PageAttributes$MediaType, arg2: java.awt.PageAttributes$OrientationRequestedType, arg3: java.awt.PageAttributes$OriginType, arg4: java.awt.PageAttributes$PrintQualityType, arg5: number[] | java.lang.Integer[])
       public clone(): java.lang.Object
       public set(arg0: java.awt.PageAttributes): void
       public getColor(): java.awt.PageAttributes$ColorType
@@ -23,7 +23,7 @@ declare namespace java {
       public setPrintQuality(arg0: number | java.lang.Integer): void
       public setPrintQualityToDefault(): void
       public getPrinterResolution(): number[]
-      public setPrinterResolution(arg0: int[]): void
+      public setPrinterResolution(arg0: number[] | java.lang.Integer[]): void
       public setPrinterResolution(arg0: number | java.lang.Integer): void
       public setPrinterResolutionToDefault(): void
       public equals(arg0: java.lang.Object | any): boolean

@@ -10,7 +10,7 @@ declare namespace javax {
           protected calculateMinorAxisRequirements(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements): javax.swing.SizeRequirements
           isPercentage(arg0: number | java.lang.Integer, arg1: javax.swing.text.AttributeSet): boolean
           static spanSetFromAttributes(arg0: number | java.lang.Integer, arg1: javax.swing.SizeRequirements, arg2: javax.swing.text.html.CSS$LengthValue, arg3: javax.swing.text.html.CSS$LengthValue): boolean
-          protected layoutMinorAxis(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: int[], arg3: int[]): void
+          protected layoutMinorAxis(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[], arg3: number[] | java.lang.Integer[]): void
           public paint(arg0: java.awt.Graphics, arg1: java.awt.Shape): void
           public getAttributes(): javax.swing.text.AttributeSet
           public getResizeWeight(arg0: number | java.lang.Integer): number

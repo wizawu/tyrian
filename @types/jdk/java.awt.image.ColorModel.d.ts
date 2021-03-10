@@ -26,7 +26,7 @@ declare namespace java {
         static loadLibraries(): void
         public static getRGBdefault(): java.awt.image.ColorModel
         public constructor(arg0: number | java.lang.Integer)
-        protected constructor(arg0: number | java.lang.Integer, arg1: int[], arg2: java.awt.color.ColorSpace, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer)
+        protected constructor(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Integer[], arg2: java.awt.color.ColorSpace, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer)
         public hasAlpha(): boolean
         public isAlphaPremultiplied(): boolean
         public getTransferType(): number
@@ -47,15 +47,15 @@ declare namespace java {
         public getAlpha(arg0: java.lang.Object | any): number
         public getRGB(arg0: java.lang.Object | any): number
         public getDataElements(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): java.lang.Object
-        public getComponents(arg0: number | java.lang.Integer, arg1: int[], arg2: number | java.lang.Integer): number[]
-        public getComponents(arg0: java.lang.Object | any, arg1: int[], arg2: number | java.lang.Integer): number[]
-        public getUnnormalizedComponents(arg0: float[], arg1: number | java.lang.Integer, arg2: int[], arg3: number | java.lang.Integer): number[]
-        public getNormalizedComponents(arg0: int[], arg1: number | java.lang.Integer, arg2: float[], arg3: number | java.lang.Integer): number[]
-        public getDataElement(arg0: int[], arg1: number | java.lang.Integer): number
-        public getDataElements(arg0: int[], arg1: number | java.lang.Integer, arg2: java.lang.Object | any): java.lang.Object
-        public getDataElement(arg0: float[], arg1: number | java.lang.Integer): number
-        public getDataElements(arg0: float[], arg1: number | java.lang.Integer, arg2: java.lang.Object | any): java.lang.Object
-        public getNormalizedComponents(arg0: java.lang.Object | any, arg1: float[], arg2: number | java.lang.Integer): number[]
+        public getComponents(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Integer[], arg2: number | java.lang.Integer): number[]
+        public getComponents(arg0: java.lang.Object | any, arg1: number[] | java.lang.Integer[], arg2: number | java.lang.Integer): number[]
+        public getUnnormalizedComponents(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Integer[], arg3: number | java.lang.Integer): number[]
+        public getNormalizedComponents(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Float[], arg3: number | java.lang.Integer): number[]
+        public getDataElement(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer): number
+        public getDataElements(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: java.lang.Object | any): java.lang.Object
+        public getDataElement(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer): number
+        public getDataElements(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: java.lang.Object | any): java.lang.Object
+        public getNormalizedComponents(arg0: java.lang.Object | any, arg1: number[] | java.lang.Float[], arg2: number | java.lang.Integer): number[]
         public equals(arg0: java.lang.Object | any): boolean
         public hashCode(): number
         public getColorSpace(): java.awt.color.ColorSpace

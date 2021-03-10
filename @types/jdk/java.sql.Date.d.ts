@@ -8,7 +8,7 @@ declare namespace java {
       public setTime(arg0: number | java.lang.Long): void
       public static valueOf(arg0: java.lang.String | string): java.sql.Date
       public toString(): java.lang.String
-      static formatDecimalInt(arg0: number | java.lang.Integer, arg1: char[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      static formatDecimalInt(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
       public getHours(): number
       public getMinutes(): number
       public getSeconds(): number

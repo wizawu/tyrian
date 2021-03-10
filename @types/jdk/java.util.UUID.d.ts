@@ -5,7 +5,7 @@ declare namespace java {
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: number | java.lang.Long, arg1: number | java.lang.Long)
       public static randomUUID(): java.util.UUID
-      public static nameUUIDFromBytes(arg0: byte[]): java.util.UUID
+      public static nameUUIDFromBytes(arg0: number[] | java.lang.Byte[]): java.util.UUID
       public static fromString(arg0: java.lang.String | string): java.util.UUID
       public getLeastSignificantBits(): number
       public getMostSignificantBits(): number

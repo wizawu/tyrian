@@ -11,13 +11,13 @@ declare namespace java {
       public readFields(): java.io.ObjectInputStream$GetField
       public registerValidation(arg0: java.io.ObjectInputValidation | java.io.ObjectInputValidation$$lambda, arg1: number | java.lang.Integer): void
       protected resolveClass(arg0: java.io.ObjectStreamClass): java.lang.Class<unknown>
-      protected resolveProxyClass(arg0: java.lang.String[]): java.lang.Class<unknown>
+      protected resolveProxyClass(arg0: java.lang.String[] | string[]): java.lang.Class<unknown>
       protected resolveObject(arg0: java.lang.Object | any): java.lang.Object
       protected enableResolveObject(arg0: boolean | java.lang.Boolean): boolean
       protected readStreamHeader(): void
       protected readClassDescriptor(): java.io.ObjectStreamClass
       public read(): number
-      public read(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public available(): number
       public close(): void
       public readBoolean(): boolean
@@ -30,8 +30,8 @@ declare namespace java {
       public readLong(): number
       public readFloat(): number
       public readDouble(): number
-      public readFully(arg0: byte[]): void
-      public readFully(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public readFully(arg0: number[] | java.lang.Byte[]): void
+      public readFully(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public skipBytes(arg0: number | java.lang.Integer): number
       public readLine(): java.lang.String
       public readUTF(): java.lang.String

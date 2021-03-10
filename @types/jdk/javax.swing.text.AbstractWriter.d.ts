@@ -35,9 +35,9 @@ declare namespace javax {
         protected write(arg0: string | java.lang.Character): void
         protected write(arg0: java.lang.String | string): void
         protected writeLineSeparator(): void
-        protected write(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        protected write(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
         protected writeAttributes(arg0: javax.swing.text.AttributeSet): void
-        protected output(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        protected output(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       }
 
     }

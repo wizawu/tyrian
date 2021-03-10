@@ -13,8 +13,8 @@ declare namespace java {
         getWindingRule(): number
         isDone(): boolean
         next(): void
-        currentSegment(arg0: float[]): number
-        currentSegment(arg0: double[]): number
+        currentSegment(arg0: number[] | java.lang.Float[]): number
+        currentSegment(arg0: number[] | java.lang.Double[]): number
       }
 
     }

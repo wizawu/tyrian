@@ -11,8 +11,8 @@ declare namespace javax {
         addRowSet(arg0: javax.sql.rowset.Joinable): void
         addRowSet(arg0: javax.sql.RowSet, arg1: number | java.lang.Integer): void
         addRowSet(arg0: javax.sql.RowSet, arg1: java.lang.String | string): void
-        addRowSet(arg0: javax.sql.RowSet[], arg1: int[]): void
-        addRowSet(arg0: javax.sql.RowSet[], arg1: java.lang.String[]): void
+        addRowSet(arg0: javax.sql.RowSet[], arg1: number[] | java.lang.Integer[]): void
+        addRowSet(arg0: javax.sql.RowSet[], arg1: java.lang.String[] | string[]): void
         getRowSets(): java.util.Collection<unknown>
         getRowSetNames(): java.lang.String[]
         toCachedRowSet(): javax.sql.rowset.CachedRowSet

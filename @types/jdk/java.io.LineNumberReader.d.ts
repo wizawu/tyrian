@@ -7,7 +7,7 @@ declare namespace java {
       public setLineNumber(arg0: number | java.lang.Integer): void
       public getLineNumber(): number
       public read(): number
-      public read(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public readLine(): java.lang.String
       public skip(arg0: number | java.lang.Long): number
       public mark(arg0: number | java.lang.Integer): void

@@ -14,7 +14,7 @@ declare namespace java {
       miterlimit: float
       dash: float[]
       dash_phase: float
-      public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Float, arg4: float[], arg5: number | java.lang.Float)
+      public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Float, arg4: number[] | java.lang.Float[], arg5: number | java.lang.Float)
       public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Float)
       public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
       public constructor(arg0: number | java.lang.Float)

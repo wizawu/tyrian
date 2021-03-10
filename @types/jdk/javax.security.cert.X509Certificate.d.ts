@@ -5,7 +5,7 @@ declare namespace javax {
       abstract class X509Certificate extends javax.security.cert.Certificate {
         public constructor()
         public static getInstance(arg0: java.io.InputStream): javax.security.cert.X509Certificate
-        public static getInstance(arg0: byte[]): javax.security.cert.X509Certificate
+        public static getInstance(arg0: number[] | java.lang.Byte[]): javax.security.cert.X509Certificate
         public abstract checkValidity(): void
         public abstract checkValidity(arg0: java.util.Date): void
         public abstract getVersion(): number

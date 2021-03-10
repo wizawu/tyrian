@@ -23,8 +23,8 @@ declare namespace java {
         constructor(arg0: sun.java2d.StateTrackable$State, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
         protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
         constructor(arg0: sun.java2d.StateTrackable$State, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
-        protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: int[])
-        constructor(arg0: sun.java2d.StateTrackable$State, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: int[])
+        protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number[] | java.lang.Integer[])
+        constructor(arg0: sun.java2d.StateTrackable$State, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Integer[])
         public getDataType(): number
         public getSize(): number
         public getOffset(): number

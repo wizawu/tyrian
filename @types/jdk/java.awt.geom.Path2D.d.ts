@@ -24,7 +24,7 @@ declare namespace java {
         abstract needRoom(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer): void
         abstract pointCrossings(arg0: number | java.lang.Double, arg1: number | java.lang.Double): number
         abstract rectCrossings(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): number
-        static expandPointTypes(arg0: byte[], arg1: number | java.lang.Integer): number[]
+        static expandPointTypes(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): number[]
         public abstract moveTo(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public abstract lineTo(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public abstract quadTo(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): void

@@ -89,7 +89,7 @@ declare namespace java {
       updateDouble(arg0: number | java.lang.Integer, arg1: number | java.lang.Double): void
       updateBigDecimal(arg0: number | java.lang.Integer, arg1: java.math.BigDecimal): void
       updateString(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
-      updateBytes(arg0: number | java.lang.Integer, arg1: byte[]): void
+      updateBytes(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[]): void
       updateDate(arg0: number | java.lang.Integer, arg1: java.sql.Date): void
       updateTime(arg0: number | java.lang.Integer, arg1: java.sql.Time): void
       updateTimestamp(arg0: number | java.lang.Integer, arg1: java.sql.Timestamp): void
@@ -108,7 +108,7 @@ declare namespace java {
       updateDouble(arg0: java.lang.String | string, arg1: number | java.lang.Double): void
       updateBigDecimal(arg0: java.lang.String | string, arg1: java.math.BigDecimal): void
       updateString(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-      updateBytes(arg0: java.lang.String | string, arg1: byte[]): void
+      updateBytes(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): void
       updateDate(arg0: java.lang.String | string, arg1: java.sql.Date): void
       updateTime(arg0: java.lang.String | string, arg1: java.sql.Time): void
       updateTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void

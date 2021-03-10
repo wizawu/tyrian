@@ -53,8 +53,8 @@ declare namespace jdk {
           public static wrap(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
           public static wrapAsJSONCompatible(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
           public static unwrap(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
-          public static wrapArray(arg0: java.lang.Object[], arg1: java.lang.Object | any): java.lang.Object[]
-          public static unwrapArray(arg0: java.lang.Object[], arg1: java.lang.Object | any): java.lang.Object[]
+          public static wrapArray(arg0: java.lang.Object[] | any[], arg1: java.lang.Object | any): java.lang.Object[]
+          public static unwrapArray(arg0: java.lang.Object[] | any[], arg1: java.lang.Object | any): java.lang.Object[]
           public static identical(arg0: java.lang.Object | any, arg1: java.lang.Object | any): boolean
           constructor(arg0: jdk.nashorn.internal.runtime.ScriptObject, arg1: jdk.nashorn.internal.objects.Global)
           getScriptObject(): jdk.nashorn.internal.runtime.ScriptObject

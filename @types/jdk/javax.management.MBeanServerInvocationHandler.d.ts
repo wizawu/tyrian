@@ -8,7 +8,7 @@ declare namespace javax {
       public getObjectName(): javax.management.ObjectName
       public isMXBean(): boolean
       public static newProxyInstance<T>(arg0: javax.management.MBeanServerConnection, arg1: javax.management.ObjectName, arg2: java.lang.Class<T>, arg3: boolean | java.lang.Boolean): T
-      public invoke(arg0: java.lang.Object | any, arg1: java.lang.reflect.Method, arg2: java.lang.Object[]): java.lang.Object
+      public invoke(arg0: java.lang.Object | any, arg1: java.lang.reflect.Method, arg2: java.lang.Object[] | any[]): java.lang.Object
     }
 
   }

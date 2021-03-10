@@ -21,7 +21,7 @@ declare namespace java {
         public getMessage(): java.lang.String
         public setMessage(arg0: java.lang.String | string): void
         public getParameters(): java.lang.Object[]
-        public setParameters(arg0: java.lang.Object[]): void
+        public setParameters(arg0: java.lang.Object[] | any[]): void
         public getThreadID(): number
         public setThreadID(arg0: number | java.lang.Integer): void
         public getMillis(): number

@@ -8,17 +8,17 @@ declare namespace java {
       static readonly UTF16: byte
       public constructor()
       public constructor(arg0: java.lang.String | string)
-      public constructor(arg0: char[])
-      public constructor(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-      public constructor(arg0: int[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-      public constructor(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-      public constructor(arg0: byte[], arg1: number | java.lang.Integer)
-      public constructor(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.lang.String | string)
-      public constructor(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.nio.charset.Charset)
-      public constructor(arg0: byte[], arg1: java.lang.String | string)
-      public constructor(arg0: byte[], arg1: java.nio.charset.Charset)
-      public constructor(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-      public constructor(arg0: byte[])
+      public constructor(arg0: string[] | java.lang.Character[])
+      public constructor(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer)
+      public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.lang.String | string)
+      public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.nio.charset.Charset)
+      public constructor(arg0: number[] | java.lang.Byte[], arg1: java.lang.String | string)
+      public constructor(arg0: number[] | java.lang.Byte[], arg1: java.nio.charset.Charset)
+      public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(arg0: number[] | java.lang.Byte[])
       public constructor(arg0: java.lang.StringBuffer)
       public constructor(arg0: java.lang.StringBuilder)
       public length(): number
@@ -28,8 +28,8 @@ declare namespace java {
       public codePointBefore(arg0: number | java.lang.Integer): number
       public codePointCount(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
       public offsetByCodePoints(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
-      public getChars(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: char[], arg3: number | java.lang.Integer): void
-      public getBytes(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: byte[], arg3: number | java.lang.Integer): void
+      public getChars(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: string[] | java.lang.Character[], arg3: number | java.lang.Integer): void
+      public getBytes(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Byte[], arg3: number | java.lang.Integer): void
       public getBytes(arg0: java.lang.String | string): number[]
       public getBytes(arg0: java.nio.charset.Charset): number[]
       public getBytes(): number[]
@@ -51,10 +51,10 @@ declare namespace java {
       public lastIndexOf(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
       public indexOf(arg0: java.lang.String | string): number
       public indexOf(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
-      static indexOf(arg0: byte[], arg1: number | java.lang.Byte, arg2: number | java.lang.Integer, arg3: java.lang.String | string, arg4: number | java.lang.Integer): number
+      static indexOf(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Byte, arg2: number | java.lang.Integer, arg3: java.lang.String | string, arg4: number | java.lang.Integer): number
       public lastIndexOf(arg0: java.lang.String | string): number
       public lastIndexOf(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
-      static lastIndexOf(arg0: byte[], arg1: number | java.lang.Byte, arg2: number | java.lang.Integer, arg3: java.lang.String | string, arg4: number | java.lang.Integer): number
+      static lastIndexOf(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Byte, arg2: number | java.lang.Integer, arg3: java.lang.String | string, arg4: number | java.lang.Integer): number
       public substring(arg0: number | java.lang.Integer): java.lang.String
       public substring(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
       public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.CharSequence
@@ -86,10 +86,10 @@ declare namespace java {
       public static format(arg0: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.lang.String
       public static format(arg0: java.util.Locale, arg1: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.lang.String
       public static valueOf(arg0: java.lang.Object | any): java.lang.String
-      public static valueOf(arg0: char[]): java.lang.String
-      public static valueOf(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.String
-      public static copyValueOf(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.String
-      public static copyValueOf(arg0: char[]): java.lang.String
+      public static valueOf(arg0: string[] | java.lang.Character[]): java.lang.String
+      public static valueOf(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.String
+      public static copyValueOf(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.String
+      public static copyValueOf(arg0: string[] | java.lang.Character[]): java.lang.String
       public static valueOf(arg0: boolean | java.lang.Boolean): java.lang.String
       public static valueOf(arg0: string | java.lang.Character): java.lang.String
       public static valueOf(arg0: number | java.lang.Integer): java.lang.String
@@ -98,10 +98,10 @@ declare namespace java {
       public static valueOf(arg0: number | java.lang.Double): java.lang.String
       public intern(): java.lang.String
       public repeat(arg0: number | java.lang.Integer): java.lang.String
-      getBytes(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Byte): void
-      constructor(arg0: char[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.lang.Void)
+      getBytes(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Byte): void
+      constructor(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.lang.Void)
       constructor(arg0: java.lang.AbstractStringBuilder, arg1: java.lang.Void)
-      constructor(arg0: byte[], arg1: number | java.lang.Byte)
+      constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Byte)
       coder(): number
       value(): number[]
       static checkIndex(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void

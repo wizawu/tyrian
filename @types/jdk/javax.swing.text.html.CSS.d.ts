@@ -27,7 +27,7 @@ declare namespace javax {
           static colorToHex(arg0: java.awt.Color): java.lang.String
           static hexToColor(arg0: java.lang.String | string): java.awt.Color
           static stringToColor(arg0: java.lang.String | string): java.awt.Color
-          static getIndexOfSize(arg0: number | java.lang.Float, arg1: int[]): number
+          static getIndexOfSize(arg0: number | java.lang.Float, arg1: number[] | java.lang.Integer[]): number
           static getIndexOfSize(arg0: number | java.lang.Float, arg1: javax.swing.text.html.StyleSheet): number
           static parseStrings(arg0: java.lang.String | string): java.lang.String[]
           getPointSize(arg0: number | java.lang.Integer, arg1: javax.swing.text.html.StyleSheet): number

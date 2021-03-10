@@ -5,7 +5,7 @@ declare namespace javax {
       public constructor()
       public getSize(): number
       public getElementAt(arg0: number | java.lang.Integer): E
-      public copyInto(arg0: java.lang.Object[]): void
+      public copyInto(arg0: java.lang.Object[] | any[]): void
       public trimToSize(): void
       public ensureCapacity(arg0: number | java.lang.Integer): void
       public setSize(arg0: number | java.lang.Integer): void

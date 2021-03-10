@@ -19,7 +19,7 @@ declare namespace java {
       public toArray(): java.lang.Object[]
       public toArray<T>(arg0: T[]): T[]
       elementData(arg0: number | java.lang.Integer): E
-      static elementAt<E>(arg0: java.lang.Object[], arg1: number | java.lang.Integer): E
+      static elementAt<E>(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer): E
       public get(arg0: number | java.lang.Integer): E
       public set(arg0: number | java.lang.Integer, arg1: E): E
       public add(arg0: E): boolean

@@ -11,7 +11,7 @@ declare namespace java {
       writeFloat(arg0: number | java.lang.Float): void
       writeDouble(arg0: number | java.lang.Double): void
       writeBigDecimal(arg0: java.math.BigDecimal): void
-      writeBytes(arg0: byte[]): void
+      writeBytes(arg0: number[] | java.lang.Byte[]): void
       writeDate(arg0: java.sql.Date): void
       writeTime(arg0: java.sql.Time): void
       writeTimestamp(arg0: java.sql.Timestamp): void

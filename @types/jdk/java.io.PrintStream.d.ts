@@ -18,14 +18,14 @@ declare namespace java {
       protected setError(): void
       protected clearError(): void
       public write(arg0: number | java.lang.Integer): void
-      public write(arg0: byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public write(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public print(arg0: boolean | java.lang.Boolean): void
       public print(arg0: string | java.lang.Character): void
       public print(arg0: number | java.lang.Integer): void
       public print(arg0: number | java.lang.Long): void
       public print(arg0: number | java.lang.Float): void
       public print(arg0: number | java.lang.Double): void
-      public print(arg0: char[]): void
+      public print(arg0: string[] | java.lang.Character[]): void
       public print(arg0: java.lang.String | string): void
       public print(arg0: java.lang.Object | any): void
       public println(): void
@@ -35,7 +35,7 @@ declare namespace java {
       public println(arg0: number | java.lang.Long): void
       public println(arg0: number | java.lang.Float): void
       public println(arg0: number | java.lang.Double): void
-      public println(arg0: char[]): void
+      public println(arg0: string[] | java.lang.Character[]): void
       public println(arg0: java.lang.String | string): void
       public println(arg0: java.lang.Object | any): void
       public printf(arg0: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.io.PrintStream

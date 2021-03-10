@@ -17,32 +17,32 @@ declare namespace java {
         public setSerialNumber(arg0: java.math.BigInteger): void
         public setIssuer(arg0: javax.security.auth.x500.X500Principal): void
         public setIssuer(arg0: java.lang.String | string): void
-        public setIssuer(arg0: byte[]): void
+        public setIssuer(arg0: number[] | java.lang.Byte[]): void
         public setSubject(arg0: javax.security.auth.x500.X500Principal): void
         public setSubject(arg0: java.lang.String | string): void
-        public setSubject(arg0: byte[]): void
-        public setSubjectKeyIdentifier(arg0: byte[]): void
-        public setAuthorityKeyIdentifier(arg0: byte[]): void
+        public setSubject(arg0: number[] | java.lang.Byte[]): void
+        public setSubjectKeyIdentifier(arg0: number[] | java.lang.Byte[]): void
+        public setAuthorityKeyIdentifier(arg0: number[] | java.lang.Byte[]): void
         public setCertificateValid(arg0: java.util.Date): void
         public setPrivateKeyValid(arg0: java.util.Date): void
         public setSubjectPublicKeyAlgID(arg0: java.lang.String | string): void
         public setSubjectPublicKey(arg0: java.security.PublicKey): void
-        public setSubjectPublicKey(arg0: byte[]): void
-        public setKeyUsage(arg0: boolean[]): void
+        public setSubjectPublicKey(arg0: number[] | java.lang.Byte[]): void
+        public setKeyUsage(arg0: boolean[] | java.lang.Boolean[]): void
         public setExtendedKeyUsage(arg0: java.util.Set<java.lang.String>): void
         public setMatchAllSubjectAltNames(arg0: boolean | java.lang.Boolean): void
         public setSubjectAlternativeNames(arg0: java.util.Collection<java.util.List<unknown>>): void
         public addSubjectAlternativeName(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
-        public addSubjectAlternativeName(arg0: number | java.lang.Integer, arg1: byte[]): void
+        public addSubjectAlternativeName(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[]): void
         static equalNames(arg0: java.util.Collection<unknown>, arg1: java.util.Collection<unknown>): boolean
         static makeGeneralNameInterface(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): sun.security.x509.GeneralNameInterface
-        public setNameConstraints(arg0: byte[]): void
+        public setNameConstraints(arg0: number[] | java.lang.Byte[]): void
         public setBasicConstraints(arg0: number | java.lang.Integer): void
         public setPolicy(arg0: java.util.Set<java.lang.String>): void
         public setPathToNames(arg0: java.util.Collection<java.util.List<unknown>>): void
         setPathToNamesInternal(arg0: java.util.Set<sun.security.x509.GeneralNameInterface>): void
         public addPathToName(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
-        public addPathToName(arg0: number | java.lang.Integer, arg1: byte[]): void
+        public addPathToName(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[]): void
         public getCertificate(): java.security.cert.X509Certificate
         public getSerialNumber(): java.math.BigInteger
         public getIssuer(): javax.security.auth.x500.X500Principal

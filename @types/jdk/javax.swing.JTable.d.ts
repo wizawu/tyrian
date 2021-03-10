@@ -36,7 +36,7 @@ declare namespace javax {
       public constructor(arg0: javax.swing.table.TableModel, arg1: javax.swing.table.TableColumnModel, arg2: javax.swing.ListSelectionModel)
       public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
       public constructor(arg0: java.util.Vector<java.util.Vector>, arg1: java.util.Vector<unknown>)
-      public constructor(arg0: java.lang.Object[][], arg1: java.lang.Object[])
+      public constructor(arg0: java.lang.Object[][] | any[][], arg1: java.lang.Object[] | any[])
       public addNotify(): void
       protected configureEnclosingScrollPane(): void
       public removeNotify(): void

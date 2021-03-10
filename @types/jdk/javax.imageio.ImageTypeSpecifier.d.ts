@@ -8,11 +8,11 @@ declare namespace javax {
       public constructor(arg0: java.awt.image.RenderedImage)
       public static createPacked(arg0: java.awt.color.ColorSpace, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: boolean | java.lang.Boolean): javax.imageio.ImageTypeSpecifier
       static createComponentCM(arg0: java.awt.color.ColorSpace, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean): java.awt.image.ColorModel
-      public static createInterleaved(arg0: java.awt.color.ColorSpace, arg1: int[], arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean): javax.imageio.ImageTypeSpecifier
-      public static createBanded(arg0: java.awt.color.ColorSpace, arg1: int[], arg2: int[], arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean, arg5: boolean | java.lang.Boolean): javax.imageio.ImageTypeSpecifier
+      public static createInterleaved(arg0: java.awt.color.ColorSpace, arg1: number[] | java.lang.Integer[], arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean): javax.imageio.ImageTypeSpecifier
+      public static createBanded(arg0: java.awt.color.ColorSpace, arg1: number[] | java.lang.Integer[], arg2: number[] | java.lang.Integer[], arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean, arg5: boolean | java.lang.Boolean): javax.imageio.ImageTypeSpecifier
       public static createGrayscale(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): javax.imageio.ImageTypeSpecifier
       public static createGrayscale(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean): javax.imageio.ImageTypeSpecifier
-      public static createIndexed(arg0: byte[], arg1: byte[], arg2: byte[], arg3: byte[], arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): javax.imageio.ImageTypeSpecifier
+      public static createIndexed(arg0: number[] | java.lang.Byte[], arg1: number[] | java.lang.Byte[], arg2: number[] | java.lang.Byte[], arg3: number[] | java.lang.Byte[], arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): javax.imageio.ImageTypeSpecifier
       public static createFromBufferedImageType(arg0: number | java.lang.Integer): javax.imageio.ImageTypeSpecifier
       public static createFromRenderedImage(arg0: java.awt.image.RenderedImage): javax.imageio.ImageTypeSpecifier
       public getBufferedImageType(): number

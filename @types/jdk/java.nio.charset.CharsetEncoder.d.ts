@@ -4,13 +4,13 @@ declare namespace java {
 
       abstract class CharsetEncoder {
         static readonly $assertionsDisabled: boolean
-        protected constructor(arg0: java.nio.charset.Charset, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: byte[])
+        protected constructor(arg0: java.nio.charset.Charset, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number[] | java.lang.Byte[])
         protected constructor(arg0: java.nio.charset.Charset, arg1: number | java.lang.Float, arg2: number | java.lang.Float)
         public charset(): java.nio.charset.Charset
         public replacement(): number[]
-        public replaceWith(arg0: byte[]): java.nio.charset.CharsetEncoder
-        protected implReplaceWith(arg0: byte[]): void
-        public isLegalReplacement(arg0: byte[]): boolean
+        public replaceWith(arg0: number[] | java.lang.Byte[]): java.nio.charset.CharsetEncoder
+        protected implReplaceWith(arg0: number[] | java.lang.Byte[]): void
+        public isLegalReplacement(arg0: number[] | java.lang.Byte[]): boolean
         public malformedInputAction(): java.nio.charset.CodingErrorAction
         public onMalformedInput(arg0: java.nio.charset.CodingErrorAction): java.nio.charset.CharsetEncoder
         protected implOnMalformedInput(arg0: java.nio.charset.CodingErrorAction): void

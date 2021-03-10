@@ -6,14 +6,47 @@ const parser = require("../../../dist/parser/index")
 const visitor = require("../../../dist/parser/visitor")
 
 describe("parser/visitor", () => {
-  it("safeNamespace", () => {
-    assert.strictEqual(visitor.safeNamespace("debugger"), "debugger$")
-    assert.strictEqual(visitor.safeNamespace("enum"), "enum$")
-    assert.strictEqual(visitor.safeNamespace("export"), "export$")
-    assert.strictEqual(visitor.safeNamespace("function"), "function$")
-    assert.strictEqual(visitor.safeNamespace("in"), "in$")
-    assert.strictEqual(visitor.safeNamespace("is"), "is$")
-    assert.strictEqual(visitor.safeNamespace("util"), "util")
+  it("typeToString", () => {
+    {
+      let context = parser.parseClasses([], ["java.util.ArrayList"])
+      let type = context.classOrInterface(0).classDeclaration().type(0)
+      let result = visitor.typeToString(type)
+      assert.strictEqual(result, "java.util.ArrayList<E>")
+    }
+    {
+      let context = parser.parseClasses([], ["java.lang.Integer"])
+      let type = context.classOrInterface(0).classDeclaration().type(0)
+      let result = visitor.typeToString(type, true)
+      assert.strictEqual(result, "number")
+    }
+  })
+
+  it("declareNamespaces", () => {
+    let context = parser.parseClasses([], ["java.lang.String"])
+    let type = context.classOrInterface(0).classDeclaration().type(0)
+    let result = visitor.declareNamespaces(type)
+    assert.deepStrictEqual(result, ["declare namespace java {\nnamespace lang {\n", "}\n}\n"])
+  })
+
+  it("convertMemberModifier", () => {
+    assert.strictEqual(visitor.convertMemberModifier("abstract"), "abstract")
+    assert.strictEqual(visitor.convertMemberModifier("final"), "")
+    assert.strictEqual(visitor.convertMemberModifier("final", true), "readonly")
+    assert.strictEqual(visitor.convertMemberModifier("private"), "private")
+    assert.strictEqual(visitor.convertMemberModifier("protected"), "protected")
+    assert.strictEqual(visitor.convertMemberModifier("public"), "public")
+    assert.strictEqual(visitor.convertMemberModifier("static"), "static")
+    assert.strictEqual(visitor.convertMemberModifier("volatile"), "")
+  })
+
+  it("convertNamespace", () => {
+    assert.strictEqual(visitor.convertNamespace("debugger"), "debugger$")
+    assert.strictEqual(visitor.convertNamespace("enum"), "enum$")
+    assert.strictEqual(visitor.convertNamespace("export"), "export$")
+    assert.strictEqual(visitor.convertNamespace("function"), "function$")
+    assert.strictEqual(visitor.convertNamespace("in"), "in$")
+    assert.strictEqual(visitor.convertNamespace("is"), "is$")
+    assert.strictEqual(visitor.convertNamespace("util"), "util")
   })
 
   it("qualifiedName", () => {

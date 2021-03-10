@@ -95,7 +95,7 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
 
 function declareConstructor(constructor: ConstructorDeclarationContext, ifs: InterfaceStat): string {
   let result = ""
-  constructor.modifier()?.forEach(it => result += memberModifier(it.getText()) + " ")
+  constructor.modifier()?.forEach(it => result += convertMemberModifier(it.getText()) + " ")
   result += "constructor"
   result += "(" + methodArgumentsToString(constructor.methodArguments(), ifs) + ")"
   return result
@@ -103,7 +103,7 @@ function declareConstructor(constructor: ConstructorDeclarationContext, ifs: Int
 
 function declareField(field: FieldDeclarationContext): string {
   let result = ""
-  field.modifier()?.forEach(it => result += memberModifier(it.getText(), true) + " ")
+  field.modifier()?.forEach(it => result += convertMemberModifier(it.getText(), true) + " ")
   result += field.Identifier().getText()
   result += ": " + typeToString(field.type())
   return result
@@ -112,7 +112,7 @@ function declareField(field: FieldDeclarationContext): string {
 function declareMethod(method: MethodDeclarationContext, ifs: InterfaceStat, isClass = false): string {
   let result = ""
   if (isClass) {
-    method.modifier()?.forEach(it => result += memberModifier(it.getText()) + " ")
+    method.modifier()?.forEach(it => result += convertMemberModifier(it.getText()) + " ")
   }
   result += method.Identifier().getText()
   result += typeArgumentsToString(method.typeArguments())
@@ -124,7 +124,7 @@ function declareMethod(method: MethodDeclarationContext, ifs: InterfaceStat, isC
 function methodArgumentsToString(methodArgs: MethodArgumentsContext, ifs: InterfaceStat): string {
   const argTypes = (type: TypeContext): string[] => isLambda(ifs, type) ?
     [typeToString(type), qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())] :
-    typeAlias(typeToString(type))
+    typeAlias(qualifiedName(type, true)).map(it => it + typeArgumentsToString(type.typeArguments()))
 
   const result: string[] = []
   for (const type of (methodArgs.typeList()?.type() || [])) {
@@ -174,7 +174,7 @@ function typeArgumentToString(typeArg: TypeArgumentContext): string {
   }
 }
 
-function typeToString(type: TypeContext, alias = false): string {
+export function typeToString(type: TypeContext, alias = false): string {
   if (type.subType()) {
     return "unknown"
   } else if (alias) {
@@ -184,10 +184,10 @@ function typeToString(type: TypeContext, alias = false): string {
   }
 }
 
-function declareNamespaces(type: TypeContext): [string, string] {
+export function declareNamespaces(type: TypeContext): [string, string] {
   const result: [string, string] = ["", ""]
   for (const id of type.packageName().Identifier()) {
-    const ns = safeNamespace(id.getText())
+    const ns = convertNamespace(id.getText())
     result[0] += `namespace ${ns} {\n`
     result[1] += "}\n"
   }
@@ -220,7 +220,8 @@ function typeAlias(type: string): string[] {
   }
 }
 
-function memberModifier(modifier: string, isField = false): string {
+// Convert member modifier
+export function convertMemberModifier(modifier: string, isField = false): string {
   if (modifier === "abstract") return modifier
   if (modifier === "final" && isField) return "readonly"
   if (modifier === "private") return modifier
@@ -231,20 +232,21 @@ function memberModifier(modifier: string, isField = false): string {
 }
 
 // Append $ to namespace if it is a typescript keyword
-export function safeNamespace(namespace: string): string {
+export function convertNamespace(namespace: string): string {
   const invalid = ["debugger", "enum", "export", "function", "in", "is"]
   return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$")
 }
 
 export function qualifiedName(type: TypeContext, safe = false): string {
   if (safe) {
-    const packages = type.packageName()?.Identifier().map(it => safeNamespace(it.getText())) || []
+    const packages = type.packageName()?.Identifier().map(it => convertNamespace(it.getText())) || []
     return [...packages, type.Identifier().getText()].join(".")
   } else {
     return (type.packageName()?.getText().concat(".") || "") + type.Identifier().getText()
   }
 }
 
+// Return if an interface can be represented with a lambda expression
 export function isLambda(stat: InterfaceStat, type: TypeContext): boolean {
   let count = 0
   const bfs = [qualifiedName(type)]

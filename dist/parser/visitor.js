@@ -8,7 +8,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isLambda = exports.qualifiedName = exports.safeNamespace = exports.generateTsDef = void 0;
+exports.isLambda = exports.qualifiedName = exports.convertNamespace = exports.convertMemberModifier = exports.declareNamespaces = exports.typeToString = exports.generateTsDef = void 0;
 var chalk_1 = __importDefault(require("chalk"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
@@ -111,7 +111,7 @@ exports.generateTsDef = generateTsDef;
 function declareConstructor(constructor, ifs) {
     var _a;
     var result = "";
-    (_a = constructor.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += memberModifier(it.getText()) + " "; });
+    (_a = constructor.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += convertMemberModifier(it.getText()) + " "; });
     result += "constructor";
     result += "(" + methodArgumentsToString(constructor.methodArguments(), ifs) + ")";
     return result;
@@ -119,7 +119,7 @@ function declareConstructor(constructor, ifs) {
 function declareField(field) {
     var _a;
     var result = "";
-    (_a = field.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += memberModifier(it.getText(), true) + " "; });
+    (_a = field.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += convertMemberModifier(it.getText(), true) + " "; });
     result += field.Identifier().getText();
     result += ": " + typeToString(field.type());
     return result;
@@ -129,7 +129,7 @@ function declareMethod(method, ifs, isClass) {
     if (isClass === void 0) { isClass = false; }
     var result = "";
     if (isClass) {
-        (_a = method.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += memberModifier(it.getText()) + " "; });
+        (_a = method.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += convertMemberModifier(it.getText()) + " "; });
     }
     result += method.Identifier().getText();
     result += typeArgumentsToString(method.typeArguments());
@@ -141,7 +141,7 @@ function methodArgumentsToString(methodArgs, ifs) {
     var _a;
     var argTypes = function (type) { return isLambda(ifs, type) ?
         [typeToString(type), qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())] :
-        typeAlias(typeToString(type)); };
+        typeAlias(qualifiedName(type, true)).map(function (it) { return it + typeArgumentsToString(type.typeArguments()); }); };
     var result = [];
     for (var _i = 0, _b = (((_a = methodArgs.typeList()) === null || _a === void 0 ? void 0 : _a.type()) || []); _i < _b.length; _i++) {
         var type = _b[_i];
@@ -207,16 +207,18 @@ function typeToString(type, alias) {
         return qualifiedName(type, true) + typeArgumentsToString(type.typeArguments());
     }
 }
+exports.typeToString = typeToString;
 function declareNamespaces(type) {
     var result = ["", ""];
     for (var _i = 0, _a = type.packageName().Identifier(); _i < _a.length; _i++) {
         var id = _a[_i];
-        var ns = safeNamespace(id.getText());
+        var ns = convertNamespace(id.getText());
         result[0] += "namespace " + ns + " {\n";
         result[1] += "}\n";
     }
     return result[0] ? ["declare " + result[0], result[1]] : result;
 }
+exports.declareNamespaces = declareNamespaces;
 function typeAlias(type) {
     switch (type) {
         case "boolean": return ["boolean", "java.lang.Boolean"];
@@ -240,7 +242,8 @@ function typeAlias(type) {
         default: return [type];
     }
 }
-function memberModifier(modifier, isField) {
+// Convert member modifier
+function convertMemberModifier(modifier, isField) {
     if (isField === void 0) { isField = false; }
     if (modifier === "abstract")
         return modifier;
@@ -256,17 +259,18 @@ function memberModifier(modifier, isField) {
         return modifier;
     return "";
 }
+exports.convertMemberModifier = convertMemberModifier;
 // Append $ to namespace if it is a typescript keyword
-function safeNamespace(namespace) {
+function convertNamespace(namespace) {
     var invalid = ["debugger", "enum", "export", "function", "in", "is"];
     return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$");
 }
-exports.safeNamespace = safeNamespace;
+exports.convertNamespace = convertNamespace;
 function qualifiedName(type, safe) {
     var _a, _b;
     if (safe === void 0) { safe = false; }
     if (safe) {
-        var packages = ((_a = type.packageName()) === null || _a === void 0 ? void 0 : _a.Identifier().map(function (it) { return safeNamespace(it.getText()); })) || [];
+        var packages = ((_a = type.packageName()) === null || _a === void 0 ? void 0 : _a.Identifier().map(function (it) { return convertNamespace(it.getText()); })) || [];
         return __spreadArray(__spreadArray([], packages), [type.Identifier().getText()]).join(".");
     }
     else {
@@ -274,6 +278,7 @@ function qualifiedName(type, safe) {
     }
 }
 exports.qualifiedName = qualifiedName;
+// Return if an interface can be represented with a lambda expression
 function isLambda(stat, type) {
     var count = 0;
     var bfs = [qualifiedName(type)];

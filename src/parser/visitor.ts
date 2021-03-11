@@ -93,7 +93,7 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
   return true
 }
 
-function declareConstructor(constructor: ConstructorDeclarationContext, ifs: InterfaceStat): string {
+export function declareConstructor(constructor: ConstructorDeclarationContext, ifs: InterfaceStat): string {
   let result = ""
   constructor.modifier()?.forEach(it => result += convertMemberModifier(it.getText()) + " ")
   result += "constructor"
@@ -101,7 +101,7 @@ function declareConstructor(constructor: ConstructorDeclarationContext, ifs: Int
   return result
 }
 
-function declareField(field: FieldDeclarationContext): string {
+export function declareField(field: FieldDeclarationContext): string {
   let result = ""
   field.modifier()?.forEach(it => result += convertMemberModifier(it.getText(), true) + " ")
   result += field.Identifier().getText()
@@ -109,7 +109,7 @@ function declareField(field: FieldDeclarationContext): string {
   return result
 }
 
-function declareMethod(method: MethodDeclarationContext, ifs: InterfaceStat, isClass = false): string {
+export function declareMethod(method: MethodDeclarationContext, ifs: InterfaceStat, isClass = false): string {
   let result = ""
   if (isClass) {
     method.modifier()?.forEach(it => result += convertMemberModifier(it.getText()) + " ")
@@ -136,7 +136,7 @@ function methodArgumentsToString(methodArgs: MethodArgumentsContext, ifs: Interf
   return result.join(", ")
 }
 
-function header(type: TypeContext, extend?: TypeContext[], implement?: TypeContext[]): string {
+export function header(type: TypeContext, extend?: TypeContext[], implement?: TypeContext[]): string {
   let result = type.Identifier().getText() + typeArgumentsToString(type.typeArguments())
   if (extend && extend.length) {
     result += " extends " + extend.map(it => typeToString(it)).join(", ")
@@ -147,7 +147,7 @@ function header(type: TypeContext, extend?: TypeContext[], implement?: TypeConte
   return result
 }
 
-function typeArgumentsToString(typeArgs: TypeArgumentsContext): string {
+export function typeArgumentsToString(typeArgs: TypeArgumentsContext): string {
   if (!typeArgs) {
     return ""
   } else if (typeArgs.typeArgument().length) {

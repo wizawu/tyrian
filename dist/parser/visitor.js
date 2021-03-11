@@ -8,7 +8,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isLambda = exports.qualifiedName = exports.convertNamespace = exports.convertMemberModifier = exports.declareNamespaces = exports.typeToString = exports.generateTsDef = void 0;
+exports.isLambda = exports.qualifiedName = exports.convertNamespace = exports.convertMemberModifier = exports.declareNamespaces = exports.typeToString = exports.typeArgumentsToString = exports.header = exports.declareMethod = exports.declareField = exports.declareConstructor = exports.generateTsDef = void 0;
 var chalk_1 = __importDefault(require("chalk"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
@@ -116,6 +116,7 @@ function declareConstructor(constructor, ifs) {
     result += "(" + methodArgumentsToString(constructor.methodArguments(), ifs) + ")";
     return result;
 }
+exports.declareConstructor = declareConstructor;
 function declareField(field) {
     var _a;
     var result = "";
@@ -124,6 +125,7 @@ function declareField(field) {
     result += ": " + typeToString(field.type());
     return result;
 }
+exports.declareField = declareField;
 function declareMethod(method, ifs, isClass) {
     var _a;
     if (isClass === void 0) { isClass = false; }
@@ -137,6 +139,7 @@ function declareMethod(method, ifs, isClass) {
     result += ": " + typeToString(method.type(), true);
     return result;
 }
+exports.declareMethod = declareMethod;
 function methodArgumentsToString(methodArgs, ifs) {
     var _a;
     var argTypes = function (type) { return isLambda(ifs, type) ?
@@ -162,6 +165,7 @@ function header(type, extend, implement) {
     }
     return result;
 }
+exports.header = header;
 function typeArgumentsToString(typeArgs) {
     var _a;
     if (!typeArgs) {
@@ -175,6 +179,7 @@ function typeArgumentsToString(typeArgs) {
         return typeArgs.getText();
     }
 }
+exports.typeArgumentsToString = typeArgumentsToString;
 function typeArgumentToString(typeArg) {
     var _a, _b;
     if (((_a = typeArg.getChild(1)) === null || _a === void 0 ? void 0 : _a.getText()) === "extends") {

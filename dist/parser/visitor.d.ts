@@ -1,4 +1,9 @@
 export declare function generateTsDef(context: CompilationUnitContext, ifs: InterfaceStat, typeRoot: string): boolean;
+export declare function declareConstructor(constructor: ConstructorDeclarationContext, ifs: InterfaceStat): string;
+export declare function declareField(field: FieldDeclarationContext): string;
+export declare function declareMethod(method: MethodDeclarationContext, ifs: InterfaceStat, isClass?: boolean): string;
+export declare function header(type: TypeContext, extend?: TypeContext[], implement?: TypeContext[]): string;
+export declare function typeArgumentsToString(typeArgs: TypeArgumentsContext): string;
 export declare function typeToString(type: TypeContext, alias?: boolean): string;
 export declare function declareNamespaces(type: TypeContext): [string, string];
 export declare function convertMemberModifier(modifier: string, isField?: boolean): string;

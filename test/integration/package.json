@@ -3,10 +3,9 @@
     "chalk": "^4.1.0"
   },
   "mvnDependencies": {
-    "com.google.code.gson:gson": "2.7",
-    "org.tinylog:tinylog": "1.3.6"
+    "com.google.code.gson:gson": "2.7"
   },
   "runtime": {
-    "graaljs": "/home/wizawu/local/graalvm-ce-java11/languages/js/bin/node"
+    "graaljs": "/tmp/graalvm-ce/languages/js/bin/node"
   }
 }

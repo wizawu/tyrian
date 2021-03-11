@@ -1,5 +1,6 @@
 .gradle/
 /*.json
 build.gradle
+integration/*.js
+integration/package-lock.json
 lib/
-package-lock.json

@@ -1,4 +1,4 @@
-import * as chalk from "chalk"
+import chalk from "chalk"
 
 const JsonParser = com.google.gson.JsonParser
 const jsonObject = new JsonParser().parse("{ \"value\": 1 }").getAsJsonObject()

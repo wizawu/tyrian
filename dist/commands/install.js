@@ -120,7 +120,10 @@ function listLibClasses(jars) {
                     Object.keys(files).forEach(function (it) {
                         if (it.endsWith(".class")) {
                             var key = it.replace(/(\$\d+)*\.class$/, "").replace(/\//g, ".");
-                            classes[key] = true;
+                            if (key.split(".").reverse()[0].indexOf("-") < 0) {
+                                // Skip class like `package-info`
+                                classes[key] = true;
+                            }
                         }
                     });
                     _a.label = 3;

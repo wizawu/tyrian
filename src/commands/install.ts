@@ -39,7 +39,10 @@ export async function listLibClasses(jars: string[]): Promise<string[]> {
     Object.keys(files).forEach(it => {
       if (it.endsWith(".class")) {
         const key = it.replace(/(\$\d+)*\.class$/, "").replace(/\//g, ".")
-        classes[key] = true
+        if (key.split(".").reverse()[0].indexOf("-") < 0) {
+          // Skip class like `package-info`
+          classes[key] = true
+        }
       }
     })
   }

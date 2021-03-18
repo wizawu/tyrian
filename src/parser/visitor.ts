@@ -53,7 +53,7 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
           frontBuffer.push(
             "interface " + type.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type.typeArguments()) +
             " {\n(" + methodArgumentsToString(method.methodArguments(), ifs) + ")" +
-            ": " + typeToString(method.type()) + "\n}\n"
+            ": " + methodArgumentToString(method.type(), ifs) + "\n}\n"
           )
         } else {
           extend.type().filter(it => isLambda(ifs, it)).forEach(it => {
@@ -121,17 +121,26 @@ export function declareMethod(method: MethodDeclarationContext, ifs: InterfaceSt
   return result
 }
 
-function methodArgumentsToString(methodArgs: MethodArgumentsContext, ifs: InterfaceStat): string {
-  const argTypes = (type: TypeContext): string[] => isLambda(ifs, type) ?
-    [typeToString(type), qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())] :
-    typeAlias(qualifiedName(type, true)).map(it => it + typeArgumentsToString(type.typeArguments()))
+function methodArgumentToString(type: TypeContext, ifs: InterfaceStat): string {
+  if (isLambda(ifs, type)) {
+    return [
+      typeToString(type),
+      qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())
+    ].join(" | ")
+  } else {
+    return typeAlias(qualifiedName(type, true)).map(it =>
+      it + typeArgumentsToString(type.typeArguments())
+    ).join(" | ")
+  }
+}
 
+function methodArgumentsToString(methodArgs: MethodArgumentsContext, ifs: InterfaceStat): string {
   const result: string[] = []
   for (const type of (methodArgs.typeList()?.type() || [])) {
-    result.push("arg" + result.length + ": " + argTypes(type).join(" | "))
+    result.push("arg" + result.length + ": " + methodArgumentToString(type, ifs))
   }
   if (methodArgs.varargs()) {
-    result.push("...vargs: (" + argTypes(methodArgs.varargs().type()).join(" | ") + ")[]")
+    result.push("...vargs: (" + methodArgumentToString(methodArgs.varargs().type(), ifs) + ")[]")
   }
   return result.join(", ")
 }

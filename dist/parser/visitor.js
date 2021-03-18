@@ -66,7 +66,7 @@ function generateTsDef(context, ifs, typeRoot) {
                     var method = interfaceBody.interfaceMember().filter(function (it) { return it.methodDeclaration(); })[0].methodDeclaration();
                     frontBuffer.push("interface " + type_1.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type_1.typeArguments()) +
                         " {\n(" + methodArgumentsToString(method.methodArguments(), ifs) + ")" +
-                        ": " + typeToString(method.type()) + "\n}\n");
+                        ": " + methodArgumentToString(method.type(), ifs) + "\n}\n");
                 }
                 else {
                     extend.type().filter(function (it) { return isLambda(ifs, it); }).forEach(function (it) {
@@ -140,18 +140,28 @@ function declareMethod(method, ifs, isClass) {
     return result;
 }
 exports.declareMethod = declareMethod;
+function methodArgumentToString(type, ifs) {
+    if (isLambda(ifs, type)) {
+        return [
+            typeToString(type),
+            qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())
+        ].join(" | ");
+    }
+    else {
+        return typeAlias(qualifiedName(type, true)).map(function (it) {
+            return it + typeArgumentsToString(type.typeArguments());
+        }).join(" | ");
+    }
+}
 function methodArgumentsToString(methodArgs, ifs) {
     var _a;
-    var argTypes = function (type) { return isLambda(ifs, type) ?
-        [typeToString(type), qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())] :
-        typeAlias(qualifiedName(type, true)).map(function (it) { return it + typeArgumentsToString(type.typeArguments()); }); };
     var result = [];
     for (var _i = 0, _b = (((_a = methodArgs.typeList()) === null || _a === void 0 ? void 0 : _a.type()) || []); _i < _b.length; _i++) {
         var type = _b[_i];
-        result.push("arg" + result.length + ": " + argTypes(type).join(" | "));
+        result.push("arg" + result.length + ": " + methodArgumentToString(type, ifs));
     }
     if (methodArgs.varargs()) {
-        result.push("...vargs: (" + argTypes(methodArgs.varargs().type()).join(" | ") + ")[]");
+        result.push("...vargs: (" + methodArgumentToString(methodArgs.varargs().type(), ifs) + ")[]");
     }
     return result.join(", ");
 }

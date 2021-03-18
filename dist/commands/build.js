@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.compilerOptions = void 0;
+var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var webpack_1 = __importDefault(require("webpack"));
 var errors_1 = require("../errors");
@@ -73,5 +74,26 @@ function getCompiler(entries, outDir) {
                         }]
                 }]
         },
+        plugins: [
+            new webpack_1.default.DefinePlugin(globalVarDefinition())
+        ],
     });
+}
+function globalVarDefinition() {
+    var vars = ["com", "java", "javax", "jdk", "netscape", "org"];
+    fs_1.default.readdirSync(path_1.default.join(process.cwd(), "lib", "@types")).forEach(function (it) {
+        if (it === "index.d.ts") {
+            return;
+        }
+        else if (it.endsWith(".d.ts")) {
+            var ns = it.split(".")[0].trim();
+            if (vars.indexOf(ns) < 0)
+                vars.push(ns);
+        }
+    });
+    return vars.reduce(function (result, ns) {
+        var test = "typeof Packages === \"object\" && typeof " + ns + " === \"undefined\"";
+        result[ns] = "(" + test + " ? Packages." + ns + " : " + ns + ")";
+        return result;
+    }, {});
 }

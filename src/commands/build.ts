@@ -1,3 +1,4 @@
+import fs from "fs"
 import path from "path"
 import webpack, { Stats } from "webpack"
 
@@ -68,5 +69,25 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
         }]
       }]
     },
+    plugins: [
+      new webpack.DefinePlugin(globalVarDefinition())
+    ],
   })
+}
+
+function globalVarDefinition(): Record<string, string> {
+  const vars = ["com", "java", "javax", "jdk", "netscape", "org"]
+  fs.readdirSync(path.join(process.cwd(), "lib", "@types")).forEach(it => {
+    if (it === "index.d.ts") {
+      return
+    } else if (it.endsWith(".d.ts")) {
+      const ns = it.split(".")[0].trim()
+      if (vars.indexOf(ns) < 0) vars.push(ns)
+    }
+  })
+  return vars.reduce((result, ns) => {
+    const test = `typeof Packages === "object" && typeof ${ns} === "undefined"`
+    result[ns] = `(${test} ? Packages.${ns} : ${ns})`
+    return result
+  }, {})
 }

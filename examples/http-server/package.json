@@ -1,0 +1,10 @@
+{
+  "dependencies": {},
+  "mvnDependencies": {
+    "org.rapidoid:rapidoid-http-server": "5.5.5",
+    "org.slf4j:slf4j-simple": "1.7.30"
+  },
+  "runtime": {
+    "graaljs": "/tmp/graalvm-ce/languages/js/bin/node"
+  }
+}

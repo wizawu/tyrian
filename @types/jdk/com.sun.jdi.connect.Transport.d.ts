@@ -4,7 +4,7 @@ declare namespace com {
       namespace connect {
 
         interface Transport$$lambda {
-          (): java.lang.String
+          (): java.lang.String | string
         }
 
         interface Transport {

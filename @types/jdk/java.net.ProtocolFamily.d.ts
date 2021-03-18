@@ -2,7 +2,7 @@ declare namespace java {
   namespace net {
 
     interface ProtocolFamily$$lambda {
-      (): java.lang.String
+      (): java.lang.String | string
     }
 
     interface ProtocolFamily {

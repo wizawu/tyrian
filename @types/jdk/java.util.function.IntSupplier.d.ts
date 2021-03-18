@@ -3,7 +3,7 @@ declare namespace java {
     namespace function$ {
 
       interface IntSupplier$$lambda {
-        (): int
+        (): number | java.lang.Integer
       }
 
       interface IntSupplier {

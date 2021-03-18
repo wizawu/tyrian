@@ -3,7 +3,7 @@ declare namespace java {
     namespace function$ {
 
       interface BooleanSupplier$$lambda {
-        (): boolean
+        (): boolean | java.lang.Boolean
       }
 
       interface BooleanSupplier {

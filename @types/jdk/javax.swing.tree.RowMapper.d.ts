@@ -3,7 +3,7 @@ declare namespace javax {
     namespace tree {
 
       interface RowMapper$$lambda {
-        (arg0: javax.swing.tree.TreePath[]): int[]
+        (arg0: javax.swing.tree.TreePath[]): number[] | java.lang.Integer[]
       }
 
       interface RowMapper {

@@ -3,7 +3,7 @@ declare namespace javax {
     namespace stream {
 
       interface EventFilter$$lambda {
-        (arg0: javax.xml.stream.events.XMLEvent): boolean
+        (arg0: javax.xml.stream.events.XMLEvent): boolean | java.lang.Boolean
       }
 
       interface EventFilter {

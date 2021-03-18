@@ -3,7 +3,7 @@ declare namespace java {
     namespace cert {
 
       interface CertStoreParameters$$lambda {
-        (): java.lang.Object
+        (): java.lang.Object | any
       }
 
       interface CertStoreParameters extends java.lang.Cloneable {

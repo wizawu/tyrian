@@ -3,7 +3,7 @@ declare namespace java {
     namespace function$ {
 
       interface ToIntFunction$$lambda<T> {
-        (arg0: T): int
+        (arg0: T): number | java.lang.Integer
       }
 
       interface ToIntFunction<T> {

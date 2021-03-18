@@ -3,7 +3,7 @@ declare namespace javax {
     namespace stream {
 
       interface StreamFilter$$lambda {
-        (arg0: javax.xml.stream.XMLStreamReader): boolean
+        (arg0: javax.xml.stream.XMLStreamReader): boolean | java.lang.Boolean
       }
 
       interface StreamFilter {

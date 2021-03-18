@@ -4,7 +4,7 @@ declare namespace org {
       namespace views {
 
         interface AbstractView$$lambda {
-          (): org.w3c.dom.views.DocumentView
+          (): org.w3c.dom.views.DocumentView | org.w3c.dom.views.DocumentView$$lambda
         }
 
         interface AbstractView {

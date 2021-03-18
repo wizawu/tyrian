@@ -2,7 +2,7 @@ declare namespace javax {
   namespace swing {
 
     interface UIDefaults$ActiveValue$$lambda {
-      (arg0: javax.swing.UIDefaults): java.lang.Object
+      (arg0: javax.swing.UIDefaults): java.lang.Object | any
     }
 
     interface UIDefaults$ActiveValue {

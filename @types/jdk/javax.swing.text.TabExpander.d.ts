@@ -3,7 +3,7 @@ declare namespace javax {
     namespace text {
 
       interface TabExpander$$lambda {
-        (arg0: number | java.lang.Float, arg1: number | java.lang.Integer): float
+        (arg0: number | java.lang.Float, arg1: number | java.lang.Integer): number | java.lang.Float
       }
 
       interface TabExpander {

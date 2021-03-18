@@ -2,7 +2,7 @@ declare namespace java {
   namespace lang {
 
     interface Comparable$$lambda<T> {
-      (arg0: T): int
+      (arg0: T): number | java.lang.Integer
     }
 
     interface Comparable<T> {

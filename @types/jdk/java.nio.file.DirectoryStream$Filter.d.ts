@@ -3,7 +3,7 @@ declare namespace java {
     namespace file {
 
       interface DirectoryStream$Filter$$lambda<T> {
-        (arg0: T): boolean
+        (arg0: T): boolean | java.lang.Boolean
       }
 
       interface DirectoryStream$Filter<T> {

@@ -4,7 +4,7 @@ declare namespace org {
       namespace xpath {
 
         interface XPathNSResolver$$lambda {
-          (arg0: java.lang.String | string): java.lang.String
+          (arg0: java.lang.String | string): java.lang.String | string
         }
 
         interface XPathNSResolver {

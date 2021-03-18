@@ -3,7 +3,7 @@ declare namespace javax {
     namespace xpath {
 
       interface XPathVariableResolver$$lambda {
-        (arg0: javax.xml.namespace.QName): java.lang.Object
+        (arg0: javax.xml.namespace.QName): java.lang.Object | any
       }
 
       interface XPathVariableResolver {

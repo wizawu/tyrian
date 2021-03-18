@@ -3,7 +3,7 @@ declare namespace javax {
     namespace spi {
 
       interface ServiceRegistry$Filter$$lambda {
-        (arg0: java.lang.Object | any): boolean
+        (arg0: java.lang.Object | any): boolean | java.lang.Boolean
       }
 
       interface ServiceRegistry$Filter {

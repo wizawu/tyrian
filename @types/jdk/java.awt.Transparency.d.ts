@@ -2,7 +2,7 @@ declare namespace java {
   namespace awt {
 
     interface Transparency$$lambda {
-      (): int
+      (): number | java.lang.Integer
     }
 
     interface Transparency {

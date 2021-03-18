@@ -2,7 +2,7 @@ declare namespace java {
   namespace net {
 
     interface CookiePolicy$$lambda {
-      (arg0: java.net.URI, arg1: java.net.HttpCookie): boolean
+      (arg0: java.net.URI, arg1: java.net.HttpCookie): boolean | java.lang.Boolean
     }
 
     interface CookiePolicy {

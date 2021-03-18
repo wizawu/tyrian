@@ -3,7 +3,7 @@ declare namespace javax {
     namespace text {
 
       interface Position$$lambda {
-        (): int
+        (): number | java.lang.Integer
       }
 
       interface Position {

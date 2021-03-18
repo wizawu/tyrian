@@ -4,7 +4,7 @@ declare namespace jdk {
       namespace scripting {
 
         interface ClassFilter$$lambda {
-          (arg0: java.lang.String | string): boolean
+          (arg0: java.lang.String | string): boolean | java.lang.Boolean
         }
 
         interface ClassFilter {

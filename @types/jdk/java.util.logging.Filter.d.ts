@@ -3,7 +3,7 @@ declare namespace java {
     namespace logging {
 
       interface Filter$$lambda {
-        (arg0: java.util.logging.LogRecord): boolean
+        (arg0: java.util.logging.LogRecord): boolean | java.lang.Boolean
       }
 
       interface Filter {

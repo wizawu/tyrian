@@ -3,7 +3,7 @@ declare namespace java {
     namespace function$ {
 
       interface LongBinaryOperator$$lambda {
-        (arg0: number | java.lang.Long, arg1: number | java.lang.Long): long
+        (arg0: number | java.lang.Long, arg1: number | java.lang.Long): number | java.lang.Long
       }
 
       interface LongBinaryOperator {

@@ -4,7 +4,7 @@ declare namespace com {
       namespace auth {
 
         interface PrincipalComparator$$lambda {
-          (arg0: javax.security.auth.Subject): boolean
+          (arg0: javax.security.auth.Subject): boolean | java.lang.Boolean
         }
 
         interface PrincipalComparator {

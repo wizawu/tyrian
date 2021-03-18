@@ -3,7 +3,7 @@ declare namespace javax {
     namespace xpath {
 
       interface XPathFunction$$lambda {
-        (arg0: java.util.List<unknown>): java.lang.Object
+        (arg0: java.util.List<unknown>): java.lang.Object | any
       }
 
       interface XPathFunction {

@@ -3,7 +3,7 @@ declare namespace java {
     namespace server {
 
       interface RMIFailureHandler$$lambda {
-        (arg0: java.lang.Exception): boolean
+        (arg0: java.lang.Exception): boolean | java.lang.Boolean
       }
 
       interface RMIFailureHandler {

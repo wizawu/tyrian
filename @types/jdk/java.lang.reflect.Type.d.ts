@@ -3,7 +3,7 @@ declare namespace java {
     namespace reflect {
 
       interface Type$$lambda {
-        (): java.lang.String
+        (): java.lang.String | string
       }
 
       interface Type {

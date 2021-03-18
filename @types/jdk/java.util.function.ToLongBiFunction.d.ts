@@ -3,7 +3,7 @@ declare namespace java {
     namespace function$ {
 
       interface ToLongBiFunction$$lambda<T,U> {
-        (arg0: T, arg1: U): long
+        (arg0: T, arg1: U): number | java.lang.Long
       }
 
       interface ToLongBiFunction<T,U> {

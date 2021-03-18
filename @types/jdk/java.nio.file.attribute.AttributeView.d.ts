@@ -4,7 +4,7 @@ declare namespace java {
       namespace attribute {
 
         interface AttributeView$$lambda {
-          (): java.lang.String
+          (): java.lang.String | string
         }
 
         interface AttributeView {

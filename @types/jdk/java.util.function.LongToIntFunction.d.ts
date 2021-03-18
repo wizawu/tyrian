@@ -3,7 +3,7 @@ declare namespace java {
     namespace function$ {
 
       interface LongToIntFunction$$lambda {
-        (arg0: number | java.lang.Long): int
+        (arg0: number | java.lang.Long): number | java.lang.Integer
       }
 
       interface LongToIntFunction {

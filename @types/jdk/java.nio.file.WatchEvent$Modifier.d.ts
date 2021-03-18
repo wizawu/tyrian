@@ -3,7 +3,7 @@ declare namespace java {
     namespace file {
 
       interface WatchEvent$Modifier$$lambda {
-        (): java.lang.String
+        (): java.lang.String | string
       }
 
       interface WatchEvent$Modifier {

@@ -3,7 +3,7 @@ declare namespace java {
     namespace cert {
 
       interface CertPathValidatorResult$$lambda {
-        (): java.lang.Object
+        (): java.lang.Object | any
       }
 
       interface CertPathValidatorResult extends java.lang.Cloneable {

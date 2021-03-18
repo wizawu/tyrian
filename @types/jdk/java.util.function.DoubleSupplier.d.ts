@@ -3,7 +3,7 @@ declare namespace java {
     namespace function$ {
 
       interface DoubleSupplier$$lambda {
-        (): double
+        (): number | java.lang.Double
       }
 
       interface DoubleSupplier {

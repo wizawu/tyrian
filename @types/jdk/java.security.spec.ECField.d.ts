@@ -3,7 +3,7 @@ declare namespace java {
     namespace spec {
 
       interface ECField$$lambda {
-        (): int
+        (): number | java.lang.Integer
       }
 
       interface ECField {

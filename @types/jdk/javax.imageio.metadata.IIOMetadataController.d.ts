@@ -3,7 +3,7 @@ declare namespace javax {
     namespace metadata {
 
       interface IIOMetadataController$$lambda {
-        (arg0: javax.imageio.metadata.IIOMetadata): boolean
+        (arg0: javax.imageio.metadata.IIOMetadata): boolean | java.lang.Boolean
       }
 
       interface IIOMetadataController {

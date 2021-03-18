@@ -3,7 +3,7 @@ declare namespace java {
     namespace function$ {
 
       interface LongSupplier$$lambda {
-        (): long
+        (): number | java.lang.Long
       }
 
       interface LongSupplier {

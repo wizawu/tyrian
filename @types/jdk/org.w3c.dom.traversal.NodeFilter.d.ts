@@ -4,7 +4,7 @@ declare namespace org {
       namespace traversal {
 
         interface NodeFilter$$lambda {
-          (arg0: org.w3c.dom.Node): short
+          (arg0: org.w3c.dom.Node): number | java.lang.Short
         }
 
         interface NodeFilter {

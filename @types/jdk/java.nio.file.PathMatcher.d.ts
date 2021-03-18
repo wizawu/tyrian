@@ -3,7 +3,7 @@ declare namespace java {
     namespace file {
 
       interface PathMatcher$$lambda {
-        (arg0: java.nio.file.Path): boolean
+        (arg0: java.nio.file.Path): boolean | java.lang.Boolean
       }
 
       interface PathMatcher {

@@ -3,7 +3,7 @@ declare namespace java {
     namespace print {
 
       interface Printable$$lambda {
-        (arg0: java.awt.Graphics, arg1: java.awt.print.PageFormat, arg2: number | java.lang.Integer): int
+        (arg0: java.awt.Graphics, arg1: java.awt.print.PageFormat, arg2: number | java.lang.Integer): number | java.lang.Integer
       }
 
       interface Printable {

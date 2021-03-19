@@ -17,6 +17,7 @@ function generateTsDef(context, ifs, typeRoot) {
     var _a;
     fs_1.default.mkdirSync(typeRoot, { recursive: true });
     var references = [];
+    var topNamespaces = {};
     var _loop_1 = function (c) {
         var filename = "";
         var frontBuffer = [];
@@ -29,6 +30,7 @@ function generateTsDef(context, ifs, typeRoot) {
             var implement = c.classDeclaration().typeList();
             var classBody = c.classDeclaration().classBody();
             filename = qualifiedName(type) + ".d.ts";
+            topNamespaces[type.packageName().Identifier(0).getText()] = true;
             // declare namespaces
             var nsDeclaration = declareNamespaces(type);
             frontBuffer.push(nsDeclaration[0]);
@@ -56,6 +58,7 @@ function generateTsDef(context, ifs, typeRoot) {
             var extend = c.interfaceDeclaration().typeList();
             var interfaceBody = c.interfaceDeclaration().interfaceBody();
             filename = qualifiedName(type_1) + ".d.ts";
+            topNamespaces[type_1.packageName().Identifier(0).getText()] = true;
             // declare namespaces
             var nsDeclaration = declareNamespaces(type_1);
             frontBuffer.push(nsDeclaration[0]);
@@ -105,6 +108,7 @@ function generateTsDef(context, ifs, typeRoot) {
         _loop_1(c);
     }
     fs_1.default.writeFileSync(path_1.default.join(typeRoot, "index.d.ts"), references.map(function (it) { return "/// <reference path=\"" + it + "\" />"; }).sort().join("\n"));
+    fs_1.default.writeFileSync(path_1.default.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
     return true;
 }
 exports.generateTsDef = generateTsDef;

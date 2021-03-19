@@ -14,9 +14,9 @@ commander_1.program.command("init")
     .action(function () { return commands_1.default.init(); });
 commander_1.program.command("install")
     .description("install dependencies of current project")
-    .option("-D", "do not generate .d.ts for Java libraries", false)
+    .option("--offline", "generate lib/@types offline", false)
     .action(function (command) {
-    commands_1.default.install(!command.D);
+    commands_1.default.install(command.offline);
 });
 commander_1.program.command("build <entries...>")
     .description("compile one or more typescript entries")

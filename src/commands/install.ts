@@ -11,24 +11,24 @@ import * as utils from "../utils"
 import interfaces from "../jdk/interfaces.json"
 import { code as ErrorCode } from "../errors"
 
-export default async function (tsDefinition: boolean): Promise<void> {
+export default async function (offline: boolean): Promise<void> {
   if (!fs.existsSync("package.json")) {
     console.error(chalk.red("'package.json' does not exist."))
     process.exit(ErrorCode.PROJECT_NOT_FOUND)
   }
 
-  npmInstall()
-  gradleInstall()
-
-  if (tsDefinition) {
-    const jars = utils.listFilesByExt("lib", ".jar")
-    parser.parse(
-      jars,
-      interfaces as unknown as InterfaceStat,
-      await listLibClasses(jars),
-      path.join(process.cwd(), "lib", "@types")
-    )
+  if (!offline) {
+    npmInstall()
+    gradleInstall()
   }
+
+  const jars = utils.listFilesByExt("lib", ".jar")
+  parser.parse(
+    jars,
+    interfaces as unknown as InterfaceStat,
+    await listLibClasses(jars),
+    path.join(process.cwd(), "lib", "@types")
+  )
 }
 
 export async function listLibClasses(jars: string[]): Promise<string[]> {

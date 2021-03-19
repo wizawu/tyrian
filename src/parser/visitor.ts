@@ -7,6 +7,7 @@ const LambdaSuffix = "$$lambda"
 export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceStat, typeRoot: string): boolean {
   fs.mkdirSync(typeRoot, { recursive: true })
   const references: string[] = []
+  const topNamespaces: Record<string, boolean> = {}
   for (const c of context.classOrInterface()) {
     let filename = ""
     const frontBuffer: string[] = []
@@ -19,6 +20,7 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
       const implement = c.classDeclaration().typeList()
       const classBody = c.classDeclaration().classBody()
       filename = qualifiedName(type) + ".d.ts"
+      topNamespaces[type.packageName().Identifier(0).getText()] = true
       // declare namespaces
       const nsDeclaration = declareNamespaces(type)
       frontBuffer.push(nsDeclaration[0])
@@ -42,6 +44,7 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
       const extend = c.interfaceDeclaration().typeList()
       const interfaceBody = c.interfaceDeclaration().interfaceBody()
       filename = qualifiedName(type) + ".d.ts"
+      topNamespaces[type.packageName().Identifier(0).getText()] = true
       // declare namespaces
       const nsDeclaration = declareNamespaces(type)
       frontBuffer.push(nsDeclaration[0])
@@ -89,6 +92,10 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
   fs.writeFileSync(
     path.join(typeRoot, "index.d.ts"),
     references.map(it => `/// <reference path="${it}" />`).sort().join("\n")
+  )
+  fs.writeFileSync(
+    path.join(typeRoot, "namespace.json"),
+    JSON.stringify(topNamespaces, null, 2)
   )
   return true
 }

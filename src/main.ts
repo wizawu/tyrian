@@ -17,9 +17,9 @@ program.command("init")
 
 program.command("install")
   .description("install dependencies of current project")
-  .option("-D", "do not generate .d.ts for Java libraries", false)
+  .option("--offline", "generate lib/@types offline", false)
   .action(command => {
-    commands.install(!command.D)
+    commands.install(command.offline)
   })
 
 program.command("build <entries...>")

@@ -70,7 +70,6 @@ function createConfig(runtime: "graaljs" | "nashorn", root: string): void {
     compilerOptions: compilerOptions,
     include: [
       path.join(__dirname, "..", "..", "@types", "**", "*.d.ts"),
-      path.join(process.cwd(), "lib", "@types", "*.d.ts"),
       "**/*.ts",
     ]
   }, null, 2))

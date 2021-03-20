@@ -83,7 +83,6 @@ function createConfig(runtime, root) {
         compilerOptions: build_1.compilerOptions,
         include: [
             path_1.default.join(__dirname, "..", "..", "@types", "**", "*.d.ts"),
-            path_1.default.join(process.cwd(), "lib", "@types", "*.d.ts"),
             "**/*.ts",
         ]
     }, null, 2));

@@ -12,6 +12,7 @@ var errors_1 = require("../errors");
 exports.compilerOptions = {
     typeRoots: [
         path_1.default.join(__dirname, "..", "..", "@types"),
+        path_1.default.join(process.cwd(), "lib"),
     ]
 };
 function default_1(entries, outDir, watch) {

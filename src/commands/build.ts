@@ -8,6 +8,7 @@ import { code as ErrorCode } from "../errors"
 export const compilerOptions = {
   typeRoots: [
     path.join(__dirname, "..", "..", "@types"),
+    path.join(process.cwd(), "lib"),
   ]
 }
 

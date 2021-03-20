@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+  },
+  "mvnDependencies": {
+    "com.google.code.gson:gson": "2.7"
+  },
+  "runtime": {
+    "nashorn": "/tmp/openjdk/bin/jjs"
+  }
+}

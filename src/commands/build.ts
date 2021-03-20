@@ -44,6 +44,7 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
     mode: "development",
     context: context,
     entry: entry,
+    target: "es5",
     output: {
       path: process.cwd(),
       filename: "[name]",

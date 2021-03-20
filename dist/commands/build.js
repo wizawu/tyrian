@@ -49,6 +49,7 @@ function getCompiler(entries, outDir) {
         mode: "development",
         context: context,
         entry: entry,
+        target: "es5",
         output: {
             path: process.cwd(),
             filename: "[name]",

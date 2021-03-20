@@ -6,7 +6,7 @@ const install = require("../../../dist/commands/install")
 
 describe("commands/install", () => {
   it("listLibClasses", () => {
-    return install.listLibClasses(["integration/lib/gson-2.7.jar"]).then(result => {
+    return install.listLibClasses([__dirname + "/gson-2.7.jar"]).then(result => {
       assert.strictEqual(result.length, 86)
       assert.strictEqual("com.google.gson.annotations.Expose", result[0])
     })

@@ -65,8 +65,8 @@ typeArguments
 
 typeArgument
     : type
-    | Identifier 'extends' type
-    | '?' 'extends' type
+    | Identifier 'extends' type ('&' type)*
+    | '?' 'extends' type ('&' type)*
     | '?' 'super' type
     | '?'
     ;

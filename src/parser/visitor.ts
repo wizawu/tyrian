@@ -85,7 +85,6 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
     if (filename) {
       const content = [...frontBuffer, ...endBuffer.reverse()].join("\n")
       fs.writeFileSync(path.join(typeRoot, filename), content + lambdaBuffer)
-      console.debug(chalk.green("Generated " + filename))
       references.push(filename)
     }
   }
@@ -93,10 +92,12 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
     path.join(typeRoot, "index.d.ts"),
     references.map(it => `/// <reference path="${it}" />`).sort().join("\n")
   )
+  console.log(chalk.green("Generated " + path.join(typeRoot, "index.d.ts")))
   fs.writeFileSync(
     path.join(typeRoot, "namespace.json"),
     JSON.stringify(topNamespaces, null, 2)
   )
+  console.log(chalk.green("Generated " + path.join(typeRoot, "namespace.json")))
   return true
 }
 
@@ -177,14 +178,15 @@ export function typeArgumentsToString(typeArgs: TypeArgumentsContext): string {
 function typeArgumentToString(typeArg: TypeArgumentContext): string {
   if (typeArg.getChild(1)?.getText() === "extends") {
     if (typeArg.Identifier()) {
-      return typeArg.Identifier().getText() + " extends " + typeToString(typeArg.type())
+      return typeArg.Identifier().getText() + " extends " +
+        typeArg.type().map(it => typeToString(it)).join(" & ")
     } else {
-      return typeToString(typeArg.type())
+      return typeArg.type().map(it => typeToString(it)).join(" & ")
     }
   } else if (typeArg.getChild(1)?.getText() === "super") {
     return "unknown"
-  } else if (typeArg.type()) {
-    return typeToString(typeArg.type())
+  } else if (typeArg.type(0)) {
+    return typeToString(typeArg.type(0))
   } else {
     return "unknown"
   }

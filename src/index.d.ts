@@ -74,7 +74,8 @@ declare interface TypeArgumentsContext {
 
 declare interface TypeArgumentContext {
   Identifier(): Identifier
-  type(): TypeContext
+  type(i: number): TypeContext
+  type(): TypeContext[]
   getText(): string
   getChild(i: number): Child
 }

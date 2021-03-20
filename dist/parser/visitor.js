@@ -99,7 +99,6 @@ function generateTsDef(context, ifs, typeRoot) {
         if (filename) {
             var content = __spreadArray(__spreadArray([], frontBuffer), endBuffer.reverse()).join("\n");
             fs_1.default.writeFileSync(path_1.default.join(typeRoot, filename), content + lambdaBuffer);
-            console.debug(chalk_1.default.green("Generated " + filename));
             references.push(filename);
         }
     };
@@ -108,7 +107,9 @@ function generateTsDef(context, ifs, typeRoot) {
         _loop_1(c);
     }
     fs_1.default.writeFileSync(path_1.default.join(typeRoot, "index.d.ts"), references.map(function (it) { return "/// <reference path=\"" + it + "\" />"; }).sort().join("\n"));
+    console.log(chalk_1.default.green("Generated " + path_1.default.join(typeRoot, "index.d.ts")));
     fs_1.default.writeFileSync(path_1.default.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
+    console.log(chalk_1.default.green("Generated " + path_1.default.join(typeRoot, "namespace.json")));
     return true;
 }
 exports.generateTsDef = generateTsDef;
@@ -198,17 +199,18 @@ function typeArgumentToString(typeArg) {
     var _a, _b;
     if (((_a = typeArg.getChild(1)) === null || _a === void 0 ? void 0 : _a.getText()) === "extends") {
         if (typeArg.Identifier()) {
-            return typeArg.Identifier().getText() + " extends " + typeToString(typeArg.type());
+            return typeArg.Identifier().getText() + " extends " +
+                typeArg.type().map(function (it) { return typeToString(it); }).join(" & ");
         }
         else {
-            return typeToString(typeArg.type());
+            return typeArg.type().map(function (it) { return typeToString(it); }).join(" & ");
         }
     }
     else if (((_b = typeArg.getChild(1)) === null || _b === void 0 ? void 0 : _b.getText()) === "super") {
         return "unknown";
     }
-    else if (typeArg.type()) {
-        return typeToString(typeArg.type());
+    else if (typeArg.type(0)) {
+        return typeToString(typeArg.type(0));
     }
     else {
         return "unknown";

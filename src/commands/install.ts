@@ -23,12 +23,19 @@ export default async function (offline: boolean): Promise<void> {
   }
 
   const jars = utils.listFilesByExt("lib", ".jar")
-  parser.parse(
-    jars,
-    interfaces as unknown as InterfaceStat,
-    await listLibClasses(jars),
-    path.join(process.cwd(), "lib", "@types")
-  )
+  if (jars.length > 0) {
+    console.log("Parsing classes from the following JARs:")
+    jars.map(it => console.log("  * " + it))
+    const classes = await listLibClasses(jars)
+    console.log(`Found ${classes.length} classes`)
+    console.log("Generating typescript definitions...")
+    parser.parse(
+      jars,
+      interfaces as unknown as InterfaceStat,
+      classes,
+      path.join(process.cwd(), "lib", "@types")
+    )
+  }
 }
 
 export async function listLibClasses(jars: string[]): Promise<string[]> {

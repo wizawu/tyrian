@@ -70,6 +70,7 @@ export namespace JavapParser {
     export const T__31: number;
     export const T__32: number;
     export const T__33: number;
+    export const T__34: number;
     export const Identifier: number;
     export const WS: number;
     export const RULE_compilationUnit: number;
@@ -272,7 +273,7 @@ declare class TypeArgumentContext {
     parser: any;
     ruleIndex: number;
     constructor: typeof TypeArgumentContext;
-    type(): any;
+    type(i: any): any;
     Identifier(): any;
     enterRule(listener: any): void;
     exitRule(listener: any): void;

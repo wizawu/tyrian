@@ -77,9 +77,9 @@ var interfaces_json_1 = __importDefault(require("../jdk/interfaces.json"));
 var errors_1 = require("../errors");
 function default_1(offline) {
     return __awaiter(this, void 0, void 0, function () {
-        var jars, _a, _b, _c;
-        return __generator(this, function (_d) {
-            switch (_d.label) {
+        var jars, classes;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
                 case 0:
                     if (!fs_1.default.existsSync("package.json")) {
                         console.error(chalk_1.default.red("'package.json' does not exist."));
@@ -90,12 +90,17 @@ function default_1(offline) {
                         gradleInstall();
                     }
                     jars = utils.listFilesByExt("lib", ".jar");
-                    _b = (_a = parser).parse;
-                    _c = [jars, interfaces_json_1.default];
+                    if (!(jars.length > 0)) return [3 /*break*/, 2];
+                    console.log("Parsing classes from the following JARs:");
+                    jars.map(function (it) { return console.log("  * " + it); });
                     return [4 /*yield*/, listLibClasses(jars)];
                 case 1:
-                    _b.apply(_a, _c.concat([_d.sent(), path_1.default.join(process.cwd(), "lib", "@types")]));
-                    return [2 /*return*/];
+                    classes = _a.sent();
+                    console.log("Found " + classes.length + " classes");
+                    console.log("Generating typescript definitions...");
+                    parser.parse(jars, interfaces_json_1.default, classes, path_1.default.join(process.cwd(), "lib", "@types"));
+                    _a.label = 2;
+                case 2: return [2 /*return*/];
             }
         });
     });

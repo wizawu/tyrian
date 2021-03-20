@@ -1,6 +1,5 @@
 {
-  "dependencies": {
-  },
+  "dependencies": {},
   "mvnDependencies": {
     "com.google.code.gson:gson": "2.7"
   },

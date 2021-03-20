@@ -61,17 +61,29 @@ function default_1() {
 }
 exports.default = default_1;
 function createConfig(runtime, root) {
+    var _a;
+    var javapPath = path_1.default.join(root, "bin", "javap");
+    var runtimePath = runtime === "graaljs" ?
+        path_1.default.join(root, "languages", "js", "bin", "node") :
+        path_1.default.join(root, "bin", "jjs");
+    if (!fs_1.default.existsSync(runtimePath)) {
+        console.error(chalk_1.default.red("Cannot find " + runtimePath));
+        process.exit(errors_1.code.INVALID_JDK_ROOT);
+    }
+    else if (!fs_1.default.existsSync(javapPath)) {
+        console.error(chalk_1.default.red("Cannot find " + javapPath));
+        process.exit(errors_1.code.INVALID_JDK_ROOT);
+    }
     fs_1.default.writeFileSync("package.json", JSON.stringify({
         dependencies: {},
         mvnDependencies: {},
-        runtime: runtime === "graaljs" ?
-            { graaljs: path_1.default.join(root, "languages", "js", "bin", "node") } :
-            { nashorn: path_1.default.join(root, "bin", "jjs") }
+        runtime: (_a = {}, _a[runtime] = runtimePath, _a),
     }, null, 2));
     fs_1.default.writeFileSync("tsconfig.json", JSON.stringify({
         compilerOptions: build_1.compilerOptions,
         include: [
             path_1.default.join(__dirname, "..", "..", "@types", "**", "*.d.ts"),
+            path_1.default.join(process.cwd(), "lib", "@types", "*.d.ts"),
             "**/*.ts",
         ]
     }, null, 2));

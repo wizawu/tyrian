@@ -7,11 +7,11 @@ exports.compilerOptions = void 0;
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var webpack_1 = __importDefault(require("webpack"));
+var run_1 = require("./run");
 var errors_1 = require("../errors");
 exports.compilerOptions = {
     typeRoots: [
         path_1.default.join(__dirname, "..", "..", "@types"),
-        path_1.default.join(process.cwd(), "lib"),
     ]
 };
 function default_1(entries, outDir, watch) {
@@ -49,7 +49,7 @@ function getCompiler(entries, outDir) {
         mode: "development",
         context: context,
         entry: entry,
-        target: "es5",
+        target: run_1.checkRuntime()[0] === "nashorn" ? "es5" : undefined,
         output: {
             path: process.cwd(),
             filename: "[name]",

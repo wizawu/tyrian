@@ -49,17 +49,28 @@ export default function (): void {
 }
 
 function createConfig(runtime: "graaljs" | "nashorn", root: string): void {
+  const javapPath = path.join(root, "bin", "javap")
+  const runtimePath = runtime === "graaljs" ?
+    path.join(root, "languages", "js", "bin", "node"):
+    path.join(root, "bin", "jjs")
+  if (!fs.existsSync(runtimePath)) {
+    console.error(chalk.red("Cannot find " + runtimePath))
+    process.exit(ErrorCode.INVALID_JDK_ROOT)
+  } else if (!fs.existsSync(javapPath)) {
+    console.error(chalk.red("Cannot find " + javapPath))
+    process.exit(ErrorCode.INVALID_JDK_ROOT)
+  }
+
   fs.writeFileSync("package.json", JSON.stringify({
     dependencies: {},
     mvnDependencies: {},
-    runtime: runtime === "graaljs" ?
-      { graaljs: path.join(root, "languages", "js", "bin", "node") } :
-      { nashorn: path.join(root, "bin", "jjs") }
+    runtime: { [runtime]: runtimePath },
   }, null, 2))
   fs.writeFileSync("tsconfig.json", JSON.stringify({
     compilerOptions: compilerOptions,
     include: [
       path.join(__dirname, "..", "..", "@types", "**", "*.d.ts"),
+      path.join(process.cwd(), "lib", "@types", "*.d.ts"),
       "**/*.ts",
     ]
   }, null, 2))

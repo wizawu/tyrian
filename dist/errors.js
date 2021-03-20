@@ -8,4 +8,5 @@ exports.code = {
     BUILD_ERROR: 4,
     INIT_CONFLICT: 5,
     PROJECT_NOT_FOUND: 6,
+    INVALID_JDK_ROOT: 7,
 };

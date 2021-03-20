@@ -2,12 +2,12 @@ import fs from "fs"
 import path from "path"
 import webpack, { Stats } from "webpack"
 
+import { checkRuntime } from "./run"
 import { code as ErrorCode } from "../errors"
 
 export const compilerOptions = {
   typeRoots: [
     path.join(__dirname, "..", "..", "@types"),
-    path.join(process.cwd(), "lib"),
   ]
 }
 
@@ -44,7 +44,7 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
     mode: "development",
     context: context,
     entry: entry,
-    target: "es5",
+    target: checkRuntime()[0] === "nashorn" ? "es5" : undefined,
     output: {
       path: process.cwd(),
       filename: "[name]",

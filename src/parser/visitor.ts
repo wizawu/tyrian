@@ -85,9 +85,14 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
     if (filename) {
       const content = [...frontBuffer, ...endBuffer.reverse()].join("\n")
       fs.writeFileSync(path.join(typeRoot, filename), content + lambdaBuffer)
+      process.stdout.clearLine(0)
+      process.stdout.cursorTo(0)
+      process.stdout.write(`Generated lib/@types/${filename}`)
       references.push(filename)
     }
   }
+  process.stdout.clearLine(0)
+  process.stdout.cursorTo(0)
   fs.writeFileSync(
     path.join(typeRoot, "index.d.ts"),
     references.map(it => `/// <reference path="${it}" />`).sort().join("\n")
@@ -110,6 +115,7 @@ export function declareConstructor(constructor: ConstructorDeclarationContext, i
 }
 
 export function declareField(field: FieldDeclarationContext): string {
+  if (field.Identifier().getText() === "constructor") return ""
   let result = ""
   field.modifier()?.forEach(it => result += convertMemberModifier(it.getText(), true) + " ")
   result += field.Identifier().getText()
@@ -251,7 +257,7 @@ export function convertMemberModifier(modifier: string, isField = false): string
 
 // Append $ to namespace if it is a typescript keyword
 export function convertNamespace(namespace: string): string {
-  const invalid = ["debugger", "enum", "export", "function", "in", "is"]
+  const invalid = ["debugger", "enum", "export", "function", "in", "is", "var"]
   return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$")
 }
 

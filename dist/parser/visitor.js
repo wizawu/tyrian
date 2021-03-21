@@ -99,6 +99,9 @@ function generateTsDef(context, ifs, typeRoot) {
         if (filename) {
             var content = __spreadArray(__spreadArray([], frontBuffer), endBuffer.reverse()).join("\n");
             fs_1.default.writeFileSync(path_1.default.join(typeRoot, filename), content + lambdaBuffer);
+            process.stdout.clearLine(0);
+            process.stdout.cursorTo(0);
+            process.stdout.write("Generated lib/@types/" + filename);
             references.push(filename);
         }
     };
@@ -106,6 +109,8 @@ function generateTsDef(context, ifs, typeRoot) {
         var c = _b[_i];
         _loop_1(c);
     }
+    process.stdout.clearLine(0);
+    process.stdout.cursorTo(0);
     fs_1.default.writeFileSync(path_1.default.join(typeRoot, "index.d.ts"), references.map(function (it) { return "/// <reference path=\"" + it + "\" />"; }).sort().join("\n"));
     console.log(chalk_1.default.green("Generated " + path_1.default.join(typeRoot, "index.d.ts")));
     fs_1.default.writeFileSync(path_1.default.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
@@ -124,6 +129,8 @@ function declareConstructor(constructor, ifs) {
 exports.declareConstructor = declareConstructor;
 function declareField(field) {
     var _a;
+    if (field.Identifier().getText() === "constructor")
+        return "";
     var result = "";
     (_a = field.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += convertMemberModifier(it.getText(), true) + " "; });
     result += field.Identifier().getText();
@@ -283,7 +290,7 @@ function convertMemberModifier(modifier, isField) {
 exports.convertMemberModifier = convertMemberModifier;
 // Append $ to namespace if it is a typescript keyword
 function convertNamespace(namespace) {
-    var invalid = ["debugger", "enum", "export", "function", "in", "is"];
+    var invalid = ["debugger", "enum", "export", "function", "in", "is", "var"];
     return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$");
 }
 exports.convertNamespace = convertNamespace;

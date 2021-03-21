@@ -91,12 +91,12 @@ function default_1(offline) {
                     }
                     jars = utils.listFilesByExt("lib", ".jar");
                     if (!(jars.length > 0)) return [3 /*break*/, 2];
-                    console.log("Parsing classes from the following JARs:");
+                    console.log("Parsing classes from the following libraries:");
                     jars.map(function (it) { return console.log("  * " + it); });
                     return [4 /*yield*/, listLibClasses(jars)];
                 case 1:
                     classes = _a.sent();
-                    console.log("Found " + classes.length + " classes");
+                    console.log("Found " + chalk_1.default.green(classes.length) + " classes");
                     console.log("Generating typescript definitions...");
                     parser.parse(jars, interfaces_json_1.default, classes, path_1.default.join(process.cwd(), "lib", "@types"));
                     _a.label = 2;

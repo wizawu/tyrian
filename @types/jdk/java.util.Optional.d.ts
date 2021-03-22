@@ -8,8 +8,8 @@ declare namespace java {
       public get(): T
       public isPresent(): boolean
       public isEmpty(): boolean
-      public ifPresent(arg0: java.util.function$.Consumer<unknown>): void
-      public ifPresentOrElse(arg0: java.util.function$.Consumer<unknown>, arg1: java.lang.Runnable | java.lang.Runnable$$lambda): void
+      public ifPresent(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+      public ifPresentOrElse(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>, arg1: java.lang.Runnable | java.lang.Runnable$$lambda): void
       public filter(arg0: java.util.function$.Predicate<unknown>): java.util.Optional<T>
       public map<U>(arg0: java.util.function$.Function<unknown,U>): java.util.Optional<U>
       public flatMap<U>(arg0: java.util.function$.Function<unknown,java.util.Optional<U>>): java.util.Optional<U>

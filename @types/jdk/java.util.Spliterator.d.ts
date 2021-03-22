@@ -10,8 +10,8 @@ declare namespace java {
       public static readonly IMMUTABLE: int
       public static readonly CONCURRENT: int
       public static readonly SUBSIZED: int
-      tryAdvance(arg0: java.util.function$.Consumer<unknown>): boolean
-      forEachRemaining(arg0: java.util.function$.Consumer<unknown>): void
+      tryAdvance(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): boolean
+      forEachRemaining(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
       trySplit(): java.util.Spliterator<T>
       estimateSize(): number
       getExactSizeIfKnown(): number

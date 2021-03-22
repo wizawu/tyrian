@@ -6,9 +6,9 @@ declare namespace java {
         thenApply<U>(arg0: java.util.function$.Function<unknown,U>): java.util.concurrent.CompletionStage<U>
         thenApplyAsync<U>(arg0: java.util.function$.Function<unknown,U>): java.util.concurrent.CompletionStage<U>
         thenApplyAsync<U>(arg0: java.util.function$.Function<unknown,U>, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): java.util.concurrent.CompletionStage<U>
-        thenAccept(arg0: java.util.function$.Consumer<unknown>): java.util.concurrent.CompletionStage<java.lang.Void>
-        thenAcceptAsync(arg0: java.util.function$.Consumer<unknown>): java.util.concurrent.CompletionStage<java.lang.Void>
-        thenAcceptAsync(arg0: java.util.function$.Consumer<unknown>, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>
+        thenAccept(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): java.util.concurrent.CompletionStage<java.lang.Void>
+        thenAcceptAsync(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): java.util.concurrent.CompletionStage<java.lang.Void>
+        thenAcceptAsync(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>
         thenRun(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>
         thenRunAsync(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>
         thenRunAsync(arg0: java.lang.Runnable | java.lang.Runnable$$lambda, arg1: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>
@@ -24,9 +24,9 @@ declare namespace java {
         applyToEither<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Function<unknown,U>): java.util.concurrent.CompletionStage<U>
         applyToEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Function<unknown,U>): java.util.concurrent.CompletionStage<U>
         applyToEitherAsync<U>(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Function<unknown,U>, arg2: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): java.util.concurrent.CompletionStage<U>
-        acceptEither(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer<unknown>): java.util.concurrent.CompletionStage<java.lang.Void>
-        acceptEitherAsync(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer<unknown>): java.util.concurrent.CompletionStage<java.lang.Void>
-        acceptEitherAsync(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer<unknown>, arg2: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>
+        acceptEither(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): java.util.concurrent.CompletionStage<java.lang.Void>
+        acceptEitherAsync(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): java.util.concurrent.CompletionStage<java.lang.Void>
+        acceptEitherAsync(arg0: java.util.concurrent.CompletionStage<T>, arg1: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>, arg2: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>
         runAfterEither(arg0: java.util.concurrent.CompletionStage<unknown>, arg1: java.lang.Runnable | java.lang.Runnable$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>
         runAfterEitherAsync(arg0: java.util.concurrent.CompletionStage<unknown>, arg1: java.lang.Runnable | java.lang.Runnable$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>
         runAfterEitherAsync(arg0: java.util.concurrent.CompletionStage<unknown>, arg1: java.lang.Runnable | java.lang.Runnable$$lambda, arg2: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): java.util.concurrent.CompletionStage<java.lang.Void>

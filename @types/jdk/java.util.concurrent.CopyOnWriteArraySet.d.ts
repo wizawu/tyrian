@@ -20,7 +20,7 @@ declare namespace java {
         public iterator(): java.util.Iterator<E>
         public equals(arg0: java.lang.Object | any): boolean
         public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
-        public forEach(arg0: java.util.function$.Consumer<unknown>): void
+        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         public spliterator(): java.util.Spliterator<E>
       }
 

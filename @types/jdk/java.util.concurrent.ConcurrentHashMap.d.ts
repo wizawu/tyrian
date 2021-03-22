@@ -67,30 +67,30 @@ declare namespace java {
         static untreeify<K,V>(arg0: java.util.concurrent.ConcurrentHashMap$Node<K,V>): java.util.concurrent.ConcurrentHashMap$Node<K,V>
         batchFor(arg0: number | java.lang.Long): number
         public forEach(arg0: number | java.lang.Long, arg1: java.util.function$.BiConsumer<unknown,unknown>): void
-        public forEach<U>(arg0: number | java.lang.Long, arg1: java.util.function$.BiFunction<unknown,unknown,U>, arg2: java.util.function$.Consumer<unknown>): void
+        public forEach<U>(arg0: number | java.lang.Long, arg1: java.util.function$.BiFunction<unknown,unknown,U>, arg2: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         public search<U>(arg0: number | java.lang.Long, arg1: java.util.function$.BiFunction<unknown,unknown,U>): U
         public reduce<U>(arg0: number | java.lang.Long, arg1: java.util.function$.BiFunction<unknown,unknown,U>, arg2: java.util.function$.BiFunction<unknown,unknown,U>): U
         public reduceToDouble(arg0: number | java.lang.Long, arg1: java.util.function$.ToDoubleBiFunction<unknown,unknown> | java.util.function$.ToDoubleBiFunction$$lambda<unknown,unknown>, arg2: number | java.lang.Double, arg3: java.util.function$.DoubleBinaryOperator | java.util.function$.DoubleBinaryOperator$$lambda): number
         public reduceToLong(arg0: number | java.lang.Long, arg1: java.util.function$.ToLongBiFunction<unknown,unknown> | java.util.function$.ToLongBiFunction$$lambda<unknown,unknown>, arg2: number | java.lang.Long, arg3: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda): number
         public reduceToInt(arg0: number | java.lang.Long, arg1: java.util.function$.ToIntBiFunction<unknown,unknown> | java.util.function$.ToIntBiFunction$$lambda<unknown,unknown>, arg2: number | java.lang.Integer, arg3: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$lambda): number
-        public forEachKey(arg0: number | java.lang.Long, arg1: java.util.function$.Consumer<unknown>): void
-        public forEachKey<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<unknown,U>, arg2: java.util.function$.Consumer<unknown>): void
+        public forEachKey(arg0: number | java.lang.Long, arg1: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        public forEachKey<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<unknown,U>, arg2: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         public searchKeys<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<unknown,U>): U
         public reduceKeys(arg0: number | java.lang.Long, arg1: java.util.function$.BiFunction<unknown,unknown,K>): K
         public reduceKeys<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<unknown,U>, arg2: java.util.function$.BiFunction<unknown,unknown,U>): U
         public reduceKeysToDouble(arg0: number | java.lang.Long, arg1: java.util.function$.ToDoubleFunction<unknown> | java.util.function$.ToDoubleFunction$$lambda<unknown>, arg2: number | java.lang.Double, arg3: java.util.function$.DoubleBinaryOperator | java.util.function$.DoubleBinaryOperator$$lambda): number
         public reduceKeysToLong(arg0: number | java.lang.Long, arg1: java.util.function$.ToLongFunction<unknown> | java.util.function$.ToLongFunction$$lambda<unknown>, arg2: number | java.lang.Long, arg3: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda): number
         public reduceKeysToInt(arg0: number | java.lang.Long, arg1: java.util.function$.ToIntFunction<unknown> | java.util.function$.ToIntFunction$$lambda<unknown>, arg2: number | java.lang.Integer, arg3: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$lambda): number
-        public forEachValue(arg0: number | java.lang.Long, arg1: java.util.function$.Consumer<unknown>): void
-        public forEachValue<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<unknown,U>, arg2: java.util.function$.Consumer<unknown>): void
+        public forEachValue(arg0: number | java.lang.Long, arg1: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        public forEachValue<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<unknown,U>, arg2: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         public searchValues<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<unknown,U>): U
         public reduceValues(arg0: number | java.lang.Long, arg1: java.util.function$.BiFunction<unknown,unknown,V>): V
         public reduceValues<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<unknown,U>, arg2: java.util.function$.BiFunction<unknown,unknown,U>): U
         public reduceValuesToDouble(arg0: number | java.lang.Long, arg1: java.util.function$.ToDoubleFunction<unknown> | java.util.function$.ToDoubleFunction$$lambda<unknown>, arg2: number | java.lang.Double, arg3: java.util.function$.DoubleBinaryOperator | java.util.function$.DoubleBinaryOperator$$lambda): number
         public reduceValuesToLong(arg0: number | java.lang.Long, arg1: java.util.function$.ToLongFunction<unknown> | java.util.function$.ToLongFunction$$lambda<unknown>, arg2: number | java.lang.Long, arg3: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda): number
         public reduceValuesToInt(arg0: number | java.lang.Long, arg1: java.util.function$.ToIntFunction<unknown> | java.util.function$.ToIntFunction$$lambda<unknown>, arg2: number | java.lang.Integer, arg3: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$lambda): number
-        public forEachEntry(arg0: number | java.lang.Long, arg1: java.util.function$.Consumer<unknown>): void
-        public forEachEntry<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<java.util.Map$Entry<K,V>,U>, arg2: java.util.function$.Consumer<unknown>): void
+        public forEachEntry(arg0: number | java.lang.Long, arg1: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        public forEachEntry<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<java.util.Map$Entry<K,V>,U>, arg2: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         public searchEntries<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<java.util.Map$Entry<K,V>,U>): U
         public reduceEntries(arg0: number | java.lang.Long, arg1: java.util.function$.BiFunction<java.util.Map$Entry<K,V>,java.util.Map$Entry<K,V>,java.util.Map$Entry<K,V>>): java.util.Map$Entry<K,V>
         public reduceEntries<U>(arg0: number | java.lang.Long, arg1: java.util.function$.Function<java.util.Map$Entry<K,V>,U>, arg2: java.util.function$.BiFunction<unknown,unknown,U>): U

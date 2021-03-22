@@ -36,7 +36,7 @@ declare namespace java {
         public clear(): void
         public addAll(arg0: java.util.Collection<E>): boolean
         public addAll(arg0: number | java.lang.Integer, arg1: java.util.Collection<E>): boolean
-        public forEach(arg0: java.util.function$.Consumer<unknown>): void
+        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
         bulkRemove(arg0: java.util.function$.Predicate<unknown>, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
         public replaceAll(arg0: java.util.function$.UnaryOperator<E>): void

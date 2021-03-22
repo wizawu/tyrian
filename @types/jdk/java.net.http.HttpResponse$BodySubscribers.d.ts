@@ -11,7 +11,7 @@ declare namespace java {
         public static ofByteArray(): java.net.http.HttpResponse$BodySubscriber<byte[]>
         public static ofFile(arg0: java.nio.file.Path, ...vargs: (java.nio.file.OpenOption)[]): java.net.http.HttpResponse$BodySubscriber<java.nio.file.Path>
         public static ofFile(arg0: java.nio.file.Path): java.net.http.HttpResponse$BodySubscriber<java.nio.file.Path>
-        public static ofByteArrayConsumer(arg0: java.util.function$.Consumer<java.util.Optional<byte[]>>): java.net.http.HttpResponse$BodySubscriber<java.lang.Void>
+        public static ofByteArrayConsumer(arg0: java.util.function$.Consumer<java.util.Optional<byte[]>> | java.util.function$.Consumer$$lambda<java.util.Optional<byte[]>>): java.net.http.HttpResponse$BodySubscriber<java.lang.Void>
         public static ofInputStream(): java.net.http.HttpResponse$BodySubscriber<java.io.InputStream>
         public static ofLines(arg0: java.nio.charset.Charset): java.net.http.HttpResponse$BodySubscriber<java.util.stream.Stream<java.lang.String>>
         public static ofPublisher(): java.net.http.HttpResponse$BodySubscriber<java.util.concurrent.Flow$Publisher<java.util.List<java.nio.ByteBuffer>>>

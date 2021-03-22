@@ -33,7 +33,7 @@ declare namespace java {
         public isSubscribed(arg0: java.util.concurrent.Flow$Subscriber<unknown>): boolean
         public estimateMinimumDemand(): number
         public estimateMaximumLag(): number
-        public consume(arg0: java.util.function$.Consumer<unknown>): java.util.concurrent.CompletableFuture<java.lang.Void>
+        public consume(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): java.util.concurrent.CompletableFuture<java.lang.Void>
       }
 
     }

@@ -15,13 +15,13 @@ declare namespace java {
         distinct(): java.util.stream.Stream<T>
         sorted(): java.util.stream.Stream<T>
         sorted(arg0: java.util.Comparator<unknown>): java.util.stream.Stream<T>
-        peek(arg0: java.util.function$.Consumer<unknown>): java.util.stream.Stream<T>
+        peek(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): java.util.stream.Stream<T>
         limit(arg0: number | java.lang.Long): java.util.stream.Stream<T>
         skip(arg0: number | java.lang.Long): java.util.stream.Stream<T>
         takeWhile(arg0: java.util.function$.Predicate<unknown>): java.util.stream.Stream<T>
         dropWhile(arg0: java.util.function$.Predicate<unknown>): java.util.stream.Stream<T>
-        forEach(arg0: java.util.function$.Consumer<unknown>): void
-        forEachOrdered(arg0: java.util.function$.Consumer<unknown>): void
+        forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        forEachOrdered(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         toArray(): java.lang.Object[]
         toArray<A>(arg0: java.util.function$.IntFunction<A[]> | java.util.function$.IntFunction$$lambda<A[]>): A[]
         reduce(arg0: T, arg1: java.util.function$.BinaryOperator<T>): T

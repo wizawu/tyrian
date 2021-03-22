@@ -41,7 +41,7 @@ declare namespace java {
       public listIterator(): java.util.ListIterator<E>
       public iterator(): java.util.Iterator<E>
       public subList(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.List<E>
-      public forEach(arg0: java.util.function$.Consumer<unknown>): void
+      public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
       public spliterator(): java.util.Spliterator<E>
       public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
       removeIf(arg0: java.util.function$.Predicate<unknown>, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean

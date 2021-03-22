@@ -37,7 +37,7 @@ declare namespace java {
         public drainTo(arg0: java.util.Collection<unknown>, arg1: number | java.lang.Integer): number
         public iterator(): java.util.Iterator<E>
         public spliterator(): java.util.Spliterator<E>
-        public forEach(arg0: java.util.function$.Consumer<unknown>): void
+        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
         public removeAll(arg0: java.util.Collection<unknown>): boolean
         public retainAll(arg0: java.util.Collection<unknown>): boolean

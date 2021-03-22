@@ -34,8 +34,8 @@ declare namespace jdk {
       public diagnostics(arg0: jdk.jshell.Snippet): java.util.stream.Stream<jdk.jshell.Diag>
       public unresolvedDependencies(arg0: jdk.jshell.DeclarationSnippet): java.util.stream.Stream<java.lang.String>
       public varValue(arg0: jdk.jshell.VarSnippet): java.lang.String
-      public onSnippetEvent(arg0: java.util.function$.Consumer<jdk.jshell.SnippetEvent>): jdk.jshell.JShell$Subscription
-      public onShutdown(arg0: java.util.function$.Consumer<jdk.jshell.JShell>): jdk.jshell.JShell$Subscription
+      public onSnippetEvent(arg0: java.util.function$.Consumer<jdk.jshell.SnippetEvent> | java.util.function$.Consumer$$lambda<jdk.jshell.SnippetEvent>): jdk.jshell.JShell$Subscription
+      public onShutdown(arg0: java.util.function$.Consumer<jdk.jshell.JShell> | java.util.function$.Consumer$$lambda<jdk.jshell.JShell>): jdk.jshell.JShell$Subscription
       public unsubscribe(arg0: jdk.jshell.JShell$Subscription): void
       executionControl(): jdk.jshell.spi.ExecutionControl
       debug(arg0: number | java.lang.Integer, arg1: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): void

@@ -57,7 +57,7 @@ declare namespace java {
       public listIterator(arg0: number | java.lang.Integer): java.util.ListIterator<E>
       public listIterator(): java.util.ListIterator<E>
       public iterator(): java.util.Iterator<E>
-      public forEach(arg0: java.util.function$.Consumer<unknown>): void
+      public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
       public replaceAll(arg0: java.util.function$.UnaryOperator<E>): void
       public sort(arg0: java.util.Comparator<unknown>): void
       public spliterator(): java.util.Spliterator<E>

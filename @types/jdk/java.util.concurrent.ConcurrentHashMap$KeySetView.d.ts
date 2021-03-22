@@ -13,7 +13,7 @@ declare namespace java {
         public hashCode(): number
         public equals(arg0: java.lang.Object | any): boolean
         public spliterator(): java.util.Spliterator<K>
-        public forEach(arg0: java.util.function$.Consumer<unknown>): void
+        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         public removeAll(arg0: java.util.Collection): boolean
         public getMap(): java.util.concurrent.ConcurrentHashMap
       }

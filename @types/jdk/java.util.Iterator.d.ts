@@ -5,7 +5,7 @@ declare namespace java {
       hasNext(): boolean
       next(): E
       remove(): void
-      forEachRemaining(arg0: java.util.function$.Consumer<unknown>): void
+      forEachRemaining(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
     }
 
   }

@@ -29,8 +29,8 @@ declare namespace java {
         public removeAll(arg0: java.util.Collection<unknown>): boolean
         public retainAll(arg0: java.util.Collection<unknown>): boolean
         public clear(): void
-        forEachFrom(arg0: java.util.function$.Consumer<unknown>, arg1: java.util.concurrent.ConcurrentLinkedQueue$Node<E>): void
-        public forEach(arg0: java.util.function$.Consumer<unknown>): void
+        forEachFrom(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>, arg1: java.util.concurrent.ConcurrentLinkedQueue$Node<E>): void
+        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
       }
 
     }

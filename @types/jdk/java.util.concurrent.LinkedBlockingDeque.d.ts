@@ -59,8 +59,8 @@ declare namespace java {
         public iterator(): java.util.Iterator<E>
         public descendingIterator(): java.util.Iterator<E>
         public spliterator(): java.util.Spliterator<E>
-        public forEach(arg0: java.util.function$.Consumer<unknown>): void
-        forEachFrom(arg0: java.util.function$.Consumer<unknown>, arg1: java.util.concurrent.LinkedBlockingDeque$Node<E>): void
+        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        forEachFrom(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>, arg1: java.util.concurrent.LinkedBlockingDeque$Node<E>): void
         public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
         public removeAll(arg0: java.util.Collection<unknown>): boolean
         public retainAll(arg0: java.util.Collection<unknown>): boolean

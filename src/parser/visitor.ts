@@ -274,6 +274,7 @@ export function qualifiedName(type: TypeContext, safe = false): string {
 export function isLambda(stat: InterfaceStat, type: TypeContext): boolean {
   let count = 0
   const bfs = [qualifiedName(type)]
+  if (bfs[0] === "java.util.function.Consumer") return true
   for (let i = 0; i < bfs.length; i++) {
     const current = bfs[i]
     if (stat[current]) {

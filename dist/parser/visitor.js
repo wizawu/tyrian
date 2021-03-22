@@ -310,6 +310,8 @@ exports.qualifiedName = qualifiedName;
 function isLambda(stat, type) {
     var count = 0;
     var bfs = [qualifiedName(type)];
+    if (bfs[0] === "java.util.function.Consumer")
+        return true;
     for (var i = 0; i < bfs.length; i++) {
         var current = bfs[i];
         if (stat[current]) {

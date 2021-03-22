@@ -22,3 +22,13 @@ declare class Java {
   static type(className: string): Record<string, unknown>
   static typeName(javaClass: Record<string, unknown>): string | undefined
 }
+
+declare namespace java {
+  namespace util {
+    namespace function$ {
+      interface Consumer$$lambda<T> {
+        (arg: T): void
+      }
+    }
+  }
+}

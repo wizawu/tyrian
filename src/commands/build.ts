@@ -79,13 +79,12 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
 
 function globalVarDefinition(): Record<string, string> {
   const vars = ["com", "java", "javax", "jdk", "netscape", "org"]
-  fs.readdirSync(path.join(process.cwd(), "lib", "@types")).forEach(it => {
-    if (it === "index.d.ts") {
-      return
-    } else if (it.endsWith(".d.ts")) {
-      const ns = it.split(".")[0].trim()
-      if (vars.indexOf(ns) < 0) vars.push(ns)
-    }
+  const content = fs.readFileSync(
+    path.join(process.cwd(), "lib", "@types", "namespace.json"),
+    "utf-8"
+  )
+  Object.keys(JSON.parse(content)).forEach(it => {
+    if (vars.indexOf(it) < 0) vars.push(it)
   })
   return vars.reduce((result, ns) => {
     const test = `typeof Packages === "object" && typeof ${ns} === "undefined"`

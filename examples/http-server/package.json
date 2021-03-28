@@ -1,8 +1,11 @@
 {
-  "dependencies": {},
+  "dependencies": {
+    "fastify": "^3.14.1",
+    "long": "^4.0.0",
+    "pino-pretty": "^4.7.1"
+  },
   "mvnDependencies": {
-    "org.rapidoid:rapidoid-http-server": "5.5.5",
-    "org.slf4j:slf4j-simple": "1.7.30"
+    "com.github.ben-manes.caffeine:caffeine": "3.0.1"
   },
   "runtime": {
     "graaljs": "/tmp/graalvm-ce/languages/js/bin/node"

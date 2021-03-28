@@ -1,7 +1,21 @@
-const App = org.rapidoid.setup.App
-const On = org.rapidoid.setup.On
+import fastify from "fastify"
 
-App.run(["on.port=8080"])
-On.get("/").plain("Hello, Tyrian\n")
+import cache from "./cache"
 
-java.lang.Thread.sleep(3600 * 1000)
+const server = fastify({})
+
+server.get("/", (req, res) => {
+  res.send("Hello, Tyrian!\n")
+})
+
+server.put("/:key/:value", (req, res) => {
+  cache.put(req.params["key"], req.params["value"])
+  res.send("")
+})
+
+server.get("/:key", (req, res) => {
+  const key = req.params["key"]
+  res.send(cache.getIfPresent(key) + "\n")
+})
+
+server.listen(8080)

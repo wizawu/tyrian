@@ -13,6 +13,7 @@ exports.compilerOptions = {
     typeRoots: [
         path_1.default.join(__dirname, "..", "..", "@types"),
         path_1.default.join(process.cwd(), "lib"),
+        path_1.default.join(process.cwd(), "node_modules", "@types"),
     ]
 };
 function default_1(entries, outDir, watch) {
@@ -50,7 +51,7 @@ function getCompiler(entries, outDir) {
         mode: "development",
         context: context,
         entry: entry,
-        target: run_1.checkRuntime()[0] === "nashorn" ? "es5" : undefined,
+        target: run_1.checkRuntime()[0] === "nashorn" ? "es5" : "node",
         output: {
             path: process.cwd(),
             filename: "[name]",
@@ -83,15 +84,10 @@ function getCompiler(entries, outDir) {
 }
 function globalVarDefinition() {
     var vars = ["com", "java", "javax", "jdk", "netscape", "org"];
-    fs_1.default.readdirSync(path_1.default.join(process.cwd(), "lib", "@types")).forEach(function (it) {
-        if (it === "index.d.ts") {
-            return;
-        }
-        else if (it.endsWith(".d.ts")) {
-            var ns = it.split(".")[0].trim();
-            if (vars.indexOf(ns) < 0)
-                vars.push(ns);
-        }
+    var content = fs_1.default.readFileSync(path_1.default.join(process.cwd(), "lib", "@types", "namespace.json"), "utf-8");
+    Object.keys(JSON.parse(content)).forEach(function (it) {
+        if (vars.indexOf(it) < 0)
+            vars.push(it);
     });
     return vars.reduce(function (result, ns) {
         var test = "typeof Packages === \"object\" && typeof " + ns + " === \"undefined\"";

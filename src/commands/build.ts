@@ -9,6 +9,7 @@ export const compilerOptions = {
   typeRoots: [
     path.join(__dirname, "..", "..", "@types"),
     path.join(process.cwd(), "lib"),
+    path.join(process.cwd(), "node_modules", "@types"),
   ]
 }
 
@@ -45,7 +46,7 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
     mode: "development",
     context: context,
     entry: entry,
-    target: checkRuntime()[0] === "nashorn" ? "es5" : undefined,
+    target: checkRuntime()[0] === "nashorn" ? "es5" : "node",
     output: {
       path: process.cwd(),
       filename: "[name]",

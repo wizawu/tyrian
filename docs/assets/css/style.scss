@@ -1,39 +1,39 @@
 ---
 ---
 
-@import "{{ site.theme }}";
-@import url('https://fonts.googleapis.com/css?family=Neucha');
+@import '{{site.theme}}';
+@import url('https://fonts.googleapis.com/css?family=DM+Sans');
 @import url('https://fontlibrary.org/face/m-m-type-1');
 
 h1>em {
-    display: none;
+  display: none;
 }
 
 body {
-    font-family: Neucha, sans-serif;
-    line-height: 2;
+  font-family: 'DM Sans', sans-serif;
+  line-height: 2;
 }
 
 header h1,
 h1, h2, h3, h4, h5,
 pre, code, pre *, code * {
-    font-family: 'M1mregular', monospace;
-    letter-spacing: -0.05em;
+  font-family: 'M1mregular', monospace;
+  letter-spacing: -0.05em;
 }
 
 pre, code, pre *, code * {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 li {
-    line-height: 2;
+  line-height: 2;
 }
 
 pre {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 code.highlighter-rouge {
-    color: #90a959;
-    margin: 0 2px;
+  color: #90a959;
+  margin: 0 2px;
 }

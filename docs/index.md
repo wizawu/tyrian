@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# TypeScript on JVM
+# _TypeScript on JVM_
 
 ## What's tyrian
 

@@ -1,6 +1,6 @@
 {
   "name": "tyrian",
-  "version": "9.0.0-rc3",
+  "version": "9.0.0-rc4",
   "repository": "github:wizawu/tyrian",
   "license": "MIT",
   "bin": "bin/tyrian",
@@ -17,6 +17,7 @@
     "antlr4": "^4.8.0",
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
+    "glob": "^7.1.6",
     "jszip": "^3.6.0",
     "prompts": "^2.4.0",
     "redent": "^3.0.0",

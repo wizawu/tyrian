@@ -3,7 +3,7 @@
 
 @import '{{site.theme}}';
 @import url('https://fonts.googleapis.com/css?family=DM+Sans');
-@import url('https://fontlibrary.org/face/m-m-type-1');
+@import url('https://fontlibrary.org//face/courier-prime-code');
 
 h1>em {
   display: none;
@@ -17,7 +17,7 @@ body {
 header h1,
 h1, h2, h3, h4, h5,
 pre, code, pre *, code * {
-  font-family: 'M1mregular', monospace;
+  font-family: 'CourierPrimeCodeRegular', monospace;
   letter-spacing: -0.05em;
 }
 

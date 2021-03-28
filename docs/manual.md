@@ -2,56 +2,61 @@
 layout: default
 ---
 
-## Guideline
+## Manual
 
-### Limitations
+### 1. Setup your environment
 
-* Although you can use Maven libraries, you are not going to write Java. If you are not interested in TypeScript, tyrian is not for you.
-* Because the program will be run on JVM, you CANNOT use those NPM libraries that rely on Node standard library (like fs, path).
-* The TypeScript definitions generated from Maven libraries will not perfectly match to its original Java signature, since TypeScript syntax differs from Java's. But in most cases, you use those libraries in the same way as they are used in Java source.
-* The compilation would be very memory-consuming (1G free memory suggested, otherwise it may get very slow). However, you can use the watch mode `-w` to reduce the time for re-compilation.
+* Make sure you have `gradle`(>= 5.0) and `npm`(>= 6.0) in your executable path.
+* Download `OpenJDK 11` or `GraalVM`(Java 11 based) and extract it.
+* Install tyrian from NPM registry.
+    ```sh
+    npm install -g tyrian
+    ```
 
-### Import Java classes
+### 2. Command line interface
 
-Here is some examples.
+You can view the usage of all commands as follow.
 
-```typescript
-const Files = java.nio.file.Files
+```sh
+tyrian help init        # initialize a project
+tyrian help install     # install dependencies in package.json
+tyrian help build       # build entry files such as main.ts
+tyrian help run         # run the build output such as main.js
+```
+
+### 3. mvnDependencies
+
+You must specify the exact version for each Maven dependency in `package.json`. Versions like `^1.2.3`, `~1.2.3` and `1.2.x` are NOT allowed.
+
+```json
+{
+  "mvnDependencies": {
+    "com.github.ben-manes.caffeine:caffeine": "3.0.1", // Good
+    "com.google.code.gson:gson": "^2.7"                // Bad
+  }
+}
+```
+
+### 4. Import Java classes
+
+Here are some examples.
+
+```ts
+const { Files, Paths } = java.nio.file
 const HttpURLConnection = java.net.HttpURLConnection
-const Spark = spark.Spark
 
 type Raven = com.getsentry.raven.Raven
 const raven: Raven = RavenFactory.ravenInstance("DSN")
 ```
 
-Check out [Java Scripting Programmer's Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/scripting/prog_guide/javascript.html) for more details.
+### 5. Runtime comparison
 
-### Extra package.json fields
+| Runtime | Graal.js | Nashorn |
+| --- | --- | --- |
+| Node.js official API | Yes | No |
+| Java multi-threading | No | Yes |
+| Inspector | Yes | No |
 
-* `mvnDependencies` defines Maven dependencies in Gradle format.
-* The webpack options `mode`, `optimization` and `resolve` can be changed as follow.
+### 6. Limitations
 
-```typescript
-{
-    "mvnDependencies": [
-        "com.sparkjava:spark-core:2.5.5",
-        "org.tinylog:tinylog:1.2"
-    ],
-    "webpack": {
-        "mode": "production",
-        "resolve": {
-            "alias": {
-                "react": "inferno-compat",
-                "react-dom": "inferno-compat"
-            }
-        },
-        "optimization": {
-            "splitChunks": {
-                "chunks": "all",
-                "name": "common.js",
-                "minChunks": 3
-            }
-        }
-    }
-}
-```
+* Overloaded Java function is not supported well, specially when it is generic.

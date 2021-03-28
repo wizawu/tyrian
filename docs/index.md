@@ -20,7 +20,7 @@ Let's build a simple HTTP service, which returns colorful text.
 
 1. Install tyrian.
 
-    ```
+    ```sh
     npm install -g tyrian
     ```
 
@@ -30,13 +30,13 @@ Let's build a simple HTTP service, which returns colorful text.
 
 2. Initialize an empty project.
 
-    ```
+    ```sh
     mkdir /tmp/app
     cd /tmp/app
     tyrian init
     ```
 
-    You can see `package.json` and `tsconfig.json` created under the current directory. Then modify `dependencies` and `mvnDependencies` in `package.json`.
+    You can find `package.json` and `tsconfig.json` created under the current directory. Then modify `dependencies` and `mvnDependencies` in `package.json`.
 
     ```json
     {
@@ -54,7 +54,7 @@ Let's build a simple HTTP service, which returns colorful text.
 
 2. Create `main.ts`.
 
-    ```typescript
+    ```ts
     import { green } from "ansi-styles"
     const { App, On } = org.rapidoid.setup
 
@@ -67,19 +67,16 @@ Let's build a simple HTTP service, which returns colorful text.
 3. Build and run
 
     ```
-    $ tyrian build main.ts
-    asset main.js 6.2 KiB [emitted] (name: main.js)
-    Entrypoint main.js 6.2 KiB = main.js
-    webpack 5.28.0 compiled successfully in 5691 ms
-    $ tyrian run main.js
+    tyrian build main.ts
+    tyrian run main.js
     ```
 
-    You can test it in command line.
+    You can test it in the command line.
 
-    ```
+    ```sh
     curl http://127.0.0.1:8080/
     ```
 
-* Want to see more [examples](https://github.com/wizawu/tyrian/tree/master/examples)?
+* Want to see more [examples](https://github.com/wizawu/tyrian/tree/main/examples)?
 
 * Read the [manual](./manual) for more details.

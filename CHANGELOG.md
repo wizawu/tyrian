@@ -1,9 +1,9 @@
 Changelog
 ===
 
-### Road Map
+### Roadmap
 
-* Comparison with Deno
+* None
 
 ### 9.0.0
 

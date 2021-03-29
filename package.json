@@ -1,6 +1,6 @@
 {
   "name": "tyrian",
-  "version": "9.0.0-rc4",
+  "version": "9.0.0",
   "repository": "github:wizawu/tyrian",
   "license": "MIT",
   "bin": "bin/tyrian",

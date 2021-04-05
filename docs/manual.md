@@ -55,8 +55,10 @@ const raven: Raven = RavenFactory.ravenInstance("DSN")
 | --- | --- | --- |
 | Node.js official API | Yes | No |
 | Java multi-threading | No | Yes |
-| Inspector | Yes | No |
+| Run with inspector | Yes | No |
+| Documentation | [Link](https://www.graalvm.org/reference-manual/js/JavaInteroperability/) | [Link](https://docs.oracle.com/javase/10/nashorn/nashorn-java-api.htm) |
 
 ### 6. Limitations
 
 * Overloaded Java function is not supported well, specially when it is generic.
+* Java annotation is not available here.

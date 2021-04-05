@@ -1,6 +1,6 @@
 {
   "name": "tyrian",
-  "version": "9.0.1",
+  "version": "9.0.2",
   "repository": "github:wizawu/tyrian",
   "license": "MIT",
   "bin": "bin/tyrian",
@@ -14,7 +14,7 @@
     "lint:types": "eslint --ext .ts --fix @types"
   },
   "dependencies": {
-    "antlr4": "^4.8.0",
+    "antlr4": "4.8.x",
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
     "glob": "^7.1.6",

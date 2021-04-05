@@ -148,6 +148,7 @@ function npmInstall() {
 }
 function gradleInstall() {
     fs_1.default.mkdirSync(path_1.default.join("lib", "@types"), { recursive: true });
+    fs_1.default.writeFileSync(path_1.default.join("lib", "@types", "index.d.ts"), "");
     var mvnDependencies = {};
     // find all mvnDependencies from node_modules
     __spreadArray(["package.json"], new glob_1.GlobSync(path_1.default.join("node_modules", "**", "package.json")).found).forEach(function (it) {

@@ -38,7 +38,7 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
   const entry = {}
   for (const src of entries) {
     const out = path.join(outDir, path.basename(src).replace(/(.ts|.tsx)$/, ".js"))
-    entry[out] = path.format({ dir:".", name:path.relative("", src) })
+    entry[out] = path.format({ dir: ".", name: path.relative("", src) })
   }
 
   return webpack({
@@ -57,7 +57,7 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
     resolveLoader: {
       modules: [
         path.join(__dirname, "..", "..", "node_modules"),
-        path.join(__dirname, "..", "..", "..", "node_modules"),
+        path.join(__dirname, "..", "..", ".."),
       ]
     },
     module: {
@@ -80,13 +80,13 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
 
 function globalVarDefinition(): Record<string, string> {
   const vars = ["com", "java", "javax", "jdk", "netscape", "org"]
-  const content = fs.readFileSync(
-    path.join(process.cwd(), "lib", "@types", "namespace.json"),
-    "utf-8"
-  )
-  Object.keys(JSON.parse(content)).forEach(it => {
-    if (vars.indexOf(it) < 0) vars.push(it)
-  })
+  const filePath = path.join(process.cwd(), "lib", "@types", "namespace.json")
+  if (fs.existsSync(filePath)) {
+    const content = fs.readFileSync(filePath, "utf-8")
+    Object.keys(JSON.parse(content)).forEach(it => {
+      if (vars.indexOf(it) < 0) vars.push(it)
+    })
+  }
   return vars.reduce((result, ns) => {
     const test = `typeof Packages === "object" && typeof ${ns} === "undefined"`
     result[ns] = `(${test} ? Packages.${ns} : ${ns})`

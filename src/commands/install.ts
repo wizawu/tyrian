@@ -63,6 +63,7 @@ function npmInstall(): void {
 
 function gradleInstall(): void {
   fs.mkdirSync(path.join("lib", "@types"), { recursive: true })
+  fs.writeFileSync(path.join("lib", "@types", "index.d.ts"), "")
   const mvnDependencies: { [_: string]: string } = {};
   // find all mvnDependencies from node_modules
   ["package.json", ...new GlobSync(path.join("node_modules", "**", "package.json")).found].forEach(it => {

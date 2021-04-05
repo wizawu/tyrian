@@ -62,7 +62,7 @@ function getCompiler(entries, outDir) {
         resolveLoader: {
             modules: [
                 path_1.default.join(__dirname, "..", "..", "node_modules"),
-                path_1.default.join(__dirname, "..", "..", "..", "node_modules"),
+                path_1.default.join(__dirname, "..", "..", ".."),
             ]
         },
         module: {
@@ -84,11 +84,14 @@ function getCompiler(entries, outDir) {
 }
 function globalVarDefinition() {
     var vars = ["com", "java", "javax", "jdk", "netscape", "org"];
-    var content = fs_1.default.readFileSync(path_1.default.join(process.cwd(), "lib", "@types", "namespace.json"), "utf-8");
-    Object.keys(JSON.parse(content)).forEach(function (it) {
-        if (vars.indexOf(it) < 0)
-            vars.push(it);
-    });
+    var filePath = path_1.default.join(process.cwd(), "lib", "@types", "namespace.json");
+    if (fs_1.default.existsSync(filePath)) {
+        var content = fs_1.default.readFileSync(filePath, "utf-8");
+        Object.keys(JSON.parse(content)).forEach(function (it) {
+            if (vars.indexOf(it) < 0)
+                vars.push(it);
+        });
+    }
     return vars.reduce(function (result, ns) {
         var test = "typeof Packages === \"object\" && typeof " + ns + " === \"undefined\"";
         result[ns] = "(" + test + " ? Packages." + ns + " : " + ns + ")";

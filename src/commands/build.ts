@@ -5,14 +5,6 @@ import webpack, { Stats } from "webpack"
 import { checkRuntime } from "./run"
 import { code as ErrorCode } from "../errors"
 
-export const compilerOptions = {
-  typeRoots: [
-    path.join(__dirname, "..", "..", "@types"),
-    path.join(process.cwd(), "lib"),
-    path.join(process.cwd(), "node_modules", "@types"),
-  ]
-}
-
 export default function (entries: string[], outDir: string, watch: boolean): void {
   const compiler = getCompiler(entries, outDir)
   const printStats = (stats?: Stats): void => console.log(stats?.toString({
@@ -67,7 +59,6 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
           loader: "ts-loader",
           options: {
             transpileOnly: false,
-            compilerOptions: compilerOptions,
           },
         }]
       }]

@@ -10,7 +10,6 @@ var path_1 = __importDefault(require("path"));
 var prompts_1 = __importDefault(require("prompts"));
 var child_process_1 = require("child_process");
 var errors_1 = require("../errors");
-var build_1 = require("./build");
 function default_1() {
     console.log("Checking prerequisites...\n");
     if (!check("node", ["-v"]) || !check("npm", ["-v"]) || !check("gradle", ["-v"])) {
@@ -81,9 +80,14 @@ function initProject(runtime, root) {
         runtime: (_a = {}, _a[runtime] = runtimePath, _a),
     }, null, 2));
     fs_1.default.writeFileSync("tsconfig.json", JSON.stringify({
-        compilerOptions: build_1.compilerOptions,
+        compilerOptions: {
+            typeRoots: [
+                path_1.default.join(__dirname, "..", "..", "@types"),
+                "lib",
+                "node_modules/@types",
+            ]
+        },
         include: [
-            path_1.default.join(__dirname, "..", "..", "@types", "**", "*.d.ts"),
             "**/*.ts",
         ]
     }, null, 2));

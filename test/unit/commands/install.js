@@ -23,7 +23,7 @@ describe("commands/install", () => {
       }
 
       task install(type: Copy) {
-        into "${process.cwd()}/lib"
+        into "."
         from configurations.runtime
       }
 

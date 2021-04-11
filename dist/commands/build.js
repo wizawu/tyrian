@@ -3,19 +3,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.compilerOptions = void 0;
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var webpack_1 = __importDefault(require("webpack"));
 var run_1 = require("./run");
 var errors_1 = require("../errors");
-exports.compilerOptions = {
-    typeRoots: [
-        path_1.default.join(__dirname, "..", "..", "@types"),
-        path_1.default.join(process.cwd(), "lib"),
-        path_1.default.join(process.cwd(), "node_modules", "@types"),
-    ]
-};
 function default_1(entries, outDir, watch) {
     var compiler = getCompiler(entries, outDir);
     var printStats = function (stats) { return console.log(stats === null || stats === void 0 ? void 0 : stats.toString({
@@ -72,7 +64,6 @@ function getCompiler(entries, outDir) {
                             loader: "ts-loader",
                             options: {
                                 transpileOnly: false,
-                                compilerOptions: exports.compilerOptions,
                             },
                         }]
                 }]

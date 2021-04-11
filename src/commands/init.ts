@@ -5,7 +5,6 @@ import prompts from "prompts"
 import { spawnSync } from "child_process"
 
 import { code as ErrorCode } from "../errors"
-import { compilerOptions } from "./build"
 
 export default function (): void {
   console.log("Checking prerequisites...\n")
@@ -67,9 +66,14 @@ function initProject(runtime: "graaljs" | "nashorn", root: string): void {
     runtime: { [runtime]: runtimePath },
   }, null, 2))
   fs.writeFileSync("tsconfig.json", JSON.stringify({
-    compilerOptions: compilerOptions,
+    compilerOptions: {
+      typeRoots: [
+        path.join(__dirname, "..", "..", "@types"),
+        "lib",
+        "node_modules/@types",
+      ]
+    },
     include: [
-      path.join(__dirname, "..", "..", "@types", "**", "*.d.ts"),
       "**/*.ts",
     ]
   }, null, 2))

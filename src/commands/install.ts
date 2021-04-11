@@ -74,8 +74,17 @@ function gradleInstall(): void {
     })
   })
   const deps = Object.keys(mvnDependencies).map(it => it + ":" + mvnDependencies[it])
-  fs.writeFileSync("build.gradle", gradleTemplate(deps))
-  const child = spawnSync("gradle", ["--no-daemon", "install"], { stdio: "inherit" })
+  fs.writeFileSync(path.join("lib", "build.gradle"), gradleTemplate(deps))
+  const child = spawnSync(
+    "gradle",
+    [
+      "-b",
+      path.join("lib", "build.gradle"),
+      "--no-daemon",
+      "install"
+    ],
+    { stdio: "inherit" }
+  )
   if (child.status) process.exit(child.status)
 }
 
@@ -88,7 +97,7 @@ export const gradleTemplate = (deps: string[]): string => redent(`
   }
 
   task install(type: Copy) {
-    into "${path.join(process.cwd(), "lib")}"
+    into "."
     from configurations.runtime
   }
 

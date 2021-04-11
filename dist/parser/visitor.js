@@ -259,6 +259,7 @@ function typeAlias(type) {
         case "short": return ["number", "java.lang.Short"];
         case "java.lang.Boolean": return ["boolean", "java.lang.Boolean"];
         case "java.lang.Byte": return ["number", "java.lang.Byte"];
+        case "java.lang.CharSequence": return ["string", "java.lang.CharSequence"];
         case "java.lang.Character": return ["string", "java.lang.Character"];
         case "java.lang.Double": return ["number", "java.lang.Double"];
         case "java.lang.Float": return ["number", "java.lang.Float"];

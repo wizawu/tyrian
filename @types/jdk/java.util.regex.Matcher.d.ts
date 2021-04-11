@@ -24,12 +24,12 @@ declare namespace java {
         anchoringBounds: boolean
         modCount: int
         constructor()
-        constructor(arg0: java.util.regex.Pattern, arg1: java.lang.CharSequence)
+        constructor(arg0: java.util.regex.Pattern, arg1: string | java.lang.CharSequence)
         public pattern(): java.util.regex.Pattern
         public toMatchResult(): java.util.regex.MatchResult
         public usePattern(arg0: java.util.regex.Pattern): java.util.regex.Matcher
         public reset(): java.util.regex.Matcher
-        public reset(arg0: java.lang.CharSequence): java.util.regex.Matcher
+        public reset(arg0: string | java.lang.CharSequence): java.util.regex.Matcher
         public start(): number
         public start(arg0: number | java.lang.Integer): number
         public start(arg0: java.lang.String | string): number
@@ -67,7 +67,7 @@ declare namespace java {
         search(arg0: number | java.lang.Integer): boolean
         match(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
         getTextLength(): number
-        getSubSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.CharSequence
+        getSubSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): string
         charAt(arg0: number | java.lang.Integer): string
         getMatchedGroupIndex(arg0: java.lang.String | string): number
       }

@@ -13,8 +13,8 @@ declare namespace java {
       public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: java.time.ZoneOffset): java.time.OffsetDateTime
       public static ofInstant(arg0: java.time.Instant, arg1: java.time.ZoneId): java.time.OffsetDateTime
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.OffsetDateTime
-      public static parse(arg0: java.lang.CharSequence): java.time.OffsetDateTime
-      public static parse(arg0: java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.OffsetDateTime
+      public static parse(arg0: string | java.lang.CharSequence): java.time.OffsetDateTime
+      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.OffsetDateTime
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange

@@ -13,8 +13,8 @@ declare namespace java {
       public static ofInstant(arg0: java.time.LocalDateTime, arg1: java.time.ZoneOffset, arg2: java.time.ZoneId): java.time.ZonedDateTime
       public static ofStrict(arg0: java.time.LocalDateTime, arg1: java.time.ZoneOffset, arg2: java.time.ZoneId): java.time.ZonedDateTime
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.ZonedDateTime
-      public static parse(arg0: java.lang.CharSequence): java.time.ZonedDateTime
-      public static parse(arg0: java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.ZonedDateTime
+      public static parse(arg0: string | java.lang.CharSequence): java.time.ZonedDateTime
+      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.ZonedDateTime
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange

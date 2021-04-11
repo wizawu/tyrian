@@ -29,8 +29,8 @@ declare namespace java {
       public static ofSecondOfDay(arg0: number | java.lang.Long): java.time.LocalTime
       public static ofNanoOfDay(arg0: number | java.lang.Long): java.time.LocalTime
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.LocalTime
-      public static parse(arg0: java.lang.CharSequence): java.time.LocalTime
-      public static parse(arg0: java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.LocalTime
+      public static parse(arg0: string | java.lang.CharSequence): java.time.LocalTime
+      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.LocalTime
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange

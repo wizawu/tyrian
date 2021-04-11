@@ -27,7 +27,7 @@ declare namespace java {
         protected abstract encodeLoop(arg0: java.nio.CharBuffer, arg1: java.nio.ByteBuffer): java.nio.charset.CoderResult
         public encode(arg0: java.nio.CharBuffer): java.nio.ByteBuffer
         public canEncode(arg0: string | java.lang.Character): boolean
-        public canEncode(arg0: java.lang.CharSequence): boolean
+        public canEncode(arg0: string | java.lang.CharSequence): boolean
       }
 
     }

@@ -25,7 +25,7 @@ declare namespace com {
           public abstract isAccessible(arg0: com.sun.source.tree.Scope, arg1: javax.lang.model.element.TypeElement): boolean
           public abstract isAccessible(arg0: com.sun.source.tree.Scope, arg1: javax.lang.model.element.Element, arg2: javax.lang.model.type.DeclaredType): boolean
           public abstract getOriginalType(arg0: javax.lang.model.type.ErrorType): javax.lang.model.type.TypeMirror
-          public abstract printMessage(arg0: javax.tools.Diagnostic$Kind, arg1: java.lang.CharSequence, arg2: com.sun.source.tree.Tree, arg3: com.sun.source.tree.CompilationUnitTree): void
+          public abstract printMessage(arg0: javax.tools.Diagnostic$Kind, arg1: string | java.lang.CharSequence, arg2: com.sun.source.tree.Tree, arg3: com.sun.source.tree.CompilationUnitTree): void
           public abstract getLub(arg0: com.sun.source.tree.CatchTree): javax.lang.model.type.TypeMirror
         }
 

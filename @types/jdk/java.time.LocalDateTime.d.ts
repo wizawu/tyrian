@@ -17,8 +17,8 @@ declare namespace java {
       public static ofInstant(arg0: java.time.Instant, arg1: java.time.ZoneId): java.time.LocalDateTime
       public static ofEpochSecond(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: java.time.ZoneOffset): java.time.LocalDateTime
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.LocalDateTime
-      public static parse(arg0: java.lang.CharSequence): java.time.LocalDateTime
-      public static parse(arg0: java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.LocalDateTime
+      public static parse(arg0: string | java.lang.CharSequence): java.time.LocalDateTime
+      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.LocalDateTime
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange

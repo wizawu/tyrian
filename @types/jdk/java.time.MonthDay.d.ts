@@ -8,8 +8,8 @@ declare namespace java {
       public static of(arg0: java.time.Month, arg1: number | java.lang.Integer): java.time.MonthDay
       public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.time.MonthDay
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.MonthDay
-      public static parse(arg0: java.lang.CharSequence): java.time.MonthDay
-      public static parse(arg0: java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.MonthDay
+      public static parse(arg0: string | java.lang.CharSequence): java.time.MonthDay
+      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.MonthDay
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange
       public get(arg0: java.time.temporal.TemporalField): number

@@ -6,7 +6,7 @@ declare namespace java {
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
       public constructor(arg0: java.lang.String | string)
-      public constructor(arg0: java.lang.CharSequence)
+      public constructor(arg0: string | java.lang.CharSequence)
       public compareTo(arg0: java.lang.StringBuffer): number
       public length(): number
       public capacity(): number
@@ -24,8 +24,8 @@ declare namespace java {
       public append(arg0: java.lang.String | string): java.lang.StringBuffer
       public append(arg0: java.lang.StringBuffer): java.lang.StringBuffer
       append(arg0: java.lang.AbstractStringBuilder): java.lang.StringBuffer
-      public append(arg0: java.lang.CharSequence): java.lang.StringBuffer
-      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.StringBuffer
+      public append(arg0: string | java.lang.CharSequence): java.lang.StringBuffer
+      public append(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.StringBuffer
       public append(arg0: string[] | java.lang.Character[]): java.lang.StringBuffer
       public append(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.StringBuffer
       public append(arg0: boolean | java.lang.Boolean): java.lang.StringBuffer
@@ -39,14 +39,14 @@ declare namespace java {
       public deleteCharAt(arg0: number | java.lang.Integer): java.lang.StringBuffer
       public replace(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.lang.String | string): java.lang.StringBuffer
       public substring(arg0: number | java.lang.Integer): java.lang.String
-      public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.CharSequence
+      public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): string
       public substring(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
       public insert(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.lang.StringBuffer
       public insert(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): java.lang.StringBuffer
       public insert(arg0: number | java.lang.Integer, arg1: java.lang.String | string): java.lang.StringBuffer
       public insert(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[]): java.lang.StringBuffer
-      public insert(arg0: number | java.lang.Integer, arg1: java.lang.CharSequence): java.lang.StringBuffer
-      public insert(arg0: number | java.lang.Integer, arg1: java.lang.CharSequence, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.lang.StringBuffer
+      public insert(arg0: number | java.lang.Integer, arg1: string | java.lang.CharSequence): java.lang.StringBuffer
+      public insert(arg0: number | java.lang.Integer, arg1: string | java.lang.CharSequence, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.lang.StringBuffer
       public insert(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): java.lang.StringBuffer
       public insert(arg0: number | java.lang.Integer, arg1: string | java.lang.Character): java.lang.StringBuffer
       public insert(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.StringBuffer
@@ -69,8 +69,8 @@ declare namespace java {
       public insert(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.AbstractStringBuilder
       public insert(arg0: number | java.lang.Integer, arg1: string | java.lang.Character): java.lang.AbstractStringBuilder
       public insert(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): java.lang.AbstractStringBuilder
-      public insert(arg0: number | java.lang.Integer, arg1: java.lang.CharSequence, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.lang.AbstractStringBuilder
-      public insert(arg0: number | java.lang.Integer, arg1: java.lang.CharSequence): java.lang.AbstractStringBuilder
+      public insert(arg0: number | java.lang.Integer, arg1: string | java.lang.CharSequence, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.lang.AbstractStringBuilder
+      public insert(arg0: number | java.lang.Integer, arg1: string | java.lang.CharSequence): java.lang.AbstractStringBuilder
       public insert(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[]): java.lang.AbstractStringBuilder
       public insert(arg0: number | java.lang.Integer, arg1: java.lang.String | string): java.lang.AbstractStringBuilder
       public insert(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): java.lang.AbstractStringBuilder
@@ -87,15 +87,15 @@ declare namespace java {
       public append(arg0: boolean | java.lang.Boolean): java.lang.AbstractStringBuilder
       public append(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.AbstractStringBuilder
       public append(arg0: string[] | java.lang.Character[]): java.lang.AbstractStringBuilder
-      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.AbstractStringBuilder
-      public append(arg0: java.lang.CharSequence): java.lang.AbstractStringBuilder
+      public append(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.AbstractStringBuilder
+      public append(arg0: string | java.lang.CharSequence): java.lang.AbstractStringBuilder
       append(arg0: java.lang.AbstractStringBuilder): java.lang.AbstractStringBuilder
       public append(arg0: java.lang.StringBuffer): java.lang.AbstractStringBuilder
       public append(arg0: java.lang.String | string): java.lang.AbstractStringBuilder
       public append(arg0: java.lang.Object | any): java.lang.AbstractStringBuilder
       public append(arg0: string | java.lang.Character): java.lang.Appendable
-      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.Appendable
-      public append(arg0: java.lang.CharSequence): java.lang.Appendable
+      public append(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.Appendable
+      public append(arg0: string | java.lang.CharSequence): java.lang.Appendable
       public compareTo(arg0: java.lang.Object | any): number
     }
 

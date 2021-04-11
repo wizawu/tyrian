@@ -47,15 +47,15 @@ declare namespace java {
       public printf(arg0: java.util.Locale, arg1: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.io.PrintWriter
       public format(arg0: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.io.PrintWriter
       public format(arg0: java.util.Locale, arg1: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.io.PrintWriter
-      public append(arg0: java.lang.CharSequence): java.io.PrintWriter
-      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.io.PrintWriter
+      public append(arg0: string | java.lang.CharSequence): java.io.PrintWriter
+      public append(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.io.PrintWriter
       public append(arg0: string | java.lang.Character): java.io.PrintWriter
       public append(arg0: string | java.lang.Character): java.io.Writer
-      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.io.Writer
-      public append(arg0: java.lang.CharSequence): java.io.Writer
+      public append(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.io.Writer
+      public append(arg0: string | java.lang.CharSequence): java.io.Writer
       public append(arg0: string | java.lang.Character): java.lang.Appendable
-      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.Appendable
-      public append(arg0: java.lang.CharSequence): java.lang.Appendable
+      public append(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.Appendable
+      public append(arg0: string | java.lang.CharSequence): java.lang.Appendable
     }
 
   }

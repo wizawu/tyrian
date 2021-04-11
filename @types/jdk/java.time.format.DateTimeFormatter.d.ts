@@ -43,11 +43,11 @@ declare namespace java {
         public withResolverFields(arg0: java.util.Set<java.time.temporal.TemporalField>): java.time.format.DateTimeFormatter
         public format(arg0: java.time.temporal.TemporalAccessor): java.lang.String
         public formatTo(arg0: java.time.temporal.TemporalAccessor, arg1: java.lang.Appendable): void
-        public parse(arg0: java.lang.CharSequence): java.time.temporal.TemporalAccessor
-        public parse(arg0: java.lang.CharSequence, arg1: java.text.ParsePosition): java.time.temporal.TemporalAccessor
-        public parse<T>(arg0: java.lang.CharSequence, arg1: java.time.temporal.TemporalQuery<T> | java.time.temporal.TemporalQuery$$lambda<T>): T
-        public parseBest(arg0: java.lang.CharSequence, ...vargs: (java.time.temporal.TemporalQuery<unknown> | java.time.temporal.TemporalQuery$$lambda<unknown>)[]): java.time.temporal.TemporalAccessor
-        public parseUnresolved(arg0: java.lang.CharSequence, arg1: java.text.ParsePosition): java.time.temporal.TemporalAccessor
+        public parse(arg0: string | java.lang.CharSequence): java.time.temporal.TemporalAccessor
+        public parse(arg0: string | java.lang.CharSequence, arg1: java.text.ParsePosition): java.time.temporal.TemporalAccessor
+        public parse<T>(arg0: string | java.lang.CharSequence, arg1: java.time.temporal.TemporalQuery<T> | java.time.temporal.TemporalQuery$$lambda<T>): T
+        public parseBest(arg0: string | java.lang.CharSequence, ...vargs: (java.time.temporal.TemporalQuery<unknown> | java.time.temporal.TemporalQuery$$lambda<unknown>)[]): java.time.temporal.TemporalAccessor
+        public parseUnresolved(arg0: string | java.lang.CharSequence, arg1: java.text.ParsePosition): java.time.temporal.TemporalAccessor
         toPrinterParser(arg0: boolean | java.lang.Boolean): java.time.format.DateTimeFormatterBuilder$CompositePrinterParser
         public toFormat(): java.text.Format
         public toFormat(arg0: java.time.temporal.TemporalQuery<unknown> | java.time.temporal.TemporalQuery$$lambda<unknown>): java.text.Format

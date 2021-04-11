@@ -4,7 +4,7 @@ declare namespace java {
 
       interface WebSocket {
         public static readonly NORMAL_CLOSURE: int
-        sendText(arg0: java.lang.CharSequence, arg1: boolean | java.lang.Boolean): java.util.concurrent.CompletableFuture<java.net.http.WebSocket>
+        sendText(arg0: string | java.lang.CharSequence, arg1: boolean | java.lang.Boolean): java.util.concurrent.CompletableFuture<java.net.http.WebSocket>
         sendBinary(arg0: java.nio.ByteBuffer, arg1: boolean | java.lang.Boolean): java.util.concurrent.CompletableFuture<java.net.http.WebSocket>
         sendPing(arg0: java.nio.ByteBuffer): java.util.concurrent.CompletableFuture<java.net.http.WebSocket>
         sendPong(arg0: java.nio.ByteBuffer): java.util.concurrent.CompletableFuture<java.net.http.WebSocket>

@@ -12,8 +12,8 @@ declare namespace java {
       public static wrap(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
       public static wrap(arg0: string[] | java.lang.Character[]): java.nio.CharBuffer
       public read(arg0: java.nio.CharBuffer): number
-      public static wrap(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
-      public static wrap(arg0: java.lang.CharSequence): java.nio.CharBuffer
+      public static wrap(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
+      public static wrap(arg0: string | java.lang.CharSequence): java.nio.CharBuffer
       public abstract slice(): java.nio.CharBuffer
       public abstract duplicate(): java.nio.CharBuffer
       public abstract asReadOnlyBuffer(): java.nio.CharBuffer
@@ -50,8 +50,8 @@ declare namespace java {
       public length(): number
       public charAt(arg0: number | java.lang.Integer): string
       public abstract subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.nio.CharBuffer
-      public append(arg0: java.lang.CharSequence): java.nio.CharBuffer
-      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
+      public append(arg0: string | java.lang.CharSequence): java.nio.CharBuffer
+      public append(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.CharBuffer
       public append(arg0: string | java.lang.Character): java.nio.CharBuffer
       public abstract order(): java.nio.ByteOrder
       abstract charRegionOrder(): java.nio.ByteOrder
@@ -68,9 +68,9 @@ declare namespace java {
       public position(arg0: number | java.lang.Integer): java.nio.Buffer
       public compareTo(arg0: java.lang.Object | any): number
       public append(arg0: string | java.lang.Character): java.lang.Appendable
-      public append(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.Appendable
-      public append(arg0: java.lang.CharSequence): java.lang.Appendable
-      public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.CharSequence
+      public append(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.lang.Appendable
+      public append(arg0: string | java.lang.CharSequence): java.lang.Appendable
+      public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): string
     }
 
   }

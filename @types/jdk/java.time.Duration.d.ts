@@ -12,7 +12,7 @@ declare namespace java {
       public static ofNanos(arg0: number | java.lang.Long): java.time.Duration
       public static of(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.Duration
       public static from(arg0: java.time.temporal.TemporalAmount): java.time.Duration
-      public static parse(arg0: java.lang.CharSequence): java.time.Duration
+      public static parse(arg0: string | java.lang.CharSequence): java.time.Duration
       public static between(arg0: java.time.temporal.Temporal, arg1: java.time.temporal.Temporal): java.time.Duration
       public get(arg0: java.time.temporal.TemporalUnit): number
       public getUnits(): java.util.List<java.time.temporal.TemporalUnit>

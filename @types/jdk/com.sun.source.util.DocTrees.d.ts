@@ -16,7 +16,7 @@ declare namespace com {
           public abstract getElement(arg0: com.sun.source.util.DocTreePath): javax.lang.model.element.Element
           public abstract getFirstSentence(arg0: java.util.List<com.sun.source.doctree.DocTree>): java.util.List<com.sun.source.doctree.DocTree>
           public abstract getSourcePositions(): com.sun.source.util.DocSourcePositions
-          public abstract printMessage(arg0: javax.tools.Diagnostic$Kind, arg1: java.lang.CharSequence, arg2: com.sun.source.doctree.DocTree, arg3: com.sun.source.doctree.DocCommentTree, arg4: com.sun.source.tree.CompilationUnitTree): void
+          public abstract printMessage(arg0: javax.tools.Diagnostic$Kind, arg1: string | java.lang.CharSequence, arg2: com.sun.source.doctree.DocTree, arg3: com.sun.source.doctree.DocCommentTree, arg4: com.sun.source.tree.CompilationUnitTree): void
           public abstract setBreakIterator(arg0: java.text.BreakIterator): void
           public abstract getDocTreeFactory(): com.sun.source.util.DocTreeFactory
           public getSourcePositions(): com.sun.source.util.SourcePositions

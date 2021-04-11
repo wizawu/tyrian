@@ -9,8 +9,8 @@ declare namespace java {
       public static now(arg0: java.time.Clock): java.time.Year
       public static of(arg0: number | java.lang.Integer): java.time.Year
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.Year
-      public static parse(arg0: java.lang.CharSequence): java.time.Year
-      public static parse(arg0: java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.Year
+      public static parse(arg0: string | java.lang.CharSequence): java.time.Year
+      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.Year
       public static isLeap(arg0: number | java.lang.Long): boolean
       public getValue(): number
       public isSupported(arg0: java.time.temporal.TemporalField): boolean

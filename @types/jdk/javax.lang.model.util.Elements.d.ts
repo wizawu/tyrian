@@ -4,13 +4,13 @@ declare namespace javax {
       namespace util {
 
         interface Elements {
-          getPackageElement(arg0: java.lang.CharSequence): javax.lang.model.element.PackageElement
-          getPackageElement(arg0: javax.lang.model.element.ModuleElement, arg1: java.lang.CharSequence): javax.lang.model.element.PackageElement
-          getAllPackageElements(arg0: java.lang.CharSequence): java.util.Set<javax.lang.model.element.PackageElement>
-          getTypeElement(arg0: java.lang.CharSequence): javax.lang.model.element.TypeElement
-          getTypeElement(arg0: javax.lang.model.element.ModuleElement, arg1: java.lang.CharSequence): javax.lang.model.element.TypeElement
-          getAllTypeElements(arg0: java.lang.CharSequence): java.util.Set<javax.lang.model.element.TypeElement>
-          getModuleElement(arg0: java.lang.CharSequence): javax.lang.model.element.ModuleElement
+          getPackageElement(arg0: string | java.lang.CharSequence): javax.lang.model.element.PackageElement
+          getPackageElement(arg0: javax.lang.model.element.ModuleElement, arg1: string | java.lang.CharSequence): javax.lang.model.element.PackageElement
+          getAllPackageElements(arg0: string | java.lang.CharSequence): java.util.Set<javax.lang.model.element.PackageElement>
+          getTypeElement(arg0: string | java.lang.CharSequence): javax.lang.model.element.TypeElement
+          getTypeElement(arg0: javax.lang.model.element.ModuleElement, arg1: string | java.lang.CharSequence): javax.lang.model.element.TypeElement
+          getAllTypeElements(arg0: string | java.lang.CharSequence): java.util.Set<javax.lang.model.element.TypeElement>
+          getModuleElement(arg0: string | java.lang.CharSequence): javax.lang.model.element.ModuleElement
           getAllModuleElements(): java.util.Set<javax.lang.model.element.ModuleElement>
           getElementValuesWithDefaults(arg0: javax.lang.model.element.AnnotationMirror): java.util.Map<javax.lang.model.element.ExecutableElement,javax.lang.model.element.AnnotationValue>
           getDocComment(arg0: javax.lang.model.element.Element): java.lang.String
@@ -28,7 +28,7 @@ declare namespace javax {
           overrides(arg0: javax.lang.model.element.ExecutableElement, arg1: javax.lang.model.element.ExecutableElement, arg2: javax.lang.model.element.TypeElement): boolean
           getConstantExpression(arg0: java.lang.Object | any): java.lang.String
           printElements(arg0: java.io.Writer, ...vargs: (javax.lang.model.element.Element)[]): void
-          getName(arg0: java.lang.CharSequence): javax.lang.model.element.Name
+          getName(arg0: string | java.lang.CharSequence): javax.lang.model.element.Name
           isFunctionalInterface(arg0: javax.lang.model.element.TypeElement): boolean
         }
 

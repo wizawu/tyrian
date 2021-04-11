@@ -92,11 +92,11 @@ declare namespace java {
       public static isSurrogatePair(arg0: string | java.lang.Character, arg1: string | java.lang.Character): boolean
       public static charCount(arg0: number | java.lang.Integer): number
       public static toCodePoint(arg0: string | java.lang.Character, arg1: string | java.lang.Character): number
-      public static codePointAt(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer): number
+      public static codePointAt(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer): number
       public static codePointAt(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer): number
       public static codePointAt(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       static codePointAtImpl(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public static codePointBefore(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer): number
+      public static codePointBefore(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer): number
       public static codePointBefore(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer): number
       public static codePointBefore(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       static codePointBeforeImpl(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
@@ -105,10 +105,10 @@ declare namespace java {
       public static toChars(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer): number
       public static toChars(arg0: number | java.lang.Integer): string[]
       static toSurrogates(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer): void
-      public static codePointCount(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public static codePointCount(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public static codePointCount(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       static codePointCountImpl(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public static offsetByCodePoints(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public static offsetByCodePoints(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
       public static offsetByCodePoints(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
       static offsetByCodePointsImpl(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
       public static isLowerCase(arg0: string | java.lang.Character): boolean

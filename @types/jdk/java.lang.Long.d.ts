@@ -20,10 +20,10 @@ declare namespace java {
       static getChars(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number[] | java.lang.Byte[]): number
       static stringSize(arg0: number | java.lang.Long): number
       public static parseLong(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
-      public static parseLong(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+      public static parseLong(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
       public static parseLong(arg0: java.lang.String | string): number
       public static parseUnsignedLong(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
-      public static parseUnsignedLong(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+      public static parseUnsignedLong(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
       public static parseUnsignedLong(arg0: java.lang.String | string): number
       public static valueOf(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
       public static valueOf(arg0: java.lang.String | string): number

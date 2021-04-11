@@ -65,8 +65,8 @@ declare namespace java {
         public static write(arg0: java.nio.file.Path, arg1: number[] | java.lang.Byte[], ...vargs: (java.nio.file.OpenOption)[]): java.nio.file.Path
         public static write(arg0: java.nio.file.Path, arg1: java.lang.Iterable<java.lang.CharSequence>, arg2: java.nio.charset.Charset, ...vargs: (java.nio.file.OpenOption)[]): java.nio.file.Path
         public static write(arg0: java.nio.file.Path, arg1: java.lang.Iterable<java.lang.CharSequence>, ...vargs: (java.nio.file.OpenOption)[]): java.nio.file.Path
-        public static writeString(arg0: java.nio.file.Path, arg1: java.lang.CharSequence, ...vargs: (java.nio.file.OpenOption)[]): java.nio.file.Path
-        public static writeString(arg0: java.nio.file.Path, arg1: java.lang.CharSequence, arg2: java.nio.charset.Charset, ...vargs: (java.nio.file.OpenOption)[]): java.nio.file.Path
+        public static writeString(arg0: java.nio.file.Path, arg1: string | java.lang.CharSequence, ...vargs: (java.nio.file.OpenOption)[]): java.nio.file.Path
+        public static writeString(arg0: java.nio.file.Path, arg1: string | java.lang.CharSequence, arg2: java.nio.charset.Charset, ...vargs: (java.nio.file.OpenOption)[]): java.nio.file.Path
         public static list(arg0: java.nio.file.Path): java.util.stream.Stream<java.nio.file.Path>
         public static walk(arg0: java.nio.file.Path, arg1: number | java.lang.Integer, ...vargs: (java.nio.file.FileVisitOption)[]): java.util.stream.Stream<java.nio.file.Path>
         public static walk(arg0: java.nio.file.Path, ...vargs: (java.nio.file.FileVisitOption)[]): java.util.stream.Stream<java.nio.file.Path>

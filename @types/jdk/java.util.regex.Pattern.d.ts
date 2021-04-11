@@ -32,11 +32,11 @@ declare namespace java {
         public static compile(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.util.regex.Pattern
         public pattern(): java.lang.String
         public toString(): java.lang.String
-        public matcher(arg0: java.lang.CharSequence): java.util.regex.Matcher
+        public matcher(arg0: string | java.lang.CharSequence): java.util.regex.Matcher
         public flags(): number
-        public static matches(arg0: java.lang.String | string, arg1: java.lang.CharSequence): boolean
-        public split(arg0: java.lang.CharSequence, arg1: number | java.lang.Integer): java.lang.String[]
-        public split(arg0: java.lang.CharSequence): java.lang.String[]
+        public static matches(arg0: java.lang.String | string, arg1: string | java.lang.CharSequence): boolean
+        public split(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer): java.lang.String[]
+        public split(arg0: string | java.lang.CharSequence): java.lang.String[]
         public static quote(arg0: java.lang.String | string): java.lang.String
         namedGroups(): java.util.Map<java.lang.String,java.lang.Integer>
         static VertWS(): java.util.regex.Pattern$BmpCharPredicate
@@ -53,7 +53,7 @@ declare namespace java {
         static CIRangeU(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.regex.Pattern$CharPredicate
         public asPredicate(): java.util.function$.Predicate<java.lang.String>
         public asMatchPredicate(): java.util.function$.Predicate<java.lang.String>
-        public splitAsStream(arg0: java.lang.CharSequence): java.util.stream.Stream<java.lang.String>
+        public splitAsStream(arg0: string | java.lang.CharSequence): java.util.stream.Stream<java.lang.String>
       }
 
     }

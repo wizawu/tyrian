@@ -22,7 +22,7 @@ declare namespace javax {
         public getIndex(): number
         public charAt(arg0: number | java.lang.Integer): string
         public length(): number
-        public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.CharSequence
+        public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): string
         public clone(): java.lang.Object
       }
 

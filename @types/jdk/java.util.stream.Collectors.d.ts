@@ -15,8 +15,8 @@ declare namespace java {
         public static toSet<T>(): java.util.stream.Collector<T,unknown,java.util.Set<T>>
         public static toUnmodifiableSet<T>(): java.util.stream.Collector<T,unknown,java.util.Set<T>>
         public static joining(): java.util.stream.Collector<java.lang.CharSequence,unknown,java.lang.String>
-        public static joining(arg0: java.lang.CharSequence): java.util.stream.Collector<java.lang.CharSequence,unknown,java.lang.String>
-        public static joining(arg0: java.lang.CharSequence, arg1: java.lang.CharSequence, arg2: java.lang.CharSequence): java.util.stream.Collector<java.lang.CharSequence,unknown,java.lang.String>
+        public static joining(arg0: string | java.lang.CharSequence): java.util.stream.Collector<java.lang.CharSequence,unknown,java.lang.String>
+        public static joining(arg0: string | java.lang.CharSequence, arg1: string | java.lang.CharSequence, arg2: string | java.lang.CharSequence): java.util.stream.Collector<java.lang.CharSequence,unknown,java.lang.String>
         public static mapping<T,U,A,R>(arg0: java.util.function$.Function<unknown,U>, arg1: java.util.stream.Collector<unknown,A,R>): java.util.stream.Collector<T,unknown,R>
         public static flatMapping<T,U,A,R>(arg0: java.util.function$.Function<unknown,java.util.stream.Stream<U>>, arg1: java.util.stream.Collector<unknown,A,R>): java.util.stream.Collector<T,unknown,R>
         public static filtering<T,A,R>(arg0: java.util.function$.Predicate<unknown>, arg1: java.util.stream.Collector<unknown,A,R>): java.util.stream.Collector<T,unknown,R>

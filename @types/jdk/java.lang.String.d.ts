@@ -35,7 +35,7 @@ declare namespace java {
       public getBytes(): number[]
       public equals(arg0: java.lang.Object | any): boolean
       public contentEquals(arg0: java.lang.StringBuffer): boolean
-      public contentEquals(arg0: java.lang.CharSequence): boolean
+      public contentEquals(arg0: string | java.lang.CharSequence): boolean
       public equalsIgnoreCase(arg0: java.lang.String | string): boolean
       public compareTo(arg0: java.lang.String | string): number
       public compareToIgnoreCase(arg0: java.lang.String | string): number
@@ -57,18 +57,18 @@ declare namespace java {
       static lastIndexOf(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Byte, arg2: number | java.lang.Integer, arg3: java.lang.String | string, arg4: number | java.lang.Integer): number
       public substring(arg0: number | java.lang.Integer): java.lang.String
       public substring(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
-      public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.CharSequence
+      public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): string
       public concat(arg0: java.lang.String | string): java.lang.String
       public replace(arg0: string | java.lang.Character, arg1: string | java.lang.Character): java.lang.String
       public matches(arg0: java.lang.String | string): boolean
-      public contains(arg0: java.lang.CharSequence): boolean
+      public contains(arg0: string | java.lang.CharSequence): boolean
       public replaceFirst(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
       public replaceAll(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
-      public replace(arg0: java.lang.CharSequence, arg1: java.lang.CharSequence): java.lang.String
+      public replace(arg0: string | java.lang.CharSequence, arg1: string | java.lang.CharSequence): java.lang.String
       public split(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.lang.String[]
       public split(arg0: java.lang.String | string): java.lang.String[]
-      public static join(arg0: java.lang.CharSequence, ...vargs: (java.lang.CharSequence)[]): java.lang.String
-      public static join(arg0: java.lang.CharSequence, arg1: java.lang.Iterable<java.lang.CharSequence>): java.lang.String
+      public static join(arg0: string | java.lang.CharSequence, ...vargs: (string | java.lang.CharSequence)[]): java.lang.String
+      public static join(arg0: string | java.lang.CharSequence, arg1: java.lang.Iterable<java.lang.CharSequence>): java.lang.String
       public toLowerCase(arg0: java.util.Locale): java.lang.String
       public toLowerCase(): java.lang.String
       public toUpperCase(arg0: java.util.Locale): java.lang.String

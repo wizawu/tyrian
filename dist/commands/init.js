@@ -43,7 +43,7 @@ function default_1() {
                     type: "text",
                 }).then(function (_a) {
                     var root = _a.root;
-                    return createConfig(runtime, root);
+                    return initProject(runtime, root);
                 });
             }
             if (runtime === "nashorn") {
@@ -53,14 +53,14 @@ function default_1() {
                     type: "text",
                 }).then(function (_a) {
                     var root = _a.root;
-                    return createConfig(runtime, root);
+                    return initProject(runtime, root);
                 });
             }
         });
     }
 }
 exports.default = default_1;
-function createConfig(runtime, root) {
+function initProject(runtime, root) {
     var _a;
     var javapPath = path_1.default.join(root, "bin", "javap");
     var runtimePath = runtime === "graaljs" ?
@@ -74,6 +74,7 @@ function createConfig(runtime, root) {
         console.error(chalk_1.default.red("Cannot find " + javapPath));
         process.exit(errors_1.code.INVALID_JDK_ROOT);
     }
+    // create package.json and tsconfig.json
     fs_1.default.writeFileSync("package.json", JSON.stringify({
         dependencies: {},
         mvnDependencies: {},
@@ -86,6 +87,12 @@ function createConfig(runtime, root) {
             "**/*.ts",
         ]
     }, null, 2));
+    // create src/main.ts
+    fs_1.default.mkdirSync("src", { recursive: true });
+    if (!fs_1.default.existsSync(path_1.default.join("src", "main.ts"))) {
+        var src = "java.lang.System.out.println(\"Hello\")";
+        fs_1.default.writeFileSync(path_1.default.join("src", "main.ts"), src);
+    }
 }
 function check(command, args) {
     var _a = child_process_1.spawnSync(command, args), status = _a.status, stdout = _a.stdout, stderr = _a.stderr;

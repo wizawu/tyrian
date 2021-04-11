@@ -35,23 +35,23 @@ export default function (): void {
           name: "root",
           message: "Input the root path of GraalVM",
           type: "text",
-        }).then(({ root }) => createConfig(runtime, root))
+        }).then(({ root }) => initProject(runtime, root))
       }
       if (runtime === "nashorn") {
         prompts({
           name: "root",
           message: "Input the root path of OpenJDK or Oracle JDK",
           type: "text",
-        }).then(({ root }) => createConfig(runtime, root))
+        }).then(({ root }) => initProject(runtime, root))
       }
     })
   }
 }
 
-function createConfig(runtime: "graaljs" | "nashorn", root: string): void {
+function initProject(runtime: "graaljs" | "nashorn", root: string): void {
   const javapPath = path.join(root, "bin", "javap")
   const runtimePath = runtime === "graaljs" ?
-    path.join(root, "languages", "js", "bin", "node"):
+    path.join(root, "languages", "js", "bin", "node") :
     path.join(root, "bin", "jjs")
   if (!fs.existsSync(runtimePath)) {
     console.error(chalk.red("Cannot find " + runtimePath))
@@ -60,7 +60,7 @@ function createConfig(runtime: "graaljs" | "nashorn", root: string): void {
     console.error(chalk.red("Cannot find " + javapPath))
     process.exit(ErrorCode.INVALID_JDK_ROOT)
   }
-
+  // create package.json and tsconfig.json
   fs.writeFileSync("package.json", JSON.stringify({
     dependencies: {},
     mvnDependencies: {},
@@ -73,6 +73,12 @@ function createConfig(runtime: "graaljs" | "nashorn", root: string): void {
       "**/*.ts",
     ]
   }, null, 2))
+  // create src/main.ts
+  fs.mkdirSync("src", { recursive: true })
+  if (!fs.existsSync(path.join("src", "main.ts"))) {
+    const src = "java.lang.System.out.println(\"Hello\")"
+    fs.writeFileSync(path.join("src", "main.ts"), src)
+  }
 }
 
 export function check(command: string, args: string[]): boolean {

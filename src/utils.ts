@@ -1,6 +1,8 @@
+import { spawnSync } from "child_process"
 import fs from "fs"
 import path from "path"
-import { spawnSync } from "child_process"
+
+import { path as PATH } from "./constants"
 
 export function listFilesByExt(dirname: string, ext: string): string[] {
   if (fs.existsSync(dirname)) {
@@ -16,9 +18,18 @@ export function listFilesByExt(dirname: string, ext: string): string[] {
   }
 }
 
+export function readJsonObject(path: string): Record<string, any> {
+  if (fs.existsSync(path)) {
+    const content = fs.readFileSync(path, "utf-8")
+    return JSON.parse(content)
+  } else {
+    return {}
+  }
+}
+
 export function javap(classPaths: string[], classList: string[]): string | null {
   const child = spawnSync(
-    process.env.JAVAP || path.join(locateJavaBin(), "javap"),
+    process.env.JAVAP || path.join(locateJdkBin(), "javap"),
     ["-package", "-cp", ":" + classPaths.join(":"), ...classList]
   )
   if (child.status === 0) {
@@ -30,23 +41,21 @@ export function javap(classPaths: string[], classList: string[]): string | null 
 }
 
 // Return path of JDK `bin` directory
-function locateJavaBin(): string {
-  if (fs.existsSync("package.json")) {
-    const { runtime } = JSON.parse(fs.readFileSync("package.json", "utf-8"))
-    if (runtime?.graaljs && fs.existsSync(runtime.graaljs)) {
-      let cmd = runtime.graaljs
-      if (fs.lstatSync(cmd).isSymbolicLink()) {
-        cmd = fs.realpathSync(cmd)
-      }
-      return path.join(path.dirname(cmd), "..", "..", "..", "bin")
+function locateJdkBin(): string {
+  const { runtime } = readJsonObject(PATH.RC)
+  if (runtime?.graaljs && fs.existsSync(runtime.graaljs)) {
+    let cmd = runtime.graaljs
+    if (fs.lstatSync(cmd).isSymbolicLink()) {
+      cmd = fs.realpathSync(cmd)
     }
-    if (runtime?.nashorn && fs.existsSync(runtime.nashorn)) {
-      let cmd = runtime.nashorn
-      if (fs.lstatSync(cmd).isSymbolicLink()) {
-        cmd = fs.realpathSync(cmd)
-      }
-      return path.dirname(cmd)
+    return path.join(path.dirname(cmd), "..", "..", "..", "bin")
+  }
+  if (runtime?.nashorn && fs.existsSync(runtime.nashorn)) {
+    let cmd = runtime.nashorn
+    if (fs.lstatSync(cmd).isSymbolicLink()) {
+      cmd = fs.realpathSync(cmd)
     }
+    return path.dirname(cmd)
   }
   return process.env.JAVA_HOME ? path.join(process.env.JAVA_HOME, "bin") : ""
 }

@@ -6,14 +6,15 @@ import zip from "jszip"
 import { GlobSync } from "glob"
 import { spawnSync } from "child_process"
 
+import { code as ErrorCode } from "../errors"
+import { path as PATH } from "../constants"
 import * as parser from "../parser"
 import * as utils from "../utils"
 import interfaces from "../jdk/interfaces.json"
-import { code as ErrorCode } from "../errors"
 
 export default async function (offline: boolean): Promise<void> {
-  if (!fs.existsSync("package.json")) {
-    console.error(chalk.red("'package.json' does not exist."))
+  if (!fs.existsSync(PATH.PACKAGE)) {
+    console.error(chalk.red(PATH.PACKAGE + " does not exist."))
     process.exit(ErrorCode.PROJECT_NOT_FOUND)
   }
 
@@ -66,7 +67,7 @@ function gradleInstall(): void {
   fs.writeFileSync(path.join("lib", "@types", "index.d.ts"), "")
   const mvnDependencies: { [_: string]: string } = {};
   // find all mvnDependencies from node_modules
-  ["package.json", ...new GlobSync(path.join("node_modules", "**", "package.json")).found].forEach(it => {
+  [PATH.PACKAGE, ...new GlobSync(path.join("node_modules", "**", PATH.PACKAGE)).found].forEach(it => {
     const pkg = JSON.parse(fs.readFileSync(it as string, "utf-8"))
     Object.keys(pkg.mvnDependencies || {}).forEach(k => {
       if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))

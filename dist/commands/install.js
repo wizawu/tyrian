@@ -71,18 +71,19 @@ var redent_1 = __importDefault(require("redent"));
 var jszip_1 = __importDefault(require("jszip"));
 var glob_1 = require("glob");
 var child_process_1 = require("child_process");
+var errors_1 = require("../errors");
+var constants_1 = require("../constants");
 var parser = __importStar(require("../parser"));
 var utils = __importStar(require("../utils"));
 var interfaces_json_1 = __importDefault(require("../jdk/interfaces.json"));
-var errors_1 = require("../errors");
 function default_1(offline) {
     return __awaiter(this, void 0, void 0, function () {
         var jars, classes;
         return __generator(this, function (_a) {
             switch (_a.label) {
                 case 0:
-                    if (!fs_1.default.existsSync("package.json")) {
-                        console.error(chalk_1.default.red("'package.json' does not exist."));
+                    if (!fs_1.default.existsSync(constants_1.path.PACKAGE)) {
+                        console.error(chalk_1.default.red(constants_1.path.PACKAGE + " does not exist."));
                         process.exit(errors_1.code.PROJECT_NOT_FOUND);
                     }
                     if (!offline) {
@@ -151,7 +152,7 @@ function gradleInstall() {
     fs_1.default.writeFileSync(path_1.default.join("lib", "@types", "index.d.ts"), "");
     var mvnDependencies = {};
     // find all mvnDependencies from node_modules
-    __spreadArray(["package.json"], new glob_1.GlobSync(path_1.default.join("node_modules", "**", "package.json")).found).forEach(function (it) {
+    __spreadArray([constants_1.path.PACKAGE], new glob_1.GlobSync(path_1.default.join("node_modules", "**", constants_1.path.PACKAGE)).found).forEach(function (it) {
         var pkg = JSON.parse(fs_1.default.readFileSync(it, "utf-8"));
         Object.keys(pkg.mvnDependencies || {}).forEach(function (k) {
             if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))

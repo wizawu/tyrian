@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
     "allowJs": true,
+    "declaration": true,
     "esModuleInterop": true,
     "module": "commonjs",
     "noImplicitAny": false,
+    "outDir": "dist",
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,

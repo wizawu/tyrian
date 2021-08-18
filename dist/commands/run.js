@@ -34,6 +34,7 @@ var redent_1 = __importDefault(require("redent"));
 var child_process_1 = require("child_process");
 var utils = __importStar(require("../utils"));
 var errors_1 = require("../errors");
+var constants_1 = require("../constants");
 function default_1(output, args, _a) {
     var inspectBrk = _a.inspectBrk, watch = _a.watch;
     if (!fs_1.default.existsSync(output)) {
@@ -78,16 +79,22 @@ function default_1(output, args, _a) {
 }
 exports.default = default_1;
 function checkRuntime() {
-    var runtime = JSON.parse(fs_1.default.readFileSync("package.json", "utf-8")).runtime;
+    var runtime = utils.readJsonObject(constants_1.path.RC).runtime;
     if (typeof runtime.graaljs === "string") {
         return ["graaljs", runtime.graaljs];
     }
     else if (typeof runtime.nashorn === "string") {
         return ["nashorn", runtime.nashorn];
     }
+    else if (child_process_1.spawnSync("node", ["--version:graalvm"]).status === 0) {
+        return ["graaljs", "node"];
+    }
+    else if (child_process_1.spawnSync("jjs", ["-version"]).status === 0) {
+        return ["nashorn", "jjs"];
+    }
     else {
-        console.error("You should define at least one runtime in package.json");
-        console.error(redent_1.default("\n      {\n        \"runtime\": {\n          \"graaljs\": \".../graalvm-*/languages/js/bin/node\", " + chalk_1.default.green("// recommended") + "\n          \"nashorn\": \".../openjdk-*/bin/jjs\"\n        }\n      }\n    ", 2));
+        console.error("You should define at least one runtime in " + constants_1.path.RC);
+        console.error(redent_1.default("\n      {\n        \"runtime\": {\n          \"graaljs\": \".../graalvm-*/languages/js/bin/node\" " + chalk_1.default.green("// recommended") + "\n          \"nashorn\": \".../openjdk-*/bin/jjs\"\n        }\n      }\n    ", 2));
         process.exit(errors_1.code.UNKNOWN_RUNTIME);
     }
 }

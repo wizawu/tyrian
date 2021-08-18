@@ -1,27 +1,59 @@
 "use strict";
+var __assign = (this && this.__assign) || function () {
+    __assign = Object.assign || function(t) {
+        for (var s, i = 1, n = arguments.length; i < n; i++) {
+            s = arguments[i];
+            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
+                t[p] = s[p];
+        }
+        return t;
+    };
+    return __assign.apply(this, arguments);
+};
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
+}) : (function(o, m, k, k2) {
+    if (k2 === undefined) k2 = k;
+    o[k2] = m[k];
+}));
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+    Object.defineProperty(o, "default", { enumerable: true, value: v });
+}) : function(o, v) {
+    o["default"] = v;
+});
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
+    __setModuleDefault(result, mod);
+    return result;
+};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.check = void 0;
+var child_process_1 = require("child_process");
 var chalk_1 = __importDefault(require("chalk"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
 var prompts_1 = __importDefault(require("prompts"));
-var child_process_1 = require("child_process");
 var errors_1 = require("../errors");
+var constants_1 = require("../constants");
+var utils = __importStar(require("../utils"));
 function default_1() {
     console.log("Checking prerequisites...\n");
     if (!check("node", ["-v"]) || !check("npm", ["-v"]) || !check("gradle", ["-v"])) {
         console.error(chalk_1.default.red("You should add node, npm and gradle in `PATH` env."));
         process.exit(errors_1.code.BROKEN_ENV);
     }
-    if (fs_1.default.existsSync("package.json")) {
-        console.error(chalk_1.default.yellow("package.json already exists."));
+    if (fs_1.default.existsSync(constants_1.path.PACKAGE)) {
+        console.error(chalk_1.default.yellow(constants_1.path.PACKAGE + " already exists."));
         process.exit(errors_1.code.INIT_CONFLICT);
     }
-    else if (fs_1.default.existsSync("tsconfig.json")) {
-        console.error(chalk_1.default.yellow("tsconfig.json already exists."));
+    else if (fs_1.default.existsSync(constants_1.path.TSCONFIG)) {
+        console.error(chalk_1.default.yellow(constants_1.path.TSCONFIG + " already exists."));
         process.exit(errors_1.code.INIT_CONFLICT);
     }
     else {
@@ -74,12 +106,11 @@ function initProject(runtime, root) {
         process.exit(errors_1.code.INVALID_JDK_ROOT);
     }
     // create package.json and tsconfig.json
-    fs_1.default.writeFileSync("package.json", JSON.stringify({
+    fs_1.default.writeFileSync(constants_1.path.PACKAGE, JSON.stringify({
         dependencies: {},
         mvnDependencies: {},
-        runtime: (_a = {}, _a[runtime] = runtimePath, _a),
     }, null, 2));
-    fs_1.default.writeFileSync("tsconfig.json", JSON.stringify({
+    fs_1.default.writeFileSync(constants_1.path.TSCONFIG, JSON.stringify({
         compilerOptions: {
             typeRoots: [
                 path_1.default.join(__dirname, "..", "..", "@types"),
@@ -91,6 +122,8 @@ function initProject(runtime, root) {
             "**/*.ts",
         ]
     }, null, 2));
+    // overwrite .tyrianrc
+    fs_1.default.writeFileSync(constants_1.path.RC, JSON.stringify(__assign(__assign({}, utils.readJsonObject(constants_1.path.RC)), { runtime: (_a = {}, _a[runtime] = runtimePath, _a) }), null, 2));
     // create src/main.ts
     fs_1.default.mkdirSync("src", { recursive: true });
     if (!fs_1.default.existsSync(path_1.default.join("src", "main.ts"))) {

@@ -1,10 +1,11 @@
 import chalk from "chalk"
 import fs from "fs"
 import redent from "redent"
-import { ChildProcessWithoutNullStreams, spawn } from "child_process"
+import { ChildProcessWithoutNullStreams, spawn, spawnSync } from "child_process"
 
 import * as utils from "../utils"
 import { code as ErrorCode } from "../errors"
+import { path as PATH } from "../constants"
 
 type Runtime = "graaljs" | "nashorn"
 
@@ -62,17 +63,21 @@ export default function (output: string, args: string[], { inspectBrk, watch }: 
 }
 
 export function checkRuntime(): [Runtime, string] {
-  const { runtime } = JSON.parse(fs.readFileSync("package.json", "utf-8"))
+  const { runtime } = utils.readJsonObject(PATH.RC)
   if (typeof runtime.graaljs === "string") {
     return ["graaljs", runtime.graaljs]
   } else if (typeof runtime.nashorn === "string") {
     return ["nashorn", runtime.nashorn]
+  } else if (spawnSync("node", ["--version:graalvm"]).status === 0) {
+    return ["graaljs", "node"]
+  } else if (spawnSync("jjs", ["-version"]).status === 0) {
+    return ["nashorn", "jjs"]
   } else {
-    console.error("You should define at least one runtime in package.json")
+    console.error(`You should define at least one runtime in ${PATH.RC}`)
     console.error(redent(`
       {
         "runtime": {
-          "graaljs": ".../graalvm-*/languages/js/bin/node", ${chalk.green("// recommended")}
+          "graaljs": ".../graalvm-*/languages/js/bin/node" ${chalk.green("// recommended")}
           "nashorn": ".../openjdk-*/bin/jjs"
         }
       }

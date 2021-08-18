@@ -1,14 +1,11 @@
-import fs from "fs"
-import path from "path"
 import { program } from "commander"
+import path from "path"
 
+import { path as PATH } from "./constants"
+import * as utils from "./utils"
 import commands from "./commands"
 
-const { name, version } = JSON.parse(fs.readFileSync(
-  path.resolve(__dirname, "..", "package.json"),
-  "utf-8"
-))
-
+const { name, version } = utils.readJsonObject(path.resolve(__dirname, "..", PATH.PACKAGE))
 program.name(name).version(version)
 
 program.command("init")

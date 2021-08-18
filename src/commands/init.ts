@@ -1,10 +1,12 @@
+import { spawnSync } from "child_process"
 import chalk from "chalk"
 import fs from "fs"
 import path from "path"
 import prompts from "prompts"
-import { spawnSync } from "child_process"
 
 import { code as ErrorCode } from "../errors"
+import { path as PATH } from "../constants"
+import * as utils from "../utils"
 
 export default function (): void {
   console.log("Checking prerequisites...\n")
@@ -13,11 +15,11 @@ export default function (): void {
     process.exit(ErrorCode.BROKEN_ENV)
   }
 
-  if (fs.existsSync("package.json")) {
-    console.error(chalk.yellow("package.json already exists."))
+  if (fs.existsSync(PATH.PACKAGE)) {
+    console.error(chalk.yellow(PATH.PACKAGE + " already exists."))
     process.exit(ErrorCode.INIT_CONFLICT)
-  } else if (fs.existsSync("tsconfig.json")) {
-    console.error(chalk.yellow("tsconfig.json already exists."))
+  } else if (fs.existsSync(PATH.TSCONFIG)) {
+    console.error(chalk.yellow(PATH.TSCONFIG + " already exists."))
     process.exit(ErrorCode.INIT_CONFLICT)
   } else {
     prompts({
@@ -60,12 +62,11 @@ function initProject(runtime: "graaljs" | "nashorn", root: string): void {
     process.exit(ErrorCode.INVALID_JDK_ROOT)
   }
   // create package.json and tsconfig.json
-  fs.writeFileSync("package.json", JSON.stringify({
+  fs.writeFileSync(PATH.PACKAGE, JSON.stringify({
     dependencies: {},
     mvnDependencies: {},
-    runtime: { [runtime]: runtimePath },
   }, null, 2))
-  fs.writeFileSync("tsconfig.json", JSON.stringify({
+  fs.writeFileSync(PATH.TSCONFIG, JSON.stringify({
     compilerOptions: {
       typeRoots: [
         path.join(__dirname, "..", "..", "@types"),
@@ -76,6 +77,11 @@ function initProject(runtime: "graaljs" | "nashorn", root: string): void {
     include: [
       "**/*.ts",
     ]
+  }, null, 2))
+  // overwrite .tyrianrc
+  fs.writeFileSync(PATH.RC, JSON.stringify({
+    ...utils.readJsonObject(PATH.RC),
+    runtime: { [runtime]: runtimePath },
   }, null, 2))
   // create src/main.ts
   fs.mkdirSync("src", { recursive: true })

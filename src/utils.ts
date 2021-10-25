@@ -1,13 +1,14 @@
 import { spawnSync } from "child_process"
+import dotenv from "dotenv"
 import fs from "fs"
 import path from "path"
-
-import { path as PATH } from "./constants"
+import which from "which"
 
 export function listFilesByExt(dirname: string, ext: string): string[] {
   if (fs.existsSync(dirname)) {
     if (fs.lstatSync(dirname).isDirectory()) {
-      return fs.readdirSync(dirname)
+      return fs
+        .readdirSync(dirname)
         .filter(it => it.endsWith(ext))
         .map(it => path.join(dirname, it))
     } else {
@@ -27,11 +28,27 @@ export function readJsonObject(path: string): Record<string, any> {
   }
 }
 
+// Return the full path of any executable command
+export function realPath(command: string): string {
+  const fullPath = which.sync(command)
+  if (fs.lstatSync(fullPath).isSymbolicLink()) {
+    return fs.realpathSync(fullPath)
+  } else {
+    return fullPath
+  }
+}
+
 export function javap(classPaths: string[], classList: string[]): string | null {
-  const child = spawnSync(
-    process.env.JAVAP || path.join(locateJdkBin(), "javap"),
-    ["-package", "-cp", ":" + classPaths.join(":"), ...classList]
-  )
+  let command = process.env.JAVAP
+  if (!command) {
+    try {
+      const { runtime } = dotenv.config().parsed || {}
+      command = runtime ? path.resolve(locateJdk(runtime)[1], "bin", "javap") : realPath("javap")
+    } catch (e) {
+      command = realPath("javap")
+    }
+  }
+  const child = spawnSync(command, ["-package", "-cp", ":" + classPaths.join(":"), ...classList])
   if (child.status === 0) {
     return child.stdout.toString()
   } else {
@@ -40,22 +57,13 @@ export function javap(classPaths: string[], classList: string[]): string | null 
   }
 }
 
-// Return path of JDK `bin` directory
-function locateJdkBin(): string {
-  const { runtime } = readJsonObject(PATH.RC)
-  if (runtime?.graaljs && fs.existsSync(runtime.graaljs)) {
-    let cmd = runtime.graaljs
-    if (fs.lstatSync(cmd).isSymbolicLink()) {
-      cmd = fs.realpathSync(cmd)
-    }
-    return path.join(path.dirname(cmd), "..", "..", "..", "bin")
+// Return runtime type and home directory
+export function locateJdk(runtime: string): [Runtime, string] {
+  const fullPath = realPath(runtime)
+  const child = spawnSync(runtime, ["--version:graalvm"])
+  if (child.status === 0) {
+    return ["graaljs", path.resolve(fullPath, "..", "..", "..", "..")]
+  } else {
+    return ["nashorn", path.resolve(fullPath, "..", "..")]
   }
-  if (runtime?.nashorn && fs.existsSync(runtime.nashorn)) {
-    let cmd = runtime.nashorn
-    if (fs.lstatSync(cmd).isSymbolicLink()) {
-      cmd = fs.realpathSync(cmd)
-    }
-    return path.dirname(cmd)
-  }
-  return process.env.JAVA_HOME ? path.join(process.env.JAVA_HOME, "bin") : ""
 }

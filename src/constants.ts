@@ -1,5 +1,5 @@
 export const path = {
-  RC: ".tyrianrc",
+  ENV: ".env",
   PACKAGE: "package.json",
   TSCONFIG: "tsconfig.json",
 }

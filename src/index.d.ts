@@ -1,3 +1,5 @@
+type Runtime = "graaljs" | "nashorn"
+
 declare interface CompilationUnitContext {
   sourceDeclaration(i: number): SourceDeclarationContext
   sourceDeclaration(): SourceDeclarationContext[]

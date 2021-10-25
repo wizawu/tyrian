@@ -1,4 +1,5 @@
 import chalk from "chalk"
+import dotenv from "dotenv"
 import fs from "fs"
 import redent from "redent"
 import { ChildProcessWithoutNullStreams, spawn, spawnSync } from "child_process"
@@ -6,8 +7,6 @@ import { ChildProcessWithoutNullStreams, spawn, spawnSync } from "child_process"
 import * as utils from "../utils"
 import { code as ErrorCode } from "../errors"
 import { path as PATH } from "../constants"
-
-type Runtime = "graaljs" | "nashorn"
 
 interface Options {
   inspectBrk: boolean
@@ -63,25 +62,23 @@ export default function (output: string, args: string[], { inspectBrk, watch }: 
 }
 
 export function checkRuntime(): [Runtime, string] {
-  const { runtime } = utils.readJsonObject(PATH.RC)
-  if (typeof runtime.graaljs === "string") {
-    return ["graaljs", runtime.graaljs]
-  } else if (typeof runtime.nashorn === "string") {
-    return ["nashorn", runtime.nashorn]
+  const { runtime } = dotenv.config().parsed || {}
+  const [type] = utils.locateJdk(runtime)
+  if (type === "graaljs") {
+    return ["graaljs", runtime]
+  } else if (type === "nashorn") {
+    return ["nashorn", runtime]
   } else if (spawnSync("node", ["--version:graalvm"]).status === 0) {
     return ["graaljs", "node"]
   } else if (spawnSync("jjs", ["-version"]).status === 0) {
     return ["nashorn", "jjs"]
   } else {
-    console.error(`You should define at least one runtime in ${PATH.RC}`)
+    console.error(`Please define the runtime in ${PATH.ENV}`)
     console.error(redent(`
-      {
-        "runtime": {
-          "graaljs": ".../graalvm-*/languages/js/bin/node" ${chalk.green("// recommended")}
-          "nashorn": ".../openjdk-*/bin/jjs"
-        }
-      }
-    `, 2))
+      runtime=/path/to/graalvm/bin/node
+      // or
+      runtime=/path/to/openjdk/bin/jjs
+    `, 0))
     process.exit(ErrorCode.UNKNOWN_RUNTIME)
   }
 }

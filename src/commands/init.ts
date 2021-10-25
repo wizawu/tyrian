@@ -27,62 +27,52 @@ export default function (): void {
       message: "Choose runtime",
       type: "select",
       choices: [
-        { value: "graaljs", title: "graal.js (recommended)" },
-        { value: "nashorn" },
-      ]
+        { value: "graaljs", title: "Graal.js (recommended)" },
+        { value: "nashorn", title: "Nashorn" },
+      ],
     }).then(({ runtime }) => {
       if (runtime === "graaljs") {
         prompts({
-          name: "root",
-          message: "Input the root path of GraalVM",
+          name: "executable",
+          message: "Where is the Graal.js executable file (node)",
           type: "text",
-        }).then(({ root }) => initProject(runtime, root))
+          initial: "node",
+        }).then(({ executable }) => initProject(runtime, executable))
       }
       if (runtime === "nashorn") {
         prompts({
-          name: "root",
-          message: "Input the root path of OpenJDK or Oracle JDK",
+          name: "executable",
+          message: "Where is the Nashorn executable file (jjs)",
           type: "text",
-        }).then(({ root }) => initProject(runtime, root))
+          initial: "jjs",
+        }).then(({ executable }) => initProject(runtime, executable))
       }
     })
   }
 }
 
-function initProject(runtime: "graaljs" | "nashorn", root: string): void {
-  const javapPath = path.join(root, "bin", "javap")
-  const runtimePath = runtime === "graaljs" ?
-    path.join(root, "languages", "js", "bin", "node") :
-    path.join(root, "bin", "jjs")
-  if (!fs.existsSync(runtimePath)) {
-    console.error(chalk.red("Cannot find " + runtimePath))
-    process.exit(ErrorCode.INVALID_JDK_ROOT)
-  } else if (!fs.existsSync(javapPath)) {
-    console.error(chalk.red("Cannot find " + javapPath))
-    process.exit(ErrorCode.INVALID_JDK_ROOT)
-  }
-  // create package.json and tsconfig.json
-  fs.writeFileSync(PATH.PACKAGE, JSON.stringify({
-    dependencies: {},
-    mvnDependencies: {},
-  }, null, 2))
-  fs.writeFileSync(PATH.TSCONFIG, JSON.stringify({
-    compilerOptions: {
-      typeRoots: [
-        path.join(__dirname, "..", "..", "@types"),
-        "lib",
-        "node_modules/@types",
-      ]
-    },
-    include: [
-      "**/*.ts",
-    ]
-  }, null, 2))
-  // overwrite .tyrianrc
-  fs.writeFileSync(PATH.RC, JSON.stringify({
-    ...utils.readJsonObject(PATH.RC),
-    runtime: { [runtime]: runtimePath },
-  }, null, 2))
+function initProject(runtime: Runtime, executable: string): void {
+  // create .env
+  const runtimePath = utils.realPath(executable)
+  fs.appendFileSync(PATH.ENV, `runtime=${runtimePath}\n`)
+  // create package.json
+  fs.writeFileSync(
+    PATH.PACKAGE,
+    JSON.stringify({
+      dependencies: {},
+      mvnDependencies: {},
+    }, null, 2)
+  )
+  // create tsconfig.json
+  fs.writeFileSync(
+    PATH.TSCONFIG,
+    JSON.stringify({
+      compilerOptions: {
+        typeRoots: [path.join(__dirname, "..", "..", "@types"), "lib", "node_modules/@types"],
+      },
+      include: ["**/*.ts"],
+    }, null, 2)
+  )
   // create src/main.ts
   fs.mkdirSync("src", { recursive: true })
   if (!fs.existsSync(path.join("src", "main.ts"))) {

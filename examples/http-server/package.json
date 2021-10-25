@@ -6,8 +6,5 @@
   },
   "mvnDependencies": {
     "com.github.ben-manes.caffeine:caffeine": "3.0.1"
-  },
-  "runtime": {
-    "graaljs": "/tmp/graalvm-ce/languages/js/bin/node"
   }
 }

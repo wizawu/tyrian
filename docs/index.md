@@ -36,7 +36,7 @@ Let's build a simple HTTP service, which returns colorful text.
     tyrian init
     ```
 
-    You can find `package.json` and `tsconfig.json` created under the current directory. Then modify `dependencies` and `mvnDependencies` in `package.json`.
+    You can find `.env`, `package.json` and `tsconfig.json` created under the current directory. Then modify `dependencies` and `mvnDependencies` in `package.json`.
 
     ```json
     {
@@ -45,9 +45,6 @@ Let's build a simple HTTP service, which returns colorful text.
       },
       "mvnDependencies": {
         "org.rapidoid:rapidoid-http-server": "5.5.5"
-      },
-      "runtime": {
-        "graaljs": "..."
       }
     }
     ```

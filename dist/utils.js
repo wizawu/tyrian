@@ -1,22 +1,28 @@
 "use strict";
-var __spreadArray = (this && this.__spreadArray) || function (to, from) {
-    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
-        to[j] = from[i];
-    return to;
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.javap = exports.readJsonObject = exports.listFilesByExt = void 0;
+exports.locateJdk = exports.javap = exports.realPath = exports.readJsonObject = exports.listFilesByExt = void 0;
 var child_process_1 = require("child_process");
+var dotenv_1 = __importDefault(require("dotenv"));
 var fs_1 = __importDefault(require("fs"));
 var path_1 = __importDefault(require("path"));
-var constants_1 = require("./constants");
+var which_1 = __importDefault(require("which"));
 function listFilesByExt(dirname, ext) {
     if (fs_1.default.existsSync(dirname)) {
         if (fs_1.default.lstatSync(dirname).isDirectory()) {
-            return fs_1.default.readdirSync(dirname)
+            return fs_1.default
+                .readdirSync(dirname)
                 .filter(function (it) { return it.endsWith(ext); })
                 .map(function (it) { return path_1.default.join(dirname, it); });
         }
@@ -39,8 +45,29 @@ function readJsonObject(path) {
     }
 }
 exports.readJsonObject = readJsonObject;
+// Return the full path of any executable command
+function realPath(command) {
+    var fullPath = which_1.default.sync(command);
+    if (fs_1.default.lstatSync(fullPath).isSymbolicLink()) {
+        return fs_1.default.realpathSync(fullPath);
+    }
+    else {
+        return fullPath;
+    }
+}
+exports.realPath = realPath;
 function javap(classPaths, classList) {
-    var child = child_process_1.spawnSync(process.env.JAVAP || path_1.default.join(locateJdkBin(), "javap"), __spreadArray(["-package", "-cp", ":" + classPaths.join(":")], classList));
+    var command = process.env.JAVAP;
+    if (!command) {
+        try {
+            var runtime = (dotenv_1.default.config().parsed || {}).runtime;
+            command = runtime ? path_1.default.resolve(locateJdk(runtime)[1], "bin", "javap") : realPath("javap");
+        }
+        catch (e) {
+            command = realPath("javap");
+        }
+    }
+    var child = (0, child_process_1.spawnSync)(command, __spreadArray(["-package", "-cp", ":" + classPaths.join(":")], classList, true));
     if (child.status === 0) {
         return child.stdout.toString();
     }
@@ -50,22 +77,15 @@ function javap(classPaths, classList) {
     }
 }
 exports.javap = javap;
-// Return path of JDK `bin` directory
-function locateJdkBin() {
-    var runtime = readJsonObject(constants_1.path.RC).runtime;
-    if ((runtime === null || runtime === void 0 ? void 0 : runtime.graaljs) && fs_1.default.existsSync(runtime.graaljs)) {
-        var cmd = runtime.graaljs;
-        if (fs_1.default.lstatSync(cmd).isSymbolicLink()) {
-            cmd = fs_1.default.realpathSync(cmd);
-        }
-        return path_1.default.join(path_1.default.dirname(cmd), "..", "..", "..", "bin");
+// Return runtime type and home directory
+function locateJdk(runtime) {
+    var fullPath = realPath(runtime);
+    var child = (0, child_process_1.spawnSync)(runtime, ["--version:graalvm"]);
+    if (child.status === 0) {
+        return ["graaljs", path_1.default.resolve(fullPath, "..", "..", "..", "..")];
     }
-    if ((runtime === null || runtime === void 0 ? void 0 : runtime.nashorn) && fs_1.default.existsSync(runtime.nashorn)) {
-        var cmd = runtime.nashorn;
-        if (fs_1.default.lstatSync(cmd).isSymbolicLink()) {
-            cmd = fs_1.default.realpathSync(cmd);
-        }
-        return path_1.default.dirname(cmd);
+    else {
+        return ["nashorn", path_1.default.resolve(fullPath, "..", "..")];
     }
-    return process.env.JAVA_HOME ? path_1.default.join(process.env.JAVA_HOME, "bin") : "";
 }
+exports.locateJdk = locateJdk;

@@ -18,10 +18,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     __setModuleDefault(result, mod);
     return result;
 };
-var __spreadArray = (this && this.__spreadArray) || function (to, from) {
-    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
-        to[j] = from[i];
-    return to;
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -29,6 +33,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.checkRuntime = void 0;
 var chalk_1 = __importDefault(require("chalk"));
+var dotenv_1 = __importDefault(require("dotenv"));
 var fs_1 = __importDefault(require("fs"));
 var redent_1 = __importDefault(require("redent"));
 var child_process_1 = require("child_process");
@@ -50,7 +55,7 @@ function default_1(output, args, _a) {
                 "--language=es6",
                 "-cp", ":" + classPaths.join(":"),
                 output,
-                "--"], args));
+                "--"], args, false));
         }
         else if (type === "graaljs") {
             if (inspectBrk)
@@ -59,9 +64,9 @@ function default_1(output, args, _a) {
                 "--experimental-options",
                 "--js.nashorn-compat=true",
                 "--vm.cp=:" + classPaths.join(":"),
-                output], args));
+                output], args, false));
         }
-        var child = child_process_1.spawn(runner, finalArgs);
+        var child = (0, child_process_1.spawn)(runner, finalArgs);
         child.on("exit", function (code) { return process.exit(code || 0); });
         child.stdout.on("data", function (chunk) { return process.stdout.write(chunk); });
         child.stderr.on("data", function (chunk) { return process.stderr.write(chunk); });
@@ -79,22 +84,23 @@ function default_1(output, args, _a) {
 }
 exports.default = default_1;
 function checkRuntime() {
-    var runtime = utils.readJsonObject(constants_1.path.RC).runtime;
-    if (typeof runtime.graaljs === "string") {
-        return ["graaljs", runtime.graaljs];
+    var runtime = (dotenv_1.default.config().parsed || {}).runtime;
+    var type = utils.locateJdk(runtime)[0];
+    if (type === "graaljs") {
+        return ["graaljs", runtime];
     }
-    else if (typeof runtime.nashorn === "string") {
-        return ["nashorn", runtime.nashorn];
+    else if (type === "nashorn") {
+        return ["nashorn", runtime];
     }
-    else if (child_process_1.spawnSync("node", ["--version:graalvm"]).status === 0) {
+    else if ((0, child_process_1.spawnSync)("node", ["--version:graalvm"]).status === 0) {
         return ["graaljs", "node"];
     }
-    else if (child_process_1.spawnSync("jjs", ["-version"]).status === 0) {
+    else if ((0, child_process_1.spawnSync)("jjs", ["-version"]).status === 0) {
         return ["nashorn", "jjs"];
     }
     else {
-        console.error("You should define at least one runtime in " + constants_1.path.RC);
-        console.error(redent_1.default("\n      {\n        \"runtime\": {\n          \"graaljs\": \".../graalvm-*/languages/js/bin/node\" " + chalk_1.default.green("// recommended") + "\n          \"nashorn\": \".../openjdk-*/bin/jjs\"\n        }\n      }\n    ", 2));
+        console.error("Please define the runtime in " + constants_1.path.ENV);
+        console.error((0, redent_1.default)("\n      runtime=/path/to/graalvm/bin/node\n      // or\n      runtime=/path/to/openjdk/bin/jjs\n    ", 0));
         process.exit(errors_1.code.UNKNOWN_RUNTIME);
     }
 }

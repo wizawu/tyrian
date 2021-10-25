@@ -1,5 +1,5 @@
 export declare const path: {
-    RC: string;
+    ENV: string;
     PACKAGE: string;
     TSCONFIG: string;
 };

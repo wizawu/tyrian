@@ -1,15 +1,4 @@
 "use strict";
-var __assign = (this && this.__assign) || function () {
-    __assign = Object.assign || function(t) {
-        for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-        }
-        return t;
-    };
-    return __assign.apply(this, arguments);
-};
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
@@ -57,73 +46,58 @@ function default_1() {
         process.exit(errors_1.code.INIT_CONFLICT);
     }
     else {
-        prompts_1.default({
+        (0, prompts_1.default)({
             name: "runtime",
             message: "Choose runtime",
             type: "select",
             choices: [
-                { value: "graaljs", title: "graal.js (recommended)" },
-                { value: "nashorn" },
-            ]
+                { value: "graaljs", title: "Graal.js (recommended)" },
+                { value: "nashorn", title: "Nashorn" },
+            ],
         }).then(function (_a) {
             var runtime = _a.runtime;
             if (runtime === "graaljs") {
-                prompts_1.default({
-                    name: "root",
-                    message: "Input the root path of GraalVM",
+                (0, prompts_1.default)({
+                    name: "executable",
+                    message: "Where is the Graal.js executable file (node)",
                     type: "text",
+                    initial: "node",
                 }).then(function (_a) {
-                    var root = _a.root;
-                    return initProject(runtime, root);
+                    var executable = _a.executable;
+                    return initProject(runtime, executable);
                 });
             }
             if (runtime === "nashorn") {
-                prompts_1.default({
-                    name: "root",
-                    message: "Input the root path of OpenJDK or Oracle JDK",
+                (0, prompts_1.default)({
+                    name: "executable",
+                    message: "Where is the Nashorn executable file (jjs)",
                     type: "text",
+                    initial: "jjs",
                 }).then(function (_a) {
-                    var root = _a.root;
-                    return initProject(runtime, root);
+                    var executable = _a.executable;
+                    return initProject(runtime, executable);
                 });
             }
         });
     }
 }
 exports.default = default_1;
-function initProject(runtime, root) {
-    var _a;
-    var javapPath = path_1.default.join(root, "bin", "javap");
-    var runtimePath = runtime === "graaljs" ?
-        path_1.default.join(root, "languages", "js", "bin", "node") :
-        path_1.default.join(root, "bin", "jjs");
-    if (!fs_1.default.existsSync(runtimePath)) {
-        console.error(chalk_1.default.red("Cannot find " + runtimePath));
-        process.exit(errors_1.code.INVALID_JDK_ROOT);
-    }
-    else if (!fs_1.default.existsSync(javapPath)) {
-        console.error(chalk_1.default.red("Cannot find " + javapPath));
-        process.exit(errors_1.code.INVALID_JDK_ROOT);
-    }
-    // create package.json and tsconfig.json
+function initProject(runtime, executable) {
+    // create .env
+    var runtimePath = utils.realPath(executable);
+    fs_1.default.appendFileSync(constants_1.path.ENV, "runtime=" + runtimePath + "\n");
+    // create package.json
     fs_1.default.writeFileSync(constants_1.path.PACKAGE, JSON.stringify({
         dependencies: {},
         mvnDependencies: {},
     }, null, 2));
+    // create tsconfig.json
     fs_1.default.writeFileSync(constants_1.path.TSCONFIG, JSON.stringify({
         compilerOptions: {
-            typeRoots: [
-                path_1.default.join(__dirname, "..", "..", "@types"),
-                "lib",
-                "node_modules/@types",
-            ]
+            typeRoots: [path_1.default.join(__dirname, "..", "..", "@types"), "lib", "node_modules/@types"],
         },
-        include: [
-            "**/*.ts",
-        ]
+        include: ["**/*.ts"],
     }, null, 2));
-    // overwrite .tyrianrc
-    fs_1.default.writeFileSync(constants_1.path.RC, JSON.stringify(__assign(__assign({}, utils.readJsonObject(constants_1.path.RC)), { runtime: (_a = {}, _a[runtime] = runtimePath, _a) }), null, 2));
     // create src/main.ts
     fs_1.default.mkdirSync("src", { recursive: true });
     if (!fs_1.default.existsSync(path_1.default.join("src", "main.ts"))) {
@@ -132,7 +106,7 @@ function initProject(runtime, root) {
     }
 }
 function check(command, args) {
-    var _a = child_process_1.spawnSync(command, args), status = _a.status, stdout = _a.stdout, stderr = _a.stderr;
+    var _a = (0, child_process_1.spawnSync)(command, args), status = _a.status, stdout = _a.stdout, stderr = _a.stderr;
     if (status === 0) {
         console.log(chalk_1.default.green("[" + command + "]"));
         console.log(stdout.toString().replace(/\n+/g, "\n").trim() + "\n");

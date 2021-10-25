@@ -5,5 +5,4 @@ export declare const code: {
     BUILD_ERROR: number;
     INIT_CONFLICT: number;
     PROJECT_NOT_FOUND: number;
-    INVALID_JDK_ROOT: number;
 };

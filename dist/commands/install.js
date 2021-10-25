@@ -54,10 +54,14 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __spreadArray = (this && this.__spreadArray) || function (to, from) {
-    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
-        to[j] = from[i];
-    return to;
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -143,7 +147,7 @@ function listLibClasses(jars) {
 }
 exports.listLibClasses = listLibClasses;
 function npmInstall() {
-    var child = child_process_1.spawnSync("npm", ["install"], { stdio: "inherit" });
+    var child = (0, child_process_1.spawnSync)("npm", ["install"], { stdio: "inherit" });
     if (child.status)
         process.exit(child.status);
 }
@@ -152,7 +156,7 @@ function gradleInstall() {
     fs_1.default.writeFileSync(path_1.default.join("lib", "@types", "index.d.ts"), "");
     var mvnDependencies = {};
     // find all mvnDependencies from node_modules
-    __spreadArray([constants_1.path.PACKAGE], new glob_1.GlobSync(path_1.default.join("node_modules", "**", constants_1.path.PACKAGE)).found).forEach(function (it) {
+    __spreadArray([constants_1.path.PACKAGE], new glob_1.GlobSync(path_1.default.join("node_modules", "**", constants_1.path.PACKAGE)).found, true).forEach(function (it) {
         var pkg = JSON.parse(fs_1.default.readFileSync(it, "utf-8"));
         Object.keys(pkg.mvnDependencies || {}).forEach(function (k) {
             if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))
@@ -160,8 +164,8 @@ function gradleInstall() {
         });
     });
     var deps = Object.keys(mvnDependencies).map(function (it) { return it + ":" + mvnDependencies[it]; });
-    fs_1.default.writeFileSync(path_1.default.join("lib", "build.gradle"), exports.gradleTemplate(deps));
-    var child = child_process_1.spawnSync("gradle", [
+    fs_1.default.writeFileSync(path_1.default.join("lib", "build.gradle"), (0, exports.gradleTemplate)(deps));
+    var child = (0, child_process_1.spawnSync)("gradle", [
         "-b",
         path_1.default.join("lib", "build.gradle"),
         "--no-daemon",
@@ -170,5 +174,5 @@ function gradleInstall() {
     if (child.status)
         process.exit(child.status);
 }
-var gradleTemplate = function (deps) { return redent_1.default("\n  apply plugin: \"java\"\n\n  repositories {\n    jcenter()\n    mavenCentral()\n  }\n\n  task install(type: Copy) {\n    into \".\"\n    from configurations.runtime\n  }\n\n  dependencies {\n    " + deps.map(function (it) { return "compile \"" + it + "\""; }).join("\n    ") + "\n  }\n", 0).trimStart(); };
+var gradleTemplate = function (deps) { return (0, redent_1.default)("\n  apply plugin: \"java\"\n\n  repositories {\n    jcenter()\n    mavenCentral()\n  }\n\n  task install(type: Copy) {\n    into \".\"\n    from configurations.runtime\n  }\n\n  dependencies {\n    " + deps.map(function (it) { return "compile \"" + it + "\""; }).join("\n    ") + "\n  }\n", 0).trimStart(); };
 exports.gradleTemplate = gradleTemplate;

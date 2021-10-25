@@ -1,4 +1,3 @@
-declare type Runtime = "graaljs" | "nashorn";
 interface Options {
     inspectBrk: boolean;
     watch: boolean;

@@ -1,8 +1,12 @@
 "use strict";
-var __spreadArray = (this && this.__spreadArray) || function (to, from) {
-    for (var i = 0, il = from.length, j = to.length; i < il; i++, j++)
-        to[j] = from[i];
-    return to;
+var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
+    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
+        if (ar || !(i in from)) {
+            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
+            ar[i] = from[i];
+        }
+    }
+    return to.concat(ar || Array.prototype.slice.call(from));
 };
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
@@ -97,7 +101,7 @@ function generateTsDef(context, ifs, typeRoot) {
             return "continue";
         }
         if (filename) {
-            var content = __spreadArray(__spreadArray([], frontBuffer), endBuffer.reverse()).join("\n");
+            var content = __spreadArray(__spreadArray([], frontBuffer, true), endBuffer.reverse(), true).join("\n");
             fs_1.default.writeFileSync(path_1.default.join(typeRoot, filename), content + lambdaBuffer);
             process.stdout.clearLine(0);
             process.stdout.cursorTo(0);
@@ -300,7 +304,7 @@ function qualifiedName(type, safe) {
     if (safe === void 0) { safe = false; }
     if (safe) {
         var packages = ((_a = type.packageName()) === null || _a === void 0 ? void 0 : _a.Identifier().map(function (it) { return convertNamespace(it.getText()); })) || [];
-        return __spreadArray(__spreadArray([], packages), [type.Identifier().getText()]).join(".");
+        return __spreadArray(__spreadArray([], packages, true), [type.Identifier().getText()], false).join(".");
     }
     else {
         return (((_b = type.packageName()) === null || _b === void 0 ? void 0 : _b.getText().concat(".")) || "") + type.Identifier().getText();

@@ -38,12 +38,12 @@ function getCompiler(entries, outDir) {
         var out = path_1.default.join(outDir, path_1.default.basename(src).replace(/(.ts|.tsx)$/, ".js"));
         entry[out] = path_1.default.format({ dir: ".", name: path_1.default.relative("", src) });
     }
-    return webpack_1.default({
+    return (0, webpack_1.default)({
         devtool: false,
         mode: "development",
         context: context,
         entry: entry,
-        target: run_1.checkRuntime()[0] === "nashorn" ? "es5" : "node",
+        target: (0, run_1.checkRuntime)()[0] === "nashorn" ? "es5" : "node",
         output: {
             path: process.cwd(),
             filename: "[name]",

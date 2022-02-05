@@ -14,10 +14,9 @@ body {
   line-height: 2;
 }
 
-header h1,
-h1, h2, h3, h4, h5,
-pre, code, pre *, code * {
-  font-family: 'CourierPrimeCodeRegular', monospace;
+header h1, h1, h2, h3, h4, h5,
+section code, pre, code, pre *, code * {
+  font-family: 'CourierPrimeCodeRegular', monospace !important;
   letter-spacing: -0.05em;
 }
 

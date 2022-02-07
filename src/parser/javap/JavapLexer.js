@@ -1,12 +1,13 @@
-// Generated from Javap.g4 by ANTLR 4.7.2
+// Generated from Javap.g4 by ANTLR 4.9.3
 // jshint ignore: start
-var antlr4 = require('antlr4/index');
+import antlr4 from 'antlr4';
 
 
-var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
-    "\u0002\'\u0125\b\u0001\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004",
-    "\u0004\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t",
-    "\u0007\u0004\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004",
+
+const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
+    "\u5964\u0002\'\u0125\b\u0001\u0004\u0002\t\u0002\u0004\u0003\t\u0003",
+    "\u0004\u0004\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007",
+    "\t\u0007\u0004\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004",
     "\f\t\f\u0004\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010",
     "\t\u0010\u0004\u0011\t\u0011\u0004\u0012\t\u0012\u0004\u0013\t\u0013",
     "\u0004\u0014\t\u0014\u0004\u0015\t\u0015\u0004\u0016\t\u0016\u0004\u0017",
@@ -183,24 +184,45 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u011b\u0121\u0003\b\u0002\u0002"].join("");
 
 
-var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
+const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
 
-var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new antlr4.dfa.DFA(ds, index); });
+const decisionsToDFA = atn.decisionToState.map( (ds, index) => new antlr4.dfa.DFA(ds, index) );
 
-function JavapLexer(input) {
-	antlr4.Lexer.call(this, input);
-    this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.PredictionContextCache());
-    return this;
+export default class JavapLexer extends antlr4.Lexer {
+
+    static grammarFileName = "Javap.g4";
+    static channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
+	static modeNames = [ "DEFAULT_MODE" ];
+	static literalNames = [ null, "'Compiled from'", "'\"'", "'class'", "'extends'", 
+                         "'implements'", "'interface'", "'public'", "'private'", 
+                         "'protected'", "'abstract'", "'final'", "','", 
+                         "', '", "'.'", "'<'", "'>'", "'&'", "'?'", "'super'", 
+                         "'{'", "'}'", "'default'", "'native'", "'static'", 
+                         "'strictfp'", "'synchronized'", "'transient'", 
+                         "'volatile'", "'{}'", "';'", "'('", "')'", "'throws'", 
+                         "'...'", "'[]'" ];
+	static symbolicNames = [ null, null, null, null, null, null, null, null, 
+                          null, null, null, null, null, null, null, null, 
+                          null, null, null, null, null, null, null, null, 
+                          null, null, null, null, null, null, null, null, 
+                          null, null, null, null, "Identifier", "WS" ];
+	static ruleNames = [ "T__0", "T__1", "T__2", "T__3", "T__4", "T__5", "T__6", 
+                      "T__7", "T__8", "T__9", "T__10", "T__11", "T__12", 
+                      "T__13", "T__14", "T__15", "T__16", "T__17", "T__18", 
+                      "T__19", "T__20", "T__21", "T__22", "T__23", "T__24", 
+                      "T__25", "T__26", "T__27", "T__28", "T__29", "T__30", 
+                      "T__31", "T__32", "T__33", "T__34", "Identifier", 
+                      "WS" ];
+
+    constructor(input) {
+        super(input)
+        this._interp = new antlr4.atn.LexerATNSimulator(this, atn, decisionsToDFA, new antlr4.PredictionContextCache());
+    }
+
+    get atn() {
+        return atn;
+    }
 }
-
-JavapLexer.prototype = Object.create(antlr4.Lexer.prototype);
-JavapLexer.prototype.constructor = JavapLexer;
-
-Object.defineProperty(JavapLexer.prototype, "atn", {
-        get : function() {
-                return atn;
-        }
-});
 
 JavapLexer.EOF = antlr4.Token.EOF;
 JavapLexer.T__0 = 1;
@@ -241,41 +263,5 @@ JavapLexer.T__34 = 35;
 JavapLexer.Identifier = 36;
 JavapLexer.WS = 37;
 
-JavapLexer.prototype.channelNames = [ "DEFAULT_TOKEN_CHANNEL", "HIDDEN" ];
 
-JavapLexer.prototype.modeNames = [ "DEFAULT_MODE" ];
-
-JavapLexer.prototype.literalNames = [ null, "'Compiled from'", "'\"'", "'class'", 
-                                      "'extends'", "'implements'", "'interface'", 
-                                      "'public'", "'private'", "'protected'", 
-                                      "'abstract'", "'final'", "','", "', '", 
-                                      "'.'", "'<'", "'>'", "'&'", "'?'", 
-                                      "'super'", "'{'", "'}'", "'default'", 
-                                      "'native'", "'static'", "'strictfp'", 
-                                      "'synchronized'", "'transient'", "'volatile'", 
-                                      "'{}'", "';'", "'('", "')'", "'throws'", 
-                                      "'...'", "'[]'" ];
-
-JavapLexer.prototype.symbolicNames = [ null, null, null, null, null, null, 
-                                       null, null, null, null, null, null, 
-                                       null, null, null, null, null, null, 
-                                       null, null, null, null, null, null, 
-                                       null, null, null, null, null, null, 
-                                       null, null, null, null, null, null, 
-                                       "Identifier", "WS" ];
-
-JavapLexer.prototype.ruleNames = [ "T__0", "T__1", "T__2", "T__3", "T__4", 
-                                   "T__5", "T__6", "T__7", "T__8", "T__9", 
-                                   "T__10", "T__11", "T__12", "T__13", "T__14", 
-                                   "T__15", "T__16", "T__17", "T__18", "T__19", 
-                                   "T__20", "T__21", "T__22", "T__23", "T__24", 
-                                   "T__25", "T__26", "T__27", "T__28", "T__29", 
-                                   "T__30", "T__31", "T__32", "T__33", "T__34", 
-                                   "Identifier", "WS" ];
-
-JavapLexer.prototype.grammarFileName = "Javap.g4";
-
-
-
-exports.JavapLexer = JavapLexer;
 

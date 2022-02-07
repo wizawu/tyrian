@@ -1,9 +1,9 @@
 import antlr from "antlr4"
 
-import * as visitor from "./visitor"
-import { JavapLexer } from "./javap/JavapLexer"
-import { JavapParser } from "./javap/JavapParser"
 import { javap } from "../utils"
+import * as visitor from "./visitor"
+import JavapLexer from "./javap/JavapLexer"
+import JavapParser from "./javap/JavapParser"
 
 const PARSE_CHUNK = 500
 

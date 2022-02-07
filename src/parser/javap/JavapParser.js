@@ -1,27 +1,26 @@
-// Generated from Javap.g4 by ANTLR 4.7.2
+// Generated from Javap.g4 by ANTLR 4.9.3
 // jshint ignore: start
-var antlr4 = require('antlr4/index');
-var JavapListener = require('./JavapListener').JavapListener;
-var JavapVisitor = require('./JavapVisitor').JavapVisitor;
+import antlr4 from 'antlr4';
+import JavapListener from './JavapListener.js';
+import JavapVisitor from './JavapVisitor.js';
 
-var grammarFileName = "Javap.g4";
 
-var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
-    "\u0003\'\u0128\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004\t",
-    "\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007\u0004",
-    "\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004\f\t\f\u0004",
-    "\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010\t\u0010\u0004",
-    "\u0011\t\u0011\u0004\u0012\t\u0012\u0004\u0013\t\u0013\u0004\u0014\t",
-    "\u0014\u0004\u0015\t\u0015\u0004\u0016\t\u0016\u0004\u0017\t\u0017\u0004",
-    "\u0018\t\u0018\u0004\u0019\t\u0019\u0004\u001a\t\u001a\u0003\u0002\u0003",
-    "\u0002\u0007\u00027\n\u0002\f\u0002\u000e\u0002:\u000b\u0002\u0003\u0002",
-    "\u0005\u0002=\n\u0002\u0003\u0003\u0003\u0003\u0003\u0003\u0007\u0003",
-    "B\n\u0003\f\u0003\u000e\u0003E\u000b\u0003\u0003\u0003\u0003\u0003\u0003",
-    "\u0004\u0003\u0004\u0005\u0004K\n\u0004\u0003\u0005\u0007\u0005N\n\u0005",
-    "\f\u0005\u000e\u0005Q\u000b\u0005\u0003\u0005\u0003\u0005\u0003\u0005",
-    "\u0003\u0005\u0005\u0005W\n\u0005\u0003\u0005\u0003\u0005\u0005\u0005",
-    "[\n\u0005\u0003\u0005\u0003\u0005\u0003\u0006\u0007\u0006`\n\u0006\f",
-    "\u0006\u000e\u0006c\u000b\u0006\u0003\u0006\u0003\u0006\u0003\u0006",
+const serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786",
+    "\u5964\u0003\'\u0128\u0004\u0002\t\u0002\u0004\u0003\t\u0003\u0004\u0004",
+    "\t\u0004\u0004\u0005\t\u0005\u0004\u0006\t\u0006\u0004\u0007\t\u0007",
+    "\u0004\b\t\b\u0004\t\t\t\u0004\n\t\n\u0004\u000b\t\u000b\u0004\f\t\f",
+    "\u0004\r\t\r\u0004\u000e\t\u000e\u0004\u000f\t\u000f\u0004\u0010\t\u0010",
+    "\u0004\u0011\t\u0011\u0004\u0012\t\u0012\u0004\u0013\t\u0013\u0004\u0014",
+    "\t\u0014\u0004\u0015\t\u0015\u0004\u0016\t\u0016\u0004\u0017\t\u0017",
+    "\u0004\u0018\t\u0018\u0004\u0019\t\u0019\u0004\u001a\t\u001a\u0003\u0002",
+    "\u0003\u0002\u0007\u00027\n\u0002\f\u0002\u000e\u0002:\u000b\u0002\u0003",
+    "\u0002\u0005\u0002=\n\u0002\u0003\u0003\u0003\u0003\u0003\u0003\u0007",
+    "\u0003B\n\u0003\f\u0003\u000e\u0003E\u000b\u0003\u0003\u0003\u0003\u0003",
+    "\u0003\u0004\u0003\u0004\u0005\u0004K\n\u0004\u0003\u0005\u0007\u0005",
+    "N\n\u0005\f\u0005\u000e\u0005Q\u000b\u0005\u0003\u0005\u0003\u0005\u0003",
+    "\u0005\u0003\u0005\u0005\u0005W\n\u0005\u0003\u0005\u0003\u0005\u0005",
+    "\u0005[\n\u0005\u0003\u0005\u0003\u0005\u0003\u0006\u0007\u0006`\n\u0006",
+    "\f\u0006\u000e\u0006c\u000b\u0006\u0003\u0006\u0003\u0006\u0003\u0006",
     "\u0003\u0006\u0005\u0006i\n\u0006\u0003\u0006\u0003\u0006\u0003\u0007",
     "\u0003\u0007\u0003\b\u0003\b\u0003\t\u0003\t\u0003\t\u0007\tt\n\t\f",
     "\t\u000e\tw\u000b\t\u0003\n\u0003\n\u0003\n\u0005\n|\n\n\u0003\n\u0003",
@@ -202,51 +201,1185 @@ var serializedATN = ["\u0003\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964",
     "\u00e9\u00ed\u00f4\u00fb\u0105\u0109\u0111\u011c\u0123"].join("");
 
 
-var atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
+const atn = new antlr4.atn.ATNDeserializer().deserialize(serializedATN);
 
-var decisionsToDFA = atn.decisionToState.map( function(ds, index) { return new antlr4.dfa.DFA(ds, index); });
+const decisionsToDFA = atn.decisionToState.map( (ds, index) => new antlr4.dfa.DFA(ds, index) );
 
-var sharedContextCache = new antlr4.PredictionContextCache();
+const sharedContextCache = new antlr4.PredictionContextCache();
 
-var literalNames = [ null, "'Compiled from'", "'\"'", "'class'", "'extends'", 
-                     "'implements'", "'interface'", "'public'", "'private'", 
-                     "'protected'", "'abstract'", "'final'", "','", "', '", 
-                     "'.'", "'<'", "'>'", "'&'", "'?'", "'super'", "'{'", 
-                     "'}'", "'default'", "'native'", "'static'", "'strictfp'", 
-                     "'synchronized'", "'transient'", "'volatile'", "'{}'", 
-                     "';'", "'('", "')'", "'throws'", "'...'", "'[]'" ];
+export default class JavapParser extends antlr4.Parser {
 
-var symbolicNames = [ null, null, null, null, null, null, null, null, null, 
-                      null, null, null, null, null, null, null, null, null, 
-                      null, null, null, null, null, null, null, null, null, 
-                      null, null, null, null, null, null, null, null, null, 
-                      "Identifier", "WS" ];
+    static grammarFileName = "Javap.g4";
+    static literalNames = [ null, "'Compiled from'", "'\"'", "'class'", 
+                            "'extends'", "'implements'", "'interface'", 
+                            "'public'", "'private'", "'protected'", "'abstract'", 
+                            "'final'", "','", "', '", "'.'", "'<'", "'>'", 
+                            "'&'", "'?'", "'super'", "'{'", "'}'", "'default'", 
+                            "'native'", "'static'", "'strictfp'", "'synchronized'", 
+                            "'transient'", "'volatile'", "'{}'", "';'", 
+                            "'('", "')'", "'throws'", "'...'", "'[]'" ];
+    static symbolicNames = [ null, null, null, null, null, null, null, null, 
+                             null, null, null, null, null, null, null, null, 
+                             null, null, null, null, null, null, null, null, 
+                             null, null, null, null, null, null, null, null, 
+                             null, null, null, null, "Identifier", "WS" ];
+    static ruleNames = [ "compilationUnit", "sourceDeclaration", "classOrInterface", 
+                         "classDeclaration", "interfaceDeclaration", "classModifier", 
+                         "interfaceModifier", "typeList", "type", "subType", 
+                         "packageName", "typeArguments", "typeArgument", 
+                         "classBody", "interfaceBody", "modifier", "classMember", 
+                         "interfaceMember", "constructorDeclaration", "fieldDeclaration", 
+                         "methodDeclaration", "throwsException", "varargs", 
+                         "methodArguments", "arrayBrackets" ];
 
-var ruleNames =  [ "compilationUnit", "sourceDeclaration", "classOrInterface", 
-                   "classDeclaration", "interfaceDeclaration", "classModifier", 
-                   "interfaceModifier", "typeList", "type", "subType", "packageName", 
-                   "typeArguments", "typeArgument", "classBody", "interfaceBody", 
-                   "modifier", "classMember", "interfaceMember", "constructorDeclaration", 
-                   "fieldDeclaration", "methodDeclaration", "throwsException", 
-                   "varargs", "methodArguments", "arrayBrackets" ];
+    constructor(input) {
+        super(input);
+        this._interp = new antlr4.atn.ParserATNSimulator(this, atn, decisionsToDFA, sharedContextCache);
+        this.ruleNames = JavapParser.ruleNames;
+        this.literalNames = JavapParser.literalNames;
+        this.symbolicNames = JavapParser.symbolicNames;
+    }
 
-function JavapParser (input) {
-	antlr4.Parser.call(this, input);
-    this._interp = new antlr4.atn.ParserATNSimulator(this, atn, decisionsToDFA, sharedContextCache);
-    this.ruleNames = ruleNames;
-    this.literalNames = literalNames;
-    this.symbolicNames = symbolicNames;
-    return this;
-}
+    get atn() {
+        return atn;
+    }
 
-JavapParser.prototype = Object.create(antlr4.Parser.prototype);
-JavapParser.prototype.constructor = JavapParser;
 
-Object.defineProperty(JavapParser.prototype, "atn", {
-	get : function() {
-		return atn;
+
+	compilationUnit() {
+	    let localctx = new CompilationUnitContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 0, JavapParser.RULE_compilationUnit);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 54;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__0) | (1 << JavapParser.T__2) | (1 << JavapParser.T__5) | (1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10))) !== 0)) {
+	            this.state = 52;
+	            this._errHandler.sync(this);
+	            switch(this._input.LA(1)) {
+	            case JavapParser.T__0:
+	                this.state = 50;
+	                this.sourceDeclaration();
+	                break;
+	            case JavapParser.T__2:
+	            case JavapParser.T__5:
+	            case JavapParser.T__6:
+	            case JavapParser.T__7:
+	            case JavapParser.T__8:
+	            case JavapParser.T__9:
+	            case JavapParser.T__10:
+	                this.state = 51;
+	                this.classOrInterface();
+	                break;
+	            default:
+	                throw new antlr4.error.NoViableAltException(this);
+	            }
+	            this.state = 56;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        }
+	        this.state = 58;
+	        this._errHandler.sync(this);
+	        var la_ = this._interp.adaptivePredict(this._input,2,this._ctx);
+	        if(la_===1) {
+	            this.state = 57;
+	            this.match(JavapParser.EOF);
+
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
 	}
-});
+
+
+
+	sourceDeclaration() {
+	    let localctx = new SourceDeclarationContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 2, JavapParser.RULE_sourceDeclaration);
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 60;
+	        this.match(JavapParser.T__0);
+	        this.state = 61;
+	        this.match(JavapParser.T__1);
+	        this.state = 65;
+	        this._errHandler.sync(this);
+	        var _alt = this._interp.adaptivePredict(this._input,3,this._ctx)
+	        while(_alt!=1 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+	            if(_alt===1+1) {
+	                this.state = 62;
+	                this.matchWildcard(); 
+	            }
+	            this.state = 67;
+	            this._errHandler.sync(this);
+	            _alt = this._interp.adaptivePredict(this._input,3,this._ctx);
+	        }
+
+	        this.state = 68;
+	        this.match(JavapParser.T__1);
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	classOrInterface() {
+	    let localctx = new ClassOrInterfaceContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 4, JavapParser.RULE_classOrInterface);
+	    try {
+	        this.state = 72;
+	        this._errHandler.sync(this);
+	        var la_ = this._interp.adaptivePredict(this._input,4,this._ctx);
+	        switch(la_) {
+	        case 1:
+	            this.enterOuterAlt(localctx, 1);
+	            this.state = 70;
+	            this.classDeclaration();
+	            break;
+
+	        case 2:
+	            this.enterOuterAlt(localctx, 2);
+	            this.state = 71;
+	            this.interfaceDeclaration();
+	            break;
+
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	classDeclaration() {
+	    let localctx = new ClassDeclarationContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 6, JavapParser.RULE_classDeclaration);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 77;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10))) !== 0)) {
+	            this.state = 74;
+	            this.classModifier();
+	            this.state = 79;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        }
+	        this.state = 80;
+	        this.match(JavapParser.T__2);
+	        this.state = 81;
+	        this.type();
+	        this.state = 84;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__3) {
+	            this.state = 82;
+	            this.match(JavapParser.T__3);
+	            this.state = 83;
+	            this.type();
+	        }
+
+	        this.state = 88;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__4) {
+	            this.state = 86;
+	            this.match(JavapParser.T__4);
+	            this.state = 87;
+	            this.typeList();
+	        }
+
+	        this.state = 90;
+	        this.classBody();
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	interfaceDeclaration() {
+	    let localctx = new InterfaceDeclarationContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 8, JavapParser.RULE_interfaceDeclaration);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 95;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8))) !== 0)) {
+	            this.state = 92;
+	            this.interfaceModifier();
+	            this.state = 97;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        }
+	        this.state = 98;
+	        this.match(JavapParser.T__5);
+	        this.state = 99;
+	        this.type();
+	        this.state = 102;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__3) {
+	            this.state = 100;
+	            this.match(JavapParser.T__3);
+	            this.state = 101;
+	            this.typeList();
+	        }
+
+	        this.state = 104;
+	        this.interfaceBody();
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	classModifier() {
+	    let localctx = new ClassModifierContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 10, JavapParser.RULE_classModifier);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 106;
+	        _la = this._input.LA(1);
+	        if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10))) !== 0))) {
+	        this._errHandler.recoverInline(this);
+	        }
+	        else {
+	        	this._errHandler.reportMatch(this);
+	            this.consume();
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	interfaceModifier() {
+	    let localctx = new InterfaceModifierContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 12, JavapParser.RULE_interfaceModifier);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 108;
+	        _la = this._input.LA(1);
+	        if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8))) !== 0))) {
+	        this._errHandler.recoverInline(this);
+	        }
+	        else {
+	        	this._errHandler.reportMatch(this);
+	            this.consume();
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	typeList() {
+	    let localctx = new TypeListContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 14, JavapParser.RULE_typeList);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 110;
+	        this.type();
+	        this.state = 115;
+	        this._errHandler.sync(this);
+	        var _alt = this._interp.adaptivePredict(this._input,10,this._ctx)
+	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+	            if(_alt===1) {
+	                this.state = 111;
+	                _la = this._input.LA(1);
+	                if(!(_la===JavapParser.T__11 || _la===JavapParser.T__12)) {
+	                this._errHandler.recoverInline(this);
+	                }
+	                else {
+	                	this._errHandler.reportMatch(this);
+	                    this.consume();
+	                }
+	                this.state = 112;
+	                this.type(); 
+	            }
+	            this.state = 117;
+	            this._errHandler.sync(this);
+	            _alt = this._interp.adaptivePredict(this._input,10,this._ctx);
+	        }
+
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	type() {
+	    let localctx = new TypeContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 16, JavapParser.RULE_type);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 121;
+	        this._errHandler.sync(this);
+	        var la_ = this._interp.adaptivePredict(this._input,11,this._ctx);
+	        if(la_===1) {
+	            this.state = 118;
+	            this.packageName();
+	            this.state = 119;
+	            this.match(JavapParser.T__13);
+
+	        }
+	        this.state = 123;
+	        this.match(JavapParser.Identifier);
+	        this.state = 125;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__14 || _la===JavapParser.T__34) {
+	            this.state = 124;
+	            this.typeArguments();
+	        }
+
+	        this.state = 128;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__13) {
+	            this.state = 127;
+	            this.subType();
+	        }
+
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	subType() {
+	    let localctx = new SubTypeContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 18, JavapParser.RULE_subType);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 130;
+	        this.match(JavapParser.T__13);
+	        this.state = 131;
+	        this.match(JavapParser.Identifier);
+	        this.state = 133;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__14 || _la===JavapParser.T__34) {
+	            this.state = 132;
+	            this.typeArguments();
+	        }
+
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	packageName() {
+	    let localctx = new PackageNameContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 20, JavapParser.RULE_packageName);
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 135;
+	        this.match(JavapParser.Identifier);
+	        this.state = 140;
+	        this._errHandler.sync(this);
+	        var _alt = this._interp.adaptivePredict(this._input,15,this._ctx)
+	        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
+	            if(_alt===1) {
+	                this.state = 136;
+	                this.match(JavapParser.T__13);
+	                this.state = 137;
+	                this.match(JavapParser.Identifier); 
+	            }
+	            this.state = 142;
+	            this._errHandler.sync(this);
+	            _alt = this._interp.adaptivePredict(this._input,15,this._ctx);
+	        }
+
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	typeArguments() {
+	    let localctx = new TypeArgumentsContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 22, JavapParser.RULE_typeArguments);
+	    var _la = 0; // Token type
+	    try {
+	        this.state = 164;
+	        this._errHandler.sync(this);
+	        switch(this._input.LA(1)) {
+	        case JavapParser.T__34:
+	            this.enterOuterAlt(localctx, 1);
+	            this.state = 144; 
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	            do {
+	                this.state = 143;
+	                this.arrayBrackets();
+	                this.state = 146; 
+	                this._errHandler.sync(this);
+	                _la = this._input.LA(1);
+	            } while(_la===JavapParser.T__34);
+	            break;
+	        case JavapParser.T__14:
+	            this.enterOuterAlt(localctx, 2);
+	            this.state = 148;
+	            this.match(JavapParser.T__14);
+	            this.state = 149;
+	            this.typeArgument();
+	            this.state = 154;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	            while(_la===JavapParser.T__11 || _la===JavapParser.T__12) {
+	                this.state = 150;
+	                _la = this._input.LA(1);
+	                if(!(_la===JavapParser.T__11 || _la===JavapParser.T__12)) {
+	                this._errHandler.recoverInline(this);
+	                }
+	                else {
+	                	this._errHandler.reportMatch(this);
+	                    this.consume();
+	                }
+	                this.state = 151;
+	                this.typeArgument();
+	                this.state = 156;
+	                this._errHandler.sync(this);
+	                _la = this._input.LA(1);
+	            }
+	            this.state = 157;
+	            this.match(JavapParser.T__15);
+	            this.state = 161;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	            while(_la===JavapParser.T__34) {
+	                this.state = 158;
+	                this.arrayBrackets();
+	                this.state = 163;
+	                this._errHandler.sync(this);
+	                _la = this._input.LA(1);
+	            }
+	            break;
+	        default:
+	            throw new antlr4.error.NoViableAltException(this);
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	typeArgument() {
+	    let localctx = new TypeArgumentContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 24, JavapParser.RULE_typeArgument);
+	    var _la = 0; // Token type
+	    try {
+	        this.state = 191;
+	        this._errHandler.sync(this);
+	        var la_ = this._interp.adaptivePredict(this._input,22,this._ctx);
+	        switch(la_) {
+	        case 1:
+	            this.enterOuterAlt(localctx, 1);
+	            this.state = 166;
+	            this.type();
+	            break;
+
+	        case 2:
+	            this.enterOuterAlt(localctx, 2);
+	            this.state = 167;
+	            this.match(JavapParser.Identifier);
+	            this.state = 168;
+	            this.match(JavapParser.T__3);
+	            this.state = 169;
+	            this.type();
+	            this.state = 174;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	            while(_la===JavapParser.T__16) {
+	                this.state = 170;
+	                this.match(JavapParser.T__16);
+	                this.state = 171;
+	                this.type();
+	                this.state = 176;
+	                this._errHandler.sync(this);
+	                _la = this._input.LA(1);
+	            }
+	            break;
+
+	        case 3:
+	            this.enterOuterAlt(localctx, 3);
+	            this.state = 177;
+	            this.match(JavapParser.T__17);
+	            this.state = 178;
+	            this.match(JavapParser.T__3);
+	            this.state = 179;
+	            this.type();
+	            this.state = 184;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	            while(_la===JavapParser.T__16) {
+	                this.state = 180;
+	                this.match(JavapParser.T__16);
+	                this.state = 181;
+	                this.type();
+	                this.state = 186;
+	                this._errHandler.sync(this);
+	                _la = this._input.LA(1);
+	            }
+	            break;
+
+	        case 4:
+	            this.enterOuterAlt(localctx, 4);
+	            this.state = 187;
+	            this.match(JavapParser.T__17);
+	            this.state = 188;
+	            this.match(JavapParser.T__18);
+	            this.state = 189;
+	            this.type();
+	            break;
+
+	        case 5:
+	            this.enterOuterAlt(localctx, 5);
+	            this.state = 190;
+	            this.match(JavapParser.T__17);
+	            break;
+
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	classBody() {
+	    let localctx = new ClassBodyContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 26, JavapParser.RULE_classBody);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 193;
+	        this.match(JavapParser.T__19);
+	        this.state = 197;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        while(((((_la - 7)) & ~0x1f) == 0 && ((1 << (_la - 7)) & ((1 << (JavapParser.T__6 - 7)) | (1 << (JavapParser.T__7 - 7)) | (1 << (JavapParser.T__8 - 7)) | (1 << (JavapParser.T__9 - 7)) | (1 << (JavapParser.T__10 - 7)) | (1 << (JavapParser.T__14 - 7)) | (1 << (JavapParser.T__21 - 7)) | (1 << (JavapParser.T__22 - 7)) | (1 << (JavapParser.T__23 - 7)) | (1 << (JavapParser.T__24 - 7)) | (1 << (JavapParser.T__25 - 7)) | (1 << (JavapParser.T__26 - 7)) | (1 << (JavapParser.T__27 - 7)) | (1 << (JavapParser.T__34 - 7)) | (1 << (JavapParser.Identifier - 7)))) !== 0)) {
+	            this.state = 194;
+	            this.classMember();
+	            this.state = 199;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        }
+	        this.state = 200;
+	        this.match(JavapParser.T__20);
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	interfaceBody() {
+	    let localctx = new InterfaceBodyContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 28, JavapParser.RULE_interfaceBody);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 202;
+	        this.match(JavapParser.T__19);
+	        this.state = 206;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        while(((((_la - 7)) & ~0x1f) == 0 && ((1 << (_la - 7)) & ((1 << (JavapParser.T__6 - 7)) | (1 << (JavapParser.T__7 - 7)) | (1 << (JavapParser.T__8 - 7)) | (1 << (JavapParser.T__9 - 7)) | (1 << (JavapParser.T__10 - 7)) | (1 << (JavapParser.T__14 - 7)) | (1 << (JavapParser.T__21 - 7)) | (1 << (JavapParser.T__22 - 7)) | (1 << (JavapParser.T__23 - 7)) | (1 << (JavapParser.T__24 - 7)) | (1 << (JavapParser.T__25 - 7)) | (1 << (JavapParser.T__26 - 7)) | (1 << (JavapParser.T__27 - 7)) | (1 << (JavapParser.T__34 - 7)) | (1 << (JavapParser.Identifier - 7)))) !== 0)) {
+	            this.state = 203;
+	            this.interfaceMember();
+	            this.state = 208;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        }
+	        this.state = 209;
+	        this.match(JavapParser.T__20);
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	modifier() {
+	    let localctx = new ModifierContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 30, JavapParser.RULE_modifier);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 211;
+	        _la = this._input.LA(1);
+	        if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10) | (1 << JavapParser.T__21) | (1 << JavapParser.T__22) | (1 << JavapParser.T__23) | (1 << JavapParser.T__24) | (1 << JavapParser.T__25) | (1 << JavapParser.T__26) | (1 << JavapParser.T__27))) !== 0))) {
+	        this._errHandler.recoverInline(this);
+	        }
+	        else {
+	        	this._errHandler.reportMatch(this);
+	            this.consume();
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	classMember() {
+	    let localctx = new ClassMemberContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 32, JavapParser.RULE_classMember);
+	    try {
+	        this.state = 219;
+	        this._errHandler.sync(this);
+	        var la_ = this._interp.adaptivePredict(this._input,25,this._ctx);
+	        switch(la_) {
+	        case 1:
+	            this.enterOuterAlt(localctx, 1);
+	            this.state = 213;
+	            this.constructorDeclaration();
+	            break;
+
+	        case 2:
+	            this.enterOuterAlt(localctx, 2);
+	            this.state = 214;
+	            this.fieldDeclaration();
+	            break;
+
+	        case 3:
+	            this.enterOuterAlt(localctx, 3);
+	            this.state = 215;
+	            this.methodDeclaration();
+	            break;
+
+	        case 4:
+	            this.enterOuterAlt(localctx, 4);
+	            this.state = 216;
+	            this.match(JavapParser.T__23);
+	            this.state = 217;
+	            this.match(JavapParser.T__28);
+	            this.state = 218;
+	            this.match(JavapParser.T__29);
+	            break;
+
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	interfaceMember() {
+	    let localctx = new InterfaceMemberContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 34, JavapParser.RULE_interfaceMember);
+	    try {
+	        this.state = 226;
+	        this._errHandler.sync(this);
+	        var la_ = this._interp.adaptivePredict(this._input,26,this._ctx);
+	        switch(la_) {
+	        case 1:
+	            this.enterOuterAlt(localctx, 1);
+	            this.state = 221;
+	            this.fieldDeclaration();
+	            break;
+
+	        case 2:
+	            this.enterOuterAlt(localctx, 2);
+	            this.state = 222;
+	            this.methodDeclaration();
+	            break;
+
+	        case 3:
+	            this.enterOuterAlt(localctx, 3);
+	            this.state = 223;
+	            this.match(JavapParser.T__23);
+	            this.state = 224;
+	            this.match(JavapParser.T__28);
+	            this.state = 225;
+	            this.match(JavapParser.T__29);
+	            break;
+
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	constructorDeclaration() {
+	    let localctx = new ConstructorDeclarationContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 36, JavapParser.RULE_constructorDeclaration);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 231;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10) | (1 << JavapParser.T__21) | (1 << JavapParser.T__22) | (1 << JavapParser.T__23) | (1 << JavapParser.T__24) | (1 << JavapParser.T__25) | (1 << JavapParser.T__26) | (1 << JavapParser.T__27))) !== 0)) {
+	            this.state = 228;
+	            this.modifier();
+	            this.state = 233;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        }
+	        this.state = 235;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__14 || _la===JavapParser.T__34) {
+	            this.state = 234;
+	            this.typeArguments();
+	        }
+
+	        this.state = 237;
+	        this.type();
+	        this.state = 238;
+	        this.match(JavapParser.T__30);
+	        this.state = 239;
+	        this.methodArguments();
+	        this.state = 240;
+	        this.match(JavapParser.T__31);
+	        this.state = 242;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__32) {
+	            this.state = 241;
+	            this.throwsException();
+	        }
+
+	        this.state = 244;
+	        this.match(JavapParser.T__29);
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	fieldDeclaration() {
+	    let localctx = new FieldDeclarationContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 38, JavapParser.RULE_fieldDeclaration);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 249;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10) | (1 << JavapParser.T__21) | (1 << JavapParser.T__22) | (1 << JavapParser.T__23) | (1 << JavapParser.T__24) | (1 << JavapParser.T__25) | (1 << JavapParser.T__26) | (1 << JavapParser.T__27))) !== 0)) {
+	            this.state = 246;
+	            this.modifier();
+	            this.state = 251;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        }
+	        this.state = 252;
+	        this.type();
+	        this.state = 253;
+	        this.match(JavapParser.Identifier);
+	        this.state = 254;
+	        this.match(JavapParser.T__29);
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	methodDeclaration() {
+	    let localctx = new MethodDeclarationContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 40, JavapParser.RULE_methodDeclaration);
+	    var _la = 0; // Token type
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 259;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10) | (1 << JavapParser.T__21) | (1 << JavapParser.T__22) | (1 << JavapParser.T__23) | (1 << JavapParser.T__24) | (1 << JavapParser.T__25) | (1 << JavapParser.T__26) | (1 << JavapParser.T__27))) !== 0)) {
+	            this.state = 256;
+	            this.modifier();
+	            this.state = 261;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	        }
+	        this.state = 263;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__14 || _la===JavapParser.T__34) {
+	            this.state = 262;
+	            this.typeArguments();
+	        }
+
+	        this.state = 265;
+	        this.type();
+	        this.state = 266;
+	        this.match(JavapParser.Identifier);
+	        this.state = 267;
+	        this.match(JavapParser.T__30);
+	        this.state = 268;
+	        this.methodArguments();
+	        this.state = 269;
+	        this.match(JavapParser.T__31);
+	        this.state = 271;
+	        this._errHandler.sync(this);
+	        _la = this._input.LA(1);
+	        if(_la===JavapParser.T__32) {
+	            this.state = 270;
+	            this.throwsException();
+	        }
+
+	        this.state = 273;
+	        this.match(JavapParser.T__29);
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	throwsException() {
+	    let localctx = new ThrowsExceptionContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 42, JavapParser.RULE_throwsException);
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 275;
+	        this.match(JavapParser.T__32);
+	        this.state = 276;
+	        this.typeList();
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	varargs() {
+	    let localctx = new VarargsContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 44, JavapParser.RULE_varargs);
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 278;
+	        this.type();
+	        this.state = 279;
+	        this.match(JavapParser.T__33);
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	methodArguments() {
+	    let localctx = new MethodArgumentsContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 46, JavapParser.RULE_methodArguments);
+	    var _la = 0; // Token type
+	    try {
+	        this.state = 289;
+	        this._errHandler.sync(this);
+	        var la_ = this._interp.adaptivePredict(this._input,35,this._ctx);
+	        switch(la_) {
+	        case 1:
+	            this.enterOuterAlt(localctx, 1);
+	            this.state = 282;
+	            this._errHandler.sync(this);
+	            _la = this._input.LA(1);
+	            if(_la===JavapParser.Identifier) {
+	                this.state = 281;
+	                this.typeList();
+	            }
+
+	            break;
+
+	        case 2:
+	            this.enterOuterAlt(localctx, 2);
+	            this.state = 284;
+	            this.typeList();
+	            this.state = 285;
+	            _la = this._input.LA(1);
+	            if(!(_la===JavapParser.T__11 || _la===JavapParser.T__12)) {
+	            this._errHandler.recoverInline(this);
+	            }
+	            else {
+	            	this._errHandler.reportMatch(this);
+	                this.consume();
+	            }
+	            this.state = 286;
+	            this.varargs();
+	            break;
+
+	        case 3:
+	            this.enterOuterAlt(localctx, 3);
+	            this.state = 288;
+	            this.varargs();
+	            break;
+
+	        }
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+
+	arrayBrackets() {
+	    let localctx = new ArrayBracketsContext(this, this._ctx, this.state);
+	    this.enterRule(localctx, 48, JavapParser.RULE_arrayBrackets);
+	    try {
+	        this.enterOuterAlt(localctx, 1);
+	        this.state = 291;
+	        this.match(JavapParser.T__34);
+	    } catch (re) {
+	    	if(re instanceof antlr4.error.RecognitionException) {
+		        localctx.exception = re;
+		        this._errHandler.reportError(this, re);
+		        this._errHandler.recover(this, re);
+		    } else {
+		    	throw re;
+		    }
+	    } finally {
+	        this.exitRule();
+	    }
+	    return localctx;
+	}
+
+
+}
 
 JavapParser.EOF = antlr4.Token.EOF;
 JavapParser.T__0 = 1;
@@ -313,2450 +1446,1315 @@ JavapParser.RULE_varargs = 22;
 JavapParser.RULE_methodArguments = 23;
 JavapParser.RULE_arrayBrackets = 24;
 
-function CompilationUnitContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+class CompilationUnitContext extends antlr4.ParserRuleContext {
+
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
+        }
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_compilationUnit;
+    }
+
+	sourceDeclaration = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(SourceDeclarationContext);
+	    } else {
+	        return this.getTypedRuleContext(SourceDeclarationContext,i);
+	    }
+	};
+
+	classOrInterface = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(ClassOrInterfaceContext);
+	    } else {
+	        return this.getTypedRuleContext(ClassOrInterfaceContext,i);
+	    }
+	};
+
+	EOF() {
+	    return this.getToken(JavapParser.EOF, 0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterCompilationUnit(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitCompilationUnit(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_compilationUnit;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitCompilationUnit(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-CompilationUnitContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-CompilationUnitContext.prototype.constructor = CompilationUnitContext;
-
-CompilationUnitContext.prototype.sourceDeclaration = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(SourceDeclarationContext);
-    } else {
-        return this.getTypedRuleContext(SourceDeclarationContext,i);
-    }
-};
-
-CompilationUnitContext.prototype.classOrInterface = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(ClassOrInterfaceContext);
-    } else {
-        return this.getTypedRuleContext(ClassOrInterfaceContext,i);
-    }
-};
-
-CompilationUnitContext.prototype.EOF = function() {
-    return this.getToken(JavapParser.EOF, 0);
-};
-
-CompilationUnitContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterCompilationUnit(this);
-	}
-};
-
-CompilationUnitContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitCompilationUnit(this);
-	}
-};
-
-CompilationUnitContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitCompilationUnit(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class SourceDeclarationContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.CompilationUnitContext = CompilationUnitContext;
-
-JavapParser.prototype.compilationUnit = function() {
-
-    var localctx = new CompilationUnitContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 0, JavapParser.RULE_compilationUnit);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 54;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__0) | (1 << JavapParser.T__2) | (1 << JavapParser.T__5) | (1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10))) !== 0)) {
-            this.state = 52;
-            this._errHandler.sync(this);
-            switch(this._input.LA(1)) {
-            case JavapParser.T__0:
-                this.state = 50;
-                this.sourceDeclaration();
-                break;
-            case JavapParser.T__2:
-            case JavapParser.T__5:
-            case JavapParser.T__6:
-            case JavapParser.T__7:
-            case JavapParser.T__8:
-            case JavapParser.T__9:
-            case JavapParser.T__10:
-                this.state = 51;
-                this.classOrInterface();
-                break;
-            default:
-                throw new antlr4.error.NoViableAltException(this);
-            }
-            this.state = 56;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-        this.state = 58;
-        this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,2,this._ctx);
-        if(la_===1) {
-            this.state = 57;
-            this.match(JavapParser.EOF);
-
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
         }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_sourceDeclaration;
+    }
+
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterSourceDeclaration(this);
+		}
+	}
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitSourceDeclaration(this);
+		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitSourceDeclaration(this);
 	    } else {
-	    	throw re;
+	        return visitor.visitChildren(this);
 	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
+	}
 
-function SourceDeclarationContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_sourceDeclaration;
-    return this;
+
 }
 
-SourceDeclarationContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-SourceDeclarationContext.prototype.constructor = SourceDeclarationContext;
 
 
-SourceDeclarationContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterSourceDeclaration(this);
-	}
-};
+class ClassOrInterfaceContext extends antlr4.ParserRuleContext {
 
-SourceDeclarationContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitSourceDeclaration(this);
-	}
-};
-
-SourceDeclarationContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitSourceDeclaration(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
-
-
-
-
-JavapParser.SourceDeclarationContext = SourceDeclarationContext;
-
-JavapParser.prototype.sourceDeclaration = function() {
-
-    var localctx = new SourceDeclarationContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 2, JavapParser.RULE_sourceDeclaration);
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 60;
-        this.match(JavapParser.T__0);
-        this.state = 61;
-        this.match(JavapParser.T__1);
-        this.state = 65;
-        this._errHandler.sync(this);
-        var _alt = this._interp.adaptivePredict(this._input,3,this._ctx)
-        while(_alt!=1 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-            if(_alt===1+1) {
-                this.state = 62;
-                this.matchWildcard(); 
-            }
-            this.state = 67;
-            this._errHandler.sync(this);
-            _alt = this._interp.adaptivePredict(this._input,3,this._ctx);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-
-        this.state = 68;
-        this.match(JavapParser.T__1);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_classOrInterface;
     }
-    return localctx;
-};
 
-function ClassOrInterfaceContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	classDeclaration() {
+	    return this.getTypedRuleContext(ClassDeclarationContext,0);
+	};
+
+	interfaceDeclaration() {
+	    return this.getTypedRuleContext(InterfaceDeclarationContext,0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterClassOrInterface(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitClassOrInterface(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_classOrInterface;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitClassOrInterface(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-ClassOrInterfaceContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ClassOrInterfaceContext.prototype.constructor = ClassOrInterfaceContext;
-
-ClassOrInterfaceContext.prototype.classDeclaration = function() {
-    return this.getTypedRuleContext(ClassDeclarationContext,0);
-};
-
-ClassOrInterfaceContext.prototype.interfaceDeclaration = function() {
-    return this.getTypedRuleContext(InterfaceDeclarationContext,0);
-};
-
-ClassOrInterfaceContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterClassOrInterface(this);
-	}
-};
-
-ClassOrInterfaceContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitClassOrInterface(this);
-	}
-};
-
-ClassOrInterfaceContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitClassOrInterface(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class ClassDeclarationContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.ClassOrInterfaceContext = ClassOrInterfaceContext;
-
-JavapParser.prototype.classOrInterface = function() {
-
-    var localctx = new ClassOrInterfaceContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 4, JavapParser.RULE_classOrInterface);
-    try {
-        this.state = 72;
-        this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,4,this._ctx);
-        switch(la_) {
-        case 1:
-            this.enterOuterAlt(localctx, 1);
-            this.state = 70;
-            this.classDeclaration();
-            break;
-
-        case 2:
-            this.enterOuterAlt(localctx, 2);
-            this.state = 71;
-            this.interfaceDeclaration();
-            break;
-
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_classDeclaration;
     }
-    return localctx;
-};
 
-function ClassDeclarationContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	type = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(TypeContext);
+	    } else {
+	        return this.getTypedRuleContext(TypeContext,i);
+	    }
+	};
+
+	classBody() {
+	    return this.getTypedRuleContext(ClassBodyContext,0);
+	};
+
+	classModifier = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(ClassModifierContext);
+	    } else {
+	        return this.getTypedRuleContext(ClassModifierContext,i);
+	    }
+	};
+
+	typeList() {
+	    return this.getTypedRuleContext(TypeListContext,0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterClassDeclaration(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitClassDeclaration(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_classDeclaration;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitClassDeclaration(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-ClassDeclarationContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ClassDeclarationContext.prototype.constructor = ClassDeclarationContext;
-
-ClassDeclarationContext.prototype.type = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(TypeContext);
-    } else {
-        return this.getTypedRuleContext(TypeContext,i);
-    }
-};
-
-ClassDeclarationContext.prototype.classBody = function() {
-    return this.getTypedRuleContext(ClassBodyContext,0);
-};
-
-ClassDeclarationContext.prototype.classModifier = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(ClassModifierContext);
-    } else {
-        return this.getTypedRuleContext(ClassModifierContext,i);
-    }
-};
-
-ClassDeclarationContext.prototype.typeList = function() {
-    return this.getTypedRuleContext(TypeListContext,0);
-};
-
-ClassDeclarationContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterClassDeclaration(this);
-	}
-};
-
-ClassDeclarationContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitClassDeclaration(this);
-	}
-};
-
-ClassDeclarationContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitClassDeclaration(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class InterfaceDeclarationContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.ClassDeclarationContext = ClassDeclarationContext;
-
-JavapParser.prototype.classDeclaration = function() {
-
-    var localctx = new ClassDeclarationContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 6, JavapParser.RULE_classDeclaration);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 77;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10))) !== 0)) {
-            this.state = 74;
-            this.classModifier();
-            this.state = 79;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-        this.state = 80;
-        this.match(JavapParser.T__2);
-        this.state = 81;
-        this.type();
-        this.state = 84;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__3) {
-            this.state = 82;
-            this.match(JavapParser.T__3);
-            this.state = 83;
-            this.type();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
         }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_interfaceDeclaration;
+    }
 
-        this.state = 88;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__4) {
-            this.state = 86;
-            this.match(JavapParser.T__4);
-            this.state = 87;
-            this.typeList();
-        }
+	type() {
+	    return this.getTypedRuleContext(TypeContext,0);
+	};
 
-        this.state = 90;
-        this.classBody();
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
+	interfaceBody() {
+	    return this.getTypedRuleContext(InterfaceBodyContext,0);
+	};
+
+	interfaceModifier = function(i) {
+	    if(i===undefined) {
+	        i = null;
 	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
+	    if(i===null) {
+	        return this.getTypedRuleContexts(InterfaceModifierContext);
+	    } else {
+	        return this.getTypedRuleContext(InterfaceModifierContext,i);
+	    }
+	};
 
-function InterfaceDeclarationContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	typeList() {
+	    return this.getTypedRuleContext(TypeListContext,0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterInterfaceDeclaration(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitInterfaceDeclaration(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_interfaceDeclaration;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitInterfaceDeclaration(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-InterfaceDeclarationContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-InterfaceDeclarationContext.prototype.constructor = InterfaceDeclarationContext;
-
-InterfaceDeclarationContext.prototype.type = function() {
-    return this.getTypedRuleContext(TypeContext,0);
-};
-
-InterfaceDeclarationContext.prototype.interfaceBody = function() {
-    return this.getTypedRuleContext(InterfaceBodyContext,0);
-};
-
-InterfaceDeclarationContext.prototype.interfaceModifier = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(InterfaceModifierContext);
-    } else {
-        return this.getTypedRuleContext(InterfaceModifierContext,i);
-    }
-};
-
-InterfaceDeclarationContext.prototype.typeList = function() {
-    return this.getTypedRuleContext(TypeListContext,0);
-};
-
-InterfaceDeclarationContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterInterfaceDeclaration(this);
-	}
-};
-
-InterfaceDeclarationContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitInterfaceDeclaration(this);
-	}
-};
-
-InterfaceDeclarationContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitInterfaceDeclaration(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class ClassModifierContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.InterfaceDeclarationContext = InterfaceDeclarationContext;
-
-JavapParser.prototype.interfaceDeclaration = function() {
-
-    var localctx = new InterfaceDeclarationContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 8, JavapParser.RULE_interfaceDeclaration);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 95;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8))) !== 0)) {
-            this.state = 92;
-            this.interfaceModifier();
-            this.state = 97;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-        this.state = 98;
-        this.match(JavapParser.T__5);
-        this.state = 99;
-        this.type();
-        this.state = 102;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__3) {
-            this.state = 100;
-            this.match(JavapParser.T__3);
-            this.state = 101;
-            this.typeList();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
         }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_classModifier;
+    }
 
-        this.state = 104;
-        this.interfaceBody();
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterClassModifier(this);
+		}
+	}
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitClassModifier(this);
+		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitClassModifier(this);
 	    } else {
-	    	throw re;
+	        return visitor.visitChildren(this);
 	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
+	}
 
-function ClassModifierContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_classModifier;
-    return this;
+
 }
 
-ClassModifierContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ClassModifierContext.prototype.constructor = ClassModifierContext;
 
 
-ClassModifierContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterClassModifier(this);
-	}
-};
+class InterfaceModifierContext extends antlr4.ParserRuleContext {
 
-ClassModifierContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitClassModifier(this);
-	}
-};
-
-ClassModifierContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitClassModifier(this);
-    } else {
-        return visitor.visitChildren(this);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
+        }
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_interfaceModifier;
     }
-};
 
 
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterInterfaceModifier(this);
+		}
+	}
 
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitInterfaceModifier(this);
+		}
+	}
 
-JavapParser.ClassModifierContext = ClassModifierContext;
-
-JavapParser.prototype.classModifier = function() {
-
-    var localctx = new ClassModifierContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 10, JavapParser.RULE_classModifier);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 106;
-        _la = this._input.LA(1);
-        if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10))) !== 0))) {
-        this._errHandler.recoverInline(this);
-        }
-        else {
-        	this._errHandler.reportMatch(this);
-            this.consume();
-        }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitInterfaceModifier(this);
 	    } else {
-	    	throw re;
+	        return visitor.visitChildren(this);
 	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
+	}
 
-function InterfaceModifierContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_interfaceModifier;
-    return this;
+
 }
 
-InterfaceModifierContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-InterfaceModifierContext.prototype.constructor = InterfaceModifierContext;
 
 
-InterfaceModifierContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterInterfaceModifier(this);
-	}
-};
+class TypeListContext extends antlr4.ParserRuleContext {
 
-InterfaceModifierContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitInterfaceModifier(this);
-	}
-};
-
-InterfaceModifierContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitInterfaceModifier(this);
-    } else {
-        return visitor.visitChildren(this);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
+        }
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_typeList;
     }
-};
 
-
-
-
-JavapParser.InterfaceModifierContext = InterfaceModifierContext;
-
-JavapParser.prototype.interfaceModifier = function() {
-
-    var localctx = new InterfaceModifierContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 12, JavapParser.RULE_interfaceModifier);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 108;
-        _la = this._input.LA(1);
-        if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8))) !== 0))) {
-        this._errHandler.recoverInline(this);
-        }
-        else {
-        	this._errHandler.reportMatch(this);
-            this.consume();
-        }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
+	type = function(i) {
+	    if(i===undefined) {
+	        i = null;
 	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
+	    if(i===null) {
+	        return this.getTypedRuleContexts(TypeContext);
+	    } else {
+	        return this.getTypedRuleContext(TypeContext,i);
+	    }
+	};
 
-function TypeListContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterTypeList(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitTypeList(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_typeList;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitTypeList(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-TypeListContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-TypeListContext.prototype.constructor = TypeListContext;
-
-TypeListContext.prototype.type = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(TypeContext);
-    } else {
-        return this.getTypedRuleContext(TypeContext,i);
-    }
-};
-
-TypeListContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterTypeList(this);
-	}
-};
-
-TypeListContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitTypeList(this);
-	}
-};
-
-TypeListContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitTypeList(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class TypeContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.TypeListContext = TypeListContext;
-
-JavapParser.prototype.typeList = function() {
-
-    var localctx = new TypeListContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 14, JavapParser.RULE_typeList);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 110;
-        this.type();
-        this.state = 115;
-        this._errHandler.sync(this);
-        var _alt = this._interp.adaptivePredict(this._input,10,this._ctx)
-        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-            if(_alt===1) {
-                this.state = 111;
-                _la = this._input.LA(1);
-                if(!(_la===JavapParser.T__11 || _la===JavapParser.T__12)) {
-                this._errHandler.recoverInline(this);
-                }
-                else {
-                	this._errHandler.reportMatch(this);
-                    this.consume();
-                }
-                this.state = 112;
-                this.type(); 
-            }
-            this.state = 117;
-            this._errHandler.sync(this);
-            _alt = this._interp.adaptivePredict(this._input,10,this._ctx);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_type;
     }
-    return localctx;
-};
 
-function TypeContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	Identifier() {
+	    return this.getToken(JavapParser.Identifier, 0);
+	};
+
+	packageName() {
+	    return this.getTypedRuleContext(PackageNameContext,0);
+	};
+
+	typeArguments() {
+	    return this.getTypedRuleContext(TypeArgumentsContext,0);
+	};
+
+	subType() {
+	    return this.getTypedRuleContext(SubTypeContext,0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterType(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitType(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_type;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitType(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-TypeContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-TypeContext.prototype.constructor = TypeContext;
 
-TypeContext.prototype.Identifier = function() {
-    return this.getToken(JavapParser.Identifier, 0);
-};
 
-TypeContext.prototype.packageName = function() {
-    return this.getTypedRuleContext(PackageNameContext,0);
-};
+class SubTypeContext extends antlr4.ParserRuleContext {
 
-TypeContext.prototype.typeArguments = function() {
-    return this.getTypedRuleContext(TypeArgumentsContext,0);
-};
-
-TypeContext.prototype.subType = function() {
-    return this.getTypedRuleContext(SubTypeContext,0);
-};
-
-TypeContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterType(this);
-	}
-};
-
-TypeContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitType(this);
-	}
-};
-
-TypeContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitType(this);
-    } else {
-        return visitor.visitChildren(this);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
+        }
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_subType;
     }
-};
 
+	Identifier() {
+	    return this.getToken(JavapParser.Identifier, 0);
+	};
 
+	typeArguments() {
+	    return this.getTypedRuleContext(TypeArgumentsContext,0);
+	};
 
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterSubType(this);
+		}
+	}
 
-JavapParser.TypeContext = TypeContext;
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitSubType(this);
+		}
+	}
 
-JavapParser.prototype.type = function() {
-
-    var localctx = new TypeContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 16, JavapParser.RULE_type);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 121;
-        this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,11,this._ctx);
-        if(la_===1) {
-            this.state = 118;
-            this.packageName();
-            this.state = 119;
-            this.match(JavapParser.T__13);
-
-        }
-        this.state = 123;
-        this.match(JavapParser.Identifier);
-        this.state = 125;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__14 || _la===JavapParser.T__34) {
-            this.state = 124;
-            this.typeArguments();
-        }
-
-        this.state = 128;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__13) {
-            this.state = 127;
-            this.subType();
-        }
-
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitSubType(this);
 	    } else {
-	    	throw re;
+	        return visitor.visitChildren(this);
 	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
+	}
 
-function SubTypeContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_subType;
-    return this;
+
 }
 
-SubTypeContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-SubTypeContext.prototype.constructor = SubTypeContext;
-
-SubTypeContext.prototype.Identifier = function() {
-    return this.getToken(JavapParser.Identifier, 0);
-};
-
-SubTypeContext.prototype.typeArguments = function() {
-    return this.getTypedRuleContext(TypeArgumentsContext,0);
-};
-
-SubTypeContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterSubType(this);
-	}
-};
-
-SubTypeContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitSubType(this);
-	}
-};
-
-SubTypeContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitSubType(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class PackageNameContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.SubTypeContext = SubTypeContext;
-
-JavapParser.prototype.subType = function() {
-
-    var localctx = new SubTypeContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 18, JavapParser.RULE_subType);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 130;
-        this.match(JavapParser.T__13);
-        this.state = 131;
-        this.match(JavapParser.Identifier);
-        this.state = 133;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__14 || _la===JavapParser.T__34) {
-            this.state = 132;
-            this.typeArguments();
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_packageName;
     }
-    return localctx;
-};
 
-function PackageNameContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	Identifier = function(i) {
+		if(i===undefined) {
+			i = null;
+		}
+	    if(i===null) {
+	        return this.getTokens(JavapParser.Identifier);
+	    } else {
+	        return this.getToken(JavapParser.Identifier, i);
+	    }
+	};
+
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterPackageName(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitPackageName(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_packageName;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitPackageName(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-PackageNameContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-PackageNameContext.prototype.constructor = PackageNameContext;
-
-PackageNameContext.prototype.Identifier = function(i) {
-	if(i===undefined) {
-		i = null;
-	}
-    if(i===null) {
-        return this.getTokens(JavapParser.Identifier);
-    } else {
-        return this.getToken(JavapParser.Identifier, i);
-    }
-};
 
 
-PackageNameContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterPackageName(this);
-	}
-};
+class TypeArgumentsContext extends antlr4.ParserRuleContext {
 
-PackageNameContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitPackageName(this);
-	}
-};
-
-PackageNameContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitPackageName(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
-
-
-
-
-JavapParser.PackageNameContext = PackageNameContext;
-
-JavapParser.prototype.packageName = function() {
-
-    var localctx = new PackageNameContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 20, JavapParser.RULE_packageName);
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 135;
-        this.match(JavapParser.Identifier);
-        this.state = 140;
-        this._errHandler.sync(this);
-        var _alt = this._interp.adaptivePredict(this._input,15,this._ctx)
-        while(_alt!=2 && _alt!=antlr4.atn.ATN.INVALID_ALT_NUMBER) {
-            if(_alt===1) {
-                this.state = 136;
-                this.match(JavapParser.T__13);
-                this.state = 137;
-                this.match(JavapParser.Identifier); 
-            }
-            this.state = 142;
-            this._errHandler.sync(this);
-            _alt = this._interp.adaptivePredict(this._input,15,this._ctx);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_typeArguments;
     }
-    return localctx;
-};
 
-function TypeArgumentsContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	arrayBrackets = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(ArrayBracketsContext);
+	    } else {
+	        return this.getTypedRuleContext(ArrayBracketsContext,i);
+	    }
+	};
+
+	typeArgument = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(TypeArgumentContext);
+	    } else {
+	        return this.getTypedRuleContext(TypeArgumentContext,i);
+	    }
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterTypeArguments(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitTypeArguments(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_typeArguments;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitTypeArguments(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-TypeArgumentsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-TypeArgumentsContext.prototype.constructor = TypeArgumentsContext;
-
-TypeArgumentsContext.prototype.arrayBrackets = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(ArrayBracketsContext);
-    } else {
-        return this.getTypedRuleContext(ArrayBracketsContext,i);
-    }
-};
-
-TypeArgumentsContext.prototype.typeArgument = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(TypeArgumentContext);
-    } else {
-        return this.getTypedRuleContext(TypeArgumentContext,i);
-    }
-};
-
-TypeArgumentsContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterTypeArguments(this);
-	}
-};
-
-TypeArgumentsContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitTypeArguments(this);
-	}
-};
-
-TypeArgumentsContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitTypeArguments(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class TypeArgumentContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.TypeArgumentsContext = TypeArgumentsContext;
-
-JavapParser.prototype.typeArguments = function() {
-
-    var localctx = new TypeArgumentsContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 22, JavapParser.RULE_typeArguments);
-    var _la = 0; // Token type
-    try {
-        this.state = 164;
-        this._errHandler.sync(this);
-        switch(this._input.LA(1)) {
-        case JavapParser.T__34:
-            this.enterOuterAlt(localctx, 1);
-            this.state = 144; 
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
-            do {
-                this.state = 143;
-                this.arrayBrackets();
-                this.state = 146; 
-                this._errHandler.sync(this);
-                _la = this._input.LA(1);
-            } while(_la===JavapParser.T__34);
-            break;
-        case JavapParser.T__14:
-            this.enterOuterAlt(localctx, 2);
-            this.state = 148;
-            this.match(JavapParser.T__14);
-            this.state = 149;
-            this.typeArgument();
-            this.state = 154;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
-            while(_la===JavapParser.T__11 || _la===JavapParser.T__12) {
-                this.state = 150;
-                _la = this._input.LA(1);
-                if(!(_la===JavapParser.T__11 || _la===JavapParser.T__12)) {
-                this._errHandler.recoverInline(this);
-                }
-                else {
-                	this._errHandler.reportMatch(this);
-                    this.consume();
-                }
-                this.state = 151;
-                this.typeArgument();
-                this.state = 156;
-                this._errHandler.sync(this);
-                _la = this._input.LA(1);
-            }
-            this.state = 157;
-            this.match(JavapParser.T__15);
-            this.state = 161;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
-            while(_la===JavapParser.T__34) {
-                this.state = 158;
-                this.arrayBrackets();
-                this.state = 163;
-                this._errHandler.sync(this);
-                _la = this._input.LA(1);
-            }
-            break;
-        default:
-            throw new antlr4.error.NoViableAltException(this);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_typeArgument;
     }
-    return localctx;
-};
 
-function TypeArgumentContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	type = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(TypeContext);
+	    } else {
+	        return this.getTypedRuleContext(TypeContext,i);
+	    }
+	};
+
+	Identifier() {
+	    return this.getToken(JavapParser.Identifier, 0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterTypeArgument(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitTypeArgument(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_typeArgument;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitTypeArgument(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-TypeArgumentContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-TypeArgumentContext.prototype.constructor = TypeArgumentContext;
-
-TypeArgumentContext.prototype.type = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(TypeContext);
-    } else {
-        return this.getTypedRuleContext(TypeContext,i);
-    }
-};
-
-TypeArgumentContext.prototype.Identifier = function() {
-    return this.getToken(JavapParser.Identifier, 0);
-};
-
-TypeArgumentContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterTypeArgument(this);
-	}
-};
-
-TypeArgumentContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitTypeArgument(this);
-	}
-};
-
-TypeArgumentContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitTypeArgument(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class ClassBodyContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.TypeArgumentContext = TypeArgumentContext;
-
-JavapParser.prototype.typeArgument = function() {
-
-    var localctx = new TypeArgumentContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 24, JavapParser.RULE_typeArgument);
-    var _la = 0; // Token type
-    try {
-        this.state = 191;
-        this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,22,this._ctx);
-        switch(la_) {
-        case 1:
-            this.enterOuterAlt(localctx, 1);
-            this.state = 166;
-            this.type();
-            break;
-
-        case 2:
-            this.enterOuterAlt(localctx, 2);
-            this.state = 167;
-            this.match(JavapParser.Identifier);
-            this.state = 168;
-            this.match(JavapParser.T__3);
-            this.state = 169;
-            this.type();
-            this.state = 174;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
-            while(_la===JavapParser.T__16) {
-                this.state = 170;
-                this.match(JavapParser.T__16);
-                this.state = 171;
-                this.type();
-                this.state = 176;
-                this._errHandler.sync(this);
-                _la = this._input.LA(1);
-            }
-            break;
-
-        case 3:
-            this.enterOuterAlt(localctx, 3);
-            this.state = 177;
-            this.match(JavapParser.T__17);
-            this.state = 178;
-            this.match(JavapParser.T__3);
-            this.state = 179;
-            this.type();
-            this.state = 184;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
-            while(_la===JavapParser.T__16) {
-                this.state = 180;
-                this.match(JavapParser.T__16);
-                this.state = 181;
-                this.type();
-                this.state = 186;
-                this._errHandler.sync(this);
-                _la = this._input.LA(1);
-            }
-            break;
-
-        case 4:
-            this.enterOuterAlt(localctx, 4);
-            this.state = 187;
-            this.match(JavapParser.T__17);
-            this.state = 188;
-            this.match(JavapParser.T__18);
-            this.state = 189;
-            this.type();
-            break;
-
-        case 5:
-            this.enterOuterAlt(localctx, 5);
-            this.state = 190;
-            this.match(JavapParser.T__17);
-            break;
-
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_classBody;
     }
-    return localctx;
-};
 
-function ClassBodyContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	classMember = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(ClassMemberContext);
+	    } else {
+	        return this.getTypedRuleContext(ClassMemberContext,i);
+	    }
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterClassBody(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitClassBody(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_classBody;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitClassBody(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-ClassBodyContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ClassBodyContext.prototype.constructor = ClassBodyContext;
-
-ClassBodyContext.prototype.classMember = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(ClassMemberContext);
-    } else {
-        return this.getTypedRuleContext(ClassMemberContext,i);
-    }
-};
-
-ClassBodyContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterClassBody(this);
-	}
-};
-
-ClassBodyContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitClassBody(this);
-	}
-};
-
-ClassBodyContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitClassBody(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class InterfaceBodyContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.ClassBodyContext = ClassBodyContext;
-
-JavapParser.prototype.classBody = function() {
-
-    var localctx = new ClassBodyContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 26, JavapParser.RULE_classBody);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 193;
-        this.match(JavapParser.T__19);
-        this.state = 197;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while(((((_la - 7)) & ~0x1f) == 0 && ((1 << (_la - 7)) & ((1 << (JavapParser.T__6 - 7)) | (1 << (JavapParser.T__7 - 7)) | (1 << (JavapParser.T__8 - 7)) | (1 << (JavapParser.T__9 - 7)) | (1 << (JavapParser.T__10 - 7)) | (1 << (JavapParser.T__14 - 7)) | (1 << (JavapParser.T__21 - 7)) | (1 << (JavapParser.T__22 - 7)) | (1 << (JavapParser.T__23 - 7)) | (1 << (JavapParser.T__24 - 7)) | (1 << (JavapParser.T__25 - 7)) | (1 << (JavapParser.T__26 - 7)) | (1 << (JavapParser.T__27 - 7)) | (1 << (JavapParser.T__34 - 7)) | (1 << (JavapParser.Identifier - 7)))) !== 0)) {
-            this.state = 194;
-            this.classMember();
-            this.state = 199;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-        this.state = 200;
-        this.match(JavapParser.T__20);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_interfaceBody;
     }
-    return localctx;
-};
 
-function InterfaceBodyContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	interfaceMember = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(InterfaceMemberContext);
+	    } else {
+	        return this.getTypedRuleContext(InterfaceMemberContext,i);
+	    }
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterInterfaceBody(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitInterfaceBody(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_interfaceBody;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitInterfaceBody(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-InterfaceBodyContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-InterfaceBodyContext.prototype.constructor = InterfaceBodyContext;
-
-InterfaceBodyContext.prototype.interfaceMember = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(InterfaceMemberContext);
-    } else {
-        return this.getTypedRuleContext(InterfaceMemberContext,i);
-    }
-};
-
-InterfaceBodyContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterInterfaceBody(this);
-	}
-};
-
-InterfaceBodyContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitInterfaceBody(this);
-	}
-};
-
-InterfaceBodyContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitInterfaceBody(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class ModifierContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.InterfaceBodyContext = InterfaceBodyContext;
-
-JavapParser.prototype.interfaceBody = function() {
-
-    var localctx = new InterfaceBodyContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 28, JavapParser.RULE_interfaceBody);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 202;
-        this.match(JavapParser.T__19);
-        this.state = 206;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while(((((_la - 7)) & ~0x1f) == 0 && ((1 << (_la - 7)) & ((1 << (JavapParser.T__6 - 7)) | (1 << (JavapParser.T__7 - 7)) | (1 << (JavapParser.T__8 - 7)) | (1 << (JavapParser.T__9 - 7)) | (1 << (JavapParser.T__10 - 7)) | (1 << (JavapParser.T__14 - 7)) | (1 << (JavapParser.T__21 - 7)) | (1 << (JavapParser.T__22 - 7)) | (1 << (JavapParser.T__23 - 7)) | (1 << (JavapParser.T__24 - 7)) | (1 << (JavapParser.T__25 - 7)) | (1 << (JavapParser.T__26 - 7)) | (1 << (JavapParser.T__27 - 7)) | (1 << (JavapParser.T__34 - 7)) | (1 << (JavapParser.Identifier - 7)))) !== 0)) {
-            this.state = 203;
-            this.interfaceMember();
-            this.state = 208;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-        this.state = 209;
-        this.match(JavapParser.T__20);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_modifier;
     }
-    return localctx;
-};
 
-function ModifierContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterModifier(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitModifier(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_modifier;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitModifier(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-ModifierContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ModifierContext.prototype.constructor = ModifierContext;
 
 
-ModifierContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterModifier(this);
-	}
-};
+class ClassMemberContext extends antlr4.ParserRuleContext {
 
-ModifierContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitModifier(this);
-	}
-};
-
-ModifierContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitModifier(this);
-    } else {
-        return visitor.visitChildren(this);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
+        }
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_classMember;
     }
-};
 
+	constructorDeclaration() {
+	    return this.getTypedRuleContext(ConstructorDeclarationContext,0);
+	};
 
+	fieldDeclaration() {
+	    return this.getTypedRuleContext(FieldDeclarationContext,0);
+	};
 
+	methodDeclaration() {
+	    return this.getTypedRuleContext(MethodDeclarationContext,0);
+	};
 
-JavapParser.ModifierContext = ModifierContext;
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterClassMember(this);
+		}
+	}
 
-JavapParser.prototype.modifier = function() {
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitClassMember(this);
+		}
+	}
 
-    var localctx = new ModifierContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 30, JavapParser.RULE_modifier);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 211;
-        _la = this._input.LA(1);
-        if(!((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10) | (1 << JavapParser.T__21) | (1 << JavapParser.T__22) | (1 << JavapParser.T__23) | (1 << JavapParser.T__24) | (1 << JavapParser.T__25) | (1 << JavapParser.T__26) | (1 << JavapParser.T__27))) !== 0))) {
-        this._errHandler.recoverInline(this);
-        }
-        else {
-        	this._errHandler.reportMatch(this);
-            this.consume();
-        }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitClassMember(this);
 	    } else {
-	    	throw re;
+	        return visitor.visitChildren(this);
 	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
+	}
 
-function ClassMemberContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_classMember;
-    return this;
+
 }
 
-ClassMemberContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ClassMemberContext.prototype.constructor = ClassMemberContext;
-
-ClassMemberContext.prototype.constructorDeclaration = function() {
-    return this.getTypedRuleContext(ConstructorDeclarationContext,0);
-};
-
-ClassMemberContext.prototype.fieldDeclaration = function() {
-    return this.getTypedRuleContext(FieldDeclarationContext,0);
-};
-
-ClassMemberContext.prototype.methodDeclaration = function() {
-    return this.getTypedRuleContext(MethodDeclarationContext,0);
-};
-
-ClassMemberContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterClassMember(this);
-	}
-};
-
-ClassMemberContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitClassMember(this);
-	}
-};
-
-ClassMemberContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitClassMember(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class InterfaceMemberContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.ClassMemberContext = ClassMemberContext;
-
-JavapParser.prototype.classMember = function() {
-
-    var localctx = new ClassMemberContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 32, JavapParser.RULE_classMember);
-    try {
-        this.state = 219;
-        this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,25,this._ctx);
-        switch(la_) {
-        case 1:
-            this.enterOuterAlt(localctx, 1);
-            this.state = 213;
-            this.constructorDeclaration();
-            break;
-
-        case 2:
-            this.enterOuterAlt(localctx, 2);
-            this.state = 214;
-            this.fieldDeclaration();
-            break;
-
-        case 3:
-            this.enterOuterAlt(localctx, 3);
-            this.state = 215;
-            this.methodDeclaration();
-            break;
-
-        case 4:
-            this.enterOuterAlt(localctx, 4);
-            this.state = 216;
-            this.match(JavapParser.T__23);
-            this.state = 217;
-            this.match(JavapParser.T__28);
-            this.state = 218;
-            this.match(JavapParser.T__29);
-            break;
-
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_interfaceMember;
     }
-    return localctx;
-};
 
-function InterfaceMemberContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	fieldDeclaration() {
+	    return this.getTypedRuleContext(FieldDeclarationContext,0);
+	};
+
+	methodDeclaration() {
+	    return this.getTypedRuleContext(MethodDeclarationContext,0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterInterfaceMember(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitInterfaceMember(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_interfaceMember;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitInterfaceMember(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-InterfaceMemberContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-InterfaceMemberContext.prototype.constructor = InterfaceMemberContext;
-
-InterfaceMemberContext.prototype.fieldDeclaration = function() {
-    return this.getTypedRuleContext(FieldDeclarationContext,0);
-};
-
-InterfaceMemberContext.prototype.methodDeclaration = function() {
-    return this.getTypedRuleContext(MethodDeclarationContext,0);
-};
-
-InterfaceMemberContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterInterfaceMember(this);
-	}
-};
-
-InterfaceMemberContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitInterfaceMember(this);
-	}
-};
-
-InterfaceMemberContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitInterfaceMember(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class ConstructorDeclarationContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.InterfaceMemberContext = InterfaceMemberContext;
-
-JavapParser.prototype.interfaceMember = function() {
-
-    var localctx = new InterfaceMemberContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 34, JavapParser.RULE_interfaceMember);
-    try {
-        this.state = 226;
-        this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,26,this._ctx);
-        switch(la_) {
-        case 1:
-            this.enterOuterAlt(localctx, 1);
-            this.state = 221;
-            this.fieldDeclaration();
-            break;
-
-        case 2:
-            this.enterOuterAlt(localctx, 2);
-            this.state = 222;
-            this.methodDeclaration();
-            break;
-
-        case 3:
-            this.enterOuterAlt(localctx, 3);
-            this.state = 223;
-            this.match(JavapParser.T__23);
-            this.state = 224;
-            this.match(JavapParser.T__28);
-            this.state = 225;
-            this.match(JavapParser.T__29);
-            break;
-
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_constructorDeclaration;
     }
-    return localctx;
-};
 
-function ConstructorDeclarationContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	type() {
+	    return this.getTypedRuleContext(TypeContext,0);
+	};
+
+	methodArguments() {
+	    return this.getTypedRuleContext(MethodArgumentsContext,0);
+	};
+
+	modifier = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(ModifierContext);
+	    } else {
+	        return this.getTypedRuleContext(ModifierContext,i);
+	    }
+	};
+
+	typeArguments() {
+	    return this.getTypedRuleContext(TypeArgumentsContext,0);
+	};
+
+	throwsException() {
+	    return this.getTypedRuleContext(ThrowsExceptionContext,0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterConstructorDeclaration(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitConstructorDeclaration(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_constructorDeclaration;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitConstructorDeclaration(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-ConstructorDeclarationContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ConstructorDeclarationContext.prototype.constructor = ConstructorDeclarationContext;
-
-ConstructorDeclarationContext.prototype.type = function() {
-    return this.getTypedRuleContext(TypeContext,0);
-};
-
-ConstructorDeclarationContext.prototype.methodArguments = function() {
-    return this.getTypedRuleContext(MethodArgumentsContext,0);
-};
-
-ConstructorDeclarationContext.prototype.modifier = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(ModifierContext);
-    } else {
-        return this.getTypedRuleContext(ModifierContext,i);
-    }
-};
-
-ConstructorDeclarationContext.prototype.typeArguments = function() {
-    return this.getTypedRuleContext(TypeArgumentsContext,0);
-};
-
-ConstructorDeclarationContext.prototype.throwsException = function() {
-    return this.getTypedRuleContext(ThrowsExceptionContext,0);
-};
-
-ConstructorDeclarationContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterConstructorDeclaration(this);
-	}
-};
-
-ConstructorDeclarationContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitConstructorDeclaration(this);
-	}
-};
-
-ConstructorDeclarationContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitConstructorDeclaration(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class FieldDeclarationContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.ConstructorDeclarationContext = ConstructorDeclarationContext;
-
-JavapParser.prototype.constructorDeclaration = function() {
-
-    var localctx = new ConstructorDeclarationContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 36, JavapParser.RULE_constructorDeclaration);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 231;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10) | (1 << JavapParser.T__21) | (1 << JavapParser.T__22) | (1 << JavapParser.T__23) | (1 << JavapParser.T__24) | (1 << JavapParser.T__25) | (1 << JavapParser.T__26) | (1 << JavapParser.T__27))) !== 0)) {
-            this.state = 228;
-            this.modifier();
-            this.state = 233;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-        this.state = 235;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__14 || _la===JavapParser.T__34) {
-            this.state = 234;
-            this.typeArguments();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
         }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_fieldDeclaration;
+    }
 
-        this.state = 237;
-        this.type();
-        this.state = 238;
-        this.match(JavapParser.T__30);
-        this.state = 239;
-        this.methodArguments();
-        this.state = 240;
-        this.match(JavapParser.T__31);
-        this.state = 242;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__32) {
-            this.state = 241;
-            this.throwsException();
-        }
+	type() {
+	    return this.getTypedRuleContext(TypeContext,0);
+	};
 
-        this.state = 244;
-        this.match(JavapParser.T__29);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
+	Identifier() {
+	    return this.getToken(JavapParser.Identifier, 0);
+	};
+
+	modifier = function(i) {
+	    if(i===undefined) {
+	        i = null;
 	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
+	    if(i===null) {
+	        return this.getTypedRuleContexts(ModifierContext);
+	    } else {
+	        return this.getTypedRuleContext(ModifierContext,i);
+	    }
+	};
 
-function FieldDeclarationContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterFieldDeclaration(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitFieldDeclaration(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_fieldDeclaration;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitFieldDeclaration(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-FieldDeclarationContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-FieldDeclarationContext.prototype.constructor = FieldDeclarationContext;
-
-FieldDeclarationContext.prototype.type = function() {
-    return this.getTypedRuleContext(TypeContext,0);
-};
-
-FieldDeclarationContext.prototype.Identifier = function() {
-    return this.getToken(JavapParser.Identifier, 0);
-};
-
-FieldDeclarationContext.prototype.modifier = function(i) {
-    if(i===undefined) {
-        i = null;
-    }
-    if(i===null) {
-        return this.getTypedRuleContexts(ModifierContext);
-    } else {
-        return this.getTypedRuleContext(ModifierContext,i);
-    }
-};
-
-FieldDeclarationContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterFieldDeclaration(this);
-	}
-};
-
-FieldDeclarationContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitFieldDeclaration(this);
-	}
-};
-
-FieldDeclarationContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitFieldDeclaration(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class MethodDeclarationContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.FieldDeclarationContext = FieldDeclarationContext;
-
-JavapParser.prototype.fieldDeclaration = function() {
-
-    var localctx = new FieldDeclarationContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 38, JavapParser.RULE_fieldDeclaration);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 249;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10) | (1 << JavapParser.T__21) | (1 << JavapParser.T__22) | (1 << JavapParser.T__23) | (1 << JavapParser.T__24) | (1 << JavapParser.T__25) | (1 << JavapParser.T__26) | (1 << JavapParser.T__27))) !== 0)) {
-            this.state = 246;
-            this.modifier();
-            this.state = 251;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-        this.state = 252;
-        this.type();
-        this.state = 253;
-        this.match(JavapParser.Identifier);
-        this.state = 254;
-        this.match(JavapParser.T__29);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_methodDeclaration;
     }
-    return localctx;
-};
 
-function MethodDeclarationContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	type() {
+	    return this.getTypedRuleContext(TypeContext,0);
+	};
+
+	Identifier() {
+	    return this.getToken(JavapParser.Identifier, 0);
+	};
+
+	methodArguments() {
+	    return this.getTypedRuleContext(MethodArgumentsContext,0);
+	};
+
+	modifier = function(i) {
+	    if(i===undefined) {
+	        i = null;
+	    }
+	    if(i===null) {
+	        return this.getTypedRuleContexts(ModifierContext);
+	    } else {
+	        return this.getTypedRuleContext(ModifierContext,i);
+	    }
+	};
+
+	typeArguments() {
+	    return this.getTypedRuleContext(TypeArgumentsContext,0);
+	};
+
+	throwsException() {
+	    return this.getTypedRuleContext(ThrowsExceptionContext,0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterMethodDeclaration(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitMethodDeclaration(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_methodDeclaration;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitMethodDeclaration(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-MethodDeclarationContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-MethodDeclarationContext.prototype.constructor = MethodDeclarationContext;
 
-MethodDeclarationContext.prototype.type = function() {
-    return this.getTypedRuleContext(TypeContext,0);
-};
 
-MethodDeclarationContext.prototype.Identifier = function() {
-    return this.getToken(JavapParser.Identifier, 0);
-};
+class ThrowsExceptionContext extends antlr4.ParserRuleContext {
 
-MethodDeclarationContext.prototype.methodArguments = function() {
-    return this.getTypedRuleContext(MethodArgumentsContext,0);
-};
-
-MethodDeclarationContext.prototype.modifier = function(i) {
-    if(i===undefined) {
-        i = null;
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
+        }
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_throwsException;
     }
-    if(i===null) {
-        return this.getTypedRuleContexts(ModifierContext);
-    } else {
-        return this.getTypedRuleContext(ModifierContext,i);
-    }
-};
 
-MethodDeclarationContext.prototype.typeArguments = function() {
-    return this.getTypedRuleContext(TypeArgumentsContext,0);
-};
+	typeList() {
+	    return this.getTypedRuleContext(TypeListContext,0);
+	};
 
-MethodDeclarationContext.prototype.throwsException = function() {
-    return this.getTypedRuleContext(ThrowsExceptionContext,0);
-};
-
-MethodDeclarationContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterMethodDeclaration(this);
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterThrowsException(this);
+		}
 	}
-};
 
-MethodDeclarationContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitMethodDeclaration(this);
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitThrowsException(this);
+		}
 	}
-};
 
-MethodDeclarationContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitMethodDeclaration(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
-
-
-
-
-JavapParser.MethodDeclarationContext = MethodDeclarationContext;
-
-JavapParser.prototype.methodDeclaration = function() {
-
-    var localctx = new MethodDeclarationContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 40, JavapParser.RULE_methodDeclaration);
-    var _la = 0; // Token type
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 259;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        while((((_la) & ~0x1f) == 0 && ((1 << _la) & ((1 << JavapParser.T__6) | (1 << JavapParser.T__7) | (1 << JavapParser.T__8) | (1 << JavapParser.T__9) | (1 << JavapParser.T__10) | (1 << JavapParser.T__21) | (1 << JavapParser.T__22) | (1 << JavapParser.T__23) | (1 << JavapParser.T__24) | (1 << JavapParser.T__25) | (1 << JavapParser.T__26) | (1 << JavapParser.T__27))) !== 0)) {
-            this.state = 256;
-            this.modifier();
-            this.state = 261;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
-        }
-        this.state = 263;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__14 || _la===JavapParser.T__34) {
-            this.state = 262;
-            this.typeArguments();
-        }
-
-        this.state = 265;
-        this.type();
-        this.state = 266;
-        this.match(JavapParser.Identifier);
-        this.state = 267;
-        this.match(JavapParser.T__30);
-        this.state = 268;
-        this.methodArguments();
-        this.state = 269;
-        this.match(JavapParser.T__31);
-        this.state = 271;
-        this._errHandler.sync(this);
-        _la = this._input.LA(1);
-        if(_la===JavapParser.T__32) {
-            this.state = 270;
-            this.throwsException();
-        }
-
-        this.state = 273;
-        this.match(JavapParser.T__29);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitThrowsException(this);
 	    } else {
-	    	throw re;
+	        return visitor.visitChildren(this);
 	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
+	}
 
-function ThrowsExceptionContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_throwsException;
-    return this;
+
 }
 
-ThrowsExceptionContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ThrowsExceptionContext.prototype.constructor = ThrowsExceptionContext;
-
-ThrowsExceptionContext.prototype.typeList = function() {
-    return this.getTypedRuleContext(TypeListContext,0);
-};
-
-ThrowsExceptionContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterThrowsException(this);
-	}
-};
-
-ThrowsExceptionContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitThrowsException(this);
-	}
-};
-
-ThrowsExceptionContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitThrowsException(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
 
 
+class VarargsContext extends antlr4.ParserRuleContext {
 
-
-JavapParser.ThrowsExceptionContext = ThrowsExceptionContext;
-
-JavapParser.prototype.throwsException = function() {
-
-    var localctx = new ThrowsExceptionContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 42, JavapParser.RULE_throwsException);
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 275;
-        this.match(JavapParser.T__32);
-        this.state = 276;
-        this.typeList();
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
-
-function VarargsContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_varargs;
-    return this;
-}
-
-VarargsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-VarargsContext.prototype.constructor = VarargsContext;
-
-VarargsContext.prototype.type = function() {
-    return this.getTypedRuleContext(TypeContext,0);
-};
-
-VarargsContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterVarargs(this);
-	}
-};
-
-VarargsContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitVarargs(this);
-	}
-};
-
-VarargsContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitVarargs(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
-
-
-
-
-JavapParser.VarargsContext = VarargsContext;
-
-JavapParser.prototype.varargs = function() {
-
-    var localctx = new VarargsContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 44, JavapParser.RULE_varargs);
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 278;
-        this.type();
-        this.state = 279;
-        this.match(JavapParser.T__33);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
-    }
-    return localctx;
-};
-
-function MethodArgumentsContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
-	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
-	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_methodArguments;
-    return this;
-}
-
-MethodArgumentsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-MethodArgumentsContext.prototype.constructor = MethodArgumentsContext;
-
-MethodArgumentsContext.prototype.typeList = function() {
-    return this.getTypedRuleContext(TypeListContext,0);
-};
-
-MethodArgumentsContext.prototype.varargs = function() {
-    return this.getTypedRuleContext(VarargsContext,0);
-};
-
-MethodArgumentsContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterMethodArguments(this);
-	}
-};
-
-MethodArgumentsContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitMethodArguments(this);
-	}
-};
-
-MethodArgumentsContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitMethodArguments(this);
-    } else {
-        return visitor.visitChildren(this);
-    }
-};
-
-
-
-
-JavapParser.MethodArgumentsContext = MethodArgumentsContext;
-
-JavapParser.prototype.methodArguments = function() {
-
-    var localctx = new MethodArgumentsContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 46, JavapParser.RULE_methodArguments);
-    var _la = 0; // Token type
-    try {
-        this.state = 289;
-        this._errHandler.sync(this);
-        var la_ = this._interp.adaptivePredict(this._input,35,this._ctx);
-        switch(la_) {
-        case 1:
-            this.enterOuterAlt(localctx, 1);
-            this.state = 282;
-            this._errHandler.sync(this);
-            _la = this._input.LA(1);
-            if(_la===JavapParser.Identifier) {
-                this.state = 281;
-                this.typeList();
-            }
-
-            break;
-
-        case 2:
-            this.enterOuterAlt(localctx, 2);
-            this.state = 284;
-            this.typeList();
-            this.state = 285;
-            _la = this._input.LA(1);
-            if(!(_la===JavapParser.T__11 || _la===JavapParser.T__12)) {
-            this._errHandler.recoverInline(this);
-            }
-            else {
-            	this._errHandler.reportMatch(this);
-                this.consume();
-            }
-            this.state = 286;
-            this.varargs();
-            break;
-
-        case 3:
-            this.enterOuterAlt(localctx, 3);
-            this.state = 288;
-            this.varargs();
-            break;
-
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
         }
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
-	    } else {
-	    	throw re;
-	    }
-    } finally {
-        this.exitRule();
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_varargs;
     }
-    return localctx;
-};
 
-function ArrayBracketsContext(parser, parent, invokingState) {
-	if(parent===undefined) {
-	    parent = null;
+	type() {
+	    return this.getTypedRuleContext(TypeContext,0);
+	};
+
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterVarargs(this);
+		}
 	}
-	if(invokingState===undefined || invokingState===null) {
-		invokingState = -1;
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitVarargs(this);
+		}
 	}
-	antlr4.ParserRuleContext.call(this, parent, invokingState);
-    this.parser = parser;
-    this.ruleIndex = JavapParser.RULE_arrayBrackets;
-    return this;
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitVarargs(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
 }
 
-ArrayBracketsContext.prototype = Object.create(antlr4.ParserRuleContext.prototype);
-ArrayBracketsContext.prototype.constructor = ArrayBracketsContext;
 
 
-ArrayBracketsContext.prototype.enterRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.enterArrayBrackets(this);
-	}
-};
+class MethodArgumentsContext extends antlr4.ParserRuleContext {
 
-ArrayBracketsContext.prototype.exitRule = function(listener) {
-    if(listener instanceof JavapListener ) {
-        listener.exitArrayBrackets(this);
-	}
-};
-
-ArrayBracketsContext.prototype.accept = function(visitor) {
-    if ( visitor instanceof JavapVisitor ) {
-        return visitor.visitArrayBrackets(this);
-    } else {
-        return visitor.visitChildren(this);
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
+        }
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_methodArguments;
     }
-};
 
+	typeList() {
+	    return this.getTypedRuleContext(TypeListContext,0);
+	};
 
+	varargs() {
+	    return this.getTypedRuleContext(VarargsContext,0);
+	};
 
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterMethodArguments(this);
+		}
+	}
 
-JavapParser.ArrayBracketsContext = ArrayBracketsContext;
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitMethodArguments(this);
+		}
+	}
 
-JavapParser.prototype.arrayBrackets = function() {
-
-    var localctx = new ArrayBracketsContext(this, this._ctx, this.state);
-    this.enterRule(localctx, 48, JavapParser.RULE_arrayBrackets);
-    try {
-        this.enterOuterAlt(localctx, 1);
-        this.state = 291;
-        this.match(JavapParser.T__34);
-    } catch (re) {
-    	if(re instanceof antlr4.error.RecognitionException) {
-	        localctx.exception = re;
-	        this._errHandler.reportError(this, re);
-	        this._errHandler.recover(this, re);
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitMethodArguments(this);
 	    } else {
-	    	throw re;
+	        return visitor.visitChildren(this);
 	    }
-    } finally {
-        this.exitRule();
+	}
+
+
+}
+
+
+
+class ArrayBracketsContext extends antlr4.ParserRuleContext {
+
+    constructor(parser, parent, invokingState) {
+        if(parent===undefined) {
+            parent = null;
+        }
+        if(invokingState===undefined || invokingState===null) {
+            invokingState = -1;
+        }
+        super(parent, invokingState);
+        this.parser = parser;
+        this.ruleIndex = JavapParser.RULE_arrayBrackets;
     }
-    return localctx;
-};
 
 
-exports.JavapParser = JavapParser;
+	enterRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.enterArrayBrackets(this);
+		}
+	}
+
+	exitRule(listener) {
+	    if(listener instanceof JavapListener ) {
+	        listener.exitArrayBrackets(this);
+		}
+	}
+
+	accept(visitor) {
+	    if ( visitor instanceof JavapVisitor ) {
+	        return visitor.visitArrayBrackets(this);
+	    } else {
+	        return visitor.visitChildren(this);
+	    }
+	}
+
+
+}
+
+
+
+
+JavapParser.CompilationUnitContext = CompilationUnitContext; 
+JavapParser.SourceDeclarationContext = SourceDeclarationContext; 
+JavapParser.ClassOrInterfaceContext = ClassOrInterfaceContext; 
+JavapParser.ClassDeclarationContext = ClassDeclarationContext; 
+JavapParser.InterfaceDeclarationContext = InterfaceDeclarationContext; 
+JavapParser.ClassModifierContext = ClassModifierContext; 
+JavapParser.InterfaceModifierContext = InterfaceModifierContext; 
+JavapParser.TypeListContext = TypeListContext; 
+JavapParser.TypeContext = TypeContext; 
+JavapParser.SubTypeContext = SubTypeContext; 
+JavapParser.PackageNameContext = PackageNameContext; 
+JavapParser.TypeArgumentsContext = TypeArgumentsContext; 
+JavapParser.TypeArgumentContext = TypeArgumentContext; 
+JavapParser.ClassBodyContext = ClassBodyContext; 
+JavapParser.InterfaceBodyContext = InterfaceBodyContext; 
+JavapParser.ModifierContext = ModifierContext; 
+JavapParser.ClassMemberContext = ClassMemberContext; 
+JavapParser.InterfaceMemberContext = InterfaceMemberContext; 
+JavapParser.ConstructorDeclarationContext = ConstructorDeclarationContext; 
+JavapParser.FieldDeclarationContext = FieldDeclarationContext; 
+JavapParser.MethodDeclarationContext = MethodDeclarationContext; 
+JavapParser.ThrowsExceptionContext = ThrowsExceptionContext; 
+JavapParser.VarargsContext = VarargsContext; 
+JavapParser.MethodArgumentsContext = MethodArgumentsContext; 
+JavapParser.ArrayBracketsContext = ArrayBracketsContext; 

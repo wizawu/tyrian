@@ -39,7 +39,7 @@ var JavapParser_1 = require("./javap/JavapParser");
 var utils_1 = require("../utils");
 var PARSE_CHUNK = 500;
 function parse(classPaths, counter, classList, typeRoot) {
-    var context = parseClasses(classPaths, classList);
+    var context = parseClasses(classPaths, classList.filter(function (it) { return !it.startsWith("kotlin."); }));
     if (context === null)
         return false;
     var interfaces = context.classOrInterface()

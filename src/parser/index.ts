@@ -8,7 +8,7 @@ import { javap } from "../utils"
 const PARSE_CHUNK = 500
 
 export function parse(classPaths: string[], counter: InterfaceStat, classList: string[], typeRoot?: string): boolean {
-  const context = parseClasses(classPaths, classList)
+  const context = parseClasses(classPaths, classList.filter(it => !it.startsWith("kotlin.")))
   if (context === null) return false
 
   const interfaces = context.classOrInterface()

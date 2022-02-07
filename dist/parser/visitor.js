@@ -105,7 +105,7 @@ function generateTsDef(context, ifs, typeRoot) {
             fs_1.default.writeFileSync(path_1.default.join(typeRoot, filename), content + lambdaBuffer);
             process.stdout.clearLine(0);
             process.stdout.cursorTo(0);
-            process.stdout.write("Generated lib/@types/" + filename);
+            process.stdout.write("Generated lib/@types/".concat(filename));
             references.push(filename);
         }
     };
@@ -115,7 +115,7 @@ function generateTsDef(context, ifs, typeRoot) {
     }
     process.stdout.clearLine(0);
     process.stdout.cursorTo(0);
-    fs_1.default.writeFileSync(path_1.default.join(typeRoot, "index.d.ts"), references.map(function (it) { return "/// <reference path=\"" + it + "\" />"; }).sort().join("\n"));
+    fs_1.default.writeFileSync(path_1.default.join(typeRoot, "index.d.ts"), references.map(function (it) { return "/// <reference path=\"".concat(it, "\" />"); }).sort().join("\n"));
     console.log(chalk_1.default.green("Generated " + path_1.default.join(typeRoot, "index.d.ts")));
     fs_1.default.writeFileSync(path_1.default.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
     console.log(chalk_1.default.green("Generated " + path_1.default.join(typeRoot, "namespace.json")));
@@ -245,7 +245,7 @@ function declareNamespaces(type) {
     for (var _i = 0, _a = type.packageName().Identifier(); _i < _a.length; _i++) {
         var id = _a[_i];
         var ns = convertNamespace(id.getText());
-        result[0] += "namespace " + ns + " {\n";
+        result[0] += "namespace ".concat(ns, " {\n");
         result[1] += "}\n";
     }
     return result[0] ? ["declare " + result[0], result[1]] : result;

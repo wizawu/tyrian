@@ -101,7 +101,7 @@ function default_1(offline) {
                     return [4 /*yield*/, listLibClasses(jars)];
                 case 1:
                     classes = _a.sent();
-                    console.log("Found " + chalk_1.default.green(classes.length) + " classes");
+                    console.log("Found ".concat(chalk_1.default.green(classes.length), " classes"));
                     console.log("Generating typescript definitions...");
                     parser.parse(jars, interfaces_json_1.default, classes, path_1.default.join(process.cwd(), "lib", "@types"));
                     _a.label = 2;
@@ -174,5 +174,5 @@ function gradleInstall() {
     if (child.status)
         process.exit(child.status);
 }
-var gradleTemplate = function (deps) { return (0, redent_1.default)("\n  apply plugin: \"java\"\n\n  repositories {\n    jcenter()\n    mavenCentral()\n  }\n\n  task install(type: Copy) {\n    into \".\"\n    from configurations.runtime\n  }\n\n  dependencies {\n    " + deps.map(function (it) { return "compile \"" + it + "\""; }).join("\n    ") + "\n  }\n", 0).trimStart(); };
+var gradleTemplate = function (deps) { return (0, redent_1.default)("\n  apply plugin: \"java\"\n\n  repositories {\n    jcenter()\n    mavenCentral()\n  }\n\n  task install(type: Copy) {\n    into \".\"\n    from configurations.runtime\n  }\n\n  dependencies {\n    ".concat(deps.map(function (it) { return "compile \"".concat(it, "\""); }).join("\n    "), "\n  }\n"), 0).trimStart(); };
 exports.gradleTemplate = gradleTemplate;

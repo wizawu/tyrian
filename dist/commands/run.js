@@ -43,7 +43,7 @@ var constants_1 = require("../constants");
 function default_1(output, args, _a) {
     var inspectBrk = _a.inspectBrk, watch = _a.watch;
     if (!fs_1.default.existsSync(output)) {
-        console.error(chalk_1.default.red("The file '" + output + "' does not exist."));
+        console.error(chalk_1.default.red("The file '".concat(output, "' does not exist.")));
         process.exit(errors_1.code.INVALID_ARGUMENT);
     }
     var _b = checkRuntime(), type = _b[0], runner = _b[1];
@@ -78,7 +78,7 @@ function default_1(output, args, _a) {
             child.removeAllListeners();
             child.on("exit", function () { return child = run(); });
             child.kill("SIGHUP");
-            console.log(chalk_1.default.gray("Restarting " + output + "..."));
+            console.log(chalk_1.default.gray("Restarting ".concat(output, "...")));
         });
     }
 }
@@ -99,7 +99,7 @@ function checkRuntime() {
         return ["nashorn", "jjs"];
     }
     else {
-        console.error("Please define the runtime in " + constants_1.path.ENV);
+        console.error("Please define the runtime in ".concat(constants_1.path.ENV));
         console.error((0, redent_1.default)("\n      runtime=/path/to/graalvm/bin/node\n      // or\n      runtime=/path/to/openjdk/bin/jjs\n    ", 0));
         process.exit(errors_1.code.UNKNOWN_RUNTIME);
     }

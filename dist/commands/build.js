@@ -84,8 +84,8 @@ function globalVarDefinition() {
         });
     }
     return vars.reduce(function (result, ns) {
-        var test = "typeof Packages === \"object\" && typeof " + ns + " === \"undefined\"";
-        result[ns] = "(" + test + " ? Packages." + ns + " : " + ns + ")";
+        var test = "typeof Packages === \"object\" && typeof ".concat(ns, " === \"undefined\"");
+        result[ns] = "(".concat(test, " ? Packages.").concat(ns, " : ").concat(ns, ")");
         return result;
     }, {});
 }

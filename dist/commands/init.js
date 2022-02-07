@@ -85,7 +85,7 @@ exports.default = default_1;
 function initProject(runtime, executable) {
     // create .env
     var runtimePath = utils.realPath(executable);
-    fs_1.default.appendFileSync(constants_1.path.ENV, "runtime=" + runtimePath + "\n");
+    fs_1.default.appendFileSync(constants_1.path.ENV, "runtime=".concat(runtimePath, "\n"));
     // create package.json
     fs_1.default.writeFileSync(constants_1.path.PACKAGE, JSON.stringify({
         dependencies: {},
@@ -108,12 +108,12 @@ function initProject(runtime, executable) {
 function check(command, args) {
     var _a = (0, child_process_1.spawnSync)(command, args), status = _a.status, stdout = _a.stdout, stderr = _a.stderr;
     if (status === 0) {
-        console.log(chalk_1.default.green("[" + command + "]"));
+        console.log(chalk_1.default.green("[".concat(command, "]")));
         console.log(stdout.toString().replace(/\n+/g, "\n").trim() + "\n");
         return true;
     }
     else {
-        console.log(chalk_1.default.red("[" + command + "]"));
+        console.log(chalk_1.default.red("[".concat(command, "]")));
         var message = (stderr === null || stderr === void 0 ? void 0 : stderr.toString().trim()) || (stdout === null || stdout === void 0 ? void 0 : stdout.toString().trim());
         if (message) {
             console.log(message + "\n");

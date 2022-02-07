@@ -1,17 +1,15 @@
-export function JavapLexer(input: any): this;
-export class JavapLexer {
+declare class JavapLexer extends antlr4.Lexer {
+    static grammarFileName: string;
+    static channelNames: string[];
+    static modeNames: string[];
+    static literalNames: (string | null)[];
+    static symbolicNames: (string | null)[];
+    static ruleNames: string[];
     constructor(input: any);
     _interp: any;
-    constructor: typeof JavapLexer;
     get atn(): any;
-    channelNames: string[];
-    modeNames: string[];
-    literalNames: (string | null)[];
-    symbolicNames: (string | null)[];
-    ruleNames: string[];
-    grammarFileName: string;
 }
-export namespace JavapLexer {
+declare namespace JavapLexer {
     const EOF: number;
     const T__0: number;
     const T__1: number;
@@ -51,3 +49,5 @@ export namespace JavapLexer {
     const Identifier: number;
     const WS: number;
 }
+export default JavapLexer;
+import antlr4 from "antlr4";

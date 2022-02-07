@@ -1,6 +1,4 @@
-export function JavapListener(): this;
-export class JavapListener {
-    constructor: typeof JavapListener;
+export default class JavapListener {
     enterCompilationUnit(ctx: any): void;
     exitCompilationUnit(ctx: any): void;
     enterSourceDeclaration(ctx: any): void;

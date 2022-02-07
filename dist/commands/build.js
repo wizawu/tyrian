@@ -3,26 +3,26 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var fs_1 = __importDefault(require("fs"));
-var path_1 = __importDefault(require("path"));
-var webpack_1 = __importDefault(require("webpack"));
-var run_1 = require("./run");
-var errors_1 = require("../errors");
+const fs_1 = __importDefault(require("fs"));
+const path_1 = __importDefault(require("path"));
+const webpack_1 = __importDefault(require("webpack"));
+const run_1 = require("./run");
+const errors_1 = require("../errors");
 function default_1(entries, outDir, watch) {
-    var compiler = getCompiler(entries, outDir);
-    var printStats = function (stats) { return console.log(stats === null || stats === void 0 ? void 0 : stats.toString({
+    const compiler = getCompiler(entries, outDir);
+    const printStats = (stats) => console.log(stats === null || stats === void 0 ? void 0 : stats.toString({
         colors: true,
         chunks: false,
         entrypoints: true,
         modules: false,
-    })); };
+    }));
     if (watch) {
-        compiler.watch({ poll: true }, function (err, stats) {
+        compiler.watch({ poll: true }, (err, stats) => {
             printStats(stats);
         });
     }
     else {
-        compiler.run(function (err, stats) {
+        compiler.run((err, stats) => {
             printStats(stats);
             if (stats === null || stats === void 0 ? void 0 : stats.hasErrors())
                 process.exit(errors_1.code.BUILD_ERROR);
@@ -31,11 +31,10 @@ function default_1(entries, outDir, watch) {
 }
 exports.default = default_1;
 function getCompiler(entries, outDir) {
-    var context = process.cwd();
-    var entry = {};
-    for (var _i = 0, entries_1 = entries; _i < entries_1.length; _i++) {
-        var src = entries_1[_i];
-        var out = path_1.default.join(outDir, path_1.default.basename(src).replace(/(.ts|.tsx)$/, ".js"));
+    const context = process.cwd();
+    const entry = {};
+    for (const src of entries) {
+        const out = path_1.default.join(outDir, path_1.default.basename(src).replace(/(.ts|.tsx)$/, ".js"));
         entry[out] = path_1.default.format({ dir: ".", name: path_1.default.relative("", src) });
     }
     return (0, webpack_1.default)({
@@ -74,18 +73,18 @@ function getCompiler(entries, outDir) {
     });
 }
 function globalVarDefinition() {
-    var vars = ["com", "java", "javax", "jdk", "netscape", "org"];
-    var filePath = path_1.default.join(process.cwd(), "lib", "@types", "namespace.json");
+    const vars = ["com", "java", "javax", "jdk", "netscape", "org"];
+    const filePath = path_1.default.join(process.cwd(), "lib", "@types", "namespace.json");
     if (fs_1.default.existsSync(filePath)) {
-        var content = fs_1.default.readFileSync(filePath, "utf-8");
-        Object.keys(JSON.parse(content)).forEach(function (it) {
+        const content = fs_1.default.readFileSync(filePath, "utf-8");
+        Object.keys(JSON.parse(content)).forEach(it => {
             if (vars.indexOf(it) < 0)
                 vars.push(it);
         });
     }
-    return vars.reduce(function (result, ns) {
-        var test = "typeof Packages === \"object\" && typeof ".concat(ns, " === \"undefined\"");
-        result[ns] = "(".concat(test, " ? Packages.").concat(ns, " : ").concat(ns, ")");
+    return vars.reduce((result, ns) => {
+        const test = `typeof Packages === "object" && typeof ${ns} === "undefined"`;
+        result[ns] = `(${test} ? Packages.${ns} : ${ns})`;
         return result;
     }, {});
 }

@@ -23,14 +23,14 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.check = void 0;
-var child_process_1 = require("child_process");
-var chalk_1 = __importDefault(require("chalk"));
-var fs_1 = __importDefault(require("fs"));
-var path_1 = __importDefault(require("path"));
-var prompts_1 = __importDefault(require("prompts"));
-var errors_1 = require("../errors");
-var constants_1 = require("../constants");
-var utils = __importStar(require("../utils"));
+const child_process_1 = require("child_process");
+const chalk_1 = __importDefault(require("chalk"));
+const fs_1 = __importDefault(require("fs"));
+const path_1 = __importDefault(require("path"));
+const prompts_1 = __importDefault(require("prompts"));
+const errors_1 = require("../errors");
+const constants_1 = require("../constants");
+const utils = __importStar(require("../utils"));
 function default_1() {
     console.log("Checking prerequisites...\n");
     if (!check("node", ["-v"]) || !check("npm", ["-v"]) || !check("gradle", ["-v"])) {
@@ -54,18 +54,14 @@ function default_1() {
                 { value: "graaljs", title: "Graal.js (recommended)" },
                 { value: "nashorn", title: "Nashorn" },
             ],
-        }).then(function (_a) {
-            var runtime = _a.runtime;
+        }).then(({ runtime }) => {
             if (runtime === "graaljs") {
                 (0, prompts_1.default)({
                     name: "executable",
                     message: "Where is the Graal.js executable file (node)",
                     type: "text",
                     initial: "node",
-                }).then(function (_a) {
-                    var executable = _a.executable;
-                    return initProject(runtime, executable);
-                });
+                }).then(({ executable }) => initProject(runtime, executable));
             }
             if (runtime === "nashorn") {
                 (0, prompts_1.default)({
@@ -73,10 +69,7 @@ function default_1() {
                     message: "Where is the Nashorn executable file (jjs)",
                     type: "text",
                     initial: "jjs",
-                }).then(function (_a) {
-                    var executable = _a.executable;
-                    return initProject(runtime, executable);
-                });
+                }).then(({ executable }) => initProject(runtime, executable));
             }
         });
     }
@@ -84,8 +77,8 @@ function default_1() {
 exports.default = default_1;
 function initProject(runtime, executable) {
     // create .env
-    var runtimePath = utils.realPath(executable);
-    fs_1.default.appendFileSync(constants_1.path.ENV, "runtime=".concat(runtimePath, "\n"));
+    const runtimePath = utils.realPath(executable);
+    fs_1.default.appendFileSync(constants_1.path.ENV, `runtime=${runtimePath}\n`);
     // create package.json
     fs_1.default.writeFileSync(constants_1.path.PACKAGE, JSON.stringify({
         dependencies: {},
@@ -101,20 +94,20 @@ function initProject(runtime, executable) {
     // create src/main.ts
     fs_1.default.mkdirSync("src", { recursive: true });
     if (!fs_1.default.existsSync(path_1.default.join("src", "main.ts"))) {
-        var src = "java.lang.System.out.println(\"Hello\")";
+        const src = "java.lang.System.out.println(\"Hello\")";
         fs_1.default.writeFileSync(path_1.default.join("src", "main.ts"), src);
     }
 }
 function check(command, args) {
-    var _a = (0, child_process_1.spawnSync)(command, args), status = _a.status, stdout = _a.stdout, stderr = _a.stderr;
+    const { status, stdout, stderr } = (0, child_process_1.spawnSync)(command, args);
     if (status === 0) {
-        console.log(chalk_1.default.green("[".concat(command, "]")));
+        console.log(chalk_1.default.green(`[${command}]`));
         console.log(stdout.toString().replace(/\n+/g, "\n").trim() + "\n");
         return true;
     }
     else {
-        console.log(chalk_1.default.red("[".concat(command, "]")));
-        var message = (stderr === null || stderr === void 0 ? void 0 : stderr.toString().trim()) || (stdout === null || stdout === void 0 ? void 0 : stdout.toString().trim());
+        console.log(chalk_1.default.red(`[${command}]`));
+        const message = (stderr === null || stderr === void 0 ? void 0 : stderr.toString().trim()) || (stdout === null || stdout === void 0 ? void 0 : stdout.toString().trim());
         if (message) {
             console.log(message + "\n");
         }

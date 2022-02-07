@@ -3,10 +3,10 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var build_1 = __importDefault(require("./build"));
-var init_1 = __importDefault(require("./init"));
-var install_1 = __importDefault(require("./install"));
-var run_1 = __importDefault(require("./run"));
+const build_1 = __importDefault(require("./build"));
+const init_1 = __importDefault(require("./init"));
+const install_1 = __importDefault(require("./install"));
+const run_1 = __importDefault(require("./run"));
 exports.default = {
     build: build_1.default,
     init: init_1.default,

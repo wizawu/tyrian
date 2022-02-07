@@ -1,51 +1,41 @@
 "use strict";
-var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
-    if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
-        if (ar || !(i in from)) {
-            if (!ar) ar = Array.prototype.slice.call(from, 0, i);
-            ar[i] = from[i];
-        }
-    }
-    return to.concat(ar || Array.prototype.slice.call(from));
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.isLambda = exports.qualifiedName = exports.convertNamespace = exports.convertMemberModifier = exports.declareNamespaces = exports.typeToString = exports.typeArgumentsToString = exports.header = exports.declareMethod = exports.declareField = exports.declareConstructor = exports.generateTsDef = void 0;
-var chalk_1 = __importDefault(require("chalk"));
-var fs_1 = __importDefault(require("fs"));
-var path_1 = __importDefault(require("path"));
-var LambdaSuffix = "$$lambda";
+const chalk_1 = __importDefault(require("chalk"));
+const fs_1 = __importDefault(require("fs"));
+const path_1 = __importDefault(require("path"));
+const LambdaSuffix = "$$lambda";
 function generateTsDef(context, ifs, typeRoot) {
     var _a;
     fs_1.default.mkdirSync(typeRoot, { recursive: true });
-    var references = [];
-    var topNamespaces = {};
-    var _loop_1 = function (c) {
-        var filename = "";
-        var frontBuffer = [];
-        var endBuffer = [];
-        var lambdaBuffer = "";
+    const references = [];
+    const topNamespaces = {};
+    for (const c of context.classOrInterface()) {
+        let filename = "";
+        const frontBuffer = [];
+        const endBuffer = [];
+        const lambdaBuffer = "";
         if (c.classDeclaration()) {
-            var classModifier = c.classDeclaration().classModifier();
-            var type = c.classDeclaration().type(0);
-            var extend = c.classDeclaration().type(1);
-            var implement = c.classDeclaration().typeList();
-            var classBody = c.classDeclaration().classBody();
+            const classModifier = c.classDeclaration().classModifier();
+            const type = c.classDeclaration().type(0);
+            const extend = c.classDeclaration().type(1);
+            const implement = c.classDeclaration().typeList();
+            const classBody = c.classDeclaration().classBody();
             filename = qualifiedName(type) + ".d.ts";
             topNamespaces[type.packageName().Identifier(0).getText()] = true;
             // declare namespaces
-            var nsDeclaration = declareNamespaces(type);
+            const nsDeclaration = declareNamespaces(type);
             frontBuffer.push(nsDeclaration[0]);
             endBuffer.push(nsDeclaration[1]);
             // class header
-            var modifier = classModifier.some(function (it) { return it.getText() === "abstract"; }) ? "abstract " : "";
+            const modifier = classModifier.some(it => it.getText() === "abstract") ? "abstract " : "";
             frontBuffer.push(modifier + "class " + header(type, extend && [extend], implement === null || implement === void 0 ? void 0 : implement.type()) + " {");
             endBuffer.push("}\n");
             // generate members
-            for (var _c = 0, _d = classBody.classMember(); _c < _d.length; _c++) {
-                var member = _d[_c];
+            for (const member of classBody.classMember()) {
                 if (member.constructorDeclaration()) {
                     frontBuffer.push("  " + declareConstructor(member.constructorDeclaration(), ifs));
                 }
@@ -58,36 +48,35 @@ function generateTsDef(context, ifs, typeRoot) {
             }
         }
         else if (c.interfaceDeclaration()) {
-            var type_1 = c.interfaceDeclaration().type();
-            var extend = c.interfaceDeclaration().typeList();
-            var interfaceBody = c.interfaceDeclaration().interfaceBody();
-            filename = qualifiedName(type_1) + ".d.ts";
-            topNamespaces[type_1.packageName().Identifier(0).getText()] = true;
+            const type = c.interfaceDeclaration().type();
+            const extend = c.interfaceDeclaration().typeList();
+            const interfaceBody = c.interfaceDeclaration().interfaceBody();
+            filename = qualifiedName(type) + ".d.ts";
+            topNamespaces[type.packageName().Identifier(0).getText()] = true;
             // declare namespaces
-            var nsDeclaration = declareNamespaces(type_1);
+            const nsDeclaration = declareNamespaces(type);
             frontBuffer.push(nsDeclaration[0]);
             endBuffer.push(nsDeclaration[1]);
             // generate lambda type
-            if (isLambda(ifs, type_1)) {
-                if ((_a = interfaceBody.interfaceMember()) === null || _a === void 0 ? void 0 : _a.some(function (it) { return it.methodDeclaration(); })) {
-                    var method = interfaceBody.interfaceMember().filter(function (it) { return it.methodDeclaration(); })[0].methodDeclaration();
-                    frontBuffer.push("interface " + type_1.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type_1.typeArguments()) +
+            if (isLambda(ifs, type)) {
+                if ((_a = interfaceBody.interfaceMember()) === null || _a === void 0 ? void 0 : _a.some(it => it.methodDeclaration())) {
+                    const method = interfaceBody.interfaceMember().filter(it => it.methodDeclaration())[0].methodDeclaration();
+                    frontBuffer.push("interface " + type.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type.typeArguments()) +
                         " {\n(" + methodArgumentsToString(method.methodArguments(), ifs) + ")" +
                         ": " + methodArgumentToString(method.type(), ifs) + "\n}\n");
                 }
                 else {
-                    extend.type().filter(function (it) { return isLambda(ifs, it); }).forEach(function (it) {
-                        frontBuffer.push("type " + type_1.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type_1.typeArguments()) +
+                    extend.type().filter(it => isLambda(ifs, it)).forEach(it => {
+                        frontBuffer.push("type " + type.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type.typeArguments()) +
                             " = " + qualifiedName(it, true) + LambdaSuffix + typeArgumentsToString(it.typeArguments()) + "\n");
                     });
                 }
             }
             // interface header
-            frontBuffer.push("interface " + header(type_1, extend === null || extend === void 0 ? void 0 : extend.type()) + " {");
+            frontBuffer.push("interface " + header(type, extend === null || extend === void 0 ? void 0 : extend.type()) + " {");
             endBuffer.push("}\n");
             // generate members
-            for (var _e = 0, _f = interfaceBody.interfaceMember(); _e < _f.length; _e++) {
-                var member = _f[_e];
+            for (const member of interfaceBody.interfaceMember()) {
                 if (member.fieldDeclaration()) {
                     frontBuffer.push("  " + declareField(member.fieldDeclaration()));
                 }
@@ -98,24 +87,20 @@ function generateTsDef(context, ifs, typeRoot) {
         }
         else {
             console.error("Cannot find class or interface declaration");
-            return "continue";
+            continue;
         }
         if (filename) {
-            var content = __spreadArray(__spreadArray([], frontBuffer, true), endBuffer.reverse(), true).join("\n");
+            const content = [...frontBuffer, ...endBuffer.reverse()].join("\n");
             fs_1.default.writeFileSync(path_1.default.join(typeRoot, filename), content + lambdaBuffer);
             process.stdout.clearLine(0);
             process.stdout.cursorTo(0);
-            process.stdout.write("Generated lib/@types/".concat(filename));
+            process.stdout.write(`Generated lib/@types/${filename}`);
             references.push(filename);
         }
-    };
-    for (var _i = 0, _b = context.classOrInterface(); _i < _b.length; _i++) {
-        var c = _b[_i];
-        _loop_1(c);
     }
     process.stdout.clearLine(0);
     process.stdout.cursorTo(0);
-    fs_1.default.writeFileSync(path_1.default.join(typeRoot, "index.d.ts"), references.map(function (it) { return "/// <reference path=\"".concat(it, "\" />"); }).sort().join("\n"));
+    fs_1.default.writeFileSync(path_1.default.join(typeRoot, "index.d.ts"), references.map(it => `/// <reference path="${it}" />`).sort().join("\n"));
     console.log(chalk_1.default.green("Generated " + path_1.default.join(typeRoot, "index.d.ts")));
     fs_1.default.writeFileSync(path_1.default.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
     console.log(chalk_1.default.green("Generated " + path_1.default.join(typeRoot, "namespace.json")));
@@ -124,8 +109,8 @@ function generateTsDef(context, ifs, typeRoot) {
 exports.generateTsDef = generateTsDef;
 function declareConstructor(constructor, ifs) {
     var _a;
-    var result = "";
-    (_a = constructor.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += convertMemberModifier(it.getText()) + " "; });
+    let result = "";
+    (_a = constructor.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(it => result += convertMemberModifier(it.getText()) + " ");
     result += "constructor";
     result += "(" + methodArgumentsToString(constructor.methodArguments(), ifs) + ")";
     return result;
@@ -135,19 +120,18 @@ function declareField(field) {
     var _a;
     if (field.Identifier().getText() === "constructor")
         return "";
-    var result = "";
-    (_a = field.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += convertMemberModifier(it.getText(), true) + " "; });
+    let result = "";
+    (_a = field.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(it => result += convertMemberModifier(it.getText(), true) + " ");
     result += field.Identifier().getText();
     result += ": " + typeToString(field.type());
     return result;
 }
 exports.declareField = declareField;
-function declareMethod(method, ifs, isClass) {
+function declareMethod(method, ifs, isClass = false) {
     var _a;
-    if (isClass === void 0) { isClass = false; }
-    var result = "";
+    let result = "";
     if (isClass) {
-        (_a = method.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(function (it) { return result += convertMemberModifier(it.getText()) + " "; });
+        (_a = method.modifier()) === null || _a === void 0 ? void 0 : _a.forEach(it => result += convertMemberModifier(it.getText()) + " ");
     }
     result += method.Identifier().getText();
     result += typeArgumentsToString(method.typeArguments());
@@ -164,16 +148,13 @@ function methodArgumentToString(type, ifs) {
         ].join(" | ");
     }
     else {
-        return typeAlias(qualifiedName(type, true)).map(function (it) {
-            return it + typeArgumentsToString(type.typeArguments());
-        }).join(" | ");
+        return typeAlias(qualifiedName(type, true)).map(it => it + typeArgumentsToString(type.typeArguments())).join(" | ");
     }
 }
 function methodArgumentsToString(methodArgs, ifs) {
     var _a;
-    var result = [];
-    for (var _i = 0, _b = (((_a = methodArgs.typeList()) === null || _a === void 0 ? void 0 : _a.type()) || []); _i < _b.length; _i++) {
-        var type = _b[_i];
+    const result = [];
+    for (const type of (((_a = methodArgs.typeList()) === null || _a === void 0 ? void 0 : _a.type()) || [])) {
         result.push("arg" + result.length + ": " + methodArgumentToString(type, ifs));
     }
     if (methodArgs.varargs()) {
@@ -182,12 +163,12 @@ function methodArgumentsToString(methodArgs, ifs) {
     return result.join(", ");
 }
 function header(type, extend, implement) {
-    var result = type.Identifier().getText() + typeArgumentsToString(type.typeArguments());
+    let result = type.Identifier().getText() + typeArgumentsToString(type.typeArguments());
     if (extend && extend.length) {
-        result += " extends " + extend.map(function (it) { return typeToString(it); }).join(", ");
+        result += " extends " + extend.map(it => typeToString(it)).join(", ");
     }
     if (implement && implement.length) {
-        result += " implements " + implement.map(function (it) { return typeToString(it); }).join(", ");
+        result += " implements " + implement.map(it => typeToString(it)).join(", ");
     }
     return result;
 }
@@ -198,8 +179,8 @@ function typeArgumentsToString(typeArgs) {
         return "";
     }
     else if (typeArgs.typeArgument().length) {
-        var args = typeArgs.typeArgument().map(function (it) { return typeArgumentToString(it); });
-        return "<" + args.join(",") + ">" + (((_a = typeArgs.arrayBrackets()) === null || _a === void 0 ? void 0 : _a.map(function (it) { return it.getText(); }).join("")) || "");
+        const args = typeArgs.typeArgument().map(it => typeArgumentToString(it));
+        return "<" + args.join(",") + ">" + (((_a = typeArgs.arrayBrackets()) === null || _a === void 0 ? void 0 : _a.map(it => it.getText()).join("")) || "");
     }
     else {
         return typeArgs.getText();
@@ -211,10 +192,10 @@ function typeArgumentToString(typeArg) {
     if (((_a = typeArg.getChild(1)) === null || _a === void 0 ? void 0 : _a.getText()) === "extends") {
         if (typeArg.Identifier()) {
             return typeArg.Identifier().getText() + " extends " +
-                typeArg.type().map(function (it) { return typeToString(it); }).join(" & ");
+                typeArg.type().map(it => typeToString(it)).join(" & ");
         }
         else {
-            return typeArg.type().map(function (it) { return typeToString(it); }).join(" & ");
+            return typeArg.type().map(it => typeToString(it)).join(" & ");
         }
     }
     else if (((_b = typeArg.getChild(1)) === null || _b === void 0 ? void 0 : _b.getText()) === "super") {
@@ -227,8 +208,7 @@ function typeArgumentToString(typeArg) {
         return "unknown";
     }
 }
-function typeToString(type, alias) {
-    if (alias === void 0) { alias = false; }
+function typeToString(type, alias = false) {
     if (type.subType()) {
         return "unknown";
     }
@@ -241,11 +221,10 @@ function typeToString(type, alias) {
 }
 exports.typeToString = typeToString;
 function declareNamespaces(type) {
-    var result = ["", ""];
-    for (var _i = 0, _a = type.packageName().Identifier(); _i < _a.length; _i++) {
-        var id = _a[_i];
-        var ns = convertNamespace(id.getText());
-        result[0] += "namespace ".concat(ns, " {\n");
+    const result = ["", ""];
+    for (const id of type.packageName().Identifier()) {
+        const ns = convertNamespace(id.getText());
+        result[0] += `namespace ${ns} {\n`;
         result[1] += "}\n";
     }
     return result[0] ? ["declare " + result[0], result[1]] : result;
@@ -276,8 +255,7 @@ function typeAlias(type) {
     }
 }
 // Convert member modifier
-function convertMemberModifier(modifier, isField) {
-    if (isField === void 0) { isField = false; }
+function convertMemberModifier(modifier, isField = false) {
     if (modifier === "abstract")
         return modifier;
     if (modifier === "final" && isField)
@@ -295,16 +273,15 @@ function convertMemberModifier(modifier, isField) {
 exports.convertMemberModifier = convertMemberModifier;
 // Append $ to namespace if it is a typescript keyword
 function convertNamespace(namespace) {
-    var invalid = ["debugger", "enum", "export", "function", "in", "is", "var"];
+    const invalid = ["debugger", "enum", "export", "function", "in", "is", "var"];
     return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$");
 }
 exports.convertNamespace = convertNamespace;
-function qualifiedName(type, safe) {
+function qualifiedName(type, safe = false) {
     var _a, _b;
-    if (safe === void 0) { safe = false; }
     if (safe) {
-        var packages = ((_a = type.packageName()) === null || _a === void 0 ? void 0 : _a.Identifier().map(function (it) { return convertNamespace(it.getText()); })) || [];
-        return __spreadArray(__spreadArray([], packages, true), [type.Identifier().getText()], false).join(".");
+        const packages = ((_a = type.packageName()) === null || _a === void 0 ? void 0 : _a.Identifier().map(it => convertNamespace(it.getText()))) || [];
+        return [...packages, type.Identifier().getText()].join(".");
     }
     else {
         return (((_b = type.packageName()) === null || _b === void 0 ? void 0 : _b.getText().concat(".")) || "") + type.Identifier().getText();
@@ -313,15 +290,15 @@ function qualifiedName(type, safe) {
 exports.qualifiedName = qualifiedName;
 // Return if an interface can be represented with a lambda expression
 function isLambda(stat, type) {
-    var count = 0;
-    var bfs = [qualifiedName(type)];
+    let count = 0;
+    const bfs = [qualifiedName(type)];
     if (bfs[0] === "java.util.function.Consumer")
         return true;
-    for (var i = 0; i < bfs.length; i++) {
-        var current = bfs[i];
+    for (let i = 0; i < bfs.length; i++) {
+        const current = bfs[i];
         if (stat[current]) {
             count += stat[current][0];
-            stat[current].slice(1).forEach(function (it) {
+            stat[current].slice(1).forEach(it => {
                 if (bfs.indexOf(it) < 0)
                     bfs.push(it);
             });

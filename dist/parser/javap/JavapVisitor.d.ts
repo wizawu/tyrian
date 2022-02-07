@@ -1,6 +1,4 @@
-export function JavapVisitor(): this;
-export class JavapVisitor {
-    constructor: typeof JavapVisitor;
+export default class JavapVisitor {
     visitCompilationUnit(ctx: any): any;
     visitSourceDeclaration(ctx: any): any;
     visitClassOrInterface(ctx: any): any;

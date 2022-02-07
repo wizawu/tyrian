@@ -1,14 +1,15 @@
-export function JavapParser(input: any): this;
-export class JavapParser {
+declare class JavapParser extends antlr4.Parser {
+    static grammarFileName: string;
+    static literalNames: (string | null)[];
+    static symbolicNames: (string | null)[];
+    static ruleNames: string[];
     constructor(input: any);
     _interp: any;
     ruleNames: string[];
     literalNames: (string | null)[];
     symbolicNames: (string | null)[];
-    constructor: typeof JavapParser;
     get atn(): any;
     compilationUnit(): CompilationUnitContext;
-    state: number | undefined;
     sourceDeclaration(): SourceDeclarationContext;
     classOrInterface(): ClassOrInterfaceContext;
     classDeclaration(): ClassDeclarationContext;
@@ -34,7 +35,7 @@ export class JavapParser {
     methodArguments(): MethodArgumentsContext;
     arrayBrackets(): ArrayBracketsContext;
 }
-export namespace JavapParser {
+declare namespace JavapParser {
     export const EOF: number;
     export const T__0: number;
     export const T__1: number;
@@ -124,304 +125,155 @@ export namespace JavapParser {
     export { MethodArgumentsContext };
     export { ArrayBracketsContext };
 }
-declare function CompilationUnitContext(parser: any, parent: any, invokingState: any): this;
-declare class CompilationUnitContext {
+export default JavapParser;
+import antlr4 from "antlr4";
+declare class CompilationUnitContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof CompilationUnitContext;
-    sourceDeclaration(i: any): any;
-    classOrInterface(i: any): any;
-    EOF(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
+    sourceDeclaration: (i: any) => any;
+    classOrInterface: (i: any) => any;
+    EOF(): antlr4.Token;
 }
-declare function SourceDeclarationContext(parser: any, parent: any, invokingState: any): this;
-declare class SourceDeclarationContext {
+declare class SourceDeclarationContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof SourceDeclarationContext;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function ClassOrInterfaceContext(parser: any, parent: any, invokingState: any): this;
-declare class ClassOrInterfaceContext {
+declare class ClassOrInterfaceContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof ClassOrInterfaceContext;
     classDeclaration(): any;
     interfaceDeclaration(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function ClassDeclarationContext(parser: any, parent: any, invokingState: any): this;
-declare class ClassDeclarationContext {
+declare class ClassDeclarationContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof ClassDeclarationContext;
-    type(i: any): any;
+    type: (i: any) => any;
     classBody(): any;
-    classModifier(i: any): any;
+    classModifier: (i: any) => any;
     typeList(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function InterfaceDeclarationContext(parser: any, parent: any, invokingState: any): this;
-declare class InterfaceDeclarationContext {
+declare class InterfaceDeclarationContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof InterfaceDeclarationContext;
     type(): any;
     interfaceBody(): any;
-    interfaceModifier(i: any): any;
+    interfaceModifier: (i: any) => any;
     typeList(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function ClassModifierContext(parser: any, parent: any, invokingState: any): this;
-declare class ClassModifierContext {
+declare class ClassModifierContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof ClassModifierContext;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function InterfaceModifierContext(parser: any, parent: any, invokingState: any): this;
-declare class InterfaceModifierContext {
+declare class InterfaceModifierContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof InterfaceModifierContext;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function TypeListContext(parser: any, parent: any, invokingState: any): this;
-declare class TypeListContext {
+declare class TypeListContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof TypeListContext;
-    type(i: any): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
+    type: (i: any) => any;
 }
-declare function TypeContext(parser: any, parent: any, invokingState: any): this;
-declare class TypeContext {
+declare class TypeContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof TypeContext;
-    Identifier(): any;
+    Identifier(): antlr4.Token;
     packageName(): any;
     typeArguments(): any;
     subType(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function SubTypeContext(parser: any, parent: any, invokingState: any): this;
-declare class SubTypeContext {
+declare class SubTypeContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof SubTypeContext;
-    Identifier(): any;
+    Identifier(): antlr4.Token;
     typeArguments(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function PackageNameContext(parser: any, parent: any, invokingState: any): this;
-declare class PackageNameContext {
+declare class PackageNameContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof PackageNameContext;
-    Identifier(i: any): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
+    Identifier: (i: any) => any;
 }
-declare function TypeArgumentsContext(parser: any, parent: any, invokingState: any): this;
-declare class TypeArgumentsContext {
+declare class TypeArgumentsContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof TypeArgumentsContext;
-    arrayBrackets(i: any): any;
-    typeArgument(i: any): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
+    arrayBrackets: (i: any) => any;
+    typeArgument: (i: any) => any;
 }
-declare function TypeArgumentContext(parser: any, parent: any, invokingState: any): this;
-declare class TypeArgumentContext {
+declare class TypeArgumentContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof TypeArgumentContext;
-    type(i: any): any;
-    Identifier(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
+    type: (i: any) => any;
+    Identifier(): antlr4.Token;
 }
-declare function ClassBodyContext(parser: any, parent: any, invokingState: any): this;
-declare class ClassBodyContext {
+declare class ClassBodyContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof ClassBodyContext;
-    classMember(i: any): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
+    classMember: (i: any) => any;
 }
-declare function InterfaceBodyContext(parser: any, parent: any, invokingState: any): this;
-declare class InterfaceBodyContext {
+declare class InterfaceBodyContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof InterfaceBodyContext;
-    interfaceMember(i: any): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
+    interfaceMember: (i: any) => any;
 }
-declare function ModifierContext(parser: any, parent: any, invokingState: any): this;
-declare class ModifierContext {
+declare class ModifierContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof ModifierContext;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function ClassMemberContext(parser: any, parent: any, invokingState: any): this;
-declare class ClassMemberContext {
+declare class ClassMemberContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof ClassMemberContext;
     constructorDeclaration(): any;
     fieldDeclaration(): any;
     methodDeclaration(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function InterfaceMemberContext(parser: any, parent: any, invokingState: any): this;
-declare class InterfaceMemberContext {
+declare class InterfaceMemberContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof InterfaceMemberContext;
     fieldDeclaration(): any;
     methodDeclaration(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function ConstructorDeclarationContext(parser: any, parent: any, invokingState: any): this;
-declare class ConstructorDeclarationContext {
+declare class ConstructorDeclarationContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof ConstructorDeclarationContext;
     type(): any;
     methodArguments(): any;
-    modifier(i: any): any;
+    modifier: (i: any) => any;
     typeArguments(): any;
     throwsException(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function FieldDeclarationContext(parser: any, parent: any, invokingState: any): this;
-declare class FieldDeclarationContext {
+declare class FieldDeclarationContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof FieldDeclarationContext;
     type(): any;
-    Identifier(): any;
-    modifier(i: any): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
+    Identifier(): antlr4.Token;
+    modifier: (i: any) => any;
 }
-declare function MethodDeclarationContext(parser: any, parent: any, invokingState: any): this;
-declare class MethodDeclarationContext {
+declare class MethodDeclarationContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof MethodDeclarationContext;
     type(): any;
-    Identifier(): any;
+    Identifier(): antlr4.Token;
     methodArguments(): any;
-    modifier(i: any): any;
+    modifier: (i: any) => any;
     typeArguments(): any;
     throwsException(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function ThrowsExceptionContext(parser: any, parent: any, invokingState: any): this;
-declare class ThrowsExceptionContext {
+declare class ThrowsExceptionContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof ThrowsExceptionContext;
     typeList(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function VarargsContext(parser: any, parent: any, invokingState: any): this;
-declare class VarargsContext {
+declare class VarargsContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof VarargsContext;
     type(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function MethodArgumentsContext(parser: any, parent: any, invokingState: any): this;
-declare class MethodArgumentsContext {
+declare class MethodArgumentsContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof MethodArgumentsContext;
     typeList(): any;
     varargs(): any;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-declare function ArrayBracketsContext(parser: any, parent: any, invokingState: any): this;
-declare class ArrayBracketsContext {
+declare class ArrayBracketsContext extends antlr4.ParserRuleContext {
     constructor(parser: any, parent: any, invokingState: any);
     parser: any;
-    ruleIndex: number;
-    constructor: typeof ArrayBracketsContext;
-    enterRule(listener: any): void;
-    exitRule(listener: any): void;
-    accept(visitor: any): any;
 }
-export {};

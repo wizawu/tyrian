@@ -4,7 +4,7 @@
 
 We've built several projects with tyrian, such as websites and trading system. Try it if you love TypeScript.
 
-* Check out the [official website](https://tyrian.wizawu.com) for more information.
+* Check out the [official website](https://wizawu.github.io/tyrian) for more information.
 * Check out the [examples](/examples).
 
-<img src="https://tyrian.wizawu.com/assets/images/autocomplete.gif" width="640" />
+<img src="/docs/assets/images/autocomplete.gif" width="640" />

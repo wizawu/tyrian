@@ -1,14 +1,15 @@
 Changelog
 ===
 
-### Roadmap
+### 11.0.0
 
-* None
+* Upgrade TypeScript to 4.8.
+* Drop support for Graal.js.
 
 ### 9.0.0
 
 * Migrate to Java 11.
-* Support both nashorn and graal.js.
+* Support both Nashorn and Graal.js.
 * Upgrade TypeScript to 4.2.
 * Change `mvnDependencies` from array to map.
 

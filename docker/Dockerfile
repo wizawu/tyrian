@@ -1,6 +1,7 @@
-FROM gradle:6.9.2-jdk11 as intermedia
-FROM ghcr.io/graalvm/nodejs:java11-21.3.0
+FROM gradle:6.9.3-jdk11-focal as intermedia
+FROM node:16.18.1-buster-slim
 
 COPY --from=intermedia /opt/gradle /opt/gradle
+COPY --from=intermedia /opt/java/openjdk /opt/openjdk
 RUN npm install -g tyrian@latest && npm cache clean --force
-ENV PATH=$PATH:/opt/gradle/bin:/usr/lib64/graalvm/graalvm21-ce-java11/languages/nodejs/bin
+ENV PATH=$PATH:/opt/gradle/bin:/opt/openjdk/bin

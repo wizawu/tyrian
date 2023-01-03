@@ -1,6 +1,5 @@
-**/node_modules/
 *.jar
 *.log
 *.swp
 .antlr/
-tmp/
+node_modules/

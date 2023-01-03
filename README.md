@@ -8,3 +8,10 @@ We've built several projects with tyrian, such as websites and trading system. T
 * Check out the [examples](/examples).
 
 <img src="/docs/assets/images/autocomplete.gif" width="640" />
+
+### Docker
+
+```
+docker pull wizawu/tyrian:latest
+docker run --rm wizawu/tyrian:latest tyrian --help
+```

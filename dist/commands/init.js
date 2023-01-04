@@ -1,23 +1,4 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    Object.defineProperty(o, k2, { enumerable: true, get: function() { return m[k]; } });
-}) : (function(o, m, k, k2) {
-    if (k2 === undefined) k2 = k;
-    o[k2] = m[k];
-}));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
-    Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
-    o["default"] = v;
-});
-var __importStar = (this && this.__importStar) || function (mod) {
-    if (mod && mod.__esModule) return mod;
-    var result = {};
-    if (mod != null) for (var k in mod) if (k !== "default" && Object.prototype.hasOwnProperty.call(mod, k)) __createBinding(result, mod, k);
-    __setModuleDefault(result, mod);
-    return result;
-};
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -27,10 +8,8 @@ const child_process_1 = require("child_process");
 const chalk_1 = __importDefault(require("chalk"));
 const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
-const prompts_1 = __importDefault(require("prompts"));
 const errors_1 = require("../errors");
 const constants_1 = require("../constants");
-const utils = __importStar(require("../utils"));
 function default_1() {
     console.log("Checking prerequisites...\n");
     if (!check("node", ["-v"]) || !check("npm", ["-v"]) || !check("gradle", ["-v"])) {
@@ -46,41 +25,16 @@ function default_1() {
         process.exit(errors_1.code.INIT_CONFLICT);
     }
     else {
-        (0, prompts_1.default)({
-            name: "runtime",
-            message: "Choose runtime",
-            type: "select",
-            choices: [
-                { value: "graaljs", title: "Graal.js (recommended)" },
-                { value: "nashorn", title: "Nashorn" },
-            ],
-        }).then(({ runtime }) => {
-            if (runtime === "graaljs") {
-                (0, prompts_1.default)({
-                    name: "executable",
-                    message: "Where is the Graal.js executable file (node)",
-                    type: "text",
-                    initial: "node",
-                }).then(({ executable }) => initProject(runtime, executable));
-            }
-            if (runtime === "nashorn") {
-                (0, prompts_1.default)({
-                    name: "executable",
-                    message: "Where is the Nashorn executable file (jjs)",
-                    type: "text",
-                    initial: "jjs",
-                }).then(({ executable }) => initProject(runtime, executable));
-            }
-        });
+        initProject();
     }
 }
 exports.default = default_1;
-function initProject(runtime, executable) {
-    // create .env
-    const runtimePath = utils.realPath(executable);
-    fs_1.default.appendFileSync(constants_1.path.ENV, `runtime=${runtimePath}\n`);
+function initProject() {
     // create package.json
     fs_1.default.writeFileSync(constants_1.path.PACKAGE, JSON.stringify({
+        config: {
+            [constants_1.config.NASHORN]: "jjs"
+        },
         dependencies: {},
         mvnDependencies: {},
     }, null, 2));

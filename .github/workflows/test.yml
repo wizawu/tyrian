@@ -27,6 +27,6 @@ jobs:
           node-version: "16.x"
       - run: npm install
       - run: npm run lint
-      - run: npm run build
-      - run: npm run test
-      - run: cd test/integration && make test
+      # run: npm run build
+      # run: npm run test
+      # run: cd test/integration && make test

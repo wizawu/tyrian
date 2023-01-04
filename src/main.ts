@@ -33,10 +33,9 @@ program
 program
   .command("run <output> [arguments...]")
   .description("execute one of the build output")
-  .option("--inspect-brk [port]", "activate inspector on port (only with graaljs runtime)")
   .option("-w --watch", "watch changes and re-run", false)
-  .action((output, args, { inspectBrk, watch }) => {
-    commands.run(output, args, { inspectBrk, watch })
+  .action((output, args, { watch }) => {
+    commands.run(output, args, watch)
   })
 
 program.parse(process.argv)

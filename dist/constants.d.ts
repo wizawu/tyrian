@@ -1,5 +1,7 @@
 export declare const path: {
-    ENV: string;
     PACKAGE: string;
     TSCONFIG: string;
+};
+export declare const config: {
+    NASHORN: string;
 };

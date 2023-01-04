@@ -2,11 +2,9 @@ import { spawnSync } from "child_process"
 import chalk from "chalk"
 import fs from "fs"
 import path from "path"
-import prompts from "prompts"
 
 import { code as ErrorCode } from "../errors"
-import { path as PATH } from "../constants"
-import * as utils from "../utils"
+import { path as PATH, config as CONFIG } from "../constants"
 
 export default function (): void {
   console.log("Checking prerequisites...\n")
@@ -22,43 +20,18 @@ export default function (): void {
     console.error(chalk.yellow(PATH.TSCONFIG + " already exists."))
     process.exit(ErrorCode.INIT_CONFLICT)
   } else {
-    prompts({
-      name: "runtime",
-      message: "Choose runtime",
-      type: "select",
-      choices: [
-        { value: "graaljs", title: "Graal.js (recommended)" },
-        { value: "nashorn", title: "Nashorn" },
-      ],
-    }).then(({ runtime }) => {
-      if (runtime === "graaljs") {
-        prompts({
-          name: "executable",
-          message: "Where is the Graal.js executable file (node)",
-          type: "text",
-          initial: "node",
-        }).then(({ executable }) => initProject(runtime, executable))
-      }
-      if (runtime === "nashorn") {
-        prompts({
-          name: "executable",
-          message: "Where is the Nashorn executable file (jjs)",
-          type: "text",
-          initial: "jjs",
-        }).then(({ executable }) => initProject(runtime, executable))
-      }
-    })
+    createFiles()
   }
 }
 
-function initProject(runtime: Runtime, executable: string): void {
-  // create .env
-  const runtimePath = utils.realPath(executable)
-  fs.appendFileSync(PATH.ENV, `runtime=${runtimePath}\n`)
+function createFiles(): void {
   // create package.json
   fs.writeFileSync(
     PATH.PACKAGE,
     JSON.stringify({
+      config: {
+        [CONFIG.NASHORN]: "jjs"
+      },
       dependencies: {},
       mvnDependencies: {},
     }, null, 2)

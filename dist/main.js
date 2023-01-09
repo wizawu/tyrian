@@ -33402,8 +33402,8 @@ var gradleTemplate = (deps) => (0, import_redent.default)(`
   }
 
   tasks.register("install", Copy) {
+    from sourceSets.main.runtimeClasspath
     into "."
-    from configurations.runtime
   }
 
   dependencies {

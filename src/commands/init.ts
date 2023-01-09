@@ -21,6 +21,7 @@ export default function (): void {
     process.exit(ErrorCode.INIT_CONFLICT)
   } else {
     createFiles()
+    console.log(`Initialized project in ${process.cwd()}`)
   }
 }
 

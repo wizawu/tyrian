@@ -1,6 +1,7 @@
-import fs from "fs"
-import path from "path"
-import webpack, { Stats } from "webpack"
+import { Stats } from "webpack"
+import * as fs from "fs"
+import * as path from "path"
+// import webpack from "webpack"
 
 import { checkRuntime } from "./run"
 import { code as ErrorCode } from "../errors"
@@ -25,6 +26,7 @@ export default function (entries: string[], outDir: string, watch: boolean): voi
   }
 }
 
+/*
 function getCompiler(entries: string[], outDir: string): webpack.Compiler {
   const context = process.cwd()
   const entry = {}
@@ -68,6 +70,7 @@ function getCompiler(entries: string[], outDir: string): webpack.Compiler {
     ],
   })
 }
+*/
 
 function globalVarDefinition(): Record<string, string> {
   const vars = ["com", "java", "javax", "jdk", "netscape", "org"]

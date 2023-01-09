@@ -40,7 +40,7 @@ export default async function (offline: boolean): Promise<void> {
 }
 
 export async function listLibClasses(jars: string[]): Promise<string[]> {
-  const classes: { [_: string]: boolean } = {}
+  const classes: Record<string, boolean> = {}
   for (const jar of jars) {
     const data = fs.readFileSync(jar)
     const files = (await zip.loadAsync(data)).files
@@ -65,7 +65,7 @@ function npmInstall(): void {
 function gradleInstall(): void {
   fs.mkdirSync(path.join("lib", "@types"), { recursive: true })
   fs.writeFileSync(path.join("lib", "@types", "index.d.ts"), "")
-  const mvnDependencies: { [_: string]: string } = {};
+  const mvnDependencies: Record<string, string> = {};
   // find all mvnDependencies from node_modules
   [PATH.PACKAGE, ...new GlobSync(path.join("node_modules", "**", PATH.PACKAGE)).found].forEach(it => {
     const pkg = JSON.parse(fs.readFileSync(it as string, "utf-8"))
@@ -93,16 +93,15 @@ export const gradleTemplate = (deps: string[]): string => redent(`
   apply plugin: "java"
 
   repositories {
-    jcenter()
     mavenCentral()
   }
 
-  task install(type: Copy) {
+  tasks.register("install", Copy) {
+    from sourceSets.main.runtimeClasspath
     into "."
-    from configurations.runtime
   }
 
   dependencies {
-    ${deps.map(it => `compile "${it}"`).join("\n    ")}
+    ${deps.map(it => `implementation "${it}"`).join("\n    ")}
   }
 `, 0).trimStart()

@@ -1,7 +1,6 @@
 import { spawnSync } from "child_process"
-import dotenv from "dotenv"
-import fs from "fs"
-import path from "path"
+import * as fs from "fs"
+import * as path from "path"
 import which from "which"
 
 export function listFilesByExt(dirname: string, ext: string): string[] {
@@ -42,7 +41,7 @@ export function javap(classPaths: string[], classList: string[]): string | null 
   let command = process.env.JAVAP
   if (!command) {
     try {
-      const { runtime } = dotenv.config().parsed || {}
+      const runtime = "nashorn"
       command = runtime ? path.resolve(locateJdk(runtime)[1], "bin", "javap") : realPath("javap")
     } catch (e) {
       command = realPath("javap")

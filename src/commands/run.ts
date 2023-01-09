@@ -1,5 +1,4 @@
 import chalk from "chalk"
-import dotenv from "dotenv"
 import fs from "fs"
 import redent from "redent"
 import { ChildProcessWithoutNullStreams, spawn, spawnSync } from "child_process"
@@ -62,7 +61,7 @@ export default function (output: string, args: string[], { inspectBrk, watch }: 
 }
 
 export function checkRuntime(): [Runtime, string] {
-  const { runtime } = dotenv.config().parsed || {}
+  const runtime = "nashorn"
   const [type] = utils.locateJdk(runtime)
   if (type === "graaljs") {
     return ["graaljs", runtime]
@@ -73,7 +72,7 @@ export function checkRuntime(): [Runtime, string] {
   } else if (spawnSync("jjs", ["-version"]).status === 0) {
     return ["nashorn", "jjs"]
   } else {
-    console.error(`Please define the runtime in ${PATH.ENV}`)
+    console.error(`Please define the runtime in $PATH.ENV`)
     console.error(redent(`
       runtime=/path/to/graalvm/bin/node
       // or

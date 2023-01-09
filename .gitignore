@@ -2,4 +2,5 @@
 *.log
 *.swp
 .antlr/
+build/
 node_modules/

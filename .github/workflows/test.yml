@@ -24,9 +24,6 @@ jobs:
           gradle-version: 7.6
       - uses: actions/setup-node@v3
         with:
-          node-version: "16.x"
+          node-version: "18.x"
       - run: npm install
-      - run: npm run lint
-      # run: npm run build
-      # run: npm run test
-      # run: cd test/integration && make test
+      - run: npm run build

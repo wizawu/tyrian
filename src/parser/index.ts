@@ -8,17 +8,30 @@ import JavapParser from "./javap/JavapParser"
 const PARSE_CHUNK = 500
 
 export function parse(classPaths: string[], counter: InterfaceStat, classList: string[], typeRoot?: string): boolean {
-  const context = parseClasses(classPaths, classList.filter(it => !it.startsWith("kotlin.")))
+  const context = parseClasses(
+    classPaths,
+    classList.filter(it => !it.startsWith("kotlin."))
+  )
   if (context === null) return false
 
-  const interfaces = context.classOrInterface()
-    .map(it => it.interfaceDeclaration()).filter(it => it)
+  const interfaces = context
+    .classOrInterface()
+    .map(it => it.interfaceDeclaration())
+    .filter(it => it)
   for (const it of interfaces) {
     const className = visitor.qualifiedName(it.type())
-    const count = it.interfaceBody().interfaceMember()
+    const count = it
+      .interfaceBody()
+      .interfaceMember()
       .filter(it => it.methodDeclaration()).length
     if (it.typeList()) {
-      counter[className] = [count, ...it.typeList().type().map(it => visitor.qualifiedName(it))]
+      counter[className] = [
+        count,
+        ...it
+          .typeList()
+          .type()
+          .map(it => visitor.qualifiedName(it)),
+      ]
     } else {
       counter[className] = [count]
     }

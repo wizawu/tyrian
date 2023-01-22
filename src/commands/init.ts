@@ -29,28 +29,36 @@ function createFiles(): void {
   // create package.json
   fs.writeFileSync(
     PATH.PACKAGE,
-    JSON.stringify({
-      config: {
-        [CONFIG.NASHORN]: "jjs"
+    JSON.stringify(
+      {
+        config: {
+          [CONFIG.NASHORN]: "jjs",
+        },
+        dependencies: {},
+        mvnDependencies: {},
       },
-      dependencies: {},
-      mvnDependencies: {},
-    }, null, 2)
+      null,
+      2
+    )
   )
   // create tsconfig.json
   fs.writeFileSync(
     PATH.TSCONFIG,
-    JSON.stringify({
-      compilerOptions: {
-        typeRoots: [path.join(__dirname, "..", "..", "@types"), "lib", "node_modules/@types"],
+    JSON.stringify(
+      {
+        compilerOptions: {
+          typeRoots: [path.join(__dirname, "..", "..", "@types"), "lib", "node_modules/@types"],
+        },
+        include: ["**/*.ts"],
       },
-      include: ["**/*.ts"],
-    }, null, 2)
+      null,
+      2
+    )
   )
   // create src/main.ts
   fs.mkdirSync("src", { recursive: true })
   if (!fs.existsSync(path.join("src", "main.ts"))) {
-    const src = "java.lang.System.out.println(\"Hello\")"
+    const src = 'java.lang.System.out.println("Hello")'
     fs.writeFileSync(path.join("src", "main.ts"), src)
   }
 }

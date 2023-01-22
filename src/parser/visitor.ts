@@ -52,19 +52,39 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
       // generate lambda type
       if (isLambda(ifs, type)) {
         if (interfaceBody.interfaceMember()?.some(it => it.methodDeclaration())) {
-          const method = interfaceBody.interfaceMember().filter(it => it.methodDeclaration())[0].methodDeclaration()
+          const method = interfaceBody
+            .interfaceMember()
+            .filter(it => it.methodDeclaration())[0]
+            .methodDeclaration()
           frontBuffer.push(
-            "interface " + type.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type.typeArguments()) +
-            " {\n(" + methodArgumentsToString(method.methodArguments(), ifs) + ")" +
-            ": " + methodArgumentToString(method.type(), ifs) + "\n}\n"
+            "interface " +
+              type.Identifier().getText() +
+              LambdaSuffix +
+              typeArgumentsToString(type.typeArguments()) +
+              " {\n(" +
+              methodArgumentsToString(method.methodArguments(), ifs) +
+              ")" +
+              ": " +
+              methodArgumentToString(method.type(), ifs) +
+              "\n}\n"
           )
         } else {
-          extend.type().filter(it => isLambda(ifs, it)).forEach(it => {
-            frontBuffer.push(
-              "type " + type.Identifier().getText() + LambdaSuffix + typeArgumentsToString(type.typeArguments()) +
-              " = " + qualifiedName(it, true) + LambdaSuffix + typeArgumentsToString(it.typeArguments()) + "\n"
-            )
-          })
+          extend
+            .type()
+            .filter(it => isLambda(ifs, it))
+            .forEach(it => {
+              frontBuffer.push(
+                "type " +
+                  type.Identifier().getText() +
+                  LambdaSuffix +
+                  typeArgumentsToString(type.typeArguments()) +
+                  " = " +
+                  qualifiedName(it, true) +
+                  LambdaSuffix +
+                  typeArgumentsToString(it.typeArguments()) +
+                  "\n"
+              )
+            })
         }
       }
       // interface header
@@ -95,20 +115,20 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
   process.stdout.cursorTo(0)
   fs.writeFileSync(
     path.join(typeRoot, "index.d.ts"),
-    references.map(it => `/// <reference path="${it}" />`).sort().join("\n")
+    references
+      .map(it => `/// <reference path="${it}" />`)
+      .sort()
+      .join("\n")
   )
   console.log(chalk.green("Generated " + path.join(typeRoot, "index.d.ts")))
-  fs.writeFileSync(
-    path.join(typeRoot, "namespace.json"),
-    JSON.stringify(topNamespaces, null, 2)
-  )
+  fs.writeFileSync(path.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2))
   console.log(chalk.green("Generated " + path.join(typeRoot, "namespace.json")))
   return true
 }
 
 export function declareConstructor(constructor: ConstructorDeclarationContext, ifs: InterfaceStat): string {
   let result = ""
-  constructor.modifier()?.forEach(it => result += convertMemberModifier(it.getText()) + " ")
+  constructor.modifier()?.forEach(it => (result += convertMemberModifier(it.getText()) + " "))
   result += "constructor"
   result += "(" + methodArgumentsToString(constructor.methodArguments(), ifs) + ")"
   return result
@@ -117,7 +137,7 @@ export function declareConstructor(constructor: ConstructorDeclarationContext, i
 export function declareField(field: FieldDeclarationContext): string {
   if (field.Identifier().getText() === "constructor") return ""
   let result = ""
-  field.modifier()?.forEach(it => result += convertMemberModifier(it.getText(), true) + " ")
+  field.modifier()?.forEach(it => (result += convertMemberModifier(it.getText(), true) + " "))
   result += field.Identifier().getText()
   result += ": " + typeToString(field.type())
   return result
@@ -126,7 +146,7 @@ export function declareField(field: FieldDeclarationContext): string {
 export function declareMethod(method: MethodDeclarationContext, ifs: InterfaceStat, isClass = false): string {
   let result = ""
   if (isClass) {
-    method.modifier()?.forEach(it => result += convertMemberModifier(it.getText()) + " ")
+    method.modifier()?.forEach(it => (result += convertMemberModifier(it.getText()) + " "))
   }
   result += method.Identifier().getText()
   result += typeArgumentsToString(method.typeArguments())
@@ -139,18 +159,18 @@ function methodArgumentToString(type: TypeContext, ifs: InterfaceStat): string {
   if (isLambda(ifs, type)) {
     return [
       typeToString(type),
-      qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())
+      qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments()),
     ].join(" | ")
   } else {
-    return typeAlias(qualifiedName(type, true)).map(it =>
-      it + typeArgumentsToString(type.typeArguments())
-    ).join(" | ")
+    return typeAlias(qualifiedName(type, true))
+      .map(it => it + typeArgumentsToString(type.typeArguments()))
+      .join(" | ")
   }
 }
 
 function methodArgumentsToString(methodArgs: MethodArgumentsContext, ifs: InterfaceStat): string {
   const result: string[] = []
-  for (const type of (methodArgs.typeList()?.type() || [])) {
+  for (const type of methodArgs.typeList()?.type() || []) {
     result.push("arg" + result.length + ": " + methodArgumentToString(type, ifs))
   }
   if (methodArgs.varargs()) {
@@ -175,7 +195,15 @@ export function typeArgumentsToString(typeArgs: TypeArgumentsContext): string {
     return ""
   } else if (typeArgs.typeArgument().length) {
     const args = typeArgs.typeArgument().map(it => typeArgumentToString(it))
-    return "<" + args.join(",") + ">" + (typeArgs.arrayBrackets()?.map(it => it.getText()).join("") || "")
+    return (
+      "<" +
+      args.join(",") +
+      ">" +
+      (typeArgs
+        .arrayBrackets()
+        ?.map(it => it.getText())
+        .join("") || "")
+    )
   } else {
     return typeArgs.getText()
   }
@@ -184,10 +212,19 @@ export function typeArgumentsToString(typeArgs: TypeArgumentsContext): string {
 function typeArgumentToString(typeArg: TypeArgumentContext): string {
   if (typeArg.getChild(1)?.getText() === "extends") {
     if (typeArg.Identifier()) {
-      return typeArg.Identifier().getText() + " extends " +
-        typeArg.type().map(it => typeToString(it)).join(" & ")
+      return (
+        typeArg.Identifier().getText() +
+        " extends " +
+        typeArg
+          .type()
+          .map(it => typeToString(it))
+          .join(" & ")
+      )
     } else {
-      return typeArg.type().map(it => typeToString(it)).join(" & ")
+      return typeArg
+        .type()
+        .map(it => typeToString(it))
+        .join(" & ")
     }
   } else if (typeArg.getChild(1)?.getText() === "super") {
     return "unknown"
@@ -220,28 +257,48 @@ export function declareNamespaces(type: TypeContext): [string, string] {
 
 function typeAlias(type: string): string[] {
   switch (type) {
-    case "boolean": return ["boolean", "java.lang.Boolean"]
-    case "byte": return ["number", "java.lang.Byte"]
-    case "char": return ["string", "java.lang.Character"]
-    case "double": return ["number", "java.lang.Double"]
-    case "float": return ["number", "java.lang.Float"]
-    case "int": return ["number", "java.lang.Integer"]
-    case "long": return ["number", "java.lang.Long"]
-    case "short": return ["number", "java.lang.Short"]
+    case "boolean":
+      return ["boolean", "java.lang.Boolean"]
+    case "byte":
+      return ["number", "java.lang.Byte"]
+    case "char":
+      return ["string", "java.lang.Character"]
+    case "double":
+      return ["number", "java.lang.Double"]
+    case "float":
+      return ["number", "java.lang.Float"]
+    case "int":
+      return ["number", "java.lang.Integer"]
+    case "long":
+      return ["number", "java.lang.Long"]
+    case "short":
+      return ["number", "java.lang.Short"]
 
-    case "java.lang.Boolean": return ["boolean", "java.lang.Boolean"]
-    case "java.lang.Byte": return ["number", "java.lang.Byte"]
-    case "java.lang.CharSequence": return ["string", "java.lang.CharSequence"]
-    case "java.lang.Character": return ["string", "java.lang.Character"]
-    case "java.lang.Double": return ["number", "java.lang.Double"]
-    case "java.lang.Float": return ["number", "java.lang.Float"]
-    case "java.lang.Integer": return ["number", "java.lang.Integer"]
-    case "java.lang.Long": return ["number", "java.lang.Long"]
-    case "java.lang.Object": return ["java.lang.Object", "any"]
-    case "java.lang.Short": return ["number", "java.lang.Short"]
-    case "java.lang.String": return ["java.lang.String", "string"]
+    case "java.lang.Boolean":
+      return ["boolean", "java.lang.Boolean"]
+    case "java.lang.Byte":
+      return ["number", "java.lang.Byte"]
+    case "java.lang.CharSequence":
+      return ["string", "java.lang.CharSequence"]
+    case "java.lang.Character":
+      return ["string", "java.lang.Character"]
+    case "java.lang.Double":
+      return ["number", "java.lang.Double"]
+    case "java.lang.Float":
+      return ["number", "java.lang.Float"]
+    case "java.lang.Integer":
+      return ["number", "java.lang.Integer"]
+    case "java.lang.Long":
+      return ["number", "java.lang.Long"]
+    case "java.lang.Object":
+      return ["java.lang.Object", "any"]
+    case "java.lang.Short":
+      return ["number", "java.lang.Short"]
+    case "java.lang.String":
+      return ["java.lang.String", "string"]
 
-    default: return [type]
+    default:
+      return [type]
   }
 }
 
@@ -259,12 +316,16 @@ export function convertMemberModifier(modifier: string, isField = false): string
 // Append $ to namespace if it is a typescript keyword
 export function convertNamespace(namespace: string): string {
   const invalid = ["debugger", "enum", "export", "function", "in", "is", "var"]
-  return invalid.indexOf(namespace) < 0 ? namespace : (namespace + "$")
+  return invalid.indexOf(namespace) < 0 ? namespace : namespace + "$"
 }
 
 export function qualifiedName(type: TypeContext, safe = false): string {
   if (safe) {
-    const packages = type.packageName()?.Identifier().map(it => convertNamespace(it.getText())) || []
+    const packages =
+      type
+        .packageName()
+        ?.Identifier()
+        .map(it => convertNamespace(it.getText())) || []
     return [...packages, type.Identifier().getText()].join(".")
   } else {
     return (type.packageName()?.getText().concat(".") || "") + type.Identifier().getText()

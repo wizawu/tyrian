@@ -23,14 +23,7 @@ export default function (output: string, args: string[], { inspectBrk, watch }: 
   const run = (): ChildProcessWithoutNullStreams => {
     const finalArgs: string[] = []
     if (type === "nashorn") {
-      finalArgs.push(
-        "-scripting",
-        "--language=es6",
-        "-cp", ":" + classPaths.join(":"),
-        output,
-        "--",
-        ...args
-      )
+      finalArgs.push("-scripting", "--language=es6", "-cp", ":" + classPaths.join(":"), output, "--", ...args)
     } else if (type === "graaljs") {
       if (inspectBrk) finalArgs.push("--inspect-brk=" + inspectBrk)
       finalArgs.push(
@@ -53,7 +46,7 @@ export default function (output: string, args: string[], { inspectBrk, watch }: 
   if (watch) {
     fs.watchFile(output, () => {
       child.removeAllListeners()
-      child.on("exit", () => child = run())
+      child.on("exit", () => (child = run()))
       child.kill("SIGHUP")
       console.log(chalk.gray(`Restarting ${output}...`))
     })
@@ -73,11 +66,16 @@ export function checkRuntime(): [Runtime, string] {
     return ["nashorn", "jjs"]
   } else {
     console.error(`Please define the runtime in $PATH.ENV`)
-    console.error(redent(`
+    console.error(
+      redent(
+        `
       runtime=/path/to/graalvm/bin/node
       // or
       runtime=/path/to/openjdk/bin/jjs
-    `, 0))
+    `,
+        0
+      )
+    )
     process.exit(ErrorCode.UNKNOWN_RUNTIME)
   }
 }

@@ -1,6 +1,8 @@
+*.interp
 *.jar
 *.log
 *.swp
+*.tokens
 .antlr/
 build/
 node_modules/

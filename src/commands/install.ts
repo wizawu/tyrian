@@ -7,7 +7,7 @@ import { GlobSync } from "glob"
 import { spawnSync } from "child_process"
 
 import { code as ErrorCode } from "../errors"
-import { path as PATH } from "../constants"
+import { PATH } from "../constants"
 import * as parser from "../parser"
 import * as utils from "../utils"
 import interfaces from "../jdk/interfaces.json"

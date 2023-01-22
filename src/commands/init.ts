@@ -4,7 +4,7 @@ import fs from "fs"
 import path from "path"
 
 import { code as ErrorCode } from "../errors"
-import { path as PATH, config as CONFIG } from "../constants"
+import { PATH, CONFIG_KEY } from "../constants"
 
 export default function (): void {
   console.log("Checking prerequisites...\n")
@@ -31,11 +31,11 @@ function createFiles(): void {
     PATH.PACKAGE,
     JSON.stringify(
       {
-        config: {
-          [CONFIG.NASHORN]: "jjs",
-        },
         dependencies: {},
         mvnDependencies: {},
+        config: {
+          [CONFIG_KEY.NASHORN]: "jjs",
+        },
       },
       null,
       2
@@ -47,7 +47,7 @@ function createFiles(): void {
     JSON.stringify(
       {
         compilerOptions: {
-          typeRoots: [path.join(__dirname, "..", "..", "@types"), "lib", "node_modules/@types"],
+          typeRoots: [path.join(PATH.INSTALL_DIR, "@types"), "lib", "node_modules/@types"],
         },
         include: ["**/*.ts"],
       },

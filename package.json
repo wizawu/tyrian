@@ -6,8 +6,8 @@
   "bin": "./bin/tyrian",
   "scripts": {
     "antlr": "cd src/parser/javap && antlr4 -Dlanguage=JavaScript -visitor Javap.g4",
-    "build": "esbuild --bundle src/main.ts --outdir=dist --platform=node",
-    "watch": "esbuild --bundle src/main.ts --outdir=dist --platform=node --watch",
+    "build": "esbuild --bundle --outdir=dist --platform=node src/main.ts",
+    "watch": "esbuild --bundle --outdir=dist --platform=node src/main.ts --watch",
     "types": "test $JAVAP && node src/jdk/allclasses.js",
     "lint": "prettier -w src/*.ts src/**/*.ts",
     "lint:types": "eslint --ext .ts --fix @types"
@@ -15,7 +15,7 @@
   "devDependencies": {
     "@types/antlr4": "^4.7.2",
     "@types/glob": "^7.1.3",
-    "@types/node": "^16.18.11",
+    "@types/node": "^18.11.18",
     "antlr4": "4.10.x",
     "chalk": "^4.1.0",
     "commander": "^6.2.0",

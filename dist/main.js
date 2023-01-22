@@ -15512,12 +15512,14 @@ var code = {
 // src/commands/build.ts
 function build_default(entries, outDir, watch) {
   const compiler = getCompiler(entries, outDir);
-  const printStats = (stats) => console.log(stats?.toString({
-    colors: true,
-    chunks: false,
-    entrypoints: true,
-    modules: false
-  }));
+  const printStats = (stats) => console.log(
+    stats?.toString({
+      colors: true,
+      chunks: false,
+      entrypoints: true,
+      modules: false
+    })
+  );
   if (watch) {
     compiler.watch({ poll: true }, (err, stats) => {
       printStats(stats);
@@ -15556,22 +15558,30 @@ function init_default() {
 function createFiles() {
   import_fs.default.writeFileSync(
     path.PACKAGE,
-    JSON.stringify({
-      config: {
-        [config.NASHORN]: "jjs"
+    JSON.stringify(
+      {
+        config: {
+          [config.NASHORN]: "jjs"
+        },
+        dependencies: {},
+        mvnDependencies: {}
       },
-      dependencies: {},
-      mvnDependencies: {}
-    }, null, 2)
+      null,
+      2
+    )
   );
   import_fs.default.writeFileSync(
     path.TSCONFIG,
-    JSON.stringify({
-      compilerOptions: {
-        typeRoots: [import_path.default.join(__dirname, "..", "..", "@types"), "lib", "node_modules/@types"]
+    JSON.stringify(
+      {
+        compilerOptions: {
+          typeRoots: [import_path.default.join(__dirname, "..", "..", "@types"), "lib", "node_modules/@types"]
+        },
+        include: ["**/*.ts"]
       },
-      include: ["**/*.ts"]
-    }, null, 2)
+      null,
+      2
+    )
   );
   import_fs.default.mkdirSync("src", { recursive: true });
   if (!import_fs.default.existsSync(import_path.default.join("src", "main.ts"))) {
@@ -24751,10 +24761,7 @@ function generateTsDef(context, ifs, typeRoot) {
     references.map((it) => `/// <reference path="${it}" />`).sort().join("\n")
   );
   console.log(import_chalk2.default.green("Generated " + import_path2.default.join(typeRoot, "index.d.ts")));
-  import_fs4.default.writeFileSync(
-    import_path2.default.join(typeRoot, "namespace.json"),
-    JSON.stringify(topNamespaces, null, 2)
-  );
+  import_fs4.default.writeFileSync(import_path2.default.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
   console.log(import_chalk2.default.green("Generated " + import_path2.default.join(typeRoot, "namespace.json")));
   return true;
 }
@@ -24792,9 +24799,7 @@ function methodArgumentToString(type, ifs) {
       qualifiedName(type, true) + LambdaSuffix + typeArgumentsToString(type.typeArguments())
     ].join(" | ");
   } else {
-    return typeAlias(qualifiedName(type, true)).map(
-      (it) => it + typeArgumentsToString(type.typeArguments())
-    ).join(" | ");
+    return typeAlias(qualifiedName(type, true)).map((it) => it + typeArgumentsToString(type.typeArguments())).join(" | ");
   }
 }
 function methodArgumentsToString(methodArgs, ifs) {
@@ -27995,7 +28000,10 @@ JavapParser.ArrayBracketsContext = ArrayBracketsContext;
 // src/parser/index.ts
 var PARSE_CHUNK = 500;
 function parse(classPaths, counter, classList, typeRoot) {
-  const context = parseClasses(classPaths, classList.filter((it) => !it.startsWith("kotlin.")));
+  const context = parseClasses(
+    classPaths,
+    classList.filter((it) => !it.startsWith("kotlin."))
+  );
   if (context === null)
     return false;
   const interfaces = context.classOrInterface().map((it) => it.interfaceDeclaration()).filter((it) => it);
@@ -28003,7 +28011,10 @@ function parse(classPaths, counter, classList, typeRoot) {
     const className = qualifiedName(it.type());
     const count = it.interfaceBody().interfaceMember().filter((it2) => it2.methodDeclaration()).length;
     if (it.typeList()) {
-      counter[className] = [count, ...it.typeList().type().map((it2) => qualifiedName(it2))];
+      counter[className] = [
+        count,
+        ...it.typeList().type().map((it2) => qualifiedName(it2))
+      ];
     } else {
       counter[className] = [count];
     }
@@ -33339,12 +33350,7 @@ async function install_default(offline) {
     const classes = await listLibClasses(jars);
     console.log(`Found ${import_chalk3.default.green(classes.length)} classes`);
     console.log("Generating typescript definitions...");
-    parse(
-      jars,
-      interfaces_default,
-      classes,
-      import_path3.default.join(process.cwd(), "lib", "@types")
-    );
+    parse(jars, interfaces_default, classes, import_path3.default.join(process.cwd(), "lib", "@types"));
   }
 }
 async function listLibClasses(jars) {
@@ -33381,20 +33387,14 @@ function gradleInstall() {
   });
   const deps = Object.keys(mvnDependencies).map((it) => it + ":" + mvnDependencies[it]);
   import_fs5.default.writeFileSync(import_path3.default.join("lib", "build.gradle"), gradleTemplate(deps));
-  const child = (0, import_child_process3.spawnSync)(
-    "gradle",
-    [
-      "-b",
-      import_path3.default.join("lib", "build.gradle"),
-      "--no-daemon",
-      "install"
-    ],
-    { stdio: "inherit" }
-  );
+  const child = (0, import_child_process3.spawnSync)("gradle", ["-b", import_path3.default.join("lib", "build.gradle"), "--no-daemon", "install"], {
+    stdio: "inherit"
+  });
   if (child.status)
     process.exit(child.status);
 }
-var gradleTemplate = (deps) => (0, import_redent.default)(`
+var gradleTemplate = (deps) => (0, import_redent.default)(
+  `
   apply plugin: "java"
 
   repositories {
@@ -33409,7 +33409,9 @@ var gradleTemplate = (deps) => (0, import_redent.default)(`
   dependencies {
     ${deps.map((it) => `implementation "${it}"`).join("\n    ")}
   }
-`, 0).trimStart();
+`,
+  0
+).trimStart();
 
 // src/commands/run.ts
 var import_chalk4 = __toESM(require_source());
@@ -33426,15 +33428,7 @@ function run_default(output, args, { inspectBrk, watch }) {
   const run = () => {
     const finalArgs = [];
     if (type === "nashorn") {
-      finalArgs.push(
-        "-scripting",
-        "--language=es6",
-        "-cp",
-        ":" + classPaths.join(":"),
-        output,
-        "--",
-        ...args
-      );
+      finalArgs.push("-scripting", "--language=es6", "-cp", ":" + classPaths.join(":"), output, "--", ...args);
     } else if (type === "graaljs") {
       if (inspectBrk)
         finalArgs.push("--inspect-brk=" + inspectBrk);
@@ -33476,11 +33470,16 @@ function checkRuntime() {
     return ["nashorn", "jjs"];
   } else {
     console.error(`Please define the runtime in $PATH.ENV`);
-    console.error((0, import_redent2.default)(`
+    console.error(
+      (0, import_redent2.default)(
+        `
       runtime=/path/to/graalvm/bin/node
       // or
       runtime=/path/to/openjdk/bin/jjs
-    `, 0));
+    `,
+        0
+      )
+    );
     process.exit(code.UNKNOWN_RUNTIME);
   }
 }

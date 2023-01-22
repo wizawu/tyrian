@@ -8,12 +8,15 @@ import { code as ErrorCode } from "../errors"
 
 export default function (entries: string[], outDir: string, watch: boolean): void {
   const compiler = getCompiler(entries, outDir)
-  const printStats = (stats?: Stats): void => console.log(stats?.toString({
-    colors: true,
-    chunks: false,
-    entrypoints: true,
-    modules: false,
-  }))
+  const printStats = (stats?: Stats): void =>
+    console.log(
+      stats?.toString({
+        colors: true,
+        chunks: false,
+        entrypoints: true,
+        modules: false,
+      })
+    )
   if (watch) {
     compiler.watch({ poll: true }, (err, stats): void => {
       printStats(stats)

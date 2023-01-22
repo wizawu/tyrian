@@ -9,7 +9,6 @@
     "build": "esbuild --bundle src/main.ts --outdir=dist --platform=node",
     "watch": "esbuild --bundle src/main.ts --outdir=dist --platform=node --watch",
     "types": "test $JAVAP && node src/jdk/allclasses.js",
-    "test": "cd test && mocha --timeout 5000 unit/*.js unit/**/*.js",
     "lint": "eslint --ignore-pattern '/src/parser/javap/*' --fix src test/unit",
     "lint:types": "eslint --ext .ts --fix @types"
   },
@@ -26,10 +25,8 @@
     "eslint": "^7.15.0",
     "glob": "^7.1.6",
     "jszip": "^3.7.0",
-    "mocha": "^9.2.0",
     "node-html-parser": "^2.0.2",
     "redent": "^3.0.0",
-    "ts-loader": "^8.0.17",
     "typescript": "4.9.x",
     "which": "^2.0.2"
   }

@@ -1,11 +1,11 @@
 import { program } from "commander"
 import path from "path"
 
-import { path as PATH } from "./constants"
+import { PATH } from "./constants"
 import * as utils from "./utils"
 import commands from "./commands"
 
-const { name, version } = utils.readJsonObject(path.resolve(__dirname, "..", PATH.PACKAGE))
+const { name, version } = utils.readJSON(path.join(PATH.INSTALL_DIR, PATH.PACKAGE))
 program.name(name).version(version)
 
 program

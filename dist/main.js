@@ -459,11 +459,11 @@ Read more on https://git.io/JJc0W`);
        * @return {Command} `this` command for chaining
        * @api private
        */
-      _optionEx(config2, flags, description, fn, defaultValue) {
+      _optionEx(config, flags, description, fn, defaultValue) {
         const option = new Option(flags, description);
         const oname = option.name();
         const name2 = option.attributeName();
-        option.mandatory = !!config2.mandatory;
+        option.mandatory = !!config.mandatory;
         this._checkForOptionNameClash(option);
         if (typeof fn !== "function") {
           if (fn instanceof RegExp) {
@@ -15428,14 +15428,16 @@ var require_glob = __commonJS({
 
 // src/main.ts
 var import_commander = __toESM(require_commander());
-var import_path4 = __toESM(require("path"));
+var import_path5 = __toESM(require("path"));
 
 // src/constants.ts
-var path = {
+var import_path = __toESM(require("path"));
+var PATH = {
+  INSTALL_DIR: import_path.default.resolve(__dirname, ".."),
   PACKAGE: "package.json",
   TSCONFIG: "tsconfig.json"
 };
-var config = {
+var CONFIG_KEY = {
   NASHORN: "nashorn"
 };
 
@@ -15455,7 +15457,7 @@ function listFilesByExt(dirname, ext) {
     return [];
   }
 }
-function readJsonObject(path7) {
+function readJSON(path7) {
   if (fs.existsSync(path7)) {
     const content = fs.readFileSync(path7, "utf-8");
     return JSON.parse(content);
@@ -15537,18 +15539,18 @@ function build_default(entries, outDir, watch) {
 var import_child_process2 = require("child_process");
 var import_chalk = __toESM(require_source());
 var import_fs = __toESM(require("fs"));
-var import_path = __toESM(require("path"));
+var import_path2 = __toESM(require("path"));
 function init_default() {
   console.log("Checking prerequisites...\n");
   if (!check("node", ["-v"]) || !check("npm", ["-v"]) || !check("gradle", ["-v"])) {
     console.error(import_chalk.default.red("You should add node, npm and gradle in `PATH` env."));
     process.exit(code.BROKEN_ENV);
   }
-  if (import_fs.default.existsSync(path.PACKAGE)) {
-    console.error(import_chalk.default.yellow(path.PACKAGE + " already exists."));
+  if (import_fs.default.existsSync(PATH.PACKAGE)) {
+    console.error(import_chalk.default.yellow(PATH.PACKAGE + " already exists."));
     process.exit(code.INIT_CONFLICT);
-  } else if (import_fs.default.existsSync(path.TSCONFIG)) {
-    console.error(import_chalk.default.yellow(path.TSCONFIG + " already exists."));
+  } else if (import_fs.default.existsSync(PATH.TSCONFIG)) {
+    console.error(import_chalk.default.yellow(PATH.TSCONFIG + " already exists."));
     process.exit(code.INIT_CONFLICT);
   } else {
     createFiles();
@@ -15557,25 +15559,25 @@ function init_default() {
 }
 function createFiles() {
   import_fs.default.writeFileSync(
-    path.PACKAGE,
+    PATH.PACKAGE,
     JSON.stringify(
       {
-        config: {
-          [config.NASHORN]: "jjs"
-        },
         dependencies: {},
-        mvnDependencies: {}
+        mvnDependencies: {},
+        config: {
+          [CONFIG_KEY.NASHORN]: "jjs"
+        }
       },
       null,
       2
     )
   );
   import_fs.default.writeFileSync(
-    path.TSCONFIG,
+    PATH.TSCONFIG,
     JSON.stringify(
       {
         compilerOptions: {
-          typeRoots: [import_path.default.join(__dirname, "..", "..", "@types"), "lib", "node_modules/@types"]
+          typeRoots: [import_path2.default.join(PATH.INSTALL_DIR, "@types"), "lib", "node_modules/@types"]
         },
         include: ["**/*.ts"]
       },
@@ -15584,9 +15586,9 @@ function createFiles() {
     )
   );
   import_fs.default.mkdirSync("src", { recursive: true });
-  if (!import_fs.default.existsSync(import_path.default.join("src", "main.ts"))) {
+  if (!import_fs.default.existsSync(import_path2.default.join("src", "main.ts"))) {
     const src = 'java.lang.System.out.println("Hello")';
-    import_fs.default.writeFileSync(import_path.default.join("src", "main.ts"), src);
+    import_fs.default.writeFileSync(import_path2.default.join("src", "main.ts"), src);
   }
 }
 function check(command, args) {
@@ -15610,7 +15612,7 @@ function check(command, args) {
 // src/commands/install.ts
 var import_chalk3 = __toESM(require_source());
 var import_fs5 = __toESM(require("fs"));
-var import_path3 = __toESM(require("path"));
+var import_path4 = __toESM(require("path"));
 var import_redent = __toESM(require_redent());
 var import_jszip = __toESM(require_lib3());
 var import_glob = __toESM(require_glob());
@@ -16245,19 +16247,19 @@ var ATNConfig = class {
    * the tree of semantic predicates encountered before reaching
    * an ATN state
    */
-  constructor(params, config2) {
-    this.checkContext(params, config2);
+  constructor(params, config) {
+    this.checkContext(params, config);
     params = checkParams(params);
-    config2 = checkParams(config2, true);
-    this.state = params.state !== null ? params.state : config2.state;
-    this.alt = params.alt !== null ? params.alt : config2.alt;
-    this.context = params.context !== null ? params.context : config2.context;
-    this.semanticContext = params.semanticContext !== null ? params.semanticContext : config2.semanticContext !== null ? config2.semanticContext : SemanticContext.NONE;
-    this.reachesIntoOuterContext = config2.reachesIntoOuterContext;
-    this.precedenceFilterSuppressed = config2.precedenceFilterSuppressed;
+    config = checkParams(config, true);
+    this.state = params.state !== null ? params.state : config.state;
+    this.alt = params.alt !== null ? params.alt : config.alt;
+    this.context = params.context !== null ? params.context : config.context;
+    this.semanticContext = params.semanticContext !== null ? params.semanticContext : config.semanticContext !== null ? config.semanticContext : SemanticContext.NONE;
+    this.reachesIntoOuterContext = config.reachesIntoOuterContext;
+    this.precedenceFilterSuppressed = config.precedenceFilterSuppressed;
   }
-  checkContext(params, config2) {
-    if ((params.context === null || params.context === void 0) && (config2 === null || config2.context === null || config2.context === void 0)) {
+  checkContext(params, config) {
+    if ((params.context === null || params.context === void 0) && (config === null || config.context === null || config.context === void 0)) {
       this.context = null;
     }
   }
@@ -19600,29 +19602,29 @@ var ATNConfigSet = class {
    * <p>This method updates {@link //dipsIntoOuterContext} and
    * {@link //hasSemanticContext} when necessary.</p>
    */
-  add(config2, mergeCache) {
+  add(config, mergeCache) {
     if (mergeCache === void 0) {
       mergeCache = null;
     }
     if (this.readOnly) {
       throw "This set is readonly";
     }
-    if (config2.semanticContext !== SemanticContext.NONE) {
+    if (config.semanticContext !== SemanticContext.NONE) {
       this.hasSemanticContext = true;
     }
-    if (config2.reachesIntoOuterContext > 0) {
+    if (config.reachesIntoOuterContext > 0) {
       this.dipsIntoOuterContext = true;
     }
-    const existing = this.configLookup.add(config2);
-    if (existing === config2) {
+    const existing = this.configLookup.add(config);
+    if (existing === config) {
       this.cachedHashCode = -1;
-      this.configs.push(config2);
+      this.configs.push(config);
       return true;
     }
     const rootIsWildcard = !this.fullCtx;
-    const merged = merge(existing.context, config2.context, rootIsWildcard, mergeCache);
-    existing.reachesIntoOuterContext = Math.max(existing.reachesIntoOuterContext, config2.reachesIntoOuterContext);
-    if (config2.precedenceFilterSuppressed) {
+    const merged = merge(existing.context, config.context, rootIsWildcard, mergeCache);
+    existing.reachesIntoOuterContext = Math.max(existing.reachesIntoOuterContext, config.reachesIntoOuterContext);
+    if (config.precedenceFilterSuppressed) {
       existing.precedenceFilterSuppressed = true;
     }
     existing.context = merged;
@@ -19653,8 +19655,8 @@ var ATNConfigSet = class {
       return;
     }
     for (let i = 0; i < this.configs.length; i++) {
-      const config2 = this.configs[i];
-      config2.context = interpreter.getCachedContext(config2.context);
+      const config = this.configs[i];
+      config.context = interpreter.getCachedContext(config.context);
     }
   }
   addAll(coll) {
@@ -19819,11 +19821,11 @@ var OrderedATNConfigSet = class extends ATNConfigSet {
 
 // node_modules/antlr4/src/antlr4/atn/LexerATNConfig.js
 var LexerATNConfig = class extends ATNConfig {
-  constructor(params, config2) {
-    super(params, config2);
+  constructor(params, config) {
+    super(params, config);
     const lexerActionExecutor = params.lexerActionExecutor || null;
-    this.lexerActionExecutor = lexerActionExecutor || (config2 !== null ? config2.lexerActionExecutor : null);
-    this.passedThroughNonGreedyDecision = config2 !== null ? this.checkNonGreedyDecision(config2, this.state) : false;
+    this.lexerActionExecutor = lexerActionExecutor || (config !== null ? config.lexerActionExecutor : null);
+    this.passedThroughNonGreedyDecision = config !== null ? this.checkNonGreedyDecision(config, this.state) : false;
     this.hashCodeForConfigSet = LexerATNConfig.prototype.hashCode;
     this.equalsForConfigSet = LexerATNConfig.prototype.equals;
     return this;
@@ -20237,10 +20239,10 @@ var LexerATNSimulator = class extends ATNSimulator {
             lexerActionExecutor = lexerActionExecutor.fixOffsetBeforeMatch(input.index - this.startIndex);
           }
           const treatEofAsEpsilon = t === Token.EOF;
-          const config2 = new LexerATNConfig({ state: target, lexerActionExecutor }, cfg);
+          const config = new LexerATNConfig({ state: target, lexerActionExecutor }, cfg);
           if (this.closure(
             input,
-            config2,
+            config,
             reach,
             currentAltReachedAcceptState,
             true,
@@ -20290,34 +20292,34 @@ var LexerATNSimulator = class extends ATNSimulator {
    * @return {Boolean} {@code true} if an accept state is reached, otherwise
    * {@code false}.
    */
-  closure(input, config2, configs, currentAltReachedAcceptState, speculative, treatEofAsEpsilon) {
+  closure(input, config, configs, currentAltReachedAcceptState, speculative, treatEofAsEpsilon) {
     let cfg = null;
     if (LexerATNSimulator.debug) {
-      console.log("closure(" + config2.toString(this.recog, true) + ")");
+      console.log("closure(" + config.toString(this.recog, true) + ")");
     }
-    if (config2.state instanceof RuleStopState) {
+    if (config.state instanceof RuleStopState) {
       if (LexerATNSimulator.debug) {
         if (this.recog !== null) {
-          console.log("closure at %s rule stop %s\n", this.recog.ruleNames[config2.state.ruleIndex], config2);
+          console.log("closure at %s rule stop %s\n", this.recog.ruleNames[config.state.ruleIndex], config);
         } else {
-          console.log("closure at rule stop %s\n", config2);
+          console.log("closure at rule stop %s\n", config);
         }
       }
-      if (config2.context === null || config2.context.hasEmptyPath()) {
-        if (config2.context === null || config2.context.isEmpty()) {
-          configs.add(config2);
+      if (config.context === null || config.context.hasEmptyPath()) {
+        if (config.context === null || config.context.isEmpty()) {
+          configs.add(config);
           return true;
         } else {
-          configs.add(new LexerATNConfig({ state: config2.state, context: PredictionContext.EMPTY }, config2));
+          configs.add(new LexerATNConfig({ state: config.state, context: PredictionContext.EMPTY }, config));
           currentAltReachedAcceptState = true;
         }
       }
-      if (config2.context !== null && !config2.context.isEmpty()) {
-        for (let i = 0; i < config2.context.length; i++) {
-          if (config2.context.getReturnState(i) !== PredictionContext.EMPTY_RETURN_STATE) {
-            const newContext = config2.context.getParent(i);
-            const returnState = this.atn.states[config2.context.getReturnState(i)];
-            cfg = new LexerATNConfig({ state: returnState, context: newContext }, config2);
+      if (config.context !== null && !config.context.isEmpty()) {
+        for (let i = 0; i < config.context.length; i++) {
+          if (config.context.getReturnState(i) !== PredictionContext.EMPTY_RETURN_STATE) {
+            const newContext = config.context.getParent(i);
+            const returnState = this.atn.states[config.context.getReturnState(i)];
+            cfg = new LexerATNConfig({ state: returnState, context: newContext }, config);
             currentAltReachedAcceptState = this.closure(
               input,
               cfg,
@@ -20331,14 +20333,14 @@ var LexerATNSimulator = class extends ATNSimulator {
       }
       return currentAltReachedAcceptState;
     }
-    if (!config2.state.epsilonOnlyTransitions) {
-      if (!currentAltReachedAcceptState || !config2.passedThroughNonGreedyDecision) {
-        configs.add(config2);
+    if (!config.state.epsilonOnlyTransitions) {
+      if (!currentAltReachedAcceptState || !config.passedThroughNonGreedyDecision) {
+        configs.add(config);
       }
     }
-    for (let j = 0; j < config2.state.transitions.length; j++) {
-      const trans = config2.state.transitions[j];
-      cfg = this.getEpsilonTarget(input, config2, trans, configs, speculative, treatEofAsEpsilon);
+    for (let j = 0; j < config.state.transitions.length; j++) {
+      const trans = config.state.transitions[j];
+      cfg = this.getEpsilonTarget(input, config, trans, configs, speculative, treatEofAsEpsilon);
       if (cfg !== null) {
         currentAltReachedAcceptState = this.closure(
           input,
@@ -20353,11 +20355,11 @@ var LexerATNSimulator = class extends ATNSimulator {
     return currentAltReachedAcceptState;
   }
   // side-effect: can alter configs.hasSemanticContext
-  getEpsilonTarget(input, config2, trans, configs, speculative, treatEofAsEpsilon) {
+  getEpsilonTarget(input, config, trans, configs, speculative, treatEofAsEpsilon) {
     let cfg = null;
     if (trans.serializationType === Transition.RULE) {
-      const newContext = SingletonPredictionContext.create(config2.context, trans.followState.stateNumber);
-      cfg = new LexerATNConfig({ state: trans.target, context: newContext }, config2);
+      const newContext = SingletonPredictionContext.create(config.context, trans.followState.stateNumber);
+      cfg = new LexerATNConfig({ state: trans.target, context: newContext }, config);
     } else if (trans.serializationType === Transition.PRECEDENCE) {
       throw "Precedence predicates are not supported in lexers.";
     } else if (trans.serializationType === Transition.PREDICATE) {
@@ -20366,24 +20368,24 @@ var LexerATNSimulator = class extends ATNSimulator {
       }
       configs.hasSemanticContext = true;
       if (this.evaluatePredicate(input, trans.ruleIndex, trans.predIndex, speculative)) {
-        cfg = new LexerATNConfig({ state: trans.target }, config2);
+        cfg = new LexerATNConfig({ state: trans.target }, config);
       }
     } else if (trans.serializationType === Transition.ACTION) {
-      if (config2.context === null || config2.context.hasEmptyPath()) {
+      if (config.context === null || config.context.hasEmptyPath()) {
         const lexerActionExecutor = LexerActionExecutor.append(
-          config2.lexerActionExecutor,
+          config.lexerActionExecutor,
           this.atn.lexerActions[trans.actionIndex]
         );
-        cfg = new LexerATNConfig({ state: trans.target, lexerActionExecutor }, config2);
+        cfg = new LexerATNConfig({ state: trans.target, lexerActionExecutor }, config);
       } else {
-        cfg = new LexerATNConfig({ state: trans.target }, config2);
+        cfg = new LexerATNConfig({ state: trans.target }, config);
       }
     } else if (trans.serializationType === Transition.EPSILON) {
-      cfg = new LexerATNConfig({ state: trans.target }, config2);
+      cfg = new LexerATNConfig({ state: trans.target }, config);
     } else if (trans.serializationType === Transition.ATOM || trans.serializationType === Transition.RANGE || trans.serializationType === Transition.SET) {
       if (treatEofAsEpsilon) {
         if (trans.matches(Token.EOF, 0, Lexer.MAX_CHAR_VALUE)) {
-          cfg = new LexerATNConfig({ state: trans.target }, config2);
+          cfg = new LexerATNConfig({ state: trans.target }, config);
         }
       }
     }
@@ -21515,16 +21517,16 @@ var ParserATNSimulator = class extends ATNSimulator {
     }
     const result = new ATNConfigSet(configs.fullCtx);
     for (let i = 0; i < configs.items.length; i++) {
-      const config2 = configs.items[i];
-      if (config2.state instanceof RuleStopState) {
-        result.add(config2, this.mergeCache);
+      const config = configs.items[i];
+      if (config.state instanceof RuleStopState) {
+        result.add(config, this.mergeCache);
         continue;
       }
-      if (lookToEndOfRule && config2.state.epsilonOnlyTransitions) {
-        const nextTokens = this.atn.nextTokens(config2.state);
+      if (lookToEndOfRule && config.state.epsilonOnlyTransitions) {
+        const nextTokens = this.atn.nextTokens(config.state);
         if (nextTokens.contains(Token.EPSILON)) {
-          const endOfRuleState = this.atn.ruleToStopState[config2.state.ruleIndex];
-          result.add(new ATNConfig({ state: endOfRuleState }, config2), this.mergeCache);
+          const endOfRuleState = this.atn.ruleToStopState[config.state.ruleIndex];
+          result.add(new ATNConfig({ state: endOfRuleState }, config), this.mergeCache);
         }
       }
     }
@@ -21598,37 +21600,37 @@ var ParserATNSimulator = class extends ATNSimulator {
    * calling {@link Parser//getPrecedence})
    */
   applyPrecedenceFilter(configs) {
-    let config2;
+    let config;
     const statesFromAlt1 = [];
     const configSet = new ATNConfigSet(configs.fullCtx);
     for (let i = 0; i < configs.items.length; i++) {
-      config2 = configs.items[i];
-      if (config2.alt !== 1) {
+      config = configs.items[i];
+      if (config.alt !== 1) {
         continue;
       }
-      const updatedContext = config2.semanticContext.evalPrecedence(this.parser, this._outerContext);
+      const updatedContext = config.semanticContext.evalPrecedence(this.parser, this._outerContext);
       if (updatedContext === null) {
         continue;
       }
-      statesFromAlt1[config2.state.stateNumber] = config2.context;
-      if (updatedContext !== config2.semanticContext) {
-        configSet.add(new ATNConfig({ semanticContext: updatedContext }, config2), this.mergeCache);
+      statesFromAlt1[config.state.stateNumber] = config.context;
+      if (updatedContext !== config.semanticContext) {
+        configSet.add(new ATNConfig({ semanticContext: updatedContext }, config), this.mergeCache);
       } else {
-        configSet.add(config2, this.mergeCache);
+        configSet.add(config, this.mergeCache);
       }
     }
     for (let i = 0; i < configs.items.length; i++) {
-      config2 = configs.items[i];
-      if (config2.alt === 1) {
+      config = configs.items[i];
+      if (config.alt === 1) {
         continue;
       }
-      if (!config2.precedenceFilterSuppressed) {
-        const context = statesFromAlt1[config2.state.stateNumber] || null;
-        if (context !== null && context.equals(config2.context)) {
+      if (!config.precedenceFilterSuppressed) {
+        const context = statesFromAlt1[config.state.stateNumber] || null;
+        if (context !== null && context.equals(config.context)) {
           continue;
         }
       }
-      configSet.add(config2, this.mergeCache);
+      configSet.add(config, this.mergeCache);
     }
     return configSet;
   }
@@ -21826,10 +21828,10 @@ var ParserATNSimulator = class extends ATNSimulator {
   //     waste to pursue the closure. Might have to advance when we do
   //     ambig detection thought :(
   //
-  closure(config2, configs, closureBusy, collectPredicates, fullCtx, treatEofAsEpsilon) {
+  closure(config, configs, closureBusy, collectPredicates, fullCtx, treatEofAsEpsilon) {
     const initialDepth = 0;
     this.closureCheckingStopState(
-      config2,
+      config,
       configs,
       closureBusy,
       collectPredicates,
@@ -21838,26 +21840,26 @@ var ParserATNSimulator = class extends ATNSimulator {
       treatEofAsEpsilon
     );
   }
-  closureCheckingStopState(config2, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon) {
+  closureCheckingStopState(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon) {
     if (this.debug || this.debug_closure) {
-      console.log("closure(" + config2.toString(this.parser, true) + ")");
-      if (config2.reachesIntoOuterContext > 50) {
+      console.log("closure(" + config.toString(this.parser, true) + ")");
+      if (config.reachesIntoOuterContext > 50) {
         throw "problem";
       }
     }
-    if (config2.state instanceof RuleStopState) {
-      if (!config2.context.isEmpty()) {
-        for (let i = 0; i < config2.context.length; i++) {
-          if (config2.context.getReturnState(i) === PredictionContext.EMPTY_RETURN_STATE) {
+    if (config.state instanceof RuleStopState) {
+      if (!config.context.isEmpty()) {
+        for (let i = 0; i < config.context.length; i++) {
+          if (config.context.getReturnState(i) === PredictionContext.EMPTY_RETURN_STATE) {
             if (fullCtx) {
-              configs.add(new ATNConfig({ state: config2.state, context: PredictionContext.EMPTY }, config2), this.mergeCache);
+              configs.add(new ATNConfig({ state: config.state, context: PredictionContext.EMPTY }, config), this.mergeCache);
               continue;
             } else {
               if (this.debug) {
-                console.log("FALLING off rule " + this.getRuleName(config2.state.ruleIndex));
+                console.log("FALLING off rule " + this.getRuleName(config.state.ruleIndex));
               }
               this.closure_(
-                config2,
+                config,
                 configs,
                 closureBusy,
                 collectPredicates,
@@ -21868,40 +21870,40 @@ var ParserATNSimulator = class extends ATNSimulator {
             }
             continue;
           }
-          const returnState = this.atn.states[config2.context.getReturnState(i)];
-          const newContext = config2.context.getParent(i);
-          const parms = { state: returnState, alt: config2.alt, context: newContext, semanticContext: config2.semanticContext };
+          const returnState = this.atn.states[config.context.getReturnState(i)];
+          const newContext = config.context.getParent(i);
+          const parms = { state: returnState, alt: config.alt, context: newContext, semanticContext: config.semanticContext };
           const c = new ATNConfig(parms, null);
-          c.reachesIntoOuterContext = config2.reachesIntoOuterContext;
+          c.reachesIntoOuterContext = config.reachesIntoOuterContext;
           this.closureCheckingStopState(c, configs, closureBusy, collectPredicates, fullCtx, depth - 1, treatEofAsEpsilon);
         }
         return;
       } else if (fullCtx) {
-        configs.add(config2, this.mergeCache);
+        configs.add(config, this.mergeCache);
         return;
       } else {
         if (this.debug) {
-          console.log("FALLING off rule " + this.getRuleName(config2.state.ruleIndex));
+          console.log("FALLING off rule " + this.getRuleName(config.state.ruleIndex));
         }
       }
     }
-    this.closure_(config2, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon);
+    this.closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon);
   }
   // Do the actual work of walking epsilon edges//
-  closure_(config2, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon) {
-    const p = config2.state;
+  closure_(config, configs, closureBusy, collectPredicates, fullCtx, depth, treatEofAsEpsilon) {
+    const p = config.state;
     if (!p.epsilonOnlyTransitions) {
-      configs.add(config2, this.mergeCache);
+      configs.add(config, this.mergeCache);
     }
     for (let i = 0; i < p.transitions.length; i++) {
-      if (i === 0 && this.canDropLoopEntryEdgeInLeftRecursiveRule(config2))
+      if (i === 0 && this.canDropLoopEntryEdgeInLeftRecursiveRule(config))
         continue;
       const t = p.transitions[i];
       const continueCollecting = collectPredicates && !(t instanceof ActionTransition);
-      const c = this.getEpsilonTarget(config2, t, continueCollecting, depth === 0, fullCtx, treatEofAsEpsilon);
+      const c = this.getEpsilonTarget(config, t, continueCollecting, depth === 0, fullCtx, treatEofAsEpsilon);
       if (c !== null) {
         let newDepth = depth;
-        if (config2.state instanceof RuleStopState) {
+        if (config.state instanceof RuleStopState) {
           if (this._dfa !== null && this._dfa.precedenceDfa) {
             if (t.outermostPrecedenceReturn === this._dfa.atnStartState.ruleIndex) {
               c.precedenceFilterSuppressed = true;
@@ -21930,15 +21932,15 @@ var ParserATNSimulator = class extends ATNSimulator {
       }
     }
   }
-  canDropLoopEntryEdgeInLeftRecursiveRule(config2) {
-    const p = config2.state;
+  canDropLoopEntryEdgeInLeftRecursiveRule(config) {
+    const p = config.state;
     if (p.stateType !== ATNState.STAR_LOOP_ENTRY)
       return false;
-    if (p.stateType !== ATNState.STAR_LOOP_ENTRY || !p.isPrecedenceDecision || config2.context.isEmpty() || config2.context.hasEmptyPath())
+    if (p.stateType !== ATNState.STAR_LOOP_ENTRY || !p.isPrecedenceDecision || config.context.isEmpty() || config.context.hasEmptyPath())
       return false;
-    const numCtxs = config2.context.length;
+    const numCtxs = config.context.length;
     for (let i = 0; i < numCtxs; i++) {
-      const returnState = this.atn.states[config2.context.getReturnState(i)];
+      const returnState = this.atn.states[config.context.getReturnState(i)];
       if (returnState.ruleIndex !== p.ruleIndex)
         return false;
     }
@@ -21946,7 +21948,7 @@ var ParserATNSimulator = class extends ATNSimulator {
     const blockEndStateNum = decisionStartState.endState.stateNumber;
     const blockEndState = this.atn.states[blockEndStateNum];
     for (let i = 0; i < numCtxs; i++) {
-      const returnStateNumber = config2.context.getReturnState(i);
+      const returnStateNumber = config.context.getReturnState(i);
       const returnState = this.atn.states[returnStateNumber];
       if (returnState.transitions.length !== 1 || !returnState.transitions[0].isEpsilon)
         return false;
@@ -21970,24 +21972,24 @@ var ParserATNSimulator = class extends ATNSimulator {
       return "<rule " + index + ">";
     }
   }
-  getEpsilonTarget(config2, t, collectPredicates, inContext, fullCtx, treatEofAsEpsilon) {
+  getEpsilonTarget(config, t, collectPredicates, inContext, fullCtx, treatEofAsEpsilon) {
     switch (t.serializationType) {
       case Transition.RULE:
-        return this.ruleTransition(config2, t);
+        return this.ruleTransition(config, t);
       case Transition.PRECEDENCE:
-        return this.precedenceTransition(config2, t, collectPredicates, inContext, fullCtx);
+        return this.precedenceTransition(config, t, collectPredicates, inContext, fullCtx);
       case Transition.PREDICATE:
-        return this.predTransition(config2, t, collectPredicates, inContext, fullCtx);
+        return this.predTransition(config, t, collectPredicates, inContext, fullCtx);
       case Transition.ACTION:
-        return this.actionTransition(config2, t);
+        return this.actionTransition(config, t);
       case Transition.EPSILON:
-        return new ATNConfig({ state: t.target }, config2);
+        return new ATNConfig({ state: t.target }, config);
       case Transition.ATOM:
       case Transition.RANGE:
       case Transition.SET:
         if (treatEofAsEpsilon) {
           if (t.matches(Token.EOF, 0, 1)) {
-            return new ATNConfig({ state: t.target }, config2);
+            return new ATNConfig({ state: t.target }, config);
           }
         }
         return null;
@@ -21995,14 +21997,14 @@ var ParserATNSimulator = class extends ATNSimulator {
         return null;
     }
   }
-  actionTransition(config2, t) {
+  actionTransition(config, t) {
     if (this.debug) {
       const index = t.actionIndex === -1 ? 65535 : t.actionIndex;
       console.log("ACTION edge " + t.ruleIndex + ":" + index);
     }
-    return new ATNConfig({ state: t.target }, config2);
+    return new ATNConfig({ state: t.target }, config);
   }
-  precedenceTransition(config2, pt, collectPredicates, inContext, fullCtx) {
+  precedenceTransition(config, pt, collectPredicates, inContext, fullCtx) {
     if (this.debug) {
       console.log("PRED (collectPredicates=" + collectPredicates + ") " + pt.precedence + ">=_p, ctx dependent=true");
       if (this.parser !== null) {
@@ -22017,21 +22019,21 @@ var ParserATNSimulator = class extends ATNSimulator {
         const predSucceeds = pt.getPredicate().evaluate(this.parser, this._outerContext);
         this._input.seek(currentPosition);
         if (predSucceeds) {
-          c = new ATNConfig({ state: pt.target }, config2);
+          c = new ATNConfig({ state: pt.target }, config);
         }
       } else {
-        const newSemCtx = SemanticContext.andContext(config2.semanticContext, pt.getPredicate());
-        c = new ATNConfig({ state: pt.target, semanticContext: newSemCtx }, config2);
+        const newSemCtx = SemanticContext.andContext(config.semanticContext, pt.getPredicate());
+        c = new ATNConfig({ state: pt.target, semanticContext: newSemCtx }, config);
       }
     } else {
-      c = new ATNConfig({ state: pt.target }, config2);
+      c = new ATNConfig({ state: pt.target }, config);
     }
     if (this.debug) {
       console.log("config from pred transition=" + c);
     }
     return c;
   }
-  predTransition(config2, pt, collectPredicates, inContext, fullCtx) {
+  predTransition(config, pt, collectPredicates, inContext, fullCtx) {
     if (this.debug) {
       console.log("PRED (collectPredicates=" + collectPredicates + ") " + pt.ruleIndex + ":" + pt.predIndex + ", ctx dependent=" + pt.isCtxDependent);
       if (this.parser !== null) {
@@ -22046,27 +22048,27 @@ var ParserATNSimulator = class extends ATNSimulator {
         const predSucceeds = pt.getPredicate().evaluate(this.parser, this._outerContext);
         this._input.seek(currentPosition);
         if (predSucceeds) {
-          c = new ATNConfig({ state: pt.target }, config2);
+          c = new ATNConfig({ state: pt.target }, config);
         }
       } else {
-        const newSemCtx = SemanticContext.andContext(config2.semanticContext, pt.getPredicate());
-        c = new ATNConfig({ state: pt.target, semanticContext: newSemCtx }, config2);
+        const newSemCtx = SemanticContext.andContext(config.semanticContext, pt.getPredicate());
+        c = new ATNConfig({ state: pt.target, semanticContext: newSemCtx }, config);
       }
     } else {
-      c = new ATNConfig({ state: pt.target }, config2);
+      c = new ATNConfig({ state: pt.target }, config);
     }
     if (this.debug) {
       console.log("config from pred transition=" + c);
     }
     return c;
   }
-  ruleTransition(config2, t) {
+  ruleTransition(config, t) {
     if (this.debug) {
-      console.log("CALL rule " + this.getRuleName(t.target.ruleIndex) + ", ctx=" + config2.context);
+      console.log("CALL rule " + this.getRuleName(t.target.ruleIndex) + ", ctx=" + config.context);
     }
     const returnState = t.followState;
-    const newContext = SingletonPredictionContext.create(config2.context, returnState.stateNumber);
-    return new ATNConfig({ state: t.target, context: newContext }, config2);
+    const newContext = SingletonPredictionContext.create(config.context, returnState.stateNumber);
+    return new ATNConfig({ state: t.target, context: newContext }, config);
   }
   getConflictingAlts(configs) {
     const altsets = PredictionMode_default.getConflictingAltSubsets(configs);
@@ -24675,7 +24677,7 @@ var antlr4_default = antlr4;
 // src/parser/visitor.ts
 var import_chalk2 = __toESM(require_source());
 var import_fs4 = __toESM(require("fs"));
-var import_path2 = __toESM(require("path"));
+var import_path3 = __toESM(require("path"));
 var LambdaSuffix = "$$lambda";
 function generateTsDef(context, ifs, typeRoot) {
   import_fs4.default.mkdirSync(typeRoot, { recursive: true });
@@ -24747,7 +24749,7 @@ function generateTsDef(context, ifs, typeRoot) {
     }
     if (filename) {
       const content = [...frontBuffer, ...endBuffer.reverse()].join("\n");
-      import_fs4.default.writeFileSync(import_path2.default.join(typeRoot, filename), content + lambdaBuffer);
+      import_fs4.default.writeFileSync(import_path3.default.join(typeRoot, filename), content + lambdaBuffer);
       process.stdout.clearLine(0);
       process.stdout.cursorTo(0);
       process.stdout.write(`Generated lib/@types/${filename}`);
@@ -24757,12 +24759,12 @@ function generateTsDef(context, ifs, typeRoot) {
   process.stdout.clearLine(0);
   process.stdout.cursorTo(0);
   import_fs4.default.writeFileSync(
-    import_path2.default.join(typeRoot, "index.d.ts"),
+    import_path3.default.join(typeRoot, "index.d.ts"),
     references.map((it) => `/// <reference path="${it}" />`).sort().join("\n")
   );
-  console.log(import_chalk2.default.green("Generated " + import_path2.default.join(typeRoot, "index.d.ts")));
-  import_fs4.default.writeFileSync(import_path2.default.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
-  console.log(import_chalk2.default.green("Generated " + import_path2.default.join(typeRoot, "namespace.json")));
+  console.log(import_chalk2.default.green("Generated " + import_path3.default.join(typeRoot, "index.d.ts")));
+  import_fs4.default.writeFileSync(import_path3.default.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
+  console.log(import_chalk2.default.green("Generated " + import_path3.default.join(typeRoot, "namespace.json")));
   return true;
 }
 function declareConstructor(constructor, ifs) {
@@ -33335,8 +33337,8 @@ var interfaces_default = {
 
 // src/commands/install.ts
 async function install_default(offline) {
-  if (!import_fs5.default.existsSync(path.PACKAGE)) {
-    console.error(import_chalk3.default.red(path.PACKAGE + " does not exist."));
+  if (!import_fs5.default.existsSync(PATH.PACKAGE)) {
+    console.error(import_chalk3.default.red(PATH.PACKAGE + " does not exist."));
     process.exit(code.PROJECT_NOT_FOUND);
   }
   if (!offline) {
@@ -33350,7 +33352,7 @@ async function install_default(offline) {
     const classes = await listLibClasses(jars);
     console.log(`Found ${import_chalk3.default.green(classes.length)} classes`);
     console.log("Generating typescript definitions...");
-    parse(jars, interfaces_default, classes, import_path3.default.join(process.cwd(), "lib", "@types"));
+    parse(jars, interfaces_default, classes, import_path4.default.join(process.cwd(), "lib", "@types"));
   }
 }
 async function listLibClasses(jars) {
@@ -33375,10 +33377,10 @@ function npmInstall() {
     process.exit(child.status);
 }
 function gradleInstall() {
-  import_fs5.default.mkdirSync(import_path3.default.join("lib", "@types"), { recursive: true });
-  import_fs5.default.writeFileSync(import_path3.default.join("lib", "@types", "index.d.ts"), "");
+  import_fs5.default.mkdirSync(import_path4.default.join("lib", "@types"), { recursive: true });
+  import_fs5.default.writeFileSync(import_path4.default.join("lib", "@types", "index.d.ts"), "");
   const mvnDependencies = {};
-  [path.PACKAGE, ...new import_glob.GlobSync(import_path3.default.join("node_modules", "**", path.PACKAGE)).found].forEach((it) => {
+  [PATH.PACKAGE, ...new import_glob.GlobSync(import_path4.default.join("node_modules", "**", PATH.PACKAGE)).found].forEach((it) => {
     const pkg = JSON.parse(import_fs5.default.readFileSync(it, "utf-8"));
     Object.keys(pkg.mvnDependencies || {}).forEach((k) => {
       if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))
@@ -33386,8 +33388,8 @@ function gradleInstall() {
     });
   });
   const deps = Object.keys(mvnDependencies).map((it) => it + ":" + mvnDependencies[it]);
-  import_fs5.default.writeFileSync(import_path3.default.join("lib", "build.gradle"), gradleTemplate(deps));
-  const child = (0, import_child_process3.spawnSync)("gradle", ["-b", import_path3.default.join("lib", "build.gradle"), "--no-daemon", "install"], {
+  import_fs5.default.writeFileSync(import_path4.default.join("lib", "build.gradle"), gradleTemplate(deps));
+  const child = (0, import_child_process3.spawnSync)("gradle", ["-b", import_path4.default.join("lib", "build.gradle"), "--no-daemon", "install"], {
     stdio: "inherit"
   });
   if (child.status)
@@ -33493,7 +33495,7 @@ var commands_default = {
 };
 
 // src/main.ts
-var { name, version } = readJsonObject(import_path4.default.resolve(__dirname, "..", path.PACKAGE));
+var { name, version } = readJSON(import_path5.default.join(PATH.INSTALL_DIR, PATH.PACKAGE));
 import_commander.program.name(name).version(version);
 import_commander.program.command("init").description("initialize a new project in the current directory").action(() => commands_default.init());
 import_commander.program.command("install").description("install dependencies of current project").option("--offline", "generate lib/@types offline", false).action((command) => {

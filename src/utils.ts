@@ -18,7 +18,7 @@ export function listFilesByExt(dirname: string, ext: string): string[] {
   }
 }
 
-export function readJsonObject(path: string): Record<string, any> {
+export function readJSON(path: string): Record<string, any> {
   if (fs.existsSync(path)) {
     const content = fs.readFileSync(path, "utf-8")
     return JSON.parse(content)

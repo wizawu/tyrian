@@ -5,7 +5,6 @@ import { ChildProcessWithoutNullStreams, spawn, spawnSync } from "child_process"
 
 import * as utils from "../utils"
 import { code as ErrorCode } from "../errors"
-import { path as PATH } from "../constants"
 
 interface Options {
   inspectBrk: boolean

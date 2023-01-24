@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     class ServerSocket implements java.io.Closeable {
       constructor(arg0: java.net.SocketImpl)
       public constructor()
@@ -30,11 +29,14 @@ declare namespace java {
       public static setSocketFactory(arg0: java.net.SocketImplFactory | java.net.SocketImplFactory$$lambda): void
       public setReceiveBufferSize(arg0: number | java.lang.Integer): void
       public getReceiveBufferSize(): number
-      public setPerformancePreferences(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public setPerformancePreferences(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public setOption<T>(arg0: java.net.SocketOption<T>, arg1: T): java.net.ServerSocket
       public getOption<T>(arg0: java.net.SocketOption<T>): T
       public supportedOptions(): java.util.Set<java.net.SocketOption<unknown>>
     }
-
   }
 }

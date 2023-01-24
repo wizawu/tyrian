@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace stylesheets {
-
         interface StyleSheet {
           getType(): java.lang.String
           getDisabled(): boolean
@@ -13,7 +12,6 @@ declare namespace org {
           getTitle(): java.lang.String
           getMedia(): org.w3c.dom.stylesheets.MediaList
         }
-
       }
     }
   }

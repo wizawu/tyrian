@@ -2,8 +2,7 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace util {
-
-        class ElementScanner6<R,P> extends javax.lang.model.util.AbstractElementVisitor6<R,P> {
+        class ElementScanner6<R, P> extends javax.lang.model.util.AbstractElementVisitor6<R, P> {
           protected readonly DEFAULT_VALUE: R
           protected constructor()
           protected constructor(arg0: R)
@@ -16,7 +15,6 @@ declare namespace javax {
           public visitExecutable(arg0: javax.lang.model.element.ExecutableElement, arg1: P): R
           public visitTypeParameter(arg0: javax.lang.model.element.TypeParameterElement, arg1: P): R
         }
-
       }
     }
   }

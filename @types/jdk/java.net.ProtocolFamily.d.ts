@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     interface ProtocolFamily$$lambda {
       (): java.lang.String | string
     }
@@ -8,6 +7,5 @@ declare namespace java {
     interface ProtocolFamily {
       name(): java.lang.String
     }
-
   }
 }

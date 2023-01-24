@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       interface Keymap {
         getName(): java.lang.String
         getDefaultAction(): javax.swing.Action
@@ -17,7 +16,6 @@ declare namespace javax {
         getResolveParent(): javax.swing.text.Keymap
         setResolveParent(arg0: javax.swing.text.Keymap): void
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     abstract class SecureRandomSpi implements java.io.Serializable {
       public constructor()
       protected constructor(arg0: java.security.SecureRandomParameters)
@@ -12,6 +11,5 @@ declare namespace java {
       protected engineGetParameters(): java.security.SecureRandomParameters
       public toString(): java.lang.String
     }
-
   }
 }

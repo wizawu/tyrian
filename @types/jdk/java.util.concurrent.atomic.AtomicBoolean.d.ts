@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace atomic {
-
         class AtomicBoolean implements java.io.Serializable {
           public constructor(arg0: boolean | java.lang.Boolean)
           public constructor()
@@ -21,13 +20,21 @@ declare namespace java {
           public getAcquire(): boolean
           public setRelease(arg0: boolean | java.lang.Boolean): void
           public compareAndExchange(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean): boolean
-          public compareAndExchangeAcquire(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean): boolean
-          public compareAndExchangeRelease(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean): boolean
-          public weakCompareAndSetVolatile(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean): boolean
+          public compareAndExchangeAcquire(
+            arg0: boolean | java.lang.Boolean,
+            arg1: boolean | java.lang.Boolean
+          ): boolean
+          public compareAndExchangeRelease(
+            arg0: boolean | java.lang.Boolean,
+            arg1: boolean | java.lang.Boolean
+          ): boolean
+          public weakCompareAndSetVolatile(
+            arg0: boolean | java.lang.Boolean,
+            arg1: boolean | java.lang.Boolean
+          ): boolean
           public weakCompareAndSetAcquire(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean): boolean
           public weakCompareAndSetRelease(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean): boolean
         }
-
       }
     }
   }

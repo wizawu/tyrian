@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Character$UnicodeScript extends java.lang.Enum<java.lang.Character$UnicodeScript> {
       public static readonly COMMON: java.lang.Character$UnicodeScript
       public static readonly LATIN: java.lang.Character$UnicodeScript
@@ -149,6 +148,5 @@ declare namespace java {
       public static of(arg0: number | java.lang.Integer): java.lang.Character$UnicodeScript
       public static forName(arg0: java.lang.String | string): java.lang.Character$UnicodeScript
     }
-
   }
 }

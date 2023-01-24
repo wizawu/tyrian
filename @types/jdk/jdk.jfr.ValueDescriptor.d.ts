@@ -1,11 +1,26 @@
 declare namespace jdk {
   namespace jfr {
-
     class ValueDescriptor {
-      constructor(arg0: jdk.jfr.internal.Type, arg1: java.lang.String | string, arg2: java.util.List<jdk.jfr.AnnotationElement>, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean, arg5: java.lang.String | string)
+      constructor(
+        arg0: jdk.jfr.internal.Type,
+        arg1: java.lang.String | string,
+        arg2: java.util.List<jdk.jfr.AnnotationElement>,
+        arg3: number | java.lang.Integer,
+        arg4: boolean | java.lang.Boolean,
+        arg5: java.lang.String | string
+      )
       public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string)
-      public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.util.List<jdk.jfr.AnnotationElement>)
-      constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.util.List<jdk.jfr.AnnotationElement>, arg3: boolean | java.lang.Boolean)
+      public constructor(
+        arg0: java.lang.Class<unknown>,
+        arg1: java.lang.String | string,
+        arg2: java.util.List<jdk.jfr.AnnotationElement>
+      )
+      constructor(
+        arg0: java.lang.Class<unknown>,
+        arg1: java.lang.String | string,
+        arg2: java.util.List<jdk.jfr.AnnotationElement>,
+        arg3: boolean | java.lang.Boolean
+      )
       public getLabel(): java.lang.String
       public getName(): java.lang.String
       public getDescription(): java.lang.String
@@ -22,6 +37,5 @@ declare namespace jdk {
       getJavaFieldName(): java.lang.String
       isUnsigned(): boolean
     }
-
   }
 }

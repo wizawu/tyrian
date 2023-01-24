@@ -1,9 +1,16 @@
 declare namespace java {
   namespace awt {
     namespace dnd {
-
-      abstract class MouseDragGestureRecognizer extends java.awt.dnd.DragGestureRecognizer implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener {
-        protected constructor(arg0: java.awt.dnd.DragSource, arg1: java.awt.Component, arg2: number | java.lang.Integer, arg3: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$lambda)
+      abstract class MouseDragGestureRecognizer
+        extends java.awt.dnd.DragGestureRecognizer
+        implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener
+      {
+        protected constructor(
+          arg0: java.awt.dnd.DragSource,
+          arg1: java.awt.Component,
+          arg2: number | java.lang.Integer,
+          arg3: java.awt.dnd.DragGestureListener | java.awt.dnd.DragGestureListener$$lambda
+        )
         protected constructor(arg0: java.awt.dnd.DragSource, arg1: java.awt.Component, arg2: number | java.lang.Integer)
         protected constructor(arg0: java.awt.dnd.DragSource, arg1: java.awt.Component)
         protected constructor(arg0: java.awt.dnd.DragSource)
@@ -17,7 +24,6 @@ declare namespace java {
         public mouseDragged(arg0: java.awt.event.MouseEvent): void
         public mouseMoved(arg0: java.awt.event.MouseEvent): void
       }
-
     }
   }
 }

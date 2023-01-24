@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace xpath {
-
       class XPathException extends java.lang.Exception {
         public constructor(arg0: java.lang.String | string)
         public constructor(arg0: java.lang.Throwable)
@@ -10,7 +9,6 @@ declare namespace javax {
         public printStackTrace(): void
         public printStackTrace(arg0: java.io.PrintWriter): void
       }
-
     }
   }
 }

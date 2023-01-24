@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       interface Element {
         getDocument(): javax.swing.text.Document
         getParentElement(): javax.swing.text.Element
@@ -14,7 +13,6 @@ declare namespace javax {
         getElement(arg0: number | java.lang.Integer): javax.swing.text.Element
         isLeaf(): boolean
       }
-
     }
   }
 }

@@ -3,7 +3,6 @@ declare namespace com {
     namespace security {
       namespace auth {
         namespace module {
-
           class UnixSystem {
             protected username: java.lang.String
             protected uid: long
@@ -15,7 +14,6 @@ declare namespace com {
             public getGid(): number
             public getGroups(): number[]
           }
-
         }
       }
     }

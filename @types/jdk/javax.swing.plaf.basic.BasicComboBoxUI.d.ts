@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicComboBoxUI extends javax.swing.plaf.ComboBoxUI {
           protected comboBox: javax.swing.JComboBox<java.lang.Object>
           protected hasFocus: boolean
@@ -59,18 +58,33 @@ declare namespace javax {
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public getBaseline(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           public getAccessibleChildrenCount(arg0: javax.swing.JComponent): number
-          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer): javax.accessibility.Accessible
+          public getAccessibleChild(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer
+          ): javax.accessibility.Accessible
           protected isNavigationKey(arg0: number | java.lang.Integer): boolean
           protected selectNextPossibleValue(): void
           protected selectPreviousPossibleValue(): void
           protected toggleOpenClose(): void
           protected rectangleForCurrentValue(): java.awt.Rectangle
           protected getInsets(): java.awt.Insets
-          public paintCurrentValue(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean | java.lang.Boolean): void
-          public paintCurrentValueBackground(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: boolean | java.lang.Boolean): void
+          public paintCurrentValue(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: boolean | java.lang.Boolean
+          ): void
+          public paintCurrentValueBackground(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: boolean | java.lang.Boolean
+          ): void
           repaintCurrentValue(): void
           protected getDefaultSize(): java.awt.Dimension
           protected getDisplaySize(): java.awt.Dimension
@@ -80,7 +94,6 @@ declare namespace javax {
           isTableCellEditor(): boolean
           protected uninstallKeyboardActions(): void
         }
-
       }
     }
   }

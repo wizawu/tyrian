@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace logging {
-
       class ErrorManager {
         public static readonly GENERIC_FAILURE: int
         public static readonly WRITE_FAILURE: int
@@ -12,7 +11,6 @@ declare namespace java {
         public constructor()
         public error(arg0: java.lang.String | string, arg1: java.lang.Exception, arg2: number | java.lang.Integer): void
       }
-
     }
   }
 }

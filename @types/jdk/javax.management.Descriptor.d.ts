@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace management {
-
     interface Descriptor extends java.io.Serializable, java.lang.Cloneable {
       getFieldValue(arg0: java.lang.String | string): java.lang.Object
       setField(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
@@ -14,6 +13,5 @@ declare namespace javax {
       equals(arg0: java.lang.Object | any): boolean
       hashCode(): number
     }
-
   }
 }

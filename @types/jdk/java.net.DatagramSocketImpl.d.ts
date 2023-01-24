@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     abstract class DatagramSocketImpl implements java.net.SocketOptions {
       protected localPort: int
       protected fd: java.io.FileDescriptor
@@ -32,6 +31,5 @@ declare namespace java {
       protected getOption<T>(arg0: java.net.SocketOption<T>): T
       protected supportedOptions(): java.util.Set<java.net.SocketOption<unknown>>
     }
-
   }
 }

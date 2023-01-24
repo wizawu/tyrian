@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace script {
-
     class SimpleScriptContext implements javax.script.ScriptContext {
       protected writer: java.io.Writer
       protected errorWriter: java.io.Writer
@@ -13,7 +12,11 @@ declare namespace javax {
       public getAttribute(arg0: java.lang.String | string): java.lang.Object
       public getAttribute(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.lang.Object
       public removeAttribute(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.lang.Object
-      public setAttribute(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
+      public setAttribute(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: number | java.lang.Integer
+      ): void
       public getWriter(): java.io.Writer
       public getReader(): java.io.Reader
       public setReader(arg0: java.io.Reader): void
@@ -24,6 +27,5 @@ declare namespace javax {
       public getBindings(arg0: number | java.lang.Integer): javax.script.Bindings
       public getScopes(): java.util.List<java.lang.Integer>
     }
-
   }
 }

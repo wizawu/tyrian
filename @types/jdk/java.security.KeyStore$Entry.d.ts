@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     interface KeyStore$Entry$$lambda {
       (): java.util.Set<java.security.KeyStore$Entry$Attribute>
     }
@@ -8,6 +7,5 @@ declare namespace java {
     interface KeyStore$Entry {
       getAttributes(): java.util.Set<java.security.KeyStore$Entry$Attribute>
     }
-
   }
 }

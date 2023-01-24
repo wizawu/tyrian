@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace nio {
       namespace sctp {
-
         class SctpStandardSocketOptions {
           public static readonly SCTP_DISABLE_FRAGMENTS: com.sun.nio.sctp.SctpSocketOption<java.lang.Boolean>
           public static readonly SCTP_EXPLICIT_COMPLETE: com.sun.nio.sctp.SctpSocketOption<java.lang.Boolean>
@@ -15,7 +14,6 @@ declare namespace com {
           public static readonly SO_RCVBUF: com.sun.nio.sctp.SctpSocketOption<java.lang.Integer>
           public static readonly SO_LINGER: com.sun.nio.sctp.SctpSocketOption<java.lang.Integer>
         }
-
       }
     }
   }

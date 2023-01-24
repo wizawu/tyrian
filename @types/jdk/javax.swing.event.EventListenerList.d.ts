@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace event {
-
       class EventListenerList implements java.io.Serializable {
         protected listenerList: java.lang.Object[]
         public constructor()
@@ -13,7 +12,6 @@ declare namespace javax {
         public remove<T extends java.util.EventListener>(arg0: java.lang.Class<T>, arg1: T): void
         public toString(): java.lang.String
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace parsers {
-
       abstract class DocumentBuilder {
         protected constructor()
         public reset(): void
@@ -19,7 +18,6 @@ declare namespace javax {
         public getSchema(): javax.xml.validation.Schema
         public isXIncludeAware(): boolean
       }
-
     }
   }
 }

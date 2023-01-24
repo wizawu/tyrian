@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicTableUI extends javax.swing.plaf.TableUI {
           protected table: javax.swing.JTable
           protected rendererPane: javax.swing.CellRendererPane
@@ -24,14 +23,17 @@ declare namespace javax {
           protected uninstallDefaults(): void
           protected uninstallListeners(): void
           protected uninstallKeyboardActions(): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public getBaseline(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
         }
-
       }
     }
   }

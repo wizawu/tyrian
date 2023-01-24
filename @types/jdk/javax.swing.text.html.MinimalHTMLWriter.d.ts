@@ -2,12 +2,16 @@ declare namespace javax {
   namespace swing {
     namespace text {
       namespace html {
-
         class MinimalHTMLWriter extends javax.swing.text.AbstractWriter {
           startOffset: int
           endOffset: int
           public constructor(arg0: java.io.Writer, arg1: javax.swing.text.StyledDocument)
-          public constructor(arg0: java.io.Writer, arg1: javax.swing.text.StyledDocument, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+          public constructor(
+            arg0: java.io.Writer,
+            arg1: javax.swing.text.StyledDocument,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer
+          )
           public write(): void
           protected writeAttributes(arg0: javax.swing.text.AttributeSet): void
           protected text(arg0: javax.swing.text.Element): void
@@ -29,7 +33,6 @@ declare namespace javax {
           protected endFontTag(): void
           protected startFontTag(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

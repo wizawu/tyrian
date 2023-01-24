@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
       class PKIXParameters implements java.security.cert.CertPathParameters {
         public constructor(arg0: java.util.Set<java.security.cert.TrustAnchor>)
         public constructor(arg0: java.security.KeyStore)
@@ -34,7 +33,6 @@ declare namespace java {
         public clone(): java.lang.Object
         public toString(): java.lang.String
       }
-
     }
   }
 }

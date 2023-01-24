@@ -1,7 +1,9 @@
 declare namespace java {
   namespace util {
-
-    class LinkedList<E> extends java.util.AbstractSequentialList<E> implements java.util.List<E>, java.util.Deque<E>, java.lang.Cloneable, java.io.Serializable {
+    class LinkedList<E>
+      extends java.util.AbstractSequentialList<E>
+      implements java.util.List<E>, java.util.Deque<E>, java.lang.Cloneable, java.io.Serializable
+    {
       size: int
       first: java.util.LinkedList$Node<E>
       last: java.util.LinkedList$Node<E>
@@ -52,6 +54,5 @@ declare namespace java {
       public toArray<T>(arg0: T[]): T[]
       public spliterator(): java.util.Spliterator<E>
     }
-
   }
 }

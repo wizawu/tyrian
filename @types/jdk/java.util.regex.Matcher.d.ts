@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace regex {
-
       class Matcher implements java.util.regex.MatchResult {
         parentPattern: java.util.regex.Pattern
         groups: int[]
@@ -46,14 +45,21 @@ declare namespace java {
         public lookingAt(): boolean
         public static quoteReplacement(arg0: java.lang.String | string): java.lang.String
         public appendReplacement(arg0: java.lang.StringBuffer, arg1: java.lang.String | string): java.util.regex.Matcher
-        public appendReplacement(arg0: java.lang.StringBuilder, arg1: java.lang.String | string): java.util.regex.Matcher
+        public appendReplacement(
+          arg0: java.lang.StringBuilder,
+          arg1: java.lang.String | string
+        ): java.util.regex.Matcher
         public appendTail(arg0: java.lang.StringBuffer): java.lang.StringBuffer
         public appendTail(arg0: java.lang.StringBuilder): java.lang.StringBuilder
         public replaceAll(arg0: java.lang.String | string): java.lang.String
-        public replaceAll(arg0: java.util.function$.Function<java.util.regex.MatchResult,java.lang.String>): java.lang.String
+        public replaceAll(
+          arg0: java.util.function$.Function<java.util.regex.MatchResult, java.lang.String>
+        ): java.lang.String
         public results(): java.util.stream.Stream<java.util.regex.MatchResult>
         public replaceFirst(arg0: java.lang.String | string): java.lang.String
-        public replaceFirst(arg0: java.util.function$.Function<java.util.regex.MatchResult,java.lang.String>): java.lang.String
+        public replaceFirst(
+          arg0: java.util.function$.Function<java.util.regex.MatchResult, java.lang.String>
+        ): java.lang.String
         public region(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.regex.Matcher
         public regionStart(): number
         public regionEnd(): number
@@ -71,7 +77,6 @@ declare namespace java {
         charAt(arg0: number | java.lang.Integer): string
         getMatchedGroupIndex(arg0: java.lang.String | string): number
       }
-
     }
   }
 }

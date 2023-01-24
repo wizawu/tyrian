@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       class StyleConstants {
         public static readonly ComponentElementName: java.lang.String
         public static readonly IconElementName: java.lang.String
@@ -58,15 +57,24 @@ declare namespace javax {
         public static isSuperscript(arg0: javax.swing.text.AttributeSet): boolean
         public static isSubscript(arg0: javax.swing.text.AttributeSet): boolean
         public static setUnderline(arg0: javax.swing.text.MutableAttributeSet, arg1: boolean | java.lang.Boolean): void
-        public static setStrikeThrough(arg0: javax.swing.text.MutableAttributeSet, arg1: boolean | java.lang.Boolean): void
-        public static setSuperscript(arg0: javax.swing.text.MutableAttributeSet, arg1: boolean | java.lang.Boolean): void
+        public static setStrikeThrough(
+          arg0: javax.swing.text.MutableAttributeSet,
+          arg1: boolean | java.lang.Boolean
+        ): void
+        public static setSuperscript(
+          arg0: javax.swing.text.MutableAttributeSet,
+          arg1: boolean | java.lang.Boolean
+        ): void
         public static setSubscript(arg0: javax.swing.text.MutableAttributeSet, arg1: boolean | java.lang.Boolean): void
         public static getForeground(arg0: javax.swing.text.AttributeSet): java.awt.Color
         public static setForeground(arg0: javax.swing.text.MutableAttributeSet, arg1: java.awt.Color): void
         public static getBackground(arg0: javax.swing.text.AttributeSet): java.awt.Color
         public static setBackground(arg0: javax.swing.text.MutableAttributeSet, arg1: java.awt.Color): void
         public static getFirstLineIndent(arg0: javax.swing.text.AttributeSet): number
-        public static setFirstLineIndent(arg0: javax.swing.text.MutableAttributeSet, arg1: number | java.lang.Float): void
+        public static setFirstLineIndent(
+          arg0: javax.swing.text.MutableAttributeSet,
+          arg1: number | java.lang.Float
+        ): void
         public static getRightIndent(arg0: javax.swing.text.AttributeSet): number
         public static setRightIndent(arg0: javax.swing.text.MutableAttributeSet, arg1: number | java.lang.Float): void
         public static getLeftIndent(arg0: javax.swing.text.AttributeSet): number
@@ -83,7 +91,6 @@ declare namespace javax {
         public static setTabSet(arg0: javax.swing.text.MutableAttributeSet, arg1: javax.swing.text.TabSet): void
         constructor(arg0: java.lang.String | string)
       }
-
     }
   }
 }

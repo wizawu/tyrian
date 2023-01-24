@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class PriorityQueue<E> extends java.util.AbstractQueue<E> implements java.io.Serializable {
       queue: java.lang.Object[]
       size: int
@@ -32,6 +31,5 @@ declare namespace java {
       public retainAll(arg0: java.util.Collection<unknown>): boolean
       public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
     }
-
   }
 }

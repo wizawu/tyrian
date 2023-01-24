@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace format {
-
       class TextStyle extends java.lang.Enum<java.time.format.TextStyle> {
         public static readonly FULL: java.time.format.TextStyle
         public static readonly FULL_STANDALONE: java.time.format.TextStyle
@@ -17,7 +16,6 @@ declare namespace java {
         toCalendarStyle(): number
         zoneNameStyleIndex(): number
       }
-
     }
   }
 }

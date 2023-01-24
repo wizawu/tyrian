@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace interfaces {
-
       interface XECKey$$lambda {
         (): java.security.spec.AlgorithmParameterSpec
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface XECKey {
         getParams(): java.security.spec.AlgorithmParameterSpec
       }
-
     }
   }
 }

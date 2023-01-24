@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class ThreadGroup implements java.lang.Thread$UncaughtExceptionHandler {
       name: java.lang.String
       maxPriority: int
@@ -43,6 +42,5 @@ declare namespace java {
       public allowThreadSuspension(arg0: boolean | java.lang.Boolean): boolean
       public toString(): java.lang.String
     }
-
   }
 }

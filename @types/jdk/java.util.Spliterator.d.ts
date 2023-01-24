@@ -1,17 +1,18 @@
 declare namespace java {
   namespace util {
-
     interface Spliterator<T> {
-      public static readonly ORDERED: int
-      public static readonly DISTINCT: int
-      public static readonly SORTED: int
-      public static readonly SIZED: int
-      public static readonly NONNULL: int
-      public static readonly IMMUTABLE: int
-      public static readonly CONCURRENT: int
-      public static readonly SUBSIZED: int
+      readonly ORDERED: int
+      readonly DISTINCT: int
+      readonly SORTED: int
+      readonly SIZED: int
+      readonly NONNULL: int
+      readonly IMMUTABLE: int
+      readonly CONCURRENT: int
+      readonly SUBSIZED: int
       tryAdvance(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): boolean
-      forEachRemaining(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+      forEachRemaining(
+        arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
+      ): void
       trySplit(): java.util.Spliterator<T>
       estimateSize(): number
       getExactSizeIfKnown(): number
@@ -19,6 +20,5 @@ declare namespace java {
       hasCharacteristics(arg0: number | java.lang.Integer): boolean
       getComparator(): java.util.Comparator<unknown>
     }
-
   }
 }

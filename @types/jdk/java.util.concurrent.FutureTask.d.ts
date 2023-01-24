@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
       class FutureTask<V> implements java.util.concurrent.RunnableFuture<V> {
         public constructor(arg0: java.util.concurrent.Callable<V> | java.util.concurrent.Callable$$lambda<V>)
         public constructor(arg0: java.lang.Runnable | java.lang.Runnable$$lambda, arg1: V)
@@ -17,7 +16,6 @@ declare namespace java {
         protected runAndReset(): boolean
         public toString(): java.lang.String
       }
-
     }
   }
 }

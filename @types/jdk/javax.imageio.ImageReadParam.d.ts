@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace imageio {
-
     class ImageReadParam extends javax.imageio.IIOParam {
       protected canSetSourceRenderSize: boolean
       protected sourceRenderSize: java.awt.Dimension
@@ -22,6 +21,5 @@ declare namespace javax {
       public getSourceMaxProgressivePass(): number
       public getSourceNumProgressivePasses(): number
     }
-
   }
 }

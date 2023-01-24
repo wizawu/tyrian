@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JPopupMenu extends javax.swing.JComponent implements javax.accessibility.Accessible, javax.swing.MenuElement {
       static popupPostionFixDisabled: boolean
       invoker: java.awt.Component
@@ -63,14 +62,21 @@ declare namespace javax {
       isSubPopupMenu(arg0: javax.swing.JPopupMenu): boolean
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
-      public processMouseEvent(arg0: java.awt.event.MouseEvent, arg1: javax.swing.MenuElement[], arg2: javax.swing.MenuSelectionManager): void
-      public processKeyEvent(arg0: java.awt.event.KeyEvent, arg1: javax.swing.MenuElement[], arg2: javax.swing.MenuSelectionManager): void
+      public processMouseEvent(
+        arg0: java.awt.event.MouseEvent,
+        arg1: javax.swing.MenuElement[],
+        arg2: javax.swing.MenuSelectionManager
+      ): void
+      public processKeyEvent(
+        arg0: java.awt.event.KeyEvent,
+        arg1: javax.swing.MenuElement[],
+        arg2: javax.swing.MenuSelectionManager
+      ): void
       public menuSelectionChanged(arg0: boolean | java.lang.Boolean): void
       public getSubElements(): javax.swing.MenuElement[]
       public getComponent(): java.awt.Component
       public isPopupTrigger(arg0: java.awt.event.MouseEvent): boolean
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

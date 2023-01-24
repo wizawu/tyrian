@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace image {
-
       class FilteredImageSource implements java.awt.image.ImageProducer {
         src: java.awt.image.ImageProducer
         filter: java.awt.image.ImageFilter
@@ -12,7 +11,6 @@ declare namespace java {
         public startProduction(arg0: java.awt.image.ImageConsumer): void
         public requestTopDownLeftRightResend(arg0: java.awt.image.ImageConsumer): void
       }
-
     }
   }
 }

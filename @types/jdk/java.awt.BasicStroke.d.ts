@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class BasicStroke implements java.awt.Stroke {
       public static readonly JOIN_MITER: int
       public static readonly JOIN_ROUND: int
@@ -14,9 +13,25 @@ declare namespace java {
       miterlimit: float
       dash: float[]
       dash_phase: float
-      public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Float, arg4: number[] | java.lang.Float[], arg5: number | java.lang.Float)
-      public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Float)
-      public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Float,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Float,
+        arg4: number[] | java.lang.Float[],
+        arg5: number | java.lang.Float
+      )
+      public constructor(
+        arg0: number | java.lang.Float,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Float
+      )
+      public constructor(
+        arg0: number | java.lang.Float,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      )
       public constructor(arg0: number | java.lang.Float)
       public constructor()
       public createStrokedShape(arg0: java.awt.Shape): java.awt.Shape
@@ -29,6 +44,5 @@ declare namespace java {
       public hashCode(): number
       public equals(arg0: java.lang.Object | any): boolean
     }
-
   }
 }

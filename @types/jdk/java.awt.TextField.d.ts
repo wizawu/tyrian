@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class TextField extends java.awt.TextComponent {
       columns: int
       echoChar: char
@@ -36,6 +35,5 @@ declare namespace java {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

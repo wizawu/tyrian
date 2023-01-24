@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicToolBarUI extends javax.swing.plaf.ToolBarUI implements javax.swing.SwingConstants {
           protected toolBar: javax.swing.JToolBar
           protected dragWindow: javax.swing.plaf.basic.BasicToolBarUI$DragWindow
@@ -68,7 +67,6 @@ declare namespace javax {
           protected createFrameListener(): java.awt.event.WindowListener
           protected paintDragWindow(arg0: java.awt.Graphics): void
         }
-
       }
     }
   }

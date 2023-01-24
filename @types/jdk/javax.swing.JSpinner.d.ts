@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JSpinner extends javax.swing.JComponent implements javax.accessibility.Accessible {
       public constructor(arg0: javax.swing.SpinnerModel)
       public constructor()
@@ -15,7 +14,9 @@ declare namespace javax {
       public setValue(arg0: java.lang.Object | any): void
       public getNextValue(): java.lang.Object
       public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(
+        arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+      ): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public getPreviousValue(): java.lang.Object
@@ -25,6 +26,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

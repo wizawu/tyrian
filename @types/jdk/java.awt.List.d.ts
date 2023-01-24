@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class List extends java.awt.Component implements java.awt.ItemSelectable, javax.accessibility.Accessible {
       items: java.util.Vector<java.lang.String>
       rows: int
@@ -70,6 +69,5 @@ declare namespace java {
       public delItems(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalDesktopIconUI extends javax.swing.plaf.basic.BasicDesktopIconUI {
           button: javax.swing.JButton
           label: javax.swing.JLabel
@@ -18,7 +17,6 @@ declare namespace javax {
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
         }
-
       }
     }
   }

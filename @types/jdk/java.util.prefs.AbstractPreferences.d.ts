@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace prefs {
-
       abstract class AbstractPreferences extends java.util.prefs.Preferences {
         static readonly CODE_POINT_U0000: int
         readonly parent: java.util.prefs.AbstractPreferences
@@ -34,8 +33,12 @@ declare namespace java {
         public name(): java.lang.String
         public absolutePath(): java.lang.String
         public isUserNode(): boolean
-        public addPreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$lambda): void
-        public removePreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$lambda): void
+        public addPreferenceChangeListener(
+          arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$lambda
+        ): void
+        public removePreferenceChangeListener(
+          arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$lambda
+        ): void
         public addNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
         public removeNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
         protected abstract putSpi(arg0: java.lang.String | string, arg1: java.lang.String | string): void
@@ -57,7 +60,6 @@ declare namespace java {
         public exportNode(arg0: java.io.OutputStream): void
         public exportSubtree(arg0: java.io.OutputStream): void
       }
-
     }
   }
 }

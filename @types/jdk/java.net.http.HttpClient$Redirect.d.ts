@@ -1,7 +1,6 @@
 declare namespace java {
   namespace net {
     namespace http {
-
       class HttpClient$Redirect extends java.lang.Enum<java.net.http.HttpClient$Redirect> {
         public static readonly NEVER: java.net.http.HttpClient$Redirect
         public static readonly ALWAYS: java.net.http.HttpClient$Redirect
@@ -9,7 +8,6 @@ declare namespace java {
         public static values(): java.net.http.HttpClient$Redirect[]
         public static valueOf(arg0: java.lang.String | string): java.net.http.HttpClient$Redirect
       }
-
     }
   }
 }

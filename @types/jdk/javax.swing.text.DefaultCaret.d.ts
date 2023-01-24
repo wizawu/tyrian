@@ -1,8 +1,14 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
-      class DefaultCaret extends java.awt.Rectangle implements javax.swing.text.Caret, java.awt.event.FocusListener, java.awt.event.MouseListener, java.awt.event.MouseMotionListener {
+      class DefaultCaret
+        extends java.awt.Rectangle
+        implements
+          javax.swing.text.Caret,
+          java.awt.event.FocusListener,
+          java.awt.event.MouseListener,
+          java.awt.event.MouseMotionListener
+      {
         public static readonly UPDATE_WHEN_ON_EDT: int
         public static readonly NEVER_UPDATE: int
         public static readonly ALWAYS_UPDATE: int
@@ -46,8 +52,12 @@ declare namespace javax {
         public paint(arg0: java.awt.Graphics): void
         public install(arg0: javax.swing.text.JTextComponent): void
         public deinstall(arg0: javax.swing.text.JTextComponent): void
-        public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
-        public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+        public addChangeListener(
+          arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+        ): void
+        public removeChangeListener(
+          arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+        ): void
         public getChangeListeners(): javax.swing.event.ChangeListener[]
         protected fireStateChanged(): void
         public getListeners<T extends java.util.EventListener>(arg0: java.lang.Class<T>): T[]
@@ -71,7 +81,11 @@ declare namespace javax {
         isDotLeftToRight(): boolean
         isMarkLeftToRight(): boolean
         isPositionLTR(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias): boolean
-        guessBiasForOffset(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias, arg2: boolean | java.lang.Boolean): javax.swing.text.Position$Bias
+        guessBiasForOffset(
+          arg0: number | java.lang.Integer,
+          arg1: javax.swing.text.Position$Bias,
+          arg2: boolean | java.lang.Boolean
+        ): javax.swing.text.Position$Bias
         changeCaretPosition(arg0: number | java.lang.Integer, arg1: javax.swing.text.Position$Bias): void
         repaintNewCaret(): void
         public setMagicCaretPosition(arg0: java.awt.Point): void
@@ -80,7 +94,6 @@ declare namespace javax {
         public toString(): java.lang.String
         getCaretWidth(arg0: number | java.lang.Integer): number
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace jdk {
   namespace jfr {
-
     class EventType {
       constructor(arg0: jdk.jfr.internal.PlatformEventType)
       public getFields(): java.util.List<jdk.jfr.ValueDescriptor>
@@ -18,6 +17,5 @@ declare namespace jdk {
       getType(): jdk.jfr.internal.Type
       getPlatformEventType(): jdk.jfr.internal.PlatformEventType
     }
-
   }
 }

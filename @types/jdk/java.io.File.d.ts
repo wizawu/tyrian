@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     class File implements java.io.Serializable, java.lang.Comparable<java.io.File> {
       public static readonly separatorChar: char
       public static readonly separator: java.lang.String
@@ -56,7 +55,11 @@ declare namespace java {
       public getTotalSpace(): number
       public getFreeSpace(): number
       public getUsableSpace(): number
-      public static createTempFile(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.io.File): java.io.File
+      public static createTempFile(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.io.File
+      ): java.io.File
       public static createTempFile(arg0: java.lang.String | string, arg1: java.lang.String | string): java.io.File
       public compareTo(arg0: java.io.File): number
       public equals(arg0: java.lang.Object | any): boolean
@@ -65,6 +68,5 @@ declare namespace java {
       public toPath(): java.nio.file.Path
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

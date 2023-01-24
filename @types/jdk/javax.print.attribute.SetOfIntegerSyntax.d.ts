@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace print {
     namespace attribute {
-
       abstract class SetOfIntegerSyntax implements java.io.Serializable, java.lang.Cloneable {
         protected constructor(arg0: java.lang.String | string)
         protected constructor(arg0: number[][] | java.lang.Integer[][])
@@ -15,7 +14,6 @@ declare namespace javax {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

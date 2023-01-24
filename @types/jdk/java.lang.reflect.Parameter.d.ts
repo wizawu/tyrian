@@ -1,9 +1,13 @@
 declare namespace java {
   namespace lang {
     namespace reflect {
-
       class Parameter implements java.lang.reflect.AnnotatedElement {
-        constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.lang.reflect.Executable, arg3: number | java.lang.Integer)
+        constructor(
+          arg0: java.lang.String | string,
+          arg1: number | java.lang.Integer,
+          arg2: java.lang.reflect.Executable,
+          arg3: number | java.lang.Integer
+        )
         public equals(arg0: java.lang.Object | any): boolean
         public hashCode(): number
         public isNamePresent(): boolean
@@ -25,7 +29,6 @@ declare namespace java {
         public getDeclaredAnnotationsByType<T extends java.lang.annotation.Annotation>(arg0: java.lang.Class<T>): T[]
         public getAnnotations(): java.lang.annotation.Annotation[]
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace text {
     namespace spi {
-
       abstract class NumberFormatProvider extends java.util.spi.LocaleServiceProvider {
         protected constructor()
         public abstract getCurrencyInstance(arg0: java.util.Locale): java.text.NumberFormat
@@ -9,7 +8,6 @@ declare namespace java {
         public abstract getNumberInstance(arg0: java.util.Locale): java.text.NumberFormat
         public abstract getPercentInstance(arg0: java.util.Locale): java.text.NumberFormat
       }
-
     }
   }
 }

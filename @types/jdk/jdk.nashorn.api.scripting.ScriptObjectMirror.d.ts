@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace scripting {
-
         class ScriptObjectMirror extends jdk.nashorn.api.scripting.AbstractJSObject implements javax.script.Bindings {
           static readonly $assertionsDisabled: boolean
           public equals(arg0: java.lang.Object | any): boolean
@@ -28,12 +27,12 @@ declare namespace jdk {
           public clear(): void
           public containsKey(arg0: java.lang.Object | any): boolean
           public containsValue(arg0: java.lang.Object | any): boolean
-          public entrySet(): java.util.Set<java.util.Map$Entry<java.lang.String,java.lang.Object>>
+          public entrySet(): java.util.Set<java.util.Map$Entry<java.lang.String, java.lang.Object>>
           public get(arg0: java.lang.Object | any): java.lang.Object
           public isEmpty(): boolean
           public keySet(): java.util.Set<java.lang.String>
           public put(arg0: java.lang.String | string, arg1: java.lang.Object | any): java.lang.Object
-          public putAll(arg0: java.util.Map<java.lang.String,java.lang.Object>): void
+          public putAll(arg0: java.util.Map<java.lang.String, java.lang.Object>): void
           public remove(arg0: java.lang.Object | any): java.lang.Object
           public delete(arg0: java.lang.Object | any): boolean
           public size(): number
@@ -51,7 +50,10 @@ declare namespace jdk {
           public static isUndefined(arg0: java.lang.Object | any): boolean
           public to<T>(arg0: java.lang.Class<T>): T
           public static wrap(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
-          public static wrapAsJSONCompatible(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
+          public static wrapAsJSONCompatible(
+            arg0: java.lang.Object | any,
+            arg1: java.lang.Object | any
+          ): java.lang.Object
           public static unwrap(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
           public static wrapArray(arg0: java.lang.Object[] | any[], arg1: java.lang.Object | any): java.lang.Object[]
           public static unwrapArray(arg0: java.lang.Object[] | any[], arg1: java.lang.Object | any): java.lang.Object[]
@@ -64,7 +66,6 @@ declare namespace jdk {
           public getDefaultValue(arg0: java.lang.Class<unknown>): java.lang.Object
           public put(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
         }
-
       }
     }
   }

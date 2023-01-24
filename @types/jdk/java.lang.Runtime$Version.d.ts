@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Runtime$Version implements java.lang.Comparable<java.lang.Runtime$Version> {
       public static parse(arg0: java.lang.String | string): java.lang.Runtime$Version
       public feature(): number
@@ -22,6 +21,5 @@ declare namespace java {
       public hashCode(): number
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class RuleBasedCollator extends java.text.Collator {
       static readonly CHARINDEX: int
       static readonly EXPANDCHARINDEX: int
@@ -18,6 +17,5 @@ declare namespace java {
       public hashCode(): number
       getTables(): java.text.RBCollationTables
     }
-
   }
 }

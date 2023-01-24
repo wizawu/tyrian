@@ -1,8 +1,9 @@
 declare namespace javax {
   namespace swing {
     namespace tree {
-
-      class DefaultMutableTreeNode implements java.lang.Cloneable, javax.swing.tree.MutableTreeNode, java.io.Serializable {
+      class DefaultMutableTreeNode
+        implements java.lang.Cloneable, javax.swing.tree.MutableTreeNode, java.io.Serializable
+      {
         public static readonly EMPTY_ENUMERATION: java.util.Enumeration<javax.swing.tree.TreeNode>
         protected parent: javax.swing.tree.MutableTreeNode
         protected children: java.util.Vector<javax.swing.tree.TreeNode>
@@ -34,7 +35,10 @@ declare namespace javax {
         public getDepth(): number
         public getLevel(): number
         public getPath(): javax.swing.tree.TreeNode[]
-        protected getPathToRoot(arg0: javax.swing.tree.TreeNode, arg1: number | java.lang.Integer): javax.swing.tree.TreeNode[]
+        protected getPathToRoot(
+          arg0: javax.swing.tree.TreeNode,
+          arg1: number | java.lang.Integer
+        ): javax.swing.tree.TreeNode[]
         public getUserObjectPath(): java.lang.Object[]
         public getRoot(): javax.swing.tree.TreeNode
         public isRoot(): boolean
@@ -44,7 +48,9 @@ declare namespace javax {
         public postorderEnumeration(): java.util.Enumeration<javax.swing.tree.TreeNode>
         public breadthFirstEnumeration(): java.util.Enumeration<javax.swing.tree.TreeNode>
         public depthFirstEnumeration(): java.util.Enumeration<javax.swing.tree.TreeNode>
-        public pathFromAncestorEnumeration(arg0: javax.swing.tree.TreeNode): java.util.Enumeration<javax.swing.tree.TreeNode>
+        public pathFromAncestorEnumeration(
+          arg0: javax.swing.tree.TreeNode
+        ): java.util.Enumeration<javax.swing.tree.TreeNode>
         public isNodeChild(arg0: javax.swing.tree.TreeNode): boolean
         public getFirstChild(): javax.swing.tree.TreeNode
         public getLastChild(): javax.swing.tree.TreeNode
@@ -63,7 +69,6 @@ declare namespace javax {
         public toString(): java.lang.String
         public clone(): java.lang.Object
       }
-
     }
   }
 }

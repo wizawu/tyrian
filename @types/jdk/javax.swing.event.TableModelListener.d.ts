@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace event {
-
       interface TableModelListener$$lambda {
         (arg0: javax.swing.event.TableModelEvent): void
       }
@@ -9,7 +8,6 @@ declare namespace javax {
       interface TableModelListener extends java.util.EventListener {
         tableChanged(arg0: javax.swing.event.TableModelEvent): void
       }
-
     }
   }
 }

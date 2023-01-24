@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JLabel extends javax.swing.JComponent implements javax.swing.SwingConstants, javax.accessibility.Accessible {
       protected labelFor: java.awt.Component
       static readonly LABELED_BY_PROPERTY: java.lang.String
@@ -37,7 +36,14 @@ declare namespace javax {
       public setVerticalTextPosition(arg0: number | java.lang.Integer): void
       public getHorizontalTextPosition(): number
       public setHorizontalTextPosition(arg0: number | java.lang.Integer): void
-      public imageUpdate(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): boolean
+      public imageUpdate(
+        arg0: java.awt.Image,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      ): boolean
       protected paramString(): java.lang.String
       public getLabelFor(): java.awt.Component
       public setLabelFor(arg0: java.awt.Component): void
@@ -45,6 +51,5 @@ declare namespace javax {
       public getUI(): javax.swing.plaf.ComponentUI
       static access$000(arg0: javax.swing.JLabel): javax.accessibility.AccessibleContext
     }
-
   }
 }

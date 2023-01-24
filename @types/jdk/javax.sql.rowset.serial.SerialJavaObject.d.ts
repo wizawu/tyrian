@@ -2,7 +2,6 @@ declare namespace javax {
   namespace sql {
     namespace rowset {
       namespace serial {
-
         class SerialJavaObject implements java.io.Serializable, java.lang.Cloneable {
           static readonly serialVersionUID: long
           chain: java.util.Vector<javax.sql.rowset.RowSetWarning>
@@ -13,7 +12,6 @@ declare namespace javax {
           public hashCode(): number
           public clone(): java.lang.Object
         }
-
       }
     }
   }

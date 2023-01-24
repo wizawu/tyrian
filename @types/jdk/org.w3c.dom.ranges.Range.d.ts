@@ -2,12 +2,11 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace ranges {
-
         interface Range {
-          public static readonly START_TO_START: short
-          public static readonly START_TO_END: short
-          public static readonly END_TO_END: short
-          public static readonly END_TO_START: short
+          readonly START_TO_START: short
+          readonly START_TO_END: short
+          readonly END_TO_END: short
+          readonly END_TO_START: short
           getStartContainer(): org.w3c.dom.Node
           getStartOffset(): number
           getEndContainer(): org.w3c.dom.Node
@@ -33,7 +32,6 @@ declare namespace org {
           toString(): java.lang.String
           detach(): void
         }
-
       }
     }
   }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
-
-    class Properties extends java.util.Hashtable<java.lang.Object,java.lang.Object> {
+    class Properties extends java.util.Hashtable<java.lang.Object, java.lang.Object> {
       protected defaults: java.util.Properties
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
@@ -14,8 +13,16 @@ declare namespace java {
       public store(arg0: java.io.OutputStream, arg1: java.lang.String | string): void
       public loadFromXML(arg0: java.io.InputStream): void
       public storeToXML(arg0: java.io.OutputStream, arg1: java.lang.String | string): void
-      public storeToXML(arg0: java.io.OutputStream, arg1: java.lang.String | string, arg2: java.lang.String | string): void
-      public storeToXML(arg0: java.io.OutputStream, arg1: java.lang.String | string, arg2: java.nio.charset.Charset): void
+      public storeToXML(
+        arg0: java.io.OutputStream,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): void
+      public storeToXML(
+        arg0: java.io.OutputStream,
+        arg1: java.lang.String | string,
+        arg2: java.nio.charset.Charset
+      ): void
       public getProperty(arg0: java.lang.String | string): java.lang.String
       public getProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
       public propertyNames(): java.util.Enumeration<unknown>
@@ -32,30 +39,42 @@ declare namespace java {
       public get(arg0: java.lang.Object | any): java.lang.Object
       public put(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
       public remove(arg0: java.lang.Object | any): java.lang.Object
-      public putAll(arg0: java.util.Map<unknown,unknown>): void
+      public putAll(arg0: java.util.Map<unknown, unknown>): void
       public clear(): void
       public toString(): java.lang.String
       public keySet(): java.util.Set<java.lang.Object>
       public values(): java.util.Collection<java.lang.Object>
-      public entrySet(): java.util.Set<java.util.Map$Entry<java.lang.Object,java.lang.Object>>
+      public entrySet(): java.util.Set<java.util.Map$Entry<java.lang.Object, java.lang.Object>>
       public equals(arg0: java.lang.Object | any): boolean
       public hashCode(): number
       public getOrDefault(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
-      public forEach(arg0: java.util.function$.BiConsumer<unknown,unknown>): void
-      public replaceAll(arg0: java.util.function$.BiFunction<unknown,unknown,unknown>): void
+      public forEach(arg0: java.util.function$.BiConsumer<unknown, unknown>): void
+      public replaceAll(arg0: java.util.function$.BiFunction<unknown, unknown, unknown>): void
       public putIfAbsent(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
       public remove(arg0: java.lang.Object | any, arg1: java.lang.Object | any): boolean
       public replace(arg0: java.lang.Object | any, arg1: java.lang.Object | any, arg2: java.lang.Object | any): boolean
       public replace(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
-      public computeIfAbsent(arg0: java.lang.Object | any, arg1: java.util.function$.Function<unknown,unknown>): java.lang.Object
-      public computeIfPresent(arg0: java.lang.Object | any, arg1: java.util.function$.BiFunction<unknown,unknown,unknown>): java.lang.Object
-      public compute(arg0: java.lang.Object | any, arg1: java.util.function$.BiFunction<unknown,unknown,unknown>): java.lang.Object
-      public merge(arg0: java.lang.Object | any, arg1: java.lang.Object | any, arg2: java.util.function$.BiFunction<unknown,unknown,unknown>): java.lang.Object
+      public computeIfAbsent(
+        arg0: java.lang.Object | any,
+        arg1: java.util.function$.Function<unknown, unknown>
+      ): java.lang.Object
+      public computeIfPresent(
+        arg0: java.lang.Object | any,
+        arg1: java.util.function$.BiFunction<unknown, unknown, unknown>
+      ): java.lang.Object
+      public compute(
+        arg0: java.lang.Object | any,
+        arg1: java.util.function$.BiFunction<unknown, unknown, unknown>
+      ): java.lang.Object
+      public merge(
+        arg0: java.lang.Object | any,
+        arg1: java.lang.Object | any,
+        arg2: java.util.function$.BiFunction<unknown, unknown, unknown>
+      ): java.lang.Object
       protected rehash(): void
       public clone(): java.lang.Object
       writeHashtable(arg0: java.io.ObjectOutputStream): void
       readHashtable(arg0: java.io.ObjectInputStream): void
     }
-
   }
 }

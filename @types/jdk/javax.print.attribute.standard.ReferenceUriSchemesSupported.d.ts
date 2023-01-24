@@ -2,8 +2,10 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
-        class ReferenceUriSchemesSupported extends javax.print.attribute.EnumSyntax implements javax.print.attribute.Attribute {
+        class ReferenceUriSchemesSupported
+          extends javax.print.attribute.EnumSyntax
+          implements javax.print.attribute.Attribute
+        {
           public static readonly FTP: javax.print.attribute.standard.ReferenceUriSchemesSupported
           public static readonly HTTP: javax.print.attribute.standard.ReferenceUriSchemesSupported
           public static readonly HTTPS: javax.print.attribute.standard.ReferenceUriSchemesSupported
@@ -18,7 +20,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace sql {
-
     interface PreparedStatement extends java.sql.Statement {
       executeQuery(): java.sql.ResultSet
       executeUpdate(): number
@@ -18,9 +17,21 @@ declare namespace java {
       setDate(arg0: number | java.lang.Integer, arg1: java.sql.Date): void
       setTime(arg0: number | java.lang.Integer, arg1: java.sql.Time): void
       setTimestamp(arg0: number | java.lang.Integer, arg1: java.sql.Timestamp): void
-      setAsciiStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      setUnicodeStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      setBinaryStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
+      setAsciiStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
+      setUnicodeStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
+      setBinaryStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
       clearParameters(): void
       setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): void
@@ -46,7 +57,12 @@ declare namespace java {
       setBlob(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
       setNClob(arg0: number | java.lang.Integer, arg1: java.io.Reader, arg2: number | java.lang.Long): void
       setSQLXML(arg0: number | java.lang.Integer, arg1: java.sql.SQLXML): void
-      setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      setObject(
+        arg0: number | java.lang.Integer,
+        arg1: java.lang.Object | any,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       setAsciiStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
       setBinaryStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
       setCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader, arg2: number | java.lang.Long): void
@@ -57,10 +73,14 @@ declare namespace java {
       setClob(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
       setBlob(arg0: number | java.lang.Integer, arg1: java.io.InputStream): void
       setNClob(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
-      setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: java.sql.SQLType, arg3: number | java.lang.Integer): void
+      setObject(
+        arg0: number | java.lang.Integer,
+        arg1: java.lang.Object | any,
+        arg2: java.sql.SQLType,
+        arg3: number | java.lang.Integer
+      ): void
       setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
       executeLargeUpdate(): number
     }
-
   }
 }

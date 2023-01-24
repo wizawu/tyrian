@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace tools {
-
     interface FileObject {
       toUri(): java.net.URI
       getName(): java.lang.String
@@ -12,6 +11,5 @@ declare namespace javax {
       getLastModified(): number
       delete(): boolean
     }
-
   }
 }

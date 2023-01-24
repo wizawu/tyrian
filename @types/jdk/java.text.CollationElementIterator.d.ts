@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class CollationElementIterator {
       public static readonly NULLORDER: int
       static readonly UNMAPPEDCHARVALUE: int
@@ -20,6 +19,5 @@ declare namespace java {
       public setText(arg0: java.text.CharacterIterator): void
       static isIgnorable(arg0: number | java.lang.Integer): boolean
     }
-
   }
 }

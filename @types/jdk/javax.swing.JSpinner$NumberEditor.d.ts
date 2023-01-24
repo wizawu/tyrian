@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JSpinner$NumberEditor extends javax.swing.JSpinner$DefaultEditor {
       public constructor(arg0: javax.swing.JSpinner)
       public constructor(arg0: javax.swing.JSpinner, arg1: java.lang.String | string)
@@ -8,6 +7,5 @@ declare namespace javax {
       public getModel(): javax.swing.SpinnerNumberModel
       public setComponentOrientation(arg0: java.awt.ComponentOrientation): void
     }
-
   }
 }

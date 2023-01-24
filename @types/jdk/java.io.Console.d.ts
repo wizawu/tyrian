@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     class Console implements java.io.Flushable {
       static readonly $assertionsDisabled: boolean
       public writer(): java.io.PrintWriter
@@ -13,6 +12,5 @@ declare namespace java {
       public readPassword(): string[]
       public flush(): void
     }
-
   }
 }

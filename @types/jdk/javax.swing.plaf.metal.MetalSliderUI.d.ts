@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalSliderUI extends javax.swing.plaf.basic.BasicSliderUI {
           protected readonly TICK_BUFFER: int
           protected filledSlider: boolean
@@ -27,12 +26,27 @@ declare namespace javax {
           protected getTrackLength(): number
           protected getThumbOverhang(): number
           protected scrollDueToClickInTrack(arg0: number | java.lang.Integer): void
-          protected paintMinorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
-          protected paintMajorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
-          protected paintMinorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
-          protected paintMajorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
+          protected paintMinorTickForHorizSlider(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: number | java.lang.Integer
+          ): void
+          protected paintMajorTickForHorizSlider(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: number | java.lang.Integer
+          ): void
+          protected paintMinorTickForVertSlider(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: number | java.lang.Integer
+          ): void
+          protected paintMajorTickForVertSlider(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: number | java.lang.Integer
+          ): void
         }
-
       }
     }
   }

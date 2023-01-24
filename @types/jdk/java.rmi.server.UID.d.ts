@@ -1,7 +1,6 @@
 declare namespace java {
   namespace rmi {
     namespace server {
-
       class UID implements java.io.Serializable {
         public constructor()
         public constructor(arg0: number | java.lang.Short)
@@ -11,7 +10,6 @@ declare namespace java {
         public write(arg0: java.io.DataOutput): void
         public static read(arg0: java.io.DataInput): java.rmi.server.UID
       }
-
     }
   }
 }

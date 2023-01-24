@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace color {
-
       class ICC_ProfileRGB extends java.awt.color.ICC_Profile {
         static readonly serialVersionUID: long
         public static readonly REDCOMPONENT: int
@@ -14,7 +13,6 @@ declare namespace java {
         public getGamma(arg0: number | java.lang.Integer): number
         public getTRC(arg0: number | java.lang.Integer): number[]
       }
-
     }
   }
 }

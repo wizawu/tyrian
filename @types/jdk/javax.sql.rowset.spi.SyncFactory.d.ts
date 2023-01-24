@@ -2,7 +2,6 @@ declare namespace javax {
   namespace sql {
     namespace rowset {
       namespace spi {
-
         class SyncFactory {
           public static readonly ROWSET_SYNC_PROVIDER: java.lang.String
           public static readonly ROWSET_SYNC_VENDOR: java.lang.String
@@ -17,7 +16,6 @@ declare namespace javax {
           public static getLogger(): java.util.logging.Logger
           public static setJNDIContext(arg0: javax.naming.Context): void
         }
-
       }
     }
   }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace security {
     namespace cert {
-
       abstract class X509Certificate extends javax.security.cert.Certificate {
         public constructor()
         public static getInstance(arg0: java.io.InputStream): javax.security.cert.X509Certificate
@@ -18,7 +17,6 @@ declare namespace javax {
         public abstract getSigAlgOID(): java.lang.String
         public abstract getSigAlgParams(): number[]
       }
-
     }
   }
 }

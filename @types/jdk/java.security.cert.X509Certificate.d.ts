@@ -1,8 +1,10 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
-      abstract class X509Certificate extends java.security.cert.Certificate implements java.security.cert.X509Extension {
+      abstract class X509Certificate
+        extends java.security.cert.Certificate
+        implements java.security.cert.X509Extension
+      {
         protected constructor()
         public abstract checkValidity(): void
         public abstract checkValidity(arg0: java.util.Date): void
@@ -28,7 +30,6 @@ declare namespace java {
         public getIssuerAlternativeNames(): java.util.Collection<java.util.List<unknown>>
         public verify(arg0: java.security.PublicKey, arg1: java.security.Provider): void
       }
-
     }
   }
 }

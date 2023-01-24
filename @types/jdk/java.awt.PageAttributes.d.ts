@@ -1,10 +1,16 @@
 declare namespace java {
   namespace awt {
-
     class PageAttributes implements java.lang.Cloneable {
       public constructor()
       public constructor(arg0: java.awt.PageAttributes)
-      public constructor(arg0: java.awt.PageAttributes$ColorType, arg1: java.awt.PageAttributes$MediaType, arg2: java.awt.PageAttributes$OrientationRequestedType, arg3: java.awt.PageAttributes$OriginType, arg4: java.awt.PageAttributes$PrintQualityType, arg5: number[] | java.lang.Integer[])
+      public constructor(
+        arg0: java.awt.PageAttributes$ColorType,
+        arg1: java.awt.PageAttributes$MediaType,
+        arg2: java.awt.PageAttributes$OrientationRequestedType,
+        arg3: java.awt.PageAttributes$OriginType,
+        arg4: java.awt.PageAttributes$PrintQualityType,
+        arg5: number[] | java.lang.Integer[]
+      )
       public clone(): java.lang.Object
       public set(arg0: java.awt.PageAttributes): void
       public getColor(): java.awt.PageAttributes$ColorType
@@ -30,6 +36,5 @@ declare namespace java {
       public hashCode(): number
       public toString(): java.lang.String
     }
-
   }
 }

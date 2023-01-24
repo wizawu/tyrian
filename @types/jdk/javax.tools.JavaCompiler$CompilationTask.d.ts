@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace tools {
-
     interface JavaCompiler$CompilationTask extends java.util.concurrent.Callable<java.lang.Boolean> {
       addModules(arg0: java.lang.Iterable<java.lang.String>): void
       setProcessors(arg0: java.lang.Iterable<javax.annotation.processing.Processor>): void
@@ -8,6 +7,5 @@ declare namespace javax {
       call(): boolean
       call(): java.lang.Object
     }
-
   }
 }

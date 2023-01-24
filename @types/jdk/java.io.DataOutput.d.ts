@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     interface DataOutput {
       write(arg0: number | java.lang.Integer): void
       write(arg0: number[] | java.lang.Byte[]): void
@@ -17,6 +16,5 @@ declare namespace java {
       writeChars(arg0: java.lang.String | string): void
       writeUTF(arg0: java.lang.String | string): void
     }
-
   }
 }

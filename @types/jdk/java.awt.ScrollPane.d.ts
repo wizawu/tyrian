@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class ScrollPane extends java.awt.Container implements javax.accessibility.Accessible {
       public static readonly SCROLLBARS_AS_NEEDED: int
       public static readonly SCROLLBARS_ALWAYS: int
@@ -32,6 +31,5 @@ declare namespace java {
       public isWheelScrollingEnabled(): boolean
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

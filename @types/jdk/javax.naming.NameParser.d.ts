@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace naming {
-
     interface NameParser$$lambda {
       (arg0: java.lang.String | string): javax.naming.Name
     }
@@ -8,6 +7,5 @@ declare namespace javax {
     interface NameParser {
       parse(arg0: java.lang.String | string): javax.naming.Name
     }
-
   }
 }

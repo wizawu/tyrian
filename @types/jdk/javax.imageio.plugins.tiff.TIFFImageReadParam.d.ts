@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
     namespace plugins {
       namespace tiff {
-
         class TIFFImageReadParam extends javax.imageio.ImageReadParam {
           public constructor()
           public addAllowedTagSet(arg0: javax.imageio.plugins.tiff.TIFFTagSet): void
@@ -11,7 +10,6 @@ declare namespace javax {
           public setReadUnknownTags(arg0: boolean | java.lang.Boolean): void
           public getReadUnknownTags(): boolean
         }
-
       }
     }
   }

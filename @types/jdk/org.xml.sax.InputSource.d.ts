@@ -1,7 +1,6 @@
 declare namespace org {
   namespace xml {
     namespace sax {
-
       class InputSource {
         public constructor()
         public constructor(arg0: java.lang.String | string)
@@ -19,7 +18,6 @@ declare namespace org {
         public getCharacterStream(): java.io.Reader
         public isEmpty(): boolean
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace management {
-
     class MBeanServerPermission extends java.security.BasicPermission {
       mask: int
       public constructor(arg0: java.lang.String | string)
@@ -14,6 +13,5 @@ declare namespace javax {
       public equals(arg0: java.lang.Object | any): boolean
       public newPermissionCollection(): java.security.PermissionCollection
     }
-
   }
 }

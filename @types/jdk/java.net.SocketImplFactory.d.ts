@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     interface SocketImplFactory$$lambda {
       (): java.net.SocketImpl
     }
@@ -8,6 +7,5 @@ declare namespace java {
     interface SocketImplFactory {
       createSocketImpl(): java.net.SocketImpl
     }
-
   }
 }

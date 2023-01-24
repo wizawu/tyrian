@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace colorchooser {
-
       abstract class AbstractColorChooserPanel extends javax.swing.JPanel {
         public static readonly TRANSPARENCY_ENABLED_PROPERTY: java.lang.String
         public constructor()
@@ -22,7 +21,6 @@ declare namespace javax {
         public paint(arg0: java.awt.Graphics): void
         getInt(arg0: java.lang.Object | any, arg1: number | java.lang.Integer): number
       }
-
     }
   }
 }

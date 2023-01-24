@@ -1,6 +1,5 @@
 declare namespace java {
   namespace beans {
-
     class FeatureDescriptor {
       public constructor()
       public getName(): java.lang.String
@@ -27,13 +26,27 @@ declare namespace java {
       static getSoftReference<T>(arg0: T): java.lang.ref.Reference<T>
       static getWeakReference<T>(arg0: T): java.lang.ref.Reference<T>
       static getReturnType(arg0: java.lang.Class<unknown>, arg1: java.lang.reflect.Method): java.lang.Class<unknown>
-      static getParameterTypes(arg0: java.lang.Class<unknown>, arg1: java.lang.reflect.Method): java.lang.Class<unknown>[]
+      static getParameterTypes(
+        arg0: java.lang.Class<unknown>,
+        arg1: java.lang.reflect.Method
+      ): java.lang.Class<unknown>[]
       public toString(): java.lang.String
       appendTo(arg0: java.lang.StringBuilder): void
-      static appendTo(arg0: java.lang.StringBuilder, arg1: java.lang.String | string, arg2: java.lang.ref.Reference<unknown>): void
-      static appendTo(arg0: java.lang.StringBuilder, arg1: java.lang.String | string, arg2: java.lang.Object | any): void
-      static appendTo(arg0: java.lang.StringBuilder, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean): void
+      static appendTo(
+        arg0: java.lang.StringBuilder,
+        arg1: java.lang.String | string,
+        arg2: java.lang.ref.Reference<unknown>
+      ): void
+      static appendTo(
+        arg0: java.lang.StringBuilder,
+        arg1: java.lang.String | string,
+        arg2: java.lang.Object | any
+      ): void
+      static appendTo(
+        arg0: java.lang.StringBuilder,
+        arg1: java.lang.String | string,
+        arg2: boolean | java.lang.Boolean
+      ): void
     }
-
   }
 }

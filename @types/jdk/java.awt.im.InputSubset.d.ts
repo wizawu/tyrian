@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace im {
-
       class InputSubset extends java.lang.Character$Subset {
         public static readonly LATIN: java.awt.im.InputSubset
         public static readonly LATIN_DIGITS: java.awt.im.InputSubset
@@ -13,7 +12,6 @@ declare namespace java {
         public static readonly FULLWIDTH_LATIN: java.awt.im.InputSubset
         public static readonly FULLWIDTH_DIGITS: java.awt.im.InputSubset
       }
-
     }
   }
 }

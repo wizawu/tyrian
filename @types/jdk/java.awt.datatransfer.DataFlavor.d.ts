@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace datatransfer {
-
       class DataFlavor implements java.io.Externalizable, java.lang.Cloneable {
         public static readonly stringFlavor: java.awt.datatransfer.DataFlavor
         public static readonly imageFlavor: java.awt.datatransfer.DataFlavor
@@ -15,11 +14,18 @@ declare namespace java {
         public static allHtmlFlavor: java.awt.datatransfer.DataFlavor
         atom: int
         mimeType: java.awt.datatransfer.MimeType
-        protected static tryToLoadClass(arg0: java.lang.String | string, arg1: java.lang.ClassLoader): java.lang.Class<unknown>
+        protected static tryToLoadClass(
+          arg0: java.lang.String | string,
+          arg1: java.lang.ClassLoader
+        ): java.lang.Class<unknown>
         public constructor()
         public constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string)
         public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
-        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.ClassLoader)
+        public constructor(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: java.lang.ClassLoader
+        )
         public constructor(arg0: java.lang.String | string)
         public toString(): java.lang.String
         public static getTextPlainUnicodeFlavor(): java.awt.datatransfer.DataFlavor
@@ -55,10 +61,12 @@ declare namespace java {
         public writeExternal(arg0: java.io.ObjectOutput): void
         public readExternal(arg0: java.io.ObjectInput): void
         public clone(): java.lang.Object
-        protected normalizeMimeTypeParameter(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
+        protected normalizeMimeTypeParameter(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string
+        ): java.lang.String
         protected normalizeMimeType(arg0: java.lang.String | string): java.lang.String
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
       interface WindowStateListener$$lambda {
         (arg0: java.awt.event.WindowEvent): void
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface WindowStateListener extends java.util.EventListener {
         windowStateChanged(arg0: java.awt.event.WindowEvent): void
       }
-
     }
   }
 }

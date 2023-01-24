@@ -1,7 +1,6 @@
 declare namespace org {
   namespace xml {
     namespace sax {
-
       interface XMLReader {
         getFeature(arg0: java.lang.String | string): boolean
         setFeature(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): void
@@ -18,7 +17,6 @@ declare namespace org {
         parse(arg0: org.xml.sax.InputSource): void
         parse(arg0: java.lang.String | string): void
       }
-
     }
   }
 }

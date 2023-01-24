@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class DecimalFormat extends java.text.NumberFormat {
       static readonly currentSerialVersion: int
       static readonly DOUBLE_INTEGER_DIGITS: int
@@ -12,9 +11,21 @@ declare namespace java {
       public constructor()
       public constructor(arg0: java.lang.String | string)
       public constructor(arg0: java.lang.String | string, arg1: java.text.DecimalFormatSymbols)
-      public format(arg0: java.lang.Object | any, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
-      public format(arg0: number | java.lang.Double, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
-      public format(arg0: number | java.lang.Long, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+      public format(
+        arg0: java.lang.Object | any,
+        arg1: java.lang.StringBuffer,
+        arg2: java.text.FieldPosition
+      ): java.lang.StringBuffer
+      public format(
+        arg0: number | java.lang.Double,
+        arg1: java.lang.StringBuffer,
+        arg2: java.text.FieldPosition
+      ): java.lang.StringBuffer
+      public format(
+        arg0: number | java.lang.Long,
+        arg1: java.lang.StringBuffer,
+        arg2: java.text.FieldPosition
+      ): java.lang.StringBuffer
       public formatToCharacterIterator(arg0: java.lang.Object | any): java.text.AttributedCharacterIterator
       fastFormat(arg0: number | java.lang.Double): java.lang.String
       public parse(arg0: java.lang.String | string, arg1: java.text.ParsePosition): java.lang.Number
@@ -57,6 +68,5 @@ declare namespace java {
       public getRoundingMode(): java.math.RoundingMode
       public setRoundingMode(arg0: java.math.RoundingMode): void
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace jdk {
   namespace jshell {
-
     class Snippet$Status extends java.lang.Enum<jdk.jshell.Snippet$Status> {
       public static readonly VALID: jdk.jshell.Snippet$Status
       public static readonly RECOVERABLE_DEFINED: jdk.jshell.Snippet$Status
@@ -14,6 +13,5 @@ declare namespace jdk {
       public isActive(): boolean
       public isDefined(): boolean
     }
-
   }
 }

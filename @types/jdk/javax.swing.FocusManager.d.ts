@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     abstract class FocusManager extends java.awt.DefaultKeyboardFocusManager {
       public static readonly FOCUS_MANAGER_CLASS_PROPERTY: java.lang.String
       public constructor()
@@ -9,6 +8,5 @@ declare namespace javax {
       public static disableSwingFocusManager(): void
       public static isFocusManagerEnabled(): boolean
     }
-
   }
 }

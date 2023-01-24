@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class GridBagLayoutInfo implements java.io.Serializable {
       width: int
       height: int
@@ -18,6 +17,5 @@ declare namespace java {
       hasConstantDescent(arg0: number | java.lang.Integer): boolean
       hasBaseline(arg0: number | java.lang.Integer): boolean
     }
-
   }
 }

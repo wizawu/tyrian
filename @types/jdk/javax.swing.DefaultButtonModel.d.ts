@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class DefaultButtonModel implements javax.swing.ButtonModel, java.io.Serializable {
       protected stateMask: int
       protected actionCommand: java.lang.String
@@ -29,7 +28,9 @@ declare namespace javax {
       public setMnemonic(arg0: number | java.lang.Integer): void
       public getMnemonic(): number
       public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(
+        arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+      ): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
@@ -47,6 +48,5 @@ declare namespace javax {
       isMenuItem(): boolean
       setMenuItem(arg0: boolean | java.lang.Boolean): void
     }
-
   }
 }

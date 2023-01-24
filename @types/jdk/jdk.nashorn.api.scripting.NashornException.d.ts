@@ -2,11 +2,21 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace scripting {
-
         abstract class NashornException extends java.lang.RuntimeException {
           static readonly $assertionsDisabled: boolean
-          protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-          protected constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+          protected constructor(
+            arg0: java.lang.String | string,
+            arg1: java.lang.String | string,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer
+          )
+          protected constructor(
+            arg0: java.lang.String | string,
+            arg1: java.lang.Throwable,
+            arg2: java.lang.String | string,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer
+          )
           protected constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
           public getFileName(): java.lang.String
           public setFileName(arg0: java.lang.String | string): void
@@ -21,7 +31,6 @@ declare namespace jdk {
           public getEcmaError(): java.lang.Object
           public setEcmaError(arg0: java.lang.Object | any): void
         }
-
       }
     }
   }

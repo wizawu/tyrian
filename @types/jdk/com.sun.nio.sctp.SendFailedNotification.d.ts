@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace nio {
       namespace sctp {
-
         abstract class SendFailedNotification implements com.sun.nio.sctp.Notification {
           protected constructor()
           public abstract association(): com.sun.nio.sctp.Association
@@ -11,7 +10,6 @@ declare namespace com {
           public abstract errorCode(): number
           public abstract streamNumber(): number
         }
-
       }
     }
   }

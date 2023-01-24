@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace jdi {
       namespace connect {
-
         interface Connector$Argument extends java.io.Serializable {
           name(): java.lang.String
           label(): java.lang.String
@@ -12,7 +11,6 @@ declare namespace com {
           isValid(arg0: java.lang.String | string): boolean
           mustSpecify(): boolean
         }
-
       }
     }
   }

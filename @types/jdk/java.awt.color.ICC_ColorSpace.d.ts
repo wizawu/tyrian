@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace color {
-
       class ICC_ColorSpace extends java.awt.color.ColorSpace {
         static readonly serialVersionUID: long
         public constructor(arg0: java.awt.color.ICC_Profile)
@@ -13,7 +12,6 @@ declare namespace java {
         public getMinValue(arg0: number | java.lang.Integer): number
         public getMaxValue(arg0: number | java.lang.Integer): number
       }
-
     }
   }
 }

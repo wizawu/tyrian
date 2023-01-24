@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace management {
-
       interface OperatingSystemMXBean extends java.lang.management.OperatingSystemMXBean {
         getCommittedVirtualMemorySize(): number
         getTotalSwapSpaceSize(): number
@@ -12,7 +11,6 @@ declare namespace com {
         getSystemCpuLoad(): number
         getProcessCpuLoad(): number
       }
-
     }
   }
 }

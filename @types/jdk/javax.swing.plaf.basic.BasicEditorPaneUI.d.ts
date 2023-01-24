@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicEditorPaneUI extends javax.swing.plaf.basic.BasicTextUI {
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public constructor()
@@ -17,7 +16,6 @@ declare namespace javax {
           updateDisplayProperties(arg0: java.awt.Font, arg1: java.awt.Color): void
           cleanDisplayProperties(): void
         }
-
       }
     }
   }

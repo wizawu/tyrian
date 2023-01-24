@@ -1,18 +1,32 @@
 declare namespace java {
   namespace time {
-
-    class OffsetTime implements java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.OffsetTime>, java.io.Serializable {
+    class OffsetTime
+      implements
+        java.time.temporal.Temporal,
+        java.time.temporal.TemporalAdjuster,
+        java.lang.Comparable<java.time.OffsetTime>,
+        java.io.Serializable
+    {
       public static readonly MIN: java.time.OffsetTime
       public static readonly MAX: java.time.OffsetTime
       public static now(): java.time.OffsetTime
       public static now(arg0: java.time.ZoneId): java.time.OffsetTime
       public static now(arg0: java.time.Clock): java.time.OffsetTime
       public static of(arg0: java.time.LocalTime, arg1: java.time.ZoneOffset): java.time.OffsetTime
-      public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.time.ZoneOffset): java.time.OffsetTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: java.time.ZoneOffset
+      ): java.time.OffsetTime
       public static ofInstant(arg0: java.time.Instant, arg1: java.time.ZoneId): java.time.OffsetTime
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.OffsetTime
       public static parse(arg0: string | java.lang.CharSequence): java.time.OffsetTime
-      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.OffsetTime
+      public static parse(
+        arg0: string | java.lang.CharSequence,
+        arg1: java.time.format.DateTimeFormatter
+      ): java.time.OffsetTime
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange
@@ -26,7 +40,9 @@ declare namespace java {
       public getMinute(): number
       public getSecond(): number
       public getNano(): number
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.OffsetTime
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.OffsetTime
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.OffsetTime
       public withHour(arg0: number | java.lang.Integer): java.time.OffsetTime
       public withMinute(arg0: number | java.lang.Integer): java.time.OffsetTime
@@ -65,9 +81,10 @@ declare namespace java {
       public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.temporal.Temporal
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

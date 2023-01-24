@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace event {
-
       interface InternalFrameListener extends java.util.EventListener {
         internalFrameOpened(arg0: javax.swing.event.InternalFrameEvent): void
         internalFrameClosing(arg0: javax.swing.event.InternalFrameEvent): void
@@ -11,7 +10,6 @@ declare namespace javax {
         internalFrameActivated(arg0: javax.swing.event.InternalFrameEvent): void
         internalFrameDeactivated(arg0: javax.swing.event.InternalFrameEvent): void
       }
-
     }
   }
 }

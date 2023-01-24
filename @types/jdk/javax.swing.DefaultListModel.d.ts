@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class DefaultListModel<E> extends javax.swing.AbstractListModel<E> {
       public constructor()
       public getSize(): number
@@ -38,6 +37,5 @@ declare namespace javax {
       public addAll(arg0: java.util.Collection<E>): void
       public addAll(arg0: number | java.lang.Integer, arg1: java.util.Collection<E>): void
     }
-
   }
 }

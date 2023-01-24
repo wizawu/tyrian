@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Window extends java.awt.Container implements javax.accessibility.Accessible {
       warningString: java.lang.String
       icons: java.util.List<java.awt.Image>
@@ -38,7 +37,12 @@ declare namespace java {
       public setSize(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public setLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public setLocation(arg0: java.awt.Point): void
-      public reshape(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public reshape(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       setClientSize(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       closeSplashScreen(): void
       public setVisible(arg0: boolean | java.lang.Boolean): void
@@ -78,10 +82,14 @@ declare namespace java {
       isModalExcluded(arg0: java.awt.Dialog$ModalExclusionType): boolean
       updateChildrenBlocking(): void
       public addWindowListener(arg0: java.awt.event.WindowListener): void
-      public addWindowStateListener(arg0: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$lambda): void
+      public addWindowStateListener(
+        arg0: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$lambda
+      ): void
       public addWindowFocusListener(arg0: java.awt.event.WindowFocusListener): void
       public removeWindowListener(arg0: java.awt.event.WindowListener): void
-      public removeWindowStateListener(arg0: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$lambda): void
+      public removeWindowStateListener(
+        arg0: java.awt.event.WindowStateListener | java.awt.event.WindowStateListener$$lambda
+      ): void
       public removeWindowFocusListener(arg0: java.awt.event.WindowFocusListener): void
       public getWindowListeners(): java.awt.event.WindowListener[]
       public getWindowFocusListeners(): java.awt.event.WindowFocusListener[]
@@ -110,8 +118,13 @@ declare namespace java {
       public setFocusableWindowState(arg0: boolean | java.lang.Boolean): void
       public setAutoRequestFocus(arg0: boolean | java.lang.Boolean): void
       public isAutoRequestFocus(): boolean
-      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public addPropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public addPropertyChangeListener(
+        arg0: java.lang.String | string,
+        arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       public isValidateRoot(): boolean
       dispatchEventImpl(arg0: java.awt.AWTEvent): void
       public postEvent(arg0: java.awt.Event): boolean
@@ -137,7 +150,12 @@ declare namespace java {
       canContainFocusOwner(arg0: java.awt.Component): boolean
       public setLocationByPlatform(arg0: boolean | java.lang.Boolean): void
       public isLocationByPlatform(): boolean
-      public setBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public setBounds(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       public setBounds(arg0: java.awt.Rectangle): void
       isRecursivelyVisible(): boolean
       public getOpacity(): number
@@ -155,6 +173,5 @@ declare namespace java {
       getLocationOnWindow(): java.awt.Point
       updateZOrder(): void
     }
-
   }
 }

@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLObjectElement extends org.w3c.dom.html.HTMLElement {
           getForm(): org.w3c.dom.html.HTMLFormElement
           getCode(): java.lang.String
@@ -41,7 +40,6 @@ declare namespace org {
           setWidth(arg0: java.lang.String | string): void
           getContentDocument(): org.w3c.dom.Document
         }
-
       }
     }
   }

@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
       namespace html {
         namespace parser {
-
           class Element implements javax.swing.text.html.parser.DTDConstants, java.io.Serializable {
             public index: int
             public name: java.lang.String
@@ -15,7 +14,7 @@ declare namespace javax {
             public content: javax.swing.text.html.parser.ContentModel
             public atts: javax.swing.text.html.parser.AttributeList
             public data: java.lang.Object
-            static contentTypes: java.util.Hashtable<java.lang.String,java.lang.Integer>
+            static contentTypes: java.util.Hashtable<java.lang.String, java.lang.Integer>
             constructor()
             constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
             static getMaxIndex(): number
@@ -32,7 +31,6 @@ declare namespace javax {
             public getAttributeByValue(arg0: java.lang.String | string): javax.swing.text.html.parser.AttributeList
             public static name2type(arg0: java.lang.String | string): number
           }
-
         }
       }
     }

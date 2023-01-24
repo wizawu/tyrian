@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     abstract class Enum<E extends java.lang.Enum<E>> implements java.lang.Comparable<E>, java.io.Serializable {
       public name(): java.lang.String
       public ordinal(): number
@@ -15,6 +14,5 @@ declare namespace java {
       protected finalize(): void
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

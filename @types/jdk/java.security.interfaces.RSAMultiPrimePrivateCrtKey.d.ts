@@ -1,9 +1,8 @@
 declare namespace java {
   namespace security {
     namespace interfaces {
-
       interface RSAMultiPrimePrivateCrtKey extends java.security.interfaces.RSAPrivateKey {
-        public static readonly serialVersionUID: long
+        readonly serialVersionUID: long
         getPublicExponent(): java.math.BigInteger
         getPrimeP(): java.math.BigInteger
         getPrimeQ(): java.math.BigInteger
@@ -12,7 +11,6 @@ declare namespace java {
         getCrtCoefficient(): java.math.BigInteger
         getOtherPrimeInfo(): java.security.spec.RSAOtherPrimeInfo[]
       }
-
     }
   }
 }

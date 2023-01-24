@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     abstract class ProcessBuilder$Redirect {
       public static readonly PIPE: java.lang.ProcessBuilder$Redirect
       public static readonly INHERIT: java.lang.ProcessBuilder$Redirect
@@ -15,6 +14,5 @@ declare namespace java {
       public equals(arg0: java.lang.Object | any): boolean
       public hashCode(): number
     }
-
   }
 }

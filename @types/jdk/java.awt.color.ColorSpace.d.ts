@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace color {
-
       abstract class ColorSpace implements java.io.Serializable {
         static readonly serialVersionUID: long
         public static readonly TYPE_XYZ: int
@@ -48,7 +47,6 @@ declare namespace java {
         public getMaxValue(arg0: number | java.lang.Integer): number
         static isCS_CIEXYZ(arg0: java.awt.color.ColorSpace): boolean
       }
-
     }
   }
 }

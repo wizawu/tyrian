@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     interface StackWalker$StackFrame {
       getClassName(): java.lang.String
       getMethodName(): java.lang.String
@@ -13,6 +12,5 @@ declare namespace java {
       isNativeMethod(): boolean
       toStackTraceElement(): java.lang.StackTraceElement
     }
-
   }
 }

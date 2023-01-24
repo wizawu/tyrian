@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace ref {
-
       interface Cleaner$Cleanable$$lambda {
         (): void
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface Cleaner$Cleanable {
         clean(): void
       }
-
     }
   }
 }

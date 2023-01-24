@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace management {
     namespace jfr {
-
       class SettingDescriptorInfo {
         constructor(arg0: jdk.jfr.SettingDescriptor)
         public getLabel(): java.lang.String
@@ -13,7 +12,6 @@ declare namespace jdk {
         public static from(arg0: javax.management.openmbean.CompositeData): jdk.management.jfr.SettingDescriptorInfo
         public toString(): java.lang.String
       }
-
     }
   }
 }

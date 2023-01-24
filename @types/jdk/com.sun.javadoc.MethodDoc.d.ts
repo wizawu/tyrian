@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace javadoc {
-
       interface MethodDoc extends com.sun.javadoc.ExecutableMemberDoc {
         isAbstract(): boolean
         isDefault(): boolean
@@ -11,7 +10,6 @@ declare namespace com {
         overriddenMethod(): com.sun.javadoc.MethodDoc
         overrides(arg0: com.sun.javadoc.MethodDoc): boolean
       }
-
     }
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
         class JobState extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintJobAttribute {
           public static readonly UNKNOWN: javax.print.attribute.standard.JobState
           public static readonly PENDING: javax.print.attribute.standard.JobState
@@ -18,7 +17,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

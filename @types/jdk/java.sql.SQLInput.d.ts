@@ -1,6 +1,5 @@
 declare namespace java {
   namespace sql {
-
     interface SQLInput {
       readString(): java.lang.String
       readBoolean(): boolean
@@ -31,6 +30,5 @@ declare namespace java {
       readRowId(): java.sql.RowId
       readObject<T>(arg0: java.lang.Class<T>): T
     }
-
   }
 }

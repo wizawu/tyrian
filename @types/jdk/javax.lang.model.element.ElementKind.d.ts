@@ -2,7 +2,6 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace element {
-
         class ElementKind extends java.lang.Enum<javax.lang.model.element.ElementKind> {
           public static readonly PACKAGE: javax.lang.model.element.ElementKind
           public static readonly ENUM: javax.lang.model.element.ElementKind
@@ -28,7 +27,6 @@ declare namespace javax {
           public isInterface(): boolean
           public isField(): boolean
         }
-
       }
     }
   }

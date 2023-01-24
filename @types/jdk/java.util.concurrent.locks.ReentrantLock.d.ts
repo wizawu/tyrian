@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace locks {
-
         class ReentrantLock implements java.util.concurrent.locks.Lock, java.io.Serializable {
           public constructor()
           public constructor(arg0: boolean | java.lang.Boolean)
@@ -23,10 +22,11 @@ declare namespace java {
           protected getQueuedThreads(): java.util.Collection<java.lang.Thread>
           public hasWaiters(arg0: java.util.concurrent.locks.Condition): boolean
           public getWaitQueueLength(arg0: java.util.concurrent.locks.Condition): number
-          protected getWaitingThreads(arg0: java.util.concurrent.locks.Condition): java.util.Collection<java.lang.Thread>
+          protected getWaitingThreads(
+            arg0: java.util.concurrent.locks.Condition
+          ): java.util.Collection<java.lang.Thread>
           public toString(): java.lang.String
         }
-
       }
     }
   }

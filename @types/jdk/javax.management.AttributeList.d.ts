@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace management {
-
     class AttributeList extends java.util.ArrayList<java.lang.Object> {
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
@@ -18,6 +17,5 @@ declare namespace javax {
       public addAll(arg0: number | java.lang.Integer, arg1: java.util.Collection<unknown>): boolean
       public set(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): java.lang.Object
     }
-
   }
 }

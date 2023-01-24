@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
     namespace plugins {
       namespace tiff {
-
         class FaxTIFFTagSet extends javax.imageio.plugins.tiff.TIFFTagSet {
           public static readonly TAG_BAD_FAX_LINES: int
           public static readonly TAG_CLEAN_FAX_DATA: int
@@ -12,7 +11,6 @@ declare namespace javax {
           public static readonly TAG_CONSECUTIVE_BAD_LINES: int
           public static getInstance(): javax.imageio.plugins.tiff.FaxTIFFTagSet
         }
-
       }
     }
   }

@@ -1,11 +1,14 @@
 declare namespace javax {
   namespace xml {
     namespace stream {
-
       interface XMLStreamReader extends javax.xml.stream.XMLStreamConstants {
         getProperty(arg0: java.lang.String | string): java.lang.Object
         next(): number
-        require(arg0: number | java.lang.Integer, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+        require(
+          arg0: number | java.lang.Integer,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String | string
+        ): void
         getElementText(): java.lang.String
         nextTag(): number
         hasNext(): boolean
@@ -31,7 +34,12 @@ declare namespace javax {
         getEventType(): number
         getText(): java.lang.String
         getTextCharacters(): string[]
-        getTextCharacters(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+        getTextCharacters(
+          arg0: number | java.lang.Integer,
+          arg1: string[] | java.lang.Character[],
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        ): number
         getTextStart(): number
         getTextLength(): number
         getEncoding(): java.lang.String
@@ -49,7 +57,6 @@ declare namespace javax {
         getPITarget(): java.lang.String
         getPIData(): java.lang.String
       }
-
     }
   }
 }

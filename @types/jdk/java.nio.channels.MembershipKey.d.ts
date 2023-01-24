@@ -1,7 +1,6 @@
 declare namespace java {
   namespace nio {
     namespace channels {
-
       abstract class MembershipKey {
         protected constructor()
         public abstract isValid(): boolean
@@ -13,7 +12,6 @@ declare namespace java {
         public abstract networkInterface(): java.net.NetworkInterface
         public abstract sourceAddress(): java.net.InetAddress
       }
-
     }
   }
 }

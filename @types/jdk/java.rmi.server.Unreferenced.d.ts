@@ -1,7 +1,6 @@
 declare namespace java {
   namespace rmi {
     namespace server {
-
       interface Unreferenced$$lambda {
         (): void
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface Unreferenced {
         unreferenced(): void
       }
-
     }
   }
 }

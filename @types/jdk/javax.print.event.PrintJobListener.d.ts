@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace print {
     namespace event {
-
       interface PrintJobListener {
         printDataTransferCompleted(arg0: javax.print.event.PrintJobEvent): void
         printJobCompleted(arg0: javax.print.event.PrintJobEvent): void
@@ -10,7 +9,6 @@ declare namespace javax {
         printJobNoMoreEvents(arg0: javax.print.event.PrintJobEvent): void
         printJobRequiresAttention(arg0: javax.print.event.PrintJobEvent): void
       }
-
     }
   }
 }

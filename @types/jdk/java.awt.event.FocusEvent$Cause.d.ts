@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
       class FocusEvent$Cause extends java.lang.Enum<java.awt.event.FocusEvent$Cause> {
         public static readonly UNKNOWN: java.awt.event.FocusEvent$Cause
         public static readonly MOUSE_EVENT: java.awt.event.FocusEvent$Cause
@@ -17,7 +16,6 @@ declare namespace java {
         public static values(): java.awt.event.FocusEvent$Cause[]
         public static valueOf(arg0: java.lang.String | string): java.awt.event.FocusEvent$Cause
       }
-
     }
   }
 }

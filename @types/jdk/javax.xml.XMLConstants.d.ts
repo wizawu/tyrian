@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace xml {
-
     class XMLConstants {
       public static readonly NULL_NS_URI: java.lang.String
       public static readonly DEFAULT_NS_PREFIX: java.lang.String
@@ -19,6 +18,5 @@ declare namespace javax {
       public static readonly ACCESS_EXTERNAL_STYLESHEET: java.lang.String
       public static readonly USE_CATALOG: java.lang.String
     }
-
   }
 }

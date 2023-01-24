@@ -1,10 +1,21 @@
 declare namespace java {
   namespace awt {
-
     class JobAttributes implements java.lang.Cloneable {
       public constructor()
       public constructor(arg0: java.awt.JobAttributes)
-      public constructor(arg0: number | java.lang.Integer, arg1: java.awt.JobAttributes$DefaultSelectionType, arg2: java.awt.JobAttributes$DestinationType, arg3: java.awt.JobAttributes$DialogType, arg4: java.lang.String | string, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: java.awt.JobAttributes$MultipleDocumentHandlingType, arg8: number[][] | java.lang.Integer[][], arg9: java.lang.String | string, arg10: java.awt.JobAttributes$SidesType)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: java.awt.JobAttributes$DefaultSelectionType,
+        arg2: java.awt.JobAttributes$DestinationType,
+        arg3: java.awt.JobAttributes$DialogType,
+        arg4: java.lang.String | string,
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer,
+        arg7: java.awt.JobAttributes$MultipleDocumentHandlingType,
+        arg8: number[][] | java.lang.Integer[][],
+        arg9: java.lang.String | string,
+        arg10: java.awt.JobAttributes$SidesType
+      )
       public clone(): java.lang.Object
       public set(arg0: java.awt.JobAttributes): void
       public getCopies(): number
@@ -40,6 +51,5 @@ declare namespace java {
       public hashCode(): number
       public toString(): java.lang.String
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace naming {
-
     class Reference implements java.lang.Cloneable, java.io.Serializable {
       protected className: java.lang.String
       protected addrs: java.util.Vector<javax.naming.RefAddr>
@@ -8,8 +7,17 @@ declare namespace javax {
       protected classFactoryLocation: java.lang.String
       public constructor(arg0: java.lang.String | string)
       public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr)
-      public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
-      public constructor(arg0: java.lang.String | string, arg1: javax.naming.RefAddr, arg2: java.lang.String | string, arg3: java.lang.String | string)
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      )
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: javax.naming.RefAddr,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string
+      )
       public getClassName(): java.lang.String
       public getFactoryClassName(): java.lang.String
       public getFactoryClassLocation(): java.lang.String
@@ -26,6 +34,5 @@ declare namespace javax {
       public toString(): java.lang.String
       public clone(): java.lang.Object
     }
-
   }
 }

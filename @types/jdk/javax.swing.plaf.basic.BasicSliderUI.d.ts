@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicSliderUI extends javax.swing.plaf.SliderUI {
           public static readonly POSITIVE_SCROLL: int
           public static readonly NEGATIVE_SCROLL: int
@@ -48,7 +47,11 @@ declare namespace javax {
           getInputMap(arg0: number | java.lang.Integer, arg1: javax.swing.JSlider): javax.swing.InputMap
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
           protected uninstallKeyboardActions(arg0: javax.swing.JSlider): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public getBaseline(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           protected labelsHaveSameBaselines(): boolean
           public getPreferredHorizontalSize(): java.awt.Dimension
@@ -86,13 +89,37 @@ declare namespace javax {
           public paintFocus(arg0: java.awt.Graphics): void
           public paintTrack(arg0: java.awt.Graphics): void
           public paintTicks(arg0: java.awt.Graphics): void
-          protected paintMinorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
-          protected paintMajorTickForHorizSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
-          protected paintMinorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
-          protected paintMajorTickForVertSlider(arg0: java.awt.Graphics, arg1: java.awt.Rectangle, arg2: number | java.lang.Integer): void
+          protected paintMinorTickForHorizSlider(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: number | java.lang.Integer
+          ): void
+          protected paintMajorTickForHorizSlider(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: number | java.lang.Integer
+          ): void
+          protected paintMinorTickForVertSlider(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: number | java.lang.Integer
+          ): void
+          protected paintMajorTickForVertSlider(
+            arg0: java.awt.Graphics,
+            arg1: java.awt.Rectangle,
+            arg2: number | java.lang.Integer
+          ): void
           public paintLabels(arg0: java.awt.Graphics): void
-          protected paintHorizontalLabel(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: java.awt.Component): void
-          protected paintVerticalLabel(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: java.awt.Component): void
+          protected paintHorizontalLabel(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: java.awt.Component
+          ): void
+          protected paintVerticalLabel(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: java.awt.Component
+          ): void
           public paintThumb(arg0: java.awt.Graphics): void
           public setThumbLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
           public scrollByBlock(arg0: number | java.lang.Integer): void
@@ -100,11 +127,14 @@ declare namespace javax {
           protected scrollDueToClickInTrack(arg0: number | java.lang.Integer): void
           protected xPositionForValue(arg0: number | java.lang.Integer): number
           protected yPositionForValue(arg0: number | java.lang.Integer): number
-          protected yPositionForValue(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          protected yPositionForValue(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           public valueForYPosition(arg0: number | java.lang.Integer): number
           public valueForXPosition(arg0: number | java.lang.Integer): number
         }
-
       }
     }
   }

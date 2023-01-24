@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class UIManager implements java.io.Serializable {
       public constructor()
       public static getInstalledLookAndFeels(): javax.swing.UIManager$LookAndFeelInfo[]
@@ -41,10 +40,13 @@ declare namespace javax {
       public static addAuxiliaryLookAndFeel(arg0: javax.swing.LookAndFeel): void
       public static removeAuxiliaryLookAndFeel(arg0: javax.swing.LookAndFeel): boolean
       public static getAuxiliaryLookAndFeels(): javax.swing.LookAndFeel[]
-      public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public static addPropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public static removePropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       public static getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
     }
-
   }
 }

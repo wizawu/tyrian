@@ -1,9 +1,12 @@
 declare namespace java {
   namespace io {
-
     interface DataInput {
       readFully(arg0: number[] | java.lang.Byte[]): void
-      readFully(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      readFully(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       skipBytes(arg0: number | java.lang.Integer): number
       readBoolean(): boolean
       readByte(): number
@@ -18,6 +21,5 @@ declare namespace java {
       readLine(): java.lang.String
       readUTF(): java.lang.String
     }
-
   }
 }

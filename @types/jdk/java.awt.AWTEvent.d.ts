@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     abstract class AWTEvent extends java.util.EventObject {
       protected id: int
       protected consumed: boolean
@@ -40,6 +39,5 @@ declare namespace java {
       copyPrivateDataInto(arg0: java.awt.AWTEvent): void
       dispatched(): void
     }
-
   }
 }

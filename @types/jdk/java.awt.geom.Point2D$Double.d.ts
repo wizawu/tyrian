@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace geom {
-
       class Point2D$Double extends java.awt.geom.Point2D implements java.io.Serializable {
         public x: double
         public y: double
@@ -12,7 +11,6 @@ declare namespace java {
         public setLocation(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public toString(): java.lang.String
       }
-
     }
   }
 }

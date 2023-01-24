@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Package extends java.lang.NamedPackage implements java.lang.reflect.AnnotatedElement {
       public getName(): java.lang.String
       public getSpecificationTitle(): java.lang.String
@@ -23,9 +22,18 @@ declare namespace java {
       public getDeclaredAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
       public getDeclaredAnnotationsByType<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A[]
       public getDeclaredAnnotations(): java.lang.annotation.Annotation[]
-      constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.String | string, arg6: java.lang.String | string, arg7: java.net.URL, arg8: java.lang.ClassLoader)
+      constructor(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string,
+        arg4: java.lang.String | string,
+        arg5: java.lang.String | string,
+        arg6: java.lang.String | string,
+        arg7: java.net.URL,
+        arg8: java.lang.ClassLoader
+      )
       constructor(arg0: java.lang.String | string, arg1: java.lang.Module)
     }
-
   }
 }

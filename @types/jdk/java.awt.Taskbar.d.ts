@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Taskbar {
       public isSupported(arg0: java.awt.Taskbar$Feature): boolean
       public static getTaskbar(): java.awt.Taskbar
@@ -17,6 +16,5 @@ declare namespace java {
       public setWindowProgressValue(arg0: java.awt.Window, arg1: number | java.lang.Integer): void
       public setWindowProgressState(arg0: java.awt.Window, arg1: java.awt.Taskbar$State): void
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Component$BaselineResizeBehavior extends java.lang.Enum<java.awt.Component$BaselineResizeBehavior> {
       public static readonly CONSTANT_ASCENT: java.awt.Component$BaselineResizeBehavior
       public static readonly CONSTANT_DESCENT: java.awt.Component$BaselineResizeBehavior
@@ -9,6 +8,5 @@ declare namespace java {
       public static values(): java.awt.Component$BaselineResizeBehavior[]
       public static valueOf(arg0: java.lang.String | string): java.awt.Component$BaselineResizeBehavior
     }
-
   }
 }

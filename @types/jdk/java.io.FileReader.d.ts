@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     class FileReader extends java.io.InputStreamReader {
       public constructor(arg0: java.lang.String | string)
       public constructor(arg0: java.io.File)
@@ -8,6 +7,5 @@ declare namespace java {
       public constructor(arg0: java.lang.String | string, arg1: java.nio.charset.Charset)
       public constructor(arg0: java.io.File, arg1: java.nio.charset.Charset)
     }
-
   }
 }

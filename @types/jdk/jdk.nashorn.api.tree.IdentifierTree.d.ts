@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace tree {
-
         interface IdentifierTree extends jdk.nashorn.api.tree.ExpressionTree {
           getName(): java.lang.String
           isRestParameter(): boolean
@@ -12,7 +11,6 @@ declare namespace jdk {
           isDefault(): boolean
           isStarDefaultStar(): boolean
         }
-
       }
     }
   }

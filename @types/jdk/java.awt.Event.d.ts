@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Event implements java.io.Serializable {
       public static readonly SHIFT_MASK: int
       public static readonly CTRL_MASK: int
@@ -76,8 +75,25 @@ declare namespace java {
       public clickCount: int
       public arg: java.lang.Object
       public evt: java.awt.Event
-      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Long, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: java.lang.Object | any)
-      public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Long, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer)
+      public constructor(
+        arg0: java.lang.Object | any,
+        arg1: number | java.lang.Long,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer,
+        arg7: java.lang.Object | any
+      )
+      public constructor(
+        arg0: java.lang.Object | any,
+        arg1: number | java.lang.Long,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer
+      )
       public constructor(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: java.lang.Object | any)
       public translate(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public shiftDown(): boolean
@@ -90,6 +106,5 @@ declare namespace java {
       protected paramString(): java.lang.String
       public toString(): java.lang.String
     }
-
   }
 }

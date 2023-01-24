@@ -1,8 +1,5 @@
 declare namespace java {
   namespace security {
-
-    interface KeyStore$ProtectionParameter {
-    }
-
+    interface KeyStore$ProtectionParameter {}
   }
 }

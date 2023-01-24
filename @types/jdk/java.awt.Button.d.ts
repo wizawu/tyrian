@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Button extends java.awt.Component implements javax.accessibility.Accessible {
       label: java.lang.String
       actionCommand: java.lang.String
@@ -23,6 +22,5 @@ declare namespace java {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace nio {
     namespace channels {
-
       abstract class SelectionKey {
         public static readonly OP_READ: int
         public static readonly OP_WRITE: int
@@ -24,7 +23,6 @@ declare namespace java {
         public attach(arg0: java.lang.Object | any): java.lang.Object
         public attachment(): java.lang.Object
       }
-
     }
   }
 }

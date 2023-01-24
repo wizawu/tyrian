@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace event {
-
       class InternalFrameEvent extends java.awt.AWTEvent {
         public static readonly INTERNAL_FRAME_FIRST: int
         public static readonly INTERNAL_FRAME_LAST: int
@@ -16,7 +15,6 @@ declare namespace javax {
         public paramString(): java.lang.String
         public getInternalFrame(): javax.swing.JInternalFrame
       }
-
     }
   }
 }

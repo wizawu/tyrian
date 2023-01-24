@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Character$UnicodeBlock extends java.lang.Character$Subset {
       public static readonly BASIC_LATIN: java.lang.Character$UnicodeBlock
       public static readonly LATIN_1_SUPPLEMENT: java.lang.Character$UnicodeBlock
@@ -287,6 +286,5 @@ declare namespace java {
       public static of(arg0: number | java.lang.Integer): java.lang.Character$UnicodeBlock
       public static forName(arg0: java.lang.String | string): java.lang.Character$UnicodeBlock
     }
-
   }
 }

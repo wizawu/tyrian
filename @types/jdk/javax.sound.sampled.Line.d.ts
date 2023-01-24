@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace sampled {
-
       interface Line extends java.lang.AutoCloseable {
         getLineInfo(): javax.sound.sampled.Line$Info
         open(): void
@@ -13,7 +12,6 @@ declare namespace javax {
         addLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$lambda): void
         removeLineListener(arg0: javax.sound.sampled.LineListener | javax.sound.sampled.LineListener$$lambda): void
       }
-
     }
   }
 }

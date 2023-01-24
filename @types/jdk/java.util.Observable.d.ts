@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class Observable {
       public constructor()
       public addObserver(arg0: java.util.Observer | java.util.Observer$$lambda): void
@@ -13,6 +12,5 @@ declare namespace java {
       public hasChanged(): boolean
       public countObservers(): number
     }
-
   }
 }

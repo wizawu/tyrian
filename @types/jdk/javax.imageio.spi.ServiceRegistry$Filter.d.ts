@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace imageio {
     namespace spi {
-
       interface ServiceRegistry$Filter$$lambda {
         (arg0: java.lang.Object | any): boolean | java.lang.Boolean
       }
@@ -9,7 +8,6 @@ declare namespace javax {
       interface ServiceRegistry$Filter {
         filter(arg0: java.lang.Object | any): boolean
       }
-
     }
   }
 }

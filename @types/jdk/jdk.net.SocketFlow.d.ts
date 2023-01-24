@@ -1,6 +1,5 @@
 declare namespace jdk {
   namespace net {
-
     class SocketFlow {
       public static readonly UNSET: int
       public static readonly NORMAL_PRIORITY: int
@@ -14,6 +13,5 @@ declare namespace jdk {
       status(arg0: number | java.lang.Integer): void
       public toString(): java.lang.String
     }
-
   }
 }

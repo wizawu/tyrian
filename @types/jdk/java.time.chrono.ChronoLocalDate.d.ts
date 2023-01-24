@@ -1,8 +1,10 @@
 declare namespace java {
   namespace time {
     namespace chrono {
-
-      interface ChronoLocalDate extends java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.chrono.ChronoLocalDate> {
+      interface ChronoLocalDate
+        extends java.time.temporal.Temporal,
+          java.time.temporal.TemporalAdjuster,
+          java.lang.Comparable<java.time.chrono.ChronoLocalDate> {
         timeLineOrder(): java.util.Comparator<java.time.chrono.ChronoLocalDate>
         from(arg0: java.time.temporal.TemporalAccessor): java.time.chrono.ChronoLocalDate
         getChronology(): java.time.chrono.Chronology
@@ -12,7 +14,9 @@ declare namespace java {
         lengthOfYear(): number
         isSupported(arg0: java.time.temporal.TemporalField): boolean
         isSupported(arg0: java.time.temporal.TemporalUnit): boolean
-        with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.chrono.ChronoLocalDate
+        with(
+          arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+        ): java.time.chrono.ChronoLocalDate
         with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.chrono.ChronoLocalDate
         plus(arg0: java.time.temporal.TemporalAmount): java.time.chrono.ChronoLocalDate
         plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.chrono.ChronoLocalDate
@@ -37,10 +41,11 @@ declare namespace java {
         plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
         plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
         with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-        with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+        with(
+          arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+        ): java.time.temporal.Temporal
         compareTo(arg0: java.lang.Object | any): number
       }
-
     }
   }
 }

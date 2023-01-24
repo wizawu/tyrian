@@ -2,7 +2,6 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace element {
-
         interface ExecutableElement extends javax.lang.model.element.Element, javax.lang.model.element.Parameterizable {
           getTypeParameters(): java.util.List<javax.lang.model.element.TypeParameterElement>
           getReturnType(): javax.lang.model.type.TypeMirror
@@ -14,7 +13,6 @@ declare namespace javax {
           getDefaultValue(): javax.lang.model.element.AnnotationValue
           getSimpleName(): javax.lang.model.element.Name
         }
-
       }
     }
   }

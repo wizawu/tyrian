@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace stream {
-
       interface XMLEventReader extends java.util.Iterator<java.lang.Object> {
         nextEvent(): javax.xml.stream.events.XMLEvent
         hasNext(): boolean
@@ -11,7 +10,6 @@ declare namespace javax {
         getProperty(arg0: java.lang.String | string): java.lang.Object
         close(): void
       }
-
     }
   }
 }

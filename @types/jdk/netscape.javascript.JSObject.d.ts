@@ -1,6 +1,5 @@
 declare namespace netscape {
   namespace javascript {
-
     abstract class JSObject {
       protected constructor()
       public abstract call(arg0: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.lang.Object
@@ -12,6 +11,5 @@ declare namespace netscape {
       public abstract setSlot(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): void
       public static getWindow(arg0: java.applet.Applet): netscape.javascript.JSObject
     }
-
   }
 }

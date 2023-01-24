@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       class StyledEditorKit extends javax.swing.text.DefaultEditorKit {
         currentRun: javax.swing.text.Element
         currentParagraph: javax.swing.text.Element
@@ -15,9 +14,11 @@ declare namespace javax {
         public deinstall(arg0: javax.swing.JEditorPane): void
         public getViewFactory(): javax.swing.text.ViewFactory
         public clone(): java.lang.Object
-        protected createInputAttributes(arg0: javax.swing.text.Element, arg1: javax.swing.text.MutableAttributeSet): void
+        protected createInputAttributes(
+          arg0: javax.swing.text.Element,
+          arg1: javax.swing.text.MutableAttributeSet
+        ): void
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace jshell {
     namespace execution {
-
       class StreamingExecutionControl implements jdk.jshell.spi.ExecutionControl {
         public constructor(arg0: java.io.ObjectOutput, arg1: java.io.ObjectInput)
         public load(arg0: jdk.jshell.spi.ExecutionControl$ClassBytecodes[]): void
@@ -13,7 +12,6 @@ declare namespace jdk {
         public extensionCommand(arg0: java.lang.String | string, arg1: java.lang.Object | any): java.lang.Object
         public close(): void
       }
-
     }
   }
 }

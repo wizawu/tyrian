@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicProgressBarUI extends javax.swing.plaf.ProgressBarUI {
           protected progressBar: javax.swing.JProgressBar
           protected changeListener: javax.swing.event.ChangeListener
@@ -17,7 +16,11 @@ declare namespace javax {
           protected startAnimationTimer(): void
           protected stopAnimationTimer(): void
           protected uninstallListeners(): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public getBaseline(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           protected getPreferredInnerHorizontal(): java.awt.Dimension
           protected getPreferredInnerVertical(): java.awt.Dimension
@@ -27,14 +30,33 @@ declare namespace javax {
           protected setCellLength(arg0: number | java.lang.Integer): void
           protected getCellSpacing(): number
           protected setCellSpacing(arg0: number | java.lang.Integer): void
-          protected getAmountFull(arg0: java.awt.Insets, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          protected getAmountFull(
+            arg0: java.awt.Insets,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected getBox(arg0: java.awt.Rectangle): java.awt.Rectangle
           protected getBoxLength(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
           protected paintIndeterminate(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paintDeterminate(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
-          protected paintString(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: java.awt.Insets): void
-          protected getStringPlacement(arg0: java.awt.Graphics, arg1: java.lang.String | string, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): java.awt.Point
+          protected paintString(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer,
+            arg6: java.awt.Insets
+          ): void
+          protected getStringPlacement(
+            arg0: java.awt.Graphics,
+            arg1: java.lang.String | string,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer
+          ): java.awt.Point
           public getPreferredSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
@@ -43,7 +65,6 @@ declare namespace javax {
           protected setAnimationIndex(arg0: number | java.lang.Integer): void
           protected incrementAnimationIndex(): void
         }
-
       }
     }
   }

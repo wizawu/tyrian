@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     abstract class Signer extends java.security.Identity {
       protected constructor()
       public constructor(arg0: java.lang.String | string)
@@ -10,6 +9,5 @@ declare namespace java {
       printKeys(): java.lang.String
       public toString(): java.lang.String
     }
-
   }
 }

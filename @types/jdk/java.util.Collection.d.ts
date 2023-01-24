@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     interface Collection<E> extends java.lang.Iterable<E> {
       size(): number
       isEmpty(): boolean
@@ -23,6 +22,5 @@ declare namespace java {
       stream(): java.util.stream.Stream<E>
       parallelStream(): java.util.stream.Stream<E>
     }
-
   }
 }

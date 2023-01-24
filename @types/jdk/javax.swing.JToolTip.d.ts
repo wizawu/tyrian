@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JToolTip extends javax.swing.JComponent implements javax.accessibility.Accessible {
       tipText: java.lang.String
       component: javax.swing.JComponent
@@ -17,6 +16,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

@@ -1,19 +1,30 @@
 declare namespace java {
   namespace text {
-
     abstract class NumberFormat extends java.text.Format {
       public static readonly INTEGER_FIELD: int
       public static readonly FRACTION_FIELD: int
       static readonly currentSerialVersion: int
       static readonly serialVersionUID: long
       protected constructor()
-      public format(arg0: java.lang.Object | any, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+      public format(
+        arg0: java.lang.Object | any,
+        arg1: java.lang.StringBuffer,
+        arg2: java.text.FieldPosition
+      ): java.lang.StringBuffer
       public parseObject(arg0: java.lang.String | string, arg1: java.text.ParsePosition): java.lang.Object
       public format(arg0: number | java.lang.Double): java.lang.String
       fastFormat(arg0: number | java.lang.Double): java.lang.String
       public format(arg0: number | java.lang.Long): java.lang.String
-      public abstract format(arg0: number | java.lang.Double, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
-      public abstract format(arg0: number | java.lang.Long, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+      public abstract format(
+        arg0: number | java.lang.Double,
+        arg1: java.lang.StringBuffer,
+        arg2: java.text.FieldPosition
+      ): java.lang.StringBuffer
+      public abstract format(
+        arg0: number | java.lang.Long,
+        arg1: java.lang.StringBuffer,
+        arg2: java.text.FieldPosition
+      ): java.lang.StringBuffer
       public abstract parse(arg0: java.lang.String | string, arg1: java.text.ParsePosition): java.lang.Number
       public parse(arg0: java.lang.String | string): java.lang.Number
       public isParseIntegerOnly(): boolean
@@ -49,6 +60,5 @@ declare namespace java {
       public getRoundingMode(): java.math.RoundingMode
       public setRoundingMode(arg0: java.math.RoundingMode): void
     }
-
   }
 }

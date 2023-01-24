@@ -2,8 +2,7 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace element {
-
-        interface AnnotationValueVisitor<R,P> {
+        interface AnnotationValueVisitor<R, P> {
           visit(arg0: javax.lang.model.element.AnnotationValue, arg1: P): R
           visit(arg0: javax.lang.model.element.AnnotationValue): R
           visitBoolean(arg0: boolean | java.lang.Boolean, arg1: P): R
@@ -21,7 +20,6 @@ declare namespace javax {
           visitArray(arg0: java.util.List<javax.lang.model.element.AnnotationValue>, arg1: P): R
           visitUnknown(arg0: javax.lang.model.element.AnnotationValue, arg1: P): R
         }
-
       }
     }
   }

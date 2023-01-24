@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalScrollPaneUI extends javax.swing.plaf.basic.BasicScrollPaneUI {
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
@@ -13,7 +12,6 @@ declare namespace javax {
           public uninstallListeners(arg0: javax.swing.JScrollPane): void
           protected createScrollBarSwapListener(): java.beans.PropertyChangeListener
         }
-
       }
     }
   }

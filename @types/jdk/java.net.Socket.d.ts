@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     class Socket implements java.io.Closeable {
       impl: java.net.SocketImpl
       public constructor()
@@ -8,10 +7,28 @@ declare namespace java {
       protected constructor(arg0: java.net.SocketImpl)
       public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
       public constructor(arg0: java.net.InetAddress, arg1: number | java.lang.Integer)
-      public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.net.InetAddress, arg3: number | java.lang.Integer)
-      public constructor(arg0: java.net.InetAddress, arg1: number | java.lang.Integer, arg2: java.net.InetAddress, arg3: number | java.lang.Integer)
-      public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean)
-      public constructor(arg0: java.net.InetAddress, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean)
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: java.net.InetAddress,
+        arg3: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: java.net.InetAddress,
+        arg1: number | java.lang.Integer,
+        arg2: java.net.InetAddress,
+        arg3: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean
+      )
+      public constructor(
+        arg0: java.net.InetAddress,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean
+      )
       createImpl(arg0: boolean | java.lang.Boolean): void
       setImpl(): void
       getImpl(): java.net.SocketImpl
@@ -60,11 +77,14 @@ declare namespace java {
       public isInputShutdown(): boolean
       public isOutputShutdown(): boolean
       public static setSocketImplFactory(arg0: java.net.SocketImplFactory | java.net.SocketImplFactory$$lambda): void
-      public setPerformancePreferences(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public setPerformancePreferences(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public setOption<T>(arg0: java.net.SocketOption<T>, arg1: T): java.net.Socket
       public getOption<T>(arg0: java.net.SocketOption<T>): T
       public supportedOptions(): java.util.Set<java.net.SocketOption<unknown>>
     }
-
   }
 }

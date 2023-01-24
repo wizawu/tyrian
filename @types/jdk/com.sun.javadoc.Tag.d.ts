@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace javadoc {
-
       interface Tag {
         name(): java.lang.String
         holder(): com.sun.javadoc.Doc
@@ -12,7 +11,6 @@ declare namespace com {
         firstSentenceTags(): com.sun.javadoc.Tag[]
         position(): com.sun.javadoc.SourcePosition
       }
-
     }
   }
 }

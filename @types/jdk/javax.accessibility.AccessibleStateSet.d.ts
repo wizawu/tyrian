@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace accessibility {
-
     class AccessibleStateSet {
       protected states: java.util.Vector<javax.accessibility.AccessibleState>
       public constructor()
@@ -13,6 +12,5 @@ declare namespace javax {
       public toArray(): javax.accessibility.AccessibleState[]
       public toString(): java.lang.String
     }
-
   }
 }

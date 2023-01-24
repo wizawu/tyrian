@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace relation {
-
       class MBeanServerNotificationFilter extends javax.management.NotificationFilterSupport {
         public constructor()
         public disableAllObjectNames(): void
@@ -12,7 +11,6 @@ declare namespace javax {
         public getDisabledObjectNames(): java.util.Vector<javax.management.ObjectName>
         public isNotificationEnabled(arg0: javax.management.Notification): boolean
       }
-
     }
   }
 }

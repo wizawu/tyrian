@@ -1,19 +1,18 @@
 declare namespace com {
   namespace sun {
     namespace jdi {
-
       interface VirtualMachine extends com.sun.jdi.Mirror {
-        public static readonly TRACE_NONE: int
-        public static readonly TRACE_SENDS: int
-        public static readonly TRACE_RECEIVES: int
-        public static readonly TRACE_EVENTS: int
-        public static readonly TRACE_REFTYPES: int
-        public static readonly TRACE_OBJREFS: int
-        public static readonly TRACE_ALL: int
+        readonly TRACE_NONE: int
+        readonly TRACE_SENDS: int
+        readonly TRACE_RECEIVES: int
+        readonly TRACE_EVENTS: int
+        readonly TRACE_REFTYPES: int
+        readonly TRACE_OBJREFS: int
+        readonly TRACE_ALL: int
         allModules(): java.util.List<com.sun.jdi.ModuleReference>
         classesByName(arg0: java.lang.String | string): java.util.List<com.sun.jdi.ReferenceType>
         allClasses(): java.util.List<com.sun.jdi.ReferenceType>
-        redefineClasses(arg0: java.util.Map<com.sun.jdi.ReferenceType,byte[]>): void
+        redefineClasses(arg0: java.util.Map<com.sun.jdi.ReferenceType, byte[]>): void
         allThreads(): java.util.List<com.sun.jdi.ThreadReference>
         suspend(): void
         resume(): void
@@ -65,7 +64,6 @@ declare namespace com {
         name(): java.lang.String
         setDebugTraceMode(arg0: number | java.lang.Integer): void
       }
-
     }
   }
 }

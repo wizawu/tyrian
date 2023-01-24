@@ -1,7 +1,12 @@
 declare namespace java {
   namespace time {
-
-    class Instant implements java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.Instant>, java.io.Serializable {
+    class Instant
+      implements
+        java.time.temporal.Temporal,
+        java.time.temporal.TemporalAdjuster,
+        java.lang.Comparable<java.time.Instant>,
+        java.io.Serializable
+    {
       public static readonly EPOCH: java.time.Instant
       public static readonly MIN: java.time.Instant
       public static readonly MAX: java.time.Instant
@@ -19,7 +24,9 @@ declare namespace java {
       public getLong(arg0: java.time.temporal.TemporalField): number
       public getEpochSecond(): number
       public getNano(): number
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.Instant
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.Instant
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.Instant
       public truncatedTo(arg0: java.time.temporal.TemporalUnit): java.time.Instant
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.Instant
@@ -51,9 +58,10 @@ declare namespace java {
       public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.temporal.Temporal
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

@@ -1,10 +1,14 @@
 declare namespace javax {
   namespace swing {
-
     class SpringLayout$Constraints {
       public constructor()
       public constructor(arg0: javax.swing.Spring, arg1: javax.swing.Spring)
-      public constructor(arg0: javax.swing.Spring, arg1: javax.swing.Spring, arg2: javax.swing.Spring, arg3: javax.swing.Spring)
+      public constructor(
+        arg0: javax.swing.Spring,
+        arg1: javax.swing.Spring,
+        arg2: javax.swing.Spring,
+        arg3: javax.swing.Spring
+      )
       public constructor(arg0: java.awt.Component)
       public setX(arg0: javax.swing.Spring): void
       public getX(): javax.swing.Spring
@@ -18,6 +22,5 @@ declare namespace javax {
       public getConstraint(arg0: java.lang.String | string): javax.swing.Spring
       reset(): void
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace jdi {
-
       interface PrimitiveValue extends com.sun.jdi.Value {
         booleanValue(): boolean
         byteValue(): number
@@ -12,7 +11,6 @@ declare namespace com {
         floatValue(): number
         doubleValue(): number
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace transaction {
     namespace xa {
-
       class XAException extends java.lang.Exception {
         public errorCode: int
         public static readonly XA_RBBASE: int
@@ -33,7 +32,6 @@ declare namespace javax {
         public constructor(arg0: java.lang.String | string)
         public constructor(arg0: number | java.lang.Integer)
       }
-
     }
   }
 }

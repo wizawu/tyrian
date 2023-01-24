@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     abstract class PermissionCollection implements java.io.Serializable {
       public constructor()
       public abstract add(arg0: java.security.Permission): void
@@ -11,6 +10,5 @@ declare namespace java {
       public isReadOnly(): boolean
       public toString(): java.lang.String
     }
-
   }
 }

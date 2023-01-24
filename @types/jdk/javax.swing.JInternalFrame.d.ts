@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    class JInternalFrame extends javax.swing.JComponent implements javax.accessibility.Accessible, javax.swing.WindowConstants, javax.swing.RootPaneContainer {
+    class JInternalFrame
+      extends javax.swing.JComponent
+      implements javax.accessibility.Accessible, javax.swing.WindowConstants, javax.swing.RootPaneContainer
+    {
       protected rootPane: javax.swing.JRootPane
       protected rootPaneCheckingEnabled: boolean
       protected closable: boolean
@@ -31,9 +33,24 @@ declare namespace javax {
       public constructor()
       public constructor(arg0: java.lang.String | string)
       public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
-      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean)
-      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean)
-      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean)
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: boolean | java.lang.Boolean,
+        arg2: boolean | java.lang.Boolean
+      )
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: boolean | java.lang.Boolean,
+        arg2: boolean | java.lang.Boolean,
+        arg3: boolean | java.lang.Boolean
+      )
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: boolean | java.lang.Boolean,
+        arg2: boolean | java.lang.Boolean,
+        arg3: boolean | java.lang.Boolean,
+        arg4: boolean | java.lang.Boolean
+      )
       protected createRootPane(): javax.swing.JRootPane
       public getUI(): javax.swing.plaf.InternalFrameUI
       public setUI(arg0: javax.swing.plaf.InternalFrameUI): void
@@ -92,7 +109,12 @@ declare namespace javax {
       public getFocusOwner(): java.awt.Component
       public getMostRecentFocusOwner(): java.awt.Component
       public restoreSubcomponentFocus(): void
-      public reshape(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public reshape(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       public addInternalFrameListener(arg0: javax.swing.event.InternalFrameListener): void
       public removeInternalFrameListener(arg0: javax.swing.event.InternalFrameListener): void
       public getInternalFrameListeners(): javax.swing.event.InternalFrameListener[]
@@ -116,6 +138,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

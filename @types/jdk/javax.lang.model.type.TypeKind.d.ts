@@ -2,7 +2,6 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace type {
-
         class TypeKind extends java.lang.Enum<javax.lang.model.type.TypeKind> {
           public static readonly BOOLEAN: javax.lang.model.type.TypeKind
           public static readonly BYTE: javax.lang.model.type.TypeKind
@@ -30,7 +29,6 @@ declare namespace javax {
           public static valueOf(arg0: java.lang.String | string): javax.lang.model.type.TypeKind
           public isPrimitive(): boolean
         }
-
       }
     }
   }

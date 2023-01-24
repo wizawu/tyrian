@@ -2,7 +2,6 @@ declare namespace org {
   namespace xml {
     namespace sax {
       namespace helpers {
-
         class XMLReaderAdapter implements org.xml.sax.Parser, org.xml.sax.ContentHandler {
           xmlReader: org.xml.sax.XMLReader
           documentHandler: org.xml.sax.DocumentHandler
@@ -21,14 +20,30 @@ declare namespace org {
           public endDocument(): void
           public startPrefixMapping(arg0: java.lang.String | string, arg1: java.lang.String | string): void
           public endPrefixMapping(arg0: java.lang.String | string): void
-          public startElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: org.xml.sax.Attributes): void
-          public endElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
-          public characters(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-          public ignorableWhitespace(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+          public startElement(
+            arg0: java.lang.String | string,
+            arg1: java.lang.String | string,
+            arg2: java.lang.String | string,
+            arg3: org.xml.sax.Attributes
+          ): void
+          public endElement(
+            arg0: java.lang.String | string,
+            arg1: java.lang.String | string,
+            arg2: java.lang.String | string
+          ): void
+          public characters(
+            arg0: string[] | java.lang.Character[],
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): void
+          public ignorableWhitespace(
+            arg0: string[] | java.lang.Character[],
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): void
           public processingInstruction(arg0: java.lang.String | string, arg1: java.lang.String | string): void
           public skippedEntity(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

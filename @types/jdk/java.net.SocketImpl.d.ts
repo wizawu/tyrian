@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     abstract class SocketImpl implements java.net.SocketOptions {
       socket: java.net.Socket
       serverSocket: java.net.ServerSocket
@@ -34,11 +33,14 @@ declare namespace java {
       getServerSocket(): java.net.ServerSocket
       public toString(): java.lang.String
       reset(): void
-      protected setPerformancePreferences(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      protected setPerformancePreferences(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       protected setOption<T>(arg0: java.net.SocketOption<T>, arg1: T): void
       protected getOption<T>(arg0: java.net.SocketOption<T>): T
       protected supportedOptions(): java.util.Set<java.net.SocketOption<unknown>>
     }
-
   }
 }

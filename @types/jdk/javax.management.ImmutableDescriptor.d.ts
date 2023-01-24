@@ -1,12 +1,11 @@
 declare namespace javax {
   namespace management {
-
     class ImmutableDescriptor implements javax.management.Descriptor {
       public static readonly EMPTY_DESCRIPTOR: javax.management.ImmutableDescriptor
       public constructor(arg0: java.lang.String[] | string[], arg1: java.lang.Object[] | any[])
       public constructor(...vargs: (java.lang.String | string)[])
-      public constructor(arg0: java.util.Map<java.lang.String,unknown>)
-      public static union(...vargs: (javax.management.Descriptor)[]): javax.management.ImmutableDescriptor
+      public constructor(arg0: java.util.Map<java.lang.String, unknown>)
+      public static union(...vargs: javax.management.Descriptor[]): javax.management.ImmutableDescriptor
       public getFieldValue(arg0: java.lang.String | string): java.lang.Object
       public getFields(): java.lang.String[]
       public getFieldValues(...vargs: (java.lang.String | string)[]): java.lang.Object[]
@@ -22,6 +21,5 @@ declare namespace javax {
       static nonNullDescriptor(arg0: javax.management.Descriptor): javax.management.Descriptor
       public clone(): java.lang.Object
     }
-
   }
 }

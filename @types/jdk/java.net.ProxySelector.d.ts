@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     abstract class ProxySelector {
       public constructor()
       public static getDefault(): java.net.ProxySelector
@@ -9,6 +8,5 @@ declare namespace java {
       public abstract connectFailed(arg0: java.net.URI, arg1: java.net.SocketAddress, arg2: java.io.IOException): void
       public static of(arg0: java.net.InetSocketAddress): java.net.ProxySelector
     }
-
   }
 }

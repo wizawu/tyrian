@@ -1,13 +1,22 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       abstract class AbstractWriter {
         protected static readonly NEWLINE: char
         protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Document)
-        protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Document, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        protected constructor(
+          arg0: java.io.Writer,
+          arg1: javax.swing.text.Document,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        )
         protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Element)
-        protected constructor(arg0: java.io.Writer, arg1: javax.swing.text.Element, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        protected constructor(
+          arg0: java.io.Writer,
+          arg1: javax.swing.text.Element,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        )
         public getStartOffset(): number
         public getEndOffset(): number
         protected getElementIterator(): javax.swing.text.ElementIterator
@@ -35,11 +44,18 @@ declare namespace javax {
         protected write(arg0: string | java.lang.Character): void
         protected write(arg0: java.lang.String | string): void
         protected writeLineSeparator(): void
-        protected write(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        protected write(
+          arg0: string[] | java.lang.Character[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
         protected writeAttributes(arg0: javax.swing.text.AttributeSet): void
-        protected output(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        protected output(
+          arg0: string[] | java.lang.Character[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
       }
-
     }
   }
 }

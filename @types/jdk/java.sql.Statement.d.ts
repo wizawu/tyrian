@@ -1,14 +1,13 @@
 declare namespace java {
   namespace sql {
-
     interface Statement extends java.sql.Wrapper, java.lang.AutoCloseable {
-      public static readonly CLOSE_CURRENT_RESULT: int
-      public static readonly KEEP_CURRENT_RESULT: int
-      public static readonly CLOSE_ALL_RESULTS: int
-      public static readonly SUCCESS_NO_INFO: int
-      public static readonly EXECUTE_FAILED: int
-      public static readonly RETURN_GENERATED_KEYS: int
-      public static readonly NO_GENERATED_KEYS: int
+      readonly CLOSE_CURRENT_RESULT: int
+      readonly KEEP_CURRENT_RESULT: int
+      readonly CLOSE_ALL_RESULTS: int
+      readonly SUCCESS_NO_INFO: int
+      readonly EXECUTE_FAILED: int
+      readonly RETURN_GENERATED_KEYS: int
+      readonly NO_GENERATED_KEYS: int
       executeQuery(arg0: java.lang.String | string): java.sql.ResultSet
       executeUpdate(arg0: java.lang.String | string): number
       close(): void
@@ -64,6 +63,5 @@ declare namespace java {
       isSimpleIdentifier(arg0: java.lang.String | string): boolean
       enquoteNCharLiteral(arg0: java.lang.String | string): java.lang.String
     }
-
   }
 }

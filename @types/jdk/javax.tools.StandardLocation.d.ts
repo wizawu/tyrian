@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace tools {
-
-    class StandardLocation extends java.lang.Enum<javax.tools.StandardLocation> implements javax.tools.JavaFileManager$Location {
+    class StandardLocation
+      extends java.lang.Enum<javax.tools.StandardLocation>
+      implements javax.tools.JavaFileManager$Location
+    {
       public static readonly CLASS_OUTPUT: javax.tools.StandardLocation
       public static readonly SOURCE_OUTPUT: javax.tools.StandardLocation
       public static readonly CLASS_PATH: javax.tools.StandardLocation
@@ -22,6 +24,5 @@ declare namespace javax {
       public isOutputLocation(): boolean
       public isModuleOrientedLocation(): boolean
     }
-
   }
 }

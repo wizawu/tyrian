@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    class JMenuItem extends javax.swing.AbstractButton implements javax.accessibility.Accessible, javax.swing.MenuElement {
+    class JMenuItem
+      extends javax.swing.AbstractButton
+      implements javax.accessibility.Accessible, javax.swing.MenuElement
+    {
       public constructor()
       public constructor(arg0: javax.swing.Icon)
       public constructor(arg0: java.lang.String | string)
@@ -26,8 +28,16 @@ declare namespace javax {
       smallIconChanged(arg0: javax.swing.Action): void
       configureAcceleratorFromAction(arg0: javax.swing.Action): void
       protected actionPropertyChanged(arg0: javax.swing.Action, arg1: java.lang.String | string): void
-      public processMouseEvent(arg0: java.awt.event.MouseEvent, arg1: javax.swing.MenuElement[], arg2: javax.swing.MenuSelectionManager): void
-      public processKeyEvent(arg0: java.awt.event.KeyEvent, arg1: javax.swing.MenuElement[], arg2: javax.swing.MenuSelectionManager): void
+      public processMouseEvent(
+        arg0: java.awt.event.MouseEvent,
+        arg1: javax.swing.MenuElement[],
+        arg2: javax.swing.MenuSelectionManager
+      ): void
+      public processKeyEvent(
+        arg0: java.awt.event.KeyEvent,
+        arg1: javax.swing.MenuElement[],
+        arg2: javax.swing.MenuSelectionManager
+      ): void
       public processMenuDragMouseEvent(arg0: javax.swing.event.MenuDragMouseEvent): void
       public processMenuKeyEvent(arg0: javax.swing.event.MenuKeyEvent): void
       protected fireMenuDragMouseEntered(arg0: javax.swing.event.MenuDragMouseEvent): void
@@ -49,6 +59,5 @@ declare namespace javax {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

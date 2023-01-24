@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace ls {
-
         interface LSSerializer {
           getDomConfig(): org.w3c.dom.DOMConfiguration
           getNewLine(): java.lang.String
@@ -13,7 +12,6 @@ declare namespace org {
           writeToURI(arg0: org.w3c.dom.Node, arg1: java.lang.String | string): boolean
           writeToString(arg0: org.w3c.dom.Node): java.lang.String
         }
-
       }
     }
   }

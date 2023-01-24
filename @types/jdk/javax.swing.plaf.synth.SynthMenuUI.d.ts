@@ -2,8 +2,10 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace synth {
-
-        class SynthMenuUI extends javax.swing.plaf.basic.BasicMenuUI implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI {
+        class SynthMenuUI
+          extends javax.swing.plaf.basic.BasicMenuUI
+          implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI
+        {
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installDefaults(): void
@@ -12,16 +14,33 @@ declare namespace javax {
           protected uninstallDefaults(): void
           protected uninstallListeners(): void
           public getContext(arg0: javax.swing.JComponent): javax.swing.plaf.synth.SynthContext
-          getContext(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer): javax.swing.plaf.synth.SynthContext
-          getContext(arg0: javax.swing.JComponent, arg1: javax.swing.plaf.synth.Region): javax.swing.plaf.synth.SynthContext
-          protected getPreferredMenuItemSize(arg0: javax.swing.JComponent, arg1: javax.swing.Icon, arg2: javax.swing.Icon, arg3: number | java.lang.Integer): java.awt.Dimension
+          getContext(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer
+          ): javax.swing.plaf.synth.SynthContext
+          getContext(
+            arg0: javax.swing.JComponent,
+            arg1: javax.swing.plaf.synth.Region
+          ): javax.swing.plaf.synth.SynthContext
+          protected getPreferredMenuItemSize(
+            arg0: javax.swing.JComponent,
+            arg1: javax.swing.Icon,
+            arg2: javax.swing.Icon,
+            arg3: number | java.lang.Integer
+          ): java.awt.Dimension
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
-          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
+          public paintBorder(
+            arg0: javax.swing.plaf.synth.SynthContext,
+            arg1: java.awt.Graphics,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer
+          ): void
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void
         }
-
       }
     }
   }

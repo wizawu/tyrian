@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace jdi {
       namespace request {
-
         interface WatchpointRequest extends com.sun.jdi.request.EventRequest {
           field(): com.sun.jdi.Field
           addThreadFilter(arg0: com.sun.jdi.ThreadReference): void
@@ -11,7 +10,6 @@ declare namespace com {
           addClassExclusionFilter(arg0: java.lang.String | string): void
           addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
         }
-
       }
     }
   }

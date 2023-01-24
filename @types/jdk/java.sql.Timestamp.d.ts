@@ -1,9 +1,16 @@
 declare namespace java {
   namespace sql {
-
     class Timestamp extends java.util.Date {
       static readonly serialVersionUID: long
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer
+      )
       public constructor(arg0: number | java.lang.Long)
       public setTime(arg0: number | java.lang.Long): void
       public getTime(): number
@@ -24,6 +31,5 @@ declare namespace java {
       public toInstant(): java.time.Instant
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

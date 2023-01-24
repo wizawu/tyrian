@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLIFrameElement extends org.w3c.dom.html.HTMLElement {
           getAlign(): java.lang.String
           setAlign(arg0: java.lang.String | string): void
@@ -26,7 +25,6 @@ declare namespace org {
           setWidth(arg0: java.lang.String | string): void
           getContentDocument(): org.w3c.dom.Document
         }
-
       }
     }
   }

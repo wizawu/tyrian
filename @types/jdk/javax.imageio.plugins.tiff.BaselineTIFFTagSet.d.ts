@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
     namespace plugins {
       namespace tiff {
-
         class BaselineTIFFTagSet extends javax.imageio.plugins.tiff.TIFFTagSet {
           public static readonly TAG_NEW_SUBFILE_TYPE: int
           public static readonly NEW_SUBFILE_TYPE_REDUCED_RESOLUTION: int
@@ -149,7 +148,6 @@ declare namespace javax {
           public static readonly TAG_ICC_PROFILE: int
           public static getInstance(): javax.imageio.plugins.tiff.BaselineTIFFTagSet
         }
-
       }
     }
   }

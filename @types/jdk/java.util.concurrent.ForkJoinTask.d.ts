@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
       abstract class ForkJoinTask<V> implements java.util.concurrent.Future<V>, java.io.Serializable {
         status: int
         public constructor()
@@ -17,9 +16,14 @@ declare namespace java {
         public fork(): java.util.concurrent.ForkJoinTask<V>
         public join(): V
         public invoke(): V
-        public static invokeAll(arg0: java.util.concurrent.ForkJoinTask<unknown>, arg1: java.util.concurrent.ForkJoinTask<unknown>): void
-        public static invokeAll(...vargs: (java.util.concurrent.ForkJoinTask<unknown>)[]): void
-        public static invokeAll<T extends java.util.concurrent.ForkJoinTask<unknown>>(arg0: java.util.Collection<T>): java.util.Collection<T>
+        public static invokeAll(
+          arg0: java.util.concurrent.ForkJoinTask<unknown>,
+          arg1: java.util.concurrent.ForkJoinTask<unknown>
+        ): void
+        public static invokeAll(...vargs: java.util.concurrent.ForkJoinTask<unknown>[]): void
+        public static invokeAll<T extends java.util.concurrent.ForkJoinTask<unknown>>(
+          arg0: java.util.Collection<T>
+        ): java.util.Collection<T>
         public cancel(arg0: boolean | java.lang.Boolean): boolean
         public isDone(): boolean
         public isCancelled(): boolean
@@ -50,11 +54,17 @@ declare namespace java {
         public getForkJoinTaskTag(): number
         public setForkJoinTaskTag(arg0: number | java.lang.Short): number
         public compareAndSetForkJoinTaskTag(arg0: number | java.lang.Short, arg1: number | java.lang.Short): boolean
-        public static adapt(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): java.util.concurrent.ForkJoinTask<unknown>
-        public static adapt<T>(arg0: java.lang.Runnable | java.lang.Runnable$$lambda, arg1: T): java.util.concurrent.ForkJoinTask<T>
-        public static adapt<T>(arg0: java.util.concurrent.Callable<T> | java.util.concurrent.Callable$$lambda<T>): java.util.concurrent.ForkJoinTask<T>
+        public static adapt(
+          arg0: java.lang.Runnable | java.lang.Runnable$$lambda
+        ): java.util.concurrent.ForkJoinTask<unknown>
+        public static adapt<T>(
+          arg0: java.lang.Runnable | java.lang.Runnable$$lambda,
+          arg1: T
+        ): java.util.concurrent.ForkJoinTask<T>
+        public static adapt<T>(
+          arg0: java.util.concurrent.Callable<T> | java.util.concurrent.Callable$$lambda<T>
+        ): java.util.concurrent.ForkJoinTask<T>
       }
-
     }
   }
 }

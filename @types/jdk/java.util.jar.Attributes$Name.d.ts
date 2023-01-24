@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace jar {
-
       class Attributes$Name {
         public static readonly MANIFEST_VERSION: java.util.jar.Attributes$Name
         public static readonly SIGNATURE_VERSION: java.util.jar.Attributes$Name
@@ -27,7 +26,6 @@ declare namespace java {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

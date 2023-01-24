@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     abstract class Permission implements java.security.Guard, java.io.Serializable {
       public constructor(arg0: java.lang.String | string)
       public checkGuard(arg0: java.lang.Object | any): void
@@ -12,6 +11,5 @@ declare namespace java {
       public newPermissionCollection(): java.security.PermissionCollection
       public toString(): java.lang.String
     }
-
   }
 }

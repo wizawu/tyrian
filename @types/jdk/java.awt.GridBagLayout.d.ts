@@ -1,12 +1,11 @@
 declare namespace java {
   namespace awt {
-
     class GridBagLayout implements java.awt.LayoutManager2, java.io.Serializable {
       static readonly EMPIRICMULTIPLIER: int
       protected static readonly MAXGRIDSIZE: int
       protected static readonly MINSIZE: int
       protected static readonly PREFERREDSIZE: int
-      protected comptable: java.util.Hashtable<java.awt.Component,java.awt.GridBagConstraints>
+      protected comptable: java.util.Hashtable<java.awt.Component, java.awt.GridBagConstraints>
       protected defaultConstraints: java.awt.GridBagConstraints
       protected layoutInfo: java.awt.GridBagLayoutInfo
       public columnWidths: int[]
@@ -43,6 +42,5 @@ declare namespace java {
       protected arrangeGrid(arg0: java.awt.Container): void
       protected ArrangeGrid(arg0: java.awt.Container): void
     }
-
   }
 }

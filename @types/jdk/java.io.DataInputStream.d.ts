@@ -1,12 +1,19 @@
 declare namespace java {
   namespace io {
-
     class DataInputStream extends java.io.FilterInputStream implements java.io.DataInput {
       public constructor(arg0: java.io.InputStream)
       public read(arg0: number[] | java.lang.Byte[]): number
-      public read(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public readFully(arg0: number[] | java.lang.Byte[]): void
-      public readFully(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public readFully(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public skipBytes(arg0: number | java.lang.Integer): number
       public readBoolean(): boolean
       public readByte(): number
@@ -22,6 +29,5 @@ declare namespace java {
       public readUTF(): java.lang.String
       public static readUTF(arg0: java.io.DataInput): java.lang.String
     }
-
   }
 }

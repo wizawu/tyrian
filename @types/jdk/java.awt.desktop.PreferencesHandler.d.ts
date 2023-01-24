@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace desktop {
-
       interface PreferencesHandler$$lambda {
         (arg0: java.awt.desktop.PreferencesEvent): void
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface PreferencesHandler {
         handlePreferences(arg0: java.awt.desktop.PreferencesEvent): void
       }
-
     }
   }
 }

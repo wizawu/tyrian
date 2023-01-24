@@ -1,7 +1,6 @@
 declare namespace java {
   namespace net {
     namespace http {
-
       abstract class HttpRequest {
         protected constructor()
         public static newBuilder(arg0: java.net.URI): java.net.http.HttpRequest$Builder
@@ -16,7 +15,6 @@ declare namespace java {
         public equals(arg0: java.lang.Object | any): boolean
         public hashCode(): number
       }
-
     }
   }
 }

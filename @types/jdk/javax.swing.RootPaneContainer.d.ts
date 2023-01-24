@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     interface RootPaneContainer {
       getRootPane(): javax.swing.JRootPane
       setContentPane(arg0: java.awt.Container): void
@@ -10,6 +9,5 @@ declare namespace javax {
       setGlassPane(arg0: java.awt.Component): void
       getGlassPane(): java.awt.Component
     }
-
   }
 }

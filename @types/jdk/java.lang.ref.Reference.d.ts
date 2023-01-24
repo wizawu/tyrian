@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace ref {
-
       abstract class Reference<T> {
         queue: java.lang.ref.ReferenceQueue<unknown>
         next: java.lang.ref.Reference
@@ -14,7 +13,6 @@ declare namespace java {
         constructor(arg0: T, arg1: java.lang.ref.ReferenceQueue<unknown>)
         public static reachabilityFence(arg0: java.lang.Object | any): void
       }
-
     }
   }
 }

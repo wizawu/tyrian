@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace reflect {
-
       class UndeclaredThrowableException extends java.lang.RuntimeException {
         static readonly serialVersionUID: long
         public constructor(arg0: java.lang.Throwable)
@@ -9,7 +8,6 @@ declare namespace java {
         public getUndeclaredThrowable(): java.lang.Throwable
         public getCause(): java.lang.Throwable
       }
-
     }
   }
 }

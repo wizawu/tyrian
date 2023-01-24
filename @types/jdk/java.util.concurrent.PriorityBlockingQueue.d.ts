@@ -1,8 +1,10 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
-      class PriorityBlockingQueue<E> extends java.util.AbstractQueue<E> implements java.util.concurrent.BlockingQueue<E>, java.io.Serializable {
+      class PriorityBlockingQueue<E>
+        extends java.util.AbstractQueue<E>
+        implements java.util.concurrent.BlockingQueue<E>, java.io.Serializable
+      {
         public constructor()
         public constructor(arg0: number | java.lang.Integer)
         public constructor(arg0: number | java.lang.Integer, arg1: java.util.Comparator<unknown>)
@@ -32,9 +34,10 @@ declare namespace java {
         public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
         public removeAll(arg0: java.util.Collection<unknown>): boolean
         public retainAll(arg0: java.util.Collection<unknown>): boolean
-        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        public forEach(
+          arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
+        ): void
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       class MaskFormatter extends javax.swing.text.DefaultFormatter {
         public constructor()
         public constructor(arg0: java.lang.String | string)
@@ -24,7 +23,6 @@ declare namespace javax {
         isValidEdit(arg0: javax.swing.text.DefaultFormatter$ReplaceHolder): boolean
         canReplace(arg0: javax.swing.text.DefaultFormatter$ReplaceHolder): boolean
       }
-
     }
   }
 }

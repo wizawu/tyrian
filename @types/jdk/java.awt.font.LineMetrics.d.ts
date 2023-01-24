@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace font {
-
       abstract class LineMetrics {
         public constructor()
         public abstract getNumChars(): number
@@ -16,7 +15,6 @@ declare namespace java {
         public abstract getUnderlineOffset(): number
         public abstract getUnderlineThickness(): number
       }
-
     }
   }
 }

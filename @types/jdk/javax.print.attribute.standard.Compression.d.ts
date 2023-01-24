@@ -2,7 +2,6 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
         class Compression extends javax.print.attribute.EnumSyntax implements javax.print.attribute.DocAttribute {
           public static readonly NONE: javax.print.attribute.standard.Compression
           public static readonly DEFLATE: javax.print.attribute.standard.Compression
@@ -14,7 +13,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

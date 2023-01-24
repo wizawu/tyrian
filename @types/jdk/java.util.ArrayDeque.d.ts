@@ -1,7 +1,9 @@
 declare namespace java {
   namespace util {
-
-    class ArrayDeque<E> extends java.util.AbstractCollection<E> implements java.util.Deque<E>, java.lang.Cloneable, java.io.Serializable {
+    class ArrayDeque<E>
+      extends java.util.AbstractCollection<E>
+      implements java.util.Deque<E>, java.lang.Cloneable, java.io.Serializable
+    {
       elements: java.lang.Object[]
       head: int
       tail: int
@@ -10,8 +12,16 @@ declare namespace java {
       public constructor(arg0: java.util.Collection<E>)
       static inc(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
       static dec(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
-      static inc(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      static sub(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      static inc(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      static sub(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       static elementAt<E>(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer): E
       static nonNullElementAt<E>(arg0: java.lang.Object[] | any[], arg1: number | java.lang.Integer): E
       public addFirst(arg0: E): void
@@ -56,6 +66,5 @@ declare namespace java {
       checkInvariants(): void
       public clone(): java.lang.Object
     }
-
   }
 }

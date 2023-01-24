@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace relation {
-
       class Role implements java.io.Serializable {
         public constructor(arg0: java.lang.String | string, arg1: java.util.List<javax.management.ObjectName>)
         public getRoleName(): java.lang.String
@@ -12,7 +11,6 @@ declare namespace javax {
         public clone(): java.lang.Object
         public static roleValueToString(arg0: java.util.List<javax.management.ObjectName>): java.lang.String
       }
-
     }
   }
 }

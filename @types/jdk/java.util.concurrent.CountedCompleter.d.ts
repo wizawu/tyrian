@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
       abstract class CountedCompleter<T> extends java.util.concurrent.ForkJoinTask<T> {
         readonly completer: java.util.concurrent.CountedCompleter<unknown>
         pending: int
@@ -10,7 +9,10 @@ declare namespace java {
         protected constructor()
         public abstract compute(): void
         public onCompletion(arg0: java.util.concurrent.CountedCompleter<unknown>): void
-        public onExceptionalCompletion(arg0: java.lang.Throwable, arg1: java.util.concurrent.CountedCompleter<unknown>): boolean
+        public onExceptionalCompletion(
+          arg0: java.lang.Throwable,
+          arg1: java.util.concurrent.CountedCompleter<unknown>
+        ): boolean
         public getCompleter(): java.util.concurrent.CountedCompleter<unknown>
         public getPendingCount(): number
         public setPendingCount(arg0: number | java.lang.Integer): void
@@ -30,7 +32,6 @@ declare namespace java {
         public getRawResult(): T
         protected setRawResult(arg0: T): void
       }
-
     }
   }
 }

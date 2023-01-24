@@ -1,11 +1,14 @@
 declare namespace java {
   namespace io {
-
     class BufferedReader extends java.io.Reader {
       public constructor(arg0: java.io.Reader, arg1: number | java.lang.Integer)
       public constructor(arg0: java.io.Reader)
       public read(): number
-      public read(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       readLine(arg0: boolean | java.lang.Boolean): java.lang.String
       public readLine(): java.lang.String
       public skip(arg0: number | java.lang.Long): number
@@ -16,6 +19,5 @@ declare namespace java {
       public close(): void
       public lines(): java.util.stream.Stream<java.lang.String>
     }
-
   }
 }

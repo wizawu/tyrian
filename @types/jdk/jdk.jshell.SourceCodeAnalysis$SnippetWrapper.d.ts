@@ -1,6 +1,5 @@
 declare namespace jdk {
   namespace jshell {
-
     interface SourceCodeAnalysis$SnippetWrapper {
       source(): java.lang.String
       wrapped(): java.lang.String
@@ -9,6 +8,5 @@ declare namespace jdk {
       sourceToWrappedPosition(arg0: number | java.lang.Integer): number
       wrappedToSourcePosition(arg0: number | java.lang.Integer): number
     }
-
   }
 }

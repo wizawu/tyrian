@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace geom {
-
       class AffineTransform implements java.lang.Cloneable, java.io.Serializable {
         public static readonly TYPE_IDENTITY: int
         public static readonly TYPE_TRANSLATION: int
@@ -26,19 +25,58 @@ declare namespace java {
         state: int
         public constructor()
         public constructor(arg0: java.awt.geom.AffineTransform)
-        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float, arg3: number | java.lang.Float, arg4: number | java.lang.Float, arg5: number | java.lang.Float)
+        public constructor(
+          arg0: number | java.lang.Float,
+          arg1: number | java.lang.Float,
+          arg2: number | java.lang.Float,
+          arg3: number | java.lang.Float,
+          arg4: number | java.lang.Float,
+          arg5: number | java.lang.Float
+        )
         public constructor(arg0: number[] | java.lang.Float[])
-        public constructor(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double)
+        public constructor(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double,
+          arg3: number | java.lang.Double,
+          arg4: number | java.lang.Double,
+          arg5: number | java.lang.Double
+        )
         public constructor(arg0: number[] | java.lang.Double[])
-        public static getTranslateInstance(arg0: number | java.lang.Double, arg1: number | java.lang.Double): java.awt.geom.AffineTransform
+        public static getTranslateInstance(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double
+        ): java.awt.geom.AffineTransform
         public static getRotateInstance(arg0: number | java.lang.Double): java.awt.geom.AffineTransform
-        public static getRotateInstance(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double): java.awt.geom.AffineTransform
-        public static getRotateInstance(arg0: number | java.lang.Double, arg1: number | java.lang.Double): java.awt.geom.AffineTransform
-        public static getRotateInstance(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): java.awt.geom.AffineTransform
+        public static getRotateInstance(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double
+        ): java.awt.geom.AffineTransform
+        public static getRotateInstance(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double
+        ): java.awt.geom.AffineTransform
+        public static getRotateInstance(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double,
+          arg3: number | java.lang.Double
+        ): java.awt.geom.AffineTransform
         public static getQuadrantRotateInstance(arg0: number | java.lang.Integer): java.awt.geom.AffineTransform
-        public static getQuadrantRotateInstance(arg0: number | java.lang.Integer, arg1: number | java.lang.Double, arg2: number | java.lang.Double): java.awt.geom.AffineTransform
-        public static getScaleInstance(arg0: number | java.lang.Double, arg1: number | java.lang.Double): java.awt.geom.AffineTransform
-        public static getShearInstance(arg0: number | java.lang.Double, arg1: number | java.lang.Double): java.awt.geom.AffineTransform
+        public static getQuadrantRotateInstance(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double
+        ): java.awt.geom.AffineTransform
+        public static getScaleInstance(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double
+        ): java.awt.geom.AffineTransform
+        public static getShearInstance(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double
+        ): java.awt.geom.AffineTransform
         public getType(): number
         public getDeterminant(): number
         updateState(): void
@@ -51,39 +89,114 @@ declare namespace java {
         public getTranslateY(): number
         public translate(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public rotate(arg0: number | java.lang.Double): void
-        public rotate(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double): void
+        public rotate(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double
+        ): void
         public rotate(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
-        public rotate(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): void
+        public rotate(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double,
+          arg3: number | java.lang.Double
+        ): void
         public quadrantRotate(arg0: number | java.lang.Integer): void
-        public quadrantRotate(arg0: number | java.lang.Integer, arg1: number | java.lang.Double, arg2: number | java.lang.Double): void
+        public quadrantRotate(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double
+        ): void
         public scale(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public shear(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public setToIdentity(): void
         public setToTranslation(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public setToRotation(arg0: number | java.lang.Double): void
-        public setToRotation(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double): void
+        public setToRotation(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double
+        ): void
         public setToRotation(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
-        public setToRotation(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): void
+        public setToRotation(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double,
+          arg3: number | java.lang.Double
+        ): void
         public setToQuadrantRotation(arg0: number | java.lang.Integer): void
-        public setToQuadrantRotation(arg0: number | java.lang.Integer, arg1: number | java.lang.Double, arg2: number | java.lang.Double): void
+        public setToQuadrantRotation(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double
+        ): void
         public setToScale(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public setToShear(arg0: number | java.lang.Double, arg1: number | java.lang.Double): void
         public setTransform(arg0: java.awt.geom.AffineTransform): void
-        public setTransform(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double, arg4: number | java.lang.Double, arg5: number | java.lang.Double): void
+        public setTransform(
+          arg0: number | java.lang.Double,
+          arg1: number | java.lang.Double,
+          arg2: number | java.lang.Double,
+          arg3: number | java.lang.Double,
+          arg4: number | java.lang.Double,
+          arg5: number | java.lang.Double
+        ): void
         public concatenate(arg0: java.awt.geom.AffineTransform): void
         public preConcatenate(arg0: java.awt.geom.AffineTransform): void
         public createInverse(): java.awt.geom.AffineTransform
         public invert(): void
         public transform(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D): java.awt.geom.Point2D
-        public transform(arg0: java.awt.geom.Point2D[], arg1: number | java.lang.Integer, arg2: java.awt.geom.Point2D[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-        public transform(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Float[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-        public transform(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-        public transform(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-        public transform(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Float[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        public transform(
+          arg0: java.awt.geom.Point2D[],
+          arg1: number | java.lang.Integer,
+          arg2: java.awt.geom.Point2D[],
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        ): void
+        public transform(
+          arg0: number[] | java.lang.Float[],
+          arg1: number | java.lang.Integer,
+          arg2: number[] | java.lang.Float[],
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        ): void
+        public transform(
+          arg0: number[] | java.lang.Double[],
+          arg1: number | java.lang.Integer,
+          arg2: number[] | java.lang.Double[],
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        ): void
+        public transform(
+          arg0: number[] | java.lang.Float[],
+          arg1: number | java.lang.Integer,
+          arg2: number[] | java.lang.Double[],
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        ): void
+        public transform(
+          arg0: number[] | java.lang.Double[],
+          arg1: number | java.lang.Integer,
+          arg2: number[] | java.lang.Float[],
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        ): void
         public inverseTransform(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D): java.awt.geom.Point2D
-        public inverseTransform(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        public inverseTransform(
+          arg0: number[] | java.lang.Double[],
+          arg1: number | java.lang.Integer,
+          arg2: number[] | java.lang.Double[],
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        ): void
         public deltaTransform(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D): java.awt.geom.Point2D
-        public deltaTransform(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number[] | java.lang.Double[], arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+        public deltaTransform(
+          arg0: number[] | java.lang.Double[],
+          arg1: number | java.lang.Integer,
+          arg2: number[] | java.lang.Double[],
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        ): void
         public createTransformedShape(arg0: java.awt.Shape): java.awt.Shape
         public toString(): java.lang.String
         public isIdentity(): boolean
@@ -91,7 +204,6 @@ declare namespace java {
         public hashCode(): number
         public equals(arg0: java.lang.Object | any): boolean
       }
-
     }
   }
 }

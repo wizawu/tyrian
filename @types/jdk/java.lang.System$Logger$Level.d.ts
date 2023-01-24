@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class System$Logger$Level extends java.lang.Enum<java.lang.System$Logger$Level> {
       public static readonly ALL: java.lang.System$Logger$Level
       public static readonly TRACE: java.lang.System$Logger$Level
@@ -14,6 +13,5 @@ declare namespace java {
       public getName(): java.lang.String
       public getSeverity(): number
     }
-
   }
 }

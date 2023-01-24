@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JTree$DynamicUtilTreeNode extends javax.swing.tree.DefaultMutableTreeNode {
       protected hasChildren: boolean
       protected childValue: java.lang.Object
@@ -13,6 +12,5 @@ declare namespace javax {
       public getChildAt(arg0: number | java.lang.Integer): javax.swing.tree.TreeNode
       public children(): java.util.Enumeration<javax.swing.tree.TreeNode>
     }
-
   }
 }

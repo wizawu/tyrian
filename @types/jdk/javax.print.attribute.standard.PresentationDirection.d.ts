@@ -2,8 +2,10 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
-        class PresentationDirection extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintJobAttribute, javax.print.attribute.PrintRequestAttribute {
+        class PresentationDirection
+          extends javax.print.attribute.EnumSyntax
+          implements javax.print.attribute.PrintJobAttribute, javax.print.attribute.PrintRequestAttribute
+        {
           public static readonly TOBOTTOM_TORIGHT: javax.print.attribute.standard.PresentationDirection
           public static readonly TOBOTTOM_TOLEFT: javax.print.attribute.standard.PresentationDirection
           public static readonly TOTOP_TORIGHT: javax.print.attribute.standard.PresentationDirection
@@ -17,7 +19,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

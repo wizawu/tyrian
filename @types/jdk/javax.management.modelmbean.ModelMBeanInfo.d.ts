@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace modelmbean {
-
       interface ModelMBeanInfo {
         getDescriptors(arg0: java.lang.String | string): javax.management.Descriptor[]
         setDescriptors(arg0: javax.management.Descriptor[]): void
@@ -20,7 +19,6 @@ declare namespace javax {
         getNotifications(): javax.management.MBeanNotificationInfo[]
         getOperations(): javax.management.MBeanOperationInfo[]
       }
-
     }
   }
 }

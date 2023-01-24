@@ -2,12 +2,11 @@ declare namespace javax {
   namespace sql {
     namespace rowset {
       namespace spi {
-
         interface SyncResolver extends javax.sql.RowSet {
-          public static readonly UPDATE_ROW_CONFLICT: int
-          public static readonly DELETE_ROW_CONFLICT: int
-          public static readonly INSERT_ROW_CONFLICT: int
-          public static readonly NO_ROW_CONFLICT: int
+          readonly UPDATE_ROW_CONFLICT: int
+          readonly DELETE_ROW_CONFLICT: int
+          readonly INSERT_ROW_CONFLICT: int
+          readonly NO_ROW_CONFLICT: int
           getStatus(): number
           getConflictValue(arg0: number | java.lang.Integer): java.lang.Object
           getConflictValue(arg0: java.lang.String | string): java.lang.Object
@@ -16,7 +15,6 @@ declare namespace javax {
           nextConflict(): boolean
           previousConflict(): boolean
         }
-
       }
     }
   }

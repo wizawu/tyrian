@@ -1,11 +1,10 @@
 declare namespace javax {
   namespace swing {
     namespace tree {
-
       interface TreeSelectionModel {
-        public static readonly SINGLE_TREE_SELECTION: int
-        public static readonly CONTIGUOUS_TREE_SELECTION: int
-        public static readonly DISCONTIGUOUS_TREE_SELECTION: int
+        readonly SINGLE_TREE_SELECTION: int
+        readonly CONTIGUOUS_TREE_SELECTION: int
+        readonly DISCONTIGUOUS_TREE_SELECTION: int
         setSelectionMode(arg0: number | java.lang.Integer): void
         getSelectionMode(): number
         setSelectionPath(arg0: javax.swing.tree.TreePath): void
@@ -29,12 +28,19 @@ declare namespace javax {
         resetRowSelection(): void
         getLeadSelectionRow(): number
         getLeadSelectionPath(): javax.swing.tree.TreePath
-        addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-        removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-        addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
-        removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
+        addPropertyChangeListener(
+          arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+        ): void
+        removePropertyChangeListener(
+          arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+        ): void
+        addTreeSelectionListener(
+          arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda
+        ): void
+        removeTreeSelectionListener(
+          arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda
+        ): void
       }
-
     }
   }
 }

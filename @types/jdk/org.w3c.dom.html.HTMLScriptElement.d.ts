@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLScriptElement extends org.w3c.dom.html.HTMLElement {
           getText(): java.lang.String
           setText(arg0: java.lang.String | string): void
@@ -19,7 +18,6 @@ declare namespace org {
           getType(): java.lang.String
           setType(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

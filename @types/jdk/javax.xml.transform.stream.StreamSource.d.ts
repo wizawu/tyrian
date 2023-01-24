@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
     namespace transform {
       namespace stream {
-
         class StreamSource implements javax.xml.transform.Source {
           public static readonly FEATURE: java.lang.String
           public constructor()
@@ -23,7 +22,6 @@ declare namespace javax {
           public setSystemId(arg0: java.io.File): void
           public isEmpty(): boolean
         }
-
       }
     }
   }

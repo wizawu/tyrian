@@ -1,12 +1,15 @@
 declare namespace java {
   namespace util {
     namespace logging {
-
       class MemoryHandler extends java.util.logging.Handler {
         start: int
         count: int
         public constructor()
-        public constructor(arg0: java.util.logging.Handler, arg1: number | java.lang.Integer, arg2: java.util.logging.Level)
+        public constructor(
+          arg0: java.util.logging.Handler,
+          arg1: number | java.lang.Integer,
+          arg2: java.util.logging.Level
+        )
         public publish(arg0: java.util.logging.LogRecord): void
         public push(): void
         public flush(): void
@@ -15,7 +18,6 @@ declare namespace java {
         public getPushLevel(): java.util.logging.Level
         public isLoggable(arg0: java.util.logging.LogRecord): boolean
       }
-
     }
   }
 }

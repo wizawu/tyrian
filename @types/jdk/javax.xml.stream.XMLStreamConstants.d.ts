@@ -1,25 +1,23 @@
 declare namespace javax {
   namespace xml {
     namespace stream {
-
       interface XMLStreamConstants {
-        public static readonly START_ELEMENT: int
-        public static readonly END_ELEMENT: int
-        public static readonly PROCESSING_INSTRUCTION: int
-        public static readonly CHARACTERS: int
-        public static readonly COMMENT: int
-        public static readonly SPACE: int
-        public static readonly START_DOCUMENT: int
-        public static readonly END_DOCUMENT: int
-        public static readonly ENTITY_REFERENCE: int
-        public static readonly ATTRIBUTE: int
-        public static readonly DTD: int
-        public static readonly CDATA: int
-        public static readonly NAMESPACE: int
-        public static readonly NOTATION_DECLARATION: int
-        public static readonly ENTITY_DECLARATION: int
+        readonly START_ELEMENT: int
+        readonly END_ELEMENT: int
+        readonly PROCESSING_INSTRUCTION: int
+        readonly CHARACTERS: int
+        readonly COMMENT: int
+        readonly SPACE: int
+        readonly START_DOCUMENT: int
+        readonly END_DOCUMENT: int
+        readonly ENTITY_REFERENCE: int
+        readonly ATTRIBUTE: int
+        readonly DTD: int
+        readonly CDATA: int
+        readonly NAMESPACE: int
+        readonly NOTATION_DECLARATION: int
+        readonly ENTITY_DECLARATION: int
       }
-
     }
   }
 }

@@ -1,9 +1,8 @@
 declare namespace javax {
   namespace naming {
     namespace ldap {
-
       interface LdapContext extends javax.naming.directory.DirContext {
-        public static readonly CONTROL_FACTORIES: java.lang.String
+        readonly CONTROL_FACTORIES: java.lang.String
         extendedOperation(arg0: javax.naming.ldap.ExtendedRequest): javax.naming.ldap.ExtendedResponse
         newInstance(arg0: javax.naming.ldap.Control[]): javax.naming.ldap.LdapContext
         reconnect(arg0: javax.naming.ldap.Control[]): void
@@ -12,7 +11,6 @@ declare namespace javax {
         getRequestControls(): javax.naming.ldap.Control[]
         getResponseControls(): javax.naming.ldap.Control[]
       }
-
     }
   }
 }

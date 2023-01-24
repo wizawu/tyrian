@@ -1,9 +1,12 @@
 declare namespace java {
   namespace sql {
-
     class Time extends java.util.Date {
       static readonly serialVersionUID: long
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      )
       public constructor(arg0: number | java.lang.Long)
       public setTime(arg0: number | java.lang.Long): void
       public static valueOf(arg0: java.lang.String | string): java.sql.Time
@@ -19,6 +22,5 @@ declare namespace java {
       public toLocalTime(): java.time.LocalTime
       public toInstant(): java.time.Instant
     }
-
   }
 }

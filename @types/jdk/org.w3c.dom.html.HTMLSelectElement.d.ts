@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLSelectElement extends org.w3c.dom.html.HTMLElement {
           getType(): java.lang.String
           getSelectedIndex(): number
@@ -27,7 +26,6 @@ declare namespace org {
           blur(): void
           focus(): void
         }
-
       }
     }
   }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace font {
-
       class TextMeasurer implements java.lang.Cloneable {
         layoutCount: int
         layoutCharCount: int
@@ -14,7 +13,6 @@ declare namespace java {
         public deleteChar(arg0: java.text.AttributedCharacterIterator, arg1: number | java.lang.Integer): void
         getChars(): string[]
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace reflect {
-
       class Modifier {
         public static readonly PUBLIC: int
         public static readonly PRIVATE: int
@@ -45,7 +44,6 @@ declare namespace java {
         public static fieldModifiers(): number
         public static parameterModifiers(): number
       }
-
     }
   }
 }

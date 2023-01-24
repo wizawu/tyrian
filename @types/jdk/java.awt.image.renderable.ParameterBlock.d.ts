@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
     namespace image {
       namespace renderable {
-
         class ParameterBlock implements java.lang.Cloneable, java.io.Serializable {
           protected sources: java.util.Vector<java.lang.Object>
           protected parameters: java.util.Vector<java.lang.Object>
@@ -13,7 +12,10 @@ declare namespace java {
           public clone(): java.lang.Object
           public addSource(arg0: java.lang.Object | any): java.awt.image.renderable.ParameterBlock
           public getSource(arg0: number | java.lang.Integer): java.lang.Object
-          public setSource(arg0: java.lang.Object | any, arg1: number | java.lang.Integer): java.awt.image.renderable.ParameterBlock
+          public setSource(
+            arg0: java.lang.Object | any,
+            arg1: number | java.lang.Integer
+          ): java.awt.image.renderable.ParameterBlock
           public getRenderedSource(arg0: number | java.lang.Integer): java.awt.image.RenderedImage
           public getRenderableSource(arg0: number | java.lang.Integer): java.awt.image.renderable.RenderableImage
           public getNumSources(): number
@@ -32,14 +34,38 @@ declare namespace java {
           public add(arg0: number | java.lang.Long): java.awt.image.renderable.ParameterBlock
           public add(arg0: number | java.lang.Float): java.awt.image.renderable.ParameterBlock
           public add(arg0: number | java.lang.Double): java.awt.image.renderable.ParameterBlock
-          public set(arg0: java.lang.Object | any, arg1: number | java.lang.Integer): java.awt.image.renderable.ParameterBlock
-          public set(arg0: number | java.lang.Byte, arg1: number | java.lang.Integer): java.awt.image.renderable.ParameterBlock
-          public set(arg0: string | java.lang.Character, arg1: number | java.lang.Integer): java.awt.image.renderable.ParameterBlock
-          public set(arg0: number | java.lang.Short, arg1: number | java.lang.Integer): java.awt.image.renderable.ParameterBlock
-          public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.image.renderable.ParameterBlock
-          public set(arg0: number | java.lang.Long, arg1: number | java.lang.Integer): java.awt.image.renderable.ParameterBlock
-          public set(arg0: number | java.lang.Float, arg1: number | java.lang.Integer): java.awt.image.renderable.ParameterBlock
-          public set(arg0: number | java.lang.Double, arg1: number | java.lang.Integer): java.awt.image.renderable.ParameterBlock
+          public set(
+            arg0: java.lang.Object | any,
+            arg1: number | java.lang.Integer
+          ): java.awt.image.renderable.ParameterBlock
+          public set(
+            arg0: number | java.lang.Byte,
+            arg1: number | java.lang.Integer
+          ): java.awt.image.renderable.ParameterBlock
+          public set(
+            arg0: string | java.lang.Character,
+            arg1: number | java.lang.Integer
+          ): java.awt.image.renderable.ParameterBlock
+          public set(
+            arg0: number | java.lang.Short,
+            arg1: number | java.lang.Integer
+          ): java.awt.image.renderable.ParameterBlock
+          public set(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer
+          ): java.awt.image.renderable.ParameterBlock
+          public set(
+            arg0: number | java.lang.Long,
+            arg1: number | java.lang.Integer
+          ): java.awt.image.renderable.ParameterBlock
+          public set(
+            arg0: number | java.lang.Float,
+            arg1: number | java.lang.Integer
+          ): java.awt.image.renderable.ParameterBlock
+          public set(
+            arg0: number | java.lang.Double,
+            arg1: number | java.lang.Integer
+          ): java.awt.image.renderable.ParameterBlock
           public getObjectParameter(arg0: number | java.lang.Integer): java.lang.Object
           public getByteParameter(arg0: number | java.lang.Integer): number
           public getCharParameter(arg0: number | java.lang.Integer): string
@@ -50,7 +76,6 @@ declare namespace java {
           public getDoubleParameter(arg0: number | java.lang.Integer): number
           public getParamClasses(): java.lang.Class<unknown>[]
         }
-
       }
     }
   }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace net {
     namespace ssl {
-
       class HandshakeCompletedEvent extends java.util.EventObject {
         public constructor(arg0: javax.net.ssl.SSLSocket, arg1: javax.net.ssl.SSLSession)
         public getSession(): javax.net.ssl.SSLSession
@@ -13,7 +12,6 @@ declare namespace javax {
         public getLocalPrincipal(): java.security.Principal
         public getSocket(): javax.net.ssl.SSLSocket
       }
-
     }
   }
 }

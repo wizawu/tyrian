@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         abstract class MetalTheme {
           static readonly CONTROL_TEXT_FONT: int
           static readonly SYSTEM_TEXT_FONT: int
@@ -65,7 +64,6 @@ declare namespace javax {
           install(): void
           isSystemTheme(): boolean
         }
-
       }
     }
   }

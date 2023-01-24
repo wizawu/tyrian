@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace accessibility {
-
     interface AccessibleSelection {
       getAccessibleSelectionCount(): number
       getAccessibleSelection(arg0: number | java.lang.Integer): javax.accessibility.Accessible
@@ -10,6 +9,5 @@ declare namespace javax {
       clearAccessibleSelection(): void
       selectAllAccessibleSelection(): void
     }
-
   }
 }

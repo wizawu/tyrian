@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
       abstract class X509CRL extends java.security.cert.CRL implements java.security.cert.X509Extension {
         protected constructor()
         public equals(arg0: java.lang.Object | any): boolean
@@ -24,7 +23,6 @@ declare namespace java {
         public abstract getSigAlgOID(): java.lang.String
         public abstract getSigAlgParams(): number[]
       }
-
     }
   }
 }

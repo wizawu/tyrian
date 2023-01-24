@@ -1,6 +1,5 @@
 declare namespace java {
   namespace beans {
-
     interface BeanProperty extends java.lang.annotation.Annotation {
       bound(): boolean
       expert(): boolean
@@ -11,6 +10,5 @@ declare namespace java {
       description(): java.lang.String
       enumerationValues(): java.lang.String[]
     }
-
   }
 }

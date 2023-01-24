@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
     namespace transform {
       namespace sax {
-
         class SAXSource implements javax.xml.transform.Source {
           public static readonly FEATURE: java.lang.String
           public constructor()
@@ -17,7 +16,6 @@ declare namespace javax {
           public static sourceToInputSource(arg0: javax.xml.transform.Source): org.xml.sax.InputSource
           public isEmpty(): boolean
         }
-
       }
     }
   }

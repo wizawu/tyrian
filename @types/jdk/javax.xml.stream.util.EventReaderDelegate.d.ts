@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
     namespace stream {
       namespace util {
-
         class EventReaderDelegate implements javax.xml.stream.XMLEventReader {
           public constructor()
           public constructor(arg0: javax.xml.stream.XMLEventReader)
@@ -18,7 +17,6 @@ declare namespace javax {
           public getProperty(arg0: java.lang.String | string): java.lang.Object
           public remove(): void
         }
-
       }
     }
   }

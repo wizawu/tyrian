@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    class JLayer<V extends java.awt.Component> extends javax.swing.JComponent implements javax.swing.Scrollable, java.beans.PropertyChangeListener, javax.accessibility.Accessible {
+    class JLayer<V extends java.awt.Component>
+      extends javax.swing.JComponent
+      implements javax.swing.Scrollable, java.beans.PropertyChangeListener, javax.accessibility.Accessible
+    {
       public constructor()
       public constructor(arg0: V)
       public constructor(arg0: V, arg1: javax.swing.plaf.LayerUI<V>)
@@ -19,8 +21,20 @@ declare namespace javax {
       public remove(arg0: java.awt.Component): void
       public removeAll(): void
       protected isPaintingOrigin(): boolean
-      public paintImmediately(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
-      public imageUpdate(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): boolean
+      public paintImmediately(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
+      public imageUpdate(
+        arg0: java.awt.Image,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      ): boolean
       public paint(arg0: java.awt.Graphics): void
       protected paintComponent(arg0: java.awt.Graphics): void
       public isOptimizedDrawingEnabled(): boolean
@@ -29,16 +43,23 @@ declare namespace javax {
       public getLayerEventMask(): number
       public updateUI(): void
       public getPreferredScrollableViewportSize(): java.awt.Dimension
-      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public getScrollableBlockIncrement(
+        arg0: java.awt.Rectangle,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public getScrollableTracksViewportHeight(): boolean
       public getScrollableTracksViewportWidth(): boolean
-      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public getScrollableUnitIncrement(
+        arg0: java.awt.Rectangle,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public addNotify(): void
       public removeNotify(): void
       public doLayout(): void
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

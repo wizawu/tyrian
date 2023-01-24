@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace format {
-
       class DecimalStyle {
         public static readonly STANDARD: java.time.format.DecimalStyle
         public static getAvailableLocales(): java.util.Set<java.util.Locale>
@@ -21,7 +20,6 @@ declare namespace java {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

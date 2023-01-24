@@ -1,13 +1,15 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
-      class ConcurrentSkipListSet<E> extends java.util.AbstractSet<E> implements java.util.NavigableSet<E>, java.lang.Cloneable, java.io.Serializable {
+      class ConcurrentSkipListSet<E>
+        extends java.util.AbstractSet<E>
+        implements java.util.NavigableSet<E>, java.lang.Cloneable, java.io.Serializable
+      {
         public constructor()
         public constructor(arg0: java.util.Comparator<unknown>)
         public constructor(arg0: java.util.Collection<E>)
         public constructor(arg0: java.util.SortedSet<E>)
-        constructor(arg0: java.util.concurrent.ConcurrentNavigableMap<E,java.lang.Object>)
+        constructor(arg0: java.util.concurrent.ConcurrentNavigableMap<E, java.lang.Object>)
         public clone(): java.util.concurrent.ConcurrentSkipListSet<E>
         public size(): number
         public isEmpty(): boolean
@@ -28,7 +30,12 @@ declare namespace java {
         public comparator(): java.util.Comparator<unknown>
         public first(): E
         public last(): E
-        public subSet(arg0: E, arg1: boolean | java.lang.Boolean, arg2: E, arg3: boolean | java.lang.Boolean): java.util.NavigableSet<E>
+        public subSet(
+          arg0: E,
+          arg1: boolean | java.lang.Boolean,
+          arg2: E,
+          arg3: boolean | java.lang.Boolean
+        ): java.util.NavigableSet<E>
         public headSet(arg0: E, arg1: boolean | java.lang.Boolean): java.util.NavigableSet<E>
         public tailSet(arg0: E, arg1: boolean | java.lang.Boolean): java.util.NavigableSet<E>
         public subSet(arg0: E, arg1: E): java.util.NavigableSet<E>
@@ -41,7 +48,6 @@ declare namespace java {
         public headSet(arg0: java.lang.Object | any): java.util.SortedSet
         public subSet(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.util.SortedSet
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace format {
-
       class FormatStyle extends java.lang.Enum<java.time.format.FormatStyle> {
         public static readonly FULL: java.time.format.FormatStyle
         public static readonly LONG: java.time.format.FormatStyle
@@ -10,7 +9,6 @@ declare namespace java {
         public static values(): java.time.format.FormatStyle[]
         public static valueOf(arg0: java.lang.String | string): java.time.format.FormatStyle
       }
-
     }
   }
 }

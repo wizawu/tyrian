@@ -1,8 +1,10 @@
 declare namespace java {
   namespace time {
     namespace temporal {
-
-      class ChronoUnit extends java.lang.Enum<java.time.temporal.ChronoUnit> implements java.time.temporal.TemporalUnit {
+      class ChronoUnit
+        extends java.lang.Enum<java.time.temporal.ChronoUnit>
+        implements java.time.temporal.TemporalUnit
+      {
         public static readonly NANOS: java.time.temporal.ChronoUnit
         public static readonly MICROS: java.time.temporal.ChronoUnit
         public static readonly MILLIS: java.time.temporal.ChronoUnit
@@ -30,7 +32,6 @@ declare namespace java {
         public between(arg0: java.time.temporal.Temporal, arg1: java.time.temporal.Temporal): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

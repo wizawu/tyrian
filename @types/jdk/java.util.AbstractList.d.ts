@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     abstract class AbstractList<E> extends java.util.AbstractCollection<E> implements java.util.List<E> {
       protected modCount: int
       protected constructor()
@@ -17,11 +16,14 @@ declare namespace java {
       public listIterator(): java.util.ListIterator<E>
       public listIterator(arg0: number | java.lang.Integer): java.util.ListIterator<E>
       public subList(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.List<E>
-      static subListRangeCheck(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      static subListRangeCheck(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public equals(arg0: java.lang.Object | any): boolean
       public hashCode(): number
       protected removeRange(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
     }
-
   }
 }

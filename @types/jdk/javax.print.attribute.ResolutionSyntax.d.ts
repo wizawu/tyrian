@@ -1,11 +1,14 @@
 declare namespace javax {
   namespace print {
     namespace attribute {
-
       abstract class ResolutionSyntax implements java.io.Serializable, java.lang.Cloneable {
         public static readonly DPI: int
         public static readonly DPCM: int
-        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        )
         public getResolution(arg0: number | java.lang.Integer): number[]
         public getCrossFeedResolution(arg0: number | java.lang.Integer): number
         public getFeedResolution(arg0: number | java.lang.Integer): number
@@ -17,7 +20,6 @@ declare namespace javax {
         protected getCrossFeedResolutionDphi(): number
         protected getFeedResolutionDphi(): number
       }
-
     }
   }
 }

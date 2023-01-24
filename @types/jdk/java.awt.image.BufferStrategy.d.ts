@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace image {
-
       abstract class BufferStrategy {
         public constructor()
         public abstract getCapabilities(): java.awt.BufferCapabilities
@@ -11,7 +10,6 @@ declare namespace java {
         public abstract show(): void
         public dispose(): void
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace plaf {
-
       abstract class FileChooserUI extends javax.swing.plaf.ComponentUI {
         public constructor()
         public abstract getAcceptAllFileFilter(arg0: javax.swing.JFileChooser): javax.swing.filechooser.FileFilter
@@ -12,7 +11,6 @@ declare namespace javax {
         public abstract ensureFileIsVisible(arg0: javax.swing.JFileChooser, arg1: java.io.File): void
         public getDefaultButton(arg0: javax.swing.JFileChooser): javax.swing.JButton
       }
-
     }
   }
 }

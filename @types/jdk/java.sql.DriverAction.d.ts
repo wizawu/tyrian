@@ -1,6 +1,5 @@
 declare namespace java {
   namespace sql {
-
     interface DriverAction$$lambda {
       (): void
     }
@@ -8,6 +7,5 @@ declare namespace java {
     interface DriverAction {
       deregister(): void
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     abstract class Identity implements java.security.Principal, java.io.Serializable {
       info: java.lang.String
       scope: java.security.IdentityScope
@@ -26,6 +25,5 @@ declare namespace java {
       printCertificates(): java.lang.String
       public hashCode(): number
     }
-
   }
 }

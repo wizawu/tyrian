@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLTableCellElement extends org.w3c.dom.html.HTMLElement {
           getCellIndex(): number
           getAbbr(): java.lang.String
@@ -34,7 +33,6 @@ declare namespace org {
           getWidth(): java.lang.String
           setWidth(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

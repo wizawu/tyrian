@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JRootPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
       public static readonly NONE: int
       public static readonly FRAME: int
@@ -53,6 +52,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

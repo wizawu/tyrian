@@ -1,7 +1,9 @@
 declare namespace java {
   namespace io {
-
-    class ObjectOutputStream extends java.io.OutputStream implements java.io.ObjectOutput, java.io.ObjectStreamConstants {
+    class ObjectOutputStream
+      extends java.io.OutputStream
+      implements java.io.ObjectOutput, java.io.ObjectStreamConstants
+    {
       public constructor(arg0: java.io.OutputStream)
       protected constructor()
       public useProtocolVersion(arg0: number | java.lang.Integer): void
@@ -20,7 +22,11 @@ declare namespace java {
       protected writeClassDescriptor(arg0: java.io.ObjectStreamClass): void
       public write(arg0: number | java.lang.Integer): void
       public write(arg0: number[] | java.lang.Byte[]): void
-      public write(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public write(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public flush(): void
       protected drain(): void
       public close(): void
@@ -38,6 +44,5 @@ declare namespace java {
       getProtocolVersion(): number
       writeTypeString(arg0: java.lang.String | string): void
     }
-
   }
 }

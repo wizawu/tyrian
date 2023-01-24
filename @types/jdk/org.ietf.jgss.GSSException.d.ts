@@ -1,7 +1,6 @@
 declare namespace org {
   namespace ietf {
     namespace jgss {
-
       class GSSException extends java.lang.Exception {
         public static readonly BAD_BINDINGS: int
         public static readonly BAD_MECH: int
@@ -27,7 +26,11 @@ declare namespace org {
         public static readonly GAP_TOKEN: int
         public constructor(arg0: number | java.lang.Integer)
         constructor(arg0: number | java.lang.Integer, arg1: java.lang.String | string)
-        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.lang.String | string)
+        public constructor(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer,
+          arg2: java.lang.String | string
+        )
         public getMajor(): number
         public getMinor(): number
         public getMajorString(): java.lang.String
@@ -36,7 +39,6 @@ declare namespace org {
         public toString(): java.lang.String
         public getMessage(): java.lang.String
       }
-
     }
   }
 }

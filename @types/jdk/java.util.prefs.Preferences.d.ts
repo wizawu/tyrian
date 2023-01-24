@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace prefs {
-
       abstract class Preferences {
         public static readonly MAX_KEY_LENGTH: int
         public static readonly MAX_VALUE_LENGTH: int
@@ -39,15 +38,18 @@ declare namespace java {
         public abstract toString(): java.lang.String
         public abstract flush(): void
         public abstract sync(): void
-        public abstract addPreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$lambda): void
-        public abstract removePreferenceChangeListener(arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$lambda): void
+        public abstract addPreferenceChangeListener(
+          arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$lambda
+        ): void
+        public abstract removePreferenceChangeListener(
+          arg0: java.util.prefs.PreferenceChangeListener | java.util.prefs.PreferenceChangeListener$$lambda
+        ): void
         public abstract addNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
         public abstract removeNodeChangeListener(arg0: java.util.prefs.NodeChangeListener): void
         public abstract exportNode(arg0: java.io.OutputStream): void
         public abstract exportSubtree(arg0: java.io.OutputStream): void
         public static importPreferences(arg0: java.io.InputStream): void
       }
-
     }
   }
 }

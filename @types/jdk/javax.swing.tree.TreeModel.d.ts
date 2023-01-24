@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace tree {
-
       interface TreeModel {
         getRoot(): java.lang.Object
         getChild(arg0: java.lang.Object | any, arg1: number | java.lang.Integer): java.lang.Object
@@ -12,7 +11,6 @@ declare namespace javax {
         addTreeModelListener(arg0: javax.swing.event.TreeModelListener): void
         removeTreeModelListener(arg0: javax.swing.event.TreeModelListener): void
       }
-
     }
   }
 }

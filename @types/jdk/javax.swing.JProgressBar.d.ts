@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    class JProgressBar extends javax.swing.JComponent implements javax.swing.SwingConstants, javax.accessibility.Accessible {
+    class JProgressBar
+      extends javax.swing.JComponent
+      implements javax.swing.SwingConstants, javax.accessibility.Accessible
+    {
       protected orientation: int
       protected paintBorder: boolean
       protected model: javax.swing.BoundedRangeModel
@@ -12,7 +14,11 @@ declare namespace javax {
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
       public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      )
       public constructor(arg0: javax.swing.BoundedRangeModel)
       public getOrientation(): number
       public setOrientation(arg0: number | java.lang.Integer): void
@@ -30,7 +36,9 @@ declare namespace javax {
       public getUIClassID(): java.lang.String
       protected createChangeListener(): javax.swing.event.ChangeListener
       public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(
+        arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+      ): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public getModel(): javax.swing.BoundedRangeModel
@@ -47,6 +55,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

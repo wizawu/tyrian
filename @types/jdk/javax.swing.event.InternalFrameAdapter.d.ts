@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace event {
-
       abstract class InternalFrameAdapter implements javax.swing.event.InternalFrameListener {
         public constructor()
         public internalFrameOpened(arg0: javax.swing.event.InternalFrameEvent): void
@@ -12,7 +11,6 @@ declare namespace javax {
         public internalFrameActivated(arg0: javax.swing.event.InternalFrameEvent): void
         public internalFrameDeactivated(arg0: javax.swing.event.InternalFrameEvent): void
       }
-
     }
   }
 }

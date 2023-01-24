@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    class JScrollPane extends javax.swing.JComponent implements javax.swing.ScrollPaneConstants, javax.accessibility.Accessible {
+    class JScrollPane
+      extends javax.swing.JComponent
+      implements javax.swing.ScrollPaneConstants, javax.accessibility.Accessible
+    {
       protected verticalScrollBarPolicy: int
       protected horizontalScrollBarPolicy: int
       protected viewport: javax.swing.JViewport
@@ -55,6 +57,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

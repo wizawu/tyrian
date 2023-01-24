@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace sql {
-
     interface PooledConnection {
       getConnection(): java.sql.Connection
       close(): void
@@ -9,6 +8,5 @@ declare namespace javax {
       addStatementEventListener(arg0: javax.sql.StatementEventListener): void
       removeStatementEventListener(arg0: javax.sql.StatementEventListener): void
     }
-
   }
 }

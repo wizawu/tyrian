@@ -2,7 +2,6 @@ declare namespace javax {
   namespace security {
     namespace auth {
       namespace kerberos {
-
         class ServicePermission extends java.security.Permission implements java.io.Serializable {
           public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
           constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
@@ -15,7 +14,6 @@ declare namespace javax {
           public newPermissionCollection(): java.security.PermissionCollection
           getMask(): number
         }
-
       }
     }
   }

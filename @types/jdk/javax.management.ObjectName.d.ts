@@ -1,15 +1,25 @@
 declare namespace javax {
   namespace management {
-
     class ObjectName implements java.lang.Comparable<javax.management.ObjectName>, javax.management.QueryExp {
       public static readonly WILDCARD: javax.management.ObjectName
       public static getInstance(arg0: java.lang.String | string): javax.management.ObjectName
-      public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): javax.management.ObjectName
-      public static getInstance(arg0: java.lang.String | string, arg1: java.util.Hashtable<java.lang.String,java.lang.String>): javax.management.ObjectName
+      public static getInstance(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): javax.management.ObjectName
+      public static getInstance(
+        arg0: java.lang.String | string,
+        arg1: java.util.Hashtable<java.lang.String, java.lang.String>
+      ): javax.management.ObjectName
       public static getInstance(arg0: javax.management.ObjectName): javax.management.ObjectName
       public constructor(arg0: java.lang.String | string)
-      public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
-      public constructor(arg0: java.lang.String | string, arg1: java.util.Hashtable<java.lang.String,java.lang.String>)
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      )
+      public constructor(arg0: java.lang.String | string, arg1: java.util.Hashtable<java.lang.String, java.lang.String>)
       public isPattern(): boolean
       public isDomainPattern(): boolean
       public isPropertyPattern(): boolean
@@ -19,7 +29,7 @@ declare namespace javax {
       public getCanonicalName(): java.lang.String
       public getDomain(): java.lang.String
       public getKeyProperty(arg0: java.lang.String | string): java.lang.String
-      public getKeyPropertyList(): java.util.Hashtable<java.lang.String,java.lang.String>
+      public getKeyPropertyList(): java.util.Hashtable<java.lang.String, java.lang.String>
       public getKeyPropertyListString(): java.lang.String
       public getCanonicalKeyPropertyListString(): java.lang.String
       public toString(): java.lang.String
@@ -32,6 +42,5 @@ declare namespace javax {
       public compareTo(arg0: javax.management.ObjectName): number
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

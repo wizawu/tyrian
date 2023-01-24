@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace image {
-
       abstract class VolatileImage extends java.awt.Image implements java.awt.Transparency {
         public static readonly IMAGE_OK: int
         public static readonly IMAGE_RESTORED: int
@@ -19,7 +18,6 @@ declare namespace java {
         public abstract getCapabilities(): java.awt.ImageCapabilities
         public getTransparency(): number
       }
-
     }
   }
 }

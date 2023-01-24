@@ -2,9 +2,12 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace atomic {
-
-        abstract class AtomicReferenceFieldUpdater<T,V> {
-          public static newUpdater<U,W>(arg0: java.lang.Class<U>, arg1: java.lang.Class<W>, arg2: java.lang.String | string): java.util.concurrent.atomic.AtomicReferenceFieldUpdater<U,W>
+        abstract class AtomicReferenceFieldUpdater<T, V> {
+          public static newUpdater<U, W>(
+            arg0: java.lang.Class<U>,
+            arg1: java.lang.Class<W>,
+            arg2: java.lang.String | string
+          ): java.util.concurrent.atomic.AtomicReferenceFieldUpdater<U, W>
           protected constructor()
           public abstract compareAndSet(arg0: T, arg1: V, arg2: V): boolean
           public abstract weakCompareAndSet(arg0: T, arg1: V, arg2: V): boolean
@@ -17,7 +20,6 @@ declare namespace java {
           public getAndAccumulate(arg0: T, arg1: V, arg2: java.util.function$.BinaryOperator<V>): V
           public accumulateAndGet(arg0: T, arg1: V, arg2: java.util.function$.BinaryOperator<V>): V
         }
-
       }
     }
   }

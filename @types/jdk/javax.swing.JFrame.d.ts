@@ -1,7 +1,13 @@
 declare namespace javax {
   namespace swing {
-
-    class JFrame extends java.awt.Frame implements javax.swing.WindowConstants, javax.accessibility.Accessible, javax.swing.RootPaneContainer, javax.swing.TransferHandler$HasGetTransferHandler {
+    class JFrame
+      extends java.awt.Frame
+      implements
+        javax.swing.WindowConstants,
+        javax.accessibility.Accessible,
+        javax.swing.RootPaneContainer,
+        javax.swing.TransferHandler$HasGetTransferHandler
+    {
       protected rootPane: javax.swing.JRootPane
       protected rootPaneCheckingEnabled: boolean
       protected accessibleContext: javax.accessibility.AccessibleContext
@@ -34,12 +40,17 @@ declare namespace javax {
       public getGlassPane(): java.awt.Component
       public setGlassPane(arg0: java.awt.Component): void
       public getGraphics(): java.awt.Graphics
-      public repaint(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      public repaint(
+        arg0: number | java.lang.Long,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): void
       public static setDefaultLookAndFeelDecorated(arg0: boolean | java.lang.Boolean): void
       public static isDefaultLookAndFeelDecorated(): boolean
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

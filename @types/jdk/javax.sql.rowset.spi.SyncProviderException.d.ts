@@ -2,7 +2,6 @@ declare namespace javax {
   namespace sql {
     namespace rowset {
       namespace spi {
-
         class SyncProviderException extends java.sql.SQLException {
           static readonly serialVersionUID: long
           public constructor()
@@ -11,7 +10,6 @@ declare namespace javax {
           public getSyncResolver(): javax.sql.rowset.spi.SyncResolver
           public setSyncResolver(arg0: javax.sql.rowset.spi.SyncResolver): void
         }
-
       }
     }
   }

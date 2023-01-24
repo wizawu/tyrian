@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class FieldPosition {
       field: int
       endIndex: int
@@ -19,6 +18,5 @@ declare namespace java {
       public hashCode(): number
       public toString(): java.lang.String
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     class DatagramSocket implements java.io.Closeable {
       impl: java.net.DatagramSocketImpl
       oldImpl: boolean
@@ -49,11 +48,12 @@ declare namespace java {
       public close(): void
       public isClosed(): boolean
       public getChannel(): java.nio.channels.DatagramChannel
-      public static setDatagramSocketImplFactory(arg0: java.net.DatagramSocketImplFactory | java.net.DatagramSocketImplFactory$$lambda): void
+      public static setDatagramSocketImplFactory(
+        arg0: java.net.DatagramSocketImplFactory | java.net.DatagramSocketImplFactory$$lambda
+      ): void
       public setOption<T>(arg0: java.net.SocketOption<T>, arg1: T): java.net.DatagramSocket
       public getOption<T>(arg0: java.net.SocketOption<T>): T
       public supportedOptions(): java.util.Set<java.net.SocketOption<unknown>>
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace print {
     namespace event {
-
       class PrintJobEvent extends javax.print.event.PrintEvent {
         public static readonly JOB_CANCELED: int
         public static readonly JOB_COMPLETE: int
@@ -13,7 +12,6 @@ declare namespace javax {
         public getPrintEventType(): number
         public getPrintJob(): javax.print.DocPrintJob
       }
-
     }
   }
 }

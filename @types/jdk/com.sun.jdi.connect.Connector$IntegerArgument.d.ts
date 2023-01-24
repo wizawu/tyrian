@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace jdi {
       namespace connect {
-
         interface Connector$IntegerArgument extends com.sun.jdi.connect.Connector$Argument {
           setValue(arg0: number | java.lang.Integer): void
           isValid(arg0: java.lang.String | string): boolean
@@ -12,7 +11,6 @@ declare namespace com {
           max(): number
           min(): number
         }
-
       }
     }
   }

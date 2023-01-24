@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace naming {
-
     interface Referenceable$$lambda {
       (): javax.naming.Reference
     }
@@ -8,6 +7,5 @@ declare namespace javax {
     interface Referenceable {
       getReference(): javax.naming.Reference
     }
-
   }
 }

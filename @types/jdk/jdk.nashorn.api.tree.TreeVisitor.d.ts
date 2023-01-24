@@ -2,8 +2,7 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace tree {
-
-        interface TreeVisitor<R,P> {
+        interface TreeVisitor<R, P> {
           visitAssignment(arg0: jdk.nashorn.api.tree.AssignmentTree, arg1: P): R
           visitCompoundAssignment(arg0: jdk.nashorn.api.tree.CompoundAssignmentTree, arg1: P): R
           visitBinary(arg0: jdk.nashorn.api.tree.BinaryTree, arg1: P): R
@@ -56,7 +55,6 @@ declare namespace jdk {
           visitYield(arg0: jdk.nashorn.api.tree.YieldTree, arg1: P): R
           visitUnknown(arg0: jdk.nashorn.api.tree.Tree, arg1: P): R
         }
-
       }
     }
   }

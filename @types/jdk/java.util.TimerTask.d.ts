@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     abstract class TimerTask implements java.lang.Runnable {
       readonly lock: java.lang.Object
       state: int
@@ -15,6 +14,5 @@ declare namespace java {
       public cancel(): boolean
       public scheduledExecutionTime(): number
     }
-
   }
 }

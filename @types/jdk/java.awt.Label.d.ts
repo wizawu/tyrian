@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Label extends java.awt.Component implements javax.accessibility.Accessible {
       public static readonly LEFT: int
       public static readonly CENTER: int
@@ -19,6 +18,5 @@ declare namespace java {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

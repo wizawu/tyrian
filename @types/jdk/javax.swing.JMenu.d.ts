@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JMenu extends javax.swing.JMenuItem implements javax.accessibility.Accessible, javax.swing.MenuElement {
       protected popupListener: javax.swing.JMenu$WinListener
       public constructor()
@@ -63,6 +62,5 @@ declare namespace javax {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

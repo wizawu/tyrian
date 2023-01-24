@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class ImageIcon implements javax.swing.Icon, java.io.Serializable, javax.accessibility.Accessible {
       image: java.awt.Image
       loadStatus: int
@@ -25,7 +24,12 @@ declare namespace javax {
       public setImage(arg0: java.awt.Image): void
       public getDescription(): java.lang.String
       public setDescription(arg0: java.lang.String | string): void
-      public paintIcon(arg0: java.awt.Component, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public paintIcon(
+        arg0: java.awt.Component,
+        arg1: java.awt.Graphics,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       public getIconWidth(): number
       public getIconHeight(): number
       public setImageObserver(arg0: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): void
@@ -33,6 +37,5 @@ declare namespace javax {
       public toString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

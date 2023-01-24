@@ -2,15 +2,20 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace locks {
-
-        abstract class AbstractQueuedSynchronizer extends java.util.concurrent.locks.AbstractOwnableSynchronizer implements java.io.Serializable {
+        abstract class AbstractQueuedSynchronizer
+          extends java.util.concurrent.locks.AbstractOwnableSynchronizer
+          implements java.io.Serializable
+        {
           static readonly SPIN_FOR_TIMEOUT_THRESHOLD: long
           protected constructor()
           protected getState(): number
           protected setState(arg0: number | java.lang.Integer): void
           protected compareAndSetState(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
           static selfInterrupt(): void
-          acquireQueued(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node, arg1: number | java.lang.Integer): boolean
+          acquireQueued(
+            arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node,
+            arg1: number | java.lang.Integer
+          ): boolean
           protected tryAcquire(arg0: number | java.lang.Integer): boolean
           protected tryRelease(arg0: number | java.lang.Integer): boolean
           protected tryAcquireShared(arg0: number | java.lang.Integer): number
@@ -42,9 +47,10 @@ declare namespace java {
           public owns(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject): boolean
           public hasWaiters(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject): boolean
           public getWaitQueueLength(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject): number
-          public getWaitingThreads(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject): java.util.Collection<java.lang.Thread>
+          public getWaitingThreads(
+            arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject
+          ): java.util.Collection<java.lang.Thread>
         }
-
       }
     }
   }

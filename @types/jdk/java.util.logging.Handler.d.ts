@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace logging {
-
       abstract class Handler {
         protected constructor()
         constructor(arg0: java.util.logging.Level, arg1: java.util.logging.Formatter, arg2: java.util.logging.Formatter)
@@ -16,13 +15,16 @@ declare namespace java {
         public getFilter(): java.util.logging.Filter
         public setErrorManager(arg0: java.util.logging.ErrorManager): void
         public getErrorManager(): java.util.logging.ErrorManager
-        protected reportError(arg0: java.lang.String | string, arg1: java.lang.Exception, arg2: number | java.lang.Integer): void
+        protected reportError(
+          arg0: java.lang.String | string,
+          arg1: java.lang.Exception,
+          arg2: number | java.lang.Integer
+        ): void
         public setLevel(arg0: java.util.logging.Level): void
         public getLevel(): java.util.logging.Level
         public isLoggable(arg0: java.util.logging.LogRecord): boolean
         checkPermission(): void
       }
-
     }
   }
 }

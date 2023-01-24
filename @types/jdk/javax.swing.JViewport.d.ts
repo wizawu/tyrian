@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JViewport extends javax.swing.JComponent implements javax.accessibility.Accessible {
       static readonly EnableWindowBlit: java.lang.Object
       protected isViewSizeSet: boolean
@@ -25,7 +24,12 @@ declare namespace javax {
       public isOptimizedDrawingEnabled(): boolean
       protected isPaintingOrigin(): boolean
       public paint(arg0: java.awt.Graphics): void
-      public reshape(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public reshape(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       public setScrollMode(arg0: number | java.lang.Integer): void
       public getScrollMode(): number
       public isBackingStoreEnabled(): boolean
@@ -37,7 +41,14 @@ declare namespace javax {
       public getViewPosition(): java.awt.Point
       public setViewPosition(arg0: java.awt.Point): void
       public getViewRect(): java.awt.Rectangle
-      protected computeBlit(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.awt.Point, arg3: java.awt.Point, arg4: java.awt.Dimension, arg5: java.awt.Rectangle): boolean
+      protected computeBlit(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: java.awt.Point,
+        arg3: java.awt.Point,
+        arg4: java.awt.Dimension,
+        arg5: java.awt.Rectangle
+      ): boolean
       public getExtentSize(): java.awt.Dimension
       public toViewCoordinates(arg0: java.awt.Dimension): java.awt.Dimension
       public toViewCoordinates(arg0: java.awt.Point): java.awt.Point
@@ -45,15 +56,26 @@ declare namespace javax {
       protected createViewListener(): javax.swing.JViewport$ViewListener
       protected createLayoutManager(): java.awt.LayoutManager
       public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(
+        arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+      ): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
-      public repaint(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      public repaint(
+        arg0: number | java.lang.Long,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): void
       protected paramString(): java.lang.String
-      protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
+      protected firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: java.lang.Object | any
+      ): void
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

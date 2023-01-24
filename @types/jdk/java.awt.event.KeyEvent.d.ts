@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
       class KeyEvent extends java.awt.event.InputEvent {
         public static readonly KEY_FIRST: int
         public static readonly KEY_LAST: int
@@ -206,9 +205,30 @@ declare namespace java {
         keyCode: int
         keyChar: char
         keyLocation: int
-        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: string | java.lang.Character, arg6: number | java.lang.Integer)
-        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: string | java.lang.Character)
-        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+        public constructor(
+          arg0: java.awt.Component,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Long,
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer,
+          arg5: string | java.lang.Character,
+          arg6: number | java.lang.Integer
+        )
+        public constructor(
+          arg0: java.awt.Component,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Long,
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer,
+          arg5: string | java.lang.Character
+        )
+        public constructor(
+          arg0: java.awt.Component,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Long,
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        )
         public getKeyCode(): number
         public setKeyCode(arg0: number | java.lang.Integer): void
         public getKeyChar(): string
@@ -222,7 +242,6 @@ declare namespace java {
         public getExtendedKeyCode(): number
         public static getExtendedKeyCodeForChar(arg0: number | java.lang.Integer): number
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       class TabSet implements java.io.Serializable {
         public constructor(arg0: javax.swing.text.TabStop[])
         public getTabCount(): number
@@ -13,7 +12,6 @@ declare namespace javax {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

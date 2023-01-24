@@ -1,7 +1,6 @@
 declare namespace org {
   namespace w3c {
     namespace dom {
-
       interface Attr extends org.w3c.dom.Node {
         getName(): java.lang.String
         getSpecified(): boolean
@@ -11,7 +10,6 @@ declare namespace org {
         getSchemaTypeInfo(): org.w3c.dom.TypeInfo
         isId(): boolean
       }
-
     }
   }
 }

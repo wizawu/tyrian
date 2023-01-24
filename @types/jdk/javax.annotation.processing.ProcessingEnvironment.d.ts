@@ -1,9 +1,8 @@
 declare namespace javax {
   namespace annotation {
     namespace processing {
-
       interface ProcessingEnvironment {
-        getOptions(): java.util.Map<java.lang.String,java.lang.String>
+        getOptions(): java.util.Map<java.lang.String, java.lang.String>
         getMessager(): javax.annotation.processing.Messager
         getFiler(): javax.annotation.processing.Filer
         getElementUtils(): javax.lang.model.util.Elements
@@ -11,7 +10,6 @@ declare namespace javax {
         getSourceVersion(): javax.lang.model.SourceVersion
         getLocale(): java.util.Locale
       }
-
     }
   }
 }

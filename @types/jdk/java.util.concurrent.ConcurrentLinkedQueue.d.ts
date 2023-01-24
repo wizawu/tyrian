@@ -1,16 +1,23 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
-      class ConcurrentLinkedQueue<E> extends java.util.AbstractQueue<E> implements java.util.Queue<E>, java.io.Serializable {
+      class ConcurrentLinkedQueue<E>
+        extends java.util.AbstractQueue<E>
+        implements java.util.Queue<E>, java.io.Serializable
+      {
         head: java.util.concurrent.ConcurrentLinkedQueue$Node<E>
         static readonly ITEM: java.lang.invoke.VarHandle
         static readonly NEXT: java.lang.invoke.VarHandle
         public constructor()
         public constructor(arg0: java.util.Collection<E>)
         public add(arg0: E): boolean
-        updateHead(arg0: java.util.concurrent.ConcurrentLinkedQueue$Node<E>, arg1: java.util.concurrent.ConcurrentLinkedQueue$Node<E>): void
-        succ(arg0: java.util.concurrent.ConcurrentLinkedQueue$Node<E>): java.util.concurrent.ConcurrentLinkedQueue$Node<E>
+        updateHead(
+          arg0: java.util.concurrent.ConcurrentLinkedQueue$Node<E>,
+          arg1: java.util.concurrent.ConcurrentLinkedQueue$Node<E>
+        ): void
+        succ(
+          arg0: java.util.concurrent.ConcurrentLinkedQueue$Node<E>
+        ): java.util.concurrent.ConcurrentLinkedQueue$Node<E>
         public offer(arg0: E): boolean
         public poll(): E
         public peek(): E
@@ -29,10 +36,14 @@ declare namespace java {
         public removeAll(arg0: java.util.Collection<unknown>): boolean
         public retainAll(arg0: java.util.Collection<unknown>): boolean
         public clear(): void
-        forEachFrom(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>, arg1: java.util.concurrent.ConcurrentLinkedQueue$Node<E>): void
-        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        forEachFrom(
+          arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>,
+          arg1: java.util.concurrent.ConcurrentLinkedQueue$Node<E>
+        ): void
+        public forEach(
+          arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
+        ): void
       }
-
     }
   }
 }

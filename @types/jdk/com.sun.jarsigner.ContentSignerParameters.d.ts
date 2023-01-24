@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace jarsigner {
-
       interface ContentSignerParameters {
         getCommandLine(): java.lang.String[]
         getTimestampingAuthority(): java.net.URI
@@ -14,7 +13,6 @@ declare namespace com {
         getContent(): number[]
         getSource(): java.util.zip.ZipFile
       }
-
     }
   }
 }

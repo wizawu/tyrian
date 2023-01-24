@@ -1,9 +1,13 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       class MidiDevice$Info {
-        protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string)
+        protected constructor(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String | string,
+          arg3: java.lang.String | string
+        )
         public equals(arg0: java.lang.Object | any): boolean
         public hashCode(): number
         public getName(): java.lang.String
@@ -12,7 +16,6 @@ declare namespace javax {
         public getVersion(): java.lang.String
         public toString(): java.lang.String
       }
-
     }
   }
 }

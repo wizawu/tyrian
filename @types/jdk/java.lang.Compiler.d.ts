@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Compiler {
       public static compileClass(arg0: java.lang.Class<unknown>): boolean
       public static compileClasses(arg0: java.lang.String | string): boolean
@@ -8,6 +7,5 @@ declare namespace java {
       public static enable(): void
       public static disable(): void
     }
-
   }
 }

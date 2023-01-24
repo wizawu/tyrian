@@ -2,7 +2,6 @@ declare namespace javax {
   namespace sql {
     namespace rowset {
       namespace spi {
-
         abstract class SyncProvider {
           public static readonly GRADE_NONE: int
           public static readonly GRADE_CHECK_MODIFIED_AT_COMMIT: int
@@ -26,7 +25,6 @@ declare namespace javax {
           public abstract getVersion(): java.lang.String
           public abstract getVendor(): java.lang.String
         }
-
       }
     }
   }

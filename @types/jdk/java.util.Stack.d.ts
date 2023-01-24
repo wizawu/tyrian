@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class Stack<E> extends java.util.Vector<E> {
       public constructor()
       public push(arg0: E): E
@@ -9,6 +8,5 @@ declare namespace java {
       public empty(): boolean
       public search(arg0: java.lang.Object | any): number
     }
-
   }
 }

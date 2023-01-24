@@ -1,8 +1,5 @@
 declare namespace jdk {
   namespace dynalink {
-
-    interface Namespace {
-    }
-
+    interface Namespace {}
   }
 }

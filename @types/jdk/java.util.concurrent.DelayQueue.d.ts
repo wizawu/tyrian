@@ -1,8 +1,10 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
-      class DelayQueue<E extends java.util.concurrent.Delayed> extends java.util.AbstractQueue<E> implements java.util.concurrent.BlockingQueue<E> {
+      class DelayQueue<E extends java.util.concurrent.Delayed>
+        extends java.util.AbstractQueue<E>
+        implements java.util.concurrent.BlockingQueue<E>
+      {
         public constructor()
         public constructor(arg0: java.util.Collection<E>)
         public add(arg0: E): boolean
@@ -29,10 +31,13 @@ declare namespace java {
         public offer(arg0: java.lang.Object | any): boolean
         public poll(arg0: number | java.lang.Long, arg1: java.util.concurrent.TimeUnit): java.lang.Object
         public take(): java.lang.Object
-        public offer(arg0: java.lang.Object | any, arg1: number | java.lang.Long, arg2: java.util.concurrent.TimeUnit): boolean
+        public offer(
+          arg0: java.lang.Object | any,
+          arg1: number | java.lang.Long,
+          arg2: java.util.concurrent.TimeUnit
+        ): boolean
         public put(arg0: java.lang.Object | any): void
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class PopupMenu extends java.awt.Menu {
       static nameCounter: int
       isTrayIconPopup: boolean
@@ -12,6 +11,5 @@ declare namespace java {
       public show(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace event {
-
       class TableModelEvent extends java.util.EventObject {
         public static readonly INSERT: int
         public static readonly UPDATE: int
@@ -14,15 +13,29 @@ declare namespace javax {
         protected column: int
         public constructor(arg0: javax.swing.table.TableModel)
         public constructor(arg0: javax.swing.table.TableModel, arg1: number | java.lang.Integer)
-        public constructor(arg0: javax.swing.table.TableModel, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-        public constructor(arg0: javax.swing.table.TableModel, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-        public constructor(arg0: javax.swing.table.TableModel, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+        public constructor(
+          arg0: javax.swing.table.TableModel,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        )
+        public constructor(
+          arg0: javax.swing.table.TableModel,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        )
+        public constructor(
+          arg0: javax.swing.table.TableModel,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        )
         public getFirstRow(): number
         public getLastRow(): number
         public getColumn(): number
         public getType(): number
       }
-
     }
   }
 }

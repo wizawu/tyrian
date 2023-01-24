@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace source {
       namespace doctree {
-
         class DocTree$Kind extends java.lang.Enum<com.sun.source.doctree.DocTree$Kind> {
           public static readonly ATTRIBUTE: com.sun.source.doctree.DocTree$Kind
           public static readonly AUTHOR: com.sun.source.doctree.DocTree$Kind
@@ -46,7 +45,6 @@ declare namespace com {
           public static values(): com.sun.source.doctree.DocTree$Kind[]
           public static valueOf(arg0: java.lang.String | string): com.sun.source.doctree.DocTree$Kind
         }
-
       }
     }
   }

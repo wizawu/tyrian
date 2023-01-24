@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace imageio {
     namespace spi {
-
       abstract class IIOServiceProvider implements javax.imageio.spi.RegisterableService {
         protected vendorName: java.lang.String
         protected version: java.lang.String
@@ -13,7 +12,6 @@ declare namespace javax {
         public getVersion(): java.lang.String
         public abstract getDescription(arg0: java.util.Locale): java.lang.String
       }
-
     }
   }
 }

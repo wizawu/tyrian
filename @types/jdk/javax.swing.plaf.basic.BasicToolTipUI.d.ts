@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicToolTipUI extends javax.swing.plaf.ToolTipUI {
           static sharedInstance: javax.swing.plaf.basic.BasicToolTipUI
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
@@ -18,7 +17,6 @@ declare namespace javax {
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
         }
-
       }
     }
   }

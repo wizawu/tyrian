@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace javadoc {
-
       interface ProgramElementDoc extends com.sun.javadoc.Doc {
         containingClass(): com.sun.javadoc.ClassDoc
         containingPackage(): com.sun.javadoc.PackageDoc
@@ -16,7 +15,6 @@ declare namespace com {
         isStatic(): boolean
         isFinal(): boolean
       }
-
     }
   }
 }

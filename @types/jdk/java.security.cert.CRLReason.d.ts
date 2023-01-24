@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
       class CRLReason extends java.lang.Enum<java.security.cert.CRLReason> {
         public static readonly UNSPECIFIED: java.security.cert.CRLReason
         public static readonly KEY_COMPROMISE: java.security.cert.CRLReason
@@ -17,7 +16,6 @@ declare namespace java {
         public static values(): java.security.cert.CRLReason[]
         public static valueOf(arg0: java.lang.String | string): java.security.cert.CRLReason
       }
-
     }
   }
 }

@@ -1,15 +1,22 @@
 declare namespace javax {
   namespace accessibility {
-
     interface AccessibleExtendedText {
-      public static readonly LINE: int
-      public static readonly ATTRIBUTE_RUN: int
+      readonly LINE: int
+      readonly ATTRIBUTE_RUN: int
       getTextRange(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.String
-      getTextSequenceAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.accessibility.AccessibleTextSequence
-      getTextSequenceAfter(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.accessibility.AccessibleTextSequence
-      getTextSequenceBefore(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.accessibility.AccessibleTextSequence
+      getTextSequenceAt(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): javax.accessibility.AccessibleTextSequence
+      getTextSequenceAfter(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): javax.accessibility.AccessibleTextSequence
+      getTextSequenceBefore(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): javax.accessibility.AccessibleTextSequence
       getTextBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.Rectangle
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class FileDialog extends java.awt.Dialog {
       public static readonly LOAD: int
       public static readonly SAVE: int
@@ -31,6 +30,5 @@ declare namespace java {
       protected paramString(): java.lang.String
       postsOldMouseEvents(): boolean
     }
-
   }
 }

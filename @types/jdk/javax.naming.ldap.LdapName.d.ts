@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace naming {
     namespace ldap {
-
       class LdapName implements javax.naming.Name {
         public constructor(arg0: java.lang.String | string)
         public constructor(arg0: java.util.List<javax.naming.ldap.Rdn>)
@@ -32,7 +31,6 @@ declare namespace javax {
         public compareTo(arg0: java.lang.Object | any): number
         public hashCode(): number
       }
-
     }
   }
 }

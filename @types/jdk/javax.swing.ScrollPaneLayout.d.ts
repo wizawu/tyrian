@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class ScrollPaneLayout implements java.awt.LayoutManager, javax.swing.ScrollPaneConstants, java.io.Serializable {
       protected viewport: javax.swing.JViewport
       protected vsb: javax.swing.JScrollBar
@@ -33,6 +32,5 @@ declare namespace javax {
       public layoutContainer(arg0: java.awt.Container): void
       public getViewportBorderBounds(arg0: javax.swing.JScrollPane): java.awt.Rectangle
     }
-
   }
 }

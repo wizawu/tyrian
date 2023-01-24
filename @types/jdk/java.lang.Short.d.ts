@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Short extends java.lang.Number implements java.lang.Comparable<java.lang.Short> {
       public static readonly MIN_VALUE: short
       public static readonly MAX_VALUE: short
@@ -34,6 +33,5 @@ declare namespace java {
       public static toUnsignedLong(arg0: number | java.lang.Short): number
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

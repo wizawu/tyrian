@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JTree extends javax.swing.JComponent implements javax.swing.Scrollable, javax.accessibility.Accessible {
       protected treeModel: javax.swing.tree.TreeModel
       protected selectionModel: javax.swing.tree.TreeSelectionModel
@@ -39,7 +38,7 @@ declare namespace javax {
       public constructor()
       public constructor(arg0: java.lang.Object[] | any[])
       public constructor(arg0: java.util.Vector<unknown>)
-      public constructor(arg0: java.util.Hashtable<unknown,unknown>)
+      public constructor(arg0: java.util.Hashtable<unknown, unknown>)
       public constructor(arg0: javax.swing.tree.TreeNode)
       public constructor(arg0: javax.swing.tree.TreeNode, arg1: boolean | java.lang.Boolean)
       public constructor(arg0: javax.swing.tree.TreeModel)
@@ -77,12 +76,23 @@ declare namespace javax {
       public setDropMode(arg0: javax.swing.DropMode): void
       public getDropMode(): javax.swing.DropMode
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.JTree$DropLocation
-      setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean): java.lang.Object
+      setDropLocation(
+        arg0: javax.swing.TransferHandler$DropLocation,
+        arg1: java.lang.Object | any,
+        arg2: boolean | java.lang.Boolean
+      ): java.lang.Object
       dndDone(): void
       public getDropLocation(): javax.swing.JTree$DropLocation
       public isPathEditable(arg0: javax.swing.tree.TreePath): boolean
       public getToolTipText(arg0: java.awt.event.MouseEvent): java.lang.String
-      public convertValueToText(arg0: java.lang.Object | any, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: number | java.lang.Integer, arg5: boolean | java.lang.Boolean): java.lang.String
+      public convertValueToText(
+        arg0: java.lang.Object | any,
+        arg1: boolean | java.lang.Boolean,
+        arg2: boolean | java.lang.Boolean,
+        arg3: boolean | java.lang.Boolean,
+        arg4: number | java.lang.Integer,
+        arg5: boolean | java.lang.Boolean
+      ): java.lang.String
       public getRowCount(): number
       public setSelectionPath(arg0: javax.swing.tree.TreePath): void
       public setSelectionPaths(arg0: javax.swing.tree.TreePath[]): void
@@ -124,9 +134,15 @@ declare namespace javax {
       public expandRow(arg0: number | java.lang.Integer): void
       public collapsePath(arg0: javax.swing.tree.TreePath): void
       public collapseRow(arg0: number | java.lang.Integer): void
-      public getPathForLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.tree.TreePath
+      public getPathForLocation(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): javax.swing.tree.TreePath
       public getRowForLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
-      public getClosestPathForLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.tree.TreePath
+      public getClosestPathForLocation(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): javax.swing.tree.TreePath
       public getClosestRowForLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
       public isEditing(): boolean
       public stopEditing(): boolean
@@ -135,7 +151,10 @@ declare namespace javax {
       public getEditingPath(): javax.swing.tree.TreePath
       public setSelectionModel(arg0: javax.swing.tree.TreeSelectionModel): void
       public getSelectionModel(): javax.swing.tree.TreeSelectionModel
-      protected getPathBetweenRows(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.tree.TreePath[]
+      protected getPathBetweenRows(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): javax.swing.tree.TreePath[]
       public setSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public addSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public removeSelectionInterval(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
@@ -155,25 +174,46 @@ declare namespace javax {
       public fireTreeCollapsed(arg0: javax.swing.tree.TreePath): void
       public fireTreeWillExpand(arg0: javax.swing.tree.TreePath): void
       public fireTreeWillCollapse(arg0: javax.swing.tree.TreePath): void
-      public addTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
-      public removeTreeSelectionListener(arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda): void
+      public addTreeSelectionListener(
+        arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda
+      ): void
+      public removeTreeSelectionListener(
+        arg0: javax.swing.event.TreeSelectionListener | javax.swing.event.TreeSelectionListener$$lambda
+      ): void
       public getTreeSelectionListeners(): javax.swing.event.TreeSelectionListener[]
       protected fireValueChanged(arg0: javax.swing.event.TreeSelectionEvent): void
       public treeDidChange(): void
       public setVisibleRowCount(arg0: number | java.lang.Integer): void
       public getVisibleRowCount(): number
-      public getNextMatch(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: javax.swing.text.Position$Bias): javax.swing.tree.TreePath
+      public getNextMatch(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: javax.swing.text.Position$Bias
+      ): javax.swing.tree.TreePath
       public getPreferredScrollableViewportSize(): java.awt.Dimension
-      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public getScrollableUnitIncrement(
+        arg0: java.awt.Rectangle,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      public getScrollableBlockIncrement(
+        arg0: java.awt.Rectangle,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public getScrollableTracksViewportWidth(): boolean
       public getScrollableTracksViewportHeight(): boolean
       protected setExpandedState(arg0: javax.swing.tree.TreePath, arg1: boolean | java.lang.Boolean): void
-      protected getDescendantToggledPaths(arg0: javax.swing.tree.TreePath): java.util.Enumeration<javax.swing.tree.TreePath>
+      protected getDescendantToggledPaths(
+        arg0: javax.swing.tree.TreePath
+      ): java.util.Enumeration<javax.swing.tree.TreePath>
       protected removeDescendantToggledPaths(arg0: java.util.Enumeration<javax.swing.tree.TreePath>): void
       protected clearToggledPaths(): void
       protected createTreeModelListener(): javax.swing.event.TreeModelListener
-      protected removeDescendantSelectedPaths(arg0: javax.swing.tree.TreePath, arg1: boolean | java.lang.Boolean): boolean
+      protected removeDescendantSelectedPaths(
+        arg0: javax.swing.tree.TreePath,
+        arg1: boolean | java.lang.Boolean
+      ): boolean
       removeDescendantSelectedPaths(arg0: javax.swing.event.TreeModelEvent): void
       setUIProperty(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
       protected paramString(): java.lang.String
@@ -181,6 +221,5 @@ declare namespace javax {
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.TransferHandler$DropLocation
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

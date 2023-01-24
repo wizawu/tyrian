@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class SecurityManager {
       public constructor()
       protected getClassContext(): java.lang.Class<unknown>[]
@@ -20,7 +19,11 @@ declare namespace java {
       public checkWrite(arg0: java.lang.String | string): void
       public checkDelete(arg0: java.lang.String | string): void
       public checkConnect(arg0: java.lang.String | string, arg1: number | java.lang.Integer): void
-      public checkConnect(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.lang.Object | any): void
+      public checkConnect(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: java.lang.Object | any
+      ): void
       public checkListen(arg0: number | java.lang.Integer): void
       public checkAccept(arg0: java.lang.String | string, arg1: number | java.lang.Integer): void
       public checkMulticast(arg0: java.net.InetAddress): void
@@ -36,6 +39,5 @@ declare namespace java {
       public checkSecurityAccess(arg0: java.lang.String | string): void
       public getThreadGroup(): java.lang.ThreadGroup
     }
-
   }
 }

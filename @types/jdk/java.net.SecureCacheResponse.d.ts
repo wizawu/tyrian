@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     abstract class SecureCacheResponse extends java.net.CacheResponse {
       public constructor()
       public abstract getCipherSuite(): java.lang.String
@@ -9,6 +8,5 @@ declare namespace java {
       public abstract getPeerPrincipal(): java.security.Principal
       public abstract getLocalPrincipal(): java.security.Principal
     }
-
   }
 }

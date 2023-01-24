@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace sampled {
-
       class LineEvent$Type {
         public static readonly OPEN: javax.sound.sampled.LineEvent$Type
         public static readonly CLOSE: javax.sound.sampled.LineEvent$Type
@@ -12,7 +11,6 @@ declare namespace javax {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

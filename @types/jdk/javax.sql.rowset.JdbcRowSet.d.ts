@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sql {
     namespace rowset {
-
       interface JdbcRowSet extends javax.sql.RowSet, javax.sql.rowset.Joinable {
         getShowDeleted(): boolean
         setShowDeleted(arg0: boolean | java.lang.Boolean): void
@@ -12,7 +11,6 @@ declare namespace javax {
         rollback(): void
         rollback(arg0: java.sql.Savepoint): void
       }
-
     }
   }
 }

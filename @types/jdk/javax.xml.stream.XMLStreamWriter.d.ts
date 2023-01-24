@@ -1,21 +1,37 @@
 declare namespace javax {
   namespace xml {
     namespace stream {
-
       interface XMLStreamWriter {
         writeStartElement(arg0: java.lang.String | string): void
         writeStartElement(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-        writeStartElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+        writeStartElement(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String | string
+        ): void
         writeEmptyElement(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-        writeEmptyElement(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+        writeEmptyElement(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String | string
+        ): void
         writeEmptyElement(arg0: java.lang.String | string): void
         writeEndElement(): void
         writeEndDocument(): void
         close(): void
         flush(): void
         writeAttribute(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-        writeAttribute(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): void
-        writeAttribute(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+        writeAttribute(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String | string,
+          arg3: java.lang.String | string
+        ): void
+        writeAttribute(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String | string
+        ): void
         writeNamespace(arg0: java.lang.String | string, arg1: java.lang.String | string): void
         writeDefaultNamespace(arg0: java.lang.String | string): void
         writeComment(arg0: java.lang.String | string): void
@@ -28,7 +44,11 @@ declare namespace javax {
         writeStartDocument(arg0: java.lang.String | string): void
         writeStartDocument(arg0: java.lang.String | string, arg1: java.lang.String | string): void
         writeCharacters(arg0: java.lang.String | string): void
-        writeCharacters(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        writeCharacters(
+          arg0: string[] | java.lang.Character[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
         getPrefix(arg0: java.lang.String | string): java.lang.String
         setPrefix(arg0: java.lang.String | string, arg1: java.lang.String | string): void
         setDefaultNamespace(arg0: java.lang.String | string): void
@@ -36,7 +56,6 @@ declare namespace javax {
         getNamespaceContext(): javax.xml.namespace.NamespaceContext
         getProperty(arg0: java.lang.String | string): java.lang.Object
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace jdk {
   namespace net {
-
     class SocketFlow$Status extends java.lang.Enum<jdk.net.SocketFlow$Status> {
       public static readonly NO_STATUS: jdk.net.SocketFlow$Status
       public static readonly OK: jdk.net.SocketFlow$Status
@@ -14,6 +13,5 @@ declare namespace jdk {
       public static valueOf(arg0: java.lang.String | string): jdk.net.SocketFlow$Status
       static from(arg0: number | java.lang.Integer): jdk.net.SocketFlow$Status
     }
-
   }
 }

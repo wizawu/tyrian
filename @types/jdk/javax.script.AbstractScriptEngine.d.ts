@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace script {
-
     abstract class AbstractScriptEngine implements javax.script.ScriptEngine {
       protected context: javax.script.ScriptContext
       public constructor()
@@ -17,6 +16,5 @@ declare namespace javax {
       public eval(arg0: java.lang.String | string): java.lang.Object
       protected getScriptContext(arg0: javax.script.Bindings): javax.script.ScriptContext
     }
-
   }
 }

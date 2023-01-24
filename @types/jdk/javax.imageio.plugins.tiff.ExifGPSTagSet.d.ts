@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
     namespace plugins {
       namespace tiff {
-
         class ExifGPSTagSet extends javax.imageio.plugins.tiff.TIFFTagSet {
           public static readonly TAG_GPS_VERSION_ID: int
           public static readonly GPS_VERSION_2_2: java.lang.String
@@ -58,7 +57,6 @@ declare namespace javax {
           public static readonly DIFFERENTIAL_CORRECTION_APPLIED: int
           public static getInstance(): javax.imageio.plugins.tiff.ExifGPSTagSet
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class OverlayLayout implements java.awt.LayoutManager2, java.io.Serializable {
       public constructor(arg0: java.awt.Container)
       public getTarget(): java.awt.Container
@@ -17,6 +16,5 @@ declare namespace javax {
       checkContainer(arg0: java.awt.Container): void
       checkRequests(): void
     }
-
   }
 }

@@ -1,12 +1,11 @@
 declare namespace java {
   namespace sql {
-
     interface Connection extends java.sql.Wrapper, java.lang.AutoCloseable {
-      public static readonly TRANSACTION_NONE: int
-      public static readonly TRANSACTION_READ_UNCOMMITTED: int
-      public static readonly TRANSACTION_READ_COMMITTED: int
-      public static readonly TRANSACTION_REPEATABLE_READ: int
-      public static readonly TRANSACTION_SERIALIZABLE: int
+      readonly TRANSACTION_NONE: int
+      readonly TRANSACTION_READ_UNCOMMITTED: int
+      readonly TRANSACTION_READ_COMMITTED: int
+      readonly TRANSACTION_REPEATABLE_READ: int
+      readonly TRANSACTION_SERIALIZABLE: int
       createStatement(): java.sql.Statement
       prepareStatement(arg0: java.lang.String | string): java.sql.PreparedStatement
       prepareCall(arg0: java.lang.String | string): java.sql.CallableStatement
@@ -27,21 +26,46 @@ declare namespace java {
       getWarnings(): java.sql.SQLWarning
       clearWarnings(): void
       createStatement(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.sql.Statement
-      prepareStatement(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.sql.PreparedStatement
-      prepareCall(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.sql.CallableStatement
-      getTypeMap(): java.util.Map<java.lang.String,java.lang.Class<unknown>>
-      setTypeMap(arg0: java.util.Map<java.lang.String,java.lang.Class<unknown>>): void
+      prepareStatement(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.sql.PreparedStatement
+      prepareCall(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.sql.CallableStatement
+      getTypeMap(): java.util.Map<java.lang.String, java.lang.Class<unknown>>
+      setTypeMap(arg0: java.util.Map<java.lang.String, java.lang.Class<unknown>>): void
       setHoldability(arg0: number | java.lang.Integer): void
       getHoldability(): number
       setSavepoint(): java.sql.Savepoint
       setSavepoint(arg0: java.lang.String | string): java.sql.Savepoint
       rollback(arg0: java.sql.Savepoint): void
       releaseSavepoint(arg0: java.sql.Savepoint): void
-      createStatement(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.sql.Statement
-      prepareStatement(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.sql.PreparedStatement
-      prepareCall(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.sql.CallableStatement
+      createStatement(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.sql.Statement
+      prepareStatement(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): java.sql.PreparedStatement
+      prepareCall(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): java.sql.CallableStatement
       prepareStatement(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.sql.PreparedStatement
-      prepareStatement(arg0: java.lang.String | string, arg1: number[] | java.lang.Integer[]): java.sql.PreparedStatement
+      prepareStatement(
+        arg0: java.lang.String | string,
+        arg1: number[] | java.lang.Integer[]
+      ): java.sql.PreparedStatement
       prepareStatement(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): java.sql.PreparedStatement
       createClob(): java.sql.Clob
       createBlob(): java.sql.Blob
@@ -57,15 +81,21 @@ declare namespace java {
       setSchema(arg0: java.lang.String | string): void
       getSchema(): java.lang.String
       abort(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda): void
-      setNetworkTimeout(arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda, arg1: number | java.lang.Integer): void
+      setNetworkTimeout(
+        arg0: java.util.concurrent.Executor | java.util.concurrent.Executor$$lambda,
+        arg1: number | java.lang.Integer
+      ): void
       getNetworkTimeout(): number
       beginRequest(): void
       endRequest(): void
-      setShardingKeyIfValid(arg0: java.sql.ShardingKey, arg1: java.sql.ShardingKey, arg2: number | java.lang.Integer): boolean
+      setShardingKeyIfValid(
+        arg0: java.sql.ShardingKey,
+        arg1: java.sql.ShardingKey,
+        arg2: number | java.lang.Integer
+      ): boolean
       setShardingKeyIfValid(arg0: java.sql.ShardingKey, arg1: number | java.lang.Integer): boolean
       setShardingKey(arg0: java.sql.ShardingKey, arg1: java.sql.ShardingKey): void
       setShardingKey(arg0: java.sql.ShardingKey): void
     }
-
   }
 }

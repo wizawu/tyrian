@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       interface MidiChannel {
         noteOn(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
         noteOff(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
@@ -30,7 +29,6 @@ declare namespace javax {
         setSolo(arg0: boolean | java.lang.Boolean): void
         getSolo(): boolean
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     interface ObjectOutput extends java.io.DataOutput, java.lang.AutoCloseable {
       writeObject(arg0: java.lang.Object | any): void
       write(arg0: number | java.lang.Integer): void
@@ -9,6 +8,5 @@ declare namespace java {
       flush(): void
       close(): void
     }
-
   }
 }

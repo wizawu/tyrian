@@ -1,6 +1,5 @@
 declare namespace java {
   namespace sql {
-
     interface SQLXML {
       free(): void
       getBinaryStream(): java.io.InputStream
@@ -12,6 +11,5 @@ declare namespace java {
       getSource<T extends javax.xml.transform.Source>(arg0: java.lang.Class<T>): T
       setResult<T extends javax.xml.transform.Result>(arg0: java.lang.Class<T>): T
     }
-
   }
 }

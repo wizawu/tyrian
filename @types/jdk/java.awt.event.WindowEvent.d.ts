@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
       class WindowEvent extends java.awt.event.ComponentEvent {
         public static readonly WINDOW_FIRST: int
         public static readonly WINDOW_OPENED: int
@@ -18,9 +17,20 @@ declare namespace java {
         opposite: java.awt.Window
         oldState: int
         newState: int
-        public constructor(arg0: java.awt.Window, arg1: number | java.lang.Integer, arg2: java.awt.Window, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+        public constructor(
+          arg0: java.awt.Window,
+          arg1: number | java.lang.Integer,
+          arg2: java.awt.Window,
+          arg3: number | java.lang.Integer,
+          arg4: number | java.lang.Integer
+        )
         public constructor(arg0: java.awt.Window, arg1: number | java.lang.Integer, arg2: java.awt.Window)
-        public constructor(arg0: java.awt.Window, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        public constructor(
+          arg0: java.awt.Window,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        )
         public constructor(arg0: java.awt.Window, arg1: number | java.lang.Integer)
         public getWindow(): java.awt.Window
         public getOppositeWindow(): java.awt.Window
@@ -28,7 +38,6 @@ declare namespace java {
         public getNewState(): number
         public paramString(): java.lang.String
       }
-
     }
   }
 }

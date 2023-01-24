@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
       class CountDownLatch {
         public constructor(arg0: number | java.lang.Integer)
         public await(): void
@@ -10,7 +9,6 @@ declare namespace java {
         public getCount(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

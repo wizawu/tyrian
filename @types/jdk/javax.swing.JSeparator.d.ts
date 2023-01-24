@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    class JSeparator extends javax.swing.JComponent implements javax.swing.SwingConstants, javax.accessibility.Accessible {
+    class JSeparator
+      extends javax.swing.JComponent
+      implements javax.swing.SwingConstants, javax.accessibility.Accessible
+    {
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
       public getUI(): javax.swing.plaf.SeparatorUI
@@ -14,6 +16,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

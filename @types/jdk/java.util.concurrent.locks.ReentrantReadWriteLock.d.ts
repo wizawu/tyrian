@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace locks {
-
         class ReentrantReadWriteLock implements java.util.concurrent.locks.ReadWriteLock, java.io.Serializable {
           readonly sync: java.util.concurrent.locks.ReentrantReadWriteLock$Sync
           public constructor()
@@ -24,12 +23,13 @@ declare namespace java {
           protected getQueuedThreads(): java.util.Collection<java.lang.Thread>
           public hasWaiters(arg0: java.util.concurrent.locks.Condition): boolean
           public getWaitQueueLength(arg0: java.util.concurrent.locks.Condition): number
-          protected getWaitingThreads(arg0: java.util.concurrent.locks.Condition): java.util.Collection<java.lang.Thread>
+          protected getWaitingThreads(
+            arg0: java.util.concurrent.locks.Condition
+          ): java.util.Collection<java.lang.Thread>
           public toString(): java.lang.String
           public writeLock(): java.util.concurrent.locks.Lock
           public readLock(): java.util.concurrent.locks.Lock
         }
-
       }
     }
   }

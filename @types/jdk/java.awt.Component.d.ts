@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     abstract class Component implements java.awt.image.ImageObserver, java.awt.MenuContainer, java.io.Serializable {
       peer: java.awt.peer.ComponentPeer
       parent: java.awt.Container
@@ -148,8 +147,18 @@ declare namespace java {
       public resize(arg0: java.awt.Dimension): void
       public getBounds(): java.awt.Rectangle
       public bounds(): java.awt.Rectangle
-      public setBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
-      public reshape(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public setBounds(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
+      public reshape(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       public setBounds(arg0: java.awt.Rectangle): void
       public getX(): number
       public getY(): number
@@ -198,21 +207,62 @@ declare namespace java {
       paintHeavyweightComponents(arg0: java.awt.Graphics): void
       public repaint(): void
       public repaint(arg0: number | java.lang.Long): void
-      public repaint(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
-      public repaint(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      public repaint(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
+      public repaint(
+        arg0: number | java.lang.Long,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): void
       public print(arg0: java.awt.Graphics): void
       public printAll(arg0: java.awt.Graphics): void
       lightweightPrint(arg0: java.awt.Graphics): void
       printHeavyweightComponents(arg0: java.awt.Graphics): void
-      public imageUpdate(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): boolean
+      public imageUpdate(
+        arg0: java.awt.Image,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      ): boolean
       public createImage(arg0: java.awt.image.ImageProducer): java.awt.Image
       public createImage(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.Image
-      public createVolatileImage(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.image.VolatileImage
-      public createVolatileImage(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.awt.ImageCapabilities): java.awt.image.VolatileImage
-      public prepareImage(arg0: java.awt.Image, arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): boolean
-      public prepareImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): boolean
-      public checkImage(arg0: java.awt.Image, arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): number
-      public checkImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda): number
+      public createVolatileImage(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): java.awt.image.VolatileImage
+      public createVolatileImage(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: java.awt.ImageCapabilities
+      ): java.awt.image.VolatileImage
+      public prepareImage(
+        arg0: java.awt.Image,
+        arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda
+      ): boolean
+      public prepareImage(
+        arg0: java.awt.Image,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda
+      ): boolean
+      public checkImage(
+        arg0: java.awt.Image,
+        arg1: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda
+      ): number
+      public checkImage(
+        arg0: java.awt.Image,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: java.awt.image.ImageObserver | java.awt.image.ImageObserver$$lambda
+      ): number
       createBufferStrategy(arg0: number | java.lang.Integer): void
       createBufferStrategy(arg0: number | java.lang.Integer, arg1: java.awt.BufferCapabilities): void
       getBufferStrategy(): java.awt.image.BufferStrategy
@@ -240,14 +290,24 @@ declare namespace java {
       public addFocusListener(arg0: java.awt.event.FocusListener): void
       public removeFocusListener(arg0: java.awt.event.FocusListener): void
       public getFocusListeners(): java.awt.event.FocusListener[]
-      public addHierarchyListener(arg0: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$lambda): void
-      public removeHierarchyListener(arg0: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$lambda): void
+      public addHierarchyListener(
+        arg0: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$lambda
+      ): void
+      public removeHierarchyListener(
+        arg0: java.awt.event.HierarchyListener | java.awt.event.HierarchyListener$$lambda
+      ): void
       public getHierarchyListeners(): java.awt.event.HierarchyListener[]
       public addHierarchyBoundsListener(arg0: java.awt.event.HierarchyBoundsListener): void
       public removeHierarchyBoundsListener(arg0: java.awt.event.HierarchyBoundsListener): void
       numListening(arg0: number | java.lang.Long): number
       countHierarchyMembers(): number
-      createHierarchyEvents(arg0: number | java.lang.Integer, arg1: java.awt.Component, arg2: java.awt.Container, arg3: number | java.lang.Long, arg4: boolean | java.lang.Boolean): number
+      createHierarchyEvents(
+        arg0: number | java.lang.Integer,
+        arg1: java.awt.Component,
+        arg2: java.awt.Container,
+        arg3: number | java.lang.Long,
+        arg4: boolean | java.lang.Boolean
+      ): number
       public getHierarchyBoundsListeners(): java.awt.event.HierarchyBoundsListener[]
       adjustListeningChildrenOnParent(arg0: number | java.lang.Long, arg1: number | java.lang.Integer): void
       public addKeyListener(arg0: java.awt.event.KeyListener): void
@@ -259,8 +319,12 @@ declare namespace java {
       public addMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
       public removeMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
       public getMouseMotionListeners(): java.awt.event.MouseMotionListener[]
-      public addMouseWheelListener(arg0: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$lambda): void
-      public removeMouseWheelListener(arg0: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$lambda): void
+      public addMouseWheelListener(
+        arg0: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$lambda
+      ): void
+      public removeMouseWheelListener(
+        arg0: java.awt.event.MouseWheelListener | java.awt.event.MouseWheelListener$$lambda
+      ): void
       public getMouseWheelListeners(): java.awt.event.MouseWheelListener[]
       public addInputMethodListener(arg0: java.awt.event.InputMethodListener): void
       public removeInputMethodListener(arg0: java.awt.event.InputMethodListener): void
@@ -284,12 +348,32 @@ declare namespace java {
       protected processHierarchyEvent(arg0: java.awt.event.HierarchyEvent): void
       protected processHierarchyBoundsEvent(arg0: java.awt.event.HierarchyEvent): void
       public handleEvent(arg0: java.awt.Event): boolean
-      public mouseDown(arg0: java.awt.Event, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
-      public mouseDrag(arg0: java.awt.Event, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
+      public mouseDown(
+        arg0: java.awt.Event,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): boolean
+      public mouseDrag(
+        arg0: java.awt.Event,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): boolean
       public mouseUp(arg0: java.awt.Event, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
-      public mouseMove(arg0: java.awt.Event, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
-      public mouseEnter(arg0: java.awt.Event, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
-      public mouseExit(arg0: java.awt.Event, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
+      public mouseMove(
+        arg0: java.awt.Event,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): boolean
+      public mouseEnter(
+        arg0: java.awt.Event,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): boolean
+      public mouseExit(
+        arg0: java.awt.Event,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): boolean
       public keyDown(arg0: java.awt.Event, arg1: number | java.lang.Integer): boolean
       public keyUp(arg0: java.awt.Event, arg1: number | java.lang.Integer): boolean
       public action(arg0: java.awt.Event, arg1: java.lang.Object | any): boolean
@@ -303,7 +387,10 @@ declare namespace java {
       isFocusTraversableOverridden(): boolean
       public setFocusTraversalKeys(arg0: number | java.lang.Integer, arg1: java.util.Set<java.awt.AWTKeyStroke>): void
       public getFocusTraversalKeys(arg0: number | java.lang.Integer): java.util.Set<java.awt.AWTKeyStroke>
-      setFocusTraversalKeys_NoIDCheck(arg0: number | java.lang.Integer, arg1: java.util.Set<java.awt.AWTKeyStroke>): void
+      setFocusTraversalKeys_NoIDCheck(
+        arg0: number | java.lang.Integer,
+        arg1: java.util.Set<java.awt.AWTKeyStroke>
+      ): void
       getFocusTraversalKeys_NoIDCheck(arg0: number | java.lang.Integer): java.util.Set<java.awt.AWTKeyStroke>
       public areFocusTraversalKeysSet(arg0: number | java.lang.Integer): boolean
       public setFocusTraversalKeysEnabled(arg0: boolean | java.lang.Boolean): void
@@ -317,7 +404,11 @@ declare namespace java {
       protected requestFocusInWindow(arg0: boolean | java.lang.Boolean): boolean
       requestFocusInWindow(arg0: boolean | java.lang.Boolean, arg1: java.awt.event.FocusEvent$Cause): boolean
       requestFocusHelper(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean): boolean
-      requestFocusHelper(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean, arg2: java.awt.event.FocusEvent$Cause): boolean
+      requestFocusHelper(
+        arg0: boolean | java.lang.Boolean,
+        arg1: boolean | java.lang.Boolean,
+        arg2: java.awt.event.FocusEvent$Cause
+      ): boolean
       static setRequestFocusController(arg0: sun.awt.RequestFocusController): void
       public getFocusCycleRootAncestor(): java.awt.Container
       public isFocusCycleRoot(arg0: java.awt.Container): boolean
@@ -343,21 +434,67 @@ declare namespace java {
       public list(arg0: java.io.PrintWriter): void
       public list(arg0: java.io.PrintWriter, arg1: number | java.lang.Integer): void
       getNativeContainer(): java.awt.Container
-      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public addPropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public removePropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
-      public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public addPropertyChangeListener(
+        arg0: java.lang.String | string,
+        arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public removePropertyChangeListener(
+        arg0: java.lang.String | string,
+        arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       public getPropertyChangeListeners(arg0: java.lang.String | string): java.beans.PropertyChangeListener[]
-      protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
-      protected firePropertyChange(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
-      protected firePropertyChange(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-      public firePropertyChange(arg0: java.lang.String | string, arg1: number | java.lang.Byte, arg2: number | java.lang.Byte): void
-      public firePropertyChange(arg0: java.lang.String | string, arg1: string | java.lang.Character, arg2: string | java.lang.Character): void
-      public firePropertyChange(arg0: java.lang.String | string, arg1: number | java.lang.Short, arg2: number | java.lang.Short): void
-      public firePropertyChange(arg0: java.lang.String | string, arg1: number | java.lang.Long, arg2: number | java.lang.Long): void
-      public firePropertyChange(arg0: java.lang.String | string, arg1: number | java.lang.Float, arg2: number | java.lang.Float): void
-      public firePropertyChange(arg0: java.lang.String | string, arg1: number | java.lang.Double, arg2: number | java.lang.Double): void
+      protected firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: java.lang.Object | any
+      ): void
+      protected firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: boolean | java.lang.Boolean,
+        arg2: boolean | java.lang.Boolean
+      ): void
+      protected firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
+      public firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Byte,
+        arg2: number | java.lang.Byte
+      ): void
+      public firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: string | java.lang.Character,
+        arg2: string | java.lang.Character
+      ): void
+      public firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Short,
+        arg2: number | java.lang.Short
+      ): void
+      public firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Long,
+        arg2: number | java.lang.Long
+      ): void
+      public firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Float,
+        arg2: number | java.lang.Float
+      ): void
+      public firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Double,
+        arg2: number | java.lang.Double
+      ): void
       public setComponentOrientation(arg0: java.awt.ComponentOrientation): void
       public getComponentOrientation(): java.awt.ComponentOrientation
       public applyComponentOrientation(arg0: java.awt.ComponentOrientation): void
@@ -390,6 +527,5 @@ declare namespace java {
       public setMixingCutoutShape(arg0: java.awt.Shape): void
       updateZOrder(): void
     }
-
   }
 }

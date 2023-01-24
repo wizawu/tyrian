@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     class StreamTokenizer {
       public ttype: int
       public static readonly TT_EOF: int
@@ -28,6 +27,5 @@ declare namespace java {
       public lineno(): number
       public toString(): java.lang.String
     }
-
   }
 }

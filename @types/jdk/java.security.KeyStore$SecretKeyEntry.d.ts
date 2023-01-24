@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     class KeyStore$SecretKeyEntry implements java.security.KeyStore$Entry {
       public constructor(arg0: javax.crypto.SecretKey)
       public constructor(arg0: javax.crypto.SecretKey, arg1: java.util.Set<java.security.KeyStore$Entry$Attribute>)
@@ -8,6 +7,5 @@ declare namespace java {
       public getAttributes(): java.util.Set<java.security.KeyStore$Entry$Attribute>
       public toString(): java.lang.String
     }
-
   }
 }

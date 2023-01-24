@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace lang {
     namespace model {
-
       class SourceVersion extends java.lang.Enum<javax.lang.model.SourceVersion> {
         public static readonly RELEASE_0: javax.lang.model.SourceVersion
         public static readonly RELEASE_1: javax.lang.model.SourceVersion
@@ -25,7 +24,6 @@ declare namespace javax {
         public static isKeyword(arg0: string | java.lang.CharSequence): boolean
         public static isKeyword(arg0: string | java.lang.CharSequence, arg1: javax.lang.model.SourceVersion): boolean
       }
-
     }
   }
 }

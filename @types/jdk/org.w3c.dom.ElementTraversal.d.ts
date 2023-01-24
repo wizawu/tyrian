@@ -1,7 +1,6 @@
 declare namespace org {
   namespace w3c {
     namespace dom {
-
       interface ElementTraversal {
         getFirstElementChild(): org.w3c.dom.Element
         getLastElementChild(): org.w3c.dom.Element
@@ -9,7 +8,6 @@ declare namespace org {
         getNextElementSibling(): org.w3c.dom.Element
         getChildElementCount(): number
       }
-
     }
   }
 }

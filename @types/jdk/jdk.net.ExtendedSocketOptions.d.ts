@@ -1,6 +1,5 @@
 declare namespace jdk {
   namespace net {
-
     class ExtendedSocketOptions {
       public static readonly SO_FLOW_SLA: java.net.SocketOption<jdk.net.SocketFlow>
       public static readonly TCP_QUICKACK: java.net.SocketOption<java.lang.Boolean>
@@ -9,6 +8,5 @@ declare namespace jdk {
       public static readonly TCP_KEEPCOUNT: java.net.SocketOption<java.lang.Integer>
       static options(): java.util.Set<java.net.SocketOption<unknown>>
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class Currency implements java.io.Serializable {
       static formatVersion: int
       static dataVersion: int
@@ -20,6 +19,5 @@ declare namespace java {
       public getDisplayName(arg0: java.util.Locale): java.lang.String
       public toString(): java.lang.String
     }
-
   }
 }

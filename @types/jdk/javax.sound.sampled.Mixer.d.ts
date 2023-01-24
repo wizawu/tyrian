@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace sampled {
-
       interface Mixer extends javax.sound.sampled.Line {
         getMixerInfo(): javax.sound.sampled.Mixer$Info
         getSourceLineInfo(): javax.sound.sampled.Line$Info[]
@@ -17,7 +16,6 @@ declare namespace javax {
         unsynchronize(arg0: javax.sound.sampled.Line[]): void
         isSynchronizationSupported(arg0: javax.sound.sampled.Line[], arg1: boolean | java.lang.Boolean): boolean
       }
-
     }
   }
 }

@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace source {
       namespace tree {
-
         interface MethodTree extends com.sun.source.tree.Tree {
           getModifiers(): com.sun.source.tree.ModifiersTree
           getName(): javax.lang.model.element.Name
@@ -14,7 +13,6 @@ declare namespace com {
           getBody(): com.sun.source.tree.BlockTree
           getDefaultValue(): com.sun.source.tree.Tree
         }
-
       }
     }
   }

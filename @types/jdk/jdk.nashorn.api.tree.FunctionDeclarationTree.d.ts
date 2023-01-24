@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace tree {
-
         interface FunctionDeclarationTree extends jdk.nashorn.api.tree.StatementTree {
           getName(): jdk.nashorn.api.tree.IdentifierTree
           getParameters(): java.util.List<jdk.nashorn.api.tree.ExpressionTree>
@@ -10,7 +9,6 @@ declare namespace jdk {
           isStrict(): boolean
           isGenerator(): boolean
         }
-
       }
     }
   }

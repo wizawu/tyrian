@@ -1,6 +1,5 @@
 declare namespace java {
   namespace beans {
-
     class PropertyEditorSupport implements java.beans.PropertyEditor {
       public constructor()
       public constructor(arg0: java.lang.Object | any)
@@ -16,10 +15,13 @@ declare namespace java {
       public getTags(): java.lang.String[]
       public getCustomEditor(): java.awt.Component
       public supportsCustomEditor(): boolean
-      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public addPropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public removePropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       public firePropertyChange(): void
     }
-
   }
 }

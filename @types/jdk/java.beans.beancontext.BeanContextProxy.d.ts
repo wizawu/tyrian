@@ -1,7 +1,6 @@
 declare namespace java {
   namespace beans {
     namespace beancontext {
-
       interface BeanContextProxy$$lambda {
         (): java.beans.beancontext.BeanContextChild
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface BeanContextProxy {
         getBeanContextProxy(): java.beans.beancontext.BeanContextChild
       }
-
     }
   }
 }

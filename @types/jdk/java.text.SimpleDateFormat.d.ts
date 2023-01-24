@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class SimpleDateFormat extends java.text.DateFormat {
       static readonly serialVersionUID: long
       static readonly currentSerialVersion: int
@@ -12,7 +11,11 @@ declare namespace java {
       public constructor(arg0: java.lang.String | string, arg1: java.text.DateFormatSymbols)
       public set2DigitYearStart(arg0: java.util.Date): void
       public get2DigitYearStart(): java.util.Date
-      public format(arg0: java.util.Date, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+      public format(
+        arg0: java.util.Date,
+        arg1: java.lang.StringBuffer,
+        arg2: java.text.FieldPosition
+      ): java.lang.StringBuffer
       public formatToCharacterIterator(arg0: java.lang.Object | any): java.text.AttributedCharacterIterator
       public parse(arg0: java.lang.String | string, arg1: java.text.ParsePosition): java.util.Date
       public toPattern(): java.lang.String
@@ -25,6 +28,5 @@ declare namespace java {
       public hashCode(): number
       public equals(arg0: java.lang.Object | any): boolean
     }
-
   }
 }

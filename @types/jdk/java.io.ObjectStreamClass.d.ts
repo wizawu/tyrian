@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     class ObjectStreamClass implements java.io.Serializable {
       public static readonly NO_FIELDS: java.io.ObjectStreamField[]
       public static lookup(arg0: java.lang.Class<unknown>): java.io.ObjectStreamClass
@@ -13,8 +12,17 @@ declare namespace java {
       public toString(): java.lang.String
       static lookup(arg0: java.lang.Class<unknown>, arg1: boolean | java.lang.Boolean): java.io.ObjectStreamClass
       constructor()
-      initProxy(arg0: java.lang.Class<unknown>, arg1: java.lang.ClassNotFoundException, arg2: java.io.ObjectStreamClass): void
-      initNonProxy(arg0: java.io.ObjectStreamClass, arg1: java.lang.Class<unknown>, arg2: java.lang.ClassNotFoundException, arg3: java.io.ObjectStreamClass): void
+      initProxy(
+        arg0: java.lang.Class<unknown>,
+        arg1: java.lang.ClassNotFoundException,
+        arg2: java.io.ObjectStreamClass
+      ): void
+      initNonProxy(
+        arg0: java.io.ObjectStreamClass,
+        arg1: java.lang.Class<unknown>,
+        arg2: java.lang.ClassNotFoundException,
+        arg3: java.io.ObjectStreamClass
+      ): void
       readNonProxy(arg0: java.io.ObjectInputStream): void
       writeNonProxy(arg0: java.io.ObjectOutputStream): void
       getResolveException(): java.lang.ClassNotFoundException
@@ -52,8 +60,6 @@ declare namespace java {
       getObjFieldValues(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[]): void
       checkObjFieldValueTypes(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[]): void
       setObjFieldValues(arg0: java.lang.Object | any, arg1: java.lang.Object[] | any[]): void
-      static processQueue(arg0: java.lang.ref.ReferenceQueue<java.lang.Class<unknown>>, arg1: java.util.concurrent.ConcurrentMap<java.lang.ref.WeakReference<java.lang.Class<unknown>>,unknown>): void
     }
-
   }
 }

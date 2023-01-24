@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     abstract class MenuComponent implements java.io.Serializable {
       peer: java.awt.peer.MenuComponentPeer
       parent: java.awt.MenuContainer
@@ -33,6 +32,5 @@ declare namespace java {
       getAccessibleChildIndex(arg0: java.awt.MenuComponent): number
       getAccessibleStateSet(): javax.accessibility.AccessibleStateSet
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace crypto {
-
       interface KeySelectorResult$$lambda {
         (): java.security.Key
       }
@@ -9,7 +8,6 @@ declare namespace javax {
       interface KeySelectorResult {
         getKey(): java.security.Key
       }
-
     }
   }
 }

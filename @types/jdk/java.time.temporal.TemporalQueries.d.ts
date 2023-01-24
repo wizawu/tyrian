@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace temporal {
-
       class TemporalQueries {
         static readonly ZONE_ID: java.time.temporal.TemporalQuery<java.time.ZoneId>
         static readonly CHRONO: java.time.temporal.TemporalQuery<java.time.chrono.Chronology>
@@ -18,7 +17,6 @@ declare namespace java {
         public static localDate(): java.time.temporal.TemporalQuery<java.time.LocalDate>
         public static localTime(): java.time.temporal.TemporalQuery<java.time.LocalTime>
       }
-
     }
   }
 }

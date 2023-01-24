@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace dnd {
-
       class DropTargetContext implements java.io.Serializable {
         constructor(arg0: java.awt.dnd.DropTarget)
         public getDropTarget(): java.awt.dnd.DropTarget
@@ -20,9 +19,11 @@ declare namespace java {
         protected getTransferable(): java.awt.datatransfer.Transferable
         getDropTargetContextPeer(): java.awt.dnd.peer.DropTargetContextPeer
         setDropTargetContextPeer(arg0: java.awt.dnd.peer.DropTargetContextPeer): void
-        protected createTransferableProxy(arg0: java.awt.datatransfer.Transferable, arg1: boolean | java.lang.Boolean): java.awt.datatransfer.Transferable
+        protected createTransferableProxy(
+          arg0: java.awt.datatransfer.Transferable,
+          arg1: boolean | java.lang.Boolean
+        ): java.awt.datatransfer.Transferable
       }
-
     }
   }
 }

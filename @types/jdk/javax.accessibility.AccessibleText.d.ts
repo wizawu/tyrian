@@ -1,10 +1,9 @@
 declare namespace javax {
   namespace accessibility {
-
     interface AccessibleText {
-      public static readonly CHARACTER: int
-      public static readonly WORD: int
-      public static readonly SENTENCE: int
+      readonly CHARACTER: int
+      readonly WORD: int
+      readonly SENTENCE: int
       getIndexAtPoint(arg0: java.awt.Point): number
       getCharacterBounds(arg0: number | java.lang.Integer): java.awt.Rectangle
       getCharCount(): number
@@ -17,6 +16,5 @@ declare namespace javax {
       getSelectionEnd(): number
       getSelectedText(): java.lang.String
     }
-
   }
 }

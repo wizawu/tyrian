@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace traversal {
-
         interface TreeWalker {
           getRoot(): org.w3c.dom.Node
           getWhatToShow(): number
@@ -18,7 +17,6 @@ declare namespace org {
           previousNode(): org.w3c.dom.Node
           nextNode(): org.w3c.dom.Node
         }
-
       }
     }
   }

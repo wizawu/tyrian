@@ -1,14 +1,27 @@
 declare namespace java {
   namespace time {
-
-    class ZoneOffset extends java.time.ZoneId implements java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.ZoneOffset>, java.io.Serializable {
+    class ZoneOffset
+      extends java.time.ZoneId
+      implements
+        java.time.temporal.TemporalAccessor,
+        java.time.temporal.TemporalAdjuster,
+        java.lang.Comparable<java.time.ZoneOffset>,
+        java.io.Serializable
+    {
       public static readonly UTC: java.time.ZoneOffset
       public static readonly MIN: java.time.ZoneOffset
       public static readonly MAX: java.time.ZoneOffset
       public static of(arg0: java.lang.String | string): java.time.ZoneOffset
       public static ofHours(arg0: number | java.lang.Integer): java.time.ZoneOffset
-      public static ofHoursMinutes(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.time.ZoneOffset
-      public static ofHoursMinutesSeconds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.time.ZoneOffset
+      public static ofHoursMinutes(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): java.time.ZoneOffset
+      public static ofHoursMinutesSeconds(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.time.ZoneOffset
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.ZoneOffset
       public static ofTotalSeconds(arg0: number | java.lang.Integer): java.time.ZoneOffset
       public getTotalSeconds(): number
@@ -29,6 +42,5 @@ declare namespace java {
       static readExternal(arg0: java.io.DataInput): java.time.ZoneOffset
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

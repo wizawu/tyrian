@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace net {
     namespace ssl {
-
       interface SSLSession {
         getId(): number[]
         getSessionContext(): javax.net.ssl.SSLSessionContext
@@ -25,7 +24,6 @@ declare namespace javax {
         getPacketBufferSize(): number
         getApplicationBufferSize(): number
       }
-
     }
   }
 }

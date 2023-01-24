@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace font {
-
       class TextAttribute extends java.text.AttributedCharacterIterator$Attribute {
         static readonly serialVersionUID: long
         public static readonly FAMILY: java.awt.font.TextAttribute
@@ -66,7 +65,6 @@ declare namespace java {
         protected constructor(arg0: java.lang.String | string)
         protected readResolve(): java.lang.Object
       }
-
     }
   }
 }

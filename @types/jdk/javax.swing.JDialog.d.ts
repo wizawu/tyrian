@@ -1,7 +1,13 @@
 declare namespace javax {
   namespace swing {
-
-    class JDialog extends java.awt.Dialog implements javax.swing.WindowConstants, javax.accessibility.Accessible, javax.swing.RootPaneContainer, javax.swing.TransferHandler$HasGetTransferHandler {
+    class JDialog
+      extends java.awt.Dialog
+      implements
+        javax.swing.WindowConstants,
+        javax.accessibility.Accessible,
+        javax.swing.RootPaneContainer,
+        javax.swing.TransferHandler$HasGetTransferHandler
+    {
       protected rootPane: javax.swing.JRootPane
       protected rootPaneCheckingEnabled: boolean
       protected accessibleContext: javax.accessibility.AccessibleContext
@@ -10,17 +16,32 @@ declare namespace javax {
       public constructor(arg0: java.awt.Frame, arg1: boolean | java.lang.Boolean)
       public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string)
       public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean)
-      public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean, arg3: java.awt.GraphicsConfiguration)
+      public constructor(
+        arg0: java.awt.Frame,
+        arg1: java.lang.String | string,
+        arg2: boolean | java.lang.Boolean,
+        arg3: java.awt.GraphicsConfiguration
+      )
       public constructor(arg0: java.awt.Dialog)
       public constructor(arg0: java.awt.Dialog, arg1: boolean | java.lang.Boolean)
       public constructor(arg0: java.awt.Dialog, arg1: java.lang.String | string)
       public constructor(arg0: java.awt.Dialog, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean)
-      public constructor(arg0: java.awt.Dialog, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean, arg3: java.awt.GraphicsConfiguration)
+      public constructor(
+        arg0: java.awt.Dialog,
+        arg1: java.lang.String | string,
+        arg2: boolean | java.lang.Boolean,
+        arg3: java.awt.GraphicsConfiguration
+      )
       public constructor(arg0: java.awt.Window)
       public constructor(arg0: java.awt.Window, arg1: java.awt.Dialog$ModalityType)
       public constructor(arg0: java.awt.Window, arg1: java.lang.String | string)
       public constructor(arg0: java.awt.Window, arg1: java.lang.String | string, arg2: java.awt.Dialog$ModalityType)
-      public constructor(arg0: java.awt.Window, arg1: java.lang.String | string, arg2: java.awt.Dialog$ModalityType, arg3: java.awt.GraphicsConfiguration)
+      public constructor(
+        arg0: java.awt.Window,
+        arg1: java.lang.String | string,
+        arg2: java.awt.Dialog$ModalityType,
+        arg3: java.awt.GraphicsConfiguration
+      )
       protected dialogInit(): void
       protected createRootPane(): javax.swing.JRootPane
       protected processWindowEvent(arg0: java.awt.event.WindowEvent): void
@@ -45,12 +66,17 @@ declare namespace javax {
       public getGlassPane(): java.awt.Component
       public setGlassPane(arg0: java.awt.Component): void
       public getGraphics(): java.awt.Graphics
-      public repaint(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      public repaint(
+        arg0: number | java.lang.Long,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): void
       public static setDefaultLookAndFeelDecorated(arg0: boolean | java.lang.Boolean): void
       public static isDefaultLookAndFeelDecorated(): boolean
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

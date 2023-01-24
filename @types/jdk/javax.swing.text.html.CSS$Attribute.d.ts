@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace text {
       namespace html {
-
         class CSS$Attribute {
           public static readonly BACKGROUND: javax.swing.text.html.CSS$Attribute
           public static readonly BACKGROUND_ATTACHMENT: javax.swing.text.html.CSS$Attribute
@@ -76,7 +75,6 @@ declare namespace javax {
           public getDefaultValue(): java.lang.String
           public isInherited(): boolean
         }
-
       }
     }
   }

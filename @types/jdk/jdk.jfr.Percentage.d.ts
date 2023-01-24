@@ -1,8 +1,5 @@
 declare namespace jdk {
   namespace jfr {
-
-    interface Percentage extends java.lang.annotation.Annotation {
-    }
-
+    interface Percentage extends java.lang.annotation.Annotation {}
   }
 }

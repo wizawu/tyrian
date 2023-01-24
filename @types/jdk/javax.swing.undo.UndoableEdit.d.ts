@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace undo {
-
       interface UndoableEdit {
         undo(): void
         canUndo(): boolean
@@ -15,7 +14,6 @@ declare namespace javax {
         getUndoPresentationName(): java.lang.String
         getRedoPresentationName(): java.lang.String
       }
-
     }
   }
 }

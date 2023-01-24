@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicInternalFrameUI extends javax.swing.plaf.InternalFrameUI {
           protected frame: javax.swing.JInternalFrame
           protected borderListener: javax.swing.event.MouseInputAdapter
@@ -72,7 +71,6 @@ declare namespace javax {
           protected createComponentListener(): java.awt.event.ComponentListener
           protected createGlassPaneDispatcher(): javax.swing.event.MouseInputListener
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     interface Certificate {
       getGuarantor(): java.security.Principal
       getPrincipal(): java.security.Principal
@@ -10,6 +9,5 @@ declare namespace java {
       getFormat(): java.lang.String
       toString(arg0: boolean | java.lang.Boolean): java.lang.String
     }
-
   }
 }

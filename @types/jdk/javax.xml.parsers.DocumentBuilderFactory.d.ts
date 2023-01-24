@@ -1,12 +1,14 @@
 declare namespace javax {
   namespace xml {
     namespace parsers {
-
       abstract class DocumentBuilderFactory {
         protected constructor()
         public static newDefaultInstance(): javax.xml.parsers.DocumentBuilderFactory
         public static newInstance(): javax.xml.parsers.DocumentBuilderFactory
-        public static newInstance(arg0: java.lang.String | string, arg1: java.lang.ClassLoader): javax.xml.parsers.DocumentBuilderFactory
+        public static newInstance(
+          arg0: java.lang.String | string,
+          arg1: java.lang.ClassLoader
+        ): javax.xml.parsers.DocumentBuilderFactory
         public abstract newDocumentBuilder(): javax.xml.parsers.DocumentBuilder
         public setNamespaceAware(arg0: boolean | java.lang.Boolean): void
         public setValidating(arg0: boolean | java.lang.Boolean): void
@@ -29,7 +31,6 @@ declare namespace javax {
         public setXIncludeAware(arg0: boolean | java.lang.Boolean): void
         public isXIncludeAware(): boolean
       }
-
     }
   }
 }

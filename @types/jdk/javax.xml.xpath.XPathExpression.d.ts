@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace xpath {
-
       interface XPathExpression {
         evaluate(arg0: java.lang.Object | any, arg1: javax.xml.namespace.QName): java.lang.Object
         evaluate(arg0: java.lang.Object | any): java.lang.String
@@ -12,7 +11,6 @@ declare namespace javax {
         evaluateExpression<T>(arg0: org.xml.sax.InputSource, arg1: java.lang.Class<T>): T
         evaluateExpression(arg0: org.xml.sax.InputSource): javax.xml.xpath.XPathEvaluationResult<unknown>
       }
-
     }
   }
 }

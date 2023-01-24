@@ -1,9 +1,13 @@
 declare namespace java {
   namespace lang {
-
     class Module implements java.lang.reflect.AnnotatedElement {
       static readonly $assertionsDisabled: boolean
-      constructor(arg0: java.lang.ModuleLayer, arg1: java.lang.ClassLoader, arg2: java.lang.module.ModuleDescriptor, arg3: java.net.URI)
+      constructor(
+        arg0: java.lang.ModuleLayer,
+        arg1: java.lang.ClassLoader,
+        arg2: java.lang.module.ModuleDescriptor,
+        arg3: java.net.URI
+      )
       constructor(arg0: java.lang.ClassLoader)
       constructor(arg0: java.lang.ClassLoader, arg1: java.lang.module.ModuleDescriptor)
       public isNamed(): boolean
@@ -37,13 +41,16 @@ declare namespace java {
       implAddUses(arg0: java.lang.Class<unknown>): void
       public canUse(arg0: java.lang.Class<unknown>): boolean
       public getPackages(): java.util.Set<java.lang.String>
-      static defineModules(arg0: java.lang.module.Configuration, arg1: java.util.function$.Function<java.lang.String,java.lang.ClassLoader>, arg2: java.lang.ModuleLayer): java.util.Map<java.lang.String,java.lang.Module>
+      static defineModules(
+        arg0: java.lang.module.Configuration,
+        arg1: java.util.function$.Function<java.lang.String, java.lang.ClassLoader>,
+        arg2: java.lang.ModuleLayer
+      ): java.util.Map<java.lang.String, java.lang.Module>
       public getAnnotation<T extends java.lang.annotation.Annotation>(arg0: java.lang.Class<T>): T
       public getAnnotations(): java.lang.annotation.Annotation[]
       public getDeclaredAnnotations(): java.lang.annotation.Annotation[]
       public getResourceAsStream(arg0: java.lang.String | string): java.io.InputStream
       public toString(): java.lang.String
     }
-
   }
 }

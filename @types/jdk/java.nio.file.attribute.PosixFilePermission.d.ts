@@ -2,7 +2,6 @@ declare namespace java {
   namespace nio {
     namespace file {
       namespace attribute {
-
         class PosixFilePermission extends java.lang.Enum<java.nio.file.attribute.PosixFilePermission> {
           public static readonly OWNER_READ: java.nio.file.attribute.PosixFilePermission
           public static readonly OWNER_WRITE: java.nio.file.attribute.PosixFilePermission
@@ -16,7 +15,6 @@ declare namespace java {
           public static values(): java.nio.file.attribute.PosixFilePermission[]
           public static valueOf(arg0: java.lang.String | string): java.nio.file.attribute.PosixFilePermission
         }
-
       }
     }
   }

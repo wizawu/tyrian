@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     abstract class Signature extends java.security.SignatureSpi {
       provider: java.security.Provider
       protected static readonly UNINITIALIZED: int
@@ -9,7 +8,10 @@ declare namespace java {
       protected state: int
       protected constructor(arg0: java.lang.String | string)
       public static getInstance(arg0: java.lang.String | string): java.security.Signature
-      public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string): java.security.Signature
+      public static getInstance(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string
+      ): java.security.Signature
       public static getInstance(arg0: java.lang.String | string, arg1: java.security.Provider): java.security.Signature
       public getProvider(): java.security.Provider
       chooseFirstProvider(): void
@@ -19,14 +21,30 @@ declare namespace java {
       initVerify(arg0: java.security.cert.Certificate, arg1: java.security.spec.AlgorithmParameterSpec): void
       public initSign(arg0: java.security.PrivateKey): void
       public initSign(arg0: java.security.PrivateKey, arg1: java.security.SecureRandom): void
-      initSign(arg0: java.security.PrivateKey, arg1: java.security.spec.AlgorithmParameterSpec, arg2: java.security.SecureRandom): void
+      initSign(
+        arg0: java.security.PrivateKey,
+        arg1: java.security.spec.AlgorithmParameterSpec,
+        arg2: java.security.SecureRandom
+      ): void
       public sign(): number[]
-      public sign(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public sign(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public verify(arg0: number[] | java.lang.Byte[]): boolean
-      public verify(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
+      public verify(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): boolean
       public update(arg0: number | java.lang.Byte): void
       public update(arg0: number[] | java.lang.Byte[]): void
-      public update(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public update(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public update(arg0: java.nio.ByteBuffer): void
       public getAlgorithm(): java.lang.String
       public toString(): java.lang.String
@@ -36,6 +54,5 @@ declare namespace java {
       public getParameter(arg0: java.lang.String | string): java.lang.Object
       public clone(): java.lang.Object
     }
-
   }
 }

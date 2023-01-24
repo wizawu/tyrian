@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class DecimalFormatSymbols implements java.lang.Cloneable, java.io.Serializable {
       static readonly serialVersionUID: long
       public constructor()
@@ -44,6 +43,5 @@ declare namespace java {
       public equals(arg0: java.lang.Object | any): boolean
       public hashCode(): number
     }
-
   }
 }

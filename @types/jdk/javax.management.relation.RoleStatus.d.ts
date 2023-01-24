@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace relation {
-
       class RoleStatus {
         public static readonly NO_ROLE_WITH_NAME: int
         public static readonly ROLE_NOT_READABLE: int
@@ -13,7 +12,6 @@ declare namespace javax {
         public constructor()
         public static isRoleStatus(arg0: number | java.lang.Integer): boolean
       }
-
     }
   }
 }

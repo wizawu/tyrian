@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace sampled {
-
       class AudioFormat$Encoding {
         public static readonly PCM_SIGNED: javax.sound.sampled.AudioFormat$Encoding
         public static readonly PCM_UNSIGNED: javax.sound.sampled.AudioFormat$Encoding
@@ -13,7 +12,6 @@ declare namespace javax {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

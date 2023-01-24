@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace locks {
-
         class ReentrantReadWriteLock$ReadLock implements java.util.concurrent.locks.Lock, java.io.Serializable {
           protected constructor(arg0: java.util.concurrent.locks.ReentrantReadWriteLock)
           public lock(): void
@@ -13,7 +12,6 @@ declare namespace java {
           public newCondition(): java.util.concurrent.locks.Condition
           public toString(): java.lang.String
         }
-
       }
     }
   }

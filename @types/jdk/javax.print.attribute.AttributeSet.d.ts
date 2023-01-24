@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace print {
     namespace attribute {
-
       interface AttributeSet {
         get(arg0: java.lang.Class<unknown>): javax.print.attribute.Attribute
         add(arg0: javax.print.attribute.Attribute): boolean
@@ -17,7 +16,6 @@ declare namespace javax {
         equals(arg0: java.lang.Object | any): boolean
         hashCode(): number
       }
-
     }
   }
 }

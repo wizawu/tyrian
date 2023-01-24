@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       class ChangedCharSetException extends java.io.IOException {
         charSetSpec: java.lang.String
         charSetKey: boolean
@@ -9,7 +8,6 @@ declare namespace javax {
         public getCharSetSpec(): java.lang.String
         public keyEqualsCharSet(): boolean
       }
-
     }
   }
 }

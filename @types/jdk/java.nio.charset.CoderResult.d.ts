@@ -1,7 +1,6 @@
 declare namespace java {
   namespace nio {
     namespace charset {
-
       class CoderResult {
         public static readonly UNDERFLOW: java.nio.charset.CoderResult
         public static readonly OVERFLOW: java.nio.charset.CoderResult
@@ -17,7 +16,6 @@ declare namespace java {
         public static unmappableForLength(arg0: number | java.lang.Integer): java.nio.charset.CoderResult
         public throwException(): void
       }
-
     }
   }
 }

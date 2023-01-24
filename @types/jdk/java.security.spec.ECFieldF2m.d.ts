@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace spec {
-
       class ECFieldF2m implements java.security.spec.ECField {
         public constructor(arg0: number | java.lang.Integer)
         public constructor(arg0: number | java.lang.Integer, arg1: java.math.BigInteger)
@@ -13,7 +12,6 @@ declare namespace java {
         public equals(arg0: java.lang.Object | any): boolean
         public hashCode(): number
       }
-
     }
   }
 }

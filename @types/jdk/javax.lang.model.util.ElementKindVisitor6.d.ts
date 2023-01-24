@@ -2,8 +2,7 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace util {
-
-        class ElementKindVisitor6<R,P> extends javax.lang.model.util.SimpleElementVisitor6<R,P> {
+        class ElementKindVisitor6<R, P> extends javax.lang.model.util.SimpleElementVisitor6<R, P> {
           static readonly $assertionsDisabled: boolean
           protected constructor()
           protected constructor(arg0: R)
@@ -27,7 +26,6 @@ declare namespace javax {
           public visitExecutableAsStaticInit(arg0: javax.lang.model.element.ExecutableElement, arg1: P): R
           public visitTypeParameter(arg0: javax.lang.model.element.TypeParameterElement, arg1: P): R
         }
-
       }
     }
   }

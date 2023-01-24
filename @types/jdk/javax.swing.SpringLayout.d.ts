@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class SpringLayout implements java.awt.LayoutManager2 {
       public static readonly NORTH: java.lang.String
       public static readonly SOUTH: java.lang.String
@@ -22,12 +21,23 @@ declare namespace javax {
       public getLayoutAlignmentX(arg0: java.awt.Container): number
       public getLayoutAlignmentY(arg0: java.awt.Container): number
       public invalidateLayout(arg0: java.awt.Container): void
-      public putConstraint(arg0: java.lang.String | string, arg1: java.awt.Component, arg2: number | java.lang.Integer, arg3: java.lang.String | string, arg4: java.awt.Component): void
-      public putConstraint(arg0: java.lang.String | string, arg1: java.awt.Component, arg2: javax.swing.Spring, arg3: java.lang.String | string, arg4: java.awt.Component): void
+      public putConstraint(
+        arg0: java.lang.String | string,
+        arg1: java.awt.Component,
+        arg2: number | java.lang.Integer,
+        arg3: java.lang.String | string,
+        arg4: java.awt.Component
+      ): void
+      public putConstraint(
+        arg0: java.lang.String | string,
+        arg1: java.awt.Component,
+        arg2: javax.swing.Spring,
+        arg3: java.lang.String | string,
+        arg4: java.awt.Component
+      ): void
       public getConstraints(arg0: java.awt.Component): javax.swing.SpringLayout$Constraints
       public getConstraint(arg0: java.lang.String | string, arg1: java.awt.Component): javax.swing.Spring
       public layoutContainer(arg0: java.awt.Container): void
     }
-
   }
 }

@@ -1,11 +1,10 @@
 declare namespace java {
   namespace nio {
     namespace charset {
-
       abstract class Charset implements java.lang.Comparable<java.nio.charset.Charset> {
         public static isSupported(arg0: java.lang.String | string): boolean
         public static forName(arg0: java.lang.String | string): java.nio.charset.Charset
-        public static availableCharsets(): java.util.SortedMap<java.lang.String,java.nio.charset.Charset>
+        public static availableCharsets(): java.util.SortedMap<java.lang.String, java.nio.charset.Charset>
         public static defaultCharset(): java.nio.charset.Charset
         protected constructor(arg0: java.lang.String | string, arg1: java.lang.String[] | string[])
         public name(): java.lang.String
@@ -26,7 +25,6 @@ declare namespace java {
         public toString(): java.lang.String
         public compareTo(arg0: java.lang.Object | any): number
       }
-
     }
   }
 }

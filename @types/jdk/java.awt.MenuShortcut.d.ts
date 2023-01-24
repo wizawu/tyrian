@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class MenuShortcut implements java.io.Serializable {
       key: int
       usesShift: boolean
@@ -14,6 +13,5 @@ declare namespace java {
       public toString(): java.lang.String
       protected paramString(): java.lang.String
     }
-
   }
 }

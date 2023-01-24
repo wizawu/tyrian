@@ -1,8 +1,9 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
-      class CopyOnWriteArrayList<E> implements java.util.List<E>, java.util.RandomAccess, java.lang.Cloneable, java.io.Serializable {
+      class CopyOnWriteArrayList<E>
+        implements java.util.List<E>, java.util.RandomAccess, java.lang.Cloneable, java.io.Serializable
+      {
         readonly lock: java.lang.Object
         getArray(): java.lang.Object[]
         setArray(arg0: java.lang.Object[] | any[]): void
@@ -36,13 +37,27 @@ declare namespace java {
         public clear(): void
         public addAll(arg0: java.util.Collection<E>): boolean
         public addAll(arg0: number | java.lang.Integer, arg1: java.util.Collection<E>): boolean
-        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        public forEach(
+          arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
+        ): void
         public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
-        bulkRemove(arg0: java.util.function$.Predicate<unknown>, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
+        bulkRemove(
+          arg0: java.util.function$.Predicate<unknown>,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): boolean
         public replaceAll(arg0: java.util.function$.UnaryOperator<E>): void
-        replaceAllRange(arg0: java.util.function$.UnaryOperator<E>, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        replaceAllRange(
+          arg0: java.util.function$.UnaryOperator<E>,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
         public sort(arg0: java.util.Comparator<unknown>): void
-        sortRange(arg0: java.util.Comparator<unknown>, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        sortRange(
+          arg0: java.util.Comparator<unknown>,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
         public toString(): java.lang.String
         public equals(arg0: java.lang.Object | any): boolean
         public hashCode(): number
@@ -52,7 +67,6 @@ declare namespace java {
         public spliterator(): java.util.Spliterator<E>
         public subList(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.List<E>
       }
-
     }
   }
 }

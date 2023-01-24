@@ -1,10 +1,21 @@
 declare namespace java {
   namespace lang {
     namespace reflect {
-
       class Method extends java.lang.reflect.Executable {
         getGenericInfo(): sun.reflect.generics.repository.MethodRepository
-        constructor(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string, arg2: java.lang.Class<unknown>[], arg3: java.lang.Class<unknown>, arg4: java.lang.Class<unknown>[], arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: java.lang.String | string, arg8: number[] | java.lang.Byte[], arg9: number[] | java.lang.Byte[], arg10: number[] | java.lang.Byte[])
+        constructor(
+          arg0: java.lang.Class<unknown>,
+          arg1: java.lang.String | string,
+          arg2: java.lang.Class<unknown>[],
+          arg3: java.lang.Class<unknown>,
+          arg4: java.lang.Class<unknown>[],
+          arg5: number | java.lang.Integer,
+          arg6: number | java.lang.Integer,
+          arg7: java.lang.String | string,
+          arg8: number[] | java.lang.Byte[],
+          arg9: number[] | java.lang.Byte[],
+          arg10: number[] | java.lang.Byte[]
+        )
         copy(): java.lang.reflect.Method
         leafCopy(): java.lang.reflect.Method
         public setAccessible(arg0: boolean | java.lang.Boolean): void
@@ -48,7 +59,6 @@ declare namespace java {
         getGenericInfo(): sun.reflect.generics.repository.ConstructorRepository
         getRoot(): java.lang.reflect.AccessibleObject
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace beans {
-
     class Encoder {
       executeStatements: boolean
       public constructor()
@@ -18,6 +17,5 @@ declare namespace java {
       setAttribute(arg0: java.lang.Object | any, arg1: java.lang.Object | any): void
       getAttribute(arg0: java.lang.Object | any): java.lang.Object
     }
-
   }
 }

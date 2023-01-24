@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
       abstract class InputEvent extends java.awt.event.ComponentEvent {
         public static readonly SHIFT_MASK: int
         public static readonly CTRL_MASK: int
@@ -26,7 +25,12 @@ declare namespace java {
         modifiers: int
         static readonly serialVersionUID: long
         public static getMaskForButton(arg0: number | java.lang.Integer): number
-        constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: number | java.lang.Integer)
+        constructor(
+          arg0: java.awt.Component,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Long,
+          arg3: number | java.lang.Integer
+        )
         public isShiftDown(): boolean
         public isControlDown(): boolean
         public isMetaDown(): boolean
@@ -39,7 +43,6 @@ declare namespace java {
         public isConsumed(): boolean
         public static getModifiersExText(arg0: number | java.lang.Integer): java.lang.String
       }
-
     }
   }
 }

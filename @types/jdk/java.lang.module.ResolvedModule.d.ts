@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace module {
-
       class ResolvedModule {
         constructor(arg0: java.lang.module.Configuration, arg1: java.lang.module.ModuleReference)
         public configuration(): java.lang.module.Configuration
@@ -13,7 +12,6 @@ declare namespace java {
         public equals(arg0: java.lang.Object | any): boolean
         public toString(): java.lang.String
       }
-
     }
   }
 }

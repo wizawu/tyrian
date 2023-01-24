@@ -1,12 +1,17 @@
 declare namespace javax {
   namespace swing {
-
     class JScrollBar extends javax.swing.JComponent implements java.awt.Adjustable, javax.accessibility.Accessible {
       protected model: javax.swing.BoundedRangeModel
       protected orientation: int
       protected unitIncrement: int
       protected blockIncrement: int
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      )
       public constructor(arg0: number | java.lang.Integer)
       public constructor()
       public setUI(arg0: javax.swing.plaf.ScrollBarUI): void
@@ -33,11 +38,24 @@ declare namespace javax {
       public setMaximum(arg0: number | java.lang.Integer): void
       public getValueIsAdjusting(): boolean
       public setValueIsAdjusting(arg0: boolean | java.lang.Boolean): void
-      public setValues(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
-      public addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
-      public removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
+      public setValues(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
+      public addAdjustmentListener(
+        arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda
+      ): void
+      public removeAdjustmentListener(
+        arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda
+      ): void
       public getAdjustmentListeners(): java.awt.event.AdjustmentListener[]
-      protected fireAdjustmentValueChanged(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      protected fireAdjustmentValueChanged(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public getMinimumSize(): java.awt.Dimension
       public getMaximumSize(): java.awt.Dimension
       public setEnabled(arg0: boolean | java.lang.Boolean): void
@@ -45,6 +63,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

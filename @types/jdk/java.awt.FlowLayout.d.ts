@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class FlowLayout implements java.awt.LayoutManager, java.io.Serializable {
       public static readonly LEFT: int
       public static readonly CENTER: int
@@ -13,7 +12,11 @@ declare namespace java {
       vgap: int
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      )
       public getAlignment(): number
       public setAlignment(arg0: number | java.lang.Integer): void
       public getHgap(): number
@@ -29,6 +32,5 @@ declare namespace java {
       public layoutContainer(arg0: java.awt.Container): void
       public toString(): java.lang.String
     }
-
   }
 }

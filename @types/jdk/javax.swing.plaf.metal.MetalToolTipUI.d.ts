@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalToolTipUI extends javax.swing.plaf.basic.BasicToolTipUI {
           static sharedInstance: javax.swing.plaf.metal.MetalToolTipUI
           public static readonly padSpaceBetweenStrings: int
@@ -15,7 +14,6 @@ declare namespace javax {
           protected isAcceleratorHidden(): boolean
           public getAcceleratorString(): java.lang.String
         }
-
       }
     }
   }

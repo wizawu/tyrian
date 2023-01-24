@@ -1,26 +1,25 @@
 declare namespace org {
   namespace w3c {
     namespace dom {
-
       interface Node {
-        public static readonly ELEMENT_NODE: short
-        public static readonly ATTRIBUTE_NODE: short
-        public static readonly TEXT_NODE: short
-        public static readonly CDATA_SECTION_NODE: short
-        public static readonly ENTITY_REFERENCE_NODE: short
-        public static readonly ENTITY_NODE: short
-        public static readonly PROCESSING_INSTRUCTION_NODE: short
-        public static readonly COMMENT_NODE: short
-        public static readonly DOCUMENT_NODE: short
-        public static readonly DOCUMENT_TYPE_NODE: short
-        public static readonly DOCUMENT_FRAGMENT_NODE: short
-        public static readonly NOTATION_NODE: short
-        public static readonly DOCUMENT_POSITION_DISCONNECTED: short
-        public static readonly DOCUMENT_POSITION_PRECEDING: short
-        public static readonly DOCUMENT_POSITION_FOLLOWING: short
-        public static readonly DOCUMENT_POSITION_CONTAINS: short
-        public static readonly DOCUMENT_POSITION_CONTAINED_BY: short
-        public static readonly DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: short
+        readonly ELEMENT_NODE: short
+        readonly ATTRIBUTE_NODE: short
+        readonly TEXT_NODE: short
+        readonly CDATA_SECTION_NODE: short
+        readonly ENTITY_REFERENCE_NODE: short
+        readonly ENTITY_NODE: short
+        readonly PROCESSING_INSTRUCTION_NODE: short
+        readonly COMMENT_NODE: short
+        readonly DOCUMENT_NODE: short
+        readonly DOCUMENT_TYPE_NODE: short
+        readonly DOCUMENT_FRAGMENT_NODE: short
+        readonly NOTATION_NODE: short
+        readonly DOCUMENT_POSITION_DISCONNECTED: short
+        readonly DOCUMENT_POSITION_PRECEDING: short
+        readonly DOCUMENT_POSITION_FOLLOWING: short
+        readonly DOCUMENT_POSITION_CONTAINS: short
+        readonly DOCUMENT_POSITION_CONTAINED_BY: short
+        readonly DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: short
         getNodeName(): java.lang.String
         getNodeValue(): java.lang.String
         setNodeValue(arg0: java.lang.String | string): void
@@ -56,10 +55,13 @@ declare namespace org {
         lookupNamespaceURI(arg0: java.lang.String | string): java.lang.String
         isEqualNode(arg0: org.w3c.dom.Node): boolean
         getFeature(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.Object
-        setUserData(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: org.w3c.dom.UserDataHandler | org.w3c.dom.UserDataHandler$$lambda): java.lang.Object
+        setUserData(
+          arg0: java.lang.String | string,
+          arg1: java.lang.Object | any,
+          arg2: org.w3c.dom.UserDataHandler | org.w3c.dom.UserDataHandler$$lambda
+        ): java.lang.Object
         getUserData(arg0: java.lang.String | string): java.lang.Object
       }
-
     }
   }
 }

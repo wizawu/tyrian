@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Desktop$Action extends java.lang.Enum<java.awt.Desktop$Action> {
       public static readonly OPEN: java.awt.Desktop$Action
       public static readonly EDIT: java.awt.Desktop$Action
@@ -29,6 +28,5 @@ declare namespace java {
       public static values(): java.awt.Desktop$Action[]
       public static valueOf(arg0: java.lang.String | string): java.awt.Desktop$Action
     }
-
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalButtonUI extends javax.swing.plaf.basic.BasicButtonUI {
           protected focusColor: java.awt.Color
           protected selectColor: java.awt.Color
@@ -17,10 +16,20 @@ declare namespace javax {
           protected getFocusColor(): java.awt.Color
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paintButtonPressed(arg0: java.awt.Graphics, arg1: javax.swing.AbstractButton): void
-          protected paintFocus(arg0: java.awt.Graphics, arg1: javax.swing.AbstractButton, arg2: java.awt.Rectangle, arg3: java.awt.Rectangle, arg4: java.awt.Rectangle): void
-          protected paintText(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle, arg3: java.lang.String | string): void
+          protected paintFocus(
+            arg0: java.awt.Graphics,
+            arg1: javax.swing.AbstractButton,
+            arg2: java.awt.Rectangle,
+            arg3: java.awt.Rectangle,
+            arg4: java.awt.Rectangle
+          ): void
+          protected paintText(
+            arg0: java.awt.Graphics,
+            arg1: javax.swing.JComponent,
+            arg2: java.awt.Rectangle,
+            arg3: java.lang.String | string
+          ): void
         }
-
       }
     }
   }

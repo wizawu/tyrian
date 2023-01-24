@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
     namespace transform {
       namespace stax {
-
         class StAXSource implements javax.xml.transform.Source {
           public static readonly FEATURE: java.lang.String
           public constructor(arg0: javax.xml.stream.XMLEventReader)
@@ -13,7 +12,6 @@ declare namespace javax {
           public getSystemId(): java.lang.String
           public isEmpty(): boolean
         }
-
       }
     }
   }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace synth {
-
         class ColorType {
           public static readonly FOREGROUND: javax.swing.plaf.synth.ColorType
           public static readonly BACKGROUND: javax.swing.plaf.synth.ColorType
@@ -14,7 +13,6 @@ declare namespace javax {
           public getID(): number
           public toString(): java.lang.String
         }
-
       }
     }
   }

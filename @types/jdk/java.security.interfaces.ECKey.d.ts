@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace interfaces {
-
       interface ECKey$$lambda {
         (): java.security.spec.ECParameterSpec
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface ECKey {
         getParams(): java.security.spec.ECParameterSpec
       }
-
     }
   }
 }

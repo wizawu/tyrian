@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace script {
-
     class ScriptEngineManager {
       public constructor()
       public constructor(arg0: java.lang.ClassLoader)
@@ -16,6 +15,5 @@ declare namespace javax {
       public registerEngineMimeType(arg0: java.lang.String | string, arg1: javax.script.ScriptEngineFactory): void
       public registerEngineExtension(arg0: java.lang.String | string, arg1: javax.script.ScriptEngineFactory): void
     }
-
   }
 }

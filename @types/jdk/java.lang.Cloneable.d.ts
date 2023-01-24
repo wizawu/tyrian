@@ -1,8 +1,5 @@
 declare namespace java {
   namespace lang {
-
-    interface Cloneable {
-    }
-
+    interface Cloneable {}
   }
 }

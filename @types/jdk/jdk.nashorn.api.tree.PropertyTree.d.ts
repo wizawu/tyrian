@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace tree {
-
         interface PropertyTree extends jdk.nashorn.api.tree.Tree {
           getKey(): jdk.nashorn.api.tree.ExpressionTree
           getValue(): jdk.nashorn.api.tree.ExpressionTree
@@ -11,7 +10,6 @@ declare namespace jdk {
           isStatic(): boolean
           isComputed(): boolean
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class DateFormatSymbols implements java.io.Serializable, java.lang.Cloneable {
       eras: java.lang.String[]
       months: java.lang.String[]
@@ -67,6 +66,5 @@ declare namespace java {
       getZoneIndex(arg0: java.lang.String | string): number
       getZoneStringsWrapper(): java.lang.String[][]
     }
-
   }
 }

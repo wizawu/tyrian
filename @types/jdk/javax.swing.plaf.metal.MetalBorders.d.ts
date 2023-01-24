@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalBorders {
           static NO_BUTTON_ROLLOVER: java.lang.Object
           public constructor()
@@ -14,7 +13,6 @@ declare namespace javax {
           static getToolBarRolloverBorder(): javax.swing.border.Border
           static getToolBarNonrolloverBorder(): javax.swing.border.Border
         }
-
       }
     }
   }

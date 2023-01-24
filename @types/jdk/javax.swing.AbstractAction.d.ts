@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     abstract class AbstractAction implements javax.swing.Action, java.lang.Cloneable, java.io.Serializable {
       protected enabled: boolean
       protected changeSupport: javax.swing.event.SwingPropertyChangeSupport
@@ -17,12 +16,19 @@ declare namespace javax {
       public isEnabled(): boolean
       public setEnabled(arg0: boolean | java.lang.Boolean): void
       public getKeys(): java.lang.Object[]
-      protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
-      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      protected firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: java.lang.Object | any
+      ): void
+      public addPropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public removePropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
       protected clone(): java.lang.Object
     }
-
   }
 }

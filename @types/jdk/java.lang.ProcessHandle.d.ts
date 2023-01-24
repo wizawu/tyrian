@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     interface ProcessHandle extends java.lang.Comparable<java.lang.ProcessHandle> {
       pid(): number
       of(arg0: number | java.lang.Long): java.util.Optional<java.lang.ProcessHandle>
@@ -20,6 +19,5 @@ declare namespace java {
       compareTo(arg0: java.lang.ProcessHandle): number
       compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

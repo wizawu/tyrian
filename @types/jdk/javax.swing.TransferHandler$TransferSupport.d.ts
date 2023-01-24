@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class TransferHandler$TransferSupport {
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: java.awt.Component, arg1: java.awt.datatransfer.Transferable)
@@ -16,6 +15,5 @@ declare namespace javax {
       public isDataFlavorSupported(arg0: java.awt.datatransfer.DataFlavor): boolean
       public getTransferable(): java.awt.datatransfer.Transferable
     }
-
   }
 }

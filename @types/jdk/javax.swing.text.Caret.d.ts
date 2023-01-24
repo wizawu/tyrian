@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       interface Caret {
         install(arg0: javax.swing.text.JTextComponent): void
         deinstall(arg0: javax.swing.text.JTextComponent): void
@@ -21,7 +20,6 @@ declare namespace javax {
         setDot(arg0: number | java.lang.Integer): void
         moveDot(arg0: number | java.lang.Integer): void
       }
-
     }
   }
 }

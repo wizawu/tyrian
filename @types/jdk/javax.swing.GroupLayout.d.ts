@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class GroupLayout implements java.awt.LayoutManager2 {
       public static readonly DEFAULT_SIZE: int
       public static readonly PREFERRED_SIZE: int
@@ -17,10 +16,16 @@ declare namespace javax {
       public createSequentialGroup(): javax.swing.GroupLayout$SequentialGroup
       public createParallelGroup(): javax.swing.GroupLayout$ParallelGroup
       public createParallelGroup(arg0: javax.swing.GroupLayout$Alignment): javax.swing.GroupLayout$ParallelGroup
-      public createParallelGroup(arg0: javax.swing.GroupLayout$Alignment, arg1: boolean | java.lang.Boolean): javax.swing.GroupLayout$ParallelGroup
-      public createBaselineGroup(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean): javax.swing.GroupLayout$ParallelGroup
-      public linkSize(...vargs: (java.awt.Component)[]): void
-      public linkSize(arg0: number | java.lang.Integer, ...vargs: (java.awt.Component)[]): void
+      public createParallelGroup(
+        arg0: javax.swing.GroupLayout$Alignment,
+        arg1: boolean | java.lang.Boolean
+      ): javax.swing.GroupLayout$ParallelGroup
+      public createBaselineGroup(
+        arg0: boolean | java.lang.Boolean,
+        arg1: boolean | java.lang.Boolean
+      ): javax.swing.GroupLayout$ParallelGroup
+      public linkSize(...vargs: java.awt.Component[]): void
+      public linkSize(arg0: number | java.lang.Integer, ...vargs: java.awt.Component[]): void
       public replace(arg0: java.awt.Component, arg1: java.awt.Component): void
       public setLayoutStyle(arg0: javax.swing.LayoutStyle): void
       public getLayoutStyle(): javax.swing.LayoutStyle
@@ -36,6 +41,5 @@ declare namespace javax {
       public invalidateLayout(arg0: java.awt.Container): void
       public toString(): java.lang.String
     }
-
   }
 }

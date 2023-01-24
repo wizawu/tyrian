@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace font {
-
       class NumericShaper implements java.io.Serializable {
         public static readonly EUROPEAN: int
         public static readonly ARABIC: int
@@ -26,12 +25,34 @@ declare namespace java {
         public static getShaper(arg0: number | java.lang.Integer): java.awt.font.NumericShaper
         public static getShaper(arg0: java.awt.font.NumericShaper$Range): java.awt.font.NumericShaper
         public static getContextualShaper(arg0: number | java.lang.Integer): java.awt.font.NumericShaper
-        public static getContextualShaper(arg0: java.util.Set<java.awt.font.NumericShaper$Range>): java.awt.font.NumericShaper
-        public static getContextualShaper(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.font.NumericShaper
-        public static getContextualShaper(arg0: java.util.Set<java.awt.font.NumericShaper$Range>, arg1: java.awt.font.NumericShaper$Range): java.awt.font.NumericShaper
-        public shape(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-        public shape(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
-        public shape(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.awt.font.NumericShaper$Range): void
+        public static getContextualShaper(
+          arg0: java.util.Set<java.awt.font.NumericShaper$Range>
+        ): java.awt.font.NumericShaper
+        public static getContextualShaper(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer
+        ): java.awt.font.NumericShaper
+        public static getContextualShaper(
+          arg0: java.util.Set<java.awt.font.NumericShaper$Range>,
+          arg1: java.awt.font.NumericShaper$Range
+        ): java.awt.font.NumericShaper
+        public shape(
+          arg0: string[] | java.lang.Character[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
+        public shape(
+          arg0: string[] | java.lang.Character[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        ): void
+        public shape(
+          arg0: string[] | java.lang.Character[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer,
+          arg3: java.awt.font.NumericShaper$Range
+        ): void
         public isContextual(): boolean
         public getRanges(): number
         public getRangeSet(): java.util.Set<java.awt.font.NumericShaper$Range>
@@ -39,7 +60,6 @@ declare namespace java {
         public equals(arg0: java.lang.Object | any): boolean
         public toString(): java.lang.String
       }
-
     }
   }
 }

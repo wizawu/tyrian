@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace transform {
-
       abstract class Transformer {
         protected constructor()
         public reset(): void
@@ -9,7 +8,9 @@ declare namespace javax {
         public abstract setParameter(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
         public abstract getParameter(arg0: java.lang.String | string): java.lang.Object
         public abstract clearParameters(): void
-        public abstract setURIResolver(arg0: javax.xml.transform.URIResolver | javax.xml.transform.URIResolver$$lambda): void
+        public abstract setURIResolver(
+          arg0: javax.xml.transform.URIResolver | javax.xml.transform.URIResolver$$lambda
+        ): void
         public abstract getURIResolver(): javax.xml.transform.URIResolver
         public abstract setOutputProperties(arg0: java.util.Properties): void
         public abstract getOutputProperties(): java.util.Properties
@@ -18,7 +19,6 @@ declare namespace javax {
         public abstract setErrorListener(arg0: javax.xml.transform.ErrorListener): void
         public abstract getErrorListener(): javax.xml.transform.ErrorListener
       }
-
     }
   }
 }

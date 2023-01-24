@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JTextPane extends javax.swing.JEditorPane {
       public constructor()
       public constructor(arg0: javax.swing.text.StyledDocument)
@@ -26,6 +25,5 @@ declare namespace javax {
       public setEditorKit(arg0: javax.swing.text.EditorKit): void
       protected paramString(): java.lang.String
     }
-
   }
 }

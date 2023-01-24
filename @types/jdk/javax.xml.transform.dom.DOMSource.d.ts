@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
     namespace transform {
       namespace dom {
-
         class DOMSource implements javax.xml.transform.Source {
           public static readonly FEATURE: java.lang.String
           public constructor()
@@ -14,7 +13,6 @@ declare namespace javax {
           public getSystemId(): java.lang.String
           public isEmpty(): boolean
         }
-
       }
     }
   }

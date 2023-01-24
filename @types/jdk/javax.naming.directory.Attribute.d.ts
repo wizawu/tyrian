@@ -1,9 +1,8 @@
 declare namespace javax {
   namespace naming {
     namespace directory {
-
       interface Attribute extends java.lang.Cloneable, java.io.Serializable {
-        public static readonly serialVersionUID: long
+        readonly serialVersionUID: long
         getAll(): javax.naming.NamingEnumeration<unknown>
         get(): java.lang.Object
         size(): number
@@ -21,7 +20,6 @@ declare namespace javax {
         add(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): void
         set(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): java.lang.Object
       }
-
     }
   }
 }

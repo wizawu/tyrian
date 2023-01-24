@@ -1,7 +1,6 @@
 declare namespace org {
   namespace w3c {
     namespace dom {
-
       class DOMException extends java.lang.RuntimeException {
         public code: short
         public static readonly INDEX_SIZE_ERR: short
@@ -24,7 +23,6 @@ declare namespace org {
         static readonly serialVersionUID: long
         public constructor(arg0: number | java.lang.Short, arg1: java.lang.String | string)
       }
-
     }
   }
 }

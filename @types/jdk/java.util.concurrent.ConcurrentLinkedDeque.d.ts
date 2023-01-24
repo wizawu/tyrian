@@ -1,14 +1,20 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
-      class ConcurrentLinkedDeque<E> extends java.util.AbstractCollection<E> implements java.util.Deque<E>, java.io.Serializable {
+      class ConcurrentLinkedDeque<E>
+        extends java.util.AbstractCollection<E>
+        implements java.util.Deque<E>, java.io.Serializable
+      {
         prevTerminator(): java.util.concurrent.ConcurrentLinkedDeque$Node<E>
         nextTerminator(): java.util.concurrent.ConcurrentLinkedDeque$Node<E>
         static newNode<E>(arg0: E): java.util.concurrent.ConcurrentLinkedDeque$Node<E>
         unlink(arg0: java.util.concurrent.ConcurrentLinkedDeque$Node<E>): void
-        succ(arg0: java.util.concurrent.ConcurrentLinkedDeque$Node<E>): java.util.concurrent.ConcurrentLinkedDeque$Node<E>
-        pred(arg0: java.util.concurrent.ConcurrentLinkedDeque$Node<E>): java.util.concurrent.ConcurrentLinkedDeque$Node<E>
+        succ(
+          arg0: java.util.concurrent.ConcurrentLinkedDeque$Node<E>
+        ): java.util.concurrent.ConcurrentLinkedDeque$Node<E>
+        pred(
+          arg0: java.util.concurrent.ConcurrentLinkedDeque$Node<E>
+        ): java.util.concurrent.ConcurrentLinkedDeque$Node<E>
         first(): java.util.concurrent.ConcurrentLinkedDeque$Node<E>
         last(): java.util.concurrent.ConcurrentLinkedDeque$Node<E>
         public constructor()
@@ -50,9 +56,10 @@ declare namespace java {
         public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
         public removeAll(arg0: java.util.Collection<unknown>): boolean
         public retainAll(arg0: java.util.Collection<unknown>): boolean
-        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        public forEach(
+          arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
+        ): void
       }
-
     }
   }
 }

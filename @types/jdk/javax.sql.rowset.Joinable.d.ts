@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sql {
     namespace rowset {
-
       interface Joinable {
         setMatchColumn(arg0: number | java.lang.Integer): void
         setMatchColumn(arg0: number[] | java.lang.Integer[]): void
@@ -14,7 +13,6 @@ declare namespace javax {
         unsetMatchColumn(arg0: java.lang.String | string): void
         unsetMatchColumn(arg0: java.lang.String[] | string[]): void
       }
-
     }
   }
 }

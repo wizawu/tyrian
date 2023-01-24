@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class MediaTracker implements java.io.Serializable {
       target: java.awt.Component
       head: java.awt.MediaEntry
@@ -11,7 +10,12 @@ declare namespace java {
       static readonly DONE: int
       public constructor(arg0: java.awt.Component)
       public addImage(arg0: java.awt.Image, arg1: number | java.lang.Integer): void
-      public addImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public addImage(
+        arg0: java.awt.Image,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       public checkAll(): boolean
       public checkAll(arg0: boolean | java.lang.Boolean): boolean
       public isErrorAny(): boolean
@@ -28,9 +32,13 @@ declare namespace java {
       public statusID(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): number
       public removeImage(arg0: java.awt.Image): void
       public removeImage(arg0: java.awt.Image, arg1: number | java.lang.Integer): void
-      public removeImage(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public removeImage(
+        arg0: java.awt.Image,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       setDone(): void
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace font {
-
       abstract class GraphicAttribute {
         public static readonly TOP_ALIGNMENT: int
         public static readonly BOTTOM_ALIGNMENT: int
@@ -14,11 +13,14 @@ declare namespace java {
         public abstract getAdvance(): number
         public getBounds(): java.awt.geom.Rectangle2D
         public getOutline(arg0: java.awt.geom.AffineTransform): java.awt.Shape
-        public abstract draw(arg0: java.awt.Graphics2D, arg1: number | java.lang.Float, arg2: number | java.lang.Float): void
+        public abstract draw(
+          arg0: java.awt.Graphics2D,
+          arg1: number | java.lang.Float,
+          arg2: number | java.lang.Float
+        ): void
         public getAlignment(): number
         public getJustificationInfo(): java.awt.font.GlyphJustificationInfo
       }
-
     }
   }
 }

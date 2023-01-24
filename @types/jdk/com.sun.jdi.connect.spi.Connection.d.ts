@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
       namespace connect {
         namespace spi {
-
           abstract class Connection {
             public constructor()
             public abstract readPacket(): number[]
@@ -11,7 +10,6 @@ declare namespace com {
             public abstract close(): void
             public abstract isOpen(): boolean
           }
-
         }
       }
     }

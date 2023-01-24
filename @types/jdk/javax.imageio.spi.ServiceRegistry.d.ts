@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace imageio {
     namespace spi {
-
       class ServiceRegistry {
         public constructor(arg0: java.util.Iterator<java.lang.Class<unknown>>)
         public static lookupProviders<T>(arg0: java.lang.Class<T>, arg1: java.lang.ClassLoader): java.util.Iterator<T>
@@ -13,8 +12,15 @@ declare namespace javax {
         public deregisterServiceProvider<T>(arg0: T, arg1: java.lang.Class<T>): boolean
         public deregisterServiceProvider(arg0: java.lang.Object | any): void
         public contains(arg0: java.lang.Object | any): boolean
-        public getServiceProviders<T>(arg0: java.lang.Class<T>, arg1: boolean | java.lang.Boolean): java.util.Iterator<T>
-        public getServiceProviders<T>(arg0: java.lang.Class<T>, arg1: javax.imageio.spi.ServiceRegistry$Filter | javax.imageio.spi.ServiceRegistry$Filter$$lambda, arg2: boolean | java.lang.Boolean): java.util.Iterator<T>
+        public getServiceProviders<T>(
+          arg0: java.lang.Class<T>,
+          arg1: boolean | java.lang.Boolean
+        ): java.util.Iterator<T>
+        public getServiceProviders<T>(
+          arg0: java.lang.Class<T>,
+          arg1: javax.imageio.spi.ServiceRegistry$Filter | javax.imageio.spi.ServiceRegistry$Filter$$lambda,
+          arg2: boolean | java.lang.Boolean
+        ): java.util.Iterator<T>
         public getServiceProviderByClass<T>(arg0: java.lang.Class<T>): T
         public setOrdering<T>(arg0: java.lang.Class<T>, arg1: T, arg2: T): boolean
         public unsetOrdering<T>(arg0: java.lang.Class<T>, arg1: T, arg2: T): boolean
@@ -22,7 +28,6 @@ declare namespace javax {
         public deregisterAll(): void
         public finalize(): void
       }
-
     }
   }
 }

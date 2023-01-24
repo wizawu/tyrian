@@ -2,8 +2,7 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace element {
-
-        interface ElementVisitor<R,P> {
+        interface ElementVisitor<R, P> {
           visit(arg0: javax.lang.model.element.Element, arg1: P): R
           visit(arg0: javax.lang.model.element.Element): R
           visitPackage(arg0: javax.lang.model.element.PackageElement, arg1: P): R
@@ -14,7 +13,6 @@ declare namespace javax {
           visitUnknown(arg0: javax.lang.model.element.Element, arg1: P): R
           visitModule(arg0: javax.lang.model.element.ModuleElement, arg1: P): R
         }
-
       }
     }
   }

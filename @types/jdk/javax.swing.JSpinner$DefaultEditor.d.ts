@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    class JSpinner$DefaultEditor extends javax.swing.JPanel implements javax.swing.event.ChangeListener, java.beans.PropertyChangeListener, java.awt.LayoutManager {
+    class JSpinner$DefaultEditor
+      extends javax.swing.JPanel
+      implements javax.swing.event.ChangeListener, java.beans.PropertyChangeListener, java.awt.LayoutManager
+    {
       public constructor(arg0: javax.swing.JSpinner)
       public dismiss(arg0: javax.swing.JSpinner): void
       public getSpinner(): javax.swing.JSpinner
@@ -17,6 +19,5 @@ declare namespace javax {
       public getBaseline(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
       public getBaselineResizeBehavior(): java.awt.Component$BaselineResizeBehavior
     }
-
   }
 }

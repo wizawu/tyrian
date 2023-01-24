@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class UUID implements java.io.Serializable, java.lang.Comparable<java.util.UUID> {
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: number | java.lang.Long, arg1: number | java.lang.Long)
@@ -20,6 +19,5 @@ declare namespace java {
       public compareTo(arg0: java.util.UUID): number
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       interface MidiDevice extends java.lang.AutoCloseable {
         getDeviceInfo(): javax.sound.midi.MidiDevice$Info
         open(): void
@@ -15,7 +14,6 @@ declare namespace javax {
         getTransmitter(): javax.sound.midi.Transmitter
         getTransmitters(): java.util.List<javax.sound.midi.Transmitter>
       }
-
     }
   }
 }

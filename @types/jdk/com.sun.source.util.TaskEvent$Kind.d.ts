@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace source {
       namespace util {
-
         class TaskEvent$Kind extends java.lang.Enum<com.sun.source.util.TaskEvent$Kind> {
           public static readonly PARSE: com.sun.source.util.TaskEvent$Kind
           public static readonly ENTER: com.sun.source.util.TaskEvent$Kind
@@ -14,7 +13,6 @@ declare namespace com {
           public static values(): com.sun.source.util.TaskEvent$Kind[]
           public static valueOf(arg0: java.lang.String | string): com.sun.source.util.TaskEvent$Kind
         }
-
       }
     }
   }

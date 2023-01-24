@@ -1,8 +1,10 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
-      class SynchronousQueue<E> extends java.util.AbstractQueue<E> implements java.util.concurrent.BlockingQueue<E>, java.io.Serializable {
+      class SynchronousQueue<E>
+        extends java.util.AbstractQueue<E>
+        implements java.util.concurrent.BlockingQueue<E>, java.io.Serializable
+      {
         static readonly MAX_TIMED_SPINS: int
         static readonly MAX_UNTIMED_SPINS: int
         static readonly SPIN_FOR_TIMEOUT_THRESHOLD: long
@@ -32,7 +34,6 @@ declare namespace java {
         public drainTo(arg0: java.util.Collection<unknown>): number
         public drainTo(arg0: java.util.Collection<unknown>, arg1: number | java.lang.Integer): number
       }
-
     }
   }
 }

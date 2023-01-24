@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace filechooser {
-
       abstract class FileSystemView {
         static windowsFileSystemView: javax.swing.filechooser.FileSystemView
         static unixFileSystemView: javax.swing.filechooser.FileSystemView
@@ -35,7 +34,6 @@ declare namespace javax {
         getShellFolder(arg0: java.io.File): sun.awt.shell.ShellFolder
         protected createFileSystemRoot(arg0: java.io.File): java.io.File
       }
-
     }
   }
 }

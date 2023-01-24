@@ -1,8 +1,10 @@
 declare namespace javax {
   namespace swing {
     namespace table {
-
-      class JTableHeader extends javax.swing.JComponent implements javax.swing.event.TableColumnModelListener, javax.accessibility.Accessible {
+      class JTableHeader
+        extends javax.swing.JComponent
+        implements javax.swing.event.TableColumnModelListener, javax.accessibility.Accessible
+      {
         protected table: javax.swing.JTable
         protected columnModel: javax.swing.table.TableColumnModel
         protected reorderingAllowed: boolean
@@ -24,7 +26,9 @@ declare namespace javax {
         public getResizingColumn(): javax.swing.table.TableColumn
         public setUpdateTableInRealTime(arg0: boolean | java.lang.Boolean): void
         public getUpdateTableInRealTime(): boolean
-        public setDefaultRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda): void
+        public setDefaultRenderer(
+          arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda
+        ): void
         public getDefaultRenderer(): javax.swing.table.TableCellRenderer
         public columnAtPoint(arg0: java.awt.Point): number
         public getHeaderRect(arg0: number | java.lang.Integer): java.awt.Rectangle
@@ -52,7 +56,6 @@ declare namespace javax {
         public getAccessibleContext(): javax.accessibility.AccessibleContext
         public getUI(): javax.swing.plaf.ComponentUI
       }
-
     }
   }
 }

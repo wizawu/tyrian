@@ -1,7 +1,6 @@
 declare namespace java {
   namespace net {
     namespace http {
-
       interface HttpResponse<T> {
         statusCode(): number
         request(): java.net.http.HttpRequest
@@ -12,7 +11,6 @@ declare namespace java {
         uri(): java.net.URI
         version(): java.net.http.HttpClient$Version
       }
-
     }
   }
 }

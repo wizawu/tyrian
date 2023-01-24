@@ -3,10 +3,7 @@ declare namespace javax {
     namespace crypto {
       namespace dsig {
         namespace spec {
-
-          interface SignatureMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {
-          }
-
+          interface SignatureMethodParameterSpec extends java.security.spec.AlgorithmParameterSpec {}
         }
       }
     }

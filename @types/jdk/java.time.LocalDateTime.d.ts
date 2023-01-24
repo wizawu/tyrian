@@ -1,24 +1,78 @@
 declare namespace java {
   namespace time {
-
-    class LocalDateTime implements java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.time.chrono.ChronoLocalDateTime<java.time.LocalDate>, java.io.Serializable {
+    class LocalDateTime
+      implements
+        java.time.temporal.Temporal,
+        java.time.temporal.TemporalAdjuster,
+        java.time.chrono.ChronoLocalDateTime<java.time.LocalDate>,
+        java.io.Serializable
+    {
       public static readonly MIN: java.time.LocalDateTime
       public static readonly MAX: java.time.LocalDateTime
       public static now(): java.time.LocalDateTime
       public static now(arg0: java.time.ZoneId): java.time.LocalDateTime
       public static now(arg0: java.time.Clock): java.time.LocalDateTime
-      public static of(arg0: number | java.lang.Integer, arg1: java.time.Month, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): java.time.LocalDateTime
-      public static of(arg0: number | java.lang.Integer, arg1: java.time.Month, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): java.time.LocalDateTime
-      public static of(arg0: number | java.lang.Integer, arg1: java.time.Month, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): java.time.LocalDateTime
-      public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): java.time.LocalDateTime
-      public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): java.time.LocalDateTime
-      public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): java.time.LocalDateTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: java.time.Month,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): java.time.LocalDateTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: java.time.Month,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      ): java.time.LocalDateTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: java.time.Month,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer
+      ): java.time.LocalDateTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): java.time.LocalDateTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      ): java.time.LocalDateTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer
+      ): java.time.LocalDateTime
       public static of(arg0: java.time.LocalDate, arg1: java.time.LocalTime): java.time.LocalDateTime
       public static ofInstant(arg0: java.time.Instant, arg1: java.time.ZoneId): java.time.LocalDateTime
-      public static ofEpochSecond(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: java.time.ZoneOffset): java.time.LocalDateTime
+      public static ofEpochSecond(
+        arg0: number | java.lang.Long,
+        arg1: number | java.lang.Integer,
+        arg2: java.time.ZoneOffset
+      ): java.time.LocalDateTime
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.LocalDateTime
       public static parse(arg0: string | java.lang.CharSequence): java.time.LocalDateTime
-      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.LocalDateTime
+      public static parse(
+        arg0: string | java.lang.CharSequence,
+        arg1: java.time.format.DateTimeFormatter
+      ): java.time.LocalDateTime
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange
@@ -36,7 +90,9 @@ declare namespace java {
       public getMinute(): number
       public getSecond(): number
       public getNano(): number
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.LocalDateTime
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.LocalDateTime
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.LocalDateTime
       public withYear(arg0: number | java.lang.Integer): java.time.LocalDateTime
       public withMonth(arg0: number | java.lang.Integer): java.time.LocalDateTime
@@ -87,17 +143,29 @@ declare namespace java {
       public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.temporal.Temporal
       public atZone(arg0: java.time.ZoneId): java.time.chrono.ChronoZonedDateTime
-      public minus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.chrono.ChronoLocalDateTime
+      public minus(
+        arg0: number | java.lang.Long,
+        arg1: java.time.temporal.TemporalUnit
+      ): java.time.chrono.ChronoLocalDateTime
       public minus(arg0: java.time.temporal.TemporalAmount): java.time.chrono.ChronoLocalDateTime
-      public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.chrono.ChronoLocalDateTime
+      public plus(
+        arg0: number | java.lang.Long,
+        arg1: java.time.temporal.TemporalUnit
+      ): java.time.chrono.ChronoLocalDateTime
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.chrono.ChronoLocalDateTime
-      public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.chrono.ChronoLocalDateTime
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.chrono.ChronoLocalDateTime
+      public with(
+        arg0: java.time.temporal.TemporalField,
+        arg1: number | java.lang.Long
+      ): java.time.chrono.ChronoLocalDateTime
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.chrono.ChronoLocalDateTime
       public toLocalDate(): java.time.chrono.ChronoLocalDate
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

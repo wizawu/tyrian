@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace font {
-
       class TextHitInfo {
         public getCharIndex(): number
         public isLeadingEdge(): boolean
@@ -17,7 +16,6 @@ declare namespace java {
         public getOtherHit(): java.awt.font.TextHitInfo
         public getOffsetHit(arg0: number | java.lang.Integer): java.awt.font.TextHitInfo
       }
-
     }
   }
 }

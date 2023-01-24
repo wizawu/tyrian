@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace jar {
-
       class JarEntry extends java.util.zip.ZipEntry {
         attr: java.util.jar.Attributes
         certs: java.security.cert.Certificate[]
@@ -14,7 +13,6 @@ declare namespace java {
         public getCodeSigners(): java.security.CodeSigner[]
         public getRealName(): java.lang.String
       }
-
     }
   }
 }

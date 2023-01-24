@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class NumberFormat$Field extends java.text.Format$Field {
       public static readonly INTEGER: java.text.NumberFormat$Field
       public static readonly FRACTION: java.text.NumberFormat$Field
@@ -16,6 +15,5 @@ declare namespace java {
       protected constructor(arg0: java.lang.String | string)
       protected readResolve(): java.lang.Object
     }
-
   }
 }

@@ -1,18 +1,33 @@
 declare namespace java {
   namespace nio {
-
     abstract class ByteBuffer extends java.nio.Buffer implements java.lang.Comparable<java.nio.ByteBuffer> {
       readonly hb: byte[]
       readonly offset: int
       isReadOnly: boolean
       bigEndian: boolean
       nativeByteOrder: boolean
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Byte[], arg5: number | java.lang.Integer)
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number[] | java.lang.Byte[],
+        arg5: number | java.lang.Integer
+      )
+      constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      )
       base(): java.lang.Object
       public static allocateDirect(arg0: number | java.lang.Integer): java.nio.ByteBuffer
       public static allocate(arg0: number | java.lang.Integer): java.nio.ByteBuffer
-      public static wrap(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ByteBuffer
+      public static wrap(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.nio.ByteBuffer
       public static wrap(arg0: number[] | java.lang.Byte[]): java.nio.ByteBuffer
       public abstract slice(): java.nio.ByteBuffer
       public abstract duplicate(): java.nio.ByteBuffer
@@ -21,10 +36,18 @@ declare namespace java {
       public abstract put(arg0: number | java.lang.Byte): java.nio.ByteBuffer
       public abstract get(arg0: number | java.lang.Integer): number
       public abstract put(arg0: number | java.lang.Integer, arg1: number | java.lang.Byte): java.nio.ByteBuffer
-      public get(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ByteBuffer
+      public get(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.nio.ByteBuffer
       public get(arg0: number[] | java.lang.Byte[]): java.nio.ByteBuffer
       public put(arg0: java.nio.ByteBuffer): java.nio.ByteBuffer
-      public put(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.nio.ByteBuffer
+      public put(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.nio.ByteBuffer
       public put(arg0: number[] | java.lang.Byte[]): java.nio.ByteBuffer
       public hasArray(): boolean
       public array(): number[]
@@ -90,6 +113,5 @@ declare namespace java {
       public position(arg0: number | java.lang.Integer): java.nio.Buffer
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

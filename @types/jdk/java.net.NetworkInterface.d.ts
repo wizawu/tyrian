@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     class NetworkInterface {
       constructor()
       constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.net.InetAddress[])
@@ -30,6 +29,5 @@ declare namespace java {
       public toString(): java.lang.String
       static getDefault(): java.net.NetworkInterface
     }
-
   }
 }

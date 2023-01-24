@@ -1,6 +1,5 @@
 declare namespace java {
   namespace time {
-
     abstract class Clock {
       public static systemUTC(): java.time.Clock
       public static systemDefaultZone(): java.time.Clock
@@ -19,6 +18,5 @@ declare namespace java {
       public equals(arg0: java.lang.Object | any): boolean
       public hashCode(): number
     }
-
   }
 }

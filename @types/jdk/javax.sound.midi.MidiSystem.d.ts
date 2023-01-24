@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       class MidiSystem {
         public static getMidiDeviceInfo(): javax.sound.midi.MidiDevice$Info[]
         public static getMidiDevice(arg0: javax.sound.midi.MidiDevice$Info): javax.sound.midi.MidiDevice
@@ -23,10 +22,17 @@ declare namespace javax {
         public static isFileTypeSupported(arg0: number | java.lang.Integer): boolean
         public static getMidiFileTypes(arg0: javax.sound.midi.Sequence): number[]
         public static isFileTypeSupported(arg0: number | java.lang.Integer, arg1: javax.sound.midi.Sequence): boolean
-        public static write(arg0: javax.sound.midi.Sequence, arg1: number | java.lang.Integer, arg2: java.io.OutputStream): number
-        public static write(arg0: javax.sound.midi.Sequence, arg1: number | java.lang.Integer, arg2: java.io.File): number
+        public static write(
+          arg0: javax.sound.midi.Sequence,
+          arg1: number | java.lang.Integer,
+          arg2: java.io.OutputStream
+        ): number
+        public static write(
+          arg0: javax.sound.midi.Sequence,
+          arg1: number | java.lang.Integer,
+          arg2: java.io.File
+        ): number
       }
-
     }
   }
 }

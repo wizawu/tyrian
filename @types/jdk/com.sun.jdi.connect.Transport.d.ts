@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace jdi {
       namespace connect {
-
         interface Transport$$lambda {
           (): java.lang.String | string
         }
@@ -10,7 +9,6 @@ declare namespace com {
         interface Transport {
           name(): java.lang.String
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Rectangle extends java.awt.geom.Rectangle2D implements java.awt.Shape, java.io.Serializable {
       public x: int
       public y: int
@@ -8,7 +7,12 @@ declare namespace java {
       public height: int
       public constructor()
       public constructor(arg0: java.awt.Rectangle)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      )
       public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
       public constructor(arg0: java.awt.Point, arg1: java.awt.Dimension)
       public constructor(arg0: java.awt.Point)
@@ -20,9 +24,24 @@ declare namespace java {
       public getBounds(): java.awt.Rectangle
       public getBounds2D(): java.awt.geom.Rectangle2D
       public setBounds(arg0: java.awt.Rectangle): void
-      public setBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
-      public setRect(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double, arg3: number | java.lang.Double): void
-      public reshape(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public setBounds(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
+      public setRect(
+        arg0: number | java.lang.Double,
+        arg1: number | java.lang.Double,
+        arg2: number | java.lang.Double,
+        arg3: number | java.lang.Double
+      ): void
+      public reshape(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       public getLocation(): java.awt.Point
       public setLocation(arg0: java.awt.Point): void
       public setLocation(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
@@ -35,7 +54,12 @@ declare namespace java {
       public contains(arg0: java.awt.Point): boolean
       public contains(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
       public contains(arg0: java.awt.Rectangle): boolean
-      public contains(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): boolean
+      public contains(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): boolean
       public inside(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
       public intersects(arg0: java.awt.Rectangle): boolean
       public intersection(arg0: java.awt.Rectangle): java.awt.Rectangle
@@ -51,6 +75,5 @@ declare namespace java {
       public equals(arg0: java.lang.Object | any): boolean
       public toString(): java.lang.String
     }
-
   }
 }

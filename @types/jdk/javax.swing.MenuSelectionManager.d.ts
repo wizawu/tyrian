@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class MenuSelectionManager {
       protected changeEvent: javax.swing.event.ChangeEvent
       protected listenerList: javax.swing.event.EventListenerList
@@ -10,7 +9,9 @@ declare namespace javax {
       public getSelectedPath(): javax.swing.MenuElement[]
       public clearSelectedPath(): void
       public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(
+        arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+      ): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public processMouseEvent(arg0: java.awt.event.MouseEvent): void
@@ -18,6 +19,5 @@ declare namespace javax {
       public processKeyEvent(arg0: java.awt.event.KeyEvent): void
       public isComponentPartOfCurrentMenu(arg0: java.awt.Component): boolean
     }
-
   }
 }

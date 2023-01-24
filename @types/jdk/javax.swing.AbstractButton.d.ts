@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    abstract class AbstractButton extends javax.swing.JComponent implements java.awt.ItemSelectable, javax.swing.SwingConstants {
+    abstract class AbstractButton
+      extends javax.swing.JComponent
+      implements java.awt.ItemSelectable, javax.swing.SwingConstants
+    {
       public static readonly MODEL_CHANGED_PROPERTY: java.lang.String
       public static readonly TEXT_CHANGED_PROPERTY: java.lang.String
       public static readonly MNEMONIC_CHANGED_PROPERTY: java.lang.String
@@ -70,7 +72,11 @@ declare namespace javax {
       public setAction(arg0: javax.swing.Action): void
       public getAction(): javax.swing.Action
       protected configurePropertiesFromAction(arg0: javax.swing.Action): void
-      clientPropertyChanged(arg0: java.lang.Object | any, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
+      clientPropertyChanged(
+        arg0: java.lang.Object | any,
+        arg1: java.lang.Object | any,
+        arg2: java.lang.Object | any
+      ): void
       shouldUpdateSelectedStateFromAction(): boolean
       protected actionPropertyChanged(arg0: javax.swing.Action, arg1: java.lang.String | string): void
       setIconFromAction(arg0: javax.swing.Action): void
@@ -102,7 +108,9 @@ declare namespace javax {
       protected addImpl(arg0: java.awt.Component, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       public setLayout(arg0: java.awt.LayoutManager): void
       public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(
+        arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+      ): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
@@ -121,12 +129,18 @@ declare namespace javax {
       public getItemListeners(): java.awt.event.ItemListener[]
       public getSelectedObjects(): java.lang.Object[]
       protected init(arg0: java.lang.String | string, arg1: javax.swing.Icon): void
-      public imageUpdate(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): boolean
+      public imageUpdate(
+        arg0: java.awt.Image,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      ): boolean
       setUIProperty(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
       protected paramString(): java.lang.String
       public getUI(): javax.swing.plaf.ComponentUI
       static access$000(arg0: javax.swing.AbstractButton): javax.accessibility.AccessibleContext
     }
-
   }
 }

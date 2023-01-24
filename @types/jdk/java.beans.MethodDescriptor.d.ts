@@ -1,6 +1,5 @@
 declare namespace java {
   namespace beans {
-
     class MethodDescriptor extends java.beans.FeatureDescriptor {
       public constructor(arg0: java.lang.reflect.Method)
       public constructor(arg0: java.lang.reflect.Method, arg1: java.beans.ParameterDescriptor[])
@@ -11,6 +10,5 @@ declare namespace java {
       constructor(arg0: java.beans.MethodDescriptor)
       appendTo(arg0: java.lang.StringBuilder): void
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     class SocketPermission extends java.security.Permission implements java.io.Serializable {
       public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
       constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
@@ -14,6 +13,5 @@ declare namespace java {
       public getActions(): java.lang.String
       public newPermissionCollection(): java.security.PermissionCollection
     }
-
   }
 }

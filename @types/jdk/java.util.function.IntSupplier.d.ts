@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace function$ {
-
       interface IntSupplier$$lambda {
         (): number | java.lang.Integer
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface IntSupplier {
         getAsInt(): number
       }
-
     }
   }
 }

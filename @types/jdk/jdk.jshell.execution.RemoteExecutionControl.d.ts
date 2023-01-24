@@ -1,8 +1,10 @@
 declare namespace jdk {
   namespace jshell {
     namespace execution {
-
-      class RemoteExecutionControl extends jdk.jshell.execution.DirectExecutionControl implements jdk.jshell.spi.ExecutionControl {
+      class RemoteExecutionControl
+        extends jdk.jshell.execution.DirectExecutionControl
+        implements jdk.jshell.spi.ExecutionControl
+      {
         public static main(arg0: java.lang.String[] | string[]): void
         public constructor(arg0: jdk.jshell.execution.LoaderDelegate)
         public constructor()
@@ -15,7 +17,6 @@ declare namespace jdk {
         protected clientCodeEnter(): void
         protected clientCodeLeave(): void
       }
-
     }
   }
 }

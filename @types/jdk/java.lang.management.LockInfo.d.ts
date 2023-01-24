@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace management {
-
       class LockInfo {
         public constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
         constructor(arg0: java.lang.Object | any)
@@ -10,7 +9,6 @@ declare namespace java {
         public static from(arg0: javax.management.openmbean.CompositeData): java.lang.management.LockInfo
         public toString(): java.lang.String
       }
-
     }
   }
 }

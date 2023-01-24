@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace crypto {
-
       class KeySelector$Purpose {
         public static readonly SIGN: javax.xml.crypto.KeySelector$Purpose
         public static readonly VERIFY: javax.xml.crypto.KeySelector$Purpose
@@ -9,7 +8,6 @@ declare namespace javax {
         public static readonly DECRYPT: javax.xml.crypto.KeySelector$Purpose
         public toString(): java.lang.String
       }
-
     }
   }
 }

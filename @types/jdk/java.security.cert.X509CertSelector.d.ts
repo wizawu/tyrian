@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
       class X509CertSelector implements java.security.cert.CertSelector {
         static readonly NAME_ANY: int
         static readonly NAME_RFC822: int
@@ -35,7 +34,10 @@ declare namespace java {
         public addSubjectAlternativeName(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
         public addSubjectAlternativeName(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[]): void
         static equalNames(arg0: java.util.Collection<unknown>, arg1: java.util.Collection<unknown>): boolean
-        static makeGeneralNameInterface(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): sun.security.x509.GeneralNameInterface
+        static makeGeneralNameInterface(
+          arg0: number | java.lang.Integer,
+          arg1: java.lang.Object | any
+        ): sun.security.x509.GeneralNameInterface
         public setNameConstraints(arg0: number[] | java.lang.Byte[]): void
         public setBasicConstraints(arg0: number | java.lang.Integer): void
         public setPolicy(arg0: java.util.Set<java.lang.String>): void
@@ -69,7 +71,6 @@ declare namespace java {
         public match(arg0: java.security.cert.Certificate): boolean
         public clone(): java.lang.Object
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
       interface WindowListener extends java.util.EventListener {
         windowOpened(arg0: java.awt.event.WindowEvent): void
         windowClosing(arg0: java.awt.event.WindowEvent): void
@@ -11,7 +10,6 @@ declare namespace java {
         windowActivated(arg0: java.awt.event.WindowEvent): void
         windowDeactivated(arg0: java.awt.event.WindowEvent): void
       }
-
     }
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicRootPaneUI extends javax.swing.plaf.RootPaneUI implements java.beans.PropertyChangeListener {
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
@@ -22,7 +21,6 @@ declare namespace javax {
           updateDefaultButtonBindings(arg0: javax.swing.JRootPane): void
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void
         }
-
       }
     }
   }

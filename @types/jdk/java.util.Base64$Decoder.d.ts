@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class Base64$Decoder {
       static readonly RFC4648: java.util.Base64$Decoder
       static readonly RFC4648_URLSAFE: java.util.Base64$Decoder
@@ -11,6 +10,5 @@ declare namespace java {
       public decode(arg0: java.nio.ByteBuffer): java.nio.ByteBuffer
       public wrap(arg0: java.io.InputStream): java.io.InputStream
     }
-
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
     namespace stream {
       namespace events {
-
         interface EntityDeclaration extends javax.xml.stream.events.XMLEvent {
           getPublicId(): java.lang.String
           getSystemId(): java.lang.String
@@ -11,7 +10,6 @@ declare namespace javax {
           getReplacementText(): java.lang.String
           getBaseURI(): java.lang.String
         }
-
       }
     }
   }

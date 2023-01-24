@@ -1,12 +1,21 @@
 declare namespace java {
   namespace lang {
-
-    class Class<T> implements java.io.Serializable, java.lang.reflect.GenericDeclaration, java.lang.reflect.Type, java.lang.reflect.AnnotatedElement {
+    class Class<T>
+      implements
+        java.io.Serializable,
+        java.lang.reflect.GenericDeclaration,
+        java.lang.reflect.Type,
+        java.lang.reflect.AnnotatedElement
+    {
       classValueMap: java.lang.ClassValue$ClassValueMap
       public toString(): java.lang.String
       public toGenericString(): java.lang.String
       public static forName(arg0: java.lang.String | string): java.lang.Class<unknown>
-      public static forName(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: java.lang.ClassLoader): java.lang.Class<unknown>
+      public static forName(
+        arg0: java.lang.String | string,
+        arg1: boolean | java.lang.Boolean,
+        arg2: java.lang.ClassLoader
+      ): java.lang.Class<unknown>
       public static forName(arg0: java.lang.Module, arg1: java.lang.String | string): java.lang.Class<unknown>
       public newInstance(): T
       public isInstance(arg0: java.lang.Object | any): boolean
@@ -46,16 +55,22 @@ declare namespace java {
       public getMethods(): java.lang.reflect.Method[]
       public getConstructors(): java.lang.reflect.Constructor<unknown>[]
       public getField(arg0: java.lang.String | string): java.lang.reflect.Field
-      public getMethod(arg0: java.lang.String | string, ...vargs: (java.lang.Class<unknown>)[]): java.lang.reflect.Method
-      public getConstructor(...vargs: (java.lang.Class<unknown>)[]): java.lang.reflect.Constructor<T>
+      public getMethod(arg0: java.lang.String | string, ...vargs: java.lang.Class<unknown>[]): java.lang.reflect.Method
+      public getConstructor(...vargs: java.lang.Class<unknown>[]): java.lang.reflect.Constructor<T>
       public getDeclaredClasses(): java.lang.Class<unknown>[]
       public getDeclaredFields(): java.lang.reflect.Field[]
       public getDeclaredMethods(): java.lang.reflect.Method[]
       public getDeclaredConstructors(): java.lang.reflect.Constructor<unknown>[]
       public getDeclaredField(arg0: java.lang.String | string): java.lang.reflect.Field
-      public getDeclaredMethod(arg0: java.lang.String | string, ...vargs: (java.lang.Class<unknown>)[]): java.lang.reflect.Method
-      getDeclaredPublicMethods(arg0: java.lang.String | string, ...vargs: (java.lang.Class<unknown>)[]): java.util.List<java.lang.reflect.Method>
-      public getDeclaredConstructor(...vargs: (java.lang.Class<unknown>)[]): java.lang.reflect.Constructor<T>
+      public getDeclaredMethod(
+        arg0: java.lang.String | string,
+        ...vargs: java.lang.Class<unknown>[]
+      ): java.lang.reflect.Method
+      getDeclaredPublicMethods(
+        arg0: java.lang.String | string,
+        ...vargs: java.lang.Class<unknown>[]
+      ): java.util.List<java.lang.reflect.Method>
+      public getDeclaredConstructor(...vargs: java.lang.Class<unknown>[]): java.lang.reflect.Constructor<T>
       public getResourceAsStream(arg0: java.lang.String | string): java.io.InputStream
       public getResource(arg0: java.lang.String | string): java.net.URL
       public getProtectionDomain(): java.security.ProtectionDomain
@@ -68,7 +83,7 @@ declare namespace java {
       public isEnum(): boolean
       public getEnumConstants(): T[]
       getEnumConstantsShared(): T[]
-      enumConstantDirectory(): java.util.Map<java.lang.String,T>
+      enumConstantDirectory(): java.util.Map<java.lang.String, T>
       public cast(arg0: java.lang.Object | any): T
       public asSubclass<U>(arg0: java.lang.Class<U>): java.lang.Class<U>
       public getAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
@@ -78,15 +93,20 @@ declare namespace java {
       public getDeclaredAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
       public getDeclaredAnnotationsByType<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A[]
       public getDeclaredAnnotations(): java.lang.annotation.Annotation[]
-      casAnnotationType(arg0: sun.reflect.annotation.AnnotationType, arg1: sun.reflect.annotation.AnnotationType): boolean
+      casAnnotationType(
+        arg0: sun.reflect.annotation.AnnotationType,
+        arg1: sun.reflect.annotation.AnnotationType
+      ): boolean
       getAnnotationType(): sun.reflect.annotation.AnnotationType
-      getDeclaredAnnotationMap(): java.util.Map<java.lang.Class<java.lang.annotation.Annotation>,java.lang.annotation.Annotation>
+      getDeclaredAnnotationMap(): java.util.Map<
+        java.lang.Class<java.lang.annotation.Annotation>,
+        java.lang.annotation.Annotation
+      >
       public getAnnotatedSuperclass(): java.lang.reflect.AnnotatedType
       public getAnnotatedInterfaces(): java.lang.reflect.AnnotatedType[]
       public getNestHost(): java.lang.Class<unknown>
       public isNestmateOf(arg0: java.lang.Class<unknown>): boolean
       public getNestMembers(): java.lang.Class<unknown>[]
     }
-
   }
 }

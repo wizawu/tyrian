@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace scripting {
-
         interface JSObject {
           call(arg0: java.lang.Object | any, ...vargs: (java.lang.Object | any)[]): java.lang.Object
           newObject(...vargs: (java.lang.Object | any)[]): java.lang.Object
@@ -25,7 +24,6 @@ declare namespace jdk {
           toNumber(): number
           getDefaultValue(arg0: java.lang.Class<unknown>): java.lang.Object
         }
-
       }
     }
   }

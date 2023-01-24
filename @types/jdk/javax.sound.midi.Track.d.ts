@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       class Track {
         constructor()
         public add(arg0: javax.sound.midi.MidiEvent): boolean
@@ -10,7 +9,6 @@ declare namespace javax {
         public size(): number
         public ticks(): number
       }
-
     }
   }
 }

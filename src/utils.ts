@@ -37,22 +37,12 @@ export function realPath(command: string): string {
   }
 }
 
-export function javap(classPaths: string[], classList: string[]): string | null {
-  let command = process.env.JAVAP
-  if (!command) {
-    try {
-      const runtime = "nashorn"
-      command = runtime ? path.resolve(locateJdk(runtime)[1], "bin", "javap") : realPath("javap")
-    } catch (e) {
-      command = realPath("javap")
-    }
-  }
-  const child = spawnSync(command, ["-package", "-cp", ":" + classPaths.join(":"), ...classList])
+export function javap(classPaths: string[], classList: string[]): string {
+  const child = spawnSync("javap", ["-package", "-cp", ":" + classPaths.join(":"), ...classList])
   if (child.status === 0) {
     return child.stdout.toString()
   } else {
-    console.error(child.stderr.toString())
-    return null
+    throw new Error(child.stderr.toString())
   }
 }
 

@@ -1,7 +1,8 @@
 declare namespace java {
   namespace util {
-
-    abstract class Calendar implements java.io.Serializable, java.lang.Cloneable, java.lang.Comparable<java.util.Calendar> {
+    abstract class Calendar
+      implements java.io.Serializable, java.lang.Cloneable, java.lang.Comparable<java.util.Calendar>
+    {
       public static readonly ERA: int
       public static readonly YEAR: int
       public static readonly MONTH: int
@@ -98,15 +99,47 @@ declare namespace java {
       protected internalGet(arg0: number | java.lang.Integer): number
       internalSet(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
-      public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-      public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
-      public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
+      public set(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
+      public set(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): void
+      public set(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      ): void
       public clear(): void
       public clear(arg0: number | java.lang.Integer): void
       public isSet(arg0: number | java.lang.Integer): boolean
-      public getDisplayName(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.util.Locale): java.lang.String
-      public getDisplayNames(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.util.Locale): java.util.Map<java.lang.String,java.lang.Integer>
-      checkDisplayNameParams(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.util.Locale, arg5: number | java.lang.Integer): boolean
+      public getDisplayName(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: java.util.Locale
+      ): java.lang.String
+      public getDisplayNames(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: java.util.Locale
+      ): java.util.Map<java.lang.String, java.lang.Integer>
+      checkDisplayNameParams(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: java.util.Locale,
+        arg5: number | java.lang.Integer
+      ): boolean
       protected complete(): void
       isExternallySet(arg0: number | java.lang.Integer): boolean
       getSetStateFields(): number
@@ -140,7 +173,11 @@ declare namespace java {
       public getMinimalDaysInFirstWeek(): number
       public isWeekDateSupported(): boolean
       public getWeekYear(): number
-      public setWeekDate(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public setWeekDate(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public getWeeksInWeekYear(): number
       public abstract getMinimum(arg0: number | java.lang.Integer): number
       public abstract getMaximum(arg0: number | java.lang.Integer): number
@@ -154,6 +191,5 @@ declare namespace java {
       public toInstant(): java.time.Instant
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

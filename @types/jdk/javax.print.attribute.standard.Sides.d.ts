@@ -2,8 +2,13 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
-        class Sides extends javax.print.attribute.EnumSyntax implements javax.print.attribute.DocAttribute, javax.print.attribute.PrintRequestAttribute, javax.print.attribute.PrintJobAttribute {
+        class Sides
+          extends javax.print.attribute.EnumSyntax
+          implements
+            javax.print.attribute.DocAttribute,
+            javax.print.attribute.PrintRequestAttribute,
+            javax.print.attribute.PrintJobAttribute
+        {
           public static readonly ONE_SIDED: javax.print.attribute.standard.Sides
           public static readonly TWO_SIDED_LONG_EDGE: javax.print.attribute.standard.Sides
           public static readonly TWO_SIDED_SHORT_EDGE: javax.print.attribute.standard.Sides
@@ -15,7 +20,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

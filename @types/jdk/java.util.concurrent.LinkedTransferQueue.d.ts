@@ -1,8 +1,10 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
-      class LinkedTransferQueue<E> extends java.util.AbstractQueue<E> implements java.util.concurrent.TransferQueue<E>, java.io.Serializable {
+      class LinkedTransferQueue<E>
+        extends java.util.AbstractQueue<E>
+        implements java.util.concurrent.TransferQueue<E>, java.io.Serializable
+      {
         static readonly SWEEP_THRESHOLD: int
         head: java.util.concurrent.LinkedTransferQueue$Node
         static readonly ITEM: java.lang.invoke.VarHandle
@@ -13,7 +15,10 @@ declare namespace java {
         public toArray(): java.lang.Object[]
         public toArray<T>(arg0: T[]): T[]
         public spliterator(): java.util.Spliterator<E>
-        unsplice(arg0: java.util.concurrent.LinkedTransferQueue$Node, arg1: java.util.concurrent.LinkedTransferQueue$Node): void
+        unsplice(
+          arg0: java.util.concurrent.LinkedTransferQueue$Node,
+          arg1: java.util.concurrent.LinkedTransferQueue$Node
+        ): void
         public constructor()
         public constructor(arg0: java.util.Collection<E>)
         public put(arg0: E): void
@@ -41,10 +46,14 @@ declare namespace java {
         public removeAll(arg0: java.util.Collection<unknown>): boolean
         public retainAll(arg0: java.util.Collection<unknown>): boolean
         public clear(): void
-        forEachFrom(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>, arg1: java.util.concurrent.LinkedTransferQueue$Node): void
-        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        forEachFrom(
+          arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>,
+          arg1: java.util.concurrent.LinkedTransferQueue$Node
+        ): void
+        public forEach(
+          arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
+        ): void
       }
-
     }
   }
 }

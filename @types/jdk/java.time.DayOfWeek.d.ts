@@ -1,7 +1,9 @@
 declare namespace java {
   namespace time {
-
-    class DayOfWeek extends java.lang.Enum<java.time.DayOfWeek> implements java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster {
+    class DayOfWeek
+      extends java.lang.Enum<java.time.DayOfWeek>
+      implements java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster
+    {
       public static readonly MONDAY: java.time.DayOfWeek
       public static readonly TUESDAY: java.time.DayOfWeek
       public static readonly WEDNESDAY: java.time.DayOfWeek
@@ -24,6 +26,5 @@ declare namespace java {
       public query<R>(arg0: java.time.temporal.TemporalQuery<R> | java.time.temporal.TemporalQuery$$lambda<R>): R
       public adjustInto(arg0: java.time.temporal.Temporal): java.time.temporal.Temporal
     }
-
   }
 }

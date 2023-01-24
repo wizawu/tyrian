@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace naming {
     namespace directory {
-
       class BasicAttribute implements javax.naming.directory.Attribute {
         protected attrID: java.lang.String
         protected values: java.util.Vector<java.lang.Object>
@@ -13,7 +12,11 @@ declare namespace javax {
         public constructor(arg0: java.lang.String | string)
         public constructor(arg0: java.lang.String | string, arg1: java.lang.Object | any)
         public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
-        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean)
+        public constructor(
+          arg0: java.lang.String | string,
+          arg1: java.lang.Object | any,
+          arg2: boolean | java.lang.Boolean
+        )
         public getAll(): javax.naming.NamingEnumeration<unknown>
         public get(): java.lang.Object
         public size(): number
@@ -30,7 +33,6 @@ declare namespace javax {
         public getAttributeSyntaxDefinition(): javax.naming.directory.DirContext
         public getAttributeDefinition(): javax.naming.directory.DirContext
       }
-
     }
   }
 }

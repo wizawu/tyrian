@@ -62,12 +62,12 @@ function gradleInstall(): void {
   fs.writeFileSync(path.join("lib", "@types", "index.d.ts"), "")
   const mvnDependencies: Record<string, string> = {}
   // find all mvnDependencies from node_modules
-  ;[PATH.PACKAGE, ...new GlobSync(path.join("node_modules", "**", PATH.PACKAGE)).found].forEach(it => {
+  for (const it of [PATH.PACKAGE, ...new GlobSync(path.join("node_modules", "**", PATH.PACKAGE)).found]) {
     const pkg = JSON.parse(fs.readFileSync(it as string, "utf-8"))
     Object.keys(pkg.mvnDependencies || {}).forEach(k => {
       if (pkg.mvnDependencies[k] > (mvnDependencies[k] || "")) mvnDependencies[k] = pkg.mvnDependencies[k]
     })
-  })
+  }
   const deps = Object.keys(mvnDependencies).map(it => it + ":" + mvnDependencies[it])
   fs.writeFileSync(path.join("lib", "build.gradle"), gradleTemplate(deps))
   const child = spawnSync("gradle", ["-b", path.join("lib", "build.gradle"), "--no-daemon", "install"], {
@@ -79,20 +79,20 @@ function gradleInstall(): void {
 export const gradleTemplate = (deps: string[]): string =>
   redent(
     `
-  apply plugin: "java"
+    apply plugin: "java"
 
-  repositories {
-    mavenCentral()
-  }
+    repositories {
+      mavenCentral()
+    }
 
-  tasks.register("install", Copy) {
-    from sourceSets.main.runtimeClasspath
-    into "."
-  }
+    dependencies {
+      ${deps.map(it => `implementation "${it}"`).join("\n      ")}
+    }
 
-  dependencies {
-    ${deps.map(it => `implementation "${it}"`).join("\n    ")}
-  }
-`,
+    tasks.register("install", Copy) {
+      from sourceSets.main.runtimeClasspath
+      into "."
+    }
+    `,
     0
   ).trimStart()

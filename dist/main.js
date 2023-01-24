@@ -33370,13 +33370,13 @@ function gradleInstall() {
   import_fs5.default.mkdirSync(import_path4.default.join("lib", "@types"), { recursive: true });
   import_fs5.default.writeFileSync(import_path4.default.join("lib", "@types", "index.d.ts"), "");
   const mvnDependencies = {};
-  [PATH.PACKAGE, ...new import_glob.GlobSync(import_path4.default.join("node_modules", "**", PATH.PACKAGE)).found].forEach((it) => {
+  for (const it of [PATH.PACKAGE, ...new import_glob.GlobSync(import_path4.default.join("node_modules", "**", PATH.PACKAGE)).found]) {
     const pkg = JSON.parse(import_fs5.default.readFileSync(it, "utf-8"));
     Object.keys(pkg.mvnDependencies || {}).forEach((k) => {
       if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))
         mvnDependencies[k] = pkg.mvnDependencies[k];
     });
-  });
+  }
   const deps = Object.keys(mvnDependencies).map((it) => it + ":" + mvnDependencies[it]);
   import_fs5.default.writeFileSync(import_path4.default.join("lib", "build.gradle"), gradleTemplate(deps));
   const child = (0, import_child_process3.spawnSync)("gradle", ["-b", import_path4.default.join("lib", "build.gradle"), "--no-daemon", "install"], {
@@ -33387,21 +33387,21 @@ function gradleInstall() {
 }
 var gradleTemplate = (deps) => (0, import_redent.default)(
   `
-  apply plugin: "java"
+    apply plugin: "java"
 
-  repositories {
-    mavenCentral()
-  }
+    repositories {
+      mavenCentral()
+    }
 
-  tasks.register("install", Copy) {
-    from sourceSets.main.runtimeClasspath
-    into "."
-  }
+    dependencies {
+      ${deps.map((it) => `implementation "${it}"`).join("\n      ")}
+    }
 
-  dependencies {
-    ${deps.map((it) => `implementation "${it}"`).join("\n    ")}
-  }
-`,
+    tasks.register("install", Copy) {
+      from sourceSets.main.runtimeClasspath
+      into "."
+    }
+    `,
   0
 ).trimStart();
 

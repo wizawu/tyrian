@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class ClassNotFoundException extends java.lang.ReflectiveOperationException {
       public constructor()
       public constructor(arg0: java.lang.String | string)
@@ -8,6 +7,5 @@ declare namespace java {
       public getException(): java.lang.Throwable
       public getCause(): java.lang.Throwable
     }
-
   }
 }

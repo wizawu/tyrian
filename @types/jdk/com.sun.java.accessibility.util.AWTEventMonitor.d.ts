@@ -3,7 +3,6 @@ declare namespace com {
     namespace java {
       namespace accessibility {
         namespace util {
-
           class AWTEventMonitor {
             protected static componentWithFocus: java.awt.Component
             protected static componentListener: java.awt.event.ComponentListener
@@ -33,16 +32,27 @@ declare namespace com {
             public static removeMouseMotionListener(arg0: java.awt.event.MouseMotionListener): void
             public static addWindowListener(arg0: java.awt.event.WindowListener): void
             public static removeWindowListener(arg0: java.awt.event.WindowListener): void
-            public static addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
-            public static removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
-            public static addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
-            public static removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
+            public static addActionListener(
+              arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda
+            ): void
+            public static removeActionListener(
+              arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda
+            ): void
+            public static addAdjustmentListener(
+              arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda
+            ): void
+            public static removeAdjustmentListener(
+              arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda
+            ): void
             public static addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda): void
-            public static removeItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda): void
+            public static removeItemListener(
+              arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda
+            ): void
             public static addTextListener(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$lambda): void
-            public static removeTextListener(arg0: java.awt.event.TextListener | java.awt.event.TextListener$$lambda): void
+            public static removeTextListener(
+              arg0: java.awt.event.TextListener | java.awt.event.TextListener$$lambda
+            ): void
           }
-
         }
       }
     }

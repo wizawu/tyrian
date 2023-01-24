@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
       interface BlockingQueue<E> extends java.util.Queue<E> {
         add(arg0: E): boolean
         offer(arg0: E): boolean
@@ -15,7 +14,6 @@ declare namespace java {
         drainTo(arg0: java.util.Collection<unknown>): number
         drainTo(arg0: java.util.Collection<unknown>, arg1: number | java.lang.Integer): number
       }
-
     }
   }
 }

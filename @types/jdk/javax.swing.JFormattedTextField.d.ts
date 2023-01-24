@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JFormattedTextField extends javax.swing.JTextField {
       public static readonly COMMIT: int
       public static readonly COMMIT_OR_REVERT: int
@@ -29,6 +28,5 @@ declare namespace javax {
       public getUIClassID(): java.lang.String
       public setDocument(arg0: javax.swing.text.Document): void
     }
-
   }
 }

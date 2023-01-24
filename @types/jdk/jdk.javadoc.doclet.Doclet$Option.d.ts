@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace javadoc {
     namespace doclet {
-
       interface Doclet$Option {
         getArgumentCount(): number
         getDescription(): java.lang.String
@@ -10,7 +9,6 @@ declare namespace jdk {
         getParameters(): java.lang.String
         process(arg0: java.lang.String | string, arg1: java.util.List<java.lang.String>): boolean
       }
-
     }
   }
 }

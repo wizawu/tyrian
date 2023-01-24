@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace jdi {
-
       interface Accessible {
         modifiers(): number
         isPrivate(): boolean
@@ -9,7 +8,6 @@ declare namespace com {
         isProtected(): boolean
         isPublic(): boolean
       }
-
     }
   }
 }

@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace ls {
-
         interface LSInput {
           getCharacterStream(): java.io.Reader
           setCharacterStream(arg0: java.io.Reader): void
@@ -21,7 +20,6 @@ declare namespace org {
           getCertifiedText(): boolean
           setCertifiedText(arg0: boolean | java.lang.Boolean): void
         }
-
       }
     }
   }

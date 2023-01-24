@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace sql {
-
     interface RowSetMetaData extends java.sql.ResultSetMetaData {
       setColumnCount(arg0: number | java.lang.Integer): void
       setAutoIncrement(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
@@ -20,6 +19,5 @@ declare namespace javax {
       setColumnType(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       setColumnTypeName(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace temporal {
-
       class IsoFields {
         public static readonly DAY_OF_QUARTER: java.time.temporal.TemporalField
         public static readonly QUARTER_OF_YEAR: java.time.temporal.TemporalField
@@ -11,7 +10,6 @@ declare namespace java {
         public static readonly QUARTER_YEARS: java.time.temporal.TemporalUnit
         static isIso(arg0: java.time.temporal.TemporalAccessor): boolean
       }
-
     }
   }
 }

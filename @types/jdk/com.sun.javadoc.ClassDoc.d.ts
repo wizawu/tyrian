@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace javadoc {
-
       interface ClassDoc extends com.sun.javadoc.ProgramElementDoc, com.sun.javadoc.Type {
         isAbstract(): boolean
         isSerializable(): boolean
@@ -29,7 +28,6 @@ declare namespace com {
         importedClasses(): com.sun.javadoc.ClassDoc[]
         importedPackages(): com.sun.javadoc.PackageDoc[]
       }
-
     }
   }
 }

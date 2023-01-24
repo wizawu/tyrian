@@ -3,14 +3,16 @@ declare namespace com {
     namespace java {
       namespace accessibility {
         namespace util {
-
           class AccessibilityEventMonitor {
             protected static readonly listenerList: com.sun.java.accessibility.util.AccessibilityListenerList
             public constructor()
-            public static addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-            public static removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+            public static addPropertyChangeListener(
+              arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+            ): void
+            public static removePropertyChangeListener(
+              arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+            ): void
           }
-
         }
       }
     }

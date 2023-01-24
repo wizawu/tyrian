@@ -2,9 +2,12 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalScrollButton extends javax.swing.plaf.basic.BasicArrowButton {
-          public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean)
+          public constructor(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: boolean | java.lang.Boolean
+          )
           public setFreeStanding(arg0: boolean | java.lang.Boolean): void
           public paint(arg0: java.awt.Graphics): void
           public getPreferredSize(): java.awt.Dimension
@@ -12,7 +15,6 @@ declare namespace javax {
           public getMaximumSize(): java.awt.Dimension
           public getButtonWidth(): number
         }
-
       }
     }
   }

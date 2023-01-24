@@ -1,7 +1,6 @@
 declare namespace org {
   namespace ietf {
     namespace jgss {
-
       class MessageProp {
         public constructor(arg0: boolean | java.lang.Boolean)
         public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean)
@@ -15,9 +14,15 @@ declare namespace org {
         public isGapToken(): boolean
         public getMinorStatus(): number
         public getMinorString(): java.lang.String
-        public setSupplementaryStates(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: number | java.lang.Integer, arg5: java.lang.String | string): void
+        public setSupplementaryStates(
+          arg0: boolean | java.lang.Boolean,
+          arg1: boolean | java.lang.Boolean,
+          arg2: boolean | java.lang.Boolean,
+          arg3: boolean | java.lang.Boolean,
+          arg4: number | java.lang.Integer,
+          arg5: java.lang.String | string
+        ): void
       }
-
     }
   }
 }

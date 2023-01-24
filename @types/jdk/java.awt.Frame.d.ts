@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Frame extends java.awt.Window implements java.awt.MenuContainer {
       public static readonly DEFAULT_CURSOR: int
       public static readonly CROSSHAIR_CURSOR: int
@@ -62,6 +61,5 @@ declare namespace java {
       public static getFrames(): java.awt.Frame[]
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

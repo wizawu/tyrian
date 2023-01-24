@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace javadoc {
-
       interface Type {
         typeName(): java.lang.String
         qualifiedTypeName(): java.lang.String
@@ -17,7 +16,6 @@ declare namespace com {
         asAnnotationTypeDoc(): com.sun.javadoc.AnnotationTypeDoc
         getElementType(): com.sun.javadoc.Type
       }
-
     }
   }
 }

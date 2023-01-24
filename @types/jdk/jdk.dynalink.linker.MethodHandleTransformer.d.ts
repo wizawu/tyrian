@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace dynalink {
     namespace linker {
-
       interface MethodHandleTransformer$$lambda {
         (arg0: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle
       }
@@ -9,7 +8,6 @@ declare namespace jdk {
       interface MethodHandleTransformer {
         transform(arg0: java.lang.invoke.MethodHandle): java.lang.invoke.MethodHandle
       }
-
     }
   }
 }

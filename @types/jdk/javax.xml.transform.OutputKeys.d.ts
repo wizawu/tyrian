@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace transform {
-
       class OutputKeys {
         public static readonly METHOD: java.lang.String
         public static readonly VERSION: java.lang.String
@@ -14,7 +13,6 @@ declare namespace javax {
         public static readonly INDENT: java.lang.String
         public static readonly MEDIA_TYPE: java.lang.String
       }
-
     }
   }
 }

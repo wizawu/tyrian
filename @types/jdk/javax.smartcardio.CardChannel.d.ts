@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace smartcardio {
-
     abstract class CardChannel {
       protected constructor()
       public abstract getCard(): javax.smartcardio.Card
@@ -9,6 +8,5 @@ declare namespace javax {
       public abstract transmit(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer): number
       public abstract close(): void
     }
-
   }
 }

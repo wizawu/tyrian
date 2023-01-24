@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace atomic {
-
         class AtomicInteger extends java.lang.Number implements java.io.Serializable {
           public constructor(arg0: number | java.lang.Integer)
           public constructor()
@@ -21,8 +20,14 @@ declare namespace java {
           public addAndGet(arg0: number | java.lang.Integer): number
           public getAndUpdate(arg0: java.util.function$.IntUnaryOperator): number
           public updateAndGet(arg0: java.util.function$.IntUnaryOperator): number
-          public getAndAccumulate(arg0: number | java.lang.Integer, arg1: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$lambda): number
-          public accumulateAndGet(arg0: number | java.lang.Integer, arg1: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$lambda): number
+          public getAndAccumulate(
+            arg0: number | java.lang.Integer,
+            arg1: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$lambda
+          ): number
+          public accumulateAndGet(
+            arg0: number | java.lang.Integer,
+            arg1: java.util.function$.IntBinaryOperator | java.util.function$.IntBinaryOperator$$lambda
+          ): number
           public toString(): java.lang.String
           public intValue(): number
           public longValue(): number
@@ -41,7 +46,6 @@ declare namespace java {
           public weakCompareAndSetAcquire(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
           public weakCompareAndSetRelease(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
         }
-
       }
     }
   }

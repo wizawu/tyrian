@@ -1,6 +1,5 @@
 declare namespace java {
   namespace math {
-
     class RoundingMode extends java.lang.Enum<java.math.RoundingMode> {
       public static readonly UP: java.math.RoundingMode
       public static readonly DOWN: java.math.RoundingMode
@@ -15,6 +14,5 @@ declare namespace java {
       public static valueOf(arg0: java.lang.String | string): java.math.RoundingMode
       public static valueOf(arg0: number | java.lang.Integer): java.math.RoundingMode
     }
-
   }
 }

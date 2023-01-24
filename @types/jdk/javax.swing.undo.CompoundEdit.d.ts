@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace undo {
-
       class CompoundEdit extends javax.swing.undo.AbstractUndoableEdit {
         inProgress: boolean
         protected edits: java.util.Vector<javax.swing.undo.UndoableEdit>
@@ -21,7 +20,6 @@ declare namespace javax {
         public getRedoPresentationName(): java.lang.String
         public toString(): java.lang.String
       }
-
     }
   }
 }

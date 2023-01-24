@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace management {
-
       class ThreadInfo {
         public getThreadId(): number
         public getThreadName(): java.lang.String
@@ -24,7 +23,6 @@ declare namespace java {
         public getLockedMonitors(): java.lang.management.MonitorInfo[]
         public getLockedSynchronizers(): java.lang.management.LockInfo[]
       }
-
     }
   }
 }

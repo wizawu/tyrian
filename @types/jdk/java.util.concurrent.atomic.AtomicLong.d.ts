@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace atomic {
-
         class AtomicLong extends java.lang.Number implements java.io.Serializable {
           static readonly VM_SUPPORTS_LONG_CAS: boolean
           public constructor(arg0: number | java.lang.Long)
@@ -22,8 +21,14 @@ declare namespace java {
           public addAndGet(arg0: number | java.lang.Long): number
           public getAndUpdate(arg0: java.util.function$.LongUnaryOperator): number
           public updateAndGet(arg0: java.util.function$.LongUnaryOperator): number
-          public getAndAccumulate(arg0: number | java.lang.Long, arg1: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda): number
-          public accumulateAndGet(arg0: number | java.lang.Long, arg1: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda): number
+          public getAndAccumulate(
+            arg0: number | java.lang.Long,
+            arg1: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda
+          ): number
+          public accumulateAndGet(
+            arg0: number | java.lang.Long,
+            arg1: java.util.function$.LongBinaryOperator | java.util.function$.LongBinaryOperator$$lambda
+          ): number
           public toString(): java.lang.String
           public intValue(): number
           public longValue(): number
@@ -42,7 +47,6 @@ declare namespace java {
           public weakCompareAndSetAcquire(arg0: number | java.lang.Long, arg1: number | java.lang.Long): boolean
           public weakCompareAndSetRelease(arg0: number | java.lang.Long, arg1: number | java.lang.Long): boolean
         }
-
       }
     }
   }

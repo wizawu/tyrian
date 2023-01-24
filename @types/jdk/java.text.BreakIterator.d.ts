@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     abstract class BreakIterator implements java.lang.Cloneable {
       public static readonly DONE: int
       protected constructor()
@@ -27,6 +26,5 @@ declare namespace java {
       public static getSentenceInstance(arg0: java.util.Locale): java.text.BreakIterator
       public static getAvailableLocales(): java.util.Locale[]
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class ProcessBuilder {
       static readonly $assertionsDisabled: boolean
       public constructor(arg0: java.util.List<java.lang.String>)
@@ -8,7 +7,7 @@ declare namespace java {
       public command(arg0: java.util.List<java.lang.String>): java.lang.ProcessBuilder
       public command(...vargs: (java.lang.String | string)[]): java.lang.ProcessBuilder
       public command(): java.util.List<java.lang.String>
-      public environment(): java.util.Map<java.lang.String,java.lang.String>
+      public environment(): java.util.Map<java.lang.String, java.lang.String>
       environment(arg0: java.lang.String[] | string[]): java.lang.ProcessBuilder
       public directory(): java.io.File
       public directory(arg0: java.io.File): java.lang.ProcessBuilder
@@ -27,6 +26,5 @@ declare namespace java {
       public start(): java.lang.Process
       public static startPipeline(arg0: java.util.List<java.lang.ProcessBuilder>): java.util.List<java.lang.Process>
     }
-
   }
 }

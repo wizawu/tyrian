@@ -1,9 +1,8 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       interface Sequencer extends javax.sound.midi.MidiDevice {
-        public static readonly LOOP_CONTINUOUSLY: int
+        readonly LOOP_CONTINUOUSLY: int
         setSequence(arg0: javax.sound.midi.Sequence): void
         setSequence(arg0: java.io.InputStream): void
         getSequence(): javax.sound.midi.Sequence
@@ -37,10 +36,20 @@ declare namespace javax {
         getTrackMute(arg0: number | java.lang.Integer): boolean
         setTrackSolo(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
         getTrackSolo(arg0: number | java.lang.Integer): boolean
-        addMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$lambda): boolean
-        removeMetaEventListener(arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$lambda): void
-        addControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda, arg1: number[] | java.lang.Integer[]): number[]
-        removeControllerEventListener(arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda, arg1: number[] | java.lang.Integer[]): number[]
+        addMetaEventListener(
+          arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$lambda
+        ): boolean
+        removeMetaEventListener(
+          arg0: javax.sound.midi.MetaEventListener | javax.sound.midi.MetaEventListener$$lambda
+        ): void
+        addControllerEventListener(
+          arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda,
+          arg1: number[] | java.lang.Integer[]
+        ): number[]
+        removeControllerEventListener(
+          arg0: javax.sound.midi.ControllerEventListener | javax.sound.midi.ControllerEventListener$$lambda,
+          arg1: number[] | java.lang.Integer[]
+        ): number[]
         setLoopStartPoint(arg0: number | java.lang.Long): void
         getLoopStartPoint(): number
         setLoopEndPoint(arg0: number | java.lang.Long): void
@@ -48,7 +57,6 @@ declare namespace javax {
         setLoopCount(arg0: number | java.lang.Integer): void
         getLoopCount(): number
       }
-
     }
   }
 }

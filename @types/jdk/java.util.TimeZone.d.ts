@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     abstract class TimeZone implements java.io.Serializable, java.lang.Cloneable {
       public static readonly SHORT: int
       public static readonly LONG: int
@@ -9,7 +8,14 @@ declare namespace java {
       static readonly GMT_ID: java.lang.String
       static readonly $assertionsDisabled: boolean
       public constructor()
-      public abstract getOffset(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): number
+      public abstract getOffset(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      ): number
       public getOffset(arg0: number | java.lang.Long): number
       getOffsets(arg0: number | java.lang.Long, arg1: number[] | java.lang.Integer[]): number
       public abstract setRawOffset(arg0: number | java.lang.Integer): void
@@ -19,7 +25,11 @@ declare namespace java {
       public getDisplayName(): java.lang.String
       public getDisplayName(arg0: java.util.Locale): java.lang.String
       public getDisplayName(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer): java.lang.String
-      public getDisplayName(arg0: boolean | java.lang.Boolean, arg1: number | java.lang.Integer, arg2: java.util.Locale): java.lang.String
+      public getDisplayName(
+        arg0: boolean | java.lang.Boolean,
+        arg1: number | java.lang.Integer,
+        arg2: java.util.Locale
+      ): java.lang.String
       public getDSTSavings(): number
       public abstract useDaylightTime(): boolean
       public observesDaylightTime(): boolean
@@ -35,6 +45,5 @@ declare namespace java {
       public hasSameRules(arg0: java.util.TimeZone): boolean
       public clone(): java.lang.Object
     }
-
   }
 }

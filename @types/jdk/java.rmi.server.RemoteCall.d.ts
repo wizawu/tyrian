@@ -1,7 +1,6 @@
 declare namespace java {
   namespace rmi {
     namespace server {
-
       interface RemoteCall {
         getOutputStream(): java.io.ObjectOutput
         releaseOutputStream(): void
@@ -11,7 +10,6 @@ declare namespace java {
         executeCall(): void
         done(): void
       }
-
     }
   }
 }

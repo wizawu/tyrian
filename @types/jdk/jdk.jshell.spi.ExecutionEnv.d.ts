@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace jshell {
     namespace spi {
-
       interface ExecutionEnv {
         userIn(): java.io.InputStream
         userOut(): java.io.PrintStream
@@ -9,7 +8,6 @@ declare namespace jdk {
         extraRemoteVMOptions(): java.util.List<java.lang.String>
         closeDown(): void
       }
-
     }
   }
 }

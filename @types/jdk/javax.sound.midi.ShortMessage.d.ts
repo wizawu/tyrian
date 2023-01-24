@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       class ShortMessage extends javax.sound.midi.MidiMessage {
         public static readonly MIDI_TIME_CODE: int
         public static readonly SONG_POSITION_POINTER: int
@@ -23,12 +22,30 @@ declare namespace javax {
         public static readonly PITCH_BEND: int
         public constructor()
         public constructor(arg0: number | java.lang.Integer)
-        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+        public constructor(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        )
+        public constructor(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        )
         protected constructor(arg0: number[] | java.lang.Byte[])
         public setMessage(arg0: number | java.lang.Integer): void
-        public setMessage(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-        public setMessage(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+        public setMessage(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
+        public setMessage(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        ): void
         public getChannel(): number
         public getCommand(): number
         public getData1(): number
@@ -36,7 +53,6 @@ declare namespace javax {
         public clone(): java.lang.Object
         protected getDataLength(arg0: number | java.lang.Integer): number
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace print {
-
     class DocFlavor$INPUT_STREAM extends javax.print.DocFlavor {
       public static readonly TEXT_PLAIN_HOST: javax.print.DocFlavor$INPUT_STREAM
       public static readonly TEXT_PLAIN_UTF_8: javax.print.DocFlavor$INPUT_STREAM
@@ -23,6 +22,5 @@ declare namespace javax {
       public static readonly AUTOSENSE: javax.print.DocFlavor$INPUT_STREAM
       public constructor(arg0: java.lang.String | string)
     }
-
   }
 }

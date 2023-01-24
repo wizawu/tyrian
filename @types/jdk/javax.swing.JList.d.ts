@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JList<E> extends javax.swing.JComponent implements javax.swing.Scrollable, javax.accessibility.Accessible {
       public static readonly VERTICAL: int
       public static readonly VERTICAL_WRAP: int
@@ -21,7 +20,9 @@ declare namespace javax {
       public getFixedCellHeight(): number
       public setFixedCellHeight(arg0: number | java.lang.Integer): void
       public getCellRenderer(): javax.swing.ListCellRenderer<unknown>
-      public setCellRenderer(arg0: javax.swing.ListCellRenderer<unknown> | javax.swing.ListCellRenderer$$lambda<unknown>): void
+      public setCellRenderer(
+        arg0: javax.swing.ListCellRenderer<unknown> | javax.swing.ListCellRenderer$$lambda<unknown>
+      ): void
       public getSelectionForeground(): java.awt.Color
       public setSelectionForeground(arg0: java.awt.Color): void
       public getSelectionBackground(): java.awt.Color
@@ -38,9 +39,17 @@ declare namespace javax {
       public setDropMode(arg0: javax.swing.DropMode): void
       public getDropMode(): javax.swing.DropMode
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.JList$DropLocation
-      setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean): java.lang.Object
+      setDropLocation(
+        arg0: javax.swing.TransferHandler$DropLocation,
+        arg1: java.lang.Object | any,
+        arg2: boolean | java.lang.Boolean
+      ): java.lang.Object
       public getDropLocation(): javax.swing.JList$DropLocation
-      public getNextMatch(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: javax.swing.text.Position$Bias): number
+      public getNextMatch(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: javax.swing.text.Position$Bias
+      ): number
       public getToolTipText(arg0: java.awt.event.MouseEvent): java.lang.String
       public locationToIndex(arg0: java.awt.Point): number
       public indexToLocation(arg0: number | java.lang.Integer): java.awt.Point
@@ -51,9 +60,17 @@ declare namespace javax {
       public setListData(arg0: java.util.Vector<E>): void
       protected createSelectionModel(): javax.swing.ListSelectionModel
       public getSelectionModel(): javax.swing.ListSelectionModel
-      protected fireSelectionValueChanged(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): void
-      public addListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$lambda): void
-      public removeListSelectionListener(arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$lambda): void
+      protected fireSelectionValueChanged(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean
+      ): void
+      public addListSelectionListener(
+        arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$lambda
+      ): void
+      public removeListSelectionListener(
+        arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$lambda
+      ): void
       public getListSelectionListeners(): javax.swing.event.ListSelectionListener[]
       public setSelectionModel(arg0: javax.swing.ListSelectionModel): void
       public setSelectionMode(arg0: number | java.lang.Integer): void
@@ -79,8 +96,16 @@ declare namespace javax {
       public getSelectedValue(): E
       public setSelectedValue(arg0: java.lang.Object | any, arg1: boolean | java.lang.Boolean): void
       public getPreferredScrollableViewportSize(): java.awt.Dimension
-      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public getScrollableUnitIncrement(
+        arg0: java.awt.Rectangle,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      public getScrollableBlockIncrement(
+        arg0: java.awt.Rectangle,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public getScrollableTracksViewportWidth(): boolean
       public getScrollableTracksViewportHeight(): boolean
       protected paramString(): java.lang.String
@@ -88,6 +113,5 @@ declare namespace javax {
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.TransferHandler$DropLocation
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

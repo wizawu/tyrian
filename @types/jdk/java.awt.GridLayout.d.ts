@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class GridLayout implements java.awt.LayoutManager, java.io.Serializable {
       hgap: int
       vgap: int
@@ -8,7 +7,12 @@ declare namespace java {
       cols: int
       public constructor()
       public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      )
       public getRows(): number
       public setRows(arg0: number | java.lang.Integer): void
       public getColumns(): number
@@ -24,6 +28,5 @@ declare namespace java {
       public layoutContainer(arg0: java.awt.Container): void
       public toString(): java.lang.String
     }
-
   }
 }

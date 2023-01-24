@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLTableElement extends org.w3c.dom.html.HTMLElement {
           getCaption(): org.w3c.dom.html.HTMLTableCaptionElement
           setCaption(arg0: org.w3c.dom.html.HTMLTableCaptionElement): void
@@ -39,7 +38,6 @@ declare namespace org {
           insertRow(arg0: number | java.lang.Integer): org.w3c.dom.html.HTMLElement
           deleteRow(arg0: number | java.lang.Integer): void
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace accessibility {
-
     abstract class AccessibleBundle {
       protected key: java.lang.String
       public constructor()
@@ -9,6 +8,5 @@ declare namespace javax {
       public toDisplayString(): java.lang.String
       public toString(): java.lang.String
     }
-
   }
 }

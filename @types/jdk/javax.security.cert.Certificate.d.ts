@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace security {
     namespace cert {
-
       abstract class Certificate {
         public constructor()
         public equals(arg0: java.lang.Object | any): boolean
@@ -12,7 +11,6 @@ declare namespace javax {
         public abstract toString(): java.lang.String
         public abstract getPublicKey(): java.security.PublicKey
       }
-
     }
   }
 }

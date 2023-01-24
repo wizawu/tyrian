@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace naming {
     namespace directory {
-
       interface Attributes extends java.lang.Cloneable, java.io.Serializable {
         isCaseIgnored(): boolean
         size(): number
@@ -13,7 +12,6 @@ declare namespace javax {
         remove(arg0: java.lang.String | string): javax.naming.directory.Attribute
         clone(): java.lang.Object
       }
-
     }
   }
 }

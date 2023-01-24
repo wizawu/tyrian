@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace function$ {
-
       interface LongSupplier$$lambda {
         (): number | java.lang.Long
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface LongSupplier {
         getAsLong(): number
       }
-
     }
   }
 }

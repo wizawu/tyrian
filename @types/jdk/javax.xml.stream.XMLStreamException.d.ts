@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace stream {
-
       class XMLStreamException extends java.lang.Exception {
         protected nested: java.lang.Throwable
         protected location: javax.xml.stream.Location
@@ -14,7 +13,6 @@ declare namespace javax {
         public getNestedException(): java.lang.Throwable
         public getLocation(): javax.xml.stream.Location
       }
-
     }
   }
 }

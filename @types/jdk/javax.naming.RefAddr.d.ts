@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace naming {
-
     abstract class RefAddr implements java.io.Serializable {
       protected addrType: java.lang.String
       protected constructor(arg0: java.lang.String | string)
@@ -10,6 +9,5 @@ declare namespace javax {
       public hashCode(): number
       public toString(): java.lang.String
     }
-
   }
 }

@@ -2,8 +2,10 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace synth {
-
-        class SynthTabbedPaneUI extends javax.swing.plaf.basic.BasicTabbedPaneUI implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI {
+        class SynthTabbedPaneUI
+          extends javax.swing.plaf.basic.BasicTabbedPaneUI
+          implements java.beans.PropertyChangeListener, javax.swing.plaf.synth.SynthUI
+        {
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           protected installDefaults(): void
@@ -14,17 +16,40 @@ declare namespace javax {
           protected createScrollButton(arg0: number | java.lang.Integer): javax.swing.JButton
           public propertyChange(arg0: java.beans.PropertyChangeEvent): void
           protected createMouseListener(): java.awt.event.MouseListener
-          protected getTabLabelShiftX(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): number
-          protected getTabLabelShiftY(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): number
+          protected getTabLabelShiftX(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: boolean | java.lang.Boolean
+          ): number
+          protected getTabLabelShiftY(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: boolean | java.lang.Boolean
+          ): number
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected getBaseline(arg0: number | java.lang.Integer): number
-          public paintBorder(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): void
+          public paintBorder(
+            arg0: javax.swing.plaf.synth.SynthContext,
+            arg1: java.awt.Graphics,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer
+          ): void
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           protected paint(arg0: javax.swing.plaf.synth.SynthContext, arg1: java.awt.Graphics): void
-          protected paintTabArea(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+          protected paintTabArea(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): void
           protected setRolloverTab(arg0: number | java.lang.Integer): void
           protected calculateMaxTabHeight(arg0: number | java.lang.Integer): number
-          protected calculateTabWidth(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.awt.FontMetrics): number
+          protected calculateTabWidth(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: java.awt.FontMetrics
+          ): number
           protected calculateMaxTabWidth(arg0: number | java.lang.Integer): number
           protected getTabInsets(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.Insets
           protected getFontMetrics(): java.awt.FontMetrics
@@ -47,7 +72,6 @@ declare namespace javax {
           static access$1500(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): java.awt.Rectangle[]
           static access$1600(arg0: javax.swing.plaf.synth.SynthTabbedPaneUI): java.awt.Rectangle[]
         }
-
       }
     }
   }

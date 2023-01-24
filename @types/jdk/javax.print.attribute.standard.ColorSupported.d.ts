@@ -2,8 +2,10 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
-        class ColorSupported extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintServiceAttribute {
+        class ColorSupported
+          extends javax.print.attribute.EnumSyntax
+          implements javax.print.attribute.PrintServiceAttribute
+        {
           public static readonly NOT_SUPPORTED: javax.print.attribute.standard.ColorSupported
           public static readonly SUPPORTED: javax.print.attribute.standard.ColorSupported
           protected constructor(arg0: number | java.lang.Integer)
@@ -12,7 +14,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

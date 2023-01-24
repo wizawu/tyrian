@@ -1,8 +1,7 @@
 declare namespace java {
   namespace util {
     namespace stream {
-
-      interface BaseStream<T,S extends java.util.stream.BaseStream<T,S>> extends java.lang.AutoCloseable {
+      interface BaseStream<T, S extends java.util.stream.BaseStream<T, S>> extends java.lang.AutoCloseable {
         iterator(): java.util.Iterator<T>
         spliterator(): java.util.Spliterator<T>
         isParallel(): boolean
@@ -12,7 +11,6 @@ declare namespace java {
         onClose(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): S
         close(): void
       }
-
     }
   }
 }

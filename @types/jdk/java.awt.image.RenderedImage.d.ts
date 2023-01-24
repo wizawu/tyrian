@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace image {
-
       interface RenderedImage {
         getSources(): java.util.Vector<java.awt.image.RenderedImage>
         getProperty(arg0: java.lang.String | string): java.lang.Object
@@ -25,7 +24,6 @@ declare namespace java {
         getData(arg0: java.awt.Rectangle): java.awt.image.Raster
         copyData(arg0: java.awt.image.WritableRaster): java.awt.image.WritableRaster
       }
-
     }
   }
 }

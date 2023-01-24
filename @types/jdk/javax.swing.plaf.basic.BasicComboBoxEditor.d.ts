@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicComboBoxEditor implements javax.swing.ComboBoxEditor, java.awt.event.FocusListener {
           protected editor: javax.swing.JTextField
           public constructor()
@@ -16,7 +15,6 @@ declare namespace javax {
           public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
           public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
         }
-
       }
     }
   }

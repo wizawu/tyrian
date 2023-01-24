@@ -2,8 +2,10 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
-        class PrinterState extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintServiceAttribute {
+        class PrinterState
+          extends javax.print.attribute.EnumSyntax
+          implements javax.print.attribute.PrintServiceAttribute
+        {
           public static readonly UNKNOWN: javax.print.attribute.standard.PrinterState
           public static readonly IDLE: javax.print.attribute.standard.PrinterState
           public static readonly PROCESSING: javax.print.attribute.standard.PrinterState
@@ -14,7 +16,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

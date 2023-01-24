@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace image {
-
       class BandCombineOp implements java.awt.image.RasterOp {
         matrix: float[][]
         nrows: int
@@ -15,7 +14,6 @@ declare namespace java {
         public getPoint2D(arg0: java.awt.geom.Point2D, arg1: java.awt.geom.Point2D): java.awt.geom.Point2D
         public getRenderingHints(): java.awt.RenderingHints
       }
-
     }
   }
 }

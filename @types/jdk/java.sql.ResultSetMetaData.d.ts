@@ -1,10 +1,9 @@
 declare namespace java {
   namespace sql {
-
     interface ResultSetMetaData extends java.sql.Wrapper {
-      public static readonly columnNoNulls: int
-      public static readonly columnNullable: int
-      public static readonly columnNullableUnknown: int
+      readonly columnNoNulls: int
+      readonly columnNullable: int
+      readonly columnNullableUnknown: int
       getColumnCount(): number
       isAutoIncrement(arg0: number | java.lang.Integer): boolean
       isCaseSensitive(arg0: number | java.lang.Integer): boolean
@@ -27,6 +26,5 @@ declare namespace java {
       isDefinitelyWritable(arg0: number | java.lang.Integer): boolean
       getColumnClassName(arg0: number | java.lang.Integer): java.lang.String
     }
-
   }
 }

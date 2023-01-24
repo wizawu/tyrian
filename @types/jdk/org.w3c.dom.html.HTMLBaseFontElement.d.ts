@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLBaseFontElement extends org.w3c.dom.html.HTMLElement {
           getColor(): java.lang.String
           setColor(arg0: java.lang.String | string): void
@@ -11,7 +10,6 @@ declare namespace org {
           getSize(): java.lang.String
           setSize(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

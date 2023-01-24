@@ -1,8 +1,7 @@
 declare namespace java {
   namespace net {
-
     class HttpCookie implements java.lang.Cloneable {
-      static readonly assignors: java.util.Map<java.lang.String,java.net.HttpCookie$CookieAttributeAssignor>
+      static readonly assignors: java.util.Map<java.lang.String, java.net.HttpCookie$CookieAttributeAssignor>
       static readonly GMT: java.util.TimeZone
       public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
       public static parse(arg0: java.lang.String | string): java.util.List<java.net.HttpCookie>
@@ -36,6 +35,5 @@ declare namespace java {
       public hashCode(): number
       public clone(): java.lang.Object
     }
-
   }
 }

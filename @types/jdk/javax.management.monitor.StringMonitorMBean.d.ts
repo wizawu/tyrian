@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace monitor {
-
       interface StringMonitorMBean extends javax.management.monitor.MonitorMBean {
         getDerivedGauge(): java.lang.String
         getDerivedGaugeTimeStamp(): number
@@ -14,7 +13,6 @@ declare namespace javax {
         getNotifyDiffer(): boolean
         setNotifyDiffer(arg0: boolean | java.lang.Boolean): void
       }
-
     }
   }
 }

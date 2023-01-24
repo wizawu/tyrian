@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace javadoc {
-
       interface SeeTag extends com.sun.javadoc.Tag {
         label(): java.lang.String
         referencedPackage(): com.sun.javadoc.PackageDoc
@@ -10,7 +9,6 @@ declare namespace com {
         referencedMemberName(): java.lang.String
         referencedMember(): com.sun.javadoc.MemberDoc
       }
-
     }
   }
 }

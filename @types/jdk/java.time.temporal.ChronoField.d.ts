@@ -1,8 +1,10 @@
 declare namespace java {
   namespace time {
     namespace temporal {
-
-      class ChronoField extends java.lang.Enum<java.time.temporal.ChronoField> implements java.time.temporal.TemporalField {
+      class ChronoField
+        extends java.lang.Enum<java.time.temporal.ChronoField>
+        implements java.time.temporal.TemporalField
+      {
         public static readonly NANO_OF_SECOND: java.time.temporal.ChronoField
         public static readonly NANO_OF_DAY: java.time.temporal.ChronoField
         public static readonly MICRO_OF_SECOND: java.time.temporal.ChronoField
@@ -49,7 +51,6 @@ declare namespace java {
         public adjustInto<R extends java.time.temporal.Temporal>(arg0: R, arg1: number | java.lang.Long): R
         public toString(): java.lang.String
       }
-
     }
   }
 }

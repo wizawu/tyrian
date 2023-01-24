@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
       class HierarchyEvent extends java.awt.AWTEvent {
         public static readonly HIERARCHY_FIRST: int
         public static readonly HIERARCHY_CHANGED: int
@@ -14,15 +13,25 @@ declare namespace java {
         changed: java.awt.Component
         changedParent: java.awt.Container
         changeFlags: long
-        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: java.awt.Component, arg3: java.awt.Container)
-        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: java.awt.Component, arg3: java.awt.Container, arg4: number | java.lang.Long)
+        public constructor(
+          arg0: java.awt.Component,
+          arg1: number | java.lang.Integer,
+          arg2: java.awt.Component,
+          arg3: java.awt.Container
+        )
+        public constructor(
+          arg0: java.awt.Component,
+          arg1: number | java.lang.Integer,
+          arg2: java.awt.Component,
+          arg3: java.awt.Container,
+          arg4: number | java.lang.Long
+        )
         public getComponent(): java.awt.Component
         public getChanged(): java.awt.Component
         public getChangedParent(): java.awt.Container
         public getChangeFlags(): number
         public paramString(): java.lang.String
       }
-
     }
   }
 }

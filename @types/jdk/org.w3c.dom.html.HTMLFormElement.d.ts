@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLFormElement extends org.w3c.dom.html.HTMLElement {
           getElements(): org.w3c.dom.html.HTMLCollection
           getLength(): number
@@ -21,7 +20,6 @@ declare namespace org {
           submit(): void
           reset(): void
         }
-
       }
     }
   }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace dnd {
-
       interface DropTargetListener extends java.util.EventListener {
         dragEnter(arg0: java.awt.dnd.DropTargetDragEvent): void
         dragOver(arg0: java.awt.dnd.DropTargetDragEvent): void
@@ -9,7 +8,6 @@ declare namespace java {
         dragExit(arg0: java.awt.dnd.DropTargetEvent): void
         drop(arg0: java.awt.dnd.DropTargetDropEvent): void
       }
-
     }
   }
 }

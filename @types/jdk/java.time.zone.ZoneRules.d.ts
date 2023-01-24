@@ -1,11 +1,22 @@
 declare namespace java {
   namespace time {
     namespace zone {
-
       class ZoneRules implements java.io.Serializable {
-        public static of(arg0: java.time.ZoneOffset, arg1: java.time.ZoneOffset, arg2: java.util.List<java.time.zone.ZoneOffsetTransition>, arg3: java.util.List<java.time.zone.ZoneOffsetTransition>, arg4: java.util.List<java.time.zone.ZoneOffsetTransitionRule>): java.time.zone.ZoneRules
+        public static of(
+          arg0: java.time.ZoneOffset,
+          arg1: java.time.ZoneOffset,
+          arg2: java.util.List<java.time.zone.ZoneOffsetTransition>,
+          arg3: java.util.List<java.time.zone.ZoneOffsetTransition>,
+          arg4: java.util.List<java.time.zone.ZoneOffsetTransitionRule>
+        ): java.time.zone.ZoneRules
         public static of(arg0: java.time.ZoneOffset): java.time.zone.ZoneRules
-        constructor(arg0: java.time.ZoneOffset, arg1: java.time.ZoneOffset, arg2: java.util.List<java.time.zone.ZoneOffsetTransition>, arg3: java.util.List<java.time.zone.ZoneOffsetTransition>, arg4: java.util.List<java.time.zone.ZoneOffsetTransitionRule>)
+        constructor(
+          arg0: java.time.ZoneOffset,
+          arg1: java.time.ZoneOffset,
+          arg2: java.util.List<java.time.zone.ZoneOffsetTransition>,
+          arg3: java.util.List<java.time.zone.ZoneOffsetTransition>,
+          arg4: java.util.List<java.time.zone.ZoneOffsetTransitionRule>
+        )
         writeExternal(arg0: java.io.DataOutput): void
         static readExternal(arg0: java.io.DataInput): java.time.zone.ZoneRules
         public isFixedOffset(): boolean
@@ -25,7 +36,6 @@ declare namespace java {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

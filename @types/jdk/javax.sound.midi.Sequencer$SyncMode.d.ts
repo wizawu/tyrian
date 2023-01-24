@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       class Sequencer$SyncMode {
         public static readonly INTERNAL_CLOCK: javax.sound.midi.Sequencer$SyncMode
         public static readonly MIDI_SYNC: javax.sound.midi.Sequencer$SyncMode
@@ -12,7 +11,6 @@ declare namespace javax {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

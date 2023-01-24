@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sql {
     namespace rowset {
-
       abstract class BaseRowSet implements java.io.Serializable, java.lang.Cloneable {
         public static readonly UNICODE_STREAM_PARAM: int
         public static readonly BINARY_STREAM_PARAM: int
@@ -35,8 +34,8 @@ declare namespace javax {
         public setReadOnly(arg0: boolean | java.lang.Boolean): void
         public getTransactionIsolation(): number
         public setTransactionIsolation(arg0: number | java.lang.Integer): void
-        public getTypeMap(): java.util.Map<java.lang.String,java.lang.Class<unknown>>
-        public setTypeMap(arg0: java.util.Map<java.lang.String,java.lang.Class<unknown>>): void
+        public getTypeMap(): java.util.Map<java.lang.String, java.lang.Class<unknown>>
+        public setTypeMap(arg0: java.util.Map<java.lang.String, java.lang.Class<unknown>>): void
         public getMaxFieldSize(): number
         public setMaxFieldSize(arg0: number | java.lang.Integer): void
         public getMaxRows(): number
@@ -53,7 +52,11 @@ declare namespace javax {
         public getFetchSize(): number
         public getConcurrency(): number
         public setNull(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
-        public setNull(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.lang.String | string): void
+        public setNull(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer,
+          arg2: java.lang.String | string
+        ): void
         public setBoolean(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
         public setByte(arg0: number | java.lang.Integer, arg1: number | java.lang.Byte): void
         public setShort(arg0: number | java.lang.Integer, arg1: number | java.lang.Short): void
@@ -67,15 +70,40 @@ declare namespace javax {
         public setDate(arg0: number | java.lang.Integer, arg1: java.sql.Date): void
         public setTime(arg0: number | java.lang.Integer, arg1: java.sql.Time): void
         public setTimestamp(arg0: number | java.lang.Integer, arg1: java.sql.Timestamp): void
-        public setAsciiStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
+        public setAsciiStream(
+          arg0: number | java.lang.Integer,
+          arg1: java.io.InputStream,
+          arg2: number | java.lang.Integer
+        ): void
         public setAsciiStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream): void
-        public setBinaryStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
+        public setBinaryStream(
+          arg0: number | java.lang.Integer,
+          arg1: java.io.InputStream,
+          arg2: number | java.lang.Integer
+        ): void
         public setBinaryStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream): void
-        public setUnicodeStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-        public setCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader, arg2: number | java.lang.Integer): void
+        public setUnicodeStream(
+          arg0: number | java.lang.Integer,
+          arg1: java.io.InputStream,
+          arg2: number | java.lang.Integer
+        ): void
+        public setCharacterStream(
+          arg0: number | java.lang.Integer,
+          arg1: java.io.Reader,
+          arg2: number | java.lang.Integer
+        ): void
         public setCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
-        public setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
-        public setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
+        public setObject(
+          arg0: number | java.lang.Integer,
+          arg1: java.lang.Object | any,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        ): void
+        public setObject(
+          arg0: number | java.lang.Integer,
+          arg1: java.lang.Object | any,
+          arg2: number | java.lang.Integer
+        ): void
         public setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): void
         public setRef(arg0: number | java.lang.Integer, arg1: java.sql.Ref): void
         public setBlob(arg0: number | java.lang.Integer, arg1: java.sql.Blob): void
@@ -87,7 +115,11 @@ declare namespace javax {
         public clearParameters(): void
         public getParams(): java.lang.Object[]
         public setNull(arg0: java.lang.String | string, arg1: number | java.lang.Integer): void
-        public setNull(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.lang.String | string): void
+        public setNull(
+          arg0: java.lang.String | string,
+          arg1: number | java.lang.Integer,
+          arg2: java.lang.String | string
+        ): void
         public setBoolean(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): void
         public setByte(arg0: java.lang.String | string, arg1: number | java.lang.Byte): void
         public setShort(arg0: java.lang.String | string, arg1: number | java.lang.Short): void
@@ -99,15 +131,36 @@ declare namespace javax {
         public setString(arg0: java.lang.String | string, arg1: java.lang.String | string): void
         public setBytes(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): void
         public setTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-        public setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-        public setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-        public setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: number | java.lang.Integer): void
+        public setAsciiStream(
+          arg0: java.lang.String | string,
+          arg1: java.io.InputStream,
+          arg2: number | java.lang.Integer
+        ): void
+        public setBinaryStream(
+          arg0: java.lang.String | string,
+          arg1: java.io.InputStream,
+          arg2: number | java.lang.Integer
+        ): void
+        public setCharacterStream(
+          arg0: java.lang.String | string,
+          arg1: java.io.Reader,
+          arg2: number | java.lang.Integer
+        ): void
         public setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
         public setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream): void
         public setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader): void
         public setNCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
-        public setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
-        public setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
+        public setObject(
+          arg0: java.lang.String | string,
+          arg1: java.lang.Object | any,
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        ): void
+        public setObject(
+          arg0: java.lang.String | string,
+          arg1: java.lang.Object | any,
+          arg2: number | java.lang.Integer
+        ): void
         public setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
         public setBlob(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
         public setBlob(arg0: number | java.lang.Integer, arg1: java.io.InputStream): void
@@ -130,8 +183,16 @@ declare namespace javax {
         public setRowId(arg0: java.lang.String | string, arg1: java.sql.RowId): void
         public setNString(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
         public setNString(arg0: java.lang.String | string, arg1: java.lang.String | string): void
-        public setNCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader, arg2: number | java.lang.Long): void
-        public setNCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: number | java.lang.Long): void
+        public setNCharacterStream(
+          arg0: number | java.lang.Integer,
+          arg1: java.io.Reader,
+          arg2: number | java.lang.Long
+        ): void
+        public setNCharacterStream(
+          arg0: java.lang.String | string,
+          arg1: java.io.Reader,
+          arg2: number | java.lang.Long
+        ): void
         public setNCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader): void
         public setNClob(arg0: java.lang.String | string, arg1: java.sql.NClob): void
         public setNClob(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: number | java.lang.Long): void
@@ -141,7 +202,6 @@ declare namespace javax {
         public setNClob(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
         public setURL(arg0: number | java.lang.Integer, arg1: java.net.URL): void
       }
-
     }
   }
 }

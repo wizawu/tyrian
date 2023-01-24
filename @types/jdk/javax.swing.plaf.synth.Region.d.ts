@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace synth {
-
         class Region {
           public static readonly ARROW_BUTTON: javax.swing.plaf.synth.Region
           public static readonly BUTTON: javax.swing.plaf.synth.Region
@@ -63,13 +62,16 @@ declare namespace javax {
           public static readonly VIEWPORT: javax.swing.plaf.synth.Region
           static getRegion(arg0: javax.swing.JComponent): javax.swing.plaf.synth.Region
           static registerUIs(arg0: javax.swing.UIDefaults): void
-          protected constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean)
+          protected constructor(
+            arg0: java.lang.String | string,
+            arg1: java.lang.String | string,
+            arg2: boolean | java.lang.Boolean
+          )
           public isSubregion(): boolean
           public getName(): java.lang.String
           getLowerCaseName(): java.lang.String
           public toString(): java.lang.String
         }
-
       }
     }
   }

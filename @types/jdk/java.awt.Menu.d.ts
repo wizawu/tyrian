@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Menu extends java.awt.MenuItem implements java.awt.MenuContainer, javax.accessibility.Accessible {
       isHelpMenu: boolean
       public constructor()
@@ -32,6 +31,5 @@ declare namespace java {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       getAccessibleChildIndex(arg0: java.awt.MenuComponent): number
     }
-
   }
 }

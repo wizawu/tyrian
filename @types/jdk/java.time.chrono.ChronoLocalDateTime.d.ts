@@ -1,8 +1,10 @@
 declare namespace java {
   namespace time {
     namespace chrono {
-
-      interface ChronoLocalDateTime<D extends java.time.chrono.ChronoLocalDate> extends java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.chrono.ChronoLocalDateTime<unknown>> {
+      interface ChronoLocalDateTime<D extends java.time.chrono.ChronoLocalDate>
+        extends java.time.temporal.Temporal,
+          java.time.temporal.TemporalAdjuster,
+          java.lang.Comparable<java.time.chrono.ChronoLocalDateTime<unknown>> {
         timeLineOrder(): java.util.Comparator<java.time.chrono.ChronoLocalDateTime<unknown>>
         from(arg0: java.time.temporal.TemporalAccessor): java.time.chrono.ChronoLocalDateTime<unknown>
         getChronology(): java.time.chrono.Chronology
@@ -10,12 +12,23 @@ declare namespace java {
         toLocalTime(): java.time.LocalTime
         isSupported(arg0: java.time.temporal.TemporalField): boolean
         isSupported(arg0: java.time.temporal.TemporalUnit): boolean
-        with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.chrono.ChronoLocalDateTime<D>
-        with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.chrono.ChronoLocalDateTime<D>
+        with(
+          arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+        ): java.time.chrono.ChronoLocalDateTime<D>
+        with(
+          arg0: java.time.temporal.TemporalField,
+          arg1: number | java.lang.Long
+        ): java.time.chrono.ChronoLocalDateTime<D>
         plus(arg0: java.time.temporal.TemporalAmount): java.time.chrono.ChronoLocalDateTime<D>
-        plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.chrono.ChronoLocalDateTime<D>
+        plus(
+          arg0: number | java.lang.Long,
+          arg1: java.time.temporal.TemporalUnit
+        ): java.time.chrono.ChronoLocalDateTime<D>
         minus(arg0: java.time.temporal.TemporalAmount): java.time.chrono.ChronoLocalDateTime<D>
-        minus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.chrono.ChronoLocalDateTime<D>
+        minus(
+          arg0: number | java.lang.Long,
+          arg1: java.time.temporal.TemporalUnit
+        ): java.time.chrono.ChronoLocalDateTime<D>
         query<R>(arg0: java.time.temporal.TemporalQuery<R> | java.time.temporal.TemporalQuery$$lambda<R>): R
         adjustInto(arg0: java.time.temporal.Temporal): java.time.temporal.Temporal
         format(arg0: java.time.format.DateTimeFormatter): java.lang.String
@@ -34,10 +47,11 @@ declare namespace java {
         plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
         plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
         with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-        with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+        with(
+          arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+        ): java.time.temporal.Temporal
         compareTo(arg0: java.lang.Object | any): number
       }
-
     }
   }
 }

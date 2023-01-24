@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     abstract class Spliterators$AbstractSpliterator<T> implements java.util.Spliterator<T> {
       static readonly BATCH_UNIT: int
       static readonly MAX_BATCH: int
@@ -9,6 +8,5 @@ declare namespace java {
       public estimateSize(): number
       public characteristics(): number
     }
-
   }
 }

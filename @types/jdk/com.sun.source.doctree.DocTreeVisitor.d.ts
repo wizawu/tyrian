@@ -2,8 +2,7 @@ declare namespace com {
   namespace sun {
     namespace source {
       namespace doctree {
-
-        interface DocTreeVisitor<R,P> {
+        interface DocTreeVisitor<R, P> {
           visitAttribute(arg0: com.sun.source.doctree.AttributeTree, arg1: P): R
           visitAuthor(arg0: com.sun.source.doctree.AuthorTree, arg1: P): R
           visitComment(arg0: com.sun.source.doctree.CommentTree, arg1: P): R
@@ -40,7 +39,6 @@ declare namespace com {
           visitVersion(arg0: com.sun.source.doctree.VersionTree, arg1: P): R
           visitOther(arg0: com.sun.source.doctree.DocTree, arg1: P): R
         }
-
       }
     }
   }

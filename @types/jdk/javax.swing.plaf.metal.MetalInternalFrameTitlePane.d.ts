@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalInternalFrameTitlePane extends javax.swing.plaf.basic.BasicInternalFrameTitlePane {
           protected isPalette: boolean
           protected paletteCloseIcon: javax.swing.Icon
@@ -55,7 +54,6 @@ declare namespace javax {
           static access$2700(arg0: javax.swing.plaf.metal.MetalInternalFrameTitlePane): javax.swing.JInternalFrame
           static access$2800(arg0: javax.swing.plaf.metal.MetalInternalFrameTitlePane): javax.swing.JButton
         }
-
       }
     }
   }

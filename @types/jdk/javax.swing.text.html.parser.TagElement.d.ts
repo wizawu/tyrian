@@ -3,7 +3,6 @@ declare namespace javax {
     namespace text {
       namespace html {
         namespace parser {
-
           class TagElement {
             elem: javax.swing.text.html.parser.Element
             htmlTag: javax.swing.text.html.HTML$Tag
@@ -16,7 +15,6 @@ declare namespace javax {
             public getHTMLTag(): javax.swing.text.html.HTML$Tag
             public fictional(): boolean
           }
-
         }
       }
     }

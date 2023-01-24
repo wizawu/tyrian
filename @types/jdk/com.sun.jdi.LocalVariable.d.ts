@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace jdi {
-
       interface LocalVariable extends com.sun.jdi.Mirror, java.lang.Comparable<com.sun.jdi.LocalVariable> {
         name(): java.lang.String
         typeName(): java.lang.String
@@ -13,7 +12,6 @@ declare namespace com {
         equals(arg0: java.lang.Object | any): boolean
         hashCode(): number
       }
-
     }
   }
 }

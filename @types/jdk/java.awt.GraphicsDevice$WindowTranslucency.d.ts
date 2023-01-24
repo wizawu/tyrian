@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class GraphicsDevice$WindowTranslucency extends java.lang.Enum<java.awt.GraphicsDevice$WindowTranslucency> {
       public static readonly PERPIXEL_TRANSPARENT: java.awt.GraphicsDevice$WindowTranslucency
       public static readonly TRANSLUCENT: java.awt.GraphicsDevice$WindowTranslucency
@@ -8,6 +7,5 @@ declare namespace java {
       public static values(): java.awt.GraphicsDevice$WindowTranslucency[]
       public static valueOf(arg0: java.lang.String | string): java.awt.GraphicsDevice$WindowTranslucency
     }
-
   }
 }

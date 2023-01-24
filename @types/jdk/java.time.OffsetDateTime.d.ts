@@ -1,20 +1,41 @@
 declare namespace java {
   namespace time {
-
-    class OffsetDateTime implements java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.OffsetDateTime>, java.io.Serializable {
+    class OffsetDateTime
+      implements
+        java.time.temporal.Temporal,
+        java.time.temporal.TemporalAdjuster,
+        java.lang.Comparable<java.time.OffsetDateTime>,
+        java.io.Serializable
+    {
       public static readonly MIN: java.time.OffsetDateTime
       public static readonly MAX: java.time.OffsetDateTime
       public static timeLineOrder(): java.util.Comparator<java.time.OffsetDateTime>
       public static now(): java.time.OffsetDateTime
       public static now(arg0: java.time.ZoneId): java.time.OffsetDateTime
       public static now(arg0: java.time.Clock): java.time.OffsetDateTime
-      public static of(arg0: java.time.LocalDate, arg1: java.time.LocalTime, arg2: java.time.ZoneOffset): java.time.OffsetDateTime
+      public static of(
+        arg0: java.time.LocalDate,
+        arg1: java.time.LocalTime,
+        arg2: java.time.ZoneOffset
+      ): java.time.OffsetDateTime
       public static of(arg0: java.time.LocalDateTime, arg1: java.time.ZoneOffset): java.time.OffsetDateTime
-      public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: java.time.ZoneOffset): java.time.OffsetDateTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer,
+        arg7: java.time.ZoneOffset
+      ): java.time.OffsetDateTime
       public static ofInstant(arg0: java.time.Instant, arg1: java.time.ZoneId): java.time.OffsetDateTime
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.OffsetDateTime
       public static parse(arg0: string | java.lang.CharSequence): java.time.OffsetDateTime
-      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.OffsetDateTime
+      public static parse(
+        arg0: string | java.lang.CharSequence,
+        arg1: java.time.format.DateTimeFormatter
+      ): java.time.OffsetDateTime
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange
@@ -36,7 +57,9 @@ declare namespace java {
       public getMinute(): number
       public getSecond(): number
       public getNano(): number
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.OffsetDateTime
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.OffsetDateTime
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.OffsetDateTime
       public withYear(arg0: number | java.lang.Integer): java.time.OffsetDateTime
       public withMonth(arg0: number | java.lang.Integer): java.time.OffsetDateTime
@@ -91,9 +114,10 @@ declare namespace java {
       public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.temporal.Temporal
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

@@ -1,10 +1,22 @@
 declare namespace java {
   namespace lang {
     namespace module {
-
       class ModuleDescriptor implements java.lang.Comparable<java.lang.module.ModuleDescriptor> {
         static readonly $assertionsDisabled: boolean
-        constructor(arg0: java.lang.String | string, arg1: java.lang.module.ModuleDescriptor$Version, arg2: java.util.Set<java.lang.module.ModuleDescriptor$Modifier>, arg3: java.util.Set<java.lang.module.ModuleDescriptor$Requires>, arg4: java.util.Set<java.lang.module.ModuleDescriptor$Exports>, arg5: java.util.Set<java.lang.module.ModuleDescriptor$Opens>, arg6: java.util.Set<java.lang.String>, arg7: java.util.Set<java.lang.module.ModuleDescriptor$Provides>, arg8: java.util.Set<java.lang.String>, arg9: java.lang.String | string, arg10: number | java.lang.Integer, arg11: boolean | java.lang.Boolean)
+        constructor(
+          arg0: java.lang.String | string,
+          arg1: java.lang.module.ModuleDescriptor$Version,
+          arg2: java.util.Set<java.lang.module.ModuleDescriptor$Modifier>,
+          arg3: java.util.Set<java.lang.module.ModuleDescriptor$Requires>,
+          arg4: java.util.Set<java.lang.module.ModuleDescriptor$Exports>,
+          arg5: java.util.Set<java.lang.module.ModuleDescriptor$Opens>,
+          arg6: java.util.Set<java.lang.String>,
+          arg7: java.util.Set<java.lang.module.ModuleDescriptor$Provides>,
+          arg8: java.util.Set<java.lang.String>,
+          arg9: java.lang.String | string,
+          arg10: number | java.lang.Integer,
+          arg11: boolean | java.lang.Boolean
+        )
         public name(): java.lang.String
         public modifiers(): java.util.Set<java.lang.module.ModuleDescriptor$Modifier>
         public isOpen(): boolean
@@ -23,17 +35,29 @@ declare namespace java {
         public equals(arg0: java.lang.Object | any): boolean
         public hashCode(): number
         public toString(): java.lang.String
-        public static newModule(arg0: java.lang.String | string, arg1: java.util.Set<java.lang.module.ModuleDescriptor$Modifier>): java.lang.module.ModuleDescriptor$Builder
+        public static newModule(
+          arg0: java.lang.String | string,
+          arg1: java.util.Set<java.lang.module.ModuleDescriptor$Modifier>
+        ): java.lang.module.ModuleDescriptor$Builder
         public static newModule(arg0: java.lang.String | string): java.lang.module.ModuleDescriptor$Builder
         public static newOpenModule(arg0: java.lang.String | string): java.lang.module.ModuleDescriptor$Builder
         public static newAutomaticModule(arg0: java.lang.String | string): java.lang.module.ModuleDescriptor$Builder
-        public static read(arg0: java.io.InputStream, arg1: java.util.function$.Supplier<java.util.Set<java.lang.String>> | java.util.function$.Supplier$$lambda<java.util.Set<java.lang.String>>): java.lang.module.ModuleDescriptor
+        public static read(
+          arg0: java.io.InputStream,
+          arg1:
+            | java.util.function$.Supplier<java.util.Set<java.lang.String>>
+            | java.util.function$.Supplier$$lambda<java.util.Set<java.lang.String>>
+        ): java.lang.module.ModuleDescriptor
         public static read(arg0: java.io.InputStream): java.lang.module.ModuleDescriptor
-        public static read(arg0: java.nio.ByteBuffer, arg1: java.util.function$.Supplier<java.util.Set<java.lang.String>> | java.util.function$.Supplier$$lambda<java.util.Set<java.lang.String>>): java.lang.module.ModuleDescriptor
+        public static read(
+          arg0: java.nio.ByteBuffer,
+          arg1:
+            | java.util.function$.Supplier<java.util.Set<java.lang.String>>
+            | java.util.function$.Supplier$$lambda<java.util.Set<java.lang.String>>
+        ): java.lang.module.ModuleDescriptor
         public static read(arg0: java.nio.ByteBuffer): java.lang.module.ModuleDescriptor
         public compareTo(arg0: java.lang.Object | any): number
       }
-
     }
   }
 }

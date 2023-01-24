@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace management {
-
     class AttributeChangeNotificationFilter implements javax.management.NotificationFilter {
       public constructor()
       public isNotificationEnabled(arg0: javax.management.Notification): boolean
@@ -9,6 +8,5 @@ declare namespace javax {
       public disableAllAttributes(): void
       public getEnabledAttributes(): java.util.Vector<java.lang.String>
     }
-
   }
 }

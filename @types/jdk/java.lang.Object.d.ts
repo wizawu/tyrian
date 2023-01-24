@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Object {
       public constructor()
       public getClass(): java.lang.Class<unknown>
@@ -15,6 +14,5 @@ declare namespace java {
       public wait(arg0: number | java.lang.Long, arg1: number | java.lang.Integer): void
       protected finalize(): void
     }
-
   }
 }

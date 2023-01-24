@@ -1,7 +1,12 @@
 declare namespace java {
   namespace time {
-
-    class LocalDate implements java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.time.chrono.ChronoLocalDate, java.io.Serializable {
+    class LocalDate
+      implements
+        java.time.temporal.Temporal,
+        java.time.temporal.TemporalAdjuster,
+        java.time.chrono.ChronoLocalDate,
+        java.io.Serializable
+    {
       public static readonly MIN: java.time.LocalDate
       public static readonly MAX: java.time.LocalDate
       public static readonly EPOCH: java.time.LocalDate
@@ -9,14 +14,25 @@ declare namespace java {
       public static now(): java.time.LocalDate
       public static now(arg0: java.time.ZoneId): java.time.LocalDate
       public static now(arg0: java.time.Clock): java.time.LocalDate
-      public static of(arg0: number | java.lang.Integer, arg1: java.time.Month, arg2: number | java.lang.Integer): java.time.LocalDate
-      public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.time.LocalDate
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: java.time.Month,
+        arg2: number | java.lang.Integer
+      ): java.time.LocalDate
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.time.LocalDate
       public static ofYearDay(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.time.LocalDate
       public static ofInstant(arg0: java.time.Instant, arg1: java.time.ZoneId): java.time.LocalDate
       public static ofEpochDay(arg0: number | java.lang.Long): java.time.LocalDate
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.LocalDate
       public static parse(arg0: string | java.lang.CharSequence): java.time.LocalDate
-      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.LocalDate
+      public static parse(
+        arg0: string | java.lang.CharSequence,
+        arg1: java.time.format.DateTimeFormatter
+      ): java.time.LocalDate
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange
@@ -33,7 +49,9 @@ declare namespace java {
       public isLeapYear(): boolean
       public lengthOfMonth(): number
       public lengthOfYear(): number
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.LocalDate
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.LocalDate
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.LocalDate
       public withYear(arg0: number | java.lang.Integer): java.time.LocalDate
       public withMonth(arg0: number | java.lang.Integer): java.time.LocalDate
@@ -61,8 +79,17 @@ declare namespace java {
       public format(arg0: java.time.format.DateTimeFormatter): java.lang.String
       public atTime(arg0: java.time.LocalTime): java.time.LocalDateTime
       public atTime(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.time.LocalDateTime
-      public atTime(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.time.LocalDateTime
-      public atTime(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.time.LocalDateTime
+      public atTime(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.time.LocalDateTime
+      public atTime(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): java.time.LocalDateTime
       public atTime(arg0: java.time.OffsetTime): java.time.OffsetDateTime
       public atStartOfDay(): java.time.LocalDateTime
       public atStartOfDay(arg0: java.time.ZoneId): java.time.ZonedDateTime
@@ -83,19 +110,31 @@ declare namespace java {
       public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.temporal.Temporal
       public atTime(arg0: java.time.LocalTime): java.time.chrono.ChronoLocalDateTime
       public until(arg0: java.time.chrono.ChronoLocalDate): java.time.chrono.ChronoPeriod
-      public minus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.chrono.ChronoLocalDate
+      public minus(
+        arg0: number | java.lang.Long,
+        arg1: java.time.temporal.TemporalUnit
+      ): java.time.chrono.ChronoLocalDate
       public minus(arg0: java.time.temporal.TemporalAmount): java.time.chrono.ChronoLocalDate
-      public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.chrono.ChronoLocalDate
+      public plus(
+        arg0: number | java.lang.Long,
+        arg1: java.time.temporal.TemporalUnit
+      ): java.time.chrono.ChronoLocalDate
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.chrono.ChronoLocalDate
-      public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.chrono.ChronoLocalDate
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.chrono.ChronoLocalDate
+      public with(
+        arg0: java.time.temporal.TemporalField,
+        arg1: number | java.lang.Long
+      ): java.time.chrono.ChronoLocalDate
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.chrono.ChronoLocalDate
       public getEra(): java.time.chrono.Era
       public getChronology(): java.time.chrono.Chronology
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace imageio {
     namespace spi {
-
       abstract class ImageReaderWriterSpi extends javax.imageio.spi.IIOServiceProvider {
         protected names: java.lang.String[]
         protected suffixes: java.lang.String[]
@@ -17,7 +16,24 @@ declare namespace javax {
         protected nativeImageMetadataFormatClassName: java.lang.String
         protected extraImageMetadataFormatNames: java.lang.String[]
         protected extraImageMetadataFormatClassNames: java.lang.String[]
-        public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String[] | string[], arg3: java.lang.String[] | string[], arg4: java.lang.String[] | string[], arg5: java.lang.String | string, arg6: boolean | java.lang.Boolean, arg7: java.lang.String | string, arg8: java.lang.String | string, arg9: java.lang.String[] | string[], arg10: java.lang.String[] | string[], arg11: boolean | java.lang.Boolean, arg12: java.lang.String | string, arg13: java.lang.String | string, arg14: java.lang.String[] | string[], arg15: java.lang.String[] | string[])
+        public constructor(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String[] | string[],
+          arg3: java.lang.String[] | string[],
+          arg4: java.lang.String[] | string[],
+          arg5: java.lang.String | string,
+          arg6: boolean | java.lang.Boolean,
+          arg7: java.lang.String | string,
+          arg8: java.lang.String | string,
+          arg9: java.lang.String[] | string[],
+          arg10: java.lang.String[] | string[],
+          arg11: boolean | java.lang.Boolean,
+          arg12: java.lang.String | string,
+          arg13: java.lang.String | string,
+          arg14: java.lang.String[] | string[],
+          arg15: java.lang.String[] | string[]
+        )
         public constructor()
         public getFormatNames(): java.lang.String[]
         public getFileSuffixes(): java.lang.String[]
@@ -32,7 +48,6 @@ declare namespace javax {
         public getStreamMetadataFormat(arg0: java.lang.String | string): javax.imageio.metadata.IIOMetadataFormat
         public getImageMetadataFormat(arg0: java.lang.String | string): javax.imageio.metadata.IIOMetadataFormat
       }
-
     }
   }
 }

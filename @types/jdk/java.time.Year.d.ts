@@ -1,7 +1,12 @@
 declare namespace java {
   namespace time {
-
-    class Year implements java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.Year>, java.io.Serializable {
+    class Year
+      implements
+        java.time.temporal.Temporal,
+        java.time.temporal.TemporalAdjuster,
+        java.lang.Comparable<java.time.Year>,
+        java.io.Serializable
+    {
       public static readonly MIN_VALUE: int
       public static readonly MAX_VALUE: int
       public static now(): java.time.Year
@@ -10,7 +15,10 @@ declare namespace java {
       public static of(arg0: number | java.lang.Integer): java.time.Year
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.Year
       public static parse(arg0: string | java.lang.CharSequence): java.time.Year
-      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.Year
+      public static parse(
+        arg0: string | java.lang.CharSequence,
+        arg1: java.time.format.DateTimeFormatter
+      ): java.time.Year
       public static isLeap(arg0: number | java.lang.Long): boolean
       public getValue(): number
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
@@ -21,7 +29,9 @@ declare namespace java {
       public isLeap(): boolean
       public isValidMonthDay(arg0: java.time.MonthDay): boolean
       public length(): number
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.Year
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.Year
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.Year
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.Year
       public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.Year
@@ -50,9 +60,10 @@ declare namespace java {
       public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.temporal.Temporal
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

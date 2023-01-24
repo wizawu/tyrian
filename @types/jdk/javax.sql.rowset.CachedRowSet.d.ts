@@ -1,9 +1,8 @@
 declare namespace javax {
   namespace sql {
     namespace rowset {
-
       interface CachedRowSet extends javax.sql.RowSet, javax.sql.rowset.Joinable {
-        public static readonly COMMIT_ON_ACCEPT_CHANGES: boolean
+        readonly COMMIT_ON_ACCEPT_CHANGES: boolean
         populate(arg0: java.sql.ResultSet): void
         execute(arg0: java.sql.Connection): void
         acceptChanges(): void
@@ -46,7 +45,6 @@ declare namespace javax {
         nextPage(): boolean
         previousPage(): boolean
       }
-
     }
   }
 }

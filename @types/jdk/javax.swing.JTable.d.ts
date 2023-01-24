@@ -1,7 +1,16 @@
 declare namespace javax {
   namespace swing {
-
-    class JTable extends javax.swing.JComponent implements javax.swing.event.TableModelListener, javax.swing.Scrollable, javax.swing.event.TableColumnModelListener, javax.swing.event.ListSelectionListener, javax.swing.event.CellEditorListener, javax.accessibility.Accessible, javax.swing.event.RowSorterListener {
+    class JTable
+      extends javax.swing.JComponent
+      implements
+        javax.swing.event.TableModelListener,
+        javax.swing.Scrollable,
+        javax.swing.event.TableColumnModelListener,
+        javax.swing.event.ListSelectionListener,
+        javax.swing.event.CellEditorListener,
+        javax.accessibility.Accessible,
+        javax.swing.event.RowSorterListener
+    {
       public static readonly AUTO_RESIZE_OFF: int
       public static readonly AUTO_RESIZE_NEXT_COLUMN: int
       public static readonly AUTO_RESIZE_SUBSEQUENT_COLUMNS: int
@@ -25,15 +34,19 @@ declare namespace javax {
       protected cellEditor: javax.swing.table.TableCellEditor
       protected editingColumn: int
       protected editingRow: int
-      protected defaultRenderersByColumnClass: java.util.Hashtable<java.lang.Object,java.lang.Object>
-      protected defaultEditorsByColumnClass: java.util.Hashtable<java.lang.Object,java.lang.Object>
+      protected defaultRenderersByColumnClass: java.util.Hashtable<java.lang.Object, java.lang.Object>
+      protected defaultEditorsByColumnClass: java.util.Hashtable<java.lang.Object, java.lang.Object>
       protected selectionForeground: java.awt.Color
       protected selectionBackground: java.awt.Color
       static readonly $assertionsDisabled: boolean
       public constructor()
       public constructor(arg0: javax.swing.table.TableModel)
       public constructor(arg0: javax.swing.table.TableModel, arg1: javax.swing.table.TableColumnModel)
-      public constructor(arg0: javax.swing.table.TableModel, arg1: javax.swing.table.TableColumnModel, arg2: javax.swing.ListSelectionModel)
+      public constructor(
+        arg0: javax.swing.table.TableModel,
+        arg1: javax.swing.table.TableColumnModel,
+        arg2: javax.swing.ListSelectionModel
+      )
       public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
       public constructor(arg0: java.util.Vector<java.util.Vector>, arg1: java.util.Vector<unknown>)
       public constructor(arg0: java.lang.Object[][] | any[][], arg1: java.lang.Object[] | any[])
@@ -65,7 +78,10 @@ declare namespace javax {
       public setAutoCreateColumnsFromModel(arg0: boolean | java.lang.Boolean): void
       public getAutoCreateColumnsFromModel(): boolean
       public createDefaultColumnsFromModel(): void
-      public setDefaultRenderer(arg0: java.lang.Class<unknown>, arg1: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda): void
+      public setDefaultRenderer(
+        arg0: java.lang.Class<unknown>,
+        arg1: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda
+      ): void
       public getDefaultRenderer(arg0: java.lang.Class<unknown>): javax.swing.table.TableCellRenderer
       public setDefaultEditor(arg0: java.lang.Class<unknown>, arg1: javax.swing.table.TableCellEditor): void
       public getDefaultEditor(arg0: java.lang.Class<unknown>): javax.swing.table.TableCellEditor
@@ -74,7 +90,11 @@ declare namespace javax {
       public setDropMode(arg0: javax.swing.DropMode): void
       public getDropMode(): javax.swing.DropMode
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.JTable$DropLocation
-      setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean): java.lang.Object
+      setDropLocation(
+        arg0: javax.swing.TransferHandler$DropLocation,
+        arg1: java.lang.Object | any,
+        arg2: boolean | java.lang.Boolean
+      ): java.lang.Object
       public getDropLocation(): javax.swing.JTable$DropLocation
       public setAutoCreateRowSorter(arg0: boolean | java.lang.Boolean): void
       public getAutoCreateRowSorter(): boolean
@@ -106,7 +126,12 @@ declare namespace javax {
       public isRowSelected(arg0: number | java.lang.Integer): boolean
       public isColumnSelected(arg0: number | java.lang.Integer): boolean
       public isCellSelected(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
-      public changeSelection(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean): void
+      public changeSelection(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean,
+        arg3: boolean | java.lang.Boolean
+      ): void
       public getSelectionForeground(): java.awt.Color
       public setSelectionForeground(arg0: java.awt.Color): void
       public getSelectionBackground(): java.awt.Color
@@ -121,14 +146,22 @@ declare namespace javax {
       public getColumnName(arg0: number | java.lang.Integer): java.lang.String
       public getColumnClass(arg0: number | java.lang.Integer): java.lang.Class<unknown>
       public getValueAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.Object
-      public setValueAt(arg0: java.lang.Object | any, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public setValueAt(
+        arg0: java.lang.Object | any,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public isCellEditable(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
       public addColumn(arg0: javax.swing.table.TableColumn): void
       public removeColumn(arg0: javax.swing.table.TableColumn): void
       public moveColumn(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public columnAtPoint(arg0: java.awt.Point): number
       public rowAtPoint(arg0: java.awt.Point): number
-      public getCellRect(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): java.awt.Rectangle
+      public getCellRect(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean
+      ): java.awt.Rectangle
       public doLayout(): void
       public sizeColumnsToFit(arg0: boolean | java.lang.Boolean): void
       public sizeColumnsToFit(arg0: number | java.lang.Integer): void
@@ -136,7 +169,11 @@ declare namespace javax {
       public setSurrendersFocusOnKeystroke(arg0: boolean | java.lang.Boolean): void
       public getSurrendersFocusOnKeystroke(): boolean
       public editCellAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
-      public editCellAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.util.EventObject): boolean
+      public editCellAt(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: java.util.EventObject
+      ): boolean
       public isEditing(): boolean
       public getEditorComponent(): java.awt.Component
       public getEditingColumn(): number
@@ -163,13 +200,26 @@ declare namespace javax {
       public editingCanceled(arg0: javax.swing.event.ChangeEvent): void
       public setPreferredScrollableViewportSize(arg0: java.awt.Dimension): void
       public getPreferredScrollableViewportSize(): java.awt.Dimension
-      public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public getScrollableUnitIncrement(
+        arg0: java.awt.Rectangle,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      public getScrollableBlockIncrement(
+        arg0: java.awt.Rectangle,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public getScrollableTracksViewportWidth(): boolean
       public getScrollableTracksViewportHeight(): boolean
       public setFillsViewportHeight(arg0: boolean | java.lang.Boolean): void
       public getFillsViewportHeight(): boolean
-      protected processKeyBinding(arg0: javax.swing.KeyStroke, arg1: java.awt.event.KeyEvent, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean): boolean
+      protected processKeyBinding(
+        arg0: javax.swing.KeyStroke,
+        arg1: java.awt.event.KeyEvent,
+        arg2: number | java.lang.Integer,
+        arg3: boolean | java.lang.Boolean
+      ): boolean
       protected createDefaultRenderers(): void
       protected createDefaultEditors(): void
       protected initializeLocalVars(): void
@@ -182,23 +232,59 @@ declare namespace javax {
       public setCellEditor(arg0: javax.swing.table.TableCellEditor): void
       public setEditingColumn(arg0: number | java.lang.Integer): void
       public setEditingRow(arg0: number | java.lang.Integer): void
-      public getCellRenderer(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.table.TableCellRenderer
-      public prepareRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.awt.Component
-      public getCellEditor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): javax.swing.table.TableCellEditor
-      public prepareEditor(arg0: javax.swing.table.TableCellEditor, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.awt.Component
+      public getCellRenderer(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): javax.swing.table.TableCellRenderer
+      public prepareRenderer(
+        arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.awt.Component
+      public getCellEditor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): javax.swing.table.TableCellEditor
+      public prepareEditor(
+        arg0: javax.swing.table.TableCellEditor,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.awt.Component
       public removeEditor(): void
       compWriteObjectNotify(): void
       protected paramString(): java.lang.String
       public print(): boolean
       public print(arg0: javax.swing.JTable$PrintMode): boolean
-      public print(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat): boolean
-      public print(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat, arg3: boolean | java.lang.Boolean, arg4: javax.print.attribute.PrintRequestAttributeSet, arg5: boolean | java.lang.Boolean): boolean
-      public print(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat, arg3: boolean | java.lang.Boolean, arg4: javax.print.attribute.PrintRequestAttributeSet, arg5: boolean | java.lang.Boolean, arg6: javax.print.PrintService): boolean
-      public getPrintable(arg0: javax.swing.JTable$PrintMode, arg1: java.text.MessageFormat, arg2: java.text.MessageFormat): java.awt.print.Printable
+      public print(
+        arg0: javax.swing.JTable$PrintMode,
+        arg1: java.text.MessageFormat,
+        arg2: java.text.MessageFormat
+      ): boolean
+      public print(
+        arg0: javax.swing.JTable$PrintMode,
+        arg1: java.text.MessageFormat,
+        arg2: java.text.MessageFormat,
+        arg3: boolean | java.lang.Boolean,
+        arg4: javax.print.attribute.PrintRequestAttributeSet,
+        arg5: boolean | java.lang.Boolean
+      ): boolean
+      public print(
+        arg0: javax.swing.JTable$PrintMode,
+        arg1: java.text.MessageFormat,
+        arg2: java.text.MessageFormat,
+        arg3: boolean | java.lang.Boolean,
+        arg4: javax.print.attribute.PrintRequestAttributeSet,
+        arg5: boolean | java.lang.Boolean,
+        arg6: javax.print.PrintService
+      ): boolean
+      public getPrintable(
+        arg0: javax.swing.JTable$PrintMode,
+        arg1: java.text.MessageFormat,
+        arg2: java.text.MessageFormat
+      ): java.awt.print.Printable
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       dropLocationForPoint(arg0: java.awt.Point): javax.swing.TransferHandler$DropLocation
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

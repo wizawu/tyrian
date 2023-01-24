@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Runtime {
       public static getRuntime(): java.lang.Runtime
       public exit(arg0: number | java.lang.Integer): void
@@ -9,10 +8,18 @@ declare namespace java {
       public halt(arg0: number | java.lang.Integer): void
       public exec(arg0: java.lang.String | string): java.lang.Process
       public exec(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): java.lang.Process
-      public exec(arg0: java.lang.String | string, arg1: java.lang.String[] | string[], arg2: java.io.File): java.lang.Process
+      public exec(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String[] | string[],
+        arg2: java.io.File
+      ): java.lang.Process
       public exec(arg0: java.lang.String[] | string[]): java.lang.Process
       public exec(arg0: java.lang.String[] | string[], arg1: java.lang.String[] | string[]): java.lang.Process
-      public exec(arg0: java.lang.String[] | string[], arg1: java.lang.String[] | string[], arg2: java.io.File): java.lang.Process
+      public exec(
+        arg0: java.lang.String[] | string[],
+        arg1: java.lang.String[] | string[],
+        arg2: java.io.File
+      ): java.lang.Process
       public availableProcessors(): number
       public freeMemory(): number
       public totalMemory(): number
@@ -27,6 +34,5 @@ declare namespace java {
       loadLibrary0(arg0: java.lang.Class<unknown>, arg1: java.lang.String | string): void
       public static version(): java.lang.Runtime$Version
     }
-
   }
 }

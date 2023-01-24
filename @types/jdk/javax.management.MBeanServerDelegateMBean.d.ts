@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace management {
-
     interface MBeanServerDelegateMBean {
       getMBeanServerId(): java.lang.String
       getSpecificationName(): java.lang.String
@@ -10,6 +9,5 @@ declare namespace javax {
       getImplementationVersion(): java.lang.String
       getImplementationVendor(): java.lang.String
     }
-
   }
 }

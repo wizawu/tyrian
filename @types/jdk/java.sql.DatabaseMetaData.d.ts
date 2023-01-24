@@ -1,68 +1,67 @@
 declare namespace java {
   namespace sql {
-
     interface DatabaseMetaData extends java.sql.Wrapper {
-      public static readonly procedureResultUnknown: int
-      public static readonly procedureNoResult: int
-      public static readonly procedureReturnsResult: int
-      public static readonly procedureColumnUnknown: int
-      public static readonly procedureColumnIn: int
-      public static readonly procedureColumnInOut: int
-      public static readonly procedureColumnOut: int
-      public static readonly procedureColumnReturn: int
-      public static readonly procedureColumnResult: int
-      public static readonly procedureNoNulls: int
-      public static readonly procedureNullable: int
-      public static readonly procedureNullableUnknown: int
-      public static readonly columnNoNulls: int
-      public static readonly columnNullable: int
-      public static readonly columnNullableUnknown: int
-      public static readonly bestRowTemporary: int
-      public static readonly bestRowTransaction: int
-      public static readonly bestRowSession: int
-      public static readonly bestRowUnknown: int
-      public static readonly bestRowNotPseudo: int
-      public static readonly bestRowPseudo: int
-      public static readonly versionColumnUnknown: int
-      public static readonly versionColumnNotPseudo: int
-      public static readonly versionColumnPseudo: int
-      public static readonly importedKeyCascade: int
-      public static readonly importedKeyRestrict: int
-      public static readonly importedKeySetNull: int
-      public static readonly importedKeyNoAction: int
-      public static readonly importedKeySetDefault: int
-      public static readonly importedKeyInitiallyDeferred: int
-      public static readonly importedKeyInitiallyImmediate: int
-      public static readonly importedKeyNotDeferrable: int
-      public static readonly typeNoNulls: int
-      public static readonly typeNullable: int
-      public static readonly typeNullableUnknown: int
-      public static readonly typePredNone: int
-      public static readonly typePredChar: int
-      public static readonly typePredBasic: int
-      public static readonly typeSearchable: int
-      public static readonly tableIndexStatistic: short
-      public static readonly tableIndexClustered: short
-      public static readonly tableIndexHashed: short
-      public static readonly tableIndexOther: short
-      public static readonly attributeNoNulls: short
-      public static readonly attributeNullable: short
-      public static readonly attributeNullableUnknown: short
-      public static readonly sqlStateXOpen: int
-      public static readonly sqlStateSQL: int
-      public static readonly sqlStateSQL99: int
-      public static readonly functionColumnUnknown: int
-      public static readonly functionColumnIn: int
-      public static readonly functionColumnInOut: int
-      public static readonly functionColumnOut: int
-      public static readonly functionReturn: int
-      public static readonly functionColumnResult: int
-      public static readonly functionNoNulls: int
-      public static readonly functionNullable: int
-      public static readonly functionNullableUnknown: int
-      public static readonly functionResultUnknown: int
-      public static readonly functionNoTable: int
-      public static readonly functionReturnsTable: int
+      readonly procedureResultUnknown: int
+      readonly procedureNoResult: int
+      readonly procedureReturnsResult: int
+      readonly procedureColumnUnknown: int
+      readonly procedureColumnIn: int
+      readonly procedureColumnInOut: int
+      readonly procedureColumnOut: int
+      readonly procedureColumnReturn: int
+      readonly procedureColumnResult: int
+      readonly procedureNoNulls: int
+      readonly procedureNullable: int
+      readonly procedureNullableUnknown: int
+      readonly columnNoNulls: int
+      readonly columnNullable: int
+      readonly columnNullableUnknown: int
+      readonly bestRowTemporary: int
+      readonly bestRowTransaction: int
+      readonly bestRowSession: int
+      readonly bestRowUnknown: int
+      readonly bestRowNotPseudo: int
+      readonly bestRowPseudo: int
+      readonly versionColumnUnknown: int
+      readonly versionColumnNotPseudo: int
+      readonly versionColumnPseudo: int
+      readonly importedKeyCascade: int
+      readonly importedKeyRestrict: int
+      readonly importedKeySetNull: int
+      readonly importedKeyNoAction: int
+      readonly importedKeySetDefault: int
+      readonly importedKeyInitiallyDeferred: int
+      readonly importedKeyInitiallyImmediate: int
+      readonly importedKeyNotDeferrable: int
+      readonly typeNoNulls: int
+      readonly typeNullable: int
+      readonly typeNullableUnknown: int
+      readonly typePredNone: int
+      readonly typePredChar: int
+      readonly typePredBasic: int
+      readonly typeSearchable: int
+      readonly tableIndexStatistic: short
+      readonly tableIndexClustered: short
+      readonly tableIndexHashed: short
+      readonly tableIndexOther: short
+      readonly attributeNoNulls: short
+      readonly attributeNullable: short
+      readonly attributeNullableUnknown: short
+      readonly sqlStateXOpen: int
+      readonly sqlStateSQL: int
+      readonly sqlStateSQL99: int
+      readonly functionColumnUnknown: int
+      readonly functionColumnIn: int
+      readonly functionColumnInOut: int
+      readonly functionColumnOut: int
+      readonly functionReturn: int
+      readonly functionColumnResult: int
+      readonly functionNoNulls: int
+      readonly functionNullable: int
+      readonly functionNullableUnknown: int
+      readonly functionResultUnknown: int
+      readonly functionNoTable: int
+      readonly functionReturnsTable: int
       allProceduresAreCallable(): boolean
       allTablesAreSelectable(): boolean
       getURL(): java.lang.String
@@ -181,23 +180,86 @@ declare namespace java {
       supportsDataManipulationTransactionsOnly(): boolean
       dataDefinitionCausesTransactionCommit(): boolean
       dataDefinitionIgnoredInTransactions(): boolean
-      getProcedures(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
-      getProcedureColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
-      getTables(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String[] | string[]): java.sql.ResultSet
+      getProcedures(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.sql.ResultSet
+      getProcedureColumns(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string
+      ): java.sql.ResultSet
+      getTables(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String[] | string[]
+      ): java.sql.ResultSet
       getSchemas(): java.sql.ResultSet
       getCatalogs(): java.sql.ResultSet
       getTableTypes(): java.sql.ResultSet
-      getColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
-      getColumnPrivileges(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
-      getTablePrivileges(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
-      getBestRowIdentifier(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: number | java.lang.Integer, arg4: boolean | java.lang.Boolean): java.sql.ResultSet
-      getVersionColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
-      getPrimaryKeys(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
-      getImportedKeys(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
-      getExportedKeys(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
-      getCrossReference(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.String | string): java.sql.ResultSet
+      getColumns(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string
+      ): java.sql.ResultSet
+      getColumnPrivileges(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string
+      ): java.sql.ResultSet
+      getTablePrivileges(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.sql.ResultSet
+      getBestRowIdentifier(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: number | java.lang.Integer,
+        arg4: boolean | java.lang.Boolean
+      ): java.sql.ResultSet
+      getVersionColumns(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.sql.ResultSet
+      getPrimaryKeys(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.sql.ResultSet
+      getImportedKeys(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.sql.ResultSet
+      getExportedKeys(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.sql.ResultSet
+      getCrossReference(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string,
+        arg4: java.lang.String | string,
+        arg5: java.lang.String | string
+      ): java.sql.ResultSet
       getTypeInfo(): java.sql.ResultSet
-      getIndexInfo(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean): java.sql.ResultSet
+      getIndexInfo(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: boolean | java.lang.Boolean,
+        arg4: boolean | java.lang.Boolean
+      ): java.sql.ResultSet
       supportsResultSetType(arg0: number | java.lang.Integer): boolean
       supportsResultSetConcurrency(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): boolean
       ownUpdatesAreVisible(arg0: number | java.lang.Integer): boolean
@@ -210,15 +272,33 @@ declare namespace java {
       deletesAreDetected(arg0: number | java.lang.Integer): boolean
       insertsAreDetected(arg0: number | java.lang.Integer): boolean
       supportsBatchUpdates(): boolean
-      getUDTs(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: number[] | java.lang.Integer[]): java.sql.ResultSet
+      getUDTs(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: number[] | java.lang.Integer[]
+      ): java.sql.ResultSet
       getConnection(): java.sql.Connection
       supportsSavepoints(): boolean
       supportsNamedParameters(): boolean
       supportsMultipleOpenResults(): boolean
       supportsGetGeneratedKeys(): boolean
-      getSuperTypes(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
-      getSuperTables(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
-      getAttributes(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
+      getSuperTypes(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.sql.ResultSet
+      getSuperTables(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.sql.ResultSet
+      getAttributes(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string
+      ): java.sql.ResultSet
       supportsResultSetHoldability(arg0: number | java.lang.Integer): boolean
       getResultSetHoldability(): number
       getDatabaseMajorVersion(): number
@@ -233,14 +313,27 @@ declare namespace java {
       supportsStoredFunctionsUsingCallSyntax(): boolean
       autoCommitFailureClosesAllResultSets(): boolean
       getClientInfoProperties(): java.sql.ResultSet
-      getFunctions(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.sql.ResultSet
-      getFunctionColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
-      getPseudoColumns(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): java.sql.ResultSet
+      getFunctions(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.sql.ResultSet
+      getFunctionColumns(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string
+      ): java.sql.ResultSet
+      getPseudoColumns(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string
+      ): java.sql.ResultSet
       generatedKeyAlwaysReturned(): boolean
       getMaxLogicalLobSize(): number
       supportsRefCursors(): boolean
       supportsSharding(): boolean
     }
-
   }
 }

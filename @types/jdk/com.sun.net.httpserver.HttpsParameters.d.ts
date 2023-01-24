@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace net {
       namespace httpserver {
-
         abstract class HttpsParameters {
           protected constructor()
           public abstract getHttpsConfigurator(): com.sun.net.httpserver.HttpsConfigurator
@@ -17,7 +16,6 @@ declare namespace com {
           public getNeedClientAuth(): boolean
           public setNeedClientAuth(arg0: boolean | java.lang.Boolean): void
         }
-
       }
     }
   }

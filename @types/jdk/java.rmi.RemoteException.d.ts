@@ -1,6 +1,5 @@
 declare namespace java {
   namespace rmi {
-
     class RemoteException extends java.io.IOException {
       public detail: java.lang.Throwable
       public constructor()
@@ -9,6 +8,5 @@ declare namespace java {
       public getMessage(): java.lang.String
       public getCause(): java.lang.Throwable
     }
-
   }
 }

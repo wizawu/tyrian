@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace net {
       namespace httpserver {
-
         abstract class HttpExchange {
           protected constructor()
           public abstract getRequestHeaders(): com.sun.net.httpserver.Headers
@@ -23,7 +22,6 @@ declare namespace com {
           public abstract setStreams(arg0: java.io.InputStream, arg1: java.io.OutputStream): void
           public abstract getPrincipal(): com.sun.net.httpserver.HttpPrincipal
         }
-
       }
     }
   }

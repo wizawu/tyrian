@@ -1,7 +1,6 @@
 declare namespace java {
   namespace rmi {
     namespace server {
-
       interface RMIFailureHandler$$lambda {
         (arg0: java.lang.Exception): boolean | java.lang.Boolean
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface RMIFailureHandler {
         failure(arg0: java.lang.Exception): boolean
       }
-
     }
   }
 }

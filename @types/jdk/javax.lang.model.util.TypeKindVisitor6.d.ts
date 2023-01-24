@@ -2,8 +2,7 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace util {
-
-        class TypeKindVisitor6<R,P> extends javax.lang.model.util.SimpleTypeVisitor6<R,P> {
+        class TypeKindVisitor6<R, P> extends javax.lang.model.util.SimpleTypeVisitor6<R, P> {
           protected constructor()
           protected constructor(arg0: R)
           public visitPrimitive(arg0: javax.lang.model.type.PrimitiveType, arg1: P): R
@@ -21,7 +20,6 @@ declare namespace javax {
           public visitNoTypeAsModule(arg0: javax.lang.model.type.NoType, arg1: P): R
           public visitNoTypeAsNone(arg0: javax.lang.model.type.NoType, arg1: P): R
         }
-
       }
     }
   }

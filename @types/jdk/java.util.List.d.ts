@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     interface List<E> extends java.util.Collection<E> {
       size(): number
       isEmpty(): boolean
@@ -41,9 +40,8 @@ declare namespace java {
       of<E>(arg0: E, arg1: E, arg2: E, arg3: E, arg4: E, arg5: E, arg6: E, arg7: E): java.util.List<E>
       of<E>(arg0: E, arg1: E, arg2: E, arg3: E, arg4: E, arg5: E, arg6: E, arg7: E, arg8: E): java.util.List<E>
       of<E>(arg0: E, arg1: E, arg2: E, arg3: E, arg4: E, arg5: E, arg6: E, arg7: E, arg8: E, arg9: E): java.util.List<E>
-      of<E>(...vargs: (E)[]): java.util.List<E>
+      of<E>(...vargs: E[]): java.util.List<E>
       copyOf<E>(arg0: java.util.Collection<E>): java.util.List<E>
     }
-
   }
 }

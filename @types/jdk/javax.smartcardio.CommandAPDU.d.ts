@@ -1,16 +1,60 @@
 declare namespace javax {
   namespace smartcardio {
-
     class CommandAPDU implements java.io.Serializable {
       public constructor(arg0: number[] | java.lang.Byte[])
-      public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+      public constructor(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      )
       public constructor(arg0: java.nio.ByteBuffer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Byte[])
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Byte[], arg5: number | java.lang.Integer, arg6: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Byte[], arg5: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number[] | java.lang.Byte[], arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number[] | java.lang.Byte[]
+      )
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number[] | java.lang.Byte[],
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number[] | java.lang.Byte[],
+        arg5: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number[] | java.lang.Byte[],
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer,
+        arg7: number | java.lang.Integer
+      )
       public getCLA(): number
       public getINS(): number
       public getP1(): number
@@ -23,6 +67,5 @@ declare namespace javax {
       public equals(arg0: java.lang.Object | any): boolean
       public hashCode(): number
     }
-
   }
 }

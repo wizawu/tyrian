@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
       class ContainerEvent extends java.awt.event.ComponentEvent {
         public static readonly CONTAINER_FIRST: int
         public static readonly CONTAINER_LAST: int
@@ -13,7 +12,6 @@ declare namespace java {
         public getChild(): java.awt.Component
         public paramString(): java.lang.String
       }
-
     }
   }
 }

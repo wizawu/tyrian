@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
     namespace plugins {
       namespace jpeg {
-
         class JPEGHuffmanTable {
           public static readonly StdDCLuminance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
           public static readonly StdDCChrominance: javax.imageio.plugins.jpeg.JPEGHuffmanTable
@@ -13,7 +12,6 @@ declare namespace javax {
           public getValues(): number[]
           public toString(): java.lang.String
         }
-
       }
     }
   }

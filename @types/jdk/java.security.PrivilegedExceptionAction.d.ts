@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     interface PrivilegedExceptionAction$$lambda<T> {
       (): T
     }
@@ -8,6 +7,5 @@ declare namespace java {
     interface PrivilegedExceptionAction<T> {
       run(): T
     }
-
   }
 }

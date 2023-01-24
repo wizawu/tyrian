@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class ProcessBuilder$Redirect$Type extends java.lang.Enum<java.lang.ProcessBuilder$Redirect$Type> {
       public static readonly PIPE: java.lang.ProcessBuilder$Redirect$Type
       public static readonly INHERIT: java.lang.ProcessBuilder$Redirect$Type
@@ -10,6 +9,5 @@ declare namespace java {
       public static values(): java.lang.ProcessBuilder$Redirect$Type[]
       public static valueOf(arg0: java.lang.String | string): java.lang.ProcessBuilder$Redirect$Type
     }
-
   }
 }

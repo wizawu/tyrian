@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace print {
-
     abstract class ServiceUIFactory {
       public static readonly JCOMPONENT_UI: java.lang.String
       public static readonly PANEL_UI: java.lang.String
@@ -14,6 +13,5 @@ declare namespace javax {
       public abstract getUI(arg0: number | java.lang.Integer, arg1: java.lang.String | string): java.lang.Object
       public abstract getUIClassNamesForRole(arg0: number | java.lang.Integer): java.lang.String[]
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     abstract class Process {
       public constructor()
       public abstract getOutputStream(): java.io.OutputStream
@@ -20,6 +19,5 @@ declare namespace java {
       public children(): java.util.stream.Stream<java.lang.ProcessHandle>
       public descendants(): java.util.stream.Stream<java.lang.ProcessHandle>
     }
-
   }
 }

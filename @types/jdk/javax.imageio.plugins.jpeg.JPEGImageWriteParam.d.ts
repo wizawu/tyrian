@@ -2,7 +2,6 @@ declare namespace javax {
   namespace imageio {
     namespace plugins {
       namespace jpeg {
-
         class JPEGImageWriteParam extends javax.imageio.ImageWriteParam {
           public constructor(arg0: java.util.Locale)
           public unsetCompression(): void
@@ -10,7 +9,11 @@ declare namespace javax {
           public getCompressionQualityDescriptions(): java.lang.String[]
           public getCompressionQualityValues(): number[]
           public areTablesSet(): boolean
-          public setEncodeTables(arg0: javax.imageio.plugins.jpeg.JPEGQTable[], arg1: javax.imageio.plugins.jpeg.JPEGHuffmanTable[], arg2: javax.imageio.plugins.jpeg.JPEGHuffmanTable[]): void
+          public setEncodeTables(
+            arg0: javax.imageio.plugins.jpeg.JPEGQTable[],
+            arg1: javax.imageio.plugins.jpeg.JPEGHuffmanTable[],
+            arg2: javax.imageio.plugins.jpeg.JPEGHuffmanTable[]
+          ): void
           public unsetEncodeTables(): void
           public getQTables(): javax.imageio.plugins.jpeg.JPEGQTable[]
           public getDCHuffmanTables(): javax.imageio.plugins.jpeg.JPEGHuffmanTable[]
@@ -18,7 +21,6 @@ declare namespace javax {
           public setOptimizeHuffmanTables(arg0: boolean | java.lang.Boolean): void
           public getOptimizeHuffmanTables(): boolean
         }
-
       }
     }
   }

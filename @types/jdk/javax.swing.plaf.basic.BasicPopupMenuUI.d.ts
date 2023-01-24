@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicPopupMenuUI extends javax.swing.plaf.PopupMenuUI {
           static readonly MOUSE_GRABBER_KEY: java.lang.StringBuilder
           static readonly MENU_KEYBOARD_HELPER_KEY: java.lang.StringBuilder
@@ -24,10 +23,17 @@ declare namespace javax {
           static getLastPopup(): javax.swing.JPopupMenu
           static getPopups(): java.util.List<javax.swing.JPopupMenu>
           public isPopupTrigger(arg0: java.awt.event.MouseEvent): boolean
-          static findEnabledChild(arg0: javax.swing.MenuElement[], arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): javax.swing.MenuElement
-          static findEnabledChild(arg0: javax.swing.MenuElement[], arg1: javax.swing.MenuElement, arg2: boolean | java.lang.Boolean): javax.swing.MenuElement
+          static findEnabledChild(
+            arg0: javax.swing.MenuElement[],
+            arg1: number | java.lang.Integer,
+            arg2: boolean | java.lang.Boolean
+          ): javax.swing.MenuElement
+          static findEnabledChild(
+            arg0: javax.swing.MenuElement[],
+            arg1: javax.swing.MenuElement,
+            arg2: boolean | java.lang.Boolean
+          ): javax.swing.MenuElement
         }
-
       }
     }
   }

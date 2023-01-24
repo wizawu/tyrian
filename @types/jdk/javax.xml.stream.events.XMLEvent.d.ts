@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
     namespace stream {
       namespace events {
-
         interface XMLEvent extends javax.xml.stream.XMLStreamConstants {
           getEventType(): number
           getLocation(): javax.xml.stream.Location
@@ -21,7 +20,6 @@ declare namespace javax {
           getSchemaType(): javax.xml.namespace.QName
           writeAsEncodedUnicode(arg0: java.io.Writer): void
         }
-
       }
     }
   }

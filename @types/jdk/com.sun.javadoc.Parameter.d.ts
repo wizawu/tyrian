@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace javadoc {
-
       interface Parameter {
         type(): com.sun.javadoc.Type
         name(): java.lang.String
@@ -9,7 +8,6 @@ declare namespace com {
         toString(): java.lang.String
         annotations(): com.sun.javadoc.AnnotationDesc[]
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class Scanner implements java.util.Iterator<java.lang.String>, java.io.Closeable {
       modCount: int
       static readonly $assertionsDisabled: boolean
@@ -78,6 +77,5 @@ declare namespace java {
       public findAll(arg0: java.lang.String | string): java.util.stream.Stream<java.util.regex.MatchResult>
       public next(): java.lang.Object
     }
-
   }
 }

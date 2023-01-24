@@ -2,7 +2,6 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
         class PrinterStateReason extends javax.print.attribute.EnumSyntax implements javax.print.attribute.Attribute {
           public static readonly OTHER: javax.print.attribute.standard.PrinterStateReason
           public static readonly MEDIA_NEEDED: javax.print.attribute.standard.PrinterStateReason
@@ -43,7 +42,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

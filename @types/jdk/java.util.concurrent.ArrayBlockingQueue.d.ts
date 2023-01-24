@@ -1,8 +1,10 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
-      class ArrayBlockingQueue<E> extends java.util.AbstractQueue<E> implements java.util.concurrent.BlockingQueue<E>, java.io.Serializable {
+      class ArrayBlockingQueue<E>
+        extends java.util.AbstractQueue<E>
+        implements java.util.concurrent.BlockingQueue<E>, java.io.Serializable
+      {
         readonly items: java.lang.Object[]
         takeIndex: int
         putIndex: int
@@ -16,7 +18,11 @@ declare namespace java {
         removeAt(arg0: number | java.lang.Integer): void
         public constructor(arg0: number | java.lang.Integer)
         public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean)
-        public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean, arg2: java.util.Collection<E>)
+        public constructor(
+          arg0: number | java.lang.Integer,
+          arg1: boolean | java.lang.Boolean,
+          arg2: java.util.Collection<E>
+        )
         public add(arg0: E): boolean
         public offer(arg0: E): boolean
         public put(arg0: E): void
@@ -37,13 +43,14 @@ declare namespace java {
         public drainTo(arg0: java.util.Collection<unknown>, arg1: number | java.lang.Integer): number
         public iterator(): java.util.Iterator<E>
         public spliterator(): java.util.Spliterator<E>
-        public forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
+        public forEach(
+          arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
+        ): void
         public removeIf(arg0: java.util.function$.Predicate<unknown>): boolean
         public removeAll(arg0: java.util.Collection<unknown>): boolean
         public retainAll(arg0: java.util.Collection<unknown>): boolean
         checkInvariants(): void
       }
-
     }
   }
 }

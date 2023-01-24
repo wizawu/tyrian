@@ -1,6 +1,5 @@
 declare namespace jdk {
   namespace dynalink {
-
     class StandardOperation extends java.lang.Enum<jdk.dynalink.StandardOperation> implements jdk.dynalink.Operation {
       public static readonly GET: jdk.dynalink.StandardOperation
       public static readonly SET: jdk.dynalink.StandardOperation
@@ -10,6 +9,5 @@ declare namespace jdk {
       public static values(): jdk.dynalink.StandardOperation[]
       public static valueOf(arg0: java.lang.String | string): jdk.dynalink.StandardOperation
     }
-
   }
 }

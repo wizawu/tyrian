@@ -1,8 +1,13 @@
 declare namespace javax {
   namespace swing {
     namespace table {
-
-      class DefaultTableColumnModel implements javax.swing.table.TableColumnModel, java.beans.PropertyChangeListener, javax.swing.event.ListSelectionListener, java.io.Serializable {
+      class DefaultTableColumnModel
+        implements
+          javax.swing.table.TableColumnModel,
+          java.beans.PropertyChangeListener,
+          javax.swing.event.ListSelectionListener,
+          java.io.Serializable
+      {
         protected tableColumns: java.util.Vector<javax.swing.table.TableColumn>
         protected selectionModel: javax.swing.ListSelectionModel
         protected columnMargin: int
@@ -42,7 +47,6 @@ declare namespace javax {
         protected createSelectionModel(): javax.swing.ListSelectionModel
         protected recalcWidthCache(): void
       }
-
     }
   }
 }

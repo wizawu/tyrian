@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalMenuBarUI extends javax.swing.plaf.basic.BasicMenuBarUI {
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
@@ -10,7 +9,6 @@ declare namespace javax {
           public uninstallUI(arg0: javax.swing.JComponent): void
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
         }
-
       }
     }
   }

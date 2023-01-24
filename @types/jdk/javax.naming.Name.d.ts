@@ -1,8 +1,7 @@
 declare namespace javax {
   namespace naming {
-
     interface Name extends java.lang.Cloneable, java.io.Serializable, java.lang.Comparable<java.lang.Object> {
-      public static readonly serialVersionUID: long
+      readonly serialVersionUID: long
       clone(): java.lang.Object
       compareTo(arg0: java.lang.Object | any): number
       size(): number
@@ -19,6 +18,5 @@ declare namespace javax {
       add(arg0: number | java.lang.Integer, arg1: java.lang.String | string): javax.naming.Name
       remove(arg0: number | java.lang.Integer): java.lang.Object
     }
-
   }
 }

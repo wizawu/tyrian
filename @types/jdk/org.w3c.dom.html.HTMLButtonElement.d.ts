@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLButtonElement extends org.w3c.dom.html.HTMLElement {
           getForm(): org.w3c.dom.html.HTMLFormElement
           getAccessKey(): java.lang.String
@@ -17,7 +16,6 @@ declare namespace org {
           getValue(): java.lang.String
           setValue(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

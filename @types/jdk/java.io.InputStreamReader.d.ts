@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     class InputStreamReader extends java.io.Reader {
       public constructor(arg0: java.io.InputStream)
       public constructor(arg0: java.io.InputStream, arg1: java.lang.String | string)
@@ -8,10 +7,13 @@ declare namespace java {
       public constructor(arg0: java.io.InputStream, arg1: java.nio.charset.CharsetDecoder)
       public getEncoding(): java.lang.String
       public read(): number
-      public read(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public ready(): boolean
       public close(): void
     }
-
   }
 }

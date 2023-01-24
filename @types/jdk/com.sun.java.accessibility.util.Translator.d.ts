@@ -3,8 +3,10 @@ declare namespace com {
     namespace java {
       namespace accessibility {
         namespace util {
-
-          class Translator extends javax.accessibility.AccessibleContext implements javax.accessibility.Accessible, javax.accessibility.AccessibleComponent {
+          class Translator
+            extends javax.accessibility.AccessibleContext
+            implements javax.accessibility.Accessible, javax.accessibility.AccessibleComponent
+          {
             protected source: java.lang.Object
             protected static getTranslatorClass(arg0: java.lang.Class<unknown>): java.lang.Class<unknown>
             public static getAccessible(arg0: java.lang.Object | any): javax.accessibility.Accessible
@@ -26,8 +28,12 @@ declare namespace com {
             public getAccessibleChildrenCount(): number
             public getAccessibleChild(arg0: number | java.lang.Integer): javax.accessibility.Accessible
             public getLocale(): java.util.Locale
-            public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-            public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+            public addPropertyChangeListener(
+              arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+            ): void
+            public removePropertyChangeListener(
+              arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+            ): void
             public getBackground(): java.awt.Color
             public setBackground(arg0: java.awt.Color): void
             public getForeground(): java.awt.Color
@@ -56,7 +62,6 @@ declare namespace com {
             public addFocusListener(arg0: java.awt.event.FocusListener): void
             public removeFocusListener(arg0: java.awt.event.FocusListener): void
           }
-
         }
       }
     }

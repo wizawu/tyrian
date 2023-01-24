@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace imageio {
     namespace stream {
-
       abstract class ImageInputStreamImpl implements javax.imageio.stream.ImageInputStream {
         byteBuf: byte[]
         protected byteOrder: java.nio.ByteOrder
@@ -14,7 +13,11 @@ declare namespace javax {
         public getByteOrder(): java.nio.ByteOrder
         public abstract read(): number
         public read(arg0: number[] | java.lang.Byte[]): number
-        public abstract read(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+        public abstract read(
+          arg0: number[] | java.lang.Byte[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): number
         public readBytes(arg0: javax.imageio.stream.IIOByteBuffer, arg1: number | java.lang.Integer): void
         public readBoolean(): boolean
         public readByte(): number
@@ -29,14 +32,42 @@ declare namespace javax {
         public readDouble(): number
         public readLine(): java.lang.String
         public readUTF(): java.lang.String
-        public readFully(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        public readFully(
+          arg0: number[] | java.lang.Byte[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
         public readFully(arg0: number[] | java.lang.Byte[]): void
-        public readFully(arg0: number[] | java.lang.Short[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-        public readFully(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-        public readFully(arg0: number[] | java.lang.Integer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-        public readFully(arg0: number[] | java.lang.Long[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-        public readFully(arg0: number[] | java.lang.Float[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-        public readFully(arg0: number[] | java.lang.Double[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+        public readFully(
+          arg0: number[] | java.lang.Short[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
+        public readFully(
+          arg0: string[] | java.lang.Character[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
+        public readFully(
+          arg0: number[] | java.lang.Integer[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
+        public readFully(
+          arg0: number[] | java.lang.Long[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
+        public readFully(
+          arg0: number[] | java.lang.Float[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
+        public readFully(
+          arg0: number[] | java.lang.Double[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): void
         public getStreamPosition(): number
         public getBitOffset(): number
         public setBitOffset(arg0: number | java.lang.Integer): void
@@ -57,7 +88,6 @@ declare namespace javax {
         public close(): void
         protected finalize(): void
       }
-
     }
   }
 }

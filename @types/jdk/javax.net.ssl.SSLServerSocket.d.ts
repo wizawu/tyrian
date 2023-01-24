@@ -1,12 +1,15 @@
 declare namespace javax {
   namespace net {
     namespace ssl {
-
       abstract class SSLServerSocket extends java.net.ServerSocket {
         protected constructor()
         protected constructor(arg0: number | java.lang.Integer)
         protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
-        protected constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.net.InetAddress)
+        protected constructor(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer,
+          arg2: java.net.InetAddress
+        )
         public abstract getEnabledCipherSuites(): java.lang.String[]
         public abstract setEnabledCipherSuites(arg0: java.lang.String[] | string[]): void
         public abstract getSupportedCipherSuites(): java.lang.String[]
@@ -24,7 +27,6 @@ declare namespace javax {
         public getSSLParameters(): javax.net.ssl.SSLParameters
         public setSSLParameters(arg0: javax.net.ssl.SSLParameters): void
       }
-
     }
   }
 }

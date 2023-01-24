@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace print {
-
       interface PrinterGraphics$$lambda {
         (): java.awt.print.PrinterJob
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface PrinterGraphics {
         getPrinterJob(): java.awt.print.PrinterJob
       }
-
     }
   }
 }

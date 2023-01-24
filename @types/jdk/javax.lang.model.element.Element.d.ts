@@ -2,7 +2,6 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace element {
-
         interface Element extends javax.lang.model.AnnotatedConstruct {
           asType(): javax.lang.model.type.TypeMirror
           getKind(): javax.lang.model.element.ElementKind
@@ -14,9 +13,8 @@ declare namespace javax {
           hashCode(): number
           getAnnotationMirrors(): java.util.List<javax.lang.model.element.AnnotationMirror>
           getAnnotation<A extends java.lang.annotation.Annotation>(arg0: java.lang.Class<A>): A
-          accept<R,P>(arg0: javax.lang.model.element.ElementVisitor<R,P>, arg1: P): R
+          accept<R, P>(arg0: javax.lang.model.element.ElementVisitor<R, P>, arg1: P): R
         }
-
       }
     }
   }

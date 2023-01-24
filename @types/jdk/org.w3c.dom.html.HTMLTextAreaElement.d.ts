@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLTextAreaElement extends org.w3c.dom.html.HTMLElement {
           getDefaultValue(): java.lang.String
           setDefaultValue(arg0: java.lang.String | string): void
@@ -28,7 +27,6 @@ declare namespace org {
           focus(): void
           select(): void
         }
-
       }
     }
   }

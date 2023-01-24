@@ -1,13 +1,16 @@
 declare namespace javax {
   namespace naming {
     namespace directory {
-
       class BasicAttributes implements javax.naming.directory.Attributes {
-        attrs: java.util.Hashtable<java.lang.String,javax.naming.directory.Attribute>
+        attrs: java.util.Hashtable<java.lang.String, javax.naming.directory.Attribute>
         public constructor()
         public constructor(arg0: boolean | java.lang.Boolean)
         public constructor(arg0: java.lang.String | string, arg1: java.lang.Object | any)
-        public constructor(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean)
+        public constructor(
+          arg0: java.lang.String | string,
+          arg1: java.lang.Object | any,
+          arg2: boolean | java.lang.Boolean
+        )
         public clone(): java.lang.Object
         public isCaseIgnored(): boolean
         public size(): number
@@ -21,7 +24,6 @@ declare namespace javax {
         public equals(arg0: java.lang.Object | any): boolean
         public hashCode(): number
       }
-
     }
   }
 }

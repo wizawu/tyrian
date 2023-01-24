@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace acl {
-
       interface AclEntry extends java.lang.Cloneable {
         setPrincipal(arg0: java.security.Principal): boolean
         getPrincipal(): java.security.Principal
@@ -14,7 +13,6 @@ declare namespace java {
         toString(): java.lang.String
         clone(): java.lang.Object
       }
-
     }
   }
 }

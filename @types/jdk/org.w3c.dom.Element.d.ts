@@ -1,7 +1,6 @@
 declare namespace org {
   namespace w3c {
     namespace dom {
-
       interface Element extends org.w3c.dom.Node {
         getTagName(): java.lang.String
         getAttribute(arg0: java.lang.String | string): java.lang.String
@@ -12,7 +11,11 @@ declare namespace org {
         removeAttributeNode(arg0: org.w3c.dom.Attr): org.w3c.dom.Attr
         getElementsByTagName(arg0: java.lang.String | string): org.w3c.dom.NodeList
         getAttributeNS(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
-        setAttributeNS(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+        setAttributeNS(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String | string
+        ): void
         removeAttributeNS(arg0: java.lang.String | string, arg1: java.lang.String | string): void
         getAttributeNodeNS(arg0: java.lang.String | string, arg1: java.lang.String | string): org.w3c.dom.Attr
         setAttributeNodeNS(arg0: org.w3c.dom.Attr): org.w3c.dom.Attr
@@ -21,10 +24,13 @@ declare namespace org {
         hasAttributeNS(arg0: java.lang.String | string, arg1: java.lang.String | string): boolean
         getSchemaTypeInfo(): org.w3c.dom.TypeInfo
         setIdAttribute(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): void
-        setIdAttributeNS(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean): void
+        setIdAttributeNS(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: boolean | java.lang.Boolean
+        ): void
         setIdAttributeNode(arg0: org.w3c.dom.Attr, arg1: boolean | java.lang.Boolean): void
       }
-
     }
   }
 }

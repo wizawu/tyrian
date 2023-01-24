@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace catalog {
-
       class CatalogFeatures {
         static readonly CATALOG_FILES: java.lang.String
         static readonly CATALOG_PREFER: java.lang.String
@@ -19,7 +18,6 @@ declare namespace javax {
         public get(arg0: javax.xml.catalog.CatalogFeatures$Feature): java.lang.String
         public static builder(): javax.xml.catalog.CatalogFeatures$Builder
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace table {
-
       class TableColumn implements java.io.Serializable {
         public static readonly COLUMN_WIDTH_PROPERTY: java.lang.String
         public static readonly HEADER_VALUE_PROPERTY: java.lang.String
@@ -21,16 +20,25 @@ declare namespace javax {
         public constructor()
         public constructor(arg0: number | java.lang.Integer)
         public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
-        public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda, arg3: javax.swing.table.TableCellEditor)
+        public constructor(
+          arg0: number | java.lang.Integer,
+          arg1: number | java.lang.Integer,
+          arg2: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda,
+          arg3: javax.swing.table.TableCellEditor
+        )
         public setModelIndex(arg0: number | java.lang.Integer): void
         public getModelIndex(): number
         public setIdentifier(arg0: java.lang.Object | any): void
         public getIdentifier(): java.lang.Object
         public setHeaderValue(arg0: java.lang.Object | any): void
         public getHeaderValue(): java.lang.Object
-        public setHeaderRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda): void
+        public setHeaderRenderer(
+          arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda
+        ): void
         public getHeaderRenderer(): javax.swing.table.TableCellRenderer
-        public setCellRenderer(arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda): void
+        public setCellRenderer(
+          arg0: javax.swing.table.TableCellRenderer | javax.swing.table.TableCellRenderer$$lambda
+        ): void
         public getCellRenderer(): javax.swing.table.TableCellRenderer
         public setCellEditor(arg0: javax.swing.table.TableCellEditor): void
         public getCellEditor(): javax.swing.table.TableCellEditor
@@ -47,12 +55,15 @@ declare namespace javax {
         public sizeWidthToFit(): void
         public disableResizedPosting(): void
         public enableResizedPosting(): void
-        public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-        public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+        public addPropertyChangeListener(
+          arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+        ): void
+        public removePropertyChangeListener(
+          arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+        ): void
         public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
         protected createDefaultHeaderRenderer(): javax.swing.table.TableCellRenderer
       }
-
     }
   }
 }

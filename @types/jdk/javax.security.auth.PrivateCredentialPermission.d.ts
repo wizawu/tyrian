@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace security {
     namespace auth {
-
       class PrivateCredentialPermission extends java.security.Permission {
         constructor(arg0: java.lang.String | string, arg1: java.util.Set<java.security.Principal>)
         public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
@@ -13,7 +12,6 @@ declare namespace javax {
         public getActions(): java.lang.String
         public newPermissionCollection(): java.security.PermissionCollection
       }
-
     }
   }
 }

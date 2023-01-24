@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     interface Runnable$$lambda {
       (): void
     }
@@ -8,6 +7,5 @@ declare namespace java {
     interface Runnable {
       run(): void
     }
-
   }
 }

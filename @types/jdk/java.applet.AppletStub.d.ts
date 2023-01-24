@@ -1,6 +1,5 @@
 declare namespace java {
   namespace applet {
-
     interface AppletStub {
       isActive(): boolean
       getDocumentBase(): java.net.URL
@@ -9,6 +8,5 @@ declare namespace java {
       getAppletContext(): java.applet.AppletContext
       appletResize(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
     }
-
   }
 }

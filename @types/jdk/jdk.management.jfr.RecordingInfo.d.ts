@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace management {
     namespace jfr {
-
       class RecordingInfo {
         constructor(arg0: jdk.jfr.Recording)
         public getName(): java.lang.String
@@ -12,7 +11,7 @@ declare namespace jdk {
         public getState(): java.lang.String
         public getStartTime(): number
         public getStopTime(): number
-        public getSettings(): java.util.Map<java.lang.String,java.lang.String>
+        public getSettings(): java.util.Map<java.lang.String, java.lang.String>
         public getDestination(): java.lang.String
         public toString(): java.lang.String
         public getSize(): number
@@ -20,7 +19,6 @@ declare namespace jdk {
         public getDuration(): number
         public static from(arg0: javax.management.openmbean.CompositeData): jdk.management.jfr.RecordingInfo
       }
-
     }
   }
 }

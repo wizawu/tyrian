@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace javadoc {
-
       interface Doc extends java.lang.Comparable<java.lang.Object> {
         commentText(): java.lang.String
         tags(): com.sun.javadoc.Tag[]
@@ -28,7 +27,6 @@ declare namespace com {
         isIncluded(): boolean
         position(): com.sun.javadoc.SourcePosition
       }
-
     }
   }
 }

@@ -1,8 +1,10 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
-      abstract class JTextComponent extends javax.swing.JComponent implements javax.swing.Scrollable, javax.accessibility.Accessible {
+      abstract class JTextComponent
+        extends javax.swing.JComponent
+        implements javax.swing.Scrollable, javax.accessibility.Accessible
+      {
         public static readonly FOCUS_ACCELERATOR_KEY: java.lang.String
         public static readonly DEFAULT_KEYMAP: java.lang.String
         public constructor()
@@ -10,7 +12,9 @@ declare namespace javax {
         public setUI(arg0: javax.swing.plaf.TextUI): void
         public updateUI(): void
         public addCaretListener(arg0: javax.swing.event.CaretListener | javax.swing.event.CaretListener$$lambda): void
-        public removeCaretListener(arg0: javax.swing.event.CaretListener | javax.swing.event.CaretListener$$lambda): void
+        public removeCaretListener(
+          arg0: javax.swing.event.CaretListener | javax.swing.event.CaretListener$$lambda
+        ): void
         public getCaretListeners(): javax.swing.event.CaretListener[]
         protected fireCaretUpdate(arg0: javax.swing.event.CaretEvent): void
         public setDocument(arg0: javax.swing.text.Document): void
@@ -31,14 +35,22 @@ declare namespace javax {
         public setDropMode(arg0: javax.swing.DropMode): void
         public getDropMode(): javax.swing.DropMode
         dropLocationForPoint(arg0: java.awt.Point): javax.swing.text.JTextComponent$DropLocation
-        setDropLocation(arg0: javax.swing.TransferHandler$DropLocation, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean): java.lang.Object
+        setDropLocation(
+          arg0: javax.swing.TransferHandler$DropLocation,
+          arg1: java.lang.Object | any,
+          arg2: boolean | java.lang.Boolean
+        ): java.lang.Object
         public getDropLocation(): javax.swing.text.JTextComponent$DropLocation
         updateInputMap(arg0: javax.swing.text.Keymap, arg1: javax.swing.text.Keymap): void
         public getKeymap(): javax.swing.text.Keymap
         public static addKeymap(arg0: java.lang.String | string, arg1: javax.swing.text.Keymap): javax.swing.text.Keymap
         public static removeKeymap(arg0: java.lang.String | string): javax.swing.text.Keymap
         public static getKeymap(arg0: java.lang.String | string): javax.swing.text.Keymap
-        public static loadKeymap(arg0: javax.swing.text.Keymap, arg1: javax.swing.text.JTextComponent$KeyBinding[], arg2: javax.swing.Action[]): void
+        public static loadKeymap(
+          arg0: javax.swing.text.Keymap,
+          arg1: javax.swing.text.JTextComponent$KeyBinding[],
+          arg2: javax.swing.Action[]
+        ): void
         public getCaretColor(): java.awt.Color
         public setCaretColor(arg0: java.awt.Color): void
         public getSelectionColor(): java.awt.Color
@@ -77,13 +89,28 @@ declare namespace javax {
         public selectAll(): void
         public getToolTipText(arg0: java.awt.event.MouseEvent): java.lang.String
         public getPreferredScrollableViewportSize(): java.awt.Dimension
-        public getScrollableUnitIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-        public getScrollableBlockIncrement(arg0: java.awt.Rectangle, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+        public getScrollableUnitIncrement(
+          arg0: java.awt.Rectangle,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): number
+        public getScrollableBlockIncrement(
+          arg0: java.awt.Rectangle,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        ): number
         public getScrollableTracksViewportWidth(): boolean
         public getScrollableTracksViewportHeight(): boolean
         public print(): boolean
         public print(arg0: java.text.MessageFormat, arg1: java.text.MessageFormat): boolean
-        public print(arg0: java.text.MessageFormat, arg1: java.text.MessageFormat, arg2: boolean | java.lang.Boolean, arg3: javax.print.PrintService, arg4: javax.print.attribute.PrintRequestAttributeSet, arg5: boolean | java.lang.Boolean): boolean
+        public print(
+          arg0: java.text.MessageFormat,
+          arg1: java.text.MessageFormat,
+          arg2: boolean | java.lang.Boolean,
+          arg3: javax.print.PrintService,
+          arg4: javax.print.attribute.PrintRequestAttributeSet,
+          arg5: boolean | java.lang.Boolean
+        ): boolean
         public getPrintable(arg0: java.text.MessageFormat, arg1: java.text.MessageFormat): java.awt.print.Printable
         public getAccessibleContext(): javax.accessibility.AccessibleContext
         protected paramString(): java.lang.String
@@ -96,7 +123,6 @@ declare namespace javax {
         composedTextExists(): boolean
         public getUI(): javax.swing.plaf.ComponentUI
       }
-
     }
   }
 }

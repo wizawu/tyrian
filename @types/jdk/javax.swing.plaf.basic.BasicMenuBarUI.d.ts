@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicMenuBarUI extends javax.swing.plaf.MenuBarUI {
           protected menuBar: javax.swing.JMenuBar
           protected containerListener: java.awt.event.ContainerListener
@@ -24,7 +23,6 @@ declare namespace javax {
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
         }
-
       }
     }
   }

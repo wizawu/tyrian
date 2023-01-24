@@ -2,11 +2,10 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace events {
-
         interface Event {
-          public static readonly CAPTURING_PHASE: short
-          public static readonly AT_TARGET: short
-          public static readonly BUBBLING_PHASE: short
+          readonly CAPTURING_PHASE: short
+          readonly AT_TARGET: short
+          readonly BUBBLING_PHASE: short
           getType(): java.lang.String
           getTarget(): org.w3c.dom.events.EventTarget
           getCurrentTarget(): org.w3c.dom.events.EventTarget
@@ -16,9 +15,12 @@ declare namespace org {
           getTimeStamp(): number
           stopPropagation(): void
           preventDefault(): void
-          initEvent(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
+          initEvent(
+            arg0: java.lang.String | string,
+            arg1: boolean | java.lang.Boolean,
+            arg2: boolean | java.lang.Boolean
+          ): void
         }
-
       }
     }
   }

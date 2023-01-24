@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class Locale implements java.lang.Cloneable, java.io.Serializable {
       public static readonly ENGLISH: java.util.Locale
       public static readonly FRENCH: java.util.Locale
@@ -28,11 +27,25 @@ declare namespace java {
       public static readonly UNICODE_LOCALE_EXTENSION: char
       static readonly serialVersionUID: long
       static readonly $assertionsDisabled: boolean
-      public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string)
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      )
       public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
       public constructor(arg0: java.lang.String | string)
-      static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): java.util.Locale
-      static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: sun.util.locale.LocaleExtensions): java.util.Locale
+      static getInstance(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): java.util.Locale
+      static getInstance(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string,
+        arg4: sun.util.locale.LocaleExtensions
+      ): java.util.Locale
       static getInstance(arg0: sun.util.locale.BaseLocale, arg1: sun.util.locale.LocaleExtensions): java.util.Locale
       public static getDefault(): java.util.Locale
       public static getDefault(arg0: java.util.Locale$Category): java.util.Locale
@@ -73,13 +86,32 @@ declare namespace java {
       public clone(): java.lang.Object
       public hashCode(): number
       public equals(arg0: java.lang.Object | any): boolean
-      public static filter(arg0: java.util.List<java.util.Locale$LanguageRange>, arg1: java.util.Collection<java.util.Locale>, arg2: java.util.Locale$FilteringMode): java.util.List<java.util.Locale>
-      public static filter(arg0: java.util.List<java.util.Locale$LanguageRange>, arg1: java.util.Collection<java.util.Locale>): java.util.List<java.util.Locale>
-      public static filterTags(arg0: java.util.List<java.util.Locale$LanguageRange>, arg1: java.util.Collection<java.lang.String>, arg2: java.util.Locale$FilteringMode): java.util.List<java.lang.String>
-      public static filterTags(arg0: java.util.List<java.util.Locale$LanguageRange>, arg1: java.util.Collection<java.lang.String>): java.util.List<java.lang.String>
-      public static lookup(arg0: java.util.List<java.util.Locale$LanguageRange>, arg1: java.util.Collection<java.util.Locale>): java.util.Locale
-      public static lookupTag(arg0: java.util.List<java.util.Locale$LanguageRange>, arg1: java.util.Collection<java.lang.String>): java.lang.String
+      public static filter(
+        arg0: java.util.List<java.util.Locale$LanguageRange>,
+        arg1: java.util.Collection<java.util.Locale>,
+        arg2: java.util.Locale$FilteringMode
+      ): java.util.List<java.util.Locale>
+      public static filter(
+        arg0: java.util.List<java.util.Locale$LanguageRange>,
+        arg1: java.util.Collection<java.util.Locale>
+      ): java.util.List<java.util.Locale>
+      public static filterTags(
+        arg0: java.util.List<java.util.Locale$LanguageRange>,
+        arg1: java.util.Collection<java.lang.String>,
+        arg2: java.util.Locale$FilteringMode
+      ): java.util.List<java.lang.String>
+      public static filterTags(
+        arg0: java.util.List<java.util.Locale$LanguageRange>,
+        arg1: java.util.Collection<java.lang.String>
+      ): java.util.List<java.lang.String>
+      public static lookup(
+        arg0: java.util.List<java.util.Locale$LanguageRange>,
+        arg1: java.util.Collection<java.util.Locale>
+      ): java.util.Locale
+      public static lookupTag(
+        arg0: java.util.List<java.util.Locale$LanguageRange>,
+        arg1: java.util.Collection<java.lang.String>
+      ): java.lang.String
     }
-
   }
 }

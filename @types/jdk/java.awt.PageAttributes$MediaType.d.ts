@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class PageAttributes$MediaType extends java.awt.AttributeValue {
       public static readonly ISO_4A0: java.awt.PageAttributes$MediaType
       public static readonly ISO_2A0: java.awt.PageAttributes$MediaType
@@ -152,6 +151,5 @@ declare namespace java {
       public toString(): java.lang.String
       public hashCode(): number
     }
-
   }
 }

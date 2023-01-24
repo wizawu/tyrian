@@ -1,7 +1,12 @@
 declare namespace java {
   namespace time {
-
-    class MonthDay implements java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.MonthDay>, java.io.Serializable {
+    class MonthDay
+      implements
+        java.time.temporal.TemporalAccessor,
+        java.time.temporal.TemporalAdjuster,
+        java.lang.Comparable<java.time.MonthDay>,
+        java.io.Serializable
+    {
       public static now(): java.time.MonthDay
       public static now(arg0: java.time.ZoneId): java.time.MonthDay
       public static now(arg0: java.time.Clock): java.time.MonthDay
@@ -9,7 +14,10 @@ declare namespace java {
       public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.time.MonthDay
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.MonthDay
       public static parse(arg0: string | java.lang.CharSequence): java.time.MonthDay
-      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.MonthDay
+      public static parse(
+        arg0: string | java.lang.CharSequence,
+        arg1: java.time.format.DateTimeFormatter
+      ): java.time.MonthDay
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange
       public get(arg0: java.time.temporal.TemporalField): number
@@ -35,6 +43,5 @@ declare namespace java {
       static readExternal(arg0: java.io.DataInput): java.time.MonthDay
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

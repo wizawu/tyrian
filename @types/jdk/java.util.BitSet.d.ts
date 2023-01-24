@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class BitSet implements java.lang.Cloneable, java.io.Serializable {
       static readonly $assertionsDisabled: boolean
       public constructor()
@@ -16,7 +15,11 @@ declare namespace java {
       public set(arg0: number | java.lang.Integer): void
       public set(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
       public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
-      public set(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): void
+      public set(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean
+      ): void
       public clear(arg0: number | java.lang.Integer): void
       public clear(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       public clear(): void
@@ -41,6 +44,5 @@ declare namespace java {
       public toString(): java.lang.String
       public stream(): java.util.stream.IntStream
     }
-
   }
 }

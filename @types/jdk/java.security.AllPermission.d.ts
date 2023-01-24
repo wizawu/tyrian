@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     class AllPermission extends java.security.Permission {
       public constructor()
       public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
@@ -10,6 +9,5 @@ declare namespace java {
       public getActions(): java.lang.String
       public newPermissionCollection(): java.security.PermissionCollection
     }
-
   }
 }

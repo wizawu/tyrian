@@ -1,13 +1,33 @@
 declare namespace java {
   namespace lang {
-
     class ModuleLayer {
-      public defineModulesWithOneLoader(arg0: java.lang.module.Configuration, arg1: java.lang.ClassLoader): java.lang.ModuleLayer
-      public defineModulesWithManyLoaders(arg0: java.lang.module.Configuration, arg1: java.lang.ClassLoader): java.lang.ModuleLayer
-      public defineModules(arg0: java.lang.module.Configuration, arg1: java.util.function$.Function<java.lang.String,java.lang.ClassLoader>): java.lang.ModuleLayer
-      public static defineModulesWithOneLoader(arg0: java.lang.module.Configuration, arg1: java.util.List<java.lang.ModuleLayer>, arg2: java.lang.ClassLoader): java.lang.ModuleLayer$Controller
-      public static defineModulesWithManyLoaders(arg0: java.lang.module.Configuration, arg1: java.util.List<java.lang.ModuleLayer>, arg2: java.lang.ClassLoader): java.lang.ModuleLayer$Controller
-      public static defineModules(arg0: java.lang.module.Configuration, arg1: java.util.List<java.lang.ModuleLayer>, arg2: java.util.function$.Function<java.lang.String,java.lang.ClassLoader>): java.lang.ModuleLayer$Controller
+      public defineModulesWithOneLoader(
+        arg0: java.lang.module.Configuration,
+        arg1: java.lang.ClassLoader
+      ): java.lang.ModuleLayer
+      public defineModulesWithManyLoaders(
+        arg0: java.lang.module.Configuration,
+        arg1: java.lang.ClassLoader
+      ): java.lang.ModuleLayer
+      public defineModules(
+        arg0: java.lang.module.Configuration,
+        arg1: java.util.function$.Function<java.lang.String, java.lang.ClassLoader>
+      ): java.lang.ModuleLayer
+      public static defineModulesWithOneLoader(
+        arg0: java.lang.module.Configuration,
+        arg1: java.util.List<java.lang.ModuleLayer>,
+        arg2: java.lang.ClassLoader
+      ): java.lang.ModuleLayer$Controller
+      public static defineModulesWithManyLoaders(
+        arg0: java.lang.module.Configuration,
+        arg1: java.util.List<java.lang.ModuleLayer>,
+        arg2: java.lang.ClassLoader
+      ): java.lang.ModuleLayer$Controller
+      public static defineModules(
+        arg0: java.lang.module.Configuration,
+        arg1: java.util.List<java.lang.ModuleLayer>,
+        arg2: java.util.function$.Function<java.lang.String, java.lang.ClassLoader>
+      ): java.lang.ModuleLayer$Controller
       public configuration(): java.lang.module.Configuration
       public parents(): java.util.List<java.lang.ModuleLayer>
       layers(): java.util.stream.Stream<java.lang.ModuleLayer>
@@ -21,6 +41,5 @@ declare namespace java {
       bindToLoader(arg0: java.lang.ClassLoader): void
       static layers(arg0: java.lang.ClassLoader): java.util.stream.Stream<java.lang.ModuleLayer>
     }
-
   }
 }

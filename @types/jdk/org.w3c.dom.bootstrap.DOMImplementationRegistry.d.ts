@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace bootstrap {
-
         class DOMImplementationRegistry {
           public static readonly PROPERTY: java.lang.String
           public static newInstance(): org.w3c.dom.bootstrap.DOMImplementationRegistry
@@ -10,7 +9,6 @@ declare namespace org {
           public getDOMImplementationList(arg0: java.lang.String | string): org.w3c.dom.DOMImplementationList
           public addSource(arg0: org.w3c.dom.DOMImplementationSource): void
         }
-
       }
     }
   }

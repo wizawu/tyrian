@@ -1,7 +1,6 @@
 declare namespace java {
   namespace beans {
     namespace beancontext {
-
       interface BeanContextContainerProxy$$lambda {
         (): java.awt.Container
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface BeanContextContainerProxy {
         getContainer(): java.awt.Container
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace net {
     namespace http {
-
       interface HttpRequest$Builder {
         uri(arg0: java.net.URI): java.net.http.HttpRequest$Builder
         expectContinue(arg0: boolean | java.lang.Boolean): java.net.http.HttpRequest$Builder
@@ -14,11 +13,13 @@ declare namespace java {
         POST(arg0: java.net.http.HttpRequest$BodyPublisher): java.net.http.HttpRequest$Builder
         PUT(arg0: java.net.http.HttpRequest$BodyPublisher): java.net.http.HttpRequest$Builder
         DELETE(): java.net.http.HttpRequest$Builder
-        method(arg0: java.lang.String | string, arg1: java.net.http.HttpRequest$BodyPublisher): java.net.http.HttpRequest$Builder
+        method(
+          arg0: java.lang.String | string,
+          arg1: java.net.http.HttpRequest$BodyPublisher
+        ): java.net.http.HttpRequest$Builder
         build(): java.net.http.HttpRequest
         copy(): java.net.http.HttpRequest$Builder
       }
-
     }
   }
 }

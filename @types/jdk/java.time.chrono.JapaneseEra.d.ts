@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace chrono {
-
       class JapaneseEra implements java.time.chrono.Era, java.io.Serializable {
         static readonly ERA_OFFSET: int
         static readonly ERA_CONFIG: sun.util.calendar.Era[]
@@ -25,7 +24,6 @@ declare namespace java {
         writeExternal(arg0: java.io.DataOutput): void
         static readExternal(arg0: java.io.DataInput): java.time.chrono.JapaneseEra
       }
-
     }
   }
 }

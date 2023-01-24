@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JRadioButtonMenuItem extends javax.swing.JMenuItem implements javax.accessibility.Accessible {
       public constructor()
       public constructor(arg0: javax.swing.Icon)
@@ -15,6 +14,5 @@ declare namespace javax {
       shouldUpdateSelectedStateFromAction(): boolean
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

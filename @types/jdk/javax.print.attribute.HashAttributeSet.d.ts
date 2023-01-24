@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace print {
     namespace attribute {
-
       class HashAttributeSet implements javax.print.attribute.AttributeSet, java.io.Serializable {
         public constructor()
         public constructor(arg0: javax.print.attribute.Attribute)
@@ -25,7 +24,6 @@ declare namespace javax {
         public equals(arg0: java.lang.Object | any): boolean
         public hashCode(): number
       }
-
     }
   }
 }

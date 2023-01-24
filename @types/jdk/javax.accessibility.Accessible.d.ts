@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace accessibility {
-
     interface Accessible$$lambda {
       (): javax.accessibility.AccessibleContext
     }
@@ -8,6 +7,5 @@ declare namespace javax {
     interface Accessible {
       getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

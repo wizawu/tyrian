@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class TextComponent extends java.awt.Component implements javax.accessibility.Accessible {
       text: java.lang.String
       editable: boolean
@@ -39,6 +38,5 @@ declare namespace java {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

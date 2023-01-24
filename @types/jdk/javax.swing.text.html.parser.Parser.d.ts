@@ -3,14 +3,16 @@ declare namespace javax {
     namespace text {
       namespace html {
         namespace parser {
-
           class Parser implements javax.swing.text.html.parser.DTDConstants {
             protected dtd: javax.swing.text.html.parser.DTD
             protected strict: boolean
             public constructor(arg0: javax.swing.text.html.parser.DTD)
             protected getCurrentLine(): number
             getBlockStartPosition(): number
-            protected makeTag(arg0: javax.swing.text.html.parser.Element, arg1: boolean | java.lang.Boolean): javax.swing.text.html.parser.TagElement
+            protected makeTag(
+              arg0: javax.swing.text.html.parser.Element,
+              arg1: boolean | java.lang.Boolean
+            ): javax.swing.text.html.parser.TagElement
             protected makeTag(arg0: javax.swing.text.html.parser.Element): javax.swing.text.html.parser.TagElement
             protected getAttributes(): javax.swing.text.SimpleAttributeSet
             protected flushAttributes(): void
@@ -23,8 +25,17 @@ declare namespace javax {
             protected handleEndTag(arg0: javax.swing.text.html.parser.TagElement): void
             protected handleError(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
             handleText(arg0: javax.swing.text.html.parser.TagElement): void
-            protected error(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String | string): void
-            protected error(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+            protected error(
+              arg0: java.lang.String | string,
+              arg1: java.lang.String | string,
+              arg2: java.lang.String | string,
+              arg3: java.lang.String | string
+            ): void
+            protected error(
+              arg0: java.lang.String | string,
+              arg1: java.lang.String | string,
+              arg2: java.lang.String | string
+            ): void
             protected error(arg0: java.lang.String | string, arg1: java.lang.String | string): void
             protected error(arg0: java.lang.String | string): void
             protected startTag(arg0: javax.swing.text.html.parser.TagElement): void
@@ -56,7 +67,6 @@ declare namespace javax {
             public parse(arg0: java.io.Reader): void
             protected getCurrentPos(): number
           }
-
         }
       }
     }

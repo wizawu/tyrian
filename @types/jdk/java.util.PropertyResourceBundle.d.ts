@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class PropertyResourceBundle extends java.util.ResourceBundle {
       public constructor(arg0: java.io.InputStream)
       public constructor(arg0: java.io.Reader)
@@ -8,6 +7,5 @@ declare namespace java {
       public getKeys(): java.util.Enumeration<java.lang.String>
       protected handleKeySet(): java.util.Set<java.lang.String>
     }
-
   }
 }

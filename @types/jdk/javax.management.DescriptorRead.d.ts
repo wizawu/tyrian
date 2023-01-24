@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace management {
-
     interface DescriptorRead$$lambda {
       (): javax.management.Descriptor
     }
@@ -8,6 +7,5 @@ declare namespace javax {
     interface DescriptorRead {
       getDescriptor(): javax.management.Descriptor
     }
-
   }
 }

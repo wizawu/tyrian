@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace javadoc {
-
       interface ExecutableMemberDoc extends com.sun.javadoc.MemberDoc {
         thrownExceptions(): com.sun.javadoc.ClassDoc[]
         thrownExceptionTypes(): com.sun.javadoc.Type[]
@@ -17,7 +16,6 @@ declare namespace com {
         flatSignature(): java.lang.String
         typeParameters(): com.sun.javadoc.TypeVariable[]
       }
-
     }
   }
 }

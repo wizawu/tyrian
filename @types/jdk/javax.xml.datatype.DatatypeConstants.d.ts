@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace datatype {
-
       class DatatypeConstants {
         public static readonly JANUARY: int
         public static readonly FEBRUARY: int
@@ -40,7 +39,6 @@ declare namespace javax {
         public static readonly MAX_TIMEZONE_OFFSET: int
         public static readonly MIN_TIMEZONE_OFFSET: int
       }
-
     }
   }
 }

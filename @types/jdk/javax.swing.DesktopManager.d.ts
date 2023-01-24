@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     interface DesktopManager {
       openFrame(arg0: javax.swing.JInternalFrame): void
       closeFrame(arg0: javax.swing.JInternalFrame): void
@@ -14,10 +13,21 @@ declare namespace javax {
       dragFrame(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
       endDraggingFrame(arg0: javax.swing.JComponent): void
       beginResizingFrame(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer): void
-      resizeFrame(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      resizeFrame(
+        arg0: javax.swing.JComponent,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): void
       endResizingFrame(arg0: javax.swing.JComponent): void
-      setBoundsForFrame(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): void
+      setBoundsForFrame(
+        arg0: javax.swing.JComponent,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): void
     }
-
   }
 }

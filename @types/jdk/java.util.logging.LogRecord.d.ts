@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace logging {
-
       class LogRecord implements java.io.Serializable {
         public constructor(arg0: java.util.logging.Level, arg1: java.lang.String | string)
         public getLoggerName(): java.lang.String
@@ -31,7 +30,6 @@ declare namespace java {
         public getThrown(): java.lang.Throwable
         public setThrown(arg0: java.lang.Throwable): void
       }
-
     }
   }
 }

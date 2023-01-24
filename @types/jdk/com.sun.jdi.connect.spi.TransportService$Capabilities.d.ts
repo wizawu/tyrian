@@ -3,7 +3,6 @@ declare namespace com {
     namespace jdi {
       namespace connect {
         namespace spi {
-
           abstract class TransportService$Capabilities {
             public constructor()
             public abstract supportsMultipleConnections(): boolean
@@ -11,7 +10,6 @@ declare namespace com {
             public abstract supportsAcceptTimeout(): boolean
             public abstract supportsHandshakeTimeout(): boolean
           }
-
         }
       }
     }

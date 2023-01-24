@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Dialog extends java.awt.Window {
       resizable: boolean
       undecorated: boolean
@@ -16,16 +15,31 @@ declare namespace java {
       public constructor(arg0: java.awt.Frame, arg1: boolean | java.lang.Boolean)
       public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string)
       public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean)
-      public constructor(arg0: java.awt.Frame, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean, arg3: java.awt.GraphicsConfiguration)
+      public constructor(
+        arg0: java.awt.Frame,
+        arg1: java.lang.String | string,
+        arg2: boolean | java.lang.Boolean,
+        arg3: java.awt.GraphicsConfiguration
+      )
       public constructor(arg0: java.awt.Dialog)
       public constructor(arg0: java.awt.Dialog, arg1: java.lang.String | string)
       public constructor(arg0: java.awt.Dialog, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean)
-      public constructor(arg0: java.awt.Dialog, arg1: java.lang.String | string, arg2: boolean | java.lang.Boolean, arg3: java.awt.GraphicsConfiguration)
+      public constructor(
+        arg0: java.awt.Dialog,
+        arg1: java.lang.String | string,
+        arg2: boolean | java.lang.Boolean,
+        arg3: java.awt.GraphicsConfiguration
+      )
       public constructor(arg0: java.awt.Window)
       public constructor(arg0: java.awt.Window, arg1: java.lang.String | string)
       public constructor(arg0: java.awt.Window, arg1: java.awt.Dialog$ModalityType)
       public constructor(arg0: java.awt.Window, arg1: java.lang.String | string, arg2: java.awt.Dialog$ModalityType)
-      public constructor(arg0: java.awt.Window, arg1: java.lang.String | string, arg2: java.awt.Dialog$ModalityType, arg3: java.awt.GraphicsConfiguration)
+      public constructor(
+        arg0: java.awt.Window,
+        arg1: java.lang.String | string,
+        arg2: java.awt.Dialog$ModalityType,
+        arg3: java.awt.GraphicsConfiguration
+      )
       constructComponentName(): java.lang.String
       public addNotify(): void
       public isModal(): boolean
@@ -59,6 +73,5 @@ declare namespace java {
       static checkShouldBeBlocked(arg0: java.awt.Window): void
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

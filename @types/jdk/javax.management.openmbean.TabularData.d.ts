@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace openmbean {
-
       interface TabularData {
         getTabularType(): javax.management.openmbean.TabularType
         calculateIndex(arg0: javax.management.openmbean.CompositeData): java.lang.Object[]
@@ -20,7 +19,6 @@ declare namespace javax {
         hashCode(): number
         toString(): java.lang.String
       }
-
     }
   }
 }

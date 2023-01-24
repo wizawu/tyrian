@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace module {
-
       class ModuleDescriptor$Exports implements java.lang.Comparable<java.lang.module.ModuleDescriptor$Exports> {
         public modifiers(): java.util.Set<java.lang.module.ModuleDescriptor$Exports$Modifier>
         public isQualified(): boolean
@@ -13,7 +12,6 @@ declare namespace java {
         public toString(): java.lang.String
         public compareTo(arg0: java.lang.Object | any): number
       }
-
     }
   }
 }

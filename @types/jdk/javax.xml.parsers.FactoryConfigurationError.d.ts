@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace parsers {
-
       class FactoryConfigurationError extends java.lang.Error {
         public constructor()
         public constructor(arg0: java.lang.String | string)
@@ -11,7 +10,6 @@ declare namespace javax {
         public getException(): java.lang.Exception
         public getCause(): java.lang.Throwable
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Window$Type extends java.lang.Enum<java.awt.Window$Type> {
       public static readonly NORMAL: java.awt.Window$Type
       public static readonly UTILITY: java.awt.Window$Type
@@ -8,6 +7,5 @@ declare namespace java {
       public static values(): java.awt.Window$Type[]
       public static valueOf(arg0: java.lang.String | string): java.awt.Window$Type
     }
-
   }
 }

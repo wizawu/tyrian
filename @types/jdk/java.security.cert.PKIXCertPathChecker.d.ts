@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
       abstract class PKIXCertPathChecker implements java.security.cert.CertPathChecker, java.lang.Cloneable {
         protected constructor()
         public abstract init(arg0: boolean | java.lang.Boolean): void
@@ -11,7 +10,6 @@ declare namespace java {
         public check(arg0: java.security.cert.Certificate): void
         public clone(): java.lang.Object
       }
-
     }
   }
 }

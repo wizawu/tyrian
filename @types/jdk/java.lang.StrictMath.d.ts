@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class StrictMath {
       public static readonly E: double
       public static readonly PI: double
@@ -55,8 +54,16 @@ declare namespace java {
       public static min(arg0: number | java.lang.Long, arg1: number | java.lang.Long): number
       public static min(arg0: number | java.lang.Float, arg1: number | java.lang.Float): number
       public static min(arg0: number | java.lang.Double, arg1: number | java.lang.Double): number
-      public static fma(arg0: number | java.lang.Double, arg1: number | java.lang.Double, arg2: number | java.lang.Double): number
-      public static fma(arg0: number | java.lang.Float, arg1: number | java.lang.Float, arg2: number | java.lang.Float): number
+      public static fma(
+        arg0: number | java.lang.Double,
+        arg1: number | java.lang.Double,
+        arg2: number | java.lang.Double
+      ): number
+      public static fma(
+        arg0: number | java.lang.Float,
+        arg1: number | java.lang.Float,
+        arg2: number | java.lang.Float
+      ): number
       public static ulp(arg0: number | java.lang.Double): number
       public static ulp(arg0: number | java.lang.Float): number
       public static signum(arg0: number | java.lang.Double): number
@@ -80,6 +87,5 @@ declare namespace java {
       public static scalb(arg0: number | java.lang.Double, arg1: number | java.lang.Integer): number
       public static scalb(arg0: number | java.lang.Float, arg1: number | java.lang.Integer): number
     }
-
   }
 }

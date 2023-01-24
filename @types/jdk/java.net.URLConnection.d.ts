@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     abstract class URLConnection {
       protected url: java.net.URL
       protected doInput: boolean
@@ -27,7 +26,7 @@ declare namespace java {
       public getDate(): number
       public getLastModified(): number
       public getHeaderField(arg0: java.lang.String | string): java.lang.String
-      public getHeaderFields(): java.util.Map<java.lang.String,java.util.List<java.lang.String>>
+      public getHeaderFields(): java.util.Map<java.lang.String, java.util.List<java.lang.String>>
       public getHeaderFieldInt(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
       public getHeaderFieldLong(arg0: java.lang.String | string, arg1: number | java.lang.Long): number
       public getHeaderFieldDate(arg0: java.lang.String | string, arg1: number | java.lang.Long): number
@@ -58,13 +57,14 @@ declare namespace java {
       public setRequestProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
       public addRequestProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
       public getRequestProperty(arg0: java.lang.String | string): java.lang.String
-      public getRequestProperties(): java.util.Map<java.lang.String,java.util.List<java.lang.String>>
+      public getRequestProperties(): java.util.Map<java.lang.String, java.util.List<java.lang.String>>
       public static setDefaultRequestProperty(arg0: java.lang.String | string, arg1: java.lang.String | string): void
       public static getDefaultRequestProperty(arg0: java.lang.String | string): java.lang.String
-      public static setContentHandlerFactory(arg0: java.net.ContentHandlerFactory | java.net.ContentHandlerFactory$$lambda): void
+      public static setContentHandlerFactory(
+        arg0: java.net.ContentHandlerFactory | java.net.ContentHandlerFactory$$lambda
+      ): void
       public static guessContentTypeFromName(arg0: java.lang.String | string): java.lang.String
       public static guessContentTypeFromStream(arg0: java.io.InputStream): java.lang.String
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace management {
-
       interface ThreadMXBean extends java.lang.management.ThreadMXBean {
         getThreadCpuTime(arg0: number[] | java.lang.Long[]): number[]
         getThreadUserTime(arg0: number[] | java.lang.Long[]): number[]
@@ -12,7 +11,6 @@ declare namespace com {
         isThreadAllocatedMemoryEnabled(): boolean
         setThreadAllocatedMemoryEnabled(arg0: boolean | java.lang.Boolean): void
       }
-
     }
   }
 }

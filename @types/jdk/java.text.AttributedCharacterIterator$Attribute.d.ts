@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class AttributedCharacterIterator$Attribute implements java.io.Serializable {
       public static readonly LANGUAGE: java.text.AttributedCharacterIterator$Attribute
       public static readonly READING: java.text.AttributedCharacterIterator$Attribute
@@ -12,6 +11,5 @@ declare namespace java {
       protected getName(): java.lang.String
       protected readResolve(): java.lang.Object
     }
-
   }
 }

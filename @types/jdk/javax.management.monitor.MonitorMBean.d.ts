@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace monitor {
-
       interface MonitorMBean {
         start(): void
         stop(): void
@@ -17,7 +16,6 @@ declare namespace javax {
         setGranularityPeriod(arg0: number | java.lang.Long): void
         isActive(): boolean
       }
-
     }
   }
 }

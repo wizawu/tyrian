@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       interface Soundbank {
         getName(): java.lang.String
         getVersion(): java.lang.String
@@ -11,7 +10,6 @@ declare namespace javax {
         getInstruments(): javax.sound.midi.Instrument[]
         getInstrument(arg0: javax.sound.midi.Patch): javax.sound.midi.Instrument
       }
-
     }
   }
 }

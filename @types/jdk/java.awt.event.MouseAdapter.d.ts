@@ -1,8 +1,9 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
-      abstract class MouseAdapter implements java.awt.event.MouseListener, java.awt.event.MouseWheelListener, java.awt.event.MouseMotionListener {
+      abstract class MouseAdapter
+        implements java.awt.event.MouseListener, java.awt.event.MouseWheelListener, java.awt.event.MouseMotionListener
+      {
         public constructor()
         public mouseClicked(arg0: java.awt.event.MouseEvent): void
         public mousePressed(arg0: java.awt.event.MouseEvent): void
@@ -13,7 +14,6 @@ declare namespace java {
         public mouseDragged(arg0: java.awt.event.MouseEvent): void
         public mouseMoved(arg0: java.awt.event.MouseEvent): void
       }
-
     }
   }
 }

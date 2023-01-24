@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    class JTabbedPane extends javax.swing.JComponent implements java.io.Serializable, javax.accessibility.Accessible, javax.swing.SwingConstants {
+    class JTabbedPane
+      extends javax.swing.JComponent
+      implements java.io.Serializable, javax.accessibility.Accessible, javax.swing.SwingConstants
+    {
       public static readonly WRAP_TAB_LAYOUT: int
       public static readonly SCROLL_TAB_LAYOUT: int
       protected tabPlacement: int
@@ -17,7 +19,9 @@ declare namespace javax {
       public getUIClassID(): java.lang.String
       protected createChangeListener(): javax.swing.event.ChangeListener
       public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(
+        arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+      ): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public getModel(): javax.swing.SingleSelectionModel
@@ -30,8 +34,19 @@ declare namespace javax {
       public setSelectedIndex(arg0: number | java.lang.Integer): void
       public getSelectedComponent(): java.awt.Component
       public setSelectedComponent(arg0: java.awt.Component): void
-      public insertTab(arg0: java.lang.String | string, arg1: javax.swing.Icon, arg2: java.awt.Component, arg3: java.lang.String | string, arg4: number | java.lang.Integer): void
-      public addTab(arg0: java.lang.String | string, arg1: javax.swing.Icon, arg2: java.awt.Component, arg3: java.lang.String | string): void
+      public insertTab(
+        arg0: java.lang.String | string,
+        arg1: javax.swing.Icon,
+        arg2: java.awt.Component,
+        arg3: java.lang.String | string,
+        arg4: number | java.lang.Integer
+      ): void
+      public addTab(
+        arg0: java.lang.String | string,
+        arg1: javax.swing.Icon,
+        arg2: java.awt.Component,
+        arg3: java.lang.String | string
+      ): void
       public addTab(arg0: java.lang.String | string, arg1: javax.swing.Icon, arg2: java.awt.Component): void
       public addTab(arg0: java.lang.String | string, arg1: java.awt.Component): void
       public add(arg0: java.awt.Component): java.awt.Component
@@ -79,8 +94,12 @@ declare namespace javax {
       public indexOfTabComponent(arg0: java.awt.Component): number
       public getUI(): javax.swing.plaf.ComponentUI
       static access$000(arg0: javax.swing.JTabbedPane): javax.accessibility.AccessibleContext
-      static access$100(arg0: javax.swing.JTabbedPane, arg1: java.lang.String | string, arg2: java.lang.Object | any, arg3: java.lang.Object | any): void
+      static access$100(
+        arg0: javax.swing.JTabbedPane,
+        arg1: java.lang.String | string,
+        arg2: java.lang.Object | any,
+        arg3: java.lang.Object | any
+      ): void
     }
-
   }
 }

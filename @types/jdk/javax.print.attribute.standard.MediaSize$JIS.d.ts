@@ -2,7 +2,6 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
         class MediaSize$JIS {
           public static readonly B0: javax.print.attribute.standard.MediaSize
           public static readonly B1: javax.print.attribute.standard.MediaSize
@@ -40,7 +39,6 @@ declare namespace javax {
           public static readonly YOU_6: javax.print.attribute.standard.MediaSize
           public static readonly YOU_7: javax.print.attribute.standard.MediaSize
         }
-
       }
     }
   }

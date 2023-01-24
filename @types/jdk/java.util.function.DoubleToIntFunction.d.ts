@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace function$ {
-
       interface DoubleToIntFunction$$lambda {
         (arg0: number | java.lang.Double): number | java.lang.Integer
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface DoubleToIntFunction {
         applyAsInt(arg0: number | java.lang.Double): number
       }
-
     }
   }
 }

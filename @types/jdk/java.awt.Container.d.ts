@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Container extends java.awt.Component {
       layoutMgr: java.awt.LayoutManager
       containerListener: java.awt.event.ContainerListener
@@ -44,8 +43,18 @@ declare namespace java {
       adjustDescendants(arg0: number | java.lang.Integer): void
       adjustDescendantsOnParent(arg0: number | java.lang.Integer): void
       countHierarchyMembers(): number
-      createHierarchyEvents(arg0: number | java.lang.Integer, arg1: java.awt.Component, arg2: java.awt.Container, arg3: number | java.lang.Long, arg4: boolean | java.lang.Boolean): number
-      createChildHierarchyEvents(arg0: number | java.lang.Integer, arg1: number | java.lang.Long, arg2: boolean | java.lang.Boolean): void
+      createHierarchyEvents(
+        arg0: number | java.lang.Integer,
+        arg1: java.awt.Component,
+        arg2: java.awt.Container,
+        arg3: number | java.lang.Long,
+        arg4: boolean | java.lang.Boolean
+      ): number
+      createChildHierarchyEvents(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Long,
+        arg2: boolean | java.lang.Boolean
+      ): void
       public getLayout(): java.awt.LayoutManager
       public setLayout(arg0: java.awt.LayoutManager): void
       public doLayout(): void
@@ -83,8 +92,16 @@ declare namespace java {
       protected processContainerEvent(arg0: java.awt.event.ContainerEvent): void
       dispatchEventImpl(arg0: java.awt.AWTEvent): void
       dispatchEventToSelf(arg0: java.awt.AWTEvent): void
-      getMouseEventTarget(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): java.awt.Component
-      getDropTargetEventTarget(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): java.awt.Component
+      getMouseEventTarget(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean
+      ): java.awt.Component
+      getDropTargetEventTarget(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean
+      ): java.awt.Component
       proxyEnableEvents(arg0: number | java.lang.Long): void
       public deliverEvent(arg0: java.awt.Event): void
       public getComponentAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.Component
@@ -93,8 +110,16 @@ declare namespace java {
       public getMousePosition(arg0: boolean | java.lang.Boolean): java.awt.Point
       isSameOrAncestorOf(arg0: java.awt.Component, arg1: boolean | java.lang.Boolean): boolean
       public findComponentAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.Component
-      findComponentAt(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): java.awt.Component
-      findComponentAtImpl(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): java.awt.Component
+      findComponentAt(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean
+      ): java.awt.Component
+      findComponentAtImpl(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: boolean | java.lang.Boolean
+      ): java.awt.Component
       public findComponentAt(arg0: java.awt.Point): java.awt.Component
       public addNotify(): void
       public removeNotify(): void
@@ -122,8 +147,13 @@ declare namespace java {
       postProcessKeyEvent(arg0: java.awt.event.KeyEvent): void
       postsOldMouseEvents(): boolean
       public applyComponentOrientation(arg0: java.awt.ComponentOrientation): void
-      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public addPropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public addPropertyChangeListener(
+        arg0: java.lang.String | string,
+        arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       getAccessibleAt(arg0: java.awt.Point): javax.accessibility.Accessible
       getAccessibleChildrenCount(): number
       getAccessibleChild(arg0: number | java.lang.Integer): javax.accessibility.Accessible
@@ -132,7 +162,11 @@ declare namespace java {
       getOpaqueShape(): sun.java2d.pipe.Region
       recursiveSubtractAndApplyShape(arg0: sun.java2d.pipe.Region): void
       recursiveSubtractAndApplyShape(arg0: sun.java2d.pipe.Region, arg1: number | java.lang.Integer): void
-      recursiveSubtractAndApplyShape(arg0: sun.java2d.pipe.Region, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      recursiveSubtractAndApplyShape(
+        arg0: sun.java2d.pipe.Region,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       recursiveApplyCurrentShape(): void
       recursiveApplyCurrentShape(arg0: number | java.lang.Integer): void
       recursiveApplyCurrentShape(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
@@ -143,6 +177,5 @@ declare namespace java {
       mixOnZOrderChanging(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
       mixOnValidating(): void
     }
-
   }
 }

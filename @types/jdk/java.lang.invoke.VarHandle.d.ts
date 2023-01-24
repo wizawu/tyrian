@@ -1,11 +1,14 @@
 declare namespace java {
   namespace lang {
     namespace invoke {
-
       abstract class VarHandle {
         readonly vform: java.lang.invoke.VarForm
         typesAndInvokers: java.lang.invoke.VarHandle$TypesAndInvokers
-        static readonly AIOOBE_SUPPLIER: java.util.function$.BiFunction<java.lang.String,java.util.List<java.lang.Integer>,java.lang.ArrayIndexOutOfBoundsException>
+        static readonly AIOOBE_SUPPLIER: java.util.function$.BiFunction<
+          java.lang.String,
+          java.util.List<java.lang.Integer>,
+          java.lang.ArrayIndexOutOfBoundsException
+        >
         static readonly $assertionsDisabled: boolean
         constructor(arg0: java.lang.invoke.VarForm)
         unsupported(): java.lang.RuntimeException
@@ -54,7 +57,6 @@ declare namespace java {
         public static loadLoadFence(): void
         public static storeStoreFence(): void
       }
-
     }
   }
 }

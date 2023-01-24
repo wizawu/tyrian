@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
     namespace transform {
       namespace sax {
-
         class SAXResult implements javax.xml.transform.Result {
           public static readonly FEATURE: java.lang.String
           public constructor()
@@ -14,7 +13,6 @@ declare namespace javax {
           public setSystemId(arg0: java.lang.String | string): void
           public getSystemId(): java.lang.String
         }
-
       }
     }
   }

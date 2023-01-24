@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace net {
     namespace ssl {
-
       interface SSLSessionContext {
         getSession(arg0: number[] | java.lang.Byte[]): javax.net.ssl.SSLSession
         getIds(): java.util.Enumeration<byte[]>
@@ -10,7 +9,6 @@ declare namespace javax {
         setSessionCacheSize(arg0: number | java.lang.Integer): void
         getSessionCacheSize(): number
       }
-
     }
   }
 }

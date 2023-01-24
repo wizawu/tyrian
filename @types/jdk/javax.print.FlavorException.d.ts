@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace print {
-
     interface FlavorException$$lambda {
       (): javax.print.DocFlavor[]
     }
@@ -8,6 +7,5 @@ declare namespace javax {
     interface FlavorException {
       getUnsupportedFlavors(): javax.print.DocFlavor[]
     }
-
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicComboPopup extends javax.swing.JPopupMenu implements javax.swing.plaf.basic.ComboPopup {
           static readonly EmptyListModel: javax.swing.ListModel<java.lang.Object>
           protected comboBox: javax.swing.JComboBox<java.lang.Object>
@@ -66,10 +65,17 @@ declare namespace javax {
           protected togglePopup(): void
           protected convertMouseEvent(arg0: java.awt.event.MouseEvent): java.awt.event.MouseEvent
           protected getPopupHeightForRowCount(arg0: number | java.lang.Integer): number
-          protected computePopupBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.awt.Rectangle
-          protected updateListBoxSelectionForEvent(arg0: java.awt.event.MouseEvent, arg1: boolean | java.lang.Boolean): void
+          protected computePopupBounds(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer
+          ): java.awt.Rectangle
+          protected updateListBoxSelectionForEvent(
+            arg0: java.awt.event.MouseEvent,
+            arg1: boolean | java.lang.Boolean
+          ): void
         }
-
       }
     }
   }

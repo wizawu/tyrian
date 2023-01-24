@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace locks {
-
         class LockSupport {
           public static unpark(arg0: java.lang.Thread): void
           public static park(arg0: java.lang.Object | any): void
@@ -15,7 +14,6 @@ declare namespace java {
           static nextSecondarySeed(): number
           static getThreadId(arg0: java.lang.Thread): number
         }
-
       }
     }
   }

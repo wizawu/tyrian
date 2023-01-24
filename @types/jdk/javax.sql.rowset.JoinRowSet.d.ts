@@ -1,13 +1,12 @@
 declare namespace javax {
   namespace sql {
     namespace rowset {
-
       interface JoinRowSet extends javax.sql.rowset.WebRowSet {
-        public static readonly CROSS_JOIN: int
-        public static readonly INNER_JOIN: int
-        public static readonly LEFT_OUTER_JOIN: int
-        public static readonly RIGHT_OUTER_JOIN: int
-        public static readonly FULL_JOIN: int
+        readonly CROSS_JOIN: int
+        readonly INNER_JOIN: int
+        readonly LEFT_OUTER_JOIN: int
+        readonly RIGHT_OUTER_JOIN: int
+        readonly FULL_JOIN: int
         addRowSet(arg0: javax.sql.rowset.Joinable): void
         addRowSet(arg0: javax.sql.RowSet, arg1: number | java.lang.Integer): void
         addRowSet(arg0: javax.sql.RowSet, arg1: java.lang.String | string): void
@@ -25,7 +24,6 @@ declare namespace javax {
         getWhereClause(): java.lang.String
         getJoinType(): number
       }
-
     }
   }
 }

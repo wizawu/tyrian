@@ -1,8 +1,10 @@
 declare namespace javax {
   namespace management {
     namespace monitor {
-
-      class StringMonitor extends javax.management.monitor.Monitor implements javax.management.monitor.StringMonitorMBean {
+      class StringMonitor
+        extends javax.management.monitor.Monitor
+        implements javax.management.monitor.StringMonitorMBean
+      {
         public constructor()
         public start(): void
         public stop(): void
@@ -18,12 +20,19 @@ declare namespace javax {
         public setNotifyDiffer(arg0: boolean | java.lang.Boolean): void
         public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
         createObservedObject(arg0: javax.management.ObjectName): javax.management.monitor.Monitor$ObservedObject
-        isComparableTypeValid(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>): boolean
+        isComparableTypeValid(
+          arg0: javax.management.ObjectName,
+          arg1: java.lang.String | string,
+          arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>
+        ): boolean
         onErrorNotification(arg0: javax.management.monitor.MonitorNotification): void
-        buildAlarmNotification(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>): javax.management.monitor.MonitorNotification
+        buildAlarmNotification(
+          arg0: javax.management.ObjectName,
+          arg1: java.lang.String | string,
+          arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>
+        ): javax.management.monitor.MonitorNotification
         public getDerivedGauge(arg0: javax.management.ObjectName): java.lang.Object
       }
-
     }
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalLookAndFeel extends javax.swing.plaf.basic.BasicLookAndFeel {
           static queue: java.lang.ref.ReferenceQueue<javax.swing.LookAndFeel>
           public constructor()
@@ -70,7 +69,6 @@ declare namespace javax {
           public getLayoutStyle(): javax.swing.LayoutStyle
           static flushUnreferenced(): void
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JSlider extends javax.swing.JComponent implements javax.swing.SwingConstants, javax.accessibility.Accessible {
       protected sliderModel: javax.swing.BoundedRangeModel
       protected majorTickSpacing: int
@@ -13,8 +12,17 @@ declare namespace javax {
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
       public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      )
       public constructor(arg0: javax.swing.BoundedRangeModel)
       public getUI(): javax.swing.plaf.SliderUI
       public setUI(arg0: javax.swing.plaf.SliderUI): void
@@ -22,7 +30,9 @@ declare namespace javax {
       public getUIClassID(): java.lang.String
       protected createChangeListener(): javax.swing.event.ChangeListener
       public addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
-      public removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
+      public removeChangeListener(
+        arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda
+      ): void
       public getChangeListeners(): javax.swing.event.ChangeListener[]
       protected fireStateChanged(): void
       public getModel(): javax.swing.BoundedRangeModel
@@ -40,12 +50,24 @@ declare namespace javax {
       public getOrientation(): number
       public setOrientation(arg0: number | java.lang.Integer): void
       public setFont(arg0: java.awt.Font): void
-      public imageUpdate(arg0: java.awt.Image, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer): boolean
+      public imageUpdate(
+        arg0: java.awt.Image,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      ): boolean
       public getLabelTable(): java.util.Dictionary
       public setLabelTable(arg0: java.util.Dictionary): void
       protected updateLabelUIs(): void
-      public createStandardLabels(arg0: number | java.lang.Integer): java.util.Hashtable<java.lang.Integer,javax.swing.JComponent>
-      public createStandardLabels(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.Hashtable<java.lang.Integer,javax.swing.JComponent>
+      public createStandardLabels(
+        arg0: number | java.lang.Integer
+      ): java.util.Hashtable<java.lang.Integer, javax.swing.JComponent>
+      public createStandardLabels(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): java.util.Hashtable<java.lang.Integer, javax.swing.JComponent>
       public getInverted(): boolean
       public setInverted(arg0: boolean | java.lang.Boolean): void
       public getMajorTickSpacing(): number
@@ -66,6 +88,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

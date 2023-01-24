@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace naming {
     namespace spi {
-
       class ResolveResult implements java.io.Serializable {
         protected resolvedObj: java.lang.Object
         protected remainingName: javax.naming.Name
@@ -15,7 +14,6 @@ declare namespace javax {
         public appendRemainingComponent(arg0: java.lang.String | string): void
         public setResolvedObj(arg0: java.lang.Object | any): void
       }
-
     }
   }
 }

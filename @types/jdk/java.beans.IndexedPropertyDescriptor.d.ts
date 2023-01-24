@@ -1,11 +1,26 @@
 declare namespace java {
   namespace beans {
-
     class IndexedPropertyDescriptor extends java.beans.PropertyDescriptor {
       public constructor(arg0: java.lang.String | string, arg1: java.lang.Class<unknown>)
-      public constructor(arg0: java.lang.String | string, arg1: java.lang.Class<unknown>, arg2: java.lang.String | string, arg3: java.lang.String | string, arg4: java.lang.String | string, arg5: java.lang.String | string)
-      public constructor(arg0: java.lang.String | string, arg1: java.lang.reflect.Method, arg2: java.lang.reflect.Method, arg3: java.lang.reflect.Method, arg4: java.lang.reflect.Method)
-      constructor(arg0: java.util.Map$Entry<java.lang.String,com.sun.beans.introspect.PropertyInfo>, arg1: boolean | java.lang.Boolean)
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Class<unknown>,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string,
+        arg4: java.lang.String | string,
+        arg5: java.lang.String | string
+      )
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: java.lang.reflect.Method,
+        arg2: java.lang.reflect.Method,
+        arg3: java.lang.reflect.Method,
+        arg4: java.lang.reflect.Method
+      )
+      constructor(
+        arg0: java.util.Map$Entry<java.lang.String, com.sun.beans.introspect.PropertyInfo>,
+        arg1: boolean | java.lang.Boolean
+      )
       public getIndexedReadMethod(): java.lang.reflect.Method
       public setIndexedReadMethod(arg0: java.lang.reflect.Method): void
       public getIndexedWriteMethod(): java.lang.reflect.Method
@@ -18,6 +33,5 @@ declare namespace java {
       public hashCode(): number
       appendTo(arg0: java.lang.StringBuilder): void
     }
-
   }
 }

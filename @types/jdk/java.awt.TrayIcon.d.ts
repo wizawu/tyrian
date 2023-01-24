@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class TrayIcon {
       mouseListener: java.awt.event.MouseListener
       mouseMotionListener: java.awt.event.MouseMotionListener
@@ -28,7 +27,11 @@ declare namespace java {
       public addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
       public removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
       public getActionListeners(): java.awt.event.ActionListener[]
-      public displayMessage(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.awt.TrayIcon$MessageType): void
+      public displayMessage(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string,
+        arg2: java.awt.TrayIcon$MessageType
+      ): void
       public getSize(): java.awt.Dimension
       addNotify(): void
       removeNotify(): void
@@ -40,6 +43,5 @@ declare namespace java {
       processMouseMotionEvent(arg0: java.awt.event.MouseEvent): void
       processActionEvent(arg0: java.awt.event.ActionEvent): void
     }
-
   }
 }

@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace security {
       namespace jgss {
-
         class InquireType extends java.lang.Enum<com.sun.security.jgss.InquireType> {
           public static readonly KRB5_GET_SESSION_KEY: com.sun.security.jgss.InquireType
           public static readonly KRB5_GET_SESSION_KEY_EX: com.sun.security.jgss.InquireType
@@ -13,7 +12,6 @@ declare namespace com {
           public static values(): com.sun.security.jgss.InquireType[]
           public static valueOf(arg0: java.lang.String | string): com.sun.security.jgss.InquireType
         }
-
       }
     }
   }

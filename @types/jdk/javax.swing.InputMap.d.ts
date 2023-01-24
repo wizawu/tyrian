@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class InputMap implements java.io.Serializable {
       public constructor()
       public setParent(arg0: javax.swing.InputMap): void
@@ -13,6 +12,5 @@ declare namespace javax {
       public size(): number
       public allKeys(): javax.swing.KeyStroke[]
     }
-
   }
 }

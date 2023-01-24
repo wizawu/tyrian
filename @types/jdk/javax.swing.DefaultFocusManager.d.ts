@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class DefaultFocusManager extends javax.swing.FocusManager {
       readonly gluePolicy: java.awt.FocusTraversalPolicy
       public constructor()
@@ -10,6 +9,5 @@ declare namespace javax {
       public getLastComponent(arg0: java.awt.Container): java.awt.Component
       public compareTabOrder(arg0: java.awt.Component, arg1: java.awt.Component): boolean
     }
-
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace security {
     namespace auth {
       namespace kerberos {
-
         class KerberosPrincipal implements java.security.Principal, java.io.Serializable {
           public static readonly KRB_NT_UNKNOWN: int
           public static readonly KRB_NT_PRINCIPAL: int
@@ -20,7 +19,6 @@ declare namespace javax {
           public getNameType(): number
           public toString(): java.lang.String
         }
-
       }
     }
   }

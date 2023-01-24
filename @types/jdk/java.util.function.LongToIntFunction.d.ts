@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace function$ {
-
       interface LongToIntFunction$$lambda {
         (arg0: number | java.lang.Long): number | java.lang.Integer
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface LongToIntFunction {
         applyAsInt(arg0: number | java.lang.Long): number
       }
-
     }
   }
 }

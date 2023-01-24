@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace logging {
-
       class StreamHandler extends java.util.logging.Handler {
         public constructor()
         public constructor(arg0: java.io.OutputStream, arg1: java.util.logging.Formatter)
@@ -14,7 +13,6 @@ declare namespace java {
         public close(): void
         setOutputStreamPrivileged(arg0: java.io.OutputStream): void
       }
-
     }
   }
 }

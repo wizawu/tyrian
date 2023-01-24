@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicColorChooserUI extends javax.swing.plaf.ColorChooserUI {
           protected chooser: javax.swing.JColorChooser
           tabbedPane: javax.swing.JTabbedPane
@@ -27,7 +26,6 @@ declare namespace javax {
           protected createPropertyChangeListener(): java.beans.PropertyChangeListener
           protected uninstallListeners(): void
         }
-
       }
     }
   }

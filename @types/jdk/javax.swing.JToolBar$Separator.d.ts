@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JToolBar$Separator extends javax.swing.JSeparator {
       public constructor()
       public constructor(arg0: java.awt.Dimension)
@@ -11,6 +10,5 @@ declare namespace javax {
       public getMaximumSize(): java.awt.Dimension
       public getPreferredSize(): java.awt.Dimension
     }
-
   }
 }

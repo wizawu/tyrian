@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
       abstract class CertPath implements java.io.Serializable {
         protected constructor(arg0: java.lang.String | string)
         public getType(): java.lang.String
@@ -14,7 +13,6 @@ declare namespace java {
         public abstract getCertificates(): java.util.List<java.security.cert.Certificate>
         protected writeReplace(): java.lang.Object
       }
-
     }
   }
 }

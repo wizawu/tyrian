@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class SpinnerListModel extends javax.swing.AbstractSpinnerModel implements java.io.Serializable {
       public constructor(arg0: java.util.List<unknown>)
       public constructor(arg0: java.lang.Object[] | any[])
@@ -13,6 +12,5 @@ declare namespace javax {
       public getPreviousValue(): java.lang.Object
       findNextMatch(arg0: java.lang.String | string): java.lang.Object
     }
-
   }
 }

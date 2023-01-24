@@ -3,7 +3,6 @@ declare namespace com {
     namespace java {
       namespace accessibility {
         namespace util {
-
           class EventID {
             public static readonly ACTION: int
             public static readonly ADJUSTMENT: int
@@ -36,7 +35,6 @@ declare namespace com {
             public static readonly INTERNALFRAME: int
             public constructor()
           }
-
         }
       }
     }

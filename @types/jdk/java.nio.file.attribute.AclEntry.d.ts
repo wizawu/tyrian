@@ -2,7 +2,6 @@ declare namespace java {
   namespace nio {
     namespace file {
       namespace attribute {
-
         class AclEntry {
           public static newBuilder(): java.nio.file.attribute.AclEntry$Builder
           public static newBuilder(arg0: java.nio.file.attribute.AclEntry): java.nio.file.attribute.AclEntry$Builder
@@ -14,7 +13,6 @@ declare namespace java {
           public hashCode(): number
           public toString(): java.lang.String
         }
-
       }
     }
   }

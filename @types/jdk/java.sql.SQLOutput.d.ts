@@ -1,6 +1,5 @@
 declare namespace java {
   namespace sql {
-
     interface SQLOutput {
       writeString(arg0: java.lang.String | string): void
       writeBoolean(arg0: boolean | java.lang.Boolean): void
@@ -31,6 +30,5 @@ declare namespace java {
       writeSQLXML(arg0: java.sql.SQLXML): void
       writeObject(arg0: java.lang.Object | any, arg1: java.sql.SQLType): void
     }
-
   }
 }

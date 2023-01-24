@@ -1,12 +1,21 @@
 declare namespace javax {
   namespace crypto {
-
     class ExemptionMechanism {
-      protected constructor(arg0: javax.crypto.ExemptionMechanismSpi, arg1: java.security.Provider, arg2: java.lang.String | string)
+      protected constructor(
+        arg0: javax.crypto.ExemptionMechanismSpi,
+        arg1: java.security.Provider,
+        arg2: java.lang.String | string
+      )
       public getName(): java.lang.String
       public static getInstance(arg0: java.lang.String | string): javax.crypto.ExemptionMechanism
-      public static getInstance(arg0: java.lang.String | string, arg1: java.lang.String | string): javax.crypto.ExemptionMechanism
-      public static getInstance(arg0: java.lang.String | string, arg1: java.security.Provider): javax.crypto.ExemptionMechanism
+      public static getInstance(
+        arg0: java.lang.String | string,
+        arg1: java.lang.String | string
+      ): javax.crypto.ExemptionMechanism
+      public static getInstance(
+        arg0: java.lang.String | string,
+        arg1: java.security.Provider
+      ): javax.crypto.ExemptionMechanism
       public getProvider(): java.security.Provider
       public isCryptoAllowed(arg0: java.security.Key): boolean
       public getOutputSize(arg0: number | java.lang.Integer): number
@@ -17,6 +26,5 @@ declare namespace javax {
       public genExemptionBlob(arg0: number[] | java.lang.Byte[]): number
       public genExemptionBlob(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): number
     }
-
   }
 }

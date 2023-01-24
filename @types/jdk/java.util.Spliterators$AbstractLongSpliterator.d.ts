@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     abstract class Spliterators$AbstractLongSpliterator implements java.util.Spliterator$OfLong {
       static readonly MAX_BATCH: int
       static readonly BATCH_UNIT: int
@@ -11,6 +10,5 @@ declare namespace java {
       public trySplit(): java.util.Spliterator$OfPrimitive
       public trySplit(): java.util.Spliterator
     }
-
   }
 }

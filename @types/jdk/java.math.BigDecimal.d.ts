@@ -1,6 +1,5 @@
 declare namespace java {
   namespace math {
-
     class BigDecimal extends java.lang.Number implements java.lang.Comparable<java.math.BigDecimal> {
       static readonly INFLATED: long
       public static readonly ZERO: java.math.BigDecimal
@@ -15,9 +14,23 @@ declare namespace java {
       public static readonly ROUND_HALF_EVEN: int
       public static readonly ROUND_UNNECESSARY: int
       static readonly $assertionsDisabled: boolean
-      constructor(arg0: java.math.BigInteger, arg1: number | java.lang.Long, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
-      public constructor(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-      public constructor(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.math.MathContext)
+      constructor(
+        arg0: java.math.BigInteger,
+        arg1: number | java.lang.Long,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: java.math.MathContext
+      )
       public constructor(arg0: string[] | java.lang.Character[])
       public constructor(arg0: string[] | java.lang.Character[], arg1: java.math.MathContext)
       public constructor(arg0: java.lang.String | string)
@@ -34,8 +47,16 @@ declare namespace java {
       public constructor(arg0: number | java.lang.Long, arg1: java.math.MathContext)
       public static valueOf(arg0: number | java.lang.Long, arg1: number | java.lang.Integer): java.math.BigDecimal
       public static valueOf(arg0: number | java.lang.Long): java.math.BigDecimal
-      static valueOf(arg0: number | java.lang.Long, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.math.BigDecimal
-      static valueOf(arg0: java.math.BigInteger, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.math.BigDecimal
+      static valueOf(
+        arg0: number | java.lang.Long,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.math.BigDecimal
+      static valueOf(
+        arg0: java.math.BigInteger,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.math.BigDecimal
       static zeroValueOf(arg0: number | java.lang.Integer): java.math.BigDecimal
       public static valueOf(arg0: number | java.lang.Double): java.math.BigDecimal
       public add(arg0: java.math.BigDecimal): java.math.BigDecimal
@@ -44,8 +65,16 @@ declare namespace java {
       public subtract(arg0: java.math.BigDecimal, arg1: java.math.MathContext): java.math.BigDecimal
       public multiply(arg0: java.math.BigDecimal): java.math.BigDecimal
       public multiply(arg0: java.math.BigDecimal, arg1: java.math.MathContext): java.math.BigDecimal
-      public divide(arg0: java.math.BigDecimal, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.math.BigDecimal
-      public divide(arg0: java.math.BigDecimal, arg1: number | java.lang.Integer, arg2: java.math.RoundingMode): java.math.BigDecimal
+      public divide(
+        arg0: java.math.BigDecimal,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.math.BigDecimal
+      public divide(
+        arg0: java.math.BigDecimal,
+        arg1: number | java.lang.Integer,
+        arg2: java.math.RoundingMode
+      ): java.math.BigDecimal
       public divide(arg0: java.math.BigDecimal, arg1: number | java.lang.Integer): java.math.BigDecimal
       public divide(arg0: java.math.BigDecimal, arg1: java.math.RoundingMode): java.math.BigDecimal
       public divide(arg0: java.math.BigDecimal): java.math.BigDecimal
@@ -97,9 +126,12 @@ declare namespace java {
       public doubleValue(): number
       public ulp(): java.math.BigDecimal
       static longDigitLength(arg0: number | java.lang.Long): number
-      static scaledTenPow(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.math.BigDecimal
+      static scaledTenPow(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.math.BigDecimal
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace text {
       namespace html {
-
         class StyleSheet extends javax.swing.text.StyleContext {
           static readonly noBorder: javax.swing.border.Border
           static readonly DEFAULT_FONT_SIZE: int
@@ -21,15 +20,41 @@ declare namespace javax {
           public importStyleSheet(arg0: java.net.URL): void
           public setBase(arg0: java.net.URL): void
           public getBase(): java.net.URL
-          public addCSSAttribute(arg0: javax.swing.text.MutableAttributeSet, arg1: javax.swing.text.html.CSS$Attribute, arg2: java.lang.String | string): void
-          public addCSSAttributeFromHTML(arg0: javax.swing.text.MutableAttributeSet, arg1: javax.swing.text.html.CSS$Attribute, arg2: java.lang.String | string): boolean
+          public addCSSAttribute(
+            arg0: javax.swing.text.MutableAttributeSet,
+            arg1: javax.swing.text.html.CSS$Attribute,
+            arg2: java.lang.String | string
+          ): void
+          public addCSSAttributeFromHTML(
+            arg0: javax.swing.text.MutableAttributeSet,
+            arg1: javax.swing.text.html.CSS$Attribute,
+            arg2: java.lang.String | string
+          ): boolean
           public translateHTMLToCSS(arg0: javax.swing.text.AttributeSet): javax.swing.text.AttributeSet
-          public addAttribute(arg0: javax.swing.text.AttributeSet, arg1: java.lang.Object | any, arg2: java.lang.Object | any): javax.swing.text.AttributeSet
-          public addAttributes(arg0: javax.swing.text.AttributeSet, arg1: javax.swing.text.AttributeSet): javax.swing.text.AttributeSet
-          public removeAttribute(arg0: javax.swing.text.AttributeSet, arg1: java.lang.Object | any): javax.swing.text.AttributeSet
-          public removeAttributes(arg0: javax.swing.text.AttributeSet, arg1: java.util.Enumeration<unknown>): javax.swing.text.AttributeSet
-          public removeAttributes(arg0: javax.swing.text.AttributeSet, arg1: javax.swing.text.AttributeSet): javax.swing.text.AttributeSet
-          protected createSmallAttributeSet(arg0: javax.swing.text.AttributeSet): javax.swing.text.StyleContext$SmallAttributeSet
+          public addAttribute(
+            arg0: javax.swing.text.AttributeSet,
+            arg1: java.lang.Object | any,
+            arg2: java.lang.Object | any
+          ): javax.swing.text.AttributeSet
+          public addAttributes(
+            arg0: javax.swing.text.AttributeSet,
+            arg1: javax.swing.text.AttributeSet
+          ): javax.swing.text.AttributeSet
+          public removeAttribute(
+            arg0: javax.swing.text.AttributeSet,
+            arg1: java.lang.Object | any
+          ): javax.swing.text.AttributeSet
+          public removeAttributes(
+            arg0: javax.swing.text.AttributeSet,
+            arg1: java.util.Enumeration<unknown>
+          ): javax.swing.text.AttributeSet
+          public removeAttributes(
+            arg0: javax.swing.text.AttributeSet,
+            arg1: javax.swing.text.AttributeSet
+          ): javax.swing.text.AttributeSet
+          protected createSmallAttributeSet(
+            arg0: javax.swing.text.AttributeSet
+          ): javax.swing.text.StyleContext$SmallAttributeSet
           protected createLargeAttributeSet(arg0: javax.swing.text.AttributeSet): javax.swing.text.MutableAttributeSet
           convertAttributeSet(arg0: javax.swing.text.AttributeSet): javax.swing.text.AttributeSet
           public getFont(arg0: javax.swing.text.AttributeSet): java.awt.Font
@@ -44,7 +69,11 @@ declare namespace javax {
           public getPointSize(arg0: java.lang.String | string): number
           public stringToColor(arg0: java.lang.String | string): java.awt.Color
           getBackgroundImage(arg0: javax.swing.text.AttributeSet): javax.swing.ImageIcon
-          addRule(arg0: java.lang.String[] | string[], arg1: javax.swing.text.AttributeSet, arg2: boolean | java.lang.Boolean): void
+          addRule(
+            arg0: java.lang.String[] | string[],
+            arg1: javax.swing.text.AttributeSet,
+            arg2: boolean | java.lang.Boolean
+          ): void
           getSimpleSelectors(arg0: java.lang.String | string): java.lang.String[]
           cleanSelectorString(arg0: java.lang.String | string): java.lang.String
           static getSpecificity(arg0: java.lang.String | string): number
@@ -52,7 +81,6 @@ declare namespace javax {
           getSizeMap(): number[]
           isW3CLengthUnits(): boolean
         }
-
       }
     }
   }

@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace source {
       namespace tree {
-
         class Tree$Kind extends java.lang.Enum<com.sun.source.tree.Tree$Kind> {
           public static readonly ANNOTATED_TYPE: com.sun.source.tree.Tree$Kind
           public static readonly ANNOTATION: com.sun.source.tree.Tree$Kind
@@ -116,7 +115,6 @@ declare namespace com {
           public static valueOf(arg0: java.lang.String | string): com.sun.source.tree.Tree$Kind
           public asInterface(): java.lang.Class<com.sun.source.tree.Tree>
         }
-
       }
     }
   }

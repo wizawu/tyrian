@@ -2,9 +2,8 @@ declare namespace javax {
   namespace sql {
     namespace rowset {
       namespace serial {
-
         class SQLOutputImpl implements java.sql.SQLOutput {
-          public constructor(arg0: java.util.Vector<unknown>, arg1: java.util.Map<java.lang.String,unknown>)
+          public constructor(arg0: java.util.Vector<unknown>, arg1: java.util.Map<java.lang.String, unknown>)
           public writeString(arg0: java.lang.String | string): void
           public writeBoolean(arg0: boolean | java.lang.Boolean): void
           public writeByte(arg0: number | java.lang.Byte): void
@@ -33,7 +32,6 @@ declare namespace javax {
           public writeRowId(arg0: java.sql.RowId): void
           public writeSQLXML(arg0: java.sql.SQLXML): void
         }
-
       }
     }
   }

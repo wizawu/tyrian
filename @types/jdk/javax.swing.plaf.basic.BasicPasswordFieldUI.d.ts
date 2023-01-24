@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicPasswordFieldUI extends javax.swing.plaf.basic.BasicTextFieldUI {
           public constructor()
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
@@ -11,7 +10,6 @@ declare namespace javax {
           public create(arg0: javax.swing.text.Element): javax.swing.text.View
           createActionMap(): javax.swing.ActionMap
         }
-
       }
     }
   }

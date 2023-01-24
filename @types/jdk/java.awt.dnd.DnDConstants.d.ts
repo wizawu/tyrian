@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace dnd {
-
       class DnDConstants {
         public static readonly ACTION_NONE: int
         public static readonly ACTION_COPY: int
@@ -10,7 +9,6 @@ declare namespace java {
         public static readonly ACTION_LINK: int
         public static readonly ACTION_REFERENCE: int
       }
-
     }
   }
 }

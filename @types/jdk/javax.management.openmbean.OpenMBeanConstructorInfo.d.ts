@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace openmbean {
-
       interface OpenMBeanConstructorInfo {
         getDescription(): java.lang.String
         getName(): java.lang.String
@@ -10,7 +9,6 @@ declare namespace javax {
         hashCode(): number
         toString(): java.lang.String
       }
-
     }
   }
 }

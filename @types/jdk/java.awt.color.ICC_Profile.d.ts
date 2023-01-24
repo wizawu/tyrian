@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace color {
-
       class ICC_Profile implements java.io.Serializable {
         public static readonly CLASS_INPUT: int
         public static readonly CLASS_DISPLAY: int
@@ -130,8 +129,6 @@ declare namespace java {
         public static getInstance(arg0: java.lang.String | string): java.awt.color.ICC_Profile
         public static getInstance(arg0: java.io.InputStream): java.awt.color.ICC_Profile
         static getProfileDataFromStream(arg0: java.io.InputStream): number[]
-        static getDeferredInstance(arg0: sun.java2d.cmm.ProfileDeferralInfo): java.awt.color.ICC_Profile
-        activateDeferredProfile(): void
         public getMajorVersion(): number
         public getMinorVersion(): number
         public getProfileClass(): number
@@ -154,12 +151,19 @@ declare namespace java {
         getTRC(arg0: number | java.lang.Integer): number[]
         static iccCStoJCS(arg0: number | java.lang.Integer): number
         static intFromBigEndian(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): number
-        static intToBigEndian(arg0: number | java.lang.Integer, arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer): void
+        static intToBigEndian(
+          arg0: number | java.lang.Integer,
+          arg1: number[] | java.lang.Byte[],
+          arg2: number | java.lang.Integer
+        ): void
         static shortFromBigEndian(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer): number
-        static shortToBigEndian(arg0: number | java.lang.Short, arg1: number[] | java.lang.Byte[], arg2: number | java.lang.Integer): void
+        static shortToBigEndian(
+          arg0: number | java.lang.Short,
+          arg1: number[] | java.lang.Byte[],
+          arg2: number | java.lang.Integer
+        ): void
         protected readResolve(): java.lang.Object
       }
-
     }
   }
 }

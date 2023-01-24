@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace openmbean {
-
       interface CompositeData {
         getCompositeType(): javax.management.openmbean.CompositeType
         get(arg0: java.lang.String | string): java.lang.Object
@@ -13,7 +12,6 @@ declare namespace javax {
         hashCode(): number
         toString(): java.lang.String
       }
-
     }
   }
 }

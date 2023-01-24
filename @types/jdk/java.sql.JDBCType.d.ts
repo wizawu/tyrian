@@ -1,6 +1,5 @@
 declare namespace java {
   namespace sql {
-
     class JDBCType extends java.lang.Enum<java.sql.JDBCType> implements java.sql.SQLType {
       public static readonly BIT: java.sql.JDBCType
       public static readonly TINYINT: java.sql.JDBCType
@@ -48,6 +47,5 @@ declare namespace java {
       public getVendorTypeNumber(): number
       public static valueOf(arg0: number | java.lang.Integer): java.sql.JDBCType
     }
-
   }
 }

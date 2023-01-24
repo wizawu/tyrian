@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
     namespace image {
       namespace renderable {
-
         class RenderContext implements java.lang.Cloneable {
           hints: java.awt.RenderingHints
           usr2dev: java.awt.geom.AffineTransform
@@ -23,7 +22,6 @@ declare namespace java {
           public getAreaOfInterest(): java.awt.Shape
           public clone(): java.lang.Object
         }
-
       }
     }
   }

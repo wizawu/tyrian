@@ -2,8 +2,13 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
-        class Finishings extends javax.print.attribute.EnumSyntax implements javax.print.attribute.DocAttribute, javax.print.attribute.PrintRequestAttribute, javax.print.attribute.PrintJobAttribute {
+        class Finishings
+          extends javax.print.attribute.EnumSyntax
+          implements
+            javax.print.attribute.DocAttribute,
+            javax.print.attribute.PrintRequestAttribute,
+            javax.print.attribute.PrintJobAttribute
+        {
           public static readonly NONE: javax.print.attribute.standard.Finishings
           public static readonly STAPLE: javax.print.attribute.standard.Finishings
           public static readonly COVER: javax.print.attribute.standard.Finishings
@@ -29,7 +34,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

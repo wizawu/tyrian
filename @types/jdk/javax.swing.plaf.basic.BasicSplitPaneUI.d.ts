@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicSplitPaneUI extends javax.swing.plaf.SplitPaneUI {
           protected static readonly NON_CONTINUOUS_DIVIDER: java.lang.String
           protected static KEYBOARD_DIVIDER_MOVE_OFFSET: int
@@ -80,7 +79,6 @@ declare namespace javax {
           protected finishDraggingTo(arg0: number | java.lang.Integer): void
           protected getDividerBorderSize(): number
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace smartcardio {
-
     abstract class CardTerminal {
       protected constructor()
       public abstract getName(): java.lang.String
@@ -9,6 +8,5 @@ declare namespace javax {
       public abstract waitForCardPresent(arg0: number | java.lang.Long): boolean
       public abstract waitForCardAbsent(arg0: number | java.lang.Long): boolean
     }
-
   }
 }

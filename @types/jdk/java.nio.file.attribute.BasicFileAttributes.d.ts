@@ -2,7 +2,6 @@ declare namespace java {
   namespace nio {
     namespace file {
       namespace attribute {
-
         interface BasicFileAttributes {
           lastModifiedTime(): java.nio.file.attribute.FileTime
           lastAccessTime(): java.nio.file.attribute.FileTime
@@ -14,7 +13,6 @@ declare namespace java {
           size(): number
           fileKey(): java.lang.Object
         }
-
       }
     }
   }

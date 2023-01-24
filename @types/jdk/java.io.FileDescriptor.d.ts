@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     class FileDescriptor {
       public static readonly in: java.io.FileDescriptor
       public static readonly out: java.io.FileDescriptor
@@ -16,6 +15,5 @@ declare namespace java {
       attach(arg0: java.io.Closeable): void
       closeAll(arg0: java.io.Closeable): void
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace spec {
-
       interface ECField$$lambda {
         (): number | java.lang.Integer
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface ECField {
         getFieldSize(): number
       }
-
     }
   }
 }

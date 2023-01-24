@@ -1,9 +1,12 @@
 declare namespace java {
   namespace sql {
-
     interface CallableStatement extends java.sql.PreparedStatement {
       registerOutParameter(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): void
-      registerOutParameter(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      registerOutParameter(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       wasNull(): boolean
       getString(arg0: number | java.lang.Integer): java.lang.String
       getBoolean(arg0: number | java.lang.Integer): boolean
@@ -20,7 +23,10 @@ declare namespace java {
       getTimestamp(arg0: number | java.lang.Integer): java.sql.Timestamp
       getObject(arg0: number | java.lang.Integer): java.lang.Object
       getBigDecimal(arg0: number | java.lang.Integer): java.math.BigDecimal
-      getObject(arg0: number | java.lang.Integer, arg1: java.util.Map<java.lang.String,java.lang.Class<unknown>>): java.lang.Object
+      getObject(
+        arg0: number | java.lang.Integer,
+        arg1: java.util.Map<java.lang.String, java.lang.Class<unknown>>
+      ): java.lang.Object
       getRef(arg0: number | java.lang.Integer): java.sql.Ref
       getBlob(arg0: number | java.lang.Integer): java.sql.Blob
       getClob(arg0: number | java.lang.Integer): java.sql.Clob
@@ -28,10 +34,22 @@ declare namespace java {
       getDate(arg0: number | java.lang.Integer, arg1: java.util.Calendar): java.sql.Date
       getTime(arg0: number | java.lang.Integer, arg1: java.util.Calendar): java.sql.Time
       getTimestamp(arg0: number | java.lang.Integer, arg1: java.util.Calendar): java.sql.Timestamp
-      registerOutParameter(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.lang.String | string): void
+      registerOutParameter(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: java.lang.String | string
+      ): void
       registerOutParameter(arg0: java.lang.String | string, arg1: number | java.lang.Integer): void
-      registerOutParameter(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-      registerOutParameter(arg0: java.lang.String | string, arg1: number | java.lang.Integer, arg2: java.lang.String | string): void
+      registerOutParameter(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
+      registerOutParameter(
+        arg0: java.lang.String | string,
+        arg1: number | java.lang.Integer,
+        arg2: java.lang.String | string
+      ): void
       getURL(arg0: number | java.lang.Integer): java.net.URL
       setURL(arg0: java.lang.String | string, arg1: java.net.URL): void
       setNull(arg0: java.lang.String | string, arg1: number | java.lang.Integer): void
@@ -49,8 +67,17 @@ declare namespace java {
       setTime(arg0: java.lang.String | string, arg1: java.sql.Time): void
       setTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
       setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      setBinaryStream(
+        arg0: java.lang.String | string,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
+      setObject(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
       setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: number | java.lang.Integer): void
@@ -72,7 +99,10 @@ declare namespace java {
       getTimestamp(arg0: java.lang.String | string): java.sql.Timestamp
       getObject(arg0: java.lang.String | string): java.lang.Object
       getBigDecimal(arg0: java.lang.String | string): java.math.BigDecimal
-      getObject(arg0: java.lang.String | string, arg1: java.util.Map<java.lang.String,java.lang.Class<unknown>>): java.lang.Object
+      getObject(
+        arg0: java.lang.String | string,
+        arg1: java.util.Map<java.lang.String, java.lang.Class<unknown>>
+      ): java.lang.Object
       getRef(arg0: java.lang.String | string): java.sql.Ref
       getBlob(arg0: java.lang.String | string): java.sql.Blob
       getClob(arg0: java.lang.String | string): java.sql.Clob
@@ -115,15 +145,35 @@ declare namespace java {
       setNClob(arg0: java.lang.String | string, arg1: java.io.Reader): void
       getObject<T>(arg0: number | java.lang.Integer, arg1: java.lang.Class<T>): T
       getObject<T>(arg0: java.lang.String | string, arg1: java.lang.Class<T>): T
-      setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.sql.SQLType, arg3: number | java.lang.Integer): void
+      setObject(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: java.sql.SQLType,
+        arg3: number | java.lang.Integer
+      ): void
       setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
       registerOutParameter(arg0: number | java.lang.Integer, arg1: java.sql.SQLType): void
-      registerOutParameter(arg0: number | java.lang.Integer, arg1: java.sql.SQLType, arg2: number | java.lang.Integer): void
-      registerOutParameter(arg0: number | java.lang.Integer, arg1: java.sql.SQLType, arg2: java.lang.String | string): void
+      registerOutParameter(
+        arg0: number | java.lang.Integer,
+        arg1: java.sql.SQLType,
+        arg2: number | java.lang.Integer
+      ): void
+      registerOutParameter(
+        arg0: number | java.lang.Integer,
+        arg1: java.sql.SQLType,
+        arg2: java.lang.String | string
+      ): void
       registerOutParameter(arg0: java.lang.String | string, arg1: java.sql.SQLType): void
-      registerOutParameter(arg0: java.lang.String | string, arg1: java.sql.SQLType, arg2: number | java.lang.Integer): void
-      registerOutParameter(arg0: java.lang.String | string, arg1: java.sql.SQLType, arg2: java.lang.String | string): void
+      registerOutParameter(
+        arg0: java.lang.String | string,
+        arg1: java.sql.SQLType,
+        arg2: number | java.lang.Integer
+      ): void
+      registerOutParameter(
+        arg0: java.lang.String | string,
+        arg1: java.sql.SQLType,
+        arg2: java.lang.String | string
+      ): void
     }
-
   }
 }

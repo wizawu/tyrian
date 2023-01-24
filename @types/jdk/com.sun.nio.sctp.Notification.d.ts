@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace nio {
       namespace sctp {
-
         interface Notification$$lambda {
           (): com.sun.nio.sctp.Association
         }
@@ -10,7 +9,6 @@ declare namespace com {
         interface Notification {
           association(): com.sun.nio.sctp.Association
         }
-
       }
     }
   }

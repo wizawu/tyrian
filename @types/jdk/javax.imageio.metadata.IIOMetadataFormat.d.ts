@@ -1,30 +1,29 @@
 declare namespace javax {
   namespace imageio {
     namespace metadata {
-
       interface IIOMetadataFormat {
-        public static readonly CHILD_POLICY_EMPTY: int
-        public static readonly CHILD_POLICY_ALL: int
-        public static readonly CHILD_POLICY_SOME: int
-        public static readonly CHILD_POLICY_CHOICE: int
-        public static readonly CHILD_POLICY_SEQUENCE: int
-        public static readonly CHILD_POLICY_REPEAT: int
-        public static readonly CHILD_POLICY_MAX: int
-        public static readonly VALUE_NONE: int
-        public static readonly VALUE_ARBITRARY: int
-        public static readonly VALUE_RANGE: int
-        public static readonly VALUE_RANGE_MIN_INCLUSIVE_MASK: int
-        public static readonly VALUE_RANGE_MAX_INCLUSIVE_MASK: int
-        public static readonly VALUE_RANGE_MIN_INCLUSIVE: int
-        public static readonly VALUE_RANGE_MAX_INCLUSIVE: int
-        public static readonly VALUE_RANGE_MIN_MAX_INCLUSIVE: int
-        public static readonly VALUE_ENUMERATION: int
-        public static readonly VALUE_LIST: int
-        public static readonly DATATYPE_STRING: int
-        public static readonly DATATYPE_BOOLEAN: int
-        public static readonly DATATYPE_INTEGER: int
-        public static readonly DATATYPE_FLOAT: int
-        public static readonly DATATYPE_DOUBLE: int
+        readonly CHILD_POLICY_EMPTY: int
+        readonly CHILD_POLICY_ALL: int
+        readonly CHILD_POLICY_SOME: int
+        readonly CHILD_POLICY_CHOICE: int
+        readonly CHILD_POLICY_SEQUENCE: int
+        readonly CHILD_POLICY_REPEAT: int
+        readonly CHILD_POLICY_MAX: int
+        readonly VALUE_NONE: int
+        readonly VALUE_ARBITRARY: int
+        readonly VALUE_RANGE: int
+        readonly VALUE_RANGE_MIN_INCLUSIVE_MASK: int
+        readonly VALUE_RANGE_MAX_INCLUSIVE_MASK: int
+        readonly VALUE_RANGE_MIN_INCLUSIVE: int
+        readonly VALUE_RANGE_MAX_INCLUSIVE: int
+        readonly VALUE_RANGE_MIN_MAX_INCLUSIVE: int
+        readonly VALUE_ENUMERATION: int
+        readonly VALUE_LIST: int
+        readonly DATATYPE_STRING: int
+        readonly DATATYPE_BOOLEAN: int
+        readonly DATATYPE_INTEGER: int
+        readonly DATATYPE_FLOAT: int
+        readonly DATATYPE_DOUBLE: int
         getRootName(): java.lang.String
         canNodeAppear(arg0: java.lang.String | string, arg1: javax.imageio.ImageTypeSpecifier): boolean
         getElementMinChildren(arg0: java.lang.String | string): number
@@ -42,7 +41,11 @@ declare namespace javax {
         getAttributeMaxValue(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
         getAttributeListMinLength(arg0: java.lang.String | string, arg1: java.lang.String | string): number
         getAttributeListMaxLength(arg0: java.lang.String | string, arg1: java.lang.String | string): number
-        getAttributeDescription(arg0: java.lang.String | string, arg1: java.lang.String | string, arg2: java.util.Locale): java.lang.String
+        getAttributeDescription(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string,
+          arg2: java.util.Locale
+        ): java.lang.String
         getObjectValueType(arg0: java.lang.String | string): number
         getObjectClass(arg0: java.lang.String | string): java.lang.Class<unknown>
         getObjectDefaultValue(arg0: java.lang.String | string): java.lang.Object
@@ -52,7 +55,6 @@ declare namespace javax {
         getObjectArrayMinLength(arg0: java.lang.String | string): number
         getObjectArrayMaxLength(arg0: java.lang.String | string): number
       }
-
     }
   }
 }

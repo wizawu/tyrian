@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class EventQueue {
       public constructor()
       public postEvent(arg0: java.awt.AWTEvent): void
@@ -16,7 +15,11 @@ declare namespace java {
       public push(arg0: java.awt.EventQueue): void
       protected pop(): void
       public createSecondaryLoop(): java.awt.SecondaryLoop
-      createSecondaryLoop(arg0: java.awt.Conditional, arg1: java.awt.EventFilter, arg2: number | java.lang.Long): java.awt.SecondaryLoop
+      createSecondaryLoop(
+        arg0: java.awt.Conditional,
+        arg1: java.awt.EventFilter,
+        arg2: number | java.lang.Long
+      ): java.awt.SecondaryLoop
       public static isDispatchThread(): boolean
       isDispatchThreadImpl(): boolean
       initDispatchThread(): void
@@ -29,6 +32,5 @@ declare namespace java {
       public static invokeAndWait(arg0: java.lang.Runnable | java.lang.Runnable$$lambda): void
       static invokeAndWait(arg0: java.lang.Object | any, arg1: java.lang.Runnable | java.lang.Runnable$$lambda): void
     }
-
   }
 }

@@ -2,8 +2,7 @@ declare namespace com {
   namespace sun {
     namespace source {
       namespace util {
-
-        class TreeScanner<R,P> implements com.sun.source.tree.TreeVisitor<R,P> {
+        class TreeScanner<R, P> implements com.sun.source.tree.TreeVisitor<R, P> {
           public constructor()
           public scan(arg0: com.sun.source.tree.Tree, arg1: P): R
           public scan(arg0: java.lang.Iterable<com.sun.source.tree.Tree>, arg1: P): R
@@ -69,7 +68,6 @@ declare namespace com {
           public visitOther(arg0: com.sun.source.tree.Tree, arg1: P): R
           public visitErroneous(arg0: com.sun.source.tree.ErroneousTree, arg1: P): R
         }
-
       }
     }
   }

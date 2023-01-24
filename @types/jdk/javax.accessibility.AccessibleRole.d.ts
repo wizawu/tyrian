@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace accessibility {
-
     class AccessibleRole extends javax.accessibility.AccessibleBundle {
       public static readonly ALERT: javax.accessibility.AccessibleRole
       public static readonly COLUMN_HEADER: javax.accessibility.AccessibleRole
@@ -67,6 +66,5 @@ declare namespace javax {
       public static readonly PROGRESS_MONITOR: javax.accessibility.AccessibleRole
       protected constructor(arg0: java.lang.String | string)
     }
-
   }
 }

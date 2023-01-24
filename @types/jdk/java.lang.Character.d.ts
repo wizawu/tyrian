@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Character implements java.io.Serializable, java.lang.Comparable<java.lang.Character> {
       public static readonly MIN_RADIX: int
       public static readonly MAX_RADIX: int
@@ -94,23 +93,75 @@ declare namespace java {
       public static toCodePoint(arg0: string | java.lang.Character, arg1: string | java.lang.Character): number
       public static codePointAt(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer): number
       public static codePointAt(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer): number
-      public static codePointAt(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      static codePointAtImpl(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public static codePointAt(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      static codePointAtImpl(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public static codePointBefore(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer): number
       public static codePointBefore(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer): number
-      public static codePointBefore(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      static codePointBeforeImpl(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public static codePointBefore(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      static codePointBeforeImpl(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public static highSurrogate(arg0: number | java.lang.Integer): string
       public static lowSurrogate(arg0: number | java.lang.Integer): string
-      public static toChars(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer): number
+      public static toChars(
+        arg0: number | java.lang.Integer,
+        arg1: string[] | java.lang.Character[],
+        arg2: number | java.lang.Integer
+      ): number
       public static toChars(arg0: number | java.lang.Integer): string[]
-      static toSurrogates(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer): void
-      public static codePointCount(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public static codePointCount(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      static codePointCountImpl(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public static offsetByCodePoints(arg0: string | java.lang.CharSequence, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-      public static offsetByCodePoints(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
-      static offsetByCodePointsImpl(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): number
+      static toSurrogates(
+        arg0: number | java.lang.Integer,
+        arg1: string[] | java.lang.Character[],
+        arg2: number | java.lang.Integer
+      ): void
+      public static codePointCount(
+        arg0: string | java.lang.CharSequence,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      public static codePointCount(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      static codePointCountImpl(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      public static offsetByCodePoints(
+        arg0: string | java.lang.CharSequence,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
+      public static offsetByCodePoints(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): number
+      static offsetByCodePointsImpl(
+        arg0: string[] | java.lang.Character[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): number
       public static isLowerCase(arg0: string | java.lang.Character): boolean
       public static isLowerCase(arg0: number | java.lang.Integer): boolean
       public static isUpperCase(arg0: string | java.lang.Character): boolean
@@ -172,6 +223,5 @@ declare namespace java {
       public static codePointOf(arg0: java.lang.String | string): number
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

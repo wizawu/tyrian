@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace event {
-
       class PaintEvent extends java.awt.event.ComponentEvent {
         public static readonly PAINT_FIRST: int
         public static readonly PAINT_LAST: int
@@ -13,7 +12,6 @@ declare namespace java {
         public setUpdateRect(arg0: java.awt.Rectangle): void
         public paramString(): java.lang.String
       }
-
     }
   }
 }

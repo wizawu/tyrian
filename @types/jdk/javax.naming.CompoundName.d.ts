@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace naming {
-
     class CompoundName implements javax.naming.Name {
       protected mySyntax: java.util.Properties
       protected constructor(arg0: java.util.Enumeration<java.lang.String>, arg1: java.util.Properties)
@@ -24,6 +23,5 @@ declare namespace javax {
       public add(arg0: number | java.lang.Integer, arg1: java.lang.String | string): javax.naming.Name
       public remove(arg0: number | java.lang.Integer): java.lang.Object
     }
-
   }
 }

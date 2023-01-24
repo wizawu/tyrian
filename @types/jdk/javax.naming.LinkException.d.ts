@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace naming {
-
     class LinkException extends javax.naming.NamingException {
       protected linkResolvedName: javax.naming.Name
       protected linkResolvedObj: java.lang.Object
@@ -19,6 +18,5 @@ declare namespace javax {
       public toString(): java.lang.String
       public toString(arg0: boolean | java.lang.Boolean): java.lang.String
     }
-
   }
 }

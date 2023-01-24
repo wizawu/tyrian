@@ -1,8 +1,10 @@
 declare namespace java {
   namespace nio {
     namespace file {
-
-      class StandardOpenOption extends java.lang.Enum<java.nio.file.StandardOpenOption> implements java.nio.file.OpenOption {
+      class StandardOpenOption
+        extends java.lang.Enum<java.nio.file.StandardOpenOption>
+        implements java.nio.file.OpenOption
+      {
         public static readonly READ: java.nio.file.StandardOpenOption
         public static readonly WRITE: java.nio.file.StandardOpenOption
         public static readonly APPEND: java.nio.file.StandardOpenOption
@@ -16,7 +18,6 @@ declare namespace java {
         public static values(): java.nio.file.StandardOpenOption[]
         public static valueOf(arg0: java.lang.String | string): java.nio.file.StandardOpenOption
       }
-
     }
   }
 }

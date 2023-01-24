@@ -1,8 +1,5 @@
 declare namespace java {
   namespace security {
-
-    interface Policy$Parameters {
-    }
-
+    interface Policy$Parameters {}
   }
 }

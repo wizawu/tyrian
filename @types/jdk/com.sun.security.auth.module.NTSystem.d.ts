@@ -3,7 +3,6 @@ declare namespace com {
     namespace security {
       namespace auth {
         namespace module {
-
           class NTSystem {
             public constructor()
             constructor(arg0: boolean | java.lang.Boolean)
@@ -15,7 +14,6 @@ declare namespace com {
             public getGroupIDs(): java.lang.String[]
             public getImpersonationToken(): number
           }
-
         }
       }
     }

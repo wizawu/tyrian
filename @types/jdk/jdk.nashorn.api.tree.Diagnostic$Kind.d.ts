@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace tree {
-
         class Diagnostic$Kind extends java.lang.Enum<jdk.nashorn.api.tree.Diagnostic$Kind> {
           public static readonly ERROR: jdk.nashorn.api.tree.Diagnostic$Kind
           public static readonly WARNING: jdk.nashorn.api.tree.Diagnostic$Kind
@@ -12,7 +11,6 @@ declare namespace jdk {
           public static values(): jdk.nashorn.api.tree.Diagnostic$Kind[]
           public static valueOf(arg0: java.lang.String | string): jdk.nashorn.api.tree.Diagnostic$Kind
         }
-
       }
     }
   }

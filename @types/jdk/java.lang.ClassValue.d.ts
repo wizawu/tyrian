@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     abstract class ClassValue<T> {
       readonly hashCodeForCache: int
       static readonly HASH_MASK: int
@@ -16,6 +15,5 @@ declare namespace java {
       bumpVersion(): void
       static makeEntry<T>(arg0: java.lang.ClassValue$Version<T>, arg1: T): java.lang.ClassValue$Entry<T>
     }
-
   }
 }

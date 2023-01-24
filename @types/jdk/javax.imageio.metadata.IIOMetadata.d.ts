@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace imageio {
     namespace metadata {
-
       abstract class IIOMetadata {
         protected standardFormatSupported: boolean
         protected nativeMetadataFormatName: java.lang.String
@@ -11,7 +10,13 @@ declare namespace javax {
         protected defaultController: javax.imageio.metadata.IIOMetadataController
         protected controller: javax.imageio.metadata.IIOMetadataController
         protected constructor()
-        protected constructor(arg0: boolean | java.lang.Boolean, arg1: java.lang.String | string, arg2: java.lang.String | string, arg3: java.lang.String[] | string[], arg4: java.lang.String[] | string[])
+        protected constructor(
+          arg0: boolean | java.lang.Boolean,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String | string,
+          arg3: java.lang.String[] | string[],
+          arg4: java.lang.String[] | string[]
+        )
         public isStandardMetadataFormatSupported(): boolean
         public abstract isReadOnly(): boolean
         public getNativeMetadataFormatName(): java.lang.String
@@ -31,13 +36,14 @@ declare namespace javax {
         protected getStandardTree(): javax.imageio.metadata.IIOMetadataNode
         public setFromTree(arg0: java.lang.String | string, arg1: org.w3c.dom.Node): void
         public abstract reset(): void
-        public setController(arg0: javax.imageio.metadata.IIOMetadataController | javax.imageio.metadata.IIOMetadataController$$lambda): void
+        public setController(
+          arg0: javax.imageio.metadata.IIOMetadataController | javax.imageio.metadata.IIOMetadataController$$lambda
+        ): void
         public getController(): javax.imageio.metadata.IIOMetadataController
         public getDefaultController(): javax.imageio.metadata.IIOMetadataController
         public hasController(): boolean
         public activateController(): boolean
       }
-
     }
   }
 }

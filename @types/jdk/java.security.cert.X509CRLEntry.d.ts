@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
       abstract class X509CRLEntry implements java.security.cert.X509Extension {
         public constructor()
         public equals(arg0: java.lang.Object | any): boolean
@@ -14,7 +13,6 @@ declare namespace java {
         public abstract toString(): java.lang.String
         public getRevocationReason(): java.security.cert.CRLReason
       }
-
     }
   }
 }

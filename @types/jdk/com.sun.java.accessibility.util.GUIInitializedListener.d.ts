@@ -3,7 +3,6 @@ declare namespace com {
     namespace java {
       namespace accessibility {
         namespace util {
-
           interface GUIInitializedListener$$lambda {
             (): void
           }
@@ -11,7 +10,6 @@ declare namespace com {
           interface GUIInitializedListener extends java.util.EventListener {
             guiInitialized(): void
           }
-
         }
       }
     }

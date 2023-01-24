@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class Box extends javax.swing.JComponent implements javax.accessibility.Accessible {
       public constructor(arg0: number | java.lang.Integer)
       public static createHorizontalBox(): javax.swing.Box
@@ -15,6 +14,5 @@ declare namespace javax {
       protected paintComponent(arg0: java.awt.Graphics): void
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

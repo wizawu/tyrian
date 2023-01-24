@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     abstract class PrintJob {
       public constructor()
       public abstract getGraphics(): java.awt.Graphics
@@ -10,6 +9,5 @@ declare namespace java {
       public abstract end(): void
       public finalize(): void
     }
-
   }
 }

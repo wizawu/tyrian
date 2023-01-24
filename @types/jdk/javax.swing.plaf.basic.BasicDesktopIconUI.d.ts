@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicDesktopIconUI extends javax.swing.plaf.DesktopIconUI {
           protected desktopIcon: javax.swing.JInternalFrame$JDesktopIcon
           protected frame: javax.swing.JInternalFrame
@@ -25,7 +24,6 @@ declare namespace javax {
           public getInsets(arg0: javax.swing.JComponent): java.awt.Insets
           public deiconize(): void
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Choice extends java.awt.Component implements java.awt.ItemSelectable, javax.accessibility.Accessible {
       pItems: java.util.Vector<java.lang.String>
       selectedIndex: int
@@ -33,6 +32,5 @@ declare namespace java {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

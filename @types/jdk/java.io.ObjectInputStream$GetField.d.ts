@@ -1,6 +1,5 @@
 declare namespace java {
   namespace io {
-
     abstract class ObjectInputStream$GetField {
       public constructor()
       public abstract getObjectStreamClass(): java.io.ObjectStreamClass
@@ -15,6 +14,5 @@ declare namespace java {
       public abstract get(arg0: java.lang.String | string, arg1: number | java.lang.Double): number
       public abstract get(arg0: java.lang.String | string, arg1: java.lang.Object | any): java.lang.Object
     }
-
   }
 }

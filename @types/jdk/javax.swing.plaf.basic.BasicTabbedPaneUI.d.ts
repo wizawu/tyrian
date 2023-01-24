@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicTabbedPaneUI extends javax.swing.plaf.TabbedPaneUI implements javax.swing.SwingConstants {
           protected tabPane: javax.swing.JTabbedPane
           protected highlight: java.awt.Color
@@ -55,29 +54,144 @@ declare namespace javax {
           protected getRolloverTab(): number
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
-          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public getBaseline(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           protected getBaseline(arg0: number | java.lang.Integer): number
           protected getBaselineOffset(): number
           public paint(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
-          protected paintTabArea(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-          protected paintTab(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: java.awt.Rectangle[], arg3: number | java.lang.Integer, arg4: java.awt.Rectangle, arg5: java.awt.Rectangle): void
-          protected layoutLabel(arg0: number | java.lang.Integer, arg1: java.awt.FontMetrics, arg2: number | java.lang.Integer, arg3: java.lang.String | string, arg4: javax.swing.Icon, arg5: java.awt.Rectangle, arg6: java.awt.Rectangle, arg7: java.awt.Rectangle, arg8: boolean | java.lang.Boolean): void
-          protected paintIcon(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: javax.swing.Icon, arg4: java.awt.Rectangle, arg5: boolean | java.lang.Boolean): void
-          protected paintText(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: java.awt.Font, arg3: java.awt.FontMetrics, arg4: number | java.lang.Integer, arg5: java.lang.String | string, arg6: java.awt.Rectangle, arg7: boolean | java.lang.Boolean): void
-          protected getTabLabelShiftX(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): number
-          protected getTabLabelShiftY(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: boolean | java.lang.Boolean): number
-          protected paintFocusIndicator(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: java.awt.Rectangle[], arg3: number | java.lang.Integer, arg4: java.awt.Rectangle, arg5: java.awt.Rectangle, arg6: boolean | java.lang.Boolean): void
-          protected paintTabBorder(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: boolean | java.lang.Boolean): void
-          protected paintTabBackground(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer, arg7: boolean | java.lang.Boolean): void
-          protected paintContentBorder(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
-          protected paintContentBorderTopEdge(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): void
-          protected paintContentBorderLeftEdge(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): void
-          protected paintContentBorderBottomEdge(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): void
-          protected paintContentBorderRightEdge(arg0: java.awt.Graphics, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer): void
+          protected paintTabArea(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): void
+          protected paintTab(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: java.awt.Rectangle[],
+            arg3: number | java.lang.Integer,
+            arg4: java.awt.Rectangle,
+            arg5: java.awt.Rectangle
+          ): void
+          protected layoutLabel(
+            arg0: number | java.lang.Integer,
+            arg1: java.awt.FontMetrics,
+            arg2: number | java.lang.Integer,
+            arg3: java.lang.String | string,
+            arg4: javax.swing.Icon,
+            arg5: java.awt.Rectangle,
+            arg6: java.awt.Rectangle,
+            arg7: java.awt.Rectangle,
+            arg8: boolean | java.lang.Boolean
+          ): void
+          protected paintIcon(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: javax.swing.Icon,
+            arg4: java.awt.Rectangle,
+            arg5: boolean | java.lang.Boolean
+          ): void
+          protected paintText(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: java.awt.Font,
+            arg3: java.awt.FontMetrics,
+            arg4: number | java.lang.Integer,
+            arg5: java.lang.String | string,
+            arg6: java.awt.Rectangle,
+            arg7: boolean | java.lang.Boolean
+          ): void
+          protected getTabLabelShiftX(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: boolean | java.lang.Boolean
+          ): number
+          protected getTabLabelShiftY(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: boolean | java.lang.Boolean
+          ): number
+          protected paintFocusIndicator(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: java.awt.Rectangle[],
+            arg3: number | java.lang.Integer,
+            arg4: java.awt.Rectangle,
+            arg5: java.awt.Rectangle,
+            arg6: boolean | java.lang.Boolean
+          ): void
+          protected paintTabBorder(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer,
+            arg6: number | java.lang.Integer,
+            arg7: boolean | java.lang.Boolean
+          ): void
+          protected paintTabBackground(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer,
+            arg6: number | java.lang.Integer,
+            arg7: boolean | java.lang.Boolean
+          ): void
+          protected paintContentBorder(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): void
+          protected paintContentBorderTopEdge(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer,
+            arg6: number | java.lang.Integer
+          ): void
+          protected paintContentBorderLeftEdge(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer,
+            arg6: number | java.lang.Integer
+          ): void
+          protected paintContentBorderBottomEdge(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer,
+            arg6: number | java.lang.Integer
+          ): void
+          protected paintContentBorderRightEdge(
+            arg0: java.awt.Graphics,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer,
+            arg4: number | java.lang.Integer,
+            arg5: number | java.lang.Integer,
+            arg6: number | java.lang.Integer
+          ): void
           public getTabBounds(arg0: javax.swing.JTabbedPane, arg1: number | java.lang.Integer): java.awt.Rectangle
           public getTabRunCount(arg0: javax.swing.JTabbedPane): number
-          public tabForCoordinate(arg0: javax.swing.JTabbedPane, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public tabForCoordinate(
+            arg0: javax.swing.JTabbedPane,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           protected getTabBounds(arg0: number | java.lang.Integer, arg1: java.awt.Rectangle): java.awt.Rectangle
           protected getVisibleComponent(): java.awt.Component
           protected setVisibleComponent(arg0: java.awt.Component): void
@@ -91,12 +205,28 @@ declare namespace javax {
           protected shouldRotateTabRuns(arg0: number | java.lang.Integer): boolean
           protected getIconForTab(arg0: number | java.lang.Integer): javax.swing.Icon
           protected getTextViewForTab(arg0: number | java.lang.Integer): javax.swing.text.View
-          protected calculateTabHeight(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          protected calculateTabHeight(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           protected calculateMaxTabHeight(arg0: number | java.lang.Integer): number
-          protected calculateTabWidth(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.awt.FontMetrics): number
+          protected calculateTabWidth(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: java.awt.FontMetrics
+          ): number
           protected calculateMaxTabWidth(arg0: number | java.lang.Integer): number
-          protected calculateTabAreaHeight(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
-          protected calculateTabAreaWidth(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          protected calculateTabAreaHeight(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
+          protected calculateTabAreaWidth(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           protected getTabInsets(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.awt.Insets
           protected getSelectedTabPadInsets(arg0: number | java.lang.Integer): java.awt.Insets
           protected getTabAreaInsets(arg0: number | java.lang.Integer): java.awt.Insets
@@ -107,20 +237,32 @@ declare namespace javax {
           protected selectPreviousTabInRun(arg0: number | java.lang.Integer): void
           protected selectNextTab(arg0: number | java.lang.Integer): void
           protected selectPreviousTab(arg0: number | java.lang.Integer): void
-          protected selectAdjacentRunTab(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+          protected selectAdjacentRunTab(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): void
           setFocusIndex(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean): void
           protected getFocusIndex(): number
-          protected getTabRunOffset(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean): number
+          protected getTabRunOffset(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: boolean | java.lang.Boolean
+          ): number
           protected getPreviousTabIndex(arg0: number | java.lang.Integer): number
           protected getNextTabIndex(arg0: number | java.lang.Integer): number
           protected getNextTabIndexInRun(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
           protected getPreviousTabIndexInRun(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): number
           protected getPreviousTabRun(arg0: number | java.lang.Integer): number
           protected getNextTabRun(arg0: number | java.lang.Integer): number
-          protected static rotateInsets(arg0: java.awt.Insets, arg1: java.awt.Insets, arg2: number | java.lang.Integer): void
+          protected static rotateInsets(
+            arg0: java.awt.Insets,
+            arg1: java.awt.Insets,
+            arg2: number | java.lang.Integer
+          ): void
           requestFocusForVisibleComponent(): boolean
         }
-
       }
     }
   }

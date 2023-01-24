@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
       interface BlockingDeque<E> extends java.util.concurrent.BlockingQueue<E>, java.util.Deque<E> {
         addFirst(arg0: E): void
         addLast(arg0: E): void
@@ -33,7 +32,6 @@ declare namespace java {
         iterator(): java.util.Iterator<E>
         push(arg0: E): void
       }
-
     }
   }
 }

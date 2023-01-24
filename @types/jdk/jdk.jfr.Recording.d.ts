@@ -1,21 +1,20 @@
 declare namespace jdk {
   namespace jfr {
-
     class Recording implements java.io.Closeable {
-      public constructor(arg0: java.util.Map<java.lang.String,java.lang.String>)
+      public constructor(arg0: java.util.Map<java.lang.String, java.lang.String>)
       public constructor()
       public constructor(arg0: jdk.jfr.Configuration)
       public start(): void
       public scheduleStart(arg0: java.time.Duration): void
       public stop(): boolean
-      public getSettings(): java.util.Map<java.lang.String,java.lang.String>
+      public getSettings(): java.util.Map<java.lang.String, java.lang.String>
       public getSize(): number
       public getStopTime(): java.time.Instant
       public getStartTime(): java.time.Instant
       public getMaxSize(): number
       public getMaxAge(): java.time.Duration
       public getName(): java.lang.String
-      public setSettings(arg0: java.util.Map<java.lang.String,java.lang.String>): void
+      public setSettings(arg0: java.util.Map<java.lang.String, java.lang.String>): void
       public getState(): jdk.jfr.RecordingState
       public close(): void
       public copy(arg0: boolean | java.lang.Boolean): jdk.jfr.Recording
@@ -39,6 +38,5 @@ declare namespace jdk {
       public disable(arg0: java.lang.Class<jdk.jfr.Event>): jdk.jfr.EventSettings
       getInternal(): jdk.jfr.internal.PlatformRecording
     }
-
   }
 }

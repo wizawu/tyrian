@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class AlphaComposite implements java.awt.Composite {
       public static readonly CLEAR: int
       public static readonly SRC: int
@@ -29,8 +28,15 @@ declare namespace java {
       extraAlpha: float
       rule: int
       public static getInstance(arg0: number | java.lang.Integer): java.awt.AlphaComposite
-      public static getInstance(arg0: number | java.lang.Integer, arg1: number | java.lang.Float): java.awt.AlphaComposite
-      public createContext(arg0: java.awt.image.ColorModel, arg1: java.awt.image.ColorModel, arg2: java.awt.RenderingHints): java.awt.CompositeContext
+      public static getInstance(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Float
+      ): java.awt.AlphaComposite
+      public createContext(
+        arg0: java.awt.image.ColorModel,
+        arg1: java.awt.image.ColorModel,
+        arg2: java.awt.RenderingHints
+      ): java.awt.CompositeContext
       public getAlpha(): number
       public getRule(): number
       public derive(arg0: number | java.lang.Integer): java.awt.AlphaComposite
@@ -38,6 +44,5 @@ declare namespace java {
       public hashCode(): number
       public equals(arg0: java.lang.Object | any): boolean
     }
-
   }
 }

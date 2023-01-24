@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace chrono {
-
       interface Era extends java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster {
         getValue(): number
         isSupported(arg0: java.time.temporal.TemporalField): boolean
@@ -12,7 +11,6 @@ declare namespace java {
         adjustInto(arg0: java.time.temporal.Temporal): java.time.temporal.Temporal
         getDisplayName(arg0: java.time.format.TextStyle, arg1: java.util.Locale): java.lang.String
       }
-
     }
   }
 }

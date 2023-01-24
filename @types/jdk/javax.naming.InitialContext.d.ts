@@ -1,14 +1,13 @@
 declare namespace javax {
   namespace naming {
-
     class InitialContext implements javax.naming.Context {
-      protected myProps: java.util.Hashtable<java.lang.Object,java.lang.Object>
+      protected myProps: java.util.Hashtable<java.lang.Object, java.lang.Object>
       protected defaultInitCtx: javax.naming.Context
       protected gotDefault: boolean
       protected constructor(arg0: boolean | java.lang.Boolean)
       public constructor()
-      public constructor(arg0: java.util.Hashtable<unknown,unknown>)
-      protected init(arg0: java.util.Hashtable<unknown,unknown>): void
+      public constructor(arg0: java.util.Hashtable<unknown, unknown>)
+      protected init(arg0: java.util.Hashtable<unknown, unknown>): void
       public static doLookup<T>(arg0: javax.naming.Name): T
       public static doLookup<T>(arg0: java.lang.String | string): T
       protected getDefaultInitCtx(): javax.naming.Context
@@ -40,10 +39,9 @@ declare namespace javax {
       public composeName(arg0: javax.naming.Name, arg1: javax.naming.Name): javax.naming.Name
       public addToEnvironment(arg0: java.lang.String | string, arg1: java.lang.Object | any): java.lang.Object
       public removeFromEnvironment(arg0: java.lang.String | string): java.lang.Object
-      public getEnvironment(): java.util.Hashtable<unknown,unknown>
+      public getEnvironment(): java.util.Hashtable<unknown, unknown>
       public close(): void
       public getNameInNamespace(): java.lang.String
     }
-
   }
 }

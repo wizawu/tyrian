@@ -2,8 +2,7 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace util {
-
-        class SimpleAnnotationValueVisitor6<R,P> extends javax.lang.model.util.AbstractAnnotationValueVisitor6<R,P> {
+        class SimpleAnnotationValueVisitor6<R, P> extends javax.lang.model.util.AbstractAnnotationValueVisitor6<R, P> {
           protected readonly DEFAULT_VALUE: R
           protected constructor()
           protected constructor(arg0: R)
@@ -22,7 +21,6 @@ declare namespace javax {
           public visitAnnotation(arg0: javax.lang.model.element.AnnotationMirror, arg1: P): R
           public visitArray(arg0: java.util.List<javax.lang.model.element.AnnotationValue>, arg1: P): R
         }
-
       }
     }
   }

@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace atomic {
-
         class AtomicReference<V> implements java.io.Serializable {
           public constructor(arg0: V)
           public constructor()
@@ -31,7 +30,6 @@ declare namespace java {
           public weakCompareAndSetAcquire(arg0: V, arg1: V): boolean
           public weakCompareAndSetRelease(arg0: V, arg1: V): boolean
         }
-
       }
     }
   }

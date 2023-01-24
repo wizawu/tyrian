@@ -2,7 +2,6 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace locks {
-
         interface Condition {
           await(): void
           awaitUninterruptibly(): void
@@ -12,7 +11,6 @@ declare namespace java {
           signal(): void
           signalAll(): void
         }
-
       }
     }
   }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicSpinnerUI extends javax.swing.plaf.SpinnerUI {
           protected spinner: javax.swing.JSpinner
           public constructor()
@@ -23,10 +22,13 @@ declare namespace javax {
           protected replaceEditor(arg0: javax.swing.JComponent, arg1: javax.swing.JComponent): void
           protected installKeyboardActions(): void
           static loadActionMap(arg0: javax.swing.plaf.basic.LazyActionMap): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public getBaseline(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
         }
-
       }
     }
   }

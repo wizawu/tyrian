@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Point extends java.awt.geom.Point2D implements java.io.Serializable {
       public x: int
       public y: int
@@ -18,6 +17,5 @@ declare namespace java {
       public equals(arg0: java.lang.Object | any): boolean
       public toString(): java.lang.String
     }
-
   }
 }

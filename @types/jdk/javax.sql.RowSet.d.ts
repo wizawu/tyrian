@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace sql {
-
     interface RowSet extends java.sql.ResultSet {
       getUrl(): java.lang.String
       setUrl(arg0: java.lang.String | string): void
@@ -12,8 +11,8 @@ declare namespace javax {
       setPassword(arg0: java.lang.String | string): void
       getTransactionIsolation(): number
       setTransactionIsolation(arg0: number | java.lang.Integer): void
-      getTypeMap(): java.util.Map<java.lang.String,java.lang.Class<unknown>>
-      setTypeMap(arg0: java.util.Map<java.lang.String,java.lang.Class<unknown>>): void
+      getTypeMap(): java.util.Map<java.lang.String, java.lang.Class<unknown>>
+      setTypeMap(arg0: java.util.Map<java.lang.String, java.lang.Class<unknown>>): void
       getCommand(): java.lang.String
       setCommand(arg0: java.lang.String | string): void
       isReadOnly(): boolean
@@ -56,10 +55,22 @@ declare namespace javax {
       setTime(arg0: number | java.lang.Integer, arg1: java.sql.Time): void
       setTimestamp(arg0: number | java.lang.Integer, arg1: java.sql.Timestamp): void
       setTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-      setAsciiStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
+      setAsciiStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
       setAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      setBinaryStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      setBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
+      setBinaryStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
+      setBinaryStream(
+        arg0: java.lang.String | string,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
       setCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader, arg2: number | java.lang.Integer): void
       setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: number | java.lang.Integer): void
       setAsciiStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream): void
@@ -69,8 +80,18 @@ declare namespace javax {
       setCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
       setCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader): void
       setNCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
-      setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
-      setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      setObject(
+        arg0: number | java.lang.Integer,
+        arg1: java.lang.Object | any,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
+      setObject(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
       setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
@@ -118,6 +139,5 @@ declare namespace javax {
       setNClob(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
       setURL(arg0: number | java.lang.Integer, arg1: java.net.URL): void
     }
-
   }
 }

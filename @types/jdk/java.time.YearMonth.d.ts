@@ -1,7 +1,12 @@
 declare namespace java {
   namespace time {
-
-    class YearMonth implements java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.YearMonth>, java.io.Serializable {
+    class YearMonth
+      implements
+        java.time.temporal.Temporal,
+        java.time.temporal.TemporalAdjuster,
+        java.lang.Comparable<java.time.YearMonth>,
+        java.io.Serializable
+    {
       public static now(): java.time.YearMonth
       public static now(arg0: java.time.ZoneId): java.time.YearMonth
       public static now(arg0: java.time.Clock): java.time.YearMonth
@@ -9,7 +14,10 @@ declare namespace java {
       public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.time.YearMonth
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.YearMonth
       public static parse(arg0: string | java.lang.CharSequence): java.time.YearMonth
-      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.YearMonth
+      public static parse(
+        arg0: string | java.lang.CharSequence,
+        arg1: java.time.format.DateTimeFormatter
+      ): java.time.YearMonth
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange
@@ -22,7 +30,9 @@ declare namespace java {
       public isValidDay(arg0: number | java.lang.Integer): boolean
       public lengthOfMonth(): number
       public lengthOfYear(): number
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.YearMonth
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.YearMonth
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.YearMonth
       public withYear(arg0: number | java.lang.Integer): java.time.YearMonth
       public withMonth(arg0: number | java.lang.Integer): java.time.YearMonth
@@ -53,9 +63,10 @@ declare namespace java {
       public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.temporal.Temporal
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

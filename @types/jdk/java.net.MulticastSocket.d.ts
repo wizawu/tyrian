@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     class MulticastSocket extends java.net.DatagramSocket {
       public constructor()
       public constructor(arg0: number | java.lang.Integer)
@@ -22,6 +21,5 @@ declare namespace java {
       public send(arg0: java.net.DatagramPacket, arg1: number | java.lang.Byte): void
       public supportedOptions(): java.util.Set<java.net.SocketOption<unknown>>
     }
-
   }
 }

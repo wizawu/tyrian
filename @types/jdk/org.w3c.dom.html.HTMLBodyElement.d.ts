@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLBodyElement extends org.w3c.dom.html.HTMLElement {
           getALink(): java.lang.String
           setALink(arg0: java.lang.String | string): void
@@ -17,7 +16,6 @@ declare namespace org {
           getVLink(): java.lang.String
           setVLink(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace stream {
-
       class FactoryConfigurationError extends java.lang.Error {
         nested: java.lang.Exception
         public constructor()
@@ -13,7 +12,6 @@ declare namespace javax {
         public getCause(): java.lang.Throwable
         public getMessage(): java.lang.String
       }
-
     }
   }
 }

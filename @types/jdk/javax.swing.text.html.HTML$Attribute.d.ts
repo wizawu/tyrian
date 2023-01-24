@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace text {
       namespace html {
-
         class HTML$Attribute {
           public static readonly SIZE: javax.swing.text.html.HTML$Attribute
           public static readonly COLOR: javax.swing.text.html.HTML$Attribute
@@ -89,7 +88,6 @@ declare namespace javax {
           constructor(arg0: java.lang.String | string)
           public toString(): java.lang.String
         }
-
       }
     }
   }

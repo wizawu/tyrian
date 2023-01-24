@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Boolean implements java.io.Serializable, java.lang.Comparable<java.lang.Boolean> {
       public static readonly TRUE: java.lang.Boolean
       public static readonly FALSE: java.lang.Boolean
@@ -24,6 +23,5 @@ declare namespace java {
       public static logicalXor(arg0: boolean | java.lang.Boolean, arg1: boolean | java.lang.Boolean): boolean
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

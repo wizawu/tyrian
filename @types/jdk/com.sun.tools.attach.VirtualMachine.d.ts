@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace tools {
       namespace attach {
-
         abstract class VirtualMachine {
           protected constructor(arg0: com.sun.tools.attach.spi.AttachProvider, arg1: java.lang.String | string)
           public static list(): java.util.List<com.sun.tools.attach.VirtualMachineDescriptor>
@@ -25,7 +24,6 @@ declare namespace com {
           public equals(arg0: java.lang.Object | any): boolean
           public toString(): java.lang.String
         }
-
       }
     }
   }

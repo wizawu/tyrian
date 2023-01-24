@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Robot {
       public constructor()
       public constructor(arg0: java.awt.GraphicsDevice)
@@ -21,6 +20,5 @@ declare namespace java {
       public waitForIdle(): void
       public toString(): java.lang.String
     }
-
   }
 }

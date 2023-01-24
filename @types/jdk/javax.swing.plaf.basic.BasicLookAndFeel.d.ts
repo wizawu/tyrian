@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         abstract class BasicLookAndFeel extends javax.swing.LookAndFeel implements java.io.Serializable {
           static needsEventHelper: boolean
           invocator: javax.swing.plaf.basic.BasicLookAndFeel$AWTEventHelper
@@ -13,7 +12,11 @@ declare namespace javax {
           public uninitialize(): void
           protected initClassDefaults(arg0: javax.swing.UIDefaults): void
           protected initSystemColorDefaults(arg0: javax.swing.UIDefaults): void
-          protected loadSystemColors(arg0: javax.swing.UIDefaults, arg1: java.lang.String[] | string[], arg2: boolean | java.lang.Boolean): void
+          protected loadSystemColors(
+            arg0: javax.swing.UIDefaults,
+            arg1: java.lang.String[] | string[],
+            arg2: boolean | java.lang.Boolean
+          ): void
           protected initComponentDefaults(arg0: javax.swing.UIDefaults): void
           static getFocusAcceleratorKeyMask(): number
           static getUIOfType(arg0: javax.swing.plaf.ComponentUI, arg1: java.lang.Class<unknown>): java.lang.Object
@@ -23,7 +26,6 @@ declare namespace javax {
           static installAudioActionMap(arg0: javax.swing.ActionMap): void
           static playSound(arg0: javax.swing.JComponent, arg1: java.lang.Object | any): void
         }
-
       }
     }
   }

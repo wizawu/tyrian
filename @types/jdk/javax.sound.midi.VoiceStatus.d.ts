@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       class VoiceStatus {
         public active: boolean
         public channel: int
@@ -11,7 +10,6 @@ declare namespace javax {
         public volume: int
         public constructor()
       }
-
     }
   }
 }

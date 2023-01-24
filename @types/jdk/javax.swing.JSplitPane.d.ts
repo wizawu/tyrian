@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JSplitPane extends javax.swing.JComponent implements javax.accessibility.Accessible {
       public static readonly VERTICAL_SPLIT: int
       public static readonly HORIZONTAL_SPLIT: int
@@ -27,7 +26,12 @@ declare namespace javax {
       public constructor(arg0: number | java.lang.Integer)
       public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean)
       public constructor(arg0: number | java.lang.Integer, arg1: java.awt.Component, arg2: java.awt.Component)
-      public constructor(arg0: number | java.lang.Integer, arg1: boolean | java.lang.Boolean, arg2: java.awt.Component, arg3: java.awt.Component)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: boolean | java.lang.Boolean,
+        arg2: java.awt.Component,
+        arg3: java.awt.Component
+      )
       public setUI(arg0: javax.swing.plaf.SplitPaneUI): void
       public getUI(): javax.swing.plaf.SplitPaneUI
       public updateUI(): void
@@ -69,6 +73,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

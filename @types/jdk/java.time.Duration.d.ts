@@ -1,7 +1,8 @@
 declare namespace java {
   namespace time {
-
-    class Duration implements java.time.temporal.TemporalAmount, java.lang.Comparable<java.time.Duration>, java.io.Serializable {
+    class Duration
+      implements java.time.temporal.TemporalAmount, java.lang.Comparable<java.time.Duration>, java.io.Serializable
+    {
       public static readonly ZERO: java.time.Duration
       public static ofDays(arg0: number | java.lang.Long): java.time.Duration
       public static ofHours(arg0: number | java.lang.Long): java.time.Duration
@@ -66,6 +67,5 @@ declare namespace java {
       static readExternal(arg0: java.io.DataInput): java.time.Duration
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

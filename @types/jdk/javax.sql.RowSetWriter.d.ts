@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace sql {
-
     interface RowSetWriter$$lambda {
       (arg0: javax.sql.RowSetInternal): boolean | java.lang.Boolean
     }
@@ -8,6 +7,5 @@ declare namespace javax {
     interface RowSetWriter {
       writeData(arg0: javax.sql.RowSetInternal): boolean
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     abstract class Spring {
       public static readonly UNSET: int
       protected constructor()
@@ -13,7 +12,11 @@ declare namespace javax {
       setStrain(arg0: number | java.lang.Double): void
       isCyclic(arg0: javax.swing.SpringLayout): boolean
       public static constant(arg0: number | java.lang.Integer): javax.swing.Spring
-      public static constant(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): javax.swing.Spring
+      public static constant(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): javax.swing.Spring
       public static minus(arg0: javax.swing.Spring): javax.swing.Spring
       public static sum(arg0: javax.swing.Spring, arg1: javax.swing.Spring): javax.swing.Spring
       public static max(arg0: javax.swing.Spring, arg1: javax.swing.Spring): javax.swing.Spring
@@ -22,6 +25,5 @@ declare namespace javax {
       public static width(arg0: java.awt.Component): javax.swing.Spring
       public static height(arg0: java.awt.Component): javax.swing.Spring
     }
-
   }
 }

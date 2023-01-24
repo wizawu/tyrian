@@ -1,7 +1,6 @@
 declare namespace java {
   namespace rmi {
     namespace activation {
-
       class ActivationException extends java.lang.Exception {
         public detail: java.lang.Throwable
         public constructor()
@@ -10,7 +9,6 @@ declare namespace java {
         public getMessage(): java.lang.String
         public getCause(): java.lang.Throwable
       }
-
     }
   }
 }

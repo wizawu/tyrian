@@ -2,7 +2,6 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace scripting {
-
         abstract class AbstractJSObject implements jdk.nashorn.api.scripting.JSObject {
           public constructor()
           public call(arg0: java.lang.Object | any, ...vargs: (java.lang.Object | any)[]): java.lang.Object
@@ -24,9 +23,11 @@ declare namespace jdk {
           public isStrictFunction(): boolean
           public isArray(): boolean
           public toNumber(): number
-          public static getDefaultValue(arg0: jdk.nashorn.api.scripting.JSObject, arg1: java.lang.Class<unknown>): java.lang.Object
+          public static getDefaultValue(
+            arg0: jdk.nashorn.api.scripting.JSObject,
+            arg1: java.lang.Class<unknown>
+          ): java.lang.Object
         }
-
       }
     }
   }

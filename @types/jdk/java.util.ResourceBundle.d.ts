@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     abstract class ResourceBundle {
       protected parent: java.util.ResourceBundle
       static readonly $assertionsDisabled: boolean
@@ -12,13 +11,33 @@ declare namespace java {
       public getLocale(): java.util.Locale
       protected setParent(arg0: java.util.ResourceBundle): void
       public static getBundle(arg0: java.lang.String | string): java.util.ResourceBundle
-      public static getBundle(arg0: java.lang.String | string, arg1: java.util.ResourceBundle$Control): java.util.ResourceBundle
+      public static getBundle(
+        arg0: java.lang.String | string,
+        arg1: java.util.ResourceBundle$Control
+      ): java.util.ResourceBundle
       public static getBundle(arg0: java.lang.String | string, arg1: java.util.Locale): java.util.ResourceBundle
       public static getBundle(arg0: java.lang.String | string, arg1: java.lang.Module): java.util.ResourceBundle
-      public static getBundle(arg0: java.lang.String | string, arg1: java.util.Locale, arg2: java.lang.Module): java.util.ResourceBundle
-      public static getBundle(arg0: java.lang.String | string, arg1: java.util.Locale, arg2: java.util.ResourceBundle$Control): java.util.ResourceBundle
-      public static getBundle(arg0: java.lang.String | string, arg1: java.util.Locale, arg2: java.lang.ClassLoader): java.util.ResourceBundle
-      public static getBundle(arg0: java.lang.String | string, arg1: java.util.Locale, arg2: java.lang.ClassLoader, arg3: java.util.ResourceBundle$Control): java.util.ResourceBundle
+      public static getBundle(
+        arg0: java.lang.String | string,
+        arg1: java.util.Locale,
+        arg2: java.lang.Module
+      ): java.util.ResourceBundle
+      public static getBundle(
+        arg0: java.lang.String | string,
+        arg1: java.util.Locale,
+        arg2: java.util.ResourceBundle$Control
+      ): java.util.ResourceBundle
+      public static getBundle(
+        arg0: java.lang.String | string,
+        arg1: java.util.Locale,
+        arg2: java.lang.ClassLoader
+      ): java.util.ResourceBundle
+      public static getBundle(
+        arg0: java.lang.String | string,
+        arg1: java.util.Locale,
+        arg2: java.lang.ClassLoader,
+        arg3: java.util.ResourceBundle$Control
+      ): java.util.ResourceBundle
       public static clearCache(): void
       public static clearCache(arg0: java.lang.ClassLoader): void
       protected abstract handleGetObject(arg0: java.lang.String | string): java.lang.Object
@@ -27,6 +46,5 @@ declare namespace java {
       public keySet(): java.util.Set<java.lang.String>
       protected handleKeySet(): java.util.Set<java.lang.String>
     }
-
   }
 }

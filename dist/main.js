@@ -15474,21 +15474,11 @@ function realPath(command) {
   }
 }
 function javap(classPaths, classList) {
-  let command = process.env.JAVAP;
-  if (!command) {
-    try {
-      const runtime = "nashorn";
-      command = runtime ? path2.resolve(locateJdk(runtime)[1], "bin", "javap") : realPath("javap");
-    } catch (e) {
-      command = realPath("javap");
-    }
-  }
-  const child = (0, import_child_process.spawnSync)(command, ["-package", "-cp", ":" + classPaths.join(":"), ...classList]);
+  const child = (0, import_child_process.spawnSync)("javap", ["-package", "-cp", ":" + classPaths.join(":"), ...classList]);
   if (child.status === 0) {
     return child.stdout.toString();
   } else {
-    console.error(child.stderr.toString());
-    return null;
+    throw new Error(child.stderr.toString());
   }
 }
 function locateJdk(runtime) {
@@ -32507,7 +32497,7 @@ var interfaces_default = {
     5
   ],
   "jdk.jshell.tool.JavaShellToolBuilder": [
-    13
+    14
   ],
   "jdk.management.jfr.FlightRecorderMXBean": [
     19,

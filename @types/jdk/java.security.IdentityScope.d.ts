@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     abstract class IdentityScope extends java.security.Identity {
       protected constructor()
       public constructor(arg0: java.lang.String | string)
@@ -16,6 +15,5 @@ declare namespace java {
       public abstract identities(): java.util.Enumeration<java.security.Identity>
       public toString(): java.lang.String
     }
-
   }
 }

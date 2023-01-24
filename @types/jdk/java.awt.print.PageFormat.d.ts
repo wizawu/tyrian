@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace print {
-
       class PageFormat implements java.lang.Cloneable {
         public static readonly LANDSCAPE: int
         public static readonly PORTRAIT: int
@@ -20,7 +19,6 @@ declare namespace java {
         public getOrientation(): number
         public getMatrix(): number[]
       }
-
     }
   }
 }

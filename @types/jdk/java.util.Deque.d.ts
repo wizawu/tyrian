@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     interface Deque<E> extends java.util.Queue<E> {
       addFirst(arg0: E): void
       addLast(arg0: E): void
@@ -31,6 +30,5 @@ declare namespace java {
       iterator(): java.util.Iterator<E>
       descendingIterator(): java.util.Iterator<E>
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace rmi {
     namespace server {
-
       abstract class RemoteObject implements java.rmi.Remote, java.io.Serializable {
         protected ref: java.rmi.server.RemoteRef
         protected constructor()
@@ -12,7 +11,6 @@ declare namespace java {
         public equals(arg0: java.lang.Object | any): boolean
         public toString(): java.lang.String
       }
-
     }
   }
 }

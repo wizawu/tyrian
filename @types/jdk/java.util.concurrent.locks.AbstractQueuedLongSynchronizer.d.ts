@@ -2,15 +2,20 @@ declare namespace java {
   namespace util {
     namespace concurrent {
       namespace locks {
-
-        abstract class AbstractQueuedLongSynchronizer extends java.util.concurrent.locks.AbstractOwnableSynchronizer implements java.io.Serializable {
+        abstract class AbstractQueuedLongSynchronizer
+          extends java.util.concurrent.locks.AbstractOwnableSynchronizer
+          implements java.io.Serializable
+        {
           static readonly SPIN_FOR_TIMEOUT_THRESHOLD: long
           protected constructor()
           protected getState(): number
           protected setState(arg0: number | java.lang.Long): void
           protected compareAndSetState(arg0: number | java.lang.Long, arg1: number | java.lang.Long): boolean
           static selfInterrupt(): void
-          acquireQueued(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node, arg1: number | java.lang.Long): boolean
+          acquireQueued(
+            arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node,
+            arg1: number | java.lang.Long
+          ): boolean
           protected tryAcquire(arg0: number | java.lang.Long): boolean
           protected tryRelease(arg0: number | java.lang.Long): boolean
           protected tryAcquireShared(arg0: number | java.lang.Long): number
@@ -41,10 +46,13 @@ declare namespace java {
           fullyRelease(arg0: java.util.concurrent.locks.AbstractQueuedSynchronizer$Node): number
           public owns(arg0: java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject): boolean
           public hasWaiters(arg0: java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject): boolean
-          public getWaitQueueLength(arg0: java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject): number
-          public getWaitingThreads(arg0: java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject): java.util.Collection<java.lang.Thread>
+          public getWaitQueueLength(
+            arg0: java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject
+          ): number
+          public getWaitingThreads(
+            arg0: java.util.concurrent.locks.AbstractQueuedLongSynchronizer$ConditionObject
+          ): java.util.Collection<java.lang.Thread>
         }
-
       }
     }
   }

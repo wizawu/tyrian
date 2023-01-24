@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     abstract class AbstractSequentialList<E> extends java.util.AbstractList<E> {
       protected constructor()
       public get(arg0: number | java.lang.Integer): E
@@ -11,6 +10,5 @@ declare namespace java {
       public iterator(): java.util.Iterator<E>
       public abstract listIterator(arg0: number | java.lang.Integer): java.util.ListIterator<E>
     }
-
   }
 }

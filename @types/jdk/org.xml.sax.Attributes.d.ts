@@ -1,7 +1,6 @@
 declare namespace org {
   namespace xml {
     namespace sax {
-
       interface Attributes {
         getLength(): number
         getURI(arg0: number | java.lang.Integer): java.lang.String
@@ -16,7 +15,6 @@ declare namespace org {
         getValue(arg0: java.lang.String | string, arg1: java.lang.String | string): java.lang.String
         getValue(arg0: java.lang.String | string): java.lang.String
       }
-
     }
   }
 }

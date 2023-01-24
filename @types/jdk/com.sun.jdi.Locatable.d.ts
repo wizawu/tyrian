@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace jdi {
-
       interface Locatable$$lambda {
         (): com.sun.jdi.Location
       }
@@ -9,7 +8,6 @@ declare namespace com {
       interface Locatable {
         location(): com.sun.jdi.Location
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     interface ButtonModel extends java.awt.ItemSelectable {
       isArmed(): boolean
       isSelected(): boolean
@@ -25,6 +24,5 @@ declare namespace javax {
       addChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
       removeChangeListener(arg0: javax.swing.event.ChangeListener | javax.swing.event.ChangeListener$$lambda): void
     }
-
   }
 }

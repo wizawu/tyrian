@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JRadioButton extends javax.swing.JToggleButton implements javax.accessibility.Accessible {
       public constructor()
       public constructor(arg0: javax.swing.Icon)
@@ -16,6 +15,5 @@ declare namespace javax {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

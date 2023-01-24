@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     class Inet4Address extends java.net.InetAddress {
       static readonly INADDRSZ: int
       constructor()
@@ -22,6 +21,5 @@ declare namespace java {
       public equals(arg0: java.lang.Object | any): boolean
       static numericToTextFormat(arg0: number[] | java.lang.Byte[]): java.lang.String
     }
-
   }
 }

@@ -1,17 +1,16 @@
 declare namespace java {
   namespace sql {
-
     interface ResultSet extends java.sql.Wrapper, java.lang.AutoCloseable {
-      public static readonly FETCH_FORWARD: int
-      public static readonly FETCH_REVERSE: int
-      public static readonly FETCH_UNKNOWN: int
-      public static readonly TYPE_FORWARD_ONLY: int
-      public static readonly TYPE_SCROLL_INSENSITIVE: int
-      public static readonly TYPE_SCROLL_SENSITIVE: int
-      public static readonly CONCUR_READ_ONLY: int
-      public static readonly CONCUR_UPDATABLE: int
-      public static readonly HOLD_CURSORS_OVER_COMMIT: int
-      public static readonly CLOSE_CURSORS_AT_COMMIT: int
+      readonly FETCH_FORWARD: int
+      readonly FETCH_REVERSE: int
+      readonly FETCH_UNKNOWN: int
+      readonly TYPE_FORWARD_ONLY: int
+      readonly TYPE_SCROLL_INSENSITIVE: int
+      readonly TYPE_SCROLL_SENSITIVE: int
+      readonly CONCUR_READ_ONLY: int
+      readonly CONCUR_UPDATABLE: int
+      readonly HOLD_CURSORS_OVER_COMMIT: int
+      readonly CLOSE_CURSORS_AT_COMMIT: int
       next(): boolean
       close(): void
       wasNull(): boolean
@@ -93,10 +92,26 @@ declare namespace java {
       updateDate(arg0: number | java.lang.Integer, arg1: java.sql.Date): void
       updateTime(arg0: number | java.lang.Integer, arg1: java.sql.Time): void
       updateTimestamp(arg0: number | java.lang.Integer, arg1: java.sql.Timestamp): void
-      updateAsciiStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      updateBinaryStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      updateCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader, arg2: number | java.lang.Integer): void
-      updateObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
+      updateAsciiStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
+      updateBinaryStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
+      updateCharacterStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.Reader,
+        arg2: number | java.lang.Integer
+      ): void
+      updateObject(
+        arg0: number | java.lang.Integer,
+        arg1: java.lang.Object | any,
+        arg2: number | java.lang.Integer
+      ): void
       updateObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any): void
       updateNull(arg0: java.lang.String | string): void
       updateBoolean(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): void
@@ -112,10 +127,26 @@ declare namespace java {
       updateDate(arg0: java.lang.String | string, arg1: java.sql.Date): void
       updateTime(arg0: java.lang.String | string, arg1: java.sql.Time): void
       updateTimestamp(arg0: java.lang.String | string, arg1: java.sql.Timestamp): void
-      updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Integer): void
-      updateCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: number | java.lang.Integer): void
-      updateObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
+      updateAsciiStream(
+        arg0: java.lang.String | string,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
+      updateBinaryStream(
+        arg0: java.lang.String | string,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Integer
+      ): void
+      updateCharacterStream(
+        arg0: java.lang.String | string,
+        arg1: java.io.Reader,
+        arg2: number | java.lang.Integer
+      ): void
+      updateObject(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: number | java.lang.Integer
+      ): void
       updateObject(arg0: java.lang.String | string, arg1: java.lang.Object | any): void
       insertRow(): void
       updateRow(): void
@@ -125,12 +156,18 @@ declare namespace java {
       moveToInsertRow(): void
       moveToCurrentRow(): void
       getStatement(): java.sql.Statement
-      getObject(arg0: number | java.lang.Integer, arg1: java.util.Map<java.lang.String,java.lang.Class<unknown>>): java.lang.Object
+      getObject(
+        arg0: number | java.lang.Integer,
+        arg1: java.util.Map<java.lang.String, java.lang.Class<unknown>>
+      ): java.lang.Object
       getRef(arg0: number | java.lang.Integer): java.sql.Ref
       getBlob(arg0: number | java.lang.Integer): java.sql.Blob
       getClob(arg0: number | java.lang.Integer): java.sql.Clob
       getArray(arg0: number | java.lang.Integer): java.sql.Array
-      getObject(arg0: java.lang.String | string, arg1: java.util.Map<java.lang.String,java.lang.Class<unknown>>): java.lang.Object
+      getObject(
+        arg0: java.lang.String | string,
+        arg1: java.util.Map<java.lang.String, java.lang.Class<unknown>>
+      ): java.lang.Object
       getRef(arg0: java.lang.String | string): java.sql.Ref
       getBlob(arg0: java.lang.String | string): java.sql.Blob
       getClob(arg0: java.lang.String | string): java.sql.Clob
@@ -171,13 +208,29 @@ declare namespace java {
       getNString(arg0: java.lang.String | string): java.lang.String
       getNCharacterStream(arg0: number | java.lang.Integer): java.io.Reader
       getNCharacterStream(arg0: java.lang.String | string): java.io.Reader
-      updateNCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader, arg2: number | java.lang.Long): void
+      updateNCharacterStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.Reader,
+        arg2: number | java.lang.Long
+      ): void
       updateNCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: number | java.lang.Long): void
-      updateAsciiStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
-      updateBinaryStream(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
+      updateAsciiStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Long
+      ): void
+      updateBinaryStream(
+        arg0: number | java.lang.Integer,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Long
+      ): void
       updateCharacterStream(arg0: number | java.lang.Integer, arg1: java.io.Reader, arg2: number | java.lang.Long): void
       updateAsciiStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
-      updateBinaryStream(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
+      updateBinaryStream(
+        arg0: java.lang.String | string,
+        arg1: java.io.InputStream,
+        arg2: number | java.lang.Long
+      ): void
       updateCharacterStream(arg0: java.lang.String | string, arg1: java.io.Reader, arg2: number | java.lang.Long): void
       updateBlob(arg0: number | java.lang.Integer, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
       updateBlob(arg0: java.lang.String | string, arg1: java.io.InputStream, arg2: number | java.lang.Long): void
@@ -201,11 +254,20 @@ declare namespace java {
       updateNClob(arg0: java.lang.String | string, arg1: java.io.Reader): void
       getObject<T>(arg0: number | java.lang.Integer, arg1: java.lang.Class<T>): T
       getObject<T>(arg0: java.lang.String | string, arg1: java.lang.Class<T>): T
-      updateObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: java.sql.SQLType, arg3: number | java.lang.Integer): void
-      updateObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.sql.SQLType, arg3: number | java.lang.Integer): void
+      updateObject(
+        arg0: number | java.lang.Integer,
+        arg1: java.lang.Object | any,
+        arg2: java.sql.SQLType,
+        arg3: number | java.lang.Integer
+      ): void
+      updateObject(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: java.sql.SQLType,
+        arg3: number | java.lang.Integer
+      ): void
       updateObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
       updateObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
     }
-
   }
 }

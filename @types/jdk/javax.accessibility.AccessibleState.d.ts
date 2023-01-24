@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace accessibility {
-
     class AccessibleState extends javax.accessibility.AccessibleBundle {
       public static readonly ACTIVE: javax.accessibility.AccessibleState
       public static readonly PRESSED: javax.accessibility.AccessibleState
@@ -33,6 +32,5 @@ declare namespace javax {
       public static readonly TRUNCATED: javax.accessibility.AccessibleState
       protected constructor(arg0: java.lang.String | string)
     }
-
   }
 }

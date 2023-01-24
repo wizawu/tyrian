@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace jdi {
-
       interface Location extends com.sun.jdi.Mirror, java.lang.Comparable<com.sun.jdi.Location> {
         declaringType(): com.sun.jdi.ReferenceType
         method(): com.sun.jdi.Method
@@ -15,7 +14,6 @@ declare namespace com {
         equals(arg0: java.lang.Object | any): boolean
         hashCode(): number
       }
-
     }
   }
 }

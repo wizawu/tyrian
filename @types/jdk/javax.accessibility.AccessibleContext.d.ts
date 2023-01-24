@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace accessibility {
-
     abstract class AccessibleContext {
       public static readonly ACCESSIBLE_NAME_PROPERTY: java.lang.String
       public static readonly ACCESSIBLE_DESCRIPTION_PROPERTY: java.lang.String
@@ -40,8 +39,12 @@ declare namespace javax {
       public abstract getAccessibleChildrenCount(): number
       public abstract getAccessibleChild(arg0: number | java.lang.Integer): javax.accessibility.Accessible
       public abstract getLocale(): java.util.Locale
-      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public addPropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public removePropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       public getAccessibleAction(): javax.accessibility.AccessibleAction
       public getAccessibleComponent(): javax.accessibility.AccessibleComponent
       public getAccessibleSelection(): javax.accessibility.AccessibleSelection
@@ -51,8 +54,11 @@ declare namespace javax {
       public getAccessibleIcon(): javax.accessibility.AccessibleIcon[]
       public getAccessibleRelationSet(): javax.accessibility.AccessibleRelationSet
       public getAccessibleTable(): javax.accessibility.AccessibleTable
-      public firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
+      public firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: java.lang.Object | any
+      ): void
     }
-
   }
 }

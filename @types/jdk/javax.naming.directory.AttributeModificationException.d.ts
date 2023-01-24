@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace naming {
     namespace directory {
-
       class AttributeModificationException extends javax.naming.NamingException {
         public constructor(arg0: java.lang.String | string)
         public constructor()
@@ -9,7 +8,6 @@ declare namespace javax {
         public getUnexecutedModifications(): javax.naming.directory.ModificationItem[]
         public toString(): java.lang.String
       }
-
     }
   }
 }

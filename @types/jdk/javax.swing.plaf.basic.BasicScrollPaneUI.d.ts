@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicScrollPaneUI extends javax.swing.plaf.ScrollPaneUI implements javax.swing.ScrollPaneConstants {
           protected scrollpane: javax.swing.JScrollPane
           protected vsbChangeListener: javax.swing.event.ChangeListener
@@ -24,7 +23,11 @@ declare namespace javax {
           protected uninstallKeyboardActions(arg0: javax.swing.JScrollPane): void
           public uninstallUI(arg0: javax.swing.JComponent): void
           protected syncScrollPaneWithViewport(): void
-          public getBaseline(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+          public getBaseline(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): number
           public getBaselineResizeBehavior(arg0: javax.swing.JComponent): java.awt.Component$BaselineResizeBehavior
           protected createViewportChangeListener(): javax.swing.event.ChangeListener
           protected createHSBChangeListener(): javax.swing.event.ChangeListener
@@ -36,7 +39,6 @@ declare namespace javax {
           protected updateColumnHeader(arg0: java.beans.PropertyChangeEvent): void
           protected createPropertyChangeListener(): java.beans.PropertyChangeListener
         }
-
       }
     }
   }

@@ -2,8 +2,10 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
-        class Fidelity extends javax.print.attribute.EnumSyntax implements javax.print.attribute.PrintJobAttribute, javax.print.attribute.PrintRequestAttribute {
+        class Fidelity
+          extends javax.print.attribute.EnumSyntax
+          implements javax.print.attribute.PrintJobAttribute, javax.print.attribute.PrintRequestAttribute
+        {
           public static readonly FIDELITY_TRUE: javax.print.attribute.standard.Fidelity
           public static readonly FIDELITY_FALSE: javax.print.attribute.standard.Fidelity
           protected constructor(arg0: number | java.lang.Integer)
@@ -12,7 +14,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace imageio {
-
     abstract class IIOParam {
       protected sourceRegion: java.awt.Rectangle
       protected sourceXSubsampling: int
@@ -15,7 +14,12 @@ declare namespace javax {
       protected constructor()
       public setSourceRegion(arg0: java.awt.Rectangle): void
       public getSourceRegion(): java.awt.Rectangle
-      public setSourceSubsampling(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+      public setSourceSubsampling(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): void
       public getSourceXSubsampling(): number
       public getSourceYSubsampling(): number
       public getSubsamplingXOffset(): number
@@ -32,6 +36,5 @@ declare namespace javax {
       public hasController(): boolean
       public activateController(): boolean
     }
-
   }
 }

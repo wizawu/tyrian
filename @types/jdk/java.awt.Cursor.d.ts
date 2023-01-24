@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Cursor implements java.io.Serializable {
       public static readonly DEFAULT_CURSOR: int
       public static readonly CROSSHAIR_CURSOR: int
@@ -31,6 +30,5 @@ declare namespace java {
       public getName(): java.lang.String
       public toString(): java.lang.String
     }
-
   }
 }

@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLTableRowElement extends org.w3c.dom.html.HTMLElement {
           getRowIndex(): number
           getSectionRowIndex(): number
@@ -20,7 +19,6 @@ declare namespace org {
           insertCell(arg0: number | java.lang.Integer): org.w3c.dom.html.HTMLElement
           deleteCell(arg0: number | java.lang.Integer): void
         }
-
       }
     }
   }

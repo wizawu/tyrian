@@ -2,9 +2,8 @@ declare namespace jdk {
   namespace nashorn {
     namespace api {
       namespace tree {
-
         interface Diagnostic {
-          public static readonly NOPOS: long
+          readonly NOPOS: long
           getKind(): jdk.nashorn.api.tree.Diagnostic$Kind
           getPosition(): number
           getFileName(): java.lang.String
@@ -13,7 +12,6 @@ declare namespace jdk {
           getCode(): java.lang.String
           getMessage(): java.lang.String
         }
-
       }
     }
   }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
       class TimeUnit extends java.lang.Enum<java.util.concurrent.TimeUnit> {
         public static readonly NANOSECONDS: java.util.concurrent.TimeUnit
         public static readonly MICROSECONDS: java.util.concurrent.TimeUnit
@@ -27,7 +26,6 @@ declare namespace java {
         public toChronoUnit(): java.time.temporal.ChronoUnit
         public static of(arg0: java.time.temporal.ChronoUnit): java.util.concurrent.TimeUnit
       }
-
     }
   }
 }

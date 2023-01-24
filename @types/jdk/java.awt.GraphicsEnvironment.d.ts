@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     abstract class GraphicsEnvironment {
       protected constructor()
       public static getLocalGraphicsEnvironment(): java.awt.GraphicsEnvironment
@@ -20,6 +19,5 @@ declare namespace java {
       public getCenterPoint(): java.awt.Point
       public getMaximumWindowBounds(): java.awt.Rectangle
     }
-
   }
 }

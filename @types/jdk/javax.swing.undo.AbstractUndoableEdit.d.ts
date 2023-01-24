@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace undo {
-
       class AbstractUndoableEdit implements javax.swing.undo.UndoableEdit, java.io.Serializable {
         protected static readonly UndoName: java.lang.String
         protected static readonly RedoName: java.lang.String
@@ -21,7 +20,6 @@ declare namespace javax {
         public getRedoPresentationName(): java.lang.String
         public toString(): java.lang.String
       }
-
     }
   }
 }

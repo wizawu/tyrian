@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     class ParsePosition {
       index: int
       errorIndex: int
@@ -13,6 +12,5 @@ declare namespace java {
       public hashCode(): number
       public toString(): java.lang.String
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace jar {
-
       class JarFile extends java.util.zip.ZipFile {
         public static readonly MANIFEST_NAME: java.lang.String
         public static baseVersion(): java.lang.Runtime$Version
@@ -11,7 +10,12 @@ declare namespace java {
         public constructor(arg0: java.io.File)
         public constructor(arg0: java.io.File, arg1: boolean | java.lang.Boolean)
         public constructor(arg0: java.io.File, arg1: boolean | java.lang.Boolean, arg2: number | java.lang.Integer)
-        public constructor(arg0: java.io.File, arg1: boolean | java.lang.Boolean, arg2: number | java.lang.Integer, arg3: java.lang.Runtime$Version)
+        public constructor(
+          arg0: java.io.File,
+          arg1: boolean | java.lang.Boolean,
+          arg2: number | java.lang.Integer,
+          arg3: java.lang.Runtime$Version
+        )
         public getVersion(): java.lang.Runtime$Version
         public isMultiRelease(): boolean
         public getManifest(): java.util.jar.Manifest
@@ -34,7 +38,6 @@ declare namespace java {
         setEagerValidation(arg0: boolean | java.lang.Boolean): void
         getManifestDigests(): java.util.List<java.lang.Object>
       }
-
     }
   }
 }

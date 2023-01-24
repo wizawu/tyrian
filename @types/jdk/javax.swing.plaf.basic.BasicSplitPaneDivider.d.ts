@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicSplitPaneDivider extends java.awt.Container implements java.beans.PropertyChangeListener {
           protected static readonly ONE_TOUCH_SIZE: int
           protected static readonly ONE_TOUCH_OFFSET: int
@@ -36,7 +35,6 @@ declare namespace javax {
           protected dragDividerTo(arg0: number | java.lang.Integer): void
           protected finishDraggingTo(arg0: number | java.lang.Integer): void
         }
-
       }
     }
   }

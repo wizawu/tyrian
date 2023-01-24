@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sql {
     namespace rowset {
-
       class RowSetMetaDataImpl implements javax.sql.RowSetMetaData, java.io.Serializable {
         static readonly serialVersionUID: long
         public constructor()
@@ -46,7 +45,6 @@ declare namespace javax {
         public unwrap<T>(arg0: java.lang.Class<T>): T
         public isWrapperFor(arg0: java.lang.Class<unknown>): boolean
       }
-
     }
   }
 }

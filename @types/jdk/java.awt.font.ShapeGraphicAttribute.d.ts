@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace font {
-
       class ShapeGraphicAttribute extends java.awt.font.GraphicAttribute {
         public static readonly STROKE: boolean
         public static readonly FILL: boolean
@@ -16,7 +15,6 @@ declare namespace java {
         public equals(arg0: java.lang.Object | any): boolean
         public equals(arg0: java.awt.font.ShapeGraphicAttribute): boolean
       }
-
     }
   }
 }

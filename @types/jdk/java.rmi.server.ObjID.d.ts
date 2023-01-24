@@ -1,7 +1,6 @@
 declare namespace java {
   namespace rmi {
     namespace server {
-
       class ObjID implements java.io.Serializable {
         public static readonly REGISTRY_ID: int
         public static readonly ACTIVATOR_ID: int
@@ -14,7 +13,6 @@ declare namespace java {
         public equals(arg0: java.lang.Object | any): boolean
         public toString(): java.lang.String
       }
-
     }
   }
 }

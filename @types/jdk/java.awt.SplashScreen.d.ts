@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class SplashScreen {
       static readonly $assertionsDisabled: boolean
       constructor(arg0: number | java.lang.Long)
@@ -15,6 +14,5 @@ declare namespace java {
       static markClosed(): void
       public isVisible(): boolean
     }
-
   }
 }

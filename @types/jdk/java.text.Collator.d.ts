@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     abstract class Collator implements java.util.Comparator<java.lang.Object>, java.lang.Cloneable {
       public static readonly PRIMARY: int
       public static readonly SECONDARY: int
@@ -28,6 +27,5 @@ declare namespace java {
       public abstract hashCode(): number
       protected constructor()
     }
-
   }
 }

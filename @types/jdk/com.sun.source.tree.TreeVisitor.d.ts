@@ -2,8 +2,7 @@ declare namespace com {
   namespace sun {
     namespace source {
       namespace tree {
-
-        interface TreeVisitor<R,P> {
+        interface TreeVisitor<R, P> {
           visitAnnotatedType(arg0: com.sun.source.tree.AnnotatedTypeTree, arg1: P): R
           visitAnnotation(arg0: com.sun.source.tree.AnnotationTree, arg1: P): R
           visitMethodInvocation(arg0: com.sun.source.tree.MethodInvocationTree, arg1: P): R
@@ -65,7 +64,6 @@ declare namespace com {
           visitUses(arg0: com.sun.source.tree.UsesTree, arg1: P): R
           visitOther(arg0: com.sun.source.tree.Tree, arg1: P): R
         }
-
       }
     }
   }

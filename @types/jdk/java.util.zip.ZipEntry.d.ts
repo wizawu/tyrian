@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace zip {
-
       class ZipEntry implements java.util.zip.ZipConstants, java.lang.Cloneable {
         name: java.lang.String
         xdostime: long
@@ -15,6 +14,7 @@ declare namespace java {
         flag: int
         extra: byte[]
         comment: java.lang.String
+        extraAttributes: int
         public static readonly STORED: int
         public static readonly DEFLATED: int
         static readonly DOSTIME_BEFORE_1980: long
@@ -41,7 +41,11 @@ declare namespace java {
         public setMethod(arg0: number | java.lang.Integer): void
         public getMethod(): number
         public setExtra(arg0: number[] | java.lang.Byte[]): void
-        setExtra0(arg0: number[] | java.lang.Byte[], arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean): void
+        setExtra0(
+          arg0: number[] | java.lang.Byte[],
+          arg1: boolean | java.lang.Boolean,
+          arg2: boolean | java.lang.Boolean
+        ): void
         public getExtra(): number[]
         public setComment(arg0: java.lang.String | string): void
         public getComment(): java.lang.String
@@ -50,7 +54,6 @@ declare namespace java {
         public hashCode(): number
         public clone(): java.lang.Object
       }
-
     }
   }
 }

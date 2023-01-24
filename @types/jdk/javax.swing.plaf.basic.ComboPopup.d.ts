@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         interface ComboPopup {
           show(): void
           hide(): void
@@ -13,7 +12,6 @@ declare namespace javax {
           getKeyListener(): java.awt.event.KeyListener
           uninstallingUI(): void
         }
-
       }
     }
   }

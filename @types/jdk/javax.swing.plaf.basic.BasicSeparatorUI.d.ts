@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicSeparatorUI extends javax.swing.plaf.SeparatorUI {
           protected shadow: java.awt.Color
           protected highlight: java.awt.Color
@@ -19,7 +18,6 @@ declare namespace javax {
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
         }
-
       }
     }
   }

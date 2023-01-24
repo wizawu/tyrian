@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace imageio {
-
     abstract class ImageWriter implements javax.imageio.ImageTranscoder {
       protected originatingProvider: javax.imageio.spi.ImageWriterSpi
       protected output: java.lang.Object
@@ -18,13 +17,37 @@ declare namespace javax {
       public getLocale(): java.util.Locale
       public getDefaultWriteParam(): javax.imageio.ImageWriteParam
       public abstract getDefaultStreamMetadata(arg0: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
-      public abstract getDefaultImageMetadata(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
-      public abstract convertStreamMetadata(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
-      public abstract convertImageMetadata(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageTypeSpecifier, arg2: javax.imageio.ImageWriteParam): javax.imageio.metadata.IIOMetadata
-      public getNumThumbnailsSupported(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam, arg2: javax.imageio.metadata.IIOMetadata, arg3: javax.imageio.metadata.IIOMetadata): number
-      public getPreferredThumbnailSizes(arg0: javax.imageio.ImageTypeSpecifier, arg1: javax.imageio.ImageWriteParam, arg2: javax.imageio.metadata.IIOMetadata, arg3: javax.imageio.metadata.IIOMetadata): java.awt.Dimension[]
+      public abstract getDefaultImageMetadata(
+        arg0: javax.imageio.ImageTypeSpecifier,
+        arg1: javax.imageio.ImageWriteParam
+      ): javax.imageio.metadata.IIOMetadata
+      public abstract convertStreamMetadata(
+        arg0: javax.imageio.metadata.IIOMetadata,
+        arg1: javax.imageio.ImageWriteParam
+      ): javax.imageio.metadata.IIOMetadata
+      public abstract convertImageMetadata(
+        arg0: javax.imageio.metadata.IIOMetadata,
+        arg1: javax.imageio.ImageTypeSpecifier,
+        arg2: javax.imageio.ImageWriteParam
+      ): javax.imageio.metadata.IIOMetadata
+      public getNumThumbnailsSupported(
+        arg0: javax.imageio.ImageTypeSpecifier,
+        arg1: javax.imageio.ImageWriteParam,
+        arg2: javax.imageio.metadata.IIOMetadata,
+        arg3: javax.imageio.metadata.IIOMetadata
+      ): number
+      public getPreferredThumbnailSizes(
+        arg0: javax.imageio.ImageTypeSpecifier,
+        arg1: javax.imageio.ImageWriteParam,
+        arg2: javax.imageio.metadata.IIOMetadata,
+        arg3: javax.imageio.metadata.IIOMetadata
+      ): java.awt.Dimension[]
       public canWriteRasters(): boolean
-      public abstract write(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.IIOImage, arg2: javax.imageio.ImageWriteParam): void
+      public abstract write(
+        arg0: javax.imageio.metadata.IIOMetadata,
+        arg1: javax.imageio.IIOImage,
+        arg2: javax.imageio.ImageWriteParam
+      ): void
       public write(arg0: javax.imageio.IIOImage): void
       public write(arg0: java.awt.image.RenderedImage): void
       public canWriteSequence(): boolean
@@ -36,14 +59,34 @@ declare namespace javax {
       public canReplaceImageMetadata(arg0: number | java.lang.Integer): boolean
       public replaceImageMetadata(arg0: number | java.lang.Integer, arg1: javax.imageio.metadata.IIOMetadata): void
       public canInsertImage(arg0: number | java.lang.Integer): boolean
-      public writeInsert(arg0: number | java.lang.Integer, arg1: javax.imageio.IIOImage, arg2: javax.imageio.ImageWriteParam): void
+      public writeInsert(
+        arg0: number | java.lang.Integer,
+        arg1: javax.imageio.IIOImage,
+        arg2: javax.imageio.ImageWriteParam
+      ): void
       public canRemoveImage(arg0: number | java.lang.Integer): boolean
       public removeImage(arg0: number | java.lang.Integer): void
       public canWriteEmpty(): boolean
-      public prepareWriteEmpty(arg0: javax.imageio.metadata.IIOMetadata, arg1: javax.imageio.ImageTypeSpecifier, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: javax.imageio.metadata.IIOMetadata, arg5: java.util.List<java.awt.image.BufferedImage>, arg6: javax.imageio.ImageWriteParam): void
+      public prepareWriteEmpty(
+        arg0: javax.imageio.metadata.IIOMetadata,
+        arg1: javax.imageio.ImageTypeSpecifier,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: javax.imageio.metadata.IIOMetadata,
+        arg5: java.util.List<java.awt.image.BufferedImage>,
+        arg6: javax.imageio.ImageWriteParam
+      ): void
       public endWriteEmpty(): void
       public canInsertEmpty(arg0: number | java.lang.Integer): boolean
-      public prepareInsertEmpty(arg0: number | java.lang.Integer, arg1: javax.imageio.ImageTypeSpecifier, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: javax.imageio.metadata.IIOMetadata, arg5: java.util.List<java.awt.image.BufferedImage>, arg6: javax.imageio.ImageWriteParam): void
+      public prepareInsertEmpty(
+        arg0: number | java.lang.Integer,
+        arg1: javax.imageio.ImageTypeSpecifier,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: javax.imageio.metadata.IIOMetadata,
+        arg5: java.util.List<java.awt.image.BufferedImage>,
+        arg6: javax.imageio.ImageWriteParam
+      ): void
       public endInsertEmpty(): void
       public canReplacePixels(arg0: number | java.lang.Integer): boolean
       public prepareReplacePixels(arg0: number | java.lang.Integer, arg1: java.awt.Rectangle): void
@@ -53,8 +96,12 @@ declare namespace javax {
       public abort(): void
       protected abortRequested(): boolean
       protected clearAbortRequest(): void
-      public addIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener | javax.imageio.event.IIOWriteWarningListener$$lambda): void
-      public removeIIOWriteWarningListener(arg0: javax.imageio.event.IIOWriteWarningListener | javax.imageio.event.IIOWriteWarningListener$$lambda): void
+      public addIIOWriteWarningListener(
+        arg0: javax.imageio.event.IIOWriteWarningListener | javax.imageio.event.IIOWriteWarningListener$$lambda
+      ): void
+      public removeIIOWriteWarningListener(
+        arg0: javax.imageio.event.IIOWriteWarningListener | javax.imageio.event.IIOWriteWarningListener$$lambda
+      ): void
       public removeAllIIOWriteWarningListeners(): void
       public addIIOWriteProgressListener(arg0: javax.imageio.event.IIOWriteProgressListener): void
       public removeIIOWriteProgressListener(arg0: javax.imageio.event.IIOWriteProgressListener): void
@@ -67,10 +114,13 @@ declare namespace javax {
       protected processThumbnailComplete(): void
       protected processWriteAborted(): void
       protected processWarningOccurred(arg0: number | java.lang.Integer, arg1: java.lang.String | string): void
-      protected processWarningOccurred(arg0: number | java.lang.Integer, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+      protected processWarningOccurred(
+        arg0: number | java.lang.Integer,
+        arg1: java.lang.String | string,
+        arg2: java.lang.String | string
+      ): void
       public reset(): void
       public dispose(): void
     }
-
   }
 }

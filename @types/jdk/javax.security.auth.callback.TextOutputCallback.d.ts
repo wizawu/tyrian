@@ -2,7 +2,6 @@ declare namespace javax {
   namespace security {
     namespace auth {
       namespace callback {
-
         class TextOutputCallback implements javax.security.auth.callback.Callback, java.io.Serializable {
           public static readonly INFORMATION: int
           public static readonly WARNING: int
@@ -11,7 +10,6 @@ declare namespace javax {
           public getMessageType(): number
           public getMessage(): java.lang.String
         }
-
       }
     }
   }

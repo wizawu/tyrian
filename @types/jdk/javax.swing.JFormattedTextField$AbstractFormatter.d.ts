@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     abstract class JFormattedTextField$AbstractFormatter implements java.io.Serializable {
       public constructor()
       public install(arg0: javax.swing.JFormattedTextField): void
@@ -15,6 +14,5 @@ declare namespace javax {
       protected getNavigationFilter(): javax.swing.text.NavigationFilter
       protected clone(): java.lang.Object
     }
-
   }
 }

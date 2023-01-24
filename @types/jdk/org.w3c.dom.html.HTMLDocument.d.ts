@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLDocument extends org.w3c.dom.Document {
           getTitle(): java.lang.String
           setTitle(arg0: java.lang.String | string): void
@@ -24,7 +23,6 @@ declare namespace org {
           writeln(arg0: java.lang.String | string): void
           getElementsByName(arg0: java.lang.String | string): org.w3c.dom.NodeList
         }
-
       }
     }
   }

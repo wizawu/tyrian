@@ -1,16 +1,20 @@
 declare namespace java {
   namespace awt {
     namespace print {
-
       abstract class PrinterJob {
         public static getPrinterJob(): java.awt.print.PrinterJob
         public static lookupPrintServices(): javax.print.PrintService[]
-        public static lookupStreamPrintServices(arg0: java.lang.String | string): javax.print.StreamPrintServiceFactory[]
+        public static lookupStreamPrintServices(
+          arg0: java.lang.String | string
+        ): javax.print.StreamPrintServiceFactory[]
         public constructor()
         public getPrintService(): javax.print.PrintService
         public setPrintService(arg0: javax.print.PrintService): void
         public abstract setPrintable(arg0: java.awt.print.Printable | java.awt.print.Printable$$lambda): void
-        public abstract setPrintable(arg0: java.awt.print.Printable | java.awt.print.Printable$$lambda, arg1: java.awt.print.PageFormat): void
+        public abstract setPrintable(
+          arg0: java.awt.print.Printable | java.awt.print.Printable$$lambda,
+          arg1: java.awt.print.PageFormat
+        ): void
         public abstract setPageable(arg0: java.awt.print.Pageable): void
         public abstract printDialog(): boolean
         public printDialog(arg0: javax.print.attribute.PrintRequestAttributeSet): boolean
@@ -30,7 +34,6 @@ declare namespace java {
         public abstract cancel(): void
         public abstract isCancelled(): boolean
       }
-
     }
   }
 }

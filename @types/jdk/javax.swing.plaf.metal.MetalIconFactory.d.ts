@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalIconFactory implements java.io.Serializable {
           public static readonly DARK: boolean
           public static readonly LIGHT: boolean
@@ -33,7 +32,6 @@ declare namespace javax {
           public static getHorizontalSliderThumbIcon(): javax.swing.Icon
           public static getVerticalSliderThumbIcon(): javax.swing.Icon
         }
-
       }
     }
   }

@@ -2,8 +2,7 @@ declare namespace com {
   namespace sun {
     namespace source {
       namespace util {
-
-        class SimpleDocTreeVisitor<R,P> implements com.sun.source.doctree.DocTreeVisitor<R,P> {
+        class SimpleDocTreeVisitor<R, P> implements com.sun.source.doctree.DocTreeVisitor<R, P> {
           protected readonly DEFAULT_VALUE: R
           protected constructor()
           protected constructor(arg0: R)
@@ -46,7 +45,6 @@ declare namespace com {
           public visitVersion(arg0: com.sun.source.doctree.VersionTree, arg1: P): R
           public visitOther(arg0: com.sun.source.doctree.DocTree, arg1: P): R
         }
-
       }
     }
   }

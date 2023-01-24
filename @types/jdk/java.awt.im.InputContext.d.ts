@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace im {
-
       class InputContext {
         protected constructor()
         public static getInstance(): java.awt.im.InputContext
@@ -17,7 +16,6 @@ declare namespace java {
         public dispose(): void
         public getInputMethodControlObject(): java.lang.Object
       }
-
     }
   }
 }

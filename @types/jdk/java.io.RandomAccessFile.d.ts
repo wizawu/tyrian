@@ -1,20 +1,31 @@
 declare namespace java {
   namespace io {
-
     class RandomAccessFile implements java.io.DataOutput, java.io.DataInput, java.io.Closeable {
       public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
       public constructor(arg0: java.io.File, arg1: java.lang.String | string)
       public getFD(): java.io.FileDescriptor
       public getChannel(): java.nio.channels.FileChannel
       public read(): number
-      public read(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): number
+      public read(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): number
       public read(arg0: number[] | java.lang.Byte[]): number
       public readFully(arg0: number[] | java.lang.Byte[]): void
-      public readFully(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public readFully(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public skipBytes(arg0: number | java.lang.Integer): number
       public write(arg0: number | java.lang.Integer): void
       public write(arg0: number[] | java.lang.Byte[]): void
-      public write(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public write(
+        arg0: number[] | java.lang.Byte[],
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public getFilePointer(): number
       public seek(arg0: number | java.lang.Long): void
       public length(): number
@@ -44,6 +55,5 @@ declare namespace java {
       public writeChars(arg0: java.lang.String | string): void
       public writeUTF(arg0: java.lang.String | string): void
     }
-
   }
 }

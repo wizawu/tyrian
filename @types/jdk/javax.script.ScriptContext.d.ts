@@ -1,12 +1,15 @@
 declare namespace javax {
   namespace script {
-
     interface ScriptContext {
-      public static readonly ENGINE_SCOPE: int
-      public static readonly GLOBAL_SCOPE: int
+      readonly ENGINE_SCOPE: int
+      readonly GLOBAL_SCOPE: int
       setBindings(arg0: javax.script.Bindings, arg1: number | java.lang.Integer): void
       getBindings(arg0: number | java.lang.Integer): javax.script.Bindings
-      setAttribute(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: number | java.lang.Integer): void
+      setAttribute(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: number | java.lang.Integer
+      ): void
       getAttribute(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.lang.Object
       removeAttribute(arg0: java.lang.String | string, arg1: number | java.lang.Integer): java.lang.Object
       getAttribute(arg0: java.lang.String | string): java.lang.Object
@@ -19,6 +22,5 @@ declare namespace javax {
       setReader(arg0: java.io.Reader): void
       getScopes(): java.util.List<java.lang.Integer>
     }
-
   }
 }

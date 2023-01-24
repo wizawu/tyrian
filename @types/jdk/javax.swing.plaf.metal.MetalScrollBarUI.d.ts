@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace metal {
-
         class MetalScrollBarUI extends javax.swing.plaf.basic.BasicScrollBarUI {
           protected increaseButton: javax.swing.plaf.metal.MetalScrollButton
           protected decreaseButton: javax.swing.plaf.metal.MetalScrollButton
@@ -21,9 +20,13 @@ declare namespace javax {
           protected paintTrack(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
           protected paintThumb(arg0: java.awt.Graphics, arg1: javax.swing.JComponent, arg2: java.awt.Rectangle): void
           protected getMinimumThumbSize(): java.awt.Dimension
-          protected setThumbBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+          protected setThumbBounds(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer
+          ): void
         }
-
       }
     }
   }

@@ -1,7 +1,9 @@
 declare namespace javax {
   namespace swing {
-
-    class DefaultCellEditor extends javax.swing.AbstractCellEditor implements javax.swing.table.TableCellEditor, javax.swing.tree.TreeCellEditor {
+    class DefaultCellEditor
+      extends javax.swing.AbstractCellEditor
+      implements javax.swing.table.TableCellEditor, javax.swing.tree.TreeCellEditor
+    {
       protected editorComponent: javax.swing.JComponent
       protected delegate: javax.swing.DefaultCellEditor$EditorDelegate
       protected clickCountToStart: int
@@ -16,9 +18,21 @@ declare namespace javax {
       public shouldSelectCell(arg0: java.util.EventObject): boolean
       public stopCellEditing(): boolean
       public cancelCellEditing(): void
-      public getTreeCellEditorComponent(arg0: javax.swing.JTree, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: boolean | java.lang.Boolean, arg5: number | java.lang.Integer): java.awt.Component
-      public getTableCellEditorComponent(arg0: javax.swing.JTable, arg1: java.lang.Object | any, arg2: boolean | java.lang.Boolean, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer): java.awt.Component
+      public getTreeCellEditorComponent(
+        arg0: javax.swing.JTree,
+        arg1: java.lang.Object | any,
+        arg2: boolean | java.lang.Boolean,
+        arg3: boolean | java.lang.Boolean,
+        arg4: boolean | java.lang.Boolean,
+        arg5: number | java.lang.Integer
+      ): java.awt.Component
+      public getTableCellEditorComponent(
+        arg0: javax.swing.JTable,
+        arg1: java.lang.Object | any,
+        arg2: boolean | java.lang.Boolean,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      ): java.awt.Component
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace applet {
-
     interface AppletContext {
       getAudioClip(arg0: java.net.URL): java.applet.AudioClip
       getImage(arg0: java.net.URL): java.awt.Image
@@ -13,6 +12,5 @@ declare namespace java {
       getStream(arg0: java.lang.String | string): java.io.InputStream
       getStreamKeys(): java.util.Iterator<java.lang.String>
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class GregorianCalendar extends java.util.Calendar {
       public static readonly BC: int
       static readonly BCE: int
@@ -18,10 +17,35 @@ declare namespace java {
       public constructor(arg0: java.util.TimeZone)
       public constructor(arg0: java.util.Locale)
       public constructor(arg0: java.util.TimeZone, arg1: java.util.Locale)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer)
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer)
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Integer, arg5: number | java.lang.Integer, arg6: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer
+      )
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer
+      )
+      constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Integer,
+        arg5: number | java.lang.Integer,
+        arg6: number | java.lang.Integer
+      )
       constructor(arg0: java.util.TimeZone, arg1: java.util.Locale, arg2: boolean | java.lang.Boolean)
       public setGregorianChange(arg0: java.util.Date): void
       public getGregorianChange(): java.util.Date
@@ -43,13 +67,16 @@ declare namespace java {
       public setTimeZone(arg0: java.util.TimeZone): void
       public isWeekDateSupported(): boolean
       public getWeekYear(): number
-      public setWeekDate(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      public setWeekDate(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
       public getWeeksInWeekYear(): number
       protected computeFields(): void
       protected computeTime(): void
       public toZonedDateTime(): java.time.ZonedDateTime
       public static from(arg0: java.time.ZonedDateTime): java.util.GregorianCalendar
     }
-
   }
 }

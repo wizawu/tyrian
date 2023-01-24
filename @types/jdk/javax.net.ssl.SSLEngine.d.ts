@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace net {
     namespace ssl {
-
       abstract class SSLEngine {
         protected constructor()
         protected constructor(arg0: java.lang.String | string, arg1: number | java.lang.Integer)
@@ -9,10 +8,20 @@ declare namespace javax {
         public getPeerPort(): number
         public wrap(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer): javax.net.ssl.SSLEngineResult
         public wrap(arg0: java.nio.ByteBuffer[], arg1: java.nio.ByteBuffer): javax.net.ssl.SSLEngineResult
-        public abstract wrap(arg0: java.nio.ByteBuffer[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.nio.ByteBuffer): javax.net.ssl.SSLEngineResult
+        public abstract wrap(
+          arg0: java.nio.ByteBuffer[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer,
+          arg3: java.nio.ByteBuffer
+        ): javax.net.ssl.SSLEngineResult
         public unwrap(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer): javax.net.ssl.SSLEngineResult
         public unwrap(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer[]): javax.net.ssl.SSLEngineResult
-        public abstract unwrap(arg0: java.nio.ByteBuffer, arg1: java.nio.ByteBuffer[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): javax.net.ssl.SSLEngineResult
+        public abstract unwrap(
+          arg0: java.nio.ByteBuffer,
+          arg1: java.nio.ByteBuffer[],
+          arg2: number | java.lang.Integer,
+          arg3: number | java.lang.Integer
+        ): javax.net.ssl.SSLEngineResult
         public abstract getDelegatedTask(): java.lang.Runnable
         public abstract closeInbound(): void
         public abstract isInboundDone(): boolean
@@ -40,10 +49,19 @@ declare namespace javax {
         public setSSLParameters(arg0: javax.net.ssl.SSLParameters): void
         public getApplicationProtocol(): java.lang.String
         public getHandshakeApplicationProtocol(): java.lang.String
-        public setHandshakeApplicationProtocolSelector(arg0: java.util.function$.BiFunction<javax.net.ssl.SSLEngine,java.util.List<java.lang.String>,java.lang.String>): void
-        public getHandshakeApplicationProtocolSelector(): java.util.function$.BiFunction<javax.net.ssl.SSLEngine,java.util.List<java.lang.String>,java.lang.String>
+        public setHandshakeApplicationProtocolSelector(
+          arg0: java.util.function$.BiFunction<
+            javax.net.ssl.SSLEngine,
+            java.util.List<java.lang.String>,
+            java.lang.String
+          >
+        ): void
+        public getHandshakeApplicationProtocolSelector(): java.util.function$.BiFunction<
+          javax.net.ssl.SSLEngine,
+          java.util.List<java.lang.String>,
+          java.lang.String
+        >
       }
-
     }
   }
 }

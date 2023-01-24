@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace management {
     namespace jfr {
-
       class EventTypeInfo {
         constructor(arg0: jdk.jfr.EventType)
         public getLabel(): java.lang.String
@@ -13,7 +12,6 @@ declare namespace jdk {
         public toString(): java.lang.String
         public static from(arg0: javax.management.openmbean.CompositeData): jdk.management.jfr.EventTypeInfo
       }
-
     }
   }
 }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace util {
-
         class Elements$Origin extends java.lang.Enum<javax.lang.model.util.Elements$Origin> {
           public static readonly EXPLICIT: javax.lang.model.util.Elements$Origin
           public static readonly MANDATED: javax.lang.model.util.Elements$Origin
@@ -11,7 +10,6 @@ declare namespace javax {
           public static valueOf(arg0: java.lang.String | string): javax.lang.model.util.Elements$Origin
           public isDeclared(): boolean
         }
-
       }
     }
   }

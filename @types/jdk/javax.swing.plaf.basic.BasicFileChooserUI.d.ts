@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicFileChooserUI extends javax.swing.plaf.FileChooserUI {
           protected directoryIcon: javax.swing.Icon
           protected fileIcon: javax.swing.Icon
@@ -65,7 +64,10 @@ declare namespace javax {
           public getDefaultButton(arg0: javax.swing.JFileChooser): javax.swing.JButton
           public getApproveButtonToolTipText(arg0: javax.swing.JFileChooser): java.lang.String
           public clearIconCache(): void
-          protected createDoubleClickListener(arg0: javax.swing.JFileChooser, arg1: javax.swing.JList<unknown>): java.awt.event.MouseListener
+          protected createDoubleClickListener(
+            arg0: javax.swing.JFileChooser,
+            arg1: javax.swing.JList<unknown>
+          ): java.awt.event.MouseListener
           public createListSelectionListener(arg0: javax.swing.JFileChooser): javax.swing.event.ListSelectionListener
           protected isDirectorySelected(): boolean
           protected setDirectorySelected(arg0: boolean | java.lang.Boolean): void
@@ -83,7 +85,6 @@ declare namespace javax {
           public getCancelSelectionAction(): javax.swing.Action
           public getUpdateAction(): javax.swing.Action
         }
-
       }
     }
   }

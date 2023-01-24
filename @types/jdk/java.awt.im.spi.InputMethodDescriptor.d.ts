@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
     namespace im {
       namespace spi {
-
         interface InputMethodDescriptor {
           getAvailableLocales(): java.util.Locale[]
           hasDynamicLocaleList(): boolean
@@ -10,7 +9,6 @@ declare namespace java {
           getInputMethodIcon(arg0: java.util.Locale): java.awt.Image
           createInputMethod(): java.awt.im.spi.InputMethod
         }
-
       }
     }
   }

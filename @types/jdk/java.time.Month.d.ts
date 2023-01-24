@@ -1,7 +1,9 @@
 declare namespace java {
   namespace time {
-
-    class Month extends java.lang.Enum<java.time.Month> implements java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster {
+    class Month
+      extends java.lang.Enum<java.time.Month>
+      implements java.time.temporal.TemporalAccessor, java.time.temporal.TemporalAdjuster
+    {
       public static readonly JANUARY: java.time.Month
       public static readonly FEBRUARY: java.time.Month
       public static readonly MARCH: java.time.Month
@@ -34,6 +36,5 @@ declare namespace java {
       public query<R>(arg0: java.time.temporal.TemporalQuery<R> | java.time.temporal.TemporalQuery$$lambda<R>): R
       public adjustInto(arg0: java.time.temporal.Temporal): java.time.temporal.Temporal
     }
-
   }
 }

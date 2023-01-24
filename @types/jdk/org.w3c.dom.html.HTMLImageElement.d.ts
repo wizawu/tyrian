@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLImageElement extends org.w3c.dom.html.HTMLElement {
           getLowSrc(): java.lang.String
           setLowSrc(arg0: java.lang.String | string): void
@@ -31,7 +30,6 @@ declare namespace org {
           getWidth(): java.lang.String
           setWidth(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

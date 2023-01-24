@@ -1,13 +1,17 @@
 declare namespace java {
   namespace lang {
-
     class Throwable implements java.io.Serializable {
       static readonly $assertionsDisabled: boolean
       public constructor()
       public constructor(arg0: java.lang.String | string)
       public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
       public constructor(arg0: java.lang.Throwable)
-      protected constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean)
+      protected constructor(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Throwable,
+        arg2: boolean | java.lang.Boolean,
+        arg3: boolean | java.lang.Boolean
+      )
       public getMessage(): java.lang.String
       public getLocalizedMessage(): java.lang.String
       public getCause(): java.lang.Throwable
@@ -22,6 +26,5 @@ declare namespace java {
       public addSuppressed(arg0: java.lang.Throwable): void
       public getSuppressed(): java.lang.Throwable[]
     }
-
   }
 }

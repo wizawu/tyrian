@@ -1,11 +1,22 @@
 declare namespace java {
   namespace beans {
-
     class PropertyDescriptor extends java.beans.FeatureDescriptor {
       public constructor(arg0: java.lang.String | string, arg1: java.lang.Class<unknown>)
-      public constructor(arg0: java.lang.String | string, arg1: java.lang.Class<unknown>, arg2: java.lang.String | string, arg3: java.lang.String | string)
-      public constructor(arg0: java.lang.String | string, arg1: java.lang.reflect.Method, arg2: java.lang.reflect.Method)
-      constructor(arg0: java.util.Map$Entry<java.lang.String,com.sun.beans.introspect.PropertyInfo>, arg1: boolean | java.lang.Boolean)
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Class<unknown>,
+        arg2: java.lang.String | string,
+        arg3: java.lang.String | string
+      )
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: java.lang.reflect.Method,
+        arg2: java.lang.reflect.Method
+      )
+      constructor(
+        arg0: java.util.Map$Entry<java.lang.String, com.sun.beans.introspect.PropertyInfo>,
+        arg1: boolean | java.lang.Boolean
+      )
       public getPropertyType(): java.lang.Class<unknown>
       public getReadMethod(): java.lang.reflect.Method
       public setReadMethod(arg0: java.lang.reflect.Method): void
@@ -29,6 +40,5 @@ declare namespace java {
       appendTo(arg0: java.lang.StringBuilder): void
       isAssignable(arg0: java.lang.reflect.Method, arg1: java.lang.reflect.Method): boolean
     }
-
   }
 }

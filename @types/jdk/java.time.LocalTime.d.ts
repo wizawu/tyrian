@@ -1,7 +1,12 @@
 declare namespace java {
   namespace time {
-
-    class LocalTime implements java.time.temporal.Temporal, java.time.temporal.TemporalAdjuster, java.lang.Comparable<java.time.LocalTime>, java.io.Serializable {
+    class LocalTime
+      implements
+        java.time.temporal.Temporal,
+        java.time.temporal.TemporalAdjuster,
+        java.lang.Comparable<java.time.LocalTime>,
+        java.io.Serializable
+    {
       public static readonly MIN: java.time.LocalTime
       public static readonly MAX: java.time.LocalTime
       public static readonly MIDNIGHT: java.time.LocalTime
@@ -23,14 +28,26 @@ declare namespace java {
       public static now(arg0: java.time.ZoneId): java.time.LocalTime
       public static now(arg0: java.time.Clock): java.time.LocalTime
       public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.time.LocalTime
-      public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.time.LocalTime
-      public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): java.time.LocalTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.time.LocalTime
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      ): java.time.LocalTime
       public static ofInstant(arg0: java.time.Instant, arg1: java.time.ZoneId): java.time.LocalTime
       public static ofSecondOfDay(arg0: number | java.lang.Long): java.time.LocalTime
       public static ofNanoOfDay(arg0: number | java.lang.Long): java.time.LocalTime
       public static from(arg0: java.time.temporal.TemporalAccessor): java.time.LocalTime
       public static parse(arg0: string | java.lang.CharSequence): java.time.LocalTime
-      public static parse(arg0: string | java.lang.CharSequence, arg1: java.time.format.DateTimeFormatter): java.time.LocalTime
+      public static parse(
+        arg0: string | java.lang.CharSequence,
+        arg1: java.time.format.DateTimeFormatter
+      ): java.time.LocalTime
       public isSupported(arg0: java.time.temporal.TemporalField): boolean
       public isSupported(arg0: java.time.temporal.TemporalUnit): boolean
       public range(arg0: java.time.temporal.TemporalField): java.time.temporal.ValueRange
@@ -40,7 +57,9 @@ declare namespace java {
       public getMinute(): number
       public getSecond(): number
       public getNano(): number
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.LocalTime
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.LocalTime
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.LocalTime
       public withHour(arg0: number | java.lang.Integer): java.time.LocalTime
       public withMinute(arg0: number | java.lang.Integer): java.time.LocalTime
@@ -81,9 +100,10 @@ declare namespace java {
       public plus(arg0: number | java.lang.Long, arg1: java.time.temporal.TemporalUnit): java.time.temporal.Temporal
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.temporal.Temporal
       public with(arg0: java.time.temporal.TemporalField, arg1: number | java.lang.Long): java.time.temporal.Temporal
-      public with(arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda): java.time.temporal.Temporal
+      public with(
+        arg0: java.time.temporal.TemporalAdjuster | java.time.temporal.TemporalAdjuster$$lambda
+      ): java.time.temporal.Temporal
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

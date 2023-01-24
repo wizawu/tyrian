@@ -1,10 +1,15 @@
 declare namespace java {
   namespace time {
     namespace zone {
-
-      class ZoneOffsetTransition implements java.lang.Comparable<java.time.zone.ZoneOffsetTransition>, java.io.Serializable {
+      class ZoneOffsetTransition
+        implements java.lang.Comparable<java.time.zone.ZoneOffsetTransition>, java.io.Serializable
+      {
         static readonly $assertionsDisabled: boolean
-        public static of(arg0: java.time.LocalDateTime, arg1: java.time.ZoneOffset, arg2: java.time.ZoneOffset): java.time.zone.ZoneOffsetTransition
+        public static of(
+          arg0: java.time.LocalDateTime,
+          arg1: java.time.ZoneOffset,
+          arg2: java.time.ZoneOffset
+        ): java.time.zone.ZoneOffsetTransition
         constructor(arg0: java.time.LocalDateTime, arg1: java.time.ZoneOffset, arg2: java.time.ZoneOffset)
         constructor(arg0: number | java.lang.Long, arg1: java.time.ZoneOffset, arg2: java.time.ZoneOffset)
         writeExternal(arg0: java.io.DataOutput): void
@@ -26,7 +31,6 @@ declare namespace java {
         public toString(): java.lang.String
         public compareTo(arg0: java.lang.Object | any): number
       }
-
     }
   }
 }

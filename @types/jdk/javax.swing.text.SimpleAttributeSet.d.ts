@@ -1,8 +1,9 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
-      class SimpleAttributeSet implements javax.swing.text.MutableAttributeSet, java.io.Serializable, java.lang.Cloneable {
+      class SimpleAttributeSet
+        implements javax.swing.text.MutableAttributeSet, java.io.Serializable, java.lang.Cloneable
+      {
         public static readonly EMPTY: javax.swing.text.AttributeSet
         public constructor()
         public constructor(arg0: javax.swing.text.AttributeSet)
@@ -27,7 +28,6 @@ declare namespace javax {
         public equals(arg0: java.lang.Object | any): boolean
         public toString(): java.lang.String
       }
-
     }
   }
 }

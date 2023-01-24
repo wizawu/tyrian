@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace transform {
-
       class TransformerException extends java.lang.Exception {
         locator: javax.xml.transform.SourceLocator
         containedException: java.lang.Throwable
@@ -14,14 +13,17 @@ declare namespace javax {
         public constructor(arg0: java.lang.Throwable)
         public constructor(arg0: java.lang.String | string, arg1: java.lang.Throwable)
         public constructor(arg0: java.lang.String | string, arg1: javax.xml.transform.SourceLocator)
-        public constructor(arg0: java.lang.String | string, arg1: javax.xml.transform.SourceLocator, arg2: java.lang.Throwable)
+        public constructor(
+          arg0: java.lang.String | string,
+          arg1: javax.xml.transform.SourceLocator,
+          arg2: java.lang.Throwable
+        )
         public getMessageAndLocation(): java.lang.String
         public getLocationAsString(): java.lang.String
         public printStackTrace(): void
         public printStackTrace(arg0: java.io.PrintStream): void
         public printStackTrace(arg0: java.io.PrintWriter): void
       }
-
     }
   }
 }

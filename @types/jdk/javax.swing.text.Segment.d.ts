@@ -1,13 +1,17 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       class Segment implements java.lang.Cloneable, java.text.CharacterIterator, java.lang.CharSequence {
         public array: char[]
         public offset: int
         public count: int
+        copy: boolean
         public constructor()
-        public constructor(arg0: string[] | java.lang.Character[], arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(
+          arg0: string[] | java.lang.Character[],
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        )
         public setPartialReturn(arg0: boolean | java.lang.Boolean): void
         public isPartialReturn(): boolean
         public toString(): java.lang.String
@@ -25,7 +29,6 @@ declare namespace javax {
         public subSequence(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): string
         public clone(): java.lang.Object
       }
-
     }
   }
 }

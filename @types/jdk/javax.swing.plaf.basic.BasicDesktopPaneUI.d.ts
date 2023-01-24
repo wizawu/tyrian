@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicDesktopPaneUI extends javax.swing.plaf.DesktopPaneUI {
           protected desktop: javax.swing.JDesktopPane
           protected desktopManager: javax.swing.DesktopManager
@@ -34,7 +33,6 @@ declare namespace javax {
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           protected createPropertyChangeListener(): java.beans.PropertyChangeListener
         }
-
       }
     }
   }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class SortingFocusTraversalPolicy extends javax.swing.InternalFrameFocusTraversalPolicy {
       protected constructor()
       public constructor(arg0: java.util.Comparator<unknown>)
@@ -16,6 +15,5 @@ declare namespace javax {
       protected getComparator(): java.util.Comparator<unknown>
       protected accept(arg0: java.awt.Component): boolean
     }
-
   }
 }

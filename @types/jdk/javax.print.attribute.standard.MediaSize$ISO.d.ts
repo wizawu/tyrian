@@ -2,7 +2,6 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
         class MediaSize$ISO {
           public static readonly A0: javax.print.attribute.standard.MediaSize
           public static readonly A1: javax.print.attribute.standard.MediaSize
@@ -32,7 +31,6 @@ declare namespace javax {
           public static readonly C6: javax.print.attribute.standard.MediaSize
           public static readonly DESIGNATED_LONG: javax.print.attribute.standard.MediaSize
         }
-
       }
     }
   }

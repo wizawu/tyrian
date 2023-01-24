@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace jshell {
     namespace execution {
-
       class LocalExecutionControl extends jdk.jshell.execution.DirectExecutionControl {
         public constructor(arg0: jdk.jshell.execution.LoaderDelegate)
         public constructor()
@@ -10,7 +9,6 @@ declare namespace jdk {
         protected clientCodeEnter(): void
         protected clientCodeLeave(): void
       }
-
     }
   }
 }

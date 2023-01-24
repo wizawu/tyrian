@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace datatype {
-
       abstract class Duration {
         public constructor()
         public getXMLSchemaType(): javax.xml.namespace.QName
@@ -31,7 +30,6 @@ declare namespace javax {
         public abstract hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

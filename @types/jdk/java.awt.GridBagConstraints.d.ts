@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class GridBagConstraints implements java.lang.Cloneable, java.io.Serializable {
       public static readonly RELATIVE: int
       public static readonly REMAINDER: int
@@ -57,10 +56,21 @@ declare namespace java {
       centerPadding: int
       centerOffset: int
       public constructor()
-      public constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: number | java.lang.Double, arg5: number | java.lang.Double, arg6: number | java.lang.Integer, arg7: number | java.lang.Integer, arg8: java.awt.Insets, arg9: number | java.lang.Integer, arg10: number | java.lang.Integer)
+      public constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: number | java.lang.Double,
+        arg5: number | java.lang.Double,
+        arg6: number | java.lang.Integer,
+        arg7: number | java.lang.Integer,
+        arg8: java.awt.Insets,
+        arg9: number | java.lang.Integer,
+        arg10: number | java.lang.Integer
+      )
       public clone(): java.lang.Object
       isVerticallyResizable(): boolean
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class JCheckBox extends javax.swing.JToggleButton implements javax.accessibility.Accessible {
       public static readonly BORDER_PAINTED_FLAT_CHANGED_PROPERTY: java.lang.String
       public constructor()
@@ -19,6 +18,5 @@ declare namespace javax {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

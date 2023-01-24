@@ -1,13 +1,16 @@
 declare namespace java {
   namespace time {
-
     class Period implements java.time.chrono.ChronoPeriod, java.io.Serializable {
       public static readonly ZERO: java.time.Period
       public static ofYears(arg0: number | java.lang.Integer): java.time.Period
       public static ofMonths(arg0: number | java.lang.Integer): java.time.Period
       public static ofWeeks(arg0: number | java.lang.Integer): java.time.Period
       public static ofDays(arg0: number | java.lang.Integer): java.time.Period
-      public static of(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): java.time.Period
+      public static of(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): java.time.Period
       public static from(arg0: java.time.temporal.TemporalAmount): java.time.Period
       public static parse(arg0: string | java.lang.CharSequence): java.time.Period
       public static between(arg0: java.time.LocalDate, arg1: java.time.LocalDate): java.time.Period
@@ -48,6 +51,5 @@ declare namespace java {
       public plus(arg0: java.time.temporal.TemporalAmount): java.time.chrono.ChronoPeriod
       public getChronology(): java.time.chrono.Chronology
     }
-
   }
 }

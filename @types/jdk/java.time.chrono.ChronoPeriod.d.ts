@@ -1,9 +1,11 @@
 declare namespace java {
   namespace time {
     namespace chrono {
-
       interface ChronoPeriod extends java.time.temporal.TemporalAmount {
-        between(arg0: java.time.chrono.ChronoLocalDate, arg1: java.time.chrono.ChronoLocalDate): java.time.chrono.ChronoPeriod
+        between(
+          arg0: java.time.chrono.ChronoLocalDate,
+          arg1: java.time.chrono.ChronoLocalDate
+        ): java.time.chrono.ChronoPeriod
         get(arg0: java.time.temporal.TemporalUnit): number
         getUnits(): java.util.List<java.time.temporal.TemporalUnit>
         getChronology(): java.time.chrono.Chronology
@@ -20,7 +22,6 @@ declare namespace java {
         hashCode(): number
         toString(): java.lang.String
       }
-
     }
   }
 }

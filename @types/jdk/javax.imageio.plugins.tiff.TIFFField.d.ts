@@ -2,19 +2,38 @@ declare namespace javax {
   namespace imageio {
     namespace plugins {
       namespace tiff {
-
         class TIFFField implements java.lang.Cloneable {
-          public static createFromMetadataNode(arg0: javax.imageio.plugins.tiff.TIFFTagSet, arg1: org.w3c.dom.Node): javax.imageio.plugins.tiff.TIFFField
-          public constructor(arg0: javax.imageio.plugins.tiff.TIFFTag, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: java.lang.Object | any)
-          public constructor(arg0: javax.imageio.plugins.tiff.TIFFTag, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+          public static createFromMetadataNode(
+            arg0: javax.imageio.plugins.tiff.TIFFTagSet,
+            arg1: org.w3c.dom.Node
+          ): javax.imageio.plugins.tiff.TIFFField
+          public constructor(
+            arg0: javax.imageio.plugins.tiff.TIFFTag,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: java.lang.Object | any
+          )
+          public constructor(
+            arg0: javax.imageio.plugins.tiff.TIFFTag,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          )
           public constructor(arg0: javax.imageio.plugins.tiff.TIFFTag, arg1: number | java.lang.Long)
-          public constructor(arg0: javax.imageio.plugins.tiff.TIFFTag, arg1: number | java.lang.Integer, arg2: number | java.lang.Long, arg3: javax.imageio.plugins.tiff.TIFFDirectory)
+          public constructor(
+            arg0: javax.imageio.plugins.tiff.TIFFTag,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Long,
+            arg3: javax.imageio.plugins.tiff.TIFFDirectory
+          )
           public getTag(): javax.imageio.plugins.tiff.TIFFTag
           public getTagNumber(): number
           public getType(): number
           public static getTypeName(arg0: number | java.lang.Integer): java.lang.String
           public static getTypeByName(arg0: java.lang.String | string): number
-          public static createArrayForType(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.lang.Object
+          public static createArrayForType(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer
+          ): java.lang.Object
           public getAsNativeNode(): org.w3c.dom.Node
           public isIntegral(): boolean
           public getCount(): number
@@ -41,7 +60,6 @@ declare namespace javax {
           public clone(): javax.imageio.plugins.tiff.TIFFField
           public clone(): java.lang.Object
         }
-
       }
     }
   }

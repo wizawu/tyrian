@@ -2,8 +2,10 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
-        class BasicScrollBarUI extends javax.swing.plaf.ScrollBarUI implements java.awt.LayoutManager, javax.swing.SwingConstants {
+        class BasicScrollBarUI
+          extends javax.swing.plaf.ScrollBarUI
+          implements java.awt.LayoutManager, javax.swing.SwingConstants
+        {
           protected minimumThumbSize: java.awt.Dimension
           protected maximumThumbSize: java.awt.Dimension
           protected thumbHighlightColor: java.awt.Color
@@ -71,16 +73,25 @@ declare namespace javax {
           protected layoutVScrollbar(arg0: javax.swing.JScrollBar): void
           protected layoutHScrollbar(arg0: javax.swing.JScrollBar): void
           public layoutContainer(arg0: java.awt.Container): void
-          protected setThumbBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): void
+          protected setThumbBounds(
+            arg0: number | java.lang.Integer,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer
+          ): void
           protected getThumbBounds(): java.awt.Rectangle
           protected getTrackBounds(): java.awt.Rectangle
           static scrollByBlock(arg0: javax.swing.JScrollBar, arg1: number | java.lang.Integer): void
           protected scrollByBlock(arg0: number | java.lang.Integer): void
-          static scrollByUnits(arg0: javax.swing.JScrollBar, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean): void
+          static scrollByUnits(
+            arg0: javax.swing.JScrollBar,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer,
+            arg3: boolean | java.lang.Boolean
+          ): void
           protected scrollByUnit(arg0: number | java.lang.Integer): void
           public getSupportsAbsolutePositioning(): boolean
         }
-
       }
     }
   }

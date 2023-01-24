@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       class LabelView extends javax.swing.text.GlyphView implements javax.swing.text.TabableView {
         public constructor(arg0: javax.swing.text.Element)
         sync(): void
@@ -19,9 +18,12 @@ declare namespace javax {
         public isStrikeThrough(): boolean
         public isSubscript(): boolean
         public isSuperscript(): boolean
-        public changedUpdate(arg0: javax.swing.event.DocumentEvent, arg1: java.awt.Shape, arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$lambda): void
+        public changedUpdate(
+          arg0: javax.swing.event.DocumentEvent,
+          arg1: java.awt.Shape,
+          arg2: javax.swing.text.ViewFactory | javax.swing.text.ViewFactory$$lambda
+        ): void
       }
-
     }
   }
 }

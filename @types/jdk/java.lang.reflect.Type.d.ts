@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace reflect {
-
       interface Type$$lambda {
         (): java.lang.String | string
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface Type {
         getTypeName(): java.lang.String
       }
-
     }
   }
 }

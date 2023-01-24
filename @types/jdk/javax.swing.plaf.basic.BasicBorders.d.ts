@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicBorders {
           public constructor()
           public static getButtonBorder(): javax.swing.border.Border
@@ -15,7 +14,6 @@ declare namespace javax {
           public static getProgressBarBorder(): javax.swing.border.Border
           public static getInternalFrameBorder(): javax.swing.border.Border
         }
-
       }
     }
   }

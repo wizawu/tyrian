@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace regex {
-
       interface MatchResult {
         start(): number
         start(arg0: number | java.lang.Integer): number
@@ -11,7 +10,6 @@ declare namespace java {
         group(arg0: number | java.lang.Integer): java.lang.String
         groupCount(): number
       }
-
     }
   }
 }

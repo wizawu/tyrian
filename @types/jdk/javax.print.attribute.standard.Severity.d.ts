@@ -2,7 +2,6 @@ declare namespace javax {
   namespace print {
     namespace attribute {
       namespace standard {
-
         class Severity extends javax.print.attribute.EnumSyntax implements javax.print.attribute.Attribute {
           public static readonly REPORT: javax.print.attribute.standard.Severity
           public static readonly WARNING: javax.print.attribute.standard.Severity
@@ -13,7 +12,6 @@ declare namespace javax {
           public getCategory(): java.lang.Class<javax.print.attribute.Attribute>
           public getName(): java.lang.String
         }
-
       }
     }
   }

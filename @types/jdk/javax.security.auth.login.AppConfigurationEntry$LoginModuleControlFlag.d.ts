@@ -2,7 +2,6 @@ declare namespace javax {
   namespace security {
     namespace auth {
       namespace login {
-
         class AppConfigurationEntry$LoginModuleControlFlag {
           public static readonly REQUIRED: javax.security.auth.login.AppConfigurationEntry$LoginModuleControlFlag
           public static readonly REQUISITE: javax.security.auth.login.AppConfigurationEntry$LoginModuleControlFlag
@@ -10,7 +9,6 @@ declare namespace javax {
           public static readonly OPTIONAL: javax.security.auth.login.AppConfigurationEntry$LoginModuleControlFlag
           public toString(): java.lang.String
         }
-
       }
     }
   }

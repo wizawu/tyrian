@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
       interface CertPathValidatorResult$$lambda {
         (): java.lang.Object | any
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface CertPathValidatorResult extends java.lang.Cloneable {
         clone(): java.lang.Object
       }
-
     }
   }
 }

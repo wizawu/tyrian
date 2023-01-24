@@ -2,8 +2,10 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace element {
-
-        interface TypeElement extends javax.lang.model.element.Element, javax.lang.model.element.Parameterizable, javax.lang.model.element.QualifiedNameable {
+        interface TypeElement
+          extends javax.lang.model.element.Element,
+            javax.lang.model.element.Parameterizable,
+            javax.lang.model.element.QualifiedNameable {
           getEnclosedElements(): java.util.List<javax.lang.model.element.Element>
           getNestingKind(): javax.lang.model.element.NestingKind
           getQualifiedName(): javax.lang.model.element.Name
@@ -13,7 +15,6 @@ declare namespace javax {
           getTypeParameters(): java.util.List<javax.lang.model.element.TypeParameterElement>
           getEnclosingElement(): javax.lang.model.element.Element
         }
-
       }
     }
   }

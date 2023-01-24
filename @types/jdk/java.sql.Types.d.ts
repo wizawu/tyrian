@@ -1,6 +1,5 @@
 declare namespace java {
   namespace sql {
-
     class Types {
       public static readonly BIT: int
       public static readonly TINYINT: int
@@ -42,6 +41,5 @@ declare namespace java {
       public static readonly TIME_WITH_TIMEZONE: int
       public static readonly TIMESTAMP_WITH_TIMEZONE: int
     }
-
   }
 }

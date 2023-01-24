@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace basic {
-
         class BasicIconFactory implements java.io.Serializable {
           public constructor()
           public static getMenuItemCheckIcon(): javax.swing.Icon
@@ -14,7 +13,6 @@ declare namespace javax {
           public static getRadioButtonMenuItemIcon(): javax.swing.Icon
           public static createEmptyFrameIcon(): javax.swing.Icon
         }
-
       }
     }
   }

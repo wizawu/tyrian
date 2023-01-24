@@ -1,7 +1,13 @@
 declare namespace javax {
   namespace swing {
-
-    class JComboBox<E> extends javax.swing.JComponent implements java.awt.ItemSelectable, javax.swing.event.ListDataListener, java.awt.event.ActionListener, javax.accessibility.Accessible {
+    class JComboBox<E>
+      extends javax.swing.JComponent
+      implements
+        java.awt.ItemSelectable,
+        javax.swing.event.ListDataListener,
+        java.awt.event.ActionListener,
+        javax.accessibility.Accessible
+    {
       protected dataModel: javax.swing.ComboBoxModel<E>
       protected renderer: javax.swing.ListCellRenderer<unknown>
       protected editor: javax.swing.ComboBoxEditor
@@ -28,7 +34,9 @@ declare namespace javax {
       public isEditable(): boolean
       public setMaximumRowCount(arg0: number | java.lang.Integer): void
       public getMaximumRowCount(): number
-      public setRenderer(arg0: javax.swing.ListCellRenderer<unknown> | javax.swing.ListCellRenderer$$lambda<unknown>): void
+      public setRenderer(
+        arg0: javax.swing.ListCellRenderer<unknown> | javax.swing.ListCellRenderer$$lambda<unknown>
+      ): void
       public getRenderer(): javax.swing.ListCellRenderer<unknown>
       public setEditor(arg0: javax.swing.ComboBoxEditor): void
       public getEditor(): javax.swing.ComboBoxEditor
@@ -79,8 +87,15 @@ declare namespace javax {
       public setEnabled(arg0: boolean | java.lang.Boolean): void
       public configureEditor(arg0: javax.swing.ComboBoxEditor, arg1: java.lang.Object | any): void
       public processKeyEvent(arg0: java.awt.event.KeyEvent): void
-      protected processKeyBinding(arg0: javax.swing.KeyStroke, arg1: java.awt.event.KeyEvent, arg2: number | java.lang.Integer, arg3: boolean | java.lang.Boolean): boolean
-      public setKeySelectionManager(arg0: javax.swing.JComboBox$KeySelectionManager | javax.swing.JComboBox$KeySelectionManager$$lambda): void
+      protected processKeyBinding(
+        arg0: javax.swing.KeyStroke,
+        arg1: java.awt.event.KeyEvent,
+        arg2: number | java.lang.Integer,
+        arg3: boolean | java.lang.Boolean
+      ): boolean
+      public setKeySelectionManager(
+        arg0: javax.swing.JComboBox$KeySelectionManager | javax.swing.JComboBox$KeySelectionManager$$lambda
+      ): void
       public getKeySelectionManager(): javax.swing.JComboBox$KeySelectionManager
       public getItemCount(): number
       public getItemAt(arg0: number | java.lang.Integer): E
@@ -89,6 +104,5 @@ declare namespace javax {
       public getAccessibleContext(): javax.accessibility.AccessibleContext
       public getUI(): javax.swing.plaf.ComponentUI
     }
-
   }
 }

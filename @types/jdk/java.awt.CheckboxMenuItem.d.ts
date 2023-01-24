@@ -1,7 +1,9 @@
 declare namespace java {
   namespace awt {
-
-    class CheckboxMenuItem extends java.awt.MenuItem implements java.awt.ItemSelectable, javax.accessibility.Accessible {
+    class CheckboxMenuItem
+      extends java.awt.MenuItem
+      implements java.awt.ItemSelectable, javax.accessibility.Accessible
+    {
       public constructor()
       public constructor(arg0: java.lang.String | string)
       public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
@@ -21,6 +23,5 @@ declare namespace java {
       public paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

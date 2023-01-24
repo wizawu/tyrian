@@ -1,9 +1,15 @@
 declare namespace jdk {
   namespace jfr {
-
     class AnnotationElement {
-      constructor(arg0: jdk.jfr.internal.Type, arg1: java.util.List<java.lang.Object>, arg2: boolean | java.lang.Boolean)
-      public constructor(arg0: java.lang.Class<java.lang.annotation.Annotation>, arg1: java.util.Map<java.lang.String,java.lang.Object>)
+      constructor(
+        arg0: jdk.jfr.internal.Type,
+        arg1: java.util.List<java.lang.Object>,
+        arg2: boolean | java.lang.Boolean
+      )
+      public constructor(
+        arg0: java.lang.Class<java.lang.annotation.Annotation>,
+        arg1: java.util.Map<java.lang.String, java.lang.Object>
+      )
       public constructor(arg0: java.lang.Class<java.lang.annotation.Annotation>, arg1: java.lang.Object | any)
       public constructor(arg0: java.lang.Class<java.lang.annotation.Annotation>)
       public getValues(): java.util.List<java.lang.Object>
@@ -17,6 +23,5 @@ declare namespace jdk {
       getType(): jdk.jfr.internal.Type
       isInBoot(): boolean
     }
-
   }
 }

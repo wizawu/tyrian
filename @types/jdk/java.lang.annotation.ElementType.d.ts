@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace annotation {
-
       class ElementType extends java.lang.Enum<java.lang.annotation.ElementType> {
         public static readonly TYPE: java.lang.annotation.ElementType
         public static readonly FIELD: java.lang.annotation.ElementType
@@ -17,7 +16,6 @@ declare namespace java {
         public static values(): java.lang.annotation.ElementType[]
         public static valueOf(arg0: java.lang.String | string): java.lang.annotation.ElementType
       }
-
     }
   }
 }

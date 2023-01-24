@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace print {
     namespace attribute {
-
       abstract class EnumSyntax implements java.io.Serializable, java.lang.Cloneable {
         protected constructor(arg0: number | java.lang.Integer)
         public getValue(): number
@@ -13,7 +12,6 @@ declare namespace javax {
         protected getEnumValueTable(): javax.print.attribute.EnumSyntax[]
         protected getOffset(): number
       }
-
     }
   }
 }

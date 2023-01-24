@@ -2,8 +2,7 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace type {
-
-        interface TypeVisitor<R,P> {
+        interface TypeVisitor<R, P> {
           visit(arg0: javax.lang.model.type.TypeMirror, arg1: P): R
           visit(arg0: javax.lang.model.type.TypeMirror): R
           visitPrimitive(arg0: javax.lang.model.type.PrimitiveType, arg1: P): R
@@ -19,7 +18,6 @@ declare namespace javax {
           visitUnion(arg0: javax.lang.model.type.UnionType, arg1: P): R
           visitIntersection(arg0: javax.lang.model.type.IntersectionType, arg1: P): R
         }
-
       }
     }
   }

@@ -2,7 +2,6 @@ declare namespace javax {
   namespace xml {
     namespace stream {
       namespace util {
-
         class StreamReaderDelegate implements javax.xml.stream.XMLStreamReader {
           public constructor()
           public constructor(arg0: javax.xml.stream.XMLStreamReader)
@@ -11,7 +10,11 @@ declare namespace javax {
           public next(): number
           public nextTag(): number
           public getElementText(): java.lang.String
-          public require(arg0: number | java.lang.Integer, arg1: java.lang.String | string, arg2: java.lang.String | string): void
+          public require(
+            arg0: number | java.lang.Integer,
+            arg1: java.lang.String | string,
+            arg2: java.lang.String | string
+          ): void
           public hasNext(): boolean
           public close(): void
           public getNamespaceURI(arg0: java.lang.String | string): java.lang.String
@@ -34,7 +37,12 @@ declare namespace javax {
           public getNamespaceURI(arg0: number | java.lang.Integer): java.lang.String
           public getEventType(): number
           public getText(): java.lang.String
-          public getTextCharacters(arg0: number | java.lang.Integer, arg1: string[] | java.lang.Character[], arg2: number | java.lang.Integer, arg3: number | java.lang.Integer): number
+          public getTextCharacters(
+            arg0: number | java.lang.Integer,
+            arg1: string[] | java.lang.Character[],
+            arg2: number | java.lang.Integer,
+            arg3: number | java.lang.Integer
+          ): number
           public getTextCharacters(): string[]
           public getTextStart(): number
           public getTextLength(): number
@@ -54,7 +62,6 @@ declare namespace javax {
           public getPIData(): java.lang.String
           public getProperty(arg0: java.lang.String | string): java.lang.Object
         }
-
       }
     }
   }

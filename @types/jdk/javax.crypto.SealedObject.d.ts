@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace crypto {
-
     class SealedObject implements java.io.Serializable {
       static readonly serialVersionUID: long
       protected encodedParams: byte[]
@@ -11,6 +10,5 @@ declare namespace javax {
       public getObject(arg0: javax.crypto.Cipher): java.lang.Object
       public getObject(arg0: java.security.Key, arg1: java.lang.String | string): java.lang.Object
     }
-
   }
 }

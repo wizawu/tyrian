@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace modelmbean {
-
       class DescriptorSupport implements javax.management.Descriptor {
         public constructor()
         public constructor(arg0: number | java.lang.Integer)
@@ -23,7 +22,6 @@ declare namespace javax {
         public toXMLString(): java.lang.String
         public toString(): java.lang.String
       }
-
     }
   }
 }

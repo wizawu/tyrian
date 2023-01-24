@@ -1,10 +1,9 @@
 declare namespace java {
   namespace awt {
-
     interface Adjustable {
-      public static readonly HORIZONTAL: int
-      public static readonly VERTICAL: int
-      public static readonly NO_ORIENTATION: int
+      readonly HORIZONTAL: int
+      readonly VERTICAL: int
+      readonly NO_ORIENTATION: int
       getOrientation(): number
       setMinimum(arg0: number | java.lang.Integer): void
       getMinimum(): number
@@ -19,8 +18,9 @@ declare namespace java {
       setValue(arg0: number | java.lang.Integer): void
       getValue(): number
       addAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
-      removeAdjustmentListener(arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda): void
+      removeAdjustmentListener(
+        arg0: java.awt.event.AdjustmentListener | java.awt.event.AdjustmentListener$$lambda
+      ): void
     }
-
   }
 }

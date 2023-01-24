@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace swing {
-
     class BoxLayout implements java.awt.LayoutManager2, java.io.Serializable {
       public static readonly X_AXIS: int
       public static readonly Y_AXIS: int
@@ -23,6 +22,5 @@ declare namespace javax {
       checkContainer(arg0: java.awt.Container): void
       checkRequests(): void
     }
-
   }
 }

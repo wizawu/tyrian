@@ -1,6 +1,5 @@
 declare namespace java {
   namespace text {
-
     abstract class DateFormat extends java.text.Format {
       protected calendar: java.util.Calendar
       protected numberFormat: java.text.NumberFormat
@@ -27,8 +26,16 @@ declare namespace java {
       public static readonly MEDIUM: int
       public static readonly SHORT: int
       public static readonly DEFAULT: int
-      public format(arg0: java.lang.Object | any, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
-      public abstract format(arg0: java.util.Date, arg1: java.lang.StringBuffer, arg2: java.text.FieldPosition): java.lang.StringBuffer
+      public format(
+        arg0: java.lang.Object | any,
+        arg1: java.lang.StringBuffer,
+        arg2: java.text.FieldPosition
+      ): java.lang.StringBuffer
+      public abstract format(
+        arg0: java.util.Date,
+        arg1: java.lang.StringBuffer,
+        arg2: java.text.FieldPosition
+      ): java.lang.StringBuffer
       public format(arg0: java.util.Date): java.lang.String
       public parse(arg0: java.lang.String | string): java.util.Date
       public abstract parse(arg0: java.lang.String | string, arg1: java.text.ParsePosition): java.util.Date
@@ -40,8 +47,15 @@ declare namespace java {
       public static getDateInstance(arg0: number | java.lang.Integer): java.text.DateFormat
       public static getDateInstance(arg0: number | java.lang.Integer, arg1: java.util.Locale): java.text.DateFormat
       public static getDateTimeInstance(): java.text.DateFormat
-      public static getDateTimeInstance(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.text.DateFormat
-      public static getDateTimeInstance(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: java.util.Locale): java.text.DateFormat
+      public static getDateTimeInstance(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer
+      ): java.text.DateFormat
+      public static getDateTimeInstance(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: java.util.Locale
+      ): java.text.DateFormat
       public static getInstance(): java.text.DateFormat
       public static getAvailableLocales(): java.util.Locale[]
       public setCalendar(arg0: java.util.Calendar): void
@@ -57,6 +71,5 @@ declare namespace java {
       public clone(): java.lang.Object
       protected constructor()
     }
-
   }
 }

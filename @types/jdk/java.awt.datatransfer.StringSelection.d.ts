@@ -1,7 +1,6 @@
 declare namespace java {
   namespace awt {
     namespace datatransfer {
-
       class StringSelection implements java.awt.datatransfer.Transferable, java.awt.datatransfer.ClipboardOwner {
         public constructor(arg0: java.lang.String | string)
         public getTransferDataFlavors(): java.awt.datatransfer.DataFlavor[]
@@ -9,7 +8,6 @@ declare namespace java {
         public getTransferData(arg0: java.awt.datatransfer.DataFlavor): java.lang.Object
         public lostOwnership(arg0: java.awt.datatransfer.Clipboard, arg1: java.awt.datatransfer.Transferable): void
       }
-
     }
   }
 }

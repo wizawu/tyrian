@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     interface ActiveEvent$$lambda {
       (): void
     }
@@ -8,6 +7,5 @@ declare namespace java {
     interface ActiveEvent {
       dispatch(): void
     }
-
   }
 }

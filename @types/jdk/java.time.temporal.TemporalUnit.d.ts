@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace temporal {
-
       interface TemporalUnit {
         getDuration(): java.time.Duration
         isDurationEstimated(): boolean
@@ -12,7 +11,6 @@ declare namespace java {
         between(arg0: java.time.temporal.Temporal, arg1: java.time.temporal.Temporal): number
         toString(): java.lang.String
       }
-
     }
   }
 }

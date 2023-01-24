@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace traversal {
-
         interface NodeIterator {
           getRoot(): org.w3c.dom.Node
           getWhatToShow(): number
@@ -12,7 +11,6 @@ declare namespace org {
           previousNode(): org.w3c.dom.Node
           detach(): void
         }
-
       }
     }
   }

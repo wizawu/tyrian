@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace accessibility {
-
     interface AccessibleComponent {
       getBackground(): java.awt.Color
       setBackground(arg0: java.awt.Color): void
@@ -30,6 +29,5 @@ declare namespace javax {
       addFocusListener(arg0: java.awt.event.FocusListener): void
       removeFocusListener(arg0: java.awt.event.FocusListener): void
     }
-
   }
 }

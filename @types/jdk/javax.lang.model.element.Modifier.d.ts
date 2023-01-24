@@ -2,7 +2,6 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace element {
-
         class Modifier extends java.lang.Enum<javax.lang.model.element.Modifier> {
           public static readonly PUBLIC: javax.lang.model.element.Modifier
           public static readonly PROTECTED: javax.lang.model.element.Modifier
@@ -20,7 +19,6 @@ declare namespace javax {
           public static valueOf(arg0: java.lang.String | string): javax.lang.model.element.Modifier
           public toString(): java.lang.String
         }
-
       }
     }
   }

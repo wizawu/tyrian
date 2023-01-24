@@ -1,6 +1,5 @@
 declare namespace java {
   namespace net {
-
     class InterfaceAddress {
       constructor()
       public getAddress(): java.net.InetAddress
@@ -10,6 +9,5 @@ declare namespace java {
       public hashCode(): number
       public toString(): java.lang.String
     }
-
   }
 }

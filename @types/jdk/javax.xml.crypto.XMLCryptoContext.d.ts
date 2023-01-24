@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace xml {
     namespace crypto {
-
       interface XMLCryptoContext {
         getBaseURI(): java.lang.String
         setBaseURI(arg0: java.lang.String | string): void
@@ -18,7 +17,6 @@ declare namespace javax {
         get(arg0: java.lang.Object | any): java.lang.Object
         put(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace security {
-
     class CodeSource implements java.io.Serializable {
       public constructor(arg0: java.net.URL, arg1: java.security.cert.Certificate[])
       public constructor(arg0: java.net.URL, arg1: java.security.CodeSigner[])
@@ -14,6 +13,5 @@ declare namespace java {
       matchCerts(arg0: java.security.CodeSource, arg1: boolean | java.lang.Boolean): boolean
       public toString(): java.lang.String
     }
-
   }
 }

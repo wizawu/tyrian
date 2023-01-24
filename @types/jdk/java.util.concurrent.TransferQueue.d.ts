@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
       interface TransferQueue<E> extends java.util.concurrent.BlockingQueue<E> {
         tryTransfer(arg0: E): boolean
         transfer(arg0: E): void
@@ -9,7 +8,6 @@ declare namespace java {
         hasWaitingConsumer(): boolean
         getWaitingConsumerCount(): number
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace temporal {
-
       class WeekFields implements java.io.Serializable {
         public static readonly ISO: java.time.temporal.WeekFields
         public static readonly SUNDAY_START: java.time.temporal.WeekFields
@@ -19,7 +18,6 @@ declare namespace java {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

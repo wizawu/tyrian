@@ -2,7 +2,6 @@ declare namespace javax {
   namespace security {
     namespace auth {
       namespace kerberos {
-
         class EncryptionKey implements javax.crypto.SecretKey {
           public constructor(arg0: number[] | java.lang.Byte[], arg1: number | java.lang.Integer)
           public getKeyType(): number
@@ -15,7 +14,6 @@ declare namespace javax {
           public hashCode(): number
           public equals(arg0: java.lang.Object | any): boolean
         }
-
       }
     }
   }

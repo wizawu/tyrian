@@ -1,15 +1,29 @@
 declare namespace java {
   namespace awt {
     namespace dnd {
-
       class DropTarget implements java.awt.dnd.DropTargetListener, java.io.Serializable {
         actions: int
         active: boolean
-        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: java.awt.dnd.DropTargetListener, arg3: boolean | java.lang.Boolean, arg4: java.awt.datatransfer.FlavorMap)
-        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: java.awt.dnd.DropTargetListener, arg3: boolean | java.lang.Boolean)
+        public constructor(
+          arg0: java.awt.Component,
+          arg1: number | java.lang.Integer,
+          arg2: java.awt.dnd.DropTargetListener,
+          arg3: boolean | java.lang.Boolean,
+          arg4: java.awt.datatransfer.FlavorMap
+        )
+        public constructor(
+          arg0: java.awt.Component,
+          arg1: number | java.lang.Integer,
+          arg2: java.awt.dnd.DropTargetListener,
+          arg3: boolean | java.lang.Boolean
+        )
         public constructor()
         public constructor(arg0: java.awt.Component, arg1: java.awt.dnd.DropTargetListener)
-        public constructor(arg0: java.awt.Component, arg1: number | java.lang.Integer, arg2: java.awt.dnd.DropTargetListener)
+        public constructor(
+          arg0: java.awt.Component,
+          arg1: number | java.lang.Integer,
+          arg2: java.awt.dnd.DropTargetListener
+        )
         public setComponent(arg0: java.awt.Component): void
         public getComponent(): java.awt.Component
         public setDefaultActions(arg0: number | java.lang.Integer): void
@@ -30,12 +44,14 @@ declare namespace java {
         public removeNotify(): void
         public getDropTargetContext(): java.awt.dnd.DropTargetContext
         protected createDropTargetContext(): java.awt.dnd.DropTargetContext
-        protected createDropTargetAutoScroller(arg0: java.awt.Component, arg1: java.awt.Point): java.awt.dnd.DropTarget$DropTargetAutoScroller
+        protected createDropTargetAutoScroller(
+          arg0: java.awt.Component,
+          arg1: java.awt.Point
+        ): java.awt.dnd.DropTarget$DropTargetAutoScroller
         protected initializeAutoscrolling(arg0: java.awt.Point): void
         protected updateAutoscroll(arg0: java.awt.Point): void
         protected clearAutoscroll(): void
       }
-
     }
   }
 }

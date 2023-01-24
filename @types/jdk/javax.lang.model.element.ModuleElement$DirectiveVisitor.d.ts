@@ -2,8 +2,7 @@ declare namespace javax {
   namespace lang {
     namespace model {
       namespace element {
-
-        interface ModuleElement$DirectiveVisitor<R,P> {
+        interface ModuleElement$DirectiveVisitor<R, P> {
           visit(arg0: javax.lang.model.element.ModuleElement$Directive): R
           visit(arg0: javax.lang.model.element.ModuleElement$Directive, arg1: P): R
           visitRequires(arg0: javax.lang.model.element.ModuleElement$RequiresDirective, arg1: P): R
@@ -13,7 +12,6 @@ declare namespace javax {
           visitProvides(arg0: javax.lang.model.element.ModuleElement$ProvidesDirective, arg1: P): R
           visitUnknown(arg0: javax.lang.model.element.ModuleElement$Directive, arg1: P): R
         }
-
       }
     }
   }

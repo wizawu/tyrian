@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace print {
-
     class DocFlavor implements java.io.Serializable, java.lang.Cloneable {
       public static readonly hostEncoding: java.lang.String
       public constructor(arg0: java.lang.String | string, arg1: java.lang.String | string)
@@ -13,6 +12,5 @@ declare namespace javax {
       public hashCode(): number
       public equals(arg0: java.lang.Object | any): boolean
     }
-
   }
 }

@@ -1,7 +1,6 @@
 declare namespace org {
   namespace w3c {
     namespace dom {
-
       interface Document extends org.w3c.dom.Node {
         getDoctype(): org.w3c.dom.DocumentType
         getImplementation(): org.w3c.dom.DOMImplementation
@@ -11,7 +10,10 @@ declare namespace org {
         createTextNode(arg0: java.lang.String | string): org.w3c.dom.Text
         createComment(arg0: java.lang.String | string): org.w3c.dom.Comment
         createCDATASection(arg0: java.lang.String | string): org.w3c.dom.CDATASection
-        createProcessingInstruction(arg0: java.lang.String | string, arg1: java.lang.String | string): org.w3c.dom.ProcessingInstruction
+        createProcessingInstruction(
+          arg0: java.lang.String | string,
+          arg1: java.lang.String | string
+        ): org.w3c.dom.ProcessingInstruction
         createAttribute(arg0: java.lang.String | string): org.w3c.dom.Attr
         createEntityReference(arg0: java.lang.String | string): org.w3c.dom.EntityReference
         getElementsByTagName(arg0: java.lang.String | string): org.w3c.dom.NodeList
@@ -33,9 +35,12 @@ declare namespace org {
         adoptNode(arg0: org.w3c.dom.Node): org.w3c.dom.Node
         getDomConfig(): org.w3c.dom.DOMConfiguration
         normalizeDocument(): void
-        renameNode(arg0: org.w3c.dom.Node, arg1: java.lang.String | string, arg2: java.lang.String | string): org.w3c.dom.Node
+        renameNode(
+          arg0: org.w3c.dom.Node,
+          arg1: java.lang.String | string,
+          arg2: java.lang.String | string
+        ): org.w3c.dom.Node
       }
-
     }
   }
 }

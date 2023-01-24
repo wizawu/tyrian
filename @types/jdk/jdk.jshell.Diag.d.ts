@@ -1,6 +1,5 @@
 declare namespace jdk {
   namespace jshell {
-
     abstract class Diag {
       public static readonly NOPOS: long
       constructor()
@@ -15,6 +14,5 @@ declare namespace jdk {
       isNotAStatementError(): boolean
       isResolutionError(): boolean
     }
-
   }
 }

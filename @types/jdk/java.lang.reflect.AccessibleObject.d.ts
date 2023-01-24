@@ -1,7 +1,6 @@
 declare namespace java {
   namespace lang {
     namespace reflect {
-
       class AccessibleObject implements java.lang.reflect.AnnotatedElement {
         override: boolean
         static readonly reflectionFactory: jdk.internal.reflect.ReflectionFactory
@@ -24,11 +23,20 @@ declare namespace java {
         public getDeclaredAnnotation<T extends java.lang.annotation.Annotation>(arg0: java.lang.Class<T>): T
         public getDeclaredAnnotationsByType<T extends java.lang.annotation.Annotation>(arg0: java.lang.Class<T>): T[]
         public getDeclaredAnnotations(): java.lang.annotation.Annotation[]
-        checkAccess(arg0: java.lang.Class<unknown>, arg1: java.lang.Class<unknown>, arg2: java.lang.Class<unknown>, arg3: number | java.lang.Integer): void
-        verifyAccess(arg0: java.lang.Class<unknown>, arg1: java.lang.Class<unknown>, arg2: java.lang.Class<unknown>, arg3: number | java.lang.Integer): boolean
+        checkAccess(
+          arg0: java.lang.Class<unknown>,
+          arg1: java.lang.Class<unknown>,
+          arg2: java.lang.Class<unknown>,
+          arg3: number | java.lang.Integer
+        ): void
+        verifyAccess(
+          arg0: java.lang.Class<unknown>,
+          arg1: java.lang.Class<unknown>,
+          arg2: java.lang.Class<unknown>,
+          arg3: number | java.lang.Integer
+        ): boolean
         getRoot(): java.lang.reflect.AccessibleObject
       }
-
     }
   }
 }

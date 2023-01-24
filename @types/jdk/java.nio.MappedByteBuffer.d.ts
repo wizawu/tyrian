@@ -1,9 +1,19 @@
 declare namespace java {
   namespace nio {
-
     abstract class MappedByteBuffer extends java.nio.ByteBuffer {
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer, arg4: java.io.FileDescriptor)
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer,
+        arg4: java.io.FileDescriptor
+      )
+      constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      )
       public isLoaded(): boolean
       public load(): java.nio.MappedByteBuffer
       public force(): java.nio.MappedByteBuffer
@@ -29,6 +39,5 @@ declare namespace java {
       public limit(arg0: number | java.lang.Integer): java.nio.Buffer
       public position(arg0: number | java.lang.Integer): java.nio.Buffer
     }
-
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     abstract class KeyboardFocusManager implements java.awt.KeyEventDispatcher, java.awt.KeyEventPostProcessor {
       peer: java.awt.peer.KeyboardFocusManagerPeer
       public static readonly FORWARD_TRAVERSAL_KEYS: int
@@ -18,7 +17,10 @@ declare namespace java {
       public static setCurrentKeyboardFocusManager(arg0: java.awt.KeyboardFocusManager): void
       setCurrentSequencedEvent(arg0: java.awt.SequencedEvent): void
       getCurrentSequencedEvent(): java.awt.SequencedEvent
-      static initFocusTraversalKeysSet(arg0: java.lang.String | string, arg1: java.util.Set<java.awt.AWTKeyStroke>): java.util.Set<java.awt.AWTKeyStroke>
+      static initFocusTraversalKeysSet(
+        arg0: java.lang.String | string,
+        arg1: java.util.Set<java.awt.AWTKeyStroke>
+      ): java.util.Set<java.awt.AWTKeyStroke>
       public constructor()
       public getFocusOwner(): java.awt.Component
       protected getGlobalFocusOwner(): java.awt.Component
@@ -40,31 +42,66 @@ declare namespace java {
       protected setGlobalActiveWindow(arg0: java.awt.Window): void
       public getDefaultFocusTraversalPolicy(): java.awt.FocusTraversalPolicy
       public setDefaultFocusTraversalPolicy(arg0: java.awt.FocusTraversalPolicy): void
-      public setDefaultFocusTraversalKeys(arg0: number | java.lang.Integer, arg1: java.util.Set<java.awt.AWTKeyStroke>): void
+      public setDefaultFocusTraversalKeys(
+        arg0: number | java.lang.Integer,
+        arg1: java.util.Set<java.awt.AWTKeyStroke>
+      ): void
       public getDefaultFocusTraversalKeys(arg0: number | java.lang.Integer): java.util.Set<java.awt.AWTKeyStroke>
       public getCurrentFocusCycleRoot(): java.awt.Container
       protected getGlobalCurrentFocusCycleRoot(): java.awt.Container
       public setGlobalCurrentFocusCycleRoot(arg0: java.awt.Container): void
       setGlobalCurrentFocusCycleRootPriv(arg0: java.awt.Container): void
-      public addPropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public removePropertyChangeListener(arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public addPropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public removePropertyChangeListener(
+        arg0: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       public getPropertyChangeListeners(): java.beans.PropertyChangeListener[]
-      public addPropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
-      public removePropertyChangeListener(arg0: java.lang.String | string, arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda): void
+      public addPropertyChangeListener(
+        arg0: java.lang.String | string,
+        arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
+      public removePropertyChangeListener(
+        arg0: java.lang.String | string,
+        arg1: java.beans.PropertyChangeListener | java.beans.PropertyChangeListener$$lambda
+      ): void
       public getPropertyChangeListeners(arg0: java.lang.String | string): java.beans.PropertyChangeListener[]
-      protected firePropertyChange(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
-      public addVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda): void
-      public removeVetoableChangeListener(arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda): void
+      protected firePropertyChange(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: java.lang.Object | any
+      ): void
+      public addVetoableChangeListener(
+        arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda
+      ): void
+      public removeVetoableChangeListener(
+        arg0: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda
+      ): void
       public getVetoableChangeListeners(): java.beans.VetoableChangeListener[]
-      public addVetoableChangeListener(arg0: java.lang.String | string, arg1: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda): void
-      public removeVetoableChangeListener(arg0: java.lang.String | string, arg1: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda): void
+      public addVetoableChangeListener(
+        arg0: java.lang.String | string,
+        arg1: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda
+      ): void
+      public removeVetoableChangeListener(
+        arg0: java.lang.String | string,
+        arg1: java.beans.VetoableChangeListener | java.beans.VetoableChangeListener$$lambda
+      ): void
       public getVetoableChangeListeners(arg0: java.lang.String | string): java.beans.VetoableChangeListener[]
-      protected fireVetoableChange(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.lang.Object | any): void
+      protected fireVetoableChange(
+        arg0: java.lang.String | string,
+        arg1: java.lang.Object | any,
+        arg2: java.lang.Object | any
+      ): void
       public addKeyEventDispatcher(arg0: java.awt.KeyEventDispatcher | java.awt.KeyEventDispatcher$$lambda): void
       public removeKeyEventDispatcher(arg0: java.awt.KeyEventDispatcher | java.awt.KeyEventDispatcher$$lambda): void
       protected getKeyEventDispatchers(): java.util.List<java.awt.KeyEventDispatcher>
-      public addKeyEventPostProcessor(arg0: java.awt.KeyEventPostProcessor | java.awt.KeyEventPostProcessor$$lambda): void
-      public removeKeyEventPostProcessor(arg0: java.awt.KeyEventPostProcessor | java.awt.KeyEventPostProcessor$$lambda): void
+      public addKeyEventPostProcessor(
+        arg0: java.awt.KeyEventPostProcessor | java.awt.KeyEventPostProcessor$$lambda
+      ): void
+      public removeKeyEventPostProcessor(
+        arg0: java.awt.KeyEventPostProcessor | java.awt.KeyEventPostProcessor$$lambda
+      ): void
       protected getKeyEventPostProcessors(): java.util.List<java.awt.KeyEventPostProcessor>
       static setMostRecentFocusOwner(arg0: java.awt.Component): void
       static setMostRecentFocusOwner(arg0: java.awt.Window, arg1: java.awt.Component): void
@@ -87,8 +124,21 @@ declare namespace java {
       public upFocusCycle(): void
       public downFocusCycle(): void
       dumpRequests(): void
-      static processSynchronousLightweightTransfer(arg0: java.awt.Component, arg1: java.awt.Component, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: number | java.lang.Long): boolean
-      static shouldNativelyFocusHeavyweight(arg0: java.awt.Component, arg1: java.awt.Component, arg2: boolean | java.lang.Boolean, arg3: boolean | java.lang.Boolean, arg4: number | java.lang.Long, arg5: java.awt.event.FocusEvent$Cause): number
+      static processSynchronousLightweightTransfer(
+        arg0: java.awt.Component,
+        arg1: java.awt.Component,
+        arg2: boolean | java.lang.Boolean,
+        arg3: boolean | java.lang.Boolean,
+        arg4: number | java.lang.Long
+      ): boolean
+      static shouldNativelyFocusHeavyweight(
+        arg0: java.awt.Component,
+        arg1: java.awt.Component,
+        arg2: boolean | java.lang.Boolean,
+        arg3: boolean | java.lang.Boolean,
+        arg4: number | java.lang.Long,
+        arg5: java.awt.event.FocusEvent$Cause
+      ): number
       static markClearGlobalFocusOwner(): java.awt.Window
       getCurrentWaitingRequest(arg0: java.awt.Component): java.awt.Component
       static isAutoFocusTransferEnabled(): boolean
@@ -104,6 +154,5 @@ declare namespace java {
       static getHeavyweight(arg0: java.awt.Component): java.awt.Component
       static isProxyActive(arg0: java.awt.event.KeyEvent): boolean
     }
-
   }
 }

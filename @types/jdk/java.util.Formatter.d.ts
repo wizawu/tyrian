@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     class Formatter implements java.io.Closeable, java.io.Flushable {
       public constructor()
       public constructor(arg0: java.lang.Appendable)
@@ -26,8 +25,11 @@ declare namespace java {
       public close(): void
       public ioException(): java.io.IOException
       public format(arg0: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.util.Formatter
-      public format(arg0: java.util.Locale, arg1: java.lang.String | string, ...vargs: (java.lang.Object | any)[]): java.util.Formatter
+      public format(
+        arg0: java.util.Locale,
+        arg1: java.lang.String | string,
+        ...vargs: (java.lang.Object | any)[]
+      ): java.util.Formatter
     }
-
   }
 }

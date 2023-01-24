@@ -1,8 +1,7 @@
 declare namespace java {
   namespace text {
-
     interface CharacterIterator extends java.lang.Cloneable {
-      public static readonly DONE: char
+      readonly DONE: char
       first(): string
       last(): string
       current(): string
@@ -14,6 +13,5 @@ declare namespace java {
       getIndex(): number
       clone(): java.lang.Object
     }
-
   }
 }

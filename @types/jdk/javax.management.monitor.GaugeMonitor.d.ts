@@ -1,8 +1,10 @@
 declare namespace javax {
   namespace management {
     namespace monitor {
-
-      class GaugeMonitor extends javax.management.monitor.Monitor implements javax.management.monitor.GaugeMonitorMBean {
+      class GaugeMonitor
+        extends javax.management.monitor.Monitor
+        implements javax.management.monitor.GaugeMonitorMBean
+      {
         public constructor()
         public start(): void
         public stop(): void
@@ -21,14 +23,29 @@ declare namespace javax {
         public setDifferenceMode(arg0: boolean | java.lang.Boolean): void
         public getNotificationInfo(): javax.management.MBeanNotificationInfo[]
         createObservedObject(arg0: javax.management.ObjectName): javax.management.monitor.Monitor$ObservedObject
-        isComparableTypeValid(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>): boolean
-        getDerivedGaugeFromComparable(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>): java.lang.Comparable<unknown>
+        isComparableTypeValid(
+          arg0: javax.management.ObjectName,
+          arg1: java.lang.String | string,
+          arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>
+        ): boolean
+        getDerivedGaugeFromComparable(
+          arg0: javax.management.ObjectName,
+          arg1: java.lang.String | string,
+          arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>
+        ): java.lang.Comparable<unknown>
         onErrorNotification(arg0: javax.management.monitor.MonitorNotification): void
-        buildAlarmNotification(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>): javax.management.monitor.MonitorNotification
-        isThresholdTypeValid(arg0: javax.management.ObjectName, arg1: java.lang.String | string, arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>): boolean
+        buildAlarmNotification(
+          arg0: javax.management.ObjectName,
+          arg1: java.lang.String | string,
+          arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>
+        ): javax.management.monitor.MonitorNotification
+        isThresholdTypeValid(
+          arg0: javax.management.ObjectName,
+          arg1: java.lang.String | string,
+          arg2: java.lang.Comparable<unknown> | java.lang.Comparable$$lambda<unknown>
+        ): boolean
         public getDerivedGauge(arg0: javax.management.ObjectName): java.lang.Object
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace java {
   namespace time {
     namespace temporal {
-
       interface TemporalQuery$$lambda<R> {
         (arg0: java.time.temporal.TemporalAccessor): R
       }
@@ -9,7 +8,6 @@ declare namespace java {
       interface TemporalQuery<R> {
         queryFrom(arg0: java.time.temporal.TemporalAccessor): R
       }
-
     }
   }
 }

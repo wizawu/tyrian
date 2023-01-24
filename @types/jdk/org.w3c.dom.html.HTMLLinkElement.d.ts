@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLLinkElement extends org.w3c.dom.html.HTMLElement {
           getDisabled(): boolean
           setDisabled(arg0: boolean | java.lang.Boolean): void
@@ -23,7 +22,6 @@ declare namespace org {
           getType(): java.lang.String
           setType(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

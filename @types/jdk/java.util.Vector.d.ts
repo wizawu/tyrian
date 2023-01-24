@@ -1,7 +1,9 @@
 declare namespace java {
   namespace util {
-
-    class Vector<E> extends java.util.AbstractList<E> implements java.util.List<E>, java.util.RandomAccess, java.lang.Cloneable, java.io.Serializable {
+    class Vector<E>
+      extends java.util.AbstractList<E>
+      implements java.util.List<E>, java.util.RandomAccess, java.lang.Cloneable, java.io.Serializable
+    {
       protected elementData: java.lang.Object[]
       protected elementCount: int
       protected capacityIncrement: int
@@ -63,6 +65,5 @@ declare namespace java {
       public spliterator(): java.util.Spliterator<E>
       checkInvariants(): void
     }
-
   }
 }

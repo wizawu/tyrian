@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     class Byte extends java.lang.Number implements java.lang.Comparable<java.lang.Byte> {
       public static readonly MIN_VALUE: byte
       public static readonly MAX_VALUE: byte
@@ -33,6 +32,5 @@ declare namespace java {
       public static toUnsignedLong(arg0: number | java.lang.Byte): number
       public compareTo(arg0: java.lang.Object | any): number
     }
-
   }
 }

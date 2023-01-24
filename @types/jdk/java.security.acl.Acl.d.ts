@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace acl {
-
       interface Acl extends java.security.acl.Owner {
         setName(arg0: java.security.Principal, arg1: java.lang.String | string): void
         getName(): java.lang.String
@@ -12,7 +11,6 @@ declare namespace java {
         checkPermission(arg0: java.security.Principal, arg1: java.security.acl.Permission): boolean
         toString(): java.lang.String
       }
-
     }
   }
 }

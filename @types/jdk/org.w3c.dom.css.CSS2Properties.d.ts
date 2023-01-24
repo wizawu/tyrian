@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace css {
-
         interface CSS2Properties {
           getAzimuth(): java.lang.String
           setAzimuth(arg0: java.lang.String | string): void
@@ -249,7 +248,6 @@ declare namespace org {
           getZIndex(): java.lang.String
           setZIndex(arg0: java.lang.String | string): void
         }
-
       }
     }
   }

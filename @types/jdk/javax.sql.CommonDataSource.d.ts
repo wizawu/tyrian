@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace sql {
-
     interface CommonDataSource {
       getLogWriter(): java.io.PrintWriter
       setLogWriter(arg0: java.io.PrintWriter): void
@@ -9,6 +8,5 @@ declare namespace javax {
       getParentLogger(): java.util.logging.Logger
       createShardingKeyBuilder(): java.sql.ShardingKeyBuilder
     }
-
   }
 }

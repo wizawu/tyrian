@@ -1,14 +1,13 @@
 declare namespace javax {
   namespace script {
-
     interface ScriptEngine {
-      public static readonly ARGV: java.lang.String
-      public static readonly FILENAME: java.lang.String
-      public static readonly ENGINE: java.lang.String
-      public static readonly ENGINE_VERSION: java.lang.String
-      public static readonly NAME: java.lang.String
-      public static readonly LANGUAGE: java.lang.String
-      public static readonly LANGUAGE_VERSION: java.lang.String
+      readonly ARGV: java.lang.String
+      readonly FILENAME: java.lang.String
+      readonly ENGINE: java.lang.String
+      readonly ENGINE_VERSION: java.lang.String
+      readonly NAME: java.lang.String
+      readonly LANGUAGE: java.lang.String
+      readonly LANGUAGE_VERSION: java.lang.String
       eval(arg0: java.lang.String | string, arg1: javax.script.ScriptContext): java.lang.Object
       eval(arg0: java.io.Reader, arg1: javax.script.ScriptContext): java.lang.Object
       eval(arg0: java.lang.String | string): java.lang.Object
@@ -24,6 +23,5 @@ declare namespace javax {
       setContext(arg0: javax.script.ScriptContext): void
       getFactory(): javax.script.ScriptEngineFactory
     }
-
   }
 }

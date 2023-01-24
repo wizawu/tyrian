@@ -2,7 +2,6 @@ declare namespace java {
   namespace awt {
     namespace im {
       namespace spi {
-
         interface InputMethod {
           setInputMethodContext(arg0: java.awt.im.spi.InputMethodContext): void
           setLocale(arg0: java.util.Locale): boolean
@@ -21,7 +20,6 @@ declare namespace java {
           dispose(): void
           getControlObject(): java.lang.Object
         }
-
       }
     }
   }

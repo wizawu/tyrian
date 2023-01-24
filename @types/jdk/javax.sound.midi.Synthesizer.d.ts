@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace midi {
-
       interface Synthesizer extends javax.sound.midi.MidiDevice {
         getMaxPolyphony(): number
         getLatency(): number
@@ -19,7 +18,6 @@ declare namespace javax {
         loadInstruments(arg0: javax.sound.midi.Soundbank, arg1: javax.sound.midi.Patch[]): boolean
         unloadInstruments(arg0: javax.sound.midi.Soundbank, arg1: javax.sound.midi.Patch[]): void
       }
-
     }
   }
 }

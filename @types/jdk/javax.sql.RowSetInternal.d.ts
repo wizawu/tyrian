@@ -1,6 +1,5 @@
 declare namespace javax {
   namespace sql {
-
     interface RowSetInternal {
       getParams(): java.lang.Object[]
       getConnection(): java.sql.Connection
@@ -8,6 +7,5 @@ declare namespace javax {
       getOriginal(): java.sql.ResultSet
       getOriginalRow(): java.sql.ResultSet
     }
-
   }
 }

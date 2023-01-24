@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace javadoc {
     namespace doclet {
-
       interface DocletEnvironment {
         getSpecifiedElements(): java.util.Set<javax.lang.model.element.Element>
         getIncludedElements(): java.util.Set<javax.lang.model.element.Element>
@@ -15,7 +14,6 @@ declare namespace jdk {
         getModuleMode(): jdk.javadoc.doclet.DocletEnvironment$ModuleMode
         getFileKind(arg0: javax.lang.model.element.TypeElement): javax.tools.JavaFileObject$Kind
       }
-
     }
   }
 }

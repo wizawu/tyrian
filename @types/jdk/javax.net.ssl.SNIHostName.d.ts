@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace net {
     namespace ssl {
-
       class SNIHostName extends javax.net.ssl.SNIServerName {
         public constructor(arg0: java.lang.String | string)
         public constructor(arg0: number[] | java.lang.Byte[])
@@ -11,7 +10,6 @@ declare namespace javax {
         public toString(): java.lang.String
         public static createSNIMatcher(arg0: java.lang.String | string): javax.net.ssl.SNIMatcher
       }
-
     }
   }
 }

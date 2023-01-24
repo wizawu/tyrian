@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace net {
     namespace ssl {
-
       class SSLParameters {
         public constructor()
         public constructor(arg0: java.lang.String[] | string[])
@@ -31,7 +30,6 @@ declare namespace javax {
         public getApplicationProtocols(): java.lang.String[]
         public setApplicationProtocols(arg0: java.lang.String[] | string[]): void
       }
-
     }
   }
 }

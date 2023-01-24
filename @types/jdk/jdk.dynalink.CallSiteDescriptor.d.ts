@@ -1,8 +1,11 @@
 declare namespace jdk {
   namespace dynalink {
-
     class CallSiteDescriptor extends jdk.dynalink.SecureLookupSupplier {
-      public constructor(arg0: java.lang.invoke.MethodHandles$Lookup, arg1: jdk.dynalink.Operation, arg2: java.lang.invoke.MethodType)
+      public constructor(
+        arg0: java.lang.invoke.MethodHandles$Lookup,
+        arg1: jdk.dynalink.Operation,
+        arg2: java.lang.invoke.MethodType
+      )
       public getOperation(): jdk.dynalink.Operation
       public getMethodType(): java.lang.invoke.MethodType
       public changeMethodType(arg0: java.lang.invoke.MethodType): jdk.dynalink.CallSiteDescriptor
@@ -13,6 +16,5 @@ declare namespace jdk {
       public hashCode(): number
       public toString(): java.lang.String
     }
-
   }
 }

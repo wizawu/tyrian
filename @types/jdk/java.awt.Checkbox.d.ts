@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class Checkbox extends java.awt.Component implements java.awt.ItemSelectable, javax.accessibility.Accessible {
       label: java.lang.String
       state: boolean
@@ -10,8 +9,16 @@ declare namespace java {
       public constructor()
       public constructor(arg0: java.lang.String | string)
       public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean)
-      public constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: java.awt.CheckboxGroup)
-      public constructor(arg0: java.lang.String | string, arg1: java.awt.CheckboxGroup, arg2: boolean | java.lang.Boolean)
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: boolean | java.lang.Boolean,
+        arg2: java.awt.CheckboxGroup
+      )
+      public constructor(
+        arg0: java.lang.String | string,
+        arg1: java.awt.CheckboxGroup,
+        arg2: boolean | java.lang.Boolean
+      )
       constructComponentName(): java.lang.String
       public addNotify(): void
       public getLabel(): java.lang.String
@@ -31,6 +38,5 @@ declare namespace java {
       protected paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

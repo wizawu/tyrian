@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace openmbean {
-
       interface OpenMBeanAttributeInfo extends javax.management.openmbean.OpenMBeanParameterInfo {
         isReadable(): boolean
         isWritable(): boolean
@@ -10,7 +9,6 @@ declare namespace javax {
         hashCode(): number
         toString(): java.lang.String
       }
-
     }
   }
 }

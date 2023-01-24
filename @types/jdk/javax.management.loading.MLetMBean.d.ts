@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace management {
     namespace loading {
-
       interface MLetMBean {
         getMBeansFromURL(arg0: java.lang.String | string): java.util.Set<java.lang.Object>
         getMBeansFromURL(arg0: java.net.URL): java.util.Set<java.lang.Object>
@@ -14,7 +13,6 @@ declare namespace javax {
         getLibraryDirectory(): java.lang.String
         setLibraryDirectory(arg0: java.lang.String | string): void
       }
-
     }
   }
 }

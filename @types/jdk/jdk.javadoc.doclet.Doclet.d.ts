@@ -1,7 +1,6 @@
 declare namespace jdk {
   namespace javadoc {
     namespace doclet {
-
       interface Doclet {
         init(arg0: java.util.Locale, arg1: jdk.javadoc.doclet.Reporter): void
         getName(): java.lang.String
@@ -9,7 +8,6 @@ declare namespace jdk {
         getSupportedSourceVersion(): javax.lang.model.SourceVersion
         run(arg0: jdk.javadoc.doclet.DocletEnvironment): boolean
       }
-
     }
   }
 }

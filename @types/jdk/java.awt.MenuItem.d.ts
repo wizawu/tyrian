@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class MenuItem extends java.awt.MenuComponent implements javax.accessibility.Accessible {
       label: java.lang.String
       eventMask: long
@@ -38,6 +37,5 @@ declare namespace java {
       public paramString(): java.lang.String
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

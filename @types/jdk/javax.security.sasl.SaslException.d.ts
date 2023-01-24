@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace security {
     namespace sasl {
-
       class SaslException extends java.io.IOException {
         public constructor()
         public constructor(arg0: java.lang.String | string)
@@ -10,7 +9,6 @@ declare namespace javax {
         public initCause(arg0: java.lang.Throwable): java.lang.Throwable
         public toString(): java.lang.String
       }
-
     }
   }
 }

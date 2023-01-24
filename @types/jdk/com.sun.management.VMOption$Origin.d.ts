@@ -1,7 +1,6 @@
 declare namespace com {
   namespace sun {
     namespace management {
-
       class VMOption$Origin extends java.lang.Enum<com.sun.management.VMOption$Origin> {
         public static readonly DEFAULT: com.sun.management.VMOption$Origin
         public static readonly VM_CREATION: com.sun.management.VMOption$Origin
@@ -14,7 +13,6 @@ declare namespace com {
         public static values(): com.sun.management.VMOption$Origin[]
         public static valueOf(arg0: java.lang.String | string): com.sun.management.VMOption$Origin
       }
-
     }
   }
 }

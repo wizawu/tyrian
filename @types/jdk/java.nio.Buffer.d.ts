@@ -1,12 +1,16 @@
 declare namespace java {
   namespace nio {
-
     abstract class Buffer {
       static readonly UNSAFE: jdk.internal.misc.Unsafe
       static readonly SPLITERATOR_CHARACTERISTICS: int
       address: long
       static readonly $assertionsDisabled: boolean
-      constructor(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer, arg3: number | java.lang.Integer)
+      constructor(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer,
+        arg3: number | java.lang.Integer
+      )
       static createSameBufferException(): java.lang.IllegalArgumentException
       static createCapacityException(arg0: number | java.lang.Integer): java.lang.IllegalArgumentException
       public capacity(): number
@@ -38,8 +42,11 @@ declare namespace java {
       markValue(): number
       truncate(): void
       discardMark(): void
-      static checkBounds(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): void
+      static checkBounds(
+        arg0: number | java.lang.Integer,
+        arg1: number | java.lang.Integer,
+        arg2: number | java.lang.Integer
+      ): void
     }
-
   }
 }

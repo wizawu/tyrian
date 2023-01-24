@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace plaf {
       namespace multi {
-
         class MultiTreeUI extends javax.swing.plaf.TreeUI {
           protected uis: java.util.Vector<javax.swing.plaf.ComponentUI>
           public constructor()
@@ -11,13 +10,21 @@ declare namespace javax {
           public getPathForRow(arg0: javax.swing.JTree, arg1: number | java.lang.Integer): javax.swing.tree.TreePath
           public getRowForPath(arg0: javax.swing.JTree, arg1: javax.swing.tree.TreePath): number
           public getRowCount(arg0: javax.swing.JTree): number
-          public getClosestPathForLocation(arg0: javax.swing.JTree, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): javax.swing.tree.TreePath
+          public getClosestPathForLocation(
+            arg0: javax.swing.JTree,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): javax.swing.tree.TreePath
           public isEditing(arg0: javax.swing.JTree): boolean
           public stopEditing(arg0: javax.swing.JTree): boolean
           public cancelEditing(arg0: javax.swing.JTree): void
           public startEditingAtPath(arg0: javax.swing.JTree, arg1: javax.swing.tree.TreePath): void
           public getEditingPath(arg0: javax.swing.JTree): javax.swing.tree.TreePath
-          public contains(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer): boolean
+          public contains(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer,
+            arg2: number | java.lang.Integer
+          ): boolean
           public update(arg0: java.awt.Graphics, arg1: javax.swing.JComponent): void
           public static createUI(arg0: javax.swing.JComponent): javax.swing.plaf.ComponentUI
           public installUI(arg0: javax.swing.JComponent): void
@@ -27,9 +34,11 @@ declare namespace javax {
           public getMinimumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getMaximumSize(arg0: javax.swing.JComponent): java.awt.Dimension
           public getAccessibleChildrenCount(arg0: javax.swing.JComponent): number
-          public getAccessibleChild(arg0: javax.swing.JComponent, arg1: number | java.lang.Integer): javax.accessibility.Accessible
+          public getAccessibleChild(
+            arg0: javax.swing.JComponent,
+            arg1: number | java.lang.Integer
+          ): javax.accessibility.Accessible
         }
-
       }
     }
   }

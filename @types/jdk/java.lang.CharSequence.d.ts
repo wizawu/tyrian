@@ -1,6 +1,5 @@
 declare namespace java {
   namespace lang {
-
     interface CharSequence {
       length(): number
       charAt(arg0: number | java.lang.Integer): string
@@ -10,6 +9,5 @@ declare namespace java {
       codePoints(): java.util.stream.IntStream
       compare(arg0: string | java.lang.CharSequence, arg1: string | java.lang.CharSequence): number
     }
-
   }
 }

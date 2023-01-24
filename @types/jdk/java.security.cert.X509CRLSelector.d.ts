@@ -1,7 +1,6 @@
 declare namespace java {
   namespace security {
     namespace cert {
-
       class X509CRLSelector implements java.security.cert.CRLSelector {
         public constructor()
         public setIssuers(arg0: java.util.Collection<javax.security.auth.x500.X500Principal>): void
@@ -24,7 +23,6 @@ declare namespace java {
         public match(arg0: java.security.cert.CRL): boolean
         public clone(): java.lang.Object
       }
-
     }
   }
 }

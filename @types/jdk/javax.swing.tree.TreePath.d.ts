@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace tree {
-
       class TreePath implements java.io.Serializable {
         public constructor(arg0: java.lang.Object[] | any[])
         public constructor(arg0: java.lang.Object | any)
@@ -19,7 +18,6 @@ declare namespace javax {
         public getParentPath(): javax.swing.tree.TreePath
         public toString(): java.lang.String
       }
-
     }
   }
 }

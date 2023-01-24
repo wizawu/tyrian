@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace sampled {
-
       interface DataLine extends javax.sound.sampled.Line {
         drain(): void
         flush(): void
@@ -17,7 +16,6 @@ declare namespace javax {
         getMicrosecondPosition(): number
         getLevel(): number
       }
-
     }
   }
 }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace text {
-
       class TabStop implements java.io.Serializable {
         public static readonly ALIGN_LEFT: int
         public static readonly ALIGN_RIGHT: int
@@ -15,7 +14,11 @@ declare namespace javax {
         public static readonly LEAD_THICKLINE: int
         public static readonly LEAD_EQUALS: int
         public constructor(arg0: number | java.lang.Float)
-        public constructor(arg0: number | java.lang.Float, arg1: number | java.lang.Integer, arg2: number | java.lang.Integer)
+        public constructor(
+          arg0: number | java.lang.Float,
+          arg1: number | java.lang.Integer,
+          arg2: number | java.lang.Integer
+        )
         public getPosition(): number
         public getAlignment(): number
         public getLeader(): number
@@ -23,7 +26,6 @@ declare namespace javax {
         public hashCode(): number
         public toString(): java.lang.String
       }
-
     }
   }
 }

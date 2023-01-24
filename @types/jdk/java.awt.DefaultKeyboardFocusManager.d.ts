@@ -1,6 +1,5 @@
 declare namespace java {
   namespace awt {
-
     class DefaultKeyboardFocusManager extends java.awt.KeyboardFocusManager {
       public constructor()
       static sendMessage(arg0: java.awt.Component, arg1: java.awt.AWTEvent): boolean
@@ -18,6 +17,5 @@ declare namespace java {
       public upFocusCycle(arg0: java.awt.Component): void
       public downFocusCycle(arg0: java.awt.Container): void
     }
-
   }
 }

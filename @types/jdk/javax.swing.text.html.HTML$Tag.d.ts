@@ -2,7 +2,6 @@ declare namespace javax {
   namespace swing {
     namespace text {
       namespace html {
-
         class HTML$Tag {
           blockTag: boolean
           breakTag: boolean
@@ -88,14 +87,17 @@ declare namespace javax {
           static readonly allTags: javax.swing.text.html.HTML$Tag[]
           public constructor()
           protected constructor(arg0: java.lang.String | string)
-          protected constructor(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean, arg2: boolean | java.lang.Boolean)
+          protected constructor(
+            arg0: java.lang.String | string,
+            arg1: boolean | java.lang.Boolean,
+            arg2: boolean | java.lang.Boolean
+          )
           public isBlock(): boolean
           public breaksFlow(): boolean
           public isPreformatted(): boolean
           public toString(): java.lang.String
           isParagraph(): boolean
         }
-
       }
     }
   }

@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace sound {
     namespace sampled {
-
       class AudioFileFormat$Type {
         public static readonly WAVE: javax.sound.sampled.AudioFileFormat$Type
         public static readonly AU: javax.sound.sampled.AudioFileFormat$Type
@@ -14,7 +13,6 @@ declare namespace javax {
         public toString(): java.lang.String
         public getExtension(): java.lang.String
       }
-
     }
   }
 }

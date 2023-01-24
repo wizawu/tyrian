@@ -2,7 +2,6 @@ declare namespace org {
   namespace w3c {
     namespace dom {
       namespace html {
-
         interface HTMLAnchorElement extends org.w3c.dom.html.HTMLElement {
           getAccessKey(): java.lang.String
           setAccessKey(arg0: java.lang.String | string): void
@@ -31,7 +30,6 @@ declare namespace org {
           blur(): void
           focus(): void
         }
-
       }
     }
   }

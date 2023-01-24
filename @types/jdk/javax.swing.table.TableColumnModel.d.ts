@@ -1,7 +1,6 @@
 declare namespace javax {
   namespace swing {
     namespace table {
-
       interface TableColumnModel {
         addColumn(arg0: javax.swing.table.TableColumn): void
         removeColumn(arg0: javax.swing.table.TableColumn): void
@@ -23,7 +22,6 @@ declare namespace javax {
         addColumnModelListener(arg0: javax.swing.event.TableColumnModelListener): void
         removeColumnModelListener(arg0: javax.swing.event.TableColumnModelListener): void
       }
-
     }
   }
 }

@@ -1,6 +1,5 @@
 declare namespace java {
   namespace applet {
-
     class Applet extends java.awt.Panel {
       accessibleContext: javax.accessibility.AccessibleContext
       public constructor()
@@ -30,6 +29,5 @@ declare namespace java {
       public destroy(): void
       public getAccessibleContext(): javax.accessibility.AccessibleContext
     }
-
   }
 }

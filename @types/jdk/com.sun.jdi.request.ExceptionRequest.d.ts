@@ -2,7 +2,6 @@ declare namespace com {
   namespace sun {
     namespace jdi {
       namespace request {
-
         interface ExceptionRequest extends com.sun.jdi.request.EventRequest {
           exception(): com.sun.jdi.ReferenceType
           notifyCaught(): boolean
@@ -13,7 +12,6 @@ declare namespace com {
           addClassExclusionFilter(arg0: java.lang.String | string): void
           addInstanceFilter(arg0: com.sun.jdi.ObjectReference): void
         }
-
       }
     }
   }

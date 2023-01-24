@@ -1,6 +1,5 @@
 declare namespace java {
   namespace util {
-
     abstract class AbstractCollection<E> implements java.util.Collection<E> {
       protected constructor()
       public abstract iterator(): java.util.Iterator<E>
@@ -18,6 +17,5 @@ declare namespace java {
       public clear(): void
       public toString(): java.lang.String
     }
-
   }
 }

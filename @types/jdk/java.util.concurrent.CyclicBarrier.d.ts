@@ -1,7 +1,6 @@
 declare namespace java {
   namespace util {
     namespace concurrent {
-
       class CyclicBarrier {
         public constructor(arg0: number | java.lang.Integer, arg1: java.lang.Runnable | java.lang.Runnable$$lambda)
         public constructor(arg0: number | java.lang.Integer)
@@ -12,7 +11,6 @@ declare namespace java {
         public reset(): void
         public getNumberWaiting(): number
       }
-
     }
   }
 }

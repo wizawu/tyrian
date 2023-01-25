@@ -6,10 +6,10 @@
   "bin": "./bin/tyrian",
   "scripts": {
     "antlr": "cd src/parser/javap && antlr4 -Dlanguage=JavaScript -visitor Javap.g4",
-    "types": "esbuild src/jdk/index.ts --bundle --platform=node | node -",
-    "build": "esbuild src/main.ts --bundle --outdir=dist --platform=node",
-    "watch": "esbuild src/main.ts --bundle --outdir=dist --platform=node --watch",
-    "lint": "prettier -w src/*.ts src/**/*.ts @types/**/*.ts"
+    "types": "esbuild src/jdk/index.ts --bundle --platform=node | node - && prettier -w @types/**/*.ts",
+    "build": "esbuild src/main.ts --bundle --outdir=dist --platform=node --external:esbuild",
+    "watch": "esbuild src/main.ts --bundle --outdir=dist --platform=node --external:esbuild --watch",
+    "lint": "prettier -w src/*.ts src/**/*.ts"
   },
   "devDependencies": {
     "@types/antlr4": "^4.7.2",
@@ -18,7 +18,6 @@
     "antlr4": "4.10.x",
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
-    "esbuild": "^0.16.15",
     "glob": "^7.1.6",
     "jszip": "^3.7.0",
     "node-html-parser": "^2.0.2",
@@ -31,5 +30,8 @@
     "arrowParens": "avoid",
     "printWidth": 120,
     "semi": false
+  },
+  "dependencies": {
+    "esbuild": "^0.17.4"
   }
 }

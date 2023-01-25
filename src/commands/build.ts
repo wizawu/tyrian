@@ -1,92 +1,38 @@
-import { Stats } from "webpack"
+import * as chalk from "chalk"
+import * as esbuild from "esbuild"
 import * as fs from "fs"
 import * as path from "path"
-// import webpack from "webpack"
 
-import { checkRuntime } from "./run"
-import { code as ErrorCode } from "../errors"
+import { PATH } from "../constants"
 
-export default function (entries: string[], outDir: string, watch: boolean): void {
-  const compiler = getCompiler(entries, outDir)
-  const printStats = (stats?: Stats): void =>
-    console.log(
-      stats?.toString({
-        colors: true,
-        chunks: false,
-        entrypoints: true,
-        modules: false,
-      })
-    )
-  if (watch) {
-    compiler.watch({ poll: true }, (err, stats): void => {
-      printStats(stats)
-    })
-  } else {
-    compiler.run((err, stats) => {
-      printStats(stats)
-      if (stats?.hasErrors()) process.exit(ErrorCode.BUILD_ERROR)
-    })
-  }
-}
-
-/*
-function getCompiler(entries: string[], outDir: string): webpack.Compiler {
-  const context = process.cwd()
-  const entry = {}
-  for (const src of entries) {
-    const out = path.join(outDir, path.basename(src).replace(/(.ts|.tsx)$/, ".js"))
-    entry[out] = path.format({ dir: ".", name: path.relative("", src) })
-  }
-
-  return webpack({
-    devtool: false,
-    mode: "development",
-    context: context,
-    entry: entry,
-    target: checkRuntime()[0] === "nashorn" ? "es5" : "node",
-    output: {
-      path: process.cwd(),
-      filename: "[name]",
-    },
-    resolve: {
-      extensions: [".js", ".ts", ".tsx"],
-    },
-    resolveLoader: {
-      modules: [
-        path.join(__dirname, "..", "..", "node_modules"),
-        path.join(__dirname, "..", "..", ".."),
-      ]
-    },
-    module: {
-      rules: [{
-        test: /\.tsx?$/,
-        use: [{
-          loader: "ts-loader",
-          options: {
-            transpileOnly: false,
-          },
-        }]
-      }]
-    },
-    plugins: [
-      new webpack.DefinePlugin(globalVarDefinition())
-    ],
-  })
-}
-*/
-
-function globalVarDefinition(): Record<string, string> {
-  const vars = ["com", "java", "javax", "jdk", "netscape", "org"]
-  const filePath = path.join(process.cwd(), "lib", "@types", "namespace.json")
-  if (fs.existsSync(filePath)) {
-    const content = fs.readFileSync(filePath, "utf-8")
+export default function (entryPoints: string[], outdir: string, watch: boolean): void {
+  let namespace = path.join(PATH.INSTALL_DIR, "@types", "jdk", "namespace.json")
+  const globalVars = Object.keys(JSON.parse(fs.readFileSync(namespace, "utf-8")))
+  namespace = path.join(process.cwd(), "lib", "@types", "namespace.json")
+  if (fs.existsSync(namespace)) {
+    const content = fs.readFileSync(namespace, "utf-8")
     Object.keys(JSON.parse(content)).forEach(it => {
-      if (vars.indexOf(it) < 0) vars.push(it)
+      if (globalVars.indexOf(it) < 0) globalVars.push(it)
     })
   }
-  return vars.reduce((result, ns) => {
-    const test = `typeof Packages === "object" && typeof ${ns} === "undefined"`
-    result[ns] = `(${test} ? Packages.${ns} : ${ns})`
+  const define = globalVars.reduce((result, it) => {
+    result[it] = `Packages.${it}`
     return result
   }, {})
+
+  const options: esbuild.BuildOptions = {
+    bundle: true,
+    color: !!chalk.supportsColor,
+    define: define,
+    entryPoints: entryPoints.map(it => path.resolve(it)),
+    logLevel: "info",
+    outdir: outdir,
+    platform: "node",
+    target: "es6",
+  }
+  if (watch) {
+    esbuild.context(options).then(context => context.watch())
+  } else {
+    esbuild.buildSync(options)
+  }
 }

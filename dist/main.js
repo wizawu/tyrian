@@ -36,7 +36,7 @@ var require_commander = __commonJS({
     var EventEmitter = require("events").EventEmitter;
     var spawn2 = require("child_process").spawn;
     var path8 = require("path");
-    var fs9 = require("fs");
+    var fs8 = require("fs");
     var Option = class {
       /**
        * Initialize a new `Option` with the given `flags` and `description`.
@@ -761,7 +761,7 @@ Read more on https://git.io/JJc0W`);
         }
         let baseDir;
         try {
-          const resolvedLink = fs9.realpathSync(scriptPath);
+          const resolvedLink = fs8.realpathSync(scriptPath);
           baseDir = path8.dirname(resolvedLink);
         } catch (e) {
           baseDir = ".";
@@ -771,11 +771,11 @@ Read more on https://git.io/JJc0W`);
           bin = subcommand._executableFile;
         }
         const localBin = path8.join(baseDir, bin);
-        if (fs9.existsSync(localBin)) {
+        if (fs8.existsSync(localBin)) {
           bin = localBin;
         } else {
           sourceExt.forEach((ext) => {
-            if (fs9.existsSync(`${localBin}${ext}`)) {
+            if (fs8.existsSync(`${localBin}${ext}`)) {
               bin = `${localBin}${ext}`;
             }
           });
@@ -1553,230 +1553,6 @@ Read more on https://git.io/JJc0W`);
         return arg;
       });
     }
-  }
-});
-
-// node_modules/isexe/windows.js
-var require_windows = __commonJS({
-  "node_modules/isexe/windows.js"(exports, module2) {
-    module2.exports = isexe;
-    isexe.sync = sync;
-    var fs9 = require("fs");
-    function checkPathExt(path8, options) {
-      var pathext = options.pathExt !== void 0 ? options.pathExt : process.env.PATHEXT;
-      if (!pathext) {
-        return true;
-      }
-      pathext = pathext.split(";");
-      if (pathext.indexOf("") !== -1) {
-        return true;
-      }
-      for (var i = 0; i < pathext.length; i++) {
-        var p = pathext[i].toLowerCase();
-        if (p && path8.substr(-p.length).toLowerCase() === p) {
-          return true;
-        }
-      }
-      return false;
-    }
-    function checkStat(stat, path8, options) {
-      if (!stat.isSymbolicLink() && !stat.isFile()) {
-        return false;
-      }
-      return checkPathExt(path8, options);
-    }
-    function isexe(path8, options, cb) {
-      fs9.stat(path8, function(er, stat) {
-        cb(er, er ? false : checkStat(stat, path8, options));
-      });
-    }
-    function sync(path8, options) {
-      return checkStat(fs9.statSync(path8), path8, options);
-    }
-  }
-});
-
-// node_modules/isexe/mode.js
-var require_mode = __commonJS({
-  "node_modules/isexe/mode.js"(exports, module2) {
-    module2.exports = isexe;
-    isexe.sync = sync;
-    var fs9 = require("fs");
-    function isexe(path8, options, cb) {
-      fs9.stat(path8, function(er, stat) {
-        cb(er, er ? false : checkStat(stat, options));
-      });
-    }
-    function sync(path8, options) {
-      return checkStat(fs9.statSync(path8), options);
-    }
-    function checkStat(stat, options) {
-      return stat.isFile() && checkMode(stat, options);
-    }
-    function checkMode(stat, options) {
-      var mod = stat.mode;
-      var uid = stat.uid;
-      var gid = stat.gid;
-      var myUid = options.uid !== void 0 ? options.uid : process.getuid && process.getuid();
-      var myGid = options.gid !== void 0 ? options.gid : process.getgid && process.getgid();
-      var u = parseInt("100", 8);
-      var g = parseInt("010", 8);
-      var o = parseInt("001", 8);
-      var ug = u | g;
-      var ret = mod & o || mod & g && gid === myGid || mod & u && uid === myUid || mod & ug && myUid === 0;
-      return ret;
-    }
-  }
-});
-
-// node_modules/isexe/index.js
-var require_isexe = __commonJS({
-  "node_modules/isexe/index.js"(exports, module2) {
-    var fs9 = require("fs");
-    var core;
-    if (process.platform === "win32" || global.TESTING_WINDOWS) {
-      core = require_windows();
-    } else {
-      core = require_mode();
-    }
-    module2.exports = isexe;
-    isexe.sync = sync;
-    function isexe(path8, options, cb) {
-      if (typeof options === "function") {
-        cb = options;
-        options = {};
-      }
-      if (!cb) {
-        if (typeof Promise !== "function") {
-          throw new TypeError("callback not provided");
-        }
-        return new Promise(function(resolve3, reject) {
-          isexe(path8, options || {}, function(er, is) {
-            if (er) {
-              reject(er);
-            } else {
-              resolve3(is);
-            }
-          });
-        });
-      }
-      core(path8, options || {}, function(er, is) {
-        if (er) {
-          if (er.code === "EACCES" || options && options.ignoreErrors) {
-            er = null;
-            is = false;
-          }
-        }
-        cb(er, is);
-      });
-    }
-    function sync(path8, options) {
-      try {
-        return core.sync(path8, options || {});
-      } catch (er) {
-        if (options && options.ignoreErrors || er.code === "EACCES") {
-          return false;
-        } else {
-          throw er;
-        }
-      }
-    }
-  }
-});
-
-// node_modules/which/which.js
-var require_which = __commonJS({
-  "node_modules/which/which.js"(exports, module2) {
-    var isWindows = process.platform === "win32" || process.env.OSTYPE === "cygwin" || process.env.OSTYPE === "msys";
-    var path8 = require("path");
-    var COLON = isWindows ? ";" : ":";
-    var isexe = require_isexe();
-    var getNotFoundError = (cmd) => Object.assign(new Error(`not found: ${cmd}`), { code: "ENOENT" });
-    var getPathInfo = (cmd, opt) => {
-      const colon = opt.colon || COLON;
-      const pathEnv = cmd.match(/\//) || isWindows && cmd.match(/\\/) ? [""] : [
-        // windows always checks the cwd first
-        ...isWindows ? [process.cwd()] : [],
-        ...(opt.path || process.env.PATH || /* istanbul ignore next: very unusual */
-        "").split(colon)
-      ];
-      const pathExtExe = isWindows ? opt.pathExt || process.env.PATHEXT || ".EXE;.CMD;.BAT;.COM" : "";
-      const pathExt = isWindows ? pathExtExe.split(colon) : [""];
-      if (isWindows) {
-        if (cmd.indexOf(".") !== -1 && pathExt[0] !== "")
-          pathExt.unshift("");
-      }
-      return {
-        pathEnv,
-        pathExt,
-        pathExtExe
-      };
-    };
-    var which2 = (cmd, opt, cb) => {
-      if (typeof opt === "function") {
-        cb = opt;
-        opt = {};
-      }
-      if (!opt)
-        opt = {};
-      const { pathEnv, pathExt, pathExtExe } = getPathInfo(cmd, opt);
-      const found = [];
-      const step = (i) => new Promise((resolve3, reject) => {
-        if (i === pathEnv.length)
-          return opt.all && found.length ? resolve3(found) : reject(getNotFoundError(cmd));
-        const ppRaw = pathEnv[i];
-        const pathPart = /^".*"$/.test(ppRaw) ? ppRaw.slice(1, -1) : ppRaw;
-        const pCmd = path8.join(pathPart, cmd);
-        const p = !pathPart && /^\.[\\\/]/.test(cmd) ? cmd.slice(0, 2) + pCmd : pCmd;
-        resolve3(subStep(p, i, 0));
-      });
-      const subStep = (p, i, ii) => new Promise((resolve3, reject) => {
-        if (ii === pathExt.length)
-          return resolve3(step(i + 1));
-        const ext = pathExt[ii];
-        isexe(p + ext, { pathExt: pathExtExe }, (er, is) => {
-          if (!er && is) {
-            if (opt.all)
-              found.push(p + ext);
-            else
-              return resolve3(p + ext);
-          }
-          return resolve3(subStep(p, i, ii + 1));
-        });
-      });
-      return cb ? step(0).then((res) => cb(null, res), cb) : step(0);
-    };
-    var whichSync = (cmd, opt) => {
-      opt = opt || {};
-      const { pathEnv, pathExt, pathExtExe } = getPathInfo(cmd, opt);
-      const found = [];
-      for (let i = 0; i < pathEnv.length; i++) {
-        const ppRaw = pathEnv[i];
-        const pathPart = /^".*"$/.test(ppRaw) ? ppRaw.slice(1, -1) : ppRaw;
-        const pCmd = path8.join(pathPart, cmd);
-        const p = !pathPart && /^\.[\\\/]/.test(cmd) ? cmd.slice(0, 2) + pCmd : pCmd;
-        for (let j = 0; j < pathExt.length; j++) {
-          const cur = p + pathExt[j];
-          try {
-            const is = isexe.sync(cur, { pathExt: pathExtExe });
-            if (is) {
-              if (opt.all)
-                found.push(cur);
-              else
-                return cur;
-            }
-          } catch (ex) {
-          }
-        }
-      }
-      if (opt.all && found.length)
-        return found;
-      if (opt.nothrow)
-        return null;
-      throw getNotFoundError(cmd);
-    };
-    module2.exports = which2;
-    which2.sync = whichSync;
   }
 });
 
@@ -5811,8 +5587,8 @@ var require_lib2 = __commonJS({
         return this;
       }
       var p = this.constructor;
-      return this.then(resolve4, reject2);
-      function resolve4(value) {
+      return this.then(resolve3, reject2);
+      function resolve3(value) {
         function yes() {
           return value;
         }
@@ -5965,8 +5741,8 @@ var require_lib2 = __commonJS({
       }
       return out;
     }
-    Promise2.resolve = resolve3;
-    function resolve3(value) {
+    Promise2.resolve = resolve2;
+    function resolve2(value) {
       if (value instanceof this) {
         return value;
       }
@@ -6334,10 +6110,10 @@ var require_utils = __commonJS({
       var promise = external.Promise.resolve(inputData).then(function(data) {
         var isBlob = support.blob && (data instanceof Blob || ["[object File]", "[object Blob]"].indexOf(Object.prototype.toString.call(data)) !== -1);
         if (isBlob && typeof FileReader !== "undefined") {
-          return new external.Promise(function(resolve3, reject) {
+          return new external.Promise(function(resolve2, reject) {
             var reader = new FileReader();
             reader.onload = function(e) {
-              resolve3(e.target.result);
+              resolve2(e.target.result);
             };
             reader.onerror = function(e) {
               reject(e.target.error);
@@ -6892,7 +6668,7 @@ var require_StreamHelper = __commonJS({
       }
     }
     function accumulate(helper, updateCallback) {
-      return new external.Promise(function(resolve3, reject) {
+      return new external.Promise(function(resolve2, reject) {
         var dataArray = [];
         var chunkType = helper._internalType, resultType = helper._outputType, mimeType = helper._mimeType;
         helper.on("data", function(data, meta) {
@@ -6906,7 +6682,7 @@ var require_StreamHelper = __commonJS({
         }).on("end", function() {
           try {
             var result = transformZipOutput(resultType, concat(chunkType, dataArray), mimeType);
-            resolve3(result);
+            resolve2(result);
           } catch (e) {
             reject(e);
           }
@@ -13003,7 +12779,7 @@ var require_load = __commonJS({
     var Crc32Probe = require_Crc32Probe();
     var nodejsUtils = require_nodejsUtils();
     function checkEntryCRC32(zipEntry) {
-      return new external.Promise(function(resolve3, reject) {
+      return new external.Promise(function(resolve2, reject) {
         var worker = zipEntry.decompressed.getContentWorker().pipe(new Crc32Probe());
         worker.on("error", function(e) {
           reject(e);
@@ -13011,7 +12787,7 @@ var require_load = __commonJS({
           if (worker.streamInfo.crc32 !== zipEntry.decompressed.crc32) {
             reject(new Error("Corrupted zip : CRC32 mismatch"));
           } else {
-            resolve3();
+            resolve2();
           }
         }).resume();
       });
@@ -13108,7 +12884,7 @@ var require_old = __commonJS({
   "node_modules/fs.realpath/old.js"(exports) {
     var pathModule = require("path");
     var isWindows = process.platform === "win32";
-    var fs9 = require("fs");
+    var fs8 = require("fs");
     var DEBUG = process.env.NODE_DEBUG && /fs/.test(process.env.NODE_DEBUG);
     function rethrow() {
       var callback;
@@ -13155,7 +12931,7 @@ var require_old = __commonJS({
       splitRootRe = /^[\/]*/;
     }
     var splitRootRe;
-    exports.realpathSync = function realpathSync2(p, cache) {
+    exports.realpathSync = function realpathSync(p, cache) {
       p = pathModule.resolve(p);
       if (cache && Object.prototype.hasOwnProperty.call(cache, p)) {
         return cache[p];
@@ -13173,7 +12949,7 @@ var require_old = __commonJS({
         base = m[0];
         previous = "";
         if (isWindows && !knownHard[base]) {
-          fs9.lstatSync(base);
+          fs8.lstatSync(base);
           knownHard[base] = true;
         }
       }
@@ -13191,7 +12967,7 @@ var require_old = __commonJS({
         if (cache && Object.prototype.hasOwnProperty.call(cache, base)) {
           resolvedLink = cache[base];
         } else {
-          var stat = fs9.lstatSync(base);
+          var stat = fs8.lstatSync(base);
           if (!stat.isSymbolicLink()) {
             knownHard[base] = true;
             if (cache)
@@ -13206,8 +12982,8 @@ var require_old = __commonJS({
             }
           }
           if (linkTarget === null) {
-            fs9.statSync(base);
-            linkTarget = fs9.readlinkSync(base);
+            fs8.statSync(base);
+            linkTarget = fs8.readlinkSync(base);
           }
           resolvedLink = pathModule.resolve(previous, linkTarget);
           if (cache)
@@ -13244,7 +13020,7 @@ var require_old = __commonJS({
         base = m[0];
         previous = "";
         if (isWindows && !knownHard[base]) {
-          fs9.lstat(base, function(err) {
+          fs8.lstat(base, function(err) {
             if (err)
               return cb(err);
             knownHard[base] = true;
@@ -13272,7 +13048,7 @@ var require_old = __commonJS({
         if (cache && Object.prototype.hasOwnProperty.call(cache, base)) {
           return gotResolvedLink(cache[base]);
         }
-        return fs9.lstat(base, gotStat);
+        return fs8.lstat(base, gotStat);
       }
       function gotStat(err, stat) {
         if (err)
@@ -13289,10 +13065,10 @@ var require_old = __commonJS({
             return gotTarget(null, seenLinks[id], base);
           }
         }
-        fs9.stat(base, function(err2) {
+        fs8.stat(base, function(err2) {
           if (err2)
             return cb(err2);
-          fs9.readlink(base, function(err3, target) {
+          fs8.readlink(base, function(err3, target) {
             if (!isWindows)
               seenLinks[id] = target;
             gotTarget(err3, target);
@@ -13320,13 +13096,13 @@ var require_fs = __commonJS({
   "node_modules/fs.realpath/index.js"(exports, module2) {
     module2.exports = realpath;
     realpath.realpath = realpath;
-    realpath.sync = realpathSync2;
-    realpath.realpathSync = realpathSync2;
+    realpath.sync = realpathSync;
+    realpath.realpathSync = realpathSync;
     realpath.monkeypatch = monkeypatch;
     realpath.unmonkeypatch = unmonkeypatch;
-    var fs9 = require("fs");
-    var origRealpath = fs9.realpath;
-    var origRealpathSync = fs9.realpathSync;
+    var fs8 = require("fs");
+    var origRealpath = fs8.realpath;
+    var origRealpathSync = fs8.realpathSync;
     var version2 = process.version;
     var ok = /^v[0-5]\./.test(version2);
     var old = require_old();
@@ -13349,7 +13125,7 @@ var require_fs = __commonJS({
         }
       });
     }
-    function realpathSync2(p, cache) {
+    function realpathSync(p, cache) {
       if (ok) {
         return origRealpathSync(p, cache);
       }
@@ -13364,12 +13140,12 @@ var require_fs = __commonJS({
       }
     }
     function monkeypatch() {
-      fs9.realpath = realpath;
-      fs9.realpathSync = realpathSync2;
+      fs8.realpath = realpath;
+      fs8.realpathSync = realpathSync;
     }
     function unmonkeypatch() {
-      fs9.realpath = origRealpath;
-      fs9.realpathSync = origRealpathSync;
+      fs8.realpath = origRealpath;
+      fs8.realpathSync = origRealpathSync;
     }
   }
 });
@@ -14407,7 +14183,7 @@ var require_sync = __commonJS({
   "node_modules/glob/sync.js"(exports, module2) {
     module2.exports = globSync;
     globSync.GlobSync = GlobSync2;
-    var fs9 = require("fs");
+    var fs8 = require("fs");
     var rp = require_fs();
     var minimatch = require_minimatch();
     var Minimatch = minimatch.Minimatch;
@@ -14585,7 +14361,7 @@ var require_sync = __commonJS({
       var lstat;
       var stat;
       try {
-        lstat = fs9.lstatSync(abs);
+        lstat = fs8.lstatSync(abs);
       } catch (er) {
         if (er.code === "ENOENT") {
           return null;
@@ -14611,7 +14387,7 @@ var require_sync = __commonJS({
           return c;
       }
       try {
-        return this._readdirEntries(abs, fs9.readdirSync(abs));
+        return this._readdirEntries(abs, fs8.readdirSync(abs));
       } catch (er) {
         this._readdirError(abs, er);
         return null;
@@ -14720,7 +14496,7 @@ var require_sync = __commonJS({
       if (!stat) {
         var lstat;
         try {
-          lstat = fs9.lstatSync(abs);
+          lstat = fs8.lstatSync(abs);
         } catch (er) {
           if (er && (er.code === "ENOENT" || er.code === "ENOTDIR")) {
             this.statCache[abs] = false;
@@ -14729,7 +14505,7 @@ var require_sync = __commonJS({
         }
         if (lstat && lstat.isSymbolicLink()) {
           try {
-            stat = fs9.statSync(abs);
+            stat = fs8.statSync(abs);
           } catch (er) {
             stat = lstat;
           }
@@ -14882,7 +14658,7 @@ var require_inflight = __commonJS({
 var require_glob = __commonJS({
   "node_modules/glob/glob.js"(exports, module2) {
     module2.exports = glob;
-    var fs9 = require("fs");
+    var fs8 = require("fs");
     var rp = require_fs();
     var minimatch = require_minimatch();
     var Minimatch = minimatch.Minimatch;
@@ -15227,7 +15003,7 @@ var require_glob = __commonJS({
       var self2 = this;
       var lstatcb = inflight(lstatkey, lstatcb_);
       if (lstatcb)
-        fs9.lstat(abs, lstatcb);
+        fs8.lstat(abs, lstatcb);
       function lstatcb_(er, lstat) {
         if (er && er.code === "ENOENT")
           return cb();
@@ -15256,7 +15032,7 @@ var require_glob = __commonJS({
           return cb(null, c);
       }
       var self2 = this;
-      fs9.readdir(abs, readdirCb(this, abs, cb));
+      fs8.readdir(abs, readdirCb(this, abs, cb));
     };
     function readdirCb(self2, abs, cb) {
       return function(er, entries) {
@@ -15400,10 +15176,10 @@ var require_glob = __commonJS({
       var self2 = this;
       var statcb = inflight("stat\0" + abs, lstatcb_);
       if (statcb)
-        fs9.lstat(abs, statcb);
+        fs8.lstat(abs, statcb);
       function lstatcb_(er, lstat) {
         if (lstat && lstat.isSymbolicLink()) {
-          return fs9.stat(abs, function(er2, stat2) {
+          return fs8.stat(abs, function(er2, stat2) {
             if (er2)
               self2._stat2(f, abs, null, lstat, cb);
             else
@@ -15441,19 +15217,17 @@ var import_path5 = __toESM(require("path"));
 // src/constants.ts
 var import_path = __toESM(require("path"));
 var PATH = {
-  INSTALL_DIR: import_path.default.resolve(__dirname, ".."),
-  PACKAGE: "package.json",
-  TSCONFIG: "tsconfig.json"
+  INSTALL_DIR: import_path.default.resolve(__dirname, "..")
 };
 var CONFIG_KEY = {
   NASHORN: "nashorn"
 };
+var TARGET = "es6";
 
 // src/utils.ts
 var import_child_process = require("child_process");
 var fs = __toESM(require("fs"));
 var path2 = __toESM(require("path"));
-var import_which = __toESM(require_which());
 function listFilesByExt(dirname, ext) {
   if (fs.existsSync(dirname)) {
     if (fs.lstatSync(dirname).isDirectory()) {
@@ -15473,14 +15247,6 @@ function readJSON(path8) {
     return {};
   }
 }
-function realPath(command) {
-  const fullPath = import_which.default.sync(command);
-  if (fs.lstatSync(fullPath).isSymbolicLink()) {
-    return fs.realpathSync(fullPath);
-  } else {
-    return fullPath;
-  }
-}
 function javap(classPaths, classList) {
   const child = (0, import_child_process.spawnSync)("javap", ["-package", "-cp", ":" + classPaths.join(":"), ...classList]);
   if (child.status === 0) {
@@ -15489,32 +15255,19 @@ function javap(classPaths, classList) {
     throw new Error(child.stderr.toString());
   }
 }
-function locateJdk(runtime) {
-  const fullPath = realPath(runtime);
-  const child = (0, import_child_process.spawnSync)(runtime, ["--version:graalvm"]);
-  if (child.status === 0) {
-    return ["graaljs", path2.resolve(fullPath, "..", "..", "..", "..")];
-  } else {
-    return ["nashorn", path2.resolve(fullPath, "..", "..")];
-  }
-}
 
 // src/commands/build.ts
 var chalk = __toESM(require_source());
 var esbuild = __toESM(require("esbuild"));
-var fs2 = __toESM(require("fs"));
 var path3 = __toESM(require("path"));
 function build_default(entryPoints, outdir, watch) {
-  let namespace = path3.join(PATH.INSTALL_DIR, "@types", "jdk", "namespace.json");
-  const globalVars = Object.keys(JSON.parse(fs2.readFileSync(namespace, "utf-8")));
-  namespace = path3.join(process.cwd(), "lib", "@types", "namespace.json");
-  if (fs2.existsSync(namespace)) {
-    const content = fs2.readFileSync(namespace, "utf-8");
-    Object.keys(JSON.parse(content)).forEach((it) => {
-      if (globalVars.indexOf(it) < 0)
-        globalVars.push(it);
-    });
-  }
+  let nsFile = path3.join(PATH.INSTALL_DIR, "@types", "jdk", "namespace.json");
+  const globalVars = Object.keys(readJSON(nsFile));
+  nsFile = path3.join(process.cwd(), "lib", "@types", "namespace.json");
+  Object.keys(readJSON(nsFile)).forEach((it) => {
+    if (globalVars.indexOf(it) < 0)
+      globalVars.push(it);
+  });
   const define = globalVars.reduce((result, it) => {
     result[it] = `Packages.${it}`;
     return result;
@@ -15527,7 +15280,7 @@ function build_default(entryPoints, outdir, watch) {
     logLevel: "info",
     outdir,
     platform: "node",
-    target: "es6"
+    target: TARGET
   };
   if (watch) {
     esbuild.context(options).then((context2) => context2.watch());
@@ -15559,11 +15312,11 @@ function init_default() {
     console.error(import_chalk.default.red("You should add node, npm and gradle in `PATH` env."));
     process.exit(code.BROKEN_ENV);
   }
-  if (import_fs.default.existsSync(PATH.PACKAGE)) {
-    console.error(import_chalk.default.yellow(PATH.PACKAGE + " already exists."));
+  if (import_fs.default.existsSync("package.json")) {
+    console.error(import_chalk.default.yellow("package.json already exists."));
     process.exit(code.INIT_CONFLICT);
-  } else if (import_fs.default.existsSync(PATH.TSCONFIG)) {
-    console.error(import_chalk.default.yellow(PATH.TSCONFIG + " already exists."));
+  } else if (import_fs.default.existsSync("tsconfig.json")) {
+    console.error(import_chalk.default.yellow("tsconfig.json already exists."));
     process.exit(code.INIT_CONFLICT);
   } else {
     createFiles();
@@ -15572,7 +15325,7 @@ function init_default() {
 }
 function createFiles() {
   import_fs.default.writeFileSync(
-    PATH.PACKAGE,
+    "package.json",
     JSON.stringify(
       {
         dependencies: {},
@@ -15586,7 +15339,7 @@ function createFiles() {
     )
   );
   import_fs.default.writeFileSync(
-    PATH.TSCONFIG,
+    "tsconfig.json",
     JSON.stringify(
       {
         compilerOptions: {
@@ -33476,7 +33229,7 @@ function run_default(output, args, { inspectBrk, watch }) {
 }
 function checkRuntime() {
   const runtime = "nashorn";
-  const [type] = locateJdk(runtime);
+  const [type] = (void 0)(runtime);
   if (type === "graaljs") {
     return ["graaljs", runtime];
   } else if (type === "nashorn") {
@@ -33510,7 +33263,7 @@ var commands_default = {
 };
 
 // src/main.ts
-var { name, version } = readJSON(import_path5.default.join(PATH.INSTALL_DIR, PATH.PACKAGE));
+var { name, version } = readJSON(import_path5.default.join(PATH.INSTALL_DIR, "package.json"));
 import_commander.program.name(name).version(version);
 import_commander.program.command("init").description("initialize a new project in the current directory").action(() => commands_default.init());
 import_commander.program.command("install").description("install dependencies of current project").option("--offline", "generate lib/@types offline", false).action((command) => {

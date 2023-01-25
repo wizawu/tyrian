@@ -13,11 +13,11 @@ export default function (): void {
     process.exit(ErrorCode.BROKEN_ENV)
   }
 
-  if (fs.existsSync(PATH.PACKAGE)) {
-    console.error(chalk.yellow(PATH.PACKAGE + " already exists."))
+  if (fs.existsSync("package.json")) {
+    console.error(chalk.yellow("package.json already exists."))
     process.exit(ErrorCode.INIT_CONFLICT)
-  } else if (fs.existsSync(PATH.TSCONFIG)) {
-    console.error(chalk.yellow(PATH.TSCONFIG + " already exists."))
+  } else if (fs.existsSync("tsconfig.json")) {
+    console.error(chalk.yellow("tsconfig.json already exists."))
     process.exit(ErrorCode.INIT_CONFLICT)
   } else {
     createFiles()
@@ -28,7 +28,7 @@ export default function (): void {
 function createFiles(): void {
   // create package.json
   fs.writeFileSync(
-    PATH.PACKAGE,
+    "package.json",
     JSON.stringify(
       {
         dependencies: {},
@@ -43,7 +43,7 @@ function createFiles(): void {
   )
   // create tsconfig.json
   fs.writeFileSync(
-    PATH.TSCONFIG,
+    "tsconfig.json",
     JSON.stringify(
       {
         compilerOptions: {

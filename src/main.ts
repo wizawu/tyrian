@@ -5,7 +5,7 @@ import { PATH } from "./constants"
 import * as utils from "./utils"
 import commands from "./commands"
 
-const { name, version } = utils.readJSON(path.join(PATH.INSTALL_DIR, PATH.PACKAGE))
+const { name, version } = utils.readJSON(path.join(PATH.INSTALL_DIR, "package.json"))
 program.name(name).version(version)
 
 program

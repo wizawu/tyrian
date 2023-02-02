@@ -19,7 +19,7 @@
     "commander": "^6.2.0",
     "dotenv": "^10.0.0",
     "glob": "^7.1.6",
-    "jszip": "^3.7.0",
+    "jszip": "^3.8.0",
     "prompts": "^2.4.0",
     "redent": "^3.0.0",
     "ts-loader": "^8.0.17",

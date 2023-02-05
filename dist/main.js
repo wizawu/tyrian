@@ -33256,8 +33256,8 @@ var interfaces_default = {
 
 // src/commands/install.ts
 async function install_default(offline) {
-  if (!import_fs5.default.existsSync(PATH.PACKAGE)) {
-    console.error(import_chalk3.default.red(PATH.PACKAGE + " does not exist."));
+  if (!import_fs5.default.existsSync("package.json")) {
+    console.error(import_chalk3.default.red("package.json does not exist."));
     process.exit(code.PROJECT_NOT_FOUND);
   }
   if (!offline) {
@@ -33299,7 +33299,7 @@ function gradleInstall() {
   import_fs5.default.mkdirSync(import_path4.default.join("lib", "@types"), { recursive: true });
   import_fs5.default.writeFileSync(import_path4.default.join("lib", "@types", "index.d.ts"), "");
   const mvnDependencies = {};
-  for (const it of [PATH.PACKAGE, ...new import_glob.GlobSync(import_path4.default.join("node_modules", "**", PATH.PACKAGE)).found]) {
+  for (const it of ["package.json", ...new import_glob.GlobSync(import_path4.default.join("node_modules", "**", "package.json")).found]) {
     const pkg = JSON.parse(import_fs5.default.readFileSync(it, "utf-8"));
     Object.keys(pkg.mvnDependencies || {}).forEach((k) => {
       if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))

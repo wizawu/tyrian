@@ -13,8 +13,8 @@ import * as utils from "../utils"
 import interfaces from "../jdk/interfaces.json"
 
 export default async function (offline: boolean): Promise<void> {
-  if (!fs.existsSync(PATH.PACKAGE)) {
-    console.error(chalk.red(PATH.PACKAGE + " does not exist."))
+  if (!fs.existsSync("package.json")) {
+    console.error(chalk.red("package.json does not exist."))
     process.exit(ErrorCode.PROJECT_NOT_FOUND)
   }
 
@@ -62,7 +62,7 @@ function gradleInstall(): void {
   fs.writeFileSync(path.join("lib", "@types", "index.d.ts"), "")
   const mvnDependencies: Record<string, string> = {}
   // find all mvnDependencies from node_modules
-  for (const it of [PATH.PACKAGE, ...new GlobSync(path.join("node_modules", "**", PATH.PACKAGE)).found]) {
+  for (const it of ["package.json", ...new GlobSync(path.join("node_modules", "**", "package.json")).found]) {
     const pkg = JSON.parse(fs.readFileSync(it as string, "utf-8"))
     Object.keys(pkg.mvnDependencies || {}).forEach(k => {
       if (pkg.mvnDependencies[k] > (mvnDependencies[k] || "")) mvnDependencies[k] = pkg.mvnDependencies[k]

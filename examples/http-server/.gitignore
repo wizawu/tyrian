@@ -1,6 +1,0 @@
-*.js
-.gradle
-build.gradle
-lib/
-package-lock.json
-tsconfig.json

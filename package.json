@@ -19,7 +19,7 @@
     "chalk": "^4.1.0",
     "commander": "^6.2.0",
     "glob": "^7.1.6",
-    "jszip": "^3.7.0",
+    "jszip": "^3.10.0",
     "node-html-parser": "^2.0.2",
     "prettier": "^2.8.3",
     "redent": "^3.0.0",

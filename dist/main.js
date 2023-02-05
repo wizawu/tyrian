@@ -5372,7 +5372,7 @@ var require_base64 = __commonJS({
       if (input.substr(0, dataUrlPrefix.length) === dataUrlPrefix) {
         throw new Error("Invalid base64 input, it looks like a data url.");
       }
-      input = input.replace(/[^A-Za-z0-9\+\/\=]/g, "");
+      input = input.replace(/[^A-Za-z0-9+/=]/g, "");
       var totalLength = input.length * 3 / 4;
       if (input.charAt(input.length - 1) === _keyStr.charAt(64)) {
         totalLength--;
@@ -5462,18 +5462,6 @@ var require_nodejsUtils = __commonJS({
       isStream: function(obj) {
         return obj && typeof obj.on === "function" && typeof obj.pause === "function" && typeof obj.resume === "function";
       }
-    };
-  }
-});
-
-// node_modules/set-immediate-shim/index.js
-var require_set_immediate_shim = __commonJS({
-  "node_modules/set-immediate-shim/index.js"(exports, module2) {
-    "use strict";
-    module2.exports = typeof setImmediate === "function" ? setImmediate : function setImmediate2() {
-      var args = [].slice.apply(arguments);
-      args.splice(1, 0, 0);
-      setTimeout.apply(null, args);
     };
   }
 });
@@ -5838,6 +5826,154 @@ var require_external = __commonJS({
   }
 });
 
+// node_modules/setimmediate/setImmediate.js
+var require_setImmediate = __commonJS({
+  "node_modules/setimmediate/setImmediate.js"(exports) {
+    (function(global2, undefined2) {
+      "use strict";
+      if (global2.setImmediate) {
+        return;
+      }
+      var nextHandle = 1;
+      var tasksByHandle = {};
+      var currentlyRunningATask = false;
+      var doc = global2.document;
+      var registerImmediate;
+      function setImmediate2(callback) {
+        if (typeof callback !== "function") {
+          callback = new Function("" + callback);
+        }
+        var args = new Array(arguments.length - 1);
+        for (var i = 0; i < args.length; i++) {
+          args[i] = arguments[i + 1];
+        }
+        var task = { callback, args };
+        tasksByHandle[nextHandle] = task;
+        registerImmediate(nextHandle);
+        return nextHandle++;
+      }
+      function clearImmediate(handle) {
+        delete tasksByHandle[handle];
+      }
+      function run(task) {
+        var callback = task.callback;
+        var args = task.args;
+        switch (args.length) {
+          case 0:
+            callback();
+            break;
+          case 1:
+            callback(args[0]);
+            break;
+          case 2:
+            callback(args[0], args[1]);
+            break;
+          case 3:
+            callback(args[0], args[1], args[2]);
+            break;
+          default:
+            callback.apply(undefined2, args);
+            break;
+        }
+      }
+      function runIfPresent(handle) {
+        if (currentlyRunningATask) {
+          setTimeout(runIfPresent, 0, handle);
+        } else {
+          var task = tasksByHandle[handle];
+          if (task) {
+            currentlyRunningATask = true;
+            try {
+              run(task);
+            } finally {
+              clearImmediate(handle);
+              currentlyRunningATask = false;
+            }
+          }
+        }
+      }
+      function installNextTickImplementation() {
+        registerImmediate = function(handle) {
+          process.nextTick(function() {
+            runIfPresent(handle);
+          });
+        };
+      }
+      function canUsePostMessage() {
+        if (global2.postMessage && !global2.importScripts) {
+          var postMessageIsAsynchronous = true;
+          var oldOnMessage = global2.onmessage;
+          global2.onmessage = function() {
+            postMessageIsAsynchronous = false;
+          };
+          global2.postMessage("", "*");
+          global2.onmessage = oldOnMessage;
+          return postMessageIsAsynchronous;
+        }
+      }
+      function installPostMessageImplementation() {
+        var messagePrefix = "setImmediate$" + Math.random() + "$";
+        var onGlobalMessage = function(event) {
+          if (event.source === global2 && typeof event.data === "string" && event.data.indexOf(messagePrefix) === 0) {
+            runIfPresent(+event.data.slice(messagePrefix.length));
+          }
+        };
+        if (global2.addEventListener) {
+          global2.addEventListener("message", onGlobalMessage, false);
+        } else {
+          global2.attachEvent("onmessage", onGlobalMessage);
+        }
+        registerImmediate = function(handle) {
+          global2.postMessage(messagePrefix + handle, "*");
+        };
+      }
+      function installMessageChannelImplementation() {
+        var channel = new MessageChannel();
+        channel.port1.onmessage = function(event) {
+          var handle = event.data;
+          runIfPresent(handle);
+        };
+        registerImmediate = function(handle) {
+          channel.port2.postMessage(handle);
+        };
+      }
+      function installReadyStateChangeImplementation() {
+        var html = doc.documentElement;
+        registerImmediate = function(handle) {
+          var script = doc.createElement("script");
+          script.onreadystatechange = function() {
+            runIfPresent(handle);
+            script.onreadystatechange = null;
+            html.removeChild(script);
+            script = null;
+          };
+          html.appendChild(script);
+        };
+      }
+      function installSetTimeoutImplementation() {
+        registerImmediate = function(handle) {
+          setTimeout(runIfPresent, 0, handle);
+        };
+      }
+      var attachTo = Object.getPrototypeOf && Object.getPrototypeOf(global2);
+      attachTo = attachTo && attachTo.setTimeout ? attachTo : global2;
+      if ({}.toString.call(global2.process) === "[object process]") {
+        installNextTickImplementation();
+      } else if (canUsePostMessage()) {
+        installPostMessageImplementation();
+      } else if (global2.MessageChannel) {
+        installMessageChannelImplementation();
+      } else if (doc && "onreadystatechange" in doc.createElement("script")) {
+        installReadyStateChangeImplementation();
+      } else {
+        installSetTimeoutImplementation();
+      }
+      attachTo.setImmediate = setImmediate2;
+      attachTo.clearImmediate = clearImmediate;
+    })(typeof self === "undefined" ? typeof global === "undefined" ? exports : global : self);
+  }
+});
+
 // node_modules/jszip/lib/utils.js
 var require_utils = __commonJS({
   "node_modules/jszip/lib/utils.js"(exports) {
@@ -5845,8 +5981,8 @@ var require_utils = __commonJS({
     var support = require_support();
     var base64 = require_base64();
     var nodejsUtils = require_nodejsUtils();
-    var setImmediate2 = require_set_immediate_shim();
     var external = require_external();
+    require_setImmediate();
     function string2binary(str) {
       var result = null;
       if (support.uint8array) {
@@ -6051,6 +6187,21 @@ var require_utils = __commonJS({
       var result = transform[inputType][outputType](input);
       return result;
     };
+    exports.resolve = function(path8) {
+      var parts = path8.split("/");
+      var result = [];
+      for (var index = 0; index < parts.length; index++) {
+        var part = parts[index];
+        if (part === "." || part === "" && index !== 0 && index !== parts.length - 1) {
+          continue;
+        } else if (part === "..") {
+          result.pop();
+        } else {
+          result.push(part);
+        }
+      }
+      return result.join("/");
+    };
     exports.getTypeOf = function(input) {
       if (typeof input === "string") {
         return "string";
@@ -6085,7 +6236,7 @@ var require_utils = __commonJS({
       return res;
     };
     exports.delay = function(callback, args, self2) {
-      setImmediate2(function() {
+      setImmediate(function() {
         callback.apply(self2 || null, args || []);
       });
     };
@@ -6099,7 +6250,7 @@ var require_utils = __commonJS({
       var result = {}, i, attr;
       for (i = 0; i < arguments.length; i++) {
         for (attr in arguments[i]) {
-          if (arguments[i].hasOwnProperty(attr) && typeof result[attr] === "undefined") {
+          if (Object.prototype.hasOwnProperty.call(arguments[i], attr) && typeof result[attr] === "undefined") {
             result[attr] = arguments[i][attr];
           }
         }
@@ -6339,7 +6490,7 @@ var require_GenericWorker = __commonJS({
        */
       mergeStreamInfo: function() {
         for (var key in this.extraStreamInfo) {
-          if (!this.extraStreamInfo.hasOwnProperty(key)) {
+          if (!Object.prototype.hasOwnProperty.call(this.extraStreamInfo, key)) {
             continue;
           }
           this.streamInfo[key] = this.extraStreamInfo[key];
@@ -6453,7 +6604,7 @@ var require_utf8 = __commonJS({
       return pos + _utf8len[buf[pos]] > max ? pos : max;
     };
     var buf2string = function(buf) {
-      var str, i2, out, c, c_len;
+      var i2, out, c, c_len;
       var len = buf.length;
       var utf16buf = new Array(len * 2);
       for (out = 0, i2 = 0; i2 < len; ) {
@@ -11402,7 +11553,7 @@ var require_compressions = __commonJS({
     var GenericWorker = require_GenericWorker();
     exports.STORE = {
       magic: "\0\0",
-      compressWorker: function(compressionOptions) {
+      compressWorker: function() {
         return new GenericWorker("STORE compression");
       },
       uncompressWorker: function() {
@@ -11450,7 +11601,7 @@ var require_ZipFileWorker = __commonJS({
       }
       return (result & 65535) << 16;
     };
-    var generateDosExternalFileAttr = function(dosPermissions, isDir) {
+    var generateDosExternalFileAttr = function(dosPermissions) {
       return (dosPermissions || 0) & 63;
     };
     var generateZipParts = function(streamInfo, streamedContent, streamingEnded, offset, platform, encodeFileName) {
@@ -12012,13 +12163,9 @@ var require_object = __commonJS({
         return this;
       },
       /**
-       * Generate the complete zip file
-       * @param {Object} options the options to generate the zip file :
-       * - compression, "STORE" by default.
-       * - type, "base64" by default. Values are : string, base64, uint8array, arraybuffer, blob.
-       * @return {String|Uint8Array|ArrayBuffer|Buffer|Blob} the zip file
+       * @deprecated This method has been removed in JSZip 3.0, please check the upgrade guide.
        */
-      generate: function(options) {
+      generate: function() {
         throw new Error("This method has been removed in JSZip 3.0, please check the upgrade guide.");
       },
       /**
@@ -12139,7 +12286,7 @@ var require_DataReader = __commonJS({
        * @param {number} i the index to use.
        * @return {number} a byte.
        */
-      byteAt: function(i) {
+      byteAt: function() {
       },
       /**
        * Get the next number with a given byte size.
@@ -12168,21 +12315,21 @@ var require_DataReader = __commonJS({
        * @param {number} size the number of bytes to read.
        * @return {Object} the raw data, implementation specific.
        */
-      readData: function(size) {
+      readData: function() {
       },
       /**
        * Find the last occurrence of a zip signature (4 bytes).
        * @param {string} sig the signature to find.
        * @return {number} the index of the last occurrence, -1 if not found.
        */
-      lastIndexOfSignature: function(sig) {
+      lastIndexOfSignature: function() {
       },
       /**
        * Read the signature (4 bytes) at the current position and compare it with sig.
        * @param {string} sig the expected signature
        * @return {boolean} true if the signature matches, false otherwise.
        */
-      readAndCheckSignature: function(sig) {
+      readAndCheckSignature: function() {
       },
       /**
        * Get the next date.
@@ -12366,7 +12513,7 @@ var require_zipEntry = __commonJS({
     var MADE_BY_UNIX = 3;
     var findCompression = function(compressionMethod) {
       for (var method in compressions) {
-        if (!compressions.hasOwnProperty(method)) {
+        if (!Object.prototype.hasOwnProperty.call(compressions, method)) {
           continue;
         }
         if (compressions[method].magic === compressionMethod) {
@@ -12464,7 +12611,7 @@ var require_zipEntry = __commonJS({
        * Parse the ZIP64 extra field and merge the info in the current ZipEntry.
        * @param {DataReader} reader the reader to use.
        */
-      parseZIP64ExtraField: function(reader) {
+      parseZIP64ExtraField: function() {
         if (!this.extraFields[1]) {
           return;
         }
@@ -12577,7 +12724,6 @@ var require_zipEntries = __commonJS({
     var utils = require_utils();
     var sig = require_signature();
     var ZipEntry = require_zipEntry();
-    var utf8 = require_utf8();
     var support = require_support();
     function ZipEntries(loadOptions) {
       this.files = [];
@@ -12822,7 +12968,9 @@ var require_load = __commonJS({
         var files = zipEntries.files;
         for (var i = 0; i < files.length; i++) {
           var input = files[i];
-          zip2.file(input.fileNameStr, input.decompressed, {
+          var unsafeName = input.fileNameStr;
+          var safeName = utils.resolve(input.fileNameStr);
+          zip2.file(safeName, input.decompressed, {
             binary: true,
             optimizedBinaryString: true,
             date: input.date,
@@ -12832,6 +12980,9 @@ var require_load = __commonJS({
             dosPermissions: input.dosPermissions,
             createFolders: options.createFolders
           });
+          if (!input.dir) {
+            zip2.file(safeName).unsafeOriginalName = unsafeName;
+          }
         }
         if (zipEntries.zipComment.length) {
           zip2.comment = zipEntries.zipComment;
@@ -12870,7 +13021,7 @@ var require_lib3 = __commonJS({
     JSZip.prototype.loadAsync = require_load();
     JSZip.support = require_support();
     JSZip.defaults = require_defaults();
-    JSZip.version = "3.7.0";
+    JSZip.version = "3.10.1";
     JSZip.loadAsync = function(content, options) {
       return new JSZip().loadAsync(content, options);
     };
@@ -33186,30 +33337,31 @@ var gradleTemplate = (deps) => (0, import_redent.default)(
 // src/commands/run.ts
 var import_chalk4 = __toESM(require_source());
 var import_fs6 = __toESM(require("fs"));
-var import_redent2 = __toESM(require_redent());
 var import_child_process4 = require("child_process");
-function run_default(output, args, { inspectBrk, watch }) {
+function run_default(output, args, { watch, verbose }) {
   if (!import_fs6.default.existsSync(output)) {
     console.error(import_chalk4.default.red(`The file '${output}' does not exist.`));
     process.exit(code.INVALID_ARGUMENT);
   }
-  const [type, runner] = checkRuntime();
+  let runner = "jjs";
+  if (import_fs6.default.existsSync("package.json")) {
+    runner = readJSON("package.json")[CONFIG_KEY.NASHORN] || runner;
+  }
   const classPaths = listFilesByExt("lib", ".jar");
   const run = () => {
-    const finalArgs = [];
-    if (type === "nashorn") {
-      finalArgs.push("-scripting", "--language=es6", "-cp", ":" + classPaths.join(":"), output, "--", ...args);
-    } else if (type === "graaljs") {
-      if (inspectBrk)
-        finalArgs.push("--inspect-brk=" + inspectBrk);
-      finalArgs.push(
-        "--jvm",
-        "--experimental-options",
-        "--js.nashorn-compat=true",
-        "--vm.cp=:" + classPaths.join(":"),
-        output,
-        ...args
-      );
+    const finalArgs = [
+      "--no-deprecation-warning",
+      "-scripting",
+      "--language=es6",
+      "-cp",
+      ":" + classPaths.join(":"),
+      output
+    ];
+    if (args.length > 0) {
+      finalArgs.push("--", ...args);
+    }
+    if (verbose) {
+      console.warn(import_chalk4.default.gray(runner + " " + finalArgs.join(" ")));
     }
     const child2 = (0, import_child_process4.spawn)(runner, finalArgs);
     child2.on("exit", (code2) => process.exit(code2 || 0));
@@ -33223,34 +33375,10 @@ function run_default(output, args, { inspectBrk, watch }) {
       child.removeAllListeners();
       child.on("exit", () => child = run());
       child.kill("SIGHUP");
-      console.log(import_chalk4.default.gray(`Restarting ${output}...`));
+      if (verbose) {
+        console.warn(import_chalk4.default.gray(`Restarting ${output}...`));
+      }
     });
-  }
-}
-function checkRuntime() {
-  const runtime = "nashorn";
-  const [type] = (void 0)(runtime);
-  if (type === "graaljs") {
-    return ["graaljs", runtime];
-  } else if (type === "nashorn") {
-    return ["nashorn", runtime];
-  } else if ((0, import_child_process4.spawnSync)("node", ["--version:graalvm"]).status === 0) {
-    return ["graaljs", "node"];
-  } else if ((0, import_child_process4.spawnSync)("jjs", ["-version"]).status === 0) {
-    return ["nashorn", "jjs"];
-  } else {
-    console.error(`Please define the runtime in $PATH.ENV`);
-    console.error(
-      (0, import_redent2.default)(
-        `
-      runtime=/path/to/graalvm/bin/node
-      // or
-      runtime=/path/to/openjdk/bin/jjs
-    `,
-        0
-      )
-    );
-    process.exit(code.UNKNOWN_RUNTIME);
   }
 }
 
@@ -33272,8 +33400,8 @@ import_commander.program.command("install").description("install dependencies of
 import_commander.program.command("build <entries...>").description("compile one or more typescript entries").option("-c <path>", "generate output in specific directory", ".").option("-w --watch", "watch changes and re-build", false).action((entries, { watch, c }) => {
   commands_default.build(entries, c, watch);
 });
-import_commander.program.command("run <output> [arguments...]").description("execute one of the build output").option("-w --watch", "watch changes and re-run", false).action((output, args, { watch }) => {
-  commands_default.run(output, args, watch);
+import_commander.program.command("run <output> [arguments...]").description("execute one of the build output").option("-v --verbose", "print the full command line", false).option("-w --watch", "watch changes and re-run", false).action((output, args, { watch, verbose }) => {
+  commands_default.run(output, args, { watch, verbose });
 });
 import_commander.program.parse(process.argv);
 /*! Bundled license information:

@@ -33,9 +33,10 @@ program
 program
   .command("run <output> [arguments...]")
   .description("execute one of the build output")
+  .option("-v --verbose", "print the full command line", false)
   .option("-w --watch", "watch changes and re-run", false)
-  .action((output, args, { watch }) => {
-    commands.run(output, args, watch)
+  .action((output, args, { watch, verbose }) => {
+    commands.run(output, args, { watch, verbose })
   })
 
 program.parse(process.argv)

@@ -1,17 +1,5 @@
-# tyrian [![](https://badge.fury.io/js/tyrian.svg)](https://www.npmjs.com/package/tyrian) [![](https://travis-ci.org/wizawu/tyrian.svg)](https://travis-ci.org/wizawu/tyrian)
+# tyrian [![](https://badge.fury.io/js/tyrian.svg)](https://www.npmjs.com/package/tyrian)
 
-> This project was named [1c](https://www.npmjs.com/package/1c) before. It has been renamed to [tyrian](https://www.npmjs.com/package/tyrian) since version 9.0.0.
-
-We've built several projects with tyrian, such as websites and trading system. Try it if you love TypeScript.
-
-* Check out the [official website](https://wizawu.github.io/tyrian) for more information.
-* Check out the [examples](/examples).
+Check out the [documentation](https://github.com/wizawu/tyrian/wiki).
 
 <img src="/docs/assets/images/autocomplete.gif" width="640" />
-
-### Docker
-
-```
-docker pull wizawu/tyrian:latest
-docker run --rm wizawu/tyrian:latest tyrian --help
-```

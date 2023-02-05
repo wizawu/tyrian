@@ -5,7 +5,6 @@ on:
   push:
     branches:
       - main
-      - v11
 
 permissions:
   contents: read
@@ -20,7 +19,7 @@ jobs:
         run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
 
       - name: build image
-        run: docker build . -t wizawu/tyrian:beta
+        run: docker build . -t wizawu/tyrian:latest
 
       - name: push image
-        run: docker push wizawu/tyrian:beta
+        run: docker push wizawu/tyrian:latest

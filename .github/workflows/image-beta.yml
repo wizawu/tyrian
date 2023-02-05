@@ -1,0 +1,22 @@
+on:
+  push:
+    branches:
+      - dev
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: login registry
+        run: echo ${{secrets.DOCKER_HUB_PASSWORD}} | docker login -u wizawu --password-stdin
+
+      - name: build image
+        run: docker build . -t wizawu/tyrian:beta
+
+      - name: push image
+        run: docker push wizawu/tyrian:beta

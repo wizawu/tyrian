@@ -1,4 +1,4 @@
-import chalk from "chalk"
+import * as chalk from "colorette"
 import fs from "fs"
 import path from "path"
 

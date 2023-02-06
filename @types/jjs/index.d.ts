@@ -13,6 +13,8 @@ declare function print(...args: any): void
 declare function quit(code?: number)
 declare function String(arg: any): java.lang.String
 
+declare const $ARG: string[]
+
 declare namespace java {
   namespace util {
     namespace function$ {

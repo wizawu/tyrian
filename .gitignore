@@ -5,4 +5,5 @@
 *.tokens
 .antlr/
 build/
+dist/watch-*.js
 node_modules/

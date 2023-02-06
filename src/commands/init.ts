@@ -1,5 +1,5 @@
 import { spawnSync } from "child_process"
-import chalk from "chalk"
+import * as chalk from "colorette"
 import fs from "fs"
 import path from "path"
 
@@ -47,7 +47,7 @@ function createFiles(): void {
     JSON.stringify(
       {
         compilerOptions: {
-          typeRoots: [path.join(PATH.INSTALL_DIR, "@types"), "lib", "node_modules/@types"],
+          typeRoots: [path.join(PATH.INSTALL_DIR, "@types"), "node_modules/@types", "lib"],
         },
         include: ["**/*.ts"],
       },

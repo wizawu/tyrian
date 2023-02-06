@@ -1,9 +1,6 @@
 import { ChildProcessWithoutNullStreams, spawn } from "child_process"
-import * as babel from "@babel/core"
-import chalk from "chalk"
+import * as chalk from "colorette"
 import fs from "fs"
-import objectEntiresPlugin from "babel-plugin-transform-es2017-object-entries"
-import preset from "@babel/preset-env"
 
 import { code as ErrorCode } from "../errors"
 import { CONFIG_KEY, TARGET } from "../constants"
@@ -26,11 +23,6 @@ export default function (output: string, args: string[], { watch, verbose }: Opt
   }
   const classPaths = utils.listFilesByExt("lib", ".jar")
   const run = (): ChildProcessWithoutNullStreams => {
-    let code = babel.transformFileSync(output, {
-      presets: [preset],
-      plugins: [objectEntiresPlugin],
-    }).code
-    fs.writeFileSync(output, code)
     const finalArgs: string[] = [
       "--no-deprecation-warning",
       "-scripting",

@@ -1,10 +1,12 @@
 import * as chalk from "colorette"
 import * as path from "path"
 import * as rollup from "rollup"
+import babel from "@rollup/plugin-babel"
 import commonjs from "@rollup/plugin-commonjs"
 import json from "@rollup/plugin-json"
 import resolve from "@rollup/plugin-node-resolve"
 import typescript from "@rollup/plugin-typescript"
+import preset from "@babel/preset-env"
 
 import { PATH } from "../constants"
 import * as utils from "../utils"
@@ -16,10 +18,7 @@ export default function (entryPoints: string[], outdir: string, watch: boolean):
   Object.keys(utils.readJSON(nsFile)).forEach(it => {
     if (globalVars.indexOf(it) < 0) globalVars.push(it)
   })
-  const globals = globalVars.reduce((result, it) => {
-    result[it] = `Packages.${it}`
-    return result
-  }, {})
+  const banner = globalVars.map(it => `var ${it} = Packages.${it};`).join("\n")
 
   const options = entryPoints.map(entry => {
     return {
@@ -28,13 +27,17 @@ export default function (entryPoints: string[], outdir: string, watch: boolean):
         dir: outdir,
         format: "cjs",
         generatedCode: "es5",
-        globals: globals,
+        banner: banner,
       },
       treeshake: false,
       plugins: [
-        commonjs(),
-        json(),
         resolve(),
+        commonjs(),
+        babel({
+          babelHelpers: "bundled",
+          presets: [preset],
+        }),
+        json(),
         typescript({
           compilerOptions: {
             lib: ["es5"],

@@ -1,14 +1,14 @@
 {
   "name": "tyrian",
-  "version": "11.1.0",
+  "version": "11.1.2",
   "repository": "github:wizawu/tyrian",
   "license": "MIT",
   "bin": "./bin/tyrian",
   "scripts": {
     "antlr": "cd src/parser/javap && antlr4 -Dlanguage=JavaScript -visitor Javap.g4",
     "types": "rollup --plugin typescript,commonjs,json,node-resolve --generatedCode es5 -f cjs src/jdk/index.ts | node - && prettier -w @types/**/*.ts",
-    "build": "rollup --plugin typescript,commonjs,json,node-resolve --generatedCode es5 -f cjs -e rollup -d dist src/main.ts",
-    "watch": "rollup --plugin typescript,commonjs,json,node-resolve --generatedCode es5 -f cjs -e rollup -d dist src/main.ts -w --no-watch.clearScreen",
+    "build": "rollup --plugin typescript,commonjs,json,node-resolve --generatedCode es5 -f cjs -e rollup,@rollup/plugin-babel,@babel/preset-env -d dist src/main.ts",
+    "watch": "rollup --plugin typescript,commonjs,json,node-resolve --generatedCode es5 -f cjs -e rollup,@rollup/plugin-babel,@babel/preset-env -d dist src/main.ts -w --no-watch.clearScreen",
     "lint": "prettier -w src/*.ts src/**/*.ts"
   },
   "devDependencies": {
@@ -35,6 +35,8 @@
     "semi": false
   },
   "dependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
     "rollup": "^3.14.0",
     "typescript": "^4.9.5"
   }

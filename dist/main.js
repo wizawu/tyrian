@@ -16,6 +16,7 @@ var require$$6 = require('assert');
 var require$$4 = require('util');
 var require$$0$1 = require('stream');
 var require$$0$2 = require('buffer');
+var readline = require('readline');
 
 function _interopNamespaceDefault(e) {
 	var n = Object.create(null);
@@ -38,6 +39,7 @@ var path__namespace = /*#__PURE__*/_interopNamespaceDefault(path$2);
 var fs__namespace = /*#__PURE__*/_interopNamespaceDefault(fs$2);
 var tty__namespace = /*#__PURE__*/_interopNamespaceDefault(tty);
 var rollup__namespace = /*#__PURE__*/_interopNamespaceDefault(rollup);
+var readline__namespace = /*#__PURE__*/_interopNamespaceDefault(readline);
 
 var commonjsGlobal = typeof globalThis !== 'undefined' ? globalThis : typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
 
@@ -31908,14 +31910,14 @@ function generateTsDef(context, ifs, typeRoot) {
         if (filename) {
             const content = [...frontBuffer, ...endBuffer.reverse()].join("\n");
             fs$2.writeFileSync(path$2.join(typeRoot, filename), content + lambdaBuffer);
-            process.stdout.clearLine(0);
-            process.stdout.cursorTo(0);
+            readline__namespace.clearLine(process.stdout, 0);
+            readline__namespace.cursorTo(process.stdout, 0);
             process.stdout.write(`Generated lib/@types/${filename}`);
             references.push(filename);
         }
     }
-    process.stdout.clearLine(0);
-    process.stdout.cursorTo(0);
+    readline__namespace.clearLine(process.stdout, 0);
+    readline__namespace.cursorTo(process.stdout, 0);
     fs$2.writeFileSync(path$2.join(typeRoot, "index.d.ts"), references
         .map(it => `/// <reference path="${it}" />`)
         .sort()
@@ -40991,7 +40993,6 @@ function run (output, args, { watch, verbose }) {
     const classPaths = listFilesByExt("lib", ".jar");
     const run = () => {
         const finalArgs = [
-            "--no-deprecation-warning",
             "-scripting",
             "--language=" + TARGET,
             "-cp",

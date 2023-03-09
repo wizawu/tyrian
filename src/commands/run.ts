@@ -24,7 +24,6 @@ export default function (output: string, args: string[], { watch, verbose }: Opt
   const classPaths = utils.listFilesByExt("lib", ".jar")
   const run = (): ChildProcessWithoutNullStreams => {
     const finalArgs: string[] = [
-      "--no-deprecation-warning",
       "-scripting",
       "--language=" + TARGET,
       "-cp",

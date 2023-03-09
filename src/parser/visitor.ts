@@ -1,4 +1,5 @@
 import * as chalk from "colorette"
+import * as readline from "readline"
 import fs from "fs"
 import path from "path"
 
@@ -105,14 +106,14 @@ export function generateTsDef(context: CompilationUnitContext, ifs: InterfaceSta
     if (filename) {
       const content = [...frontBuffer, ...endBuffer.reverse()].join("\n")
       fs.writeFileSync(path.join(typeRoot, filename), content + lambdaBuffer)
-      process.stdout.clearLine(0)
-      process.stdout.cursorTo(0)
+      readline.clearLine(process.stdout, 0)
+      readline.cursorTo(process.stdout, 0)
       process.stdout.write(`Generated lib/@types/${filename}`)
       references.push(filename)
     }
   }
-  process.stdout.clearLine(0)
-  process.stdout.cursorTo(0)
+  readline.clearLine(process.stdout, 0)
+  readline.cursorTo(process.stdout, 0)
   fs.writeFileSync(
     path.join(typeRoot, "index.d.ts"),
     references

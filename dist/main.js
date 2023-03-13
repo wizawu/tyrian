@@ -2149,7 +2149,8 @@ function build (entryPoints, outdir, watch) {
                 json(),
                 typescript({
                     compilerOptions: {
-                        lib: ["es5"],
+                        jsx: "react",
+                        lib: ["es5", "dom"],
                         target: "es5",
                         typeRoots: [path__namespace.join(PATH.INSTALL_DIR, "@types"), path__namespace.join("node_modules", "@types"), "lib"],
                     },
@@ -2217,9 +2218,15 @@ function createFiles() {
     // create tsconfig.json
     fs$2.writeFileSync("tsconfig.json", JSON.stringify({
         compilerOptions: {
+            paths: {
+                tslib: [
+                    path$2.join(PATH.INSTALL_DIR, "node_modules", "tslib", "tslib.d.ts"),
+                    path$2.join(PATH.INSTALL_DIR, "..", "node_modules", "tslib", "tslib.d.ts"),
+                ],
+            },
             typeRoots: [path$2.join(PATH.INSTALL_DIR, "@types"), "node_modules/@types", "lib"],
         },
-        include: ["**/*.ts"],
+        include: ["**/*.ts", "**/*.tsx"],
     }, null, 2));
     // create src/main.ts
     fs$2.mkdirSync("src", { recursive: true });
@@ -40992,13 +40999,7 @@ function run (output, args, { watch, verbose }) {
     }
     const classPaths = listFilesByExt("lib", ".jar");
     const run = () => {
-        const finalArgs = [
-            "-scripting",
-            "--language=" + TARGET,
-            "-cp",
-            ":" + classPaths.join(":"),
-            output,
-        ];
+        const finalArgs = ["-scripting", "--language=" + TARGET, "-cp", ":" + classPaths.join(":"), output];
         if (args.length > 0) {
             finalArgs.push("--", ...args);
         }

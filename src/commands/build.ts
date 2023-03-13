@@ -40,7 +40,8 @@ export default function (entryPoints: string[], outdir: string, watch: boolean):
         json(),
         typescript({
           compilerOptions: {
-            lib: ["es5"],
+            jsx: "react",
+            lib: ["es5", "dom"],
             target: "es5",
             typeRoots: [path.join(PATH.INSTALL_DIR, "@types"), path.join("node_modules", "@types"), "lib"],
           },

@@ -23,13 +23,7 @@ export default function (output: string, args: string[], { watch, verbose }: Opt
   }
   const classPaths = utils.listFilesByExt("lib", ".jar")
   const run = (): ChildProcessWithoutNullStreams => {
-    const finalArgs: string[] = [
-      "-scripting",
-      "--language=" + TARGET,
-      "-cp",
-      ":" + classPaths.join(":"),
-      output,
-    ]
+    const finalArgs: string[] = ["-scripting", "--language=" + TARGET, "-cp", ":" + classPaths.join(":"), output]
     if (args.length > 0) {
       finalArgs.push("--", ...args)
     }

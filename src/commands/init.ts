@@ -47,9 +47,15 @@ function createFiles(): void {
     JSON.stringify(
       {
         compilerOptions: {
+          paths: {
+            tslib: [
+              path.join(PATH.INSTALL_DIR, "node_modules", "tslib", "tslib.d.ts"),
+              path.join(PATH.INSTALL_DIR, "..", "node_modules", "tslib", "tslib.d.ts"),
+            ],
+          },
           typeRoots: [path.join(PATH.INSTALL_DIR, "@types"), "node_modules/@types", "lib"],
         },
-        include: ["**/*.ts"],
+        include: ["**/*.ts", "**/*.tsx"],
       },
       null,
       2

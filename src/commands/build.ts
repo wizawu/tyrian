@@ -41,7 +41,7 @@ export default function (entryPoints: string[], outdir: string, watch: boolean):
           presets: [preset],
         }),
         json(),
-        less({ insert: true }),
+        less({ insert: true, output: false }),
         typescript({
           compilerOptions: {
             jsx: "react",

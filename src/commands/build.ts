@@ -4,9 +4,10 @@ import * as rollup from "rollup"
 import babel from "@rollup/plugin-babel"
 import commonjs from "@rollup/plugin-commonjs"
 import json from "@rollup/plugin-json"
+import less from "rollup-plugin-less"
+import preset from "@babel/preset-env"
 import resolve from "@rollup/plugin-node-resolve"
 import typescript from "@rollup/plugin-typescript"
-import preset from "@babel/preset-env"
 
 import { PATH } from "../constants"
 import * as utils from "../utils"
@@ -18,7 +19,9 @@ export default function (entryPoints: string[], outdir: string, watch: boolean):
   Object.keys(utils.readJSON(nsFile)).forEach(it => {
     if (globalVars.indexOf(it) < 0) globalVars.push(it)
   })
-  const banner = globalVars.map(it => `var ${it} = Packages.${it};`).join("\n")
+  const banner =
+    globalVars.map(it => `if (typeof Packages !== 'undefined') var ${it} = Packages.${it};\n`).join("") +
+    "if (typeof process === 'undefined') var process = { env: { NODE_ENV: 'production' } };\n"
 
   const options = entryPoints.map(entry => {
     return {
@@ -38,6 +41,7 @@ export default function (entryPoints: string[], outdir: string, watch: boolean):
           presets: [preset],
         }),
         json(),
+        less({ insert: true }),
         typescript({
           compilerOptions: {
             jsx: "react",

@@ -47,6 +47,7 @@ function createFiles(): void {
     JSON.stringify(
       {
         compilerOptions: {
+          jsx: "react",
           paths: {
             tslib: [
               path.join(PATH.INSTALL_DIR, "node_modules", "tslib", "tslib.d.ts"),

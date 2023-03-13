@@ -6,6 +6,7 @@ export default {
     "@rollup/plugin-json",
     "@rollup/plugin-node-resolve",
     "@rollup/plugin-typescript",
+    "rollup-plugin-less",
     "rollup",
   ],
   output: {

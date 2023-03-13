@@ -9,9 +9,10 @@ var rollup = require('rollup');
 var babel = require('@rollup/plugin-babel');
 var commonjs = require('@rollup/plugin-commonjs');
 var json = require('@rollup/plugin-json');
+var less = require('rollup-plugin-less');
+var preset = require('@babel/preset-env');
 var resolve = require('@rollup/plugin-node-resolve');
 var typescript = require('@rollup/plugin-typescript');
-var preset = require('@babel/preset-env');
 var require$$6 = require('assert');
 var require$$4 = require('util');
 var require$$0$1 = require('stream');
@@ -2128,7 +2129,8 @@ function build (entryPoints, outdir, watch) {
         if (globalVars.indexOf(it) < 0)
             globalVars.push(it);
     });
-    const banner = globalVars.map(it => `var ${it} = Packages.${it};`).join("\n");
+    const banner = globalVars.map(it => `if (typeof Packages !== 'undefined') var ${it} = Packages.${it};\n`).join("") +
+        "if (typeof process === 'undefined') var process = { env: { NODE_ENV: 'production' } };\n";
     const options = entryPoints.map(entry => {
         return {
             input: path__namespace.resolve(entry),
@@ -2147,6 +2149,7 @@ function build (entryPoints, outdir, watch) {
                     presets: [preset],
                 }),
                 json(),
+                less({ insert: true }),
                 typescript({
                     compilerOptions: {
                         jsx: "react",
@@ -2218,6 +2221,7 @@ function createFiles() {
     // create tsconfig.json
     fs$2.writeFileSync("tsconfig.json", JSON.stringify({
         compilerOptions: {
+            jsx: "react",
             paths: {
                 tslib: [
                     path$2.join(PATH.INSTALL_DIR, "node_modules", "tslib", "tslib.d.ts"),

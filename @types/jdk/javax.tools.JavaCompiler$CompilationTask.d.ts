@@ -5,7 +5,7 @@ declare namespace javax {
       setProcessors(arg0: java.lang.Iterable<javax.annotation.processing.Processor>): void
       setLocale(arg0: java.util.Locale): void
       call(): boolean
-      call(): java.lang.Object
+      call?(): java.lang.Object
     }
   }
 }

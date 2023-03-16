@@ -26,21 +26,21 @@ declare namespace javax {
           arg2: javax.xml.namespace.QName
         ): java.lang.Object
         evaluate(arg0: java.lang.String | string, arg1: org.xml.sax.InputSource): java.lang.String
-        evaluateExpression<T>(
+        evaluateExpression?<T>(
           arg0: java.lang.String | string,
           arg1: java.lang.Object | any,
           arg2: java.lang.Class<T>
         ): T
-        evaluateExpression(
+        evaluateExpression?(
           arg0: java.lang.String | string,
           arg1: java.lang.Object | any
         ): javax.xml.xpath.XPathEvaluationResult<unknown>
-        evaluateExpression<T>(
+        evaluateExpression?<T>(
           arg0: java.lang.String | string,
           arg1: org.xml.sax.InputSource,
           arg2: java.lang.Class<T>
         ): T
-        evaluateExpression(
+        evaluateExpression?(
           arg0: java.lang.String | string,
           arg1: org.xml.sax.InputSource
         ): javax.xml.xpath.XPathEvaluationResult<unknown>

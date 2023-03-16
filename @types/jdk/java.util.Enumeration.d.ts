@@ -3,7 +3,7 @@ declare namespace java {
     interface Enumeration<E> {
       hasMoreElements(): boolean
       nextElement(): E
-      asIterator(): java.util.Iterator<E>
+      asIterator?(): java.util.Iterator<E>
     }
   }
 }

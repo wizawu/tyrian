@@ -3,7 +3,7 @@ declare namespace java {
     namespace function$ {
       interface BiFunction<T, U, R> {
         apply(arg0: T, arg1: U): R
-        andThen<V>(arg0: java.util.function$.Function<unknown, V>): java.util.function$.BiFunction<T, U, V>
+        andThen?<V>(arg0: java.util.function$.Function<unknown, V>): java.util.function$.BiFunction<T, U, V>
       }
     }
   }

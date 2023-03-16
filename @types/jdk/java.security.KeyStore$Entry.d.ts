@@ -5,7 +5,7 @@ declare namespace java {
     }
 
     interface KeyStore$Entry {
-      getAttributes(): java.util.Set<java.security.KeyStore$Entry$Attribute>
+      getAttributes?(): java.util.Set<java.security.KeyStore$Entry$Attribute>
     }
   }
 }

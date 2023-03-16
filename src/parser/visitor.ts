@@ -149,7 +149,9 @@ export function declareMethod(method: MethodDeclarationContext, ifs: InterfaceSt
   if (isClass) {
     method.modifier()?.forEach(it => (result += convertMemberModifier(it.getText()) + " "))
   }
-  result += method.Identifier().getText()
+  result +=
+    method.Identifier().getText() +
+    (!isClass && method.modifier()?.some(it => it.getText() === "static" || it.getText() === "default") ? "?" : "")
   result += typeArgumentsToString(method.typeArguments())
   result += "(" + methodArgumentsToString(method.methodArguments(), ifs) + ")"
   result += ": " + typeToString(method.type(), true)

@@ -4,8 +4,8 @@ declare namespace java {
       getClassName(): java.lang.String
       getMethodName(): java.lang.String
       getDeclaringClass(): java.lang.Class<unknown>
-      getMethodType(): java.lang.invoke.MethodType
-      getDescriptor(): java.lang.String
+      getMethodType?(): java.lang.invoke.MethodType
+      getDescriptor?(): java.lang.String
       getByteCodeIndex(): number
       getFileName(): java.lang.String
       getLineNumber(): number

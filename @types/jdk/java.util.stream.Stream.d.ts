@@ -31,8 +31,8 @@ declare namespace java {
         ): java.util.stream.Stream<T>
         limit(arg0: number | java.lang.Long): java.util.stream.Stream<T>
         skip(arg0: number | java.lang.Long): java.util.stream.Stream<T>
-        takeWhile(arg0: java.util.function$.Predicate<unknown>): java.util.stream.Stream<T>
-        dropWhile(arg0: java.util.function$.Predicate<unknown>): java.util.stream.Stream<T>
+        takeWhile?(arg0: java.util.function$.Predicate<unknown>): java.util.stream.Stream<T>
+        dropWhile?(arg0: java.util.function$.Predicate<unknown>): java.util.stream.Stream<T>
         forEach(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): void
         forEachOrdered(
           arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
@@ -60,21 +60,21 @@ declare namespace java {
         noneMatch(arg0: java.util.function$.Predicate<unknown>): boolean
         findFirst(): java.util.Optional<T>
         findAny(): java.util.Optional<T>
-        builder<T>(): java.util.stream.Stream$Builder<T>
-        empty<T>(): java.util.stream.Stream<T>
-        of<T>(arg0: T): java.util.stream.Stream<T>
-        ofNullable<T>(arg0: T): java.util.stream.Stream<T>
-        of<T>(...vargs: T[]): java.util.stream.Stream<T>
-        iterate<T>(arg0: T, arg1: java.util.function$.UnaryOperator<T>): java.util.stream.Stream<T>
-        iterate<T>(
+        builder?<T>(): java.util.stream.Stream$Builder<T>
+        empty?<T>(): java.util.stream.Stream<T>
+        of?<T>(arg0: T): java.util.stream.Stream<T>
+        ofNullable?<T>(arg0: T): java.util.stream.Stream<T>
+        of?<T>(...vargs: T[]): java.util.stream.Stream<T>
+        iterate?<T>(arg0: T, arg1: java.util.function$.UnaryOperator<T>): java.util.stream.Stream<T>
+        iterate?<T>(
           arg0: T,
           arg1: java.util.function$.Predicate<unknown>,
           arg2: java.util.function$.UnaryOperator<T>
         ): java.util.stream.Stream<T>
-        generate<T>(
+        generate?<T>(
           arg0: java.util.function$.Supplier<T> | java.util.function$.Supplier$$lambda<T>
         ): java.util.stream.Stream<T>
-        concat<T>(arg0: java.util.stream.Stream<T>, arg1: java.util.stream.Stream<T>): java.util.stream.Stream<T>
+        concat?<T>(arg0: java.util.stream.Stream<T>, arg1: java.util.stream.Stream<T>): java.util.stream.Stream<T>
       }
     }
   }

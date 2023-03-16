@@ -32,8 +32,8 @@ declare namespace javax {
       removeListSelectionListener(
         arg0: javax.swing.event.ListSelectionListener | javax.swing.event.ListSelectionListener$$lambda
       ): void
-      getSelectedIndices(): number[]
-      getSelectedItemsCount(): number
+      getSelectedIndices?(): number[]
+      getSelectedItemsCount?(): number
     }
   }
 }

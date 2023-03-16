@@ -5,7 +5,7 @@ declare namespace java {
       toString(): java.lang.String
       hashCode(): number
       getName(): java.lang.String
-      implies(arg0: javax.security.auth.Subject): boolean
+      implies?(arg0: javax.security.auth.Subject): boolean
     }
   }
 }

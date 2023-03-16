@@ -6,7 +6,7 @@ declare namespace javax {
       setLoginTimeout(arg0: number | java.lang.Integer): void
       getLoginTimeout(): number
       getParentLogger(): java.util.logging.Logger
-      createShardingKeyBuilder(): java.sql.ShardingKeyBuilder
+      createShardingKeyBuilder?(): java.sql.ShardingKeyBuilder
     }
   }
 }

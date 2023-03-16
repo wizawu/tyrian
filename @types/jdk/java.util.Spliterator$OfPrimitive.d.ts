@@ -7,8 +7,8 @@ declare namespace java {
     > extends java.util.Spliterator<T> {
       trySplit(): T_SPLITR
       tryAdvance(arg0: T_CONS): boolean
-      forEachRemaining(arg0: T_CONS): void
-      trySplit(): java.util.Spliterator
+      forEachRemaining?(arg0: T_CONS): void
+      trySplit?(): java.util.Spliterator
     }
   }
 }

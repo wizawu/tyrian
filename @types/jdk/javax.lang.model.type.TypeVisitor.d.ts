@@ -4,7 +4,7 @@ declare namespace javax {
       namespace type {
         interface TypeVisitor<R, P> {
           visit(arg0: javax.lang.model.type.TypeMirror, arg1: P): R
-          visit(arg0: javax.lang.model.type.TypeMirror): R
+          visit?(arg0: javax.lang.model.type.TypeMirror): R
           visitPrimitive(arg0: javax.lang.model.type.PrimitiveType, arg1: P): R
           visitNull(arg0: javax.lang.model.type.NullType, arg1: P): R
           visitArray(arg0: javax.lang.model.type.ArrayType, arg1: P): R

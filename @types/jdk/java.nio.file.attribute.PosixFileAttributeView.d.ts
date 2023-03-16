@@ -9,7 +9,7 @@ declare namespace java {
           readAttributes(): java.nio.file.attribute.PosixFileAttributes
           setPermissions(arg0: java.util.Set<java.nio.file.attribute.PosixFilePermission>): void
           setGroup(arg0: java.nio.file.attribute.GroupPrincipal): void
-          readAttributes(): java.nio.file.attribute.BasicFileAttributes
+          readAttributes?(): java.nio.file.attribute.BasicFileAttributes
         }
       }
     }

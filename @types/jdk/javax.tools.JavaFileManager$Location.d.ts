@@ -3,7 +3,7 @@ declare namespace javax {
     interface JavaFileManager$Location {
       getName(): java.lang.String
       isOutputLocation(): boolean
-      isModuleOrientedLocation(): boolean
+      isModuleOrientedLocation?(): boolean
     }
   }
 }

@@ -6,7 +6,7 @@ declare namespace java {
       }
 
       interface Type {
-        getTypeName(): java.lang.String
+        getTypeName?(): java.lang.String
       }
     }
   }

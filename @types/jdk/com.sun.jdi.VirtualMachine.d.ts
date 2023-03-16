@@ -9,7 +9,7 @@ declare namespace com {
         readonly TRACE_REFTYPES: int
         readonly TRACE_OBJREFS: int
         readonly TRACE_ALL: int
-        allModules(): java.util.List<com.sun.jdi.ModuleReference>
+        allModules?(): java.util.List<com.sun.jdi.ModuleReference>
         classesByName(arg0: java.lang.String | string): java.util.List<com.sun.jdi.ReferenceType>
         allClasses(): java.util.List<com.sun.jdi.ReferenceType>
         redefineClasses(arg0: java.util.Map<com.sun.jdi.ReferenceType, byte[]>): void
@@ -55,7 +55,7 @@ declare namespace com {
         canGetMonitorFrameInfo(): boolean
         canGetClassFileVersion(): boolean
         canGetConstantPool(): boolean
-        canGetModuleInfo(): boolean
+        canGetModuleInfo?(): boolean
         setDefaultStratum(arg0: java.lang.String | string): void
         getDefaultStratum(): java.lang.String
         instanceCounts(arg0: java.util.List<com.sun.jdi.ReferenceType>): number[]

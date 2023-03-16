@@ -254,20 +254,20 @@ declare namespace java {
       updateNClob(arg0: java.lang.String | string, arg1: java.io.Reader): void
       getObject<T>(arg0: number | java.lang.Integer, arg1: java.lang.Class<T>): T
       getObject<T>(arg0: java.lang.String | string, arg1: java.lang.Class<T>): T
-      updateObject(
+      updateObject?(
         arg0: number | java.lang.Integer,
         arg1: java.lang.Object | any,
         arg2: java.sql.SQLType,
         arg3: number | java.lang.Integer
       ): void
-      updateObject(
+      updateObject?(
         arg0: java.lang.String | string,
         arg1: java.lang.Object | any,
         arg2: java.sql.SQLType,
         arg3: number | java.lang.Integer
       ): void
-      updateObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
-      updateObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
+      updateObject?(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
+      updateObject?(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
     }
   }
 }

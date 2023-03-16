@@ -23,8 +23,8 @@ declare namespace java {
         peek(arg0: java.util.function$.DoubleConsumer): java.util.stream.DoubleStream
         limit(arg0: number | java.lang.Long): java.util.stream.DoubleStream
         skip(arg0: number | java.lang.Long): java.util.stream.DoubleStream
-        takeWhile(arg0: java.util.function$.DoublePredicate): java.util.stream.DoubleStream
-        dropWhile(arg0: java.util.function$.DoublePredicate): java.util.stream.DoubleStream
+        takeWhile?(arg0: java.util.function$.DoublePredicate): java.util.stream.DoubleStream
+        dropWhile?(arg0: java.util.function$.DoublePredicate): java.util.stream.DoubleStream
         forEach(arg0: java.util.function$.DoubleConsumer): void
         forEachOrdered(arg0: java.util.function$.DoubleConsumer): void
         toArray(): number[]
@@ -56,27 +56,27 @@ declare namespace java {
         parallel(): java.util.stream.DoubleStream
         iterator(): java.util.PrimitiveIterator$OfDouble
         spliterator(): java.util.Spliterator$OfDouble
-        builder(): java.util.stream.DoubleStream$Builder
-        empty(): java.util.stream.DoubleStream
-        of(arg0: number | java.lang.Double): java.util.stream.DoubleStream
-        of(...vargs: (number | java.lang.Double)[]): java.util.stream.DoubleStream
-        iterate(
+        builder?(): java.util.stream.DoubleStream$Builder
+        empty?(): java.util.stream.DoubleStream
+        of?(arg0: number | java.lang.Double): java.util.stream.DoubleStream
+        of?(...vargs: (number | java.lang.Double)[]): java.util.stream.DoubleStream
+        iterate?(
           arg0: number | java.lang.Double,
           arg1: java.util.function$.DoubleUnaryOperator
         ): java.util.stream.DoubleStream
-        iterate(
+        iterate?(
           arg0: number | java.lang.Double,
           arg1: java.util.function$.DoublePredicate,
           arg2: java.util.function$.DoubleUnaryOperator
         ): java.util.stream.DoubleStream
-        generate(
+        generate?(
           arg0: java.util.function$.DoubleSupplier | java.util.function$.DoubleSupplier$$lambda
         ): java.util.stream.DoubleStream
-        concat(arg0: java.util.stream.DoubleStream, arg1: java.util.stream.DoubleStream): java.util.stream.DoubleStream
-        parallel(): java.util.stream.BaseStream
-        sequential(): java.util.stream.BaseStream
-        spliterator(): java.util.Spliterator
-        iterator(): java.util.Iterator
+        concat?(arg0: java.util.stream.DoubleStream, arg1: java.util.stream.DoubleStream): java.util.stream.DoubleStream
+        parallel?(): java.util.stream.BaseStream
+        sequential?(): java.util.stream.BaseStream
+        spliterator?(): java.util.Spliterator
+        iterator?(): java.util.Iterator
       }
     }
   }

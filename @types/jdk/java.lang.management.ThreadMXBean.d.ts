@@ -35,7 +35,7 @@ declare namespace java {
           arg1: boolean | java.lang.Boolean,
           arg2: boolean | java.lang.Boolean
         ): java.lang.management.ThreadInfo[]
-        getThreadInfo(
+        getThreadInfo?(
           arg0: number[] | java.lang.Long[],
           arg1: boolean | java.lang.Boolean,
           arg2: boolean | java.lang.Boolean,
@@ -45,7 +45,7 @@ declare namespace java {
           arg0: boolean | java.lang.Boolean,
           arg1: boolean | java.lang.Boolean
         ): java.lang.management.ThreadInfo[]
-        dumpAllThreads(
+        dumpAllThreads?(
           arg0: boolean | java.lang.Boolean,
           arg1: boolean | java.lang.Boolean,
           arg2: number | java.lang.Integer

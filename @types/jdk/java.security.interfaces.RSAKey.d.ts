@@ -3,7 +3,7 @@ declare namespace java {
     namespace interfaces {
       interface RSAKey {
         getModulus(): java.math.BigInteger
-        getParams(): java.security.spec.AlgorithmParameterSpec
+        getParams?(): java.security.spec.AlgorithmParameterSpec
       }
     }
   }

@@ -5,8 +5,8 @@ declare namespace com {
         getCommandLine(): java.lang.String[]
         getTimestampingAuthority(): java.net.URI
         getTimestampingAuthorityCertificate(): java.security.cert.X509Certificate
-        getTSAPolicyID(): java.lang.String
-        getTSADigestAlg(): java.lang.String
+        getTSAPolicyID?(): java.lang.String
+        getTSADigestAlg?(): java.lang.String
         getSignature(): number[]
         getSignatureAlgorithm(): java.lang.String
         getSignerCertificateChain(): java.security.cert.X509Certificate[]

@@ -6,7 +6,7 @@ declare namespace javax {
       containsKey(arg0: java.lang.Object | any): boolean
       get(arg0: java.lang.Object | any): java.lang.Object
       remove(arg0: java.lang.Object | any): java.lang.Object
-      put(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
+      put?(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.lang.Object
     }
   }
 }

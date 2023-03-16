@@ -29,7 +29,7 @@ declare namespace jdk {
             arg0: jdk.nashorn.api.scripting.ScriptObjectMirror,
             arg1: jdk.nashorn.api.tree.DiagnosticListener | jdk.nashorn.api.tree.DiagnosticListener$$lambda
           ): jdk.nashorn.api.tree.CompilationUnitTree
-          create(...vargs: (java.lang.String | string)[]): jdk.nashorn.api.tree.Parser
+          create?(...vargs: (java.lang.String | string)[]): jdk.nashorn.api.tree.Parser
         }
       }
     }

@@ -10,7 +10,7 @@ declare namespace com {
         argumentTypeNames(): java.util.List<java.lang.String>
         argumentTypes(): java.util.List<com.sun.jdi.Type>
         isAbstract(): boolean
-        isDefault(): boolean
+        isDefault?(): boolean
         isSynchronized(): boolean
         isNative(): boolean
         isVarArgs(): boolean

@@ -3,8 +3,8 @@ declare namespace com {
     namespace source {
       namespace util {
         interface TaskListener {
-          started(arg0: com.sun.source.util.TaskEvent): void
-          finished(arg0: com.sun.source.util.TaskEvent): void
+          started?(arg0: com.sun.source.util.TaskEvent): void
+          finished?(arg0: com.sun.source.util.TaskEvent): void
         }
       }
     }

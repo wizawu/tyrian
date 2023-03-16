@@ -23,8 +23,8 @@ declare namespace java {
         peek(arg0: java.util.function$.LongConsumer): java.util.stream.LongStream
         limit(arg0: number | java.lang.Long): java.util.stream.LongStream
         skip(arg0: number | java.lang.Long): java.util.stream.LongStream
-        takeWhile(arg0: java.util.function$.LongPredicate): java.util.stream.LongStream
-        dropWhile(arg0: java.util.function$.LongPredicate): java.util.stream.LongStream
+        takeWhile?(arg0: java.util.function$.LongPredicate): java.util.stream.LongStream
+        dropWhile?(arg0: java.util.function$.LongPredicate): java.util.stream.LongStream
         forEach(arg0: java.util.function$.LongConsumer): void
         forEachOrdered(arg0: java.util.function$.LongConsumer): void
         toArray(): number[]
@@ -57,26 +57,29 @@ declare namespace java {
         parallel(): java.util.stream.LongStream
         iterator(): java.util.PrimitiveIterator$OfLong
         spliterator(): java.util.Spliterator$OfLong
-        builder(): java.util.stream.LongStream$Builder
-        empty(): java.util.stream.LongStream
-        of(arg0: number | java.lang.Long): java.util.stream.LongStream
-        of(...vargs: (number | java.lang.Long)[]): java.util.stream.LongStream
-        iterate(arg0: number | java.lang.Long, arg1: java.util.function$.LongUnaryOperator): java.util.stream.LongStream
-        iterate(
+        builder?(): java.util.stream.LongStream$Builder
+        empty?(): java.util.stream.LongStream
+        of?(arg0: number | java.lang.Long): java.util.stream.LongStream
+        of?(...vargs: (number | java.lang.Long)[]): java.util.stream.LongStream
+        iterate?(
+          arg0: number | java.lang.Long,
+          arg1: java.util.function$.LongUnaryOperator
+        ): java.util.stream.LongStream
+        iterate?(
           arg0: number | java.lang.Long,
           arg1: java.util.function$.LongPredicate,
           arg2: java.util.function$.LongUnaryOperator
         ): java.util.stream.LongStream
-        generate(
+        generate?(
           arg0: java.util.function$.LongSupplier | java.util.function$.LongSupplier$$lambda
         ): java.util.stream.LongStream
-        range(arg0: number | java.lang.Long, arg1: number | java.lang.Long): java.util.stream.LongStream
-        rangeClosed(arg0: number | java.lang.Long, arg1: number | java.lang.Long): java.util.stream.LongStream
-        concat(arg0: java.util.stream.LongStream, arg1: java.util.stream.LongStream): java.util.stream.LongStream
-        parallel(): java.util.stream.BaseStream
-        sequential(): java.util.stream.BaseStream
-        spliterator(): java.util.Spliterator
-        iterator(): java.util.Iterator
+        range?(arg0: number | java.lang.Long, arg1: number | java.lang.Long): java.util.stream.LongStream
+        rangeClosed?(arg0: number | java.lang.Long, arg1: number | java.lang.Long): java.util.stream.LongStream
+        concat?(arg0: java.util.stream.LongStream, arg1: java.util.stream.LongStream): java.util.stream.LongStream
+        parallel?(): java.util.stream.BaseStream
+        sequential?(): java.util.stream.BaseStream
+        spliterator?(): java.util.Spliterator
+        iterator?(): java.util.Iterator
       }
     }
   }

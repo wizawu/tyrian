@@ -145,31 +145,31 @@ declare namespace java {
       setNClob(arg0: java.lang.String | string, arg1: java.io.Reader): void
       getObject<T>(arg0: number | java.lang.Integer, arg1: java.lang.Class<T>): T
       getObject<T>(arg0: java.lang.String | string, arg1: java.lang.Class<T>): T
-      setObject(
+      setObject?(
         arg0: java.lang.String | string,
         arg1: java.lang.Object | any,
         arg2: java.sql.SQLType,
         arg3: number | java.lang.Integer
       ): void
-      setObject(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
-      registerOutParameter(arg0: number | java.lang.Integer, arg1: java.sql.SQLType): void
-      registerOutParameter(
+      setObject?(arg0: java.lang.String | string, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
+      registerOutParameter?(arg0: number | java.lang.Integer, arg1: java.sql.SQLType): void
+      registerOutParameter?(
         arg0: number | java.lang.Integer,
         arg1: java.sql.SQLType,
         arg2: number | java.lang.Integer
       ): void
-      registerOutParameter(
+      registerOutParameter?(
         arg0: number | java.lang.Integer,
         arg1: java.sql.SQLType,
         arg2: java.lang.String | string
       ): void
-      registerOutParameter(arg0: java.lang.String | string, arg1: java.sql.SQLType): void
-      registerOutParameter(
+      registerOutParameter?(arg0: java.lang.String | string, arg1: java.sql.SQLType): void
+      registerOutParameter?(
         arg0: java.lang.String | string,
         arg1: java.sql.SQLType,
         arg2: number | java.lang.Integer
       ): void
-      registerOutParameter(
+      registerOutParameter?(
         arg0: java.lang.String | string,
         arg1: java.sql.SQLType,
         arg2: java.lang.String | string

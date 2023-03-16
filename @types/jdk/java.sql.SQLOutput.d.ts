@@ -28,7 +28,7 @@ declare namespace java {
       writeNClob(arg0: java.sql.NClob): void
       writeRowId(arg0: java.sql.RowId): void
       writeSQLXML(arg0: java.sql.SQLXML): void
-      writeObject(arg0: java.lang.Object | any, arg1: java.sql.SQLType): void
+      writeObject?(arg0: java.lang.Object | any, arg1: java.sql.SQLType): void
     }
   }
 }

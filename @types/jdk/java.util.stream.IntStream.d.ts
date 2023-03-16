@@ -23,8 +23,8 @@ declare namespace java {
         peek(arg0: java.util.function$.IntConsumer): java.util.stream.IntStream
         limit(arg0: number | java.lang.Long): java.util.stream.IntStream
         skip(arg0: number | java.lang.Long): java.util.stream.IntStream
-        takeWhile(arg0: java.util.function$.IntPredicate): java.util.stream.IntStream
-        dropWhile(arg0: java.util.function$.IntPredicate): java.util.stream.IntStream
+        takeWhile?(arg0: java.util.function$.IntPredicate): java.util.stream.IntStream
+        dropWhile?(arg0: java.util.function$.IntPredicate): java.util.stream.IntStream
         forEach(arg0: java.util.function$.IntConsumer): void
         forEachOrdered(arg0: java.util.function$.IntConsumer): void
         toArray(): number[]
@@ -58,29 +58,29 @@ declare namespace java {
         parallel(): java.util.stream.IntStream
         iterator(): java.util.PrimitiveIterator$OfInt
         spliterator(): java.util.Spliterator$OfInt
-        builder(): java.util.stream.IntStream$Builder
-        empty(): java.util.stream.IntStream
-        of(arg0: number | java.lang.Integer): java.util.stream.IntStream
-        of(...vargs: (number | java.lang.Integer)[]): java.util.stream.IntStream
-        iterate(
+        builder?(): java.util.stream.IntStream$Builder
+        empty?(): java.util.stream.IntStream
+        of?(arg0: number | java.lang.Integer): java.util.stream.IntStream
+        of?(...vargs: (number | java.lang.Integer)[]): java.util.stream.IntStream
+        iterate?(
           arg0: number | java.lang.Integer,
           arg1: java.util.function$.IntUnaryOperator
         ): java.util.stream.IntStream
-        iterate(
+        iterate?(
           arg0: number | java.lang.Integer,
           arg1: java.util.function$.IntPredicate,
           arg2: java.util.function$.IntUnaryOperator
         ): java.util.stream.IntStream
-        generate(
+        generate?(
           arg0: java.util.function$.IntSupplier | java.util.function$.IntSupplier$$lambda
         ): java.util.stream.IntStream
-        range(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.stream.IntStream
-        rangeClosed(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.stream.IntStream
-        concat(arg0: java.util.stream.IntStream, arg1: java.util.stream.IntStream): java.util.stream.IntStream
-        parallel(): java.util.stream.BaseStream
-        sequential(): java.util.stream.BaseStream
-        spliterator(): java.util.Spliterator
-        iterator(): java.util.Iterator
+        range?(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.stream.IntStream
+        rangeClosed?(arg0: number | java.lang.Integer, arg1: number | java.lang.Integer): java.util.stream.IntStream
+        concat?(arg0: java.util.stream.IntStream, arg1: java.util.stream.IntStream): java.util.stream.IntStream
+        parallel?(): java.util.stream.BaseStream
+        sequential?(): java.util.stream.BaseStream
+        spliterator?(): java.util.Spliterator
+        iterator?(): java.util.Iterator
       }
     }
   }

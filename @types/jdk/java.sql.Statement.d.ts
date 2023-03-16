@@ -50,18 +50,18 @@ declare namespace java {
       isPoolable(): boolean
       closeOnCompletion(): void
       isCloseOnCompletion(): boolean
-      getLargeUpdateCount(): number
-      setLargeMaxRows(arg0: number | java.lang.Long): void
-      getLargeMaxRows(): number
-      executeLargeBatch(): number[]
-      executeLargeUpdate(arg0: java.lang.String | string): number
-      executeLargeUpdate(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
-      executeLargeUpdate(arg0: java.lang.String | string, arg1: number[] | java.lang.Integer[]): number
-      executeLargeUpdate(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): number
-      enquoteLiteral(arg0: java.lang.String | string): java.lang.String
-      enquoteIdentifier(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): java.lang.String
-      isSimpleIdentifier(arg0: java.lang.String | string): boolean
-      enquoteNCharLiteral(arg0: java.lang.String | string): java.lang.String
+      getLargeUpdateCount?(): number
+      setLargeMaxRows?(arg0: number | java.lang.Long): void
+      getLargeMaxRows?(): number
+      executeLargeBatch?(): number[]
+      executeLargeUpdate?(arg0: java.lang.String | string): number
+      executeLargeUpdate?(arg0: java.lang.String | string, arg1: number | java.lang.Integer): number
+      executeLargeUpdate?(arg0: java.lang.String | string, arg1: number[] | java.lang.Integer[]): number
+      executeLargeUpdate?(arg0: java.lang.String | string, arg1: java.lang.String[] | string[]): number
+      enquoteLiteral?(arg0: java.lang.String | string): java.lang.String
+      enquoteIdentifier?(arg0: java.lang.String | string, arg1: boolean | java.lang.Boolean): java.lang.String
+      isSimpleIdentifier?(arg0: java.lang.String | string): boolean
+      enquoteNCharLiteral?(arg0: java.lang.String | string): java.lang.String
     }
   }
 }

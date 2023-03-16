@@ -21,7 +21,7 @@ declare namespace javax {
           arg3: java.lang.String | string,
           arg4: java.lang.String | string
         ): org.w3c.dom.ls.LSInput
-        resolveEntity(
+        resolveEntity?(
           arg0: java.lang.String | string,
           arg1: java.lang.String | string,
           arg2: java.lang.String | string,

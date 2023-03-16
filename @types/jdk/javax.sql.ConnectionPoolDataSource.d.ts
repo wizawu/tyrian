@@ -7,7 +7,7 @@ declare namespace javax {
       setLogWriter(arg0: java.io.PrintWriter): void
       setLoginTimeout(arg0: number | java.lang.Integer): void
       getLoginTimeout(): number
-      createPooledConnectionBuilder(): javax.sql.PooledConnectionBuilder
+      createPooledConnectionBuilder?(): javax.sql.PooledConnectionBuilder
     }
   }
 }

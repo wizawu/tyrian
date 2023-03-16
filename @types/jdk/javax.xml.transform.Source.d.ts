@@ -4,7 +4,7 @@ declare namespace javax {
       interface Source {
         setSystemId(arg0: java.lang.String | string): void
         getSystemId(): java.lang.String
-        isEmpty(): boolean
+        isEmpty?(): boolean
       }
     }
   }

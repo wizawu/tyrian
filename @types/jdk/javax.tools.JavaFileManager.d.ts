@@ -36,23 +36,23 @@ declare namespace javax {
       ): javax.tools.FileObject
       flush(): void
       close(): void
-      getLocationForModule(
+      getLocationForModule?(
         arg0: javax.tools.JavaFileManager$Location,
         arg1: java.lang.String | string
       ): javax.tools.JavaFileManager$Location
-      getLocationForModule(
+      getLocationForModule?(
         arg0: javax.tools.JavaFileManager$Location,
         arg1: javax.tools.JavaFileObject
       ): javax.tools.JavaFileManager$Location
-      getServiceLoader<S>(
+      getServiceLoader?<S>(
         arg0: javax.tools.JavaFileManager$Location,
         arg1: java.lang.Class<S>
       ): java.util.ServiceLoader<S>
-      inferModuleName(arg0: javax.tools.JavaFileManager$Location): java.lang.String
-      listLocationsForModules(
+      inferModuleName?(arg0: javax.tools.JavaFileManager$Location): java.lang.String
+      listLocationsForModules?(
         arg0: javax.tools.JavaFileManager$Location
       ): java.lang.Iterable<java.util.Set<javax.tools.JavaFileManager$Location>>
-      contains(arg0: javax.tools.JavaFileManager$Location, arg1: javax.tools.FileObject): boolean
+      contains?(arg0: javax.tools.JavaFileManager$Location, arg1: javax.tools.FileObject): boolean
     }
   }
 }

@@ -7,7 +7,7 @@ declare namespace java {
       tailSet(arg0: E): java.util.SortedSet<E>
       first(): E
       last(): E
-      spliterator(): java.util.Spliterator<E>
+      spliterator?(): java.util.Spliterator<E>
     }
   }
 }

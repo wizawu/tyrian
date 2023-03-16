@@ -28,7 +28,7 @@ declare namespace java {
       readNString(): java.lang.String
       readSQLXML(): java.sql.SQLXML
       readRowId(): java.sql.RowId
-      readObject<T>(arg0: java.lang.Class<T>): T
+      readObject?<T>(arg0: java.lang.Class<T>): T
     }
   }
 }

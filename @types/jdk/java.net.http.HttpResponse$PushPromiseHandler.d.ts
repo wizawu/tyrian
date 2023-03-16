@@ -10,7 +10,7 @@ declare namespace java {
             java.util.concurrent.CompletableFuture<java.net.http.HttpResponse<T>>
           >
         ): void
-        of<T>(
+        of?<T>(
           arg0: java.util.function$.Function<java.net.http.HttpRequest, java.net.http.HttpResponse$BodyHandler<T>>,
           arg1: java.util.concurrent.ConcurrentMap<
             java.net.http.HttpRequest,

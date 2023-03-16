@@ -3,7 +3,7 @@
 var require$$0 = require('events');
 var require$$1 = require('child_process');
 var path$2 = require('path');
-var fs$2 = require('fs');
+var fs$3 = require('fs');
 var tty = require('tty');
 var rollup = require('rollup');
 var babel = require('@rollup/plugin-babel');
@@ -13,8 +13,8 @@ var less = require('rollup-plugin-less');
 var preset = require('@babel/preset-env');
 var resolve = require('@rollup/plugin-node-resolve');
 var typescript = require('@rollup/plugin-typescript');
-var require$$6 = require('assert');
-var require$$4 = require('util');
+var require$$5 = require('assert');
+var require$$3 = require('util');
 var require$$0$1 = require('stream');
 var require$$0$2 = require('buffer');
 var readline = require('readline');
@@ -37,7 +37,7 @@ function _interopNamespaceDefault(e) {
 }
 
 var path__namespace = /*#__PURE__*/_interopNamespaceDefault(path$2);
-var fs__namespace = /*#__PURE__*/_interopNamespaceDefault(fs$2);
+var fs__namespace = /*#__PURE__*/_interopNamespaceDefault(fs$3);
 var tty__namespace = /*#__PURE__*/_interopNamespaceDefault(tty);
 var rollup__namespace = /*#__PURE__*/_interopNamespaceDefault(rollup);
 var readline__namespace = /*#__PURE__*/_interopNamespaceDefault(readline);
@@ -58,7 +58,7 @@ var commander = {
 	const EventEmitter = require$$0.EventEmitter;
 	const spawn = require$$1.spawn;
 	const path = path$2;
-	const fs = fs$2;
+	const fs = fs$3;
 
 	// @ts-check
 
@@ -2196,11 +2196,11 @@ function init () {
         console.error(red("You should add node, npm and gradle in `PATH` env."));
         process.exit(code.BROKEN_ENV);
     }
-    if (fs$2.existsSync("package.json")) {
+    if (fs$3.existsSync("package.json")) {
         console.error(yellow("package.json already exists."));
         process.exit(code.INIT_CONFLICT);
     }
-    else if (fs$2.existsSync("tsconfig.json")) {
+    else if (fs$3.existsSync("tsconfig.json")) {
         console.error(yellow("tsconfig.json already exists."));
         process.exit(code.INIT_CONFLICT);
     }
@@ -2211,7 +2211,7 @@ function init () {
 }
 function createFiles() {
     // create package.json
-    fs$2.writeFileSync("package.json", JSON.stringify({
+    fs$3.writeFileSync("package.json", JSON.stringify({
         dependencies: {},
         mvnDependencies: {},
         config: {
@@ -2219,7 +2219,7 @@ function createFiles() {
         },
     }, null, 2));
     // create tsconfig.json
-    fs$2.writeFileSync("tsconfig.json", JSON.stringify({
+    fs$3.writeFileSync("tsconfig.json", JSON.stringify({
         compilerOptions: {
             jsx: "react",
             paths: {
@@ -2233,10 +2233,10 @@ function createFiles() {
         include: ["**/*.ts", "**/*.tsx"],
     }, null, 2));
     // create src/main.ts
-    fs$2.mkdirSync("src", { recursive: true });
-    if (!fs$2.existsSync(path$2.join("src", "main.ts"))) {
+    fs$3.mkdirSync("src", { recursive: true });
+    if (!fs$3.existsSync(path$2.join("src", "main.ts"))) {
         const src = 'java.lang.System.out.println("Hello")';
-        fs$2.writeFileSync(path$2.join("src", "main.ts"), src);
+        fs$3.writeFileSync(path$2.join("src", "main.ts"), src);
     }
 }
 function check(command, args) {
@@ -2284,7 +2284,7 @@ var old$1 = {};
 
 var pathModule = path$2;
 var isWindows = process.platform === 'win32';
-var fs$1 = fs$2;
+var fs$2 = fs$3;
 
 // JavaScript implementation of realpath, ported from node pre-v6
 
@@ -2379,7 +2379,7 @@ old$1.realpathSync = function realpathSync(p, cache) {
 
     // On windows, check that the root exists. On unix there is no need.
     if (isWindows && !knownHard[base]) {
-      fs$1.lstatSync(base);
+      fs$2.lstatSync(base);
       knownHard[base] = true;
     }
   }
@@ -2406,7 +2406,7 @@ old$1.realpathSync = function realpathSync(p, cache) {
       // some known symbolic link.  no need to stat again.
       resolvedLink = cache[base];
     } else {
-      var stat = fs$1.lstatSync(base);
+      var stat = fs$2.lstatSync(base);
       if (!stat.isSymbolicLink()) {
         knownHard[base] = true;
         if (cache) cache[base] = base;
@@ -2423,8 +2423,8 @@ old$1.realpathSync = function realpathSync(p, cache) {
         }
       }
       if (linkTarget === null) {
-        fs$1.statSync(base);
-        linkTarget = fs$1.readlinkSync(base);
+        fs$2.statSync(base);
+        linkTarget = fs$2.readlinkSync(base);
       }
       resolvedLink = pathModule.resolve(previous, linkTarget);
       // track this, if given a cache.
@@ -2481,7 +2481,7 @@ old$1.realpath = function realpath(p, cache, cb) {
 
     // On windows, check that the root exists. On unix there is no need.
     if (isWindows && !knownHard[base]) {
-      fs$1.lstat(base, function(err) {
+      fs$2.lstat(base, function(err) {
         if (err) return cb(err);
         knownHard[base] = true;
         LOOP();
@@ -2518,7 +2518,7 @@ old$1.realpath = function realpath(p, cache, cb) {
       return gotResolvedLink(cache[base]);
     }
 
-    return fs$1.lstat(base, gotStat);
+    return fs$2.lstat(base, gotStat);
   }
 
   function gotStat(err, stat) {
@@ -2540,10 +2540,10 @@ old$1.realpath = function realpath(p, cache, cb) {
         return gotTarget(null, seenLinks[id], base);
       }
     }
-    fs$1.stat(base, function(err) {
+    fs$2.stat(base, function(err) {
       if (err) return cb(err);
 
-      fs$1.readlink(base, function(err, target) {
+      fs$2.readlink(base, function(err, target) {
         if (!isWindows) seenLinks[id] = target;
         gotTarget(err, target);
       });
@@ -2572,9 +2572,9 @@ realpath.realpathSync = realpathSync;
 realpath.monkeypatch = monkeypatch;
 realpath.unmonkeypatch = unmonkeypatch;
 
-var fs = fs$2;
-var origRealpath = fs.realpath;
-var origRealpathSync = fs.realpathSync;
+var fs$1 = fs$3;
+var origRealpath = fs$1.realpath;
+var origRealpathSync = fs$1.realpathSync;
 
 var version$1 = process.version;
 var ok = /^v[0-5]\./.test(version$1);
@@ -2623,13 +2623,13 @@ function realpathSync (p, cache) {
 }
 
 function monkeypatch () {
-  fs.realpath = realpath;
-  fs.realpathSync = realpathSync;
+  fs$1.realpath = realpath;
+  fs$1.realpathSync = realpathSync;
 }
 
 function unmonkeypatch () {
-  fs.realpath = origRealpath;
-  fs.realpathSync = origRealpathSync;
+  fs$1.realpath = origRealpath;
+  fs$1.realpathSync = origRealpathSync;
 }
 
 var concatMap$1 = function (xs, fn) {
@@ -2675,6 +2675,9 @@ function range(a, b, str) {
   var i = ai;
 
   if (ai >= 0 && bi > 0) {
+    if(a===b) {
+      return [ai, bi];
+    }
     begs = [];
     left = str.length;
 
@@ -3936,8 +3939,6 @@ pathIsAbsoluteExports.win32 = win32;
 
 var common$1 = {};
 
-common$1.alphasort = alphasort;
-common$1.alphasorti = alphasorti;
 common$1.setopts = setopts;
 common$1.ownProp = ownProp;
 common$1.makeAbs = makeAbs;
@@ -3950,17 +3951,14 @@ function ownProp (obj, field) {
   return Object.prototype.hasOwnProperty.call(obj, field)
 }
 
+var fs = fs$3;
 var path = path$2;
 var minimatch = minimatch_1;
 var isAbsolute = pathIsAbsoluteExports;
 var Minimatch = minimatch.Minimatch;
 
-function alphasorti (a, b) {
-  return a.toLowerCase().localeCompare(b.toLowerCase())
-}
-
 function alphasort (a, b) {
-  return a.localeCompare(b)
+  return a.localeCompare(b, 'en')
 }
 
 function setupIgnores (self, options) {
@@ -4019,6 +4017,7 @@ function setopts (self, pattern, options) {
   self.stat = !!options.stat;
   self.noprocess = !!options.noprocess;
   self.absolute = !!options.absolute;
+  self.fs = options.fs || fs;
 
   self.maxLength = options.maxLength || Infinity;
   self.cache = options.cache || Object.create(null);
@@ -4052,6 +4051,8 @@ function setopts (self, pattern, options) {
   // Note that they are not supported in Glob itself anyway.
   options.nonegate = true;
   options.nocomment = true;
+  // always treat \ in patterns as escapes, not path separators
+  options.allowWindowsEscape = false;
 
   self.minimatch = new Minimatch(pattern, options);
   self.options = self.minimatch.options;
@@ -4088,7 +4089,7 @@ function finish (self) {
     all = Object.keys(all);
 
   if (!self.nosort)
-    all = all.sort(self.nocase ? alphasorti : alphasort);
+    all = all.sort(alphasort);
 
   // at *some* point we statted all of these
   if (self.mark) {
@@ -4186,17 +4187,14 @@ function requireSync () {
 	sync = globSync;
 	globSync.GlobSync = GlobSync;
 
-	var fs = fs$2;
 	var rp = fs_realpath;
 	var minimatch = minimatch_1;
 	minimatch.Minimatch;
 	requireGlob().Glob;
 	var path = path$2;
-	var assert = require$$6;
+	var assert = require$$5;
 	var isAbsolute = pathIsAbsoluteExports;
 	var common = common$1;
-	common.alphasort;
-	common.alphasorti;
 	var setopts = common.setopts;
 	var ownProp = common.ownProp;
 	var childrenIgnored = common.childrenIgnored;
@@ -4235,7 +4233,7 @@ function requireSync () {
 	}
 
 	GlobSync.prototype._finish = function () {
-	  assert(this instanceof GlobSync);
+	  assert.ok(this instanceof GlobSync);
 	  if (this.realpath) {
 	    var self = this;
 	    this.matches.forEach(function (matchset, index) {
@@ -4259,7 +4257,7 @@ function requireSync () {
 
 
 	GlobSync.prototype._process = function (pattern, index, inGlobStar) {
-	  assert(this instanceof GlobSync);
+	  assert.ok(this instanceof GlobSync);
 
 	  // Get the first [n] parts of pattern that are all strings.
 	  var n = 0;
@@ -4296,7 +4294,10 @@ function requireSync () {
 	  var read;
 	  if (prefix === null)
 	    read = '.';
-	  else if (isAbsolute(prefix) || isAbsolute(pattern.join('/'))) {
+	  else if (isAbsolute(prefix) ||
+	      isAbsolute(pattern.map(function (p) {
+	        return typeof p === 'string' ? p : '[*]'
+	      }).join('/'))) {
 	    if (!prefix || !isAbsolute(prefix))
 	      prefix = '/' + prefix;
 	    read = prefix;
@@ -4431,7 +4432,7 @@ function requireSync () {
 	  var entries;
 	  var lstat;
 	  try {
-	    lstat = fs.lstatSync(abs);
+	    lstat = this.fs.lstatSync(abs);
 	  } catch (er) {
 	    if (er.code === 'ENOENT') {
 	      // lstat failed, doesn't exist
@@ -4467,7 +4468,7 @@ function requireSync () {
 	  }
 
 	  try {
-	    return this._readdirEntries(abs, fs.readdirSync(abs))
+	    return this._readdirEntries(abs, this.fs.readdirSync(abs))
 	  } catch (er) {
 	    this._readdirError(abs, er);
 	    return null
@@ -4624,7 +4625,7 @@ function requireSync () {
 	  if (!stat) {
 	    var lstat;
 	    try {
-	      lstat = fs.lstatSync(abs);
+	      lstat = this.fs.lstatSync(abs);
 	    } catch (er) {
 	      if (er && (er.code === 'ENOENT' || er.code === 'ENOTDIR')) {
 	        this.statCache[abs] = false;
@@ -4634,7 +4635,7 @@ function requireSync () {
 
 	    if (lstat && lstat.isSymbolicLink()) {
 	      try {
-	        stat = fs.statSync(abs);
+	        stat = this.fs.statSync(abs);
 	      } catch (er) {
 	        stat = lstat;
 	      }
@@ -4853,19 +4854,16 @@ function requireGlob () {
 
 	glob_1 = glob;
 
-	var fs = fs$2;
 	var rp = fs_realpath;
 	var minimatch = minimatch_1;
 	minimatch.Minimatch;
 	var inherits = inheritsExports;
 	var EE = require$$0.EventEmitter;
 	var path = path$2;
-	var assert = require$$6;
+	var assert = require$$5;
 	var isAbsolute = pathIsAbsoluteExports;
 	var globSync = requireSync();
 	var common = common$1;
-	common.alphasort;
-	common.alphasorti;
 	var setopts = common.setopts;
 	var ownProp = common.ownProp;
 	var inflight = inflight_1;
@@ -5157,7 +5155,10 @@ function requireGlob () {
 	  var read;
 	  if (prefix === null)
 	    read = '.';
-	  else if (isAbsolute(prefix) || isAbsolute(pattern.join('/'))) {
+	  else if (isAbsolute(prefix) ||
+	      isAbsolute(pattern.map(function (p) {
+	        return typeof p === 'string' ? p : '[*]'
+	      }).join('/'))) {
 	    if (!prefix || !isAbsolute(prefix))
 	      prefix = '/' + prefix;
 	    read = prefix;
@@ -5314,7 +5315,7 @@ function requireGlob () {
 	  var lstatcb = inflight(lstatkey, lstatcb_);
 
 	  if (lstatcb)
-	    fs.lstat(abs, lstatcb);
+	    self.fs.lstat(abs, lstatcb);
 
 	  function lstatcb_ (er, lstat) {
 	    if (er && er.code === 'ENOENT')
@@ -5353,7 +5354,9 @@ function requireGlob () {
 	    if (Array.isArray(c))
 	      return cb(null, c)
 	  }
-	  fs.readdir(abs, readdirCb(this, abs, cb));
+
+	  var self = this;
+	  self.fs.readdir(abs, readdirCb(this, abs, cb));
 	};
 
 	function readdirCb (self, abs, cb) {
@@ -5555,13 +5558,13 @@ function requireGlob () {
 	  var self = this;
 	  var statcb = inflight('stat\0' + abs, lstatcb_);
 	  if (statcb)
-	    fs.lstat(abs, statcb);
+	    self.fs.lstat(abs, statcb);
 
 	  function lstatcb_ (er, lstat) {
 	    if (lstat && lstat.isSymbolicLink()) {
 	      // If it's a symlink, then treat it as the target, unless
 	      // the target does not exist, then treat it as a file.
-	      return fs.stat(abs, function (er, stat) {
+	      return self.fs.stat(abs, function (er, stat) {
 	        if (er)
 	          self._stat2(f, abs, null, lstat, cb);
 	        else
@@ -5951,7 +5954,7 @@ function requireUtil () {
 	}
 	util.isPrimitive = isPrimitive;
 
-	util.isBuffer = Buffer.isBuffer;
+	util.isBuffer = require$$0$2.Buffer.isBuffer;
 
 	function objectToString(o) {
 	  return Object.prototype.toString.call(o);
@@ -5975,7 +5978,7 @@ function requireBufferList () {
 		function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 		var Buffer = requireSafeBuffer().Buffer;
-		var util = require$$4;
+		var util = require$$3;
 
 		function copyBuffer(src, target, offset) {
 		  src.copy(target, offset);
@@ -6028,7 +6031,6 @@ function requireBufferList () {
 
 		  BufferList.prototype.concat = function concat(n) {
 		    if (this.length === 0) return Buffer.alloc(0);
-		    if (this.length === 1) return this.head.data;
 		    var ret = Buffer.allocUnsafe(n >>> 0);
 		    var p = this.head;
 		    var i = 0;
@@ -6075,9 +6077,15 @@ function requireDestroy () {
 	  if (readableDestroyed || writableDestroyed) {
 	    if (cb) {
 	      cb(err);
-	    } else if (err && (!this._writableState || !this._writableState.errorEmitted)) {
-	      pna.nextTick(emitErrorNT, this, err);
+	    } else if (err) {
+	      if (!this._writableState) {
+	        pna.nextTick(emitErrorNT, this, err);
+	      } else if (!this._writableState.errorEmitted) {
+	        this._writableState.errorEmitted = true;
+	        pna.nextTick(emitErrorNT, this, err);
+	      }
 	    }
+
 	    return this;
 	  }
 
@@ -6095,9 +6103,11 @@ function requireDestroy () {
 
 	  this._destroy(err || null, function (err) {
 	    if (!cb && err) {
-	      pna.nextTick(emitErrorNT, _this, err);
-	      if (_this._writableState) {
+	      if (!_this._writableState) {
+	        pna.nextTick(emitErrorNT, _this, err);
+	      } else if (!_this._writableState.errorEmitted) {
 	        _this._writableState.errorEmitted = true;
+	        pna.nextTick(emitErrorNT, _this, err);
 	      }
 	    } else if (cb) {
 	      cb(err);
@@ -6119,6 +6129,8 @@ function requireDestroy () {
 	    this._writableState.destroyed = false;
 	    this._writableState.ended = false;
 	    this._writableState.ending = false;
+	    this._writableState.finalCalled = false;
+	    this._writableState.prefinished = false;
 	    this._writableState.finished = false;
 	    this._writableState.errorEmitted = false;
 	  }
@@ -6145,7 +6157,7 @@ function requireNode () {
 	 * For Node.js, simply re-export the core `util.deprecate` function.
 	 */
 
-	node = require$$4.deprecate;
+	node = require$$3.deprecate;
 	return node;
 }
 
@@ -6204,7 +6216,7 @@ function require_stream_writable () {
 	/*<replacement>*/
 
 	var Buffer = requireSafeBuffer().Buffer;
-	var OurUint8Array = commonjsGlobal.Uint8Array || function () {};
+	var OurUint8Array = (typeof commonjsGlobal !== 'undefined' ? commonjsGlobal : typeof window !== 'undefined' ? window : typeof self !== 'undefined' ? self : {}).Uint8Array || function () {};
 	function _uint8ArrayToBuffer(chunk) {
 	  return Buffer.from(chunk);
 	}
@@ -6472,7 +6484,7 @@ function require_stream_writable () {
 	  if (state.corked) {
 	    state.corked--;
 
-	    if (!state.writing && !state.corked && !state.finished && !state.bufferProcessing && state.bufferedRequest) clearBuffer(this, state);
+	    if (!state.writing && !state.corked && !state.bufferProcessing && state.bufferedRequest) clearBuffer(this, state);
 	  }
 	};
 
@@ -6714,7 +6726,7 @@ function require_stream_writable () {
 	  }
 
 	  // ignore unnecessary end() calls.
-	  if (!state.ending && !state.finished) endWritable(this, state, cb);
+	  if (!state.ending) endWritable(this, state, cb);
 	};
 
 	function needFinish(state) {
@@ -6775,11 +6787,9 @@ function require_stream_writable () {
 	    cb(err);
 	    entry = entry.next;
 	  }
-	  if (state.corkedRequestsFree) {
-	    state.corkedRequestsFree.next = corkReq;
-	  } else {
-	    state.corkedRequestsFree = corkReq;
-	  }
+
+	  // reuse the free corkReq.
+	  state.corkedRequestsFree.next = corkReq;
 	}
 
 	Object.defineProperty(Writable.prototype, 'destroyed', {
@@ -7246,7 +7256,7 @@ function require_stream_readable () {
 	/*<replacement>*/
 
 	var Buffer = requireSafeBuffer().Buffer;
-	var OurUint8Array = commonjsGlobal.Uint8Array || function () {};
+	var OurUint8Array = (typeof commonjsGlobal !== 'undefined' ? commonjsGlobal : typeof window !== 'undefined' ? window : typeof self !== 'undefined' ? self : {}).Uint8Array || function () {};
 	function _uint8ArrayToBuffer(chunk) {
 	  return Buffer.from(chunk);
 	}
@@ -7262,7 +7272,7 @@ function require_stream_readable () {
 	/*</replacement>*/
 
 	/*<replacement>*/
-	var debugUtil = require$$4;
+	var debugUtil = require$$3;
 	var debug = void 0;
 	if (debugUtil && debugUtil.debuglog) {
 	  debug = debugUtil.debuglog('stream');
@@ -7816,8 +7826,8 @@ function require_stream_readable () {
 	      // also returned false.
 	      // => Check whether `dest` is still a piping destination.
 	      if ((state.pipesCount === 1 && state.pipes === dest || state.pipesCount > 1 && indexOf(state.pipes, dest) !== -1) && !cleanedUp) {
-	        debug('false write response, pause', src._readableState.awaitDrain);
-	        src._readableState.awaitDrain++;
+	        debug('false write response, pause', state.awaitDrain);
+	        state.awaitDrain++;
 	        increasedAwaitDrain = true;
 	      }
 	      src.pause();
@@ -7911,7 +7921,7 @@ function require_stream_readable () {
 	    state.flowing = false;
 
 	    for (var i = 0; i < len; i++) {
-	      dests[i].emit('unpipe', this, unpipeInfo);
+	      dests[i].emit('unpipe', this, { hasUnpiped: false });
 	    }return this;
 	  }
 
@@ -30309,7 +30319,7 @@ var CharStreams = {
    * Invokes callback(error, result) on completion.
    */
   fromPath: function(path, encoding, callback) {
-    fs$2.readFile(path, encoding, function(err, data) {
+    fs$3.readFile(path, encoding, function(err, data) {
       let is = null;
       if (data !== null) {
         is = new InputStream(data, true);
@@ -30324,7 +30334,7 @@ var CharStreams = {
    * 'utf8' if encoding is null).
    */
   fromPathSync: function(path, encoding) {
-    const data = fs$2.readFileSync(path, encoding);
+    const data = fs$3.readFileSync(path, encoding);
     return new InputStream(data, true);
   }
 };
@@ -30340,7 +30350,7 @@ var CharStreams = {
  */
 class FileStream extends InputStream {
 	constructor(fileName, decodeToUnicodeCodePoints) {
-		const data = fs$2.readFileSync(fileName, "utf8");
+		const data = fs$3.readFileSync(fileName, "utf8");
 		super(data, decodeToUnicodeCodePoints);
 		this.fileName = fileName;
 	}
@@ -31819,7 +31829,7 @@ const antlr4 = {
 
 const LambdaSuffix = "$$lambda";
 function generateTsDef(context, ifs, typeRoot) {
-    fs$2.mkdirSync(typeRoot, { recursive: true });
+    fs$3.mkdirSync(typeRoot, { recursive: true });
     const references = [];
     const topNamespaces = {};
     for (const c of context.classOrInterface()) {
@@ -31920,7 +31930,7 @@ function generateTsDef(context, ifs, typeRoot) {
         }
         if (filename) {
             const content = [...frontBuffer, ...endBuffer.reverse()].join("\n");
-            fs$2.writeFileSync(path$2.join(typeRoot, filename), content + lambdaBuffer);
+            fs$3.writeFileSync(path$2.join(typeRoot, filename), content + lambdaBuffer);
             readline__namespace.clearLine(process.stdout, 0);
             readline__namespace.cursorTo(process.stdout, 0);
             process.stdout.write(`Generated lib/@types/${filename}`);
@@ -31929,12 +31939,12 @@ function generateTsDef(context, ifs, typeRoot) {
     }
     readline__namespace.clearLine(process.stdout, 0);
     readline__namespace.cursorTo(process.stdout, 0);
-    fs$2.writeFileSync(path$2.join(typeRoot, "index.d.ts"), references
+    fs$3.writeFileSync(path$2.join(typeRoot, "index.d.ts"), references
         .map(it => `/// <reference path="${it}" />`)
         .sort()
         .join("\n"));
     console.log(green("Generated " + path$2.join(typeRoot, "index.d.ts")));
-    fs$2.writeFileSync(path$2.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
+    fs$3.writeFileSync(path$2.join(typeRoot, "namespace.json"), JSON.stringify(topNamespaces, null, 2));
     console.log(green("Generated " + path$2.join(typeRoot, "namespace.json")));
     return true;
 }
@@ -31959,7 +31969,9 @@ function declareMethod(method, ifs, isClass = false) {
     if (isClass) {
         method.modifier()?.forEach(it => (result += convertMemberModifier(it.getText()) + " "));
     }
-    result += method.Identifier().getText();
+    result +=
+        method.Identifier().getText() +
+            (!isClass && method.modifier()?.some(it => it.getText() === "static" || it.getText() === "default") ? "?" : "");
     result += typeArgumentsToString(method.typeArguments());
     result += "(" + methodArgumentsToString(method.methodArguments(), ifs) + ")";
     result += ": " + typeToString(method.type(), true);
@@ -40915,7 +40927,7 @@ var interfaces = {
 };
 
 async function install (offline) {
-    if (!fs$2.existsSync("package.json")) {
+    if (!fs$3.existsSync("package.json")) {
         console.error(red("package.json does not exist."));
         process.exit(code.PROJECT_NOT_FOUND);
     }
@@ -40936,7 +40948,7 @@ async function install (offline) {
 async function listLibClasses(jars) {
     const classes = {};
     for (const jar of jars) {
-        const data = fs$2.readFileSync(jar);
+        const data = fs$3.readFileSync(jar);
         const files = (await lib.loadAsync(data)).files;
         Object.keys(files).forEach(it => {
             if (it.endsWith(".class")) {
@@ -40956,19 +40968,19 @@ function npmInstall() {
         process.exit(child.status);
 }
 function gradleInstall() {
-    fs$2.mkdirSync(path$2.join("lib", "@types"), { recursive: true });
-    fs$2.writeFileSync(path$2.join("lib", "@types", "index.d.ts"), "");
+    fs$3.mkdirSync(path$2.join("lib", "@types"), { recursive: true });
+    fs$3.writeFileSync(path$2.join("lib", "@types", "index.d.ts"), "");
     const mvnDependencies = {};
     // find all mvnDependencies from node_modules
     for (const it of ["package.json", ...new globExports.GlobSync(path$2.join("node_modules", "**", "package.json")).found]) {
-        const pkg = JSON.parse(fs$2.readFileSync(it, "utf-8"));
+        const pkg = JSON.parse(fs$3.readFileSync(it, "utf-8"));
         Object.keys(pkg.mvnDependencies || {}).forEach(k => {
             if (pkg.mvnDependencies[k] > (mvnDependencies[k] || ""))
                 mvnDependencies[k] = pkg.mvnDependencies[k];
         });
     }
     const deps = Object.keys(mvnDependencies).map(it => it + ":" + mvnDependencies[it]);
-    fs$2.writeFileSync(path$2.join("lib", "build.gradle"), gradleTemplate(deps));
+    fs$3.writeFileSync(path$2.join("lib", "build.gradle"), gradleTemplate(deps));
     const child = require$$1.spawnSync("gradle", ["-b", path$2.join("lib", "build.gradle"), "--no-daemon", "install"], {
         stdio: "inherit",
     });
@@ -40993,12 +41005,12 @@ const gradleTemplate = (deps) => redent(`
     `, 0).trimStart();
 
 function run (output, args, { watch, verbose }) {
-    if (!fs$2.existsSync(output)) {
+    if (!fs$3.existsSync(output)) {
         console.error(red(`The file '${output}' does not exist.`));
         process.exit(code.INVALID_ARGUMENT);
     }
     let runner = "jjs";
-    if (fs$2.existsSync("package.json")) {
+    if (fs$3.existsSync("package.json")) {
         runner = readJSON("package.json")[CONFIG_KEY.NASHORN] || runner;
     }
     const classPaths = listFilesByExt("lib", ".jar");
@@ -41018,7 +41030,7 @@ function run (output, args, { watch, verbose }) {
     };
     let child = run();
     if (watch) {
-        fs$2.watchFile(output, () => {
+        fs$3.watchFile(output, () => {
             child.removeAllListeners();
             child.on("exit", () => (child = run()));
             child.kill("SIGHUP");

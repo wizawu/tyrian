@@ -73,14 +73,14 @@ declare namespace java {
       setClob(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
       setBlob(arg0: number | java.lang.Integer, arg1: java.io.InputStream): void
       setNClob(arg0: number | java.lang.Integer, arg1: java.io.Reader): void
-      setObject(
+      setObject?(
         arg0: number | java.lang.Integer,
         arg1: java.lang.Object | any,
         arg2: java.sql.SQLType,
         arg3: number | java.lang.Integer
       ): void
-      setObject(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
-      executeLargeUpdate(): number
+      setObject?(arg0: number | java.lang.Integer, arg1: java.lang.Object | any, arg2: java.sql.SQLType): void
+      executeLargeUpdate?(): number
     }
   }
 }

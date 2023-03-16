@@ -9,7 +9,7 @@ declare namespace java {
           setHidden(arg0: boolean | java.lang.Boolean): void
           setSystem(arg0: boolean | java.lang.Boolean): void
           setArchive(arg0: boolean | java.lang.Boolean): void
-          readAttributes(): java.nio.file.attribute.BasicFileAttributes
+          readAttributes?(): java.nio.file.attribute.BasicFileAttributes
         }
       }
     }

@@ -16,7 +16,7 @@ declare namespace javax {
       setActionCommand(arg0: java.lang.String | string): void
       getActionCommand(): java.lang.String
       setGroup(arg0: javax.swing.ButtonGroup): void
-      getGroup(): javax.swing.ButtonGroup
+      getGroup?(): javax.swing.ButtonGroup
       addActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
       removeActionListener(arg0: java.awt.event.ActionListener | java.awt.event.ActionListener$$lambda): void
       addItemListener(arg0: java.awt.event.ItemListener | java.awt.event.ItemListener$$lambda): void

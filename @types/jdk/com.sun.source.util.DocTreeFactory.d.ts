@@ -75,7 +75,7 @@ declare namespace com {
             arg1: java.util.List<com.sun.source.doctree.DocTree>,
             arg2: boolean | java.lang.Boolean
           ): com.sun.source.doctree.StartElementTree
-          newSummaryTree(arg0: java.util.List<com.sun.source.doctree.DocTree>): com.sun.source.doctree.SummaryTree
+          newSummaryTree?(arg0: java.util.List<com.sun.source.doctree.DocTree>): com.sun.source.doctree.SummaryTree
           newTextTree(arg0: java.lang.String | string): com.sun.source.doctree.TextTree
           newThrowsTree(
             arg0: com.sun.source.doctree.ReferenceTree,

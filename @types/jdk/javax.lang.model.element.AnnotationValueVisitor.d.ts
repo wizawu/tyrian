@@ -4,7 +4,7 @@ declare namespace javax {
       namespace element {
         interface AnnotationValueVisitor<R, P> {
           visit(arg0: javax.lang.model.element.AnnotationValue, arg1: P): R
-          visit(arg0: javax.lang.model.element.AnnotationValue): R
+          visit?(arg0: javax.lang.model.element.AnnotationValue): R
           visitBoolean(arg0: boolean | java.lang.Boolean, arg1: P): R
           visitByte(arg0: number | java.lang.Byte, arg1: P): R
           visitChar(arg0: string | java.lang.Character, arg1: P): R

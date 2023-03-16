@@ -10,15 +10,15 @@ declare namespace java {
       readonly CONCURRENT: int
       readonly SUBSIZED: int
       tryAdvance(arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>): boolean
-      forEachRemaining(
+      forEachRemaining?(
         arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
       ): void
       trySplit(): java.util.Spliterator<T>
       estimateSize(): number
-      getExactSizeIfKnown(): number
+      getExactSizeIfKnown?(): number
       characteristics(): number
-      hasCharacteristics(arg0: number | java.lang.Integer): boolean
-      getComparator(): java.util.Comparator<unknown>
+      hasCharacteristics?(arg0: number | java.lang.Integer): boolean
+      getComparator?(): java.util.Comparator<unknown>
     }
   }
 }

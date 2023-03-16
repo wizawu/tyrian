@@ -10,12 +10,12 @@ declare namespace jdk {
         stop(): void
         extensionCommand(arg0: java.lang.String | string, arg1: java.lang.Object | any): java.lang.Object
         close(): void
-        generate(
+        generate?(
           arg0: jdk.jshell.spi.ExecutionEnv,
           arg1: java.lang.String | string,
           arg2: java.util.Map<java.lang.String, java.lang.String>
         ): jdk.jshell.spi.ExecutionControl
-        generate(arg0: jdk.jshell.spi.ExecutionEnv, arg1: java.lang.String | string): jdk.jshell.spi.ExecutionControl
+        generate?(arg0: jdk.jshell.spi.ExecutionEnv, arg1: java.lang.String | string): jdk.jshell.spi.ExecutionControl
       }
     }
   }

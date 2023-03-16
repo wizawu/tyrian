@@ -4,39 +4,41 @@ declare namespace javax {
       namespace util {
         interface Elements {
           getPackageElement(arg0: string | java.lang.CharSequence): javax.lang.model.element.PackageElement
-          getPackageElement(
+          getPackageElement?(
             arg0: javax.lang.model.element.ModuleElement,
             arg1: string | java.lang.CharSequence
           ): javax.lang.model.element.PackageElement
-          getAllPackageElements(
+          getAllPackageElements?(
             arg0: string | java.lang.CharSequence
           ): java.util.Set<javax.lang.model.element.PackageElement>
           getTypeElement(arg0: string | java.lang.CharSequence): javax.lang.model.element.TypeElement
-          getTypeElement(
+          getTypeElement?(
             arg0: javax.lang.model.element.ModuleElement,
             arg1: string | java.lang.CharSequence
           ): javax.lang.model.element.TypeElement
-          getAllTypeElements(arg0: string | java.lang.CharSequence): java.util.Set<javax.lang.model.element.TypeElement>
-          getModuleElement(arg0: string | java.lang.CharSequence): javax.lang.model.element.ModuleElement
-          getAllModuleElements(): java.util.Set<javax.lang.model.element.ModuleElement>
+          getAllTypeElements?(
+            arg0: string | java.lang.CharSequence
+          ): java.util.Set<javax.lang.model.element.TypeElement>
+          getModuleElement?(arg0: string | java.lang.CharSequence): javax.lang.model.element.ModuleElement
+          getAllModuleElements?(): java.util.Set<javax.lang.model.element.ModuleElement>
           getElementValuesWithDefaults(
             arg0: javax.lang.model.element.AnnotationMirror
           ): java.util.Map<javax.lang.model.element.ExecutableElement, javax.lang.model.element.AnnotationValue>
           getDocComment(arg0: javax.lang.model.element.Element): java.lang.String
           isDeprecated(arg0: javax.lang.model.element.Element): boolean
-          getOrigin(arg0: javax.lang.model.element.Element): javax.lang.model.util.Elements$Origin
-          getOrigin(
+          getOrigin?(arg0: javax.lang.model.element.Element): javax.lang.model.util.Elements$Origin
+          getOrigin?(
             arg0: javax.lang.model.AnnotatedConstruct,
             arg1: javax.lang.model.element.AnnotationMirror
           ): javax.lang.model.util.Elements$Origin
-          getOrigin(
+          getOrigin?(
             arg0: javax.lang.model.element.ModuleElement,
             arg1: javax.lang.model.element.ModuleElement$Directive
           ): javax.lang.model.util.Elements$Origin
-          isBridge(arg0: javax.lang.model.element.ExecutableElement): boolean
+          isBridge?(arg0: javax.lang.model.element.ExecutableElement): boolean
           getBinaryName(arg0: javax.lang.model.element.TypeElement): javax.lang.model.element.Name
           getPackageOf(arg0: javax.lang.model.element.Element): javax.lang.model.element.PackageElement
-          getModuleOf(arg0: javax.lang.model.element.Element): javax.lang.model.element.ModuleElement
+          getModuleOf?(arg0: javax.lang.model.element.Element): javax.lang.model.element.ModuleElement
           getAllMembers(arg0: javax.lang.model.element.TypeElement): java.util.List<javax.lang.model.element.Element>
           getAllAnnotationMirrors(
             arg0: javax.lang.model.element.Element

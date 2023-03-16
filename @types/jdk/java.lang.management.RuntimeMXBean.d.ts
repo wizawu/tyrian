@@ -2,7 +2,7 @@ declare namespace java {
   namespace lang {
     namespace management {
       interface RuntimeMXBean extends java.lang.management.PlatformManagedObject {
-        getPid(): number
+        getPid?(): number
         getName(): java.lang.String
         getVmName(): java.lang.String
         getVmVendor(): java.lang.String

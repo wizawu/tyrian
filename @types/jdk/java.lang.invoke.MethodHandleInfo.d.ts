@@ -20,9 +20,9 @@ declare namespace java {
           arg1: java.lang.invoke.MethodHandles$Lookup
         ): T
         getModifiers(): number
-        isVarArgs(): boolean
-        referenceKindToString(arg0: number | java.lang.Integer): java.lang.String
-        toString(
+        isVarArgs?(): boolean
+        referenceKindToString?(arg0: number | java.lang.Integer): java.lang.String
+        toString?(
           arg0: number | java.lang.Integer,
           arg1: java.lang.Class<unknown>,
           arg2: java.lang.String | string,

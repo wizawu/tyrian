@@ -7,7 +7,7 @@ declare namespace java {
 
       interface Consumer<T> {
         accept(arg0: T): void
-        andThen(
+        andThen?(
           arg0: java.util.function$.Consumer<unknown> | java.util.function$.Consumer$$lambda<unknown>
         ): java.util.function$.Consumer<T>
       }

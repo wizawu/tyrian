@@ -8,7 +8,7 @@ declare namespace com {
         name(): java.lang.String
         genericSignature(): java.lang.String
         classLoader(): com.sun.jdi.ClassLoaderReference
-        module(): com.sun.jdi.ModuleReference
+        module?(): com.sun.jdi.ModuleReference
         sourceName(): java.lang.String
         sourceNames(arg0: java.lang.String | string): java.util.List<java.lang.String>
         sourcePaths(arg0: java.lang.String | string): java.util.List<java.lang.String>

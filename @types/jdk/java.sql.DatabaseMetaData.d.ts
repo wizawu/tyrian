@@ -331,9 +331,9 @@ declare namespace java {
         arg3: java.lang.String | string
       ): java.sql.ResultSet
       generatedKeyAlwaysReturned(): boolean
-      getMaxLogicalLobSize(): number
-      supportsRefCursors(): boolean
-      supportsSharding(): boolean
+      getMaxLogicalLobSize?(): number
+      supportsRefCursors?(): boolean
+      supportsSharding?(): boolean
     }
   }
 }

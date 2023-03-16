@@ -19,19 +19,19 @@ declare namespace java {
         navigableKeySet(): java.util.NavigableSet<K>
         keySet(): java.util.NavigableSet<K>
         descendingKeySet(): java.util.NavigableSet<K>
-        keySet(): java.util.Set
-        tailMap(arg0: java.lang.Object | any): java.util.SortedMap
-        headMap(arg0: java.lang.Object | any): java.util.SortedMap
-        subMap(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.util.SortedMap
-        tailMap(arg0: java.lang.Object | any, arg1: boolean | java.lang.Boolean): java.util.NavigableMap
-        headMap(arg0: java.lang.Object | any, arg1: boolean | java.lang.Boolean): java.util.NavigableMap
-        subMap(
+        keySet?(): java.util.Set
+        tailMap?(arg0: java.lang.Object | any): java.util.SortedMap
+        headMap?(arg0: java.lang.Object | any): java.util.SortedMap
+        subMap?(arg0: java.lang.Object | any, arg1: java.lang.Object | any): java.util.SortedMap
+        tailMap?(arg0: java.lang.Object | any, arg1: boolean | java.lang.Boolean): java.util.NavigableMap
+        headMap?(arg0: java.lang.Object | any, arg1: boolean | java.lang.Boolean): java.util.NavigableMap
+        subMap?(
           arg0: java.lang.Object | any,
           arg1: boolean | java.lang.Boolean,
           arg2: java.lang.Object | any,
           arg3: boolean | java.lang.Boolean
         ): java.util.NavigableMap
-        descendingMap(): java.util.NavigableMap
+        descendingMap?(): java.util.NavigableMap
       }
     }
   }

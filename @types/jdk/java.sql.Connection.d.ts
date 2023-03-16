@@ -86,16 +86,16 @@ declare namespace java {
         arg1: number | java.lang.Integer
       ): void
       getNetworkTimeout(): number
-      beginRequest(): void
-      endRequest(): void
-      setShardingKeyIfValid(
+      beginRequest?(): void
+      endRequest?(): void
+      setShardingKeyIfValid?(
         arg0: java.sql.ShardingKey,
         arg1: java.sql.ShardingKey,
         arg2: number | java.lang.Integer
       ): boolean
-      setShardingKeyIfValid(arg0: java.sql.ShardingKey, arg1: number | java.lang.Integer): boolean
-      setShardingKey(arg0: java.sql.ShardingKey, arg1: java.sql.ShardingKey): void
-      setShardingKey(arg0: java.sql.ShardingKey): void
+      setShardingKeyIfValid?(arg0: java.sql.ShardingKey, arg1: number | java.lang.Integer): boolean
+      setShardingKey?(arg0: java.sql.ShardingKey, arg1: java.sql.ShardingKey): void
+      setShardingKey?(arg0: java.sql.ShardingKey): void
     }
   }
 }

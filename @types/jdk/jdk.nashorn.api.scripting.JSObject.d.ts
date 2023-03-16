@@ -21,8 +21,8 @@ declare namespace jdk {
           isFunction(): boolean
           isStrictFunction(): boolean
           isArray(): boolean
-          toNumber(): number
-          getDefaultValue(arg0: java.lang.Class<unknown>): java.lang.Object
+          toNumber?(): number
+          getDefaultValue?(arg0: java.lang.Class<unknown>): java.lang.Object
         }
       }
     }

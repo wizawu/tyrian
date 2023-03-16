@@ -3,7 +3,7 @@ declare namespace jdk {
     namespace linker {
       interface LinkerServices {
         asType(arg0: java.lang.invoke.MethodHandle, arg1: java.lang.invoke.MethodType): java.lang.invoke.MethodHandle
-        asTypeLosslessReturn(
+        asTypeLosslessReturn?(
           arg0: java.lang.invoke.MethodHandle,
           arg1: java.lang.invoke.MethodType
         ): java.lang.invoke.MethodHandle

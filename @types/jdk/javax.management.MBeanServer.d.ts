@@ -95,9 +95,9 @@ declare namespace javax {
         arg2: java.lang.Object[] | any[],
         arg3: java.lang.String[] | string[]
       ): java.lang.Object
-      deserialize(arg0: javax.management.ObjectName, arg1: number[] | java.lang.Byte[]): java.io.ObjectInputStream
-      deserialize(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): java.io.ObjectInputStream
-      deserialize(
+      deserialize?(arg0: javax.management.ObjectName, arg1: number[] | java.lang.Byte[]): java.io.ObjectInputStream
+      deserialize?(arg0: java.lang.String | string, arg1: number[] | java.lang.Byte[]): java.io.ObjectInputStream
+      deserialize?(
         arg0: java.lang.String | string,
         arg1: javax.management.ObjectName,
         arg2: number[] | java.lang.Byte[]

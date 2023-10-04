@@ -2153,12 +2153,17 @@ function build (entryPoints, outdir, watch) {
                 typescript({
                     compilerOptions: {
                         jsx: "react",
-                        lib: ["es5", "dom"],
-                        target: "es5",
+                        lib: [entry.endsWith(".tsx") ? "es2017" : "es5", "dom"],
+                        target: entry.endsWith(".tsx") ? "es2017" : "es5",
                         typeRoots: [path__namespace.join(PATH.INSTALL_DIR, "@types"), path__namespace.join("node_modules", "@types"), "lib"],
                     },
                 }),
             ],
+            onwarn(warning, handle) {
+                if (warning.code === "THIS_IS_UNDEFINED")
+                    return;
+                handle(warning);
+            },
         };
     });
     if (watch) {
